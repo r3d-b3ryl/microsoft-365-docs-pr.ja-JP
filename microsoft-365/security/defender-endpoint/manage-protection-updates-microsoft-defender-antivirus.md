@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2636756a3a91156041843c1375211a8640c5e701
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5124b517592fb7561925b0cbd5e5045d4c1ecc9b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168512"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423805"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -48,7 +48,7 @@ ms.locfileid: "61168512"
 
 ## <a name="fallback-order"></a>フォールバック順序
 
-通常、プライマリ ソースから更新プログラムを個別にダウンロードし、その後、ネットワーク構成に基づいて優先度の高い順に他のソースをダウンロードするエンドポイントを構成します。 更新プログラムは、指定した順序でソースから取得されます。 ソースが使用できない場合は、リスト内の次のソースがすぐに使用されます。
+通常、プライマリ ソースから更新プログラムを個別にダウンロードし、その後、ネットワーク構成に基づいて優先度の高い順に他のソースをダウンロードするエンドポイントを構成します。 更新プログラムは、指定した順序でソースから取得されます。 現在のソースからの更新が古い場合は、リスト内の次のソースがすぐに使用されます。
 
 更新プログラムが発行されると、更新プログラムのサイズを最小限に抑えるためのロジックが適用されます。 ほとんどの場合、最新の更新プログラムと、デバイスに現在インストールされている更新プログラム (デルタと呼ばれます) の違いだけがダウンロードされて適用されます。 ただし、デルタのサイズは、次の 2 つの主な要因に依存します。
 

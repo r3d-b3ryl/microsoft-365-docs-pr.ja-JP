@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: '[Microsoft 365 管理センター- 今月追加された機能について学習します。'
-ms.openlocfilehash: 31ae9f1b1c4bf8255ef1105089ffe2637dc36e0b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d2573180fd254063da5450acbdeeb78aa99d6367
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374390"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422773"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>新しい機能Microsoft 365 管理センター
 
@@ -400,9 +400,9 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 #### <a name="for-admins-and-business-owners"></a>管理者およびビジネス所有者向け
 
 - [リモート ワークで小規模ビジネスを強化する](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [リモート 小規模ビジネスの実行](../business-video/sign-up.md)
-- [Microsoft Business Basic にサインアップする](../business-video/sign-up.md)
-- [2 要素サインインのセットアップ](../business-video/sign-up.md)
+- [リモート 小規模ビジネスの実行](admin-overview/sign-up-for-office-365.md)
+- [Microsoft Business Basic にサインアップする]()
+- [2 要素サインインのセットアップ](admin-overview/sign-up-for-office-365.md)
 
 ## <a name="march-2020"></a>2020 年 3 月
 

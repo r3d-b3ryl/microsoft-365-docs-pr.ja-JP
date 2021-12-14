@@ -21,13 +21,14 @@ ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 description: コンプライアンス センターを使用して、組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効にする方法を説明します。
-ms.openlocfilehash: 1e92c3c8a4c19aa33124b930574f9646ac5bfabe
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 33bbb0987779f7810d797d7cb5a6255c32c34c75
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374306"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422341"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>セキュリティ/コンプライアンス センターでアーカイブ メールボックスを有効にする
 
@@ -38,7 +39,7 @@ Microsoft 365 でのアーカイブ (*インプレース アーカイブ* とも
 
 ## <a name="get-the-necessary-permissions"></a>必要なアクセス許可を取得する
 
-アーカイブ メールボックスを有効または無効にするには、Exchange Online でメール受信者役割が自分に割り当てられている必要があります。 既定では、この役割は、Exchange 管理センターの [**アクセス許可**] ページで受信者管理役割グループまたは組織管理役割グループに割り当てられています。 Microsoft 365 コンプライアンス センターの [**アーカイブ**] ページが表示されない場合、必要なアクセス許可を自分に割り当ててもらうよう管理者に依頼します。
+アーカイブ メールボックスを有効または無効にするには、Exchange Online でメール受信者役割が自分に割り当てられている必要があります。 既定では、この役割は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> の **[アクセス許可]** ページで受信者管理役割グループまたは組織管理役割グループに割り当てられています。 Microsoft 365 コンプライアンス センターの [**アーカイブ**] ページが表示されない場合、必要なアクセス許可を自分に割り当ててもらうよう管理者に依頼します。
 
 ## <a name="enable-an-archive-mailbox"></a>アーカイブ メールボックスの有効化
 

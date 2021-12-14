@@ -18,14 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom:
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b2e25e28952d18ad32141c010bc258d50e383d4e
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 0253d0ac64443562053765c9f0cdaaee69aeaad6
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724430"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421860"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>[セキュリティとコンプライアンス センター Office 365アカウントをユーザーにリダイレクトMicrosoft 365 Defender
 
@@ -40,7 +43,7 @@ ms.locfileid: "60724430"
 
 ## <a name="what-to-expect"></a>想定される変化
 
-自動リダイレクトが有効でアクティブになると、Office 365 Security and Compliance (protection.office.com) のセキュリティ関連機能にアクセスするユーザーは、自動的に Microsoft 365 Defender (security.microsoft.com) にルーティングされます。
+自動リダイレクトが有効でアクティブになると、Office 365 Security and Compliance (protection.office.com) のセキュリティ関連機能にアクセスするユーザーは、自動的に Microsoft 365 Defender に<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ルーティングされます</a>。
 
 変更された変更の詳細については[、「Microsoft Defender for Office 365」をMicrosoft 365 Defender。](microsoft-365-security-center-mdo.md)
 
@@ -48,7 +51,7 @@ ms.locfileid: "60724430"
 
 これには、[脅威の管理] セクションの [アラート] ([アラートとアラート ポリシーの表示])、および [脅威管理] ダッシュボードとレポートの機能が含まれます。 セキュリティに関連Office 365セキュリティとコンプライアンス センター内のアイテムは、セキュリティにMicrosoft 365 Defender。
 
-コンプライアンス関連のアイテムは Microsoft 365 コンプライアンス センター、メール フロー関連のアイテムは管理センター Exchangeにあります。
+コンプライアンス関連のアイテムは、Microsoft 365 コンプライアンス センター、メール フロー関連のアイテムは、Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">にあります</a>。
 
 コンプライアンス関連または両方に対応する機能など、他のすべての機能は、リダイレクトの影響を受け取る必要があります。
 
@@ -56,11 +59,11 @@ ms.locfileid: "60724430"
 
 2021 年 10 月の初め現在、ポータルリダイレクトは自動的に、または既定で行われます。 ただし、一時的に無効にする必要がある場合は、これらの手順に従います。
 
-<!--To start routing accounts to Microsoft 365 Defender at security.microsoft.com:
+<!--To start routing accounts to Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">security.microsoft.com</a>:
 
 1. Make sure you're a global administrator or have security administrator permissions in Azure Active directory.
-2. [Sign in](https://security.microsoft.com/) to Microsoft 365 Defender.
-3. Navigate to **Settings** > **Email & collaboration** > **Portal redirection**.  
+2. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
+3. Go to **Settings** > **Email & collaboration** > **Portal redirection**.  
 4. Toggle the Automatic redirection setting to **On**.
 5. Click **Enable** to apply automatic redirection to Microsoft 365 Defender.
 
@@ -73,7 +76,7 @@ ms.locfileid: "60724430"
 
 以前のポータルに戻すには、次の操作を行います。
 
-1. [グローバル管理者](https://security.microsoft.com/)としてMicrosoft 365 Defenderサインインするか、Azure Active directory でセキュリティ管理者のアクセス許可を持つアカウントを使用します。
+1. グローバル管理者として<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>サインインするか、Azure Active directory でセキュリティ管理者のアクセス許可を持つアカウントを使用します。
 
 2. [電子 **メール**  >  **設定] &に**  >  **移動します**。
 

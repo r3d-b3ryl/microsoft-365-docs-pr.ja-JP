@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス センターでポリシーのカスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: 7ac39c068060fec945d04137688e6d9bb4b81655
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 4139a7cd8f2a87bf8db25e9b23201132e321b31d
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220994"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422569"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を作成する
 
@@ -431,7 +431,7 @@ Microsoft 365 2 つの汎用バリデーターを提供する
   
 ## <a name="changes-for-exchange-online"></a>Exchange Online の変更
 
-以前は、DLP 用にカスタムの機密情報の種類をインポートするために Exchange Online PowerShell を使用することがありました。現在は、カスタムの機密情報の種類を Exchange 管理センターとコンプライアンス センターの両方で使用できるようになりました。この改善の一環で、カスタムの機密情報の種類をインポートする場合、コンプライアンス センター PowerShell の使用が必須になりました。Exchange PowerShell からはインポートできません。カスタムの機密情報の種類は以前と同様に使用できますが、コンプライアンス センターでカスタムの機密情報の種類を変更した場合、Exchange 管理センターに表示されるまでに最大 1 時間かかる場合があります。
+以前は、DLP 用にカスタムの機密情報の種類をインポートするために Exchange Online PowerShell を使用することがありました。 カスタムの機密情報の種類は、管理センターとコンプライアンス センター Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">で</a>使用できます。 この改善の一環で、カスタムの機密情報の種類をインポートする場合、コンプライアンス センター PowerShell の使用が必須になりました。Exchange PowerShell からはインポートできません。 カスタムの機密情報の種類は以前と同様に使用できますが、コンプライアンス センターでカスタムの機密情報の種類を変更した場合、Exchange 管理センターに表示されるまでに最大 1 時間かかる可能性があります。
   
 コンプライアンス センターでは、**[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** コマンドレットを入力して、ルール パッケージをアップロードします。 (以前は、Exchange 管理センターで **ClassificationRuleCollection** コマンドレットを使用していました。) 
   

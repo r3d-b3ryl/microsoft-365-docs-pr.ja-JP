@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance
+ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: グループ メンバーがグループとして電子メールを送信したり、Microsoft 365グループに代わって電子メールを送信Microsoft 365する方法についてMicrosoft 365します。
-ms.openlocfilehash: 54fe4691f4523934e1850ebbf0711efaa3eb6034
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: a21e30ef613f557d1206ada5bc9ab4be8a083834
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064065"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421584"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>グループの代理として送信または送信するメンバーを許可する
 
@@ -43,9 +44,9 @@ Send **as** または send onhalf permissions が付与されているMicrosoft 
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>メンバーがグループとして電子メールを送信するを許可する
 
-このセクションでは、ユーザーがグループとして電子メールを送信する方法について、Exchange管理センター [](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) でExchange Online。
+このセクションでは、ユーザーがグループとして電子メールを送信する方法について、Exchange管理センター<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">(EAC)</a>でExchange Online。
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
+1. 管理センター Exchange[受信者グループ]**に移動** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**します**</a>。
     
 2. [グループ **の編集]** ![ アイコンを選択します。  ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) ユーザーに送信を許可するグループに対して指定します。 
     
@@ -61,9 +62,9 @@ Send **as** または send onhalf permissions が付与されているMicrosoft 
   
 ## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>メンバーがグループに代わって電子メールを送信するを許可する
 
-このセクションでは、ユーザーが組織の管理センター (EAC) のグループに代わって電子メールを送信Exchangeする方法についてExchange Online。
+このセクションでは、ユーザーが組織の管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">(EAC)</a>内のグループに代わって電子メールを送信Exchangeする方法についてExchange Online。
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
+1. 管理センター Exchange[受信者グループ]**に移動** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**します**</a>。
     
 2. [グループ **の編集]** ![ アイコンを選択します。](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) ユーザーに送信を許可するグループに対して指定します。 
     

@@ -20,17 +20,18 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 元従業員のログインをブロックし、サービスへのアクセスMicrosoft 365します。
-ms.openlocfilehash: 326188e0000d3c59eb411222d3e3c47177b383ed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5643c12f46fb09f76f16dc2632baf1538d358dd5
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161692"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421344"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>手順 1 - 元従業員のログインを防止し、サービスへのアクセスMicrosoft 365する
 
@@ -64,15 +65,14 @@ PowerShell を使用してユーザーをすぐにサインアウトするには
 
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>元従業員の電子メール (Exchange Online) へのアクセスをブロックする
 
-Microsoft 365 サブスクリプションの一部としてメールがある場合は、Exchange 管理センターにサインインし、次の手順に従って、元従業員のメールへのアクセスをブロックします。
+Microsoft 365 サブスクリプションの一部としてメールがある場合は<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">、Exchange</a>管理センターにサインインし、次の手順に従って、元従業員がメールにアクセスするのをブロックします。
   
-1. <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange 管理センター</a>に移動します。
-2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
-3. 一覧からユーザー メールボックスを選択し、詳細ウィンドウ *(右側*) で、[メール アプリ]の下の [メール アプリの設定を管理する]**を選択します**。 すべての **オプション** のスライダーをオフにします。**モバイル (Exchange ActiveSync)** **、Outlook on the web**、Outlook **デスクトップ (MAPI)** **、Exchange Web** サービス **、POP3、****および IMAP** です。
-4. [**保存**] を選択します。
+1. [受信者メールボックス] Exchange管理センター> \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">移動します</a>。
+1. 一覧からユーザー メールボックスを選択し、詳細ウィンドウ *(右側*) で、[メール アプリ]の下の [メール アプリの設定を管理する]**を選択します**。 すべての **オプション** のスライダーをオフにします。**モバイル (Exchange ActiveSync)** **、Outlook on the web**、Outlook **デスクトップ (MAPI)** **、Exchange Web** サービス **、POP3、****および IMAP** です。
+1. [**保存**] を選択します。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Exchange Online の Exchange 管理センター](/exchange/exchange-admin-center)
+[Exchange管理センター (Exchange Online)\](/exchange/exchange-admin-center)
 
-[ユーザーを復元する](restore-user.md)
+[ユーザーの復元](restore-user.md) (記事)

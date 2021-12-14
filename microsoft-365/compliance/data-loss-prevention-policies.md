@@ -21,15 +21,16 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: データ損失防止リファレンス 資料
-ms.openlocfilehash: cce8aa10f0ae84daa3a89881b689b93a212ef472
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 85fa08419b964555ce036b96a78f8c3fe6bab3a1
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204421"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422869"
 ---
 # <a name="data-loss-prevention-reference"></a>データ損失防止リファレンス
 
@@ -528,7 +529,7 @@ DLP は、インデックスを作成できるすべてのコンテンツを評�
 
 Exchange online を場所として含む DLP ポリシーを作成すると、このポリシーは Office 365 セキュリティ &amp; コンプライアンス センターから Exchange Online に同期され、その後、Exchange Online から Outlook on the web と Outlook に同期されます。
 
-メッセージが Outlook で作成される場合、作成中のコンテンツは DLP ポリシーに対して評価されるため、ユーザーはポリシー ヒントを確認できます。 さらに、メッセージは、送信された後、通常のメール フローの一部として DLP ポリシーに対して評価されるほか、Exchange 管理センターで作成された (トランスポート ルールとしても知られる) Exchange メール フロー ルールや DLP ポリシーに対しても評価されます。 DLP ポリシーは、メッセージと添付ファイルの両方をスキャンします。
+メッセージが Outlook で作成される場合、作成中のコンテンツは DLP ポリシーに対して評価されるため、ユーザーはポリシー ヒントを確認できます。 メッセージが送信されると、メール フローの通常の一部として DLP ポリシーに対して評価され、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) および Exchange 管理センターで作成された<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">DLP</a>ポリシーが評価されます。 DLP ポリシーは、メッセージと添付ファイルの両方をスキャンします。
 
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Office デスクトップ プログラムにおけるポリシー評価
 

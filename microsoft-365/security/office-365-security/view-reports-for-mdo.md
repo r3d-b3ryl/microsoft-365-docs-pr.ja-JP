@@ -20,14 +20,15 @@ description: 管理者は、管理者ポータルで使用できるレポート�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8270c6050f640b1c49b4f82c361812a019ae44d1
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: dc969995d90ff3a4c95ba0481d75543002d88093
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401350"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421620"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>ポータルでレポートOffice 365 Defender をMicrosoft 365 Defenderする
 
@@ -59,7 +60,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 >
 > Defender を必要としない電子メール セキュリティ レポートについては、「Office 365 ポータルの電子メール セキュリティ レポートの表示」[でMicrosoft 365 Defenderされています](view-email-security-reports.md)。
 >
-> メール フローに関連するレポートは、現在、Exchangeセンター (EAC) に表示されます。 これらのレポートの詳細については、「新しい管理センターのメール フロー レポート[Exchange参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
+> メール フローに関連するレポートが管理センター Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">されます</a>。 これらのレポートの詳細については、「新しい管理センターのメール フロー レポート[Exchange参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
 
 ## <a name="safe-attachments-file-types-report"></a>セーフ添付ファイルの種類レポート
 

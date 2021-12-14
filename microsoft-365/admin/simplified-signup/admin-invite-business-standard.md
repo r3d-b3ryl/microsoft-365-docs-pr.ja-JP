@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: ユーザーに組織への参加をMicrosoft 365 Business Standardする
-ms.openlocfilehash: 263eb41ec12b527c4f70e6694206a480e28bebae
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: bdf5c9e0f5957c07a024b14384fa825858618ba4
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254419"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421416"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>ユーザーをユーザーにMicrosoft 365 Business Standardする (管理者)
 
@@ -35,9 +35,9 @@ ms.locfileid: "61254419"
 - Microsoft の 24 時間電話と Web サポートでいつでもヘルプを受け取ることができます。
 
 > [!Note]
-> Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「[管理者を追加する](../../business-video/add-admin.md)」をチェックアウトしてください。
+> Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「 [管理者ロールの割り当](../add-users/assign-admin-roles.md) て」を参照してください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 ユーザーまたはユーザーのアカウントに既[にMicrosoft 365 Business Standard](signup-business-standard.md)確認Microsoft 365 Apps for business。 また、Business Standard 組織または [セットアップ[]](../setup/setup-business-standard.md)組織が既にセットアップ済[みMicrosoft 365 Apps for business。](../setup/setup-apps-for-business.md) これらの手順を完了したら、ユーザーに招待を共有できます。
 

@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: ユーザーのメールボックスに配置できるさまざまな種類の保留リストを特定するExchange OnlineをMicrosoft 365。
-ms.openlocfilehash: 05c169bd8ac7e3fdb71a6ee474f723a62df6da41
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 708d6e18428d090a6ba5291aea95e1a690dac556
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432663"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422533"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -34,12 +35,12 @@ Microsoft 365は、組織がメールボックスコンテンツが完全に削�
 
 - **[電子情報開示の保持](create-ediscovery-holds.md):** セキュリティとコンプライアンス センターの Core 電子情報開示ケースに関連付けられている保持。 電子情報開示の保持は、ユーザー のメールボックスと、グループとグループの対応するMicrosoft 365に適用Microsoft Teams。
 
-- **[インプレイス保持](/Exchange/security-and-compliance/create-or-remove-in-place-holds):** ユーザー メールボックスに適用される保留は、In-Placeの & 管理センター Exchange電子情報開示保持ツールを使用Exchange Online。 
+- **[インプレイス保持](/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Exchange Online の Exchange 管理センターで In-Place 電子情報開示 & 保持ツールを使用してユーザー メールボックスに <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank"></a>適用される保持。 
 
    > [!NOTE]
    > In-Place保留リストは廃止され、保留リストを作成したりIn-Placeメールボックスに適用したりすることはできません。 ただし、In-Place保持は組織内のメールボックスに引き続き適用される可能性があります。これがこの記事に含まれている理由です。 詳細については、「従来の電子 [情報開示ツールの削除」を参照してください](legacy-ediscovery-retirement.md#in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center)。
 
-- **[Microsoft 365保持ポリシー](retention.md):** Exchange Online のユーザー メールボックスと、Microsoft 365 グループとユーザー グループの対応するメールボックス内のコンテンツを保持 (または保持してから削除) するように構成Microsoft Teams。 アイテム保持ポリシーを作成して、ユーザー のSkype for Businessに保存される会話を保持できます。
+- **[Microsoft 365保持](retention.md)ポリシー:** Exchange Online 内のユーザー メールボックスおよび Microsoft 365 グループおよび Microsoft Teams の対応するメールボックス内のコンテンツを保持 (または保持してから削除) するように構成できます。 アイテム保持ポリシーを作成して、ユーザー のSkype for Businessに保存される会話を保持できます。
 
   メールボックスに割り当てMicrosoft 365保持ポリシーには、次の 2 種類があります。
 
@@ -47,7 +48,7 @@ Microsoft 365は、組織がメールボックスコンテンツが完全に削�
 
     - **組織全体の保持ポリシー:** これらは、組織内のすべてのコンテンツの場所に割り当てられるポリシーです。 PowerShell の **Get-OrganizationConfig** コマンドレットをExchange Online組織全体の保持ポリシーに関する情報を取得します。 この種類のアイテム保持ポリシーの詳細については、アイテム保持ポリシーのドキュメントのセクション [「](retention-settings.md#a-policy-that-applies-to-entire-locations) 場所全体に適用されるポリシー」を参照してください。
 
-- **[Microsoft 365](retention.md)** 保持ラベル : ユーザーがメールボックス内の任意のフォルダーまたはアイテムに Microsoft 365 保持ラベル (コンテンツを保持または保持し、コンテンツを削除するように構成されているラベル) を適用すると、メールボックスが訴訟ホールドに置かれたか、Microsoft 365 アイテム保持ポリシーに割り当てられているかのようにメールボックスに保持が配置されます。 詳細については、この [記事の「](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) 保持ラベルがフォルダーまたはアイテムに適用されたため、保持中のメールボックスを識別する」セクションを参照してください。
+- **[Microsoft 365保持ラベル](retention.md):** ユーザーがメールボックス内の任意のフォルダーまたはアイテムに Microsoft 365 保持ラベル (コンテンツを保持または保持し、その後コンテンツを削除するように構成されているラベル) を適用すると、メールボックスが訴訟ホールドに置かれたか、Microsoft 365 アイテム保持ポリシーに割り当てられているかのようにメールボックスに保持が配置されます。 詳細については、この [記事の「](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) 保持ラベルがフォルダーまたはアイテムに適用されたため、保持中のメールボックスを識別する」セクションを参照してください。
 
 保留メールボックスを管理するには、保持期間の変更、保留期間の一時的または完全な削除、Microsoft 365 保持ポリシーからメールボックスを除外するなどのタスクを実行するために、メールボックスに配置される保留の種類を特定する必要があります。 このような場合、最初の手順は、メールボックスに配置された保留の種類を識別します。 また、1 つのメールボックスに複数の保留リスト (および異なる種類の保留リスト) を配置できるので、保留リストを削除または変更する場合は、メールボックスに置かれたすべての保留リストを識別する必要があります。
 
@@ -282,7 +283,7 @@ $ht.MailboxLog | Convertfrom-Json
 
 アイテム保持ポリシーがメールボックスに適用されなくなった場合、コンテンツの削除を防ぐために、ユーザーに一時的な遅延ホールドを設定します。 コマンドを実行すると、遅延ホールドを無効 `Set-Mailbox -RemoveDelayHoldApplied` にできます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 メールボックスに適用される保留リストを特定した後、保留期間の変更、保留期間の一時的または完全な削除、Microsoft 365 アイテム保持ポリシーから非アクティブなメールボックスの除外などのタスクを実行できます。 保留リストに関連するタスクの実行の詳細については、次のいずれかのトピックを参照してください。
 

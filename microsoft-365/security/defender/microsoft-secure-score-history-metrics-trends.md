@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: c04d7eed5957fbb5633710ec07af28ca66809356
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: e60ab6c42a48a0eb69a3a643b6c0a502b56f93b3
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724801"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423821"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Microsoft Secure Score の履歴を追跡し、目標を達成する
 
@@ -60,7 +60,7 @@ ms.locfileid: "60724801"
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>スコアを自分のような組織と比較する
 
-スコアが類似している組織とどのように比較されるのかについては、2 つの場所で確認できます。 どちらのグラフでも、[比較の管理] **を選択して** 、組織の情報を表示および編集できます。 また、業界、組織の規模、ライセンス、地域に基づいてカスタム比較を作成することもできます。
+スコアが類似している組織とどのように比較されるのかについては、2 つの場所で確認できます。
 
 #### <a name="comparison-bar-chart"></a>比較棒グラフ
 
@@ -75,15 +75,6 @@ ms.locfileid: "60724801"
     4. 使用される Microsoft 製品は 80% 類似しています
     5. テナントから 20% の範囲内の営業案件 (現在のライセンスで達成できる最大スコア)
 
-- **カスタム比較**: 次の条件に基づいて [比較の管理] を **選択** して設定する必要があります。
-    1. 選択された業界
-    2. 選択した組織のサイズ
-    3. 選択した地域
-    4. 選択したライセンス
-    5. 使用される Microsoft 製品は 80% 類似しています
-    6. テナントから 20% の範囲内の営業案件 (現在のライセンスで達成できる最大スコア)
-
-カスタム選択を行ったが、比較できる他のテナントが 5 つ未満の場合は、「データが限られているので利用できません」と表示されます。
 
 #### <a name="comparison-trend"></a>比較傾向
 

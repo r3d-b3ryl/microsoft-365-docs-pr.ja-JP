@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: メールボックス監査ログは、既定で有効になっています (既定Microsoft 365既定のメールボックス監査またはメールボックス監査とも呼ばれています)。 つまり、メールボックスの所有者、代理人、管理者によって実行される特定のアクションは、メールボックス監査ログに自動的に記録され、メールボックスで実行されたアクティビティを検索できます。
-ms.openlocfilehash: 4487defd4c971b5decda3442739730adcafac453
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 06386651c163fa3e4408f2e7a918fe30030ede06
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207309"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423409"
 ---
 # <a name="manage-mailbox-auditing"></a>メールボックスの監査を管理する
 
@@ -68,7 +70,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |---|:---:|
 |ユーザー メールボックス|![チェック マーク。](../media/checkmark.png)|
 |共有メールボックス|![チェック マーク。](../media/checkmark.png)|
-|Microsoft 365グループ メールボックス|![チェック マーク。](../media/checkmark.png)|
+|Microsoft 365 グループ メールボックス|![チェック マーク。](../media/checkmark.png)|
 |リソース メールボックス||
 |パブリック フォルダー メールボックス||
 |
@@ -100,7 +102,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 ****
 
-|メールボックスアクション|説明|管理者|代理人|所有者|
+|メールボックスアクション|説明|管理者|代理人|Owner|
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|この値はメールボックス アクションとして受け入れ可能ですが **、UpdateFolderPermissions** アクションに既に含まれており、個別に監査されません。 つまり、この値を使用しない。||||
 |**ApplyRecord**|アイテムはレコードとしてラベル付けされます。|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|
@@ -143,7 +145,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 ****
 
-|メールボックスアクション|説明|管理者|代理人|所有者|
+|メールボックスアクション|説明|管理者|代理人|Owner|
 |---|---|:---:|:---:|:---:|
 |**Create**|予定表アイテムの作成。 メッセージの作成、送信、または受信は監査されません。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>||
 |**HardDelete**|メッセージが [回復可能なアイテム] フォルダーから削除されました。|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
@@ -311,7 +313,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 現時点では、既定によるメールボックス監査の有効化が組織でオンになっている場合は、特定のメールボックスでメールボックス監査を無効にできません。 たとえば *、AuditEnabled メールボックス プロパティを* **False に設定すると** 、無視されます。
 
-ただし、Exchange Online PowerShell の **Set-MailboxAuditBypassAssociation** コマンドレットを使用して、アクションが発生した場所に関係なく、指定したユーザーによるメールボックスアクションのログが記録されるのを防ぐことはできます。 次に例を示します。
+ただし、Exchange Online PowerShell の **Set-MailboxAuditBypassAssociation** コマンドレットを使用して、アクションが発生した場所に関係なく、指定したユーザーによるメールボックスアクションのログが記録されるのを防ぐことはできます。 例:
 
 - バイパスされたユーザーによって実行されるメールボックス所有者の操作はログに記録されません。
 - 他のユーザーのメールボックス (共有メールボックスを含む) でバイパスされたユーザーによって実行される委任アクションはログに記録されません。
@@ -346,7 +348,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
     - [Search-MailboxAuditLog を](/powershell/module/exchange/search-mailboxauditlog) 使用して、特定のユーザーのメールボックス監査ログを検索します。
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) を使用して、特定のユーザーのメールボックス監査ログを検索し、指定した受信者に電子メールで結果を送信します。
 
-  - 次のExchangeを実行するには、Exchange Online管理センター (EAC) を使用します。
+  - 次の<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchangeを実行するには、Exchange Online管理センター (EAC)</a>を使用します。
     - [メールボックス監査ログのエクスポート](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
     - [所有者以外のメールボックス アクセスのレポートを実行する](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 

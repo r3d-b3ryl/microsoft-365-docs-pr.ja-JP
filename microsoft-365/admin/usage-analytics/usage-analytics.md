@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織がコミュニケーションと共同作業を行うMicrosoft 365サービスを採用する方法の概要を確認します。
-ms.openlocfilehash: dce31c0787ab85898dc48cc94cefb54ac19b1304
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a3c77fe9a4e6d26e62525c6267ab32a81c78289b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374330"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422821"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 
@@ -85,7 +85,7 @@ Microsoft 365分析には、次のセクションで詳細なレポートが多�
 > [!NOTE]
 > グローバル 閲覧者と利用状況の概要レポート 閲覧者には、ユーザー アクティビティ レポートを表示する権限が付与されています。 
 
-## <a name="faq"></a>よくあるご質問 (FAQ)
+## <a name="faq"></a>FAQ
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>このテンプレート アプリは購入によって利用できるか、それとも無料になるか。
 
@@ -217,4 +217,4 @@ pbit ファイルには、Microsoft ダウンロード センター [からア�
 
 [Microsoft 365 利用状況分析を有効にする](enable-usage-analytics.md) (記事)\
 [使用状況分析のレポートを移動Microsoft 365活用](navigate-and-utilize-reports.md)する (記事)\
-[[ビデオ] で利用状況Microsoft 365](../../business-video/act-on-report.md)を確認する
+[Microsoft 365管理センターの [レポート]](../activity-reports/activity-reports.md) (ビデオ)

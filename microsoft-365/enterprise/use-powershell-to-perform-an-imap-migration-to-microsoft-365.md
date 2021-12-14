@@ -13,15 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: PowerShell を使用してインターネット メール アクセス プロトコル (IMAP) の移行を実行する方法についてMicrosoft 365。
-ms.openlocfilehash: 08cffcbe3a08031df05da68358da062200eb99c5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0c546782e81a399f092c8c7878b52c419adee799
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163242"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423037"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Microsoft 365 への IMAP 移行に PowerShell を使用する
 
@@ -30,7 +32,7 @@ ms.locfileid: "60163242"
 Microsoft 365 を展開するプロセスの一環として、ユーザー メールボックスの内容をインターネット メール アクセス プロトコル (IMAP) メール サービスから Microsoft 365 に移行できます。 この記事では、Exchange Online PowerShell を使用した電子メールの IMAP 移行作業を順を追って説明します。
 
 > [!NOTE]
-> また、IMAP 移行を実行するには、Exchange 管理センターを使用することもできます。 「IMAP [メールボックスの移行」を参照してください](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)。
+> また、管理者センターの<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchangeを使用して</a>IMAP 移行を実行できます。 「IMAP [メールボックスの移行」を参照してください](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
@@ -78,7 +80,6 @@ IMAP の移行には次の制限が適用されます。
     **Port** パラメーターの値については、通常、暗号化されていない接続やトランスポート層セキュリティ (TLS) 接続には 143 を使用し、SSL 接続には 993 を使用します。
 
 ### <a name="step-2-create-a-csv-file-for-an-imap-migration-batch"></a>ステップ 2:IMAP 移行バッチ用の CSV ファイルを作成する
-<a name="BK_Step2"> </a>
 
 IMAP 移行バッチでそのメールボックスを移行するユーザーのグループを特定します。CSV ファイルの各行には、IMAP メッセージング システム内のメールボックスに接続するために必要な情報が含まれています。
 
@@ -150,7 +151,6 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ```
 
 ### <a name="step-3-create-an-imap-migration-endpoint"></a>ステップ 3:IMAP 移行エンドポイントを作成する
-<a name="BK_Step3"> </a>
 
 メールを正常に移行するには、Microsoft 365メール システムに接続して通信する必要があります。 これを行うには、Microsoft 365エンドポイントを使用します。 移行エンドポイントは、同時に移行するメールボックスの数、および 24 時間ごとに 1 回行われる増分同期中に同時に同期するメールボックスの数も定義します。 IMAP 移行用に移行エンドポイントを作成するには、最初に[リモート PowerShell による Exchange への接続](/powershell/exchange/connect-to-exchange-online-powershell)を行います。
 
@@ -181,7 +181,6 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
 ```
 
 ### <a name="step-4-create-and-start-an-imap-migration-batch"></a>ステップ 4:IMAP 移行バッチを作成および開始する
-<a name="BK_Step4"> </a>
 
 [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) コマンドレットを使用すると、IMAP 移行用の移行バッチを作成できます。 _AutoStart_ パラメーターを含めると、移行バッチを作成して自動的に開始できます。代わりに、移行バッチを作成してから、後で [Start-MigrationBatch](/powershell/module/exchange/start-migrationbatch) コマンドレットを使用して開始することができます。
 
@@ -206,7 +205,6 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
 ### <a name="step-5-route-your-email-to-microsoft-365"></a>手順 5: メールをメールにルーティングMicrosoft 365
-<a name="BK_Step5"> </a>
 
 電子メール システムでは、電子メールを配信する場所を知るために、MX レコードと呼ばれる DNS レコードを使用します。 電子メールの移行プロセス中、MX レコードの宛先は移行元の電子メール システムでした。 メールの移行が完了Microsoft 365、MX レコードを現在のユーザーにMicrosoft 365。 これにより、メールがユーザーのメールボックスに配信Microsoft 365できます。 MX レコードを移動することによって、準備ができたら古い電子メール システムをオフにすることもできます。
 
@@ -215,7 +213,6 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 御社のお客様およびパートナーの電子メール システムが MX レコードの変更を認識するまでに最大 72 時間かかることがあります。次の作業に進むまで、72 時間以上待ちます。手順 6: IMAP 移行バッチを削除する。
 
 ### <a name="step-6-delete-imap-migration-batch"></a>ステップ 6:IMAP 移行バッチを削除する
-<a name="BK_Step6"> </a>
 
 MX レコードを変更し、すべてのメールが Microsoft 365 メールボックスにルーティングされているのを確認した後、ユーザーにメールが送信Microsoft 365。 その後、IMAP 移行バッチを削除できます。 移行バッチを削除する前に、次の点を確認します。
 

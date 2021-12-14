@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 多要素認証 (MFA) は、強力なパスワードと追加の検証方法の両方を使用します。
-ms.openlocfilehash: 83be677871d05b7f0f4e88327622a9647a35276a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 460de9426dfb249da17d5df79becaca725ee36ed
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373646"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422401"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>ユーザーの多要素認証Microsoft 365
 
@@ -178,5 +178,5 @@ Azure ポータルでは、次のことができます。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[多要素認証をオンにする](../../business-video/turn-on-mfa.md) (ビデオ)\
+[多要素認証をオンにする](set-up-multi-factor-authentication.md) (ビデオ)\
 [スマートフォンの多要素認証をオンにする](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (ビデオ)

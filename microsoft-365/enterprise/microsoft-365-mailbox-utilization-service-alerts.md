@@ -13,16 +13,18 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkEXCHANGE
 f1.keywords:
 - NOCSH
 description: メールボックス使用率サービスアラートを使用して、メールボックスクォータに達している保留状態のメールボックスを監視します。
-ms.openlocfilehash: c131ef58cbad2e2f57c1e97de6c2da6b3b52a707
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 311be4159d45b19ce1123baa840eebdf844840ec
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177305"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421368"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Exchange Online 監視でのメールボックス使用率サービスのアラート
 
@@ -99,7 +101,7 @@ ms.locfileid: "60177305"
    Get-RetentionPolicy <GUID> | FL
    ```
 
-   Name プロパティの **値** は、管理センターの [アイテム保持ポリシー] ページに表示される保持ポリシー Exchangeです。
+   Name プロパティの **値** は、管理センターの [アイテム保持ポリシー] ページに表示される保持ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchangeです</a>。
 
 - **MailboxType**: ポリシーが割り当てられているメールボックスの種類を指定します。 値には *、プライマリ* (アーカイブのないメールボックス) または *PrimaryWithArchive* (アーカイブのあるメールボックス) が含まれます。 この列の値が *Primary* の場合は、ポリシーが割り当てられているメールボックス ([メールボックス] 列は、これらのメールボックスの数を示す) のアーカイブを有効にする必要があります。  それ以外の場合、アイテムを移動するアーカイブがないので、アーカイブ ポリシーまたは個人用アーカイブ タグは機能しません。
 

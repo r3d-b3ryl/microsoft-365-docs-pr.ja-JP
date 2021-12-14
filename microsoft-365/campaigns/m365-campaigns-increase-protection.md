@@ -19,17 +19,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: ユーザーの保護のレベルを上Microsoft 365
-ms.openlocfilehash: 42acbae868a3d451add0b93a0b7c21d46893010d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 454f5dbc1103fce384f7a42398ef6062e79ed6f5
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172781"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422665"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>サブスクリプションの脅威保護をMicrosoft 365する
 
@@ -212,7 +213,7 @@ Defender for Office 365でフィッシング対策ポリシーを作成するに
 
 ### <a name="set-up-safe-links-in-the-security--compliance-center"></a>セキュリティ セーフ コンプライアンス センターでリンクを&設定する
 
-ハッカーは、メールや他のファイルのリンクに悪意のある Web サイトを非表示にしている場合があります。 セーフOffice 365 用 Microsoft Defender の一部であるリンクは、電子メール メッセージおよびドキュメント内の Web アドレス (URL) のクリック時の検証を提供することで、組織を保護Officeできます。 保護は、リンク ポリシーセーフによって定義されます。
+ハッカーは、メールや他のファイルのリンクに悪意のある Web サイトを非表示にしている場合があります。 セーフ Office 365 用 Microsoft Defender の一部であるリンクは、電子メール メッセージおよびドキュメント内の Web アドレス (URL) のクリック時の検証を提供することで、組織を保護Officeできます。 保護は、リンク ポリシーセーフによって定義されます。
 
 次の手順を実行することをお勧めします。
 
@@ -257,7 +258,7 @@ Defender for Office 365でフィッシング対策ポリシーを作成するに
 
 セキュリティ & コンプライアンス センターで監査ログ検索を有効にした後、管理者と他のユーザー アクティビティをログに保持して検索できます。
 
-監査ログの検索をサブスクリプションでオンまたはオフExchange Onlineするには、監査ログロールを割り当てるMicrosoft 365必要があります。 既定では、この役割は、管理センターの [アクセス許可] ページの [コンプライアンス管理] および [組織の管理Exchange割り当てられます。 既定では、Microsoft 365のグローバル管理者は、このグループのメンバーです。
+監査ログの検索をサブスクリプションでオンまたはオフExchange Onlineするには、監査ログロールを割り当てるMicrosoft 365必要があります。 既定では、この役割は、管理センターの [アクセス許可] ページの [コンプライアンス管理] および [組織の管理]<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">役割グループExchange割り当てられます</a>。 既定では、Microsoft 365のグローバル管理者は、このグループのメンバーです。
 
 1. 監査ログ検索を有効にする場合は、管理センターに移動し、左側のナビゲーションの [管理センター] で [セキュリティ <https://admin.microsoft.com> **]** を選択します。
 2. [セキュリティの **Microsoft 365]** ページで、[その他のリソース]を選択し、[コンプライアンス センター] **Office 365[&] カードで開** きます。

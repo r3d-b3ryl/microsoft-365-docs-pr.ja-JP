@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: ビジネス向けリモートワークに関する最新情報、ヒント、リソース、ガイダンスをMicrosoft 365。
-ms.openlocfilehash: 2fb23bc74034bc3f8f27bc6aa06bf42311ee8bb8
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 673d323a64687b9f2413993d7ddd386529e1ffc8
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370850"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422377"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>リモート ワークで小規模ビジネスを強化する
 
@@ -71,7 +71,7 @@ COVID-19 (Novel Coronavirus) の流行に照らして、多くのビジネスオ
 
 データとデバイスを保護するには、多要素認証を使用します。
 
-詳細については、「多要素認証 [を有効にする」を参照してください](../../business-video/turn-on-mfa.md)。
+詳細については、「多要素認証 [を有効にする」を参照してください](../security-and-compliance/set-up-multi-factor-authentication.md)。
 
 ### <a name="secure-your-devices"></a>デバイスをセキュリティで保護する
 

@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: セキュリティ グループの作成、編集、削除について説明します。
-ms.openlocfilehash: b97b16856e48c81773c8b8e039dfa6b9469a4efb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3f054842abc5111c654b8da02afc418c36f7db11
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165018"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422281"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでセキュリティ グループを作成、編集、削除する
 
@@ -79,7 +80,7 @@ ms.locfileid: "60165018"
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Exchange Online グループと SharePoint Online グループ
 
-ユーザー グループを作成して全員にメールを同時に送信できるようにする場合は、Exchange 管理センターで [**管理**] \> [**Exchange**] \> [**宛先**] \> [**グループ**] の順に移動します。 次に、[**新しい** ![ 追加] ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) を選択し、作成するグループの種類を選択します。 
+すべてのユーザーにメールを同時に送信できるようユーザーのグループを作成する場合は、Exchange 管理センターで [管理者] Exchange 受信者グループに移動します。  \>  \>  \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a> 次に、[**新しい** ![ 追加] ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) を選択し、作成するグループの種類を選択します。 
   
 - **配布グループ**: メッセージをユーザー グループに配布するために使用します。 また、メールが有効な配布 *グループ、または* 配布リストとも *呼ばれる。* 詳細については、「[配布グループの管理](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)」をご覧ください。
     
@@ -87,7 +88,7 @@ ms.locfileid: "60165018"
     
 - **動的配布グループ**: メッセージの送信時に、定義されたフィルターと条件に基づいて宛先リストが毎回再確認されるタイプの配布グループ。 詳細については、「[動的配布グループの管理](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)」をご覧ください。
     
-管理センターで配布グループとメールが有効なセキュリティ グループをExchange、その名前とユーザー リストが [セキュリティ グループ **] ページに表示** されます。 このグループは、どちらの場所でも削除できますが、編集は Exchange 管理センターでのみ実行できます。 動的配布グループは 、[セキュリティ グループ] ページ **に表示** されます。 
+配布グループとメールが有効なセキュリティ グループを Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank"></a>管理センターに作成すると、その名前とユーザー リストが [セキュリティ グループ] ページ **に表示** されます。 このグループは、どちらの場所でも削除できますが、編集は Exchange 管理センターでのみ実行できます。 動的配布グループは 、[セキュリティ グループ] ページ **に表示** されます。 
   
  SharePoint グループは、サイト コレクションの作成時に自動的に作成されます。 既定のグループは、SharePoint の既定のアクセス許可レベル (SharePoint ロールと呼ばれることもあります) を使用して、ユーザーに権限とアクセス権を付与します。 詳細については、「[SharePoint Online の既定の SharePoint グループ](/sharepoint/default-sharepoint-groups)」をご覧ください。
   

@@ -19,14 +19,16 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: ユーザーのアーカイブ メールボックスにアイテムを自動的に移動するMicrosoft 365のアーカイブ および削除ポリシーを作成する方法について説明します。
-ms.openlocfilehash: b6d0a9fdfa18d34eac2624f7c83f0ee5993f666b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: eff76a5d06b975e161a4d12302ac8bd1f20e612e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175121"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423709"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>組織のメールボックスについて、アーカイブ削除ポリシーを設定する
 
@@ -98,7 +100,7 @@ ms.locfileid: "60175121"
 
 - アルパイン ハウス削除済みアイテム 5 年 削除と回復の許可 (削除済みアイテム フォルダーのカスタム タグ)
 
-新しい保持タグを作成するには、組織Exchange管理センター (EAC) をExchange Onlineします。 EAC のクラシック バージョンを必ず使用してください。
+新しい保持タグを作成するには、組織Exchange管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">(EAC)</a>をExchange Onlineします。 EAC のクラシック バージョンを必ず使用してください。
   
 1. 資格情報を [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) 使用してアクセスしてサインインします。
   
@@ -283,7 +285,7 @@ PowerShell に接続し、組織内Exchange Onlineで管理フォルダー ア�
 
 - 次の表は、このトピックの手順に従って作成されたカスタム保持ポリシーに追加される各保持タグの詳細を示しています。
 
-    | 保持タグ | このタグの動作 | 組み込みかカスタムか。 | 型 |
+    | 保持タグ | このタグの動作 | 組み込みかカスタムか。 | 種類 |
     |:-----|:-----|:-----|:-----|
     |アルパイン ハウス 3 年アーカイブへの移行  <br/> |1095 日 (3 歳) のアイテムをアーカイブ メールボックスに移動します。  <br/> |カスタム (「手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを[作成する」を参照)](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)  <br/> |既定のポリシー タグ (アーカイブ)。このタグはメールボックス全体に自動的に適用されます。  <br/> |
     |アルパイン ハウス 7 年の完全削除  <br/> |プライマリ メールボックスまたはアーカイブ メールボックス内のアイテムが 7 歳のときに完全に削除されます。  <br/> |カスタム (「手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを[作成する」を参照)](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)  <br/> |既定のポリシー タグ (削除)。このタグはメールボックス全体に自動的に適用されます。  <br/> |

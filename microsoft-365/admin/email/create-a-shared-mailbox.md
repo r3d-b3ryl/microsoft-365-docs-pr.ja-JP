@@ -18,23 +18,24 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 共有メールボックスを作成すると、社内の複数のユーザーが 1 つのメール アドレスに送付されたメールを閲覧したり、回答したりできます。
-ms.openlocfilehash: a2c4480d443874c99cf014570e01845708d18d88
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 19e27510b9ffd28aaae739c6d4da4299bca1a4fb
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371150"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422305"
 ---
 # <a name="create-a-shared-mailbox"></a>共有メールボックスを作成する 
 
 > [!NOTE]
-> 組織でハイブリッド Exchange 環境を使用する場合は、オンプレミスの Exchange 管理センター (EAC) を使用して、共有メールボックスを作成して管理する必要があります。「[Exchange 管理センターで共有メールボックスを作成する](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)」を参照してください。
+> 組織でハイブリッド Exchange 環境を使用する場合は、オンプレミスの <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>を使用して、共有メールボックスを作成および管理する必要があります。 「[Exchange 管理センターで共有メールボックスを作成する](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)」を参照してください。
 >
 > 共有メールボックスと Outlook 用 Microsoft 365 グループのどちらを作成すればよいかわからない場合は、「[グループを比較する](../create-groups/compare-groups.md)」のガイダンスを参照してください。 現在、共有メールボックスを Microsoft 365 グループに移行することはできません。 この機能をご希望の場合は、[こちらから投票](https://go.microsoft.com/fwlink/?linkid=871518)してお知らせください。
 
@@ -90,7 +91,7 @@ ms.locfileid: "61371150"
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>EAC を使用して共有メールボックスの委任を編集する
 
-1. EAC で、**[受信者]** \> **[共有]** の順に移動します。 共有メールボックスを選択し、**[編集]** ![[編集] アイコン](../../media/ITPro-EAC-EditIcon.png) を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>で、**[受信者]**、\>**[共有]** に移動します。 共有メールボックスを選択し、**[編集]** ![[編集] アイコン](../../media/ITPro-EAC-EditIcon.png) を選択します。
 
 2. **[メールボックスの委任]** を選択します。
 

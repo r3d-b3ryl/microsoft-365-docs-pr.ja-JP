@@ -7,18 +7,18 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: c99184fe90e5bbce8e878d15fae3ded8a14285b6
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 60d0c58edba42b8a32062c2f7adaf417fd8c7203
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375343"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421080"
 ---
 # <a name="set-up-email-notifications"></a>電子メール通知を設定する
 
@@ -48,9 +48,9 @@ ms.locfileid: "61375343"
 > [!TIP]
 > **セキュリティ チームが新しいアラートや** 脆弱性について知る唯一の方法は、電子メール通知ではありません。
 > 
-> メール通知は、セキュリティ チームにリアルタイムで情報を提供するのに役立つ便利な方法です。 しかし、他の人がいます! たとえば、セキュリティ チームが Microsoft 365 Defender ポータル ( ) にサインインすると、新しい脅威、アラート、および脆弱性が強調表示されたカード [https://security.microsoft.com](https://security.microsoft.com) が表示されます。 Defender for Business は、セキュリティ チームがサインインするとすぐに気にする重要な情報を強調表示するように設計されています。
+> メール通知は、セキュリティ チームにリアルタイムで情報を提供するのに役立つ便利な方法です。 しかし、他の人がいます! たとえば、セキュリティ チームが Microsoft 365 Defender ポータル ( ) にサインインすると、新しい脅威、アラート、および脆弱性が強調表示されたカード [https://security.microsoft.com](https://security.microsoft.com) が表示されます。 Defender for Business (プレビュー) は、セキュリティ チームがサインインするとすぐに気にしている重要な情報を強調表示するように設計されています。
 > 
-> セキュリティ チームは、ナビゲーション ウィンドウで **[インシデント]** を選択して情報を表示することもできます。 詳細については、「Microsoft Defender for Business でのインシデントの表示 [と管理」を参照してください](mdb-view-manage-incidents.md)。
+> セキュリティ チームは、ナビゲーション ウィンドウで **[インシデント]** を選択して情報を表示することもできます。 詳細については、「Microsoft Defender for Business でのインシデントの表示と管理 [(プレビュー)」を参照してください](mdb-view-manage-incidents.md)。
 
 ## <a name="view-and-edit-email-notifications"></a>メール通知の表示と編集
 
@@ -72,5 +72,5 @@ ms.locfileid: "61375343"
 
 次の手順に進みます。
 
-- [手順 4: Microsoft Defender for Business にデバイスをオンボードする](mdb-onboard-devices.md)
+- [手順 4: Microsoft Defender for Business にデバイスをオンボードする (プレビュー)](mdb-onboard-devices.md)
 

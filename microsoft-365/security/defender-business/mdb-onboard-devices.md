@@ -1,13 +1,13 @@
 ---
-title: Microsoft Defender for Business にデバイスをオンボードする
-description: Microsoft Defender for Business のデバイス オンボーディング オプションの詳細
+title: Microsoft Defender for Business へのオンボード デバイス (プレビュー)
+description: Microsoft Defender for Business (プレビュー) のデバイスオンボーディング オプションについて説明します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 58cb84f082bf290e870f545c0bb48503143aa837
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 330d0ca65916d647ff970468d32ede75f36d63a6
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375799"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423217"
 ---
-# <a name="onboard-devices-to-microsoft-defender-for-business"></a>Microsoft Defender for Business にデバイスをオンボードする
+# <a name="onboard-devices-to-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business へのオンボード デバイス (プレビュー)
 
 > [!IMPORTANT]
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Microsoft Defender for Business (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
 
-Microsoft Defender for Business では、会社のデバイスをオンボーディングするためのオプションを複数選択できます。 この記事では、オプションについて説明し、オンボーディングのしくみの概要について説明します。
+Microsoft Defender for Business (プレビュー) では、会社のデバイスをオンボーディングするためのオプションがいくつか用意されています。 この記事では、オプションについて説明し、オンボーディングのしくみの概要について説明します。
 
 ## <a name="what-to-do"></a>操作
 
@@ -36,7 +36,7 @@ Microsoft Defender for Business では、会社のデバイスをオンボーデ
 
 2. 次のいずれかの操作を行います。
 
-   - 自動オンボーディングを使用している場合は、「手順 [5: Microsoft Defender for Business](mdb-configure-security-settings.md)でセキュリティ設定とポリシーを構成する」に進みます。
+   - 自動オンボーディングを使用している場合は、「手順 [5: Microsoft Defender for Business (](mdb-configure-security-settings.md)プレビュー) でセキュリティ設定とポリシーを構成する」に進みます。
    - デバイスを手動でオンボーディングする場合は、[デバイスのオンボード] に進み、ローカル スクリプトを使用してデバイスをオンボード[Microsoft 365 Defender。](#onboard-a-device-using-a-local-script-in-defender-for-business)
    - 既にデバイスを使用している場合Microsoft Intuneに進み、デバイスを使用[してオンボード デバイスMicrosoft Intune。](#onboard-devices-using-microsoft-intune)
 
@@ -53,12 +53,12 @@ Microsoft Defender for Business では、会社のデバイスをオンボーデ
 
 | オンボーディング方法  | 説明  |
 |---------|---------|
-| **自動オンボーディング**<br/>(*既にユーザーを使用している* お客様Microsoft エンドポイント マネージャー ) | Defender for Business を取得する前にMicrosoft エンドポイント マネージャーを既に使用していた場合、Defender for Business によって検出されます。 以前にオンボードされたデバイスに対して自動オンボーディング プロセスを使用Microsoft エンドポイント マネージャー。 自動オンボーディングは、Defender for Business と Microsoft エンドポイント マネージャー間の接続をセットアップし、デバイスを Defender for Business にオンボードします。 このオプションを使用すると、デバイスを Defender for Business に迅速かつ効率的にオンボードできます。<br/><br/>自動オンボーディング プロセスを選択した場合、そのデバイスに登録Microsoft エンドポイント マネージャー Defender for Endpoint にオンボードされます。 <br/><br/>自動オンボーディングを使用する場合は、この記事の手順を省略し、「手順 [5: Microsoft Defender for Business](mdb-configure-security-settings.md)でセキュリティ設定とポリシーを構成する」に進みます。  |
-| **ローカル スクリプト**<br/>(*プレビュー中に推奨されます。一度にいくつかのデバイスをオンボーディングする場合に役立ちます*)  | プレビュー中に、ローカル スクリプトを使用して Defender for Business のデバイスをオンボードできます。 Microsoft Defender for Business では、ダウンロード可能なスクリプトがホストされています。このスクリプトは、Windows 10または 11 台のデバイスで使用できます。 デバイス上でスクリプトを実行すると、Azure Active Directory (Azure AD) との信頼が作成され、デバイスがMicrosoft Intune。<br/><br/>このメソッドを使用する場合は、[ローカル スクリプトを使用してデバイスをオンボードする] に進[Microsoft 365 Defender。](#onboard-a-device-using-a-local-script-in-defender-for-business) |
-| **Microsoft Intune** <br/>(*既にユーザーを使用しているお客様Microsoft Intune*) | Defender for Business を取得する前にMicrosoft Intuneを既に使用していた場合は、Microsoft Intuneを使用してデバイスをオンボードできます。 たとえば、プレビュー中に iOS、macOS、Linux、Android デバイスを Defender for Business にオンボードできます。 <br/><br/>このメソッドを使用する場合は [、「Intune でのデバイス登録」を参照してください](/mem/intune/enrollment/device-enrollment)。 |
+| **自動オンボーディング**<br/>(*既にユーザーを使用している* お客様Microsoft エンドポイント マネージャー ) | Defender for Business (プレビュー) をMicrosoft エンドポイント マネージャー前に既にアプリケーションを使用していた場合、Defender for Business は検出します。 以前にオンボードされたデバイスに対して自動オンボーディング プロセスを使用Microsoft エンドポイント マネージャー。 自動オンボーディングは、Defender for Business (プレビュー) と Microsoft エンドポイント マネージャー間の接続をセットアップし、デバイスを Defender for Business (プレビュー) にオンボードします。 このオプションを使用すると、デバイスを Defender for Business (プレビュー) にすばやく効率的にオンボードできます。<br/><br/>自動オンボーディング プロセスを選択した場合、そのデバイスに登録Microsoft エンドポイント マネージャー Defender for Endpoint にオンボードされます。 <br/><br/>自動オンボーディングを使用する場合は、この記事の手順を省略し、「手順 [5: Microsoft Defender for Business (プレビュー)](mdb-configure-security-settings.md)でセキュリティ設定とポリシーを構成する」に進みます。  |
+| **ローカル スクリプト**<br/>(*プレビュー中に推奨されます。一度にいくつかのデバイスをオンボーディングする場合に役立ちます*)  | プレビュー中は、ローカル スクリプトを使用して Defender for Business (プレビュー) のデバイスをオンボードできます。 Microsoft Defender for Business (プレビュー) では、ダウンロード可能なスクリプトがホストされます。このスクリプトは、Windows 10または 11 台のデバイスで使用できます。 デバイス上でスクリプトを実行すると、Azure Active Directory (Azure AD) との信頼が作成され、デバイスがMicrosoft Intune。<br/><br/>このメソッドを使用する場合は、[ローカル スクリプトを使用してデバイスをオンボードする] に進[Microsoft 365 Defender。](#onboard-a-device-using-a-local-script-in-defender-for-business) |
+| **Microsoft Intune** <br/>(*既にユーザーを使用しているお客様Microsoft Intune*) | Defender for Business (プレビュー) をMicrosoft Intune前に既にアプリケーションを使用していた場合は、Microsoft Intuneを使用してデバイスをオンボードできます。 たとえば、プレビュー中に iOS、macOS、Linux、Android デバイスを Defender for Business (プレビュー) にオンボードできます。 <br/><br/>このメソッドを使用する場合は [、「Intune でのデバイス登録」を参照してください](/mem/intune/enrollment/device-enrollment)。 |
 
 > [!TIP]
-> デバイスのオンボード中に問題が発生した場合は [、「Microsoft Defender for Business のトラブルシューティング」を参照してください](mdb-troubleshooting.yml)。 
+> デバイスのオンボード中に問題が発生した場合は [、「Microsoft Defender for Business (プレビュー) のトラブルシューティング」を参照してください](mdb-troubleshooting.yml)。 
 
 ## <a name="onboard-a-device-using-a-local-script-in-defender-for-business"></a>Defender for Business でローカル スクリプトを使用してデバイスをオンボードする
 
@@ -81,15 +81,15 @@ Microsoft Defender for Business では、会社のデバイスをオンボーデ
 6. [検出テスト [の実行] に進みます](#run-a-detection-test)。
 
 > [!IMPORTANT]
-> 問題が発生してオンボーディング プロセスが失敗した場合は [、「Microsoft Defender for Business のトラブルシューティング」を参照してください](mdb-troubleshooting.yml)。
+> 問題が発生してオンボーディング プロセスが失敗した場合は [、「Microsoft Defender for Business (プレビュー) のトラブルシューティング」を参照してください](mdb-troubleshooting.yml)。
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>デバイスを使用したオンボード Microsoft Intune
 
-Defender for Business を取得する前にMicrosoft Intuneを既に使用していた場合は、Microsoft Intuneを使用してデバイスをオンボードできます。 このヘルプについては、「デバイスの登録」[を参照Microsoft Intune。](/mem/intune/enrollment/device-enrollment)
+Defender for Business (プレビュー) をMicrosoft Intune前に既にアプリケーションを使用していた場合は、Microsoft Intuneを使用してデバイスをオンボードできます。 このヘルプについては、「デバイスの登録」[を参照Microsoft Intune。](/mem/intune/enrollment/device-enrollment)
 
 ## <a name="run-a-detection-test"></a>検出テストを実行する
 
-デバイスを手動でオンボードした後、検出テストを実行して、Defender for Business ですべてが正しく動作するようにすることができます。
+デバイスを手動でオンボードした後、検出テストを実行して、Defender for Business (プレビュー) ですべてが正しく動作するようにすることができます。
 
 1. デバイスで、フォルダーを作成します `C:\test-MDATP-test` 。
 
@@ -131,6 +131,6 @@ Defender for Business を取得する前にMicrosoft Intuneを既に使用して
 
 次の手順に進みます。
 
-- [手順 5: Microsoft Defender for Business でセキュリティ設定とポリシーを構成する](mdb-configure-security-settings.md)
+- [手順 5: Microsoft Defender for Business でセキュリティ設定とポリシーを構成する (プレビュー)](mdb-configure-security-settings.md)
 
-- [Microsoft Defender for Business の使用を開始する](mdb-get-started.md) 
+- [Microsoft Defender for Business の使用を開始する (プレビュー)](mdb-get-started.md) 

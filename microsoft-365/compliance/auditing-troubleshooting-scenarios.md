@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: 電子メール アカウントの一般的なMicrosoft 365のトラブルシューティングに役立つ監査ログ検索ツールを使用する方法について説明します。
-ms.openlocfilehash: 0ac1bbb2ff0a9c09b661abd8f60fd960d33fd774
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: f44902f22c3c7144bf46b9dc6bb95cd534480755
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478579"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421824"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>監査ログを検索して、一般的なサポートの問題を調査する
 
@@ -43,7 +44,7 @@ ms.locfileid: "60478579"
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>監査ログ検索ツールを使用するために必要なアクセス許可
 
-監査ログを検索するには、View-Only監査ログまたは監査ログの役割Exchange Online割り当てる必要があります。 既定では、これらの役割は Exchange 管理センターの [**アクセス許可**] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 Office 365 および Microsoft 365 のグローバル管理者は自動的に、組織管理役割グループのメンバーとして Exchange Online に追加されます。 詳細については、「[Exchange Online で役割グループを管理する](/Exchange/permissions-exo/role-groups)」を参照してください。
+監査ログを検索するには、View-Only監査ログまたは監査ログの役割Exchange Online割り当てる必要があります。 既定では、これらの役割は <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>の [**アクセス許可**] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 Office 365 および Microsoft 365 のグローバル管理者は自動的に、組織管理役割グループのメンバーとして Exchange Online に追加されます。 詳細については、「[Exchange Online で役割グループを管理する](/Exchange/permissions-exo/role-groups)」を参照してください。
 
 ### <a name="running-audit-log-searches"></a>監査ログ検索の実行
 

@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 - MOE150
@@ -21,19 +23,19 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: ユーザーがメール、予定表、連絡先にアクセスするために使用できるモバイル アプリを選択する方法について学習します。
-ms.openlocfilehash: 44991f9d84b421b77dd9923377b2db50b2772687
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e3a7999900e85bde1bee7bf220b46a74a1151f57
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164970"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422245"
 ---
 # <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>メール アプリのアクセスを管理するには、Microsoft 365 管理センター
 
 モバイル メール アクセス設定を使用して、組織内のユーザーが自分の仕事または学校のアカウントにアクセスしてメール、予定表、連絡先にアクセスするために使用できるモバイル アプリを選択します。
   
 > [!IMPORTANT]
-> 管理者センターでモバイル デバイスの管理設定を構成Microsoft Intune Exchange、組織は、この設定にアクセスできます。 
+> 組織は、Microsoft Intune を使用している場合や、Exchange 管理センターでモバイル デバイス管理設定を構成している場合をExchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">します</a>。 
   
 ## <a name="manage-email-app-options"></a>メール アプリのオプションを管理する
 

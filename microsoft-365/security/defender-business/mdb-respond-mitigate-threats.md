@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Business での脅威への対応と軽減
+title: Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)
 description: 脅威が検出されると、これらの脅威に対応して軽減するためのアクションを実行できます。
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,14 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ebea313507e2cfc336ad8cb42be3938a00aeb5e3
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: cbd05b701c5276644e98671c9f07b4fbcf27c682
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375383"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421128"
 ---
-# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Microsoft Defender for Business での脅威への対応と軽減
+# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)
 
 > [!IMPORTANT]
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Microsoft Defender for Business (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
@@ -56,6 +56,6 @@ ms.locfileid: "61375383"
 
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)
 
-- [Microsoft Defender for Business でデバイスを管理する](mdb-manage-devices.md)
+- [Microsoft Defender for Business でデバイスを管理する (プレビュー)](mdb-manage-devices.md)
 
-- [Microsoft Defender for Business でのインシデントの表示と管理](mdb-view-manage-incidents.md)
+- [Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)](mdb-view-manage-incidents.md)

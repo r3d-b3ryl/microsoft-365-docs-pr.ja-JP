@@ -14,18 +14,21 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
+- admindeeplinkMAC
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.localizationpriority: high
 search.appverid:
 - MET150
 description: Microsoft 365 で利用可能なツールを使用して、侵害された電子メール アカウントを認識して対処する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e2b38179556c8658cf6619e40f87bb803fec80e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c848a62793e6397f4cfd489c68d156a194b7911d
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208396"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421116"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 
@@ -59,11 +62,11 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 - メールの転送が最近追加された。
 - 偽の銀行署名や処方薬署名など、通常とは異なる署名が最近追加された。
 
-ユーザーが上記の兆候のいずれかを報告してきた場合は、詳しい調査を実施する必要があります。[Microsoft 365 Defender](https://security.microsoft.com) と Azure ポータルに、侵害が疑われるユーザー アカウントの活動を調査するためのツールが用意されています。
+ユーザーが上記の兆候のいずれかを報告してきた場合は、詳しい調査を実施する必要があります。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> と Azure ポータルには、侵害が疑われるユーザー アカウントの活動を調査するためのツールが用意されています。
 
 - **Microsoft 365 Defender ポータルの統合監査ログ**: 不審な活動が発生する直前から現在の日付までの範囲で結果をフィルター処理することにより、疑わしいアカウントのすべての活動を確認します。検索中にアクティビティをフィルター処理しないでください。
 
-- **EAC の管理監査ログ**: Exchange Online では、Exchange 管理センター (EAC) を使用して管理者監査ログ内のエントリを検索および表示できます。管理者監査ログには、管理者や管理者特権を割り当てられたユーザーが実行する、Exchange Online PowerShell コマンドレットに基づく特定の操作が記録されます。管理者監査ログのエントリは、実行されたコマンドレット、使われたパラメーター、コマンドレットを実行したユーザー、および影響を受けたオブジェクトに関する情報を提供します。
+- **EAC の管理監査ログ**: Exchange Online では、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター (EAC)</a> を使用して管理者監査ログ内のエントリを検索および表示できます。管理者監査ログには、管理者や管理者特権を割り当てられたユーザーが実行する、Exchange Online PowerShell コマンドレットに基づく特定の操作が記録されます。管理者監査ログのエントリは、実行されたコマンドレット、使われたパラメーター、コマンドレットを実行したユーザー、および影響を受けたオブジェクトに関する情報を提供します。
 
 - **Azure AD ポータルの Azure AD サインイン ログおよびその他のリスク レポート**: 次の列の値を調査します。
   - IP アドレスの確認
@@ -99,7 +102,7 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>ステップ 2 不審な電子メール転送アドレスを削除する
 
-1. <https://admin.microsoft.com> で Microsoft 365 管理センターを開きます。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> の Microsoft 365 管理センターに移動します。
 
 2. [**ユーザー**]\>[**アクティブなユーザー**] の順に選択します。 問題のユーザ アカウントを検索し、チェックボックスをオンにせずにユーザー (行) を選択します。
 
@@ -128,13 +131,13 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 > [!IMPORTANT]
 > アクセスを有効に戻しても安全なことが確認されるまでは、侵害が疑われるアカウントのサインインをブロックすることができます。
 
-1. <https://admin.microsoft.com> で Microsoft 365 管理センターを開き、[**ユーザー**] \>[**アクティブ ユーザー**] の順に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> で Microsoft 365 管理センターにアクセスし、[**ユーザー**] \> [**アクティブ ユーザー**] の順に移動します。
 
 2. ユーザー アカウントを見つけて選択し、![[その他] のアイコン](../../media/ITPro-EAC-MoreOptionsIcon.png)をクリックして、**[サインイン状態の編集]** を選択します。
 
 3. 表示される [**サインインをブロック**] ウィンドウで、[**このユーザーのサインインをブロックする**] を選択し、[**変更の保存**] をクリックします。
 
-4. <https://admin.exchange.microsoft.com> で Exchange 管理センター (EAC) を開き、[**受信者**] \>> [**メールボックス**] に移動します。
+4. Exchange 管理センター (EAC) を開き、[**受信者**] \>> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank"> [**メールボックス**]</a> に移動します。
 
 5. ユーザを見つけて選択します。開いたメールボックスの詳細ポップアップで、次の手順を行います。
    - **メール アプリ** セクションで、トグルを右に動かして ![[無効]](../../media/scc-toggle-on.png) にし、利用可能なすべての設定をブロックします。
@@ -152,12 +155,12 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 > [!NOTE]
 > 管理者役割グループ メンバーシップは、アカウントをセキュリティで保護した後に復元できます。
 
-1. <https://admin.microsoft.com> でグローバル管理者アカウントを使用して Microsoft 365 管理センターを開き、次の手順を行います。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> でグローバル管理者アカウントを使用して Microsoft 365 管理センターに移動し、次の手順を行います。
    1. [**ユーザー**]\>[**アクティブなユーザー**] の順に選択します。
    2. ユーザー アカウントを見つけて選択し、![[その他] のアイコン](../../media/ITPro-EAC-MoreOptionsIcon.png)をクリックして、**[役割の管理]** を選択します。
    3. アカウントに割り当てられているすべての管理者の役割を削除します。 完了したら、[**変更の保存**] をクリックします。
 
-2. <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開き、次の手順を行います。
+2. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>を開き、次の手順を行います。
    1. **[アクセス許可と役割]** \>>**[メールとコラボレーションの役割]** \>>**[役割]** の順に移動します。
    2. **[アクセス許可]** ページで、リストから各役割グループを選択して、表示される詳細ポップアップの **[メンバー]** セクションでユーザー アカウントを検索します。役割グループにユーザー アカウントが含まれている場合は、次の手順を実行します。
       1. [**メンバー**] セクションの [**編集**] をクリックします。
@@ -167,8 +170,8 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 
          完了したら、**[完了]**、**[保存]**、**[閉じる]** の順にクリックします。
 
-3. <https://admin.exchange.microsoft.com> で EAC を開き、次の手順を行います。
-   1. **[役割]** \>> **[管理者の役割]** の順に選択します。
+3. EAC を開き、次の手順を行います。
+   1. [**役割**] \>><a href="https://go.microsoft.com/fwlink/?linkid=2183234" target="_blank"> [**管理者の役割**] </a>の順に選択します。
    2. **[管理者の役割]** ページで、各役割グループを手動で選択し、詳細ウィンドウの **[割り当て]** タブでユーザー アカウントを確認します。 役割グループにユーザー アカウントが含まれている場合は、次の手順を実行します。
       1. ユーザー アカウントを選択します。
       2. 登録するには、このページの上方にある ![[削除] アイコン。](../../media/m365-cc-sc-delete-icon.png).

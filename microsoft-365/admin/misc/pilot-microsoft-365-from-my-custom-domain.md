@@ -14,17 +14,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 2つのテストアカウントのみを使用して、カスタムドメインから Microsoft 365 メールボックスに電子メール機能をパイロットする方法について説明します。
-ms.openlocfilehash: c428d070d0d4c20034a5a2a6ab94c8896549ea90
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bde6daacba3e7adad1a69748074638e651445d8f
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176129"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421332"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>カスタムドメインから Microsoft 365 をパイロットする
 
@@ -136,7 +137,7 @@ Microsoft 365 または Office365 で次の手順が完了したことを確認�
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Microsoft 365 または Office 365 からメール サーバーへのコネクタを設定します。
 
-Microsoft 365 または Office 365 にコネクタを作成するには、**[管理者]** をクリックし、そして **[Exchange]** をクリックして Exchange 管理センターへ移動します。次に、**[メール フロー]** をクリックし、**[コネクタ]** をクリックします。
+Microsoft 365または Office 365 でコネクタを作成するには、**［管理者］** > **［Exchange］** を選択して Exchange 管理センターに移動します。 次に、 **［メール フロー］** > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">**［コネクタ］**</a> を選択します。
 
 ウィザードを使用してコネクタを設定します。
 

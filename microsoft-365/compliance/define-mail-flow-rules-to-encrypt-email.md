@@ -15,18 +15,20 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkEXCHANGE
 description: 管理者は、メール フロー ルール (トランスポート ルール) を作成して、メール フロー ルールを使用してメッセージを暗号化および復号化Office 365 Message Encryption。
-ms.openlocfilehash: 73ff2ae12d6d0857760909c43cf12c4bbd84c13b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c546c151b7bcb1720f9903d43b8d310650f92d35
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206147"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421692"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>メール メッセージを暗号化するメール フロー ルールを定義する
 
-管理者は、Exchange Onlineメール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、送受信する電子メール メッセージを保護できます。 送信電子メール メッセージを暗号化し、組織内から送信される暗号化されたメッセージから、または組織から送信された暗号化されたメッセージへの返信から暗号化を削除するルールを設定できます。 これらのルールは、Exchange管理センター (EAC) または powerShell Exchange Online使用して作成できます。 全体的な暗号化ルールのほかに、エンド ユーザー向けの個別メッセージ暗号化のオプションの有効/無効を選択できます。
+管理者は、Exchange Onlineメール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、送受信する電子メール メッセージを保護できます。 送信電子メール メッセージを暗号化し、組織内から送信される暗号化されたメッセージから、または組織から送信された暗号化されたメッセージへの返信から暗号化を削除するルールを設定できます。 これらのルールを作成<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">するには、Exchange管理センター (EAC)</a>または powerShell Exchange Onlineを使用できます。 全体的な暗号化ルールのほかに、エンド ユーザー向けの個別メッセージ暗号化のオプションの有効/無効を選択できます。
 
 組織外の送信者からの受信メールを暗号化できない。
 
@@ -93,7 +95,7 @@ EAC を使用して、新しい OME 機能を使用してメッセージ暗号�
 
 7. [次の **操作] の一覧** から、[メッセージ セキュリティの変更] に割り当てられているすべてのアクションを削除します。以前のバージョンの \> **OME を適用します**。
 
-8. **[保存]** を選択します。
+8. [**保存**] を選択します。
 
 ## <a name="create-mail-flow-rules-to-remove-encryption-for-email-messages-with-the-new-ome-capabilities"></a>新しい OME 機能を使用してメール メッセージの暗号化を削除するメール フロー ルールを作成する
 

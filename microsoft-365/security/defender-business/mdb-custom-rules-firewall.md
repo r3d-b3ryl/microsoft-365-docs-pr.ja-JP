@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,21 +16,21 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d4c064623cd00a45dec189aa55a19ab51b26d01b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c397bd1cee5392ce0f9de45f63d6bd11cb40b29f
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375426"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423877"
 ---
-# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Microsoft Defender for Business でファイアウォール ポリシーのカスタム ルールを管理する
+# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business でファイアウォール ポリシーのカスタム ルールを管理する (プレビュー)
 
 > [!IMPORTANT]
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Microsoft Defender for Business (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
 
-Microsoft Defender for Business には、望ましくないネットワーク トラフィックからデバイスを保護するためのファイアウォール ポリシーが含まれています。 カスタム ルールを使用して、ファイアウォール ポリシーの例外を定義できます。 つまり、カスタム ルールを使用して、特定の接続をブロックまたは許可できます。
+Microsoft Defender for Business (プレビュー) には、望ましくないネットワーク トラフィックからデバイスを保護するためのファイアウォール ポリシーが含まれています。 カスタム ルールを使用して、ファイアウォール ポリシーの例外を定義できます。 つまり、カスタム ルールを使用して、特定の接続をブロックまたは許可できます。
 
-ファイアウォール ポリシーと設定の詳細については [、「Microsoft Defender for Business のファイアウォール」を参照してください](mdb-firewall.md)。
+ファイアウォール ポリシーと設定の詳細については、「ファイアウォール [in Microsoft Defender for Business (プレビュー)」を参照してください](mdb-firewall.md)。
 
 **この記事では、次の方法について説明します**。
 
@@ -102,8 +102,8 @@ Microsoft Defender for Business には、望ましくないネットワーク �
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Business でのインシデントの表示と管理](mdb-view-manage-incidents.md)
+- [Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)](mdb-view-manage-incidents.md)
 
-- [Microsoft Defender for Business での脅威への対応と軽減](mdb-respond-mitigate-threats.md)
+- [Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)](mdb-respond-mitigate-threats.md)
 
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)

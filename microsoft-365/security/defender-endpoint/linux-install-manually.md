@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c506f0ee86739bf17d46b8faafe69c6dcfdac82c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 76512d28363fc295d912ce014885614284eba90a
+ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167240"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61436670"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux 用 Microsoft Defender for Endpoint を手動で展開する
 
@@ -34,9 +34,9 @@ ms.locfileid: "61167240"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
+
 この記事では、Linux 用 Microsoft Defender for Endpoint を手動で展開する方法について説明します。 展開を成功させるには、次のすべてのタスクを完了する必要があります。
 
-- [Linux 用 Microsoft Defender for Endpoint を手動で展開する](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [前提条件とシステム要件](#prerequisites-and-system-requirements)
   - [Linux ソフトウェア リポジトリを構成する](#configure-the-linux-software-repository)
     - [RHEL とバリアント (CentOS、Fedora、Oracle Linux、Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
@@ -45,14 +45,13 @@ ms.locfileid: "61167240"
   - [アプリケーションのインストール](#application-installation)
   - [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)
   - [クライアント構成](#client-configuration)
-  - [インストーラー スクリプト](#installer-script)
-  - [インストールの問題をログする](#log-installation-issues)
-  - [オペレーティング システムのアップグレード](#operating-system-upgrades)
-  - [アンインストール](#uninstallation)
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
 開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明について、「[Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)」を参照してください。
+
+> [!WARNING]
+> 製品のインストール後にオペレーティング システムを新しいメジャー バージョンにアップグレードするには、製品を再インストールする必要があります。 Linux で [既存の](linux-resources.md#uninstall) Defender for Endpoint をアンインストールし、オペレーティング システムをアップグレードしてから、以下の手順に従って Defender for Endpoint on Linux を再構成する必要があります。
 
 ## <a name="configure-the-linux-software-repository"></a>Linux ソフトウェア リポジトリを構成する
 
@@ -73,7 +72,8 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     sudo yum install yum-utils
     ```
 
-- ディストリビューションとバージョンをメモし、`https://packages.microsoft.com/config/rhel/` の下でそれに最も近いエントリ (メジャー、マイナーの順に) を特定します。
+  > [!NOTE]
+  > 配布とバージョンを選択し、その下で最も近いエントリ (メジャー、マイナー) を特定します `https://packages.microsoft.com/config/rhel/` 。
 
     次の表を使用して、パッケージを見つけるのに役立ててください。
 
@@ -95,6 +95,9 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
     ```
+
+    > [!TIP]
+    > hostnamectl コマンドを使用して、リリース [version] などのシステム関連 *情報を識別します*。
 
     たとえば、CentOS 7 を実行していて、*prod* チャネルから Linux 用 Defender for Endpoint を展開する場合は次のようになります。
 
@@ -122,19 +125,23 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 
 ### <a name="sles-and-variants"></a>SLES とバリエーション
 
-- ディストリビューションとバージョンをメモし、`https://packages.microsoft.com/config/sles/` の下でそれに最も近いエントリ (メジャー、マイナーの順に) を特定します。
+> [!NOTE]
+> 配布とバージョンを選択し、その下で最も近いエントリ (メジャー、マイナー) を特定します `https://packages.microsoft.com/config/sles/` 。
 
-    次のコマンドで、*[ディストリビューション]* と *[バージョン]* を特定した情報に置き換えます。
+   次のコマンドで、*[ディストリビューション]* と *[バージョン]* を特定した情報に置き換えます。
 
-    ```bash
-    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
-    ```
+   ```bash
+   sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+   ```
 
-    たとえば、SLES 12 を実行していて、*prod* チャネルから Linux 用 Microsoft Defender for Endpoint を展開する場合は次のようになります。
+   > [!TIP]
+   > SPident コマンドを使用して、リリース [version] などのシステム関連 *情報を識別します*。
 
-    ```bash
-    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
-    ```
+   たとえば、SLES 12 を実行していて、*prod* チャネルから Linux 用 Microsoft Defender for Endpoint を展開する場合は次のようになります。
+
+   ```bash
+   sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
+   ```
 
 - Microsoft GPG 公開キーをインストールします。
 
@@ -156,19 +163,23 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     sudo apt-get install libplist-utils
     ```
 
-- ディストリビューションとバージョンをメモし、`https://packages.microsoft.com/config/[distro]/` の下でそれに最も近いエントリ (メジャー、マイナーの順に) を特定します。
+> [!NOTE]
+> 配布とバージョンを選択し、その下で最も近いエントリ (メジャー、マイナー) を特定します `https://packages.microsoft.com/config/[distro]/` 。
 
-    以下のコマンドで、*[ディストリビューション]* と *[バージョン]* を特定した情報に置き換えます。
+   以下のコマンドで、*[ディストリビューション]* と *[バージョン]* を特定した情報に置き換えます。
 
-    ```bash
+   ```bash
     curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
-    ```
+   ```
 
-    たとえば、Ubuntu 18.04 を実行していて、*prod* チャネルから Linux 用 Microsoft Defender for Endpoint を展開する場合は次のようになります。
+   > [!TIP]
+   > hostnamectl コマンドを使用して、リリース [version] などのシステム関連 *情報を識別します*。
 
-    ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
-    ```
+   たとえば、Ubuntu 18.04 を実行していて、*prod* チャネルから Linux 用 Microsoft Defender for Endpoint を展開する場合は次のようになります。
+
+   ```bash
+   curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
+   ```
 
 - リポジトリ構成をインストールします。
 
@@ -189,6 +200,10 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     ```
 
   `gpg` が利用できない場合は、`gnupg` をインストールします。
+
+    ```bash
+    sudo apt-get install gnupg
+    ```
 
 - Microsoft GPG 公開キーをインストールします。
 
@@ -216,7 +231,8 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     sudo yum install mdatp
     ```
 
-    デバイスに複数の Microsoft リポジトリが構成されている場合は、パッケージのインストール元のリポジトリを指定できます。 次の例は、このデバイスで `insiders-fast` リポジトリ チャネルも構成されている場合に、`production` チャネルからパッケージをインストールする方法を示しています。 この状況は、デバイスで複数の Microsoft 製品を使用している場合に発生する可能性があります。 サーバーのディストリビューションとバージョンによっては、リポジトリ エイリアスが次の例のものと異なる場合があります。
+    > [!NOTE]
+    > デバイスに複数の Microsoft リポジトリが構成されている場合は、パッケージのインストール元のリポジトリを指定できます。 次の例は、このデバイスで `insiders-fast` リポジトリ チャネルも構成されている場合に、`production` チャネルからパッケージをインストールする方法を示しています。 この状況は、デバイスで複数の Microsoft 製品を使用している場合に発生する可能性があります。 サーバーのディストリビューションとバージョンによっては、リポジトリ エイリアスが次の例のものと異なる場合があります。
 
     ```bash
     # list all repositories
@@ -241,7 +257,8 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     sudo zypper install mdatp
     ```
 
-    デバイスに複数の Microsoft リポジトリが構成されている場合は、パッケージのインストール元のリポジトリを指定できます。 次の例は、このデバイスで `insiders-fast` リポジトリ チャネルも構成されている場合に、`production` チャネルからパッケージをインストールする方法を示しています。 この状況は、デバイスで複数の Microsoft 製品を使用している場合に発生する可能性があります。
+    > [!NOTE]
+    > デバイスに複数の Microsoft リポジトリが構成されている場合は、パッケージのインストール元のリポジトリを指定できます。 次の例は、このデバイスで `insiders-fast` リポジトリ チャネルも構成されている場合に、`production` チャネルからパッケージをインストールする方法を示しています。 この状況は、デバイスで複数の Microsoft 製品を使用している場合に発生する可能性があります。
 
     ```bash
     zypper repos
@@ -266,7 +283,8 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     sudo apt-get install mdatp
     ```
 
-    デバイスに複数の Microsoft リポジトリが構成されている場合は、パッケージのインストール元のリポジトリを指定できます。 次の例は、このデバイスで `insiders-fast` リポジトリ チャネルも構成されている場合に、`production` チャネルからパッケージをインストールする方法を示しています。 この状況は、デバイスで複数の Microsoft 製品を使用している場合に発生する可能性があります。
+    > [!NOTE]
+    > デバイスに複数の Microsoft リポジトリが構成されている場合は、パッケージのインストール元のリポジトリを指定できます。 次の例は、このデバイスで `insiders-fast` リポジトリ チャネルも構成されている場合に、`production` チャネルからパッケージをインストールする方法を示しています。 この状況は、デバイスで複数の Microsoft 製品を使用している場合に発生する可能性があります。
 
     ```bash
     cat /etc/apt/sources.list.d/*
@@ -283,7 +301,10 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 
 ## <a name="download-the-onboarding-package"></a>オンボーディング パッケージをダウンロードする
 
-Microsoft 365 Defender ポータルからオンボーディング パッケージをダウンロードします。
+オンボーディング パッケージをポータルからMicrosoft 365 Defenderします。
+
+> [!IMPORTANT]
+> この手順を実行しない場合、実行されたコマンドには、製品のライセンスが解除されたことを示す警告メッセージが表示されます。 また、 `mdatp health` コマンドはの値を返します `false` 。
 
 1. Microsoft 365 Defender ポータルで、**[設定] > [エンドポイント] > [デバイス管理] > [オンボーディング]** に移動します。
 2. 最初のドロップダウン メニューで、オペレーティング システムとして **[Linux サーバー]** を選択します。 2 番目のドロップダウン メニューで、展開方法として **[ローカル スクリプト]** を選択します。
@@ -291,8 +312,7 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
 
     ![Microsoft 365 Defender ポータルのスクリーンショット。](images/portal-onboarding-linux.png)
 
-4. コマンド プロンプトから、ファイルがあることを確認します。
-    アーカイブの内容を抽出します。
+4. コマンド プロンプトから、ファイルが存在するように確認し、アーカイブの内容を抽出します。
 
     ```bash
     ls -l
@@ -316,7 +336,8 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
 
 1. MicrosoftDefenderATPOnboardingLinuxServer.py をターゲット デバイスにコピーします。
 
-    最初は、クライアント デバイスは組織に関連付けられていません。 *orgId* 属性が空白であることに注意してください。
+    > [!NOTE]
+    > 最初は、クライアント デバイスは組織に関連付けではなく *、orgId* 属性は空白です。
 
     ```bash
     mdatp health --field org_id
@@ -325,26 +346,34 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
 2. MicrosoftDefenderATPOnboardingLinuxServer.py を実行します。
 
     > [!NOTE]
-    > このコマンドを実行するには、デバイスに `python` がインストールされている必要があります。 RHEL 8.x または Ubuntu 20.04 以降を実行している場合は、Python の代わりに Python 3 を使用する必要があります。
+    > このコマンドを実行するには、disto と version に応じてデバイスにインストール `python` `python3` されている必要があります。 必要に応じて、「Linux に Python をインストールする手順」 [を参照してください](https://opensource.com/article/20/4/install-python-linux)。
+    
+    RHEL 8.x または Ubuntu 20.04 以上を実行している場合は、 を使用する必要があります `python3` 。
 
     ```bash
-    python MicrosoftDefenderATPOnboardingLinuxServer.py
+    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
+    残りのディストリビューションとバージョンでは、使用する必要があります `python` 。
+    
+    ```bash
+    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
+    ```
+    
 3. デバイスが組織に関連付けられていることを確認し、有効な組織 ID を報告します。
 
     ```bash
     mdatp health --field org_id
     ```
 
-4. インストールが完了してから数分後、次のコマンドを実行して状態を確認できます。 `1` の戻り値は、製品が期待どおりに機能していることを示します。
+4. 次のコマンドを実行して、製品の正常性状態を確認します。 `1` の戻り値は、製品が期待どおりに機能していることを示します。
 
     ```bash
     mdatp health --field healthy
     ```
 
     > [!IMPORTANT]
-    > 製品が初めて起動すると、最新のウイルス対策定義がダウンロードされます。 インターネット接続によっては、これには数分かかる場合があります。 この間、上記のコマンドは `false` の値を返します。 次のコマンドを使用して、定義の更新の状態を確認できます。
+    > 製品が初めて起動すると、最新のウイルス対策定義がダウンロードされます。 ネットワーク接続によっては、最大で数分かかる場合があります。 この間、上記のコマンドは `false` の値を返します。 次のコマンドを使用して、定義の更新の状態を確認できます。
     >
     > ```bash
     > mdatp health --field definitions_status
@@ -352,7 +381,7 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
     >
     > 初期インストールの完了後にプロキシの構成が必要な場合もあることに注意してください。 「[静的プロキシ検出のための Linux 用 Defender for Endpoint の構成: インストール後の構成](linux-static-proxy-configuration.md#post-installation-configuration)」を参照してください。
 
-5. 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
+5. AV 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
 
     - リアルタイム保護が有効になっていることを確認します (`1` が次のコマンドを実行した結果として示されます)。
 
@@ -360,7 +389,7 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
         mdatp health --field real_time_protection_enabled
         ```
 
-    - [ターミナル] ウィンドウを開きます。 次のコマンドをコピーして実行します。
+    - ターミナル ウィンドウを開き、次のコマンドを実行します。
 
         ``` bash
         curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
@@ -372,23 +401,20 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
         mdatp threat list
         ```
 
-## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>シミュレートされた攻撃で Linux エンドポイントの検出と応答 (EDR) 機能を体験する
+6. デバイスのEDRテストを実行し、検出をシミュレートして、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
 
-Linux 用 EDR の機能をテストするには、以下の手順に従って Linux サーバーでの検出をシミュレートし、ケースを調査します。
+    - オンボードされた Linux サーバーが Microsoft 365 Defender に表示されることを確認します。 これがマシンの最初のオンボーディングである場合、表示されるまで最大 20 分かかります。
 
-1. オンボードされた Linux サーバーが Microsoft 365 Defender に表示されることを確認します。 これがマシンの最初のオンボーディングである場合、表示されるまで最大 20 分かかります。
+    - [スクリプト ファイル](https://aka.ms/LinuxDIY)をダウンロードしてオンボードされた Linux サーバーに抽出し、次のコマンドを実行します: `./mde_linux_edr_diy.sh`
 
-2. [スクリプト ファイル](https://aka.ms/LinuxDIY)をダウンロードしてオンボードされた Linux サーバーに抽出し、次のコマンドを実行します: `./mde_linux_edr_diy.sh`
+    - 数分後、Microsoft 365 Defender で検出が行われるはずです。
 
-3. 数分後、Microsoft 365 Defender で検出が行われるはずです。
-
-4. アラートの詳細、マシンのタイムラインを確認し、一般的な調査手順を実行します。
+    - アラートの詳細、マシンのタイムラインを確認し、一般的な調査手順を実行します。
 
 ## <a name="installer-script"></a>インストーラー スクリプト
 
 または、[公開 GitHub リポジトリ](https://github.com/microsoft/mdatp-xplat/)で提供されている自動[インストーラー bash スクリプト](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh)を使用することもできます。
-スクリプトは、ディストリビューションとバージョンを識別し、最新のパッケージをプルしてインストールするようにデバイスを設定します。
-提供されているスクリプトを使用してオンボードすることもできます。
+このスクリプトは、配布とバージョンを識別し、適切なリポジトリの選択を簡略化し、最新のパッケージをプルするデバイスをセットアップし、製品のインストールとオンボーディングの手順を組み合わせたものにします。
 
 ```bash
 ❯ ./mde_installer.sh --help
@@ -412,10 +438,6 @@ Options:
 ## <a name="log-installation-issues"></a>インストールの問題をログする
 
 エラーが発生したときにインストーラーによって作成される自動生成されたログを見つける方法の詳細については、「[インストールの問題をログする](linux-resources.md#log-installation-issues)」を参照してください。
-
-## <a name="operating-system-upgrades"></a>オペレーティング システムのアップグレード
-
-オペレーティング システムを新しいメジャー バージョンにアップグレードするときは、最初に Linux 用 Defender for Endpoint をアンインストールし、アップグレードをインストールしてから、最後にデバイスの Linux 用 Defender for Endpoint を再構成する必要があります。
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Insiders-Fast から Production チャネルに移行する方法
 

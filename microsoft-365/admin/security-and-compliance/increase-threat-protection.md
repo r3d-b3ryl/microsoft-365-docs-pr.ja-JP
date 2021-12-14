@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: フィッシング、マルウェア、その他のOffice 365から機密データを保護するために Microsoft Defender をセットアップします。
-ms.openlocfilehash: 3aa65b31c3995e39164b6bd5d7aa3aa07e7f6009
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 7b19f73a08dc34821f755a64cd0dda502ef4a144
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128678"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421320"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -96,7 +96,7 @@ ms.locfileid: "61128678"
 
 5. ルールの次の表の設定を適用します。 設定を変更しない限り、残りの設定の既定値を使用します。
 
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
 
 |Setting|ファイルの添付ファイルを開く前にユーザーにOfficeする|
 |---|---|
@@ -128,7 +128,7 @@ ms.locfileid: "61128678"
 
 5. 次の表の設定を適用します。 設定を変更しない限り、残りの設定の既定値を使用します。
 
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
 
 |Setting|ファイルの添付ファイルを開く前にユーザーにOfficeする|
 |---|---|
@@ -217,7 +217,7 @@ Microsoft Defender for Office 365 (以前は Microsoft 365 ATP、または Advan
 
 - ドメイン内のすべての受信者を対象とする新しいポリシーを追加します。
 
-リンクを設定セーフ、この短いトレーニング ビデオ[を見](../../business-video/safe-links.md)る、または次の手順を実行します。
+リンクをセーフするには、次の手順を実行します。
 
 1. に移動 [https://protection.office.com](https://protection.office.com) し、管理者アカウントでサインインします。
 
@@ -231,7 +231,7 @@ Microsoft Defender for Office 365 (以前は Microsoft 365 ATP、または Advan
 
 2. **[設定以外のコンテンツ** に適用する場合は、[iOS と Android **Microsoft 365 Apps for enterprise] Officeを選択します**。
 
-3. [**保存**] を選択します。
+3. **[保存]** を選択します。
 
 ドメイン内のすべての受信者を対象とする新しいポリシーを作成するには、次の方法を実行します。
 
@@ -239,7 +239,7 @@ Microsoft Defender for Office 365 (以前は Microsoft 365 ATP、または Advan
 
 2. 次の表に示す設定を適用します。
 
-3. [**保存**] を選択します。
+3. **[保存]** を選択します。
 
 |設定またはオプション|推奨される設定値|
 |---|---|

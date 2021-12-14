@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.date: 12/06/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 676cdfd959c39baef6baf10e383288aeb4c58629
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 362414da07fbc71520c390c8dab45fc85b7a0872
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320781"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426449"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -158,7 +158,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
    - [ **名前]** に、ルールの名前を入力します。
    - [ **説明]** に簡単な説明を入力します。
-   - **OMA-URI で**、追加するルールの特定の OMA-URI リンクを入力または貼り付けます。 このルール例で使用する OMA-URI については、この記事の前の MEM セクションを参照してください。 Azure Site Recovery ルール GUIDS の場合は、「 [ルール](attack-surface-reduction-rules.md#per-rule-descriptions) ごとの説明」のトピック「攻撃表面の縮小ルール」を参照してください。
+   - **OMA-URI で**、追加するルールの特定の OMA-URI リンクを入力または貼り付けます。 このルール例で使用する OMA-URI については、この記事の前の MEM セクションを参照してください。 攻撃表面の縮小ルール GUIDS[](attack-surface-reduction-rules.md#per-rule-descriptions)については、トピック「攻撃表面縮小ルール」の「ルールごとの説明」を参照してください。
    - [ **データ型] で**、[文字列] を **選択します**。
    - [ **値]** で、GUID 値、記号、およびスペースを含む State 値 \= _(GUID=StateValue) を入力または貼り付けます_。 ここで、
      

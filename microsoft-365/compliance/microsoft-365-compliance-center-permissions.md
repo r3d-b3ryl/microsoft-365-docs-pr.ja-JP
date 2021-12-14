@@ -11,13 +11,15 @@ ms.topic: article
 ms.localizationpriority: medium
 description: アクセス許可を管理する方法については、Microsoft 365 コンプライアンス センター。
 ms.collection: M365-security-compliance
-ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b19e0ce095fe4b0eb25f8fbf81b3f3e739271e1e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 45540713452b91da171f6fc52eef8210fa256c4e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786436"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423697"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センターでのアクセス許可
 
@@ -27,7 +29,7 @@ Microsoft 365 コンプライアンス センター の[アクセス許可] タ�
 
 ![[アクセス許可] ページ (Microsoft 365 コンプライアンス センター)。](../media/m365-compliance-center-permissions.png)
 
-アクセス許可は、Microsoft 365 コンプライアンス センターベースのアクセス制御 (RBAC) アクセス許可モデルに基づいて行います。 RBAC は、ほとんどの Microsoft 365 サービスで使用されるのと同じアクセス許可モデルなので、これらのサービスのアクセス許可構造に精通している場合は、Microsoft 365 コンプライアンス センター でアクセス許可を付与する方法が分かっています。 Microsoft 365 コンプライアンス センターで管理されるアクセス許可は、個々のサービスで必要なすべてのアクセス許可の管理をカバーしているのではありません。 特定のサービスの管理センターで特定のサービス固有のアクセス許可を管理する必要があります。 たとえば、アーカイブ、監査、および MRM 保持ポリシーのアクセス許可を割り当てる必要がある場合は、Exchange 管理センターでこれらのアクセス許可を管理する必要があります。
+アクセス許可は、Microsoft 365 コンプライアンス センターベースのアクセス制御 (RBAC) アクセス許可モデルに基づいて行います。 RBAC は、ほとんどの Microsoft 365 サービスで使用されるのと同じアクセス許可モデルなので、これらのサービスのアクセス許可構造に精通している場合は、Microsoft 365 コンプライアンス センター でアクセス許可を付与する方法が分かっています。 Microsoft 365 コンプライアンス センターで管理されるアクセス許可は、個々のサービスで必要なすべてのアクセス許可の管理をカバーしているのではありません。 特定のサービスの管理センターで特定のサービス固有のアクセス許可を管理する必要があります。 たとえば、アーカイブ、監査、および MRM 保持ポリシーのアクセス許可を割り当てる必要がある場合は、Exchange 管理センターでこれらのアクセス許可<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">を管理する必要があります</a>。
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>メンバー、役割、役割グループの関係
 
@@ -41,13 +43,13 @@ Microsoft 365 コンプライアンス センター の[アクセス許可] タ�
 
 Microsoft 365 コンプライアンス センター で使用可能なすべての既定の役割グループと、既定で役割グループに割り当てられている役割を表示するには、「セキュリティ & コンプライアンス センターのアクセス許可」[を参照してください](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
 
-サーバーでアクセス許可を管理Microsoft 365 コンプライアンス センター、ユーザーに対して、アクセス許可内で使用できるコンプライアンス機能にのみアクセスMicrosoft 365 コンプライアンス センター。 Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) など、Microsoft 365 コンプライアンス センター に含られていない他の機能にアクセス許可を付与する場合は、Exchange 管理センターを使用する必要があります。
+サーバーでアクセス許可を管理Microsoft 365 コンプライアンス センター、ユーザーに対して、アクセス許可内で使用できるコンプライアンス機能にのみアクセスMicrosoft 365 コンプライアンス センター。 Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) など、Microsoft 365 コンプライアンス センター に含られていない他の機能にアクセス許可を付与する場合は、Exchange 管理センターを使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">する必要があります</a>。
 
 ## <a name="azure-roles-in-the-microsoft-365-compliance-center"></a>Azure ロールのMicrosoft 365 コンプライアンス センター
 
 [アクセス許可] ページの **[Azure AD** ロール] セクションに表示されるMicrosoft 365 コンプライアンス センター  >  **は**、Azure Active Directoryロールです。 これらのロールは、組織の IT グループの職務に合わせて設計されており、仕事を遂行するために必要なすべての権限をユーザーに簡単に付与できます。 管理役割を選択し、役割パネルの詳細を表示することで、各役割に現在割り当てられているユーザーを表示できます。 役割のメンバーを管理するにはAzure ADで [メンバーの管理] をAzure AD。 この選択によって、Azure 管理ポータルにリダイレクトされます。
 
-|役割|内容|
+|Role|内容|
 |:---|:----------|
 |**全体管理者**|Microsoft 365 サービスのすべての管理機能にアクセスできます。 他の管理者ロールを割り当てることができるのは全体管理者だけです。 詳細については、「[グローバル管理者または会社の管理者](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator)」を参照してください。|
 |**コンプライアンス データ管理者**|Microsoft 365 全体の組織のデータを追跡し、保護されていることを確認し、あらゆる問題を把握してリスクを軽減することができます。詳細については、「[コンプライアンス データ管理者](/azure/active-directory/roles/permissions-reference#compliance-data-administrator)」を参照してください。|

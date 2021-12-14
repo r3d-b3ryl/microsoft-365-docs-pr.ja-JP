@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 でシンプルなビューのいずれかを使用して、一般的なタスクやダッシュボード ビューの複雑な設定やタスクを管理します。
-ms.openlocfilehash: b5b1bf2c82e61bbaad227511925700e817b7b175
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c6443ef9406f49fe8f27aa5977aac1e046583587
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375356"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421812"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
@@ -192,4 +192,6 @@ Microsoft 365 管理センターは、40 言語に完全にローカライズさ
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 の管理者とは](../../business-video/what-is-admin.md) (ビデオ)[管理者を追加](../../business-video/add-admin.md)する (ビデオ)[組織Microsoft 365テーマをカスタマイズ](../setup/customize-your-organization-theme.md)する (記事)
+[Microsoft 365 の管理者とは](../add-users/about-admin-roles.md) (video)\
+[管理者ロールの割り当](../add-users/assign-admin-roles.md) て (ビデオ)\
+[組織で使用する Microsoft 365 のテーマをカスタマイズする](../setup/customize-your-organization-theme.md) (記事)

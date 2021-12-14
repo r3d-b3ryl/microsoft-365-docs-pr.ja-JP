@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
@@ -20,16 +22,16 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Exchange管理者が組織のメールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。
-ms.openlocfilehash: 2362731a3837950ecbf0f3fea5e6887311e94d97
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f889b2c482734518d1a73802c3422c13bc5c4a59
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162016"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421392"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 
-管理者の管理に役立Microsoft 365、管理者センターから組織[](assign-admin-roles.md)のメールとメールボックスを管理するためのアクセス許可をユーザーに割り[当Exchangeできます](/exchange/exchange-admin-center)。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
+管理者の管理に役立Microsoft 365、管理者センターから組織[](assign-admin-roles.md)のメールとメールボックスを管理するためのアクセス許可をユーザーに割り<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">当Exchangeできます</a>。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
   
  **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 この方法では、Microsoft 365 管理センター サービスの正常性、変更およびリリース通知など、Exchange Onlineに重要な情報を表示できます。
 

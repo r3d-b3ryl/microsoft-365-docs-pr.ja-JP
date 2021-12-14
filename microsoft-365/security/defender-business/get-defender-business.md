@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d0753b5833ec2bdcff0f790a605e5caed72fc9c9
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a79b9591a8954cd6609faedc816adbc469e66dee
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375493"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423013"
 ---
-# <a name="get-microsoft-defender-for-business"></a>ビジネス向け Microsoft Defender を取得する
+# <a name="get-microsoft-defender-for-business-preview"></a>ビジネス向け Microsoft Defender を取得する (プレビュー)
 
 > [!IMPORTANT]
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Microsoft Defender for Business (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
 
-Microsoft Defender for Business はプレビューで利用できます。 プレビュー プログラムに参加すると、一般に利用可能になる前に Defender for Business を試用できます。 プレビュー プログラムは、次の場合に使用できます。
+Microsoft Defender for Business (プレビュー) はプレビューで利用できます。 プレビュー プログラムに参加すると、一般に利用可能になる前に Defender for Business を試用できます。 プレビュー プログラムは、次の場合に使用できます。
 
 - 中小企業に IT サービスを提供する Microsoft パートナー
 - 中小企業 (最大 300 人の従業員)
@@ -60,6 +60,6 @@ Microsoft Defender for Business はプレビューで利用できます。 プ�
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Business のセットアップと構成プロセスを参照してください。](mdb-setup-configuration.md)
+- [Microsoft Defender for Business のセットアップと構成プロセス (プレビュー) を参照してください。](mdb-setup-configuration.md)
 
-- [Microsoft Defender for Business のヘルプとサポートを受ける方法について説明します。](mdb-get-help.md)
+- [Microsoft Defender for Business のヘルプとサポートを受ける方法 (プレビュー)](mdb-get-help.md)

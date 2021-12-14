@@ -27,20 +27,20 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: セットアップ ウィザードを使用して、DNS ホストに DNS レコードMicrosoft 365追加Microsoft 365 管理センターにドメインを追加します。
-ms.openlocfilehash: 7bb853e777ee0377ac0fb6ec6f7de453d4c4d4c7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d3ddcd9b0eb97b568650a28e360f2e5b296cda54
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373238"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426329"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](domains-faq.yml)** を参照してください。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
-ドメインを追加、変更、または **削除するには、** ビジネスプランまたはエンタープライズ プランの [グローバル管理者である必要があります](https://products.office.com/business/office)。 これらの変更はテナント全体に影響します。 *カスタマイズされた管理者* または *通常のユーザー* は、これらの変更を行う事ができません。
+ドメインを追加、変更、または削除するには、ビジネスプランまたはエンタープライズ プランのドメイン名管理者またはグローバル[管理者である必要があります](https://products.office.com/business/office)。  これらの変更はテナント全体に影響します。 *カスタマイズされた管理者* または *通常のユーザー* は、これらの変更を行う事ができません。
 
 ## <a name="watch-add-a-domain"></a>ウォッチ: ドメインの追加
 
@@ -145,5 +145,8 @@ ms.locfileid: "61373238"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドメインに関する FAQ](domains-faq.yml) (記事) [ドメインとは](../get-help-with-domains/what-is-a-domain.md) (記事)[ドメイン名を購入する](../get-help-with-domains/buy-a-domain-name.md)(Microsoft 365)\
-[DNS レコードを追加して](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)ドメインに接続する ([記事)](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)ネームサーバーを変更して、Microsoft 365レジストラーと一緒に設定する (記事)
+[ドメインの FAQ](domains-faq.yml) (記事)</br>
+[ドメインとは](../get-help-with-domains/what-is-a-domain.md) (記事)</br>
+[ドメイン名を購入する (Microsoft 365)](../get-help-with-domains/buy-a-domain-name.md)</br>
+[ドメインに接続するための DNS レコードの追加](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (記事)</br>
+[任意のドメイン レジストラーで Microsoft 365 をセットアップするためにネームサーバーを変更する](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (記事)

@@ -19,14 +19,15 @@ description: 管理者は、ポータルで使用できる電子メール セキ
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 079228cb10c00246f37cb4f34f156ca36595e9ae
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 3e5e7ba4688f4ec4a54856bc5b4e8e3c14aed090
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401368"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421764"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>電子メール セキュリティ レポートを Microsoft 365 Defenderする
 
@@ -43,7 +44,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 >
 > [電子メール] コラボレーション レポート ページの一 **部のレポート&、Microsoft** Defender が必要です。Office 365。 これらのレポートの詳細については[、「View Defender for Office 365ポータル」をMicrosoft 365 Defenderしてください](view-reports-for-mdo.md)。
 >
-> メール フローに関連するレポートは、現在、Exchangeセンター (EAC) に表示されます。 これらのレポートの詳細については、「新しい管理センターのメール フロー レポート[Exchange参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
+> メール フローに関連するレポートが管理センター Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">されます</a>。 これらのレポートの詳細については、「新しい管理センターのメール フロー レポート[Exchange参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
 
 ## <a name="compromised-users-report"></a>侵害されたユーザー レポート
 
@@ -181,7 +182,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 グラフの下の詳細テーブルは、次の情報を示しています。
 
 - **方向**
-- **種類**
+- **Type**
 - **24 時間**
 - **3 日間**
 - **7 日間**
@@ -321,9 +322,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ス **プーフィング検出レポート** には、スプーフィングによってブロックまたは許可されたメッセージに関する情報が表示されます。 スプーフィングの詳細については、「EOP でのスプーフィング防止 [保護」を参照してください](anti-spoofing-protection.md)。
 
-レポートの集計ビューでは 45 日間のフィルター処理が可能ですが、詳細ビューでは 10 日間のフィルター <sup>\*</sup> 処理のみ可能です。
-
-<sup>\*</sup> 最終的には、最大 90 日間のフィルター処理を使用できます。
+レポートの集計ビューでは 90 日間のフィルター処理が可能ですが、詳細ビューでは 10 日間のフィルター処理のみ可能です。
 
 ポータルでレポートを表示するにはMicrosoft 365 Defender[レポートの電子メール]  & \>  \> **グループ&に移動します**。 [メール **の共有&] ページで** 、[スプーフィングの検出] **を探** し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/SpoofMailReportV2> 。
 

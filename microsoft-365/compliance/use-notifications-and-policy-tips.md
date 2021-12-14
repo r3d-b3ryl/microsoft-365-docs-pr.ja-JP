@@ -18,14 +18,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作しているユーザーに通知する方法について学習します。
-ms.openlocfilehash: 3e2c575cbb4bf0019e537fc1ffaaaaeb9e67bfd8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 079e392a234339493fb293406d6e85d4ddb7c5f6
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177377"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423061"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -219,7 +221,7 @@ Outlook on the web および Outlook 2013 以降で新しいメールを作成�
 
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>管理センターとセキュリティ Exchangeセンター &amp; のポリシー ヒント
 
-ポリシー ヒントは、Exchange 管理センターで作成された DLP ポリシーとメール フロー ルール、またはセキュリティ コンプライアンス センターで作成された DLP ポリシーを使用して動作できますが、両方を使用 &amp; することはできません。 これは、これらのポリシーは異なる場所に保存されますが、ポリシー ヒントは 1 つの場所からのみ描画できるためです。
+ポリシー ヒントは<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">、Exchange</a>管理センターで作成された DLP ポリシーとメール フロー ルール、またはセキュリティ コンプライアンス センターで作成された DLP ポリシーで動作できますが、両方は使用 &amp; できません。 これは、これらのポリシーは異なる場所に保存されますが、ポリシー ヒントは 1 つの場所からのみ描画できるためです。
 
 Exchange 管理センターでポリシー ヒントを構成した場合、セキュリティ コンプライアンス センターで構成したポリシー ヒントは、Exchange 管理センターでヒントをオフにするまで、Outlook on the web および Outlook 2013 以降のユーザーには表示されません。 &amp; これにより、セキュリティ コンプライアンス センターにExchangeするまで、現在のメール フロー ルール (トランスポート ルールとも呼ばれる) が引き続き &amp; 機能します。
 
@@ -246,7 +248,7 @@ Exchange 管理センターでポリシー ヒントを構成した場合、セ�
 Office デスクトップ プログラムは、Office 365 から DLP ポリシーを自動的に直接同期し、ドキュメントをスキャンして、DLP ポリシーと競合し、リアルタイムでポリシー ヒントを表示します。
 
 > [!NOTE]
-> Officeアプリはドキュメント自体をスキャンして、DLP ポリシー ヒントを表示する必要があるかどうかを判断します。オンライン サイトまたはオンライン サイトSharePointがOneDrive for Businessファイルに表示する必要があるポリシー ヒントは表示されません。 その結果、オンライン サイトまたはオンライン サイトに表示されるデスクトップ アプリに DLP ポリシー ヒントが表示SharePoint場合がありますOneDrive for Businessがあります。 これに対し、web 上Officeアプリケーションには、オンライン サイトまたはオンライン サイトSharePointが既に決定OneDrive for Business示す DLP ポリシー ヒントだけが表示されます。
+> Office アプリはドキュメント自体をスキャンして DLP ポリシー ヒントを表示する必要があるかどうかを判断します。SharePoint Online サイトまたは OneDrive for Business サイトが既に決定したポリシー ヒントはファイルに表示する必要があります。 その結果、オンライン サイトまたはオンライン サイトに表示されるデスクトップ アプリに DLP ポリシー ヒントが表示SharePoint場合がありますOneDrive for Businessがあります。 これに対し、web 上Officeアプリケーションには、オンライン サイトまたはオンライン サイトSharePointが既に決定OneDrive for Business示す DLP ポリシー ヒントだけが表示されます。
 
 DLP ポリシーにおけるポリシー ヒントの構成法によっては、ユーザーがポリシー ヒントを単に無視すること、業務上の理由を提供してまたは提供せずにポリシーを上書きすること、誤検知を報告することを選択できます。
 
@@ -281,7 +283,7 @@ DLP ポリシーのポリシー ヒントにこれらのオプションが設定
 ## <a name="more-information"></a>詳細情報
 
 - [データ損失防止について](dlp-learn-about-dlp.md)
-- [テンプレートからの DLP ポリシーの作成](create-a-dlp-policy-from-a-template.md)
+- [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
 - [DLP ポリシーの条件、例外、およびアクション (プレビュー)](./dlp-microsoft-teams.md)
 - [FCI または他のプロパティを含むドキュメントを保護するために DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)

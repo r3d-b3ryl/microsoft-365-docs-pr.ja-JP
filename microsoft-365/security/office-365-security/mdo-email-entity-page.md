@@ -15,14 +15,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 description: Microsoft Defender for Office 365 E5 P1 および P2 のお客様は、電子メール エンティティ ページを使用して各メールの 360 度のビューを取得できます。
-ms.openlocfilehash: 6a742653f5c249da356b9295572085733ecec5bf
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 037ab81dd0c657906c59cf485c9da25c58804dab
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960648"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423277"
 ---
 # <a name="the-email-entity-page"></a>メール エンティティ ページ
 
@@ -112,7 +114,7 @@ microsoft Defender for Office 365 E5 および Office P1 と P2 の Defender の
 
 *メールの詳細*: [分析] タブで使用できる電子メールの詳細を *理解するために必要* な詳細。
 
-- Exchange ルール (メール フロー ルールまたは *ETRs とも* 呼ばれる) : これらのルールは、トランスポート層のメッセージに適用され、フィッシングおよびスパムの評決よりも優先されます。 これらは、Exchange 管理センターでのみ作成および変更できますが、ETR がメッセージに適用される場合は、ETR 名と GUID がここに表示されます。 追跡の目的で有用な情報。
+- Exchange ルール (メール フロー ルールまたは *ETRs とも* 呼ばれる) : これらのルールは、トランスポート層のメッセージに適用され、フィッシングおよびスパムの評決よりも優先されます。 これらは、Exchange 管理センターでのみ作成および<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank"></a>変更できますが、ETR がメッセージに適用される場合は、ETR 名と GUID がここに表示されます。 追跡の目的で有用な情報。
 
 - *System Overrides*: これは、システムによって指定された配信場所 (脅威と検出技術による) を上書きして、メッセージを対象とした配信場所に対して例外を作成する手段です。
 

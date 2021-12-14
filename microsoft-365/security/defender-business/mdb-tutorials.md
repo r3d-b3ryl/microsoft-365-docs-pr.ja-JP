@@ -1,13 +1,13 @@
 ---
-title: Microsoft Defender for Business のチュートリアルとシミュレーション
-description: Defender for Business の使用を始めるのに役立ついくつかのチュートリアルについて説明します。
+title: Microsoft Defender for Business のチュートリアルとシミュレーション (プレビュー)
+description: Defender for Business (プレビュー) の使用を始めるのに役立ついくつかのチュートリアルについて説明します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,38 +16,38 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: cfb98e3276025fbd9c75466de3c82339243e2f3b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ff1a50a0ba04880680e663d1f960d3f10582d628
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375316"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423469"
 ---
-# <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Microsoft Defender for Business のチュートリアルとシミュレーション
+# <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business のチュートリアルとシミュレーション (プレビュー)
 
 > [!IMPORTANT]
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Microsoft Defender for Business (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
 
-Microsoft Defender for Business のセットアップが完了したばかりの場合は、Defender for Business の動作についてどこから学ぶのか疑問に思う場合があります。 この記事では、試すプレビュー シナリオと、Defender for Business で使用できるいくつかのチュートリアルとシミュレーションについて説明します。 これらのリソースは、Defender for Business が会社でどのように機能できるのか確認するために設計されています。
+Microsoft Defender for Business (プレビュー) のセットアップが完了したばかりの場合は、Defender for Business (プレビュー) の動作についてどこから学ぶのか疑問に思う場合があります。 この記事では、試すプレビュー シナリオと、Defender for Business (プレビュー) で使用できるいくつかのチュートリアルとシミュレーションについて説明します。 これらのリソースは、Defender for Business (プレビュー) が会社でどのように機能するのか確認するために設計されています。
 
 ## <a name="try-these-preview-scenarios"></a>これらのプレビュー シナリオを試す
 
-次の表は、Defender for Business のプレビュー中に試すシナリオの概要を示しています。 
+次の表に、Defender for Business (プレビュー) のプレビュー中に試すシナリオの概要を示します。 
 <br/><br/>
 
 
 | シナリオ  | 説明  |
 |---------|---------|
-| ローカル スクリプトを使用したデバイスのオンボード     | Defender for Business では、各デバイスWindows 10実行するスクリプトを使用して、デバイスと 11 台のデバイスをオンボードできます。 スクリプトは、ユーザー (Azure Active Directory) とのAzure ADを作成し、デバイスを Microsoft Intune。 詳細については [、「Defender for Business でローカル スクリプトを使用してデバイスをオンボードする」を参照してください](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business)。         |
+| ローカル スクリプトを使用したデバイスのオンボード     | Defender for Business (プレビュー) では、各Windows 10でダウンロードして実行するスクリプトを使用して、デバイスと 11 台のデバイスをオンボードできます。 スクリプトは、ユーザー (Azure Active Directory) とのAzure ADを作成し、デバイスを Microsoft Intune。 詳細については、「Defender for Business (プレビュー)でローカル スクリプトを使用してデバイスをオンボードする [」を参照してください](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business)。         |
 | デバイスを使用したオンボード Microsoft Intune     | Defender for Endpoint を取得する前Microsoft Intuneを既に使用していた場合は、Microsoft Intuneデバイスをオンボードできます。 macOS、iOS、Linux、および Android デバイスのオンボーディングを試Microsoft Intune。 詳細については、「デバイスの[登録」を参照Microsoft Intune。](/mem/intune/enrollment/device-enrollment)        |
-| セキュリティ ポリシーと設定の編集     | Defender for Business でセキュリティ ポリシーと設定を管理している場合は、[デバイス構成] ページを使用してポリシーを表示および編集します。 詳細については [、「Microsoft Defender for Business のポリシーを表示または編集する」を参照してください](mdb-view-edit-policies.md)。        |
-| シミュレートされた攻撃を実行する   | Defender for Business では、いくつかのチュートリアルとシミュレーションを使用できます。 これらのチュートリアルとシミュレーションは、Defender for Business の脅威保護機能が会社でどのように機能できるのか、直接説明するように設計されています。 1 つ以上のチュートリアルを試す場合は、「Microsoft Defender for Business の推奨 [チュートリアル」を参照してください](#recommended-tutorials-for-defender-for-business)。         |
-| [インシデントの表示] Microsoft 365 Lighthouse     | Microsoft パートナーがサービス を使用している場合Microsoft 365 Lighthouseポータルで顧客のテナント間のインシデントをMicrosoft 365 Lighthouseできます。 詳細については、「microsoft Defender [for Business Microsoft 365 Lighthouse」を参照してください](mdb-lighthouse-integration.md)。       |
+| セキュリティ ポリシーと設定の編集     | Defender for Business (プレビュー) でセキュリティ ポリシーと設定を管理している場合は、[デバイス構成] ページを使用してポリシーを表示および編集します。 詳細については、「Microsoft Defender for Business (プレビュー)のポリシーを表示 [または編集する」を参照してください](mdb-view-edit-policies.md)。        |
+| シミュレートされた攻撃を実行する   | Defender for Business (プレビュー) では、いくつかのチュートリアルとシミュレーションを利用できます。 これらのチュートリアルとシミュレーションは、Defender for Business (プレビュー) の脅威保護機能が会社でどのように機能するのか、直接説明するように設計されています。 1 つ以上のチュートリアルを試す場合は、「Microsoft Defender for Business (プレビュー) の推奨チュートリアル [」を参照してください](#recommended-tutorials-for-defender-for-business)。         |
+| [インシデントの表示] Microsoft 365 Lighthouse     | Microsoft パートナーがサービス を使用している場合Microsoft 365 Lighthouseポータルで顧客のテナント間のインシデントをMicrosoft 365 Lighthouseできます。 詳細については、「Microsoft 365 Lighthouse [Microsoft Defender for Business (プレビュー)」を参照してください](mdb-lighthouse-integration.md)。       |
 
 
 ## <a name="recommended-tutorials-for-defender-for-business"></a>Defender for Business の推奨チュートリアル
 
-次の表に、Defender for Business のお客様に推奨されるチュートリアルを示します。
+次の表に、Defender for Business (プレビュー) のお客様に推奨されるチュートリアルを示します。
 <br/><br/>
 
 
@@ -60,7 +60,7 @@ Microsoft Defender for Business のセットアップが完了したばかりの
 各チュートリアルには、シナリオ、動作方法、および実行方法を説明するチュートリアル ドキュメントが含まれています。
 
 > [!TIP]
-> チュートリアル ドキュメントには、Microsoft Defender for Endpoint への参照が表示されます。 この記事に記載されているチュートリアルは、Defender for Endpoint または Defender for Business で使用できます。
+> チュートリアル ドキュメントには、Microsoft Defender for Endpoint への参照が表示されます。 この記事に記載されているチュートリアルは、Defender for Endpoint または Defender for Business (プレビュー) で使用できます。
 
 ## <a name="how-to-access-the-tutorials"></a>チュートリアルにアクセスする方法
 
@@ -76,10 +76,10 @@ Microsoft Defender for Business のセットアップが完了したばかりの
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Business でデバイスを管理する](mdb-manage-devices.md)
+- [Microsoft Defender for Business でデバイスを管理する (プレビュー)](mdb-manage-devices.md)
 
-- [Microsoft Defender for Business でのインシデントの表示と管理](mdb-view-manage-incidents.md)
+- [Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)](mdb-view-manage-incidents.md)
 
-- [Microsoft Defender for Business での脅威への対応と軽減](mdb-respond-mitigate-threats.md)
+- [Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)](mdb-respond-mitigate-threats.md)
 
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)

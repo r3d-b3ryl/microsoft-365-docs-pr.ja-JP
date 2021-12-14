@@ -17,21 +17,23 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: このページを使用して、組織の機密情報の種類ポリシーを作成するOffice 365 Message Encryption。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b04747a6aa51b963bd031fde616d4463dbb7aaa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 8978b1f9faae2e96fa1940bf7663855ec3bb61da
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179069"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422149"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>メッセージ暗号化を使用して組織の機密情報の種類ポリシーを作成する
 
-メール フロー ルールExchangeまたはデータ損失防止 (DLP) のいずれかを使用して、機密情報の種類ポリシーを作成Office 365 Message Encryption。 メール フロー ルールExchange作成するには、管理センター (EAC) または PowerShell Exchangeを使用できます。
+メール フロー ルールExchangeまたはデータ損失防止 (DLP) のいずれかを使用して、機密情報の種類ポリシーを作成Office 365 Message Encryption。 メール フロー ルールExchange作成するには、管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">(EAC)</a>または PowerShell Exchange使用できます。
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>EAC でメール フロー ルールを使用してポリシーを作成するには
 
-管理センター (EAC) Exchangeサインインし、[メール フロールール]**に移動**  >  **します**。 [ルール] ページで、ルールを適用するルールをOffice 365 Message Encryption。 メッセージまたは添付ファイルに特定のキーワードや機密情報の種類が存在するなどの条件に基づいてルールを作成できます。
+管理センターにサインインし <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchangeメール</a>フロー **ルール に移動**  >  **します**。 [ルール] ページで、ルールを適用するルールをOffice 365 Message Encryption。 メッセージまたは添付ファイルに特定のキーワードや機密情報の種類が存在するなどの条件に基づいてルールを作成できます。
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>PowerShell でメール フロー ルールを使用してポリシーを作成するには
 
@@ -65,7 +67,7 @@ Microsoft がメッセージを暗号化すると、受信者は暗号化され�
 該当するエンドユーザー向けドキュメントとトレーニング資料を更新して、組織のユーザーをこの変更に備える必要があります。 必要に応Office 365 Message Encryption、これらのリソースをユーザーと共有します。
 
 - [PC 用に暗号化されたメッセージを送信、表示、返信Outlookする](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Microsoft 365Essentials ビデオ: Office暗号化](https://youtu.be/CQR0cG_iEUc)
+- [Microsoft 365 Essentials ビデオ: Office メッセージの暗号化](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>監査ログでこれらの変更を表示する
 
@@ -77,4 +79,4 @@ Microsoft 365アクティビティを監査し、管理者が使用できます�
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>機密情報の種類ポリシーを無効またはカスタマイズするには
 
-Exchange メール フロー ルールを作成したら、Exchange 管理センター [](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)   >   (EAC) の [メール フロー ルール] に移動してルールを無効にし、[送信機密メールの暗号化 (アウトボックス ルール *)*] を無効にします。
+Exchange メール フロー ルールを [](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)作成したら  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">、Exchange</a>管理センターの [メール フロー ルール] に移動し、ルールを無効にしてルールを無効にすることで、ルールを無効または無効にできます 。送信機密メール *を暗号化する (* アウトボックス ルール)。

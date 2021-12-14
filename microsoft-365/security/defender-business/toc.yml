@@ -1,13 +1,13 @@
-- name: Microsoft Defender for Business
+- name: Microsoft Defender for Business (プレビュー)
   href: index.yml
   items:
     - name: 概要
       items:
-        - name: Microsoft Defender for Business とは
+        - name: Microsoft Defender for Business (プレビュー) とは
           href: mdb-overview.md
         - name: 簡略化された構成プロセス
           href: mdb-simplified-configuration.md
-        - name: ビジネス向け Defender を取得する方法
+        - name: Defender for Business を取得する方法 (プレビュー)
           href: get-defender-business.md
         - name: 中小企業のプランを比較する
           href: compare-mdb-m365-plans.md
@@ -27,13 +27,13 @@
           href: mdb-onboard-devices.md
         - name: 手順 5 - セキュリティ設定を構成する
           href: mdb-configure-security-settings.md
-    - name: 開始する
+    - name: 作業の開始
       items:
         - name: ポータルの使用を開始する
           href: mdb-get-started.md
         - name: チュートリアルとシミュレーションを試す
           href: mdb-tutorials.md
-    - name: ビジネス向け Microsoft Defender の使用
+    - name: ビジネス向け Microsoft Defender の使用 (プレビュー)
       items:
         - name: デバイスの表示と管理
           href: mdb-manage-devices.md

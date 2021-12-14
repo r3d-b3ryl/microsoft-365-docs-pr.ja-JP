@@ -16,15 +16,15 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、セキュリティ コンプライアンス センターの [レポート] ダッシュボードで使用できるメール フロー レポート&できます。
-ms.custom: ''
+ms.custom: admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f742fc9f19d7b360e9402c9bc6331a84d2622979
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 5445a55fad5d580aa1af02271a50d4494f866ec4
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401314"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422317"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ コンプライアンス センターの [レポート] ダッシュボードでメール フロー レポート&表示する
 
@@ -37,7 +37,7 @@ ms.locfileid: "61401314"
 
 > [!NOTE]
 >
-> この記事のレポートの大部分は、Microsoft 365 Defender Exchange管理センター (EAC) でも利用できます。 詳細については、次のトピックをご覧ください。
+> この記事のレポートの大部分は、Microsoft 365 Defenderまたは管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange使用できます</a>。 詳細については、次のトピックをご覧ください。
 >
 > - [新しい管理センターのメール フロー Exchangeレポート](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 > - [電子メール セキュリティ レポートを Microsoft 365 Defenderする](view-email-security-reports.md)

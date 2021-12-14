@@ -61,7 +61,7 @@ conceptualContent:
         - url: /MicrosoftTeams/get-started-with-teams-quick-start
           itemType: video
           text: 3. Teams のセットアップ
-        - url: ../business-video/install-office.md
+        - url: ../admin/setup/install-applications.md
           itemType: get-started
           text: 4. Office をインストールする
     - title: パートナー向けリソース (英語のみ)
@@ -191,7 +191,7 @@ conceptualContent:
           text: 中小企業向けの技術者コミュニティ
     - title: 方法
       links:
-        - url: ../business-video/sign-up.md
+        - url: ../admin/admin-overview/sign-up-for-office-365.md
           itemType: get-started
           text: Microsoft 365 Business Premium にサインアップする
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md

@@ -32,12 +32,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: ドメインとユーザーの追加Microsoft 365 Business Premiumセキュリティ ポリシーの設定など、ユーザーのセットアップ手順について説明します。
-ms.openlocfilehash: 9fd4189754f11983770a01f8a9eb3e4858f55dec
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: adfb65a5dcbba398ea398a17f605e12c17375c5c
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128042"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422089"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>セットアップ ウィザードMicrosoft 365 Business Premiumの設定
 
@@ -56,7 +56,7 @@ ms.locfileid: "61128042"
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>ドメイン、ユーザー、およびポリシーの設定を追加する
 
-アカウントを購入Microsoft 365 Business Premium、所有するドメインを使用するか、サインアップ中に購入[するかのオプションがあります](../../business-video/sign-up.md)。
+アカウントを購入Microsoft 365 Business Premium、所有するドメインを使用するか、サインアップ中に購入[するかのオプションがあります](../admin-overview/sign-up-for-office-365.md)。
 
 - サインアップ時に新しいドメインを購入した場合、お客様のドメインはすべてセットアップされており、[[ユーザーを追加してライセンスを割り当てる](#add-users-and-assign-licenses)] に移動することができます。
 

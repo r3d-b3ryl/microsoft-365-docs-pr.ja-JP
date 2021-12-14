@@ -15,14 +15,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Office 365 の DLP レポートを使用して、DLP ポリシーの一致、上書き、または誤検知の数を表示し、時間の流れによって上昇または下向きかどうかを確認します。
-ms.openlocfilehash: 711ed74ca53ec09be6b2fd5738246dffab332307
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: cbf03a4d981d4b37bd22db8fa08c728b77318ddf
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264938"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423622"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 
@@ -78,17 +80,17 @@ DLP ポリシーでユーザーがそれを上書きすることを許可して�
 
 セキュリティ コンプライアンス センターで DLP レポートを&するには、次の情報を割り当てる必要があります。
 
-- **管理者センター** のセキュリティ リーダー Exchange役割。 既定では、この役割は管理センターの組織の管理およびセキュリティ リーダーの役割グループExchangeされます。
+- **管理センター** のセキュリティ <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">リーダー Exchange役割</a>です。 既定では、この役割は管理センターの組織の管理およびセキュリティ リーダーの役割グループExchangeされます。
 
 - **セキュリティ コンプライアンス センターの [表示のみ] DLP** コンプライアンス&役割。 既定では、この役割は、コンプライアンス 管理者、組織の管理、セキュリティ管理者、セキュリティ リーダーの各役割グループに割り当て&されます。
 
-- **管理センターの [受信者** の表示のみ] Exchange役割。 既定では、この役割は、コンプライアンス管理、組織の管理、View-Only管理センターの組織の管理役割グループExchange割り当てられます。
+- **管理センターの [受信者** の表示のみ] <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange役割</a>です。 既定では、この役割は、コンプライアンス管理、組織の管理、View-Only管理センターの組織の管理役割グループExchange割り当てられます。
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>DLP レポートのコマンドレットを検索する
 
 セキュリティ &amp; コンプライアンス センターのほとんどのコマンドレットを使用するには、次のようにする必要があります。
   
-1. [Connect PowerShell を使用 &amp; してセキュリティ コンプライアンス センターにアクセスする](/powershell/exchange/connect-to-scc-powershell)
+1. [Connectセキュリティへのアクセス &amp;リモート PowerShell を使用したコンプライアンス センター](/powershell/exchange/connect-to-scc-powershell)
     
 2. これらのセキュリティ コンプライアンス センター [のコマンドレット &amp; を使用する](/powershell/exchange/exchange-online-powershell)
     

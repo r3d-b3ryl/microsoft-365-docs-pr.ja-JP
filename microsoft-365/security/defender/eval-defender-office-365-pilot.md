@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-evalutatemtp
+ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 5d0a864a70603e3d38c903a6799d0a9a5bddd4a0
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4dc32ba44f97ef65a727c24409db6c96531daca6
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110657"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421632"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>パイロット Microsoft Defender for Office 365
 
@@ -52,7 +53,7 @@ Microsoft Defender for Office 365を評価する場合は、組織全体でポ�
 配布グループは、オンプレミスの Active Directory Exchange Onlineで直接作成および定義できます。
 
 1. 受信者管理者のExchangeまたはグループ管理のアクセス許可が委任されたアカウントを使用して、管理者センター (EAC) にログオンします。
-2. ナビゲーション メニューで、[受信者] を *展開し、[* グループ] を *選択します*。
+2. ナビゲーション メニューで、[受信者] を **展開し、[** グループ] を <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**選択します**</a>。
 
    :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="Exchangeメニュー (クイック起動) で管理センターを開き、グループを指す矢印を表示します。[グループ] をクリックします。":::
 
@@ -134,7 +135,7 @@ MDO を評価する際に推奨されるベースライン ポリシーから始
 
 ****
 
-|ポリシー|[説明]|参照|
+|ポリシー|説明|参照|
 |:---:|---|---|
 |接続フィルター|IP アドレスを使用して、適切または悪い送信元メール サーバーを識別します。|[EOP で既定の接続フィルター ポリシーを構成する](../office-365-security/configure-the-connection-filter-policy.md)|
 |マルウェア対策|ユーザーを電子メール マルウェアから保護します。その中には、実行するアクションやマルウェアが検出された場合に通知するユーザーが含されます。|[EOP でマルウェア対策ポリシーを構成する](../office-365-security/configure-anti-malware-policies.md)|

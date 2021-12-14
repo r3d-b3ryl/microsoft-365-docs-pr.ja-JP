@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 他のユーザーのメールボックスにアクセスする権利をユーザーに与えます。このアクセス権を持つユーザーは、他のユーザーのメールボックスからメールを読んだり送信したりできます。
-ms.openlocfilehash: ec014a744f47b97dd0a65b432510c2e90dea17e4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0b3871b57f9c486ca5eea6a5d121821c203f7a20
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370274"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421560"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ
 
@@ -111,7 +112,7 @@ ms.locfileid: "61370274"
 
 
 > [!NOTE]
-> [**読み取り**] および [**管理**] の権限は、Exchange 管理センターで付与された場合、[**フル アクセス**] 権限と呼ばれます。 このアクセス許可により、割り当てられたユーザー メールボックスは、アクセス許可が割り当てられているユーザー メールボックス内のメールの読み取りと管理を行うことができます。 [フル アクセス] 許可では、**[メールボックス所有者として送信する]** または **[代理人として送信する]** のアクセス許可は付与されません。
+> **[読み取り]** および **[管理]** の権限は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センターで</a> 付与された場合、**[フル アクセス]** 権限と呼ばれます。 このアクセス許可により、割り当てられたユーザー メールボックスは、アクセス許可が割り当てられているユーザー メールボックス内のメールの読み取りと管理を行うことができます。 [フル アクセス] 許可では、**[メールボックス所有者として送信する]** または **[代理人として送信する]** のアクセス許可は付与されません。
 
 ::: moniker-end
 

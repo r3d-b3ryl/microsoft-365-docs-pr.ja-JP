@@ -20,12 +20,13 @@ description: 組織の内外のユーザーと保護されたメールでのコ�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: d76b350736ead1620f2dc52bfed607ec2c9f7893
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 006bef8a78a50e3cc47bfcfe7910621a3fa9ef85
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188099"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422989"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>新しい Message Encryption 機能を設定する
 
@@ -125,7 +126,7 @@ OME のメール フロー ルールの作成の手順については、「[Offi
 
 新しい OME 機能を使用するために既存のルールを更新するには:
 
-1. [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)で、**管理者センター > Exchange** に移動します。
+1. Microsoft 365 管理センターから **[管理者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**[Exchange]**</a> の順に移動します。
 2. Exchange 管理センターで、[**メール フロー]、[ルール**] の順に移動します。
 3. ルールごとに、**次の操作を行います**:
     - [**メッセージのセキュリティを変更する**] を選択します。

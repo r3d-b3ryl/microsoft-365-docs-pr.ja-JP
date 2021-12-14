@@ -16,15 +16,17 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、セキュリティ コンプライアンス センターで使用できるアクセス許可&をMicrosoft 365。
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4ccbfec83f857153156dc50c983de50d92edcec0
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 3b05f210262c05e48665350670784ea82ee51fe0
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401340"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422545"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのアクセス許可
 
@@ -55,7 +57,7 @@ ms.locfileid: "61401340"
 
 次の表に、セキュリティ コンプライアンス センターで使用できる既定の役割グループ&既定で役割グループに割り当てられている役割を示します。 コンプライアンス タスクを実行するアクセス許可をユーザーに付与するには、コンプライアンス センターの役割グループに適切なセキュリティ &追加します。
 
-セキュリティ & コンプライアンス センターでアクセス許可を管理すると、ユーザーはセキュリティ コンプライアンス センター内で使用できるコンプライアンス機能&アクセスできます。 Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) など、セキュリティ & コンプライアンス センターに含られていない他のコンプライアンス機能にアクセス許可を付与する場合は、Exchange 管理センターを使用する必要があります。
+セキュリティ & コンプライアンス センターでアクセス許可を管理すると、ユーザーはセキュリティ コンプライアンス センター内で使用できるコンプライアンス機能&アクセスできます。 Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) など、セキュリティ & コンプライアンス センターに含られていない他のコンプライアンス機能にアクセス許可を付与する場合は<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">、Exchange</a>管理センターを使用する必要があります。
 
 セキュリティ コンプライアンス センターへのアクセスを許可する&については、「コンプライアンス管理センターへのアクセス権をユーザーにMicrosoft 365[する」を参照してください](grant-access-to-the-security-and-compliance-center.md)。
 
@@ -100,17 +102,17 @@ ms.locfileid: "61401340"
 |**IRM コントリビューター**|この役割グループは表示されますが、バックグラウンド サービスでのみ使用されます。|Insider リスク管理 永続的な貢献 <p> Insider リスク管理 一時的な貢献|
 |**ナレッジ管理者**|知識の構成、学習、トレーニングの割り当て、その他のインテリジェントな機能。|ナレッジ管理者|
 |**MailFlow 管理者**|メンバーは、セキュリティ コンプライアンス センターでメール フローの分析情報とレポートを&できます。 グローバル管理者は通常のユーザーをこのグループに追加できますが、ユーザーが Exchange 管理グループのメンバーではない場合、ユーザーは Exchange 管理者関連のタスクにアクセスできます。|"View-Only Recipients/表示専用受信者"|
-|**組織の管理**<sup>1</sup>|メンバーは、セキュリティ & コンプライアンス センターの機能にアクセスするためのアクセス許可を制御し、デバイス管理、データ損失防止、レポート、および保存の設定を管理できます。 <p> グローバル管理者ではないユーザーは、Exchange 管理者である必要があります。これは、Microsoft 365 の Basic Mobility and Security によって管理されているデバイス (以前はモバイル デバイス管理または MDM と呼ばれる) に対して実行されます。 <p> グローバル管理者は、この役割グループのメンバーとして自動的に追加されます。|監査ログ <p> ケース管理 <p> コミュニケーション コンプライアンスの管理者 <p> コミュニケーション コンプライアンス ケース管理 <p> コンプライアンス管理者 <p> コンプライアンス検索 <p> デバイスの管理 <p> DLP コンプライアンス管理 <p> Hold <p> IB コンプライアンス管理 <p> Insider リスク管理管理者 <p> 通知の管理 <p> 組織の構成 <p> 検疫する <p> RecordManagement <p> アイテム保持の管理 <p> 役割の管理 <p> 検索と消去 <p> セキュリティ管理者 <p> セキュリティ閲覧者 <p> Sensitivity Label Administrator <p> 感度ラベル リーダー <p> サービス アシュアランス ビュー <p> タグ投稿者 <p> タグ マネージャー <p> タグ リーダー <p> 表示専用の監査ログ <p> View-Onlyデバイスの管理 <p> View-Only DLP コンプライアンス管理 <p> View-Only IB コンプライアンス管理 <p> View-Onlyケース <p> View-Onlyアラートの管理 <p> "View-Only Recipients/表示専用受信者" <p> View-Onlyレコードの管理 <p> View-Only保持管理|
+|**組織の管理**<sup>1</sup>|メンバーは、セキュリティ & コンプライアンス センターの機能にアクセスするためのアクセス許可を制御し、デバイス管理、データ損失防止、レポート、および保存の設定を管理できます。 <p> グローバル管理者ではないユーザーは、Exchange 管理者である必要があります。これは、Microsoft 365 の Basic Mobility and Security によって管理されているデバイス (以前はモバイル デバイス管理または MDM と呼ばれる) に対して実行されます。 <p> グローバル管理者は、この役割グループのメンバーとして自動的に追加されます。|監査ログ <p> ケース管理 <p> コミュニケーション コンプライアンスの管理者 <p> コミュニケーション コンプライアンス ケース管理 <p> コンプライアンス管理者 <p> コンプライアンス検索 <p> デバイスの管理 <p> DLP コンプライアンス管理 <p> Hold <p> IB コンプライアンス管理 <p> Insider リスク管理管理者 <p> 通知の管理 <p> 組織の構成 <p> Quarantine <p> RecordManagement <p> アイテム保持の管理 <p> 役割の管理 <p> 検索と消去 <p> セキュリティ管理者 <p> セキュリティ閲覧者 <p> Sensitivity Label Administrator <p> 感度ラベル リーダー <p> サービス アシュアランス ビュー <p> タグ投稿者 <p> タグ マネージャー <p> タグ リーダー <p> 表示専用の監査ログ <p> View-Onlyデバイスの管理 <p> View-Only DLP コンプライアンス管理 <p> View-Only IB コンプライアンス管理 <p> View-Onlyケース <p> View-Onlyアラートの管理 <p> "View-Only Recipients/表示専用受信者" <p> View-Onlyレコードの管理 <p> View-Only保持管理|
 |**プライバシー管理**|[プライバシー管理] のアクセス制御を管理するには、Microsoft 365 コンプライアンス センター。|ケース管理 <p> データ分類コンテンツ ビューアー <p> データ分類リスト ビューアー <p> プライバシー管理管理者 <p> プライバシー管理の分析 <p> プライバシー管理の調査 <p> プライバシー管理 永続的な貢献 <p> プライバシー管理 一時的な投稿 <p> プライバシー管理ビューアー <p> Subject Rights Request Admin <p> View-Onlyケース|
 |**プライバシー管理管理者**|ポリシーを作成/編集し、グローバル設定を定義できるプライバシー管理ソリューションの管理者。|ケース管理 <p> プライバシー管理管理者 <p> View-Onlyケース|
 |**プライバシー管理アナリスト**|ポリシーの一致を調査し、メッセージのメタデータを表示し、修復アクションを実行できるプライバシー管理ソリューションのアナリスト。|ケース管理 <p> データ分類リスト ビューアー <p> プライバシー管理の分析 <p> View-Onlyケース|
 |**プライバシー管理の投稿者**|プライバシー管理ケースの共同作成者アクセスを管理します。|プライバシー管理 永続的な貢献 <p> プライバシー管理 一時的な投稿|
 |**プライバシー管理の調査者**|ポリシーの一致を調査し、メッセージ コンテンツを表示し、修復アクションを実行できるプライバシー管理ソリューションの調査担当者。|ケース管理 <p> データ分類コンテンツ ビューアー <p> データ分類リスト ビューアー <p> プライバシー管理の調査 <p> View-Onlyケース|
 |**プライバシー管理ビューアー**|使用可能なダッシュボードとウィジェットにアクセスできるプライバシー管理ソリューションのビューアー。|データ分類リスト ビューアー <p> プライバシー管理ビューアー|
-|**検疫管理者**|メンバーは、すべての検疫アクションにアクセスできます。 詳細については [、「EOP で検疫済みメッセージとファイルを管理者として管理する」を参照してください。](manage-quarantined-messages-and-files.md)|検疫する|
+|**検疫管理者**|メンバーは、すべての検疫アクションにアクセスできます。 詳細については [、「EOP で検疫済みメッセージとファイルを管理者として管理する」を参照してください。](manage-quarantined-messages-and-files.md)|Quarantine|
 |**レコード管理**|メンバーは、保持ラベルや廃棄レビューなど、レコード管理のすべての側面を構成できます。|廃棄管理 <p> RecordManagement <p> アイテム保持の管理|
 |**レビュー担当者**|メンバーは、レビュー セットにアクセス[Advanced eDiscovery](../../compliance/overview-ediscovery-20.md)できます。 この役割グループのメンバーは、自分がメンバーである電子情報開示 > **Advanced** Microsoft 365 コンプライアンス センターでケースの一覧を表示して開きます。 ユーザーがケースにアクセスしたAdvanced eDiscovery、ケース データにアクセスするために **[** セットの確認] を選択できます。 この役割では、ユーザーがケースに関連付けられているコレクション検索の結果をプレビューしたり、その他の検索またはケース管理タスクを実行したりできない。 この役割グループのメンバーは、レビュー セット内のデータにのみアクセスできます。|レビュー|
-|**セキュリティ管理者**|メンバーは、Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health、および Security & コンプライアンス センターの多くのセキュリティ機能にアクセスできます。 <p> 既定では、この役割グループにはメンバーが表示されない場合があります。 ただし、セキュリティ管理者の役割は、Azure Active Directoryグループに割り当てられます。 したがって、この役割グループは、セキュリティ管理者ロールの機能とメンバーシップをユーザーから継承Azure Active Directory。 <p> アクセス許可を一中心に管理するには、管理センターでグループ メンバーを追加Azure Active Directory削除します。 詳細については、「[Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference)」を参照してください。 セキュリティ & コンプライアンス センター (メンバーシップまたは役割) でこの役割グループを編集した場合、これらの変更はセキュリティ & コンプライアンス センターにのみ適用され、他のサービスには適用されません。 <p> この役割グループには、セキュリティ リーダー ロールのすべての読み取り専用アクセス許可と、Azure Information Protection、Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health、Security & Compliance Center など、同じサービスに対する追加の管理アクセス許可が含まれます。|監査ログ <p> デバイスの管理 <p> DLP コンプライアンス管理 <p> IB コンプライアンス管理 <p> 通知の管理 <p> 検疫する <p> セキュリティ管理者 <p> Sensitivity Label Administrator <p> タグ投稿者 <p> タグ マネージャー <p> タグ リーダー <p> 表示専用の監査ログ <p> View-Onlyデバイスの管理 <p> View-Only DLP コンプライアンス管理 <p> View-Only IB コンプライアンス管理 <p> View-Onlyアラートの管理|
+|**セキュリティ管理者**|メンバーは、Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health、および Security & コンプライアンス センターの多くのセキュリティ機能にアクセスできます。 <p> 既定では、この役割グループにはメンバーが表示されない場合があります。 ただし、セキュリティ管理者の役割は、Azure Active Directoryグループに割り当てられます。 したがって、この役割グループは、セキュリティ管理者ロールの機能とメンバーシップをユーザーから継承Azure Active Directory。 <p> アクセス許可を一中心に管理するには、管理センターでグループ メンバーを追加Azure Active Directory削除します。 詳細については、「[Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference)」を参照してください。 セキュリティ & コンプライアンス センター (メンバーシップまたは役割) でこの役割グループを編集した場合、これらの変更はセキュリティ & コンプライアンス センターにのみ適用され、他のサービスには適用されません。 <p> この役割グループには、セキュリティ リーダー ロールのすべての読み取り専用アクセス許可と、Azure Information Protection、Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health、Security & Compliance Center など、同じサービスに対する追加の管理アクセス許可が含まれます。|監査ログ <p> デバイスの管理 <p> DLP コンプライアンス管理 <p> IB コンプライアンス管理 <p> 通知の管理 <p> Quarantine <p> セキュリティ管理者 <p> Sensitivity Label Administrator <p> タグ投稿者 <p> タグ マネージャー <p> タグ リーダー <p> 表示専用の監査ログ <p> View-Onlyデバイスの管理 <p> View-Only DLP コンプライアンス管理 <p> View-Only IB コンプライアンス管理 <p> View-Onlyアラートの管理|
 |**セキュリティ オペレーター**|メンバーは、セキュリティアラートを管理し、セキュリティ機能のレポートと設定を表示できます。|コンプライアンス検索 <p> 通知の管理 <p> セキュリティ閲覧者 <p> タグ投稿者 <p> タグ リーダー <p> テナント AllowBlockList マネージャー <p> 表示専用の監査ログ <p> View-Onlyデバイスの管理 <p> View-Only DLP コンプライアンス管理 <p> View-Only IB コンプライアンス管理 <p> View-Onlyアラートの管理|
 |**セキュリティ閲覧者**|メンバーは、Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health、Security & コンプライアンス センターの多くのセキュリティ機能に対する読み取り専用アクセス権を持っています。 <p> 既定では、この役割グループにはメンバーが表示されない場合があります。 ただし、セキュリティ リーダーの役割は、Azure Active Directoryグループに割り当てられます。 したがって、この役割グループは、セキュリティ リーダー ロールの機能とメンバーシップをユーザーから継承Azure Active Directory。 <p> アクセス許可を一中心に管理するには、管理センターでグループ メンバーを追加Azure Active Directory削除します。 詳細については、「[Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference)」を参照してください。 セキュリティ & コンプライアンス センター (メンバーシップまたは役割) でこの役割グループを編集した場合、これらの変更はセキュリティ & コンプライアンス センターにのみ適用され、他のサービスには適用されません。|セキュリティ閲覧者 <p> 感度ラベル リーダー <p> タグ リーダー <p> View-Onlyデバイスの管理 <p> View-Only DLP コンプライアンス管理 <p> View-Only IB コンプライアンス管理 <p> View-Onlyアラートの管理|
 |**Service Assurance User**|メンバーは、セキュリティ コンプライアンス センターの [サービス保証] セクション&アクセスできます。 サービス アシュアランスは、Microsoft のセキュリティ プラクティスを説明するレポートとドキュメントを提供します。このドキュメントは、Microsoft 365。 また、ユーザーに関する独立したサード パーティ監査レポートMicrosoft 365。 詳細については、「Security & コンプライアンス センター」 [を参照してください](../../compliance/service-assurance.md)。|サービス アシュアランス ビュー|
@@ -173,7 +175,7 @@ ms.locfileid: "61401340"
 
 ****
 
-|役割|説明|既定の役割グループの割り当て|
+|Role|説明|既定の役割グループの割り当て|
 |---|---|---|
 |**攻撃シミュレーターの管理者**|この役割は、コンプライアンス センターのセキュリティ &使用しない。 アプリケーションで対応する役割をAzure AD。|攻撃シミュレーターの管理者|
 |**攻撃シミュレータペイロード作成者**|この役割は、コンプライアンス センターのセキュリティ &使用しない。 アプリケーションで対応する役割をAzure AD。|攻撃シミュレータペイロード作成者|

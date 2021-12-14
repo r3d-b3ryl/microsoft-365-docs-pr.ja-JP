@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d3a5fe0f04249a5d9573e74fa4f8ad6b81fe5395
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f4a3e227dd43a812bea64e227e315d207eb6fc7b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167648"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421452"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>ゼロデイの脆弱性を軽減する - 脅威と脆弱性の管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "61167648"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-ゼロデイの脆弱性とは、公式のパッチやセキュリティ更新プログラムがリリースされていない一般に公開された脆弱性です。 ゼロデイの脆弱性は、多くの場合、重大度レベルが高く、積極的に悪用されます。
+ゼロデイの脆弱性は、公式の更新プログラムやセキュリティ更新プログラムがリリースされていないソフトウェアの欠陥です。 ソフトウェア ベンダーは、この脆弱性を認識している場合と認識していない可能性があります。また、このリスクに関する公開情報は利用できません。 ゼロデイの脆弱性は、多くの場合、重大度レベルが高く、積極的に悪用されます。
 
 脅威と脆弱性の管理は、情報を持つゼロデイの脆弱性のみを表示します。
 

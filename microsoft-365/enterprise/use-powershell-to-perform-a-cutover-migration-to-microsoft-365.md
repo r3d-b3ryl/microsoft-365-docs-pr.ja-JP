@@ -12,15 +12,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: PowerShell を使用してソース 電子メール システムからコンテンツを一度に移動する方法については、一度に一度に移行を実行して、移行元のメール システムMicrosoft 365。
-ms.openlocfilehash: 00cad52ee04c3799dc3c1ea1b4725203e977a7f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 65f48d95a73742a0ba4e5225361ecfb0fbf66c40
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194323"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423133"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Microsoft 365 への一括移行に PowerShell を使用する
 
@@ -31,7 +33,7 @@ ms.locfileid: "60194323"
 トピック「Microsoft 365 へのメールの一切の移行について知る必要がある」を参照[すると](/Exchange/mailbox-migration/what-to-know-about-a-cutover-migration)、移行プロセスの概要を確認できます。 記事の内容に満足いただけたら、段階的メール移行を使用して、あるメール システムから別のメール システムへのメールボックスの移行を開始してください。
 
 > [!NOTE]
-> また、一括移行を実行するには、Exchange 管理センターを使用することもできます。 「[メールからメールへの一切の移行を実行する」を参照Microsoft 365。](/Exchange/mailbox-migration/cutover-migration-to-office-365)
+> また、管理センターの<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchangeを</a>使用して、一切の移行を実行できます。 「[メールからメールへの一切の移行を実行する」を参照Microsoft 365。](/Exchange/mailbox-migration/cutover-migration-to-office-365)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
@@ -156,7 +158,6 @@ Get-MigrationBatch | Format-List
 ```
 
 ### <a name="step-4-start-the-cutover-migration-batch"></a>ステップ 4:一括移行バッチを開始する
-<a name="BK_Step4"> </a>
 
 Exchange Online PowerShell で移行バッチを開始するには、次のコマンドを実行します。そうすると、"CutoverBatch" という移行バッチが作成されます。
 
@@ -173,16 +174,14 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ```
 
 ### <a name="step-5-route-your-email-to-microsoft-365"></a>手順 5: メールをメールにルーティングMicrosoft 365
-<a name="BK_Step5"> </a>
 
 電子メール システムでは、電子メールを配信する場所を知るために、MX レコードと呼ばれる DNS レコードを使用します。 電子メールの移行プロセス中、MX レコードの宛先は移行元の電子メール システムでした。 メールの移行が完了Microsoft 365、MX レコードを現在のユーザーにMicrosoft 365。 これにより、メールがユーザーのメールボックスに配信Microsoft 365できます。 MX レコードを移動することによって、準備ができたら古い電子メール システムをオフにすることもできます。
 
 多くの DNS プロバイダーについては、MX レコードを変更するための具体的な手順があります。 使用している DNS プロバイダーが含まれていない場合、または一般的な手順を知りたい場合は、 [「MX レコードの一般的な手順」](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx)も参照してください。
 
-御社のお客様およびパートナーの電子メール システムが MX レコードの変更を認識するまでに最大 72 時間かかることがあります。次の作業に進むまで、72 時間以上待ちます。 [ステップ 6:一括移行バッチを削除する](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md#Bk_step6).
+御社のお客様およびパートナーの電子メール システムが MX レコードの変更を認識するまでに最大 72 時間かかることがあります。次の作業に進むまで、72 時間以上待ちます。 [ステップ 6:一括移行バッチを削除する](#step-6-delete-the-cutover-migration-batch).
 
 ### <a name="step-6-delete-the-cutover-migration-batch"></a>ステップ 6:一括移行バッチを削除する
-<a name="Bk_step6"> </a>
 
 MX レコードを変更し、すべてのメールが Microsoft 365 メールボックスにルーティングされているのを確認した後、ユーザーにメールが送信Microsoft 365。 その後、一括移行バッチを削除できます。 移行バッチを削除する前に、次の点を確認します。
 
@@ -197,12 +196,10 @@ Remove-MigrationBatch -Identity CutoverBatch
 ```
 
 ### <a name="section-7-assign-user-licenses"></a>セクション 7:ユーザー ライセンスの割り当て
-<a name="BK_Step7"> </a>
 
  **ライセンスMicrosoft 365して、移行されたアカウントのユーザー アカウントをアクティブ化します。** ライセンスを割り当てないと、猶予期間が終了したとき (30 日) にメールボックスが無効になります。 ライセンスを割り当てるには、「ライセンスMicrosoft 365 管理センター割り当てまたは[割り当てを解除する」を参照してください](../admin/manage/assign-licenses-to-users.md)。
 
 ### <a name="step-8-complete-post-migration-tasks"></a>ステップ 8:移行後のタスクを完了する
-<a name="BK_Step8"> </a>
 
 - **ユーザーが各自のメールボックスに簡単にアクセスできるように、自動検出 DNS レコードを作成します。** すべてのオンプレミスメールボックスを Microsoft 365 に移行した後、Microsoft 365 組織の自動検出 DNS レコードを構成して、ユーザーが Outlook およびモバイル クライアントを使用して新しい Microsoft 365 メールボックスに簡単に接続できます。 この新しい自動検出 DNS レコードでは、組織で使用している名前空間と同じ名前空間Microsoft 365があります。 たとえば、クラウドベースの名前空間が cloud.contoso.com の場合、作成する必要のある自動検出 DNS レコードは autodiscover.cloud.contoso.com となります。
 

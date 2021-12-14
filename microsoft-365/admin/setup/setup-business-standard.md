@@ -21,17 +21,18 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 description: Microsoft 365 Business Standard を購入するときに、所有するドメインを使用するか、サインアップ時に購入するかを選択することができます。
-ms.openlocfilehash: 9893084ad351bd6d1195df9f066f3a540af5ded2
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 51f88847a1e0ca04e216044172dbacf572fb82e3
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254443"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421404"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>新規ドメインまたは既存のドメインを使用して Microsoft 365 Business Standard を設定する
 
@@ -44,7 +45,7 @@ Microsoft 365 Business Standard を購入するときに、所有するドメイ
 ドメインを追加、変更、または削除するには、グローバル管理者である必要があります。 詳細については、「[管理者の役割について](../add-users/about-admin-roles.md)」を参照してください。
 
 > [!IMPORTANT]
-> Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「[管理者を追加する](../../business-video/add-admin.md)」をチェックアウトしてください。
+> Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「[管理者ロールを割り当てる](../add-users/assign-admin-roles.md)」 をご覧ください。
 
 ## <a name="watch-add-an-existing-domain-to-your-microsoft-365-business-standard-subscription"></a>注目: 既存のドメインを Microsoft 365 Business Standard サブスクリプションに追加します。
 
@@ -146,7 +147,7 @@ Microsoft 365 Business Standard を購入するときに、所有するドメイ
   
 詳細については、「[Outlook でメールをインポートする](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de)」を参照してください。
 
-また、Exchange 管理センターを使用して、すべてのユーザーのメールをインポートすることもできます。 詳細については、「[複数のメール アカウントを移行する](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
+また、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> を使用して、すべてのユーザーのメールをインポートすることもできます。 詳細については、「[複数のメール アカウントを移行する](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
 
 ## <a name="set-up-microsoft-teams-and-onedrive-for-business"></a>Microsoft Teams と OneDrive for business の設定
 

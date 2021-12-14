@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Business の修復アクションを確認する
+title: Microsoft Defender for Business の修復アクションを確認する (プレビュー)
 description: アクション センターで承認を待っている、または自動的に実行された修復を表示する
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5550892a1d16ff8872d2a634f8a7560932cef6e0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 314bb913a161e21ef61c09568cd87aad61ccd10e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375679"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421872"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>アクション センターで修復アクションを確認する
 
@@ -49,7 +49,7 @@ ms.locfileid: "61375679"
 
 ## <a name="remediation-actions"></a>修復アクション
 
-Microsoft Defender for Business には、いくつかの修復アクションが含まれています。 これらのアクションには、手動応答アクション、自動調査後のアクション、およびライブ応答アクションが含まれます。
+Microsoft Defender for Business (プレビュー) には、いくつかの修復アクションが含まれています。 これらのアクションには、手動応答アクション、自動調査後のアクション、およびライブ応答アクションが含まれます。
 
 次の表に、使用可能な修復アクションの一覧を示します。
 
@@ -61,6 +61,6 @@ Microsoft Defender for Business には、いくつかの修復アクションが
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Business での脅威への対応と軽減](mdb-respond-mitigate-threats.md)
+- [Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)](mdb-respond-mitigate-threats.md)
 
-- [Microsoft Defender for Business でデバイスを管理する](mdb-manage-devices.md)
+- [Microsoft Defender for Business でデバイスを管理する (プレビュー)](mdb-manage-devices.md)

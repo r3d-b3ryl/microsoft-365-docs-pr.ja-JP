@@ -7,17 +7,18 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
+ms.custom: admindeeplinkEXCHANGE
 ms.localizationpriority: medium
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードでキュー ウィジェットを使用して、送信コネクタを超えるオンプレミスまたはパートナー組織への失敗したメール フローを監視する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4652cfda1010fc0b3a416c0be7f68095b11e4ad4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 59974eca9512fc634701e932610f07239f89f038
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162160"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423169"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>コンプライアンス センターのセキュリティ &キューの分析情報
 
@@ -81,7 +82,7 @@ Microsoft 365は引き続き 24 時間配信を再試行します。 24 時間�
 ウィジェット上のメッセージ数をクリックすると **、キューに** 入ったメッセージ のフライアウトが次の情報で表示されます。
 
 - **キューに入ったメッセージの数**
-- **コネクタ名**: コネクタ名をクリックして、管理センター (EAC) のコネクタExchange管理します。
+- **コネクタ名**: コネクタ名を選択して、管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">(EAC)</a>のコネクタExchange管理します。
 - **キューの開始時刻**
 - **最も古いメッセージの有効期限が切れています**
 - **宛先サーバー**

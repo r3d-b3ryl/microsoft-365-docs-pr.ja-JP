@@ -13,14 +13,15 @@ ms.reviewer: georgiah
 ms.custom:
 - it-pro
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 1948a426e7f7088af92f734385d3b47565537151
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 03b1924e32eb1a02842da38655739d8d36ea83ac
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137173"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422977"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -238,7 +239,7 @@ ms.locfileid: "61137173"
 
      MailUser **オブジェクト** の例:
 
-     | 属性            | 値                                                                                                                   |
+     | 属性            | Value                                                                                                                   |
      | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
      | Alias                | LaraN                                                                                                                   |
      | RecipientType        | MailUser                                                                                                                |
@@ -257,7 +258,7 @@ ms.locfileid: "61137173"
 
      ソース **メールボックス オブジェクト** の例:
 
-     | 属性            | 値                                                                   |
+     | 属性            | Value                                                                   |
      | -------------------- | ----------------------------------------------------------------------- |
      | Alias                | LaraN                                                                   |
      | RecipientType        | UserMailbox                                                             |
@@ -356,7 +357,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 >
 > [CSV ファイルの例については、ここをクリックしてください](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
-移行バッチの申請は、クロステナント オプションを選択Exchange管理センターからサポートされます。
+移行バッチ送信は、クロステナント オプションを選択Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>からサポートされます。
 
 ### <a name="update-on-premises-mailusers"></a>オンプレミスの MailUsers を更新する
 

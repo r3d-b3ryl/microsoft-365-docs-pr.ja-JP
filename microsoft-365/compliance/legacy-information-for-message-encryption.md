@@ -18,13 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 description: 従来のファイルを組織Office 365 Message Encryption (OME) に移行する方法について説明します。
-ms.openlocfilehash: b21522b16a5bca6c5271149927b16dea5fd238e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 972bee1b9dda5b1fef1f29b65626a916c507dcd9
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201867"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423397"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
@@ -70,7 +71,7 @@ Office 365 Message Encryptionは、Microsoft Azure Rights Management (Azure RMS)
 
 2. [管理] **タイルを選択** します。
 
-3. [管理] [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)で、[**管理センター] を** \> **選択Exchange。**
+3. [管理] Microsoft 365 管理センターで、[**管理センター] を** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**選択Exchange。**</a>
 
 4. EAC で、[メール フロールール] に移動 **し** \> **、[** 新しい新しい] **アイコンを** ![ 選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、「Exchange[管理センター」を参照](/exchange/exchange-admin-center)Exchange Online。
 
@@ -126,7 +127,7 @@ Office 365 Message Encryptionは、Microsoft Azure Rights Management (Azure RMS)
 
 2. [管理] **タイルを選択** します。
 
-3. [管理] <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で、[**管理センター] を** \> **選択Exchange。**
+3. [管理] >Microsoft 365 管理センター、[**管理センター] を選択Exchange。** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank"></a>
 
 4. EAC で、[メール フロールール] に移動 **し** \> **、[** 新しい新しい] **アイコンを** ![ 選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、「Exchange[管理センター」を参照](/exchange/exchange-admin-center)Exchange Online。
 
@@ -226,7 +227,7 @@ Office 365 Message Encryptionは、Microsoft Azure Rights Management (Azure RMS)
 |サポートされているメッセージの種類  <br/> |Office 365 Message Encryption は、**IPM.Note** のメッセージ クラス ID があるアイテムでのみサポートされます。 詳細については、「アイテムの種類 [とメッセージ クラス」を参照してください](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)。  <br/> |
 |メッセージ サイズの制限  <br/> |Office 365 Message Encryption は、25 メガバイトまでのメッセージを暗号化できます。 メッセージ サイズの制限の詳細については、「Exchange Online[を参照してください](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)。  <br/> |
 |Exchange Online保持ポリシーの設定  <br/> |Exchange Onlineメッセージは保存されません。  <br/> |
-|Office 365 Message Encryption の言語サポート  <br/> | Office 365メッセージの暗号化は、Microsoft 365言語をサポートします。  <br/>  受信メール メッセージと添付 HTML ファイルは、送信者の言語設定に基づいてローカライズされます。  <br/>  表示するためのポータルは、受信者のブラウザーの設定に基づいてローカライズされます。  <br/>  暗号化されたメッセージの本文 (コンテンツ) は、ローカライズされません。  <br/> |
+|Office 365 Message Encryption の言語サポート  <br/> | Office 365メッセージの暗号化は、次Microsoft 365言語をサポートします。  <br/>  受信メール メッセージと添付 HTML ファイルは、送信者の言語設定に基づいてローカライズされます。  <br/>  表示するためのポータルは、受信者のブラウザーの設定に基づいてローカライズされます。  <br/>  暗号化されたメッセージの本文 (コンテンツ) は、ローカライズされません。  <br/> |
 |OME ポータルと OME Viewer アプリの個人情報  <br/> |[Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) には、お客様の個人情報を使用して Microsoft が行うことと行わないことについて詳しく記されています。  <br/> |
 
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>従来の OME に関するよく寄せられる質問
@@ -306,7 +307,7 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
   
  **Q. 特定の受信者に送信されたメッセージを取り消すことは可能ですか。**
   
-その必要はありません。 送信後に特定のユーザーにメッセージを取り消す事はできない。
+いいえ。 送信後に特定のユーザーにメッセージを取り消す事はできない。
   
  **Q. 受信されて既読になった暗号化メッセージのレポートを表示することはできますか。**
   
@@ -318,6 +319,6 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
 
 **Q.要求した後に 1 回のパス コードを受け取らない場合は、どうしますか。**
 
-まず、メール クライアントの迷惑メール フォルダーまたは迷惑メール フォルダーを確認します。 組織の DKIM と DMARC の設定により、これらのメールがスパムとしてフィルター処理される可能性があります。
+まずは、メール クライアントの迷惑メール フォルダーまたはスパム フォルダーを確認します。 組織の DKIM および DMARC 設定により、これらのメールがスパムとしてフィルター処理される可能性があります。
 
-次に、セキュリティ コンプライアンス センターで&を確認します。 多くの場合、1 回きりパス コードを含むメッセージ(特に組織が最初に受け取ったメッセージ)は検疫に入ります。
+次に、セキュリティとコンプライアンス センターで検疫を確認します。 多くの場合、ワンタイム パス コードを含むメッセージは検疫されます。組織が初めて受信するメッセージの場合は特にそうです。

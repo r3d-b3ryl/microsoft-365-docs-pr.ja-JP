@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,22 +16,22 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: caa6013a68ab8ed50b16d26dcc24e91ac7d55616
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 663ecf1b998658829e604fd5c9160b4bf0cd09ae
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375433"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421104"
 ---
-# <a name="create-a-new-policy-in-microsoft-defender-for-business"></a>Microsoft Defender for Business で新しいポリシーを作成する
+# <a name="create-a-new-policy-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business で新しいポリシーを作成する (プレビュー)
 
 > [!IMPORTANT]
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Microsoft Defender for Business (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
 
-Microsoft Defender for Business には、会社のデバイスを 1 日目から保護するために推奨設定を使用する既定のポリシーが含まれています。 たとえば、推奨されるセキュリティ **設定を** 使用して組み込みの次世代保護ポリシーとファイアウォール ポリシーがあります。 ただし、既定のポリシーに限定されません。 この記事で説明するように、新しいポリシーも作成できます。
+Microsoft Defender for Business (プレビュー) には、推奨設定を使用して会社のデバイスを 1 日目から保護する既定のポリシーが含まれています。 たとえば、推奨されるセキュリティ **設定を** 使用して組み込みの次世代保護ポリシーとファイアウォール ポリシーがあります。 ただし、既定のポリシーに限定されません。 この記事で説明するように、新しいポリシーも作成できます。
 
 > [!TIP]
-> 既存のポリシーを編集する場合は、「Microsoft Defender for Business でポリシーを表示または編集する [」を参照してください](mdb-view-edit-policies.md)。
+> 既存のポリシーを編集する場合は、「Microsoft Defender for Business (プレビュー)のポリシーを表示または編集 [する」を参照してください](mdb-view-edit-policies.md)。
 
 ## <a name="create-a-new-policy"></a>新しいポリシーの作成
 
@@ -58,7 +58,7 @@ Microsoft Defender for Business には、会社のデバイスを 1 日目から
 
    デバイス グループの詳細については、「. 
 
-8. [構成 **設定] タブ** で、ポリシーの設定を指定し、[次へ] を **選択します**。 個々の設定の詳細については [、「Microsoft Defender for Business の構成設定」を参照してください](mdb-next-gen-configuration-settings.md)。
+8. [構成 **設定] タブ** で、ポリシーの設定を指定し、[次へ] を **選択します**。 個々の設定の詳細については、「Microsoft Defender for Business の構成設定 [(プレビュー)」を参照してください](mdb-next-gen-configuration-settings.md)。
 
 9. [ポリシー **の確認] タブで** 、一般的な情報、対象デバイス、および構成設定を確認します。 
 
@@ -69,7 +69,7 @@ Microsoft Defender for Business には、会社のデバイスを 1 日目から
 
 次のタスクの 1 つ以上を選択します。
 
-- [Defender for Business の使用を開始する](mdb-get-started.md)
+- [Defender for Business の使用を開始する (プレビュー)](mdb-get-started.md)
 
 - [ポリシーの表示または編集](mdb-view-edit-policies.md)
 

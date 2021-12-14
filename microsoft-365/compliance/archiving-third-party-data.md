@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータをインポートおよびアーカイブして、メールボックスにMicrosoft 365します。
-ms.openlocfilehash: af337894e2eefed2b723d5086e6dcf5442826da5
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: a57681914f7814302627efb9d841d5c28cef60b9
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254462"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422845"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -121,6 +121,7 @@ TeleMessage データ コネクタは、米国政府機関クラウドGCC環境�
 |[O2 ネットワーク](archive-o2-network-data.md)     |![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[ロジャーズ ネットワーク](archive-rogers-network-archiver-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Signal](archive-signal-archiver-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[StarHub Network](archive-starhub-network-archiver-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[テレグラム](archive-telegram-archiver-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[TELUS ネットワーク](archive-telus-network-data.md)    |![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Verizon ネットワーク](archive-verizon-network-data.md)     |![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
@@ -266,48 +267,48 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |Android Archiver | はい | いいえ | いいえ |
-|AT&T SMS/MMS Network Archiver | はい | 不要 | いいえ |
-|Bell SMS/MMS Network Archiver | はい | 不要 | 不要 |
-|Enterprise Number Archiver | はい | 不要 | いいえ |
-|O2 SMS と Voice Network Archiver | はい         | 不要 | いいえ |
-|Rogers Network Archiver | はい         | 不要 | いいえ |
-|Signal Archiver | はい | 不要 | 不要 |
-|Telegram Archiver | はい | 不要 | 不要 |
-|TELUS SMS ネットワーク アーカイブ | はい | 不要 | 不要 |
-|Verizon SMS/MMS Network Archiver | はい | 不要 | 不要 |
-|WeChat Archiver | はい | 不要 | 不要 |
-|WhatsApp Archiver | はい | 不要 | 不要 |
+|AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|Enterprise Number Archiver | はい | いいえ | いいえ |
+|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
+|Rogers Network Archiver | はい         | いいえ | いいえ |
+|Signal Archiver | はい | いいえ | いいえ |
+|Telegram Archiver | はい | いいえ | いいえ |
+|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|WeChat Archiver | はい | いいえ | いいえ |
+|WhatsApp Archiver | はい | いいえ | いいえ |
 |||||
 
 ### <a name="celltrust-data-connectors"></a>CellTrust データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|CellTrust SL2 | はい | 不要 | 不要 |
+|CellTrust SL2 | はい | いいえ | いいえ |
 |||||
 
 ### <a name="17a-4-data-connectors"></a>17a-4 データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|BlackBerry DataParser | はい | 不要 | 不要 |
-|Bloomberg DataParser  | はい | 不要 | いいえ |
-|Cisco Jabber DataParser  | はい | 不要 | いいえ |
-|Cisco Webex DataParser  | はい | 不要 | いいえ |
-|FactSet DataParser  | はい | 不要 | いいえ |
-|Fuze DataParser  | はい | 不要 | いいえ |
-|FX Connect DataParser  | はい | 不要 | いいえ |
-|ICE DataParser  | はい | 不要 | いいえ |
-|InvestEdge DataParser  | はい | 不要 | いいえ |
-|LivePerson Conversational Cloud DataParser  | はい | 不要 | いいえ |
-|Quip DataParser  | はい | 不要 | いいえ |
-|Refinitiv Eikon Messenger DataParser  | はい | 不要 | いいえ |
-|ServiceNow DataParser  | はい | 不要 | いいえ |
-|Skype for Business Server DataParser | はい | 不要 | いいえ |
-|Slack DataParser | はい | 不要 | 不要 |
-|SQL DataParser  | はい | 不要 | 不要 |
-|Symphony DataParser | はい | 不要 | 不要 |
-|Zoom DataParser | はい | 不要 | 不要 |
+|BlackBerry DataParser | はい | いいえ | いいえ |
+|Bloomberg DataParser  | はい | いいえ | いいえ |
+|Cisco Jabber DataParser  | はい | いいえ | いいえ |
+|Cisco Webex DataParser  | はい | いいえ | いいえ |
+|FactSet DataParser  | はい | いいえ | いいえ |
+|Fuze DataParser  | はい | いいえ | いいえ |
+|FX Connect DataParser  | はい | いいえ | いいえ |
+|ICE DataParser  | はい | いいえ | いいえ |
+|InvestEdge DataParser  | はい | いいえ | いいえ |
+|LivePerson Conversational Cloud DataParser  | はい | いいえ | いいえ |
+|Quip DataParser  | はい | いいえ | いいえ |
+|Refinitiv Eikon Messenger DataParser  | はい | いいえ | いいえ |
+|ServiceNow DataParser  | はい | いいえ | いいえ |
+|Skype for Business Server DataParser | はい | いいえ | いいえ |
+|Slack DataParser | はい | いいえ | いいえ |
+|SQL DataParser  | はい | いいえ | いいえ |
+|Symphony DataParser | はい | いいえ | いいえ |
+|Zoom DataParser | はい | いいえ | いいえ |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする
@@ -315,4 +316,3 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 サードパーティのデータをインポートおよびアーカイブするもう 1 つのオプションは、組織が Microsoft パートナーと作業することです。 Microsoft コンプライアンス センターで使用できるデータ コネクタでサード パーティのデータ型がサポートされていない場合は、サードパーティのデータ ソースからアイテムを定期的に抽出し、サード パーティ製 API によって Microsoft クラウドに接続し、それらのアイテムを Microsoft 365 にインポートするように構成されるカスタム コネクタを提供できるパートナーと作業できます。 パートナー コネクタは、アイテムのコンテンツをサード パーティのデータ ソースから電子メール メッセージに変換し、そのアイテムをメール メッセージにMicrosoft 365。
 
 使用できるパートナーの一覧と、このメソッドのステップ バイ ステップ プロセスについては、「パートナーと協力して、Microsoft 365 でサード パーティのデータをアーカイブする」[を参照してください](work-with-partner-to-archive-third-party-data.md)。
-

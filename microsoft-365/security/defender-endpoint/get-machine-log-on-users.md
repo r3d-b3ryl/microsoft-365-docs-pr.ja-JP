@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b5c016d3368231b146be61da086e77ece1fa3dd9
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 1c8635e7037f72830584d09d229891822a2e1f52
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369878"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426425"
 ---
 # <a name="get-machine-logon-users-api"></a>コンピューター ログオン ユーザー API の取得
 
@@ -68,7 +68,7 @@ GET /api/machines/{id}/logonusers
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**。
 
@@ -104,11 +104,9 @@ Content-type: application/json
             "id": "contoso\\user1",
             "accountName": "user1",
             "accountDomain": "contoso",
-            "accountSid": "S-1-5-21-72051607-1745760036-109187956-93922",
             "firstSeen": "2019-12-18T08:02:54Z",
             "lastSeen": "2020-01-06T08:01:48Z",
             "logonTypes": "Interactive",
-            "logOnMachinesCount": 8,
             "isDomainAdmin": true,
             "isOnlyNetworkUser": false
         },

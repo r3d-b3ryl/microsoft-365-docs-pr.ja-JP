@@ -1,5 +1,5 @@
 ---
-title: 正確なデータ一致に基づく機密情報の種類について説明します。
+title: 完全なデータ一致に基づく機密情報の種類の詳細
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: 正確なデータ一致に基づく機密情報の種類について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 552d86e4c460ee0195ec83d88965592298a17d90
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: d6b8b2bb5387257bf016e751713b9cba61de9691
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914888"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426473"
 ---
-# <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>正確なデータ一致に基づく機密情報の種類について説明します。
+# <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>完全なデータ一致に基づく機密情報の種類の詳細
 
 [機密情報](sensitive-information-type-learn-about.md) の種類は、機密性の高いアイテムが誤って共有または不適切に共有されるのを防ぐため、電子情報開示で関連するデータを検索したり、特定の種類の情報にガバナンス アクションを適用したりするために使用されます。 次に基づいて、カスタムの機密情報の種類 (SIT) を定義します。
 
@@ -71,7 +71,7 @@ EDM SIT を使用する場合は、独自の概念を理解すると便利です
 
 ### <a name="sensitive-information-source-table"></a>機密情報のソース テーブル
 
-EDM SIT が探す機密情報の値を含む、機密性の高いソース テーブル。 これは、列と roes で作り上げされています。 列ヘッダーはフィールド名、行はデータのインスタンスであり、各セルにはそのフィールドのそのインスタンスの値が含まれます。
+機密性の高いソース テーブルには、EDM SIT が探す機密情報の値が含まれます。 列と行ででなされます。 列ヘッダーはフィールド名、行はデータのインスタンスであり、各セルにはそのフィールドのそのインスタンスの値が含まれます。
 
 機密情報ソース テーブルの簡単な例を次に示します。
 

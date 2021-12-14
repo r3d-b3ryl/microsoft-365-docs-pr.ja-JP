@@ -12,27 +12,28 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 33d411abb13e1fe50365b353c59c61a53158bc48
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fe3f65e2545b71f8cfbaea76dfd34fd2720a790f
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207237"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423025"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>従来の電子情報開示検索と保持を Microsoft 365 コンプライアンス センターに移行する
 
 Microsoft 365 コンプライアンス センター では、電子情報開示の使用に関するエクスペリエンスが向上します。信頼性の向上、パフォーマンスの向上、および電子情報開示ワークフローに合わせた多くの機能 (問題別にコンテンツを整理するケースを含む)、コンテンツと分析を確認するためのセットをレビューして、ほぼ重複グループ化、電子メール スレッド、テーマ分析、予測コーディングなどのデータを確認するのに役立ちます。
 
-この記事では、お客様が新機能と強化された機能を利用するために、Exchange 管理センターから Microsoft 365 コンプライアンス センター に In-Place 電子情報開示検索とホールドを移行する方法に関する基本的なガイダンスを提供します。
+お客様が新機能と強化された機能を利用するために、この記事では、In-Place 電子情報開示の検索と保持を Exchange 管理センターから<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Microsoft 365 コンプライアンス センター</a>に移行する方法に関する基本的なガイダンスを提供します。
 
 > [!NOTE]
 > さまざまなシナリオが考えられますので、この記事では、検索を移行し、電子情報開示の主要なケースに移行する一般的なガイダンスを提供Microsoft 365 コンプライアンス センター。 電子情報開示ケースの使用は必ずしも必要とは限らないが、組織内の電子情報開示ケースにアクセスできるユーザーを制御するためのアクセス許可を割り当て、セキュリティの層を追加します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
-- この記事で説明する PowerShell コマンドを実行するには、Microsoft 365 コンプライアンス センターの電子情報開示マネージャー役割グループのメンバーである必要があります。 また、管理センターの検出管理役割グループのメンバー Exchange必要があります。
+- この記事で説明する PowerShell コマンドを実行するには、Microsoft 365 コンプライアンス センターの電子情報開示マネージャー役割グループのメンバーである必要があります。 また、管理センターの検出管理役割グループのメンバー Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">必要があります</a>。
 
 - この記事では、電子情報開示ホールドを作成する方法に関するガイダンスを提供します。 保持ポリシーは、非同期プロセスを通じてメールボックスに適用されます。 電子情報開示ホールドを作成する場合は、CaseHoldPolicy と CaseHoldRule の両方を作成する必要があります。それ以外の場合、保留は作成されません。コンテンツの場所は保留にされません。
 
@@ -134,7 +135,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 すべてが正しく設定されていることを確認するには、[電子情報開示] の [Microsoft 365 コンプライアンス センター] に移動し、[電子情報開示] > [https://compliance.microsoft.com](https://compliance.microsoft.com) **クリックします**。
 
-![Microsoft 365コンプライアンス センターの電子情報開示。](../media/MigrateLegacyeDiscovery7.png)
+![Microsoft 365 センターの電子情報開示。](../media/MigrateLegacyeDiscovery7.png)
 
 手順 3 で作成したケースは、[コア電子情報開示] ページ **に一覧表示** されます。 ケースを開き、[保持] タブの一覧にある手順 4 で作成した保留リストに **気付** きます。保留リストを選択すると、保持が適用されたメールボックスの数や配布状態など、フライアウト ページで詳細を表示できます。
 
@@ -148,7 +149,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ## <a name="more-information"></a>詳細情報
 
-- 管理センターの電子情報開示In-Place保持&詳細Exchangeを参照してください。
+- 管理センターの電子情報開示In-Place保持&詳細についてはExchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">を</a>参照してください。
   
   - [インプレース電子情報開示 (eDiscovery)](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 

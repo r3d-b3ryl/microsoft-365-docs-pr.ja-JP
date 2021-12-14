@@ -1,13 +1,13 @@
 ---
-title: Microsoft Defender for Business の次世代保護構成設定について
-description: Microsoft Defender for Business の次世代保護の構成設定について
+title: Microsoft Defender for Business の次世代保護構成設定について (プレビュー)
+description: Microsoft Defender for Business の次世代保護の構成設定について (プレビュー)
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 71d781458d33e73cfb81622d281b48c960d0d07c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 619d3a03789eab7e525a6d4d07621d7950e907cb
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375513"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423265"
 ---
-# <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Microsoft Defender for Business の次世代の構成設定について
+# <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business の次世代の構成設定について (プレビュー)
 
 > [!IMPORTANT]
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Microsoft Defender for Business (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
 
-Microsoft Defender for Business の次世代保護には、堅牢なウイルス対策およびマルウェア対策保護が含まれています。 既定のポリシーは、生産性を妨げることなくデバイスとユーザーを保護するように設計されています。ただし、ビジネス ニーズに合わせてポリシーをカスタマイズすることもできます。 
+Microsoft Defender for Business (プレビュー) の次世代保護には、堅牢なウイルス対策およびマルウェア対策保護が含まれています。 既定のポリシーは、生産性を妨げることなくデバイスとユーザーを保護するように設計されています。ただし、ビジネス ニーズに合わせてポリシーをカスタマイズすることもできます。 
 
 **この記事では、以下について説明します**。
 
@@ -53,7 +53,7 @@ Microsoft Defender for Business の次世代保護には、堅牢なウイルス
 | **スケジュールされたスキャンを実行する時刻** | 定期的にスケジュールされたウイルス対策スキャンを実行する時間を選択します。 |
 | **低パフォーマンスの使用** | この設定は既定でオフになっています。 *この設定をオフにすることをお勧めします。* ただし、この設定をオンにすると、スケジュールされたスキャン中に使用されるデバイス のメモリとリソースを制限できます。 <br/><br/>**大事な**[低パフォーマンスを **使用する] をオン** にした場合は、次の設定を構成Microsoft Defender ウイルス対策。 <br/>- アーカイブ ファイルがスキャンされない ([AllowArchiveScanning](/windows/client-management/mdm/policy-csp-defender))<br/>- スキャンには CPU 優先度が低い[(EnableLowCPUPriority ) が割り当てられます](/windows/client-management/mdm/policy-csp-defender)。 <br/>- 完全なウイルス対策スキャンが見つからない場合、キャッチアップ スキャンは実行されません[(DisableCatchupFullScan](/windows/client-management/mdm/policy-csp-defender)) <br/>- クイック ウイルス対策スキャンが見つからない場合、キャッチアップ スキャンは実行されません[(DisableCatchupQuickScan](/windows/client-management/mdm/policy-csp-defender)) <br/>- ウイルス対策スキャン中の平均 CPU 負荷率を 50% から 20% に減少します ([AvgCPULoadFactor](/windows/client-management/mdm/policy-csp-defender)) |
 | **ユーザーの操作性**   |  |
-| **ユーザーがアプリにアクセスWindows セキュリティする** | この設定をオンにすると、ユーザーはデバイスでアプリWindows セキュリティ開くことができる。 ユーザーは Microsoft Defender for Business で構成した設定を上書きできますが、必要に応じてクイック スキャンを実行したり、検出された脅威を表示したりできます。 |
+| **ユーザーがアプリにアクセスWindows セキュリティする** | この設定をオンにすると、ユーザーはデバイスでアプリWindows セキュリティ開くことができる。 ユーザーは、Microsoft Defender for Business (プレビュー) で構成した設定を上書きできますが、必要に応じてクイック スキャンを実行したり、検出された脅威を表示したりできます。 |
 | **ウイルス対策の除外** | 除外は、スキャンによってスキップされるプロセス、ファイル、またはMicrosoft Defender ウイルス対策です。 *一般に、除外を定義する必要はない必要があります。* Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作と一般的な管理ファイルに基づく多くの自動除外が含まれます。<br/><br/>[除外の詳細](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md) |
 | **プロセスの除外** | プロセスの除外により、特定のプロセスによって開いたファイルが、特定のプロセスによってスキャンMicrosoft Defender ウイルス対策。 <br/><br/>[プロセスの除外の詳細](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) |
 | **ファイル拡張子の除外** | ファイル拡張子の除外により、特定の拡張子を持つファイルがファイルのスキャンMicrosoft Defender ウイルス対策。<br/><br/>[ファイル拡張子の除外の詳細](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
@@ -61,7 +61,7 @@ Microsoft Defender for Business の次世代保護には、堅牢なウイルス
 
 ## <a name="additional-preconfigured-settings"></a>その他の事前構成済み設定
 
-次の追加設定は、Defender for Business の次世代保護用に事前構成されています。
+Defender for Business (プレビュー) の次世代保護のために、次の追加設定が事前構成されています。
 
 - リムーバブル ドライブのスキャンが有効になっている ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender))
 - 毎日のクイック スキャンには、あらかじめ設定された時間[(ScheduleQuickScanTime ) が設定されていない](/windows/client-management/mdm/policy-csp-defender)
@@ -70,9 +70,9 @@ Microsoft Defender for Business の次世代保護には、堅牢なウイルス
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Business でのインシデントの表示と管理](mdb-view-manage-incidents.md)
+- [Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)](mdb-view-manage-incidents.md)
 
-- [Microsoft Defender for Business での脅威への対応と軽減](mdb-respond-mitigate-threats.md)
+- [Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)](mdb-respond-mitigate-threats.md)
 
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)
 
@@ -81,6 +81,6 @@ Microsoft Defender for Business の次世代保護には、堅牢なウイルス
 
 - [ポータルにアクセスMicrosoft 365 Defenderする](mdb-get-started.md)
 
-- [Microsoft Defender for Business でファイアウォール設定を管理する](mdb-custom-rules-firewall.md)
+- [Microsoft Defender for Business のファイアウォール設定を管理する (プレビュー)](mdb-custom-rules-firewall.md)
 
 - [ポリシー CSP - Defender](/windows/client-management/mdm/policy-csp-defender)

@@ -1,5 +1,5 @@
 ---
-title: アカウントにサインアップMicrosoft 365 Apps for business
+title: Microsoft 365 Apps for business のサインアップ
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: アカウントにサインアップMicrosoft 365 Apps for business。
-ms.openlocfilehash: 1a647f86fd98ed865772aa7d9117ba965c987e50
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 4b0dab60a8deaa5b8e2b945877906bfc6331f044
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254553"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421572"
 ---
 # <a name="sign-up-for-a-microsoft-365-apps-for-business-subscription"></a>サブスクリプションにサインアップMicrosoft 365 Apps for businessする
 
@@ -41,7 +41,7 @@ ms.locfileid: "61254553"
 アカウントにサインアップして購入するにはMicrosoft 365 Apps for business手順を実行します。
 
 > [!IMPORTANT]
-> Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「[管理者を追加する](../../business-video/add-admin.md)」をチェックアウトしてください。
+> Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「 [管理者ロールの割り当](../add-users/assign-admin-roles.md) て」を参照してください。
 
 1. [ビジネス[向け] ページで](https://go.microsoft.com/fwlink/?linkid=2181424)、[ビジネス] ページに含まれている内容をMicrosoft 365。 [今Microsoft 365 Apps for business] で、[今すぐ **購入] を選択します**。
 2. [ユーザー **設定を選択Microsoft 365 Apps for business]** ページで、既に使用している電子メール アドレスを入力します。 これは、セットアップ中に Microsoft がユーザーと通信するために使用する任意のアドレスを指定できます。 また、請求書と更新に関する情報を送信する住所です。 次に、[アカウント **の設定] を選択します**。

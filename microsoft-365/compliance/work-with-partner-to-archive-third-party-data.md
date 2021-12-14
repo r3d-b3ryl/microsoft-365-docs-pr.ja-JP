@@ -15,13 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: カスタム コネクタをセットアップして、Salesforce Chatter、Yahoo Messenger、またはデータ ソースなどのデータ ソースからサードパーティのデータをインポートするYammer。
-ms.openlocfilehash: 5b6bbab9ff6ad54440fc84213d3e810c863ebef4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 53c6cae76327c7a8fb8ca89de464ad8a63e75d6a
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200187"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422557"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>パートナーと共同作業して、サード パーティのデータをアーカイブする
 
@@ -364,7 +365,7 @@ Microsoft 365 でサード パーティのデータをアーカイブするた�
 
 - NEONetwork
 
-- Microsoft 365Lync 専用
+- Microsoft 365 Lync 専用
 
 - Microsoft 365共有 IM
 
@@ -475,9 +476,9 @@ Microsoft 365 でサード パーティのデータをアーカイブするた�
 
  **これらのタスクは、次の手順で実行Microsoft 365 管理センター**
 
-1. ユーザー アカウントを作成し、プラン 2 ライセンスExchange Online割り当てる。「ユーザー[をユーザーに追加する」をMicrosoft 365。](../admin/add-users/add-users.md) 訴訟ホールドにメールボックスを配置するか、最大 1.5 TB の記憶域クォータを持つアーカイブ メールボックスを有効にするには、プラン 2 ライセンスが必要です。
+1. ユーザー アカウントを作成し、プラン 2 ライセンスExchange Online割り当てる。「ユーザーをユーザーに追加する」[をMicrosoft 365。](../admin/add-users/add-users.md) 訴訟ホールドにメールボックスを配置するか、最大 1.5 TB の記憶域クォータを持つアーカイブ メールボックスを有効にするには、プラン 2 ライセンスが必要です。
 
-2. サード パーティのデータ メールボックスのユーザー アカウントを、管理者の管理者Exchange役割に追加Microsoft 365。「管理者[ロールの割り当て」を参照Microsoft 365。](../admin/add-users/assign-admin-roles.md)
+2. サード パーティのデータ メールボックスのユーザー アカウントをExchange の管理者管理者の役割に追加Microsoft 365を参照してください。「管理者の役割を割り当てる」を参照[Microsoft 365。](../admin/add-users/assign-admin-roles.md)
 
     > [!TIP]
     > このユーザー アカウントの資格情報を控えておきます。手順 4 で説明するように、この情報をパートナーに提供する必要があります。
@@ -490,7 +491,7 @@ Microsoft 365 でサード パーティのデータをアーカイブするた�
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
-2. 管理者またはコンプライアンス担当者がデスクトップ クライアントでサード パーティのデータ メールボックスを開くことができるので、サード パーティのデータ メールボックスに **FullAccess** アクセス許可を割り当Outlookします。「受信者 [のアクセス許可の管理」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=692104)。
+2. 管理者またはコンプライアンス担当者が Outlook デスクトップ クライアントでサード パーティのデータ メールボックスを開くことができるので **、FullAccess** アクセス許可をサード パーティのデータ メールボックスに割り当てる。「受信者のアクセス許可の管理」を [参照](https://go.microsoft.com/fwlink/p/?LinkId=692104)してください。
 
 3. サード パーティのデータ メールボックスに対して、次のコンプライアンス関連の機能を有効にします。
 
@@ -506,11 +507,11 @@ Microsoft 365 でサード パーティのデータをアーカイブするた�
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>手順 3: サード パーティのデータに対してユーザーのメールボックスを構成する
 
-次の手順は、サード パーティのデータをサポートするためにユーザーのメールボックスを構成します。 これらのタスクは、管理センター Exchange、または対応するコマンドレットを使用してWindows PowerShellします。
+次の手順は、サード パーティのデータをサポートするためにユーザーのメールボックスを構成します。 これらのタスクは、管理センターの<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange、</a>または対応するコマンドレットを使用してWindows PowerShellします。
 
 1. 各ユーザーのアーカイブ メールボックスを有効にします。「アーカイブ[メールボックスを有効にする」および](enable-archive-mailboxes.md)[「自動拡張アーカイブを有効にする」を参照してください](enable-autoexpanding-archiving.md)。
 
-2. ユーザー メールボックスを訴訟ホールドに配置するか、ユーザー保持ポリシー Microsoft 365適用します。次のいずれかのトピックを参照してください。
+2. ユーザー メールボックスを訴訟ホールドに配置するか、Microsoft 365保持ポリシーを適用します。次のいずれかのトピックを参照してください。
 
     - [メールボックスを訴訟ホールドの対象にする](./create-a-litigation-hold.md)
 

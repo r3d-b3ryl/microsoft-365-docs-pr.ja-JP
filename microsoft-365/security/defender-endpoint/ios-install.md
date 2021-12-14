@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad0372c82d0fdd0a869ff55d22025c35532140eb
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: a4e1952c4760fad75c5aaf0edd39fec259164a1b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217496"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423521"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS での Microsoft Defender for Endpoint の展開
 
@@ -36,7 +36,7 @@ ms.locfileid: "61217496"
 
 このトピックでは、登録されているデバイス上の iOS での Defender for Endpoint の展開Intune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 
 - Microsoft Endpoint Manager 管理センター [へのアクセス権を持っている必要があります](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -79,6 +79,8 @@ iOS 上の Defender for Endpoint を展開するには、Intune ポータル サ
 
 管理者は VPN プロファイルの自動セットアップを構成できます。 これにより、オンボーディング中にユーザーに設定せずに Defender for Endpoint VPN プロファイルが自動的にセットアップされます。 Web Protection 機能を提供するために VPN が使用されます。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。
 
+この手順では、VPN プロファイルを設定することでオンボーディング プロセスを簡略化します。 ゼロタッチまたはサイレント オンボーディング エクスペリエンスについては、「次のセクション:ゼロタッチ [オンボード」を参照してください](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)。
+
 1. [Microsoft Endpoint manager 管理センターで、[デバイス](https://go.microsoft.com/fwlink/?linkid=2109431)構成プロファイル  ->  **の作成プロファイル**]  ->  **に移動します**。
 1. **[iOS/iPadOS としてプラットフォーム] を選択し、[VPN** **としてプロファイルの種類**] を **選択します**。 **[作成]** をクリックします。
 1. プロファイルの名前を入力し、[次へ] を **クリックします**。
@@ -92,10 +94,37 @@ iOS 上の Defender for Endpoint を展開するには、Intune ポータル サ
     - 自動 VPN の種類 = オンデマンド VPN
     - [ **オンデマンド ルール** の **追加]** をクリックし、[次の操作を行う] **= [VPN** の確立] を選択します。[すべてのドメイン **] に制限します**。
 
-    ![VPN プロファイル構成のスクリーン ショット。](images/ios-deploy-8.png)
+    ![VPN プロファイル構成設定のスクリーン ショット](images/ios-deploy-8.png)
 
 1. [次へ] をクリックし、対象ユーザーにプロファイルを割り当てる。
 1. [確認 *と作成] セクション* で、入力された情報が正しいか確認し、[作成] を **選択します**。
+
+## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender のゼロタッチ オンボーディング
+
+管理者は、Microsoft Defender for Endpoint を構成して、サイレント モードで展開およびアクティブ化できます。 このフローでは、ユーザーにインストールの通知が送信されます。 Defender for Endpoint は、ユーザーがアプリを開く必要なしに自動的にインストールされます。 登録された iOS デバイスで Defender for Endpoint のゼロタッチまたはサイレント展開をセットアップするには、以下の手順に従います。
+
+1. [Microsoft Endpoint manager 管理センターで、[デバイス](https://go.microsoft.com/fwlink/?linkid=2109431)構成プロファイル  >  **の作成プロファイル**]  >  **に移動します**。
+1. **[iOS/iPadOS としてプラットフォーム] を選択し、[VPN** **としてプロファイルの種類**] を **選択します**。 **[作成]** を選択します。
+1. プロファイルの名前を入力し、[次へ] を **選択します**。
+1. [ **接続の種類]** で [カスタム VPN] を選択し、[ **基本 VPN]** セクションで、次の値を入力します。
+    - 接続名 = エンドポイント用 Microsoft Defender
+    - VPN サーバー のアドレス = 127.0.0.1
+    - Auth メソッド = "ユーザー名とパスワード"
+    - スプリット トンネリング = 無効
+    - VPN 識別子 = com.microsoft.scmx
+    - キーと値のペアで **、SilentOnboard** キーを入力し、値を True に **設定します**。
+    - 自動 VPN の種類 = オンデマンド VPN
+    - [ **オンデマンド ルール** の **追加] を選択** し、[次の操作を行う] **= [VPN** の確立] を選択します。[すべてのドメイン **] に制限します**。
+
+    ![VPN プロファイル構成のスクリーン ショット。](images/ios-deploy-9.png)
+
+1. [次 **へ] を** 選択し、対象ユーザーにプロファイルを割り当てる。
+1. [確認 *と作成] セクション* で、入力された情報が正しいか確認し、[作成] を **選択します**。
+
+上記の構成が完了し、デバイスと同期すると、対象となる iOS デバイスで次のアクションが実行されます。
+    - Microsoft Defender for Endpoint は展開され、サイレント オンボードされ、デバイスは Defender for Endpoint ポータルに表示されます。
+    - 暫定通知がユーザー デバイスに送信されます。
+    - Web Protection などの機能がアクティブ化されます。
 
 ## <a name="complete-onboarding-and-check-status"></a>オンボーディングとチェックの状態を完了する
 

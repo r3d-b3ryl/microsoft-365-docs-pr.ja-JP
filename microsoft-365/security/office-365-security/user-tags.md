@@ -13,16 +13,18 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 description: 管理者は、プラン 2 の Microsoft Defender でユーザー タグを持つユーザーの特定のグループOffice 365学習できます。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別Office 365に使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db06c2a60ddc0cfb4d6bb2efce4e030eed6386a5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: a3472a7625082e21d88e01db12cd5d8d14f86c27
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962689"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422749"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365
 
@@ -48,7 +50,7 @@ ms.locfileid: "60962689"
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
 - [キャンペーン ビュー](campaigns.md)
 - [管理者およびユーザーの申請](admin-submission.md)
-- 優先度アカウントの場合は、管理センター [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) (EAC) の [優先アカウントの電子メールExchangeレポートを使用できます。
+- 優先度アカウントの場合は、管理センター[](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)の [優先アカウントのメールの問題<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">] レポートExchange使用できます</a>。
 
 この記事では、ポータルでユーザー タグを構成するMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">説明します</a>。 ユーザー タグを管理するためのMicrosoft 365 Defenderポータルにはコマンドレットはありません。
 
@@ -56,7 +58,7 @@ ms.locfileid: "60962689"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- [ ] で Microsoft 365 Defenderポータルを開きます <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a> 。 [ユーザー タグ] ページに **直接移動するには** 、を開きます <https://security.microsoft.com/securitysettings/userTags> 。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a> で Microsoft 365 Defender ポータルを開きます。 [ユーザー タグ] ページに **直接移動するには** 、を開きます <https://security.microsoft.com/securitysettings/userTags> 。
 
 - この記事の手順を実行するには、Microsoft 365 Defenderポータルでアクセス許可を割り当てる必要があります。
   - ユーザー タグを作成、変更、および削除するには、組織の管理役割グループまたはセキュリティ管理者役割グループ **のメンバーである** 必要があります。

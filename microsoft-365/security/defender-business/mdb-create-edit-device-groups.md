@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: efa840909915653d0aa0a8af51f3c75c7d16a25d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 350228d45124ddf9f1c6e0b9e030ef125bc3ff2c
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375403"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423889"
 ---
-# <a name="device-groups-in-microsoft-defender-for-business"></a>Microsoft Defender for Business のデバイス グループ
+# <a name="device-groups-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business のデバイス グループ (プレビュー)
 
 > [!IMPORTANT]
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Microsoft Defender for Business (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
 
-Microsoft Defender for Business では、ポリシーはデバイス グループと呼ばれる特定のコレクションを通じてデバイスに適用されます。 
+Microsoft Defender for Business (プレビュー) では、ポリシーはデバイス グループと呼ばれる特定のコレクションを介してデバイスに適用されます。 
 
 **この記事では、以下について説明します**。  
 
@@ -37,15 +37,15 @@ Microsoft Defender for Business では、ポリシーはデバイス グルー�
 
 ## <a name="what-is-a-device-group"></a>デバイス グループとは
 
-デバイス グループは、オペレーティング システムのバージョンなど、特定の指定された条件のためにグループ化されたデバイスのコレクションです。 条件を満たすデバイスは、除外しない限り、そのデバイス グループに含まれます。 Microsoft Defender for Business では、デバイス グループを使用してデバイスにポリシーが適用されます。 
+デバイス グループは、オペレーティング システムのバージョンなど、特定の指定された条件のためにグループ化されたデバイスのコレクションです。 条件を満たすデバイスは、除外しない限り、そのデバイス グループに含まれます。 Microsoft Defender for Business (プレビュー) では、ポリシーはデバイス グループを使用してデバイスに適用されます。 
 
-Defender for Business には、使用できる既定のデバイス グループが含まれています。 既定のデバイス グループには、Defender for Business にオンボードされているすべてのデバイスが含まれます。 ただし、特定の設定を持つポリシーを特定のデバイスに割り当てる新しいデバイス グループを作成することもできます。 
+Defender for Business (プレビュー) には、使用できる既定のデバイス グループが含まれています。 既定のデバイス グループには、Defender for Business (プレビュー) にオンボードされているすべてのデバイスが含まれます。 ただし、特定の設定を持つポリシーを特定のデバイスに割り当てる新しいデバイス グループを作成することもできます。 
 
 既定のデバイス グループと、定義したカスタム デバイス グループを含むすべての[デバイス](/azure/active-directory/fundamentals/active-directory-whatis)グループは、Azure Active Directory (Azure AD) に保存されます。
 
 ## <a name="create-a-new-device-group"></a>新しいデバイス グループを作成する
 
-現在、Defender for Business では、次の手順で説明するように、ポリシーの作成または編集中に新しいデバイス グループを作成できます。 
+現在、Defender for Business (プレビュー) では、次の手順で説明するように、ポリシーの作成または編集中に新しいデバイス グループを作成できます。 
 
 1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
@@ -81,8 +81,8 @@ Defender for Business には、使用できる既定のデバイス グループ
 
 - [新しいポリシーの作成](mdb-create-new-policy.md)
 
-- [Microsoft Defender for Business でのインシデントの表示と管理](mdb-view-manage-incidents.md)
+- [Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)](mdb-view-manage-incidents.md)
 
-- [Microsoft Defender for Business での脅威への対応と軽減](mdb-respond-mitigate-threats.md)
+- [Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)](mdb-respond-mitigate-threats.md)
 
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)

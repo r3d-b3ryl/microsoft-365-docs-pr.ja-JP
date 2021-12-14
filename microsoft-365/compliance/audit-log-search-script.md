@@ -15,14 +15,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: PowerShell スクリプトを使用して、Exchange Online で Search-UnifiedAuditLog コマンドレットを実行し、監査ログを検索します。 このスクリプトは、実行するたびに大規模なセットの監査レコードを返すように最適化されています。 これらのレコードはスクリプトによって CSV ファイルにエクスポートされ、ユーザーは Excel の Power Query を使用して表示および変換することができます。
-ms.openlocfilehash: d104ac5bb056d898dd03aaf3765a35950a7ea094
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 60f78f5a5eebeaa90f01b4b251d917f178c06ae9
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268568"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421356"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>PowerShell スクリプトを使用して監査ログを検索する
 
@@ -48,7 +50,7 @@ ms.locfileid: "60268568"
 
   **UnifiedAuditLogIngestionEnabled** プロパティの値 `True`は、監査ログ検索が有効になっていることを示します。
 
-- スクリプトを正常に実行するには、Exchange Online で監査ログの役割、または監査ログ表示専用の役割を与えられている必要があります。既定で、これらの役割は Exchange 管理センターの [アクセス許可] ページで「コンプライアンス管理」および「組織の管理」役割グループに割り当てられます。詳細については、「[コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)」の「監査ログを検索するための要件」セクションを参照してください。
+- スクリプトを正常に実行するには、Exchange Online で監査ログの役割、または監査ログ表示専用の役割を与えられている必要があります。既定で、これらの役割は <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>の [アクセス許可] ページで「コンプライアンス管理」および「組織の管理」役割グループに割り当てられます。詳細については、「[コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)」の「監査ログを検索するための要件」セクションを参照してください。
 
 - スクリプトが完了するまでに長い時間がかかる場合があります。 実行にかかる時間は、スクリプトで監査レコードを取得するために構成する日付範囲と間隔のサイズによって異なります。 日付範囲を大きくして間隔を短くすると、実行時間が長くなります。 日付範囲と間隔の詳細については、手順 2 の表を参照してください。
 

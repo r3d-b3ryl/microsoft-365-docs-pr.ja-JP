@@ -1,13 +1,13 @@
 ---
-title: Microsoft Defender for Business でポリシーを表示または編集する
-description: Microsoft Defender for Business で次世代の保護ポリシーを表示、編集、作成、および削除する方法について説明します。
+title: Microsoft Defender for Business でポリシーを表示または編集する (プレビュー)
+description: Microsoft Defender for Business (プレビュー) で次世代の保護ポリシーを表示、編集、作成、および削除する方法について説明します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5121ed4f876f78be2d900b8bef9c7137f4310fb8
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 482d29f84675c7e2c4213498ff2e513280b84cb6
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375446"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421092"
 ---
-# <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Microsoft Defender for Business でポリシーを表示または編集する
+# <a name="view-or-edit-policies-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business でポリシーを表示または編集する (プレビュー)
 
 > [!IMPORTANT]
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Microsoft Defender for Business (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
 
-Microsoft Defender for Business では、セキュリティ設定はポリシーによって構成されます。 Defender for Business には、主に次の 2 種類のポリシーがあります。
+Microsoft Defender for Business (プレビュー) では、セキュリティ設定はポリシーによって構成されます。 Defender for Business (プレビュー) には、主に次の 2 種類のポリシーがあります。
 
 - **次世代の保護ポリシー 。** このポリシーは、Microsoft Defender ウイルス対策その他の脅威保護機能の構成方法を決定します。
 - **ファイアウォール ポリシー :** 会社のデバイスに対して、どのネットワーク トラフィックが流れるかを決定します。
@@ -67,7 +67,7 @@ Microsoft Defender for Business では、セキュリティ設定はポリシー
 
    - 選択したデバイス グループを保持するには、[次へ] を **選択します**。
    - ポリシーからデバイス グループを削除するには、[削除] を **選択します**。
-   - 新しいデバイス グループを設定するには、[新しい **グループの作成**] を選択し、デバイス グループを設定します。 (このタスクのヘルプについては [、「Microsoft Defender for Business のデバイス グループ」を参照してください](mdb-create-edit-device-groups.md)。
+   - 新しいデバイス グループを設定するには、[新しい **グループの作成**] を選択し、デバイス グループを設定します。 (このタスクのヘルプを表示するには [、「Microsoft Defender for Business (プレビュー) のデバイス グループ」を参照](mdb-create-edit-device-groups.md)してください。
    - ポリシーを別のデバイス グループに適用するには、[既存のグループを使用 **する] を選択します**。
 
    ポリシーを受信するデバイス グループを指定した後、[次へ] を **選択します**。
@@ -91,10 +91,10 @@ Microsoft Defender for Business では、セキュリティ設定はポリシー
 
 - [デバイスの管理](mdb-manage-devices.md)
 
-- [Microsoft Defender for Business で新しいポリシーを作成する](mdb-create-new-policy.md)
+- [Microsoft Defender for Business で新しいポリシーを作成する (プレビュー)](mdb-create-new-policy.md)
 
-- [Microsoft Defender for Business でのインシデントの表示と管理](mdb-view-manage-incidents.md)
+- [Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)](mdb-view-manage-incidents.md)
 
-- [Microsoft Defender for Business での脅威への対応と軽減](mdb-respond-mitigate-threats.md)
+- [Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)](mdb-respond-mitigate-threats.md)
 
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)

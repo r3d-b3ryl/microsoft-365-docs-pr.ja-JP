@@ -48,6 +48,8 @@
   items:
     - name: 脅威管理ページの概要
       href: m365-lighthouse-threat-management-page-overview.md
+    - name: 脅威を軽減するには、Microsoft Defender ウイルス対策
+      href: m365-lighthouse-mitigate-threats.md
 - name: ヘルプとサポートを利用する
   items:
     - name: ヘルプとサポートを利用する

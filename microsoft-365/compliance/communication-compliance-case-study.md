@@ -11,6 +11,7 @@ ms.topic: article
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
@@ -22,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5d2fee0e8714e2cff51a2c763caa659bf226adff
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 33970df6b108cd5538f14e7bb6c9c7f235d55ca1
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240986"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421968"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-content-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>ケース スタディ - Contoso は、コミュニケーションの管理、管理、およびMicrosoft Teams、Exchangeに不適切Yammer構成します。
 
@@ -174,7 +175,7 @@ Contoso コンプライアンス スペシャリストは、不適切なコン�
 
     ![グループ](../media/communication-compliance-case-all-employees.png)
 
-3. 新しいグループの作成後、Contoso ユーザー全員を新しいグループに追加する必要があります。 管理者センターを開 **Exchangeし**[、 https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp)管理センター **の受信者グループExchange**  >  **に移動**  >  **します**。 Contoso IT 管理者は、[メンバーシップ] 領域と、作成した新しい [すべての従業員] グループを選択し、[編集] コントロールを選択して、ウィザードの新しいグループにすべての Contoso ユーザーを追加します。
+3. 新しいグループの作成後、Contoso ユーザー全員を新しいグループに追加する必要があります。 管理者センターを開 **Exchange** [ https://outlook.office365.com/ecp) (](https://outlook.office365.com/ecp)および管理センター **の受信者グループExchange**  >  **に**  >  <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**移動します**</a>。 Contoso IT 管理者は、[メンバーシップ] 領域と、作成した新しい [すべての従業員] グループを選択し、[編集] コントロールを選択して、ウィザードの新しいグループにすべての Contoso ユーザーを追加します。
 
     ![Exchange管理センター。](../media/communication-compliance-case-eac.png)
 

@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ケース内Advanced eDiscovery管理ツールを使用して、アクティビティに簡単にアクセスして検索します。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 561744ac803c99d06f811eb625db9ce4ab623fd2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom:
+- seo-marvel-mar2020
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: d0ea6e94bd48c055cac23d8a96477e036369dd5c
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200235"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423385"
 ---
 # <a name="view-custodian-audit-activity"></a>カストディアンの監査アクティビティを表示する
 
@@ -30,10 +32,10 @@ ms.locfileid: "60200235"
 
 ## <a name="get-permissions"></a>アクセス許可の取得
 
-監査ログを検索するには、Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらの役割は Exchange 管理センターの [アクセス許可] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 最小限の特権レベルで Advanced eDiscovery 監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、閲覧限定の監査ログまたは監査ログの役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。 詳細については、「Exchange Online で役割グループを管理する」を参照してください。
+監査ログを検索するには、Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらの役割は、管理センターの [アクセス許可] ページのコンプライアンス管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">役割グループと組織Exchange割り当てられます</a>。 最小限の特権レベルで Advanced eDiscovery 監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、閲覧限定の監査ログまたは監査ログの役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。 詳細については、「Exchange Online で役割グループを管理する」を参照してください。
 
 > [!IMPORTANT]
-> Microsoft 365 コンプライアンス センターの [アクセス許可] ページでユーザーに View-Only Audit Logs (閲覧限定の監査ログ) または Audit Logs (監査ログ) の役割を割り当てると、監査ログを検索できなくなります。 Exchange Online でアクセス許可を割り当てる必要があります。 これは、監査ログの検索に使用される基本のコマンドレットが ExchangeOnline コマンドレットだからです。
+> Microsoft 365 コンプライアンス センターの [アクセス許可] ページでユーザーに View-Only Audit Logs (表示限定の監査ログ) または Audit Logs (監査ログ) の役割を割り当てただけだと、ユーザーは監査ログを検索できません。アクセス許可を Exchange Online で割り当てる必要があります。これは、監査ログの検索に使用される基本コマンドレットが Exchange Online コマンドレットであるためです。
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>手順 1: 保管担当者によって実行されるアクティビティの監査ログを検索する
 

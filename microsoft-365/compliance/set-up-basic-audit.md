@@ -15,16 +15,17 @@ ms.collection:
 - m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
+ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MOE150
 - MET150
 description: この記事では、組織のユーザーと管理者が実行する監査アクティビティの検索を開始できるよう、基本監査を設定する方法について説明します。
-ms.openlocfilehash: 9190383fdfab8e4207186ca93895ec9ce23ec6d4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e4ae5901c9a4f400e2a01659395d27947ad433c2
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200319"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423613"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>[基本監査] を [Microsoft 365
 
@@ -48,7 +49,7 @@ ms.locfileid: "60200319"
 
 ## <a name="step-2-assign-permissions-to-search-the-audit-log"></a>手順 2: 監査ログを検索するためのアクセス許可を割り当てる
 
-監査ログを検索するには、調査チームの管理者とメンバーに、View-Only監査ログまたは監査ログの役割Exchange Online割り当てる必要があります。 既定では、これらの役割は Exchange 管理センターの [**アクセス許可**] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 Office 365 および Microsoft 365 のグローバル管理者は自動的に、組織管理役割グループのメンバーとして Exchange Online に追加されます。 最小限の特権レベルで監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、閲覧限定の監査ログまたは監査ログの役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。 詳細については、「[Exchange Online で役割グループを管理する](/Exchange/permissions-exo/role-groups)」を参照してください。
+監査ログを検索するには、調査チームの管理者とメンバーに、View-Only監査ログまたは監査ログの役割Exchange Online割り当てる必要があります。 既定では、これらの役割は <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>の [**アクセス許可**] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 Office 365 および Microsoft 365 のグローバル管理者は自動的に、組織管理役割グループのメンバーとして Exchange Online に追加されます。 最小限の特権レベルで監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、閲覧限定の監査ログまたは監査ログの役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。 詳細については、「[Exchange Online で役割グループを管理する](/Exchange/permissions-exo/role-groups)」を参照してください。
 
 次のスクリーンショットは、管理センターの組織の管理役割グループに割り当てられた 2 つの監査Exchange示しています。
 

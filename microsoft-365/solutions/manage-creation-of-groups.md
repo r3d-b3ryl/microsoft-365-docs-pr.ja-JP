@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: ユーザーがグループを作成できるユーザーを制御Microsoft 365します。
-ms.openlocfilehash: cea1529071cce92e2b6fad74d4946d1e4c7f3594
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 279c8826599bf2a41690c95c4202f81fe3206ff4
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064321"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422101"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを管理する
 
@@ -46,13 +46,13 @@ ms.locfileid: "61064321"
 
 この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 Office 365管理者は、[オンライン] 、Microsoft 365 管理センター、Exchange、および SharePointをSharePointできます。 他の役割は、以下のような制限付きの方法でグループを作成できます。
 
-- Exchange 管理者: Exchange 管理センター、Azure AD
-- パートナー レベル 1 のサポート: Microsoft 365 管理センター、Exchange 管理センター、Azure AD
-- パートナー レベル 2 のサポート: Microsoft 365 管理センター、Exchange 管理センター、Azure AD
+- Exchange管理者: Exchange管理センター、Azure AD
+- パートナー層 1 のサポート: Microsoft 365 管理センター、Exchange管理センター、Azure AD
+- パートナー層 2 のサポート: Microsoft 365 管理センター、Exchange管理センター、Azure AD
 - ディレクトリ製作者: Azure AD
-- SharePoint 管理者: SharePoint 管理センター、Azure AD
-- Teams サービス管理者: Teams 管理センター、Azure AD
-- ユーザー管理者: Microsoft 365 管理 センター、Azure AD
+- SharePoint管理者: SharePoint管理センター、Azure AD
+- Teams サービス管理者: Teams管理センター、Azure AD
+- ユーザー管理者: Microsoft 365 管理センター、Azure AD
 
 これらの役割の 1 つのメンバーである場合は、制限付きユーザー Microsoft 365グループを作成し、そのユーザーをグループの所有者として割り当てることができます。
 
@@ -166,7 +166,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 > [!NOTE]
 > グループのメンバーがグループを作成できない場合は、OWA メールボックス ポリシーによってブロックされていない [か確認します](/powershell/module/exchange/set-owamailboxpolicy)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [コラボレーション ガバナンス計画の推奨事項](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 

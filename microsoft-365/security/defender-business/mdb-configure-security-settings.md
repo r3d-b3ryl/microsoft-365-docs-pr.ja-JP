@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3d6d1a0b4099e52124a4965061fe85f46049815b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8f36d64b14dccdb445f1c4115811f571b55e49b8
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375640"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423253"
 ---
-# <a name="configure-your-security-settings-and-policies-in-microsoft-defender-for-business"></a>Microsoft Defender for Business でセキュリティ設定とポリシーを構成する
+# <a name="configure-your-security-settings-and-policies-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business でセキュリティ設定とポリシーを構成する (プレビュー)
 
 > [!IMPORTANT]
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Microsoft Defender for Business (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
 
-会社のデバイスを Microsoft Defender for Business にオンボードした後、次に、セキュリティ設定とポリシーを表示し、必要に応じて編集します。 
+会社のデバイスを Microsoft Defender for Business (プレビュー) にオンボードした後、次に、セキュリティ設定とポリシーを表示し、必要に応じて編集します。 
 
 ## <a name="what-to-do"></a>操作
 
@@ -44,11 +44,11 @@ ms.locfileid: "61375640"
 
 | オプション | 説明 |
 |:---|:---|
-| **ポータルで既定のセキュリティ設定** とポリシーを使用する (推奨Microsoft 365 Defender) | Defender for Business は、忙しい中小規模のビジネスを念頭に置いて設計されています。 Defender for Business の既定のセキュリティ設定とポリシーは、会社のデバイスを 1 日目から保護するように設計されています。<br/><br/>ポータル ( ) をMicrosoft 365 Defender [https://security.microsoft.com/](https://security.microsoft.com/) して、セキュリティ設定とポリシーを表示および管理できます。<br/><br/>詳細については、「デバイス ポリシーの [表示または編集」を参照してください](mdb-view-edit-policies.md)。 |
+| **ポータルで既定のセキュリティ設定** とポリシーを使用する (推奨Microsoft 365 Defender) | Defender for Business (プレビュー) は、忙しい中小規模のビジネスを念頭に置いて設計されています。 Defender for Business の既定のセキュリティ設定とポリシーは、会社のデバイスを 1 日目から保護するように設計されています。<br/><br/>ポータル ( ) をMicrosoft 365 Defender [https://security.microsoft.com/](https://security.microsoft.com/) して、セキュリティ設定とポリシーを表示および管理できます。<br/><br/>詳細については、「デバイス ポリシーの [表示または編集」を参照してください](mdb-view-edit-policies.md)。 |
 | **使用Microsoft エンドポイント マネージャー** | 会社がセキュリティ設定とポリシー Microsoft エンドポイント マネージャー使用している場合は、エンドポイント マネージャー を引き続き使用し、一部またはすべてのデバイスにセキュリティ ポリシーと設定を適用できます。 詳細については、「デバイス のセキュリティ[ポリシーを使用して](/mem/intune/protect/endpoint-security-policy)デバイス セキュリティを管理する」を参照Microsoft Intune。 <br/><br/>Defender for Business の簡略化 [された構成プロセスへの切り替えを検討してください](mdb-simplified-configuration.md)。 スイッチを切り替えた場合は、Microsoft エンドポイント マネージャー で既存のセキュリティ ポリシーを削除してから、Defender for Business の簡略化された構成プロセスに進む必要があります。 ポリシーを削除すると、Microsoft エンドポイント マネージャー後でポリシーの競合を回避できます。 |
 
 > [!TIP]
-> Microsoft Defender for Business プレビュー プログラムにサインアップする場合は、 を参照してください [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) 。 詳細については [、「Get Microsoft Defender for Business」を参照してください](get-defender-business.md)。
+> Microsoft Defender for Business プレビュー プログラムにサインアップする場合は、 を参照してください [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) 。 詳細については [、「Get Microsoft Defender for Business (プレビュー)」を参照してください](get-defender-business.md)。
 
 ## <a name="view-your-security-settings-and-policies"></a>セキュリティ設定とポリシーを表示する
 
@@ -64,11 +64,11 @@ ms.locfileid: "61375640"
 
 次のタスクの 1 つ以上に進みます。
 
-- [Microsoft Defender for Business の使用を開始する](mdb-get-started.md)
+- [Microsoft Defender for Business の使用を開始する (プレビュー)](mdb-get-started.md)
 
-- [Microsoft Defender for Business でデバイスを管理する](mdb-manage-devices.md)
+- [Microsoft Defender for Business でデバイスを管理する (プレビュー)](mdb-manage-devices.md)
 
-- [Microsoft Defender for Business でのインシデントの表示と管理](mdb-view-manage-incidents.md)
+- [Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)](mdb-view-manage-incidents.md)
 
-- [Microsoft Defender for Business でポリシーを表示または編集する](mdb-view-edit-policies.md)
+- [Microsoft Defender for Business でポリシーを表示または編集する (プレビュー)](mdb-view-edit-policies.md)
 

@@ -11,15 +11,15 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom: admindeeplinkEXCHANGE
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '概要: PowerShell を使用して管理する必要がある理由Microsoft 365場合によっては、より効率的に、必要に応じて他の場合にも説明します。'
-ms.openlocfilehash: 79beabad5b588ae47d9de70cb8a9cce6862a1c1d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 11b84fbd10d2a7180637d377c219502e6ffb00aa
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208195"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423865"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Microsoft 365 で PowerShell を使用する理由
 
@@ -256,14 +256,14 @@ Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.
 
 ![ブルーミントン市に住んでいるMicrosoft 365 管理センターメールボックスの一覧を検索する方法の例を示します。](../media/o365-powershell-advanced-search.png)
 
-Exchange 管理センターでは、フィルター条件を組み合わせることもできます。 たとえば、ブルーミントンに住み、財務部門で働いているすべてのユーザーのメールボックスを見つけるとします。
+また<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センターでは、</a>フィルター条件を組み合わせすることもできます。 たとえば、ブルーミントンに住み、財務部門で働いているすべてのユーザーのメールボックスを見つけるとします。
 
 ただし、管理センターで実行できる操作にはExchangeがあります。 たとえば、ブルーミントンやサン ディエゴに住むユーザーのメールボックスや、ブルーミントンに住んでいないすべてのユーザーのメールボックスを簡単に見つけられなかったとします。
 
 次の PowerShell を使用して、Microsoft 365またはサンディエゴに住んでいるすべてのユーザーのメールボックスの一覧を取得できます。
 
 ```powershell
-Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox&quot; -and ($_.City -eq &quot;San Diego&quot; -or $_.City -eq &quot;Bloomington")} | Select DisplayName, City
+Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and ($_.City -eq "San Diego" -or $_.City -eq "Bloomington")} | Select DisplayName, City
 ```
 
 結果の例を次に示します。
@@ -344,7 +344,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export
 
 ![コンマ区切り値ファイルに保存Excelオンライン ユーザー データSkype for Businessワークシートにインポートされたテーブルの例。](../media/o365-powershell-data-in-excel.png)
 
-この PowerShell コマンドの解釈は、現在のサブスクリプション **(Get-CsOnlineUser)** Skype for Business Online ユーザー全員を取得Microsoft 365です。ユーザー名、UPN、および場所のみを取得します **(DisplayName、UserPrincipalName、UsageLocation を選択)。** その情報を C: \\ LogsSfBUsers.csv ( \\ **Export-Csv -Path "C: Logs \\ \\SfBUsers.csv" -NoTypeInformation)** という名前の CSV ファイルに保存します。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプション **(Get-CsOnlineUser)** 内のすべての Skype for Business Online ユーザーを取得し、ユーザー名、UPN、および場所 **([DisplayName, UserPrincipalName, UsageLocation]** を選択) のみを取得し、その情報を C: \\ LogsSfBUsers.csv ( \\ **Export-Csv -Path "C: \\ Logs" \\ という名前の CSV ファイルに保存します。SfBUsers.csv" -NoTypeInformation)。**
 
 オプションを使用して、このリストを XML ファイルまたは HTML ページとして保存することもできます。 実際、追加の PowerShell コマンドを使用すると、必要なカスタム書式を使用して、Excelファイルとして直接保存できます。
 
@@ -358,7 +358,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 
 ![PowerShell コマンドの出力である印刷済みドキュメントの例は、既定のプリンターに直接送信Windows。](../media/o365-powershell-printed-data.png)
 
-この PowerShell コマンドの解釈は、現在のサブスクリプションSkype for Businessオンライン ユーザー全員を取得Microsoft 365です。ユーザー名、UPN、および場所のみを取得します。その情報を既定のプリンター (Windowsプリンター)**に送信します**。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプション内のすべての Skype for Business Online ユーザーを取得し、ユーザー名、UPN、および場所のみを取得し、その情報を既定の Windows プリンター **(Out-Printer)** に送信します。
 
 印刷されたドキュメントの書式は、PowerShell コマンド ウィンドウの表示と同じ単純な書式です。 ハード コピーを取得するには、ファイルを追加 **|コマンドの最後** にプリンターを出力します。
 
@@ -378,7 +378,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 
 - ユーザーが Skype for Business Online に対して有効になっているかどうか
 
-このようなレポートを簡単に作成Microsoft 365 管理センター。 代わりに、別のドキュメントを作成して、ワークシートなどの情報を保存Excelがあります。 次に、Microsoft 365 管理センター からすべてのユーザー名とライセンス情報を取得し、Exchange 管理センターからメールボックス情報を取得し、Skype for Business Online 管理センターから Skype for Business Online 情報を取得し、その情報を組み合わせます。
+このようなレポートを簡単に作成Microsoft 365 管理センター。 代わりに、別のドキュメントを作成して、ワークシートなどの情報を保存Excelがあります。 次に、Microsoft 365 管理センター からすべてのユーザー名とライセンス情報を取得し、Exchange 管理センターからメールボックス情報を取得し<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">、Skype for Business</a>Online 管理センターから Skype for Business Online 情報を取得し、その情報を組み合わせます。
 
 もう 1 つの方法は、PowerShell スクリプトを使用してレポートをコンパイルする方法です。
 

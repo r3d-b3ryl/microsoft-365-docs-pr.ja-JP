@@ -8,19 +8,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 12/09/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c0c776d7e00ee890a8cafbc15db02b45a1474b24
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c9a1d35a4de97174a49d7a69ec7776f31528376e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371870"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422497"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Microsoft Defender for Endpoint Plan 1 and Plan 2
 
@@ -29,7 +29,7 @@ ms.locfileid: "61371870"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-EndPoint 向け Microsoft Defender は、エンタープライズネットワークによる高度な脅威の防止、検出、調査、および応答を支援するために設計されたエンタープライズエンドポイントセキュリティプラットフォームです。 Defender for Endpoint は、ウイルス対策、マルウェア対策、ランサムウェアの軽減などの高度な脅威保護と、一元的な管理とレポート機能を提供します。 近日、2 つのプランが利用可能になります。   
+EndPoint 向け Microsoft Defender は、エンタープライズネットワークによる高度な脅威の防止、検出、調査、および応答を支援するために設計されたエンタープライズエンドポイントセキュリティプラットフォームです。 Defender for Endpoint は、ウイルス対策、マルウェア対策、ランサムウェアの軽減などの高度な脅威保護と、一元的な管理とレポート機能を提供します。 次の 2 つのプランを利用できます。   
  
 - [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md);そして 
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md),以前は Microsoft Defender for Endpoint として [知られています](microsoft-defender-endpoint.md)。

@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: キャンペーンや他のMicrosoft 365 Business Premiumの設定の概要
-ms.openlocfilehash: 272f4728214feaf3868b6861cdf990ea87442fad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 166651879e66025b9c48e9a0701062d4c7793b94
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173825"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422605"
 ---
 # <a name="set-up-microsoft-365"></a>設定Microsoft 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "60173825"
 
 特別価格の対象となるキャンペーンの場合は[、Microsoft](https://m365forcampaigns.microsoft.com/)からの招待を要求してから、キャンペーンのMicrosoft 365[を開始します](m365-campaigns-sign-up.md)。 セットアップを完了するには、 [セットアップ ウィザードを実行して](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) コア設定を構成します。
 
-他のすべての組織では、Microsoft 365 Business Premiumにサインアップした後、セットアップ[ウィザード](../business-video/sign-up.md)を実行してコア設定を[](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)構成してセットアップを完了します。
+他のすべての組織では、Microsoft 365 Business Premium にサインアップした後、セットアップ[ウィザードを](../admin/admin-overview/sign-up-for-office-365.md)実行してコア[](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)設定を構成してセットアップを完了します。
 
 すべての組織で、管理者アカウントの保護、メール[](m365-campaigns-protect-admin-accounts.md)とデータへのアクセスの[](m365-campaigns-conditional-access.md)保護、脅威の保護の強化など、セキュリティ保護[を強化します](m365-campaigns-increase-protection.md)。
 

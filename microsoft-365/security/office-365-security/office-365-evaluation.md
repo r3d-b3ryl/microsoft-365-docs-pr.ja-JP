@@ -16,15 +16,18 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7ba60d7b9f677c653bb2d57760989aeb18a4a1e6
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: 51d5c07c444a7fe16fbbde0f8cdeeee3a0c3b718
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940550"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422737"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 を評価する
 
@@ -40,7 +43,7 @@ ms.locfileid: "60940550"
 microsoft Defender for Office 365 をサポートするライセンスをまだ持ってない場合は、[無料の 30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)日間の評価を開始し、Microsoft 365 Defender ポータルの機能をテストできます <https://security.microsoft.com> 。 クイック セットアップを楽しめ、必要に応じて簡単にオフにできます。
 
 > [!NOTE]
-> Microsoft 365 Defender ポータル ( ) を使用している場合は、「その他」セクションの 「メール & Collaboration <https://security.microsoft.com>  \> **Policies & Rules** \> **Threat Policies** \>   Evaluation mode」で Office 365 評価用の Defender を開始できます。
+> <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>ポータルを使用している場合は、「その他」セクションの 「メール **& Collaboration** Policies & Rules Threat \>  \> **Policies** \>   Evaluation mode」で、Office 365 評価用の Defender を開始できます。
 
 ## <a name="how-the-evaluation-works"></a>評価のしくみ
 
@@ -61,7 +64,7 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 - アクションのレポートの分析
 - 評価結果の提示
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 ### <a name="licensing"></a>ライセンス
 
@@ -145,7 +148,7 @@ URL はメール フロー中にデトナ処理されます。 特定の URL を
 
 ## <a name="get-started-with-the-evaluation"></a>評価の開始
 
-Microsoft Defender for the microsoft Defender for Office 365評価セットアップ カードは、次の 3 つのアクセス Microsoft 365 Defenderポータル <https://security.microsoft.com> ( ) から検索します。
+次の 3 つのアクセス Office 365から、Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">評価</a>セットアップ カードの Microsoft Defender を検索します。
 
 - **エンドポイント** \>**脆弱性の管理** \>**ダッシュボード**( <https://security.microsoft.com/tvm_dashboard> )
 - **メール&コラボレーション** \>**ポリシー&ルール** \>**脅威ポリシー** ( <https://security.microsoft.com/threatpolicy> )
@@ -165,7 +168,7 @@ Microsoft Defender for Office 365評価レポートは、1 日に 1 回生成さ
 
 ### <a name="exchange-mail-flow-rules-optional"></a>Exchange フロー ルール (オプション)
 
-既存のゲートウェイがある場合は、評価モードを有効にすると、コネクタの拡張フィルター処理がアクティブになります。 この機能は、受信送信者の IP アドレスを変更することで、フィルターの精度を向上します。 この機能はフィルターの評決を変更する可能性があります。また、フィルターをバイパスしない場合は、Exchange Online Protectionメッセージの配信可能性が変わる可能性があります。 この場合、影響を分析するためにフィルター処理を一時的にバイパスする必要があります。 フィルター処理をバイパスするには、Exchange 管理センター (EAC) を開き、メッセージの SCL を -1 に設定するメール フロー ルールを作成します (まだメッセージが存在しない場合)。 <https://admin.exchange.microsoft.com> 手順については、「メール フロー ルールを使用して、メッセージ内のスパム信頼レベル[(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)を設定する」を参照Exchange Online。
+既存のゲートウェイがある場合は、評価モードを有効にすると、コネクタの拡張フィルター処理がアクティブになります。 この機能は、受信送信者の IP アドレスを変更することで、フィルターの精度を向上します。 この機能はフィルターの評決を変更する可能性があります。また、フィルターをバイパスしない場合は、Exchange Online Protectionメッセージの配信可能性が変わる可能性があります。 この場合、影響を分析するためにフィルター処理を一時的にバイパスする必要があります。 フィルター処理をバイパスするには<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">、Exchange</a>管理センターを開き、メッセージの SCL を -1 に設定するメール フロー ルールを作成します (まだメッセージが存在しない場合)。 手順については、「メール フロー ルールを使用して、メッセージ内のスパム信頼レベル[(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)を設定する」を参照Exchange Online。
 
 ## <a name="evaluate-capabilities"></a>機能を評価する
 

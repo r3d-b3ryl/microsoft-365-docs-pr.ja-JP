@@ -126,19 +126,11 @@
         - name: Microsoft 365 Business Premium セキュリティの概要
           href: overview-m365-security.md
         - name: 従業員のアカウントを MFA で保護する
-          href: turn-on-mfa.md
+          href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
         - name: スマートフォンで 2 要素サインインを設定する
           href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
-        - name: マルウェア検出を有効にする
-          href: anti-malware.md
-        - name: ランサムウェア用のメール ルールを作成する
-          href: prevent-ransom-in-email.md
-        - name: フィッシング詐欺対策を設定する
-          href: setup-anti-phishing.md
         - name: 安全な添付ファイルを管理する
           href: safe-attachments.md
-        - name: 安全なリンクを管理する
-          href: safe-links.md
         - name: データの損失を防止する
           href: set-up-dlp.md
         - name: 秘密度ラベルを作成する

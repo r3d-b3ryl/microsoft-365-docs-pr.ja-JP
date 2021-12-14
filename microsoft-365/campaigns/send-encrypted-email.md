@@ -20,17 +20,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 電子メールを使用して暗号化された電子メールを送信するOutlook。
-ms.openlocfilehash: 0fed17340cb3ad6c049a3d242604c63f50509450
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 15f5b87fb238d4a872f13c11f1e88892f628a255
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189695"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422581"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>機密情報を暗号化またはラベル付けする
 
@@ -57,7 +58,7 @@ ms.locfileid: "60189695"
 
 管理者はメール フロー ルールを作成して、キャンペーンから送信および受信される電子メール メッセージを自動的に保護できます。 送信電子メール メッセージを暗号化するルールを設定し、組織内から送信される暗号化されたメッセージ、または組織から送信された暗号化されたメッセージへの返信から暗号化を削除します。
 
-メール フロー ルールを作成して、新しいメール メッセージ (OME) 機能Office 365 Message Encryptionメール メッセージを暗号化します。 新しい OME 機能を使用してメッセージ暗号化をトリガーするメール フロー ルールを定義するには、Exchange管理センター (EAC) を使用します。 
+メール フロー ルールを作成して、新しいメール メッセージ (OME) 機能Office 365 Message Encryptionメール メッセージを暗号化します。 新しい OME 機能を使用してメッセージ暗号化をトリガーするメール フロー ルールを定義するには、Exchange管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">(EAC) を使用します</a>。 
 
 1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている仕事または学校のアカウントを使用してサインインします。
 2. [管理] タイルを選択します。
