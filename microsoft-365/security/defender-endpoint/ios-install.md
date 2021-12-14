@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4e1952c4760fad75c5aaf0edd39fec259164a1b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: c492d106e84eb01d36f26aa9db333ddf9b5db7c5
+ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423521"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61436694"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS での Microsoft Defender for Endpoint の展開
 
@@ -36,7 +36,7 @@ ms.locfileid: "61423521"
 
 このトピックでは、登録されているデバイス上の iOS での Defender for Endpoint の展開Intune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - Microsoft Endpoint Manager 管理センター [へのアクセス権を持っている必要があります](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -79,7 +79,7 @@ iOS 上の Defender for Endpoint を展開するには、Intune ポータル サ
 
 管理者は VPN プロファイルの自動セットアップを構成できます。 これにより、オンボーディング中にユーザーに設定せずに Defender for Endpoint VPN プロファイルが自動的にセットアップされます。 Web Protection 機能を提供するために VPN が使用されます。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。
 
-この手順では、VPN プロファイルを設定することでオンボーディング プロセスを簡略化します。 ゼロタッチまたはサイレント オンボーディング エクスペリエンスについては、「次のセクション:ゼロタッチ [オンボード」を参照してください](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)。
+この手順では、VPN プロファイルを設定することでオンボーディング プロセスを簡略化します。 ゼロタッチまたはサイレント オンボーディング エクスペリエンスについては、「次のセクション:ゼロタッチ [オンボード」を参照してください](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview)。
 
 1. [Microsoft Endpoint manager 管理センターで、[デバイス](https://go.microsoft.com/fwlink/?linkid=2109431)構成プロファイル  ->  **の作成プロファイル**]  ->  **に移動します**。
 1. **[iOS/iPadOS としてプラットフォーム] を選択し、[VPN** **としてプロファイルの種類**] を **選択します**。 **[作成]** をクリックします。
@@ -99,7 +99,12 @@ iOS 上の Defender for Endpoint を展開するには、Intune ポータル サ
 1. [次へ] をクリックし、対象ユーザーにプロファイルを割り当てる。
 1. [確認 *と作成] セクション* で、入力された情報が正しいか確認し、[作成] を **選択します**。
 
-## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender のゼロタッチ オンボーディング
+## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview"></a>エンドポイント用 Microsoft Defender のゼロタッチ オンボーディング (プレビュー)
+
+
+> [!IMPORTANT]
+> 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+
 
 管理者は、Microsoft Defender for Endpoint を構成して、サイレント モードで展開およびアクティブ化できます。 このフローでは、ユーザーにインストールの通知が送信されます。 Defender for Endpoint は、ユーザーがアプリを開く必要なしに自動的にインストールされます。 登録された iOS デバイスで Defender for Endpoint のゼロタッチまたはサイレント展開をセットアップするには、以下の手順に従います。
 

@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 03b1924e32eb1a02842da38655739d8d36ea83ac
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 4fadefe8ae55aff79a749188631e69c9bf263263
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422977"
+ms.locfileid: "61426497"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -206,7 +206,10 @@ ms.locfileid: "61422977"
        New-OrganizationRelationship "[name of your organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
    }
    ```
-
+   
+> [!NOTE]
+> テナントドメイン名として入力$sourceTenantId、$targetTenantIdは GUID であり、テナント ドメイン名ではありません。 テナント ID の例とテナント ID の検索に関する情報については[、「Find your your Microsoft 365 テナント ID」を参照してください](/onedrive/find-your-office-365-tenant-id)。
+   
 ### <a name="how-do-i-know-this-worked"></a>設定が適用されたことを確認する方法
 
 ターゲット テナントで作成したクロステナント移行エンドポイントに対して [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) コマンドレットを実行することで、テナント間メールボックスの移行構成を確認できます。
