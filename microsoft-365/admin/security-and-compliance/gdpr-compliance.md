@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: 一般データ保護規則 (GDPR) プロセスで 一般法人向け Microsoft 365 がどのように役立つかについて説明します。
-ms.openlocfilehash: 50ee497d57438994a4a5f839ff5a2afb103cd59b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f84c9e93c92c40ce40cc2835100ef2786a23a69d
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174029"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520874"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR の簡略化: 小規模ビジネス向けのガイド
 
@@ -133,7 +133,7 @@ IT システムに個人データを保存する場合は、強力なパスワ�
 Microsoft 365 などのクラウドに個人データを保存する場合は、ファイルとフォルダーへのアクセス許可の管理、ファイルを保存するための一元管理された安全な場所 (OneDrive または SharePoint ドキュメント ライブラリ)、ファイルの送信または取得時のデータ暗号化などのセキュリティ機能があります。 
 
 #### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365 の役立つ機能
-[Microsoft データ損失防止 (DLP)](/microsoft-365/business-video/set-up-dlp) を使用して、ビジネスの機密情報を保護できます。 [GDPR テンプレート](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr)を使用する [DLP ポリシーの設定](/microsoft-365/compliance/create-a-dlp-policy-from-a-template)ができます。
+[DLP 機能のセットアップ](set-up-compliance.md#watch-set-up-dlp-features)を使用して、ビジネスの機密情報を保護できます。 [GDPR テンプレート](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr)を使用する [DLP ポリシーの設定](/microsoft-365/compliance/create-a-dlp-policy-from-a-template)ができます。
 
 ### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>手順 5: データ処理アクティビティに関するドキュメントを保持する
 

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 for Business サブスクリプションのオンラインまたは電話によるサポートを受ける方法を説明します。 これらのサポート方法を使用するには、一般法人向けサブスクリプションの管理者である必要があります。
-ms.openlocfilehash: 2be324661fa80ed58b9f9e5dc351726ad0c9f69a
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 0e76dc387ac8522948a113129316a2eb36b5fb80
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422029"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520898"
 ---
 # <a name="get-support"></a>サポートを受ける
 
@@ -221,6 +221,6 @@ Office 365 では、複数の異なる役割を持つ複数のタイプの管理
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドキュメントやトレーニングを探す](../business-video/find-help-answers.md) (記事)\
-[従業員のクイック セットアップ](../business-video/employee-quick-setup.md) (記事)\
+[ドキュメントとトレーニングの検索](index.yml) (リンク ページ)\
+[従業員のクイック セットアップ](setup/employee-quick-setup.md) (記事)\
 [Microsoft 365 Business Premium セットアップの概要](setup/plan-your-setup.md) (ビデオ)
