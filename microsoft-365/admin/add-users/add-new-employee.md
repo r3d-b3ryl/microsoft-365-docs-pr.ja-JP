@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 新入社員をメール、Microsoft 365、およびアプリのビジネスSkypeにOfficeします。
-ms.openlocfilehash: 83565c6db281ee9366d9ba383ead2c3a0ba1ee1b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 870339abe3f06d9ed819836993e6fdb7a772084b
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161992"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520838"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>新しい従業員を新しい従業員にMicrosoft 365
 
@@ -73,7 +73,7 @@ Facebook、Amazon、Gmail と同様に、従業員はサインインしてアプ
 ## <a name="step-4-help-your-employee-get-started"></a>手順 4: 従業員の開始に役立つ
 
 
-サインイン、ソフトウェアのインストール、電子メールのセットアップ[Microsoft 365](../../business-video/employee-quick-setup.md)従業員のクイック セットアップを共有します。 
+サインイン、ソフトウェアのインストール、電子メールのセットアップ[Microsoft 365](../setup/employee-quick-setup.md)従業員のクイック セットアップを共有します。 
   
 そして、それらを始めるのに役立つクイック リファレンスを次に示します。
   
@@ -85,7 +85,7 @@ Facebook、Amazon、Gmail と同様に、従業員はサインインしてアプ
 |会社またはSkype for Businessの同僚やビジネス パートナーと接続できる環境を設定します。 IM、音声、またはビデオ通話で会話を開始できます。  <br/> |[コンピューター Skype for Businessインストールします](https://support.microsoft.com/office/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)。  <br/> <br/>ビデオを使用する方法についてはSkype for Business[ビデオをご覧ください。](https://support.microsoft.com/office/3a21eca4-434d-41f1-ab06-3d4a268573b7) <br/> <br/>無料のアプリをSkype for Businessしているビジネスの外部のユーザーに従業員が連絡できるよう、ユーザーにSkypeしましたか? 使用しない場合は、新しい従業員に、新しい従業員に対して、新しいユーザーの使用に何を期待Skype for Business。  <br/> |
 |メールを受け取る場合や携帯電話でアプリを使用する場合は、モバイル Skype for Businessインストールします。  <br/> |モバイル アプリでメールをOutlookする場合は、携帯電話からメールを受け取る必要があります。 手順については[](https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417)[、「iOS](https://support.microsoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234) [、Android、Windows Phone](https://support.microsoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872) <br/> <br/>モバイル デバイスでモバイル Skype for Businessを使用する場合は、モバイル アプリをダウンロードしてインストールします。 手順については[](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone)[、「iOS](https://support.microsoft.com/office/3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS) [、Android、Windows Phone](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android) <br/> |
 |ドキュメント、プレゼンテーションOneDrive for Businessスプレッドシートをクラウドに保存して整理する方法を学ぶには、このトレーニングを完了します。  <br/> |ビジネス関連のドキュメントをクラウドに保持するには、次のOneDrive for Business。 別のコンピューターでユーザーにサインインしている場合でも、いつでもMicrosoft 365を取得できます。 [ビデオを見て、アプリの使い方をOneDrive for Business](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **トレーニング: OneDrive for Business**[トレーニング](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132)([選択] OneDrive for Business)。  <br/> |
-|オンライン トレーニングSharePoint完了して、同僚と共同作業を行い、コンテンツを共有できます。  <br/> |同僚がアクセスするドキュメントを保持する最適な場所は、オンラインSharePointです。  <br/> <br/>**トレーニング:** [ビデオ: オンラインを使用してチーム コンテンツ](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121)とSharePointする <br/><br/> **次の情報を見つける:** 組織はオンラインでどのようにSharePointし、どのような種類のドキュメントがそこに保存されます。 また、どのドキュメントがドキュメントに保存OneDrive for Business。  <br/> |
+|オンライン トレーニングSharePoint完了して、同僚と共同作業を行い、コンテンツを共有できます。  <br/> |同僚がアクセスするドキュメントを保持する最適な場所は、オンラインSharePointです。  <br/> <br/>**トレーニング:** [ビデオ: オンラインを使用してチーム コンテンツ](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121)とSharePointする <br/><br/> **見つけてください：** 組織はオンラインでどのようにSharePointし、どのような種類のドキュメントがそこに保存されます。 また、どのドキュメントがドキュメントに保存OneDrive for Business。  <br/> |
 
 ## <a name="related-content"></a>関連コンテンツ
 

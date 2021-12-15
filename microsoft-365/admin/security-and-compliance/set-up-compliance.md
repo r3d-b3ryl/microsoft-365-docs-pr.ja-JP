@@ -23,23 +23,34 @@ search.appverid:
 - BCS160
 - MET150
 description: コンプライアンス機能を設定して、データ損失を防止し、お客様と顧客の機密情報を安全に保ちます。
-ms.openlocfilehash: 09e9e0fda6969cc89a4eb6b5a106e7db5166e869
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 69960c4f158a30d9d47d749ed1e7eb2d2d74f430
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178097"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521044"
 ---
 # <a name="set-up-compliance-features"></a>コンプライアンス機能をセットアップする
 
 ユーザー Microsoft 365 Business Premiumデータとデバイスを保護し、ユーザーと顧客の機密情報を安全に保つ機能が付属しています。
 
-## <a name="set-up-dlp-features"></a>DLP 機能のセットアップ
+## <a name="watch-set-up-dlp-features"></a>ウォッチ: DLP 機能のセットアップ
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3TGvL?autoplay=false]
+
+データ損失防止ポリシーは、社会保障番号や医療記録など、ビジネスの機密情報を特定して保護するのに役立ちます。
+
+1. 開始するには、管理センターに移動し [、[](https://admin.microsoft.com)セットアップ] を **選択します**。
+1. [データ損失防止 **の設定] まで下にスクロールし、[** 表示] を選択し、[管理] を **選択します**。 
+1. ポリシーを編集するには、ポリシーを選択し、[ポリシーの編集] **を** 選択し、変更する内容を選択します。 たとえば、[場所] **を選択** して、スキャンする場所を変更します。
+1. 新しいポリシーを作成するには、[ポリシーの **作成] を選択します**。
+1. カスタム ポリシーを作成するか、テンプレートから開始できます。 たとえば、HIPAA ポリシーを作成するには、[医療と健康] テンプレートを選択し、[米国健康保険法 **(HIPAA) ] を選択します**。 **[次へ]** を選択します。
+1. 設定を確認し、[作成] を **選択します**。 ポリシーを有効にした後、説明された機密情報を含む電子メールがブロックされ、その情報を送信しようとした送信者に警告メッセージが表示されます。
 
 個人 [データの損失から保護する](../../compliance/create-a-dlp-policy-from-a-template.md) ポリシーを設定する方法の例については、「テンプレートから DLP ポリシーを作成する」を参照してください。 
   
-DLP には、多くの異なる地域ですぐに使用できるポリシー テンプレートが多数付属しています。 たとえば、オーストラリアの財務データ、カナダの個人情報法、米国の財務データなどです。 完全 [なリストについては、「DLP ポリシー テンプレートに含まれる](../../compliance/what-the-dlp-policy-templates-include.md) もの」を参照してください。 これらのテンプレートはすべて、PII テンプレートの例と同様に有効にできます。 
-  
+DLP には、多くの異なる地域ですぐに使用できるポリシー テンプレートが多数付属しています。 たとえば、オーストラリアの財務データ、カナダの個人情報法、米国の財務データなどです。 完全 [なリストについては、「DLP ポリシー テンプレートに含まれる](../../compliance/what-the-dlp-policy-templates-include.md) もの」を参照してください。 これらのテンプレートはすべて、PII テンプレートの例と同様に有効にできます。
+ 
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>メールの保持を設定するには、Exchange Online Archiving
 
  **Exchange Online Archiving** 機能は、電子情報開示用の電子メール コンテンツを保持することで、コンプライアンスと規制の標準を維持するのに役立ちます。 また、訴訟が発生した場合のリスクを軽減し、セキュリティ侵害後または削除済みアイテムを回復する必要がある場合にデータを回復する方法を提供します。 訴訟ホールドを使用して、すべてのユーザーのコンテンツを保持したり、保持ポリシーを使用して保持する内容をカスタマイズすることができます。
@@ -58,13 +69,22 @@ DLP には、多くの異なる地域ですぐに使用できるポリシー テ
     
 **保持:** たとえば、カスタマイズした保持ポリシーを有効にして、特定の時間保持したり、保持期間の終わりにコンテンツを完全に削除したりできます。 詳細については、「アイテム保持ポリシー [の概要」を参照してください](../../compliance/retention.md)。
 
-## <a name="set-up-sensitivity-labels"></a>[感度ラベルの設定]
+## <a name="watch-set-up-sensitivity-labels"></a>ウォッチ: 感度ラベルを設定する
 
 感度ラベルには、Azure Information Protection (AIP) プラン 1 が付き、ラベルを適用してドキュメントと電子メールを分類し、必要に応じて保護するのに役立ちます。 ラベルは、ルールと条件を定義する管理者、ユーザーが手動で、またはユーザーに推奨される組み合わせを使用して自動的に適用できます。
 
-[感度ラベル] を設定するには、[感度 [ラベルの作成と管理] ビデオを表示](../../business-video/create-sensitivity-labels.md) します。
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3VRGT?autoplay=false]
 
+1. 管理センター [で、[](https://admin.microsoft.com)コンプライアンス管理センター **] を** 選択します。
+1. [分類 **]** を選択し、[ **感度] ラベルを選択します**。
+1. [ **ラベルの作成] を** 選択し、警告が表示されたら、[はい] を **選択します**。
+1. 設定を確認し、[作成] を **選択します**。 ラベルが作成されました。 必要な追加のラベルに対して、このプロセスを繰り返します。
+1. 既定では、ラベルは[機密]、Office、および [パブリック **]** の順に **アプリに****表示されます**。 順序を変更するには、ラベルごとに 3 つのドット (その他のアクション) を選択し、ラベルを上下に移動します。 通常、アクセス許可は、最低レベルから最高レベルのアクセス許可に一覧表示されます。
+1. 設定を確認し、[発行] を **選択します**。
 
+ラベルを機能するには、各ユーザーが Azure Information Protection 統合ラベル 付けクライアントをダウンロードする必要があります。 Web を検索 **しAzinfoProtection_UL.exe** Microsoft ダウンロード センターからダウンロードし、ユーザーのコンピューターで実行します。
+
+次に Word のようなファイルを開Office アプリ、作成された感度ラベルが表示されます。 ラベルを変更または適用するには、[感度] を選択し、ラベルを選択します。
 
 ### <a name="install-the-azure-information-protection-client-manually"></a>Azure Information Protection クライアントを手動でインストールする
 

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: グループとそのMicrosoft 365を知るグループ レポートを取得します。
-ms.openlocfilehash: 6ef375e1aab13f4ec01514967a90ce726680efbc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4e6963f5026e62b03d95a4f499277259a6773cdb
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648869"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520850"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターでの Microsoft 365 レポート - Microsoft 365 グループ
 
@@ -75,6 +75,6 @@ Microsoft 365 の [レポート] ダッシュボードには、組織内での�
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365管理センターのレポート](activity-reports.md)(記事)\
-[セキュリティ コンプライアンス センター&レポート](../../compliance/reports-in-security-and-compliance.md) (記事)\
+[セキュリティ コンプライアンス センターのスマート レポート&分析](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance) 情報 (記事)\
 [Microsoft 365管理センターの [レポート] - アクティブ ユーザー](../../admin/activity-reports/active-users-ww.md) (記事)
 

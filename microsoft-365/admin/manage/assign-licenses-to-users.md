@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: 製品ライセンスを特定のユーザーに割り当てるのか、またはユーザー ライセンスを特定の製品に割り当てるのかによって、ライセンスを割り当てます。
 ms.date: 09/16/2021
-ms.openlocfilehash: 68124f26037e6d21e9b3f1cb0b7888edc005fe77
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 90c567e27abf67bdb5a6cf74da4d64d9156e1432
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371102"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520862"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 
@@ -183,7 +183,7 @@ ms.locfileid: "61371102"
 
 ## <a name="next-steps"></a>次の手順
 
-ユーザーがまだ Office アプリをインストールしていない場合は、「[従業員クイック スタート ガイド](../../business-video/employee-quick-setup.md)」をユーザーと共有して、ユーザーが「[PC または Mac に Microsoft 365 または Office 2019 をダウンロードしてインストールする方法](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)」や「[モバイル デバイスで Office アプリとメールをセットアップする方法](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)」などを参照してセットアップできるようにします。
+ユーザーがまだ Office アプリをインストールしていない場合は、「[従業員クイック スタート ガイド](../setup/employee-quick-setup.md)」をユーザーと共有して、ユーザーが「[PC または Mac に Microsoft 365 または Office 2019 をダウンロードしてインストールする方法](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)」や「[モバイル デバイスで Office アプリとメールをセットアップする方法](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)」などを参照してセットアップできるようにします。
 
 ## <a name="related-content"></a>関連コンテンツ
 

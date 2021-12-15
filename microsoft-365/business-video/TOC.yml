@@ -55,8 +55,6 @@
           href: /microsoftteams/guest-experience
         - name: 従業員や顧客とチャットする
           href: 'https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92'
-        - name: オンライン会議の概要
-          href: overview-online-meetings.md
         - name: ゲストとの会議をスケジュールする
           href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: ゲストとの会議に参加する
@@ -81,10 +79,6 @@
       items:
         - name: Bookings の概要
           href: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
-        - name: Microsoft Lists でビジネス情報を追跡する
-          href: track-info-lists.md
-        - name: イベントを計画する
-          href: plan-event.md
     - name: サービスの管理
       items:
         - name: 管理者とは
@@ -129,17 +123,9 @@
           href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
         - name: スマートフォンで 2 要素サインインを設定する
           href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
-        - name: 安全な添付ファイルを管理する
-          href: safe-attachments.md
-        - name: データの損失を防止する
-          href: set-up-dlp.md
-        - name: 秘密度ラベルを作成する
-          href: create-sensitivity-labels.md
     - name: サポート
       items:
         - name: ドキュメントやトレーニングを探す
-          href: find-help-answers.md
-        - name: 従業員のクイック セットアップ
-          href: employee-quick-setup.md
+          href: ../admin/index.yml
     - name: Google Workspace から切り替える
       href: moveto-microsoft-365/move-from-google-workspace-overview.md

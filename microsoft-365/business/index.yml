@@ -129,7 +129,7 @@ conceptualContent:
         - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: メールの保持を設定する
-        - url: ../business-video/create-sensitivity-labels.md
+        - url: ../admin/security-and-compliance/set-up-compliance.md
           itemType: video
           text: 機密ラベルを作成して使用
       footerLink:

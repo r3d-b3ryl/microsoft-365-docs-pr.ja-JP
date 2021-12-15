@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 秘密度ラベルを SharePoint Syntex のモデルに適用する方法について説明します。
-ms.openlocfilehash: 006b3bf8973e7ce2772c20d1766f054e7b38cc9d
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 624b441084b418d2bcfc3ab6b623da0f5a969fe8
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792366"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521116"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のモデルに秘密度ラベルを適用する
 
@@ -29,7 +29,7 @@ Microsoft SharePoint Syntex のドキュメント理解モデルに[秘密度ラ
 モデルのホーム ページのモデル設定を使用して、既存の秘密度ラベルをモデルに適用できます。 モデル設定から選択できるようにするには、ラベルがすでに公開されている必要があります。
 
 > [!Important]
-> 秘密度ラベルをドキュメント理解モデルに適用できるようにするには、秘密度ラベルを[作成して Microsoft 365 コンプライアンス センターで公開する](../business-video/create-sensitivity-labels.md)必要があります。
+> 秘密度ラベルをドキュメント理解モデルに適用できるようにするには、秘密度ラベルを[作成して Microsoft 365 コンプライアンス センターで公開する](../admin/security-and-compliance/set-up-compliance.md)必要があります。
 
 ## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>秘密度ラベルをドキュメント理解モデルに追加する
 
@@ -76,7 +76,7 @@ Microsoft SharePoint Syntex のドキュメント理解モデルに[秘密度ラ
 ## Add a sensitivity label to a form processing model
 
 > [!Important]
-> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../business-video/create-sensitivity-labels.md).
+> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../admin/security-and-compliance/set-up-compliance.md).
 
 You can either apply a sensitivity label to a form processing model when you are creating a model, or apply it to an existing model.
 

@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d4e0cb56d6aad0b26bea145439b806080982dfe5
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: ca7c19066847b3a1aa5ad5a971315e3962fc08b7
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907933"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520910"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -33,11 +33,11 @@ ms.locfileid: "60907933"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-フィッシング対策保護設定を構成するポリシーは、Exchange Online メールボックスを持つ Microsoft 365 組織、Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織、および Office 365 組織向け Microsoft Defender で利用できます。
+フィッシング対策の保護設定を構成するポリシーは、Exchange Online メールボックスを持つ Microsoft 365 組織、Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織、および Microsoft Defender で使用できます。Office 365組織。
 
 組織の Microsoft Defender のOffice 365は次のとおりです。
 
-- Microsoft 365 EnterpriseE5、Microsoft 365 Education A5 など
+- Microsoft 365 Enterprise E5、Microsoft 365 Education A5 など
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
 - [Microsoft Defender for Office 365アドオンとして使用する](https://products.office.com/exchange/advance-threat-protection)
@@ -108,7 +108,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
   > [!NOTE]
   >
   > - スプーフィング対策保護は、既定のフィッシング対策ポリシーと、作成した新しいカスタムフィッシング対策ポリシーで既定で有効になっています。
-  > - MX レコードがスプーフィング対策保護を無効にする必要Microsoft 365。代わりに、コネクタの拡張フィルターを有効にできます。 手順については、「拡張フィルタリング[for Connectors in Exchange Online」 を参照してください](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+  > - MX レコードが Microsoft 365 をポイントしない場合は、スプーフィング防止保護を無効にする必要があります。代わりに、コネクタの拡張フィルターを有効にします。 手順については、「拡張フィルタリング[for Connectors in Exchange Online」 を参照してください](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
   > - スプーフィング対策保護を無効にすると、複合認証チェックからの _暗黙的_ なスプーフィング [保護だけが無効](email-validation-and-authentication.md#composite-authentication) にされます。 送信者が明示的な [DMARC](use-dmarc-to-validate-email.md)に失敗した場合、ポリシーが検疫または拒否に設定されている場所を確認しても、メッセージは検疫または拒否されます。
 
 - **認証されていない送信者通知**: これらの通知は、スプーフィング インテリジェンスが有効になっている場合にのみ使用できます。 次のセクションの情報を参照してください。
@@ -125,7 +125,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
 
 認証されていない送信者通知は、前のセクションで説明したように[](#spoof-settings)、EOP および Defender for Office 365 のフィッシング対策ポリシーで使用できるスプーフィング設定の一部です。 スプーフィング インテリジェンスが有効になっている場合にのみ、次の設定を使用できます。
 
-- スプーフィングの認証されていない送信者に対して表示 **(?)**: メッセージが SPF または DKIM チェックに合格しない場合にメッセージが DMARC または複合認証に合格しない場合、この通知は差出 [](email-validation-and-authentication.md#composite-authentication)人の写真に疑問符が追加されます。 この設定をオフにすると、送信者の写真に疑問符は追加されません。
+- スプーフィングの認証されていない送信者に対して **(?)** を表示する : メッセージが SPF チェックまたは DKIM チェックに合格しない場合、メッセージがDMARC または複合認証に合格しない [](email-validation-and-authentication.md#composite-authentication)場合、この通知は差出人の写真に疑問符を追加します。 この設定をオフにすると、送信者の写真に疑問符は追加されません。
 
 - **"via"** タグを表示する: この通知は、差出人アドレス (メール クライアントに表示されるメッセージ送信者) のドメインが DKIM 署名または **MAIL FROM** アドレスのドメインと異なる場合、差出人ボックスに via タグ <u>(chris@contoso.com</u>経由で fabrikam.com) を追加します。 これらのアドレスの詳細については、「電子メール [メッセージ標準の概要」を参照してください](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
@@ -168,7 +168,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
 偽装とは、メッセージ内の送信者または送信者の電子メール ドメインが実際の送信者またはドメインに似ている場合です。
 
 - ドメイン contoso.com のなりすまし例は óntoso.com です。
-- ユーザー michelle@contoso.com のなりすまし例は、michele@contoso.com です。
+- ユーザー偽装とは、ユーザーの表示名と電子メール アドレスの組み合わせです。 たとえば、Valeria Barrios (vbarrios@contoso.com) は Valeria Barrios として偽装されますが、電子メール アドレスは完全に異なります。
 
 > [!NOTE]
 > 偽装保護では、類似するドメインが見えます。 たとえば、ドメインが contoso.com の場合は、偽装の試みとして異なるトップ レベル ドメイン (.com、.biz など) がチェックされますが、多少似ているドメインもチェックします。 たとえば、contosososo.com または contoabcdef.com が偽装の試みと見な contoso.com。

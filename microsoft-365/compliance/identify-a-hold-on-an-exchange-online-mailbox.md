@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: ユーザーのメールボックスに配置できるさまざまな種類の保留リストを特定するExchange OnlineをMicrosoft 365。
-ms.openlocfilehash: 708d6e18428d090a6ba5291aea95e1a690dac556
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 669f1543bddfe88d89b6ec046afd82f4ec11791a
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422533"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520982"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -95,7 +95,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 次の表では **、Get-OrganizationConfig** コマンドレットの実行時に *InPlaceHolds* プロパティに含まれる GUID に基づいて、さまざまな種類の組織全体のホールドと各種類を識別する方法について説明します。
 
-| ホールドの種類                                                                                                | 値の例                           | 説明                                                                                                                                                                                                                                                            |
+| ホールドの種類                                                                                                | 値の例                           | Description                                                                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Microsoft 365、パブリック フォルダー、ExchangeチャットExchange保持ポリシー Teams適用される | `mbx7cfb30345d454ac0a989ab3041051209:2` | Exchange メールボックス、Exchange パブリック フォルダー、および Microsoft Teams の 1xN チャットに適用される組織全体の保持ポリシーは、プレフィックスで始まる GUID によって識別 `mbx` されます。 メモ 1xN チャットは、個々のチャット参加者のメールボックスに格納されます。  |
 | Microsoft 365グループおよびチャネル メッセージにMicrosoft 365されるTeams保持ポリシー                | `grp1a0a132ee8944501a4bb6a452ec31171:3` | 組織全体の保持ポリシーは、Microsoft 365グループおよびチャネル メッセージに適用Microsoft Teamsプレフィックスで始まる GUID によって識別 `grp` されます。 メモ チャネル メッセージは、Microsoft チームに関連付けられているグループ メールボックスに格納されます。 |
@@ -169,16 +169,19 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 
 ## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>保持ラベルがフォルダーまたはアイテムに適用されたため、保持中のメールボックスを識別する
 
-ユーザーがコンテンツを保持するか、保持し、メールボックス内の任意のフォルダーまたはアイテムにコンテンツを削除するように構成されている保持ラベルを適用するたびに *、ComplianceTagHoldApplied* メールボックス プロパティは **True** に設定されます。 この場合、メールボックスは訴訟ホールドに置かれたか、またはアイテム保持ポリシーに割り当てられたMicrosoft 365されます。 *ComplianceTagHoldApplied プロパティ* が **True** に設定されている場合、次のことが発生する可能性があります。
+ユーザーがメールボックス内の任意のフォルダーまたはアイテムにコンテンツを保持または保持し、削除するように構成された保持ラベルを適用するたびに *、ComplianceTagHoldApplied* メールボックス プロパティは **True** に設定されます。 この場合、メールボックスは、Microsoft 365 保持ポリシーに割り当てられた場合や訴訟ホールドに置かれた場合など、保留にされた場合と同様に処理されます。ただし、いくつかの注意点があります。 *ComplianceTagHoldApplied プロパティ* が **True** に設定されている場合、次の処理が行われます。
 
-- メールボックスまたはユーザーのユーザー アカウントが削除された場合、メールボックスは非アクティブな [メールボックスになります](inactive-mailboxes-in-office-365.md)。
+- メールボックスまたはユーザーのアカウントがMicrosoft 365場合、メールボックスは非アクティブな[メールボックスになります](inactive-mailboxes-in-office-365.md)。
 - メールボックス (プライマリ メールボックスまたはアーカイブ メールボックスが有効な場合) を無効にすることはできません。
-- メールボックス内のアイテムは、予想よりも長く保持される場合があります。 これは、メールボックスが保留であるため、アイテムが完全に削除 (削除) されていないためです。
+- メールボックスから削除されたアイテムは、保留が適用されていない場合とは異なるプロセスに従います。
+    - **ラベルが付いていないアイテム** は、メールボックスに適用するホールドがない場合よりも、最初はわずかに長く保持されます。  これらのアイテムを完全に削除するのにかかる時間は、削除済みアイテムの保持構成[](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)と、回復可能なアイテム フォルダーの Purges サブフォルダーにアイテムが到着するのにかかる時間によって[決まります](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)。
+    - **ラベル付きアイテム** は、Microsoft 365アイテム レベルで適用された場合と同じ方法で保持され、削除されます。  複数のアイテムが異なるラベルを持ち、コンテンツを保持または保持し、その後、異なる間隔で削除するように構成されている場合、各アイテムは適用されたラベルの構成に基づいて保持されます。
+- その他の保持 (Microsoft 365 保持ポリシー、電子情報開示保持、訴訟ホールドなど)は、保持のプリンシパルに基づいてラベル付けされたアイテムの保持期間を延長[できます](retention.md#the-principles-of-retention-or-what-takes-precedence)。
 
-*ComplianceTagHoldApplied* プロパティの値を表示するには、PowerShell で次Exchange Onlineします。
+1 つのメールボックスの *ComplianceTagHoldApplied* プロパティの値を表示するには、PowerShell で次Exchange Onlineします。
 
 ```powershell
-Get-Mailbox <username> |FL ComplianceTagHoldApplied
+Get-Mailbox <username> | FL ComplianceTagHoldApplied
 ```
 
 保持ラベルの詳細については、「保持ラベル」 [を参照してください](retention.md#retention-labels)。

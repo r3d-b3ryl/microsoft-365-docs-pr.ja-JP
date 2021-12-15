@@ -16,12 +16,12 @@ metadata:
   description: 管理者は、委任された管理タスクに関するよく寄せられる質問と回答を Microsoft パートナー Microsoft 365リセラー向けページで表示できます。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: b3bf371ef0e726082c2d775bb63222f795b36671
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: 7f011829110481f6cd7b9238deadccad0d2a1264
+  ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60190367"
+  ms.lasthandoff: 12/15/2021
+  ms.locfileid: "61520946"
 title: 代理管理に関する FAQ
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -35,22 +35,12 @@ sections:
   - question: >
       リセラーであり、顧客テナントを管理する必要があります。 これはどのように機能しますか?
     answer: >
-      Microsoft パートナーまたはリセラーで、Microsoft アドバイザーとしてサインアップしている場合は、顧客の組織で委任された管理機能を要求Microsoft 365できます。
+      Microsoft パートナーまたはリセラーで、Microsoft クラウド ソリューション プロバイダー (CSP) にサインアップしている場合は、顧客の Microsoft 365 組織で委任された管理機能を要求できます。 詳細については、次の資料を参照してください。
 
 
-      委任された管理を使用すると、Microsoft 365の管理者である場合と同様に、EOP 設定を含むユーザーを管理できます。 委任された管理を構成する手順については、次の一覧で説明します。
+      - [クラウド ソリューション プロバイダープログラム](/partner-center/csp-overview)
 
-
-      1. [Microsoft Office 365 アドバイザー](https://partner.microsoft.com/?cloudbenefits) としてサインアップします。
-
-
-      2. 委任された管理にサインアップします。 顧客のテナントの管理を開始する前に、代理管理者として承認する必要があります。 承認を取得するには、まず代理 [管理のオファーを送信します](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e)。 また、後で代理管理を顧客に提供することもできます。
-
-
-      3. サブスクリプション アドバイザー パートナーの追加、変更、または削除の手順を使用して、委任された [管理者アカウントを作成します](../../admin/misc/add-partner.md)。
-
-
-      パートナー [にアクセスする: 委任された管理を](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) 設定する方法の詳細については、ビジネスを構築し、パートナー サブスクリプションを管理します。
+      - [顧客のサービスまたはサブスクリプションを管理するためのアクセス許可を取得します](/customers-revoke-admin-privileges)。
   - question: >
       リセラーではなく、お客様です。 代理管理者をサブテパンツに設定する方法
     answer: >
@@ -58,7 +48,7 @@ sections:
   - question: >
       管理下の管理者がポリシーを変更するのを防ぐことはできますか?
     answer: >
-      その必要はありません。 Microsoft 365この機能は現在持っていません。
+      いいえ。 Microsoft 365この機能は現在持っていません。
   - question: >
       すべてのサブテナ間で統合レポートを取得できますか?
     answer: 管理する会社全体の統合レポートは、管理レポートMicrosoft 365 管理センターできません。 ただし、Microsoft を使用してレポートを[取得Graph。](/graph/overview)

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: 各チーム メンバーは、一般法人向け Microsoft 365 にサインインしてアクセスする前に、ユーザー アカウントが必要になります。ユーザーを追加して、ライセンスを割り当てる方法について説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: dad5c6693489fd62eb77df46de6d538da93da515
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 161b1cec937197dc3cc81b34027b6574676f7d95
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370646"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520778"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>ユーザーを追加して同時にライセンスを割り当てる
 
@@ -105,7 +105,7 @@ ms.locfileid: "61370646"
 
 ## <a name="next-steps"></a>次の手順
 
-ユーザーを追加すると、Microsoft からメール通知が届きます。 メールには、ユーザーが Microsoft 365 にサインインするための Microsoft 365 のユーザー ID とパスワードが含まれています。 新しいパスワードは、通常のプロセスを使用して通知してください。 新しいユーザーと「[従業員のクイック スタート ガイド](../../business-video/employee-quick-setup.md)」を共有し、ユーザーが「[PC または Mac に Office アプリをダウンロードしてインストールする方法](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)」や「[モバイル デバイスで Office アプリとメールをセットアップする方法](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)」などを参照してセットアップできるようにします。
+ユーザーを追加すると、Microsoft からメール通知が届きます。 メールには、ユーザーが Microsoft 365 にサインインするための Microsoft 365 のユーザー ID とパスワードが含まれています。 新しいパスワードは、通常のプロセスを使用して通知してください。 新しいユーザーと「[従業員のクイック スタート ガイド](../setup/employee-quick-setup.md)」を共有し、ユーザーが「[PC または Mac に Office アプリをダウンロードしてインストールする方法](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)」や「[モバイル デバイスで Office アプリとメールをセットアップする方法](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)」などを参照してセットアップできるようにします。
 
 ## <a name="related-content"></a>関連コンテンツ
 
