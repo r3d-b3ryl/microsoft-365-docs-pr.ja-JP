@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: ユーザーが組織の内部または外部Microsoft 365 管理センター予定表を共有できるよう、予定表の共有を有効にします。
-ms.openlocfilehash: c7b7e13dd0472cdd8d61bb7a28c067eadb1b00cc
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 00ae4b96c54ae6b1471a90f598b9f96821947db3
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370538"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530453"
 ---
 # <a name="share-calendars-with-external-users"></a>予定表を外部ユーザーと共有する
 
@@ -47,6 +47,14 @@ ms.locfileid: "61370538"
 
 4. ユーザーが利用できるようにする予定表の情報の種類を選択します。 すべての情報を許可することも、時間のみ、時間、件名、場所のみに制限することもできます。
 
+## <a name="external-sharing-sync-interval"></a>外部共有同期間隔
+
+テナント外での共有のインスタント同期は現在サポートされていません。 これらの構成で共有することができますが、同期は定期的に行います。 テナント間の共有には、次の 2 種類があります。
+
+1. **Microsoft 365ユーザーにMicrosoft 365** する : 完全に共有された予定表が作成されますが、同期は約 3 時間ごとに行います。 このセットアップでは、インスタント同期が最終的に有効になります。
+
+2. **Microsoft 365.com** ユーザー Outlook: 外部共有が無効になっている場合は、別のユーザー Microsoft 365共有もこのグループに含まれる。 共有時に ICS URL が生成され、受信者は任意の予定表サービスに追加できます。 ICS サブスクリプションを使用すると、受信者の予定表サービスは、ICS サブスクリプションを同期して新しい更新プログラムを受け取る時間を選択します。 受信者が Outlook.com またはユーザー Microsoft 365場合、同期は約 3 時間ごとに行います。
+
 ## <a name="invite-people-to-access-calendars"></a>予定表にアクセスできるようにユーザーを招待する
 
 共有が有効になると、予定表の所有者は特定のユーザーに招待を拡張できます。 手順については、「カレンダーを[共有する」を参照Outlook Web App。](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)
@@ -54,5 +62,6 @@ ms.locfileid: "61370538"
 ## <a name="related-content"></a>関連コンテンツ
 
 [サイトの外部共有をオンまたはオフにする](/sharepoint/change-external-sharing-site) (記事)\
-[概要] Microsoft 365 管理センター][[Microsoft 365 管理センターの概要](../admin-overview/admin-center-overview.md)(ビデオ)\
+[アプリケーションの概要 (Microsoft 365 管理センター)\](../admin-overview/admin-center-overview.md)
 [メールと予定表の管理](/admin) (リンク ページ)
+

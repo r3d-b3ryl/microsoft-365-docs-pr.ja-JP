@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: aa6a8745ad8e9369b81f1f035d5755ff3efec515
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 6d9c0c215d37458eab1deaf19f5818f07c1a9f3a
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121101"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531497"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -45,25 +45,25 @@ ms.locfileid: "61121101"
 
 |列名|データ型|説明|
 |---|---|---|
-|`Timestamp`|datetime|レコードが作成された日付と時刻|
-|`Application`|文字列|記録されたアクションを実行したアプリケーション|
-|`ApplicationId`|string|アプリケーションの一意の識別子|
-|`IsManagedIdentity`|ブール値|マネージ ID によってサインインが開始されたかどうかを示します。|
-|`ErrorCode`|int|サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。|
-|`CorrelationId`|string|サインイン イベントの一意の識別子|
-|`ServicePrincipalName`|string|サインインを開始したサービス プリンシパルの名前|
-|`ServicePrincipalId`|string|サインインを開始したサービス プリンシパルの一意の識別子|
-|`ResourceDisplayName`|string|アクセスされたリソースの表示名|
-|`ResourceId`|string|アクセスされるリソースの一意の識別子|
-|`ResourceTenantId`|string|アクセスされるリソースのテナントの一意の識別子|
-|`IPAddress`|string|エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス|
-|`Country`|string|クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード|
-|`State`|string|使用可能な場合は、サインインが発生した状態|
-|`City`|string|アカウント ユーザーが保存されている都市|
-|`Latitude`|string|サインイン場所の北から南の座標|
-|`Longitude`|string|サインイン場所の東から西への座標|
-|`RequestId`|string|要求の一意の識別子|
-|`ReportId`|string|イベントの一意識別子|
+|`Timestamp`|`datetime`|レコードが作成された日付と時刻|
+|`Application`|`string`|記録されたアクションを実行したアプリケーション|
+|`ApplicationId`|`string`|アプリケーションの一意の識別子|
+|`IsManagedIdentity`|`boolean`|マネージ ID によってサインインが開始されたかどうかを示します。|
+|`ErrorCode`|`int`|サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。|
+|`CorrelationId`|`string`|サインイン イベントの一意の識別子|
+|`ServicePrincipalName`|`string`|サインインを開始したサービス プリンシパルの名前|
+|`ServicePrincipalId`|`string`|サインインを開始したサービス プリンシパルの一意の識別子|
+|`ResourceDisplayName`|`string`|アクセスされたリソースの表示名|
+|`ResourceId`|`string`|アクセスされるリソースの一意の識別子|
+|`ResourceTenantId`|`string`|アクセスされるリソースのテナントの一意の識別子|
+|`IPAddress`|`string`|エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス|
+|`Country`|`string`|クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード|
+|`State`|`string`|使用可能な場合は、サインインが発生した状態|
+|`City`|`string`|アカウント ユーザーが保存されている都市|
+|`Latitude`|`string`|サインイン場所の北から南の座標|
+|`Longitude`|`string`|サインイン場所の東から西への座標|
+|`RequestId`|`string`|要求の一意の識別子|
+|`ReportId`|`string`|イベントの一意識別子|
 ||||
 
 ## <a name="related-articles"></a>関連記事

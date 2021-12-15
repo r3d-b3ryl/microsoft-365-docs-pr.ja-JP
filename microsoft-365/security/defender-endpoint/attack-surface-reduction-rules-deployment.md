@@ -1,5 +1,5 @@
 ---
-title: 攻撃表面の縮小 (ASR) ルールの展開
+title: 攻撃面の減少 (ASR) ルールを展開する
 description: 攻撃表面の縮小ルールを展開するガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
@@ -17,16 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 92c8b601e9c1c766ae128f1ba290cfe9b9799644
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 9b9ef111fe704e1d65176dd90222d404d684e87e
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217880"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531325"
 ---
 # <a name="attack-surface-reduction-rules-deployment-guide"></a>攻撃表面の縮小ルールの展開ガイド
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 
 攻撃表面は、組織がサイバー脅威や攻撃に対して脆弱なすべての場所です。 組織の攻撃表面には、攻撃者が組織のデバイスやネットワークを侵害する可能性があるすべての場所が含まれています。 攻撃の表面を減らすことは、組織のデバイスとネットワークを保護する手段であり、攻撃方法が少ない攻撃者を残します。 攻撃表面の縮小 (ASR) ルール (Microsoft Defender for Endpoint で見つかった多くのセキュリティ機能の 1 つ) を構成すると、役立ちます。
 
@@ -43,7 +43,7 @@ ASR ルールは、次のような特定のソフトウェア動作を対象と�
 >[!IMPORTANT]
 >このガイドでは、ASR ルールを構成する方法を決定するのに役立つ画像と例を示します。これらのイメージと例は、環境に最適な構成オプションを反映していない可能性があります。
 
-開始する前に、「 [攻撃表面](overview-attack-surface-reduction.md)の縮小の概要」と [「Demystifying](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) Attack Surface Reduction rules - Part 1 for foundational information」を参照してください。 カバレッジの領域と潜在的な影響を理解するには、ASR ルールの現在のセットについて理解してください。「攻撃 [表面の縮小ルール」を参照してください](attack-surface-reduction-rules.md)。
+開始する前に、「 [攻撃表面](overview-attack-surface-reduction.md)の縮小の概要」と [「Demystifying](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) Attack Surface Reduction rules - Part 1 for foundational information」を参照してください。 カバレッジの領域と潜在的な影響を理解するには、ASR ルールの現在のセットについて理解してください。「攻撃 [表面の縮小ルールリファレンス」を参照してください](attack-surface-reduction-rules-reference.md)。
 
 ASR ルールは、Microsoft Defender for Endpoint 内の攻撃表面縮小機能の機能の 1 つのみです。 このドキュメントでは、人間が操作するランサムウェアなどの高度な脅威を阻止するために、ASR ルールを効果的に展開する方法について詳しく説明します。  
 
@@ -122,15 +122,15 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
-[ASR ルールの展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[ASR ルール 展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
 
 [ASR 展開フェーズ 2 - テスト](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR ルールの展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
+[ASR ルール 展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[ASR ルールの展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
+[ASR ルール 展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
 
-## <a name="reference"></a>関連情報
+## <a name="reference"></a>Reference
 
 ### <a name="blogs"></a>ブログ
 
@@ -150,7 +150,7 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
 
-[攻撃面の減少ルール](attack-surface-reduction-rules.md)
+[攻撃表面の縮小ルールのリファレンス](attack-surface-reduction-rules-reference.md)
 
 [攻撃面の減少の FAQ](attack-surface-reduction-faq.yml)
 

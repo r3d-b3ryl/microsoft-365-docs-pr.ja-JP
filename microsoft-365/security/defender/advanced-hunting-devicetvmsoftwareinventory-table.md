@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8c6cae9e8d4d043ced17129b49493a95e13bc8fc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 10a184e6ce36129a84197cc02caae3b96625e39a
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661085"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530919"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -47,16 +47,16 @@ ms.locfileid: "60661085"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `DeviceId` | string | コンピューターの一意識別子 |
-| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 11、Windows 10、Windows 7 など) を示します。 |
-| `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |
-| `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
-| `SoftwareVendor` | string | ソフトウェア ベンダーの名前 |
-| `SoftwareName` | string | ソフトウェア製品の名前 |
-| `SoftwareVersion` | string | ソフトウェア製品のバージョン番号 |
-| `EndOfSupportStatus` | string | 指定したサポート終了日 (EOS) または終了日 (EOL) を基準にしたソフトウェア製品のライフサイクル ステージを示します。 |
-| `EndOfSupportDate` | string | ソフトウェア製品のサポート終了日 (EOS) または終了日 (EOL) |
+| `DeviceId` | `string` | コンピューターの一意識別子 |
+| `DeviceName` | `string` | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `OSPlatform` | `string` | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 11、Windows 10、Windows 7 など) を示します。 |
+| `OSVersion` | `string` | コンピューターで実行されているオペレーティング システムのバージョンです。 |
+| `OSArchitecture` | `string` | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
+| `SoftwareVendor` | `string` | ソフトウェア ベンダーの名前 |
+| `SoftwareName` | `string` | ソフトウェア製品の名前 |
+| `SoftwareVersion` | `string` | ソフトウェア製品のバージョン番号 |
+| `EndOfSupportStatus` | `string` | 指定したサポート終了日 (EOS) または終了日 (EOL) を基準にしたソフトウェア製品のライフサイクル ステージを示します。 |
+| `EndOfSupportDate` | `string` | ソフトウェア製品のサポート終了日 (EOS) または終了日 (EOL) |
 
 
 

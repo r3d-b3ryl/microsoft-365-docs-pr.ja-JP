@@ -1,5 +1,5 @@
 ---
-title: ASR ルールの展開フェーズ 4 - 運用化
+title: ASR ルール 展開フェーズ 4 - 運用化
 description: 攻撃表面の縮小ルールの展開を運用化するガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7c06be427df2425a2160201324a6ed267d88d0fd
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 01556e67738ffac18a46c09c85bc2e70d1f5f29e
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218336"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531692"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-4-operationalize"></a>攻撃表面の縮小ルールの展開フェーズ 4: 運用
 
@@ -38,7 +38,7 @@ ASR ルールを完全に展開した後は、ASR 関連のアクティビティ
 
 ## <a name="hunting"></a>検索
 
-この機能の最も強力な機能[の 1 つはMicrosoft 365 Defender](https://securitycenter.microsoft.com)高度な狩猟です。 高度な狩猟に精通していない場合は、「高度な狩猟を使用して脅威を積極的に探す」 [を参照してください](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。
+この機能の最も強力な機能[の 1 つはMicrosoft 365 Defender](https://security.microsoft.com)高度な狩猟です。 高度な狩猟に精通していない場合は、「高度な狩猟を使用して脅威を積極的に探す」 [を参照してください](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender高度な検索](images/asr-defender365-advanced-hunting2.png)
@@ -78,8 +78,8 @@ AsrOfficeChildProcess ルールに焦点を当て、関連する実際のファ�
 
 [ASR ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
 
-[ASR ルールの展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[ASR ルール 展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR ルールの展開フェーズ 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+[ASR ルール 展開フェーズ 2 - テスト](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR ルールの展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
+[ASR ルール 展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)

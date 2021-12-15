@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: FAQ で質問に対する回答を見つけて、ドメイン (onmicrosoft ドメインと転送ドメイン) の詳細について説明します。
-  ms.openlocfilehash: c80026e5cabf814762f6f0f907793e1fa7eab901
-  ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+  ms.openlocfilehash: 58566191f9e432c21728d73a34a3ed73ef7819d0
+  ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/13/2021
-  ms.locfileid: "61426365"
+  ms.lasthandoff: 12/15/2021
+  ms.locfileid: "61530477"
 title: ドメインに関する FAQ
 summary: "\n\nこの記事では、Microsoft 365 のドメインに関してよく寄せられる質問にお答えします。\n\n質問の回答が見つからない場合は、コメントを残してお知らせください。ご質問を FAQ の一覧に追加します。\n"
 sections:
@@ -62,4 +62,4 @@ sections:
   - question: 非営利団体または教育機関のステータスを確認するにはどうすればよいですか?
     answer: "1. [管理センター](/admin)で [**セットアップ**] を選択してウィザードを開始します。 (最初に Office 365 にサインインしてください。) \n    \n2. 学校の管理者になるには、Microsoft  365 で [**管理者になる**] オプションを選択します。 \n    \n3. 自分のドメインの DNS ホストの Web サイトで、 TXT DNS レコードを追加するように求められます。 どうしてでしょうか? この理由は、DNS ホストへサインインしてドメイン用のレコードを追加することにより、ユーザーがドメイン名の所有者だということが Microsoft 365 で証明されるからです。\n    \n4. レコードを追加したら Microsoft 365 ポータルに戻り、レコードを追加したことを確認します。そうすると、Microsoft 365 で確認が行われます。\n    \n非営利団体で、Microsoft 365 を入手したいのですが。 [お客様の組織に資格があることを確認](https://www.microsoft.com/nonprofits/eligibility)してから、サービスにサインアップしてください。 \n  \n学校の管理者になる方法の詳細については、 [こちらのヘルプ記事をご覧ください](/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education\n)。\n"
   - question: ビジネス用の Web サイトを作成する方法
-    answer: "[!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb?autoplay=false]\n\nMicrosoft 365ビジネス用のパブリック Web サイトは含めりません。 1 つを設定するには、GoDaddy、Wix、WordPress など、Web ホスティング会社の使用を検討してください。\n 1. Web サイトを構築できる Web ホスティング プロバイダーを検索します。\n \n 2. ドメイン名が登録されているのと同じ会社で Web サイト ビルダーを選択するのが最も簡単な場合があります。\n \n 3. ビジネス の Web サイトを設計し、ビジネス ロゴ、ビジネス目的、テキスト、画像、リンクを必ず含める。\n \n 4. Web サイトを Microsoft 365 と統合するには、ビジネス メールを Web サイトに追加し、Microsoft Teams、SharePoint、その他のコラボレーション ツールへのリンクを追加できます。\n \n 5. Web サイトをドメイン名に接続し、&#39;メールにも使用Microsoft 365。"
+    answer: "短い <a href=\"https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb?autoplay=false\" target=\"_blank\">ビデオを見る: Web</a> ホスティング プロバイダーを使用してドメインの Web サイトを作成する方法について、ビジネス Web サイトを作成します。\n\nMicrosoft 365ビジネス用のパブリック Web サイトは含めりません。 1 つを設定するには、GoDaddy、Wix、WordPress など、Web ホスティング会社の使用を検討してください。\n 1. Web サイトを構築できる Web ホスティング プロバイダーを検索します。\n \n 2. ドメイン名が登録されているのと同じ会社で Web サイト ビルダーを選択するのが最も簡単な場合があります。\n \n 3. ビジネス の Web サイトを設計し、ビジネス ロゴ、ビジネス目的、テキスト、画像、リンクを必ず含める。\n \n 4. Web サイトを Microsoft 365 と統合するには、ビジネス メールを Web サイトに追加し、Microsoft Teams、SharePoint、その他のコラボレーション ツールへのリンクを追加できます。\n \n 5. Web サイトをドメイン名に接続し、&#39;メールにも使用Microsoft 365。"

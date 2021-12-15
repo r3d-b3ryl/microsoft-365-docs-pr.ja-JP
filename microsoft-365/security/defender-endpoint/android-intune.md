@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f08cf9ddc80e35d1c070fae5eef783496d38f208
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: babe21ec9026ac78849b86c8310b24a83bdf41c0
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164708"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531728"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開
 
@@ -257,11 +257,11 @@ Defender for Endpoint は、Intune 経由で管理対象デバイスのデバイ
 
     ![Microsoft Defender for Endpoint アプリを使用したモバイル デバイスのイメージ](images/MDE_new.png)
 
-4. この段階では、デバイスは Android 上の Defender for Endpoint に正常にオンボードされます。 [デバイス] ページに移動 [して](https://securitycenter.microsoft.com)、Microsoft Defender セキュリティ センターを **確認できます。**
+4. この段階では、デバイスは Android 上の Defender for Endpoint に正常にオンボードされます。 デバイス インベントリ ページに移動 [して、Microsoft 365 Defenderポータル](https://security.microsoft.com)でこれを **確認** できます。
 
     :::image type="content" alt-text="エンドポイント ポータル用 Microsoft Defender のイメージ。" source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
 - [Android 機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)

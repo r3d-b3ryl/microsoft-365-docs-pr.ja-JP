@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3b961990d7826a7e1d58586fcc5bf2e016fa5d37
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b09d1774ab35dbca9119deb98864d6c6f78051a9
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704303"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531437"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -42,24 +42,24 @@ ms.locfileid: "60704303"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `AccountObjectId` | string | アカウントの一意の識別子は、Azure AD |
-| `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
-| `OnPremSid` | string | アカウントのオンプレミスセキュリティ識別子 (SID) |
-| `CloudSid` | string | アカウントのクラウド セキュリティ識別子 |
-| `GivenName` | string | アカウント ユーザーの名前または名を指定する |
-| `Surname` | string | アカウント ユーザーの姓、ファミリ名、または姓 |
-| `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
-| `Department` | string | アカウント ユーザーが属する部署の名前 |
-| `JobTitle` | string | アカウント ユーザーの役職 |
-| `AccountName` | string | アカウントのユーザー名 |
-| `AccountDomain` | string | アカウントのドメイン |
-| `EmailAddress` | string | アカウントの SMTP アドレス |
-| `SipProxyAddress` | string | アカウントのボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) アドレス |
-| `City` | string | アカウント ユーザーが保存されている都市 |
-| `Country` | string | アカウント ユーザーが保存されている国/地域 |
-| `IsAccountEnabled` | ブール値 | アカウントが有効になっているかどうかを示します。 |
+| `AccountObjectId` | `string` | アカウントの一意の識別子は、Azure AD |
+| `AccountUpn` | `string` | アカウントのユーザー プリンシパル名 (UPN) |
+| `OnPremSid` | `string` | アカウントのオンプレミスセキュリティ識別子 (SID) |
+| `CloudSid` | `string` | アカウントのクラウド セキュリティ識別子 |
+| `GivenName` | `string` | アカウント ユーザーの名前または名を指定する |
+| `Surname` | `string` | アカウント ユーザーの姓、ファミリ名、または姓 |
+| `AccountDisplayName` | `string` | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
+| `Department` | `string` | アカウント ユーザーが属する部署の名前 |
+| `JobTitle` | `string` | アカウント ユーザーの役職 |
+| `AccountName` | `string` | アカウントのユーザー名 |
+| `AccountDomain` | `string` | アカウントのドメイン |
+| `EmailAddress` | `string` | アカウントの SMTP アドレス |
+| `SipProxyAddress` | `string` | アカウントのボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) アドレス |
+| `City` | `string` | アカウント ユーザーが保存されている都市 |
+| `Country` | `string` | アカウント ユーザーが保存されている国/地域 |
+| `IsAccountEnabled` | `boolean` | アカウントが有効になっているかどうかを示します。 |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3487ced09cfd0bbd3a25f8e8124f84a05368d290
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 43f44458cde7d466d1097034e7bcc9d0e3072745
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61035972"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530705"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -43,18 +43,18 @@ ms.locfileid: "61035972"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `DeviceId` | string | サービス内のデバイスの一意の識別子 |
-| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 11、Windows Windows 10、および 7 など、同じファミリ内Windows 10オペレーティング システムWindows示します。|
-| `Timestamp` | datetime | レコードが作成された日付と時刻 |
-| `ConfigurationId` | 文字列 | 特定の構成の一意の識別子 |
-| `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
-| `ConfigurationSubcategory` | string | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、文字列は特定の機能または機能を記述します。 |
-| `ConfigurationImpact` | string | 構成の評価が全体の構成スコア (1-10) に及ぼす影響 |
-| `IsCompliant` | ブール値 | 構成やポリシーが正しく構成されているかどうかを示します |
-| `IsApplicable` | ブール値 | 構成またはポリシーがデバイスに適用されるかどうかを示します。 |
-| `Context` | string | 構成またはポリシーに関するその他のコンテキスト情報 |
-| `IsExpectedUserImpact` | ブール値 | 構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。 |
+| `DeviceId` | `string` | サービス内のデバイスの一意の識別子 |
+| `DeviceName` | `string` | デバイスの完全修飾ドメイン名 (FQDN) |
+| `OSPlatform` | `string` | デバイスで実行されているオペレーティング システムのプラットフォーム。 11、Windows Windows 10、および 7 など、同じファミリ内Windows 10オペレーティング システムWindows示します。|
+| `Timestamp` | `datetime` | レコードが作成された日付と時刻 |
+| `ConfigurationId` | `string` | 特定の構成の一意の識別子 |
+| `ConfigurationCategory` | `string` | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
+| `ConfigurationSubcategory` | `string` | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、文字列は特定の機能または機能を記述します。 |
+| `ConfigurationImpact` | `string` | 構成が全体の構成スコアに与える影響の評価 (1-10) |
+| `IsCompliant` | `boolean` | 構成やポリシーが正しく構成されているかどうかを示します |
+| `IsApplicable` | `boolean` | 構成またはポリシーがデバイスに適用されるかどうかを示します。 |
+| `Context` | `string` | 構成またはポリシーに関するその他のコンテキスト情報 |
+| `IsExpectedUserImpact` | `boolean` | 構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。 |
 
 次のクエリ例を使用して、非準拠のウイルス対策構成を持つデバイスに関する情報と、関連する構成メタデータを表から返 `DeviceTvmSecureConfigurationAssessmentKB` します。
 

@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービス のパスワードリセット ツールを使用して、ユーザーが自分のパスワードをリセットできるポリシーを設定する方法について学習します。
-ms.openlocfilehash: 7a284e4b24fb21ff100e1be99998103026e320ca
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 486fd0b22c93d233897963a8295bf2048b01aa6c
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370262"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530213"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
@@ -57,7 +57,7 @@ ms.locfileid: "61370262"
 
 - **オンプレミスの Active Directory を使用** している場合、上記の 2 つの点は適用されません。 むしろ、これを設定できますが、この設定には有料サブスクリプションが **必要** Azure AD Premium。
 
-この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは?([アプリケーションのMicrosoft 365 管理センター](../admin-overview/admin-center-overview.md)
+この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは?([Microsoft 365 管理センター]の概要。/admin-overview/admin-center-overview.md)
 
 これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
 

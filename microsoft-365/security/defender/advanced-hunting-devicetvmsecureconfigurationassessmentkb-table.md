@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bf65634e38d7676eaef20386b3effa828aa46f4b
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 81f03a665a0c825388335c925cb908f3b931a918
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61035984"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531557"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -45,16 +45,16 @@ ms.locfileid: "61035984"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `ConfigurationId` | string | 特定の構成の一意の識別子 |
-| `ConfigurationImpact` | string | 構成が全体の構成スコアに与える影響の評価 (1-10) |
-| `ConfigurationName` | string | 構成の表示名 |
-| `ConfigurationDescription` | string | 構成の説明 |
-| `RiskDescription` | string | 関連するリスクの説明 |
-| `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|
-| `ConfigurationSubcategory` | string |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
-| `ConfigurationBenchmarks` | string | 同じ構成または類似した構成を推奨する業界ベンチマークの一覧 |
-| `Tags` | string | セキュリティ構成を識別または分類するために使用されるさまざまな属性を表すラベル |
-| `RemediationOptions` | string | 関連するリスクを軽減または対処するために推奨されるアクション |
+| `ConfigurationId` | `string` | 特定の構成の一意の識別子 |
+| `ConfigurationImpact` | `string` | 構成が全体の構成スコアに与える影響の評価 (1-10) |
+| `ConfigurationName` | `string` | 構成の表示名 |
+| `ConfigurationDescription` | `string` | 構成の説明 |
+| `RiskDescription` | `string` | 関連するリスクの説明 |
+| `ConfigurationCategory` | `string` | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|
+| `ConfigurationSubcategory` | `string` |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
+| `ConfigurationBenchmarks` | `string` | 同じ構成または類似した構成を推奨する業界ベンチマークの一覧 |
+| `Tags` | `string` | セキュリティ構成を識別または分類するために使用されるさまざまな属性を表すラベル |
+| `RemediationOptions` | `string` | 関連するリスクを軽減または対処するために推奨されるアクション |
 
 次のクエリ例を試して、関連する構成メタデータと、非準拠のウイルス対策構成を持つデバイスに関する情報を表から返 `DeviceTvmSecureConfigurationAssessment` します。
 

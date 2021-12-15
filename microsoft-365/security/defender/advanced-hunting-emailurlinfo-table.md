@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51182f87eae4a26153b08c934c3f77e0164f4b8b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d0c9a8f1456aaeedbc8d296a1f738d0b2c57a156
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702063"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531545"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -39,13 +39,13 @@ ms.locfileid: "60702063"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | string | ユーザーが生成する電子メールの一意Microsoft 365 |
-| `Url` | 文字列型 | メールの件名、本文、または添付ファイル内の完全な URL |
-| `UrlDomain` | string | URL のドメイン名またはホスト名 |
-| `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
+| `Timestamp` | `datetime` | イベントが記録された日付と時刻 |
+| `NetworkMessageId` | `string` | ユーザーが生成する電子メールの一意Microsoft 365 |
+| `Url` | `string` | メールの件名、本文、または添付ファイル内の完全な URL |
+| `UrlDomain` | `string` | URL のドメイン名またはホスト名 |
+| `ReportId` | `long` | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

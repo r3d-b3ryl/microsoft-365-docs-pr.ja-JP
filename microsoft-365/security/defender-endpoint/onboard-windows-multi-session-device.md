@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1d8f11d6d3dc3301444b7e188c220683ac7015d2
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 71c1768a3cb5cc96f68818def7e9a582d5e258ac
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168080"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530201"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Azure 仮想Windowsマルチセッション デバイスのオンボード
 
@@ -32,7 +32,7 @@ ms.locfileid: "61168080"
 
 Microsoft Defender for Endpoint では、VDI セッションと Azure Virtual Desktop セッションの両方の監視がサポートされています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Azure Virtual Desktop セッションを実装する必要がある場合があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 非永続的な [VDI の考慮事項について理解してください](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 [Azure Virtual Desktop には](/azure/virtual-desktop/overview)非永続化オプションは用意されませんが、新しいホストのプロビジョニングやマシンの再展開に使用できるゴールデン Windows イメージを使用する方法が提供されます。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
 
@@ -109,7 +109,7 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 詳細については、「Configuration Manager を使用[したオンボード Windowsデバイス」を参照してください](configure-endpoints-sccm.md)。
 
 > [!WARNING]
-> 攻撃表面縮小ルールを[](attack-surface-reduction-rules.md)使用する場合は、ルール["PSExec](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生するプロセスの作成をブロックする" は使用できません。このルールは、Microsoft Endpoint Configuration Manager による管理と互換性がありません。 このルールは、Configuration Manager クライアントが正しく機能するために使用する WMI コマンドをブロックします。
+> 攻撃表面縮小ルールリファレンス[](attack-surface-reduction-rules-reference.md)を使用する場合は、Microsoft Endpoint Configuration Manager を通じて管理と互換性がないので[、「PSExec](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生するプロセス作成をブロックする」というルールは使用できません。 このルールは、Configuration Manager クライアントが正しく機能するために使用する WMI コマンドをブロックします。
 
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。

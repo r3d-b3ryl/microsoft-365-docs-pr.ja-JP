@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fbd57bb648c2d1d4c1ed08ae4abaa12e834cea04
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 093b8235c1b6506c7df1c8d21c52e40129c9d5cd
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171559"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530235"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
 
@@ -51,7 +51,7 @@ ms.locfileid: "61171559"
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>手順 1: Microsoft Defender for Endpoint オンボーディング パッケージを取得する
 
-1. [[Microsoft Defender セキュリティ センター]](https://securitycenter.microsoft.com)で、[オンボーディング]**設定 >移動します**。
+1. [[Microsoft 365 Defender]](https://security.microsoft.com)で、[オンボーディング]**設定 >に移動します**。
 
 2. オペレーティング システムとして macOS を、展開方法として [モバイル デバイスMicrosoft Intuneを選択します。
 
@@ -61,7 +61,7 @@ ms.locfileid: "61171559"
 
 4. 抽出 `WindowsDefenderATPOnboardingPackage.zip` .
 
-5. ファイルを好みの場所にコピーします。 たとえば、`C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist` などです。
+5. ファイルを好みの場所にコピーします。 たとえば、「 `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist` 」のように入力します。
 
 ## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>手順 2: オンボード パッケージを使用して Jamf Pro構成プロファイルを作成する
 

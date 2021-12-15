@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.date: 12/06/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 362414da07fbc71520c390c8dab45fc85b7a0872
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 848002d94d36d00e90942df5424b111f6630288f
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426449"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530525"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -36,7 +36,7 @@ ms.locfileid: "61426449"
 
 [攻撃表面の縮小ルール](attack-surface-reduction.md) (ASR ルール) は、マルウェアが頻繁にデバイスやネットワークを侵害するアクションを防ぐのに役立ちます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 複数のバージョンの攻撃表面Windows機能
 
@@ -127,7 +127,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 ## <a name="mem"></a>MEM
 
-カスタム ASR ルールMicrosoft エンドポイント マネージャー(MEM) OMA-URI を使用して構成できます。 次の手順では、この例で「悪用された脆弱な署名済みドライバーの悪用を [ブロックする」](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) というルールを使用します。
+カスタム ASR ルールMicrosoft エンドポイント マネージャー(MEM) OMA-URI を使用して構成できます。 次の手順では、この例で「悪用された脆弱な署名済みドライバーの悪用を [ブロックする」](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) というルールを使用します。
 
 1. 新しいMicrosoft エンドポイント マネージャー (MEM) 管理センターを開きます。 [ホーム] **メニューの [** デバイス]  **をクリックし**、[ **構成** プロファイル] を選択し、[プロファイルの作成] **をクリックします**。
 
@@ -158,7 +158,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
    - [ **名前]** に、ルールの名前を入力します。
    - [ **説明]** に簡単な説明を入力します。
-   - **OMA-URI で**、追加するルールの特定の OMA-URI リンクを入力または貼り付けます。 このルール例で使用する OMA-URI については、この記事の前の MEM セクションを参照してください。 攻撃表面の縮小ルール GUIDS[](attack-surface-reduction-rules.md#per-rule-descriptions)については、トピック「攻撃表面縮小ルール」の「ルールごとの説明」を参照してください。
+   - **OMA-URI で**、追加するルールの特定の OMA-URI リンクを入力または貼り付けます。 このルール例で使用する OMA-URI については、この記事の前の MEM セクションを参照してください。 攻撃表面の縮小ルール GUIDS[](attack-surface-reduction-rules-reference.md#per-rule-descriptions)については、トピック「攻撃表面縮小ルール」の「ルールごとの説明」を参照してください。
    - [ **データ型] で**、[文字列] を **選択します**。
    - [ **値]** で、GUID 値、記号、およびスペースを含む State 値 \= _(GUID=StateValue) を入力または貼り付けます_。 ここで、
      
@@ -214,7 +214,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 各ルールのモードを個別に有効にして設定するには [、./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) 構成サービス プロバイダー (CSP) を使用します。
 
-攻撃表面の縮小ルールに GUID 値を使用して参照 [するサンプルを次に示します](attack-surface-reduction-rules.md)。
+次に示すのは、攻撃表面の縮小ルールリファレンスに GUID 値を使用した参照 [のサンプルです](attack-surface-reduction-rules-reference.md)。
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules`
 
@@ -290,7 +290,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 1. **[powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
 
-2. 次のいずれかのコマンドレットを入力します。 (ルール ID [など、詳細については、「](attack-surface-reduction-rules.md) 攻撃表面の縮小ルール」を参照してください)。
+2. 次のいずれかのコマンドレットを入力します。 (ルール ID [など、詳細については、「攻撃](attack-surface-reduction-rules-reference.md) 表面の縮小ルールリファレンス」を参照してください)。
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
@@ -348,6 +348,6 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 ## <a name="related-articles"></a>関連記事
 
-- [攻撃面の減少ルール](attack-surface-reduction-rules.md)
+- [攻撃表面の縮小ルールのリファレンス](attack-surface-reduction-rules-reference.md)
 - [攻撃表面の縮小を評価する](evaluate-attack-surface-reduction.md)
 - [攻撃面の減少の FAQ](attack-surface-reduction.md)

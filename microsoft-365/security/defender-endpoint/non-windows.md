@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9348e0de384850a24a9173c46ab331466f26f912
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 73d814c36db44ad22d0a998c6539472095feb7e3
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163472"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530230"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Windows 以外のプラットフォームの Microsoft Defender for Endpoint
 
@@ -51,6 +51,7 @@ Microsoft Defender for Endpoint on macOS では、最新リリースバージョ
 >
 > - データ損失防止
 > - ライブ応答
+> - エンドポイント向け Microsoft Defender のセキュリティ管理
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -58,18 +59,13 @@ Microsoft Defender for Endpoint on Linux では、Linux サーバーの予防 (A
 
 開始方法の詳細については、Microsoft Defender for Endpoint on Linux のドキュメントを参照 [してください](microsoft-defender-endpoint-linux.md)。
 
-> [!NOTE]
-> Linux エンドポイントでは、現在、次の機能はサポートされていません。
->
-> - データ損失防止
-> - ライブ応答
 
 > [!NOTE]
 > Linux エンドポイントでは、現在、次の機能はサポートされていません。
 >
 > - データ損失防止
 > - ライブ応答
-> - SIEM
+> - エンドポイント向け Microsoft Defender のセキュリティ管理
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Android 用 Microsoft Defender for Endpoint
 

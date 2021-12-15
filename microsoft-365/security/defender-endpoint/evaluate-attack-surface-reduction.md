@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6ed8100db6bb5eee14276ef99c959d2ee29a0879
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a7d91adf6e511c9eada8a45f166442e279e6d55b
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165356"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531353"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>攻撃面の減少ルールを評価する
 
@@ -62,7 +62,7 @@ ms.locfileid: "61165356"
 Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
 ```
 
-攻撃 `<rule ID>` 表面の [縮小ルールの GUID 値はここで指定します](attack-surface-reduction-rules.md)。
+攻撃 `<rule ID>` 表面の [縮小ルールの GUID 値はここで指定します](attack-surface-reduction-rules-reference.md)。
 
 監査モードで追加された攻撃表面の縮小ルールを有効にするには、次の PowerShell コマンドレットを使用します。
 

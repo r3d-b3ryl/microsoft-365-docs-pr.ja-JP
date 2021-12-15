@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: セキュリティ コンプライアンス センターで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする&説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee45db291cef56784f254ea1af481d873d2810ca
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: a091608f7741b279b06a6289fb97b521976fc9ea
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914574"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531887"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>カスタムの機密情報の種類を使用する前に
 
@@ -58,20 +58,31 @@ ms.locfileid: "60914574"
 完全に定義した新しい機密情報の種類を作成するには、次の手順を実行します。 
 
 1. コンプライアンス センターで、[データ分類] [機密情報の種類] \> **に移動し、[** 機密情報の **種類の作成] を選択します**。
+
 2. **[名前]** および **[説明]** の値を入力し、**[次へ]** を選択します。
+
 3. **[パターンの作成]** を選択します。 新しい機密情報の種類を定義するときに、それぞれ異なる要素と信頼度レベルを持つ複数のパターンを作成できます。
+
 4. パターンの既定の信頼度レベルを選択します。 値は、**[低い信頼度]**、**[中程度の信頼度]**、および **[高い信頼度]** です。
+
 5. **[主要要素]** を選択して定義します。 主要要素は、オプションの検証を使用した **[正規表現]**、**[キーワード リスト]**、**[キーワード辞書]**、または事前構成の **[関数]** のいずれかです。 DLP 関数の詳細については、「[DLP 関数で探索する内容](what-the-dlp-functions-look-for.md)」を参照してください。 日付とチェックサム検証ツールの詳細については、「正規表現検証ツールの詳細 [」を参照してください](#more-information-on-regular-expression-validators)。
+
 6. **[文字の近接度]** の値を入力します。
+
 7. (省略可能) サポート要素がある場合は追加します。 サポート要素は、オプションの検証、キーワード リスト、キーワード辞書、または事前定義された関数のいずれかを使用する正規表現です。 サポート要素は、独自の **Character 近接構成を持つ場合** があります。 
+
 8. (省略可能) 使用可能なチェックのリストから [**追加チェック**](#more-information-on-additional-checks)を追加します。
+
 9. **[作成]** を選択します。
+
 10. **[次へ]** を選択します。
+
 11. この機密情報の種類に対して、**推奨される信頼度レベル** を選択します。
+
 12. 設定を確認し、**[送信]** を選択します。
 
-> [!IMPORTANT]
-> Microsoft 365 では、検索クローラーを使用して、SharePoint Online および OneDrive for Business のサイトの機密情報を特定して分類します。 既存のコンテンツで新しいカスタムの機密情報の種類を特定するには、そのコンテンツを再クロールする必要があります。 コンテンツは、スケジュールに基づいてクロールされますが、サイト コレクション、リスト、またはライブラリのコンテンツを手動で再クロールすることができます。 詳細については、「[サイト、ライブラリ、またはリストのクロールおよび再インデックスの手動要求](/sharepoint/crawl-site-content)」を参照してください。
+    > [!IMPORTANT]
+    > Microsoft 365 では、検索クローラーを使用して、SharePoint Online および OneDrive for Business のサイトの機密情報を特定して分類します。 既存のコンテンツで新しいカスタムの機密情報の種類を特定するには、そのコンテンツを再クロールする必要があります。 コンテンツは、スケジュールに基づいてクロールされますが、サイト コレクション、リスト、またはライブラリのコンテンツを手動で再クロールすることができます。 詳細については、「[サイト、ライブラリ、またはリストのクロールおよび再インデックスの手動要求](/sharepoint/crawl-site-content)」を参照してください。
 
 13. **[データの分類]** ページに、すべての機密情報の種類が一覧表示されます。 **[更新]** を選択し、閲覧または検索ツールを使用して、作成した機密情報の種類を検索します。
 
@@ -80,13 +91,34 @@ ms.locfileid: "60914574"
 リスト内の任意の機密情報の種類をテストできます。 ポリシーで使用する前に、作成するすべての機密情報の種類をテストすることを推奨します。
 
 1. Word 文書のように、2 つのファイルを準備します。 機密情報の種類で指定した要素と一致するコンテンツと一致しないコンテンツ。
+
 2. コンプライアンス センターで、**[データの分類]** \> **[機密情報の種類]** の順に移動し、リストから機密情報の種類を選択して詳細ウィンドウを開き、**[テスト]** を選択します。
+
 3. ファイルをアップロードし、**[テスト]** を選択します。
+
 4. **[結果と一致]** ページで、結果を確認して **[完了]** を選択します。
+
+## <a name="custom-sensitive-information-types-limits"></a>カスタムの機密情報の種類の制限
+
+高パフォーマンスと低遅延を確保するために、カスタムの SIT 構成には制限があります。
+
+|極限|値|
+|--------|--------|
+|コンプライアンス センターを通じて作成されたカスタムの ST の最大数| 500 |
+|正規表現の最大長| 1024 文字|
+|キーワード リスト内の特定の用語の最大長| 50 文字|
+|キーワード リスト内の用語の最大数| 2048|
+|機密情報の種類ごとの個別の正規表現の最大数| 20|
+|キーワード 辞書の最大サイズ (圧縮後)| 1 MB (約 1,000,000 文字)|
+|テナント内のキーワード 辞書ベースの SIT の最大数|50 |
+
+> [!NOTE] 
+> ビジネスで 500 を超えるカスタム SIT を作成する必要がある場合は、サポート チケットを引き上げてください。
 
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>コンプライアンス センターでカスタムの機密情報の種類を変更する
 
 1. コンプライアンス センターで、**[データの分類]** \> **[機密情報の種類]** の順に移動し、変更する機密情報の種類をリストから選択して **[編集]** を選択します。
+
 2. 固有の重要要素およびサポート要素、信頼度レベル、文字の近接度、[**追加チェック**](#more-information-on-additional-checks)で、その他のパターンを追加、もしくは既存のパターンの編集と削除を行うことができます。
 
 ## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>コンプライアンス センターでカスタムの機密情報の種類を削除する 
@@ -98,6 +130,7 @@ ms.locfileid: "60914574"
 > カスタムの機密情報の種類を削除する前に、その機密情報の種類を参照している DLP ポリシーまたは Exchange メール フロー ルール (別名: トランスポート ルール) がないことを確認してください。
 
 1. コンプライアンス センターで、**[データの分類]** \> **[機密情報の種類]** の順に移動し、削除したいリストから機密情報の種類を選択します。
+
 2. 開くフライアウトで、**[削除]** を選択します。
 
 ## <a name="copy-and-modify-a-sensitive-information-type"></a>機密情報の種類をコピーおよび変更する
@@ -105,18 +138,31 @@ ms.locfileid: "60914574"
 既存の機密情報の種類に基づいて新しい機密情報の種類を作成するには、次の手順を実行します。 
 
 1. コンプライアンス センターで、**[データの分類]** \> **[機密情報の種類]** の順に移動し、コピーする機密情報の種類を選択します。
+
 2. フライアウトで、**[コピー]** を選択します。
+
 3. 機密情報の種類のリストから **[更新]** を選択し、作成したコピーを参照または検索します。 部分的な文字列の検索が機能するため、`copy` だけを検索すると、名前に `copy` という単語が含まれるすべての機密情報の種類が返されます。 
+
 4. **[名前]** および **[説明]** の値を入力し、**[次へ]** を選択します。
+
 5. 機密情報の種類のコピーを選択し、**[編集]** を選択します。 
+
 6. 新しい機密情報の種類に新しい **[名前]** および **[説明]** を指定します。
+
 7. 既存のパターンを編集または削除し、新しいパターンを追加できます。 新しいパターンの既定の信頼度レベルを選択します。 値は、**[低い信頼度]**、**[中程度の信頼度]**、および **[高い信頼度]** です。
+
 8. **[主要要素]** を選択して定義します。 主要要素は、**[正規表現]**、**[キーワード リスト]**、**[キーワード辞書]**、または事前構成の **[関数]** のいずれかです。 「[DLP 関数の検索対象](what-the-dlp-functions-look-for.md)」を参照してください。
+
 9. **[文字の近接度]** の値を入力します。
+
 10. (省略可能) **[サポート要素]** または任意の [**[追加チェック]**](#more-information-on-additional-checks)がある場合は、それらを追加します。 必要に応じて、**[サポート要素]** をグループ化できます。
+
 11. **[作成]** を選択します。
+
 12. **[次へ]** を選択します。
+
 13. この機密情報の種類に対して、**推奨される信頼度レベル** を選択します。
+
 14. 設定を確認し、**[送信]** を選択します。
 
 > [!NOTE]
@@ -133,7 +179,7 @@ ms.locfileid: "60914574"
 
 PowerShell および Exact Data Match の機能を使用して、カスタムの機密情報の種類を作成することもできます。 これらの方法の詳細については、次を参照してください。
 - [セキュリティ/コンプライアンス センター PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [正確なデータ一致に基づく機密情報の種類について説明します。](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 ## <a name="more-information-on-regular-expression-validators"></a>正規表現検証ツールの詳細
 
@@ -141,7 +187,14 @@ PowerShell および Exact Data Match の機能を使用して、カスタムの
 
 正規表現で数字にチェックサムを実行する必要がある場合は、チェックサム検証ツール *を使用できます*。 たとえば、最後の数字が mod 9 計算を使用して検証されるチェックサム桁である 8 桁のライセンス番号に対して SIT を作成する必要があるとします。 チェックサム アルゴリズムは次のように設定しました。
 
-Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * Weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
+```console
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8
+Mod value = Sum % 9
+If Mod value == digit 8
+    Account number is valid
+If Mod value != digit 8
+    Account number is invalid
+```
 
 1. 次の正規表現を使用してプライマリ要素を定義します。
 
@@ -150,12 +203,13 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
    ```
 
 2. 次に、チェックサム検証ツールを追加します。
+
 3. 重み値をコンマで区切って追加し、チェック桁の位置と Mod 値を追加します。 Modulo 操作の詳細については、「Modulo 操作 [」を参照してください](https://en.wikipedia.org/wiki/Modulo_operation)。
 
-> [!NOTE]
-> チェック桁がチェックサム計算の一部ではない場合は、チェック桁の重みとして 0 を使用します。 たとえば、上記の場合、チェック桁を使用してチェック桁を計算しない場合、重み 8 は 0 に等しくなります。  Modulo_operation)。
+   > [!NOTE]
+   > チェック桁がチェックサム計算の一部ではない場合は、チェック桁の重みとして 0 を使用します。 たとえば、上記の場合、チェック桁を使用してチェック桁を計算しない場合、重み 8 は 0 に等しくなります。  Modulo_operation)。
 
-![構成済みのチェックサム検証ツールのスクリーンショット。](../media/checksum-validator.png)
+   :::image type="content" alt-text="構成済みのチェックサム検証ツールのスクリーンショット。" source="../media/checksum-validator.png" lightbox="../media/checksum-validator.png":::
 
 ### <a name="date-validator"></a>日付検証
 
@@ -168,9 +222,10 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
    ```
 
 2. 次に、日付検証機能を追加します。
+
 3. 日付形式と開始オフセットを選択します。 日付文字列は最初の 6 桁の数字で、オフセットは `0` .
 
-![構成済みの日付検証ツールのスクリーンショット。](../media/date-validator.png)
+   :::image type="content" alt-text="構成済みの日付検証ツールのスクリーンショット。" source="../media/date-validator.png" lightbox="../media/date-validator.png":::
 
 ### <a name="functional-processors-as-validators"></a>バリデーターとしての機能プロセッサ
 

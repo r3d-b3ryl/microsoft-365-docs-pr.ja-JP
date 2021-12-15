@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4df4b12d6b82a4738653485b7c32f954f26dccac
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 5afa98c4455387be673186854528dcd776e151f2
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122503"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531851"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -44,49 +44,49 @@ ms.locfileid: "61122503"
 
 |列名|データ型|説明|
 |---|---|---|
-|`Timestamp`|datetime|レコードが作成された日付と時刻|
-|`Application`|文字列|記録されたアクションを実行したアプリケーション|
-|`ApplicationId`|string|アプリケーションの一意の識別子|
-|`LogonType`|string|ログオン セッションの種類、対話型、リモート 対話型 (RDP)、ネットワーク、バッチ、およびサービス|
-|`ErrorCode`|int|サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。|
-|`CorrelationId`|string|サインイン イベントの一意の識別子|
-|`SessionId`|string|訪問またはセッション中に Web サイトのサーバーによってユーザーに割り当てられた一意の番号|
-|`AccountDisplayName`|string|アドレス帳に表示されるアカウント ユーザーの名前。 通常、特定の名前または名、ミドル イニシャル、姓または姓の組み合わせ。|
-|`AccountObjectId`|string|アカウントの一意の識別子は、Azure AD|
-|`AccountUpn`|string|アカウントのユーザー プリンシパル名 (UPN)|
-|`IsExternalUser`|int|サインインしたユーザーが外部かどうかを示します。 指定できる値: -1 (設定されていない)、0 (外部ではない)、1 (外部)。|
-|`IsGuestUser`|ブール値|サインインしたユーザーがテナントのゲストかどうかを示します。|
-|`AlternateSignInName`|string|ユーザーがユーザーにサインインするオンプレミスのユーザー プリンシパル名 (UPN) Azure AD|
-|`LastPasswordChangeTimestamp`|日付型|最後にサインインしたユーザーがパスワードを変更した日時|
-|`ResourceDisplayName`|string|アクセスされたリソースの表示名|
-|`ResourceId`|string|アクセスされるリソースの一意の識別子|
-|`ResourceTenantId`|string|アクセスされるリソースのテナントの一意の識別子|
-|`DeviceName`|string|コンピューターの完全修飾ドメイン名 (FQDN)|
-|`AadDeviceId`|string|ネットワーク内のデバイスの一意Azure AD|
-|`OSPlatform`|string|コンピューターで実行されているオペレーティング システムのプラットフォームです。 11、Windows Windows 10、および 7 など、同じファミリ内Windows 10オペレーティング システムWindows示します。|
-|`DeviceTrustType`|string|サインインしたデバイスの信頼の種類を示します。 管理対象デバイスのシナリオの場合のみ。 使用できる値は、Workplace、AzureAd、および ServerAd です。|
-|`IsManaged`|int|サインインを開始したデバイスが管理対象デバイス (1) かどうか (0) を示します。|
-|`IsCompliant`|int|サインインを開始したデバイスが準拠 (1) か非準拠 (0) かを示します。|
-|`AuthenticationProcessingDetails`|string|認証プロセッサの詳細|
-|`AuthenticationRequirement`|string|サインインに必要な認証の種類。 指定できる値: multiFactorAuthentication (MFA が必要でした) と singleFactorAuthentication (MFA は必要ありません)。|
-|`TokenIssuerType`|int|トークン発行者が (0) Azure Active Directory Active Directory フェデレーション サービス (1) かどうかを示します。|
-|`RiskLevelAggregated`|int|サインイン中の集計されたリスク レベル。 指定できる値: 0 (集計リスク レベルが設定されていない)、1 (なし)、10 (低)、50 (中程度)、または 100 (高) です。|
-|`RiskDetails`|int|サインインしたユーザーの危険な状態の詳細|
-|`RiskState`|int|危険なユーザー状態を示します。 指定できる値は、0 (なし)、1 (安全確認済み)、2 (修復済み)、3 (却下)、4 (危険にさらされている)、または 5 (確認済み侵害) です。|
-|`UserAgent`|string|Web ブラウザーまたは他のクライアント アプリケーションからのユーザー エージェント情報|
-|`ClientAppUsed`|string|使用するクライアント アプリを示します。|
-|`Browser`|string|サインインに使用するブラウザーのバージョンの詳細|
-|`ConditionalAccessPolicies`|string|サインイン イベントに適用される条件付きアクセス ポリシーの詳細|
-|`ConditionalAccessStatus`|int|サインインに適用される条件付きアクセス ポリシーの状態。 指定できる値は、0 (適用されるポリシー)、1 (ポリシーの適用が失敗しました)、または 2 (ポリシーが適用されない) です。|
-|`IPAddress`|string|エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス|
-|`Country`|string|クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード|
-|`State`|string|使用可能な場合は、サインインが発生した状態|
-|`City`|string|アカウント ユーザーが保存されている都市|
-|`Latitude`|string|サインイン場所の北から南の座標|
-|`Longitude`|string|サインイン場所の東から西への座標|
-|`NetworkLocationDetails`|string|サインイン イベントの認証プロセッサのネットワークの場所の詳細|
-|`RequestId`|string|要求の一意の識別子|
-|`ReportId`|string|イベントの一意識別子|
+|`Timestamp`|`datetime`|レコードが作成された日付と時刻|
+|`Application`|`string`|記録されたアクションを実行したアプリケーション|
+|`ApplicationId`|`string`|アプリケーションの一意の識別子|
+|`LogonType`|`string`|ログオン セッションの種類、対話型、リモート 対話型 (RDP)、ネットワーク、バッチ、およびサービス|
+|`ErrorCode`|`int`|サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。|
+|`CorrelationId`|`string`|サインイン イベントの一意の識別子|
+|`SessionId`|`string`|訪問またはセッション中に Web サイトのサーバーによってユーザーに割り当てられた一意の番号|
+|`AccountDisplayName`|`string`|アドレス帳に表示されるアカウント ユーザーの名前。 通常、特定の名前または名、ミドル イニシャル、姓または姓の組み合わせ。|
+|`AccountObjectId`|`string`|アカウントの一意の識別子は、Azure AD|
+|`AccountUpn`|`string`|アカウントのユーザー プリンシパル名 (UPN)|
+|`IsExternalUser`|`int`|サインインしたユーザーが外部かどうかを示します。 指定できる値: -1 (設定されていない)、0 (外部ではない)、1 (外部)。|
+|`IsGuestUser`|`boolean`|サインインしたユーザーがテナントのゲストかどうかを示します。|
+|`AlternateSignInName`|`string`|ユーザーがユーザーにサインインするオンプレミスのユーザー プリンシパル名 (UPN) Azure AD|
+|`LastPasswordChangeTimestamp`|`datetime`|最後にサインインしたユーザーがパスワードを変更した日時|
+|`ResourceDisplayName`|`string`|アクセスされたリソースの表示名|
+|`ResourceId`|`string`|アクセスされるリソースの一意の識別子|
+|`ResourceTenantId`|`string`|アクセスされるリソースのテナントの一意の識別子|
+|`DeviceName`|`string`|コンピューターの完全修飾ドメイン名 (FQDN)|
+|`AadDeviceId`|`string`|ネットワーク内のデバイスの一意Azure AD|
+|`OSPlatform`|`string`|コンピューターで実行されているオペレーティング システムのプラットフォームです。 11、Windows Windows 10、および 7 など、同じファミリ内Windows 10オペレーティング システムWindows示します。|
+|`DeviceTrustType`|`string`|サインインしたデバイスの信頼の種類を示します。 管理対象デバイスのシナリオの場合のみ。 使用できる値は、Workplace、AzureAd、および ServerAd です。|
+|`IsManaged`|`int`|サインインを開始したデバイスが管理対象デバイス (1) かどうか (0) を示します。|
+|`IsCompliant`|`int`|サインインを開始したデバイスが準拠 (1) か非準拠 (0) かを示します。|
+|`AuthenticationProcessingDetails`|`string`|認証プロセッサの詳細|
+|`AuthenticationRequirement`|`string`|サインインに必要な認証の種類。 指定できる値: multiFactorAuthentication (MFA が必要でした) と singleFactorAuthentication (MFA は必要ありません)。|
+|`TokenIssuerType`|`int`|トークン発行者が (0) Azure Active Directory Active Directory フェデレーション サービス (1) かどうかを示します。|
+|`RiskLevelAggregated`|`int`|サインイン中の集計されたリスク レベル。 指定できる値: 0 (集計リスク レベルが設定されていない)、1 (なし)、10 (低)、50 (中程度)、または 100 (高) です。|
+|`RiskDetails`|`int`|サインインしたユーザーの危険な状態の詳細|
+|`RiskState`|`int`|危険なユーザー状態を示します。 指定できる値は、0 (なし)、1 (安全確認済み)、2 (修復済み)、3 (却下)、4 (危険にさらされている)、または 5 (確認済み侵害) です。|
+|`UserAgent`|`string`|Web ブラウザーまたは他のクライアント アプリケーションからのユーザー エージェント情報|
+|`ClientAppUsed`|`string`|使用するクライアント アプリを示します。|
+|`Browser`|`string`|サインインに使用するブラウザーのバージョンの詳細|
+|`ConditionalAccessPolicies`|`string`|サインイン イベントに適用される条件付きアクセス ポリシーの詳細|
+|`ConditionalAccessStatus`|`int`|サインインに適用される条件付きアクセス ポリシーの状態。 指定できる値は、0 (適用されるポリシー)、1 (ポリシーの適用が失敗しました)、または 2 (ポリシーが適用されない) です。|
+|`IPAddress`|`string`|エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス|
+|`Country`|`string`|クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード|
+|`State`|`string`|使用可能な場合は、サインインが発生した状態|
+|`City`|`string`|アカウント ユーザーが保存されている都市|
+|`Latitude`|`string`|サインイン場所の北から南の座標|
+|`Longitude`|`string`|サインイン場所の東から西への座標|
+|`NetworkLocationDetails`|`string`|サインイン イベントの認証プロセッサのネットワークの場所の詳細|
+|`RequestId`|`string`|要求の一意の識別子|
+|`ReportId`|`string`|イベントの一意識別子|
 
 ## <a name="related-articles"></a>関連記事
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft ドキュメント ライブラリのドキュメント ライブラリに発行SharePointを適用する方法について説明SharePoint Syntex。
-ms.openlocfilehash: f8e6cc20b010df5deafe478bbd718946f328a6af
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 6f5cee5bc5896ebe5e9a26bef73103fb94bf3d1d
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245731"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531754"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexのドキュメント理解モデルを適用する
 
@@ -72,6 +72,24 @@ ms.locfileid: "60245731"
 モデルをドキュメントライブラリに適用したら、サイトにドキュメントをアップロードし、結果を確認できます。
 
 モデルは、モデルに関連付けられたコンテンツ タイプを持つファイルとフォルダーを識別し、ビューに一覧表示します。 モデルに抽出器がある場合、ビューには、各ファイルまたはフォルダーから抽出するデータの列が表示されます。
+
+## <a name="sync-changes-to-one-or-more-libraries"></a>1 つ以上のライブラリへの変更を同期する
+
+モデルを複数のドキュメント ライブラリに発行し、抽出プログラムの追加や削除など、モデルを更新する場合は、モデルが適用されているすべてのライブラリに更新プログラムをプッシュする必要があります。
+
+すべての適用されたライブラリに対する変更を同期するには、次の方法を実行します。
+
+1. モデル ホーム ページの [モデルの適用場所] セクション **で** 、[すべて同期] **を選択します**。
+
+    ![[モデルを適用する場所] セクションと [すべての同期] ボタンが強調表示された状態を示すスクリーンショット。](../media/content-understanding/sync-all-button.png) 
+
+1 つのライブラリまたは選択したライブラリにのみ変更を同期するには、次の方法を実行します。
+
+1. モデル ホーム ページの[モデルの適用先] セクションで、変更を適用するライブラリまたはライブラリを選択します。
+
+2. [**同期**] を選択します。
+
+    ![[モデルの適用場所] セクションと [同期] ボタンが強調表示された状態を示すスクリーンショット。](../media/content-understanding/sync-button.png) 
 
 ## <a name="apply-the-model-to-files-and-folder-content-already-in-the-document-library"></a>ドキュメント ライブラリ内のファイルおよびフォルダー コンテンツにモデルを適用する
 

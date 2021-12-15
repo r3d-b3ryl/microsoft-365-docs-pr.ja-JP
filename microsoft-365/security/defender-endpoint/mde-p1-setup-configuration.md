@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8955c3d28b8d29a23af1def673fc3bdcfbcc8c71
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 73323e58cbb30243b0e90bdd1f45989d238d5c37
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370382"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530957"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 のセットアップと構成
 
@@ -65,7 +65,7 @@ Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセ
 |:---|:---|
 | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Microsoft エンドポイント マネージャー) | Intune を使用してクラウド ネイティブ環境のエンドポイントを管理する |
 | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)および Configuration [Manager](/mem/configmgr/core/understand/introduction) (このページにMicrosoft エンドポイント マネージャー) | Intune と Configuration Manager を使用して、オンプレミス環境とクラウド環境にまたがるエンドポイントとワークロードを管理する |
-| [構成マネージャー](/mem/configmgr/core/understand/introduction) | Configuration Manager を使用して、Defender for Endpoint のクラウドベースの機能を使用してオンプレミスのエンドポイントを保護する |
+| [Configuration Manager](/mem/configmgr/core/understand/introduction) | Configuration Manager を使用して、Defender for Endpoint のクラウドベースの機能を使用してオンプレミスのエンドポイントを保護する |
 | ポータルからダウンロードしたローカル Microsoft 365 Defender スクリプト | エンドポイントでローカル スクリプトを使用してパイロットを実行するか、少数のデバイスをオンボードする |
 
 展開オプションの詳細については、「Defender for Endpoint の展開 [を計画する」を参照してください](deployment-strategy.md)。 次のポスターをダウンロードします。 
@@ -100,7 +100,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 次の表では、組織内の Defender for Endpoint で考慮する重要な役割について説明します。 <br/><br/>
 
-| 役割 | 説明 |
+| Role | 説明 |
 |:---|:---|
 | グローバル管理者 (グローバル管理者とも呼ばれます) <br/><br/> *ベスト プラクティスとして、グローバル管理者の数を制限します。* | グローバル管理者は、あらゆる種類のタスクを実行できます。 既定では、Microsoft Defender for Endpoint Plan 1 Microsoft 365または Microsoft Defender の会社にサインアップしたユーザーは、グローバル管理者です。 <br/><br/> グローバル管理者は、次のようなすべてのポータルMicrosoft 365設定にアクセス/変更できます。 <br/>- Microsoft 365 管理センター ( [https://admin.microsoft.com](https://admin.microsoft.com) ) <br/>- Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) ) <br/>- Microsoft エンドポイント マネージャー管理センター ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) )  |
 | セキュリティ管理者 (セキュリティ管理者とも呼ばれます) | セキュリティ管理者は、セキュリティ オペレーターのタスクと次のタスクを実行できます。 <br/>- セキュリティ関連のポリシーを監視する <br/>- セキュリティの脅威とアラートを管理する <br/>- レポートの表示 |
@@ -188,7 +188,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 > [!TIP]
 > 攻撃表面の縮小ルールの詳細については、次のリソースを参照してください。
 > - [マルウェア感染を防ぐために攻撃面の減少ルールを使用する](attack-surface-reduction.md)
-> - [攻撃表面の縮小ルールの一覧を表示する](attack-surface-reduction-rules.md)
+> - [攻撃表面の縮小ルールの一覧を表示する](attack-surface-reduction-rules-reference.md)
 > - [攻撃面の減少ルールをカスタマイズする](customize-attack-surface-reduction.md)
 
 ### <a name="ransomware-mitigation"></a>ランサムウェアの軽減

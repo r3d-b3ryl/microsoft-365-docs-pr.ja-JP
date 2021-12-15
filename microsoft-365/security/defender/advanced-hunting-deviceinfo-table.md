@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 25cf4f098d1dd58e86583be17ccbd371a16b128d
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: acba50ec85e0d8d2f61a51aa902a26e5bcbed6f9
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643179"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530805"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -34,40 +34,38 @@ ms.locfileid: "60643179"
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-
-
 高度 `DeviceInfo` な検索スキーマの [表](advanced-hunting-overview.md) には、OS バージョン、アクティブ ユーザー、コンピューター名など、組織内のデバイスに関する情報が含まれている。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `DeviceId` | string | コンピューターの一意識別子 |
-| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ClientVersion` | string | コンピューターで実行されているエンドポイント エージェントまたはセンサーのバージョン |
-| `PublicIP` | string | オンボード コンピューターが Microsoft Defender for Endpoint サービスに接続するために使用するパブリック IP アドレス。 これは、コンピューター自体の IP アドレス、NAT デバイス、またはプロキシである可能性があります。 |
-| `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
-| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 11、Windows 10、Windows 7 など) を示します。 |
-| `OSBuild` | string | コンピューターで実行されているオペレーティング システムのバージョンをビルドする |
-| `IsAzureADJoined` | ブール値 | コンピューターがコンピューターに参加しているかどうかを示すブールAzure Active Directory |
-| `AadObjectId` | string | ネットワーク内のデバイスの一意Azure AD |
-| `LoggedOnUsers` | string | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
-| `RegistryDeviceTag` | string | レジストリを介して追加されたコンピューター タグ |
-| `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |
-| `MachineGroup` | string | コンピューターのコンピューター グループ。 このグループは、役割ベースのアクセス制御によってコンピューターへのアクセスを決定するために使用されます。 |
-| `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
-| `OnboardingStatus` | string | デバイスが現在オンボードされているかどうかを示す Microsoft Defender For Endpoint またはデバイスがサポートされていない場合 |
-|`AdditionalFields` | string | JSON 配列形式のイベントに関する追加情報 |
-|`DeviceCategory` | string | 特定のデバイスの種類を次のカテゴリにグループ化する広範な分類: エンドポイント、ネットワーク デバイス、IoT、不明 |
-|`DeviceType` | string | 目的と機能に基づくデバイスの種類 (ネットワーク デバイス、ワークステーション、サーバー、モバイル、ゲーム コンソール、プリンターなど) |
-|`DeviceSubType` | string | 特定の種類のデバイスの追加修飾子 (たとえば、モバイル デバイスはタブレットまたはスマートフォンなど) |
-|`Model` | string | ベンダーまたは製造元の製品のモデル名または番号 |
-|`Vendor` | string | 製品ベンダーまたは製造元の名前 |
-|`OSDistribution` | string | Linux プラットフォーム用の Ubuntu や RedHat などの OS プラットフォームの配布 |
-|`OSVersionInfo` | string | OS バージョンに関する追加情報 (一般的な名前、コード名、バージョン番号など) |
-|`MergedDeviceIds` | string | 同じデバイスに割り当てられている以前のデバイス ID |
-|`MergedToDeviceId` | string | デバイスに割り当てられた最新のデバイス ID |
+| `Timestamp` | `datetime` | イベントが記録された日付と時刻 |
+| `DeviceId` | `string` | コンピューターの一意識別子 |
+| `DeviceName` | `string` | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `ClientVersion` | `string` | コンピューターで実行されているエンドポイント エージェントまたはセンサーのバージョン |
+| `PublicIP` | `string` | オンボード コンピューターが Microsoft Defender for Endpoint サービスに接続するために使用するパブリック IP アドレス。 これは、コンピューター自体の IP アドレス、NAT デバイス、またはプロキシである可能性があります。 |
+| `OSArchitecture` | `string` | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
+| `OSPlatform` | `string` | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 11、Windows 10、Windows 7 など) を示します。 |
+| `OSBuild` | `string` | コンピューターで実行されているオペレーティング システムのバージョンをビルドする |
+| `IsAzureADJoined` | `boolean` | コンピューターがコンピューターに参加しているかどうかを示すブールAzure Active Directory |
+| `AadObjectId` | `string` | ネットワーク内のデバイスの一意Azure AD |
+| `LoggedOnUsers` | `string` | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
+| `RegistryDeviceTag` | `string` | レジストリを介して追加されたコンピューター タグ |
+| `OSVersion` | `string` | コンピューターで実行されているオペレーティング システムのバージョンです。 |
+| `MachineGroup` | `string` | コンピューターのコンピューター グループ。 このグループは、役割ベースのアクセス制御によってコンピューターへのアクセスを決定するために使用されます。 |
+| `ReportId` | `long` | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
+| `OnboardingStatus` | `string` | デバイスが現在オンボードされているかどうかを示す Microsoft Defender for Endpoint またはデバイスがサポートされていない場合 |
+|`AdditionalFields` | `string` | JSON 配列形式のイベントに関する追加情報 |
+|`DeviceCategory` | `string` | 特定のデバイスの種類を次のカテゴリにグループ化する広範な分類: エンドポイント、ネットワーク デバイス、IoT、不明 |
+|`DeviceType` | `string` | 目的と機能に基づくデバイスの種類 (ネットワーク デバイス、ワークステーション、サーバー、モバイル、ゲーム コンソール、プリンターなど) |
+|`DeviceSubType` | `string` | 特定の種類のデバイスの追加修飾子 (たとえば、モバイル デバイスはタブレットまたはスマートフォンなど) |
+|`Model` | `string` | ベンダーまたは製造元の製品のモデル名または番号 |
+|`Vendor` | `string` | 製品ベンダーまたは製造元の名前 |
+|`OSDistribution` | `string` | Linux プラットフォーム用の Ubuntu や RedHat などの OS プラットフォームの配布 |
+|`OSVersionInfo` | `string` | OS バージョンに関する追加情報 (一般的な名前、コード名、バージョン番号など) |
+|`MergedDeviceIds` | `string` | 同じデバイスに割り当てられている以前のデバイス ID |
+|`MergedToDeviceId` | `string` | デバイスに割り当てられた最新のデバイス ID |
 
 この表は、定期的なレポートまたはデバイスからの信号であるハートビートに基づくデバイス `DeviceInfo` 情報を提供します。 15 分ごとに、デバイスは頻繁に変更される属性を含む部分的なハートビートを送信します `LoggedOnUsers` 。 1 日に 1 回、デバイスの属性を含む完全なハートビートが送信されます。
 
@@ -80,7 +78,7 @@ DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId 
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

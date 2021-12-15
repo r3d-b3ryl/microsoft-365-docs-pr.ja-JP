@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: e60ab6c42a48a0eb69a3a643b6c0a502b56f93b3
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 386cfaa00143ee64ff2710a913e4498813380a95
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423821"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530938"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Microsoft Secure Score の履歴を追跡し、目標を達成する
 
@@ -66,7 +66,7 @@ ms.locfileid: "61423821"
 
 比較棒グラフは [概要] **タブ** です。グラフにカーソルを合わせると、スコアとスコアの機会が表示されます。 比較データは匿名化され、他のテナントが混在しているかどうかは正確にはわかりません。
 
-![類似する組織のスコアの棒グラフ。](../../media/secure-score/secure-score-comparison-bar.png)
+![類似する組織のスコアの棒グラフ。](../../media/secure-score/secure-score-comparison-screenshot.png)
 
 - **お客様のような組織**: 他のテナントの平均スコア (比較するテナントが少なくとも 5 つ以上ある場合) は、次の条件を満たします。
     1. 同じ業界

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 51762f9a2273817f926a55f8fef630cbfd7d2df1
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 34e8b1f97319e4881175c7d79629dbed83730738
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372518"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531704"
 ---
 # <a name="enable-corelight-data-integration"></a>Corelight データ統合
 
@@ -66,10 +66,12 @@ Corelight 統合を有効にするには、次の手順を実行する必要が�
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>手順 3: Corelight アプライアンスを構成して、データをサーバーに送信Microsoft 365 Defender
 
-**適用対象**: Corelight Sensor ソフトウェア v23.2 以降
-
 > [!NOTE]
-> データの送信をサポートする以前のリリースで有効にするには、最初に次のコマンドを実行する必要があります `corelight-client configuration update --enable.adfiot 1` 。
+>  統合は Corelight Sensor ソフトウェア v24 以降で公開されます。 
+
+v23 または v22.1 でプレビューするには、GUI で構成セクションを有効にするために `corelight-client configuration update --enable.adfiot 1` 実行する必要があります。
+
+さらに、GUI 検証では、すべての v23 リリースの構成セクションでブローカーを構成する必要があります。  提供するブローカーは必須ですが、実際には使用されません。 kafka ブローカー フィールドに入力して、次の手順に従ってデータの送信を有効にする前に、検証を `127.0.0.1:1234` 成功Microsoft 365 Defender。 
 
 > [!NOTE]
 > ソリューションを動作するには、センサーが Defender クラウド サービスと Corelight クラウド サービスの両方に到達するためにインターネット接続が必要です。

@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: e8124e9f2445ad2bf2b9fd6f5c56869d5feaaa07
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b5aaad7363b42e18a0ca21e4d56d118218cec1a9
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164468"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531800"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でのホスト ファイアウォール レポート
 
@@ -70,7 +70,7 @@ Ring0 Preview では、次のシナリオがサポートされています。
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>"接続がブロックされているコンピューター" からデバイスへ
 
-カードは対話型オブジェクトをサポートします。 新しいタブで起動するデバイス名をクリックして、デバイスのアクティビティをドリル インし、[デバイス タイムライン] タブ <https://securitycenter.microsoft.com> **に直接移動** できます。
+カードは対話型オブジェクトをサポートします。 デバイスのアクティビティをドリル インするには、デバイス名をクリックして、新しいタブで Microsoft 365 Defender ポータルを起動し、[デバイス タイムライン] タブに直接 **移動** します。
 
 > [!div class="mx-imgBorder"]
 > ![接続がブロックされているコンピューター。](\images\firewall-reporting-blocked-connection.png)

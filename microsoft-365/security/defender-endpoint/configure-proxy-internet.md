@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 07eb8847b21d9c6444cbd55d2e84e17282fb4c52
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: b84f458649a79583f384621739f37e5880179e28
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221426"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531209"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -280,11 +280,11 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 ただし、接続を確認した結果が失敗を示している場合は、HTTP エラーが表示されます (「HTTP ステータス コード」を参照)。 次に、「プロキシ サーバーの Defender for Endpoint サービス URL へのアクセスを有効にする」に示されている表の [URL を使用できます](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。 使用する URL は、オンボーディング手順で選択された地域によって異なります。
 
 > [!NOTE]
-> Connectivity Analyzer ツールのクラウド接続チェックは [、PSExec](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生する攻撃表面の縮小ルールブロック プロセスの作成と互換性がありません。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。 または、アナライザーの実行中に [ASR 除外を](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md#exclude-files-and-folders) 一時的に追加できます。
+> Connectivity Analyzer ツールのクラウド接続チェックは [、PSExec](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生する攻撃表面の縮小ルールブロック プロセスの作成と互換性がありません。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。 または、アナライザーの実行中に [ASR 除外を](customize-attack-surface-reduction.md#exclude-files-and-folders) 一時的に追加できます。
 >
 > TelemetryProxyServer がレジストリまたはグループ ポリシーを介して設定されている場合、Defender for Endpoint は、定義されたプロキシにアクセスできない場合、直接に戻されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)
 - [グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策](use-group-policy-microsoft-defender-antivirus.md)

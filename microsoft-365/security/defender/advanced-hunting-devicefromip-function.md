@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c2482c83eef315c390e2748e371ddf26dcb3c012
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4a1f1198c247aefbcbb093d1a5f5105704255692
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705353"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531581"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -43,8 +43,8 @@ ms.locfileid: "60705353"
 
 | Column | データ型 | 説明 |
 |------------|-------------|-------------|
-| `IP` | string | IP アドレス  |
-| `DeviceId` | string | サービス内のデバイスの一意の識別子 |
+| `IP` | `string` | IP アドレス  |
+| `DeviceId` | `string` | サービス内のデバイスの一意の識別子 |
 
 
 ## <a name="syntax"></a>構文
@@ -72,7 +72,7 @@ DeviceNetworkEvents
 | invoke DeviceFromIP()
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

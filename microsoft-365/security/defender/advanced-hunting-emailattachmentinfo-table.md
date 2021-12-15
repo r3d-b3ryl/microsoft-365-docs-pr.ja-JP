@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f810929d254056ee261defa0a7f2a1458145f8f0
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: ac3e7aeff6778709f68aa1da74446cf55a1a6c06
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753061"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531305"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -42,23 +42,23 @@ ms.locfileid: "60753061"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | string | ユーザーが生成する電子メールの一意Microsoft 365 |
-| `SenderFromAddress` | string | 受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス |
-| `SenderDisplayName` | string | アドレス帳に表示される送信者の名前(通常は、特定の名前または名、ミドル イニシャル、姓または姓の組み合わせ) |
-| `SenderObjectId` | string | アカウント内の送信者のアカウントの一意Azure AD |
-| `RecipientEmailAddress` | string | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
-| `RecipientObjectId` | string | メール受信者の一意のAzure AD |
-| `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
-| `FileType` | 文字列型 | ファイル拡張子の種類 |
-| `SHA256` | 文字列型 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
-| `ThreatTypes` | 文字列型 | 電子メールにマルウェア、フィッシング、その他の脅威が含まれているかどうかに関する電子メール フィルター スタックからの評決 |
-| `ThreatNames` | string | マルウェアまたは検出された他の脅威の検出名 |
-| `DetectionMethods` | string | 電子メールで見つかったマルウェア、フィッシング、その他の脅威を検出するために使用される方法 |
-| `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
-| `FileSize` | string | ファイルのサイズ (バイト単位) |
+| `Timestamp` | `datetime` | イベントが記録された日付と時刻 |
+| `NetworkMessageId` | `string` | ユーザーが生成する電子メールの一意Microsoft 365 |
+| `SenderFromAddress` | `string` | 受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス |
+| `SenderDisplayName` | `string` | アドレス帳に表示される送信者の名前(通常は、特定の名前または名、ミドル イニシャル、姓または姓の組み合わせ) |
+| `SenderObjectId` | `string` | アカウント内の送信者のアカウントの一意Azure AD |
+| `RecipientEmailAddress` | `string` | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
+| `RecipientObjectId` | `string` | メール受信者の一意のAzure AD |
+| `FileName` | `string` | 記録されたアクションが適用されたファイルの名前 |
+| `FileType` | `string` | ファイル拡張子の種類 |
+| `SHA256` | `string` | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `ThreatTypes` | `string` | 電子メールにマルウェア、フィッシング、その他の脅威が含まれているかどうかに関する電子メール フィルター スタックからの評決 |
+| `ThreatNames` | `string` | マルウェアまたは検出された他の脅威の検出名 |
+| `DetectionMethods` | `string` | 電子メールで見つかったマルウェア、フィッシング、その他の脅威を検出するために使用される方法 |
+| `ReportId` | `long` | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
+| `FileSize` | `string` | ファイルのサイズ (バイト単位) |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)

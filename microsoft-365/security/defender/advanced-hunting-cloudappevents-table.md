@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bbb669d485336d1840e414f1f9d85507c175dd14
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 128d4f9ce80bff6192771ee1806f708d0d15c00f
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370874"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531137"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -45,36 +45,36 @@ ms.locfileid: "61370874"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
-| `Application` | string | 記録されたアクションを実行したアプリケーション |
-| `ApplicationId` | string | アプリケーションの一意の識別子 |
-| `AccountObjectId` | string | アカウントの一意の識別子は、Azure Active Directory |
-| `AccountId` | string | ユーザーが見つけたアカウントのMicrosoft Cloud App Security。 ID、Azure Active Directoryプリンシパル名、または他の識別子を使用できます。 |
-| `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
-| `IsAdminOperation` | string | アクティビティが管理者によって実行されたかどうかを示します。 |
-| `DeviceType` | string | 目的と機能に基づくデバイスの種類 ("ネットワーク デバイス"、"ワークステーション"、"Server"、"Mobile"、"Gaming console"、"Printer" など) | 
-| `OSPlatform` | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 この列は、同じファミリ内のバリエーション (Windows 11、Windows 10、Windowsなど) を示します。 |
-| `IPAddress` | string | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス |
-| `IsAnonymousProxy` | string | IP アドレスが既知の匿名プロキシに属するかどうかを示します。 |
-| `CountryCode` | string | クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード |
-| `City` | string | クライアント IP アドレスが地理的に位置付けされている都市 |
-| `Isp` | string | IP アドレスに関連付けられたインターネット サービス プロバイダー (ISP) |
-| `UserAgent` | string | Web ブラウザーまたは他のクライアント アプリケーションからのユーザー エージェント情報 |
-| `ActivityType` | string | イベントをトリガーしたアクティビティの種類 |
-| `ActivityObjects` | 動的 | 記録されたアクティビティに含まれるファイルやフォルダーなどのオブジェクトの一覧 |
-| `ObjectName` | string | 記録されたアクションが適用されたオブジェクトの名前 |
-| `ObjectType` | string | 記録されたアクションが適用されたオブジェクトの種類 (ファイルやフォルダーなど) |
-| `ObjectId` | string | 記録されたアクションが適用されたオブジェクトの一意の識別子 |
-| `ReportId` | string | イベントの一意識別子 |
-| `RawEventData` | string | JSON 形式のソース アプリケーションまたはサービスからの生のイベント情報 |
-| `AdditionalFields` | 動的 | エンティティまたはイベントに関する追加情報 |
-| `AccountType` | string | ユーザー アカウントの種類(標準、System、Admin、DcAdmin、System、Application など)の一般的な役割とアクセス レベルを示します。 | 
-| `IsExternalUser` | boolean | ネットワーク内のユーザーが組織のドメインに属していないかどうかを示します。 | 
-| `IsImpersonated` | ブール値 | あるユーザーが別の (偽装された) ユーザーに対してアクティビティを実行したかどうかを示します。 | 
-| `IPTags` | 動的 | 特定の IP アドレスおよび IP アドレス範囲に適用される顧客定義の情報 | 
-| `IPCategory` | string | IP アドレスに関する追加情報 | 
-| `UserAgentTags` | 動的 | Microsoft Defender for Cloud Apps がユーザー エージェント フィールドのタグで提供する詳細。 ネイティブ クライアント、古いブラウザー、古いオペレーティング システム、Robot など、任意の値を指定できます。 | 
+| `Timestamp` | `datetime` | イベントが記録された日付と時刻 |
+| `ActionType` | `string` | イベントをトリガーしたアクティビティの種類 |
+| `Application` | `string` | 記録されたアクションを実行したアプリケーション |
+| `ApplicationId` | `string` | アプリケーションの一意の識別子 |
+| `AccountObjectId` | `string` | アカウントの一意の識別子は、Azure Active Directory |
+| `AccountId` | `string` | ユーザーが見つけたアカウントのMicrosoft Cloud App Security。 ID、Azure Active Directoryプリンシパル名、または他の識別子を使用できます。 |
+| `AccountDisplayName` | `string` | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
+| `IsAdminOperation` | `string` | アクティビティが管理者によって実行されたかどうかを示します。 |
+| `DeviceType` | `string` | 目的と機能に基づくデバイスの種類 ("ネットワーク デバイス"、"ワークステーション"、"Server"、"Mobile"、"Gaming console"、"Printer" など) | 
+| `OSPlatform` | `string` | デバイスで実行されているオペレーティング システムのプラットフォーム。 この列は、同じファミリ内のバリエーション (Windows 11、Windows 10、Windowsなど) を示します。 |
+| `IPAddress` | `string` | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス |
+| `IsAnonymousProxy` | `string` | IP アドレスが既知の匿名プロキシに属するかどうかを示します。 |
+| `CountryCode` | `string` | クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード |
+| `City` | `string` | クライアント IP アドレスが地理的に位置付けされている都市 |
+| `Isp` | `string` | IP アドレスに関連付けられたインターネット サービス プロバイダー (ISP) |
+| `UserAgent` | `string` | Web ブラウザーまたは他のクライアント アプリケーションからのユーザー エージェント情報 |
+| `ActivityType` | `string` | イベントをトリガーしたアクティビティの種類 |
+| `ActivityObjects` | `dynamic` | 記録されたアクティビティに含まれるファイルやフォルダーなどのオブジェクトの一覧 |
+| `ObjectName` | `string` | 記録されたアクションが適用されたオブジェクトの名前 |
+| `ObjectType` | `string` | 記録されたアクションが適用されたオブジェクトの種類 (ファイルやフォルダーなど) |
+| `ObjectId` | `string` | 記録されたアクションが適用されたオブジェクトの一意の識別子 |
+| `ReportId` | `string` | イベントの一意識別子 |
+| `RawEventData` | `string` | JSON 形式のソース アプリケーションまたはサービスからの生のイベント情報 |
+| `AdditionalFields` | `dynamic` | エンティティまたはイベントに関する追加情報 |
+| `AccountType` | `string` | ユーザー アカウントの種類(標準、System、Admin、DcAdmin、System、Application など)の一般的な役割とアクセス レベルを示します。 | 
+| `IsExternalUser` | `boolean` | ネットワーク内のユーザーが組織のドメインに属していないかどうかを示します。 | 
+| `IsImpersonated` | `boolean` | あるユーザーが別の (偽装された) ユーザーに対してアクティビティを実行したかどうかを示します。 | 
+| `IPTags` | `dynamic` | 特定の IP アドレスおよび IP アドレス範囲に適用される顧客定義の情報 | 
+| `IPCategory` | `string` | IP アドレスに関する追加情報 | 
+| `UserAgentTags` | `dynamic` | Microsoft Defender for Cloud Apps がユーザー エージェント フィールドのタグで提供する詳細。 ネイティブ クライアント、古いブラウザー、古いオペレーティング システム、Robot など、任意の値を指定できます。 | 
 
 ## <a name="apps-and-services-covered"></a>対象となるアプリとサービス
 

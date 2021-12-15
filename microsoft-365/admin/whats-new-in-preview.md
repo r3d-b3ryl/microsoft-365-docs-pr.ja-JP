@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: '[Microsoft 365 管理センター- 今月追加された機能について学習します。'
-ms.openlocfilehash: d2573180fd254063da5450acbdeeb78aa99d6367
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 7d01786878c9bb87347d9207b0863593842e526b
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422773"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531911"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>新しい機能Microsoft 365 管理センター
 
@@ -38,7 +38,7 @@ ms.locfileid: "61422773"
 
 ::: moniker-end
 
-[[Microsoft 365 管理センター]](admin-overview/admin-center-overview.md)に新しい機能を継続的に追加しています。Microsoft 365 管理センター の概要、学習した問題の修正、フィードバックに基づいて変更を加えます。 以下を見て、今日利用可能な機能を確認してください。 一部の機能は、お客様に異なる速度で展開されます。 まだ機能が表示されない場合は、ターゲットリリース [に自分自身を追加してみてください](manage/release-options-in-office-365.md)。
+[Microsoft 365 管理センター][Microsoft 365 管理センター](admin-overview/admin-center-overview.md の概要)に継続的に新機能を追加し、学習した問題を修正し、フィードバックに基づいて変更を加えます。 以下を見て、今日利用可能な機能を確認してください。 一部の機能は、お客様に異なる速度で展開されます。 まだ機能が表示されない場合は、ターゲットリリース [に自分自身を追加してみてください](manage/release-options-in-office-365.md)。
 
 他の Microsoft クラウド サービスの新機能を知りたい場合は、次の手順を実行します。
 
@@ -252,7 +252,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 
 ![「リモート ワーカーに権限を与Microsoft 365ソリューションドキュメント」の新しいランディング ページ。](../media/MAC-WN-M365Docspage.png)
 
-## <a name="july-2020"></a>2020 年 7 月
+## <a name="july-2020"></a>2020 年7 月
 
 ### <a name="getting-ready-for-ignite-2020"></a>Ignite 2020 の準備
 
@@ -448,7 +448,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)Web シリーズの新機能 : 今月のエピソードでは、Microsoft Teams の 3 年の記念日を強調し、オンライン会議でのオーディオ品質の向上、Shifts アプリを使用したファーストライン マネージャー向けターゲットコミュニケーション、Teams と Skype コンシューマーの相互運用性などの新機能について説明します。
 
-## <a name="february-2020"></a>2020年2月
+## <a name="february-2020"></a>2020 年 2 月
 
 ### <a name="featured-feedback-fix-multi-organization-switcher"></a>おすすめフィードバックの修正: 複数組織の切り替え機能
 

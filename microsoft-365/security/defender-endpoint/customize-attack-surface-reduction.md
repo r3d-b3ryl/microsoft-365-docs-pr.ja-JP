@@ -14,12 +14,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3965b02e4bf4e4b6bce35a6abaf368dc4f47be83
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 992c8802f3a4f44b1558004e2ee27ddbedf70a1a
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218288"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531173"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>攻撃面の減少ルールをカスタマイズする
 
@@ -71,31 +71,7 @@ ms.locfileid: "61218288"
 攻撃表面の縮小は、環境変数とワイルドカードをサポートします。 ワイルドカードの使用の詳細については、「ファイル名とフォルダー パスまたは拡張子の除外リストでワイルドカードを使用する [」を参照してください](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 。
 検出すべきではないと思うファイルを検出するルールで問題が発生した場合は、監査モードを使用して [ルールをテストします](evaluate-attack-surface-reduction.md)。
 
-<br>
-
-****
-
-|ルールの説明|GUID|
-|---|---|
-|悪用された脆弱な署名済みドライバーの悪用をブロックする|`56a863a9-875e-4185-98a7-b882c64b5ce5`|
-|Adobe Reader の子プロセスの作成をブロックする|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|
-|すべてのアプリケーションOffice子プロセスの作成をブロックする|`d4f940ab-401b-4efc-aadc-ad5f3c50688a`|
-|ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
-|メール クライアントと Web メールから実行可能なコンテンツをブロックする|`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`|
-|有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする|`01443614-cd74-433a-b99e-2ecdc07bfc25`|
-|難読化される可能性のあるスクリプトの実行をブロックする|`5beb7efe-fd9a-4556-801d-275e5ffc04cc`|
-|JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|`d3e037e1-3eb8-44c8-a917-57927947596d`|
-|実行可能Office作成するアプリケーションのブロック|`3b576869-a4ec-4529-8536-b80a7769e899`|
-|アプリケーションOffice他のプロセスへのコードの挿入をブロックする|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
-|通信Office子プロセスの作成をブロックする|`26190899-1602-49e8-8b27-eb1d0a1ce869`|
-|WMI イベント サブスクリプションによる永続化のブロック|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|
-|PSExec および WMI コマンドから発生するプロセス作成をブロックする|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|
-|USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|
-|Win32 API 呼び出しをブロックOfficeマクロ|`92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`|
-|ランサムウェアに対する高度な保護の使用|`c1db55ab-c21a-4637-bb3f-a12568109d35`|
-|
-
-各ルールの [詳細については、攻撃表面](attack-surface-reduction.md) の縮小に関するトピックを参照してください。
+各ルールの [詳細については、攻撃表面の縮小ルール](attack-surface-reduction-rules-reference.md) のリファレンス トピックを参照してください。
 
 ### <a name="use-group-policy-to-exclude-files-and-folders"></a>グループ ポリシーを使用してファイルとフォルダーを除外する
 
@@ -133,7 +109,7 @@ ms.locfileid: "61218288"
 
 ルールがトリガーされた場合の通知をカスタマイズし、アプリまたはファイルをブロックできます。 詳しくは[、Windows セキュリティをご覧](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)ください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
 - [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)

@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: メッセージ センターの投稿は英語のみですが、ユーザーが指定した言語で自動的に表示Microsoft 365。
-ms.openlocfilehash: 54c9d0c20045805029774fa37f2eeb5f992cbd49
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d622118b63b5fdfdab4fea4f62362e1df468e6aa
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369962"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530633"
 ---
 # <a name="language-translation-for-message-center-posts"></a>メッセージ センターの投稿の言語の翻訳
 
 メッセージ センターの投稿は、情報のタイムラインを Microsoft が投稿しているため、英語のみで記述されています。ただし、投稿は Microsoft 365 の個人用の言語設定で指定した言語で自動表示できます。 優先する言語を英語以外の言語に設定した場合、メッセージ センターに投稿を自動翻訳するオプションが表示されます。 メッセージは、コンピューターが優先する言語に翻訳され、コンピューターが翻訳を行ったことを意味します。 既定のビューは、このオプションによって制御されますが、ドロップダウン メニューを使用すると、翻訳をサポートしている任意の言語で、投稿を翻訳して表示することができます。 英語を選択すると、メッセージは元の英語バージョンに戻されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
   
 > [!IMPORTANT]
 > メッセージ センターで言語設定を選択する前に、優先する言語を設定する必要があります。 英語を言語に設定した場合、翻訳オプションは表示されません。 他のユーザーの優先する言語は設定することができません。ユーザーが自分自身で設定する必要があります。 
@@ -52,7 +52,7 @@ ms.locfileid: "61369962"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[概要] Microsoft 365 管理センター][[Microsoft 365 管理センターの概要](../admin-overview/admin-center-overview.md)(ビデオ)\
+[概要] [Microsoft 365 管理センター][Microsoft 365 管理センター](./admin-overview/admin-center-overview.md) (ビデオ)\
 [取得しているサブスクリプションが不明な場合](../admin-overview/what-subscription-do-i-have.md) (記事)\
 [変更の上に残る](../manage/stay-on-top-of-updates.md) (記事)
 

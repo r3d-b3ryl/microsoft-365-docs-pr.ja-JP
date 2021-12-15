@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 管理者アカウントでサインインMicrosoft 365、ビジネス サブスクリプションのユーザーのパスワードMicrosoft 365リセットします。
-ms.openlocfilehash: 891c579bd1fe2f7b9d4596ef1ef0415734f46ce5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 2d79a1e7ea24782102c821100493b3b2eb8349ed
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370226"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530408"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
@@ -45,7 +45,7 @@ ms.locfileid: "61370226"
 
 ## <a name="before-you-begin"></a>開始する前に
 
-この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは?([の概要 Microsoft 365 管理センター](../admin-overview/admin-center-overview.md)。
+この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは?([Microsoft 365 管理センター]の概要。/admin-overview/admin-center-overview.md)。
 
 これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
 
@@ -60,7 +60,7 @@ ms.locfileid: "61370226"
 1. [ **パスワードの自動生成] を選択** すると、ランダムなパスワードが自動的に作成されます。
 1. [リセット] **を選択します**。
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>手順: ユーザーのビジネス パスワードをリセットする
 

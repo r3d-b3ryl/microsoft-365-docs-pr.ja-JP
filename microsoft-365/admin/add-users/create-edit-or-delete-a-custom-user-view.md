@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: フィルターを使用してカスタム ユーザー ビューを作成、編集、または削除する方法については、Microsoft 365。
-ms.openlocfilehash: 74c5e15e8d7735edcba145ea9b10a6bec7e7def7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 479f6c566cea407e75c6fb14f76db418c127aeb4
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370286"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530189"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>カスタム ユーザー ビューを作成、編集、削除する
 
@@ -118,7 +118,7 @@ ms.locfileid: "61370286"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[概要] Microsoft 365 管理センター][[Microsoft 365 管理センターの概要](../admin-overview/admin-center-overview.md)(ビデオ)\
+[概要] [Microsoft 365 管理センター][Microsoft 365 管理センター](./admin-overview/admin-center-overview.md) (ビデオ)\
 [管理者の役割](../add-users/about-admin-roles.md) (ビデオ)\
 [組織で使用する Microsoft 365 のテーマをカスタマイズする](../setup/customize-your-organization-theme.md) (記事)
 

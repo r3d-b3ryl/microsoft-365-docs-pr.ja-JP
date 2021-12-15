@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e8febbf47e8aa7c6d4e78bd783c5274f2b20c9af
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: a6588134ba2cdf166a465998cd0b1a4fd7134dbb
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121699"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531525"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -46,18 +46,18 @@ ms.locfileid: "61121699"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `DeviceId` | string | コンピューターの一意識別子 |
-| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 11、Windows Windows 10、および 7 など、同じファミリ内Windows 10オペレーティング システムWindows示します。 |
-| `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |
-| `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
-| `SoftwareVendor` | string | ソフトウェア発行元の名前 |
-| `SoftwareName` | string | ソフトウェア製品の名前 |
-| `SoftwareVersion` | string | ソフトウェア製品のバージョン番号 |
-| `CveId` | string | 共通脆弱性識別子 (CVE) システムでセキュリティの脆弱性に割り当てられている一意の識別子  |
-| `VulnerabilitySeverityLevel` | string | CVSS スコアと脅威の度合いの影響を受ける動的要因に基づいて、セキュリティの脆弱性に割り当てられている重大度レベル |
-| `RecommendedSecurityUpdate` | string | 脆弱性に対処するためにソフトウェア発行元が提供するセキュリティ更新プログラムの名前または説明 |
-| `RecommendedSecurityUpdateId` | string | 対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子 |
+| `DeviceId` | `string` | コンピューターの一意識別子 |
+| `DeviceName` | `string` | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `OSPlatform` | `string` | コンピューターで実行されているオペレーティング システムのプラットフォームです。 11、Windows Windows 10、および 7 など、同じファミリ内Windows 10オペレーティング システムWindows示します。 |
+| `OSVersion` | `string` | コンピューターで実行されているオペレーティング システムのバージョンです。 |
+| `OSArchitecture` | `string` | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
+| `SoftwareVendor` | `string` | ソフトウェア発行元の名前 |
+| `SoftwareName` | `string` | ソフトウェア製品の名前 |
+| `SoftwareVersion` | `string` | ソフトウェア製品のバージョン番号 |
+| `CveId` | `string` | 共通脆弱性識別子 (CVE) システムでセキュリティの脆弱性に割り当てられている一意の識別子  |
+| `VulnerabilitySeverityLevel` | `string` | CVSS スコアと脅威の度合いの影響を受ける動的要因に基づいて、セキュリティの脆弱性に割り当てられている重大度レベル |
+| `RecommendedSecurityUpdate` | `string` | 脆弱性に対処するためにソフトウェア発行元が提供するセキュリティ更新プログラムの名前または説明 |
+| `RecommendedSecurityUpdateId` | `string` | 対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子 |
 
 
 
