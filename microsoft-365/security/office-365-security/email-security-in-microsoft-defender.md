@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9eb12db41e48fce814c2c0cb1c934d3fa388086f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 38bf13f02a1641147a6b76ba381afb6f0e282892
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962869"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507307"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Microsoft Defender の脅威エクスプローラーを使用した電子メール Office 365
 
@@ -64,6 +64,23 @@ ms.locfileid: "60962869"
    :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="選択した検出テクノロジ。":::
 
    レポートが更新され、選択したテクノロジ オプションを使用して、電子メールでマルウェアが検出された結果が表示されます。 ここから、さらに分析を実行できます。
+
+### <a name="report-a-message-as-clean-in-explorer"></a>エクスプローラーでメッセージをクリーンとして報告する
+
+エクスプローラーの [クリーン **レポート]** オプションを使用すると、誤検知としてメッセージを報告できます。 
+
+1. [メール Microsoft 365 Defender] に移動し、& エクスプローラーに移動し、[表示] ドロップダウン リストで[フィッシング] が \> 選択 **されているのを** 確認します。 
+
+2. [メール] タブが表示されているのを確認し、報告されたメッセージの一覧から、クリーンとして報告するメッセージを選択します。 
+
+3. [アクション **] を** クリックしてオプションの一覧を展開します。
+
+4. [新しい申請の開始] セクションに移動するオプションの一覧を下にスクロールし、[クリーンレポート]**を選択します**。 ポップアップが表示されます。
+
+   > [!div class="mx-imgBorder"]
+   > ![エクスプローラーで [クリーン レポート] オプションを選択します。](../../media/report-clean-option-explorer.png) 
+
+5. スライダーを On に切り **替えます**。 ドロップダウン リストから、メッセージを削除する日数を指定し、必要に応じてメモを追加し、[送信] を選択 **します**。 
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>フィッシング URL を表示し、[評決データ] をクリックする
 

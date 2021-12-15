@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス センターでポリシーのカスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: 4139a7cd8f2a87bf8db25e9b23201132e321b31d
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: a8a085d29ee3d4552091e11d154900a79de7b45e
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422569"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507316"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を作成する
 
@@ -307,7 +307,7 @@ Entity には各パターン の confidenceLevel に加え、 recommendedConfide
 
 コンプライアンス チームが Microsoft 365 コンプライアンス センターを使用して異なるロケールと異なる言語でポリシーを作成する場合、カスタムの機密情報の種類の名前と説明について、ローカライズされたバージョンを提供することができます。コンプライアンス チームがサポートしている言語で Microsoft 365 を使用すると、ローカライズされた名前が UI に表示されます。
   
-![インスタンス数と一致精度のオプション。](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![インスタンス数と一致精度の構成。](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 Rules 要素には、LocalizedStrings 要素を含める必要があります。LocalizedStrings 要素には、カスタム エンティティの GUID を参照する Resource 要素が含まれています。また、各 Resource 要素には、1 つまたは複数の Name 要素と Description 要素が含まれており、それぞれが langcode 属性を使用して特定の言語のローカライズされた文字列を提供します。
   
@@ -487,8 +487,8 @@ Microsoft 365 2 つの汎用バリデーターを提供する
 ルール パッケージの XML ファイルをアップロードすると、システムで XML が検証され、既知の不適切なパターンや明らかなパフォーマンスの問題が確認されます。検証で確認される既知の正規表現に関する問題について一部を紹介します。
   
 - 正規表現内の Lookbehind または lookahead アサーションは、固定長のみである必要があります。 可変長アサーションでは、エラーが発生します。
-    
-  たとえば、"(?<=^|\s|"は、この中の最初のオプションが長さ 0 の '^' で、次の tow オプション _('\s'_ と ' ') は長さ 1 なので、検証は渡しません。 この正規表現を使用する別の方法は"(?:^|(?<=\s|_)"
+
+    たとえば、この正規表現の最初のオプションは長さが 0 で、次の 2 つのオプションは 1 の長さなので、この正規表現は検証に `"(?<=^|\s|_)"` `^` `\s` `_` 合格しません。  この正規表現を記述して検証する別の方法は、 です `"(?:^|(?<=\s|_))"` 。
   
 - 先頭または末尾に縦棒 "|" を指定することはできません。これは、空の一致とみなされるため、あらゆるものと一致します。
     
