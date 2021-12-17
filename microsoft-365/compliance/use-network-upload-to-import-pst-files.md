@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b72b408ef08c125f016a356a2ceda21e86cf8cfd
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c5449f197d24df27f86ac8c5149d2e9fb969580b
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283571"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521128"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
@@ -33,11 +33,11 @@ ms.locfileid: "61283571"
   
 ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のメールボックスに一括インポートするために必要なステップ バイ ステップによる手順を以下に示します。 ネットワーク アップロードを使用した Microsoft 365 メールボックスへの PST ファイルの一括インポートについてよく寄せられる質問については、「[ネットワーク アップロードを使用して PST ファイルをインポートすることについてよく寄せられる質問](./faqimporting-pst-files-to-office-365.yml#using-network-upload-to-import-pst-files)」を参照してください。
   
-[手順 1: SAS URL をコピーして AzCopy をインストールする](#step-1-copy-the-sas-url-and-install-azcopy)
+[手順 1: SAS URL をコピーして AzCopy をダウンロードする](#step-1-copy-the-sas-url-and-download-azcopy)
 
-[手順 2: Microsoft 365 に PST ファイルをアップロードする](#step-2-upload-your-pst-files-to-office-365)
+[手順 2: Microsoft 365 に PST ファイルをアップロードする](#step-2-upload-your-pst-files-to-microsoft-365)
 
-[(省略可能) 手順 3: アップロードされた PST ファイルのリストを表示する](#optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365)
+[(省略可能) 手順 3: アップロードされた PST ファイルのリストを表示する](#optional-step-3-view-a-list-of-the-pst-files-uploaded-to-microsoft-365)
 
 [手順 4: PST インポート マッピング ファイルを作成する](#step-4-create-the-pst-import-mapping-file)
 
@@ -62,15 +62,15 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
     > [!TIP]
     > PST ファイルをインポートするための新しい役割グループを ExchangeOnline で作成することを検討します。PST ファイルをインポートするのに必要な最小レベルの権限では、新しい役割グループに Mailbox Import Export の役割および Mail Recipients の役割を割り当て、メンバーを追加します。
   
-- PST ファイルを Microsoft 365 にインポートするためにサポートされている唯一の方法は、このトピックで説明されているように、AzCopy ツールを使用することです。 Azure Storage Explorer を使用して、PST ファイルを Azure Storage 領域に直接アップロードすることができません。
- 
+- PST ファイルを Microsoft 365 にインポートするためにサポートされている唯一の方法は、この記事で説明されているように、AzCopy ツールを使用することです。 Azure Storage Explorer を使用して、PST ファイルを Azure Storage 領域に直接アップロードすることができません。
+
 - Microsoft 365 にインポートする PST ファイルは、組織内のファイル サーバーまたは共有フォルダーに保存する必要があります。 現在、組織の Azure Storage アカウントから、Microsoft 365 インポート サービスが使用する Azure Storage の場所への PST ファイルのコピーはサポートされていません。 手順 2 では、AzCopy ツールを実行して、ファイル サーバーや共有フォルダーに保存されている PST ファイルを Microsoft クラウドにアップロードします。
 
 - PST ファイルが大きい場合、PST のインポート プロセスのパフォーマンスに影響を与える場合があります。 そのため、手順 2で Azure Storage の場所にアップロードするそれぞれの PST ファイルは、20 GB 以下にすることをお勧めします。
 
-- この手順では、アクセス キーを含む URL をコピーして保存します。 この情報は、PST ファイルをアップロードするために手順 2 で、Office 365 にアップロードされた PST ファイルのリストを表示する場合に手順 3 で使用されます。 パスワードや他のセキュリティ関連の情報を保護するのと同じように、この URL を保護する予防措置を講じる必要があります。 たとえば、この URL をパスワードで保護された Microsoft Word ドキュメントに保存したり、暗号化された USB ドライブに保存したりします。 この URL とキーの組み合わせの例については、「[詳細情報](#more-information)」セクションを参照してください。
+- この手順では、アクセス キーを含む URL をコピーして保存します。 この情報は、PST ファイルをアップロードするために手順 2 で、Microsoft 365 にアップロードされた PST ファイルのリストを表示する場合に手順 3 で使用されます。 パスワードや他のセキュリティ関連の情報を保護するのと同じように、この URL を保護する予防措置を講じる必要があります。 たとえば、この URL をパスワードで保護された Microsoft Word ドキュメントに保存したり、暗号化された USB ドライブに保存したりします。 この URL とキーの組み合わせの例については、「[詳細情報](#more-information)」セクションを参照してください。
 
-- PST ファイルを Office 365 の非アクティブなメールボックスにインポートできます。 PST インポート マッピング ファイルの `Mailbox` パラメーターで非アクティブなメールボックスの GUID を指定して、この操作を行います。 詳細については、このトピックの「**手順**」タブの手順 4 を参照してください。
+- PST ファイルを Microsoft 365 の非アクティブなメールボックスにインポートできます。 PST インポート マッピング ファイルの `Mailbox` パラメーターで非アクティブなメールボックスの GUID を指定して、この操作を行います。 詳細については、この記事の「**手順**」タブの手順 4 を参照してください。
 
 - Exchange ハイブリッド展開では、オンプレミスのプライマリ メールボックスを持つユーザーのために、PST ファイルをクラウド ベースのアーカイブ メールボックスにインポートすることができます。 PST インポート マッピング ファイルに次を指定して、この操作を行います。
 
@@ -80,21 +80,21 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
 
     詳細については、[手順 4](#step-4-create-the-pst-import-mapping-file) を参照してください。
 
-- PST ファイルがインポートされると、メールボックスのアイテム保持ホールド設定が無期限でオンになります。 つまり、メールボックスに割り当てられたアイテム保持ポリシーは、アイテム保持ホールドをオフにするか、またはホールドをオフにする日付を設定するまで処理されません。 このようにした理由は次のとおりです。 メールボックスにインポートされたメッセージは古くなると、完全に削除 (パージ) される可能性があります。これは、メッセージの保持期限がメールボックスに対して構成されたアイテム保持設定に基づいているためです。 メールボックスに対してアイテム保持ホールドが設定されると、メールボックスの所有者は、新たにインポートされたメッセージを管理する時間、またはメールボックスのアイテム保持設定を変更する時間を確保できます。 アイテム保持ホールドの管理に関する推奨事項については、このトピックの 「[詳細情報](#more-information)」セクションを参照してください。
+- PST ファイルがインポートされると、メールボックスのアイテム保持ホールド設定が無期限でオンになります。 つまり、メールボックスに割り当てられたアイテム保持ポリシーは、アイテム保持ホールドをオフにするか、またはホールドをオフにする日付を設定するまで処理されません。 このようにした理由は次のとおりです。 メールボックスにインポートされたメッセージは古くなると、完全に削除 (パージ) される可能性があります。これは、メッセージの保持期限がメールボックスに対して構成されたアイテム保持設定に基づいているためです。 メールボックスに対してアイテム保持ホールドが設定されると、メールボックスの所有者は、新たにインポートされたメッセージを管理する時間、またはメールボックスのアイテム保持設定を変更する時間を確保できます。 アイテム保持ホールドの管理に関する推奨事項については、この記事の 「[詳細情報](#more-information)」セクションを参照してください。
 
-- 既定では、Microsoft 365 メールボックスで受信できるメッセージの最大サイズは 35 MB です。 これは、メールボックスの *MaxReceiveSize* プロパティの既定値が 35 MB に設定されているためです。 ただし、Microsoft 365 のメッセージ受信最大サイズの上限は 150 MB です。 そのため、35 MB より大きいアイテムを含む PST ファイルをインポートすると、Office 365 インポート サービスにより、対象メールボックスの *MaxReceiveSize* プロパティの値が 150 MB に自動的に変更されます。 これにより、最大 150 MB のメッセージをユーザーのメールボックスにインポートできます。
+- 既定では、Microsoft 365 メールボックスで受信できるメッセージの最大サイズは 35 MB です。 これは、メールボックスの *MaxReceiveSize* プロパティの既定値が 35 MB に設定されているためです。 ただし、Microsoft 365 のメッセージ受信最大サイズの上限は 150 MB です。 そのため、35 MB より大きいアイテムを含む PST ファイルをインポートすると、Microsoft 365 インポート サービスにより、対象メールボックスの *MaxReceiveSize* プロパティの値が 150 MB に自動的に変更されます。 これにより、最大 150 MB のメッセージをユーザーのメールボックスにインポートできます。
 
     > [!TIP]
     > メッセージ受信サイズを識別するには、Exchange Online PowerShell で次のコマンドを実行します: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`
 
 - PST インポート プロセスの概要については、この記事の「[インポート プロセスの流れ](#how-the-import-process-works)」セクションをご覧ください。
 
-## <a name="step-1-copy-the-sas-url-and-install-azcopy"></a>手順 1: SAS URL をコピーして AzCopy をインストールする
+## <a name="step-1-copy-the-sas-url-and-download-azcopy"></a>手順 1: SAS URL をコピーして AzCopy をダウンロードする
 
-まず、AzCopy ツールをダウンロードしてインストールします。これは、手順 2 で PST ファイルを Office 365 にアップロードするために実行するツールです。 組織の SAS URL もコピーします。 この URL は、組織の Microsoft クラウドにある Azure Storage の場所のネットワーク URL と、Shared Access Signature (SAS) キーの組み合わせです。 このキーでは、Azure Storage の場所に PST ファイルをアップロードするために必要な権限が与えられます。 必ず SAS URL を保護するための予防措置を講じてください。 これらは組織に固有で、手順 2 で使用されます。
+まず、AzCopy ツールをダウンロードしてインストールします。これは、手順 2 で PST ファイルを Microsoft 365 にアップロードするために実行するツールです。 組織の SAS URL もコピーします。 この URL は、組織の Microsoft クラウドにある Azure Storage の場所のネットワーク URL と、Shared Access Signature (SAS) キーの組み合わせです。 このキーでは、Azure Storage の場所に PST ファイルをアップロードするために必要な権限が与えられます。 必ず SAS URL を保護するための予防措置を講じてください。 これらは組織に固有で、手順 2 で使用されます。
 
 > [!IMPORTANT]
-> この記事で説明するネットワーク アップロードの方法とコマンド構文を使用して PST ファイルをインポートするには、下の手順 6b でダウンロードできるバージョンの AzCopy を使用する必要があります。 また、同バージョンの AzCopy は、[こちら](https://aka.ms/downloadazcopy)からもダウンロードできます。 これ以外のバージョンの AzCopy の使用はサポートされていません。
+> この記事で説明するネットワーク アップロードの方法とコマンド構文を使用して PST ファイルをインポートするには、下の手順 6b でダウンロードできるバージョンの AzCopy を使用する必要があります。 また、同バージョンの AzCopy は、[こちら](https://aka.ms/downloadazcopylatest)からもダウンロードできます。 これ以外のバージョンの AzCopy の使用はサポートされていません。
   
 1. <https://compliance.microsoft.com> に移動し、組織の管理者アカウントの資格情報を使用してサインインします。
 
@@ -119,53 +119,74 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
   
     1. 手順 2 で、[**ネットワーク アップロード SAS URL を表示する**] をクリックします。SAS URL が表示されたら、[**クリップボードにコピー**] をクリックしてから、ファイルに貼り付けて保存し、後でアクセスできるようにします。
 
-    2. 手順 3 では、[**Azure AzCopy ツールのダウンロード**] をクリックし、AzCopy ツールをダウンロードしてインストールします。 ポップアップ ウィンドウで、[**実行**] をクリックして、AzCopy をインストールします。
+    2. 手順 3 で、[**Azure AzCopy のダウンロード**] をクリックし、AzCopy ツールをローカル コンピューターにダウンロードします。 このバージョンの AzCopy は単なる実行可能ファイルであるため、インストールするものはありません。
 
    > [!NOTE]
-   > [**データのインポート**] ページを開いたままにしておくか (もう一度 SAS URL をコピーする必要がある場合)、[**キャンセル**] をクリックして閉じることができます。 
+   > [**データのインポート**] ページを開いたままにしておくか (もう一度 SAS URL をコピーする必要がある場合)、[**キャンセル**] をクリックして閉じることができます。
 
-## <a name="step-2-upload-your-pst-files-to-office-365"></a>手順 2: Office 365 に PST ファイルをアップロードする
+## <a name="step-2-upload-your-pst-files-to-microsoft-365"></a>手順 2: Microsoft 365 に PST ファイルをアップロードする
 
-これで、AzCopy.exe ツールを使って Office 365 に PST ファイルをアップロードする準備が整いました。 このツールで、PST ファイルを Microsoft クラウドの Azure Storage の場所にアップロードして保存します。 前述したように、PST ファイルをアップロードする Azure Storage の場所は、組織が所在するのと同じ地域の Microsoft データ センターにあります。 この手順を完了するには、PST ファイルを組織内のファイル共有やファイル サーバーに配置する必要があります。 この手順ではソース ディレクトリと呼ばれます。 AzCopy ツールを実行するたびに、別のソース ディレクトリを指定できます。
+これで、AzCopy ツールを使って Microsoft 365 に PST ファイルをアップロードする準備が整いました。 このツールは、PST ファイルを Microsoft が提供する Microsoft クラウドの Azure Storage の場所にアップロードして保存します。 前述したように、PST ファイルをアップロードする Azure Storage の場所は、組織が所在するのと同じ地域の Microsoft データ センターにあります。 この手順を完了するには、PST ファイルを組織内のファイル共有またはファイル サーバー、または組織で管理されている Azure Storage の場所に配置する必要があります。 PST の保存場所は、この手順でソースの場所と呼ばれます。 AzCopy ツールを実行するたびに、別のソースの保存場所を指定できます。
 
 > [!NOTE]
 > 前述したように、Azure Storage の場所にアップロードするそれぞれの PST ファイルは、20 GB 以下にする必要があります。 PST ファイルが 20 GB を超える場合、手順 6 で開始する PST インポートプロセスのパフォーマンスに影響を与える可能性があります。 また、各 PST ファイルには一意の名前が必要です。
 
 1. ローカル コンピューターでコマンド プロンプトを開きます。
 
-2. 手順 1 で AzCopy.exe ツールをインストールしたディレクトリに移動します。 既定の場所にツールをインストールした場合は、`%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy` に移動します。
+2. 手順 1 で azcopy.exe ファイルをダウンロードしたディレクトリに移動します。
 
-3. 次のコマンドを実行して、PST ファイルを Office 365 にアップロードします。
+3. 次のコマンドを実行して、PST ファイルを Microsoft 365 にアップロードします。
 
     ```powershell
-    AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
+    azcopy.exe copy "<Source location of PST files>" "<SAS URL>"
     ```
 
     > [!IMPORTANT]
-    > 前のコマンドでは、ソースの場所としてディレクトリを指定する必要があります。個々の PST ファイルを指定することはできません。 ソース ディレクトリにあるすべての PST ファイルがアップロードされます。
+    > 前のコマンドで、ソースの場所としてディレクトリまたは Azure Storage の場所を指定できます。個々の PST ファイルを指定することはできません。 ソースの場所にあるすべての PST ファイルがアップロードされます。
 
-    次の表は、AzCopy.exe のパラメーターとそれに必要な値を説明したものです。前の手順で取得した情報は、これらのパラメーターの値に使用されます。
+    次の表は、azcopy.exe のフィールドとそれに必要な値を説明したものです。 前の手順で取得した情報は、これらのフィールドの値に使用されます。
 
-    | パラメーター | 説明 | 例 |
+    | Field | 説明 | 例 |
     |:-----|:-----|:-----|
-    | `/Source:` <br/> |Office 365 にアップロードする PST ファイルを含む組織内のソース ディレクトリを指定します。  <br/> このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
-    | `/Dest:` <br/> |手順 1 で取得した SAS URL を指定します。  <br/> このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。<br/><br/>**注:** スクリプトまたはバッチ ファイルで SAS URL を使用している場合は、エスケープする必要がある特定の文字に注意する必要があります。たとえば、`%` を `%%` に変更し、`&` を `^&` に変更する必要があります。<br/><br/>**ヒント:** (省略可能) PST ファイルをアップロードする Azure Storage の場所にサブフォルダーを指定できます。 SAS URL で ("ingestiondata" の後に) サブフォルダーの場所を追加してこの操作を行います。 最初の例では、サブフォルダーを指定しません。 つまり、PST は、Azure Storage の場所の (*ingestiondata* という名前の) ルートにアップロードされます。 2 つ目の例では、PST ファイルを Azure Storage の場所のルートにある (*PSTFiles* という名前の) サブフォルダーにアップロードします。  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> または  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
-    | `/V:` <br/> |ログ ファイルに詳細な状態メッセージを出力します。 既定では、詳細ログ ファイルは AzCopyVerbose.log という名前が付けられ、%localappdata%\microsoft\azure\azcopy に作成されます。 このオプションで既存のファイルの場所を指定する場合、詳細ログがそのファイルに追加されます。  <br/> このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> | `/V:"c:\Users\Admin\Desktop\Uploadlog.log"` <br/> |
-    | `/S` <br/> |この省略可能なスイッチによって再帰モードが指定され、AzCopy ツールが `/Source:` パラメーターで指定されるソース ディレクトリのサブフォルダーにある PST ファイルをコピーするようになります。  <br/> **注:** このスイッチを含めると、サブフォルダー内の PST ファイルには、アップロード後、Azure Storage の場所に別のファイルのパス名が指定されます。 手順 4 で作成した CSV ファイルの正確なファイルのパス名を指定する必要があります。  <br/> | `/S` <br/> |
-    | `/Y` <br/> |この必須スイッチにより、Azure Storage の場所に PST ファイルをアップロードするときに、書き込み専用の SAS トークンを使用できます。 手順 1 で取得 (および `/Dest:` パラメーターで指定) した SAS URL は書き込み専用の SAS URL であるため、このスイッチを含める必要があります。 書き込み専用の SAS URL を使用しても、Azure Storage Explorer を使用して Azure Storage の場所にアップロードされた PST ファイルのリストを表示できなくなることはありません。  <br/> | `/Y` <br/> |
+    | ソース |最初のフィールドは、Microsoft 365 にアップロードされる PST ファイルを含む組織内のソース ディレクトリを指定します。 または、アップロードする PST ファイルのソースの場所として、Azure Storage の場所を指定することもできます。 <br/> このフィールドの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> | `"\\FILESERVER01\PSTs"` <br/> または  <br/>`"https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx"` |
+    | Destination (転送先) |手順 1 で取得した SAS URL を指定します。  <br/> このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。<br/><br/>**注:** スクリプトまたはバッチ ファイルで SAS URL を使用している場合は、エスケープする必要がある特定の文字に注意する必要があります。 たとえば、`%` は `%%` に変更し、`&` は `^&` に変更する必要があります。<br/><br/>**ヒント:** (省略可能) PST ファイルをアップロードする Azure Storage の場所にサブフォルダーを指定できます。 SAS URL で ("ingestiondata" の後に) サブフォルダーの場所を追加してこの操作を行います。 最初の例では、サブフォルダーを指定しません。 つまり、PST は、Azure Storage の場所の (*ingestiondata* という名前の) ルートにアップロードされます。 2 つ目の例では、PST ファイルを Azure Storage の場所のルートにある (*PSTFiles* という名前の) サブフォルダーにアップロードします。  <br/> | `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> または  <br/>  `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `--recursive` |この省略可能なフラグによって再帰モードが指定され、AzCopy ツールがソース フィールドで指定されるソース ディレクトリのサブフォルダーにある PST ファイルをコピーするようになります。 このフラグの既定値は `true` です。 <br/>**注:** このフラグを含めると、サブフォルダー内の PST ファイルには、アップロード後、Azure Storage の場所に別のファイルのパス名が指定されます。 手順 4 で作成した CSV ファイルの正確なファイルのパス名を指定する必要があります。|`--recursive`  |
+    |`--s2s-preserve-access-tier` | このオプション フラグは、ソースの場所がアクセス層をサポートする汎用 v2 Azure Storage の場所である場合にのみ必要です。 PST インポート シナリオでは、 PST ファイルを Azure Storage アカウントから Microsoft が提供する Azure Storage の場所にコピーするときに、アクセス層を保持する必要はありません。 この場合、このフラグを含め、`false` の値を使用できます。 アクセス層をサポートしていないクラシック Azure Storage アカウントから PST ファイルをコピーする場合は、このフラグを使用する必要はありません。|`--s2s-preserve-access-tier=false` |
 
-各パラメーターの実際の値を使う AzCopy.exe ツールの構文の例を以下に示します。
+**azcopy.exe コピー** コマンドの詳細については、「[azcopy のコピー](/azure/storage/common/storage-ref-azcopy-copy)」を参照してください。
+
+各パラメーターの実際の値を使う AzCopy ツールの構文の例を以下に示します。
+
+### <a name="example-1"></a>例 1
+
+これは、ファイル サーバーまたはローカル コンピューターにあるソース ディレクトリの例です。
 
 ```powershell
-  AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
+azcopy.exe copy "\\FILESERVER1\PSTs" "https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"
+```
+
+### <a name="example-2"></a>例 2
+
+これは、サブディレクトリを持つクラシック Azure Storage アカウントにあるソース ディレクトリの例です。
+
+```powershell
+azcopy.exe copy "https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx" "https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" --recursive
+```
+
+### <a name="example-3"></a>例 3
+
+これは、汎用 v2 Azure Storage アカウントにあるソース ディレクトリの例です。 アクセス層は、PST ファイルのアップロード時には保持されません。
+
+```powershell
+azcopy.exe copy "https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx" "https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" --s2s-preserve-access-tier=false
 ```
 
 コマンドを実行すると、PST ファイルのアップロードの進行状況を示す状態メッセージが表示されます。最終の状態メッセージは、正常にアップロードされたファイルの合計数を示しています。
 
 > [!TIP]
-> AzCopy.exe コマンドを実行し、すべてのパラメーターが正しいことを確認したら、手順 1 で取得した情報をコピーしたのと同じ (セキュリティで保護された) ファイルにコマンド ライン構文のコピーを保存します。 これで、AzCopy.exe ツールを実行して、PST ファイルを Office 365 にアップロードするたびに、コマンド プロンプトにこのコマンドをコピーして貼り付けることができます。 変更する必要のある値は、`/Source:` パラメーターの値のみです。 これは、PST ファイルがあるソース ディレクトリによって異なります。
+> **azcopy.exe のコピー** コマンドを実行し、すべてのパラメーターが正しいことを確認したら、手順 1 で取得した情報をコピーしたのと同じ (セキュリティで保護された) ファイルにコマンド ライン構文のコピーを保存します。 これで、AzCopy ツールを実行して、PST ファイルを Microsoft 365 にアップロードするたびに、コマンド プロンプトにこのコマンドをコピーして貼り付けることができます。 変更する必要がある値は、ソース フィールドのみです。 これは、PST ファイルがあるソース ディレクトリによって異なります。
 
-## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>(省略可能) 手順 3: Office 365 にアップロードされた PST ファイルのリストを表示する
+## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-microsoft-365"></a>(オプション) 手順 3: Microsoft 365 にアップロードされた PST ファイルのリストを表示する
 
 オプションの手順として、Microsoft Azure Storage Explorer (無料のオープン ソース ツール) をインストールして使用し、Azure BLOB にアップロードした PST ファイルのリストを表示できます。これを行うには 2 つの理由があります。
   
@@ -228,7 +249,7 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
     | パラメーター | 説明 | 例 |
     |:-----|:-----|:-----|
     | `Workload` <br/> |データのインポート先のサービスを指定します。 ユーザー メールボックスに PST ファイルをインポートするには、`Exchange` を使用します。  <br/> | `Exchange` <br/> |
-    | `FilePath` <br/> |手順 2 で PST ファイルをアップロードした Azure Storage の場所でフォルダーの場所を指定します。  <br/> 手順 2 の `/Dest:` パラメーターの SAS URL にオプションのサブフォルダー名を入れなかった場合は、CSV ファイルのこのパラメーターを空白のままにしておきます。 サブフォルダー名を入れた場合は、このパラメーターでその名前を指定します (2 つ目の例を参照)。 このパラメーターの値には、大文字と小文字の区別があります。  <br/> どちらの場合でも、`FilePath` パラメーターの値に "ingestiondata" を含め *ない* でください。  <br/><br/> **重要:** 手順 2 で `/Dest:` パラメーターに SAS URL の省略可能なサブフォルダー名を含めた場合、ファイル パス名の大文字小文字はそのとき使用したものと同じである必要があります。 たとえば、手順 2 でサブフォルダー名として `PSTFiles` を使用した場合、CSV ファイル内の `FilePath` パラメーターに `pstfiles` を使用すると、PST ファイルのインポートは失敗します。 必ず、両方のインスタンスの大文字と小文字を同じにしてください。  <br/> |(空白のまま)  <br/> または  <br/>  `PSTFiles` <br/> |
+    | `FilePath` <br/> |手順 2 で PST ファイルをアップロードした Azure Storage の場所でフォルダーの場所を指定します。  <br/> 手順 2 の `/Dest:` パラメーターの SAS URL にオプションのサブフォルダー名を入れなかった場合は、CSV ファイルのこのパラメーターを空白のままにしておきます。 サブフォルダー名を入れた場合は、このパラメーターでその名前を指定します (2 つ目の例を参照)。 このパラメーターの値には、大文字と小文字の区別があります。  <br/> どちらの場合でも、`FilePath` パラメーターの値に "ingestiondata" を含め *ない* でください。  <br/><br/> **重要:** 手順 2 でコピー先フィールドに SAS URL の省略可能なサブフォルダー名を含めた場合、ファイル パス名の大文字小文字はそのとき使用したものと同じである必要があります。 たとえば、手順 2 でサブフォルダー名として `PSTFiles` を使用した場合、CSV ファイル内の `FilePath` パラメーターに `pstfiles` を使用すると、PST ファイルのインポートは失敗します。 必ず、両方のインスタンスの大文字と小文字を同じにしてください。  <br/> |(空白のまま)  <br/> または  <br/>  `PSTFiles` <br/> |
     | `Name` <br/> |ユーザー メールボックスにインポートする PST ファイルの名前を指定します。 このパラメーターの値には、大文字と小文字の区別があります。 インポート ジョブ用のマッピング ファイル内の各 PST ファイルのファイル名は一意である必要があります。 <br/> <br/>**重要:** CSV ファイル内の PST ファイル名の大文字と小文字は、手順 2 で Azure Storage の場所にアップロードした PST ファイルの場合と同じである必要があります。 たとえば、CSV ファイル内の `Name` パラメーターでは `annb.pst` を使用していますが、実際の PST ファイルの名前は `AnnB.pst` である場合、その PST ファイルのインポートは失敗します。 CSV ファイル内の PST の名前の大文字小文字は、実際の PST ファイルの場合と同じである必要があります。  <br/> | `annb.pst` <br/> |
     | `Mailbox` <br/> |PST ファイルのインポート先になるメールボックスのメールアドレスを指定します。 PST インポート サービスは、PST ファイルのパブリック フォルダーへのインポートをサポートしていないため、パブリック フォルダーを指定できません。  <br/> PST ファイルを非アクティブなメールボックスにインポートするには、このパラメーターにメールボックスの GUID を指定する必要があります。 この GUID を取得するには、Exchange Online で `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` の PowerShell コマンドを実行します。 <br/> <br/>**注意:** 1 つのメール アドレスに対して複数のメールボックスが存在することがあります。この場合、1 つのメールボックスがアクティブ状態となり、他のメールボックスは論理的に削除された (非アクティブな) 状態となります。 このような状況で、PST ファイルのインポート先のメールボックスを一意に識別するには、メールボックスの GUID を指定する必要があります。 アクティブなメールボックスの GUID を取得するには、次の PowerShell コマンドを実行します: `Get-Mailbox <identity of active mailbox> | FL Guid` 論理的に削除された (非アクティブな) メールボックスの GUID を取得するには、次のコマンドを実行します: `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`  <br/> | `annb@contoso.onmicrosoft.com` <br/> または  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | PST ファイルをユーザーのアーカイブ メールボックスにインポートするかどうかを指定します。次のような 2 つの選択肢があります。<br/><br/>**FALSE:** PST ファイルをユーザーのプライマリ メールボックスにインポートします。  <br/> **TRUE:** PST ファイルをユーザーのアーカイブ メールボックスにインポートします。 これは、[ユーザーのアーカイブ メールボックスが有効である](enable-archive-mailboxes.md)ことが前提です。 <br/><br/>このパラメーターが `TRUE` に設定されている場合に、ユーザーのアーカイブ メールボックスが有効になっていない場合は、そのユーザーのインポートは失敗します。(アーカイブが有効化されていないにもかかわらずこのプロパティが `TRUE` に設定されたことが原因で) あるユーザーのインポートが失敗しても、そのインポート ジョブ内の他のユーザーが影響を受けることはありません。<br/>  このパラメーターを空白のままにすると、PST ファイルはユーザーのプライマリ メールボックスにインポートされます。  <br/> <br/>**注:** PST ファイルをクラウド ベースのアーカイブ メールボックスにインポートするときに、そのユーザーのプライマリ メールボックスがオンプレミスの場合は、このパラメーターに対して `TRUE` を指定し、そのユーザーのオンプレミスのメールボックスのメール アドレスを `Mailbox` パラメーターで指定してください。  <br/> | `FALSE` <br/> または  <br/>  `TRUE` <br/> |
@@ -286,9 +307,9 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
 
 手順 5 でインポート ジョブを作成した後、Microsoft 365 は、セキュリティで保護された安全な方法で PST ファイル内のデータを分析します。具体的には、アイテムの経過時間と、PST ファイルに含まれるさまざまなメッセージの種類を識別します。 分析が完了し、データをインポートする準備ができたら、PST ファイルに含まれるすべてのデータをインポートするか、インポートするデータをトリミングするかを選ぶことができます。データをトリミングする場合は、インポートするデータを制御するフィルターを設定します。
   
-1. Microsoft 365 コンプライアンス センターの [**インポート**] タブで、手順 5 で作成したインポート ジョブを選択し、[**Office 365 にインポート**] をクリックします。
+1. Microsoft 365 コンプライアンス センターの [**インポート**] タブで、手順 5 で作成したインポート ジョブを選択し、[**Microsoft 365 にインポート**] をクリックします。
   
-   [**データのフィルター処理**] ページが表示されます。 ここには、データの使用期間に関する情報など、Office 365 によって実行された PST ファイルの分析の結果のデータ情報が含まれます。 この時点で、インポートされるデータにフィルター処理を適用するか、すべてのデータをそのままインポートするかを選択できます。 
+   [**データのフィルター処理**] ページが表示されます。 ここには、データの使用期間に関する情報など、Microsoft 365 によって実行された PST ファイルの分析の結果のデータ情報が含まれます。 この時点で、インポートされるデータにフィルター処理を適用するか、すべてのデータをそのままインポートするかを選択できます。 
 
     ![PST ファイルのデータをトリミングしたり、そのすべてをインポートしたりすることができます。](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
@@ -296,7 +317,7 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
 
    1. インポートするデータをトリミングする場合は [**はい、インポートする前にフィルター処理します**] をクリックします。
 
-      PST ファイル内のデータをフィルター処理してインポート ジョブを開始する手順の詳細については、「[Office 365 に PST ファイルをインポートするときにデータをフィルター処理する](filter-data-when-importing-pst-files.md)」を参照してください。
+      PST ファイル内のデータをフィルター処理してインポート ジョブを開始する手順の詳細については、「[Microsoft 365 に PST ファイルをインポートするときにデータをフィルター処理する](filter-data-when-importing-pst-files.md)」を参照してください。
 
       または
 
@@ -329,48 +350,30 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
   - データを[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)にインポートして、コンプライアンスのためにデータをアーカイブする。 
 
   - [データ損失防止ポリシー](dlp-learn-about-dlp.md)を使用して、機密データが組織外に漏洩するのを防ぐ。
-  
-- 手順 1 で取得する Shared Access Signature (SAS) URL の例を示します。この例には、PST ファイルをアップロードするために AzCopy.exe ツールで実行するコマンドの構文も含まれています。パスワードや他のセキュリティ関連の情報を保護するのと同じように、SAS URL を保護する予防措置を講じる必要があります。
 
-    ```console
-    SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
+- 前述したように、Microsoft 365 インポート サービスは PST ファイルがメールボックスにインポートされた後、アイテム保持ホールド設定を (無期限に) オンにします。 これは、*RetentionHoldEnabled* プロパティが **True** に設定されているため、メールボックスに割り当てられたアイテム保持ポリシーが処理されないことを意味します。 これによりメールボックスの所有者は、古くなったメッセージが削除ポリシーまたはアーカイブ ポリシーによって削除またはアーカイブされるのを回避し、新たにインポートしたメッセージを管理する時間を確保できます。 このアイテム保持ホールドを管理するための手順を以下に示します。
 
-    AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
+  - 一定時間後、**Set-Mailbox -RetentionHoldEnabled $false** コマンドを実行することによりアイテム保持ホールドをオフにできます。 手順については、「[メールボックスの保存機能を有効にする](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)」を参照してください。
 
-    EXAMPLES
+  - 将来の特定の日付にオフになるようにアイテム保持ホールドを構成することができます。 これを行うには、**Set-Mailbox -EndDateForRetentionHold *date*** コマンドを実行します。 たとえば、今日の日付が 2016 年 6 月 1 日であり、30 日後にアイテム保持ホールドをオフにする場合は、コマンド **Set-Mailbox -EndDateForRetentionHold 7/1/2016** を実行します。 このシナリオでは、**RentionHoldEnabled** プロパティを *True* に設定したままにします。 詳細については、「[Set-Mailbox](/powershell/module/exchange/set-mailbox)」を参照してください。
 
-    This example uploads PST files to the root of the Azure storage location:
-
-    AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
-    
-    This example uploads PST files to a subfolder named PSTFiles  in the Azure storage location:
-
-    AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
-    ```
-
-- 前述したように、Office 365 インポート サービスは PST ファイルがメールボックスにインポートされた後、アイテム保持ホールド設定を (無期限に) オンにします。 これは、*RetentionHoldEnabled* プロパティが **True** に設定されているため、メールボックスに割り当てられたアイテム保持ポリシーが処理されないことを意味します。 これによりメールボックスの所有者は、古くなったメッセージが削除ポリシーまたはアーカイブ ポリシーによって削除またはアーカイブされるのを回避し、新たにインポートしたメッセージを管理する時間を確保できます。 このアイテム保持ホールドを管理するための手順を以下に示します。
-
-   - 一定時間後、**Set-Mailbox -RetentionHoldEnabled $false** コマンドを実行することによりアイテム保持ホールドをオフにできます。 手順については、「[メールボックスの保存機能を有効にする](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)」を参照してください。
-
-   - 将来の特定の日付にオフになるようにアイテム保持ホールドを構成することができます。 これを行うには、**Set-Mailbox -EndDateForRetentionHold *date*** コマンドを実行します。 たとえば、今日の日付が 2016 年 6 月 1 日であり、30 日後にアイテム保持ホールドをオフにする場合は、コマンド **Set-Mailbox -EndDateForRetentionHold 7/1/2016** を実行します。 このシナリオでは、**RentionHoldEnabled** プロパティを *True* に設定したままにします。 詳細については、「[Set-Mailbox](/powershell/module/exchange/set-mailbox)」を参照してください。
-
-   - メールボックスに割り当てられているアイテム保持ポリシーの設定を変更して、インポート済みの古いアイテムがすぐに削除されたり、ユーザーのアーカイブ メールボックスに移動されたりしないようにすることができます。 たとえば、メールボックスに割り当てられた削除ポリシーまたはアーカイブ ポリシーの保持期間を長くすることができます。 このシナリオでは、アイテム保持ポリシーの設定を変更した後で、メールボックスに対するアイテム保持ホールドをオフにします。 詳細については、「[組織のメールボックスのアーカイブと削除ポリシーを設定する](set-up-an-archive-and-deletion-policy-for-mailboxes.md)」を参照してください。
+  - メールボックスに割り当てられているアイテム保持ポリシーの設定を変更して、インポート済みの古いアイテムがすぐに削除されたり、ユーザーのアーカイブ メールボックスに移動されたりしないようにすることができます。 たとえば、メールボックスに割り当てられた削除ポリシーまたはアーカイブ ポリシーの保持期間を長くすることができます。 このシナリオでは、アイテム保持ポリシーの設定を変更した後で、メールボックスに対するアイテム保持ホールドをオフにします。 詳細については、「[組織のメールボックスのアーカイブと削除ポリシーを設定する](set-up-an-archive-and-deletion-policy-for-mailboxes.md)」を参照してください。
 
 ### <a name="how-the-import-process-works"></a>インポート プロセスの流れ
   
-ネットワークのアップロード オプションおよび Office 365 のインポート サービスを使用して、ユーザーのメールボックスに PST ファイルを一括インポートすることができます。 ネットワーク アップロードとは、Microsoft クラウドの一時的な記憶域に PST ファイルをアップロードすることを意味します。 その後、Office 365 インポート サービスが記憶域からユーザーのメールボックスに PST ファイルをコピーします。
+ネットワークのアップロード オプションおよび Microsoft 365 のインポート サービスを使用して、ユーザーのメールボックスに PST ファイルを一括インポートすることができます。 ネットワーク アップロードとは、Microsoft クラウドの一時的な記憶域に PST ファイルをアップロードすることを意味します。 その後、Microsoft 365 インポート サービスが記憶域からユーザーのメールボックスに PST ファイルをコピーします。
   
-ここでは、PST ファイルを Office 365 のメールボックスにインポートするためのネットワーク アップロード処理の図と説明を示します。
+ここでは、PST ファイルを Microsoft 365 のメールボックスにインポートするためのネットワーク アップロード処理の図と説明を示します。
   
-![PST ファイルを Office 365 にインポートするためのネットワーク アップロード プロセスのワークフロー。](../media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
+![PST ファイルを Microsoft 365 にインポートするためのネットワーク アップロード プロセスのワークフロー。](../media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
 1. **PST インポート ツールとキーを Azure Storage のプライベートな場所にダウンロードする:** まず、PST ファイルを Microsoft クラウドの Azure Storage の場所にアップロードするために使用する AzCopy コマンドライン ツールとアクセス キーをダウンロードします。 これらは、Microsoft 365 コンプライアンス センター の [**インポート**] ページで取得します。 このキー (Secure Access Signature (SAS) キーと呼ばれます) は、ユーザーに、PST ファイルをプライベートのセキュリティで保護された Azure Storage の場所にアップロードするために必要なアクセス許可を提供します。 このアクセス キーは組織に固有のもので、PST ファイルを Microsoft クラウドにアップロードした後に、PST ファイルへの不正アクセスから保護するのに役立ちます。 PST ファイルをインポートするために、組織が別個の Azure サブスクリプションを持つ必要はありません。 
 
-2. **Azure Storage の場所に PST ファイルをアップロードする**: 次の手順は、AzCopy.exe ツール (手順 1 でダウンロード) を使用して、組織が所在する場所と同じ地域の Microsoft データ センターに置かれている Azure Storage の場所に PST ファイルをアップロードして保存することです。 PST ファイルをアップロードするには、インポートするファイルが組織のファイル共有またはファイル サーバー上にある必要があります。
+2. **Azure Storage の場所に PST ファイルをアップロードする:** 次の手順は、azcopy.exe ツール (手順 1 でダウンロード) を使用して、組織が所在する場所と同じ地域の Microsoft データ センターに置かれている Azure Storage の場所に PST ファイルをアップロードして保存することです。 PST ファイルをアップロードするには、インポートするファイルが組織のファイル共有またはファイル サーバー上にある必要があります。
 
     Azure Storage の場所にアップロードした後に PST ファイルのリストを表示するときに実行できるオプションの手順があることに注意してください。
 
-3. **PST インポート マッピング ファイルを作成する:** PST ファイルを Azure Storage の場所にアップロードしたら、次は PST ファイルのインポート先となるユーザーのメールボックスを指定する、コンマ区切り値 (CSV) ファイルを作成します (PST ファイルはユーザーのプライマリ メールボックスまたはアーカイブ メールボックスにインポートすることができます)。Office 365 インポート サービスは、CSV ファイルの情報を使用して PST ファイルをインポートします。
+3. **PST インポート マッピング ファイルを作成する**: PST ファイルを Azure Storage の場所にアップロードしたら、次は PST ファイルのインポート先となるユーザーのメールボックスを指定する、コンマ区切り値 (CSV) ファイルを作成します。PST ファイルはユーザーのプライマリ メールボックスまたはアーカイブ メールボックスにインポートできます。 Microsoft 365 インポート サービスは、CSV ファイルの情報を使用して PST ファイルをインポートします。
 
 4. **PST インポート ジョブを作成する**: 次の手順では、Microsoft 365 コンプライアンス センターの [**PST ファイルのインポート**] ページで PST インポート ジョブを作成し、前の手順で作成した PST インポート マッピング ファイルを送信します。 インポート ジョブを作成すると、Microsoft 365 によって PST ファイル内のデータが分析されます。その後、実際に PST インポート マッピング ファイルで指定したメールボックスにインポートするデータを制御するフィルターを設定できます。 
 

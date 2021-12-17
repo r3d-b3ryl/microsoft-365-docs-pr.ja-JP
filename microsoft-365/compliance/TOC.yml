@@ -333,6 +333,8 @@
           items:
             - name: データ損失防止ポリシーのサポート
               href: dlp-overview-plan-for-dlp.md
+            - name: DLP ポリシーを設計する
+              href: dlp-policy-design.md
             - name: データ損失防止ポリシー リファレンス
               href: dlp-policy-reference.md
         - name: DLP の使用を開始する
@@ -541,8 +543,6 @@
               href: archive-rogers-network-archiver-data.md
             - name: Signal Archiver
               href: archive-signal-archiver-data.md
-            - name: StarHub Network Archiver (プレビュー)
-              href: archive-starhub-network-archiver-data.md
             - name: Telegram Archiver
               href: archive-telegram-archiver-data.md
             - name: TELUS ネットワーク

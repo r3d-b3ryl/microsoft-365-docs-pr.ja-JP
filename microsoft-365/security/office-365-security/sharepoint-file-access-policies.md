@@ -1,5 +1,5 @@
 ---
-title: 推奨されるセキュリティで保護されたドキュメント ポリシー - エンタープライズ Microsoft 365の|Microsoft Docs
+title: セキュリティで保護されたドキュメントの推奨されるポリシー - Microsoft 365 for enterprise | Microsoft Docs
 description: SharePoint ファイル アクセスをセキュリティで保護する方法に関する、Microsoft が推奨するポリシーについて説明します。
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -21,7 +21,7 @@ ms.collection:
 ms.technology: mdo
 ms.openlocfilehash: 4e028d149e74eac69389b545ea76a034589c253e
 ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2021
 ms.locfileid: "61122059"
@@ -34,71 +34,71 @@ ms.locfileid: "61122059"
 - SharePoint Online 
 
 
-この記事では、推奨されるゼロトラスト ID およびデバイス アクセス ポリシーを実装して、セキュリティとセキュリティを保護するSharePointについてOneDrive for Business。 このガイダンスは、共通の [ID ポリシーとデバイス アクセス ポリシーを基にしています](identity-access-policies.md)。
+この記事では、SharePoint とOneDrive for Business を保護するために推奨されるゼロ トラスト ID とデバイス アクセス ポリシーを実装する方法について説明します。 このガイダンスは[共通 ID およびデバイス アクセス ポリシー](identity-access-policies.md)に基づいています。
 
-これらの推奨事項は、ニーズの粒度に基づいて適用できる SharePoint ファイルのセキュリティと保護の 3 つの層に基づいて行います。開始点、エンタープライズ、および特殊なセキュリティ **です。** これらのセキュリティ層と、これらの推奨事項で参照される推奨クライアント オペレーティング システムの詳細については、「概要」 [を参照してください](microsoft-365-policies-configurations.md)。
+これらの推奨事項は、ニーズの粒度に基づいて適用可能な SharePoint ファイルのセキュリティと保護の 3 つの異なる層 (**出発点**、**企業**、および **特殊なセキュリティ**) に基づいています。 これらのセキュリティ層と、以下の推奨事項で参照されている推奨されるクライアントのオペレーティング システムの詳細については、[概要](microsoft-365-policies-configurations.md)を参照してください。
 
-このガイダンスの実装に加えて、エンタープライズ および特殊なセキュリティ コンテンツに対する適切なアクセス許可の設定など、適切な保護SharePointサイトを構成してください。
+このガイダンスの実装に加えて、エンタープライズおよび特殊なセキュリティ コンテンツに適切なアクセス許可を設定するなど、適切な量の保護を使用して SharePoint サイトを構成してください。
 
-## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>一般的なポリシーを更新して、SharePointとOneDrive for Business
+## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>一般的なポリシーを更新して SharePoint と OneDrive for Business を含める
 
-次の図は、SharePointおよび OneDriveのファイルを保護するために、共通の ID およびデバイス アクセス ポリシーから更新するポリシーを示しています。
+次の図は、SharePoin tおよび OneDrive のファイルを保護するために、共通の ID およびデバイス アクセス ポリシーから更新するポリシーを示しています。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="アクセスを保護するためのポリシー更新プログラムの概要SharePoint。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="SharePoint へのアクセスを保護するためのポリシー更新の概要。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
 
-共通ポリシーをSharePointに追加した場合は、新しいポリシーのみを作成する必要があります。 条件付きアクセス ポリシーの場合、SharePointがOneDrive。
+共通ポリシーの作成時に SharePoint を含めた場合は、新しいポリシーを作成するだけで完了できます。 条件付きアクセスポリシーの場合、SharePoint には OneDrive が含まれています。
 
-新しいポリシーでは、指定したサイトに特定のアクセス要件を適用することで、エンタープライズおよび特殊なセキュリティ コンテンツSharePointデバイス保護を実装します。
+新しいポリシーは、指定した SharePoint サイトに特定のアクセス要件を適用することにより、エンタープライズおよび特殊なセキュリティ コンテンツのデバイス保護を実装します。
 
-次の表に、新しいポリシーを確認および更新または作成する必要があるポリシーを示SharePoint。 共通ポリシーは、「共通 ID とデバイス アクセス ポリシー」の記事に関連付けられた構成 [手順にリンク](identity-access-policies.md) します。
+次の表に、SharePoint のレビューと更新または新規作成が必要なポリシーを示します。 共通ポリシーは、[共通 ID とデバイスのアクセス ポリシー](identity-access-policies.md)の記事にある関連する構成手順にリンクしています。
 
 |保護レベル|ポリシー|詳細情報|
 |---|---|---|
-|**開始点**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド SharePoint割り当てにアプリを含める。|
-||[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|クラウド SharePoint割り当てにアプリを含める。|
-||[APP データ保護ポリシーの適用](identity-access-policies.md#apply-app-data-protection-policies)|すべての推奨アプリがアプリの一覧に含まれているか確認してください。 各プラットフォーム (iOS、Android、Windows) のポリシーを更新してください。|
-||[アプリで適用される制限を使用SharePoint](#use-app-enforced-restrictions-in-sharepoint)|この新しいポリシーを追加します。 これにより、Azure Active Directory (Azure AD) に指定された設定を使用SharePoint。 このポリシーは、すべてのユーザーに適用されますが、アクセス ポリシーに含まれるサイトSharePoint影響します。|
-|**エンタープライズ**|[サインイン リスクが低い、中程度、または高い場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド SharePoint割り当てにアプリを含める。|
-||[準拠している PC とモバイル *デバイスを* 要求する](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウド SharePointリストにアプリを含める。|
-||[SharePointアクセス制御ポリシー](#sharepoint-access-control-policies): 管理されていないデバイスから特定のサイトへのブラウザー SharePointアクセスを許可します。|これにより、ファイルの編集とダウンロードが防止されます。 PowerShell を使用してサイトを指定します。|
-|**特殊なセキュリティ**|[*常に* MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド SharePoint割り当てにアプリを含める。|
-||[SharePointアクセス制御ポリシー](#use-app-enforced-restrictions-in-sharepoint): 管理されていないデバイスから特定のSharePointサイトへのアクセスをブロックします。|PowerShell を使用してサイトを指定します。|
+|**開始点**|[サインインのリスクが *中*、または *高* のときに MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド アプリの割り当てに SharePoint を含めます。|
+||[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|クラウド アプリの割り当てに SharePoint を含めます。|
+||[アプリ データ保護ポリシーを適用する](identity-access-policies.md#apply-app-data-protection-policies)|推奨されるすべてのアプリがアプリのリストに含まれていることを確認してください。 各プラットフォーム (iOS、Android、Windows) のポリシーを必ず更新してください。|
+||[SharePoint でアプリによって適用される制限を使用する](#use-app-enforced-restrictions-in-sharepoint)|この新しいポリシーを追加します。 これにより、Azure Active Directory (Azure AD) は SharePoint で指定された設定を使用するようになります。 このポリシーはすべてのユーザーに適用されますが、SharePoint アクセス ポリシーに含まれるサイトへのアクセスにのみ影響します。|
+|**エンタープライズ**|[サインインのリスクが *低*、*中*、または *高* のときに MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド アプリの割り当てに SharePoint を含めます。|
+||[準拠した PC *と* モバイル デバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウド アプリのリストに SharePoint を含めます。|
+||[SharePoint アクセス制御ポリシー](#sharepoint-access-control-policies): 非管理対象デバイスから特定の SharePoint サイトへのブラウザーのみのアクセスを許可します。|これにより、ファイルの編集およびダウンロードが防止されます。 PowerShell を使用してサイトを指定します。|
+|**特殊なセキュリティ**|[*常に* MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド アプリの割り当てに SharePoint を含めます。|
+||[SharePoint アクセス制御ポリシー](#use-app-enforced-restrictions-in-sharepoint): 非管理対象デバイスから特定の SharePoint サイトへのアクセスをブロックします。|PowerShell を使用してサイトを指定します。|
 |
 
-## <a name="use-app-enforced-restrictions-in-sharepoint"></a>アプリで適用される制限を使用SharePoint
+## <a name="use-app-enforced-restrictions-in-sharepoint"></a>SharePoint でアプリによって適用される制限を使用する
 
-SharePoint でアクセス制御を実装する場合は、Azure AD でこの条件付きアクセス ポリシーを作成して、Azure AD で構成するポリシーを適用SharePoint。 このポリシーはすべてのユーザーに適用されますが、PowerShell を使用して指定したサイトへのアクセスに影響を与えるのは、PowerShell でアクセス制御を作成するときにのみSharePoint。
+SharePoint でアクセス制御を実装する場合は、Azure AD でこの条件付きアクセス ポリシーを作成して、SharePoint で構成したポリシーを適用するように AzureAD に指示する必要があります。 このポリシーはすべてのユーザーに適用されますが、SharePoint でアクセス制御を作成するときに PowerShell を使用して指定したサイトへのアクセスにのみ影響します。
 
-このポリシーを構成するには、「管理されていないデバイスからのアクセスを制御する」の「SharePoint サイト コレクションまたは OneDrive アカウントへのアクセスをブロックまたは制限する」[を参照してください](/sharepoint/control-access-from-unmanaged-devices)。
+このポリシーを構成するには、「[非管理対象デバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)」の「特定の SharePoint サイト コレクションまたは OneDrive アカウントへのアクセスを制限する」を参照してください。
 
-## <a name="sharepoint-access-control-policies"></a>SharePointアクセス制御ポリシー
+## <a name="sharepoint-access-control-policies"></a>SharePoint アクセス制御ポリシー
 
-Microsoft では、デバイス アクセス制御を使用して、SharePointおよび特殊なセキュリティ コンテンツを使用して、サイト内のコンテンツを保護する方法をお勧めします。 これを行うには、保護のレベルと保護を適用するサイトを指定するポリシーを作成します。
+Microsoft では、SharePoint サイトのコンテンツをエンタープライズで保護し、特殊なセキュリティ コンテンツをデバイスのアクセス制御で保護することをお勧めします。 これを行うには、保護のレベルと保護を適用するサイトを指定するポリシーを作成します。
 
-- Enterpriseサイト: ブラウザー専用アクセスを許可します。 これにより、ユーザーはファイルを編集およびダウンロードできます。
-- 特殊なセキュリティ サイト: 管理されていないデバイスからのアクセスをブロックします。
+- エンタープライズ サイト: ブラウザのみのアクセスを許可します。 これにより、ユーザーによるファイルの編集およびダウンロードが防止されます。
+- 専用のセキュリティ サイト: 管理されていないデバイスからのアクセスをブロックします。
 
-「管理されていないデバイスからのアクセスを制御する」の「SharePointサイト コレクションまたは OneDrive アカウントへのアクセスをブロックまたは制限する」[を参照してください](/sharepoint/control-access-from-unmanaged-devices)。
+「[非管理対象デバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)」の「特定の SharePoint サイト コレクションまたは OneDrive アカウントへのアクセスを制限する」を参照してください。
 
-## <a name="how-these-policies-work-together"></a>これらのポリシーの動作
+## <a name="how-these-policies-work-together"></a>これらのポリシーが連携する方法
 
-通常、サイトのアクセス許可のSharePointは、サイトへのアクセスに関するビジネス上の必要性に基づいて行なう必要があります。 これらのアクセス許可は、サイトの所有者によって管理され、非常に動的な場合があります。 SharePoint アクセス ポリシーを使用すると、ユーザーが開始点、エンタープライズ、または特殊なセキュリティ保護に関連付けられた Azure AD グループに割り当てられているかどうかに関係なく、これらのサイトを保護できます。
+SharePoint サイトのアクセス許可は通常、サイトへのアクセスに対するビジネス ニーズに基づいていることを理解することが重要です。 これらの権限はサイト所有者によって管理され、高度に動的なものにすることができます。 SharePoint デバイス アクセス ポリシーを使用すると、ユーザーが開始点、エンタープライズ、または特殊なセキュリティ保護に関連付けられた Azure AD グループに割り当てられているかどうかに関係なく、これらのサイトを確実に保護できます。
 
-次の図は、デバイス アクセス ポリシーを使用SharePointサイトへのアクセスを保護する方法の例を示しています。
+次の図は、SharePoint デバイス アクセス ポリシーがユーザーのサイトへのアクセスを保護する方法の例を示しています。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="デバイス アクセス ポリシー SharePoint保護する方法の例。" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="SharePoint デバイス アクセス ポリシーがサイトを保護する方法の例。" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
 
-James には、条件付きアクセス ポリシーが割り当てられている開始点がありますが、エンタープライズまたは特殊なセキュリティ保護を使用して、SharePointサイトにアクセスできます。
+James には開始点の条件付きアクセス ポリシーが割り当てられていますが、エンタープライズまたは特殊なセキュリティ保護を備えた SharePoint サイトへのアクセスを許可できます。
 
-- James が自分の PC を使用してエンタープライズまたは特殊なセキュリティ保護のメンバーであるサイトにアクセスすると、アクセスが許可されます。
-- James が管理されていない電話を使用するメンバーであるエンタープライズ保護サイトにアクセスすると、このサイト用に構成されたデバイス アクセス ポリシーにより、ユーザーはブラウザー専用のエンタープライズ サイトへのアクセスを受け取る。
-- James が管理されていない電話を使用するメンバーである特殊なセキュリティ サイトにアクセスすると、このサイト用に構成されたアクセス ポリシーが原因でブロックされます。 このサイトには、自分の管理された PC を使用してしかアクセスできません。
+- James が自分の PC を使用して、エンタープライズまたは特殊なセキュリティ保護のメンバーであるサイトにアクセスすると、アクセスが許可されます。
+- James が自分の管理されていない電話を使用してメンバーであるエンタープライズ保護サイトにアクセスすると、このサイトに設定されたデバイスのアクセス許可ポリシーにより、エンタープライズ サイトへのブラウザのみのアクセスが許可されます。
+- ジェームズが管理されていない電話を使用して、自分がメンバーである専用セキュリティ サイトにアクセスすると、このサイトに設定されているアクセスポリシーのためにブロックされます。 彼は自分のマネージド PC を使用してのみこのサイトにアクセスできます。
 
 ## <a name="next-step"></a>次の手順
 
-![手順 4: クラウド アプリMicrosoft 365ポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![手順 4: Microsoft 365 クラウド アプリのポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
-次の条件付きアクセス ポリシーを構成します。
+次の条件付きアクセス ポリシーを構成する:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)

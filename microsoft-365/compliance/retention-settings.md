@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 049181657dd74639fb4c4a22e371015830baf19a
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 81a5219826fc1f8e4bc43a54d0687306738a57da
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282983"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520934"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -158,23 +158,30 @@ PowerShell を使用してクエリを実行するには:
 
 1. [適切な Exchange Online 管理者権限](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet)を持つアカウントを使用して [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. [Get-Recipient](/powershell/module/exchange/get-recipient) または [Get-Mailbox](/powershell/module/exchange/get-mailbox) のいずれかを *-Filter* パラメーターと一緒に使用し、中括弧 (`{`,`}`) で囲まれたアダプティブ スコープの [OPATH クエリ](/powershell/exchange/filter-properties)を使用します。 属性値にスペースが含まれている場合は、属性値を二重引用符または単一引用符で囲みます。 
+2. [Get-Recipient](/powershell/module/exchange/get-recipient) または [Get-Mailbox](/powershell/module/exchange/get-mailbox) のいずれかを *-Filter* パラメーターと一緒に使用し、中括弧 (`{`,`}`) で囲まれたアダプティブ スコープの [OPATH クエリ](/powershell/exchange/filter-properties)を使用します。 属性値が文字列の場合は、属性値を二重引用符または単一引用符で囲みます。  
 
-    **ユーザー** スコープを検証する場合は、コマンドに `-RecipientTypeDetails UserMailbox` を含めます。**Microsoft 365 グループ** スコープの場合は、`-RecipientTypeDetails GroupMailbox` を含めます。
+    クエリに選択した [OPATH プロパティ](/powershell/exchange/filter-properties)でサポートされているコマンドレットを特定することで、検証に `Get-Mailbox` と `Get-Recipient` のどちらを使用するかを決定できます。 
 
-    > [!TIP]
-    > クエリ サポートで使用する [OPATH プロパティ](/powershell/exchange/filter-properties)を選択したコマンドレットに応じて、`Get-Mailbox` または `Get-Recipient` のどちらを使用して検証するかを決定できます。
+    > [!IMPORTANT]
+    > `Get-Mailbox` は *MailUser* 受信者タイプをサポートしていないため、ハイブリッド環境でオンプレミスのメールボックスを含むクエリを検証するには、`Get-Recipient` を使用する必要があります。
+
+    **ユーザー** スコープを検証するには、次のいずれかを使用します。
+    - `Get-Mailbox` と `-RecipientTypeDetails UserMailbox` または
+    - `Get-Recipient` および `-RecipientTypeDetails UserMailbox,MailUser`
+    
+    **Microsoft 365 グループ** スコープを検証するには、次を使用します。
+    - `Get-Mailbox` または `Get-Recipient` と `-RecipientTypeDetails GroupMailbox`
 
     たとえば、**ユーザー** スコープを検証するには、次を使用できます。
     
     ````PowerShell
-    Get-Recipient -RecipientTypeDetails UserMailbox -Filter {Department -eq "Sales and Marketing"} -ResultSize Unlimited
+    Get-Recipient -RecipientTypeDetails UserMailbox,MailUser -Filter {Department -eq "Marketing"} -ResultSize Unlimited
     ````
     
     **Microsoft 365 グループ** スコープを検証するには、次を使用できます。
     
     ```PowerShell
-    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Sales and Marketing"} -ResultSize Unlimited
+    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
 
 3. 出力が、アダプティブ スコープの予想されるユーザーまたはグループと一致することを確認します。 そうでない場合は、Azure AD または Exchange の関連する管理者にクエリと値を確認します。

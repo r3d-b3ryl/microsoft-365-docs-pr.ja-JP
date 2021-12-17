@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアには、ユーザーやテクノロジのエクスペリエンス測定がどのように反映されているか、同規模の組織との比較をご覧ください。
-ms.openlocfilehash: fabfc66a6624cac16675d1276758b4ef16d35392
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: be8715942639b3e00fc3a8d49782684bbef99fbf
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372866"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530849"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -163,4 +163,4 @@ Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** �
 
 [レポートを使用して Microsoft 365 のアクティビティを監視する](../../admin/activity-reports/activity-reports.md) (記事)\
 [Microsoft 365 利用状況分析を有効にする](../../admin/usage-analytics/enable-usage-analytics.md) (記事)\
-[Microsoft 365 管理センターの概要] ([Microsoft 365 管理センターの概要 ](../admin-overview/admin-center-overview.md) (ビデオ)
+[Microsoft 365 管理センターの概要](Microsoft 365 管理センターの概要](../admin-overview/admin-center-overview.md) (ビデオ)
