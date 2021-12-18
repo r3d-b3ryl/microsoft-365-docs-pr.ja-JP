@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c9ab46c5f801a9069f4b1614f6b04161ee431d5b
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 18751128d4804cfb3a61377caefba1478b7bd515
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531776"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560290"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
@@ -63,8 +63,6 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
     > PST ファイルをインポートするための新しい役割グループを ExchangeOnline で作成することを検討します。PST ファイルをインポートするのに必要な最小レベルの権限では、新しい役割グループに Mailbox Import Export の役割および Mail Recipients の役割を割り当て、メンバーを追加します。
   
 - PST ファイルを Microsoft 365 にインポートするためにサポートされている唯一の方法は、この記事で説明されているように、AzCopy ツールを使用することです。 Azure Storage Explorer を使用して、PST ファイルを Azure Storage 領域に直接アップロードすることができません。
-
-- Microsoft 365 にインポートする PST ファイルは、組織内のファイル サーバーまたは共有フォルダーに保存する必要があります。 現在、組織の Azure Storage アカウントから、Microsoft 365 インポート サービスが使用する Azure Storage の場所への PST ファイルのコピーはサポートされていません。 手順 2 では、AzCopy ツールを実行して、ファイル サーバーや共有フォルダーに保存されている PST ファイルを Microsoft クラウドにアップロードします。
 
 - PST ファイルが大きい場合、PST のインポート プロセスのパフォーマンスに影響を与える場合があります。 そのため、手順 2で Azure Storage の場所にアップロードするそれぞれの PST ファイルは、20 GB 以下にすることをお勧めします。
 

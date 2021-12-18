@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3e833d4115eb71d766d33666f6da36cbdad99d02
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 3daa63ace419ed1a73511647c28b8fab9ac12d0d
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560758"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566461"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender ウイルス対策アプリでWindows セキュリティする
 
@@ -48,7 +48,7 @@ ms.locfileid: "61560758"
 
 :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="アプリ内のウイルスおよび脅威Windows セキュリティ設定。":::
 
-1. タスク バーのWindows セキュリティをクリックするか、Defender for Cloud のスタート メニューを検索して、アプリ **を開きます**。
+1. タスク バーのWindows セキュリティアイコンをクリックするか、スタート メニューでタスク バーの [シールド] アイコンをクリックして、アプリを開 **Windows セキュリティ。**
 
 2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) を選択します。
 
@@ -97,9 +97,9 @@ ms.locfileid: "61560758"
 
 2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) を選択します。
 
-3. [設定の **管理] で**、[ **ウイルス対策の脅威&設定] を選択します**。
+3. **[ウイルスと脅威保護設定]** で **[設定の管理]** を選択します。
 
-4. [除外 **] 設定で** 、[除外の追加と **削除] を選択します**。
+4. [ **除外] で**、[除外の **追加と削除] を選択します**。
 
 5. プラス アイコン ( ) を **+** 選択して種類を選択し、除外ごとにオプションを設定します。
 
