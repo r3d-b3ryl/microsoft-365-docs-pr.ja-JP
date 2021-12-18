@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: この記事では、サービスの暗号化が顧客キーとどのように機能するのかについてMicrosoft 365。
-ms.openlocfilehash: 009907ea9ef7be532618846484a40c6fd10ffc5d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7e81c6eb7e6ce6f7ac2ea2f8a61f15084032e955
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370370"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560170"
 ---
 # <a name="service-encryption-with-customer-key"></a>カスタマー キーによるサービスの暗号化
 
@@ -52,7 +52,6 @@ BitLocker と DKM を使用して、Microsoft 365サービスでデータは常�
 - Teams状態メッセージ
 - ユーザーとシグナルの情報をExchange Online
 - Exchange Online DEP によってまだ暗号化されていないメールボックス
-- 統合監査ログ ストレージ
 - Microsoft Information Protection:
 
   - データ ファイル スキーマ、ルール パッケージ、機密データのハッシュに使用される塩を含む、完全なデータ一致 (EDM) データ。 EDM および Microsoft Teams、マルチワークロード DEP は、DEP をテナントに割り当てる時から新しいデータを暗号化します。 たとえばExchange Online、顧客キーは既存のデータと新しいデータを暗号化します。

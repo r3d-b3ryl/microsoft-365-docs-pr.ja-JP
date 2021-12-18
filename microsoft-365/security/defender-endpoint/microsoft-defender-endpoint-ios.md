@@ -17,19 +17,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05b714c21a1fdb095457f60a715a6daee677886e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4e7d27e892b79c1b4b7d5d95f3f951490b6aabf7
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883619"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560254"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -84,7 +85,7 @@ iOS での Microsoft Defender for Endpoint の展開は、MICROSOFT エンドポ
 - Microsoft Defender for Endpoint on iOS をMicrosoft エンドポイント マネージャー登録されたデバイスへの展開の詳細については[、「Deploy Microsoft Defender for Endpoint on iOS」を参照してください](ios-install.md)。
 - アプリ保護ポリシー (MAM) で Defender for Endpoint を使用する方法の詳細については、「Defender for Endpoint risk [signals (MAM)](ios-install-unmanaged.md)を含めるアプリ保護ポリシーの構成」を参照してください。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 - iOS またはブログの Microsoft Defender [for Endpoint](ios-whatsnew.md) の新機能にアクセスして、今後のリリースについて情報を得 [る](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
 

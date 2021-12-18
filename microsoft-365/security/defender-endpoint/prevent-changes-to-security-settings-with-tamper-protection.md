@@ -17,14 +17,14 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 12/02/2021
+ms.date: 12/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 21a7d111d27042d8085ca196ef679b06c2c9f1a3
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 6259cafb34922d170c1c22429e3a06805f0cc0e3
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282767"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566701"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -35,6 +35,8 @@ ms.locfileid: "61282767"
 
 - Windows 10
 - Windows 11
+- Windows 10 Enterprise マルチセッション
+- Windows 11 Enterprise セッション 
 - Windows Server 2019
 - Windows Server 2022
 - Windows Server バージョン 1803 以降
@@ -56,6 +58,7 @@ ms.locfileid: "61282767"
 - ウイルス対策(IOfficeAntivirus (IOAV) など) の無効化
 - クラウド配信の保護の無効化
 - セキュリティ インテリジェンスの更新プログラムの削除
+- 検出された脅威に対する自動アクションの無効化
 
 ### <a name="how-it-works"></a>メカニズム
 
@@ -69,9 +72,7 @@ ms.locfileid: "61282767"
 
 ### <a name="what-do-you-want-to-do"></a>目的に合ったトピックをクリックしてください
 
-<br>
-
-****
+<br/><br/>
 
 |このタスクを実行するには...|このセクションを参照してください。|
 |---|---|
@@ -82,22 +83,18 @@ ms.locfileid: "61282767"
 |デバイスでの改ざんの試みについての詳細を表示する|[改ざんの試行に関する情報を表示する](#view-information-about-tampering-attempts)|
 |セキュリティに関する推奨事項を確認する|[セキュリティに関する推奨事項を確認する](#review-your-security-recommendations)|
 |よく寄せられる質問 (FAQ) の一覧を確認する|[FAQ を参照する](#view-information-about-tampering-attempts)|
-|
 
 タンパープロテクションを有効にするために使用する方法や管理ツールによっては、クラウドによる保護に依存している可能性があります。
 
 次の表に、メソッド、ツール、依存関係の詳細を示します。
 
-<br>
-
-****
+<br/><br/>
 
 |タンパープロテクションを有効にする方法|クラウドによる保護への依存 (MAPS)|
 |---|---|
-|Microsoft Intune|不要|
+|Microsoft Intune|いいえ|
 |Microsoft Endpoint Configuration Manager + テナント接続|いいえ|
 |Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) )|はい|
-|
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>ポータルを使用して組織の改ざん防止をMicrosoft 365 Defenderする
 
@@ -116,6 +113,7 @@ ms.locfileid: "61282767"
 - グローバル管理者、セキュリティ [管理者、](/microsoft-365/security/defender-endpoint/assign-portal-access) セキュリティ操作など、適切なアクセス許可が割り当てられている必要があります。
 
 - デバイスWindows次のいずれかのバージョンのデバイスを実行している必要Windows。
+  
   - Windows 10
   - Windows 11
   - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
@@ -125,7 +123,6 @@ ms.locfileid: "61282767"
   - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
 リリースの詳細については、「リリース情報Windows 10[参照してください](/windows/release-health/release-information)。
-
 
 - デバイスは、Microsoft [Defender for Endpoint にオンボードされている必要があります](/microsoft-365/security/defender-endpoint/onboarding)。
 
@@ -151,7 +148,7 @@ ms.locfileid: "61282767"
 
 - グローバル管理者、セキュリティ [管理者、](/microsoft-365/security/defender-endpoint/assign-portal-access) セキュリティ操作など、適切なアクセス許可が割り当てられている必要があります。
 
-- 組織は Intune を [使用してデバイスを管理します](/intune/fundamentals/what-is-device-management)。 ([Intune ライセンスが](/intune/fundamentals/licenses)必要です。Intune は、次のMicrosoft 365 E5)に含まれます。
+- 組織は Intune を [使用してデバイスを管理します](/intune/fundamentals/what-is-device-management)。 ([Intune ライセンスが](/intune/fundamentals/licenses)必要です。Intune は、Microsoft 365 E5/E3、Enterprise Mobility + Security E5/E3、Microsoft 365 Business Premium、Microsoft 365 F1/F3、Microsoft 365 Government G5/G3 に含まれています。および Intune for Education.)
 
 - デバイスWindows 11 または Windows OS [1709、1803、1809](/windows/release-health/status-windows-10-1709)以降[](/windows/release-health/status-windows-10-1809-and-windows-server-2019)Windows 10実行している必要があります。 [](/windows/release-health/status-windows-10-1803) (リリースの詳細については、「リリース情報Windows 10[参照してください](/windows/release-health/release-information)。)
 

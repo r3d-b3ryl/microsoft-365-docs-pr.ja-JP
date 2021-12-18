@@ -16,19 +16,19 @@ manager: dansimp
 ms.technology: mde
 ms.date: 10/26/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1624d30eb7e8112e2e8739c6d7cbfdb208f8816e
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: c7a4060bde3ab9e46a52713a3d4b9409f149ca0c
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122587"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560374"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
 **適用対象:**
 
 - Microsoft Defender ウイルス対策
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -140,7 +140,7 @@ Defender for Endpoint は、パッシブ モードMicrosoft Defender ウイル�
  | [リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md) | はい | いいえ <sup>[[4](#fn4)]</sup> | いいえ | いいえ | 
  | [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) | はい | いいえ  | いいえ | いいえ | 
  | [ネットワーク保護](network-protection.md)  | はい | いいえ | いいえ | いいえ | 
- | [攻撃面の減少ルール](attack-surface-reduction.md)  | はい | いいえ | いいえ  | いいえ | 
+ | [攻撃面の減少ルール](attack-surface-reduction.md)  | 必要 | いいえ | いいえ  | いいえ | 
  | [限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | いいえ | いいえ | はい | いいえ | 
  | [スキャン中ファイルと検出情報](review-scan-results-microsoft-defender-antivirus.md) | はい | はい | いいえ | はい | 
  | [脅威の修復](configure-remediation-microsoft-defender-antivirus.md) | はい | メモ <sup>[ 5 ][を参照してください](#fn5)。</sup> | いいえ | はい | 
@@ -179,7 +179,7 @@ Defender for Endpoint は、パッシブ モードMicrosoft Defender ウイル�
 
 <br/><br/>
 
- |  状態  |  動作  | 
+ |  State  |  動作  | 
  |---|---| 
  |  アクティブ モード  |  アクティブ モードでは、Microsoft Defender ウイルス対策はマシン上のウイルス対策アプリとして使用されます。 設定、グループ ポリシー、グループ ポリシー、その他の管理Microsoft Intuneを使用して構成されているユーザーが適用されます。 ファイルがスキャンされ、脅威が修復され、検出情報が構成ツール (エンドポイント自体の構成マネージャーやMicrosoft Defender ウイルス対策 アプリなど) で報告されます。  | 
  |  パッシブ モード  |  パッシブ モードでは、Microsoft Defender ウイルス対策はウイルス対策アプリとして使用されず、Microsoft Defender ウイルス対策によって脅威の修復を行われることは *ありません*。 ただし、ブロック モードではエンドポイントの検出と応答[(EDR)](edr-in-block-mode.md)によって脅威を修復できます。 <br/><br/> ファイルがスキャンされ、Defender for Endpoint サービスと共有される脅威検出のレポートが提供されます。 Defender [for Cloud](microsoft-defender-security-center.md)にアラートが表示Microsoft Defender ウイルス対策ソースとして表示される場合Microsoft Defender ウイルス対策がパッシブ モードの場合でも発生します。 <br/><br/> Microsoft Defender ウイルス対策がパッシブ モードの場合でも、[Microsoft Defender ウイルス対策の更新プログラムの管理](manage-updates-baselines-microsoft-defender-antivirus.md)をすることができますが、デバイスに Microsoft 以外のウイルス対策製品があり、マルウェアからリアルタイムで保護されている場合、Microsoft Defender ウイルス対策をアクティブ モードにすることはできません。 <br/><br/> セキュリティの多層防御と検出の有効性を最適化するには、Microsoft Defender ウイルス対策がパッシブ モードで実行されている場合でも、ウイルス対策とマルウェア対策の更新プログラムを取得してください。 [Microsoft Defender ウイルス対策の更新の管理を行い、ベースラインを適用する方法](manage-updates-baselines-microsoft-defender-antivirus.md)を参照してください。 <br/><br/> **注**: パッシブ モードは、デバイスでWindows Server 2016。  | 

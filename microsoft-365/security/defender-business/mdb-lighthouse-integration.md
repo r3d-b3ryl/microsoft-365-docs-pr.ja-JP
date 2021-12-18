@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/16/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3437ee8aeb07750032a4df1aa565a2c2cf173ffe
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: d05f22f38e3195348a5f4601c77e2cce6c6a44e2
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507256"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560722"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business-preview"></a>Microsoft 365 Lighthouse Microsoft Defender for Business (プレビュー)
 
@@ -32,18 +32,18 @@ ms.locfileid: "61507256"
 
 ## <a name="microsoft-defender-for-business-integrates-with-microsoft-365-lighthouse"></a>Microsoft Defender for Business は、Microsoft Defender for Business とMicrosoft 365 Lighthouse
 
-中小規模企業のセキュリティMicrosoft 365 Lighthouseを管理するために Microsoft Defender for Business (プレビュー) を使用している場合、Microsoft Defender for Business は Microsoft 365 Lighthouse。 この統合により、ポータル () 内のテナント間でセキュリティ インシデントMicrosoft 365 Lighthouse表示できます [https://lighthouse.microsoft.com](https://lighthouse.microsoft.com) 。 
+中小規模企業のセキュリティMicrosoft 365 Lighthouseを管理するために Microsoft Defender for Business (プレビュー) を使用している場合、Microsoft Defender for Business は Microsoft 365 Lighthouse。 これらの機能が使用可能になると、ポータル () でテナント全体のセキュリティ インシデントMicrosoft 365 Lighthouse表示できます [https://lighthouse.microsoft.com](https://lighthouse.microsoft.com) 。 
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="Microsoft 365 Lighthouse":::
 
 インシデントの一覧にアクセスするには、Microsoft 365 Lighthouse のホーム ページで [セキュリティ インシデント]カードを探し、[すべてのインシデントの表示] を **選択します**。
 
 > [!IMPORTANT]
-> プレビュー中、Microsoft 365 Lighthouseは、セキュリティ インシデントも含む顧客テナントと一緒に使用する場合にのみ、Defender for Business (プレビュー) からセキュリティ インシデントを引き出Microsoft 365 Business Premium。
+> プレビュー中、Microsoft 365 Lighthouseは、セキュリティ インシデントも含む顧客テナントと一緒に使用する場合にのみ、Defender for Business (プレビュー) からセキュリティ インシデントを引き出Microsoft 365 Business Premium。 この機能は、Microsoft 365 Lighthouse (プレビュー) と Defender for Business (preview0) で段階的に展開され、テスト シナリオとしてすぐには利用できない場合があります。
 
 ## <a name="learn-more-about-microsoft-365-lighthouse"></a>詳細については、Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouseサービス プロバイダーである Microsoft パートナーは、次のいずれかのサブスクリプションを持つ中小企業のお客様に対して、デバイス、データ、およびユーザーを大規模にセキュリティで保護および管理できます。
+Microsoft 365 Lighthouseプロバイダー Microsoft Cloud Service、次のいずれかのサブスクリプションを使用している中小規模のビジネス顧客に対して、デバイス、データ、およびユーザーを大規模に保護および管理できます。
 
 - [Microsoft 365 Business Premium](../../admin/admin-overview/what-is-microsoft-365.md)
 - [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md) [(Microsoft Defender for Endpoint Plan 1 が含まれています](../defender-endpoint/defender-endpoint-plan-1.md))

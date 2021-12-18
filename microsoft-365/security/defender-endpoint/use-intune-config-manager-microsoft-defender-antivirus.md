@@ -10,19 +10,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/16/2021
 ms.reviewer: phuijbr, oogunrinde
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 74814304460c33b108b6216db853504f1956e59b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1eb126481cc9872c42906e0311d1c771da44c693
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168380"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560210"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>[Microsoft エンドポイント マネージャーを使用して、構成および管理Microsoft Defender ウイルス対策
 
@@ -50,9 +50,12 @@ ms.locfileid: "61168380"
 
 6. **[構成の設定]** の横にある **[編集]** を選択します。
 
+   > [!IMPORTANT]
+   > AllowOnAccessProtection および AllowIntrusionPreventionSystem ウイルス対策設定は正式に廃止され、構成できません。 
+
 7. [スキャン] **セクションを** 展開し、スキャン設定を確認または編集します。
 
-8. [レビュー **] + [保存] の選択**
+8. [確認 **] + [保存] を選択します**。
 
 > [!TIP]
 > サポートが必要な場合 「Manage [endpoint security in Microsoft Intune」 を参照してください](/mem/intune/protect/endpoint-security)。

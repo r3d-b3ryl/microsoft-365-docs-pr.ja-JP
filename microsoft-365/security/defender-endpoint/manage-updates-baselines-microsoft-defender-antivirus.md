@@ -15,14 +15,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 12/13/2021
+ms.date: 12/16/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0c36d0e1f1c4ced84bbc914a3c0a4ce61e699b28
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 054016a9db24c508c5eb9418b8e7d049b30389ce
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426377"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560038"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -84,18 +84,27 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 - 統合の改善 (クラウド[、Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary> 2021 年 11 月 (プラットフォーム: 4.18.2111.X|エンジン: 1.1.18800.4)</summary>
+<summary>2021 年 11 月 (プラットフォーム: 4.18.2111.5|エンジン: 1.1.18800.4)</summary>
 
-&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.353.3.0**<br/>
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.355.2.0**<br/>
 &ensp;リリース: **2021 年 12 月 9 日**<br/>
-&ensp;プラットフォーム: **4.18.2111.X**<br/>
+&ensp;プラットフォーム: **4.18.2111.5**<br/>
 &ensp;エンジン: **1.1.18800.4**<br/>
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
 
-エンジンのバージョン: 1.1.18800.4 セキュリティ インテリジェンス更新プログラムのバージョン: 1.353.3.0
+エンジンのバージョン: 1.1.18800.4 セキュリティ インテリジェンス更新プログラムのバージョン: 1.355.2.0
 
 ### <a name="whats-new"></a>新機能
-新機能なし
+
+- サーバー上の特定の集中的なシナリオの CPU 使用率Exchange向上
+- Defender PowerShell モジュールの [デバイスコントロール] Get-MpComputerStatusフィールドが追加されました。 詳細については、「Microsoft Defender for Endpoint Device Control Removable [Storage」を参照してください](device-control-removable-storage-access-control.md)。
+- PowerShell で設定すると `SharedSignatureRoot` 値を削除できないバグを修正しました
+- Microsoft Defender for Endpoint [がタン](prevent-changes-to-security-settings-with-tamper-protection.md) パープロテクションが有効になっていることを示したにもかかわらず、改ざん防止が有効にできなかったバグを修正しました
+- このツールのパフォーマンス アナライザーにサポート機能とバグ修正Microsoft Defender ウイルス対策しました。 詳細については、「パフォーマンス アナライザー [for Microsoft Defender ウイルス対策」 を参照してください](tune-performance-defender-antivirus.md)。   
+   - PowerShell ISE のサポートが追加されました `New-MpPerformanceRecording`
+   - 修正されたバグ エラー `Get-MpPerformanceReport -TopFilesPerProcess`
+   - PowerShell 7.x、リモート セッション、および PowerShell ISE で使用する場合のパフォーマンス記録 `New-MpPerformanceRecording` セッションリークを修正しました
+
 
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません

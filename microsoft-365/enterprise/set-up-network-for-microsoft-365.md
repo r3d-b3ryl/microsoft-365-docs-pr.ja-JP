@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: ネットワーク接続の概要やエンドポイントの一覧など、Microsoft 365の設定に役立つ情報を含む記事へのリンクを検索します。
-ms.openlocfilehash: 0608fed03721a12d89fdac7d9bdd1574e34471b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c21a7a09e43957c806bca9dd64d425fcef2415fc
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213231"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566629"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>ネットワークをセットアップMicrosoft 365
 
@@ -65,7 +65,6 @@ Office 365 のクラウドベース サービスのパフォーマンスを最�
 | [米国政府の DoD エンドポイント](microsoft-365-u-s-government-dod-endpoints.md) | 米国国防総省 (DoD) のサブスクリプションのエンドポイント。 |
 | [米国政府の GCC High エンドポイント](microsoft-365-u-s-government-gcc-high-endpoints.md) | 米国政府機関向けコミュニティ クラウド High (GCC High) サブスクリプションのエンドポイント。 |
 | [21Vianet エンドポイントが運用している Office 365](urls-and-ip-address-ranges-21vianet.md) | 中国での Office 365 のニーズを満たすために設計された、21Vianet が運用する Office 365 のエンドポイント。 |
-| [Office 365 Germany エンドポイント](microsoft-365-germany-endpoints.md) | ヨーロッパにある、規制が最も厳しいドイツ、欧州連合 (EU)、および欧州自由貿易連合 (EFTA) のお客様向けの特別なクラウドのエンドポイント。 |
 |||
 
 Office 365 クラウドのエンドポイントの最新の一覧を自動的に取得するには、「[Office 365 IP アドレスと URL の Web サービス](microsoft-365-ip-web-service.md)」を参照してください。

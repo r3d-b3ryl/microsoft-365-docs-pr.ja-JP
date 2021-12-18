@@ -14,17 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e22ee784609ab04973d88de7539b567027cc98d6
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: d05da8e18ce02e5b41227486d44368edf29a58ed
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283127"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560446"
 ---
 # <a name="supported-managed-security-service-providers"></a>サポート対象マネージド セキュリティ サービス プロバイダー
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -58,5 +59,5 @@ ms.locfileid: "61283127"
 ![Wortell のクラウド SOC ロゴのイメージ。](images/wortell-logo.png)| [Wortell のクラウド SOC](https://go.microsoft.com/fwlink/?linkid=2108415) | 24 時間 365 日のエンドポイント 対応を監視する 24 時間 365 日& Defender
 ![ゼロトラスト分析プラットフォーム (ZTAP) ロゴのイメージ。](images/ztap-logo.png)| [ゼロトラスト分析プラットフォーム (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | アラートを 99% 削減し、モバイル デバイスからさまざまなセキュリティ機能にアクセスする
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [管理サービス セキュリティ プロバイダーの統合を構成する](configure-mssp-support.md)

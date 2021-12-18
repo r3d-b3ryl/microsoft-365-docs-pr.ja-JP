@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c5449f197d24df27f86ac8c5149d2e9fb969580b
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: c9ab46c5f801a9069f4b1614f6b04161ee431d5b
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521128"
+ms.locfileid: "61531776"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
@@ -146,12 +146,13 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
 
     次の表は、azcopy.exe のフィールドとそれに必要な値を説明したものです。 前の手順で取得した情報は、これらのフィールドの値に使用されます。
 
-    | Field | 説明 | 例 |
-    |:-----|:-----|:-----|
-    | ソース |最初のフィールドは、Microsoft 365 にアップロードされる PST ファイルを含む組織内のソース ディレクトリを指定します。 または、アップロードする PST ファイルのソースの場所として、Azure Storage の場所を指定することもできます。 <br/> このフィールドの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> | `"\\FILESERVER01\PSTs"` <br/> または  <br/>`"https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx"` |
-    | Destination (転送先) |手順 1 で取得した SAS URL を指定します。  <br/> このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。<br/><br/>**注:** スクリプトまたはバッチ ファイルで SAS URL を使用している場合は、エスケープする必要がある特定の文字に注意する必要があります。 たとえば、`%` は `%%` に変更し、`&` は `^&` に変更する必要があります。<br/><br/>**ヒント:** (省略可能) PST ファイルをアップロードする Azure Storage の場所にサブフォルダーを指定できます。 SAS URL で ("ingestiondata" の後に) サブフォルダーの場所を追加してこの操作を行います。 最初の例では、サブフォルダーを指定しません。 つまり、PST は、Azure Storage の場所の (*ingestiondata* という名前の) ルートにアップロードされます。 2 つ目の例では、PST ファイルを Azure Storage の場所のルートにある (*PSTFiles* という名前の) サブフォルダーにアップロードします。  <br/> | `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> または  <br/>  `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
-    | `--recursive` |この省略可能なフラグによって再帰モードが指定され、AzCopy ツールがソース フィールドで指定されるソース ディレクトリのサブフォルダーにある PST ファイルをコピーするようになります。 このフラグの既定値は `true` です。 <br/>**注:** このフラグを含めると、サブフォルダー内の PST ファイルには、アップロード後、Azure Storage の場所に別のファイルのパス名が指定されます。 手順 4 で作成した CSV ファイルの正確なファイルのパス名を指定する必要があります。|`--recursive`  |
-    |`--s2s-preserve-access-tier` | このオプション フラグは、ソースの場所がアクセス層をサポートする汎用 v2 Azure Storage の場所である場合にのみ必要です。 PST インポート シナリオでは、 PST ファイルを Azure Storage アカウントから Microsoft が提供する Azure Storage の場所にコピーするときに、アクセス層を保持する必要はありません。 この場合、このフラグを含め、`false` の値を使用できます。 アクセス層をサポートしていないクラシック Azure Storage アカウントから PST ファイルをコピーする場合は、このフラグを使用する必要はありません。|`--s2s-preserve-access-tier=false` |
+    | Field | 説明 |
+    |:-----|:-----|
+    | ソース |最初のフィールドは、Microsoft 365 にアップロードされる PST ファイルを含む組織内のソース ディレクトリを指定します。 または、アップロードする PST ファイルのソースの場所として、Azure Storage の場所を指定することもできます。 <br/> このフィールドの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> <br/>**例**: <br/>`"\\FILESERVER01\PSTs"` <br/> または  <br/>`"https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx"`|  
+    | Destination (転送先) |手順 1 で取得した SAS URL を指定します。  <br/> このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。<br/><br/>**注:** スクリプトまたはバッチ ファイルで SAS URL を使用している場合は、エスケープする必要がある特定の文字に注意する必要があります。 たとえば、`%` は `%%` に変更し、`&` は `^&` に変更する必要があります。<br/><br/>**ヒント:** (省略可能) PST ファイルをアップロードする Azure Storage の場所にサブフォルダーを指定できます。 SAS URL で ("ingestiondata" の後に) サブフォルダーの場所を追加してこの操作を行います。 最初の例では、サブフォルダーを指定しません。 つまり、PST は、Azure Storage の場所の (*ingestiondata* という名前の) ルートにアップロードされます。 2 つ目の例では、PST ファイルを Azure Storage の場所のルートにある (*PSTFiles* という名前の) サブフォルダーにアップロードします。  <br/><br/>**例**: <br/> `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> または  <br/>  `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `--recursive` |この省略可能なフラグによって再帰モードが指定され、AzCopy ツールがソース フィールドで指定されるソース ディレクトリのサブフォルダーにある PST ファイルをコピーするようになります。 このフラグの既定値は `true` です。 <br/>**注:** このフラグを含めると、サブフォルダー内の PST ファイルには、アップロード後、Azure Storage の場所に別のファイルのパス名が指定されます。 手順 4 で作成した CSV ファイルの正確なファイルのパス名を指定する必要があります。|
+    | `--s2s-preserve-access-tier` | このオプション フラグは、ソースの場所がアクセス層をサポートする汎用 v2 Azure Storage の場所である場合にのみ必要です。 PST インポート シナリオでは、 PST ファイルを Azure Storage アカウントから Microsoft が提供する Azure Storage の場所にコピーするときに、アクセス層を保持する必要はありません。 この場合、このフラグを含め、`false` の値を使用できます。 アクセス層をサポートしていないクラシック Azure Storage アカウントから PST ファイルをコピーする場合は、このフラグを使用する必要はありません。|
+   |||
 
 **azcopy.exe コピー** コマンドの詳細については、「[azcopy のコピー](/azure/storage/common/storage-ref-azcopy-copy)」を参照してください。
 

@@ -17,24 +17,24 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c575cc6b235f82c02404f29d33712731609322a2
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 83871a547aa2f644d70ada5cb121d3b32a6d9bdb
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646928"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560362"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender for Endpoint - Mobile Threat Defense
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Android および iOS のエンドポイント向け Microsoft Defender は、モバイル **脅威防御ソリューション (MTD) です**。 通常、企業は PC を脆弱性や攻撃から保護するために積極的に取り組み、モバイル デバイスは多くの場合、保護されていない状態で保護されます。 モバイル プラットフォームにアプリの分離や消費者向けアプリ ストアなどの組み込みの保護が組み込みされている場合、これらのプラットフォームは Web ベースまたは他の高度な攻撃に対して脆弱なままです。 従業員が仕事用にデバイスを使用し、機密情報にアクセスする場合、企業は MTD ソリューションを展開して、デバイスとリソースをモバイルでのますます高度な攻撃から保護する必要があります。
+Android および iOS のエンドポイント向け Microsoft Defender は、モバイル **脅威防御ソリューション (MTD) です**。 通常、会社は PC を脆弱性や攻撃から保護することには積極的ですが、一方で、モバイル デバイスは多くの場合、監視や保護のない状態が続きます。 モバイル プラットフォームにアプリの分離や消費者向けアプリ ストアなどの組み込みの保護が組み込みされている場合、これらのプラットフォームは Web ベースまたは他の高度な攻撃に対して脆弱なままです。 従業員が仕事用にデバイスを使用し、機密情報にアクセスする場合、企業は MTD ソリューションを展開して、デバイスとリソースをモバイルでのますます高度な攻撃から保護する必要があります。
 
 ## <a name="key-capabilities"></a>主な機能
 
@@ -100,7 +100,7 @@ Microsoft Defender for Endpoint を使用したモバイル脅威防御の評価
 - [Android Enterprise - セットアップ Always-on VPN](android-intune.md#auto-setup-of-always-on-vpn)。
 - [iOS - VPN プロファイルの自動セットアップ](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)
 
-## <a name="configure"></a>構成
+## <a name="configure"></a>Configure
 
 - [Android の機能を構成する](android-configure.md)
 - [iOS 機能の構成](ios-configure-features.md)

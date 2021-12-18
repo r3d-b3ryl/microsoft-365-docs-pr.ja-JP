@@ -13,14 +13,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 12/06/2021
+ms.date: 12/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ab6f9d617e2d1ac91aa084286673af49eaeb7e2f
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 616dde760ab24d12efe5c4621a1ee1829cb1798f
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320733"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566665"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -138,7 +138,7 @@ PowerShell を使用して、拡張子、場所、またはファイル名に基
 
 次の表に、PowerShell コマンドレットの部分で使用 `<cmdlet>` できるコマンドレットを示します。
 
-<br/>
+<br/><br/>
 
 |構成アクション|PowerShell コマンドレット|
 |:---|:---|
@@ -148,7 +148,7 @@ PowerShell を使用して、拡張子、場所、またはファイル名に基
 
 次の表に、PowerShell コマンドレットの部分で使用できる `<exclusion list>` 値を示します。
 
-<br/>
+<br/><br/>
 
 |除外の種類|PowerShell パラメーター|
 |---|---|
@@ -203,7 +203,7 @@ ExclusionPath
     
 次の表では、ワイルドカードの使用方法と例を示します。
 
-<br/>
+<br/><br/>
 
 |ワイルドカード|例|
 |---|---|
@@ -224,7 +224,7 @@ ExclusionPath
 
 次の表に、システム アカウント環境変数の一覧と説明を示します。
 
-<br/>
+<br/><br/>
 
 |このシステム環境変数...|リダイレクト先|
 |---|---|
@@ -316,12 +316,12 @@ PowerShell を使用する場合は、次の 2 つの方法でリストを取得
 ```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.2110-6.0 (Where 4.18.2110-6.0 is this month's Microsoft Defender Antivirus "Platform Update".)
+cd 4.18.2111-5.0 (Where 4.18.2111-5.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> MpCmdRun で除外をチェックするには、Microsoft Defender ウイルス対策 CAMP バージョン 4.18.2110-6.0 (2021 年 11 月リリース) 以降が必要です。
+> MpCmdRun で除外をチェックするには、Microsoft Defender ウイルス対策 CAMP バージョン 4.18.2111-5.0 (2021 年 12 月にリリース) 以降が必要です。
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>PowerShell を使用して、他のすべてのユーザー設定とMicrosoft Defender ウイルス対策一覧を確認する
 

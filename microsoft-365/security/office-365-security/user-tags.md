@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、プラン 2 の Microsoft Defender でユーザー タグを持つユーザーの特定のグループOffice 365学習できます。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別Office 365に使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3472a7625082e21d88e01db12cd5d8d14f86c27
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 47812108b925882c4d278c31c58cd29ad698a954
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422749"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559978"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365
 
@@ -50,6 +50,7 @@ ms.locfileid: "61422749"
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
 - [キャンペーン ビュー](campaigns.md)
 - [管理者およびユーザーの申請](admin-submission.md)
+- [検疫](quarantine.md)
 - 優先度アカウントの場合は、管理センター[](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)の [優先アカウントのメールの問題<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">] レポートExchange使用できます</a>。
 
 この記事では、ポータルでユーザー タグを構成するMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">説明します</a>。 ユーザー タグを管理するためのMicrosoft 365 Defenderポータルにはコマンドレットはありません。
@@ -61,15 +62,16 @@ ms.locfileid: "61422749"
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a> で Microsoft 365 Defender ポータルを開きます。 [ユーザー タグ] ページに **直接移動するには** 、を開きます <https://security.microsoft.com/securitysettings/userTags> 。
 
 - この記事の手順を実行するには、Microsoft 365 Defenderポータルでアクセス許可を割り当てる必要があります。
-  - ユーザー タグを作成、変更、および削除するには、組織の管理役割グループまたはセキュリティ管理者役割グループ **のメンバーである** 必要があります。
-  - 既存のユーザー タグのメンバーを追加および削除するには、組織の管理、セキュリティ管理者、またはセキュリティオペレーターの役割グループ **のメンバーである** 必要があります。
+  - カスタム ユーザー タグを作成、変更、および削除するには、組織の管理役割グループまたはセキュリティ管理者役割グループの **メンバーである** 必要があります。
+  - Priority Account システム タグのメンバーを追加および削除するには、セキュリティ管理者のメンバーであり、管理者の役割 **グループExchange必要** があります。
+  - 既存のカスタム ユーザー タグのメンバーを追加および削除するには、組織の管理、セキュリティ管理者、またはセキュリティ オペレーターの役割グループ **のメンバーである** 必要があります。
   - ユーザー タグへの読み取り専用アクセスでは、グローバル リーダーまたはセキュリティリーダーの役割グループ **のメンバーである** 必要があります。
 
   詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
   > [!NOTE]
   >
-  > - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+  > - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
   > - ユーザー タグ管理は、タグ リーダーと **タグ マネージャー** の **役割によって制御** されます。
 

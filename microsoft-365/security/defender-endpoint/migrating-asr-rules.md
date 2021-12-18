@@ -15,14 +15,18 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8f9f79b5db7a29e908838bacdce798609a9f2422
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 2530f38bdcfdbb74bdd9a80c59c53c9e273e1449
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659558"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560692"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>サードパーティの HIPS から ASR ルールへの移行
+
+**適用対象:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 この記事では、一般的なルールを Microsoft Defender for Endpoint にマップするのに役立ちます。
 

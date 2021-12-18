@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a7d91adf6e511c9eada8a45f166442e279e6d55b
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 1f6479f3bbf6f636298858d50938846cfddca101
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531353"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566641"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>攻撃面の減少ルールを評価する
 
@@ -40,12 +40,13 @@ ms.locfileid: "61531353"
 - Windows 10 Enterpriseバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - Windows Server バージョン[1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
--  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 - Windows Server 2022
 
-> [!WARNING]
-> 攻撃サービスの縮小ルールを有効にすると、Windows Server 2016予期しない結果を引き起こし、サーバーのパフォーマンスに影響を与える可能性があります。 サポートされていないプラットフォームに対して攻撃表面の縮小ルールを有効または展開はお勧めしません。
+> [!Note]
+> 最新の統合ソリューション パッケージをWindows Server 2012 R2 および Windows Server 2016攻撃表面の縮小ルールを使用できます。 詳細については[、「Windows 2012 R2 および 2016](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) Preview の最新の統合ソリューションの新機能」を参照してください。トピック[「Windows](configure-server-endpoints.md)サーバーを Microsoft Defender for Endpoint サービスにオンボードする」を参照してください。
+「Microsoft [Defender for Endpoint: Defending Windows Server 2012 R2 and 2016」も参照](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292)してください。
 
 監査モードで組織の機能を直接テスト[](audit-windows-defender.md)することで、攻撃表面の縮小ルールを評価する方法について学習します。
 

@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: データ損失防止ポリシーで名前付きエンティティを利用するには、次の手順を使用します。
-ms.openlocfilehash: eec82365e6fb4af4b6ca23896addd491637ec022
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 75a203b578217c5bbc1e8f67cf04b8d564735bd0
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110813"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560434"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
 
@@ -55,10 +55,11 @@ ms.locfileid: "61110813"
 - SharePoint サイト
 - OneDrive アカウント
 - Teams チャットおよびチャネル メッセージ
+- デバイス (Windows 10 エンドポイント デバイス)
 
 名前付きエンティティの SIT と拡張ポリシーは、次の場合はサポートされていません。
 
-- デバイス (Windows 10 エンドポイント デバイス)
+
 - オンプレミス リポジトリ
 
 ## <a name="create-and-edit-enhanced-policies"></a>拡張ポリシーの作成と編集
@@ -79,16 +80,16 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの作
 |ワークロード/サービス  |名前付きエンティティのパブリック プレビューのサポート  |
 |---------|---------|
 |Office Win32 クライアント ポリシーヒント    |サポートなし  |
-|Office WAC クライアント ポリシーヒント    |サポート対象         |
+|Office WAC クライアント ポリシーヒント    |されていません         |
 |OWA ポリシーヒント     |サポートなし         |
 |Outlookポリシーヒント     |サポートなし |
 |エンドポイント (Windows 10デバイス)     |サポートなし  |
 |Exchange トランスポート ルール     |サポートなし |
-|OneDrive for Business保存時のデータ     |サポート対象         |
-|SharePointオンライン データの保存     |サポート対象         |
-|Teams保存時のデータ     |サポート対象         |
+|OneDrive for Business保存時のデータ     |されていません         |
+|SharePointオンライン データの保存     |されていません         |
+|Teams保存時のデータ     |されていません         |
 |電子メール メッセージの保存時のデータ     |サポートなし         |
-|Microsoft Defender for Cloud Apps     |サポート対象         |
+|Microsoft Defender for Cloud Apps     |されていません         |
 
 ### <a name="autolabeling"></a>自動ラベル付け
 
@@ -97,11 +98,11 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの作
 |Office Win32 クライアントをオフラインにする   |サポートされている場合、ユーザーはラベルを選択して手動で適用する必要があります |
 |オンライン Office Win32 クライアント|古い信頼度スキームでサポートされる |
 |Outlookオンライン   |古い信頼度スキームでサポートされる  |
-|Office WAC クライアント     |サポート対象 |
+|Office WAC クライアント     |されていません |
 |OWA     |サポート対象 |
 |Exchangeトランスポート     |サポートなし |
-|OneDrive for Business保存時のデータ     |サポート対象 |
-|SharePointオンライン データの保存|サポート対象|
+|OneDrive for Business保存時のデータ     |されていません |
+|SharePointオンライン データの保存|されていません|
 |Azure Information Protection (AIP) スキャナー|サポートなし|
 
 ## <a name="known-issues"></a>既知の問題
@@ -110,8 +111,9 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの作
 |---------|---------|
 |DLP ポリシーのヒント (OWA、Outlook、Office Win32 クライアント)     |   エンティティ条件を含むポリシー ヒントでは、"一致しない" という結果になります。      |
 | 人名のアジア言語サポート (中国語、日本語、韓国語)    | ユーザー名に対してラテンベースの文字セットでのみサポートされる名前付きエンティティ (つまり、漢字はサポートされていません)        |
-|デバイスのワークロード (エンドポイント)     | ワークロードとしてサポートされていません 。 名前付きエンティティを使用したポリシーの作成は許可されません        |
 |オンプレミス リポジトリ    | ワークロードとしてサポートされていません|
+
+<!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
 
 ## <a name="for-further-information"></a>詳細については、次の情報を参照してください。
 <!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->

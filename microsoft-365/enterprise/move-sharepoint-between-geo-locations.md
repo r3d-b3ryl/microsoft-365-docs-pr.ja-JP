@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 複数地域の環境内SharePoint別の地域の場所にサイトを移動し、ユーザーに変更の期待を伝える方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 44f6b8323f99419706378ff963259cf5c5fa85e9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: adfa96822e31dce43b95a6eebc54b5f4698bdcca
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209671"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560746"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -28,8 +28,8 @@ SharePoint サイトの地域移動を使って、SharePoint サイトを複数�
 
 次のサイトの種類は地域のジオ位置情報間を移動することができます。
 
-- Microsoft 365グループ接続サイト (グループに関連付けられているサイトを含むMicrosoft Teams
-- Microsoft 365 グループと関連付けのないモダン サイト
+- Microsoft 365に関連付けられているサイトを含む、グループに接続されたサイトMicrosoft Teams
+- グループの関連付けをMicrosoft 365モダン サイト
 - 従来の SharePoint サイト
 - コミュニケーション サイト
 
@@ -80,7 +80,7 @@ SharePoint サイトの地域移動は　サイトがあるジオ位置情報で
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint[オンライン管理シェル] ウィンドウに、Connect-SPOService表示されます。](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePointコマンドを表示する [オンライン管理シェル] Connect-SPOServiceします。](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>環境の検証
 
@@ -102,13 +102,13 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 サイトが移動準備完了の場合、*正常に完了*　と返ってきます。ブロックされている状態がある場合は、*失敗* と返ってきます。
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Microsoft 365 グループと関連付けられていないサイトへ SharePoint サイトの地域の移動を開始する
+### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>関連付SharePointグループを持つサイトのサイト地域移動を開始Microsoft 365する
 
 既定値では、サイトの最初のURL は移動先のジオ位置情報の URL に変更されます。 例:
 
 <https://Contoso.sharepoint.com/sites/projectx> から <https://ContosoEUR.sharepoint.com/sites/projectx>
 
-Microsoft 365 グループと関連付けられていないサイトは、`-DestinationUrl` パラメーターを使ってサイト名を変更できます。 例:
+グループの関連付Microsoft 365サイトの場合は、パラメーターを使用してサイトの名前を変更 `-DestinationUrl` することもできます。 例:
 
 <https://Contoso.sharepoint.com/sites/projectx> から <https://ContosoEUR.sharepoint.com/sites/projecty>
 
@@ -120,11 +120,11 @@ Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <Dest
 
 ![コマンドレットを示す PowerShell ウィンドウStart-SPOSiteContentMoveします。](../media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Microsoft 365 グループが接続されているサイトへ SharePoint サイトの地域の移動を開始する
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>グループ接続SharePointサイトのサイト地域移動Microsoft 365開始する
 
-Office 365 グループ接続のサイトへ移動するには、グローバル管理者または SharePoint 管理者がまず、優先されるデータの場所 (PDL) を Office 365 グループの属性に最初に変更しなければなりません。
+グループに接続Microsoft 365サイトを移動するには、グローバル管理者または SharePoint 管理者が最初にグループの優先データの場所 (PDL) 属性をMicrosoft 365します。
 
-Microsoft 365 グループの PDL を設定するには:
+グループの PDL をMicrosoft 365するには、次のMicrosoft 365します。
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -199,9 +199,12 @@ OneNote win32 クライアントと UWP (ユニバーサル) アプリは、サ�
 - OneNote UWP: バージョン 16.0.8431.1006 (以降)
 - OneNote モバイル アプリ: バージョン 16.0.8431.1011 (以降)
 
-### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (Microsoft 365 グループと接続されているサイトに適用)
+### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (グループ接続サイトMicrosoft 365適用)
 
-SharePoint サイトの地域の移動が完了すると、ユーザーは Teams アプリの Microsoft 365 グループ サイトのファイルにアクセスできるようになります。 さらに、地域移動前にサイトからチーム チャット経由で共有したファイルは、移動が完了後に引き続き操作できるようになります。
+サイト地域SharePoint移動が完了すると、ユーザーはアプリ上Microsoft 365グループ サイト ファイルにTeamsされます。 さらに、地域移動前にサイトからチーム チャット経由で共有したファイルは、移動が完了後に引き続き操作できるようになります。
+
+SharePoint地域移動では、プライベート チャネルをある地域から別の地域に移動する機能はサポートされていません。 プライベート チャネルは元の geo に残ります。
+  
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>iOS/Android 用 SharePoint モバイル アプリ
 

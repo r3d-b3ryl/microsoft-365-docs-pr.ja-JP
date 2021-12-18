@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/10/2021
+ms.date: 12/16/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 8f1f1f9f3879b7e44f7c718b026d3daba55d7c62
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 154f67645062f6816ebdbfa24a2935c779f48c72
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507358"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559858"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business のチュートリアルとシミュレーション (プレビュー)
 
@@ -44,7 +44,7 @@ Microsoft Defender for Business (プレビュー) のセットアップが完了
 | デバイスを使用したオンボード Microsoft Intune     | Defender for Endpoint を取得する前Microsoft Intuneを既に使用していた場合は、Microsoft Intuneデバイスをオンボードできます。 macOS、iOS、Linux、および Android デバイスのオンボーディングを試Microsoft Intune。 詳細については、「デバイスの[登録」を参照Microsoft Intune。](/mem/intune/enrollment/device-enrollment)        |
 | セキュリティ ポリシーと設定の編集     | Defender for Business (プレビュー) でセキュリティ ポリシーと設定を管理している場合は、[デバイス構成] ページを使用してポリシーを表示および編集します。 詳細については、「Microsoft Defender for Business (プレビュー)のポリシーを表示 [または編集する」を参照してください](mdb-view-edit-policies.md)。        |
 | シミュレートされた攻撃を実行する   | Defender for Business (プレビュー) では、いくつかのチュートリアルとシミュレーションを利用できます。 これらのチュートリアルとシミュレーションは、Defender for Business (プレビュー) の脅威保護機能が会社でどのように機能するのか、直接説明するように設計されています。 1 つ以上のチュートリアルを試す場合は、「Microsoft Defender for Business (プレビュー) の推奨チュートリアル [」を参照してください](#recommended-tutorials-for-defender-for-business)。         |
-| [インシデントの表示] Microsoft 365 Lighthouse     | Microsoft パートナーがサービス を使用している場合Microsoft 365 Lighthouseポータルで顧客のテナント間のインシデントをMicrosoft 365 Lighthouseできます。 詳細については、「Microsoft 365 Lighthouse [Microsoft Defender for Business (プレビュー)」を参照してください](mdb-lighthouse-integration.md)。       |
+| [インシデントの表示] Microsoft 365 Lighthouse     | ユーザーが Microsoft クラウド ソリューション プロバイダー[をMicrosoft 365 Lighthouse](/partner-center/enrolling-in-the-csp-program)場合は、顧客のテナント全体のインシデントを、Microsoft 365 Lighthouseポータルですぐに表示できます。 詳細については、「Microsoft 365 Lighthouse [Microsoft Defender for Business (プレビュー)」を参照してください](mdb-lighthouse-integration.md)。       |
 
 
 ## <a name="recommended-tutorials-for-defender-for-business"></a>Defender for Business の推奨チュートリアル

@@ -16,12 +16,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4941f2aa207cfedffdb7dc9687023c3bdaa47ab2
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 64dbfb4c569c6ae388c0149789ead38ceddad0f4
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531930"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566497"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 
@@ -253,13 +253,7 @@ GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする
 
-次の条件が満たされていない限り、.exe、.dll、.scr などの実行可能ファイルが起動をブロックします。
-
-- 有病率: 実行可能ファイルは 1,000 を超えるエンドポイントで検出されます
-- Age: 実行可能ファイルは 24 時間以上前にリリースされました
-- 場所: 実行可能ファイルが信頼できるリストまたは除外リストに含まれている
-
-信頼されていない実行可能ファイルまたは不明な実行可能ファイルを起動すると、ファイルが悪意のあるものか最初ははっきりしない可能性があります。
+このルールは、実行ファイル (.exe、.dll .scr など) の起動をブロックします。 したがって、信頼されていない実行可能ファイルまたは不明な実行可能ファイルを起動すると、ファイルが悪意のあるものか最初は明らかではなかっていない可能性があります。
 
 > [!IMPORTANT]
 > このルールを [使用するには、クラウドによる保護](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) を有効にする必要があります。

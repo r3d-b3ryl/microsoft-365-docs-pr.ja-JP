@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: サイトの移動をスケジュールするOneDrive、ユーザーに期待を伝える方法など、さまざまな地域の場所にサイトを移動する方法に関する情報を確認します。
-ms.openlocfilehash: 232654ac0cea95fee6dfef036ecb87768e5768d9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd601c135ec59a51a413cb4867e567d5dd269752
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195355"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560818"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
@@ -62,7 +62,7 @@ geo move コマンドレットを使用する場合は、次の構文を使用�
 
 たとえば、ユーザー OneDrive 'Matt@contosoenergy.onmicrosoft.com' の場所を移動するには、ユーザーのOneDriveが EUR 地域の場所にあるとき、EUR SharePoint 管理センターに接続します。
 
-`Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
+`Connect-SPOService -url https://contosoenergyeur-admin.sharepoint.com`
 
 ![connect-sposervice コマンドレットを示す PowerShell ウィンドウのスクリーンショット。](../media/move-onedrive-between-geo-locations-image1.png)
 
@@ -193,7 +193,7 @@ OneNote win32 クライアントと UWP (ユニバーサル) アプリは、OneD
 
 OneDrive 地域移動の完了時に、ユーザーは Teams アプリで OneDrive ファイルにアクセスできます。さらに、地域移動の前に OneDrive から Teams チャットで共有したファイルは、移動の完了後も引き続き操作できます。
 
-### <a name="onedrive-mobile-app-ios"></a>OneDriveモバイル アプリ (iOS) 
+### <a name="onedrive-mobile-app-ios"></a>OneDrive モバイル アプリ (iOS) 
 
 OneDrive 地域移動の完了時に、ユーザーは、新しい OneDrive の場所に同期するために、iOS モバイル アプリでサインアウトしてから再度サインインする必要があります。
 

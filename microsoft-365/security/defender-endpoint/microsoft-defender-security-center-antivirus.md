@@ -16,18 +16,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1f0495adddb5617e61b3a044d97b478d54f17f2e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 3e833d4115eb71d766d33666f6da36cbdad99d02
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111629"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560758"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender ウイルス対策アプリでWindows セキュリティする
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 バージョン Windows 10 1703 以降では、Windows Defenderアプリはアプリの一部Windows セキュリティ。
 
@@ -110,8 +110,8 @@ ms.locfileid: "61111629"
 ****
 |除外の種類|によって定義される|動作|
 |---|---|---|
-|**ファイル**|場所 <br/>例: `c:\sample\sample.test`|特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。|
-|**Folder**|場所 <br/>例: `c:\test\sample`|指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。|
+|**ファイル**|Location <br/>例: `c:\sample\sample.test`|特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。|
+|**Folder**|Location <br/>例: `c:\test\sample`|指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。|
 |**ファイルの種類**|ファイル拡張子 <br/>例: `.test`|デバイス上の任意 `.test` の場所に拡張子を持つすべてのファイルは、Microsoft Defender ウイルス対策。|
 |**プロセス**|実行可能ファイルのパス <br>例: `c:\test\process.exe`|特定のプロセスと、そのプロセスによって開くファイルは、そのプロセスによってスキップMicrosoft Defender ウイルス対策。|
 |

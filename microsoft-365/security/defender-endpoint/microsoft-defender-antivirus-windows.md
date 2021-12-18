@@ -15,18 +15,17 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 465a2775bdec232e248cb6d14a96b86770b64e5c
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 7ad2f13c42aa2bef72713055a041cb934bf7df06
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121640"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560696"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows の Microsoft Defender ウイルス対策
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender ウイルス対策
 
 Microsoft Defender ウイルス対策は、Windows 10 と Windows 11、および Windows Server のバージョンで利用できます。

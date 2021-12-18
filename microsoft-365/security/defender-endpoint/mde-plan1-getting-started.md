@@ -14,14 +14,17 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 81b11caa5663677499d7a6fb78d8b48e5ffdebf6
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 419ebd04b7c83c2d0545efcc3ff6da7161c30c6b
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373838"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560578"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 の概要
+
+**適用対象:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅威に関する情報を表示し、アラートとインシデントを管理し、検出された脅威に対して必要なアクションを実行し、デバイス [https://security.microsoft.com](https://security.microsoft.com) を管理できます。 このMicrosoft 365 Defenderポータルでは、Defender for Endpoint Plan 1 で取得する脅威保護機能の操作を開始できます。 次のセクションでは、開始する方法について説明します。
 
@@ -74,7 +77,7 @@ Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅�
 | **正常性**  > **サービスの正常性** | [サービス正常性] ページの [サービス正常性] ページにMicrosoft 365 管理センター。 このページでは、組織のサブスクリプションで利用可能なすべてのサービスの正常性状態を表示できます。   |
 | **正常性**  > **メッセージ センター** | [メッセージ] ページの [メッセージ] センターに移動Microsoft 365 管理センター。 メッセージ センターは、計画された変更に関する情報を提供します。 各メッセージには、何が来ているか、ユーザーに与える影響、および変更を管理する方法が説明されています。 |  
 | **ロール&アクセス許可** | ポータルを使用するためのアクセス許可を付与Microsoft 365 Defenderします。 アクセス許可は、アクセス許可 (Azure Active Directory) のAzure AD。 役割を選択すると、フライアウト ウィンドウが表示されます。 このフライアウトには、役割グループ内Azure ADメンバーを追加または削除できる場所へのリンクが含まれる。 <br/><br/> 詳細については、「役割ベースのアクセス [制御を使用してポータル アクセスを管理する」を参照してください](rbac.md)。  |
-| **設定** | [セキュリティ センター] と [エンドポイントMicrosoft 365 Defender Defender for **Endpoints]** の一般的な設定に **移動します**。 <br/><br/> 詳細については、「設定」[を参照してください](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)。 |
+| [**設定**] | [セキュリティ センター] と [エンドポイントMicrosoft 365 Defender Defender for **Endpoints]** の一般的な設定に **移動します**。 <br/><br/> 詳細については、「設定」[を参照してください](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)。 |
 | **その他のリソース** | その他のポータルとセンターの一覧を表示します (Azure Active Directory、Microsoft 365 コンプライアンス センター。 <br/><br/> 詳細については、「Microsoft セキュリティ [ポータルと管理センター」を参照してください](../defender/portals.md)。 |
 
 > [!TIP]

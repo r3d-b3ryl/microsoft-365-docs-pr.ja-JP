@@ -18,19 +18,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 793fa5bb18fbf766b8174866d7741f8419af66cb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67aea0004e38ca5aee14e16fba47612e0e44f5ff
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206867"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560470"
 ---
 # <a name="microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センター
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -45,7 +46,7 @@ Microsoft Defender セキュリティ センターは、Microsoft Defender for E
 
 |トピック|説明|
 |---|---|
-|作業の開始|最小要件、ライセンスの検証、セットアップの完了、プレビュー機能の把握、データストレージとプライバシーの理解、およびポータルへのユーザー アクセスの割り当て方法について説明します。|
+|概要|最小要件、ライセンスの検証、セットアップの完了、プレビュー機能の把握、データストレージとプライバシーの理解、およびポータルへのユーザー アクセスの割り当て方法について説明します。|
 |[デバイスのオンボード](onboard-configure.md)|クライアント、サーバー、および非デバイスのオンボーディングについてWindowsします。 検出テストを実行する方法、プロキシとインターネット接続の設定を構成する方法、およびオンボードの潜在的な問題をトラブルシューティングする方法について説明します。|
 |[ポータルについて](use.md)|セキュリティ操作、Secure Score、および Threat analytics ダッシュボード、およびポータルを移動する方法について説明します。|
 |脅威の調査と修復|アラート、デバイスを調査し、脅威を修復するために対応アクションを実行します。|

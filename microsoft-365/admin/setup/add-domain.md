@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: セットアップ ウィザードを使用して、DNS ホストに DNS レコードMicrosoft 365追加Microsoft 365 管理センターにドメインを追加します。
-ms.openlocfilehash: d3ddcd9b0eb97b568650a28e360f2e5b296cda54
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 390cb4cfff2b895902449e34134538a768d03aa1
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426329"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559930"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
@@ -142,6 +142,22 @@ ms.locfileid: "61426329"
 セットアップを終了すると、ユーザーのドメインの MX レコードが Microsoft 365 を指定されるように更新され、そのドメイン宛てのすべてのメールが Microsoft 365 に送信されるようになります。 ユーザーのドメインにメールを持つすべてのユーザーが Microsoft 365 に追加され、メールボックスが設定されていることを確認してください。
   
 ビジネスで使用している Web サイトがある場合は、そのままの場所で稼働し続けます。 ドメイン接続 のセットアップ手順は、自分の Web サイトには影響しません。
+
+### <a name="add-an-onmicrosoftcom-domain"></a>ドメインを onmicrosoft.com する
+
+各組織Microsoft 365最大 3 つのドメイン onmicrosoft.com できます。
+
+> [!NOTE]
+> ドメインを追加するには、グローバル管理者またはドメイン名管理者である必要があります。
+
+
+ドメインを追加 onmicrosoft.com するには、次の onmicrosoft.com します。
+
+1. [Microsoft 管理センター] の [ドメイン]**設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**移動します**</a>。
+
+2. [概要] **タブで** 、[ドメインの **追加 onmicrosoft.com 選択します**。
+
+所有している任意のドメインを既定のドメインとして設定できます。
 
 ## <a name="related-content"></a>関連コンテンツ
 

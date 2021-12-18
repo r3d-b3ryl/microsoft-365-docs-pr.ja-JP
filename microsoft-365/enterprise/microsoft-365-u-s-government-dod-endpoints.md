@@ -22,12 +22,12 @@ f1.keywords:
 description: Office 365 にはインターネットへの接続が必要です。 以下のエンドポイントは、米国政府機関の DoD プランOffice 365使用しているお客様に対して到達可能である必要があります。
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8f41d0d230791672c42d30eb8f667d289caee5d5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fda65c772fc2fdaa1d8fe8a8479e97cbd4855835
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703890"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566509"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365米国政府機関の DoD エンドポイント
 
@@ -35,7 +35,7 @@ ms.locfileid: "60703890"
 
 Office 365 にはインターネットへの接続が必要です。 以下のエンドポイントは、米国政府機関の DoD プランOffice 365使用しているお客様に対して到達可能である必要があります。
   
-**Office 365 エンドポイント:** [](urls-and-ip-address-ranges.md) \| [21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| [](microsoft-365-germany-endpoints.md) \|  \| [](microsoft-365-u-s-government-gcc-high-endpoints.md) Office 365 ドイツ Office 365 が運営するワールドワイド (GCC を含 Office 365む) Office 365 米国政府機関 GCC High
+**Office 365 エンドポイント:** [](urls-and-ip-address-ranges.md) \| [21 Vianet](urls-and-ip-address-ranges-21vianet.md) Office 365 が運用するワールドワイド (GCC を含 Office 365む) Office 365 米国政府機関の \| *DoD* Office 365 \| [GCC](microsoft-365-u-s-government-gcc-high-endpoints.md) High
 
 <br>
 
@@ -43,12 +43,12 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 |備考|ダウンロード|
 |---|---|
-|**最終更新日:** 10/29/2021 - ![ RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** JSON 形式の完全な [リスト](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
+|**最終更新日:** 2021 年 10 月 29 日 - ![RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログのサブスクリプション](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** JSON 形式の完全な [リスト](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |
 
 [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)から始めて、このデータを使用してネットワーク接続を管理するための推奨事項を理解してください。 エンドポイントのデータは、毎月初めに必要に応じて更新され、アクティブになる 30 日前に新しい IP アドレスと URL が公開されます。 これにより、新しい接続が必要になる前に、まだ自動更新プログラムを持っていないお客様がプロセスを完了できます。 サポートの拡大、セキュリティ上の問題、その他の緊急な運用要件に対処する為に必要な場合にも、その月の間にエンドポイントを更新する可能性があります。 以下のこのページに示されているデータはすべて、REST ベースの Web サービスから生成されています。 スクリプトまたはネットワーク デバイスを使用してこのデータにアクセスしている場合は、[Web サービス](microsoft-365-ip-web-service.md)に直接アクセスする必要があります。
 
-以下のエンドポイント データは、ユーザーのコンピューターからコンピューターへの接続に関する要件Office 365。 Microsoft から顧客ネットワークへのネットワーク接続 (ハイブリッドまたは受信ネットワーク接続とも呼ばれる) は含めではありません。 詳細については、「Web サービス [に含まれていない追加のエンドポイント」を参照してください](additional-office365-ip-addresses-and-urls.md)。
+以下のエンドポイント データは、ユーザーのコンピューターから Office 365 への接続の要件を示しています。 Microsoft から顧客ネットワークへのネットワーク接続 (ハイブリッドまたは受信ネットワーク接続とも呼ばれる) は含めではありません。 詳細については、「Web サービス [に含まれていない追加のエンドポイント」を参照してください](additional-office365-ip-addresses-and-urls.md)。
 
 エンドポイントは 4 つのサービス領域にグループ分けされます。最初の 3 つのサービス領域は個別に接続の選択ができます。4 番目のサービス領域は共通の依存関係 ("Microsoft 365 Common および Office Online" と呼ばれる) で、常時ネットワーク接続されている必要があります。
 

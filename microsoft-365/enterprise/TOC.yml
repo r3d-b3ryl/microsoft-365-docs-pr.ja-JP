@@ -73,8 +73,6 @@
               href: microsoft-365-u-s-government-gcc-high-endpoints.md
             - name: 21Vianet エンドポイントが運用している Office 365
               href: urls-and-ip-address-ranges-21vianet.md
-            - name: Office 365 Germany のエンドポイント
-              href: microsoft-365-germany-endpoints.md
         - name: コンテンツ配信ネットワーク
           href: content-delivery-networks.md
         - name: Office 365 サービスでの IPv6 サポート
@@ -269,32 +267,6 @@
           href: o365-data-locations.md
         - name: 欧州連合のデータの場所
           href: eu-data-storage-locations.md
-        - name: Microsoft Cloud Deutschland
-          items:
-            - name: 概要
-              href: ms-cloud-germany-transition.md
-            - name: 変更すると何が変わりますか?
-              href: ms-cloud-germany-transition-experience.md
-            - name: 移行のオプトイン
-              href: ms-cloud-germany-migration-opt-in.md
-            - name: 移行前
-              href: ms-cloud-germany-transition-add-pre-work.md
-            - name: 移行フェーズのアクションと影響
-              href: ms-cloud-germany-transition-phases.md
-            - name: 移行後
-              href: ms-cloud-germany-transition-add-experience.md
-            - name: 追加情報
-              items:
-                - name: AD FS の移行手順
-                  href: ms-cloud-germany-transition-add-adfs.md
-                - name: Azure AD
-                  href: ms-cloud-germany-transition-azure-ad.md
-                - name: CSP
-                  href: ms-cloud-germany-transition-add-csp.md
-                - name: デバイス
-                  href: ms-cloud-germany-transition-add-devices.md
-                - name: 電子情報開示
-                  href: ms-cloud-germany-transition-add-scc.md
 - name: ID
   items:
     - name: ロードマップ

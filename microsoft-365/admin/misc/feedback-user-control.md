@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが Microsoft 製品について Microsoft に送信できるフィードバックについて説明します。
-ms.openlocfilehash: b276c82687481267a9c1de3a1261786bf2027254
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 46acfef3af37ae98e2f9d014ffc48a168665219a
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907829"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559990"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>組織の Microsoft フィードバックの詳細
 
@@ -32,8 +32,8 @@ ms.locfileid: "60907829"
 
 管理者は、組織のフィードバック信号を管理できます。 新しいポリシー設定のセットが導入され、組織のアプリケーション内でユーザー フィードバック コレクションMicrosoft 365管理できます。 これらのポリシー設定は、組織のAzure Active Directoryグループをターゲットにし、フィードバック コレクション エクスペリエンスを構成するのに役立ちます。 ユーザーからのフィードバックは、エンジニアに直接送信され、すべてのユーザーの Microsoft 製品とサービスの未来を形作るのに役立ちます。 これらのポリシー設定、適用するアプリケーション、およびベスト プラクティスの詳細については、「組織の Microsoft フィードバックの管理」 [を参照してください](../manage/manage-feedback-ms-org.md)。
 
-<!--> [!IMPORTANT]
-> 信頼できるソースからフィードバックが送信されるのを確認することをお勧めします。 ユーザー名またはユーザー ID が組織内の実際のユーザーと一致しているか確認します。-->
+> [!IMPORTANT]
+> 信頼できるソースからフィードバックが送信されるのを確認することをお勧めします。 ユーザー名またはユーザー ID が組織内の実際のユーザーと一致する必要があります。
 
 ## <a name="feedback-types"></a>フィードバックの種類
 
@@ -91,6 +91,7 @@ Microsoft はフィードバックを使用して Microsoft 製品を改善し�
 - **アプリの言語**   申請時にキャプチャされた Microsoft 製品の言語。
 - **添付ファイル**   添付ファイルが含まれています (つまり、 スクリーンショット、ファイル) フィードバックの一部として収集されますか? (はい/いいえ)。
 - **TenantId**  テナント Id が関連付けられたAzure Active Directoryアカウントからフィードバックが送信された場合。
+- **アプリ モジュール** 該当する場合、最近クラッシュした可能性があるアプリ モジュールに関する情報。
 
 ## <a name="how-can-i-see-my-users-feedback"></a>ユーザーのフィードバックを確認する方法
 
