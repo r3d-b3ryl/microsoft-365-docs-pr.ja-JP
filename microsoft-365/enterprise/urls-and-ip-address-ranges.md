@@ -24,18 +24,18 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '概要: Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。'
 hideEdit: true
-ms.openlocfilehash: d223ec20be108cdcfa53a2357e95cccdf6474e69
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c4bde6517bc2dfe22d8e52161ee1f47917ee0fb3
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700886"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566713"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL および IP アドレス範囲
 
 Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。
   
-*Office 365 世界各地 (GCC を含む)* \| [21 Vianet が運営する Office 365](urls-and-ip-address-ranges-21vianet.md) \| [Office 365 ドイツ](microsoft-365-germany-endpoints.md) \| [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) \| [Office 365 米国政府 GCC 高](microsoft-365-u-s-government-gcc-high-endpoints.md) \|
+*Office 365 ワールドワイド (+GCC)*\|[21 Vianetが運営するOffice 365](urls-and-ip-address-ranges-21vianet.md)\|[Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md)\|[Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)\|
 
 |備考|ダウンロード|使用|
 |---|---|---|
@@ -84,8 +84,6 @@ Office 365 には、インターネットへの接続が必要です。Office 36
 [Microsoft Azure の IP 範囲とサービス タグ – パブリック クラウド](https://www.microsoft.com/download/details.aspx?id=56519)
 
 [Microsoft Azure の IP 範囲とサービス タグ – 米国政府機関向けクラウド](https://www.microsoft.com/download/details.aspx?id=57063)
-
-[Microsoft Azure の IP 範囲とサービス タグ – ドイツ向けクラウド](https://www.microsoft.com/download/details.aspx?id=57064)
 
 [Microsoft Azure の IP 範囲とサービス タグ – 中国向けクラウド](https://www.microsoft.com/download/details.aspx?id=57062)
   
