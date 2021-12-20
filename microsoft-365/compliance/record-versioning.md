@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 でのレコード管理ソリューションの実装に役立つレコードについて説明します。
-ms.openlocfilehash: 77a6cb185b599c6e96f3ff19331b233c9f28a318
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2d08a6a29d2bb4a32b0669bed8d97cda3767538a
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177389"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560002"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する
 
@@ -30,6 +30,8 @@ ms.locfileid: "60177389"
 
 > [!NOTE]
 > 規制レコードは編集をブロックしているため、規制レコードのレコードのバージョン管理は利用できません。
+>
+> 規制レコードを使用していない場合でも、テナントのレコードのバージョン管理を防止することもできます。Microsoft 365 コンプライアンス センター > **[レコード管理設定]** > **[保持ラベル]** > **[レコード バージョン管理の設定]** の **レコード管理** ノードに移動し、**[レコードのバージョン管理を有効にする]** の設定をオフにします。
 
 ドキュメントを[[レコード]](records-management.md#records) としてマークし、レコードに対して実行できるアクションを制限する機能は、レコード管理ソリューションにとって不可欠な目標です。ただし、ユーザーが後続のバージョンを作成するためにコラボレーションが必要になる場合もあります。
 
@@ -53,14 +55,14 @@ ms.locfileid: "60177389"
 ドキュメントのロックが解除されている間、標準の編集権限を持つすべてのユーザーがファイルを編集できます。 ただし、これはまだレコードであるため、ユーザーはファイルを削除することができません。 編集が完了すると、**レコードの状態** を **ロック解除** から **ロック済み** に切り替えることができ、この状態の間はそれ以上の編集ができなくなります。
 <br/><br/>
 
-![レコードとしてタグ付けされたドキュメントのレコード ステータス プロパティ。](../media/recordversioning8.png)
+:::image type="content" alt-text="レコードとしてタグ付けされたドキュメントのレコード ステータス プロパティ。" source="../media/recordversioning8.png" lightbox="../media/recordversioning8.png":::
 
 ## <a name="locking-and-unlocking-a-record"></a>レコードのロックおよびロック解除
 
 コンテンツをレコードとしてマークする保持ラベルがドキュメントに適用された後、投稿権限またはより狭い権限レベルを持つユーザーは、レコードをロック解除したり、ロック解除されたレコードをロックしたりできます。
 <br/><br/>
 
-![レコード ステータスは、レコード ドキュメントがロック解除されていることを示しています。](../media/recordversioning9.png)
+:::image type="content" alt-text="レコード ステータスは、レコード ドキュメントがロック解除されていることを示しています。" source="../media/recordversioning9.png" lightbox="../media/recordversioning9.png":::
 
 ユーザーがレコードのロックを解除すると、以下のアクションが発生します。
 
@@ -81,7 +83,7 @@ ms.locfileid: "60177389"
 ユーザーがレコードのロックを解除するたびに、最新バージョンがアイテム保管ライブラリにコピーされ、そのバージョンには **レコード** の値がバージョン履歴の **[コメント]** フィールドに含まれます。
 <br/><br/>
 
-![アイテム保管ライブラリに表示されるレコード。](../media/recordversioning10.png)
+:::image type="content" alt-text="アイテム保管ライブラリに表示されるレコード。" source="../media/recordversioning10.png" lightbox="../media/recordversioning10.png":::
 
 バージョン履歴を表示するには、ドキュメント ライブラリでドキュメントを選択し、[アイテム] メニューの [**バージョン履歴**] をクリックします。
 

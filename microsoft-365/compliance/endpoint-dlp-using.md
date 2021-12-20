@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: d595e931e364aa04c0e4dd72dc996e1f93c7ab05
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: e6ab91d8baf3182cd857e7e6002f61b57a8f101e
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426401"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560602"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -59,11 +59,13 @@ ms.locfileid: "61426401"
 
 ### <a name="advanced-classification-scanning-and-protection"></a>高度な分類のスキャンと保護
 
-#### <a name="get-registered"></a>登録する
+<!--#### Get registered
 
-この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 [Microsoft 365 macOS サポート](https://aka.ms/EndpointDLPIgnite21-Previews)に登録します。
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
 
-有効にすると、**高度な分類のスキャンと保護** により、高度な Microsoft 365 クラウドベースのデータ分類サービスで項目をスキャンし、分類し、結果をローカル コンピューターに返すことができます。 つまり、DLP ポリシーで [厳密なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 分類、[名前付きエンティティ (プレビュー)](named-entities-learn.md#learn-about-named-entities-preview) 分類手法を利用できるということです。
+When enabled,--> 
+
+高度な分類のスキャンと保護により、クラウド ベースのMicrosoft 365サービスを使用して、アイテムをスキャンし、分類し、結果をローカル コンピューターに返す高度なデータ分類サービスを利用できます。 つまり、DLP ポリシーで [厳密なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 分類、[名前付きエンティティ (プレビュー)](named-entities-learn.md#learn-about-named-entities-preview) 分類手法を利用できるということです。
 
 高度な分類では、コンテンツはスキャンと分類のためにローカル デバイスからクラウド サービスに送信されます。 帯域幅の使用率が懸念される場合は、このグローバル設定で、24 時間のローリングで使用できる量に関して、デバイスごとに適用される制限を設定できます。 帯域幅使用率の制限を設定し、それを超えた場合、DLP はユーザー コンテンツのクラウドへの送信を停止し、データ分類はデバイス上でローカルに続行されます。 累積帯域幅使用率がローリング 24 時間の制限を下回ると、クラウド サービスとの通信が再開されます。
 
@@ -196,6 +198,14 @@ macOS デバイスの場合は、完全なファイル パスを追加する必�
 
 > [!IMPORTANT]
 > サービス制限モードが "許可" に設定されている場合、制限を適用する前に、少なくとも 1 つのサービス ドメインを構成する必要があります。
+
+サービス ドメインの FQDN 形式を終了せずに使用する `.` 
+
+次に例を示します。
+
+ `www.contoso.com` 
+
+ワイルドカード文字はサポートされていません。
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>エンドポイント DLP の追加設定
 
