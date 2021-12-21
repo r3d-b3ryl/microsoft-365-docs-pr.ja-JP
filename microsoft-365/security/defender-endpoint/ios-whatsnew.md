@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: b529f5dcbe444ef86c90be163d714695e68c9d8c
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: ad37c15c16edb03dddf7c9899d160eaca435e53e
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217469"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578491"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS のエンドポイント向け Microsoft Defender の新機能
 
@@ -37,6 +37,12 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 ## <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 
 2021 年 11 月 2 日、Android と iOS の脅威と脆弱性の管理のパブリック プレビューを発表しました。 詳細については [、techcommunity の投稿を参照してください](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691)。
+
+## <a name="1123250104"></a>1.1.23250104
+
+- パフォーマンスの最適化 - このバージョンでバッテリーのパフォーマンスをテストし、フィードバックをお寄せください。
+- 登録済 **み iOS** デバイスのオンボードゼロタッチ - このバージョンでは、Microsoft エンドポイント マネージャー (Intune) 経由で登録されたデバイスのオンボードゼロタッチのプレビューが追加されました。 詳細については、セットアップと構成 [の詳細については](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) 、このドキュメントを参照してください。
+- **プライバシーコントロール** - フィッシングアラートレポートのプライバシー制御を構成します。 詳細については [、「Configure iOS features」を参照してください](ios-configure-features.md)。
 
 ## <a name="1123010101"></a>1.1.23010101
 

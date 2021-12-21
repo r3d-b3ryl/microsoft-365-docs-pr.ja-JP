@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1953dfe4c4c9f1e8303448f1d29aa9a8c4273102
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: d4052ef2e73b7b81630c8013e17cad533383b215
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218420"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578533"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS の機能で Microsoft Defender for Endpoint を構成する
 
@@ -85,6 +85,27 @@ MAM またはアプリ保護ポリシーの詳細については [、「iOS ア�
 Microsoft Defender for Endpoint on iOS では、アプリ保護ポリシーのシナリオを有効にし、Apple アプリ ストアで利用できます。
 
 エンド ユーザーは、Apple アプリ ストアからアプリの最新バージョンを直接インストールする必要があります。
+
+## <a name="privacy-controls"></a>プライバシーコントロール
+
+> [!IMPORTANT]
+> iOS 上の Microsoft Defender for Endpoint のプライバシーコントロールはプレビュー中です。 次の情報は、製品が商用リリースされる前に大幅に変更される可能性がある事前リリース済み製品に関連しています。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+
+### <a name="configure-privacy-in-phish-alert-report"></a>フィッシングアラート レポートでプライバシーを構成する
+
+お客様は、iOS 上の Microsoft Defender for Endpoint から送信されるフィッシング レポートのプライバシー制御を有効にできます。 これにより、Microsoft Defender for Endpoint によってフィッシング Web サイトが検出およびブロックされるたびに、フィッシングアラートの一部としてドメイン名が送信されません。
+
+次の手順を使用して、プライバシーを有効にし、フィッシングアラート レポートの一部としてドメイン名を収集しない。
+
+1. [[Microsoft エンドポイント マネージャー管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**アプリ** アプリの構成ポリシー] [管理対象  >    >  **デバイス**  >  **の追加] に移動します**。
+1. ポリシーに **iOS/iPadOS >という名前を付け**、プロファイルの種類を選択します。
+1. ターゲット **アプリとして [Microsoft Defender for Endpoint]** を選択します。
+1. [設定] ページで、[構成デザイナーを使用する]**を選択し**、キーと値の種類として **DefenderExcludeURLInReport** をブール型として追加 **します。**
+   - プライバシーを有効にしてドメイン名を収集しない場合は、値を as と入力し `true` 、このポリシーをユーザーに割り当てる必要があります。 既定では、この値はに設定されます `false` 。
+   - キーが設定されているユーザーの場合、悪意のあるサイトが Defender for Endpoint によって検出およびブロックされるたびに、フィッシング アラートにはドメイン名情報 `true` は含めされません。
+1. [次 **へ] を** クリックし、このプロファイルを対象のデバイス/ユーザーに割り当てる。
+
+上記のプライバシーコントロールをオンまたはオフにした場合、デバイスコンプライアンスチェックや条件付きアクセスには影響はありません。
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>脱獄されたデバイスに対するコンプライアンス ポリシーの構成
 

@@ -13,17 +13,14 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: 新しいツール相互運用性アプリを使用して、課題の作成と採点、コース コンテンツの構築とキュレーション、ファイルMicrosoft OneDrive ラーニング共同作業を行います。
-ms.openlocfilehash: d8243580b32b8ba3b42297d1d5ec4183f7eee7d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 445c12077c7b7b61269c0bef9e216db0ff1ddfb2
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173177"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578173"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>LTI Microsoft OneDriveキャンバスとの統合
-
-> [!IMPORTANT]
-> 一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
 LTI Microsoft OneDrive Canvas との統合は、2 つのステッププロセスです。 最初の手順では Canvas Microsoft OneDriveを有効にし、2 番目の手順では、Microsoft OneDrive内で LTI を使用できます。
 
@@ -34,7 +31,7 @@ LTI Microsoft OneDrive Canvas との統合は、2 つのステッププロセス
 
 > [!NOTE]
 > - Cookie は Chrome ブラウザーのシークレット モードでは既定では有効になっていません。有効にする必要があります。
-> - Microsoft OneDriveLTI は、ブラウザーのプライベート モードMicrosoft Edgeします。 Cookie をブロックしていない (既定で有効になっている) 必要があります。
+> - Microsoft OneDrive LTI は、ブラウザーのプライベート モードMicrosoft Edgeします。 Cookie をブロックしていない (既定で有効になっている) 必要があります。
 
 ## <a name="enable-microsoft-onedrive-lti-in-canvas"></a>Canvas Microsoft OneDrive LTI を有効にする
 

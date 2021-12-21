@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 展開ラボ キットのWindowsおよびOfficeについて説明します。
-ms.openlocfilehash: 9a388a1f9095994e45b07d403e347a5fbfb413a7
-ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
+ms.openlocfilehash: b122129cc27795fbbbe1c46c48f2e4c44cc5a848
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61152408"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578137"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows と Office 365 展開ラボ キット
 
@@ -35,18 +35,17 @@ Windowsおよび Office 365 展開ラボ キットは、Windows 10 Enterprise �
 
 ## <a name="a-complete-lab-environment"></a>完全なラボ環境
 
-このラボでは、ドメインに参加しているデスクトップ クライアント、ドメイン コントローラー、インターネット ゲートウェイ、完全に構成された Configuration Manager インスタンスなど、自動的にプロビジョニングされた仮想ラボ環境が提供されます。 ラボでは、次の製品の評価バージョンを実行します。
+このラボでは、ドメインに参加しているデスクトップ クライアント、ドメイン コントローラー、インターネット ゲートウェイ、完全に構成された Configuration Manager インスタンスなど、自動的にプロビジョニングされた仮想ラボ環境が提供されます。 ラボには、次の製品の評価バージョンが含まれます。
 
-- Windows 10 Enterpriseバージョン 21H1 または Windows 11 Enterprise
-- Windows 7 Enterprise
-- Microsoft Endpoint Configuration Managerバージョン 2103
-- Windows 10 用 Windows アセスメント & デプロイメント キット
-- Microsoft Deployment Toolkit
-- Microsoft Application Virtualization (App-V)
-- Microsoft BitLocker Administration and Monitoring
-- Windows Server 2019 または Windows Server 2022
 
-結果のラボは、次の試験に接続するように設計されています。
+|Windows 10 ラボ  |Windows 11 ラボ  |
+|---------|---------|
+|Windows 10 Enterpriseバージョン 21H1      | Windows 11 Enterprise        |
+|Microsoft Endpoint Configuration Managerバージョン 2103     |  Microsoft Endpoint Configuration Managerバージョン 2107      | 
+|Windows 10 用 Windows アセスメント & デプロイメント キット     |  Windows評価と展開キット for Windows 11      | 
+|Windows Server 2019     |  Windows Server 2022      | 
+
+ラボは、次の試験に接続するように設計されています。
 
 - Microsoft 365 E5
 - Microsoft 365 Apps for enterprise
@@ -56,7 +55,7 @@ Windowsおよび Office 365 展開ラボ キットは、Windows 10 Enterprise �
 
 詳細なラボのガイドにより、複数の展開および管理シナリオを体験できます。 最新バージョンの Intune と Configuration Manager 用にラボは更新されました。
 
-注: Windows 11 バージョンのラボには、Windows 10バージョン 21H1 ラボ ガイドが含まれています。 ラボ Windows 11 バージョンが近日公開されます。 
+注: Windows 11 バージョンのラボには、Windows 10が含まれています。 ラボ Windows 11 バージョンが近日公開されます。 
 
 ### <a name="plan-and-prepare-infrastructure"></a>インフラストラクチャの計画と準備
 
@@ -108,13 +107,13 @@ Windowsおよび Office 365 展開ラボ キットは、Windows 10 Enterprise �
 [11 Windows展開ラボ キットOffice 365ダウンロードする](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
-> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに 30 ~ 45 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを得る場合は、32 GB の使用可能なメモリと 300 GB の空き領域をお勧めします。 2022 Windows 10ラボの有効期限は 2022 年 2 月 16 日です。 2022 Windows 11 ラボの有効期限は 2022 年 2 月 10 日です。 有効期限が切る前に、新しいバージョンが公開されます。
+> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに 30 ~ 45 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを得る場合は、32 GB の使用可能なメモリと 300 GB の空き領域をお勧めします。 2022 Windows 10ラボの有効期限は 2022 年 2 月 15 日です。 2022 Windows 11 ラボの有効期限は 2022 年 3 月 10 日です。 有効期限が切る前に、新しいバージョンが公開されます。
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 
+- [Windows展開のリソースとドキュメントの詳細](/windows/deployment)
 - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](https://www.aka.ms/watchhowtoshift)
 - [Microsoft Endpoint Configuration Manager OS の展開](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
-- [Windows 10 の展開計画](/windows/deployment/planning/index)
 - [Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Intune が会社のためにできることとは。](/intune/get-started-evaluation)
 

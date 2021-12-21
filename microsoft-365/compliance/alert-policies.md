@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: 潜在的な脅威、データ損失、およびアクセス許可の問題Microsoft 365 コンプライアンス センター監視するために、Microsoft 365 コンプライアンス センターまたは Microsoft 365 Defender ポータルにアラート ポリシーを作成します。
-ms.openlocfilehash: d4b9c334092cf7c0f6b3c5fad2e284accbb384ae
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 2c017490fd0b5b01c7cd2563a895b3930aafef58
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422004"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578221"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
 
@@ -132,6 +132,7 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 |**悪意のある可能性がある URL のクリックが検出されました**|組織のリンクによって保護されたユーザーセーフ[が](../security/office-365-security/safe-links.md)悪意のあるリンクをクリックすると、警告が生成されます。 このイベントは、url の評決の変更が Microsoft Defender によって Office 365 用に識別された場合、またはユーザーが セーフ リンク ページ (組織の Microsoft 365 for business セーフ Links ポリシーに基づいて) を上書きするときにトリガーされます。 このアラート ポリシーには、重大度 **の高** い設定があります。 Defender for Office 365 P2、E5、G5 のお客様に対して、このアラートは自動的に自動調査と応答をトリガー [Office 365。](../security/office-365-security/office-365-air.md) このアラートをトリガーするイベントの詳細については[、「Set up セーフリンク ポリシー」を参照してください](../security/office-365-security/set-up-safe-links-policies.md)。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
 |**管理者の提出結果が完了しました**|管理者申請が送信されたエンティティ[](../security/office-365-security/admin-submission.md)の再スキャンを完了すると、アラートを生成します。 管理者申請から再スキャン結果が表示される度に、アラートがトリガーされます。 これらのアラートは、以前の申請の[](https://compliance.microsoft.com/reportsubmission)結果を確認し、ユーザーが報告したメッセージを送信して最新のポリシー チェックと再スキャンの評決を取得し、組織内のフィルター ポリシーが意図した影響を与えているかどうかを判断することを目的とします。 このポリシーには、[ **情報の重大度]** 設定があります。|脅威の管理|E1/F1、E3/F3、または E5|
 |**管理者が電子メールの手動調査をトリガーしました**|管理者が脅威エクスプローラーからの電子メールの手動調査をトリガーすると、アラートを生成します。 詳細については、「例: セキュリティ管理者が脅威エクスプローラーから [調査をトリガーする」を参照してください](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。 このアラートは、調査が開始されたと組織に通知します。 アラートは、トリガーしたユーザーに関する情報を提供し、調査へのリンクを含む。 このポリシーには、[ **情報の重大度]** 設定があります。|脅威の管理| E5/G5 または Microsoft Defender for Office 365 P2 アドオン サブスクリプション|
+|**管理者がトリガーしたユーザー侵害調査**|管理者が脅威エクスプローラーの電子メール送信者または受信者の手動によるユーザー侵害調査をトリガーすると、アラートを生成します。 詳細については、「 [例:](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)セキュリティ管理者が脅威エクスプローラーからの調査をトリガーする」を参照してください。これは、電子メールに関する調査の関連する手動トリガーを示しています。 このアラートは、ユーザー侵害調査が開始されたと組織に通知します。 アラートは、トリガーしたユーザーに関する情報を提供し、調査へのリンクを含む。 このポリシーには、中 **程度の重大度設定** があります。|脅威の管理| E5/G5 または Microsoft Defender for Office 365 P2 アドオン サブスクリプション|
 |**転送/リダイレクト ルールの作成**|組織内のユーザーが、別の電子メール アカウントにメッセージを転送またはリダイレクトするメールボックスの受信トレイ ルールを作成すると、アラートを生成します。 このポリシーは、PowerShell または PowerShell Outlook on the web (以前は Outlook Web App) をExchange Onlineします。 このポリシーには、[ **情報の重大度]** 設定があります。 受信トレイ ルールを使用してメールを Outlook on the web で転送およびリダイレクトする方法の詳細については、「Outlook on the web でルールを使用してメッセージを別のアカウントに自動的に転送する」を[参照してください](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。|脅威の管理|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**eDiscovery 検索が開始またはエクスポートされました**|セキュリティとコンプライアンス センターでコンテンツ検索ツールを使用すると、アラートが生成されます。 次のコンテンツ検索アクティビティが実行されると、アラートがトリガーされます。 <br><br> <li> コンテンツ検索が開始される <li> コンテンツ検索の結果がエクスポートされる <li> コンテンツ検索レポートがエクスポートされる <br><br> 以前のコンテンツ検索アクティビティが電子情報開示ケースに関連付けで実行されると、アラートもトリガーされます。 このポリシーには、[ **情報の重大度]** 設定があります。 コンテンツ検索アクティビティの詳細については、「監査ログで電子情報開示アクティビティを検索 [する」を参照してください](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)。|脅威の管理|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**管理者特権Exchange昇格**|ユーザーが組織の管理者アクセス許可を割り当てられたときにアラートExchange Onlineします。 たとえば、ユーザーが組織の管理役割グループに追加された場合、Exchange Online。 このポリシーの重大度 **が低** い設定です。|アクセス許可|E1/F1/G1、E3/F3/G3、または E5/G5|

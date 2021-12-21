@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: コンテンツを保存、収集、レビュー、エクスポートする方法については、Microsoft TeamsのAdvanced eDiscovery。
-ms.openlocfilehash: 1197d54206abaa42b59f7c3b81365065191904cf
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 27f3ada633f7af37b657e59cce64ef1c8e102177
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137117"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578165"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>Advanced eDiscovery内のコンテンツのワークフロー Microsoft Teams
 
@@ -42,7 +42,7 @@ Advanced eDiscovery で Teams コンテンツを管理するための前提条�
 ||チャット メッセージと投稿の場所  |ファイルと添付ファイルの場所 |
 |:---------|:---------|:---------|
 |Teams 1:1 チャット     |1:1 チャット内のメッセージは、すべてのチャット参加者Exchange Onlineメールボックスに保存されます。 |1:1 チャットで共有されたファイルは、ファイルを共有OneDrive for Businessのアカウントに保存されます。 |
-|Teamsグループ チャット     |グループ チャット内のメッセージは、すべてのチャット参加者Exchange Onlineメールボックスに保存されます。 |グループ チャット チャットで共有されたファイルは、ファイルを共有OneDrive for Businessのアカウントに保存されます。 |
+|Teamsグループ チャット     |グループ チャット内のメッセージは、すべてのチャット参加者Exchange Onlineメールボックスに保存されます。 |グループ チャットで共有されたファイルは、ファイルを共有OneDrive for Businessのアカウントに保存されます。 |
 |Teams チャネル     |すべてのチャネル メッセージと投稿は、チームに関連付Exchange Onlineメールボックスに保存されます。|チャネルで共有されるファイルは、チームに関連付SharePointオンライン サイトに保存されます。           |
 |プライベート Teams チャネル     |プライベート チャネルで送信されたメッセージは、プライベート Exchange Onlineのすべてのメンバーのメールボックスに格納されます。|プライベート チャネルで共有されるファイルは、プライベート チャネルに関連付SharePoint専用のオンライン サイトに保存されます。|
 ||||
@@ -265,7 +265,7 @@ Advanced eDiscovery で使用されるロジックは、Teams コンテンツの
 |:---------|:---------|
 |ContainsEditedMessage      | トランスクリプト ファイルに編集されたメッセージが含まれているかどうかを示します。 トランスクリプト ファイルを表示すると、編集されたメッセージが識別されます。|
 |ConversationId|アイテムが関連付けられている会話を識別する GUID。 同じ会話のトランスクリプト ファイルと添付ファイルは、このプロパティの値が同じです。|
-|会話名     | トランスクリプト ファイルまたは添付ファイルが関連付けられている会話の名前。 1:1 Teamsグループ チャットの場合、このプロパティの値は、会話のすべての参加者の UPN が連結されます。 たとえば、`User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>` などです。 Teamsプライベート チャネル チャットは、会話名に次の形式を使用します `<Team name>,<Channel name>` 。たとえば、`eDiscovery vNext, General` などです。          |
+|会話名     | トランスクリプト ファイルまたは添付ファイルが関連付けられている会話の名前。 1:1 Teamsグループ チャットの場合、このプロパティの値は、会話のすべての参加者の UPN が連結されます。 たとえば、「 `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>` 」のように入力します。 Teamsプライベート チャネル チャットは、会話名に次の形式を使用します `<Team name>,<Channel name>` 。たとえば、「 `eDiscovery vNext, General` 」のように入力します。          |
 |ConversationType     | チーム チャットの種類を示します。 1:1 Teamsグループ チャットの場合、このプロパティの値は `Group` . チャネルTeamsプライベート チャネル チャットの場合、値は `Channel` .|
 |日付 | トランスクリプト ファイル内の最初のメッセージのタイムスタンプ。|
 |FamilyId|チャット会話のトランスクリプト ファイルを識別する GUID。 添付ファイルには、ファイルが添付されたメッセージを含むトランスクリプト ファイルと同じ値がこのプロパティに設定されます。|
@@ -296,3 +296,11 @@ Advanced eDiscovery で使用されるロジックは、Teams コンテンツの
 - コンテンツを確認するのに役立Teams列には、Custodian、Recipients、File  **type または** Message **kind があります**。 
 
 - フィルター[を使用](review-set-search.md)してTeams関連するプロパティを使用して、コンテンツをTeamsします。 前のセクションで説明したほとんどのメタデータ プロパティのフィルターがあります。
+
+## <a name="reference-guide"></a>リファレンス ガイド
+
+次に、ユーザーに対してユーザー設定を使用Advanced eDiscoveryクイック リファレンス Microsoft Teams。 このガイドでは、コンテンツを保存、収集、レビュー、およびエクスポートするためにAdvanced eDiscoveryを使用するためのキー ポイントを要約Microsoft Teams。
+
+![サムネイルは、ユーザーに対してAdvanced eDiscoveryをMicrosoft Teams。](../media/AeDTeamsReferenceGuide-thumbnail.png)
+
+[PDF ファイルとしてダウンロードする](https://download.microsoft.com/download/9/e/4/9e4eec6f-c476-452f-b414-4bd4b5c39dca/AeDTeamsReferenceGuide.pdf)

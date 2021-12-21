@@ -14,66 +14,19 @@ metadata:
   audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
   ms.date: 07/21/2020
-  ms.openlocfilehash: 86b2628c56434071ea7176fbece168651c0c72b3
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: ac17fe7f554c0b79bf3f75bc89772bacf1653af3
+  ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60161452"
+  ms.lasthandoff: 12/21/2021
+  ms.locfileid: "61578057"
 title: Microsoft 365 Business Premium に関するよく寄せられる質問
 summary: ''
 sections:
 - name: 全般
   questions:
   - question: Microsoft 365 Business Premium とは
-    answer: >
-      Microsoft 365 は、小規模から中規模企業向けの、クラス最高の生産性ツール、セキュリティ、およびデバイス管理機能をまとめた統合ソリューションです。 内容は以下のとおりです。
-
-
-      **一連のビジネスの生産性とコラボレーション ツール**:
-
-
-      - Word、Excel、PowerPoint、Outlook、OneNote、Publisher、Access
-
-      - Exchange、OneDrive、Skype for Business、Microsoft Teams、SharePoint。
-
-      - Office のビジネスアプリ (Bookings, MileIQ<sup>1</sup>)。
-
-
-      **Enterpriseのデバイス管理とセキュリティ機能**:
-
-
-      - Microsoft Defender を使用して、フィッシングや高度なマルウェアなど、外部の脅威から保護Office 365プラン 1 および Microsoft Defender Exploit Guard。
-
-      - データ損失防止ポリシーおよび Azure Information Protection プラン1で、機密情報へのアクセスや送信の方法を制御し、管理することができます。
-
-      - Exchange Online のアーカイブ機能を使用して、データの保護、保存、バックアップを行います。
-
-      - Office やその他のモバイル アプリでの Intune アプリ保護機能によるアプリ保護。
-
-      - Intune デバイス管理をWindows 10 PC、macOS、およびモバイル デバイスのデバイス管理。
-
-      - 多要素認証、セルフサービスによるパスワードのリセット、および条件付きアクセスを使用した ID保護。
-
-      - デバイス間で一貫したセキュリティ &mdash; 構成を行い、デバイス間で会社のデータを保護します。Microsoft Defender ウイルス対策、常にオンおよび最新です。
-
-
-      **デバイスの展開とユーザーセットアップの簡略化**:
-
-
-      - 1 つの管理コンソールでユーザーとデバイスをセットアップと管理
-
-      - Windows 10 PC での Office アプリの自動インストール。
-
-      - 常に最新の Office と Windows 10。
-
-      - Windows AutoPilot による PC のスムーズな展開。
-
-
-      **その他の権利**:
-
-
-      - Microsoft 365 Business Premium のお客様は、Windows Virtual Desktop およびOffice 共有コンピューターのライセンス認証機能にもアクセスできます。 詳細については、[「Microsoft 365 Business Premium のブログ」](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) を参照してください。 ビジネス サービスの説明[についてはMicrosoft 365を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
+    answer: "Microsoft 365 は、小規模から中規模企業向けの、クラス最高の生産性ツール、セキュリティ、およびデバイス管理機能をまとめた統合ソリューションです。 内容は以下のとおりです。\n\n**一連のビジネスの生産性とコラボレーション ツール**:\n\n- Word、Excel、PowerPoint、Outlook、OneNote、Publisher、Access\n- Exchange、OneDrive、Skype for Business、Microsoft Teams、SharePoint。\n- Office のビジネスアプリ (Bookings, MileIQ<sup>1</sup>)。\n\n**Enterpriseのデバイス管理とセキュリティ機能**:\n\n- Microsoft Defender を使用して、フィッシングや高度なマルウェアなど、外部の脅威から保護Office 365プラン 1 および Microsoft Defender Exploit Guard。\n- データ損失防止ポリシーおよび Azure Information Protection プラン1で、機密情報へのアクセスや送信の方法を制御し、管理することができます。\n- Exchange Online のアーカイブ機能を使用して、データの保護、保存、バックアップを行います。\n- Office やその他のモバイル アプリでの Intune アプリ保護機能によるアプリ保護。\n- Intune デバイス管理をWindows 10 PC、macOS、およびモバイル デバイスのデバイス管理。\n- 多要素認証、セルフサービスによるパスワードのリセット、および条件付きアクセスを使用した ID保護。\n- デバイス間で一貫したセキュリティ &mdash; 構成を行い、デバイス間で会社のデータを保護します。Microsoft Defender ウイルス対策、常にオンおよび最新です。\n\n**デバイスの展開とユーザーセットアップの簡略化**:\n\n- 1 つの管理コンソールでユーザーとデバイスをセットアップと管理\n- Windows 10 PC での Office アプリの自動インストール。\n- 常に最新の Office と Windows 10。\n- Windows AutoPilot による PC のスムーズな展開。\n\n**その他の権利**:\n\n- Microsoft 365 Business Premium のお客様は、Windows Virtual Desktop およびOffice 共有コンピューターのライセンス認証機能にもアクセスできます。 詳しくは[、Microsoft 365中規模ビジネスブログをご](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)覧ください。 ビジネス サービスの説明[についてはMicrosoft 365を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。          \n"
   - question: Microsoft 365 Business Premium の採用を検討する必要がある対象ユーザーはだれですか。
     answer: >
       Microsoft 365 Business Premium は、次のような機能を備えた包括的なクラウドベースのセキュリティ ソリューションです。
@@ -175,7 +128,7 @@ sections:
       Microsoft 365 Business Premium の展開を成功させる一番の近道は、Microsoft パートナーと連携することです。 パートナーは幅広いトレーニングを受け、さまざまな顧客のシナリオに対応した経験があり、お客様の環境とニーズを把握するのに最適な知識を持っています。
   - question: Microsoft 365 Business Premium には、Microsoft Intune のすべての機能が含まれていますか。
     answer: はい、Microsoft 365 Business Premium加入者は、iOS、Android、macOS、その他のクロスプラットフォーム デバイス管理に Intune の完全な機能を使用するライセンスを受け取っています。 Microsoft 365 Business Premium の簡略化された管理コンソールでは利用できない機能 (サード パーティ製アプリの管理、Wi-Fi プロファイルの構成、VPN 証明書など) は、Intune コンソール全体で管理できます。
-  - question: P1 Azure Active Directory (Azure AD) プレミアムは、Microsoft 365 Business Premium?
+  - question: P1 Azure Active Directory (Azure AD) プレミアムが含Microsoft 365 Business Premium?
     answer: はい、Azure AD Premium P1は Microsoft Business サーバーに含プレミアム。
   - question: Microsoft 365 Business Premium で、ユーザーは Mac を管理できますか。
     answer: Intune を使用すると、iOS デバイス、Android デバイス、Windows macOS デバイスを安全に管理できます。
@@ -228,7 +181,7 @@ sections:
     answer: Microsoft 365 Business Premium では、非正規版の Windows を正規版にすることはできません。 Microsoft 365 Business Premium では、正規版の Windows 7、8、8.1 Pro を実行している顧客が、最新の正規版の Windows 10 Pro にアップグレードできる、アップグレード特典を提供しています。
   - question: GDPR とは何ですか。Microsoft 365 Business Premium では、顧客のコンプライアンスの義務をどのように支援しますか。
     answer: >
-      一般データ保護規則 (GDPR) は、欧州連合 (EU) の居住者が各自の "個人データ" をより細かく管理できるようにする包括的な新しいプライバシー法であり、組織はその個人データの整合性を維持する必要があります。 GDPR では、EU 居住者に関連付けられている個人データを管理、つまり処理する組織が、GDPR の個人データ処理の要件を満たしたサード パーティ製データ プロセッサのみを使用することを求めています。 2017 年 3 月、Microsoft は、これらの保証を提供する契約上の保証を利用できるようにしました。 Microsoft が追加の GDPR 義務を果たす方法について質問がある場合は、Microsoft 365 Business Premium で利用できる高度なコンプライアンスとセキュリティ機能 (Azure Information Protection、データ損失防止、Office 365 用 Defender など) や他のスイート (Microsoft 365 Enterprise E5 など) について説明する必要があります。 詳細については、 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr) を参照してください。
+      一般データ保護規則 (GDPR) は、欧州連合 (EU) の居住者が各自の "個人データ" をより細かく管理できるようにする包括的な新しいプライバシー法であり、組織はその個人データの整合性を維持する必要があります。 GDPR では、EU 居住者に関連付けられている個人データを管理、つまり処理する組織が、GDPR の個人データ処理の要件を満たしたサード パーティ製データ プロセッサのみを使用することを求めています。 2017 年 3 月、Microsoft は、これらの保証を提供する契約上の保証を利用できるようにしました。 Microsoft が追加の GDPR 義務を果たす方法について質問があるお客様は、Microsoft 365 Business Premium で利用できる高度なコンプライアンスとセキュリティ機能 (Azure Information Protection、データ損失防止、Office 365 用 Defender など) や他のスイート (たとえば、Microsoft 365 Enterprise E5)。 詳細については、 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr) を参照してください。
 additionalContent: >-
   ## <a name="footnotes"></a>脚注
 

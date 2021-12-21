@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、組織の Epic システムから電子医療記録 (EHR) データをインポートするデータ コネクタをMicrosoft 365。 これにより、インサイダー リスク管理ポリシーで Epic EHR データを使用して、従業員による患者データへの不正アクセス アクティビティを検出できます。
-ms.openlocfilehash: 147519db433396376a406c5ce558fe4ad0f8428c
-ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
+ms.openlocfilehash: 0b879ade76e5273fe51c12a7471a17c0956cbb70
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234545"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578345"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Epic EHR 監査データをインポートするコネクタをセットアップする (プレビュー)
 
@@ -66,7 +66,7 @@ Epic コネクタのセットアップは、次のタスクで構成されます
 
 次の表に、インサイダー リスク管理シナリオを有効にするために必要なフィールドを示します。 これらのフィールドのサブセットは必須です。 これらのフィールドはアスタリスク (*)で強調表示されます。 テキスト ファイルに必須フィールドが存在しない場合、ファイルは検証されません。ファイル内のデータはインポートされません。
 
-|フィールド|カテゴリ|
+|Field|カテゴリ|
 |:----|:----------|
 | ACCESS_LOG。*<br/> ACCESS_TIME ACCESS_LOG_METRIC。METRIC_NAME*<br/>ACCESS_LOG。WORKSTATION_ID<br/>ZC \_ METRIC \_ GROUP.NAME<br/>ZC \_ ACCESS \_ ACTION.NAME |これらのフィールドは、Epic EHR システムのアクセス アクティビティ イベントを識別するために使用されます。|
 | PATIENT。PAT_MRN_ID<br/>PATIENT。PAT_FIRST_NAME* <br/>PATIENT。PAT_MIDDLE_NAME <br/>PATIENT。PAT_LAST_NAME* <br/>PATIENT。ADD_LINE_1* <br/>PATIENT。ADD_LINE_2  <br/>PATIENT。CITY* <br/>PATIENT.ZIP*  <br/>ZC_STATE.NAME <br/>ZC_COUNTRY.NAME <br/>CLARITY_DEP。DEPARTMENT_NAME              | これらのフィールドは、患者プロファイル情報を識別するために使用されます。|
@@ -123,7 +123,7 @@ Epic コネクタをセットアップする最後の手順は、テキスト �
 > [!NOTE]
 > 前に述べたように、監査データを含むテキスト ファイルの最大サイズは 3 GB です。 行の最大数は 500 万行です。 この手順で実行するスクリプトは、大きなテキスト ファイルから監査データをインポートするために約 30 ~ 40 分かかります。 さらに、スクリプトは大きなテキスト ファイルを 100K 行の小さなブロックに分割し、それらのブロックを順番にインポートします。
 
-1. 前の手順で開いたウィンドウに移動し、サンプル スクリプトを使用してGitHubサイトにアクセスします。 または、ブックマークされたサイトを開くか、コピーした URL を使用します。
+1. 前の手順で開いたウィンドウに移動し、サンプル スクリプトを使用してGitHubサイトにアクセスします。 または、ブックマークされたサイトを開くか、コピーした URL を使用します。 ここでスクリプトにアクセス [することもできます](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1)。
 
 2. [Raw] **ボタンを** クリックして、スクリプトをテキスト ビューに表示します。
 

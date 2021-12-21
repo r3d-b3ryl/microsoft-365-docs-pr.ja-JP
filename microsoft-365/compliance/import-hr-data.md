@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: 管理者は、組織の人事 (HR) システムから従業員データをユーザーにインポートするデータ コネクタをMicrosoft 365。 これにより、内部リスク管理ポリシーで人事データを使用して、組織に内部的な脅威を与える可能性のある特定のユーザーによるアクティビティを検出できます。
-ms.openlocfilehash: 80038c649d17b3a75896422d4c68880f1ef6a962
-ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
+ms.openlocfilehash: 1146af75f2128468207fa470ce261be767643eb1
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61436682"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578185"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>コネクタをセットアップして人事データをインポートする
 
@@ -31,7 +31,7 @@ Microsoft 365 コンプライアンス センター でデータ コネクタを
 > [!IMPORTANT]
 > 新しいバージョンの HR コネクタがパブリック プレビューで利用できます。 新しい HR コネクタを作成するか、インサイ [](#csv-file-for-employee-profile-data-preview)ダー リスク管理の医療ポリシー シナリオの新しい従業員プロファイル シナリオのデータをインポートするには、Microsoft 365 コンプライアンス センター の [データ コネクタ]ページに移動し、[コネクタ] タブを選択し、[コネクタ > HR **(プレビュー)** の追加] をクリックしてセットアップを開始します。 既存の HR コネクタは、中断することなく引き続き動作します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - ユーザーにインポートする人事シナリオとデータを決定Microsoft 365。 これにより、作成する必要がある CSV ファイルと HR コネクタの数、および CSV ファイルを生成および構成する方法を決定できます。 インポートする HR データは、実装するインサイダー リスク管理ポリシーによって決まります。 詳細については、「手順 1」を参照してください。
 
@@ -62,14 +62,14 @@ Microsoft 365 コンプライアンス センター でデータ コネクタを
 |  ポリシー テンプレート |  HR データ型 |
 |:------------------------------|:--------------------------------|
 | 離職するユーザーによるデータ盗難 | 従業員の辞任|
-| 一般的なデータ漏洩                             | ×|
-| 優先ユーザーによるデータ漏洩                   | × |
+| 一般的なデータ漏洩                             | 該当なし|
+| 優先ユーザーによるデータ漏洩                   | 該当なし |
 | 不満を持つユーザーによるデータ漏洩                | ジョブ レベルの変更、パフォーマンスレビュー、パフォーマンス向上計画|
-| 一般的なセキュリティ ポリシー違反             | × |
+| 一般的なセキュリティ ポリシー違反             | 該当なし |
 | 離職するユーザーによるセキュリティ ポリシー違反  | 従業員の辞任|
-| 優先ユーザーによるセキュリティ ポリシー違反   | ×|
+| 優先ユーザーによるセキュリティ ポリシー違反   | 該当なし|
 | 不満を持つユーザーによるセキュリティ ポリシー違反| ジョブ レベルの変更、パフォーマンスレビュー、パフォーマンス向上計画 |
-| メールの不快な言葉                    | × |
+| メールの不快な言葉                    | 該当なし |
 | ヘルスケア ポリシー| 従業員プロファイル |
 |||
 
@@ -316,7 +316,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 HR コネクタをセットアップする最後の手順は、CSV ファイル (手順 1 で作成した) の HR データを Microsoft クラウドにアップロードするサンプル スクリプトを実行することです。 具体的には、スクリプトはデータを HR コネクタにアップロードします。 スクリプトを実行すると、手順 3 で作成した HR コネクタが人事データを Microsoft 365 組織にインポートし、Insider リスク管理ソリューションなどの他のコンプライアンス ツールからアクセスできます。 スクリプトを実行した後、タスクをスケジュールして毎日自動的に実行し、最新の従業員終了データが Microsoft クラウドにアップロードされるのを検討してください。 「スクリプト [を自動的に実行するスケジュールを設定する」を参照してください](#optional-step-6-schedule-the-script-to-run-automatically)。
 
-1. 前の手順で開いたウィンドウに移動し、サンプル スクリプトを使用してGitHubサイトにアクセスします。 または、ブックマークされたサイトを開くか、コピーした URL を使用します。 ここでスクリプトにアクセス [することもできます](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1)。
+1. 前の手順で開いたウィンドウに移動し、サンプル スクリプトを使用してGitHubサイトにアクセスします。 または、ブックマークされたサイトを開くか、コピーした URL を使用します。 ここでスクリプトにアクセス [することもできます](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1)。
 
 2. [Raw] **ボタンを** クリックして、スクリプトをテキスト ビューに表示します。
 
@@ -331,7 +331,7 @@ HR コネクタをセットアップする最後の手順は、CSV ファイル 
 7. 次のコマンドを実行して、CSV ファイル内の HR データを Microsoft クラウドにアップロードします。例えば：
 
     ```powershell
-    .\HRConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -csvFilePath '<csvFilePath>'
+    .\HRConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -filePath '<filePath>'
     ```
 
    次の表では、このスクリプトで使用するパラメーターとその必要な値について説明します。 前の手順で取得した情報は、これらのパラメーターの値で使用されます。
@@ -342,13 +342,13 @@ HR コネクタをセットアップする最後の手順は、CSV ファイル 
    |`appId` |これは、手順 2 Azure ADで作成したアプリのアプリケーション ID Azure ADです。 これは、スクリプトが組織Azure ADアクセスしようとするときに、認証に使用Microsoft 365されます。 | 
    |`appSecret`|これは、手順 2 Azure ADで作成したアプリのアプリケーション Azure ADシークレットです。 これは、認証にも使用されます。|
    |`jobId`|これは、手順 3 で作成した HR コネクタのジョブ ID です。 これは、Microsoft クラウドにアップロードされた HR データを HR コネクタに関連付ける場合に使用します。|
-   |`csvFilePath`|これは、手順 1 で作成した CSV ファイル (スクリプトと同じシステムに格納されている) のファイル パスです。 ファイル パス内のスペースを避けるようにします。それ以外の場合は、単一引用符を使用します。|
+   |`filePath`|これは、手順 1 で作成したファイル (スクリプトと同じシステムに格納されている) のファイル パスです。 ファイル パス内のスペースを避けるようにします。それ以外の場合は、単一引用符を使用します。|
    |||
 
    各パラメーターの実際の値を使用する HR コネクタ スクリプトの構文の例を次に示します。
 
    ```powershell
-    .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
+    .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -filePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
    アップロードが成功した場合、スクリプトは成功したメッセージアップロード **表示** します。
@@ -410,7 +410,7 @@ HR コネクタを作成し、スクリプトを実行して HR データをア�
 
    1. [プログラム **/スクリプト] ボックスで** 、[ **参照**] をクリックし、次の場所に移動して選択して、パスがボックスに表示されます `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` 。
 
-   1. [引数 **の追加 (オプション)]** ボックスに、手順 4 で実行したのと同じスクリプト コマンドを貼り付けます。 たとえば、`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"` のように指定します。
+   1. [引数 **の追加 (オプション)]** ボックスに、手順 4 で実行したのと同じスクリプト コマンドを貼り付けます。 たとえば、`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"` のように指定します。
 
    1. [スタート **] (オプション) ボックス** に、手順 4 で実行したスクリプトのフォルダーの場所を貼り付けます。 たとえば、「 `C:\Users\contosoadmin\Desktop\Scripts` 」のように入力します。
 
