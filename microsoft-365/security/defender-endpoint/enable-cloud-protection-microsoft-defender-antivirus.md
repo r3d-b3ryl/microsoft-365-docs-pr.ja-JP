@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c44435fe61acacce760b7920313e432e889a4f14
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 210d2e4ff5864607a39297f08c505c491b8580b1
+ms.sourcegitcommit: 1a3b79b3dff13a4895dfa4090a22bce2fcd0942b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168752"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61597581"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>クラウド保護をオンMicrosoft Defender ウイルス対策
 
@@ -44,7 +44,7 @@ ms.locfileid: "61168752"
 エンドポイントがクラウド保護サービスに接続できるよう、特定のネットワーク接続要件の詳細については、「ネットワーク接続の構成と検証」を [参照してください](configure-network-connections-microsoft-defender-antivirus.md)。
 
 > [!NOTE]
-> 11 Windows 10および Windowsでは、このトピックで説明する基本レポート オプションと **詳細** レポート オプションの違いはありません。 これは従来の違いであり、どちらかの設定を選択すると、クラウド保護の同じレベルになります。 共有される情報の種類や量に違いはありません。 収集する情報の詳細については [、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=521839)。
+> 11 Windows 10 11 Windowsでは、この記事で説明する基本レポートオプションと詳細レポート オプションの違いはありません。 これは従来の違いであり、どちらかの設定を選択すると、クラウド保護の同じレベルになります。 共有される情報の種類や量に違いはありません。 収集する情報の詳細については [、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=521839)。
 
 ## <a name="use-intune-to-turn-on-cloud-protection"></a>Intune を使用してクラウド保護を有効にする
 
@@ -70,7 +70,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
 
 3. ウイルス対策プロファイルを選択します。 (まだプロファイルを持っていない場合、または新しいプロファイルを作成する場合は、「デバイス制限設定を構成する」を参照[Microsoft Intune。](/intune/device-restrictions-configure)
 
-4. [プロパティ **] を選択します**。 次に、[構成設定] **の横にある**[編集] を **選択します**。
+4. [**プロパティ**] をクリックします。 次に、[構成設定] **の横にある**[編集] を **選択します**。
 
 5. [ **クラウド保護]** を展開し、[クラウド配信の保護レベル] ボックス **の一覧** で、次のいずれかを選択します。
    - **高**: 強力なレベルの検出を適用します。
@@ -91,7 +91,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
 
 4. ツリーを展開して **、MAPS Windowsコンポーネント**  >  **Microsoft Defender ウイルス対策 >します。**
 
-5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 **[OK]** を選択します。
+5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 [**OK**] を選択します。
 
 6. 詳細な分析が **必要な場合は、[ファイル サンプルの送信] をダブルクリックします**。 最初のオプションが [有効] に設定 **され** 、他のオプションが次のどちらかに設定されている必要があります。
 
@@ -102,7 +102,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
    > [ **安全なサンプルを送信する** (1)] オプションは、ほとんどのサンプルが自動的に送信されるという意味です。 個人情報が含まれている可能性があるファイルは、引き続きプロンプトが表示され、追加の確認が必要です。
    > オプションを Always **Prompt** (0) に設定すると、デバイスの保護状態が低下します。 [送信しない **]** (2) に設定 [](configure-block-at-first-sight-microsoft-defender-antivirus.md)すると、Microsoft Defender for Endpoint の一目でブロック機能が機能しません。
 
-7. **[OK]** を選択します。
+7. [**OK**] を選択します。
 
 ## <a name="use-powershell-cmdlets-to-turn-on-cloud-protection"></a>PowerShell コマンドレットを使用してクラウド保護を有効にする
 

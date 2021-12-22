@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dffae27148d91ccedfd0009b1ce2942f75430824
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 215c98cde0cf526eeca62d4d0cb5644d0c406421
+ms.sourcegitcommit: 1a3b79b3dff13a4895dfa4090a22bce2fcd0942b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164204"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61597593"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>サポートされているオペレーティング システム、プラットフォーム、および機能 - 脅威と脆弱性の管理
 
@@ -46,25 +46,25 @@ ms.locfileid: "61164204"
 
 サポートされている OS またはプラットフォーム|OS の脆弱性|ソフトウェア製品の脆弱性|OS 構成の評価|セキュリティ制御の構成評価|ソフトウェア製品構成の評価
 :---|:---|:---|:---|:---|:---
-Windows 7|はい|サポート対象外|サポート対象外|サポート対象外|非サポート
-Windows 8.1|はい|はい|はい|はい|はい
-Windows 10バージョン 1607-1703|はい|非サポート|サポート対象外|サポート対象外|サポート対象外
-Windows 10バージョン 1709 以降|はい|はい|はい|はい|はい
-Windows 11|はい|はい|はい|はい|はい
-Windows Server 2008 R2|はい|はい|はい|はい|はい
-Windows Server 2012 R2|はい|はい|はい|はい|はい
-Windows Server 2016|はい|はい|はい|はい|はい
-Windows Server 2019|はい|はい|はい|はい|はい
-Windows Server 2022|はい|はい|はい|はい|はい
-macOS 10.14 "Mojave" 以上|はい|はい|はい|はい|はい 
-Red Hat Enterprise Linux 7.2 以上 ( \* 以下の「重要な」通知を参照)|はい|はい|はい|はい|はい
-CentOS 7.2 以上|はい|はい|はい|はい|はい
+Windows 7|はい|非サポート|非サポート|非サポート|非サポート
+Windows 8.1|はい|はい|はい|はい|必要
+Windows 10バージョン 1607-1703|必要|非サポート|非サポート|非サポート|非サポート
+Windows 10バージョン 1709 以降|はい|はい|はい|はい|必要
+Windows 11|はい|はい|はい|はい|必要
+Windows Server 2008 R2|はい|はい|はい|はい|必要
+Windows Server 2012 R2|はい|はい|はい|はい|必要
+Windows Server 2016|はい|はい|はい|はい|必要
+Windows Server 2019|はい|はい|はい|はい|必要
+Windows Server 2022|はい|はい|はい|はい|必要
+macOS 10.14 "Mojave" 以上|はい|はい|はい|はい|必要 
+Red Hat Enterprise Linux 7.2 以上 ( \* 以下の「重要な」通知を参照)|はい|はい|はい|はい|必要
+CentOS 7.2 以上|はい|はい|はい|はい|必要
 Ubuntu 16.04 LTS 以上の LTS|はい|はい|はい|はい|はい
-Oracle Linux 7.2 以上|はい|はい|はい|はい|はい
-SUSE Linux Enterprise サーバー 12 以上|はい|はい|はい|はい|はい
-Linux Debian 9 以上 (プレビュー版)|はい|はい|はい|はい|はい
-Android 6.0 以上 (プレビュー版)|はい|はい|非サポート|サポート対象外|サポート対象外
-iOS 12.0 以上 (プレビューで)|はい|非サポート|サポート対象外|サポート対象外|サポート対象外
+Oracle Linux 7.2 以上|はい|はい|はい|はい|必要
+SUSE Linux Enterprise サーバー 12 以上|はい|はい|はい|はい|必要
+Linux Debian 9 以上|はい|はい|はい|はい|必要
+Android 6.0 以上 (プレビュー版)|はい|必要|非サポート|非サポート|非サポート
+iOS 12.0 以上 (プレビューで)|必要|非サポート|非サポート|非サポート|非サポート
 
 > [!NOTE]
 > 一部の機能は、ダウンレベルのオペレーティング システムでは使用できません。サポートされている OS の詳細については、「Microsoft 365 Defender ポータル」を参照してください。
