@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 0fadd66b3d1519dee0d96a24eaa74b05fef89133
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: f3508db76a4a4dca9986de15517ca0df2df5ddb9
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241082"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586593"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -65,10 +65,10 @@ Teams 会議室に使用される RoomMailbox などの他のメールボック�
 
 Teams では、すべてのメッセージ (チャットおよびチャネル メッセージ) のプライマリ ストレージとして Azure を利用したチャット サービスを使用します。 コンプライアンス上の理由で Teams メッセージを削除する必要がある場合は、Teams のアイテム保持ポリシーは、メッセージが作成された日に基づいて、特定の期間の後にメッセージを削除することができます。 その後、メッセージは、コンプライアンス操作のために保存された Exchange メールボックスと、基盤となる Azure を利用したチャット サービスによって使用されるプライマリ ストレージの両方から完全に削除されます。 基盤となるアーキテクチャの詳細については、「[Microsoft Teams のセキュリティとコンプライアンス](/MicrosoftTeams/security-compliance-overview)」、特に「[情報保護アーキテクチャ](/MicrosoftTeams/security-compliance-overview#information-protection-architecture)」セクションを参照してください。
 
-Teams のチャットとチャネル メッセージからのこのデータはメールボックスに保存されますが、**Teams のチャネル メッセージ** と **Teams のチャット** の場所のアイテム保持ポリシーを構成する必要があります。 Teams のチャットとチャネル メッセージは、Exchange ユーザーまたはグループのメールボックスに対して構成されているアイテム保持ポリシーには含まれていません。
+Teams のチャットとチャネル メッセージからのこのデータはメールボックスに保存されますが、**Teams のチャネル メッセージ** と **Teams のチャット** の場所のアイテム保持ポリシーを構成する必要があります。 Teams のチャットとチャネル メッセージは、Exchange ユーザーまたはグループのメールボックスに対して構成されているアイテム保持ポリシーには含まれていません。 ユーザーがチャットに追加されると、共有されているすべてのメッセージのコピーがメールボックスに取り込まれます。 これらのメッセージの作成日は、新しいユーザーに対して変更されるのではなく、すべてのユーザーに対して同じままです。
 
 > [!NOTE]
-> ユーザーが Teams メッセージを保持するアクティブなアイテム保持ポリシーに含まれている場合、このポリシーに含まれるユーザーのメールボックスを削除すると、Teams のデータを保持するためにメールボックスは[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)に変換されます。 ユーザーのこの Teams のデータを保持する必要がない場合は、メールボックスを削除する前に、アイテム保持ポリシーからそのユーザー アカウントを除外します。
+> ユーザーが Teams メッセージを保持するアクティブなアイテム保持ポリシーに含まれている場合、このポリシーに含まれるユーザーのメールボックスを削除すると、Teams のデータを保持するためにメールボックスは[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)に変換されます。 ユーザーに対してこの Teams データを保持する必要がない場合は、アイテム保持ポリシーからユーザー アカウントを除外 [ して、メールボックスを削除してする前に、この変更が有効](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect) になるまで待ちます。
 
 チャット メッセージとチャネル メッセージのアイテム保持ポリシーが構成されると、Exchange サービスのタイマー ジョブが、これらの Teams メッセージが保存されている隠しフォルダ内のアイテムを定期的に評価します。 タイマー ジョブの実行には、通常 1 - 7 日かかります。 アイテムの保持期間が満了すると、これらのアイテムは SubstrateHolds フォルダに移動されます。これは、すべてのユーザーまたはグループのメールボックスにある別の隠しフォルダで、「論理的に削除済み」アイテムが完全に削除される前に保存するためのものです。 
 

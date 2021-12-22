@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/21/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 1793e487b3d58e2ae608249c64d32635f18b02e0
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: e61bf570c8e239d8379704d57e0fbdd988a4562d
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508213"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586559"
 ---
 # <a name="overview-of-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business の概要 (プレビュー)
 
@@ -35,6 +35,9 @@ Microsoft Defender for Business (プレビュー) は、特に中小企業 (最�
 この記事では、Defender for Business (プレビュー) に含まれる内容について説明します。これらの機能の詳細については、リンクを参照してください。
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business (プレビュー) の機能と機能。":::
+
+> [!NOTE]
+> プレビュー時に使用できる機能は一部ではありません。
 
 Defender for Business (プレビュー) を使用すると、ビジネスで使用するデバイスとデータの保護に役立ちます。
 
@@ -63,6 +66,7 @@ Defender for Business (プレビュー) を使用すると、ビジネスで使�
 
 - **Defender for Business (プレビュー) の** 使用を開始する場合は、このポータルMicrosoft 365 Defenderします。 
    - [ポータルをMicrosoft 365 Defenderする](mdb-get-started.md)
+   - [プレビュー シナリオ、チュートリアル、シミュレーションを試す](mdb-tutorials.md)
 
 - **デバイスとセキュリティ ポリシーと設定の管理に関するガイダンスを提供する**
    - [デバイスの管理](mdb-manage-devices.md)

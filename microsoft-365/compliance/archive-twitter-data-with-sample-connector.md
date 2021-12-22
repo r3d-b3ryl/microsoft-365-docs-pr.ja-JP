@@ -15,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がネイティブ コネクタをセットアップして使用して、Twitter データをユーザーにインポートする方法Microsoft 365。
-ms.openlocfilehash: ff29ebf19f292a2d052c7172f31779ca48cae428
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0be302a3e26b92ff08941720fad57b811922de3c
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201915"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586571"
 ---
-# <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Twitter データをアーカイブするコネクタをセットアップする (プレビュー)
+# <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Microsoft コネクタをセットアップして Twitter データをアーカイブする (プレビュー)
 
 データをインポートおよびアーカイブするには、Microsoft 365 コンプライアンス センターのコネクタを使用して、Twitter からユーザーにMicrosoft 365。 コネクタをセットアップして構成した後、組織の Twitter アカウントに (スケジュールに基づいて) 接続し、アイテムのコンテンツを電子メール メッセージ形式に変換し、Microsoft 365 のメールボックスにそれらのアイテムをインポートします。
 
@@ -51,15 +51,15 @@ Twitter データをインポートした後、訴訟ホールド、コンテン
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: アプリをアプリで作成Azure Active Directory
 
-最初の手順は、新しいアプリをアプリ (AAD) Azure Active Directory登録します。 このアプリは、Twitter コネクタの手順 2 で実装する Web アプリ リソースに対応します。
+最初の手順は、アプリに新しいアプリを登録Azure Active Directory (AAD)。 このアプリは、Twitter コネクタの手順 2 で実装する Web アプリ リソースに対応します。
 
 手順については、「アプリを作成する[」](deploy-twitter-connector.md#step-1-create-an-app-in-azure-active-directory)を参照Azure Active Directory。
 
 この手順が完了すると (手順の手順に従って)、次の情報をテキスト ファイルに保存します。 これらの値は、展開プロセスの後の手順で使用されます。
 
-- AAD アプリケーション ID
+- AAD ID
 
-- AAD アプリケーション シークレット
+- AAD シークレット
 
 - テナント ID
 
@@ -115,9 +115,9 @@ Twitter コネクタ アプリのソース コードを展開するには、次�
 
 - Twitter Access Token Secret (手順 3 で取得)
 
-- Azure Active Directory ID (手順 1 で取得した AAD アプリケーション ID)
+- Azure Active Directory ID (手順 1 でAADされたアプリケーション ID)
 
-- Azure Active Directory アプリケーション シークレット (手順 1 で取得した AAD アプリケーション シークレット)
+- Azure Active Directory シークレット (手順 1 でAADされたアプリケーション シークレット)
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>手順 5: アプリケーションで Twitter コネクタをセットアップMicrosoft 365 コンプライアンス センター
 

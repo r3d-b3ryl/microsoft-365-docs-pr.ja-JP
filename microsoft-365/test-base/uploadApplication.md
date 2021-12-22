@@ -3,7 +3,7 @@ title: パッケージをアップロードする
 description: アプリケーション、バイナリ、依存関係をテスト ベースにアップロードする方法
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: rshastri
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2bda97c9168f7d3162c07ece4629dad795645638
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 99b25757b3f7b0b3d4fcd43f97bab2ac303de6fa
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154136"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586183"
 ---
 # <a name="step-2-uploading-a-package"></a>手順 2: パッケージのアップロード
 
@@ -76,9 +76,9 @@ ms.locfileid: "60154136"
 
     [複数選択] ドロップダウンで、パッケージがインストールWindowsの OS バージョンを選択します。
 
-    - パッケージをクライアント オペレーティング システムWindowsのみをテストするには、メニュー リストから該当する Windows 11 の OS バージョンを選択します。
+    - パッケージをクライアント オペレーティング システムWindowsのみをテストするには、メニュー リストから該当するクライアント OS Windowsバージョンを選択します。
     - パッケージをサーバー オペレーティング システムWindowsテストするには、メニュー リストから該当するサーバー OS Windowsバージョンを選択します。
-    - パッケージをクライアントおよびサーバー オペレーティング Windowsサーバー Windows対してのみテストするには、メニューリストから該当するオペレーティング システムを選択します。
+    - パッケージをクライアント および Windows サーバー オペレーティング システムWindowsテストするには、メニュー リストから該当するオペレーティング システムを選択します。
 
     > [!NOTE]
     > サーバーとクライアントの両方の OSes に対してパッケージをテストする場合は、パッケージが互換性があり、両方の OSes で実行可能である必要があります。

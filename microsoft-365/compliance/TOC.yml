@@ -144,6 +144,8 @@
   items:
     - name: データの把握、データの保護、データ損失の防止
       href: information-protection.md
+    - name: MIP ソリューションをデプロイする
+      href: information-protection-solution.md
     - name: Microsoft Information Protection の既定のラベルとポリシー
       href: mip-easy-trials.md
     - name: 機密情報の種類
@@ -511,6 +513,8 @@
               href: archive-symphony-data.md
             - name: 区切られたテキスト
               href: archive-text-delimited-data.md
+            - name: Twitter (プレビュー)
+              href: archive-veritas-twitter-data.md
             - name: Webex チーム
               href: archive-webexteams-data.md
             - name: Web ページ

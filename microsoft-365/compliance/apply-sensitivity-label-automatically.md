@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 3d190db3b3df060075f55adbb2eeaf4cabf64284
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 03251d9f3b09f0c6a54b76298e16957c32737f44
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071440"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586677"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -382,41 +382,6 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 - [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
-
-## <a name="recent-enhancements-for-auto-labeling-policies"></a>自動ラベル付けポリシーの最近の機能強化
-
-OneDrive と SharePoint の自動ラベル付けポリシーの最近の機能強化では、以前のバージョンと比較して、次の機能強化が含まれています:
-
-- テナントあたり最大 100 個の自動ラベル付けポリシー。(以前は最大 10 個)
-
-- すべての OneDrive サイトと SharePoint サイト (新しいポリシーの既定値) のサポートと、これまでのように URL で各サイトを入力することなしに使用可能な SharePoint サイトを選択する機能。 新しい既定値である **All** を使用すると、テナント内のすべての既存の SharePoint サイトと OneDrive アカウント、および新しく作成されたすべてのサイトとアカウントがポリシーに自動的に含められます。 SharePoint の **サイトの選択** を選択しても、必要に応じて URL でサイトを手動で入力できます。
-
-- 自動ラベル付けポリシーで個々のサイトを指定すると、従来のように 10 サイトではなく最大 100 サイトがサポートされるようになりました。
-
-- シミュレーション モードの自動ラベル付けポリシーごとに最大 1,000,000 個の一致するファイル。 シミュレーション中にこの数を超えるファイルが一致した場合、ポリシーを有効にすることはできません。 少数のファイルに一致するように自動ラベル付けポリシーを再構成し、シミュレーションを再実行します。
-
-- シミュレーションの改善
-  - シミュレーション モードで自動ラベル付けポリシーを実行すると、最大 48 時間以内ではなく 12 時間以内に完了します。
-  - 一致するすべてのアイテムではなく、各サイト (OneDrive または SharePoint) のレビュー用に最大 100 個のランダムにサンプリングされた一致ファイルを提供することで、パフォーマンスが向上します。
-  - シミュレーションが完了すると、 [アクティビティ アラート](alert-policies.md)を受信するように構成されたユーザーにメール通知が送信されます。
-
-- 一致したアイテムを確認するのに役立つ機能強化:
-  - サンプリングされた一致項目の追加メタデータ情報。
-  - SharePoint サイト名やファイル所有者など、一致するアイテムに関する情報をエクスポートする機能。 この情報を使用して、一致したファイルをピボットして分析し、必要に応じてファイル所有者に委任して確認してもらうことができます。
-
-> [!TIP]
-> サポートされるポリシーとサイトの数を増やすには、PowerShell を使用して新しいポリシーを効率的に作成し、既存のポリシーにサイトを追加します。 詳細については、このページの「[PowerShell を使用した自動ラベル付けポリシー](#use-powershell-for-auto-labeling-policies)」のセクションを参照してください。
-
-### <a name="how-to-determine-whether-your-tenant-has-the-new-enhancements"></a>テナントに新しい拡張機能があるかどうかを確認する方法
-
-テナントに新しい拡張機能が追加されると、**[自動ラベル付け]** タブに次の通知が表示されるようになります:
-
-![テナントに新しい拡張機能があることを確認するバナー](../media/auto-labeling-updatedbanner.png)
-
-> [!NOTE]
-> テナントが新しい拡張機能を受け取ったときに、シミュレーション モードだった自動ラベル付けポリシーがある場合は、シミュレーションを再実行する必要があります。 このシナリオが当てはまる場合は、シミュレーションを確認するときに、**シミュレーションの再起動** を選択するように求められます。 シミュレーションを再起動しない場合、シミュレーションは完了しません。
->
-> ただし、機能強化は、シミュレーションなしで実行されているすべての自動ラベル付けポリシーと、作成するすべての新しい自動ラベル付けポリシーに引き続き適用されます。
 
 ## <a name="tips-to-increase-labeling-reach"></a>ラベル付けの範囲を拡大するためのヒント
 
