@@ -17,36 +17,37 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 recommendations: false
-description: Microsoft Information Protection (MIP) を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
-ms.openlocfilehash: 45448ee509b580a5fbd35388b95f130b684325d4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: Microsoft Information Protection (MIP) 機能を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
+ms.openlocfilehash: b3c7fc80f3735452ece4361ae3031ef6aa8f6bfc
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369686"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61577783"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 の Microsoft Information Protection
 
 >*[Microsoft 365 セキュリティとコンプライアンスのライセンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Microsoft Information Protection (MIP) を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報の検出、分類、保護が可能になります。
+Microsoft Information Protection (MIP) の機能を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報の検出、分類、保護が可能になります。
 
 MIP 機能は Microsoft 365 コンプライアンスに含まれており、[データを把握](#know-your-data)し、[データを保護](#protect-your-data)し、[データの損失を防止する](#prevent-data-loss)ためのツールを提供しています。
 
 ![MIP が機密性の高いデータの検出、分類、保護にどのように役立つかについての画像。](../media/powered-by-intelligent-platform.png)
 
+組織に MIP ソリューションを展開するための規範的なガイダンスについては、「[Microsoft の情報保護ソリューションの展開](information-protection-solution.md)」を参照してください。
+
 データの管理については、「[Microsoft 365 の Microsoft 情報ガバナンス](manage-Information-governance.md)」を参照してください。
 
 ## <a name="know-your-data"></a>データを把握する
 
-データの状況を把握し、ハイブリッド環境全体にわたって重要なデータを識別するには、次の機能を使用します:
+データの状況を把握し、ハイブリッド環境全体にわたって機密データを識別するには、次の機能を使用します:
 
 |機能|解決される問題|作業の開始|
 |:------|:------------|:--------------------|
 |[機密情報の種類](sensitive-information-type-learn-about.md)| 組み込みまたはカスタムの正規表現または関数を使用して、機密データを識別します。 裏付けとなる証拠には、キーワード、信頼水準、および近接性が含まれます。| [組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)|
 |[トレーニング可能な分類子](classifier-learn-about.md)| アイテム内の要素を識別する (パターン マッチング) のではなく、関心のあるデータの例を使用して機密性の高いデータを識別します。 組み込みの分類子を使用することも、独自のコンテンツを使用して分類子をトレーニングすることもできます。| [トレーニング可能な分類子の使用を開始する](classifier-get-started-with.md) |
 |[データの分類](data-classification-overview.md) | 組織内の、秘密度ラベルまたは保持ラベルを有するアイテムまたは分類済みアイテムのグラフィカルな ID です。 この情報を使用して、ユーザーがこれらのアイテムに対して実行しているアクションに関する分析情報を得ることもできます。 | [コンテンツ エクスプローラーの使用を開始する](data-classification-content-explorer.md) <p> [アクティビティ エクスプローラーの使用を開始する](data-classification-activity-explorer.md) |
-|[Azure Purview](/azure/purview/overview) |機密データを識別し、Azure Blob Storage、Azure Files、Azure Data Lake Storage、マルチクラウド データ ソースなどの Azure Purview アセット内のすべてのコンテンツに自動ラベル付けを適用します。 |[Azure Purview でのラベル付け](/azure/purview/create-sensitivity-label) |
 
 ## <a name="protect-your-data"></a>データを保護する
 
@@ -63,6 +64,7 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 [Rights Management コネクタ](/azure/information-protection/deploy-rms-connector) |Exchange や SharePoint Server を使用する既存のオンプレミスの展開か、または Windows Server とファイル分類インフラストラクチャ (FCI) を実行するファイル サーバーを保護する場合に限ります。 | [RMS コネクタを展開する手順](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure Information Protection 統合ラベル付けスキャナー](/azure/information-protection/deploy-aip-scanner)| オンプレミスのデータ ストア内にある機密情報の検出、ラベル付け、保護を行います。 | [Azure Information Protection 統合ラベル付けスキャナーの構成とインストール](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| クラウド上のデータ ストア内にある機密情報の検出、ラベル付け、保護を行います。 | [クラウドに保存されている規制対象データや機密データを検出し、分類し、ラベル付けし、保護する](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Azure Purview](/azure/purview/overview) |機密データを識別し、Azure Purview アセットのコンテンツに自動ラベル付けを適用します。 これには、Azure Data Lake や Azure Files などのストレージ内のファイル、および Azure SQL DB や Cosmos DB の列などのスキーマ化されたデータが含まれます。 |[Azure Purview でのラベル付け](/azure/purview/create-sensitivity-label) |
 |[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|秘密度ラベルの適用をサードパーティ製アプリやサービスに拡大します。 <p> サンプル シナリオ: [秘密度ラベルの設定と取得 (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK の設定と構成](/information-protection/develop/setup-configure-mip)|
 
 
