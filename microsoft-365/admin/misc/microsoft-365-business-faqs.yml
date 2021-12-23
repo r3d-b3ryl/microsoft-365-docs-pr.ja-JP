@@ -14,19 +14,19 @@ metadata:
   audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
   ms.date: 07/21/2020
-  ms.openlocfilehash: ac17fe7f554c0b79bf3f75bc89772bacf1653af3
-  ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+  ms.openlocfilehash: 1719a51ebcb5863a2ddc09f4dbfde0873dba3766
+  ms.sourcegitcommit: db62fce58867c7e5c8029b66966e792da3103b89
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/21/2021
-  ms.locfileid: "61578057"
+  ms.lasthandoff: 12/23/2021
+  ms.locfileid: "61598439"
 title: Microsoft 365 Business Premium に関するよく寄せられる質問
 summary: ''
 sections:
 - name: 全般
   questions:
   - question: Microsoft 365 Business Premium とは
-    answer: "Microsoft 365 は、小規模から中規模企業向けの、クラス最高の生産性ツール、セキュリティ、およびデバイス管理機能をまとめた統合ソリューションです。 内容は以下のとおりです。\n\n**一連のビジネスの生産性とコラボレーション ツール**:\n\n- Word、Excel、PowerPoint、Outlook、OneNote、Publisher、Access\n- Exchange、OneDrive、Skype for Business、Microsoft Teams、SharePoint。\n- Office のビジネスアプリ (Bookings, MileIQ<sup>1</sup>)。\n\n**Enterpriseのデバイス管理とセキュリティ機能**:\n\n- Microsoft Defender を使用して、フィッシングや高度なマルウェアなど、外部の脅威から保護Office 365プラン 1 および Microsoft Defender Exploit Guard。\n- データ損失防止ポリシーおよび Azure Information Protection プラン1で、機密情報へのアクセスや送信の方法を制御し、管理することができます。\n- Exchange Online のアーカイブ機能を使用して、データの保護、保存、バックアップを行います。\n- Office やその他のモバイル アプリでの Intune アプリ保護機能によるアプリ保護。\n- Intune デバイス管理をWindows 10 PC、macOS、およびモバイル デバイスのデバイス管理。\n- 多要素認証、セルフサービスによるパスワードのリセット、および条件付きアクセスを使用した ID保護。\n- デバイス間で一貫したセキュリティ &mdash; 構成を行い、デバイス間で会社のデータを保護します。Microsoft Defender ウイルス対策、常にオンおよび最新です。\n\n**デバイスの展開とユーザーセットアップの簡略化**:\n\n- 1 つの管理コンソールでユーザーとデバイスをセットアップと管理\n- Windows 10 PC での Office アプリの自動インストール。\n- 常に最新の Office と Windows 10。\n- Windows AutoPilot による PC のスムーズな展開。\n\n**その他の権利**:\n\n- Microsoft 365 Business Premium のお客様は、Windows Virtual Desktop およびOffice 共有コンピューターのライセンス認証機能にもアクセスできます。 詳しくは[、Microsoft 365中規模ビジネスブログをご](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)覧ください。 ビジネス サービスの説明[についてはMicrosoft 365を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。          \n"
+    answer: "Microsoft 365 は、小規模から中規模企業向けの、クラス最高の生産性ツール、セキュリティ、およびデバイス管理機能をまとめた統合ソリューションです。 内容は以下のとおりです。\n\n**一連のビジネスの生産性とコラボレーション ツール**:\n\n- Word、Excel、PowerPoint、Outlook、OneNote、Publisher、Access\n- Exchange、OneDrive、Skype for Business、Microsoft Teams、SharePoint。\n         \n**Enterpriseのデバイス管理とセキュリティ機能**:\n\n- Microsoft Defender を使用して、フィッシングや高度なマルウェアなど、外部の脅威から保護Office 365プラン 1 および Microsoft Defender Exploit Guard。\n- データ損失防止ポリシーおよび Azure Information Protection プラン1で、機密情報へのアクセスや送信の方法を制御し、管理することができます。\n- Exchange Online のアーカイブ機能を使用して、データの保護、保存、バックアップを行います。\n- Office やその他のモバイル アプリでの Intune アプリ保護機能によるアプリ保護。\n- Intune デバイス管理をWindows 10 PC、macOS、およびモバイル デバイスのデバイス管理。\n- 多要素認証、セルフサービスによるパスワードのリセット、および条件付きアクセスを使用した ID保護。\n- デバイス間で一貫したセキュリティ &mdash; 構成を行い、デバイス間で会社のデータを保護します。Microsoft Defender ウイルス対策、常にオンおよび最新です。\n\n**デバイスの展開とユーザーセットアップの簡略化**:\n\n- 1 つの管理コンソールでユーザーとデバイスをセットアップと管理\n- Windows 10 PC での Office アプリの自動インストール。\n- 常に最新の Office と Windows 10。\n- Windows AutoPilot による PC のスムーズな展開。\n\n**その他の権利**:\n\n- Microsoft 365 Business Premium のお客様は、Windows Virtual Desktop およびOffice 共有コンピューターのライセンス認証機能にもアクセスできます。 詳しくは[、Microsoft 365中規模ビジネスブログをご](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)覧ください。 ビジネス サービスの説明[についてはMicrosoft 365を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。          \n"
   - question: Microsoft 365 Business Premium の採用を検討する必要がある対象ユーザーはだれですか。
     answer: >
       Microsoft 365 Business Premium は、次のような機能を備えた包括的なクラウドベースのセキュリティ ソリューションです。
