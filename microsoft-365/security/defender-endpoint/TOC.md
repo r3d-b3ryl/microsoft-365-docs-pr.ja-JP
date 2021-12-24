@@ -267,11 +267,7 @@
 ### [Microsoft Defender for Endpoint でのホスト ファイアウォール レポート](host-firewall-reporting.md)
 
 ### [攻撃面の減少]()
-#### [攻撃面の減少の概要](overview-attack-surface-reduction.md)
-#### [攻撃面の減少機能を構成する](configure-attack-surface-reduction.md)
-#### [攻撃面の減少に監査モードを使用する](audit-windows-defender.md)
-#### [攻撃面の減少イベントを表示する](event-views.md)
-#### [攻撃面の減少の FAQ](attack-surface-reduction-faq.yml)
+#### [攻撃面の減少を理解して使用する](overview-attack-surface-reduction.md)
 #### [攻撃面の減少 (ASR) ルール]()
 ##### [ASR ルールに関する詳細情報](attack-surface-reduction.md)
 ##### [ASR ルールの展開](attack-surface-reduction-rules-deployment.md)
@@ -283,6 +279,7 @@
 ##### [ASR ルールの評価](evaluate-attack-surface-reduction.md)
 ##### [ASR ルールの有効化](enable-attack-surface-reduction.md)
 ##### [ASR ルールのカスタマイズ](customize-attack-surface-reduction.md)
+#### [攻撃面の減少の FAQ](attack-surface-reduction-faq.yml)
 
 ### 次世代の保護
 #### [次世代保護の概要](next-generation-protection.md)
