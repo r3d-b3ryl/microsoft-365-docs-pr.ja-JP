@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: b88aabd96f89f175ae09df1102ba3aff45af27f2
-ms.sourcegitcommit: 96618d21ad0424b7b51090afad5079ad0e955c21
+ms.openlocfilehash: 0cfa6c1b672dabcbe5d5418461a0a55ea42867ab
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60251114"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612622"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -65,14 +65,11 @@ Microsoft 365 の[監査機能](search-the-audit-log-in-security-and-compliance.
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
 
 - [Microsoft 365 のその他の高度な監査イベント](#other-advanced-audit-events-in-microsoft-365)
-
-> [!NOTE]
-> <sup>*</sup>現時点では、このイベントは Office 365 および Microsoft 365 Government GCC High と Microsoft 365 Government DoD の環境では利用できません。
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 

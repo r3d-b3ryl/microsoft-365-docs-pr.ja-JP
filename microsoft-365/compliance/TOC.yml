@@ -469,6 +469,8 @@
               href: archive-linkedin-data.md
             - name: 物理的 バッジデータ
               href: import-physical-badging-data.md
+            - name: Slack 電子情報開示 (プレビュー)
+              href: archive-slack-data-microsoft.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
         - name: Veritas データ コネクタ

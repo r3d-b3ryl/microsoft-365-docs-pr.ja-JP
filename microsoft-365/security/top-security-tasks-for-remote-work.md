@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: 2d68f65a711e5fc3b78f535a7125fb381475dbec
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: aa0c127f661e0f4f7e6a694e04e45fe1741436e5
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301380"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612646"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅での作業をサポートするセキュリティ チームの上位 12 のタスク
 
@@ -122,7 +122,7 @@ Microsoft Defender for Office 365:
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5: 電源を入Microsoft 365 Defender
 
-Microsoft Defender for Office 365および Microsoft Defender for Identity が構成されたので、これらの機能からの結合された信号を 1 つのダッシュボードで表示できます。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)では、ワークロード全体にわたるアラート、インシデント、自動調査と対応、高度な検索 (Microsoft Defender for Identity、Office 365 の Defender、Microsoft Defender for Endpoint、および Microsoft Cloud App Security)<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">を 1 つのウィンドウにまとめます。Microsoft 365 Defender ポータル</a>.
+Microsoft Defender for Office 365および Microsoft Defender for Identity が構成されたので、これらの機能からの結合された信号を 1 つのダッシュボードで表示できます。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)では、ワークロード全体にわたるアラート、インシデント、自動調査と対応、高度な検出 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Defender for Cloud Apps) を、Microsoft 365 Defender の 1 つのウィンドウにまとめます。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータル</a>.
 
 ![MTP ダッシュボードの図。](../media/top-ten-security-remote-work-mtp-dashboard.png)
 

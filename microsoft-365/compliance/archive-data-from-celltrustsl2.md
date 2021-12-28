@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: CellTrust SL2 データ コネクタをセットアップして使用して、モバイル通信データをインポートおよびアーカイブする方法について学習します。
-ms.openlocfilehash: 4d54e424f326c42ac92ec5f0fc71a22e06351b7a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d412f00fda12a44fc9d09d9c61d5c59ea17cb8a2
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158432"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612562"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>CellTrust SL2 からデータをアーカイブMicrosoft 365
 
@@ -61,7 +61,7 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
 3. **[CellTrust SL2] (プレビュー) をクリックします**。
 
-4. **CellTrust SL2 (プレビュー**) 製品の説明ページで、[コネクタの追加]**をクリックします**。
+4. **CellTrust SL2 (プレビュー)** 製品の説明ページで、[コネクタの追加]**をクリックします**。
 
 5. [サービス条件 **] ページで、[** 同意する] を **クリックします**。
 
@@ -101,7 +101,7 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
 [CellTrust SL2 データ](https://www.celltrust.com/contact-us/#support)コネクタのセットアップに関するヘルプについては、CellTrust への問い合わせの詳細については、CellTrust カスタマー サポート ページを参照してください。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>More information
 
 - ドメイン管理者は、そのドメインまたはそのドメイン内の任意の OUs のコネクタを設定できます。 OU 管理者アカウントを使用する場合は、その特定の OU のコネクタのみを設定できます。
 

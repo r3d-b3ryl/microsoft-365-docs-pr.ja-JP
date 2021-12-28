@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 22b129d148a6e42a9b0f72b48f1e1188f4864d64
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 319e8414d9d78eaa4735864f7e47ff146d2b9734
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241118"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612634"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -244,7 +244,7 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 |機能|アイテム保持ポリシー |保持ラベル|
 |:-----|:-----|:-----|:-----|
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
-|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> 不要 <br /> 不要 <br /> いいえ |
+|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
 |保持の自動適用 | はい | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリとキーワード、トレーニング可能な分類子、クラウド添付ファイル| いいえ | はい |
 |保持の手動適用 | いいえ | はい |
@@ -256,7 +256,7 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 |廃棄の証明 (最大 7 年間) | いいえ |はい、処分レビューを使用するか、アイテムがレコードとしてマークされている場合|
 |管理者アクティビティを監査する| はい | はい|
 |保持アクションの監査| いいえ | はい <sup>\*</sup> |
-|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> 不要 | <br /> はい <br /> はい|
+|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> いいえ | <br /> はい <br /> はい|
 
 **脚注:**
 
@@ -271,6 +271,19 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 2. コンテンツを無期限に保持する保持ラベルを作成して構成し、すべての OneDrive アカウントに対して発行するラベル ポリシーにこのラベルを追加します。 5 年間更新されない場合でも自動削除されないようにする必要のある特定のドキュメントに対して、このラベルを手動で適用する方法をユーザーに説明します。
 
 アイテム保持ポリシーと保持ラベルを組み合わせて使用する方法、および組み合わせて使用した場合の結果の確認方法の詳細については、保持の原則と優先順位について説明している次のセクションを参照してください。
+
+## <a name="how-long-it-takes-for-retention-settings-to-apply"></a>保持設定が適用されるまでにかかる時間
+
+ワークロードの保持ポリシーとラベル ポリシーを送信して保持ラベルを自動的に適用する場合、保持設定がコンテンツに適用されるまで最大 7 日かかります。
+
+- [アイテム保持ポリシーが有効になるまでの所要時間](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
+- [保持ラベルが有効になるまでの所要時間](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)
+
+同様に、ラベルを公開した後、保持ラベルがアプリに表示されるまで最大 7 日かかります。
+
+- [保持ラベルが適用できるようになったとき](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)
+
+多くの場合、ポリシーが有効になり、ラベルは 7 日より早く表示されます。 ただし、このプロセスに影響を与える可能性のある変数が多数あるため、最大 7 日間の計画を立てることをお勧めします。
 
 ## <a name="adaptive-or-static-policy-scopes-for-retention"></a>保持のためのアダプティブ ポリシー スコープまたは静的ポリシー スコープ
 

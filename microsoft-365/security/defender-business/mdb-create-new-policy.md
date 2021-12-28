@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/27/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: aaeb816b833a15e5ea7bf5d7577b062f8b5dbc6b
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: bb6ec4c3488eff847933935ce7cf84ec5194c3cc
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508278"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612514"
 ---
 # <a name="create-a-new-policy-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business で新しいポリシーを作成する (プレビュー)
 
@@ -59,7 +59,7 @@ Microsoft Defender for Business (プレビュー) には、推奨設定を使用
    - デバイス グループを設定するときに、オペレーティング システムのバージョンなど、特定の条件を指定します。 条件を満たすデバイスは、除外しない限り、そのデバイス グループに含まれます。 
    - 定義する既定のデバイス グループとカスタム デバイス グループを含むすべてのデバイス グループは、Azure Active Directory (Azure AD) に格納されます。
 
-   デバイス グループの詳細については、「. 
+   デバイス グループの詳細については [、「Defender for Business (プレビュー)のデバイス グループ」を参照してください](mdb-create-edit-device-groups.md)。
 
 8. [構成 **設定] タブ** で、ポリシーの設定を指定し、[次へ] を **選択します**。 個々の設定の詳細については、「Microsoft Defender for Business の構成設定 [(プレビュー)」を参照してください](mdb-next-gen-configuration-settings.md)。
 

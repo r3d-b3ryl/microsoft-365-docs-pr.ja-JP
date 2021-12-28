@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの CloudAppEvents テーブル
 description: 高度なハンティング スキーマの CloudAppEvents テーブルで、クラウド アプリとサービスからのイベントについて説明します。
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、CloudAppEvents、Cloud App Security、MCAS
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、CloudAppEvents、Defender for Cloud Apps
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 128d4f9ce80bff6192771ee1806f708d0d15c00f
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: daed3fb87aab498cdf91247a59e48af685aed010
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531137"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612538"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -50,7 +50,7 @@ ms.locfileid: "61531137"
 | `Application` | `string` | 記録されたアクションを実行したアプリケーション |
 | `ApplicationId` | `string` | アプリケーションの一意の識別子 |
 | `AccountObjectId` | `string` | アカウントの一意の識別子は、Azure Active Directory |
-| `AccountId` | `string` | ユーザーが見つけたアカウントのMicrosoft Cloud App Security。 ID、Azure Active Directoryプリンシパル名、または他の識別子を使用できます。 |
+| `AccountId` | `string` | Microsoft Defender for Cloud Apps が見つけたアカウントの識別子。 ID、Azure Active Directoryプリンシパル名、または他の識別子を使用できます。 |
 | `AccountDisplayName` | `string` | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
 | `IsAdminOperation` | `string` | アクティビティが管理者によって実行されたかどうかを示します。 |
 | `DeviceType` | `string` | 目的と機能に基づくデバイスの種類 ("ネットワーク デバイス"、"ワークステーション"、"Server"、"Mobile"、"Gaming console"、"Printer" など) | 

@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータをインポートおよびアーカイブして、メールボックスにMicrosoft 365します。
-ms.openlocfilehash: 59388d85ba1e768add90461b6905ed5763fcd87d
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: b5ef40d895ced6d7ff40d97e80fc91b359b576b6
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586615"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612526"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -63,7 +63,8 @@ Microsoft 365を使用すると、管理者はデータ コネクタを使用し
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[物理バッド](import-physical-badging-data.md) ||||||![チェック マーク](../media/checkmark.png)|
-|[Twitter](archive-twitter-data-with-sample-connector.md)     |![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
+|[Slack eDiscovery](archive-slack-data-microsoft.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Twitter](archive-twitter-data-with-sample-connector.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 ||||||||
 
 ### <a name="veritas-data-connectors"></a>Veritas データ コネクタ
@@ -266,17 +267,17 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android Archiver | 必要 | いいえ | いいえ |
-|AT&T SMS/MMS Network Archiver | 必要 | いいえ | いいえ |
+|Android Archiver | はい | いいえ | いいえ |
+|AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
 |Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Enterprise Number Archiver | 必要 | いいえ | いいえ |
-|O2 SMS と Voice Network Archiver | 必要         | いいえ | いいえ |
+|Enterprise Number Archiver | はい | いいえ | いいえ |
+|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
 |Rogers Network Archiver | はい         | いいえ | いいえ |
-|Signal Archiver | はい | いいえ | いいえ |
+|Signal Archiver | はい | いいえ | なし |
 |Telegram Archiver | はい | いいえ | いいえ |
-|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
-|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|WeChat Archiver | はい | いいえ | いいえ |
+|TELUS SMS ネットワーク アーカイブ | はい | いいえ | なし |
+|Verizon SMS/MMS Network Archiver | はい | いいえ | なし |
+|WeChat Archiver | はい | いいえ | なし |
 |WhatsApp Archiver | はい | いいえ | いいえ |
 |||||
 
@@ -284,30 +285,30 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|CellTrust SL2 | 必要 | いいえ | いいえ |
+|CellTrust SL2 | はい | いいえ | いいえ |
 |||||
 
 ### <a name="17a-4-data-connectors"></a>17a-4 データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|BlackBerry DataParser | 必要 | いいえ | いいえ |
-|Bloomberg DataParser  | はい | いいえ | いいえ |
-|Cisco Jabber DataParser  | 必要 | いいえ | いいえ |
-|Cisco Webex DataParser  | 必要 | いいえ | いいえ |
-|FactSet DataParser  | 必要 | いいえ | いいえ |
-|Fuze DataParser  | はい | いいえ | いいえ |
-|FX Connect DataParser  | はい | いいえ | いいえ |
-|ICE DataParser  | 必要 | いいえ | いいえ |
-|InvestEdge DataParser  | 必要 | いいえ | いいえ |
-|LivePerson Conversational Cloud DataParser  | 必要 | いいえ | いいえ |
-|Quip DataParser  | 必要 | いいえ | いいえ |
-|Refinitiv Eikon Messenger DataParser  | 必要 | いいえ | いいえ |
-|ServiceNow DataParser  | 必要 | いいえ | いいえ |
-|Skype for Business Server DataParser | 必要 | いいえ | いいえ |
+|BlackBerry DataParser | はい | いいえ | いいえ |
+|Bloomberg DataParser  | はい | いいえ | なし |
+|Cisco Jabber DataParser  | はい | いいえ | なし |
+|Cisco Webex DataParser  | はい | いいえ | なし |
+|FactSet DataParser  | はい | いいえ | なし |
+|Fuze DataParser  | はい | いいえ | なし |
+|FX Connect DataParser  | はい | いいえ | なし |
+|ICE DataParser  | はい | いいえ | いいえ |
+|InvestEdge DataParser  | はい | いいえ | いいえ |
+|LivePerson Conversational Cloud DataParser  | はい | いいえ | いいえ |
+|Quip DataParser  | はい | いいえ | いいえ |
+|Refinitiv Eikon Messenger DataParser  | はい | いいえ | いいえ |
+|ServiceNow DataParser  | はい | いいえ | いいえ |
+|Skype for Business Server DataParser | はい | いいえ | いいえ |
 |Slack DataParser | はい | いいえ | いいえ |
 |SQL DataParser  | はい | いいえ | いいえ |
-|Symphony DataParser | はい | いいえ | いいえ |
+|Symphony DataParser | はい | いいえ | なし |
 |Zoom DataParser | はい | いいえ | いいえ |
 |||||
 

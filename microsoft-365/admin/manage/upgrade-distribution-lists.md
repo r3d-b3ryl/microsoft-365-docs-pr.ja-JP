@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 1 つ以上の配布リストを Outlook の Microsoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: bf68d5c0e9c00536013e89a690e5708ca79739fe
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 7a6e0eff49958b99df9ca59702b814b364aefb46
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422509"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612574"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook で配布リストを Microsoft 365 グループにアップグレードする
 
@@ -73,9 +73,11 @@ ms.locfileid: "61422509"
 
 アップグレードに失敗した配布リストは、変更されないまま保持されます。
 
-1 つ以上の **対象** の配布リストがアップグレードに失敗した場合は、 [サポート チケット](../../business-video/get-help-support.md)を開きます。問題を解決するために、この問題をグループ エンジニアリング チームにエスカレーションする必要があります。
+1 つ以上 **の対象配布** リストがアップグレードに失敗した場合、 
 
-サービスの停止により配布リストがアップグレードされませんが、可能性は低い可能性があります。 必要な場合は、しばらく待ってから、もう一度配布リストをアップグレードします。
+1. この[スクリプト](https://aka.ms/DLToM365Group)を使用して、配布リストを Microsoft 365 グループにアップグレードしない可能性がある問題をスキャンし、スクリプトによって報告された問題を修正し、配布リストのアップグレードをもう 1 回試します。 
+
+2. 上記のスクリプトで問題が解決しない場合、または問題が解決しない場合は、サポート チケットを [開きます](../../business-video/get-help-support.md)。 問題を解決するために、この問題をグループ エンジニアリング チームにエスカレーションする必要があります。
 
 ## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>PowerShell を使用して複数の配布リストを同時にアップグレードする方法
 
@@ -185,6 +187,11 @@ DL が対象ですが、アップグレードできない場合もあります�
 - 管理者が組織内の **グループ** にグループ メール アドレス ポリシーを適用し、条件を満たしていない DLL をアップグレードしようとする場合、DL はアップグレードされません。
 
 - **MemberJoinRestriction** または **MemberDepartRestriction** が **Closed** に設定されている DLL をアップグレードできない
+
+- グループMicrosoft 365作成は、この記事の手順を使用して、少数のユーザーにのみ[許可されます](/microsoft-365/solutions/manage-creation-of-groups)。 このシナリオでは、配布リストの所有者が Microsoft 365 グループを作成できない場合、配布リストは Microsoft 365 グループにアップグレードされません。 回避策: 上記のシナリオでは、次のいずれかの回避策を使用します。
+1)  DL の所有者として言及されているすべてのユーザーが M365 グループの作成を許可されている、つまり M365 グループに許可されているセキュリティ グループのメンバーである必要があります。
+または
+2)  一時的に、M365 グループの作成が許可されていない DL の所有者を、M365 グループの作成が許可されているユーザーに置き換える
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>EAC からのアップグレードに失敗した場合、配布リストはどうなりますか?
 
