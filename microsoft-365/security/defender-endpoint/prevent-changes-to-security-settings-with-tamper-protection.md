@@ -17,14 +17,14 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 12/17/2021
+ms.date: 12/23/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6259cafb34922d170c1c22429e3a06805f0cc0e3
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: b13eaa93103759d072960ba0ea4e322e8f5a642c
+ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566701"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609123"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -104,7 +104,7 @@ ms.locfileid: "61566701"
 
 - 改ざん防止を管理Microsoft 365 Defenderポータルを使用する場合は、Intune またはテナント接続方法を使用する必要があります。
 
-- Microsoft Defender セキュリティ センター でタンパープロテクションを管理すると、この設定はテナント全体に適用され、Windows 10、Windows 11、Windows Server 2012 R2 を実行しているすべてのデバイスに影響します。Windows Server 2016、Windows Server 2019 または Windows Server 2022 を使用します。 タンパープロテクションを微調整するには (一部のデバイスではタンパープロテクションをオンにし、他のデバイスではオフにするなど [)、Intune](#manage-tamper-protection-for-your-organization-using-intune) または Configuration Manager をテナント接続で [使用します](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)。
+- Microsoft Defender セキュリティ センター でタンパープロテクションを管理すると、この設定はテナント全体に適用され、Windows 10、Windows 10 Enterprise マルチ セッション、Windows 11、Windows 11 を実行しているすべてのデバイスに影響を与えます。Enterprise、R2、Windows Server 2012、Windows Server 2016、Windows Server 2019、または Windows Server 2022 を使用します。 タンパープロテクションを微調整するには (一部のデバイスではタンパープロテクションをオンにし、他のデバイスではオフにするなど [)、Intune](#manage-tamper-protection-for-your-organization-using-intune) または Configuration Manager をテナント接続で [使用します](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)。
 
 - ハイブリッド環境がある場合、Intune で構成されたタンパープロテクション設定は、ポータルで構成された設定よりも優先Microsoft 365 Defenderされます。
 
@@ -116,6 +116,8 @@ ms.locfileid: "61566701"
   
   - Windows 10
   - Windows 11
+  - Windows 10 Enterprise マルチセッション
+  - Windows 11 Enterprise セッション 
   - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
   - Windows Server 2022
   - Windows Server バージョン[1803](/windows/release-health/status-windows-10-1803)以降
@@ -189,10 +191,10 @@ Windows Server 2016、Windows 10 バージョン 1709、1803、[または 1809](
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Configuration Manager バージョン 2006 で組織の改ざん防止を管理する
 
-Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)を使用している場合は、Windows 10、Windows 11、Windows Server 2012 R2、Windows Server 2016、Windows Server 2019、Windows Server 2022 のタンパープロテクション設定を管理できます。テナント接続 *と呼ばれる*。 テナント接続を使用すると、オンプレミス専用の Configuration Manager デバイスを Microsoft エンドポイント マネージャー 管理センターに同期し、エンドポイント セキュリティ構成ポリシーを & デバイスのオンプレミス コレクションに配信できます。
+Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)を使用している場合は、Windows 10、Windows 10 Enterprise マルチ セッション、Windows 11、Windows 11 Enterprise マルチ セッションのタンパープロテクション設定を管理できます。Windows Server 2012と呼ばれるメソッドを使用して、R2、Windows Server 2016、Windows Server 2019、Windows Server 2022 を *使用します*。 テナント接続を使用すると、オンプレミス専用の Configuration Manager デバイスを Microsoft エンドポイント マネージャー 管理センターに同期し、エンドポイント セキュリティ構成ポリシーを & デバイスのオンプレミス コレクションに配信できます。
 
 > [!NOTE]
-> この手順を使用して、Windows 10、Windows 11、Windows Server 2019、および Windows Server 2022 を実行しているデバイスに改ざん防止を拡張できます。 この手順で説明されているリソースの前提条件と他の情報を必ず確認してください。
+> この手順を使用すると、Windows 10、Windows 10 Enterprise マルチセッション、Windows 11、Windows 11 Enterprise マルチセッション、Windows Server 2019、Windows Server 2022 を実行しているデバイスに改ざん防止を拡張できます。 この手順で説明されているリソースの前提条件と他の情報を必ず確認してください。
 
 1. テナント接続を設定します。 詳細については、「テナント接続Microsoft エンドポイント マネージャー:デバイスの同期と[デバイスの操作」を参照してください](/mem/configmgr/tenant-attach/device-sync-actions)。
 
@@ -254,9 +256,13 @@ Microsoft [](/microsoft-365/security/defender-endpoint/overview-endpoint-detecti
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>タンパープロテクションWindows構成できるバージョン
 
 Windows 10 OS [1709](/windows/release-health/status-windows-10-1709) [、1803](/windows/release-health/status-windows-10-1803) [、1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)以降を[Microsoft Defender for Endpoint と共に使用します](/microsoft-365/security/defender-endpoint)。
+  
+Windows 10 Enterprise マルチセッション
 
 Windows 11
 
+Windows 11 Enterprise セッション
+  
 Configuration Manager バージョン 2006 をテナント接続で使用している場合、タンパープロテクションを Windows Server 2012 R2、Windows Server 2016、Windows Server 2019、Windows Server 2022 に拡張できます。 「 [テナント接続: 管理センターからエンドポイント セキュリティ](/mem/configmgr/tenant-attach/deploy-antivirus-policy)ウイルス対策ポリシーを作成して展開する (プレビュー)」を参照してください。
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>改ざん防止は、Microsoft 以外のウイルス対策アプリの登録Windows セキュリティしますか?

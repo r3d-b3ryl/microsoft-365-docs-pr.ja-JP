@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: a9d5b274b5d5c3414206c5770be043cc2a543ce7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d70579c3e1b89fa220edbacd92a61f8fbbebe14d
+ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166268"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609135"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux の新機能
 
@@ -29,6 +29,10 @@ ms.locfileid: "61166268"
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1015257-30121092152570"></a>101.52.57 (30.121092.15257.0)
+
+- アプリケーションで使用されている脆弱な log4j jar を検出Javaしました。 コンピューターは、log4j jars を読み込Javaプロセスを実行するために定期的に検査されます。 この情報は Microsoft Defender for Endpoint バックエンドに報告され、ポータルの [脆弱性の管理] 領域に公開されます。
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
 

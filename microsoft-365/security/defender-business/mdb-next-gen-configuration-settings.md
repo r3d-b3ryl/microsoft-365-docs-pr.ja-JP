@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/23/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ab2d82c3b5db6b114b8172e0f4bf4aa3658eb28a
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 60ae1dee49e8d5d1ed44cdb78c74f7165b102edb
+ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507244"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609111"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business の次世代の構成設定について (プレビュー)
 
@@ -30,12 +30,13 @@ ms.locfileid: "61507244"
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
-Microsoft Defender for Business (プレビュー) の次世代保護には、堅牢なウイルス対策およびマルウェア対策保護が含まれています。 既定のポリシーは、生産性を妨げることなくデバイスとユーザーを保護するように設計されています。ただし、ビジネス ニーズに合わせてポリシーをカスタマイズすることもできます。 
+Microsoft Defender for Business (プレビュー) の次世代保護には、堅牢なウイルス対策およびマルウェア対策保護が含まれています。 既定のポリシーは、生産性を妨げることなくデバイスとユーザーを保護するように設計されています。ただし、ビジネス ニーズに合わせてポリシーをカスタマイズすることもできます。 また、セキュリティ ポリシーを使用しているMicrosoft エンドポイント マネージャー、セキュリティ ポリシーと設定を管理できます。
 
 **この記事では、以下について説明します**。
 
 - [次世代の保護の設定とオプション](#next-generation-protection-settings-and-options)
-- [その他の事前構成済み設定](#additional-preconfigured-settings) 
+- [Defender for Business のその他の事前構成済みの設定 (プレビュー)](#other-preconfigured-settings-in-defender-for-business) 
+- [設定で構成できるMicrosoft エンドポイント マネージャー](#settings-you-can-configure-in-microsoft-endpoint-manager)
 
 ## <a name="next-generation-protection-settings-and-options"></a>次世代の保護の設定とオプション
 
@@ -44,8 +45,8 @@ Microsoft Defender for Business (プレビュー) の次世代保護には、堅
 | Setting | 説明 |
 |:---|:---|
 | **リアルタイム保護**  |  |
-| **リアルタイム保護を有効にする** | 既定で有効になっているリアルタイム保護は、デバイス上でマルウェアが実行されるのを見つけて停止します。 *リアルタイム保護を有効にすることをお勧めします。*<br/><br/>リアルタイム保護を有効にすると、次の設定が構成されます。<br/>- 動作の監視がオンになっている[(AllowBehaviorMonitoring](/windows/client-management/mdm/policy-csp-defender))<br/>- ダウンロードしたファイルと添付ファイルはすべてスキャンされます ([AllowIOAVProtection](/windows/client-management/mdm/policy-csp-defender))<br/>- Microsoft ブラウザーで使用されるスクリプトがスキャンされます ([AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender))   |
-| **事前ブロック** | 既定で有効にすると、検出から数秒でマルウェアがブロックされ、分析用にサンプル ファイルを送信できる時間 (秒) が増加し、検出レベルが High に設定されます。 *一目でブロックをオンにすることをお勧めします。*<br/><br/>一目でブロックをオンにすると、次の設定が行Microsoft Defender ウイルス対策。 <br/>- 疑わしいファイルのブロックとスキャンが高ブロック レベル ([CloudBlockLevel ) に設定されている](/windows/client-management/mdm/policy-csp-defender)<br/>- ブロックおよびチェックするファイルの秒の数を 50 秒に設定します ([CloudExtendedTimeout](/windows/client-management/mdm/policy-csp-defender)) <br/><br/>**重要**: 一目でブロックをオフにすると、ブロックが影響を受け `CloudBlockLevel` `CloudExtendedTimeout` 、Microsoft Defender ウイルス対策。  |
+| **リアルタイム保護を有効にする** | 既定で有効になっているリアルタイム保護は、デバイス上でマルウェアが実行されるのを見つけて停止します。 *リアルタイム保護を有効にすることをお勧めします。*<br/><br/>リアルタイム保護を有効にすると、次の設定が構成されます。<br/>- 動作の監視がオンになっている[(AllowBehaviorMonitoring](/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring))<br/>- ダウンロードしたファイルと添付ファイルはすべてスキャンされます ([AllowIOAVProtection](/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection))<br/>- Microsoft ブラウザーで使用されるスクリプトがスキャンされます ([AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning))   |
+| **事前ブロック** | 既定で有効にすると、検出から数秒でマルウェアがブロックされ、分析用にサンプル ファイルを送信できる時間 (秒) が増加し、検出レベルが High に設定されます。 *一目でブロックをオンにすることをお勧めします。*<br/><br/>一目でブロックをオンにすると、次の設定が行Microsoft Defender ウイルス対策。 <br/>- 疑わしいファイルのブロックとスキャンが高ブロック レベル ([CloudBlockLevel ) に設定されている](/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel)<br/>- ブロックおよびチェックするファイルの秒の数を 50 秒に設定します ([CloudExtendedTimeout](/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout)) <br/><br/>**重要**: 一目でブロックをオフにすると、ブロックが影響を受け `CloudBlockLevel` `CloudExtendedTimeout` 、Microsoft Defender ウイルス対策。  |
 | **ネットワーク保護を有効にする** | オンにすると、ネットワーク保護は、インターネット上のフィッシング詐欺、悪用ホスティング サイト、悪意のあるコンテンツから保護するのに役立ちます。 また、ユーザーはネットワーク保護をオフにできます。<br/><br/>ネットワーク保護は、次のいずれかのモードに設定できます。<br/>- **ブロック モード** (この設定は既定) で、ユーザーが安全でないと見なされるサイトにアクセスできません。 *ネットワーク保護をブロック モードに設定することをお勧めします。*<br/>- **ユーザーが安全** でない可能性があるサイトにアクセスし、そのようなサイトとの間でネットワーク アクティビティを追跡できる監査モード <br/>- **無効モード**:安全でない可能性のあるサイトへのアクセスや、そのようなサイトとの間のネットワーク アクティビティの追跡を行うユーザーをブロックするネザー モード |
 | **修復**  |  |
 | **望ましくない可能性のあるアプリに対するアクション (PUA)** | PUA には、広告ソフトウェア、署名されていない他のソフトウェアのインストールを提供するバンドル ソフトウェア、およびセキュリティ機能を回避しようとする回避ソフトウェアが含まれます。 PUA は必ずしもウイルス、マルウェア、その他の種類の脅威とは限りませんが、PUA はデバイスのパフォーマンスに影響を与える可能性があります。<br/><br/>PUA 保護は、PUA として検出されたアイテムをブロックします。 PUA 保護は、次のいずれかの設定に設定できます。 <br/>- **有効** (この設定は既定)、デバイスで PUA として検出されたアイテムをブロックします。 *PUA 保護を有効にすることをお勧めします。*<br/>- **監査モード**(PUA として検出されたアイテムに対してアクションを実行しません) <br/>- **無効**(PUA の可能性があるアイテムを検出または実行しない) |
@@ -53,7 +54,7 @@ Microsoft Defender for Business (プレビュー) の次世代保護には、堅
 | **スケジュールされたスキャンの種類** | デバイスで毎週ウイルス対策スキャンを実行する方法を検討してください。 次のスキャンの種類のオプションから選択できます。 <br/>- **クイックスキャンは** 、レジストリ キーやスタートアップ フォルダーなどの場所をチェックします。マルウェアを登録してデバイスから開始できます。 *クイックスキャン オプションの使用をお勧めします。* <br/>- **Fullscan は** 、デバイス上のすべてのファイルとフォルダーをチェックします。 <br/>- **無効にすると** 、スケジュールされたスキャンは実行されません。 ユーザーは、自分のデバイスでスキャンを実行できます。 (一般に、スケジュールされたスキャンを無効にすることをお勧めしません。 <br/><br/> [スキャンの種類について詳しくは、以下を参照してください](../defender-endpoint/schedule-antivirus-scans.md)。 |
 | **スケジュールされたスキャンを実行する週の日** | 定期的な毎週のウイルス対策スキャンを実行する日を選択します。 |
 | **スケジュールされたスキャンを実行する時刻** | 定期的にスケジュールされたウイルス対策スキャンを実行する時間を選択します。 |
-| **低パフォーマンスの使用** | この設定は既定でオフになっています。 *この設定をオフにすることをお勧めします。* ただし、この設定をオンにすると、スケジュールされたスキャン中に使用されるデバイス のメモリとリソースを制限できます。 <br/><br/>**大事な**[低パフォーマンスを **使用する] をオン** にした場合は、次の設定を構成Microsoft Defender ウイルス対策。 <br/>- アーカイブ ファイルがスキャンされない ([AllowArchiveScanning](/windows/client-management/mdm/policy-csp-defender))<br/>- スキャンには CPU 優先度が低い[(EnableLowCPUPriority ) が割り当てられます](/windows/client-management/mdm/policy-csp-defender)。 <br/>- 完全なウイルス対策スキャンが見つからない場合、キャッチアップ スキャンは実行されません[(DisableCatchupFullScan](/windows/client-management/mdm/policy-csp-defender)) <br/>- クイック ウイルス対策スキャンが見つからない場合、キャッチアップ スキャンは実行されません[(DisableCatchupQuickScan](/windows/client-management/mdm/policy-csp-defender)) <br/>- ウイルス対策スキャン中の平均 CPU 負荷率を 50% から 20% に減少します ([AvgCPULoadFactor](/windows/client-management/mdm/policy-csp-defender)) |
+| **低パフォーマンスの使用** | この設定は既定でオフになっています。 *この設定をオフにすることをお勧めします。* ただし、この設定をオンにすると、スケジュールされたスキャン中に使用されるデバイス のメモリとリソースを制限できます。 <br/><br/>**大事な**[低パフォーマンスを **使用する] をオン** にした場合は、次の設定を構成Microsoft Defender ウイルス対策。 <br/>- アーカイブ ファイルがスキャンされない ([AllowArchiveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning))<br/>- スキャンには CPU 優先度が低い[(EnableLowCPUPriority ) が割り当てられます](/windows/client-management/mdm/policy-csp-defender#defender-enablelowcpupriority)。 <br/>- 完全なウイルス対策スキャンが見つからない場合、キャッチアップ スキャンは実行されません[(DisableCatchupFullScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan)) <br/>- クイック ウイルス対策スキャンが見つからない場合、キャッチアップ スキャンは実行されません[(DisableCatchupQuickScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan)) <br/>- ウイルス対策スキャン中の平均 CPU 負荷率を 50% から 20% に減少します ([AvgCPULoadFactor](/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor)) |
 | **ユーザーの操作性**   |  |
 | **ユーザーがアプリにアクセスWindows セキュリティする** | この設定をオンにすると、ユーザーはデバイスでアプリWindows セキュリティ開くことができる。 ユーザーは、Microsoft Defender for Business (プレビュー) で構成した設定を上書きできますが、必要に応じてクイック スキャンを実行したり、検出された脅威を表示したりできます。 |
 | **ウイルス対策の除外** | 除外は、スキャンによってスキップされるプロセス、ファイル、またはMicrosoft Defender ウイルス対策です。 *一般に、除外を定義する必要はない必要があります。* Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作と一般的な管理ファイルに基づく多くの自動除外が含まれます。<br/><br/>[除外の詳細](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md) |
@@ -61,14 +62,34 @@ Microsoft Defender for Business (プレビュー) の次世代保護には、堅
 | **ファイル拡張子の除外** | ファイル拡張子の除外により、特定の拡張子を持つファイルがファイルのスキャンMicrosoft Defender ウイルス対策。<br/><br/>[ファイル拡張子の除外の詳細](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
 | **ファイルとフォルダーの除外** | ファイルとフォルダーの除外により、特定のフォルダー内のファイルがユーザーによってスキャンMicrosoft Defender ウイルス対策。 <br/><br/>[ファイルとフォルダーの除外の詳細](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
 
-## <a name="additional-preconfigured-settings"></a>その他の事前構成済み設定
+## <a name="other-preconfigured-settings-in-defender-for-business"></a>Defender for Business のその他の事前構成済み設定
 
-Defender for Business (プレビュー) の次世代保護のために、次の追加設定が事前構成されています。
+次のセキュリティ設定は、Defender for Business (プレビュー) で事前構成されています。
 
-- リムーバブル ドライブのスキャンが有効になっている ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender))
-- 毎日のクイック スキャンには、あらかじめ設定された時間[(ScheduleQuickScanTime ) が設定されていない](/windows/client-management/mdm/policy-csp-defender)
-- ウイルス対策スキャンが実行される前にセキュリティ インテリジェンスの更新プログラムがチェックされます[(CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender))
-- セキュリティ インテリジェンスチェックは 4 時間ごとに行われます ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender))
+- リムーバブル ドライブのスキャンが有効になっている ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning))
+- 毎日のクイック スキャンには、あらかじめ設定された時間[(ScheduleQuickScanTime ) が設定されていない](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- ウイルス対策スキャンが実行される前にセキュリティ インテリジェンスの更新プログラムがチェックされます[(CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
+- セキュリティ インテリジェンスチェックは 4 時間ごとに行われます ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
+
+## <a name="settings-you-can-configure-in-microsoft-endpoint-manager"></a>設定で構成できるMicrosoft エンドポイント マネージャー
+
+デバイスとセキュリティ設定をMicrosoft エンドポイント マネージャー (Microsoft Intune) を使用している場合は、次の表の設定を設定または変更できます。
+<br/><br/>
+
+
+| Setting  | 説明  |
+|---------|---------|
+| [クラウド保護](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | クラウド配信保護または Microsoft Advanced Protection Service (MAPS) と呼ばれる場合、クラウド保護は Microsoft Defender ウイルス対策 と Microsoft クラウドと機能し、単一のデバイスが影響を受ける前でも、新しい脅威を特定します。 クラウド保護は既定で有効になっています。 <br/><br/>[詳細については、「クラウド保護」と「](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)[クラウド保護を有効にする」をご覧ください](../defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus.md)。         |
+| [受信ファイルと送信ファイルの監視](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)     | 受信ファイルと送信ファイルの監視を設定するには [、RealTimeScanDirection 設定を設定](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection) します。 既定では、この機能は、すべてのファイルを監視するために設定されています。         |
+| [ネットワーク ファイルのスキャン](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | 既定では、この設定は有効ではなく、ネットワーク ファイルはスキャンされません。 この設定を変更するには [、AllowScanningNetworkFiles を有効にします](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)。 |
+| [電子メール メッセージのスキャン](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | 既定では、この設定は有効ではなく、電子メール メッセージは Defender for Business によってスキャンされません。 この設定を変更するには [、AllowEmailScanning を有効にします](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)。 |
+| [検疫済みマルウェアを保持する日数 (0 ~ 90)](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | 既定では、この設定はゼロ (0) 日に設定され、検疫内の成果物は自動的に削除されません。 この設定を変更するには [、DaysToRetainCleanedMalware 設定を変更](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) します。 |
+| [サンプルの同意を送信する](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | 疑わしいファイルや悪意のあるファイルが検出されると、分析のためにサンプルがクラウド サービスに送信され、Microsoft Defender ウイルス対策ブロックされます。 すぐに決定が行われたら、すぐにファイルが解放またはブロックMicrosoft Defender ウイルス対策。 既定では、Defender for Business は安全なサンプルを自動的に送信します。 安全なサンプルの例には、個人を特定できる情報 `.bat` `.scr` `.dll` (PII) が含まれているファイル `.exe` 、などです。 ファイルに PII が含まれている場合、ユーザーはサンプル提出の続行を許可する要求を受け取ります。<br/><br/>[クラウド保護とサンプル申請の詳細](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
+| [リムーバブル ドライブのスキャン](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | デバイス上の USB サム Microsoft Defender ウイルス対策など、リムーバブル ドライブをスキャンできるかどうかを判断できます。 既定では、リムーバブル ドライブのスキャンが許可されています。ただし [、AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) 設定を編集することで、この設定を変更できます。 <br/><br/>[マルウェア対策ポリシー設定の詳細](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
+| [毎日のクイック スキャン時間の実行](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | ScheduleQuickScanTime 設定を編集して、クイック ウイルス対策/マルウェア対策スキャンを実行する時間を指定できます。 <br/><br/>[スキャン設定について詳しくは、次のページを参照してください](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)。   |
+| [スキャンを実行する前に署名の更新を確認する](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | 既定では、ウイルス対策/マルウェア対策スキャンを実行する前にセキュリティ インテリジェンスの更新プログラムを確認するように Defender for Business が構成されています。 構成を変更するには [、CheckForSignaturesBeforeRunningScan 設定を編集](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) します。<br/><br/>[詳しくは、スキャン設定とセキュリティ](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)[インテリジェンス更新プログラムをご覧ください](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates)。   |
+| [セキュリティ インテリジェンスの更新プログラムを確認する頻度 (0 ~ 24 時間)](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) | 既定では、Defender for Business は 4 時間ごとにセキュリティ インテリジェンス更新プログラムを確認するように構成されています。 ただし、SignatureUpdateInterval 設定を編集することで [、この間隔を変更](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) できます。 <br/><br/>[詳しくは、スキャン設定とセキュリティ](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)[インテリジェンス更新プログラムをご覧ください](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates)。 |
+
 
 ## <a name="next-steps"></a>次の手順
 
