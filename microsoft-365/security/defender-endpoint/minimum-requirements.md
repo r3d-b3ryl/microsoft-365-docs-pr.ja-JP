@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84bcb13f955c1972e9e3b22359a8a787e345ba07
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: fdc22ecb1e540c2408cc6178c0190dbce676d761
+ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560303"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61620470"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -117,6 +117,8 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
 デバイス上の Defender for Endpoint のハードウェア要件は、サポートされているエディションで同じです。
 
+> コア: 最小 2、優先メモリ 4:最小 1 GB、4 優先
+
 サポートされているバージョンの Windows 10については、「(/windows/release-health/release-information)」を参照してください。
 
 > [!NOTE]
@@ -125,6 +127,8 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 > Microsoft 以外のWindows 10 Enterprise 2016 LTSBプラットフォームで実行すると、パフォーマンスの問題が発生する可能性があります。
 >
 > 仮想環境の場合は、LTSC 2019 以降Windows 10 Enterprise使用することをお勧めします。
+
+
 
 ### <a name="other-supported-operating-systems"></a>その他のサポートされているオペレーティング システム
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e22a237a5e8369093a83063f784fdba3ed75401c
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: f7c41ff83bffaa6c0e982f4dc0dd3c36e614c0fb
+ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300816"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61620458"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -46,6 +46,9 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Microsoft Defender for Identity の新機能](/defender-for-identity/whats-new)
 - [新しい機能Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## <a name="december-2021"></a>2021 年 12 月
+- (プレビュー) `DeviceTvmSoftwareEvidentBeta` テーブルは高度な検索で追加され、デバイスで特定のソフトウェアが検出された場所の証拠を表示できます。 
+ 
 ## <a name="november-2021"></a>2021 年 11 月
 
 - (プレビュー)Defender for Cloud Apps のアプリケーション ガバナンス アドオン機能が、Microsoft 365 Defender で利用Microsoft 365 Defender。 アプリ ガバナンスは、Microsoft のセキュリティ API を介してデータにアクセスする OAuth が有効なアプリ用に設計Microsoft 365ポリシー管理機能Graph提供します。 アプリ ガバナンスは、実用的な分析情報と自動化されたポリシー アラートおよびアクションを通して、これらのアプリとそのユーザーが Microsoft 365 に保存されている機密データにアクセスし、使用し、共有する方法について、完全な可視性、修復、およびガバナンスを提供します。 [アプリケーション ガバナンスの詳細を参照してください](/cloud-app-security/app-governance-manage-app-governance)。

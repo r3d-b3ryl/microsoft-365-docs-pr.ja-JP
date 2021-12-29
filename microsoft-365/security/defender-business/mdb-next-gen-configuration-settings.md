@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 287097aac61817347b6d4a56eadda8dd7a5a2c46
-ms.sourcegitcommit: b51e58f42a68b42f3e0b43564415dc5c1e9effb6
+ms.openlocfilehash: 0d0c36fafbd3c35613e0efd50f842b80aa30b9cf
+ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/28/2021
-ms.locfileid: "61614292"
+ms.locfileid: "61620410"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business の次世代の構成設定について (プレビュー)
 
@@ -78,7 +78,7 @@ Defender for Business (プレビュー) の次世代保護には、堅牢なウ�
 
 | Setting  | 説明  |
 |---------|---------|
-| [クラウド保護](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | クラウド配信保護または Microsoft Advanced Protection Service (MAPS) と呼ばれる場合、クラウド保護は Microsoft Defender ウイルス対策 と Microsoft クラウドと機能し、単一のデバイスが影響を受ける前でも、新しい脅威を特定します。 クラウド保護は既定で有効になっています。 <br/><br/>[クラウド保護について詳しくは、次のリンクを参照してください](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)。         |
+| [クラウド保護](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | クラウド配信保護または Microsoft Advanced Protection Service (MAPS) と呼ばれる場合、クラウド保護は Microsoft Defender ウイルス対策 と Microsoft クラウドと機能し、単一のデバイスが影響を受ける前でも、新しい脅威を特定します。 既定では [、AllowCloudProtection は](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) オンになっています。 <br/><br/>[クラウド保護について詳しくは、次のリンクを参照してください](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)。         |
 | [受信ファイルと送信ファイルの監視](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)     | 受信ファイルと送信ファイルを監視するために [、RealTimeScanDirection は、](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection) すべてのファイルを監視するために設定されます。         |
 | [ネットワーク ファイルのスキャン](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | 既定では [、AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) は有効ではなく、ネットワーク ファイルはスキャンされません。 |
 | [電子メール メッセージのスキャン](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | 既定では [、AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) は有効ではなく、電子メール メッセージはスキャンされません。 |
