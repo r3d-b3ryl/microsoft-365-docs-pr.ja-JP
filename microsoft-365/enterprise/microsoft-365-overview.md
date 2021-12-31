@@ -11,14 +11,16 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: M365-subscription-management
-ms.custom: it-pro
+ms.custom:
+- it-pro
+- intro-overview
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: baa31d972a4722390e72798c582f41df5133a98b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 358b160dcad5a1b0a4ed961febd9c6bfb63abe36
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152732"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645766"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 

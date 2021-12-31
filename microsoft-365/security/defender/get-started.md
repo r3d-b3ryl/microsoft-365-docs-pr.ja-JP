@@ -17,16 +17,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 22dcd3345e4a58a4ee38a4e9e8f20fb4d76f3f60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 747f8e389b90e20aad7162277b3e62b0a80ae3c7
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202563"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645754"
 ---
-# <a name="get-started-with-microsoft-365-for-defender"></a>Defender のMicrosoft 365を開始する
+# <a name="get-started-with-microsoft-365-defender"></a>Microsoft 365 Defender の使用を開始する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -59,9 +60,4 @@ Microsoft スイートのセキュリティ製品を初めて使用する場合�
 | Microsoft Defender for Endpoint | 強力な行動センサー、クラウド分析、脅威インテリジェンスを中心に構築されたエンドポイント保護スイート |
 |Microsoft Defender for Office 365 | メールなどのコラボレーション ツールを含む、Office 365データの高度な保護 |
 | Microsoft Defender for Identity | 関連付けされた Active Directory シグナルを使用して、高度な脅威、侵害された ID、悪意のあるインサイダーから防御する |
-| Microsoft Cloud App Security | Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定して対処する |
-
-
-
-
-
+| Microsoft Defender for Cloud Apps | Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定して対処する |

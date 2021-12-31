@@ -7,15 +7,16 @@ audience: ITpro
 author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.custom: intro-overview
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fc76ad5e41610c23f60392c2f13655049018a1eb
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 29db9d25d81c7f68f3bac9e57a2430b5393a8ff7
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364593"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643044"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
@@ -53,7 +54,7 @@ IT 管理者は、次の機能を利用できます。
 - サービスによって提供される[デバイス管理](#device-management)のおかげで、その他の IT 管理アクティビティに集中できる時間ができます。 
 - [デバイスの監視](#device-monitoring)により、デバイスとアプリのパフォーマンスをよりよく認識し、セキュリティ問題の早期警告を得ることができます。
 
-## <a name="device-management"></a>デバイス管理
+## <a name="device-management"></a>デバイスの管理
 Microsoft マネージド デスクトップは、登録済みのデバイスやそれらが使用する Microsoft ソフトウェアを管理する負担を軽減します。
 
 - **ハードウェア:** 企業の IT 部門が特定のハードウェアやソフトウェアの要件、ツール、およびプロセスを調査してサービスと互換性があるかどうか判断しなくともいいよう、ハードウェアとソフトウェアの特定の要件を公開しています。安心してデバイスをお選びいただけます。 Microsoft Managed Desktop のフィルター処理によって推奨されるデバイスは、ビジネス デバイス サイトの[ショップWindows Pro確認](https://www.microsoft.com/windows/business/devices)できます。 デバイスは、自分で、もしくはパートナーと協力して仕入れても、あるいは所有しているデバイスを再利用することもできます。 デバイスの登録は簡単でわかりやすく、さらに、展開する前にユーザー向けにデバイス操作の特定の側面を [カスタマイズ](../working-with-managed-desktop/config-setting-overview.md) することもできます。

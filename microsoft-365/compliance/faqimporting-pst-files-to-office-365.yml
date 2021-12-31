@@ -18,12 +18,12 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: この記事では、管理者が PST ファイルをインポートする方法についてよく寄せられる質問に対する回答Microsoft 365、Office 365説明します。
-  ms.openlocfilehash: e6baaf6125817956bdc09048e852e1eca2e66d88
-  ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+  ms.openlocfilehash: 400fd5873bc074c6d27adc76630e0cca49cf7ae0
+  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/06/2021
-  ms.locfileid: "60804619"
+  ms.lasthandoff: 12/30/2021
+  ms.locfileid: "61643250"
 title: PST ファイルのインポートに関する FAQ
 summary: >
   **この記事は管理者向けです。PST ファイルを自分のメールボックスにインポートしますか?「[メール、連絡先、予定表をインポートする」を参照Outlook .pst ファイルから](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
@@ -42,17 +42,10 @@ sections:
   - question: >
       Office 365 インポート サービスでインポート ジョブを作成するにはどのようなアクセス許可が必要ですか?
     answer: >
-      PST ファイルを Microsoft 365 メールボックスにインポートするには、Exchange Online で Mailbox Import Export 役割が割り当てられている必要があります。既定では、Exchange Online では、この役割はいずれの役割グループにも割り当てられていません。Mailbox Import Export 役割は Organization Management 役割グループに追加できます。または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。詳細については、「[Exchange Online の役割グループの管理](/Exchange/permissions-exo/role-groups)」の "役割グループに役割を追加する" または "役割グループを作成する" を参照してください。
+      ユーザーメールボックスにインポート ジョブを作成し、PST ファイルをインポートするには、Exchange Online Microsoft 365 コンプライアンス センターでメールボックスインポートエクスポートの役割を割り当てる必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は "Organization Management/組織の管理" 役割グループに追加できます。 または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。 詳細については、「[Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups)」 (Exchange Online の役割グループの管理) の "Add a role to a role group" (役割グループに役割を追加する) または "Create a role group" (役割グループを作成する) を参照してください。
 
 
-      さらに、Microsoft 365 コンプライアンス センターでインポート ジョブを作成するには、次のいずれかを満たす必要があります。
-
-
-      - Exchange Online の Mail Recipients 役割が割り当てられている必要があります。既定では、この役割は組織の管理の役割グループと受信者の管理の役割グループに割り当てられます。
-
-          または
-
-      - 組織の全体管理者である必要があります。
+      メールボックスインポートエクスポートの役割に加えて、メールボックスインポートのメール受信者の役割も割り当Exchange Online。 既定では、この役割は、組織の管理役割グループと受信者管理役割グループに割り当Exchange Online。
 
 
       > [!TIP]
@@ -133,18 +126,9 @@ sections:
   - question: >
       Office 365 インポート サービスでインポート ジョブを作成するにはどのようなアクセス許可が必要ですか?
     answer: >
-      PST ファイルを Microsoft 365 メールボックスにインポートするには、Mailbox Import Export 役割が割り当てられている必要があります。既定では、Exchange Online では、この役割はいずれの役割グループにも割り当てられていません。Mailbox Import Export 役割は Organization Management 役割グループに追加できます。または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。詳細については、「[Exchange Online の役割グループの管理](/Exchange/permissions-exo/role-groups)」の "役割グループに役割を追加する" または "役割グループを作成する" を参照してください。
+      ユーザーメールボックスにインポート ジョブを作成し、PST ファイルをインポートするには、Exchange Online Microsoft 365 コンプライアンス センターでメールボックスインポートエクスポートの役割を割り当てる必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は "Organization Management/組織の管理" 役割グループに追加できます。 または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。 詳細については、「[Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups)」 (Exchange Online の役割グループの管理) の "Add a role to a role group" (役割グループに役割を追加する) または "Create a role group" (役割グループを作成する) を参照してください。
 
-
-      さらに、Microsoft 365 コンプライアンス センターでインポート ジョブを作成するには、次のいずれかを満たす必要があります。
-
-
-      - Exchange Online の Mail Recipients 役割が割り当てられている必要があります。既定では、この役割は組織の管理の役割グループと受信者の管理の役割グループに割り当てられます。
-
-          または
-
-      - 組織の全体管理者である必要があります。
-
+       メールボックスインポートエクスポートの役割に加えて、メールボックスインポートのメール受信者の役割も割り当Exchange Online。 既定では、この役割は、組織の管理役割グループと受信者管理役割グループに割り当Exchange Online。
 
       > [!TIP]
 

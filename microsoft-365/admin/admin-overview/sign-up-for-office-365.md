@@ -23,17 +23,18 @@ ms.custom:
 - commerce_signup
 - AdminTemplateSet
 - adminvideo
+- intro-get-started
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: ユーザーのサインアップ プロセスを実行する前に知る必要があるOffice 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: c7748eb6a7c7bae68b72416cfb599c0ab5e85794
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0c372f52f1da5fef680a9eaeb499fcede7278489
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370202"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643714"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 
@@ -61,7 +62,7 @@ ms.locfileid: "61370202"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
 
 プランの選択に関するヘルプが必要ですか? 営業コンサルタントが質問に答えます。 [すべての製品 [を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動し、ページの左側に表示されている連絡先サポート オプションのいずれかを選択します。
   

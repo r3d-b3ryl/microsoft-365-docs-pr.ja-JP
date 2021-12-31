@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれる) を、Exchange、SharePoint、OneDrive for Businessから管理する方法について学習します。
-ms.openlocfilehash: 5160a46e6be825dd858be030fc5cf5941734e65d
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 9d61f28e6dd2fc777fed62c1f7d4a6da1a18907c
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586315"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645158"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックス付きアイテムを調査する
 
@@ -77,7 +77,7 @@ ms.locfileid: "60586315"
   
 ![2 番目または 3 番目のオプションを選択して、部分的にインデックス付きアイテムをエクスポートします。](../media/PartiallyIndexedItemsExportOptions.png)
   
-これらのオプションのいずれかを使用して電子情報開示検索結果または検索レポートをエクスポートする場合、エクスポートには Unindexed という名前のレポートが含Items.csv。 このレポートには、ファイルファイルと同じ情報のほとんどがResultsLog.csvされます。ただし、Unindexed Items.csv ファイルには、部分的にインデックス付けされたアイテムに関連する 2 つのフィールド ( **エラー** タグとエラー プロパティ) も **含まれています**。 これらのフィールドには、部分的にインデックスが作成された各アイテムのインデックスエラーに関する情報が含まれています。 これら 2 つのフィールドの情報を使用すると、特定のインデックスエラーが調査に影響を与えるかどうかを判断するのに役立ちます。 その場合は、対象の検索を実行し、特定の電子メール メッセージと SharePoint または OneDrive ドキュメントを取得およびエクスポートして、調査に関連するかどうかを確認できます。 詳細な手順については、「ターゲット検索用に[CSV](csv-file-for-an-id-list-content-search.md)ファイルを準備する」を参照Office 365。
+これらのオプションのいずれかを使用して電子情報開示検索結果または検索レポートをエクスポートする場合、エクスポートには Unindexed という名前のレポートが含Items.csv。 このレポートには、ファイルファイルと同じ情報のほとんどがResultsLog.csvされます。ただし、Unindexed Items.csv ファイルには、部分的にインデックス付けされたアイテムに関連する 2 つのフィールド ( **エラー** タグとエラー プロパティ) も **含まれています**。 これらのフィールドには、部分的にインデックスが作成された各アイテムのインデックスエラーに関する情報が含まれています。 これら 2 つのフィールドの情報を使用すると、特定のインデックスエラーが調査に影響を与えるかどうかを判断するのに役立ちます。 
 
 > [!NOTE]
 > Unindexed Items.csvファイルには、エラーの種類とエラー メッセージという **名前のフィールド** も **含まれています**。 これらは、[エラー タグ] フィールドと [エラー プロパティ]フィールドの情報に似ていますが、詳細情報が少ない従来のフィールドです。 これらの従来のフィールドは無視しても安全です。
@@ -119,7 +119,7 @@ ms.locfileid: "60586315"
 
 次の手順では、すべての Exchange メールボックス内のすべてのアイテムを検索し、部分的にインデックス付けされた電子メール アイテムの組織の比率 (カウントとサイズ別) に関するレポートを生成し、発生するインデックスエラーごとにアイテムの数 (とそのファイルの種類) を表示する PowerShell スクリプトを実行する方法を示します。 前のセクションのエラー タグの説明を使用して、インデックスエラーを特定します。
   
-1. ファイル名のサフィックスを使用してWindows PowerShellスクリプト ファイルに次のテキストを保存.ps1。たとえば、 `PartiallyIndexedItems.ps1` .
+1. 次のテキストを、Windows PowerShell のファイル名のサフィックスを使用して、.ps1 スクリプト ファイルに保存します `PartiallyIndexedItems.ps1` 。
 
    ```powershell
      write-host "**************************************************"
@@ -164,7 +164,7 @@ ms.locfileid: "60586315"
      }
    ```
 
-2. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/exchange-online-powershell)。
+2. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/exchange-online-powershell)。
 
 3. [セキュリティ & コンプライアンス センター PowerShell] で、手順 1 でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 

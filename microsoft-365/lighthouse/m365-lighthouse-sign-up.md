@@ -14,21 +14,22 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
+- intro-get-started
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
-ms.openlocfilehash: 58721d83529fb70552d151cd0a0b19ce5ba85c28
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7eceb0ee205e7de99a7943ba05e6c07f66bd491e
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374054"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61641599"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
 
 > [!NOTE]
-> この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウント情報がMicrosoft 365 Lighthouse、この記事の指示に従ってサインアップしてください。
+> この記事で説明する機能はプレビュー段階であり、変更される可能性があり、[要件](m365-lighthouse-requirements.md)を満たすパートナーのみが利用できます。 組織にアカウント情報がMicrosoft 365 Lighthouse、この記事の指示に従ってサインアップしてください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - Microsoft 365 Lighthouseは、顧客テナントだけでなくパートナー テナントに展開されますが、ユーザーと顧客のテナントが Microsoft 365 Lighthouse 要件に記載されている &mdash; [要件を満たしていることを確認します](m365-lighthouse-requirements.md)。
 

@@ -11,16 +11,16 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Microsoft 365 コンプライアンス センター のコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Skype for Business でのインスタント メッセージング会話をすばやく検索します。
-ms.openlocfilehash: 6a49dffccb701958912fb0185eec4a8312f22429
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 298a9f371d652a1da547ba91b437aa0300c1621b
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203005"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645930"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索する
 
-Microsoft 365 コンプライアンス センター のコンテンツ検索ツールを使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Skype for Business でのインスタント メッセージング会話をすばやく検索します。 コンテンツ検索ツールを使用して、メール、ドキュメント、インスタント メッセージングの会話を、グループやグループなどのコラボレーション Microsoft Teams検索Microsoft 365できます。
+Microsoft 365 コンプライアンス センターのコンテンツ検索ツールを使用して、Exchange メールボックスのメール、SharePoint サイトおよび OneDrive ロケーションのドキュメント、Skype for Business のインスタント メッセージングの会話をすばやく検索できます。 コンテンツ検索ツールは、Microsoft Teams や Microsoft 365 グループなどのコラボレーション ツール内のメール、ドキュメント、インスタント メッセージングの会話を検索するために使用できます。
   
 ## <a name="search-for-content"></a>コンテンツを検索する
 
@@ -33,8 +33,6 @@ Microsoft 365 コンプライアンス センター のコンテンツ検索ツ�
 - [検索クエリを作成し、条件を使用して](keyword-queries-and-search-conditions.md) 検索を絞り込む
 
 - [電子情報開示マネージャーが](permissions-filtering-for-content-search.md) 組織内のメールボックスまたはサイトのサブセットのみを検索できるよう、検索アクセス許可フィルターを構成する
-
-- [ID リスト検索を実行して](csv-file-for-an-id-list-content-search.md) 特定の電子メール メッセージを検索する
 
 - [クラウド ベースのメールボックスを検索](search-cloud-based-mailboxes-for-on-premises-users.md)して、ユーザー内のオンプレミス ユーザー Microsoft 365
 

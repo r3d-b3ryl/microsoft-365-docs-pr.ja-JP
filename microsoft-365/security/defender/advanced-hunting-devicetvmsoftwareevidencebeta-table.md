@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dd71e4b3554b2cd45b648300f84ec96a73e5116b
-ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
+ms.openlocfilehash: 7fd064b906e4afe5e337df85d9dc6f174edc99cf
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61620550"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645840"
 ---
 # <a name="devicetvmsoftwareevidencebeta"></a>DeviceTvmSoftwareEvidenceBeta
 
@@ -35,7 +35,8 @@ ms.locfileid: "61620550"
 - Microsoft Defender for Endpoint
 
 > [!IMPORTANT]
-> このテーブルは現在ベータ版で、デバイスにソフトウェアが存在するかどうかを示す証拠をすばやく探し出す機能 `DeviceTvmSoftwareEvidenceBeta` が提供されています。
+> テーブル `DeviceTvmSoftwareEvidenceBeta` は現在ベータ版です。 ベータ版を離れると、最終的なテーブル名が変更され、列名も変更される可能性があります。 変更すると、以前の名前を使用しているクエリが壊れる可能性があります。 このテーブルが完成したら、ユーザーはクエリを確認して調整してください。 
+
 
 高度 `DeviceTvmSoftwareEvidenceBeta` な検索スキーマの表には、[ソフトウェアの証拠] セクションに関連&[の](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)脆弱性管理のデータ[が含まれている。](/microsoft-365/security/defender-endpoint/tvm-software-inventory#software-evidence) 次の表では、デバイスで特定のソフトウェアが検出された場所の証拠を表示できます。 たとえば、この表を使用して、特定のソフトウェアのファイル パスを識別できます。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 

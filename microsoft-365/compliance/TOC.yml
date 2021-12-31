@@ -672,8 +672,6 @@
               href: search-for-and-delete-messages-in-your-organization.md
             - name: オンプレミス ユーザーの Teams チャット データを検索する
               href: search-cloud-based-mailboxes-for-on-premises-users.md
-            - name: ID リストの検索用の CSV ファイルを準備する
-              href: csv-file-for-an-id-list-content-search.md
             - name: 失敗した検索の再試行
               href: retry-failed-content-search.md
             - name: BCC の受信者を保持する

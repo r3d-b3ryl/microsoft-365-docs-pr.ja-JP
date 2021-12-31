@@ -11,13 +11,15 @@ ms.topic: article
 ms.localizationpriority: medium
 description: 詳細については、Microsoft 365 コンプライアンス センター、取得方法、次の手順を含む、さまざまな方法について説明します。
 ms.collection: M365-security-compliance
-ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 42c00004c0bf6e6f41a082d5ca6fdddb8fb446d7
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- intro-overview
+ms.openlocfilehash: 329cb9f2bb35e4ca6cbbb9a278f4564de7570584
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110393"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643238"
 ---
 # <a name="microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センター
 

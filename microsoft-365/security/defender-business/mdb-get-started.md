@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3762afe07c045649211197b188e5c4eef035018c
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.custom: intro-get-started
+ms.openlocfilehash: 39bab3355b518d581844604f3f38ed2858e77f2f
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61506703"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61641587"
 ---
 # <a name="get-started-using-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business の使用を開始する (プレビュー)
 
@@ -60,7 +61,7 @@ ms.locfileid: "61506703"
 | **レポート** | 使用可能なセキュリティ レポートの一覧を表示します。 これらのレポートを使用すると、セキュリティの傾向を確認し、脅威の検出とアラートに関する詳細を表示し、会社の脆弱なデバイスの詳細を確認できます。 |
 | **正常性** | サービスの正常性状態を表示し、今後の変更を計画できます。 <br/>- [**サービスの正常性]** を選択して、Microsoft 365に含まれるサービスの正常性状態を表示します。 <br/>- [ **メッセージ センター] を** 選択して、計画された変更と予想される変更について確認します。  |
 | **ロール&アクセス許可** | セキュリティを管理する会社のユーザーにアクセス許可を割り当て、インシデントとレポートを Microsoft 365 Defenderできます。 また、デバイス グループをセットアップおよび管理して、会社のデバイスをオンボードし、脅威保護ポリシーを割り当てすることもできます。  |
-| [**設定**] | ポータルと Microsoft Defender for Business (プレビュー) Microsoft 365 Defender設定を編集できます。 たとえば、オンボード (またはオフボード) と会社のデバイス (エンドポイントとも呼ばれます) を使用できます。 アラート抑制ルールなどのルールを定義し、特定のファイルまたはプロセスをブロックまたは許可するインジケーターを設定することもできます。  |
+| **設定** | ポータルと Microsoft Defender for Business (プレビュー) Microsoft 365 Defender設定を編集できます。 たとえば、オンボード (またはオフボード) と会社のデバイス (エンドポイントとも呼ばれます) を使用できます。 アラート抑制ルールなどのルールを定義し、特定のファイルまたはプロセスをブロックまたは許可するインジケーターを設定することもできます。  |
 | **その他のリソース** | 他のポータル (Azure Active Directory など) に移動します。 他のポータルに移動する必要Microsoft 365 Defender、ユーザーのニーズを満たす必要がある場合は、このポータルに注意してください。 |
 
 ## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>インシデントと応答アクションに関する学習モジュールを完了する

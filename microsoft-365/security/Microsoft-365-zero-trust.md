@@ -6,6 +6,7 @@ ms.author: bcarter
 author: brendacarter
 manager: dansimp
 audience: Admin
+description: 脅威から防御し、機密Microsoft 365保護するために、ゼロトラストセキュリティを環境に展開する方法について学習します。
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
@@ -13,16 +14,14 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
-- m365solution-zerotrust
-- m365solution-overview
-description: ゼロ信頼の原則、アーキテクチャ、および機能を実装Microsoft 365。
-ms.openlocfilehash: ef916e576c6e7b837c46dda47cdc975fa02883f0
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+- deploy zero trust
+- zero trust strategy
+ms.openlocfilehash: a1283f3bff8586c88a1c0bdcb84c246cf3a873f8
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301682"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643330"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 ゼロ トラスト展開プラン
 
@@ -92,7 +91,7 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 :::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.png" alt-text="ゼロトラスト ID とデバイス アクセス ポリシー - 開始点層" lightbox="../media/zero-trust/identity-access-starting-point-tier.png":::
 
 
-## <a name="step-2-manage-endpoints-with-intune"></a>手順 2. Intune を使用してエンドポイントを管理する
+## <a name="step-2-manage-endpoints-with-intune"></a>手順 2。 Intune を使用してエンドポイントを管理する
 
 次に、デバイスを管理に登録し、より高度なコントロールで保護を開始します。 
 
