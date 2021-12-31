@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Microsoft コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用すると、さまざまな Microsoft 365 サービスでコンテンツを検索できます。
-ms.openlocfilehash: d1636885e03544a78432516e77bfabb8cd52575d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 68270466625cc5f9b76359ae7697536956c727aa
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754903"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643386"
 ---
 # <a name="create-a-content-search"></a>コンテンツ検索の作成
 
@@ -46,7 +46,7 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索電�
 
 ## <a name="before-you-run-a-search"></a>検索を実行する前に、以下の作業を行います。
 
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>の コンテンツ検索 ページに(検索を実行して結果をプレビューし、結果をエクスポートするために) アクセスするには、管理者、コンプライアンス責任者、または電子情報開示マネージャーが、Microsoft 365 コンプライアンス センターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>のコンテンツ検索ツールに (検索を実行して結果をプレビューし、結果をエクスポートするために) アクセスするには、管理者、コンプライアンス責任者、または電子情報開示マネージャーが、Microsoft 365 コンプライアンス センターの電子情報開示マネージャーの役割グループのメンバーである必要があります。詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
 
 - Exchange ハイブリッド展開では、コンテンツ検索ツールを使用してオンプレミスのメールボックスを検索することはできません。 このツールは、クラウドベースのメールボックスの検索にのみ使用できます。
 
@@ -57,9 +57,6 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索電�
 2. Microsoft 365 コンプライアンス センターの左側のナビゲーション ウィンドウで [**コンテンツ検索**] をクリックします。
 
 3. [**コンテンツ検索**] ページで、[**新しい検索**] をクリックします。
-
-   > [!NOTE]
-   > [**ID のリストで検索**] オプションでは、Exchange ID のリストを使用して特定のメール メッセージやその他のメールボックス アイテムを検索できます。ID リスト検索を作成するには、検索する特定のメールボックス アイテムを識別するコンマ区切り値 (CSV) ファイルを送信します。手順については、「[ID リスト検索の CSV ファイルを準備する](csv-file-for-an-id-list-content-search.md)」を参照してください。
 
 4. 検索の名前と、検索を識別するための説明 (省略可能) を入力します。検索の名前は、組織内で一意である必要があります。
 

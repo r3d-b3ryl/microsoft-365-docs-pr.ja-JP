@@ -7,21 +7,23 @@ f1.keywords:
 manager: dougeby
 audience: ITPro
 ms.topic: article
+description: 指定された企業データが他のアプリにコピーおよび貼り付けされないように、アプリ保護ポリシー (APP) を使用してモバイル アプリ保護を構成します。
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- Intune App Protection policies
+- APP
+- mobile application management
+- MAM
+- set up mobile ap protection
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: d508d90fcab58ae6106b1640d993a9c738fbf046
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 8e458dd52121d6c7686798db85c8729ceaba9d1c
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301368"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643822"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>手順 1. アプリ保護ポリシーの実装
 

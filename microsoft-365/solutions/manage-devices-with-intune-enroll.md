@@ -6,22 +6,22 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: Intune と Autopilot を使用してデバイスを管理に登録し、デバイスで実行されているアプリが準拠していることを確認し、企業のデータ漏洩を防ぎます。
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- enroll devices into management
+- enroll devices with Intune
+- Intune mobile device platforms
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: 5091aa197727602a550030bb462cc2e85d21c88d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 56226aee898dad607d3dd85641b7736e764b2be2
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301332"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645610"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>手順 2。 Intune を使用してデバイスを管理に登録する
 
@@ -31,7 +31,7 @@ ms.locfileid: "61301332"
 
 デバイス登録プロセスは、ユーザー、デバイス、および Microsoft Intune サービス間の関係を確立します。 Microsoft Intune をスタンドアロン サービスとして使用すると、単一の Web ベースの管理コンソールを使用して、Windows PC、macOS、および最も一般的なモバイル デバイス プラットフォームを管理できます。
 
-この記事では、Intune を使用してデバイスを管理に登録する方法を推奨しています。 これらのメソッドと各メソッドの展開方法の詳細については、「[展開ガイダンス: Microsoft Intune にデバイスを登録する](/microsoft-365/security/defender/eval-overview?view=o365-worldwide)」を参照してください。
+この記事では、Intune を使用してデバイスを管理に登録する方法を推奨しています。 これらのメソッドと各メソッドの展開方法の詳細については、「[展開ガイダンス: Microsoft Intune にデバイスを登録する](/microsoft-365/security/defender/eval-overview)」を参照してください。
 
 ![デバイスを管理するための手順](../media/devices/intune-mdm-steps-1.png#lightbox)
 

@@ -7,21 +7,22 @@ f1.keywords:
 manager: dougeby
 audience: ITPro
 ms.topic: article
+description: エンドポイント デバイスをゼロ トラスト セキュリティ アーキテクチャの一部として Microsoft Intune に登録し、リモート ワーカーの保護を構築しながら、ランサムウェアから保護します。
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-overview
+- enroll devices into Intune
+- manage device endpoints
+- zero trust deployment stack
+- device management with zero trust
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: b16903ee5f93be193dd6973291aedb0d1099b931
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 7a5a4ceb9f96a90d5778e1f2470bfda29a681e49
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301172"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645040"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Intune の概要でデバイスを管理する
 
@@ -34,7 +35,7 @@ ms.locfileid: "61301172"
 一方、環境に Microsoft Endpoint Configuration Manager を含む共同管理の計画が含まれている場合は、[共同管理ドキュメント](/mem/configmgr/comanage/)を参照して、組織に最適なパスを開発してください。 ご使用の環境に Windows 365 Cloud PC の計画が含まれている場合は、[Windows 365 エンタープライズのドキュメント](/windows-365/enterprise/)を参照して、組織に最適なパスを開発してください。 
 
 ## <a name="why-manage-endpoints"></a>エンドポイントを管理する理由
-現代の企業には、データにアクセスするエンドポイントの驚くほどの多様性があります。 これにより、大規模な攻撃対象領域が作成され、その結果、エンドポイントがゼロ トラスト セキュリティ戦略の最も弱いリンクになる可能性があります。 
+現代の企業には、データにアクセスするエンドポイントの驚くほどの多様性があります。 このセットアップにより、大規模な攻撃対象領域が作成され、その結果、エンドポイントがゼロ トラスト セキュリティ戦略の最も弱いリンクになる可能性があります。 
 
 世界がリモートまたはハイブリッドの作業モデルに移行するにつれ、主に必要性に駆り立てられて、ユーザーは、これまでのどの時代よりも、どこからでも、どのデバイスからでも作業を行っています。 攻撃者は、この変更を利用するために戦術をすばやく調整しています。 多くの組織は、これらの新しいビジネス上の課題に対処する際に、リソースの限界に直面しています。 事実上一夜にして、企業はデジタル変革を加速させています。 簡単に言うと、人々の働き方が変わりました。オフィスや会社所有のデバイスからのみ、無数の企業リソースにアクセスすることはもはや期待できません。
 
@@ -54,7 +55,7 @@ ms.locfileid: "61301172"
 この図について: 
 
 
-|  |手順 |説明  |ライセンスの要件  |
+|&nbsp;|手順 |説明  |ライセンスの要件  |
 |---------|---------|---------|---------|
 |1     | 開始点のゼロトラスト ID およびデバイス アクセス ポリシーを構成します       | ID 管理者と協力して、[レベル 2 のアプリ保護ポリシー (APP) データ保護を実装します](manage-devices-with-intune-app-protection.md)。 これらのポリシーでは、デバイスを管理する必要はありません。 Intune で APP ポリシーを構成します。 ID 管理者は、承認されたアプリを要求するように条件付きアクセス ポリシーを構成します。          |E3、E5、F1、F3、F5    |
 |2     | デバイスを管理に登録する       | このタスクを実装するには、より多くの計画と時間が必要です。 これを実現するためのツールと方法を選択できますが、「[手順 3 — デバイスを管理に登録する](manage-devices-with-intune-enroll.md)」と、Intune with Autopilot と自動登録を使用したプロセスがガイドされます。      | E3、E5、F1、F3、F5        |

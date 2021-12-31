@@ -6,22 +6,22 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: 構成プロファイルを開始して、Intune を使用してデバイスに安全な設定を適用し、これらのセキュリティ制御をクラウドに移行します。
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- Configuration profiles
+- Windows security baselines for Intune
+- customize configuration profiles
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: 4f0847c70f5293a50cdaf80e657be5b5ac8753b4
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 0cb966e16d30619cb6666cc73020189532abba8f
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301344"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645052"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>手順 5.  Microsoft Intune にデバイス プロファイルを展開する
 
@@ -44,13 +44,13 @@ Intune の Windows セキュリティ ベースラインを展開するには、
 
 今のところ、最も適切な MDM セキュリティ ベースラインを展開します。 プロファイルを作成してベースライン バージョンを選択するには、「[Microsoft Intune でのセキュリティ ベースライン プロファイルの管理](/mem/intune/protect/security-baselines-configure)」を参照してください。
 
-後で、Microsoft Defender for Endpoint がセットアップされ、Intune に接続したら、Defender for Endpoint ベースラインを展開します。 これについては、このシリーズの次の記事で説明します。[手順 6. デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する](manage-devices-with-intune-monitor-risk.md)。
+後で、Microsoft Defender for Endpoint がセットアップされ、Intune に接続したら、Defender for Endpoint ベースラインを展開します。 このトピックについては、このシリーズの次の記事で説明します。[手順 6. デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する](manage-devices-with-intune-monitor-risk.md)。
 
 これらのセキュリティ ベースラインは CIS または NIST に準拠していませんが、推奨事項を厳密に反映していることを理解することが重要です。 詳細については、「[Intune セキュリティ ベースラインは CIS または NIST に準拠していますか](/mem/intune/protect/security-baselines)?」を参照してください。
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>組織の構成プロファイルをカスタマイズする
 
-事前構成されたベースラインの展開に加えて、多くの企業規模の組織は、よりきめ細かい制御のために構成プロファイルを実装しています。 事前構成されたベースラインの展開に加えて、多くの企業規模の組織は、よりきめ細かい制御のために構成プロファイルを実装しています。 
+事前構成されたベースラインの展開に加えて、多くの企業規模の組織は、よりきめ細かい制御のために構成プロファイルを実装しています。 この構成は、オンプレミスの Active Directory 環境でのグループ ポリシー オブジェクトへの依存を減らし、セキュリティ制御をクラウドに移行するのに役立ちます。 
 
 構成プロファイルを使用して構成できる多くの設定は、以下に示すように 4 つのカテゴリーにグループ化できます。
 

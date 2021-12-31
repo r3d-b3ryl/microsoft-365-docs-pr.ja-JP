@@ -6,22 +6,21 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: Azure AD で条件付きアクセス ポリシーを作成して、準拠したデバイスを要求し、ユーザーが任意の場所の任意のデバイスから作業するときに企業データを安全に保ちます。
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- Conditional access policy
+- Microsoft Intune
+- Intune device management
 ms.custom: ''
-keywords: ''
-description: ''
-ms.openlocfilehash: b498e2e7698a4799559f9d681a6c3346d4e37672
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: ff72a19c9110b8b708092ead81bf154ebe33625d
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302304"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61646255"
 ---
 # <a name="step-4-require-healthy-and-compliant-devices-with-intune"></a>手順 4. Intune で正常で準拠しているデバイスを要求する
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 18751128d4804cfb3a61377caefba1478b7bd515
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b189be60efb48af33d26ea459bbee77878d4a93c
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560290"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643870"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
@@ -49,15 +49,9 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
 
 ## <a name="before-you-import-pst-files"></a>PST ファイルをインポートする前に
   
-- PST ファイルを Microsoft 365 メールボックスにインポートするには、Exchange Online で Mailbox Import Export 役割が割り当てられている必要があります。既定では、Exchange Online では、この役割はいずれの役割グループにも割り当てられていません。Mailbox Import Export 役割は Organization Management 役割グループに追加できます。または、役割グループを作成し、Mailbox Import Export 役割を割り当て、自分をメンバーとして追加できます。詳細については、「[役割グループの管理](/Exchange/permissions-exo/role-groups)」の "役割グループに役割を追加する" または "役割グループを作成する" を参照してください。
+- Microsoft 365 コンプライアンス センターでインポート ジョブを作成し、PST ファイルをユーザーのメールボックスにインポートするには、Exchange Online でメールボックスのインポートとエクスポートの役割を割り当てる必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Mailbox Import Export の役割は組織の管理の役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export の役割を割り当て、ユーザー自身をメンバーとして追加できます。 詳細については、「[役割グループを管理する](/Exchange/permissions-exo/role-groups)」で「役割グループに役割を追加する」または「役割グループを作成する」のセクションを参照してください。
 
-    また、Microsoft 365 コンプライアンス センターでインポート ジョブを作成するには、次のいずれかを満たす必要があります。
-
-  - Exchange Online の Mail Recipients 役割が割り当てられている必要があります。既定では、この役割は組織の管理の役割グループと受信者の管理の役割グループに割り当てられます。
-
-    または
-
-  - 組織の全体管理者である必要があります。
+    メールボックスのインポートとエクスポートの役割に加えて、Exchange Online でメールの受信者の役割も割り当てる必要があります。 既定では、この役割は Exchange Online の Organization Management 役割グループと Recipient Management 役割グループに割り当てられます。
 
     > [!TIP]
     > PST ファイルをインポートするための新しい役割グループを ExchangeOnline で作成することを検討します。PST ファイルをインポートするのに必要な最小レベルの権限では、新しい役割グループに Mailbox Import Export の役割および Mail Recipients の役割を割り当て、メンバーを追加します。
