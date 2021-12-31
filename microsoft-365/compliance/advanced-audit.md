@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: 0cfa6c1b672dabcbe5d5418461a0a55ea42867ab
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: 5f132f5e17f92f4a155a68d2f0151588034d3a9d
+ms.sourcegitcommit: 678e827a1c3bc9f4edfc48003f9b29f7bbf20ab5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612622"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649525"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -136,7 +136,7 @@ SearchQueryInitiatedExchange 監査レコードを検索するには、コンプ
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-メールボックス アイテムの検索と同様に、SharePoint 内のアイテムをユーザーが検索すると、SearchQueryInitiatedSharePoint イベントがトリガーされます。 次の種類の SharePoint サイトで検索が実行されると、イベントがトリガーされます。
+メールボックス アイテムの検索と同様に、SharePoint 内のアイテムをユーザーが検索すると、SearchQueryInitiatedSharePoint イベントがトリガーされます。 次の種類の SharePoint サイトのルートまたは既定のページで検索が実行されるとイベントがトリガーされます。
 
 - ホーム サイト
 
