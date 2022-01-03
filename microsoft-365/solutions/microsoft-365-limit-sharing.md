@@ -22,12 +22,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Microsoft 365 で共有を制限または無効にするオプションについて説明します。
-ms.openlocfilehash: 9d1784e4520b59aedc53a71110f1c7ab0e9d8914
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a34a1a457ed9c53f6393d65617f8ac0d9e611209
+ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154160"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61660168"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Microsoft 365 の共有を制限する
 
@@ -183,13 +183,13 @@ Microsoft 365 管理センターでユーザーをクリックし、**[OneDrive]
 既定では、サイトのメンバーは組織外のユーザーとファイルおよびフォルダーを共有するために、*組織内のユーザー* リンクを使用できます。*組織内ユーザー* リンクを無効にするには、PowerShell を使用します。
 
 ```powershell
-Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
+Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks Disabled
 ```
 
 例:
 
 ```powershell
-Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks
+Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks Disabled
 ```
 
 ## <a name="create-sites-groups-and-teams"></a>サイト、グループ、チームを作成する
