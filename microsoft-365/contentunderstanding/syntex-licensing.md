@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex のライセンスの詳細
-ms.openlocfilehash: 2e252ba496d89d388b67330bd1106b5f82c9aeb2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c8ed6b8b5864e0d859e0cbf8655406966e78ff3b
+ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198555"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61660156"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>SharePoint Syntex のライセンス
 
@@ -29,7 +29,7 @@ SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブ�
  
 ## <a name="tasks-requiring-a-license"></a>ライセンスが必要なタスク
  
-次のタスクを実行するユーザーには、SharePoint Syntex ライセンスが必要です。
+次のタスクを実行するユーザーには、[SharePoint Syntex ライセンス](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)が必要です。
  
 - 文書理解モデルをライブラリに適用する。(ライセンスのないユーザーは、コンテンツ センターへのアクセスを許可され、そこで文書理解モデルを作成できますが、それをドキュメント ライブラリに適用することはできません。)
 - ライブラリのエントリ ポイントを介してフォーム処理モデルを作成する
