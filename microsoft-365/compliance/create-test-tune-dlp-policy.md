@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、調整する方法について学習します。
-ms.openlocfilehash: 490af48e3279147af31178e809010d6316367d7f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: f6997a6f97aa103e6d8af2ff85fe5a39ef062050
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554782"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938939"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
 
@@ -36,7 +36,7 @@ DLP は、電子メール メッセージとファイルを調べて、クレジ
 - 電子メールを送信またはファイルを共有しているエンド ユーザーに警告を表示する
 - メールまたはファイルの共有の実行を積極的にブロックする
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>Permissions
 
 DLP ポリシーを作成するコンプライアンス チームのメンバーは、コンプライアンス センターへのアクセス許可を持っている必要があります。 既定では、テナント管理者はコンプライアンス担当者や他のユーザーにアクセス権を付与できます。 次の手順を実行します。
   
@@ -53,6 +53,25 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 詳細については、「[Give users access to the Office 365 Security & Compliance Center (Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する)](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
   
 ポリシーを適用しない DLP ポリシーを作成して適用するには、これらのアクセス許可が必要です。
+
+### <a name="roles-and-role-groups-in-preview"></a>プレビューでの役割と役割グループ
+
+プレビューには、アクセス制御を微調整するためにテストアウトできる役割と役割グループがあります。
+
+プレビューに含Microsoft Information Protection (MIP) ロールの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センターの役割 [」を&してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- 情報保護管理者
+- 情報保護アナリスト
+- 情報保護調査員
+- 情報保護リーダー
+
+プレビュー中の MIP 役割グループの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センター」の「役割 [グループ&参照してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- 情報保護
+- 情報保護管理者
+- 情報保護アナリスト
+- 情報保護調査員
+- 情報保護リーダー
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>DLP による機密情報の検出方法
 

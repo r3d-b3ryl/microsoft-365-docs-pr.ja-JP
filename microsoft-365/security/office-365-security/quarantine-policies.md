@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7cbd10a0989d4dbae01cbcd4424da620929fd94b
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: ee73e6cb8870bdab30a234af593cd036f9cde54c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521018"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935007"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -97,7 +97,7 @@ DefaultFullAccessPolicy のアクセス許可を提供しますが、検疫通�
 
 ## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>手順 1: セキュリティ ポータルで検疫ポリシーをMicrosoft 365 Defenderする
 
-1. [セキュリティ ポータル [Microsoft 365 Defender[](https://security.microsoft.com)メール] [脅威ポリシー **&]** セクションの [検疫ポリシー] に移動し、[検疫 \>  \>  \> ポリシー]**を選択します**。
+1. [メール [Microsoft 365 Defender] ポータル](https://security.microsoft.com)で、[ルール]**セクション**&の [&ルールの脅威ポリシーの検疫ポリシーをメールで送信する] \>  \>  \> **に移動** します。
 
 2. [検疫ポリシー **] ページで** 、[カスタム ポリシーの ![ 追加] アイコンをクリックします。](../../media/m365-cc-sc-create-icon.png) **カスタム ポリシーを追加します**。
 
@@ -342,7 +342,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 <New-AntiPhishPolicy -Name "<Unique name>" | Set-AntiPhishPolicy -Identity "<Policy name>"> [-EnableSpoofIntelligence $true] [-AuthenticationFailAction Quarantine] [-SpoofQuarantineTag <QuarantineTagName>] [-EnableMailboxIntelligence $true] [-EnableMailboxIntelligenceProtection $true] [-MailboxIntelligenceProtectionAction Quarantine] [-MailboxIntelligenceQuarantineTag <QuarantineTagName>] [-EnableOrganizationDomainsProtection $true] [-EnableTargetedDomainsProtection $true] [-TargetedDomainProtectionAction Quarantine] [-TargetedDomainQuarantineTag <QuarantineTagName>] [-EnableTargetedUserProtection $true] [-TargetedUserProtectionAction Quarantine] [-TargetedUserQuarantineTag <QuarantineTagName>] ...
 ```
 
-**注意**:
+**注**:
 
 - 特定 _の \* 保護_ 機能を有効にするには、Enable パラメーターが必要です。 _EnableMailboxIntelligence_ パラメーターと _EnableSpoofIntelligence_ パラメーターの既定値は $true なので、PowerShell で新しいフィッシング対策ポリシーを作成するときにこれらのパラメーターを使用する必要はありません。 その他 _のすべての \* Enable_ パラメーターには、$true値を設定して、対応するアクション パラメーターで検疫 _\*_ ポリシーを割り当てる必要があります。 _*\Action パラメーターに既定値の検疫_ はありません。
 
@@ -467,7 +467,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**注**:
+**注意**:
 
 - _Action パラメーターの_ 値 Block、Replace、または DynamicDelivery を指定すると、検疫されたメッセージが発生する可能性があります (値 Allow はメッセージを検疫しません)。 Action パラメーターの _値は、Enable_ パラメーターの値が. `$true`
 
@@ -503,7 +503,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 検疫ポリシーのグローバル設定を使用すると、検疫ポリシーで検疫通知が有効になっている場合に検疫メッセージの受信者に送信される検疫通知をカスタマイズできます。 これらの通知の詳細については、「検疫通知」 [を参照してください](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-1. [セキュリティ ポータルMicrosoft 365 Defenderに移動し、[電子メール &**の** 脅威ポリシー] セクションの [検疫ポリシー] に移動し、[検疫ポリシー \>  \>  \>  ]**を選択します**。
+1. このポータルMicrosoft 365 Defender、[ルール] セクション&の[&ポリシーの検疫ポリシーをメールで送信する] \>  \>  \> **に移動** します。
 
 2. [検疫ポリシー **] ページで、[** グローバル設定] **を選択します**。
 
@@ -541,7 +541,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 ## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで検疫ポリシーを表示する
 
-1. [セキュリティ ポータル [Microsoft 365 Defender[](https://security.microsoft.com)メール] [脅威ポリシー **&]** セクションの [検疫ポリシー] に移動し、[検疫 \>  \>  \> ポリシー]**を選択します**。
+1. このポータルMicrosoft 365 Defender、[ルール] セクション&の[&ポリシーの検疫ポリシーをメールで送信する] \>  \>  \> **に移動** します。
 
 2. [**検疫ポリシー] ページ** には、[名前]と [最終更新日] のポリシー **の一覧が表示** されます。
 
@@ -577,7 +577,7 @@ PowerShell を使用して検疫ポリシーを表示する場合は、次の手
 
 AdminOnlyAccessPolicy または DefaultFullAccessPolicy という名前の組み込みの検疫ポリシーを変更できない。 NotificationEnabledPolicy[という名前](#full-access-permissions-and-quarantine-notifications)の組み込みポリシー (持っている場合) とカスタム検疫ポリシーを変更できます。
 
-1. [セキュリティ ポータル [Microsoft 365 Defender[](https://security.microsoft.com)メール] [脅威ポリシー **&]** セクションの [検疫ポリシー] に移動し、[検疫 \>  \>  \> ポリシー]**を選択します**。
+1. このポータルMicrosoft 365 Defender、[ルール] セクション&の[&ポリシーの検疫ポリシーをメールで送信する] \>  \>  \> **に移動** します。
 
 2. [検疫 **ポリシー] ページで** 、名前をクリックしてポリシーを選択します。
 
@@ -614,7 +614,7 @@ Set-QuarantinePolicy -Identity "<QuarantinePolicyName>" [Settings]
 
   検疫ポリシーが使用されている場合は、割 [り当てられた検疫ポリシー](#step-2-assign-a-quarantine-policy-to-supported-features) を削除する前に置き換える必要があります。
 
-1. [セキュリティ ポータル [Microsoft 365 Defender[](https://security.microsoft.com)メール] [脅威ポリシー **&]** セクションの [検疫ポリシー] に移動し、[検疫 \>  \>  \> ポリシー]**を選択します**。
+1. このポータルMicrosoft 365 Defender、[ルール] セクション&の[&ポリシーの検疫ポリシーをメールで送信する] \>  \>  \> **に移動** します。
 
 2. [検疫 **ポリシー] ページ** で、名前をクリックして削除するカスタム検疫ポリシーを選択します。
 

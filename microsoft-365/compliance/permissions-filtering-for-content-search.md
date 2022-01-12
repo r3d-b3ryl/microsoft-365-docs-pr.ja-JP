@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: 電子情報開示マネージャーが組織内のメールボックスとサイトのサブセットのみを検索するには、検索アクセス許可フィルターを使用します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 190ed836c30dbb08015c662f948d6b3dc9310c94
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6310334bdbfd1a94456d5e826daebb9f2945af14
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553378"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936596"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>電子情報開示のアクセス許可フィルターを構成する
 
@@ -113,19 +113,19 @@ _FilterName_ パラメーターは、アクセス許可フィルターの名前�
 
 _Filters_ パラメーターはコンプライアンス セキュリティ フィルターの検索条件を指定します。 次の 3 つの異なる種類のフィルターを作成できます。  
 
-- **メールボックスまたはOneDriveフィルター:** この種類のフィルターは、割り当OneDriveユーザー _(Users_ パラメーターで指定) が検索できるメールボックスとアカウントを指定します。 この種類のフィルターは、ユーザーが検索できるコンテンツの場所を定義するコンテンツの場所を定義するコンテンツの場所フィルターと呼ばれる。 この種類のフィルターの構文は **Mailbox_** _MailboxPropertyName です。MailboxPropertyName_ は、検索できるメールボックスと OneDrive アカウントのスコープに使用されるメールボックス プロパティを指定します。  たとえば、メールボックス フィルターを使用すると、このフィルターを割り当てられたユーザーは `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` 、CustomAttribute10 プロパティの "OttawaUsers" という値を持つメールボックスと OneDrive アカウントのみを検索できます。
+- **メールボックスまたはOneDriveフィルター:** この種類のフィルターは、割り当てられたユーザー _(Users_ パラメーターで指定) が検索できるメールボックスと OneDrive アカウントを指定します。 この種類のフィルターは、ユーザーが検索できるコンテンツの場所を定義するコンテンツの場所を定義するコンテンツの場所フィルターと呼ばれる。 この種類のフィルターの構文は **Mailbox_** _MailboxPropertyName です。MailboxPropertyName_ は、検索できるメールボックスと OneDrive アカウントのスコープに使用されるメールボックス プロパティを指定します。  たとえば、メールボックス フィルターを使用すると、このフィルターを割り当てられたユーザーは `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` 、CustomAttribute10 プロパティの "OttawaUsers" という値を持つメールボックスと OneDrive アカウントのみを検索できます。
 
   サポートされているフィルター可能な受信者プロパティは、メールボックスまたはメールボックス フィルター内の _MailboxPropertyName_ プロパティOneDriveできます。 次の表に、メールボックスまたはフィルターの作成に使用される 4 つの一般的な受信者OneDrive示します。 この表には、フィルターでプロパティを使用する例も含まれています。
 
   |プロパティ名  |例  |
   |---------|---------|
-  |Alias    |`"Mailbox_Alias -like 'v-'"`         |
+  |エイリアス    |`"Mailbox_Alias -like 'v-'"`         |
   |Company  |`"Mailbox_Company -eq 'Contoso'"`        |
   |CountryOrRegion |`"Mailbox_CountryOrRegion -eq 'United States'"`         |
   |部署 |`"Mailbox_Department -eq 'Finance'"`        |
   |||
 
-- **メールボックス のコンテンツ フィルター:** この種類のフィルターは、検索できるコンテンツに適用されます。 この種類のフィルターは、割り当てられたユーザーが検索できるメールボックス コンテンツを指定するコンテンツ フィルターと呼ばれる。 この種類のフィルターの構文は **MailboxContent_** _SearchablePropertyName: value_ です  _。SearchablePropertyName_ は、検索で指定できるキーワード クエリ言語 (KQL) プロパティを指定します。 たとえば、メールボックスのコンテンツ フィルター `MailboxContent_recipients:contoso.com` は、このフィルターが割り当てられたユーザーに、contoso.com ドメイン内の受信者に送信されたメッセージのみを検索することを許可します。 検索可能なメッセージ プロパティの一覧については、「電子情報開示のキーワード クエリ [と検索条件」を参照してください](keyword-queries-and-search-conditions.md#searchable-email-properties)。
+- **メールボックス のコンテンツ フィルター:** この種類のフィルターは、検索できるコンテンツに適用されます。 この種類のフィルターは、割り当てられたユーザーが検索できるメールボックスコンテンツまたは検索可能な電子メール プロパティを指定するコンテンツ フィルターと呼ばれる。 この種類のフィルターの構文はMailboxContent_ _SearchablePropertyName で _、SearchablePropertyName_ は検索で指定できるキーワード クエリ言語 (KQL) プロパティを指定します。 たとえば、メールボックス コンテンツ フィルターを使用すると、このフィルターを割り当てられたユーザーは、ドメイン内の受信者に送信されたメッセージ `"MailboxContent_Recipients  -like 'contoso.com'"` contoso.com できます。 検索可能な電子メール プロパティの一覧については、「電子情報開示のキーワード クエリ [と検索条件」を参照してください](keyword-queries-and-search-conditions.md#searchable-email-properties)。
 
   > [!IMPORTANT]
   > 1 つの検索フィルターにメールボックス フィルターとメールボックス コンテンツ フィルターを含めすることはできません。 これらを 1 つのフィルターに組み合わせるには、フィルター リストを [使用する必要があります](#using-a-filters-list-to-combine-filter-types)。  ただし、フィルターには、同じ種類のより複雑なクエリを含めできます。 たとえば、`"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"` のように指定します。
@@ -284,9 +284,9 @@ _Users パラメーター_ は、このフィルターを検索に適用する�
 
 _Filters_ パラメーターはコンプライアンス セキュリティ フィルターの検索条件を指定します。 次の 3 つの異なる種類のフィルターを作成できます。
 
-- **メールボックスとOneDriveフィルター:** この種類のフィルターは、割り当OneDriveユーザー _(Users_ パラメーターで指定) が検索できるメールボックスとアカウントを指定します。 この種類のフィルターの構文は、**Mailbox_** _MailboxPropertyName_ です。_MailboxPropertyName_ は、検索できるメールボックスの範囲を指定するために使用されるメールボックス プロパティを指定します。 たとえば、メールボックス フィルターを使用すると、このフィルターを割り当てられたユーザーは  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` 、CustomAttribute10 プロパティの値 "OttawaUsers" を持つメールボックスのみを検索できます。  _MailboxPropertyName_ プロパティには、サポートされているフィルター可能な受信者プロパティであればどれでも使用できます。 サポートされているプロパティの一覧については、「[-RecipientFilter パラメーターのフィルター可能なプロパティ](/powershell/exchange/recipientfilter-properties)」を参照してください。
+- **メールボックスとOneDriveフィルター:** この種類のフィルターは、割り当てられたユーザー _(Users_ パラメーターで指定) が検索できるメールボックスと OneDrive アカウントを指定します。 この種類のフィルターの構文は、**Mailbox_** _MailboxPropertyName_ です。_MailboxPropertyName_ は、検索できるメールボックスの範囲を指定するために使用されるメールボックス プロパティを指定します。 たとえば、メールボックス フィルターを使用すると、このフィルターを割り当てられたユーザーは  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` 、CustomAttribute10 プロパティの値 "OttawaUsers" を持つメールボックスのみを検索できます。  _MailboxPropertyName_ プロパティには、サポートされているフィルター可能な受信者プロパティであればどれでも使用できます。 サポートされているプロパティの一覧については、「[-RecipientFilter パラメーターのフィルター可能なプロパティ](/powershell/exchange/recipientfilter-properties)」を参照してください。
 
-- **メールボックス のコンテンツ フィルター:** この種類のフィルターは、検索できるコンテンツに適用されます。 これは、割り当てられたユーザーが検索できるメールボックス コンテンツを指定します。 この種類のフィルターの構文は **MailboxContent_** _SearchablePropertyName:value_ です  _。SearchablePropertyName_ は、検索で指定できるキーワード クエリ言語 (KQL) プロパティを指定します。 たとえば、メールボックスのコンテンツ フィルター `MailboxContent_recipients:contoso.com` は、このフィルターが割り当てられたユーザーに、contoso.com ドメイン内の受信者に送信されたメッセージのみを検索することを許可します。  検索可能なメッセージ プロパティの一覧については、「電子情報開示のキーワード クエリ [と検索条件」を参照してください](keyword-queries-and-search-conditions.md)。 
+- **メールボックス のコンテンツ フィルター:** この種類のフィルターは、検索できるコンテンツに適用されます。 これは、割り当てられたユーザーが検索できるメールボックス コンテンツを指定します。 この種類のフィルターの構文は **MailboxContent_** _SearchablePropertyName で、SearchablePropertyName_ は検索で指定できるキーワード クエリ言語 (KQL) プロパティを指定します。 たとえば、メールボックス コンテンツ フィルターを使用すると、このフィルターを割り当てられたユーザーは、ドメイン内の受信者に送信されたメッセージ `"MailboxContent_Recipients  -like 'contoso.com'"` contoso.com できます。  検索可能な電子メール プロパティの一覧については、「電子情報開示のキーワード クエリ [と検索条件」を参照してください](keyword-queries-and-search-conditions.md)。
 
 - **サイトとサイトのコンテンツ フィルター:** サイト関連のSharePointとOneDrive for Business、割り当てられたユーザーが検索できるサイトまたはサイト コンテンツを指定するために使用できる 2 つのフィルターがあります。
 

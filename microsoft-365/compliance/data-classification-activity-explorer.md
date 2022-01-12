@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: アクティビティ エクスプローラーでは、ラベル付きコンテンツを取り扱うユーザーの操作の確認およびフィルター処理を行い、データ分類機能の機能性を完全なものにします。
-ms.openlocfilehash: 113fd3ec196ec6b16c49435e14ed213cd193e5db
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+description: アクティビティ エクスプローラーを使用すると、ラベル付きコンテンツに対してユーザーが実行しているアクションを表示およびフィルター処理できます。
+ms.openlocfilehash: 73e0d135112d109370aa4f3cdc75d30a8ab087a3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264746"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874042"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 
@@ -57,7 +57,26 @@ ms.locfileid: "60264746"
 
 ### <a name="permissions"></a>アクセス許可
 
- [アクティビティ エクスプローラー] タブにアクセスするには、アカウントにこれらの役割グループのメンバーシップを明示的に割り当てるか、役割を明示的に付与する必要があります。
+アカウントには、これらの役割グループのいずれかのメンバーシップを明示的に割り当てるか、役割を明示的に付与する必要があります。
+
+### <a name="roles-and-role-groups-in-preview"></a>プレビューでの役割と役割グループ
+
+プレビューには、アクセス制御を微調整するためにテストアウトできる役割と役割グループがあります。
+
+プレビューに含Microsoft Information Protection (MIP) ロールの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センターの役割 [」を&してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- 情報保護管理者
+- 情報保護アナリスト
+- 情報保護調査員
+- 情報保護リーダー
+
+プレビュー中の MIP 役割グループの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センター」の「役割 [グループ&参照してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- 情報保護
+- 情報保護管理者
+- 情報保護アナリスト
+- 情報保護調査員
+- 情報保護リーダー
 
 <!--
 > [!IMPORTANT]
@@ -94,7 +113,7 @@ ms.locfileid: "60264746"
 - 保護が削除されました
 - 検出されたファイル 
 
-アクティビティ エクスプローラーは、Exchange Online、SharePoint Online、OneDrive、Teams チャットとチャネル (プレビュー)、オンプレミスの SharePoint フォルダーとライブラリ、オンプレミスのファイル共有、およびエンドポイント経由の Windows 10 デバイスからのイベントを収集します。  **データ損失防止 (DLP)**。 デバイスからのイベントの例Windows 10ファイルです。
+アクティビティ エクスプローラーは、Exchange Online、SharePoint Online、OneDrive、Teams チャットとチャネル (プレビュー)、オンプレミスの SharePoint フォルダーとライブラリ、オンプレミスのファイル共有、および Windows 10 **デバイスからのイベントを収集します。エンドポイント データ損失防止 (DLP)**。 デバイスからのイベントの例Windows 10ファイルです。
 
 - 削除
 - creations
@@ -106,7 +125,7 @@ ms.locfileid: "60264746"
 - ネットワーク共有にコピーされる
 - 許可されていないアプリによってアクセスされる 
 
-機密性の高いラベル付きコンテンツで実行されるアクションを理解する価値は、データ損失防止など、既に設定したコントロールが有効か、有効[](dlp-learn-about-dlp.md)ではないかを確認することです。 そうでない場合、つまり、多数の `highly confidential` でラベル付けされたアイテムおよび `general` にダウングレードされたアイテムなどの予想しない何かが検出された場合は、各種ポリシーを管理して、望ましくない動作を制限するための新しい操作を行うことができます。
+機密性の高いラベル付きコンテンツで実行されるアクションを理解すると、データ損失防止ポリシーなどのコントロールが有効か、[](dlp-learn-about-dlp.md)有効ではないかを確認できます。 そうでない場合、つまり、多数の `highly confidential` でラベル付けされたアイテムおよび `general` にダウングレードされたアイテムなどの予想しない何かが検出された場合は、各種ポリシーを管理して、望ましくない動作を制限するための新しい操作を行うことができます。
 
 > [!NOTE]
 > アクティビティ エクスプローラーは現在、Exchange Online の保持アクティビティを監視していません。

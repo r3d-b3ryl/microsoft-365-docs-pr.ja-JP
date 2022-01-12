@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e27439a23d21dd95bb717104b5d87291b7e4592f
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: c0a2bdab641f0289975f1d8475627d3066ecf1f8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218444"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934203"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>転送プロキシの背後で発生する接続イベントの調査
 
@@ -44,11 +44,11 @@ Defender for Endpoint は、ネットワーク保護による高度な HTTP レ�
 
 ネットワーク保護は、次のモードを使用して制御できます。
 
-- **ブロック**: ユーザーまたはアプリが危険なドメインへの接続をブロックされます。 このアクティビティは、次のページでMicrosoft Defender セキュリティ センター。
-- **監査**: ユーザーまたはアプリが危険なドメインへの接続をブロックされません。 ただし、このアクティビティは引き続き [Microsoft Defender セキュリティ センター] に表示されます。
+- **ブロック**: ユーザーまたはアプリが危険なドメインへの接続をブロックされます。 このアクティビティは、次のページでMicrosoft 365 Defender。
+- **監査**: ユーザーまたはアプリが危険なドメインへの接続をブロックされません。 ただし、このアクティビティは引き続き [Microsoft 365 Defender。
 
 
-ネットワーク保護をオフにした場合、ユーザーまたはアプリは危険なドメインへの接続をブロックされません。 [ネットワーク アクティビティ] にはネットワーク アクティビティMicrosoft Defender セキュリティ センター。
+ネットワーク保護をオフにした場合、ユーザーまたはアプリは危険なドメインへの接続をブロックされません。 [ネットワーク アクティビティ] は [Microsoft 365 Defender] に表示Microsoft 365 Defender。
 
 構成しない場合、ネットワークブロックは既定で無効になります。
 
@@ -90,6 +90,6 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [GP によるネットワーク保護の適用 - ポリシー CSP](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 12fdabadf5c2479ff65f18f7d8bc514a26f7ddc7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 13407c78f89058efe15ed0f5d8f23272716e0237
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164492"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937366"
 ---
 # <a name="investigate-agent-health-issues"></a>エージェントの正常性に関する問題の調査
 
@@ -50,7 +50,7 @@ ms.locfileid: "61164492"
 |edr_configuration_version|EDRバージョンを指定します。|
 |edr_device_tags|デバイスに関連付けられているタグの一覧。|
 |edr_group_ids|デバイスが関連付けられているグループ ID。|
-|edr_machine_id|デバイスで使用されるデバイスMicrosoft Defender セキュリティ センター。|
+|edr_machine_id|デバイスで使用されるデバイスMicrosoft 365 Defender。|
 |engine_version|ウイルス対策エンジンのバージョン。|
 |正常|製品が正常な場合は True、それ以外の場合は false。|
 |ライセンス|True の場合は、デバイスがテナントにオンボードされ、それ以外の場合は false。|

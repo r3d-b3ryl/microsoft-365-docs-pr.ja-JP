@@ -17,16 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 26edfdad43cc701ecc64a304ec54b968d89fa6d1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 39f2fda4864e017991e323aa576d4f97d78f1d2b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181117"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940151"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>エンドポイントの Microsoft Defender の概要を評価する
 

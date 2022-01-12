@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: 新しいツール相互運用性アプリを使用して、課題の作成と採点、コース コンテンツの構築とキュレーション、ファイルMicrosoft OneDrive ラーニング共同作業を行います。
-ms.openlocfilehash: 445c12077c7b7b61269c0bef9e216db0ff1ddfb2
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 68622305e6a277b44538d4a05ee42a6b680749f3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578173"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61905627"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>LTI Microsoft OneDriveキャンバスとの統合
 
@@ -59,7 +59,13 @@ LTI Microsoft OneDrive Canvas との統合は、2 つのステッププロセス
 
 :::image type="content" source="media/OneDrive-LTI-14.png" alt-text="[開発者キー] が選択されている左側のナビゲーション バーと、ページの右側のドロップダウンから選択された LTI キー エントリを示すスクリーンショット。":::
 
-6. [構成] ページの[メソッド] ドロップダウンで、[メソッドとして **JSON** を貼り付ける] を選択し、表示されるテキスト フィールドの手順 5 でコピーした JSON テキストを貼り付けます。
+6. [構成] ページの[メソッド] ドロップダウンで、[メソッドとして **JSON** を貼り付ける] を選択し、表示されるテキスト フィールドに手順 4 でコピーした JSON テキストを貼り付けます。
+
+    > [!TIP]
+    > **オプションの手順:** 学校の教育者が、コースのナビゲーションに表示されるリンクを自分で制御する場合は、コピーした JSON でパラメーター ``default`` を変更できます。 パラメーター ``default`` は自動的に設定されます。ただし、パラメーターを変更すると、教育者は独自のコースのナビゲーション ``enabled`` ``default`` ``disabled`` を選択できます。
+    >
+    > 教員がコース ナビゲーション リンクを変更する方法の詳細については、「How do i manage Course [Navigation links」を参照してください。](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
+
 7. キーを保存すると、Off 状態の Canvas **で使用** できます。 キーを **オンに** し、[詳細] 列で指定したキーをコピーして、次の手順で使用します。
 
 :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="キーがオフの状態で設定されたキャンバス ページ。このキーをオンにし、このページの詳細列からキーをコピーする必要があります。":::

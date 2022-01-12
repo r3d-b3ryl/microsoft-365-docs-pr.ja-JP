@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-audience: ITPro
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
@@ -16,12 +16,13 @@ description: 調査中にメールボックスのすべてのコンテンツを�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: b2ae9db50c171bcafd8352dba250202e07ea0d25
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+- admindeeplinkCOMPLIANCE
+ms.openlocfilehash: d105813d7e34ece7641421bc7fed10919dda618e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753131"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871841"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドの作成
 
@@ -48,17 +49,15 @@ ms.locfileid: "60753131"
 
 メールボックスを訴訟ホールドに設定する手順は、次の手順Microsoft 365 管理センター。
 
-1. <https://admin.microsoft.com> に移動し、サインインします。
+1. [ユーザー] ウィンドウに <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">移動Microsoft 365 管理センター[</a>ユーザー] **[アクティブユーザー]**  >  **をクリックします**。
 
-2. 管理センターのナビゲーション ウィンドウで、[ユーザーがアクティブな **ユーザー]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**をクリックします**</a>。
+2. 訴訟ホールドに配置するユーザーを選択します。
 
-3. 訴訟ホールドに配置するユーザーを選択します。
-
-4. [プロパティ] フライアウト ページで、[メール] タブをクリックし、[その他のアクション] の下の [訴訟ホールドの **管理] をクリックします**。
+3. [プロパティ] フライアウト ページで、[メール] タブをクリックし、[その他のアクション] の下の [訴訟ホールドの **管理] をクリックします**。
 
    ![[ユーザー プロパティ] フライアウト ページの [メール] タブの [訴訟ホールドの管理] をクリックします。](../media/M365AdminCenterLitHold1.png)
 
-5. [訴訟 **ホールドの管理] フライ** アウト ページで、[訴訟ホールドを有効にする] チェック ボックスをオンにして、次のオプション情報を入力します。
+4. [訴訟 **ホールドの管理] フライ** アウト ページで、[訴訟ホールドを有効にする] チェック ボックスをオンにして、次のオプション情報を入力します。
 
     1. **保持期間 (日)**: このボックスを使用して、時間ベースの保持を作成し、メールボックスが訴訟ホールドに置かれるときにメールボックス アイテムを保持する期間を指定します。 期間は、メールボックス アイテムが受信または作成された日から計算されます。 特定のアイテムの保持期間が終了すると、そのアイテムは保持されなくなります。 このボックスが空白の場合は、アイテムは無期限に、またはその保持が解除されるまで保持されます。 日数で期間を指定します。
 
@@ -66,7 +65,7 @@ ms.locfileid: "60753131"
 
     3. **ユーザーの詳細を示す** Web ページ : 訴訟ホールドの詳細については、このボックスを使用してユーザーを Web サイトに案内します。 この URL は、Outlook 2010 以降を使用しているユーザーのメールボックスの [アカウント情報] ページに表示されます。 このページにアクセスするには、Outlook で **[ファイル]** をクリックします。
 
-6. [訴訟 **ホールド] フライ** アウト ページの **[変更の** 保存] をクリックして、保留リストを作成します。
+. [訴訟 **ホールド] フライ** アウト ページの **[変更の** 保存] をクリックして、保留リストを作成します。
 
    変更が有効になるには、最大 240 分かかる可能性があるというバナーがシステムに表示されます。
 

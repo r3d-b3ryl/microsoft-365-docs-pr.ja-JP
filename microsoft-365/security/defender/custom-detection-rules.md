@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48bc7302f8f5e96f35eec70039ec437f602ada2d
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1de43dbf64709e5e38caffbe5af0a8bbf37f0d2a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786420"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940176"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -51,7 +51,7 @@ ms.locfileid: "60786420"
 必要なアクセス許可を管理するには、グローバル **管理者は次の機能を使用** できます。
 
 - [役割の **セキュリティ管理者] の** 下の [セキュリティ管理者 **] の** 下Microsoft 365 管理センター管理者または [セキュリティ](https://admin.microsoft.com/)オペレーター **の役割**  >  **を割り当てます**。
-- [アクセス許可の役割] の下にある [Microsoft Defender for Endpoint [Microsoft Defender セキュリティ センター](https://securitycenter.windows.com/) RBAC 設定  >  **を**  >  **確認します**。 対応する役割を選択して、セキュリティ設定の **管理権限を割り当** てる。
+- [アクセス許可の役割] の下にある [[Microsoft](https://security.microsoft.com/) Defender for Endpoint Microsoft 365 Defender RBAC 設定  >  **を**  >  **確認します**。 対応する役割を選択して、セキュリティ設定の **管理権限を割り当** てる。
 
 > [!NOTE]
 > カスタム検出を管理 **するには、RBAC** が有効になっている場合、セキュリティオペレーターは Microsoft Defender for Endpoint のセキュリティ設定の管理権限を必要とします。

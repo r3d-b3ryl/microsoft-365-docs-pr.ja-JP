@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 description: 管理者は、Microsoft Defender を使用している組織で利用可能な高度なフィッシング対策ポリシーを作成、変更、および削除する方法をOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0c343df51be49e9512d16782ee9d012cc5ced4bd
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 7f72d2a8f7b881216a283d920bce9b4903407cf6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520922"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932585"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender でフィッシング対策ポリシーを構成Office 365
 
@@ -87,7 +87,7 @@ Office 365 の Defender でのフィッシング対策保護の有効性を高�
 
 Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリシーを作成すると、両方に同じ名前を使用して、フィッシング対策ルールと関連付けられたフィッシング対策ポリシーが同時に作成されます。
 
-1. [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページで、[作成** ] アイコン ![ をクリックします。](../../media/m365-cc-sc-create-icon.png) **Create**。
 
@@ -273,7 +273,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>フィッシング対策Microsoft 365 Defenderポータルを使用して変更する
 
-1. [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページで** 、名前をクリックして一覧からポリシーを選択します。
 
@@ -287,7 +287,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 既定のフィッシング対策ポリシーを無効にできない。
 
-1. [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページで** 、名前をクリックしてリストからカスタム ポリシーを選択します。
 
@@ -312,7 +312,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 - このポータルMicrosoft 365 Defender、フィッシング対策ポリシーの優先度を変更できるのは、作成後のみです。 PowerShell では、フィッシング対策ルールを作成するときに既定の優先度を上書きできます (既存のルールの優先度に影響を与える可能性があります)。
 - フィッシング対策ポリシーは、表示順に処理されます (最初のポリシーの **優先度** は 0 です)。 既定のフィッシング対策ポリシーの優先度の値は **[最低**] で、変更は行えなくないます。
 
-1. [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページで** 、名前をクリックしてリストからカスタム ポリシーを選択します。
 
@@ -329,7 +329,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 Microsoft 365 Defenderポータルを使用してカスタムフィッシング対策ポリシーを削除すると、フィッシング対策ルールと対応するフィッシング対策ポリシーの両方が削除されます。 既定のフィッシング対策ポリシーを削除できない。
 
-1. [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページ** で、ポリシーの名前をクリックして、リストからカスタム ポリシーを選択します。
 
@@ -584,7 +584,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
 
 Defender でフィッシング対策ポリシーが正常に構成されたことを確認するには、次Office 365手順を実行します。
 
-- [ポリシー] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>で、[ポリシー] セクションの [&ルール脅威ポリシー&フィッシング対策ポリシー] に移動 \>  \>  \> します。  ポリシー、その状態の値、および **優先度** の値の一覧を **確認** します。 詳細を表示するには、名前をクリックして表示されるフライアウトの詳細を表示して、一覧からポリシーを選択します。
+- [フィッシング **対策] ページ** の [Microsoft 365 Defender] で、ポリシーの一覧、その状態の値、および優先度 <https://security.microsoft.com/antiphishing> の値を **確認** します。  詳細を表示するには、名前をクリックして表示されるフライアウトの詳細を表示して、一覧からポリシーを選択します。
 
 - PowerShell Exchange Online、ポリシーまたはルールの名前に置き換え、次のコマンドを \<Name\> 実行して設定を確認します。
 

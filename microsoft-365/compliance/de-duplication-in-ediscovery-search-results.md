@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 12/21/2016
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -20,12 +20,12 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示の重複検索結果を削除して、電子メール メッセージの 1 つのコピーのみをエクスポートする方法について説明します。
-ms.openlocfilehash: 21f992aca12da53b758b72366ecda0312777d872
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: d09a0e09166928627be01d623963146cfd416bd2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426389"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938927"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子情報開示検索結果での重複排除
 
@@ -68,7 +68,7 @@ ms.locfileid: "61426389"
 > [!IMPORTANT]
 > 重複除外アルゴリズムの制限が検索結果の品質に影響を与える可能性がある場合は、アイテムをエクスポートするときに重複除外を有効にしてはならない。 このセクションで説明する状況が検索結果の要因になる可能性が低く、重複する可能性が最も高いアイテムの数を減らす場合は、重複除外を有効にするように検討する必要があります。 
   
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - この記事の情報は、次のいずれかの電子情報開示ツールを使用して検索結果をエクスポートする場合に適用されます。
 

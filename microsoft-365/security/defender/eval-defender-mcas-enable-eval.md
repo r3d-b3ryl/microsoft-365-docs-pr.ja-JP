@@ -16,16 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e62a87188eb3a092399ef03647a9c70318f37197
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9d0418b2f183884793be3c2d8a72f571d0072a61
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106541"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933146"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps の評価環境を有効にする
 
@@ -55,7 +53,7 @@ Microsoft Defender for Cloud Apps をセットアップするには、次の手�
 
 <a name="step-1"></a>
 
-## <a name="step-1-connect-to-the-defender-for-cloud-apps-portal"></a>手順 1。 Connect Defender for Cloud Apps ポータルへのアクセス
+## <a name="step-1-connect-to-the-defender-for-cloud-apps-portal"></a>手順 1. Connect Defender for Cloud Apps ポータルへのアクセス
 
 ライセンスを確認し、Defender for Cloud Apps ポータルに接続するには [、「Quickstart: Get started with Microsoft Defender for Cloud Apps」を参照してください](/cloud-app-security/getting-started-with-cloud-app-security)。
 
@@ -65,7 +63,7 @@ Microsoft Defender for Cloud Apps をセットアップするには、次の手�
 
 <a name="step-2"></a>
 
-## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>手順 2。 エンドポイント向け Microsoft Defender との統合
+## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>手順 2.  エンドポイント向け Microsoft Defender との統合
 
 Microsoft Defender for Cloud Apps は、Microsoft Defender for Endpoint とネイティブに統合されます。 この統合により、クラウド探索のロールアウトが簡素化され、クラウド探索機能が企業ネットワークを超えて拡張され、デバイスベースの調査が可能です。 この統合により、11 台のデバイスから IT 管理されたデバイスからアクセスWindows 10クラウド Windowsが明らかになります。
 

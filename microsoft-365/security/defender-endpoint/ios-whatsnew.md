@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: ad37c15c16edb03dddf7c9899d160eaca435e53e
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 5f7d3074d8ebf4f62719cd7ca36d627f94dbc897
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578491"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938434"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS のエンドポイント向け Microsoft Defender の新機能
 
@@ -37,6 +37,11 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 ## <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 
 2021 年 11 月 2 日、Android と iOS の脅威と脆弱性の管理のパブリック プレビューを発表しました。 詳細については [、techcommunity の投稿を参照してください](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691)。
+
+## <a name="1124210103"></a>1.1.24210103
+
+- 監視対象デバイスでのインターネット接続の問題を解決しました。 詳細については、「Deploy [Defender for Endpoint on 登録済み iOS デバイス」を参照してください](ios-install.md)。
+- バグ修正。
 
 ## <a name="1123250104"></a>1.1.23250104
 

@@ -13,12 +13,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f0828d24ddb4c02d533d0fced2389ca3cb61ce4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 61b28cc51eefed92aeb3319e8972a31c3cf310dc
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167072"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938386"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender for Endpoint Device Control Device Installation 
 
@@ -29,7 +29,7 @@ ms.locfileid: "61167072"
 Microsoft Defender for Endpoint Device Control リムーバブル Storageアクセス制御を使用すると、次のタスクを実行できます。
 
 - ユーザーが特定のデバイスをインストールするのを防ぐ。
-- ユーザーが特定のデバイスをインストールできますが、他のデバイスをインストールできません。
+- ユーザーが特定のデバイスをインストールできますが、他のデバイスを防止できます。
 
 > [!NOTE]
 > デバイス インストールとリムーバブル 記憶域アクセス制御の違いについては、「Microsoft Defender for Endpoint Device Control Removable Storage [Protection」を参照してください](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true)。

@@ -14,15 +14,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: ''
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0ec5e495e23326c52af37858d596caa3fbead606
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 96ec8a32a04768431597c965473974965b2de608
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556318"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867759"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーが報告したメッセージ設定
 
@@ -54,7 +55,7 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
 
 - [](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)スパム用 ZAP とフィッシング用 ZAP がオフになっているカスタム メールボックスを含むスパム対策ポリシーを作成します (ゼロ時間自動削除セクション [有効な 0 時間自動削除 \> **(ZAP) は** 選択されません)。
 
-Microsoft Defender for Office 365場合は、高度なフィルター処理がメッセージを報告するユーザーに影響を与えないので、次の設定も構成する必要があります。
+Microsoft Defender for Office 365を使用している場合は、高度なフィルター処理がメッセージを報告するユーザーに影響を与えないので、次の設定も構成する必要があります。
 
 - セーフ リンク [スキャン](set-up-safe-links-policies.md)がオフになっているカスタム メールボックスを含む セーフ リンク ポリシーを作成します ([メッセージ] セクションで不明な可能性のある悪意のある **URL** のアクションを選択 \> **します**)。
 
@@ -64,7 +65,7 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com/> で Microsoft 365 Defender ポータルを開きます。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [ユーザー申請] ページに **直接移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
 
 - ユーザー申請の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
 
@@ -81,11 +82,11 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>ユーザー申請メールボックスMicrosoft 365 Defenderポータルを使用して構成する
 
-1. このポータルMicrosoft 365 Defender、[その他のユーザーの申請&ユーザーが報告したメッセージ設定に関するポリシー] に \>  \>  \> **移動します**。
+1. [その他Microsoft 365 Defender] の [ポリシー] &[その他] セクションの [脅威ポリシー] [ユーザーが報告したメッセージ設定 <https://security.microsoft.com>  \>  \> **] に移動** します。 [ユーザー申請] ページに **直接移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
 
 2. [ユーザーの **申請] ページ** で、表示される情報は **、[Microsoft** レポート メッセージ] Outlook設定が [オフ] または [オン] のOutlook **によって** 決 **まります**。
 
-   - **[Microsoft Outlook レポート メッセージ] ボタン** \>**On** ![トグルオン: Outlook on the web でレポート メッセージ アドイン、レポート フィッシング アドイン、または組み込みのレポートを使用する場合は、このオプションを選択し、次の設定 ](../../media/scc-toggle-on.png) を構成します。
+   - **Microsoft Outlook** [レポート メッセージ] ボタンをオンにします。 : Outlook on the web でレポート メッセージ アドイン、レポート フィッシング アドイン、または組み込みのレポートを使用する場合は、このオプションを選択し、次の設定を \>  ![ ](../../media/scc-toggle-on.png) 構成します。
      - **報告されたメッセージを送信する**: 次のいずれかのオプションを選択します。
        - **Microsoft**: ユーザー申請メールボックスは使用されません (報告されたメッセージはすべて Microsoft に送信されます)。
        - **Microsoft と組織のメールボックス**: 表示されるボックスに、既存のメールボックスの電子メール Exchange Onlineします。 配布グループは許可されません。 ユーザー申請は、分析のために Microsoft と管理者またはセキュリティ操作チームが分析するカスタム メールボックスの両方に移動します。
@@ -112,13 +113,13 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
      - **[ユーザー レポートエクスペリエンス] セクション**
        - **[レポート** の前に]タブ: [タイトル] および [メッセージ] 本文ボックスに、ユーザーがレポート メッセージ アドインまたはレポート フィッシング アドインを使用してメッセージを報告する前に表示される説明テキストを入力します。 変数 %type% を使用して、申請の種類 (迷惑メール、迷惑メール、フィッシングなど) を含めできます。
        - **[レポート後**] タブ:  [タイトル] および [確認] メッセージ ボックスに、ユーザーがレポート メッセージ アドインまたはレポート フィッシング アドインを使用してメッセージを報告した後に表示される説明テキストを入力します。 変数 %type% を使用して、申請の種類を含めできます。
-       -  **ユーザーがフィッシングを報告した** 場合にのみ表示する : メールがフィッシングとして報告された場合にのみメッセージを表示する場合は、このオプションをオンにします。 チェックされていない場合は、任意の種類のレポートに対してチェックされたメッセージが表示されます。
+       - **ユーザーがフィッシングを報告した** 場合にのみ表示する : メールがフィッシングとして報告された場合にのみメッセージを表示する場合は、このオプションをオンにします。 チェックされていない場合は、任意の種類のレポートに対してチェックされたメッセージが表示されます。
 
        ページに示すように、報告されたメッセージを Microsoft に送信するオプションを選択すると、次のテキストも通知に追加されます。
 
           > 電子メールは分析のために Microsoft に送信されます。 一部の電子メールには、個人情報または機密情報が含まれている場合があります。
 
-   - **[Microsoft Outlook レポート メッセージ] ボタン** \>**Off** ![トグルオフ: レポート メッセージ アドイン、レポート フィッシング アドイン、または Outlook on the web の組み込みレポートの代わりにサード パーティ製のレポート ツールを使用する場合は、このオプションを選択し、次の設定を ](../../media/scc-toggle-off.png) 構成します。
+   - **[Microsoft Outlook** レポート メッセージ] ボタンをオフに切り替えます。このオプションは、レポート メッセージ アドイン、レポート フィッシング アドイン、または Outlook on the web の組み込みレポートの代わりにサード パーティ製のレポート ツールを使用する場合に選択し、次の設定を構成します \>  ![ ](../../media/scc-toggle-off.png) 。
      - [この **カスタム メールボックスを使用して、ユーザーが報告した申請を受信する] を選択します**。 表示されるボックスに、メールを受信できる既存のメールボックスのExchange Onlineを入力します。
 
    - **[Microsoft Outlook レポート メッセージ**] ボタン: エンド ユーザーが検疫からメッセージを報告する場合は、この機能を有効にします。
@@ -143,7 +144,7 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
 - 2|または迷惑メールではない
 - 3|またはフィッシング
 
-例:
+次に例を示します。
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`

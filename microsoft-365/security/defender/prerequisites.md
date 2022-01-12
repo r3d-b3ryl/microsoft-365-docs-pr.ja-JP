@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3b56d407381633853ea683b50ac969f88f15ff45
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d36fa53266245ea99f93c12eda14817b39d3eafa
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373442"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936836"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender前提条件
 
@@ -42,6 +42,7 @@ ms.locfileid: "61373442"
 
 - Microsoft 365 E5 または A5
 - Microsoft 365 E3アドオンMicrosoft 365 E5 Securityを使用する
+- Microsoft 365 E3 E5 Enterprise Mobility + Securityを使用する
 - Microsoft 365 A3セキュリティ Microsoft 365 A5を使用する
 - Windows 10 Enterprise E5 または A5
 - Windows 11 Enterprise E5 または A5
@@ -79,6 +80,7 @@ ms.locfileid: "61373442"
 - ノルウェー 
 - シンガポール 
 - 南アフリカ
+- スウェーデン
 - スイス 
 - アラブ首長国連邦 
 

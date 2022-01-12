@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 79c637f815ad4f31dd611d6ba05ca566806f71db
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6a4981d77c544b8d4bd0b5824f6a20a3a3731c0b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167264"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937906"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Microsoft Defender for Endpoint パートナーになる
 
@@ -44,11 +44,7 @@ Defender for Endpoint ソリューション パートナーになるためには
 
 Microsoft Defender for Endpoint チームが統合を確認して承認したら、Microsoft インテリジェント セキュリティ協会にパートナーとして参加するように指示します。
 
-## <a name="step-3-become-a--microsoft-intelligent-security-association-member"></a>手順 3: Microsoft インテリジェント セキュリティ関連付けメンバーになる
-
-[Microsoft Intelligent Security Association は](https://www.microsoft.com/security/partnerships/intelligent-security-association) 、Microsoft セキュリティ パートナー向けに特別にプログラムであり、セキュリティ製品の強化と、Microsoft セキュリティ製品への統合に関する顧客の検出可能性の向上に役立ちます。
-
-## <a name="step-4-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>手順 4: Microsoft Defender for Endpoint パートナー アプリケーション ポータルに表示される情報を取得する
+## <a name="step-3-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>手順 3: Microsoft Defender for Endpoint パートナー アプリケーション ポータルに表示される情報を取得する
 
 Microsoft Defender for Endpoint は、Microsoft Defender for Endpoint[](partner-applications.md)管理ポータルに埋め込まれている製品内パートナー ページを使用して、サードパーティアプリケーションの検出と統合をサポートします。
 
@@ -79,6 +75,6 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Endpoint[](partner-
 
 Microsoft Defender for Endpoint とのパートナーシップは、相互のお客様が防御をさらに合理化、統合、および調整するのに役立ちます。 Microsoft Defender for Endpoint パートナーになり、最新の脅威を一緒に防止して対応することで、顧客とその資産を効果的に保護する共通の目標を達成することを選んだのは嬉しく思います。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [テクニカル パートナーの機会](partner-integration.md)

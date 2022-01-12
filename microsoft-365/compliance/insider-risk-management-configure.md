@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 0b26cd34cf38f8f2fbd7a0de96f8e34502054ecf
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 9e5b3e2e98e6316ff1f136699c368bc0646b0312
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283211"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933469"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -151,7 +151,7 @@ Insider Risk Analytics を有効にするには、Insider リスク管理 *、In
 
 分析インサイトを確認した後、インサイダー リスク ポリシーを選択し、組織のインサイダー リスク軽減戦略に最適な関連する前提条件を構成します。
 
-## <a name="step-4-required-configure-prerequisites-for-policies"></a>手順 4 (必須): ポリシーの前提条件を構成する
+## <a name="step-4-recommended-configure-prerequisites-for-policies"></a>手順 4 (推奨): ポリシーの前提条件を構成する
 
 ほとんどのインサイダー リスク管理ポリシーには、関連するアクティビティアラートを生成するためのポリシー インジケーター用に構成する必要がある前提条件があります。 組織に対して構成するポリシーに応じて、適切な前提条件を構成します。
 

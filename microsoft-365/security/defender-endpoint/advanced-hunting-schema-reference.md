@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 18fddf99be6b6bd96457607ddec987ef6cc2d07d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 290d302f815de38c4cd84f417118205ed6504fe2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167912"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934263"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の高度なハンティング スキーマを理解する
 
@@ -54,7 +54,7 @@ ms.locfileid: "61167912"
 
 次の参照では、高度な検索スキーマのすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。
 
-テーブル名と列名は、高度な検索Microsoft Defender セキュリティ センタースキーマ表現のフィールド内にも表示されます。
+テーブル名と列名は、高度なMicrosoft 365 Defenderスキーマ表現のポータル内にも表示されます。
 
 <br>
 
@@ -62,7 +62,7 @@ ms.locfileid: "61167912"
 
 |テーブル名|説明|
 |---|---|
-|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|ユーザーに関するMicrosoft Defender セキュリティ センター|
+|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|ユーザーに関するMicrosoft 365 Defender |
 |**[DeviceInfo](advanced-hunting-deviceinfo-table.md)**|OS 情報を含むデバイス情報|
 |**[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)**|アダプター、IP アドレス、MAC アドレス、接続されたネットワークおよびドメインを含むデバイスのネットワーク プロパティ|
 |**[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)**|プロセスの作成と関連イベント|
@@ -85,7 +85,7 @@ ms.locfileid: "61167912"
 
 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動する方法については、「Advanced Hunting [queries](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)を Microsoft Defender for Endpoint から移行する」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)

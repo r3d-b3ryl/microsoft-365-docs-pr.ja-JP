@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
-ms.openlocfilehash: 444e2acc789cec0c569cbd4904a40794886f40dc
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c70a3dfa873f42b110642dfc77cc877e52c6b8ca
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369674"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937702"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
@@ -95,17 +95,17 @@ Microsoft Defender for Office 365 試用版は、数回クリックした後、O
     - 特定のユーザーを対象にしたカスタム の警察があります。
   - **完全な** 保護: プラン 2 の機能 (AIR、Threat Explorer、攻撃シミュレーション トレーニングなど) Office 365 Defender によって保護されているユーザーの総数。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>Permissions
 
 試用版を開始または終了するには、グローバル管理者またはセキュリティ管理者の役割のメンバーである必要Azure Active Directory。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="additional-information"></a>その他の情報
 
-試用版を開始した後、変更と更新プログラムが利用可能になるには、最大 2 時間かかる場合があります。 また、管理者はログアウトしてログインし、変更を確認する必要があります。
+試用版の使用を開始してから、変更や更新プログラムが利用できるようになるまで、最大で 2 時間かかる場合があります。 また、管理者はログアウトしてログインし、変更を確認する必要があります。
 
 ## <a name="availability"></a>可用性
 
-Office 365 試用版の Defender は、特定の条件を満たす既存の顧客と、Office 365 プラン 2 ライセンス (サブスクリプションまたはアドオンに含まれる) の既存の Defender を持つユーザーに徐々に展開されています。
+Office 365 試用版の Defender は、特定の条件を満たす既存の顧客と、Office 365 Plan 2 ライセンス (サブスクリプションまたはアドオンに含まれる) の既存の Defender を持つユーザーに徐々に展開されています。
 
 ## <a name="terms-and-conditions"></a>使用条件
 

@@ -17,15 +17,16 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 脅威の調査と対応機能を使用して悪意のあるメールを見つけて調査する方法について説明します。
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b3a427b90af637a59a35f18cba9138759b81f6d4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dc76f546286597c12469e849eab6e62f9a58a6cc
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180903"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938170"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>メールで配信された悪意のある電子メールをMicrosoft 365
 
@@ -41,7 +42,7 @@ ms.locfileid: "60180903"
 > [!NOTE]
 > 修復に関する記事については、こちらを参照 [してください](remediate-malicious-email-delivered-office-365.md)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 次の要件が満たされていることを確認してください。
 
@@ -63,17 +64,17 @@ ms.locfileid: "60180903"
 
 |アクティビティ|役割グループ|役割のプレビューが必要ですか?|
 |---|---|---|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する |グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|いいえ|
+|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|いいえ|
 |脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メール メッセージのヘッダーを表示し、検疫済みメール メッセージをプレビューおよびダウンロードする|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|いいえ|
 |脅威エクスプローラーを使用して、ヘッダーの表示、メールのプレビュー (電子メール エンティティ ページ内のみ)、メールボックスに配信される電子メール メッセージのダウンロード|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者 <p> Preview|はい|
 |
 
 > [!NOTE]
-> *プレビュー* は役割で、役割グループではありません。 プレビュー ロールは、ポータル () の既存の役割グループMicrosoft 365 Defenderする必要があります <https://security.microsoft.com> 。 [アクセス許可 **] に移動** し、既存の役割グループを編集するか、プレビュー 役割が割り当てられた新しい役割グループ **を** 追加します。
+> **プレビュー** は役割で、役割グループではありません。 プレビュー ロールは、既存の役割グループまたは新しい役割グループに追加するMicrosoft 365 Defenderがあります。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 >
-> グローバル管理者の役割には 、Microsoft 365 管理センター ( ) が割り当て、セキュリティ管理者とセキュリティ リーダーの役割が [セキュリティ管理者] <https://admin.microsoft.com> () にMicrosoft 365 Defenderされます <https://security.microsoft.com> 。 役割とアクセス許可の詳細については、「[Microsoft 365 Defender　ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
+> グローバル管理者の役割には、次のMicrosoft 365 管理センターが割り当てられます <https://admin.microsoft.com> 。 セキュリティ管理者とセキュリティ リーダーの役割は、ポータルMicrosoft 365 Defenderされます。
 
-メールのプレビューとダウンロードは機密性の高いアクティビティであり、監査が有効になっていると理解しています。 管理者が電子メールでこれらのアクティビティを実行すると、監査ログは同じに対して生成され、Microsoft 365 Defenderポータル ( ) に表示されます <https://security.microsoft.com> 。 [検索の **監査** \> **] タブに** 移動し、[ユーザー] ボックスの管理名を **フィルター処理** します。 フィルター処理された結果には、アクティビティ **AdminMailAccess が表示されます**。 行を選択して、プレビューまたはダウンロードした **メールの詳細** セクションで詳細を表示します。
+メールのプレビューとダウンロードは機密性の高いアクティビティであり、これらのアクティビティに対して監査が有効になっていると理解しています。 管理者が電子メールでこれらのアクティビティを実行すると、監査ログは同じで生成され、[監査の検索] タブの Microsoft 365 Defender ポータルに表示され、[ユーザー] ボックスの [管理者名] でフィルター処理されます。 <https://security.microsoft.com>  \>   フィルター処理された結果には、アクティビティ **AdminMailAccess が表示されます**。 行を選択して、プレビューまたはダウンロードした **メールの詳細** セクションで詳細を表示します。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>配信された疑わしいメールを検索する
 
@@ -82,13 +83,11 @@ Threat Explorer は、メッセージの検索と削除、悪意のあるメー�
 > [!NOTE]
 > エクスプローラーの既定の検索には、現在、ゼロ時間自動削除 (ZAP) によってクラウド メールボックスから削除された配信されたアイテムは含めされません。 この制限は、すべてのビュー (メール マルウェアビュー **や \>** メール フィッシング ビューなど) **\> に適用** されます。 ZAP によって削除されたアイテムを含めるには、ZAP によって削除されたアイテムを含める **配信** アクション セット **を追加する必要があります**。 すべてのオプションを含める場合は、ZAP によって削除されたアイテムを含むすべての配信アクションの結果が表示されます。
 
-1. ポータルをMicrosoft 365 Defender <https://security.microsoft.com> し、自分の仕事用アカウントまたは学校アカウントを使用してサインインOffice 365。
-
-2. 左側の **ナビゲーションで [** メール] グループ& **[脅威** \> **エクスプローラー** ] に移動します。 脅威エクスプローラーに直接 **移動するには** 、 <https://security.microsoft.com/threatexplorer> を使用します。
+1. [電子メール Microsoft 365 Defender] の <https://security.microsofot.com> [メール]**に移動し、& エクスプローラーに** \> **移動します**。 エクスプローラー ページに直接移動 **するには、 を** 使用します <https://security.microsoft.com/threatexplorer> 。
 
    [エクスプローラー **] ページの** [追加の **アクション]** 列には、管理者が電子メールを処理した結果が表示されます。 [**追加のアクション]** 列には、[配信] アクションと [配信場所]**と同じ****場所にアクセスできます**。 特別なアクションは、脅威エクスプローラーのメール タイムラインの最後に更新される可能性があります。これは、管理者の狩猟エクスペリエンスを向上することを目的とした新機能です。
 
-3. [表示 **] メニュー** のドロップダウン リスト **から [** \> **すべてのメール** にメールを送信] を選択します。
+2. [表示 **] メニュー** のドロップダウン リスト **から [** \> **すべてのメール** にメールを送信] を選択します。
 
     ![[脅威エクスプローラー] [表示] メニュー、および [メール] - マルウェア、フィッシング、申請、すべてのメール オプション、コンテンツ - マルウェア。](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
@@ -197,7 +196,7 @@ Threat Explorer は、メッセージの検索と削除、悪意のあるメー�
 > [!IMPORTANT]
 > ここで修復トピックに [移動します](remediate-malicious-email-delivered-office-365.md)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [メールで配信される悪意のある電子メールを修復Office 365](remediate-malicious-email-delivered-office-365.md)
 

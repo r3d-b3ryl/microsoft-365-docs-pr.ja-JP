@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 4fadefe8ae55aff79a749188631e69c9bf263263
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 5bf8495a1acc13f74655133cdfe300b5149acb0a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426497"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936491"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -31,7 +31,7 @@ ms.locfileid: "61426497"
 
 移行するユーザーは、移行先のテナント Exchange Online MailUsers として存在し、テナント間の移動を有効にするには、特定の属性でマークされている必要があります。 ターゲット テナントで適切に設定されていないユーザーの移動はシステムによって失敗します。
 
-移動が完了すると、移行元のユーザー メールボックスが MailUser に変換され、targetAddress (Exchange の ExternalEmailAddress として表示) が宛先テナントへのルーティング アドレスでスタンプされます。 このプロセスは、従来の MailUser をソース テナントに残し、一時期の共同存在とメール ルーティングを可能にします。 ビジネス プロセスで許可されている場合、ソース テナントはソース MailUser を削除するか、メール連絡先に変換できます。
+移動が完了すると、移行元のユーザー メールボックスが MailUser に変換され、targetAddress (Exchange の ExternalEmailAddress として表示) が宛先テナントへのルーティング アドレスでスタンプされます。 このプロセスは、従来の MailUser をソース テナントに残し、共存とメール ルーティングを可能にします。 ビジネス プロセスで許可されている場合、ソース テナントはソース MailUser を削除するか、メール連絡先に変換できます。
 
 ハイブリッドまたはクラウドExchange、または 2 つの任意の組み合わせのテナントに対して、複数テナント間のメールボックス移行がサポートされます。
 
@@ -63,72 +63,66 @@ ms.locfileid: "61426497"
 
    ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
-2. [Azure のサービス] の下の [アプリ] をAzure Active Directory。
+2. [管理] の下の [表示] Azure Active Directory。
 
-3. 左側のナビゲーション バーで、[アプリケーション] をEnterpriseします。
+   ![Azure Active Directory ボタン](../media/tenant-to-tenant-mailbox-move/109ac3dfbac2403fb288f085767f393b.png)
 
-4. [新しいアプリケーション] の選択
+3. 左側のナビゲーション バーで、[アプリの登録] を選択します。
+
+4. [新規登録] を選択します。
 
    ![新しいアプリケーション](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. [独自のアプリケーションを作成する] を選択します。
-
-   ![AAD ギャラリー](../media/tenant-to-tenant-mailbox-move/520912f9ff0b3d61b0b6296788513c89.png)
-
-6. アプリケーションの名前を入力し (組織の名前付け規則に固有の場合があります)、アプリケーションを登録してアプリケーションと統合し、[作成] Azure ADを選択します。
-
-   ![アプリケーションの作成](../media/tenant-to-tenant-mailbox-move/11dfb852b188be5a7e57f9df5836d20e.png)
-
-7. [アプリケーションの登録] ページの [サポートされているアカウントの種類] で、任意の組織の [アカウント] を直接選択します (Any Azure AD ディレクトリ - Multitenant)。 次に、[リダイレクト URI ] (オプション) で [Web] を選択し、と入力します <https://office.com> 。 最後に、[登録] を選択します。
+5. [アプリケーションの登録] ページの [サポートされているアカウントの種類] で、任意の組織の [アカウント] を直接選択します (Any Azure AD ディレクトリ - Multitenant)。 次に、[リダイレクト URI ](オプション)で、[Web] を選択し、と入力します <https://office.com> 。 最後に、[登録] を選択します。
 
    ![アプリケーション登録](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
-8. ページの右上隅に、アプリが正常に作成されたことを示す通知ポップアップが表示されます。
+6. ページの右上隅に、アプリが正常に作成されたことを示す通知ポップアップが表示されます。
 
-9. [ホーム] に戻り、[アプリAzure Active Directory] をクリックします。
+7. [ホーム] に戻り、[アプリAzure Active Directory] をクリックします。
 
-10. [所有アプリケーション] で、作成したアプリを見つけてクリックします。
+8. [所有アプリケーション] で、作成したアプリを見つけてクリックします。
 
-11. ^Essentials では、ターゲット テナントの URL を作成するために後で必要なアプリケーション (クライアント) ID をコピーダウンする必要があります。
+9. ^Essentials では、ターゲット テナントの URL を作成するために後で必要なアプリケーション (クライアント) ID をコピーダウンする必要があります。
 
-12. 次に、左側のナビゲーション バーで[API のアクセス許可] をクリックして、アプリに割り当てられたアクセス許可を表示します。
+10. 次に、左側のナビゲーション バーで[API のアクセス許可] をクリックして、アプリに割り当てられたアクセス許可を表示します。
 
-13. 既定では、作成したアプリに User.Read アクセス許可が割り当てられますが、メールボックスの移行にはユーザーが必要としないので、そのアクセス許可を削除できます。
+11. 既定では、ユーザーです。 読み取りアクセス許可は、作成したアプリに割り当てられますが、メールボックスの移行には読み取りアクセス許可は必要としません。そのアクセス許可を削除できます。
 
     ![アプリケーション アクセス許可](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
 
-14. メールボックスの移行に対するアクセス許可を追加する必要があります。[アクセス許可の追加] を選択します。
+12. メールボックスの移行に対するアクセス許可を追加する必要があります。[アクセス許可の追加] を選択します。
 
-15. [API アクセス許可の要求] ウィンドウで、[組織のユーザー] で [API] を選択し、Office 365 Exchange をオンラインで検索し、それを選択します。
+13. [API アクセス許可の要求] ウィンドウで、[組織のユーザー] で [API] を選択し、Office 365 Exchange をオンラインで検索し、それを選択します。
 
     ![[API の選択]](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
 
-16. 次に、[アプリケーションのアクセス許可] を選択します。
+14. 次に、[アプリケーションのアクセス許可] を選択します。
 
-17. 次に、[アクセス許可の選択] で [メールボックス] を展開し、[Mailbox.Migration] をオンにし、画面の下部にある [アクセス許可の追加] をオンにします。
+15. 次に、[アクセス許可の選択] で [メールボックス] を展開し、[Mailbox.Migration] をオンにし、画面の下部にある [アクセス許可の追加] をオンにします。
 
     ![API の設定](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
 
-18. 次に、アプリケーション&左側のナビゲーション バーで [証明書] を選択します。
+16. 次に、アプリケーション&左側のナビゲーション バーで [証明書] を選択します。
 
-19. [クライアント シークレット] で、[新しいクライアント シークレット] を選択します。
+17. [クライアント シークレット] で、[新しいクライアント シークレット] を選択します。
 
     ![クライアント シークレット](../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png)
 
-20. [クライアント シークレットの追加] ウィンドウで説明を入力し、必要な有効期限設定を構成します。
+18. [クライアント シークレットの追加] ウィンドウで説明を入力し、必要な有効期限設定を構成します。
 
       > [!NOTE]
       > これは、移行エンドポイントの作成時に使用されるパスワードです。 このパスワードをクリップボードにコピーするか、このパスワードを安全/秘密のパスワード安全な場所にコピーすることが非常に重要です。 このパスワードを確認できるのは、これが唯一の時間です。 何らかの方法で紛失したり、リセットする必要がある場合は、Azure portal にログインし、アプリ登録に移動し、移行アプリを見つけて、[Secrets & 証明書] を選択し、アプリの新しいシークレットを作成できます。
 
-21. 移行アプリケーションとシークレットが正常に作成されたので、アプリケーションに同意する必要があります。 アプリケーションに同意するには、Azure Active Directory ランディング ページに戻り、左側のナビゲーションで Enterprise アプリケーションをクリックし、作成した移行アプリを見つけて選択し、左側のナビゲーションで [アクセス許可] を選択します。
+19. 移行アプリケーションとシークレットが正常に作成されたので、アプリケーションに同意する必要があります。 アプリケーションに同意するには、Azure Active Directory ランディング ページに戻り、左側のナビゲーションで Enterprise アプリケーションをクリックし、作成した移行アプリを見つけて選択し、左側のナビゲーションで [アクセス許可] を選択します。
 
-22. [テナント] ボタンの [管理者の同意を許可する] をクリックします。
+20. [テナント] ボタンの [管理者の同意を許可する] をクリックします。
 
-23. 新しいブラウザー ウィンドウが開き、[承諾] を選択します。
+21. 新しいブラウザー ウィンドウが開き、[承諾] を選択します。
 
-24. ポータル ウィンドウに戻り、[更新] を選択して受け入れを確認できます。
+22. ポータル ウィンドウに戻り、[更新] を選択して受け入れを確認できます。
 
-25. 信頼できるパートナー (ソース テナント管理者) に送信する URL を策定して、メールボックスの移行を有効にするためのアプリケーションを受け入れすることもできます。 作成したアプリのアプリケーション ID が必要な URL の例を次に示します。
+23. 信頼できるパートナー (ソース テナント管理者) に送信する URL を策定して、メールボックスの移行を有効にするためのアプリケーションを受け入れすることもできます。 作成したアプリのアプリケーション ID が必要な URL の例を次に示します。
 
     ```powershell
     https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
@@ -176,7 +170,7 @@ ms.locfileid: "61426497"
 
 ### <a name="prepare-the-source-current-mailbox-location-tenant-by-accepting-the-migration-application-and-configuring-the-organization-relationship"></a>移行アプリケーションを受け入れ、組織の関係を構成して、移行元 (現在のメールボックスの場所) テナントを準備する
 
-1. ブラウザーから、信頼できるパートナーが提供する URL リンクに移動し、メールボックス移行アプリケーションに同意します。 URL は次のように表示されます。
+1. ブラウザーから、信頼できるパートナーが提供する URL リンクに移動して、メールボックス移行アプリケーションに同意します。 URL は次のように表示されます。
 
    ```powershell
    https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
@@ -242,9 +236,9 @@ ms.locfileid: "61426497"
 
      MailUser **オブジェクト** の例:
 
-     | 属性            | Value                                                                                                                   |
+     | 属性            | 値                                                                                                                   |
      | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-     | Alias                | LaraN                                                                                                                   |
+     | エイリアス                | LaraN                                                                                                                   |
      | RecipientType        | MailUser                                                                                                                |
      | RecipientTypeDetails | MailUser                                                                                                                |
      | UserPrincipalName    | LaraN@northwintraders.onmicrosoft.com                                                                                   |
@@ -261,9 +255,9 @@ ms.locfileid: "61426497"
 
      ソース **メールボックス オブジェクト** の例:
 
-     | 属性            | Value                                                                   |
+     | 属性            | 値                                                                   |
      | -------------------- | ----------------------------------------------------------------------- |
-     | Alias                | LaraN                                                                   |
+     | エイリアス                | LaraN                                                                   |
      | RecipientType        | UserMailbox                                                             |
      | RecipientTypeDetails | UserMailbox                                                             |
      | UserPrincipalName    | LaraN@contoso.onmicrosoft.com                                           |
@@ -275,7 +269,7 @@ ms.locfileid: "61426497"
      |                      | SMTP:Lara.Newton@contoso.com                                            |
      |                      |                                                                         |
 
-   - ハイブリッド書き込みバックに追加Exchange属性が含まれている場合があります。 含まれていない場合は、含める必要があります。
+   - ハイブリッドライトバックに追加の属性Exchange含まれている場合があります。 含まれていない場合は、含める必要があります。
    - msExchBlockedSendersHash – クライアントからオンプレミスの Active Directory にオンラインセーフでブロックされた送信者データを書き込みます。
    - msExchSafeRecipientsHash – クライアントからオンプレミスの Active Directory にオンラインセーフでブロックされた送信者データを書き込みます。
    - msExchSafeSendersHash – クライアントからオンプレミスの Active Directory にオンラインセーフでブロックされた送信者データを書き込みます。
@@ -431,7 +425,7 @@ Get-MoveRequest -Flags "CrossTenant"
 
 1 つのテナントだけがドメインを所有できるので、メールボックスの移動が完了すると、以前のプライマリ SMTPAddress はターゲット テナントのユーザーに関連付けされません。新しいテナントに関連付けられているドメインのみ。 Outlook新しい UPN を使用してサービスに対する認証を行い、Outlook プロファイルは、ターゲット システム内のメールボックスと一致するレガシ プライマリ SMTPAddress を見つける必要があります。 従来のアドレスがターゲットシステムに含されていないので、Outlook プロファイルは新しく移動されたメールボックスを見つけるために接続されません。
 
-この初期展開では、ユーザーは新しい UPN、プライマリ SMTP アドレスを使用してプロファイルを再構築し、OST コンテンツを再同期する必要があります。
+この初期展開では、ユーザーは新しい UPN、プライマリ SMTP アドレス、および再同期 OST コンテンツを使用してプロファイルを再構築する必要があります。
 
 > [!NOTE]
 > 完了のためにユーザーをバッチ処理する場合は、必要に応じて計画します。 クライアント プロファイルが作成され、後続の OST ファイルと OAB ファイルがクライアントにダウンロードOutlookネットワーク使用率と容量を考慮する必要があります。
@@ -440,7 +434,7 @@ Get-MoveRequest -Flags "CrossTenant"
 
 メールボックスの移動を実行する際の委任された職務の前提に基づく役割のマトリックスがあります。 現在、2 つの役割が必要です。
 
-- 最初の役割は、テナント/組織の境界にコンテンツを移動または外に移動する権限を確立する 1 回のセットアップ タスクです。 組織の管理からデータを移動すると、すべての企業にとって重要な懸念事項となります。組織管理者 (OrgAdmin) の最も高い割り当てられた役割を選択しました。 この役割は、-MailboxMoveCapability をリモート組織で定義する新しい OrganizationRelationship を変更またはセットアップする必要があります。 MailboxMoveCapability 設定を変更できるのは OrgAdmin のみですが、OrganizationRelationship の他の属性はフェデレーション共有管理者が管理できます。
+- 最初の役割は、テナント/組織の境界にコンテンツを移動または外に移動する権限を確立する 1 回のセットアップ タスクです。 組織の管理からデータを移動すると、すべての企業にとって重要な懸念事項となります。組織管理者 (OrgAdmin) の最も高い割り当てられた役割を選択しました。 この役割は、リモート組織で -MailboxMoveCapability を定義する新しい OrganizationRelationship を変更または設定する必要があります。 MailboxMoveCapability 設定を変更できるのは OrgAdmin のみですが、OrganizationRelationship の他の属性はフェデレーション共有管理者が管理できます。
 
 - 実際の移動コマンドを実行する役割は、下位レベルの関数に委任できます。 メールボックスの移動の役割は、組織内または組織外でメールボックスを移動する機能に割り当てられます。
 
@@ -524,9 +518,9 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 この機能は現在プレビュー中であり、SLA であり、該当するサービス レベルは、この機能のプレビュー状態の間、パフォーマンスや可用性の問題には適用されません。
 
-**移動先テナントのユーザーがソース テナントでドキュメントを保護する。**
+**ソース テナント内のドキュメントを、コピー先テナントのユーザーが使用できる保護します。**
 
-テナント間の移行では、メールボックス データだけが移行され、それ以外は移行されません。 次のブログ投稿に記載されている他のオプションは複数あるので、役立つ場合があります。 <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
+テナント間の移行では、メールボックス データだけが移行され、それ以外は移行されません。 他にも複数のオプションがあります。これは、次のブログ投稿に記載されています。 <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
 
 **移行先テナント内のラベルは、組織間の配置に応じて、移行されたユーザーのラベルのセットまたは追加のラベルのセットとして、移行元テナントと同じラベルを作成できます。**
 

@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 72ee60efdfa93444d6f1fbde7d1c15dd203fdae8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fbff56ef52c7b7fc73c8ad2f557a831d36bbbaaa
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176693"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937834"
 ---
 # <a name="enable-the-evaluation-environment"></a>評価環境を有効にする
 

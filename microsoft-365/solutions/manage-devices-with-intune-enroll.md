@@ -3,7 +3,9 @@ title: 手順 2.  Intune を使用してデバイスを管理に登録する
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- enroll devices into management
+- enroll devices with Intune
+- Intune mobile device platforms
 manager: dougeby
 audience: ITPro
 description: Intune と Autopilot を使用してデバイスを管理に登録し、デバイスで実行されているアプリが準拠していることを確認し、企業のデータ漏洩を防ぎます。
@@ -14,14 +16,16 @@ ms.collection:
 - enroll devices into management
 - enroll devices with Intune
 - Intune mobile device platforms
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 56226aee898dad607d3dd85641b7736e764b2be2
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: b4beeeb31602eca35d421f11f045307effb401ae
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645610"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939287"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>手順 2。 Intune を使用してデバイスを管理に登録する
 

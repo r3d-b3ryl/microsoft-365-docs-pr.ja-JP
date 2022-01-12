@@ -15,15 +15,14 @@ ms.collection:
 description: マルウェアのフィッシング詐欺の試行を表示および調査します。
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38bf13f02a1641147a6b76ba381afb6f0e282892
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 3ee97c54174fc7aaa2cd6d653dcd9fdd8298376d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507307"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872299"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Microsoft Defender の脅威エクスプローラーを使用した電子メール Office 365
 
@@ -34,7 +33,7 @@ ms.locfileid: "61507307"
 - [自動調査と対応を開始する](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> これは、Threat **Explorer (Explorer)** 、電子メール セキュリティ、**エクスプローラー** とリアルタイム検出の基本 (ツールの違い、操作に必要なアクセス許可など) に関する **3** 記事シリーズの一部です。 このシリーズの他の 2 つの記事は、Threat Explorer と Threat [Explorer](threat-hunting-in-threat-explorer.md) での脅威の検出とリアルタイム検出 [の基本です](real-time-detections.md)。
+> これは、Threat **Explorer (Explorer)** 、電子メール セキュリティ、**エクスプローラー** とリアルタイムの検出 (ツールの違い、操作に必要なアクセス許可など) に関する **3** 記事シリーズの一部です。 このシリーズの他の 2 つの記事は、Threat Explorer と [Threat Explorer](threat-hunting-in-threat-explorer.md) での脅威の検出とリアルタイム [検出です](real-time-detections.md)。
 
 この記事では、セキュリティ機能によって電子メールで検出されたマルウェアやフィッシングの試みを表示および調査するMicrosoft 365説明します。
 
@@ -47,7 +46,9 @@ ms.locfileid: "61507307"
 
 電子メールで検出されたマルウェアを Microsoft 365 テクノロジで並べ替えた状態 [**で \>**](threat-explorer-views.md#email--malware)表示するには、エクスプローラーの [電子メール マルウェア] ビュー (またはリアルタイム検出) を使用します。 マルウェアは既定のビューなので、エクスプローラーを開いたとすぐに選択される可能性があります。
 
-1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderで</a>、[メール] & \> **コラボレーション エクスプローラー** (または **リアルタイム検出) を選択します**。この例では、エクスプローラーを使用します)。
+1. [メール Microsoft 365 Defender] ポータルで、[メール の編集&] に移動し、[エクスプローラー] または [リアルタイム検出] <https://security.microsoft.com> **を選択します**。   ページに直接移動するには、または <https://security.microsoft.com/threatexplorer> を使用します <https://security.microsoft.com/realtimereports> 。
+
+   この例では **、エクスプローラーを使用します**。
 
    ここから、ビューから開始し、調査する特定のフレーム (必要な場合) を選択し、エクスプローラーのウォークスルーに応じてフィルターを [フォーカスします](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)。
 
@@ -86,8 +87,9 @@ ms.locfileid: "61507307"
 
 許可、ブロック、および上書きされた URL の一覧を含む、メール内の URL を介してフィッシング詐欺の試みを表示できます。 クリックされた URL を識別するには、セーフ[リンクを](safe-links.md)構成する必要があります。 [リンク] でクリック[セーフの](set-up-safe-links-policies.md)保護とログ記録を行う場合は、必ずリンク ポリシーをセーフしてください。
 
-1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderで</a>、[メール] & \> **コラボレーション エクスプローラー** (または **リアルタイム検出) を選択します**。この例では、エクスプローラーを使用します)。
-をクリック **し、[メール** \> **&] を選択します** (または **リアルタイム検出)。** この例では、エクスプローラーを使用します)。
+1. [メール Microsoft 365 Defender] ポータルで、[メール の編集&] に移動し、[エクスプローラー] または [リアルタイム検出] <https://security.microsoft.com> **を選択します**。   ページに直接移動するには、または <https://security.microsoft.com/threatexplorer> を使用します <https://security.microsoft.com/realtimereports> 。
+
+   この例では **、エクスプローラーを使用します**。
 
 2. [表示] **ドロップダウン リスト** で、[メール フィッシング] **を** \> **選択します**。
 

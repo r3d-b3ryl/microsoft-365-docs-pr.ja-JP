@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: bf12e3f0e726745ae9064381f72a3c0cc4ccf3eb
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 53bdc9a2da917a16a27b48f1420ffbbb89cdbd47
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507747"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933325"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business でデバイスを管理する (プレビュー)
 
@@ -36,6 +36,11 @@ Microsoft Defender for Business (プレビュー) では、次のようにデバ
 - [脅威の検出があるデバイス](#take-action-on-a-device-that-has-threat-detections) でアクションを実行する
 - [デバイスを Defender for Business にオンボードする (プレビュー)](#onboard-a-device)  
 - [Defender for Business からのデバイスのオフボード (プレビュー)](#offboard-a-device)
+
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+>
 
 ## <a name="view-the-list-of-onboarded-devices"></a>オンボード デバイスの一覧を表示する
 

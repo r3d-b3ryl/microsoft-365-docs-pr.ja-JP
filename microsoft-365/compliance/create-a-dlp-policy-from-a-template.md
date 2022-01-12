@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: この記事では、データベースに含まれるテンプレートのいずれかを使用して DLP ポリシーを作成する方法についてOffice 365。
-ms.openlocfilehash: e581a395e6d817a7d6d0dc9ac79a9b2b7c0327d4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 92c26c23461c9a03e50ea3a8f0ebb20a2b5151ba
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747240"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939107"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
@@ -36,6 +36,43 @@ Microsoft 365、さまざまな一般的な規制およびビジネス ポリシ
 テンプレートを微調整するには、既存のルールを変更するか、新しいルールを追加します。 たとえば、ルールに新しい種類の機密情報を追加したり、トリガーの難度を変更するためにルール内のカウントを変えたり、業務上の理由を提供することによってルールのアクションをユーザーが上書きできるようにしたり、通知とインシデント レポートの通知先を変更したりできます。 DLP ポリシー テンプレートは、多くの一般的なコンプライアンス シナリオの柔軟な開始点となります。
 
 カスタム テンプレートを選択することもできます。カスタム テンプレートには既定のルールがなく、組織の特定のコンプライアンス要件を満たすようにゼロから DLP ポリシーを構成します。
+
+## <a name="permissions"></a>Permissions
+
+DLP ポリシーを作成するコンプライアンス チームのメンバーは、コンプライアンス センターへのアクセス許可を持っている必要があります。 既定では、テナント管理者はコンプライアンス担当者や他のユーザーにアクセス権を付与できます。 次の手順を実行します。
+  
+1. Microsoft 365 でグループを作成して、コンプライアンス責任者をグループに追加します。
+    
+2. セキュリティ &amp; コンプライアンス センターの [**アクセス許可**] ページで役割グループを作成します。 
+
+3. 役割グループの作成中に、[役割の選択] セクションを使用して、役割グループに次の役割を追加 **します**。
+    
+4. **メンバーの選択** セクションを使用して、以前に作成した Microsoft 365 グループを役割グループに追加します。
+
+[表示のみ **] DLP コンプライアンス管理** 役割を使用して、DLP ポリシーおよび DLP レポートに対する表示専用の権限を持つ役割グループを作成します。
+
+詳細については、「[Give users access to the Office 365 Security & Compliance Center (Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する)](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+  
+ポリシーを適用しない DLP ポリシーを作成して適用するには、これらのアクセス許可が必要です。
+
+### <a name="roles-and-role-groups-in-preview"></a>プレビューでの役割と役割グループ
+
+プレビューには、アクセス制御を微調整するためにテストアウトできる役割と役割グループがあります。
+
+プレビューに含Microsoft Information Protection (MIP) ロールの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センターの役割 [」を&してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- 情報保護管理者
+- 情報保護アナリスト
+- 情報保護調査員
+- 情報保護リーダー
+
+プレビュー中の MIP 役割グループの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センター」の「役割 [グループ&参照してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- 情報保護
+- 情報保護管理者
+- 情報保護アナリスト
+- 情報保護調査員
+- 情報保護リーダー
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
@@ -57,7 +94,7 @@ Microsoft 365、さまざまな一般的な規制およびビジネス ポリシ
 
 5. DLP ポリシーで保護する場所を選択し、各場所の既定のスコープを受け入れるか、スコープをカスタマイズします。 「スコープ [オプションの](dlp-policy-reference.md#locations) 場所」を参照してください。
 
-6. [\> **次へ**]を選択します。
+6. \> **次へ** を選択します。
  
 1. <!-->、次のいずれかの操作を行います。
 
@@ -82,9 +119,9 @@ Microsoft 365、さまざまな一般的な規制およびビジネス ポリシ
     1. Exchange
     1. SharePoint
     1. OneDrive
-    1. Teamsチャットメッセージとチャネル メッセージ 
+    1. Teamsおよびチャネル メッセージ 
 
-10. [**次へ**]を選択します。
+10. **次へ** を選択します。
 
 11. 必要に **応じて 、[保護の** アクション] ページで、ポリシー ヒントの通知と通知メールをカスタマイズできます。 [ **コンテンツがポリシー条件に一** 致する場合] を有効にし、ポリシー ヒントをユーザーに表示して電子メール通知を送信し、[ヒントと電子メールのカスタマイズ **] を選択します**。
 12. [ **次へ**] を選びます。

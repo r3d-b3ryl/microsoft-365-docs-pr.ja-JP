@@ -13,18 +13,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-- admindeeplinkDEFENDER
+ms.custom: seo-marvel-apr2020
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d84ce2b2ec6131419f8344976335dc681fdc002c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d16839881f48b494d6d061d2a59c205b5e8d667c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374046"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935527"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -69,9 +67,9 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 ## <a name="report-suspicious-content-to-microsoft"></a>疑わしいコンテンツを Microsoft に報告する
 
-1. ポータルの <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">[Microsoft 365 Defender]</a>で、[**申請のアクション&]** の下の [申請]**に移動します**。
+1. [電子メール Microsoft 365 Defender] ポータルの [投稿] ページに移動し、[電子メール] & <https://security.microsoft.com> **投稿]**  \> **に移動します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
 
-2. [申請 **] ページで**、[メール]タブが選択されているのを確認し、報告するメールを選択し、[広告] アイコン ![ をクリックします。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に送信します**。
+2. [申請 **] ページで**、[分析用に送信] タブが選択されているのを確認し、報告するメールを選択し、[分析用に Microsoft に送信] アイコン ![ をクリックします。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に送信します**。
 
 3. 次の **セクションで説明するように** 、電子メール、URL、または電子メールの添付ファイルを送信するために表示される[分析用に Microsoft に送信する] フライアウトを使用します。
 
@@ -80,9 +78,9 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 ### <a name="notify-users-from-within-the-portal"></a>ポータル内からユーザーに通知する
 
-1. ポータルの [Microsoft 365 Defender] で、[申請 **のアクション&]** の下の [申請]**に移動します**。
+1. [電子メール Microsoft 365 Defender] ポータルの [投稿] ページに移動し、[電子メール] & <https://security.microsoft.com> **投稿]**  \> **に移動します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
 
-2. [ **ユーザー報告メッセージ] タブ** を選択し、マークして通知するメッセージを選択します。
+2. [申請 **] ページで** 、[ **ユーザーが報告** したメッセージ] タブを選択し、マークして通知するメッセージを選択します。
 
 3. [マークを **付け、通知** する] ドロップダウンを選択し、[フィッシングまたは迷惑メールが検出された脅威なし \> **] を****選択します**。
 
@@ -147,7 +145,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Microsoft への管理者申請の表示
 
-1. ポータルの <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">[Microsoft 365 Defender]</a>で、[**申請のアクション&]** の下の [申請]**に移動します**。
+1. [電子メール Microsoft 365 Defender] ポータルの [投稿] ページに移動し、[電子メール] & <https://security.microsoft.com> **投稿]**  \> **に移動します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
 
 2. [申請 **] ページで**、[メール **、URL、** または電子メールの添付ファイル] タブ **が** 選択されている必要があります。
 
@@ -194,7 +192,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
    - エントリをグループ化するには、[グループ] を **クリック** し、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
-     - **種類**
+     - **型**
      - **理由**
      - **状態**
      - **再スキャンの結果**
@@ -217,7 +215,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 レポート メッセージ アドイン、レポート [](enable-the-report-message-add-in.md)フィッシング アドイン、またはユーザー [](enable-the-report-phish-add-in.md)が [Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)の組み込みレポートを使用している場合は、[ユーザーが報告したメッセージ] タブでユーザーが報告している情報を **確認** できます。
 
-1. ポータルの <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">[Microsoft 365 Defender]</a>で、[**申請のアクション&]** の下の [申請]**に移動します**。
+1. [電子メール Microsoft 365 Defender] ポータルの [投稿] ページに移動し、[電子メール] & <https://security.microsoft.com> **投稿]**  \> **に移動します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
 
 2. [申請 **] ページで** 、[ユーザーが報告した **メッセージ] タブを選択** します。
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: ユーザーがグループを作成できるユーザーを制御Microsoft 365します。
-ms.openlocfilehash: 279c8826599bf2a41690c95c4202f81fe3206ff4
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 4280b6859358580547302ccf9497e8cd1e7ed752
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422101"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939407"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを管理する
 
@@ -58,7 +58,7 @@ ms.locfileid: "61422101"
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
-グループを作成するユーザーを管理するには、次のユーザーに割りAzure AD Premium基本 EDU Azure ADライセンスを割り当てる必要があります。
+グループを作成するユーザーを管理するには、次のユーザーに割りAzure AD Premiumライセンスを割り当てる必要があります。
 
 - これらのグループ作成の設定を管理している管理者
 - グループの作成が許可されているグループのメンバー
@@ -66,7 +66,7 @@ ms.locfileid: "61422101"
 > [!NOTE]
 > Azure[ライセンスの割り当て方法の詳細については、「Azure Active Directory ポータル](/azure/active-directory/fundamentals/license-users-groups)でライセンスを割り当てるまたは削除する」を参照してください。
 
-以下のユーザーは Azure AD Premium ライセンスまたは Azure AD Basic EDU のライセンスが割り当てられている必要はありません。
+次のユーザーは、割り当Azure AD Premiumライセンスを必要としません。
 
 - グループのメンバー Microsoft 365他のグループを作成できないユーザー。
 

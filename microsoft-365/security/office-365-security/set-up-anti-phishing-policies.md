@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca7c19066847b3a1aa5ad5a971315e3962fc08b7
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 899a76fac01c6058d5642cb52af5a6e8fb7d11ee
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520910"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939731"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -147,7 +147,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
 
 ![最初に、1 安全性のヒントメッセージの連絡先を指定します。](../../media/safety-tip-first-contact-one-recipient.png)
 
-![最初の連絡先安全性のヒント複数の受信者を含むメッセージの連絡先です。](../../media/safety-tip-first-contact-multiple-recipients.png)
+![最初に、複数安全性のヒントメッセージに関する問い合わせ先が表示されます。](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 この機能は、潜在的な偽装攻撃に対するセキュリティ保護の層を追加します。そのため、有効にすることをお勧めします。
 

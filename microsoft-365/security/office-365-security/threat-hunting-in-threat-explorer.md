@@ -15,15 +15,14 @@ ms.collection:
 description: 脅威の調査と対応を効率的に行うには、Microsoft 365 Defender エクスプローラーまたはリアルタイム検出を使用します。
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a12d83e3345936e0eb02e3d5f687dbda67715d00
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: de9121320e339ecff2b665737a6b4ccebe5e0fd0
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963205"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933781"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Microsoft Defender for Microsoft Defender for Threat Explorer での脅威Office 365
 
@@ -35,7 +34,7 @@ ms.locfileid: "60963205"
 - [脅威の検出エクスペリエンスの改善](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> これは、Threat **Explorer (Explorer)** 、電子メール セキュリティ、**エクスプローラー** とリアルタイム検出の基本 (ツールの違い、操作に必要なアクセス許可など) に関する **3** 記事シリーズの一部です。 このシリーズの他の 2 つの記事は、 [脅威](email-security-in-microsoft-defender.md) エクスプローラーと脅威エクスプローラーとリアルタイム検出の基本を備えたメール [セキュリティです](real-time-detections.md)。
+> これは、Threat **Explorer (Explorer)** 、電子メール セキュリティ、**エクスプローラー** とリアルタイムの検出 (ツールの違い、操作に必要なアクセス許可など) に関する **3** 記事シリーズの一部です。 このシリーズの他の 2 つの記事は、 [脅威](email-security-in-microsoft-defender.md) エクスプローラーと脅威エクスプローラーとリアルタイム検出を備えたメール [セキュリティです](real-time-detections.md)。
 
 
 **適用対象**
@@ -44,7 +43,7 @@ ms.locfileid: "60963205"
 
 組織に[Microsoft Defender](defender-for-office-365.md)for Office 365権限がある場合は、エクスプローラー[](#required-licenses-and-permissions)またはリアルタイム検出を使用して脅威を検出および修復できます。 
 
-[ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender[</a>メール] グループ&**に** 移動し、[**エクスプローラー** ] または [リアルタイム検出]**を選択します**。 ページに直接移動するには、 <https://security.microsoft.com/threatexplorer><https://security.microsoft.com/realtimereports>
+[メール Microsoft 365 Defender] ポータルで、[メール の編集&] に移動し、[エクスプローラー] または [リアルタイム検出] <https://security.microsoft.com> **を選択します**。   ページに直接移動するには、または <https://security.microsoft.com/threatexplorer> を使用します <https://security.microsoft.com/realtimereports> 。
 
 これらのツールで以下のことができます。
 
@@ -245,11 +244,11 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 
 エクスプローラーまたはリアルタイム検出を表示および使用するには、次のアクセス許可が必要です。
 
-- ポータルの<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender:</a>
+- [ポータル] Microsoft 365 Defenderで、次のMicrosoft 365 Defenderします。
   - 組織管理
   - セキュリティ管理者 (この管理者は、管理者センター Azure Active Directory割り当てることができます ( <https://aad.portal.azure.com> )
   - セキュリティ閲覧者
-- 次Exchange Online:
+- 次のExchange Online。
   - 組織の管理
   - 表示専用組織の管理
   - "View-Only Recipients/表示専用受信者"
@@ -258,7 +257,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 役割とアクセス許可の詳細については、次のリソースを参照してください。
 
 - [Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)
-- [Exchange Online の機能アクセス許可](/exchange/permissions-exo/feature-permissions)
+- [Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)
 - [Exchange Online の PowerShell](/powershell/exchange/exchange-online-powershell)
 
 ## <a name="more-information"></a>詳細

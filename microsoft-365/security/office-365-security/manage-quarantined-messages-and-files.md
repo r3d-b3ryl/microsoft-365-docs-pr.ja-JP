@@ -16,16 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: 管理者は、ユーザー (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理Exchange Online Protectionできます。 Microsoft Defender for Office 365組織の管理者は、SharePoint Online、OneDrive for Business、およびMicrosoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2600599dfd6d638736e29fef198913d32fcd60e
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 1c216a84caefc783293cc1a4ce5b76357f4353a5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240998"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935356"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -48,7 +47,7 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- ポータルを開Microsoft 365 Defenderに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> 。 **検疫ページ** を直接開くには、<https://security.microsoft.com/quarantine>を使用します。
+- Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 [検疫] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/quarantine> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -70,7 +69,8 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 
 ### <a name="view-quarantined-email"></a>検疫済みメールの表示
 
-1. [メール]<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータルMicrosoft 365 Defender[</a>メール]**に移動し、[&検疫** \> **] に** \> **移動します**。
+1. [メール] Microsoft 365 Defenderで、[メール <https://security.microsoft.com> の送信] **& [検疫の確認]** \> **に** \> **移動します**。 [検疫] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/quarantine> 。
+
 2. [検疫 **] ページ** で、[電子メール] **タブが** 選択されているのを確認します。
 
 3. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 表示列を変更するには、[**列のカスタマイズ**] をクリックします。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
@@ -281,7 +281,8 @@ Defender for Office 365 の組織では、管理者は セーフ、OneDrive、�
 
 ### <a name="view-quarantined-files"></a>検疫済みファイルの表示
 
-1. [メール]<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータルMicrosoft 365 Defender[</a>メール]**に移動し、[&検疫** \> **] に** \> **移動します**。
+1. [メール] Microsoft 365 Defenderで、[メール <https://security.microsoft.com> の送信] **& [検疫の確認]** \> **に** \> **移動します**。 [検疫] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/quarantine> 。
+
 2. [検疫 **] ページで**、[ファイル]**タブ****([メール]** が既定のタブ) を選択します。
 
 3. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 [列 **のカスタマイズ]** をクリックして、表示される列を変更します。 既定の列には、アスタリスク ( ) が付いています <sup>\*</sup> 。

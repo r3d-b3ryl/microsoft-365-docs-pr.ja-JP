@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f34390890f2b49c3058c50a12d3ce67454e4dd37
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 96fd95ca7f774d7aec5800f10e68fd23c10987cf
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560770"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936079"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 
@@ -39,7 +39,7 @@ Microsoft 脅威エキスパートは、セキュリティ運用センター (SO
 
 この管理された脅威の追求サービスは、標的型攻撃通知とオンデマンドの専門家へのアクセスという 2 つの機能を通じて、エキスパート主導のインサイトとデータを提供します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 > [!NOTE]
 > 管理対象の脅威ハンティング サービスに適用する前に、Microsoft Technical Service プロバイダーおよびアカウント チームと適格性要件について話し合います。
@@ -63,7 +63,7 @@ Microsoft 脅威エキスパート - 標的型攻撃通知は、人間の敵対�
 
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Microsoft 脅威エキスパート - エキスパート オンデマンド
 
-お客様は、迅速かつ正確な対応のために、Microsoft Defender セキュリティ センターから直接セキュリティ専門家に問い合わせください。 専門家は、アラートの問い合わせ、潜在的に侵害されたデバイス、疑わしいネットワーク接続の根本原因、継続的な高度な永続的な脅威キャンペーンに関する追加の脅威インテリジェンスまで、組織に影響を与える複雑な脅威をより深く理解するために必要な洞察を提供します。 この機能を使用すると、次の機能を使用できます。
+お客様は、迅速かつ正確な対応のために、Microsoft 365 Defenderから直接セキュリティ専門家に問い合わせください。 専門家は、アラートの問い合わせ、潜在的に侵害されたデバイス、疑わしいネットワーク接続の根本原因、継続的な高度な永続的な脅威キャンペーンに関する追加の脅威インテリジェンスまで、組織に影響を与える複雑な脅威をより深く理解するために必要な洞察を提供します。 この機能を使用すると、次の機能を使用できます。
 
 - インシデントの根本原因や範囲を含むアラートに関する追加の明確化を取得する
 - 高度な攻撃者に直面した場合、疑わしいデバイスの動作と次の手順をわかりやすくする

@@ -18,12 +18,12 @@ ms.custom:
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 3b724fcd11fb9acb32bd6c4cec551156f8a86cda
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 43c881d340b5832a3403a6e47f664163f10dea00
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369710"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939923"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Microsoft 365 Defender で自動調査と応答機能を構成する
 
@@ -52,14 +52,14 @@ Microsoft 365 Defenderには、セキュリティ[運用](m365d-autoir.md)チー
 |ネットワーク要件|<ul><li>[Id の Microsoft Defender が有効](/azure-advanced-threat-protection/what-is-atp)</li><li>[Microsoft Defender for Cloud Apps の](/cloud-app-security/what-is-cloud-app-security) 構成</li><li>[Id 統合用 Microsoft Defender](/cloud-app-security/mdi-integration)</li></ul>|
 |Windowsの要件|<ul><li>Windows 11</li><li>Windows 10バージョン 1709 以降がインストールされている (リリース[情報Windows参照)](/windows/release-information/)</li><li>構成されている脅威保護サービスは次のとおりです。<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |電子メール コンテンツと電子メール ファイルOffice保護|[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies)構成済み|
-|アクセス許可|自動調査および応答機能を構成するには、グローバル管理者またはセキュリティ管理者の役割が Azure Active Directory ( ) または Microsoft 365 管理センター ( ) のどちらかに割 <https://portal.azure.com> り当てられている必要があります <https://admin.microsoft.com> 。 <p> 保留中のアクションの確認、承認、拒否など、自動調査および応答機能を操作するために必要なアクセス許可を取得するには、「アクション センター タスクに必要なアクセス許可」 [を参照](m365d-action-center.md#required-permissions-for-action-center-tasks)してください。|
+|Permissions|自動調査および応答機能を構成するには、グローバル管理者またはセキュリティ管理者の役割が Azure Active Directory ( ) または Microsoft 365 管理センター ( ) のどちらかに割 <https://portal.azure.com> り当てられている必要があります <https://admin.microsoft.com> 。 <p> 保留中のアクションの確認、承認、拒否など、自動調査および応答機能を操作するために必要なアクセス許可を取得するには、「アクション センター タスクに必要なアクセス許可」 [を参照](m365d-action-center.md#required-permissions-for-action-center-tasks)してください。|
 |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>デバイス グループのオートメーション レベルを確認または変更する
 
 自動調査を実行するかどうか、および修復アクションが自動的に実行されるのか、デバイスの承認時にのみ実行されるのかは、組織のデバイス グループ ポリシーなど、特定の設定によって異なります。 デバイス グループ ポリシーの構成済みのオートメーション レベルを確認します。
 
-1. [パスワード] ( ) にMicrosoft Defender セキュリティ センター [https://securitycenter.windows.com](https://securitycenter.windows.com) し、サインインします。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
 2. [アクセス許可  >  **設定] デバイス グループ**  >  **に移動します**。
 

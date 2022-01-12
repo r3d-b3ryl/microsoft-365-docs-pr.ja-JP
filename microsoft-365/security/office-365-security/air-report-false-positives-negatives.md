@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 0096cb5f8c0d878ecc888de74f1548c77ed0dda9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aaf3e052e29893f0584edd730cf80bd82c34257e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196647"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61882164"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能で誤検知/陰性を報告する方法
 
@@ -53,7 +53,7 @@ microsoft Defender for Office 365 の AIR で電子メール メッセージ、�
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>誤検知が繰り返されるのを防ぐためにアラートを調整する
 
-アラートが正当な使用によってトリガーされた場合、またはアラートが不正確な場合は、ポータルでアラートを[Cloud App Securityできます](/cloud-app-security/managing-alerts)。
+アラートが正当な使用によってトリガーされた場合、またはアラートが不正確な場合は、Defender for Cloud Apps ポータルでアラート [を管理できます](/cloud-app-security/managing-alerts)。
 
 組織が Office 365 に加えて[Microsoft Defender for Endpoint](/windows/security/threat-protection)を使用している場合、ファイル、IP アドレス、URL、またはドメインが安全なデバイス上でマルウェアとして扱われる場合は、デバイスの "許可["](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)アクションを使用してカスタム インジケーターを作成できます。
 
@@ -72,7 +72,7 @@ Threat Explorer を使用すると、セキュリティ運用チームは、ア�
 
 ****
 
-|シナリオ|元に戻すオプション|詳細情報|
+|シナリオ|元に戻すオプション|詳細を見る|
 |---|---|---|
 |電子メール メッセージがユーザーの迷惑メール フォルダーにルーティングされた|<ul><li>メッセージをユーザーの [削除済みアイテム] フォルダーに移動する</li><li>メッセージをユーザーの受信トレイに移動する</li><li>メッセージを削除</li></ul>|[ネットワークで配信された悪意のある電子メールを検索してOffice 365](investigate-malicious-email-that-was-delivered.md)|
 |電子メール メッセージまたはファイルが検疫された|<ul><li>電子メールまたはファイルを解放する</li><li> 電子メールまたはファイルを削除する</li></ul>|[検疫済みメッセージを管理者として管理する](manage-quarantined-messages-and-files.md)|
@@ -82,11 +82,10 @@ Threat Explorer を使用すると、セキュリティ運用チームは、ア�
 
 アクション センターでは、実行された修復アクションを確認し、アクションを元に戻す可能性があります。
 
-1. [ポータル] () Microsoft 365 Defender移動します <https://security.microsoft.com> 。
-2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
-3. [履歴] **タブを** 選択して、完了したアクションの一覧を表示します。
-4. アイテムを選択します。 そのフライアウト ウィンドウが開きます。
-5. フライアウト ウィンドウで、[元に戻す] を **選択します**。 (元に戻す操作のみ[元に戻 **す]** ボタンがあります)。
+1. [アクション センター Microsoft 365 Defender] ポータルで、[アクション センター] を選択して <https://security.microsoft.com> アクション センター **に移動します**。 アクション センターに直接移動するには、 を使用します <https://security.microsoft.com/action-center/> 。
+2. アクション センターで、[履歴] タブ **を選択** して、完了したアクションの一覧を表示します。
+3. アイテムを選択します。 そのフライアウト ウィンドウが開きます。
+4. フライアウト ウィンドウで、[元に戻す] を **選択します**。 (元に戻す操作のみ[元に戻 **す]** ボタンがあります)。
 
 ## <a name="see-also"></a>関連項目
 

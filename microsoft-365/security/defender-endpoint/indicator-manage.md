@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fbed4f51fcd0b2154c46a88dc3d408330238ec63
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 2f66106dd39b9cd1f590148addfdd2cae89748c6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217652"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938482"
 ---
 # <a name="manage-indicators"></a>インジケーターの管理
 
@@ -62,14 +62,14 @@ ms.locfileid: "61217652"
 
 次の表に、サポートされているパラメーターを示します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"IpAddress"、"DomainName" および "Url" です。 **必須**
 indicatorValue|String|Indicator エンティティ [の](ti-indicator.md) ID。 **必須**
 action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"AlertAndBlock"、"Allowed" です。 **必須**
 title|String|インジケーターアラートのタイトル。 **必須**
-説明|String| インジケーターの説明。 **必須**
-expirationTime|DateTimeOffset|次の形式の YYYYY-MM-DDTHH:MM:SS.0Z のインジケーターの有効期限。 **Optional**
+description|String| インジケーターの説明。 **必須**
+expirationTime|DateTimeOffset|次の形式の YYYYY-MM-DDTHH:MM:SS.0Z のインジケーターの有効期限。 有効期限が過ぎ、有効期限が秒 (SS) の値で発生した場合、インジケーターは削除されます。 **Optional**
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。 **Optional**
 recommendedActions|String|TI インジケーターアラート推奨アクション。 **Optional**
 rbacGroupNames|String|インジケーターが適用される RBAC グループ名のコンマ区切りのリスト。 **Optional**

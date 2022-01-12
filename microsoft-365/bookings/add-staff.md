@@ -8,18 +8,18 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: このページを使用して、スタッフ リストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。
-ms.openlocfilehash: b76b3e647af6f43f1c8ad7364fe24c895dc86b45
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 0c9d376889d99ba9d689e30f4444f305fab22ad9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553978"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933673"
 ---
 # <a name="add-staff-to-bookings"></a>Bookings にスタッフを追加する
 
 Bookings の [スタッフ] ページでは、スタッフリストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。 また、ここから各スタッフの勤務時間を設定できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 Bookings は、Microsoft 365の機能ですが、すべてのスタッフがアカウントを持つ必要Microsoft 365ではありません。 予約を受け取り、変更をスケジュールするには、すべてのスタッフが有効な電子メール アドレスを持っている必要があります。
 
@@ -68,7 +68,7 @@ Bookings は、Microsoft 365の機能ですが、すべてのスタッフがア�
     このボックスの選択を解除すると、スタッフに予約できる時間をさらに制限するカスタム時間を指定できます。 これは、スタッフメンバーが火曜日と水曜日にしかサイトにいない場合や、1 種類の予定に対して朝を、その他の種類の午後に使用する場合に役立ちます。
 
     > [!NOTE]
-    > スタッフ ページに追加した最初の 31 人のスタッフ メンバーだけが、サービスにスタッフ メンバーを割り当てるときに表示されます。
+    > スタッフ ページに追加した最初の 100 人のスタッフ メンバーは、サービスにスタッフ メンバーを割り当てると表示されます。
 
 ## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Bookings ユーザーを、Bookings のスタッフとして追加せずにスーパー ユーザーにする
 
@@ -102,7 +102,7 @@ Contoso のデケア予約メールボックスに Allie Bellew を追加する 
 2. 次に、次のコマンドを実行します。
 
     ```powershell
-    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    Add-RecipientPermission -Identity "daycare@contoso.com" -Trustee "Allie Bellew" -AccessRights SendAs -Confirm:$false
     ```
 
 **Allie Bellew は** 管理者アクセス権を持っていますが、Bookings では予約可能なスタッフとして表示されません。

@@ -14,15 +14,14 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
-- m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 981e1839627bab05797ab413745b45416db053c9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a7a9673591f4d77197390541a58169a58b04fe91
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168788"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872431"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Microsoft Defender for Endpoint をリングに展開する
 

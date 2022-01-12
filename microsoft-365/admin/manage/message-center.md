@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: メッセージ センターの概要Microsoft 365、新機能や変更された機能、その他の重要なアナウンスを追跡する役割について説明します。
-ms.openlocfilehash: 9d17f3c472fabbc6b157bad4c2a0151d07723777
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 9e7a1909d1786f0cb8f2066aa43a11ef3462571f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369974"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933721"
 ---
 # <a name="message-center"></a>メッセージ センター
 
@@ -256,7 +256,7 @@ ms.locfileid: "61369974"
 
 Microsoft 365 サービスの変更に関する実践的な情報の多くは、Microsoft 365 メッセージ センターに届きます。 各タスクのどの変更がいつ、誰によって実行されるかを、完了まで追跡するのは難しい場合があります。 また、何かをメモして、後で確認するためにタグを付けておきたいと思うかも知れません。 これらのすべては、Microsoft 365 管理センターから Microsoft Planner にメッセージを同期することで行えます。 詳細については、「[Planner でメッセージ センターのタスクを追跡する](/office365/planner/track-message-center-tasks-planner)」をご覧ください。
 
-メッセージ センターの概要については、「[Microsoft 365 のメッセージ センター](message-center.md)」を参照してください。 また、メッセージ センターの投稿の機械翻訳を有効にするために言語設定を設定する方法については、「[メッセージ センターの投稿の言語の翻訳を有効にする](language-translation-for-message-center-posts.md)」を参照してください。 別の方法をプログラミングして、サービス正常性の情報およびメッセージ センター通信をリアルタイムで取得する場合は、「[Microsoft 365 サービス通信 API の概要](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15))」を参照してください。
+メッセージ センターの概要については、「[Microsoft 365 のメッセージ センター](message-center.md)」を参照してください。 また、メッセージ センターの投稿の機械翻訳を有効にするために言語設定を設定する方法については、「[メッセージ センターの投稿の言語の翻訳を有効にする](language-translation-for-message-center-posts.md)」を参照してください。 リアルタイムのサービス正常性情報とメッセージ センター通信を取得する別の方法をプログラムする場合は、「Microsoft Graph でのサービス通信 API の操作」[を参照してください](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta)。
 
 ## <a name="unsubscribe-from-message-center-emails"></a>メッセージ センターのメール登録を解除する
 

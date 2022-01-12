@@ -16,15 +16,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、偽装の分析情報がどのように機能するのかについて説明します。 電子メール認証チェック (SPF、DKIM、DMARC) に合格しないドメインから組織に電子メールを正当に送信している送信者をすばやく特定できます。
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a7125646b14df3aa1b36dd0324184f41a8e0993
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0d9d8ee89aaa551c5fecf7c38fe0dbba97ed7fc8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169685"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939803"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Defender for Office 365
 
@@ -50,7 +51,7 @@ Microsoft 365 Defender ポータルの偽装インサイトを使用して、偽
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [フィッシング対策] ページで偽装の分析情報に直接 **移動** するには、 を使用します <https://security.microsoft.com/antiphishing> 。 偽装インサイト ページに直接 **移動するには、** を使用します <https://security.microsoft.com/impersonationinsight> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。 偽装インサイト ページに直接 **移動するには、** を使用します <https://security.microsoft.com/impersonationinsight> 。
 
 - この記事の手順を実行するには、Microsoft 365 Defenderポータルでアクセス許可を割り当てる必要があります。
   - **組織の管理**
@@ -66,7 +67,7 @@ Microsoft 365 Defender ポータルの偽装インサイトを使用して、偽
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>偽装の分析情報をポータルで開Microsoft 365 Defenderする
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー]セクション&[&脅威ポリシーのフィッシング対策] に \>  \>  \> **移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページでは** 、偽装の分析情報は次のように表示されます。
 

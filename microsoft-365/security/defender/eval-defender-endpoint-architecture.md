@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9330a312bb00ca72e7a3fbc5e2e80f1521927b3f
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 32c40c61675ed5291093b88a6fd834bc92fcad87
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111065"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933229"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Microsoft Defender for Endpoint アーキテクチャの要件と主な概念を確認する
 
@@ -44,7 +42,7 @@ Microsoft Defender for Endpoint を有効にする前に、アーキテクチャ
 
 ![Defender 評価環境に Microsoft Defender を追加Office手順を実行します。](../../media/defender/m365-defender-endpoint-architecture.png)
 
-次の表に、図を示します。
+次の表で、図について説明します。
 
 コールアウト | 説明
 :---|:---|

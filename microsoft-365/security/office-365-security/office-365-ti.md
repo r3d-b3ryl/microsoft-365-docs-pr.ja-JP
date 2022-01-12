@@ -18,16 +18,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: Microsoft Defender for Office 365プランの脅威調査と対応機能について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9056f1e63910ace9dfe525c45e3e549d225b2d85
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: e14cda205405b90a73689bde59fcccf22095f2df
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371162"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933829"
 ---
 # <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
@@ -39,16 +38,16 @@ ms.locfileid: "61371162"
 
 [Microsoft Defender](defender-for-office-365.md) for Office 365の脅威調査と対応機能は、セキュリティ アナリストと管理者が、次の方法で組織のMicrosoft 365を保護するのに役立ちます。
 
-- サイバー攻撃の特定、監視、および理解を容易に行う
-- オンライン、オンライン、オンライン、Exchange Online、SharePointの脅威に迅速OneDrive for Business対処Microsoft Teams
-- セキュリティ操作が組織に対するサイバー攻撃を防ぐのに役立つ洞察と知識を提供する
-- 電子メール[ベースの重大な脅威に対するOffice 365](automated-investigation-response-office.md)の自動調査と対応を採用する
+- サイバー攻撃の特定、監視、理解を容易に行います。
+- オンライン、オンライン、Exchange Online、SharePoint、およびOneDrive for BusinessでMicrosoft Teams。
+- セキュリティ操作が組織に対するサイバー攻撃を防ぐのに役立つ洞察と知識を提供します。
+- 電子メール[ベースの重大な脅威に](automated-investigation-response-office.md)対Office 365自動調査と対応を採用します。
 
 脅威の調査と対応機能は、脅威と関連する対応アクションに関する分析情報を提供します。これは、Microsoft 365 Defenderポータルで利用できます。 これらの分析情報は、組織のセキュリティ チームが電子メールまたはファイル ベースの攻撃からユーザーを保護するのに役立ちます。 この機能は、信号を監視し、ユーザーアクティビティ、認証、電子メール、侵害された PC、セキュリティ インシデントなど、複数のソースからのデータを収集するのに役立ちます。 ビジネス上の意思決定者とセキュリティ運用チームは、この情報を使用して、組織に対する脅威を理解し、対応し、知的財産を保護することができます。
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>脅威の調査と対応ツールについて知る
 
-脅威の調査と対応機能は、Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>を含むツールと応答ワークフローのセットとして、Microsoft 365 Defender ポータルに表示されます。
+Microsoft 365 Defenderポータルの脅威の調査と対応機能は、次のようなツールと応答ワークフローの <https://security.microsoft.com> セットです。
 
 - [Explorer](#explorer)
 - [インシデント](#incidents)
@@ -61,7 +60,7 @@ ms.locfileid: "61371162"
 
 ![脅威エクスプローラー。](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
 
-このレポートを表示して使用するには、Microsoft 365 Defenderポータルで、[電子メール] &**に移動**  >  **します**。
+このレポートを [ポータル] の [Microsoft 365 Defenderで表示および使用するには、[電子メール] & <https://security.microsoft.com> **に移動** \> **します**。 または、エクスプローラー ページに直接移動するには、 **を** 使用します <https://security.microsoft.com/threatexplorer> 。
 
 ### <a name="incidents"></a>インシデント
 
@@ -69,7 +68,7 @@ ms.locfileid: "61371162"
 
 ![現在の脅威インシデントの一覧 (Office 365)。](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-組織の現在のインシデントの一覧を表示するには、Microsoft 365 Defenderポータルで、[インシデント] &**通知します**  >  。
+組織の現在のインシデントの一覧を [Microsoft 365 Defender] の [インシデント] に移動し、[インシデント& <https://security.microsoft.com> **通知** \> **します**。 または、[インシデント] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/incidents> 。
 
 ![[セキュリティ 管理] コンプライアンス &で、[脅威管理のレビュー] を \> 選択します。](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
@@ -77,7 +76,7 @@ ms.locfileid: "61371162"
 
 攻撃シミュレーション トレーニングを使用して、組織内で現実的なサイバー攻撃を設定して実行し、実際のサイバー攻撃がビジネスに影響を与える前に脆弱なユーザーを特定します。 詳細については、「フィッシング攻撃 [をシミュレートする」を参照してください](attack-simulation-training.md)。
 
-この機能を Microsoft 365 Defenderポータルで表示および使用するには、「メール &**攻撃シミュレーション トレーニング**」  >  **に移動します**。
+この機能を Microsoft 365 Defenderポータルで表示および使用するには、「メール & <https://security.microsoft.com> **攻撃シミュレーション トレーニング**」  >  **を参照してください**。 または、[攻撃シミュレーション] トレーニング ページに直接 **移動するには、** を使用します <https://security.microsoft.com/attacksimulator?viewid=overview> 。
 
 ### <a name="automated-investigation-and-response"></a>自動調査および対応
 

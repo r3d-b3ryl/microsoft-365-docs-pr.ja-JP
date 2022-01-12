@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex のフレーズ リスト、正規表現、および類似性の説明の種類についてご覧ください。
-ms.openlocfilehash: 4f155b4a7e6aef9c12b97f56e414de9fcda88536
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 71c7379b3a9fcd71b996da5eefd18b6aaaef5016
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152828"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872539"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の説明の種類
 
@@ -211,6 +211,17 @@ Redmond, WA 98034<br>
    ![ユーザー設定の範囲。](../media/content-understanding/custom-file.png)
 
     ビューアでは、フェーズが表示される場所を含めるように選択ボックスを手動で調整できます。 この設定では、**[開始]** と **[終了]** の位置を選択する必要があります。 これらの値は、ドキュメントの先頭のトークンの数を表します。 これらの値は手動で入力できますが、ビューアーの選択ボックスを手動で調整する方が簡単です。
+    
+## <a name="considerations-when-configuring-explanations"></a>説明を構成する際の考慮事項
+分類子をトレーニングする場合は、予測可能な結果を生み出すいくつかのことを念頭に置いておきます。
+
+- トレーニングするドキュメントが多い場合は、分類子の精度が高くなされます。  可能な場合は、5 つ以上の優れたドキュメントを使用し、1 つ以上の不良ドキュメントを使用します。  操作しているライブラリに複数の異なるドキュメントの種類がある場合、各種類のいくつかは予測可能な結果につながる。
+- ドキュメントのラベル付けは、トレーニング プロセスにおいて重要な役割を果たします。  これらは、モデルのトレーニングに説明と共に使用されます。  分類子に多くのコンテンツを含むドキュメントを含む分類子をトレーニングすると、いくつかの異常が発生する場合があります。  説明はドキュメント内の何にも一致しない場合がありますが、"良い" ドキュメントとしてラベル付けされたので、トレーニング中に一致する可能性があります。
+- 説明を作成するときに、ラベルと組み合わせて OR ロジックを使用して、それが一致かどうかを判断します。  AND ロジックを使用する正規表現の方が予測可能な場合があります。  実際のドキュメントでトレーニングとして使用する正規表現の例を次に示します。  赤で強調表示されているテキストは、探している語句です。
+
+    <pre>(?=.*network provider)(?=.*participating providers).*</pre>
+    
+- ラベルと説明は一緒に機能し、モデルのトレーニングに使用されます。  これは、構成された各変数に適用される、結合されていない正確な重みまたは予測が可能な一連のルールではありません。  トレーニングで使用されるドキュメントのバリエーションが多い場合、モデルの精度が向上します。
 
 ### <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: ジョブを管理Advanced eDiscovery
+title: Advanced eDiscovery でジョブを管理する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Advanced eDiscoveryジョブを使用すると、さまざまなタスクの実行に関連する長時間実行されるプロセスのAdvanced eDiscoveryできます。
-ms.openlocfilehash: d5b2facdead3be1369cd261392117fc33fa1a4fb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6f246202ac371500b7fe16204b34bc00ba8ee9a7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192201"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871467"
 ---
-# <a name="manage-jobs-in-advanced-ediscovery"></a>ジョブを管理Advanced eDiscovery
+# <a name="manage-jobs-in-advanced-ediscovery"></a>Advanced eDiscovery でジョブを管理する
 
 次に、ケースの [ジョブ] タブで追跡されるジョブ (通常は長時間実行されるプロセス)の一覧を示Advanced eDiscovery。 これらのジョブは、ケースを使用および管理するときにユーザーの操作によってトリガーされます。
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: 8260903ba8031bae76f420a7b010ed73df1c833d
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: d3cf5259aeb070175d5d2a4a95154974c6cd4d56
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560386"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867831"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>エンドポイント用 Defender の Microsoft Defender for Cloud Apps の概要
 
@@ -52,7 +52,7 @@ Defender for Cloud Apps discovery は、エンタープライズ ファイアウ
 
 - すべての場所で利用できる - ネットワーク アクティビティはエンドポイントから直接収集されます。企業ネットワークのオンとオフのデバイスは、エンタープライズ ファイアウォールまたはプロキシ サーバー経由でルーティングされるトラフィックに依存しなくなったので、デバイスがオンまたはオフの場所で利用できます。
 
-- 構成は不要です。クラウド トラフィック ログを Defender for Cloud Apps に転送するには、ファイアウォールとプロキシ サーバーの構成が必要です。 Defender for Endpoint と Defender for Cloud Apps の統合により、構成は必要ありません。 設定でオンにMicrosoft Defender セキュリティ センターし、行くのが良いです。\
+- 構成は不要です。クラウド トラフィック ログを Defender for Cloud Apps に転送するには、ファイアウォールとプロキシ サーバーの構成が必要です。 Defender for Endpoint と Defender for Cloud Apps の統合により、構成は必要ありません。 設定でオンにMicrosoft 365 Defenderし、行くのが良いです。
 
 - デバイス コンテキスト - クラウド トラフィック ログにデバイス コンテキストが不足しています。 Defender for Endpoint ネットワーク アクティビティは、デバイス コンテキスト (クラウド アプリにアクセスしたデバイス) で報告されます。そのため、ネットワーク アクティビティが行われた場所 (デバイス) と、ネットワーク アクティビティを実行したユーザー (ユーザー) を正確に理解できます。
 

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3a6f6d9d88abec09fceb88fe2523df6a89750fb7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3d4f383730463325cf7bd6042409caabafa16194
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166652"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61884085"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -1203,7 +1203,7 @@ UAC </dt>
 クライアントMicrosoft Defender ウイルス対策、重大な問題が原因でこのエラーが発生しました。 エンドポイントが保護されていない可能性があります。 エラーの説明を確認し、以下の関連する <b>ユーザー アクションの手順に</b> 従います。
 <table>
 <tr>
-<th>アクション</th>
+<th>Action</th>
 <th>ユーザー操作</th>
 </tr>
 <tr>
@@ -1284,6 +1284,60 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 <td >
 <div class="alert"><b>注: このイベントは、次のポリシーが設定されている場合にのみログに <b>記録されます。ThreatFileHashLogging は署名なしです</b>。</div>
 <div> </div>
+</td>
+</tr>
+<tr>
+<th colspan="2">イベント ID: 1127</th>
+</tr>
+<tr><td>
+記号名:
+</td>
+<td >
+<b>MALWAREPROTECTION_FOLDER_GUARD_SECTOR_BLOCK</b>
+</td>
+</tr>
+<tr>
+<td>
+メッセージ:
+</td>
+<td >
+<b>フォルダー アクセスの制御 (CFA) は、信頼されていないプロセスがメモリに変更を加えるのをブロックしました。 </b>
+</td>
+</tr>
+<tr>
+<td>
+説明:
+</td>
+<td >
+フォルダー アクセスの制御により、信頼されていないプロセスがディスク セクターを変更する可能性がブロックされています。
+<br/> イベント レコードの詳細については、以下を参照してください。
+<dl>
+<dt>EventID: &lt;EventID 、 例: &gt; 1127</dt>バージョン: バージョン 、 例
+<dt> &lt; : &gt; 0</dt>
+<dt>Level: Level 、 例: &lt; &gt; win:Warning</dt>
+<dt>TimeCreated: &lt; SystemTime &gt; 、</dt>イベントが作成された時間
+<dt>EventRecordID: &lt; EventRecordID &gt; 、</dt>イベント ログのイベントのインデックス番号 実行
+<dt>ProcessID: Execution &lt; ProcessID &gt; 、</dt>イベント チャネルを生成したプロセス チャネル: イベント チャネル
+<dt> &lt; &gt; (Microsoft- など)Windows-Windows Defender/運用</dt>コンピューター
+<dt> &lt; &gt; :</dt>コンピューター名 セキュリティ
+<dt> &lt; UserID: &gt; </dt>Security UserID 製品名: 製品名
+<dt> &lt; &gt; 、</dt>たとえば、Microsoft Defender ウイルス対策 製品バージョン
+<dt>: &lt; 製品 &gt; </dt>バージョン検出
+<dt>時間: &lt;検出時間 &gt; 、CFA が信頼されていない</dt>プロセスをブロックした時間
+<dt>User: Domain &lt; &gt; \& lt;ユーザー &gt; </dt>
+<dt>パス &lt; &gt; :</dt>デバイス名、変更プロセス名:プロセス パス
+<dt> &lt; &gt; 、CFA</dt>がデバイスまたはディスクへのアクセスをブロックした変更用にアクセスしたデバイスまたはディスクの名前 セキュリティ インテリジェンス バージョン
+<dt>: &lt; &gt; </dt>セキュリティ インテリジェンス バージョン エンジンバージョン
+<dt>: マルウェア対策エンジン &lt; バージョン &gt; </dt>
+</dl>
+</td>
+</tr>
+<tr>
+<td>
+ユーザー アクション:
+</td>
+<td >
+ユーザーは、Powershell または Windows セキュリティ<i></i>センターを使用して、CFA の [許可されたプロセス] リストにブロックされたプロセスをWindows セキュリティできます。
 </td>
 </tr>
 <tr>
@@ -3113,7 +3167,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 </tr>
 </table>
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [保護に関するMicrosoft Defender ウイルス対策レポート](report-monitor-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

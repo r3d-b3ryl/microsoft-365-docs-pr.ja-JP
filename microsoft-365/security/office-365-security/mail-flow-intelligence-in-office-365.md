@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
-ms.custom: admindeeplinkEXCHANGE
+ms.custom: ''
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、コネクタ (メール フロー インテリジェンスとも呼ばれる) を使用してメッセージ配信に関連付けられているエラー コードについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0ebc48a39294bb3487d157f76000f545a00f27bb
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 57d8a9ec9bb40961ecf0b53f52198bde00e8bc03
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423793"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933889"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP でのメール フロー インテリジェンス
 
@@ -75,9 +75,9 @@ Microsoft 365コネクタを使用してメッセージを配信できない場�
 
 - オンプレミス環境に配信するメッセージがこれ以上ない場合は、アラートで[今すぐ修正] をクリックして、無効な受信者Microsoft 365メッセージを直ちに拒否できます。 これにより、無効な受信者に対する組織のクォータを超えるリスクが軽減され、通常のメッセージ配信に影響を与える可能性があります。 または、次の手順を使用して手動で問題を解決できます。
 
-  - 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange、</a>オンプレミスの電子メール環境にメールを配信するコネクタを無効Microsoft 365削除します。
+  - 管理センター Exchange、メールを配信するコネクタを無効または削除Microsoft 365オンプレミスの電子メール環境に送信します。
 
-    1. EAC で、[メール フロー コネクタ **]** \> **に移動します**。
+    1. EAC の [メール フロー コネクタ] <https://admin.exchange.microsoft.com>  \> **に移動します**。 [コネクタ] ページに直接 **移動するには** 、 を使用します <https://admin.exchange.microsoft.com/#/connectors> 。
 
     2. [From] 値を使用してコネクタ **Office 365[To** **value** Your organization's email **server]** を選択し、次のいずれかの手順を実行します。
        - [削除] アイコンをクリックして **コネクタを** ![ 削除します。](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)

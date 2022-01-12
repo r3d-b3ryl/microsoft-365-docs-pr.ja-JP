@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b49e6c98970012989bfa22f2e3c419796a47a700
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 1636d7647a6c48b44608e991e1b8411b05367fb6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372470"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867625"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
@@ -30,6 +30,16 @@ Microsoft Teamsをリードする Microsoft 365 での生産性サービスの�
 | アイテム | 説明 |
 |:-----|:-----|
 |[![Teamsアーキテクチャのポスターを参照してください。](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2021 年 1 月更新   |マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <br/> <br/>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
+
+## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>Contoso 社のケース スタディMicrosoft 365との企業間通信
+従業員のエンゲージメントは、どの組織でも職場の満足度、保持、生産性に大きく貢献します。 ユーザー Microsoft 365、ユーザーとコミュニケーションを取り合う複数の方法があります。 
+
+使用するメソッド (またはメソッドの組み合わせ) と使用する方法を知る方法は、対象ユーザーと組織のコミュニケーション文化によって異なります。 
+
+| アイテム | 説明 |
+|:-----|:-----|
+|[![Teamsアーキテクチャのポスターを参照してください。](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>2022 年 1 月更新   |このポスターは、Contoso 社が一般的なコミュニケーション シナリオで従業員に情報を提供し、関与する方法を示しています。 Contoso では、新しいサービスである Viva Connections など、さまざまな M365 アプリを使用しています。<br/><br/>**関連するソリューション ガイド** <br/> <ul><li>[組織のコミュニケーション: ガイダンス、メソッド、および製品](/sharepoint/corporate-communications-overview)|
+
 
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 のグループ

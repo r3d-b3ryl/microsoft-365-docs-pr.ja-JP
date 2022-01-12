@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) 組織で使用できるフィッシング対策ポリシーを作成、変更、および削除する方法について説明します(Exchange Online メールボックスを使用する場合と使用しない場合)。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b80a512c4428d897b8ef16c673fc47700b017e40
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 7abef6ea5872877981812bc2ad06b125147f73c6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520958"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939827"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -61,7 +61,7 @@ PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理し
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> で Microsoft 365 Defender ポータルを開きます。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -88,7 +88,7 @@ PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理し
 
 Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリシーを作成すると、両方に同じ名前を使用して、フィッシング対策ルールと関連付けられたフィッシング対策ポリシーが同時に作成されます。
 
-1. [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページで、[作成** ] アイコン ![ をクリックします。](../../media/m365-cc-sc-create-icon.png) **Create**。
 
@@ -148,7 +148,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>フィッシング対策Microsoft 365 Defenderを表示するには、このポータルを使用します。
 
-1. [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページで** 、ポリシーの一覧に次のプロパティが表示されます。
 
@@ -161,7 +161,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>フィッシング対策Microsoft 365 Defenderポータルを使用して変更する
 
-1. [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページで** 、名前をクリックして一覧からポリシーを選択します。
 
@@ -175,7 +175,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 既定のフィッシング対策ポリシーを無効にできない。
 
-1. [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページで** 、名前をクリックしてリストからカスタム ポリシーを選択します。
 
@@ -200,7 +200,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 - このポータルMicrosoft 365 Defender、フィッシング対策ポリシーの優先度を変更できるのは、作成後のみです。 PowerShell では、フィッシング対策ルールを作成するときに既定の優先度を上書きできます (既存のルールの優先度に影響を与える可能性があります)。
 - フィッシング対策ポリシーは、表示順に処理されます (最初のポリシーの **優先度** は 0 です)。 既定のフィッシング対策ポリシーの優先度の値は **[最低**] で、変更は行えなくないます。
 
-1. [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページで** 、名前をクリックしてリストからカスタム ポリシーを選択します。
 
@@ -217,7 +217,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 Microsoft 365 Defenderポータルを使用してカスタムフィッシング対策ポリシーを削除すると、フィッシング対策ルールと対応するフィッシング対策ポリシーの両方が削除されます。 既定のフィッシング対策ポリシーを削除できない。
 
-1. [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 2. [フィッシング **対策] ページで** 、名前をクリックしてリストからカスタム ポリシーを選択します。
 
@@ -469,7 +469,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
 
 EOP でフィッシング対策ポリシーが正常に構成されたことを確認するには、次の手順を実行します。
 
-- [ポリシー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">] Microsoft 365 Defenderで</a>、[ポリシー]セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」 \>  \>  \> **に移動** します。 ポリシー、その状態の値、および **優先度** の値の一覧を **確認** します。 詳細を表示するには、名前をクリックして表示されるフライアウトの詳細を表示して、一覧からポリシーを選択します。
+- [フィッシング **対策] ページ** の [Microsoft 365 Defender] で、ポリシーの一覧、その状態の値、および優先度 <https://security.microsoft.com/antiphishing> の値を **確認** します。  詳細を表示するには、名前をクリックして表示されるフライアウトの詳細を表示して、一覧からポリシーを選択します。
 
 - PowerShell Exchange Online、ポリシーまたはルールの名前に置き換え、次のコマンドを実行 \<Name\> し、設定を確認します。
 

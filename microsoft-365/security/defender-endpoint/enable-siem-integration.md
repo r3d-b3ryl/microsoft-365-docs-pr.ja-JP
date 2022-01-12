@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 881f6d3691add12af8c8f4e808417bf4cef6e5ea
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 3faecae3965cfc51104a707eaa82f375ba169f84
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300180"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935635"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender で SIEM 統合を有効にする
 
@@ -30,6 +30,9 @@ ms.locfileid: "61300180"
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+
+> [!IMPORTANT]
+> Microsoft Defender for Endpoint SIEM REST API は、2022 年 3 月 1 日に、Microsoft Defender for Endpoint Alert API と、アラートの最新の状態、アラートに関連する証拠エンティティ、アナリストが入力したコメントなど、より豊富なメタデータを提供する Microsoft 365 Defender インシデント API として廃止され、割り当てられた状態の更新をサポートしています。 分類、および決定フィールドをプログラムで指定します。 **すぐに有効になる、SIEM REST API への新しい顧客オンボーディングはサポートされません。**
 
 セキュリティ情報とイベント管理 (SIEM) の統合を有効にして、セキュリティ情報から検出を取得Microsoft 365 Defender。 SIEM ソリューションを使用するか、検出 REST API に直接接続して検出をプルします。
 

@@ -22,12 +22,12 @@ ms.custom:
 description: ゼロ時間自動削除 (ZAP) は、Exchange Online メールボックス内の配信されたメッセージを、スパム、フィッシング、または配信後にマルウェアが含まれていると検出された迷惑メール フォルダーまたは検疫にさかのぼって移動します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c2b6e8ce6d15ad652b87e6529f9fd3cb2b3878f7
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 0744193e2d999cd85096d4644438dd305bcdb3da
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556342"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934947"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>ゼロ時間自動削除 (ZAP) (Exchange Online
 

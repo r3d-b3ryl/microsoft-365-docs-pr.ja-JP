@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: aebb528dcbd438387cdfff59011711bf8ae40401
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 818619bef6a752088e1d260171f3d2c645efa842
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121165"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938074"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -51,14 +51,14 @@ ActiveSync クライアントをブロックする新しいポリシー Exchange
 
 |保護レベル|ポリシー|詳細情報|
 |---|---|---|
-|**開始点**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド Exchange Online割り当てにアプリを含める|
+|**開始点**|[サインインのリスクが *中*、または *高* のときに MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド Exchange Online割り当てにアプリを含める|
 ||[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|クラウド Exchange Online割り当てにアプリを含める|
-||[APP データ保護ポリシーの適用](identity-access-policies.md#apply-app-data-protection-policies)|アプリのOutlookに含まれている必要があります。 各プラットフォームのポリシーを必ず更新してください (iOS、Android、Windows)|
+||[アプリ データ保護ポリシーを適用する](identity-access-policies.md#apply-app-data-protection-policies)|アプリのOutlookに含まれている必要があります。 各プラットフォームのポリシーを必ず更新してください (iOS、Android、Windows)|
 ||[承認済みアプリと APP 保護を要求する](identity-access-policies.md#require-approved-apps-and-app-protection)|クラウド Exchange Onlineリストにアプリを含める|
 ||[ActiveSync クライアントのブロック](#block-activesync-clients)|この新しいポリシーを追加する|
-|**エンタープライズ**|[サインイン リスクが低い、中程度、または高い場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド Exchange Online割り当てにアプリを含める|
-||[準拠している PC とモバイル *デバイスを* 要求する](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウド Exchange Onlineリストにアプリを含める|
-|**特殊なセキュリティ**|[*常に* MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド Exchange Online割り当てにアプリを含める|
+|**エンタープライズ**|[サインインのリスクが *低*、*中*、または *高* のときに MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド Exchange Online割り当てにアプリを含める|
+||[準拠した PC *と* モバイル デバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウド Exchange Onlineリストにアプリを含める|
+|**特殊なセキュリティ**|[*常に* MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド Exchange Online割り当てにアプリを含める|
 |
 
 ## <a name="block-activesync-clients"></a>ActiveSync クライアントのブロック
@@ -111,9 +111,9 @@ Azure Information Protection のOffice 365 Message Encryption機能を活用す�
 
 ## <a name="next-steps"></a>次の手順
 
-![手順 4: クラウド アプリMicrosoft 365ポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![手順 4: Microsoft 365 クラウド アプリのポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
-次の条件付きアクセス ポリシーを構成します。
+次の条件付きアクセス ポリシーを構成する:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)

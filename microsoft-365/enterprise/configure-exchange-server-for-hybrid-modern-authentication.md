@@ -3,7 +3,7 @@ title: Exchange Server をオンプレミスで構成して、ハイブリッド
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 06/16/2020
+ms.date: 12/27/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: ハイブリッドモダン認証 (HMA) Exchange Serverを使用して、より安全なユーザー認証と承認を提供する、オンプレミスのユーザー認証を構成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5ddf30a3409c01e44fd731002cc97ef339ed9819
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: d0889008595717308695c1ad9c5d2a9f1766d1ea
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587370"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934491"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -36,9 +36,9 @@ ms.locfileid: "60587370"
 
 - ハイブリッドモダン認証 \> HMA
 
-- Exchangeオンプレミス \> EXCH
+- Exchangeオンプレミス \>EXCH
 
-- \>Exchange OnlineEXO
+- Exchange Online \> EXO
 
 また、この記事のグラフィックに、灰色で表示される要素が *HMA* 固有の構成に含まれていないという'灰色表示' または "淡色" のオブジェクトがある場合。
 
@@ -97,9 +97,9 @@ Get-OutlookAnywhere | FL server,*hostname*
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
    ```
 
-   このコマンドの出力には https://  *autodiscover.yourdomain.com*  と https:// mail.yourdomain.com  *URL* を含める必要がありますが、主に 000000002-00000-0ff1-ce000-0000-00000000000/で始まる SPN で構成されます。このコマンドの出力をメモします (および後で比較する場合はスクリーンショットを参照してください)。 不足している https:// の URL が存在する場合は、これらの特定のレコードをこの一覧に追加する必要があります。
+   このコマンドの出力は、URL を含める必要がありますが、主にで始まる SPN で構成されるこのコマンドの出力に注意してください (および後で比較する場合はスクリーンショットを `https://*autodiscover.yourdomain.com*` `https://*mail.yourdomain.com*` 参照してください `00000002-0000-0ff1-ce00-000000000000/` )。 オンプレミスの URL が見つからない場合は、これらの特定のレコード `https://` をこの一覧に追加する必要があります。
 
-3. この一覧に内部および外部の MAPI/HTTP、EWS、ActiveSync、OAB、および自動検出レコードが表示されていない場合は、以下のコマンドを使用して追加する必要があります (URL の例は ' と ' ' ですが、サンプル URL を独自の URL に置き換えます)。 `mail.corp.contoso.com` `owa.contoso.com` 
+3. この一覧に内部および外部の MAPI/HTTP、EWS、ActiveSync、OAB、および自動検出レコードが表示されていない場合は、以下のコマンドを使用して追加する必要があります (URL の例は次のとおりですが、URL の例を独自の URL に置き換えます)。 `mail.corp.contoso.com` `owa.contoso.com` 
 
    ```powershell
    $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
@@ -108,7 +108,7 @@ Get-OutlookAnywhere | FL server,*hostname*
    Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
    ```
 
-4. 手順 2 から Get-MsolServicePrincipalコマンドを実行し、出力を確認して、新しいレコードが追加されたのを確認します。 前のリスト/スクリーンショットと SPN の新しいリストを比較します。 レコードの新しいリストのスクリーンショットを撮る場合があります。 成功した場合は、一覧に 2 つの新しい URL が表示されます。 この例では、SPN の一覧に特定の URL と  `https://mail.corp.contoso.com`  `https://owa.contoso.com` .
+4. 手順 2 からコマンドを再度実行し、出力を確認して、新しいレコードが追加 `Get-MsolServicePrincipal` されたのを確認します。 前のリスト/スクリーンショットと SPN の新しいリストを比較します。 レコードの新しいリストのスクリーンショットを撮る場合があります。 成功した場合は、一覧に 2 つの新しい URL が表示されます。 この例では、SPN の一覧に特定の URL と `https://mail.corp.contoso.com` `https://owa.contoso.com` .
 
 ## <a name="verify-virtual-directories-are-properly-configured"></a>仮想ディレクトリが適切に構成されていることを確認する
 
@@ -147,7 +147,7 @@ Get-AuthServer | where {$_.Name -like "EvoSts*"} | ft name,enabled
 出力には、GUID を持つ Name EvoSts の AuthServer が表示され、'Enabled' 状態は True である必要があります。 これが表示されていない場合は、最新バージョンのハイブリッド構成ウィザードをダウンロードして実行する必要があります。
 
 > [!NOTE]
-> EXCH が複数のテナントとハイブリッドになっている場合、出力には、EXCH とハイブリッドの各テナントの Name EvoSts - {GUID} の 1 つの AuthServer が表示され、これらすべての AuthServer オブジェクトに対して 'Enabled' 状態が True である必要があります。
+> EXCH が複数のテナントとハイブリッドになっている場合、出力に EXCH とのハイブリッドの各テナントの Name の 1 つの AuthServer が表示され、これらの `EvoSts - {GUID}` AuthServer オブジェクトのすべてで Enabled 状態がTrue である必要があります。
 
 > [!IMPORTANT]
 > 環境で 2010 Exchangeを実行している場合、EvoSTS 認証プロバイダーは作成されません。
@@ -177,19 +177,21 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 > [!NOTE]
 > EXCH が複数のテナントとハイブリッドである場合、EXCH には複数の AuthServer オブジェクトが存在し、各テナントに対応するドメインがあります。  **IsDefaultAuthorizationEndpoint** フラグは、これらの AuthServer オブジェクトの 1 つについて true に設定する必要があります **(IsDefaultAuthorizationEndpoint** コマンドレットを使用)。 すべての Authserver オブジェクトに対してこのフラグを true に設定することはできません。これらの AuthServer オブジェクトの **IsDefaultAuthorizationEndpoint** フラグの 1 つが true に設定されている場合でも、HMA は有効になります。
+> 
+> **DomainName パラメーターの** 場合は、テナント ドメインの値を使用します。これは、通常はフォームです `contoso.onmicrosoft.com` 。
 
 ## <a name="verify"></a>確認する
 
 HMA を有効にした後、クライアントの次のログインでは新しい認証フローが使用されます。 HMA をオンにしてもクライアントの再認証はトリガーされず、Exchange が新しい設定を取得するには時間がかかる場合があります。
 
-また、ctrl キーを押しながら Outlook クライアントのアイコン (Windows 通知トレイ) を右クリックし、[接続状態] をクリックします。 OAuth で使用されるベアラー トークンを表す 'Bearer'の 'Authn' 型に対してクライアントの SMTP アドレス \* を探します。
+また、ctrl キーを押しながら Outlook クライアントのアイコン (Windows 通知トレイ) を右クリックし、[接続状態] をクリックします。 OAuth で使用されるベアラー トークンを表す **Authn** 型に対してクライアントの SMTP アドレス `Bearer\*` を探します。
 
 > [!NOTE]
 > HMA を使用してSkype for Business構成する必要がありますか? 2 つの記事が必要です。1 つは、サポートされているトポロジを一覧表示する記事と、構成を実行する方法[を示す記事です](configure-skype-for-business-for-hybrid-modern-authentication.md)。 [](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)
 
 ## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>iOS および Android 用の Outlook でのハイブリッド先進認証の使用
 
-TCP 443 のサーバーをExchangeオンプレミスのお客様は、次の IP 範囲からのネットワーク トラフィックを許可してください。
+オンプレミスのお客様が TCP 443 の Exchangeサーバーを使用している場合は、次の IP 範囲からのネットワーク トラフィックを許可します。
 
 ```console
 52.125.128.0/20

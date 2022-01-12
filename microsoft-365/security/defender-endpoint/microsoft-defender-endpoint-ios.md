@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4e7d27e892b79c1b4b7d5d95f3f951490b6aabf7
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: cbea3514d9f2f12a8adce0f74ca0203dcc4195ae
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560254"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936200"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
 
@@ -35,7 +35,7 @@ ms.locfileid: "61560254"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-**Microsoft Defender for Endpoint on iOS** では、Web サイト、電子メール、アプリからのフィッシングや安全でないネットワーク接続に対する保護が提供されます。 すべてのアラートは、ウィンドウ内の 1 つのウィンドウからMicrosoft Defender セキュリティ センター。 このポータルにより、セキュリティ チームは、他のプラットフォームと共に、iOS デバイス上の脅威の一元的なビューを提供します。
+**Microsoft Defender for Endpoint on iOS** では、Web サイト、電子メール、アプリからのフィッシングや安全でないネットワーク接続に対する保護が提供されます。 すべてのアラートは、ポータルの単一のウィンドウからMicrosoft 365 Defenderされます。 このポータルにより、セキュリティ チームは、他のプラットフォームと共に、iOS デバイス上の脅威の一元的なビューを提供します。
 
 > [!CAUTION]
 > iOS で Defender for Endpoint と共に他のサード パーティ製のエンドポイント保護製品を実行すると、パフォーマンスの問題や予期しないシステム エラーが発生する可能性があります。
@@ -61,7 +61,7 @@ ms.locfileid: "61560254"
 
 **管理者向け**
 
-- ポータルへのアクセスMicrosoft Defender セキュリティ センターします。
+- ポータルへのアクセスMicrosoft 365 Defenderします。
 
 - 管理センター[へのMicrosoft エンドポイント マネージャー、次の](https://go.microsoft.com/fwlink/?linkid=2109431)場所にアクセスします。
    - 組織の登録済みユーザー グループにアプリを展開します。
@@ -76,7 +76,7 @@ ms.locfileid: "61560254"
 
 - iOS 12.0 以上を実行している iOS デバイス。 iPad もサポートされています。
 
-- デバイスは、アプリに登録するか、Intune ポータル サイト[を](https://apps.apple.com/us/app/intune-company-portal/id719171358)介して Azure Active Directoryに[Microsoft Authenticator。](https://apps.apple.com/app/microsoft-authenticator/id983156458)
+- デバイスは、アプリに登録されているIntune ポータル サイト、または同じアカウントAzure Active Directory Microsoft Authenticatorに登録されます。 [](https://apps.apple.com/us/app/intune-company-portal/id719171358) [](https://apps.apple.com/app/microsoft-authenticator/id983156458)
 
 ## <a name="installation-instructions"></a>インストール手順
 

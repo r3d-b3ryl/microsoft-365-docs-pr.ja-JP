@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 73252b604c252fea73c5269597bc68fe7a2bf6e9
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 3453645f9c28149bedf617e21f28c89d828028d6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507220"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937378"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business のセットアップと構成 (プレビュー)
 
@@ -31,6 +31,11 @@ ms.locfileid: "61507220"
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
 Microsoft Defender for Business (プレビュー) は、特に中小規模ビジネス向けに設計された、合理化されたセットアップと構成エクスペリエンスを提供します。 この記事をガイドとして使用します。
+
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+>
 
 ## <a name="the-setup-and-configuration-process"></a>セットアップと構成プロセス
 

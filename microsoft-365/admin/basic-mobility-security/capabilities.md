@@ -19,38 +19,20 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
-ms.openlocfilehash: b5c2abf9fe261521d5b22a98dc56abf4885693e6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 73df4cd8aa4eb8dea8ef7c96304e48caf1f15f8a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153944"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61908011"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
 Basic Mobility and Security は、組織内のライセンスを持つ Microsoft 365 ユーザーが使用する iPhone、iPad、Android、Windows Phone など、モバイル デバイスのセキュリティ保護と管理に役立ちます。 モバイル デバイス管理ポリシーを作成し、サポートされているモバイル デバイスとアプリの組織の Microsoft 365 メールやドキュメントへのアクセスを制御するのに役立つ設定を使用できます。 デバイスの紛失または盗難時には、リモートからデバイスをワイプして、組織の機密情報を削除できます。
 
-## <a name="supported-devices"></a>サポート対象のデバイス
+## <a name="supported-operating-systems"></a>サポートされているオペレーティング システム 
 
-Basic Mobility and Security を使用すると、次のデバイスをセキュリティで保護および管理できます。
-
-- iOS 11.0 以降のバージョン
-
-- Android 5.0 以降のバージョン<sup>3</sup>
-
-- Windows 8.1<sup>1</sup>
-
-- Windows 8.1RT<sup>1</sup>
-
-- Windows 10<sup>2</sup>
-
-- Windows 10 Mobile<sup>2</sup>
-
-<sup>1</sup>RT デバイスWindows 8.1アクセス制御は、1 つの RT デバイスExchange ActiveSync。
-
-<sup>2</sup>ユーザーのアクセス制御Windows 10サブスクリプションが必要で、Azure AD Premiumデバイスをそのサブスクリプションに参加するAzure Active Directory。
-
-<sup>3</sup>2020 年 6 月以降、9 より後の Android バージョンでは、Samsung Knox デバイス以外のパスワード設定を管理できません。
+Basic Mobility and Security をMicrosoft Intuneデバイスでサポートされるオペレーティング システムについては、「オペレーティング システムガイド」の手順に従います。 詳細については、「Intune でサポート [されているオペレーティング システム」を参照してください](/mem/intune/fundamentals/supported-devices-browsers)。
 
 > [!NOTE]
 > 以前の OS バージョンで既に登録されているデバイスは引き続き機能しますが、機能は予告なしに変更される可能性があります。
@@ -64,7 +46,7 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 |**製品**|**iOS 10.0 以降**|**Android 5.0 以降**|
 |:-----|:-----|:-----|
 |**Exchange Exchange ActiveSync** バージョン 14.1 以降を使用する、組み込みの電子 Exchange ActiveSyncメールアプリとサードパーティ製アプリ (TouchDown など) が含まれています。 |メール |メール |
-|**Office**  と  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**電話とタブレットの場合**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **電話のみ:** <br/> Office Mobile |
+|**Office**   と  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**電話とタブレットの場合**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **電話のみ:** <br/> Office Mobile |
 
 > [!NOTE]
 >
@@ -189,7 +171,7 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 ## <a name="settings-supported-by-windows"></a>設定によってサポートWindows
 
-モバイル デバイスとして登録Windows 10デバイスを管理できます。 該当するポリシーが展開された後、Windows 10 デバイスを持つユーザーは、組み込みの電子メール アプリを初めて使用して Microsoft 365 メールにアクセスする際に、Basic Mobility and Security に登録する必要があります (Azure AD プレミアム サブスクリプションが必要です)。
+モバイル デバイスとして登録Windows 10デバイスを管理できます。 該当するポリシーが展開された後、Windows 10 デバイスを持つユーザーは、組み込みの電子メール アプリを初めて使用して Microsoft 365 電子メールにアクセスする際に、Basic Mobility and Security に登録する必要があります (Azure AD プレミアム サブスクリプションが必要です)。
 
 次の設定は、モバイル Windows 10登録されているデバイスでサポートされています。 これらの設定では、ユーザーがリソースにアクセスMicrosoft 365は使用されます。
 

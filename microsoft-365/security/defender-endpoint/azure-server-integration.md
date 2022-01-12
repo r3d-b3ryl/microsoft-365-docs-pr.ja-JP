@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4364855120524f7b6e993a3827a03a3bd5f79d96
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 8bf51b744e294e4bb2740b3e437305629eb23c2a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170546"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934251"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloudとの統合
 
@@ -41,7 +41,7 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud と統合し�
     > Microsoft Defender for server と Microsoft Defender for Endpoint の統合は[、Windows Server 2019 と Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするために拡張されました。
 
 - Windowsによって監視される Microsoft Defender for Cloud サーバーは、Defender for Endpoint - Microsoft Defender for Cloud でエンドポイント用 Defender テナントにシームレスに接続し、クライアントとサーバー間で 1 つのビューを提供します。  さらに、Defender for Endpoint アラートは Microsoft Defender for Cloud コンソールで利用できます。
-- サーバー調査 - Microsoft Defender for Cloud のお客様は、Microsoft Defender セキュリティ センターにアクセスして詳細な調査を実行し、潜在的な侵害の範囲を明らかにすることができます。
+- サーバー調査 - Microsoft Defender for Cloud のお客様は、Microsoft 365 Defender ポータルにアクセスして詳細な調査を実行し、潜在的な侵害の範囲を明らかにできます。
 
 > [!IMPORTANT]
 > - Microsoft Defender for Cloud を使用してサーバーを監視すると、Defender for Endpoint テナントが自動的に作成されます (米国のユーザーは米国、EU ではヨーロッパおよび英国のユーザー)。<br>
@@ -52,6 +52,6 @@ Defender for Endpoint によって収集されたデータは、プロビジョ�
 
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
 - [オンボード Windows Server 2012 R2、2016、SAC バージョン 1803、および 2019](configure-server-endpoints.md)

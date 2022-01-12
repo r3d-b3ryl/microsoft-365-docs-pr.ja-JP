@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: サイト内の履歴バージョンをAdvanced eDiscovery、ドキュメントに保存されているドキュメントのすべてのバージョンからコンテンツSharePoint収集OneDrive。
-ms.openlocfilehash: 8da7b390a982b9be0a4752e167399ad633377854
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 5ecbb9c9216482223ce756aed5742e25a3b851a1
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779074"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936656"
 ---
 # <a name="set-up-historical-versions-in-advanced-ediscovery-preview"></a>バージョン管理 (プレビュー) でAdvanced eDiscoveryバージョンを設定する
 
@@ -31,7 +31,7 @@ Advanced eDiscovery の履歴バージョン機能を使用すると、組織内
 
 電子情報開示管理者が組織の履歴バージョンを有効にしてから、特定の SharePoint サイトに対してアクティブ化すると、SharePoint コンテンツ プッシュ サービスは、アクティブ化されたサイト上のすべてのメジャー バージョンとマイナー バージョンのドキュメントをクロールし、それらのバージョンをインデックス作成用に送信します。 クロールとインデックス作成プロセスが完了すると、ドキュメントとそのバージョンを電子情報開示検索で使用できます。 特定のバージョンに (バージョン履歴で) アクセスできる限り、そのバージョンはコレクションの検索Advanced eDiscoveryできます。
 
-## <a name="set-up-historical-versions"></a>履歴バージョンの設定
+## <a name="set-up-historical-versions"></a>履歴バージョンを設定する
 
 Advanced eDiscovery で履歴バージョンを有効にするには、組織で有効にして特定のサイトをアクティブ化して、それらのサイトに保存されているドキュメントのすべてのバージョンが検索用にインデックス化される必要があります。 履歴バージョンのAdvanced eDiscovery設定する前に、バージョン管理のサポートを有効にするSharePoint。
 

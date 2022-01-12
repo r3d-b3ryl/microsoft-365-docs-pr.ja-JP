@@ -10,15 +10,16 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: ''
 description: 報告されたメッセージを確認し、ユーザーにフィードバックを与える方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d70e26786e6028e1acf8072c40f15505fb232431
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 2cb979260bde62903e97a4726083924101b8711a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786688"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932797"
 ---
 # <a name="admin-review-for-reported-messages"></a>報告されたメッセージの管理者によるレビュー
 
@@ -36,7 +37,7 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com/> で Microsoft 365 Defender ポータルを開きます。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
 
 - ユーザー申請の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
   - [組織の管理] または [セキュリティ管理者][をMicrosoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
@@ -48,7 +49,7 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
 
 ## <a name="notify-users-from-within-the-portal"></a>ポータル内からユーザーに通知する
 
-1. このポータルMicrosoft 365 Defender、[申請] ページ **に直接移動** します [https://security.microsoft.com/reportsubmission](https://security.microsoft.com/reportsubmission) 。
+1. [電子メール Microsoft 365 Defender] ポータルの [投稿] ページに移動し、[電子メール] & <https://security.microsoft.com> **投稿]**  \> **に移動します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
 
 2. [ **報告されたメッセージのユーザー**] をクリックし、マークして通知するメッセージを選択します。
 
@@ -61,7 +62,7 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
 
 ## <a name="customize-the-messages-used-to-notify-users"></a>ユーザーへの通知に使用するメッセージをカスタマイズする
 
-1. このポータルMicrosoft 365 Defender、[その他] セクションの [メール &グループ &ルールの脅威ポリシー] [ユーザーが報告したメッセージ設定] \>  \>  \> **に移動** します。
+1. [Microsoft 365 Defender ポータルで、[メール & コラボレーション ポリシー& ルールの脅威ポリシー] の [ユーザーの申請] ページに移動します。[その他] セクションで、ユーザーがメッセージ設定を報告 <https://security.microsoft.com>  \>  \>  \> しました。  [ユーザー申請] ページに **直接移動するには** 、 を使用します <https://security.microsoft.com/userSubmissionsReportMessage> 。
 
 2. [ユーザー申請] ページで、送信者の表示名を指定する場合は、[管理者レビュー結果の電子メール通知] セクションの [送信者として使用する **Office 365** 電子メール アドレスを指定する] チェック ボックスをオンにし、使用する名前を入力します。 メッセージに表示される電子メール Outlook、すべての返信がそこに送信されます。
 
@@ -75,4 +76,4 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
     > [!div class="mx-imgBorder"]
     > ![ユーザーに送信するメッセージをカスタマイズします。](../../media/admin-review-customize-message.png)
 
-4. 完了したら、**[保存]** をクリックします。 これらの値をクリアするには、[ユーザー申請] **ページ** で [破棄] をクリックします。
+4. 完了したら、**[保存]** をクリックします。 これらの値をクリアするには、[ユーザー申請] **ページ** で **[破棄] をクリック** します。

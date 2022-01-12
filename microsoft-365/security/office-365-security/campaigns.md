@@ -16,15 +16,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: ''
 description: 詳細については、「Microsoft Defender for microsoft Defender for Office 365」を参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0af72653a8f180728b71b05fa044627012282c8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 479963323dad613f3a17a527f94bbd5963487f76
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157700"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935467"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender のキャンペーン ビュー (Office 365
 
@@ -56,7 +57,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 ## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルのキャンペーン ビュー
 
-キャンペーン ビューは、Microsoft 365 Defenderポータル ( ) の [メール &] で、または直接 <https://security.microsoft.com>  \> . <https://security.microsoft.com/campaigns>
+キャンペーン ビューは、メール Microsoft 365 Defenderコラボレーション キャンペーンで、&ポータルで <https://security.microsoft.com>  \> 直接使用できます <https://security.microsoft.com/campaigns> 。
 
 ![[キャンペーン] ポータルのMicrosoft 365 Defender概要。](../../media/campaigns-overview.png)
 
@@ -127,7 +128,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
   - **送信者**
   - **受信者**
   - **送信元ドメイン**
-  - **[件名]**
+  - **件名**
   - **添付ファイルの名前**
   - **マルウェア ファミリ**
   - **タグ**: 指定したユーザー タグが適用されているユーザーまたはグループ (優先度アカウントを含む)。 ユーザー タグの詳細については、「ユーザー タグ」 [を参照してください](user-tags.md)。

@@ -1,5 +1,5 @@
 ---
-title: ASR ルールの展開フェーズ 3 - 実装
+title: ASR ルール 展開フェーズ 3 - 実装
 description: 攻撃表面の縮小ルールの展開を実装するためのガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6556389ecef571626c1927aca9341945f113d150
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 5fb67e6bdd5a6ddbfa61147f1d7adba558c8cf02
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217409"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873922"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-3-implement"></a>攻撃表面の縮小ルールの展開フェーズ 3: 実装
 
@@ -63,12 +63,74 @@ ms.locfileid: "61217409"
 7. 除外を作成します。
 8. 問題のあるルールを無効にするか、監査に戻します。
 
+#### <a name="customize-attack-surface-reduction-rules"></a>攻撃面の減少ルールをカスタマイズする
+
+攻撃表面縮小ルールの展開を引き続き展開する場合、有効にした攻撃表面の縮小ルールをカスタマイズする必要または有益な場合があります。
+
+##### <a name="exclude-files-and-folders"></a>ファイルとフォルダーを除外する
+
+ファイルとフォルダーを攻撃表面の縮小ルールによって評価される対象から除外できます。 除外すると、攻撃表面の縮小ルールでファイルに悪意のある動作が含まれていると検出された場合でも、ファイルの実行がブロックされません。
+
+たとえば、次のランサムウェア ルールを考え出します。
+
+ランサムウェア ルールは、企業のお客様がビジネスの継続性を確保しながら、ランサムウェア攻撃のリスクを軽減するために設計されています。 既定では、ランサムウェア ルールのエラーは注意の側で発生し、まだ十分な評価と信頼を得ていないファイルから保護します。 再フェーズを行う場合、ランサムウェア ルールは、何百万人もの顧客の利用状況指標に基づいて、十分な肯定的な評価と普及率を得てないファイルでのみトリガーされます。 通常、ブロックは自己解決されます。各ファイルの "評価と信頼" の値は、問題ない使用法が増えるほど段階的にアップグレードされます。
+
+ブロックが自己解決されない場合、お客様は自己のリスクで、セルフサービス メカニズムまたは IOC (IOC) ベースの "許可リスト" 機能を利用して、ファイル自体のブロックを解除できます。 
+
+> [!WARNING]
+> ファイルまたはフォルダーのブロックを除外または解除すると、安全でないファイルが実行され、デバイスに感染する可能性があります。 ファイルやフォルダーを除外すると、攻撃面の減少ルールで指定された保護機能が著しく低下します。 ルールによってブロックされたファイルの実行が許可され、レポートやイベントは記録されません。
+
+除外は、除外を許可するすべてのルールに適用されます。 リソースの個別のファイル、フォルダー パス、または完全修飾ドメイン名を指定できます。 ただし、除外を特定のルールに制限することはできません。
+
+除外は、除外されたアプリケーションまたはサービスが開始された場合にのみ適用されます。 たとえば、既に実行されている更新サービスの除外を追加すると、サービスが停止して再起動されるまで、更新サービスはイベントをトリガーし続ける。
+
+攻撃表面の縮小は、環境変数とワイルドカードをサポートします。 ワイルドカードの使用の詳細については、「ファイル名とフォルダー パスまたは拡張子の除外リストでワイルドカードを使用する [」を参照してください](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)。
+検出すべきではないと思うファイルを検出するルールで問題が発生した場合は、監査モードを使用して [ルールをテストします](evaluate-attack-surface-reduction.md)。
+
+各ルールの [詳細については、攻撃表面の縮小ルール](attack-surface-reduction-rules-reference.md) のリファレンス トピックを参照してください。
+
+##### <a name="use-group-policy-to-exclude-files-and-folders"></a>グループ ポリシーを使用してファイルとフォルダーを除外する
+
+1. グループ ポリシー管理コンピューターで、[[グループ ポリシー管理コンソール]](https://technet.microsoft.com/library/cc731212.aspx) を開き、構成するグループ ポリシー オブジェクトを右クリックして、**[編集]** をクリックします。
+
+2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に移動 **し、[** 管理用 **テンプレート] をクリックします**。
+
+3. ツリーを展開して **、攻撃Windows縮小** \> **Microsoft Defender ウイルス対策Microsoft Defender Exploit Guard** \>  \> **コンポーネントを表示します**。
+
+4. [攻撃表面の縮小 **ルールからファイル** とパスを除外する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 [ **表示] を** 選択し、[値の名前] 列に各ファイル **またはフォルダーを入力** します。 各 **アイテムの [** 値] **列に 0** を入力します。
+
+> [!WARNING]
+> [値の名前] 列または [値] 列でサポートされていない引用符は **使用** しません。
+
+##### <a name="use-powershell-to-exclude-files-and-folders"></a>PowerShell を使用してファイルとフォルダーを除外する
+
+1. **[powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
+
+2. 次のコマンドレットを入力します。
+
+    ```PowerShell
+    Add-MpPreference -AttackSurfaceReductionOnlyExclusions "<fully qualified path or resource>"
+    ```
+
+    引き続き使用 `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` して、リストにフォルダーを追加します。
+
+    > [!IMPORTANT]
+    > リスト `Add-MpPreference` にアプリを追加または追加する場合に使用します。 コマンドレットを `Set-MpPreference` 使用すると、既存のリストが上書きされます。
+
+##### <a name="use-mdm-csps-to-exclude-files-and-folders"></a>MDM CSP を使用してファイルとフォルダーを除外する
+
+除外を追加するには [、./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) 構成サービス プロバイダー (CSP) を使用します。
+
+##### <a name="customize-the-notification"></a>通知をカスタマイズする
+
+ルールがトリガーされた場合の通知をカスタマイズし、アプリまたはファイルをブロックできます。 詳しくは[、Windows セキュリティをご覧](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)ください。
+
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
 [ASR ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
 
-[ASR ルールの展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[ASR ルール 展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR ルールの展開フェーズ 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+[ASR ルール 展開フェーズ 2 - テスト](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR ルールの展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
+[ASR ルール 展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)

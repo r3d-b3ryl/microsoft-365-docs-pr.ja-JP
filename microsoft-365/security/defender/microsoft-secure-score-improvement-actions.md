@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: ca8282c70f6fd831ae4859749078701b97014e13
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 6519cf97fb35bfb0eb7b325475d4ce350ec0c3bb
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724442"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61936982"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Secure Score を使用してセキュリティの態勢を評価する
 
@@ -37,7 +37,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 - ID (Azure Active Directoryアカウント&ロール)
 - デバイス (Microsoft Defender for Endpoint, 既知 [の Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- アプリ (電子メールアプリとクラウド アプリ (Office 365 Microsoft Cloud App Security)
+- アプリ (電子メール アプリとクラウド アプリ(Office 365 Microsoft Defender for Cloud Apps を含む)
 
 >[!NOTE]
 >Microsoft Secure Score の最近のリリースでは、スコア付けモデルが改善され、Microsoft Secure Score が一時的に Identity Secure Score および Graph API と互換性がありません。 [詳細の表示](microsoft-secure-score-whats-new.md)

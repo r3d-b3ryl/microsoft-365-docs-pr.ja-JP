@@ -12,16 +12,15 @@ ms.localizationpriority: medium
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkEXCHANGE
 description: 管理者は、セキュリティ & コンプライアンス センターで [低速メール フロー ルールの修正] 分析情報を使用して、組織内の非効率的または壊れたメール フロー ルール (トランスポート ルールとも呼ばれる) を特定して修正する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0781ba01504751c1c612e46ed8cf214a732a05f8
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 9866761e683e15d34d81b8ea0962d974b0b474da
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422521"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935223"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでメール フロー ルールの分析情報が遅&修正する
 
@@ -48,7 +47,7 @@ ms.locfileid: "61422521"
 
 ウィジェットの [ **詳細の表示]** をクリックすると、詳細情報が表示されるフライアウトが表示されます。
 
-- **ルール**: 概要にカーソルを合わせると、ルールのすべての条件、例外、およびアクションが表示されます。 概要をクリックすると、管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">(EAC) でExchangeを編集できます</a>。
+- **ルール**: 概要にカーソルを合わせると、ルールのすべての条件、例外、およびアクションが表示されます。 概要をクリックすると、管理センター (EAC) の Exchangeを編集できます <https://admin.exchange.microsoft.com/#/transportrules> 。
 - **評価されるメッセージの** 数 : [サンプル メッセージの表示][](message-trace-scc.md)をクリックすると、ルールの影響を受けたメッセージのサンプルのメッセージ トレース結果を確認できます。
 - **各メッセージに費やされた平均時間**
 - **メッセージに費やされた時間の** 中央値 : 上半分と下半分の時間データを分離する中央値。

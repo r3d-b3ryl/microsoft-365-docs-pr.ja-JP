@@ -15,15 +15,16 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
+ms.custom: ''
 description: 管理者は、構成アナライザーを使用して、事前設定されたセキュリティ ポリシーの標準保護と厳密な保護の設定の下にあるセキュリティ ポリシーを見つけて修正する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b537da88199f9b565833c74fb94c233459970557
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0acdf6d300984c00bb1b1b060d3e36562983ebca
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197919"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61876478"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP および Microsoft Defender の保護ポリシー用の構成Office 365
 
@@ -72,7 +73,7 @@ Microsoft 365 Defender ポータルの構成アナライザーは、設定が事
 
 ## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>ポータルで構成アナライザーをMicrosoft 365 Defenderする
 
-このポータルMicrosoft 365 Defender、[テンプレート ポリシー]セクション&の [&ルール脅威ポリシー構成アナライザー] に \>  \>  \> **移動** します。
+[Microsoft 365 Defenderポータルで、[テンプレート ポリシー] セクション&の [& ルール脅威ポリシー構成アナライザー] に <https://security.microsoft.com>  \>  \>  \> **移動** します。 [構成アナライザー] ページに直接 **移動するには、** を使用します <https://security.microsoft.com/configurationAnalyzer> 。
 
 [ **構成アナライザー] ページ** には、次の 3 つの主なタブがあります。
 

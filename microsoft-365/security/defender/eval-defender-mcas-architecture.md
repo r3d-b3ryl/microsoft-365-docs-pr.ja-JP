@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 065dd43af376c16ee9e5daa332a08bc25b0d6b11
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 7e9542e152b2c218a83fd4a431588c14afecbda8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110321"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933158"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps のアーキテクチャ要件と主な概念を確認する
 
@@ -58,7 +56,7 @@ Defender for Cloud Apps を使用しない場合、組織で使用されてい�
 ![Microsoft Defender for Cloud Apps のアーキテクチャ - クラウド検出。](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 この図では、ネットワーク トラフィックを監視し、組織で使用されているクラウド アプリを検出するために使用できる 2 つの方法があります。
-- 回答。 クラウド アプリの検出は、Microsoft Defender for Endpoint とネイティブに統合されます。 Defender for Endpoint は、11 台のデバイスから IT 管理されたアプリとサービスWindows 10レポートWindowsレポートします。 
+- A. クラウド アプリの検出は、Microsoft Defender for Endpoint とネイティブに統合されます。 Defender for Endpoint は、11 台のデバイスから IT 管理されたアプリとサービスWindows 10レポートWindowsレポートします。 
 - B. ネットワークに接続されているすべてのデバイスでカバレッジを行う場合は、Defender for Cloud Apps ログ コレクターがファイアウォールや他のプロキシにインストールされ、エンドポイントからデータを収集します。 このデータは、分析のために Defender for Cloud Apps に送信されます。
 
 #### <a name="managing-cloud-apps"></a>クラウド アプリの管理
@@ -67,7 +65,7 @@ Defender for Cloud Apps を使用しない場合、組織で使用されてい�
 
 ![Microsoft Defender for Cloud Apps のアーキテクチャ - クラウド アプリの管理。](../../media/defender/m365-defender-mcas-architecture-c.png)
 
-この図では、次の例を示します。
+この図について:
 - 一部のアプリは使用が許可されています。 これは、アプリの管理を開始する簡単な方法です。
 - アプリをアプリ コネクタに接続することで、より大きな可視性と制御を有効にできます。 アプリ コネクタは、アプリ プロバイダーの API を使用します。
 
@@ -78,7 +76,7 @@ Microsoft Defender for Cloud Apps はリバース プロキシとして機能し
 
 ![Microsoft Defender for Cloud Apps のアーキテクチャ - プロキシ アクセス セッション制御。](../../media/defender/m365-defender-mcas-architecture-d.png)
 
-この図では、次の例を示します。
+この図について:
 - 組織内のユーザーおよびデバイスから認可されたクラウド アプリへのアクセスは、Defender for Cloud Apps を介してルーティングされます。
 - このプロキシ アクセスでは、セッション コントロールを適用できます。
 - 許可されていない、または明示的に認可されていないクラウド アプリは影響を受け取る必要があります。
@@ -91,7 +89,7 @@ Microsoft Defender for Cloud Apps はリバース プロキシとして機能し
 
 ![Microsoft Defender for Cloud Apps - SaaS アプリのアーキテクチャ。](../../media/defender/m365-defender-mcas-architecture-e.png)
 
-この図では、次の例を示します。
+この図について:
 - SaaS アプリは、クラウド テナントAzure ADされます。 これにより、Azure ADを含む条件付きアクセス ポリシーを適用できます。
 - SaaS アプリのトラフィックAzure Active Directory Defender for Cloud Apps に送信するポリシーがポリシーに追加されます。 ポリシーは、このポリシーを適用する SaaS アプリを指定します。 したがって、Azure AD がこれらの SaaS アプリに適用される条件付きアクセス ポリシーを適用した後、Azure AD は Defender for Cloud Apps を介してセッション トラフィックを指示 (プロキシ) します。
 - Defender for Cloud Apps は、このトラフィックを監視し、管理者が構成したセッション制御ポリシーを適用します。 

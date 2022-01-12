@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365管理センターのレポート - OneDrive for Business使用状況
+title: Microsoft 365管理センターの [レポート] - OneDrive for Business使用状況
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: '組織全体OneDrive for Businessのファイルと記憶域の総数を確認するには、使用状況レポートを参照してください。 '
-ms.openlocfilehash: 2deff1e5438dcc6edbe5f12ecd9f428e0242b93f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3a7cf36be7d0ae12acf1a1ad6d9ace8a83afc2bd
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648845"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61918217"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365管理センターのレポート - OneDrive for Business使用状況
+# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365管理センターの [レポート] - OneDrive for Business使用状況
 
 Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
   
@@ -58,7 +58,10 @@ Microsoft 365 の [レポート] ダッシュボードには、組織内での�
 |Owner  <br/> |管理者のプライマリ管理者のOneDrive。   <br/> |
 |所有者プリンシパル名  <br/> |ユーザーの所有者の電子メール OneDrive。 <br/> |
 |最終アクティビティ日 (UTC)  <br/> | ファイル アクティビティがレポート で実行された最新のOneDrive。 OneDrive にファイル アクティビティがなかった場合、値は空白になります。  <br/> |
-|Files  <br/> |ファイル内のファイルのOneDrive。 <br/>|
+|ファイル  <br/> |ファイル内のファイルのOneDrive。 <br/>|
 |アクティブ ファイル  <br/> | 期間内のアクティブ ファイルの数。<br/> 注: レポートの指定した期間中にファイルが削除された場合、レポートに表示されるアクティブ なファイルの数は、OneDrive の現在のファイル数よりも多い場合があります。 >  削除されたユーザーはレポートに 180 日間表示され続けます。  <br/> |
 |Storage使用 (MB)  <br/> |ユーザーが使用するストレージOneDrive MB 単位で指定します。 |
 |||
+   
+> [!NOTE]
+> このレポートには、有効なライセンスを持つユーザー OneDrive for Business含まれます。

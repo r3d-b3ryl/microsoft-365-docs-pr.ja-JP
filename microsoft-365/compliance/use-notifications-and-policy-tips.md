@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作しているユーザーに通知する方法について学習します。
-ms.openlocfilehash: 079e392a234339493fb293406d6e85d4ddb7c5f6
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 793ae9410ff40d989fffa4dfeae457ff0e61e392
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423061"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934527"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -149,6 +149,8 @@ DLP ポリシー内の各ルールに関して、次の事柄を行うポリシ�
 
 3. 3 番目のルール:5 個を超える対象機密情報インスタンスがドキュメントで検出され、組織外のユーザーとドキュメントを共有する場合、[**コンテンツへのアクセスの禁止**] アクションによってファイルのアクセス許可が制限され、[**通知の送信**] アクションではこのルールのアクションの上書きをユーザーに許可しません。情報が外部共有されているためです。いかなる状況においても、組織内のユーザーが組織外で PII データを共有することを許可すべきではありません。
 
+### <a name="user-override-support"></a>ユーザーオーバーライドのサポート
+
 ルールを上書きするポリシー ヒントを使用する際に把握しておくべきいくつかの点を以下に記します。
 
 - 上書きオプションはルールごとのオプションで、対象ルール内のすべてのアクションを上書きします (ただし、上書きできない通知の送信は除きます)。
@@ -156,6 +158,25 @@ DLP ポリシー内の各ルールに関して、次の事柄を行うポリシ�
 - コンテンツが 1 つの DLP ポリシー内の複数のルールに一致する可能性がありますが、その場合には最も制限的で優先順位の高いルールのポリシー ヒントのみが表示されます。たとえば、単に通知を送信するルールのポリシー ヒントよりも、コンテンツへのアクセスを禁止するルールのポリシー ヒントの方が優先して表示されます。これにより、ポリシー ヒントがカスケード表示されるのを防止します。
 
 - 	最も制限の厳しいルールでユーザーにルールを上書きすることを許可している場合は、このルールを上書きすることで、コンテンツに一致した他のルールもすべて上書きされます。
+
+- NotifyAllowOverride アクションが WithoutJustification または WithJustification または FlasePositives で設定されている場合は、BlockAccess が true に設定され、BlockAccessScope に適切な値が設定されている必要があります。 それ以外の場合、ポリシーヒントが表示されますが、ユーザーは正当化して電子メールを上書きするオプションを見つけ出すことはありません。
+
+#### <a name="availability-of-override"></a>オーバーライドの可用性
+
+|通知ルール |[通知/ブロック] アクション  |上書き可能  |必要な位置合わせ  |
+|---------|---------|---------|---------|
+|通知のみ     |通知         |いいえ         |いいえ         |
+|Notify + AllowOverride     |通知         |いいえ         |いいえ         |
+|Notify + AllowOverride + False positive     |通知         |いいえ         |いいえ         |
+|通知 + AllowOverride + 位置合わせ     |通知         |いいえ         |いいえ         |
+|Notify + AllowOverride + False positive + Justification なし    |通知         |いいえ         |いいえ         |
+|Notify + AllowOverride + False positive + Justification     |通知         |いいえ         |いいえ         |
+|通知 + ブロック     |ブロック         |いいえ         |いいえ         |
+|通知 + ブロック + AllowOverride     |ブロック         |はい         |いいえ         |
+|Notify + Block + AllowOverride + False positive     |ブロック         |はい         |いいえ         |
+|通知 + ブロック + AllowOverride + 位置合わせ     |ブロック         |はい         |はい         |
+|Notify + Block + AllowOverride + False positive + Justification なし     |ブロック         |はい         |いいえ         |
+|Notify + Block + AllowOverride + False positive + Justification     |ブロック         |はい         |はい         |
 
 
 ## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>OneDrive for Business サイトおよび SharePoint Online サイトのポリシー ヒント

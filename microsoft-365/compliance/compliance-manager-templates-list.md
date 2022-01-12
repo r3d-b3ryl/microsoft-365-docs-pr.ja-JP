@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーは、国内、地域、業界の規制、標準、および法律に合わせて評価を構築するテンプレートを提供します。
-ms.openlocfilehash: 4201dac3b83c73dd61f39a01f7ba2d98b6207bc4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7ea918b1273335c39866d2de684acf9a2be076b7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700867"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871853"
 ---
 # <a name="compliance-manager-templates-list"></a>コンプライアンスマネージャーテンプレートの一覧
 
@@ -33,13 +33,15 @@ ms.locfileid: "60700867"
 
 ## <a name="overview"></a>概要
 
-[Microsoft Compliance Manager には](compliance-manager.md) 、評価を作成するためのテンプレートの包括的なセットが提供されています。 これらのテンプレートは、組織がデータの収集と使用を管理する国内、地域、業界固有の要件に準拠するのに役立ちます。
+[Microsoft Compliance Manager には](compliance-manager.md) 、評価を作成するためのテンプレートの包括的なセットが提供されています。 これらのテンプレートは、組織がデータの収集と使用に関する国内、地域、そして業界固有の要件に準拠して管理することに役立ちます。
 
 新しい法令が制定されるに従って、コンプライアンス マネージャーにテンプレートが追加されます。 コンプライアンス マネージャーは、基になる法律や規制が変更された場合にもテンプレートを更新します。 更新プログラムを確認して受け [入れる方法の詳細については、次のリンクを参照してください](compliance-manager-assessments.md#accept-updates-to-assessments)。
 
 ## <a name="list-of-templates-and-where-to-find-them"></a>テンプレートの一覧とテンプレートの検索先
 
 コンプライアンス マネージャーのテンプレートの完全な一覧を次に示します。 以下のテンプレート名のリンクを使用すると、その標準、規制、または法律に関する関連ドキュメントにアクセスできます。
+
+コンプライアンス マネージャーで個々のテンプレートを選択して、テンプレートの規制やプロパティの説明など、そのテンプレートに関する詳細を表示することもできます。 概要については **、「概要** 」セクションを参照してください。
 
 ### <a name="where-to-find-your-templates"></a>テンプレートの検索先
 
@@ -49,8 +51,8 @@ ms.locfileid: "60700867"
 
 これらのテンプレートの 1 つ以上は、ライセンス契約に基づいて利用できます。 データ保護基準テンプレートは、すべてのユーザーに含まれます。
 
-- [Microsoft データ保護基準](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
-- [EU GDPR](/compliance/regulatory/gdpr)
+- [Microsoft データ保護のベースライン](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
+- [欧州連合 の GDPR](/compliance/regulatory/gdpr)
 - [ISO/IEC 27001:2013](/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Revs. 4 と 5
 

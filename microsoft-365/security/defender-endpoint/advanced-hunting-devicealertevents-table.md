@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: e0058e5673b4a77942ff887ddb2b07dedd508172
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 32dbff60a37c31cdbfd492eb5d746a10d9b7a185
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167564"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934383"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "61167564"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-高度 `DeviceAlertEvents` な検索スキーマの[表](advanced-hunting-overview.md)には、このスキーマのアラートに関する情報Microsoft Defender セキュリティ センター。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
+高度 `DeviceAlertEvents` な検索スキーマの[表](advanced-hunting-overview.md)には、このスキーマのアラートに関する情報Microsoft 365 Defender。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 
 高度なハンティング スキーマの他のテーブルの詳細については、高度なハンティング [スキーマリファレンスを参照してください](advanced-hunting-schema-reference.md)。
 

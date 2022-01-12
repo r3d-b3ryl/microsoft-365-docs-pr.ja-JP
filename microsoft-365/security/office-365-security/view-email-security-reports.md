@@ -18,16 +18,14 @@ ms.collection:
 description: 管理者は、ポータルで使用できる電子メール セキュリティ レポートを検索して使用するMicrosoft 365 Defenderできます。
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3e5e7ba4688f4ec4a54856bc5b4e8e3c14aed090
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: fc60c0ed388a8bc30158fbf7366e16776b0b5dd5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421764"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872095"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>電子メール セキュリティ レポートを Microsoft 365 Defenderする
 
@@ -44,14 +42,14 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 >
 > [電子メール] コラボレーション レポート ページの一 **部のレポート&、Microsoft** Defender が必要です。Office 365。 これらのレポートの詳細については[、「View Defender for Office 365ポータル」をMicrosoft 365 Defenderしてください](view-reports-for-mdo.md)。
 >
-> メール フローに関連するレポートが管理センター Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">されます</a>。 これらのレポートの詳細については、「新しい管理センターのメール フロー レポート[Exchange参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
+> メール フローに関連するレポートが管理センター Exchangeされます。 これらのレポートの詳細については、「新しい管理センターのメール フロー レポート[Exchange参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
 
 ## <a name="compromised-users-report"></a>侵害されたユーザー レポート
 
 > [!NOTE]
 > このレポートは、メールボックスを使用Microsoft 365組織Exchange Online使用できます。 スタンドアロン 組織 (EOP) 組織ではExchange Online Protection使用できません。
 
-[**侵害されたユーザー] レポート** には、過去 7 日以内に[疑わしい] または [制限付き] とマークされたユーザー アカウントの数が表示されます。 これらの状態のどちらかのアカウントは、問題が発生したり、侵害された場合もあります。 頻繁に使用すると、レポートを使用して、疑わしいアカウントや制限付きアカウントのスパイクや傾向を見つけるのに使用できます。 侵害されたユーザーの詳細については、「侵害されたメール アカウントへの [応答」を参照してください](responding-to-a-compromised-email-account.md)。
+[**侵害されたユーザー]** レポートには、過去 7 日間に[疑わしい] または [制限付き] とマークされたユーザー アカウントの数が表示されます。 これらの状態のどちらかのアカウントは、問題が発生したり、侵害された場合もあります。 頻繁に使用すると、レポートを使用して、疑わしいアカウントや制限付きアカウントのスパイクや傾向を見つけるのに使用できます。 侵害されたユーザーの詳細については、「侵害されたメール アカウントへの [応答」を参照してください](responding-to-a-compromised-email-account.md)。
 
 ![[コラボレーション レポートのメール] ページの [&ユーザー] ウィジェット。](../../media/compromised-users-report-widget.png)
 
@@ -83,13 +81,8 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 
 ## <a name="exchange-transport-rule-report"></a>Exchangeトランスポート ルール レポート
 
-トランスポート **Exchangeレポートには**、組織内の受信メッセージと送信メッセージに対するメール フロー ルール (トランスポート ルールとも呼ばれる) の影響が表示されます。
-
-ポータルでレポートを表示するにはMicrosoft 365 Defender[レポートの電子メール]  & \>  \> **グループ&に移動します**。 [コラボレーション **レポートのメール&] ページ** で、トランスポート **Exchangeを見** つけて、[詳細の表示]**をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/ETRRuleReport> 。
-
-![Exchangeグループレポート ページの [メール] &トランスポート ルール ウィジェットを作成します。](../../media/transport-rule-report-widget.png)
-
-[トランスポート **Exchangeレポート] ページ** で、使用可能なグラフとデータについて、次のセクションで説明します。
+> [!NOTE]
+> EAC **Exchangeトランスポート ルール レポート** を使用できます。 詳細については、「新しい[EAC Exchangeトランスポート ルール レポート」を参照してください](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report)。
 
 ### <a name="chart-breakdown-by-direction"></a>[方向] によるグラフの内訳
 
@@ -182,7 +175,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 グラフの下の詳細テーブルは、次の情報を示しています。
 
 - **方向**
-- **Type**
+- **型**
 - **24 時間**
 - **3 日間**
 - **7 日間**
@@ -246,7 +239,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 
 ### <a name="mailflow-view-for-the-mailflow-status-report"></a>メールフロー状態レポートのメールフロー ビュー
 
-[ **メールフロー] ビュー** には、Microsoft の電子メール脅威保護機能が組織内の受信メールと送信メールをフィルター処理する方法が表示されます。 このビューでは、水平方向のフロー図 (サンキー図と呼ばれる) を使用して、メールの総数の詳細と、エッジ保護、マルウェア対策、フィッシング対策、スパム対策、スプーフィング対策などの構成済みの脅威保護機能が、この数に与える影響について説明します。
+[ **メールフロー] ビュー** には、Microsoft の電子メール脅威保護機能が組織内の受信メールと送信メールをフィルター処理する方法が表示されます。 このビューでは、水平方向のフロー図 ( _サン_ キー図と呼ばれる) を使用して、メールの総数の詳細と、エッジ保護、マルウェア対策、フィッシング対策、スパム対策、スプーフィング対策などの構成済みの脅威保護機能が、この数にどのような影響を与えるのかについて説明します。
 
 ![メールフロー状態レポートのメールフロー ビュー。](../../media/mail-flow-status-report-mailflow-view.png)
 
@@ -539,11 +532,11 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **URL に悪意があるとする評価**
 - **高度なフィルター**
 - **一般的なフィルター**
-- **複合分析の検出**
-- **指紋の一致**
+- **混合分析の検出**: 複数のフィルターがメッセージの評決に貢献しました。
+- **指紋照合**: 以前のメッセージが原因で、メッセージが不良としてマークされています。
 - **ドメインの評価**
-- **バルク**
-- **IP レピュテーション**
+- **Bulk**: ユーザーのバルク設定を超えたと検出されたアイテム。
+- **IP レピュ** テーション : メッセージは、送信 IP アドレス評価に基づいてスパムと見なされます。
 
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
@@ -1038,7 +1031,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 

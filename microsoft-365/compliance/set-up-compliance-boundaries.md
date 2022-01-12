@@ -19,22 +19,22 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、電子情報開示マネージャーが電子情報開示マネージャーで検索できるユーザー コンテンツの場所を制御する論理境界を作成するMicrosoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29596375263d52eb6156ddfa32330f08957ccd15
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 5fe023391823abbde2cb289926863bbcbb98dfb2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60216876"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934515"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>電子情報開示調査のコンプライアンス境界を設定する
 
 この記事のガイダンスは、調査の管理に Core eDiscovery または Advanced eDiscovery使用する場合に適用できます。
 
-コンプライアンスの境界は、電子情報開示マネージャーが検索できるユーザー コンテンツの場所 (メールボックス、OneDrive アカウント、SharePoint サイトなど) を制御する組織内に論理的な境界を作成します。 また、コンプライアンスの境界は、組織内の法的、人事、その他の調査を管理するために使用される電子情報開示ケースにアクセスできるユーザーを制御します。 多くの場合、地理的な役員や規制を尊重する必要がある多国籍企業や、異なる機関に分かれている政府では、コンプライアンスの境界の必要性が必要です。 コンプライアンスMicrosoft 365は、コンテンツ検索を実行し、電子情報開示ケースを使用して調査を管理する際に、これらの要件を満たすのに役立ちます。
+コンプライアンスの境界では、電子情報開示マネージャーが検索できるユーザー コンテンツの場所 (メールボックス、OneDrive アカウント、SharePoint サイトなど) を制御する組織内に論理的な境界を作成します。 また、コンプライアンスの境界は、組織内の法的、人事、その他の調査を管理するために使用される電子情報開示ケースにアクセスできるユーザーを制御します。 多くの場合、地理的な役員や規制を尊重する必要がある多国籍企業や、異なる機関に分かれている政府では、コンプライアンスの境界の必要性が必要です。 コンプライアンスMicrosoft 365は、コンテンツ検索を実行し、電子情報開示ケースを使用して調査を管理する際に、これらの要件を満たすのに役立ちます。
   
 次の図の例を使用して、コンプライアンスの境界がどのように機能するのか説明します。
   
-![コンプライアンスの境界は、電子情報開示ケースへのアクセスを制御する機関および管理者役割グループへのアクセスを制御する検索アクセス許可フィルターで構成されます。](../media/M365_ComplianceBoundary_OrgChart_v2.png)
+![コンプライアンスの境界は、機関へのアクセスを制御する検索アクセス許可フィルターと、電子情報開示ケースへのアクセスを制御する管理者の役割グループで構成されています。](../media/M365_ComplianceBoundary_OrgChart_v2.png)
   
 この例では、Contoso LTD は、2 つの子会社である Fourth Coffee と Coho Winery で構成される組織です。 このビジネスでは、電子情報開示管理者と調査担当者は、自分の代理店のメールボックス、Exchangeアカウント、OneDriveサイトSharePointのみを検索できる必要があります。 また、電子情報開示マネージャーと調査担当者は、自分の代理店で電子情報開示ケースのみを表示し、自分がメンバーであるケースにのみアクセスできます。 また、このシナリオでは、調査担当者はコンテンツの場所を保留にしたり、ケースからコンテンツをエクスポートしたりすることはできません。 コンプライアンスの境界がこれらの要件を満たす方法を次に示します。
   
@@ -129,9 +129,9 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
 
 - `Filters`: フィルターの検索条件を指定します。 コンプライアンスの境界では、次のフィルターを定義します。 それぞれ異なるコンテンツの場所に適用されます。
 
-  - `Mailbox`: パラメーターで定義された役割グループOneDriveできるメールボックスまたはアカウントを `Users` 指定します。 このフィルターを使用すると、役割グループのメンバーは、特定の機関のメールボックスOneDriveアカウントのみを検索できます。たとえば、 `"Mailbox_Department -eq 'FourthCoffee'"` .
+  - `Mailbox`: パラメーターで定義された役割グループOneDriveできるメールボックスまたはアカウントを `Users` 指定します。 このフィルターを使用すると、役割グループのメンバーは、特定の機関のメールボックスまたはOneDriveアカウントのみを検索できます。たとえば `"Mailbox_Department -eq 'FourthCoffee'"` 、 。
 
-  - `SiteContent`: このフィルターには、2 つの個別のフィルターが含まれています。 1 つ目は、SharePointで定義されている役割グループが検索できる、機関内のサイトの数 `SiteContent_Path` を `Users` 指定します。 たとえば、`SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee'` などです。 2 番目のフィルター (演算子によって最初のフィルターに接続) は、代理店のドメイン (MySite ドメインとも呼OneDrive) を `SiteContent_Path` `SiteContent_Path` `or` *指定* します。 たとえば、`SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'` などです。 フィルターの代り `Site_Path` でフィルターを使用 `SiteContent` できます。 フィルター `Site` `SiteContent` とフィルターは交換可能であり、この記事で説明する検索アクセス許可フィルターには影響を与えかねない。
+  - `SiteContent`: このフィルターには、2 つの個別のフィルターが含まれています。 1 つ目は、SharePointで定義されている役割グループが検索できる、機関内のサイトの数 `SiteContent_Path` を `Users` 指定します。 たとえば、「 `SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee'` 」のように入力します。 2 番目のフィルター (演算子によって最初のフィルターに接続) は、代理店のドメイン (MySite ドメインとも呼OneDrive) を `SiteContent_Path` `SiteContent_Path` `or` *指定* します。 たとえば、「 `SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'` 」のように入力します。 フィルターの代り `Site_Path` でフィルターを使用 `SiteContent` できます。 フィルター `Site` `SiteContent` とフィルターは交換可能であり、この記事で説明する検索アクセス許可フィルターには影響を与えかねない。
 
     > [!IMPORTANT]
     > 以前の検索 `SiteContent` アクセス許可フィルター OneDriveフィルターが含まれている理由 フィルターはメールボックスと OneDrive アカウントの両方に適用しますが、SharePoint フィルターを含めることで、OneDrive フィルターも含めなかった場合は OneDrive アカウント `Mailbox` が除外されます `Site` 。 検索アクセス許可フィルターに SharePoint フィルターが含めなかった場合、メールボックス フィルターにはコンプライアンス境界のスコープに OneDrive アカウントが含まれるため、別の OneDrive フィルターを含める必要はありません。 つまり、フィルターのみを含む検索アクセス許可フィルターには、メールボックスとアカウントの両方 `Mailbox` OneDriveされます。
@@ -162,7 +162,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 2. 検索できるコンテンツの場所を定義した後、フィルターの次の部分は、電子情報開示マネージャーが検索できるコンテンツを定義します。 最初の `SiteContent` フィルターを使用すると、4 番目のコーヒー電子情報開示マネージャーは、サイト パス プロパティを含む (またはで始まる) ドキュメントのみを検索できます `https://contoso.sharepoint.com/sites/FourthCoffee` 。Coho Winery 電子情報開示マネージャーは、サイト パス プロパティを含む (またはで始まる) ドキュメントのみを検索できます `https://contoso.sharepoint.com/sites/CohoWinery` 。 したがって、2 `SiteContent` つのフィルターは *、* 検索できるコンテンツを定義するため、コンテンツ フィルターです。 どちらのフィルターでも、電子情報開示マネージャーは、特定のドキュメント プロパティ値を持つドキュメントのみを検索できます。 すべてのSharePoint関連フィルターは、検索可能なサイト のプロパティがすべてのドキュメントにスタンプされます。 詳細については、「Configure [permissions filtering for eDiscovery」を参照してください](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)。
 
    > [!NOTE]
-   > この記事のシナリオではそれらを使用しませんが、メールボックス コンテンツ フィルターを使用して、電子情報開示マネージャーが検索できるコンテンツを指定することもできます。 メールボックス コンテンツ フィルターの構文はです `MailboxContent_<Property:value>` 。 たとえば、日付範囲、受信者、またはドメインに基づいてコンテンツ フィルターを作成できます。 メールボックス コンテンツ フィルターの詳細については、「検索アクセス許可フィルターの構成 [」を参照してください](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)。
+   > この記事のシナリオではそれらを使用しませんが、メールボックス コンテンツ フィルターを使用して、電子情報開示マネージャーが検索できるコンテンツを指定することもできます。 メールボックス コンテンツ フィルターの構文はです `"MailboxContent_<property> -<comparison operator> '<value>'"` 。 日付範囲、受信者、ドメイン、または検索可能な電子メール プロパティに基づいてコンテンツ フィルターを作成できます。 たとえば、このフィルターを使用すると、電子情報開示管理者は、電子情報開示ドメイン内のユーザーが送信または受信したメール アイテムのみを contoso.com できます `"MailboxContent_Participants -like 'contoso.com'"` 。 メールボックス コンテンツ フィルターの詳細については、「検索アクセス許可フィルターの構成 [」を参照してください](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)。
 
 3. 検索アクセス許可フィルターは **、AND** Boolean 演算子によって検索クエリに結合されます。 つまり、ある機関の電子情報開示マネージャーが電子情報開示検索を実行する場合、検索によって返されるアイテムは検索クエリと検索アクセス許可フィルターで定義されている条件と一致する必要があります。
 
@@ -250,7 +250,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 - SharePoint および OneDrive でコンテンツを検索する場合 *、Region* パラメーターは、電子情報開示マネージャーが電子情報開示調査を行うプライマリまたはサテライトの場所に検索を指示します。 電子情報開示マネージャーが、検索SharePointフィルター OneDrive指定された地域外のサイトを検索した場合、検索結果は返されません。
 
-- Core eDiscovery から検索結果をエクスポートする場合、すべてのコンテンツの場所 (Exchange、Skype for Business、SharePoint、OneDrive、およびコンテンツ検索ツールを使用して検索できるその他のサービスを含む) のコンテンツが、データセンター内の Azure Storage の場所にアップロードされます。Region パラメーターで *指定* します。 これにより、組織は、管理された境界を越えてコンテンツをエクスポートすることを許可しない方法でコンプライアンスを遵守できます。 検索アクセス許可フィルターで地域が指定されていない場合、コンテンツは組織のプライマリ データセンターにアップロードされます。
+- Core eDiscovery から検索結果をエクスポートする場合、すべてのコンテンツの場所 (Exchange、Skype for Business、SharePoint、OneDrive、およびコンテンツ検索ツールを使用して検索できるその他のサービスを含む) のコンテンツが Azure Storage にアップロードされます。 Region パラメーターで指定されたデータセンター内の *場所を指定* します。 これにより、組織は、管理された境界を越えてコンテンツをエクスポートすることを許可しない方法でコンプライアンスを遵守できます。 検索アクセス許可フィルターで地域が指定されていない場合、コンテンツは組織のプライマリ データセンターにアップロードされます。
 
   ファイルからコンテンツをAdvanced eDiscovery、Region パラメーターを使用してコンテンツのアップロード先を *制御* することはできません。 コンテンツは、組織のAzure Storageデータセンター内の場所にアップロードされます。 中央の場所に基づく地域の場所の一覧については、「複数地域[Microsoft 365の構成」を参照してください](../enterprise/multi-geo-ediscovery-configuration.md)。
 
@@ -290,7 +290,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 検索アクセス許可のフィルターは、Exchange のパブリックフォルダーには適用されません。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - メールボックスのライセンスが無効またはソフト削除されている場合、ユーザーはコンプライアンス境界内では考慮されません。 メールボックスが削除されたときに保持がメールボックスに配置された場合、メールボックスに保持されているコンテンツは、コンプライアンス境界または検索アクセス許可フィルターの対象になります。
 

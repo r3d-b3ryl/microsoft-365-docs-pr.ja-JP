@@ -1,7 +1,8 @@
 ---
 title: Microsoft 365 ゼロ トラスト展開プラン
 f1.keywords:
-- CSH
+- deploy zero trust
+- zero trust strategy
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
@@ -16,12 +17,15 @@ search.appverid:
 ms.collection:
 - deploy zero trust
 - zero trust strategy
-ms.openlocfilehash: a1283f3bff8586c88a1c0bdcb84c246cf3a873f8
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+- M365-security-compliance
+- m365solution-zerotrust
+- m365solution-overview
+ms.openlocfilehash: 88abdf543ebb82e89470a0d6ac0bfe50b9952564
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643330"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934479"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 ゼロ トラスト展開プラン
 
@@ -91,7 +95,7 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 :::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.png" alt-text="ゼロトラスト ID とデバイス アクセス ポリシー - 開始点層" lightbox="../media/zero-trust/identity-access-starting-point-tier.png":::
 
 
-## <a name="step-2-manage-endpoints-with-intune"></a>手順 2。 Intune を使用してエンドポイントを管理する
+## <a name="step-2-manage-endpoints-with-intune"></a>手順 2.  Intune を使用してエンドポイントを管理する
 
 次に、デバイスを管理に登録し、より高度なコントロールで保護を開始します。 
 
@@ -144,4 +148,6 @@ Microsoft Information Protection、特定のビジネス目標を達成するた
 
 ![Microsoft Information Protection (MIP) フレームワーク](../media/zero-trust/mip-solution-overview.png)
 
-詳細については[、「Microsoft Information Protection」をMicrosoft 365。](../compliance/information-protection.md) 
+情報保護を計画および展開する方法の詳細については、「Deploy [a a Microsoft Information Protection」を参照してください](../compliance/information-protection-solution.md)。 
+
+データ プライバシー規制に関する情報保護を展開する場合、このソリューション ガイドは、プロセス全体に推奨されるフレームワークを提供します。Microsoft 365 を使用してデータプライバシー規制の[情報保護を展開します](../solutions/information-protection-deploy.md)。

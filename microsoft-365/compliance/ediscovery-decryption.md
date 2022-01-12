@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ツールMicrosoft 365電子メール メッセージに添付された暗号化されたドキュメントを処理し、SharePoint Online および OneDrive for Businessに保存する方法について説明します。
-ms.openlocfilehash: 351a6c77d1fc0956c83661132f1111897896a724
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aa6d6a72353378f98b9e567500233b4c26f6221c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159910"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61905927"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>電子情報開示ツールMicrosoft 365復号化
 
@@ -29,7 +29,7 @@ ms.locfileid: "60159910"
 
 暗号化されたコンテンツで一般的な電子情報開示タスクを実行するには、電子情報開示マネージャーは、コンテンツ検索、コア電子情報開示ケース、および Advanced eDiscovery ケースからエクスポートされた電子メール メッセージコンテンツを復号化する必要がありました。 Microsoft 暗号化テクノロジで暗号化されたコンテンツは、エクスポートされるまでレビューに使用できません。
 
-電子情報開示ワークフローで暗号化されたコンテンツを簡単に管理するために、Microsoft 365 電子情報開示ツールは、電子メール メッセージに添付され、Exchange Online で送信される暗号化されたファイルの暗号化解除を組み込むになりました。<sup>1</sup>さらに、SharePointに保存されている暗号化SharePoint、OneDrive for Businessで暗号化解除Advanced eDiscovery。
+電子情報開示ワークフローで暗号化されたコンテンツを簡単に管理するために、Microsoft 365 電子情報開示ツールは、電子メール メッセージに添付され、Exchange Online で送信される暗号化されたファイルの暗号化解除を組み込む<sup>になりました。1</sup>さらに、SharePoint Online および OneDrive for Businessに格納されている暗号化されたAdvanced eDiscovery。
 
 この新しい機能の前に、権限管理によって保護された電子メール メッセージのコンテンツ (および添付されていないファイル) だけが復号化されました。 電子情報開示ワークフロー SharePoint OneDrive暗号化されたドキュメントを暗号化解除できません。 これで、Microsoft 暗号化テクノロジで暗号化されたファイルは、検索結果がプレビュー用に準備され、Advanced eDiscovery でレビュー セットに追加され、エクスポートされた場合に、SharePoint または OneDrive アカウント上に検索および復号化されます。 さらに、電子メール メッセージにSharePoint OneDrive、暗号化されたドキュメントを検索できます。 この復号化機能を使用すると、電子情報開示管理者は、検索結果をプレビューするときに暗号化された電子メール添付ファイルとサイト ドキュメントのコンテンツを表示し、Advanced eDiscovery のレビュー セットに追加された後で確認できます。
 
@@ -68,6 +68,9 @@ Microsoft 電子情報開示ツールは、Microsoft 暗号化テクノロジで
 これらの設定の詳細については、「暗号化の適用に感度ラベルを使用してコンテンツへのアクセスを制限する」の「暗号化設定の構成 [」セクションを参照してください](encryption-sensitivity-labels.md#configure-encryption-settings)。
 
 以前の設定で暗号化されたドキュメントは、引き続き電子情報開示検索によって返されます。 これは、ドキュメント プロパティ (タイトル、作成者、変更日など) が検索条件と一致する場合に発生する可能性があります。 これらのドキュメントは検索結果に含まれている可能性があります。プレビューやレビューは行えません。 これらのドキュメントは、エクスポート時も暗号化されたままAdvanced eDiscovery。
+
+> [!IMPORTANT]
+> 暗号化解除は、ローカルで暗号化されたファイルでサポートされ、その後、暗号化されたファイルにアップロードSharePointまたはOneDrive。 たとえば、Azure Information Protection (AIP) クライアントによって暗号化され、その後、そのファイルにアップロードされたローカル Microsoft 365はサポートされていません。 暗号化解除のためにサポートされているのは、SharePointまたは OneDriveサービスで暗号化されたファイルのみです。
 
 ## <a name="decryption-limitations-with-email-attachments"></a>電子メール添付ファイルの復号化の制限
 

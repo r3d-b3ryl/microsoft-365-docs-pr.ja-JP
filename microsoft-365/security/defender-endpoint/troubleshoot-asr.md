@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cc4ffb2d2a1c60c9c58be4f6f3fe7439f1aab074
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6efb9c53bbbcd0412ab55f35e02faf4d3595694e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167684"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61884169"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻撃表面の縮小ルールのトラブルシューティング
 
@@ -88,7 +88,7 @@ demo.wd.microsoft.com の[Windows Defender](https://demo.wd.microsoft.com?ocid=c
 
 攻撃表面の縮小ルールがブロックしてはならないものをブロックしている場合 (誤検知とも呼ばれる)、除外を追加して、攻撃表面の縮小ルールが除外されたファイルまたはフォルダーを評価してはならないことを防止できます。
 
-除外を追加するには、「攻撃表面の [縮小をカスタマイズする」を参照してください](customize-attack-surface-reduction.md)。
+除外を追加するには、「攻撃表面の [縮小をカスタマイズする」を参照してください](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules)。
 
 > [!IMPORTANT]
 > 除外する個々のファイルとフォルダーを指定できますが、個々のルールを指定することはできません。

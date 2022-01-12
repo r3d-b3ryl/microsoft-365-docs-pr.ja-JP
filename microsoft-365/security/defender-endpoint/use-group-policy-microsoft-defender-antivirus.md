@@ -9,19 +9,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/03/2021
+ms.date: 01/04/2022
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c0bb0753c3566cf4a954c2393dd9d7533f2051ed
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 3659f0f532b14babd256f3310c4e7da8dde67e3c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311826"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938650"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策
 
@@ -62,7 +62,7 @@ ms.locfileid: "61311826"
 
 <br/><br/>
 
-|場所|Setting|記事|
+|Location|Setting|記事|
 |---|---|---|
 |クライアント インターフェイス|ヘッドレス UI モードを有効にする|[ユーザーがユーザー インターフェイスを表示または操作Microsoft Defender ウイルス対策防止する](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
 |クライアント インターフェイス|アクションを実行する必要がある場合にクライアントに追加のテキストを表示する|[エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)|
@@ -78,9 +78,9 @@ ms.locfileid: "61311826"
 |MAPS|Microsoft MAPS へのレポート用にローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |MpEngine|拡張クラウド チェックの構成|[クラウド ブロックのタイムアウト期間の構成](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)|
 |MpEngine|クラウド保護レベルの選択|[クラウドによる保護レベルを指定する](specify-cloud-protection-level-microsoft-defender-antivirus.md)|
-|ネットワーク検査システム|ネットワーク トラフィック検査用の追加の定義セットを指定する|[ネットワーク トラフィック検査用の追加の定義セットを指定する](specify-additional-definitions-network-traffic-inspection-mdav.md)|
-|ネットワーク検査システム|定義の削除を有効にする|[定義の削除を構成する](turn-on-definition-retirement.md)|
-|ネットワーク検査システム|プロトコル認識を有効にする|[プロトコル認識を有効にする](turn-on-protocol-recognition.md)|
+|ネットワーク検査システム|ネットワーク トラフィック検査用の追加の定義セットを指定する| 使用しない (非推奨) |
+|ネットワーク検査システム|定義の削除を有効にする| 使用しない (非推奨)|
+|ネットワーク検査システム|プロトコル認識を有効にする| 使用しない (非推奨)|
 |検疫する|検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |検疫する|検疫フォルダーからのアイテムの削除を構成する|[スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md)|
 |リアルタイム保護|コンピューター上のファイルとプログラムのアクティビティを監視するローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -100,7 +100,7 @@ ms.locfileid: "61311826"
 |修復|スケジュールされたフル スキャンを実行して修復を完了する日を指定する|[スケジュールされたスキャンMicrosoft Defender ウイルス対策構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |修復|スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する|[スケジュールされたスキャンMicrosoft Defender ウイルス対策構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |レポート|拡張通知を無効にする|[エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
-|ルート|[オフにする] Microsoft Defender ウイルス対策|使用しない (インストールされているサード パーティ製ウイルス対策アプリが正しく動作するように、この設定を [構成されていない] に設定する必要があります)
+|ルート|[オフにする] Microsoft Defender ウイルス対策|不使用。 Microsoft 以外のウイルス対策製品を使用する場合や使用を計画している場合は、「他Microsoft Defender ウイルス対策との互換性」[を参照してください](microsoft-defender-antivirus-compatibility.md)。|
 |ルート|プロキシ サーバーをバイパスするアドレスを定義する|[デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |ルート|ネットワークに接続するためのプロキシの自動構成 (.pac) を定義する|[デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |ルート|ネットワークに接続するためのプロキシ サーバーを定義する|[デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|

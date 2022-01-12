@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac8f2102424e908093484829eacb34b918326ea8
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: de39cc220c537af5d0ec5da4b404ec653ea56c1c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531569"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938218"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>以前の MMA ベースの Microsoft Defender for Endpoint ソリューションからのサーバー移行シナリオ
 
@@ -76,7 +76,7 @@ Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud �
    2. SCEP をアンインストールします。
    3. 該当する [場合は、前提条件](configure-server-endpoints.md#prerequisites) をインストールします。
    4. Microsoft Defender for Endpoint のインストール (「[サーバー エンドポイントの構成」を参照)。](configure-server-endpoints.md)
-   5. [グループ ポリシー] からダウンロードしたグループ **ポリシーで使用** するオンボーディング [スクリプト](https://securitycenter.microsoft.com)をMicrosoft Defender セキュリティ センター。 
+   5. グループ ポリシーからダウンロードしたグループ ポリシーで **使用** するオンボーディング スクリプトを [Microsoft 365 Defender。](https://security.microsoft.com) 
 
    > [!TIP]
    > インストーラー スクリプトをアプリケーション [の一](server-migration.md#installer-script) 部として使用して、上記の手順を自動化できます。
@@ -95,7 +95,7 @@ Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud �
 5. 次のタスクを実行するアプリケーションを作成します。
    1. Microsoft Defender for Endpoint の MMA ワークスペース構成を削除します。 [「PowerShell を使用してワークスペースを削除する」を参照してください](/azure/azure-monitor/agents/agent-manage)。 この手順は省略可能です。以前のEDRセンサーは、新しいセンサーがアクティブになった後に実行を停止します (これには数時間かかる場合があります)。
    2. 該当する [場合は、前提条件](configure-server-endpoints.md#prerequisites) をインストールします。
-   3. Microsoft Defender for Endpoint for Windows Server 2012 R2 および 2016 パッケージをインストールし、**パッシブ モードを有効にします**。 「コマンド[ラインをMicrosoft Defender ウイルス対策インストールする」を参照してください](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line)。
+   3. Microsoft Defender for Endpoint for Windows Server 2012 R2 および 2016 パッケージをインストールし、**パッシブ モードを有効にします**。 「コマンド[ラインをMicrosoft Defender ウイルス対策インストールする」を参照してください](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line)。
    4. グループ ポリシーからダウンロードしたグループ ポリシーで **使用** するオンボーディング スクリプトを [Microsoft 365 Defender。](https://security.microsoft.com)
 6. 更新プログラムを適用します。
 7. Microsoft 以外のウイルス対策コンソールを使用するか、必要に応じて Microsoft 以外のウイルス対策Microsoft Endpoint Configuration Manager削除します。 パッシブ モード構成を削除してください。*
@@ -119,7 +119,7 @@ Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud �
 3. アンインストールSystem Center Endpoint Protection (Windows Server 2012 R2)。
 4. 該当する [場合は、前提条件](configure-server-endpoints.md#prerequisites) をインストールします。 
 5. Microsoft Defender for Endpoint のインストール (「 [サーバー エンドポイントの構成」を参照](configure-server-endpoints.md))
-6. [グループ ポリシー] からダウンロードしたグループ **ポリシーで使用** するオンボーディング [スクリプト](https://securitycenter.microsoft.com)をMicrosoft Defender セキュリティ センター。 
+6. グループ ポリシーからダウンロードしたグループ ポリシーで **使用** するオンボーディング スクリプトを [Microsoft 365 Defender。](https://security.microsoft.com) 
 7. 更新プログラムを適用します。
 8. グループ ポリシー、PowerShell、またはサードパーティの管理ソリューションを使用してポリシーを作成して適用します。
 
@@ -129,7 +129,7 @@ Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud �
 ### <a name="you-have-a-server-on-which-you-want-to-install-microsoft-defender-for-endpoint-it-has-a-non-microsoft-endpoint-protection-or-endpoint-detection-and-response-solution-installed-you-do-not-intend-to-use-microsoft-endpoint-configuration-manager-or-microsoft-defender-for-cloud-you-use-your-own-deployment-mechanism"></a>Microsoft Defender for Endpoint をインストールするサーバーがあります。 Microsoft 以外のエンドポイント保護またはエンドポイント検出および応答ソリューションがインストールされています。 クラウドまたは Microsoft Defender for Cloud をMicrosoft Endpoint Configuration Managerする予定はない。 独自の展開メカニズムを使用します。 
 
 1. コンピューターを完全に更新します 。Microsoft Defender ウイルス対策 (Windows Server 2016)。
-2. Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 パッケージをインストールし、パッシブ **モードを有効にします**。 「コマンド[ラインをMicrosoft Defender ウイルス対策インストールする」を参照してください](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line)。
+2. Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 パッケージをインストールし、パッシブ **モードを有効にします**。 「コマンド[ラインをMicrosoft Defender ウイルス対策インストールする」を参照してください](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line)。
 3. 環境に適したオンボーディング スクリプトを適用し、Microsoft 365 Defender から[ダウンロードします](https://security.microsoft.com)。 
 4. Microsoft 以外のエンドポイント保護ソリューションまたはエンドポイント検出および応答ソリューションを削除し、パッシブ モードを削除します。*
 5. 更新プログラムを適用します。

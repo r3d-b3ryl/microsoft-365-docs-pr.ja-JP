@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fc85703d5dd8db92f3f3e58b618907e34b3616af
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4306468919aceb911361084cdde7a8a91dd510c2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111713"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940139"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity のアーキテクチャ要件と主な概念を確認する
 
@@ -48,7 +46,7 @@ Defender for Identity は、オンプレミスの Active Directory ユーザー�
 
 ![Microsoft Defender for Identity のアーキテクチャ。](../../media/defender/m365-defender-identity-architecture.png)
 
-この図では、次の例を示します。
+この図について:
 - ドメイン コントローラーにインストールADは、ログとネットワーク トラフィックを解析し、分析とレポートのために Microsoft Defender for Identity に送信します。
 -  センサーは、フェデレーション認証を使用するように構成AD Active Directory フェデレーション サービス (AD FS Azure AD) を解析できます (図の点線)。 
 - Microsoft Defender for Identity は、拡張検出Microsoft 365 Defender応答 (XDR) のシグナルを共有します。

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8626b256b1e0e3d6d19ab532388ab8ba1cf5c8f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5e0cde3a8a852fab426c1e0bf0290f9785aa0b40
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168104"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61896407"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>エンドポイント通知の Microsoft Defender の管理
 
@@ -51,7 +51,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 ## <a name="suppress-alerts"></a>アラートを抑制する
 
-警告が表示されるのを抑制する必要があるシナリオMicrosoft Defender セキュリティ センター。 Defender for Endpoint を使用すると、組織内の既知のツールやプロセスなど、無実と知られている特定のアラートに対して抑制ルールを作成できます。
+アラートがユーザーに表示されるのを抑制する必要があるシナリオMicrosoft 365 Defender。 Defender for Endpoint を使用すると、組織内の既知のツールやプロセスなど、無実と知られている特定のアラートに対して抑制ルールを作成できます。
 
 抑制ルールは、既存のアラートから作成できます。 必要に応じて無効にし、再び有効にできます。
 
@@ -128,7 +128,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 追加されたコメントは直ちにウィンドウに表示されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [抑制ルールの管理](manage-suppression-rules.md)
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)

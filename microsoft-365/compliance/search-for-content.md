@@ -7,16 +7,16 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Microsoft 365 コンプライアンス センター のコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Skype for Business でのインスタント メッセージング会話をすばやく検索します。
-ms.openlocfilehash: 298a9f371d652a1da547ba91b437aa0300c1621b
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 21e07f09c21bbf0196b6ba113b82ec3030aada32
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645930"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936500"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索する
 
@@ -28,9 +28,9 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索ツ�
   
 - [コンテンツ検索の](content-search.md) 作成と実行
 
-- [コンテンツ検索の](content-search-reference.md) 機能参照
-
 - [検索クエリを作成し、条件を使用して](keyword-queries-and-search-conditions.md) 検索を絞り込む
+
+- [コンテンツ検索の](content-search-reference.md) 機能参照
 
 - [電子情報開示マネージャーが](permissions-filtering-for-content-search.md) 組織内のメールボックスまたはサイトのサブセットのみを検索できるよう、検索アクセス許可フィルターを構成する
 
@@ -39,8 +39,6 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索ツ�
 - [検索結果のキーワード統計](view-keyword-statistics-for-content-search.md) を表示し、必要に応じてクエリを絞り込む
 
 - [組織がインポートしたサード](use-content-search-to-search-third-party-data-that-was-imported.md)パーティ製のデータを検索Microsoft 365
-
-- [コンテンツの場所エラーを解決](retry-failed-content-search.md) するためにコンテンツ検索を再試行する
 
 - [BCC 受信者を保持](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) してそれらを検索する
 
@@ -58,13 +56,13 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索ツ�
 
 コンテンツ検索は使いやすいですが、強力なツールです。 舞台裏では、多くの問題が起こっています。 その動作とその制限を理解すればする度に、組織の検索と調査のニーズに使用できます。 以下について調べます。
   
+- [コンテンツ検索の制限](limits-for-content-search.md)(一度に実行できる検索の最大数、1 つの検索に含めるコンテンツの場所の最大数など)
+
+- [推定検索結果と実際の](differences-between-estimated-and-actual-ediscovery-search-results.md) 検索結果、および検索結果のエクスポートおよびダウンロード時に違いがある理由
+
 - [検索結果をエクスポートおよびダウンロードするときに](partially-indexed-items-in-content-search.md)、ExchangeおよびSharePointに部分的にインデックス付けされたアイテムと、それらを含めるまたは除外する方法
 
 - [部分的にインデックス付けされたアイテムを調査](investigating-partially-indexed-items-in-ediscovery.md) し、組織のアイテムへの露出を判断する
-
-- [コンテンツ検索ツール](limits-for-content-search.md)の制限 (一度に実行できる検索の最大数、1 回の検索に含めるコンテンツの場所の最大数など)
-
-- [推定検索結果と実際の](differences-between-estimated-and-actual-ediscovery-search-results.md) 検索結果、および検索結果のエクスポートおよびダウンロード時に違いがある理由
 
 - [検索の結果である電子メール](de-duplication-in-ediscovery-search-results.md) メッセージをエクスポートするときに有効にできる検索結果の重複を除外する
 
@@ -72,7 +70,7 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索ツ�
 
 場合によっては、より高度で複雑で繰り返しのコンテンツ検索タスクを実行する必要があります。 このような場合は、セキュリティ センター PowerShell でコマンドを使用する方&速くなります。 これを容易にするために、複雑なコンテンツ検索関連のタスクを完了するのに役立つ、&コンプライアンス センター PowerShell スクリプトを多数作成しました。
 
-- [ケースに対応する](use-content-search-for-targeted-collections.md) アイテムがフォルダー内にあると確信している場合に、特定のメールボックスおよびサイト フォルダー (*ターゲット コレクションと呼ばれる) を検索する
+- [ケースに対応する](use-content-search-for-targeted-collections.md)アイテムがフォルダー内にあると確信している場合に、特定のメールボックスおよびサイト フォルダー (ターゲット コレクションと呼ばれる) を検索する
 
 - [メールボックスとユーザーのOneDrive場所](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)を検索する
 

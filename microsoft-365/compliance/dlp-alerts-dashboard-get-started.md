@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: データ損失防止ポリシーのアラートの定義と管理について説明します。
-ms.openlocfilehash: 442929df84508d99ee9ae3d88bc2297e293ecc73
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3c177bc75ff0f5820a07609c04bb20851a70e52a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747344"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933529"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>データ損失防止の警告ダッシュボードを開始する
 
@@ -34,7 +34,7 @@ ms.locfileid: "60747344"
 
 DLP アラートを使用する場合は、「データ損失防止アラート ダッシュボードについて [」を確認する必要があります。](dlp-alerts-dashboard-learn.md)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 開始する前に、必要な前提条件が満たされていることを確認してください。
 
@@ -70,7 +70,6 @@ Teams [DLP](dlp-microsoft-teams.md)の対象となるエンドポイント[DLP](
 
 ### <a name="roles"></a>役割
 
-
 DLP アラート管理ダッシュボードを表示する場合、または DLP ポリシーでアラート構成オプションを編集する場合は、次のいずれかの役割グループのメンバーである必要があります。
 
 - コンプライアンス管理者
@@ -93,6 +92,25 @@ DLP アラート管理ダッシュボードにアクセスするには、次の�
 - コンテンツ エクスプローラー コンテンツ ビューアーの役割グループ
 
 データ分類コンテンツ ビューアーの役割が事前に割り当てられている。
+
+### <a name="roles-and-role-groups-in-preview"></a>プレビューでの役割と役割グループ
+
+プレビューには、アクセス制御を微調整するためにテストアウトできる役割と役割グループがあります。
+
+プレビューに含Microsoft Information Protection (MIP) ロールの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センターの役割 [」を&してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- 情報保護管理者
+- 情報保護アナリスト
+- 情報保護調査員
+- 情報保護リーダー
+
+プレビュー中の MIP 役割グループの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センター」の「役割 [グループ&参照してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- 情報保護
+- 情報保護管理者
+- 情報保護アナリスト
+- 情報保護調査員
+- 情報保護リーダー
 
 ## <a name="dlp-alert-configuration"></a>DLP アラート構成
 

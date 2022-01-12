@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 898522d5305641532d3eeeec7d687d60897a2c09
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9bff729d81a3db568560730d71ecd379fc60d5ce
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61108233"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867811"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のセキュリティ管理に関連するオンボーディングの問題のトラブルシューティング 
 
@@ -202,6 +202,9 @@ Windows Server 2012 R2 ドメインに参加しているコンピューター上
     ```
 
 7.  [保存 **] を** 選択して新しいルールを保存します。
+
+> [!NOTE]
+> このルールの変更が実行された後、Active Directory の完全同期が必要になります。 大規模な環境では、オンプレミスの Active Directory の静かな期間中に、このルールの変更と完全同期をスケジュールする必要があります。
 
 ## <a name="related-topic"></a>関連トピック
 - [Microsoft Defender for Endpoint on devices on devices with Microsoft エンドポイント マネージャー](/mem/intune/protect/mde-security-integration)

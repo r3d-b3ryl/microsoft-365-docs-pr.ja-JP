@@ -15,13 +15,13 @@ ms.collection:
 search.appverid: MET150
 ms.reviewer: inbadian, shlomiakirav
 description: Microsoft Defender for Business (プレビュー) でヘルプまたは連絡先のサポートを受ける方法について説明します。
-ms.date: 12/10/2021
-ms.openlocfilehash: 0a49dcb9f94491b189fda46947643793007c75e9
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.date: 01/06/2022
+ms.openlocfilehash: 63873d5713e6f41ead43cfbb9cbc37fd4ba6567e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507268"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938554"
 ---
 # <a name="get-help-and-support-for-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business のヘルプとサポートを受ける (プレビュー)
 
@@ -35,6 +35,11 @@ ms.locfileid: "61507268"
 Microsoft Defender for Business (プレビュー) のヘルプが必要な場合は、画面の右上隅にある [ヘルプ] アイコン (?) を選択します。 質問または問題を入力します。 クイック回答やヘルプ記事など、いくつかのオプションが一覧表示されます。
 
 質問に対する回答が表示されていない場合は、サポート チケットを開きます。
+
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+>
 
 ## <a name="see-also"></a>関連項目
 

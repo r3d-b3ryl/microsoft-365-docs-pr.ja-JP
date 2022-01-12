@@ -1,7 +1,7 @@
 ---
 title: エンドポイントのリソースに役立つ Microsoft Defender
 description: ブログへのリンクや、Microsoft Defender for Endpoint に関連するその他のリソースなどの有用なリソースにアクセスする
-keywords: Microsoft Defender セキュリティ センター、製品概要、簡潔、機能、ライセンス
+keywords: Microsoft 365 Defender、製品概要、簡潔、機能、ライセンス
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: db844645088806551231b8d26b9825340cf3a5ab
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cfd0a95e16c07ae000a0f0dad69e44d0864a9a7d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164480"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937354"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>エンドポイントのリソースに役立つ Microsoft Defender
 

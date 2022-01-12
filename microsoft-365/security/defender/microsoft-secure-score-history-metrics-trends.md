@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 386cfaa00143ee64ff2710a913e4498813380a95
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 22a8c8cdd5ebcaa8038c37b73aeeb6c5f80d4267
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530938"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932822"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Microsoft Secure Score の履歴を追跡し、目標を達成する
 
@@ -64,17 +64,13 @@ ms.locfileid: "61530938"
 
 #### <a name="comparison-bar-chart"></a>比較棒グラフ
 
-比較棒グラフは [概要] **タブ** です。グラフにカーソルを合わせると、スコアとスコアの機会が表示されます。 比較データは匿名化され、他のテナントが混在しているかどうかは正確にはわかりません。
+比較棒グラフは、[概要] タブ **で使用** できます。グラフにカーソルを合わせると、スコアとスコアの機会が表示されます。 
+
+**お客様のような組織** は、同じ地域の他のテナントの平均スコアです (少なくとも 5 つ以上のテナントを比較する場合) と、組織のサイズが類似しています。
+
+比較データは匿名化され、他のテナントが混在しているかどうかは正確にはわかりません。
 
 ![類似する組織のスコアの棒グラフ。](../../media/secure-score/secure-score-comparison-screenshot.png)
-
-- **お客様のような組織**: 他のテナントの平均スコア (比較するテナントが少なくとも 5 つ以上ある場合) は、次の条件を満たします。
-    1. 同じ業界
-    2. 同じ組織のサイズ
-    3. すべての地域
-    4. 使用される Microsoft 製品は 80% 類似しています
-    5. テナントから 20% の範囲内の営業案件 (現在のライセンスで達成できる最大スコア)
-
 
 #### <a name="comparison-trend"></a>比較傾向
 

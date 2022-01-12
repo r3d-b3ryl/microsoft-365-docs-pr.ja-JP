@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 552209e6a93ba70c0cf279694fdc703923bcc509
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 12ee0e4464383bb634605ab6553485e1a946c003
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164756"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936994"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織の脆弱性 - 脅威と脆弱性の管理
 
@@ -33,6 +33,9 @@ ms.locfileid: "61164756"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+
+> [!IMPORTANT]
+> 脅威と脅威脆弱性の管理アプリケーションとコンポーネントの Log4j の脆弱性を特定するのに役立ちます。 [詳細情報](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM) を参照してください。
 
 脅威と脆弱性の管理は、Defender for Endpoint のエンドポイント保護で同じ信号を使用して、脆弱性をスキャンおよび検出します。
 

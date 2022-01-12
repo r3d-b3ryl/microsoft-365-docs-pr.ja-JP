@@ -15,15 +15,16 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
+ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 の セーフ リンクのグローバル設定 ([次の URL をブロックする] リストと Office 365 アプリの保護) を表示および構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4386f0f1b6dee2b877790b3ae715d1fb1e5f535a
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 857519e93df9490ebeb178a23a44ddddbdfc83ef
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701515"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932597"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender の [リンク] セーフのグローバル設定を構成するOffice 365
 
@@ -36,14 +37,14 @@ ms.locfileid: "60701515"
 > [!IMPORTANT]
 > この記事は、[Microsoft Defender for Office 365](defender-for-office-365.md) をご利用の法人のお客様を対象としています。 セーフリンクに関する情報を探しているホーム ユーザーの場合は、「Advanced [Outlook Outlook.com セキュリティ」を参照してください](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-セーフ[リンクは、Microsoft Defender for Office 365](defender-for-office-365.md)の機能で、メール フロー内の受信電子メール メッセージの URL スキャン、および電子メール メッセージ内の URL とリンクのクリック検証の時間を提供します。 詳細については[、「Microsoft Defender セーフリンク」を参照Office 365。](safe-links.md)
+セーフ リンクは[、Microsoft Defender for Office 365](defender-for-office-365.md)の機能で、メール フロー内の受信電子メール メッセージの URL スキャン、および電子メール メッセージ内の URL とリンクのクリック検証の時間を提供します。 詳細については[、「Microsoft Defender セーフリンク」を参照Office 365。](safe-links.md)
 
 [リンク] ポリシーでセーフリンクの設定セーフ構成します。 手順については、「Microsoft Defender for セーフのリンク ポリシーをセットアップする[」を参照Office 365。](set-up-safe-links-policies.md)
 
 ただし、セーフリンクは、リンク ポリシー自体の外部で構成する次セーフ設定も使用します。
 
 - [ **次の URL をブロックする] リスト** 。 この設定は、アクティブなリンク ポリシーに含まれるすべてのセーフ適用されます。 詳細については、「リンク」の「次の URL をブロックする[」をセーフしてください。](safe-links.md#block-the-following-urls-list-for-safe-links)
-- セーフアプリのリンク保護Office 365します。 これらの設定は、ユーザーがアクティブな セーフ リンク ポリシーに含まれているかどうかに関係なく、Office 365 の Defender のライセンスを取得している組織内のすべてのユーザーに適用されます。 詳細については、「[Office 365 アプリ向けの安全なリンク設定](safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。
+- セーフアプリのリンクOffice 365保護。 これらの設定は、ユーザーがアクティブな セーフ リンク ポリシーに含まれているかどうかに関係なく、Office 365 の Defender のライセンスを取得している組織内のすべてのユーザーに適用されます。 詳細については、「[Office 365 アプリ向けの安全なリンク設定](safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。
 
 Microsoft 365 Defender ポータルまたは PowerShell でグローバル セーフ リンクの設定を構成できます (Exchange Online PowerShell は、Exchange Online でメールボックスを持つ適格な Microsoft 365 組織に対して、組織のスタンドアロン EOP PowerShell を使用せずに構成できます。Exchange Onlineが、Microsoft Defender を使用して、Office 365サブスクリプションを作成します)。
 
@@ -76,7 +77,7 @@ Microsoft 365 Defender ポータルまたは PowerShell でグローバル セ�
 
 [**次の URL をブロックする**] ボックスの一覧は、サポートされているアプリの [リンクセーフによって常にブロックする必要があるリンクを識別します。 詳細については、「リンク」の「次の URL をブロックする[」をセーフしてください](safe-links.md#block-the-following-urls-list-for-safe-links)。
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー]セクション&の [&脅威ポリシーとリンクセーフメールを送信する] \>  \>  \> **に移動** します。
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[安全なリンク]** の順に移動します。 [リンク] ページに直接 **移動セーフを** 使用します <https://security.microsoft.com/safelinksv2> 。
 
 2. [リンクの **セーフ] ページで**、[グローバル設定]**をクリックします**。 組織の **セーフが表示されたら、[** 次の URL をブロックする]**ボックスに移動** します。
 
@@ -119,9 +120,9 @@ Microsoft 365 Defender ポータルまたは PowerShell でグローバル セ�
 
 ## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>ポータルセーフアプリのOffice 365リンク保護をMicrosoft 365 Defenderする
 
-セーフデスクトップ アプリ、モバイル Office 365 Web アプリでサポートされているドキュメントOfficeリンク保護が適用されます。 詳細については、「[Office 365 アプリ向けの安全なリンク設定](safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。
+セーフ アプリのリンクOffice 365は、デスクトップ、モバイル、および Web アプリでサポートOfficeドキュメントに適用されます。 詳細については、「[Office 365 アプリ向けの安全なリンク設定](safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー]セクション&の [&脅威ポリシーとリンクセーフメールを送信する] \>  \>  \> **に移動** します。
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[安全なリンク]** の順に移動します。 [リンク] ページに直接 **移動セーフを** 使用します <https://security.microsoft.com/safelinksv2> 。
 
 2. [リンクの **セーフ] ページで**、[グローバル設定]**をクリックします**。 組織の **セーフリンク** ポリシーが表示されたら、[サポートされているアプリ] セクションのコンテンツに適用される 設定 で次の **設定Office 365構成** します。
 
@@ -143,7 +144,7 @@ Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowCli
 
 この例では、アプリ内のリンク保護セーフ設定をOffice 365します。
 
-- セーフアプリのOffice 365がオンになっています _(EnableSafeLinksForO365Clients_ パラメーターは使用していないので、既定値は有効$true)。
+- セーフ Office 365 アプリのリンクがオンになっています _(EnableSafeLinksForO365Clients_ パラメーターは使用していないので、既定値は $true)。
 - サポートされているアプリのブロックされた URL に関連Office 365クリックが追跡されます。
 - ユーザーは、サポートされている Office 365 アプリの元のブロックされた URL をクリックすることはできません _(AllowClickThrough_ パラメーターは使用していないので、既定値は $false)。
 
@@ -157,7 +158,7 @@ Set-AtpPolicyForO365 -TrackClicks $true
 
 セーフ リンクのグローバル設定が正常に構成されたことを確認するには ([次のURL リストと Office 365 アプリ保護設定をブロックする] をクリックして、次の手順を実行します。
 
-- Microsoft 365 Defender ポータルで、[ポリシー] セクションの[& Collaboration \> **Policies & Rules** Threat \> **Policies** セーフ \> **Links]** \> に移動し、[グローバル設定] をクリックし、表示されるフライアウトの設定を確認します。
+- [セーフ **ポータルMicrosoft 365 Defender** ページで、[グローバル設定] をクリックし、表示されるフライアウトの設定 <https://security.microsoft.com/safelinksv2> を確認します。 
 
 - PowerShell Exchange Onlineまたは PowerShell Exchange Online Protectionで、次のコマンドを実行し、設定を確認します。
 

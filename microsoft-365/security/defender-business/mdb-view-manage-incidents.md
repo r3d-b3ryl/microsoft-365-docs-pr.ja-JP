@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a73a1dcaf8b30e566b665e078d061ea0a7b4cf18
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 62036779aec92b08679d1213c1605b42388760af
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508373"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940580"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)
 
@@ -37,6 +37,11 @@ ms.locfileid: "61508373"
 - [インシデントとアラートを監視する方法](#monitor-your-incidents--alerts)
 - [アラートの重大度](#alert-severity)
 - [次の手順](#next-steps)
+
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+>
 
 ## <a name="monitor-your-incidents--alerts"></a>インシデントとアラート&監視する
 
@@ -61,7 +66,7 @@ Microsoft Defender for Business (プレビュー) は、検出された動作の
 | シナリオ | アラートの重大度 | 理由 |
 |:---|:---|:---|
 | Microsoft Defender ウイルス対策脅威を検出して停止してから、損害を与える可能性があります。 | 情報 | 脅威は、損害が発生する前に停止されました。 |
-| Microsoft Defender ウイルス対策内で実行していたマルウェアを検出します。 マルウェアが停止して修復されます。 | 低 | 個々のエンドポイントに対して一部の損害が発生した可能性があるが、マルウェアが企業に脅威を与える可能性はありません。 |
+| Microsoft Defender ウイルス対策内で実行していたマルウェアを検出します。 マルウェアが停止して修復されます。 | 低い | 個々のエンドポイントに対して一部の損害が発生した可能性があるが、マルウェアが企業に脅威を与える可能性はありません。 |
 | 実行中のマルウェアは、Microsoft Defender for Business (プレビュー) によって検出されます。 マルウェアはほぼ即座にブロックされます。 | 中または高 | マルウェアは、個々のエンドポイントと企業に脅威を与える。 |
 | 疑わしい動作は検出されますが、修復アクションはまだ実行されません。 | 低、中、高 | 重大度は、動作が企業に脅威を与える度合いによって異なります。 |
 

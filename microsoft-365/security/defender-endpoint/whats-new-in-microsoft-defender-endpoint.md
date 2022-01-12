@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5ff5eeb85409bdcf79fa448804c86d961a2ac446
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 6ac7a16158f0b2cdeaca97dae8721c805caa7a53
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311832"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940296"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -61,6 +61,8 @@ ms.locfileid: "61311832"
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
 
 ## <a name="december-2021"></a>2021 年 12 月
+
+- 脅威と脅威脆弱性の管理アプリケーションとコンポーネントの Log4j の脆弱性を特定するのに役立ちます。 [詳細情報](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM) を参照してください。
 
 - IoT デバイスの検出 (プレビュー): [デバイス](device-discovery.md) 検出で、企業ネットワークに接続されている管理されていない IoT デバイスを見つけるのに役立つ機能が追加されています。 これにより、他の IT デバイス (ワークステーション、サーバー、モバイル) と共に、IoT インベントリの単一の統合ビューが提供されます。
 
@@ -117,7 +119,7 @@ ms.locfileid: "61311832"
 
 
 ## <a name="march-2021"></a>2021 年 3 月
-- [アプリケーションを使用して改ざん防止を管理Microsoft Defender セキュリティ センター](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Windows 10、Windows Server 2016、Windows Server 2019、Windows Server 2022 のタンパープロテクション設定は、テナント接続というメソッドを使用して *管理できます*。
+- [ポータルを使用して改ざん防止をMicrosoft 365 Defenderする](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Windows 10、Windows Server 2016、Windows Server 2019、Windows Server 2022 のタンパープロテクション設定は、テナント接続というメソッドを使用して *管理できます*。
 
 
 ## <a name="january-2021"></a>2021 年 1 月

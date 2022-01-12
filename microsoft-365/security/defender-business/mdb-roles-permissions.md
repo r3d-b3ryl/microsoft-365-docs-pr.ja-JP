@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 1a003bc5ad0208972f03e761dbfb251c2b2509b0
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 9086831d4d220e66d4de1956e8a2c8e33c651262
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507424"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938542"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business での役割とアクセス許可の割り当て (プレビュー)
 
@@ -39,6 +39,12 @@ microsoft Defender for Business (プレビュー) の構成、レポートの表
 2. [セキュリティ チームの役割の割り当てを表示または編集します](#view-or-edit-role-assignments)。
 
 3. [次の手順に進みます](#next-steps)。
+
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+>
+
 
 ## <a name="roles-in-defender-for-business"></a>ビジネス向け Defender の役割
 

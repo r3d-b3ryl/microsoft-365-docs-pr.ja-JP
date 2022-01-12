@@ -27,7 +27,7 @@
           href: mdb-onboard-devices.md
         - name: 手順 5 - セキュリティ設定を構成する
           href: mdb-configure-security-settings.md
-    - name: 作業の開始
+    - name: 概要
       items:
         - name: ポータルの使用を開始する
           href: mdb-get-started.md
@@ -47,10 +47,8 @@
           href: mdb-reports.md
     - name: 設定とポリシーの管理
       items:
-        - name: ポリシーの表示と編集
-          href: mdb-view-edit-policies.md
-        - name: 新しいポリシーの作成
-          href: mdb-create-new-policy.md
+        - name: ポリシーの表示、編集、作成
+          href: mdb-view-edit-create-policies.md
         - name: ポリシーの順序
           href: mdb-policy-order.md
         - name: デバイス グループを作成する

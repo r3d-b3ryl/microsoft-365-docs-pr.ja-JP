@@ -1,5 +1,5 @@
 ---
-title: ASR ルールの展開フェーズ 2 - test
+title: ASR ルール 展開フェーズ 2 - テスト
 description: 攻撃表面の縮小ルールの展開をテストするガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 33e62ce97b5fa1374369a0d212b0c615b47f4c5f
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 996727e59108b13f32b4138713a6e54d9192218c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218120"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940568"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-2-test"></a>攻撃表面の縮小ルールの展開フェーズ 2: test
 
@@ -108,7 +108,7 @@ ASR ルールの新しい攻撃表面縮小ポリシーは、[エンドポイン
 - ソース アプリ
 - Device
 - User
-- Publisher
+- 発行元
 
 > [!div class="mx-imgBorder"]
 > ![攻撃表面の縮小ルールの検出 GroupBy フィルター](images/asr-defender365-reports-detections.png)
@@ -164,12 +164,45 @@ Endpoint Security |攻撃表面の縮小ウィンドウが開きます。
 > [!Note]
 >Microsoft Defender 365 E5 (または Windows E5?) ライセンスをお持ちの場合、このリンクは Microsoft Defender 365 Reports > 攻撃表面の縮小 > [除外][タブを開](https://security.microsoft.com/asr?viewid=exclusions)きます。
 
+### <a name="use-powershell-as-an-alternative-method-to-enable-asr-rules"></a>ASR ルールを有効にする代替方法として PowerShell を使用する
+
+MEM の代わりに PowerShell を使用すると、監査モードで ASR ルールを有効にして、機能が完全に有効になっている場合にブロックされた可能性があるアプリのレコードを表示できます。 また、通常の使用中にルールが発生する頻度を確認することもできます。
+
+監査モードで攻撃表面の縮小ルールを有効にするには、次の PowerShell コマンドレットを使用します。
+
+```PowerShell
+Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
+```
+
+攻撃 `<rule ID>` 表面の [縮小ルールの GUID 値はここで指定します](attack-surface-reduction-rules-reference.md)。
+
+監査モードで追加された攻撃表面の縮小ルールを有効にするには、次の PowerShell コマンドレットを使用します。
+
+```PowerShell
+(Get-MpPreference).AttackSurfaceReductionRules_Ids | Foreach {Add-MpPreference -AttackSurfaceReductionRules_Ids $_ -AttackSurfaceReductionRules_Actions AuditMode}
+```
+
+> [!TIP]
+> 組織内での攻撃表面の縮小ルールの動作を完全に監査する場合は、管理ツールを使用して、ネットワーク内のデバイスにこの設定を展開する必要があります。
+
+グループ ポリシー、Intune、またはモバイル デバイス管理 (MDM) 構成サービス プロバイダー (CSP) を使用して、設定を構成および展開することもできます。 詳しくは、「攻撃表面の [縮小ルール」のメイン記事を参照](attack-surface-reduction.md) してください。
+
+## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>イベント Windowsポータルの攻撃表面縮小ルールレポート ページの代わりに、イベント ビューアー レビューをMicrosoft 365 Defenderする
+
+ブロックされているアプリを確認するには、Microsoft-Windows-Windows Defender/運用ログでイベント ビューアーを開き、イベント ID 1121 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
+
+イベント ID | 説明
+-|-
+ 5007 | 設定が変更された場合のイベント
+ 1121 | ブロック モードで攻撃表面の縮小ルールが発生した場合のイベント
+ 1122 | 監査モードで攻撃表面の縮小ルールが発生した場合のイベント
+
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
 [ASR ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
 
-[ASR ルールの展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[ASR ルール 展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR ルールの展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
+[ASR ルール 展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[ASR ルールの展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
+[ASR ルール 展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)

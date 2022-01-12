@@ -1,0 +1,91 @@
+### YamlMime:Landing
+title: 今月の最も表示数の多い管理者ヘルプ記事の上位 20 件
+summary: 管理者に最も人気のあるヘルプ記事は何ですか? 毎月更新された 20 件の最も表示されるヘルプ記事のコレクションをご覧ください。 最終更新日 2022/1/5
+metadata:
+  title: 今月の最も表示数の多い管理者ヘルプ記事の上位 20 件
+  description: 毎月更新された管理者に最も人気のあるトップ 20 ヘルプ記事のコレクションをご覧ください。
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: SKjerland
+  ms.author: sharik
+  ms.date: 10/01/2021
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+  ms.collection: Adm_TOC
+  ms.openlocfilehash: c34dfad8e3a022d3dcc142eaf213cef30b5014c2
+  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "61937868"
+landingContent:
+- title: 情報
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 管理者ロールについて
+      url: admin-overview/sign-up-for-office-365.md
+  - linkListType: video
+    links:
+    - text: ヘルプまたはサポートを利用する
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+- title: ドメイン
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: DNS レコードを追加して自分のドメインを接続する
+      url: setup/setup-business-basic.md
+    - text: Microsoft 365 にドメインを追加する
+      url: setup/setup-business-standard.md
+- title: セキュリティ
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 多要素認証を設定する
+      url: setup/migrate-email-and-contacts-admin.md
+- title: 請求書とサブスクリプション
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: サブスクリプションをキャンセルする
+      url: setup/setup-business-basic.md
+    - text: サブスクリプションを支払う
+      url: setup/setup-business-standard.md
+    - text: 支払方法を管理する
+      url: setup/setup-business-standard.md
+    - text: 課金内容または請求書を表示する
+      url: setup/setup-business-standard.md
+- title: メール
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 共有メールボックスについて
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+  - linkListType: how-to-guide
+    links:
+    - text: メール転送の構成 (Microsoft 365
+      url: admin-overview/sign-up-for-office-365.md
+    - text: 共有メールボックスを作成する
+      url: admin-overview/sign-up-for-office-365.md
+    - text: 別のユーザーにメールボックス アクセス許可を付与する
+      url: admin-overview/sign-up-for-office-365.md
+    - text: ユーザー名とメール アドレスを変更する
+      url: admin-overview/sign-up-for-office-365.md
+    - text: ユーザー メールボックスを共有メールボックスに変換する
+      url: admin-overview/sign-up-for-office-365.md
+- title: ユーザー、グループ、およびパスワード
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: グループを比較する
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+  - linkListType: how-to-guide
+    links:
+    - text: ユーザーを追加して同時にライセンスを割り当てる
+      url: admin-overview/sign-up-for-office-365.md
+    - text: ユーザーにライセンスを割り当てる
+      url: admin-overview/sign-up-for-office-365.md
+    - text: 組織のパスワード有効期限ポリシーを設定します。
+      url: admin-overview/sign-up-for-office-365.md
+    - text: ユーザーが QR コードでモバイル Outlookにサインインできます
+      url: admin-overview/sign-up-for-office-365.md

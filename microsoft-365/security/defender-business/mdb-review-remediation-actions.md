@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 0b71088421b71f117eff4521eee1d8f5ef87971a
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: c67746803c9b094b6a87d9b0ab6273b883ce4cd1
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507382"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936344"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>アクション センターで修復アクションを確認する
 
@@ -38,6 +38,11 @@ ms.locfileid: "61507382"
 
 - [アクション センターの使い方](#how-to-use-the-action-center)
 - [修復アクション](#remediation-actions)
+
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+>
 
 ## <a name="how-to-use-the-action-center"></a>アクション センターの使い方
 

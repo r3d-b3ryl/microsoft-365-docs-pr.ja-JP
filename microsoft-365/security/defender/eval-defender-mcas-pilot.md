@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4b8293be5123ac57aefa3f8c5a5212e9fc8f1e95
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: cb3de75afef883743f3f5fd46c1a98fd5e1c7c10
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111053"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933040"
 ---
 # <a name="pilot-microsoft-defender-for-cloud-apps-with-microsoft-365-defender"></a>パイロット Microsoft Defender for Cloud Apps with Microsoft 365 Defender
 
@@ -41,17 +39,17 @@ ms.locfileid: "61111053"
 
 ![Microsoft Defender for Cloud Apps のパイロット手順。](../../media/defender/m365-defender-mcas-pilot-steps.png)
 
-- 手順 1。 [パイロット グループの作成 - パイロット展開を特定のユーザー グループにスコープ設定する](#step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups)
+- 手順 1. [パイロット グループの作成 - パイロット展開を特定のユーザー グループにスコープ設定する](#step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups)
 - [手順 2.保護の構成 - 条件付きアクセス アプリ制御](#step-2-configure-protection--conditional-access-app-control)
 - [手順 3.機能を試す - 環境を保護するためのチュートリアルの詳細](#step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment) 
 
 
-## <a name="step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups"></a>手順 1。 パイロット グループの作成 - パイロット展開を特定のユーザー グループにスコープ設定する
+## <a name="step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups"></a>手順 1. パイロット グループの作成 - パイロット展開を特定のユーザー グループにスコープ設定する
 
 Microsoft Defender for Cloud Apps を使用すると、展開の範囲を指定できます。 スコープを使用すると、アプリの監視対象または監視から除外する特定のユーザー グループを選択できます。 ユーザー グループを含めるか除外できます。 パイロット展開の範囲を設定するには [、「Scoped Deployment」を参照してください](/cloud-app-security/scoped-deployment)。
 
 
-## <a name="step-2-configure-protection--conditional-access-app-control"></a>手順 2。 保護の構成 - 条件付きアクセス アプリ制御
+## <a name="step-2-configure-protection--conditional-access-app-control"></a>手順 2.  保護の構成 - 条件付きアクセス アプリ制御
 
 構成できる最も強力な保護の 1 つは、条件付きアクセス アプリ制御です。 これには、Azure Active Directory (Azure AD) との統合が必要です。 これにより、関連するポリシー (正常なデバイスの要求など) を含む条件付きアクセス ポリシーを、承認したクラウド アプリに適用できます。 
 

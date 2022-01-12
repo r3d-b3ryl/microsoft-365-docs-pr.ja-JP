@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnindexedItemsLearnMore
 ms.service: O365-seccomp
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: このページで実行する電子情報開示検索Exchange、SharePointに含めるインデックスのないアイテムについて説明Microsoft 365 コンプライアンス センター。
-ms.openlocfilehash: c77c0f13de9d214da4cd6107d1346aa36be1fa25
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 66133f8f09ae65073ec542264c6aa2a0e1d5e514
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646353"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874018"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>電子情報開示の部分的にインデックス付きアイテム
 
@@ -57,11 +57,11 @@ ms.locfileid: "60646353"
   
 サポートされているファイル形式と無効になっているファイル形式の一覧については、次のトピックを参照してください。
   
-- **Exchange**  - [検索でインデックスが作成されたExchange形式](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- **Exchange**  -  [検索でインデックス付けされたファイルExchange形式](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- **Exchange**  - [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
+- **Exchange**  -  [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
 
-- **SharePoint**  - [既定のクロールされたファイル名の拡張子と](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)、ファイル内の解析されたSharePoint
+- **SharePoint** の既定のクロールされたファイル名の拡張子と解析された  -  [ファイルの種類SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>部分的にインデックス付きファイルの種類を持つメッセージとドキュメントを検索結果に返す
 
@@ -148,7 +148,7 @@ Microsoft 365 コンプライアンス センター の電子情報開示ツー�
 |パーサーの最大出力  <br/> |200 万文字  <br/> |インデックスが作成されたパーサーからのテキスト出力の最大量。 たとえば、パーサーがドキュメントから 800 万文字を抽出した場合、最初の 200 万文字だけがインデックス付けされます。  <br/> |
 |最大注釈トークン  <br/> |200 万  <br/> |電子メール メッセージのインデックスが作成される場合、各単語には、その単語のインデックスを作成する方法を指定する異なる処理命令が注釈付けされます。 処理命令の各セットは、注釈トークンと呼ばれる。 サービスの品質を維持するために、Office 365メッセージの注釈トークンは 200 万個に制限されています。  <br/> |
 |インデックス内の最大本文サイズ  <br/> |6,700 万文字  <br/> |電子メール メッセージの本文内の文字の総数とそのすべての添付ファイル。 電子メール メッセージがインデックス付けされている場合、メッセージの本文とすべての添付ファイル内のすべてのテキストが 1 つの文字列に連結されます。 インデックス付けされたこの文字列の最大サイズは 6,700 万文字です。  <br/> |
-|本文の最大一意のトークン  <br/> |100 万  <br/> |前に説明したように、トークンはコンテンツからテキストを抽出し、句読点とスペースを削除し、インデックスに格納されている単語 (トークンと呼ばれる) に分割した結果です。 たとえば、この語句には  `"cat, mouse, bird, dog, dog"` 5 つのトークンが含まれます。 ただし、これらの 4 つだけが一意のトークンです。 電子メール メッセージごとに 100 万個の一意のトークンの制限があります。ランダム トークンでインデックスが大きすぎるのを防ぐのに役立ちます。  <br/> |
+|本文の最大一意のトークン  <br/> |100 万個  <br/> |前に説明したように、トークンはコンテンツからテキストを抽出し、句読点とスペースを削除し、インデックスに格納されている単語 (トークンと呼ばれる) に分割した結果です。 たとえば、この語句には  `"cat, mouse, bird, dog, dog"` 5 つのトークンが含まれます。 ただし、これらの 4 つだけが一意のトークンです。 電子メール メッセージごとに 100 万個の一意のトークンの制限があります。ランダム トークンでインデックスが大きすぎるのを防ぐのに役立ちます。  <br/> |
 ||||
 
 ## <a name="more-information-about-partially-indexed-items"></a>部分的にインデックスが作成されたアイテムの詳細

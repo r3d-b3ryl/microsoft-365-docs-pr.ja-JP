@@ -10,15 +10,15 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 description: 管理者は、Microsoft Defender for microsoft Defender for Office 365 プラン 2 を使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 9e33da3aa34c30f273581de97cd27c2ca534e3d3
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: e1196a686cd2223327ae85e596417b051f01abd5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560797"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934107"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>Defender でフィッシング攻撃をシミュレートOffice 365
 
@@ -30,7 +30,7 @@ Microsoft Defender で計画 2 または Office 365の攻撃シミュレーシ�
 
 シミュレートされたフィッシング攻撃を起動するには、次の手順を実行します。
 
-1. ポータルの [Microsoft 365 Defender] で、[電子メール] & [攻撃シミュレーション トレーニング シミュレーション] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>  \>  \> **タブに移動** します。
+1. ポータルの [Microsoft 365 Defender] で、[電子メール] & [攻撃シミュレーション トレーニング シミュレーション] <https://security.microsoft.com>  \>  \> **タブに移動** します。
 
    [シミュレーション] タブに直接 **移動するには** 、 を使用します <https://security.microsoft.com/attacksimulator?viewid=simulations> 。
 
@@ -51,7 +51,7 @@ Microsoft Defender で計画 2 または Office 365の攻撃シミュレーシ�
 - **マルウェアの添付** ファイル: 悪意のある添付ファイルをメッセージに追加します。 ユーザーが添付ファイルを開くと、攻撃者がターゲットのデバイスを侵害するのに役立つ任意のコードが実行されます。
 - **添付ファイルのリンク**: 資格情報の収集ハイブリッドの種類。 攻撃者は電子メールの添付ファイルに URL を挿入します。 添付ファイル内の URL は、資格情報の取得と同じ手法に従います。
 - **マルウェアへのリンク**: 既知のファイル共有サービスでホストされているファイルから任意のコードを実行します。 ユーザーに送信されるメッセージには、この悪意のあるファイルへのリンクが含まれる。 ファイルを開き、攻撃者がターゲットのデバイスを侵害するのを助ける。
-- **Drive-by URL**: メッセージ内の悪意のある URL は、ユーザーのデバイスでコード コードをサイレントモードで実行および/またはインストールする見慣れた Web サイトにユーザーを連れ出します。
+- **Drive-by URL**: メッセージ内の悪意のある URL は、ユーザーのデバイスでコードをサイレントモードで実行および/またはインストールする見慣れた Web サイトにユーザーを連れ出します。
 
 説明の [詳細 **の表示]** リンクをクリックすると、詳細フライアウトが開き、その手法と、その手法から生じ得るシミュレーション手順について説明します。
 

@@ -15,15 +15,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 description: 不正な同意許可攻撃を認識して修復する方法については、Microsoft 365。
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 263bffc6eb0fc45725fa91895b7197bf40d9a956
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db401231a2db0bddf1115cbdf14ae14cc9897f57
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202412"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935452"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>不正同意の付与を検出して修復する
 
@@ -42,7 +43,7 @@ ms.locfileid: "60202412"
 これらの攻撃は、情報を呼び出しているエンティティが人間ではなく自動化だと推測する対話モデルを利用します。
 
 > [!IMPORTANT]
-> アプリからの不正な同意許可に問題が発生している疑いはありますか。 Microsoft Cloud App Security (MCAS) には、OAuth アプリを検出、調査、修復するためのツールがあります。 この MCAS の記事には、リスクの高い [OAuth](/cloud-app-security/investigate-risky-oauth)アプリの調査について説明するチュートリアルがあります。 [また、OAuth](/cloud-app-security/app-permission-policy)アプリ ポリシーを設定して、これらのアプリを承認しているアプリ要求のアクセス許可を調査し、これらのアクセス許可要求を広く承認または禁止することもできます。
+> アプリからの不正な同意許可に問題が発生している疑いはありますか。 Microsoft Defender for Cloud Apps には、OAuth アプリを検出、調査、修復するためのツールがあります。 この Defender for Cloud Apps の記事には、リスクの高い OAuth アプリの調査について説明する [チュートリアルがあります](/cloud-app-security/investigate-risky-oauth)。 [また、OAuth](/cloud-app-security/app-permission-policy)アプリ ポリシーを設定して、これらのアプリを承認しているアプリ要求のアクセス許可を調査し、これらのアクセス許可要求を広く承認または禁止することもできます。
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-microsoft-365"></a>不正な同意許可攻撃は、このサイトでどのようなMicrosoft 365?
 
@@ -50,7 +51,7 @@ ms.locfileid: "60202412"
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>この攻撃の兆候を見つける手順
 
-1. [ポータル] **Microsoft 365 Defender開き** <https://security.microsoft.com> 、[監査] を **選択します**。 または、[**監査**] ページに直接移動するには、<https://security.microsoft.com/auditlogsearch> を使用します。
+1. [ポータル] Microsoft 365 Defender開き <https://security.microsoft.com> 、[監査] を **選択します**。 または、[**監査**] ページに直接移動するには、<https://security.microsoft.com/auditlogsearch> を使用します。
 
 2. [監査 **] ページ** で、[検索] タブ **が** 選択されているのを確認し、次の設定を構成します。
    - **日付と時刻の範囲**
@@ -90,7 +91,7 @@ ms.locfileid: "60202412"
 2. [選択] ブレードAzure Active Directory選択します。
 3. [**ユーザー**] を選択します。
 4. 確認するユーザーを選択します。
-5. [アプリケーション **] を選択します**。
+5. **[アプリケーション]** を選択します。
 
 これにより、ユーザーに割り当てられているアプリと、アプリケーションに与えるアクセス許可が表示されます。
 
@@ -104,7 +105,7 @@ Illicit Consent Grant 攻撃を確認する最も簡単な方法は [ 、Get-Azu
 
 #### <a name="pre-requisites"></a>前提条件
 
-- Azure AD PowerShell ライブラリがインストールされています。
+- PowerShell Azure ADインストールされている場合。
 - スクリプトが実行されるテナントのグローバル管理者権限。
 - スクリプトを実行するコンピューターのローカル管理者。
 
@@ -148,7 +149,7 @@ Illicit Consent Grant 攻撃を確認する最も簡単な方法は [ 、Get-Azu
 
 - 次の方法で、アプリケーションのアクセス許可を Azure Active Directory取り消します。
   1. [ユーザー] ブレードで、影響 **を受けるAzure Active Directory移動** します。
-  2. [アプリケーション **] を選択します**。
+  2. **[アプリケーション]** を選択します。
   3. 不正なアプリケーションを選択します。
   4. ドリルダウン **で [削除** ] をクリックします。
 

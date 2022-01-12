@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-protecthve
-ms.custom: admindeeplinkEXCHANGE
+ms.custom: ''
 description: 管理者は、セキュリティ設定を昇格し、組織の優先度アカウントに関するレポート、アラート、および調査をMicrosoft 365できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 17143da7310542a4f77074ee83562f2626d28aa5
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 2e0964d9b023a3a7c1efdda121cc34c1f37edd06
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422293"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937954"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 の優先アカウントのセキュリティに関する推奨事項
 
@@ -104,7 +104,7 @@ microsoft Defender for Office 365 Plan 2 のユーザー タグ (Microsoft 365 E
 |エクスプローラー <p> リアルタイムの検出|Explorer **(Defender** for Office 365 Plan 2) またはリアルタイム検出 **(Defender** for Office 365 Plan 1) では、ユーザー タグが [メール] グリッド ビューと [電子メールの詳細] フライアウトに表示されます。 ユーザー タグは、フィルター可能なプロパティとして使用することもできます。 詳細については、「Explorer の  [タグ」を参照してください](threat-explorer.md#tags-in-threat-explorer)。|
 |キャンペーン ビュー|ユーザー タグは、Microsoft Defender のキャンペーン ビューの多くのフィルター可能なプロパティの 1 つで、Office 365 2 です。 詳細については、「キャンペーン ビュー [」を参照してください](campaigns.md)。|
 |脅威保護の状態レポート|脅威保護状態レポートの事実上すべてのビューと詳細テーブルで、優先度アカウントで結果を **フィルター処理できます**。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。|
-|優先度アカウントレポートの電子メールの問題|Exchange 管理センターの [優先度アカウントの電子メールの問題] レポートには、優先度アカウントの配信 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">不能</a>メッセージと遅延メッセージに関する情報 **が含まれます**。 詳細については、「優先度アカウントの [電子メールの問題」レポートを参照してください](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
+|優先度アカウントレポートの電子メールの問題|Exchange 管理センター (EAC) の [優先度アカウントの電子メールの問題] レポートには、優先度アカウントの配信不能メッセージと遅延メッセージに関する情報 **が含まれます**。 詳細については、「優先度アカウントの [電子メールの問題」レポートを参照してください](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
 |
 
 ## <a name="train-users"></a>ユーザーのトレーニング

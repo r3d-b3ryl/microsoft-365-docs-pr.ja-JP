@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/10/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 39bab3355b518d581844604f3f38ed2858e77f2f
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 5df69a578c5f4d3db7c366a0369e7efdbf934b79
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61641587"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61904787"
 ---
 # <a name="get-started-using-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business の使用を開始する (プレビュー)
 
@@ -32,6 +32,11 @@ ms.locfileid: "61641587"
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
 会社のセットアップと構成プロセスが完了したら、Microsoft Defender for Business (プレビュー) の使用を開始する最善の方法は、Microsoft 365 Defender ポータル ( ) にアクセスし、Microsoft 365 のユーザー アカウントでサインインする方法です。 [https://security.microsoft.com](https://security.microsoft.com) 
+
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+>
 
 ## <a name="navigate-the-microsoft-365-defender-portal"></a>ポータルをMicrosoft 365 Defenderする
 

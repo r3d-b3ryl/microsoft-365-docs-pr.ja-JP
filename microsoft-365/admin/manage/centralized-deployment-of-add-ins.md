@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: c560ceab5fa33af19eb40196dc643f356d1cbe87
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 409a19f9e3579978eb3e3cf03d087820e494e181
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371114"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933769"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -45,9 +45,9 @@ ms.locfileid: "61371114"
 
 すべてのユーザーのクライアントにアドインが表示されるには、最大 24 時間かかる場合があります。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
-アドインの一元展開では、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、または Microsoft 365 Enterprise ライセンス (E3/E5/F3) を使用している必要があります (Office 組織 ID を使用して)、メールボックスExchange OnlineアクティブExchange Onlineがあります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリ内に存在するか、またはサブスクリプション ディレクトリにAzure Active Directory。
+アドインの一元展開では、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、または Microsoft 365 Enterprise ライセンス (E3/E5/F3) を使用している必要があります (Office 組織 ID、Office 365 Education ライセンス (A1/A3/A5)、または Microsoft 365 Education ライセンス (A3/A5) を使用し、Exchange Online およびアクティブな Exchange Online メールボックスを持っています。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリ内に存在するか、またはサブスクリプション ディレクトリにAzure Active Directory。
 次の手順に従って、OfficeとExchange要件を確認したり、集中展開の互換性チェックを[使用できます](#centralized-deployment-compatibility-checker)。
 
 一元展開は、次の機能をサポートしていません。

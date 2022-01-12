@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f4f5dbcde4a80b01c3df7ee7c32b41afc89dbba6
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5baf1619b97be0be7225ac9042c64cf4f1532696
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301008"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61890937"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>SIEM REST API を使用したエンドポイント検出用の Microsoft Defender のプル
 
@@ -63,9 +63,9 @@ Microsoft Defender for  Endpoint は、承認サーバーとして Azure Active 
 Microsoft Defender for Endpoint API の次のメソッドを使用して、JSON 形式で検出をプルします。
 
 > [!NOTE]
-> Microsoft Defender セキュリティ センター同様のアラート検出を 1 つのアラートにマージします。 この API は、設定したクエリ パラメーターに基づいて生の形式でアラート検出をプルし、独自のグループ化とフィルター処理を適用できます。
+> Microsoft 365 Defender同様のアラート検出を 1 つのアラートにマージします。 この API は、設定したクエリ パラメーターに基づいて生の形式でアラート検出をプルし、独自のグループ化とフィルター処理を適用できます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 - 検出をプルするために Microsoft Defender for Endpoint エンドポイントを呼び出す前に、SIEM 統合アプリケーションを Azure Active Directory (AAD) で有効にする必要があります。 詳細については [、「Enable SIEM integration in Microsoft Defender for Endpoint」を参照してください](enable-siem-integration.md)。
 
@@ -115,7 +115,7 @@ Defender for Endpoint API への要求 *access_tokenフィールドの* 値を�
 
 メソッド|要求 URI
 ---|---
-取得|地域に適用可能な URI を使用します。 <p> **EU の場合**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` <p> **米国の場合**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <p> **英国の場合**: `https://wdatp-alertexporter-uk.windows.com/api/alerts`
+GET|地域に適用可能な URI を使用します。 <p> **EU の場合**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` <p> **米国の場合**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <p> **英国の場合**: `https://wdatp-alertexporter-uk.windows.com/api/alerts`
 
 ### <a name="request-header"></a>要求ヘッダー
 
@@ -135,7 +135,7 @@ untilTimeUtc|DateTime|取得される上限時間のアラートを定義しま�
 limit|int|取得するアラートの数を定義します。 最新のアラートは、定義された番号に基づいて取得されます。<p> **注**: 指定しない場合、時間範囲内で使用可能なすべてのアラートが取得されます。
 machinegroups|string|アラートをプルするデバイス グループを指定します。 <p> **注**: 指定しない場合、すべてのデバイス グループからのアラートが取得されます。 <p> 例: <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
 DeviceCreatedMachineTags|string|レジストリからの単一のデバイス タグ。
-CloudCreatedMachineTags|string|このページで作成されたデバイス Microsoft Defender セキュリティ センター。
+CloudCreatedMachineTags|string|このページで作成されたデバイス Microsoft 365 Defender。
 
 ### <a name="request-example"></a>要求の例
 
@@ -348,7 +348,7 @@ HTTP エラー コード|説明
 403|承認されていない例外 - テナント管理者によって管理されていないドメインまたはテナントの状態が削除されます。
 500|サービスのエラー。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
 - [エンドポイント検出用の Microsoft Defender をプルする ArcSight の構成](configure-arcsight.md)

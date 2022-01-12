@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーでトレーニング可能な分類子にフィードバックを提供する方法について学習します。
-ms.openlocfilehash: 00162bcce2f8291ff151d1f8a9f692581c9ee9b2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bbc724b94997a4668115314df0c627dcfa5ddc77
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203281"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933613"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>コンテンツ エクスプローラーで分類子を再トレーニングする方法
 
-トレーニングMicrosoft 365分類子は、さまざまな種類のコンテンツを認識するトレーニングツールです。 トレーニングが完了したら、このラベルを使用して、Office、通信コンプライアンス ポリシー、および保持ラベル ポリシーを適用するためのアイテムを識別できます。
+トレーニングMicrosoft 365分類子は、さまざまな種類のコンテンツを認識するトレーニングツールです。 トレーニングが完了したら、このポリシーを使用して、Office、通信コンプライアンス ポリシー、および保持ラベル ポリシーを適用するためのアイテムを識別できます。
 
-この記事では、追加のフィードバックを提供することで、カスタムトレーニング可能な分類子といくつかの事前トレーニング済みの分類子のパフォーマンスを向上させる方法を示します。
+この記事では、追加のフィードバックを提供することで、カスタムトレーニング可能な分類子のパフォーマンスを向上させる方法について説明します。
 
 分類子の種類の詳細については、「トレーニング可能な分類子について」 [を参照してください](classifier-learn-about.md)。
 
@@ -36,8 +36,10 @@ ms.locfileid: "60203281"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
 
+> [!NOTE]
+> 事前トレーニング済みの分類子は再トレーニングできません。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>Permissions
 
 コンプライアンス センターで分類子にMicrosoft 365するには、次のMicrosoft 365使用します。
 

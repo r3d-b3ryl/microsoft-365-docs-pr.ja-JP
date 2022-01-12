@@ -16,16 +16,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c1bdd43fb4382eaca1a04e27058a8fd1accbb67f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e83665bb444cd01c27cdfd6ec3a66ce6fa5bf8ff
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646401"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940007"
 ---
 # <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 

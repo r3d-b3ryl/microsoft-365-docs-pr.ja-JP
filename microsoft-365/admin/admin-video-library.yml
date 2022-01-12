@@ -1,0 +1,160 @@
+### YamlMime:Landing
+title: 管理者トレーニング ビデオ ライブラリ
+summary: 短いビデオを使用してビジネスのMicrosoft 365設定および管理する方法について説明します。
+metadata:
+  title: 管理者トレーニング ビデオ ライブラリ
+  description: 短いビデオを使用してビジネスのMicrosoft 365設定および管理する方法について説明します。
+  ms.service: O365-administration
+  ms.prod: microsoft-365-business
+  ms.topic: landing-page
+  author: pebaum
+  ms.author: pebaum
+  ms.date: 11/29/2021
+  ms.localizationpriority: high
+  ms.openlocfilehash: b454a6938a28c4f14f1678ae2d8a47430a0086de
+  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "61934738"
+landingContent:
+- title: 開始する
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Microsoft 365 とは
+      url: admin-overview/what-is-microsoft-365.md
+    - text: セットアップの概要
+      url: setup/plan-your-setup.md
+    - text: サブスクリプションを選択する
+      url: admin-overview/sign-up-for-office-365.md
+- title: クラウドのセットアップ
+  linkLists:
+  - linkListType: video
+    links:
+    - text: サブスクリプションにサインアップする
+      url: admin-overview/sign-up-for-office-365.md
+    - text: サービスをセットアップする
+      url: setup/business-set-up.md
+    - text: Windows 10 PC をセキュリティで保護する
+      url: setup/secure-win-10-pcs.md
+- title: デバイスのセットアップ
+  linkLists:
+  - linkListType: video
+    links:
+    - text: PC を Microsoft 365 に接続する
+      url: setup/set-up-windows-devices.md
+    - text: Microsoft Office アプリをインストールする
+      url: setup/install-applications.md
+    - text: Outlook をメール用にセットアップする
+      url: setup/setup-outlook.md
+    - text: メールをインポートおよびリダイレクトする
+      url: setup/migrate-email-and-contacts-admin.md
+    - text: ファイルを OneDrive に移動する
+      url: setup/files-to-onedrive.md
+    - text: 会社のファイルを SharePoint に移動する
+      url: setup/files-to-sharepoint.md
+- title: モバイル
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Admin モバイル アプリを入手する
+      url: admin-overview/admin-mobile-app.md
+- title: Business Voice
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Business Voice とは
+      url: /microsoftteams/business-voice/whats-business-voice
+    - text: 企業向け音声を設定する
+      url: /microsoftteams/business-voice/set-up-overview
+- title: サービスの管理
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 管理者とは
+      url: add-users/about-admin-roles.md
+    - text: 管理センターの概要
+      url: admin-overview/admin-center-overview.md
+    - text: 全社的な署名を作成する
+      url: setup/create-signatures-and-disclaimers.md
+    - text: サービス利用状況レポートを基に対策を講じる
+      url: activity-reports/activity-reports.md
+    - text: 別のドメインを追加する
+      url: setup/add-domain.md
+    - text: 新しいビジネス メール アドレスを設定する
+      url: email/change-email-address.md
+- title: ユーザーの管理
+  linkLists:
+  - linkListType: video
+    links:
+    - text: ユーザー パスワードをリセットする
+      url: add-users/reset-passwords.md
+    - text: セルフサービスによるパスワードのリセットを設定する
+      url: add-users/let-users-reset-passwords.md
+    - text: ユーザーを追加する
+      url: add-users/add-users.md
+    - text: ユーザーを削除する
+      url: add-users/remove-former-employee.md
+    - text: 別の管理者を追加する
+      url: add-users/assign-admin-roles.md
+    - text: ユーザー名またはメール アドレスを変更する
+      url: add-users/change-a-user-name-and-email-address.md
+    - text: ユーザーを別のサブスクリプションに移動する
+      url: ../commerce/try-or-buy-microsoft-365.md
+- title: ライセンスと課金の管理
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 請求書を表示、ダウンロード、または印刷する
+      url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
+    - text: 新しいライセンスを購入する
+      url: ../commerce/licenses/buy-licenses.md
+    - text: 既存のライセンスを削除する
+      url: ../commerce/licenses/buy-licenses.md
+    - text: 支払方法を更新する
+      url: ../commerce/billing-and-payments/manage-payment-methods.md
+- title: デバイスの管理
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Windows 10 Pro デバイスをセキュリティで保護する
+      url: devices/protection-settings-for-windows-10-pcs.md
+    - text: iOS の Office アプリをセキュリティで保護する
+      url: devices/app-protection-settings-for-android-and-ios.md
+- title: セキュリティとコンプライアンス
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Microsoft 365 Business Premium セキュリティの概要
+      url: security-and-compliance/secure-your-business-data.md
+    - text: 従業員のアカウントを MFA で保護する
+      url: security-and-compliance/set-up-multi-factor-authentication.md
+    - text: マルウェア検出を有効にする
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail
+    - text: ランサムウェア用のメール ルールを作成する
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-ransomware
+    - text: フィッシング詐欺対策を設定する
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks
+    - text: 安全な添付ファイルを管理する
+      url: security-and-compliance/increase-threat-protection.md
+    - text: 安全なリンクを管理する
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
+    - text: データの損失を防止する
+      url: security-and-compliance/set-up-compliance.md
+    - text: 秘密度ラベルを作成する
+      url: security-and-compliance/set-up-compliance.md
+- title: サポート
+  linkLists:
+  - linkListType: video
+    links:
+    - text: ヘルプまたはサポートを利用する
+      url: get-help-support.md
+    - text: 従業員のクイック セットアップ
+      url: ../business-video/employee-quick-setup.md
+- title: Google Workspace から切り替える
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Google Workspace から切り替える
+      url: ../business-video/moveto-microsoft-365/move-from-google-workspace-overview.md

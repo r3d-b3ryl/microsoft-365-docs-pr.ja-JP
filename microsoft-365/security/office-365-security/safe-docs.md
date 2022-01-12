@@ -16,12 +16,12 @@ ms.collection:
 description: 詳細については、「セーフ/A5 または Microsoft 365 E5/A5 セキュリティMicrosoft 365 E5ドキュメント」を参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64995aca1542087682c2871f434698cc20d3ac91
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: beb34c04f93fe853678b30bcd9b5f7a621f4666b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262825"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934995"
 ---
 # <a name="safe-documents-in-microsoft-365-e5a5"></a>セーフ/A5 Microsoft 365 E5ドキュメント
 
@@ -49,7 +49,7 @@ ms.locfileid: "61262825"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- [ ] で Microsoft 365 Defenderポータルを開きます <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> 。 **[安全な添付ファイル]** ページに直接移動するには、<https://security.microsoft.com/safeattachmentv2> を使用します。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **[安全な添付ファイル]** ページに直接移動するには、<https://security.microsoft.com/safeattachmentv2> を使用します。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -73,7 +73,7 @@ ms.locfileid: "61262825"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-safe-documents"></a>[ドキュメント] Microsoft 365 Defenderを構成するには、セーフ ポータルを使用します。
 
-1. [ポリシー] Microsoft 365 Defenderを開き、[ポリシー] セクション&の [&脅威ポリシーと添付ファイルセーフメール] に \>  \>  \> **移動** します。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクション&の [&脅威ポリシーと添付ファイルセーフメールを送信する] <https://security.microsoft.com>  \>  \>  \> **に移動** します。 **[安全な添付ファイル]** ページに直接移動するには、<https://security.microsoft.com/safeattachmentv2> を使用します。
 
 2. **[安全な添付ファイル]** ページで **[グローバル設定]** をクリックします。
 

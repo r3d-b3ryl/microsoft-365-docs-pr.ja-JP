@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 92834840bc020693d6edd203b04ad427ebb80045
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4f725a74d63feaffeba43dd832ed4eb1df744d7d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284171"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935404"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>一般的なゼロ信頼 ID とデバイス アクセス ポリシー
 
@@ -63,15 +63,15 @@ Here's a one-page PDF summary:
 
 |保護レベル|ポリシー|詳細情報|ライセンス|
 |---|---|---|---|
-|**開始点**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
+|**開始点**|[サインインのリスクが *中*、または *高* のときに MFA を要求する](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
 ||[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-multi-factor)|最新の認証を使用しないクライアントは条件付きアクセス ポリシーをバイパスできます。そのため、これらをブロックすることが重要です。|Microsoft 365 E3 または E5|
 ||[高リスク ユーザーはパスワードを変更する必要がある](#high-risk-users-must-change-password)|リスクの高いアクティビティが自分のアカウントで検出された場合、サインイン時にユーザーにパスワードの変更を強制的に行います。|Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
 ||[アプリケーション保護ポリシー (APP) データ保護の適用](#apply-app-data-protection-policies)|プラットフォーム (Windows iOS/iPadOS、Android) ごとに 1 つの Intune アプリ保護ポリシー。|Microsoft 365 E3 または E5|
 ||[承認済みアプリとアプリ保護を要求する](#require-approved-apps-and-app-protection)|iOS、iPadOS、Android を使用してスマートフォンやタブレットにモバイル アプリ保護を適用します。|Microsoft 365 E3 または E5|
 |**エンタープライズ**|[サインイン リスクが低い、中程度、または高い場合に MFA *を要求**する*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
 ||[デバイス コンプライアンス ポリシーの定義](#define-device-compliance-policies)|プラットフォームごとに 1 つのポリシー。|Microsoft 365 E3 または E5|
-||[準拠している PC とモバイル デバイスを要求する](#require-compliant-pcs-and-mobile-devices)|Pc (Windows macOS) と電話またはタブレット (iOS、iPadOS、または Android) の両方に Intune 管理を適用します。|Microsoft 365 E3 または E5|
-|**特殊なセキュリティ**|[*常に* MFA を要求する](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 または E5|
+||[準拠した PC とモバイル デバイスが必要](#require-compliant-pcs-and-mobile-devices)|Pc (Windows macOS) と電話またはタブレット (iOS、iPadOS、または Android) の両方に Intune 管理を適用します。|Microsoft 365 E3 または E5|
+|**特殊なセキュリティ**|[*常に* MFA が必要](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 または E5|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>グループとユーザーへのポリシーの割り当て
@@ -142,7 +142,7 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 |Setting|[プロパティ]|値|Action|
 |---|---|---|---|
 |許可|**Grant access**||選択|
-|||**多要素認証を要求する**|小切手|
+|||**多要素認証を要求する**|チェック|
 ||**選択したコントロールすべてが必要**||選択|
 |
 
@@ -203,7 +203,7 @@ What if ツール [を使用して](/azure/active-directory/active-directory-con
 |型|[プロパティ]|値|Action|
 |---|---|---|---|
 |Access|**SSL 経由でのみ**||選択|
-|||**パスワードの変更を必須とする**|小切手|
+|||**パスワードの変更を必須とする**|チェック|
 |
 
 [完了 **] を** 選択して、アクセス設定 **を** 保存します。
@@ -214,7 +214,7 @@ What if ツール [を使用して](/azure/active-directory/active-directory-con
 
 このポリシーを Configure [Azure AD パスワード](/azure/active-directory/authentication/concept-password-ban-bad)保護と組み合わせて使用します。このポリシーは、既知の脆弱なパスワードとそのバリアント、および組織に固有の追加の弱い用語を検出してブロックします。 パスワード保護Azure AD使用すると、変更されたパスワードが強力なパスワードになります。
 
-## <a name="apply-app-data-protection-policies"></a>APP データ保護ポリシーの適用
+## <a name="apply-app-data-protection-policies"></a>アプリ データ保護ポリシーを適用する
 
 APP は、許可するアプリと、組織のデータに対して実行できるアクションを定義します。 APP で使用できる選択肢により、組織は特定のニーズに合わせて保護を調整できます。 場合によっては、完全なシナリオを実装するためにどのポリシー設定が必要であるかが明確ではないことがあります。 組織がモバイル クライアント エンドポイントのセキュリティ強化を優先できるよう、Microsoft では、iOS および Android モバイル アプリ管理のための APP データ保護フレームワークの分類を導入しました。
 
@@ -228,7 +228,7 @@ APP データ保護フレームワークは 3 つの異なる構成レベルに�
 
 [ゼロ](microsoft-365-policies-configurations.md)トラスト ID とデバイス アクセス構成で概説されている原則を使用して、開始点と Enterprise 保護層は、レベル 2 エンタープライズ拡張データ保護設定と密接にマップされます。 特殊なセキュリティ保護層は、レベル 3 エンタープライズの高データ保護設定に密接にマップされます。
 
-|保護レベル|アプリ保護ポリシー|詳細情報|
+|保護レベル|アプリ保護ポリシー|詳細|
 |---|---|---|
 |開始点|[レベル 2 の拡張データ保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。|
 |大企業|[レベル 2 の拡張データ保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。|
@@ -242,18 +242,16 @@ APP データ保護フレームワークは 3 つの異なる構成レベルに�
 
 ## <a name="require-approved-apps-and-app-protection"></a>承認済みアプリと APP 保護を要求する
 
-Intune で適用した APP 保護ポリシーを適用するには、条件付きアクセス ポリシーを作成して、承認済みのクライアント アプリと APP 保護ポリシーで設定された条件を要求する必要があります。
+Intune で適用したアプリ保護ポリシーを適用するには、条件付きアクセス ポリシーを作成して、承認済みのクライアント アプリと APP 保護ポリシーで設定された条件を要求する必要があります。
 
-アプリ保護ポリシーを適用するには、「条件付きアクセスによるクラウド アプリ アクセスのアプリ保護ポリシーを要求する」で説明されている一連のポリシーが [必要です](/azure/active-directory/conditional-access/app-protection-based-conditional-access)。 これらのポリシーは、それぞれ、この推奨される ID およびアクセス構成ポリシーセットに含まれています。
+アプリ保護ポリシーを適用するには、「条件付きアクセスによるクラウド アプリ アクセスのアプリ保護ポリシーの要求」で説明されている一連のポリシー [が必要です](/azure/active-directory/conditional-access/app-protection-based-conditional-access)。 これらのポリシーは、それぞれ、この推奨される ID およびアクセス構成ポリシーセットに含まれています。
 
-承認済みアプリと APP 保護を必要とする条件付きアクセス ポリシーを作成するには、「シナリオ[1: Microsoft 365](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)アプリで Azure AD 条件付きアクセス ポリシーを Microsoft 365 用に構成する」に従って、iOS と Android の Outlook を許可するが、OAuth 対応をブロックするアプリ保護ポリシーが必要です。Exchange ActiveSyncに接続するクライアントExchange Online。
+承認済みアプリと APP 保護を必要とする条件付きアクセス ポリシーを作成するには、「条件付きアクセス[:](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection)承認済みのクライアント アプリまたはアプリ保護ポリシーを要求する」の手順に従います。アプリ保護ポリシーで保護されているアプリ内のアカウントだけが Microsoft 365 エンドポイントにアクセスできます。
 
    > [!NOTE]
-   > このポリシーにより、モバイル ユーザーは該当するアプリを使用Officeすべてのエンドポイントにアクセスできます。
+   > このポリシーにより、モバイル ユーザーは該当するアプリをMicrosoft 365すべてのエンドポイントにアクセスできます。
 
-モバイル アクセスを有効にしている場合は、Exchange Online [ActiveSync](secure-email-recommended-policies.md#block-activesync-clients)クライアントを実装します。これは、基本認証を利用しているクライアントが Exchange ActiveSync クライアントに接続Exchange Online。 このポリシーは、この記事の上部にある図には示されません。 電子メールのセキュリティ保護に関する [ポリシーの推奨事項で説明され、説明されています](secure-email-recommended-policies.md)。
-
-iOS と Android 用エッジを必要とする条件付きアクセス ポリシーを作成するには、「シナリオ[2:](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)ブラウザー アプリでは、アプリ保護ポリシーを使用して承認されたアプリを必要としますが、他のモバイル デバイス Web ブラウザーが Microsoft 365 エンドポイントに接続することをブロックする」の「ステップ 2: Microsoft 365 用の Azure AD 条件付きアクセス ポリシーを構成する」に従います。
+このポリシーは、クライアントExchange ActiveSync接続をブロックExchange Online。 ただし、ポリシーを処理する個別のポリシーをExchange ActiveSync。 詳細については[、「ActiveSync クライアントをブロック](secure-email-recommended-policies.md#block-activesync-clients)する」を参照してください。これは、基本認証を利用Exchange ActiveSyncクライアントがクライアントに接続Exchange Online。 このポリシーは、この記事の上部にある図には示されません。 電子メールのセキュリティ保護に関する [ポリシーの推奨事項で説明され、説明されています](secure-email-recommended-policies.md)。
 
  これらのポリシーは、許可コントロールを利用します [[承認済みクライアント アプリ](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) を必要とする] と [アプリ保護 [ポリシーを要求する] を使用します](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)。
 
@@ -316,7 +314,7 @@ iOS/iPadOS セキュリティ構成フレームワークは、いくつかの異
 
 ゼロトラスト ID とデバイス[](microsoft-365-policies-configurations.md)アクセス構成で概説されている原則を使用して、開始点と Enterprise 保護層は、レベル 2 の強化されたセキュリティ設定と密接にマップされます。 特殊なセキュリティ保護層は、レベル 3 の高セキュリティ設定に密接にマップされます。
 
-|保護レベル  |デバイス ポリシー |詳細情報  |
+|保護レベル  |デバイス ポリシー |詳細  |
 |---------|---------|---------|
 |開始点     |強化されたセキュリティ (レベル 2)         |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
 |大企業     |強化されたセキュリティ (レベル 2)         |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
@@ -348,10 +346,10 @@ Android Enterprise のフル マネージド デバイスの場合:
 
 Android Enterpriseプロファイル デバイスの場合:
 
-|保護レベル  |デバイス ポリシー |詳細情報  |
+|保護レベル  |デバイス ポリシー |詳細  |
 |---------|---------|---------|
 |開始点     |作業プロファイル: 基本セキュリティ (レベル 1)      |該当なし         |
-|大企業     |作業プロファイル: 基本セキュリティ (レベル 1)         |N/A         |
+|大企業     |作業プロファイル: 基本セキュリティ (レベル 1)         |該当なし         |
 |開始点     |完全管理: 拡張セキュリティ (レベル 2)       |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
 |大企業     |完全管理: 拡張セキュリティ (レベル 2)         |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
 |特殊なセキュリティ     |高セキュリティ (レベル 3)         |レベル 3 で適用されるポリシー設定には、レベル 1 とレベル 2 に推奨されるポリシー設定すべてが含まれます。以下のポリシー設定に追加または更新して、レベル 2 よりも多くのコントロールとより高度な構成を実装します。         |
@@ -382,17 +380,17 @@ Android Enterpriseプロファイル デバイスの場合:
 |Password|モバイル デバイスのロックを解除するパスワードを要求する|必須|選択|
 ||単純なパスワード|ブロック|選択|
 ||パスワードの種類|デバイスの既定値|選択|
-||パスワードの最小文字数|6 |種類|
-||パスワードが要求されるまでの非アクティブの最長時間 (分)|15 |種類 <p> この設定は、Android バージョン 4.0 以上または KNOX 4.0 以上でサポートされています。 iOS デバイスの場合、iOS 8.0 以上でサポートされています。|
-||パスワードの有効期限 (日)|41|種類|
-||再使用を禁止するパスワード世代数|5|種類|
+||パスワードの最小文字数|6 |型|
+||パスワードが要求されるまでの非アクティブの最長時間 (分)|15 |型 <p> この設定は、Android バージョン 4.0 以上または KNOX 4.0 以上でサポートされています。 iOS デバイスの場合、iOS 8.0 以上でサポートされています。|
+||パスワードの有効期限 (日)|41|型|
+||再使用を禁止するパスワード世代数|5|型|
 ||デバイスがアイドル状態から戻る際にパスワードを要求する (Mobile および Holographic)|必須|Windows 10以降に使用可能|
 |暗号化|デバイス上のデータ ストレージの暗号化|必須|選択|
 |デバイス セキュリティ|ファイアウォール|必須|選択|
 ||ウイルス対策|必須|選択|
 ||スパイウェア対策|必須|選択 <p> この設定では、アプリに登録されているスパイウェア対策Windows セキュリティ必要です。|
 |クラウド用 Defender|Microsoft Defender マルウェア対策|必須|選択|
-||Microsoft Defender マルウェア対策の最小バージョン||種類 <p> デスクトップでのみWindows 10されます。 Microsoft では、最新バージョンから 5 つ以下のバージョンをお勧めします。|
+||Microsoft Defender マルウェア対策の最小バージョン||型 <p> デスクトップでのみWindows 10されます。 Microsoft では、最新バージョンから 5 つ以下のバージョンをお勧めします。|
 ||Microsoft Defender マルウェア対策の署名を最新の情報に更新する|必須|選択|
 ||リアルタイム保護|必須|選択 <p> デスクトップおよび以降のデスクトップWindows 10のみサポート|
 |
@@ -435,7 +433,7 @@ To require compliant PCs:
 
 --> 
 
-## <a name="require-compliant-pcs-and-mobile-devices"></a>準拠している PC とモバイル デバイスを要求する
+## <a name="require-compliant-pcs-and-mobile-devices"></a>準拠した PC とモバイル デバイスが必要
 
 すべてのデバイスのコンプライアンスを要求するには、次の操作を行います。
 

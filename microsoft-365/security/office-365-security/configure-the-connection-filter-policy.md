@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、電子メール サーバーからの電子メールを許可またはブロックExchange Online Protection (EOP) で接続フィルターを構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b59e7a5ed37cb4694ae72759815b46b1248c09f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fbc481468fca8562c11e89b2e6c9dfa6361126a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208999"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939815"
 ---
 # <a name="configure-connection-filtering"></a>接続フィルターを構成する
 
@@ -36,7 +36,7 @@ ms.locfileid: "60208999"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-Exchange Online のメールボックスまたは Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 顧客を持つ Microsoft 365 顧客の場合は、EOP (具体的には既定の接続フィルター ポリシー) で接続フィルターを使用して、良いソースまたは悪いソースを識別します。電子メール サーバーを IP アドレスで指定します。 既定の接続フィルター ポリシーの主な構成要素は次のとおりです。
+ユーザーがメールボックスを使用Microsoft 365 Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) のお客様Exchange Online メールボックスでは、EOP (具体的には既定の接続フィルター ポリシー) で接続フィルターを使用して、IP アドレスによって良い送信元メール サーバーまたは悪い送信元メール サーバーを識別します。 既定の接続フィルター ポリシーの主な構成要素は次のとおりです。
 
 - **IP 許可一覧**: IP アドレスまたは IP アドレス範囲で指定した送信元メール サーバーからの受信メッセージすべてについて、スパム フィルターをスキップします。 これらのソースからのメッセージでスパム フィルター処理が引き続き発生する可能性があるシナリオについては、この記事の後半の [「IP](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) 許可一覧のソースからのメッセージがフィルター処理されるシナリオ」セクションを参照してください。 IP 許可一覧が全体の差出人セーフ リスト戦略に適合する方法の詳細については、「EOP で差出人セーフ リストを作成する」 [を参照してください](create-safe-sender-lists-in-office-365.md)。
 
@@ -44,7 +44,7 @@ Exchange Online のメールボックスまたは Exchange Online メールボ�
 
 - **セーフリスト**: セーフ *リスト* は、顧客構成を必要とする Microsoft データセンターの動的許可リストです。 Microsoft は、サブスクリプションからさまざまなサード パーティのリストへの信頼できる電子メール ソースを識別します。 セーフ リストの使用を有効または無効にします。セーフ リストでソース メール サーバーを構成できません。 セーフ リスト上の電子メール サーバーからの受信メッセージでは、スパム フィルターはスキップされます。
 
-この記事では、Microsoft 365 Microsoft 365 Defender ポータルまたは PowerShell で既定の接続フィルター ポリシーを構成する方法について説明します (Exchange Online PowerShell for Microsoft 365 組織では、Exchange Online。スタンドアロン EOP PowerShell (メールボックスを使用しない組織Exchange Online)。 EOP が接続フィルターを使用する方法の詳細については、「スパム対策保護」を [参照してください](anti-spam-protection.md)。
+この記事では、Microsoft 365 Microsoft 365 Defender ポータルまたは PowerShell で既定の接続フィルター ポリシーを構成する方法について説明します (Exchange Online PowerShell for Microsoft 365 組織のメールボックスがExchange Online;スタンドアロン EOP PowerShell (メールボックスを使用しない組織Exchange Online)。 EOP が接続フィルターを使用する方法の詳細については、「スパム対策保護」を [参照してください](anti-spam-protection.md)。
 
 > [!NOTE]
 > IP 許可一覧、セーフ リスト、および IP ブロック リストは、組織内の電子メールを許可またはブロックする全体的な戦略の 1 部です。 詳細については、「差出人セーフ [リストの作成」および](create-safe-sender-lists-in-office-365.md) 「受信拒否 [リストの作成」を参照してください](create-block-sender-lists-in-office-365.md)。
@@ -63,7 +63,7 @@ Exchange Online のメールボックスまたは Exchange Online メールボ�
 
   **注**:
 
-  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 許可またはブロックする電子メール サーバー (送信者) の送信元 IP アドレスを検索するには、メッセージ ヘッダーの接続 IP (**CIP**) ヘッダー フィールドを確認します。 さまざまな電子メール クライアントでメッセージ ヘッダーを表示するには、「インターネット メッセージ ヘッダーを表示する」を参照[Outlook。](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
@@ -74,7 +74,7 @@ Exchange Online のメールボックスまたは Exchange Online メールボ�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>既定の接続Microsoft 365 Defenderポリシーを変更するには、このポータルを使用します。
 
-1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。 **[スパム対策ポリシー]** ページに直接移動するには、<https://security.microsoft.com/antispam> を使用します。
 
 2. [スパム **対策ポリシー]** ページで、ポリシーの名前をクリックして、一覧から [接続フィルター ポリシー **(既定)]** を選択します。
 
@@ -105,7 +105,7 @@ Exchange Online のメールボックスまたは Exchange Online メールボ�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>既定の接続Microsoft 365 Defenderポリシーを表示するには、次のポータルを使用します。
 
-1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。 **[スパム対策ポリシー]** ページに直接移動するには、<https://security.microsoft.com/antispam> を使用します。
 
 2. [スパム **対策ポリシー] ページで** 、ポリシーの一覧に次のプロパティが表示されます。
 
@@ -124,7 +124,7 @@ Exchange Online のメールボックスまたは Exchange Online メールボ�
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
 ```
 
-**注意**:
+**注**:
 
 - 有効な IP アドレスまたはアドレス範囲の値は次のとおりです。
   - 単一 IP: たとえば、192.168.1.1。
@@ -148,11 +148,11 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 構文とパラメーターの詳細については [、「Set-HostedConnectionFilterPolicy」を参照してください](/powershell/module/exchange/set-hostedconnectionfilterpolicy)。
 
-## <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
+## <a name="how-do-you-know-this-worked"></a>実行が適切に行われたことを確認する方法
 
 既定の接続フィルター ポリシーが正常に変更されたことを確認するには、次の手順を実行します。
 
-- Microsoft 365 Defender ポータルで、[ポリシー] セクションの [メール **& コラボレーション** ポリシー & Rules Threat \>  \> **policies** \> **Anti-spam]** に移動し、ポリシーの名前をクリックして一覧から [接続フィルター ポリシー \> (既定 **)]** を選択し、設定を確認します。
+- Microsoft 365 Defenderポータルの [スパム対策] ページで、ポリシーの名前をクリックして一覧から [接続フィルター ポリシー <https://security.microsoft.com/antispam> **(既定)]** を選択し、設定を確認します。
 
 - PowerShell Exchange Onlineスタンドアロン EOP PowerShell で、次のコマンドを実行し、設定を確認します。
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: f98461071de0db8179339b28b1c67c2bc9437c52
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3f51ce7c0eb45861a8b5277266b18e6d03e53178
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166508"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872491"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で自動調査および修復機能を構成する
 
@@ -42,14 +42,14 @@ ms.locfileid: "61166508"
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>自動調査と修復を有効にする
 
-1. グローバル管理者またはセキュリティ管理者として、管理者 ( ) にMicrosoft Defender セキュリティ センター <https://securitycenter.windows.com> サインインします。
+1. グローバル管理者またはセキュリティ管理者として、ポータル ( ) に移動Microsoft 365 Defenderサインイン <https://security.microsoft.com> します。
 2. ナビゲーション ウィンドウで、[次へ]**を設定。**
 3. [全般] **セクションで** 、[高度な機能 **] を選択します**。
 4. [自動調査]**と [アラートの****自動解決] の両方をオンにします**。
 
 ## <a name="set-up-device-groups"></a>デバイス グループを設定する
 
-1. [Microsoft Defender セキュリティ センター ] ( <https://securitycenter.windows.com> ) の [アクセス許可]**設定** で、[デバイス グループ]**を選択します**。 
+1. [アクセス許可] Microsoft 365 Defender ( ) の [アクセス許可] 設定[デバイス <https://security.microsoft.com> グループ]**を選択します**。  
 2. [+ **デバイス グループの追加] を選択します**。
 3. 次のように、少なくとも 1 つのデバイス グループを作成します。
    - デバイス グループの名前と説明を指定します。

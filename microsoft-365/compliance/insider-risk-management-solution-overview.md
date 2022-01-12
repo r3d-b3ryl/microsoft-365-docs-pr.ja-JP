@@ -16,20 +16,20 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: bee78aa071ec24fae499a3e144be78aab6e97dcc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c58a0022ed618cdcbd6c81c9d39d9a387d8f1007
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667730"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938819"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>インサイダーリスクMicrosoft 365
 
 従業員は、幅広いプラットフォームとサービスでデータを作成、管理、共有するためのアクセスが増えています。 ほとんどの場合、組織には、コンプライアンス要件と従業員のプライバシー基準を満たしながら、組織全体のリスクを特定および軽減するためのリソースとツールが限られています。 これらのリスクには、従業員を退出してデータを盗み、偶発的な過剰共有や悪意のある意図による組織外の情報のデータ漏洩が含まれる場合があります。
 
-Microsoft 365の Insider リスク管理は、サービスとサードパーティのインジケーターの全幅を使用して、リスクの高いユーザー アクティビティをすばやく特定し、トリアージし、行動するのに役立ちます。 Microsoft 365 および Microsoft Graph のログを使用すると、インサイダー リスク管理を使用して、リスク インジケーターを特定し、これらのリスクを軽減するためのアクションを実行するための特定のポリシーを定義できます。
+Microsoft 365の Insider リスク管理は、サービスとサードパーティのインジケーターの全幅を使用して、リスクの高いユーザー アクティビティをすばやく特定し、トリアージし、行動するのに役立ちます。 内部リスク管理は、Microsoft 365および Microsoft Graphのログを使用して、リスク インジケーターを識別するための特定のポリシーを定義できます。 リスクを特定した後、これらのリスクを軽減するためのアクションを実行できます。
 
-以下のビデオを見て、組織の価値、文化、およびユーザー エクスペリエンスを優先しながら、組織がリスクを防止、検出、および含むのに役立つインサイダー リスク管理の方法について説明します。
+以下のビデオを見て、組織がリスクを防止、検出、および含むインサイダー リスク管理を支援する方法について説明します。
 <br>
 <br>
 
@@ -49,7 +49,7 @@ Microsoft 365の Insider リスク管理は、サービスとサードパーテ�
 1. インサイダー[リスク管理の詳細については](insider-risk-management.md)、Microsoft 365
 2. インサイ [ダー リスク管理を計画し、ライセンスを確認する](insider-risk-management-plan.md)
 3. 内部 [リスク管理の設定を構成する](insider-risk-management-settings.md)
-4. アクセス [許可とポリシー](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) の [前提条件をコネクタ&構成する](insider-risk-management-configure.md#step-4-required-configure-prerequisites-for-policies)
+4. アクセス [許可とポリシー](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) の [前提条件をコネクタ&構成する](insider-risk-management-configure.md#step-4-recommended-configure-prerequisites-for-policies)
 5. インサイダー リスク管理 [ポリシーの作成と構成](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy)
 
 ## <a name="more-information-about-insider-risk-management"></a>インサイダー リスク管理の詳細

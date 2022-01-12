@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: dlp ポリシーの条件と例外について学ぶ
-ms.openlocfilehash: 6e02b4010671404174c9166bd65e237295e87483
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4ab7376b234b1f2299723c39a6f9c226d2f40a00
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204397"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933481"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP ポリシーの条件、例外、およびアクション
 
@@ -48,9 +48,28 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 
 ### <a name="senders"></a>送信者
 
-<br>
+送信者アドレスを条件または例外として使用する場合、値が検索される実際のフィールドは、使用するルールの種類によって異なります。 DLP ベースのルールでは、エンベロープ アドレスが送信者アドレスとして使用されます。 たとえばExchangeのトランスポート ルールでは、ヘッダー アドレスが送信者アドレスとして使用されます。
+<!-- REMOVE COMMENTS ON 1/20/2022
+> [!NOTE]
+> Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
 
-****
+![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
+
+At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
+
+```PowerShell
+Set-PolicyConfig –SenderAddressLocation Envelope
+```
+
+To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
+
+- **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
+
+- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field).
+
+- **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
+<br>
+-->
 
 |DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|description|
 |---|---|---|---|
@@ -65,7 +84,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 |送信者の指定のプロパティが次のテキスト パターンと一致する|condition: *SenderADAttributeMatchesPatterns* <br/> 例外: *ExceptIfSenderADAttributeMatchesPatterns*|First プロパティ: `ADAttribute` <p> 2 番目のプロパティ: `Patterns`|送信者の指定した Active Directory 属性に、指定した正規表現に一致するテキスト パターンが含まれるメッセージ。|
 |
 
-### <a name="recipients"></a>Recipients
+### <a name="recipients"></a>受信者
 
 <br>
 
@@ -97,7 +116,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 |件名または本文に単語が含まれている|condition: *SubjectOrBodyContainsWords* <br/> 例外: *ExceptIfSubjectOrBodyContainsWords*|Words|件名フィールドまたはメッセージ本文に指定された単語があるメッセージ|
 |
 
-### <a name="attachments"></a>添付ファイル
+### <a name="attachments"></a>Attachments
 
 <br>
 

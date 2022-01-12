@@ -20,15 +20,14 @@ description: Microsoft Defender の自動調査と対応機能を使用して、
 ms.custom:
 - air
 - seo-marvel-mar2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 130fb0fc09567e66c17018c45b7dcbd8785fd9e4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 469a85866f722539c35bcc0305aa1e8fc39d58be
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370682"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935103"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -134,13 +133,13 @@ Microsoft Defender で既に AIR 機能を使用している場合は、Office 3
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="統合アクション センター。":::
 
-新しく改良されたポータル<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、Microsoft</a> Defender for [microsoft Defender for](defender-for-office-365.md) Office 365エンドポイントの AIR 機能が[統合されています](../defender-endpoint/automated-investigations.md)。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。
+新しく改善されたMicrosoft 365 Defenderポータルには、Microsoft Defender for microsoft Defender と Microsoft Defender for Endpoint Office 365 AIR 機能が <https://security.microsoft.com> [統合されています](../defender-endpoint/automated-investigations.md)。 [](defender-for-office-365.md) これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。
 
 > [!TIP]
-> 新しいポータル<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、次</a>のセンターが置き換まれます。
+> 新しい管理Microsoft 365 Defenderは、次の管理センターに置き換まれます。
 >
 > - セキュリティ & コンプライアンス センター ( <https://protection.office.com> )
-> - Microsoft Defender セキュリティ センター ( <https://securitycenter.windows.com> )
+> - Microsoft 365 Defender ( <https://security.microsoft.com> )
 >
 > URL の変更に加えて、セキュリティ チームにより合理化されたエクスペリエンスを提供するように設計された新しい外観が提供され、1 か所で脅威検出が多く表示されます。
 

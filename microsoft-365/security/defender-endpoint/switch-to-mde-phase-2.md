@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 13fda51ea3bd5434c44f9313dc511c0379e0f56e
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: e7d75dc0b55c945a1cc84c194609f3a48a100949
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241214"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867687"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>エンドポイントの Microsoft Defender に切り替える - フェーズ 2: セットアップ
 
@@ -126,7 +126,7 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策パッシブ モードに設定Windowsする
 
 > [!TIP]
-> これで、R2 Microsoft Defender ウイルス対策 2016 でパッシブ モードWindows Server 2012実行できます。 詳細については [、「Options to install Microsoft Defender for Endpoint」を参照してください](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)。
+> これで、R2 Microsoft Defender ウイルス対策 2016 でパッシブ モードWindows Server 2012実行できます。 詳細については [、「Options to install Microsoft Defender for Endpoint」を参照してください](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages)。
 
 1. レジストリ エディターを開き、次に移動します。
 
@@ -141,6 +141,10 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 
 > [!NOTE]
 > Defender for Endpoint にオンボーディングした後、サーバーのパッシブ モードMicrosoft Defender ウイルス対策設定する必要Windowsがあります。 パッシブ モードが予想通り設定された状態を検証するには **、Microsoft-Windows-Windows Defender** の運用ログ (にある) でイベント *5007* を検索し `C:\Windows\System32\winevt\Logs` **、ForceDefenderPassiveMode** レジストリ キーまたは **PassiveMode** レジストリ キーが 0x1 に設定されている **のを確認** します。
+
+### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>R2 または Windows Server 2012を使用Windows Server 2016?
+
+上記の方法を使用Microsoft Defender ウイルス対策 R2 および 2016 のパッシブ モードでWindows Server 2012を実行できます。 詳細については [、「Options to install Microsoft Defender for Endpoint」を参照してください](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages)。
 
 ## <a name="configure-defender-for-endpoint"></a>Android 機能用に Microsoft Defender for Endpoint を構成する
 

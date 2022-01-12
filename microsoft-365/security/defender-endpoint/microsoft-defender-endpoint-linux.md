@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aefa9c38be0ec25545b64e28514b48c91cfbcdd0
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 0556527e7eac3eed4b54a2dd948a9ca8dae76fc7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560245"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867843"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -96,6 +96,9 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
        - 6.8 の場合: 2.6.32-642.* 
        - 6.9 の場合: 2.6.32-696.* 
        - 6.10: 2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2:
+
+ > [!NOTE]
+ > 新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンは、技術的なアップグレードのサポートのためにのみ提供されます。
 
     バージョンの一覧:
 

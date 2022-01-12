@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3f370e1a491006a5dc42df807994db97f68abcb0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cb92b67b3f19c578d12eb9673d2f80d5fadd131f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168920"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937846"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>管理セキュリティ サービス プロバイダー (MSSP) アクセス権の付与 (プレビュー)
 
@@ -55,7 +55,7 @@ ms.locfileid: "61168920"
 
 2. エンドポイントの Customer Defender で適切なアクセス レベルの Defender for Endpoint ロールを作成します。
 
-    カスタマー Microsoft Defender セキュリティ センター で RBAC を有効にするには、グローバル管理者またはセキュリティ管理者の権限を持つユーザー アカウントから 設定 > アクセス許可 **>** ロールと "ロールを有効にする" にアクセスします。
+    カスタマー Microsoft 365 Defender ポータルで RBAC を有効にするには、グローバル管理者またはセキュリティ管理者の権限を持つユーザー アカウントから 設定 > アクセス許可 **> ロール** と "ロールを有効にする" にアクセスします。
 
     ![MSSP アクセスのイメージ。](images/mssp-access.png)
 
@@ -128,9 +128,9 @@ ms.locfileid: "61168920"
 
 2. UI の [承認] セクション **で要求を** 承認または拒否します。
 
-    この時点で、アナリスト アクセスが準備され、各アナリストが顧客のサービスにアクセスMicrosoft Defender セキュリティ センター。`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    この時点でアナリスト アクセスが準備され、各アナリストは顧客のポータルにMicrosoft 365 Defenderがあります。`https://security.microsoft.com/?tid=<CustomerTenantId>`
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
 - [アラート通知を構成する](configure-mssp-notifications.md)

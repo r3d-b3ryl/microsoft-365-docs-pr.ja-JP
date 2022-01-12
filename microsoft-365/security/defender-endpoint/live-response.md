@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e5eafd86d3ce052655a72668bfc17083dff14f4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 9e447f764ea8b5f5d0a44a7233812845592157ee
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166220"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873611"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -345,6 +345,7 @@ processes > output.txt
 
 - ライブ応答セッションは、一度に 25 個のライブ応答セッションに制限されます。
 - ライブ応答セッションの非アクティブタイムアウト値は 30 分です。
+- Getfile コマンドの非アクティブタイムアウト値は 30 分です。 コマンドがバックグラウンドで実行されている間は非アクティブと見なされます。
 - ユーザーは、最大 10 個の同時セッションを開始できます。
 - デバイスは一度に 1 つのセッションにのみ存在できます。
 - 次のファイル サイズ制限が適用されます。

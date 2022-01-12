@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 39e01e614ebe2467899f179bc1ef3905ac0ca388
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 60fd10024be0b214aed4cbc7ae89d7129df99e79
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164912"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867826"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 
@@ -69,7 +69,7 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>インストールと構成Microsoft Monitoring Agent (MMA)
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>開始する前に
 
 最小システム要件を確認するには、次の詳細を確認します。
 
@@ -128,7 +128,7 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 
 ## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Microsoft Defender Windowsクラウド経由のオンボード サーバー
 
-1. [デバイス管理] Microsoft Defender セキュリティ センターで、[デバイス管理 **オン** ボーディング] 設定  >  **を**  >  **選択します**。
+1. [デバイス管理Microsoft 365 Defender] ウィンドウで、[デバイス **設定**  >  **オンボーディング]**  >  **を選択します**。
 
 2. オペレーティング **Windowsサーバー 2008 R2 SP1 を** 選択します。
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 で指定された条件を満たした場合に起動する特定の手法とペイロードを含む自動シミュレーションを作成する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 13edbb7ea06e9666c6c318cb3fa19072f369e3bc
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 383229ed51002c4f13c499960f4b38e830c12951
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560806"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932753"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのシミュレーションの自動化
 
@@ -57,7 +57,7 @@ ms.locfileid: "61560806"
 - **マルウェアの添付** ファイル: 悪意のある添付ファイルをメッセージに追加します。 ユーザーが添付ファイルを開くと、攻撃者がターゲットのデバイスを侵害するのに役立つ任意のコードが実行されます。
 - **添付ファイルのリンク**: 資格情報の収集ハイブリッドの種類。 攻撃者は電子メールの添付ファイルに URL を挿入します。 添付ファイル内の URL は、資格情報の取得と同じ手法に従います。
 - **マルウェアへのリンク**: 既知のファイル共有サービスでホストされているファイルから任意のコードを実行します。 ユーザーに送信されるメッセージには、この悪意のあるファイルへのリンクが含まれる。 ファイルを開き、攻撃者がターゲットのデバイスを侵害するのを助ける。
-- **Drive-by URL**: メッセージ内の悪意のある URL は、ユーザーのデバイスでコード コードをサイレントモードで実行および/またはインストールする見慣れた Web サイトにユーザーを連れ出します。
+- **Drive-by URL**: メッセージ内の悪意のある URL は、ユーザーのデバイスでコードをサイレントモードで実行および/またはインストールする見慣れた Web サイトにユーザーを連れ出します。
 
 説明の [詳細 **の表示]** リンクをクリックすると、詳細フライアウトが開き、その手法と、その手法から生じ得るシミュレーション手順について説明します。
 
