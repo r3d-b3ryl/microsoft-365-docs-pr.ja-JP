@@ -19,12 +19,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: 組織外のユーザーとの共有に影響を与える可能性がある、Microsoft 365 で使用できるゲスト共有設定について説明します。
-ms.openlocfilehash: 8028258b1b5a7ec13c2a9c9e2e89e52756c97d38
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf0a85f43733ac90d55dde9ded38efd273a9c485
+ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202347"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61660112"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -79,7 +79,7 @@ Microsoft 365 管理センターには、共有および Microsoft 365 グルー
 | 設定 | 既定値 | 説明 |
 |:-----|:-----|:-----|
 |組織の外部のグループ メンバーがグループのコンテンツにアクセスできるようにする|オン|**[オン]** に設定すると、ゲストはグループのコンテンツにアクセスできます。**[オフ]** に設定するとアクセスできません。 この設定は、ゲストが Microsoft 365 グループまたは Teams と連携している場合に **[オン]** にしてください。|
-|グループ所有者が組織外のユーザーをグループに追加できるようにする|オン|**[オン]** の場合、Microsoft 365 グループ または Teams の所有者は新しいゲストをグループに招待できます。 **[オフ]** の場合、所有者はディレクトリ内にすでに存在しているゲストのみを招待できます。|
+|グループ所有者が組織外のユーザーをグループに追加できるようにする|オン|**[オン]** の場合、Microsoft 365 グループまたは Teams の所有者は新しいゲストをグループに招待できます。 **[オフ]** の場合は、できません。 この設定は、ゲストをグループに追加するシナリオでは、**[オン]** にする必要があります。|
 
 これらを、組織レベルで設定できます。PowerShell を使用し、グループ レベルでこれらの設定を変更する方法の詳細については、「[特定のグループに対する設定を作成する](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group)」を参照してください。
 
