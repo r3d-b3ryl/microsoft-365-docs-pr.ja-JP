@@ -3,7 +3,9 @@ title: 手順 7. 情報保護機能を備えたデータ損失防止 (DLP) を�
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Endpoint dlp
+- data loss prevention
+- dlp policies
 manager: dougeby
 audience: ITPro
 ms.topic: article
@@ -13,15 +15,17 @@ ms.collection:
 - endpoint dlp
 - data loss prevention
 - dlp policies
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
 description: 情報保護とガバナンス チームと協力して組織の DLP ポリシーを作成することで、エンドポイント DLP を実装します。
-ms.openlocfilehash: e041e03b1318553937f094868e4e40675b06d47e
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: a27c94a6d98fc23afc80b0e368330cf10e0a33ed
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645828"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936776"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>手順 7. 情報保護機能を備えたデータ損失防止 (DLP) を実装する.
 

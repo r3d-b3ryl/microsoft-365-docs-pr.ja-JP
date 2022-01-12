@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 76512d28363fc295d912ce014885614284eba90a
-ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
+ms.openlocfilehash: 8354693f7f748771c9b6543455cf96177afacd05
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61436670"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993289"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux 用 Microsoft Defender for Endpoint を手動で展開する
 
@@ -115,12 +115,6 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 
     ```bash
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
-    ```
-
-- 現在有効になっている yum リポジトリのすべてのメタデータをダウンロードして使用できるようにします。
-
-    ```bash
-    yum makecache
     ```
 
 ### <a name="sles-and-variants"></a>SLES とバリエーション

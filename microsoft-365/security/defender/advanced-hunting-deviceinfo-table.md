@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: acba50ec85e0d8d2f61a51aa902a26e5bcbed6f9
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 245a9aa11bcaf10ba6f3b8fe0fe429267a355560
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530805"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941746"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -49,7 +49,7 @@ ms.locfileid: "61530805"
 | `OSPlatform` | `string` | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 11、Windows 10、Windows 7 など) を示します。 |
 | `OSBuild` | `string` | コンピューターで実行されているオペレーティング システムのバージョンをビルドする |
 | `IsAzureADJoined` | `boolean` | コンピューターがコンピューターに参加しているかどうかを示すブールAzure Active Directory |
-| `AadObjectId` | `string` | ネットワーク内のデバイスの一意Azure AD |
+| `AadDeviceId` | `string` | ネットワーク内のデバイスの一意Azure AD |
 | `LoggedOnUsers` | `string` | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
 | `RegistryDeviceTag` | `string` | レジストリを介して追加されたコンピューター タグ |
 | `OSVersion` | `string` | コンピューターで実行されているオペレーティング システムのバージョンです。 |
@@ -59,9 +59,9 @@ ms.locfileid: "61530805"
 |`AdditionalFields` | `string` | JSON 配列形式のイベントに関する追加情報 |
 |`DeviceCategory` | `string` | 特定のデバイスの種類を次のカテゴリにグループ化する広範な分類: エンドポイント、ネットワーク デバイス、IoT、不明 |
 |`DeviceType` | `string` | 目的と機能に基づくデバイスの種類 (ネットワーク デバイス、ワークステーション、サーバー、モバイル、ゲーム コンソール、プリンターなど) |
-|`DeviceSubType` | `string` | 特定の種類のデバイスの追加修飾子 (たとえば、モバイル デバイスはタブレットまたはスマートフォンなど) |
-|`Model` | `string` | ベンダーまたは製造元の製品のモデル名または番号 |
-|`Vendor` | `string` | 製品ベンダーまたは製造元の名前 |
+|`DeviceSubType` | `string` | 特定の種類のデバイス (たとえば、モバイル デバイスにはタブレットやスマートフォンなど) の追加修飾子があります。デバイス検出でこの属性に関する十分な情報が検出された場合にのみ使用可能 |
+|`Model` | `string` | ベンダーまたは製造元の製品のモデル名または番号 (デバイス検出でこの属性に関する十分な情報が検出された場合にのみ使用可能) |
+|`Vendor` | `string` | 製品ベンダーまたは製造元の名前(デバイスの検出でこの属性に関する十分な情報が見つからなっている場合にのみ使用できます) |
 |`OSDistribution` | `string` | Linux プラットフォーム用の Ubuntu や RedHat などの OS プラットフォームの配布 |
 |`OSVersionInfo` | `string` | OS バージョンに関する追加情報 (一般的な名前、コード名、バージョン番号など) |
 |`MergedDeviceIds` | `string` | 同じデバイスに割り当てられている以前のデバイス ID |

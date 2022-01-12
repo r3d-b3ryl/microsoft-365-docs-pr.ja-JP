@@ -192,8 +192,10 @@
         - name: Exchange Online の監視
           href: microsoft-365-exchange-monitoring.md
           items:
-            - name: メールボックス使用率サービスのアラート
+            - name: メールボックス使用率のサービス アラート
               href: microsoft-365-mailbox-utilization-service-alerts.md
+            - name: MRS ソース遅延のサービス アラート
+              href: microsoft-365-mrs-source-delays-service-alerts.md
         - name: セットアップ ガイド
           href: setup-guides-for-microsoft-365.md
     - name: 複数のテナント

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft ドキュメント ライブラリのドキュメント ライブラリに発行SharePointを適用する方法について説明SharePoint Syntex。
-ms.openlocfilehash: 6f5cee5bc5896ebe5e9a26bef73103fb94bf3d1d
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: a761fc7d0474f8324d6bae9303fb97371672ab01
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531754"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993445"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexのドキュメント理解モデルを適用する
 
@@ -108,17 +108,25 @@ ms.locfileid: "61531754"
 
 ### <a name="classification-date-field"></a>[分類日] フィールド
 
-ドキュメントのSharePoint Syntexまたはフォーム処理モデルをドキュメント ライブラリに適用すると、[分類日]フィールドがライブラリ スキーマに含まれます。 既定では、このフィールドは空です。 ただし、ドキュメントがモデルによって処理および分類される場合、このフィールドは完了の日付/時刻スタンプで更新されます。 
+ドキュメント理解SharePoint Syntexモデル (またはフォーム処理モデル) をドキュメント ライブラリに適用すると、[分類日]フィールドがライブラリ スキーマに含まれます。 既定では、このフィールドは空です。 ただし、ドキュメントがモデルによって処理および分類される場合、このフィールドは完了の日付/時刻スタンプで更新されます。 
 
    ![[分類日] 列を示すドキュメント ライブラリのスクリーンショット。](../media/content-understanding/class-date-column.png) 
 
-[**分類** 日] フィールドは、[[](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)ファイルをコンテンツ理解モデルによって分類する場合] トリガーによって使用され、Syntex コンテンツ理解モデルがファイルまたはフォルダーの処理を完了し、[分類日] フィールドを更新した後に Power Automate フローを実行します。
+[**分類** 日] フィールドは、[](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)ファイルがファイルまたはフォルダーの内容の処理を完了し、[分類日] フィールドを更新した後に、ファイルがコンテンツ理解モデル トリガーによって分類されると、Power Automate フローを実行するために使用されます。
 
    ![Flowトリガー。](../media/content-understanding/trigger.png)
 
-[ **ファイルをコンテンツ** 理解モデルで分類する場合] トリガーを使用して、ファイルまたはフォルダーから抽出された情報を使用して別のワークフローを開始できます。
+[ **ファイルをコンテンツ** 理解モデルで分類する場合] トリガーを使用して、ファイルまたはフォルダーから抽出された情報を使用してフローを開始できます。
 
+たとえば、モデルに分類日付がスタンプされている場合は、SharePoint Syntex がファイル フローを処理した後に電子メールを送信するを使用して **、SharePoint** ドキュメント ライブラリ内のモデルによって新しいファイルが処理および分類されたとユーザーに通知できます。 
 
+フローを実行するには、次のコマンドを実行します。
+
+1. ファイルを選択し、[統合]**を選択**  >  **Power Automate**  >  **フローを作成します**。
+
+2. [フローの **作成] パネルで**、[ファイルの処理後に **SharePoint Syntexを送信する] を選択します**。
+
+    ![[フロー パネルとフローの作成] オプションが強調表示されているスクリーンショット。](../media/content-understanding/integrate-create-flow.png) 
 
 ## <a name="see-also"></a>関連項目
 

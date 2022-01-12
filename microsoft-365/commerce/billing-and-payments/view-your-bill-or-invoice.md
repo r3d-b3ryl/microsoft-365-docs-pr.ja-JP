@@ -25,12 +25,12 @@ ms.custom:
 - adminvideo
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 07/31/2020
-ms.openlocfilehash: bbede67dd093ad726933f25b7774b63e587dd24a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0bbcb8ac5a1b12ae781636753c734a1009dbc9ef
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371258"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941374"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -100,10 +100,19 @@ ms.locfileid: "61371258"
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>請求明細書をメールで受け取るには
 
+::: moniker range="o365-worldwide"
+
 1. 管理センターで、**[課金情報]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。
-    - Office 365 Germany を使用している場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
-    - 21Vianet が運営する Office 365 を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">課金に関する通知</a>] ページに移動します。
-1. **[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">[課金に関する通知]</a> ページに移動します。
+    
+::: moniker-end
+
+2. **[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。
 
     これを **[オフ]** に切り替えることで、請求明細書のメールでの受け取りをいつでも停止できます。
 

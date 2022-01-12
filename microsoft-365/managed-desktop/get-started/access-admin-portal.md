@@ -10,16 +10,16 @@ audience: ITPro
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: d0444b1ad169619f2dfbe79b7b42ad8849f4736d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6d327c88da229947ab47aee1fba2dd41def94bfb
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188903"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943558"
 ---
 # <a name="access-the-admin-portal"></a>管理ポータルへのアクセス
 
-サービスへのゲートウェイ[Microsoft マネージド デスクトップが](https://endpoint.microsoft.com/)Microsoft エンドポイント マネージャー。 デバイス管理のためのこのポータルの機能に慣れていない場合は、次のドキュメントMicrosoft エンドポイント マネージャー[してください](/mem/)。
+Microsoft Managed Desktop サービスへのゲートウェイ[がMicrosoft エンドポイント マネージャー。](https://endpoint.microsoft.com/) デバイス管理のためのこのポータルの機能に慣れていない場合は、次のドキュメントMicrosoft エンドポイント マネージャー[してください](/mem/)。
 
 > [!NOTE]
 > この[Microsoft エンドポイント マネージャー、](https://endpoint.microsoft.com/)次のブラウザーがサポートされています。
@@ -28,32 +28,33 @@ ms.locfileid: "60188903"
 > - Chrome (最新バージョン)
 > - Firefox (最新バージョン)
 
-管理者アカウントは、管理者アカウントの管理機能にアクセスするために特定Microsoft マネージド デスクトップ必要Microsoft エンドポイント マネージャー。 役割ベースのアクセス制御を使用して、組織内のこれらの機能への管理者アクセスを管理できます。 複数Azure Active Directory (Azure AD) 管理者ロールと組み込みの Microsoft マネージド デスクトップ ロールを使用して、Microsoft マネージド デスクトップ 管理ポータル内のさまざまな機能を詳細に制御できます。 ロールの詳細については、「Azure Azure Active Directory組み込み[AD」を参照してください](/azure/active-directory/roles/permissions-reference)。 さまざまな Microsoft 製品ADサービスに適用される Azure AD 管理者ロールとは異なり、組み込みの役割は Microsoft マネージド デスクトップ 固有の役割であり、このサービスの管理者機能へのアクセスのみを保証します。 管理者は、組み込みの役割をユーザーに個別に割り当てるか、Azure AD 管理者ロールと組み合わせて割り当て、既存の管理者アカウントにMicrosoft マネージド デスクトップアクセス許可を追加できます。
+管理アカウントでは、Microsoft Managed Desktop の管理機能にアクセスするために、特定のアクセス許可が必要Microsoft エンドポイント マネージャー。 役割ベースのアクセス制御を使用して、組織内のこれらの機能への管理者アクセスを管理できます。 複数Azure Active Directory (Azure AD) 管理者の役割と組み込みの Microsoft Managed Desktop の役割を使用して、Microsoft Managed Desktop Admin ポータル内のさまざまな機能を詳細に制御できます。 役割の詳細についてはAzure Active Directory組み込[Azure ADを参照してください](/azure/active-directory/roles/permissions-reference)。 さまざまな microsoft Azure ADサービスに適用される管理者の役割とは異なり、組み込みの役割は Microsoft Managed Desktop に固有の役割であり、このサービスの管理者機能へのアクセスのみを保証します。 管理者は、組み込みの役割をユーザーに個別に割り当てるか、Azure AD 管理者ロールと組み合わせて割り当て、既存の管理者アカウントに Microsoft Managed Desktop アクセス許可を追加できます。
 
-## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directoryアクセス権を持つMicrosoft マネージド デスクトップロール
+## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directoryデスクトップ アクセスを使用したロールの管理
 
-|Azure AD ロール  |Microsoft マネージド デスクトップアクセス許可  |
+|Azure AD ロール  |Microsoft Managed Desktop のアクセス許可  |
 |---------|---------|
-|グローバル管理者     | この役割を持つ **管理者には、** 管理者ポータル内のすべての機能に対する読み取りおよびMicrosoft マネージド デスクトップがあります。         |
-|グローバル閲覧者     | この役割を持つ管理者には **、管理者** ポータル内のすべての機能に対する読み取りMicrosoft マネージド デスクトップがあります。         |
-|Intune サービス管理者     |  この役割を持つ管理者には **、管理者** ポータルのセキュリティに関連しない機能に対する読み取りおよび書き込Microsoft マネージド デスクトップがあります。       |
-|サービス サポート管理者     | この役割を持つ管理者には、セキュリティに関連しない機能に対する読み取り専用アクセス許可と、管理者ポータルでサポート要求を管理するための書き込みMicrosoft マネージド デスクトップがあります。         |
-|セキュリティ管理者 | この役割を持つ管理者は、管理ポータル内のすべての機能に対する読み取り専用のアクセス許可と、Microsoft マネージド デスクトップのセキュリティ関連機能に対する書き込みアクセス許可を持つ必要があります。 |
-|セキュリティ閲覧者 |この役割を持つ管理者には **、管理者** ポータル内のすべての機能に対する読み取りMicrosoft マネージド デスクトップがあります。|
+|グローバル管理者     | この役割を持つ管理者は **、Microsoft** Managed Desktop Admin ポータルのすべての機能に対する読み取りおよび書き込みアクセス許可を持つ必要があります。         |
+|グローバル閲覧者     | この役割を持つ **管理者は** 、Microsoft Managed Desktop Admin ポータルのすべての機能に対する読み取り専用アクセス許可を持つ必要があります。         |
+|Intune サービス管理者     |  この役割を持つ管理者は **、Microsoft** Managed Desktop Admin ポータルのセキュリティに関連しない機能に対する読み取りおよび書き込みアクセス許可を持つ必要があります。       |
+|サービス サポート管理者     | この役割を持つ管理者は、Microsoft Managed Desktop Admin ポータルでのエスカレーション要求を含むサポート要求を管理するためのセキュリティおよび書き込みアクセス許可に関連しない機能に対する読み取り専用アクセス許可を持つ。         |
+|セキュリティ管理者 | この役割を持つ管理者には、管理ポータルの Microsoft Managed  Desktop のすべての機能に対する読み取り専用アクセス許可と、セキュリティ関連機能の書き込みアクセス許可が付与されます。 |
+|セキュリティ閲覧者 |この役割を持つ **管理者は** 、Microsoft Managed Desktop Admin ポータルのすべての機能に対する読み取り専用アクセス許可を持つ必要があります。|
 
-役割の割り当てに関するAzure Active Directory必要な場合は[、「Azure AD組み込みロール」を参照してください](/azure/active-directory/roles/permissions-reference)。
+役割の割り当てに関するヘルプAzure Active Directory、組み込[みのAzure ADを参照してください](/azure/active-directory/roles/permissions-reference)。
 
 > [!IMPORTANT]
-> グローバル管理者の役割にのみ、組織を登録するために必要なアクセス許可Microsoft マネージド デスクトップ。 役割によって、Azure Active Directoryさまざまなユーザー アカウントの権限が付与Microsoft サービス。 ユーザーの登録が完了Microsoft マネージド デスクトップ、他のタスクを実行するために必要な最小の特権を持つロールを常に使用する必要があります。
+> Microsoft Managed Desktop に組織を登録するために必要なアクセス許可を持つのは、グローバル管理者の役割のみです。 役割によって、Azure Active Directoryさまざまなユーザー アカウントの権限が付与Microsoft サービス。 Microsoft Managed Desktop への登録が完了した後は、他のタスクを実行するために必要な最小の特権を持つロールを常に使用する必要があります。
 
-## <a name="built-in-roles-provided-by-microsoft-managed-desktop"></a>ユーザーが提供する組み込みMicrosoft マネージド デスクトップ
+## <a name="built-in-roles-provided-by-microsoft-managed-desktop"></a>Microsoft Managed Desktop によって提供される組み込みの役割
 
 
-|組み込みの役割  |Microsoft マネージド デスクトップアクセス許可  |
+|組み込みの役割  |Microsoft Managed Desktop のアクセス許可  |
 |---------|---------|
-|Microsoft マネージド デスクトップサービス管理者  | ユーザーに割り当てられると、管理者は管理者ポータルのセキュリティに関連しない機能に対する読み取りおよび書き込Microsoft マネージド デスクトップします。  |
-|Microsoft マネージド デスクトップサービス リーダー | ユーザーに割り当てると、管理者は管理者ポータルのセキュリティに関連しない機能に対する読み取り専用Microsoft マネージド デスクトップします。 |
-|Microsoft マネージド デスクトップセキュリティ マネージャー |ユーザーに割り当てると、管理者は管理者ポータルのセキュリティ関連機能に対する読み取りおよび書き込みMicrosoft マネージド デスクトップします。   |
+|Microsoft Managed Desktop Service Administrator  | ユーザーに割り当てられると、管理者は Microsoft 管理デスクトップ管理ポータルのセキュリティに関連しない **Microsoft Managed Desktop** 機能に対する読み取りおよび書き込みアクセス許可を付与します。  |
+|Microsoft Managed Desktop Service Reader | ユーザーに割り当てられた場合、この役割は **、Microsoft Managed Desktop** 管理ポータルのセキュリティに関連しない Microsoft Managed Desktop 機能に対する管理者の読み取り専用アクセス許可を付与します。 |
+|Microsoft Managed Desktop Security Manager |ユーザーに割り当てられた場合、この役割により、管理者は Microsoft Managed Desktop Admin ポータルのセキュリティ関連機能に対する読み取りおよび書き込み権限のみを付与します。   |
+|Microsoft Managed Desktop サポート パートナー |ユーザーに割り当てられた場合、この役割は管理者に対して、Microsoft Managed Desktop Admin ポータルでの昇格要求とサポート パートナーのエンゲージエスカレーション要求の作成と管理に対する読み取りおよび書き込み権限のみを付与します。   |
 
 > [!NOTE]
 > セキュリティ機能には、セキュリティ関連の通信、セキュリティ連絡先の管理、セキュリティ関連のサポート要求の管理、およびセキュリティ関連レポートへのアクセスが含まれます。 
@@ -84,7 +85,7 @@ ms.locfileid: "60188903"
 7. [役割の選択] から該当する役割 **を検索** し、その役割を選択します。
 8. **[割り当て]** を選択します。
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft Managed Desktop の使用を開始する手順
 
 1. 管理ポータルにアクセスする (この記事)。
 1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)。

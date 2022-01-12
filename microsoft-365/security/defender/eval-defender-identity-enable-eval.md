@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 966ccb0437f47b35c376c5ad4926464610871c92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 184ec4dcdd5601585e046ced410141047fdfa24f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181129"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942670"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity の評価環境を有効にする
 
@@ -54,7 +52,7 @@ Defender for Identity ポータルにサインインしてインスタンスを�
 |2     | Connect Defender for Identity インスタンスを Active Directory フォレストに移動する   | [クイック スタート: Connect Active Directory フォレストにアクセスする](/defender-for-identity/install-step2)  |
 | | |
 
-## <a name="step-2-install-and-configure-the-sensor"></a>手順 2。 センサーのインストールと構成
+## <a name="step-2-install-and-configure-the-sensor"></a>手順 2.  センサーのインストールと構成
 
 次に、ドメイン コントローラーおよびオンプレミス環境の FS AD Defender for Identity センサーをダウンロード、インストール、および構成します。
 
@@ -63,7 +61,7 @@ Defender for Identity ポータルにサインインしてインスタンスを�
 |1     | 必要な Microsoft Defender for Identity センサーの数を決定します。        | [Microsoft Defender for Identity の容量を計画する](/defender-for-identity/capacity-planning)   |
 |2     | センサー セットアップ パッケージをダウンロードする  |  [クイック スタート: Microsoft Defender for Identity センサーセットアップ パッケージをダウンロードする](/defender-for-identity/install-step3)   |
 |3     | Defender for Identity センサーのインストール    |  [クイック スタート: Microsoft Defender for Identity センサーのインストール](/defender-for-identity/install-step4)       |
-|4      | センサーを構成する       |  [Microsoft Defender for Identity センサーの設定を構成する ](/defender-for-identity/install-step5)   |
+|4     | センサーを構成する       |  [Microsoft Defender for Identity センサーの設定を構成する ](/defender-for-identity/install-step5)   |
 |   |         |         |
 
 ## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>手順 3. センサーを使用してコンピューターのイベント ログとプロキシ設定を構成する

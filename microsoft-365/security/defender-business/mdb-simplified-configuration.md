@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e8cf2ae8e17898753be43c9e2160d8a473f8db8d
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 1771ca1bd4a3b941d7fbb22d4dfd14d56510c416
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508288"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940592"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business の簡略化された構成プロセス (プレビュー)
 
@@ -64,6 +64,11 @@ Microsoft Defender for Business (プレビュー) は、特に中小企業向け
 Defender for Business (プレビュー) は、セキュリティ設定の構成に時間と労力を節約しながら強力な保護を提供するように設計されています。 このポータルの合理化されたエクスペリエンスMicrosoft 365 Defender、デバイスのオンボードと管理が簡単になります。 さらに、既定のポリシーが含まれているので、会社のデバイスはオンボード後すぐに保護されます。 既定の設定は、現在の状態に保つか、ビジネス ニーズに合わせて変更できます。 必要に応じて、新しいポリシーを追加してデバイスを管理することもできます。
 
 ## <a name="next-steps"></a>次の手順
+
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+>
 
 - [Microsoft Defender for Business のセットアップと構成 (プレビュー)](mdb-setup-configuration.md)
 

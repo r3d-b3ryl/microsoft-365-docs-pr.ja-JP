@@ -16,16 +16,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e43edc826594d5a9b373139707aaaf6b486591ed
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e4b852ef7f252033a67e6aa3f1f8183400c18bdb
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111509"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943306"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>評価環境Microsoft 365 Defenderを実稼働環境に昇格する
 

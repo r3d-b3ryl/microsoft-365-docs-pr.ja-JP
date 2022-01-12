@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 search.appverid:
@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Exchange Online の監視を使用して、Microsoft 365 でのメールのインシデントや勧告の情報について確認します。
-ms.openlocfilehash: e6b6749b88644b65768a04696a6e6363661ceec8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22985d1fd6e79693a526c8ec008e189593543ae6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197331"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933337"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 の Exchange Online の監視
 
@@ -191,3 +191,5 @@ Microsoft は、Exchange Online の監視を Microsoft 365 管理センターの
 - [Microsoft 365 での優先アカウント使用](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
 
 - [Exchange Online 監視でのメールボックス使用率サービスのアラート](microsoft-365-mailbox-utilization-service-alerts.md)
+
+- [Exchange Online 監視での MRS ソース遅延のサービス アラート](microsoft-365-mrs-source-delays-service-alerts.md)

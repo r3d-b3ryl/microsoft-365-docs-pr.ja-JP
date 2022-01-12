@@ -16,17 +16,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 - intro-overview
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d6d237b489848870d58a8288ee787c3634072742
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 07dcc4c5d6d9758828fe2b48344a3c6ccc3b8a2e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645622"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873539"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -97,7 +96,7 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Microsoft Defender for Office 365 のポリシーを構成する
 
-Microsoft Defender for Office 365 を使用すると、組織のセキュリティ チームは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> \> **メール & コラボレーション** \> **ポリシー & ルール** \> **脅威ポリシー** でポリシーを定義することで、保護を構成できます)。
+Microsoft Defender for Office 365 を使用すると、組織のセキュリティ チームは、Microsoft 365 Defender ポータルの <https://security.microsoft.com> で、**[メール & コラボレーション]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** でポリシーを定義することで、保護を構成できます。 または、 <https://security.microsoft.com/threatpolicy> を使用して、**"脅威ポリシー"** ページに直接移動することもできます。
 
 [このビデオ](https://www.youtube.com/watch?v=vivvTmWJ_3c)を見て詳細をご確認ください。
 
@@ -118,7 +117,7 @@ Microsoft Defender for Office 365 を使用すると、組織のセキュリテ�
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Microsoft Defender for Office 365 レポートを表示する
 
-Microsoft Defender for Office 365 には、Defender for Office 365 を監視するための[レポート](view-reports-for-mdo.md)が含まれています。 レポートには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>の **レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート**、または <https://security.microsoft.com/securityreports> で直接アクセスできます。
+Microsoft Defender for Office 365 には、Defender for Office 365 を監視するための[レポート](view-reports-for-mdo.md)が含まれています。 Microsoft 365 Defender ポータルの <https://security.microsoft.com> で、**レポート** \> **[メールとコラボレーション]** \> **[メールとコラボレーション レポート]** でレポートに直接アクセスできます。 または、<https://security.microsoft.com/securityreports> を使用して、"**メールとコラボレーション レポート"** ページに直接移動することもできます。
 
 レポートはリアルタイムで更新され、最新の分析情報を提供します。 また、これらのレポートは推奨事項を提供し、間近に迫った脅威を警告します。 定義済みレポートには次のものが含まれます:
 

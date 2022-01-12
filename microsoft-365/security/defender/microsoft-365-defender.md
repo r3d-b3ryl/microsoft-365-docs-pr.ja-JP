@@ -23,12 +23,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 06413dc1d33136e5fa7fd23a0770f98bc6c6e408
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: d94cae13c4379061ce95b17d284e27d435cd9918
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646267"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942574"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -200,6 +200,30 @@ Microsoft 365 Defender、Microsoft Defender  for microsoft Defender for Office 3
 - **データ** - 無許可のデータ開示につながる可能性のあるユーザー アクティビティを追跡するのに役立ちます。
 - **デバイス** - デバイス上のアラート、違反アクティビティ、およびその他の脅威に関する最新情報を取得します。
 - **アプリ** - 組織でクラウド アプリがどのように使用されているかについての分析情報を得ます。 [Defender for Cloud Apps で検出されたアプリの詳細を確認します](/cloud-app-security/discovered-apps)。
+
+
+#### <a name="search-across-entities-preview"></a>エンティティ間の検索 (プレビュー)
+
+>[!IMPORTANT]
+> 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+検索バーはページの上部に表示されます。 入力すると、エンティティを簡単に見つけやすくするために提案が提供されます。 拡張検索結果ページは、すべてのエンティティからの結果を一元化します。
+
+Defender for Endpoint および Defender for Identity では、次のエンティティ間で検索できます。 
+
+- **デバイス** - Defender for Endpoint と Defender for Identity の両方でサポートされます。 検索演算子の使用をサポートします。 
+- **ユーザー** - Defender for Endpoint、Defender for Identity、Defender for Cloud Apps でサポートされています。 
+- **ファイル、AP、URL** - Defender for Endpoint と同じ機能。
+
+    >[!NOTE]
+    >IP と URL の検索は完全に一致し、検索結果ページには表示されません。エンティティ ページに直接移動します。 
+
+- **TVM** - Defender for Endpoint と同じ機能 (脆弱性、ソフトウェア、推奨事項)。 
+
+ 
+
+
+
+
 
 ### <a name="threat-analytics-with-better-data-coverage"></a>より優れたデータ カバレッジを備えた脅威の分析
 

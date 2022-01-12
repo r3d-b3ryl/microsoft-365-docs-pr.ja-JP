@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft エンドポイント マネージャーを使用して、管理デバイス、PC、その他のエンドポイントを管理します。
-ms.openlocfilehash: 6033ee8f84d72aa8cfb163dc41ef03e427226790
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3d4a46a3513078b904afbe2b4f09642f338c8a81
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199299"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939433"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>手順 4. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 
@@ -40,7 +40,7 @@ Microsoft Intune は、Microsoft 365 に付属しているモバイル デバイ
 
 - **MAM:** リモート ワーカーは個人のデバイス、いわゆる、「Bring-Your-Own Device (BYOD)」 にフル コントロールが必要でないかもしれません。 ハイブリッド ワーカーに選択肢を提示しながら、組織を保護することができます。 たとえば、ハイブリッド ワーカーが組織のリソースにフル アクセスすることを希望する場合、使用するデバイスを登録することができます。 または、これらのユーザーが電子メールや Microsoft Teams にのみアクセスできるようにする場合は、これらのアプリを使用できるように多要素認証 (MFA) を必要とするアプリ保護ポリシーを使用します。
 
-詳細については、「[Microsoft Intune の概要](/intune/fundamentals/what-is-intune)」をご覧ください。
+詳細については、「[Intune と Microsoft 365 の基礎ソリューションを使用したエンドポイントの管理](manage-devices-with-intune-overview.md)」を参照してください。
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
@@ -50,17 +50,17 @@ Configuration Manager は、ネットワークまたはインターネットベ�
 
 ## <a name="co-management"></a>共同管理
 
-共同管理では、Intune などの Microsoft 365 クラウド サービスを使用して、既存のオンプレミスの Configuration Manager とクラウドを組み合わせて投資することができます。 異なるワークロードの管理権限を Configuration Manager または Intune のどちらにするかを選択します。 
+共同管理では、Intune などの Microsoft 365 クラウド サービスを使用して、既存のオンプレミスの Configuration Manager とクラウドを組み合わせて投資することができます。 様々なワークロードの管理権限を Configuration Manager または Intune のどちらにするかを選択します。 
 
 共同管理では、条件付きアクセスやデバイス コンプライアンスの強化を含む、Intune ベースのクラウド機能を使用します。 一部のタスクはオンプレミスに保ち、他のタスクはクラウドで実行します。
 
 詳細については、「[共同管理の概要](/mem/configmgr/comanage/overview)」をご覧ください。
 
-## <a name="desktop-analytics"></a>Desktop Analytics
+## <a name="endpoint-analytics"></a>エンドポイントの分析
 
-Desktop Analytics は、Configuration Manager と統合し、分析情報とインテリジェンスを提供するクラウドベースのサービスであり、Windows クライアントに関する情報に基づいて意思決定を行うことができます。 組織のデータと、Microsoft クラウド サービスに接続されている他の数百万のデバイスから収集されたデータを組み合わせます。 
+エンドポイント分析は、Configuration Manager と統合し、分析情報とインテリジェンスを提供するクラウドベースのサービスであり、Windows クライアントに関する情報に基づいて意思決定を行うことができます。 組織のデータと、Microsoft クラウド サービスに接続されている他の数百万のデバイスから収集されたデータを組み合わせます。 
 
-Desktop Analytics では、次のことができます。
+エンドポイント分析を使用すると、次のことができます:
 
 - 組織内で実行されているアプリのインベントリを作成します。
 - 最新の Windows 10 機能更新プログラムの互換性を評価します。
@@ -68,7 +68,7 @@ Desktop Analytics では、次のことができます。
 - 最小単位のデバイスでアプリケーションとドライバーの全体を表すパイロット グループを作成します。
 - Windows 10 をパイロットおよび運用管理デバイスに展開します。
 
-詳細については、「[Desktop Analytics の概要](/mem/configmgr/desktop-analytics/overview)」をご覧ください。
+詳細については、「[エンドポイント分析の概要](/mem/configmgr/desktop-analytics/overview)」をご覧ください。
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 

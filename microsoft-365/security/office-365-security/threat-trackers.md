@@ -15,15 +15,16 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: ''
 description: 新しい注目に値するトラッカーを含む脅威トラッカーについて学び、組織がセキュリティ上の懸念事項を引き受けるのに役立ちます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 63673247e6e818459207634d68e18c7adb019e41
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc73604d6ea24de9c8a66a8586c6bbced0113421
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154328"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942514"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 
@@ -33,10 +34,10 @@ ms.locfileid: "60154328"
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Office 365調査と](office-365-ti.md)対応機能を使用すると、組織のセキュリティ チームは、サイバーセキュリティの脅威を検出して対策を実行できます。 Office 365脅威の調査と対応の機能には、注目に値するトラッカーを含む脅威追跡機能が含まれます。 これらの新機能と次の手順の概要については、この記事をご覧ください。
+[Office 365調査と](office-365-ti.md)対応機能を使用すると、組織のセキュリティ チームは、サイバーセキュリティの脅威を検出して対策を実行できます。 Office 365の調査および応答機能には、注目に値するトラッカーを含む脅威追跡機能が含まれます。 これらの新機能と次の手順の概要については、この記事をご覧ください。
 
 > [!IMPORTANT]
-> Office 365脅威インテリジェンスは、Microsoft Defender for Office 365プラン 2 と、追加の脅威保護機能です。 詳細については[、「Microsoft Defender for Office 365プラン](https://products.office.com/exchange/advance-threat-protection)と価格」、[および「Microsoft Defender for Office 365サービスの説明」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> Office 365脅威インテリジェンスは、追加の脅威保護機能Office 365、Microsoft Defender for Office 365プラン 2 です。 詳細については[、「Microsoft Defender for Office 365プラン](https://products.office.com/exchange/advance-threat-protection)と価格」、[および「Microsoft Defender for Office 365サービスの説明」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
 ## <a name="what-are-threat-trackers"></a>脅威トラッカーとは
 
@@ -50,7 +51,7 @@ ms.locfileid: "60154328"
 
 トラッカーは、計画 2 の Microsoft Defender で取得する多くの素晴[Office 365ほんの一部です](office-365-ti.md)。 脅威トラッカーには[、Noteworth トラッカー](#noteworthy-trackers) [、Trending trackers、Tracked](#trending-trackers)[クエリ](#tracked-queries)、および[保存されたクエリが含まれます](#saved-queries)。
 
-組織で脅威トラッカーを表示して使用するには、Microsoft 365 Defender ポータル ( ) に移動し、[メールと& <https://security.microsoft.com> **の脅威** トラッカー] \> **を選択します**。
+組織で脅威追跡ツールを表示して使用するには、Microsoft 365 Defender ポータルを開き、[メール] &コラボレーションの脅威トラッカー に <https://security.microsoft.com>  \> **移動します**。 脅威トラッカー ページに直接移動 **するには** 、 を使用します <https://security.microsoft.com/threattracker> 。
 
 > [!NOTE]
 > Threat Trackers を使用するには、グローバル管理者、セキュリティ管理者、またはセキュリティ リーダーである必要があります。 「[アクセス許可」を参照Microsoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
@@ -107,6 +108,6 @@ ms.locfileid: "60154328"
 
 - セキュリティ チームに正しい役割とアクセス許可が割り当てられているか確認します。 グローバル管理者である必要があります。または、セキュリティ管理者または検索と削除の役割が、管理者ポータルに割りMicrosoft 365 Defenderがあります。 「[アクセス許可」を参照Microsoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
 
-- 新しいトラッカーが環境に表示Microsoft 365します。 利用可能な場合は、ここでトラッカーを見 [つける必要があります](https://https://security.microsoft.com/)。 [メールの **送信] &の** \> **脅威追跡ツールに移動します**。
+- 新しいトラッカーが環境に表示Microsoft 365します。 利用可能な場合は、[脅威トラッカー] ページの[脅威] ポータルの [トラッカー Microsoft 365 Defender確認できます <https://security.microsoft.com/threattracker> 。
 
 - まだ行っていない場合は、Microsoft [Defender for Office 365](defender-for-office-365.md)の詳細と構成 (セーフ リンクや添付ファイル[](safe-links.md)など) をセーフ[してください](safe-attachments.md)。

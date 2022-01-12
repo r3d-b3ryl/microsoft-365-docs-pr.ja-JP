@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 212d6464fa471e848eb83d06004bdf2796dc0a64
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 799fc4d163b120b4197b6cd044efe4740e4a3cc7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217640"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941926"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Chef を使用して Linux 用 Microsoft Defender for Endpoint を展開する
 
@@ -44,7 +44,7 @@ chef generate cookbook mdatp
 mkdir mdatp/files
 ```
 
-ポータルからダウンロードできる Linux Server Onboarding zip ファイルMicrosoft Defender セキュリティ センターこの新しいファイル フォルダーに転送します。
+ポータルからダウンロードできる Linux Server Onboarding zip ファイルMicrosoft 365 Defenderこの新しいファイル フォルダーに転送します。
 
 Chef ワークステーションで、mdatp/recipes フォルダーに移動します。 このフォルダーは、クックブックが生成された時点で作成されます。 優先するテキスト エディター (vi や nano など) を使用して、default.rb ファイルの末尾に次の手順を追加します。
 

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コレクション検索を実行した後に生成される統計情報を表示して、検索結果を検証Advanced eDiscovery。
-ms.openlocfilehash: ec339cd28fdd25457a668f992f20e59a4f10b289
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d5eed0f888da717cbf68db837a6d9ff230dbf674
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167236"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942082"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>[検索] で統計情報をAdvanced eDiscovery
 

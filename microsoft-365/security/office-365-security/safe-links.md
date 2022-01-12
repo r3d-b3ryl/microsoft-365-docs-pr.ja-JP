@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 組織をフィッシングセーフ悪意のある URL を使用する他の攻撃から組織を保護Office 365 Defender for Defender のリンク保護について学習します。 [Teams セーフリンク] を見て、リンク メッセージのセーフを参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0e8bc1dae8ff1d04c32b67ad3cd0e689a7dd264
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 76bd9d1eb0d9cb1c88cbdce5c4d0377b2dfac14b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121257"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943066"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフ用 Microsoft Defender のリンクOffice 365
 
@@ -221,7 +221,7 @@ Teams 保護が有効になっている セーフ リンク ポリシーにリ�
 
 - **ユーザーが [セーフ** リンク] をクリックした場合は追跡しない : デスクトップ バージョンの Word、Excel、PowerPoint、および Visio でクリックされた URL の セーフ リンク クリック データの保存を有効または無効にします。 推奨される値は **Off** です。つまり、ユーザーのクリックが追跡されます。
 
-- ユーザーが元の **URL** への安全なリンクをクリックさせない : ユーザーが警告 [](#warning-pages-from-safe-links)ページをクリックして、デスクトップ バージョンの Word、Excel、PowerPoint、および Visio の元の URL をクリックVisio。 既定値と推奨値は On **です**。
+- ユーザーが元の **URL** への安全なリンクをクリックさせない : 警告ページを [](#warning-pages-from-safe-links)クリックしてデスクトップ バージョンの Word、Excel、PowerPoint、および Visio の元の URL にユーザーがクリックを許可またはブロックします。 既定値と推奨値は On **です**。
 
 アプリのリンクのセーフ設定を構成するには、「Office 365アプリのリンク保護セーフ[構成する」をOffice 365してください](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal)。
 
@@ -262,7 +262,7 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 [リンク] のグローバル設定で URL の一覧をセーフします。 手順については [、「Configure the Configure the following URL」リストを参照してください](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)。
 
-**注**:
+**注意**:
 
 - あらゆる場所でブロックされている URL の本当に汎用的なリストについては、「Manage [the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
 - [次の URL を **ブロックする] リストの制限** 。
@@ -299,18 +299,22 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 新規または既存の セーフ リンク ポリシーのリストにエントリを追加するには、「Create[セーフ Links ポリシー](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) 」または「セーフ リンク ポリシーを変更する」[を参照してください](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
 
-**注**:
+**注意**:
 
 - 次のクライアントは、[リンク] ポリシーの [次の **URL** を書き換えセーフしません。 ポリシーに含まれるユーザーは、次のクライアントでのリンク スキャンの結果に基づいて URL へのアクセスをブロックセーフできます。
   - Microsoft Teams
   - Office Web アプリ
 
-  すべての場所で許可されている URL の本当に汎用的なリストについては [、「Manage the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
+  すべての場所で許可されている URL の本当に汎用的なリストについては [、「Manage the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。 ただし、追加された URL は セーフ Links ポリシーで行う必要があるので、セーフ セーフ リンクの書き換えから除外されません。
 
 - ユーザー エクスペリエンスを向上させるために、一般的に使用される内部 URL をリストに追加する方法を検討してください。 たとえば、Skype for Business や SharePoint などのオンプレミス サービスがある場合は、それらの URL を追加してスキャンから除外できます。
 - 既に **[セーフ** リンク] ポリシーで次の URL エントリを書き換えない場合は、リストを確認し、必要に応じてワイルドカードを追加してください。 たとえば、リストには次のようなエントリが含まれるので、後で次のような `https://contoso.com/a` サブパスを含めることにしました `https://contoso.com/a/b` 。 新しいエントリを追加する代わりに、既存のエントリにワイルドカードを追加して、 `https://contoso.com/a/*` になります。
 - URL エントリごとに最大 3 つのワイルドカード ( `*` ) を含めできます。 ワイルドカードには、プレフィックスまたはサブドメインが明示的に含まれます。 たとえば、指定したドメイン内のサブドメインとパスをユーザーがアクセスできるので、エントリは同 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` じではありません。
 - URL で HTTP から HTTPS への自動リダイレクト (302 リダイレクトなど) を使用し、同じ URL の HTTP エントリと HTTPS エントリの両方をリストに入力すると、2 番目の URL エントリが最初の URL エントリに置き換わる可能性があります。 `http://www.contoso.com` `https://www.contoso.com` この動作は、HTTP バージョンと HTTPS バージョンの URL が完全に分離されている場合は発生しません。
+- HTTP バージョンと HTTPS http:// を https://(つまり、contoso.com) を指定しない。
+- `*.contoso.com` 指定 **したドメイン** contoso.com 子ドメインの両方をカバーするには、両方を除外する必要があります。
+- `contoso.com/*` カバー **は** contoso.com ので、両方を除外する必要 `contoso.com` `contoso.com/*` `contoso.com/*` はありません。ただ十分です。
+- ドメインのすべての反復を除外するには、2 つの除外エントリが必要です。 `contoso.com/*` と `*.contoso.com/*` . これらを組み合わせて、HTTP と HTTPS の両方、メイン ドメイン contoso.com と子ドメイン、および終了部分 (たとえば、contoso.com と contoso.com/vdir1 の両方が対象) を除外します。
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>"次の URL を書き換えない" リストのエントリ構文
 

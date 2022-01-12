@@ -16,12 +16,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 64dbfb4c569c6ae388c0149789ead38ceddad0f4
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: a0e69e73da4e8ea7d4935b86af109cd8fef032a3
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566497"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993277"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 
@@ -84,25 +84,25 @@ _パブリック プレビューの終了: サポートされているオペレ�
 > - 特に指定しない限り、最小 Windows 10 ビルドはバージョン &nbsp; 1709 (RS3、ビルド 16299) 以降です。Windows Server の最小ビルドは &nbsp; バージョン 1809 以降です。
 >
 
-|ルールの名前|Windows &nbsp; 10|Windows &nbsp; Server 2019|Windows &nbsp; サーバー|Windows Server &nbsp; 2016|Windows Server &nbsp; 2012 R2|
-|---|:---:|:---:|:---:|:---:|:---:|
-|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y バージョン 1803 (半期チャネル) 以降 |  |  |
-|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y バージョン 1809 以降 | Y | Y  <br><br> |  |  |
-|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |  |  |
-|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |  |  |
-|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) | Y | Y <br><br> | Y <br><br> |  |  |
-|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |  |  |
-|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | Y | Y <br><br> | Y <br><br> |  |  |
-|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
-|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
-|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |  |  |
-|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y | Y <br><br> | Y <br><br> |  |  |
-|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) <br><br> \*_ファイルとフォルダーの除外はサポートされていません。_ | Y バージョン 1903 (ビルド 18362) 以降| Y | Y <br><br> バージョン 1903 (ビルド 18362) 以降 |  |  |
-|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br>  |  |  |
-|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |  |  |
-|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | Y | Y <br><br> | Y <br><br> |  |  |
-|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |  |  |
-| **ルール名** |  **Windows &nbsp; 10** | **Windows &nbsp; Server 2019** | **Windows &nbsp; サーバー** | **Windows Server &nbsp; 2016** | **Windows Server &nbsp; 2012 R2** |
+|ルールの名前|Windows &nbsp; 10|Windows &nbsp; Server 2019|Windows &nbsp; サーバー|
+|---|:---:|:---:|:---:|
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y バージョン 1803 (半期チャネル) 以降 | 
+|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y バージョン 1809 以降 | Y | Y  <br><br> |
+|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |
+|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |
+|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) | Y | Y <br><br> | Y <br><br> |
+|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |
+|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | Y | Y <br><br> | Y <br><br> |
+|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y <br><br> | Y <br><br> |
+|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | Y | Y <br><br> | Y <br><br> |
+|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |
+|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y | Y <br><br> | Y <br><br> |
+|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) <br><br> \*_ファイルとフォルダーの除外はサポートされていません。_ | Y バージョン 1903 (ビルド 18362) 以降| Y | Y <br><br> バージョン 1903 (ビルド 18362) 以降 |
+|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br>  |
+|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |
+|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | Y | Y <br><br> | Y <br><br> |
+|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |
+|  |  |  |  |
 
 ## <a name="supported-configuration-management-systems"></a>サポートされている構成管理システム
 
@@ -110,7 +110,7 @@ _パブリック プレビューの終了: サポートされているオペレ�
 
 |ルールの名前 | Intune | Microsoft エンドポイント マネージャー |Microsoft Endpoint Configuration Manager |グループ ポリシー <sup> [[1](#fn1)]<sup></sup> | PowerShell <sup> [[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  [されていません](images/checkmark.png) <br><br> |
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  [サポート](images/checkmark.png) <br><br> |
 |[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y |   | Y | Y  | Y  |
 |[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | Y |   |Y <br><br> CB 1710 | Y  | Y  |
 |[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
@@ -126,6 +126,7 @@ _パブリック プレビューの終了: サポートされているオペレ�
 |[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |   |Y <br><br> CB 1802  | Y  | Y  |
 |[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | Y |   | Y <br><br> CB 1710  | Y  |  Y |
 |[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | Y |   | Y <br><br> CB 1802 | Y  | Y  |
+|  |  |  |  |  |  |
 
   (<a id="fn1">1</a>) 任意のルールの GUID を使用して、ルールごとに攻撃表面の縮小ルールを構成できます。
 

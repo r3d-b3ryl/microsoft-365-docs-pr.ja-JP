@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: SharePoint Syntex でフォーム処理モデルを作成する方法について説明します。
-ms.openlocfilehash: 5ac00352c64f1403f87ff1c16f3fa44e8c737896
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 53beb46c2615a4cb3634907262be07e1458ef283
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198591"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993437"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でフォーム処理モデルを作成する
 
@@ -134,6 +134,37 @@ Microsoft PowerApps の機能である [AI ビルダー](/ai-builder/overview)�
 3. ファイルをドキュメント ライブラリにアップロードします。 モデルがコンテンツ タイプとして識別するファイルには、ビュー内のファイルが一覧表示され、列に抽出されたデータが表示されます。
 
     ![[完了]。](../media/content-understanding/doc-lib-done.png) 
+
+### <a name="use-flows-to-extract-information"></a>フローを使用して情報を抽出する
+
+2 つのフローを使用して、フォーム処理モデルが適用されたライブラリ内のファイルの選択したファイルまたはバッチを処理できます。
+
+- **フォーム処理モデルを使用して** 画像または PDF ファイルから情報を抽出する - フォーム処理モデルを実行して、選択した画像または PDF ファイルからテキストを抽出します。 一度に 1 つの選択されたファイルをサポートし、PDF ファイルとイメージ ファイル (PNG、JPG、JPEG) のみをサポートします。 フローを実行するには、ファイルを選択し、[抽出情報の自動化 **]**  >  **を選択します**。
+
+    ![[抽出情報] が強調表示された [自動化] メニューを示すスクリーンショット。](../media/content-understanding/automate-extract-info.png)  
+
+- **フォーム処理モデルを使用してファイル** から情報を抽出する - フォーム処理モデルと一緒に使用して、ファイルのバッチから情報を読み取り、抽出します。 一度に最大 5,000 SharePointファイルを処理します。 このフローを実行すると、設定できる特定のパラメーターがあります。 次の操作を行うことができます:
+
+    - 以前に処理されたファイルを含めるかどうかを選択します (既定では、以前に処理されたファイルは含めなされません)。
+    - 処理するファイルの数を選択します (既定値は 100 ファイルです)。
+    - ファイルを処理する順序を指定します (選択項目は、ファイル ID、ファイル名、ファイル作成時刻、または最後に変更された時刻です)。
+    - 順序の並べ替え方法 (昇順または降順) を指定します。
+
+    ![パラメーター オプションが強調表示された [フローの実行] パネルを示すスクリーンショット。](../media/content-understanding/run-flow-panel.png)  
+
+### <a name="classification-date-field"></a>[分類日] フィールド
+
+ドキュメント ライブラリSharePoint Syntexフォーム処理モデル (またはドキュメント理解モデル) を適用すると、[分類日] フィールドがライブラリ スキーマに含まれます。 既定では、このフィールドは空です。 ただし、ドキュメントがモデルによって処理および分類される場合、このフィールドは完了の日付/時刻スタンプで更新されます。 
+
+モデルに分類日付がスタンプされている場合は、SharePoint Syntex がファイル フローを処理した後に電子メールを送信を使用して **、SharePoint** ドキュメント ライブラリ内のモデルによって新しいファイルが処理および分類されたとユーザーに通知できます。
+
+フローを実行するには、次のコマンドを実行します。
+
+1. ファイルを選択し、[統合]**を選択**  >  **Power Automate**  >  **フローを作成します**。
+
+2. [フローの **作成] パネルで**、[ファイルの処理後に **SharePoint Syntexを送信する] を選択します**。
+
+    ![[フロー パネルとフローの作成] オプションが強調表示されているスクリーンショット。](../media/content-understanding/integrate-create-flow.png) 
 
 ## <a name="see-also"></a>関連項目
   

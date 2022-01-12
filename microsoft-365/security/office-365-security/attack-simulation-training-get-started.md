@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5 または Microsoft Defender でシミュレートされたフィッシング攻撃とパスワード攻撃を実行して、Office 365プラン 2 組織に対して実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f6b8a10432c63a12f4d81e67f580f11b4f8b35ed
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5f2956df5ab3b50ffec2b7184a8c176f59979a82
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701205"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941542"
 ---
 # <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Defender での攻撃シミュレーション トレーニングの使用を開始Office 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "60701205"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 攻撃シミュレーション のトレーニングは、メールと **コラボレーションの攻撃シミュレーション** \> **トレーニングで利用できます**。 攻撃シミュレーション のトレーニングに直接移動するには、を開きます <https://security.microsoft.com/attacksimulator> 。
+- Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 攻撃シミュレーション のトレーニングは、メールと **コラボレーションの攻撃シミュレーション** \> **トレーニングで利用できます**。 攻撃シミュレーション のトレーニングに直接移動するには、 を使用します <https://security.microsoft.com/attacksimulator> 。
 
 - さまざまなサブスクリプション間で攻撃シミュレーション トレーニングを利用Microsoft 365詳細については[、「Microsoft Defender for Office 365」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "60701205"
 - 攻撃シミュレーションとトレーニング関連データは、他の顧客データと一緒に保存され、Microsoft 365されます。 詳細については、「データ[の場所Microsoft 365を参照してください](../../enterprise/o365-data-locations.md)。 攻撃シミュレーションは、NAM、APC、EUR、IND、CAN、AUS、FRA、GBR、JPN、KOR、BRA、LAM、CHE、NOR、ZAF、ARE、DEU の領域で使用できます。
 
   > [!NOTE]
-  > NOR、ZAF、ARE、DEU が最新の追加です。 報告された電子メールテレメトリを除くすべての機能は、これらの地域で利用できます。 これを有効にし、報告された電子メールテレメトリが利用可能になったらすぐにお客様に通知します。 
+  > NOR、ZAF、ARE、DEU が最新の追加です。 報告された電子メールテレメトリを除くすべての機能は、これらの地域で利用できます。 これを有効にし、報告された電子メールテレメトリが利用可能になったらすぐにお客様に通知します。
 
 - 2021 年 6 月 15 日現在、攻撃シミュレーション のトレーニングは、GCC。 組織に Office 365 G5 GCC または Microsoft Defender for Office 365 (プラン 2) がある場合は、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングを使用して、この記事で説明したように、組織で現実的な攻撃シナリオを実行できます。 攻撃シミュレーションのトレーニングは、High 環境または DoD 環境GCCまだ利用できません。
 

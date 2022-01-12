@@ -17,16 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e2ae9e71764895cd87deefad1e01aacf965dcf7
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 1740d910f95a0076da34b7a08e66853fb7cca598
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064525"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939635"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -133,7 +132,7 @@ DKIM キーでは 1024 ビットと 2048 ビットの両方がサポートされ
 - **DKIM の構成が済んでいる** 場合は、次のコマンドを実行してビットネスを回転します。
 
   ```powershell
-  Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
+  Rotate-DkimSigningConfig -KeySize 2048 -Identity <DkimSigningConfigIdParameter>
   ```
 
   **または**
@@ -185,22 +184,22 @@ Microsoft 365 の初期ドメインに加えてプロビジョニングされた
 CNAME レコードには次の形式を使用します。
 
 > [!IMPORTANT]
-> GCC High のお客様の場合、_domainGuid_ の計算方法が異なります。 _domainGuid_ を計算するために _initialDomain_ の MX レコードを参照する代わりに、カスタム ドメインから直接計算します。 たとえば、カスタム ドメインが "contoso.com" の場合、domainGuid は "contoso-com" となり、ピリオドはすべてダッシュに置き換えられます。 したがって、initialDomain が指し示す MX レコードに関係なく、CNAME レコードで使用する domainGuid は、常に上記の方法を使用して計算します。
+> GCC Highのお客様の場合は、_customDomainIdentifier_ の計算方法が異なります。 _customDomainIdentifier_ を計算するために _initialDomain_ の MX レコードを参照する代わりに、カスタマイズされたドマインから直接計算します。 たとえば、カスタマイズされたドメインが "contoso.com" の場合、_customDomainIdentifier_ は "contoso-com" となり、ピリオドはすべてダッシュに置き換えられます。 したがって、_initialDomain_ が指し示す MX レコードに関係なく、CNAME レコードで使用する _customDomainIdentifier_ は、常に上記の方法を使用して計算します。
 
 ```console
 Host name:            selector1._domainkey
-Points to address or value:    selector1-<domainGUID>._domainkey.<initialDomain>
+Points to address or value:    selector1-<customDomainIdentifier>._domainkey.<initialDomain>
 TTL:                3600
 
 Host name:            selector2._domainkey
-Points to address or value:    selector2-<domainGUID>._domainkey.<initialDomain>
+Points to address or value:    selector2-<customDomainIdentifier>._domainkey.<initialDomain>
 TTL:                3600
 ```
 
 ここで、
 
 - Microsoft 365 では、セレクターは常に "selector1" または "selector2" になります。
-- _domainGUID_ は、mail.protection.outlook.com の前に表示されるカスタム ドメインのカスタマイズされた MX レコードの _domainGUID_ と同じです。たとえば、次に示すドメイン contoso.com の MX レコードでは、_domainGUID_ は contoso-com です。
+- _customDomainIdentifier_ は、mail.protection.outlook.com の前に表示されるカスタム ドメインのカスタマイズされた MX レコードの _customDomainIdentifier_ と同じです。 たとえば、次に示すドメイン contoso.com の MX レコードでは、_customDomainIdentifier_ は contoso-com です:
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
@@ -236,19 +235,17 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルでカスタム ドメインの DKIM 署名を有効にするには
 
-1. 職場または学校のアカウントを使用して、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> を開きます。
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ルール]** セクションの **[メールとコラボレーション]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[DKIM]** に移動します。 DKIM ページに直接移動するには、<https://security.microsoft.com/dkimv2> を使用します。
 
-2. **[ルール]** セクションの **[メールとコラボレーション]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[DKIM]** に移動します。 または、DKIM ページに直接移動するには、<https://security.microsoft.com/dkimv2>を使用します。
+2. **DKIM** ページで、名前をクリックしてドメインを選択します。
 
-3. **DKIM** ページで、名前をクリックしてドメインを選択します。
-
-4. 表示される詳細ポップアップで、[**DKIM 署名を使用してこのドメインのメッセージに署名する**] 設定を **[有効]** (![[オンにする]](../../media/scc-toggle-on.png)) にします。
+3. 表示される詳細ポップアップで、[**DKIM 署名を使用してこのドメインのメッセージに署名する**] 設定を **[有効]** (![[オンにする]](../../media/scc-toggle-on.png)) にします。
 
    完了したら、[**DKIM キー の回転**] をクリックします。
 
-5. カスタム ドメインごとに、この手順を繰り返します。
+4. カスタム ドメインごとに、この手順を繰り返します。
 
-6. DKIM を初めて構成し、エラー 'DKIM キーがこのドメインに保存されていません' が表示される場合は、Windows PowerShell を使用して次の手順で説明するとおりに DKIM 署名を有効にする必要があります。
+5. DKIM を初めて構成し、エラー 'DKIM キーがこのドメインに保存されていません' が表示される場合は、Windows PowerShell を使用して次の手順で説明するとおりに DKIM 署名を有効にする必要があります。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>PowerShell を使用してカスタム ドメインの DKIM 署名を有効にするには
 
@@ -396,7 +393,7 @@ Return-Path: <communication@bulkemailprovider.com>
 
 **DKIM はスプーフィングを防止するように設計されていますが、SPF と DMARC を併用すると DKIM はより有効に機能します。**
 
-DKIM を設定したら、SPF をまだ設定していない場合は、設定する必要があります。SPF の簡単な概要と構成をすばやく行う方法については、「[**Microsoft 365 で SPF を設定して、スプーフィングを防止する**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。Microsoft 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについて確認する場合は、「[Microsoft 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法](how-office-365-uses-spf-to-prevent-spoofing.md)」からお読みください。 
+DKIM を設定したら、SPF をまだ設定していない場合は、設定する必要があります。SPF の簡単な概要と構成をすばやく行う方法については、「[**Microsoft 365 で SPF を設定して、スプーフィングを防止する**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。Microsoft 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについて確認する場合は、「[Microsoft 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法](how-office-365-uses-spf-to-prevent-spoofing.md)」からお読みください。
 
 次は、「[**DMARC を使用してメールを検証する**](use-dmarc-to-validate-email.md)」を参照してください。 [スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)には、Microsoft 365 が DKIM チェックに使用する構文とヘッダー フィールドが含まれています。
 
@@ -410,4 +407,4 @@ DKIM を設定したら、SPF をまだ設定していない場合は、設定�
 
 PowerShell を介したキー ローテーション: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[DMARC を使用してメールを検証する](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[DMARC を使用してメールを検証する](use-dmarc-to-validate-email.md)

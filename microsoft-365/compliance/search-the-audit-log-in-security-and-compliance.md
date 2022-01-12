@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: a2a94a47ca9f19087bfa5cf9b8d027ae2c551641
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: c59c9c06dfb8b15b6ee4bbd54cf86f54ad816e0a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560086"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937486"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -997,7 +997,7 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 
 ### <a name="sensitivity-label-activities"></a>機密ラベル アクティビティ
 
-次の表に、SharePoint Online および Teams サイトのラベル付けアクティビティから生じるイベントを一覧表示します。
+次の表に、[秘密度ラベル](sensitivity-labels.md)の使用によるイベントの一覧を示します。
 
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|

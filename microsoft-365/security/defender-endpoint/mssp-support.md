@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 161cb29c99ac442805685417195fe1dfd07fa4a2
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: f29c40e9c813ec27a1d8976f53ed958cb3a8d1d4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560398"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941758"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>マネージド セキュリティ サービス プロバイダーのパートナーシップの機会
 
@@ -42,7 +42,7 @@ ms.locfileid: "61560398"
 
 Defender for Endpoint は、このシナリオにパートナーシップの機会を追加し、MSSP が次のアクションを実行できます。
 
-- MSSP カスタマー のポータルへのアクセスMicrosoft Defender セキュリティ センターする
+- MSSP 顧客のポータルへのアクセスMicrosoft 365 Defenderする
 - 電子メール通知を取得し、 
 - セキュリティ情報とイベント管理 (SIEM) ツールを使用してアラートを取得する
 

@@ -1,6 +1,6 @@
 ---
 title: 準備評価ツールで見つかった問題を修正する
-description: ツールが見つけた各問題に対して実行する詳細なアクション
+description: ツールで検出された各問題に対して実行する詳細なアクション
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -12,84 +12,84 @@ ms.topic: article
 audience: Admin
 ms.openlocfilehash: d2e055b553e3358107283236d634d9d46d33de4d
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60163158"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
-チェックごとに、ツールは次の 4 つの結果のいずれかを報告します。
+チェックごとに、ツールは 4 つの考えられる結果のいずれかを報告します。
 
 
 |結果  |意味  |
 |---------|---------|
-|準備完了     | 登録を完了する前に、アクションは必要ありません。        |
-|アドバイザリ    | 登録とユーザーの最適なエクスペリエンスについては、ツールまたはこの記事の手順に従います。 登録 *は* 完了できますが、最初のデバイスを展開する前に、これらの問題を修正する必要があります。        |
-|使用不可能 | *これらの問題を解決しない場合、登録は失敗します。* ツールまたはこの記事の手順に従って解決します。        |
-|Error | 使用Azure Active Directory (AD) ロールには、このチェックを実行するための十分なアクセス許可が付与されません。 |
+|準備完了     | 登録を完了する前に操作は必要ありません。        |
+|アドバイザリ    | 登録とユーザーにとっての最高のエクスペリエンスを得るには、ツールまたはこの記事の手順に従ってください。 登録を完了することは *できます* が、最初のデバイスを展開する前にこれらの問題を修正する必要があります。        |
+|使用不可能 | これらの問題を修正しないと、*登録は失敗します*。 ツールまたはこの記事の手順に従って解決します。        |
+|Error | ご使用中の Azure Active Directory (AD) のロールには、このチェックを実行するための十分なアクセス許可がありません。 |
 
 > [!NOTE]
-> このツールによって報告された結果は、設定を実行した特定の時点でのみ設定の状態を反映します。 後で Microsoft Intune、Azure Active Directory、または Microsoft 365 のポリシーに変更を加えた場合、"準備完了" だったアイテムは "準備完了" になる可能性があります。 ポリシーを変更する前Microsoft マネージド デスクトップ、この記事で説明されている特定の設定を確認してください。
+> このツールによって報告された結果には、実行した特定の時点での設定の状態のみが反映されます。 後で Microsoft Intune、Azure Active Directory、または Microsoft 365 のポリシーに変更を加えた場合は、"準備完了" だったアイテムが "準備ができていません" になる可能性があります。 Microsoft Managed Desktop 操作に関する問題を回避するには、ポリシーを変更する前に、この記事で説明されている特定の設定を確認してください。
 
-## <a name="microsoft-intune-settings"></a>Microsoft Intune設定
+## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 
-Intune の設定には、管理センターのMicrosoft エンドポイント マネージャー[アクセスできます](https://endpoint.microsoft.com)。
+Intune には Microsoft エンドポイント マネージャー[管理センター](https://endpoint.microsoft.com)を使用してアクセスできます。
 
-### <a name="autopilot-deployment-profile"></a>自動パイロット展開プロファイル
+### <a name="autopilot-deployment-profile"></a>Autopilot 展開プロファイル
 
-割り当てられたグループまたは動的グループをターゲットとする既存の Autopilot プロファイルを、Microsoft マネージド デスクトップする必要があります。 Microsoft マネージド デスクトップを使用して新しいデバイスをプロビジョニングします。 既存の Autopilot 展開プロファイルがある場合は、Autopilot が成功するために管理デスクトップ準備テストを行う場合は、[すべての対象デバイスを自動パイロットに変換する] 設定を "No" に設定する必要があります。
+割り当てられたグループまたは動的グループを対象とする既存の Autopilot プロファイルを Microsoft Managed Desiktop デバイスと一緒に持たせるべきではありません。 Microsoft Managed Desktop では、Autopilot を使用して新しいデバイスをプロビジョニングします。 既存の Autopilot 展開プロファイルがある場合は、Autopilot 用のマネージド デスクトップ準備度テストを成功させるために "対象となるすべてのデバイスを Autopilot に変換する" を "いいえ" に設定する必要があります。
 
 **使用不可能**
 
-すべてのデバイスに割り当てられている自動パイロット プロファイルがあります。 手順については[、「Autopilot を使用Windows Intune にデバイスを登録する」を参照Windowsしてください](/mem/autopilot/enrollment-autopilot)。 登録Microsoft マネージド デスクトップ後、Autopilot ポリシーを設定して、モダン **Workplace デバイス -All** Azure ADグループをADします。
+すべてのデバイスに割り当てられている Autopilot プロファイルがあります。 手順については「[Windows Autopilot</a>を使用して Intune で Windows デバイスを登録する](/mem/autopilot/enrollment-autopilot)」を参照してください。 Microsoft Managed Desktop 登録後、Autopilot ポリシーを設定して、**Modern Workplace Devices - All** Azure AD グループを除外します。
 
 **アドバイザリ**
 
-Autopilot プロファイルが、割り当てられたまたは動的な Azure ADデバイスを含Microsoft マネージド デスクトップしてください。 手順については[、「Autopilot を使用Windows Intune にデバイスを登録する」を参照Windowsしてください](/mem/autopilot/enrollment-autopilot)。 登録Microsoft マネージド デスクトップ、Autopilot プロファイルを設定して、モダン Workplace **デバイス -All** Azure ADグループを除外します。
+Autopilot プロファイルが、Microsoft Managed Desktop デバイスを含まない割り当て済みの Azure AD グループまたは動的な Azure AD グループを対象としていることを確認します。 手順については「[Windows Autopilot</a>を使用して Intune で Windows デバイスを登録する](/mem/autopilot/enrollment-autopilot)」を参照してください。 Microsoft Managed Desktop 登録後、Autopilot プロファイルを設定して **Modern Workplace Devices -All** Azure AD グループを除外します。
 
 
 ### <a name="certificate-connectors"></a>証明書コネクタ
 
-Microsoft マネージド デスクトップ に登録するデバイスで使用される証明書コネクタがある場合、コネクタにエラーは発生しません。 以下のアドバイザリの 1 つだけが状況に適用されますので、注意深く確認してください。
+Microsoft Managed Desktop に登録するデバイスで使用される証明書コネクタがある場合、コネクタにエラーは発生しないはずです。 次のいずれかのアドバイザリのみが状況に適用されるため、慎重に確認してください。
 
 **アドバイザリ**
 
-証明書コネクタはありません。 コネクタは必要ない可能性がありますが、デバイスのネットワーク接続に必要かどうかを評価Microsoft マネージド デスクトップがあります。 詳細については、「証明書とネットワーク プロファイルを準備する」[を参照Microsoft マネージド デスクトップ。](certs-wifi-lan.md)
+証明書コネクタが存在しません。 コネクタは必要ないようですが、Microsoft Managed Desktop デバイスでネットワーク接続に必要なコネクタがあるかどうかを評価する必要があります。 詳細については、「[Microsoft Managed Desktop の証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)」を参照してください。
 
 **アドバイザリ**
 
-少なくとも 1 つの証明書コネクタにエラーがあります。 デバイスに証明書を提供するためにこのコネクタが必要Microsoft マネージド デスクトップ、エラーを解決する必要があります。 詳細については、「証明書とネットワーク プロファイルを準備する」[を参照Microsoft マネージド デスクトップ。](certs-wifi-lan.md)
+少なくとも 1 つの証明書コネクタにエラーがあります。 Microsoft Managed Desltop デバイスに証明書を提供するためにこのコネクタが必要な場合は、エラーを解決する必要があります。 詳細については、「[Microsoft Managed Desktop の証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)」を参照してください。
 
 
 **アドバイザリ**
 
-証明書コネクタが 1 つ以上あるので、エラーは報告されません。 ただし、展開の準備として、デバイスのコネクタを再利用するためにプロファイルを作成Microsoft マネージド デスクトップがあります。 詳細については、「証明書とネットワーク プロファイルを準備する」[を参照Microsoft マネージド デスクトップ。](certs-wifi-lan.md)
+証明書コネクタが少なくとも 1 つ存在し、エラーは報告されません。 ただし、展開の準備として、Microsoft Managed Desktop デバイス用のコネクタを再利用するプロファイルを作成する必要がある場合があります。 詳細については、「[Microsoft Managed Desktop の証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)」を参照してください。
 
 ### <a name="company-portal"></a>ポータル サイト
 
-Microsoft マネージド デスクトップ IT 管理者は、ユーザーがデバイスを使用Intune ポータル サイトユーザー用にMicrosoft マネージド デスクトップする必要があります。 
+Microsoft Managed Desktop では、IT 管理者が Microsoft Managed Desktop デバイスを使用してユーザーの Intune ポータル サイトをインストールする必要があります。 
 
 **使用不可能**
 
-ユーザーに対ポータル サイトインストールされていない。 Intune ポータル サイト同期を強制的に行い、Intune とデバイス間の同期をビジネス向け Microsoft Store。 詳細については、「デバイスにインストール[するIntune ポータル サイト」を参照してください](../get-started/company-portal.md)。
+ユーザー用のポータル サイトがインストールされていません。 ポータル サイトを購入し、Intune とビジネス向け Microsoft Store 間の同期を強制します。 詳細については、「[デバイスに Intune ポータル サイトをインストールする](../get-started/company-portal.md)」を参照してください。
 
 
 ### <a name="conditional-access-policies"></a>条件付きアクセス ポリシー
 
-条件付きアクセス ポリシーは、Intune Microsoft マネージド デスクトップ Azure AD組織 (テナント) の管理を妨AD。
+条件付きアクセス ポリシーを使用して、Microsoft Managed Desktop が Intune とAzure AD でAzure AD組織 (テナント) を管理できないようにすることはできません。
 
 **使用不可能**
 
-すべてのユーザーを対象とする条件付きアクセス ポリシーが少なくとも 1 つあります。 登録時に、関連する条件付きアクセス Microsoft マネージド デスクトップサービス アカウントを除外し、これらのアカウントへのアクセスを制限する新しい条件付きアクセス ポリシーを適用します。 登録後、条件付きアクセス ポリシー Microsoft マネージド デスクトップを確認Microsoft エンドポイント マネージャー。 これらのサービス アカウントの詳細については、「Standard operating [procedures」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+すべてのユーザーを対象とする条件付きアクセス ポリシーが少なくとも 1 つ存在します。 登録中に、関連する条件付きアクセス ポリシーから Microsoft Managed Desktop サービス アカウントを除外し、新しい条件付きアクセス ポリシーを適用してこれらのアカウントへのアクセスを制限します。 登録後、Microsoft エンドポイント マネージャーで Microsoft Managed Desktop の条件付きアクセス ポリシーを確認できます。 これらのサービス アカウントの詳細については、「[標準の操作手順](../service-description/operations-and-monitoring.md#standard-operating-procedures)」を参照してください。
 
 **アドバイザリ**
 
-条件付きアクセス ポリシーを使用すると、Microsoft マネージド デスクトップサービスを管理Microsoft マネージド デスクトップがあります。 登録時に、関連する条件付きアクセス Microsoft マネージド デスクトップサービス アカウントを除外し、これらのアカウントへのアクセスを制限する新しい条件付きアクセス ポリシーを適用します。 これらのサービス アカウントの詳細については、「Standard operating [procedures」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+Microsoft Managed Desktop が Microsoft Managed Desktop サービスを管理できなくなる可能性がある条件付きアクセス ポリシーがあります。 登録中に、関連する条件付きアクセス ポリシーから Microsoft Managed Desktop サービス アカウントを除外し、新しい条件付きアクセス ポリシーを適用してこれらのアカウントへのアクセスを制限します。 これらのサービス アカウントの詳細については、「[標準の操作手順](../service-description/operations-and-monitoring.md#standard-operating-procedures)」を参照してください。
 
 **エラー**
 
-Intune 管理者の役割には、このチェックに対する十分なアクセス許可が付与されません。 このチェックを実行するには、次の Azure ADロールが割り当てられている必要があります。
+Intune 管理者ロールには、このチェックのための十分なアクセス許可がありません。 また、このチェックを実行するには、次の Azure AD ロールのいずれかが割り当てられている必要があります:
 
 - セキュリティ閲覧者
 - セキュリティ管理者
@@ -100,73 +100,73 @@ Intune 管理者の役割には、このチェックに対する十分なアク�
 
 ### <a name="device-compliance-policies"></a>デバイス コンプライアンス ポリシー
 
-Azure 組織の Intune デバイス コンプライアンス ポリシー ADデバイスにMicrosoft マネージド デスクトップがあります。
+Azure AD 組織内の Intune デバイス コンプライアンス ポリシーは、Microsoft Managed Desktop デバイスに影響を与える可能性があります。
 
 **アドバイザリ**
 
-すべてのユーザーを適用する少なくとも 1 つのコンプライアンス ポリシーがあります。 Microsoft マネージド デスクトップデバイスに適用されるコンプライアンス ポリシー Microsoft マネージド デスクトップ含まれます。 組織が作成した、競合が発生Microsoft マネージド デスクトップデバイスに適用されるコンプライアンス ポリシーを確認します。 手順については、「コンプライアンス ポリシー[を作成する」を参照Microsoft Intune。](/mem/intune/protect/create-compliance-policy)
+すべてのユーザーを適用するコンプライアンス ポリシーが少なくとも 1 つ存在します。 Microsoft Managed Desktop には、Microsoft Managed Desktop デバイスに適用されるコンプライアンス ポリシーも含まれています。 Microsoft Managed Desktop デバイスに適用される組織によって作成されたすべてのコンプライアンス ポリシーを確認して、競合がないことを確認します。 手順については、「[Microsoft Intune でコンプライアンス ポリシーを作成する](/mem/intune/protect/create-compliance-policy)」を参照してください。
 
 
 
-### <a name="device-configuration-profiles"></a>デバイス構成プロファイル
+### <a name="device-configuration-profiles"></a>デバイスの構成プロファイル
 
-Azure 組織の Intune デバイス構成プロファイルAD、Microsoft Manage Desktop デバイスまたはユーザーをターゲットにしなける必要があります。
+Azure AD 組織内の Intune デバイス構成プロファイルは、Microsoft Manage Desktop デバイスまたはユーザーを対象にすることはできません。
 
 **使用不可能**
 
-すべてのユーザー、すべてのデバイス、または両方に適用される少なくとも 1 つの構成プロファイルがあります。 プロファイルをリセットして、特定の Azure ADデバイスを含Microsoft マネージド デスクトップします。 手順については、「カスタム設定[を使用してプロファイルを作成する」を参照Microsoft Intune。](/mem/intune/configuration/custom-settings-configure)
+すべてのユーザー、すべてのデバイス、またはその両方に適用される構成プロファイルが少なくとも 1 つ存在します。 プロファイルをリセットして、Microsoft Managed Desktopデバイスを含まない特定のAzure AD グループに適用します。 手順については、「[Microsoft Intune でカスタム設定を使用してプロファイルを作成する](/mem/intune/configuration/custom-settings-configure)」を参照してください。
 
 **アドバイザリ**
 
-構成ポリシーにデバイスまたはユーザーが含Microsoft マネージド デスクトップしてください。 手順については、「カスタム設定[を使用してプロファイルを作成する」を参照Microsoft Intune。](/mem/intune/configuration/custom-settings-configure)
+構成ポリシーに Microsoft Managed Desktop デバイスやユーザーが含まれていないことを確認します。 手順については、「[Microsoft Intune でカスタム設定を使用してプロファイルを作成する](/mem/intune/configuration/custom-settings-configure)」を参照してください。
 
 
 
 ### <a name="device-type-restrictions"></a>デバイスの種類の制限
 
-Microsoft マネージド デスクトップ Intune への登録を許可する必要があります。
+Microsoft Managed Desktop デバイスには Intune への登録を許可する必要があります。
 
 **使用不可能**
 
-現在、Intune でのデバイスへの登録を許可Windows、少なくとも 1 つの登録制限ポリシーが構成されています。 「ユーザーを対象 [](/mem/intune/enrollment/enrollment-restrictions-set)とする登録制限ポリシーごとに登録制限を設定し、Microsoft マネージド デスクトップ **(MDM)** 設定を [許可] に変更Windows手順に従 **います**。 ただし、個人所有のデバイス **(MDM)** Windowsを [ブロック] に **設定できます**。 
+Windows デバイスが Intune に登録されないように構成された登録制限ポリシーが、現在少なくとも 1 つあります。 [登録制限の設定](/mem/intune/enrollment/enrollment-restrictions-set)の手順に従って、Microsoft Managed Desktop ユーザーを対象とする各登録制限ポリシーを設定し、**Windows (MDM)** 設定を **[許可]** に変更します。 ただし、**個人所有の** **Windows (MDM)** デバイスを **[禁止]** に設定できます。 
 
 
 ### <a name="enrollment-status-page"></a>登録ステータス ページ
 
-現在、登録状態ページ (ESP) が有効になっています。 この機能のパブリック プレビュー Microsoft マネージド デスクトップ参加する場合は、このアイテムを無視できます。 詳細については [、「First-run experience with Autopilot」および「登録状態ページ」を参照してください](../get-started/esp-first-run.md)。
+現在、登録ステータス ページ (ESP) が有効になっています。 この機能の Microsoft Managed Desktop パブリック プレビューに参加する場合は、この項目を無視できます。 詳細については、「[Autopilot と登録状態ページでの最初の実行エクスペリエンス](../get-started/esp-first-run.md)」を参照してください。
 
 **使用不可能**
 
-ESP の既定のプロファイルが [アプリとプロファイルの構成の進行状況 **を表示する] に設定されています**。 この設定を無効にするか、Azure AD グループへの割り当てに Microsoft マネージド デスクトップ デバイスが含まれるのを確認するには、「登録状態ページのセットアップ」の手順に[従います](/mem/intune/enrollment/windows-enrollment-status)。
+ESP の既定のプロファイルが **[アプリケーションとプロファイルの構成の進行状況を表示]** に設定されています。 この設定を無効にするか、「[登録ステータス ページの設定](/mem/intune/enrollment/windows-enrollment-status)」の手順に従って、Azure AD グループへの割り当てに Microsoft Managed Desktop デバイスが含まれていないことを確認します。
 
 **アドバイザリ**
 
-[アプリとプロファイルの構成の進行状況を表示する] 設定を持つプロファイルが、デバイスを含む Azure AD グループに割りMicrosoft マネージド デスクトップしてください。 詳細については、「登録状態 [ページの設定」を参照してください](/mem/intune/enrollment/windows-enrollment-status)。
+**[アプリケーションとプロファイル構成の進行状況の表示]** 設定のあるプロファイルが、Microsoft Managed Desktop デバイスを含む Azure AD グループに割り当てられていないことを確認します。 詳細については「[登録状態ページの設定](/mem/intune/enrollment/windows-enrollment-status)」を参照してください。
 
 ### <a name="microsoft-store-for-business"></a>ビジネス向け Microsoft Store
 
-ビジネス向け Microsoft Store ポータル サイト アプリを Microsoft マネージド デスクトップ に展開して、Microsoft Project や Microsoft Visio などの一部のアプリを必要に応じてインストールできます (許可されている場合)。
+ビジネス向け Microsoft Store を使用し、Microsoft Managed Desktop にポータル サイト アプリを展開して、ユーザーが必要に応じて Microsoft Project や Microsoft Visio などの一部のアプリ (許可されている場合) をインストールできるようにします。
 
 **使用不可能**
 
-ビジネス向け Microsoft Store有効になっていないか、Intune と同期されていない場合。 詳細については、「How [to manage volume purchased](/mem/intune/apps/windows-store-for-business) apps from the ビジネス向け Microsoft Store Microsoft Intune デバイスIntune ポータル サイトインストールする」を[参照してください](../get-started/company-portal.md)。
+ビジネス向け Microsoft Store が有効になっていないか、Intune と同期されていません。 詳細については、「[Microsoft Intune を使ってビジネス向け Microsoft Store から大量購入したアプリの管理方法](/mem/intune/apps/windows-store-for-business)」 と「[デバイスに Intune ポータル サイト](../get-started/company-portal.md)」を参照してください。
 
 ### <a name="multifactor-authentication"></a>多要素認証
 
-多要素認証では、Intune Microsoft マネージド デスクトップ Azure AD組織 (テナント) を管理AD。
+多要素認証では、Microsoft Managed Desktop が Intune とAzure AD で Azure AD 組織 (テナント) を管理できないようにすることはできません。
 
 
 **使用不可能**
 
-すべてのユーザーに割り当てられている条件付きアクセスポリシーでは、必要に応じていくつかの多要素認証ポリシーが設定されています。 登録時に、関連する条件付きアクセス Microsoft マネージド デスクトップサービス アカウントを除外し、これらのアカウントへのアクセスを制限する新しい条件付きアクセス ポリシーを適用します。 これらのサービス アカウントの詳細については、「Standard operating [procedures」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+すべてのユーザーに割り当てられている条件付きアクセス ポリシーに対して、**「必要]** として設定された多要素認証ポリシーがいくつかあります。 登録中に、関連する条件付きアクセス ポリシーから Microsoft Managed Desktop サービス アカウントを除外し、新しい条件付きアクセス ポリシーを適用してこれらのアカウントへのアクセスを制限します。 これらのサービス アカウントの詳細については、「[標準の操作手順](../service-description/operations-and-monitoring.md#standard-operating-procedures)」を参照してください。
 
 **アドバイザリ**
 
-条件付きアクセス ポリシーでは、複数要素認証が必要になります。この場合、Microsoft マネージド デスクトップサービスを管理Microsoft マネージド デスクトップがあります。 登録時に、関連する条件付きアクセス Microsoft マネージド デスクトップサービス アカウントを除外し、これらのアカウントへのアクセスを制限する新しい条件付きアクセス ポリシーを適用します。 これらのサービス アカウントの詳細については、「Standard operating [procedures」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+Microsoft Managed Desktop が Microsoft Managed Desktop サービスを管理できなくなる可能性がある条件付きアクセス ポリシーで多要素認証が必要になっています。 登録中に、関連する条件付きアクセス ポリシーから Microsoft Managed Desktop サービス アカウントを除外し、新しい条件付きアクセス ポリシーを適用してこれらのアカウントへのアクセスを制限します。 これらのサービス アカウントの詳細については、「[標準の操作手順](../service-description/operations-and-monitoring.md#standard-operating-procedures)」を参照してください。
 
 **エラー**
 
-Intune 管理者の役割には、このチェックに対する十分なアクセス許可が付与されません。 このチェックを実行するには、次の Azure ADロールが割り当てられている必要があります。
+Intune 管理者ロールには、このチェックのための十分なアクセス許可がありません。 また、このチェックを実行するには、次の Azure AD ロールのいずれかが割り当てられている必要があります:
 
 - セキュリティ閲覧者
 - セキュリティ管理者
@@ -177,186 +177,186 @@ Intune 管理者の役割には、このチェックに対する十分なアク�
 
 ### <a name="powershell-scripts"></a>PowerShell スクリプト
 
-Windows PowerShellデバイスをターゲットとする方法では、スクリプトを割りMicrosoft マネージド デスクトップできません。  
+Windows PowerShell スクリプトは、Microsoft Managed Desktop デバイスを対象とするようには割り当てられません。  
 
 **アドバイザリ**
 
-組織の Azure Windows PowerShellスクリプトAD Microsoft Manage Desktop デバイスまたはユーザーを対象とされていないことを確認します。 すべてのユーザー、すべてのデバイス、または両方を対象とする PowerShell スクリプトを割り当てない。 ポリシーを変更して、特定の Azure ADデバイスまたはユーザーを含Microsoft マネージド デスクトップ割り当てを使用します。 詳細については、「Intune のデバイスで PowerShell スクリプトを[使用するWindows 10を参照してください](/mem/intune/apps/intune-management-extension)。
+Azure AD 組織内の Windows PowerShell スクリプトが Microsoft Manage Desktop デバイスまたはユーザーを対象としていないことを確認します。 すべてのユーザー、すべてのデバイス、またはその両方を対象とする PowerShell スクリプトを割り当てないでください。 Microsoft Managed Desktop デバイスやユーザーを含まない特定の Azure AD グループを対象とする割り当てを使用するようにポリシーを変更します。 詳細については、「[Intune の Windows 10 デバイスで PowerShell スクリプトを使用する](/mem/intune/apps/intune-management-extension)」を参照してください。
 
 ### <a name="region"></a>地域
 
-地域は、地域でサポートされているMicrosoft マネージド デスクトップ。
+Microsoft Managed Desktop でお客様のリージョンがサポートされている必要があります。
 
 **使用不可能**
 
-Azure AD組織の地域は、現在、ユーザーがサポートMicrosoft マネージド デスクトップ。 詳細については、「サポートされている[地域Microsoft マネージド デスクトップ言語」を参照してください](../service-description/regions-languages.md)。
+お客様の Azure AD 組織リージョンは、現在 Microsoft Managed Desktop でサポートされていません。 詳細については、「[Microsoft Managed Desktop のサポートされている地域と言語](../service-description/regions-languages.md)」を参照してください。
 
 **アドバイザリ**
 
-Azure 組織が所属する 1 つ以上のADは、ユーザーがサポートMicrosoft マネージド デスクトップ。 詳細については、「サポートされている[地域Microsoft マネージド デスクトップ言語」を参照してください](../service-description/regions-languages.md)。
+お客様の Azure AD 組織が配置されている 1 つ以上の国は、Microsoft Managed Desktop でサポートされていません。 詳細については、「[Microsoft Managed Desktop のサポートされている地域と言語](../service-description/regions-languages.md)」を参照してください。
 
 
 ### <a name="security-baselines"></a>セキュリティ基本計画
 
-セキュリティ ベースライン ポリシーは、すべてのデバイスを対象Microsoft マネージド デスクトップする必要があります。
+セキュリティ ベースライン ポリシーは、どのMicrosoft Managed Desktop デバイスも対象にしないでください。
 
 **使用不可能**
 
-すべてのユーザー、すべてのデバイス、または両方を対象とするセキュリティ 基準プロファイルがあります。 ポリシーを変更して、特定の Azure ADデバイスを含Microsoft マネージド デスクトップします。 手順については[、「Use security baselines to configure Windows 10 Intune」を参照してください](/mem/intune/protect/security-baselines)。 登録中に、すべてのデバイスに新しいセキュリティ 基準をMicrosoft マネージド デスクトップします。 登録後、セキュリティ ベースライン ポリシー Microsoft マネージド デスクトップ構成ポリシー領域で確認Microsoft エンドポイント マネージャー。 
+すべてのユーザー、すべてのデバイス、またはその両方を対象とするセキュリティ ベースライン プロファイルがあります。 Microsoft Managed Desktop デバイスを含まない特定の Azure AD グループを対象とする割り当てを使用するようにポリシーを変更します。 手順については、「[セキュリティ ベースラインを使用して Intune で Windows 10 デバイスを構成する](/mem/intune/protect/security-baselines)」をご覧ください。 登録中に、すべての Microsoft Managed Desktop デバイスに新しいセキュリティ ベースラインを適用します。 登録後、Microsoft エンドポイント マネージャー の **[構成ポリシー領域]** で Microsoft Managed Desktop セキュリティ ベースライン ポリシーを確認できます。
 
 **アドバイザリ**
 
-デバイスから除外するセキュリティ 基準ポリシー Microsoft マネージド デスクトップします。 手順については[、「Use security baselines to configure Windows 10 Intune」を参照してください](/mem/intune/protect/security-baselines)。 登録中に、すべてのデバイスに新しいセキュリティ 基準をMicrosoft マネージド デスクトップします。 モダン **ワークプレース デバイス -All** Azure AD グループは、Microsoft マネージド デスクトップ に登録するときに作成する動的グループなので、登録後にこのグループを除外するために戻ってくる必要があります。 
+すべてのセキュリティ ベースライン ポリシーから Microsoft Managed Desktop デバイスが除外されていることを確認します。 手順については、「[セキュリティ ベースラインを使用して Intune で Windows 10 デバイスを構成する](/mem/intune/protect/security-baselines)」をご覧ください。 登録中に、すべての Microsoft Managed Desktop デバイスに新しいセキュリティ ベースラインを適用します。 **Modern Workplace Devices -All** Azure AD グループは、Microsoft Managed Desktop 登録時に作成される動的グループであるため、登録後に戻りこのグループを除外する必要があります。 
 
 ### <a name="unlicensed-admins"></a>ライセンスのない管理者
 
-Azure 組織とやり取りするときに"アクセス許可の不足" エラーを回避するには、この設定ADがあります。 
+お客様の Azure AD 組織とやり取りするときに "アクセス許可の不足" のエラーを回避するためにこの設定を有効にする必要があります。 
 
 **使用不可能**
 
-**ライセンスのない管理者へのアクセスを許可するを有効** にする必要があります。 手順については、「ゲスト アカウント [の前提条件」を参照してください](/microsoft-365/managed-desktop/get-ready/guest-accounts)。
+**[ライセンスのない管理者へのアクセスを許可する**] を有効にする必要があります。 手順については、「[ゲスト アカウントの前提条件](/microsoft-365/managed-desktop/get-ready/guest-accounts)」を参照してください。
 
-### <a name="windows-apps"></a>Windowsアプリ
+### <a name="windows-apps"></a>Windows アプリ
 
-ユーザーに提供するアプリMicrosoft マネージド デスクトップ確認します。
+Microsoft Managed Desktop ユーザーに必要なアプリを確認します。
 
 **アドバイザリ**
 
-ユーザーに提供するアプリのインベントリをMicrosoft マネージド デスクトップする必要があります。 これらのアプリは Intune によって展開する必要があるから、既存の Intune アプリの再利用を評価します。 ユーザーにアプリポータル サイトする場合は、「[](../get-started/company-portal.md)デバイスIntune ポータル サイトをインストールする」と「登録状態ページ (ESP)」を参照してください)。 詳細については、「自動パイロット[でのアプリのMicrosoft マネージド デスクトップ](apps.md)実行エクスペリエンス」および「登録状態ページ」[を参照してください](../get-started/esp-first-run.md)。
+Microsoft Managed Desktop ユーザーが持つアプリのインベントリを準備する必要があります。 これらのアプリは Intune で展開する必要があるため、既存の Intune アプリの再利用を評価します。 ポータル サイト ([デバイスに Intune ポータル サイトをインストールする](../get-started/company-portal.md)) と登録状態ページ (ESP) を使用してユーザーにアプリを配布することを検討してください。 詳細については、「[Microsoft Managed Desktop のアプリ](apps.md)」および「[Autopilot と登録状態ページを使った最初の実行エクスペリエンス](../get-started/esp-first-run.md)」を参照してください。
 
-Intune に移行する準備ができているアプリや調整が必要なアプリMicrosoft Endpoint Configuration Manager Microsoft アカウント担当者に問い合わせください。
+Microsoft Endpoint Configuration Manager でMicrosoft アカウント担当者に問い合わせて、Intune に移行する準備ができているアプリや調整が必要なアプリを特定することができます。
 
 
 ### <a name="windows-hello-for-business"></a>Windows Hello for Business
 
-Microsoft マネージド デスクトップビジネスWindows Hello有効にする必要があります。
+Microsoft Managed Desktop には、Windows Hello for Business を有効にする必要があります。
 
 **アドバイザリ**
 
-Windows Helloは無効になっているか、セットアップされません。 [ビジネス向けビジネス ポリシーの作成] の手順[に従ってWindows Helloを有効にしてください](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)。
+Windows Hello for Business が無効になっているか、設定されていません。 「[Windows Hello for Business ポリシーの作成](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)」の手順に従って有効にします。
 
 
-### <a name="windows-10-update-rings"></a>Windows 10リング
+### <a name="windows-10-update-rings"></a>Windows 10 更新リング
 
-Intune の "Windows 10リング" ポリシーは、すべてのデバイスを対象Microsoft マネージド デスクトップできません。
+Intune の "Windows 10更新リング" のポリシーは、Microsoft Managed Desktop デバイスをターゲットにすることはできません。
 
 **使用不可能**
 
-すべてのデバイス、すべてのユーザー、または両方を対象とする "更新リング" ポリシーがあります。 ポリシーを変更して、特定の Azure ADデバイスを含Microsoft マネージド デスクトップします。 手順については[、「Intune でソフトウェアWindows 10更新プログラムを管理する」を参照してください](/mem/intune/protect/windows-update-for-business-configure)。
+すべてのデバイス、すべてのユーザー、またはその両方を対象とする "更新リング" ポリシーがあります。 Microsoft Managed Desktop デバイスを含まない特定の Azure AD グループを対象とする割り当てを使用するようにポリシーを変更します。 手順については、「[Intune で Windows 10 ソフトウェア更新プログラムを管理する](/mem/intune/protect/windows-update-for-business-configure)」を参照してください。
 
 **アドバイザリ**
 
-最新の Workplace Devices **-All Azure** ADグループを除外している更新リング ポリシーをADしてください。 これらのポリシーに Azure AD ユーザー グループを割り当てた場合は、Microsoft マネージド デスクトップ ユーザーを追加するモダン **Workplace -All** Azure AD グループ (または同等のグループ) も除外している更新リング ポリシーを確認してください。 手順については[、「Intune でソフトウェアWindows 10更新プログラムを管理する」を参照してください](/mem/intune/protect/windows-update-for-business-configure)。 モダン ワークプレース デバイス **-All** および **Modern Workplace -All** Azure AD グループは、Microsoft マネージド デスクトップ に登録するときに作成するグループなので、登録後にこのグループを除外するために戻ってくる必要があります。
+**Modern Workplace Devices -All** Azure AD グループを除外した更新リング ポリシーがあることを確認します。 これらのポリシーに Azure AD ユーザー グループを割り当てた場合は、あらゆるリング ポリシーから Microsoft Managed Desktop ユーザーを追加した **Modern Workplace -All** Azure AD グループ (または同等のグループ) が除外されていることを確認してください。 手順については、「[Intune で Windows 10 ソフトウェア更新プログラムを管理する](/mem/intune/protect/windows-update-for-business-configure)」を参照してください。 **Modern Workplace Devices -All** と **Modern Workplace -All** Azure AD グループはどちらも、Microsoft Managed Desktop に登録するときに作成されるグループであるため、登録後に戻りこのグループを除外する必要があります。
 
 
-## <a name="azure-active-directory-settings"></a>Azure Active Directory設定
+## <a name="azure-active-directory-settings"></a>Azure Active Directory の設定
 
-Azure portal でAzure Active Directory設定に[アクセスできます](https://portal.azure.com)。
+[Azure portal](https://portal.azure.com) で Azure Active Directory 設定にアクセスできます。
 
 ### <a name="intune-enrollment"></a>Intune の登録
 
-Windows 10組織の Azure ADデバイスは、Intune に自動的に登録できる必要があります。
+Azure AD 組織内の Windows 10 デバイスは、Intune に自動的に登録できる必要があります。
 
 **アドバイザリ**
 
-MDM User スコープ **が [一部] または** [すべて] **に設定されているの** に **、None** は設定 **されていないか確認します**。 [一部] を **選択** した場合は、登録後に戻り、すべてのユーザーを対象とするグループまたは同等のグループに対してモダン Workplace **-All** Azure AD グループをMicrosoft マネージド デスクトップします。  「[デバイスを使用してデバイスの登録Windows設定する」を参照](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)Microsoft Intune。
+**MDM ユーザー スコープ** が、**[なし]** ではなく、**[一部]** または **[すべて]** に設定されていることを確認します。 **[一部]** を選択した場合、登録後に戻り、Microsoft Managed Desktop ユーザー全員を対象にしている **グループ** の **Modern Workplace -All** Azure AD グループ、またはすべての Microsoft Managed Desktop ユーザーを対象とする同等のグループを選択します。  「[Microsoft Intune を使用して Windows デバイスの登録を設定する](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)」を参照してください。
 
 ### <a name="ad-hoc-subscriptions"></a>アドホック サブスクリプション
 
-("false" に設定されている場合) 状態ローミングが正しく動作Enterprise設定を確認する方法について説明します。
+("false" に設定されている場合) Enterprise State Roaming が正しく機能しない可能性がある設定を確認する方法をアドバイスします。
 
 **アドバイザリ**
 
-**AllowAdHocSubscriptions が True** に設定されている必要 **があります**。 それ以外の場合Enterprise状態ローミングが機能しない場合があります。 詳細については [、「Set-MsolCompanySettings」を参照してください](/powershell/module/msonline/set-msolcompanysettings)。
+**AllowAdHocSubscriptions** が **True** に設定されていることを確認します。 そうしないと、Enterprise State Roaming が機能しない可能性があります。 詳細については、[Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings) を参照してください。
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming
 
-Enterprise状態ローミングを有効にする必要があります。
+Enterprise State Roaming を有効にする必要があります。
 
 **アドバイザリ**
 
-[すべて] または [選択Enterprise] の **状態ローミングが** 有効 **になっているか確認** します。 詳細については、「Enable Enterprise ステート ローミング」[を参照Azure Active Directory。](/azure/active-directory/devices/enterprise-state-roaming-enable)
+Enterprise State Roaming が **[すべての]** または **[選択された]** グループに対して有効になっていることを確認します。 詳細については、「[Azure Active Directory で Enterprise State Roaming を有効にする](/azure/active-directory/devices/enterprise-state-roaming-enable)」を参照してください。
 
 ### <a name="guest-invitation-settings"></a>ゲスト招待の設定
 
-Microsoft マネージド デスクトップ設定では、ディレクトリ内のすべてのユーザーとゲストがゲストを招待できるので、ゲストの招待設定を調整する方法をお勧めします。
+Microsoft Managed Desktop ではゲスト招待の設定を調整することを推奨しています。というのは、規定の設定では、ディレクトリ内のすべてのユーザーとゲストが、ゲストを招待できるようになっているからです。
 
 **アドバイザリ**
 
-**特定の管理者ロールに割り当** てられたメンバー ユーザーとユーザーは、メンバーアクセス許可を持つゲストを含むゲスト ユーザーを招待できます。有効にする必要があります。 手順については、「ゲスト アカウント [の前提条件」を参照してください](/microsoft-365/managed-desktop/get-ready/guest-accounts)。
+**[メンバー ユーザーおよび特定の管理者の役割に割り当てられたユーザーが、メンバーのアクセス許可を持つゲストを含むゲスト ユーザーを招待できる]** が有効にされている必要があります。 手順については、「[ゲスト アカウントの前提条件](/microsoft-365/managed-desktop/get-ready/guest-accounts)」を参照してください。
 
 ### <a name="guest-user-access"></a>ゲスト ユーザー アクセス
 
-Microsoft マネージド デスクトップ設定を使用すると、ディレクトリ内のすべてのゲスト ユーザーがメンバーと同じアクセス権を持つ可能性があります。
+Microsoft Managed Desktop ではゲスト ユーザー アクセスを調整することを推奨しています。というのは、規定の設定では、ディレクトリ内のすべてのゲスト ユーザーが、メンバーと同じアクセス権を持つことを許されているからです。
 
 **アドバイザリ**
 
-**ゲスト ユーザーは、プロパティへのアクセスが制限され、ディレクトリ オブジェクトのメンバーシップを** 有効にする必要があります。 手順については、「ゲスト アカウント [の前提条件」を参照してください](/microsoft-365/managed-desktop/get-ready/guest-accounts)。
+**[ゲスト ユーザーは、ディレクトリ オブジェクトのプロパティとメンバーシップへのアクセスが制限されている]** を有効にする必要があります。 手順については、「[ゲスト アカウントの前提条件](/microsoft-365/managed-desktop/get-ready/guest-accounts)」を参照してください。
 
 ### <a name="licenses"></a>ライセンス
 
-ライセンスを使用するには、多数のライセンスMicrosoft マネージド デスクトップ。
+Microsoft Managed Desktop を使用するには、いくつかのライセンスが必要です。
 
-**準備ができていない**
+**準備未完了**
 
-ユーザーが使用する必要があるすべてのライセンスを持っているMicrosoft マネージド デスクトップ。 詳細については[、「Microsoft マネージド デスクトップ」](../intro/technologies.md)および「[ライセンスの詳細」を参照してください](prerequisites.md#more-about-licenses)。
+Microsoft Managed Desktop を使用するために必要なすべてのライセンスがありません。 詳細については、「[Microsoft Managed Desktop テクノロジ](../intro/technologies.md)」および「[ライセンスの詳細](prerequisites.md#more-about-licenses)」を参照してください。
 
 
-### <a name="microsoft-managed-desktop-service-accounts"></a>Microsoft マネージド デスクトップ サービス アカウント
+### <a name="microsoft-managed-desktop-service-accounts"></a>Microsoft Managed Desktop のサービス アカウント
 
-一部のアカウント名は、サービスを管理するためにMicrosoft マネージド デスクトップアカウント名とMicrosoft マネージド デスクトップがあります。
+特定のアカウント名が、Microsoft Managed Desktop サービスを管理するために Microsoft Managed Desktop によって作成されたアカウント名と競合する可能性があります。
 
 **使用不可能**
 
-ユーザーが作成したアカウント名と競合するアカウント名が少なくとも 1 つMicrosoft マネージド デスクトップ。 これらのアカウント名を除外するには、Microsoft アカウント担当者と一緒に作業します。 セキュリティ リスクを最小限に抑えるために、アカウント名を一般に一覧表示する必要があります。 
+Microsoft Managed Desktop によって作成されたアカウント名と競合するアカウント名が少なくとも 1 つ存在します。 Microsoft アカウント担当者と協力して、これらのアカウント名を除外してください。 セキュリティ リスクを最小限に抑えるために、アカウント名をパブリックに一覧表示しません。 
 
 
 ### <a name="security-administrator-roles"></a>セキュリティ管理者の役割
 
-特定のセキュリティ ロールを持つユーザーには、それらの役割が Microsoft Defender for Endpoint に割り当てられている必要があります。
+特定のセキュリティ ロールを持つユーザーには、Microsoft Defender for Endpoint でそれらのロールが割り当てられている必要があります。
 
 **アドバイザリ**
 
-Azure AD組織でこれらの役割に割り当てられているユーザーがある場合は、それらの役割も Microsoft Defender for Endpoint に割り当てられている必要があります。 それ以外の場合、これらの役割を持つ管理者は管理ポータルにアクセスできません。
+Azure AD 組織内でこれらのロールのいずれかにユーザーが割り当てられている場合は、Microsoft Defender for Endpoint でもこれらのロールが割り当てられていることを確認します。 そうしないと、これらのロールを持つ管理者は管理ポータルにアクセスできなくなります。
 
 - セキュリティ オペレーター
 - グローバル閲覧者
 
-詳細については、「役割ベースの [アクセス制御の役割を作成および管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/user-roles)。
+詳細については、「[ロールベースのアクセス制御のロールの作成と管理](/windows/security/threat-protection/microsoft-defender-atp/user-roles)」を参照してください。
 
 
 ### <a name="security-default"></a>セキュリティの既定値
 
-セキュリティの既定値はAzure Active DirectoryデバイスMicrosoft マネージド デスクトップ管理できません。
+Azure Active Directory のセキュリティの既定値により、Microsoft Managed Desktop がデバイスを管理できなくなります。
 
 **使用不可能**
 
-セキュリティの既定値を有効にしています。 セキュリティの既定値をオフにし、条件付きアクセス ポリシーを設定します。 詳細については、「一般的な条件付 [きアクセス ポリシー」を参照してください](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)。
+セキュリティの既定値が有効になっています。 セキュリティの既定値をオフにし、条件付きアクセス ポリシーを設定します。 詳細については、「[条件付きアクセス ポリシーを作成する](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)」を参照してください。
 
-### <a name="self-service-password-reset"></a>セルフサービス のパスワードのリセット
+### <a name="self-service-password-reset"></a>セルフサービス パスワードのリセット
 
-セルフサービス パスワード リセット (SSPR) は、サービス アカウントを除くすべてのユーザー Microsoft マネージド デスクトップ有効Microsoft マネージド デスクトップできます。 詳細については、「チュートリアル: ユーザーが自分のアカウントのロックを解除したり、セルフサービス パスワードのリセットを使用してパスワードAzure Active Directory[を有効にする」を参照してください](/azure/active-directory/authentication/tutorial-enable-sspr)。
-
-**アドバイザリ**
-
-SSPR **Selected 設定** にユーザーが含Microsoft マネージド デスクトップサービス アカウントMicrosoft マネージド デスクトップしてください。 Microsoft マネージド デスクトップ SSPR が有効な場合、サービス アカウントは期待通り動作しません。  
-
-
-### <a name="standard-user-role"></a>標準ユーザー ロール
-
-グローバル管理者とデバイス管理者の Azure ADロールが割り当てられているユーザー以外に、Microsoft マネージド デスクトップユーザーはローカル管理者特権のない標準ユーザーです。 他のすべてのユーザーには、デバイスを起動するときに標準のユーザー ロールMicrosoft マネージド デスクトップされます。
+セルフサービス パスワード リセット (SSPR) は、Microsoft Managed Desktop サービス アカウントを除くすべての Microsoft Managed Desktop ユーザーに対して有効にすることができます。 詳細については、「[チュートリアル: Azure Active Directory セルフサービス パスワード リセットを使用してユーザーがアカウントのロックを解除したり、パスワードをリセットしたりできるようにする](/azure/active-directory/authentication/tutorial-enable-sspr)」を参照してください。
 
 **アドバイザリ**
 
-Microsoft マネージド デスクトップユーザーは、登録後に自分のデバイスに対してローカルMicrosoft マネージド デスクトップ特権を持つ必要があります。
+SSPR の **[選択済み]** 設定には Microsoft Managed Desktop ユーザーが含まれ、Microsoft Managed Desktop サービス アカウントは除外されていることを確認してください。 Microsoft Managed Desktop サービス アカウントは、SSPR が有効になっていると想定どおりに動作しません。  
+
+
+### <a name="standard-user-role"></a>標準ユーザーの役割
+
+グローバル管理者とデバイス管理者の Azure AD ロールが割り当てられているユーザー以外は、Microsoft Managed Desktop ユーザーは、ローカル管理者特権を持たない標準ユーザーになります。 他のすべてのユーザーには、Microsoft Managed Desktop デバイスの起動時に標準ユーザー ロールが割り当てられます。
+
+**アドバイザリ**
+
+Microsoft Managed Desktop ユーザーは、登録後にMicrosoft Managed Desktop デバイスに対するローカル管理者特権を持たなくなります。
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
 ### <a name="onedrive"></a>OneDrive
 
-[**特定のドメインに参加** している PC でのみ同期を許可する] の設定は、特定のドメインと競合Microsoft マネージド デスクトップ。 管理センターでOneDrive設定OneDrive[アクセスできます](https://admin.onedrive.com)。
+**[特定のドメインに参加している PC でのみ同期を許可]** 設定は Microsoft Managed Desktop と競合します。 OneDrive の設定には、OneDrive [管理者センター](https://admin.onedrive.com)でアクセスできます。
 
 **アドバイザリ**
 
-[特定のドメインに参加している PC でのみ同期を許可 **する] 設定を使用** しています。 この設定は、この設定ではMicrosoft マネージド デスクトップ。 この設定を無効にし、代わりに条件付OneDriveポリシーを使用する方法を設定します。 ヘルプについては [、「条件付きアクセスの展開を計画する](/azure/active-directory/conditional-access/plan-conditional-access) 」を参照してください。
+**[特定のドメインに参加している PC でのみ同期を許可]** 設定を使用しています。 この設定は、Microsoft Managed Desktop では機能しません。 この設定を無効にし、代わりに条件付きアクセス ポリシーを使用するように OneDrive を設定します。 ヘルプについては「[条件付きアクセスの展開の計画](/azure/active-directory/conditional-access/plan-conditional-access)」を参照してください。

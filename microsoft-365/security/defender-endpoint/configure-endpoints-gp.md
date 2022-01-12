@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/16/2021
+ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 264196cab7669b7c64a44a5be879e454d60685f0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ccadbb21de4e86de9bc030252cc8e54cdaa0b685
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168332"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942072"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする 
 
@@ -171,7 +171,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
-[攻撃表面の縮小ルールのカスタマイズ] から攻撃表面の縮小 GUID [の現在のリストを取得する](customize-attack-surface-reduction.md)
+攻撃表面縮小ルール展開フェーズ 3 から攻撃表面縮小 GUID の現在の一覧 [を取得する: 実装](attack-surface-reduction-rules-deployment-phase-3.md)
 
 1. [攻撃表面 **縮小の構成] ポリシーを開** きます。
 
@@ -185,9 +185,9 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
    ![攻撃表面の縮小構成のイメージ。](images/asr-guid.png)
 
-ポリシー|Setting
----|---
-フォルダー アクセスの制御を構成する| 有効、監査モード
+ポリシー|Location|Setting
+---|---|---
+フォルダー アクセスの制御を構成する| \Windows コンポーネント\Microsoft Defender ウイルス対策\Microsoft Defender Exploit Guard\制御されたフォルダー アクセス| 有効、監査モード
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>検出テストを実行してオンボーディングを確認する
 
@@ -268,6 +268,8 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 [コンピューター構成 **ポリシー]** \>  \> **[管理用** テンプレートWindows \> **コンポーネントMicrosoft Defender ウイルス対策** \>  \> **リアルタイム保護] を参照します**。
 
+ "受信ファイルと送信ファイルをスキャンする" の値 (既定値) は 0 になっているので、"双方向 (フル オンアクセス)" 設定の "受信および送信ファイルとプログラムのアクティビティの監視を構成する" のグループ ポリシーが無効に変更されます。
+
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="受信送信ファイルアクティビティの監視を構成します。":::
 
 ### <a name="configure-windows-defender-smartscreen-settings"></a>SmartScreen Windows Defender構成する
@@ -302,7 +304,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 ### <a name="check-for-signature-update"></a>署名の更新を確認する
 
-[コンピューター構成 **ポリシー]** \> **[** \> **管理用テンプレート] Windows** \> **署名更新Microsoft Defender ウイルス対策** \>  \> **参照する**
+[コンピューター構成 **ポリシー** \> **]** \> **[管理用テンプレート] Windows** \> **セキュリティ** \> **インテリジェンス** Microsoft Defender ウイルス対策 \> **を参照します**。
 
 :::image type="content" source="images/signature-update-1.png" alt-text="署名の更新。":::
 
@@ -317,7 +319,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="config クラウド保護レベル。":::
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)

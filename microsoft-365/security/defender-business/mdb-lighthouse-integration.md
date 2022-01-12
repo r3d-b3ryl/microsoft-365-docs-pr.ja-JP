@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/16/2021
+ms.date: 01/04/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d05f22f38e3195348a5f4601c77e2cce6c6a44e2
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: bfbaf7fc4ebb38aca1270f6d5c2912018f4439da
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560722"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942874"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business-preview"></a>Microsoft 365 Lighthouse Microsoft Defender for Business (プレビュー)
 
@@ -32,7 +32,7 @@ ms.locfileid: "61560722"
 
 ## <a name="microsoft-defender-for-business-integrates-with-microsoft-365-lighthouse"></a>Microsoft Defender for Business は、Microsoft Defender for Business とMicrosoft 365 Lighthouse
 
-中小規模企業のセキュリティMicrosoft 365 Lighthouseを管理するために Microsoft Defender for Business (プレビュー) を使用している場合、Microsoft Defender for Business は Microsoft 365 Lighthouse。 これらの機能が使用可能になると、ポータル () でテナント全体のセキュリティ インシデントMicrosoft 365 Lighthouse表示できます [https://lighthouse.microsoft.com](https://lighthouse.microsoft.com) 。 
+CSP (MICROSOFT クラウド ソリューション プロバイダー) を使用している場合は、Microsoft 365 Lighthouse ([](../../lighthouse/m365-lighthouse-overview.md)中小企業) のセキュリティを管理できます。 Microsoft Defender for Business (プレビュー) は、Microsoft Defender for Business と統合Microsoft 365 Lighthouse。 これらの機能が使用可能になると、ポータル () でテナント全体のセキュリティ インシデントMicrosoft 365 Lighthouse表示できます [https://lighthouse.microsoft.com](https://lighthouse.microsoft.com) 。 
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="Microsoft 365 Lighthouse":::
 

@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 459a72d7d6e8686dfa5ec1241808c21d9b8a4cfd
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 9c1eb0e7ba8f1c9388dd61f5e3433e47f9cd0cf4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372710"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940640"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -49,7 +49,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 秘密度ラベルを適用するには、ユーザーは Microsoft 365 の職場または学校のアカウントを使用して、サインインする必要があります。
 
 > [!NOTE]
-> 米国政府のテナント向けに、秘密度ラベルがすべてのプラットフォームでサポートされるようになりました。
+> 米国政府機関のテナントでは、すべてのプラットフォームで感度ラベルがサポートされます。
 >
 > Azure Information Protection 統合ラベル付けクライアントおよびスキャナーをお使いの場合は、「[Azure Information Protection Premium の米国政府機関向けのサービスの説明](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)」を参照してください。
 

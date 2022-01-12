@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b3fa261f78f06089ebf110d0c20a3cd685ab3279
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: e3633468ac6d730ff380efcd59c0e4e70065c4c5
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937054"
+ms.locfileid: "61993301"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>サポートされているオペレーティング システム、プラットフォーム、および機能 - 脅威と脆弱性の管理
 
@@ -57,7 +57,7 @@ Windows Server 2016|はい|はい|はい|はい|はい
 Windows Server 2019|はい|はい|はい|はい|はい
 Windows Server 2022|はい|はい|はい|はい|はい
 macOS 10.14 "Mojave" 以上|はい|はい|はい|はい|はい 
-Red Hat Enterprise Linux 7.2 以上 ( \* 以下の「重要な」通知を参照)|はい|はい|はい|はい|はい
+Red Hat Enterprise一致する EUS リリースを含む Linux 7.2 以上 ( \* 以下の「重要な」通知を参照)|はい|はい|はい|はい|はい
 CentOS 7.2 以上|はい|はい|はい|はい|はい
 Ubuntu 16.04 LTS 以上の LTS|はい|はい|はい|はい|はい
 Oracle Linux 7.2 以上|はい|はい|はい|はい|はい

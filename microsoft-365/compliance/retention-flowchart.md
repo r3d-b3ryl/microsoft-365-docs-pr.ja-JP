@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: フローチャートを使用して、アイテムに複数のアイテム保持ポリシーがある場合、または保持ラベルとアイテム保持ポリシーがある場合の結果を判断する
-ms.openlocfilehash: b99f54178adc05987249f05c0f2d1c00194f0db0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b9c3b94dcb50499b6af72fd124da384f90d16da9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159768"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935827"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>アイテムが保持または完全に削除されるタイミングを決定するフローチャート
 
@@ -35,7 +35,7 @@ ms.locfileid: "60159768"
 - 複数のアイテム保持ポリシーが適用されている
 - 1 つの保持ラベルと 1 つ以上のアイテム保持ポリシーがある
 
-アイテムが電子情報開示の保留の対象となる場合、アイテムはアイテム保持ポリシーと保持ラベルの決定フロー前に常に保持されます。
+アイテムが電子情報開示ホールド (または訴訟ホールドまたはインプレース ホールドの古いテクノロジ) の対象になると、アイテム保持ポリシーと保持ラベルの決定フローの前に常に保持されます。
 
 このフローチャートで使用される用語の一部が不明な場合は、「[アイテム保持ポリシーと保持ラベルの詳細](retention.md)」を参照してください。
 

@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: 295e811e6437bb931e1b735725f3c69016cfae8a
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 04c56c78ac854141e2e9c6e207745b3722537e74
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950679"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938831"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft Compliance Extension を開始する
 
@@ -74,6 +74,25 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 - グローバルリーダー
 - セキュリティ閲覧者
 - レポート閲覧者
+
+#### <a name="roles-and-role-groups-in-preview"></a>プレビュー段階の [役割と役割グループ]
+
+プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
+
+プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+
+- Information Protection 管理者
+- Information Protection アナリスト
+- Information Protection 調査員
+- Information Protection 閲覧者
+
+プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+
+- 情報保護
+- Information Protection レベル
+- Information Protection アナリスト
+- Information Protection 調査担当者
+- Information Protection 閲覧者
 
 ### <a name="overall-installation-workflow"></a>インストールの全体的なワークフロー
 

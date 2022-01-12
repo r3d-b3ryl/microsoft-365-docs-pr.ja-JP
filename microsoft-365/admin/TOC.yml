@@ -1,7 +1,11 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 作業の開始
+    - name: 上位 20 件の管理者ヘルプ記事
+      href: top-m365-admin-articles.yml
+    - name: 管理者トレーニング ビデオ ライブラリ
+      href: admin-video-library.yml
+    - name: 概要
       items:
         - name: サインアップ
           href: admin-overview/sign-up-for-office-365.md

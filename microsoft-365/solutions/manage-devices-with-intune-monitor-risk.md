@@ -3,7 +3,10 @@ title: 手順 6. デバイスのリスクとセキュリティ ベースライ�
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- connect Intune to Defender
+- monitor device risk
+- monitor device compliance
+- deploy security baselines
 manager: dougeby
 audience: ITPro
 description: Microsoft Intune を Defender for Endpoint に接続し、アクセスの条件としてデバイスのリスクを監視する方法について説明します。
@@ -15,14 +18,16 @@ ms.collection:
 - monitor device risk
 - monitor device compliance
 - deploy security baselines
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 067608134caeafd9a07fbe692de037e96063b4dd
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: d96e713943a8b8c9437d440f62c46c9138a68db4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645402"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939203"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>手順 6. デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
 

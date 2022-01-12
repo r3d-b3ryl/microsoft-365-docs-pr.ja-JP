@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 73323e58cbb30243b0e90bdd1f45989d238d5c37
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: a156b7232c20703c0f2eb320592a596e671d16f9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530957"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942730"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 のセットアップと構成
 
@@ -189,7 +189,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 > 攻撃表面の縮小ルールの詳細については、次のリソースを参照してください。
 > - [マルウェア感染を防ぐために攻撃面の減少ルールを使用する](attack-surface-reduction.md)
 > - [攻撃表面の縮小ルールの一覧を表示する](attack-surface-reduction-rules-reference.md)
-> - [攻撃面の減少ルールをカスタマイズする](customize-attack-surface-reduction.md)
+> - [攻撃表面の縮小ルールの展開フェーズ 3: 実装](attack-surface-reduction-rules-deployment-phase-3.md)
 
 ### <a name="ransomware-mitigation"></a>ランサムウェアの軽減
 

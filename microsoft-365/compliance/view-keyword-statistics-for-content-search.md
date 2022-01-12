@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.search: M365-security-compliance
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 検索統計機能を使用して、コア電子情報開示ケースに関連付けられたコンテンツ検索と検索の統計を表示する方法についてMicrosoft 365 コンプライアンス センター。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9f849c6a65fec83fc936876e1b024c4eeab1833
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 04d24020cd22d40d6706295ccb53578bf3aef756
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156452"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940952"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>電子情報開示検索結果の統計情報を表示する
 
@@ -67,7 +67,7 @@ ms.locfileid: "60156452"
 
 ![条件レポート。](../media/SearchContentReportNoKeywordList.png)
 
-- **場所の** 種類: クエリ統計が適用されるコンテンツの場所の種類。 この値は **Exchange** メールボックスの場所を示します。サイトの場所 **SharePoint** 値を指定します。
+- **場所の** 種類: クエリ統計が適用されるコンテンツの場所の種類。 この値は **Exchange** メールボックスの場所を示します。この値は **SharePointサイトの** 場所を示します。
 
 - **Part**: 統計が適用される検索クエリの一部。 **Primary は** 、検索クエリ全体を示します。 **キーワード** は、行内の統計情報が特定のキーワードに対する値を示します。 検索クエリにキーワード リストを使用する場合は、クエリの各コンポーネントの統計情報が次の表に含まれます。 詳細については、「検索の [キーワード統計を取得する」を参照してください](#get-keyword-statistics-for-searches)。
 

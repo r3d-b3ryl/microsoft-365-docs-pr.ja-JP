@@ -98,6 +98,8 @@
           href: deploy-supported-services.md
         - name: Microsoft 365 Defender の FAQ を有効にする
           href: m365d-enable-faq.md
+        - name: セキュリティ スタッフをトレーニングする
+          href: microsoft-365-defender-train-security-staff.md
     - name: 脅威から保護する
       items:
         - name: Microsoft セキュア スコア

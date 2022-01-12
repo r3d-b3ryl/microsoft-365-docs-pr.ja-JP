@@ -13,15 +13,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom: ''
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを管理する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c344f4462b258d4ffbacd94ddfb0f3afd4b7ed4
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: d7e3e56ccdaa59b39a6f65a63684b5b715db352e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914646"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942562"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -50,11 +51,11 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 - 許可するファイル。
 - 許可する送信者の電子メールまたはドメイン。
 
-この記事では、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) でエントリを構成する方法について説明します。
+この記事では、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、組織のスタンドアロン EOP PowerShell 内のエントリを構成する方法について説明します。Exchange Onlineメールボックス)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com/> で Microsoft 365 Defender ポータルを開きます。 [テナントの許可/ブロックリスト **] ページに直接移動するには** 、 を使用します <https://security.microsoft.com/tenantAllowBlockList> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [テナントの許可/ブロックリスト **] ページに直接移動するには** 、 を使用します <https://security.microsoft.com/tenantAllowBlockList> 。
 
 - ファイルを指定するには、ファイルの SHA256 ハッシュ値を使用します。 ファイルの SHA256 ハッシュ値をWindowsコマンド プロンプトで次のコマンドを実行します。
 
@@ -98,7 +99,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 ### <a name="use-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用する
 
-このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
+[ポリシー] Microsoft 365 Defenderで、[ルール] セクション&の [脅威ポリシー] テナントの許可/ブロックリストの [ポリシー] に <https://security.microsoft.com>  \>  \> **移動** します。 [テナントの許可/ブロックリスト **] ページに直接移動するには** 、 を使用します <https://security.microsoft.com/tenantAllowBlockList> 。
 
 すべてのブロックを追加するには、「 [テナント許可/ブロック一覧でブロックを追加する」を参照してください](manage-tenant-blocks.md)。
 
@@ -112,7 +113,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧のエントリを表示する
 
-1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
+1. [ポリシー] Microsoft 365 Defenderで、[ルール] セクション&の [脅威ポリシー] テナントの許可/ブロックリストの [ポリシー] に <https://security.microsoft.com>  \>  \> **移動** します。 [テナントの許可/ブロックリスト **] ページに直接移動するには** 、 を使用します <https://security.microsoft.com/tenantAllowBlockList> 。
 
 2. 必要なタブを選択します。 使用可能な列は、選択したタブによって異なる。
 

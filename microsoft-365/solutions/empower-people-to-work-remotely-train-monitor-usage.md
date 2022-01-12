@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: ユーザーをトレーニングして、問題にすばやく対処できるようにします。
-ms.openlocfilehash: 36133cab7e5fa11e311fb089f2bcbf5c1f862d08
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ed2b1ab30de5c7c2a808a78ce99727e6e77e6e63
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190139"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936788"
 ---
 # <a name="step-6-train-your-workers-and-address-usage-feedback"></a>ステップ 6: ワーカーをトレーニングし、使用状況のフィードバックに対処する
 
@@ -31,7 +31,7 @@ ms.locfileid: "60190139"
 - MFA を使用して、追加の検証方法を登録するなど、正しいサインインの手順。
 - デバイスの使用と、エンドポイント管理ポリシーを使用して非準拠または管理されていないデバイスのアクセスをブロックする方法。
 - 許可されたアプリの使用と、エンドポイント管理アプリケーション ポリシーを使用していくつかのアプリの使用をブロックする方法。
-- Windows 10 Enterprise のセキュリティ機能。
+- Windows 11 または 10 のエンタープライズ セキュリティ機能。
 - [Teams](/microsoftteams/training-microsoft-teams-landing-page) を使用してチャット、ビデオベースの会議、ドキュメント共有、およびスレッド形式の会話を行う方法。
 - メールとスケジュール設定に [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) を使用する方法。
 - [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) チームまたはコミュニケーション サイトと [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) フォルダーを使用して、ユーザーのライブラリおよびグループに属するファイルを閲覧および共同作業する方法。

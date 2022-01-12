@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 のセキュリティ センターとコンプライアンスのサービスを使用して、ハイブリッド ワーカー向けにご使用のアプリケーション、データ、およびデバイスを保護します。
-ms.openlocfilehash: cfa2c8fa8725e96326faac4cbe4b83cd1b039641
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e1a5c277f9b5f06313fc924756dc72dbf47fad78
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110285"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934717"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>手順 3: ハイブリッド ワーカーのためのセキュリティとコンプライアンスの展開
 
@@ -34,7 +34,7 @@ ms.locfileid: "61110285"
 
 - Microsoft Teams などの、ハイブリッド ワーカーが使用する生産性アプリに対する制御されたアクセス
 - チャットの会話や共有ファイルなど、ハイブリッド ワーカーが作成して使用するデータに対する制御されたアクセスや保護
-- マルウェアやその他の種類のサイバー攻撃からの Windows 10 デバイスの保護
+- Windows 11 または 10 デバイスのマルウェアやその他の種類のサイバー攻撃からの保護
 - 秘密度や保護のレベルに応じた一貫性のあるラベル付けを使用したメール、ファイル、サイトの保護
 - 情報の漏洩の防止
 - 地域のデータ規制への準拠
@@ -87,7 +87,7 @@ Microsoft 365 のこれらのコンプライアンス機能を使用して、内
 
 - セキュリティ
   - ハイブリッド ワーカーがコミュニケーションや共同作業を行うために使用するアプリやデータへの制御されたアクセス
-  - クラウド サービスのデータ、メール、Windows 10 デバイスのマルウェア対策
+  - クラウド サービスのデータ、メール、Windows 11 または 10 デバイスのマルウェアに対する保護
 - コンプライアンス
   - 秘密度や保護のレベルに応じた一貫性のあるラベル付け
   - 情報漏洩を防止するためのポリシー

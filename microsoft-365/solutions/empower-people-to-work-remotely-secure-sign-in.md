@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: ハイブリッド ワーカーが多要素認証 (MFA) でサインインすることを要求します。
-ms.openlocfilehash: 586a4f1782cec2baf305b9e72cc3b4a4c732b7f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dfcda3eb0f79003a3e09bbda9d3c53dff6ae2f8f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162076"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934827"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>ステップ 1. MFA を使用してハイブリッド ワーカーのサインイン セキュリティを強化する
 
@@ -59,7 +59,7 @@ Microsoft 365 プランに基づいてユーザーに MFA の使用を要求す�
 
 このポリシーを使用すると、これらの管理者の役割から割り当てられたり、または割り当てられなかったりした場合に、個別のユーザー アカウントを MFA 用に構成しようとするのではなく、グループ メンバーシップに基づいて MFA を要求することができるようになります。
 
-条件付きアクセス ポリシーを使用して、Windows 10 を実行しているノート PC などの準拠デバイスからサインインする必要があるなど、より高度な機能を使用することもできます。
+条件付きアクセス ポリシーを使用して、Windows 11 または 10 を実行しているノート PC など、準拠したデバイスからサインインを行う必要があるなど、より高度な機能を提供することもできます。
 
 条件付きアクセスには、Microsoft 365 E3 および E5 に含まれている Azure AD Premium P1 ライセンスが必要です。
 

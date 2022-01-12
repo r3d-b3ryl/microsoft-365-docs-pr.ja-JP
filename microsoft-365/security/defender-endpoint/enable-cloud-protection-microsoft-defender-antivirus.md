@@ -9,18 +9,18 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/18/2021
+ms.date: 01/10/2022
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 210d2e4ff5864607a39297f08c505c491b8580b1
-ms.sourcegitcommit: 1a3b79b3dff13a4895dfa4090a22bce2fcd0942b
+ms.openlocfilehash: f4b3ef5cb8e923e3bd522c80d78e64c7be8b79de
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61597581"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941182"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>クラウド保護をオンMicrosoft Defender ウイルス対策
 
@@ -91,7 +91,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
 
 4. ツリーを展開して **、MAPS Windowsコンポーネント**  >  **Microsoft Defender ウイルス対策 >します。**
 
-5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 [**OK**] を選択します。
+5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 **[OK]** を選択します。
 
 6. 詳細な分析が **必要な場合は、[ファイル サンプルの送信] をダブルクリックします**。 最初のオプションが [有効] に設定 **され** 、他のオプションが次のどちらかに設定されている必要があります。
 
@@ -102,7 +102,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
    > [ **安全なサンプルを送信する** (1)] オプションは、ほとんどのサンプルが自動的に送信されるという意味です。 個人情報が含まれている可能性があるファイルは、引き続きプロンプトが表示され、追加の確認が必要です。
    > オプションを Always **Prompt** (0) に設定すると、デバイスの保護状態が低下します。 [送信しない **]** (2) に設定 [](configure-block-at-first-sight-microsoft-defender-antivirus.md)すると、Microsoft Defender for Endpoint の一目でブロック機能が機能しません。
 
-7. [**OK**] を選択します。
+7. **[OK]** を選択します。
 
 ## <a name="use-powershell-cmdlets-to-turn-on-cloud-protection"></a>PowerShell コマンドレットを使用してクラウド保護を有効にする
 
@@ -137,11 +137,9 @@ SubmitSamplesConsent
 
 1. タスク バー Windows セキュリティシールド アイコンを選択するか、タスク バーのスタート メニューを検索して、アプリ **を開** Windows セキュリティ。
 
-2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) を選択し、[ウイルス対策] &設定ラベルを **選択** します。
+2. [ウイルス **対策&脅威** 保護] タイル (または左側のメニュー バーのシールド アイコン) を選択し、[ウイルスの脅威保護の設定] の下の [& 設定の管理] を選択 **します**。
 
-    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="ウイルス対策と脅威&設定のスクリーンショット":::
-
-3. [クラウドベース **の保護] と [自動** サンプル **送信] が** [オン] に切り替わるか確認 **します**。
+3. [クラウドベース **の保護] と [** 自動サンプル **申請] の両方が** [オン] に切り替わるのを **確認します**。
 
    > [!NOTE]
    > グループ ポリシーで自動サンプル送信が構成されている場合、設定は灰色表示され、使用できません。

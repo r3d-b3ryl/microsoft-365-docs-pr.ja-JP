@@ -7,21 +7,21 @@ author: markjjo
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place保持、訴訟ホールド、Microsoft 365保持ポリシーを使用すると、規制遵守と電子情報開示の要件を満たすためにメールボックス のコンテンツを保持できます。
-ms.openlocfilehash: f034129400a47e9b72f0883ce368ecea657851a5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c157f2fb0b74e679bf1252b6f24208b77a657d8c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175133"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942166"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>電子情報開示のために Bcc および展開された配布グループの受信者を保持する
   
-訴訟ホールド、電子情報開示ホールド[、Microsoft 365](./retention.md)保持ポリシー (Microsoft 365 コンプライアンス センター で作成) を使用すると、規制遵守と電子情報開示の要件を満たすためにメールボックスコンテンツを保持できます。 メッセージの [宛先] フィールドと [Cc] フィールドで直接アドレス指定された受信者に関する情報は、既定ですべてのメッセージに含まれます。 ただし、組織では、メッセージのすべての受信者に関する詳細を検索して再現する機能が必要な場合があります。 これには、次の内容が含まれます。
+訴訟ホールド、電子情報開示ホールド[、Microsoft 365](./retention.md)保持ポリシー (Microsoft 365 コンプライアンス センター で作成) を使用すると、規制遵守と電子情報開示の要件を満たすためにメールボックスコンテンツを保持できます。 メッセージの [宛先] フィールドと [Cc] フィールドで直接アドレス指定された受信者に関する情報は、既定ですべてのメッセージに含まれます。 ただし、組織では、メッセージのすべての受信者に関する詳細を検索して再現する機能が必要な場合があります。 これには以下が含まれます。
   
 - **メッセージの Bcc フィールドを使用してアドレス指定された受信者。** BCC 受信者は送信者のメールボックス内のメッセージに格納されますが、受信者に配信されるメッセージのヘッダーには含まれません。 
     
@@ -58,7 +58,7 @@ Exchange Online および Exchange Server 2013 (累積的な更新プログラ�
    
 シナリオ 2: Bob は電子メールを John (宛先/CC) および Jack (BCC で直接に、または配布グループを介して間接に) に送信します。以下の表に、電子情報開示の検索結果を示します。
   
-| 検索する対象 | 検索するメッセージの送信先 | 結果にメッセージが含まれるかどうか | メモ |
+| 検索する対象 | 検索するメッセージの送信先 | 結果にメッセージが含まれるかどうか | Notes |
 |:-----|:-----|:-----|:-----|
 |Bob のメールボックス  <br/> |宛先/CC:John  <br/> |はい  <br/> |Jack が BCC で送信されたことが示されます  <br/> |
 |Bob のメールボックス  <br/> |BCC:Jack  <br/> |はい  <br/> |Jack が BCC で送信されたことが示されます  <br/> |

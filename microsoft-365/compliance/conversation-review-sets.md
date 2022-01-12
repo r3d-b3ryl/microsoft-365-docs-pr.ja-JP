@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Advanced eDiscovery グループでのチャット会話の再構築、レビュー、エクスポートを行う Advanced eDiscovery での会話の再構築機能についてMicrosoft TeamsおよびYammerします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c2638b2e89169560307cd32217532d4d5ce565e8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7bd13bdb01298d0cf1f37671f044a3405a2de0b6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156524"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942406"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>スレッド内のスレッドAdvanced eDiscovery
 
@@ -48,7 +48,7 @@ ms.locfileid: "60156524"
 
 - **会話:** 1 つ以上のメッセージのグループ化を表します。 異なるアプリケーション間で、会話はさまざまな方法で表される場合があります。 一部のアプリケーションでは、既存のメッセージに返信する明示的なアクションがあります。 会話は、このユーザー操作の結果として明示的に形成されます。 たとえば、次に、チャネル会話のスクリーンショットを示Microsoft Teams。
 
-   ![Microsoft Teamsチャネルの会話。](../media/threadedchat.png)
+   ![Microsoft Teamsの会話。](../media/threadedchat.png)
 
    他のアプリ (Teams のグループ チャット メッセージなど) では、正式な返信チェーンが用意されていないので、メッセージは 1 つのスレッド内に "平らなメッセージの川" として表示されます。 これらの種類のアプリでは、会話は、特定の時間内に発生するメッセージのグループから推測されます。 このメッセージの "ソフト グループ化" は、(返信チェーンではなく) 特定のトピックに関する "前後" の会話を表します。
 

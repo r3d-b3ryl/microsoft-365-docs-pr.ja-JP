@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 クラウド サービスへのアクセスを最適化しながら、リモート ワーカーがオンプレミスのリソースにアクセスできることを確認します。
-ms.openlocfilehash: 7266db5ba0149caaeb5057ad2ca1c3d082760c15
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: de2d8e5e58471ad994c611013e77909ed0ab0542
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478771"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871948"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>手順 2: オンプレミスのアプリとサービスへのリモート アクセスを提供する
 
@@ -39,7 +39,7 @@ ms.locfileid: "60478771"
 
 この記事で説明するリモート アクセス構成オプションについては、このフローチャートを参照してください。
 
-![リモート アクセス構成フローチャート。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
+:::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png" alt-text="リモート アクセス構成フローチャート。" lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png":::
 
 リモート アクセス接続では、[リモート デスクトップ](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop)を使用して、ユーザーをオンプレミス PC に接続することもできます。 たとえば、リモート ワーカーはリモート デスクトップを使用して、Windows、iOS、または Android デバイスからオフィスの PC に接続できます。 リモートで接続すると、目の前に座っているかのように使用できます。
 
@@ -49,7 +49,7 @@ ms.locfileid: "60478771"
 
 スプリット トンネリングを使用しない場合、すべてのリモート作業トラフィックは VPN 接続を介して送信され、そこで組織のエッジ デバイスに転送されて処理され、インターネット上で送信される必要があります。
 
-![トンネリングのない VPN クライアントからのネットワーク トラフィック。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
+:::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png" alt-text="トンネリングのない VPN クライアントからのネットワーク トラフィック。" lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png":::
 
 Microsoft 365 トラフィックは、組織を経由して間接的にルーティングする必要があります。これは、VPN クライアントの物理的な場所から遠く離れた Microsoft ネットワーク エントリ ポイントに転送される可能性があります。この間接パスにより、ネットワーク トラフィックが遅延し、全体的なパフォーマンスを低下させます。
 
@@ -59,7 +59,7 @@ Microsoft 365 クラウドリソースへのアクセスを最適化するには
 
 Microsoft 365 クラウド アプリへのほとんどのトラフィックが VPN 接続をバイパスした結果としてのトラフィック フローは、以下のとおりです。
 
-![トンネリングのある VPN クライアントからのネットワーク トラフィック。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
+:::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png" alt-text="トンネリングのある VPN クライアントからのネットワーク トラフィック。" lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png":::
 
 これにより、VPN クライアントは、インターネット経由で、または Microsoft ネットワークへの最も近いエントリポイントに、重要な Microsoft 365 クラウド サービスのトラッフィックを送受信できます。
 
@@ -71,7 +71,7 @@ Microsoft 365 クラウド アプリへのほとんどのトラフィックが V
 
 ここでは、Azure AD アプリケーション プロキシのコンポーネントを示します。
 
-![Azure AD アプリケーション プロキシのコンポーネント。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
+:::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png" alt-text="Azure AD アプリケーション プロキシのコンポーネント。" lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png":::
 
 詳細については、この「[Azure AD アプリケーション プロキシの概要](/azure/active-directory/manage-apps/application-proxy)」をご覧ください。
 
@@ -84,29 +84,29 @@ Microsoft 365 クラウド アプリへのほとんどのトラフィックが V
 
 P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワーカーのデバイスから組織ネットワークへの安全な接続を作成します。
 
-![Azure P2S VPN のコンポーネント。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
+:::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png" alt-text="Azure P2S VPN のコンポーネント。" lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png":::
 
 詳細については、この「[P2S VPN の概要](/azure/vpn-gateway/point-to-site-about)」をご覧ください。
 
 > [!NOTE]
 > Azure P2S VPN は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
 
-## <a name="deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>リモート ワーカーが個人用デバイスを使用してリモート アクセスできるように、Azure Virtual Desktop を展開する
+## <a name="deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>リモート ワーカーが個人用デバイスを使用してリモート アクセスできるように、Windows 365 を展開する
 
-個人用デバイスや管理されていないデバイスのみを使用できるリモート ワーカーをサポートするには、Azure Virtual Desktop を使用して、ユーザーが自宅から使用する仮想デスクトップを作成して割り当てます。仮想化された PC は、組織のネットワークに接続されている PC と同じように動作します。
+個人用デバイスや管理されていないデバイスのみを使用できるリモート ワーカーをサポートするには、Windows 365 を使用して、ユーザーが自宅から使用する仮想デスクトップを作成して割り当てます。 オンプレミス ネットワーク接続 (OPNC) を使用すると、Windows 365 クラウド PC は、組織のネットワークに接続されている PC と同じように動作できます。
 
-![Azure Virtual Desktop のコンポーネント。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
+:::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-365.png" alt-text="Windows 365 のコンポーネント。" lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-365.png":::
 
-詳細については、「[Azure Virtual Desktop の概要](/azure/virtual-desktop/overview)」をご覧ください。
+詳細については、この「[Windows 365 の概要](/windows-365/overview)」をご覧ください。
 
 > [!NOTE]
-> Azure Virtual Desktop は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
+> Windows 365 は、Microsoft 365 のサブスクリプションには含まれていません。 別のサブスクリプションで使用する場合は、支払いが発生します。
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>リモートデスクトップサービスゲートウェイを使用して、リモートデスクトップサービス接続を保護する
 
 リモートデスクトップサービス (RDS) を使用している場合、従業員がオンプレミスのネットワーク上の Windows ベースのコンピューターに接続できるようにするには、エッジネットワークの Microsoft リモートデスクトップサービスゲートウェイを使用する必要があります。 ゲートウェイはトランスポート層セキュリティ (TLS) を使用してトラフィックを暗号化し、RDS をホストしているオンプレミス コンピューターがインターネットに直接公開されるのを防ぎます。
 
-![リモート デスクトップ サービス ゲートウェイを使用したリモート デスクトップ サービス接続。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
+:::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png" alt-text="リモート デスクトップ サービス ゲートウェイを使用したリモート デスクトップ サービス接続。" lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png":::
 
 詳細については、[こちらの記事](https://www.microsoft.com/security/blog/2020/04/16/security-guidance-remote-desktop-adoption/)を参照してください。 
 
@@ -124,7 +124,7 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 | リモート アクセス VPN ソリューションが導入されている | リモート アクセス VPN クライアントをスプリット トンネリング用と Microsoft 365 エンドポイントの最適化カテゴリ用に構成しました。 |
 | リモート アクセス VPN ソリューションはなく、オンプレミスの Web ベースのアプリへのリモート アクセスのみが必要です | Azure アプリケーション プロキシを構成しました。 |
 | リモート アクセス VPN ソリューションはなく、オンプレミス アプリへのアクセスが必要であり、その一部は Web ベースではありません | Azure P2S VPN を構成しました。 |
-| リモート ワーカーは自宅から個人用デバイスを使用しています | Azure Virtual Desktop を構成しました。 |
+| リモート ワーカーは自宅から個人用デバイスを使用しています | Windows 365 を構成しました。 |
 | リモートワーカーがオンプレミスシステムへの RDS 接続を使用している | 境界ネットワークにリモートデスクトップサービスゲートウェイを展開しました。 |
 |||
 

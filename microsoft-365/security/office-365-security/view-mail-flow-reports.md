@@ -16,15 +16,15 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、セキュリティ コンプライアンス センターの [レポート] ダッシュボードで使用できるメール フロー レポート&できます。
-ms.custom: admindeeplinkEXCHANGE
+ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5445a55fad5d580aa1af02271a50d4494f866ec4
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: c72e1b82a7e6336510c3b997d077c544f4169aea
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422317"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942502"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ コンプライアンス センターの [レポート] ダッシュボードでメール フロー レポート&表示する
 
@@ -37,7 +37,7 @@ ms.locfileid: "61422317"
 
 > [!NOTE]
 >
-> この記事のレポートの大部分は、Microsoft 365 Defenderまたは管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange使用できます</a>。 詳細については、次のトピックをご覧ください。
+> この記事のレポートの大部分は、Microsoft 365 Defender Exchange管理センター (EAC) でも利用できます。 詳細については、次のトピックをご覧ください。
 >
 > - [新しい管理センターのメール フロー Exchangeレポート](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 > - [電子メール セキュリティ レポートを Microsoft 365 Defenderする](view-email-security-reports.md)
@@ -55,14 +55,8 @@ ms.locfileid: "61422317"
 
 ## <a name="exchange-transport-rule-report"></a>Exchangeトランスポート ルール レポート
 
-トランスポート **Exchangeレポートには**、組織内の受信メッセージと送信メッセージに対するメール フロー ルール (トランスポート ルールとも呼ばれる) の影響が表示されます。
-
-レポートを表示するには、コンプライアンス センターでセキュリティ &を開き、[レポート ダッシュボード] に移動し、[トランスポート ルールExchange <https://protection.office.com>  \> **選択します**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/ETRRuleReport> 。
-
-![Exchangeダッシュボードでトランスポート ルール ウィジェットを作成します。](../../media/scc-transport-rule-report-widget.png)
-
 > [!NOTE]
-> セキュリティ & コンプライアンス センター (protection.office.com) でこのレポートのウィジェットをクリックすると、Microsoft 365 Defender ポータル (security.microsoft.com) の完全なレポートが表示されます。 レポートの詳細については、「トランスポート[ルール レポートExchangeを参照してください](view-email-security-reports.md#exchange-transport-rule-report)。
+> EAC **Exchangeトランスポート ルール レポート** を使用できます。 詳細については、「新しい[EAC Exchangeトランスポート ルール レポート」を参照してください](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report)。
 
 ## <a name="forwarding-report"></a>転送レポート
 

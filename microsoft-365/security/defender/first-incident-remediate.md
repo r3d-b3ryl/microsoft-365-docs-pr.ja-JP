@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 894cd4a13ed7ff3253ea7badcd19a1649c03105b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b58e2ddd2b4282bd3abcd36147db89970e21fb19
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212139"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943294"
 ---
-# <a name="step-2-remediate-your-first-incident"></a>手順 2. 最初のインシデントを修復する
+# <a name="step-2-remediate-your-first-incident"></a>手順 2.  最初のインシデントを修復する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -48,7 +48,7 @@ Microsoft 365 Defenderは、アナリストが手動で開始できるいくつ�
 - **自動調査を開始する** - デバイスで新しい汎用自動調査を開始できます。 調査の実行中、デバイスから生成された他のアラートは、その調査が完了するまで、継続的な自動調査に追加されます。 さらに、他のデバイスで同じ脅威が見られる場合は、それらのデバイスが調査に追加されます。
 - **ライブ応答の開始** - ライブ応答は、リモート シェル接続を使用してデバイスに瞬時にアクセスできる機能です。 これにより、詳細な調査作業を行い、迅速に特定された脅威をリアルタイムに含める即時対応アクションを実行できます。 ライブ応答は、法医学データの収集、スクリプトの実行、分析のための疑わしいエンティティの送信、脅威の修復、および新たな脅威の予防的な捜しを可能にすることで、調査を強化するように設計されています。
 - **調査パッケージの収集** - 調査または対応プロセスの一環として、デバイスから調査パッケージを収集できます。 調査パッケージを収集することで、デバイスの現在の状態を特定し、攻撃者が使用するツールと手法をさらに理解できます。 
-- **脅威の専門家** に相談する (デバイスとファイルの両方のアクションで利用可能) - 既に侵害されている可能性のあるデバイスやデバイスに関する詳細な分析情報については、Microsoft の脅威専門家に問い合うことができます。 Microsoft の脅威の専門家は、迅速かつ正確な対応のために、Microsoft Defender セキュリティ センター内から直接関与できます。 
+- **脅威の専門家** に相談する (デバイスとファイルの両方のアクションで利用可能) - 既に侵害されている可能性のあるデバイスやデバイスに関する詳細な分析情報については、Microsoft の脅威専門家に問い合うことができます。 Microsoft の脅威の専門家は、迅速かつ正確な対応のために、Microsoft 365 Defender内から直接関与できます。 
 
 ## <a name="actions-on-files"></a>ファイルへのアクション
 
@@ -64,13 +64,13 @@ Microsoft 365 Defenderは、アナリストが手動で開始できるいくつ�
 3. 悪意のあるファイルがウイルスから検疫されたSharePoint
 4. マルウェアの影響を受けたエンドポイントを確認する
 5. システムの再構築
-6. 他のユーザーに対Microsoft Cloud App Security同様のアラートを確認する
+6. 他のユーザーに対する同様の Microsoft Defender for Cloud Apps アラートを確認する
 7. Tor IP アドレスをブロックする Microsoft Defender for Endpoint でカスタム インジケーターを作成する
-8. 次の図に示Microsoft Cloud App Securityのような、この種類のアラートのガバナンス アクションを作成します。
+8. 次の図に示すように、この種類のアラートのガバナンス アクションを Microsoft Defender for Cloud Apps に作成します。
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="ポータルでのガバナンス アクションMicrosoft Cloud App Securityします。"::: 
- 
-修復アクションの多くを、このページで適用および追跡Microsoft 365 Defender。 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Microsoft Defender for Cloud Apps ポータルのガバナンス アクションの例。":::
+
+修復アクションの多くを、このページで適用および追跡Microsoft 365 Defender。
 
 ## <a name="using-playbooks"></a>プレイブックの使用
 

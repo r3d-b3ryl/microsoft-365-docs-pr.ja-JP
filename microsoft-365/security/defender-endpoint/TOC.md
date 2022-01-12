@@ -276,9 +276,7 @@
 ###### [ASR ルール 展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
 ###### [ASR ルール 展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
 ##### [ASR ルールの参照](attack-surface-reduction-rules-reference.md)
-##### [ASR ルールの評価](evaluate-attack-surface-reduction.md)
-##### [ASR ルールの有効化](enable-attack-surface-reduction.md)
-##### [ASR ルールのカスタマイズ](customize-attack-surface-reduction.md)
+##### [ASR ルールの代替方法を有効にする](enable-attack-surface-reduction.md)
 #### [攻撃面の減少の FAQ](attack-surface-reduction-faq.yml)
 
 ### 次世代の保護

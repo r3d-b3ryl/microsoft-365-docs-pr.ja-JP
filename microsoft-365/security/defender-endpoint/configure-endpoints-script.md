@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dc7f3a88f26ae738f3de718bd590933f44ed4906
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6abd2c26f8557277b4c1b13e5189a42fea9a60f1
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167192"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943390"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows デバイスのオンボード
 
@@ -37,9 +37,11 @@ ms.locfileid: "61167192"
 また、個々のデバイスを Defender for Endpoint に手動でオンボードすることもできます。 ネットワーク内のすべてのデバイスのオンボーディングにコミットする前に、サービスをテストするときに最初にこれを行う必要があります。
 
 > [!IMPORTANT]
-> このスクリプトは、最大 10 台のデバイスで使用するために最適化されています。
->
-> 大規模に展開するには、他の [展開オプションを使用します](configure-endpoints.md)。 たとえば、オンボーディング スクリプトを 10 台以上のデバイスに展開し、グループ ポリシーを使用したオンボード Windows デバイスで使用[できます](configure-endpoints-gp.md)。
+> このスクリプトは、最大 10 個のデバイスで使用するために最適化されています。
+> ローカル スクリプトは、Microsoft Defender for Endpoint を評価するための特別なオンボーディング 方法です。
+> ローカル スクリプトを使用してオンボーディングを行う場合、データレポートの頻度は、他のオンボーディング方法よりも高く設定されます。
+> この設定は評価用であり、通常は実稼働環境では使用されません。 このため、環境への影響について懸念が生じ、ローカル スクリプトを使用する展開の数を 10 に制限することをお勧めします。
+> 前述のように実稼働環境に展開する場合は、グループ ポリシーや[](configure-endpoints.md)グループ ポリシーなどの他の展開オプションMicrosoft Endpoint Configuration Manager。
 
 [[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。 
 
@@ -140,7 +142,7 @@ Name 型は D-WORD です。 使用可能な値は次のとおりです。
 2. [デバイス **インベントリ] をクリックします**。
 3. デバイスが表示されているのを確認します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 - [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)

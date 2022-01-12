@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -19,14 +19,13 @@ ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 電子情報開示関連のタスクを実行するために必要なアクセス許可を、Microsoft 365 コンプライアンス センター。
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkMAC
-- admindeeplinkEXCHANGE
-ms.openlocfilehash: 426430f705fa85be440df39c6a40f8872d7024ad
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+- admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 129363fe614bafef653fe65b39fa15d50a3b1c8a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422785"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942490"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>電子情報開示のアクセス許可をユーザーに割り当Microsoft 365 コンプライアンス センター
 
@@ -59,7 +58,7 @@ ms.locfileid: "61422785"
   
 ## <a name="assign-ediscovery-permissions"></a>電子情報開示のアクセス許可を割り当てる
 
-1. アクセス許可 <https://compliance.microsoft.com> を割り当て可能なアカウントを使用して、アクセスしてサインインします。
+1. アクセス許可を割<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">りMicrosoft 365 コンプライアンス センター</a>できるアカウントを使用して、アカウントに移動してサインインします。
   
 2. 左側のウィンドウで、[アクセス許可] **を選択します**。
 

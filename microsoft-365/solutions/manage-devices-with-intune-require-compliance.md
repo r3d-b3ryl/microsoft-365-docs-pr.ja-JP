@@ -3,7 +3,9 @@ title: 手順 4. Intune で正常で準拠しているデバイスを要求す�
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Conditional access policy
+- Microsoft Intune
+- Intune device management
 manager: dougeby
 audience: ITPro
 description: Azure AD で条件付きアクセス ポリシーを作成して、準拠したデバイスを要求し、ユーザーが任意の場所の任意のデバイスから作業するときに企業データを安全に保ちます。
@@ -14,13 +16,15 @@ ms.collection:
 - Conditional access policy
 - Microsoft Intune
 - Intune device management
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
-ms.openlocfilehash: ff72a19c9110b8b708092ead81bf154ebe33625d
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 3549dda4551c1a1e7facad1fd665867f8339bf8f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646255"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940808"
 ---
 # <a name="step-4-require-healthy-and-compliant-devices-with-intune"></a>手順 4. Intune で正常で準拠しているデバイスを要求する
 

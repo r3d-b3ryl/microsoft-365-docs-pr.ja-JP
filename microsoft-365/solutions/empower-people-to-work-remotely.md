@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在宅勤務、在宅勤務、ハイブリッド、リモート ワーカー、ハイブリッド ワーク、リモート従業員、ハイブリッド接続、リモート アクセス、在宅勤務、テレワーク、テレワーク、モバイル ワーク、リモート ジョブ、どこからでも作業、柔軟な職場
 description: ハイブリッド ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
-ms.openlocfilehash: 296c8ccd3373d7b23b187f60b1a93318538ec8fe
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 3eb70d99e44f296144ea9fa9c79ffd41475888ef
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554518"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871913"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Microsoft 365 を使用したハイブリッドワーク用のインフラストラクチャを設定する
 
@@ -60,7 +60,7 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 
 - セキュリティ保護
 
-  サインインは、多要素認証 (MFA) や Microsoft 365 と Windows 10 の組み込みセキュリティ機能により、マルウェア、悪意のある攻撃、データ損失から保護されています。
+  サインインは、多要素認証 (MFA) や Microsoft 365 と Windows 11 または 10 の組み込みセキュリティ機能により、マルウェア、悪意のある攻撃、データ損失から保護されています。
 
 - 管理対象
 
@@ -76,7 +76,7 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 
   - 作業を分割して完了するための共有タスクとワークフロー。
 
-シームレスなサインイン エクスペリエンスを実現するには、オンプレミスの Active Directory ドメイン サービス (AD DS) のユーザー アカウントを Azure Active Directory (Azure AD) と同期する必要があります。 Windows 10 デバイスを保護するには、そのデバイスを Intune に登録する必要があります。 インフラストラクチャの概要を次に示します。
+シームレスなサインイン エクスペリエンスを実現するには、オンプレミスの Active Directory ドメイン サービス (AD DS) のユーザー アカウントを Azure Active Directory (Azure AD) と同期する必要があります。 Windows 11 または 10 デバイスを保護するには、そのデバイスを Intune に登録する必要があります。 インフラストラクチャの概要を次に示します。
 
 ![ハイブリッド ワーカー向けの Microsoft 365 の基本インフラストラクチャ。](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
@@ -90,13 +90,13 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 |セルフサービスによるパスワードのリセット (SSPR)|ユーザーによるパスワードまたはアカウントのリセットまたはロック解除を許可します。|Microsoft 365 E3 または E5|
 |Azure AD アプリケーション プロキシ|イントラネット サーバーでホストされている Web ベースのアプリケーションに安全なリモート アクセスを提供します。|別の有料 Azure サブスクリプションが必要|
 |Azure ポイント対サイト VPN|Azure 仮想ネットワークを介してリモート ワーカーのデバイスからイントラネットへの安全な接続を作成します。|別の有料 Azure サブスクリプションが必要|
-|Windows Virtual Desktop|Azure で実行されている仮想デスクトップで、個人の管理されていないデバイスのみを使用できるリモート ワーカーをサポートします。|別の有料 Azure サブスクリプションが必要|
+|Windows 365|Windows 365 Cloud PC で、個人用デバイスや管理されていないデバイスしか使用できないリモート ワーカーをサポートします。|別の有料 Azure サブスクリプションが必要|
 |リモート デスクトップ |従業員によるイントラネット上の Windows ベースのコンピューターへの接続を許可します。|Microsoft 365 E3 または E5|
 |リモート デスクトップ サービス ゲートウェイ|通信を暗号化し、RDS ホストがインターネットに直接公開されないようにします。|別の Windows サーバー ライセンスが必要|
 |Microsoft Intune|デバイスとアプリケーションを管理します。|Microsoft 365 E3 または E5|
 |構成マネージャーを使用するための|デバイスでのソフトウェアのインストール、更新、設定を管理します|別の Configuration Manager ライセンスが必要|
-|Desktop Analytics|Windows クライアントの更新プログラムの準備状況を確認します。|別の Configuration Manager ライセンスが必要|
-|Windows Autopilot|生産的に使用するために、新しいWindows 10デバイスをセットアップして事前構成します。|Microsoft 365 E3 または E5|
+|エンドポイントの分析|Windows クライアントの更新プログラムの準備状況を確認します。|別の Configuration Manager ライセンスが必要|
+|Windows Autopilot|生産的に使用するために、新しい Windows 11 または 10 デバイスをセットアップして事前構成します。|Microsoft 365 E3 または E5|
 |Microsoft Teams、Exchange Online、SharePoint Online、OneDrive、Microsoft 365 アプリ、Microsoft Power Platform、Yammer|作成、連絡、共同作業を行います。|Microsoft 365 E3 または E5|
 ||||
 
@@ -106,15 +106,13 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 
 [![ハイブリッド ワーカーのポスターを強化します。](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
-このポスターを [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) 形式でダウンロードし、レター、リーガル、タブロイド (11 x 17) のサイズの用紙に印刷することもできます。
-
 ## <a name="provide-hybrid-working-for-all-of-your-workers"></a>すべてのワーカーにハイブリッド ワークを提供する
 
 これらのデバイスを使用すると、すべての従業員がどこからでも生産性を維持できるようになります。
 
-- Surface Laptop や Windows 10 などの最新のデバイスです。Web 経由で直接 Microsoft 365 クラウド アプリやサービスにアクセスするための機能、セキュリティ、パフォーマンスを備えています。
+- Web 経由で直接 Microsoft 365 クラウド アプリやサービスにアクセスするための機能、セキュリティ、パフォーマンスが備わった Surface ノート PC や Windows 11 または 10 などの最新のデバイス。
 
-- 迅速にデプロイされた [Windows 10 ベースの仮想デスクトップ](empower-people-to-work-remotely-remote-access.md#deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices)を通じて、Microsoft 365 クラウド アプリやサービスに間接的にアクセスできる、自宅で使用される古いノート PC やデスクトップを含むあらゆるデバイス。このオプションにより、高パフォーマンス、強力なセキュリティ、および簡素化された IT 管理が提供されます。
+- 自宅で使用されている古いノート PC やデスクトップなど [Windows 365 クラウド PC](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices) を介して間接的に Microsoft 365 クラウド アプリやサービスにアクセスできるすべてのデバイス。 このオプションは、高い性能、強力なセキュリティ、およびシンプルな IT 管理を提供します。
 
 ## <a name="next-steps"></a>次の手順
 

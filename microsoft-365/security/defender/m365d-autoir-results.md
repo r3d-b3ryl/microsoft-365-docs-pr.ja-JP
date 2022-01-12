@@ -19,14 +19,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.custom: autoir
+ms.custom:
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 3bfdca63325516394c78626899c6b83e3f3f0e20
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: e38de9e864fa063e3e56dc99c1d9c671b6409023
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914370"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940928"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
 
@@ -41,9 +43,9 @@ ms.locfileid: "60914370"
 
 調査ページが最近更新され、デバイス、電子メール、およびコラボレーション コンテンツ全体の情報が含まれます。 新しい統合された調査ページでは、共通言語を定義し[、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)および Microsoft Defender for Office 365 全体で自動調査を行う一元[的なエクスペリエンスを提供します](../office-365-security/defender-for-office-365.md)。 統合調査ページにアクセスするには、次の黄色のバナーにあるリンクを選択します。
 
-- コンプライアンス センター ( ) の Office 365 セキュリティ &の調査ページ [https://protection.office.com](https://protection.office.com)
-- [調査] ページの [Microsoft Defender セキュリティ センター ] ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- ポータル内のインシデントまたはアクション センターのMicrosoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) )
+- コンプライアンス センターの [セキュリティ] Office 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">の&ページ</a>
+- ポータル ( ) の [https://security.microsoft.com](https://security.microsoft.com) Microsoft 365 Defenderページ
+- インシデントまたはアクション センターのエクスペリエンス (Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータル)</a>
 
 ## <a name="open-the-investigation-details-view"></a>調査の詳細ビューを開く
 
@@ -59,7 +61,7 @@ ms.locfileid: "60914370"
 > [!TIP]
 > アクションを承認 [、拒否、または](m365d-action-center.md#required-permissions-for-action-center-tasks) 元に戻すには、特定のアクセス許可が必要です。
 
-1. [https://security.microsoft.com](https://security.microsoft.com) に移動し、サインインします。 
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderに移動し</a>、サインインします。 
 
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。 
 
@@ -75,7 +77,7 @@ ms.locfileid: "60914370"
 
 インシデントの詳細ページを使用して、インシデントに関する詳細情報を表示します。これには、影響を受けたデバイス、ユーザー アカウント、またはメールボックスに関する情報がトリガーされた警告が含まれます。
 
-1. [https://security.microsoft.com](https://security.microsoft.com) にアクセスし、サインインします。 
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderに移動し</a>、サインインします。 
 
 2. ナビゲーション ウィンドウで、[インシデント] を選択 **し、[インシデント&通知**  >  **します**。 
 
@@ -103,7 +105,7 @@ ms.locfileid: "60914370"
 | タブ | 説明 |
 |:--------|:--------|
 | **Investigation graph (調査グラフ)** | 調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上のアイテムを選択すると、詳細を表示できます。 たとえば、[証拠]**アイコンを** 選択すると、[証拠]タブに移動し、検出されたエンティティとその評決を確認できます。 |
-| **アラート** | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、アプリ、Office、その他のMicrosoft Cloud App Security機能Microsoft 365 Defender発生します。|
+| **アラート** | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、Office アプリ、Microsoft Defender for Cloud Apps、その他のセキュリティ機能の脅威保護機能Microsoft 365 Defenderがあります。|
 | **Devices** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、 [デバイス グループのオートメーション レベルに対応します](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)。) |
 | **メールボックス** |検出された脅威の影響を受けたメールボックスを一覧表示します。  |
 | **ユーザー**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |

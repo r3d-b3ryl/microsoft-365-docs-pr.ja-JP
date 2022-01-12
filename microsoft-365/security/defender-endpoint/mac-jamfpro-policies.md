@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 093b8235c1b6506c7df1c8d21c52e40129c9d5cd
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: ae3745840d8160aa896accf97540dc79194326d3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530235"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941914"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
 
@@ -69,7 +69,7 @@ ms.locfileid: "61530235"
 
    ![WindowsDefenderATPOnboarding ファイルのイメージ。](images/plist-onboarding-file.png)
 
-2. Jamf Proで、[新規] を **選択します**。
+2. Jamf サーバーにサインインPro[**コンピューター** 構成プロファイル] に移動し、[  >  新規] を **選択します**。
 
     ![新しい Jamf ダッシュボードを作成Proイメージ。](images/jamf-pro-configure-profile.png)
 
@@ -83,7 +83,7 @@ ms.locfileid: "61530235"
    - 配布方法: 自動的にインストールする
    - レベル: コンピューター レベル
 
-4. [**アプリケーション の設定&カスタム 設定** 構成] を **選択します**。
+4.  [アプリケーション の設定 **] ページ&、[設定** 追加]**アップロード**  >  **選択します**。
 
     ![アプリとカスタム設定を構成するイメージ。](images/jamfpro-mac-profile.png)
 
@@ -724,7 +724,7 @@ Microsoft Defender for Endpoint は、時間の間に新しい設定を追加し
 
 ## <a name="step-9-configure-network-extension"></a>手順 9: ネットワーク拡張機能を構成する
 
-エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報をポータルMicrosoft Defender セキュリティ センターします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft 365 Defenderします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
 これらの手順は、macOS 10.15 (Catalina) 以降に適用できます。
 
@@ -751,6 +751,9 @@ Microsoft Defender for Endpoint は、時間の間に新しい設定を追加し
         識別子、 **ソケット フィルター** **、ソケット フィルター** の指定 **された** 要件の正確な値は、上記で指定したとおりです。
 
         ![構成設定 mdatpmdav のイメージ。](images/netext-create-profile.png)
+        
+ > [!NOTE]
+ > Jamf は、インターフェイスから直接設定できる組み込みのコンテンツ フィルター設定をサポートしています。
 
 3. [スコープ] **タブを選択** します。
 

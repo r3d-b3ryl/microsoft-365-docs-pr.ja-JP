@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 31f71c49bc81588db26f8c348c70a63c5567a18e
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 819a2cb286459cb6741ecd6f1da12bb2b3fa9634
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508301"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942790"
 ---
 # <a name="reports-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business のレポート (プレビュー)
 
@@ -30,6 +30,16 @@ ms.locfileid: "61508301"
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 Microsoft Defender for Business (プレビュー) には、次の表に示すいくつかのレポートが含まれています。<br/><br/>
 
+いくつかのレポートは、ポータル () でMicrosoft 365 Defender利用できます [https://security.microsoft.com](https://security.microsoft.com) 。 この記事では、これらのレポート、それらを使用する方法、およびそれらを見つける方法について説明します。
+
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+>
+
+<br/><br/>
+
+## <a name="reports-in-defender-for-business"></a>Defender for Business のレポート
 
 |レポート  |説明  |
 |---------|---------|

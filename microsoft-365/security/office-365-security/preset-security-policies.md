@@ -12,15 +12,16 @@ ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
+ms.custom: ''
 description: 管理者は、標準ポリシーと厳密なポリシー設定を、Exchange Online Protection (EOP) と Microsoft Defender の保護機能全体に適用する方法をOffice 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8058a9165ef97c82c2e600db0c98b14616bc175
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a557afd562c2b4d0127f69afec40c1909944968e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666712"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943162"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
 
@@ -124,11 +125,11 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、Office
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
-  **注**: Azure Active Directory の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 管理センター 内の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+  **注**: Azure Active Directory の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 管理センター 内の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>標準および厳密Microsoft 365 Defenderセキュリティ ポリシーをユーザーに割り当てるには、Microsoft 365 Defender ポータルを使用します。
 
-1. このポータルMicrosoft 365 Defender、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&セキュリティ ポリシーの事前設定] に \>  \>  \> **移動** します。
+1. [Microsoft 365 Defenderポータルで、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&セキュリティ ポリシーの事前設定] に <https://security.microsofot.com>  \>  \>  \> **移動** します。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
 
 2. [事前設定 **されたセキュリティ ポリシー] ページで**、[標準 **保護]** セクションまたは [厳密な保護] セクションの [管理 **] を** クリックします。
 
@@ -165,7 +166,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、Office
 
 そのため、通常、組み込みの保護の事前設定されたセキュリティ ポリシーに **対する例外は** 推奨しません。
 
-1. このポータルMicrosoft 365 Defender、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&セキュリティ ポリシーの事前設定] に \>  \>  \> **移動** します。
+1. [Microsoft 365 Defenderポータルで、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&セキュリティ ポリシーの事前設定] に <https://security.microsofot.com>  \>  \>  \> **移動** します。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
 
 2. [セキュリティ **ポリシーの事前設定** ] ページで、[組み込みの保護] セクションで [除外の追加 (推奨しない **)]** **を選択** します。
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: 管理者は、データ コネクタをセットアップして、組織の物理的なバッド システムからデータをインポートして、Microsoft 365。 これにより、内部リスク管理ポリシーでこのデータを使用して、組織に対する内部脅威の可能性を示す可能性のある特定のユーザーによる物理的な建物へのアクセスを検出できます。
-ms.openlocfilehash: 80e92f758f12c506e89ceea48ea6facfa9c01c74
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 2bdefdea4852b06b12e4053555b69b4fc4554d61
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786880"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943570"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>物理的な不良データをインポートするコネクタをセットアップする (プレビュー)
 
@@ -180,7 +180,7 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
 4. 必要に応じて、組織のサンプル スクリプトを変更します。
 
-5. テキスト ファイルをスクリプト ファイルとして保存するにはWindows PowerShellのファイル名サフィックスを使用.ps1。たとえば、PhysicalBadging.ps1。
+5. テキスト ファイルをスクリプト ファイルWindows PowerShellファイルとして保存するには、.ps1 のファイル名サフィックスを使用します。たとえば、PhysicalBadging.ps1。
 
 6. ローカル コンピューターでコマンド プロンプトを開き、スクリプトを保存したディレクトリに移動します。
 
@@ -224,11 +224,11 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
    ![物理的な不良コネクタの状態のフライアウト ページ。](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. [ **最後のインポート]** で、[ログのダウンロード] リンク **を** クリックして、コネクタの状態ログを開く (または保存) します。 このログには、スクリプトが実行され、CSV ファイルから Microsoft クラウドにデータをアップロードする度に関する情報が含まれます。
+3. [ **最後のインポート]** で、[ログのダウンロード] リンク **を** クリックして、コネクタの状態ログを開く (または保存) します。 このログには、スクリプトが実行され、JSON ファイルから Microsoft クラウドにデータをアップロードする度に関する情報が含まれます。
 
-   ![物理不良コネクタ ログ ファイルには、アップロードされた JSON ファイルの番号行が表示されます。](..\media\PhysicalBadgingConnectorLogFile.png)
+   ![物理不良コネクタ ログ ファイルには、アップロードされた JSON ファイルのオブジェクトの数が表示されます。](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   **[RecordsSaved] フィールド** は、アップロードした CSV ファイル内の行数を示します。 たとえば、CSV ファイルに 4 行が含まれている場合、スクリプトが CSV ファイル内のすべての行を正常にアップロードした場合 **、RecordsSaved** フィールドの値は 4 になります。
+   **RecordsSaved フィールド** は、アップロードされた JSON ファイル内のオブジェクトの数を示します。 たとえば、JSON ファイルに 4 つのオブジェクトが含まれている場合、スクリプトが JSON ファイル内のすべてのオブジェクトを正常にアップロードした場合 **、RecordsSaved** フィールドの値は 4 になります。
 
 手順 4 でスクリプトを実行していない場合、スクリプトをダウンロードするリンクが [最後のインポート] の下 **に表示されます**。 スクリプトをダウンロードし、手順 4 の手順に従って実行できます。
 

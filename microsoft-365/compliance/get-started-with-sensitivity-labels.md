@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 052f4d84d4e974faad75c80d18d02cbac3501196
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: e07279a2de421985b0ba6f97d2b6ad843d2ba9fa
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645952"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874030"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -65,7 +65,17 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 既定の役割を使用する代わりに、新しい役割グループを作成し、 **秘密度ラベル管理者** または **組織の構成** の役割をこのグループに追加することもできます。読み取り専用の役割の場合は、**秘密度ラベル リーダー** を使用します。 
 
-ユーザーを既定の役割に追加する手順、または独自の役割グループを作成する手順については、「[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
+> [!NOTE]
+> プレビュー段階では、次の役割グループを使用できます。
+> - **情報保護**
+> - **Information Protection 管理者**
+> - **Information Protection アナリスト**
+> - **Information Protection 調査担当者**
+> - **Information Protection 閲覧者**
+>
+> それぞれの役割とその役割に含まれる新しい役割の説明については、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a> > **[アクセス許可と役割]** > **[コンプライアンス センター]** > **[役割]** を選択し、次にポップアップ ウィンドウで説明を確認します。 または、「[セキュリティ/コンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+
+ユーザーを既定の役割グループに追加する手順、または独自の役割グループを作成する手順については、「[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
 
 これらのアクセス許可は、機密ラベルとそのラベル ポリシーの作成と構成を行う場合にのみ必要です。 アプリまたはサービスでラベルを適用するためには必要はありません。 秘密度ラベルに関連する特定の構成に追加のアクセス許可が必要な場合、それらのアクセス許可はそれぞれのドキュメントの説明に記載されています。
 

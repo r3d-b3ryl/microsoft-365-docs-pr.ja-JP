@@ -20,12 +20,12 @@ ms.custom:
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 262ffa4cdb4aae7af0624fe3b51b10b9b088b3c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1cfdd441cff8481ef1ec7ea5ef3cabc54f062694
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213495"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873491"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -72,7 +72,7 @@ _検疫ポリシー_ は、[サポートされている機能](quarantine-polici
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 **検疫ページ** を直接開くには、<https://security.microsoft.com/quarantine>を使用します。
+- Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 **"検疫"** ページに直接移動するには、<https://security.microsoft.com/quarantine> を使用します。
 
 - 管理者は、スパム対策ポリシーでメッセージを完全に削除する前に、メッセージを検疫で保持する期間を構成できます。 検疫期間が切れたメッセージは回復できません。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
@@ -83,7 +83,8 @@ _検疫ポリシー_ は、[サポートされている機能](quarantine-polici
 > [!NOTE]
 > 検疫済みのメッセージを表示する機能は、検疫済みメッセージの種類に適用される[検疫ポリシー](quarantine-policies.md)によって制御されます ([検疫の理由に対する既定の検疫ポリシー](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)である可能性があります)。
 
-1. Microsoft 365 Defender ポータルで、**[メールと共同作業]** \> **[レビュー]** \> **[検疫]** に移動します。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com> で、**[メールとコラボレーション]** \> **[レビュー]** \> **[検疫]** に移動します。 **"検疫"** ページに直接移動するには、<https://security.microsoft.com/quarantine> を使用します。
+
 2. **検疫** ページで、使用可能な列ヘッダーをクリックして結果を並べ替えることができます。 表示列を変更するには、[**列のカスタマイズ**] をクリックします。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
 
    - **受信時間**<sup>\*</sup>

@@ -218,7 +218,7 @@
           href: classifier-how-to-retrain-content-explorer.md
     - name: データの分類
       items:
-        - name: データの分類を理解する
+        - name: データ分類について
           href: data-classification-overview.md
         - name: コンテンツ エクスプローラーの使用を開始する
           href: data-classification-content-explorer.md
@@ -309,6 +309,8 @@
           href: set-up-irm-in-sp-admin-center.md
         - name: テクニカル リファレンス
           href: technical-reference-details-about-encryption.md
+        - name: Microsoft 365 暗号化チェーン
+          href: encryption-office-365-certificate-chains.md
         - name: Office 365 の TLS 1.0 および1.1の 廃止
           href: tls-1.0-and-1.1-deprecation-for-office-365.md
         - name: Office 365 GCC High および DoD での TLS 1.0 および 1.1 の廃止
@@ -652,12 +654,12 @@
         - name: コンテンツを検索する
           href: content-search.md
           items:
-            - name: コンテンツ検索の機能のリファレンス
-              href: content-search-reference.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
             - name: KQL エディターを使用して検索クエリを作成する
               href: ediscovery-kql-editor.md
+            - name: オンプレミス ユーザーの Teams チャット データを検索する
+              href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: 検索アクセス許可のフィルター処理を構成する
               href: permissions-filtering-for-content-search.md
             - name: 電子情報開示検索結果をプレビューする
@@ -670,14 +672,14 @@
               href: export-a-content-search-report.md
             - name: メール メッセージを検索して削除する
               href: search-for-and-delete-messages-in-your-organization.md
-            - name: オンプレミス ユーザーの Teams チャット データを検索する
-              href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: 失敗した検索の再試行
               href: retry-failed-content-search.md
             - name: BCC の受信者を保持する
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
         - name: コンテンツ検索の参照
           items:
+            - name: コンテンツ検索の機能のリファレンス
+              href: content-search-reference.md
             - name: 電子情報開示の検索制限
               href: limits-for-content-search.md
             - name: 電子情報開示のためにメールボックスに保存されているコンテンツ
@@ -936,12 +938,12 @@
   items:
     - name: メールボックスに適用されている保留の種類を特定する方法
       href: identify-a-hold-on-an-exchange-online-mailbox.md
-    - name: 訴訟ホールドを作成する
-      href: create-a-litigation-hold.md
     - name: 保留中のメールボックスの 回復可能なアイテム フォルダーのアイテムを削除する
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: 保留中のメールボックスの回復可能なアイテムのクォータを拡大する
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: 訴訟ホールドを作成する
+      href: create-a-litigation-hold.md
     - name: Bccと拡張配布グループの受信者を保持する
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 監査と通知ポリシーを管理する
@@ -954,12 +956,12 @@
           href: set-up-basic-audit.md
         - name: 監査ログの検索
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: 監査ログ レコードをエクスポート、構成、表示する
+          href: export-view-audit-log-records.md
         - name: PowerShell スクリプトを使用して監査ログを検索する
           href: audit-log-search-script.md
         - name: 監査ログの詳細なプロパティ
           href: detailed-properties-in-the-office-365-audit-log.md
-        - name: 監査ログ レコードをエクスポート、構成、表示する
-          href: export-view-audit-log-records.md
         - name: 監査のオンとオフを切り替える
           href: turn-audit-log-search-on-or-off.md
         - name: 監査ログを使用して一般的な問題を調査する

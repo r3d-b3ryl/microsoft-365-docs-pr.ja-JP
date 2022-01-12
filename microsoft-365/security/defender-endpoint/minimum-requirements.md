@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fdc22ecb1e540c2408cc6178c0190dbce676d761
-ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
+ms.openlocfilehash: b48503eddbb0093bc5e022d981fb719cd6f42e47
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61620470"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941806"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -40,38 +40,8 @@ ms.locfileid: "61620470"
 > - Defender for Endpoint は、最近の MITRE 評価で業界をリードする光学機能と検出機能を実証しました。 詳細については、「[MITRE ATT&CK ベース評価の分析](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)」を参照してください。
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
+Microsoft Defender for Endpoint のライセンス要件については [、「Microsoft Defender for Endpoint ライセンス情報」を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint)。
 
-Microsoft Defender for Endpoint を使用するには、次のいずれかの Microsoft ボリューム ライセンス製品が必要です。
-
-- Windows 11 Enterprise E5
-- Windows 11 Education A5
-- Windows 10 Enterprise E5
-- Windows 10 Education A5
-- Microsoft 365 E5 E5 または E5 Windows 10 Enterprise 11 をWindowsする Enterprise (M365 E5)
-- Microsoft 365 A5 (M365 A5) 
-- Microsoft 365 E3 E5 アドオンを使用したEnterprise Mobility + Security (M365 E3)
-- Microsoft 365 Business Premiumから購入[した場合の](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)Microsoft クラウド ソリューション プロバイダー
-- Microsoft 365 E5 Security
-- Microsoft 365 A5 Security
-- Microsoft Defender for Endpoint
-
-> [!NOTE]
-> 対象となるライセンスユーザーは、最大 5 つの同時デバイスで Microsoft Defender for Endpoint を使用できます。
-> Microsoft Defender for Endpoint は、ユーザー (CSP) から購入クラウド ソリューション プロバイダー利用できます。
-> RDSH VM では、エンドポイント 用の個別の Defender ライセンスは必要とできません。
-
-Microsoft Defender for Endpoint for servers には、次のいずれかのライセンス オプションが必要です。
-
-- [強化されたセキュリティ機能を有効にした Microsoft Defender for Cloud](/azure/security-center/enable-enhanced-security)
-- Microsoft Defender for Endpoint for Server (対象サーバーごとに 1 つ)
-
-> [!NOTE]
-> お客様は、以下のユーザー ライセンスの 1 つ以上に対して最低 50 ライセンスを合計している場合、Microsoft Defender for Endpoint for Servers のサーバー ライセンス (対象サーバーのオペレーティング システム環境 (OSE) ごとに 1 つ) を取得できます。
->
-> - Microsoft Defender for Endpoint
-> - Windows E5/A5
-> - Microsoft 365 E5/A5
-> - Microsoft 365 E5/A5 セキュリティ
 
 ライセンスの詳細については、「 [製品](https://www.microsoft.com/licensing/terms/) 条項」サイトを参照し、アカウント チームと一緒に使用して、契約条件の詳細について説明します。
 

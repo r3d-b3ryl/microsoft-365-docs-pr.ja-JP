@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7bd84a327f6987a0449a5c9bc04afc0b643b05c5
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 4ae590aba82fb93e584008177356b09dab1d5f62
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221414"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943368"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -45,6 +45,8 @@ Defender for Endpoint では、サポートを拡張して、サーバー オペ
 
 このトピックでは、特定のサーバーを Microsoft Defender for Endpoint Windowsオンボードする方法について説明します。
 
+
+
 ライセンスとインフラストラクチャに必要な機能に関する実践的なガイダンスについては、「Defender for Endpoint Windowsサーバーの保護」[を参照してください](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128)。
 
 サーバーのベースラインをダウンロードして使用する方法Windows セキュリティについては、「Windowsベースライン[Windows セキュリティ」を参照してください](/windows/device-security/windows-security-baselines)。
@@ -58,13 +60,18 @@ Defender for Endpoint では、サポートを拡張して、サーバー オペ
 **Windows Server 2012 R2 と Windows Server 2016 (プレビュー)**
 
 - インストール パッケージとオンボーディング パッケージのダウンロード
-- アプリケーションのインストール
+- インストール パッケージの適用
 - 対応するツールのオンボーディング手順に従う
 
 **Windows サーバー Semi-Annual Enterprise チャネルと Windows サーバー 2019**
 
 - オンボーディング パッケージをダウンロードする
 - 対応するツールのオンボーディング手順に従う
+
+>[!IMPORTANT]
+>Microsoft Defender for Endpoint Server SKU を購入する資格を得るには、Windows E5/A5、Microsoft 365 E5/A5、または Microsoft 365 E5 Security サブスクリプション ライセンスを組み合わせて購入している必要があります。  ライセンスの詳細については、「製品条項」 [を参照してください](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all)。  
+
+
 
 ### <a name="new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview"></a>R2 および 2016 Preview の最新の統合Windows Server 2012機能
 
@@ -89,7 +96,7 @@ R2 および R2 および Windows Server 2012の以前Windows Server 2016実装�
 >[!NOTE]
 >R2 Windows Server 2012 と Windows Server 2016 のオンボーディングのこの方法はプレビュー中ですが、以前のオンボーディング方法を引き続き使用するには、Microsoft Monitoring Agent (MMA) を使用します。 詳細については [、「MMA を使用してエンドポイントをインストールして構成する」を参照してください](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)。
 
-#### <a name="known-issues-and-limitations"></a>既知の問題と制限事項
+#### <a name="known-issues-and-limitations-on-the-new-unified-solution-package-for-windows-server-2012-r2-and-2016"></a>R2 および 2016 の新しい統合ソリューション パッケージに関する既知Windows Server 2012制限事項
 
 次の詳細は、R2 および 2016 の新しい統合ソリューション パッケージWindows Server 2012適用されます。
 
@@ -120,6 +127,10 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 > [!NOTE]
 > 最新Windows Server 2012統合ソリューション プレビューを実行している R2 および 2016 の場合、アラートと自動展開用のサーバー用 Microsoft Defender for Cloud/ Microsoft Defender との統合はまだ利用できません。 これらのコンピューターに新しいソリューションをインストールすることもできますが、Microsoft Defender for Cloud にはアラートは表示されません。
 
+> [!NOTE]
+> - Microsoft Defender for server と Microsoft Defender for Endpoint の統合は、Windows Server 2022、Windows [Server 2019、および Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするために拡張されました。
+> - この統合を利用したサーバー エンドポイントの監視は、ユーザーのOffice 365 GCCされています。
+
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 と Windows Server 2016
 
 > [!NOTE]
@@ -129,7 +140,7 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 
 **R2 のWindows Server 2012前提条件**
 
-最新の月次ロールアップ パッケージを使用してコンピューターを [](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup)完全に更新した場合、追加 **の前提条件** はありません。
+最新の月次ロールアップ パッケージを使用してコンピューターを [](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e)完全に更新した場合、追加 **の前提条件** はありません。
 
 
 インストーラー パッケージは、次のコンポーネントが更新プログラムを介して既にインストールされていることを確認します。
@@ -148,31 +159,58 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 
 EDR センサー コンポーネントの製品の定期的な改善と修正を受け取る場合は、Windows [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277)の更新プログラムが適用または承認されます。 さらに、保護コンポーネントを更新し続けるには、「更新プログラムの管理と基準[Microsoft Defender ウイルス対策適用する」を参照してください](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
 
-### <a name="download-installation-and-onboarding-packages"></a>インストール パッケージとオンボーディング パッケージのダウンロード
+### <a name="onboarding-steps-summary"></a>オンボーディングの手順の概要
 
-1. [Microsoft Defender セキュリティ センター] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
+- 手順 1: [インストール パッケージとオンボーディング パッケージをダウンロードする](#step-1-download-installation-and-onboarding-packages)
+- 手順 2: [インストールパッケージとオンボーディング パッケージを適用する](#step-2-apply-the-installation-and-onboarding-package)
+- 手順 3: [オンボーディングの手順を完了する](#step-3-complete-the-onboarding-steps) 
+
+
+### <a name="step-1-download-installation-and-onboarding-packages"></a>手順 1: インストール パッケージとオンボーディング パッケージをダウンロードする
+
+インストール パッケージとオンボーディング パッケージの両方 **をポータル** から **ダウンロード** する必要があります。
+
+> [!div class="mx-imgBorder"]
+> ![オンボーディング ダッシュボードのイメージ](images/install-agent-onboard.png)
+ 
+
+インストール **パッケージには、Microsoft** Defender for Endpoint エージェントをインストールする MSI ファイルが含まれています。
+
+オン **ボーディング パッケージには、** 次のファイルが含まれています。
+
+- `OptionalParamsPolicy` - サンプル コレクションを有効にする設定が含まれている
+- `WindowsDefenderATPOnboardingScript.cmd` - オンボーディング スクリプトが含まれている
+
+パッケージをダウンロードするには、次の手順を使用します。 
+
+1. [Microsoft 365 Defender] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
 
 2. **[R2 Windows Server 2012 2016] を選択します**。
 
-3. [インストール **パッケージのダウンロード] を** 選択し、インストール ファイル.msiします。 msi パッケージは、インストール ウィザードから実行するか、「コマンド ラインを使用して Microsoft Defender for Endpoint をインストールする」のコマンド ライン [手順に従います](#install-microsoft-defender-for-endpoint-using-command-line)。
+3. [インストール **パッケージのダウンロード] を** 選択し、インストール ファイル.msiします。 
+ 
+4. [ **オンボード パッケージをダウンロードする]** を選択し、.zip保存します。
+
+
+
+### <a name="step-2-apply-the-installation-and-onboarding-package"></a>手順 2: インストールパッケージとオンボーディング パッケージを適用する
+この手順では、デバイスを Microsoft Defender for Endpoint クラウド環境にオンボーディングする前に必要な予防および検出コンポーネントをインストールし、オンボーディング用にコンピューターを準備します。 すべての前提条件 [が満](#prerequisites) たされていることを確認します。 
 
    > [!NOTE]
    > Microsoft Defender ウイルス対策インストールされ、パッシブ モードに設定しない限りアクティブになります。 
- 
 
-4. [ **オンボード パッケージをダウンロードする]** を選択し、.zip保存します。
+#### <a name="options-to-install-the-microsoft-defender-for-endpoint-packages"></a>Microsoft Defender for Endpoint パッケージをインストールするオプション
 
-5. インストール パッケージをインストールするには、任意のオプションを使用してインストール パッケージをインストールMicrosoft Defender ウイルス対策。 
+前のセクションでは、インストール パッケージをダウンロードしました。 インストール パッケージには、すべての Microsoft Defender for Endpoint コンポーネントのインストーラーが含まれています。 
 
-6. [オンボーディングの手順] セクションに [示されている手順に従](#onboarding-steps) います。
+エージェントをインストールするには、次のオプションを使用できます。
+- [コマンド ラインを使用してインストールする](#install-microsoft-defender-for-endpoint-using-the-command-line)
+- [スクリプトを使用してインストールする](#install-microsoft-defender-for-endpoint-using-a-script)
+- [グループ ポリシーを使用してインストール パッケージとオンボーディング パッケージを適用する](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
 
-### <a name="options-to-install-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender をインストールするオプション
+##### <a name="install-microsoft-defender-for-endpoint-using-the-command-line"></a>コマンド ラインを使用して Microsoft Defender For Endpoint をインストールする
+前の手順のインストール パッケージを使用して、Microsoft Defender for Endpoint をインストールします。 
 
-前のセクションでは、インストール パッケージをダウンロードしました。 インストール パッケージには、すべての Microsoft Defender for Endpoint コンポーネントのインストーラーが含まれています。
-
-### <a name="install-microsoft-defender-for-endpoint-using-command-line"></a>コマンド ラインを使用して Microsoft Defender for Endpoint をインストールする
-
-前の手順のインストール パッケージを使用して、Microsoft Defender for Endpoint をインストールします。
 
 次のコマンドを実行して、Microsoft Defender for Endpoint をインストールします。
 
@@ -200,49 +238,66 @@ Msiexec /x md4ws.msi /quiet
 
 サーバーのWindowsは、サーバーアクティビティ、カーネル攻撃とメモリ攻撃検出の範囲に関するより深い洞察を提供し、応答アクションを有効にします。
 
-### <a name="install-microsoft-defender-for-endpoint-using-a-script"></a>スクリプトを使用して Microsoft Defender for Endpoint をインストールする
+##### <a name="install-microsoft-defender-for-endpoint-using-a-script"></a>スクリプトを使用して Microsoft Defender for Endpoint をインストールする
 
-インストーラー スクリプトを使用 [して、](server-migration.md#installer-script) インストール、アンインストール、オンボーディングを自動化することもできます。 
+インストーラー スクリプトを使用すると [、](server-migration.md#installer-script) インストール、アンインストール、オンボーディングを自動化できます。 詳細については、次のセクションの手順を参照して、グループ ポリシーでスクリプトを使用します。
 
-## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows サーバー Semi-Annual Enterprise チャネルと Windows Server 2019 および Windows Server 2022
+##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>グループ ポリシーを使用して Microsoft Defender for Endpoint のインストールおよびオンボーディング パッケージを適用する
 
-Windows Server 2019 および Windows Server 2022 Microsoft エンドポイント マネージャーのオンボーディング パッケージは、現在スクリプトを出荷しています。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
+1. グループ ポリシーを作成します。 <br> グループ ポリシー [管理コンソール](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成する **グループ** ポリシー オブジェクトを右クリックし、[新規] を **クリックします**。 表示されるダイアログ ボックスに新しい GPO の名前を入力し **、[OK] をクリックします**。
 
-### <a name="download-package"></a>パッケージのダウンロード
+2. グループ ポリシー [管理コンソール](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。
 
-1. [Microsoft Defender セキュリティ センター] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
+3. グループ ポリシー **管理エディターで、[****コンピューターの構成**] 、[基本設定] の順に移動し、[コントロール パネルの **設定] に移動します**。
 
-2. [**サーバー 1803 Windows 2019] を選択します**。
+4. [スケジュールされたタスク **] を** 右クリックし、[新規] をポイントし、[イミディエイト タスク] (少なくとも Windows **7) をクリックします**。
 
-3. [パッケージ **のダウンロード] を選択します**。 ファイルとして保存WindowsDefenderATPOnboardingPackage.zip。
+5. 開く **[タスク]** ウィンドウで、[全般] タブ **に移動** します。[セキュリティ **オプション] で、[****ユーザーまたはグループの変更**] をクリックし、[SYSTEM] と入力し、[名前の確認] をクリック **して** **[OK] をクリックします**。 NT AUTHORITY\SYSTEM は、タスクが実行されるユーザー アカウントとして表示されます。
 
-4. [オンボーディングの手順] セクションに [示されている手順に従](#onboarding-steps) います。
+6. [ **ユーザーがログオンするかどうかを実行する] を選択し** 、[最高の特権で実行する **] チェック ボックスを** オンにします。
 
-## <a name="onboarding-steps"></a>オンボーディングの手順
+7. [名前] フィールドに、スケジュールされたタスクの適切な名前 (Defender for Endpoint Deployment など) を入力します。
 
-1. 必要なオンボーディング パッケージをダウンロードしたら、サーバーのオンボーディング ツールとメソッドに記載されている [ガイダンスを使用](configure-endpoints.md#endpoint-onboarding-tools) します。
+8. [操作] タブ **に移動し** 、[新規] **を選択します。** [アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。 インストーラー [スクリプトはインストール](server-migration.md#installer-script) を処理し、インストールが完了した直後にオンボーディング 手順を実行します。 *[C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe* を選択し、引数を指定します。
 
-2. (サードパーティのマルウェア対策ソリューションを使用している場合にのみ適用されます)。 パッシブ モードの設定に次のMicrosoft Defender ウイルス対策する必要があります。 正しく構成されていることを確認します。
+    ```console
+     -ExecutionPolicy RemoteSigned \\servername-or-dfs-space\share-name\install.ps1 -OnboardingScript \\servername-or-dfs-space\share-name\windowsdefenderatponboardingscript.cmd
+    ```  
 
-    1. 次のレジストリ エントリを設定します。
-       - パス: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-       - 名前: `ForceDefenderPassiveMode`
-       - 種類`REG_DWORD`
-       - 値: `1`
+     >[!NOTE]
+    >推奨される実行ポリシー設定はです `Allsigned` 。 この場合、スクリプトがエンドポイントで SYSTEM として実行されている場合は、スクリプトの署名証明書をローカル コンピューター信頼済み発行元ストアにインポートする必要があります。
 
-    2. 次の PowerShell コマンドを実行して、パッシブ モードが構成されていることを確認します。
+    共有install.ps1ファイルのファイル サーバーの完全修飾ドメイン名 \\ (FQDN) を使用して、servername-or-dfs-space\share-name を UNC パスに置き *換* えてください。 インストーラー パッケージはmd4ws.msi同じディレクトリに配置する必要があります。  また、UNC パスのアクセス許可によって、プラットフォームをインストールしているコンピューター アカウントへの読み取りアクセスが許可されます。
 
-        ```powershell
-        Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-        ```
+   
 
-        > [!NOTE]
-        > - Microsoft Defender for server と Microsoft Defender for Endpoint の統合は、Windows Server 2022、Windows [Server 2019、および Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするために拡張されました。
-        > - この統合を利用したサーバー エンドポイントの監視は、ユーザーのOffice 365 GCCされています。
+    Microsoft 以外のマルウェア対策Microsoft Defender ウイルス対策と共に存在するシナリオでは、インストール時にパッシブ モードを設定する $Passive パラメーターを追加します。
 
-    3. パッシブ モード イベントを含む最近のイベントが見つかったこと確認します。
+9. **[OK] を選択** し、開いている GPMC ウィンドウを閉じます。
 
-       ![パッシブ モード検証結果のイメージ](images/atp-verify-passive-mode.png)
+10. GPO を組織単位 (OU) にリンクするには、右クリックして [既存の GPO のリンク **] を選択します**。 表示されるダイアログ ボックスで、リンクするグループ ポリシー オブジェクトを選択します。 [**OK**] をクリックします。
+
+その他の構成設定については、「サンプル コレクション設定 [の構成」および](configure-endpoints-gp.md#configure-sample-collection-settings) 「その他の推奨 [される構成設定」を参照してください](configure-endpoints-gp.md#other-recommended-configuration-settings)。
+
+### <a name="step-3-complete-the-onboarding-steps"></a>手順 3: オンボーディングの手順を完了する
+
+次の手順は、サードパーティのマルウェア対策ソリューションを使用している場合にのみ適用されます。 パッシブ モードの設定に次のMicrosoft Defender ウイルス対策する必要があります。 正しく構成されていることを確認します。
+
+1. 次のレジストリ エントリを設定します。
+    - パス: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+    - 名前: `ForceDefenderPassiveMode`
+    - 種類`REG_DWORD`
+    - 値: `1`
+
+2. 次の PowerShell コマンドを実行して、パッシブ モードが構成されていることを確認します。
+
+    ```powershell
+    Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
+    ```
+
+3. パッシブ モード イベントを含む最近のイベントが見つかったこと確認します。
+
+    ![パッシブ モード検証結果のイメージ](images/atp-verify-passive-mode.png)
 
 > [!IMPORTANT]
 >
@@ -250,6 +305,22 @@ Windows Server 2019 および Windows Server 2022 Microsoft エンドポイン�
 Defender for Endpoint によって収集されたデータは、プロビジョニング中に特定されたテナントの地理的位置に格納されます。
 > - Microsoft Defender for Cloud を使用する前に Defender for Endpoint を使用する場合、後で Microsoft Defender for Cloud と統合した場合でも、テナントの作成時に指定した場所にデータが保存されます。
 > - 構成が完了すると、データの保存場所を変更できません。 データを別の場所に移動する必要がある場合は、Microsoft サポートに問い合わせ、テナントをリセットする必要があります。
+
+
+## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows サーバー Semi-Annual Enterprise チャネルと Windows Server 2019 および Windows Server 2022
+
+Windows Server 2019 および Windows Server 2022 Microsoft エンドポイント マネージャーのオンボーディング パッケージは、現在スクリプトを出荷しています。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
+
+### <a name="download-package"></a>パッケージのダウンロード
+
+1. [Microsoft 365 Defender] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
+
+2. [**サーバー 1803 Windows 2019] を選択します**。
+
+3. [パッケージ **のダウンロード] を選択します**。 ファイルとして保存WindowsDefenderATPOnboardingPackage.zip。
+
+4. 「オンボーディングの手順を完了 [する」セクションに示されている手順に従](#step-3-complete-the-onboarding-steps) います。
+
 
 ## <a name="verify-the-onboarding-and-installation"></a>オンボーディングとインストールを確認する
 
@@ -306,7 +377,7 @@ Windows 10 クライアント デバイスで使用できるのと同じ方法�
 >[!NOTE]
 >*他の Windows サーバー バージョンのこれらのオフボード手順は、MMA を必要とする Windows Server 2016 および Windows Server 2012 R2 用の以前の Microsoft Defender for Endpoint を実行している場合にも適用されます。 新しい未確認ソリューションに移行する手順は [、Microsoft Defender for Endpoint のサーバー移行シナリオにあります](/microsoft-365/security/defender-endpoint/server-migration)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
