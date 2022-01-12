@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c492d106e84eb01d36f26aa9db333ddf9b5db7c5
-ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
+ms.openlocfilehash: fca46fa50c332d31ea18faf90e8372c1a9947b1f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61436694"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935623"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS での Microsoft Defender for Endpoint の展開
 
@@ -36,7 +36,7 @@ ms.locfileid: "61436694"
 
 このトピックでは、登録されているデバイス上の iOS での Defender for Endpoint の展開Intune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Microsoft Endpoint Manager 管理センター [へのアクセス権を持っている必要があります](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -75,9 +75,84 @@ iOS 上の Defender for Endpoint を展開するには、Intune ポータル サ
     > [!div class="mx-imgBorder"]
     > ![管理センター 3 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-3.png)
 
+## <a name="complete-deployment-for-supervised-devices"></a>監視対象デバイスの完全な展開
+
+Microsoft Defender for Endpoint on iOS アプリは、これらの種類のデバイスでプラットフォームによって提供される管理機能の強化を考えると、監視対象の iOS/iPadOS デバイスに特化した機能を備えます。 また、デバイスでローカル VPN **を設定せずに Web 保護を提供することもできます**。 これにより、エンドユーザーはシームレスなエクスペリエンスを実現しながら、フィッシングなどの Web ベースの攻撃から保護されます。
+
+強化されたフィッシング対策機能を使用して Web 保護を構成するには、監視対象の iOS デバイスにカスタム プロファイルを展開する必要があります。 以下の手順に従います。
+
+- 構成プロファイルのダウンロード [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
+- [デバイス  ->  **] iOS/iPadOS**  ->  **構成プロファイルの [プロファイルの**  ->  **作成] に移動します。**
+
+
+    > [!div class="mx-imgBorder"]
+    > ![管理センター 7 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-7.png)
+
+
+    
+- プロファイルの名前を指定します。 構成プロファイル ファイルのインポートを求めるメッセージが表示されたら、前の手順からダウンロードしたファイルを選択します。
+- [割 **り当て** ] セクションで、このプロファイルを適用するデバイス グループを選択します。 ベスト プラクティスとして、これはすべての管理対象 iOS デバイスに適用する必要があります。 **[次へ]** を選択します。
+- **[確認および作成]** ページで、完了したら、**[作成]** を選択します。 構成プロファイルの一覧に新しいプロファイルが表示されます。
+
+### <a name="configure-supervised-mode-via-intune"></a>Intune 経由で監視モードを構成する
+
+次に、アプリ構成ポリシーを使用して Defender for Endpoint アプリの監視モードを構成します。
+
+   > [!NOTE]
+   > 監視対象デバイスのこのアプリ構成ポリシーは、管理対象デバイスにのみ適用され、ベスト プラクティスとしてすべての管理対象 iOS デバイスを対象とする必要があります。
+
+1. 管理センターにサインインし [Microsoft エンドポイント マネージャーアプリ](https://go.microsoft.com/fwlink/?linkid=2109431)の構成ポリシー **[** 追加] \> **に** \> **移動します**。 [ **管理対象デバイス] を選択します**。
+
+    > [!div class="mx-imgBorder"]
+    > ![管理センター 4 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-4.png)
+
+1. [アプリ構成 *ポリシーの作成] ページ* で、次の情報を入力します。
+    - ポリシー名
+    - プラットフォーム: iOS/iPadOS を選択する
+    - 対象アプリ: リスト **から [エンドポイント用 Microsoft Defender]** を選択します。
+
+    > [!div class="mx-imgBorder"]
+    > ![管理センター 5 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-5.png)
+
+1. 次の画面で、[構成デザイナー **を形式として使用** する] を選択します。 次のプロパティを指定します。
+    - 構成キー: issupervised
+    - 値の型:String
+    - 構成値: {{issupervised}}
+
+    > [!div class="mx-imgBorder"]
+    > ![管理センター 6 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-6.png)
+
+1. **[次へ]** を選択して、**[スコープ タグ]** ページを開きます。 スコープ タグは省略可能です。 [**次へ**] を選んで続行します。
+
+1. **[割り当て]** ページで、このプロファイルを受け取るグループを選択します。 このシナリオでは、すべてのデバイスをターゲットに設定するベスト **プラクティスです**。 プロファイルの割り当ての詳細については、[ユーザーおよびデバイス プロファイルの割り当て](/mem/intune/configuration/device-profile-assign)に関するページを参照してください。
+
+   ユーザー グループに展開する場合、ユーザーはポリシーが適用される前にデバイスにサインインする必要があります。
+
+   **[次へ]** をクリックします。
+
+1. **[確認および作成]** ページで、完了したら、**[作成]** を選択します。 構成プロファイルの一覧に新しいプロファイルが表示されます。
+
+1. 次に、フィッシング対策機能を強化するには、監視対象の iOS デバイスにカスタム プロファイルを展開できます。 以下の手順に従います。
+
+    - 構成プロファイルのダウンロード [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
+    - [デバイス  ->  **] iOS/iPadOS**  ->  **構成プロファイルの [プロファイルの**  ->  **作成] に移動します。**
+
+    > [!div class="mx-imgBorder"]
+    > ![管理センター 7 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-7.png)
+    
+    - プロファイルの名前を指定します。 構成プロファイル ファイルのインポートを求めるメッセージが表示されたら、前の手順からダウンロードしたファイルを選択します。
+    - [割 **り当て** ] セクションで、このプロファイルを適用するデバイス グループを選択します。 ベスト プラクティスとして、これはすべての管理対象 iOS デバイスに適用する必要があります。 **[次へ]** を選択します。
+    - **[確認および作成]** ページで、完了したら、**[作成]** を選択します。 構成プロファイルの一覧に新しいプロファイルが表示されます。
+
+
 ## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>VPN プロファイルの自動オンボーディング (簡易オンボーディング)
 
-管理者は VPN プロファイルの自動セットアップを構成できます。 これにより、オンボーディング中にユーザーに設定せずに Defender for Endpoint VPN プロファイルが自動的にセットアップされます。 Web Protection 機能を提供するために VPN が使用されます。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。
+管理されていないデバイスの場合、WEB 保護機能を提供するために VPN が使用されます。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。
+
+>[!NOTE]
+>監視対象デバイスの場合、Web Protection 機能には VPN は必要ではなく、管理者は監視対象デバイスで構成プロファイルをセットアップする必要があります。 監視対象デバイス用に構成するには、「監視対象デバイスの完全な展開」 [セクションの手順に従](#complete-deployment-for-supervised-devices) います。
+
+管理者は VPN プロファイルの自動セットアップを構成できます。 これにより、オンボーディング中にユーザーに設定せずに Defender for Endpoint VPN プロファイルが自動的にセットアップされます。 
 
 この手順では、VPN プロファイルを設定することでオンボーディング プロセスを簡略化します。 ゼロタッチまたはサイレント オンボーディング エクスペリエンスについては、「次のセクション:ゼロタッチ [オンボード」を参照してください](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview)。
 
@@ -100,7 +175,6 @@ iOS 上の Defender for Endpoint を展開するには、Intune ポータル サ
 1. [確認 *と作成] セクション* で、入力された情報が正しいか確認し、[作成] を **選択します**。
 
 ## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview"></a>エンドポイント用 Microsoft Defender のゼロタッチ オンボーディング (プレビュー)
-
 
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
@@ -131,6 +205,9 @@ iOS 上の Defender for Endpoint を展開するには、Intune ポータル サ
     - 暫定通知がユーザー デバイスに送信されます。
     - Web Protection などの機能がアクティブ化されます。
 
+   > [!NOTE]
+   > 監視対象デバイスの場合、VPN プロファイルは必要ありませんが、Intune を介して Defender for Endpoint VPN プロファイルを構成することで、管理者はゼロタッチ オンボーディングをセットアップできます。 VPN プロファイルはデバイスに展開されますが、デバイス上にのみパススルー プロファイルとして存在し、初期オンボーディング後に削除できます。
+
 ## <a name="complete-onboarding-and-check-status"></a>オンボーディングとチェックの状態を完了する
 
 1. iOS の Defender for Endpoint がデバイスにインストールされた後、アプリ アイコンが表示されます。
@@ -144,47 +221,6 @@ iOS 上の Defender for Endpoint を展開するには、Intune ポータル サ
     > [!div class="mx-imgBorder"]
     > ![携帯電話の説明のスクリーンショットが自動的に生成されます。](images/device-inventory-screen.png)
 
-## <a name="configure-microsoft-defender-for-endpoint-for-supervised-mode"></a>監視モード用に Microsoft Defender for Endpoint を構成する
-
-Microsoft Defender for Endpoint on iOS アプリは、これらの種類のデバイスでプラットフォームによって提供される管理機能の強化を考えると、監視対象の iOS/iPadOS デバイスに特化した機能を備えます。 これらの機能を利用するには、Defender for Endpoint アプリがデバイスが監視モードにあるかどうかが知る必要があります。
-
-### <a name="configure-supervised-mode-via-intune"></a>Intune 経由で監視モードを構成する
-
-Intune を使用すると、アプリ構成ポリシーを使用して Defender for iOS アプリを構成できます。
-
-   > [!NOTE]
-   > 監視対象デバイスのこのアプリ構成ポリシーは、管理対象デバイスにのみ適用され、ベスト プラクティスとしてすべての管理対象 iOS デバイスを対象とする必要があります。
-
-1. 管理センターにサインインし [Microsoft エンドポイント マネージャーアプリ](https://go.microsoft.com/fwlink/?linkid=2109431)の構成ポリシー **[** 追加] \> **に** \> **移動します**。 [管理対象デバイス **] をクリックします**。
-
-    > [!div class="mx-imgBorder"]
-    > ![管理センター 4 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-4.png)
-
-1. [アプリ構成 *ポリシーの作成] ページ* で、次の情報を入力します。
-    - ポリシー名
-    - プラットフォーム: iOS/iPadOS を選択する
-    - 対象アプリ: リスト **から [エンドポイント用 Microsoft Defender]** を選択します。
-
-    > [!div class="mx-imgBorder"]
-    > ![管理センター 5 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-5.png)
-
-1. 次の画面で、[構成デザイナー **を形式として使用** する] を選択します。 次のプロパティを指定します。
-    - 構成キー: issupervised
-    - 値の型:String
-    - 構成値: {{issupervised}}
-
-    > [!div class="mx-imgBorder"]
-    > ![管理センター 6 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-6.png)
-
-1. [次 **へ] を** クリックして [スコープ タグ **] ページを** 開きます。 スコープ タグは省略可能です。 続行するには、**[次へ]** をクリックします。
-
-1. **[割り当て]** ページで、このプロファイルを受け取るグループを選択します。 このシナリオでは、すべてのデバイスをターゲットに設定するベスト **プラクティスです**。 プロファイルの割り当ての詳細については、[ユーザーおよびデバイス プロファイルの割り当て](/mem/intune/configuration/device-profile-assign)に関するページを参照してください。
-
-   ユーザー グループに展開する場合、ユーザーはポリシーが適用される前にデバイスにサインインする必要があります。
-
-   **[次へ]** をクリックします。
-
-1. **[確認および作成]** ページで、完了したら、**[作成]** を選択します。 構成プロファイルの一覧に新しいプロファイルが表示されます。
 
 ## <a name="next-steps"></a>次の手順
 
