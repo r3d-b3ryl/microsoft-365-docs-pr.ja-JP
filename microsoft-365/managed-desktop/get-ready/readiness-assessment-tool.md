@@ -38,7 +38,7 @@ Microsoft Managed Desktop に登録するときに可能な限りスムーズな
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 
-|小切手  |説明  |
+|チェック  |説明  |
 |---------|---------|
 |Autopilot 展開プロファイル     | オートパイロット展開プロファイルの割り当てがすべてのデバイスに適用されるわけではないことを確認します (プロファイルを Microsoft 管理対象デスクトップ デバイスに割り当て *ない* でください)。       |
 |証明書コネクタ     | 証明書コネクタの状態をチェックして、それらがアクティブであることを確認します   |
@@ -60,7 +60,7 @@ Microsoft Managed Desktop に登録するときに可能な限りスムーズな
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory の設定
 
-|小切手  |説明  |
+|チェック  |説明  |
 |---------|---------|
 |Enterprise State Roaming の "アドホック" サブスクリプション     | ("false" に設定されている場合) Enterprise State Roaming が正しく機能しない可能性がある設定を確認する方法をアドバイスします  |
 |Enterprise State Roaming     | Enterprise State Roaming が有効になっていることを確認する方法をアドバイスします       |
@@ -75,7 +75,7 @@ Microsoft Managed Desktop に登録するときに可能な限りスムーズな
 
 ## <a name="microsoft-365-apps-for-enterprise-settings"></a>エンタープライズ設定用の Microsoft 365 Apps
 
-|小切手  |説明  |
+|チェック  |説明  |
 |---------|---------|
 |OneDrive for Business     | OneDrive for Business がサポートされていない設定を使用しているかどうかを確認します。        |
 
