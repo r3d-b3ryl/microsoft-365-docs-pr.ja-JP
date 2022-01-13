@@ -16,14 +16,14 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: Microsoft 365 の電子情報開示ツールを使用して、Exchange ハイブリッド環境のオンプレミス ユーザーの Teams チャット データを検索してエクスポートします。
+description: 管理者は、Microsoft 365 の電子情報開示ツールを使用して、Exchange ハイブリッド展開のオンプレミス ユーザーの Teams チャット データを検索してエクスポートできます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2398ff8328b075403906c460f51a738664fec42d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fdd142783313418c8c65c04f9b5e344ff325ec2c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192153"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871453"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>オンプレミス ユーザーの Teams チャット データを検索する
 
@@ -52,29 +52,23 @@ Microsoft Teams 対応のユーザーがオンプレミスのメールボック�
   
 この機能に加えて、電子情報開示ツールを使用して、クラウドベースの SharePoint サイトの Teams コンテンツ、各 Microsoft チームに関連付けられた Exchange メールボックス、クラウドベースのユーザーの Exchange Online メールボックスの 1xN Teams チャット データを検索、プレビュー、エクスポートすることもできます。
 
-### <a name="how-this-feature-is-supported-in-content-search-and-core-ediscovery-search-tools"></a>この機能がコンテンツ検索およびコア電子情報開示検索ツールでサポートされるしくみ
-
-Microsoft 365 コンプライアンス センターのコア電子情報開示ケースに関連付けられているコンテンツ検索および検索ツールの UI 要素:
-  
-- [**オンプレミスのユーザー用にアプリ コンテンツを追加する**] チェックボックスがコンテンツ検索ツールの **[場所]** ウィザード ページに表示され、既定でオンになっています。 このチェックボックスをオンにしておくと、コンテンツ検索でオンプレミス ユーザーのクラウド ベースのストレージを含めることができます。
-
-    ![[オンプレミスのユーザー用に Office アプリ コンテンツを追加する] チェックボックスが、コンテンツ検索 UI に追加されています](../media/EHAMShardCheckBox.png)
-  
-- 検索する特定のユーザーを選択すると、オンプレミス ユーザーを検索できます。
-
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>オンプレミス ユーザーの Teams チャット コンテンツの検索
 
-Microsoft 365 コンプライアンス センターのコンテンツ検索を使用して、オンプレミス ユーザーの Teams チャット データを検索する方法について示します。
+Microsoft 365 コンプライアンス センターのコンテンツ検索を使用して、オンプレミス ユーザーの Teams チャット データを検索する方法について示します。 コア電子情報開示の検索ツールを使用して、オンプレミス ユーザーのチャット データを検索することもできます。
   
 1. Microsoft 365 コンプライアンス センターで、[**コンテンツ検索**] に移動します。
 
 2. [**検索**] タブで [**新しい検索**] をクリックし、新しい検索に名前を付けます。
 
-3. [**場所**] ページで、[Exchange メールボックス] トグルを [**オン**] に設定します。 [**オンプレミスのユーザー用にアプリ コンテンツを追加する**] チェックボックスが表示され、既定でオンになっていることを確認します。
+3. [**場所**] ページで、[Exchange メールボックス] トグルを [**オン**] に設定します。
 
-4. 特定のユーザーの Teams コンテンツを検索するには、[**ユーザー、グループ、チームを選択**] を選択し、検索に含める特定のユーザーを選択します。 それ以外の場合は、[**次へ**] クリックして、オンプレミス ユーザーを含むすべてのユーザーの Teams コンテンツを検索します。
+4. 特定のユーザー (オンプレミス ユーザーを含む) の Teams コンテンツを検索するには、[**ユーザー、グループ、チームを選択**] を選択し、検索に含める特定のユーザーを選択します。 特定のユーザーを一覧表示しない場合、オンプレミス ユーザーを含むすべてのユーザーが検索に含まれます。
 
-5. [**検索条件の定義**] ページで、キーワード クエリを作成し、必要に応じて検索クエリに条件を追加します。 Team チャット データのみを検索するには、[**キーワード**] ボックスに次のクエリを追加します。
+5. [**オンプレミスのユーザー用にアプリ コンテンツを追加する**] チェック ボックスがオンになっていることを確認します。 これにより、オンプレミス ユーザーのクラウド ベース ストレージが検索されます。
+
+    ![[場所] ウィザード ページの [オンプレミスのユーザー用に Office アプリ コンテンツを追加する] チェック ボックスをオンにします。](../media/EHAMShardCheckBox.png)
+
+6. [**検索条件の定義**] ページで、キーワード クエリを作成し、必要に応じて検索クエリに条件を追加します。 Team チャット データのみを検索するには、[**キーワード**] ボックスに次のクエリを追加します。
 
     ```text
     kind:im AND kind:microsoftteams
@@ -90,7 +84,7 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索を�
 
 ## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>PowerShell を使用してオンプレミス ユーザーの Teams チャット データを検索する
 
-セキュリティ/コンプライアンス センター PowerShell で、**New-ComplianceSearch** および **Set-ComplianceSearch** コマンドレットを使用して、オンプレミス ユーザーの Teams チャット データを検索できます。 前に説明したように、PowerShell を使用してオンプレミス ユーザーの Teams チャット データを検索するために、サポート要求を送信する必要はありません。
+セキュリティ/コンプライアンス センター PowerShell の **New-ComplianceSearch** コマンドレットを使用して、オンプレミス ユーザーの Teams チャット データを検索することもできます。 前に説明したように、PowerShell を使用してオンプレミス ユーザーの Teams チャット データを検索するために、サポート要求を送信する必要はありません。
   
 1. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
@@ -113,8 +107,6 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索を�
 これらのコマンドレットの詳細については、以下を参照してください。
   
 - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
-
-- [Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch)
 
 - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
@@ -146,4 +138,4 @@ Teams のチャット データは、オンプレミスのユーザーのデー�
   
  **電子情報開示の保留ポリシーまたはアイテム保持ポリシーをオンプレミス ユーザーに適用することはできますか?**
   
-はい。 オンプレミス ユーザーの Teams チャットおよびチャネル メッセージに電子情報開示の保留または保持ポリシーを適用できます。 ただし、オンプレミス ユーザーの Teams コンテンツを保存または保留するには、Exchange Online のプラン 2 のライセンスをオンプレミス ユーザーに割り当てる必要があります。
+はい。 オンプレミス ユーザーの Teams チャットおよびチャネル メッセージに電子情報開示の保留または保持ポリシーを適用できます。 ただし、オンプレミス ユーザーの Teams コンテンツを保留または保持するには、オンプレミス ユーザーに Exchange Online のプラン 2 のライセンスが割り当てられている必要があります。
