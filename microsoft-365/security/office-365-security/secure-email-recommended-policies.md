@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 818619bef6a752088e1d260171f3d2c645efa842
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b9fb6afa9878f09871823d54d69edf677c1d65a2
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938074"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62008987"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -63,9 +63,11 @@ ActiveSync クライアントをブロックする新しいポリシー Exchange
 
 ## <a name="block-activesync-clients"></a>ActiveSync クライアントのブロック
 
-このポリシーにより、ActiveSync クライアントは他の条件付きアクセス ポリシーをバイパスしません。 ポリシー構成は ActiveSync クライアントにのみ適用されます。 [アプリ保護ポリシーを **[要求する] を選択すると、ActiveSync](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** クライアントがブロックされます。 このポリシーの作成の詳細については、「条件付きアクセスを使用したクラウド アプリ アクセスのアプリ保護ポリシーを要求 [する」を参照してください](/azure/active-directory/conditional-access/app-protection-based-conditional-access)。
+Exchange ActiveSyncデスクトップおよびモバイル デバイス上のメッセージングデータと予定表データを同期するために使用できます。
 
-- シナリオ[1: Office 365](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)アプリでは、基本認証を利用する Exchange ActiveSync クライアントが接続を妨げる、アプリ保護ポリシーを持つ承認済みアプリが必要です。「手順 2: ActiveSync (EAS)を使用して Exchange Online 用の Azure AD 条件付きアクセス ポリシーを構成する」に従います。Exchange Online。
+モバイル デバイスの場合、Intune アプリ保護ポリシーをサポートしていない最新の認証対応 Exchange ActiveSync クライアント (またはアプリ保護ポリシーで定義されていないサポートされているクライアント) および基本認証を使用する Exchange ActiveSync クライアントは、[承認済みアプリと[アプリ](identity-access-policies.md#require-approved-apps-and-app-protection)保護を要求する] で作成された条件付きアクセス ポリシーに基づいてブロックされます。
+
+他のデバイスExchange ActiveSync基本認証を使用して認証をブロックするには、「すべてのデバイスで[Exchange ActiveSync](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices)をブロックする」の手順に従って、モバイル 以外のデバイスで基本認証を使用する Exchange ActiveSync クライアントが接続を妨げるExchange Online。
 
 また、認証ポリシーを使用して基本[](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)認証を無効にし、すべてのクライアント アクセス要求で最新の認証を使用できます。
 

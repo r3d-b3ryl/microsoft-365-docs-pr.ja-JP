@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9f2d0d20d9df68cb10a5a84d6f2ba07d11a4e478
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 353bda15ee1eb5f50cf5814e06e4ccbb64e1b8d4
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210115"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62009023"
 ---
 # <a name="device-profiles"></a>デバイス プロファイル
 
@@ -31,13 +31,13 @@ ms.locfileid: "60210115"
 
 :::image type="content" source="../../media/mmd-profile-options-heirarchy.png" alt-text="ピラミッドとして表示されるデバイス構成。説明は次のとおりです。":::
 
-基本的に、Microsoft マネージド デスクトップデバイスには、標準のセキュリティ 基準、コンプライアンス ポリシー、更新プログラムの設定、およびグループWindows基盤があります。 この機能をMicrosoft マネージド デスクトップ、すべてのデバイスにこれらの要素が含まれる必要があります。この要素は、管理者が変更を要求せずに変更Microsoft マネージド デスクトップ。
+基本的に、すべての Microsoft Managed Desktop デバイスには、標準のセキュリティ 基準、コンプライアンス ポリシー、更新プログラムの設定、およびグループWindows基盤があります。 Microsoft Managed Desktop を使用するには、すべてのデバイスにこれらすべての要素が含まれる必要があります。これは、Microsoft Managed Desktop への要求なしに管理者が変更することはできません。
 
-デバイス プロファイルは、次の上位レベルに表示されます。 すべてのデバイスMicrosoft マネージド デスクトップ 1 つのプロファイル (および 1 つのみ) プロファイルが割り当てられている必要があります。 管理者は、デバイスが割り当てられているプロファイルを選択できます。
+デバイス プロファイルは、次の上位レベルに表示されます。 すべての Microsoft Managed Desktop デバイスには、1 つのプロファイル (および 1 つのみ) プロファイルが割り当てられている必要があります。 管理者は、デバイスが割り当てられているプロファイルを選択できます。
 
 さらに高いレベルでは、追加 [のカスタマイズがあります](customizing.md)。 各デバイスには、1 つ以上のカスタマイズ (またはなし) を設定できます。 下位レベルのレイヤー (デバイス プロファイルまたは基礎構成) を変更するか、標準構成の上に層を重ね合った完全に新しい要求にすることもできます。
 
-上部には、ネットワークの詳細やアプリケーションなど、独自の変更があります。 デバイスは、これらの変更を任意の数持つ可能性があります。この変更は、デバイスによって管理またはブロックMicrosoft マネージド デスクトップ。
+上部には、ネットワークの詳細やアプリケーションなど、独自の変更があります。 デバイスには、Microsoft Managed Desktop によって管理またはブロックされない、これらの変更を任意の数に設定できます。
 
 
 ## <a name="device-profile-details"></a>デバイス プロファイルの詳細
@@ -51,10 +51,10 @@ ms.locfileid: "60210115"
 |機能|機密データ|Power User|Standard|
 |---|:---:|:---:|:---:|
 |**外部ファイルのブロックStorage**|はい|はい|いいえ|
-|**[クラウド ブロック レベル](/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)**|高い|高い|高い|
+|**[クラウド ブロック レベル](/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel)**|高|高|高|
 |**Microsoft アカウントを無効にする**|はい|はい|いいえ|
 |**個人用アカウントを無効OneDrive**|はい|はい|いいえ|
-|**昇格のためのデスクトップのセキュリティ保護に切り替える**|いいえ|はい|いいえ|
+|**[昇格のためのデスクトップのセキュリティ保護に切り替える](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation)**|いいえ|はい|いいえ|
 |**Microsoft Defender for Endpoint Device Tag**|M365Managed-SensitiveData|M365Managed-PowerUser|M365Managed-Standard|
 |**デバイスの管理者**|いいえ|はい|いいえ|
 |**Autopilot プロファイル**|MMD 標準|MMD Power User|MMD 標準|
@@ -65,7 +65,7 @@ ms.locfileid: "60210115"
 各デバイス プロファイルには、次の項目も含まれます。
 
 - 動的メンバーシップ Azure Active Directory (AAD) デバイス グループ
-- 静的メンバーシップ AAD デバイス グループ
+- デバイス グループの静的AADメンバーシップ
 - [Microsoft エンドポイント マネージャー構成プロファイル]
 
 > [!IMPORTANT]

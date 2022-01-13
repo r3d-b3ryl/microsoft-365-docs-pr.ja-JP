@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: グループ メンバーがグループとして電子メールを送信したり、Microsoft 365グループに代わって電子メールを送信Microsoft 365する方法についてMicrosoft 365します。
-ms.openlocfilehash: a21e30ef613f557d1206ada5bc9ab4be8a083834
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: e3742b645d1efb2acb4bd14d109314947d781246
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421584"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62009035"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>グループの代理として送信または送信するメンバーを許可する
 
@@ -39,8 +39,8 @@ Send **as** または send onhalf permissions が付与されているMicrosoft 
 > [!IMPORTANT]
 > 指定したユーザー **に代わって** [送信] **または** [代理送信] を構成できますが、両方は構成できません。 両方を構成すると、既定で [として送信] **になります**。
 
-> [!TIP]
-> [グループから電子](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)メールを送信する方法については、「Microsoft 365 グループから電子メールを送信する」を参照してください。web 上で Outlook と Outlook を使用してグループから電子メールを送信する方法について説明します。
+> [!NOTE]
+> **送信および****代理送信** は、ハイブリッド 構成のOutlook for MacではExchangeされません。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>メンバーがグループとして電子メールを送信するを許可する
 
@@ -79,6 +79,8 @@ Send **as** または send onhalf permissions が付与されているMicrosoft 
     ![ユーザーを入力して検索するか、一覧からユーザーを選択します。](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>関連記事
+
+[グループからまたはグループに代わって電子メールをMicrosoft 365する](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
 
 [コラボレーション ガバナンス計画の推奨事項](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 

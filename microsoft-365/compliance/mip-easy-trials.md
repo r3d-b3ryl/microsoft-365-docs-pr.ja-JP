@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: 機密性の高いコンテンツを分類および保護するための Microsoft Information Protection (MIP) の既定のラベルとポリシーについて説明します。
-ms.openlocfilehash: dd9a2eef45e8ccb7ecb9c637a94f64ad6796a8f9
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: a0634a8f67e28d84334cfadd4be7d9694084af6c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221354"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938628"
 ---
 # <a name="default-labels-and-policies-for-microsoft-information-protection"></a>Microsoft Information Protection の既定のラベルとポリシー
 
@@ -59,11 +59,13 @@ ms.locfileid: "61221354"
     
     ライセンス認証オプションでこの情報が表示されない場合は、現時点では秘密度ラベルと秘密度ポリシーの自動作成をご利用いただけません。 この状態が変更されたか、後でもう一度ご確認ください。または、次の設定情報を使用して手動で同じラベルとポリシーを作成することもできます。
 
-3. 次に、SharePoint と OneDrive の秘密度ラベルを有効にします。 この追加の手順は、Office for the Web で秘密度ラベルを使用し、SharePoint と OneDrive の自動ラベル付けポリシーを使用するための前提条件です。
-
-    **[ラベル]** タブを 選択し、**[今すぐ有効にする]** を選択します。
+3. 次に、SharePoint と OneDrive の秘密度ラベルを有効にします。 この手順は、Office for the web で秘密度ラベルを使用し、SharePoint と OneDrive の自動ラベル付けポリシーを使用するための前提条件です。
+   
+    Information Protection の [**概要**] タブの上部にある次のバナーを使用して、[**今すぐ有効にする**] を選択します。 このバナーが表示されていない場合は、SharePoint と OneDrive の秘密度ラベルがテナントに対して既に有効になっています。
     
-    詳細な手順については、「[SharePoint および OneDrive の秘密度ラベルを有効にする方法 (オプトイン)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in)」を参照してください。
+    ![SharePoint と OneDrive バナーの秘密度ラベルを有効にします。](../media/turn-on-mip-labels.png)
+    
+    この機能の詳細については、「[SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)」を参照してください。
 
 ## <a name="default-sensitivity-labels"></a>既定の秘密度ラベル
 

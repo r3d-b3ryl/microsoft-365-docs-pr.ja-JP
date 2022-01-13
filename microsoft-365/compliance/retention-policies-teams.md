@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: f3508db76a4a4dca9986de15517ca0df2df5ddb9
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: 68ac9febd12faa9d9ee70d97f293db80494f48f5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586593"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936584"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -74,8 +74,10 @@ Teams のチャットとチャネル メッセージからのこのデータは�
 
 メッセージは SubstrateHolds フォルダーに少なくとも 1 日間残り、削除の対象となる場合、タイマー ジョブは次回の実行時にメッセージを完全に削除します。
 
-> [!NOTE]
-> [データ保持の第 1 原則により](retention.md#the-principles-of-retention-or-what-takes-precedence)、別のアイテム保持ポリシーのために同じアイテムを保持する必要がある場合、または法的、調査上の理由から電子情報開示の保留リストにある場合、完全な削除は常に中断されます。
+> [!IMPORTANT]
+> [アイテム保持の最初の原則](retention.md#the-principles-of-retention-or-what-takes-precedence)により、および Teams のチャットおよびチャネル メッセージは Exchange Online メールボックスに保存されるため、メールボックスが別のアイテム保持ポリシー (Exchange の場所に適用されたポリシーを含む)、訴訟ホールド、または遅延ホールドの影響を受ける場合、または電子情報開示ホールドが法的または調査上の理由によりメールボックスに適用される場合には、SubstrateHolds フォルダーからの完全な削除は常に中断されます。
+>
+> メールボックスは該当するホールド リストに含まれる一方で、削除された Teams のチャットおよびチャネル メッセージは Teams アプリに表示されなくなりますが、電子情報開示では引き続き検出できます。
 
 アイテム保持ポリシーがチャット メッセージとチャネル メッセージに対して構成された後のコンテンツのパスは、アイテム保持ポリシーの保持後に削除、保持のみ、あるいは削除のみのどれであるかによって異なります。
 

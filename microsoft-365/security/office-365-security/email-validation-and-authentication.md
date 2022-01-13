@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: 管理者は、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用してスプーフィング、フィッシング、およびスパムを防ぐ方法を確認できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f358f6c20e6c4643a7a6aeb0ae3aae2513aad34
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c0e7bc2ddd620b454979418735fb6982b71501c3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212038"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934035"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 
@@ -87,7 +87,7 @@ Authentication-Results:
 
 複合認証は、メール認証チェックに失敗するメッセージをパスさせることで、これらの制限に対処できます。
 
-簡単にするために、次の例では、メール認証の結果に焦点を置いています。他のバックエンド インテリジェンス要因は、メール認証にパスするメッセージをなりすましとして識別したり、メール認証に失敗したメッセージを正当として識別したりする可能性があります。
+簡単にするために、次の例では、メール認証の結果に焦点を置いています。 他のバックエンド インテリジェンス要因は、メール認証にパスするメッセージをなりすましメールとして識別したり、メール認証に失敗したメッセージを正当なメールとして識別したりします。
 
 たとえば、fabrikam.com ドメインには、SPF、DKIM、または DMARC レコードがありません。 fabrikam.com ドメインの送信者からのメッセージは、複合認証に失敗する可能性があります (`compauth` の値と理由に注意してください)。
 
