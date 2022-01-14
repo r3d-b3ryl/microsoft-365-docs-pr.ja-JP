@@ -3,19 +3,19 @@ title: Microsoft マネージド デスクトップの前提条件
 description: Microsoft Managed Desktop に登録する前Microsoft 365設定するライセンス、Azure アカウント、認証設定、および設定
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: b8bba3832572b6834c46806eca048b568cc3d761
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 8b2fc786ee8887c6050dd67721f8c8a23d54e2a3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284399"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035176"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの前提条件
 
@@ -56,7 +56,7 @@ Microsoft Managed Desktop では、機能するために特定のライセンス
 > [!TIP]
 > Microsoft アカウント マネージャーは、現在のライセンスとサービス プランを確認し、重複を避けながら、必要な追加のライセンスまたはサービス プランを取得するための最も効率的なパスを見つけるのに役立ちます。
 
-## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Microsoft Managed Desktop の準備手順
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Microsoft Managed Desktop の準備をする手順
 
 1. 前提条件を確認します (この記事)。
 2. [準備状況の評価ツール](readiness-assessment-tool.md)を実行します。

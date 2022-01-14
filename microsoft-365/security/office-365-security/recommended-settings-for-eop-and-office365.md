@@ -19,12 +19,12 @@ ms.collection:
 description: セキュリティ設定に関する Exchange Online Protection (EOP) と Defender のベスト Office 365は何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳密にしたい場合は、何を使用する必要がありますか? また、Defender をユーザーに使用する場合、どのような追加Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2b894344362556200362d486853d56a2aed00b6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 66d221b422236c6818ebb146babc0cc90eab1206
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943114"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041080"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -65,8 +65,8 @@ ms.locfileid: "61943114"
 |**スパム プロパティの一括&しきい値**|||||
 |**バルク メールのしきい値** <p> _BulkThreshold_|7 |6 |4|詳細については [、「EOP のバルク 苦情レベル (BCL)」を参照してください](bulk-complaint-level-values.md)。|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|この設定は PowerShell でのみ使用できます。|
-|**スパム スコアの設定を増やす**|オフ|オフ|オフ|これらの設定はすべて、高度なスパム フィルター (ASF) の一部です。 詳細については、この記事の「 [スパム対策ポリシーの ASF](#asf-settings-in-anti-spam-policies) 設定」セクションを参照してください。|
-|**スパム設定としてマーク** する|オフ|オフ|オフ|これらの設定の大部分は ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシーの ASF](#asf-settings-in-anti-spam-policies) 設定」セクションを参照してください。|
+|**スパム スコアの設定を増やす**|Off|Off|Off|これらの設定はすべて、高度なスパム フィルター (ASF) の一部です。 詳細については、この記事の「 [スパム対策ポリシーの ASF](#asf-settings-in-anti-spam-policies) 設定」セクションを参照してください。|
+|**スパム設定としてマーク** する|Off|Off|Off|これらの設定の大部分は ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシーの ASF](#asf-settings-in-anti-spam-policies) 設定」セクションを参照してください。|
 |**特定の言語が含まれる** <p> _EnableLanguageBlockList_ <p> _LanguageBlockList_|**オフ** <p> `$false` <p> 空白|**オフ** <p> `$false` <p> 空白|**オフ** <p> `$false` <p> 空白|この設定に関する具体的な推奨事項はありません。 ビジネス ニーズに基づいて、特定の言語でメッセージをブロックできます。|
 |**これらの国から** <p> _EnableRegionBlockList_ <p> _RegionBlockList_|**オフ** <p> `$false` <p> 空白|**オフ** <p> `$false` <p> 空白|**オフ** <p> `$false` <p> 空白|この設定に関する具体的な推奨事項はありません。 ビジネス ニーズに基づいて、特定の国からのメッセージをブロックできます。|
 |**テスト モード** (_TestModeAction_)|**なし**|**なし**|**なし**|この設定は ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシーの ASF](#asf-settings-in-anti-spam-policies) 設定」セクションを参照してください。|
@@ -121,6 +121,9 @@ ms.locfileid: "61943114"
 
 サービスの既定の送信制限の詳細については、「送信制限」 [を参照してください](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)。
 
+> [!NOTE]
+> 送信スパム ポリシーは、Standard または Strict の事前設定されたセキュリティ ポリシーの一部ではありません。 Standard **と** **Strict の値は**、既定の送信スパム ポリシーまたは作成したカスタム ポリシーで推奨される値を示します。 
+
 <br>
 
 ****
@@ -166,7 +169,7 @@ ms.locfileid: "61943114"
 |**件名** <p> _CustomInternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |**メッセージ** <p> _CustomInternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |**外部送信者からのメッセージの通知をカスタマイズする**||||これらの設定は、メッセージがマルウェアとして検疫された場合に外部送信者に通知するか、外部送信者からの配信不能メッセージについて管理者に通知するが選択されている場合にのみ使用されます。|
-|**件名** <p> _CustomExternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**[件名]** <p> _CustomExternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |**メッセージ** <p> _CustomExternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |
 
@@ -231,20 +234,20 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 |セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**フィッシングのしきい値&保護**|||||
-|**ユーザーによる保護の有効化** (偽装ユーザー保護) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|未選択 <p> `$false` <p> none|選択済み <p> `$true` <p> \<list of users\>|選択済み <p> `$true` <p> \<list of users\>|主要な役割にユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は、CEO、CFO、その他の上級リーダーである可能性があります。 外部的には、保護された送信者には、評議会のメンバーまたは取締役会が含まれる可能性があります。 事前設定されたセキュリティ ポリシーは変更できません。推奨されるキー ロールにユーザーを追加する場合は、ユーザーを無効にする必要があります。|
+|**ユーザーによる保護の有効化** (偽装ユーザー保護) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|未選択 <p> `$false` <p> none|選択済み <p> `$true` <p> \<list of users\>|選択済み <p> `$true` <p> \<list of users\>|主要な役割にユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は、CEO、CFO、その他の上級リーダーである可能性があります。 外部的には、保護された送信者には、評議会のメンバーまたは取締役会が含まれる可能性があります。 <p> 事前設定されたセキュリティ ポリシーでは、保護するユーザーを指定できます。 事前設定されたセキュリティ ポリシーを無効にし、カスタムのフィッシング対策ポリシーを使用して、推奨される主要な役割にユーザーを追加する必要があります。|
 |**ドメインの保護を有効にする** (偽装されたドメイン保護)|未選択|選択済み|選択済み||
-|**所有するドメインを含める** <p> _EnableOrganizationDomainsProtection_|オフ <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
-|**カスタム ドメインを含める** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|オフ <p> `$false` <p> none|選択済み <p> `$true` <p> \<list of domains\>|選択済み <p> `$true` <p> \<list of domains\>|所有しているのではなく、頻繁に操作するドメイン (送信者ドメイン) を追加することをお勧めします。|
+|**所有するドメインを含める** <p> _EnableOrganizationDomainsProtection_|Off <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
+|**カスタム ドメインを含める** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Off <p> `$false` <p> none|選択済み <p> `$true` <p> \<list of domains\>|選択済み <p> `$true` <p> \<list of domains\>|所有しているのではなく、頻繁に操作するドメイン (送信者ドメイン) を追加することをお勧めします。 <p> 事前設定されたセキュリティ ポリシーでは、保護する custm ドメインを指定できない。 事前設定されたセキュリティ ポリシーを無効にし、カスタムフィッシング対策ポリシーを使用してカスタム ドメインを追加して、推奨される保護を行う必要があります。|
 |**信頼できる送信者とドメインの追加** <p> _ExcludedSenders_ <p> _ExcludedDomains_|なし|なし|なし|組織によっては、偽装の試行として誤って識別される送信者またはドメインを追加することをお勧めします。|
 |**メールボックス インテリジェンスを有効にする** <p> _EnableMailboxIntelligence_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
-|**偽装保護のインテリジェンスを有効にする** <p> _EnableMailboxIntelligenceProtection_|オフ <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`|この設定では、メールボックス インテリジェンスによる偽装検出に対して指定されたアクションを使用できます。|
+|**偽装保護のインテリジェンスを有効にする** <p> _EnableMailboxIntelligenceProtection_|Off <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`|この設定では、メールボックス インテリジェンスによる偽装検出に対して指定されたアクションを使用できます。|
 |**アクション**||||[メッセージの **検疫] を選択した場合は**、[ **検疫ポリシーの選択] ボックス** を使用できます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 <p> 新しいフィッシング対策ポリシーを作成する場合、空白の値は、既定の検疫ポリシーを使用して、その評決によって検疫されたメッセージの履歴機能を定義します (すべての偽装検出の種類に対する DefaultFullAccessPolicy)。 <p> 管理者は、ユーザーの制限が少ない、または制限の厳しい機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
-|**偽装ユーザーとしてメッセージが検出された場合** <p> _TargetedUserProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
-|**偽装ドメインとしてメッセージが検出された場合** <p> _TargetedDomainProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
+|**偽装ユーザーとしてメッセージが検出された場合** <p> _TargetedUserProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`|事前に設定されたセキュリティ ポリシーでは、保護するユーザーを指定できないので、この設定は、事前設定されたセキュリティ ポリシーでは効果的に何も行いません。|
+|**偽装ドメインとしてメッセージが検出された場合** <p> _TargetedDomainProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`|事前に設定されたセキュリティ ポリシーでは、保護するカスタム ドメインを指定できないので、この設定はユーザーが所有するドメインにのみ影響し、カスタム ドメインには影響を与えないので注意してください。|
 |**メールボックス インテリジェンスがユーザーを検出して偽装した場合** <p> _MailboxIntelligenceProtectionAction_|**アクションを適用しない** <p> `NoAction`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`||
-|**ユーザーの偽装を表示安全性のヒント** <p> _EnableSimilarUsersSafetyTips_|オフ <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
-|**[ドメイン偽装の表示] 安全性のヒント** <p> _EnableSimilarDomainsSafetyTips_|オフ <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
-|**ユーザー偽装の異常な文字を表示する安全性のヒント** <p> _EnableUnusualCharactersSafetyTips_|オフ <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
+|**ユーザーの偽装を表示安全性のヒント** <p> _EnableSimilarUsersSafetyTips_|Off <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
+|**[ドメイン偽装の表示] 安全性のヒント** <p> _EnableSimilarDomainsSafetyTips_|Off <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
+|**ユーザー偽装の異常な文字を表示する安全性のヒント** <p> _EnableUnusualCharactersSafetyTips_|Off <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
 |
 
 #### <a name="eop-anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Microsoft Defender の EOP フィッシング対策ポリシー設定 (Office 365
@@ -293,7 +296,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/mod
 |---|:---:|:---:|---|
 |**SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365 を有効にする** <p> _EnableATPForSPOTeamsODB_|オフ <p> `$false`|オン <p> `$true`|ユーザーが悪意のあるファイルをダウンロードするのを防ぐには、「ユーザーが悪意のあるファイルをダウンロードSharePointオンライン PowerShell を使用する[」を参照してください](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)。|
 |**クライアントのセーフドキュメントを有効Officeする** <p> _EnableSafeDocs_|オフ <p> `$false`|オン <p> `$true`|この機能は、Defender for Office 365に含まれていないライセンス (たとえば、Microsoft 365 E5またはMicrosoft 365 E5 Security)。 詳細については、「ドキュメントの[セーフ」を参照Microsoft 365 E5。](safe-docs.md)|
-|**ドキュメントでファイルが悪意のあると特定セーフ場合でも、保護されたビューをクリックできます** <p> _AllowSafeDocsOpen_|オフ <p> `$false`|オフ <p> `$false`|この設定は、ドキュメントのセーフです。|
+|**ドキュメントでファイルが悪意のあると特定セーフ場合でも、保護されたビューをクリックできます** <p> _AllowSafeDocsOpen_|Off <p> `$false`|Off <p> `$false`|この設定は、ドキュメントのセーフです。|
 |
 
 #### <a name="safe-attachments-policy-settings"></a>セーフ添付ファイルポリシーの設定

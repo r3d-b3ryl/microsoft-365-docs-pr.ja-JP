@@ -3,25 +3,25 @@ title: ユーザー エクスペリエンスをローカライズ
 description: ユーザーのデバイスをローカライズする方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4ff4d72f22faef32b1fabb52e10332af62e50bc7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6dae4ed7bce805dbaca712984de68fe06160bdab
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170061"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034823"
 ---
 # <a name="localize-the-user-experience"></a>ユーザー エクスペリエンスをローカライズ
 
-デバイスのMicrosoft マネージド デスクトップは、セットアップ プロセス ("すぐに使用できる") または後で、選択した言語を選択できます。
+Microsoft Managed Desktop デバイスのユーザーは、セットアップ プロセス ("すぐに使用できる") または後で、選択した言語を選択できます。
 
 ## <a name="during-setup-the-out-of-box-experience"></a>セットアップ中 ("アウト オブ ボックス エクスペリエンス")
 
@@ -60,7 +60,7 @@ ms.locfileid: "60170061"
 
 既存のデバイスを再利用する場合は、適切なイメージを取得するために Microsoft アカウント担当者と作業する必要がある場合があります。 詳細については、「デバイス イメージ [」を参照してください](../service-description/device-images.md)。
 
-ユーザー[が提供する](../service-description/device-images.md#universal-image)ユニバーサル Microsoft マネージド デスクトップには、次の言語と次のWindows 10。
+Microsoft [Managed](../service-description/device-images.md#universal-image) Desktop によって提供されるユニバーサル イメージには、次の言語と次の言語Windows 10。
 
 - アラビア語
 - ブルガリア語
@@ -107,11 +107,11 @@ Microsoft 365 AppsのEnterprise、少し異なるリストをサポートして�
 ## <a name="languages-for-support-and-operations"></a>サポートと操作の言語
 
 ### <a name="user-support"></a>ユーザー サポート
-Microsoft マネージド デスクトップは英語でのみサポートされます。 ユーザーがアプリで別の言語を問い合わせ場合、ユーザーは一般的な Microsoft サポート チャネルから直接サポートするのではなく、サポートを受Microsoft マネージド デスクトップ。 詳細については [、「Getting help for users 」を参照してください](../working-with-managed-desktop/end-user-support.md)。
+Microsoft Managed Desktop は英語でのみサポートを提供します。 ユーザーが 問い合わせ アプリで別の言語を選択した場合、Microsoft マネージ デスクトップから直接サポートするのではなく、一般的な Microsoft サポート チャネルからサポートを受け取る必要があります。 詳細については [、「Getting help for users 」を参照してください](../working-with-managed-desktop/end-user-support.md)。
 
 ユーザーが他の言語でサポートを必要とする場合は、Microsoft 以外のサポート ソースまたは独自の組織からサポートを提供する必要があります。
 
 ### <a name="admin-support-and-operations"></a>管理者のサポートと操作
-Microsoft マネージド デスクトップは英語でのみ管理者サポートを提供します。 これには、管理ポータルと、管理操作との通信Microsoft マネージド デスクトップ含まれます。 特に指定がない限り、すべての管理者関連の操作とインターフェイスは英語で行われます。
+Microsoft Managed Desktop は、英語でのみ管理者サポートを提供します。 これには、管理ポータルと Microsoft Managed Desktop Operations とのすべての通信が含まれます。 特に指定がない限り、すべての管理者関連の操作とインターフェイスは英語で行われます。
 
 

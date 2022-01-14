@@ -3,28 +3,28 @@ title: 診断ログ
 description: トラブルシューティング中にデバイスから収集される可能性があるログと、デバイスの保存方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 5c890ea42da4bb13c163e7b8b123080e0264d025
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 62c96c4badd9659879bad81a631a496423259754
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201531"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035644"
 ---
 # <a name="diagnostic-logs"></a>診断ログ
 
-Microsoft マネージド デスクトップ が管理するデバイスの問題をトラブルシューティングする場合、報告したデバイスまたはサービスによって識別されたデバイスのトラブルシューティングを行う場合は、ユーザーの介入なしにデバイスから特定の診断ログを収集する必要があります。 ユーザーが生成したコンテンツや情報をユーザー ディレクトリから収集しません。 デバイスの正常性と状態に関する診断データとログ データのみを収集します。
+Microsoft Managed Desktop が管理するデバイスに関する問題のトラブルシューティングを行う場合は、報告したデバイスか、サービスによって識別されたデバイスかを問わずに、ユーザーの介入なしにデバイスから特定の診断ログを収集する必要があります。 ユーザーが生成したコンテンツや情報をユーザー ディレクトリから収集しません。 デバイスの正常性と状態に関する診断データとログ データのみを収集します。
 
 収集されたログは 28 日間保存され、削除されます。 データ処理標準に従ってデバイスから収集されたログ [を処理します](privacy-personal-data.md)。
 
 ## <a name="data-collected"></a>収集されるデータ
 
-この一覧には、診断ログを収集する可能性があるすべてのフォルダー、イベント ログ、実行可能ファイルMicrosoft マネージド デスクトップレジストリの場所が含まれます。 収集される実際のデータは、このリストのサブセットであり、特定された問題に依存します。
+この一覧には、Microsoft Managed Desktop が診断ログを収集する可能性があるすべてのフォルダー、イベント ログ、実行可能ファイル、またはレジストリの場所が含まれます。 収集される実際のデータは、このリストのサブセットであり、特定された問題に依存します。
 
 ### <a name="registry-keys"></a>レジストリ キー
 
@@ -92,12 +92,12 @@ Microsoft マネージド デスクトップ が管理するデバイスの問�
 ### <a name="event-logs"></a>イベント ログ
 
 - アプリケーション
-- Microsoft-Windows-AppLocker/EXE と DLL
-- Microsoft-Windows-AppLocker/MSI とスクリプト
+- Microsoft-Windows-AppLocker/EXE and DLL
+- Microsoft-Windows-AppLocker/MSI and Script
 - Microsoft-Windows-AppLocker/Packaged app-Deployment
 - Microsoft-Windows-AppLocker/Packaged app-Execution
-- Microsoft-Windows-Bitlocker/Bitlocker 管理
-- Microsoft-Windows-SENSE/操作
+- Microsoft-Windows-Bitlocker/Bitlocker Management
+- Microsoft-Windows-SENSE/Operational
 - Microsoft-Windows-SenseIR/Operational
 - セットアップ
 - System

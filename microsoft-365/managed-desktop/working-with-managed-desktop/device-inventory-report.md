@@ -3,18 +3,18 @@ title: デバイス一覧レポート
 description: ''
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: e45bb0064554e9a0e5b9266c37aff86f101f6d99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 531410fb840675dc8930078570aab84e9a1f1425
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150332"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035680"
 ---
 # <a name="device-inventory-report"></a>デバイス一覧レポート
 
@@ -28,7 +28,7 @@ ms.locfileid: "60150332"
 - モデル
 - OS
 - OS ライセンス
-- OS バージョン
+- OS のバージョン
 - 所有権
 - 登録日
 - リング名

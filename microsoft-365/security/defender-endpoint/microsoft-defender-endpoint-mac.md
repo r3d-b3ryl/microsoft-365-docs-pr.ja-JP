@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15fbe01678a23de43d61705f2be96e7885f3b406
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 893ec2b7acfc9eddc75d803c297dd40f3c02a674
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941890"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041104"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac
 
@@ -78,7 +78,7 @@ macOS の最新の 3 つのメジャー リリースがサポートされてい�
 > [!IMPORTANT]
 > macOS 11 (Big Sur) 以上では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存のお客様の場合は [、macOS Catalina](mac-sysext-policies.md)および macOS の新しいバージョンの新しい構成プロファイルに記載されている追加の構成プロファイルを必ず展開してください。
 
-- 12 (モントレー), 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave)
+- 12 (モントレー), 11 (Big Sur), 10.15 (Catalina)
 - ディスク領域: 1 GB
 
 macOS のベータ版はサポートされていません。

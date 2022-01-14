@@ -3,18 +3,18 @@ title: Microsoft マネージド デスクトップの使用を開始する
 description: デバイスをセットアップし、サービスと連携するように Azure 機能を構成する手順
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.custom: intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 67bcf1f122912a7611c0830444fcf8436a680253
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 43ab54fbc80dcb0ad09d90f55178c0a9ae9eb1d9
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645862"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035536"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの使用を開始する
 

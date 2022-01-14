@@ -3,18 +3,18 @@ title: サービス プランの例外
 description: 標準サービス プランに例外を要求する方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ed071c31d4e5898d790e0a723dec8c2e332da1ca
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b791e20f68d16cdcda415593a9aa42cb7438c084
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60698395"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034907"
 ---
 # <a name="exceptions-to-the-service-plan"></a>サービス プランの例外
 

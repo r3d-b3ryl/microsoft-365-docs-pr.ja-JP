@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: セキュリティ コンプライアンス センターで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする&説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a091608f7741b279b06a6289fb97b521976fc9ea
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 08d3f0604516da2c31ca3a1cb6a1a3f2e2ed9dc9
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531887"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035054"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>カスタムの機密情報の種類を使用する前に
 
@@ -114,6 +114,28 @@ ms.locfileid: "61531887"
 
 > [!NOTE] 
 > ビジネスで 500 を超えるカスタム SIT を作成する必要がある場合は、サポート チケットを引き上げてください。
+
+### <a name="instance-count-supported-values-for-sit"></a>SIT でサポートされるインスタンス数の値
+
+SIT インスタンス数の制限は、次のソリューションで SIT を使用する場合に適用されます。
+
+- DLP ポリシー
+- 情報保護
+- 情報ガバナンス
+- 通信コンプライアンス
+- レコード管理
+- Microsoft Cloud App Security
+- プライバシー管理
+
+スキャンされたアイテムがルール条件を満たすには、1 つのアイテムの SIT の一意のインスタンスの数が最小値と最大値の間に入る必要があります。 これは、インスタンス数 **と呼ばれる。**
+
+- **最小** フィールド: 一致をトリガーするためにアイテムに含めなければならない SIT の一意のインスタンスの下限 (最小数)。 min フィールドは、次の値をサポートします。
+    - 1 ~ 500
+- **[** 最大] フィールド: アイテムに含め、引き続き一致をトリガーする SIT の一意のインスタンス数の上限。 max フィールドは、次の値をサポートします。
+    - 1 ~ 500 - アイテム内の SIT のインスタンス数に対して 500 以下の特定の上限を設定する場合に使用します。
+    - Any - SIT の一意のインスタンスの未定義の数がスキャンされたアイテムで見つかり、その一意のインスタンスの数が一意のインスタンスの最小数の値を満たすか、または超えたときに、一意のインスタンス数の条件を満たしたい場合に使用します。 `Any` つまり、min 値が満たされている限り、一意のインスタンス数の条件が満たされます。
+
+たとえば、1 つのアイテムに少なくとも 500 の SIT の一意のインスタンスが見つかったときにルールが一致をトリガーする場合は **、min** 値をに設定し、最大値をに設定します `500`  `Any` 。
 
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>コンプライアンス センターでカスタムの機密情報の種類を変更する
 

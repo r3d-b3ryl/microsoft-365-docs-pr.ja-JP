@@ -4,21 +4,21 @@ description: この記事では、Microsoft Managed Desktop の新しい記事�
 keywords: 変更履歴
 ms.service: m365-md
 ms.sitesec: library
-author: jaimeo
+author: tiaraquan
 ms.topic: article
 audience: ITPro
-manager: laurawi
+manager: dougeby
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 8a2720a4b01992396a06fc4109887bd759d539ce
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 4b3c08f23f6ba21e839501f9b7925733bbf6bbd1
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588387"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034523"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
@@ -29,7 +29,7 @@ ms.locfileid: "60588387"
 --- | ---
 [デバイスの要件](service-description/device-requirements.md) | 更新された記事
 [新しいデバイスをユーザー自身が登録する](get-started/register-devices-self.md) | 更新された記事
-[準備状況評価ツール](get-ready/readiness-assessment-tool.md) | 更新された記事
+[準備状況の評価ツール](get-ready/readiness-assessment-tool.md) | 更新された記事
 [アプリをデバイスに展開する](get-started/deploy-apps.md) | 更新された記事
 
 ## <a name="september-2021"></a>2021 年 9 月
@@ -126,7 +126,7 @@ ms.locfileid: "60588387"
 [Microsoft OneDrive](get-started/onedrive.md) | 新しい記事
 [コンプライアンス](intro/compliance.md) | 更新あり
 [Microsoft 365 Apps for enterprise](get-started/m365-apps.md) | 更新された記事
-[準備状況評価ツール](get-ready/readiness-assessment-tool.md) | 更新された記事
+[準備状況の評価ツール](get-ready/readiness-assessment-tool.md) | 更新された記事
 
 ## <a name="january-2021"></a>2021 年 1 月
 新しい記事または変更された記事 | 説明
@@ -149,7 +149,7 @@ ms.locfileid: "60588387"
 [プライバシーおよび個人データ](service-description/privacy-personal-data.md) | 更新された記事
 [コンプライアンス](intro/compliance.md) | 更新された記事
 [前提条件](get-ready/prerequisites.md) | 更新された記事
-[ネットワークの構成](get-ready/network.md) | 更新された記事
+[ネットワーク構成](get-ready/network.md) | 更新された記事
 
 
 ## <a name="november-2020"></a>2020 年 11 月

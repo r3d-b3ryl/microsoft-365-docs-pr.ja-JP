@@ -17,14 +17,14 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-- m365solution-overview
+- m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: ba810e129d7f2634e3708ecc32b7e20a1db8f170
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f0fc824b4498e2cde0e0c024902289f056396f55
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110957"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035716"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>ユーザーの継続的なアクセスMicrosoft 365
 
@@ -89,9 +89,9 @@ Microsoft は、継続的なアクセス評価Microsoft 365サポートするた
 |---|---|---|---|
 |**重要なイベント:**||||
 |ユーザーの失効|サポート|サポート|サポート|
-|ユーザーのリスク|サポート|サポート対象外|サポート対象外|
+|ユーザーのリスク|サポート|非サポート|サポート対象外|
 |**条件付きアクセス ポリシーの評価:**||||
-|IP アドレスの場所ポリシー|サポート|サポート\*|サポート|
+|IP アドレスの場所ポリシー|サポート|サポートされている\*|サポートされている|
 |
 
 \*SharePoint Office Web ブラウザー アクセスは、厳密モードを有効にすることで、インスタント IP ポリシーの適用をサポートします。 厳密なモードを使用しない場合、アクセス トークンの有効期間は 1 時間です。
@@ -106,7 +106,7 @@ Microsoft 365 の継続的アクセス評価が有効なクライアントは、
 
 - Outlook
 - Teams
-- 事業所\*
+- Office\*
 - SharePoint
 - OneDrive
 

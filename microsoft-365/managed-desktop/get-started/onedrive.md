@@ -1,24 +1,24 @@
 ---
 title: Microsoft OneDrive
-description: 登録Microsoft マネージド デスクトップデバイスOneDrive設定する方法
-keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント、アプリ、line-of-business アプリ、LOB アプリ
+description: Microsoft Managed Desktop が登録済みデバイスOneDrive設定する方法
+keywords: Microsoft Managed Desktop、Microsoft 365、サービス、ドキュメント、アプリ、line-of-business アプリ、LOB アプリ
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: a599f36692cbca6cbf67ddfd4a6ca1c05e02351f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8b5725de70446ee69452fabd02702e587ff13fa2
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214035"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035030"
 ---
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
-Microsoft マネージド デスクトップデバイス[OneDrive for Business](/onedrive/plan-onedrive-enterprise)クラウド ストレージ サービスとして使用して、デバイスが可能なMicrosoft マネージド デスクトップ状態を確保します。 ユーザーは、サインインするデバイスに関係なく、ファイルを見つける可能性があります。 たとえば、新しいデバイスにMicrosoft マネージド デスクトップすると、ファイルは自動的に新しいデバイスに同期されます。
+Microsoft Managed Desktop[は、OneDrive for Business](/onedrive/plan-onedrive-enterprise)をすべての Microsoft Managed Desktop デバイスのクラウド ストレージ サービスとして使用して、デバイスが可能な限りステートレスな状態を確保します。 ユーザーは、サインインするデバイスに関係なく、ファイルを見つける可能性があります。 たとえば、Microsoft Managed Desktop デバイスを新しいデバイスに置き換える場合、ファイルは自動的に新しいデバイスに同期されます。
 
 Microsoft Managed Devices では、既定でこれらの設定が自動的に構成されます。
 
@@ -28,15 +28,15 @@ Microsoft Managed Devices では、既定でこれらの設定が自動的に構
 
 - 既知のフォルダー移動機能は、クラウド内のユーザーのデータをバックアップするためにサイレント モードで有効になっています。これにより、ユーザーは任意のデバイスからファイルにアクセスできます。 詳細については、「ドキュメント、[ピクチャ](https://support.microsoft.com/office/back-up-your-documents-pictures-and-desktop-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057)、デスクトップ フォルダーをバックアップする」を参照OneDrive。
 
-- ユーザーは、既知のフォルダー移動機能を無効にしたり、既知のフォルダーの場所を変更して、デバイス間で一貫性のあるエクスペリエンスMicrosoft マネージド デスクトップすることはできません。
+- ユーザーは、既知のフォルダー移動機能を無効にしたり、既知のフォルダーの場所を変更したりして、Microsoft Managed Desktop デバイス全体で一貫性のあるエクスペリエンスを確保することはできません。
 
 ## <a name="user-experience"></a>ユーザー エクスペリエンス
 
-ユーザー Microsoft マネージド デスクトップ新しいデバイスを受け取ると、デバイスのセットアップ中に Azure 資格情報を入力して、初回実行のエクスペリエンスを実行します。 このプロセスが完了すると、デスクトップにアクセスし、ユーザーエクスペリエンスをOneDriveできます。
+Microsoft Managed Desktop ユーザーが新しいデバイスを受け取ると、デバイスのセットアップ中に Azure 資格情報を入力して初回実行エクスペリエンスを実行します。 このプロセスが完了すると、デスクトップにアクセスし、ユーザーエクスペリエンスをOneDriveできます。
 
 1. システムは、ユーザー OneDrive構成済みであり、ユーザーが自動的にユーザーにサインインOneDrive。
 
-:::image type="content" source="media/onedrive-sync.png" alt-text="通知の読み取りで、OneDrive同期中でファイルを編集OneDrive。ファイルを表示するには、ここをクリックします。":::
+:::image type="content" source="media/onedrive-sync.png" alt-text="通知の読み取りで、OneDrive同期中でファイルを編集できます。OneDriveをクリックしてファイルを表示します。":::
 
 2. システムは、既知のフォルダー OneDriveが構成されていることをユーザーに伝えます。
 
@@ -51,10 +51,10 @@ Microsoft Managed Devices では、既定でこれらの設定が自動的に構
 
 アクセスを制限する必要があるOneDrive 同期、条件付きアクセス ポリシーを使用してアクセスAzure Active Directoryすることをお勧めします。 詳細については、「アプリで条件付[きアクセスのサポートを有効にする」をOneDrive 同期してください](/onedrive/enable-conditional-access)。
 
-組織で Azure ADポリシーを使用できない場合、IT 管理者は次の手順を実行する必要があります。
+組織で条件付きアクセス ポリシー Azure AD使用できない場合、IT 管理者は次の手順を実行する必要があります。
 
 1. まだ分からない場合は、「テナント ID の検索」の説明に従って、テナント[ID をMicrosoft 365します](/onedrive/find-your-office-365-tenant-id)。
 2. 管理者センターにサインインOneDriveし、左側のウィンドウで **[同期**] を選択します。 [特定 **のドメイン** に参加している PC でのみ同期を許可する] チェック ボックスをオンにし、ドメインの一覧にテナント ID を追加します。 詳細については、「特定のドメインに参加しているコンピューターでのみ同期を許可 [する」を参照してください](/onedrive/allow-syncing-only-on-specific-domains)。
 
 > [!NOTE]
-> このガイダンスは、ユーザーのテナントにのみMicrosoft マネージド デスクトップ。 この記事では説明していない他の設定が使用されています。
+> このガイダンスは、Microsoft Managed Desktop のテナントにのみ適用されます。 この記事では説明していない他の設定が使用されています。

@@ -3,30 +3,30 @@ title: ゲスト アカウントの前提条件
 description: ゲスト アカウントの構成ガイドラインと調整方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: db07ca3bb7577aed7b334ba21893f6fe026819a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 64b0acabf76e1ceb12bd056b02cb2b949df9c957
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197139"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035042"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>ゲスト アカウントの前提条件
 
 ## <a name="external-collaboration-settings"></a>外部コラボレーションの設定
 
-Microsoft マネージド デスクトップアカウント アクセス用に Azure AD構成をお勧めします。 これらの設定は [、Azure portal](https://portal.azure.com) の [外部 **ID/ 外部コラボレーション設定] で調整できます**。
+Microsoft Managed Desktop では、ゲスト アカウント アクセス用に組織でAzure AD構成をお勧めします。 これらの設定は [、Azure portal](https://portal.azure.com) の [外部 **ID/ 外部コラボレーション設定] で調整できます**。
 
 -   ゲスト **ユーザー アクセスの場合**、ゲスト ユーザーに設定すると、ディレクトリ オブジェクトのプロパティ **とメンバーシップへのアクセスが制限されています**
 -   [ **ゲスト招待の設定**] で、[メンバー ユーザー] に設定し、特定の管理者ロールに割り当てられたユーザーは、メンバーのアクセス許可を持つゲストを含むゲスト **ユーザーを招待できます。**
 
-Microsoft マネージド デスクトップアカウントアクセスには、Azure AD構成が必要です。 この設定は [、Azure portal](https://portal.azure.com) の [外部 **ID/ 外部コラボレーション設定] で調整できます**。
+Microsoft Managed Desktop では、ゲスト アカウント アクセス用に組織Azure AD構成が必要です。 この設定は [、Azure portal](https://portal.azure.com) の [外部 **ID/ 外部コラボレーション設定] で調整できます**。
 
 -   **[コラボレーションの制限]** で、次のオプションを選択します。
     -   [任意の **ドメインへの招待の** 送信を許可する ( 最も包括的な) ] を選択した場合、他の構成は必要ありません。
@@ -39,7 +39,7 @@ Microsoft マネージド デスクトップアカウントアクセスには、
 
 ## <a name="unlicensed-intune-admin"></a>ライセンスのない Intune 管理者
 
-[ **ライセンスのない管理者へのアクセスを許可する** ] 設定を有効にする必要があります。 この設定を有効にしない場合、Azure 組織にサービスを提供するために Azure ADアクセスしようとするときにエラーが発生する可能性があります。 アクセス範囲は、運用スタッフを含むユーザーに割り当てられた役割によって定義されますので、セキュリティへの影響を気にすることなく、この設定を安全に有効にできます。
+[ **ライセンスのない管理者へのアクセスを許可する** ] 設定を有効にする必要があります。 この設定を有効にしない場合、サービスを提供する組織にアクセスしようとAzure ADが発生する可能性があります。 アクセス範囲は、運用スタッフを含むユーザーに割り当てられた役割によって定義されますので、セキュリティへの影響を気にすることなく、この設定を安全に有効にできます。
 
 この設定を有効にするには、次の手順を実行します。
 
@@ -52,7 +52,7 @@ Microsoft マネージド デスクトップアカウントアクセスには、
 
 詳細については、「ライセンスのない管理者」[を参照Microsoft Intune。](/mem/intune/fundamentals/unlicensed-admins)
 
-## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>インストールの準備を行うMicrosoft マネージド デスクトップ
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Microsoft Managed Desktop の準備をする手順
 
 1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
 2. [準備状況の評価ツール](readiness-assessment-tool.md)を実行します。

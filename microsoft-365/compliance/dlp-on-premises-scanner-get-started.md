@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを設定する
-ms.openlocfilehash: fabe83372822f401fdf8ddd1330bc974dc710fd2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1154a565f286cfafb5f1f03fdefbf3740b6e9907
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787132"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942970"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>データ損失防止のオンプレミス スキャナーの使用を開始する
 
@@ -46,13 +46,31 @@ DLP オンプレミス スキャナーの使用を開始する前に、[Microsof
 
 ### <a name="permissions"></a>アクセス許可
 
-
 Endpoint DLP からのデータは、[アクティビティ エクスプローラー](data-classification-activity-explorer.md)で表示します。 Activity エクスプローラーに権限を付与する役割は4つあります。データへのアクセスに使用するアカウントは、次のいずれかのメンバーでなければなりません。
 
 - グローバル管理者
 - コンプライアンス管理者
 - セキュリティ管理者
 - コンプライアンス データ管理者
+
+#### <a name="roles-and-role-groups-in-preview"></a>プレビュー段階の [役割と役割グループ]
+
+プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
+
+プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+
+- Information Protection 管理者
+- Information Protection アナリスト
+- Information Protection 調査員
+- Information Protection 閲覧者
+
+プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+
+- 情報保護
+- Information Protection レベル
+- Information Protection アナリスト
+- Information Protection 調査担当者
+- Information Protection 閲覧者
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>DLP オンプレミス スキャナーの前提条件
 

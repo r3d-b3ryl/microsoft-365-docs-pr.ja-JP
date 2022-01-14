@@ -2,21 +2,21 @@
 title: 新しいデバイスを検証する
 description: デバイスを注文する前に、各モデルの 1 つを取得してテストします。
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 2b3ba016e5a205ddb6eaccc4df71bdc4ad612085
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 71f9512715caed3ad138df9eeb7d2924eb1eb8e3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364617"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035572"
 ---
 # <a name="validate-new-devices"></a>新しいデバイスを検証する
 
@@ -29,7 +29,7 @@ Microsoft Managed Desktop を初めて使用する場合でも、長時間の購
     - [ユーザー エクスペリエンスをローカライズ](localization.md)
     - [Autopilot と登録ステータス ページの初回実行時エクスペリエンス](esp-first-run.md)
     - [Windows 10 の位置情報サービス](device-location.md)
-    - [アプリコントロールの使用を開始する](get-started-app-control.md)
+    - [アプリ制御の使用を開始する](get-started-app-control.md)
     - [アプリをデバイスに展開する](deploy-apps.md)
 2. 次のエクスペリエンスがエラー、エラー、またはプロンプトなしで動作するように確認します。
     - ネットワークに参加してユーザーがサインインした後の自動パイロット エクスペリエンス

@@ -3,22 +3,22 @@ title: デバイスの状態レポート
 description: デバイスの状態について説明します
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 0dea0293ffd377ba2950f1a37a66d07892612a9d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4071d3a76430dd34776b2d4df3eae2b32e350a11
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150344"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034847"
 ---
 # <a name="device-status-report"></a>デバイスの状態レポート
 
-このレポートは、登録済みのすべてのデバイスの状態を集計して、サービスの使用をMicrosoft マネージド デスクトップします。 過去 28 日間のアクティビティと、デバイスの更新を維持する機能に基づいて、デバイスを分類します。 Windows Update でできるだけ早く更新するには、デバイスをインターネットに接続し、休止や休止を少なくとも 6 時間行う必要はありません。そのうちの 2 つが連続している必要があります。 これらの要件を満たしないデバイスが更新される可能性はあり得るが、それらの要件を満たすデバイスは更新される可能性が最も高い。
+このレポートは、登録済みのすべてのデバイスの状態を集計して、Microsoft Managed Desktop サービスの使用を示します。 過去 28 日間のアクティビティと、デバイスの更新を維持する機能に基づいて、デバイスを分類します。 Windows Update でできるだけ早く更新するには、デバイスをインターネットに接続し、休止や休止を少なくとも 6 時間行う必要はありません。そのうちの 2 つが連続している必要があります。 これらの要件を満たしないデバイスが更新される可能性はあり得るが、それらの要件を満たすデバイスは更新される可能性が最も高い。
 
 :::image type="content" source="../../media/mmd-device-status.png" alt-text="左上にデバイスのアクティビティ状態のドーナツ グラフを表示するレポート、レポートを生成するボタンを使用して右上にフィルターを表示する、および下部に沿った詳細の表を表示する":::
 

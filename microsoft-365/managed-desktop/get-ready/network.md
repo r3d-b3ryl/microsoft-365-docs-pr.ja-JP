@@ -3,21 +3,21 @@ title: Microsoft マネージド デスクトップのネットワーク構成
 description: プロキシと必要なエンドポイントを設定する方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 206dde91faf7a5a1eac300ce753d74ed2024cd51
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 5d1cd56858e1950f16ed62d5dbe2c75338b928d7
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283979"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035188"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのネットワーク構成
 
@@ -80,7 +80,7 @@ Microsoft Teams | \*.teams.skype.com  <br>\*.teams.microsoft.com  <br>teams.micr
 Power BI | maxcdn.bootstrapcdn.com <br>ajax.aspnetcdn.com <br>netdna.bootstrapcdn.com <br>cdn.optimizely.com <br>google-analytics.com <br>\*.mktoresp.com <br>\*.aadcdn.microsoftonline-p.com <br>\*.msecnd.com <br>\*.localytics.com <br>ajax.aspnetcdn.com <br>\*.localytics.com <br>\*.virtualearth.net <br>platform.bing.com <br>powerbi.microsoft.com <br>c.microsoft.com <br>app.powerbi.com <br>\*.powerbi.com <br>dc.services.visualstudio.com <br>support.powerbi.com <br>powerbi.uservoice.com <br>go.microsoft.com <br>c1.microsoft.com <br>\*.azureedge.net |[Power BI &エクスプレス ルート](/power-bi/service-admin-power-bi-expressroute) 
 OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*.onenote.com <br>\*.msecnd.net <br>\*.microsoft.com <br>\*.office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\*.onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*.microsoft.com | [Office 365 の URL および IP アドレスの範囲](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
-## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Microsoft Managed Desktop の準備手順
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Microsoft Managed Desktop の準備をする手順
 
 1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
 2. [準備状況の評価ツール](readiness-assessment-tool.md)を実行します。

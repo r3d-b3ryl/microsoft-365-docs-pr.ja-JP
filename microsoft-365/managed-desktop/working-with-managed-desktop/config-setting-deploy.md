@@ -1,22 +1,22 @@
 ---
-title: 構成可能な設定を展開Microsoft マネージド デスクトップ
-description: 構成可能な設定の変更を展開し、Microsoft マネージド デスクトップ。
-keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント、展開、ステージ展開、構成可能な設定
+title: Microsoft Managed Desktop で構成可能な設定を展開する
+description: Microsoft Managed Desktop で構成可能な設定の変更を展開および追跡します。
+keywords: Microsoft Managed Desktop, Microsoft 365, サービス, ドキュメント, 展開, ステージ展開, 構成可能な設定
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 9a541ccf5a7bcd4197e1b24a2a6667995c08ea7f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4950afb8446eb9b687749fc657a6826bb1eb7768
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177017"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035440"
 ---
-# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>構成可能な設定の展開と追跡 - Microsoft マネージド デスクトップ
+# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>構成可能な設定の展開と追跡 - Microsoft Managed Desktop
 
 設定カテゴリに変更を加え、展開をステージした後、[展開状態] ページでは、グループへの設定の展開を開始できます。 このページには、構成可能な各設定の概要が表示されます。 設定カテゴリを開いて、グループに設定を展開し、これらの展開の進行状況を追跡できます。
 
@@ -29,7 +29,7 @@ ms.locfileid: "60177017"
 展開 | 変更がこのグループに展開されるのを待っています。
 処理中 | 変更は、このグループのアクティブ なデバイスに適用されています。
 完了 | このグループ内のすべてのアクティブ なデバイスで変更が完了しました。
-失敗 | グループ内のアクティブ デバイスの 10% で変更が失敗し、展開が停止しました。<br><br> サポート要求は、展開のトラブルシューティングを行うMicrosoft マネージド デスクトップ操作で自動的に開きます。
+失敗 | グループ内のアクティブ デバイスの 10% で変更が失敗し、展開が停止しました。<br><br> Microsoft Managed Desktop 操作でサポート要求が自動的に開き、展開のトラブルシューティングが行われます。
 元に戻す | この変更は、すべての展開グループに正常に展開された最後の変更に戻されました。
 
 ## <a name="deploy-changes"></a>変更の展開
@@ -39,7 +39,7 @@ ms.locfileid: "60177017"
 **変更を展開するには**
 
 1. サインインして [デバイス [Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)メニュー **に移動** します。
-2. [ファイル] セクションを探Microsoft マネージド デスクトップ、次を選択 **設定。**
+2. [Microsoft 管理デスクトップ] セクションを探し、[デスクトップ] を **設定。**
 3. [ **展開状態]** ワークスペースで、展開する設定を選択し、展開するステージ展開を選択します。
 4. [ **展開] を** 選択して、変更を展開グループの 1 つに展開します。
 
@@ -63,7 +63,7 @@ ms.locfileid: "60177017"
 **変更を元に戻すには**
 
 1. サインインして [デバイス [Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)メニュー **に移動** します。
-2. [ファイル] セクションを探Microsoft マネージド デスクトップ、次を選択 **設定。**
+2. [Microsoft 管理デスクトップ] セクションを探し、[デスクトップ] を **設定。**
 3. [ **展開状態]** ワークスペースで、元に戻す設定を選択し、元に戻すステージ展開を選択します。
 4. [ **この変更を元に戻す必要がある] で、[** 展開を元に **戻す] を選択します**。
 

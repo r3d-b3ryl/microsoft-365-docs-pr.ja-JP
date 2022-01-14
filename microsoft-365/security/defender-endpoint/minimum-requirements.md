@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b48503eddbb0093bc5e022d981fb719cd6f42e47
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 05a3505e3fb77b4286eb87445380713b2831beaf
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941806"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041113"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -97,6 +97,11 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 > Microsoft 以外のWindows 10 Enterprise 2016 LTSBプラットフォームで実行すると、パフォーマンスの問題が発生する可能性があります。
 >
 > 仮想環境の場合は、LTSC 2019 以降Windows 10 Enterprise使用することをお勧めします。
+
+Microsoft Windows オペレーティング システムでコンポーネントが最新の状態である場合、Microsoft Defender for Endpoint のサポートは、それぞれのオペレーティング システムのライフサイクルに従います。 詳細については、「ライフサイクルに関するよく寄せられる [質問」を参照してください](/lifecycle/faq/general-lifecycle)。 通常、新しい機能は、ライフサイクルの終わりに達していないオペレーティング システムでのみ提供されます。 セキュリティ インテリジェンスの更新 (定義とエンジンの更新) と検出ロジックは、少なくとも次の場合まで提供されます。
+
+- サポート [終了日](/lifecycle/products/) (拡張セキュリティ更新プログラム (ESU) プログラムがないオペレーティング システムの場合)。
+- [ESU の終了日 (ESU](/lifecycle/faq/extended-security-updates)プログラムを持つオペレーティング システムの場合)。
 
 
 

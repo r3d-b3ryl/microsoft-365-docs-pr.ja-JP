@@ -3,18 +3,18 @@ title: Microsoft Managed Desktop アプリの要件
 description: 使用する管理ツール
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 29c531599e1122ae596281efbd187081348def6a
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: eeec38806b792ea9799b9359e473d1fd030f4f2a
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587959"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035632"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Managed Desktop アプリの要件
 
@@ -35,7 +35,7 @@ Microsoft Managed Desktop では、デバイスのパフォーマンス、信頼
 |ネットワーク セキュリティ     | 「 [ネットワーク セキュリティ」を参照してください。](security.md#network-security)        |
 |情報セキュリティ     |  「 [情報セキュリティ」を参照してください。](security.md#information-security)       |
 |データ復旧     | OneDrive for Business        |
-|コア生産性     | エンタープライズ向け Microsoft 365 アプリ    |
+|コア生産性     | Microsoft 365 Apps for enterprise    |
 |ブラウザー     | Microsoft Edge        |
 
 

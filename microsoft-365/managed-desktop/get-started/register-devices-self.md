@@ -1,26 +1,26 @@
 ---
 title: 新しいデバイスを自分で登録する
-description: デバイスを自分で登録して、デバイスをユーザーが管理Microsoft マネージド デスクトップ
+description: デバイスを自分で登録して、Microsoft Managed Desktop で管理できるよう
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: b051ea3c1ea04eb90584654389f335ad6ecedefc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 566472128cef48a14aa18de6d9e82a4bc0f2b91c
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213927"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035704"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
-Microsoft マネージド デスクトップ新しいデバイスを操作したり、既に持っている可能性のあるデバイスを再利用することもできます (再イメージ化が必要になります)。 デバイスの登録は、Microsoft マネージド デスクトップポータルMicrosoft エンドポイント マネージャーできます。
+Microsoft Managed Desktop は、新しいデバイスを操作したり、既に持っている可能性のあるデバイスを再利用できます (再イメージ化が必要になります)。 Microsoft Managed Desktop にデバイスを登録するには、Microsoft エンドポイント マネージャーします。
 
 > [!NOTE]
 > パートナーと一緒にデバイスを入手する その場合は、ハードウェア ハッシュの取得について心配する必要はありません。彼らはその世話をします。 パートナーがパートナー センターでユーザーとの関係を確立する [必要があります](https://partner.microsoft.com/dashboard)。 パートナーは、パートナー センターのヘルプ [で詳細を確認できます](/partner-center/request-a-relationship-with-a-customer)。 この関係が確立されると、パートナーはユーザーに代わってデバイスを登録するだけで、それ以上の操作は必要ありません。 詳細を確認する場合、またはパートナーに質問がある場合は、「デバイスを登録するパートナー向け [手順」を参照してください](register-devices-partner.md)。 デバイスが登録された後、イメージの [確認と](#check-the-image) ユーザーへのデバイスの [配信](#deliver-the-device) を続行できます。
@@ -34,13 +34,13 @@ Microsoft マネージド デスクトップ新しいデバイスを操作した
 
 1. [各デバイスのハードウェア ハッシュを取得します。](#obtain-the-hardware-hash)
 2. [ハッシュ データを結合する](#merge-hash-data)
-3. [デバイスを [デバイス] に登録Microsoft マネージド デスクトップ。](#register-devices-by-using-the-admin-portal)
+3. [Microsoft Managed Desktop にデバイスを登録します](#register-devices-by-using-the-admin-portal)。
 4. [画像が正しいか確認してください。](#check-the-image)
 5. [デバイスの配信](#deliver-the-device)
 
 ### <a name="obtain-the-hardware-hash"></a>ハードウェア ハッシュの取得
 
-Microsoft マネージド デスクトップハードウェア ハッシュを参照して、各デバイスを一意に識別します。 この情報を取得するには、次の 3 つのオプションがあります。
+Microsoft Managed Desktop は、ハードウェア ハッシュを参照することによって、各デバイスを一意に識別します。 この情報を取得するには、次の 3 つのオプションがあります。
 
 - ハードウェア ハッシュを含む AutoPilot 登録ファイルを OEM サプライヤーに問い合わせ。
 - 各デバイス[Windows PowerShellスクリプト](#powershell-script-method)を実行し、結果をファイルに収集します。
@@ -81,7 +81,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 
 ### <a name="register-devices-by-using-the-admin-portal"></a>管理者ポータルを使用してデバイスを登録する
 
-[[Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)で、左側 **のナビゲーション ウィンドウ** で [デバイス] を選択します。 メニューの [Microsoft マネージド デスクトップ] セクションを探し、[デバイス] を **選択します**。 [デバイスのMicrosoft マネージド デスクトップ] ワークスペースで、[デバイスの登録]**を** 選択し、新しいデバイスを登録するフライインを開きます。
+[[Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)で、左側 **のナビゲーション ウィンドウ** で [デバイス] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[デバイス] を **選択します**。 [Microsoft Managed Desktop Devices] ワークスペースで、[デバイスの登録] **を** 選択し、新しいデバイスを登録するフライインを開きます。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -102,8 +102,8 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 |---------------|-------------|
 | 登録保留中 | 登録はまだ行っていません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
-| ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft マネージド デスクトップセットアップをガイドしますので、それ以上の準備をする必要はありません。 |
-| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
+| ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft Managed Desktop では、初回セットアップをガイドしますので、それ以上の準備を行う必要はありません。 |
+| Active | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
 | 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  | 
 
 #### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
@@ -118,14 +118,14 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 
 ### <a name="check-the-image"></a>画像を確認する
 
-デバイスがパートナー サプライヤーからMicrosoft マネージド デスクトップ場合、イメージは正しい必要があります。
+デバイスが Microsoft Managed Desktop パートナー サプライヤーから提供されている場合は、イメージが正しい必要があります。
 
 必要に応じて、自分で画像を適用することもできます。 作業を開始するには、使用している Microsoft 担当者に問い合わせ、画像を適用するための場所と手順を提供します。
 
 ### <a name="autopilot-group-tag"></a>Autopilot グループ タグ
 
 管理ポータルを使用してデバイスを登録する場合、パートナー センターを使用してデバイスの登録に記載されているデバイス プロファイルに関連付けられた自動パイロット グループ タグが自動的に [割り当てされます](register-devices-partner.md#register-devices-by-using-partner-center)。
-サービスは、すべてのデバイスMicrosoft マネージド デスクトップ毎日監視し、グループ タグをまだ持ってないデバイスに割り当てします。
+このサービスは、すべての Microsoft Managed Desktop デバイスを毎日監視し、グループ タグをまだ持ってないデバイスに割り当てします。
 
 ### <a name="deliver-the-device"></a>デバイスの配信
 

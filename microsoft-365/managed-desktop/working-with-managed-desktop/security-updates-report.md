@@ -3,18 +3,18 @@ title: Windows セキュリティ更新プログラム レポート
 description: このレポートに表示される情報について説明します。
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 498330ffdf791a0688b9d6bfad432ba5ebea3b2a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: e02c4f47908975ff79c9443c233a700708f93b7a
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935815"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035416"
 ---
 # <a name="windows-security-updates-report"></a>Windows セキュリティ更新プログラム レポート
 

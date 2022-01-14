@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: dlp ポリシーの条件と例外について学ぶ
-ms.openlocfilehash: 4ab7376b234b1f2299723c39a6f9c226d2f40a00
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7c57d3f1f4e6c05cf5fe346440d59e7c5f9daac2
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933481"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041044"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP ポリシーの条件、例外、およびアクション
 
@@ -180,6 +180,7 @@ To configure the sender address location at a DLP rule level, the parameter is _
 |受信者の追加|AddRecipients|First プロパティ: *Field*</br>2 番目のプロパティ: *Addresses*|メッセージの [宛先/Cc/Bcc] フィールドに 1 つ以上の受信者を追加します。 このパラメーターでは、@{<AddToRecipients \| CopyTo \| BlindCopy> To = "emailaddress"} という構文を使用します。|
 |送信者のマネージャーを受信者として追加する|AddRecipients|First プロパティ: *AddedManagerAction*</br>2 番目のプロパティ: *Field*|送信者の上司を指定の受信者タイプ (To、Cc、Bcc) としてメッセージに追加したり、送信者や受信者に通知することなくメッセージを送信者の上司にリダイレクトします。 このアクションは、送信者の Manager 属性が Active Directory で定義されている場合のみ有効です。 このパラメーターは、@{AddManagerAsRecipientType = "<\| Cc \| Bcc>"} という構文を使用します。|
 件名の先頭に付く|PrependSubject|String|メッセージの Subject フィールドの冒頭に指定のテキストを追加します。元の件名のテキストを区別するために、指定されたテキストの最後の文字としてスペースまたはコロン (:) を使用してください。  </br>件名に既にテキストが含まれているメッセージ (返信など) に同じ文字列が追加されるのを防ぐには、"件名に単語が含まれている" (ExceptIfSubjectContainsWords) 例外をルールに追加します。|
+|[件名の変更]|ModifySubject|PswsHashTable | 特定のパターンに一致する件名行からテキストを削除し、別のテキストに置き換える。 以下の例を参照してください。 次の操作を行うことができます: </br>- **件名** のすべての一致を置換テキストに置き換える </br>- **追加** すると、件名のすべての一致が削除され、件名の末尾に置換テキストが挿入されます。 </br>- **すべての一** 致を削除する前に、件名の先頭に置換テキストを挿入します。|
 |HTML 免責事項の適用|ApplyHtmlDisclaimer|First プロパティ: *Text*</br>2 番目のプロパティ: *場所*</br>3 番目のプロパティ: *フォールバック アクション*|指定した HTML 免責事項をメッセージの必要な場所に適用します。</br>このパラメーターでは、@{ Text = " という構文を使用します。Location = <Append \| Prepend>。FallbackAction = <Wrap \| Ignore \| Reject> }|
 |権限Office 365 Message Encryption保護を削除する|RemoveRMSTemplate|該当なし|電子メールOffice 365された暗号化を削除します。|
 |

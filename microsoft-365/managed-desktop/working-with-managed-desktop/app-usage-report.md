@@ -1,22 +1,22 @@
 ---
-title: アプリ使用状況レポート
+title: アプリの使用状況レポート
 description: アプリ使用状況レポートの使用方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d738a90655ce4c24f982d60c4d7c8fc11ad0074c
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 241bb500ae7f89aac175c4b84ebd8d29ff3b6dcd
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364901"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034859"
 ---
-# <a name="app-usage-report"></a>アプリ使用状況レポート
+# <a name="app-usage-report"></a>アプリの使用状況レポート
 
 このレポートは、Microsoft Managed Desktop デバイス全体でアプリケーションがどのように使用されているのか理解するのに役立ちます。 また、アプリケーションの問題が検出された場合にユーザーに対する影響を評価するのに役立つ参照として機能します。 
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 96cce3c715cb282db2ce1718440b13e43f5145b6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5078943e9b2bf158a457d263b2db65e9bfca7659
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702051"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034994"
 ---
 # <a name="communication-compliance-policies"></a>コミュニケーション コンプライアンス ポリシー
 
@@ -40,10 +40,11 @@ Microsoft 365 の組織のコミュニケーション コンプライアンス �
 
 |**領域**|**ポリシー テンプレート**|**詳細**|
 |:-----|:-----|:-----|
-| **不適切なコンテンツ** | 不適切なコンテンツの通信を監視する | - 場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> - 方向: 受信、送信、内部 <br> - レビューの割合: 100% <br> - 条件: Threat、Profanity、Targeted harassment、Adult イメージ、Racy イメージ、Gory イメージ分類子 |
-| **機密情報** | 機密情報の通信を監視する | - 場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> - 方向: 受信、送信、内部 <br> - レビューの割合: 10% <br> - 条件: 機密情報、アウトオブボックス コンテンツ パターン、および種類、ユーザー辞書オプション、1 MB を超える添付ファイル |
-| **規制コンプライアンス** | 金融規制コンプライアンスに関連する情報の通信を監視する | - 場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> - 方向: 受信、送信 <br> - レビューの割合: 10% <br> - 条件: ユーザー辞書オプション、1 MB を超える添付ファイル |
-| **利益相反** | 2 つのグループまたは 2 人のユーザー間の通信を監視して、利益相反を回避する | - 場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> - 方向: 内部 <br> - レビューの割合: 100% <br> - 条件: なし |
+| **不適切なテキスト** | 不適切なテキストを検出する | - 場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> - 方向: 受信、送信、内部 <br> - レビューの割合: 100% <br> - 条件: 脅威、差別 (プレビュー)、およびターゲットハラスメント分類子 |
+| **不適切な画像** | 不適切な画像を検出する | - 場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> - 方向: 受信、送信、内部 <br> - レビューの割合: 100% <br> - 条件: アダルト 画像分類子と Racy 画像分類子 |
+| **機密情報** | 機密情報を監視する | - 場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> - 方向: 受信、送信、内部 <br> - レビューの割合: 10% <br> - 条件: 機密情報、アウトオブボックス コンテンツ パターン、および種類、ユーザー辞書オプション、1 MB を超える添付ファイル |
+| **規制コンプライアンス** | 規制遵守を監視する | - 場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> - 方向: 受信、送信 <br> - レビューの割合: 10% <br> - 条件: ユーザー辞書オプション、1 MB を超える添付ファイル |
+| **利益相反** | 利益相反を監視する | - 場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> - 方向: 内部 <br> - レビューの割合: 100% <br> - 条件: なし |
 
 通信は、ポリシーが作成された時刻から 24 時間ごとにスキャンされます。 たとえば、11:00 AM に不適切なコンテンツ ポリシーを作成すると、ポリシーは毎日午前 11 時に 24 時間ごとに通信コンプライアンス信号を収集します。 ポリシーを編集しても、今回は変更されません。 ポリシーの最後のスキャン日時を表示するには、[ポリシー] ページの[最後のポリシー スキャン] 列に **移動** します。 新しいポリシーを作成した後、最初のポリシー スキャンの日時を表示するには、最大 24 時間かかる場合があります。 前回のスキャンの日時は、ローカル システムのタイム ゾーンに変換されます。
 
@@ -201,7 +202,7 @@ OCR が有効になっているポリシーの保留中のアラートを確認�
 
 > [!IMPORTANT]
 >
-> ユーザー辞書ファイルをインポートする場合、各単語または語句はキャリッジ リターンと個別の行で区切る必要があります。 例:
+> ユーザー辞書ファイルをインポートする場合、各単語または語句はキャリッジ リターンと個別の行で区切る必要があります。 次に例を示します。
 >
 > *banker* <br>
 > *confidential* <br>

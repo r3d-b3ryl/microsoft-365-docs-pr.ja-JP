@@ -3,19 +3,19 @@ title: 準備評価ツールで見つかった問題を修正する
 description: ツールで検出された各問題に対して実行する詳細なアクション
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: d2e055b553e3358107283236d634d9d46d33de4d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: 89815cbfa1e2488e45280fe57da0c69e15aafa69
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163158"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034739"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 

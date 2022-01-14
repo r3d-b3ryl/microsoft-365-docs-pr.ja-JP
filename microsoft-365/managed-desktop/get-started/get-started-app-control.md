@@ -3,33 +3,33 @@ title: アプリ制御の使用を開始する
 description: ''
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 375357e52e7aedf416b4a0d9988da18f39bda5ec
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bafbb32d83f1b9f4381f62b41254f5666d7f3a49
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211527"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034703"
 ---
 # <a name="get-started-with-app-control"></a>アプリ制御の使用を開始する
 
-環境でアプリ制御を有効にする前に、アプリの実装方法と[](../service-description/app-control.md)Microsoft マネージド デスクトップ役割と責任を確認して理解してください。
+環境でアプリ制御を有効にする前に [、Microsoft Managed Desktop](../service-description/app-control.md) がどのようにアプリを実装し、役割と責任を果たしたのか、必ず確認して理解してください。
 
-Microsoft マネージド デスクトップ基本ポリシーを取得するより困難な側面を処理することで、アプリの制御を簡素化できます。 IT 管理者は、テスト リングでアプリをテストし、警告やエラーが発生した場合はログを確認する必要があります。 アプリで除外が必要な場合は、最初に検出したユーザーに応じて、要求をMicrosoft マネージド デスクトップ、または操作を実行できます。
+Microsoft Managed Desktop は、セキュリティで保護された基本ポリシーを取得するより困難な側面に注意を引き付け、アプリの制御を簡素化します。 IT 管理者は、テスト リングでアプリをテストし、警告やエラーが発生した場合はログを確認する必要があります。 アプリで除外が必要な場合は、要求を申請するか、Microsoft Managed Desktop 操作を実行できます (最初に検出したユーザーに応じて)。
 
 ## <a name="initial-deployment-of-apps"></a>アプリの初期展開
 
-アプリを初めて展開する場合、Microsoft マネージド デスクトップの動作を評価する必要があります。 アプリ制御を有効にする正確な手順は、デバイスが環境に既に展開されているかどうかを確認します。
+アプリを初めて展開する場合、Microsoft Managed Desktop は現在の動作を評価する必要があります。 アプリ制御を有効にする正確な手順は、デバイスが環境に既に展開されているかどうかを確認します。
 
 ### <a name="devices-not-yet-in-use"></a>まだ使用されていないデバイス
 
-まだデバイスを使用していない場合は、アプリコントロールを有効にMicrosoft マネージド デスクトップを要求するサービス チケットを開きます。 このスケジュールに従って、運用は展開グループにポリシーを段階的に展開します。
+デバイスがまだ使用されていない場合は、Microsoft Managed Desktop Operations でサービス チケットを開き、アプリコントロールを有効にしてください。 このスケジュールに従って、運用は展開グループにポリシーを段階的に展開します。
 
 |展開グループ  |ポリシーの種類  |Timing  |
 |---------|---------|---------|
@@ -42,9 +42,9 @@ Microsoft マネージド デスクトップ基本ポリシーを取得するよ
 
 ### <a name="devices-already-in-use"></a>既に使用されているデバイス
 
-デバイスが既に 1 つ以上Microsoft マネージド デスクトップ場合は、次の手順を実行します。
+少なくとも 1 つの Microsoft Managed Desktop デバイスが既に使用されている場合は、次の手順を実行します。
 
-1. アプリコントロールを有効にMicrosoft マネージド デスクトップするサービス チケットを開きます。 操作によって、監査ポリシー [がすべてのデバイス](../service-description/app-control.md#audit-policy) に展開されます。
+1. Microsoft Managed Desktop Operations でサービス チケットを開き、アプリコントロールを有効にしてください。 操作によって、監査ポリシー [がすべてのデバイス](../service-description/app-control.md#audit-policy) に展開されます。
 2. [アプリケーションをテストして](../working-with-managed-desktop/work-with-app-control.md#add-a-new-app) 、ブロックされるアプリケーションを確認します。 アプリケーションがブロックされる場合は、署名者要求 [を開きます](../working-with-managed-desktop/work-with-app-control.md#add-or-remove-a-trusted-signer)。 
 3. テストが完了したら (結果が何であれ)、保留中の署名者要求に気を付け、Operations に通知します。 このスケジュールに従って、運用は展開グループにポリシーを段階的に展開します。
 
@@ -57,7 +57,7 @@ Microsoft マネージド デスクトップ基本ポリシーを取得するよ
 
 ロールアウト中はいつでも、別のサービス要求を開き、この展開の一部を一時停止またはロールバックできます。
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft Managed Desktop の使用を開始する手順
 
 1. [管理ポータル](access-admin-portal.md)にアクセスします。
 1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)。

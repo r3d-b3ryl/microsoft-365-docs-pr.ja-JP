@@ -3,29 +3,29 @@ title: ユーザー サポート機能を有効にする
 description: ユーザー サポートの昇格機能とエスカレーション機能を有効にする方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: e8d679eea96c221ee245ac0029ea291436fd84da
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7f0c6283d6e5a2fec722c3051420ea7d52ad3f64
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168400"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034727"
 ---
 # <a name="enable-user-support-features"></a>ユーザー サポート機能を有効にする
 
-独自のユーザー サポートを提供する場合でも、パートナーと一緒に提供する場合でも、サポート プロバイダーが管理者特権のデバイス アクセスを要求したり、必要に応じて Microsoft マネージド デスクトップ に問題をエスカレートしたりするには、次の手順に従います。
+独自のユーザー サポートを提供する場合でも、パートナーと一緒に提供する場合でも、サポート プロバイダーが管理者特権のデバイス アクセスを要求したり、必要に応じて Microsoft Managed Desktop に問題をエスカレートしたりするには、次の手順に従います。
 
-1. ユーザーがアカウントをまだ持ってない場合、ユーザーはデバイスと同じ Azure Active Directory (AAD) ドメインMicrosoft マネージド デスクトップがあります。
-2. 手順 1 のユーザー アカウントを AAD のモダン Workplace **Roles-Supportパートナー** セキュリティ グループに追加します。
+1. まだアカウントを持ってない場合、ユーザーは Microsoft Azure Active Directory デスクトップ デバイスと同Azure Active Directory (AAD) ドメインにアカウントを必要とします。
+2. 手順 1 のユーザー アカウントを、Roles-Support **の** モダン Workplace セキュリティ グループに追加AAD。
 
 <!--when available, add link to downloadable articles at DLC--> 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft Managed Desktop の使用を開始する手順
 
 1. [管理ポータル](access-admin-portal.md)にアクセスします。
 1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)。

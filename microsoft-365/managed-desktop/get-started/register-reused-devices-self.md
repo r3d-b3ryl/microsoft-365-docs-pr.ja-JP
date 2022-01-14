@@ -1,31 +1,31 @@
 ---
 title: 既存のデバイスをj自分で登録する
-description: 再利用済みのデバイスを登録して、ユーザーが自分で管理Microsoft マネージド デスクトップ
+description: 再利用されたデバイスを既に持っている可能性があるデバイスを登録して、Microsoft Managed Desktop で管理できます
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f7e729659cf96845646f3f3c3e8f03c650a244e2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 85c07ed60f095a79eee18a0a0613ca8e1d4539c6
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212715"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034571"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをj自分で登録する
 
 >[!NOTE]
->このトピックでは、既に使用しているデバイスを再利用し、デバイスを既存のデバイスに登録する手順Microsoft マネージド デスクトップ。 新しいデバイスを操作する場合は、「新しいデバイスを自分で登録する」の手順に[Microsoft マネージド デスクトップ](register-devices-self.md)してください。
+>このトピックでは、既に持っているデバイスを再利用し、Microsoft Managed Desktop に登録する手順について説明します。 新しいデバイスを操作する場合は [、「Microsoft Managed Desktop](register-devices-self.md) で新しいデバイスを自分で登録する」の手順に従ってください。
 
 パートナーのプロセスについては、「デバイスを登録 [するパートナー向け手順」に記載されています](register-devices-partner.md)。
 
-Microsoft マネージド デスクトップ新しいデバイスを操作したり、既に持っている可能性のあるデバイスを再利用することもできます (再イメージ化が必要になります)。 デバイスの登録は、Microsoft マネージド デスクトップポータルMicrosoft エンドポイント マネージャーできます。
+Microsoft Managed Desktop は、新しいデバイスを操作したり、既に持っている可能性のあるデバイスを再利用できます (再イメージ化が必要になります)。 Microsoft Managed Desktop にデバイスを登録するには、Microsoft エンドポイント マネージャーします。
 
 ## <a name="prepare-to-register-existing-devices"></a>既存のデバイスを登録する準備
 
@@ -34,13 +34,13 @@ Microsoft マネージド デスクトップ新しいデバイスを操作した
 
 1. [各デバイスのハードウェア ハッシュを取得します。](#obtain-the-hardware-hash)
 2. [ハッシュ データを結合する](#merge-hash-data)
-3. [デバイスを [デバイス] に登録Microsoft マネージド デスクトップ。](#register-devices-by-using-the-admin-portal)
+3. [Microsoft Managed Desktop にデバイスを登録します](#register-devices-by-using-the-admin-portal)。
 4. [画像が正しいか確認してください。](#check-the-image)
 5. [デバイスの配信](#deliver-the-device)
 
 ### <a name="obtain-the-hardware-hash"></a>ハードウェア ハッシュの取得
 
-Microsoft マネージド デスクトップハードウェア ハッシュを参照して、各デバイスを一意に識別します。 既に使用しているデバイスからこの情報を取得するには、次の 4 つのオプションがあります。
+Microsoft Managed Desktop は、ハードウェア ハッシュを参照することによって、各デバイスを一意に識別します。 既に使用しているデバイスからこの情報を取得するには、次の 4 つのオプションがあります。
 
 - ハードウェア ハッシュを含む AutoPilot 登録ファイルを OEM サプライヤーに問い合わせ。
 - で情報を[収集Microsoft Endpoint Configuration Manager。](#microsoft-endpoint-configuration-manager)
@@ -49,7 +49,7 @@ Microsoft マネージド デスクトップハードウェア ハッシュを�
 
 #### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-ユーザーは、Microsoft Endpoint Configuration Managerを使用して、デバイスに登録する既存のデバイスからハードウェア ハッシュを収集Microsoft マネージド デスクトップ。
+Microsoft Managed Desktop にMicrosoft Endpoint Configuration Manager既存のデバイスからハードウェア ハッシュを収集するには、Microsoft 管理デスクトップを使用します。
 
 > [!IMPORTANT]
 > この情報を取得するデバイスは、バージョン 1703 以降Windows 10実行している必要があります。 
@@ -60,7 +60,7 @@ Microsoft マネージド デスクトップハードウェア ハッシュを�
 2. [監視] ワークスペースで、[レポート] ノード **を展開し** 、[レポート] を **展開** し、[ハードウェア **- 全般] ノードを選択** します。 
 3. レポートを実行し **、[Windows情報] をクリックし**、結果を表示します。
 4. レポート ビューアーで、[エクスポート] **アイコンを** 選択し、CSV (コンマ区切り **) オプションを選択** します。
-5. ファイルを保存した後は、データに登録する予定のデバイスに対して結果をフィルター処理し、Microsoft マネージド デスクトップにデータをアップロードするMicrosoft マネージド デスクトップ。 [デバイスMicrosoft エンドポイント マネージャー開き、[デバイス]メニューに移動し、[デバイス] セクションMicrosoft マネージド デスクトップデバイス] を **選択します**。 [+ **デバイスの登録]** を選択すると、フライインが開き、新しいデバイスが登録されます。
+5. ファイルを保存した後、Microsoft Managed Desktop に登録し、データを Microsoft Managed Desktop にアップロードする予定のデバイスに対して結果をフィルター処理する必要があります。 [Microsoft エンドポイント マネージャーを開き、[デバイス]メニューに移動し、[Microsoft Managed Desktop] セクションを探し、[デバイス] を **選択します**。 [+ **デバイスの登録]** を選択すると、フライインが開き、新しいデバイスが登録されます。
 
 
 詳細については [、「管理ポータルを使用してデバイスを登録する](#register-devices-by-using-the-admin-portal) 」を参照してください。
@@ -135,7 +135,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 ## <a name="register-devices-by-using-the-admin-portal"></a>管理者ポータルを使用してデバイスを登録する
 
-[[Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)で、左側 **のナビゲーション ウィンドウ** で [デバイス] を選択します。 メニューの [Microsoft マネージド デスクトップ] セクションを探し、[デバイス] を **選択します**。 [デバイスのMicrosoft マネージド デスクトップ] ワークスペースで、[デバイスの登録]**を** 選択し、新しいデバイスを登録するフライインを開きます。
+[[Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)で、左側 **のナビゲーション ウィンドウ** で [デバイス] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[デバイス] を **選択します**。 [Microsoft Managed Desktop Devices] ワークスペースで、[デバイスの登録] **を** 選択し、新しいデバイスを登録するフライインを開きます。
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -156,8 +156,8 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 |---------------|-------------|
 | 登録保留中 | 登録はまだ行っていません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
-| ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft マネージド デスクトップセットアップをガイドしますので、それ以上の準備をする必要はありません。 |
-| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用している場合も示します。 |
+| ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft Managed Desktop では、初回セットアップをガイドしますので、それ以上の準備を行う必要はありません。 |
+| Active | デバイスがユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用している場合も示します。 |
 | 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  | 
 
 ### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
@@ -172,7 +172,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 ## <a name="check-the-image"></a>画像を確認する
 
-デバイスがパートナー サプライヤーからMicrosoft マネージド デスクトップ場合、イメージは正しい必要があります。
+デバイスが Microsoft Managed Desktop パートナー サプライヤーから提供されている場合は、イメージが正しい必要があります。
 
 必要に応じて、自分で画像を適用することもできます。 作業を開始するには、使用している Microsoft 担当者に問い合わせ、画像を適用するための場所と手順を提供します。
 

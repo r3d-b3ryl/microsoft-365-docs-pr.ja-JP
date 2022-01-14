@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 75a8c5e86d2d07a0b6a33e93029f5d650eef3f52
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: afefa32227750a70c70d2cb8b10ebfda1a2ae08e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283019"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034667"
 ---
 # <a name="get-started-with-communication-compliance"></a>コミュニケーション コンプライアンスの使用を開始する
 
@@ -309,3 +309,5 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
 最初のコミュニケーション コンプライアンス ポリシーを作成する手順を完了すると、24 時間から 48 時間後にアクティビティ インジケーターからアラートを受け取り始めます。 この記事の手順 5 のガイダンスを使用して、必要に応じて追加のポリシーを構成します。
 
 コミュニケーション コンプライアンス アラートについての詳細は、「[コミュニケーション コンプライアンスのアラートを調査し修復する](communication-compliance-investigate-remediate.md)」を参照してください。
+
+最新の通信コンプライアンス更新プログラムを維持するには、[組織の通信コンプライアンス **の新機能]**[を選択](https://compliance.microsoft.com/)します。

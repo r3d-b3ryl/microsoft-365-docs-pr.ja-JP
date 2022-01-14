@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: e3f621b3ab6ec6d095e5ba8687cf06734cfa0170
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 3236c0edc40cf585b5e6c9e207746e066e95cb9c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110009"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942982"
 ---
 # <a name="learn-about-data-classification"></a>データ分類について
 
@@ -67,6 +67,25 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 
 > [!NOTE]
 > ベスト プラクティスとして、Microsoft 365 データ分類へのアクセスを許可するには、常に最小特権の役割を使用します。
+
+#### <a name="roles-and-role-groups-in-preview"></a>プレビュー段階の [役割と役割グループ]
+
+プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
+
+プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+
+- Information Protection 管理者
+- Information Protection アナリスト
+- Information Protection 調査員
+- Information Protection 閲覧者
+
+プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+
+- 情報保護
+- Information Protection レベル
+- Information Protection アナリスト
+- Information Protection 調査担当者
+- Information Protection 閲覧者
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>コンテンツで最も多く使用されている機密情報の種類
 

@@ -1,28 +1,28 @@
 ---
 title: 準拠
-description: この記事では、ユーザーに関連するコンプライアンスMicrosoft マネージド デスクトップ。
+description: この記事では、Microsoft Managed Desktop に関連するコンプライアンス基準の一覧を示します。
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: b2200a649394c750aaaee76ce736934410affa5e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d34807d20f0b203efb3d45b6fe45eddce632e275
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212751"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035078"
 ---
 # <a name="compliance"></a>コンプライアンス
 
-Microsoft は、Microsoft マネージド デスクトップを使用すると、コンプライアンスに関する包括的な一連のサービスを提供します。 この取り組みにより、組織はさまざまなコンプライアンス要件に準拠できます。
+Microsoft Managed Desktop を使用する場合、Microsoft はコンプライアンスに関する包括的な一連のサービスを提供します。 この取り組みにより、組織はさまざまなコンプライアンス要件に準拠できます。
 
 ## <a name="compliance-coverage"></a>コンプライアンス範囲
 
-Microsoft マネージド デスクトップは、次の認定を取得しています。
+Microsoft Managed Desktop は、次の認定を取得しました。
 
 - [ISO 27001 情報セキュリティ管理標準 (ISMS)](/compliance/regulatory/offering-ISO-27001)
 - [ISO 27701 プライバシー情報管理システム (PIMS)](/compliance/regulatory/offering-iso-27701)
@@ -45,7 +45,7 @@ Microsoft マネージド デスクトップは、次の認定を取得してい
 管理要件や技術要件などの関連情報は、サービス信頼ポータル[(STP)](https://servicetrust.microsoft.com/)で、サービスサービスに関するそのような情報の中央リポジトリMicrosoft Cloud Serviceできます。 監査レポート、コンプライアンス証明書などについては、STP の [監査レポート] [セクションから](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) ダウンロードできます。
 
 > [!NOTE]
-> Azure Microsoft マネージド デスクトップ実行される場合、関連するドキュメントには通常、"Microsoft Azure、Dynamics 365、その他のオンライン サービス" などのファイル名があります。 これらのドキュメントでは、通常、カテゴリ "Microsoft マネージド デスクトップ" または "監視 + 管理" のMicrosoft Online Servicesを検索できます。
+> Microsoft Managed Desktop は Azure で実行されるので、関連するドキュメントには通常、"Microsoft Azure、Dynamics 365、その他のオンライン サービス" などのファイル名があります。 これらのドキュメントでは、通常、カテゴリ "Microsoft Online Services" または "監視 + 管理" の下に Microsoft Managed Desktop があります。
 
 ## <a name="shared-responsibility"></a>共有責任
 

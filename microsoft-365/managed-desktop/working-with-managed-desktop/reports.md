@@ -3,18 +3,18 @@ title: レポートを操作する
 description: Microsoft Managed Desktop で利用可能なさまざまなレポート
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 4a0a1d674d14b6569acc07d65ec3f2cc886deeaa
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: bf4338663e25dc68f8555a6cbe090b73f857b894
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364148"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034775"
 ---
 # <a name="work-with-reports"></a>レポートを操作する
 

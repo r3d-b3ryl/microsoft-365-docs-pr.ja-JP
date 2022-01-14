@@ -15,16 +15,16 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: この記事では、サービスの暗号化が顧客キーとどのように機能するのかについてMicrosoft 365。
-ms.openlocfilehash: 7e81c6eb7e6ce6f7ac2ea2f8a61f15084032e955
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 14760bfcb26fa1bf45c54661cbb6fc189bad7d93
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560170"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041092"
 ---
 # <a name="service-encryption-with-customer-key"></a>カスタマー キーによるサービスの暗号化
 
-Microsoft 365、BitLocker と分散キー マネージャー (DKM) を使用して有効になっているベースラインのボリューム レベルの暗号化を提供します。 Microsoft 365コンテンツの暗号化レイヤーが追加されています。 このコンテンツには、オンライン、Exchange Online、Skype for Business、SharePoint、OneDrive for Business、およびMicrosoft Teams。
+Microsoft 365 では、BitLocker と分散キー マネージャー (DKM) を介して有効になっているベースラインのボリューム レベルの暗号化が提供されます。 Microsoft 365コンテンツの暗号化レイヤーが追加されています。 このコンテンツには、オンライン、Exchange Online、Skype for Business、SharePoint、OneDrive for Business、およびMicrosoft Teams。
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>サービスの暗号化、BitLocker、および顧客キーの機能
 

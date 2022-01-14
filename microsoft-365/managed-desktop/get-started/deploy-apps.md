@@ -3,18 +3,18 @@ title: アプリをデバイスに展開する
 description: Microsoft Managed Desktop デバイスへのアプリの追加と展開に関する情報。
 keywords: Microsoft Managed Desktop、Microsoft 365、サービス、ドキュメント、アプリ、line-of-business アプリ、LOB アプリ
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 15b41681d94d8f33176d140ebc00cc74319e69ff
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: ab4f1719d03cb3bc08a265611a45544762c2de96
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334503"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034895"
 ---
 # <a name="deploy-apps-to-devices"></a>アプリをデバイスに展開する
 Microsoft Managed Desktop へのオンボードの一部には、ユーザーのデバイスへのアプリの追加と展開が含まれます。 Microsoft Managed Desktop ポータルを使用すると、アプリを追加して展開できます。 

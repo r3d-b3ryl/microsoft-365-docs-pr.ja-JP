@@ -3,18 +3,18 @@ title: 共有デバイス
 description: 共有デバイス モードの使用方法と使用時間
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 6b022551db4b3ca759ffb6d1f9eae184b64e0683
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: fd0eae34c5ca48168587a3e495d34ab329cb05a3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756202"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034535"
 ---
 # <a name="shared-devices"></a>共有デバイス
 
@@ -57,7 +57,7 @@ Microsoft Managed Desktop への登録時に共有デバイス モードを使�
 |デバイス プロファイル  |グループ タグ (標準モード)  |グループ タグ (共有デバイス モード)  |
 |---------|---------|---------|
 |機密性の高い日付 | Microsoft365Managed_SensitiveData        |  Microsoft365Managed_SensitiveData-Shared       |
-| Power User         | Microsoft365Managed_PowerUser        | サポート対象外        |
+| Power User         | Microsoft365Managed_PowerUser        | 非サポート        |
 |Standard     | Microsoft365Managed_Standard        | Microsoft365Managed_Standard-Shared  |
 
 ## <a name="consequences-of-shared-device-mode"></a>共有デバイス モードの結果
@@ -79,7 +79,7 @@ Microsoft Managed Desktop では [、SharedPC](/mem/intune/configuration/shared-
 
 共有デバイス モードのデバイスでは、ドメインに参加しているアカウントのみを許可します。 デバイスにゲスト アカウントが必要な場合は、変更要求[](../working-with-managed-desktop/admin-support.md)を送信して有効にできます。
 
-### <a name="microsoft-365-apps-for-enterprise"></a>エンタープライズ向け Microsoft 365 アプリ
+### <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
 [Microsoft 365 Apps for enterprise、](/microsoft-365/managed-desktop/get-started/m365-apps)特定のユーザーがそれらのアプリを同時に 5 つのデバイスにのみインストールできます。 共有デバイス モードでは、アプリは制限にカウントされませんので、デバイス間のローミング中に使用できます。 アプリケーションの展開と更新Microsoft 365 Apps for enterprise通常どおり機能します。
 

@@ -20,12 +20,12 @@ description: 管理者がユーザーの回復可能なアイテム フォルダ
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 89022e39aef17609774c90696e7bab54e66a95e0
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: c349166477b610e48fd3a1b63c27d4dd4188012c
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421656"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041068"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>保留中のクラウド ベースのメールボックスの 回復可能なアイテム フォルダーのアイテムを削除する
 
@@ -297,16 +297,14 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 
    - **削除 :** 削除済みアイテムの保持期間が経過していない、削除済みアイテムが含まれます。 ユーザーは、このサブフォルダーの [削除済みアイテムの回復] ツールを使用して、このサブフォルダーから削除済みアイテムを回復Outlook。
 
-   - **削除 :** 削除済みアイテムの保持期間が経過した、ハード削除されたアイテムが含まれます。 ユーザーは、回復可能なアイテム フォルダーからアイテムを削除することで、アイテムをハード削除することもできます。 メールボックスが保持されている場合、ハード削除されたアイテムは保持されます。 このサブフォルダーはエンド ユーザーには表示されません。
-
    - **DiscoveryHolds**: 電子情報開示ホールドまたはアイテム保持ポリシーによって保持されている、ハード削除されたアイテムが含まれます。 このサブフォルダーはエンド ユーザーには表示されません。
 
    - **SubstrateHolds**: 保持ポリシーまたは他の種類の保留によって保持されている Teams および他のクラウドベースのアプリからのハード削除されたアイテムが含まれます。 このサブフォルダーはエンド ユーザーには表示されません。
 
-3. **New-ComplianceSearch** コマンドレット (セキュリティ & コンプライアンス センター PowerShell) を使用するか、コンプライアンス センターのコンテンツ検索ツールを使用して、ターゲット ユーザーの回復可能なアイテム フォルダーからアイテムを返すコンテンツ検索を作成します。 これを行うには、検索するサブフォルダーの検索クエリに FolderId を含める必要があります。 たとえば、次のクエリは、Purges サブフォルダーと eDiscoveryHolds サブフォルダー内のすべてのメッセージを返します。
+3. **New-ComplianceSearch** コマンドレット (セキュリティ & コンプライアンス センター PowerShell) を使用するか、コンプライアンス センターのコンテンツ検索ツールを使用して、ターゲット ユーザーの回復可能なアイテム フォルダーからアイテムを返すコンテンツ検索を作成します。 これを行うには、検索するサブフォルダーの検索クエリに FolderId を含める必要があります。 たとえば、次のクエリは、削除サブフォルダーと eDiscoveryHolds サブフォルダー内のすべてのメッセージを返します。
 
    ```text
-   folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
+   folderid:<folder ID of Deletions subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
    フォルダー ID プロパティを使用するコンテンツ検索の実行の詳細と例については、「フォルダー ID を使用する」または「対象となるコレクションを実行する」 [を参照してください](use-content-search-for-targeted-collections.md#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection)。
@@ -348,7 +346,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>手順 6: メールボックスを以前の状態に戻す
 
-最後の手順では、メールボックスを以前の構成に戻します。 つまり、手順 2 で変更したプロパティをリセットし、手順 3 で削除した保留リストを再適用します。 これには、次の内容が含まれます。
+最後の手順では、メールボックスを以前の構成に戻します。 つまり、手順 2 で変更したプロパティをリセットし、手順 3 で削除した保留リストを再適用します。 これには以下が含まれます。
   
 - 削除済みアイテムの保持期間を以前の値に戻す。 または、この設定を 30 日に設定したままにしておき、Exchange Online。
 

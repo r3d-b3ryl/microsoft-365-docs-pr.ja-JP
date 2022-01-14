@@ -31,8 +31,8 @@ productDirectory:
       url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701'
     - title: パートナー ウェビナー シリーズに参加
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: Microsoft Defender for Business-a 新しいエンドポイント セキュリティ ソリューション、およびパートナーの価値と利点について説明します。
-      url: 'https://aka.ms/DefenderforBusinessWebinar'
+      summary: Microsoft 365 Business Premium、Microsoft Defender for Business、および Microsoft 365 Lighthouse を使用して、アップセルを増やし、ビジネスを成長Microsoft 365 Lighthouse。
+      url: 'https://aka.ms/M365MDBseries'
 conceptualContent:
   items:
     - title: Microsoft 365 Business Premium とは

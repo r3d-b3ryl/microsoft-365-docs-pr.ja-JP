@@ -3,32 +3,32 @@ title: Autopilot と登録ステータス ページの初回実行時エクス�
 description: ESP エクスペリエンス、使用する設定、および構成の変更を展開する方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8c73ff558165a370e5709a1e43482d689dd7953d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4393478ca787f24d22f44cfc426bc2bcf7157f9e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178613"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034835"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Autopilot と登録ステータス ページの初回実行時エクスペリエンス
 
-Microsoft マネージド デスクトップ[は、Windows](/windows/deployment/windows-autopilot/windows-autopilot)と Microsoft Intuneの登録状態ページ[(ESP)](/windows/deployment/windows-autopilot/enrollment-status)の両方を使用して、可能な限り最高の初回実行エクスペリエンスをユーザーに提供します。
+Microsoft Managed Desktop は、Windows [Autopilot](/windows/deployment/windows-autopilot/windows-autopilot)と Microsoft Intune の登録状態ページ[(ESP)](/windows/deployment/windows-autopilot/enrollment-status)の両方を使用して、ユーザーに可能な限り最高の初回実行エクスペリエンスを提供します。
 
 ## <a name="initial-deployment"></a>初期展開
 
-ESP エクスペリエンスを提供するには、デバイスをサービスに登録Microsoft マネージド デスクトップがあります。 登録の詳細については、「新[](../get-started/register-devices-self.md)しいデバイスを自分で登録する」または「デバイスを登録する[パートナー向け手順」を参照してください](../get-started/register-devices-partner.md)。
-事前プロビジョニングされた展開の登録状態ページと自動パイロットは、既定で Microsoft マネージド デスクトップ。
+ESP エクスペリエンスを提供するには、Microsoft Managed Desktop サービスにデバイスを登録する必要があります。 登録の詳細については、「新[](../get-started/register-devices-self.md)しいデバイスを自分で登録する」または「デバイスを登録する[パートナー向け手順」を参照してください](../get-started/register-devices-partner.md)。
+事前プロビジョニングされた展開の登録状態ページと自動パイロットは、Microsoft Managed Desktop で既定で有効になっています。
 
 ## <a name="autopilot-profile-settings"></a>Autopilot プロファイルの設定
 
-Microsoft マネージド デスクトップユーザーのデバイスに使用される Autopilot プロファイルで次の設定を使用します。
+Microsoft Managed Desktop では、ユーザーのデバイスで使用される Autopilot プロファイルで次の設定を使用します。
 
 <br>
 
@@ -37,7 +37,7 @@ Microsoft マネージド デスクトップユーザーのデバイスに使用
 |設定|値|
 |---|---|
 |展開モード|ユーザー 駆動型|
-|Azure ADに参加する|Azure AD参加|
+|[次に参加Azure AD]|Azure AD 参加済み|
 |言語 (地域)|ユーザーの選択|
 |キーボードを自動的に構成する|いいえ|
 |Microsoft ソフトウェア ライセンス条項|非表示|
@@ -51,7 +51,7 @@ Microsoft マネージド デスクトップユーザーのデバイスに使用
 
 ## <a name="enrollment-status-page-settings"></a>登録状態ページの設定
 
-Microsoft マネージド デスクトップは、次の設定を [登録状態ページ] エクスペリエンスに使用します。
+Microsoft Managed Desktop では、登録状態ページエクスペリエンスに次の設定を使用します。
 
 <br>
 
@@ -60,14 +60,14 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 |設定|値|
 |---|---|
 |アプリとプロファイルの構成の進行状況を表示する|はい|
-|インストール時間が指定した分数より長い場合にエラーを表示する|60|
-|制限時間エラーが発生した場合にカスタム メッセージを表示する|いいえ|
+|インストールに指定した分数を超える時間がかかる場合にエラーを表示する|60|
+|時間制限エラーの発生時にカスタム メッセージを表示する|いいえ|
 |インストール エラーに関するログの収集をユーザーに許可する|はい|
-|ページを既定のエクスペリエンス (OOBE) によってプロビジョニングされたデバイスにのみ表示する|はい|
+|out-of-box experience (OOBE) によってプロビジョニングされたデバイスにのみページを表示する|はい|
 |すべてのアプリとプロファイルがインストールされるまでデバイスの使用をブロックする|はい|
-|インストール エラーが発生した場合、ユーザーにデバイスのリセットを許可する|はい|
-|インストール エラーが発生した場合、ユーザーにデバイスの使用を許可する|はい|
-|ユーザー/デバイスに割り当てられている場合、これらの必須アプリがインストールされるまでデバイスの使用をブロックする|モダン ワークプレース - 時間の修正|モダン ワークプレース - クライアント ライブラリ|
+|インストール エラーが発生した場合にデバイスのリセットをユーザーに許可する|はい|
+|インストール エラーが発生した場合にデバイスの使用をユーザーに許可する|はい|
+|これらの必要なアプリがユーザーまたはデバイスに割り当てられている場合、それらがインストールされるまでデバイスの使用をブロックします|モダン ワークプレース - 時間の修正|モダン ワークプレース - クライアント ライブラリ|
 
 
 登録状態ページのエクスペリエンスは、3 つのフェーズで発生します。 詳細については、「登録状態 [ページの追跡情報」を参照してください](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)。
@@ -75,7 +75,7 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 エクスペリエンスは次のように進みます。
 
 1. 自動パイロット エクスペリエンスが開始され、ユーザーは資格情報を入力します。
-2. デバイスが [登録状態] ページを開き、[デバイスの準備] フェーズと [デバイスセットアップ] フェーズに進みます。 ユーザー ESP が無効になっているため、3 番目の手順 (アカウントのセットアップ) は現在、Microsoft マネージド デスクトップ構成でスキップされています。 デバイスが再起動します。
+2. デバイスが [登録状態] ページを開き、[デバイスの準備] フェーズと [デバイスセットアップ] フェーズに進みます。 3 番目の手順 (アカウントのセットアップ) *は、* ユーザー ESP が無効になっているため、Microsoft Managed Desktop 構成では現在スキップされています。 デバイスが再起動します。
 3. 再起動後、デバイスは他のユーザー Windowsサインイン ページを **開きます**。
 4. ユーザーが資格情報を再度入力すると、デスクトップが開きます。
 
@@ -88,8 +88,8 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 ## <a name="additional-prerequisites-for-autopilot-for-pre-provisioned-deployment"></a>事前プロビジョニングされた展開のための Autopilot のその他の前提条件
 
 - デバイスに有線ネットワーク接続が必要です。
-- 2020 年 8 月より前に Microsoft マネージド デスクトップポータルを使用して登録されているデバイスがある場合は、登録を取りやめて再度登録します。
-- デバイスには、2020 年 11 月の累積的な更新プログラム[19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3)または[20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e)を含むファクトリ イメージが必要です。または最新の Microsoft マネージド デスクトップ イメージでイメージを再作成する必要があります。
+- 2020 年 8 月より前に Microsoft Managed Desktop ポータルを使用して登録されたデバイスがある場合は、登録を取りやめて、もう一度登録してください。
+- デバイスには、2020 年 11 月の累積的な更新プログラム [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) または [20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) を含むファクトリ イメージが必要です。または最新の Microsoft Managed Desktop イメージでイメージを再作成する必要があります。
 - 物理デバイスは、TPM 2.0 とデバイス構成証明をサポートしている必要があります。 仮想マシンはサポートされていません。 事前プロビジョニング プロセスでは、Windows自動パイロットの自己展開機能が使用されます。そのため、TPM 2.0 が必要です。 また、TPM 構成証明プロセスでは、TPM プロバイダーごとに一意の HTTPS URL のセットにアクセスする必要があります。 詳細については、「Autopilot の自己展開モード」および「Autopilot の事前プロビジョニングされた展開」のエントリを参照Windows[してください。](/mem/autopilot/networking-requirements#tpm)
 
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>事前プロビジョニングされた展開用の Autopilot の一連のイベント
@@ -99,7 +99,7 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 3. IT 管理者は、自動パイロット Windowsを選択し、[続行] を **選択します**。 [自動操縦Windows画面で、デバイスに関する情報が表示されます。
 4. IT 管理者が [ **プロビジョニング] を選択** してプロビジョニング プロセスを開始します。
 5. デバイスは ESP を開始し、デバイスの準備とセットアップのフェーズを実行します。 デバイスのセットアップ フェーズでは、アプリのインストール **x が表示** されます (ESP プロファイルの正確な構成に応じて)。
-6. ユーザー ESP を無効にしたので、アカウントのセットアップ 手順は現在、Microsoft マネージド デスクトップ構成でスキップされます。
+6. ユーザー ESP を無効にしたので、アカウントのセットアップ 手順は現在 Microsoft Managed Desktop 構成ではスキップされています。
 7. デバイスが再起動します。
 
 再起動すると、デバイスに緑色の状態画面が表示されます。[再シール] ボタン **が表示** されます。
@@ -112,7 +112,7 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 
 ## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>自動操縦と登録の状態ページの設定に変更する
 
-ユーザーが使用するセットアップMicrosoft マネージド デスクトップニーズと完全に一致しない場合は、管理ポータルを使用してサポート チケットを[ファイルできます](https://portal.azure.com/)。 必要な構成の種類の例を次に示します。
+Microsoft Managed Desktop で使用されるセットアップがニーズと完全に一致しない場合は、管理ポータルからサポート チケットを [ファイルできます](https://portal.azure.com/)。 必要な構成の種類の例を次に示します。
 
 ### <a name="autopilot-settings-change"></a>自動操縦設定の変更
 
@@ -133,7 +133,7 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 - 理想的には、アプリには依存関係を持つ必要があります。 依存関係が必要 *なアプリがある* 場合は、ESP 評価の一環としてアプリを構成、テスト、検証してください。
 - Microsoft Teams ESP に含めません。
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft Managed Desktop の使用を開始する手順
 
 1. [管理ポータル](access-admin-portal.md)にアクセスします。
 1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)。

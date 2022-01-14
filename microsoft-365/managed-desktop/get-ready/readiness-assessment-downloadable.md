@@ -3,32 +3,32 @@ title: ダウンロード可能な準備状況の評価チェック
 description: 必要なエンドポイントを含むデバイスとネットワークの設定を確認する
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 57739b657f3aa296b92b67c16b7b7c5c3628e8b9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 126819ac8d08841165c94503ddf1d3feb72e91ba
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152444"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035164"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>ダウンロード可能な準備状況の評価チェック
 
-デバイスを使用してMicrosoft マネージド デスクトップ、ハードウェアと設定に関する特定の要件を満たす必要があります。 また、各デバイスが主要なエンドポイントに到達できる必要があります。 このツールをダウンロードして実行して、HTML レポートを取得し、結果を表示し、アクションを実行します。 ツールとサポート ファイルをダウンロードし、アプリに登録する各デバイスで手動で実行する必要Microsoft マネージド デスクトップ。
+Microsoft Managed Desktop とうまく機能するには、デバイスがハードウェアと設定に関する特定の要件を満たしている必要があります。 また、各デバイスが主要なエンドポイントに到達できる必要があります。 このツールをダウンロードして実行して、HTML レポートを取得し、結果を表示し、アクションを実行します。 ツールとサポート ファイルをダウンロードし、Microsoft Managed Desktop に登録する各デバイスで手動で実行する必要があります。
 
 チェックごとに、ツールは次の 3 つの結果のいずれかを報告します。
 
 
 |結果  |意味  |
 |---------|---------|
-|準備完了     | 登録を完了する前に、アクションは必要ありません。        |
-|アドバイザリ    | 登録とユーザーの最適なエクスペリエンスを得るには、ツールの手順に従います。 登録 *は* 完了できますが、最初のデバイスを展開する前に、これらの問題を修正する必要があります。        |
-|使用不可能 | *これらの問題を* 解決しない場合、登録は失敗します。 ツールの手順に従って解決します。        |
+|準備完了     | 登録を完了する前にアクションは必要ありません。        |
+|アドバイザリ    | 登録とユーザーにとって最高のエクスペリエンスを得るには、ツールの手順に従ってください。 登録を完了することは *できます* が、最初のデバイスを展開する前にこれらの問題を修正する必要があります。        |
+|使用不可能 | これらの問題を修正しないと、*登録は失敗します*。 ツールの手順に従って解決します。        |
 
 ## <a name="obtain-the-checker"></a>チェッカーを取得する
 
@@ -53,13 +53,13 @@ ms.locfileid: "60152444"
 
 ### <a name="hardware"></a>ハードウェア
 
-デバイスがデバイスを使用するには、特定のハードウェア要件を満たすMicrosoft マネージド デスクトップ。 詳細については、「デバイス要件 [」を参照してください](../service-description/device-list.md)。
+Microsoft Managed Desktop を使用するには、デバイスが特定のハードウェア要件を満たしている必要があります。 詳細については、「デバイス要件 [」を参照してください](../service-description/device-list.md)。
 
-デバイスがチェックに失敗した場合は、デバイスと互換性Microsoft マネージド デスクトップ。
+デバイスがチェックに失敗した場合、Microsoft Managed Desktop と互換性がありません。
 
 ### <a name="network-endpoints"></a>ネットワーク エンドポイント
 
-デバイスは、多くの場合、複数の[主要な](network.md)エンドポイントにアクセスして、Microsoft マネージド デスクトップ。
+デバイスは、Microsoft Managed Desktop [で動作](network.md) するいくつかの主要なエンドポイントに多く到達できます。
 
 ツールが [準備完了] **の結果を** 報告する場合は、詳細なレポートを参照して、到達不能だったエンドポイントを確認します。 その後、ファイアウォールまたは他のネットワーク設定を調整して、それらのエンドポイントに到達可能にしてください。
 
@@ -71,21 +71,21 @@ ms.locfileid: "60152444"
 
 #### <a name="lan-profiles"></a>LAN プロファイル
 
-アドバイザリ **の結果** は、証明書とプロファイルが適切に動作する必要がある LAN を持っているという意味です。 詳細については、「証明書とネットワーク プロファイルを準備する」[を参照Microsoft マネージド デスクトップ。](certs-wifi-lan.md)
+アドバイザリ **の結果** は、証明書とプロファイルが適切に動作する必要がある LAN を持っているという意味です。 詳細については、「[Microsoft Managed Desktop の証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)」を参照してください。
 
 #### <a name="vpn-profiles"></a>VPN プロファイル
 
-アドバイザリ **の結果** は、仮想プライベート ネットワーク (VPN) を使用しているという意味です。 サーバーに統合された証明書を展開する VPN プロファイルをMicrosoft Intune。 詳細については、「証明書とネットワーク プロファイルを準備する」[を参照Microsoft マネージド デスクトップ。](certs-wifi-lan.md)
+アドバイザリ **の結果** は、仮想プライベート ネットワーク (VPN) を使用しているという意味です。 サーバーに統合された証明書を展開する VPN プロファイルをMicrosoft Intune。 詳細については、「[Microsoft Managed Desktop の証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)」を参照してください。
 
 #### <a name="mapped-drives"></a>マップされたドライブ
 
-アドバイザリ **の結果** は、マップされたドライブがいくつかあるという意味で、推奨されません。 詳細については、「マップされたドライブの[準備」を参照Microsoft マネージド デスクトップ。](mapped-drives.md)
+アドバイザリ **の結果** は、マップされたドライブがいくつかあるという意味で、推奨されません。 詳細については、「マップされたドライブ [を Microsoft Managed Desktop 用に準備する」を参照してください](mapped-drives.md)。
 
 #### <a name="print-queues"></a>印刷キュー
 
-アドバイザリ **の結果** は、未処理の印刷キューがいくつかあるという意味で、推奨されません。 1 つの解決策は、クラウド印刷を使用する方法です。 詳細については、「印刷リソースの[準備」を参照Microsoft マネージド デスクトップ。](printing.md)
+アドバイザリ **の結果** は、未処理の印刷キューがいくつかあるという意味で、推奨されません。 1 つの解決策は、クラウド印刷を使用する方法です。 詳細については [、「Microsoft Managed Desktop の印刷リソースを準備する」を参照してください](printing.md)。
 
 #### <a name="proxies"></a>プロキシ
 
-アドバイザリ **の結果** は、プロキシ サーバーが使用されているという意味です。 詳細については、「ネットワーク構成 for [Microsoft マネージド デスクトップ」 を参照してください](network.md)。
+アドバイザリ **の結果** は、プロキシ サーバーが使用されているという意味です。 詳細については [、「Microsoft Managed Desktop のネットワーク構成」を参照してください](network.md)。
 

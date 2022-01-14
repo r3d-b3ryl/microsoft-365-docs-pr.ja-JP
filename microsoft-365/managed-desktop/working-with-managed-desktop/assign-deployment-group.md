@@ -3,29 +3,29 @@ title: 展開グループへのデバイスの割り当て
 description: デバイスを配置する展開グループを指定する方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 88445e3ce29084de6141930d36bbdc7f4b2e247d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 227bb532331f2636c06be7929c25938e71905d92
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166636"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035452"
 ---
 # <a name="assign-devices-to-a-deployment-group"></a>展開グループへのデバイスの割り当て
 
-Microsoft マネージド デスクトップさまざまな展開グループにデバイスを割り当てることができますが、管理ポータルを使用して、デバイスがデバイスに割り当てられているグループを指定または変更できます。 デバイスの登録後、またはユーザーが登録した後で割り当てを変更します。
+Microsoft Managed Desktop では、さまざまな展開グループにデバイスが割り当てられますが、管理ポータルを使用して、デバイスがデバイスに割り当てられているグループを指定または変更できます。 デバイスの登録後、またはユーザーが登録した後で割り当てを変更します。
 
 > [!IMPORTANT]
 > 割り当てを変更すると、そのグループに固有のポリシーがデバイスに適用されます。 この変更により、最新バージョンの Windows 10 (新機能や品質更新プログラムを含む) がインストールされる場合があります。 最初は少数のデバイスを移動してから、結果のユーザー エクスペリエンスを確認してください。 特定の更新プログラムがデバイスを再起動します。 割り当てる適切なデバイスが選択されているのをもう一度確認します。 割り当てを有効にするには、最大 24 時間かかる場合があります。
 
 展開グループにデバイスを割り当てるには、次の手順を実行します。 別のデバイスを別のグループに移動する場合は、グループごとにこれらの手順を繰り返します。
 
-1. [Microsoft エンドポイント マネージャー] で、左側 **のウィンドウで**[デバイス] を選択します。 [デバイス]**セクションMicrosoft マネージド デスクトップ[** デバイス] を **選択します**。
+1. [Microsoft エンドポイント マネージャー] で、左側 **のウィンドウで**[デバイス] を選択します。 [Microsoft **Managed Desktop] セクションで、[** デバイス] を **選択します**。
 2. 割り当てるデバイスを選択します。 選択したデバイスはすべて、指定したグループに割り当てられます。
 3. メニューから **[デバイスの操作** ] を選択します。
 4. [デバイス **をグループに割り当てる] を選択します**。 フライインが開きます。

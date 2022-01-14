@@ -1,21 +1,21 @@
 ---
 title: Microsoft Teams
 description: デバイスTeamsインストールされ、その後更新される方法
-keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント、アプリ、line-of-business アプリ、LOB アプリ
+keywords: Microsoft Managed Desktop、Microsoft 365、サービス、ドキュメント、アプリ、line-of-business アプリ、LOB アプリ
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 525dc7b89e302cdc076336daa7a98c6317855e73
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3ea75323b56941b47e8bf9826c0bfeeb7d8983f9
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212739"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034799"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -23,11 +23,11 @@ ms.locfileid: "60212739"
 
 ## <a name="initial-deployment"></a>初期展開
 
-ほとんどのハードウェア ベンダーは、イメージの一部として Teams をまだ含めないので、Microsoft マネージド デスクトップ Teams を使用してデバイスにMicrosoft Intune。 すべての管理対象デバイスには、Teams .msi[](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works)パッケージがインストールされ、デバイスにサインインしているすべてのユーザーがMicrosoft Teams準備ができていることを確認します。 パッケージの最初のインストールが完了すると、Teams自動的に開始され、デスクトップにショートカットが追加されます。
+ほとんどのハードウェア ベンダーは、イメージの一部として Teams をまだ含めないので、Microsoft Managed Desktop は Teams を使用してデバイスにMicrosoft Intune。 すべての管理対象デバイスには、Teams .msi[](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works)パッケージがインストールされ、デバイスにサインインしているすべてのユーザーがMicrosoft Teams準備ができていることを確認します。 パッケージの最初のインストールが完了すると、Teams自動的に開始され、デスクトップにショートカットが追加されます。
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune変更
 
-Microsoft マネージド デスクトップ 2 つのアプリケーションを Azure AD組織に追加Microsoft Teams。 デバイスに応じて、64 ビットまたは 32 ビットのクライアントに展開されます。  
+Microsoft Managed Desktop は、ユーザーの組織に 2 つのアプリケーションAzure AD追加して、Microsoft Teams。 デバイスに応じて、64 ビットまたは 32 ビットのクライアントに展開されます。  
 
 - モダン ワークプレース – Teams ワイド インストーラー x64  
 - モダン ワークプレース – Teams全体インストーラー x32
@@ -36,7 +36,7 @@ Microsoft マネージド デスクトップ 2 つのアプリケーションを
 
 Teamsから別の更新パスに従いMicrosoft 365 Apps for enterpriseデスクトップ クライアントは自動的に更新します。 Teams、数時間ごとに更新プログラムをチェックし、ダウンロードし、コンピューターがアイドル状態になるのを待機してから、更新プログラムをサイレント インストールします。  
 
-製品グループTeams管理者は更新プログラムを制御できないので、Microsoft マネージド デスクトップ更新プログラム の標準チャネル[を使用します](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating)。
+製品グループTeams管理者は更新プログラムを制御できないので、Microsoft Managed Desktop は標準の自動更新チャネル[を使用します](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating)。
 
 ### <a name="manually-updating-teams"></a>手動で更新Teams
 
