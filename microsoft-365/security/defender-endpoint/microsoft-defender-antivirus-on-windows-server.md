@@ -13,14 +13,14 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 01/14/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6632604e426d6dad5dc7c272d343c2d6b8b59aac
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f0562040a98d2efd5cdc683dd322363c2057c991
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940412"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049326"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -125,6 +125,12 @@ sc query Windefend
 ```
 
 `sc query` コマンドは、Microsoft Defender ウイルス対策 サービスに関する情報を返します。 Microsoft Defender ウイルス対策を実行中は、`STATE` の値に `RUNNING`が表示されます。
+
+実行されていないすべてのサービスを表示するには、次の Powershell コマンドレットを実行します。
+
+```console
+sc query state= all
+```
 
 ## <a name="update-antimalware-security-intelligence"></a>マルウェア対策セキュリティ インテリジェンスを更新する
 

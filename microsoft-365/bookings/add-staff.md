@@ -8,18 +8,18 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: このページを使用して、スタッフ リストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。
-ms.openlocfilehash: 0c9d376889d99ba9d689e30f4444f305fab22ad9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 03ebf5c21e40d53e87067866e05fc37c2c255331
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933673"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049362"
 ---
 # <a name="add-staff-to-bookings"></a>Bookings にスタッフを追加する
 
 Bookings の [スタッフ] ページでは、スタッフリストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。 また、ここから各スタッフの勤務時間を設定できます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 Bookings は、Microsoft 365の機能ですが、すべてのスタッフがアカウントを持つ必要Microsoft 365ではありません。 予約を受け取り、変更をスケジュールするには、すべてのスタッフが有効な電子メール アドレスを持っている必要があります。
 
@@ -68,7 +68,7 @@ Bookings は、Microsoft 365の機能ですが、すべてのスタッフがア�
     このボックスの選択を解除すると、スタッフに予約できる時間をさらに制限するカスタム時間を指定できます。 これは、スタッフメンバーが火曜日と水曜日にしかサイトにいない場合や、1 種類の予定に対して朝を、その他の種類の午後に使用する場合に役立ちます。
 
     > [!NOTE]
-    > スタッフ ページに追加した最初の 100 人のスタッフ メンバーは、サービスにスタッフ メンバーを割り当てると表示されます。
+    > Bookings は、Bookings カレンダーで最大 100 人のスタッフをサポートします。
 
 ## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Bookings ユーザーを、Bookings のスタッフとして追加せずにスーパー ユーザーにする
 

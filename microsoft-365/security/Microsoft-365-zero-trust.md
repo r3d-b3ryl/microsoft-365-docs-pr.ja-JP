@@ -15,17 +15,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- deploy zero trust
-- zero trust strategy
-- M365-security-compliance
 - m365solution-zerotrust
 - m365solution-overview
-ms.openlocfilehash: 88abdf543ebb82e89470a0d6ac0bfe50b9952564
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- M365-security-compliance
+ms.openlocfilehash: 5451d0876530cce1e372dd8f5308f75596c37513
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934479"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049277"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 ゼロ トラスト展開プラン
 
@@ -71,7 +69,7 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 - 脅威保護機能は、この基盤の上に構築され、セキュリティ脅威のリアルタイム監視と修復を提供します。 
 - 情報保護とガバナンスは、特定の種類のデータを対象とした高度な制御を提供し、最も価値のある情報を保護し、個人情報の保護を含むコンプライアンス基準を遵守するのに役立ちます。
 
-## <a name="step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies"></a>手順 1. ゼロトラスト ID とデバイス アクセス保護を構成する - 開始点ポリシー
+## <a name="step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies"></a>手順 1。 ゼロトラスト ID とデバイス アクセス保護を構成する - 開始点ポリシー
 
 最初の手順は、ID とデバイス アクセス保護を構成してゼロトラスト基盤を構築します。 
 
@@ -95,7 +93,7 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 :::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.png" alt-text="ゼロトラスト ID とデバイス アクセス ポリシー - 開始点層" lightbox="../media/zero-trust/identity-access-starting-point-tier.png":::
 
 
-## <a name="step-2-manage-endpoints-with-intune"></a>手順 2.  Intune を使用してエンドポイントを管理する
+## <a name="step-2-manage-endpoints-with-intune"></a>手順 2。 Intune を使用してエンドポイントを管理する
 
 次に、デバイスを管理に登録し、より高度なコントロールで保護を開始します。 
 

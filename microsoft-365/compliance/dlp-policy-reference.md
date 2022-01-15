@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 18b56a4e427053f29dcc054ec9384b4e34307c40
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 4fef837b053f71e2bd725f07204605d3ab0a55a1
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034619"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041172"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
@@ -129,7 +129,7 @@ DLP ポリシーは、機密情報の種類 (SIT)、機密ラベル、または�
 |Exchangeメールをオンラインで送信する|はい| はい| いいえ|
 |SharePointサイト| はい| はい| はい|
 |OneDrive for Business アカウント| はい| はい| はい|
-|Teamsおよびチャネル メッセージ | はい| いいえ| いいえ|
+|Teamsおよびチャネル メッセージ | はい| いいえ| なし|
 |デバイス |はい | はい|  いいえ|
 |Microsoft Defender for Cloud Apps | はい| はい| はい|
 |オンプレミス リポジトリ| はい| はい| いいえ|
@@ -372,6 +372,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 - 送信者のマネージャーを受信者として追加する
 - O365 メッセージの暗号化と権限の保護を削除しました
 - 電子メールの件名の先頭に追加する
+- メールの件名を変更する
 - HTML 免責事項の追加
 
 #### <a name="sharepoint-sites-location-actions"></a>SharePoint場所の操作:

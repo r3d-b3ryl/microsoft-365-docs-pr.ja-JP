@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex のライセンスの詳細
-ms.openlocfilehash: c8ed6b8b5864e0d859e0cbf8655406966e78ff3b
-ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+ms.openlocfilehash: 497952498e3ead2166f7cda11f050d929e6b6b9c
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "61660156"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62054922"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>SharePoint Syntex のライセンス
 
@@ -35,7 +35,6 @@ SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブ�
 - ライブラリのエントリ ポイントを介してフォーム処理モデルを作成する
 - 文書理解またはフォーム処理モデルが適用されているライブラリへコンテンツをアップロードする
 - 文書理解モデルをオンデマンドで実行する
-- 文書理解またはフォーム処理モデルを使用してファイルから抽出されたメタデータを表示する。 (ユーザーは、ファイルの移動先に関係なく、処理されたファイルに関連付けられたメタデータにアクセスして使用するためのライセンスが必要です。)
 - プレミアム分類サービスを使用します。(プレミアム分類サービスは、SKOS ベースの用語セットのインポート、エンタープライズ コンテンツ タイプのハブ関連サイトへのプッシュ、および用語ストア レポートで構成されます。)
 
 ライセンスのないユーザーは、コンテンツ センターへのアクセスを許可され、そこで文書理解モデルを作成できますが、それをドキュメント ライブラリに適用することはできません。

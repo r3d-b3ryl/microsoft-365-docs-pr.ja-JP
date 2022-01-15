@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示検索ツールを使用して検索できる電子メールとドキュメントのプロパティについてMicrosoft 365。
-ms.openlocfilehash: c007ccd969adca67c10a1324f64cbf6df32c8e74
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: ea1b9d4d9d6b68bd4b37c285d9b9229995ef3140
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064114"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62054898"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>電子情報開示のキーワード クエリと検索条件
 
@@ -233,7 +233,7 @@ Microsoft 365 コンプライアンス センターの eDiscovery 検索機能�
 
 |Condition|説明|
 |---|---|
-|メッセージの種類|検索するメッセージの種類。 これは、Kind メール プロパティと同じプロパティです。 可能な値: <ul><li>contacts</li><li>docs</li><li>email</li><li>externaldata</li><li>faxe</li><li>im</li><li>journals</li><li>meetings</li><li>microsoftteams</li><li>notes</li><li>posts</li><li>rssfeeds</li><li>tasks</li><li>voicemail</li></ul>|
+|メッセージの種類|検索するメッセージの種類。 これは、Kind メール プロパティと同じプロパティです。 可能な値: <ul><li>contacts</li><li>docs</li><li>email</li><li>externaldata</li><li>fax</li><li>im</li><li>journals</li><li>meetings</li><li>microsoftteams</li><li>notes</li><li>posts</li><li>rssfeeds</li><li>tasks</li><li>voicemail</li></ul>|
 |Participants|メール メッセージのすべての送受信者フィールド。 すなわち、[差出人]、[宛先]、[Cc]、[Bcc] の各フィールドです。|
 |Type|メール アイテムのメッセージ クラス プロパティ。 これは、ItemClass メール プロパティと同じプロパティです。 また、複数値の条件です。 複数のメッセージ クラスを選ぶには、**Ctrl** キーを押したまま、ドロップダウン リストで条件に追加する複数のメッセージ クラスをクリックします。 リストで選んだ各メッセージ クラスは、対応する検索クエリでは **OR** 演算子によって論理的に接続されます。 <p> Exchange によって使われていて **メッセージ クラス** リストで選ぶことができるメッセージ クラス (およびそれに対応するメッセージ クラス ID) のリストについては、「[アイテムの種類とメッセージ クラス](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)」をご覧ください。|
 |受信済み|メール メッセージが受信者によって受信された日付。これは、Received メール プロパティと同じプロパティです。|
@@ -268,7 +268,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 |Doesn't contain any of|`-property:value` <p> `NOT property:value`|文字列値を指定するプロパティの条件で使用されます。指定された文字列のどの部分も含まれない項目を返します。|
 |Doesn't equal any of|`-property=value` <p> `NOT property=value`|文字列値を指定するプロパティの条件で使用されます。特定の文字列が含まれない項目を返します。|
 |Equals|`size=value`|指定されたサイズに等しい項目を返します。<sup>1</sup>|
-|次のいずれかと等しい|`(property=value) OR (property=value)`|文字列値を指定するプロパティの条件で使用されます。1 つ以上の指定された文字列の値と完全に一致する項目を返します。|
+|次のいずれかと等しい|`(property=value) OR (property=value)`|文字列値を指定するプロパティの条件で使用されます。 指定した 1 つ以上の文字列値に一致するアイテムを返します。|
 |Greater|`size>value`|指定されたプロパティが指定された値より大きい項目を返します。<sup>1</sup>|
 |Greater or equal|`size>=value`|指定されたプロパティが指定された値以上の項目を返します。<sup>1</sup>|
 |より小さい|`size<value`|特定の値以上の項目を返します。<sup>1</sup>|
@@ -289,6 +289,8 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 - 同じプロパティに複数の条件を追加する場合、これらの条件は、**OR** 演算子によって論理的に接続されます。 これは、キーワードのクエリおよびいずれかの条件を満たす項目が返されることを意味します。 それで、同じ条件のグループが **OR** 演算子によって互いに接続され、その後、固有の条件のセットが AND 演算子によって接続されます。
 
 - 複数の値 (コンマまたはセミコロンによって区切られる) を単一の条件に追加する場合、その値は **OR** 演算子によって接続されます。 これは、条件のプロパティの指定された値のいずれかが項目に含まれる場合にその項目が返されることを意味します。
+
+- **Contains** および **Equals** ロジックを持つ演算子を使用する条件は、単純な文字列検索で同様の検索結果を返します。 単純な文字列検索は、ワイルドカードを含めない条件の文字列です)。 たとえば **、Equals** any を使用する条件は、 を使用する条件と同じアイテム **を返します**。
 
 - キーワード ボックスおよび条件を使用して作成される検索クエリは、[**検索**] ページの、選択した検索の詳細ウィンドウに表示されます。 クエリでは、表記  `(c:c)` の右側のものはすべて、クエリに追加される条件を示します。
 

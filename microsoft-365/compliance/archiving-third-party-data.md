@@ -1,5 +1,5 @@
 ---
-title: サード パーティのデータをアーカイブする
+title: データ コネクタを使用して、サードパーティのデータをインポートおよびアーカイブMicrosoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,18 +21,18 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータをインポートおよびアーカイブして、メールボックスにMicrosoft 365します。
-ms.openlocfilehash: c96e1f6d1663fd932ceb7ffd56a727cb718f5d22
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 06833acd3ea29e30d8789fbb05e0a081309c7f2b
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61874090"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055018"
 ---
-# <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
+# <a name="learn-about-connectors-for-third-party-data"></a>サード パーティ製データのコネクタの詳細
 
-Microsoft 365を使用すると、管理者はデータ コネクタを使用して、ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームから、Microsoft 365 組織内のメールボックスにサードパーティのデータをインポートおよびアーカイブできます。 Microsoft 365 でデータ コネクタを使用してサード パーティ製のデータをインポートおよびアーカイブする主な利点の 1 つは、インポート後にさまざまな Microsoft 365 コンプライアンス ソリューションを適用できる点です。 これにより、組織の Microsoft 以外のデータが、組織に影響を与える規制と標準に準拠しているのを確認できます。
+Microsoft 365を使用すると、管理者はデータ コネクタを使用して、Microsoft 以外のサードパーティのデータをソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームから Microsoft 365 組織内のメールボックスにインポートおよびアーカイブできます。 Microsoft 365 でデータ コネクタを使用してサード パーティ製のデータをインポートおよびアーカイブする主な利点の 1 つは、データのインポート後にさまざまな Microsoft 365 コンプライアンス ソリューションをデータに適用できる点です。 これにより、組織の Microsoft 以外のデータが、組織に影響を与える規制と標準に準拠しているのを確認できます。
 
-サードパーティのデータをアーカイブするデータ コネクタを作成する方法と、コンプライアンス ソリューションをデータにインポートした後にデータに適用する例を示すこの対話型ガイドをMicrosoft 365。
+サードパーティのデータをインポートおよびアーカイブするデータ コネクタを作成する方法と、データを Microsoft 365 にインポートした後にデータにコンプライアンス ソリューションを適用する例を示すこの対話型ガイドをご覧ください。
 
 > [!VIDEO https://mslearn.cloudguides.com/guides/Archive%20data%20from%20non-Microsoft%20sources%20in%20Microsoft%20365]
 

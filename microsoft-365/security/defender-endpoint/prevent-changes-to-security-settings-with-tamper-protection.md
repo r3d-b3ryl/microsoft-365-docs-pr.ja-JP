@@ -17,14 +17,14 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 12/23/2021
+ms.date: 01/14/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3c6954b683287ffaaec793dfffefff25f1d4def8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: eeb1111ae43ca00b7beb9350e72e3d9f62d9dd3c
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936067"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049265"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -148,6 +148,8 @@ ms.locfileid: "61936067"
 
 ### <a name="requirements-for-managing-tamper-protection-in-intune"></a>Intune でタンパープロテクションを管理するための要件
 
+- デバイスは、Microsoft [Defender for Endpoint にオンボードされている必要があります](/microsoft-365/security/defender-endpoint/onboarding)。
+
 - グローバル管理者、セキュリティ [管理者、](/microsoft-365/security/defender-endpoint/assign-portal-access) セキュリティ操作など、適切なアクセス許可が割り当てられている必要があります。
 
 - 組織は Intune を [使用してデバイスを管理します](/intune/fundamentals/what-is-device-management)。 ([Intune ライセンスが](/intune/fundamentals/licenses)必要です。Intune は、Microsoft 365 E5/E3、Enterprise Mobility + Security E5/E3、Microsoft 365 Business Premium、Microsoft 365 F1/F3、Microsoft 365 Government G5/G3 に含まれています。および Intune for Education.)
@@ -196,11 +198,11 @@ Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/
 > [!NOTE]
 > この手順を使用すると、Windows 10、Windows 10 Enterprise マルチセッション、Windows 11、Windows 11 Enterprise マルチセッション、Windows Server 2019、Windows Server 2022 を実行しているデバイスに改ざん防止を拡張できます。 この手順で説明されているリソースの前提条件と他の情報を必ず確認してください。
 
-1. テナント接続を設定します。 詳細については、「テナント接続Microsoft エンドポイント マネージャー:デバイスの同期と[デバイスの操作」を参照してください](/mem/configmgr/tenant-attach/device-sync-actions)。
+1. テナント接続を設定します。 詳細については、「スタートガイド: 管理センターからエンドポイント セキュリティ ポリシーを作成して展開 [する」を参照してください](/mem/configmgr/tenant-attach/endpoint-security-get-started)。
 
 2. 管理センター [でMicrosoft エンドポイント マネージャー[](https://go.microsoft.com/fwlink/?linkid=2109431)**エンドポイント** セキュリティ ウイルス対策] に移動し、[+ ポリシーの作成 \> **] を選択します**。
 
-   - [プラットフォーム **] ボックスの** 一覧でWindows 10サーバー **(ConfigMgr Windows)** Windows 11 および Windows サーバー **(ConfigMgr) を選択します**。
+   - [プラットフォーム **] ボックスの** 一覧で **、[Windows 10]、Windows 11、Windows サーバー (ConfigMgr) を選択します**。
    - [プロファイル]**ボックスの** 一覧で、[Windows セキュリティ **エクスペリエンス (プレビュー) を選択します**。
 
 3. デバイス コレクションにポリシーを展開します。

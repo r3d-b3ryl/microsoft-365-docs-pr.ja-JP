@@ -15,17 +15,18 @@ ms.collection:
 - endpoint dlp
 - data loss prevention
 - dlp policies
+- M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
 description: 情報保護とガバナンス チームと協力して組織の DLP ポリシーを作成することで、エンドポイント DLP を実装します。
-ms.openlocfilehash: a27c94a6d98fc23afc80b0e368330cf10e0a33ed
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 747a8ca3cd8301b83bfb98401989e21946248981
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936776"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049289"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>手順 7. 情報保護機能を備えたデータ損失防止 (DLP) を実装する.
 

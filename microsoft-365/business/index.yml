@@ -27,8 +27,8 @@ productDirectory:
       url: 'https://aka.ms/SMBSecurityKit'
     - title: 新機能
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: すぐにプレビューが開始されます。Microsoft Defender for Business は、従業員数が 300 人未満の企業向けエンタープライズ グレードのエンドポイント ソリューションです。
-      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701'
+      summary: 今日の Microsoft Defender for Business プレビューに参加します。従業員数が 300 人未満の企業向けエンタープライズ グレードのエンドポイント ソリューションです。
+      url: 'https://aka.ms/MDB-previewblog'
     - title: パートナー ウェビナー シリーズに参加
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
       summary: Microsoft 365 Business Premium、Microsoft Defender for Business、および Microsoft 365 Lighthouse を使用して、アップセルを増やし、ビジネスを成長Microsoft 365 Lighthouse。

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5078943e9b2bf158a457d263b2db65e9bfca7659
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: f27feb9a68340bdb39fa57269c4d64f0d9ea561e
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034994"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041020"
 ---
 # <a name="communication-compliance-policies"></a>コミュニケーション コンプライアンス ポリシー
 
@@ -117,6 +117,9 @@ Microsoft 365 の組織のコミュニケーション コンプライアンス �
 - 医療と健康
 - プライバシー
 - カスタム情報の種類
+
+> [!IMPORTANT]
+> 一意のインスタンス数の最大パラメーターを定義するには、2 つの異なる方法があります。 詳細については、「SIT でサポート [されるインスタンス数の値」を参照してください](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit)。
 
 機密情報の詳細と既定の種類に含まれるパターンの詳細については、「機密情報の種類エンティティ定義」 [を参照してください](sensitive-information-type-entity-definitions.md)。
 
