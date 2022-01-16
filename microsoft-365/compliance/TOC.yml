@@ -317,6 +317,8 @@
           href: tls-1-2-in-office-365-gcc.md
         - name: Office 365 の TLS 1.2
           href: prepare-tls-1.2-in-office-365.md
+        - name: Office TLS 証明書の変更
+          href: encryption-office-365-tls-certificates-changes.md
     - name: データ損失防止 (DLP)
       items:
         - name: データ損失防止 (DLP) について
@@ -449,7 +451,7 @@
           href: faqimporting-pst-files-to-office-365.yml
     - name: サード パーティのデータをアーカイブする
       items:
-        - name: サード パーティのデータのアーカイブの概要
+        - name: サード パーティ データのコネクタの詳細
           href: archiving-third-party-data.md
         - name: Microsoft データ コネクタ
           items:

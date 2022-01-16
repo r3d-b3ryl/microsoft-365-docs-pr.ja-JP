@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 8ad336e411c5ce83129496fb10490442b43a1aeb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 91b8da486d3e9fbae6981f3038cbab8725065476
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936608"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049374"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -76,10 +76,9 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
         - Word、PowerPoint、Excel の Office ファイルがサポートされています。 ラベルが暗号化を適用する場合、[Office 365 Message Encryption (OME)](ome.md)を使用して、暗号化されます。
     - IRM 暗号化を適用する Exchange メール フロー ルールまたはデータ損失防止 (DLP) ポリシーがある場合: これらのルールやポリシーおよび自動ラベル付けポリシーによってコンテンツが識別されると、ラベルが適用されます。 このラベルが暗号化を適用すると、Exchange メール フロー ルールまたは DLP ポリシーの IRM 設定は無視されます。 ただし、そのラベルが暗号化を適用しない場合、メール フロー ルールまたは DLP ポリシーの IRM 設定がラベルに加えて適用されます。
     - ラベルが表示されない IRM 暗号化を使用しているメールは、自動ラベル付けを使用すると一致する場合は、暗号化設定のあるラベルに置き換えられます。
-    - 自動ラベル付け条件と一致すると、受信メールに以下のようにラベルが付けられます。
-    - ラベルが[暗号化](encryption-sensitivity-labels.md)用に構成されている場合、その暗号化は適用されません。
+    - 自動ラベル付け条件と一致すると、受信メールにラベルが付けられます。 ラベルが[暗号化](encryption-sensitivity-labels.md)に構成されている場合、その暗号化は、組織からの送信者である場合に適用されますが、組織外からの送信者である場合は適用されません。
     - ラベルが[動的マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)を適用するように構成されている場合、この構成により組織外の人の名前が表示される可能性があることに注意してください。
-    - ラベルが暗号化を適用する場合、[Rights Management 発行者と Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) は、メールを送信するユーザーです。 現在、自動的に暗号化されるすべての受信メール メッセージに Rights Manager 所有者を設定する方法はありません。
+    - ラベルが暗号化を適用する場合、[Rights Management 発行者と Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) は、メールを送信するユーザーです。
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Office アプリの自動ラベル付けと自動ラベル付けポリシーを比較する
 
@@ -143,6 +142,9 @@ DLP ポリシーを構成する場合と同様に、インスタンス数と一�
 ![一致精度とインスタンス数のオプション](../media/sit-confidence-level.png)
 
 これらの構成オプションの詳細については、DLP ドキュメント「[一致の難易度を上下するためにルールを調整する](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)」を参照してください。
+
+> [!IMPORTANT]
+> 機密情報の種類には、最大固有インスタンス数パラメーターを定義する 2 つの異なる方法があります。 詳細については、「[SIT のインスタンス数のサポート値](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit)」を参照してください。
 
 また、DLP ポリシーの構成と同様に、条件ですべての機密情報の種類を検出する必要があるか、そのうちの 1 つだけを検出するかを選択できます。また、条件をより柔軟または複雑にするために、[グループを追加し、グループ間で論理演算子を使用](data-loss-prevention-policies.md)することもできます。
 
