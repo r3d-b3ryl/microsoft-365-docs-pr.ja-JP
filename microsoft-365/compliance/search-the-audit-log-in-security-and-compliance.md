@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: c59c9c06dfb8b15b6ee4bbd54cf86f54ad816e0a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2b42e33bf57e2cfbc855c06ff4dfeefc9a8e9eb0
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937486"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62054982"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -668,7 +668,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|
 |メールボックス アイテムへのアクセス|MailItemsAccessed|メールボックスでメッセージが読み取りまたはアクセスされました。 このアクティビティの監査レコードは、次の 2 つのうちいずれかの方法でトリガーされます。メール クライアント (Outlook など) でメッセージに対するバインド操作が実行されたとき、またはメール プロトコル (Exchange ActiveSync や IMAP など) によりメール フォルダーのアイテムが同期されたとき。 このアクティビティは、Office 365 または Microsoft 365 E5 ライセンスを持つユーザーのみに記録されます。 このアクティビティの監査レコードの分析は、攻撃されたメール アカウントを調査するときに便利です。 詳細については、[[高度な監査]](advanced-audit.md#advanced-audit-events) の「高度な監査イベント」セクションを参照してください。 |
-|代理メールボックス アクセス許可の追加|Add-MailboxPermission|管理者が、ユーザー (代理人と呼ばれる) に対して、別のユーザーのメールボックスに対する FullAccess アクセス許可を割り当てました。FullAccess アクセス許可は、代理人が他のユーザーのメールボックスを開いて、そのメールボックスの内容を読み取り、管理することを許可します。|
+|代理メールボックス アクセス許可の追加|Add-MailboxPermission|管理者は、FullAccess メール ボックス権限をユーザー (代理人と呼ばれる) に別の人のメール ボックスに割り当てました。 FullAccess アクセス許可では、代理人は、他のユーザーのメールボックスを開き、メールボックスの内容の閲覧および管理を行うことができます。 このアクティビティの監査レコードは、Microsoft 365 サービスのシステム アカウントが組織に代わって定期的にメンテナンス タスクを実行するときにも生成されます。 システム アカウントによって実行される一般的なタスクは、システム メールボックスのアクセス許可を更新することです。 詳細については、「[Exchange メール ボックス監査レコードのシステム アカウント](#system-accounts-in-exchange-mailbox-audit-records)」を参照してください。|
 |代理人アクセス許可を持つユーザーが予定表フォルダーに追加または削除されました|UpdateCalendarDelegation|ユーザーが、別のユーザーのメールボックスの予定表に代理人として追加または削除されました。 予定表の委任により、同じ組織の他のユーザーに、メールボックス所有者の予定表を管理する権限が付与されます。|
 |フォルダーへのアクセス許可が追加されました|AddFolderPermissions|フォルダーのアクセス許可が追加されました。フォルダーのアクセス許可では、メールボックス内にあるフォルダーとそれらのフォルダーに格納されているメッセージにアクセスできる組織内のユーザーを管理します。|
 |別のフォルダーへのメッセージのコピー|Copy|メッセージが別のフォルダーにコピーされました。|
@@ -691,6 +691,12 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |メールボックスへのユーザーのサインイン|MailboxLogin|ユーザーが自分のメールボックスにサインインしました。|
 |メッセージをレコードとしてラベル付けする||ユーザーがメール メッセージに保持ラベルを適用しました。このラベルは、アイテムをレコードとしてマークするように構成されています。 |
 ||||
+
+#### <a name="system-accounts-in-exchange-mailbox-audit-records"></a>Exchange メール ボックス監査レコードのシステム アカウント
+
+一部のメール ボックス アクティビティ (特に **Add-MailboxPermissions**) の監査レコードでは、アクティビティを実行した (そして、User フィールドと UserId フィールドで識別された) ユーザーが NT AUTHORITY\SYSTEM または NT AUTHORITY\SYSTEM(Microsoft.Exchange.Servicehost)であることに気付く場合があります。  これは、アクティビティを実行した "ユーザー" が Microsoft クラウドの Exchange サービスのシステム アカウントであったことを示しています。 このシステム アカウントは、多くの場合、組織に代わってスケジュールされたメンテナンス タスクを実行します。 たとえば、NT AUTHORITY\SYSTEM(Microsoft.Exchange.ServiceHost) アカウントによって実行される一般的な監査アクティビティは、システム メール ボックスである DiscoverySearchMailbox のアクセス許可を更新することです。 この更新プログラムの目的は、FullAccess 権限 (既定) がDiscoverySearchMailbox の DiscoveryManagement 役割グループに割り当てられていることを確認することです。 これにより、電子情報開示管理者は組織内で必要なタスクを実行できます。
+
+**Add-MailboxPermission** の監査レコードで識別される可能性のある別のシステム ユーザー アカウントは、Administrator@apcprd03.prod.outlook.com です。 このサービスアカウントは、FullAccess アクセス許可の確認と更新に関連するメールボックス監査レコードにも含まれ、DiscoverySearchMailbox システム メールボックスの DiscoveryManagement 役割グループに割り当てられます。 具体的には、Administrator@apcprd03.prod.outlook.com アカウントを識別する監査レコードは、通常、Microsoft サポート担当者が組織に代わってRBAC 役割診断ツールを実行したときにトリガーされます。
 
 ### <a name="user-administration-activities"></a>ユーザー管理アクティビティ
 
