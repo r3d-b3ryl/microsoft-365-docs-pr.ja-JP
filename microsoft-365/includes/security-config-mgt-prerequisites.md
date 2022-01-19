@@ -4,12 +4,12 @@ description: ファイルを含める
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 55b0bc3800ba31c325d9c27906e72d6dd7e9bbea
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: d4554596f4c33ce0536ad2c8e6092fd8fdc74033
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262846"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62079624"
 ---
 ## <a name="prerequisites"></a>前提条件
 
@@ -62,6 +62,10 @@ Microsoft Defender for Endpoint のセキュリティ管理を使用するには
 
   *Microsoft* Defender for Endpoint ライセンスを付与するサブスクリプションは、管理者センターのエンドポイント セキュリティ ノードへのテナント アクセスMicrosoft エンドポイント マネージャー付与します。 エンドポイント セキュリティ ノードでは、デバイスの Microsoft Defender for Endpoint を管理し、デバイスの状態を監視するためのポリシーを構成および展開します。
 
+>[!NOTE]
+> 現在、Microsoft Defender for Endpoint サブスクリプションが Azure Security Center/Defender for cloud を通じて取得された場合、この Microsoft Defender for Endpoint ライセンスは、この機能の適格なライセンスではありません。 
+
+
 ## <a name="architecture"></a>アーキテクチャ
 
 次の図は、Microsoft Defender for Endpoint セキュリティ構成管理ソリューションの概念的な表現です。
@@ -84,15 +88,15 @@ Microsoft エンドポイント マネージャーには、デバイス上の De
 
 次の表は、さまざまなシナリオで管理されるデバイスでサポートされる MDE 設定を構成できるポリシーを理解するのに役立ちます。 MDE セキュリティ構成と *Microsoft エンドポイント マネージャー* の両方でサポートされているポリシーを展開する場合、そのポリシーの 1 つのインスタンスは *、MDE* のみを実行するデバイスと Intune または Configuration Manager によって管理されるデバイスによって処理できます。
 
-| Microsoft エンドポイント マネージャー  | Workload | MDE セキュリティ構成  |  Microsoft エンドポイント マネージャー |
+| Microsoft エンドポイント マネージャー  | ワークロード | MDE セキュリティ構成  |  Microsoft エンドポイント マネージャー |
 |----------------|----------------|-------------------|------------|
 | エンドポイントのセキュリティ    | ウイルス対策                   | ![サポート](../media/green-check.png)  | ![サポート](../media/green-check.png)  |
 |                      | ディスク暗号化   |           | ![サポート](../media/green-check.png)  |
-|                      | ファイアウォール (プロファイルとルール)                | ![サポート](../media/green-check.png) | ![サポート](../media/green-check.png)  |
+|                      | ファイアウォール (プロファイルとルール)                | ![サポートされている](../media/green-check.png) | ![サポートされている](../media/green-check.png)  |
 |                      | エンドポイントの検出および応答        | ![サポート](../media/green-check.png) | ![サポート](../media/green-check.png)  |
 |                      | 攻撃面の縮小    |           | ![サポート](../media/green-check.png)  |
 |                      | アカウント保護       |       | ![サポート](../media/green-check.png)  |
-|                      | デバイスコンプライアンス     |   | ![サポート](../media/green-check.png)  |
+|                      | デバイスコンプライアンス     |   | ![サポートされている](../media/green-check.png)  |
 |                      | 条件付きアクセス    |   | ![サポート](../media/green-check.png)  |
 |                      | セキュリティ基本計画      |   | ![サポート](../media/green-check.png)  |
 
