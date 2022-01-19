@@ -1,5 +1,5 @@
 ---
-title: ASR ルールの展開フェーズ 1 - 計画
+title: ASR ルール 展開フェーズ 1 - 計画
 description: 攻撃表面の縮小ルールの展開を計画するガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ca6c7ed6265a1c68a513d6025227780fa429f6e8
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 589a0f593245be5f71fdd2bf31a74f2c2c7f5a5b
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217400"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074632"
 ---
-# <a name="attack-surface-reduction-rules-deployment-phase-1-plan"></a>攻撃表面の縮小ルールの展開フェーズ 1: 計画
+# <a name="asr-rules-deployment-phase-1-plan"></a>ASR ルールの展開フェーズ 1: 計画
 
 ASR ルールのテストを開始するには、適切なビジネス ユニットから始める必要があります。 まず、特定のビジネス ユニットの少人数のグループから始める必要があります。 ASR ルールに実際の影響を与え、実装の調整に役立つ ASR チャンピオンを特定できます。
 
@@ -79,10 +79,10 @@ ASR ルールの状態とアクティビティの監視と通信を担当する�
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
-[ASR ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
+[ASR ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
 
-[ASR ルールの展開フェーズ 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+[フェーズ 2: テスト](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR ルールの展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
+[フェーズ 3: 実装](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[ASR ルールの展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
+[フェーズ 4: オペレーショナル化](attack-surface-reduction-rules-deployment-phase-4.md)

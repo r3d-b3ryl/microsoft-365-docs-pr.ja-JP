@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a2a8ae2197b957299277bae3eeeee8383d1bda00
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2ee262e2a42bcf4bd03a6d1204b60412d60740d5
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165224"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074368"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -46,7 +46,7 @@ ms.locfileid: "61165224"
 
 ファイルのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
-- この機能は、組織が (アクティブ モードで **)** Microsoft Defender ウイルス対策を使用し、クラウドベースの保護が有効 **になっている場合に使用できます**。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+- この機能は、組織が (アクティブ モードで **)** Microsoft Defender ウイルス対策を使用し、クラウドベースの保護が有効 **になっている場合に使用できます**。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 
 - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。 「 [月次プラットフォームとエンジンのバージョン」を参照してください。](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
@@ -55,17 +55,17 @@ ms.locfileid: "61165224"
    >[!NOTE]
     >Windows Server 2016および Windows Server 2012 R2 は、この機能を動作するには、「オンボード サーバー Windows[](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)を使用してオンボードする必要があります。 
 
-- ファイルのブロックを開始するには、まず、ファイルのブロックまたは許可 [機能](advanced-features.md)を有効にする設定。
+- ファイルのブロックを開始するには、まず、ファイルのブロックまたは許可[機能](advanced-features.md)を有効にする設定。
 
 この機能は、疑わしいマルウェア (または悪意のある可能性のあるファイル) が Web からダウンロードされるのを防ぐために設計されています。 現在、ポータブル実行可能ファイル (PE) ファイルがサポートされています 。このファイルには、.exeファイル.dllがあります。 対象範囲は時間の長い期間延長されます。
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>設定ページからファイルのインジケーターを作成する
 
-1. ナビゲーション ウィンドウで、[エンドポイントインジケーター] **設定** \> **([** ルール] \> **の下)** を **選択します**。
+1. ナビゲーション ウィンドウで、[エンドポイントインジケーター]**設定** \> **([** ルール] \> **の下)** を **選択します**。
 
-2. [ファイル **ハッシュ] タブを**   選択します。
+2. [ファイル **ハッシュ] タブを選択** します。
 
-3. [インジケーター **の追加] を選択します**。
+3. [インジケーター **の追加] を選択します**。
 
 4. 次の詳細を指定します。
     - Indicator - エンティティの詳細を指定し、インジケーターの有効期限を定義します。
@@ -76,7 +76,7 @@ ms.locfileid: "61165224"
 
 ## <a name="create-a-contextual-indicator-from-the-file-details-page"></a>ファイルの詳細ページからコンテキスト インジケーターを作成する
 
-ファイルに対して応答アクションを実行 [する場合のオプションの 1](respond-file-alerts.md)つは   、ファイルのインジケーターを追加することです。 ファイルのインジケーター ハッシュを追加すると、組織内のデバイスがファイルの実行を試みるたびに、アラートを発生してファイルをブロックできます。
+ファイルに対して応答アクションを実行 [する場合のオプションの 1](respond-file-alerts.md) つは、ファイルのインジケーターを追加することです。 ファイルのインジケーター ハッシュを追加すると、組織内のデバイスがファイルの実行を試みるたびに、アラートを発生してファイルをブロックできます。
 
 インジケーターによって自動的にブロックされたファイルは、ファイルのアクション センターには表示されませんが、アラートはアラート キューに表示されます。
 

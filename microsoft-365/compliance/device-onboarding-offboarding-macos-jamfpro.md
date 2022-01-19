@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: JAMF ソリューション (プレビュー) を使用して、macOS デバイスをオンボードおよびオフボードMicrosoft 365コンプライアンス ソリューションにProする方法について学習します。
-ms.openlocfilehash: 1c21251b390209d92696a36962705b9f2517a53c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 03cdf8a7aa5c35d4e207364c3f0870a66712626d
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111221"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074548"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
@@ -53,7 +53,7 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 |アクセシビリティ |[アクセシビリティ.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 フル ディスク アクセス     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |ネットワーク フィルター| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
-|システム拡張機能 |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|システム拡張機能 |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |MDE の基本設定     |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
 |MAU の基本設定|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|
 |インストール パッケージ     |コンプライアンス ポータルのインストール パッケージ **からダウンロードされた** ファイル名 *\* wdav.pkg*\* |
@@ -176,9 +176,9 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
     - 配布方法: `install automatically`
     - レベル: `computer level`
 
-1. [System **extentions profile]** で、次の値を入力します。
+1. [ **システム拡張機能プロファイル] に** 、次の値を入力します。
     - 表示名: `Microsoft Corp. System Extensions`
-    - System Extenstion の種類: `Allowed System Extensions`
+    - システム拡張の種類: `Allowed System Extensions`
     - チーム識別子: `UBF8T346G9`
     - 許可されるシステム拡張機能: `com.microsoft.wdav.epsext` 、および `com.microsoft.wdav.netext`
 
@@ -192,13 +192,13 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 ### <a name="configure-network-extension"></a>ネットワーク拡張機能の構成
 
-1.  Github **からダウンロードした netfilter.mobileconfig**  ファイルを使用します。
+1.  サーバーから **ダウンロードした netfilter.mobileconfig** ファイルをGitHub。
 
 2.  アップロードを使用したカスタム構成プロファイルの展開」の説明に従って[JAMF](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)にPro。
 
 ### <a name="grant-accessibility-access-to-dlp"></a>DLP へのアクセシビリティ アクセスを許可する
 
-1. Github **からダウンロードしたアクセシビリティ.mobileconfig** ファイルを使用します。
+1. ユーザー設定から **ダウンロードしたアクセシビリティ.mobileconfig** ファイルをGitHub。
 
 2.  アップロードを使用したカスタム構成プロファイルの展開」の説明に従って[JAMF](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)にPro。
 

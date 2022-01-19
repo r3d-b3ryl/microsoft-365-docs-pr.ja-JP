@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: サード パーティ製の保護サービスまたはデバイスから Microsoft Defender への移行を開始する手順を実行して、Office 365します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a89924fbd30631c42c9a39be7384e642c2755746
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: cc16da76f4b863800bb4f1e7573bbe2fa106b4cf
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370658"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074728"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Microsoft Defender に移行して、Office 365 - フェーズ 2: セットアップ
 
@@ -104,13 +104,13 @@ SCL=-1 メール フロー ルールは、次の理由で移行中に重要で�
 
   mx レコードを Microsoft 365 にカットオーバーする前または切り替え中に、このルールを無効にして、組織内のすべての受信者に対する Microsoft 365 保護スタックの完全な保護を有効にします。
 
-詳細については、「メール フロー ルールを使用して、メッセージ内のスパム信頼レベル[(SCL)](https://docs.microsoft.comexchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)を設定する」を参照Exchange Online。
+詳細については、「メール フロー ルールを使用して、メッセージ内のスパム信頼レベル[(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)を設定する」を参照Exchange Online。
 
 **注意**:
 
 - インターネット メールが既存の保護サービスを通過し、Microsoft 365 に直接同時に流れるのを許可する場合は、SCL=-1 メール フロー ルール (スパム フィルターをバイパスするメール) を、既存の保護サービスを経由したメールにのみ制限する必要があります。 フィルター処理されていないインターネット メールを、ユーザー メールボックス内のユーザー メールボックスにMicrosoft 365。
 
-  既存の保護サービスによって既にスキャンされているメールを正しく識別するには、SCL=-1 メール フロー ルールに条件を追加できます。 例:
+  既存の保護サービスによって既にスキャンされているメールを正しく識別するには、SCL=-1 メール フロー ルールに条件を追加できます。 次に例を示します。
 
   - **クラウドベースの保護サービスの場合**: 組織に固有のヘッダー値とヘッダー値を使用できます。 ヘッダーを持つメッセージは、ユーザーがスキャンMicrosoft 365。 ヘッダーのないメッセージは、ユーザーがスキャンMicrosoft 365
   - **オンプレミスの保護サービスまたはデバイスの場合**: ソース IP アドレスを使用できます。 送信元 IP アドレスからのメッセージは、ユーザーがスキャンMicrosoft 365。 送信元 IP アドレスからではないメッセージは、ユーザーがスキャンMicrosoft 365。
@@ -200,7 +200,7 @@ SCL=-1 メール フロー ルールは、次の理由で移行中に重要で�
 - [フィッシング対策ポリシーの偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 - [Defender でフィッシング対策ポリシーを構成して、Office 365。](configure-mdo-anti-phishing-policies.md)
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 **おめでとう** ございます! Microsoft Defender への移行の **セットアップ** フェーズを完了 [し、Office 365!](migrate-to-defender-for-office-365.md#the-migration-process)
 

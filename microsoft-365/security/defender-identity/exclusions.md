@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Identity detection exclusions in <DICT__Microsoft⚐365⚐Defender>Microsoft 365 Defender</DICT__Microsoft⚐365⚐Defender>
+title: Microsoft Defender for Identity detection exclusions in Microsoft 365 Defender
 description: Microsoft Defender for Identity detection exclusions を構成する方法については、「Microsoft Defender for Identity detection exclusions」をMicrosoft 365 Defender。
 ms.date: 11/02/2021
 ms.topic: how-to
@@ -7,14 +7,14 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: d4a8fb5cb8677acaf574eb25df6e8e32720e4628
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: feaa1743e00c515e02301090ce811afee5c26e74
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787799"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074428"
 ---
-# <a name="configure-defender-for-identity-detection-exclusions-in-microsoft-365-defender-preview"></a>[Id 検出の除外対象として Defender を構成するMicrosoft 365 Defender (プレビュー)
+# <a name="configure-defender-for-identity-detection-exclusions-in-microsoft-365-defender"></a>[Id 検出の除外対象として Defender を構成する] Microsoft 365 Defender
 
 **適用対象:**
 

@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 996727e59108b13f32b4138713a6e54d9192218c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c491b6843de50227497d7332335a3b4c639f5019
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940568"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074512"
 ---
-# <a name="attack-surface-reduction-rules-deployment-phase-2-test"></a>攻撃表面の縮小ルールの展開フェーズ 2: test
+# <a name="asr-rules-deployment-phase-2-test"></a>ASR ルールの展開フェーズ 2: test
 
 リング 1 で ASR ルールの展開を開始します。
 
@@ -47,7 +47,7 @@ ms.locfileid: "61940568"
     > [!div class="mx-imgBorder"]
     > ![ASR ルール プロファイルの構成](images/asr-mem-create-profile.png)
 
-5. **[作成]** をクリックします。
+5. [**作成**] をクリックします。
 6. [プロファイル **の作成]** ウィンドウの [基本] **タブ** で、[名前] **で** ポリシーの名前を追加します。 [ **説明]** で、ASR ルール ポリシーの説明を追加します。
 7. [構成 **設定] タブの** [ **攻撃表面** 縮小ルール] で、すべてのルールを監査モード **に設定します**。
 
@@ -108,7 +108,7 @@ ASR ルールの新しい攻撃表面縮小ポリシーは、[エンドポイン
 - ソース アプリ
 - Device
 - User
-- 発行元
+- Publisher
 
 > [!div class="mx-imgBorder"]
 > ![攻撃表面の縮小ルールの検出 GroupBy フィルター](images/asr-defender365-reports-detections.png)
@@ -199,10 +199,10 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
-[ASR ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
+[ASR ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
 
-[ASR ルール 展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[フェーズ 1: 計画](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR ルール 展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
+[フェーズ 3: 実装](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[ASR ルール 展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
+[フェーズ 4: オペレーショナル化](attack-surface-reduction-rules-deployment-phase-4.md)

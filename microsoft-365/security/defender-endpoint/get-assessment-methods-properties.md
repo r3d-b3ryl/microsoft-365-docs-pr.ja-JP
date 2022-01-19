@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1d3f136f3715b81b245f6b157927ae98a9444c06
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c10f454919afc725b37537aa354fed05b95cb571
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284447"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074476"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>デバイスごとの評価方法とプロパティのエクスポート
 
@@ -73,29 +73,29 @@ ms.locfileid: "61284447"
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-configurationCategory|String|構成が属するカテゴリまたはグループ化: アプリケーション、OS、ネットワーク、アカウント、セキュリティコントロール。
-configurationId|String|特定の構成の一意の識別子。
-configurationImpact|String|構成が全体的な構成スコア (1 ~ 10) に及ぼす影響を評価します。
-configurationName|String|構成の表示名。
-configurationSubcategory|String|構成が属するサブカテゴリまたはサブグループ。 多くの場合、特定の機能または機能。
+configurationCategory|文字列|構成が属するカテゴリまたはグループ化: アプリケーション、OS、ネットワーク、アカウント、セキュリティコントロール。
+configurationId|文字列|特定の構成の一意の識別子。
+configurationImpact|文字列|構成が全体的な構成スコア (1 ~ 10) に及ぼす影響を評価します。
+configurationName|文字列|構成の表示名。
+configurationSubcategory|文字列|構成が属するサブカテゴリまたはサブグループ。 多くの場合、特定の機能または機能。
 deviceId|String|サービス内のデバイスの一意の識別子。
 deviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
 isApplicable|ブール|構成またはポリシーが適用可能かどうかを示します。
 isCompliant|ブール|構成またはポリシーが適切に構成されているかどうかを示します。
 isExpectedUserImpact|ブール|構成が適用される場合、ユーザーが影響を受けるかどうかを示します。
-osPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。 同じファミリ内にバリエーションがある特定のオペレーティング システム (Windows 10および Windows 11 など)。 詳細については、「TVM でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+osPlatform|文字列|デバイスで実行されているオペレーティング システムのプラットフォーム。 同じファミリ内にバリエーションがある特定のオペレーティング システム (Windows 10および Windows 11 など)。 詳細については、「TVM でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
 osVersion|String|デバイスで実行されているオペレーティング システムの特定のバージョン。
-rbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 デバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
-rbacGroupId|String|役割ベースのアクセス制御 (RBAC) グループ ID。
-recommendationReference|String|ソフトウェアに関連する推奨事項 ID への参照。
-timestamp|String|デバイスで構成が最後に表示された時刻。
+rbacGroupName|文字列|役割ベースのアクセス制御 (RBAC) グループ。 デバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
+rbacGroupId|文字列|役割ベースのアクセス制御 (RBAC) グループ ID。
+recommendationReference|文字列|ソフトウェアに関連する推奨事項 ID への参照。
+timestamp|文字列|デバイスで構成が最後に表示された時刻。
 
 ### <a name="13-properties-via-files"></a>1.3 プロパティ (ファイル経由)
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
 ファイルのエクスポート|配列 \[ 文字列\]|組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧。
-GeneratedTime|String|エクスポートが生成された時刻。
+GeneratedTime|文字列|エクスポートが生成された時刻。
 
 ## <a name="2-export-software-inventory-assessment"></a>2. ソフトウェア インベントリ評価のエクスポート
 
@@ -112,27 +112,27 @@ GeneratedTime|String|エクスポートが生成された時刻。
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-DeviceId|String|サービス内のデバイスの一意の識別子。
-DeviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
+DeviceId|文字列|サービス内のデバイスの一意の識別子。
+DeviceName|文字列|デバイスの完全修飾ドメイン名 (FQDN)。
 DiskPaths|Array[string]|製品がデバイスにインストールされていることを示すディスク証拠。
-EndOfSupportDate|String|このソフトウェアのサポートが終了または終了する日付。
-EndOfSupportStatus|String|サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。
+EndOfSupportDate|文字列|このソフトウェアのサポートが終了または終了する日付。
+EndOfSupportStatus|文字列|サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。
 NumberOfWeaknesses|Int|このデバイス上のこのソフトウェアの弱点の数。
-OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 11 Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
-RbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
-rbacGroupId|String|役割ベースのアクセス制御 (RBAC) グループ ID。
+OSPlatform|文字列|デバイスで実行されているオペレーティング システムのプラットフォーム。同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 11 Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+RbacGroupName|文字列|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
+rbacGroupId|文字列|役割ベースのアクセス制御 (RBAC) グループ ID。
 RegistryPaths|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。
-SoftwareFirstSeenTimestamp|String|このソフトウェアがデバイスで初めて見られた。
-SoftwareName|String|ソフトウェア製品の名前。
-SoftwareVendor|String|ソフトウェア ベンダーの名前。
-SoftwareVersion|String|ソフトウェア製品のバージョン番号。
+SoftwareFirstSeenTimestamp|文字列|このソフトウェアがデバイスで初めて見られた。
+SoftwareName|文字列|ソフトウェア製品の名前。
+SoftwareVendor|文字列|ソフトウェア ベンダーの名前。
+SoftwareVersion|文字列|ソフトウェア製品のバージョン番号。
 
 ### <a name="23-properties-via-files"></a>2.3 プロパティ (ファイル経由)
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
 ファイルのエクスポート|配列 \[ 文字列\]|組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧。
-GeneratedTime|String|エクスポートが生成された時刻。
+GeneratedTime|文字列|エクスポートが生成された時刻。
 
 ## <a name="3-export-software-vulnerabilities-assessment"></a>3. ソフトウェアの脆弱性評価のエクスポート
 
@@ -150,59 +150,59 @@ GeneratedTime|String|エクスポートが生成された時刻。
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-CveId|String|共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。
-CvssScore|String|CVE の CVSS スコア。
-DeviceId|String|サービス内のデバイスの一意の識別子。
-DeviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
+CveId|文字列|共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。
+CvssScore|文字列|CVE の CVSS スコア。
+DeviceId|文字列|サービス内のデバイスの一意の識別子。
+DeviceName|文字列|デバイスの完全修飾ドメイン名 (FQDN)。
 DiskPaths|配列 \[ 文字列\]|製品がデバイスにインストールされていることを示すディスク証拠。
-ExploitabilityLevel|String|この脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)
-FirstSeenTimestamp|String|この製品の CVE がデバイスで初めて表示された場合。
+ExploitabilityLevel|文字列|この脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)
+FirstSeenTimestamp|文字列|この製品の CVE がデバイスで初めて表示された場合。
 Id|String|レコードの一意の識別子。
-LastSeenTimestamp|String|デバイスで CVE が最後に表示された時刻。
-OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 11 Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
-RbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
-rbacGroupId|String|役割ベースのアクセス制御 (RBAC) グループ ID。
-RecommendationReference|String|このソフトウェアに関連する推奨事項 ID への参照。
-RecommendedSecurityUpdate|String|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。
-RecommendedSecurityUpdateId|String|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子。
+LastSeenTimestamp|文字列|デバイスで CVE が最後に表示された時刻。
+OSPlatform|文字列|デバイスで実行されているオペレーティング システムのプラットフォーム。同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 11 Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+RbacGroupName|文字列|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
+rbacGroupId|文字列|役割ベースのアクセス制御 (RBAC) グループ ID。
+RecommendationReference|文字列|このソフトウェアに関連する推奨事項 ID への参照。
+RecommendedSecurityUpdate|文字列|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。
+RecommendedSecurityUpdateId|文字列|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子。
 レジストリ パス配列 \[ の文字列\]|製品がデバイスにインストールされていることを示すレジストリ証拠。
-SoftwareName|String|ソフトウェア製品の名前。
-SoftwareVendor|String|ソフトウェア ベンダーの名前。
-SoftwareVersion|String|ソフトウェア製品のバージョン番号。
-VulnerabilitySeverityLevel|String|CVSS スコアと脅威の状況の影響を受ける動的要因に基づいてセキュリティの脆弱性に割り当てられる重大度レベル。
+SoftwareName|文字列|ソフトウェア製品の名前。
+SoftwareVendor|文字列|ソフトウェア ベンダーの名前。
+SoftwareVersion|文字列|ソフトウェア製品のバージョン番号。
+VulnerabilitySeverityLevel|文字列|CVSS スコアと脅威の状況の影響を受ける動的要因に基づいてセキュリティの脆弱性に割り当てられる重大度レベル。
 
 ### <a name="33-properties-via-files"></a>3.3 プロパティ (ファイル経由)
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
 ファイルのエクスポート|配列 \[ 文字列\]|組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧。
-GeneratedTime|String|エクスポートが生成された時刻。
+GeneratedTime|文字列|エクスポートが生成された時刻。
 
 ### <a name="34-properties-delta-export-json-response"></a>3.4 プロパティ (デルタ エクスポート JSON 応答)
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-CveId |String|共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。
-CvssScore|String|CVE の CVSS スコア。
-DeviceId|String|サービス内のデバイスの一意の識別子。
-DeviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
+CveId |文字列|共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。
+CvssScore|文字列|CVE の CVSS スコア。
+DeviceId|文字列|サービス内のデバイスの一意の識別子。
+DeviceName|文字列|デバイスの完全修飾ドメイン名 (FQDN)。
 DiskPaths|Array[string]|製品がデバイスにインストールされていることを示すディスク証拠。
-EventTimestamp|String|デルタ イベントが見つかった時刻。
-ExploitabilityLevel|String|脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)
-FirstSeenTimestamp|String|デバイスで製品の CVE が初めて表示された場合。
-Id|String|レコードの一意の識別子。  
-LastSeenTimestamp|String|デバイスで CVE が最後に表示された時刻。
-OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 11 Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
-RbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
-RecommendationReference|String|このソフトウェアに関連する推奨事項 ID への参照。
-RecommendedSecurityUpdate |String|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。
-RecommendedSecurityUpdateId |String|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子
-RegistryPaths |Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。
-SoftwareName|String|ソフトウェア製品の名前。
-SoftwareVendor|String|ソフトウェア ベンダーの名前。
-SoftwareVersion|String|ソフトウェア製品のバージョン番号。
-状態|String|**新機能**  (デバイスに導入された新しい脆弱性の場合)。 **固定**  (デバイス上にもう存在しない脆弱性の場合は、修復されたという意味です)。 **更新**  (変更されたデバイスの脆弱性の場合)。 変更の可能性は、CVSS スコア、悪用可能性レベル、重大度レベル、DiskPaths、RegistryPaths、RecommendedSecurityUpdate などです。
-VulnerabilitySeverityLevel|String|CVSS スコアに基づくセキュリティ脆弱性に割り当てられた重大度レベルと、脅威の状況の影響を受ける動的要因。
+EventTimestamp|文字列|デルタ イベントが見つかった時刻。
+ExploitabilityLevel|文字列|脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)
+FirstSeenTimestamp|文字列|デバイスで製品の CVE が初めて表示された場合。
+Id|String|レコードの一意の識別子。  
+LastSeenTimestamp|文字列|デバイスで CVE が最後に表示された時刻。
+OSPlatform|文字列|デバイスで実行されているオペレーティング システムのプラットフォーム。同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 11 Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+RbacGroupName|文字列|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
+RecommendationReference|文字列|このソフトウェアに関連する推奨事項 ID への参照。
+RecommendedSecurityUpdate |文字列|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。
+RecommendedSecurityUpdateId |文字列|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子
+RegistryPaths |Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。
+SoftwareName|文字列|ソフトウェア製品の名前。
+SoftwareVendor|文字列|ソフトウェア ベンダーの名前。
+SoftwareVersion|文字列|ソフトウェア製品のバージョン番号。
+状態|文字列|**New** (デバイスに導入された新しい脆弱性の場合)。 **修正** 済み (デバイスにもう存在しない脆弱性の場合、修復されたという意味です)。 **更新されました** (変更されたデバイスの脆弱性の場合)。 変更の可能性は、CVSS スコア、悪用可能性レベル、重大度レベル、DiskPaths、RegistryPaths、RecommendedSecurityUpdate などです。
+VulnerabilitySeverityLevel|文字列|CVSS スコアに基づくセキュリティ脆弱性に割り当てられた重大度レベルと、脅威の状況の影響を受ける動的要因。
 
 ## <a name="see-also"></a>関連項目
 

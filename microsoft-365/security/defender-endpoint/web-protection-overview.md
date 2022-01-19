@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 503db220cc9df0d643a9ad9a0b76b34cae05e88d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d21fdd481ade59ca869d5cfe086e537c0c431228
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164720"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074644"
 ---
 # <a name="web-protection"></a>Web 保護
 
@@ -148,16 +148,16 @@ SmartScreen クラウド サービスが応答を許可、ブロック、また�
 
 ```kusto
 DeviceEvents
-| where ActionType == "SmartScreenUrlWarning"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
 | where Experience == "CustomBlockList"
 ```
 
 同様に、以下のクエリを使用して、ネットワーク保護から発信される WCF ブロック (サードパーティ ブラウザーの WCF ブロックなど) を一覧表示できます。 ActionType が更新され、'Experience' が 'ResponseCategory' に変更された点に注意してください。
 
 ```kusto
-DeviceEvents 
+DeviceEvents
 | where ActionType == "ExploitGuardNetworkProtectionBlocked"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)

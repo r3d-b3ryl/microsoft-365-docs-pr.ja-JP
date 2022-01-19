@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5afa98c4455387be673186854528dcd776e151f2
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: dad3ea9fe4297d93864032130e3f6d6b5f6e4e82
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531851"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074620"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -34,7 +34,7 @@ ms.locfileid: "61531851"
 > [!IMPORTANT]
 > このテーブルは現在ベータ版で、Azure Active Directory (AAD) サインイン イベントをハントするために、短期的に `AADSignInEventsBeta` 提供されています。 このテーブルのアクティビティを収集Azure Active Directory Premium P2表示するには、ユーザーライセンスが必要です。 すべてのサインイン スキーマ情報は、最終的にテーブルに移動 `IdentityLogonEvents` します。
 
-高度 `AADSignInEventsBeta` な検索スキーマの表には、対話型および非対話型Azure Active Directoryに関する情報が含まれている。詳細については、「サインイン アクティビティ レポート - プレビュー Azure Active Directory[サインイン」を参照してください](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。 
+高度 `AADSignInEventsBeta` な検索スキーマの表には、対話型および非対話型Azure Active Directoryに関する情報が含まれている。詳細については、「サインイン アクティビティ レポート - プレビュー Azure Active Directory[サインイン」を参照してください](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
 
 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。 高度な検索スキーマの他のテーブルの詳細については、高度な検索 [リファレンスを参照してください](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)。
 

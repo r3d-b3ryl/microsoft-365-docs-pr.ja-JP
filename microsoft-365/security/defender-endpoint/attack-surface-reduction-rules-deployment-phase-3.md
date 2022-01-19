@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5fb67e6bdd5a6ddbfa61147f1d7adba558c8cf02
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8cd03198fb94bfba582fb148b1f8f0da00beecf1
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873922"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074764"
 ---
-# <a name="attack-surface-reduction-rules-deployment-phase-3-implement"></a>攻撃表面の縮小ルールの展開フェーズ 3: 実装
+# <a name="asr-rules-deployment-phase-3-implement"></a>ASR ルールの展開フェーズ 3: 実装
 
 実装フェーズでは、リングをテストから機能状態に移動します。
 
@@ -127,10 +127,10 @@ ms.locfileid: "61873922"
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
-[ASR ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
+[ASR ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
 
-[ASR ルール 展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[フェーズ 1: 計画](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR ルール 展開フェーズ 2 - テスト](attack-surface-reduction-rules-deployment-phase-2.md)
+[フェーズ 2: テスト](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR ルール 展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
+[フェーズ 4: オペレーショナル化](attack-surface-reduction-rules-deployment-phase-4.md)

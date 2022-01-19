@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6a1698be8d0221987d3e70ed0004feb1148e03d2
-ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
+ms.openlocfilehash: 8e402bf2b2135e180094187bcabac905a70e2bde
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60972062"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074380"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Microsoft 365 のインサイダー リスク管理について
 
@@ -59,7 +59,7 @@ Insider リスク管理は、次の原則を中心に行います。
 - **統合:** コンプライアンス ソリューション全体にわたる統合Microsoft 365ワークフロー。
 - **操作可能**: レビューアー通知、データ調査、およびユーザー調査を有効にする分析情報を提供します。
 
-## <a name="identifying-potential-risks-with-analytics-preview"></a>分析による潜在的なリスクの特定 (プレビュー)
+## <a name="identifying-potential-risks-with-analytics"></a>分析による潜在的なリスクの特定
 
 Insider リスク分析では、インサイダー リスク ポリシーを構成することなく、組織内の潜在的なインサイダー リスクの評価を行うことができます。 この評価は、組織が高いユーザー リスクの潜在的領域を特定し、構成することを考えるべきインサイダー リスク マネジメント ポリシーの種類と範囲を特定するのに役立ちます。 この評価は、既存のインサイダー リスク ポリシーの追加のライセンスまたは将来の最適化のニーズを判断するのにも役立ちます。
 

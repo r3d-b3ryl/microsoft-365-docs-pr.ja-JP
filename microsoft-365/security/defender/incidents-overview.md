@@ -17,17 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 54d80dca5d1f2253aed3995b64097bfb911e45d8
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: e44d2b76a3814c751fe4a9d82645c732e2f53ca7
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914430"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62073738"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>インシデント対応とMicrosoft 365 Defender
 
@@ -66,7 +67,7 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>インシデントとアラート (Microsoft 365 Defender ポータル)
 
-インシデント ポータル **(&)** の&で>インシデントからのインシデントを [security.microsoft.com 管理](https://security.microsoft.com)Microsoft 365 Defenderします。 次に例を示します。
+インシデント ポータルのクイック 起動でインシデント &**アラート>インシデント** からインシデントを <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="ポータルの [インシデント] ページMicrosoft 365 Defenderします。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -214,8 +215,8 @@ Microsoft 製品全体の SecOps の詳細については、次のリソース�
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="インシデントメール通知の通知設定。" lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
 
-5. **[次へ]** を選択します。 [受信者 **] ページ** で、インシデント通知を受信する電子メール アドレスを追加します。 新しい **メール アドレスを** 入力した後、[追加] を選択します。 通知をテストし、受信者が受信トレイで受信を確認するには、[テストメールの送信 **] を選択します**。 
-6. **[次へ]** を選択します。 [ルール **の確認] ページ** で、ルールの設定を確認し、[ルールの作成] **を選択します**。 受信者は、設定に基づいて電子メールを介してインシデント通知の受信を開始します。
+5. 次へ] を選択します。 [受信者 **] ページ** で、インシデント通知を受信する電子メール アドレスを追加します。 新しい **メール アドレスを** 入力した後、[追加] を選択します。 通知をテストし、受信者が受信トレイで受信を確認するには、[テストメールの送信 **] を選択します**。 
+6. 次へ] を選択します。 [ルール **の確認] ページ** で、ルールの設定を確認し、[ルールの作成] **を選択します**。 受信者は、設定に基づいて電子メールを介してインシデント通知の受信を開始します。
 
 既存のルールを編集するには、ルールの一覧からルールを選択します。 ルール名を持つウィンドウで、[ルールの編集] を選択し、[基本]ページ、[通知設定] ページ、および [受信者] ページで変更を **行** います。 
 
@@ -251,7 +252,7 @@ Microsoft Learn のこの学習モジュールを使用して、インシデン�
 
 セキュリティ チームの役割に基づいて、次の表に従います。
 
-| Role | 手順 |
+| 役割 | 手順 |
 |:-------|:-----|
 | インシデントレスポンダー (Tier 1) | ポータルの [インシデント] ページからインシデント キューをMicrosoft 365 Defenderします。 グループ プロフィールでは次の操作ができます。 <ul><li> 重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。 </li></ul> |
 | セキュリティ調査担当者またはアナリスト (Tier 2) | <ol><li> ポータル[の [](investigate-incidents.md)インシデント] ページからインシデントの調査をMicrosoft 365 Defenderします。 </li><li> フィッシング攻撃 [、パスワード スプレー攻撃](/security/compass/incident-response-playbooks) 、アプリ同意許可攻撃の詳細なガイダンスについては、次のインシデント対応プレイブックを参照してください。 </li></ol> |

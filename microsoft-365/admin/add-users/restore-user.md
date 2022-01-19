@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: ユーザー アカウントを削除した後 30 日以内に、アカウントとすべてのデータを復元し、ユーザーは同じアカウントでサインインできます。
-ms.openlocfilehash: 093e3d34f4f92e633fb7ece232d4f5abcc912e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc011f9589d789a7eb2faa332a104ef670cf6590
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161560"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074488"
 ---
 # <a name="restore-a-user"></a>ユーザーを復元する
    
@@ -39,7 +39,7 @@ ms.locfileid: "60161560"
   
 - アカウントに割り当て可能なライセンスを確認します。
     
-- ビジネスで Active Directory を使用している場合、ユーザー アカウントの復元に関するインストルトションについては、「How to troubleshoot deleted user account in Office 365 」[を参照してください](/office365/troubleshoot/active-directory/restore-deleted-user-accounts)。 
+- ビジネスで Active Directory を使用している場合は、ユーザー アカウントを復元する手順については、「ユーザー アカウントで削除されたユーザー アカウントをトラブルシューティングする方法」を[参照](/office365/troubleshoot/active-directory/restore-deleted-user-accounts)Office 365。 
     
 ## <a name="restore-one-or-more-user-accounts"></a>1 つ以上のユーザー アカウントを復元する
 
@@ -72,9 +72,9 @@ ms.locfileid: "60161560"
     
 4. アカウントの復元に問題があったことを示すメッセージが表示されます。次のいずれかの操作を行います。
     
-  - 復元をキャンセルし、現在のアクティブなユーザーの名前を変更します。もう一度復元を試みます。
+     - 復元をキャンセルし、現在のアクティブなユーザーの名前を変更します。もう一度復元を試みます。
     
-  - または、ユーザーの新しいプライマリ メール アドレスを入力し、[復元] を **選択します**。
+     - または、ユーザーの新しいプライマリ メール アドレスを入力し、[復元] を **選択します**。
     
 5. 結果を確認し、[ **閉じる**] を選びます。
     

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 04e2ac7a29dddb9fe02e558e6ba545c51048bd51
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 2fc9870871641bb7239a6dcdcdf9f54334726384
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284243"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074716"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>デバイスごとのセキュリティで保護された構成評価をエクスポートする
 
@@ -96,7 +96,7 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 プロパティ (ID)|データ型|説明|返される値の例
 ---|---|---|---
 ConfigurationCategory|string|構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|セキュリティ コントロール
-ConfigurationId|文字列|特定の構成の一意の識別子|scid-10000
+ConfigurationId|string|特定の構成の一意の識別子|scid-10000
 ConfigurationImpact|string|構成が全体の構成スコアに与える影響の評価 (1-10)|9 
 ConfigurationName|string|構成の表示名|デバイスを Microsoft Defender for Endpoint にオンボードする
 ConfigurationSubcategory|string|構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。|オンボード デバイス

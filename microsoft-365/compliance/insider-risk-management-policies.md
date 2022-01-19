@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 0bb25be1633ddb3f653d640a0812bf0a14344309
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: fb76ec7c64e61faccc106f3db874756867fdeddc
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374618"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62073714"
 ---
 # <a name="insider-risk-management-policies"></a>インサイダー リスクの管理。
 
@@ -39,11 +39,11 @@ ms.locfileid: "61374618"
 
 ![Insider リスク管理ポリシー ダッシュボード。](../media/insider-risk-policy-dashboard.png)
 
-## <a name="policy-recommendations-from-analytics-preview"></a>分析からのポリシーの推奨事項 (プレビュー)
+## <a name="policy-recommendations-from-analytics"></a>分析からのポリシーの推奨事項
 
 Insider リスク分析では、インサイダー リスク ポリシーを構成することなく、組織内の潜在的なインサイダー リスクの評価を行うことができます。 この評価は、組織が高いユーザー リスクの潜在的領域を特定し、構成することを考えるべきインサイダー リスク マネジメント ポリシーの種類と範囲を特定するのに役立ちます。
 
-インサイダー リスクの分析とポリシーの推奨事項の詳細については、[「インサイダー リスク管理設定: 分析 (プレビュー)」](insider-risk-management-settings.md#analytics) をご覧ください。
+インサイダー リスク分析とポリシーの推奨事項の詳細については [、「Insider リスク管理設定: Analytics」を参照してください](insider-risk-management-settings.md#analytics)。
 
 ## <a name="policy-templates"></a>ポリシー テンプレート
 

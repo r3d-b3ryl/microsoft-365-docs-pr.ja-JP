@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e241ae3b5250839d98d1692f38fb36333e9a69ca
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 1438e346f693ede4a54eeb7c850a2d8cd4164129
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218672"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074524"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>SIEM ツールを Microsoft Defender for Endpoint に統合する
 
@@ -38,7 +38,7 @@ ms.locfileid: "61218672"
 >
 > [Microsoft Defender for Endpoint Alert は](alerts.md) 、デバイスで発生した 1 つ以上の疑わしいイベントまたは悪意のあるイベントとその関連する詳細から構成されます。 Microsoft Defender for Endpoint Alert API は、アラートの使用に関する最新の API であり、各アラートに関連する証拠の詳細な一覧を含む。 詳細については、「Alert メソッドと[プロパティ」および「List alerts」](alerts.md)[を参照してください](get-alerts.md)。
 
-Microsoft Defender for Endpoint は、環境にインストールされている特定の SIEM ソリューションまたはコネクタを表す登録済み AAD アプリケーションの OAuth 2.0 認証プロトコルを使用して、Azure Active Directory (AAD) のエンタープライズ テナントから情報を取り込むセキュリティ情報とイベント管理 (SIEM) ツールをサポートしています。 
+Microsoft Defender for Endpoint は、環境にインストールされている特定の SIEM ソリューションまたはコネクタを表す登録済み AAD アプリケーションの OAuth 2.0 認証プロトコルを使用して、Azure Active Directory (AAD) のエンタープライズ テナントから情報を取り込むセキュリティ情報とイベント管理 (SIEM) ツールをサポートしています。
 
 詳細については、以下を参照してください。
 
@@ -67,21 +67,21 @@ Microsoft Defender for Endpoint アラート API の詳細については [、�
 
 ### <a name="splunk"></a>Splunk
 
-以下をMicrosoft 365 Defender Splunk 用のアドオンを使用します。 
+以下をMicrosoft 365 Defender Splunk 用のアドオンを使用します。
 
-- エンドポイント通知の Microsoft Defender の取り込み 
-- Microsoft Defender for Endpoint のアラートを Splunk 内から更新する 
+- エンドポイント通知の Microsoft Defender の取り込み
+- Microsoft Defender for Endpoint のアラートを Splunk 内から更新する
 
 Splunk 用のMicrosoft 365 Defender詳細については[、「splunkbase」を参照してください](https://splunkbase.splunk.com/app/4959/)。
 
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 
-Microsoft 365 Defender 用の新しい SmartConnector は、Microsoft Defender for Endpoint を含むすべての Microsoft 365 Defender 製品からのアラートを含むインシデントを ArcSight に取り込み、これらを Common Event Framework (CEF) にマップします。 
+Microsoft 365 Defender 用の新しい SmartConnector は、Microsoft Defender for Endpoint を含むすべての Microsoft 365 Defender 製品からのアラートを含むインシデントを ArcSight に取り込み、これらを Common Event Framework (CEF) にマップします。
 
 新しい ArcSight SmartConnector for Microsoft 365 Defenderについては[、「ArcSight 製品」のドキュメントを参照してください](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender)。
 
 SmartConnector は、以前の FlexConnector のデータをMicrosoft 365 Defender。
-  
+
 ### <a name="ibm-qradar"></a>IBM QRadar
 
 >[!NOTE]

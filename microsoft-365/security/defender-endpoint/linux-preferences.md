@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7df7915351a4982c3f91f4835002a87493f4f79c
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 0bfd97739637365e7f04d4b824c0c9cde50a0418
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401488"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074500"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -104,7 +104,7 @@ ms.locfileid: "61401488"
 
 #### <a name="enabledisable-behavior-monitoring"></a>動作監視を有効または無効にする 
 
-デバイスで動作の監視とブロック機能を有効にするかどうかを決定します。セキュリティ保護の有効性を向上させるために、この機能を有効に保つことをお勧めします。
+デバイスで動作の監視とブロック機能を有効にするかどうかを決定します。 セキュリティ保護の有効性を向上させるために、この機能を有効に保つことをお勧めします。
 
 <br>
 
@@ -595,7 +595,7 @@ ms.locfileid: "61401488"
 }
 ```
 
-  ## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>構成プロファイルにタグまたはグループ ID を追加する
+## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>構成プロファイルにタグまたはグループ ID を追加する
 
 コマンドを初 `mdatp health` めて実行すると、タグとグループ ID の値は空白になります。 ファイルにタグまたはグループ ID を追加 `mdatp_managed.json` するには、次の手順に従います。
   
@@ -622,7 +622,7 @@ ms.locfileid: "61401488"
   > [!NOTE]
   > ブロックの最後の中かっこの後にコンマを追加することを忘 `cloudService` れないでください。 また、Tag または Group ID ブロックを追加した後で、2 つの中かっこが閉じ込め (上記の例を参照してください) を確認してください。
   
-  ## <a name="configuration-profile-validation"></a>構成プロファイルの検証
+## <a name="configuration-profile-validation"></a>構成プロファイルの検証
 
 構成プロファイルは、有効な JSON 形式のファイルである必要があります。 これを確認するために使用できるツールは多数ある。 たとえば、デバイスにインストール `python` されている場合は、次の情報を使用します。
 

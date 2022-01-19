@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e447f764ea8b5f5d0a44a7233812845592157ee
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 42fac7b4dd76831339b5b76ea21787ae288b636a
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873611"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074692"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -61,10 +61,10 @@ ms.locfileid: "61873611"
     - [ 1803 (バージョンRS 4)](/windows/whats-new/whats-new-windows-10-version-1803) と [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [バージョン1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) と[KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **macOS** - パブリック プレビューにのみ適用され、最低限必要なバージョン: 101.43.84 
+  - **macOS** - パブリック プレビューにのみ適用されます。最小必須バージョン: 101.43.84 
   
-  - **Linux** - パブリック プレビューにのみ適用され、最低限必要なバージョン: 101.45.13 
-    
+  - **Linux** - パブリック プレビューにのみ適用できる最小必須バージョン: 101.45.13 
+
   - **Windows Server 2012 R2** - と [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
   - **Windows Server 2016** - と [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -72,10 +72,8 @@ ms.locfileid: "61873611"
   - **Windows Server 2019**
     - バージョン 1903 以降 ( [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 以降
     - バージョン 1809 ( [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
-    
-  - **Windows Server 2022**
 
-       
+  - **Windows Server 2022**
 
 - **[詳細設定] ページからライブ応答を有効にします**。
 
@@ -196,10 +194,9 @@ ms.locfileid: "61873611"
 | run  | デバイス上のライブラリから PowerShell スクリプトを実行します。  | Y  | Y  | Y  |
 | library  | ライブ応答ライブラリにアップロードされたファイルを一覧表示します。  | Y  | Y  | Y  |
 | putfile  | ライブラリからデバイスにファイルを書き込みます。 ファイルは作業フォルダーに保存され、デバイスが既定で再起動すると削除されます。  | Y  | Y  | Y  |
-| remediate  | デバイス上のエンティティを修復します。 修復アクションは、エンティティの種類によって異なります: ファイル: プロセスの削除: 停止、イメージ ファイルの削除 サービス: 停止、イメージ ファイルの削除 レジストリ エントリ: スケジュールされたタスクの削除: スタートアップ フォルダー項目の削除: ファイルの削除 注意: このコマンドには前提条件のコマンドがあります。 -auto コマンドを修復と組み合わせて使用して、前提条件のコマンドを自動的に実行できます。  | Y  | Y  | Y  |
+| remediate  | デバイス上のエンティティを修復します。 修復アクションは、エンティティの種類によって異なります: ファイル: プロセスの削除: 停止、イメージ ファイルの削除 サービス: 停止、イメージ ファイルの削除 レジストリ エントリ: スケジュールされたタスクの削除: スタートアップ フォルダー項目の削除: ファイルの削除 注意: このコマンドには前提条件のコマンドがあります。 -auto コマンドを修復と組み合わせて使用すると、前提条件コマンドを自動的に実行できます。  | Y  | Y  | Y  |
 | scan  | Defender for Endpoint サービスへの接続を維持しながら、デバイスをネットワークから切断します  | N  | Y  | Y  |
 | undo  | 修復されたエンティティを復元します。  | Y  | Y  | Y  |
-
 
 ## <a name="use-live-response-commands"></a>ライブ応答コマンドを使用する
 

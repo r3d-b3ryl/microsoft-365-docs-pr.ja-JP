@@ -1,5 +1,5 @@
 ---
-title: 攻撃面の減少 (ASR) ルールを展開する
+title: ASR ルールの展開の概要
 description: 攻撃表面の縮小ルールを展開するガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
@@ -17,16 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9b9ef111fe704e1d65176dd90222d404d684e87e
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 92bc38c919a31a742ea5562f40d5d9ab2686290d
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531325"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074740"
 ---
-# <a name="attack-surface-reduction-rules-deployment-guide"></a>攻撃表面の縮小ルールの展開ガイド
+# <a name="asr-rules-deployment-overview"></a>ASR ルールの展開の概要
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 攻撃表面は、組織がサイバー脅威や攻撃に対して脆弱なすべての場所です。 組織の攻撃表面には、攻撃者が組織のデバイスやネットワークを侵害する可能性があるすべての場所が含まれています。 攻撃の表面を減らすことは、組織のデバイスとネットワークを保護する手段であり、攻撃方法が少ない攻撃者を残します。 攻撃表面の縮小 (ASR) ルール (Microsoft Defender for Endpoint で見つかった多くのセキュリティ機能の 1 つ) を構成すると、役立ちます。
 
@@ -122,13 +122,13 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
-[ASR ルール 展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[フェーズ 1: 計画](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR 展開フェーズ 2 - テスト](attack-surface-reduction-rules-deployment-phase-2.md)
+[フェーズ 2: テスト](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR ルール 展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
+[フェーズ 3: 実装](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[ASR ルール 展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
+[フェーズ 4: オペレーショナル化](attack-surface-reduction-rules-deployment-phase-4.md)
 
 ## <a name="reference"></a>Reference
 

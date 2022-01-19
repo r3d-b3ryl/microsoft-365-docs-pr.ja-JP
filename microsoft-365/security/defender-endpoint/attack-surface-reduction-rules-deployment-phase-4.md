@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 01556e67738ffac18a46c09c85bc2e70d1f5f29e
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 14f1174ab52621fa7b958a5be66c30437a04b3c6
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531692"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074752"
 ---
-# <a name="attack-surface-reduction-rules-deployment-phase-4-operationalize"></a>攻撃表面の縮小ルールの展開フェーズ 4: 運用
+# <a name="asr-rules-deployment-phase-4-operationalize"></a>ASR ルールの展開フェーズ 4: 運用化
 
 ASR ルールを完全に展開した後は、ASR 関連のアクティビティを監視して対応するプロセスが整っている必要があります。
 
@@ -76,10 +76,10 @@ AsrOfficeChildProcess ルールに焦点を当て、関連する実際のファ�
 
 ## <a name="topics-in-this-deployment-collection"></a>この展開コレクションのトピック
 
-[ASR ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
+[ASR ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
 
-[ASR ルール 展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[フェーズ 1: 計画](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR ルール 展開フェーズ 2 - テスト](attack-surface-reduction-rules-deployment-phase-2.md)
+[フェーズ 2: テスト](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR ルール 展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
+[フェーズ 4: オペレーショナル化](attack-surface-reduction-rules-deployment-phase-4.md)

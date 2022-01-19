@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db1190d72bb721dbbbd3a75bb7d8a9821d5f8ff3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8865bf2138947238980b533b8b47ee9663fd5448
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873762"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074536"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>IP および URL/ドメインのインジケーターを作成
 
@@ -39,23 +39,23 @@ Defender for Endpoint は、Microsoft が悪意のある IPS/URL と見なす動
 
 IP と URL またはドメインのインジケーターを作成することで、独自の脅威インテリジェンスに基づいて、IPs、URL、またはドメインを許可またはブロックできます。 危険なアプリを開いた場合は、ユーザーにプロンプトを表示するように警告することもできます。 プロンプトはアプリの使用を停止しませんが、アプリの適切な使用方法を説明するカスタム メッセージと会社ページへのリンクを提供できます。 ユーザーは警告をバイパスし、必要に応じてアプリを引き続き使用できます。
 
-
 特定のグループが他のグループよりも多かれ少なかれ危険にさらされている場合は、設定ページまたはコンピューター グループを使用してこれを行えます。
 
 > [!NOTE]
 > IP アドレスInter-Domainクラスレス ルーティング (CIDR) 表記はサポートされていません。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
+
 IPS、URL、またはドメインのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
 - URL/IP 許可とブロックは、Defender for Endpoint コンポーネントのネットワーク保護をブロック モードで有効にしています。 ネットワーク保護と構成手順の詳細については、「ネットワーク保護を有効 [にする」を参照してください](enable-network-protection.md)。
 - マルウェア対策クライアントのバージョンは、4.18.1906.x 以降である必要があります。 
 - Windows 10 バージョン 1709 以降、Windows 11、Windows Server 2016、Windows Server 2012 R2、Windows Server 2019、Windows Server 2022 のコンピューターでサポートされます。
-   
-    >[!NOTE]
-    >Windows Server 2016および Windows Server 2012 R2 は、この機能を動作するには、「オンボード サーバー Windows[](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)を使用してオンボードする必要があります。 
 
-- [高度 **な機能] でカスタム** ネットワーク インジケーターが有効 **Microsoft 365 Defender > 設定 >確認します**。 詳細については、「高度な機能 [」を参照してください](advanced-features.md)。
+    > [!NOTE]
+    > Windows Server 2016および Windows Server 2012 R2 は、この機能を動作するには、「オンボード サーバー Windows[](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)を使用してオンボードする必要があります。
+
+- 高度な **機能でカスタム ネットワーク** インジケーターが有効 **Microsoft 365 Defender設定** \>  \> **確認します**。 詳細については、「高度な機能 [」を参照してください](advanced-features.md)。
 - iOS でのインジケーターのサポートについては、「カスタム インジケーターの [構成」を参照してください](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)。
 
 > [!IMPORTANT]
