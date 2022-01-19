@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d13c587c86874354e05422b2ff105d923e234c61
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: ff515e927affcc02d92c6fe54b38ed6faf756d9f
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62054886"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074704"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -65,7 +65,7 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 |-----------|-------:|----|----|--------|----|
 |[ラベルを手動で適用、変更、または削除する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |新しいドキュメントに[既定の ラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|既存のドキュメントに[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do) | プレビュー: [ベータ チャネル](https://office.com/insider) | プレビュー: [ベータ チャネル](https://office.com/insider) | レビュー中 | レビュー中 | ロールアウト: [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|既存のドキュメントに[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do) | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider) にロールアウト | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider) にロールアウト | レビュー中 | レビュー中 | ロールアウト: [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ラベル変更の正当な理由を要求する](sensitivity-labels.md#what-label-policies-can-do)                     | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上  <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[カスタム ヘルプ ページへのリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[コンテンツをマークする](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -119,23 +119,25 @@ Office 組み込みのラベル付けクライアントは、Microsoft 365 コ�
 
 Office 組み込みのラベル付けクライアントを使用するには、コンプライアンス センターと[サポートされているバージョンの Office](#support-for-sensitivity-label-capabilities-in-apps) からユーザーに 1 つ以上の[ラベル ポリシーを公開](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)する必要があります。
 
-これらの条件の両方が満たされているが、Office アプリの組み込みのラベル付けクライアントをオフにする必要がある場合は、次のグループ ポリシー設定を使用します。
+これらの条件の両方が満たされているが、Windows Office アプリの組み込みのラベル付けクライアントをオフにする必要がある場合は、次のグループ ポリシー設定を使用します:
 
 1. **ユーザーの構成/管理用テンプレート/Microsoft Office 2016/セキュリティ設定** に移動します。
 
 2. **[Office の秘密度機能を使用して、秘密度ラベルを適用および表示する]** を **0** に設定します。 
  
-グループ ポリシーを使用するか、[Office クラウド ポリシー サービス](/DeployOffice/overview-office-cloud-policy-service)を使用して、この設定を展開します。 この設定は、Office アプリが再起動したときに有効になります。
+グループ ポリシーを使用するか、[Office クラウド ポリシー サービス](/DeployOffice/overview-office-cloud-policy-service)を使用して、この設定を展開します。 この設定は、Office アプリが再起動したときに有効になります。 
+
+この設定は Windows Office アプリに固有であるため、秘密度ラベル (Power BI など) や他のプラットフォーム (macOS、モバイル デバイス、Office for the web など) をサポートする Windows 上の他のアプリには影響しません。 一部またはすべてのユーザーにすべてのアプリ (すべてのプラットフォーム) で秘密度ラベルを表示して使用したくない場合は、それらのユーザーに秘密度ラベル ポリシーを割り当てないでください。 
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 組み込みのラベル付けクライアントと Azure Information Protection クライアント
 
-ユーザーが [Azure Information Protection クライアント](/azure/information-protection/rms-client/aip-clientv2)を Windows コンピューターにインストールしている場合、既定では、組み込みのラベル付けクライアントは[サポートするOffice アプリ](#labeling-client-for-desktop-apps)でオフになっています。 組み込みラベルは、Azure Information Protection クライアントで使用される Office アドインを使用しないため、安定性とパフォーマンスの向上という利点があります。 また、高度な分類子などの最新の機能もサポートしています。
+ユーザーが [Azure Information Protection クライアント](/azure/information-protection/rms-client/aip-clientv2)を Windows コンピューターにインストールしている場合、既定では、組み込みのラベル付けクライアントは[サポートする Windows Office アプリ](#labeling-client-for-desktop-apps)でオフになっています。 組み込みラベルは、Azure Information Protection クライアントで使用される Office アドインを使用しないため、安定性とパフォーマンスの向上という利点があります。 また、高度な分類子などの最新の機能もサポートしています。
 
 Azure Information Protection クライアントをアンインストールするのではなく、Azure Information Protection アドインが Office アプリに読み込まれないようにすることをお勧めします。 その後、Office アプリに組み込まれているラベル付けの利点と、Office アプリの外部で Azure Information Protection クライアントラベル付けファイルの利点を得ることができます。 たとえば、Azure Information Protection クライアントは、エクスプローラーと PowerShell を使用して、すべてのファイルの種類にラベルを付けることができます。 Office アプリの外部でサポートされるラベル付け機能の詳細については、「[秘密度ラベルと Azure Information Protection](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)」 を参照してください。
 
-Office アプリで Azure Information Protection クライアント アドインが読み込まれないようにするには、「[Office 2013 および Office 2016 プログラムのグループ ポリシー設定が原因で読み込まれたアドインがない](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)」に記載されている 「**管理されたアドインの一覧**」グループ ポリシー設定を使用します。
+Windows Office アプリで Azure Information Protection クライアント アドインが読み込まれないようにするには、「[Office 2013 および Office 2016 プログラムのグループ ポリシー設定が原因で読み込まれたアドインがない](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)」に記載されている 「**管理されたアドインのリスト**」グループ ポリシー設定を使用します。
 
-組み込みのラベル付けをサポートする Office アプリの場合、Microsoft Word 2016、Excel 2016、PowerPoint 2016、Outlook 2016 の構成を使用し、Azure Information Protection クライアントに次のプログラム識別子 (ProgID) を指定し、オプションを [**0: アドインは常に無効 (ブロックされます)**] に設定します
+組み込みのラベル付けをサポートする Office アプリの場合、Microsoft Word 2016、Excel 2016、PowerPoint 2016、Outlook 2016 の構成を使用し、Azure Information Protection クライアントに次のプログラム識別子 (ProgID) を指定し、オプションを **[0: アドインは常に無効 (ブロックされます)]** に設定します
 
 |アプリケーション  |ProgID  |
 |---------|---------|
