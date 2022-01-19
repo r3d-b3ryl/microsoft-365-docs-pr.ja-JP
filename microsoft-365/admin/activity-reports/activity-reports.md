@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: a881f6829d99ef8e7a47340140609cbc75d7e5c3
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 36176ceee1ace993a95e661ab5d71ee062956692
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370310"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074404"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -75,7 +75,7 @@ ms.locfileid: "61370310"
 
 - レポート閲覧者
 
-- Teams サービス管理者
+- Teams 管理者
 
 - Teams 通信管理者
     
@@ -110,7 +110,7 @@ ms.locfileid: "61370310"
 |[Skype for Business Online の電話会議開催者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
 |[Skype for Business Online の電話会議参加者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
 |[Skype for Business Online のピアツーピア アクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
-|[Viva ラーニング アクティビティ](viva-learning-activity.md)|はい|該当なし|N/A|N/A|該当なし|
+|[Viva ラーニング アクティビティ](viva-learning-activity.md)|はい|該当なし|該当なし|該当なし|該当なし|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 [^2]: The service is not available in the environment so no plan to release the report.
