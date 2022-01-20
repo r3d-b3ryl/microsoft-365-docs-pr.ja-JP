@@ -76,7 +76,6 @@
 #### [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
 #### [オンボーディングまたはオフボーディングの通知ルールを作成する](onboarding-notification.md)
 
-#### [アプリケーション ライセンス条項](mde-terms-windows.md)
 
 
 ### [他のオペレーティング システム上の Microsoft Defender for Endpoint]()
@@ -118,7 +117,7 @@
 
 ##### [プライバシー](mac-privacy.md)
 ##### [リソース](mac-resources.md)
-##### [アプリケーション ライセンス条項](mde-terms-mac.md)
+
 
 #### [Linux 用 Microsoft Defender for Endpoint]()
 ##### [Linux 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-linux.md)
@@ -185,7 +184,6 @@
 
 ###### [プライバシー](ios-privacy.md)
 
-##### [Microsoft Defender for Endpoint アプリケーション ライセンス条項](mde-terms-mobile.md) 
 
 ### [Microsoft エンドポイント マネージャーを使用してデバイス上の Microsoft Defender for Endpoint の構成設定を管理する](security-config-management.md)
 
@@ -270,13 +268,14 @@
 #### [攻撃面の減少を理解して使用する](overview-attack-surface-reduction.md)
 #### [攻撃面の減少 (ASR) ルール]()
 ##### [ASR ルールに関する詳細情報](attack-surface-reduction.md)
-##### [ASR ルールの展開](attack-surface-reduction-rules-deployment.md)
-###### [ASR ルール 展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
-###### [ASR ルール 展開フェーズ 2 - テスト](attack-surface-reduction-rules-deployment-phase-2.md)
-###### [ASR ルール 展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
-###### [ASR ルール 展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
+##### [ASR ルールの展開ガイド]()
+###### [ASR ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
+###### [フェーズ 1: 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+###### [フェーズ 2: テスト](attack-surface-reduction-rules-deployment-phase-2.md)
+###### [フェーズ 3: 実装](attack-surface-reduction-rules-deployment-phase-3.md)
+###### [フェーズ 4: 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
 ##### [ASR ルールの参照](attack-surface-reduction-rules-reference.md)
-##### [ASR ルールの代替方法を有効にする](enable-attack-surface-reduction.md)
+##### [ASR ルールの代替構成方法を有効にする](enable-attack-surface-reduction.md)
 #### [攻撃面の減少の FAQ](attack-surface-reduction-faq.yml)
 
 ### 次世代の保護
