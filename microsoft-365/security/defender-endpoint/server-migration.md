@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a2fa6a6c4cbdb0ac36d62e4fa78d18a05a345f51
-ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
+ms.openlocfilehash: 1a78d99650015aa0da92e35787a164b5c5a07b71
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62009011"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156258"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>以前の MMA ベースの Microsoft Defender for Endpoint ソリューションからのサーバー移行シナリオ
 
@@ -43,7 +43,8 @@ ms.locfileid: "62009011"
 > Microsoft Defender for Endpoint がインストールされているオペレーティング システムのアップグレードはサポートされていません。 アップグレードを進む前にオフボードをアンインストールしてください。
 
 > [!NOTE]
-> プレビュー中に、Microsoft Endpoint Configuration Managerアップグレードを実行するための完全な自動化と統合は、後のリリースの MECM で利用できます。 2107 リリースでは、Endpoint Protection ノードを構成に使用したり、グループ ポリシー、PowerShell、Microsoft エンドポイント マネージャー テナント接続またはローカル構成を使用できます。 さらに、既存の機能を使用して、手動Microsoft Endpoint Configuration Manager手順を自動化できます。この方法については、以下で説明します。
+> プレビュー中に、Microsoft Endpoint Configuration Managerアップグレードを実行するための完全な自動化と統合は、後のリリースの MECM で利用できます。 最新の修正プログラム ロールアップを含む 2107 リリースから、Endpoint Protection ノードを構成に使用したり、グループ ポリシー、PowerShell、Microsoft エンドポイント マネージャー テナント接続またはローカル構成を使用できます。 さらに、既存の機能を使用して、手動Microsoft Endpoint Configuration Manager手順を自動化できます。この方法については、以下で説明します。
+
 
 ## <a name="installer-script"></a>インストーラー スクリプト
 

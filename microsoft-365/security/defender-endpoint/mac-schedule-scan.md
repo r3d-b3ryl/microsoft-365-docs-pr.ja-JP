@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8f957f1a6aa51380152441f26aaeb47b7df58e7b
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 5621ce43443a3e620ef0166c4b362e9dc04becae
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171242"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156330"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする
 
@@ -110,7 +110,7 @@ macOS デバイスで起動されたデーモンを使用 *してスキャン* �
             <key>Hour</key>
             <integer>2</integer>
             <key>Minute</key>
-            <integer>0</integer>
+            <integer>50</integer>
             <key>Weekday</key>
             <integer>5</integer>
         </dict>
@@ -132,10 +132,14 @@ macOS デバイスで起動されたデーモンを使用 *してスキャン* �
     launchctl start <your file name>
     ```
 
-3. スケジュールされたスキャンは、p リストで定義した日付、時刻、および頻度で実行されます。 上記の例では、スキャンは毎週金曜日の午前 2 時に実行されます。 
+3. スケジュールされたスキャンは、p リストで定義した日付、時刻、および頻度で実行されます。 前の例では、スキャンは毎週金曜日の午前 2 時 50 分に実行されます。 
 
-    値 `Weekday` は、週の 5 日目または金曜日を示すために整数 `StartCalendarInterval` を使用します。
-
+    - 値 `Weekday` は、週の 5 日目または金曜日を示すために整数 `StartCalendarInterval` を使用します。 範囲は 0 ~ 7 で、7 は日曜日を表します。
+    - 値 `Day` は `StartCalendarInterval` 、月の 3 日目を示すために整数を使用します。 範囲は 1 ~ 31 です。
+    - 値 `Hour` は `StartCalendarInterval` 、1 日の 2 時間目を示すために整数を使用します。 範囲は 0 ~ 24 です。
+    値 `Minute` は `StartCalendarInterval` 、1 時間の 50 分を示す整数を使用します。 範囲は 0 ~ 59 です。
+    
+    
  > [!IMPORTANT]
  > 起動済みで *実行された* エージェントは、デバイスがスリープ状態の間、スケジュールされた時刻に実行されません。 デバイスがスリープ モードから再開すると、代わりに実行されます。
  >

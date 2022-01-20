@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9962520b08f8feee85ae1e74816fa87b2cd20923
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 862a7a746455d33bdf6779c2b74b76127bc8f010
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074608"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156462"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -64,7 +64,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 - (GA)Microsoft Defender for Office 365イベント データは、イベント ストリーミング API Microsoft 365 Defender使用できます。 イベントの種類の可用性と状態は、ストリーミング API のサポートされるイベントMicrosoft 365 Defender[で確認できます](supported-event-types.md)。
 - (GA)高度なOffice 365利用可能なデータの Microsoft Defender が一般提供されています。
-- (プレビュー)インシデントとアラートをユーザー アカウントに割り当てる
+- (GA)インシデントとアラートをユーザー アカウントに割り当てる
 
   インシデントに関連付けられているすべてのアラートを、インシデントの [インシデントの管理] ウィンドウまたはアラートの [管理] アラート ウィンドウの[割り当て] からユーザー アカウントに割り当てできます。 
 

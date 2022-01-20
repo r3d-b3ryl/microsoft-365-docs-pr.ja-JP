@@ -17,21 +17,21 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49ee01e5bd9cb71b685bc8dcbe290f13f5a3e915
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0f1e9c88c003551ca74c76d6348465f52fdbd171
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164504"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156390"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用したオンボーディング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -44,7 +44,7 @@ ms.locfileid: "61164504"
 
 Defender for Endpoint はさまざまなエンドポイントとツールのオンボーディングをサポートしますが、この記事ではそれらをカバーしません。 サポートされている他の展開ツールと方法を使用した一般的なオンボーディングの詳細については、「オンボードの概要 [」を参照してください](onboarding.md)。
 
-[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)は、複数のサービスを統合するソリューション プラットフォームです。 これには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune) 
+[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)は、複数のサービスを統合するソリューション プラットフォームです。 これには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
 
 -based device management.
 
@@ -65,7 +65,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 プロセスの残りの部分に必要なリンクを次に示します。
 
 - [MEM ポータル](https://aka.ms/memac)
-- [Microsoft Defender for Endpoint](https://securitycenter.windows.com/)
+- [Microsoft 365 Defender](https://security.microsoft.com)
 - [Intune セキュリティのベースライン](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 詳細については、次のMicrosoft エンドポイント マネージャーを参照してください。
@@ -81,7 +81,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 このセクションでは、構成を割り当てるテスト グループを作成します。
 
 > [!NOTE]
-> Intune では、Azure Active Directory (Azure AD) グループを使用してデバイスとユーザーを管理します。 Intune 管理者は、組織のニーズに合わせてグループを設定できます。
+> Intune では、デバイスとユーザーの管理に Azure Active Directory (Azure AD) のグループが使用されます。 Intune 管理者は、組織のニーズに合ったグループを設定できます。
 >
 > 詳細については、「[ユーザーとデバイスを整理するためのグループを追加する](/mem/intune/fundamentals/groups-add)」を参照してください。
 

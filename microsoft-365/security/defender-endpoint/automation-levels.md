@@ -19,16 +19,17 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 61c09938d0fece07d313898a7256bee8ed8c6e16
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: f4baefadc2fe08b7fe909a135228278c8a696f14
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171463"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156006"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>自動調査および修復機能の自動化レベル
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -36,7 +37,7 @@ Microsoft Defender for Endpoint の自動調査および修復 (AIR) 機能は�
 
 - *完全な自動化* (推奨) は、悪意のあると判断されたアーティファクトに対して修復アクションが自動的に実行されます。
 - *半自動化とは、* 一部の修復アクションが自動的に実行されますが、他の修復アクションは承認を待って実行される前に行われます。 (「オートメーションのレベル」 [の表を参照](#levels-of-automation)してください。
-- 保留中か完了かの修復アクションはすべて、アクション センター ( ) で追跡されます [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
+- 保留中か完了かの修復アクションはすべて、アクション センター ( ) で追跡されます [https://security.microsoft.com](https://security.microsoft.com) 。
 
 > [!TIP]
 > 最良の結果を得る場合は、AIR を構成するときに完全自動化を [使用することをお勧めします](configure-automated-investigations-remediation.md)。 過去 1 年間に収集および分析されたデータは、フル オートメーションを使用しているお客様が、低レベルの自動化を使用している顧客よりも 40% 高信頼のマルウェア サンプルが削除されたことを示しています。 完全な自動化は、セキュリティ運用リソースを解放し、戦略的な取り組みにより集中するのに役立ちます。
@@ -49,7 +50,7 @@ Microsoft Defender for Endpoint の自動調査および修復 (AIR) 機能は�
 
 ****
 
-|オートメーション レベル|Description|
+|オートメーション レベル|説明|
 |---|---|
 |**完全 - 脅威を自動的に修復する** <br> (フル オートメーションとも *呼ばれます*)|完全な自動化により、修復アクションは自動的に実行されます。 実行される修復アクションはすべて、[履歴] タブの [[アクション](auto-investigation-action-center.md) センター] で **表示** できます。必要に応じて、修復アクションを元に戻すことができます。 <p> **_完全な自動化は推奨_* され、Microsoft Defender for Endpoint で 2020 年 8 月 16 日以降に作成されたテナントでは既定で選択され、デバイス グループがまだ定義されていません。*|
 |**Semi - 修復の承認が必要** <br> (セミオートメーション *とも呼ばれます*)|このレベルのセミオートメーションでは、修復アクションに対して承認 *が* 必要です。 このような保留中のアクションは、[保留中] タブの [[](auto-investigation-action-center.md)アクション センター] で表示および **承認** できます。 <p> *このレベルのセミオートメーションは、Microsoft Defender for Endpoint で 2020 年 8 月 16 日より前に作成されたテナントに対して既定で選択され、デバイス グループは定義されていません。*|

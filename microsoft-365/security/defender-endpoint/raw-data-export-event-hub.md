@@ -15,34 +15,34 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0dddebc27f776e317090ac3424c27f01f26126ed
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: b1d313ed2980f84318a590df55e0a8d8e7b152ab
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300191"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156558"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Azure イベント ハブに高度なハンティング イベントをストリーミングするように Microsoft Defender for Endpoint を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **適用対象:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 1. テナントに [イベント ハブ](/azure/event-hubs/) を作成します。
 
-2. Azure テナントに [ログイン](https://ms.portal.azure.com/)し、[**Subscriptions > サブスクリプション > リソース プロバイダー> **Microsoft.insights**** に登録します。
+2. Azure テナントに [ログイン](https://ms.portal.azure.com/)し、[サブスクリプション] >[リソース プロバイダー> **Microsoft.insights >に登録** する] に移動します。
 
 ## <a name="enable-raw-data-streaming"></a>生データ ストリーミングを有効にする
 
-1. * Global **Administrator** _ [または](https://securitycenter.windows.com)_* セキュリティ管理者 **として、Microsoft Defender セキュリティ センターに _ログイン_ します。
+1. *グローバル管理者 [_ または _* セキュリティ](https://security.microsoft.com)管理者 ****として**、Microsoft 365 Defenderに _ログイン_ します。
 
-2. [データのエクスポート[設定] ページに移動Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/interoperability/dataexport)
+2. Microsoft Defender ポータル [の [データエクスポート設定]](https://security.microsoft.com/interoperability/dataexport) ページに移動します。
 
 3. [データエクスポート **設定の追加] をクリックします**。
 
@@ -86,7 +86,7 @@ ms.locfileid: "61300191"
 
 イベント プロパティのデータ型を取得するには、次の操作を行います。
 
-1. ログイン[して[詳細](https://securitycenter.windows.com)Microsoft Defender セキュリティ センター]ページ[に移動します](https://securitycenter.windows.com/hunting-package)。
+1. ログイン[して[詳細](https://security.microsoft.com)Microsoft 365 Defender]ページ[に移動します](https://security.microsoft.com/hunting-package)。
 
 2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。
 
@@ -100,7 +100,7 @@ ms.locfileid: "61300191"
 
   ![イベント ハブ リソース Id2 のイメージ。](images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [エンドポイント ストリーミング API 用 Microsoft Defender](raw-data-export.md)

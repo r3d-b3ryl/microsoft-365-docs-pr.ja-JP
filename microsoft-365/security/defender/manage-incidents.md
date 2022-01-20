@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3976ff16d303db93d2ae7929afe1244f8ab1dda5
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 9ef59cc47addce2a8f2171038f5894071549a40b
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121819"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156486"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>インシデントを管理Microsoft 365 Defender
 
@@ -38,8 +38,7 @@ ms.locfileid: "61121819"
 
 インシデント管理は、脅威を確実に含め、対処する上で重要です。
 
-Ratulac-acrolinx-updates インシデント & アラート **>** インシデントからのインシデントは、Microsoft 365 Defender ポータル (security.microsoft.com) のクイック 起動で [管理できます](https://security.microsoft.com)。 次に例を示します。
-
+インシデント ポータル (&) の&**で**>インシデントからのインシデントを管理 [Microsoft 365 Defender](https://security.microsoft.com)できます。security.microsoft.com。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -80,7 +79,7 @@ Microsoft 365 Defender影響を受けるエンドポイントの数、影響を�
 
 ## <a name="assign-an-incident"></a>インシデントの割り当て
 
-インシデントがまだ割り当てられていない場合は、[割り当て] ボックスを選択し、ユーザー アカウント (プレビュー) を指定できます。 インシデントを再割り当てし、アカウント名の横にある "x" を選択して現在の割り当てアカウントを削除し、[割り当て] ボックス **を選択** します。 インシデントの所有権を割り当てると、関連付けられているすべてのアラートに同じ所有権が割り当てされます。
+インシデントがまだ割り当てられていない場合は、[割り当て] ボックスを選択し、ユーザー アカウントを指定できます。 インシデントを再割り当てするには、アカウント名の横にある "x" を選択して現在の割り当てアカウントを削除し、[割り当て] ボックス **を選択** します。 インシデントの所有権を割り当てると、関連付けられているすべてのアラートに同じ所有権が割り当てされます。
 
 インシデント キューをフィルター処理することで、割り当てられたインシデントの一覧を取得できます。 
 

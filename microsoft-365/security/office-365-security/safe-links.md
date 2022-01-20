@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 組織をフィッシングセーフ悪意のある URL を使用する他の攻撃から組織を保護Office 365 Defender for Defender のリンク保護について学習します。 [Teams セーフリンク] を見て、リンク メッセージのセーフを参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76bd9d1eb0d9cb1c88cbdce5c4d0377b2dfac14b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: fc043da2763bf6984062bec903e4f2df7bd6d10d
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943066"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156150"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフ用 Microsoft Defender のリンクOffice 365
 
@@ -208,6 +208,7 @@ Teams 保護が有効になっている セーフ リンク ポリシーにリ�
   - Office iOS または Android デバイス上のアプリを選択します。
   - VisioのWindows。
   - OneNoteブラウザーで使用します。
+  - Outlook EML Windows MSG ファイルを開く際に、このファイルを使用します。
 
 - Office 365は、モダン認証を使用するように構成されています。 詳細については[、「Office 2013、Office 2016、および Office 2019](../../enterprise/modern-auth-for-office-2013-and-2016.md)クライアント アプリの最新の認証のしくみ」を参照してください。
 
@@ -299,7 +300,7 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 新規または既存の セーフ リンク ポリシーのリストにエントリを追加するには、「Create[セーフ Links ポリシー](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) 」または「セーフ リンク ポリシーを変更する」[を参照してください](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
 
-**注意**:
+**注**:
 
 - 次のクライアントは、[リンク] ポリシーの [次の **URL** を書き換えセーフしません。 ポリシーに含まれるユーザーは、次のクライアントでのリンク スキャンの結果に基づいて URL へのアクセスをブロックセーフできます。
   - Microsoft Teams

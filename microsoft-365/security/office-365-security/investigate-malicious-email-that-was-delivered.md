@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc76f546286597c12469e849eab6e62f9a58a6cc
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8b3ff937b014eae69c501812ac542f6537b25f8d
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938170"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156534"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>メールで配信された悪意のある電子メールをMicrosoft 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "61938170"
 > [!NOTE]
 > 修復に関する記事については、こちらを参照 [してください](remediate-malicious-email-delivered-office-365.md)。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 次の要件が満たされていることを確認してください。
 
@@ -83,7 +83,7 @@ Threat Explorer は、メッセージの検索と削除、悪意のあるメー�
 > [!NOTE]
 > エクスプローラーの既定の検索には、現在、ゼロ時間自動削除 (ZAP) によってクラウド メールボックスから削除された配信されたアイテムは含めされません。 この制限は、すべてのビュー (メール マルウェアビュー **や \>** メール フィッシング ビューなど) **\> に適用** されます。 ZAP によって削除されたアイテムを含めるには、ZAP によって削除されたアイテムを含める **配信** アクション セット **を追加する必要があります**。 すべてのオプションを含める場合は、ZAP によって削除されたアイテムを含むすべての配信アクションの結果が表示されます。
 
-1. [電子メール Microsoft 365 Defender] の <https://security.microsofot.com> [メール]**に移動し、& エクスプローラーに** \> **移動します**。 エクスプローラー ページに直接移動 **するには、 を** 使用します <https://security.microsoft.com/threatexplorer> 。
+1. [電子メール Microsoft 365 Defender] の <https://security.microsoft.com> [メール]**に移動し、& エクスプローラーに** \> **移動します**。 エクスプローラー ページに直接移動 **するには、 を** 使用します <https://security.microsoft.com/threatexplorer> 。
 
    [エクスプローラー **] ページの** [追加の **アクション]** 列には、管理者が電子メールを処理した結果が表示されます。 [**追加のアクション]** 列には、[配信] アクションと [配信場所]**と同じ****場所にアクセスできます**。 特別なアクションは、脅威エクスプローラーのメール タイムラインの最後に更新される可能性があります。これは、管理者の狩猟エクスペリエンスを向上することを目的とした新機能です。
 

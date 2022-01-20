@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 63453b772123e9fe8440da3372d166503cee21e1
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: dcd32c7edb6de0b8960f81372cf9e229571c4048
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171103"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156276"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
 
@@ -56,10 +56,10 @@ ms.locfileid: "61171103"
 |手順|サンプル ファイル名|BundleIdentifier|
 |---|---|---|
 |[オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)|WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml|com.microsoft.wdav.atp|
-|[エンドポイント用 Microsoft Defender のシステム拡張機能を承認する](#approve-system-extensions)|MDATP_SysExt.xml|N/A|
-|[Microsoft Defender for Endpoint のカーネル拡張機能の承認](#download-the-onboarding-package)|MDATP_KExt.xml|N/A|
+|[エンドポイント用 Microsoft Defender のシステム拡張機能を承認する](#approve-system-extensions)|MDATP_SysExt.xml|該当なし|
+|[Microsoft Defender for Endpoint のカーネル拡張機能の承認](#download-the-onboarding-package)|MDATP_KExt.xml|該当なし|
 |[Microsoft Defender for Endpoint へのフル ディスク アクセスを許可する](#full-disk-access)|MDATP_tcc_Catalina_or_newer.xml|com.microsoft.wdav.tcc|
-|[ネットワーク拡張ポリシー](#network-filter)|MDATP_NetExt.xml|N/A|
+|[ネットワーク拡張ポリシー](#network-filter)|MDATP_NetExt.xml|該当なし|
 |[Microsoft AutoUpdate (MAU) の構成](mac-updates.md#intune)|MDATP_Microsoft_AutoUpdate.xml|com.microsoft.autoupdate2|
 |[Microsoft Defender for Endpoint 構成設定](mac-preferences.md#intune-full-profile) <p> **注:** macOS 用のサード パーティ製 AV の実行を計画している場合は、 に設定 `passiveMode` します `true` 。|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
 |[エンドポイントおよび MS AutoUpdate (MAU) 通知の Microsoft Defender の構成](mac-updates.md)|MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig|com.microsoft.autoupdate2 または com.microsoft.wdav.tray|
@@ -101,7 +101,7 @@ ms.locfileid: "61171103"
 このプロファイルには、Microsoft Defender for Endpoint のライセンス情報が含まれているので、ライセンスされていないと報告されます。
 
 1. [構成 **プロファイル] で [****プロファイルの作成] を選択します**。
-1. [**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。 **テンプレート名** =**カスタム**. **[作成]** をクリックします。
+1. [**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。 **テンプレート名** =**カスタム**. [**作成**] をクリックします。
 
     > [!div class="mx-imgBorder"]
     > ![カスタム構成プロファイルの作成。](images/mdatp-6-systemconfigurationprofiles-1.png)
@@ -112,6 +112,7 @@ ms.locfileid: "61171103"
     > ![カスタム構成プロファイル - 名前。](images/mdatp-6-systemconfigurationprofiles-2.png)
 
 1. 構成プロファイル名の名前 (たとえば、「Defender for Endpoint onboarding for macOS」) を選択します。
+1. 展開チャネル [を選択します](/mem/intune/fundamentals/whats-new#new-deployment-channel-setting-for-custom-device-configuration-profiles-on-macos-devices)。
 1. 構成プロファイル ファイルとしてWindowsDefenderATPOnboarding.xmlオンボーディング パッケージから抽出した intune/WindowsDefenderATPOnboarding.xmlを選択します。
 
     > [!div class="mx-imgBorder"]

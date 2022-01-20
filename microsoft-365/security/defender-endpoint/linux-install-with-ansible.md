@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ba5bc05010aaf2ee14f16f7b57f140f063dcc50b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6a2c29d27814b4ed8c199b7a4db1ee10ce37b86c
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941134"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156229"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 
@@ -220,7 +220,7 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
               dnf:
                 name: mdatp
                 state: latest
-                enablerepo: packages-microsoft-com-prod-[channel]
+                enablerepo: packages-microsoft-[channel]
         ```
 
         ```bash

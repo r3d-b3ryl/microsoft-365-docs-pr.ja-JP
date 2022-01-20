@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'ビジネス アカウントに関連付けられたメール エイリアスと呼ばれる複数の電子メール アドレスをMicrosoft 365する方法について説明します。 '
-ms.openlocfilehash: 005b65bc8f5e34dcddec41e0d197b813a53a1c33
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 16296c9ba748ec76fef52be3ae13bba9ff8552b1
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165210"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62155971"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>ユーザーに別のメール エイリアスを追加する
   
@@ -47,7 +47,7 @@ ms.locfileid: "60165210"
 
 メール エイリアスをユーザーに追加するには、グローバル管理者権限が必要です。
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [アクティブ な **ユーザー] ページ** で、[ユーザー名とメール> **管理する] のユーザーを選択します**。 ユーザーにライセンスが割り当てられていない場合、このオプションは表示しません。 
     
@@ -59,6 +59,10 @@ ms.locfileid: "60165210"
   
     > [!IMPORTANT]
     > GoDaddy または別のパートナーからサブスクリプションを購入した場合、新しいエイリアスをプライマリとして設定するには、GoDaddy またはパートナーの管理コンソールに移動する必要があります。 
+
+
+   > [!IMPORTANT]
+   >  エラー メッセージが表示された場合 **、このユーザーはローカルの Active Directory と同期されます。一部の** 詳細は、ローカルの Active Directory でのみ編集できます。これは、Active Directory が同期されたユーザーの属性に対して権限を持つという意味で、オンプレミスの Active Directory の属性を変更する必要があります。
   
     > [!TIP]
     > メール エイリアスは、ドロップダウン リストにあるドメインで終了する必要があります。 リストに別のドメイン名を追加するには、「[ドメインをリストに追加する」をMicrosoft 365。](../setup/add-domain.md) 

@@ -25,18 +25,18 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで、管理者がビジネス、学校、または非営利団体のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: 64c4a4503203f30d3298a09829ac8dde2af764ff
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: b46867048d4c7fa632150c67d4a90e44f2e3d152
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530597"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156018"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
 ## <a name="before-you-begin"></a>開始する前に
 
-この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは?([Microsoft 365 管理センター]の概要。/admin-overview/admin-center-overview.md)。
+この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](/microsoft-365/admin/add-users/about-admin-roles)。
 
 管理者として、ユーザー パスワードを特定の日数が経過したら期限切れにするか、パスワードの有効期限が切れないように設定することができます。既定では、組織でパスワードは有効期限が切れないように設定されています。
 

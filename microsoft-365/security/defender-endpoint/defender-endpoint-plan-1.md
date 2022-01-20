@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 01/19/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
 ms.custom: intro-overview
-ms.openlocfilehash: 139015e1e1b12dd14510fa0cdd8b546b4ad52405
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 26643ebf57b8d19499b5d8c0d0c9d0512f0d1866
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872443"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156414"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 の概要
 
@@ -76,8 +76,8 @@ Defender for Endpoint Plan 1 には、次の機能が含まれています。
 
 | ファイル/デバイス | アクション | 説明 |
 |:---|:---|:---|
-| Device | ウイルス対策スキャンの実行 | ウイルス対策スキャンを開始します。 デバイスで脅威が検出された場合、ウイルス対策スキャン中にこれらの脅威に対処する場合が多い。 |
-| Device | デバイスの分離 | Defender for Endpoint への接続を維持しながら、組織のネットワークからデバイスを切断します。 このアクションを使用すると、デバイスを監視し、必要に応じてさらにアクションを実行できます。 |
+| デバイス | ウイルス対策スキャンの実行 | ウイルス対策スキャンを開始します。 デバイスで脅威が検出された場合、ウイルス対策スキャン中にこれらの脅威に対処する場合が多い。 |
+| デバイス | デバイスの分離 | Defender for Endpoint への接続を維持しながら、組織のネットワークからデバイスを切断します。 このアクションを使用すると、デバイスを監視し、必要に応じてさらにアクションを実行できます。 |
 | File | 停止と検疫 |プロセスの実行を停止し、関連ファイルを検疫します。 |
 | File | ファイルをブロックまたは許可するインジケーターを追加する | ブロックインジケーターは、ポータブル実行可能ファイルがデバイスで読み取り、書き込み、または実行されるのを防ぐ。 <p>許可インジケーターは、ファイルがブロックまたは修復されるのを防ぐ。 |
 
@@ -118,7 +118,7 @@ Defender for Endpoint の攻撃表面縮小機能の詳細については、「�
 
 詳細については、「フォルダー アクセスを [制御して重要なフォルダーを保護する」を参照してください](controlled-folders.md)。
 
-### <a name="device-control"></a>デバイス コントロール
+### <a name="device-control"></a>デバイス制御
 
 組織のデバイスに対する脅威は、USB ドライブなどのリムーバブル ドライブ上のファイルの形式で受け取る場合があります。 Defender for Endpoint には、承認されていない周辺機器からの脅威がデバイスを侵害するのを防ぐための機能が含まれています。 Defender for Endpoint を構成して、リムーバブル デバイス上のリムーバブル デバイスとファイルをブロックまたは許可できます。 
 
@@ -188,6 +188,8 @@ Defender for Endpoint API を使用すると、ワークフローを自動化し
 
 ほとんどの組織では、さまざまなデバイスとオペレーティング システムを使用しています。 現在、Defender for Endpoint Plan 1 では、次のオペレーティング システムがサポートされています。
 
+- Windows 7 (ESU が必要)
+- Windows 8.1
 - Windows 10バージョン 1709 以降
 - macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave)
 - iOS

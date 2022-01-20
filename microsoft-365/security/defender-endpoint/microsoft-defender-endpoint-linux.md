@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0556527e7eac3eed4b54a2dd948a9ca8dae76fc7
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: eea9aca5e1c6ac791581e6fab93c768a06b0dc98
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61867843"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156522"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -77,7 +77,8 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 - サポートされる Linux サーバー配布と x64 (AMD64/EM64T) バージョン:
 
   - Red Hat Enterprise Linux 6.7 以上
-  - Red Hat Enterprise Linux 7.2 以上 
+  - Red Hat Enterprise Linux 7.2 以上
+  - Red Hat Enterprise Linux 8.x
   - CentOS 6.7 以上 
   - CentOS 7.2 以上
   - Ubuntu 16.04 LTS 以上の LTS

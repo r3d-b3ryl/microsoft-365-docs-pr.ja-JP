@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d4b83457fb8f8dc16891882cd8ca5c131659d35
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 231adb590bc737c646566417db1891ac96fdb455
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167552"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156474"
 ---
 # <a name="onboard-non-windows-devices"></a>Windows 以外のデバイスをオンボードする
 
@@ -65,9 +65,9 @@ Defender for Endpoint は、セキュリティ プラットフォームと非プ
 
 macOS および Linux デバイスの場合は、Microsoft Defender for Endpoint からオフボードを選択できます。 ナビゲーション ウィンドウで、[オフボードの選択 **設定** オペレーティング システムの選択] を選択 \>  \> **して、オフボード プロセスを開始します**。
 
-サードパーティの統合を無効にすることで、Windows以外のデバイスをオフボードすることもできます。 サードパーティのソリューションを統合することで、Windowsプラットフォームを実行しているデバイスのカバレッジ[を有効にします](https://securitycenter.windows.com/interoperability/partners)。 
+サードパーティの統合を無効にすることで、Windows以外のデバイスをオフボードすることもできます。 サードパーティのソリューションを統合することで、Windowsプラットフォームを実行しているデバイスのカバレッジ[を有効にします](https://security.microsoft.com/interoperability/partners)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Windows デバイスのオンボード](configure-endpoints.md)
 - [オンボード サーバー](configure-server-endpoints.md)
 - [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)

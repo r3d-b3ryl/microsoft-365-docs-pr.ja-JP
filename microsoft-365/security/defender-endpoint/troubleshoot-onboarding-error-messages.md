@@ -14,18 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 6a587c0de131cd92ee3126688702763bac8dd340
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cbf2049841f2987eb71e9c716de133872c1e6a81
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165596"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156546"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>サブスクリプションとポータル アクセスの問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -75,7 +76,7 @@ Microsoft 365 Defender にアクセス中にサブスクリプションが見つ
 
 ![現在、データの画像は使用できません。](images/atp-data-not-available.png)
 
-Web ブラウザーで、その下のすべてのサブドメインを許可 `security.windows.com` する必要があります。 たとえば、`*.security.windows.com` などです。
+Web ブラウザーで、その下のすべてのサブドメインを許可 `security.windows.com` する必要があります。 たとえば、「 `*.security.windows.com` 」のように入力します。
 
 ## <a name="portal-communication-issues"></a>ポータル通信の問題
 
@@ -84,11 +85,11 @@ Web ブラウザーで、その下のすべてのサブドメインを許可 `se
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
-- `https://*.securitycenter.windows.com`
-- `https://automatediracs-eus-prd.securitycenter.windows.com`
+- `https://*.security.microsoft.com`
+- `https://automatediracs-eus-prd.security.microsoft.com`
 - `https://login.microsoftonline.com`
 - `https://login.windows.net`
 - `https://onboardingpackagescusprd.blob.core.windows.net`
 - `https://secure.aadcdn.microsoftonline-p.com`
-- `https://securitycenter.windows.com`
+- `https://security.microsoft.com`
 - `https://static2.sharepointonline.com`

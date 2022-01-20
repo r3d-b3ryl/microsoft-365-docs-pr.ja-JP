@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3656d864b5fe240bea7375999ad9501adf3b2a1
-ms.sourcegitcommit: c2e8a4febb019b398d549a72c489f012cfbc0b32
+ms.openlocfilehash: ab1cf8a93876c5669d561161874a1c34914b7fa3
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61265204"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156354"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender のリソース
 
@@ -88,6 +88,14 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 
 - Finder **ファイル>開きます**。 [Microsoft **Defender for Endpoint] を右クリックし>に移動します**。
 
+### <a name="supported-output-types"></a>サポートされている出力の種類
+
+テーブルと JSON 形式の出力の種類をサポートします。 コマンドごとに、既定の出力動作があります。 次のコマンドを使用して、好みの出力形式で出力を変更できます。
+
+`-output json`
+
+`-output table`
+
 ### <a name="from-the-command-line"></a>コマンド ラインから
 
 - `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
@@ -96,7 +104,7 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 
 製品設定の制御やオンデマンド スキャンのトリガーなどの重要なタスクは、コマンド ラインから実行できます。
 
-|Group|シナリオ|コマンド|
+|Group|シナリオ|command|
 |---|---|---|
 |構成|リアルタイム保護のオン/オフ|`mdatp config real-time-protection --value [enabled/disabled]`|
 |構成|クラウド保護のオン/オフ|`mdatp config cloud --value [enabled/disabled]`|

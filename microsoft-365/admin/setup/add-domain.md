@@ -27,18 +27,18 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: セットアップ ウィザードを使用して、DNS ホストに DNS レコードMicrosoft 365追加Microsoft 365 管理センターにドメインを追加します。
-ms.openlocfilehash: 390cb4cfff2b895902449e34134538a768d03aa1
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 8562d3bd3dc4e3d550c3c8365fdfc2dcf9220f94
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559930"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62155994"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](domains-faq.yml)** を参照してください。 
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 ドメインを追加、変更、または削除するには、ビジネスプランまたはエンタープライズ プランのドメイン名管理者またはグローバル[管理者である必要があります](https://products.office.com/business/office)。  これらの変更はテナント全体に影響します。 *カスタマイズされた管理者* または *通常のユーザー* は、これらの変更を行う事ができません。
 
@@ -149,6 +149,8 @@ ms.locfileid: "61559930"
 
 > [!NOTE]
 > ドメインを追加するには、グローバル管理者またはドメイン名管理者である必要があります。
+> 追加の .onmicrosoft ドメインを作成し、既定として使用すると、オンラインの名前SharePointされません。 .onmicrosoft SharePoint ドメインを変更するには[、SharePoint](/sharepoint/change-your-sharepoint-domain-name)ドメインの名前変更プレビューを使用する必要があります (現在、1,000 サイト未満のテナントで利用可能)。
+> メール サービスを使用しているMicrosoft 365、最初の .onmicrosoft ドメインの削除はサポートされていません。
 
 
 ドメインを追加 onmicrosoft.com するには、次の onmicrosoft.com します。

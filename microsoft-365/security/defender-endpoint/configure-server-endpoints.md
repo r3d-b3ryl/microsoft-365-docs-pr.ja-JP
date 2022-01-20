@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 314699973a26820782f2ae899047029d999cdc8a
-ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
+ms.openlocfilehash: a284ae69ddf299256c3c91a9a63682f41f95211f
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62009047"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156498"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -168,7 +168,13 @@ EDR センサー コンポーネントの製品の定期的な改善と修正を
 
 > [!div class="mx-imgBorder"]
 > ![オンボーディング ダッシュボードのイメージ](images/install-agent-onboard.png)
- 
+
+
+   > [!NOTE]
+   > サーバー 2012R2 Windowsでは、Microsoft Defender ウイルス対策 パッケージによってインストールされ、パッシブ モードに設定しない限りアクティブになります。 このWindows Server 2016、Microsoft Defender ウイルス対策を実行する前に、最初に機能[(「MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)に切り替える」を参照) としてインストールし、完全に更新する必要があります。
+   > 
+   > Microsoft 以外のマルウェア対策ソリューションを実行している場合は、インストール前に Microsoft Defender ウイルス対策 の除外を Microsoft 以外のソリューションに追加してください ([Defender プロセス] タブの Microsoft[Defender プロセス](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)のこの一覧から)。  また、Microsoft 以外のセキュリティ ソリューションを Defender ウイルス対策除外リストに追加する方法も推奨されます。
+
 
 インストール **パッケージには、Microsoft** Defender for Endpoint エージェントをインストールする MSI ファイルが含まれています。
 
@@ -186,6 +192,8 @@ EDR センサー コンポーネントの製品の定期的な改善と修正を
 3. [インストール **パッケージのダウンロード] を** 選択し、インストール ファイル.msiします。 
  
 4. [ **オンボード パッケージをダウンロードする]** を選択し、.zip保存します。
+
+5. インストール パッケージをインストールするには、任意のオプションを使用してインストール パッケージをインストールMicrosoft Defender ウイルス対策。 インストールには、管理アクセス許可が必要です。
 
 
 
@@ -228,9 +236,6 @@ Msiexec /x md4ws.msi /quiet
 
 > [!NOTE]
 > Microsoft Defender ウイルス対策パッシブ モードには自動的には入らない。 Microsoft 以外のウイルス対策/マルウェア対策Microsoft Defender ウイルス対策を実行している場合は、パッシブ モードで実行するアプリケーションを設定できます。 コマンド ライン インストールの場合、オプションでは、干渉を回避するために、Microsoft Defender ウイルス対策 `FORCEPASSIVEMODE=1` コンポーネントをパッシブ モードに直ちに設定します。 次に、EDR Block のような機能をサポートするためにオンボーディング後に Defender ウイルス対策がパッシブ モードに維持されるのを確認するには、"ForceDefenderPassiveMode" レジストリ キーを設定します。
->
-> - 現在、Windows Server 2019 および Windows Server 2022 Microsoft エンドポイント マネージャーオンボード パッケージがスクリプトを出荷しています。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
-> - ローカル スクリプトは概念実証に適していますが、実稼働展開には使用できません。 実稼働展開の場合は、グループ ポリシーまたはグループ ポリシーを使用Microsoft Endpoint Configuration Manager。
 
 サーバーのWindowsは、サーバーアクティビティ、カーネル攻撃とメモリ攻撃検出の範囲に関するより深い洞察を提供し、応答アクションを有効にします。
 
@@ -301,6 +306,9 @@ Msiexec /x md4ws.msi /quiet
 Defender for Endpoint によって収集されたデータは、プロビジョニング中に特定されたテナントの地理的位置に格納されます。
 > - Microsoft Defender for Cloud を使用する前に Defender for Endpoint を使用する場合、後で Microsoft Defender for Cloud と統合した場合でも、テナントの作成時に指定した場所にデータが保存されます。
 > - 構成が完了すると、データの保存場所を変更できません。 データを別の場所に移動する必要がある場合は、Microsoft サポートに問い合わせ、テナントをリセットする必要があります。
+> - 現在、Windows Server 2019 および Windows Server 2022 Microsoft エンドポイント マネージャーオンボード パッケージがスクリプトを出荷しています。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
+> - ローカル スクリプトは概念実証に適していますが、実稼働展開には使用できません。 実稼働展開の場合は、グループ ポリシーまたはグループ ポリシーを使用Microsoft Endpoint Configuration Manager。
+
 
 
 ## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows サーバー Semi-Annual Enterprise チャネルと Windows Server 2019 および Windows Server 2022
