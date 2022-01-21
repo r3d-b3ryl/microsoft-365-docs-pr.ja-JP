@@ -32,6 +32,8 @@
       href: apply-a-model.md
     - name: フォーム処理モデルを作成
       href: create-a-form-processing-model.md
+    - name: コンテンツア センブリを使用してドキュメントを作成する
+      href: content-assembly.md
     - name: モデルを公開して発見する
       href: model-discovery.md
     - name: 保持ラベルを適用する
