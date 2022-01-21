@@ -14,21 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: MDE のお客様向けソリューションを使用して、Microsoft 365コンプライアンス ソリューションに macOS デバイスMicrosoft Intuneオンボードおよびオフボードする方法 (プレビュー)
-ms.openlocfilehash: a1d647fae55b091b8c12df885ce28aa4f1275a1a
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 0486c08734e049a82550c1fb596b0e3d789126b8
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963001"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159531"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
 > [!IMPORTANT]
 > Microsoft Defender  for Endpoint (MDE) を macOS デバイスに展開している場合は、次の手順を実行します。
-
-<!--## Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).-->
 
 **適用対象:**
 
@@ -80,7 +76,7 @@ MDE が既に展開されている場合は、以下の手順を使用して mac
 
 1. 手順 1 **でダウンロードしたアクセシビリティ.mobileconfig** ファイルを構成プロファイル ファイルとして選択します。
 
-1. [次へ **] を選択する**
+1. **[次へ]** を選択します
 
 1. [割り **当て]** タブで、これらの構成を展開するグループを追加し、[次へ] を **選択します**。
 

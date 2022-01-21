@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint アラート フィールド
-description: アラート フィールドが Microsoft Defender for Endpoint の値にマップされる方法を理解する
+title: Microsoft Defender for Endpoint の検出フィールド
+description: 検出フィールドが Microsoft Defender for Endpoint の値にマップされる方法を理解する
 keywords: 検出、検出フィールド、フィールド、API、フィールド、プル検出、rest api、要求、応答
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2bb199a8ca0f8734da6562304b15cbf2cb4170cf
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a32bec44cfcc3e89dd44dbe89557a9faf2d6850b
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167420"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159615"
 ---
-# <a name="microsoft-defender-for-endpoint-alert-fields"></a>Microsoft Defender for Endpoint アラート フィールド
+# <a name="microsoft-defender-for-endpoint-detection-fields"></a>Microsoft Defender for Endpoint の検出フィールド
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,18 +34,26 @@ ms.locfileid: "61167420"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
+> [![注意] Microsoft Defender for Endpoint SIEM REST API は、Microsoft Defender for Endpoint Alert API と、アラートの最新の状態、アラートに関連付けるすべての証拠エンティティ、アナリストが入力したコメント、更新状態を許可するなど、より豊富なメタデータを提供する Microsoft 365 Defender インシデント API として、廃止が計画されています。 assignedTo、分類、および決定フィールドをプログラムで指定します。
+> 
+> Microsoft Defender for Endpoint SIEM API への新しいオンボードはサポートされません。代わりに、「エンドポイント用 Defender の SIEM 統合を有効にする」を参照してください。Microsoft Defender for Endpoint Alert API または Microsoft 365 Defender インシデント API との統合の詳細については、「Enable SIEM integration [in Endpoint」](enable-siem-integration.md)を参照してください。
+> 
+> 統合 SIEM ツール (Splunk、ArcSight、QRadar) の詳細については、「SIEM ツールを Microsoft Defender for Endpoint と統合する」 [を参照してください](../defender-endpoint/configure-siem.md)。
+
 検出 API の一部として公開されるデータ フィールドと、そのデータ フィールドが検出 API にマップMicrosoft 365 Defender。
 
 > [!NOTE]
 >
-> - [Defender for Endpoint Alert](alerts.md) は、1 つ以上の検出から構成されます。
-> - **Microsoft Defender ATP 検出は** 、デバイスで発生した疑わしいイベントとその関連するアラートの詳細から **構成** されます。
+> - [Microsoft Defender for Endpoint Alert は](alerts.md) 、1 つ以上の検出から構成されます。
+> - **Microsoft Defender for Endpoint Detection は** 、デバイスで発生した疑わしいイベントとその関連するアラートの詳細から **構成** されます。
 > - Microsoft Defender for Endpoint Alert API は、アラートの使用に関する最新の API であり、各アラートに関連する証拠の詳細な一覧を含む。 詳細については、「Alert メソッドと[プロパティ」および「List alerts」](alerts.md)[を参照してください](get-alerts.md)。
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>検出 API フィールドとポータル マッピング
 
 次の表に、検出 API ペイロードで公開されている使用可能なフィールドの一覧を示します。 入力された値の例と、ポータルでのデータの反映方法に関する参照を示します。
-
+> 
+> 以下で説明する MicroFocus ArcSight FlexConnector は、インシデント API を呼び出す公式の SmartConnector に置き換Microsoft 365 Defenderされています。 詳細については、「Defender [for Endpoint で SIEM 統合を有効にする」を参照してください](enable-siem-integration.md)。
+> 
 [ArcSight] フィールド列には、Defender for Endpoint フィールドと ArcSight の組み込みフィールドとの間の既定のマッピングが含まれます。 SIEM 統合機能を有効にし、組織のニーズに合わせて変更できる場合は、ポータルからマッピング ファイルをダウンロードできます。 詳細については、「Defender [for Endpoint で SIEM 統合を有効にする」を参照してください](enable-siem-integration.md)。
 
 フィールド番号は、以下の画像の数値と一致します。
@@ -55,7 +63,7 @@ ms.locfileid: "61167420"
 > |ポータル ラベル|SIEM フィールド名|ArcSight フィールド|値の例|説明|
 > |---|---|---|---|---|
 > |1|AlertTitle|name|Microsoft Defender AV が 「ミカッツ」 の重大度の高いマルウェアを検出しました|すべての検出で使用可能な値。|
-> |2|重要度|deviceSeverity|高い|すべての検出で使用可能な値。|
+> |2|重要度|deviceSeverity|高|すべての検出で使用可能な値。|
 > |3|カテゴリ|deviceEventCategory|マルウェア|すべての検出で使用可能な値。|
 > |4|検出ソース|sourceServiceName|ウイルス対策|Microsoft Defender ウイルス対策または Defender for Endpoint。 すべての検出で使用可能な値。|
 > |5|MachineName|sourceHostName|desktop-4a5ngd6|すべての検出で使用可能な値。|
@@ -102,7 +110,7 @@ ms.locfileid: "61167420"
 
 :::image type="content" alt-text="イメージ アクターアラート。" source="images/atp-mapping7.png" lightbox="images/atp-mapping7.png":::
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
 - [エンドポイント検出用の Microsoft Defender をプルする ArcSight の構成](configure-arcsight.md)

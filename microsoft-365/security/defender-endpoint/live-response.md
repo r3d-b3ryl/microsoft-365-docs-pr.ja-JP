@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 42fac7b4dd76831339b5b76ea21787ae288b636a
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: d114c7aa72c3baa5fb871fc4a52a00a22c21998e
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074692"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159602"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -61,10 +61,10 @@ ms.locfileid: "62074692"
     - [ 1803 (バージョンRS 4)](/windows/whats-new/whats-new-windows-10-version-1803) と [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [バージョン1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) と[KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **macOS** - パブリック プレビューにのみ適用されます。最小必須バージョン: 101.43.84 
+  - **macOS** - パブリック プレビューにのみ適用され、最低限必要なバージョン: 101.43.84 
   
-  - **Linux** - パブリック プレビューにのみ適用できる最小必須バージョン: 101.45.13 
-
+  - **Linux** - パブリック プレビューにのみ適用され、最低限必要なバージョン: 101.45.13 
+    
   - **Windows Server 2012 R2** - と [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
   - **Windows Server 2016** - と [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -72,8 +72,10 @@ ms.locfileid: "62074692"
   - **Windows Server 2019**
     - バージョン 1903 以降 ( [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 以降
     - バージョン 1809 ( [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
-
+    
   - **Windows Server 2022**
+
+       
 
 - **[詳細設定] ページからライブ応答を有効にします**。
 
@@ -158,24 +160,26 @@ ms.locfileid: "62074692"
 ****
 | コマンド  | 説明  | Windows および Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
-| cd  | 現在のディレクトリを変更します。  | Y  | Y | Y |
+| cd  | 現在のディレクトリを変更します。  | Y  | Y  | Y  |
 | cls  | コンソール画面をクリアします。  | Y  | Y  | Y  |
 | connect  | デバイスへのライブ応答セッションを開始します。  | Y  | Y  | Y  |
-| connections  | すべてのアクティブな接続を表示します。  | Y  | N | N |
-| dir  | ディレクトリ内のファイルとサブディレクトリの一覧を表示します。  | Y  | Y  |Y  |
-| drivers  | デバイスにインストールされているすべてのドライバーが表示されます。  | Y |  N | N  |
+| connections  | すべてのアクティブな接続を表示します。  | Y  | N  | N  |
+| dir  | ディレクトリ内のファイルとサブディレクトリの一覧を表示します。  | Y  | Y  | Y  |
+| drivers  | デバイスにインストールされているすべてのドライバーが表示されます。  | Y  | N  | N  |
 | fg `<command ID>`  | 指定したジョブをフォアグラウンドのフォアグラウンドに配置し、現在のジョブにします。  注: pid ではなくジョブから使用可能な 'コマンド ID' を取得します。  | Y  | Y  | Y  |
-| fileinfo  | ファイルに関する情報を取得します。  |Y  | Y  | Y  |
-| findfile  | デバイス上の特定の名前でファイルを検索します。  | Y | Y  | Y  |
+| fileinfo  | ファイルに関する情報を取得します。  | Y  | Y  | Y  |
+| findfile  | デバイス上の特定の名前でファイルを検索します。  | Y  | Y  | Y  |
 | Getfile <file_path>  | ファイルをダウンロードします。  | Y  | Y  | Y  |
-| help  | ライブ応答コマンドのヘルプ情報を提供します。  |Y  | Y | Y  |
-| jobs  | 現在実行中のジョブ、その ID と状態を表示します。  | Y  | Y | Y |
-| persistence  | デバイス上のすべての既知の永続化メソッドを表示します。  | Y  | N | N |
+| help  | ライブ応答コマンドのヘルプ情報を提供します。  | Y  | Y  | Y  |
+| jobs  | 現在実行中のジョブ、その ID と状態を表示します。  | Y  | Y  | Y  |
+| persistence  | デバイス上のすべての既知の永続化メソッドを表示します。  | Y  | N  | N  |
 | processes  | デバイスで実行されているすべてのプロセスが表示されます。  | Y  | Y  | Y  |
-| registry  | レジストリ値を表示します。  | Y  | N | N |
-| scheduledtasks  | デバイス上のすべてのスケジュールされたタスクを表示します。  | Y | N | N |
-| services  | デバイス上のすべてのサービスを表示します。  | Y  | N | N |
-| trace  | ターミナルのログ モードをデバッグに設定します。  | Y  | Y  |Y  |
+| registry  | レジストリ値を表示します。  | Y  | N  | N  |
+| scheduledtasks  | デバイス上のすべてのスケジュールされたタスクを表示します。  | Y  | N  | N  |
+| services  | デバイス上のすべてのサービスを表示します。  | Y  | N  | N  |
+| startupfolders  | デバイス上のスタートアップ フォルダー内のすべての既知のファイルを表示します。  | Y  | N  | N  |
+| status  | 特定のコマンドの状態と出力を表示します。  | Y  | N  | N  |
+| trace  | ターミナルのログ モードをデバッグに設定します。  | Y  | Y  | Y  |
 
 ### <a name="advanced-commands"></a>高度なコマンド
 
@@ -194,9 +198,10 @@ ms.locfileid: "62074692"
 | run  | デバイス上のライブラリから PowerShell スクリプトを実行します。  | Y  | Y  | Y  |
 | library  | ライブ応答ライブラリにアップロードされたファイルを一覧表示します。  | Y  | Y  | Y  |
 | putfile  | ライブラリからデバイスにファイルを書き込みます。 ファイルは作業フォルダーに保存され、デバイスが既定で再起動すると削除されます。  | Y  | Y  | Y  |
-| remediate  | デバイス上のエンティティを修復します。 修復アクションは、エンティティの種類によって異なります: ファイル: プロセスの削除: 停止、イメージ ファイルの削除 サービス: 停止、イメージ ファイルの削除 レジストリ エントリ: スケジュールされたタスクの削除: スタートアップ フォルダー項目の削除: ファイルの削除 注意: このコマンドには前提条件のコマンドがあります。 -auto コマンドを修復と組み合わせて使用すると、前提条件コマンドを自動的に実行できます。  | Y  | Y  | Y  |
-| scan  | Defender for Endpoint サービスへの接続を維持しながら、デバイスをネットワークから切断します  | N  | Y  | Y  |
+| remediate  | デバイス上のエンティティを修復します。 修復アクションは、エンティティの種類によって異なります: ファイル: プロセスの削除: 停止、イメージ ファイルの削除 サービス: 停止、イメージ ファイルの削除 レジストリ エントリ: スケジュールされたタスクの削除: スタートアップ フォルダー項目の削除: ファイルの削除 注意: このコマンドには前提条件のコマンドがあります。 -auto コマンドを修復と組み合わせて使用して、前提条件のコマンドを自動的に実行できます。  | Y  | Y  | Y  |
+| scan  | ウイルス対策 (クイック) スキャンを実行して、マルウェアの特定と修復に役立ちます。  | N  | Y  | Y  |
 | undo  | 修復されたエンティティを復元します。  | Y  | Y  | Y  |
+
 
 ## <a name="use-live-response-commands"></a>ライブ応答コマンドを使用する
 
@@ -342,7 +347,6 @@ processes > output.txt
 
 - ライブ応答セッションは、一度に 25 個のライブ応答セッションに制限されます。
 - ライブ応答セッションの非アクティブタイムアウト値は 30 分です。
-- Getfile コマンドの非アクティブタイムアウト値は 30 分です。 コマンドがバックグラウンドで実行されている間は非アクティブと見なされます。
 - ユーザーは、最大 10 個の同時セッションを開始できます。
 - デバイスは一度に 1 つのセッションにのみ存在できます。
 - 次のファイル サイズ制限が適用されます。

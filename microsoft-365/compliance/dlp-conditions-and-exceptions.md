@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: dlp ポリシーの条件と例外について学ぶ
-ms.openlocfilehash: 7c57d3f1f4e6c05cf5fe346440d59e7c5f9daac2
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: 1b6d37356a17fcb9cd5b1aa4ec97a69790c733c0
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62041044"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159519"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP ポリシーの条件、例外、およびアクション
 
@@ -49,27 +49,26 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 ### <a name="senders"></a>送信者
 
 送信者アドレスを条件または例外として使用する場合、値が検索される実際のフィールドは、使用するルールの種類によって異なります。 DLP ベースのルールでは、エンベロープ アドレスが送信者アドレスとして使用されます。 たとえばExchangeのトランスポート ルールでは、ヘッダー アドレスが送信者アドレスとして使用されます。
-<!-- REMOVE COMMENTS ON 1/20/2022
+
 > [!NOTE]
-> Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
+> 2022 年 1 月 20 日より、既定の送信者アドレスの場所がヘッダー アドレスに移動され、-SenderAddressLocation パラメーターを使用して DLP ルール レベルで目的の動作を構成できます。
 
 ![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
 
-At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
+テナント レベルでは、1 つのルールによって上書きされない限り、すべてのルールで使用される送信者アドレスの場所を構成できます。 テナント DLP ポリシー構成を元に戻して、すべてのルールにわたってエンベロープから送信者アドレスを評価するには、次のコマンドを実行できます。
 
 ```PowerShell
 Set-PolicyConfig –SenderAddressLocation Envelope
 ```
 
-To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
+DLP ルール レベルで送信者アドレスの場所を構成するには、パラメーターは _SenderAddressLocation です_。 使用できる値は次のとおりです:
 
-- **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
+- **Header**: メッセージ ヘッダー内の送信者 (たとえば、**From**、**Sender**、または **Reply-To** フィールド) のみを確認します。 これは既定の値です。
 
-- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field).
+- **Envelope**: メッセージ エンベロープ (**Return-Path** フィールドに通常格納されている SMTP 転送に使用された **MAIL FROM** 値) からの送信者のみを確認します。
 
-- **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
+- **ヘッダーまたは封筒** ( ) メッセージ ヘッダーとメッセージ 封筒の `HeaderOrEnvelope` 送信者を調べる。
 <br>
--->
 
 |DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|description|
 |---|---|---|---|
@@ -179,8 +178,9 @@ To configure the sender address location at a DLP rule level, the parameter is _
 |承認のメッセージを特定の承認者に転送する|中|First プロパティ: *ModerateMessageByUser*</br>2 番目のプロパティ: *Addresses*|Moderate パラメーターは、電子メール メッセージをモデレーターに送信する DLP ルールのアクションを指定します。 このパラメーターでは、@{ ModerateMessageByUser = @("emailaddress1","emailaddress2",..."emailaddressN")} という構文を使用します。|
 |受信者の追加|AddRecipients|First プロパティ: *Field*</br>2 番目のプロパティ: *Addresses*|メッセージの [宛先/Cc/Bcc] フィールドに 1 つ以上の受信者を追加します。 このパラメーターでは、@{<AddToRecipients \| CopyTo \| BlindCopy> To = "emailaddress"} という構文を使用します。|
 |送信者のマネージャーを受信者として追加する|AddRecipients|First プロパティ: *AddedManagerAction*</br>2 番目のプロパティ: *Field*|送信者の上司を指定の受信者タイプ (To、Cc、Bcc) としてメッセージに追加したり、送信者や受信者に通知することなくメッセージを送信者の上司にリダイレクトします。 このアクションは、送信者の Manager 属性が Active Directory で定義されている場合のみ有効です。 このパラメーターは、@{AddManagerAsRecipientType = "<\| Cc \| Bcc>"} という構文を使用します。|
-件名の先頭に付く|PrependSubject|String|メッセージの Subject フィールドの冒頭に指定のテキストを追加します。元の件名のテキストを区別するために、指定されたテキストの最後の文字としてスペースまたはコロン (:) を使用してください。  </br>件名に既にテキストが含まれているメッセージ (返信など) に同じ文字列が追加されるのを防ぐには、"件名に単語が含まれている" (ExceptIfSubjectContainsWords) 例外をルールに追加します。|
+件名の先頭に付く|PrependSubject|文字列|メッセージの Subject フィールドの冒頭に指定のテキストを追加します。元の件名のテキストを区別するために、指定されたテキストの最後の文字としてスペースまたはコロン (:) を使用してください。  </br>件名に既にテキストが含まれているメッセージ (返信など) に同じ文字列が追加されるのを防ぐには、"件名に単語が含まれている" (ExceptIfSubjectContainsWords) 例外をルールに追加します。|
 |[件名の変更]|ModifySubject|PswsHashTable | 特定のパターンに一致する件名行からテキストを削除し、別のテキストに置き換える。 以下の例を参照してください。 次の操作を行うことができます: </br>- **件名** のすべての一致を置換テキストに置き換える </br>- **追加** すると、件名のすべての一致が削除され、件名の末尾に置換テキストが挿入されます。 </br>- **すべての一** 致を削除する前に、件名の先頭に置換テキストを挿入します。|
 |HTML 免責事項の適用|ApplyHtmlDisclaimer|First プロパティ: *Text*</br>2 番目のプロパティ: *場所*</br>3 番目のプロパティ: *フォールバック アクション*|指定した HTML 免責事項をメッセージの必要な場所に適用します。</br>このパラメーターでは、@{ Text = " という構文を使用します。Location = <Append \| Prepend>。FallbackAction = <Wrap \| Ignore \| Reject> }|
 |権限Office 365 Message Encryption保護を削除する|RemoveRMSTemplate|該当なし|電子メールOffice 365された暗号化を削除します。|
+|ホストされた検疫にメッセージを配信する |_Quarantine_|該当なし| このアクションは現在パブリック プレビュー **中です**。 このフェーズでは、DLP ポリシーによって検疫された電子メールに、ポリシーの種類が ExchangeTransportRule として表示されます。</br> EOP の検疫にメッセージを配信します。 詳細については [、「EOP の検疫済み電子メール メッセージ」を参照してください](/microsoft-365/security/office-365-security/quarantine-email-messages)。|
 |

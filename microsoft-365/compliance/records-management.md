@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft 365 のレコード管理を使用すると、保持スケジュールをファイル計画に適用し、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: f3322af11f724920e5833182128346c1bc4c41c5
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: d5d4752e76a2a39b1c5fafab964d13ce11873e9b
+ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559870"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62083069"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Microsoft 365 でのレコード管理について説明します。
 
@@ -51,7 +51,7 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 
 これらの機能を使用すると、組織の保持スケジュールと要件をレコード管理ソリューションに反映させ、保持、レコード宣言、廃棄を管理して、コンテンツのライフサイクル全体をサポートすることができます。
 
-オンライン ドキュメントの他にも、レコード管理に関する[ウェビナーの録音](https://aka.ms/MIPC/Video-RecordsManagementWebinar)を聴いたり、[よく寄せられる質問を含む付属のスライド](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)をダウンロードしたりすることもできます。
+オンライン ドキュメントの他にも、役に立つ[よくあるご質問のスライド デッキ](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)をレコード管理ウェビナーからダウンロードできます。 実際のウェビナーの記録は使用できなくなりました。
 
 ## <a name="records"></a>レコード
 

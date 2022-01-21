@@ -1,5 +1,5 @@
 ---
-title: PowerShell SharePoint Syntexを管理する
+title: PowerShell を使用して SharePoint Syntex を管理する
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
@@ -12,22 +12,22 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: normal
-description: PowerShell を使用してSharePoint Syntexする方法について説明します。
-ms.openlocfilehash: ea3e73d007d038bffdafdc83d28f3334bc711c67
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+description: PowerShell を使用してSharePoint Syntexを管理する方法について説明します。
+ms.openlocfilehash: 5ac6defc92e986a7593936cccb9470489ee86227
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074872"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159543"
 ---
-# <a name="manage-sharepoint-syntex-with-powershell"></a>PowerShell SharePoint Syntexを管理する
+# <a name="manage-sharepoint-syntex-with-powershell"></a>PowerShell を使用して SharePoint Syntex を管理する
 
 > [!IMPORTANT]
 > PowerShell SharePoint Syntexおよび他のすべての PnP コンポーネントは、サポートを提供するアクティブ なコミュニティによってサポートされるオープンソース ツールです。 公式の Microsoft サポート チャネルのオープン ソース ツールのサポート用 SLA ではありません。
 
-これらのシナリオでは、PnP PowerShell モジュールSharePoint Syntexのコマンドレットを使用して、モデルと説明を操作できます。 このモジュールのインストール方法の詳細については [**、「PnP PowerShell の概要」を参照してください。**](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets)
+これらのシナリオでは、PnP PowerShell モジュールSharePoint Syntexのコマンドレットを使用して、モデルと説明を操作できます。 このモジュールをインストールする方法の詳細については [、「PnP PowerShell の概要」を参照してください](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets)。
 
-次のトピックから選択して、PowerShell を使用して Syntex を管理する方法について説明します。
+PowerShell を使用して管理する方法については、次のシナリオから選択SharePoint Syntex。
 
 - [**モデルのインポートとエクスポート**](powershell-syntex-import-export.md)
 
@@ -39,7 +39,7 @@ ms.locfileid: "62074872"
 
 - [**Processing**](powershell-syntex-processing.md)
 
-    PowerShell を使用してドキュメント ライブラリのドキュメント理解処理をトリガーする方法を学ぶ場合は、ここから開始します。
+    PowerShell を使用してドキュメント ライブラリでのドキュメント理解処理をトリガーする方法について説明する場合は、ここから開始します。
 
 - [**説明**](powershell-syntex-explanations.md)
 

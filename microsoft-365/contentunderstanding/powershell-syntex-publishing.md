@@ -13,23 +13,23 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: normal
 description: PowerShell を使用してドキュメントSharePoint Syntexを発行する方法について説明します。
-ms.openlocfilehash: 4aa5639d50145cabe5b95a11d3d927b7d2e06749
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 215a073ea5cabe7c701d24a9b8972268c4dd21ff
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074862"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159699"
 ---
 # <a name="publish-document-understanding-models-with-powershell"></a>PowerShell を使用してドキュメント理解モデルを公開する
 
 > [!IMPORTANT]
 > PowerShell SharePoint Syntexおよび他のすべての PnP コンポーネントは、サポートを提供するアクティブ なコミュニティによってサポートされるオープンソース ツールです。 公式の Microsoft サポート チャネルのオープン ソース ツールのサポート用 SLA ではありません。
 
-SharePoint Syntexモデルは、通常、テナント全体のドキュメント ライブラリに展開されます。 これは、コンテンツ センター サイトを使用して実行できますが、この記事で説明したように [、PnP PowerShell](https://pnp.github.io/powershell/) を使用して実行できます。
+SharePoint Syntexモデルは、通常、テナント全体のドキュメント ライブラリに展開されます。 これはコンテンツ センター サイトを使用して実行できますが、この記事で説明したように [、PnP PowerShell](https://pnp.github.io/powershell/) を使用して実行できます。
 
 ## <a name="listing-the-available-models-in-a-content-center"></a>コンテンツ センターで使用可能なモデルの一覧を表示する
 
-現在のコンテンツ センター サイトに追加されたモデルのSharePoint Syntex取得するには[、Get-PnPSyntexModel コマンドレットを使用](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html)します。
+現在のコンテンツ センター サイトに追加されたモデルのSharePoint Syntexを取得するには[、Get-PnPSyntexModel コマンドレットを使用](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html)します。
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -65,9 +65,7 @@ Unpublish-PnPSyntexModel -Model "Invoice model" -ListWebUrl "https://contoso.sha
 
 ## <a name="apply-models-in-bulk"></a>モデルを一括で適用する
 
-複数のモデルを複数のライブラリに発行する場合は、 
-
-最初に、モデルとターゲットの場所を示す入力 CSV ファイルを作成します。
+複数のモデルを複数のライブラリに発行する場合は、モデルとターゲットの場所を示す入力 CSV ファイルを作成します。
 
 ```CSV
 ModelName,TargetSiteUrl,TargetWebServerRelativeUrl,TargetLibraryServerRelativeUrl
@@ -76,7 +74,7 @@ Contract Notice,https://contoso.sharepoint.com/sites/Site1,/sites/Site1,/sites/s
 Trade Confirmation,https://contoso.sharepoint.com/sites/Site2,/sites/Site2,/sites/site2/shared%20documents
 ```
 
-この CSV ファイルは、リストされているモデルを適切なライブラリに発行するスクリプトへの入力として使用できます。 次の例では、バッチ処理を使用して要求の効率を上げ
+この CSV ファイルは、リストされているモデルを適切なライブラリに発行するスクリプトへの入力として使用できます。 次の例では、バッチ処理を使用して要求の効率を高めます。
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourSite"

@@ -71,12 +71,18 @@ conceptualContent:
         - url: 'https://www.microsoft.com/microsoft-365/partners/business'
           itemType: overview
           text: パートナーページ
-        - url: 'https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx'
+        - url: 'https://aka.ms/M365BPPartnerPlaybook'
           itemType: download
-          text: 提案資料 (お客様向け)
-        - url: 'https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx'
+          text: ビジネス プレミアム パートナー プレイブック
+        - url: 'https://aka.ms/bpbdmpitchdeck'
           itemType: download
-          text: 提案資料 (パートナー向け)
+          text: ビジネスプレミアム意思決定者 (BDM) ピッチ デッキ
+        - url: 'https://aka.ms/bpitdmpitchdeck'
+          itemType: download
+          text: ビジネス プレミアム IT 意思決定者 (ITDM) ピッチ デッキ
+        - url: 'https://aka.ms/bppartneropportunitydeck'
+          itemType: download
+          text: ビジネス パートナープレミアム機会のプレゼンテーション
         - url: 'https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery'
           itemType: download
           text: 技術の基礎
@@ -101,7 +107,7 @@ conceptualContent:
           itemType: how-to-guide
           text: ユーザーのパスワードをリセットする
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: 詳細
     - title: 脅威を管理する
       links:
@@ -118,7 +124,7 @@ conceptualContent:
           itemType: overview
           text: 条件付きアクセス
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: 詳細
     - title: データ管理
       links:

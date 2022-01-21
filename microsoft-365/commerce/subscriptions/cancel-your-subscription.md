@@ -17,33 +17,52 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
-description: ユーザー ライセンスが 25 未満の場合は、いつでも管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをキャンセルできます。
-ms.date: 09/16/2021
-ms.openlocfilehash: e24c2bc4067f046c86af2f72e3105bc20a69b732
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: Microsoft 365 管理センターで、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 の試用版または有料サブスクリプションをキャンセルする方法について説明します。
+ms.date: 01/20/2022
+ms.openlocfilehash: f1c64090117a93d33ccf69222cbe0b7f7d06a88e
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373310"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156174"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
+サブスクリプションは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 356 管理センター</a>でいつでもキャンセルできます。 ただし、払い戻しを受けるには、特定の払い戻しの適格性要件を満たしている必要があります。 詳細については、「[払い戻しの適格性を理解する](#understand-refund-eligibility)」を参照してください。
+
+Microsoft 365 Business Premium など、同じ製品に対して複数のサブスクリプションがある場合、1 つのサブスクリプションをキャンセルしても、他の購入したライセンスやサービスに影響はありません。
+
 > [!IMPORTANT]
-> この記事は、一般法人向け Microsoft 365 サブスクリプションにのみ適用されます。 Microsoft 365 Family または Personal をお持ちの場合は、「[Microsoft 365 サブスクリプションのキャンセル](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link)」を参照してください。
-
-*対象*: ユーザーに割り当てたライセンスが 25 より少ない場合は、いつでも Microsoft 365 管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをオンラインでキャンセルできます。 ユーザーに割り当てられたライセンスが 25 よりも多い場合は、ライセンスを 25 未満に減らすか、[サポートに連絡してサブスクリプションをキャンセルします](../../admin/get-help-support.md)。
-
-*返金*: 日割り計算された残高は、次の請求サイクルの間に返金されます。
-
-> [!NOTE]
-> 
-> - Microsoft 365 Business Premium など、同じ製品に対して複数のサブスクリプションがある場合、いずれかのサブスクリプションをキャンセルしても、購入したライセンスまたは他のサブスクリプションのサービスには影響しません。
-> - 一部のサブスクリプションでは、サブスクリプションを購入または更新した後、限られた時間内にのみキャンセルできます。 キャンセル期間が過ぎた場合は、定期的な請求をオフにして、期間の終了時にサブスクリプションをキャンセルします。
+> この記事は、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 サブスクリプションにのみ適用されます。 Microsoft 365 Family または Personal をお持ちの場合は、「[Microsoft 365 サブスクリプションのキャンセル](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link)」を参照してください。
 
 ## <a name="before-you-begin"></a>開始する前に
 
 この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」をご覧ください。
+
+## <a name="understand-refund-eligibility"></a>払い戻しの適格性を理解する
+
+### <a name="if-you-have-a-billing-profile"></a>請求プロファイルがある場合
+
+既に支払った未使用時間の日割り払いを受け取るには、有料サブスクリプションの開始から 72 時間以内にキャンセルする必要があります。 72 時間後の払い戻しはできません。
+
+たとえば、1 つのライセンスに対して毎月 $20 を支払う 1 年間のサブスクリプションを購入したとします。 サブスクリプションを 2022 年 2 月 1 日の午前 11 時に購入し、2022 年 2 月 3 日の午前 11 時にキャンセルすることにしました。 サブスクリプションを保持した 2 日間で $1.43 が差し引かれ、$18.57 の日割り払いを受け取ります。
+
+**請求プロファイルがあるかどうかわかりませんか?** 請求プロファイルがあるかどうかを確認する方法については、「[請求プロファイルの表示](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles)」を参照してください。
+
+### <a name="if-you-dont-have-a-billing-profile"></a>請求プロファイルがない場合
+
+次の表を使用して、サブスクリプションを自分でキャンセルできるかどうかを判断してください。
+
+|サブスクリプションがある場合  |できます  |
+|--------------|--------------|
+|25 個以下のライセンス  | 試用版または有料サブスクリプションは、いつでも <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 356 管理センター</a>でオンラインでキャンセルできます。        |
+|25 個を越えるライセンス   | ライセンスの数を 25 以下に減らして再試行するか、[サポートに連絡してサブスクリプションをキャンセルしてください](../../admin/get-help-support.md)。        |
+
+請求プロファイルがないサブスクリプションの場合、サブスクリプションを購入または更新した後、限られた時間枠内でのみキャンセルできます。 キャンセル期間が過ぎた場合は、[定期的な請求をオフにして](renew-your-subscription.md)、期間の終了時にサブスクリプションをキャンセルします。
+
+限られた時間枠内でキャンセルした場合、日割りのクレジットは次の請求期間内に返金されます。
 
 ## <a name="steps-to-cancel-your-subscription"></a>サブスクリプションをキャンセルする手順
 

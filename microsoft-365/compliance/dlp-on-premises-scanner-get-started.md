@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを設定する
-ms.openlocfilehash: 1154a565f286cfafb5f1f03fdefbf3740b6e9907
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1586489389931b3df19a1c84f0ae49ac7ff9c099
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942970"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159488"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>データ損失防止のオンプレミス スキャナーの使用を開始する
 
@@ -43,6 +43,9 @@ DLP オンプレミス スキャナーの使用を開始する前に、[Microsof
 
 
 ライセンスの詳細については、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。
+
+> [!IMPORTANT]
+> ファイルの追加またはファイルの使用によってスキャンされた場所に貢献するすべてのユーザーには、スキャナー ユーザーだけでなくライセンスが必要です。
 
 ### <a name="permissions"></a>アクセス許可
 

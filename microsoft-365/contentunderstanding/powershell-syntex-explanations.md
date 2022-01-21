@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: normal
 description: PowerShell でのドキュメント理解モデルSharePoint Syntexの作業について説明します。
-ms.openlocfilehash: bfb3bf237ba8f5dbc8772c974b37fe85e16e8dbf
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 06f0eb7314b85f9463689fea32667666e5e167fd
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074907"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159711"
 ---
 # <a name="work-with-document-understanding-model-explanations-in-powershell"></a>PowerShell でのドキュメント理解モデルの説明を使用する
 
@@ -133,7 +133,7 @@ Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationN
 
 ## <a name="create-a-phrase-list-explanation-based-on-a-term-set"></a>用語セットに基づいて語句リストの説明を作成する
 
-この例では、用語セットから値を取得して、カスタム フレーズ リストの説明テンプレートを作成する方法を示します。 これには、優先する用語名と類義語が含まれます。
+次の使用例は、用語セットから値を取得して、カスタム フレーズ リストの説明テンプレートを作成する方法を示しています。 これには、優先する用語名と類義語が含まれます。
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"

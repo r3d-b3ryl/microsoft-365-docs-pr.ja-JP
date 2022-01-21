@@ -12,13 +12,13 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: normal
-description: PowerShell を使用してドキュメント理解モデルをエクスポートおよびインポートする方法についてSharePoint Syntex
-ms.openlocfilehash: 289d802fdea50daa0261ec16ea760e9a57b0e9c5
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+description: PowerShell を使用してドキュメント理解モデルをエクスポートおよびインポートする方法については、SharePoint Syntex。
+ms.openlocfilehash: 6751a66d713ada8c06445d8bfd0efdb5c3ac2fad
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074896"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159507"
 ---
 # <a name="export-and-import-document-understanding-models-with-powershell"></a>PowerShell を使用したドキュメント理解モデルのエクスポートとインポート
 
@@ -29,7 +29,7 @@ SharePoint Syntexは PnP テンプレートとしてエクスポートし、コ�
 
 ## <a name="export-all-models-in-a-content-center"></a>コンテンツ センターのすべてのモデルをエクスポートする
 
-コンテンツ センターのすべてのモデルを 1 つの PnP テンプレートにエクスポートするには、次の [PnP PowerShell コマンドレットを](https://pnp.github.io/powershell/) 使用します。
+コンテンツ センター内のすべてのモデルを単一の PnP テンプレートにエクスポートするには、次の [PnP PowerShell コマンドレット](https://pnp.github.io/powershell/) を使用します。
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -47,9 +47,9 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
 Get-PnPSiteTemplate -Out MyModels.pnp -Configuration .\extract.json
 ```
 
-extract.json は、エクスポートするモデルを定義し、名前または ID でモデルを指定し、必要に応じてトレーニング データを抽出しない構成を可能にする
+extract.json は、エクスポートするモデルを定義し、名前または ID でモデルを指定し、必要に応じてトレーニング データを抽出しなく構成できます。
 
-### <a name="example--specify-model-by-name"></a>例- 名前でモデルを指定する
+### <a name="example---specify-model-by-name"></a>例 - 名前でモデルを指定する
 
 ```json
 {
@@ -68,7 +68,7 @@ extract.json は、エクスポートするモデルを定義し、名前また�
 }
 ```
 
-### <a name="example--specify-model-by-id"></a>例- ID でモデルを指定する
+### <a name="example---specify-model-by-id"></a>例 - ID でモデルを指定する
 
 ```json
 {
@@ -90,7 +90,8 @@ extract.json は、エクスポートするモデルを定義し、名前また�
 
 "includeTrainingData" プロパティを含めない場合、既定の動作は含まれます。
 
-> 注: モデルをコピー先コンテンツ センターにインポートするときに編集可能になるには、トレーニング データが必要です
+> [!NOTE]
+> トレーニング データは、コピー先のコンテンツ センターにインポートするときにモデルを編集可能にするために必要です。
 
 ## <a name="import-models-to-a-content-center"></a>モデルをコンテンツ センターにインポートする
 PnP テンプレートにエクスポートされたドキュメント理解モデルは、任意のテナントのコンテンツ センターにインポートできます。 エクスポートにトレーニング データが含まれている場合は、インポート後にモデルを編集できます。

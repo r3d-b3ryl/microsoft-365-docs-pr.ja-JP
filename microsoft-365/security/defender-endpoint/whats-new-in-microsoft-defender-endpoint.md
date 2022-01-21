@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ac7a16158f0b2cdeaca97dae8721c805caa7a53
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b452c0aea4932903c47f0874e839770caa2a6850
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940296"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159595"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -124,4 +124,4 @@ ms.locfileid: "61940296"
 
 ## <a name="january-2021"></a>2021 年 1 月
 
-- [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint では、仮想デスクトップのサポートWindows追加しました。
+- [Azure 仮想デスクトップ](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint が Azure Virtual Desktop のサポートを追加しました。

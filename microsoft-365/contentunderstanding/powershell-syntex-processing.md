@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: normal
 description: PowerShell を使用して、ドキュメント理解モデルで処理SharePoint Syntexする方法について説明します。
-ms.openlocfilehash: a4bdf9b450306686d19218e13a7a708b37fdb04e
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: f6e013bddbec3c0f12bb8665de538967adfff116
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074871"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159675"
 ---
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>PowerShell を使用してドキュメント理解モデルによる処理を要求する
 
@@ -52,7 +52,7 @@ Request-PnPSyntexClassifyAndExtract -List "Documents" -Force
 ```
 
 > [!NOTE]
-> 5000 を超えるアイテムで -Force オプションを使用すると、ピーク処理を自動的に無効にできます。
+> 5000 を超えるアイテムで -Force オプションを使用すると、ピーク処理が自動的に有効になります。
 
 ## <a name="request-processing-of-all-items-based-on-a-property"></a>プロパティに基づいてすべてのアイテムの処理を要求する
 
