@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Microsoft Information Protection (MIP) 機能を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
-ms.openlocfilehash: b3c7fc80f3735452ece4361ae3031ef6aa8f6bfc
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: bba0c41fd9018a6952d69a20fcc046a8b65c1e5b
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61577783"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62170989"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 の Microsoft Information Protection
 
@@ -55,17 +55,17 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 
 |機能|解決される問題|作業の開始|
 |:------|:------------|---------------------|
-|[秘密度ラベル](sensitivity-labels.md)| 組織の内外を移動するデータをラベル付けして保護する、アプリ、サービス、デバイスにまたがる単一のソリューションです。 <p> サンプル シナリオ: <p> [Office アプリの秘密度ラベルを管理する](sensitivity-labels-office-apps.md) <p> [ドキュメントとメールを暗号化する](encryption-sensitivity-labels.md) <p> [Power BI でラベルを適用して表示する](/power-bi/admin/service-security-apply-data-sensitivity-labels) <p> 秘密度ラベルのシナリオの包括的なリストについては、"作業の開始" のドキュメントを参照してください。|[秘密度ラベルの使用を開始する](get-started-with-sensitivity-labels.md) |
-|[Azure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/aip-clientv2)| Windows コンピューターの場合、秘密度ラベルが拡張され、すべてのファイルの種類に対するエクスプローラーや PowerShell からのラベル付けや保護を含む機能が追加されています <p> 追加機能の例: [Azure Information Protection 統合ラベル付けクライアントのカスタム構成](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection 統合ラベル付けクライアント管理者ガイド](/azure/information-protection/rms-client/clientv2-admin-guide)|
+|[秘密度ラベル](sensitivity-labels.md)| 組織の内外を移動するデータをラベル付けして保護する、アプリ、サービス、デバイスにまたがる単一のソリューションです。 <br /><br /> サンプル シナリオ: <br />- [Office アプリの秘密度ラベルを管理する](sensitivity-labels-office-apps.md) <br />- [ドキュメントと電子メールの暗号化](encryption-sensitivity-labels.md) <br />-  [Power BIでラベルを適用および表示する](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> 秘密度ラベルのシナリオの包括的なリストについては、"作業の開始" のドキュメントを参照してください。|[秘密度ラベルの使用を開始する](get-started-with-sensitivity-labels.md) |
+|[Azure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/aip-clientv2)| Windows コンピューターの場合、ラベル付けを エクスプローラー と PowerShell に拡張し、必要に応じて Office アプリの追加機能を使用します| [Azure Information Protection 統合ラベル付けクライアント管理者ガイド](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[二重キー暗号化](double-key-encryption.md)| どのような状況においても、保護されたコンテンツを復号化できるのは自分の組織だけです。また、規制要件により、暗号化キーを地理的な境界内に保持する必要があります。 | [二重キー暗号化の展開](double-key-encryption.md#deploy-dke)|
-|[Office 365 Message Encryption (OME)](ome.md)| メール メッセージと添付ドキュメントはいずれのデバイス上のいずれのユーザーに送信される場合も暗号化されるため、承認された受信者のみがメールの情報を読むことができます。 <p> サンプル シナリオ: [Advanced Message Encryption を使用して暗号化されたメールを無効にする](revoke-ome-encrypted-mail.md) | [新しい Message Encryption 機能を設定する](set-up-new-message-encryption-capabilities.md)|
+|[Office 365 Message Encryption (OME)](ome.md)| メール メッセージと添付ドキュメントはいずれのデバイス上のいずれのユーザーに送信される場合も暗号化されるため、承認された受信者のみがメールの情報を読むことができます。 <br /><br />  サンプル シナリオ: [Advanced Message Encryption を使用して暗号化されたメールを無効にする](revoke-ome-encrypted-mail.md) | [新しい Message Encryption 機能を設定する](set-up-new-message-encryption-capabilities.md)|
 |[カスタマー キーによるサービスの暗号化](customer-key-overview.md) | 承認されていないシステムや担当者によるデータの閲覧を防止し、Microsoft データセンターの BitLocker ディスク暗号化を補完します。 | [Office 365 のカスタマー キーを設定する](customer-key-set-up.md)|
 |[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|これは、SharePoint リストとライブラリを保護するもので、ユーザーがドキュメントをチェックアウトした際に、ダウンロードされたファイルが保護されるようになります。これにより、管理者が指定したポリシーに基づき、承認されているユーザーのみがファイルを閲覧したり使用したりできます。 | [SharePoint 管理センターで Information Rights Management (IRM) を設定する](set-up-irm-in-sp-admin-center.md)|
 [Rights Management コネクタ](/azure/information-protection/deploy-rms-connector) |Exchange や SharePoint Server を使用する既存のオンプレミスの展開か、または Windows Server とファイル分類インフラストラクチャ (FCI) を実行するファイル サーバーを保護する場合に限ります。 | [RMS コネクタを展開する手順](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure Information Protection 統合ラベル付けスキャナー](/azure/information-protection/deploy-aip-scanner)| オンプレミスのデータ ストア内にある機密情報の検出、ラベル付け、保護を行います。 | [Azure Information Protection 統合ラベル付けスキャナーの構成とインストール](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| クラウド上のデータ ストア内にある機密情報の検出、ラベル付け、保護を行います。 | [クラウドに保存されている規制対象データや機密データを検出し、分類し、ラベル付けし、保護する](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[Azure Purview](/azure/purview/overview) |機密データを識別し、Azure Purview アセットのコンテンツに自動ラベル付けを適用します。 これには、Azure Data Lake や Azure Files などのストレージ内のファイル、および Azure SQL DB や Cosmos DB の列などのスキーマ化されたデータが含まれます。 |[Azure Purview でのラベル付け](/azure/purview/create-sensitivity-label) |
-|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|秘密度ラベルの適用をサードパーティ製アプリやサービスに拡大します。 <p> サンプル シナリオ: [秘密度ラベルの設定と取得 (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK の設定と構成](/information-protection/develop/setup-configure-mip)|
+|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|秘密度ラベルの適用をサードパーティ製アプリやサービスに拡大します。 <br /><br />  サンプル シナリオ: [秘密度ラベルの設定と取得 (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK の設定と構成](/information-protection/develop/setup-configure-mip)|
 
 
 ## <a name="prevent-data-loss"></a>データの損失を防止する

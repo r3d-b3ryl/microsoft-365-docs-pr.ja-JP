@@ -17,15 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 30a0e3b61e004ffe6c78e3b7a2d15b7b190253d9
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 64a9926253ea699fa6cc62d1ec2d80d07f25fd29
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724657"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172280"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Microsoft Defender for Endpoint からアカウントをユーザーにリダイレクトMicrosoft 365 Defender
 
@@ -37,14 +37,14 @@ ms.locfileid: "60724657"
 
 SIEM と拡張検出および応答 (XDR) による脅威保護に対する Microsoft のクロスドメインアプローチに合わせ、Microsoft Defender Advanced Threat Protection を Microsoft Defender for Endpoint として再ブランド化し、それを単一の統合ポータル Microsoft 365 Defender に統合しました。
 
-このガイドでは、以前の Microsoft Defender for Endpoint ポータル (securitycenter.windows.com または securitycenter.microsoft.com) から Microsoft 365 Defender ポータル (security.microsoft.com) への自動リダイレクトを有効にすることで、アカウントを Microsoft 365 Defender にルーティングする方法について説明します。
+このガイドでは、以前の Microsoft Defender for Endpoint ポータル (securitycenter.windows.com または securitycenter.microsoft.com) から Microsoft 365 Defender への自動リダイレクトを有効にすることで、アカウントを Microsoft 365 Defender にルーティングする方法<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">について説明します</a>。
 
 > [!NOTE]
-> microsoft Defender for Endpoint in Microsoft 365 Defender では[、Microsoft Defender](./mssp-access.md)セキュリティ センターでのアクセス許可と同じ方法で、マネージド セキュリティ サービス プロバイダー [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)へのアクセス許可をサポートしています。
+> Microsoft Defender for Endpoint in Microsoft 365 Defender では、管理セキュリティ サービス プロバイダー [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)へのアクセス許可を、Microsoft Defender セキュリティ センター でアクセスが許可されるのと同[じ方法でサポートしています](./mssp-access.md)。
 
 ## <a name="what-to-expect"></a>想定される変化
 
-自動リダイレクトを有効にすると、securitycenter.windows.com または securitycenter.microsoft.com の元 Microsoft Defender for Endpoint ポータルにアクセスするアカウントが、security.microsoft.com の Microsoft 365 Defender ポータルに自動的にルーティングされます。
+自動リダイレクトが有効になると、securitycenter.windows.com または securitycenter.microsoft.com の元の Microsoft Defender for Endpoint ポータルにアクセスするアカウントが、<security.microsoft.com>の Microsoft 365 Defender ポータルに自動的<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">にルーティングされます</a>。
 
 変更点の詳細については[、「Microsoft Defender for Endpoint in Microsoft 365 Defender」を参照してください](microsoft-365-security-center-mde.md)。
 
@@ -68,8 +68,8 @@ SIEM と拡張検出および応答 (XDR) による脅威保護に対する Micr
 |---------|---------|---------|
 | [アラート] ページ | [アラート] ページ (securitycenter.windows.com | [アラート] ページ (security.microsoft.com |
 | インシデント ページ |[インシデント] ページ (securitycenter.windows.com | [インシデント] ページ (security.microsoft.com |
-| セキュリティ センター ポータルの [アラート] ページ | [アラート] ページ (security.microsoft.com | [アラート] ページ (security.microsoft.com |
-| セキュリティ センター ポータルのインシデント ページ | [インシデント] ページ (security.microsoft.com | [インシデント] ページ (security.microsoft.com |
+| Defender for Cloud ポータルの [アラート] ページ | [アラート] ページ (security.microsoft.com | [アラート] ページ (security.microsoft.com |
+| Defender for Cloud ポータルのインシデント ページ | [インシデント] ページ (security.microsoft.com | [インシデント] ページ (security.microsoft.com |
 
 ## <a name="when-does-this-take-effect"></a>これはいつ有効になりますか?
 
@@ -81,7 +81,7 @@ SIEM と拡張検出および応答 (XDR) による脅威保護に対する Micr
 
 1. 管理者がグローバル管理者か、セキュリティ管理者のアクセス許可を持Azure Active Directory。
 
-2. [サインインして](https://security.microsoft.com/)、Microsoft 365 Defender。
+2. サインインして [Microsoft 365 Defender]<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">をクリックします</a>。
 
 3. [エンドポイントの **全般設定**  >  **リダイレクト**  >  **] に**  >  **移動するか、** ここを [クリックします](https://security.microsoft.com/preferences2/portal_redirection)。  
 
@@ -101,7 +101,7 @@ SIEM と拡張検出および応答 (XDR) による脅威保護に対する Micr
 
 元の Microsoft Defender for Endpoint ポータルに戻すには、次の操作を行います。
 
-1. [グローバル管理者](https://security.microsoft.com/)としてMicrosoft 365 Defenderサインインするか、Azure Active directory でセキュリティ管理者のアクセス許可を持つアカウントを使用します。
+1. グローバル管理者として<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>サインインするか、Azure Active directory でセキュリティ管理者のアクセス許可を持つアカウントを使用します。
 
 2. [エンドポイント全般 **設定**  >  **リダイレクト] に**  >    >  **移動するか、**[ここでページを開きます](https://security.microsoft.com/preferences2/portal_redirection)。  
 

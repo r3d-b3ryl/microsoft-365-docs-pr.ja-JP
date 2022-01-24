@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 39d746b3df6b751845bdcdf0769f6874182b76aa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 8cbf6d8b69d9fbc8d8b083bf11e455a74b636af1
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213627"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172189"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>ユーザーなしでアプリを作成してMicrosoft 365 Defenderにアクセスする
 
@@ -46,7 +47,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 一般に、これらの API を使用するには、次の手順を実行する必要があります。
 
-- アプリケーション (azure Azure Active Directory) AD作成します。
+- (Azure Active Directory) アプリケーションAzure AD作成します。
 - このアプリケーションを使用してアクセス トークンを取得します。
 - トークンを使用して API にMicrosoft 365 Defenderします。
 
@@ -119,7 +120,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-トークンの詳細については、「Azure Azure Active Directoryチュートリアル」[をADしてください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
+トークンの詳細については、Azure Active Directoryチュートリアルを[Azure ADしてください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 > [!IMPORTANT]
 > このセクションの例では、テストの目的でシークレット値を貼り付けるのを推奨しますが、実稼働環境で実行されているアプリケーションにシークレットをハードコードする必要があります。 サード パーティは、シークレットを使用してリソースにアクセスできます。 [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates)を使用すると、アプリのシークレットをセキュリティで保護できます。 アプリを保護する方法の実用的な例については、「Azure Key Vault を使用してサーバー アプリのシークレットを管理する」 [を参照してください](/learn/modules/manage-secrets-with-azure-key-vault/)。
@@ -266,7 +267,7 @@ aadToken = jsonResponse["access_token"]
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 DefenderAPI の概要](api-overview.md)
+- [Microsoft 365 Defender API の概要](api-overview.md)
 - [API にMicrosoft 365 Defenderする](api-access.md)
 - ['Hello world' アプリケーションを作成する](api-hello-world.md)
 - [ユーザーに代わって API にMicrosoft 365 Defenderするアプリを作成する](api-create-app-user-context.md)

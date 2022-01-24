@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9b1010cd245f4ed727d1792b5e08fa6337e83c1c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c91c0c5afc449d2e8fdfc415fae83fcc2c913c6a
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166232"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172321"
 ---
 # <a name="live-response-command-examples"></a>ライブ応答コマンドの例
 
@@ -63,8 +63,13 @@ connections json
 ## `dir`
 
 ```console
-# List files and sub-folders in the current folder
+# List files and sub-folders in the current folder (by default it will show relative paths [-relative_path])
 dir
+```
+
+```console
+# List files and sub-folders in the current folder, with their full path
+dir -full_path
 ```
 
 ```console

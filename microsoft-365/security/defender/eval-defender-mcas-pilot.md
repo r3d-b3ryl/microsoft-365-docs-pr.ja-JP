@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cb3de75afef883743f3f5fd46c1a98fd5e1c7c10
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 484924d936f348fb29421b6bcc1789df4a44dc90
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933040"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172405"
 ---
 # <a name="pilot-microsoft-defender-for-cloud-apps-with-microsoft-365-defender"></a>パイロット Microsoft Defender for Cloud Apps with Microsoft 365 Defender
 
@@ -49,7 +51,7 @@ ms.locfileid: "61933040"
 Microsoft Defender for Cloud Apps を使用すると、展開の範囲を指定できます。 スコープを使用すると、アプリの監視対象または監視から除外する特定のユーザー グループを選択できます。 ユーザー グループを含めるか除外できます。 パイロット展開の範囲を設定するには [、「Scoped Deployment」を参照してください](/cloud-app-security/scoped-deployment)。
 
 
-## <a name="step-2-configure-protection--conditional-access-app-control"></a>手順 2.  保護の構成 - 条件付きアクセス アプリ制御
+## <a name="step-2-configure-protection--conditional-access-app-control"></a>手順 2. 保護の構成 - 条件付きアクセス アプリ制御
 
 構成できる最も強力な保護の 1 つは、条件付きアクセス アプリ制御です。 これには、Azure Active Directory (Azure AD) との統合が必要です。 これにより、関連するポリシー (正常なデバイスの要求など) を含む条件付きアクセス ポリシーを、承認したクラウド アプリに適用できます。 
 

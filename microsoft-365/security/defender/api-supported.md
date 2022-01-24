@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c77e825fa680a038ba89a9054e04ce939dcb7941
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 1785186f778c489cb4a254fe39cc41921a4de86e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203917"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171015"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>サポートされている Microsoft 365 Defender API 
 
@@ -59,7 +60,7 @@ ms.locfileid: "60203917"
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 DefenderAPI の概要](api-overview.md)
+- [Microsoft 365 Defender API の概要](api-overview.md)
 - [API にMicrosoft 365 Defenderする](api-access.md)
 - [ストリーミング API](../defender-endpoint/raw-data-export.md)
 - [API の制限とライセンスの詳細](api-terms.md)

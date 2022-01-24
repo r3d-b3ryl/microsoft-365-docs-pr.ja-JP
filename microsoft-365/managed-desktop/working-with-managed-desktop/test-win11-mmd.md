@@ -9,32 +9,22 @@ manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7c5526e532f14fc00ed52a6d260c017d0a019bae
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 82da735dcf5e9c83fc70d34c0380dc290e4f81f7
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035464"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172345"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップを使用して Windows 11 をプレビューおよびテストする
 
- Microsoft Managed Desktop 環境内で Windows 11 互換テスト プログラムを登録して参加する方法。 通常、Windows 11 と Microsoft Managed Desktop の詳細については、「Windows [11」および「Microsoft Managed Desktop」を参照してください](../intro/win11-overview.md)。 
+Microsoft Managed Desktop 環境内で Windows 11 互換テスト プログラムを登録して参加する方法。 通常、Windows 11 と Microsoft Managed Desktop の詳細については、「Windows [11」および「Microsoft Managed Desktop」を参照してください](../intro/win11-overview.md)。 
 
 ## <a name="add-devices-to-the-windows-11-test-group"></a>デバイスを 11 Windowsグループに追加する
 
-要求に応じて、デバイス グループ **(Modern Workplace - Windows 11** プレリリース テスト デバイス) を作成し、11 のテストと評価Windowsします。 このグループのデバイスは、Windows 11 ビルドと Microsoft Managed Desktop ベースライン構成が使用可能になると、新しい構成を取得し、信頼性の問題を監視します。
+デバイス グループ (Modern Workplace - Windows **11** プレリリース テスト デバイス) を作成し、11 のテストと評価Windowsしました。 名前の 「プレリリース」 にもかかわらず、このグループ内のデバイスは、Windows 11 の一般提供ビルドと Microsoft Managed Desktop ベースライン構成が使用可能になると受信し、信頼性の問題を監視します。 
 
-Windows 11 テスト用に既存のデバイスまたは新しいデバイスを選択できますが、プレリリース ビルドでの欠陥や互換性の問題のリスクが高く、このグループに実稼働デバイスを登録する必要があります。 以前のデバイス グループの割り当ては、このグループへの割り当て時に削除されます。
-
-プレリリース テスト グループにデバイスを登録するには、次の方法を実行します。
-
-1. Microsoft Managed Desktop Service Engineering チームで新しいサービス要求を開きます。
-2. フィールドには、次の値を使用します。
-    - タイトル: Windows 11 互換登録
-    - 要求の種類: 変更要求
-    - カテゴリ: デバイス
-    - サブカテゴリ: 展開グループの割り当て
-3. [説明] フィールドに、11 テストで使用するデバイスのシリアルWindowsします。 指定したデバイスが Microsoft Managed Desktop テナントにまだ展開されていない場合は注意してください。
+Windows 11 テスト用に既存のデバイスまたは新しいデバイスを選択できますが、テスト デバイスの互換性と全体的なエクスペリエンスに自信が持てない場合は、このグループに実稼働デバイスを登録する必要があります。 
 
 ## <a name="prioritize-applications-to-submit-to-test-base"></a>テスト ベースに送信するアプリケーションの優先順位を設定する
 
@@ -59,4 +49,4 @@ line-of-business または Windows アプリとの 11 の互換性の問題が�
     - サブカテゴリ: Windows/更新
 3. 動作と、実稼働環境でのビジネスの妨げとなる深刻な状況を説明します。
 
-Microsoft Managed Desktop は、生産性への影響に基づいてプレリリース ビルドの問題をトリアージして処理します。 サービスの説明ではプレリリース ビルドに関する問題は説明されませんが、ユーザーの生産性をブロックする問題が特定のテナント内で移行を開始する前に解決されるのを確認するために、お客様の管理者と連絡を取る予定です。
+Microsoft Managed Desktop は、生産性への影響にWindows 11 の問題をトリアージして処理します。 要求を開いた際に、ユーザーの生産性をブロックする問題が解決された後、特定のテナント内でより広範な Windows Windows 11 移行を開始する前に、お客様の管理者に依頼します。

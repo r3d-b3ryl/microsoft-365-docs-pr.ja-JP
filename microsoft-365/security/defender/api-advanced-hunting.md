@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a7be2c43a2ff97fddfa9db0a6d02bcc611e13173
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.custom: api
+ms.openlocfilehash: 94ce63f30b0016a920fdca60dd10b486922ffa32
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264866"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172281"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender高度なハンティング API
 
@@ -88,7 +89,7 @@ Content-Type | application/json
 
 パラメーター | 種類 | 説明
 -|-|-
-クエリ | テキスト | 実行するクエリ。 **注: 必須**
+Query | テキスト | 実行するクエリ。 **注: 必須**
 
 ## <a name="response"></a>応答
 
@@ -104,7 +105,7 @@ Content-Type | application/json
 
 次の例では、ユーザーが以下のクエリを送信し、、 、および を含む API 応答オブジェクト `Stats` `Schema` を受け取ります `Results` 。
 
-### <a name="query"></a>クエリ
+### <a name="query"></a>Query
 
 ```json
 {

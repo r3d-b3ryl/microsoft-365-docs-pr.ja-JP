@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 763add69e0512f9fe092dccf453d58cf3907118d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 03fbcb70588158919b54c9153b5d8d32d416cc75
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162388"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172141"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>インシデント API をリストMicrosoft 365 Defender
 
@@ -41,7 +42,7 @@ ms.locfileid: "60162388"
 
 ## <a name="api-description"></a>API の説明
 
-リスト インシデント API を使用すると、インシデントを並べ替え、情報に基づいたサイバーセキュリティ対応を作成できます。 環境保持ポリシーで指定した時間範囲内で、ネットワークでフラグが設定されたインシデントのコレクションが公開されます。 最新のインシデントがリストの上部に表示されます。 各インシデントには、関連するアラートとその関連エンティティの配列が含まれる。
+リスト インシデント API を使用すると、インシデントを並べ替え、情報に基づいたサイバーセキュリティ対応を作成できます。 環境保持ポリシーで指定した時間範囲内で、ネットワーク上でフラグが設定されたインシデントのコレクションを公開します。 最新のインシデントがリストの上部に表示されます。 各インシデントには、関連するアラートとその関連エンティティの配列が含まれる。
 
 API では、次の **OData 演算子がサポート** されています。
 
@@ -60,7 +61,7 @@ API では、次の **OData 演算子がサポート** されています。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
-アプリケーション|Incident.Read.All|すべてのインシデントを読み取る
+アプリケーション|Incident.Read.All|すべてのインシデントの読み取り
 アプリケーション|Incident.ReadWrite.All|すべてのインシデントの読み取りおよび書き込み
 委任 (職場または学校のアカウント)|Incident.Read|インシデントの読み取り
 委任 (職場または学校のアカウント)|Incident.ReadWrite|インシデントの読み取りおよび書き込み
@@ -79,9 +80,9 @@ GET /api/incidents
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 ---|---|---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|文字列|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 
@@ -105,8 +106,8 @@ lastUpdateTime|バックエンドでインシデントが最後に更新され�
 assignedTo|インシデントの所有者、または所有者 *が割り当* てられていない場合は null。|secop2@contoso.com
 classification|インシデントの仕様。 プロパティの値は次 *のとおりです。不明**、FalsePositive、TruePositive* |不明
 決定|インシデントの決定を指定します。 プロパティの値は次 *のとおりです。 NotAvailable*、 *Apt*、 *Malware*、 *SecurityPersonnel*、 *SecurityTesting*、 *UnwantedSoftware*、*その* 他|NotAvailable
-detectionSource|検出元を指定します。|MCAS
-status|インシデント (アクティブ *、または解決* 済み) *を分類します*。 インシデントに対する対応を整理および管理するのに役立ちます。|有効
+detectionSource|検出元を指定します。|Defender for Cloud Apps
+status|インシデント (アクティブ *、または解決* 済み) *を分類します*。 インシデントに対する対応を整理および管理するのに役立ちます。|Active
 severity|アセットへの影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高い項目では、最も迅速な注意が必要です。 <p> 次のいずれかの値: Informational、Low、*Medium、High です。  |中
 tags|インシデントに関連付けられたカスタム タグの配列 。たとえば、共通の特性を持つインシデントのグループにフラグを設定します。|\[\]
 comments|インシデントの管理時に secops によって作成されたコメントの配列 (分類の選択に関する追加情報など)。|\[\]
@@ -118,7 +119,7 @@ comments|インシデントの管理時に secops によって作成されたコ
 ---|---|---
 alertId|アラートを表す一意の識別子|caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId|このアラートが関連付けられているインシデントを表す一意の識別子|924565
-serviceSource|Microsoft Defender for Endpoint、microsoft Defender for Endpoint、Microsoft Cloud App Security Id、Microsoft Defender for Identity など、アラートの発生元となるサービスOffice 365。|MicrosoftCloudAppSecurity
+serviceSource|Microsoft Defender for Endpoint、Microsoft Defender for Cloud Apps、Microsoft Defender for Identity、Microsoft Defender for Identity など、アラートの発生元となるサービスOffice 365。|MicrosoftCloudAppSecurity
 creationTime|アラートが最初に作成された時刻。|2020-09-06T14:46:55.7182276Z
 lastUpdatedTime|バックエンドでアラートが最後に更新された時刻。|2020-09-06T14:46:57.243333Z
 resolvedTime|アラートが解決された時刻。|2020-09-10T05:22:59Z
@@ -149,15 +150,15 @@ osPlatform|デバイスが実行されている OS プラットフォーム。|W
 osBuild|デバイスが実行されている OS のビルド バージョン。|14393
 rbacGroupName|デバイス [に関連付けられた役割ベース](/azure/role-based-access-control/overview) のアクセス制御 (RBAC) グループ。|WDATP-Ring0
 firstSeen|デバイスが最初に表示された時刻。|2020-02-06T14:16:01.9330135Z
-healthStatus|デバイスの正常性状態。|有効
-riskScore|デバイスのリスク スコア。|高い
+healthStatus|デバイスの正常性状態。|Active
+riskScore|デバイスのリスク スコア。|高
 エンティティ|特定のアラートの一部として、または関連付けと識別されたすべてのエンティティ。|\[\] (以下のエンティティ フィールドの詳細を参照してください)
 
 ### <a name="entity-format"></a>エンティティの形式
 
 フィールド名|説明|値の例
 ---|---|---
-entityType|特定のアラートの一部または関連付けと識別されたエンティティ。<br>プロパティの値は次 *のとおりです*。 ユーザー 、 *Ip*、 *Url*、*ファイル*、*プロセス*、 MailBox 、 *MailMessage*、  *MailCluster*、*レジストリ*|ユーザー
+entityType|特定のアラートの一部または関連付けと識別されたエンティティ。<br>プロパティの値は次 *のとおりです*。 ユーザー 、 *Ip*、 *Url*、*ファイル*、*プロセス*、 MailBox 、 *MailMessage*、  *MailCluster*、*レジストリ*|User
 sha1|entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル ハッシュ。|5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
 sha256|entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル ハッシュ。|28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
 fileName|entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル名|Detector.UnitTests.dll
@@ -185,7 +186,7 @@ securityGroupId|entityType が  *SecurityGroup の場合に使用できます*�
 securityGroupName|entityType が  *SecurityGroup の場合に使用できます*。|ネットワーク構成演算子
 registryHive|entityType がレジストリの場合  *に使用できます*。|HKEY \_ ローカル \_ コンピューター|
 registryKey|entityType がレジストリの場合  *に使用できます*。|SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType|entityType がレジストリの場合  *に使用できます*。|String
+registryValueType|entityType がレジストリの場合  *に使用できます*。|文字列
 registryValue|entityType がレジストリの場合  *に使用できます*。|31-00-00-00
 deviceId|エンティティに関連するデバイスの ID (存在する場合)。|986e5df8b73dacd43c8917d17e523e76b13c75cd
 

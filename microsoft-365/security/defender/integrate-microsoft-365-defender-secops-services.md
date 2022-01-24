@@ -16,19 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7053616ebee7a0c8a63394e2db98704910d1ff10
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 7c2cebc256299bd529b8dfcc23787fcc0a16d85d
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121449"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172021"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>手順 3. サービスの SOC Microsoft 365 Defenderとの統合を計画する
 
@@ -77,6 +76,6 @@ Microsoft 365 Defenderコンポーネントとテクノロジはさまざまな�
 - [Defender for Office 365 とは](/office-365-security/defender-for-office-365)
 - [Microsoft Defender for Cloud Apps とは](/cloud-app-security/what-is-cloud-app-security)
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [手順 4.役割Microsoft 365 Defender監督の定義](integrate-microsoft-365-defender-secops-roles.md)

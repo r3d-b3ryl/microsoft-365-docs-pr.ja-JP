@@ -16,19 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1cacdf050c51b97f7ea6acbefcedfb2156814509
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 6ea0294604d77c812661dbe410772c91df9d66c8
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121461"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171925"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>手順 4. 役割Microsoft 365 Defender監督の定義
 
@@ -39,7 +38,7 @@ ms.locfileid: "61121461"
 
 運用上の役割を定義するには、Microsoft 365 Defender ライセンス、構成、および管理の所有権と説明責任を初期タスクとして確立する必要があります。 通常、Microsoft 365 および Enterprise セキュリティ + モビリティ (EMS) サービス (Microsoft 365 Defender を含む場合があります) のライセンス、サブスクリプション コスト、および管理の所有権は、セキュリティ 運用センター (SOC) チームの外にあります。 SOC チームは、これらの個人と一緒に作業して、ユーザーの適切な監視をMicrosoft 365 Defender。 
 
-多くの最新の SOC は、自分のスキルセットと機能に基づいてチーム メンバーをカテゴリに割り当てる。 例として以下のようなものがあります。
+多くの最新の SOC は、自分のスキルセットと機能に基づいてチーム メンバーをカテゴリに割り当てる。 次に例を示します。
 
 - 脅威と分析機能のライフサイクル管理に関連するタスクに割り当てられた脅威インテリジェンス チーム。
 - ログ、アラート、イベント、および監視機能の管理を担当する SOC アナリストで構成される監視チーム。
@@ -59,6 +58,6 @@ SOC チームの役割と責任Microsoft 365 Defenderこれらのチームに自
 ||||
 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [手順 5.使用例の開発とテスト](integrate-microsoft-365-defender-secops-use-cases.md)

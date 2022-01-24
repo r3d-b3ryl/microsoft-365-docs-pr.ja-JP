@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: be297e48cd4d5569b295215ce497ef913f4aa8d7
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c30e6d318801dbfb63f4bfb7b5bbaf64dad24ac0
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941554"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172117"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Id の Microsoft Defender のパイロット
 
@@ -49,7 +51,7 @@ Microsoft は、Microsoft Cloud サービスを使用しているお客様にセ
 
 これらのベンチマーク推奨事項には、Microsoft Defender for [Identity の Azure セキュリティ ベースラインが含まれます](/security/benchmark/azure/baselines/defender-for-identity-security-baseline)。 これらの推奨事項を実装すると、計画と実装に時間がかかる場合があります。 これらは ID 環境のセキュリティを大幅に向上しますが、Microsoft Defender for Identity の評価と実装を継続して行うのを防ぐ必要があります。 これらは、お客様の認識のためにここに提供されています。
 
-## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>手順 2.  機能を試す - さまざまな攻撃の種類を特定して修復するためのチュートリアルの詳細
+## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>手順 2. 機能を試す - さまざまな攻撃の種類を特定して修復するためのチュートリアルの詳細
 
 Microsoft Defender for Identity のドキュメントには、さまざまな攻撃の種類を特定して修復するプロセスを説明する一連のチュートリアルが含まれています。
 

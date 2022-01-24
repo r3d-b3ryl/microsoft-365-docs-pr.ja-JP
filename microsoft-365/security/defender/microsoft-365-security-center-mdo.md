@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 91f80cb79efe7a301bfcefaf7663e13f391b4b1e
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: c38054e55442a01d8e659ab4281e4790f57c7755
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724334"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171816"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender for Office 365 Microsoft 365 Defender
 
@@ -51,24 +51,24 @@ ms.locfileid: "60724334"
 |アクセス許可|[ロール&アクセス許可](https://security.microsoft.com/emailandcollabpermissions)|詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |メール フロー|||「[管理Exchange」を参照してください。](https://admin.exchange.microsoft.com/#/)|
 |データのプライバシー||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
-|Search|[監査](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|検索 (コンテンツ検索)||
+|検索|[監査](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|検索 (コンテンツ検索)||
 |レポート|[Report](https://security.microsoft.com/emailandcollabreport)|||
 |サービス アシュアランス||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |監督||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |電子情報開示||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |||||
 
-[Microsoft 365 Defender](./microsoft-365-defender.md)既存の Microsoft セキュリティ ポータルのセキュリティ機能 (セキュリティ コンプライアンス センターなど) を& <https://security.microsoft.com> します。 この強化されたセンターは、セキュリティ チームが脅威から組織を効果的かつ効率的に保護するのに役立ちます。
+[Microsoft 365 Defender](./microsoft-365-defender.md)既存の Microsoft セキュリティ ポータルのセキュリティ機能 (セキュリティ コンプライアンス センターなど) を& <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> します。 この強化されたセンターは、セキュリティ チームが脅威から組織を効果的かつ効率的に保護するのに役立ちます。
 
 セキュリティ & コンプライアンス センター (protection.office.com) について理解している場合、この記事では、セキュリティ コンプライアンス センターの変更とMicrosoft 365 Defender。
 
 利点の詳細: [Microsoft 365 Defender](microsoft-365-defender.md)概要
 
-コンプライアンス関連のアイテムをお探しの場合は、「[Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com/homepage)」へお越しください。
+コンプライアンス関連のアイテムをお探しの場合は、「<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンスセンター</a>」へお越しください。
 
 ## <a name="new-and-improved-capabilities"></a>新機能と強化された機能
 
-左側のナビゲーションまたはクイック起動バーは見慣れたものに見えます。 ただし、このセキュリティ センターには、いくつかの新しい要素や更新された要素があります。
+左側のナビゲーションまたはクイック起動バーは見慣れたものに見えます。 ただし、この Defender for Cloud には、いくつかの新しい要素と更新された要素があります。
 
 統合された Microsoft 365 Defender ソリューションを使用すると、脅威シグナルを一緒に縫い合わせ、脅威の範囲と影響の全範囲と影響、および組織に現在影響を与えている方法を特定できます。
 
@@ -127,7 +127,7 @@ Microsoft Defender での[高度な検索の](advanced-hunting-example.md)例を
 
 レポートの表示、設定の変更、およびユーザーの役割変更を行います。
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="セキュリティ センターの左側Microsoft 365 Defenderアクセス許可とレポートのサイド リンク バー メニュー。":::
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="ポータルの左側にあるMicrosoft 365 Defenderアクセス許可とレポートのサイド リンク バー メニュー Microsoft 365 Defenderします。":::
 
 > [!NOTE]
 > DomainKeys Identified Mail (DKIM) は、宛先メール システムがカスタム ドメインから送信されたメッセージを信頼します。
@@ -137,7 +137,7 @@ Microsoft Defender での[高度な検索の](advanced-hunting-example.md)例を
 
 ## <a name="whats-changed"></a>変更内容
 
-次の表は、セキュリティ コンプライアンス センターとセキュリティ ポータルの間で変更が&された脅威管理 **Microsoft 365 Defender** です。 これらの領域の詳細については、リンクをクリックしてください。
+次の表は、セキュリティ コンプライアンス センターとセキュリティ ポータルの間で変更が&された脅威管理Microsoft 365 Defenderです。 これらの領域の詳細については、リンクをクリックしてください。
 
 <br>
 
@@ -162,7 +162,7 @@ Microsoft Defender での[高度な検索の](advanced-hunting-example.md)例を
 また、この記事の下にある **関連情報** セクションを確認します。
 
 > [!IMPORTANT]
-> ポータル ( Microsoft 365 Defender ) <https://security.microsoft.com> は、 および でセキュリティ機能 <https://securitycenter.windows.com> を組み合わせたものになります <https://protection.office.com> 。 ただし、表示される内容はサブスクリプションによって異なります。 たとえば、Microsoft Defender for Office 365 Plan 1 または 2 をスタンドアロン サブスクリプションとしてお持ちの場合、Security for Endpoints 関連の機能は表示されません。また Defender for Office Plan 1 のお客様の場合、Threat Analytics などのアイテムは表示されません。
+> この<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータルMicrosoft 365 Defender、</a>および でセキュリティ機能 <https://securitycenter.windows.com> を組み合わせたもの <https://protection.office.com> になります。 ただし、表示される内容はサブスクリプションによって異なります。 たとえば、Microsoft Defender for Office 365 Plan 1 または 2 をスタンドアロン サブスクリプションとしてお持ちの場合、Security for Endpoints 関連の機能は表示されません。また Defender for Office Plan 1 のお客様の場合、Threat Analytics などのアイテムは表示されません。
 
 > [!TIP]
 > EOP Exchange Online Protection (EOP) 関数はすべて、Microsoft 365 Defender の Defender のコア要素Office 365。
@@ -173,7 +173,7 @@ Microsoft Defender での[高度な検索の](advanced-hunting-example.md)例を
 
 **ガイド 付 ツアー** を使用して、エンドポイントまたはメールと共同作業のページのクイック ツアーを見ることができます。 ここに表示される内容は、ライセンスが、Defender for Office 365、 Defender for Endpoint のどちらか、または両方をお持ちの場合によって異なる点に注意してください。
 
-また、比較のためにセキュリティ コンプライアンス センター **&リンクも** 含まれています。 最後のリンクは、最近の更新プログラムを表示する **[新機能]** ページへのリンクです。
+また、比較のためにセキュリティ コンプライアンス センター&リンクも含まれています。 最後のリンクは、最近の更新プログラムを表示する **[新機能]** ページへのリンクです。
 
 ## <a name="related-information"></a>関連情報
 

@@ -16,19 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 52579cbe5ff3a40e402a116368b607f2381062ce
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 3019602f3b6120129243ab7a683da1d01f89bb1e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122119"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172033"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>手順 5.  使用例の開発とテスト
 
@@ -47,7 +46,7 @@ SOC は、SOC Oversight チームによって規制される、使用例を開�
 
 使用例の開発に関連する SOC 監視アクティビティには、次のものが含まれます。 
 
-- Requirements
+- 要件
 - スタッフまたはトレーニングのニーズ
 - ソフトウェア ライセンス
 - ベンダー契約
@@ -148,6 +147,6 @@ NIST の 4 つの手順インシデント対応プロセスには、次の 4 つ
 - コンテインメント、根絶、および回復
 - インシデント後のアクティビティ 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [手順 6.SOC のメンテナンス タスクを特定する](integrate-microsoft-365-defender-secops-tasks.md)

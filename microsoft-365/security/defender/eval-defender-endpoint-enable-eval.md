@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d5f50d6c33ec2f46bc3cb54b0204a51e6ab567fe
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 846fd6854b8e2dcb408aaa55348380bb91c6b907
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941084"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172069"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>エンドポイント評価環境で Microsoft Defender を有効にする
 
@@ -58,7 +60,7 @@ Microsoft Defender for Endpoint の評価を有効にするには、次の手順
 
     ![課金ライセンスのイメージ。](../../media/defender/atp-billing-subscriptions.png)
 
-## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2.  サポートされている管理ツールを使用したオンボード エンドポイント
+## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2. サポートされている管理ツールを使用したオンボード エンドポイント
 
 ライセンス状態が適切にプロビジョニングされていることを確認した後、サービスへのデバイスのオンボーディングを開始できます。 
 
@@ -86,7 +88,7 @@ Microsoft Defender for Endpoint の評価を行う目的で、評価を実行す
 
 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 [Microsoft Defender for Endpoint のパイロットをセットアップする](eval-defender-endpoint-pilot.md)
  
 エンドポイントの Microsoft [Defender の評価の概要に戻る](eval-defender-endpoint-overview.md)

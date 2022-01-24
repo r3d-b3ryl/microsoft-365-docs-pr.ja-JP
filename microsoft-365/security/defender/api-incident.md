@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fc2e7f92a48cf94c0092dbcf7da051642949180c
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.custom: api
+ms.openlocfilehash: a1a3f119e0aafe75b58df9c2330a950d5ab31ead
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221390"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172309"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API とインシデント リソースの種類
 

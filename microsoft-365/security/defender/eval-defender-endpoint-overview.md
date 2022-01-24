@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 39f2fda4864e017991e323aa576d4f97d78f1d2b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1eaca5f9902b9617e47cc70d270f569d3a9dc60a
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940151"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172129"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>エンドポイントの Microsoft Defender の概要を評価する
 
@@ -48,7 +49,7 @@ ms.locfileid: "61940151"
  |手順   |説明
 |---------|---------|
 | [手順 1.アーキテクチャ要件と主な概念を確認する](eval-defender-endpoint-architecture.md)    | Defender for Endpoint アーキテクチャと使用可能な機能について説明します。       |
-|[手順 2.評価環境を有効にする](eval-defender-office-365-enable-eval.md)     |   手順に従って、評価環境をセットアップします。      |
-|[手順 3.パイロットのセットアップ ](eval-defender-office-365-pilot.md)    |    パイロット グループを確認し、シミュレーションを実行し、主要な機能とダッシュボードに慣れ親しんでください。     |
+|[手順 2.評価環境を有効にする](eval-defender-endpoint-enable-eval.md)     |   手順に従って、評価環境をセットアップします。      |
+|[手順 3.パイロットのセットアップ ](eval-defender-endpoint-pilot.md)    |    パイロット グループを確認し、シミュレーションを実行し、主要な機能とダッシュボードに慣れ親しんでください。     |
 
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d114c7aa72c3baa5fb871fc4a52a00a22c21998e
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: bc7b18088d25e47cd214da2df94ff5eb524f2e78
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159602"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171912"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -63,6 +63,10 @@ ms.locfileid: "62159602"
 
   - **macOS** - パブリック プレビューにのみ適用され、最低限必要なバージョン: 101.43.84 
   
+   > [!NOTE]
+   > 現在サポートされているのは、Intel ベースの macOS システムのみです。
+    
+
   - **Linux** - パブリック プレビューにのみ適用され、最低限必要なバージョン: 101.45.13 
     
   - **Windows Server 2012 R2** - と [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -199,7 +203,7 @@ ms.locfileid: "62159602"
 | library  | ライブ応答ライブラリにアップロードされたファイルを一覧表示します。  | Y  | Y  | Y  |
 | putfile  | ライブラリからデバイスにファイルを書き込みます。 ファイルは作業フォルダーに保存され、デバイスが既定で再起動すると削除されます。  | Y  | Y  | Y  |
 | remediate  | デバイス上のエンティティを修復します。 修復アクションは、エンティティの種類によって異なります: ファイル: プロセスの削除: 停止、イメージ ファイルの削除 サービス: 停止、イメージ ファイルの削除 レジストリ エントリ: スケジュールされたタスクの削除: スタートアップ フォルダー項目の削除: ファイルの削除 注意: このコマンドには前提条件のコマンドがあります。 -auto コマンドを修復と組み合わせて使用して、前提条件のコマンドを自動的に実行できます。  | Y  | Y  | Y  |
-| scan  | ウイルス対策 (クイック) スキャンを実行して、マルウェアの特定と修復に役立ちます。  | N  | Y  | Y  |
+| scan | ウイルス対策スキャンを実行して、マルウェアの特定と修復に役立ちます。 | N | Y | Y |
 | undo  | 修復されたエンティティを復元します。  | Y  | Y  | Y  |
 
 

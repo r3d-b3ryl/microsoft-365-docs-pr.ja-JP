@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7008b78ae5b01925e97143841b453a2c5c573fcc
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: adaf1a7798c9e2e7b016a85577c1f62995a7a78e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941072"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172057"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender のパイロット
 
@@ -35,7 +37,7 @@ ms.locfileid: "61941072"
 ![Microsoft Defender for Identity を Defender 評価環境に追加する手順。](../../media/defender/m365-defender-endpoint-pilot-steps.png)
 
 - 手順 1. パイロット グループの確認
-- 手順 2.  機能を試す
+- 手順 2. 機能を試す
 
 Microsoft Defender for Endpoint をパイロットする場合は、組織全体をオンボーディングする前に、いくつかのデバイスをサービスにオンボードできます。  
 
@@ -46,7 +48,7 @@ Microsoft Defender for Endpoint をパイロットする場合は、組織全体
 
 オンボードデバイスが表示された場合は、機能の試しに進みます。 
 
-## <a name="step-2-try-out-capabilities"></a>手順 2.  機能を試す
+## <a name="step-2-try-out-capabilities"></a>手順 2. 機能を試す
 一部のデバイスのオンボーディングが完了し、サービスに報告されているのを確認したら、使用可能な強力な機能を試して、製品について理解してください。
 
 パイロットの間は、複雑な構成手順を実行せずに、いくつかの機能を試して製品を実際に確認できます。

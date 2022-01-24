@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e97ed3b7b11eeded5919e963a3175782d3a7d088
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 88b1bc6c46296e3694ef53ae733955a1491b21c7
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184379"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172201"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>ユーザーに代わって API にMicrosoft 365 Defenderするアプリを作成する
 
@@ -46,7 +47,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 一般に、これらの API を使用するには、次の手順を実行する必要があります。
 
-- アプリケーション (azure Azure Active Directory) AD作成します。
+- (Azure Active Directory) アプリケーションAzure AD作成します。
 - このアプリケーションを使用してアクセス トークンを取得します。
 - トークンを使用して API にMicrosoft 365 Defenderします。
 
@@ -103,7 +104,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-トークンの詳細については、「Azure Azure Active Directoryチュートリアル」[をADしてください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
+トークンの詳細については、Azure Active Directoryチュートリアルを[Azure ADしてください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 ### <a name="get-an-access-token-using-powershell"></a>PowerShell を使用してアクセス トークンを取得する
 
@@ -151,7 +152,7 @@ $response.AccessToken
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 DefenderAPI の概要](api-overview.md)
+- [Microsoft 365 Defender API の概要](api-overview.md)
 - [API にMicrosoft 365 Defenderする](api-access.md)
 - ['Hello world' アプリを作成する](api-hello-world.md)
 - [ユーザーなしでアプリを作成してMicrosoft 365 Defenderにアクセスする](api-create-app-web.md)

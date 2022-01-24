@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 184ec4dcdd5601585e046ced410141047fdfa24f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6910336dea0559ad241c240cde09d3929fe2e422
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942670"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62170977"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity の評価環境を有効にする
 
@@ -52,7 +54,7 @@ Defender for Identity ポータルにサインインしてインスタンスを�
 |2     | Connect Defender for Identity インスタンスを Active Directory フォレストに移動する   | [クイック スタート: Connect Active Directory フォレストにアクセスする](/defender-for-identity/install-step2)  |
 | | |
 
-## <a name="step-2-install-and-configure-the-sensor"></a>手順 2.  センサーのインストールと構成
+## <a name="step-2-install-and-configure-the-sensor"></a>手順 2. センサーのインストールと構成
 
 次に、ドメイン コントローラーおよびオンプレミス環境の FS AD Defender for Identity センサーをダウンロード、インストール、および構成します。
 

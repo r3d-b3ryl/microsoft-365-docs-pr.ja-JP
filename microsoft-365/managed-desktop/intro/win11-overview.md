@@ -9,12 +9,12 @@ manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3365bd636ccf5825d842fb41c078cbcc67c6081f
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: b7a4366281172254a893c20dfd7519e2e8ef36d1
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034691"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62170965"
 ---
 # <a name="microsoft-managed-desktop-and-windows-11"></a>Microsoft マネージド デスクトップと Windows 11
 
@@ -22,29 +22,27 @@ Windows 11 の発表に続いて、Windows デバイスを最新の状態に保�
 
 Microsoft Managed Desktop デバイスにインストールされている Windows 11 を取得するための具体的な手順については、「プレビューとテスト Windows [11 with Microsoft Managed Desktop」を参照してください](../working-with-managed-desktop/test-win11-mmd.md)。
 
-## <a name="timeline-for-windows-11"></a>11 Windowsのタイムライン
+## <a name="timeline-for-windows-10-and-windows-11"></a>11 のWindows 10とWindowsタイムライン
 
-Windows 11 のプレビュー ビルドは、2021 年 6 月 28 日から Insider Program のWindows[利用できます](/windows-insider/)。 リリース ビルドは、2021 年の暦年の終わりまでに一般公開される予定です。
+Windows 11 は、2021 年 10 月 4 日に一般提供になりました。 コンシューマーおよびエンタープライズ展開の準備が整い、完全にサポートされているプラットフォームです。 2023 年 1 月からすべての Microsoft Managed Desktop デバイスの展開のスケジュール設定を開始しますが、2023 年 1 月 11 日より早く展開するユーザーを完全にサポートWindows予定です。 管理者に相談し、技術的な準備とビジネス上の考慮事項に基づいて、テナントごとに移行計画を開発して実装する方法をアドバイスします。
 
-プレビュー ビルドは、Microsoft Managed Desktop によって管理されているかどうかに関係ないデバイスにインストールできます。 エンタープライズ サポートが終了するまで、Windows 10並行してサポートを継続します。 ライフサイクル情報[についてはWindows 10リリース情報](/windows/release-health/release-information)を参照してください。
+Microsoft Managed Desktop は、エンタープライズ サポートのWindows 10まで、引き続き並行してサポートを行います。 ライフ[サイクルWindows 10については、「リリース情報」](/windows/release-health/release-information)を参照してください。
 
-11 Windows一般に使用できる場合は、検証テストを行います。 2022 年 1 月は、Windows 11 が標準の展開グループを通じて Microsoft Managed Desktop の実稼働デバイスに提供される最も早い日になる予定です。
 
-管理者に相談し、技術的な準備とビジネス上の考慮事項に基づいて、テナントごとに移行計画を開発して実装する方法をアドバイスします。
 
 ## <a name="assessing-pre-release-versions-of-windows-11"></a>バージョン 11 のプレリリース バージョンWindowsする
 
-Microsoft Managed Desktop デバイスの 95% 以上が Windows 11 の対象となるので、実稼働展開の前にテスト デバイスでアップグレードをプレビューできます。 11 のシステムWindowsの詳細については[、「11 の要件Windowsを参照してください](/windows/whats-new/windows-11-requirements)。 Microsoft Managed Desktop からデバイスの適格性の状態に関する詳細を要求できます。
+Microsoft Managed Desktop デバイスの 95% 以上が Windows 11 の対象となるので、実稼働環境の展開前にテスト デバイスでアップグレードを試してみる必要があります。 11 のシステムWindowsの詳細については[、「11 の要件Windowsを参照してください](/windows/whats-new/windows-11-requirements)。 
 
-Microsoft Managed Desktop デバイスの場合は、モダン ワークプレース **- 11** プレリリース テスト デバイス デバイス Windowsにテスト デバイスの追加を要求できます。 このグループは、Windowsデスクトップのベースライン構成と共に 11 のプレビュー ビルドを受け取ります。 Microsoft Managed Desktop は Windows 11 プレビュー ビルドのリリース ケイデンスを管理しないので、このデバイス グループのメンバーは、Windows 10 デバイス グループよりも頻繁に更新プログラムを受け取る可能性があります。
+Microsoft Managed Desktop デバイスの場合、デバイスを 11 テスト Windows[グループに追加できます](/microsoft-365/managed-desktop/working-with-managed-desktop/test-win11-mmd?view=o365-worldwide#add-devices-to-the-windows-11-test-group)。 このグループは、Microsoft Windowsベースライン構成と共に、11 の一般可用性ビルドを受け取ります。 デバイス グループに追加したら、デバイスが新しい設定を受け取り、11 から 11 までWindowsします。
 
-Microsoft Managed Desktop によって管理されていないデバイスについては[、Windows Insider Program](/windows-insider/)に参加してプレビュー ビルドをダウンロードし、Windows 11 の展開に関するガイダンスを取得できます。 11 のプレWindowsビルドを実行し、後で Microsoft Managed Desktop に登録しているデバイスがある場合、デバイスは 11 のバージョンに戻Windows 10。
+Microsoft Managed Desktop で管理されていないデバイスの場合は、エンドポイント マネージャー 11 を自分で展開する方法Windowsできます。 [](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/endpoint-manager-simplifies-upgrades-to-windows-11/ba-p/2771886) デバイスが 11 以降Windowsしている場合は、Microsoft Managed Desktop に登録します。デバイスは 11 以降に戻Windows 10。
 
 ## <a name="support-for-pre-release-windows-11-devices"></a>11 台のデバイスのプレWindowsサポート
 
-すべてのプラットフォームのプレリリース ビルドには、一般公開前に特定および解決できる欠陥とアプリケーションの互換性の問題が含まれていると予想されます。 その結果、Windows 11 のプレリリース ビルドを実行しているデバイスはテスト デバイスと見なされますが、他の環境と共にセキュリティの脅威を監視し、他の Microsoft Managed Desktop デバイスと同じセキュリティアラート応答を受け取ります。
+一般提供前にWindows 11 テストを選択したユーザーの場合、デバイスにプレビュー ビルドがインストールされている可能性があります。 この状態の Microsoft Managed Desktop デバイスには、Windows 11 の一般的な可用性ビルドは提供されませんが、発生した問題の解決には引き続きサポートされます。 さらに、Microsoft Managed Desktop は、すべての管理対象デバイスでセキュリティ上の脅威を監視し、デバイスが Windows 11 プレビュー ビルドを実行しているかどうかに関係なく、すべてのアラートに応答します。 
 
-生産性を維持しながら、Windows 11 への移行に取り組むため、プレリリース ビルドで発生した欠陥を報告してください。 11 の広範な展開時にユーザーの生産性をブロックする欠陥と、Windows デバイスでのユーザーの生産性をブロックする欠陥を優先Windows 10します。
+生産性を維持しながら、Windows 11 への移行に取り組むため、プラットフォームで発生した欠陥を報告してください。 11 の広範な展開時にユーザーの生産性をブロックする欠陥と、Windows デバイスでのユーザーの生産性をブロックする欠陥を優先Windows 10します。
 
 ## <a name="testing-application-compatibility"></a>アプリケーションの互換性のテスト
 
@@ -52,10 +50,10 @@ Microsoft Managed Desktop によって管理されていないデバイスにつ
 
 ### <a name="proactive-measures"></a>予防的な対策
 
-**一般的なアプリ:** Microsoft では、11 のビルドに展開されている最も一般的なエンタープライズ アプリケーションとスイートWindowsしています。 テスト中に検出された問題を解決するために、外部のソフトウェア発行元および内部製品チームと作業します。 プロアクティブな互換性テストの取り組みの詳細については [、「Application Compatibility blog」を参照してください](https://blogs.windows.com/windowsexperience/2019/01/15/application-compatibility-in-the-windows-ecosystem/)。
+**一般的なアプリ:** Microsoft では、11 のビルドに展開されている最も一般的なエンタープライズ アプリケーションとスイートWindowsします。 テスト中に検出された問題を解決するために、外部のソフトウェア発行元および内部製品チームと作業します。 プロアクティブな互換性テストの取り組みの詳細については [、「Application Compatibility blog」を参照してください](https://blogs.windows.com/windowsexperience/2019/01/15/application-compatibility-in-the-windows-ecosystem/)。
 
 **Line-of-business** アプリ: Test [Base](https://www.microsoft.com/en-us/testbase)は、アプリ発行元と IT 管理者が、Microsoft が安全な Azure 環境で Windows 11 ビルドを実行している仮想マシンで実行するためのアプリとテスト ケースの提出に使用できるリソースです。 各テスト実行の結果、テスト分析、回帰分析は、プライベート Azure ポータルで利用できます。 Microsoft Managed Desktop は、アプリの使用状況と信頼性データに基づく検証のために、業務上のアプリの優先順位を設定するのに役立ちます。 Test Base の詳細については、「Test [Base for Microsoft 365」 を参照してください](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/test-base-for-microsoft-365-microsoft-ignite-2021-updates/ba-p/2185566)。
 
 ### <a name="reactive-measures"></a>反応性メジャー
-テスト環境または実稼働環境でアプリの互換性の問題が発生した場合は、必要に応じて[App Assure](/fasttrack/products-and-capabilities#app-assure)または FastTrackを利用して、無料のサポートを受け取ります。 11 Windowsには、最新のオペレーティング システム ビルドで実行されている Office、Microsoft Edge、Teams、および line-of-business アプリケーションの機能が含まれます。 App Assure は、アプリの互換性の問題に優先順位を付け、解決するためにアプリの発行元に直接関与します。
+テスト環境または実稼働環境でアプリの互換性の問題が発生した場合は、サービス要求を開いて無料のサポートを [受け取ります](/microsoft-365/managed-desktop/working-with-managed-desktop/test-win11-mmd?view=o365-worldwide#report-issues)。 11 Windowsには、最新のオペレーティング システム ビルドで実行されている Office、Microsoft Edge、Teams、および line-of-business アプリケーションの機能が含まれます。 Microsoft App Assure は、必要に応じてアプリの互換性の問題に優先順位を付け、解決するためにアプリの発行元に直接関与します。
 

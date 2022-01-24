@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 6a4981d77c544b8d4bd0b5824f6a20a3a3731c0b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 988632e84614b49262c9cc7b8a74b493c1a48b01
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937906"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171973"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Microsoft Defender for Endpoint パートナーになる
 
@@ -30,13 +30,12 @@ ms.locfileid: "61937906"
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint ソリューション パートナーになるためには、次の手順に従って完了する必要があります。
 
-## <a name="step-1-subscribe-to-a-microsoft-defender-for-endpoint-developer-license"></a>手順 1: エンドポイント開発者向け Microsoft Defender ライセンスをサブスクライブする
+## <a name="step-1-subscribe-to-a-microsoft-defender-for-endpoint-license"></a>手順 1: Microsoft Defender for Endpoint ライセンスをサブスクライブする
 
-[Microsoft Defender for Endpoint Developer ライセンスをサブスクライブします](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9)。 サブスクライブを使用すると、最大 10 台のデバイスを含む Microsoft Defender for Endpoint テナントを使用して、Microsoft Defender for Endpoint と統合するソリューションを開発できます。
+Defender for Endpoint を試す場合は、 [無料試用版にサインアップします。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink) サブスクライブを使用すると、最大 3 つのデバイスを備える Microsoft Defender for Endpoint テナントを使用して、Microsoft Defender for Endpoint と統合するソリューションを開発できます。
 
 ## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>手順 2: ソリューションの検証と認定の要件を満たす
 
@@ -74,6 +73,10 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Endpoint[](partner-
    - 詳細については [、「RFC 2616 section-14.43」を参照してください](https://tools.ietf.org/html/rfc2616#section-14.43)。
 
 Microsoft Defender for Endpoint とのパートナーシップは、相互のお客様が防御をさらに合理化、統合、および調整するのに役立ちます。 Microsoft Defender for Endpoint パートナーになり、最新の脅威を一緒に防止して対応することで、顧客とその資産を効果的に保護する共通の目標を達成することを選んだのは嬉しく思います。
+
+## <a name="misa-nomination"></a>MISA の指名 
+マネージド セキュリティ サービス プロバイダー (MSSP) と独立したソフトウェア ベンダー (ISV) は、Microsoft インテリジェント セキュリティ アソシエーション (MISA) にノミネートできます。 詳細については [、「MISA 情報ページ」を参照してください](https://www.microsoft.com/security/business/intelligent-security-association)。
+
 
 ## <a name="related-topics"></a>関連項目
 

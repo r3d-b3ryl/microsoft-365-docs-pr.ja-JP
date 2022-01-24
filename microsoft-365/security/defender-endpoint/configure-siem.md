@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1438e346f693ede4a54eeb7c850a2d8cd4164129
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 4c0462bcfae77677fca05132aaf0895b897bf788
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074524"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172249"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>SIEM ツールを Microsoft Defender for Endpoint に統合する
 
@@ -85,8 +85,8 @@ SmartConnector は、以前の FlexConnector のデータをMicrosoft 365 Defend
 ### <a name="ibm-qradar"></a>IBM QRadar
 
 >[!NOTE]
->
->IBM QRadar と Microsoft Defender for Endpoint との統合は、Microsoft 365 Defender ストリーミング API を呼び出す新しい[Microsoft 365 Defender](../defender/streaming-api.md)デバイス サポート モジュール (DSM) でサポートされ、Microsoft 365 Defender からストリーミング イベント データを取り込Microsoft 365 Defender Microsoft Defender for Endpoint を含む製品。 サポートされているイベントの種類の詳細については、「サポートされている [イベントの種類」を参照してください](../defender/supported-event-types.md)。
+>Microsoft Defender for Endpoint を含む Microsoft 365 Defender との IBM QRadar 統合は、Microsoft 365 Defender [Streaming API](../defender/streaming-api.md)を呼び出す新しい Microsoft 365 Defender デバイス サポート モジュール (DSM) でサポートされます。このモジュールでは、ストリーミング イベント データの取り込みを可能にします。Microsoft 365 Defender Microsoft Defender for Endpoint など、さまざまな製品を提供します。 新しい QRadar Microsoft 365 Defender DSM の詳細については[、「IBM QRadar](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender)製品ドキュメント」、およびストリーミング API でサポートされるイベントの種類の詳細については、「サポートされるイベントの種類」を[参照してください](../defender/supported-event-types.md)。
+
 新しい顧客は、以前の QRadar Microsoft Defender ATP デバイス サポート モジュール (DSM) を使用してオンボードされなくなりました。既存のお客様は、新しい Microsoft 365 Defender DSM をすべての Microsoft 365 Defender 製品との統合の単一ポイントとして採用してください。
 
 ## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Microsoft Defender for Endpoint イベントをイベント ストリーミング API Microsoft 365 Defender取り込む

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65288d0644fa7761e91ad08a433d42bd85016e46
-ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
+ms.openlocfilehash: 6f7a3404ec0ae64e3dcdc4d6a3072e7fc2936646
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61436658"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172453"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のパフォーマンスの問題のトラブルシューティング
 
@@ -47,16 +47,23 @@ ms.locfileid: "61436658"
 - AV に関連するパフォーマンスの問題のみ
 
 リアルタイム保護 (RTP) は、デバイスを継続的に監視し、脅威から保護する、Linux 上の Defender for Endpoint の機能です。 ファイルとプロセスの監視、その他のヒューリスティックで構成されます。
+
 次の手順を使用して、これらの問題のトラブルシューティングと軽減を行います。
+
 1. 次のいずれかの方法を使用してリアルタイム保護を無効にし、パフォーマンスが向上するかどうかを確認します。 この方法は、Defender for Endpoint on Linux がパフォーマンスの問題に貢献するかどうかを絞り込むのに役立ちます。
+
     デバイスが組織によって管理されていない場合は、コマンド ラインからリアルタイム保護を無効にすることができます。
+
     ```bash
     mdatp config real-time-protection --value disabled
     ```
+
     ```Output
     Configuration property updated
     ```
+
     デバイスが組織によって管理されている場合は、「Defender for Endpoint on Linux の設定」の手順に従って、管理者がリアルタイム保護 [を無効にすることができます](linux-preferences.md)。
+
     > [!NOTE]
     > リアルタイム保護がオフの間にパフォーマンスの問題が解決しない場合、問題の発生源はエンドポイント検出および応答 (EDR) コンポーネントである可能性があります。 この場合は、この記事の **「Microsoft Defender for Endpoint Client Analyzer** を使用したパフォーマンスの問題のトラブルシューティング」セクションの手順に従ってください。
 
@@ -66,32 +73,47 @@ ms.locfileid: "61436658"
     > この機能は、バージョン 100.90.70 以降で使用できます。
 
     この機能は、既定で and チャネル `Dogfood` で有効 `InsiderFast` になっています。 別の更新チャネルを使用している場合は、コマンド ラインからこの機能を有効にできます。
+
     ```bash
     mdatp config real-time-protection-statistics --value enabled
     ```
+
     この機能では、リアルタイム保護を有効にする必要があります。 リアルタイム保護の状態を確認するには、次のコマンドを実行します。
+
     ```bash
     mdatp health --field real_time_protection_enabled
     ```
+
     エントリが `real_time_protection_enabled` . `true` それ以外の場合は、次のコマンドを実行して有効にしてください。
+
     ```bash
     mdatp config real-time-protection --value enabled
     ```
+
     ```Output
     Configuration property updated
     ```
+
     現在の統計情報を収集するには、次のコマンドを実行します。
+
     ```bash
     mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
     ```
+
     > [!NOTE]
-    > 使用 ```--output json``` (ダブル ダッシュに注意してください) を使用すると、出力形式が解析の準備ができていることを確認します。 このコマンドの出力には、すべてのプロセスと関連するスキャン アクティビティが表示されます。
+    > 使用 ```--output json``` (ダブル ダッシュに注意してください) を使用すると、出力形式が解析の準備ができていることを確認します。
+
+    このコマンドの出力には、すべてのプロセスと関連するスキャン アクティビティが表示されます。
 
 3. Linux システムで、次のコマンドを使用して **python パーサー high_cpu_parser.py の** サンプルをダウンロードします。
+
     ```bash
     wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
+
     このコマンドの出力は、次のようになります。
+
+
     ```Output
     --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
     Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.xxx.xxx
@@ -101,15 +123,20 @@ ms.locfileid: "61436658"
     Saving to: 'high_cpu_parser.py'
     100%[===========================================>] 1,020    --.-K/s   in 0s
     ```
+
 4. 次に、次のコマンドを入力します。
+
     ```bash
     chmod +x high_cpu_parser.py
     ```
+
     ```bash
     cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
     ```
+
       上記の出力は、パフォーマンスの問題に対する上位の投稿者の一覧です。 最初の列はプロセス識別子 (PID)、2 番目の列はプロセス名、最後の列はスキャンされたファイルの数であり、影響によって並べ替えます。
     たとえば、コマンドの出力は次のようになります。 
+
     ```Output
     ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
     27432 None 76703
@@ -123,8 +150,9 @@ ms.locfileid: "61436658"
     4764 None 228
     125  CrashPlanService 164
     ```
+
     Defender for Endpoint on Linux のパフォーマンスを向上するには、行の下に数値が最も多いディフェンダーを見つけて除外 `Total files scanned` を追加します。 詳細については、「Linux での Defender for Endpoint の除外の構成と [検証」を参照してください](linux-exclusions.md)。
-    
+
     > [!NOTE]
     > アプリケーションは、統計をメモリに格納し、ファイルのアクティビティが開始され、リアルタイム保護が有効にされた後にのみ追跡します。 リアルタイム保護がオフの前または期間中に起動されたプロセスはカウントされません。 さらに、トリガーされたスキャンがカウントされるイベントのみ。
 
@@ -132,7 +160,7 @@ ms.locfileid: "61436658"
 
     詳細については、「[Linux 用の Microsoft Defender for Endpoint の除外を構成および検証する](linux-exclusions.md)」 を参照してください。
 
-## <a name="diagnose-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint Client Analyzer を使用してパフォーマンスの問題を診断する
+## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint Client Analyzer を使用したパフォーマンスの問題のトラブルシューティング
 
 **適用対象:**
 - AV やエンドポイントなどのすべての使用可能な Defender for Endpoint コンポーネントのパフォーマンスEDR  

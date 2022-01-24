@@ -16,19 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a79738119eecc08666e498a3057753fd6532e4f1
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: d56a062a54439103fc8beca17c925602e374edda
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122491"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172009"
 ---
 # <a name="step-6-identify-soc-maintenance-tasks"></a>手順 6. SOC のメンテナンス タスクを特定する
 

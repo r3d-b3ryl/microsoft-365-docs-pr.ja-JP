@@ -18,14 +18,13 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 8400723f06d760657536fc85a711ce9efb2b82eb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 0a8ec594f59285f1b4e861ec464bbbeb6083f001
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937714"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172393"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender for Endpoint in Microsoft 365 Defender
 
@@ -50,7 +49,7 @@ ms.locfileid: "61937714"
 | デバイス一覧 | デバイス一覧 |
 | アラート キュー | インシデントとアラート |
 | 自動化された調査 | アクション センター |
-| 高度な検出 | 検索 |
+| 高度な追及 | 検索 |
 | レポート | レポート |
 | パートナー& API | パートナー& API |
 | 脅威&の管理 | 脆弱性管理 |

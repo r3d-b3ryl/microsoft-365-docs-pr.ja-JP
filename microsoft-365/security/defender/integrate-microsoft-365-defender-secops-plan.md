@@ -16,19 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d4ce121cf65343b83727d11571c0be5f39c9a35f
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: bb3759b673475690a49e0909e2da67644990950e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121485"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172297"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>手順 1. 運用の準備Microsoft 365 Defender計画する
 
@@ -57,6 +56,6 @@ SOC は、セキュリティ イベントやインシデントに対する防御
 
 すべての SOC チームは、サイバー インシデントに対応する準備をテストする必要があります。 テストは、IT、セキュリティ、およびビジネス レベルでさまざまな個人とテーブルトップやプラクティス実行などのトレーニング演習を使用して実行できます。 個々のトレーニング演習チームは、代表的な役割に基づいて作成され、ディフェンダー (Blue Team)、攻撃者 (レッド チーム) の役割を果たすか、または演習中に明らかにされた長所と短所を通じて青と赤の両方のチームの方法とテクニックを向上させる観察者として (Purple Team) 役割を果たしています。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [手順 2.ゼロトラスト フレームワークを使用して SOC 統合準備評価を実行する](integrate-microsoft-365-defender-secops-readiness.md)
