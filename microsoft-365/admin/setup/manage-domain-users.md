@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ドメイン制御ユーザーとビジネス向けMicrosoft 365同期します。
-ms.openlocfilehash: 9b15179a48905e6ab9f8e6a44ebd7a0d62dc2bea
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e49a3095cff77692e58d1b70ca1169dc8fd4802a
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153908"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202067"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>ドメイン ユーザーを Microsoft 365 に同期する
 
@@ -46,26 +46,26 @@ ms.locfileid: "60153908"
 
 以下 **の手順** 4 (4) で IdFix を実行すると、オンプレミスの Active Directory がディレクトリ同期の準備ができていることを確認します。
 
-## <a name="2-install-and-configure-azure-ad-connect"></a>2. Azure サーバーをインストールして構成AD Connect
+## <a name="2-install-and-configure-azure-ad-connect"></a>2. インストールと構成Azure AD Connect
 
 ローカル Active Directory のユーザー、グループ、連絡先をローカル Active Directory から Azure Active Directoryに同期するには、Azure Active Directory Connectをインストールし、ディレクトリ同期を設定します。 
 
  1. 管理センター [で、左側](https://go.microsoft.com/fwlink/p/?linkid=2024339)の **ナビゲーションで [セットアップ** ] を選択します。
 
- 2. [ **サインインとセキュリティ] で、[** 組織 **のディレクトリ**  からユーザーを同期する] の下の [表示 **] を選択します**。
+ 2. [**サインインとセキュリティ] で、[Microsoft****アカウントにユーザーを追加または同期する] を選択します**。
 
- 3. [組織 **のディレクトリからユーザーを** 同期する] ページで、[開始] **を選択します**。
+ 3. [ユーザーを **Microsoft アカウントに追加または同期する] ページで** 、[開始] **を選択します**。
 
  4. 最初の手順では、IdFix ツールを実行してディレクトリ同期を準備します。
 
- 5. ウィザードの手順に従って Azure AD Connectをダウンロードし、それを使用してドメイン制御ユーザーをユーザーと同期Microsoft 365。
+ 5. ウィザードの手順に従って、Azure AD Connectをダウンロードし、それを使用してドメイン制御ユーザーとユーザーを同期Microsoft 365。
 
 
 詳細[については、「ディレクトリ同期のセットアップ」Microsoft 365](../../enterprise/set-up-directory-synchronization.md)を参照してください。
 
-Azure AD Connect のオプションを構成する場合は、パスワード同期、シームレス シングル サインオン、およびビジネス向け Microsoft 365でもサポートされているパスワード ライトバック機能を有効にすることをお勧めします。 
+Azure AD Connect のオプションを構成する場合は、パスワード同期、シームレス シングル サインオン、およびビジネス向け Microsoft 365 でもサポートされているパスワード ライトバック機能を有効にすることをお勧めします。 
 
 > [!NOTE]
-> Azure AD Connect のチェック ボックスを超えてパスワードの書き戻しを行う手順がいくつかAD Connect。 詳細については [、「How-to: configure password writeback」を参照してください](/azure/active-directory/authentication/howto-sspr-writeback)。 
+> パスワードの書き戻しには、パスワードの書き戻しに関する追加の手順が、Azure AD Connect。 詳細については [、「How-to: configure password writeback」を参照してください](/azure/active-directory/authentication/howto-sspr-writeback)。 
 
-ドメインに参加している Windows 10 デバイスも管理する場合は、「Microsoft 365 Business Premium によって管理されるドメイン参加[型 Windows 10](manage-windows-devices.md)デバイスを有効にする」を参照して、ハイブリッド Azure AD Join を設定します。
+また、ドメインに参加している Windows 10 デバイスを管理する場合は、「Microsoft 365 Business Premium によって管理されるドメインに参加している[Windows 10](manage-windows-devices.md)デバイスを有効にしてハイブリッド Azure AD Join を設定する」を参照してください。

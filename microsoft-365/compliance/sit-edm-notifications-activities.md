@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Exact Data Match アクティビティの通知を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1033b6cd84f84db65f49f95e008e20eada63ca64
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: e5f7c2a2d724a66aea1ce55658ff84e6e0da4738
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914598"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187391"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Exact Data Match アクティビティの通知を作成する
 

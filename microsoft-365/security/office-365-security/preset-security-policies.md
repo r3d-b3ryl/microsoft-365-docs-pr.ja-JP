@@ -16,12 +16,12 @@ ms.custom: ''
 description: 管理者は、標準ポリシーと厳密なポリシー設定を、Exchange Online Protection (EOP) と Microsoft Defender の保護機能全体に適用する方法をOffice 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a557afd562c2b4d0127f69afec40c1909944968e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 98a32a9a65106be0336837117daaec1867f90693
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943162"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202163"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
 
@@ -129,7 +129,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、Office
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>標準および厳密Microsoft 365 Defenderセキュリティ ポリシーをユーザーに割り当てるには、Microsoft 365 Defender ポータルを使用します。
 
-1. [Microsoft 365 Defenderポータルで、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&セキュリティ ポリシーの事前設定] に <https://security.microsofot.com>  \>  \>  \> **移動** します。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
+1. [Microsoft 365 Defenderポータルで、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&セキュリティ ポリシーの事前設定] に <https://security.microsoft.com>  \>  \>  \> **移動** します。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
 
 2. [事前設定 **されたセキュリティ ポリシー] ページで**、[標準 **保護]** セクションまたは [厳密な保護] セクションの [管理 **] を** クリックします。
 
@@ -166,7 +166,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、Office
 
 そのため、通常、組み込みの保護の事前設定されたセキュリティ ポリシーに **対する例外は** 推奨しません。
 
-1. [Microsoft 365 Defenderポータルで、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&セキュリティ ポリシーの事前設定] に <https://security.microsofot.com>  \>  \>  \> **移動** します。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
+1. [Microsoft 365 Defenderポータルで、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&セキュリティ ポリシーの事前設定] に <https://security.microsoft.com>  \>  \>  \> **移動** します。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
 
 2. [セキュリティ **ポリシーの事前設定** ] ページで、[組み込みの保護] セクションで [除外の追加 (推奨しない **)]** **を選択** します。
 

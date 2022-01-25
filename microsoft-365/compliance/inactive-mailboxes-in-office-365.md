@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: メールボックスを非アクティブなメールボックスに変換して、元の従業員のメールボックスコンテンツを保持する方法について説明します。
-ms.openlocfilehash: 0cc8e7fd980d48be44da824bad84343231c166ea
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 5aa20b780ed49edcbd46770c9f7f470bf9bb0db1
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284627"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202139"
 ---
 # <a name="learn-about-inactive-mailboxes"></a>非アクティブなメールボックスの詳細情報
 

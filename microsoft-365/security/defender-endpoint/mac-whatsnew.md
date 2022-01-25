@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 650b2a91d5ba85e2c614a40941e01d7cdd7daf51
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: 8fc3bf1ae2d133e6d91d9ecb205930276f1d00a8
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62041128"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202187"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
@@ -32,6 +32,19 @@ ms.locfileid: "62041128"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!NOTE]
+> 2022 年 1 月下旬から、Microsoft Defender for Endpoint (以前は Microsoft Defender ATP) は、macOS で MDE エクスペリエンスに直面しているエンド ユーザー全体で "Microsoft Defender" として参照されます。 
+> 
+> この変更は、ベータ版 (以前は Insider Fast と呼ばば) およびプレビュー (以前は Insider Slow と呼ばば) の更新チャネルで利用できます。 この変更を含む製品の最小バージョンは 101.54.24 です。
+> 
+> エンド ユーザーは、次の変更を確認します。 
+> - アプリケーションのインストール パスがから `/Application/Microsoft Defender ATP.app` に変更されました `/Applications/Microsoft Defender.app` 。
+> - ユーザー エクスペリエンス内で、"Microsoft Defender ATP" の発生が "Microsoft Defender" に置き換えられた
+> 
+> この変更は、コマンド ライン `mdatp` ツールには影響を与えかねない。
+>
+> **必要な** アクション: 企業に製品名またはアプリケーション インストール パスに依存するカスタム構成がある場合は、上記の新しい値でこれらの構成を更新する必要があります。
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0)
 

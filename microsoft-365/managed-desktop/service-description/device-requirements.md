@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: b27ad8f4781621a9517507e312feb9be0aa310a3
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 5fb600434c8f6d7b62e7fd7408c3567a34c0eda0
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034559"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202055"
 ---
 # <a name="device-requirements"></a>デバイスの要件
 
@@ -40,6 +40,9 @@ Microsoft Managed Desktop に登録するには、デバイスがこれらの要
 - Lenovo
 - Microsoft
 
+> [!NOTE] 
+> 2022 年 3 月 1 日現在、Microsoft Managed Desktop によって管理されるデバイスは OEM でサポートされている必要があります。 OEM と一緒に、ポートフォリオ内のデバイスがライフ サポートの終了に達する時間を確認します。 お客様は、ライフ サポートが終了する前にデバイスを交換する責任を負います。 OEM サポートの外部にあるデバイスは引き続き Microsoft Managed Desktop によって管理されますが、これらのデバイスのサポートは、サービスによって軽減できないセキュリティとパフォーマンスの問題のリスクがある場合に限られる場合があります。
+</b>
 
 ### <a name="installed-software"></a>インストール済みソフトウェア
 

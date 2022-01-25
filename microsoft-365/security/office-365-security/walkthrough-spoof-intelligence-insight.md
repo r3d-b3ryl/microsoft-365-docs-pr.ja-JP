@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd0d5a97a917cb6f04957b078980d1a495a54795
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 62be716a9663820f90d5c4f125f4634b3b399547
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872083"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202151"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>EOP でスプーフィング インテリジェンス ポリシーとスプーフィング インテリジェンスインサイトを使用してスプーフィングされた送信者を管理する
 
@@ -83,7 +83,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 > [!IMPORTANT]
 > この記事では、置き換えられる以前のスプーフィングされた送信者管理エクスペリエンス(スパム対策ポリシー ページのスプーフィング インテリジェンス ポリシー) について **説明** します。 新しいエクスペリエンス ([テナントの許可/ブロック] リストの [スプーフィング] タブ) の詳細については、「EOP のスプーフィング インテリジェンス[インサイト」を参照してください](learn-about-spoof-intelligence.md)。
 
-1. <https://security.microsofot.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。 **[スパム対策ポリシー]** ページに直接移動するには、<https://security.microsoft.com/antispam> を使用します。
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。 **[スパム対策ポリシー]** ページに直接移動するには、<https://security.microsoft.com/antispam> を使用します。
 
 2. [スパム **対策ポリシー] ページで** 、名前をクリックして **[** スプーフィング インテリジェンス ポリシー] を選択します。
 

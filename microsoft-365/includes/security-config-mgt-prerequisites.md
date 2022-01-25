@@ -4,12 +4,12 @@ description: ファイルを含める
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: d4554596f4c33ce0536ad2c8e6092fd8fdc74033
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 126454f65f8f0e92161f1d51321390ffb60c1308
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62079624"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202790"
 ---
 ## <a name="prerequisites"></a>前提条件
 
@@ -58,12 +58,15 @@ Microsoft Defender for Endpoint セキュリティ管理のポリシーは、次
 
 Microsoft Defender for Endpoint のセキュリティ管理を使用するには、次の情報が必要です。
 
-- Microsoft Defender for Endpoint のライセンスを付与するサブスクリプション (Microsoft 365 など)、または Microsoft Defender for Endpoint 専用のスタンドアロン ライセンス。 オプションの現在の情報については、「エンドポイント用 Microsoft Defender の最小 [要件」を参照してください](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true)。
+- Microsoft Defender for Endpoint のライセンスを付与するサブスクリプション (Microsoft 365 など)、または Microsoft Defender for Endpoint 専用のスタンドアロン ライセンス。 Microsoft Defender for Endpoint ライセンスを付与するサブスクリプションは、管理者センターのエンドポイント セキュリティ ノードへのテナント アクセスMicrosoft エンドポイント マネージャーします。
 
-  *Microsoft* Defender for Endpoint ライセンスを付与するサブスクリプションは、管理者センターのエンドポイント セキュリティ ノードへのテナント アクセスMicrosoft エンドポイント マネージャー付与します。 エンドポイント セキュリティ ノードでは、デバイスの Microsoft Defender for Endpoint を管理し、デバイスの状態を監視するためのポリシーを構成および展開します。
+  > [!NOTE]  
+  > **例外**: Microsoft Defender for Cloud 専用ライセンス (以前は Azure Security Center) の一部として Microsoft Defender for Endpoint にアクセスできる場合、Microsoft Defender for Endpoint 機能のセキュリティ管理は使用できません。
 
->[!NOTE]
-> 現在、Microsoft Defender for Endpoint サブスクリプションが Azure Security Center/Defender for cloud を通じて取得された場合、この Microsoft Defender for Endpoint ライセンスは、この機能の適格なライセンスではありません。 
+エンドポイント セキュリティ ノードでは、デバイスの Microsoft Defender for Endpoint を管理し、デバイスの状態を監視するためのポリシーを構成および展開します。
+
+オプションの現在の情報については、「エンドポイント用 Microsoft Defender の最小 [要件」を参照してください](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true)。
+
 
 
 ## <a name="architecture"></a>アーキテクチャ
@@ -96,9 +99,9 @@ Microsoft エンドポイント マネージャーには、デバイス上の De
 |                      | エンドポイントの検出および応答        | ![サポート](../media/green-check.png) | ![サポート](../media/green-check.png)  |
 |                      | 攻撃面の縮小    |           | ![サポート](../media/green-check.png)  |
 |                      | アカウント保護       |       | ![サポート](../media/green-check.png)  |
-|                      | デバイスコンプライアンス     |   | ![サポートされている](../media/green-check.png)  |
+|                      | デバイスコンプライアンス     |   | ![サポート](../media/green-check.png)  |
 |                      | 条件付きアクセス    |   | ![サポート](../media/green-check.png)  |
-|                      | セキュリティ基本計画      |   | ![サポート](../media/green-check.png)  |
+|                      | セキュリティ基本計画      |   | ![サポートされている](../media/green-check.png)  |
 
 **エンドポイント セキュリティ ポリシーは、** 組織内のデバイスの保護に重点を置くセキュリティ管理者が使用することを目的とした個別の設定グループです。
 

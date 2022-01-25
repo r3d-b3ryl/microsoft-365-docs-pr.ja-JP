@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender for Endpoint Flow コネクタ
+title: イベントに対Power Automateコネクタを使用してFlowする方法
 ms.reviewer: ''
-description: Microsoft Defender for Endpoint Flow コネクタを使用して、セキュリティを自動化し、テナントで新しいアラートが発生するといつでもトリガーされるフローを作成します。
-keywords: flow, サポートされている api, api, Microsoft flow, query, automation
+description: Microsoft Defender for Endpoint Flow コネクタを使用して、テナントで新しいイベントが発生するといつでもトリガーされるフローを作成します。
+keywords: flow, サポートされている api, api, Microsoft flow, query, automation, power automation
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
-ms.topic: article
+ms.topic: how-to
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8c3ed9023df1cb7256265a116303fd6988677de4
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: fdb3876de6f74c95858dee01aba9615198282b16
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300480"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202199"
 ---
-# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前はMicrosoft Flow)、Azure Functions
+# <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>イベントに対Power Automateコネクタを使用してFlowする方法
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,9 +35,12 @@ ms.locfileid: "61300480"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-セキュリティ手順の自動化は、最新のセキュリティ 運用センターの標準要件です。 専門的なサイバー防御者がいないので、SOC は最も効率的な方法で作業し、自動化が必要です。 Microsoft Power Automateは、このために正確に構築されたさまざまなコネクタをサポートしています。 数分以内にエンドツーエンドのプロシージャオートメーションを構築できます。
 
-Microsoft Defender API には、多くの機能Power Automate公式のコネクタがあります。
+セキュリティ手順の自動化は、すべての最新のセキュリティ 運用センター (SOC) の標準的な要件です。 SOC チームが最も効率的な方法で運用するには、自動化が必要です。 Microsoft Power Automateを使用して、自動化されたワークフローを作成し、数分以内にエンドツーエンドのプロシージャオートメーションを構築できます。 Microsoft Power Automateは、このために正確に構築されたさまざまなコネクタをサポートしています。  
+
+この記事では、テナントに新しいアラートが作成された場合など、イベントによってトリガーされるオートメーションの作成について説明します。 Microsoft Defender API には、多くの機能Power Automate公式のコネクタがあります。 
+
+
 
 :::image type="content" alt-text="編集資格情報 1 のイメージ。" source="images/api-flow-0.png":::
 
@@ -47,7 +50,7 @@ Microsoft Defender API には、多くの機能Power Automate公式のコネク�
 
 ## <a name="usage-example"></a>使用例
 
-次の例では、テナントで新Flowアラートが発生する場合にトリガーされる新しいアラートを作成する方法を示します。
+次の例では、テナントで新Flowアラートが発生する場合にトリガーされる新しいアラートを作成する方法を示します。 フローを開始するイベントと、そのトリガーが発生した場合に実行される次のアクションを定義する方法について説明します。  
 
 1. Microsoft Power Automate[にログインします](https://flow.microsoft.com)。
 
