@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Microsoft Information Protection (MIP) 機能を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
-ms.openlocfilehash: bba0c41fd9018a6952d69a20fcc046a8b65c1e5b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 2fccdafa662bfdf8390a53ac535c571f52f673de
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/24/2022
-ms.locfileid: "62170989"
+ms.locfileid: "62187331"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 の Microsoft Information Protection
 
@@ -83,4 +83,4 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
-MIP のライセンス要件は、このページにリストされている各機能のライセンス要件を設定するのではなく、使用するシナリオと機能によって異なります。 MIP のライセンス要件とオプションを理解するには、Microsoft 365 ライセンス ドキュメントの「[情報保護: 秘密度ラベル付け](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-sensitivity-labeling)」セクションを参照し、機能レベルのライセンス要件について関連する [PDF ダウンロード](https://go.microsoft.com/fwlink/?linkid=2139145)を参照してください。
+MIP のライセンス要件は、このページにリストされている各機能のライセンス要件を設定するのではなく、使用するシナリオと機能によって異なります。 MIP のライセンス要件とオプションを理解するには、[セキュリティとコンプライアンスに関するMicrosoft 365ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)の **情報保護** セクションと、機能レベルのライセンス要件に関す[PDF ダウンロード](https://go.microsoft.com/fwlink/?linkid=2139145)を参照してください。

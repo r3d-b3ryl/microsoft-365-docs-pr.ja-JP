@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ab331c9e93799290348d60ede4e814f3f12675fc
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 24a910fee1b6a8b502e42f17f002b286e4fbf337
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034595"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187307"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>通信コンプライアンスの詳細については、Microsoft 365
 
@@ -51,6 +51,9 @@ Microsoft 365 のコミュニケーション コンプライアンス ポリシ�
 [TD 証券が通信](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance)コンプライアンスを使用して規制上の義務に対処し、セキュリティと安定性のニーズを満たす方法をご確認ください。
 
 最新の通信コンプライアンス更新プログラムを維持するには、[組織の通信コンプライアンス **の新機能]**[を選択](https://compliance.microsoft.com/)します。
+
+> [!IMPORTANT]
+> 現在、通信コンプライアンスは、Azure サービスの依存関係でサポートされている地理的地域および国でホストされているテナントで利用できます。 組織で通信コンプライアンスがサポートされていないことを確認するには、「国/地域別 [の Azure 依存関係の可用性」を参照してください](/troubleshoot/azure/general/dependency-availability-by-country)。
 
 ## <a name="scenarios-for-communication-compliance"></a>情報コンプライアンスのシナリオ
 

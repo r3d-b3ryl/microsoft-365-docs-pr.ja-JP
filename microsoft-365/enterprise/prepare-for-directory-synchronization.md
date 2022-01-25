@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用してユーザーにMicrosoft 365準備する方法と、このメソッドを使用する長期的な利点について説明します。
-ms.openlocfilehash: 4bd244edfa11df315f83e78c97ec7fe63b5c2d9d
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: ef0a7dd0925d1d2c8c6ffb2c161f9271194f6fc8
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60216888"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187223"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepare for directory synchronization to Microsoft 365 (Microsoft 365 へのディレクトリ同期を準備する)
 
@@ -43,9 +43,9 @@ ms.locfileid: "60216888"
 - 必要に応じてシングル サインオン シナリオを有効にする
 - アカウントの変更を自動化するMicrosoft 365
 
-ディレクトリ同期を使用する利点の詳細については、「ハイブリッド ID with [Azure Active Directory (Azure AD)」](/azure/active-directory/hybrid/whatis-hybrid-identity)および「ハイブリッド[ID」](plan-for-directory-synchronization.md)を参照Microsoft 365。
+ディレクトリ同期を使用する利点の詳細については、「ハイブリッド ID と Azure Active Directory [(Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity)とハイブリッド[ID」](plan-for-directory-synchronization.md)を参照Microsoft 365。
 
-ただし、ディレクトリ同期では、Active Directory ドメイン サービス (AD DS) が最小エラーで Microsoft 365 サブスクリプションの Azure AD テナントと同期するように計画と準備が必要です。
+ただし、ディレクトリ同期では、Active Directory ドメイン サービス (AD DS) が Microsoft 365 サブスクリプションの Azure AD テナントと最小限のエラーで同期するための計画と準備が必要です。
 
 最適な結果を得るには、次の手順に従います。
 
@@ -54,7 +54,7 @@ ms.locfileid: "60216888"
 
 ## <a name="1-directory-cleanup-tasks"></a>1. ディレクトリのクリーンアップ タスク
 
-Ds を Azure ADテナントAD同期する前に、DS をクリーンアップするADがあります。
+DS をテナントAD同期Azure AD、DS をクリーンアップするADがあります。
 
 > [!IMPORTANT]
 > 同期する前に DS クリーンアップAD実行しない場合、展開プロセスに大きな悪影響を及ぼす可能性があります。 ディレクトリ同期、エラーの特定、および再同期のサイクルを実行するには、数日または数週間かかる場合があります。
@@ -65,12 +65,12 @@ DS でADライセンスが割り当てられる各ユーザー アカウント�
 
 2. proxyAddresses 属性の重複 **する値を削除** します。
 
-3. 可能であれば、ユーザーのユーザー オブジェクトの **userPrincipalName** 属性の有効で一意の値を **確認** します。 最適な同期エクスペリエンスを得る場合は、DS UPN ADと AZURE の同期が一致ADしてください。 ユーザーに **userPrincipalName** 属性の値が設定されていない場合、ユーザーオブジェクトには **sAMAccountName** 属性の有効で一意の値が含まれている必要があります。 **userPrincipalName 属性内の重複する値を削除** します。
+3. 可能であれば、ユーザーのユーザー オブジェクトの **userPrincipalName** 属性の有効で一意の値を **確認** します。 最適な同期エクスペリエンスを得る場合は、DS UPN AD UPN と一致Azure ADしてください。 ユーザーに **userPrincipalName** 属性の値が設定されていない場合、ユーザーオブジェクトには **sAMAccountName** 属性の有効で一意の値が含まれている必要があります。 **userPrincipalName 属性内の重複する値を削除** します。
 
 4. グローバル アドレス一覧 (GAL) を最適に使用するには、DS ユーザー アカウントの次AD情報が正しいか確認します。
 
    - givenName
-   - surname
+   - 姓
    - displayName
    - 役職
    - 部署
@@ -126,6 +126,7 @@ DS とデバイス間のディレクトリ同期AD成功Microsoft 365 DS 属性�
   - 属性値にはスペースを含めずに指定してください。
   - 属性値はディレクトリ内で一意である必要があります。
   - 無効な文字: \< \> ( ) ; , , [ ] "
+  - umlauts、アクセント、チルドなど、二等分記号を持つ文字は無効な文字です。
 
     無効な文字は、型の区切り文字と ":"に続く文字に適用され、SMTP:User@contso.com が許可されますが、SMTP:user:M@contoso.com されません。
 
@@ -175,7 +176,7 @@ DS とデバイス間のディレクトリ同期AD成功Microsoft 365 DS 属性�
 
 Active Directory は、組織内のエンド ユーザーが **sAMAccountName** または **userPrincipalName** を使用してディレクトリにサインインするように設計されています。 同様に、エンド ユーザーは、自分のMicrosoft 365または学校アカウントのユーザー プリンシパル名 (UPN) を使用して、ユーザーにサインインできます。 ディレクトリ同期は、DS 内の同Azure Active Directory UPN を使用して、新しいユーザーを作成ADします。 UPN は電子メール アドレスのように書式設定されます。
 
-このMicrosoft 365 UPN は、電子メール アドレスの生成に使用される既定の属性です。 **userPrincipalName** (AD DS および Azure AD) と **proxyAddresses** のプライマリ 電子メール アドレスを異なる値に設定するのは簡単です。 異なる値に設定すると、管理者とエンド ユーザーが混乱する可能性があります。
+このMicrosoft 365 UPN は、電子メール アドレスの生成に使用される既定の属性です。 **userPrincipalName (AD** DS および Azure AD で) を取得し **、proxyAddresses** のプライマリ 電子メール アドレスを異なる値に設定するのは簡単です。 異なる値に設定すると、管理者とエンド ユーザーが混乱する可能性があります。
 
 これらの属性を揃えて混乱を減らすのが最善の方法です。 Active Directory フェデレーション サービス (AD FS) 2.0 でのシングル サインオンの要件を満たすには、Azure Active Directory の UPN と AD DS が一致し、有効なドメイン名前空間を使用していることを確認する必要があります。
 

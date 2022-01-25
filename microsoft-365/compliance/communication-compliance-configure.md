@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: afefa32227750a70c70d2cb8b10ebfda1a2ae08e
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 0825f73ed001aa67129c9024955f58df021fa22e
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034667"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187259"
 ---
 # <a name="get-started-with-communication-compliance"></a>コミュニケーション コンプライアンスの使用を開始する
 
@@ -46,9 +46,12 @@ ms.locfileid: "62034667"
 コミュニケーション コンプライアンス ポリシーに含まれるユーザーには、上記のいずれかのライセンスを割り当てる必要があります。
 
 > [!IMPORTANT]
-> Office 365 Advanced Compliance はスタンドアロン サブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れると、お客様は、同じまたは追加のコンプライアンス機能を含む上記のいずれかのサブスクリプションに移行する必要があります。
+> 現在、通信コンプライアンスは、Azure サービスの依存関係でサポートされている地理的地域および国でホストされているテナントで利用できます。 組織で通信コンプライアンスがサポートされていないことを確認するには、「国/地域別 [の Azure 依存関係の可用性」を参照してください](/troubleshoot/azure/general/dependency-availability-by-country)。
 
 既存の Office 365 Enterprise E5 プランがなく、コミュニケーション コンプライアンスをお試しになりたい場合は、[Microsoft 365](/office365/admin/try-or-buy-microsoft-365) を既存のサブスクリプションに追加するか、Office 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
+
+> [!NOTE]
+> Office 365 Advanced Compliance はスタンドアロン サブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れると、お客様は、同じまたは追加のコンプライアンス機能を含む上記のいずれかのサブスクリプションに移行する必要があります。
 
 ## <a name="recommended-actions-preview"></a>推奨されるアクション (プレビュー)
 

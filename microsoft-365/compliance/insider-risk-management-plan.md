@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 9ea95245d983f14d57b15884fa8d1edbc54d5cb6
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 824a31780a377fc91d834db6d37068a425428ec8
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283199"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187235"
 ---
 # <a name="plan-for-insider-risk-management"></a>インサイダー リスク管理のための計画
 
@@ -90,6 +90,9 @@ ms.locfileid: "61283199"
 インサイダー リスク管理ポリシーの実装方法に応じて、適切な Microsoft 365 ライセンス サブスクリプションを持ち、ソリューションの前提条件を理解して計画する必要があります。
 
 **ライセンス:** Insider リスク管理は、ライセンス サブスクリプションの幅広い選択Microsoft 365利用できます。 詳細については、「Insider リスク管理の開始 [」の記事を参照](insider-risk-management-configure.md#subscriptions-and-licensing) してください。
+
+> [!IMPORTANT]
+> Insider リスク管理は、現在、地理的地域と Azure サービスの依存関係でサポートされている国でホストされているテナントで利用できます。 組織でインサイダー リスク管理がサポートされていないことを確認するには、「国/地域別の Azure 依存関係の可用性 [」を参照してください](/troubleshoot/azure/general/dependency-availability-by-country)。
 
 既存の Microsoft 365 Enterprise E5 プランをお持ちで、インサイダー リスク管理を試す場合は、Microsoft 365 を既存のサブスクリプションに追加するか[、Microsoft 365 Enterprise](/office365/admin/try-or-buy-microsoft-365) E5 の試用版にサインアップできます。 [](https://www.microsoft.com/microsoft-365/enterprise)
 

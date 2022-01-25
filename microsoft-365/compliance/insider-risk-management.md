@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 8e402bf2b2135e180094187bcabac905a70e2bde
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: f1911dcfa697d620e8d5d2109cc0d21e9638e5b5
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074380"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187247"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Microsoft 365 のインサイダー リスク管理について
 
@@ -36,6 +36,9 @@ Insider リスク管理は Microsoft 365 のコンプライアンス ソリュ�
 
 **Insider リスク管理ワークフロー**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+> [!IMPORTANT]
+> Insider リスク管理は、現在、地理的地域と Azure サービスの依存関係でサポートされている国でホストされているテナントで利用できます。 組織でインサイダー リスク管理がサポートされていないことを確認するには、「国/地域別の Azure 依存関係の可用性 [」を参照してください](/troubleshoot/azure/general/dependency-availability-by-country)。
 
 ## <a name="modern-risk-pain-points"></a>最新のリスクの痛みのポイント
 

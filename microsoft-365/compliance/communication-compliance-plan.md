@@ -18,16 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1e584a252f93acfa6429c4f67c89c814c27ce4c8
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c1d55718f93efd9b1053e7ab106c397e0c1d409b
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283007"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187415"
 ---
 # <a name="plan-for-communication-compliance"></a>通信コンプライアンスの計画
 
 組織のコミュニケーション コンプライアンス [を開始](communication-compliance.md) する前に、情報技術とコンプライアンス管理チームが検討すべき重要な計画活動と考慮事項があります。 次の分野での展開を十分に理解し、計画することで、通信コンプライアンス機能の実装と使用が円滑に進み、ソリューションのベスト プラクティスに沿って行うのに役立ちます。
+
+> [!IMPORTANT]
+> 現在、通信コンプライアンスは、Azure サービスの依存関係でサポートされている地理的地域および国でホストされているテナントで利用できます。 組織で通信コンプライアンスがサポートされていないことを確認するには、「国/地域別 [の Azure 依存関係の可用性」を参照してください](/troubleshoot/azure/general/dependency-availability-by-country)。
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>[監視] からの移行 (Office 365
 

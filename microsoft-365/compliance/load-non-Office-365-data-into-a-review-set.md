@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: ケース内の分析用にMicrosoft 365データをレビュー セットにインポートする方法についてAdvanced eDiscoveryします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9de9c4044b9c8ba4af5112475e51e517d0c73946
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 39f91846e42bb2403c2b1faf7fd98ff3e7759182
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175145"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187427"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>レビューセットにMicrosoft 365 以外のデータを読み込む
 
@@ -62,9 +62,11 @@ ms.locfileid: "60175145"
 
 2. [**レビュー セット] を** クリックし、レビュー セットを選択して、ユーザー以外のデータMicrosoft 365アップロードします。  レビュー セットを持ってない場合は、1 つを作成できます。 
  
-3. レビュー セットで、 **レビューセットの管理** をクリックし、**Microsoft 以外の365データ** タイルの **アップロードの表示** をクリックします。
+3. レビュー セットをクリックするか、選択して [レビュー セットを開く] をクリックして、レビュー **セットを開きます**。
 
-4. **ファイルのアップロード** をクリックして、データ インポート ウィザードを開始します。
+4. レビュー セットで、[レビュー **セットの** 管理] ([操作]オプションの直後の下向き矢印) をクリックし、[データOffice 365 **クリック** します。
+
+5. **ファイルのアップロード** をクリックして、データ インポート ウィザードを開始します。
 
    ![アップロードファイル。](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 

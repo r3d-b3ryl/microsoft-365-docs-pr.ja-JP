@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a77f6867edce4cf8eef582981dfd33055afa5b4f
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 934b47281d620206290491ecc5b0811df6cbd73d
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074392"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187403"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -42,6 +42,9 @@ ms.locfileid: "62074392"
 - Office 365 E3 サブスクリプション + Enterprise Mobility and Security E3 + Microsoft 365 E5 Compliance アドオン
 
 インサイダー リスク管理ポリシーに含まれるユーザーには、上記のいずれかのライセンスが割り当てられている必要があります。
+
+> [!IMPORTANT]
+> Insider リスク管理は、現在、地理的地域と Azure サービスの依存関係でサポートされている国でホストされているテナントで利用できます。 組織でインサイダー リスク管理がサポートされていないことを確認するには、「国/地域別の Azure 依存関係の可用性 [」を参照してください](/troubleshoot/azure/general/dependency-availability-by-country)。
 
 既存の Microsoft 365 Enterprise E5 プランをお持ちで、インサイダー リスク管理を試す場合は、Microsoft 365 を既存のサブスクリプションに追加するか[、Microsoft 365 Enterprise](/office365/admin/try-or-buy-microsoft-365) E5 の試用版にサインアップできます。 [](https://www.microsoft.com/microsoft-365/enterprise)
 

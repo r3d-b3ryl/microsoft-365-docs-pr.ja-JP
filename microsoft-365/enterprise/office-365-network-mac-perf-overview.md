@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: ネットワーク接続の概要 (Microsoft 365 管理 センター)
-ms.openlocfilehash: 63a0975b1391c2734d7933fe64094be868a34526
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: ce0878037a3741ad440d0bddeefcca86b7b62f74
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327654"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187439"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 センターのネットワーク接続
 
@@ -41,7 +41,7 @@ ms.locfileid: "61327654"
 
 組織に代わって、この機能のパブリック プレビューに参加する必要があります。 通常、受け入れは直ちに行い、その後ネットワーク接続ページが表示されます。
 
-ネットワーク接続ページにアクセスするには、組織の管理者である必要があります。Microsoft 365。 レポート リーダーの管理役割には、この情報への読み取りアクセス権があります。 ネットワーク接続の場所や他の要素を構成するには、管理者がサービス サポート管理者の役割などのサーバー管理者の役割の一部である必要があります。
+ネットワーク接続ページにアクセスするには、組織の管理者である必要があります。Microsoft 365。 レポート リーダーの管理役割には、この情報への読み取りアクセス権があります。 ネットワーク接続の場所や他の要素を構成するには、管理者がサービス サポート管理者の役割を持っている必要があります。
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>ネットワーク接続評価の前提条件が表示される
 
@@ -207,7 +207,7 @@ CSV ファイルでは、検出された都市の場所が userEntered 列に空
    > [!div class="mx-imgBorder"]
    > ![CSV インポートの準備完了メッセージ。](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>よくあるご質問 (FAQ)
+## <a name="faq"></a>FAQ
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>サービス のフロント Microsoft 365とは何ですか?
 

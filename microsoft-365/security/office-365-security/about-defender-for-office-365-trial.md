@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
-ms.openlocfilehash: c70a3dfa873f42b110642dfc77cc877e52c6b8ca
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 3d8d873a3e89b0ae3302eca0ab7d7c471fd94449
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937702"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187319"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
@@ -47,7 +47,7 @@ Microsoft Defender for Office 365 試用版は、数回クリックした後、O
 |機能|説明|
 |---|---|
 |[フィッシング対策ポリシーの排他的設定](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|ユーザー偽装保護、ドメイン偽装保護、メールボックス インテリジェンス、高度なフィッシングしきい値を取得します。|
-|[添付ファイル保護](safe-attachments.md)|制御されたデトレーション環境で電子メールの添付ファイルや他のファイルを検査して、新しいマルウェアや回避的なマルウェアをキャッチします。|
+|[安全な添付ファイル](safe-attachments.md)|制御されたデトレーション環境で電子メールの添付ファイルや他のファイルを検査して、新しいマルウェアや回避的なマルウェアをキャッチします。|
 |[リンク保護](safe-links.md)|クリック時のチェックを実行して、初期検査に合格した可能性がある URL が武器化されていないか確認します。|
 |[脅威トラッカー](threat-trackers.md)<sup>\*</sup>|有益なウィジェットとビューを使用して、組織に影響を与える可能性のあるサイバーセキュリティの問題を特定します。|
 |[脅威エクスプローラー](threat-explorer.md)<sup>\*</sup>|メール内の脅威に関するほぼリアルタイムの情報をOffice 365します。|
@@ -62,7 +62,7 @@ Microsoft Defender for Office 365 試用版は、数回クリックした後、O
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>試用版用に Defender をOffice 365する
 
-試用版を使用すると、組織は簡単に Defender を設定し、その機能をOffice 365できます。 セットアップ中に、Office 365 用の Defender 専用のポリシー (特に、セーフ 電子メール メッセージの添付ファイル[、セーフ](safe-links.md)電子メール メッセージと Microsoft Teams のリンク、およびスパム対策ポリシーの偽装[保護)](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)は、事前設定されたセキュリティ ポリシー用[](preset-security-policies.md)の標準テンプレートを使用して適用されます。 [](safe-attachments.md)
+試用版を使用すると、組織は簡単に Defender を設定し、その機能をOffice 365できます。 セットアップ中に、Office 365 の Defender 専用のポリシー (特に、電子メール メッセージの[セーフ](safe-attachments.md)添付ファイル[、セーフ](safe-links.md)電子メール メッセージと Microsoft Teams のリンク、およびフィッシング対策ポリシーの偽装[保護)](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)は、事前設定されたセキュリティ ポリシー用[](preset-security-policies.md)の標準テンプレートを使用して適用されます。
 
 既定では、これらのポリシーは組織内のすべてのユーザーを対象としますが、試用版のセットアップ中またはセットアップ後に、ポリシーの割り当てを特定のユーザーに変更できます。
 
@@ -95,7 +95,7 @@ Microsoft Defender for Office 365 試用版は、数回クリックした後、O
     - 特定のユーザーを対象にしたカスタム の警察があります。
   - **完全な** 保護: プラン 2 の機能 (AIR、Threat Explorer、攻撃シミュレーション トレーニングなど) Office 365 Defender によって保護されているユーザーの総数。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 試用版を開始または終了するには、グローバル管理者またはセキュリティ管理者の役割のメンバーである必要Azure Active Directory。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
