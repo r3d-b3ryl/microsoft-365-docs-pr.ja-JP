@@ -24,13 +24,13 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
-ms.date: 07/31/2020
-ms.openlocfilehash: 0bbcb8ac5a1b12ae781636753c734a1009dbc9ef
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.date: 01/25/2022
+ms.openlocfilehash: 755c5c90fb99204f2bef932961a235a7756a4dff
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941374"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218971"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -86,10 +86,9 @@ ms.locfileid: "61941374"
 ::: moniker-end
 
 > [!NOTE]
-> 
+>
 > Microsoft 365 サービスでは、領収書は提供されません。
 > クレジット カードでのお支払いについては、請求書とクレジット カードの請求明細書を使用してお支払いを照合してください。
-
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>請求明細書のコピーをメールで受け取る
 
@@ -109,12 +108,24 @@ ms.locfileid: "61941374"
 ::: moniker range="o365-21vianet"
 
 1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">[課金に関する通知]</a> ページに移動します。
-    
+
 ::: moniker-end
 
 2. **[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。
 
     これを **[オフ]** に切り替えることで、請求明細書のメールでの受け取りをいつでも停止できます。
+
+## <a name="run-the-unknown-charge-diagnostic"></a>不明な料金診断を実行する
+
+Microsoft 365グローバル管理者は、Microsoft 365 管理センター内で実行される診断ツールを使用して、銀行またはクレジット カードの明細書に表示される Microsoft からの予期しない料金を調査できます。
+
+> [!NOTE]
+> 不明な料金の診断は、Microsoft 365 Enterprise、Education、非営利団体など、Microsoft.com から製品とサービスを購入したお客様のみが利用できます。
+
+下の [ **テストの実行** ] リンクを選択して、Microsoft 365 管理センターで診断ツールを開きます。
+
+>[!div class="nextstepaction"]
+>[テストの実行: 不明な料金](https://aka.ms/PillarUnknownCharge)
 
 ## <a name="next-steps"></a>次の手順
 
