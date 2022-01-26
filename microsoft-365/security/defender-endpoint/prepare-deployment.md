@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 015375b1405d878019e87afbc11de4cd67d241f0
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: f171bd8ce62e8e3d3b35c8dbab6740ad62b172fd
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202181"
+ms.locfileid: "62214203"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint 展開の準備
 
@@ -105,7 +105,7 @@ Microsoft では[、Privileged Identity Management](/azure/active-directory/acti
 
 Defender for Endpoint では、アクセス許可を管理する 2 つの方法がサポートされています。
 
-- **基本的なアクセス許可の管理**: アクセス許可をフル アクセスまたは読み取り専用に設定します。 基本的なアクセス許可管理ユーザーがグローバル管理者またはセキュリティ管理者の役割を持つ場合、Azure Active Directory 閲覧者の役割には読み取り専用アクセス権があります。
+- **基本的なアクセス許可の管理**: アクセス許可をフル アクセスまたは読み取り専用に設定します。 グローバル管理者またはセキュリティ管理者の役割を持つユーザーは、Azure Active Directoryアクセス権を持つ必要があります。 セキュリティ リーダーの役割は読み取り専用アクセス権を持ち、コンピューター/デバイス インベントリの表示へのアクセスを許可します。
 
 - **役割ベースのアクセス制御 (RBAC)**: 役割を定義し、Azure AD ユーザー グループを役割に割り当て、ユーザー グループにデバイス グループへのアクセス権を付与することで、詳細なアクセス許可を設定します。 詳細については、次の情報を参照してください。 「役割 [ベースのアクセス制御を使用したポータル アクセスの管理」を参照してください](rbac.md)。
 

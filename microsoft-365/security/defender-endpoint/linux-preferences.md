@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0bfd97739637365e7f04d4b824c0c9cde50a0418
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 210bfdec98ef4e603b5dc4e844688c9495d01a79
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074500"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214167"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -64,30 +64,18 @@ ms.locfileid: "62074500"
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |
 
-#### <a name="enable--disable-real-time-protection"></a>リアルタイム保護を有効/無効にする
+#### <a name="enforcement-level-for-antivirus-engine"></a>ウイルス対策エンジンの適用レベル
 
-リアルタイム保護 (アクセス時のファイルのスキャン) を有効にするかどうかを指定します。
+ウイルス対策エンジンの適用設定を指定します。 適用レベルを設定するには、次の 3 つの値があります。
 
-<br>
-
-****
-
-|説明|値|
-|---|---|
-|**キー**|enableRealTimeProtection|
-|**データ型**|Boolean|
-|**指定可能な値**|true (既定) <p> false|
-|
-
-#### <a name="enable--disable-passive-mode"></a>パッシブ モードを有効/無効にする
-
-ウイルス対策エンジンがパッシブ モードで実行されるかどうかを決定します。 パッシブ モードの場合:
-
-- リアルタイム保護はオフです。
-- オンデマンド スキャンが有効です。
-- 脅威の自動修復が無効になります。
-- セキュリティ インテリジェンスの更新プログラムが有効になっている。
-- [状態] メニュー アイコンは非表示です。
+- リアルタイム ( ): リアルタイム保護 (ファイルへのアクセス時のスキャン `real_time` ) が有効になります。
+- オンデマンド ( ): `on_demand` ファイルはオンデマンドでのみスキャンされます。 この場合:
+  - リアルタイム保護はオフです。
+- パッシブ ( `passive` ): パッシブ モードでウイルス対策エンジンを実行します。 この場合:
+  - リアルタイム保護はオフです。
+  - オンデマンド スキャンが有効です。
+  - 脅威の自動修復が無効になります。
+  - セキュリティ インテリジェンスの更新プログラムが有効になっている。
 
 <br>
 
@@ -95,10 +83,10 @@ ms.locfileid: "62074500"
 
 |説明|値|
 |---|---|
-|**キー**|passiveMode|
-|**データ型**|Boolean|
-|**指定可能な値**|false (既定) <p> true|
-|**コメント**|Defender for Endpoint version 100.67.60 以上で使用できます。|
+|**キー**|enforcementLevel|
+|**データ型**|String|
+|**指定可能な値**|real_time (既定) <p> on_demand <p> パッシブ|
+|**コメント**|Defender for Endpoint version 101.10.72 以上で使用できます。|
 |
 
 
@@ -504,7 +492,7 @@ ms.locfileid: "62074500"
 {
    "antivirusEngine":{
       "behaviorMonitoring":"enabled",
-      "enableRealTimeProtection":true,
+      "enforcementLevel":"real_time",
       "threatTypeSettings":[
          {
             "key":"potentially_unwanted_application",
@@ -535,11 +523,10 @@ ms.locfileid: "62074500"
 {
    "antivirusEngine":{
       "behaviorMonitoring":"enabled",
-      "enableRealTimeProtection":true,
+      "enforcementLevel":"real_time",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
       "maximumOnDemandScanThreads":2,
-      "passiveMode":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {

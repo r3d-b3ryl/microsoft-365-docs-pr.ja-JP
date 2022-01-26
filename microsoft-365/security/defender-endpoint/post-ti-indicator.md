@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0adf9b74398cafb7bd326dbc9183588feb30ee13
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: a3fc1a0ce2f7d02ad8ed6804b99621f78fb859d3
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283667"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214227"
 ---
 # <a name="submit-or-update-indicator-api"></a>インジケーター API の送信または更新
 
@@ -78,17 +78,17 @@ Content-Type|string|application/json. **必須**。
 
 パラメーター|種類|説明
 :---|:---|:---
-indicatorValue|String|Indicator エンティティ [の](ti-indicator.md) ID。 **必須**
+indicatorValue|文字列|Indicator エンティティ [の](ti-indicator.md) ID。 **必須**
 indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileMd5"、"CertificateThumbprint"、"FileSha256"、"IpAddress"、"DomainName"、"Url" です。 **必須**
 action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"Warn"、"Block"、"Audit"、"BlockAndRemediate"、"AlertAndBlock"、"Allowed" です。 **必須**。 "Audit" でアクションを作成する場合は、"GenerateAlert" パラメーターを "TRUE" に設定する必要があります。
 アプリケーション|String|インジケーターに関連付けられているアプリケーション。 このフィールドは、新しいインジケーターでのみ機能します。 既存のインジケーターの値は更新されない。 **Optional**
 title|String|インジケーターアラートのタイトル。 **必須**
-description|String|インジケーターの説明。 **必須**
+説明|String|インジケーターの説明。 **必須**
 expirationTime|DateTimeOffset|インジケーターの有効期限。 **Optional**
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。 **Optional**
-recommendedActions|String|TI インジケーターアラート推奨アクション。 **Optional**
-rbacGroupNames|String|インジケーターが適用される RBAC グループ名のコンマ区切りのリスト。 **Optional**
-
+recommendedActions|文字列|TI インジケーターアラート推奨アクション。 **Optional**
+rbacGroupNames|文字列|インジケーターが適用される RBAC グループ名のコンマ区切りのリスト。 **Optional**
+generateAlert|列挙|**True** の場合は、アラートの生成が必要です。 **このインジケーターが** アラートを生成しない場合は False を指定します。
 ## <a name="response"></a>応答
 
 - 成功した場合、このメソッドは 200 - OK 応答コードと、応答本文で作成/更新 [された Indicator](ti-indicator.md) エンティティを返します。

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1fcc8a036e646c978e18fbdbc5465c5c2da3a02d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 572794880015f53f6db0a3d449dd3d19987cae21
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167744"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214035"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のプレビュー エクスペリエンスを有効にする
 
@@ -44,9 +44,9 @@ ms.locfileid: "61167744"
 
 2. [オン] と [オフ]**の間で設定を****切り替え**、[基本設定の保存]**を選択します**。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Microsoft Defender for Endpoint の一般的な設定を更新する](data-retention-settings.md)
 - [Microsoft Defender for Endpoint の高度な機能を有効にする](advanced-features.md)
 - [Microsoft Defender for Endpoint で電子メール通知を構成する](configure-email-notifications.md)
-- [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
+
 

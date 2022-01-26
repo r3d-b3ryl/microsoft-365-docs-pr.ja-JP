@@ -645,8 +645,6 @@
 
 #### [SIEM 統合]()
 ##### [Microsoft Defender for Endpoint を使用して SIEM ツールを統合する](configure-siem.md)
-##### [Microsoft Defender for Endpoint での SIEM 統合を有効にする](enable-siem-integration.md)
-##### [SIEM REST API を使用した検出のプル](pull-alerts-using-rest-api.md)
 ##### [SIEM ツール統合に関する問題のトラブルシューティング](troubleshoot-siem.md)
 
 #### [パートナーと API]()

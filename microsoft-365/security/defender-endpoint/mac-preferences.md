@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8506534f1645659d051b240b77dcf96b4f9e4078
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: adcf044de78b1cecb6b7b9160a196ec102e8606c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171703"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214155"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -35,7 +35,7 @@ ms.locfileid: "61171703"
 > [!IMPORTANT]
 > この記事では、エンタープライズ組織の macOS で Microsoft Defender for Endpoint の基本設定を設定する方法について説明します。 コマンド ライン インターフェイスを使用して macOS 上の Microsoft Defender for Endpoint を構成するには、「Resources」を [参照してください](mac-resources.md#configuring-from-the-command-line)。
 
-## <a name="summary"></a>まとめ
+## <a name="summary"></a>概要
 
 エンタープライズ組織では、macOS 上の Microsoft Defender for Endpoint を、いくつかの管理ツールのいずれかを使用して展開される構成プロファイルを介して管理できます。 セキュリティ運用チームによって管理される基本設定は、デバイス上でローカルに設定されている基本設定よりも優先されます。 構成プロファイルを使用して設定される基本設定を変更するには、エスカレートされた特権が必要であり、管理アクセス許可のないユーザーでは使用できません。
 
@@ -66,31 +66,19 @@ ms.locfileid: "61171703"
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |||
 
-#### <a name="enable--disable-real-time-protection"></a>リアルタイム保護を有効/無効にする
+#### <a name="enforcement-level-for-antivirus-engine"></a>ウイルス対策エンジンの適用レベル
 
-アクセス時にファイルをスキャンするリアルタイム保護を有効にするかどうかを指定します。
+ウイルス対策エンジンの適用設定を指定します。 適用レベルを設定するには、次の 3 つの値があります。
 
-<br>
-
-****
-
-|Section|値|
-|---|---|
-|**ドメイン**|`com.microsoft.wdav`|
-|**キー**|enableRealTimeProtection|
-|**データ型**|Boolean|
-|**指定可能な値**|true (既定) <p> false|
-|||
-
-#### <a name="enable--disable-passive-mode"></a>パッシブ モードを有効/無効にする
-
-ウイルス対策エンジンをパッシブ モードで実行するかどうかを指定します。 パッシブ モードには、次のような影響があります。
-
-- リアルタイム保護がオフになっている
-- オンデマンド スキャンが有効になっている
-- 脅威の自動修復が無効になっている
-- セキュリティ インテリジェンスの更新プログラムが有効になっている
-- [状態] メニュー アイコンが非表示
+- リアルタイム ( ): リアルタイム保護 (ファイルへのアクセス時のスキャン `real_time` ) が有効になります。
+- オンデマンド ( ): `on_demand` ファイルはオンデマンドでのみスキャンされます。 この場合:
+  - リアルタイム保護はオフです。
+- パッシブ ( `passive` ): パッシブ モードでウイルス対策エンジンを実行します。 この場合:
+  - リアルタイム保護はオフです。
+  - オンデマンド スキャンが有効です。
+  - 脅威の自動修復が無効になります。
+  - セキュリティ インテリジェンスの更新プログラムが有効になっている。
+  - [状態] メニュー アイコンは非表示です。
 
 <br>
 
@@ -99,10 +87,10 @@ ms.locfileid: "61171703"
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|passiveMode|
-|**データ型**|Boolean|
-|**指定可能な値**|false (既定) <p> true|
-|**コメント**|Microsoft Defender for Endpoint version 100.67.60 以上で使用できます。|
+|**キー**|enforcementLevel|
+|**データ型**|String|
+|**指定可能な値**|real_time (既定) <p> on_demand <p> パッシブ|
+|**コメント**|エンドポイント バージョン 101.10.72 以上の Microsoft Defender で使用できます。|
 |||
 
 #### <a name="run-a-scan-after-definitions-are-updated"></a>定義の更新後にスキャンを実行する
@@ -234,8 +222,8 @@ ms.locfileid: "61171703"
 |除外|定義|例|
 |---|---|---|
 |ファイル拡張子|拡張子が付いたすべてのファイル(デバイス上の任意の場所)|`.test`|
-|ファイル|完全パスで識別される特定のファイル|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
-|フォルダー|指定したフォルダーの下のすべてのファイル (再帰的)|`/var/log/` <p> `/var/*/`|
+|File|完全パスで識別される特定のファイル|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
+|Folder|指定したフォルダーの下のすべてのファイル (再帰的)|`/var/log/` <p> `/var/*/`|
 |プロセス|特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
 
@@ -662,8 +650,8 @@ tag の値を指定します。
 <dict>
     <key>antivirusEngine</key>
     <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
+        <key>enforcementLevel</key>
+        <string>real_time</string>
         <key>threatTypeSettings</key>
         <array>
             <dict>
@@ -741,10 +729,8 @@ tag の値を指定します。
                 <true/>
                 <key>antivirusEngine</key>
                 <dict>
-                    <key>enableRealTimeProtection</key>
-                    <true/>
-                    <key>passiveMode</key>
-                    <false/>
+                    <key>enforcementLevel</key>
+                    <string>real_time</string>
                     <key>threatTypeSettings</key>
                     <array>
                         <dict>
@@ -789,10 +775,8 @@ tag の値を指定します。
 <dict>
     <key>antivirusEngine</key>
     <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
-        <key>passiveMode</key>
-        <false/>
+        <key>enforcementLevel</key>
+        <string>real_time</string>
         <key>scanAfterDefinitionUpdate</key>
         <true/>
         <key>scanArchives</key>
@@ -904,6 +888,10 @@ tag の値を指定します。
 ### <a name="intune-full-profile"></a>Intune のフル プロファイル
 
 ```XML
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
         <key>PayloadUUID</key>
         <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadType</key>
@@ -945,10 +933,8 @@ tag の値を指定します。
                 <true/>
                 <key>antivirusEngine</key>
                 <dict>
-                    <key>enableRealTimeProtection</key>
-                    <true/>
-                    <key>passiveMode</key>
-                    <false/>
+                    <key>enforcementLevel</key>
+                    <string>real_time</string>
                     <key>scanAfterDefinitionUpdate</key>
                     <true/>
                     <key>scanArchives</key>
@@ -1055,6 +1041,8 @@ tag の値を指定します。
                 </dict>
             </dict>
         </array>
+    </dict>
+</plist>
 ```
 
 ## <a name="property-list-validation"></a>プロパティ リストの検証
@@ -1094,7 +1082,7 @@ JAMF コンソールで、[**コンピューター** 構成プロファイル] �
 
 5. 構成プロファイルを開き、ファイルを `com.microsoft.wdav.xml` アップロードします。 (このファイルは手順 3 で作成されました。
 
-6. **[OK]** を選択します。
+6. [**OK**] を選択します。
 
 7. [割 **り当** \> **ての管理] を選択します**。 [含める **] タブ** で、[すべてのユーザーに割り当てる] & **を選択します**。
 

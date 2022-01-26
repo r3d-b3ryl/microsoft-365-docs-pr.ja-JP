@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8a3f98af5251a5666a42c1f39539d557322e71e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4353bbfc0ce11c4a767ca599ecb23a1ab4f77a56
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165642"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214029"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defenderの設定
 
@@ -42,9 +42,7 @@ Cyberforensic の調査では、多くの場合、タイム スタンプを使�
 
 Microsoft Defender for Endpoint では、協定世界時 (UTC) または現地時間を表示できます。
 
-現在のタイム ゾーン設定は、[エンドポイント用 Microsoft Defender] メニューに表示されます。 表示されるタイム ゾーンは、[タイム ゾーン] メニュー **で変更** できます。
-
-![タイム ゾーン設定アイコン 2。](images/atp-time-zone-menu.png).
+現在のタイム ゾーン設定が Microsoft Defender の設定に表示されます。 表示されるタイム ゾーンは、[タイムゾーン] メニューの [セキュリティ センター] の下 **設定 >変更できます**。
 
 ### <a name="utc-time-zone"></a>UTC タイム ゾーン
 
@@ -66,9 +64,9 @@ Microsoft Defender for Endpoint タイム ゾーンは、既定では UTC に設
 
 タイム ゾーンを設定するには、次の方法を実行します。
 
-1. [タイム ゾーン **] メニューの** ![ [タイム ゾーン設定] アイコン 3 をクリックします ](images/atp-time-zone.png) 。
-2. タイム ゾーン **UTC インジケーターを選択** します。
-3. [ **タイム ゾーン UTC]** またはローカル タイム ゾーン (-7:00 など) を選択します。
+1. [ポータルタイム **設定** 設定] アイコン 3 の [[Microsoft 365 Defender]](https://security.microsoft.com/) ![ メニューをクリックします ](images/atp-time-zone.png) 。
+2. [セキュリティ **センター] を選択します**。
+3. [ **タイム ゾーン] を** 選択し、タイム ゾーンを UTC またはローカル タイム ゾーンに設定します。
 
 ### <a name="regional-settings"></a>地域の設定
 

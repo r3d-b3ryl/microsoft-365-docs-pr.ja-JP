@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 5bf8495a1acc13f74655133cdfe300b5149acb0a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b11eef14b36bd7e7ece14cf2b55424b52a0422da
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936491"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218923"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -69,11 +69,11 @@ ms.locfileid: "61936491"
 
 3. 左側のナビゲーション バーで、[アプリの登録] を選択します。
 
-4. [新規登録] を選択します。
+4. [新しい登録] を選択する
 
    ![新しいアプリケーション](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. [アプリケーションの登録] ページの [サポートされているアカウントの種類] で、任意の組織の [アカウント] を直接選択します (Any Azure AD ディレクトリ - Multitenant)。 次に、[リダイレクト URI ](オプション)で、[Web] を選択し、と入力します <https://office.com> 。 最後に、[登録] を選択します。
+5. [アプリケーションの登録] ページの [サポートされているアカウントの種類] で、[任意の組織ディレクトリ (Any Azure AD - Multitenant] の [アカウント] を選択します。 次に、[リダイレクト URI ](オプション)で、[Web] を選択し、と入力します <https://office.com> 。 最後に、[登録] を選択します。
 
    ![アプリケーション登録](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
@@ -93,7 +93,7 @@ ms.locfileid: "61936491"
 
 12. メールボックスの移行に対するアクセス許可を追加する必要があります。[アクセス許可の追加] を選択します。
 
-13. [API アクセス許可の要求] ウィンドウで、[組織のユーザー] で [API] を選択し、Office 365 Exchange をオンラインで検索し、それを選択します。
+13. [API アクセス許可の要求] ウィンドウで、組織で使用する API を選択し、Office 365 Exchange Onlineして選択します。
 
     ![[API の選択]](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
 
@@ -238,7 +238,7 @@ ms.locfileid: "61936491"
 
      | 属性            | 値                                                                                                                   |
      | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-     | エイリアス                | LaraN                                                                                                                   |
+     | Alias                | LaraN                                                                                                                   |
      | RecipientType        | MailUser                                                                                                                |
      | RecipientTypeDetails | MailUser                                                                                                                |
      | UserPrincipalName    | LaraN@northwintraders.onmicrosoft.com                                                                                   |
@@ -257,7 +257,7 @@ ms.locfileid: "61936491"
 
      | 属性            | 値                                                                   |
      | -------------------- | ----------------------------------------------------------------------- |
-     | エイリアス                | LaraN                                                                   |
+     | Alias                | LaraN                                                                   |
      | RecipientType        | UserMailbox                                                             |
      | RecipientTypeDetails | UserMailbox                                                             |
      | UserPrincipalName    | LaraN@contoso.onmicrosoft.com                                           |
@@ -494,7 +494,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 **ソーステナントとターゲット テナントは同じドメイン名を使用できますか?**
 
-いいえ。 ソーステナントとターゲットテナントのドメイン名は一意である必要があります。 たとえば、ユーザーのソース ドメインと contoso.com のターゲット ドメイン fourthcoffee.com。
+その必要はありません。 ソーステナントとターゲットテナントのドメイン名は一意である必要があります。 たとえば、ユーザーのソース ドメインと contoso.com のターゲット ドメイン fourthcoffee.com。
 
 **共有メールボックスは移動し、引き続き機能しますか?**
 

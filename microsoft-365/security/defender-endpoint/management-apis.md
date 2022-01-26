@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 48628ce70c64e37306a346459c65fef855975778
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 36975b55d8f26ae7788495543ae42922ea404c66
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937342"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213999"
 ---
 # <a name="overview-of-management-and-apis"></a>管理と API の概要
 
@@ -88,7 +88,7 @@ Defender for Endpoint イベント情報は、長期的なデータ保持のた�
 
 ## <a name="siem-api"></a>SIEM API
 
-セキュリティ情報とイベント管理 (SIEM) 統合を有効にした場合、SIEM ソリューションを使用するか、検出 REST API に直接接続することで、Microsoft 365 Defender から検出を取得できます。 これにより、値が事前に入力された SIEM コネクタ アクセスの詳細セクションがアクティブ化され、アプリケーションが Azure Active Directory (Azure AD) テナントの下に作成されます。 詳細については [、「SIEM 統合」を参照してください](enable-siem-integration.md)。
+セキュリティ情報とイベント管理 (SIEM) 統合を有効にした場合、SIEM ソリューションを使用するか、検出 REST API に直接接続することで、Microsoft 365 Defender から検出を取得できます。 これにより、値が事前に入力された SIEM コネクタ アクセスの詳細セクションがアクティブ化され、アプリケーションが Azure Active Directory (Azure AD) テナントの下に作成されます。 
 
 ## <a name="related-topics"></a>関連項目
 

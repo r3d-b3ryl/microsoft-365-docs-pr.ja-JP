@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 5c0f02834fe70c086ca5db7def6d9f2fed2c7543
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: b6ed0342183734d9b4feb1c20a6c4059b77e64d6
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301740"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213993"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM ツール統合に関する問題のトラブルシューティング
 
@@ -52,7 +52,7 @@ SIEM ツールで検出を引き出す際に問題のトラブルシューティ
 
 5. [ **証明書と&] セクション、[** 新しいクライアント シークレット] をクリックし、説明を入力し、有効期間を指定します。
 
-6. **[保存]** をクリックします。 キー値が表示されます。
+6. [**保存**] をクリックします。 キー値が表示されます。
 
 7. 値をコピーし、安全な場所に保存します。
 
@@ -73,7 +73,7 @@ SIEM ツールで検出を引き出す際に問題のトラブルシューティ
    - 英国の場合: `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
    - 米国の場合:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` .
 
-6. **[保存]** をクリックします。
+6. [**保存**] をクリックします。
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>SIEM コネクタ アプリケーションを有効にしている間のエラー
 
@@ -81,10 +81,7 @@ SIEM コネクタ アプリケーションを有効にしようとするとき�
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshootsiem-belowfoldlink)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-- [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
-- [エンドポイント検出用の Microsoft Defender をプルする ArcSight の構成](configure-arcsight.md)
 - [SIEM ツールへの検出のプル](configure-siem.md)
-- [Microsoft Defender for Endpoint Detection フィールド](api-portal-mapping.md)
-- [REST API を使用したエンドポイント検出用の Microsoft Defender のプル](pull-alerts-using-rest-api.md)
+

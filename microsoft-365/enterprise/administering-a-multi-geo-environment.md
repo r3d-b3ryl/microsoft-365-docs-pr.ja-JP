@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: 管理者は、複数地域の環境でSharePointサービスOneDrive管理する方法について学習できます。
-ms.openlocfilehash: 347968820e297d9d88e9338af07a5eea1e72d676
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 31d361b2936c3d7bceca7137499c659030717eba
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205847"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214195"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
@@ -33,6 +33,9 @@ ms.locfileid: "60205847"
 ## <a name="audit-log-search"></a>監査ログ検索
 
 すべてのサテライト地域に対して統合された[監査ログ](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)は、Microsoft 365 監査ログの検索ページから利用できます。 すべての地域からの監査ログのエントリを参照できます。たとえば、NAM ユーザーと EUR ユーザーのアクティビティが、1 つの組織ビューに表示され、既存のフィルターを適用することで特定のユーザーのアクティビティを確認できます。
+
+> [!NOTE]
+> Exchange監査イベントは、既定の場所でのみ使用できます。
 
 ## <a name="bcs-secure-store-apps"></a>BCS、Secure Store、Apps
 
@@ -74,7 +77,7 @@ Power Apps作成されたデータは、テナントの中央の場所にある�
 
 管理者は、各地域のポリシーの共有を設定し管理できます。 各地域OneDriveのSharePointサイトとサイトは、対応する地域固有の共有設定のみを受け入れる必要があります。 (たとえば、中心地への[外部共有](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)は許可できますが、サテライト地域またはその逆にはできません) 共有設定は地域間の共有制限を構成できませんので注意してください。
 
-## <a name="stream"></a>Stream
+## <a name="stream"></a>ストリーム
 
 1:1 チャットで Stream にアップロードされたビデオは、アップロードするユーザーのOneDriveに保存されます。 会議の記録は、会議を記録OneDrive出席者のグループに保存されます。
 

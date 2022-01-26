@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: dc8d03140d19c773e01f6571d69f7593e6e406e8
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 7b98ebf38d0e2e5ab5ec086e75002d0d660cff4c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311844"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214083"
 ---
 # <a name="configure-device-discovery"></a>デバイス検出の構成
 
@@ -38,7 +38,7 @@ ms.locfileid: "61311844"
 
 検出は、標準モードまたは基本モードで構成できます。 標準オプションを使用して、ネットワーク内のデバイスをアクティブに検索し、エンドポイントの検出を保証し、より豊富なデバイス分類を提供します。
 
-標準検出の実行に使用するデバイスの一覧をカスタマイズできます。 この機能をサポートしているすべてのオンボード デバイス (現在は Windows 10 デバイスと Windows 2019 デバイスのみ) で標準検出を有効にするか、デバイス タグを指定してデバイスのサブセットまたはサブセットを選択できます。
+標準検出の実行に使用するデバイスの一覧をカスタマイズできます。 この機能をサポートしているすべてのオンボード デバイス (現在 - Windows 10 以降および Windows Server 2019 以降のデバイスのみ) で標準検出を有効にするか、デバイス タグを指定してデバイスのサブセットまたはサブセットを選択できます。
 
 ## <a name="set-up-device-discovery"></a>デバイス検出のセットアップ
 
@@ -50,7 +50,7 @@ ms.locfileid: "61311844"
 2. 標準検出を使用する場合は、アクティブなプロブに使用するデバイスを選択します。デバイス タグを指定して、すべてのデバイスまたはサブセットで使用し、[保存] を選択 **します**。
 
 > [!NOTE]
->標準検出では、さまざまな PowerShell スクリプトを使用して、ネットワーク内のデバイスをアクティブにプローブします。 これらの PowerShell スクリプトは Microsoft 署名済みで、次の場所から実行されます `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` 。 たとえば、`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1` などです。
+>標準検出では、さまざまな PowerShell スクリプトを使用して、ネットワーク内のデバイスをアクティブにプローブします。 これらの PowerShell スクリプトは Microsoft 署名済みで、次の場所から実行されます `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` 。 たとえば、「 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1` 」のように入力します。
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>デバイスが標準検出でアクティブにプローブされるのを除外する
 

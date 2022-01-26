@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b98ffd747861d6aab757e3941d1a2ef4d6aeac2
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 430b087fc682eced9c20ef013b77ccc1d690187a
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301236"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214011"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のパートナー アプリケーション
 
@@ -114,7 +114,7 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 
 ## <a name="siem-integration"></a>SIEM 統合
 
-Defender for Endpoint では、さまざまなメソッドによる SIEM 統合がサポートされています。 これには、箱から出たコネクタを備えた専用の SIEM システム インターフェイス、カスタム実装を有効にする汎用アラート API、アラートの状態管理を可能にするアクション API が含まれます。 詳細については [、「Enable SIEM integration 」を参照してください](enable-siem-integration.md)。
+Defender for Endpoint では、さまざまなメソッドによる SIEM 統合がサポートされています。 これには、箱から出たコネクタを備えた専用の SIEM システム インターフェイス、カスタム実装を有効にする汎用アラート API、アラートの状態管理を可能にするアクション API が含まれます。
 
 ## <a name="ticketing-and-it-service-management"></a>チケットと IT サービスの管理
 

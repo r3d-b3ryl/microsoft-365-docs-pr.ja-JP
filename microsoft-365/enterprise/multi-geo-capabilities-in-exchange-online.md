@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: 機能の制限やメールボックスの配置など、Exchange Onlineの複数地域機能について説明します。
-ms.openlocfilehash: 8938808a857a70a865678589e9a70e4ee0eb083c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c45c5c8e8856206fc2afc3e08005821f24dcd028
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177293"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214095"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online の Multi-Geo 機能
 
@@ -59,4 +59,4 @@ Exchange online は、**PreferredDataLocation** プロパティを、Azure AD �
 
 - 複数地域にある組織では、パブリックフォルダーがサポートされています。 ただし、パブリックフォルダーは中央の地理的位置に設定する必要があります。 パブリックフォルダーをサテライトの地理的位置に移動することはできません。
 
-- 複数地域環境では、複数地域のメールボックスの監査はサポートされていません。 たとえば、異なる地理的位置にある共有メールボックスにアクセスする権限がユーザーに割り当てられている場合、そのユーザーが実行したメールボックス操作は、共有メールボックスのメールボックス監査ログに記録されません。 詳細については、「[メールボックスの監査を管理する](../compliance/enable-mailbox-auditing.md)」を参照してください。
+- 複数地域環境では、複数地域のメールボックスの監査はサポートされていません。 たとえば、異なる地理的位置にある共有メールボックスにアクセスする権限がユーザーに割り当てられている場合、そのユーザーが実行したメールボックス操作は、共有メールボックスのメールボックス監査ログに記録されません。 Exchange監査イベントは、既定の場所でのみ使用できます。 詳細については、「[メールボックスの監査を管理する](../compliance/enable-mailbox-auditing.md)」を参照してください。

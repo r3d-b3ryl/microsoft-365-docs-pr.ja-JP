@@ -20,13 +20,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: ビジネス向け請求通知の受信に使用する請求先住所または電子メール アドレスを更新Microsoft 365します。
-ms.date: 04/07/2021
-ms.openlocfilehash: 839dab1c63394f76c41abb7dd784253bb636ba38
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.date: 01/24/2022
+ms.openlocfilehash: 888e371cb81475b385ecd9d5cd3a3898039a5e94
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371282"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214107"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
@@ -102,39 +102,6 @@ ms.locfileid: "61371282"
 
 4. [サービス利用状況 **アドレスの編集] ウィンドウで** 、アドレスを更新し、[保存] を **選択します**。
 
-## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>請求通知の送り先である連絡用電子メール アドレスを変更する
-
-既定では、組織の請求通知は Microsoft の電子メール アドレスと、組織内のすべてのグローバル管理者および請求管理者の代替メール アドレスに送信されます。 各管理者は、自身のプロファイル情報を更新することによって、連絡用メール アドレスを変更できます。
-  
-1. 職場や学校のアカウントを使って、グローバル管理者として Office 365 にサインインします。[サインインの手順を参照](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
-
-2. [**ユーザー アイコン**] を選択し、[**マイ アカウント**] を選択します。
-  
-3. [**個人情報**] を選択します。
-  
-4. [**連絡先の詳細**] ボックスで [**編集**] を選択します。
-
-5. [**連絡用メール アドレス**] ボックスに使用する連絡用メール アドレスを入力し、[**保存**] を選択します。
-  
-## <a name="change-the-alternate-email-address-for-another-admin"></a>別の管理者の連絡用メール アドレスを変更する
-
-組織内の他のグローバル カタログや課金管理者の連絡用メール アドレスを変更することもできます。
-  
-::: moniker range="o365-worldwide"
-
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">[課金に関する通知]</a> ページに移動します。
-
-::: moniker-end
-
-2. [**課金に関する通知**] ページで、変更する管理者を選択します。
-
-3. [**ユーザーの役割の編集**] ウィンドウで使用する連絡用メール アドレスを入力し、[**保存**] を選択します。
 
 ## <a name="related-content"></a>関連コンテンツ
 
