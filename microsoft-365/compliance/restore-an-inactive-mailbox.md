@@ -2,8 +2,8 @@
 title: 非アクティブなメールボックスを復元する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 非アクティブなメールボックスの内容を既存のメールボックスに復元 (またはマージ) する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7aeea08b692dc1bfb77a225a27f3dfc1f1df899e
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: aaf0ce7f67ae0146beceeeb667263908d7cff75d
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320817"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241553"
 ---
 # <a name="restore-an-inactive-mailbox"></a>非アクティブなメールボックスを復元する
 

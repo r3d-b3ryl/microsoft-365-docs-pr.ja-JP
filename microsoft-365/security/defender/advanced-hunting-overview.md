@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: eb29c2f30e19acb3733f5512f2cba7d666d3df21
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 03f99f6b883a46e0a7c87d6cbdb2abb8f5552a31
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554614"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241637"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>高度な検索機能を使用して、脅威を事前に検出Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "60554614"
 高度な検索はクエリベースの脅威検出ツールで、最大 30 日間の生データを探索できます。 ネットワーク内のイベントを事前に検査して、脅威インジケーターとエンティティを見つけることができます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対する拘束されていない検出が可能です。
 <br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4G6DO]
 
 同じ脅威検出クエリを使用して、カスタム検出ルールを作成できます。 これらのルールは自動的に実行され、侵害の疑いのあるアクティビティ、正しく構成されていないコンピューター、その他の結果を確認し、それに対応します。
 
@@ -48,12 +48,12 @@ ms.locfileid: "60554614"
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 
 高度な検索を使用するには[、次のMicrosoft 365 Defender。](m365d-enable.md)
 
-データの高度な検索の詳細についてはMicrosoft Cloud App Securityビデオを参照[してください](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa)。 
+Microsoft Defender for Cloud Apps データでの高度な検索の詳細については、ビデオを参照 [してください](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa)。 
 
 ## <a name="get-started-with-advanced-hunting"></a>高度な捜索を開始する
 

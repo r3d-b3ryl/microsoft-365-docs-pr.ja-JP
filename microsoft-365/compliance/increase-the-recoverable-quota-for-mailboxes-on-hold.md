@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: アーカイブ メールボックスを有効にし、自動拡張アーカイブを有効にして、メールボックスの回復可能なアイテム フォルダーのサイズを増やMicrosoft 365。
-ms.openlocfilehash: fef1a5f77551006ed6df180185ad865c8b26b285
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 6465a86bfbf2d7f4eaf933786d15a4747b84dd5f
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335624"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241193"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>保留中のメールボックスの回復可能なアイテムのクォータを拡大する
 
@@ -37,7 +37,7 @@ Exchange Online の新しいメールボックスに自動的に適用される�
 |回復可能なアイテム フォルダーを含むアーカイブ メールボックス <sup>\*</sup> |1.5 TB |1.5 TB |
 
 > [!NOTE]
-> <sup>\*</sup>アーカイブ メールボックスの初期記憶域クォータは、ライセンスを持つユーザーの場合は 100 GB Exchange Online (プラン 2)です。 ただし、保持中のメールボックスに対して自動拡張アーカイブを有効にすると、アーカイブ メールボックスと回復可能なアイテム フォルダーの両方の記憶域クォータが 110 GB に増加します。 必要に応じて、最大 1.5 TB のアーカイブ ストレージ領域 (回復可能なアイテム フォルダーを含む) が準備されます。 自動拡張アーカイブの詳細については、「自動拡張アーカイブの概要」 [を参照してください](autoexpanding-archiving.md)。
+> <sup>\*</sup>アーカイブ メールボックスの初期記憶域クォータは、ライセンスを持つユーザーの場合は 100 GB Exchange Online (プラン 2)です。 ただし、保持中のメールボックスに対して自動拡張アーカイブを有効にすると、アーカイブ メールボックスと回復可能なアイテム フォルダーの両方の記憶域クォータが 110 GB に増加します。 必要に応じて、最大 1.5 TB のアーカイブ ストレージ領域 (回復可能なアイテム フォルダーを含む) が準備されます。 自動拡張アーカイブの詳細については、「自動拡張アーカイブについて」 [を参照してください](autoexpanding-archiving.md)。
 
 保持中のメールボックスのプライマリ メールボックスに含まれる [回復可能なアイテム] フォルダーの記憶域クォータが上限に近づいたら、次の対策を講じることができます。
 

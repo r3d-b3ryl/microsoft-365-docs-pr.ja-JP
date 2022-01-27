@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d16839881f48b494d6d061d2a59c205b5e8d667c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 57dedee4f2502f5fd9db293fb4ea947cf50bee1d
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935527"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241941"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -52,7 +52,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 - <https://security.microsoft.com/> で Microsoft 365 Defender ポータルを開きます。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
 
 - メッセージとファイルを Microsoft に送信するには、次のいずれかの役割グループのメンバーである必要があります。
-  - **[組織の管理****] または [セキュリティ**[リーダー] をMicrosoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
+  - **ポータルの****セキュリティ** 管理者 [またはセキュリティ リーダー Microsoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
   
     この記事で後述するように、カスタム メールボックスへの[](#view-user-submissions-to-microsoft)ユーザー申請を表示するには、この役割グループのメンバーシップが必要です。
 
@@ -152,7 +152,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
    - 使用可能な列ヘッダーをクリックすると、エントリを並べ替えできます。 [列 **のカスタマイズ] を** クリックして、最大 7 列を表示します。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
      - **申請名**<sup>\*</sup>
      - **[送信者]**<sup>\*</sup>
-     - **Recipient**
+     - **[受信者]**
      - **提出日**<sup>\*</sup>
      - **提出の理由**<sup>\*</sup>
      - **再スキャンの状態**<sup>\*</sup>
@@ -181,7 +181,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
      - **申請 ID**: すべての申請に割り当てられている GUID 値。
      - **ネットワーク メッセージ ID**
      - **Sender**
-     - **Recipient**
+     - **[受信者]**
      - **名前**
      - **提出者**
 

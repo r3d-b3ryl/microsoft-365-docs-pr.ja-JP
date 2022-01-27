@@ -1,9 +1,9 @@
 ---
-title: 組織のメールボックスについて、アーカイブ削除ポリシーを設定する
+title: 組織内のメールボックスのアーカイブおよび削除ポリシー (MRM) をカスタマイズする
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,17 +22,21 @@ ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: ユーザーのアーカイブ メールボックスにアイテムを自動的に移動するMicrosoft 365のアーカイブ および削除ポリシーを作成する方法について説明します。
-ms.openlocfilehash: eff76a5d06b975e161a4d12302ac8bd1f20e612e
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: ユーザーのアーカイブ メールボックスにアイテムを自動的に移動するカスタム メッセージング レコード管理 (MRM) アーカイブおよび削除ポリシーを作成する方法。
+ms.openlocfilehash: 192bed6be6c3129410f4e51144402c6c19e12d37
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423709"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242073"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>組織のメールボックスについて、アーカイブ削除ポリシーを設定する
+# <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>組織内のメールボックスのアーカイブポリシーと削除ポリシーをカスタマイズする
 
-管理者Microsoft 365、ユーザーのアーカイブ メールボックスにアイテムを自動的に移動し、メールボックスからアイテムを自動的に削除するアーカイブおよび削除ポリシーを作成できます。 管理者は、メールボックスに割り当てられたアイテム保持ポリシーを作成し、一定の期間が過ごした後にアイテムをユーザーのアーカイブ メールボックスに移動し、一定の年齢制限に達した後にメールボックスからアイテムを削除します。 移動または削除されるアイテムを決定する実際のルールを保持タグと呼ぶ。 保持タグはアイテム保持ポリシーにリンクされます。その後、ユーザーのメールボックスに割り当てられます。 保持タグは、ユーザーのメールボックス内の個々のメッセージとフォルダーに保持設定を適用します。 メッセージがメールボックスに保持される期間と、メッセージが指定した保持期間に達したときに実行されるアクションを定義します。 メッセージが保持期間に達すると、メッセージはユーザーのアーカイブ メールボックスに移動されるか、削除されます。
+Microsoft 365管理者は、ユーザーのアーカイブ メールボックスにアイテムを自動的に移動し、メールボックスからアイテムを自動的に削除[](archive-mailboxes.md)するアーカイブおよび削除ポリシーを作成できます。
+
+これを行うには、メールボックスに割り当てられたメッセージング レコード管理 (MRM) アイテム保持ポリシーを作成し、一定の期間が過ごした後にアイテムをユーザーのアーカイブ メールボックスに移動し、一定の年齢制限に達した後にメールボックスからアイテムも削除します。 
+
+移動または削除されるアイテムを決定する実際のルールを保持タグと呼ぶ。 保持タグは MRM 保持ポリシーにリンクされます。その後、ユーザーのメールボックスに割り当てられます。 保持タグは、ユーザーのメールボックス内の個々のメッセージとフォルダーに保持設定を適用します。 メッセージがメールボックスに保持される期間と、メッセージが指定した保持期間に達したときに実行されるアクションを定義します。 メッセージが保持期間に達すると、メッセージはユーザーのアーカイブ メールボックスに移動されるか、削除されます。
   
 この記事の手順では、アルパイン ハウスという架空の組織のアーカイブと保持ポリシーを設定します。 このポリシーの設定には、次のタスクが含まれます。
   
@@ -240,7 +244,7 @@ ms.locfileid: "61423709"
   
 PowerShell に接続し、組織内Exchange Onlineで管理フォルダー アシスタントを実行する手順を次に示します。
 
-1. [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)。
   
 2. 次の 2 つのコマンドを実行して、組織内のすべてのユーザー メールボックスの管理フォルダー アシスタントを開始します。
 
@@ -261,7 +265,7 @@ PowerShell に接続し、組織内Exchange Onlineで管理フォルダー ア�
 
 手順 4 では、新しい保持ポリシーを既存のメールボックスに割り当てる必要があります。 ただし、将来作成Exchange Online新しいアイテム保持ポリシーが新しいメールボックスに割り当て済みである場合は、このポリシーを構成できます。 これを行うには、PowerShell Exchange Onlineを使用して組織の既定のメールボックス プランを更新します。 メールボックス *プランは、* 新しいメールボックスのプロパティを自動的に構成するテンプレートです。  このオプションの手順では、メールボックス プランに割り当てられている現在のアイテム保持ポリシー (既定では、既定の MRM ポリシー) を、手順 3 で作成したアイテム保持ポリシーに置き換えてください。 メールボックス プランを更新すると、新しいアイテム保持ポリシーが新しいメールボックスに割り当てられます。
 
-1. [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 次のコマンドを実行して、組織内のメールボックス プランに関する情報を表示します。
 
@@ -285,7 +289,7 @@ PowerShell に接続し、組織内Exchange Onlineで管理フォルダー ア�
 
 - 次の表は、このトピックの手順に従って作成されたカスタム保持ポリシーに追加される各保持タグの詳細を示しています。
 
-    | 保持タグ | このタグの動作 | 組み込みかカスタムか。 | 種類 |
+    | 保持タグ | このタグの動作 | 組み込みかカスタムか。 | Type |
     |:-----|:-----|:-----|:-----|
     |アルパイン ハウス 3 年アーカイブへの移行  <br/> |1095 日 (3 歳) のアイテムをアーカイブ メールボックスに移動します。  <br/> |カスタム (「手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを[作成する」を参照)](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)  <br/> |既定のポリシー タグ (アーカイブ)。このタグはメールボックス全体に自動的に適用されます。  <br/> |
     |アルパイン ハウス 7 年の完全削除  <br/> |プライマリ メールボックスまたはアーカイブ メールボックス内のアイテムが 7 歳のときに完全に削除されます。  <br/> |カスタム (「手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを[作成する」を参照)](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)  <br/> |既定のポリシー タグ (削除)。このタグはメールボックス全体に自動的に適用されます。  <br/> |

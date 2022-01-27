@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0912e496fdca1f716fa7476a4a74e46bbb26023f
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 7092b4ed30400fb559751d4d939801c1982407f8
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221342"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241977"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -36,11 +36,17 @@ ms.locfileid: "61221342"
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-高度な捜索は、[Kusto クエリ言語](/azure/kusto/query/)に基づいています。 Kusto 演算子とステートメントを使用して、特殊なスキーマ内の情報を検索するクエリを作成 [できます](advanced-hunting-schema-tables.md)。 これらの概念をよりよく理解するために、最初のクエリを実行します。
+高度な捜索は、[Kusto クエリ言語](/azure/kusto/query/)に基づいています。 Kusto 演算子とステートメントを使用して、特殊なスキーマ内の情報を検索するクエリを作成 [できます](advanced-hunting-schema-tables.md)。 
+
+この短いビデオでは、便利な Kusto クエリ言語の基本について説明します。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
+ 
+これらの概念をよりよく理解するために、最初のクエリを実行します。
 
 ## <a name="try-your-first-query"></a>最初のクエリを試してみる
 
-このポータルMicrosoft 365 Defender[ハンティング] に移動 **して**、最初のクエリを実行します。 次の例を使用してください。
+このポータルMicrosoft 365 Defender[ハンティング] に移動 **して**、最初のクエリを実行します。 次の例を使用してください。 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -183,7 +189,7 @@ Kusto クエリ言語およびサポートされる演算子の詳細につい�
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

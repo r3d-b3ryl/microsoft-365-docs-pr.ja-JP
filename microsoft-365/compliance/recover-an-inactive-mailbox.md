@@ -2,8 +2,8 @@
 title: 非アクティブなメールボックスを回復する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: 非アクティブなメールボックスの内容を含む新しいメールボックスに変換して、Office 365で非アクティブなメールボックスの内容を回復する方法について説明します。
-ms.openlocfilehash: d4776b5b11647409a1c96e3301e22e8b78fae91b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ce09d218d86e7cd949da1df80cc75a19fce64159
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188123"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241505"
 ---
 # <a name="recover-an-inactive-mailbox"></a>非アクティブなメールボックスを回復する
 

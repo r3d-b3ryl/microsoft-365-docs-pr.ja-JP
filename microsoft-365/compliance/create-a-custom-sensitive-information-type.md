@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: セキュリティ コンプライアンス センターで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする&説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e97edc10b92b1061a8122a1b9cd9ab5ef44b01f
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 5a25293740dd856d93726e5eaf27e3a92c18af56
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213939"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241929"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>カスタムの機密情報の種類を使用する前に
 
@@ -134,7 +134,7 @@ ms.locfileid: "62213939"
 
 高パフォーマンスと低遅延を確保するために、カスタムの SIT 構成には制限があります。
 
-|極限|値|
+|極限|Value|
 |--------|--------|
 |コンプライアンス センターを通じて作成されたカスタムの ST の最大数| 500 |
 |正規表現の最大長| 1024 文字|
@@ -293,6 +293,6 @@ Luhn アルゴリズムを渡す必要がある正規表現を含むカスタム
 >     2. 機密性が高い、机密的document、机密的 document
 >
 > 2 バイトのハイフンまたは 2 バイトのピリオドを使用して正規表現を作成するときは、正規表現のハイフンまたはピリオドをエスケープするように、必ず両方の文字をエスケープしてください。参考までに、サンプルの正規表現を次に示します。
->    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>    - (?<!\d)([4][0-9] {3}[ \- ?\-\t]*[0-9] {4} )
 >
 > キーワード リストでは、単語の一致ではなく文字列の一致を使用することをお勧めします。

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: d3b8ab3fac4156b638a0508bbac0bebfc2dfdee6
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: dcc3cb8379dd095a110e1307819e9256d9fa84bb
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327550"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241541"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -40,7 +40,7 @@ ms.locfileid: "61327550"
 
 ## <a name="before-you-begin"></a>はじめに
 
-組織のグローバル管理者には、アイテム保持ポリシーを作成および編集できる完全な権限があります。 グローバル管理者としてサインインしていない場合は、「[アイテム保持ポリシーと保持ラベルを作成して管理するために必要なアクセス許可](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)」を参照してください。
+組織のグローバル管理者には、アイテム保持ポリシーを作成および編集できる完全な権限があります。 グローバル管理者としてサインインしていない場合は、「[Information Governance のアクセス許可情報](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels)」を参照してください。
 
 保持ラベル ポリシーを作成する前に、**アダプティブ** にするか、**静的** にするかどうかを決定します。 詳細については、「[保持用のアダプティブ ポリシー スコープまたは静的ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)」を参照してください。 アダプティブ ポリシーの使用を決定する場合は、保持ポリシーの作成前に 1 つ以上のアダプティブ スコープを作成し、保持ラベル ポリシーの作成プロセス中に選択します。 手順については、「[アダプティブ スコープの構成情報](retention-settings.md#configuration-information-for-adaptive-scopes)」を参照してください。
 
@@ -90,8 +90,8 @@ ms.locfileid: "61327550"
         
        既定では、[すべてのチームとすべてのユーザーが選択されています](retention-settings.md#a-policy-that-applies-to-entire-locations)が、[**[選択]** と **[除外]** オプション](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)を選択することでこれを調整できます。 ただし、この既定の選択を変更する前に、アイテム保持ポリシーが次を対象または除外対象とするために構成されるときに、メッセージを削除する点について注意してください。
         
-        - グループ チャット メッセージとプライベート チャネル メッセージの場合、メッセージのコピーがチャットに含まれる各ユーザーのメールボックスに保存されるため、引き続きポリシーが割り当てられていないユーザーからの電子情報開示の結果で返されます。
-        - ポリシーが割り当てられていないユーザーには、削除されたメッセージが Teams の検索結果で返されますが、ユーザーに割り当てられたポリシーからの完全な削除の結果としてメッセージの内容は表示されません。
+        - グループ チャット メッセージとプライベート チャネル メッセージの場合、会話に含まれる各ユーザーのメールボックスにメッセージのコピーが保存されるため、電子情報開示の結果でメッセージのコピーが、ポリシーに割り当てられたユーザーから引き続き返されます。
+        - ポリシーが割り当てられていないユーザーには、削除されたメッセージが Teams の検索結果で返されますが、削除の結果としてメッセージの内容は表示されません。
 
 5. [**コンテンツを保持するか、削除するか、またはその両方を行うかを決定する**] ページで、コンテンツを保持および削除するための構成オプションを指定します。
 
@@ -232,3 +232,9 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
 アイテム保持ポリシーの設定がコンテンツに既に適用されている場合、ポリシーに対する構成の変更は、新しく識別されたコンテンツに加えて、このコンテンツに自動的に適用されます。
 
 ポリシーを作成して保存した後は、一部の設定を変更できません。これには、アイテム保持ポリシーの名前、スコープの種類 (アダプティブまたは静的)、保持期間を除く保持設定が含まれます。
+
+## <a name="next-steps"></a>次の手順
+
+Exchange、SharePoint、OneDrive、またはMicrosoft 365 グループの一部のアイテムで、構成したアイテム保持ポリシー設定とは異なる保持設定が必要な場合は、[これらの例外の保持ラベルを作成](create-retention-labels-information-governance.md)します。
+
+ただし、ビジネス、法的、または規制上の記録保持要件の高価値アイテムのライフサイクル管理を探している場合は、[保持ラベルの作成と管理にファイル計画を使用](file-plan-manager.md)します。

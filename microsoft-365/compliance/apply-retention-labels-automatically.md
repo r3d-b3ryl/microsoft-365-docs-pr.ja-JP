@@ -16,20 +16,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: ecb4a580eb3ada9bcb3d38a8bdfdbc12c9dc7107
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+description: 必要なものを保持し、不要なものを削除するのにアイテム保持ポリシーを自動的に適用できるよう、保持ラベルと自動ラベル付けポリシーを作成します。
+ms.openlocfilehash: d34d2e2348c2e2319e31410c144565108ec9ae5f
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049350"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241577"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> このシナリオは、Microsoft Office SharePoint Online のドキュメント セットやライブラリ、Exchange のフォルダーなどの組織構造の[規制レコード](records-management.md#records)や既定のラベルではサポートされていません。これらのシナリオには、[発行済み保持ラベル ポリシー](create-apply-retention-labels.md#step-2-publish-retention-labels)が必要です。
+> このシナリオは、Microsoft Office SharePoint Online のドキュメント セットやライブラリ、Exchange のフォルダーなどの組織構造の[規制レコード](records-management.md#records)や既定のラベルではサポートされていません。これらのシナリオには、[発行済み保持ラベル ポリシー](create-apply-retention-labels.md)が必要です。
 
 [保持ラベル](retention.md)の最も強力な機能の 1 つは、指定の条件に一致したコンテンツにラベルを自動的に適用する機能です。この場合、保持ラベルは Microsoft 365 によって適用されるため、組織内のユーザーがラベルを適用する必要はありません。
   
@@ -59,59 +59,29 @@ ms.locfileid: "62049350"
 > - SharePoint と Outlook の既定の保持ラベルを適用する
 > - Outlook ルールを使用してメールに保持ラベルを適用する
 >
-> これらのシナリオについては、[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)を参照してください。
+> これらのシナリオについては、「[保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)」を参照してください。
 
 ## <a name="before-you-begin"></a>はじめに
 
-組織のグローバル管理者には、保持ラベルとそれらのポリシーを作成および編集できる完全な権限があります。 グローバル管理者としてサインインしていない場合は、「[アイテム保持ポリシーと保持ラベルを作成して管理するために必要なアクセス許可](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)」を参照してください。
+組織のグローバル管理者には、保持ラベルとそれらのポリシーを作成および編集できる完全な権限があります。 グローバル管理者としてサインインしていない場合は、使用しているソリューションに応じて、["レコード管理"](get-started-with-records-management.md#permissions) または ["Information Governance"](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels) のアクセス許可情報を参照してください。
+
+アイテムに適用する[保持ラベルが作成されていること](file-plan-manager.md#create-retention-labels)を確認します。
+
+## <a name="how-to-create-an-auto-apply-retention-label-policy"></a>自動適用の保持ラベル ポリシーを作成する方法
 
 保持ラベル ポリシーを作成する前に、**アダプティブ** か **静的** にするかどうかを決定します。 詳細については、「[保持用のアダプティブ ポリシー スコープまたは静的ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)」を参照してください。 アダプティブ ポリシーの使用を決定する場合は、保持ラベル ポリシーの作成前に 1 つ以上のアダプティブ スコープを作成し、保持ラベル ポリシーの作成プロセス中に選択する必要があります。 手順については、「[アダプティブ スコープの構成情報](retention-settings.md#configuration-information-for-adaptive-scopes)」を参照してください。
-
-## <a name="how-to-auto-apply-a-retention-label"></a>保持ラベルを自動適用する方法
-
-まず、保持ラベルを作成します。 次に、そのラベルを適用する自動ポリシーを作成します。 保持ラベルを既に作成してある場合は、[自動ポリシーの作成](#step-2-create-an-auto-apply-policy)に進んでください。
-
-ナビゲーション手順は、[レコード管理](records-management.md)を使用しているかどうかによって異なります。 両方のシナリオの手順を説明します。
-
-### <a name="step-1-create-a-retention-label"></a>手順 1: 保持ラベルを作成する
-
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
-    
-    - レコード管理を使用している場合:
-        - [**ソリューション**] > [**レコード管理**] > [**ファイル計画**] タブ > [**+ラベルを作成**] > [**保持ラベル**]
-        
-    - レコード管理を使用していない場合:
-       - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル**] タブ > + [**ラベルを作成**]
-    
-    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。 
-
-2. 構成の指示に従います。
-    
-    保持設定の詳細については、「[コンテンツを保持および削除するための設定](retention-settings.md#settings-for-retaining-and-deleting-content)」を参照してください。 ただし、[クラウドの添付ファイル](#auto-apply-labels-to-cloud-attachments)にラベルを使用する場合は、保持期間の開始日を「**アイテムにラベル付けされた時点**」に構成するようにしてください。
-    
-    レコード管理を使用している場合:
-    
-    - ファイル計画記述子については、「[Use file plan to manage retention labels (ファイル計画を使用して保持ラベルを管理する)](file-plan-manager.md)」を参照してください。
-    
-    - 保持ラベルを使用してレコードを宣言するには、**アイテムをレコードとしてマーク**、または **アイテムを規制レコードとしてマーク** を選択します。 詳細については、「 [保持ラベルを構成してレコードを宣言する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
-
-3. ラベルを作成し、ラベルの公開、ラベルの自動適用、または単にラベルを保存するオプションが表示されたら、[**特定の種類のコンテンツにこのラベルを自動適用する**] を選択し、[**完了**] を選択します。 
-
-既存のラベルを編集するには、そのラベルを選択してから [**ラベルの編集**] オプションを選択し、手順 2 からラベルの説明や [有効な設定](#updating-retention-labels-and-their-policies)を変更するための [**保持ラベルの編集**] 構成を開始します。
-
-### <a name="step-2-create-an-auto-apply-policy"></a>手順 2: 自動適用ポリシーを作成する
 
 自動適用ポリシーを作成する場合、指定した条件に基づいてコンテンツに自動的に適用する保持ラベルを選択します。
 
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
     
-    - レコード管理を使用している場合: **情報ガバナンス**:
-        - [**ソリューション**] > [**レコード管理**] > [**ラベル ポリシー**] タブ > [**自動適用ラベル**]
+    - レコード管理を使用している場合:
+        - **[ソリューション]** > **[レコード管理]** > > **[ラベル ポリシー]** タブ > **[ラベルの自動適用]**
     
-    - レコード管理を使用していない場合:
+    - Information Governance を使用している場合:
         - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル ポリシー**] タブ > [**自動適用ラベル**]
     
-    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。 
+    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。
 
 2. この自動ラベル付けポリシーに名前と説明を入力して、[**次へ**] を選択します。
 
@@ -129,7 +99,7 @@ ms.locfileid: "62049350"
 
 6. ウィザードの指示に従って保持ラベルを選択し、構成の選択肢を確認して送信します。
 
-既存の自動適用ポリシーを編集するには、ポリシーを選択して、[**アイテム保持ポリシーの編集**] 構成を起動します。このウィザードでは、手順 2 で選択した保持ラベルと [有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
+既存の保持ラベル ポリシー (ポリシーの種類は **"自動適用"**) を編集するには、それを選択してから、**[編集]** オプションを選択して、**[アイテム保持ポリシーの編集]** 構成を開始します。
 
 自動適用ラベル ポリシーを使用してコンテンツにラベル付けをした後で、コンテンツやポリシーを変更したり、新しい自動適用ラベル ポリシーを使用したりして、適用されているラベルを自動的に削除したり変更したりすることはできません。詳細については、「[一度に 1 つの保持ラベルのみ](retention.md#only-one-retention-label-at-a-time)」を参照してください。
 

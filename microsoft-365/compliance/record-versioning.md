@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 でのレコード管理ソリューションの実装に役立つレコードについて説明します。
-ms.openlocfilehash: 2d08a6a29d2bb4a32b0669bed8d97cda3767538a
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 2aabfbf1b3e0aedd8ec7ba54d452cb01ad81776a
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560002"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242049"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する
 
@@ -50,7 +50,7 @@ ms.locfileid: "61560002"
 > [!TIP]
 > 保持ラベルに削除アクションを設定して、レコードのバージョン管理を使用する場合は、保持設定の **[Start the retention period based on:](保持期間の開始条件:)** を **[When items were labeled](アイテムにラベルが付けられたとき)** に設定することを検討してください。 このラベル設定では、新しいレコード バージョンごとに保持期間の開始がリセットされます。これにより、常に以前のバージョンが新しいバージョンよりも先に削除されるようになります。
 
-レコードのバージョン管理は、アイテムをレコードとしてマークする保持ラベルが適用されているすべてのドキュメントで自動的に使用可能になります。そのラベルは[サイトに発行されています](create-apply-retention-labels.md#step-2-publish-retention-labels)。 ユーザーが詳細ウィンドウでドキュメントのプロパティを表示すると、**レコード ステータス** が **ロック済み** から **ロック解除** に切り替わります。 このアクションにより、アイテム保管ライブラリの [レコード] フォルダーにレコードが作成され、保存期間の残りの期間はそこに保存されます。
+レコードのバージョン管理は、アイテムをレコードとしてマークする保持ラベルが適用されているすべてのドキュメントで自動的に使用可能になります。そのラベルは[サイトに発行されています](create-apply-retention-labels.md)。 ユーザーが詳細ウィンドウでドキュメントのプロパティを表示すると、**レコード ステータス** が **ロック済み** から **ロック解除** に切り替わります。 このアクションにより、アイテム保管ライブラリの [レコード] フォルダーにレコードが作成され、保存期間の残りの期間はそこに保存されます。
 
 ドキュメントのロックが解除されている間、標準の編集権限を持つすべてのユーザーがファイルを編集できます。 ただし、これはまだレコードであるため、ユーザーはファイルを削除することができません。 編集が完了すると、**レコードの状態** を **ロック解除** から **ロック済み** に切り替えることができ、この状態の間はそれ以上の編集ができなくなります。
 <br/><br/>
@@ -108,4 +108,4 @@ ms.locfileid: "61560002"
 
 ## <a name="next-steps"></a>次の手順
 
-レコード管理でサポートされているその他のシナリオについては、「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios-for-records-management)」を参照してください。
+レコード管理でサポートされているその他のシナリオについては、「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios)」を参照してください。

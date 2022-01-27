@@ -16,12 +16,12 @@ ms.custom:
 - intro-get-started
 ms.localizationpriority: medium
 description: コンプライアンスを迅速に開始するのに役立つタスクについては、Microsoft 365。
-ms.openlocfilehash: 028226c92c9707d852c2bde80cea6d0a3bf86adf
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 1fb1a94e41550e10288bc42b3900cb10e76362bc
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643068"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241373"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスを開始するためのクイック タスク
 
@@ -77,17 +77,17 @@ Microsoft では、管理アクセス許可の悪用、マルウェアアクテ�
 
 [感度ラベルを](sensitivity-labels.md) 使用すると、組織のデータを分類して保護できます。一方で、ユーザーの生産性と共同作業能力に支障が生じなかねない。 暗号化と使用制限を適用するには、感度ラベルを使用して視覚的なマーキングを適用し、プラットフォームやデバイス、オンプレミス、クラウドの間で情報を保護します。
 
-感度ラベルを構成して使用する手順については、「感度ラベルの使用を開始する [」を参照してください](get-started-with-sensitivity-labels.md)。 感度ラベルのライセンス情報については、「セキュリティとコンプライアンス[Microsoft 365ライセンス ガイダンス」を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
+感度ラベルを構成して使用する手順については、「感度ラベルの使用を開始する [」を参照してください](get-started-with-sensitivity-labels.md)。
 
-## <a name="task-6-configure-a-retention-policy"></a>タスク 6: アイテム保持ポリシーを構成する
+## <a name="task-6-configure-retention-policies"></a>タスク 6: アイテム保持ポリシーを構成する
 
 アイテム [保持ポリシーを](retention.md) 使用すると、コンテンツを保持するか、コンテンツを削除するか、その両方を事前に決定し、指定した保持期間の終わりにコンテンツを保持および削除できます。 これらのアクションは、業界の規制や内部ポリシーに準拠し、訴訟やセキュリティ侵害が発生した場合のリスクを軽減するために必要な場合があります。
 
 コンテンツがアイテム保持ポリシーの対象となる場合、ユーザーは何も変更されなかっていないかのように、コンテンツの編集と作業を続行できます。 コンテンツは元の場所に保持されます。 ただし、保持ポリシーの対象となるコンテンツを編集または削除した場合、元のコンテンツのコピーは、そのコンテンツの保持ポリシーが有効な間、保持される安全な場所に保存されます。
 
-Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft 365 グループなど、Microsoft 365 環境内の複数の場所に対して保持ポリシーをすばやく設定できます。 このポリシーに自動的に含めるメールボックスまたはサイトの数に制限はありません。 ただし、より選択的に取得する必要がある場合は、特定の場所のアイテム保持ポリシーを構成し、サイトまたはユーザーを含めるか除外します。
+Teams および Yammer メッセージ、Exchange メール、SharePoint サイト、および OneDrive アカウントを含む Microsoft 365 環境で、複数のサービスに対して保持ポリシーをすばやく設定できます。 アイテム保持ポリシーに自動的に含めるユーザー、メールボックス、またはサイトの数に制限はありません。 ただし、より選択的に取得する必要がある場合は、クエリ ベースのアダプティブ スコープを構成して、特定のインスタンスを動的にターゲットにするか、常に除外する特定のインスタンスを指定する静的スコープを構成します。
 
-アイテム保持ポリシーを構成する手順については、「アイテム保持ポリシーの作成と構成 [」を参照してください](create-retention-policies.md)。 Microsoft 365 で保持を構成するのが初めての場合は、「[アイテム保持ポリシーと保持ラベルの使用を開始する](get-started-with-retention.md)」を参照してください。
+アイテム保持ポリシーを構成する手順については、「アイテム保持ポリシーの作成と構成 [」を参照してください](create-retention-policies.md)。 アイテム保持ポリシーは、Microsoft 365の情報ガバナンス戦略の基になるので、「情報ガバナンスの概要」[を参照してください](get-started-with-information-governance.md)。
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>タスク 7: 機密情報と不快な言語ポリシーを構成する
 
@@ -104,7 +104,7 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 機密ラベル、機密情報の種類、保持ラベルとポリシー、トレーニング可能な分類子を使用して、Exchange、SharePoint、および OneDrive 全体で、前のタスクで見た機密アイテムを分類およびラベル付けできます。 クイック タスクの最後の手順は、ラベルが付けられているアイテムと、ユーザーがそれらの機密性の高いアイテムに対して実行しているアクションを確認します。 [コンテンツ エクスプローラーと](data-classification-content-explorer.md)[アクティビティ エクスプローラーは、](data-classification-activity-explorer.md)この可視性を提供します。
 
 ### <a name="content-explorer"></a>コンテンツ エクスプローラー
- コンテンツ エクスプローラーを使用すると、機密情報の種類として分類された、またはトレーニング可能な分類子によって特定の分類に属するすべてのアイテムと、機密性または保持ラベルが適用されているすべてのアイテムをネイティブ形式で表示できます。
+コンテンツ エクスプローラーを使用すると、機密情報の種類として分類された、またはトレーニング可能な分類子によって特定の分類に属するすべてのアイテムと、機密性または保持ラベルが適用されているすべてのアイテムをネイティブ形式で表示できます。
 
 コンテンツ エクスプローラーを使用する手順については、「データを知る - データ分類の [概要](data-classification-overview.md)」および「コンテンツ エクスプローラーの概要 [」を参照してください](data-classification-content-explorer.md)。
 
@@ -133,15 +133,11 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 
 ### <a name="configure-retention-labels"></a>保持ラベルを構成する
 
-アイテム保持ポリシーはコンテナー レベルで SharePoint サイトや Exchange メールボックスなどの場所に適用されます。保持ラベルを使用[](retention.md#retention-labels)すると、保持ポリシーと削除ポリシーに対するより具体的なターゲット設定が可能になります。 たとえば、管理者による自動アプリケーションに加えて、エンド ユーザーが手動で適用できるドキュメントまたは電子メール メッセージ レベルの場合です。 SharePoint のドキュメント ライブラリ、フォルダー、またはドキュメント セットに保持ラベルを適用して、その場所に保存されているすべてのドキュメントが既定の保持ラベルを継承することもできます。
+保持ポリシーはコンテナー レベルのすべてのアイテム (SharePoint サイト、ユーザー メールボックスなど) に自動的に適用されるのに対し、保持[](retention.md#retention-labels)ラベルは SharePoint ドキュメントや電子メール メッセージなどの個々のアイテムに適用されます。 これらのラベルは、手動または自動で適用できます。
 
-さらに、保持ラベルは、コンテンツ [をレコードとしてマーク](records-management.md) するレコード管理をサポートします。 この場合、ラベルは、組織が規制要件を遵守するために必要になる可能性のあるコンテンツに追加の制限を設定します。
+保持ラベルは、ガバナンス情報戦略の一部として使用して、必要な情報を保持し、不要な情報を削除できます。 特定のドキュメントまたは電子メールで異なる保持設定または削除設定が必要な場合に、保持ポリシーに例外が必要な場合は、これらのラベルを使用します。 たとえば、SharePointポリシーは 3 年間すべてのドキュメントを保持しますが、特定のビジネス ドキュメントは 5 年間保持する必要があります。 詳細については、「アイテム保持 [ポリシーの例外の保持ラベルを作成する」を参照してください](create-retention-labels-information-governance.md)。
 
-保持ラベルを作成および発行する手順については、次のガイダンスを参照してください。
-- [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
-- [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
-
-レコード管理を開始するには、「レコード管理の開始 [」を参照してください](get-started-with-records-management.md)。
+ただし、保持ラベルをレコード [管理と一](records-management.md)緒に使用する場合は、ドキュメントと電子メールのライフサイクル全体をサポートするために、より多くの管理オプションを提供します。 このレベルのデータ管理は、ビジネス、法務、または規制の記録保持要件の価値の高いアイテムに適しています。 詳細については、「レコード管理の [開始」を参照してください](get-started-with-records-management.md)。
 
 ### <a name="identify-and-define-sensitive-information-types"></a>機密情報の種類を特定して定義する
 

@@ -2,8 +2,8 @@
 title: 非アクティブなメールボックスの保持期間を変更する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/29/2017
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: メールボックスをOffice 365した後、非アクティブなメールボックスに割り当てられている保持ポリシーまたは保持ポリシー Office 365期間を変更します。
-ms.openlocfilehash: 1698a252cad4cebcb09b7c3695b2cecf3184ba1f
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: bf1131aa0d14222bec7ab1c94983925cfe39e673
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144976"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241613"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>非アクティブなメールボックスの保持期間を変更する
 

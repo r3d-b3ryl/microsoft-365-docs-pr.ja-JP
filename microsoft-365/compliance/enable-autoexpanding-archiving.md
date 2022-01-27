@@ -1,9 +1,9 @@
 ---
-title: 自動拡張アーカイブを有効にする - 管理者ヘルプ
+title: 自動拡張アーカイブを有効にする
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,16 +19,16 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: '管理者向け: Exchange Online 自動拡張アーカイブを有効にする方法について説明します。 組織全体に対し、または特定のユーザーだけに対し、自動拡張アーカイブを有効にすることができます。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 865a21e27034490b7b9da476d359ce135962d604
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c6f1514ed4bb9c12ac666b366cab91358216357a
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110885"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241625"
 ---
-# <a name="enable-auto-expanding-archiving---admin-help"></a>自動拡張アーカイブを有効にする - 管理者ヘルプ
+# <a name="enable-auto-expanding-archiving"></a>自動拡張アーカイブを有効にする
 
-自動拡張アーカイブ機能Exchange Onlineを使用して、アーカイブ メールボックスの追加の記憶域を有効にできます。 自動拡張アーカイブを有効にすると、ユーザーのアーカイブ メールボックスが 1.5 TB の記憶域制限に達するまで、追加の記憶域が自動的にユーザーのアーカイブ メールボックスに追加されます。 組織の全ユーザーに対し、または特定のユーザーだけに対し、自動拡張アーカイブを有効にすることができます。 自動拡張アーカイブの詳細については、「自動拡張アーカイブの概要」 [を参照してください](autoexpanding-archiving.md)。
+自動拡張アーカイブ機能Exchange Onlineを使用して、アーカイブ メールボックスの追加の記憶域を有効にできます。 自動拡張アーカイブを有効にすると、ユーザーのアーカイブ メールボックスが 1.5 TB の記憶域制限に達するまで、追加の記憶域が自動的にユーザーのアーカイブ メールボックスに追加されます。 組織の全ユーザーに対し、または特定のユーザーだけに対し、自動拡張アーカイブを有効にすることができます。 自動拡張アーカイブの詳細については、「自動拡張アーカイブについて」 [を参照してください](autoexpanding-archiving.md)。
 
 ## <a name="before-you-enable-auto-expanding-archiving"></a>自動拡張アーカイブを有効にする前に
 
@@ -127,7 +127,7 @@ Get-Mailbox -InactiveMailboxOnly | FL UserPrincipalName,AutoExpandingArchiveEnab
 
 - 自動拡張アーカイブは、オンプレミスのプライマリメールボックスを持つユーザーについて、Exchange ハイブリッド展開のクラウド ベースのアーカイブ メールボックスでサポートされています。 ただし、クラウド ベースのアーカイブ メールボックスに対して自動拡張アーカイブを有効にした後は、そのアーカイブ メールボックスをオフボードしてオンプレミスの Exchange 組織に戻すことはできません。 自動拡張アーカイブは、任意のバージョンのメールボックスのオンプレミス メールボックスExchange Server。
 
-- ユーザーがアーカイブ メールボックス内の追加の記憶域内のアイテムにアクセスするために使用できる Outlook クライアントの一覧については、「自動拡張アーカイブの概要」の「自動拡張アーカイブ内のアイテムにアクセスする Outlook 要件[](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)」セクションを参照してください。
+- ユーザーがアーカイブ メールボックス内の追加の記憶域内のアイテムにアクセスするために使用できる Outlook クライアントの一覧については、「自動拡張アーカイブのアイテムにアクセスする Outlook 要件」の「自動拡張アーカイブについて」を[](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)参照してください。
 
 - 前述のように、**Enable-Mailbox -AutoExpandingArchive** コマンドを実行すると、ユーザーのプライマリ アーカイブ メールボックス (および、メールボックスが保留中の場合は、[回復可能なアイテム] フォルダー) の記憶領域のクォータ に 10 GB が追加されます。 これにより、自動拡張記憶領域がプロビジョニングされるまで (最大で30 日間かかります)、追加の記憶領域が提供されます。 **Set-OrganizationConfig -AutoExpandingArchive** を実行して組織のすべてのメールボックスに対して自動拡張アーカイブを有効化した場合は、追加記憶領域は追加されません。 自動拡張アーカイブを組織全体に対して有効化した場合でも、特定のユーザーの記憶領域に 10 GB を追加する必要がある場合は、そのメールボックスに対して **Enable-Mailbox -AutoExpandingArchive** コマンドを実行できます。 自動拡張アーカイブが既に有効化されているというエラー メッセージが表示されますが、メールボックスには追加記憶領域が追加されます。
 

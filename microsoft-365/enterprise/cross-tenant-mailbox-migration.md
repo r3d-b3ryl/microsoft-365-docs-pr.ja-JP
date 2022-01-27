@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: b11eef14b36bd7e7ece14cf2b55424b52a0422da
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: bff8af115f23db7fe152ed6ee06e62d128f2b9e4
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218923"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242001"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -145,6 +145,11 @@ ms.locfileid: "62218923"
    > 作成したメールボックス移行アプリのアプリケーション ID と、このプロセス中に構成したパスワード (シークレット) が必要です。 また、エンドポイントを使用Microsoft 365クラウド インスタンスの種類によっては、異なる場合があります。 [エンドポイントの[Microsoft 365]](/microsoft-365/enterprise/microsoft-365-endpoints)ページを参照し、テナントの適切なインスタンスを選択し、[必須アドレスの最適化] Exchange Onlineを確認し、必要に応じて置き換える必要があります。
 
    ```powershell
+   
+   # Enable customization if tenant is dehydrated
+     $dehydrated=Get-OrganizationConfig | fl isdehydrated
+     if ($dehy -eq $true) {Enable-OrganizationCustomization}
+     
    $AppId = "[guid copied from the migrations app]"
 
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
@@ -236,7 +241,7 @@ ms.locfileid: "62218923"
 
      MailUser **オブジェクト** の例:
 
-     | 属性            | 値                                                                                                                   |
+     | 属性            | Value                                                                                                                   |
      | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
      | Alias                | LaraN                                                                                                                   |
      | RecipientType        | MailUser                                                                                                                |
@@ -255,7 +260,7 @@ ms.locfileid: "62218923"
 
      ソース **メールボックス オブジェクト** の例:
 
-     | 属性            | 値                                                                   |
+     | 属性            | Value                                                                   |
      | -------------------- | ----------------------------------------------------------------------- |
      | Alias                | LaraN                                                                   |
      | RecipientType        | UserMailbox                                                             |

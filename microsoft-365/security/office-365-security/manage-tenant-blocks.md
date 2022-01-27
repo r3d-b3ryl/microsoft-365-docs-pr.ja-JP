@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧でブロックを構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4e3af53e4cf6776627e7d8c25f41e241f37add8e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cb4bdef35928a3a2672c6897676d3c90932bd7ec
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174317"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241785"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの禁止リストを追加する
 
@@ -52,6 +52,9 @@ ms.locfileid: "60174317"
 
 4. 完了したら、**[追加]** をクリックします。
 
+> [!NOTE]
+> これらの送信者からのメールはスパムとしてブロック *されます*。 
+
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧でブロック URL エントリを作成する
 
 1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
@@ -69,6 +72,9 @@ ms.locfileid: "60174317"
    - **省略可能な** メモ: エントリの説明テキストを入力します。
 
 4. 完了したら、**[追加]** をクリックします。
+
+> [!NOTE]
+> これらの URL を含むメールは、フィッシングとしてブロック *されます*。 
 
 ### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧でブロック ファイル エントリを作成する
 
@@ -88,9 +94,12 @@ ms.locfileid: "60174317"
 
 4. 完了したら、**[追加]** をクリックします。
 
+> [!NOTE]
+> これらのファイルを含む電子メールはマルウェアとしてブロック *されます*。 
+
 ### <a name="create-spoofed-sender-block-entries"></a>スプーフィングされた送信者ブロック エントリを作成する
 
-**注意**:
+**注**:
 
 - スプー _フィング_ されたユーザーと、ドメイン ペアで定義されている送信インフラストラクチャの組み合わせだけが、スプーフィングを許可またはブロックされます。
 - ドメイン ペアの許可エントリまたはブロック エントリを構成すると、そのドメイン ペアからのメッセージはスプーフィング インテリジェンスインサイトに表示されなくなりました。

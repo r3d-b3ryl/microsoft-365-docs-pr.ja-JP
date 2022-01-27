@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスの機能を計画、移行、および実装するためのステップバイステップのツールを取得します。 サービスまたは実行する必要があるアプリをセットアップするガイドを見つける。
-ms.openlocfilehash: 893ee5716621d988d006f9f3a67b183da3f65b14
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: 9d8533b8a10535e79e0e42c546df72b6714d690a
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218983"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241953"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -161,6 +161,15 @@ Exchange Online Protection セットアップ[ガイド](https://aka.ms/EOPguida
 ### <a name="microsoft-defender-for-identity-setup-guide"></a>Microsoft Defender for Identity セットアップ ガイド
 
 [Microsoft Defender for Identity セットアップ ガイド](https://aka.ms/DefenderforIdentitysetup)には、ユーザー ID を侵害する可能性のある高度な脅威を特定、検出、および調査するためのセキュリティ ソリューションセットアップ ガイダンスが提供されています。 これには、不審なユーザーアクティビティの検出や、組織に向けられた悪意のあるインサイダーアクションが含まれます。 Defender for Identity インスタンスを作成し、組織の Active Directory に接続し、センサー、アラート、通知を設定し、独自のポータルの基本設定を構成します。
+
+### <a name="insider-risk-solutions-setup-guide"></a>Insider リスク ソリューションのセットアップ ガイド
+
+[Insider リスク ソリューションのセットアップ ガイドは](https://aka.ms/Insiderrisksetup)、組織を特定するのが困難で、軽減が困難なインサイダー リスクから組織を保護するのに役立ちます。 インサイダーリスクは、さまざまな分野で発生し、知的財産の喪失から職場での嫌がらせなど、組織にとって大きな問題を引き起こす可能性があります。
+
+このガイドのソリューションは、組織全体からのネイティブシグナルやエンリッチメントとのユーザー アクティビティ、アクション、コミュニケーションを可視化するのに役立ちます。
+
+* コミュニケーション コンプライアンス ソリューションを使用すると、職場での暴力、インサイダー取引、ハラスメント、行動規範、規制コンプライアンス違反など、コミュニケーション リスクを特定し、行動できます。
+* インサイダー リスク管理ソリューションは、知的財産の盗難、機密性の高いデータ漏洩、セキュリティ違反、データ流出、機密性の侵害に対するリスクを特定、調査、および実行するのに役立ちます。
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Microsoft Information Protection セットアップ ガイド
 

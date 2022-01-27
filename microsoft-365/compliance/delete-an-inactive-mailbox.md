@@ -2,8 +2,8 @@
 title: 非アクティブなメールボックスを削除する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: 非アクティブなメールボックスの内容を保持する必要がなくなったMicrosoft 365、非アクティブなメールボックスを完全に削除できます。
-ms.openlocfilehash: 386e03bd9518f0db9c37a306c71d0cd9c4230e3a
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 71223c0b5f53e03d51797e32f249f24146e96dee
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61127970"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242085"
 ---
 # <a name="delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する
 

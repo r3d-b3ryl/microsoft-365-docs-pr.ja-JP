@@ -2,8 +2,8 @@
 title: 非アクティブなメールボックスの詳細情報
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: メールボックスを非アクティブなメールボックスに変換して、元の従業員のメールボックスコンテンツを保持する方法について説明します。
-ms.openlocfilehash: 5aa20b780ed49edcbd46770c9f7f470bf9bb0db1
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: 72d048bc99876c0f252feffe3159d3ce01303028
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202139"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241517"
 ---
 # <a name="learn-about-inactive-mailboxes"></a>非アクティブなメールボックスの詳細情報
 

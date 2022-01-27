@@ -12,6 +12,8 @@
   items:
     - name: ポータル のセキュリティを構成する
       href: m365-lighthouse-configure-portal-security.md
+    - name: 監査ログの確認
+      href: m365-lighthouse-review-audit-logs.md
 - name: ベースラインを使用して顧客を保護する
   items:
     - name: 基準計画を使用した標準テナント構成の展開の概要

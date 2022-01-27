@@ -2,8 +2,8 @@
 title: 非アクティブなメールボックスを作成および管理する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: 削除されたメールボックスの内容を保持する非アクティブなメールボックスを作成および管理Microsoft 365。
-ms.openlocfilehash: 13b6d883c6c74b2bc674c4f0fd2bd84316d95179
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 18bcc4c69fc15ea44253bbc4b0f5d5813cc23085
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283475"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241845"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>非アクティブなメールボックスを作成および管理する
 

@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 複数地域の環境内SharePoint別の地域の場所にサイトを移動し、ユーザーに変更の期待を伝える方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: adfa96822e31dce43b95a6eebc54b5f4698bdcca
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 6ccbe708c0fcfb51c1a28b354d8438e526815cec
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560746"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242037"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -62,6 +62,7 @@ SharePoint サイトの移動を事前にスケジュールすることができ
 
 - 一度に最大 4,000 件の移動をスケジュールすることができます。
 - 移動開始後はスケジュールを追加でき、常時最大 4,000 件の保留中の移動をキューに置いておけます。
+- 移動できるサイトSharePointの最大サイズは 1 テラバイト (1 TB) です。
 
 SharePoint サイトの地域移動を後でスケジュール設定するには、移動開始時に次のいずれかのパラメーターを含みます:
 
