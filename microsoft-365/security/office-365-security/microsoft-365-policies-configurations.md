@@ -20,25 +20,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: 96aeb70da1bf31ca48858bef8db08911157ece71
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 01fb2a01903eba98f9659d0fd6d85fff4507d72f
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121237"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244693"
 ---
-# <a name="zero-trust-identity-and-device-access-configurations"></a>ゼロ信頼 ID とデバイス アクセス構成
-
-**適用対象**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
-
-<!--
-The modern security perimeter of your organization now extends beyond your network to include users accessing cloud-based apps from any location with a variety of devices. Your security infrastructure needs to determine whether a given access request should be granted and under what conditions.
-
-This determination should be based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
-
---> 
+# <a name="zero-trust-identity-and-device-access-configurations"></a>ゼロ トラスト ID とデバイスのアクセス構成
 
 組織のテクノロジ リソースとサービスへのアクセスを分離および制限するためにネットワーク ファイアウォールと仮想プライベート ネットワーク (VPN) に依存するセキュリティ アーキテクチャは、従来の企業ネットワーク境界を超えて存在するアプリケーションやリソースへのアクセスを定期的に必要とする従業員には十分ではありません。
 
@@ -248,6 +237,6 @@ Windows 11 または Windows 10のMicrosoft 365 Apps for enterpriseは、PC に�
 
 ゼロトラスト ID とデバイス アクセスを構成した後は[、Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)機能展開ガイドを参照して、考慮すべき追加機能の段階的チェックリストと、アクセスの保護、監視、および監査を行う[Azure AD Identity Governance](/azure/active-directory/governance/)を参照してください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [ゼロトラスト ID とデバイス アクセス ポリシーを実装するための前提条件作業](identity-access-prerequisites.md)

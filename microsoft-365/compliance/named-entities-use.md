@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: データ損失防止ポリシーで名前付きエンティティを利用するには、次の手順を使用します。
-ms.openlocfilehash: 75a203b578217c5bbc1e8f67cf04b8d564735bd0
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 5d81f216ddd86816148220c178b991db4e4803b0
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560434"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245101"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
 
@@ -80,16 +80,16 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの作
 |ワークロード/サービス  |名前付きエンティティのパブリック プレビューのサポート  |
 |---------|---------|
 |Office Win32 クライアント ポリシーヒント    |サポートなし  |
-|Office WAC クライアント ポリシーヒント    |されていません         |
+|Office WAC クライアント ポリシーヒント    |サポートされる         |
 |OWA ポリシーヒント     |サポートなし         |
 |Outlookポリシーヒント     |サポートなし |
-|エンドポイント (Windows 10デバイス)     |サポートなし  |
+|エンドポイント (Windows 10デバイス)     |サポートされる  |
 |Exchange トランスポート ルール     |サポートなし |
-|OneDrive for Business保存時のデータ     |されていません         |
-|SharePointオンライン データの保存     |されていません         |
-|Teams保存時のデータ     |されていません         |
+|OneDrive for Business保存時のデータ     |サポート対象         |
+|SharePointオンライン データの保存     |サポートされる         |
+|Teams保存時のデータ     |サポート対象         |
 |電子メール メッセージの保存時のデータ     |サポートなし         |
-|Microsoft Defender for Cloud Apps     |されていません         |
+|Microsoft Defender for Cloud Apps     |サポートされる         |
 
 ### <a name="autolabeling"></a>自動ラベル付け
 
@@ -98,11 +98,11 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの作
 |Office Win32 クライアントをオフラインにする   |サポートされている場合、ユーザーはラベルを選択して手動で適用する必要があります |
 |オンライン Office Win32 クライアント|古い信頼度スキームでサポートされる |
 |Outlookオンライン   |古い信頼度スキームでサポートされる  |
-|Office WAC クライアント     |されていません |
+|Office WAC クライアント     |サポート対象 |
 |OWA     |サポート対象 |
 |Exchangeトランスポート     |サポートなし |
-|OneDrive for Business保存時のデータ     |されていません |
-|SharePointオンライン データの保存|されていません|
+|OneDrive for Business保存時のデータ     |サポート対象 |
+|SharePointオンライン データの保存|サポート対象|
 |Azure Information Protection (AIP) スキャナー|サポートなし|
 
 ## <a name="known-issues"></a>既知の問題

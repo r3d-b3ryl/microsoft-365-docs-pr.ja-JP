@@ -13,14 +13,16 @@ ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 26643ebf57b8d19499b5d8c0d0c9d0512f0d1866
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 50dbe395bee852601aae8e834514c6bbac3dd84d
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156414"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245053"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 の概要
 
@@ -76,10 +78,10 @@ Defender for Endpoint Plan 1 には、次の機能が含まれています。
 
 | ファイル/デバイス | アクション | 説明 |
 |:---|:---|:---|
-| デバイス | ウイルス対策スキャンの実行 | ウイルス対策スキャンを開始します。 デバイスで脅威が検出された場合、ウイルス対策スキャン中にこれらの脅威に対処する場合が多い。 |
-| デバイス | デバイスの分離 | Defender for Endpoint への接続を維持しながら、組織のネットワークからデバイスを切断します。 このアクションを使用すると、デバイスを監視し、必要に応じてさらにアクションを実行できます。 |
-| File | 停止と検疫 |プロセスの実行を停止し、関連ファイルを検疫します。 |
-| File | ファイルをブロックまたは許可するインジケーターを追加する | ブロックインジケーターは、ポータブル実行可能ファイルがデバイスで読み取り、書き込み、または実行されるのを防ぐ。 <p>許可インジケーターは、ファイルがブロックまたは修復されるのを防ぐ。 |
+| Device | ウイルス対策スキャンの実行 | ウイルス対策スキャンを開始します。 デバイスで脅威が検出された場合、ウイルス対策スキャン中にこれらの脅威に対処する場合が多い。 |
+| Device | デバイスの分離 | Defender for Endpoint への接続を維持しながら、組織のネットワークからデバイスを切断します。 このアクションを使用すると、デバイスを監視し、必要に応じてさらにアクションを実行できます。 |
+| ファイル | 停止と検疫 |プロセスの実行を停止し、関連ファイルを検疫します。 |
+| ファイル | ファイルをブロックまたは許可するインジケーターを追加する | ブロックインジケーターは、ポータブル実行可能ファイルがデバイスで読み取り、書き込み、または実行されるのを防ぐ。 <p>許可インジケーターは、ファイルがブロックまたは修復されるのを防ぐ。 |
 
 詳細については、次の記事を参照してください。
 
@@ -118,7 +120,7 @@ Defender for Endpoint の攻撃表面縮小機能の詳細については、「�
 
 詳細については、「フォルダー アクセスを [制御して重要なフォルダーを保護する」を参照してください](controlled-folders.md)。
 
-### <a name="device-control"></a>デバイス制御
+### <a name="device-control"></a>デバイス コントロール
 
 組織のデバイスに対する脅威は、USB ドライブなどのリムーバブル ドライブ上のファイルの形式で受け取る場合があります。 Defender for Endpoint には、承認されていない周辺機器からの脅威がデバイスを侵害するのを防ぐための機能が含まれています。 Defender for Endpoint を構成して、リムーバブル デバイス上のリムーバブル デバイスとファイルをブロックまたは許可できます。 
 
@@ -129,7 +131,7 @@ Defender for Endpoint の攻撃表面縮小機能の詳細については、「�
 Web 保護を使用すると、Web の脅威や望ましくないコンテンツから組織のデバイスを保護できます。 Web 保護には、Web 脅威保護と Web コンテンツ フィルターが含まれます。
 
 - [Web 脅威保護は](web-threat-protection.md) 、フィッシング サイト、マルウェア ベクター、悪用サイト、信頼されていないサイトまたは低評価サイト、および明示的にブロックするサイトへのアクセスを防止します。
-- [Web コンテンツ フィルター](web-content-filtering.md) (プレビュー) では、カテゴリに基づいて特定のサイトにアクセスできません。 カテゴリには、アダルト コンテンツ、レジャー サイト、法的責任サイトなどがあります。
+- [Web コンテンツ フィルターでは、](web-content-filtering.md) カテゴリに基づいて特定のサイトにアクセスできません。 カテゴリには、アダルト コンテンツ、レジャー サイト、法的責任サイトなどがあります。
 
 詳細については、「Web 保護」 [を参照してください](web-protection-overview.md)。
 
@@ -167,7 +169,7 @@ Defender for Endpoint Plan 1 には Microsoft 365 Defender ポータルが含ま
 
 詳細については、「役割ベースのアクセス [制御を使用してポータル アクセスを管理する」を参照してください](rbac.md)。
 
-### <a name="reporting"></a>レポート
+### <a name="reporting"></a>Reporting
 
 このMicrosoft 365 Defenderポータル ( ) は、検出された脅威に関する情報や、それらの脅威に対処するアクション [https://security.microsoft.com](https://security.microsoft.com) に簡単にアクセスできます。 
 

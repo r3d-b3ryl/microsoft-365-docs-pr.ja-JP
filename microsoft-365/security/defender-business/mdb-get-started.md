@@ -16,13 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
+- m365initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 5df69a578c5f4d3db7c366a0369e7efdbf934b79
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 38c43f8b097ceff26ff0a5c354dca3f4e2c4ae2f
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61904787"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245257"
 ---
 # <a name="get-started-using-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business の使用を開始する (プレビュー)
 

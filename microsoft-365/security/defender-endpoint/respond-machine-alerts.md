@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 133bdc1e14c9e4b0c93ea190b4a6c58a529b2f16
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f6bce3370c5b59a6c120b810446bf16cd5364634
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940309"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244717"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -109,7 +109,7 @@ ms.locfileid: "61940309"
 
 ****
 
-|Folder|説明|
+|フォルダー|説明|
 |---|---|
 |自動実行|デバイス上での攻撃者の永続性を識別するために、既知の自動開始エントリ ポイント (ASEP) のレジストリの内容を表す一連のファイルが格納されています。 <p> <div class="alert"><b>注:</b> レジストリ キーが見つからない場合、ファイルには次のメッセージが含まれます。"ERROR: システムは、指定されたレジストリ キーまたは値を見つかりませんでした。<div>|
 |インストールされているプログラム|この.CSVファイルには、デバイスに現在インストールされているプログラムを特定するのに役立つインストール済みプログラムの一覧が含まれている。 詳細については、「Win32_Product [クラス」を参照してください](https://go.microsoft.com/fwlink/?linkid=841509)。|
@@ -227,5 +227,5 @@ Microsoft の脅威の専門家に相談して、潜在的に侵害されたデ�
 ## <a name="see-also"></a>関連項目
 
 - [ファイルの対応措置を講じる](respond-file-alerts.md)
-- [Microsoft Defender for Endpoint Plan 1 の手動応答アクション (プレビュー)](defender-endpoint-plan-1.md#manual-response-actions)
+- [Microsoft Defender for Endpoint Plan 1 の手動応答アクション](defender-endpoint-plan-1.md#manual-response-actions)
 - [レポートの不正確さ](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

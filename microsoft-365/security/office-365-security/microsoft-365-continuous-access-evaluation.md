@@ -9,7 +9,6 @@ ms.topic: article
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
@@ -19,18 +18,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: f0fc824b4498e2cde0e0c024902289f056396f55
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 376b15a6faa84b26ab7e48356e54c0456da16072
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035716"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244669"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>ユーザーの継続的なアクセスMicrosoft 365
-
-**適用対象**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
 認証に OAuth 2.0 を使用する最新のクラウド サービスは、従来、ユーザー アカウントのアクセスを取り消すアクセス トークンの有効期限に依存しています。 実際には、管理者がユーザー アカウントのアクセスを取り消した場合でも、ユーザーはアクセス トークンの有効期限が切れるまでアクセス権を持ち続け、既定では Microsoft 365 の場合は、最初の失効イベントが発生した後、最大 1 時間後に使用されます。
 
@@ -89,7 +84,7 @@ Microsoft は、継続的なアクセス評価Microsoft 365サポートするた
 |---|---|---|---|
 |**重要なイベント:**||||
 |ユーザーの失効|サポート|サポート|サポート|
-|ユーザーのリスク|サポート|非サポート|サポート対象外|
+|ユーザーのリスク|サポート|サポート対象外|サポート対象外|
 |**条件付きアクセス ポリシーの評価:**||||
 |IP アドレスの場所ポリシー|サポート|サポートされている\*|サポートされている|
 |

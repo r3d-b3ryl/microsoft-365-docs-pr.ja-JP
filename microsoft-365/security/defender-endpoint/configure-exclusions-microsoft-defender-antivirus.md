@@ -14,13 +14,15 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 6ea89e3e062cfa0ab5a4bd684fed309a041db769
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: 5a26951535b6e2197d8ada45b2108e62f15fda03
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168284"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245149"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>スキャンの除外を構成およびMicrosoft Defender ウイルス対策する
 

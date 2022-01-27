@@ -19,20 +19,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 4e028d149e74eac69389b545ea76a034589c253e
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
-ms.translationtype: HT
+ms.openlocfilehash: cf3e2eaf764dee35593b220d444dbf68bcabb037
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122059"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245161"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項
-
-**適用対象**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
-- SharePoint Online 
-
 
 この記事では、SharePoint とOneDrive for Business を保護するために推奨されるゼロ トラスト ID とデバイス アクセス ポリシーを実装する方法について説明します。 このガイダンスは[共通 ID およびデバイス アクセス ポリシー](identity-access-policies.md)に基づいています。
 

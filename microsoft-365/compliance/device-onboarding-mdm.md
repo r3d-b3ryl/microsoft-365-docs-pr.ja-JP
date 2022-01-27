@@ -1,5 +1,5 @@
 ---
-title: モバイル Windows 10ツールWindows使用して 11 台のデバイスをオンボードおよびインストールする
+title: モバイル デバイス管理ツールを使用した Windows 10 および Windows 11 デバイスのオンボード
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -15,19 +15,19 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: モバイル デバイス管理ツールを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: 1454afceb8537cdb88b75f99924a5d6475e117cc
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 1db4441f6411d6e3c623dbf5daa31c4028729e7e
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950859"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244897"
 ---
-# <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>モバイル Windows 10ツールWindows使用して 11 台のデバイスをオンボードおよびインストールする
+# <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>モバイル デバイス管理ツールを使用した Windows 10 および Windows 11 デバイスのオンボード
 
 **適用対象:**
 
-- [Microsoft 365 エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
+- [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 モバイル デバイス管理 (MDM) ソリューションを使用してデバイスを構成できます。 Microsoft 365情報保護は、デバイスを管理するためのポリシーOMA-URIs作成するための情報を提供することで、MDM をサポートします。
 
@@ -61,6 +61,8 @@ Intune の指示に [従います](/intune/advanced-threat-protection)。
 
 5. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 *"-MM-DD.offboarding DeviceCompliance_valid_until_YYYYという名前のファイルが必要です*。
 
+
+
 6. 次のサポートMicrosoft Intune OMA-URI 設定を展開するには、次のカスタム構成ポリシーを使用します。
 
     ```text
@@ -68,8 +70,8 @@ Intune の指示に [従います](/intune/advanced-threat-protection)。
     Date type: String
     Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
     ```
-
-ポリシー設定の詳細については、「Microsoft Intuneのポリシー設定[Windows 10」を参照Microsoft Intune。](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+> [!NOTE]
+> Microsoft Defender for Endpoint が既に構成されている場合は、デバイスオンボーディングを有効にでき、手順 6 は不要になります。
 
 > [!NOTE]
 > オフ **ボードデバイスの正常性状態** ポリシーでは、読み取り専用プロパティが使用され、修復できません。

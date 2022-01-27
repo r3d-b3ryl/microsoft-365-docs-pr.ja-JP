@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 12/13/2021
+ms.date: 01/26/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,13 +15,14 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 42cd947dec6e954ae675cda233dc4126c2bb2b39
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+- m365initiative-defender-business
+- m365-security-compliance
+ms.openlocfilehash: b2337ddf5367242d077fb2f75fa45eaa6262e6d9
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507436"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245113"
 ---
 # <a name="compare-microsoft-defender-for-business-preview-to-microsoft-365-business-premium"></a>Microsoft Defender for Business (プレビュー) と Microsoft Defender Microsoft 365 Business Premium
 
@@ -57,9 +58,9 @@ Microsoft は、中小企業向けのさまざまなプランを含む、さま�
 | マルウェア対策保護 | はい (デバイスの場合) | はい (メッセージMicrosoft 365添付ファイルなどの電子メール コンテンツの場合) |
 | [次世代の保護](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (ウイルス対策とマルウェア対策の保護) | はい (Microsoft Defender ウイルス対策は、Windows 10以降に含まれます)  | はい (Microsoft Defender ウイルス対策は、Windows 10以降に含まれます) |
 | [攻撃面の減少](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(攻撃表面の縮小ルールと他の保護)  | はい (攻撃表面の縮小ルールは、Windows 10以降に組み込み、さらに集中管理された機能) | はい (攻撃表面の縮小ルールは、Windows 10以降に組み込む) |
-| [エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md) | はい。 含まれる内容: <br/>- 動作ベースの検出 <br/>- 手動応答アクション <br/>- ライブ応答   | いいえ |
-| [自動調査および対応](../defender-endpoint/automated-investigations.md) | はい | いいえ |
-| [脅威と脆弱性の管理](../defender-endpoint/tvm-dashboard-insights.md) | はい | いいえ |
+| [エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md) | はい。 含まれる内容: <br/>- 動作ベースの検出 <br/>- 手動応答アクション <br/>- ライブ応答   | 不要 |
+| [自動調査および対応](../defender-endpoint/automated-investigations.md) | はい | 不要 |
+| [脅威と脆弱性の管理](../defender-endpoint/tvm-dashboard-insights.md) | はい | 不要 |
 | 集中管理とレポート作成 | はい。 クライアント デバイスWindowsオンボーディングして、Microsoft 365 Defender ポータル ( ) で管理するか、または () でデバイス [https://security.microsoft.com](https://security.microsoft.com) を管理Microsoft エンドポイント マネージャーできます [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 。 | はい。 クライアント デバイスのWindows管理するには、Microsoft 365 管理センター ( ) を使用 [https://admin.microsoft.com](https://admin.microsoft.com) します。 デバイスは、Microsoft エンドポイント マネージャー ( ) でオンボードする必要があります [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 。 |
 | [API](../defender-endpoint/apis-intro.md) <br/>(カスタム アプリやレポート ソリューションと統合できます)  | はい | はい |
 
@@ -72,18 +73,18 @@ Defender for Business (プレビュー) は、Defender for Endpoint のエンタ
 | 機能/機能 | [Defender for Business](mdb-overview.md) (プレビュー) | [Defender for Endpoint プラン 1](../defender-endpoint/defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md) |
 |:---|:---|:---|
 | [集中管理](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup> | はい | はい | はい |
-| [簡略化されたクライアント構成](mdb-simplified-configuration.md) | はい | いいえ | いいえ |
-| [脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) | はい | いいえ | はい |
+| [簡略化されたクライアント構成](mdb-simplified-configuration.md) | はい | 不要 | 不要 |
+| [脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) | はい | 不要 | はい |
 | [攻撃表面の縮小機能](../defender-endpoint/overview-attack-surface-reduction.md) | はい | はい | はい |
 | [次世代の保護](../defender-endpoint/next-generation-protection.md) | はい | はい | はい |
-| [エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md) | は <sup>い [[2](#fn2)]</sup> | いいえ | はい |
-| [自動調査および対応](../defender-endpoint/automated-investigations.md) | は <sup>い [[2](#fn2)]</sup> | いいえ | はい |
-| [脅威の検出](../defender-endpoint/advanced-hunting-overview.md) と 6 か月のデータ保持 | いいえ | いいえ | はい |
-| [脅威の分析](../defender-endpoint/threat-analytics.md) | は <sup>い [[2](#fn2)]</sup> | いいえ | はい |
+| [エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md) | は <sup>い [[2](#fn2)]</sup> | 不要 | はい |
+| [自動調査および対応](../defender-endpoint/automated-investigations.md) | は <sup>い [[2](#fn2)]</sup> | 不要 | はい |
+| [脅威の検出](../defender-endpoint/advanced-hunting-overview.md) と 6 か月のデータ保持 | 不要 | 不要 | はい |
+| [脅威の分析](../defender-endpoint/threat-analytics.md) | は <sup>い [[2](#fn2)]</sup> | 不要 | はい |
 | [クロスプラットフォームのサポート](../defender-endpoint/minimum-requirements.md) <br/>(Windows macOS、iOS、および Android OS) | は <sup>い [[3](#fn3)]</sup> | はい | はい |
-| [Microsoft 脅威エキスパート](../defender-endpoint/microsoft-threat-experts.md) | いいえ | いいえ | はい |
+| [Microsoft 脅威エキスパート](../defender-endpoint/microsoft-threat-experts.md) | 不要 | 不要 | はい |
 | パートナー API | はい | はい | はい |
-| [Microsoft 365 Lighthouse統合](../../lighthouse/m365-lighthouse-overview.md) <br/>(顧客テナント間でセキュリティ インシデントを表示する場合) | はい | いいえ | いいえ |
+| [Microsoft 365 Lighthouse統合](../../lighthouse/m365-lighthouse-overview.md) <br/>(顧客テナント間でセキュリティ インシデントを表示する場合) | はい | 不要 | 不要 |
 
 (<a id="fn1">1</a>) Microsoft 365 Defender ポータル ( ) または別のツール (Microsoft エンドポイント マネージャー など) でデバイス [https://security.microsoft.com](https://security.microsoft.com) をオンボードおよび管理 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) します。
 

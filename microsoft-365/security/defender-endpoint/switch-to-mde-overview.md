@@ -17,17 +17,18 @@ ms.collection:
 - m365solution-overview
 - m365solution-mcafeemigrate
 - m365solution-symantecmigrate
-ms.topic: conceptual
+- m365initiative-defender-endpoint
+ms.topic: overview
 ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 5e40d1b7d8470d6d5e76202aa85324b690b8eeaa
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: eb0971c6f5b8fd8bf37f3d33cb65cff8d331e0d0
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221557"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245305"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint への切り替え
 
@@ -68,11 +69,11 @@ Defender for Endpoint への移行プロセスは、次の表に示す 3 つの�
 |[エンドポイントでの検出と対応](overview-endpoint-detection-response.md)|エンドポイントの検出および応答機能は、侵入の試みとアクティブな侵害を検出、調査、および対応します。|
 |[高度な追求](advanced-hunting-overview.md)|高度な検出機能により、セキュリティ運用チームは既知または潜在的な脅威のインジケーターとエンティティを検索できます。|
 |[動作ブロックと封じ込め](behavioral-blocking-containment.md)|動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作に基づいて脅威を特定し、停止し、ツリーを処理するのに役立ちます。|
-|[調査と修復の自動化](automated-investigations.md)|自動調査および応答機能は、アラートを調べ、侵害を解決するために直ちに修復アクションを実行します。|
+|[自動調査と修復](automated-investigations.md)|自動調査および応答機能は、アラートを調べ、侵害を解決するために直ちに修復アクションを実行します。|
 |[脅威の検出サービス](microsoft-threat-experts.md)(Microsoft 脅威エキスパート)|脅威検出サービスは、セキュリティ運用チームに専門家レベルの監視と分析を提供し、重要な脅威を見逃しなくするために役立ちます。|
 
 **詳細については、次の情報を参照してください。「Defender [for Endpoint」を参照してください](microsoft-defender-endpoint.md)。**
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 - 移行の [準備に進みます](switch-to-mde-phase-1.md)。

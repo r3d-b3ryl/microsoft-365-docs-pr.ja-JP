@@ -19,23 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 564915b6f27f0d4038f4b6c738c377c700b09ab1
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: ba9694be615f0c669ed0b9c319909551ccf02315
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121747"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244621"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>ゼロトラスト ID とデバイス アクセス ポリシーを実装するための前提条件作業
 
-**適用対象**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
-- Azure
-
 この記事では、管理者が推奨されるゼロトラスト ID とデバイス アクセス ポリシーを使用し、条件付きアクセスを使用するために満たす必要がある前提条件について説明します。 また、最高のシングル サインオン (SSO) エクスペリエンスを得るクライアント プラットフォームを構成するための推奨される既定値について説明します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須条件
 
 推奨されるゼロトラスト ID およびデバイス アクセス ポリシーを使用する前に、組織は前提条件を満たす必要があります。 要件は、次に示すさまざまな ID モデルと認証モデルで異なります。
 
@@ -101,10 +96,10 @@ BYOD デバイスWindows、ユーザーは [仕事または学校の **アカウ
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|[OneDrive 同期クライアント](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
 |Windows 11 または Windows 10|サポート|サポート|該当なし|該当なし|サポート|
-|Windows 8.1|サポート|サポート|該当なし|該当なし|サポート|
-|Android|サポート|サポート|サポート|サポート|N/A|
-|iOS|サポート|サポート|サポート|サポート|N/A|
-|macOS|サポート|サポート|該当なし|該当なし|サポートされていません|
+|Windows 8.1|サポートされている|サポートされている|該当なし|該当なし|サポート|
+|Android|サポートされている|サポートされている|サポートされている|サポート|N/A|
+|iOS|サポート|サポートされている|サポート|サポート|N/A|
+|macOS|サポート|サポートされている|該当なし|該当なし|サポートされていません|
 |Linux|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
 |
 
@@ -128,7 +123,7 @@ BYOD デバイスWindows、ユーザーは [仕事または学校の **アカウ
 - 管理者の役割にのみ割り当てられている個別 [Microsoft 365を作成して](../../admin/add-users/about-admin-roles.md)*使用します*。 管理者は、通常の非管理用に独自のユーザー アカウントを持ち、役割またはジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。
 - 特権[アカウントをセキュリティ](/azure/active-directory/admin-roles-best-practices)で保護するためのベスト プラクティスに従って、Azure AD。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [![手順 2: 共通のゼロ信頼 ID を構成し、条件付きアクセス ポリシーにアクセスします。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 

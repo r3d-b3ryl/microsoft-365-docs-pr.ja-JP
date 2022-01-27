@@ -15,13 +15,15 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 10/22/2021
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 83c1165cee576898b3f32242aebcbb3436691b8e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.collection:
+- m365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: 0dc1279f59ac272031067c415354f1f615ead205
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167204"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244993"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>クラウド保護を有効にする必要Microsoft Defender ウイルス対策
 
@@ -49,7 +51,7 @@ Microsoft Defender ウイルス対策クラウド保護は、エンドポイン�
 | 侵害の指標 (IoC) | Microsoft Defender for Endpoint Plan 2 (スタンドアロンまたはプランに含まれる Microsoft 365 E5) | Defender for Endpoint の IoC は、エンティティの検出、防止、および除外を定義するように構成できます。 たとえば、"許可" インジケーターを使用して、Defender for Endpoint のスキャンMicrosoft Defender ウイルス対策修復アクションに対する例外を定義できます。 別の例として、"アラートとブロック" インジケーターを使用して、ファイルまたはプロセスの実行を防止し、Microsoft 365 Defender ポータルで表示可能なアラートを使用してこれらのアクティビティを追跡できます。 <br/><br/>詳細については、「インジケーターの作成 [」を参照してください](manage-indicators.md)。    |
 
 > [!TIP]
-> Defender for Endpoint プランの詳細については [、「Microsoft Defender for Endpoint Plan 1 (プレビュー)」および「Plan 2」を参照してください](defender-endpoint-plan-1-2.md)。
+> Defender for Endpoint プランの詳細については [、「Microsoft Defender for Endpoint Plan 1」および「Plan 2」を参照してください](defender-endpoint-plan-1-2.md)。
 
 ## <a name="next-steps"></a>次の手順
 

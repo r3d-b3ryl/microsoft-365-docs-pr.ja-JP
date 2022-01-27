@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 62036779aec92b08679d1213c1605b42388760af
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- m365initiative-defender-business
+ms.openlocfilehash: ad0b7a3aa9f68c44a594a9a27906f2fb765bd121
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940580"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244849"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)
 
@@ -66,7 +67,7 @@ Microsoft Defender for Business (プレビュー) は、検出された動作の
 | シナリオ | アラートの重大度 | 理由 |
 |:---|:---|:---|
 | Microsoft Defender ウイルス対策脅威を検出して停止してから、損害を与える可能性があります。 | 情報 | 脅威は、損害が発生する前に停止されました。 |
-| Microsoft Defender ウイルス対策内で実行していたマルウェアを検出します。 マルウェアが停止して修復されます。 | 低い | 個々のエンドポイントに対して一部の損害が発生した可能性があるが、マルウェアが企業に脅威を与える可能性はありません。 |
+| Microsoft Defender ウイルス対策内で実行していたマルウェアを検出します。 マルウェアが停止して修復されます。 | 低 | 個々のエンドポイントに対して一部の損害が発生した可能性があるが、マルウェアが企業に脅威を与える可能性はありません。 |
 | 実行中のマルウェアは、Microsoft Defender for Business (プレビュー) によって検出されます。 マルウェアはほぼ即座にブロックされます。 | 中または高 | マルウェアは、個々のエンドポイントと企業に脅威を与える。 |
 | 疑わしい動作は検出されますが、修復アクションはまだ実行されません。 | 低、中、高 | 重大度は、動作が企業に脅威を与える度合いによって異なります。 |
 

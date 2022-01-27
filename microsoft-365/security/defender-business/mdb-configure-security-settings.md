@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 06fa057455c506fe1cd467ab1fc780e5f5801e87
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+- m365initiative-defender-business
+ms.openlocfilehash: 7faefe829bc9ebdbc718e6c7ec370ceca612445a
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645886"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244597"
 ---
 # <a name="configure-your-security-settings-and-policies-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business でセキュリティ設定とポリシーを構成する (プレビュー)
 

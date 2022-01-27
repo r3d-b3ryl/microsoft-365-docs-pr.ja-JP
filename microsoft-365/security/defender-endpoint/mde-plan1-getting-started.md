@@ -13,14 +13,16 @@ ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: c2eb73b241bf49ef4f89598874a6648a3f9c8d70
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d4e585a7714bddc8c89de75ae49464da7bfe0305
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61891921"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245329"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 の概要
 

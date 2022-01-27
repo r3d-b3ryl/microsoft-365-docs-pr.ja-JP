@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3b38fd7f2395533c318a8d61a499624712de41e2
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: e14eec3cd24604a1aedc12683b37d12c2fb6f377
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213675"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241773"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -81,7 +81,7 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 
 **脚注:**
 
-<sup>\*</sup> 現在、ラベルを削除したり、分類レベルを下げたりするための正当化テキストは含まれていません
+<sup>\*</sup> 現在、ラベルを削除する、または分類レベルを下げるための配置テキストをロールアウトしています
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook での秘密度ラベル機能
 

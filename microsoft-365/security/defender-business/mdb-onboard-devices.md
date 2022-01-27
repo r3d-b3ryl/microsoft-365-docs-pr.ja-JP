@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: c5c5d2116ab3a1f06bc7b1d3f5e3be7aceaee78b
-ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
+- m365initiative-defender-business
+ms.openlocfilehash: a9aa664c7b7e6c2093817772f8f0bfaefdff3d9e
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61609099"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244573"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business へのオンボード デバイス (プレビュー)
 

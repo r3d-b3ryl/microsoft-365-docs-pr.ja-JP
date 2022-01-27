@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7cb9a37cd97a34d6e63082ad0c9f45a374bf98ae
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e3f4efb5c52acb40ecb30ac17a8b144de9eaa106
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166004"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245389"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 
@@ -322,8 +322,8 @@ ms.locfileid: "61166004"
 
 6. これらの手順で問題が解決しない場合は、 [次の](mailto:winatp@microsoft.com)winatp@microsoft.com。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [デバイスの対応措置を講じる](respond-machine-alerts.md)
 - [ファイルの調査](investigate-files.md)
-- [Microsoft Defender for Endpoint Plan 1 の手動応答アクション (プレビュー)](defender-endpoint-plan-1.md#manual-response-actions)
+- [Microsoft Defender for Endpoint Plan 1 の手動応答アクション](defender-endpoint-plan-1.md#manual-response-actions)

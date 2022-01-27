@@ -18,17 +18,20 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-m365-defender
+- m365solution-scenario
+- m365solution-overview
 ms.custom:
 - admindeeplinkDEFENDER
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d94cae13c4379061ce95b17d284e27d435cd9918
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 691db83111ba14e9fed7eed36a819479bda15ff5
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942574"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245317"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -101,7 +104,7 @@ Microsoft 365 Defender機能には、次のものが含まれます。
 - **侵害されたデバイス**、ユーザー ID、メールボックスの自己修復 - Microsoft 365 Defender は、AI による自動アクションとプレイブックを使用して、影響を受け取ったアセットを安全な状態に戻します。 Microsoft 365 Defenderスイート製品の自動修復機能を活用して、インシデントに関連する影響を受けたすべての資産を可能な限り自動的に修復します。
 - **製品間の脅威** の検出 - セキュリティ チームは、独自の組織の知識を活用して、さまざまな保護製品によって収集された生データに対して独自のカスタム クエリを作成することで、侵害の兆候を探し出します。 Microsoft 365 Defenderは、30 日間の過去の生信号と、エンドポイントと Defender 全体のアラート データへのクエリ ベースのアクセスを提供し、データOffice 365します。
 
-## <a name="get-started"></a>概要
+## <a name="get-started"></a>作業の開始
 
 Microsoft 365 Defender Microsoft 365 Defenderポータルでサービスを有効にする前に、Microsoft 365 Defender要件を満たす必要があります。詳細については、以下を <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> 参照してください。
 
