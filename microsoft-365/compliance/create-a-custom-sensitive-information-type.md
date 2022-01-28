@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: セキュリティ コンプライアンス センターで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする&説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a25293740dd856d93726e5eaf27e3a92c18af56
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 049d6b4045e19f5f9d4de7f52e5e8b99bd81a2b9
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241929"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265537"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>カスタムの機密情報の種類を使用する前に
 
@@ -157,7 +157,7 @@ SIT インスタンス数の制限は、次のソリューションで SIT を�
 - 通信コンプライアンス
 - レコード管理
 - Microsoft Defender for Cloud Apps
-- プライバシー管理
+- Microsoft Priva
 
 スキャンされたアイテムがルール条件を満たすには、1 つのアイテムの SIT の一意のインスタンスの数が最小値と最大値の間に入る必要があります。 これは、インスタンス数 **と呼ばれる。**
 

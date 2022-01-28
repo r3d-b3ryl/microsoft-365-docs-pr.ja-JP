@@ -20,14 +20,14 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: サード パーティ製のデータ Microsoft 365 API を使用してコンプライアンス ソリューションを拡張する方法Graph説明します。
-ms.openlocfilehash: 0957cb0f874964740697516a1cd8a37a2f8dca27
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: 8d76d18ea37280bbd3765ebacea8dc8aac365347
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940736"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265657"
 ---
-# <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365の拡張性
+# <a name="microsoft-365-compliance-and-microsoft-priva-extensibility"></a>Microsoft 365コンプライアンスと Microsoft Priva の拡張性
 
 Microsoft 365ソリューションは、組織がコンプライアンス リスクをインテリジェントに評価し、機密データを管理および保護し、規制要件に効果的に対応するのに役立ちます。 Microsoft 365は拡張性のシナリオに富み、組織はコンプライアンス ソリューションの適応、拡張、統合、加速、サポートを行えます。
 
@@ -49,13 +49,19 @@ Microsoft は、サード パーティ製のデータ コネクタを提供し�
 
 Microsoft のパートナー Microsoft 365 コンプライアンス センター提供されるデータ コネクタの場合、コネクタを展開する前に、組織はパートナーとのビジネス関係を必要とします。
 
-サード パーティ製データ コネクタのライセンス要件については、「Microsoft 365 ライセンス ガイダンス」の「データ コネクタ」セクションを参照&[してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-connectors)。
+サード パーティ製データ コネクタのライセンス要件については、「Microsoft 365 ライセンス ガイダンス」の「データ コネクタ」セクションを参照&[してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="apis"></a>API
 
-Microsoft 365 API は、Microsoft Information Protection SDK、Microsoft Graph API、および Office 365管理アクティビティ API で利用できます。 一部のコンプライアンス API は、Microsoft 365 のお客様、独立したソフトウェア ベンダー、システム インテグレーター、およびマネージド セキュリティ サービス プロバイダーの開発者が価値の高いセキュリティおよびコンプライアンス ソリューションを構築できる新しいセキュリティおよびコンプライアンス API の一部です。
+Microsoft 365コンプライアンス API と Microsoft Priva API は、Microsoft Information Protection SDK、Microsoft Graph API、および Office 365 管理アクティビティ API で利用できます。 一部のコンプライアンス API は、Microsoft 365 のお客様、独立したソフトウェア ベンダー、システム インテグレーター、およびマネージド セキュリティ サービス プロバイダーの開発者が価値の高いセキュリティおよびコンプライアンス ソリューションを構築できる新しいセキュリティおよびコンプライアンス API の一部です。
 
 API にアクセスする方法の詳細については、「Graphの[概要」を参照Graph。](/graph/overview)
+
+### <a name="microsoft-graph-apis-for-subject-rights-requests"></a>サブジェクトGraph要求に対する Microsoft の API の追加
+
+世界中の特定のプライバシー規制に従って、個人は企業が収集した個人データを確認または管理する要求を行います。 これらの要求は、Microsoft Priva Subject *Rights* Requests ソリューション内のサブジェクト権限要求と呼ばれます。 サブジェクト権限要求は、データ主体要求 (DSRs) またはデータ主体 *アクセス* 要求 (DSA) とも呼ばれます。 Microsoft Graph権利要求用の API を使用すると、開発者は、Microsoft 365に関連するサブジェクト権限要求を、より広範なプライバシー エコシステムと統合できます。 この API ベースの機能拡張により、組織は Microsoft 環境と Microsoft 以外の環境の両方をカバーするデータ 資産全体にわたって、対象の権利要求に一元的に対応できます。 この機能は、大規模な自動化にも役立ち、組織が手動プロセスに頼ることなく、業界の規制を効率的に満たすのに役立ちます。
+
+詳細については、「サブジェクト権限の[要求Graph Microsoft Graph API」を参照してください](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview)。
 
 ### <a name="microsoft-information-protection-mip-sdk"></a>Microsoft Information Protection (MIP) SDK
 
@@ -73,11 +79,11 @@ MIP SDK、前提条件、追加シナリオ、およびサンプルの詳細に�
 
 ### <a name="microsoft-graph-api-for-teams-dlp"></a>Microsoft Graph DLP Teams API
 
-[データ損失防止 (DLP)](dlp-microsoft-teams.md)機能は、特に組織がリモート作業に移行Microsoft Teamsに広く使用されています。 今年の初めに[、Microsoft](https://developer.microsoft.com/graph/blogs/announcing-change-notifications-for-microsoft-teams-messages/) Graph変更通知 API のパブリック プレビューをTeams。 この API を使用すると、開発者は、ほぼリアルタイムでMicrosoft Teamsメッセージをリッスンし、顧客とパートナーの両方に DLP シナリオを実装できるアプリを構築できます。 さらに、Microsoft Graph Patch API では、メッセージに DLP アクションTeamsできます。
+[データ損失防止 (DLP)](dlp-microsoft-teams.md)機能は、特に組織がリモート作業に移行Microsoft Teamsに広く使用されています。 最近[、Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/change-notifications-for-microsoft-teams-messages-now-generally-available/)のメッセージの変更通知 API の一般提供をTeams。 この API を使用すると、開発者は、ほぼリアルタイムでMicrosoft Teamsメッセージをリッスンし、顧客とパートナーの両方に DLP シナリオを実装できるアプリを構築できます。 さらに、Microsoft Graph Patch API では、メッセージに DLP アクションTeamsできます。
 
-これら 2 つの API は、DLP 用の Microsoft Graph API をTeamsします。 サンプル アプリを試して開始 [できます](https://github.com/microsoftgraph/csharp-webhook-with-resource-data)。 メッセージング Webhook のMicrosoft Teams詳細については、ドキュメントを参照[してください](/graph/api/subscription-post-subscriptions)。
+これら 2 つの API は、DLP 用の Microsoft Graph API をTeamsします。 サンプル アプリを試して開始 [できます](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)。 メッセージング Webhook のMicrosoft Teams詳細については、ドキュメントを参照[してください](/graph/api/subscription-post-subscriptions)。
 
-DLP のライセンス要件については、「セキュリティTeamsコンプライアンスMicrosoft 365ライセンス ガイダンス[」を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams)。
+DLP のライセンス要件については、「セキュリティTeamsコンプライアンスMicrosoft 365ライセンス ガイダンス[」を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>Microsoft Graph API for eDiscovery (プレビュー)
 
@@ -97,4 +103,4 @@ Enterprise情報アーカイブ (EIA) Microsoft Teamsは、規制要件を解決
 
 ### <a name="microsoft-graph-connector-apis-preview"></a>Microsoft Graph コネクタ API (プレビュー)
 
-[Microsoft Graphコネクタを使用](/microsoftsearch/connectors-overview)すると、組織はサードパーティのデータをインデックス化して、そのデータが結果にMicrosoft Searchできます。 この機能は、Microsoft 365 の生産性向上アプリと Microsoft の広範なエコシステムで検索可能な、コンテンツ ソースの種類を拡大しています。 サード パーティのデータは、オンプレミスまたはパブリック クラウドまたはプライベート クラウドでホストできます。 このAdvanced eDiscovery、接続されたアプリに組み込みのコンプライアンス値を開発者Microsoft 365しています。 これにより、シームレスなコンプライアンス エクスペリエンスをユーザーに提供Microsoft 365エコシステムに統合するアプリのコンプライアンスが可能となります。 Microsoft Graph コネクタ API をアプリ ビューに組み込む方法の詳細については、「Microsoft Graph で接続を作成、更新、および削除する」[を参照してください](/graph/search-index-manage-connections)。
+[Microsoft Graphコネクタを使用](/microsoftsearch/connectors-overview)すると、組織はサードパーティのデータをインデックス化して、そのデータが結果にMicrosoft Searchできます。 この機能は、Microsoft 365 の生産性向上アプリと Microsoft の広範なエコシステムで検索可能な、コンテンツ ソースの種類を拡大しています。 サード パーティのデータは、オンプレミスまたはパブリック クラウドまたはプライベート クラウドでホストできます。 このAdvanced eDiscovery、接続されたアプリに組み込みのコンプライアンス値を開発者Microsoft 365しています。 これにより、シームレスなコンプライアンス エクスペリエンスをユーザーに提供Microsoft 365エコシステムに統合するアプリのコンプライアンスが可能となります。 Microsoft Graph コネクタ API をアプリ ビューに組み込む方法の詳細については、「Microsoft Graph で接続を作成、更新、および削除する」[を参照してください](/graph/connecting-external-content-connectors-api-overview)。

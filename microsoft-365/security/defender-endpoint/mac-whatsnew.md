@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 157b3166a957fb0e4ddcadcbb23121ce10dfce1c
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 054a684829217676df4bb3bf7d8469dbfc53a2a3
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214215"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265693"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
@@ -36,15 +36,22 @@ ms.locfileid: "62214215"
 > [!NOTE]
 > 2022 年 1 月下旬から、Microsoft Defender for Endpoint (以前は Microsoft Defender ATP) は、macOS で MDE エクスペリエンスに直面しているエンド ユーザー全体で "Microsoft Defender" として参照されます。 
 > 
-> この変更は、ベータ版 (以前は Insider Fast と呼ばば) およびプレビュー (以前は Insider Slow と呼ばば) の更新チャネルで利用できます。 この変更を含む製品の最小バージョンは 101.54.24 です。
-> 
-> エンド ユーザーは、次の変更を確認します。 
-> - アプリケーションのインストール パスがから `/Application/Microsoft Defender ATP.app` に変更されました `/Applications/Microsoft Defender.app` 。
-> - ユーザー エクスペリエンス内で、"Microsoft Defender ATP" の発生が "Microsoft Defender" に置き換えられた
+> この変更は、ベータ版 (以前は Insider Fast と呼ばば) およびプレビュー (以前は Insider Slow と呼ばば) の更新チャネルで利用できます。 この変更を含む製品の最小バージョンは 101.56.35 です。 詳細については、このバージョンに対応する以下のリリース ノートを参照してください。
 > 
 > この変更は、コマンド ライン `mdatp` ツールには影響を与えかねない。
 >
 > **必要な** アクション: 企業に製品名またはアプリケーション インストール パスに依存するカスタム構成がある場合は、上記の新しい値でこれらの構成を更新する必要があります。
+
+## <a name="1015635-20121121156350"></a>101.56.35 (20.121121.15635.0)
+
+- アプリケーションの名前が "Microsoft Defender ATP" から "Microsoft Defender" に変更されました。 エンド ユーザーは、次の変更を確認します。
+  - アプリケーションのインストール パスがから `/Application/Microsoft Defender ATP.app` に変更されました `/Applications/Microsoft Defender.app` 。
+  - ユーザー エクスペリエンス内で、"Microsoft Defender ATP" の発生が "Microsoft Defender" に置き換えられた
+- Microsoft Defender for Endpoint for Mac で配布されているネットワーク コンテンツ フィルターが原因で、一部の VPN アプリケーションが接続できない問題を解決しました
+- macOS 12.2 beta 2 で検出された問題に対処し、オペレーティング システム (OS) が変更され、特定の特性を持つパッケージのインストールを妨げるインストール パッケージを開くことができません。 この OS の変更は、macOS 12.2 の最終リリースには含まれていないと思えますが、将来の macOS バージョンで再導入される可能性があります。 そのため、すべてのエンタープライズ管理者は、管理コンソールの Microsoft Defender for Endpoint パッケージをこの製品バージョン (または新しいバージョン) に更新するようにお勧めしています。
+- 一部の M1 デバイスで、製品が無効なマルウェア対策定義でスタックし、正常に一連の定義に更新できない問題に対処しました。
+- `mdatp health` 出力は、Microsoft Defender for Endpoint for Mac のすべてのコンポーネントにフル ディスク アクセスが許可されているかどうかを判断するために使用できる追加の属性を使用 `full_disk_access_enabled` して拡張されました。
+- バグ修正&パフォーマンスの向上
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0)
 

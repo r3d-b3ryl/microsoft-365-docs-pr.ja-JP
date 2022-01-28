@@ -10,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/19/2018
+ms.date: 01/27/2022
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3d4f383730463325cf7bd6042409caabafa16194
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1ae02edab2028cee78c59dfe643a073f1ea493ae
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61884085"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265561"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -1821,7 +1821,7 @@ Microsoft Defender ウイルス対策動的<i>署名サービスを使用して<
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 <li>期間</li>
 </ul>
 </dt>
@@ -1832,7 +1832,7 @@ Microsoft Defender ウイルス対策動的<i>署名サービスを使用して<
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -1877,7 +1877,7 @@ Microsoft Defender ウイルス対策使用<i>して、古い</i>署名を破棄
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 <li>期間</li>
 </ul>
 </dt>
@@ -1889,7 +1889,7 @@ Microsoft Defender ウイルス対策使用<i>して、古い</i>署名を破棄
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -1944,7 +1944,7 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 <li>期間</li>
 </ul>
 </dt>
@@ -1955,7 +1955,7 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -2583,6 +2583,33 @@ Microsoft Defender ウイルス対策スキャンが有効になっています�
 </td>
 <td >
 Microsoft Defender ウイルス対策スキャンが無効になっています。
+</td>
+</tr>
+<tr>
+<th colspan="2">イベント ID: 5013</th>
+</tr>
+<tr><td>
+記号名:
+</td>
+<td >
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+メッセージ:
+</td>
+<td >
+<b>改ざん防止によって、改ざんの変更がMicrosoft Defender ウイルス対策。</b>
+</td>
+</tr>
+<tr>
+<td>
+説明:
+</td>
+<td >
+タンパープロテクションが有効になっている場合、ブロックされている場合に Defender の設定を変更しようとすると、イベント ID 5013 が生成され、どの設定変更がブロックされたのかが示されます。
 </td>
 </tr>
 <tr>

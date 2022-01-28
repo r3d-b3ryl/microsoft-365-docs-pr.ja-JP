@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス管理の新機能と新機能を確認します。 更新された評価、新しい評価テンプレート、新しいアクションなどについて説明します。
-ms.openlocfilehash: c8e17caca15386199725627042c9d382641bfca2
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: f9583b69459d292b3fb485d09ce5ee5a8ca46620
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072262"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265506"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーの新機能
 
@@ -71,9 +71,9 @@ ms.locfileid: "61072262"
 - オーストラリア - ASD Essential 8 満期日レベル 2
 - オーストラリア - ASD Essential 8 満期日レベル 3
 
-### <a name="integration-with-privacy-management"></a>プライバシー管理との統合
+### <a name="integration-with-microsoft-priva"></a>Microsoft Priva との統合
 
-コンプライアンス マネージャーは、組織が保存している個人データを保護するソリューションであるプライバシー管理と一緒に作業Microsoft 365。 プライバシー管理は、データを視覚化して理解し、主要なリスク シナリオを管理するためのポリシーを実装し、件名の権利要求を処理するのに役立つツールを提供します。 保存する個人データを保護するためのプライバシー管理の手順を実行すると、コンプライアンス マネージャーでのプライバシー評価に貢献し、コンプライアンス スコアの向上に役立ちます。 プライバシー管理や他のソリューションがどのようにスコアに貢献しているのか、さらに改善される可能性について詳しくは、「コンプライアンス マネージャー」の「ソリューション」タブをご覧ください。 プライバシー管理の詳細については、「プライバシー管理について」 [を参照してください](/privacy/solutions/privacymanagement/privacy-management)。
+コンプライアンス マネージャーは Microsoft Priva と手をつないで作業できます。このソリューションは、組織が組織に保存している個人データを保護するのに役立Microsoft 365。 Priva には、データの視覚化と理解、主要なリスク シナリオの管理、および件名の権利要求の処理のためのポリシーの実装に役立つツールが用意されています。 保存する個人データを保護するために Priva で手順を実行すると、コンプライアンス マネージャーのプライバシー評価に役立ち、コンプライアンス スコアの向上に役立ちます。 Priva や他のソリューションがどのようにスコアに貢献しているのか確認し、さらに改善する可能性のある機会については、「コンプライアンス マネージャー  」の「ソリューション」タブを参照してください。 Priva の詳細については、「Microsoft Priva について [」を参照してください](/privacy/priva)。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
