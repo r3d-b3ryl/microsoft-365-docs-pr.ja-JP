@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除するのにアイテム保持ポリシーを自動的に適用できるよう、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: d34d2e2348c2e2319e31410c144565108ec9ae5f
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 4af5d1a8dc3cb0c7f1ffc38b59556e3bd5220ac5
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241577"
+ms.locfileid: "62244909"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -131,7 +131,7 @@ Exchange:
 
 SharePoint と OneDrive
 
-|条件|新規または変更されたアイテム |既存のアイテム (保存データ)|
+|条件|新規または変更されたアイテム |既存のアイテム |
 |:-----|:-----|:-----|
 |機密情報の種類 - 組み込み| はい | はい |
 |機密情報の種類 - カスタム| はい | 不要 |

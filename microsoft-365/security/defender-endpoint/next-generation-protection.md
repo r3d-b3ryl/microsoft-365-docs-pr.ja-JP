@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2427e2e9e162beb551d37da4280fa27bdf068069
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a0f0b7a47a88fe5a94cdc37dc586ee23020723ae
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166748"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244477"
 ---
 # <a name="next-generation-protection-overview"></a>次世代保護の概要
 
@@ -35,7 +35,7 @@ Microsoft Defender for Endpoint には、ネットワークのセキュリティ
 - [専用の保護および製品の更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md)。これには、Microsoft Defender ウイルス対策を最新状態に維持することに関連する更新プログラムが含まれています。
 
 > [!TIP]
-> 次世代の保護は、Microsoft Defender for Endpoint プラン 1 (プレビュー) とプラン 2 の両方に含まれています。 [Defender for Endpoint プラン 1 (プレビュー) とプラン 2 について説明します](defender-endpoint-plan-1-2.md)。
+> 次世代の保護は、Microsoft Defender for Endpoint プラン 1 とプラン 2 の両方に含まれています。 [Defender for Endpoint プラン 1 とプラン 2 についての詳細](defender-endpoint-plan-1-2.md)
 
 ## <a name="try-a-demo"></a>デモを試す
 

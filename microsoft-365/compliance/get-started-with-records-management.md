@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツを管理する、Microsoft 365 向けのレコード管理ソリューションが必要であるのに、どこから開始すればいいかわからなくなっていませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 5ed6d75e8a7365e0dcb2aeba700bce225899f307
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: ba23aed20cbef05272bc33306df5fc1eebc6cb3f
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785848"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241181"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
 
@@ -31,24 +31,28 @@ ms.locfileid: "60785848"
 
 Microsoft 365 のレコード管理ソリューションを使用して、組織内の法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツの管理を開始する準備はできましたか? 開始するには、次のガイダンスを使用してください。
 
-1. **レコード管理ソリューションの理解** と、ドキュメントやメールがレコード宣言される場合にどのようなアクションが許可されたり禁止されたりするかについて説明します。[レコード管理に関する詳細情報](records-management.md)。
+1. Microsoft 365 での **保持と削除の仕組み** を理解し、ドキュメントやメールをアイテム レベルで管理する保持ラベルを補完するためにアイテム保持ポリシーを使用する必要があるかどうかを特定します。[アイテム保持ポリシーと保持ラベルに関する詳細情報](retention.md)
+    
+    必要に応じて、Microsoft 365 ワークロード全体のデータのベースライン ガバナンスのために[アイテム保持ポリシーを作成](create-retention-policies.md)します。
+    
+2. **レコード管理ソリューションの理解** と、ドキュメントやメールがレコード宣言される場合にどのように保持ラベルを使用してアクションを許可したり禁止したりするかについて説明します。[レコード管理に関する詳細情報](records-management.md)
 
-2. 保持ラベルはレコード宣言に使用されるため、SharePoint および Exchange 向けの **アイテム保持レベルや保持の機能を理解してください**。[保持ポリシーおよび保持ラベルに関する詳細情報](retention.md)
-
-3. 既存のプランをお持ちの場合は、[既存のプランをインポート](file-plan-manager.md#import-retention-labels-into-your-file-plan)することで **保持設定およびアクションのためのファイルプランを作成** するか、[レコード宣言する新しい保持ラベル](declare-records.md)を作成します。
+3. 既存のプランがある場合はそれをインポートするか、新しい保持ラベルを作成して、**保持および削除の設定とアクション、およびアイテムを記録としてマークするタイミングについて、ファイル プランを作成** します。[ファイル プランを使用して保持ラベルを作成および管理する](file-plan-manager.md)
 
 4. **保持ラベルを発行して適用** します。保持ラベルは複数のポリシーで使用できる再利用可能な文書パーツで、ユーザーのワークフローに組み込むことができます。
 
     - [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
     - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
 
-## <a name="subscription-and-licensing-requirements-for-records-management"></a>レコード管理のサブスクリプションおよびライセンス要件
+これらの手順とは別に、**コネクタを使用してソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームなどのサードパーティ データ** を、インポートしてアーカイブします。 このデータをオンライン メールボックスにインポートすると、Microsoft 365 コンプライアンスの記録管理だけでなく、コミュニケーション コンプライアンス、インサイダー リスクの管理、電子情報開示などの他のコンプライアンス ソリューションもサポートします。 詳細については、「[サードパーティ データのコネクタの詳細](archiving-third-party-data.md)」を参照してください。
+
+## <a name="subscription-and-licensing-requirements"></a>サブスクリプションとライセンス要件
 
 レコード管理はさまざまな異なるサブスクリプションに対応しており、ユーザーのライセンス要件は使用する機能によって異なります。
 
 Microsoft 365 コンプライアンス機能のメリットを得られるようにユーザーにライセンスを付与するためのオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。 レコード管理については、「[レコード管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)」セクション、および機能レベルのライセンス要件に関する PDF ダウンロード ファイルを参照してください。
 
-## <a name="permissions-required-for-records-management"></a>レコード管理に必要なアクセス許可
+## <a name="permissions"></a>アクセス許可
 
 レコード管理を担当するコンプライアンス チームのメンバーには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>へのアクセス許可が必要です。既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、テナント管理者のすべてのアクセス許可を与えることなく、コンプライアンス責任者やその他のユーザーにアクセス権を付与できます。この制限された管理用にアクセス権を付与するには、[処理確認と検証](disposition.md)など、レコード管理に関するすべての機能に対するアクセス許可を付与する **[レコード管理]** の管理者役割グループにユーザーを追加することをお勧めします。
 
@@ -58,12 +62,12 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 これらの権限は、レコードを宣言し、処理を管理する保持ラベルを作成、構成、適用するためにのみ必要です。 保持ラベルを構成するユーザーは、コンテンツへのアクセスを必要としません。
 
-## <a name="common-scenarios-for-records-management"></a>レコード管理の一般的なシナリオ
+## <a name="common-scenarios"></a>一般的なシナリオ
 
 次の表は、レコード管理でサポートされているシナリオにビジネス要件をマッピングするのに役立ちます。
 
-> [!NOTE]
-> レコード管理では、アイテム保持ラベルを使用してアイテムをレコードとしてマークするため、この表にある多くのシナリオは、[アイテム保持ポリシーと保持ラベルの一般的なシナリオ](get-started-with-retention.md#common-scenarios-for-retention-policies-and-retention-labels)としても表示されます。
+> [!TIP]
+> 特定の業界規制に準拠する必要がある場合 規制に特化したガイダンスについては、「[情報ガバナンスおよびレコード管理の規制要件を満たすために役立つリソース](retention-regulatory-requirements.md)」を確認してください。
 
 |必要な作業...|ドキュメント|
 |----------------|---------------|
@@ -81,10 +85,10 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 |保存期間の終了時に完全に削除されたコンテンツの廃棄の証拠を取得する|[レコードの廃棄](disposition.md#disposition-of-records) |
 | 保持および削除設定がアイテムに適用される方法と場所を監視する | [保持ラベルの監視](retention.md#monitoring-retention-labels) |
 
-## <a name="end-user-documentation-for-records"></a>レコードに関するエンド ユーザー向けのドキュメント
+## <a name="end-user-documentation"></a>エンド ユーザー向けのドキュメント
 
-レコード管理に使用される保持ラベルは、Microsoft 365 アプリに UI が存在します。保持ラベルを運用ネットワークに展開する前に、エンド ユーザーとヘルプ デスクにガイダンスを提供するようにしてください。
+ベースライン データ ガバナンスにアイテム保持ポリシーを使用している場合、通常、ユーザーが操作することなくバックグラウンドで目立たずに動作します。 そのため、ユーザーへの説明はほとんど必要ありません。 Teams のアイテム保持ポリシーは、メッセージが削除されたときに、[アイテム保持ポリシーに関する Teams メッセージ](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)へのリンクとともにユーザーに通知します。
 
-ユーザーが SharePoint および OneDrive で保持ラベルを適用できるようにするには、編集用のレコードのロック解除に関する情報が含まれている、「[SharePoint または OneDrive のファイルに保持ラベルを適用する](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)」を参照してください。
+一方、保持ラベルは Microsoft 365 アプリに UI が存在するため、これらのラベルを運用ネットワークに展開する前に、エンドユーザーとヘルプ デスクにガイダンスを提供するようにしてください。 ユーザーが SharePoint および OneDrive、および編集用のレコードのロック解除に関する情報で保持ラベルを適用できるようにするには、「[SharePoint または OneDrive のファイルに保持ラベルを適用する](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)」を参照してください。
 
-ただし、最も効果的なエンド ユーザー向けのドキュメントは、選択した保持ラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ユーザーのトレーニングと導入の促進に使用できるダウンロード パッケージについては、次のブログ記事を参照してください: [M365 の保持ラベルのエンド ユーザー トレーニング – 導入を加速する方法](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
+ただし、最も効果的なエンド ユーザー向けのドキュメントは、選択した保持ラベル名と構成に関するカスタマイズされたガイダンスと手順です。 次のページを表示して、ユーザーのトレーニングに使用できるアイテムをダウンロードします。[アイテム保持ラベルのエンド ユーザー トレーニング](https://microsoft.github.io/ComplianceCxE/enduser/retention/)。

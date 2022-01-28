@@ -1,5 +1,5 @@
 ---
-title: 組織の PST ファイルのインポートの概要
+title: 組織の PST ファイルのインポートに関する詳細
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,14 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Microsoft 365 コンプライアンス センターのインポート サービスを使用して、メール データ (PSTファイル) をユーザーのメールボックスに一括でインポートする方法について説明します。
-ms.openlocfilehash: 67488566b65648f20cf48b7ab767e95a8732da57
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b88cd9f6b12f382f8fdeb696af32c1fd95ad805d
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873317"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241529"
 ---
-# <a name="overview-of-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートの概要
+# <a name="learn-about-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートに関する詳細
 
 > [!NOTE]
 > この記事は管理者向けです。 自分のメールボックスに PST ファイルをインポートしようとしていますか? 「[Outlook.pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。
@@ -82,7 +82,7 @@ ms.locfileid: "61873317"
 
 5. **メールボックスにインポートされる PST データをフィルター処理する** - インポート ジョブを作成すると (およびドライブ送付ジョブから PST ファイルが Azure Storage の場所にアップロードされると)、Microsoft 365 は PST ファイルに含まれているアイテムの経過時間とさまざまなメッセージの種類を識別することで、PST ファイル内のデータを (安全に) 分析します。 分析が完了し、データをインポートする準備ができたら、PST ファイルに含まれるすべてのデータをインポートするか、インポートするデータをトリミングするかを選ぶことができます。データをトリミングする場合は、インポートするデータを制御するフィルターを設定します。
 
-6. **PST インポート ジョブを開始する** - インポート ジョブを開始すると、Microsoft 365 は PST インポート マッピング ファイルの情報を使用して、PST ファイルを Azure Storage の場所からユーザーのメールボックスにインポートします。 インポート ジョブの進捗情報 (インポート中の各 PST ファイルに関する情報を含む) が Microsoft 365 コンプライアンス センターの [**PST ファイルのインポート**] ページに表示されます。 インポート ジョブが完了すると、ジョブの状態が [**完了**] に設定されます。
+6. **PST インポート ジョブを開始する** - インポートジョブを開始すると、Microsoft 365 は PST インポート マッピング ファイルの情報を使用して、PST ファイルを Azure Storage の場所からユーザーのメールボックスにインポートします。 インポート ジョブの進捗情報 (インポート中の各 PST ファイルに関する情報を含む) が Microsoft 365 コンプライアンス センターの [**PST ファイルのインポート**] ページに表示されます。 インポート ジョブが完了すると、ジョブの状態が [**完了**] に設定されます。
 
 ## <a name="why-import-email-data-to-microsoft-365"></a>Microsoft 365 にメール データをインポートする理由
 

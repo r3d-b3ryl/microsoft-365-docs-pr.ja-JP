@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 91b8da486d3e9fbae6981f3038cbab8725065476
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: f8d87ceadc3957d819931e95e6ed6359604be1b0
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049374"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244873"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -282,6 +282,11 @@ Azure Information Protection 統合ラベル付けクライアントに関して
     ![自動ラベル付け構成の [場所の選択] ページ。](../media/locations-auto-labeling-wizard.png)
     
     個々の OneDrive アカウントを指定するには、「[組織内のすべてのユーザーの OneDrive の URL 一覧を取得する](/onedrive/list-onedrive-urls)」を参照してください。
+    
+    > [!NOTE]
+    > [OneDrive アカウントが削除されると](/onedrive/retention-and-deletion#the-onedrive-deletion-process) (たとえば従業員が組織を離れるなど)、場所は SharePoint サイトとしてマークされ、OneDrive の保持期間中の継続的なアクセスをサポートします。
+    > 
+    > この削除の段階では、OneDrive アカウントのファイルは **OneDrive アカウント** の場所の ［**すべて**］ の設定に含まれませんが、**SharePoint サイト** の場所の ［**すべて**］ の設定に含まれます。 これらの削除された OneDrive アカウントのファイルは、シミュレーション結果と監査データのソースの場所として SharePoint を表示します。
 
 7. [**共通ルールまたは高度なルールの設定**] ページ: 既定の **共通ルール** を維持して、選択したすべての場所でラベルを付けるコンテンツを識別するルールを定義します。場所ごとに異なるルールが必要な場合は[**高度なルール**] を選択します。次に、[**次**]. を選択します。
 
