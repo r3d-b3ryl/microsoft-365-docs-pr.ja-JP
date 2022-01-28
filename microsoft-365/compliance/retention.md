@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 319e8414d9d78eaa4735864f7e47ff146d2b9734
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: 45bd61d9eed192977485792d72eb9783c71420b8
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612634"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242061"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -59,7 +59,7 @@ ms.locfileid: "61612634"
 
 これらの保持設定は所定の場所にあるコンテンツに作用し、コンプライアンス上の理由でコンテンツを保持する必要がある場合でも、追加のストレージを作成して構成するための追加のオーバーヘッドを節約できます。 また、このデータをコピーして同期するために、カスタマイズしたプロセスを実装する必要もありません。
 
-次のセクションを使用して、アイテム保持ポリシーとアイテム保持ラベルの機能、使用する時期、さらに相互補足する方法についての詳細情報を参照します。 ただし、一部の一般的なシナリオでアイテム保持設定を開始して展開する準備ができている場合は、[アイテム保持ポリシーおよび保持ラベルの使用を開始する](get-started-with-retention.md) を参照してください。
+次のセクションを使用して、アイテム保持ポリシーとアイテム保持ラベルの機能、使用する時期、さらに相互補足する方法についての詳細情報を参照します。 ただし、一部の一般的なシナリオの保持設定を開始して展開する準備が出来ている場合は、「[情報ガバナンスを開始する](get-started-with-information-governance.md)」を参照してください。
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>保持設定が所定の場所にあるコンテンツに作用するしくみ
 
@@ -153,7 +153,7 @@ ms.locfileid: "61612634"
 
 - SharePoint の **ドキュメント ライブラリ、フォルダー、またはドキュメント セットに既定の保持ラベルを適用** することにより、この場所に保存するすべてのドキュメントに既定の保持ラベルが継承されるようになります。
 
-さらに、保持ラベルは、Microsoft 365 アプリとサービス全体でのメールとドキュメントの[レコード管理](records-management.md)をサポートします。 保持ラベルを使用して、アイテムをレコードとしてマークできます。 この問題が発生し、コンテンツが Microsoft 365 に残っている場合は、このラベルで規制上の理由から必要になることがあるコンテンツがさらに制限されます。 詳細については、「[許可またはブロックするアクションの制限を比較する](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)」を参照してください。
+- [レコード管理](records-management.md)戦略の一部として **アイテムをレコードとしてマーク** します。 このラベル付けされたコンテンツが Microsoft 365 に残っている場合は、規制上の理由により必要なコンテンツに追加の制限が適用されます。 詳細については、「[許可またはブロックするアクションの制限を比較する](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)」を参照してください。
 
 保持ラベルは、[秘密度ラベル](sensitivity-labels.md)とは異なり、コンテンツが Microsoft 365 以外の場所に移動した場合は保持されません。
 
@@ -620,4 +620,4 @@ Microsoft 365 の場所に対して複数の保持ポリシーと、発行また
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
-「[アイテム保持ポリシーおよび保持ラベルの使用をはじめる](get-started-with-retention.md)」をご参照ください。この記事には、サブスクリプション、アクセス許可についての説明、および保持を行う際のエンド ツー エンド構成を行う方法についてのリンクがあります。
+「[情報ガバナンスを開始する](get-started-with-information-governance.md)」を参照してください。 この記事には、サブスクリプション、アクセス許可についての説明、および保持を行う際のエンド ツー エンド構成を行う方法についてのリンクがあります。

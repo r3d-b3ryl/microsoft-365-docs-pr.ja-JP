@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: a16daf7e360260ecbdc4e0a16e291cd3cd411838
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7e8d70d6ac535ee80e3ddb6ab719fe253836031
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158216"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241445"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
@@ -89,7 +89,7 @@ ms.locfileid: "60158216"
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>手順 1: 保持期間がイベントに基づくラベルを作成する
 
-保持ラベルを作成して構成するには、「[保持ラベルの作成](./create-apply-retention-labels.md#step-1-create-retention-labels)」の手順を参照してください。ただし、イベントに基づく保持の場合は、保持ラベルの作成ウィザードの **[保持設定を定義する]** ページで、**[以下に基づき保持期間を開始する]** に続いて、ドロップダウン リストから既定のイベントの種類のいずれかを選択するか、**[新しいイベントの種類を作成]** を選択して独自のイベントを作成します。
+保持ラベルを作成して構成するには、「[レコード管理用の保持ラベルを作成する](file-plan-manager.md#create-retention-labels)」または「[情報ガバナンス用の保持ラベルを作成する方法](create-retention-labels-information-governance.md)」の手順を参照してください。 ただし、イベント ベースの保持に固有の保持ラベルを作成する場合は、**[保持設定の定義]** ページで、**[以下に基づき保持期間を開始する]** を選択し、ドロップダウンリストから既定のイベントの種類のいずれかを選択するか、**[新しいイベントの種類の作成]** を選択して独自のイベントを作成します:
 
 ![保持ラベルの新しいイベントの種類を作成します。](../media/SPRetention6.png)
 

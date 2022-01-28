@@ -1,9 +1,9 @@
 ---
-title: 自動拡張アーカイブの概要
+title: 自動拡張アーカイブに関する詳細情報
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Exchange Online メールボックスに追加のアーカイブ記憶域を提供する自動拡張アーカイブについて説明します。
-ms.openlocfilehash: d1833416ad4ff1d2dbb3241fde466e31bb6d8a74
-ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.openlocfilehash: 527eea4f0fe97ba689cb70bddb78091112e1f353
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "60400049"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241337"
 ---
-# <a name="overview-of-auto-expanding-archiving"></a>自動拡張アーカイブの概要
+# <a name="learn-about-auto-expanding-archiving"></a>自動拡張アーカイブに関する詳細情報
 
 Office 365 のアーカイブ メールボックスは、ユーザーに追加のメールボックス記憶領域を提供します。 ユーザーのアーカイブ メールボックスを有効にすると、最大 100 GB の追加記憶域を使用できます。 以前は、100 GB の記憶域クォータに達したとき、組織は、Microsoft に問い合わせてアーカイブ メールボックス用の追加記憶領域を要求する必要がありました。 このようなことはもうなくなります。
 
@@ -112,6 +112,8 @@ Outlook または Outlook on the web を使って自動拡張アーカイブに�
 
 - **インポート サービス**: Office 365 のインポート サービスを使うと、ユーザーの自動拡張アーカイブに PST ファイルをインポートできます。 PST ファイルの最大 100 GB のデータをユーザーのアーカイブ メールボックスにインポートできます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="next-steps"></a>次の手順
 
 自動拡張アーカイブについての技術的な詳細については、「[Office 365: 自動拡張アーカイブに関する FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)」を参照してください。
+
+自動拡張アーカイブを有効にする準備ができている場合は、「[自動拡張アーカイブを有効にする](enable-autoexpanding-archiving.md)」を参照してください。
