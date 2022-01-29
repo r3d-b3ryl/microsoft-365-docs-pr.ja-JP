@@ -360,6 +360,8 @@
               href: sit-use-exact-data-refresh-data.md
             - name: データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
               href: named-entities-use.md
+            - name: 機密情報の種類の一般的な使用シナリオ
+              href: sit-common-scenarios.md
         - name: 機密情報の種類のリファレンス
           items:
             - name: 機密情報の種類のエンティティ定義
@@ -575,8 +577,8 @@
               href: retention-policies-yammer.md
             - name: Exchange
               href: retention-policies-exchange.md
-            - name: 一般的な保持の設定
-              href: retention-settings.md
+        - name: 一般的な保持と削除の設定
+          href: retention-settings.md
         - name: 保持と削除の制限
           href: retention-limits.md
     - name: 情報ガバナンス
@@ -1046,10 +1048,6 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: エネルギー サービスのセキュリティとコンプライアンス
           href: ../solutions/energy-secure-collaboration.md
-- name: プライバシー管理
-  items:
-    - name: プライバシー管理の詳細
-      href: /privacy/solutions/privacymanagement/privacy-management
 - name: ハイブリッド コンプライアンス機能
   items:
     - name: AD RMS による Exchange Online のメールの暗号化
@@ -1063,5 +1061,7 @@
   href: ../security/index.yml
 - name: Microsoft 365 Apps for business
   href: /office365/admin/admin-home
+- name: Microsoft Priva
+  href: /privacy/priva/
 - name: トラブルシューティング
   href: /office365/troubleshoot/microsoft-365-compliance-welcome

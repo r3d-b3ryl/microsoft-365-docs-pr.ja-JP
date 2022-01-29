@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: f8d87ceadc3957d819931e95e6ed6359604be1b0
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: c2300061dbe075be31e0a70d7b1356e3606230e5
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244873"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271696"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -73,7 +73,7 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
     
     - 手動でのラベル付けや Office アプリを使用した自動ラベル付けとは異なり、PDF の添付ファイルと Office の添付ファイルも自動ラベル付けポリシーで指定した条件に合わせてスキャンされます。一致するものがある場合、メールにはラベルが付けられますが、添付ファイルにはラベルが付けられません。
         - PDF ファイルの場合、ラベルが暗号化を適用する場合、テナントで[ PDF 添付ファイルが有効になっている場合](ome-faq.yml#are-pdf-file-attachments-supported-)、これらのファイルは[Office 365 Message Encryption (OME)](ome.md)を使用して暗号化されます。
-        - Word、PowerPoint、Excel の Office ファイルがサポートされています。 ラベルが暗号化を適用する場合、[Office 365 Message Encryption (OME)](ome.md)を使用して、暗号化されます。
+        - Word、PowerPoint、Excel の Office ファイルがサポートされています。 ラベルが暗号化を適用する場合、[Office 365 Message Encryption (OME)](ome.md) を使用して、暗号化されます。
     - IRM 暗号化を適用する Exchange メール フロー ルールまたはデータ損失防止 (DLP) ポリシーがある場合: これらのルールやポリシーおよび自動ラベル付けポリシーによってコンテンツが識別されると、ラベルが適用されます。 このラベルが暗号化を適用すると、Exchange メール フロー ルールまたは DLP ポリシーの IRM 設定は無視されます。 ただし、そのラベルが暗号化を適用しない場合、メール フロー ルールまたは DLP ポリシーの IRM 設定がラベルに加えて適用されます。
     - ラベルが表示されない IRM 暗号化を使用しているメールは、自動ラベル付けを使用すると一致する場合は、暗号化設定のあるラベルに置き換えられます。
     - 自動ラベル付け条件と一致すると、受信メールにラベルが付けられます。 ラベルが[暗号化](encryption-sensitivity-labels.md)に構成されている場合、その暗号化は、組織からの送信者である場合に適用されますが、組織外からの送信者である場合は適用されません。
@@ -273,7 +273,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
     ![自動ラベル付けの新しいポリシー構成。](../media/auto-labeling-wizard.png)
 
-4. [**このラベルを適用する情報を選択する**] ページの場合: [**財務**] または [**プライバシー**] などのテンプレートのいずれかを選択します。 ドロップダウンの **表示オプション** を使用して、検索を絞り込むことができます。 または、テンプレートが要件を満たしていない場合は、[**カスタム ポリシー**] を選択します。 **[次へ]** を選択します。
+4. [**このラベルを適用する情報を選択する**] ページの場合: [**財務**] または [**プライバシー**] などのテンプレートのいずれかを選択します。 ドロップダウンの **表示オプション** を使用して、検索を絞り込むことができます。 または、テンプレートが要件を満たしていない場合は、[**カスタム ポリシー**] を選択します。 [**次へ**] を選択します。
 
 5. [**自動ラベル ポリシーに名前を付ける**] ページの場合: 一意の名前を入力し、必要に応じて説明を入力して、自動的に適用されるラベル、場所、ラベル付けするコンテンツを識別する条件を識別します。
 
@@ -282,11 +282,6 @@ Azure Information Protection 統合ラベル付けクライアントに関して
     ![自動ラベル付け構成の [場所の選択] ページ。](../media/locations-auto-labeling-wizard.png)
     
     個々の OneDrive アカウントを指定するには、「[組織内のすべてのユーザーの OneDrive の URL 一覧を取得する](/onedrive/list-onedrive-urls)」を参照してください。
-    
-    > [!NOTE]
-    > [OneDrive アカウントが削除されると](/onedrive/retention-and-deletion#the-onedrive-deletion-process) (たとえば従業員が組織を離れるなど)、場所は SharePoint サイトとしてマークされ、OneDrive の保持期間中の継続的なアクセスをサポートします。
-    > 
-    > この削除の段階では、OneDrive アカウントのファイルは **OneDrive アカウント** の場所の ［**すべて**］ の設定に含まれませんが、**SharePoint サイト** の場所の ［**すべて**］ の設定に含まれます。 これらの削除された OneDrive アカウントのファイルは、シミュレーション結果と監査データのソースの場所として SharePoint を表示します。
 
 7. [**共通ルールまたは高度なルールの設定**] ページ: 既定の **共通ルール** を維持して、選択したすべての場所でラベルを付けるコンテンツを識別するルールを定義します。場所ごとに異なるルールが必要な場合は[**高度なルール**] を選択します。次に、[**次**]. を選択します。
 
@@ -294,7 +289,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
     - 機密情報の種類については、組み込みとカスタムの両方の機密情報の種類を選択できます。
     - 共有オプションについては、[**組織内の連絡先のみ**] または [**組織外の連絡先**] を選択できます。
 
-    唯一の場所が **Exchange** である場合、または [**詳細ルール**] を選択した場合、次のような選択ができる追加の条件があります。
+    唯一の場所が **Exchange** である場合、または [**詳細ルール**] を選択した場合、次のような選択ができるその他の条件があります。
     - 送信者の IP アドレスが
     - 受信者ドメインが
     - 受信者が
@@ -371,14 +366,14 @@ New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocatio
 
 このコマンドは、指定した SharePoint サイトの自動ラベル付けポリシーを作成します。 OneDrive の場所については、代わりに *OneDriveLocation* パラメーターを使用します。
 
-既存の自動ラベル付けポリシーにサイトを追加するには:
+既存の自動ラベル付けポリシーにその他のサイトを追加するには:
 
 ```powershell
 $spoLocations = @("<SharePointSiteLocation1>","<SharePointSiteLocation2>")
 Set-AutoSensitivityLabelPolicy -Identity <AutoLabelingPolicyName> -AddSharePointLocation $spoLocations -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
 ```
 
-このコマンドは、追加の SharePoint URL を変数に指定し、既存の自動ラベル付けポリシーに追加します。 代わりに OneDrive の場所を追加するには、*AddOneDriveLocation* パラメーターに *$OneDriveLocations* のような別の変数を指定して使用します。
+このコマンドは、新しい SharePoint URL を変数に指定し、既存の自動ラベル付けポリシーに追加します。 代わりに OneDrive の場所を追加するには、*AddOneDriveLocation* パラメーターに *$OneDriveLocations* のような別の変数を指定して使用します。
 
 新しい自動ラベル付けポリシー ルールを作成するには:
 
@@ -400,7 +395,7 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 
 ## <a name="tips-to-increase-labeling-reach"></a>ラベル付けの範囲を拡大するためのヒント
 
-自動ラベル付けは、組織が所有する Office ファイルを分類、ラベル付け、および保護するための最も効率的な方法の 1 つですが、ラベル付けの範囲を拡大するための追加の方法のいずれかで補足できるかどうかを確認してください。
+自動ラベル付けは、組織が所有する Office ファイルを分類、ラベル付け、および保護するための最も効率的な方法の 1 つですが、ラベル付けの範囲を拡大するための次の方法のいずれかで補足できるかどうかを確認してください。
 
 - SharePoint Syntex で、[ドキュメント理解モデルに感度ラベルを適用して](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)、SharePoint ライブラリ内で識別されたドキュメントは自動的にラベル付けされます。
 

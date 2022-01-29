@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 コンプライアンス ソリューションでファイルが表示されます '
-ms.openlocfilehash: bdcc690232678b5673950bf75d844a7e658a0c30
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7d8bc4dcb9d2852894ca838d88ae8ff2f5226298
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943582"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271564"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
@@ -108,7 +108,7 @@ Microsoft Endpoint DLP を使用すると、ユーザーが物理的に Windows 
 
  デバイスをオンボードにするには、[Microsoft 365 エンドポイント DLPの使用を開始する](endpoint-dlp-getting-started.md)の手順を使用します。
 
-[Microsoft Defender for Endpoint](/windows/security/threat-protection/) を介してデバイスをオンボードした場合、それらのデバイスは自動的にデバイスの一覧に表示されます。
+[Microsoft Defender for Endpoint](/windows/security/threat-protection/) を介してデバイスをオンボードした場合、それらのデバイスは自動的にデバイスの一覧に表示されます。 **デバイスの監視をオン** にして、エンドポイント DLP を使用できます。
 
 > [!div class="mx-imgBorder"]
 > ![管理対象デバイスの一覧。](../media/endpoint-dlp-learn-about-2-device-list.png)

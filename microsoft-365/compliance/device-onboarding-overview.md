@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする
-ms.openlocfilehash: a83db434b488ce28c71df0fb7e3185be88b87b01
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: ec95fcbfca3ab41bb3a249534e5ff62721aac794
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950897"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272080"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする概要
 
@@ -78,7 +78,7 @@ Microsoft 365 エンドポイント DLP は、Windows 10 または Windows 11 �
 
 1. Windows 10 x64 ビルド 1809 以降または Windows 11 を実行している必要があります。
 
-2. マルウェア対策クライアントのバージョンは 4.18.2009.7 以降です。 Windows セキュリティ アプリを開いて現在のバージョンを確認し、[設定] アイコンを選択して、[バージョン情報] を選択します。 バージョン番号は、マルウェア対策クライアントのバージョンの下に表示されます。 Windows Update KB4052623 をインストールして、最新のマルウェア対策クライアントのバージョンに更新します。
+2. マルウェア対策クライアントのバージョンは 4.18.2110 以降です。 Windows セキュリティ アプリを開いて現在のバージョンを確認し、[設定] アイコンを選択して、[バージョン情報] を選択します。 バージョン番号は、マルウェア対策クライアントのバージョンの下に表示されます。 Windows Update KB4052623 をインストールして、最新のマルウェア対策クライアントのバージョンに更新します。
 
    > [!NOTE]
    > Windows セキュリティ コンポーネントはいずれもアクティブである必要はありませんが、[リアルタイム保護と動作の監視](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)を有効にする必要があります。
@@ -98,11 +98,11 @@ Microsoft 365 エンドポイント DLP は、Windows 10 または Windows 11 �
    - [Hybrid Azure AD への参加](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
    - [AAD の登録](/azure/active-directory/user-help/user-help-register-device-on-network)
 
-5. Office 2016 を実行しているデバイスの場合 (他の Office バージョンではない) - KB4577063
+5. サポートされているバージョンの Microsoft Office がインストールされ、最新の状態になっています。 最も堅牢な保護とユーザー エクスペリエンスを実現するには、Microsoft 365 Apps バージョン 16.0.14701.0 以降がインストールされていることを確認してください。
+> [!NOTE]
+   >Office 265 を実行している場合 - KB 4577063 が必要です Microsoft 365 Apps バージョン 2004-2008 の月次エンタープライズ チャネルを使用している場合は、バージョン 2009 以降に更新する必要があります。 現在のバージョンについては「[Microsoft 365 アプリの更新履歴 (日付別の一覧)](/officeupdates/update-history-microsoft365-apps-by-date)」をご覧ください。 既知の問題の詳細については、[2020 年の最新のチャネル リリースのリリース ノート](/officeupdates/current-channel#version-2010-october-27)の「Office スイート」セクションを参照してください。
 
-6. Microsoft 365 アプリ バージョン 2004 - 2008 の月次エンタープライズ チャネルを使用している場合、Office コンテンツを分類する 既知の問題があり、バージョン 2009 以降に更新する必要があります。 現在のバージョンについては「[Microsoft 365 アプリの更新履歴 (日付別の一覧)](/officeupdates/update-history-microsoft365-apps-by-date)」をご覧ください。 この問題の詳細については、[2020 年の最新のチャネル リリースのリリース ノート](/officeupdates/current-channel#version-2010-october-27)の「Office スイート」セクションを参照してください。
-
-7. デバイス プロキシを使用してインターネットに接続するエンドポイントがある場合は、「[情報保護のためのデバイス プロキシとインターネット接続設定の構成](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)」の手順に従います。
+6. デバイス プロキシを使用してインターネットに接続するエンドポイントがある場合は、「[情報保護のためのデバイス プロキシとインターネット接続設定の構成](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)」の手順に従います。
 
 ## <a name="onboarding-windows-10-or-windows-11-devices"></a>Windows 10 または Windows 11 デバイスのオンボード
 

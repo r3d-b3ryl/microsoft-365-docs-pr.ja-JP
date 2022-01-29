@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2b42e33bf57e2cfbc855c06ff4dfeefc9a8e9eb0
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: eb50ed71bad3307036621e8367c697331ffa3024
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62054982"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272092"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -1167,7 +1167,7 @@ Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Direc
 
 **監査データは地域を超えて流出しますか?**
 
-いいえ。Microsoft では、NA (北米), EMEA (ヨーロッパ、中近東、アフリカ)、APAC (アジア太平洋) の各地域に監査パイプラインを配置しています。負荷分散の目的で、これらの地域を超えてデータが流出する可能性がありますが、ライブサイトに問題がある場合に限られます。これらのアクティビティを実行する場合、送信中のデータは暗号化されます。
+一般に、いいえ。 現在、NA (北米)、EMEA (ヨーロッパ、中東、アフリカ)、および APAC (アジア太平洋) 地域に、監査パイプラインを展開しています。 ただし、ライブサイトの問題発生時に負荷分散を行うために、これらの地域間でデータを転送することが必要な場合があります。 これらのアクティビティを実行すると、転送中のデータが暗号化されます。 複数地域の組織の場合、組織のすべての地域から収集された監査データは、組織のホーム地域にのみ格納されます。
 
 **監査データは暗号化されますか?**
 
