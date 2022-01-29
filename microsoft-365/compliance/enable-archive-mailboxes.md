@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 コンプライアンス センターでアーカイブ メールボックスを有効にする
+title: Microsoft 365 コンプライアンスのためのアーカイブ メールボックスを有効にする
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,24 +22,25 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
-description: コンプライアンス センターを使用して、組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効にする方法を説明します。
-ms.openlocfilehash: 33bbb0987779f7810d797d7cb5a6255c32c34c75
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: 組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効または無効にする方法を説明します。
+ms.openlocfilehash: be7939f11c6aea0161f76c3796ca2ff8bd515ba0
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422341"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241397"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>セキュリティ/コンプライアンス センターでアーカイブ メールボックスを有効にする
 
-Microsoft 365 でのアーカイブ (*インプレース アーカイブ* とも呼ばれます) では、追加のメールボックスの記憶域がユーザーに提供されます。 アーカイブ メールボックスを有効にすると、ユーザーは Microsoft Outlook と Outlook on the web (以前の Outlook Web App) を使用してアーカイブ メールボックスのメッセージにアクセスし、保存することができます。 ユーザーは、自分のプライマリ メールボックスとアーカイブ メールボックスの間でメッセージを移動したりコピーしたりもできます。 ユーザーはまた、削除済みアイテムの復元ツールを使用して、アーカイブ メールボックスの [回復可能なアイテム] フォルダーから削除済みのアイテムを復元できます。
+Microsoft 365 でのアーカイブ (*インプレース アーカイブ* とも呼ばれます) では、追加のメールボックスの記憶域がユーザーに提供されます。 詳細については、「[アーカイブ メールボックスの詳細](archive-mailboxes.md)」を参照してください。
 
-> [!NOTE]
-> Microsoft 365 の自動拡張アーカイブ機能は、アーカイブ メールボックスに追加のストレージを提供します。 自動拡張アーカイブが有効な状態で、ユーザーのアーカイブメールボックスの記憶域クォータの初期値に達すると、Microsoft 365 は追加の記憶域を自動的に追加します。 つまり、管理者が最初にアーカイブ メールボックスを有効にし、自動拡張アーカイブを組織で有効にしておくと、ユーザーのメールボックスの記憶域が足りなくなることも、管理者による管理の必要もなくなります。 詳細については、「[自動拡張アーカイブの概要](autoexpanding-archiving.md)」を参照してください。
+この記事の情報を使用して、Microsoft 365 コンプライアンス センターまたは PowerShell を使用してアーカイブ メールボックスを有効または無効にします。 ユーザーのアーカイブ メールボックスに対して自動診断チェックを実行し、問題と推奨される解決策を特定する方法についても説明します。
 
 ## <a name="get-the-necessary-permissions"></a>必要なアクセス許可を取得する
 
-アーカイブ メールボックスを有効または無効にするには、Exchange Online でメール受信者役割が自分に割り当てられている必要があります。 既定では、この役割は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> の **[アクセス許可]** ページで受信者管理役割グループまたは組織管理役割グループに割り当てられています。 Microsoft 365 コンプライアンス センターの [**アーカイブ**] ページが表示されない場合、必要なアクセス許可を自分に割り当ててもらうよう管理者に依頼します。
+アーカイブ メールボックスを有効または無効にするには、Exchange Online でメール受信者の役割が自分に割り当てられている必要があります。 既定では、この役割は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> の **[アクセス許可]** ページで受信者管理役割グループまたは組織管理役割グループに割り当てられています。 
+
+Microsoft 365 コンプライアンス センターの [**アーカイブ**] ページが表示されない場合、必要なアクセス許可を自分に割り当ててもらうよう管理者に依頼します。
 
 ## <a name="enable-an-archive-mailbox"></a>アーカイブ メールボックスの有効化
 
@@ -150,24 +151,6 @@ Microsoft 365 管理センターでポップアップ ページが開きます�
 > [!NOTE]
 > アーカイブ メールボックスの診断チェックを使用するには、Microsoft 365 グローバル管理者である必要があります。 なお、この機能は、Microsoft 365 Government クラウド、21 Vianet が運用する Microsoft 365、または Microsoft 365 Germany では使用できません。
 
-## <a name="more-information"></a>詳細情報
+## <a name="next-steps"></a>次の手順
 
-- アーカイブ メールボックスを有効にすると、ユーザーは自分のアーカイブ メールボックスにメッセージを保存することができます。ユーザーは、Microsoft Outlook と Outlook on the web を使って、そのアーカイブ メールボックスにアクセスできます。これらのクライアント アプリケーションのいずれかを使って、アーカイブ メールボックスのメッセージを表示したり、プライマリ メールボックスとアーカイブ メールボックス間でメッセージを移動またはコピーしたりできます。また、削除済みアイテム復元ツール使って、アーカイブ メールボックスの [回復可能なアイテム] フォルダーから削除済みアイテムを復元することもできます。
-
-  インプレース アーカイブをサポートしている Outlook のライセンスの一覧については、「[Outlook の Exchange 機能に関するライセンス要件](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99)」を参照してください。
-
-- インプレース アーカイブは、組織のアイテム保持、電子情報開示、および保留に関する要件を管理者やユーザーが満たすためのサポートをします。 たとえば、組織の Exchange アイテム保持ポリシーを使用して、メールボックスの内容をユーザーのアーカイブ メールボックスに移動することができます。 Microsoft 365 コンプライアンス センターでコンテンツ検索ツールを使用してユーザーのメールボックスで特定のコンテンツを検索するすると、ユーザーのアーカイブ メールボックスも検索されます。 また、ユーザーのメールボックスに訴訟ホールドを配置したりアイテム保持ポリシーを適用したりすると、アーカイブ メールボックス内のアイテムも保持されます。
-
-- アーカイブ メールボックスを有効にした後は、組織では、すべてのメールボックスに自動的に割り当てられる 既定の Exchange アイテム保持ポリシー (メッセージング レコード管理 (MRM) ポリシーとも呼ばれています) を活用できます。 アーカイブ メールボックスを有効にすると、既定の Exchange アイテム保持ポリシーは自動的に次を行います。
-
-  - 2 年間以上経過したアイテムを、ユーザーのプライマリ メールボックスからアーカイブ メールボックスに移動します。
-
-  - 14 日以上経過したアイテムを、ユーザーのプライマリ メールボックスの [回復可能なアイテム] フォルダーから、アーカイブ メールボックスの [回復可能なアイテム] フォルダーへ自動的に移動します
-
-- アーカイブ メールボックスと Exchange アイテム保持ポリシーの詳細については、次のトピックを参照してください。
-
-  - [Exchange Online での保持タグおよびアイテム保持ポリシー](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
-
-  - [Exchange Online の既定のアイテム保持ポリシー](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
-
-  - [組織のメールボックスについて、アーカイブ削除ポリシーを設定する](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+追加の記憶領域については、[自動拡張アーカイブ](autoexpanding-archiving.md)を有効にすることを検討してください。 手順については、「[自動拡張アーカイブを有効にする](enable-autoexpanding-archiving.md)」を参照してください。

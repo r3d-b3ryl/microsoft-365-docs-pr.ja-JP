@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイルプランでは、アイテム保持ラベルに高度な管理機能が提供されます。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 5154a5347fa22e5315abd148327d8eab5508f0d3
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 464cbe5af7ea08755ec3d49949d4707448566b27
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372764"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241409"
 ---
-# <a name="use-file-plan-to-manage-retention-labels"></a>ファイルプランを使用して保持ラベルを管理する
+# <a name="use-file-plan-to-create-and-manage-retention-labels"></a>ファイル計画を使用して保持ラベルを作成および管理する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
@@ -113,6 +113,36 @@ Microsoft 365 コンプライアンスセンターで、もしも既に **情報
 
 ![プロビジョニング/引用用の新しいファイル プラン記述子を作成する。](../media/file-plan-descriptors-create.png)
 
+## <a name="create-retention-labels"></a>保持ラベルを作成する
+
+1. **[ファイル計画]** ページから、[**+ ラベルを作成する]** > **[保持ラベル]** を選択します。
+
+2. 指示に従って構成プロセスを実行します。
+    
+    
+    
+    保持ラベルを使用してレコードを宣言するには、**アイテムをレコードとしてマーク**、または **アイテムを規制レコードとしてマーク** を選択します。 詳細については、「 [レコードを宣言するために保持ラベルを構成する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
+
+3. ラベルを作成し、ラベルの公開、ラベルの自動適用、または単にラベルを保存するオプションが表示されたら、[**今すぐラベルを保存する**] を選択し、[**完了**] を選択します。
+
+4. さらにラベルを作成するには、これらの手順を繰り返します。
+
+## <a name="edit-retention-labels"></a>保持ラベルを編集する
+
+既存の保持ラベルを編集するには、**[ファイル計画]** ページからラベルを選択し、**[ラベルの編集]** オプションを選択して保持の編集プロセスを開始します。これにより、ラベルの説明と有効な設定を変更できます。
+
+ラベルを作成して保存した後には変更できない設定があり、それらは以下のものを含みます。
+- 保持ラベル名および保持期間を除く保持設定。 ただし、アイテムにラベルが付けられた時期に基づいて保持期間が設定されている場合、保持期間を変更することはできません。
+- アイテムをレコードとしてマークするオプション。
+
+## <a name="delete-retention-labels"></a>保持ラベルを削除する
+
+どの保持ラベル ポリシーにも現在含まれていない、[[発行済み]](create-apply-retention-labels.md) または [[自動適用]](apply-retention-labels-automatically.md) 保持ラベルや、イベントベースの保持用に構成されていない保持ラベルを削除したり、アイテムを規制レコードとしてマークしたりできます。
+
+削除可能な保持ラベルについては、アイテムに適用されている場合、削除に失敗し、ラベル付きアイテムを識別するためのコンテンツ エクスプローラーへのリンクが表示されます。
+
+ただし、コンテンツ エクスプローラーにラベルが付いているアイテムが表示されるまでに最大 2 日かかる場合があります。 このシナリオでは、コンテンツ エクスプローラーへのリンクを表示せずに保持ラベルが削除されることがあります。
+
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>すべての保持ラベルをエクスポートして、オフラインレビューを分析または有効にする
 
 組織内のデータ ガバナンス関係者との定期的なコンプライアンス レビューを促進するように、ファイル計画マネージャーではすべての保持ラベルの詳細を .csv ファイルにエクスポートできます。
@@ -186,6 +216,6 @@ A *.csv ファイルは既存の全ての保持ラベルを開く、を含みま
 
 ## <a name="next-steps"></a>次の手順
 
-保持ラベルの作成、編集、適用の詳細については、次の 2 つのシナリオを参照してください。
-- [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
+保持ラベルを作成したので、ラベルを発行するか、自動的に適用することで、アイテムに追加する準備ができました。
+- [アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)
 - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)

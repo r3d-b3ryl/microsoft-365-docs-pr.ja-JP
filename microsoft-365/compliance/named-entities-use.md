@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: データ損失防止ポリシーで名前付きエンティティを利用するには、次の手順を使用します。
-ms.openlocfilehash: 5d81f216ddd86816148220c178b991db4e4803b0
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: f3dac4efa1b0cf84971ac4d07f78144b438d1161
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245101"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271516"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
 
@@ -41,11 +41,11 @@ ms.locfileid: "62245101"
 - Office 365 E5
 - Microsoft 365 E5
 
-完全なライセンスの詳細については、「サービスの説明 [」を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)。
+完全なライセンスの詳細については、「サービスの [説明」を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)。
 
 ### <a name="permissions"></a>アクセス許可
 
-データ損失防止 (DLP) ポリシーの作成および編集に使用するアカウントには **、DLP コンプライアンス管理の役割のアクセス許可が** 必要です。 詳細については、「ユーザーにコンプライアンス[センターへのアクセス権をOffice 365する」を参照してください。](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+データ損失防止 (DLP) ポリシーの作成および編集に使用するアカウントには、 **DLP コンプライアンス管理の役割のアクセス許可が** 必要です。 詳細については、「ユーザーにコンプライアンス センター[へのアクセス権をOffice 365する」を参照してください。](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 
 ## <a name="supported-locations"></a>サポートされている場所
@@ -61,19 +61,20 @@ ms.locfileid: "62245101"
 
 
 - オンプレミス リポジトリ
+- Power BI
 
 ## <a name="create-and-edit-enhanced-policies"></a>拡張ポリシーの作成と編集
 
-DLP ポリシーを作成または編集するには、「DLP ポリシーの作成、テスト、および調整」の [手順を使用します](create-test-tune-dlp-policy.md)。
+DLP ポリシーを作成または編集するには、「DLP ポリシーの作成、テスト、および調整」 [の手順を使用します](create-test-tune-dlp-policy.md)。
 
 ## <a name="workloads-and-services-that-support-named-entities"></a>名前付きエンティティをサポートするワークロードとサービス
 
 
 - **Microsoft 3655 電子情報開示は、Substrate サービス** での名前付きエンティティの使用をサポートしています。
-- **Microsoft Defender for Cloud Apps では、Defender** for Cloud Apps ポリシーでの名前付きエンティティの使用がサポートされています。
-- **Insider Risk Management は、Substrate** サービスでの名前付きエンティティの使用をサポートします。
-- **通信コンプライアンス** は、トランスポート ルールとデータ保存時のExchangeエンティティの使用をサポートしています。
-- **Microsoft Information Governance** (MIG) は、トランスポート ルールと保存データのExchange名前付きエンティティの使用をサポートしています。
+- **Microsoft Defender for Cloud Apps では、** Defender for Cloud Apps ポリシーでの名前付きエンティティの使用がサポートされています。
+- **Insider Risk Management は、** Substrate サービスでの名前付きエンティティの使用をサポートします。
+- **通信コンプライアンス** は、トランスポート ルールとデータの保存時Exchange名前付きエンティティの使用をサポートしています。
+- **Microsoft Information Governance** (MIG) では、トランスポート ルールと保存データのExchange名前付きエンティティの使用はサポートされていません。
  
 ### <a name="unified-dlp"></a>統合 DLP
 
@@ -87,7 +88,7 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの作
 |Exchange トランスポート ルール     |サポートなし |
 |OneDrive for Business保存時のデータ     |サポート対象         |
 |SharePointオンライン データの保存     |サポートされる         |
-|Teams保存時のデータ     |サポート対象         |
+|Teams保存時のデータ     |サポートされる         |
 |電子メール メッセージの保存時のデータ     |サポートなし         |
 |Microsoft Defender for Cloud Apps     |サポートされる         |
 
@@ -98,11 +99,11 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの作
 |Office Win32 クライアントをオフラインにする   |サポートされている場合、ユーザーはラベルを選択して手動で適用する必要があります |
 |オンライン Office Win32 クライアント|古い信頼度スキームでサポートされる |
 |Outlookオンライン   |古い信頼度スキームでサポートされる  |
-|Office WAC クライアント     |サポート対象 |
+|Office WAC クライアント     |サポートされる |
 |OWA     |サポート対象 |
 |Exchangeトランスポート     |サポートなし |
-|OneDrive for Business保存時のデータ     |サポート対象 |
-|SharePointオンライン データの保存|サポート対象|
+|OneDrive for Business保存時のデータ     |サポートされる |
+|SharePointオンライン データの保存|サポートされる|
 |Azure Information Protection (AIP) スキャナー|サポートなし|
 
 ## <a name="known-issues"></a>既知の問題
