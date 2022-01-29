@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、調整する方法について学習します。
-ms.openlocfilehash: f6997a6f97aa103e6d8af2ff85fe5a39ef062050
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: cc31d067eaf2684c17a09d7b2731a5cc3500af76
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938939"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271948"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
 
@@ -36,7 +36,7 @@ DLP は、電子メール メッセージとファイルを調べて、クレジ
 - 電子メールを送信またはファイルを共有しているエンド ユーザーに警告を表示する
 - メールまたはファイルの共有の実行を積極的にブロックする
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 DLP ポリシーを作成するコンプライアンス チームのメンバーは、コンプライアンス センターへのアクセス許可を持っている必要があります。 既定では、テナント管理者はコンプライアンス担当者や他のユーザーにアクセス権を付与できます。 次の手順を実行します。
   
@@ -44,7 +44,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
     
 2. セキュリティ &amp; コンプライアンス センターの [**アクセス許可**] ページで役割グループを作成します。 
 
-3. 役割グループの作成中に、[役割の選択] セクションを使用して、役割グループに次の役割を追加 **します**。
+3. 役割グループの作成中に、[役割の選択] セクションを使用して、役割グループに次の役割を追加 **します。DLP コンプライアンス管理**。
     
 4. **メンバーの選択** セクションを使用して、以前に作成した Microsoft 365 グループを役割グループに追加します。
 
@@ -54,24 +54,24 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
   
 ポリシーを適用しない DLP ポリシーを作成して適用するには、これらのアクセス許可が必要です。
 
-### <a name="roles-and-role-groups-in-preview"></a>プレビューでの役割と役割グループ
+### <a name="roles-and-role-groups-in-preview"></a>プレビュー段階の [役割と役割グループ]
 
-プレビューには、アクセス制御を微調整するためにテストアウトできる役割と役割グループがあります。
+プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
 
-プレビューに含Microsoft Information Protection (MIP) ロールの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センターの役割 [」を&してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
-- 情報保護管理者
-- 情報保護アナリスト
-- 情報保護調査員
-- 情報保護リーダー
+- Information Protection 管理者
+- Information Protection アナリスト
+- Information Protection 調査員
+- Information Protection 閲覧者
 
-プレビュー中の MIP 役割グループの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センター」の「役割 [グループ&参照してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「Security [& コンプライアンス センター」を参照してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - 情報保護
-- 情報保護管理者
-- 情報保護アナリスト
-- 情報保護調査員
-- 情報保護リーダー
+- Information Protection レベル
+- Information Protection アナリスト
+- Information Protection 調査担当者
+- Information Protection 閲覧者
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>DLP による機密情報の検出方法
 
@@ -92,9 +92,9 @@ DLP が"VISA" や "AMEX" などのキーワード (クレジット カードの�
 
 データ漏洩のリスクが完全に明らかではない場合、DLP の実装をどこから始めるべきかを正確に判断することは困難です。 幸い、DLP ポリシーは "テスト モード" で実行でき、有効にする前に効果と精度を測定できます。
 
-Exchange Online の DLP ポリシーは、Exchange 管理センターを介して管理できます。 ただし、セキュリティ/コンプライアンス センターを介してすべてのワークロードの DLP ポリシーを構成できるため、この記事のデモではこれを使用します。 セキュリティ セキュリティ & コンプライアンス センターには、[データ損失防止ポリシー] の下に DLP **ポリシーがあります**  >  。 [開始 **するポリシーの作成** ] を選択します。
+Exchange Online の DLP ポリシーは、Exchange 管理センターを介して管理できます。 ただし、セキュリティ/コンプライアンス センターを介してすべてのワークロードの DLP ポリシーを構成できるため、この記事のデモではこれを使用します。 セキュリティ セキュリティ &コンプライアンス センターには、[データ損失防止ポリシー] の下に DLP **ポリシーがあります** > **。** [開始 **するポリシーの作成** ] を選択します。
 
-Microsoft 365ポリシーの作成に使用できる[さまざまな DLP](what-the-dlp-policy-templates-include.md)ポリシー テンプレートが提供されます。 例えば、ここがオーストラリアの企業だとしましょう。 オーストラリアのテンプレートをフィルター処理し、[財務]、[医療と健康]、および [プライバシー] を選択できます。
+Microsoft 365、ポリシーの作成に使用できる[さまざまな DLP](what-the-dlp-policy-templates-include.md) ポリシー テンプレートを提供します。 例えば、ここがオーストラリアの企業だとしましょう。 オーストラリアのテンプレートをフィルター処理し、[財務]、[医療と健康]、および [プライバシー] を選択できます。
 
 ![国または地域を選択するオプション。](../media/DLP-create-test-tune-choose-country.png)
 
@@ -110,11 +110,11 @@ Microsoft 365ポリシーの作成に使用できる[さまざまな DLP](what-t
 
 ![すべての場所を選択するオプション。](../media/DLP-create-test-tune-choose-locations.png)
 
-最初の [**ポリシー] 設定、** 今のところ既定値を受け入れる必要があります。 DLP ポリシーをカスタマイズできますが、既定の設定は開始する場合に便利です。
+最初の [**ポリシー] 設定**、今のところ既定値を受け入れる必要があります。 DLP ポリシーをカスタマイズできますが、既定の設定は開始する場合に便利です。
 
 ![保護するコンテンツの種類をカスタマイズするオプション。](../media/DLP-create-test-tune-default-customization-settings.png)
 
-[次へ] をクリックすると、[ポリシー] ページが表示され **設定カスタマイズ** オプションが表示されます。 テストしているポリシーの場合、ここから調整を開始できます。
+[次へ] をクリックすると、[ポリシー] ページが表示され **設定カスタマイズ オプション** が表示されます。 テストしているポリシーの場合、ここから調整を開始できます。
 
 - 現時点ではポリシー ヒントをオフにしています。これは、テストを行っているだけであってまだユーザーに何も表示したくない場合に行う合理的な手順です。 ポリシー ヒントは、ユーザーに対して DLP ポリシーに違反しようとしているという警告を表示します。 たとえば Outlook ユーザーには添付したファイルにクレジット カード番号が含まれているという警告が表示され、メールが拒否されます。 ポリシー ヒントの目的は、非準拠の動作が発生する前に停止します。
 - また、インスタンスの数を 10 から 1 に減らすことで、このポリシーがデータの一括共有だけでなくオーストラリアの PII データの共有を検出できるようにしました。
@@ -130,7 +130,7 @@ Microsoft 365ポリシーの作成に使用できる[さまざまな DLP](what-t
 
 ## <a name="test-a-dlp-policy"></a>DLP ポリシーをテストする
 
-通常のユーザー アクティビティによってポリシーがトリガーされるのを待つか、自分でトリガーを試みてください。 以前は、DLP 一致 [をトリガーする](sensitive-information-type-entity-definitions.md)方法に関する情報を提供する機密情報の種類エンティティ定義にリンクしました。
+通常のユーザー アクティビティによってポリシーがトリガーされるのを待つか、自分でトリガーを試みてください。 以前は、情報漏 [えい対策](sensitive-information-type-entity-definitions.md)の一致をトリガーする方法に関する情報を提供する機密情報の種類エンティティ定義にリンクしました。
 
 例として、この記事のために作成した DLP ポリシーはオーストラリアのタックス ファイル ナンバー (TFN) を検出します。 ドキュメントによると、一致は以下の基準に基づいています。
 
@@ -225,7 +225,7 @@ DLP ポリシー テンプレートは、そのままでは完璧ではありま
 
 インスタンス数の変更に加えて、一致の精度 (または信頼レベル) を調整することもできます。 機密情報の種類に複数のパターンがある場合、ルールが特定のパターンのみに一致するように、ルールの一致の精度を調整できます。 たとえば、誤検出を減らすためにルールの一致の精度を設定して、最も高い信頼レベルを持つパターンのみと一致するようにできます。 信頼度の詳細については、「信頼度を使用してルールを調整する方法 [」を参照してください](data-loss-prevention-policies.md#match-accuracy)。
 
-最後に、もう少し高度な情報を取得する場合は、機密情報の種類をカスタマイズできます 。たとえば、オーストラリアの運転免許証番号のキーワードのリストから "Sydney NSW" を削除して、上記でトリガーされた誤検知を排除できます。 [](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) XML と PowerShell を使用してこれを行う方法については、「組み込みの機密情報の種類をカスタマイズする [」を参照してください](customize-a-built-in-sensitive-information-type.md)。
+最後に、もう少し高度な情報を取得する場合は、機密情報の種類をカスタマイズできます 。たとえば、オーストラリアの運転免許証番号のキーワードのリストから "Sydney NSW" を[](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)削除して、上記でトリガーされた誤検知を排除できます。 XML と PowerShell を使用してこれを行う方法については、「組み込みの機密情報の種類をカスタマイズする [」を参照してください](customize-a-built-in-sensitive-information-type.md)。
 
 ## <a name="turn-on-a-dlp-policy"></a>DLP ポリシーを有効にする
 
@@ -235,8 +235,9 @@ DLP ポリシーが機密情報の種類を正確かつ効果的に検出し、�
  
 ポリシーを有効にする時期を待っている場合には、[セキュリティ/コンプライアンス センターの PowerShell に接続し](/powershell/exchange/connect-to-scc-powershell)、[Get-DlpCompliancePolicy コマンドレット](/powershell/module/exchange/get-dlpcompliancepolicy)を実行して DistributionStatus を確認します。
 
-![PowerShell でコマンドレットを実行する。](../media/DLP-create-test-tune-PowerShell.png)
-
+ ```powershell
+ Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus
+ ```
 DLP ポリシーをオンにした後、独自の最終テストをいくつか実行し、予想されるポリシー アクションが発生していることを確認する必要があります。 クレジット カード データなどをテストしようとしている場合、チェックサムを通過しポリシーをトリガーするサンプルのクレジット カードやその他の個人情報を生成する方法についての情報を掲載した Web サイトがオンラインにあります。
 
 ユーザーによる上書きを許可するポリシーは、ポリシー ヒントの一部としてユーザーにそのオプションを提示します。

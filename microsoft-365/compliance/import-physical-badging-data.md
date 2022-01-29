@@ -15,16 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: 管理者は、データ コネクタをセットアップして、組織の物理的なバッド システムからデータをインポートして、Microsoft 365。 これにより、内部リスク管理ポリシーでこのデータを使用して、組織に対する内部脅威の可能性を示す可能性のある特定のユーザーによる物理的な建物へのアクセスを検出できます。
-ms.openlocfilehash: 2bdefdea4852b06b12e4053555b69b4fc4554d61
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7eddede8b98d1b676e51a95e4fed3787f56d0bf0
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943570"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272056"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>物理的な不良データをインポートするコネクタをセットアップする (プレビュー)
 
-Microsoft 365 コンプライアンス センター でデータ コネクタをセットアップして、従業員の生の物理アクセス イベントや、組織の不良システムによって生成された物理アクセス アラームなど、物理的な不良データをインポートできます。 物理アクセス ポイントの例としては、建物へのエントリ、またはサーバー ルームまたはデータ センターへのエントリがあります。 物理的な不正なデータは、Microsoft 365内部での悪意のある活動や[](insider-risk-management.md)データの盗難から組織を保護するために、インサイダー リスク管理ソリューションで使用できます。
+Microsoft 365 コンプライアンス センター でデータ コネクタをセットアップして、従業員の生の物理アクセス イベントや、組織の不良システムによって生成された物理アクセス アラームなど、物理的な不良データをインポートできます。 物理アクセス ポイントの例としては、建物へのエントリ、またはサーバー ルームまたはデータ センターへのエントリがあります。 物理的な不正なデータは、Microsoft 365内部での悪意のあるアクティビティや[](insider-risk-management.md)データの盗難から組織を保護するために、内部リスク管理ソリューションで使用できます。
 
 物理不良コネクタのセットアップは、次のタスクで構成されます。
 
@@ -40,7 +40,7 @@ Microsoft 365 コンプライアンス センター でデータ コネクタを
 
 ## <a name="before-you-set-up-the-connector"></a>コネクタをセットアップする前に
 
-- 手順 3 で物理不良コネクタを作成するユーザーには、メールボックスインポートエクスポートの役割が割り当てられている必要Exchange Online。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、新しい役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- 手順 3 で物理不良コネクタを作成するユーザーには、メールボックスインポートエクスポートの役割が割り当てられている必要Exchange Online。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、新しい役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「役割グループの[管理」の](/Exchange/permissions-exo/role-groups#create-role-groups)記事[](/Exchange/permissions-exo/role-groups#modify-role-groups)の「役割グループの作成」または「役割グループの変更」セクションExchange Online。
 
 - 組織の物理的な不良システムからデータを取得またはエクスポートする方法 (日単位) を決定し、手順 2 で説明する JSON ファイルを作成する必要があります。 手順 4 で実行するスクリプトは、JSON ファイル内のデータを API エンドポイントにプッシュします。
 
@@ -52,13 +52,13 @@ Microsoft 365 コンプライアンス センター でデータ コネクタを
 
 最初の手順は、新しいアプリを作成し、アプリに登録Azure Active Directory (Azure AD)。 アプリは、手順 3 で作成した物理的な不良コネクタに対応します。 このアプリを作成すると、Azure ADデータを含む JSON ペイロードのプッシュ要求を認証できます。 このアプリの作成中Azure AD情報を保存してください。 これらの値は、後の手順で使用されます。
 
-- Azure AD ID (アプリ ID またはクライアント *ID* とも *呼* ばれる)
+- Azure AD ID (アプリ *ID* またはクライアント *ID とも呼ばれる*)
 
 - Azure AD シークレット (クライアント シークレットとも *呼ばれる*)
 
 - テナント ID (ディレクトリ *ID とも呼ばれる*)
 
-アプリを作成する手順については、「アプリケーションをアプリに登録する」をAzure ADを参照[Microsoft ID プラットフォーム。](/azure/active-directory/develop/quickstart-register-app)
+アプリをアプリに作成する手順については、「Azure ADにアプリケーションを登録する」[を参照Microsoft ID プラットフォーム](/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>手順 2: 物理不良データを含む JSON ファイルを準備する
 
@@ -72,7 +72,7 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 |AssetId|物理資産または物理アクセス ポイントの参照 ID。|英数字の文字列|
 |AssetName|物理アセットまたは物理アクセス ポイントの表示名。|英数字の文字列|
 |EventTime|アクセスのタイムスタンプ。|日付と時刻 (UTC 形式)|
-|AccessStatus|の値 `Success` または `Failed`|String|
+|AccessStatus|の値または`Success``Failed`|String|
 |||
 
 必要なスキーマに準拠する JSON ファイルの例を次に示します。
@@ -80,18 +80,18 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 ```json
 [
     {
-        "UserId":"sarad@contoso.com"
+        "UserId":"sarad@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
         "EventTime":"2019-07-04T01:57:49",
-        "AccessStatus":"Failed",
+        "AccessStatus":"Failed"
     },
     {
         "UserId":"pilarp@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
         "EventTime":"2019-07-04T02:57:49",
-        "AccessStatus":"Success",
+        "AccessStatus":"Success"
     }
 ]
 ```
@@ -137,9 +137,9 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
 次の手順では、物理バッド コネクタをインターフェイスにMicrosoft 365 コンプライアンス センター。 手順 4 でスクリプトを実行すると、手順 3 で作成した JSON ファイルが処理され、手順 1 で構成した API エンドポイントにプッシュされます。 この手順では、コネクタの作成時に生成される JobId を必ずコピーします。 スクリプトの実行時に JobId を使用します。
 
-1. [データ コネクタ] にMicrosoft 365 コンプライアンス センターし、[データ コネクタ]<a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**を選択します**</a>。
+1. [データ コネクタ] Microsoft 365 コンプライアンス センターし、[データ コネクタ <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**] を選択します**</a>。
 
-2. [物理バー **ジ] の [** データ コネクタ] ページ **で、[** 表示] を **クリックします**。
+2. [データ コネクタ **] ページの [** 物理バージ] で **、[** 表示] を **クリックします**。
 
 3. [物理バー **ジ] ページで、[** コネクタの追加] **をクリックします**。
 
@@ -167,12 +167,12 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
 物理不良コネクタをセットアップする次の手順は、JSON ファイル (手順 2 で作成した) の物理不良データを手順 1 で作成した API エンドポイントにプッシュするスクリプトを実行することです。 参照用のサンプル スクリプトを提供し、それを使用するか、独自のスクリプトを作成して JSON ファイルを API エンドポイントに投稿することができます。
 
-スクリプトを実行すると、物理的な不良データを含む JSON ファイルが Microsoft 365 組織にプッシュされ、内部リスク管理ソリューションからアクセスできます。 物理的な不良データを毎日投稿することをお勧めします。 これを行うには、プロセスを自動化して、物理バッド システムから毎日 JSON ファイルを生成し、スクリプトをスケジュールしてデータをプッシュします。
+スクリプトを実行すると、物理的な不良データを含む JSON ファイルが Microsoft 365 組織にプッシュされ、インサイダー リスク管理ソリューションからアクセスできます。 物理的な不良データを毎日投稿することをお勧めします。 これを行うには、プロセスを自動化して、物理バッド システムから毎日 JSON ファイルを生成し、スクリプトをスケジュールしてデータをプッシュします。
 
 > [!NOTE]
 > API で処理できる JSON ファイル内のレコードの最大数は 50,000 レコードです。
 
-1. サンプル スクリプト[にアクセスGitHubこの](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1)サイトに移動します。
+1. このサイト[に移動GitHubサンプル](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1) スクリプトにアクセスします。
 
 2. [Raw] **ボタンを** クリックして、スクリプトをテキスト ビューに表示する
 
@@ -194,7 +194,7 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
    |パラメーター|説明|
    |---|---|
-   |tenantId|これは、手順 1 で取得Microsoft 365組織の ID です。 組織の tenantId は、管理センターの[概要] ブレードAzure ADすることもできます。 これは、組織を識別するために使用されます。|
+   |tenantId|これは、手順 1 で取得Microsoft 365組織の ID です。 組織の tenantId は、管理センターの [概要]  ブレードAzure ADすることもできます。 これは、組織を識別するために使用されます。|
    |appId|これは、手順 1 Azure ADで作成したアプリのAzure AD ID です。 これは、スクリプトが組織Azure ADアクセスしようとするときに、認証に使用Microsoft 365されます。|
    |appSecret|これは、手順 1 Azure ADで作成したアプリのアプリケーション Azure ADシークレットです。 これは、認証にも使用されます。|
    |jobId|これは、手順 3 で作成した物理不良コネクタのジョブ ID です。 これは、Microsoft クラウドにプッシュされる物理不良データを物理的な不良コネクタに関連付ける場合に使用します。|
@@ -204,7 +204,7 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
    各パラメーターの実際の値を使用する物理バッド コネクタ スクリプトの構文の例を次に示します。
 
    ```powershell
-   .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
+   .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -jsonFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
    アップロードが成功した場合、スクリプトは成功したメッセージアップロード **表示** します。
@@ -218,19 +218,19 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
 物理的な不良コネクタを作成し、物理的な不良データをプッシュした後、コネクタを表示し、ファイルの状態をアップロードMicrosoft 365 コンプライアンス センター。 スクリプトを定期的に自動的に実行するスケジュールを設定した場合は、前回スクリプトを実行した後に現在の状態を表示することもできます。
 
-1. [データ コネクタ] にMicrosoft 365 コンプライアンス センターし、[データ コネクタ]<a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**を選択します**</a>。
+1. [データ コネクタ] Microsoft 365 コンプライアンス センターし、[データ コネクタ <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**] を選択します**</a>。
 
 2. [コネクタ **] タブをクリック** し、物理的な不良コネクタを選択して、フライアウト ページを表示します。 このページには、コネクタに関するプロパティと情報が含まれる。
 
    ![物理的な不良コネクタの状態のフライアウト ページ。](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. [ **最後のインポート]** で、[ログのダウンロード] リンク **を** クリックして、コネクタの状態ログを開く (または保存) します。 このログには、スクリプトが実行され、JSON ファイルから Microsoft クラウドにデータをアップロードする度に関する情報が含まれます。
+3. [ **最後のインポート]** で、[ログのダウンロード **] リンクを** クリックして、コネクタの状態ログを開く (または保存) します。 このログには、スクリプトが実行され、JSON ファイルから Microsoft クラウドにデータをアップロードする度に関する情報が含まれます。
 
    ![物理不良コネクタ ログ ファイルには、アップロードされた JSON ファイルのオブジェクトの数が表示されます。](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   **RecordsSaved フィールド** は、アップロードされた JSON ファイル内のオブジェクトの数を示します。 たとえば、JSON ファイルに 4 つのオブジェクトが含まれている場合、スクリプトが JSON ファイル内のすべてのオブジェクトを正常にアップロードした場合 **、RecordsSaved** フィールドの値は 4 になります。
+   **RecordsSaved フィールド** は、アップロードされた JSON ファイル内のオブジェクトの数を示します。 たとえば、JSON ファイルに 4 つのオブジェクトが含まれている場合、スクリプトが JSON ファイル内のすべてのオブジェクトを正常にアップロードした場合、 **RecordsSaved** フィールドの値は 4 になります。
 
-手順 4 でスクリプトを実行していない場合、スクリプトをダウンロードするリンクが [最後のインポート] の下 **に表示されます**。 スクリプトをダウンロードし、手順 4 の手順に従って実行できます。
+手順 4 でスクリプトを実行していない場合は、スクリプトをダウンロードするリンクが [最後のインポート] の下 **に表示されます**。 スクリプトをダウンロードし、手順 4 の手順に従って実行できます。
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>(省略可能)手順 6: スクリプトを自動的に実行するスケジュールを設定する
 
@@ -244,7 +244,7 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
 3. [アクション] **セクションで** 、[タスクの作成] **をクリックします**。
 
-4. [全般 **] タブ** で、スケジュールされたタスクのわかりやすい名前を入力します。たとえば、物理 **バッド コネクタ スクリプト です**。 オプションの説明を追加できます。
+4. [全般 **] タブ** で、スケジュールされたタスクのわかりやすい名前を入力します。たとえば、 **物理バッド コネクタ スクリプトなどです**。 オプションの説明を追加できます。
 
 5. [ **セキュリティ オプション] で**、次の操作を行います。
 
@@ -252,29 +252,29 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
    2. [最高の権限で **実行する] チェック ボックスが** オンになっていることを確認します。
 
-6. [トリガー] **タブを選択** し、[ **新規**] をクリックし、次の操作を行います。
+6. [トリガー] **タブを選択** し、[ **新規] をクリック** し、次の操作を行います。
 
-   1. **[設定]** で [**日** 次] オプションを選択し、スクリプトを初めて実行する日時を選択します。 スクリプトは、毎日同じ指定された時刻に実行されます。
+   1. [**設定**] で [日] オプションを選択し、スクリプトを初めて実行する日時を選択します。 スクリプトは、指定された時間に毎日実行されます。
 
    2. [ **詳細設定] で**、[有効] **チェック ボックスが** オンになっていることを確認します。
 
    3. [**OK**] をクリックします。
 
-7. [操作] **タブを** 選択し、[ **新規**] をクリックし、次の操作を行います。
+7. [操作] **タブを** 選択し、[ **新規] をクリック** し、次の操作を行います。
 
    ![物理的な不良コネクタ スクリプトの新しいスケジュールされたタスクを作成するアクション設定。](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. [アクション **] ドロップダウン** リストで、[プログラムの開始 **] が選択されている** 必要があります。
 
-   2. [プログラム **/スクリプト] ボックス** で、[参照] をクリックし、次の場所に移動して選択して、パスがボックスに表示C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe。
+   2. [プログラム **/スクリプト] ボックスで**、[参照] をクリックし、次の場所に移動して選択して、パスがボックスに表示C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe。
 
-   3. [引数 **の追加 (オプション)]** ボックスに、手順 4 で実行したのと同じスクリプト コマンドを貼り付けます。 たとえば、 .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-0 2de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
+   3. [引数 **の追加 (オプション)]** ボックスに、手順 4 で実行したのと同じスクリプト コマンドを貼り付けます。 たとえば、 .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c 3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json"
 
    4. [スタート **] (オプション) ボックス** に、手順 4 で実行したスクリプトのフォルダーの場所を貼り付けます。 たとえば、C:\Users\contosoadmin\Desktop\Scripts です。
 
-   5. **[OK] を** クリックして、新しいアクションの設定を保存します。
+   5. [ **OK] を** クリックして、新しいアクションの設定を保存します。
 
-8. [タスクの **作成] ウィンドウで****、[OK] をクリックして**、スケジュールされたタスクを保存します。 ユーザー アカウントの資格情報の入力を求めるメッセージが表示される場合があります。
+8. [タスクの **作成] ウィンドウで** 、[ **OK] をクリックして** 、スケジュールされたタスクを保存します。 ユーザー アカウントの資格情報の入力を求めるメッセージが表示される場合があります。
 
    新しいタスクがタスク スケジューラ ライブラリに表示されます。
 

@@ -14,16 +14,16 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Lync Server 2013 からアップグレードする情報とリソースを検索します。 サポートは 2023 年 4 月 11 日に終了します。
-ms.openlocfilehash: a770ce6acab4320bc84e920b1c527e9c63e72bbb
-ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
+ms.openlocfilehash: 6d6d3baed383e85a1e97d37726ff7f1eb355e98c
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889907"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271624"
 ---
 # <a name="upgrading-from-lync-server-2013"></a>Lync Server 2013 からのアップグレード
 
-Microsoft Lync Server 2013 は **、2023** 年 4 月 11 日にサポートが終了します。 この記事では、既存の Lync Server 展開をオンプレミスまたはオンプレミスのMicrosoft TeamsまたはSkype for Businessするのに役立つリソースを提供します。
+Microsoft Lync Server 2013 は、 **2023 年 4 月 11** 日にサポートが終了します。 この記事では、既存の Lync Server 展開をオンプレミスまたはオンプレミスのMicrosoft TeamsまたはSkype for Businessするのに役立つリソースを提供します。
 
 ## <a name="what-is-end-of-support"></a>サポート終了 *とは何ですか*?
 
@@ -58,23 +58,23 @@ Microsoft Lync Server 2013 は **、2023** 年 4 月 11 日にサポートが終
 
 ### <a name="upgrade-to-microsoft-teams"></a>Microsoft Teams へアップグレードする
 
-オンプレミスの展開からMicrosoft Teamsアップグレードに関する詳細なガイダンスがあります。 まず、主要な技術的要件について説明します。 ハイブリッド接続を確立する Teams必要があります。 [ハイブリッド接続を計画すると](/SkypeForBusiness/hybrid/plan-hybrid-connectivity) 、ハイブリッドのセットアップの概要が示されます。 この記事では、Lync Server 2013 にもSkype for Businessに焦点を当て、すべての概念が適用されます。 Lync [](/SkypeForBusiness/hybrid/plan-hybrid-connectivity#server-version-requirements) Server 2013 固有の詳細については、「サーバーのバージョン要件」セクションを参照してください。
+オンプレミスの展開からMicrosoft Teamsアップグレードに関する詳細なガイダンスがあります。 まず、主要な技術的要件について説明します。 ハイブリッド接続を確立する必要があります Teams。 [ハイブリッド接続を計画すると](/SkypeForBusiness/hybrid/plan-hybrid-connectivity) 、ハイブリッド環境のセットアップの概要が示されます。 この記事では、Lync Server 2013 にもSkype for Businessに焦点を当て、すべての概念が適用されます。 Lync Server [](/SkypeForBusiness/hybrid/plan-hybrid-connectivity#server-version-requirements) 2013 固有の詳細については、「サーバーのバージョン要件」セクションを参照してください。
 
-また、Lync Server 2013 の展開を完全に最新の環境に更新する必要があります。 [Lync Server 2013](https://support.microsoft.com/topic/updates-for-lync-server-2013-a2a042ac-79f0-2665-7453-0a541fb25164)のすべての最新の更新プログラムの一覧を公開しますが、次の更新プログラムは、Lync Server 2013 へのアップグレードの前提条件Microsoft Teams。
+また、Lync Server 2013 の展開が完全に最新の環境に更新されている必要があります。 [Lync Server 2013](https://support.microsoft.com/topic/updates-for-lync-server-2013-a2a042ac-79f0-2665-7453-0a541fb25164) のすべての最新の更新プログラムの一覧を公開しますが、次の更新プログラムは、Lync Server 2013 へのアップグレードの前提条件Microsoft Teams。
 
-- [Lync Server 2013 の 2021 年 9 月の累積的な更新プログラム 5.0.8308.1149](https://support.microsoft.com/topic/september-2021-cumulative-update-5-0-8308-1149-for-lync-server-2013-core-components-6755903a-fc9a-44d2-b835-2a6d01f14043)Core Components : この更新プログラムは、オンプレミスユーザーを Microsoft Teams に移動するために使用されるコマンドレットの OAuth 認証プロトコルに Live ID 認証を置き換える。 `Move-CSUser`
+- [Lync Server 2013 の 2021 年 9 月の累積的な更新プログラム 5.0.8308.1149 Core Components](https://support.microsoft.com/topic/september-2021-cumulative-update-5-0-8308-1149-for-lync-server-2013-core-components-6755903a-fc9a-44d2-b835-2a6d01f14043): この更新プログラムは、オンプレミスユーザーを Microsoft Teams に移動するために使用されるコマンドレットの OAuth `Move-CSUser` 認証プロトコルに Live ID 認証を置き換える。
 
-Lync のユーザー エクスペリエンスMicrosoft Teamsはるかに優れても、大幅に異なります。 したがって、組織とユーザーを準備して、組織の迅速な導入を確実に行うMicrosoft Teams。 組織を準備し、組織へのアップグレードを計画し、Teamsを確実にロールアウトする方法に関する豊富な情報が用意されています。 
+Lync のユーザー エクスペリエンスMicrosoft Teamsはるかに優れても、大幅に異なります。 そのため、組織とユーザーを準備して、組織の迅速な導入を確実に行うMicrosoft Teams。 組織を準備し、組織へのアップグレードを計画し、Teamsを確実にロールアウトする方法に関する豊富な情報が用意されています。
 
-**最初に [Teams、](/MicrosoftTeams/upgrade-skype-teams)** テクニカル 情報、トレーニング リソース、Ignite セッションへのリンク、利用可能なヘルプ リソース、ケース スタディなどをご覧ください。
+**まず、テクニカル 情報、トレーニング [リソース、](/MicrosoftTeams/upgrade-skype-teams)** Ignite セッションへのリンク、利用可能なヘルプ リソース、ケース スタディなどの情報を確認できる、Teams アップグレード ポータルから開始することをお勧めします。
 
 :::image type="content" source="../media/teams-upgrade-portal.png" alt-text="アップグレード ポータルTeamsスクリーンショット":::
 
 ### <a name="upgrade-to-skype-for-business-server"></a>Skype for Business Server へのアップグレード
 
-アップグレードするSkype for Business Serverのパスは、アップグレードするバージョンによって異なります。 Skype for Business Server 2015 では、Lync Server 2013 からの一時アップグレードがサポートされています。 一方、Skype for Business Server 2019 にアップグレードするには、最初に Skype for Business Server 2019 を Lync Server 2013 組織に導入し、新しいサーバーに操作を転送する必要があります。 
+アップグレードするSkype for Business Serverのパスは、アップグレードするバージョンによって異なります。 Skype for Business Server 2015 では、Lync Server 2013 からの一時アップグレードがサポートされています。 一方、Skype for Business Server 2019 にアップグレードするには、最初に 1 つ以上の新しいサーバーを追加して lync Server 2013 インストールに Skype for Business Server 2019 を導入し、追加した新しい 2019 サーバーに操作を転送する必要があります。
 
-考慮すべき重要な点の 1 つは、各製品の現在のサポート フェーズである Skype for Business 2019 がメインストリーム サポートであり、Skype for Business 2015 が現在拡張サポート中である点です。  したがって、2019 年に 2019 Skype for Business Serverすることをお勧めします。 メインストリームサポートと拡張サポートの違いの詳細については、「固定ライフサイクル ポリシー」 [を参照してください](/lifecycle/policies/fixed)。
+考慮すべき重要な点の 1 つは、各製品の現在のサポート フェーズである Skype for Business 2019 がメインストリーム サポートであり、Skype for Business 2015 が現在拡張サポート中である点です。  したがって、2019 年に 2019 Skype for Business Serverすることをお勧めします。 メインストリームサポートと拡張サポートの違いの詳細については、「固定ライフサイクル ポリシー [」を参照してください](/lifecycle/policies/fixed)。
 
 各アップグレード シナリオの詳細については、次のリソースを参照してください。
 

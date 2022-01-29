@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: メール サーバー間の電子メール通信をセキュリティで保護するために、SMTP DNS ベースの名前付きエンティティ認証 (DANE) がどのように機能しているかについて説明します。
-ms.openlocfilehash: 596e1b04576edc025eda8b3486b42c5e7e0b29bc
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 32c39859d9bfdf292fd9c7a315a0ee1ee08eae2e
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214296"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272032"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>名前付きエンティティの SMTP DNS ベース認証 (DANE) のしくみ
 
@@ -35,7 +35,7 @@ DANE for [SMTP RFC 7672](https://tools.ietf.org/html/rfc7672) は、ドメイン
 
 ### <a name="tlsa-resource-record"></a>TLSA リソース レコード
 
-TLS 認証 (TLSA) レコードは、サーバーの X.509 証明書または公開キー値を、レコードを含むドメイン名に関連付ける場合に使用します。 TLSA レコードは、ドメインで DNSSEC が有効になっている場合にのみ信頼できます。 DNS プロバイダーを使用してドメインをホストしている場合は、ドメインを構成するときに提供される設定である可能性があります。 DNSSEC ゾーン署名の詳細については、「DNSSEC ゾーン署名の概要」を [参照|Microsoft Docs](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11)). 
+TLS 認証 (TLSA) レコードは、サーバーの X.509 証明書または公開キー値を、レコードを含むドメイン名に関連付ける場合に使用します。 TLSA レコードは、ドメインで DNSSEC が有効になっている場合にのみ信頼できます。 DNS プロバイダーを使用してドメインをホストしている場合は、ドメインを構成するときに提供される設定である可能性があります。 DNSSEC ゾーン署名の詳細については、「DNSSEC ゾーン署名の概要」を [参照|Microsoft Docs](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11))。 
   
 TLSA レコードの例:
   
@@ -45,39 +45,39 @@ TLSA レコードの種類に固有の 4 つの構成可能なフィールドが
 
 **[証明書の使用状況]** フィールド: 送信側の電子メール サーバーが送信先の電子メール サーバーの証明書を確認する方法を指定します。
 
-|値  |略語  |説明 |
+|Value  |略語  |説明 |
 |---------|---------|---------|
-|0<sup>1</sup>     |PKIX-TA          |使用される証明書は、X.509 信頼チェーンからの信頼アンカーパブリック CA です。          |
-|1<sup>1</sup>     |PKIX-Enterprise Edition         |チェックされた証明書は宛先サーバーです。DNSSEC チェックでは、その信頼性を確認する必要があります。          |
+|01<sup></sup>     |PKIX-TA          |使用される証明書は、X.509 信頼チェーンからの信頼アンカーパブリック CA です。          |
+|11<sup></sup>     |PKIX-Enterprise Edition         |チェックされた証明書は宛先サーバーです。DNSSEC チェックでは、その信頼性を確認する必要があります。          |
 |2     |DANE-TA         |信頼チェーン内の信頼アンカーによって検証する必要がある X.509 ツリーのサーバーのプライベート キーを使用します。 TLSA レコードは、ドメインの TLS 証明書の検証に使用する信頼アンカーを指定します。         |
 |3     |DANE-Enterprise Edition         |コピー先サーバーの証明書と一致する場合のみ。           |
 
-<sup>1</sup>Exchange Online RFC 実装ガイダンスに従って、DANE が SMTP で実装されている場合、証明書使用法フィールドの値 0 または 1 を使用してはならない。   証明書使用法フィールドの値が 0 または 1 の TLSA レコードが Exchange Online に返Exchange Online、使用できないと処理されます。 すべての TLSA レコードが使用できないとExchange Onlineは、電子メールの送信時に 0 または 1 の DANE 検証手順を実行しません。 代わりに、TLSA レコードが存在する場合、Exchange Online は TLS を使用して電子メールを送信し、宛先電子メール サーバーが TLS をサポートしている場合は電子メールを送信するか、メールをドロップし、宛先電子メール サーバーが TLS をサポートしない場合は NDR を生成します。     
+<sup>1</sup> Exchange Online RFC 実装ガイダンスに従って、DANE が SMTP で実装されている場合、証明書使用法フィールドの値 0 または 1 を使用してはならない。   証明書使用法フィールドの値が 0 または 1 の TLSA レコードが Exchange Online に返Exchange Online、使用できないと処理されます。 すべての TLSA レコードが使用できないとExchange Onlineは、電子メールの送信時に 0 または 1 の DANE 検証手順を実行しません。 代わりに、TLSA レコードが存在する場合、Exchange Online は TLS を使用して電子メールを送信し、宛先電子メール サーバーが TLS をサポートしている場合は電子メールを送信するか、メールをドロップし、宛先電子メール サーバーが TLS をサポートしない場合は NDR を生成します。     
 
 TLSA レコードの例では、証明書使用法フィールドが '3' に設定されているので、証明書の関連付けデータ ('abc123...xyz789') は、宛先サーバーの証明書にのみ一致します。
 
 **セレクター フィールド**: 宛先サーバーの証明書をチェックする必要がある部分を示します。 
 
-|値  |略語  |説明  |
+|Value  |略語  |説明  |
 |---------|---------|---------|
 |0     |Cert         |完全な証明書を使用します。         |
 |1     |SPKI (サブジェクト公開キー情報)          |証明書の公開キーと、使用する公開キーを識別するアルゴリズムを使用します。          |
 
 TLSA レコードの例では、セレクター フィールドが '1' に設定され、証明書関連付けデータは、宛先サーバー証明書の公開キーと、使用する公開キーが識別されるアルゴリズムを使用して一致します。
 
-**一致する型** フィールド : 証明書が TLSA レコードで表される形式を示します。 
+**一致する型** フィールド: 証明書が TLSA レコードで表される形式を示します。 
 
-|値  |略語  |説明  |
+|Value  |略語  |説明  |
 |---------|---------|---------|
 |0     |Full         |TSLA レコードのデータは、完全な証明書または SPKI です。          |
 |1     |SHA-256         |TSLA レコードのデータは、証明書または SPKI の SHA-256 ハッシュです。          |
 |2     |SHA-512         |TSLA レコードのデータは、証明書または SPKI の SHA-512 ハッシュです。         |
 
-TLSA レコードの例では、照合の種類フィールドが '1' に設定されているので、証明書の関連付けデータは、宛先サーバー証明書のサブジェクト公開キー情報の SHA-256 ハッシュです。
+TLSA レコードの例では、照合の種類フィールドが '1' に設定されているので、証明書の関連付けデータは宛先サーバー証明書のサブジェクト公開キー情報の SHA-256 ハッシュです。
 
 **証明書の関連付** けデータ: 宛先サーバー証明書との照合に使用する証明書データを指定します。 このデータは、セレクター フィールドの値と一致する型の値によって異なります。
 
-TLSA レコードの例では、証明書の関連付けデータは 'abc123... に設定されます。xyz789'。 この例のセレクター フィールドの値は '1' に設定されています。この値は、宛先サーバー証明書の公開キーと、使用するアルゴリズムを参照します。 また、例の [一致する種類] フィールドの値は '1' に設定されているので、宛先サーバー証明書からサブジェクト公開キー情報の SHA-256 ハッシュを参照します。
+TLSA レコードの例では、証明書の関連付けデータは 'abc123... に設定されています。xyz789'。 この例のセレクター フィールドの値は '1' に設定されています。この値は、宛先サーバー証明書の公開キーと、使用するアルゴリズムを参照します。 また、例の [一致する種類] フィールドの値は '1' に設定されているので、宛先サーバー証明書からサブジェクト公開キー情報の SHA-256 ハッシュを参照します。
 
 ## <a name="how-can-exchange-online-customers-use-smtp-dane-outbound"></a>ユーザーがExchange Online SMTP DANE 送信を使用する方法
 
@@ -117,7 +117,7 @@ SMTP DANE エラーによって電子メールがブロックされるシナリ�
 現在、DANE でメールを送信するときにエラー コードが 4 つExchange Online。 Microsoft は、このエラー コード 一覧を積極的に更新しています。 エラーは次の場所に表示されます。
 1.  [Exchangeトレースの詳細] ビューを通じて管理センター ポータルを開きます。
 2.  DANE または DNSSEC の障害のためにメッセージが送信されていない場合に生成されるNDRs。
-3.  リモート接続アナライザー ツール [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
+3.  リモート接続アナライザー ツール [Microsoft リモート接続アナライザー](https://testconnectivity.microsoft.com/tests/o365)。
 
 |NDR コード  |説明  |
 |---------|---------|
@@ -167,16 +167,16 @@ SMTP DANE エラーによって電子メールがブロックされるシナリ�
 
 現在、受信ドメインの管理者は、DNSSEC および DANE 構成を検証およびトラブルシューティングして、これらの標準を使用してドメインから電子メールを受信Exchange Online 2 つの方法があります。 
 
-1. [RFC8460](https://datatracker.ietf.org/doc/html/rfc8460)で導入された SMTP TLS-RPT (トランスポート層セキュリティ レポート) を採用する 
+1. [RFC8460](https://datatracker.ietf.org/doc/html/rfc8460) で導入された SMTP TLS-RPT (トランスポート層セキュリティ レポート) を採用する 
 2. リモート接続アナライザー ツールを使用 [する Microsoft リモート接続アナライザー](https://testconnectivity.microsoft.com/tests/o365)
 
-TLS-RPT は、送信者がそれぞれの宛先ドメインで DANE および MTA-STS の成功と失敗に関する詳細を宛先ドメイン管理者に提供するためのレポートメカニズム [https://datatracker.ietf.org/doc/html/rfc8460](https://datatracker.ietf.org/doc/html/rfc8460) です。 TLS-RPT レポートを受信するには、レポートの送信先の電子メール アドレスまたは URI を含む TXT レコードをドメインの DNS レコードに追加する必要があります。 Exchange Onlineは JSON 形式で TLS-RPT レポートを送信します。 
+TLS-RPT [https://datatracker.ietf.org/doc/html/rfc8460](https://datatracker.ietf.org/doc/html/rfc8460) は、送信者がそれぞれの宛先ドメインで DANE および MTA-STS の成功と失敗に関する詳細を宛先ドメイン管理者に提供するためのレポートメカニズムです。 TLS-RPT レポートを受信するには、レポートの送信先の電子メール アドレスまたは URI を含む TXT レコードをドメインの DNS レコードに追加する必要があります。 Exchange Onlineは JSON 形式で TLS-RPT レポートを送信します。 
 
 レコードの例:
 
 :::image type="content" source="../media/compliance-trial/example-record.png" alt-text="レコードの例" lightbox="../media/compliance-trial/example-record.png":::
 
-2 つ目の方法は、リモート接続アナライザー [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365)を使用する方法です。これは、サービス外で電子メールを送信するときに Exchange Online が実行する DNS 構成と同じ DNSSEC と DANE チェックを実行できます。 これは、構成内のエラーをトラブルシューティングする最も直接的な方法で、これらの標準を使用Exchange Onlineメールを受信します。 
+2 つ目の方法は、リモート接続アナライザー [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365) を使用して、サービス外で電子メールを送信するときに Exchange Online が実行する DNS 構成と同じ DNSSEC と DANE チェックを実行できます。 これは、構成内のエラーをトラブルシューティングする最も直接的な方法で、これらの標準を使用Exchange Onlineメールを受信します。 
 
 トラブルシューティングを行う場合、次のエラー コードが生成される場合があります。
 

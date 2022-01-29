@@ -6,7 +6,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.article: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -15,37 +15,43 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス センターでポリシーのカスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: d4d41ef638ecdc54e99fa6d52d9212189b0bc231
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 4e9a6eb7c4766fa598b0a28f7632c7c3ed530f9e
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559786"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272068"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を作成する
 
-ここでは、PowerShell を使用して、独自のカスタムの [機密情報の種類](sensitive-information-type-entity-definitions.md)を定義する XML の *ルール パッケージ* ファイルを作成する方法について説明します。 正規表現の作成方法を理解している必要があります。 たとえば、ここでは、従業員 ID を特定するカスタムの機密情報の種類を作成します。 この XML 例を始点として参照して、カスタムの XML ファイルを作成することができます。 機密情報の種類が初めての場合は、「[機密情報の種類の詳細情報](sensitive-information-type-learn-about.md)」を参照してください。
+この記事では、カスタムの機密情報の種類を定義 *する XML ルール* パッケージ ファイルを作成 [する方法について説明します](sensitive-information-type-entity-definitions.md)。 この記事では、従業員 ID を識別するカスタム機密情報の種類について説明します。 この記事のサンプル XML は、独自の XML ファイルの開始点として使用できます。
 
-整形式の XML ファイルを作成したら、Microsoft 365 の PowerShell を使用して Microsoft 365 にアップロードできます。これでポリシーでカスタムの機密情報の種類を使用する準備ができたので、意図したとおりに機密情報が検出されることをテストします。
+機密情報の種類の詳細については、「機密情報の [種類について」を参照してください](sensitive-information-type-learn-about.md)。
+
+整形式の XML ファイルを作成したら、PowerShell を使用してそのファイルをMicrosoft 365できます。 次に、ポリシーでカスタムの機密情報の種類を使用する準備ができました。 意図した機密情報を検出する際に、その有効性をテストできます。
 
 > [!NOTE]
-> PowerShell が提供する設定された制御が不要な場合は、コンプライアンス センターでカスタムの機密情報の種類を作成できます。 詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」をご覧ください。
+> PowerShell が提供する詳細なコントロールが必要ない場合は、カスタムの機密情報の種類をユーザー設定で作成Microsoft 365 コンプライアンス センター。 詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」をご覧ください。
 
 ## <a name="important-disclaimer"></a>重要な免責事項
 
-お客様の環境やコンテンツ マッチの要件はさまざまに異なるため、Microsoft サポートは、カスタム分類や正規表現 (別名: RegEx) パターンを定義するなど、カスタムのコンテンツ マッチング定義を提供することの支援は行えません。カスタムのコンテンツ マッチングの開発、テスト、デバッグについては、Microsoft 365 のお客様は、内部の IT リソースを利用するか、Microsoft コンサルティング サービス (MCS) などの外部のコンサルティング リソースを利用する必要があります。サポート エンジニアは、機能の制限付きサポートを提供することはできますが、カスタムのコンテンツ マッチング開発がお客様の要件や義務を満たすことの保証はできません。提供できるサポートの種類の例として、テスト目的の正規表現パターンのサンプルが挙げられます。また、サポートは、特定の単一コンテンツにおいて期待通りに動作していない既存の RegEx パターンのトラブルシューティングを支援できます。
+Microsoft サポートは、コンテンツ一致の定義を作成するのに役立ち得ない。
 
-このトピックの[注意する必要がある潜在的な検証の問題](#potential-validation-issues-to-be-aware-of)を参照。
+カスタム コンテンツマッチングの開発、テスト、デバッグを行う場合は、独自の内部 IT リソースを使用するか、Microsoft Consulting Services (MCS) などのコンサルティング サービスを使用する必要があります。 Microsoft サポート エンジニアは、この機能に対して限定的なサポートを提供できますが、カスタム コンテンツ一致の提案がニーズを完全に満たすという保証はありません。
+
+MCS は、テストの目的で正規表現を提供できます。 また、1 つの特定のコンテンツ例で期待通り動作しない既存の RegEx パターンのトラブルシューティングにも役立つ情報を提供できます。
+
+この [記事で注意する必要がある検証の潜在的な問題](#potential-validation-issues-to-be-aware-of) を参照してください。
 
 テキストを処理するために使用されている Boost.RegEx (以前の RegEx++) エンジンの詳細については、「[Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)」を参照してください。
 
 > [!NOTE]
-> カスタムの機密情報の種類でキーワードの一部としてアンパサンド文字 (&) を使用する場合は、既知の問題に注意してください。 文字が適切に識別されていることを確認するには、文字の周囲にスペースを含む用語を追加する必要があります 。たとえば、L & _P_ ではなく L&P。
+> カスタム機密情報の種類でキーワードの一部としてアンパサンド文字 (&) を使用する場合は、文字の周囲にスペースを含む用語を追加する必要があります。 たとえば、not を使用`L & P`_します_`L&P`。
 
 ## <a name="sample-xml-of-a-rule-package"></a>ルール パッケージのサンプル XML
 
-このトピックで作成するルール パッケージのサンプル XML を示します。要素と属性については、以降のセクションで説明します。
-  
+ここでは、この記事で作成するルール パッケージのサンプル XML を示します。 要素と属性については、以下のセクションで説明します。
+
 ```xml
 <?xml version="1.0" encoding="UTF-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
@@ -129,107 +135,121 @@ ms.locfileid: "61559786"
 
 ## <a name="what-are-your-key-requirements-rule-entity-pattern-elements"></a>主な要件 [Rule、Entity、Pattern 要素]
 
-作業を開始する前に、ルールの XML スキーマの基本構造と、その構造を使用してカスタムの機密情報の種類を定義し、適切なコンテンツを特定できるようにする方法を理解しておくことをお勧めします。
-  
-1 つのルールによって 1 つまたは複数のエンティティ (機密情報の種類) が定義され、各エンティティによって 1 つまたは複数のパターンが定義されています。パターンとは、メールやドキュメントなどのコンテンツを評価するときにポリシーが検索する内容です。
+ルールの XML スキーマの基本的な構造を理解することが重要です。 構造を理解すると、カスタムの機密情報の種類が適切なコンテンツを識別するのに役立ちます。
 
-このトピックの XML マークアップでは、エンティティ (機密情報の種類とも呼びます) を定義するパターンとして、ルールを使用しています。そのため、このトピックに出てくるルールは、条件やアクションではなく、エンティティまたは機密情報の種類と考えてください。
-  
+ルールは、1 つ以上のエンティティ (機密情報の種類とも呼ばれる) を定義します。 各エンティティは、1 つ以上のパターンを定義します。 パターンとは、ポリシーがコンテンツ (電子メールやドキュメントなど) を評価するときにポリシーが検索するパターンです。
+
+XML マークアップでは、"rules" は機密情報の種類を定義するパターンを意味します。 この記事のルールへの参照を、他の Microsoft の機能で一般的な "条件" や "アクション" に関連付けない。
+
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>最もシンプルなシナリオ: パターンが 1 つのエンティティ
 
-ここでは、最もシンプルなシナリオについて説明します。この例では、組織の従業員 ID を含むコンテンツを特定するポリシーが必要です。ID の書式は 9 桁の数値です。この場合のパターンは、9 桁の数値を識別するルールに含まれる正規表現を示します。9 桁の数値を含むすべてのコンテンツはこのパターンを満たします。
-  
+簡単なシナリオを次に示します。組織で使用されている 9 桁の従業員の ID を含むコンテンツをポリシーで識別します。 パターンは、9 桁の数字を識別するルール内の正規表現を参照します。 9 桁の数字を含むコンテンツは、パターンを満たします。
+
 ![1 つのパターンを持つエンティティの図。](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
-  
-このパターンはシンプルですが、従業員 ID ではない可能性がある 9 桁の数値を含むコンテンツと一致するため、誤検知が多数特定される可能性があります。
-  
+
+ただし、このパターンでは **、9 桁** の数字 (長い数字や、従業員の ID ではない 9 桁の数字の他の種類を含む) を識別する場合があります。 この種類の望ましくない一致は、誤検知と *呼ばれる。*
+
 ### <a name="more-common-scenario-entity-with-multiple-patterns"></a>より一般的なシナリオ: パターンが複数あるエンティティ
 
-この理由から、複数のパターンを使用してエンティティを定義し、エンティティ (9 桁の数値など) だけでなく、それらのパターンで補強証拠 (キーワードや日付など) を特定する方が一般的です。
-  
-たとえば、従業員 ID を含むコンテンツを特定する可能性を高めるために、9 桁の数値に加え、雇用日も特定する別のパターンを定義することができます。雇用日とキーワード ("従業員 ID" など) の両方を特定する別のパターンを定義することもできます。
-  
+誤検知が発生する可能性がある場合、通常は複数のパターンを使用してエンティティを定義します。 複数のパターンは、ターゲット エンティティの証拠をサポートします。 たとえば、追加のキーワード、日付、または他のテキストは、元のエンティティ (たとえば、9 桁の従業員番号) を識別するのに役立ちます。
+
+たとえば、従業員 ID を含むコンテンツを識別する可能性を高めるには、次のパターンを定義できます。
+
+- 採用日を識別するパターン。
+- 採用日と "従業員 ID" キーワードの両方を識別するパターン。
+
 ![複数のパターンを持つエンティティの図。](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
-  
-この構造の重要な側面について一部を説明します。
-  
-- より多くの証拠が必要なパターンの方が信頼度が高くなります。この機密情報の種類を後でポリシーにおいて使用する場合、より信頼度の高い一致に対してのみ制限の多いアクション (コンテンツのブロックなど) を使用し、信頼度の低い一致には制限の少ないアクション (通知の送信など) を使用できるので便利です。
 
-- サポートされる IdMatch 要素と Match 要素は、Pattern ではなく Rule 要素の子である正規表現とキーワードを参照します。これらのサポートされる要素は、Pattern から参照されますが、Rule に含まれています。つまり、サポートされる要素の 1 つの定義 (正規表現やキーワード一覧など) は、複数のエンティティとパターンで参照できます。
+複数のパターンの一致に関して考慮すべき重要な点は次のとおりです。
 
-## <a name="what-entity-do-you-need-to-identify-entity-element-id-attribute"></a>特定する必要があるエンティティ [Entity 要素、id 属性]
+- より多くの証拠が必要なパターンの方が信頼度が高くなります。 信頼度に基づいて、次のアクションを実行できます。
+  - 信頼性の高い一致で、より制限の厳しいアクション (ブロック コンテンツなど) を使用します。
+  - 信頼性の低い一致で制限の少ないアクション (送信通知など) を使用します。
+
+- サポートと `IdMatch` 要素 `Match` は、実際には要素の子である RegExes `Rule` `Pattern`とキーワードを参照します。. これらのサポート要素は、 によって参照 `Pattern`されますが、 に含まれています `Rule`。 この動作は、正規表現やキーワード リストなど、サポート要素の 1 つの定義を複数のエンティティとパターンで参照できるという意味です。
+
+## <a name="what-entity-do-you-need-to-identify-entity-element-id-attribute"></a>どのエンティティを識別する必要がありますか? [Entity 要素, ID 属性]
 
 エンティティは、明確に定義されたパターンを持つ、クレジットカード番号などの機密情報の種類です。各エンティティは、ID として一意の GUID を持っています。
-  
+
 ### <a name="name-the-entity-and-generate-its-guid"></a>エンティティに名前を付けて GUID を生成する
 
-1. 選択した XML エディターで、[ルール] 要素と [エンティティ] 要素を追加します。
-2. カスタムのエンティティ名 (この例では従業員 ID) を含むコメントを追加します。後で、ローカライズされた文字列セクションにこのエンティティ名を追加します。この名前は、ポリシーを作成するときに UI に表示されます。
-3. エンティティの GUID を生成します。 GUID を生成する方法は複数ありますが、PowerShell で「**[guid]::NewGuid()**」と入力して簡単に作成できます。 また、後でローカライズされた文字列セクションにこのエンティティ GUID を追加します。
-  
+1. 選択した XML エディターで、要素と要素を `Rules` 追加 `Entity` します。
+2. 従業員 ID など、ユーザー設定エンティティの名前を含むコメントを追加します。 後で、エンティティ名をローカライズされた文字列セクションに追加し、ポリシーを作成するときにその名前が管理センターに表示されます。
+3. エンティティの一意の GUID を生成します。 たとえば、次のWindows PowerShellコマンドを実行できます`[guid]::NewGuid()`。 後で、エンティティのローカライズされた文字列セクションに GUID を追加します。
+
 ![ルールと Entity 要素を示す XML マークアップ。](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
-  
+
 ## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>マッチングするパターン [Pattern 要素、IdMatch 要素、Regex 要素]
 
-パターンには、機密情報の種類が検索している内容の一覧が含まれています。この一覧には、正規表現、キーワード、組み込み関数 (正規表現を実行して日付や住所を検索するなどのタスクを実行する関数) を含めることができます。機密情報の種類には、固有の信頼度を持つ複数のパターンが含まれます。
-  
-以下のすべてのパターンで共通している点は、すべてが同じ正規表現を参照していることです。この正規表現では、空白 (\s) … (\s) で囲まれた 9 桁の数値 (\d{9}) を検索しています。この正規表現は IdMatch 要素から参照されます。また、この正規表現は従業員 ID エンティティを検索するすべてのパターンに共通する要件です。IdMatch は、パターンがマッチングしようとしている識別子 (従業員 ID、クレジット カード番号、社会保障番号など) です。1 つの Pattern 要素には、1 つの IdMatch 要素のみがあります。
-  
+パターンには、機密情報の種類の一覧が含まれている。 このパターンには、RegExes、キーワード、組み込み関数を含めできます。 関数は、RegExes を実行して日付や住所を検索するタスクを実行します。 機密情報の種類には、固有の信頼レベルを持つ複数のパターンを指定することができます。
+
+次の図では、すべてのパターンが同じ正規表現を参照しています。 この RegEx は、空白で囲まれた 9 `(\d{9})` 桁の数字を検索します `(\s) ... (\s)`。 この正規表現は要素によって `IdMatch` 参照され、Employee ID エンティティを探すすべてのパターンに対する一般的な要件です。 `IdMatch` は、パターンが一致しようとしている識別子です。 要素には `Pattern` 、1 つの要素が必要 `IdMatch` です。
+
 ![単一の Regex 要素を参照する複数の Pattern 要素を示す XML マークアップ。](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
-  
-パターンを満たす場合は、数と信頼度が返され、ポリシーの条件に使用できます。機密情報の種類を検出する条件をポリシーに追加する場合、次のように数と信頼度を編集できます。信頼度 (一致精度とも呼ばれます) については、このトピックで後述します。
-  
+
+満たされたパターンの一致は、ポリシーの条件で使用できるカウントと信頼度を返します。 機密情報の種類を検出する条件をポリシーに追加すると、次の図に示すように、カウントと信頼度を編集できます。 信頼度 (マッチ精度とも呼ばれる) については、この記事の後半で説明します。
+
 ![インスタンス数と一致精度のオプション。](../media/sit-confidence-level.png)
-  
-正規表現を作成するときは、潜在的な問題があることに注意してください。たとえば、特定されるコンテンツ数が多すぎる正規表現を作成し、アップロードすると、パフォーマンスに影響する可能性があります。このような潜在的な問題の詳細については、後述の「[注意する必要がある潜在的な検証の問題](#potential-validation-issues-to-be-aware-of)」を参照してください。
-  
+
+正規表現は強力なので、知る必要がある問題があります。 たとえば、コンテンツが多すぎると識別される RegEx がパフォーマンスに影響を与える可能性があります。 これらの問題の詳細については、この記事の後半[](#potential-validation-issues-to-be-aware-of)の「潜在的な検証の問題に注意する」を参照してください。
+
 ## <a name="do-you-want-to-require-additional-evidence-match-element-mincount-attribute"></a>追加の証拠が必要な場合 [Match 要素、minCount 属性]
 
-パターンでは、IdMatch だけでなく、Match 要素を使用して、キーワード、正規表現、日付、住所など、追加の補強証拠を必須にすることができます。
-  
-1 つのパターンには複数の Match 要素を含めることができます。Pattern 要素に直接含めるか、Any 要素を使用して組み合わせることができます。複数の Match 要素の場合は、暗黙的な AND 演算子で結合されます。パターンが一致するには、すべての Match 要素を満たす必要があります。Any 要素を使用して、AND 演算子または OR 演算子を導入することもできます (詳細については後述します)。
-  
-省略可能な minCount 属性を使用して、各 Match 要素で検出する必要のある一致のインスタンス数を指定できます。たとえば、キーワード一覧の少なくとも 2 つのキーワードが検出された場合にのみ、パターンを満たすものと指定することができます。
-  
+さらに、パターン `IdMatch`は要素 `Match` を使用して、キーワード、RegEx、日付、アドレスなどの追加の証拠を要求できます。
+
+A には `Pattern` 、複数の要素が含 `Match` まれる場合があります。
+
+- 要素内で直接 `Pattern` 指定します。
+- 要素を使用して結合 `Any` します。
+
+`Match` 要素は暗黙的 AND 演算子によって結合されます。 つまり、パターンが一 `Match` 致するには、すべての要素を満たす必要があります。
+
+要素を使用して AND `Any` 演算子または OR 演算子を導入できます。 要素 `Any` については、この記事で後述します。
+
+省略可能な属性を使用 `minCount` して、各要素に対して一致する必要があるインスタンスの数を指定 `Match` できます。 たとえば、キーワード リストから少なくとも 2 つのキーワードが見つかった場合にのみ、パターンを満たします。
+
 ![minOccurs 属性を持つ Match 要素を示す XML マークアップ。](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
-  
+
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>キーワード [Keyword 要素、Group 要素、Term 要素、matchStyle 属性、caseSensitive 属性]
 
-従業員 ID などの機密情報を特定するときに、多くの場合、補強証拠としてキーワードが必要になります。たとえば、9 桁の数値と一致するだけでなく、"カード"、"バッジ"、"ID" などの単語を検索することがあります。このような場合に Keyword 要素を使用します。Keyword 要素には ID 属性があり、複数のパターンまたはエンティティの複数の Match 要素から参照できます。
-  
-キーワードは、Group 要素の Term 要素の一覧として含まれます。Group 要素には、2 つの有効値を持つ matchStyle 属性があります。
-  
-- **matchStyle="word"** word の一致は、空白または他の区切り文字で囲まれた複数の単語全体を特定します。複数の単語の一部に一致させる場合、またはアジア言語の単語と一致させる場合を除き、常に word を使用することをお勧めします。 
-    
-- **matchStyle="string"** string の一致は、囲んでいる文字にかかわらず、文字列を特定します。たとえば、"id" は "bid" と "idea" と一致します。アジア言語と一致させる必要がある場合、またはキーワードが他の文字列の一部に含まれる可能性がある場合にのみ、string を使用してください。 
-    
-最後に、Term 要素の caseSensitive 属性を使用して、大文字と小文字を含め、コンテンツがキーワードと完全に一致する必要があることを指定できます。
-  
+前述したように、機密情報を特定するには、多くの場合、追加のキーワードを証拠として必要とします。 たとえば、9 桁の数字に一致する以外に、Keyword 要素を使用して"card"、"badge"、"ID" のような単語を検索できます。 要素 `Keyword` には、複数の `ID` パターンまたはエンティティ内 `Match` の複数の要素で参照できる属性があります。
+
+キーワードは、要素内の要素のリスト `Term` として含 `Group` まれます。 要素には `Group` 、次の 2 つの `matchStyle` 値を持つ属性があります。
+
+- **matchStyle="word"**: 単語の一致は、空白または他の区切り記号で囲まれた単語全体を識別します。 アジア言語の単語または **単語** の一部を一致する必要がない限り、常に単語を使用する必要があります。
+
+- **matchStyle="string"**: 文字列の一致は、囲まれている文字列に関係なく文字列を識別します。 たとえば、"ID" は "bid" と "idea" と一致します。 アジア `string` 語の単語と一致する必要がある場合、またはキーワードが他の文字列に含まれている可能性がある場合にのみ使用します。
+
+最後に、要素`caseSensitive``Term`の属性を使用して、小文字と大文字を含む、コンテンツがキーワードと完全に一致する必要がある場合に指定できます。
+
 ![キーワードを参照する Match 要素を示す XML マークアップ。](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
-  
+
 ### <a name="regular-expressions-regex-element"></a>正規表現 [Regex 要素]
 
-この例の従業員 ID エンティティは、既に IdMatch 要素を使用して、空白で囲まれた 9 桁の数値というパターンの正規表現を参照しています。さらに、パターンに Match 要素を使用して追加の Regex 要素を参照し、米国の郵便番号の書式である 5 桁または 9 桁の数値など、補強証拠を特定することができます。
-  
+この例では、`ID``IdMatch`従業員エンティティは既に要素を使用してパターンの正規表現 (空白で囲まれた 9 桁の数字) を参照しています。 さらに、パターン`Match``Regex`は要素を使用して、追加の要素を参照して、米国の郵便番号の形式で 5 桁または 9 桁の番号など、詳細な証拠を識別できます。
+
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>日付や住所などのその他のパターン [組み込み関数]
 
-機密情報の種類には、組み込みの機密情報の種類だけでなく、米国の日付、EU の日付、有効期限の日付、または米国の住所など、補強証拠を特定できる組み込み関数も使用できます。Microsoft 365 は独自のカスタム関数のアップロードをサポートしていませんが、カスタムの機密情報の種類を作成した場合は、エンティティから組み込み関数を参照できます。
-  
-たとえば、従業員 ID バッジには雇用日が記載されているので、このカスタム エンティティで組み込み関数 `Func_us_date` を使用して、米国で一般的に使用されている形式の日付を特定できます。 
-  
+機密情報の種類は、組み込みの関数を使用して、証拠の裏付けを特定することもできます。 たとえば、米国の日付、EU の日付、有効期限、米国の住所などです。 Microsoft 365独自のカスタム関数のアップロードはサポートされていません。 ただし、カスタムの機密情報の種類を作成すると、エンティティは組み込み関数を参照できます。
+
+たとえば、従業員 ID `Func_us_date` バッジには採用日が含まれるので、このカスタム エンティティは組み込み関数を使用して、米国で一般的に使用される形式で日付を識別できます。
+
 詳細は、「[DLP 関数で探索する内容](what-the-dlp-functions-look-for.md)」を参照してください。
-  
+
 ![組み込み関数を参照する Match 要素を示す XML マークアップ。](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
-  
+
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>証拠のさまざまな組み合わせ [Any 要素、minMatches 属性、maxMatches 属性]
 
-Pattern 要素内のすべての IdMatch 要素と Match 要素は暗黙的な AND 演算子で結合されます。パターンを満たすには、すべての一致を満たしている必要があります。ただし、Any 要素を使用して複数の Match 要素をグループ化することで、より柔軟なマッチング ロジックを作成できます。たとえば、Any 要素を使用して、子 Match 要素のすべて一致、一致なし、完全サブセットの一致を表すことができます。
-  
-Any 要素には省略可能な minMatches 属性と maxMatches 属性があります。これらの属性を使用して、パターンが一致する前に満たす必要がある子 Match 要素数を定義できます。これらの属性では、一致が検出された証拠のインスタンス数ではなく、満たす必要がある Match 要素数を定義する点に注意してください。特定の一致について最小のインスタンス数を定義するには (たとえば、一覧の 2 つのキーワードなど)、Match 要素に minCount 属性を使用します (上記を参照してください)。
-  
+要素では `Pattern` 、すべての要素 `IdMatch` と `Match` 要素が暗黙的な AND 演算子によって結合されます。 つまり、パターンを満たす前に、すべての一致を満たす必要があります。
+
+要素を使用して要素をグループ化することで、より柔軟な `Any` 照合ロジックを作成 `Match` できます。 たとえば、要素を使用して、 `Any` その子要素のすべて、なし、または完全なサブセットを一致 `Match` できます。
+
+要素`Any`にはオプションと`minMatches``maxMatches`属性`Match`が含まれています。これは、パターンが一致する前に満たす必要がある子要素の数を定義するために使用できます。 これらの属性は、*一致する*`Match`証拠のインスタンス数ではなく、要素の数を定義します。 リストの 2 つの`minCount``Match`キーワードなど、特定の一致のインスタンスの最小数を定義するには、要素の属性を使用します (上記を参照)。
+
 ### <a name="match-at-least-one-child-match-element"></a>少なくとも 1 つの子 Match 要素に一致する
 
-最小数の Match 要素のみを満たすことを必須にするには、minMatches 属性を使用できます。実質的に、これらの Match 要素は暗黙的な OR 演算子で結合されています。この Any 要素は、米国形式の日付またはいずれかのリストのキーワードが見つかった場合に満たされます。
+最小数の要素のみを必要と `Match` するには、属性を使用 `minMatches` できます。 実際には、これらの要素 `Match` は暗黙的 OR 演算子によって結合されます。 この `Any` 要素は、US 形式の日付またはいずれかのリストのキーワードが見つかった場合に満たされます。
 
 ```xml
 <Any minMatches="1" >
@@ -238,10 +258,10 @@ Any 要素には省略可能な minMatches 属性と maxMatches 属性があり�
      <Match idRef="Keyword_badge" />
 </Any>
 ```
-    
+
 ### <a name="match-an-exact-subset-of-any-children-match-elements"></a>任意の子 Match 要素の完全サブセットと一致する
 
-特定の数の Match 要素を満たすことを必須にするには、minMatches と maxMatches を同じ値に設定できます。この Any 要素は、完全に一致する日付またはキーワードが見つかった場合にのみ満たされます。また、パターンはマッチングされません。
+要素の正確な数を要求するには `Match` 、同じ `minMatches` 値 `maxMatches` に設定します。 この `Any` 要素は、正確に 1 つの日付またはキーワードが見つかった場合にのみ満たされます。 それ以上の一致がある場合、パターンは一致しません。
 
 ```xml
 <Any minMatches="1" maxMatches="1" >
@@ -250,13 +270,13 @@ Any 要素には省略可能な minMatches 属性と maxMatches 属性があり�
      <Match idRef="Keyword_badge" />
 </Any>
 ```
-  
+
 ### <a name="match-none-of-children-match-elements"></a>子 Match 要素のいずれとも一致しない
 
 パターンを満たすための特定の証拠がないことを必須にするには、minMatches と maxMatches の両方を 0 に設定できます。この方法は、誤検知を示す可能性が高いキーワード一覧やその他の証拠がある場合に便利です。
-  
+
 たとえば、従業員 ID エンティティは "ID カード" を指している可能性があるため、キーワード "カード" を探しているとします。ただし、カードという単語が "クレジット カード" という語句内にのみ出現する場合、このコンテンツの "カード" が "ID カード" を示す可能性はあまりありません。そのため、パターンを満たす単語から除外する単語の一覧にキーワードとして "クレジット カード" を追加できます。
-  
+
 ```xml
 <Any minMatches="0" maxMatches="0" >
     <Match idRef="Keyword_false_positives_local" />
@@ -275,60 +295,60 @@ Any 要素には省略可能な minMatches 属性と maxMatches 属性があり�
 </Pattern>
 ```
 
-この例では、3 つ以上の一意の一致を使用して、給与改定パターンを定義しています。 
-  
+この例では、3 つ以上の一意の一致を使用して、給与改定パターンを定義しています。
+
 ## <a name="how-close-to-the-entity-must-the-other-evidence-be-patternsproximity-attribute"></a>エンティティと他の証拠との近接度 [patternsProximity 属性]
 
 機密情報の種類で従業員 ID を表すパターンを検索していて、そのパターンの一部として、"ID" などのキーワードのような補強証拠も検索する場合があります。この証拠が互いに近くにあるほど、パターンが実際の従業員 ID になる可能性が高くなります。パターン内の他の証拠とエンティティの近接度を判断するには、Entity 要素の必須の patternsProximity 属性を使用します。
-  
+
 ![patternsProximity 属性を示す XML マークアップ。](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
-  
+
 エンティティ内の各パターンに対し、そのパターンに対して指定されたすべての他の一致について、patternsProximity 属性値で IdMatch の場所からの距離 (Unicode 文字) を定義します。近接ウィンドウは、IdMatch の場所によってアンカーされ、IdMatch の左側と右側にウィンドウが展開されます。
-  
+
 ![近接ウィンドウの図。](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
-  
+
 以下の例は、従業員 ID のカスタム エンティティの IdMatch 要素で、キーワードまたは日付の少なくとも 1 つの補完的な一致を必要とするパターン マッチングに対して、近接ウィンドウがどのように影響するかを示しています。ID2 と ID3 の場合、近接ウィンドウ内に補強証拠がまったくないか、部分的にしかないため、ID1 のみが一致します。
-  
+
 ![腐食証拠と近接ウィンドウの図。](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
-  
-メールの場合、メッセージ本文と各添付ファイルは、別のアイテムとして扱われる点に注意してください。つまり、近接ウィンドウは、これらの各アイテムの終端を超えて延長されないということです。各アイテム (添付ファイルまたは本文) に、idMatch と補強証拠の両方が存在している必要があります。
-  
+
+電子メールの場合、メッセージ本文と各添付ファイルは個別のアイテムとして扱われる点に注意してください。 つまり、近接ウィンドウは、これらの各項目の末尾を超えて拡張されません。 アイテム (添付ファイルまたは本文) ごとに、idMatch と詳細証拠の両方をそのアイテムに存在する必要があります。
+
 ## <a name="what-are-the-right-confidence-levels-for-different-patterns-confidencelevel-attribute-recommendedconfidence-attribute"></a>パターンごとの適切な信頼度 [confidenceLevel 属性、recommendedConfidence 属性]
 
 パターンに必要な証拠が多くなるほど、パターンが一致したときに実際のエンティティ (従業員 ID など) が特定される信頼度が高くなります。たとえば、9 桁の ID 番号、雇用日、近接度の高いキーワードが必要なパターンの場合、9 桁の ID 番号のみが必要なパターンよりも信頼度が高くなります。
-  
+
 Pattern 要素には必須の confidenceLevel 属性があります。confidenceLevel の値 (1 から 100 の整数) は、エンティティに含まれる各パターンの一意の ID と考えることができます。エンティティのパターンには、異なる信頼度を割り当てる必要があります。この整数を細かく指定することにあまり大きな意味はありません。社内のコンプライアンス チームにとって意味のある数値を選択してください。カスタムの機密情報の種類をアップロードし、ポリシーを作成したら、作成するルールの条件でその信頼度を参照できます。
-  
+
 ![confidenceLevel 属性の異なる値を持つ Pattern 要素を示す XML マークアップ。](../media/sit-xml-markedup-2.png)
-  
-Entity には各パターン の confidenceLevel に加え、 recommendedConfidence 属性があります。 recommendedConfidence 属性は、ルールの既定の信頼度と考えることができます。 ポリシーでルールを作成するときに、使用するルールの信頼度を指定しない場合、そのエンティティの推奨される信頼度に基づいてルールのマッチングが行われます。 ルールパッケージ内で各エンティティ ID に recommendedConfidence 属性が必須であることに注意してください。存在しない場合、機密情報の種類を使用するポリシーを保存できません。 
-  
+
+Entity には各パターン の confidenceLevel に加え、 recommendedConfidence 属性があります。 recommendedConfidence 属性は、ルールの既定の信頼度と考えることができます。 ポリシーでルールを作成するときに、使用するルールの信頼度を指定しない場合、そのエンティティの推奨される信頼度に基づいてルールのマッチングが行われます。 ルールパッケージ内で各エンティティ ID に recommendedConfidence 属性が必須であることに注意してください。存在しない場合、機密情報の種類を使用するポリシーを保存できません。
+
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>コンプライアンス センターの UI で他の言語をサポートする場合 [LocalizedStrings 要素]
 
 コンプライアンス チームが Microsoft 365 コンプライアンス センターを使用して異なるロケールと異なる言語でポリシーを作成する場合、カスタムの機密情報の種類の名前と説明について、ローカライズされたバージョンを提供することができます。コンプライアンス チームがサポートしている言語で Microsoft 365 を使用すると、ローカライズされた名前が UI に表示されます。
-  
+
 ![インスタンス数と一致精度の構成。](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
-  
+
 Rules 要素には、LocalizedStrings 要素を含める必要があります。LocalizedStrings 要素には、カスタム エンティティの GUID を参照する Resource 要素が含まれています。また、各 Resource 要素には、1 つまたは複数の Name 要素と Description 要素が含まれており、それぞれが langcode 属性を使用して特定の言語のローカライズされた文字列を提供します。
-  
+
 ![LocalizedStrings 要素の内容を示す XML マークアップ。](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
-  
+
 ローカライズされた文字列は、カスタムの機密情報の種類がコンプライアンス センターの UI でどのように表示されるかを指定するためにのみ使用できることに注意してください。ローカライズされた文字列を使用して、キーワード リストまたは正規表現の異なるローカライズ バージョンを提供することはできません。
-  
+
 ## <a name="other-rule-package-markup-rulepack-guid"></a>その他のルール パッケージ マークアップ [RulePack GUID]
 
 最後に、各 RulePackage の先頭には、入力する必要のある一般的な情報が含まれています。次のマークアップをテンプレートとして使用し、「. . .」プレースホルダーを自分の情報に置き換えることができます。
-  
+
 最も重要な点は、RulePack の GUID を生成する必要があることです。これまでにエンティティの GUID を生成しましたが、これは RulePack の 2 つ目の GUID です。GUID を生成するにはいくつかの方法がありますが、PowerShell では [guid]::NewGuid() と入力することで簡単に行うことができます。
-  
+
 Version 要素も重要です。ルール パッケージを初めてアップロードすると、Microsoft 365 はバージョン番号を記録します。後でルール パッケージを更新して新しいバージョンをアップロードする場合は、バージョン番号を必ず更新してください。そうしないと、Microsoft 365 で新しいルール パッケージは展開されません。
-  
+
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
     <Version major="1" minor="0" build="0" revision="0" />
-    <Publisher id=". . ." /> 
+    <Publisher id=". . ." />
     <Details defaultLangCode=". . .">
       <LocalizedDetails langcode=" . . . ">
          <PublisherName>. . .</PublisherName>
@@ -337,49 +357,48 @@ Version 要素も重要です。ルール パッケージを初めてアップ�
       </LocalizedDetails>
     </Details>
   </RulePack>
-  
+
  <Rules>
   . . .
  </Rules>
 </RulePackage>
-
 ```
 
 完了すると、RulePack 要素は次のようになります。
-  
+
 ![RulePack 要素を示す XML マークアップ。](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
 
 ## <a name="validators"></a>検証ツール
 
-Microsoft 365一般的に使用される SIT の関数プロセッサを検証ツールとして公開します。 その一覧を次に示します。 
+Microsoft 365一般的に使用される SIT の関数プロセッサを検証ツールとして公開します。 その一覧を次に示します。
 
-### <a name="list-of-validators-currently-available"></a>現在利用可能な検証ツールの一覧
+### <a name="list-of-currently-available-validators"></a>現在使用可能な検証ツールの一覧
 
-- Func_credit_card
-- Func_ssn
-- Func_unformatted_ssn
-- Func_randomized_formatted_ssn
-- Func_randomized_unformatted_ssn
-- Func_aba_routing
-- Func_south_africa_identification_number
-- Func_brazil_cpf
-- Func_iban
-- Func_brazil_cnpj
-- Func_swedish_national_identifier
-- Func_india_aadhaar
-- Func_uk_nhs_number
-- Func_Turkish_National_Id
-- Func_australian_tax_file_number
-- Func_usa_uk_passport
-- Func_canadian_sin
-- Func_formatted_itin
-- Func_unformatted_itin
-- Func_dea_number_v2
-- Func_dea_number
-- Func_japanese_my_number_personal
-- Func_japanese_my_number_corporate
+- `Func_credit_card`
+- `Func_ssn`
+- `Func_unformatted_ssn`
+- `Func_randomized_formatted_ssn`
+- `Func_randomized_unformatted_ssn`
+- `Func_aba_routing`
+- `Func_south_africa_identification_number`
+- `Func_brazil_cpf`
+- `Func_iban`
+- `Func_brazil_cnpj`
+- `Func_swedish_national_identifier`
+- `Func_india_aadhaar`
+- `Func_uk_nhs_number`
+- `Func_Turkish_National_Id`
+- `Func_australian_tax_file_number`
+- `Func_usa_uk_passport`
+- `Func_canadian_sin`
+- `Func_formatted_itin`
+- `Func_unformatted_itin`
+- `Func_dea_number_v2`
+- `Func_dea_number`
+- `Func_japanese_my_number_personal`
+- `Func_japanese_my_number_corporate`
 
-これにより、独自の正規表現を定義して検証できます。 バリデーターを使用するには、独自の正規表現を定義し、正規表現を定義するときに、validator プロパティを使用して、選択した関数プロセッサを追加します。 定義が完了したら、SIT でこの正規表現を使用できます。 
+これにより、独自の RegEx を定義して検証できます。 バリデーターを使用するには、独自の RegEx を定義し `Validator` 、プロパティを使用して、選択した関数プロセッサを追加します。 定義が完了したら、SIT でこの RegEx を使用できます。
 
 次の例では、正規表現 - Regex_credit_card_AdditionalDelimiters がクレジット カードに対して定義され、その後、Func_credit_card を検証ツールとして使用してクレジット カードのチェックサム関数を使用して検証されます。
 
@@ -401,7 +420,7 @@ Microsoft 365 2 つの汎用バリデーターを提供する
 
 ### <a name="checksum-validator"></a>チェックサム検証ツール
 
-この例では、EmployeeID の正規表現を検証するために、従業員 ID のチェックサム検証ツールが定義されています。
+この例では、従業員 ID のチェックサム検証ツールを定義して、RegEx for EmployeeID を検証します。
 
 ```xml
 <Validators id="EmployeeIDChecksumValidator">
@@ -422,37 +441,37 @@ Microsoft 365 2 つの汎用バリデーターを提供する
 
 ### <a name="date-validator"></a>Date Validator
 
-この例では、日付バリデーターは、日付である正規表現部分に対して定義されます。
+この例では、RegEx パーツに対して日付検証機能が定義され、その部分は date です。
 
 ```xml
 <Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>
 <Regex id="date_regex_1" validators="date_validator_1">\d{8}</Regex>
 ```
-  
+
 ## <a name="changes-for-exchange-online"></a>Exchange Online の変更
 
-以前は、DLP 用にカスタムの機密情報の種類をインポートするために Exchange Online PowerShell を使用することがありました。 カスタムの機密情報の種類は、管理センターとコンプライアンス センター Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">で</a>使用できます。 この改善の一環で、カスタムの機密情報の種類をインポートする場合、コンプライアンス センター PowerShell の使用が必須になりました。Exchange PowerShell からはインポートできません。 カスタムの機密情報の種類は以前と同様に使用できますが、コンプライアンス センターでカスタムの機密情報の種類を変更した場合、Exchange 管理センターに表示されるまでに最大 1 時間かかる可能性があります。
-  
-コンプライアンス センターでは、**[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** コマンドレットを入力して、ルール パッケージをアップロードします。 (以前は、Exchange 管理センターで **ClassificationRuleCollection** コマンドレットを使用していました。) 
-  
+以前は、DLP 用にカスタムの機密情報の種類をインポートするために Exchange Online PowerShell を使用することがありました。 カスタムの機密情報の種類は、管理センターとコンプライアンス センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange両方</a>で使用できます。 この改善の一環で、カスタムの機密情報の種類をインポートする場合、コンプライアンス センター PowerShell の使用が必須になりました。Exchange PowerShell からはインポートできません。 カスタムの機密情報の種類は以前と同様に使用できますが、コンプライアンス センターでカスタムの機密情報の種類を変更した場合、Exchange 管理センターに表示されるまでに最大 1 時間かかる可能性があります。
+
+コンプライアンス センターでは、**[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** コマンドレットを入力して、ルール パッケージをアップロードします。 (以前は、Exchange 管理センターで **ClassificationRuleCollection** コマンドレットを使用していました。)
+
 ## <a name="upload-your-rule-package"></a>ルール パッケージをアップロードする
 
 ルール パッケージをアップロードするには、次の手順を実行します。
-  
+
 1. ルールを Unicode エンコードで .xml ファイルとして保存します。
-    
+
 2. [コンプライアンス センター PowerShell に接続する](/powershell/exchange/exchange-online-powershell)
-    
+
 3. 次の構文を使用してください。
 
    ```powershell
-   New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte -ReadCount 0)
+   New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('PathToUnicodeXMLFile'))
    ```
 
    この例では、MyNewRulePack.xml という名前の Unicode XML ファイルを C:\My Documents からアップロードします。
 
    ```powershell
-   New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte -ReadCount 0)
+   New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('C:\My Documents\MyNewRulePack.xml'))
    ```
 
    構文とパラメーターの詳細情報については、[New-dlpsensitiveinformationtyperulepackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage) をご覧ください。
@@ -466,13 +485,13 @@ Microsoft 365 2 つの汎用バリデーターを提供する
 
      ```powershell
      Get-DlpSensitiveInformationTypeRulePackage
-     ``` 
+     ```
 
    - [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) コマンドレットを使用して、機密情報の種類が一覧表示されることを確認します。
 
      ```powershell
      Get-DlpSensitiveInformationType
-     ``` 
+     ```
 
      カスタムの機密情報の種類の場合、Publisher プロパティ値を Microsoft Corporation 以外に設定します。
 
@@ -481,39 +500,39 @@ Microsoft 365 2 つの汎用バリデーターを提供する
      ```powershell
      Get-DlpSensitiveInformationType -Identity "<Name>"
      ```
-    
+
 ## <a name="potential-validation-issues-to-be-aware-of"></a>注意する必要がある潜在的な検証の問題
 
 ルール パッケージの XML ファイルをアップロードすると、システムで XML が検証され、既知の不適切なパターンや明らかなパフォーマンスの問題が確認されます。検証で確認される既知の正規表現に関する問題について一部を紹介します。
-  
+
 - 正規表現の Lookbehind アサーションは、固定の長さである必要があります。 可変長アサーションでは、エラーが発生します。
 
-    たとえば、この正規表現の最初のオプションは長さが 0 で、次の 2 つのオプションは 1 の長さなので、この正規表現は検証に `"(?<=^|\s|_)"` `^` `\s` `_` 合格しません。  この正規表現を書く別の方法は、 です `"(?:^|(?<=\s|_))"` 。
-  
-- 先頭または末尾に縦棒 "|" を指定することはできません。これは、空の一致とみなされるため、あらゆるものと一致します。
-    
-  たとえば、"|a" や "b|" では検証に合格しません。
-    
-- 先頭または末尾に ".{0,m}" パターンを指定することはできません。これは機能的な目的がなく、単にパフォーマンスが低下します。
-    
-  たとえば、".{0,50}ASDF" や "ASDF.{0,50}" では検証に合格しません。
-    
-- ".{0,m}" や ".{1,m}" をグループに含めることはできません。また、".\*" や ".+" をグループに含めることはできません。
-    
-  たとえば、"(.{0,50000})" では検証に合格しません。
-    
-- "{0,m}" または "{1,m}" リピーターを含む文字はグループ内に含めることができません。
-    
-  たとえば、"(a\*)" では検証に合格しません。
-    
-- 先頭または末尾に ".{1,m}" を指定することはできません。代わりに、"." のみを使用してください。
-    
-  たとえば、".{1,m}asdf" では検証に合格しません。代わりに、".asdf" のみを使用してください。
-    
-- グループに無制限のリピーター (「\*」や「+」など) を含めることはできません。
-    
-  たとえば、"(xx)\*" や "(xx)+" では検証に合格しません。
-  
+  たとえば、検証 `"(?<=^|\s|_)"` に合格しません。 最初のパターン (`^`) は長さが 0 で、次の 2 つのパターン ( と`\s` `_`) の長さは 1 です。 この正規表現を書く別の方法は、 です `"(?:^|(?<=\s|_))"`。
+
+- 空の一致と見なされるので、すべてと一致する alternator `|`で開始または終了することはできません。
+
+  たとえば、検証に `|a` `b|` 合格しない場合などです。
+
+- 機能上の目的を持ち `.{0,m}` 、パフォーマンスを低下させるだけのパターンで開始または終了することはできません。
+
+  たとえば、検証に `.{0,50}ASDF` `ASDF.{0,50}` 合格しない場合などです。
+
+- グループを持 `.{0,m}` つ、 `.{1,m}` またはグループに含め、グループを持 `.\*` つ、またはグループに `.+` することはできません。
+
+  たとえば、検証 `(.{0,50000})` に合格しません。
+
+- グループ内にリピーターまたはリ `{0,m}` ピーター `{1,m}` を含む文字を含めすることはできません。
+
+  たとえば、検証 `(a\*)` に合格しません。
+
+- 開始または終了できません。 `.{1,m}`代わりに、 を使用します `.`。
+
+  たとえば、検証 `.{1,m}asdf` に合格しません。 代わりに、 を使用します `.asdf`。
+
+- グループに非バウンドリピータ (`*``+`または) を設定することはできません。
+
+  たとえば、検証 `(xx)\*` に `(xx)+` 合格しません。
+
 - キーワードの長さは最大 50 文字です。  グループ内にこれを超えるキーワードがある場合、推奨される解決策は、用語のグループを[キーワード ディクショナリ](./create-a-keyword-dictionary.md)として作成し、ファイル内の Match または idMatch のエンティティの一部として XML 構造内のキーワード ディクショナリの GUID を参照することです。
 
 - 各カスタム機密情報タイプには、合計で最大 2048 個のキーワードを含めることができます。
@@ -526,26 +545,26 @@ Microsoft 365 2 つの汎用バリデーターを提供する
 
 - PowerShell コマンドレットを使用する場合、逆シリアル化されたデータの最大戻りサイズは約 1 メガバイトです。   これは、ルール パックの XML ファイルのサイズに影響します。 処理時にエラーが発生しない一貫した結果を得るための推奨制限として、アップロードされたファイルを最大 770 メガバイトに制限してください。
 
-- XML 構造では、スペース、タブ、復帰/ラインフィード エントリなどの書式設定文字は必要ありません。  アップロードのスペースを最適化するときは、このことに注意してください。 Microsoft Visual Code などのツールは、XML ファイルを圧縮するための結合線機能を提供します。
-    
+- XML 構造では、スペース、タブ、キャリッジ リターン/ラインフィード エントリなどの書式設定文字は必要としません。  アップロードのスペースを最適化するときは、このことに注意してください。 Microsoft Visual Code などのツールは、XML ファイルを圧縮するための結合線機能を提供します。
+
 パフォーマンスに影響する可能性のある問題がカスタムの機密情報の種類に含まれている場合は、アップロードされず、次のいずれかのエラー メッセージが表示されることがあります。
-  
-- **予想よりも多くのコンテンツに一致する汎用的な限定詞 (‘+’、‘\*’ など)**
-    
-- **ルックアラウンド アサーション**
-    
-- **複雑なグループ化と汎用的な限定詞の併用**
-    
+
+- `Generic quantifiers which match more content than expected (e.g., '+', '*')`
+
+- `Lookaround assertions`
+
+- `Complex grouping in conjunction with general quantifiers`
+
 ## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a>コンテンツを再クロールして機密情報を特定する
 
 Microsoft 365 は、検索クローラーを使用して、サイト コンテンツ内の機密情報を特定し、分類しています。SharePoint Online サイトと OneDrive for Business サイトのコンテンツが更新されると、自動的に再クロールされます。ただし、既存のすべてのコンテンツで新しいカスタムの機密情報の種類を特定するには、そのコンテンツを再クロールする必要があります。
-  
-Microsoft 365 でテナント全体の再クロールを手動で要求することはできませんが、サイト コレクション、リスト、またはライブラリに対して再クロールすることはできます。詳細については、「[サイト、ライブラリ、またはリストのクロールとインデックス再作成を手動で要求する](/sharepoint/crawl-site-content)」を参照してください。
-  
+
+このMicrosoft 365組織全体の再収集を手動で要求することはできませんが、サイト コレクション、リスト、またはライブラリの再収集を手動で要求できます。 詳細については、「サイト、ライブラリ、またはリストのクロールとインデックスの再作成を手動で要求 [する」を参照してください](/sharepoint/crawl-site-content)。
+
 ## <a name="reference-rule-package-xml-schema-definition"></a>リファレンス: ルール パッケージ XML スキーマの定義
 
 このマークアップをコピーし、XSD ファイルとして保存して、ルール パッケージの XML ファイルの検証に使用できます。
-  
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
@@ -892,7 +911,5 @@ Microsoft 365 でテナント全体の再クロールを手動で要求するこ
 ## <a name="more-information"></a>詳細情報
 
 - [データ損失防止について](dlp-learn-about-dlp.md)
-
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
-
 - [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)
