@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 組織のニーズを満たすルールを使用できるようにするカスタム機密情報タイプを作成する方法について説明します。
-ms.openlocfilehash: b535d24bc295a28f2aebf5152c3771cc3e999202
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8393da8e2b2607692983010783d9ae110f268f4c
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153152"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271744"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>組み込みの機密情報の種類をカスタマイズする
 
@@ -47,10 +47,10 @@ XML をエクスポートするには、[リモート PowerShell を介してセ
    $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
    ```
 
-3. 次のように入力して、そのデータすべてを含む書式設定された XML ファイルを作成します (`Set-content` は、XML をファイルに書き込むコマンドレットの一部です)。
+3. 以下のように入力して、すべてのデータを含むフォーマットされた XML ファイルを作成します。
 
    ```powershell
-   Set-Content -path C:\custompath\exportedRules.xml -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+   [System.IO.File]::WriteAllBytes('C:\custompath\exportedRules.xml', $ruleCollections.SerializedClassificationRuleCollection)
    ```
 
    > [!IMPORTANT]
@@ -206,7 +206,7 @@ XML 内でクレジット カード番号のルール定義が見つかったら
 3. PowerShell で次のように入力します。
 
    ```powershell
-   New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte)
+   New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('C:\custompath\MyNewRulePack.xml'))
    ```
 
    > [!IMPORTANT]
@@ -226,16 +226,21 @@ XML 内でクレジット カード番号のルール定義が見つかったら
 
 このトピックの手順に登場した用語の定義は次のとおりです。
 
-|**用語**|**定義**|
-|:-----|:-----|
+<br>
+
+****
+
+|用語|定義|
+|---|---|
 |エンティティ|エンティティとは、機密情報の種類 (たとえば、クレジット カード番号) のことです。各エンティティには、その ID として一意の GUID があります。GUID をコピーして XML 内で検索すると、XML ルール定義と XML ルールをローカライズしたすべての翻訳版が見つかります。また、翻訳版の GUID を検索して定義を見つけ、その GUID を検索することもできます。|
 |= (式) フィールドで使用できる関数|XML ファイルが参照する `Func_credit_card` は、コンパイル済みコードでは関数です。関数は、複雑な正規表現を実行し、チェックサムが組み込みルールと一致することを確認するために使用されます。これはコード内で実行されるため、一部の変数は XML ファイルに含まれていません。|
 |IdMatch|一致が照合されるパターンの ID です (たとえば、クレジット カード番号)。|
-|キーワード リスト|XML ファイルでは、`keyword_cc_verification` および `keyword_cc_name` も参照します。これらは、エンティティの前後 `patternsProximity` 文字以内から一致を探すキーワードのリストです。現在のところ、これらは XML 内に表示されません。|
+|キーワード リスト|XML ファイルでは、 `keyword_cc_verification` および `keyword_cc_name` も参照します。これらは、エンティティの前後 `patternsProximity` 文字以内から一致を探すキーワードのリストです。現在のところ、これらは XML 内に表示されません。  |
 |パターン|パターンには、機密タイプが探しているもののリストが含まれています。 これには、チェックサムの検証などのタスクを実行するキーワード、正規表現、および内部関数が含まれます。 機密情報タイプは、固有の信頼性を持つ複数のパターンを指定することができます。 これは、裏付けとなる証拠が見つかった場合に高い信頼度を返し、裏付けとなる証拠がほとんどまたはまったく見つからなかった場合に低い信頼度を返す機密情報タイプを作成するときに役立ちます。|
 |パターンの confidenceLevel|DLP エンジンが一致を検索した内容の信頼性のレベルです。信頼性のレベルは、パターンの要件が満たされた場合のパターンへの一致に関連付けられます。これは、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) を使用するときに考慮する必要のある信頼性の尺度です。|
-|patternsProximity|クレジット カード番号パターンらしき情報が見つかった場合、`patternsProximity` はその番号からどの程度近接した範囲内で補強証拠の探索を行うかを指定します。|
+|patternsProximity|クレジット カード番号パターンらしき情報が見つかった場合、 `patternsProximity` はその番号からどの程度近接した範囲内で補強証拠の探索を行うかを指定します。|
 |recommendedConfidence|このルールに対して推奨される信頼レベルです。推奨される信頼性は、エンティティとアフィニティに適用されます。エンティティの場合、この数値がパターンの `confidenceLevel` に対して評価されることはありません。この数値は、必要な場合に信頼レベルを選択するために役立つ提案にすぎません。アフィニティの場合、メール フロー ルール アクションが呼び出されるためには、パターンの `confidenceLevel` が `recommendedConfidence` の数値を上回っている必要があります。`recommendedConfidence` は、アクションを起動するメール フロー ルールで使用される既定の信頼レベルです。必要であれば、この代わりにパターンの信頼レベルに基づいてメール フロー ルールを起動するように手動で変更することもできます。|
+|
 
 ## <a name="for-more-information"></a>詳細情報
 

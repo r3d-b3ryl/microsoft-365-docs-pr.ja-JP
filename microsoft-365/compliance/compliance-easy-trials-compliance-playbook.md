@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 コンプライアンス ソリューション試用版プレイブック。
-ms.openlocfilehash: 83e78759bb98ddf623d5a39866e2c812964225d5
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 0da966fa23b12d4428a42eabbd102ba560c96b5f
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320793"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265705"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>試用版プレイブック: Microsoft 365 コンプライアンス ソリューション
 
-Microsoft 365 コンプライアンス ソリューション試用版プレイブックへようこそ。 このプレイブックは、Microsoft 365 のコンプライアンスおよびセキュリティ製品の堅牢で包括的な機能の確認に役立てることで、90 日間の無料トライアルを最大限に活用することができます。 
+Microsoft 365 コンプライアンス ソリューション試用版プレイブックへようこそ。 このプレイブックは、Microsoft 365 のコンプライアンスおよびセキュリティ製品の堅牢で包括的な機能の確認に役立てることで、90 日間の無料トライアルを最大限に活用することができます。
 
 それぞれのソリューションを試すことで、組織のコンプライアンスのニーズを満たすための十分な情報に基づいた決断に役立ちます。
 
@@ -42,11 +42,11 @@ Microsoft 365 コンプライアンス ソリューション試用版プレイ�
 省略可能なアドオン:
 
 - [コンプライアンス マネージャー プレミアム評価](#compliance-manager-premium-assessments)
-- [プライバシー管理](#privacy-management)
+- [Microsoft Priva プライバシー リスク管理と Microsoft Priva 主体の権利要求](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
 
 ## <a name="compliance-actions-with-microsoft-365"></a>コンプライアンス アクションと Microsoft 365
 
-組織のメタデータを変更することなく、Microsoft のコンプライアンス ソリューションを簡単かつ迅速に試すことができます。お客様の優先順位に応じて、これらのソリューション分野のいずれかを開始することで、すぐに価値を見出すことができます。 以下に、お客様から寄せられた 5 つの組織的な懸念事項と、それを解決するためのお勧めの方法をご紹介します。
+組織のメタデータを変更することなく、Microsoft のコンプライアンス ソリューションを簡単かつ迅速に試すことができます。 お客様の優先順位に応じて、これらのソリューション分野のいずれかを開始することで、すぐに価値を見出すことができます。 以下に、お客様から寄せられた 5 つの組織的な懸念事項と、それを解決するためのお勧めの方法をご紹介します。
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="コンプライアンス アクションと Microsoft 365":::
 
@@ -66,7 +66,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 ユーザーの高度な監査のセットアップを行う - 高度な監査アプリがユーザーに割り当てられていることを確認するには、[ユーザーごとに次の手順を実行します](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users)。
 
 1. 高度な監査イベントを有効にする - [SearchQueryInitiatedExchange および SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) を、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) でユーザーごとに監査できるようにします。
-1. 監査保持ポリシーの設定 - 組織のセキュリティ運用、IT、コンプライアンス チームの要件に合わせて、[追加の監査ログ保持ポリシー](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies)を作成します。 
+1. 監査保持ポリシーの設定 - 組織のセキュリティ運用、IT、コンプライアンス チームの要件に合わせて、[追加の監査ログ保持ポリシー](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies)を作成します。
 1. 高度な監査イベントの検索 - フォレンジック調査を行う場合に[重要な高度な監査イベントやそのほかのアクィビティを検索](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events)します。
 
 ### <a name="step-2-create-new-audit-log-policies-to-specify-how-long-to-retain-audit-logs-in-your-org-for-activities-performed-by-users-and-define-priority-levels-for-your-policies"></a>手順 2: [新しい監査ログ ポリシーを作成して、ユーザーが実行したアクティビティの監査ログを組織内で保持する期間を指定し、ポリシーの優先度を定義します](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)。
@@ -78,7 +78,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 
 1. 監査ログ保持ポリシーの作成前 - ポリシーを作成する前に[知っておきたい主なポイント](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)。
 1. [PowerShell で監査ログの保持ポリシーを作成する](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Microsoft 365 コンプライアンス センターで監査ログの保持ポリシーを管理する](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - 監査ログの保持ポリシーは、[監査ログ保持ポリシー タブ] (ダッシュボードとも呼ばれます) に表示されます。 ダッシュボードを使用して、監査保持ポリシーを表示、編集、および削除できます。 
+1. [Microsoft 365 コンプライアンス センターで監査ログの保持ポリシーを管理する](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - 監査ログの保持ポリシーは、[監査ログ保持ポリシー タブ] (ダッシュボードとも呼ばれます) に表示されます。 ダッシュボードを使用して、監査保持ポリシーを表示、編集、および削除できます。
 1. PowerShell で監査ログ保持ポリシーを作成して管理する - セキュリティ/コンプライアンス センター PowerShellを使用して、[監査ログ保持ポリシーの作成および管理](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell)を行うこともできます。 PowerShell を使用する理由の 1 つは、UI で使用できないレコードの種類またはアクティビティのポリシーを作成することです。
 
 ## <a name="communication-compliance"></a>通信コンプライアンス
@@ -193,10 +193,10 @@ Microsoft Endpoint DLP は、Windows 10 デバイスを監視し、機密性の�
 1. エンドポイントの準備 - [これらの要件を満たす](endpoint-dlp-getting-started.md)ために、エンドポイント DLP の導入を計画している Windows 10 デバイスを確認してください
 1. [デバイス管理にデバイスをオンボードする](endpoint-dlp-getting-started.md) - デバイス上の機密アイテムを監視および保護する前に、デバイスの監視を有効にし、エンドポイントをオンボードしなければなりません。 これらのアクションはどちらも Microsoft 365 コンプライアンスポータルで行われます。
    - シナリオ 1 – まだオンボードされていない[オンボーディング デバイス](endpoint-dlp-getting-started.md)。
-   - シナリオ 2 - [Microsoft Defender for Endpoint は既に導入されており、レポートするエンドポイントがあります](endpoint-dlp-getting-started.md)。 これらすべてのエンドポイントが管理対象デバイスのリストに表示されます。 
-1. [デバイス用の既定の DLP ポリシーの構成](mip-easy-trials.md#dlp-for-devices)または[デバイス用の新しい DLP ポリシーの定義](endpoint-dlp-learn-about.md)
-1. DLP 警告管理ダッシュボードでの[エンドポイント DLP 警告の表示](dlp-configure-view-alerts-policies.md)
-1. Activity エクスプローラーでの [Endpoint DLP データの表示](data-classification-activity-explorer.md)
+   - シナリオ 2 - [Microsoft Defender for Endpoint は既に導入されており、レポートするエンドポイントがあります](endpoint-dlp-getting-started.md)。 これらすべてのエンドポイントが管理対象デバイスのリストに表示されます。
+1. [デバイス用の既定の DLP ポリシーの構成](mip-easy-trials.md#dlp-for-devices)または[デバイス用の新しい DLP ポリシーの定義](endpoint-dlp-learn-about.md)。
+1. DLP 警告管理ダッシュボードでの[エンドポイント DLP 警告の表示](dlp-configure-view-alerts-policies.md)。
+1. Activity エクスプローラーでの [Endpoint DLP データの表示](data-classification-activity-explorer.md)。
 
 ### <a name="step-3-expand-policies-in-scope-or-protection"></a>手順 3: [範囲または保護でポリシーを展開する](dlp-learn-about-dlp.md#dlp-policy-configuration-overview)
 
@@ -205,7 +205,7 @@ DLP ポリシーの構成は柔軟に行うことができます。 Teams やデ
 1. 場所の追加
 1. 機密情報の種類またはラベルを追加して保護する
 1. アクションの追加
-   - Teams: 
+   - Teams:
       - [機密文書への外部アクセスを防止する](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
       - [ユーザーの教育に役立つポリシー ヒントと、ポリシー ヒントをカスタマイズする手順を入手する](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - デバイス: 監査のみからブロックに切り替える
@@ -252,7 +252,7 @@ Advanced eDiscovery にアクセスしたり、Advanced eDiscovery ケースの�
 
 ![コンプライアンスの境界は、機関へのアクセスを制御する検索アクセス許可フィルターと、電子情報開示ケースへのアクセスを制御する管理者の役割グループで構成されています。](../media/M365_ComplianceBoundary_OrgChart_v2.png)
 
-電子情報開示調査のためにコンプライアンスの境界を設定する 
+電子情報開示調査のためにコンプライアンスの境界を設定する
 
 1. [ユーザー属性を特定して機関を定義する](set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
 1. [各機関の役割グループを作成する](set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
@@ -278,7 +278,7 @@ Microsoft の情報保護ラベルと機密ラベルを実装して、ユーザ�
 
 対象となるお客様は、Microsoft Information Protection の既定のラベルとポリシーをアクティブ化できます。 試用版で既定の構成を有効にした場合、テナントのすべてのポリシーを構成するのに約 2 分、これらの既定のポリシーの結果を確認するのに最大 24 時間かかります。
 
-既定の構成を選択すると、1 クリックで次の設定が自動的に構成されます。 
+既定の構成を選択すると、1 クリックで次の設定が自動的に構成されます。
 
 - 秘密度ラベルと秘密度ラベル ポリシー
 - クライアント側の自動ラベル付け
@@ -306,7 +306,7 @@ Microsoft の情報保護ラベルと機密ラベルを実装して、ユーザ�
 
 ### <a name="step-3-review-and-turn-on-auto-labeling-policy"></a>手順 3: [自動ラベル付けポリシーを確認して有効にする](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 
-これで、[**情報保護**]、 > [**自動ラベル付け (プレビュー)**] ページの [**シミュレーション**] セクションに、自動ラベル付けポリシーが表示されます。 
+これで、[**情報保護**]、 > [**自動ラベル付け (プレビュー)**] ページの [**シミュレーション**] セクションに、自動ラベル付けポリシーが表示されます。
 
 ポリシーを選択して、構成と状態の詳細を確認します。 シミュレーションが完了したら、[確認するアイテム] タブを選択して、指定したルールと一致するメールまたはドキュメントを確認します。
 
@@ -323,7 +323,7 @@ Microsoft の情報保護ラベルと機密ラベルを実装して、ユーザ�
 > [!TIP]
 > 試用版のベスト プラクティス: 1 日目
 
-インサイダー リスク管理機能を管理するためのアクセス許可を構成するために使用される役割グループは 4 種類あります。 
+インサイダー リスク管理機能を管理するためのアクセス許可を構成するために使用される役割グループは 4 種類あります。
 
 [インサイダー リスク管理の役割グループにユーザーを追加します。](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
 
@@ -333,7 +333,7 @@ Microsoft の情報保護ラベルと機密ラベルを実装して、ユーザ�
 
 推奨されるアクションを使用して、インサイダー リスク管理機能をすばやく開始し、最大限に活用します。 [概要] ページにある推奨アクションは、ポリシーを構成して展開する手順や、ポリシーの一致からアラートを生成するユーザー アクション用の調査アクションを実行する手順を示します。
 
-[一覧から推奨事項を選択](insider-risk-management-configure.md#recommended-actions-preview)して、インサイダー リスク管理の構成を開始します。 
+[一覧から推奨事項を選択](insider-risk-management-configure.md#recommended-actions-preview)して、インサイダー リスク管理の構成を開始します。
 
 ![インサイダー リスクの管理に推奨されるアクション。](../media/insider-risk-recommended-actions.png)
 
@@ -362,7 +362,7 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 > [!TIP]
 > 試用版のベスト プラクティス: 1 日目
 
-アダプティブ ポリシー スコープを使用すると、AD の属性に基づいて、特定のユーザー、グループ、またはサイトにポリシーを動的に適用することができます。 
+アダプティブ ポリシー スコープを使用すると、AD の属性に基づいて、特定のユーザー、グループ、またはサイトにポリシーを動的に適用することができます。
 
 スコープの属性は、一覧から選択するか、詳細なクエリ ビルダーを使用してカスタマイズすることができます。
 
@@ -381,12 +381,12 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 ラベル申請アクティビティと廃棄レビュー アクティビティのいずれも、[レコード管理の概要] 画面で表示できます。
 
-1. [保持ラベルを機密情報を含むコンテンツに自動的に適用する](retention.md#retention-labels) 
+1. [保持ラベルを機密情報を含むコンテンツに自動的に適用する](retention.md#retention-labels)
 1. 保持期間の終了時に[廃棄レビュー](disposition.md#disposition-reviews)を含む保持ラベルを作成して適用する
 
 ### <a name="step-3-label-content-as-records-automatically-using-trainable-classifiers"></a>手順 3: トレーニング可能な分類子を使用してコンテンツを記録として自動的にラベル付けする
 
-コンテンツがレコードとして宣言されると、どのようなアクションが許可されるか、またはブロックされるかという点でアイテムに制限が加えられ、アイテムに関する追加のアクティビティが記録され、保持期間の終わりにアイテムが削除された場合には、廃棄の証明が得られます。 
+コンテンツがレコードとして宣言されると、どのようなアクションが許可されるか、またはブロックされるかという点でアイテムに制限が加えられ、アイテムに関する追加のアクティビティが記録され、保持期間の終わりにアイテムが削除された場合には、廃棄の証明が得られます。
 
 トレーニング可能な分類子は、与えられたサンプルに基づいて、さまざまな種類のコンテンツを認識するツールです。 さまざまな組み込みオプションから選択するか、特定のニーズに合わせてカスタム分類子を設定します。
 
@@ -404,7 +404,7 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 **...最後に、安全に処理します。**
 
-保持期間の終わりに処理確認がトリガーされると、選択したレビュー担当者は、レビューするコンテンツがあるというメール通知を受け取ります。 
+保持期間の終わりに処理確認がトリガーされると、選択したレビュー担当者は、レビューするコンテンツがあるというメール通知を受け取ります。
 
 処理確認を待っているコンテンツは、処理確認の最終ステージで確認担当者がコンテンツの恒久的な削除を選択しない限り削除されません。
 
@@ -418,15 +418,15 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 [コンプライアンス マネージャー プレミアム評価の試用版に関する詳細情報](compliance-easy-trials-compliance-manager-assessments.md)。
 
-### <a name="privacy-management"></a>プライバシー管理
+### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Microsoft Priva プライバシー リスク管理と Microsoft Priva 主体の権利要求
 
 **プライバシー リスクの特定と防止**
 
 データの囲い込み、データ転送、データの過剰共有などのプライバシー リスクに対してプロアクティブに特定して保護し、組織が大規模な件名要求を自動化し管理するサポートを行います。
 
-[Microsoft 365 のプライバシー管理に関する詳細情報](/privacy/solutions/privacymanagement/privacy-management)。
+[Microsoft Priva の詳細についてはこちらをご覧ください](/privacy/solutions/privacymanagement/privacy-management)。
 
-[試用版プレイブック: Microsoft 365のプライバシーマネージメント](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
+[試用版プレイブック: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## <a name="additional-resources"></a>その他のリソース
 
