@@ -2,8 +2,8 @@
 title: SharePoint Online での縮小とバンドル
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 3/1/2017
+manager: scotv
+ms.date: 1/18/2022
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Web Essentials でミニフィケーションとバンドルの手法を使用して HTTP 要求を削減する方法と、Web オンラインでページを読み込むのにかかる時間SharePointします。
-ms.openlocfilehash: 7214d396dc39147f6864144420f8fa3fd61195b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf9c997fc5245fbe58e1ffd8c306f9818783bd3f
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166960"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281473"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online での縮小とバンドル
 
@@ -41,29 +41,27 @@ JavaScript ファイルと CSS ファイルの場合は、ミニフィケーシ�
 Web Essentials などのサード パーティ製ソフトウェアを使用して、CSS ファイルと JavaScript ファイルをバンドルできます。
   
 > [!IMPORTANT]
-> Web Essentials は、サードパーティのオープンソースのコミュニティ ベースのプロジェクトです。 このソフトウェアは、2012 年および 2012 年Visual Studioの拡張機能Visual Studio 2013 Microsoft ではサポートされていません。 Web Essentials をダウンロードするには、以下の Web サイトを参照してください [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) 。 
+> Web Essentials は、サードパーティのオープンソースのコミュニティ ベースのプロジェクトです。 このソフトウェアは、2012 年および 2012 年Visual Studioの拡張機能Visual Studio 2013 Microsoft ではサポートされていません。 Web Essentials をダウンロードするには、以下の Web サイトを参照してください [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)。
   
 Web Essentials には、次の 2 つの形式のバンドルが用意されています。
   
 - .bundle: CSS および JavaScript ファイルの場合
-    
 - .sprite: イメージの場合 (Visual Studio 2013 でのみ使用可能)
-    
+
 カスタム マスター ページ内で参照されるブランド要素を持つ既存の機能がある場合は、Web Essentials を使用できます。
   
 ![カスタム マスター ページの brand 要素のスクリーンショット。](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
   
- **Web Essentials で TE000127218 と CSS バンドルを作成するには**
+### <a name="to-create-a-te000127218-and-css-bundle-in-web-essentials"></a>Web Essentials で TE000127218 と CSS バンドルを作成するには
   
 1. [Visual Studio エクスプローラーで、バンドルに含めるファイルを選択します。
-    
-2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create JavaScript バンドル ファイル** ] を選択します。 次に例を示します。 
-    
+2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create JavaScript バンドル ファイル** ] を選択します。 例:
+
     ![Web Essentials メニュー オプションを示すスクリーンショット。](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
 ## <a name="viewing-the-results-of-bundling-javascript-and-css-files"></a>JavaScript ファイルと CSS ファイルのバンドル結果の表示
 
-JavaScript および CSS バンドルを作成すると、Web Essentials は、JavaScript ファイルと CSS ファイル、および他のいくつかの構成情報を識別するレシピ ファイルと呼ばれる XML ファイルを作成します。 
+JavaScript および CSS バンドルを作成すると、Web Essentials は、JavaScript ファイルと CSS ファイル、および他のいくつかの構成情報を識別するレシピ ファイルと呼ばれる XML ファイルを作成します。
   
 ![JavaScript および CSS レシピ ファイルのスクリーンショット。](../media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
   
@@ -89,18 +87,15 @@ CSS ファイルと JavaScript ファイルをバンドルした後、要求の�
 
 JavaScript ファイルと CSS ファイルをバンドルする方法と同様に、多くの小さなアイコンやその他の一般的な画像を大きなスプライト シートに結合し、CSS を使用して個々の画像を表示できます。 個々のイメージをダウンロードする代わりに、ユーザーの Web ブラウザーはスプライト シートを 1 回ダウンロードし、ローカル コンピューターにキャッシュします。 これにより、Web サーバーへのダウンロード数とラウンド トリップ数を削減することで、ページの読み込みパフォーマンスが向上します。
   
- **Web Essentials でイメージ スプライトを作成するには**
+### <a name="to-create-an-image-sprite-in-web-essentials"></a>Web Essentials** でイメージ スプライトを作成するには**
   
 1. [Visual Studio エクスプローラーで、バンドルに含めるファイルを選択します。
-    
-2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create image sprite]** を選択します。 次に例を示します。 
-    
+2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create image sprite** ] を選択します。 例:
+
     ![イメージ スプライトを作成する方法を示すスクリーンショット。](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   
 3. スプライト ファイルを保存する場所を選択します。 .sprite ファイルは、スプライト内の設定とファイルを記述する XML ファイルです。 次の図は、スプライト PNG ファイルとその対応する .sprite XML ファイルの例を示しています。
-    
+
     ![スプライト ファイルのスクリーンショット。](../media/0876bb2a-d1b9-4169-8e95-9c290d628d90.png)
   
     ![スプライト XML ファイルのスクリーンショット。](../media/d1f94776-280d-4d56-abb5-384f145d9989.png)
-  
-

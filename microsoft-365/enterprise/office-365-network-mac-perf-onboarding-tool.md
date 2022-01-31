@@ -3,7 +3,7 @@ title: Microsoft 365接続テスト ツール
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/06/2021
+ms.date: 1/18/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365接続テスト ツール
-ms.openlocfilehash: 98104be3eb41b910882b4ee1c1ade8fbfc24c39f
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: bea7922baa1e92ffcaaff58678141758906ab955
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327594"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281461"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365接続テスト ツール
 
-ネットワークMicrosoft 365テスト ツールは、 に位置します <https://connectivity.office.com> 。 このツールは、[正常性] の下の [ネットワーク評価] および [Microsoft 365 管理センターで利用可能なネットワーク| **[接続]** メニュー。
+ネットワークMicrosoft 365テスト ツールは、 に位置します<https://connectivity.office.com>。 このツールは、[正常性] の下の [ネットワーク評価] および [Microsoft 365 管理センターで利用できるネットワーク|**[接続]** メニュー。
 
 > [!IMPORTANT]
 > すべてのテスト レポートが管理者と共有され、サインイン中にテナントにアップロードされる場合は、Microsoft 365 テナントにサインインすることが重要です。
@@ -36,7 +36,7 @@ ms.locfileid: "61327594"
 
 Microsoft 365 管理 センターのネットワーク分析情報は、毎日集計される、Microsoft 365テナントの製品内の定期的な測定値に基づいて行います。 一方、ネットワーク接続テストMicrosoft 365ネットワーク分析情報は、ツールでローカルで実行されます。
 
-製品内テストは制限され、ユーザーにローカルでテストを実行すると、より多くのデータが収集され、より深い分析情報が得られる。 Microsoft 365 管理センターのネットワーク分析情報は、特定のオフィスの場所でネットワーク上の問題が発生している場合に表示されます。 接続Microsoft 365テストは、その問題の根本原因を特定し、ターゲットを絞ったパフォーマンス向上アクションを提供するのに役立ちます。
+製品内テストは制限され、ユーザーにローカルでテストを実行すると、より多くのデータが収集され、より深い分析情報が得られる。 Microsoft 365 管理センターのネットワーク分析情報は、特定のオフィスの場所にネットワーク上の問題が発生している場合に表示されます。 接続Microsoft 365テストは、その問題の根本原因を特定し、ターゲットを絞ったパフォーマンス向上アクションを提供するのに役立ちます。
 
 これらの分析情報を一緒に使用して、Microsoft 365 管理 センターの各オフィスの場所でネットワーク品質の状態を評価し、Microsoft 365 接続テストに基づくテストの展開後に詳細を確認することをお勧めします。
 
@@ -54,7 +54,7 @@ Microsoft 365 管理 センターのネットワーク分析情報は、毎日�
 
 次に、高度なテスト クライアント アプリケーションのダウンロードを開始します。 クライアント アプリケーションを起動するには、ユーザーに依存し、.NET Core もインストールされている必要があります。
 
-ネットワーク接続テストには、web サイトMicrosoft 365高度なネットワーク接続テストを実行するダウンロード可能Windowsクライアント アプリケーションの 2 つの部分 <https://connectivity.office.com> があります。 ほとんどのテストでは、アプリケーションを実行する必要があります。 実行すると、結果が Web ページに読み込み戻されます。
+ネットワーク接続テストには、web <https://connectivity.office.com> サイトMicrosoft 365高度なネットワーク接続テストを実行するダウンロード可能Windowsクライアント アプリケーションの 2 つの部分があります。 ほとんどのテストでは、アプリケーションを実行する必要があります。 実行すると、結果が Web ページに読み込み戻されます。
 
 Web ブラウザーのテストが完了した後、Web サイトから高度なクライアント テスト アプリケーションをダウンロードするように求めるメッセージが表示されます。 プロンプトが表示されたら、ファイルを開いて実行します。
 
@@ -119,7 +119,7 @@ ReportID リンクへのアクセスを提供することで、テスト レポ�
 
 #### <a name="network-egress-location-the-location-where-your-network-connects-to-your-isp"></a>ネットワーク出力の場所 (ネットワークが ISP に接続する場所)
 
-サーバー側のネットワーク出力 IP アドレスを識別します。 場所データベースは、ネットワーク出力のおおよその場所を検索するために使用されます。 これらのデータベースは通常、IP アドレスの約 90% の精度を持っています。 ネットワーク出力 IP アドレスから探した場所が正確ではない場合は、誤った結果が発生します。 特定の IP アドレスに対してこのエラーが発生している場合は、パブリックアクセス可能なネットワーク IP アドレスの場所 Web サイトを使用して、実際の場所と比較できます。
+サーバー側のネットワーク出力 IP アドレスを識別します。 場所データベースは、ネットワーク出力のおおよその場所を検索するために使用されます。 これらのデータベースは通常、IP アドレスの約 90% の精度を持っています。 ネットワーク出力 IP アドレスから見上げた場所が正確ではない場合は、誤った結果が発生します。 特定の IP アドレスに対してこのエラーが発生している場合は、パブリックアクセス可能なネットワーク IP アドレスの場所 Web サイトを使用して、実際の場所と比較できます。
 
 #### <a name="your-distance-from-the-network-egress-location"></a>ネットワークの出口からの距離
 
@@ -141,7 +141,7 @@ ReportID リンクへのアクセスを提供することで、テスト レポ�
 
 #### <a name="vpn-split-tunnel"></a>VPN スプリット Tunnel
 
-各 **オプティ** マイズ カテゴリ ルートExchange Online、SharePointオンライン、および Microsoft Teams VPN でトンネリングされるのを確認するためにテストされます。 分割されたワークロードは VPN を完全に回避します。 トンネル処理されたワークロードは VPN を通して送信されます。 選択的なトンネリングされたワークロードには、VPN を使用して送信されるルートと分割されたルートがあります。渡す結果は、すべてのワークロードが分割または選択的トンネリングされた場合に表示されます。
+各 **オプティ** マイズ カテゴリ ルートは、Exchange Online、SharePointオンライン、Microsoft Teamsの各オプティマイズ カテゴリ ルートで、VPN でトンネリングされたのかテストされます。 分割されたワークロードは VPN を完全に回避します。 トンネル処理されたワークロードは VPN を通して送信されます。 選択的なトンネリングされたワークロードには、VPN を使用して送信されるルートと分割されたルートがあります。渡す結果は、すべてのワークロードが分割または選択的トンネリングされた場合に表示されます。
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>パフォーマンスの向上を実現する大都市圏の顧客
 
@@ -169,7 +169,7 @@ ReportID リンクへのアクセスを提供することで、テスト レポ�
 
 #### <a name="exchange-service-front-door-location"></a>Exchangeフロント ドアの場所
 
-Outlook がこれを行うのと同じ方法で、Exchange サービス フロント ドアの使用が識別され、ユーザーの場所からユーザーの場所へのネットワーク TCP 待機時間が測定されます。 TCP 待機時間が表示され、サービス フロント Exchangeの使用時間が、現在の場所に最適なサービス フロント ドアの一覧と比較されます。 これは、サービス フロント ドアで最もExchangeの 1 つが使用されていない場合に、ネットワーク分析情報として表示されます。
+Outlook がこれを行うのと同じ方法で、Exchange サービス フロント ドアの使用が識別され、ユーザーの場所からユーザーの場所へのネットワーク TCP 待機時間が測定されます。 TCP 待機時間が表示され、サービス フロント Exchangeの使用時間が、現在の場所に最適なサービス フロント ドアの一覧と比較されます。 これは、サービス フロント ドアで最もExchangeの 1 つが使用されていない場合に、ネットワークインサイトとして表示されます。
 
 最適な Exchange サービス フロント ドアの 1 つを使用しない場合は、企業のネットワーク出力の前にネットワーク バックホールが発生する可能性があります。その場合は、ローカルおよび直接のネットワーク出力をお勧めします。 また、リモート DNS 再帰的リゾルバー サーバーを使用した場合、DNS 再帰的リゾルバー サーバーをネットワーク出力に合わせて配置することをお勧めします。
 
@@ -181,7 +181,7 @@ Outlook がこれを行うのと同じ方法で、Exchange サービス フロ�
 
 #### <a name="service-front-door-recorded-in-the-client-dns"></a>クライアント DNS に記録されたサービス フロント ドア
 
-これは、指定したサービス フロント ドア サーバー Exchange DNS 名と IP アドレスを示します。 この情報は情報用に提供され、関連付けられたネットワーク分析情報はありません。
+これは、指定したサービス フロント ドア サーバー Exchange DNS 名と IP アドレスを示します。 情報のみを提供し、関連付けられたネットワークインサイトはありません。
 
 ### <a name="sharepoint-online"></a>SharePoint Online
 
@@ -193,7 +193,7 @@ Outlook がこれを行うのと同じ方法で、Exchange サービス フロ�
 
 #### <a name="download-speed"></a>ダウンロード速度
 
-15Mb ファイルのダウンロード速度は、サービス フロント SharePointから測定します。 結果は 1 秒あたりのメガバイト単位で表示され、1 秒に 1 mb 単位でダウンロードできるサイズ ファイルを SharePointまたはOneDrive **示します**。 この数は、1 秒あたりのメガビットの最小回線帯域幅の 10 分の 1 に似ている必要があります。 たとえば、100 mbps のインターネット接続がある場合は、1 秒あたり 10 メガバイト (10MBps) が予想されます。
+15Mb ファイルのダウンロード速度は、サービス フロント SharePointから測定します。 結果は 1 秒あたりのメガバイト単位で表示され、1 秒間にダウンロードできるサイズ ファイルを mb 単位SharePointまたはOneDrive **示します**。 この数は、1 秒あたりのメガビットの最小回線帯域幅の 10 分の 1 に似ている必要があります。 たとえば、100 mbps のインターネット接続がある場合は、1 秒あたり 10 メガバイト (10MBps) が予想されます。
 
 #### <a name="buffer-bloat"></a>バッファーの割り当て
 
@@ -201,7 +201,7 @@ Outlook がこれを行うのと同じ方法で、Exchange サービス フロ�
 
 #### <a name="service-front-door-recorded-in-the-client-dns"></a>クライアント DNS に記録されたサービス フロント ドア
 
-これは、指定したサービス フロント ドア サーバー SharePoint DNS 名と IP アドレスを示します。 この情報は情報用に提供され、関連付けられたネットワーク分析情報はありません。
+これは、指定したサービス フロント ドア サーバー SharePoint DNS 名と IP アドレスを示します。 情報のみを提供し、関連付けられたネットワークインサイトはありません。
 
 ### <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -209,33 +209,33 @@ Outlook がこれを行うのと同じ方法で、Exchange サービス フロ�
 
 #### <a name="media-connectivity-audio-video-and-application-sharing"></a>メディア接続 (オーディオ、ビデオ、およびアプリケーション共有)
 
-このテストでは、サービス フロント ドアMicrosoft Teams UDP 接続をテストします。 これをブロックすると、TCP Microsoft Teams機能する可能性がありますが、オーディオとビデオが損なわれる可能性があります。 これらの UDP ネットワーク測定値の詳細については、「Microsoft Teams Online のメディア品質とネットワーク接続のパフォーマンス」でも[Skype for Businessしてください](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)。
+このテストでは、サービス フロント ドアMicrosoft Teams UDP 接続をテストします。 これをブロックすると、TCP Microsoft Teams機能する可能性がありますが、オーディオとビデオが損なわれる可能性があります。 これらの UDP ネットワーク測定値の詳細については、「Microsoft Teams Online のメディア品質とネットワーク接続のパフォーマンス」でもSkype for Business[してください](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)。
 
 #### <a name="packet-loss"></a>パケット損失
 
 クライアントからサービス フロント ドアへの 10 秒間のテスト オーディオ呼び出しで測定Microsoft Teams UDP パケット損失を表示します。 これは、パスの **場合は 1.00% より** 低くする必要があります。
 
-#### <a name="latency"></a>Latency
+#### <a name="latency"></a>遅延
 
 **100ms** より低い UDP 待機時間を示します。
 
 #### <a name="jitter"></a>ジッター
 
-**30ms** より低い UDP ジッターを示します。
+**30ms** 未満の UDP ジッターを示します。
 
 #### <a name="connectivity"></a>接続
 
-ユーザー オフィスの場所から必要なすべてのネットワーク エンドポイントへの HTTP 接続Microsoft 365します。 これらはで公開されています [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md) 。 ネットワークインサイトは、接続できない必要なネットワーク エンドポイントに対して表示されます。
+ユーザー オフィスの場所から必要なすべてのネットワーク エンドポイントへの HTTP 接続Microsoft 365します。 これらはで公開されています [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md)。 ネットワークインサイトは、接続できない必要なネットワーク エンドポイントに対して表示されます。
 
 プロキシ サーバー、ファイアウォール、またはエンタープライズ ネットワーク境界上の別のネットワーク セキュリティ デバイスによって接続がブロックされる場合があります。 TCP ポート 80 への接続は HTTP 要求でテストされ、TCP ポート 443 への接続は HTTPS 要求でテストされます。 応答がない場合、FQDN はエラーとしてマークされます。 HTTP 応答コード 407 がある場合、FQDN はエラーとしてマークされます。 HTTP 応答コード 403 がある場合は、応答の Server 属性を確認し、プロキシ サーバーのように見える場合は、これをエラーとしてマークします。 コマンド ライン ツールを使用して実行Windowsをシミュレートcurl.exe。
 
-で定義されている最適化カテゴリまたは許可カテゴリにあるMicrosoft 365ネットワーク エンドポイントで SSL 証明書をテストします [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md) 。 テストで Microsoft SSL 証明書が見つからない場合は、接続されている暗号化されたネットワークが仲介ネットワーク デバイスによって傍受されている必要があります。 ネットワークインサイトは、傍受された暗号化されたネットワーク エンドポイントに表示されます。
+で定義されている最適化または許可カテゴリにあるMicrosoft 365ネットワーク エンドポイントで SSL 証明書をテストします[https://aka.ms/o365ip](./urls-and-ip-address-ranges.md)。 テストで Microsoft SSL 証明書が見つからない場合は、接続されている暗号化されたネットワークが仲介ネットワーク デバイスによって傍受されている必要があります。 ネットワークインサイトは、傍受された暗号化されたネットワーク エンドポイントに表示されます。
 
 Microsoft によって提供されていない SSL 証明書が見つかった場合は、テストの FQDN と、使用中の SSL 証明書の所有者が表示されます。 この SSL 証明書の所有者は、プロキシ サーバー ベンダーである場合や、エンタープライズ自己署名証明書である場合があります。
 
 #### <a name="network-path"></a>ネットワーク パス
 
-このセクションでは、Exchange Online サービス フロント ドア、SharePoint Online サービス フロント ドア、および Microsoft Teams サービス フロント ドアへの ICMP トレースルートの結果を示します。 この情報は情報用に提供され、関連付けられたネットワーク分析情報はありません。 3 つのトレース ルートが提供されています。 outlook.office365.com への _traceroute、_ 顧客への traceroute SharePoint フロントエンド、または microsoft.sharepoint.com が提供されていない場合は _microsoft.sharepoint.com_ に、traceroute は _world.tr.teams.microsoft.com。_
+このセクションでは、Exchange Online サービス フロント ドア、SharePoint Online サービス フロント ドア、および Microsoft Teams サービス フロント ドアへの ICMP トレースルートの結果を示します。 情報のみを提供し、関連付けられたネットワークインサイトはありません。 3 つのトレース ルートが提供されています。 outlook.office365.com への _traceroute_、顧客への traceroute SharePoint フロントエンドまたは microsoft.sharepoint.com が提供されていない場合は _microsoft.sharepoint.com_、および traceroute to _world.tr.teams.microsoft.com。_
 
 ## <a name="connectivity-reports"></a>接続レポート
 
@@ -251,22 +251,22 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 > [!div class="mx-imgBorder"]
 > ![ネットワークの正常性状態。](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
-## <a name="faq"></a>よくあるご質問 (FAQ)
+## <a name="faq"></a>FAQ
 
 よく寄せられる質問の一部に対する回答を次に示します。
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>高度なテスト クライアントを実行するために必要な情報
 
-高度なテスト クライアントには、.NET Core 3.1 デスクトップ ランタイムが必要です。 高度なテスト クライアントをインストールせずに実行すると [、.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)インストーラー ページが表示されます。 SDK ではなくデスクトップ ランタイム、またはページの上位の ASP.NET Coreランタイムをインストールしてください。 .NET Core をインストールするには、コンピューターに対する管理者のアクセス許可が必要です。
+高度なテスト クライアントには、.NET Core 3.1 デスクトップ ランタイムが必要です。 高度なテスト クライアントをインストールせずに実行すると、 [.NET Core 3.1 インストーラー ページが表示されます](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 SDK ではなくデスクトップ ランタイム、またはページの上位の ASP.NET Coreランタイムをインストールしてください。 .NET Core をインストールするには、コンピューターに対する管理者のアクセス許可が必要です。
 
-高度なテスト クライアントは、SignalR を使用して Web ページと通信します。 このためには、TCP ポート 443 への接続が開いている connectivity.service.signalr.net 必要があります。 この URL は、クライアント アプリケーション ユーザーに対して接続が必須ではないので、Microsoft 365 https://aka.ms/o365ip されません。
+高度なテスト クライアントは、SignalR を使用して Web ページと通信します。 このためには、TCP ポート 443 への接続が **開いている connectivity.service.signalr.net** 必要があります。 この URL は、クライアント アプリケーション <https://aka.ms/o365ip> のユーザーに対して接続が必要Microsoft 365公開されません。
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>サービス フロント Microsoft 365とは何ですか?
 
-Microsoft 365サービス フロント ドアは、Microsoft のグローバル ネットワーク上のエントリ ポイントであり、クライアントOfficeサービスがネットワーク接続を終了します。 ネットワーク接続を最適にMicrosoft 365、都市または地下鉄の最も近いMicrosoft 365にネットワーク接続を終了する必要があります。
+Microsoft 365サービス フロント ドアは、Microsoft のグローバル ネットワーク上のエントリ ポイントであり、クライアントOfficeサービスがネットワーク接続を終了します。 ネットワーク接続を最適化Microsoft 365、都市または地下鉄の最も近いMicrosoft 365にネットワーク接続を終了してください。
 
 > [!NOTE]
-> Microsoft 365フロント ドアは **、Azure マーケット** プレースで利用可能な Azure Front Door Service 製品との直接的な関係はありません。
+> Microsoft 365フロント ドアは、Azure マーケットプレースで利用可能な **Azure Front Door Service** 製品との直接的な関係はありません。
 
 ### <a name="what-is-the-best-microsoft-365-service-front-door"></a>サービス フロント ドアでMicrosoft 365は何ですか?
 

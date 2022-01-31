@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8ba3fc2f4728162bcdf22f40db8500757139a286
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: 092a89e41efebafae36e81f5faa7cd3b52fde8d9
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083088"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281533"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Windows でクライアント アナライザーを実行する
 
@@ -50,12 +50,12 @@ ms.locfileid: "62083088"
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
-上記に加えて、ライブ応答を使用してアナライザー サポート ログ[を収集するオプションも用意されています。](troubleshoot-collect-support-log.md)
+上記に加えて、ライブ応答を使用してアナライザー サポート ログ [を収集するオプションも用意されています](troubleshoot-collect-support-log.md)。
 
 > [!NOTE]
-> Windows 10/11、Windows Server 2019/2022、または最新の統合ソリューションがインストールされた Windows Server 2012R2/2016[](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)では、クライアント アナライザー スクリプトは、クラウド サービス URL への接続テストを実行するために呼び出される実行可能ファイルを呼び出します。 `MDEClientAnalyzer.exe`
+> Windows 10/11、Windows Server 2019/2022、または Windows Server 2012R2/2016 [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) `MDEClientAnalyzer.exe` では、最新の統合ソリューションがインストールされている場合、クライアント アナライザー スクリプトは、クラウド サービス URL への接続テストを実行するために呼び出される実行可能ファイルを呼び出します。
 >
-> Windows 8.1、Windows Server 2016、または Microsoft Monitoring Agent (MMA) をオンボーディングに使用する以前の OS エディションでは、クライアント アナライザー スクリプトは、コマンドとコントロール (CnC) URL の接続テストを実行するために呼び出される実行可能ファイルを呼び出します。 `MDEClientAnalyzerPreviousVersion.exe`Microsoft Monitoring Agentデータ チャネル URL `TestCloudConnection.exe` の接続ツールを使用します。
+> Windows 8.1、Windows Server 2016、または Microsoft Monitoring Agent (MMA) をオンボーディングに使用する以前の OS エディションでは、クライアント アナライザー スクリプトは、コマンドとコントロール (CnC) `MDEClientAnalyzerPreviousVersion.exe` URL の接続テストを実行するために呼び出される実行可能ファイルを呼び出します。Microsoft Monitoring Agent データ チャネル `TestCloudConnection.exe` URL の接続ツールを使用します。
 
 
 アナライザーに含まれるすべての PowerShell スクリプトとモジュールは Microsoft 署名済みです。
@@ -91,7 +91,7 @@ ms.locfileid: "62083088"
 
   これはメインの HTML 出力ファイルであり、コンピューター上でアナライザー スクリプトが実行できる結果とガイダンスが含まれる。
 
-- SystemInfoLogs \[ フォルダー\]
+- SystemInfoLogs \[フォルダー\]
   - AddRemovePrograms.csv
 
     説明: レジストリから収集された x64 OS ソフトウェアにインストールされている x86 ソフトウェアの一覧。
@@ -102,7 +102,7 @@ ms.locfileid: "62083088"
 
     - CertValidate.log
 
-      説明: [CertUtil](/windows-server/administration/windows-commands/certutil)を呼び出して実行される証明書失効の詳細な結果です。
+      説明: [CertUtil](/windows-server/administration/windows-commands/certutil) を呼び出して実行される証明書失効の詳細な結果。
 
     - dsregcmd.txt
 

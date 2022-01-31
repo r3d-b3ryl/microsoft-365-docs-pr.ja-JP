@@ -2,8 +2,8 @@
 title: Office 365 Content Delivery Network (CDN) クイック スタート
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 06/04/2020
+manager: scotv
+ms.date: 01/13/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 Content Delivery Network (CDN) クイック スタート
-ms.openlocfilehash: f0794c16188c6a020df56914adf0619a1688c052
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b0684fdfd8583ae6780cb23d47dc697582ae133b
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199983"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281437"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 Content Delivery Network (CDN) クイック スタート
 
@@ -37,11 +37,11 @@ ms.locfileid: "60199983"
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-identify-items-not-in-cdn"></a>[ページ診断] ツールを使用SharePoint、ページに含CDN
 
-SharePoint ツール ブラウザー拡張機能の **ページ** 診断を使用すると、SharePoint Online ページ内のアセットを簡単に一覧表示し、CDN オリジンに追加できます。
+SharePoint ツール ブラウザー拡張機能 **の** ページ診断を使用すると、SharePoint Online ページ内のアセットを簡単に一覧表示し、CDN オリジンに追加できます。
 
-**SharePoint** のページ診断ツールは、Microsoft Edge の新しいブラウザー (および SharePoint Online モダン ポータルと従来の発行サイト ページの両方を分析する Chrome ブラウザーのブラウザー拡張機能 https://www.microsoft.com/edge) です。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法と詳細については、「[SharePoint Online 用ページ診断ツールを使用する](./page-diagnostics-for-spo.md)」を参照してください。
+**SharePoint のページ** 診断ツールは、SharePoint Online モダン ポータルと従来の発行サイト ページの両方を分析する新しい Microsoft Edge (<https://www.microsoft.com/edge>) ブラウザーと Chrome ブラウザーのブラウザー拡張機能です。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法と詳細については、「[SharePoint Online 用ページ診断ツールを使用する](./page-diagnostics-for-spo.md)」を参照してください。
 
-SharePoint Online ページで [SharePoint のページ診断] ツールを実行すると、[診断テスト] タブをクリックして、CDN でホストされていないアセットの一覧を表示できます。 これらのアセットは、下のスクリーンショットに示すようにContent Delivery Network **(CDN)** チェックの下に表示されます。
+SharePoint Online ページで [SharePoint のページ診断] ツールを実行すると、[診断テスト] タブをクリックして、CDN でホストされていないアセットの一覧を表示できます。 これらのアセットは、下のスクリーンショットに示Content Delivery Network **(CDN) チェック** の下に表示されます。
 
 ![ページ診断。](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
@@ -55,14 +55,14 @@ Office 365 CDN は、画像や javascript ファイルなどの頻繁にアク�
 このOffice 365 CDNは、次の 2 つの基本的な型に分けらされています。
 
 - **パブリック CDN** は、JS (JavaScript)、CSS (StyleSheets)、Web フォント ファイル (WOFF、WOFF2)、会社のロゴなどの非専有画像に使用するように設計されています。
-- **プライベート CDN** は、画像 (PNG、JPG、JPEG など) に使用するように設計されています。
+- **プライベート CDN** 画像 (PNG、JPG、JPEG など) に使用するように設計されています。
 
 組織のパブリックオリジンとプライベートオリジンの両方を選択できます。 ほとんどの組織では、2 つの組み合わせを実装します。 パブリック オプションとプライベート オプションの両方が同様のパフォーマンス向上を実現しますが、それぞれに固有の属性と利点があります。 パブリックおよびプライベート のオリジンのCDN詳細については、「各オリジンをパブリックまたはプライベートにするかどうかを選択する[」を参照してください](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)。
 
 ## <a name="how-to-enable-public-and-private-cdn-with-the-default-configuration"></a>既定の構成でパブリック およびプライベート CDNを有効にする方法
 テナントの設定を変更するCDN、組織のコンプライアンス、セキュリティ、およびプライバシー ポリシーを満たしている必要があります。
 
-詳細な構成設定については、または CDN を既に有効にし、追加の場所 (発生元) を追加する場合は[、「SharePoint Online](use-microsoft-365-cdn-with-spo.md#set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell)管理シェルを使用して Office 365 CDN を設定して構成する」セクションを参照してください。
+詳細な構成設定については、または CDN を既に有効にし、追加の場所 (発生元) を追加する場合は、「SharePoint Online 管理シェルを使用して Office 365 CDN を設定して構成する[」セクションを参照してください](use-microsoft-365-cdn-with-spo.md#set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell)。
 
 Connect管理シェルを使用してテナントSharePointにアクセスします。
 
@@ -90,4 +90,4 @@ Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 
 [Office 365 のネットワーク計画とパフォーマンス チューニング](./network-planning-and-performance.md)
 
-[SharePointPerformance Series - Office 365 CDN ビデオ シリーズ](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)
+[SharePoint パフォーマンス シリーズ - Office 365 CDN ビデオ シリーズ](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

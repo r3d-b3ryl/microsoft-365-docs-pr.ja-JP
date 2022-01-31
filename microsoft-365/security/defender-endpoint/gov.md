@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccecccb7b2d846bc14dafd8585947b926b23ad0c
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 6f5f737709591c266515909eeca35bad30a52c21
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421152"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281485"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府のお客様向けの Microsoft Defender for Endpoint
 
@@ -81,7 +81,7 @@ Microsoft Defender for Endpoint for US Government のお客様には、次のい
 |DoD|<https://securitycenter.microsoft.us>|
 |
 > [!NOTE]
-> Microsoft Defender for Endpoint GCC商用から GCC への移行中の顧客である場合は、Microsoft Defender for Endpoint 商用データに https://transition.security.microsoft.com アクセスするために使用します。
+> Microsoft Defender for Endpoint https://transition.security.microsoft.com GCC商用から GCC への移行中の顧客である場合は、Microsoft Defender for Endpoint 商用データにアクセスするために使用します。
 
 ## <a name="endpoint-versions"></a>エンドポイントのバージョン
 
@@ -97,16 +97,16 @@ OS のバージョン|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows 11|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows 10バージョン 21H1 以上|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Windows 10バージョン 20H2 [(KB4586853](https://support.microsoft.com/help/4586853) <sup>1 )</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Windows 10バージョン 2004 [(KB4586853](https://support.microsoft.com/help/4586853) <sup>1 )</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Windows 10バージョン 1909 [(KB4586819](https://support.microsoft.com/help/4586819) <sup>1 )</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Windows 10バージョン 1903 [(KB4586819](https://support.microsoft.com/help/4586819) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Windows 10 Version 1809 [(KB4586839](https://support.microsoft.com/help/4586839) <sup>1 )</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Windows 10バージョン 1803 [(KB4598245](https://support.microsoft.com/help/4598245) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Windows 10バージョン 1709|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![は ](images/svg/check-yes.svg) い [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> 注: [非推奨 、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
+Windows 10バージョン 20H2 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
+Windows 10バージョン 2004 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
+Windows 10バージョン 1909 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
+Windows 10バージョン 1903 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
+Windows 10 Version 1809 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
+Windows 10バージョン 1803 ([KB4598245](https://support.microsoft.com/help/4598245) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
+Windows 10バージョン 1709|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![は](images/svg/check-yes.svg) い [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> 注: [非推奨、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
 Windows 10バージョン 1703 以前|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
 Windows Server 2022|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Windows Server 2019 [(KB4586839](https://support.microsoft.com/help/4586839) <sup>1 )</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
+Windows Server 2019 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows Server 2016 (モダン) <sup>2</sup>|![はい。](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー
 Windows Server 2012 R2 (モダン) <sup>2</sup>|![はい。](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー
 Windows Server 2016 (レガシ) <sup>3</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
@@ -125,9 +125,9 @@ iOS|![いいえ。](images/svg/check-no.svg) 開発中|![いいえ](images/svg/c
 > [!NOTE]
 > <sup>1</sup> Defender for Endpoint を正しい環境に構成するには、デバイスオンボーディングの前にパッチを展開する必要があります。
 >
-> <sup>2</sup> [2016 および 2012 R2](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)の統合モダン Windowsについて学習します。 以前に MMA を使用してサーバーをオンボードした場合は [、「Server migration」](server-migration.md) のガイダンスに従って新しいソリューションに移行します。
+> <sup>2</sup> [2016 および 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) の統合モダン Windowsについて学習します。 以前に MMA を使用してサーバーをオンボードした場合は、「 [Server migration](server-migration.md) 」のガイダンスに従って新しいソリューションに移行します。
 >
-> <sup>3</sup> [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)を使用する場合は、セットアップ ウィザードを使用する場合、またはコマンド ラインまたはスクリプトを使用[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)する場合は、[Azure Cloud] で[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)[Azure US Government] を選択する必要があります。"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" パラメーターを 1 に設定します。 [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) <br /> サポートされる最小 MMA バージョンは 10.20.18029 (2020 年 3 月) です。
+> <sup>3</sup> [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) を使用する場合は、セットアップ ウィザードを使用する場合、またはコマンド ラインまたはスクリプトを使用する場合は、[Azure Cloud] で [Azure US [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) Government] を選択[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)する必要があります。"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" パラメーターを 1 に設定します。[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) <br /> サポートされる最小 MMA バージョンは 10.20.18029 (2020 年 3 月) です。
 
 ### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>サーバーに Microsoft Defender を使用する場合の OS のバージョン
 
@@ -165,7 +165,7 @@ Windows Server 2008 R2 SP1|![はい。](images/svg/check-yes.svg)|![はい](imag
 
 ## <a name="api"></a>API
 
-API ドキュメントに記載されているパブリック URI の代わりに、次の [URI](apis-intro.md)を使用する必要があります。
+API ドキュメントに記載されているパブリック URI の代わりに、次の [URI](apis-intro.md) を使用する必要があります。
 
 <br />
 
