@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: 85bcf25300b51e0e9f6fb4b770c748ba86d5b2ea
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 0f663ac949419c3a726a0af23eba4a0f14928515
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159735"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281449"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -143,8 +143,7 @@ Mac アプリの完全なパスを検索するには:
 
 2. [**ファイルとポートを開く]** タブを選択します。
   
-3. アプリ名は、完全なパスの末尾にあります。
-
+3. macOS アプリの場合は、アプリの名前を含む完全なパス名が必要です。
 
 #### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>クラウド同期アプリから機密性の高いデータを保護する
 
@@ -177,7 +176,7 @@ macOS デバイスの場合は、完全なファイル パスを追加する必�
 
 2. [**ファイルとポートを開く]** タブを選択します。
   
-3. アプリ名は、完全なパスの末尾にあります。
+3. macOS アプリの場合は、アプリの名前を含む完全なパス名が必要です。
 
 #### <a name="service-domains"></a>サービスドメイン
 

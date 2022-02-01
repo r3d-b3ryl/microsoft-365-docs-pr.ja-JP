@@ -10,7 +10,7 @@
       href: difference-between-document-understanding-and-form-processing-model.md
 - name: モデルから始める
   items:
-    - name: サンプルモデルを使用して、モデルについて学ぶ
+    - name: サンプルのドキュメント理解モデルをインポートする
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: コンテンツ センターを作成する
       href: create-a-content-center.md
