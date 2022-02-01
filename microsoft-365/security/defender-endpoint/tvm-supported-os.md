@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e3633468ac6d730ff380efcd59c0e4e70065c4c5
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
+ms.openlocfilehash: 2e9322a5fc04824482fdd764eb113d9904b3c224
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993301"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295397"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>サポートされているオペレーティング システム、プラットフォーム、および機能 - 脅威と脆弱性の管理
 
@@ -38,7 +38,7 @@ ms.locfileid: "61993301"
 開始する前に、デバイス内のアクティビティが適切に説明脅威と脆弱性の管理のオペレーティング システムまたはプラットフォームの要件を満たしてください。
 
 > [!NOTE]
-> サポートされているシステムとプラットフォームは脅威と脆弱性の管理 Microsoft Defender for Endpoint リストの最小要件とは[異なる場合](minimum-requirements.md)があります。
+> サポートされているシステムとプラットフォームは脅威と脆弱性の管理 Microsoft [Defender for Endpoint リストの最小要件とは異なる場合](minimum-requirements.md)があります。
 
 ## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>サポートされているオペレーティング システム (OS) とプラットフォームごとの機能
 
@@ -48,23 +48,23 @@ ms.locfileid: "61993301"
 :---|:---|:---|:---|:---|:---
 Windows 7|はい|サポート対象外|サポート対象外|サポート対象外|非サポート
 Windows 8.1|はい|はい|はい|はい|はい
-Windows 10バージョン 1607-1703|はい|非サポート|サポート対象外|サポート対象外|サポート対象外
+Windows 10バージョン 1607-1703|はい|サポート対象外|サポート対象外|サポート対象外|サポート対象外
 Windows 10バージョン 1709 以降|はい|はい|はい|はい|はい
 Windows 11|はい|はい|はい|はい|はい
 Windows Server 2008 R2|はい|はい|はい|はい|はい
 Windows Server 2012 R2|はい|はい|はい|はい|はい
 Windows Server 2016|はい|はい|はい|はい|はい
 Windows Server 2019|はい|はい|はい|はい|はい
-Windows Server 2022|はい|はい|はい|はい|はい
+Windows Server 2022|はい|はい|はい|サポート対象外|はい
 macOS 10.14 "Mojave" 以上|はい|はい|はい|はい|はい 
-Red Hat Enterprise一致する EUS リリースを含む Linux 7.2 以上 ( \* 以下の「重要な」通知を参照)|はい|はい|はい|はい|はい
+Red Hat Enterprise一致する EUS リリースを含む Linux 7.2 以上 (\*以下の「重要な」通知を参照)|はい|はい|はい|はい|はい
 CentOS 7.2 以上|はい|はい|はい|はい|はい
 Ubuntu 16.04 LTS 以上の LTS|はい|はい|はい|はい|はい
 Oracle Linux 7.2 以上|はい|はい|はい|はい|はい
 SUSE Linux Enterprise サーバー 12 以上|はい|はい|はい|はい|はい
 Linux Debian 9 以上|はい|はい|はい|はい|はい
-Android 6.0 以上|はい|はい|非サポート|サポート対象外|サポート対象外
-iOS 12.0 以上|はい|非サポート|サポート対象外|サポート対象外|サポート対象外
+Android 6.0 以上|はい|はい|サポート対象外|サポート対象外|サポート対象外
+iOS 12.0 以上|はい|サポート対象外|サポート対象外|サポート対象外|サポート対象外
 
 > [!NOTE]
 > 一部の機能は、ダウンレベルのオペレーティング システムでは使用できません。サポートされている OS の詳細については、「Microsoft 365 Defender ポータル」を参照してください。

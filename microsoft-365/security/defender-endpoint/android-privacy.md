@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 44b1cc75f5922d25d54cc32c7b48b13a36a9ac8a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6772539f4ca4ea819a0f8cd2a92a817fcea650f3
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164600"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295136"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 用 Microsoft Defender for Endpoint - プライバシー情報
 
@@ -32,11 +32,11 @@ ms.locfileid: "61164600"
 
 Defender for Endpoint on Android は、構成済みの Android デバイスから情報を収集し、Defender for Endpoint がある同じテナントに保存します。 この情報は、Defender for Endpoint for Android をセキュリティで保護し、最新の状態に保ち、期待通り実行し、サービスをサポートするために収集されます。
 
-データ ストレージの詳細については [、「Microsoft Defender for Endpoint data storage and privacy」を参照してください](data-storage-privacy.md)。
+データ ストレージの詳細については、「 [Microsoft Defender for Endpoint data storage and privacy」を参照してください](data-storage-privacy.md)。
 
 情報は、Defender for Endpoint for Android のセキュリティを確保し、最新の状態に保ち、期待通り実行し、サービスをサポートするために収集されます。
 
-Android および iOS モバイル デバイスの Microsoft Defender for Endpoint に関する最も一般的なプライバシーに関する質問の詳細については [、「Microsoft Defender for Endpoint and your](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)privacy on Android and iOS mobile devices」を参照してください。
+Android および iOS モバイル デバイスの Microsoft Defender for Endpoint に関する最も一般的なプライバシーに関する質問の詳細については、「 [Microsoft Defender for Endpoint and your privacy on Android and iOS](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a) mobile devices」を参照してください。
 
 ## <a name="required-data"></a>必須データ
 
@@ -44,15 +44,30 @@ Android および iOS モバイル デバイスの Microsoft Defender for Endpoi
 
 ### <a name="app-information"></a>アプリ情報
 
-デバイス上 **の** 悪意のある Android アプリケーション パッケージ (APK) に関する情報 (以下を含む)
+デバイス **上の** 悪意のある Android アプリケーション パッケージ (APK) に関する情報 (以下を含む)
 
 - ソースのインストール
 - Storageの場所 (ファイル パス)
 - インストールの時間、APK のサイズ、およびアクセス許可
 
+Android Enterprise完全に管理されたデバイスの場合 - デバイスにインストールされている Android アプリケーション パッケージ (APK) に関する情報 (以下を含む)
+
+- アプリの名前とパッケージ名
+- アプリのバージョン番号
+- ベンダー名
+
+Android Enterpriseプロファイルを使用する場合 - デバイスの Work プロファイルにインストールされている Android アプリケーション パッケージ (APK) に関する情報 (以下を含む)
+
+- アプリの名前とパッケージ名
+- アプリのバージョン番号
+- ベンダー名
+
+*組織では、デバイスにインストールされているすべてのアプリに関する情報を送信する Defender for Endpoint を構成することもできます。既定では、この情報は組織に送信されません。*
+
+
 ### <a name="web-page--network-information"></a>Web ページ / ネットワーク情報
 
-- 悪意のある接続または Web ページが検出された場合にのみ、Web サイトの完全な URL。
+- 悪意のある接続または Web ページが検出およびブロックされた場合にのみ、Web サイトの完全な URL。
 - 接続情報
 - プロトコルの種類 (HTTP、HTTPS など)
 

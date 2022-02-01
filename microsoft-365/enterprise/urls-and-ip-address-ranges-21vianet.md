@@ -2,8 +2,8 @@
 title: 21Vianet が運営する Office 365の URL と IP アドレス範囲
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/28/2021
+manager: scotv
+ms.date: 01/31/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、中国で 21Vianet がOffice 365の URL と IP アドレスの範囲を示します。
 hideEdit: true
-ms.openlocfilehash: e96226ff9db25eb8b46edc07bde1ec738f2e427b
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: 8250fcddbc9b23317a0a3760b59c5f7776b98378
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566677"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62294812"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet が運営する Office 365の URL と IP アドレス範囲
 
@@ -34,7 +34,7 @@ ms.locfileid: "61566677"
 
 **概要**: 次のエンドポイント (FQDN、ポート、URL、IPv4、および IPv6 プレフィックス) は 21Vianet が運営する Office 365 に適用され、これらのプランだけを活用して生産性サービスを組織へ提供できるように設計されています。
   
- **Office 365 エンドポイント:** [](urls-and-ip-address-ranges.md)   |  *21 Vianet* Office 365 が運用するワールドワイド (GCC を含 Office 365む) Office 365 米国政府機関の  |  [DoD](microsoft-365-u-s-government-dod-endpoints.md)Office 365  |  [GCC](microsoft-365-u-s-government-gcc-high-endpoints.md) High |
+ **Office 365 エンドポイント:** *21 Vianet* |  が運営するワールドワイド [(GCC Office 365)](urls-and-ip-address-ranges.md)  | Office 365 米国政府機関 [DoD](microsoft-365-u-s-government-dod-endpoints.md) |  Office 365 米国政府機関 GCC [High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
 **最終更新日:** 2021 年 9 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 

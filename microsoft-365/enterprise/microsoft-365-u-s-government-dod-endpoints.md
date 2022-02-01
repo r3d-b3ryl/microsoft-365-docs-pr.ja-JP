@@ -2,8 +2,8 @@
 title: Office 365米国政府機関の DOD エンドポイント
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 10/29/2021
+manager: scotv
+ms.date: 01/31/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ f1.keywords:
 description: Office 365 にはインターネットへの接続が必要です。 以下のエンドポイントは、米国政府機関の DoD プランOffice 365使用しているお客様に対して到達可能である必要があります。
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fda65c772fc2fdaa1d8fe8a8479e97cbd4855835
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: 6172aa7c7d6b47aa4e6412143e2e89c402042262
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566509"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295100"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365米国政府機関の DoD エンドポイント
 
@@ -35,7 +35,7 @@ ms.locfileid: "61566509"
 
 Office 365 にはインターネットへの接続が必要です。 以下のエンドポイントは、米国政府機関の DoD プランOffice 365使用しているお客様に対して到達可能である必要があります。
   
-**Office 365 エンドポイント:** [](urls-and-ip-address-ranges.md) \| [21 Vianet](urls-and-ip-address-ranges-21vianet.md) Office 365 が運用するワールドワイド (GCC を含 Office 365む) Office 365 米国政府機関の \| *DoD* Office 365 \| [GCC](microsoft-365-u-s-government-gcc-high-endpoints.md) High
+**Office 365 エンドポイント:** [21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| Office 365 が運営するワールドワイド [(GCC を含む)](urls-and-ip-address-ranges.md) \| Office 365 米国政府の *DoD* \| Office 365 米国 [政府機関 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)
 
 <br>
 
@@ -58,7 +58,7 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 - **カテゴリ**: エンドポイントのセットが「最適化」、「許可」または「既定」のどれに分類されているかを示します。これらのカテゴリとその管理ガイダンスについては、[https://aka.ms/pnc](./microsoft-365-network-connectivity-principles.md) を参照してください。この列には、ネットワーク接続に必要なエンドポイントのセットが表示されます。ネットワーク接続が必要ないエンドポイントのセットの場合、このコラムには、エンドポイントのセットがブロックされた場合に使えなくなる機能に関する注意書きが書かれます。サービス領域全体を除外する場合は、ネットワーク接続が必要と記載されているエンドポイントのセットの接続は不要です。
 
-- **ER**: エンドポイント セットが **Azure** ExpressRoute でサポートされている場合は、ルート プレフィックスOffice 365です。 表示されるルート プレフィックスを含む BGP コミュニティは、一覧表示されているサービス エリアに合わせて配置されます。 ER が **No の場合**、このエンドポイント セットでは ExpressRoute はサポートされません。 ただし、ER が No であるエンドポイント セットに対してアドバタイズされるルートは含めずに使用する **必要があります**。 このページを使用するAzure AD Connect、特別な考慮事項セクションを[](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)参照して、適切な構成Azure AD Connectしてください。
+- **ER**: エンドポイント セットが **Azure** ExpressRoute でサポートされている場合は、ルート プレフィックスを使用Office 365です。 表示されるルート プレフィックスを含む BGP コミュニティは、一覧表示されているサービス エリアに合わせて配置されます。 ER が **No の場合**、このエンドポイント セットでは ExpressRoute はサポートされません。 ただし、ER が No であるエンドポイント セットに対してルートがアドバタイズされないと想定 **される必要はありません**。 この機能を使用するAzure AD Connect、特別な考慮事項セクション[](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)を参照して、適切な構成Azure AD Connectしてください。
 
 - **アドレス**: FQDN またはワイルドカードを含むドメイン名と、エンドポイントのセットの IP アドレス範囲を一覧表示します。IP アドレスの範囲は CIDR 形式となり、指定されたネットワークの個別の IP アドレスが多数含まれる場合があることに注意してください。
 

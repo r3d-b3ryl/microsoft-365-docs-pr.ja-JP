@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 5f7d3074d8ebf4f62719cd7ca36d627f94dbc897
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d413bea8dc59bbfaa5b424bbbf421d7e12558fcb
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938434"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295399"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS のエンドポイント向け Microsoft Defender の新機能
 
@@ -34,9 +34,13 @@ ms.locfileid: "61938434"
 
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## <a name="improved-experience-on-supervised-ios-devices"></a>監視対象の iOS デバイスでのエクスペリエンスの向上
+
+Microsoft Defender for Endpoint on iOS では、これらの種類のデバイスでプラットフォームによって提供される管理機能の強化を考えると、監視対象の iOS/iPadOS デバイスに特化した機能が追加されました。 また、デバイスでローカル **VPN を設定せずに Web 保護を提供することもできます**。 これにより、エンドユーザーはシームレスなエクスペリエンスを実現しながら、フィッシングなどの Web ベースの攻撃から保護されます。 詳細については、この [ドキュメントを参照してください。](ios-install.md#complete-deployment-for-supervised-devices)
+
 ## <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 
-2021 年 11 月 2 日、Android と iOS の脅威と脆弱性の管理のパブリック プレビューを発表しました。 詳細については [、techcommunity の投稿を参照してください](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691)。
+2022 年 1 月 25 日、Android と iOS の脅威と脆弱性の管理の一般提供を発表しました。 詳細については、 [techcommunity の投稿を参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)。
 
 ## <a name="1124210103"></a>1.1.24210103
 
@@ -46,8 +50,8 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 ## <a name="1123250104"></a>1.1.23250104
 
 - パフォーマンスの最適化 - このバージョンでバッテリーのパフォーマンスをテストし、フィードバックをお寄せください。
-- 登録済 **み iOS** デバイスのオンボードゼロタッチ - このバージョンでは、Microsoft エンドポイント マネージャー (Intune) 経由で登録されたデバイスのオンボードゼロタッチのプレビューが追加されました。 詳細については、セットアップと構成 [の詳細については](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) 、このドキュメントを参照してください。
-- **プライバシーコントロール** - フィッシングアラートレポートのプライバシー制御を構成します。 詳細については [、「Configure iOS features」を参照してください](ios-configure-features.md)。
+- **登録済み iOS** デバイスのオンボードゼロタッチ - このバージョンでは、Microsoft エンドポイント マネージャー (Intune) 経由で登録されたデバイスのゼロタッチ オンボードのプレビューが追加されました。 詳細については、セットアップと構成 [の詳細については](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) 、このドキュメントを参照してください。
+- **プライバシーコントロール** - フィッシングアラートレポートのプライバシー制御を構成します。 詳細については、「 [Configure iOS features」を参照してください](ios-configure-features.md)。
 
 ## <a name="1123010101"></a>1.1.23010101
 
@@ -64,7 +68,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 - バグ修正。
 
 ## <a name="1117240101"></a>1.1.17240101
-- Intune を介したモバイル アプリケーション管理 (MAM) のサポートは、通常、このバージョンで利用できます。 詳細については [、「Microsoft Defender for Endpoint risk signals for your App protection policies」を参照してください。](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322)
+- Intune を介したモバイル アプリケーション管理 (MAM) のサポートは、通常、このバージョンで利用できます。 詳細については、「 [Microsoft Defender for Endpoint risk signals for your App protection policies」を参照してください。](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322)
 - **脱獄検出は** 一般に利用できます。 詳細については、「デバイス リスク信号 [に基づく条件付きアクセス ポリシーのセットアップ」を参照してください](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
 - **登録されたデバイスの VPN プロファイル** の自動セットアップは、Microsoft エンドポイント マネージャー (Intune) 経由で一般に利用できます。 詳細については、「登録済み [iOS デバイスの自動セットアップ VPN プロファイル」を参照してください](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
 - バグ修正。
@@ -72,7 +76,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 ## <a name="1115140101"></a>1.1.15140101
 
 - **脱獄検出は** プレビュー中です。 詳細については、「デバイス リスク信号 [に基づく条件付きアクセス ポリシーのセットアップ」を参照してください](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
-- **VPN プロファイルの自動セットアップは、** 登録されたデバイスのプレビューで、アプリ (Intune) Microsoft エンドポイント マネージャーされます。 詳細については、「登録済み [iOS デバイスの自動セットアップ VPN プロファイル」を参照してください](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
+- **VPN プロファイルの自動セットアップは、** 登録されたデバイスのプレビューで、アプリ (Intune) をMicrosoft エンドポイント マネージャーされます。 詳細については、「登録済み [iOS デバイスの自動セットアップ VPN プロファイル」を参照してください](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
 - Microsoft Defender ATP 製品名が、アプリ ストアの Microsoft Defender for Endpoint に更新されました。
 - サインイン エクスペリエンスが向上しました。
 - バグ修正。

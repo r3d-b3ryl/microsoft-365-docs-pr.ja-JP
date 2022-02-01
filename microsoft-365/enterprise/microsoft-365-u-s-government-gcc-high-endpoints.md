@@ -2,8 +2,8 @@
 title: Office 365 米国政府機関の高 GCC エンドポイント
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 10/29/2021
+manager: scotv
+ms.date: 01/31/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: この記事では、米国政府機関の高いプランを使用しているOffice 365エンドポイントGCC見つける予定です。
 hideEdit: true
-ms.openlocfilehash: a179a6637da33c7273d177594cab7f3dea4a1421
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d22d292cd8914dd336d410dcbcb82e1ffb0d5362
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668308"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62294800"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 米国政府機関の高 GCC エンドポイント
 
@@ -33,7 +33,7 @@ ms.locfileid: "60668308"
 
 Office 365 にはインターネットへの接続が必要です。 以下のエンドポイントは、米国政府機関および高Office 365プランのみを使用しているGCCアクセスできる必要があります。
   
- **Office 365 エンドポイント:** [](urls-and-ip-address-ranges.md) \| [21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| [](microsoft-365-germany-endpoints.md) \| [](microsoft-365-u-s-government-dod-endpoints.md) \|  Office 365 ドイツ Office 365 が運営するワールドワイド (GCC を含 Office 365む) Office 365 米国政府機関 GCC High
+ **Office 365 エンドポイント:** [21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| Office 365 が運営するワールドワイド [(GCC を含む)](urls-and-ip-address-ranges.md) \| Office 365 米国政府の [DoD](microsoft-365-u-s-government-dod-endpoints.md) \| Office 365 米国 *政府機関 GCC High*
 
 <br>
 
@@ -41,7 +41,7 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 |備考|ダウンロード|
 |---|---|
-|**最終更新日:** 10/29/2021 - ![ RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** JSON 形式の完全な [リスト](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
+|**最終更新日:** 2021 年 10 月 29 日 - ![RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログのサブスクリプション](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** JSON 形式の完全な [リスト](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |
 
  [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)から始めて、このデータを使用してネットワーク接続を管理するための推奨事項を理解してください。 エンドポイントのデータは、毎月初めに必要に応じて更新され、アクティブになる 30 日前に新しい IP アドレスと URL が公開されます。 これにより、新しい接続が必要になる前に、まだ自動更新プログラムを持っていないお客様がプロセスを完了できます。 サポートの拡大、セキュリティ上の問題、その他の緊急な運用要件に対処する為に必要な場合にも、その月の間にエンドポイントを更新する可能性があります。 以下のこのページに示されているデータはすべて、REST ベースの Web サービスから生成されています。 スクリプトまたはネットワーク デバイスを使用してこのデータにアクセスしている場合は、[Web サービス](microsoft-365-ip-web-service.md)に直接アクセスする必要があります。
@@ -56,7 +56,7 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 - **カテゴリ**: エンドポイントのセットが「最適化」、「許可」または「既定」のどれに分類されているかを示します。これらのカテゴリとその管理ガイダンスについては、[https://aka.ms/pnc](./microsoft-365-network-connectivity-principles.md) を参照してください。この列には、ネットワーク接続に必要なエンドポイントのセットが表示されます。ネットワーク接続が必要ないエンドポイントのセットの場合、このコラムには、エンドポイントのセットがブロックされた場合に使えなくなる機能に関する注意書きが書かれます。サービス領域全体を除外する場合は、ネットワーク接続が必要と記載されているエンドポイントのセットの接続は不要です。
 
-- **ER**: エンドポイント セットが **Azure** ExpressRoute でサポートされている場合は、ルート プレフィックスOffice 365です。 表示されるルート プレフィックスを含む BGP コミュニティは、一覧表示されているサービス エリアに合わせて配置されます。 ER が **No の場合**、このエンドポイント セットでは ExpressRoute はサポートされません。 ただし、ER が No であるエンドポイント セットに対してアドバタイズされるルートは含めずに使用する **必要があります**。 このページを使用するAzure AD Connect、特別な考慮事項セクションを[](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)参照して、適切な構成Azure AD Connectしてください。
+- **ER**: エンドポイント セットが **Azure** ExpressRoute でサポートされている場合は、ルート プレフィックスを使用Office 365です。 表示されるルート プレフィックスを含む BGP コミュニティは、一覧表示されているサービス エリアに合わせて配置されます。 ER が **No の場合**、このエンドポイント セットでは ExpressRoute はサポートされません。 ただし、ER が No であるエンドポイント セットに対してルートがアドバタイズされないと想定 **される必要はありません**。 この機能を使用するAzure AD Connect、特別な考慮事項セクション[](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)を参照して、適切な構成Azure AD Connectしてください。
 
 - **アドレス**: FQDN またはワイルドカードを含むドメイン名と、エンドポイントのセットの IP アドレス範囲を一覧表示します。IP アドレスの範囲は CIDR 形式となり、指定されたネットワークの個別の IP アドレスが多数含まれる場合があることに注意してください。
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dce62691915de142183b2ccfdbf5bd93cc69d692
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 92a927bf0cb3a5e568ca2b02d60d641907bc0407
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578439"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295398"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android の機能でエンドポイント用 Defender を構成する
 
@@ -35,7 +35,7 @@ ms.locfileid: "61578439"
 
 Android 上のエンドポイント用 Microsoft Defender と Microsoft Intune および Azure Active Directory を使用すると、デバイスのリスク レベルに基づいてデバイスコンプライアンスと条件付きアクセス ポリシーを適用できます。 Defender for Endpoint は、Intune を通じてこの機能を活用するために展開できるモバイル脅威防御 (MTD) ソリューションです。
 
-Android および条件付きアクセスで Defender for Endpoint をセットアップする方法の詳細については [、「Defender for Endpoint and Intune」を参照してください](/mem/intune/protect/advanced-threat-protection)。
+Android および条件付きアクセスで Defender for Endpoint をセットアップする方法の詳細については、「 [Defender for Endpoint and Intune」を参照してください](/mem/intune/protect/advanced-threat-protection)。
 
 ## <a name="configure-custom-indicators"></a>カスタム インジケーターの構成
 
@@ -56,33 +56,38 @@ Defender for Endpoint on Android では、IT 管理者は Web 保護機能を構
 > [!IMPORTANT]
 > Android 上の Microsoft Defender for Endpoint のプライバシーコントロールはプレビュー中です。 次の情報は、製品が商用リリースされる前に大幅に変更される可能性がある事前リリース済み製品に関連しています。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
+Android デバイスから Defender for Endpoint から送信されるデータを構成するには、次のプライバシー制御を使用できます。
+
+|脅威レポート     |詳細      |
+|--------------------|-------------|
+|マルウェア レポート |管理者は、マルウェア レポートのプライバシー制御をセットアップできます - プライバシーが有効になっている場合、Defender for Endpoint はマルウェア 通知レポートの一部としてマルウェア アプリ名や他のアプリの詳細を送信しません。 |
+|フィッシング レポート |管理者は、フィッシング レポートのプライバシー制御をセットアップできます - プライバシーが有効になっている場合、Defender for Endpoint はフィッシングアラート レポートの一部として安全でない Web サイトのドメイン名と詳細を送信しません。 |
+|アプリの脆弱性評価 (Android のみ) |既定では、作業プロファイルにインストールされているアプリに関する情報だけが、脆弱性評価のために送信されます。 管理者は、個人用アプリを含めるプライバシーを無効にできます|
+
 ## <a name="configure-vulnerability-assessment-of-apps-for-byod-devices"></a>BYOD デバイス用アプリの脆弱性評価を構成する
 
 Android 上の Microsoft Defender for Endpoint のバージョン 1.0.3425.0303 から、オンボードモバイル デバイスにインストールされている OS とアプリの脆弱性評価を実行できます。
 
-> [!NOTE]
-> 脆弱性評価は、Microsoft [](next-gen-threat-and-vuln-mgt.md) Defender for Endpoint の脅威と脆弱性の管理の一部です。 Android では、この機能は現在プレビュー中であり、商用リリース前に大幅に変更される可能性があります。
-
 **個人用デバイス (BYOD) からのアプリに関連するプライバシーに関する注意事項:**
 
 - 仕事用プロファイルEnterprise Android の場合、作業プロファイルにインストールされているアプリだけがサポートされます。
-- 他の BYOD モードでは、既定では、アプリの脆弱性評価 **は** 有効になりません。 ただし、デバイスが管理者モードの場合、管理者はデバイスにインストールされているアプリの一覧を取得するために、Microsoft エンドポイント マネージャーを使用してこの機能を明示的に有効にできます。 詳細については、ドキュメントを参照してください。
+- 他の BYOD モードでは、既定では、アプリの脆弱性評価 **は** 有効になりません。 ただし、デバイスが管理者モードの場合、管理者はデバイスにインストールされているアプリの一覧を取得するために、Microsoft エンドポイント マネージャーを使用してこの機能を明示的に有効にできます。 詳細については、以下の詳細を参照してください。
 
 ### <a name="configure-privacy-for-device-administrator-mode"></a>デバイス管理者モードのプライバシーを構成する
 
-対象ユーザーのデバイス管理者 **モードで** デバイスからのアプリの脆弱性評価を有効にするには、次の手順を使用します。 
+対象ユーザーのデバイス **管理者モードで** デバイスからのアプリの脆弱性評価を有効にするには、次の手順を使用します。 
 
 > [!NOTE]
 > 既定では、デバイス管理モードに登録されているデバイスでは無効になっています。
 
-1. 管理[Microsoft エンドポイント マネージャーで、[](https://go.microsoft.com/fwlink/?linkid=2109431)デバイス構成プロファイルプロファイルの作成] に移動し  >    >  、次の設定を入力します。
+1. 管理 [Microsoft エンドポイント マネージャーで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**DevicesConfiguration** >  **profilesCreate** >  **プロファイル**] に移動し、次の設定を入力します。
 
-   - **プラットフォーム**: Android デバイス管理者の選択
+   - **プラットフォーム**: [Android デバイス管理者] の選択
    - **プロファイル**: [カスタム] を選択し、[作成] をクリックします。
 
 2. [基本 **] セクション** で、プロファイルの名前と説明を指定します。
 
-3. [構成設定 **] で****、[OMA-URI の追加] 設定を選択** します。
+3. [構成設定 **] で、[****OMA-URI の追加] 設定を選択** します。
 
    - **名前**: この OMA-URI 設定の一意の名前と説明を入力して、後で簡単に見つけ出すことができるようにします。
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderTVMPrivacyMode**
@@ -95,12 +100,12 @@ Android 上の Microsoft Defender for Endpoint のバージョン 1.0.3425.0303 
 
 Defender for Endpoint は、作業プロファイル内のアプリの脆弱性評価をサポートします。 ただし、対象ユーザーに対してこの機能をオフにする場合は、次の手順を使用できます。
 
-1. [[Microsoft エンドポイント マネージャー管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**アプリ** アプリの構成ポリシー] [管理対象  >    >  **デバイス**  >  **の追加] に移動します**。
-2. ポリシーに名前を付け、**プラットフォーム > Android Enterprise** プロファイルの種類を選択します。
-3. ターゲット **アプリとして [Microsoft Defender for Endpoint]** を選択します。
-4. [設定] ページで、[構成デザイナーを使用する] を選択し、キーと値の種類として **DefenderTVMPrivacyMode** を整数として追加 **します。**
-   - 作業プロファイル内のアプリの脆弱性を無効にするには、値を as と入力し `1` 、このポリシーをユーザーに割り当てる必要があります。 既定では、この値はに設定されます `0` 。
-   - キーが [キー] に設定されているユーザーの場合、Defender for Endpoint は、作業プロファイルからバックエンド サービスにアプリの一覧を送信して、脆弱性評価 `0` を行います。
+1. [[Microsoft エンドポイント マネージャー管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**AppsApp** >  >  構成ポリシー **] [デバイスの追加]** >  **に移動します**。
+2. ポリシーに名前を付け、**Android >プラットフォームEnterprise** プロファイルの種類を選択します。
+3. ターゲット **アプリとして [Microsoft Defender for Endpoint** ] を選択します。
+4. [設定] ページで、[構成デザイナーを使用する] を選択し、キーと値の種類として **DefenderTVMPrivacyMode** を整数として追加 **します**。
+   - 作業プロファイル内のアプリの脆弱性を無効にするには、値を as `1` と入力し、このポリシーをユーザーに割り当てる必要があります。 既定では、この値はに設定されます `0`。
+   - キーが [キー] に設定されている `0`ユーザーの場合、Defender for Endpoint は、作業プロファイルからバックエンド サービスにアプリの一覧を送信して、脆弱性評価を行います。
 5. [次 **へ] を** クリックし、このプロファイルを対象のデバイス/ユーザーに割り当てる。
 
 上記のプライバシーコントロールをオンまたはオフにした場合、デバイスコンプライアンスチェックや条件付きアクセスには影響はありません。
@@ -113,14 +118,14 @@ Defender for Endpoint は、作業プロファイル内のアプリの脆弱性�
 
 対象ユーザーに対して有効にするには、次の手順を使用します。
 
-1. 管理[Microsoft エンドポイント マネージャーで、[](https://go.microsoft.com/fwlink/?linkid=2109431)デバイス構成プロファイルプロファイルの作成] に移動し  >    >  、次の設定を入力します。
+1. 管理 [Microsoft エンドポイント マネージャーで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**DevicesConfiguration** >  **profilesCreate** >  **プロファイル**] に移動し、次の設定を入力します。
 
    - **プラットフォーム**: [Android デバイス管理者] を選択します。
    - **プロファイル**: [カスタム] を選択し、[作成] を **クリックします**。
 
 2. [基本 **] セクション** で、プロファイルの名前と説明を指定します。
 
-3. [構成設定 **] で****、[OMA-URI の追加] 設定を選択** します。
+3. [構成設定 **] で、[****OMA-URI の追加] 設定を選択** します。
 
    - **名前**: この OMA-URI 設定の一意の名前と説明を入力して、後で簡単に見つけ出すことができるようにします。
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeURLInReport**
@@ -135,10 +140,10 @@ Defender for Endpoint は、作業プロファイル内のアプリの脆弱性�
 
 次の手順を使用して、作業プロファイルで対象ユーザーのプライバシーを有効にしてください。
 
-1. [[Microsoft エンドポイント マネージャー管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**アプリ** アプリの構成ポリシー] [管理対象  >    >  **デバイス**  >  **の追加] に移動します**。
+1. [[Microsoft エンドポイント マネージャー管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**AppsApp** >  >  構成ポリシー **] [デバイスの追加]** >  **に移動します**。
 2. ポリシーに名前を付け、「**プラットフォーム > Android** Enterpriseプロファイルの種類を選択します。
-3. ターゲット **アプリとして [Microsoft Defender for Endpoint]** を選択します。
-4. [設定] ページで、[構成 **デザイナーを使用** する] を選択し、キーと値の種類として **DefenderExcludeURLInReport** を整数として追加 **します**。
+3. ターゲット **アプリとして [Microsoft Defender for Endpoint** ] を選択します。
+4. [設定] ページで、[構成デザイナーを使用する] **を選択し**、キーと値の種類として **DefenderExcludeURLInReport** を整数として追加 **します**。
    - プライバシー **を有効にするには、1 と入力します**。 既定値は 0 です。
 5. [次 **へ] を** クリックし、このプロファイルを対象のデバイス/ユーザーに割り当てる。
 
@@ -152,14 +157,14 @@ Defender for Endpoint は、作業プロファイル内のアプリの脆弱性�
 
 対象ユーザーに対して有効にするには、次の手順を使用します。
 
-1. 管理[Microsoft エンドポイント マネージャーで、[](https://go.microsoft.com/fwlink/?linkid=2109431)デバイス構成プロファイルプロファイルの作成] に移動し  >    >  、次の設定を入力します。
+1. 管理 [Microsoft エンドポイント マネージャーで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**DevicesConfiguration** >  **profilesCreate** >  **プロファイル**] に移動し、次の設定を入力します。
 
    - **プラットフォーム**: [Android デバイス管理者] を選択します。
    - **プロファイル**: [カスタム] を選択し、[作成] を **クリックします**。
 
 2. [基本 **] セクション** で、プロファイルの名前と説明を指定します。
 
-3. [構成設定 **] で****、[OMA-URI の追加] 設定を選択** します。
+3. [構成設定 **] で、[****OMA-URI の追加] 設定を選択** します。
 
    - **名前**: この OMA-URI 設定の一意の名前と説明を入力して、後で簡単に見つけ出すことができるようにします。
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
@@ -174,10 +179,10 @@ Defender for Endpoint は、作業プロファイル内のアプリの脆弱性�
 
 次の手順を使用して、作業プロファイルで対象ユーザーのプライバシーを有効にしてください。
 
-1. [[Microsoft エンドポイント マネージャー管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**アプリ** アプリの構成ポリシー] [管理対象  >    >  **デバイス**  >  **の追加] に移動します**。
+1. [[Microsoft エンドポイント マネージャー管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**AppsApp** >  >  構成ポリシー **] [デバイスの追加]** >  **に移動します**。
 2. ポリシーに名前を付け、「**プラットフォーム > Android** Enterpriseプロファイルの種類を選択します。
-3. ターゲット **アプリとして [Microsoft Defender for Endpoint]** を選択します。
-4. [設定] ページで、[構成デザイナーを使用する]**を選択し**、キーと値の種類として **DefenderExcludeAppInReport** を整数として追加 **します**。
+3. ターゲット **アプリとして [Microsoft Defender for Endpoint** ] を選択します。
+4. [設定] ページで、[構成デザイナーを使用する] **を選択し**、キーと値の種類として **DefenderExcludeAppInReport** を整数として追加 **します。**
    - プライバシー **を有効にするには、1 と入力します**。 既定値は 0 です。
 5. [次 **へ] を** クリックし、このプロファイルを対象のデバイス/ユーザーに割り当てる。
 
