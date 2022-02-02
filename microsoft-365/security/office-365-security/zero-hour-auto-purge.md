@@ -22,12 +22,12 @@ ms.custom:
 description: ゼロ時間自動削除 (ZAP) は、Exchange Online メールボックス内の配信されたメッセージを、スパム、フィッシング、または配信後にマルウェアが含まれていると検出された迷惑メール フォルダーまたは検疫にさかのぼって移動します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d511ab13bd6be4a1e526726f8011f457dfd6c765
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: a48f5eb1d45af16ab275c16d2965dc9a578d9312
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295364"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320945"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>ゼロ時間自動削除 (ZAP) (Exchange Online
 
@@ -98,7 +98,12 @@ ZAP は、セーフ 添付ファイル ポリシー スキャンで動的配信�
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>ZAP がメッセージを移動した場合の確認方法
 
-ZAP がメッセージを移動したかどうかを確認するには、 [Mailflow](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) 状態レポートまたは脅威エクスプローラー (およびリアルタイムの検出) にメールフロー ビューを [使用できます](threat-explorer.md)。 システム アクションとして、ZAP はメールボックス監査ログのExchangeされません。
+ZAP がメッセージを移動したかどうかを確認するには、次のオプションがあります。
+
+- **メッセージ数:** Mailflow 状態レポートの [Mailflow](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) ビューを使用して、指定した日付範囲の ZAP 影響を受けるメッセージの数を確認します。
+- **メッセージの詳細**: 脅威エクスプローラー (およびリアルタイム検出) を使用して、[追加 [アクション]](threat-explorer.md) 列の値 **ZAP** ですべての電子メール イベント **をフィルター処理** します。
+
+**注**: ZAP は、システム アクションとしてメールボックスExchangeログに記録されません。
 
 ## <a name="zero-hour-auto-purge-zap-faq"></a>ゼロ時間自動削除 (ZAP) FAQ
 

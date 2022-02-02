@@ -1,5 +1,5 @@
 ---
-title: 攻撃表面の縮小を理解して使用する
+title: 攻撃面の減少を理解して使用する
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint の攻撃表面の縮小機能について説明します。
 keywords: asr, 攻撃表面の縮小, Microsoft Defender for Endpoint, microsoft Defender, ウイルス対策, av, Windows Defender
@@ -12,17 +12,17 @@ ms.author: v-jweston
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/14/2021
-ms.openlocfilehash: 05650ab36833f8ea633c9f314fd438cfd0275919
-ms.sourcegitcommit: db62fce58867c7e5c8029b66966e792da3103b89
+ms.collection: m365initiative-m365-defender
+ms.date: 1/18/2022
+ms.openlocfilehash: 5878b29b5d40076cd515dde6737a4e7c7d70ab56
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61598451"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320981"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能の理解と使用
 
@@ -45,12 +45,12 @@ ms.locfileid: "61598451"
 
 環境で攻撃表面の縮小を構成するには、次の手順を実行します。
 
-1. [ハードウェア ベースの分離を有効にMicrosoft Edge。](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)
+1. [ハードウェア ベースの分離を有効にMicrosoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)。
 
 2. アプリケーション制御を有効にする。
 
    1. [基本ポリシー] を [Windows] で確認します。 「 [基本ポリシーの例」を参照してください](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)。
-   2. 「アプリケーションコントロール[Windows Defenderガイド」を参照してください](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)。
+   2. 「アプリケーション コントロール[Windows Defenderガイド」を参照してください](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)。
    3. 「アプリケーション[制御 (WDAC) Windows Defenderの展開」を参照してください](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
 
 3. [フォルダー アクセスの制御を有効にする](enable-controlled-folders.md)。
@@ -64,8 +64,8 @@ ms.locfileid: "61598451"
 7. ネットワーク ファイアウォールを設定します。
 
    1. 高度なセキュリティを備Windows Defender[ファイアウォールの概要を確認します](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
-   2. ファイアウォール ポリシー[をWindows Defenderする](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide)方法を決定するには、「ファイアウォール設計ガイド」を使用します。
-   3. 高度な[セキュリティWindows Defender組織](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)のファイアウォールをセットアップするには、「ファイアウォールの展開ガイド」を使用します。
+   2. ファイアウォール ポリシー [Windows Defenderする](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide)方法を決定するには、「ファイアウォールの設計ガイド」を使用します。
+   3. 高度なセキュリティ[Windows Defender組織](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)のファイアウォールをセットアップするには、「ファイアウォールの展開ガイド」を使用します。
 
 > [!TIP]
 > ほとんどの場合、攻撃表面の縮小機能を構成する場合、次の方法から選択できます。
@@ -89,14 +89,14 @@ ms.locfileid: "61598451"
 
 この機能は、アプリ、スクリプト、またはファイルが変更されるのをブロックまたは防止できません。 ただし、イベント ログWindows機能が完全に有効になっている場合と同様にイベントが記録されます。 監査モードを使用すると、イベント ログを確認して、機能が有効になっている場合の影響を確認できます。
 
-監査されたエントリを見つけるには、「Applications and Services Microsoft **Windows Windows Defender** \>  \>  \>  \> **します**。
+監査されたエントリを見つけるには、「**Applications and Services** **Microsoft** \>  \>  \> Windows \> Windows Defender **してください**。
 
 Defender for Endpoint を使用して、各イベントの詳細を取得します。 これらの詳細は、攻撃表面の縮小ルールを調査する場合に特に役立ちます。 Defender for Endpoint コンソールを使用すると、アラートタイムラインと調査シナリオの一部として問題 [を調査できます](investigate-alerts.md)。
 
 グループ ポリシー、PowerShell、および構成サービス プロバイダー (CSP) を使用して監査モードを有効にできます。
 
 > [!TIP]
-> また、テストグラウンドのWindows Defenderに[アクセスして](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)demo.wd.microsoft.com 機能を確認し、機能の動作を確認できます。
+> また、テストグラウンドの[Windows Defenderにアクセス](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)して demo.wd.microsoft.com 機能を確認し、機能の動作を確認できます。
 
 | 監査オプション | 監査モードを有効にする方法 | イベントを表示する方法 |
 |---|---|---|
@@ -113,7 +113,7 @@ Defender for Endpoint を使用して、各イベントの詳細を取得しま�
 
 このセクションでは、すべてのイベント、関連する機能または設定を一覧表示し、特定のイベントにフィルター処理するカスタム ビューを作成する方法について説明します。
 
-E5 サブスクリプションを持っている場合は、Windows セキュリティ、イベント、ブロック、警告に関する詳細なレポートを取得し[、Microsoft Defender for Endpoint を使用します](microsoft-defender-endpoint.md)。
+E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) を使用している場合は、Windows セキュリティの一部としてイベント、ブロック、および警告に関する詳細なレポートを取得します。
 
 ### <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>カスタム ビューを使用して攻撃表面の縮小機能を確認する
 
@@ -129,9 +129,9 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
     - 攻撃表面の縮小イベントのカスタム ビュー: *asr-events.xml*
     - ネットワーク/保護イベントのカスタム ビュー: *np-events.xml*
 
-2. [**イベント ビューアー] と** 入力し、[スタート メニュー ビューアー]**を開きます**。
+2. [**イベント ビューアー] と** 入力し、[スタート メニュービューアー **] を開きます**。
 
-3. [アクション **の** \> **インポート] [カスタム ビュー...] を選択します。**
+3. [アクション **のインポート** \> **] [カスタム ビュー...] を選択します。**
 
    > [!div class="mx-imgBorder"]
    > ![[Even ビューアー] ウィンドウの左側にあるカスタム ビューのインポートを強調表示するアニメーション。](images/events-import.gif)
@@ -146,7 +146,7 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 1. [**イベント ビューアー]** を [スタート メニュー入力して、[イベント ビューアー] Windows **開きます**。
 
-2. 左側のパネルの [アクション] で **、[** カスタム ビューの **作成]を選択します。**
+2. 左側のパネルの [アクション] **で、[** カスタム ビュー **の作成]を選択します。**
 
    > [!div class="mx-imgBorder"]
    > ![イベント ビューアー ウィンドウでカスタム ビューの作成オプションを強調表示するアニメーション。](images/events-create.gif)
@@ -212,12 +212,12 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 ### <a name="list-of-attack-surface-reduction-events"></a>攻撃表面の縮小イベントの一覧
 
-すべての攻撃表面の縮小イベントは **、Microsoft** > > Windows の [アプリケーションとサービス ログ] の下にあり、次の表に示すフォルダーまたはプロバイダーにあります。
+すべての攻撃表面の縮小イベントは、**Microsoft >** > Windows の [アプリケーションとサービス ログ] の下にあり、次の表に示すフォルダーまたはプロバイダーにあります。
 
 これらのイベントには、次のイベント ビューアー Windowsアクセスできます。
 
 1. [スタート] **メニューを** 開き、イベント **ビューアーと入力** し、イベント ビューアーの **結果を選択** します。
-2. [**アプリケーションとサービス ログ]** > Microsoft > Windows展開し、次の表の [**プロバイダー/** ソース] の下にあるフォルダーに移動します。
+2. [**アプリケーションとサービス ログ] > Microsoft** > Windows展開し、次の表の [プロバイダー **/** ソース] の下にあるフォルダーに移動します。
 3. サブアイテムをダブルクリックすると、イベントが表示されます。 イベントをスクロールして、探しているイベントを見つける。
 
    ![イベント ビューアーを使用して表示されるアニメーション。](images/event-viewer.gif)
@@ -226,7 +226,7 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 ****
 
-|機能|プロバイダー/ソース|イベント ID|説明|
+|特徴|プロバイダー/ソース|イベント ID|説明|
 |---|---|:---:|---|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|1|ACG の監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|2|ACG の実施|

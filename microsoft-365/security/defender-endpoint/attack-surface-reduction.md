@@ -10,20 +10,21 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar, jcedola
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom:
 - asr
 - admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 68bcc25d336fc7fc9c3ea76d4e150e2483f01323
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.collection: m365initiative-m365-defender
+ms.date: 1/18/2022
+ms.openlocfilehash: cba76d867b71fa941983e10b0dbe10f323ea70ef
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213843"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321053"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>マルウェア感染を防ぐために攻撃面の減少ルールを使用する
 
@@ -44,11 +45,11 @@ ms.locfileid: "62213843"
 
 このようなソフトウェアの動作は、正当なアプリケーションで見られる場合があります。 ただし、これらの動作は、マルウェアを介して攻撃者によって悪用されるのが一般的なので、リスクが高いと見なされる場合が多い。 攻撃表面の縮小ルールは、ソフトウェア ベースのリスクの高い動作を制限し、組織の安全を維持するのに役立ちます。
 
-攻撃表面の縮小ルールの構成の詳細については、「攻撃表面の縮小ルールを有効 [にする」を参照してください](enable-attack-surface-reduction.md)。
+攻撃表面縮小ルールの構成の詳細については、「攻撃表面の縮小ルールを有効 [にする」を参照してください](enable-attack-surface-reduction.md)。
 
 ## <a name="assess-rule-impact-before-deployment"></a>展開前にルールへの影響を評価する
 
-攻撃表面の縮小ルールがネットワークに与える影響を評価するには、このルールのセキュリティに関する推奨事項を [脅威と脆弱性の管理][で開きます](/windows/security/threat-protection/#tvm)。
+攻撃表面の縮小ルールがネットワークに与える影響を評価するには、このルールのセキュリティに関する推奨事項を [脅威と脆弱性の管理。](/windows/security/threat-protection/#tvm)
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="攻撃表面の縮小ルールのセキュリティ reco。":::
 
@@ -72,24 +73,24 @@ ms.locfileid: "62213843"
 
 - [Windows 10 Version 1809](/windows/whats-new/whats-new-windows-10-version-1809)以降
 - Windows 11
-- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)以降
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809) 以降
 
-Microsoft Defender ウイルス対策モードでリアルタイム保護を実行している[必要があります](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
+Microsoft Defender ウイルス対策アクティブ モードでリアルタイム保護を実行している[必要があります](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
 
 また、マルウェア対策[Microsoft Defender ウイルス対策更新プログラムがインストールされていることを](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)確認します。
 
 - プラットフォームリリースの最小要件: `4.18.2008.9`
 - エンジンリリースの最小要件: `1.1.17400.5`
 
-詳細と更新プログラムの取得については [、「Update for Microsoft Defender マルウェア対策プラットフォーム」を参照してください](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)。
+詳細と更新プログラムの取得については、「 [Update for Microsoft Defender マルウェア対策プラットフォーム」を参照してください](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)。
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>警告モードがサポートされていない場合
 
 警告モードは、3 つの攻撃表面の縮小ルールを構成するときにサポートMicrosoft エンドポイント マネージャー。 (グループ ポリシーを使用して攻撃表面の縮小ルールを構成する場合は、警告モードがサポートされます)。警告モードを構成するときに警告モードをサポートしない 3 つのMicrosoft エンドポイント マネージャーは次のとおりです。
 
-- [ダウンロードした実行可能コンテンツ (GUID)](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)の起動から JavaScript または VBScript をブロックする `d3e037e1-3eb8-44c8-a917-57927947596d`
-- [WMI イベント サブスクリプション (GUID) による永続](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) 化をブロック `e6db77e5-3df2-4cf1-b95a-636979351e5b` する
-- [ランサムウェアに対する高度な保護を使用](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware) する `c1db55ab-c21a-4637-bb3f-a12568109d35` (GUID)
+- [ダウンロードした実行可能コンテンツ (](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)GUID) の起動から JavaScript または VBScript をブロックする`d3e037e1-3eb8-44c8-a917-57927947596d`
+- [WMI イベント サブスクリプション (GUID) による永続](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)化をブロックする`e6db77e5-3df2-4cf1-b95a-636979351e5b`
+- [ランサムウェアに対する高度な保護を使用](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware) する (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`)
 
 また、警告モードは、以前のバージョンのサーバーを実行しているデバイスではWindows。 このような場合、警告モードで実行するように構成された攻撃表面の縮小ルールは、ブロック モードで実行されます。
 
@@ -99,7 +100,7 @@ Microsoft Defender ウイルス対策モードでリアルタイム保護を実�
 
 また、特定の攻撃表面縮小ルールがトリガーされると、アラートが生成されます。
 
-通知と生成されるアラートは、ポータルでMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">できます</a>。
+通知と生成されたアラートは、ポータルでMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">できます</a>。
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>高度な狩猟と攻撃表面の縮小イベント
 
@@ -107,24 +108,24 @@ Microsoft Defender ウイルス対策モードでリアルタイム保護を実�
 
 たとえば、午後 2 時の間に 10 台のデバイスで攻撃表面の縮小イベントが発生するとします。 最初のイベントが 2:15、最後の 2:45 に発生したとします。 高度な検索では、そのイベントのインスタンスが 1 つ表示されます (実際には 10 台のデバイスで発生した場合でも)、タイムスタンプは午後 2 時 15 分になります。
 
-高度な狩猟の詳細については、「高度な狩猟 [を使用して脅威を事前に検出する」を参照してください](advanced-hunting-overview.md)。
+高度な狩猟の詳細については、「高度な狩猟 [を使用して脅威を事前に検索する」を参照してください](advanced-hunting-overview.md)。
 
 ## <a name="attack-surface-reduction-features-across-windows-versions"></a>複数のバージョンの攻撃表面Windows機能
 
 次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールをWindows。
 
-- Windows 10 Proバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
-- Windows 10 Enterpriseバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
-- Windows Server バージョン[1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
+- Windows 10 Proバージョン [1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
+- Windows 10 Enterpriseバージョン [1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
+- Windows Server [バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803) 以降
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
   >[!NOTE]
-  >Windows Server 2016および Windows Server 2012 R2 は、この機能を動作するには、「オンボード サーバー Windows[](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)を使用してオンボードする必要があります。 
+  >Windows Server 2016およびWindows Server 2012 R2 は、この機能を動作するためにオンボード サーバーのWindows[を](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)使用してオンボードする必要があります。 
 
 
-攻撃表面の縮小ルールでは[E5](/windows/deployment/deploy-enterprise-licenses)ライセンスをWindows必要とWindows、高度な管理機能を利用できます。 E5 でのみ使用できる高度な機能はWindows含まれます。
+攻撃表面の縮小ルールでは [E5](/windows/deployment/deploy-enterprise-licenses) ライセンスをWindows必要とWindows、高度な管理機能を利用できます。 E5 でのみ使用できる高度な機能はWindows含まれます。
 
 - Defender for Endpoint で利用できる監視、分析、 [およびワークフロー](microsoft-defender-endpoint.md)
 - レポート機能と構成機能は[、Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
@@ -135,7 +136,7 @@ Microsoft Defender ウイルス対策モードでリアルタイム保護を実�
 
 Defender for Endpoint は、アラート調査シナリオの一環として、イベントとブロックの詳細なレポートを提供します。
 
-高度な検索を使用して、Microsoft 365 Defender Defender [for](microsoft-defender-security-center.md) Endpoint データ[をクエリできます](advanced-hunting-query-language.md)。 監査モードを実行している [場合](audit-windows-defender.md)は、高度な検索を使用して、攻撃表面の縮小ルールが環境に与える影響を理解できます。
+高度な検索を使用して、[Microsoft 365 Defender Defender for](microsoft-defender-security-center.md) Endpoint データ[をクエリできます](advanced-hunting-query-language.md)。 監査モードを実行している [場合](audit-windows-defender.md)は、高度な検索を使用して、攻撃表面の縮小ルールが環境に与える影響を理解できます。
 
 クエリの例を次に示します。
 
@@ -148,13 +149,13 @@ DeviceEvents
 
 次のイベント ログをWindowsして、攻撃表面の縮小ルールによって生成されたイベントを表示できます。
 
-1. 評価パッケージ [をダウンロードし](https://aka.ms/mp7z2w) 、デバイス上 *cfa-events.xmlアクセスしやすい* 場所にファイルを抽出します。
+1. 評価パッケージ [をダウンロードし](https://aka.ms/mp7z2w) 、デバイス上 *cfa-events.xmlにファイル* を抽出します。
 
-2. [イベント ビューアー] という *単語* を入力して、スタート メニューを開Windowsします。
+2. [イベント *ビューアー] という* 単語を入力して、スタート メニューを開Windowsします。
 
-3. [アクション **] で**、[カスタム **ビューのインポート.... を選択します**。
+3. [アクション **] で**、[ **カスタム ビューのインポート....] を選択します**。
 
-4. 抽出された場所 *cfa-events.xml* ファイルを選択します。 または [、XML を直接コピーします](event-views.md)。
+4. 抽出された場所 *cfa-events.xml* ファイルを選択します。 または、 [XML を直接コピーします](event-views.md)。
 
 5. [**OK**] を選択します。
 

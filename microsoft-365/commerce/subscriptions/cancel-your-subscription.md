@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 管理センターで、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 の試用版または有料サブスクリプションをキャンセルする方法について説明します。
 ms.date: 01/20/2022
-ms.openlocfilehash: f1c64090117a93d33ccf69222cbe0b7f7d06a88e
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 2d800fbba8ce2290de395179589b1d4110cd1345
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156174"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322580"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -101,7 +101,7 @@ Microsoft 365 Business Premium など、同じ製品に対して複数のサブ�
   
 - **管理者アクセス:** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。全体管理者または課金管理者の場合は、すべてのデータを維持したまま [サブスクリプションを再アクティブ化](reactivate-your-subscription.md)できる期間が 90 日間あります。
 
-- **ユーザー アクセス** ユーザーは、OneDrive for Business などのサービスの使用や、顧客データ (チーム サイトのメール、ドキュメントなど) へのアクセスができなくなります。Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、 [ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
+- **ユーザー アクセス** ユーザーは、OneDrive for Business などのサービスの使用や、顧客データ (チーム サイトのメール、ドキュメントなど) へのアクセスができなくなります。Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、 [ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)が表示されます。
 
 詳細については、「[サブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)」を参照してください。
 
@@ -138,13 +138,13 @@ NS レコードを変更する方法については、「[ドメインを削除�
 
 キャンセルが有効になると、ユーザーはデータにアクセスできなくなります。サブスクリプションをキャンセルする前に、ユーザーに OneDrive for Business または SharePoint Online ファイルを別の場所に保存するよう伝えます。残された顧客データは 30 日を過ぎると削除される可能性があり、キャンセル後、180 日以内に削除されます。
 
-- メール、連絡先、タスク、予定表などの情報を別のアカウントに移動するには、「[メール、連絡先、予定表を Outlook の .pst ファイルにエクスポートまたはバックアップする](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)」を参照してください。
+- メール、連絡先、タスク、予定表などの情報を別のアカウントに移動するには、「[メール、連絡先、予定表を Outlook の .pst ファイルにエクスポートまたはバックアップする](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)」を参照してください。
 
 - SharePoint Online 環境 (OneDrive for Business またはチーム サイト) からドキュメント ライブラリやリスト コンテンツ (連絡先など) を保存するには、「[SharePoint Online コンテンツの手動移行に関する情報](/sharepoint/troubleshoot/migration-tool/content-manual-migration)」を参照してください。
 
 ### <a name="uninstall-office-optional"></a>Office をアンインストールする (省略可能)
 
-サブスクリプションをキャンセルし、Microsoft 365 を含む[別のサブスクリプションにユーザーを移動](move-users-different-subscription.md)しなかった場合、Microsoft 365 は機能制限モードで実行されます。このような場合、ユーザーはドキュメントの読み取りおよび印刷だけを実行でき、Microsoft 365 アプリケーションに[ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。混乱を避けるために、ユーザーのコンピューターから [Office をアンインストールする](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)よう伝えます。
+サブスクリプションをキャンセルし、Microsoft 365 を含む[別のサブスクリプションにユーザーを移動](move-users-different-subscription.md)しなかった場合、Microsoft 365 は機能制限モードで実行されます。このような場合、ユーザーはドキュメントの読み取りおよび印刷だけを実行でき、Microsoft 365 アプリケーションに[ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)が表示されます。混乱を避けるために、ユーザーのコンピューターから [Office をアンインストールする](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)よう伝えます。
 
 ## <a name="next-steps"></a>次の手順
 

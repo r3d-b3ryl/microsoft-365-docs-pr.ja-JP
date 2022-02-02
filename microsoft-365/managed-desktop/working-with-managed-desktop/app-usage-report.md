@@ -9,24 +9,26 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 241bb500ae7f89aac175c4b84ebd8d29ff3b6dcd
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 6445d994ab34e16f205c1d59092c16ed8a1ee896
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034859"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321005"
 ---
 # <a name="app-usage-report"></a>アプリの使用状況レポート
 
-このレポートは、Microsoft Managed Desktop デバイス全体でアプリケーションがどのように使用されているのか理解するのに役立ちます。 また、アプリケーションの問題が検出された場合にユーザーに対する影響を評価するのに役立つ参照として機能します。 
+このレポートは、Microsoft Managed Desktop デバイス全体でアプリケーションがどのように使用されているのか理解するのに役立ちます。 また、アプリケーションの問題が検出された場合にユーザーに対する影響を評価するのに役立つ参照として機能します。
 
-このレポートの情報には、次の情報が含まれます。 
+このレポートの情報には、次の情報が含まれます。
 
-- アプリケーション名: 任意の量の使用状況が報告されたアプリケーションは、この一覧に表示されます。 
-- フォアグラウンド使用状況: 時間で表示されるフォアグラウンド アプリケーションとの対話に費やされた時間。 
-- 平均平日の使用状況: 週末を除くデバイスごとの平均使用量 
-- デバイス数: アプリケーションごとの使用状況に寄与するレポート デバイスの数 
-- レポート デバイスの割合: このアプリケーションを使用したレポート デバイス全体の割合  
+| 列名 | 説明 |
+| ------ | ------ |
+| アプリケーション名 | 報告された使用状況が任意の量のアプリケーションは、この一覧に表示されます。 |
+| フォアグラウンドの使用状況 | 時間で表示されるフォアグラウンド アプリケーションとの対話に費やされた時間。 |
+| 平日の平均使用量 | 週末を除くデバイスごとの平均使用量。
+| デバイス数 | アプリケーションごとの使用状況に寄与するレポート デバイスの数。
+| レポート デバイスの % | このアプリケーションを使用したレポート デバイスの合計の割合。
 
 > [!IMPORTANT]
-> デバイスがデータを報告するには、オプションの診断データ レベルに設定する必要があります。 Microsoft [Managed Desktop で診断データを使用する方法Windows詳細を参照してください](../service-description/privacy-personal-data.md)。 
+> デバイスがデータを報告するには、オプションの診断データ レベルに設定する必要があります。 [Microsoft Managed Desktop で診断データを使用する方法Windows詳細をご覧](../service-description/privacy-personal-data.md)ください。\
