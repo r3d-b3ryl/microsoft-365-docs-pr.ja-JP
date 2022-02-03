@@ -10,20 +10,20 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 3ea75323b56941b47e8bf9826c0bfeeb7d8983f9
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 21d69770fb16ac40b25cd9ff4fefd5ccf5b2f0fb
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034799"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345941"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
-[Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software)は、リアルタイムの[](https://support.microsoft.com/office/microsoft-teams-basics-6d5f52e6-5306-4096-ac24-c3082b79eaf0)コラボレーションとコミュニケーション、会議、ファイルとアプリの共有のためのワークスペースも提供する組織向けメッセージング アプリです。
+[Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software)[は、リアルタイム](https://support.microsoft.com/office/microsoft-teams-basics-6d5f52e6-5306-4096-ac24-c3082b79eaf0)のコラボレーションとコミュニケーション、会議、ファイルとアプリの共有のためのワークスペースも提供するメッセージング アプリです。
 
 ## <a name="initial-deployment"></a>初期展開
 
-ほとんどのハードウェア ベンダーは、イメージの一部として Teams をまだ含めないので、Microsoft Managed Desktop は Teams を使用してデバイスにMicrosoft Intune。 すべての管理対象デバイスには、Teams .msi[](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works)パッケージがインストールされ、デバイスにサインインしているすべてのユーザーがMicrosoft Teams準備ができていることを確認します。 パッケージの最初のインストールが完了すると、Teams自動的に開始され、デスクトップにショートカットが追加されます。
+ほとんどのハードウェア ベンダーは、画像の一部としてTeamsをまだ含めません。 Microsoft Managed Desktop は、Teamsを使用してデバイスにMicrosoft Intune。 すべての管理対象デバイスには、Teams .msi[パッケージがインストール](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works)されています。 この.msiを使用すると、デバイスにサインインしているすべてのユーザーが、Microsoft Teams準備ができていることを確認します。 パッケージの最初のインストールが完了すると、Teams自動的に開始され、デスクトップにショートカットが追加されます。
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune変更
 
@@ -34,13 +34,13 @@ Microsoft Managed Desktop は、ユーザーの組織に 2 つのアプリケー
 
 ## <a name="updates"></a>更新プログラム
 
-Teamsから別の更新パスに従いMicrosoft 365 Apps for enterpriseデスクトップ クライアントは自動的に更新します。 Teams、数時間ごとに更新プログラムをチェックし、ダウンロードし、コンピューターがアイドル状態になるのを待機してから、更新プログラムをサイレント インストールします。  
+Teamsから別の更新パスに従Microsoft 365 Apps for enterprise。 デスクトップ クライアントは自動的に更新されます。 Teams、数時間ごとに更新プログラムをチェックし、ダウンロードし、コンピューターがアイドル状態になるのを待機してから、更新プログラムをサイレント インストールします。  
 
 製品グループTeams管理者は更新プログラムを制御できないので、Microsoft Managed Desktop は標準の自動更新チャネル[を使用します](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating)。
 
 ### <a name="manually-updating-teams"></a>手動で更新Teams
 
-個々のユーザーは、アプリの右上部にある [プロファイル] ドロップダウン メニューで [更新プログラムの確認] を選択して更新    ****   プログラムをダウンロードすることもできます。 更新プログラムが利用可能な場合は、コンピューターがアイドル状態のときにダウンロードされ、サイレント インストールされます。
+個々のユーザーは更新プログラムをダウンロードできます。 アプリの上部にある [プロファイル] ドロップダウンで、[更新プログラムの確認 **] を選択します**。 更新プログラムが利用可能な場合は、コンピューターがアイドル状態のときにダウンロードされ、サイレント インストールされます。
 
 ## <a name="delivery-optimization-of-updates"></a>更新プログラムの配信の最適化
 

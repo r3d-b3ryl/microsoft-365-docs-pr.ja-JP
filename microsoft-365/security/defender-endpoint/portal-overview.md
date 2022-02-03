@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 774d7df5a42fb84b4bb6a29bd2c1945059e33ea8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 40d6f8a2882f2d5b420f21000794cac129fb0984
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168146"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345625"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Microsoft 365 Defender ポータルの概要
 
@@ -46,10 +46,7 @@ Enterpriseチームは、Microsoft 365 Defenderを使用して、潜在的な永
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
-ポータルを開く際に、次の情報が表示されます。
-
-- (1) ナビゲーション ウィンドウ (ナビゲーション ウィンドウの上部にある水平線を選択して表示または非表示にする)
-- (2) 検索、Communityセンター、ローカライズ、ヘルプとサポート、フィードバック
+ポータルを開いていると、[ナビゲーション] ウィンドウが表示されます (ナビゲーション ウィンドウの上部にある水平線を選択して表示または非表示にします)。
 
  ![Microsoft Defender for Endpoint portal.](images/mdatp-portal-overview.png)
 
@@ -60,7 +57,7 @@ Enterpriseチームは、Microsoft 365 Defenderを使用して、潜在的な永
 
 分野|説明
 :---|:---
-**(1) ナビゲーション ウィンドウ** | ナビゲーション ウィンドウを使用して、ダッシュボード、インシデント、デバイス リスト、アラート キュー、自動調査、高度な検索、**レポート**、パートナー **& API、Threat** **&** の脆弱性管理、評価とチュートリアル、サービス正常性、構成管理、**および 設定** の間を移動します。  ナビゲーション ウィンドウの上部にある水平線を選択して、表示または非表示を切り替えます。
+**(1) ナビゲーション ウィンドウ** | ナビゲーション ウィンドウを使用して、ダッシュボード、インシデント、デバイス リスト、アラート キュー、自動調査、高度な検索、レポート、パートナー **& API**、Threat **&** の脆弱性管理、評価とチュートリアル、サービス正常性、構成管理、**および 設定** の間を移動します。  ナビゲーション ウィンドウの上部にある水平線を選択して、表示または非表示を切り替えます。
 **ダッシュボード** | アクティブな自動調査、アクティブなアラート、自動調査統計、危険にさらされているデバイス、危険にさらされているユーザー、センサーの問題を持つデバイス、サービスの正常性、検出ソース、および毎日のデバイスレポートダッシュボードにアクセスします。
 **インシデント** | インシデントとして集計されたアラートを表示します。
 **デバイスの一覧** | Defender for Endpoint にオンボードされているデバイスの一覧、そのデバイスに関する情報、およびデバイスの露出とリスク レベルが表示されます。
@@ -78,7 +75,7 @@ Enterpriseチームは、Microsoft 365 Defenderを使用して、潜在的な永
 
 > [!NOTE]
 >
-> 解像度の高い DPI スケーリングの問題を持つデバイスについては、「Windows [DPI](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices)デバイスのスケーリングに関する問題」を参照してください。
+> 解像度の高い DPI スケーリングの問題を持つデバイスについては、考えられる解決策Windows DPI デバイスのスケーリングに関する問題の詳細[をご](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices)覧ください。
 
 ## <a name="microsoft-defender-for-endpoint-icons"></a>Microsoft Defender for Endpoint アイコン
 
@@ -131,7 +128,7 @@ Enterpriseチームは、Microsoft 365 Defenderを使用して、潜在的な永
 ![可能なアクティブなアラート アイコン。](images/tvm_alert_icon.png)|脅威&の管理 - アクティブなアラートの可能性
 ![推奨事項の分析情報アイコン。](images/tvm_insight_icon.png)|脅威&の管理 - 推奨事項の分析情報
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [概要 Microsoft 365 Defender](use.md)
 - [セキュリティ操作ダッシュボードの表示](security-operations-dashboard.md)

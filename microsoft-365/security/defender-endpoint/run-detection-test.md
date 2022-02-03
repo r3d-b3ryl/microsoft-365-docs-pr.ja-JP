@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec9aa659decd6815b00c9d80b2281fd8386bd082
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1cbef40696c7d2973a22ad9606c5fd99726329ae
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163196"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345965"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する
 
@@ -54,7 +54,7 @@ ms.locfileid: "61163196"
 
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
 
-   1. [コマンド プロンプト] を **右クリックし、[** 管理者として **実行] を選択します**。
+   1. [コマンド プロンプト] **を右クリックし、[** 管理者として **実行] を選択します**。
 
       ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ です。](images/run-as-admin.png)
 
@@ -64,9 +64,9 @@ ms.locfileid: "61163196"
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-[コマンド プロンプト] ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、約 10 分後にオンボード デバイスのポータルに新しいアラートが表示されます。
+[コマンド プロンプト] ウィンドウが自動的に閉じます。 成功すると、約 10 分でオンボード デバイスの新しいアラートがポータルに表示されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Windows デバイスのオンボード](configure-endpoints.md)
 - [オンボード サーバー](configure-server-endpoints.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f871d612acbc8c9fadf3a4f2e92e999ddebe9044
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: e364a2cffcd1c18c3d220e0747010a855fafed2a
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214017"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345953"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>デバイスの検出に関するよく寄せられる質問
 
@@ -53,7 +53,7 @@ ms.locfileid: "62214017"
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>標準検出を実行するデバイスを制御できますか?
 
-Standard Discovery の実行に使用されるデバイスの一覧をカスタマイズできます。 この機能をサポートしているすべてのオンボード デバイス (現在の Windows 10 デバイスのみ) で Standard Discovery を有効にするか、デバイス タグを指定してデバイスのサブセットまたはサブセットを選択できます。 この場合、他のすべてのデバイスは基本検出のみを実行するように構成されます。 構成は、[デバイスの検出設定] ページで使用できます。
+Standard Discovery の実行に使用されるデバイスの一覧をカスタマイズできます。 この機能をサポートしているすべてのオンボード デバイス (現在は Windows 10 以降および Windows Server 2019 以降のデバイスのみ) で Standard Discovery を有効にするか、デバイス タグを指定してデバイスのサブセットまたはサブセットを選択できます。 この場合、他のすべてのデバイスは基本検出のみを実行するように構成されます。 構成は、[デバイスの検出設定] ページで使用できます。
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>管理されていないデバイスをデバイス インベントリ リストから除外できますか?
 
@@ -61,7 +61,7 @@ Standard Discovery の実行に使用されるデバイスの一覧をカスタ�
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>検出を実行できるオンボード デバイス
 
-バージョン 1809 以降Windows 10 11 以降で実行されているオンボード デバイスはWindows検出を実行できます。 サーバーは、この時点で検出を実行できません。
+Windows 10 バージョン 1809 以降、Windows 11、Windows Server 2019、または Windows Server 2022 で実行されているオンボード デバイスは、検出を実行できます。
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>オンボード デバイスがホーム ネットワークまたはパブリック アクセス ポイントに接続されている場合は、どうなるでしょうか。
 
@@ -69,7 +69,7 @@ Standard Discovery の実行に使用されるデバイスの一覧をカスタ�
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>キャプチャと分析を行うプロトコルは何ですか?
 
-既定では、Windows 10 バージョン 1809 以降、または Windows 11 で実行されているオンボード デバイスはすべて、ARP、CDP、DHCP、DHCPv6、IP (ヘッダー)、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (SYN ヘッダー)、UDP (ヘッダー)、WSD
+既定では、 Windows 10 バージョン 1809 以降、Windows 11、Windows Server 2019、または Windows Server 2022 で実行されているオンボード デバイスはすべて、ARP、CDP、DHCP、DHCPv6、IP (ヘッダー)、LLDP、LLMNR、MDNS、MNDP、NBNS、SSDP、TCP (SYN ヘッダー) のプロトコルをキャプチャおよび分析しています。
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>Standard Discovery でアクティブなプロビリングに使用するプロトコルは何ですか?
 デバイスが標準検出を実行するように構成されている場合、公開されたサービスは、ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL、RPC、mDNS、DHCP、AFP、CrestonCIP、IphoneSync、WinRM、VNC、SLP、LDAP のプロトコルを使用してプローブされます。

@@ -15,12 +15,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 46eab67f459e763a212178d768f9a411aaf7adb7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 65469220cb6b001d5dbb474181f723235aa6d3a9
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372626"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345893"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
 
@@ -30,9 +30,9 @@ ms.locfileid: "61372626"
 
 標準のオンプレミスまたはハードウェア構成に加えて、リモート デスクトップ (RDS) または仮想デスクトップ インフラストラクチャ (VDI) 環境でも Microsoft Defender ウイルス対策 を使用できます。
 
-サービスと VDI のMicrosoft リモート デスクトップ詳細については[、「Azure Virtual Desktop のドキュメント」を参照してください](/azure/virtual-desktop)。
+サービスと VDI のMicrosoft リモート デスクトップ詳細については、「[Azure Virtual Desktop のドキュメント」を参照してください](/azure/virtual-desktop)。
 
-Azure ベースの仮想マシンについては[、「Install Endpoint Protection Microsoft Defender for Cloud」を参照してください](/azure/security-center/security-center-install-endpoint-protection)。
+Azure ベースの仮想マシンについては、「[Install Endpoint Protection Microsoft Defender for Cloud」を参照してください](/azure/security-center/security-center-install-endpoint-protection)。
 
 VDIs で実行されている VM に更新プログラムを簡単に展開する機能により、このガイドを短縮して、コンピューターの更新プログラムをすばやく簡単に取得する方法に焦点を当ててください。 更新プログラムはホスト サーバー上のコンポーネント ビットに展開され、有効になったときに VM に直接ダウンロードされるので、定期的にゴールデン イメージを作成してシールする必要がなくなりました。
 
@@ -46,7 +46,7 @@ VDIs で実行されている VM に更新プログラムを簡単に展開す�
 - [しばらくオフラインだった古いコンピューターまたはコンピューターをスキャンする](#scan-vms-that-have-been-offline)
 - [除外を適用する](#exclusions)
 
-また、新しい共有セキュリティ インテリジェンス更新機能を参照する仮想デスクトップ インフラストラクチャのホワイトペーパー [Microsoft Defender ウイルス対策](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)をダウンロードし、独自の VDI でウイルス対策のパフォーマンスをテストする方法に関するパフォーマンス テストとガイダンスを参照できます。
+また、新しい共有セキュリティ インテリジェンス更新機能を参照する仮想デスクトップ インフラストラクチャ上のホワイトペーパー [Microsoft Defender ウイルス対策](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf) をダウンロードし、独自の VDI でウイルス対策パフォーマンスをテストする方法に関するパフォーマンス テストとガイダンスをダウンロードできます。
 
 > [!IMPORTANT]
 > VDI は Windows Server 2012 または Windows Server 2016 でホストすることができますが、以前のバージョンの Windows では使用できない保護テクノロジと機能が強化されたので、仮想マシン (VM) は少なくとも 1607 の Windows 10 を実行している必要があります。
@@ -65,9 +65,9 @@ Windows 10 バージョン 1903 では、共有セキュリティ インテリ�
 
 3. [管理 **用テンプレート] をクリックします**。
 
-4. ツリーを展開して、**セキュリティ Windows更新** \> **Microsoft Defender ウイルス対策** \> **コンポーネントを展開します**。
+4. ツリーを展開して、**セキュリティ Windows更新Microsoft Defender ウイルス対策** \>  \> **コンポーネントを追加します**。
 
-5. [VDI クライアント **のセキュリティ インテリジェンスの場所** を定義する] をダブルクリックし、オプションを [有効] に **設定します**。 フィールドが自動的に表示されます。
+5. [ **VDI クライアントのセキュリティ インテリジェンスの場所** を定義する] をダブルクリックし、オプションを [有効] に **設定します**。 フィールドが自動的に表示されます。
 
 6. Enter `\\<sharedlocation\>\wdav-update` (この値のヘルプについては、「ダウンロードとアンパック [」を参照してください](#download-and-unpackage-the-latest-updates))。
 
@@ -83,7 +83,7 @@ Windows 10 バージョン 1903 では、共有セキュリティ インテリ�
 Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
 ```
 
-詳細については [、「ダウンロードとアンパック](#download-and-unpackage-the-latest-updates) 」セクション \<shared location\> を参照してください。
+詳細については [、「ダウンロードとアンパック](#download-and-unpackage-the-latest-updates) 」セクションを \<shared location\> 参照してください。
 
 ## <a name="download-and-unpackage-the-latest-updates"></a>最新の更新プログラムをダウンロードして開梱する
 
@@ -124,23 +124,23 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
     ```
    
     > [!NOTE]
-    > 認証されたユーザーの NTFS アクセス許可 **が追加されます。読み取り:** です。 
+    > 認証されたユーザーの NTFS アクセス許可 **が追加されます。読み取り:**。 
 
     この例では、ファイル共有は次のようになります。
 
-    \\fileserver.fqdn\mdatp$\wdav-update
+    \\\fileserver.fqdn\mdatp$\wdav-update
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>PowerShell スクリプトを実行するスケジュールされたタスクを設定する
 
-1. 管理マシンで、[タスク スケジューラ] と入力スタート メニューを **開きます**。 それを開き、 **サイド パネルで [タスクの作成...]** を選択します。
+1. 管理マシンで、[タスク スケジューラ] を開スタート メニュー入力 **します**。 それを開き、 **サイド パネルで [タスクの作成...]** を選択します。
 
-2. 名前をセキュリティ インテリジェンス **アンパックとして入力します**。 [トリガー] タブ **に移動** します。[**新規]を選択します。** \>**[日**] を選択し **、[OK] を選択します**。
+2. 名前をセキュリティ インテリジェンス **アンパックとして入力します**。 [トリガー] タブ **に移動** します。[**新規]を選択します。** \>**[毎日]** を選択し、[**OK] を選択します**。
 
-3. [アクション] タブ **に移動** します。[ **新規]を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [ `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` 引数の追加 **] フィールドに入力** します。 **[OK]** を選択します。
+3. [アクション] タブ **に移動** します。[ **新規]を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [引数 `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` の追加 **] フィールドに入力** します。 [**OK**] を選択します。
 
 4. 必要に応じて、追加の設定を構成できます。
 
-5. **[OK] を** 選択して、スケジュールされたタスクを保存します。
+5. [ **OK] を** 選択して、スケジュールされたタスクを保存します。
 
 タスクを右クリックして [実行] をクリックすると、手動で更新を開始 **できます**。
 
@@ -148,18 +148,18 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 すべてを手動で実行する場合は、スクリプトの動作をレプリケートするために実行する操作を次に示します。
 
-1. インテリジェンス更新プログラムを格納するために呼び出されるシステム ルートに新しいフォルダーを作成します。たとえば、 `wdav_update` フォルダーを作成します `c:\wdav_update` 。
+1. インテリジェンス更新プログラムを格納するために呼び出 `wdav_update` されるシステム ルートに新しいフォルダーを作成します。たとえば、フォルダーを作成します `c:\wdav_update`。
 
-2. GUID 名を *持つ* wdav_updateサブフォルダーを作成します。 `{00000000-0000-0000-0000-000000000000}`
+2. GUID 名 *を持つ* wdav_updateサブフォルダーを作成します。 `{00000000-0000-0000-0000-000000000000}`
 
    例を次に示します。 `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
    > [!NOTE]
    > スクリプトでは、GUID の最後の 12 桁が、ファイルがダウンロードされた年、月、日、および時刻として設定し、その度に新しいフォルダーが作成されます。 これを変更して、ファイルを同じフォルダーにダウンロードできます。
 
-3. セキュリティ インテリジェンス パッケージを [https://www.microsoft.com/wdsi/definitions](https://www.microsoft.com/wdsi/definitions)  GUID フォルダーにダウンロードします。 ファイルの名前を指定する必要があります `mpam-fe.exe` 。
+3. セキュリティ インテリジェンス パッケージを GUID フォルダー [https://www.microsoft.com/wdsi/definitions](https://www.microsoft.com/wdsi/definitions)  にダウンロードします。 ファイルの名前を指定する必要があります `mpam-fe.exe`。
 
-4. cmd プロンプト ウィンドウを開き、作成した GUID フォルダーに移動します。 **/X 抽出コマンドを** 使用して、たとえばファイルを抽出します `mpam-fe.exe /X` 。
+4. cmd プロンプト ウィンドウを開き、作成した GUID フォルダーに移動します。 **/X 抽出コマンドを** 使用して、たとえばファイルを抽出します`mpam-fe.exe /X`。
 
    > [!NOTE]
    > VM は、抽出された更新パッケージを使用して新しい GUID フォルダーが作成されるたびに、または既存のフォルダーが新しい抽出されたパッケージで更新されるたびに、更新されたパッケージを取得します。
@@ -168,7 +168,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 スケジュールされたスキャンは、リアルタイムの保護 [とスキャンに加えて実行されます](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
-スキャン自体の開始時刻は、スケジュールされたスキャン ポリシー **(ScheduleDay、ScheduleTime、****および** **ScheduleQuickScanTime) に基づいて引き続き実行されます**。 ランダム化を行Microsoft Defender ウイルス対策、スケジュールされたスキャンに設定された時刻から 4 時間以内に各コンピューターでスキャンを開始します。
+スキャン自体の開始時刻は、スケジュールされたスキャン ポリシー (**ScheduleDay**、 **ScheduleTime**、 **および ScheduleQuickScanTime) に基づいて引き続き実行されます**。 ランダム化を行Microsoft Defender ウイルス対策、スケジュールされたスキャンに設定された時刻から 4 時間以内に各コンピューターでスキャンを開始します。
 
 「スケジュール [されたスキャンで](scheduled-catch-up-scans-microsoft-defender-antivirus.md) 使用できるその他の構成オプションについては、スキャンをスケジュールする」を参照してください。
 
@@ -176,11 +176,11 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 スケジュールされたスキャン中に実行するスキャンの種類を指定できます。 クイック スキャンは、マルウェアをアクティブにする必要があるすべての場所を検索するように設計された、優先的な方法です。 次の手順では、グループ ポリシーを使用してクイック スキャンを設定する方法について説明します。
 
-1. グループ ポリシー エディターで、[スキャン] の **[** 管理 \> **用Windows]** \> **Microsoft Defender ウイルス対策** \> **移動します**。
+1. グループ ポリシー エディターで、[スキャン]  \> の [管理 **用Windows]** \> **Microsoft Defender ウイルス対策** \> **します**。
 
 2. [ **スケジュールされたスキャンに使用するスキャンの種類を指定する] を選択** し、ポリシー設定を編集します。
 
-3. ポリシーを [有効] **に設定し**、[オプション] で **[クイック** スキャン]  **を選択します**。
+3. ポリシーを [有効] **に設定し**、[オプション] **で [クイック** スキャン]  **を選択します**。
 
 4. **[OK]** を選択します。
 
@@ -190,11 +190,11 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 場合によっては、Microsoft Defender ウイルス対策通知が複数のセッションに送信または保持される場合があります。 この問題を最小限に抑えるために、ユーザー インターフェイスのMicrosoft Defender ウイルス対策できます。 次の手順では、グループ ポリシーを使用して通知を抑制する方法について説明します。
 
-1. グループ ポリシー エディターで、[クライアント インターフェイスWindows **コンポーネント** \> **Microsoft Defender ウイルス対策** \> **移動します**。
+1. グループ ポリシー エディターで、[クライアント インターフェイスWindows **コンポーネントMicrosoft Defender ウイルス対策** \>  \> **移動します**。
 
 2. [すべての **通知を非表示にする] を** 選択し、ポリシー設定を編集します。
 
-3. ポリシーを [有効]**に設定し****、[OK] を選択します**。
+3. ポリシーを [有効] **に設定し**、[OK] を **選択します**。
 
 4. 通常どおりにグループ ポリシー オブジェクトを展開します。
 
@@ -214,7 +214,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 > [!IMPORTANT]
 > 更新後にスキャンを実行すると、最新のセキュリティ インテリジェンス更新プログラムで VM が保護されます。 このオプションを無効にすると、VM の保護レベルが低下し、基本イメージを最初に作成または展開するときにのみ使用する必要があります。
 
-1. グループ ポリシー エディターで、[セキュリティ インテリジェンス **の更新WindowsのMicrosoft Defender ウイルス対策** \>  \> **に移動します**。
+1. グループ ポリシー エディターで、[セキュリティ インテリジェンス **の更新Windowsの** \>  \> Microsoft Defender ウイルス対策 **に移動します**。
 
 2. [ **セキュリティ インテリジェンスの更新後にスキャンを有効にする] を選択** し、ポリシー設定を編集します。
 
@@ -228,13 +228,13 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="scan-vms-that-have-been-offline"></a>オフラインの VM をスキャンする
 
-1. グループ ポリシー エディターで、[スキャン] Windows **コンポーネントMicrosoft Defender ウイルス対策** \>  \> **移動します**。
+1. グループ ポリシー エディターで、[スキャン] の **[WindowsコンポーネントMicrosoft Defender ウイルス対策** \>  \> **移動します**。
 
 2. [ **キャッチアップ クイック スキャンを有効にする] を選択** し、ポリシー設定を編集します。
 
 3. ポリシーを [有効] に **設定します**。
 
-4. **[OK]** を選択します。
+4. [**OK**] を選択します。
 
 5. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。
 
@@ -242,7 +242,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="enable-headless-ui-mode"></a>ヘッドレス UI モードを有効にする
 
-1. グループ ポリシー エディターで、[クライアント インターフェイスWindows **コンポーネント** \> **Microsoft Defender ウイルス対策** \> **移動します**。
+1. グループ ポリシー エディターで、[クライアント インターフェイスWindows **コンポーネントMicrosoft Defender ウイルス対策** \>  \> **移動します**。
 
 2. [ヘッド **レス UI モードを有効にする] を選択** し、ポリシーを編集します。
 

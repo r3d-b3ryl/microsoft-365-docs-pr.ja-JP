@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 125c90a6c9839e2899e97b197c951c0e26d6fc37
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 547356fadc05c2359b4c6cd639bc22110bf8be93
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371486"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346280"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 
@@ -56,7 +56,7 @@ ms.locfileid: "61371486"
 |状況|動作|
 |---|---|
 |アラートがトリガーされる|一般に、アラートがトリガーされると自動調査[](review-alerts.md)が開始され、インシデント[が](view-incidents-queue.md)作成されます。 たとえば、悪意のあるファイルがデバイスに存在するとします。 そのファイルが検出されると、アラートがトリガーされ、インシデントが作成されます。 自動調査プロセスは、デバイスで開始されます。 他のデバイス上の同じファイルのために他のアラートが生成されると、関連付けられたインシデントと自動調査に追加されます。|
-|調査が手動で開始される|自動調査は、セキュリティ運用チームが手動で開始できます。 たとえば、セキュリティオペレーターがデバイスのリストを確認し、デバイスのリスクレベルが高いという通知を行ったとします。 セキュリティオペレーターは、一覧でデバイスを選択してフライアウトを開き、[自動調査の開始] **を選択します**。|
+|調査が手動で開始される|自動調査は、セキュリティ運用チームが手動で開始できます。 たとえば、セキュリティオペレーターがデバイスのリストを確認し、デバイスのリスクレベルが高いという通知を行ったとします。 セキュリティオペレーターは、一覧でデバイスを選択してフライアウトを開き、[自動調査の開始 **] を選択できます**。|
 |
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>自動調査によって範囲が拡大される方法
@@ -69,7 +69,7 @@ ms.locfileid: "61371486"
 
 アラートがトリガーされ、自動調査が実行されると、調査された証拠ごとに評決が生成されます。 評決は次の場合があります。
 
-- *悪意のある*;
+- *悪意のある*。
 - *疑わしい*。または
 - *脅威が見つかりません*。
 
@@ -80,19 +80,21 @@ ms.locfileid: "61371486"
 保留中か完了かの修復アクションはすべて、アクション センターで [追跡されます](auto-investigation-action-center.md)。 必要に応じて、セキュリティ運用チームは修復アクションを元に戻すことができます。 詳細については、「自動調査後 [の修復アクションの確認と承認」を参照してください](/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 
 > [!TIP]
-> このポータルで、新しい統合された調査ページMicrosoft 365 Defenderしてください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
+> このポータルで、新しい統合された調査ページMicrosoft 365 Defenderしてください。 詳細については、「( [NEW!)」を参照してください。統合された調査ページ](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
 
 ## <a name="requirements-for-air"></a>AIR の要件
 
-組織には Defender for Endpoint が必要です (「エンドポイント用 Microsoft Defender の [最小要件」を参照してください](minimum-requirements.md))。
+組織には Defender for Endpoint が必要です (「 [エンドポイント用 Microsoft Defender の最小要件」を参照してください](minimum-requirements.md))。
 
 現在、AIR は次の OS バージョンのみをサポートしています。
 
+- Windows Server 2012 R2 (プレビュー)
+- Windows Server 2016 (プレビュー)
 - Windows Server 2019
 - Windows Server 2022
-- Windows 10バージョン 1709 (OS ビルド 16299.1085[および KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)以降
-- Windows 10バージョン 1803 (OS ビルド 17134.704[および KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)以降
-- Windows 10バージョン[1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019)以降
+- Windows 10バージョン 1709 (OS ビルド 16299.1085 [および KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 以降
+- Windows 10バージョン 1803 (OS ビルド 17134.704 [および KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 以降
+- Windows 10バージョン [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) 以降
 - Windows 11
 
 ## <a name="next-steps"></a>次の手順

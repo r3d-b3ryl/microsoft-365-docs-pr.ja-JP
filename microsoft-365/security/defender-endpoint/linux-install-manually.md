@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8354693f7f748771c9b6543455cf96177afacd05
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
+ms.openlocfilehash: da05d702a2cb074ece2fec74371e7b5f560cb1ed
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993289"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346095"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux 用 Microsoft Defender for Endpoint を手動で展開する
 
@@ -51,7 +51,7 @@ ms.locfileid: "61993289"
 開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明について、「[Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)」を参照してください。
 
 > [!WARNING]
-> 製品のインストール後にオペレーティング システムを新しいメジャー バージョンにアップグレードするには、製品を再インストールする必要があります。 Linux で [既存の](linux-resources.md#uninstall) Defender for Endpoint をアンインストールし、オペレーティング システムをアップグレードしてから、以下の手順に従って Defender for Endpoint on Linux を再構成する必要があります。
+> 製品のインストール後にオペレーティング システムを新しいメジャー バージョンにアップグレードするには、製品を再インストールする必要があります。 Linux [で既存の](linux-resources.md#uninstall) Defender for Endpoint をアンインストールし、オペレーティング システムをアップグレードしてから、以下の手順に従って Defender for Endpoint on Linux を再構成する必要があります。
 
 ## <a name="configure-the-linux-software-repository"></a>Linux ソフトウェア リポジトリを構成する
 
@@ -73,7 +73,7 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     ```
 
   > [!NOTE]
-  > 配布とバージョンを選択し、その下で最も近いエントリ (メジャー、マイナー) を特定します `https://packages.microsoft.com/config/rhel/` 。
+  > 配布とバージョンを選択し、その下で最も近いエントリ (メジャー、マイナー) を特定します `https://packages.microsoft.com/config/rhel/`。
 
     次の表を使用して、パッケージを見つけるのに役立ててください。
 
@@ -120,7 +120,7 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 ### <a name="sles-and-variants"></a>SLES とバリエーション
 
 > [!NOTE]
-> 配布とバージョンを選択し、その下で最も近いエントリ (メジャー、マイナー) を特定します `https://packages.microsoft.com/config/sles/` 。
+> 配布とバージョンを選択し、その下で最も近いエントリ (メジャー、マイナー) を特定します `https://packages.microsoft.com/config/sles/`。
 
    次のコマンドで、*[ディストリビューション]* と *[バージョン]* を特定した情報に置き換えます。
 
@@ -158,7 +158,7 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     ```
 
 > [!NOTE]
-> 配布とバージョンを選択し、その下で最も近いエントリ (メジャー、マイナー) を特定します `https://packages.microsoft.com/config/[distro]/` 。
+> 配布とバージョンを選択し、その下で最も近いエントリ (メジャー、マイナー) を特定します `https://packages.microsoft.com/config/[distro]/`。
 
    以下のコマンドで、*[ディストリビューション]* と *[バージョン]* を特定した情報に置き換えます。
 
@@ -298,7 +298,7 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 オンボーディング パッケージをポータルからMicrosoft 365 Defenderします。
 
 > [!IMPORTANT]
-> この手順を実行しない場合、実行されたコマンドには、製品のライセンスが解除されたことを示す警告メッセージが表示されます。 また、 `mdatp health` コマンドはの値を返します `false` 。
+> この手順を実行しない場合、実行されたコマンドには、製品のライセンスが解除されたことを示す警告メッセージが表示されます。 また、コマンド `mdatp health` はの値を返します `false`。
 
 1. Microsoft 365 Defender ポータルで、**[設定] > [エンドポイント] > [デバイス管理] > [オンボーディング]** に移動します。
 2. 最初のドロップダウン メニューで、オペレーティング システムとして **[Linux サーバー]** を選択します。 2 番目のドロップダウン メニューで、展開方法として **[ローカル スクリプト]** を選択します。
@@ -340,15 +340,15 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 2. MicrosoftDefenderATPOnboardingLinuxServer.py を実行します。
 
     > [!NOTE]
-    > このコマンドを実行するには、disto と version に応じてデバイスにインストール `python` `python3` されている必要があります。 必要に応じて、「Linux に Python をインストールする手順」 [を参照してください](https://opensource.com/article/20/4/install-python-linux)。
+    > このコマンドを実行するには、 `python` `python3` disto と version に応じてデバイスにインストールされている必要があります。 必要に応じて、「Linux に Python をインストールする手順 [」を参照してください](https://opensource.com/article/20/4/install-python-linux)。
     
-    RHEL 8.x または Ubuntu 20.04 以上を実行している場合は、 を使用する必要があります `python3` 。
+    RHEL 8.x または Ubuntu 20.04 以上を実行している場合は、 を使用する必要があります `python3`。
 
     ```bash
     sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-    残りのディストリビューションとバージョンでは、使用する必要があります `python` 。
+    残りのディストリビューションとバージョンでは、使用する必要があります `python`。
     
     ```bash
     sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -381,6 +381,12 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 
         ```bash
         mdatp health --field real_time_protection_enabled
+        ```
+        
+      有効になっていない場合は、次のコマンドを実行します。
+      
+       ```bash
+        mdatp config real-time-protection --value enabled
         ```
 
     - ターミナル ウィンドウを開き、次のコマンドを実行します。

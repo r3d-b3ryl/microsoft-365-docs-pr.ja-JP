@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d1170b03d510bb0c79376d55c771311e10251c8
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 1279f7271abbd4086c946492e95daa52962dbae5
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302388"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345633"
 ---
 # <a name="offboard-machine-api"></a>オフボード マシン API
 
@@ -54,11 +54,11 @@ Defender for Endpoint からのオフボード デバイス。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については [、「Use Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「 [Use Defender for Endpoint API」を参照してください。](apis-intro.md)
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
-アプリケーション|Machine.Offboard|'Offboard machine'
+Application|Machine.Offboard|'Offboard machine'
 委任 (職場または学校のアカウント)|Machine.Offboard|'Offboard machine'
 
 > [!NOTE]
@@ -73,9 +73,11 @@ Defender for Endpoint からのオフボード デバイス。
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ```
 
+デバイスを選択すると、コンピューター ID が URL に表示されます。 一般に、URL に表示される 40 桁の英数字です。
+
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 ---|---|---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -84,13 +86,13 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|型|説明
+パラメーター|種類|説明
 ---|---|---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。
+成功した場合、このメソッドは応答本文に 201 - Created response [code and Machine Action](machineaction.md) を返します。
 
 ## <a name="example"></a>例
 

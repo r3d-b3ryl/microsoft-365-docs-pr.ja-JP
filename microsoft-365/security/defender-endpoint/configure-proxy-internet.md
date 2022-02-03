@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b218ab83e5d348ef458d791bb573389ab4bf6096
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: db6d7f17231fd8c2355f36310609af1e8d88160c
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326971"
+ms.locfileid: "62345989"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -177,7 +177,7 @@ netsh winhttp reset proxy
 |ドメインリストのスプレッドシート| 説明|
 |---|---|
 |商用顧客向け Microsoft Defender for Endpoint URL リスト| 商用顧客向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Gov/GCC/DoD 用の Microsoft Defender for Endpoint URL リスト | Gov/GCC/DoD のお客様向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+| Gov/GCC/DoD のお客様向け Microsoft Defender for Endpoint URL リスト | Gov/GCC/DoD のお客様向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 プロキシまたはファイアウォールで HTTPS スキャン (SSL 検査) が有効になっている場合は、上記の表に示されているドメインを HTTPS スキャンから除外します。
 ファイアウォールで、地理列が WW であるすべての URL を開きます。 地理列が WW ではない行の場合は、特定のデータの場所の URL を開きます。 データの場所の設定を確認するには、「データストレージの場所を確認し [、Microsoft Defender for Endpoint のデータ保持設定を更新する」を参照してください](/microsoft-365/security/defender-endpoint/data-retention-settings)。

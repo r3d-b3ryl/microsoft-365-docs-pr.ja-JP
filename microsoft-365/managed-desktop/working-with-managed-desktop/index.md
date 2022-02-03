@@ -9,18 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d616b5aea5f31b19a0252bf660e47062ea0fbe42
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: e66b833a300724b59f39f36eefd5571afd146146
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034943"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345929"
 ---
 # <a name="working-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップを使用する
 
-このセクションでは、IT 管理者が必要に応じてサポートを受ける方法、ユーザーがサポートを受ける方法、展開したアプリを管理する方法、デバイスでカスタマイズ可能な設定を使用する方法など、このサービスに係る日常的な作業について説明します。
-
-
+このセクションには、サービスでの毎日の生活に関する情報が含まれます。
 
 - [Microsoft マネージド デスクトップの管理者サポート](admin-support.md)
 - [ユーザーのヘルプ](end-user-support.md)
