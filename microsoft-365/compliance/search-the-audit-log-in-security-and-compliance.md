@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: eb50ed71bad3307036621e8367c697331ffa3024
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: fe473eba5bb2034044206eff3fb17e0249509447
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272092"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322097"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -1165,9 +1165,9 @@ Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Direc
 
 いいえ。監査サービス パイプラインはほとんどリアルタイムであるため、重複除去をサポートできません。
 
-**監査データは地域を超えて流出しますか?**
+**監査データはどこに保存されますか?**
 
-一般に、いいえ。 現在、NA (北米)、EMEA (ヨーロッパ、中東、アフリカ)、および APAC (アジア太平洋) 地域に、監査パイプラインを展開しています。 ただし、ライブサイトの問題発生時に負荷分散を行うために、これらの地域間でデータを転送することが必要な場合があります。 これらのアクティビティを実行すると、転送中のデータが暗号化されます。 複数地域の組織の場合、組織のすべての地域から収集された監査データは、組織のホーム地域にのみ格納されます。
+現在、NA (北米)、EMEA (ヨーロッパ、中東、アフリカ)、および APAC (アジア太平洋) 地域に、監査パイプラインを展開しています。 これらのリージョンに所属するテナントには、監査データがリージョンに格納されます。 複数地域テナントの場合、テナントのすべてのリージョンから収集された監査データは、テナントのホーム リージョンにのみ格納されます。 ただし、負荷分散や、ライブサイトの問題発生時にのみ、こういった地域にデータを転送する場合があります。 これらのアクティビティを実行すると、転送中のデータが暗号化されます。 
 
 **監査データは暗号化されますか?**
 

@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6efb9c53bbbcd0412ab55f35e02faf4d3595694e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f03fa0ac8f44acb3ce73076be4d43d913e32f969
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61884169"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326713"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻撃表面の縮小ルールのトラブルシューティング
 
@@ -58,21 +58,21 @@ ms.locfileid: "61884169"
 
 - [リアルタイム保護が](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 有効になっています。
 
-- 監査モードが有効になっていません。 「攻撃表面の縮小ルールを有効にする」の説明に従って、グループ ポリシーを使用してルールを無効 **(値**: **0)**[に設定します](enable-attack-surface-reduction.md)。
+- 監査モードが有効になっていません。 「攻撃表面の縮小ルールを有効にする」の説明に従って、グループ ポリシーを使用してルールを **無効 (値** : **0**) [に設定します](enable-attack-surface-reduction.md)。
 
 これらの前提条件が満たされている場合は、次の手順に進み、監査モードでルールをテストします。
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>監査モードを使用してルールをテストする
 
-demo.wd.microsoft.com の[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)テスト グラウンド Web サイトにアクセスして、攻撃表面の縮小ルールが一般的にデバイス上の事前構成されたシナリオおよびプロセスで機能しているか、または監査モードを使用して、レポートのルールのみを有効にできます。
+[demo.wd.microsoft.com の Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) テスト グラウンド Web サイトにアクセスして、攻撃表面の縮小ルールが一般的にデバイス上の事前構成されたシナリオおよびプロセスで機能しているか、または監査モードを使用して、レポートのルールのみを有効にできます。
 
 「デモ ツールを使用 [する」の](evaluate-attack-surface-reduction.md) 手順に従って、問題が発生している特定のルールをテストするために攻撃表面の縮小ルールがどのように機能するのか確認します。
 
-1. テストする特定のルールの監査モードを有効にします。 グループ ポリシーを使用してルールを **監査モード** (値: **2)** に設定します 。「攻撃表面の縮小ルールを有効にする [」の説明に従います](enable-attack-surface-reduction.md)。 監査モードでは、ルールはファイルまたはプロセスを報告できますが、実行は許可されます。
+1. テストする特定のルールの監査モードを有効にします。 「攻撃表面の縮小ルールを有効にする」の説明に従って、グループ ポリシーを使用してルールを監査 **モード (値** : **2**) [に設定します](enable-attack-surface-reduction.md)。 監査モードでは、ルールはファイルまたはプロセスを報告できますが、実行は許可されます。
 
 2. 問題の原因となっているアクティビティを実行します (たとえば、ブロックする必要があるが許可されているファイルまたはプロセスを開く、または実行する)。
 
-3. [ルールが [有効] に](attack-surface-reduction.md) 設定されている場合、ルールがファイルまたはプロセスをブロックした可能性がある場合は、攻撃表面縮小ルールイベント ログを確認 **します**。
+3. [攻撃表面縮小ルール イベント ログを確認](attack-surface-reduction.md) して、ルールが [有効] に設定されている場合、ルールがファイルまたはプロセスをブロックした可能性がある場合に確認 **します**。
 
 ルールがブロックするファイルまたはプロセスをブロックしない場合は、まず監査モードが有効になっているか確認します。
 
@@ -80,15 +80,15 @@ demo.wd.microsoft.com の[Windows Defender](https://demo.wd.microsoft.com?ocid=c
 
 デモ ツールと監査モードでルールをテストし、攻撃表面の縮小ルールが構成済みのシナリオで動作しているが、ルールが期待通り動作しない場合は、状況に基づいて次のいずれかのセクションに進みます。
 
-1. 攻撃表面の縮小ルールがブロックしないブロック (誤検知とも呼ばれる) をブロックしている場合は、最初に攻撃表面の縮小ルールの除外を [追加できます](#add-exclusions-for-a-false-positive)。
+1. 攻撃表面の縮小ルールがブロックしないブロック (誤検知とも呼ばれる) をブロックしている場合は、最初に攻撃表面の縮小ルールの除外 [を追加できます](#add-exclusions-for-a-false-positive)。
 
-2. 攻撃表面の縮小ルールがブロックする必要があるもの (偽陰性とも呼ばれる) をブロックしない場合は、直ちに最後の手順に進み、診断データを収集し、問題を提出[することができます。](#collect-diagnostic-data-for-file-submissions)
+2. 攻撃表面の縮小ルールでブロックする必要があるもの (偽陰性とも呼ばれる) ブロックされていない場合は、直ちに最後の手順に進[](#collect-diagnostic-data-for-file-submissions)み、診断データを収集し、問題を提出することができます。
 
 ## <a name="add-exclusions-for-a-false-positive"></a>誤検知の除外を追加する
 
 攻撃表面の縮小ルールがブロックしてはならないものをブロックしている場合 (誤検知とも呼ばれる)、除外を追加して、攻撃表面の縮小ルールが除外されたファイルまたはフォルダーを評価してはならないことを防止できます。
 
-除外を追加するには、「攻撃表面の [縮小をカスタマイズする」を参照してください](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules)。
+除外を追加するには、「攻撃表面の縮小 [をカスタマイズする」を参照してください](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules)。
 
 > [!IMPORTANT]
 > 除外する個々のファイルとフォルダーを指定できますが、個々のルールを指定することはできません。
@@ -96,7 +96,7 @@ demo.wd.microsoft.com の[Windows Defender](https://demo.wd.microsoft.com?ocid=c
 
 ## <a name="report-a-false-positive-or-false-negative"></a>誤検知または偽陰性を報告する
 
-ネットワーク保護Windows Defender[偽陰](https://www.microsoft.com/wdsi/filesubmission)性または誤検知を報告するには、[セキュリティ インテリジェンス] Web ベースの送信フォームを使用します。 E5 サブスクリプションWindows、関連付けられたアラート[へのリンクを提供できます](alerts-queue.md)。
+ネットワーク保護のために[Windows Defender偽](https://www.microsoft.com/wdsi/filesubmission)陰性または誤検知を報告するには、[セキュリティ インテリジェンス] Web ベースの送信フォームを使用します。 E5 サブスクリプションWindows、関連付けられたアラート[へのリンクを提供できます](alerts-queue.md)。
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>ファイル提出の診断データを収集する
 
@@ -114,7 +114,7 @@ demo.wd.microsoft.com の[Windows Defender](https://demo.wd.microsoft.com?ocid=c
    mpcmdrun -getfiles
    ```
 
-3. 既定では、 に保存されます `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。 提出フォームにファイルを添付します。
+3. 既定では、 に保存されます `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`。 提出フォームにファイルを添付します。
 
 ## <a name="related-articles"></a>関連記事
 

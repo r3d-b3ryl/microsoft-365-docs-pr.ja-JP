@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5124b517592fb7561925b0cbd5e5045d4c1ecc9b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 50b2d3f5e8a4dd8ff70c826293d5af9be5541938
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423805"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326959"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -39,10 +39,10 @@ ms.locfileid: "61423805"
 - *更新* プログラムのダウンロード先。そして
 - *更新* プログラムをダウンロードして適用する場合。
 
-この記事では、更新プログラムをダウンロードする場所を指定する方法について説明します (これはフォールバック順序とも呼ばれています)。 更新[プログラムのMicrosoft Defender ウイルス対策の](manage-updates-baselines-microsoft-defender-antivirus.md)概要、および更新プログラムの他の側面 (更新プログラムのスケジュール設定など) を構成する方法については、「更新プログラムの管理と基準計画の適用」を参照してください。
+この記事では、更新プログラムをダウンロードする場所を指定する方法について説明します (これはフォールバック順序とも呼ばれています)。 更新[プログラムMicrosoft Defender ウイルス対策](manage-updates-baselines-microsoft-defender-antivirus.md)の概要、および更新プログラムのその他の側面 (更新プログラムのスケジュール設定など) を構成する方法については、「更新プログラムの管理と基準計画の適用」を参照してください。
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日から配信され、すべてのセキュリティ インテリジェンス更新プログラムは SHA-2 専用に署名されます。 セキュリティ インテリジェンスを更新するには、SHA-2 をサポートするためにデバイスを更新する必要があります。 詳細については[、「2019 SHA-2 Code Signing Support requirement for Windows WSUS」を参照してください](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
+> Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日から配信され、すべてのセキュリティ インテリジェンス更新プログラムは SHA-2 専用に署名されます。 セキュリティ インテリジェンスを更新するには、SHA-2 をサポートするためにデバイスを更新する必要があります。 詳細については、「[2019 SHA-2 Code Signing Support requirement for Windows WSUS」を参照してください](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
 
 <a id="fallback-order"></a>
 
@@ -60,38 +60,38 @@ ms.locfileid: "61423805"
 エンドポイントが更新プログラムを取得する場所を指定できる場所は 5 種類です。
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows サーバー更新サービス](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup> [[1](#fn1)]<sup></sup>  
+- [Windows サーバー更新サービス](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [ネットワーク ファイル共有](#unc-share)
-- [セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策その他の Microsoft](https://www.microsoft.com/wdsi/defenderupdates)マルウェア <sup> 対策 ) [[2](#fn1)]<sup></sup>
+- [セキュリティ インテリジェンスの更新プログラム Microsoft Defender ウイルス対策 Microsoft](https://www.microsoft.com/wdsi/defenderupdates) <sup>マルウェア対策 [[2](#fn1)]<sup></sup>
 
 (<a id="fn1">1</a>) Intune 内部定義更新サーバー - SCCM/SUP を使用して Microsoft Defender ウイルス対策 の定義更新プログラムを取得し、クライアント デバイスでブロックされている Windows Update にアクセスする必要がある場合は、共同管理に移行し、エンドポイント保護ワークロードを Intune にオフロードできます。 Intune で構成されたマルウェア対策ポリシーには、オンプレミスの WSUS を更新ソースとして使用するように構成できる 「内部定義更新サーバー」のオプションがあります。 これにより、企業に対して承認されている公式 WU サーバーからの更新プログラムを制御し、UPdates ネットワークの公式サイトにネットワーク トラフィックをプロキシして保存するのにWindows役立ちます。
 
-(<a id="fn1">2</a>) ポリシーとレジストリには、この情報が以前のMicrosoft マルウェア プロテクション センター (MMPC) セキュリティ インテリジェンスとして一覧表示されている可能性があります。
+(<a id="fn1">2</a>) ポリシーとレジストリは、このセキュリティ インテリジェンス (MMPC) Microsoft マルウェア プロテクション センター名としてリストされている場合があります。
 
 Microsoft Update では、最高レベルの保護を確保するために、迅速なリリースが可能になります。つまり、頻繁にダウンロードする頻度が少なめになります。 サーバー更新Windowsサービス、Microsoft Endpoint Configuration Manager Microsoft セキュリティ インテリジェンス更新プログラムソースは、更新プログラムの頻度が低い。 したがって、デルタを大きくすると、ダウンロードが大きくなる可能性があります。
 
 > [!IMPORTANT]
-> Windows Server Update Service または Microsoft Update の後に Microsoft [Security](https://www.microsoft.com/security/portal/definitions/adl.aspx)インテリジェンス ページの更新プログラムをフォールバック ソースとして設定した場合、更新プログラムは、現在の更新プログラムが古いと見なされた場合にのみ、セキュリティ インテリジェンス更新プログラムからダウンロードされます。 (既定では、サーバー更新サービスまたは Microsoft Update サービスから更新プログラムを適用できないWindows 7 日間連続しています)。
+> Windows Server Update Service または Microsoft Update の後にフォールバック ソースとして [Microsoft セキュリティ](https://www.microsoft.com/security/portal/definitions/adl.aspx) インテリジェンス ページの更新プログラムを設定した場合、更新プログラムは、現在の更新プログラムが古いと見なされた場合にのみ、セキュリティ インテリジェンス更新プログラムからダウンロードされます。 (既定では、サーバー更新サービスまたは Microsoft Update サービスから更新プログラムを適用できないWindows 7 日間連続しています)。
 > ただし、保護が古いとして報告される日数を [設定できます](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)。<p>
-> 2019 年 10 月 21 日月曜日から、セキュリティ インテリジェンス更新プログラムは SHA-2 専用に署名されます。 最新のセキュリティ インテリジェンス更新プログラムを取得するには、SHA-2 をサポートするためにデバイスを更新する必要があります。 詳細については[、「2019 SHA-2 Code Signing Support requirement for Windows WSUS」を参照してください](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
+> 2019 年 10 月 21 日月曜日から、セキュリティ インテリジェンス更新プログラムは SHA-2 専用に署名されます。 最新のセキュリティ インテリジェンス更新プログラムを取得するには、SHA-2 をサポートするためにデバイスを更新する必要があります。 詳細については、「[2019 SHA-2 Code Signing Support requirement for Windows WSUS」を参照してください](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
 
 各ソースには、次の表で説明するように、更新プログラムを発行する頻度に加えて、ネットワークの構成方法に依存する一般的なシナリオがあります。
 
 <br/><br/>
 
-|場所|シナリオ例|
+|Location|シナリオ例|
 |---|---|
 |Windows サーバー更新サービス|サーバー更新サービスWindows使用して、ネットワークの更新プログラムを管理しています。|
 |Microsoft Update|エンドポイントを Microsoft Update に直接接続する必要があります。 これは、エンタープライズ ネットワークに不定期に接続するエンドポイントや、Windows サーバー更新サービスを使用して更新プログラムを管理しない場合に役立ちます。|
-|ファイル共有|インターネットに接続されていないデバイス (VM など) があります。 インターネットに接続された VM ホストを使用して、更新プログラムをネットワーク共有にダウンロードし、そこから VM が更新プログラムを取得できます。 仮想デスクトップ [インフラストラクチャ (VDI)](deployment-vdi-microsoft-defender-antivirus.md) 環境でファイル共有を使用する方法については、VDI 展開ガイドを参照してください。|
+|ファイル共有|インターネットに接続されていないデバイス (VM など) があります。 インターネットに接続された VM ホストを使用して、更新プログラムをネットワーク共有にダウンロードし、そこから VM が更新プログラムを取得できます。 仮想デスクトップ [インフラストラクチャ (VDI](deployment-vdi-microsoft-defender-antivirus.md) ) 環境でファイル共有を使用する方法については、VDI 展開ガイドを参照してください。|
 |Microsoft エンドポイント マネージャー|エンドポイントを更新Microsoft エンドポイント マネージャーを使用しています。|
-|セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策 Microsoft マルウェア対策 (以前は MMPC と呼ばば)|[SHA-2 をサポートするためにデバイスが更新されていないことを確認します](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。 Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日からセキュリティ インテリジェンス更新プログラムは SHA-2 専用に署名されます。 <br/>最近の感染による最新の保護更新プログラムをダウンロードするか、VDI 展開用の強力な基本イメージを準備 [するのに役立ちます](deployment-vdi-microsoft-defender-antivirus.md)。 このオプションは通常、プライマリ ソースではなく、最終的なフォールバック ソースとしてのみ使用する必要があります。 サーバー更新サービスまたは Microsoft Update から指定した日数更新プログラムWindowsダウンロードできない場合にのみ[使用されます](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)。|
+|セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策 Microsoft マルウェア対策 (以前は MMPC と呼ばば)|[SHA-2 をサポートするためにデバイスが更新](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)されている必要があります。 Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日からセキュリティ インテリジェンス更新プログラムは SHA-2 専用に署名されます。 <br/>最近の感染による最新の保護更新プログラムをダウンロードするか、VDI 展開用の強力な基本イメージを準備 [するのに役立ちます](deployment-vdi-microsoft-defender-antivirus.md)。 このオプションは通常、プライマリ ソースではなく、最終的なフォールバック ソースとしてのみ使用する必要があります。 サーバー更新サービスまたは Microsoft Update から指定した日数Windows更新プログラムをダウンロードできない場合にのみ[使用されます](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)。|
 
 グループ ポリシー、グループ ポリシー、PowerShell コマンドレット、および WMI で更新Microsoft Endpoint Configuration Manager使用する順序を管理できます。
 
 > [!IMPORTANT]
-> サーバー更新サービスWindowsダウンロード場所として設定する場合は、場所の指定に使用する管理ツールに関係なく、更新プログラムを承認する必要があります。 Windows サーバー更新サービスを使用して自動承認ルールを設定できます。これは、更新プログラムが少なくとも 1 日に 1 回届く場合に役立つ場合があります。 詳細については、「スタンドアロン サーバー更新サービスでのエンドポイント保護更新プログラムの同期[Windows」を参照してください](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
+> サーバー更新サービスWindowsダウンロード場所として設定する場合は、場所の指定に使用する管理ツールに関係なく、更新プログラムを承認する必要があります。 Windows サーバー更新サービスを使用して自動承認ルールを設定できます。これは、更新プログラムが少なくとも 1 日に 1 回届く場合に役立つ場合があります。 詳細については、「スタンドアロン サーバー更新サービスでのエンドポイント保護更新プログラムWindows[同期する」を参照してください](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
 
 この記事の手順では、最初に注文を設定する方法と、注文を有効にしている場合は [ファイル共有] オプションを設定する方法について説明します。
 
@@ -103,28 +103,28 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
 3. [ポリシー **] をクリックし** 、[ **管理用テンプレート] をクリックします**。
 
-4. ツリーを展開して **、Windows更新Windows Defender** \>  \> **を構成** し、次の設定を構成します。
+4. ツリーを展開して、**Windows更新Windows Defender** \>  \> **コンポーネントを表示し**、次の設定を構成します。
 
-   1. [セキュリティ インテリジェンス **更新プログラム** をダウンロードするためのソースの順序を定義する] 設定をダブルクリックし、オプションを [有効] に **設定します**。
+   1. [セキュリティ **インテリジェンス更新プログラム** をダウンロードするためのソースの順序を定義する] 設定をダブルクリックし、オプションを [有効] に設定 **します**。
 
-   2. 次のスクリーンショットに示すように、1 つのパイプで区切られたソースの順序 `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC` を入力します。たとえば、次のようにします。
+   2. 次のスクリーンショットに示 `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`すように、1 つのパイプで区切られたソースの順序を入力します。たとえば、次のようにします。
 
       :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="ソースの順序を示すグループ ポリシー設定。":::
 
-   3. **[OK]** を選択します。 これにより、保護更新プログラムのソースの順序が設定されます。
+   3. [**OK**] を選択します。 これにより、保護更新プログラムのソースの順序が設定されます。
 
    4. [セキュリティ インテリジェンス更新プログラムをダウンロード **するための** ファイル共有の定義] 設定をダブルクリックし、オプションを [有効] に **設定します**。
 
-   5. ファイル共有ソースを指定します。 複数のソースがある場合は、使用する順序で各ソースを 1 つのパイプで区切って入力します。 パス [を示す標準の UNC](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) 表記を使用します。たとえば、次のようになります `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name` 。 パスを入力しない場合、VM が更新プログラムをダウンロードすると、このソースはスキップされます。
+   5. ファイル共有ソースを指定します。 複数のソースがある場合は、使用する順序で各ソースを 1 つのパイプで区切って入力します。 パス [を示す標準の UNC](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) 表記を使用します。たとえば、次 `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`のようになります。 パスを入力しない場合、VM が更新プログラムをダウンロードすると、このソースはスキップされます。
 
    6. [**OK**] をクリックします。 これにより、ソースが参照される場合のファイル共有の順序が [ソースの順序の定義 **... グループ** ポリシー設定で設定されます。
 
 > [!NOTE]
-> Windows 10 バージョン 1703 ~1809 の場合、ポリシー パスは Windows **Components > Microsoft Defender ウイルス対策 >** Signature Updates for Windows 10 バージョン 1903 の場合、ポリシー パスは Windows コンポーネント > **Microsoft Defender ウイルス対策 > インテリジェンス更新プログラム**
+> Windows 10 バージョン 1703 から 1809 まで、ポリシー パスは **Windows Components > Microsoft Defender ウイルス対策 > Signature Updates** for Windows 10 バージョン 1903 の場合、ポリシー パスは Windows **コンポーネント >Microsoft Defender ウイルス対策 > インテリジェンス更新プログラム**
 
 ## <a name="use-configuration-manager-to-manage-the-update-location"></a>Configuration Manager を使用して更新場所を管理する
 
-詳細については[、「セキュリティ インテリジェンス更新プログラムの構成」Endpoint Protection](/configmgr/protect/deploy-use/endpoint-definition-updates) (現在のブランチ) の構成Microsoft エンドポイント マネージャーを参照してください。
+詳細については[、「セキュリティ インテリジェンスの更新プログラムEndpoint Protection](/configmgr/protect/deploy-use/endpoint-definition-updates)構成する (現在のブランチ)」Microsoft エンドポイント マネージャー参照してください。
 
 ## <a name="use-powershell-cmdlets-to-manage-the-update-location"></a>PowerShell コマンドレットを使用して更新場所を管理する
 
@@ -144,7 +144,7 @@ Set-MpPreference -SignatureDefinitionUpdateFileSharesSource {\\UNC SHARE PATH|\\
 
 ## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>更新Windows管理命令 (WMI) を使用して管理する
 
-次の [**プロパティ** に対して **、MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) クラスの Set メソッドを使用します。
+次の [**プロパティ** に対して、 **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) クラスの Set メソッドを使用します。
 
 ```WMI
 SignatureFallbackOrder
@@ -157,13 +157,13 @@ SignatureDefinitionUpdateFileSharesSource
 
 ## <a name="use-mobile-device-management-mdm-to-manage-the-update-location"></a>モバイル デバイス管理 (MDM) を使用して更新場所を管理する
 
-MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdateFallbackOrder」](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdatefallbackorder) を参照してください。
+MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdateFallbackOrder](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdatefallbackorder) 」を参照してください。
 
 ## <a name="what-if-were-using-a-third-party-vendor"></a>サードパーティベンダーを使用している場合は、
 
 この記事では、更新プログラムを構成および管理する方法について説明Microsoft Defender ウイルス対策。 ただし、サード パーティベンダーは、これらのタスクを実行するために使用できます。
 
-たとえば、Contoso 社が Fabrikam を雇ってセキュリティ ソリューションを管理したとします。これには、セキュリティ ソリューションMicrosoft Defender ウイルス対策。 Fabrikam は通常、Windows[管理](./use-wmi-microsoft-defender-antivirus.md)インストルメンテーション[、PowerShell](./use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレット、または Windowsコマンド ラインを使用[して](./command-line-arguments-microsoft-defender-antivirus.md)、パッチと更新プログラムを展開します。
+たとえば、Contoso 社が Fabrikam を雇ってセキュリティ ソリューションを管理したとします。これには、セキュリティ ソリューションMicrosoft Defender ウイルス対策。 Fabrikam は通常Windows[管理](./use-wmi-microsoft-defender-antivirus.md)インストルメンテーション、[PowerShell](./use-powershell-cmdlets-microsoft-defender-antivirus.md) コマンドレット、または Windows[](./command-line-arguments-microsoft-defender-antivirus.md)コマンド ラインを使用してパッチと更新プログラムを展開します。
 
 > [!NOTE]
 > Microsoft は、サード パーティ製のソリューションをテストして管理Microsoft Defender ウイルス対策。
@@ -188,7 +188,7 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
     MD C:\Temp\TempSigs\x86
     ```
 
-3. PowerShell スクリプトをダウンロードするには、次[の www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4。](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)
+3. PowerShell スクリプトを [ダウンロードして、](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4。
 
 4. [手動 **ダウンロード] をクリックします**。
 
@@ -196,7 +196,7 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
 
 6. ファイルを抽出します。
 
-7. ファイルをコピーSignatureDownloadCustomTask.ps1作成したフォルダー C:\Tool\PS-Scripts\ にコピーします。
+7. 以前に作成SignatureDownloadCustomTask.ps1にファイル をコピーします `C:\Tool\PS-Scripts\` 。
 
 8. コマンド ラインを使用して、スケジュールされたタスクを設定します。
 
@@ -244,12 +244,12 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
        ```
 
    > [!NOTE]
-   > スケジュールされたタスクが作成されると、[タスク スケジューラ] の [Microsoft\Windows\Windows Defender
+   > スケジュールされたタスクが作成されると、[タスク スケジューラ] の下にあるタスク スケジューラでこれらのタスクを確認できます `Microsoft\Windows\Windows Defender`。
 
-9. 各タスクを手動で実行し、次のフォルダーにデータ (mpam-d.exe、mpam-fe.exe、および nis_full.exe) が含まれています (別の場所を選択している可能性があります)。
+9. 各タスクを手動で実行し、次のフォルダーにデータ (`mpam-d.exe`、`nis_full.exe`、`mpam-fe.exe`および) が含まれています (別の場所を選択している可能性があります) を確認します。
 
-   - C:\Temp\TempSigs\x86
-   - C:\Temp\TempSigs\x64
+   - `C:\Temp\TempSigs\x86`
+   - `C:\Temp\TempSigs\x64`
 
    スケジュールされたタスクが失敗した場合は、次のコマンドを実行します。
 
@@ -266,10 +266,10 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
     > [!NOTE]
     > 問題は、実行ポリシーが原因である可能性があります。
 
-10. C:\Temp\TempSigs (server\updates など) をポイントする \\ 共有を作成します。
+10. (例: ) `C:\Temp\TempSigs` を指す共有を作成します `\\server\updates`。
 
     > [!NOTE]
-    > 少なくとも、認証されたユーザーには "読み取り" アクセス権が必要です。
+    > 少なくとも、認証されたユーザーには "読み取り" アクセス権が必要です。 この要件は、ドメイン コンピューター、共有、および NTFS (セキュリティ) にも適用されます。
 
 11. ポリシー内の共有場所を共有に設定します。
 

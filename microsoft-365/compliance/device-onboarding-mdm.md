@@ -15,12 +15,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: モバイル デバイス管理ツールを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: 1db4441f6411d6e3c623dbf5daa31c4028729e7e
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 578a1e06bf5f83f700c5db69ddc32a480d68b729
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244897"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327195"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>モバイル デバイス管理ツールを使用した Windows 10 および Windows 11 デバイスのオンボード
 
@@ -35,7 +35,7 @@ ms.locfileid: "62244897"
 ## <a name="before-you-begin"></a>はじめに
 デバイスを使用している場合Microsoft Intune MDM が登録されている必要があります。 それ以外の場合、設定は正常に適用されません。 
 
-MDM を有効にする方法の詳細については、「デバイスMicrosoft Intune [(Microsoft Intune) 」を参照してください](/mem/intune/enrollment/device-enrollment)。
+MDM を有効にする方法の詳細については、「Microsoft Intune登録 (Microsoft Intune[)」を参照してください](/mem/intune/enrollment/device-enrollment)。
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>デバイスを使用したオンボード Microsoft Intune
 
@@ -51,17 +51,15 @@ Intune の指示に [従います](/intune/advanced-threat-protection)。
 > [!NOTE]
 > オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。
 
-1. アプリケーションからオフボード<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">パッケージを取得</a>Microsoft 365 コンプライアンス センター。
+1. オフボード パッケージをアプリケーション<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">から取得Microsoft 365 コンプライアンス センター</a>。
 
-2. ナビゲーション ウィンドウで、[デバイスオンボーディング **設定**  >  **オフボード]**  >  **を選択します**。
+2. ナビゲーション ウィンドウで、[**Device onboardingOffboarding** > ] **設定** > を **選択します**。
 
-3. [展開 **方法] フィールドで**、[**モバイル デバイスの管理/ 管理] を選択Microsoft Intune。**
+3. [展開 **方法] フィールドで**、[**モバイル デバイスの管理/ 管理] を選択Microsoft Intune**。
 
 4. [ **パッケージのダウンロード]** をクリックし、ファイルを.zipします。
 
-5. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 *"-MM-DD.offboarding DeviceCompliance_valid_until_YYYYという名前のファイルが必要です*。
-
-
+5. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding という名前のファイルが必要です*。
 
 6. 次のサポートMicrosoft Intune OMA-URI 設定を展開するには、次のカスタム構成ポリシーを使用します。
 

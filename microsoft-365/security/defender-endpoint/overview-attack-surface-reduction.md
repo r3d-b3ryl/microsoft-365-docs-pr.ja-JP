@@ -17,12 +17,12 @@ ms.topic: conceptual
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: 5878b29b5d40076cd515dde6737a4e7c7d70ab56
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 22c90142de3b669bb4e7ba13266f04102af56fe0
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320981"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327695"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能の理解と使用
 
@@ -101,7 +101,7 @@ Defender for Endpoint を使用して、各イベントの詳細を取得しま�
 | 監査オプション | 監査モードを有効にする方法 | イベントを表示する方法 |
 |---|---|---|
 | 監査はすべてのイベントに適用されます | [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md) | [フォルダー アクセスイベントの制御](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| 監査は個々のルールに適用されます | [手順 1: 監査を使用して ASR ルールをテストする](attack-surface-reduction-rules-deployment-phase-2.md#step-1-test-asr-rules-using-audit) | [手順 2: [攻撃表面の縮小ルール] レポート ページについて](attack-surface-reduction-rules-deployment-phase-2.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| 監査は個々のルールに適用されます | [手順 1: 監査を使用して ASR ルールをテストする](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [手順 2: [攻撃表面の縮小ルール] レポート ページについて](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | 監査はすべてのイベントに適用されます | [ネットワーク保護を有効にする](enable-network-protection.md) | [ネットワーク保護イベント](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | 監査は個々の軽減策に適用されます | [エクスプロイト保護を有効にする](enable-exploit-protection.md) | [エクスプロイト保護イベント](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 

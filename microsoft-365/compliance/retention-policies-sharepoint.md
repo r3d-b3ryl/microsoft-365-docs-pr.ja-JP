@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: d9b8a0b66eb32171a0f72fbe0f380a6a98316e33
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 18ada99844e7d342244d578d9cca76f68a28501c
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295340"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322159"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
@@ -134,9 +134,9 @@ SharePoint と OneDrive では、保持する必要のあるコンテンツを�
 
 ## <a name="how-retention-works-with-onenote-content"></a>OneNote コンテンツでの保持のしくみ
 
-OneNote コンテンツを含む場所、または保持ラベルを含む場所にアイテム保持ポリシーを適用すると、OneNote フォルダーのバックグラウンドにある別の OneNote セクションは、保持設定を継承する個々のファイルになります。 つまり、指定した保持設定に従って、各セクションが個別に保持され削除されます。
+OneNote コンテンツを含む場所、または OneNote フォルダーに保持ラベルを含む場所にアイテム保持ポリシーを適用する場合、バックグラウンドで、さまざまな OneNote ページとセクションは、保持設定を継承する個々のファイルです。 つまり、指定した保持設定に従って、ページ内の各セクションが個別に保持および削除されます。
 
-OneNote ページ自体の更新日は、作成後も変更されません。
+指定した保持設定の影響を受けるのは、ページとセクションのみです。 たとえば、個々のノートブックに **変更された** 日付が表示されますが、この日付はMicrosoft 365保持では使用されません。
 
 ## <a name="how-retention-works-with-document-versions"></a>文書のバージョンを保持する方法
 

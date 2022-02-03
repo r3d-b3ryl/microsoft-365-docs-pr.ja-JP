@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除できるように、情報ガバナンスのアイテム保持ポリシーに対する例外の保持ラベルを作成する手順。
-ms.openlocfilehash: 6676840285ef94f2c3b4fd3e15bfc0b074833849
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 40899f517c39b926cb65730956ccb310ba5a5159
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242214"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321041"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>アイテム保持ポリシーの例外の保持ラベルを作成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "62242214"
 
 アイテム保持ポリシーはコンテナー レベルのすべてのアイテム (SharePoint サイト、ユーザー メールボックスなど) に自動的に適用されますが、保持ラベルは、SharePoint ドキュメントやメール メッセージなどの個々のアイテムに適用されます。
 
-[[保持の原則]](retention.md#the-principles-of-retention-or-what-takes-precedence) により、保持ラベルを使用して、同じ場所のアイテム保持ポリシーで指定した設定よりも早く保持または削除する必要がある特定の SharePoint、OneDrive、または Exchange アイテムのアイテム保持ポリシーを補完することができます。
+特定の SharePoint、OneDrive、または Exchange アイテムのアイテム保持ポリシーを補完する保持ラベルを使用する前に、[保持の原則](retention.md#the-principles-of-retention-or-what-takes-precedence)を理解していることを確認してください。 通常、適用されたアイテム保持ポリシーよりも長く特定のアイテムを保持するために保持ラベルを使用しますが、別の削除期間を適用するために使用することもできます。
 
 たとえば、SharePoint サイトのコンテンツの大部分は 3 年間保持する必要があり、これはアイテム保持ポリシーでカバーされます。 ただし、7 年間保持する必要がある契約ドキュメントがいくつかあります。 これらの例外は、保持ラベルを使用して対処できます。 アイテム保持ポリシーをすべての SharePoint サイトに割り当てた後、保持ラベルを契約ドキュメントに適用します。 すべての SharePoint アイテムは 3 年間保持され、契約ドキュメントのみが 7 年間保持されます。
 

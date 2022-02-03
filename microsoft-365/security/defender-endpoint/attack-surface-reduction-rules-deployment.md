@@ -18,16 +18,16 @@ ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: fa6558ef03aed98426cf615df6a80359ef7424bc
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: c6fe1f185567efdc5054cf490579d93eebd5069f
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320657"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326983"
 ---
 # <a name="asr-rules-deployment-overview"></a>ASR ルールの展開の概要
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 攻撃表面は、組織がサイバー脅威や攻撃に対して脆弱なすべての場所です。 組織の攻撃表面には、攻撃者が組織のデバイスやネットワークを侵害する可能性があるすべての場所が含まれています。 攻撃の表面を減らすことは、組織のデバイスとネットワークを保護する手段であり、攻撃方法が少ない攻撃者を残します。 攻撃表面の縮小 (ASR) ルール (Microsoft Defender for Endpoint で見つかった多くのセキュリティ機能の 1 つ) を構成すると、役立ちます。
 
@@ -123,15 +123,15 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
-[フェーズ 1: 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[フェーズ 1: 計画](attack-surface-reduction-rules-deployment-plan.md)
 
-[フェーズ 2: テスト](attack-surface-reduction-rules-deployment-phase-2.md)
+[フェーズ 2: テスト](attack-surface-reduction-rules-deployment-test.md)
 
-[フェーズ 3: 実装](attack-surface-reduction-rules-deployment-phase-3.md)
+[フェーズ 3: 実装](attack-surface-reduction-rules-deployment-implement.md)
 
-[フェーズ 4: 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
+[フェーズ 4: 運用化](attack-surface-reduction-rules-deployment-operationalize.md)
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>参照
 
 ### <a name="blogs"></a>ブログ
 

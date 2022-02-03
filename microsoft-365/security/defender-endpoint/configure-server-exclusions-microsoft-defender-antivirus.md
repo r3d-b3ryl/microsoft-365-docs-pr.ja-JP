@@ -14,14 +14,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 11/15/2021
+ms.date: 02/02/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ad62cb795e1cd8c0b1affe030075ec9fedc5252a
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 00c92b5d19c33a3f1c085715d0b1a6f2b4186667
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218552"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327339"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策の除外をWindowsする
 
@@ -45,7 +45,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 - 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 自動除外は、フル スキャン、クイック スキャン、またはオンデマンド スキャン中には適用されません。
 - カスタム除外と重複除外は、自動除外と競合しない。
 - Microsoft Defender ウイルス対策展開イメージのサービスと管理 (DISM) ツールを使用して、コンピューターにインストールされている役割を特定します。
-- サーバーロールの自動除外は、これらのサーバーが Defender for Endpoint にオンボードされていないWindows Server 2012 R2 では機能しません。 (「[オンボード Windows Microsoft Defender for Endpoint サービスへのサーバーのオンボード」を参照](configure-server-endpoints.md)してください。
+- Windows Server 2012 R2 には自動的にデータが含Microsoft Defender ウイルス対策。 これらのサーバーを Defender for Endpoint にオンボードすると、Windows Defender ウイルス対策がインストールされ、オペレーティング システム ファイルの除外が既定で含まれます。 ただし、サーバー ロールの自動除外は機能し、必要に応じて除外を追加する必要があります。 詳細については、「[Windows サーバーを Microsoft Defender for Endpoint にオンボードする](configure-server-endpoints.md)」を参照してください。
 
 この記事では、このページ以降のMicrosoft Defender ウイルス対策のWindows Server 2016説明します。
 
@@ -73,7 +73,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 オペレーティング システムの除外とサーバーの役割の除外は、アプリに表示される標準の除外[リストにはWindows セキュリティされません](microsoft-defender-security-center-antivirus.md)。
 
 > [!NOTE]
-> サーバーの役割とオペレーティング システム ファイルの自動除外は、サーバー ロールおよびオペレーティング システム ファイルWindows Server 2012。 自動除外は、R2 を実行しているサーバー Windows Server 2012 Defender for Endpoint にオンボードされている場合に適用できます。 (「[オンボード Windows Microsoft Defender for Endpoint サービスへのサーバーのオンボード」を参照](configure-server-endpoints.md)してください。
+> サーバーの役割とオペレーティング システム ファイルの自動除外は、サーバー ロールおよびオペレーティング システム ファイルWindows Server 2012。 自動除外は、R2 を実行しているサーバー Windows Server 2012 Defender for Endpoint にオンボードされている場合に適用できます。 (「[オンボード Windows Microsoft Defender for Endpoint サービス」を参照](configure-server-endpoints.md)してください。
 
 
 ### <a name="the-list-of-automatic-exclusions"></a>自動除外の一覧
@@ -145,7 +145,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 - 分散ファイル システム レプリケーション (DFSR) データベースと作業フォルダー。 これらのフォルダーは、レジストリ キーによって指定されます。 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
 
   > [!NOTE]
-  > カスタムの場所については、「 [自動除外のオプトアウト」を参照してください](#opting-out-of-automatic-exclusions)。
+  > カスタムの場所については、「 [自動除外をオプトアウトする」を参照してください](#opting-out-of-automatic-exclusions)。
 
   - `%systemdrive%\System Volume Information\DFSR\$db_normal$`
   - `%systemdrive%\System Volume Information\DFSR\FileIDTable_*`
@@ -174,7 +174,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 |除外の種類|詳細|
 |---|---|
 |ファイルの種類|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
-|フォルダー|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
+|Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
 |プロセス|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
 
 ##### <a name="sysvol-files"></a>SYSVOL ファイル
@@ -225,7 +225,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 
 #### <a name="dhcp-server-exclusions"></a>DHCP サーバーの除外
 
-このセクションでは、DHCP Server の役割をインストールするときに自動的に配信される除外の一覧を示します。 DHCP Server ファイルの場所は、レジストリ キーの *DatabasePath、DhcpLogFilePath、**および BackupDatabasePath* パラメーターによって指定されます。 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
+このセクションでは、DHCP Server の役割をインストールするときに自動的に配信される除外の一覧を示します。 DHCP Server ファイルの場所は、レジストリ キーの *DatabasePath*、 *DhcpLogFilePath*、 *および BackupDatabasePath* パラメーターによって指定されます。 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
 
 - `%systemroot%\System32\DHCP\*\*.mdb`
 - `%systemroot%\System32\DHCP\*\*.pat`
@@ -295,12 +295,12 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 
 ##### <a name="turning-off-scanning-of-files-in-the-sysvolsysvol-folder-or-the-sysvol_dfsrsysvol-folder"></a>Sysvol\Sysvol フォルダーまたは sysvol フォルダー内のファイルのスキャンをオフSYSVOL_DFSR\Sysvol フォルダー
 
-or フォルダーとすべてのサブフォルダーの現在の場所は、レプリカ セット ルートのファイル システムの再 `Sysvol\Sysvol` `SYSVOL_DFSR\Sysvol` 解析ターゲットです。 フォルダー `Sysvol\Sysvol` は `SYSVOL_DFSR\Sysvol` 、既定で次の場所を使用します。
+or フォルダーとすべての`Sysvol\Sysvol``SYSVOL_DFSR\Sysvol`サブフォルダーの現在の場所は、レプリカ セット ルートのファイル システムの再解析ターゲットです。 フォルダー `Sysvol\Sysvol` は `SYSVOL_DFSR\Sysvol` 、既定で次の場所を使用します。
 
 - `%systemroot%\Sysvol\Domain`
 - `%systemroot%\Sysvol_DFSR\Domain`
 
-現在アクティブなパスは NETLOGON 共有によって参照され、次のサブキーの `SYSVOL` SysVol 値名によって決定できます。 `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
+現在アクティブなパス `SYSVOL` は NETLOGON 共有によって参照され、次のサブキーの SysVol 値名によって決定できます。 `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
 
 このフォルダーとそのすべてのサブフォルダーから次のファイルを除外します。
 
@@ -331,17 +331,17 @@ or フォルダーとすべてのサブフォルダーの現在の場所は、�
 > [!WARNING]
 > 自動除外をオプトアウトすると、パフォーマンスに悪影響を及ぼすか、データが破損する可能性があります。 自動的に配信される除外は、Windows Server 2016、Windows Server 2019、およびサーバー 2022 の役割Windows最適化されます。
 
-定義済みの除外は既定のパスのみを除外しますので、NTDS フォルダーと SYSVOL フォルダーを元のパスとは異なる別のドライブまたはパスに移動する場合は、手動で除外を追加する必要があります。 「 [フォルダー名またはファイル拡張子に基づいて除外の一覧を構成する」を参照してください](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)。
+定義済みの除外は既定のパスのみを除外します。NTDS フォルダーと SYSVOL フォルダーを元のパスとは異なる別のドライブまたはパスに移動する場合は、手動で除外を追加する必要があります。 「 [フォルダー名またはファイル拡張子に基づいて除外の一覧を構成する」を参照してください](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)。
 
 グループ ポリシー、PowerShell コマンドレット、および WMI を使用して、自動除外リストを無効にできます。
 
 ### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022"></a>グループ ポリシーを使用して、Windows Server 2016、Windows Server 2019、および Windows Server 2022 で自動除外リストを無効にする
 
-1. グループ ポリシー管理コンピューターで、[グループ ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))を開きます。 構成するグループ ポリシー オブジェクトを右クリックし、[編集] を **選択します**。
+1. グループ ポリシー管理コンピューターで、[グループ ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))を開きます。 構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。
 
-2. グループ ポリシー **管理エディターで 、[** コンピューターの構成] **に移動** し、[管理用テンプレート] **を選択します**。
+2. グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動** し、[管理用テンプレート **] を選択します**。
 
-3. ツリーを展開して、[**除外Windowsコンポーネント** \> **Microsoft Defender ウイルス対策** \> **展開します**。
+3. ツリーを展開して、[**除外WindowsコンポーネントMicrosoft Defender ウイルス対策** \>  \> **します**。
 
 4. [自動除外を **オフにする] をダブルクリック** し、オプションを [有効] に **設定します**。 次に [**OK**] を選びます。
 
@@ -355,12 +355,12 @@ Set-MpPreference -DisableAutoExclusions $true
 
 詳細については、次のリソースを参照してください。
 
-- [PowerShell コマンドレットを使用して、PowerShell コマンドレットを構成して実行Microsoft Defender ウイルス対策。](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [PowerShell と一緒にMicrosoft Defender ウイルス対策。](/powershell/module/defender/)
+- [PowerShell コマンドレットを使用して、サーバーの構成とMicrosoft Defender ウイルス対策](use-powershell-cmdlets-microsoft-defender-antivirus.md)。
+- [PowerShell と一緒にMicrosoft Defender ウイルス対策](/powershell/module/defender/)。
 
 ### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server"></a>[Windows管理命令 (WMI) を使用して、サーバー上の自動除外リストWindowsします。
 
-次の **プロパティ** に対して [、MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) クラスの Set メソッドを使用します。
+次の **プロパティ** に対して、 [MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) クラスの Set メソッドを使用します。
 
 ```WMI
 DisableAutoExclusions

@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: b7a91b948e7c9d8d99c6d7c1563503efc24fc8f9
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: ae9d1946f0aaa189b716c7a6b63c2bac999f7872
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320861"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327403"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダーへのアクセス制御で重要なフォルダーを保護する
 
@@ -58,7 +58,7 @@ ms.locfileid: "62320861"
 
 ## <a name="why-controlled-folder-access-is-important"></a>フォルダー アクセスの制御が重要な理由
 
-フォルダー アクセスの制御は、ドキュメントや情報をランサムウェアから保護する場合に特に役立 [ちます](https://www.microsoft.com/wdsi/threats/ransomware)。 ランサムウェア攻撃では、ファイルが暗号化され、人質に保持される可能性があります。 フォルダー アクセスを制御すると、アプリが保護されたフォルダー内のファイルに変更を加えたコンピューターに通知が表示されます。 会社の詳細や連絡先情報を使用して[通知をカスタマイズ](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules)することができます。 個別のルールを有効にすることで、この機能が監視するテクニックをカスタマイズすることもできます。
+フォルダー アクセスの制御は、ドキュメントや情報をランサムウェアから保護する場合に特に役立 [ちます](https://www.microsoft.com/wdsi/threats/ransomware)。 ランサムウェア攻撃では、ファイルが暗号化され、人質に保持される可能性があります。 フォルダー アクセスを制御すると、アプリが保護されたフォルダー内のファイルに変更を加えたコンピューターに通知が表示されます。 会社の詳細や連絡先情報を使用して[通知をカスタマイズ](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules)することができます。 個別のルールを有効にすることで、この機能が監視するテクニックをカスタマイズすることもできます。
 
 保護 [されたフォルダーには、](#review-controlled-folder-access-events-in-windows-event-viewer) 一般的なシステム フォルダー (ブート セクターを含む) が含まれます。さらにフォルダー [を追加できます](customize-controlled-folders.md#protect-additional-folders)。 アプリが [保護されたフォルダー](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) へのアクセス権を与えるのを許可することもできます。
 
@@ -96,7 +96,7 @@ Windowsシステム フォルダーは、既定で保護され、他のいくつ
 
 Defender for Endpoint は、イベントとブロックに関する詳細なレポートを[](investigate-alerts.md)、このポータルのアラート調査シナリオの一部としてMicrosoft 365 Defenderします。 (「[Microsoft Defender for Endpoint in Microsoft 365 Defender」を](../defender/microsoft-365-security-center-mde.md)参照してください。
 
-高度な検索を使用して、Microsoft Defender for Endpoint データ [に対してクエリを実行できます](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-overview?view=o365-worldwide)。 監査モードを[使用している場合](audit-windows-defender.md)は、高度な検索[](advanced-hunting-overview.md)を使用して、フォルダー アクセスの制御設定が有効になっている場合に環境に与える影響を確認できます。
+高度な検索を使用して、Microsoft Defender for Endpoint データ [に対してクエリを実行できます](advanced-hunting-overview.md)。 監査モードを[使用している場合](audit-windows-defender.md)は、高度な検索[](advanced-hunting-overview.md)を使用して、フォルダー アクセスの制御設定が有効になっている場合に環境に与える影響を確認できます。
 
 クエリ例:
 

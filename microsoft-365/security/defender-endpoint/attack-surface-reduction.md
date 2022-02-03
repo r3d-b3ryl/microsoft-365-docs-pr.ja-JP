@@ -19,14 +19,14 @@ ms.technology: mde
 ms.topic: article
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: cba76d867b71fa941983e10b0dbe10f323ea70ef
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: e56ffd44976d11986b6ccb6b3e8bc5cbf71e530c
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321053"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326947"
 ---
-# <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>マルウェア感染を防ぐために攻撃面の減少ルールを使用する
+# <a name="attack-surface-reduction-rules-overview"></a>攻撃表面の縮小ルールの概要
 
 **適用対象:**
 
@@ -96,7 +96,7 @@ Microsoft Defender ウイルス対策アクティブ モードでリアルタイ
 
 ## <a name="notifications-and-alerts"></a>通知とアラート
 
-攻撃表面の縮小ルールがトリガーされるたびに、デバイスに通知が表示されます。 会社の詳細や連絡先情報を使用して[通知をカスタマイズ](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules)することができます。
+攻撃表面の縮小ルールがトリガーされるたびに、デバイスに通知が表示されます。 会社の詳細や連絡先情報を使用して[通知をカスタマイズ](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules)することができます。
 
 また、特定の攻撃表面縮小ルールがトリガーされると、アラートが生成されます。
 

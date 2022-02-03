@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: overview
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: af7ad58002adcccc51df0e69890a5134e57d4dfe
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: dfa84cf167dfdb366ad4a7c636a85a30b6de24a4
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320773"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326935"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -69,7 +69,7 @@ ms.locfileid: "62320773"
 
 ネットワーク保護は [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) で最適に機能します。これにより、アラート調査シナリオの一環として、エクスプロイト保護イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
 
-ネットワーク保護が接続をブロックすると、アクション センターから通知が表示されます。 セキュリティ運用チームは、 [組織の詳細と](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) 連絡先情報を使用して通知をカスタマイズできます。 さらに、個々の攻撃表面の縮小ルールを有効にし、監視する特定の手法に合わせてカスタマイズできます。
+ネットワーク保護が接続をブロックすると、アクション センターから通知が表示されます。 セキュリティ運用チームは、 [組織の詳細と](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) 連絡先情報を使用して通知をカスタマイズできます。 さらに、個々の攻撃表面の縮小ルールを有効にし、監視する特定の手法に合わせてカスタマイズできます。
 
 監査モードを使用 [して、](audit-windows-defender.md) ネットワーク保護が有効になっている場合に組織に与える影響を評価することもできます。
 

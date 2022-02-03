@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスの機能を計画、移行、および実装するためのステップバイステップのツールを取得します。 サービスまたは実行する必要があるアプリをセットアップするガイドを見つける。
-ms.openlocfilehash: ce81e5432c03c8cf0647bd08e815457be368ac12
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: afab6209211b5c80daaa300b467e255a4b1ec595
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295424"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326701"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -45,7 +45,7 @@ Microsoft 365およびOffice 365セットアップ ガイドでは、テナン�
 
    ![トレーニング &ガイド カードのMicrosoft 365 管理センター](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. [ **ステップ バイ ステップ ガイド] を選択します**。
+3. [ **高度な展開ガイド] を選択** し、[すべての **ガイド] を選択します**。
 
    ![ページの [セットアップ ガイダンス] ページのスクリーンショットMicrosoft 365 管理センター](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
@@ -63,9 +63,9 @@ Microsoft 365およびOffice 365セットアップ ガイドでは、テナン�
 
 Gmail ユーザーのメールボックスをユーザーのメールボックスに移行Microsoft 365メール メッセージは移行されますが、連絡先と予定表アイテムは移行されません。 Gmail の[連絡先](https://aka.ms/gmailcontactscalendar)と予定表アドバイザーは、Outlook.com、Outlook クライアント、または PowerShell を使用して、google 連絡先と Google 予定表アイテムを Microsoft 365 にインポートする手順を提供します。
 
-### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365展開アドバイザー
+### <a name="microsoft-365-setup-guide"></a>Microsoft 365 セットアップ ガイド
 
-この[Microsoft 365展開アドバイザーは](https://aka.ms/microsoft365setupguide)、生産性ツール、セキュリティ ポリシー、およびデバイス管理機能をセットアップする際のガイダンスを提供します。 Microsoft 365 Business Premium またはエンタープライズ サブスクリプション版 Microsoft 365 があれば、このアドバイザーを使用して組織のデバイスをセットアップし、構成できます。
+この[Microsoft 365ガイドでは](https://aka.ms/microsoft365setupguide)、生産性ツール、セキュリティ ポリシー、およびデバイス管理機能をセットアップする際のガイダンスを提供します。 Microsoft 365 Business Premium またはエンタープライズ サブスクリプション版 Microsoft 365 があれば、このアドバイザーを使用して組織のデバイスをセットアップし、構成できます。
 
 クラウド サービスを有効にし、デバイスを最新のサポートされているバージョンの Windows 10 に更新し、デバイスを Azure Active Directory (Azure AD) に参加する、すべてのリソースへのガイダンスとアクセスを 1 つの中央の場所で受け取る。
 
@@ -74,12 +74,6 @@ Gmail ユーザーのメールボックスをユーザーのメールボック�
 リモート [作業セットアップ ガイド](https://aka.ms/remoteworksetup) では、ユーザーがリモートで正常に作業し、データが安全で、ユーザーの資格情報を保護するために必要なヒントとリソースを組織に提供します。
 
 クラウド内の Microsoft 365 リソースと組織のネットワークの両方へのリモート ワーカーのデバイス トラフィックを最適化するためのガイダンスを受け取り、リモート アクセス VPN インフラストラクチャの負荷を軽減します。
-
-### <a name="windows-virtual-desktop-setup-guide"></a>Windowsデスクトップセットアップ ガイド
-
-Windows Virtual Desktop は、クラウドで実行されている包括的なデスクトップおよびアプリの仮想化サービスです。 これは、管理の簡素化、マルチセッション Windows 10、Microsoft 365 Apps の最適化、およびリモート デスクトップ サービス (RDS) 環境のサポートを提供する唯一の仮想デスクトップ インフラストラクチャ (VDI) です。 Azure に Windows デスクトップとアプリを数分で展開および拡張し、組み込みのセキュリティとコンプライアンス機能を利用できます。
-
-仮想[Windowsセットアップ](https://aka.ms/wvdsetupguide) ガイドでは、管理者に計画リソースと、展開、セットアップ ガイダンス、その他のリソースの前提条件を提供します。
 
 ### <a name="microsoft-edge-setup-guide"></a>Microsoft Edgeセットアップ ガイド
 
@@ -97,11 +91,19 @@ Microsoft Search作業を完了するために必要な情報を組織が見つ�
 
 この[Microsoft Searchセットアップ ガイド](https://aka.ms/MicrosoftSearchSetup)は、Microsoft Searchにパイロットするか、組織のすべてのユーザーに展開するかの設定を構成するのに役立ちます。検索管理者と検索エディターを割り当て、Bing 拡張機能を Chrome に追加したり、既定の検索エンジンとして Bing を設定したりなど、回答などのオプションを使用してユーザーの検索エクスペリエンスをカスタマイズします。
 
-### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager の共同管理セットアップ ガイド
-
-組織が Microsoft Intune と Configuration Manager の両方と共同管理する必要がある既存の Configuration Manager クライアント デバイスと新しいインターネット ベースのデバイスについては、[Intune Configuration Manager](https://aka.ms/comanagementsetup) 共同管理セットアップ ガイドを使用します。 この共同管理展開ガイドでは、両方のソリューションの利点を受け取Windows 10デバイスを管理し、組織のデバイスに新しい機能を追加できます。
-
 ## <a name="guides-for-authentication-and-access"></a>認証とアクセスのガイド
+
+### <a name="configure-multifactor-authentication-mfa"></a>多要素認証 (MFA) の構成
+
+多 [要素認証 (MFA) の構成ガイドでは](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess) 、資格情報の紛失または盗難による違反から組織を保護するための情報を提供します。 MFA は、アプリまたは他の会社のリソースにサインインするときに、ユーザーの ID を証明する複数の形式の検証を求めるプロンプトを表示することで、アカウントのセキュリティを直ちに強化します。 このプロンプトは、ユーザーのモバイル デバイスにコードを入力するか、指紋スキャンを提供する場合があります。 MFA は、条件付きアクセス、セキュリティの既定値、またはユーザーごとの MFA を使用して有効になります。 このガイドでは、ライセンスと既存の構成に基づいて、組織に推奨される MFA オプションを提供します。
+
+### <a name="identity-security-for-teams"></a>ユーザーの ID セキュリティTeams
+
+チーム [の Id セキュリティ](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/teamsidentity) ガイドは、ユーザーが安全で、ユーザーが安全で、ユーザーを使用して最も生産性の高い時間を過ご **Teams。**
+
+### <a name="add-or-sync-users-to-microsoft-365"></a>ユーザーをユーザーに追加または同期Microsoft 365
+
+[このガイド](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard)は、ユーザー アカウントをユーザー アカウントでセットアップするプロセスを合理化 **Microsoft 365。** 環境とニーズに基づいて、ユーザーを個別に追加するか、Azure AD クラウド同期または Azure AD Connect を使用してオンプレミス ディレクトリを移行するか、必要に応じて既存の同期の問題のトラブルシューティングを行います。
 
 ### <a name="azure-ad-setup-guide"></a>Azure ADセットアップ ガイド
 
@@ -122,6 +124,10 @@ Microsoft Search作業を完了するために必要な情報を組織が見つ�
 - セキュリティ キー
 
 「パスワード [レス展開を](https://aka.ms/passwordlesssetup) 計画する」ガイドを使用して、それらを展開する方法に関するガイダンスを使用して受け取る最適なパスワードレス認証方法を確認します。
+
+### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>サードパーティのクラウド アプリとクラウド アプリを統合Azure AD
+
+[このガイドは](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/azureadappintegration) 、IT 管理者がアプリを選択して構成するのに役立ちます。
 
 ### <a name="plan-your-self-service-password-reset-sspr-deployment"></a>セルフサービス パスワード リセット (SSPR) の展開を計画する
 
@@ -193,9 +199,9 @@ Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアか�
 
 従業員が従業員エクスペリエンス ダッシュボードと一緒に [作業する方法を変革します](https://aka.ms/EmployeeExperienceDashboard)。 シームレスなチームワークを実現するには、Microsoft 365を使用して生産性の高いチームを作成し、従業員がリーダーシップと組織の残りの部分に従事し続ける必要があります。 すべての作業活動で従業員が効果的に働く。 これらのガイドでは、SharePoint、Teams、Yammerを使用して組織全体のコラボレーションを構築して生産性を向上させる方法について説明します。
 
-### <a name="microsoft-365-apps-deployment-advisor"></a>Microsoft 365 Apps展開アドバイザー
+### <a name="microsoft-365-apps-setup-guide"></a>Microsoft 365 Appsセットアップ ガイド
 
-[Microsoft 365 Apps 展開アドバイザー](https://aka.ms/OPPquickstartguide) を利用すると、Word、Excel、PowerPoint、OneNote などの Office 製品の最新バージョンをユーザーのデバイスで実行することができます。 管理ツールを使用してエンタープライズ展開に対する簡単な自己インストール オプションを含むさまざまな展開方法に関するガイダンスを取得します。 この手順ではユーザーの環境評価、特定の展開要件の把握、必要なサポート ツールの実装を行うことができ、インストールを正常に完了できます。
+この[Microsoft 365 Appsセットアップ](https://aka.ms/OPPquickstartguide) ガイドは、Word、Excel、PowerPoint、および OneNote など、最新バージョンの Office 製品を実行しているユーザーのデバイスを取得するのに役立ちます。 管理ツールを使用してエンタープライズ展開に対する簡単な自己インストール オプションを含むさまざまな展開方法に関するガイダンスを取得します。 この手順ではユーザーの環境評価、特定の展開要件の把握、必要なサポート ツールの実装を行うことができ、インストールを正常に完了できます。
 
 ### <a name="mobile-apps-setup-guide"></a>モバイル アプリのセットアップ ガイド
 
@@ -204,16 +210,6 @@ Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアか�
 ### <a name="microsoft-teams-setup-guide"></a>Microsoft Teamsセットアップ ガイド
 
 [Microsoft Teamsセットアップ](https://aka.ms/teamsguidance) ガイドでは、メッセージング、通話、およびチームとプライベートコミュニケーションの両方の音声会議またはビデオ会議を通じてリアルタイムの会話をホストするチーム ワークスペースをセットアップするガイダンスを組織に提供します。 このガイドのツールを使用して、PowerShell セッションを開く必要なく、ゲスト アクセスを構成し、チームを作成できるユーザーを設定し、.csv ファイルからチーム メンバーを追加します。 また、組織のネットワーク要件を決定し、組織のネットワーク展開を成功にTeamsします。
-
-### <a name="microsoft-teams-for-education-setup-guide"></a>Microsoft Teams for Educationセットアップ ガイド
-
-この[Microsoft Teams for Educationセットアップ ガイド](https://aka.ms/teamsedusetup)では、学校に、共同作業の教室、会話、会議、ファイル、アプリを 1 か所にまとめるガイダンスを提供します。 また、このガイドでは、学校の準備、計画、および構成Teams説明します。 展開が完了したら、組み込みのツールを使用してチームを作成できるユーザーを構成し、必要に応じてチームを作成し、必要に応じてメンバーにファイルを設定.csvします。
-
-### <a name="integrate-microsoft-lti-apps-with-your-lms"></a>Microsoft LTI アプリを LMS と統合する
-
-教師が効果的に働き、学生が組織化を行うには、すべての学習教材、課題、およびアプリケーションと簡単に共同作業を行う 1 つの場所へのシングル サインオンが必要です。 Microsoft ラーニング ツール相互運用性 (LTI) アプリは、学習管理システム (LMS) に Microsoft ツールのベストを直接取り入れ、学生と教師は、ファイルを見つけたり、ツールを構築したりではなく、学習に集中できます。
-
-LMS の管理者であり、LMS 内から Microsoft ツールに直接アクセスする場合は、MICROSOFT LTI アプリを [LMS](https://aka.ms/lmsintegrationguide) に統合する LMS との統合ガイドを使用して、作業を開始します。 これらのツールには、現在、Microsoft Teamsおよび会議Microsoft Teams含まれています。
 
 ### <a name="sharepoint-setup-guide"></a>SharePointセットアップ ガイド
 

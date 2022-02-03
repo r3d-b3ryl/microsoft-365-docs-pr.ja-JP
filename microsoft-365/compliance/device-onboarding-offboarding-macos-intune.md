@@ -14,19 +14,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: macOS デバイスをオンボーディングおよびオフボードで、Microsoft 365コンプライアンス ソリューションにMicrosoft Intuneする方法 (プレビュー)
-ms.openlocfilehash: 82aa3909ac7829f07a797673300cc0061bb4feef
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: bab39cf101cb4fcae15f93ecc74bc52d81cadd91
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962713"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327391"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Intune を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
 Intune を使用して、コンプライアンス ソリューションに macOS デバイスMicrosoft 365できます。
 
 > [!IMPORTANT]
-> MacOS デバイスにMicrosoft Defender for Endpoint (MDE) が展開されていない場合は、次の手順を実行します。
+> MacOS デバイスに Microsoft  Defender for Endpoint (MDE) が展開されていない場合は、次の手順を実行します。
 
 **適用対象:**
 
@@ -35,7 +35,7 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 
 ## <a name="before-you-begin"></a>はじめに
 
-- macOS[デバイスが Intune](/mem/intune/fundamentals/deployment-guide-platform-macos)にオンボードされ、アプリに登録ポータル サイト[します](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
+- macOS デバイス[が Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) にオンボードされ、アプリに登録ポータル サイト[します](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
 - サーバー センターにアクセスMicrosoft エンドポイント マネージャー[します](https://endpoint.microsoft.com/#home)。
 - これは macOS バージョン Catalina 10.15 以上をサポートします。
 - 構成更新プログラムを割り当てるユーザー グループを作成します。
@@ -63,13 +63,13 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 |アクセシビリティ |[アクセシビリティ.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 フル ディスク アクセス     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |ネットワーク ファイル| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
-|システム拡張機能 |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|システム拡張機能 |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |MDE の基本設定     |[com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)|
 |MAU の基本設定|[com.microsoft.autoupdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig)|
-|インストール パッケージ     |コンプライアンス ポータルのインストール パッケージ **からダウンロードされた** ファイル名 *\* wdav.pkg*\* |
+|インストール パッケージ     |コンプライアンス ポータルのインストール パッケージ **からダウンロードされたファイル** 名 *\*wdav.pkg*\* |
 
 > [!TIP]
-> *.mobileconfig* ファイルは、個別にダウンロードするか、以下を含 [む単一の結合ファイル](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)でダウンロードできます。
+> *.mobileconfig ファイルは*、個別にダウンロードするか、以下を含 [む単一の結合ファイル](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)でダウンロードできます。
 > - アクセシビリティ.mobileconfig
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
@@ -140,7 +140,7 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 ```
 -->
 
-2. デバイス構成 **プロファイルMicrosoft エンドポイント マネージャー**  >  **センター**  >  **を開きます**。
+2. **centerDevicesConfiguration** >  **Microsoft エンドポイント マネージャー** > を **開きます**。
 
 1. 選択: **プロファイルの作成** 
 
@@ -151,13 +151,13 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 
 1. [作成 **] を選択します。**
 
-1. この例のアクセシビリティフォーム *acOS* など、プロファイルの名前を選択します。 **次へ** を選択します。
+1. この例のアクセシビリティフォーム *acOS* など、プロファイルの名前を選択します。 **[次へ]** を選択します。
 
 1. 手順 1 **でダウンロードしたアクセシビリティ.mobileconfig** ファイルを構成プロファイル ファイルとして選択します。
 
-1. [次へ **] を選択する**
+1. **[次へ]** を選択します
 
-1. [割り **当て]** タブで、これらの構成を展開するグループを追加し、[次へ] を **選択します**。
+1. [割り **当て]** タブで、これらの構成を展開するグループを追加し、[次へ] を選択 **します**。
 
 1. 設定を確認し、[作成] **を選択して** 構成を展開します。
 
@@ -165,26 +165,26 @@ Intune を使用して、コンプライアンス ソリューションに macOS
     1. **fulldisk.mobileconfig** ファイル
     1. **com.microsoft.autoupdate2.xml** ファイル
     1. MDE 基本設定 **com.microsoft.wdav.xml** ファイル
-        1. ウイルス対策エンジンまたは `passive mode`  =  `true` を設定します `false` 。 DLP `true` のみを展開する場合に使用します。 DLP と Microsoft Defender for Endpoint (MDE) を展開する場合は、値を使用するか `false` 、割り当てない。
+        1. ウイルス対策エンジンまたは`passive mode` = `true`を設定します。`false` DLP `true`のみを展開する場合に使用します。 DLP `false` と Microsoft Defender for Endpoint (MDE) を展開する場合は、値を使用するか、割り当てない。
     1. **netfilter.mobileconfig**
  
-1. デバイス **構成**  >  **プロファイルを開きます**。作成したプロファイルが表示されます。
+1. **DevicesConfiguration** >  **プロファイルを開** きます。作成したプロファイルが表示されます。
 
-1. [構成プロファイル **]** ページで、作成したプロファイルを次の例の *AccessibilityformacOS* で選択し、[デバイスの状態] を選択して、デバイスの一覧と構成プロファイルの展開状態を表示します。
+1. [構成プロファイル **]** ページで、作成したプロファイルを次の *例の AccessibilityformacOS* で選択し、[デバイスの状態] を選択して、デバイスの一覧と構成プロファイルの展開状態を表示します。
 
 ### <a name="get-the-device-onboarding-package"></a>デバイスオンボーディング パッケージの取得
 
-1. コンプライアンス **センターで[デバイスオン** ボーディング **設定**  >  **開き**、[オンボーディング]**を選択します**。
+1. [**コンプライアンス センター] で [****設定** > **Device オンボーディング**] を開き、[オンボーディング] **を選択します**。
  
-1. [**オンボーディング プロセスを開始するオペレーティング システムの選択] で****、macOS を選択します**。
+1. [**オンボーディング プロセスを開始するオペレーティング システムの選択] で、****macOS を選択します**。
  
-1. [**展開方法] で**、[**モバイル デバイスの管理/管理] をMicrosoft Intune。**
+1. [**展開方法] で**、[**モバイル デバイスの管理/管理] をMicrosoft Intune**。
  
 1. [オンボード **パッケージのダウンロード] を選択します**。 これには、データベース ファイル内のオンボーディング *DeviceComplianceOnboarding.xml* 含まれる。
 
 ### <a name="deploy-the-onboarding-package"></a>オンボーディング パッケージの展開
 
-1. デバイス構成 **プロファイルMicrosoft エンドポイント マネージャー**  >  **センター**  >  **を開きます**。
+1. **centerDevicesConfiguration** >  **Microsoft エンドポイント マネージャー** > を **開きます**。
 
 1. [プロファイルの **作成] を選択します**。 
 
@@ -195,13 +195,13 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 
 1. [作成 **] を選択します。**
 
-1. この例の *OnboardingPackage など、プロファイルの名前* を選択します。 **次へ** を選択します。
+1. この例の *OnboardingPackage など、プロファイルの名前* を選択します。 **[次へ]** を選択します。
 
 1. 構成プロファイル *DeviceComplianceOnboarding.xml* ファイルを選択します。
 
-1. [次へ **] を選択する**
+1. **[次へ]** を選択します
 
-1. [割り **当て]** タブで、これらの構成を展開するグループを追加し、[次へ] を **選択します**。
+1. [割り **当て]** タブで、これらの構成を展開するグループを追加し、[次へ] を選択 **します**。
 
 1. 設定を確認し、[作成] **を選択して** 構成を展開します。
 
@@ -228,39 +228,39 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 |**com.microsoft.wdav.netext**|**UBF8T346G9**|
 
 
-1. [割り **当て]** タブで、これらの構成を展開するグループを追加し、[次へ] を **選択します**。
+1. [割り **当て]** タブで、これらの構成を展開するグループを追加し、[次へ] を選択 **します**。
 
 1. [ **次へ] を** 選択して構成を展開します。
 
 ### <a name="get-the-installation-package"></a>インストール パッケージの取得
 
-1. コンプライアンス **センターで[デバイスオン** ボーディング **設定**  >  **開き**、[オンボーディング]**を選択します**。
+1. [**コンプライアンス センター] で [****設定** > **Device オンボーディング**] を開き、[オンボーディング] **を選択します**。
  
 1. [ **オンボーディング プロセスを開始するオペレーティング システムの選択] で** **macOS を選択する**
  
-1. [**展開方法] で**[**モバイル デバイスの管理/管理] を選択Microsoft Intune**
+1. [**展開方法] で** [**モバイル デバイスの管理/管理] を選択Microsoft Intune**
  
-1. [インストール **パッケージのダウンロード] を選択します**。 これにより *、wdav.pkg ファイルが表示* されます。
+1. [インストール **パッケージのダウンロード] を選択します**。 これにより、 *wdav.pkg ファイルが表示* されます。
 
 > [!IMPORTANT]
-> *wdav.pkg を展開する前に。* パッケージを Intune 経由で使用する場合は *、Intune アプリ* ラッピング ツール for Mac を使用して *wdav.pkg.intunemac 形式に再フォーマットする必要* があります。
+> *wdav.pkg を展開する前に。* パッケージを Intune 経由で使用する場合は、 *Intune アプリ ラッピング ツール for Mac* を使用して *wdav.pkg.intunemac 形式に再フォーマットする必要* があります。
  
 
 ### <a name="deploy-the-microsoft-dlp-installation-package"></a>Microsoft DLP インストール パッケージの展開
 
-1. [「macOS line-of-business (LOB)](/mem/intune/apps/lob-apps-macos)アプリを Microsoft Intune に追加する方法」の手順に従って *、wdav.pkg* ファイルを適切な形式に変換し、Intune を介して展開します。
+1. [「macOS line-of-business (LOB)](/mem/intune/apps/lob-apps-macos) アプリを Microsoft Intune に追加する方法」の手順に従って、*wdav.pkg* ファイルを適切な形式に変換し、Intune を介して展開します。
 
 ## <a name="offboard-macos-devices-using-intune"></a>Intune を使用したオフボード macOS デバイス
 
 > [!NOTE]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は、最大 6 か月間保持されます。
 
-2. **[Microsoft エンドポイント マネージャーで、[****デバイス** 構成プロファイル] を開きます。作成した  >  プロファイルが表示されます。
+2. 中央 **Microsoft エンドポイント マネージャー** **DevicesConfiguration** >  プロファイルを開き、作成したプロファイルがそこに表示されます。
 
-1. [構成 **プロファイル] ページで***、wdav.pkg.intunemac プロファイルを選択* します。
+1. [構成 **プロファイル] ページで** 、 *wdav.pkg.intunemac プロファイルを選択* します。
 
 1. [ **デバイスの状態]** を選択して、デバイスの一覧と構成プロファイルの展開状態を表示します。
 
 1. プロパティ **と割り****当てを開く**
 
-1. 割り当てからグループを削除します。 これにより *、wdav.pkg.intunemac* パッケージがアンインストールされ、コンプライアンス ソリューションから macOS デバイスのオフボードがアンインストールされます。
+1. 割り当てからグループを削除します。 これにより、 *wdav.pkg.intunemac* パッケージがアンインストールされ、コンプライアンス ソリューションから macOS デバイスのオフボードがアンインストールされます。

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f78d12b323b779e0ba22c92f71f5d5fd53e7c1c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: b218ab83e5d348ef458d791bb573389ab4bf6096
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320705"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326971"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -279,7 +279,7 @@ Windows 7 SP1、Windows 8.1、Windows Server 2008 R2*など、以前のバージ
 ただし、接続を確認した結果が失敗を示している場合は、HTTP エラーが表示されます (「HTTP ステータス コード」を参照)。 次に、「プロキシ サーバーの Defender for Endpoint サービス URL へのアクセスを有効にする」に示されている [表の URL を使用できます](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。 使用できる URL は、オンボーディング手順で選択された地域によって異なります。
 
 > [!NOTE]
-> Connectivity Analyzer ツールのクラウド接続チェックは、 [PSExec および WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands) コマンドから発生する攻撃表面縮小ルールブロック プロセスの作成と互換性がありません。 接続ツールを実行するには、このルールを一時的に無効にする必要があります。 または、アナライザーの実行中に [ASR 除外を](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) 一時的に追加できます。
+> Connectivity Analyzer ツールのクラウド接続チェックは、 [PSExec および WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands) コマンドから発生する攻撃表面縮小ルールブロック プロセスの作成と互換性がありません。 接続ツールを実行するには、このルールを一時的に無効にする必要があります。 または、アナライザーの実行中に [ASR 除外を](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) 一時的に追加できます。
 >
 > TelemetryProxyServer がレジストリまたはグループ ポリシー経由で設定されている場合、Defender for Endpoint はフォール バックし、定義されたプロキシにアクセスできません。
 
