@@ -21,16 +21,16 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 管理センターで、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 の試用版または有料サブスクリプションをキャンセルする方法について説明します。
 ms.date: 01/20/2022
-ms.openlocfilehash: 2d800fbba8ce2290de395179589b1d4110cd1345
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 21d7e6f2ff644861b1a8096511144b5343dc2a25
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322580"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345431"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
-サブスクリプションは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 356 管理センター</a>でいつでもキャンセルできます。 ただし、払い戻しを受けるには、特定の払い戻しの適格性要件を満たしている必要があります。 詳細については、「[払い戻しの適格性を理解する](#understand-refund-eligibility)」を参照してください。
+サブスクリプションは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>でいつでもキャンセルできます。 ただし、払い戻しを受けるには、特定の払い戻しの適格性要件を満たしている必要があります。 詳細については、「[払い戻しの適格性を理解する](#understand-refund-eligibility)」を参照してください。
 
 Microsoft 365 Business Premium など、同じ製品に対して複数のサブスクリプションがある場合、1 つのサブスクリプションをキャンセルしても、他の購入したライセンスやサービスに影響はありません。
 
