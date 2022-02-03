@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 50b2d3f5e8a4dd8ff70c826293d5af9be5541938
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: c2ebb60d3cd5514d003991d26c5070b05e89fb37
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326959"
+ms.locfileid: "62354626"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -65,7 +65,7 @@ ms.locfileid: "62326959"
 - [ネットワーク ファイル共有](#unc-share)
 - [セキュリティ インテリジェンスの更新プログラム Microsoft Defender ウイルス対策 Microsoft](https://www.microsoft.com/wdsi/defenderupdates) <sup>マルウェア対策 [[2](#fn1)]<sup></sup>
 
-(<a id="fn1">1</a>) Intune 内部定義更新サーバー - SCCM/SUP を使用して Microsoft Defender ウイルス対策 の定義更新プログラムを取得し、クライアント デバイスでブロックされている Windows Update にアクセスする必要がある場合は、共同管理に移行し、エンドポイント保護ワークロードを Intune にオフロードできます。 Intune で構成されたマルウェア対策ポリシーには、オンプレミスの WSUS を更新ソースとして使用するように構成できる 「内部定義更新サーバー」のオプションがあります。 これにより、企業に対して承認されている公式 WU サーバーからの更新プログラムを制御し、UPdates ネットワークの公式サイトにネットワーク トラフィックをプロキシして保存するのにWindows役立ちます。
+(<a id="fn1">1</a>) Intune 内部定義更新サーバー - SCCM/SUP を使用して Microsoft Defender ウイルス対策 の定義更新プログラムを取得し、クライアント デバイスでブロックされている Windows Update にアクセスする必要がある場合は、共同管理に移行し、エンドポイント保護ワークロードを Intune にオフロードできます。 Intune で構成されたマルウェア対策ポリシーには、社内の WSUS を更新ソースとして使用するように構成できる 「内部定義更新サーバー」のオプションがあります。 これにより、企業に対して承認されている公式 WU サーバーからの更新プログラムを制御し、UPdates ネットワークの公式サイトにネットワーク トラフィックをプロキシして保存するのにWindows役立ちます。
 
 (<a id="fn1">2</a>) ポリシーとレジストリは、このセキュリティ インテリジェンス (MMPC) Microsoft マルウェア プロテクション センター名としてリストされている場合があります。
 
@@ -86,7 +86,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 |Microsoft Update|エンドポイントを Microsoft Update に直接接続する必要があります。 これは、エンタープライズ ネットワークに不定期に接続するエンドポイントや、Windows サーバー更新サービスを使用して更新プログラムを管理しない場合に役立ちます。|
 |ファイル共有|インターネットに接続されていないデバイス (VM など) があります。 インターネットに接続された VM ホストを使用して、更新プログラムをネットワーク共有にダウンロードし、そこから VM が更新プログラムを取得できます。 仮想デスクトップ [インフラストラクチャ (VDI](deployment-vdi-microsoft-defender-antivirus.md) ) 環境でファイル共有を使用する方法については、VDI 展開ガイドを参照してください。|
 |Microsoft エンドポイント マネージャー|エンドポイントを更新Microsoft エンドポイント マネージャーを使用しています。|
-|セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策 Microsoft マルウェア対策 (以前は MMPC と呼ばば)|[SHA-2 をサポートするためにデバイスが更新](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)されている必要があります。 Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日からセキュリティ インテリジェンス更新プログラムは SHA-2 専用に署名されます。 <br/>最近の感染による最新の保護更新プログラムをダウンロードするか、VDI 展開用の強力な基本イメージを準備 [するのに役立ちます](deployment-vdi-microsoft-defender-antivirus.md)。 このオプションは通常、プライマリ ソースではなく、最終的なフォールバック ソースとしてのみ使用する必要があります。 サーバー更新サービスまたは Microsoft Update から指定した日数Windows更新プログラムをダウンロードできない場合にのみ[使用されます](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)。|
+|セキュリティ インテリジェンスの更新プログラムMicrosoft Defender ウイルス対策 Microsoft マルウェア対策 (以前は MMPC と呼ばば)|[SHA-2 をサポートするためにデバイスが更新](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)されている必要があります。 Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日からセキュリティ インテリジェンス更新プログラムは SHA-2 専用に署名されます。 <br/>最近の感染による最新の保護更新プログラムをダウンロードするか、VDI 展開用の強力な基本イメージを準備 [するのに役立ちます](deployment-vdi-microsoft-defender-antivirus.md)。 このオプションは通常、プライマリ ソースではなく、最終的なフォールバック ソースとしてのみ使用する必要があります。 サーバー更新サービスまたは Microsoft Update から指定した日数Windows更新プログラムをダウンロードできない場合にのみ[使用されます](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)。|
 
 グループ ポリシー、グループ ポリシー、PowerShell コマンドレット、および WMI で更新Microsoft Endpoint Configuration Manager使用する順序を管理できます。
 

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: この記事では、データベースに含まれるテンプレートのいずれかを使用して DLP ポリシーを作成する方法についてOffice 365。
-ms.openlocfilehash: 92c26c23461c9a03e50ea3a8f0ebb20a2b5151ba
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 965e5198887ec64072efffd35ffa7739c90af6a4
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939107"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62355030"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
@@ -37,7 +37,7 @@ Microsoft 365、さまざまな一般的な規制およびビジネス ポリシ
 
 カスタム テンプレートを選択することもできます。カスタム テンプレートには既定のルールがなく、組織の特定のコンプライアンス要件を満たすようにゼロから DLP ポリシーを構成します。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 DLP ポリシーを作成するコンプライアンス チームのメンバーは、コンプライアンス センターへのアクセス許可を持っている必要があります。 既定では、テナント管理者はコンプライアンス担当者や他のユーザーにアクセス権を付与できます。 次の手順を実行します。
   
@@ -45,7 +45,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
     
 2. セキュリティ &amp; コンプライアンス センターの [**アクセス許可**] ページで役割グループを作成します。 
 
-3. 役割グループの作成中に、[役割の選択] セクションを使用して、役割グループに次の役割を追加 **します**。
+3. 役割グループの作成中に、[役割の選択] セクションを使用して、役割グループに次の役割を追加 **します。DLP コンプライアンス管理**。
     
 4. **メンバーの選択** セクションを使用して、以前に作成した Microsoft 365 グループを役割グループに追加します。
 
@@ -55,30 +55,30 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
   
 ポリシーを適用しない DLP ポリシーを作成して適用するには、これらのアクセス許可が必要です。
 
-### <a name="roles-and-role-groups-in-preview"></a>プレビューでの役割と役割グループ
+### <a name="roles-and-role-groups-in-preview"></a>プレビュー段階の [役割と役割グループ]
 
-プレビューには、アクセス制御を微調整するためにテストアウトできる役割と役割グループがあります。
+プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
 
-プレビューに含Microsoft Information Protection (MIP) ロールの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センターの役割 [」を&してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
-- 情報保護管理者
-- 情報保護アナリスト
-- 情報保護調査員
-- 情報保護リーダー
+- Information Protection 管理者
+- Information Protection アナリスト
+- Information Protection 調査員
+- Information Protection 閲覧者
 
-プレビュー中の MIP 役割グループの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センター」の「役割 [グループ&参照してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
 
 - 情報保護
-- 情報保護管理者
-- 情報保護アナリスト
-- 情報保護調査員
-- 情報保護リーダー
+- Information Protection レベル
+- Information Protection アナリスト
+- Information Protection 調査担当者
+- Information Protection 閲覧者
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
-1. ユーザーにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター。</a>
+1. アカウントにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>。
 
-2. コンプライアンス センターの左側 \> のナビゲーション \> **ソリューション** \> **データ損失** \> **防止ポリシー** \> **+ ポリシーの作成**。
+2. コンプライアンス センターの左側の\>ナビゲーション **ソリューション** \> データ\>**損失防止** \> **ポリシー** \> **+ ポリシーの作成**。
 
     ![ポリシー ボタンを作成します。](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
@@ -94,9 +94,9 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 5. DLP ポリシーで保護する場所を選択し、各場所の既定のスコープを受け入れるか、スコープをカスタマイズします。 「スコープ [オプションの](dlp-policy-reference.md#locations) 場所」を参照してください。
 
-6. \> **次へ** を選択します。
+6. \> **[次へ]** を選択します。
  
-1. <!-->、次のいずれかの操作を行います。
+1. 次のいずれかの操作を行います。
 
    - **[Office 365 のすべての場所]** \> **[次へ]** と選びます。
    - **[自分で特定の場所を選択する]** \> **[次へ]** と選びます。この例では、これを選びます。
@@ -105,11 +105,11 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
    特定の SharePoint サイトまたは OneDrive for Business アカウントだけを含めるには、**[状態]** をオンに切り替えた後、**[含める]** の下のリンクをクリックして、特定のサイトまたはアカウントを選びます。ポリシーをサイトに適用すると、そのポリシーに構成されたルールがそのサイトのすべてのサブサイトに自動的に適用されます。
 
-   ![DLP ポリシーを適用できる場所のオプション。](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+   ![DLP ポリシーを適用できる場所のオプション。](../media/all-locations.png)
 
-   この例では、すべての OneDrive for Business アカウントに格納されている機密情報を保護するには、Exchange 電子メールサイトと **SharePoint** サイトの両方の状態をオフにし **、OneDrive** アカウントの状態 **をオンのままに** します。-->
+   この例では、すべての OneDrive for Business アカウントに保存されている機密情報を保護するために、**Exchange メール** と **SharePoint サイト** の両方の **[状態]** をオフにし、**OneDrive アカウント** の **[状態]** はそのままにします。
 
-7. [次 **へ] テンプレートから [既定の設定を確認してカスタマイズする] を** \> **選択します**。
+7. [次 **へ] テンプレートから [既定の設定を確認してカスタマイズする] を選択** \> **します**。
 
 8. DLP ポリシー テンプレートには、条件付きの定義済みルールと、特定の種類の機密情報を検出して適用するアクションが含まれています。既存のルールのいずれかを編集、削除、またはオフにするか、新しいルールを追加できます。完了したら、**[次へ]** をクリックします。
 

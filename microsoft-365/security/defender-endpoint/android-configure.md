@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 92a927bf0cb3a5e568ca2b02d60d641907bc0407
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 22e0eed3becebdcb3dee4c31ddc7659651bac71f
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295398"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354614"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android の機能でエンドポイント用 Defender を構成する
 
@@ -60,13 +60,16 @@ Android デバイスから Defender for Endpoint から送信されるデータ�
 
 |脅威レポート     |詳細      |
 |--------------------|-------------|
-|マルウェア レポート |管理者は、マルウェア レポートのプライバシー制御をセットアップできます - プライバシーが有効になっている場合、Defender for Endpoint はマルウェア 通知レポートの一部としてマルウェア アプリ名や他のアプリの詳細を送信しません。 |
-|フィッシング レポート |管理者は、フィッシング レポートのプライバシー制御をセットアップできます - プライバシーが有効になっている場合、Defender for Endpoint はフィッシングアラート レポートの一部として安全でない Web サイトのドメイン名と詳細を送信しません。 |
+|マルウェア レポート |管理者は、マルウェア レポートのプライバシー制御を設定できます - プライバシーが有効になっている場合、Defender for Endpoint はマルウェア 通知レポートの一部としてマルウェア アプリ名や他のアプリの詳細を送信しません。 |
+|フィッシング レポート |管理者は、フィッシング レポートのプライバシー制御を設定できます- プライバシーが有効になっている場合、Defender for Endpoint はフィッシング アラート レポートの一部として安全でない Web サイトのドメイン名と詳細を送信しません。 |
 |アプリの脆弱性評価 (Android のみ) |既定では、作業プロファイルにインストールされているアプリに関する情報だけが、脆弱性評価のために送信されます。 管理者は、個人用アプリを含めるプライバシーを無効にできます|
 
 ## <a name="configure-vulnerability-assessment-of-apps-for-byod-devices"></a>BYOD デバイス用アプリの脆弱性評価を構成する
 
 Android 上の Microsoft Defender for Endpoint のバージョン 1.0.3425.0303 から、オンボードモバイル デバイスにインストールされている OS とアプリの脆弱性評価を実行できます。
+
+> [!NOTE]
+> 脆弱性評価は、Microsoft Defender [](next-gen-threat-and-vuln-mgt.md) for Endpoint の脅威と脆弱性の管理の一部です。 
 
 **個人用デバイス (BYOD) からのアプリに関連するプライバシーに関する注意事項:**
 

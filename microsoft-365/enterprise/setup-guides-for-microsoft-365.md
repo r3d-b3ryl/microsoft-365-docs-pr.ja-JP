@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスの機能を計画、移行、および実装するためのステップバイステップのツールを取得します。 サービスまたは実行する必要があるアプリをセットアップするガイドを見つける。
-ms.openlocfilehash: afab6209211b5c80daaa300b467e255a4b1ec595
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 91b89eeaec3a9d0db5f191cbd10c797a633c633b
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326701"
+ms.locfileid: "62354602"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -93,7 +93,7 @@ Microsoft Search作業を完了するために必要な情報を組織が見つ�
 
 ## <a name="guides-for-authentication-and-access"></a>認証とアクセスのガイド
 
-### <a name="configure-multifactor-authentication-mfa"></a>多要素認証 (MFA) の構成
+### <a name="configure-multi-factor-authentication-mfa"></a>多要素認証 (MFA) を構成する
 
 多 [要素認証 (MFA) の構成ガイドでは](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess) 、資格情報の紛失または盗難による違反から組織を保護するための情報を提供します。 MFA は、アプリまたは他の会社のリソースにサインインするときに、ユーザーの ID を証明する複数の形式の検証を求めるプロンプトを表示することで、アカウントのセキュリティを直ちに強化します。 このプロンプトは、ユーザーのモバイル デバイスにコードを入力するか、指紋スキャンを提供する場合があります。 MFA は、条件付きアクセス、セキュリティの既定値、またはユーザーごとの MFA を使用して有効になります。 このガイドでは、ライセンスと既存の構成に基づいて、組織に推奨される MFA オプションを提供します。
 

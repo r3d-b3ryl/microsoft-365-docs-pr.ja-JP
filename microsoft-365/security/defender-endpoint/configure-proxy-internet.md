@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db6d7f17231fd8c2355f36310609af1e8d88160c
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: b4ae8490fadecf60d4414218f42cac83b9035270
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345989"
+ms.locfileid: "62354986"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -41,7 +41,7 @@ Defender for Endpoint センサーでは、センサー データWindowsレポ�
 
 WinHTTP 構成設定は、インターネット (WinINet) Windowsプロキシ設定 ([WinINet vs. WinHTTP](/windows/win32/wininet/wininet-vs-winhttp) を参照) とは独立しています。 プロキシ サーバーは、次の検出方法を使用してのみ検出できます。
 
-- 自動検出の方法:
+- 自動検出メソッド:
 
   - 透過プロキシ
   
@@ -61,7 +61,7 @@ WinHTTP 構成設定は、インターネット (WinINet) Windowsプロキシ設
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>レジストリ ベースの静的プロキシを使用して、プロキシ サーバーを手動で構成します。
 
-診断データを報告するために、Defender for Endpoint Detection and Response (EDR) センサー用のレジストリ ベースの静的プロキシを構成します。 また、コンピューターがインターネットへの接続を許可されていない場合は、Defender for Endpoint サービスと通信します。
+コンピューターがインターネットへの接続を許可されていない場合は、Defender for Endpoint 検出および応答 (EDR) センサー用のレジストリ ベースの静的プロキシを構成して、診断データを報告し、Defender for Endpoint サービスと通信します。
 
 > [!NOTE]
 > Windows 10、Windows 11、Windows Server 2019、または Windows Server 2022 でこのオプションを使用する場合は、次のビルドと累積的な更新プログラムのロールアップを使用してください。
@@ -261,7 +261,7 @@ Windows 7 SP1、Windows 8.1、Windows Server 2008 R2*など、以前のバージ
 
 5. このツールは、*HardDrivePath* で *MDEClientAnalyzerResult.zipファイルを* 作成して抽出します。
 
-6. [ *MDEClientAnalyzerResult.txt* を開き、プロキシ構成手順を実行して、サーバーの検出とサービス URL へのアクセスを有効にしてください。
+6. サーバー *MDEClientAnalyzerResult.txt* 開き、サーバーの検出とサービス URL へのアクセスを有効にするプロキシ構成手順を実行したと確認します。
 
    このツールは、Defender for Endpoint サービス URL の接続性をチェックします。 Defender for Endpoint クライアントが対話するように構成されていることを確認します。 このツールは、Defender for Endpoint サービスとの通信に使用される可能性 *のある* URL ごとに、MDEClientAnalyzerResult.txtファイルに結果を出力します。 次に例を示します。
 
@@ -283,7 +283,7 @@ Windows 7 SP1、Windows 8.1、Windows Server 2008 R2*など、以前のバージ
 >
 > TelemetryProxyServer がレジストリまたはグループ ポリシー経由で設定されている場合、Defender for Endpoint はフォール バックし、定義されたプロキシにアクセスできません。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-articles"></a>関連記事
 
 - [グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策](use-group-policy-microsoft-defender-antivirus.md)
 - [Windows デバイスのオンボード](configure-endpoints.md)
