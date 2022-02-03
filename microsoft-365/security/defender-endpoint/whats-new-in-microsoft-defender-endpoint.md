@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b452c0aea4932903c47f0874e839770caa2a6850
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 15055274b8b2fd69c5751201184955eb9915e038
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159595"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322351"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -60,6 +60,10 @@ ms.locfileid: "62159595"
 - [iOS の Defender for Endpoint の新機能](ios-whatsnew.md)
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
 
+## <a name="january-2022"></a>2022 年 1 月
+
+- Android と iOS 脆弱性の管理の脅威と脅威が一般に利用可能になります。 [詳細情報](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663) を参照してください。
+
 ## <a name="december-2021"></a>2021 年 12 月
 
 - 脅威と脅威脆弱性の管理アプリケーションとコンポーネントの Log4j の脆弱性を特定するのに役立ちます。 [詳細情報](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM) を参照してください。
@@ -82,13 +86,13 @@ ms.locfileid: "62159595"
 
 ## <a name="september-2021"></a>2021 年 9 月
 
-- [Web コンテンツ フィルタリング](web-content-filtering.md) <br/>Microsoft Defender for Endpoint の Web 保護機能の一環として、Web コンテンツ フィルターを使用すると、組織のセキュリティ チームはコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 カテゴリには、アダルト コンテンツ、高帯域幅、法的責任、余暇、未分類が含まれます。 これらのカテゴリの 1 つ以上に分類される多くの Web サイトは悪意のあるものではない可能性があります。コンプライアンス規制、帯域幅の使用、その他の懸念により、問題が発生する可能性があります。 [Web コンテンツ フィルターの詳細については、次のページを参照してください](web-content-filtering.md)。
+- [Web コンテンツ フィルタリング](web-content-filtering.md) <br/>Microsoft Defender for Endpoint の Web 保護機能の一環として、Web コンテンツ フィルターを使用すると、組織のセキュリティ チームはコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 カテゴリには、アダルト コンテンツ、高帯域幅、法的責任、余暇、未分類が含まれます。 これらのカテゴリの 1 つ以上に分類される多くの Web サイトは悪意のあるものではない可能性があります。コンプライアンス規制、帯域幅の使用、その他の懸念により、問題が発生する可能性があります。 [Web コンテンツ フィルターの詳細について説明します](web-content-filtering.md)。
 
 ## <a name="august-2021"></a>2021 年 8 月
 
 - (プレビュー) [Microsoft Defender for Endpoint Plan 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (プレビュー) は、次世代の保護、攻撃表面の縮小、集中管理とレポート作成、API を含むエンドポイント保護ソリューションです。 Defender for Endpoint Plan 1 (プレビュー) は、エンドポイント保護機能を試して、Microsoft 365 E3 を持ち、まだ Microsoft 365 E5 を持っていないお客様向け新しいサービスです。 
 
-   詳細については [、「Microsoft Defender for Endpoint Plan 1 (プレビュー)」を参照してください](defender-endpoint-plan-1.md)。 既存の [Defender for Endpoint](microsoft-defender-endpoint.md) 機能は、Defender for Endpoint Plan 2 と呼ばれる予定です。 
+   詳細については、「 [Microsoft Defender for Endpoint Plan 1 (プレビュー)」を参照してください](defender-endpoint-plan-1.md)。 既存の [Defender for Endpoint](microsoft-defender-endpoint.md) 機能は、Defender for Endpoint Plan 2 と呼ばれる予定です。 
 
 - (プレビュー) [Web コンテンツ フィルター](web-content-filtering.md)<br>  Web コンテンツ フィルターは、Microsoft Defender for Endpoint の Web 保護機能の一部です。 これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。
 
@@ -111,11 +115,11 @@ ms.locfileid: "62159595"
 
 - [デバイス グループ定義には、](/microsoft-365/security/defender-endpoint/machine-groups) 条件ごとに複数の値を含めることができます。 複数のタグ、デバイス名、ドメインを 1 つのデバイス グループの定義に設定できます。
 
-- [モバイル アプリケーション管理のサポート](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> この機能強化により、Intune がモバイル アプリケーションの管理に使用されている場合に、Microsoft Defender for Endpoint が管理アプリケーション内で組織のデータを保護できます。 モバイル アプリケーション管理の詳細については、このドキュメントを [参照してください](/microsoft-365/mem/intune/apps/mam-faq)。
+- [モバイル アプリケーション管理のサポート](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> この機能強化により、Intune がモバイル アプリケーションの管理に使用されている場合に、Microsoft Defender for Endpoint が管理アプリケーション内で組織のデータを保護できます。 モバイル アプリケーション管理の詳細については、このドキュメント [を参照してください](/microsoft-365/mem/intune/apps/mam-faq)。
 
 - [Microsoft Tunnel VPN 統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN 機能は、Android 用 Microsoft Defender for Endpoint アプリと統合されました。 この統合により、組織は 1 つのセキュリティ アプリでエンド ユーザー エクスペリエンスを簡素化できます。モバイル脅威防御とモバイル デバイスからプレムリソースにアクセスする機能の両方を提供し、セキュリティチームと IT チームは、使い慣れた管理者エクスペリエンスを維持できます。
 
-- [iOS での脱獄の検出](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> iOS 上の Microsoft Defender for Endpoint の脱獄検出機能が一般提供されました。 これにより、既に存在するフィッシング保護が追加されます。  詳細については、「デバイス リスク信号 [に基づく条件付きアクセス ポリシーのセットアップ」を参照してください](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
+- [iOS での脱獄の検出](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide#conditional-access-with-defender-for-endpoint-on-ios) <br> iOS 上の Microsoft Defender for Endpoint の脱獄検出機能が一般提供されました。 これにより、既に存在するフィッシング保護が追加されます。  詳細については、「デバイス リスク信号 [に基づく条件付きアクセス ポリシーのセットアップ」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide)。
 
 
 ## <a name="march-2021"></a>2021 年 3 月

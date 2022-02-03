@@ -9,18 +9,18 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
+ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 10/19/2021
 ms.technology: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 9593b7798a969e5e8adca82c005c65bf7236eebb
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: c290ad42702ddcb815880fedfe72d9de73065b8d
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218600"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322483"
 ---
 # <a name="customize-controlled-folder-access"></a>制御されたフォルダー アクセスをカスタマイズする
 
@@ -31,7 +31,7 @@ ms.locfileid: "61218600"
 > [!TIP]
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-フォルダー アクセスの制御により、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、Windows Server 2019、Windows Server 2022、Windows 10、Windows 11 クライアントでサポートされます。 この記事では、フォルダー アクセスの制御機能をカスタマイズする方法について説明し、次のセクションを示します。
+フォルダー アクセスの制御により、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、Windows Server 2019、Windows Server 2022、Windows 10、および Windows 11 クライアントでサポートされます。 この記事では、フォルダー アクセスの制御機能をカスタマイズする方法について説明し、次のセクションを示します。
 
 - [追加のフォルダーを保護する](#protect-additional-folders)
 - [保護されたフォルダーへのアクセスを許可する必要がありますアプリを追加する](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -39,15 +39,15 @@ ms.locfileid: "61218600"
 - [通知をカスタマイズする](#customize-the-notification)
 
 > [!IMPORTANT]
-> フォルダー アクセスの制御により、悪意のあるアクティビティが検出されたアプリが監視されます。 場合によっては、正当なアプリがファイルに変更を加えるのをブロックされる場合があります。 フォルダー アクセスの制御が組織の生産性に影響を与える場合は、監査モード[](audit-windows-defender.md)でこの機能を実行して、その影響を完全に評価することもできます。
+> フォルダー アクセスの制御により、悪意のあるアクティビティが検出されたアプリが監視されます。 場合によっては、正当なアプリがファイルに変更を加えるのをブロックされる場合があります。 フォルダー アクセスの制御が組織の生産性に影響を与える場合は、監査モードで[](audit-windows-defender.md)この機能を実行して、その影響を完全に評価することもできます。
 
 ## <a name="protect-additional-folders"></a>追加のフォルダーを保護する
 
-フォルダー アクセスの制御は、ドキュメント、ピクチャ、ムービーなどのフォルダーを含む、多くのシステムフォルダーと既定の場所 **に適用されます**。 保護する他のフォルダーを追加できますが、既定の一覧で既定のフォルダーを削除することはできません。
+フォルダー アクセスの制御は、ドキュメント、ピクチャ、ムービーなどのフォルダーを含む、多くのシステム フォルダーと既定の場所に **適用されます**。 保護する他のフォルダーを追加できますが、既定の一覧で既定のフォルダーを削除することはできません。
 
 他のフォルダーを制御されたフォルダー アクセスに追加すると、既定の Windows ライブラリにファイルを保存しない場合や、ライブラリの既定の場所を変更した場合に役立ちます。
 
-ネットワーク共有とマップされたドライブを指定することもできます。 環境変数とワイルドカードがサポートされています。 ワイルドカードの使用の詳細については、「ファイル名とフォルダー パスまたは拡張子の除外リストでワイルドカードを使用する」 [を参照してください](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
+ネットワーク共有とマップされたドライブを指定することもできます。 環境変数とワイルドカードがサポートされています。 ワイルドカードの使用の詳細については、「ファイル名とフォルダー パスまたは拡張子の除外リストでワイルドカードを使用 [する」を参照してください](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
 保護されたフォルダーを追加および削除するには、Windows セキュリティ アプリ、グループ ポリシー、PowerShell コマンドレット、またはモバイル デバイス管理構成サービス プロバイダーを使用できます。
 
@@ -55,11 +55,11 @@ ms.locfileid: "61218600"
 
 1. タスク バー Windows セキュリティシールド アイコンを選択するか、タスク バーでセキュリティを検索して、アプリを開スタート メニュー。
 
-2. [ **ウイルス対策&保護] を** 選択し、[ランサムウェア保護] セクション **まで下にスクロール** します。
+2. [ **ウイルス対策&保護] を** 選択し、[ランサムウェアの保護] **セクションまで下にスクロール** します。
 
 3. [ランサムウェア **保護の管理] を** 選択して **、[ランサムウェア保護] ウィンドウを開** きます。
 
-4. [フォルダー アクセス **の制御] セクションで** 、[保護された **フォルダー] を選択します**。
+4. [フォルダー アクセス **の制御] セクションで** 、[保護 **されたフォルダー] を選択します**。
 
 5. [ユーザー **アクセス制御** ] プロンプト **で [はい] を選択** します。 [ **保護されたフォルダー] ウィンドウ** が表示されます。
 
@@ -69,21 +69,21 @@ ms.locfileid: "61218600"
 
 1. グループ ポリシー管理コンピューターで、[グループ ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true)を開きます。 
 
-2. 構成するグループ ポリシー オブジェクトを右クリックし、[編集] を **選択します**。
+2. 構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。
 
-3. グループ ポリシー **管理エディターで、[****コンピューター構成ポリシー** ] \> **[管理** \> **用テンプレート] に移動します**。
+3. グループ ポリシー **管理エディターで、[** コンピューター構成\>ポリシー] **[管理用** \> **テンプレート] に移動します**。
 
-4. ツリーを展開して **、Exploit** Guard Windowsフォルダー アクセスMicrosoft Defender ウイルス対策Windows Defender \>  \> **コンポーネント** \> **を展開します**。 <br/>**注**: 以前のバージョンの Windowsでは、以前のバージョン **Windows Defender ウイルス対策表示される** 場合 **Microsoft Defender ウイルス対策。**
+4. ツリーを展開して **、Exploit Guard Windowsフォルダー アクセスMicrosoft Defender ウイルス対策** \> **Windows Defender** \> **コンポーネント** \> **を展開します**。 <br/>**注**: 以前のバージョンの Windowsでは、**Windows Defender ウイルス対策の代** わりに **Microsoft Defender ウイルス対策。**
 
-5. [構成済みの **保護されたフォルダー] を** ダブルクリックし、オプションを [有効] に **設定します**。 [ **表示] を** 選択し、保護する各フォルダーを指定します。
+5. [構成済みの **保護されたフォルダー] をダブルクリック** し、オプションを [有効] に **設定します**。 [ **表示] を** 選択し、保護する各フォルダーを指定します。
 
 6. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>PowerShell を使用して追加のフォルダーを保護する
 
-1. **[PowerShell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します。**
+1. [**PowerShell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します。**
 
-2. 次の PowerShell コマンドレットを入力し、フォルダーのパス (など) `<the folder to be protected>` に置き換えてください `"c:\apps\"` 。
+2. 次の PowerShell コマンドレットを入力し、 `<the folder to be protected>` フォルダーのパス (など) に置き換えてください `"c:\apps\"`。
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessProtectedFolders "<the folder to be protected>"
@@ -93,11 +93,11 @@ ms.locfileid: "61218600"
    :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="コマンドレットが表示された PowerShell ウィンドウ。":::
 
 > [!IMPORTANT]
-> リスト `Add-MpPreference` にアプリを追加または追加する場合に使用します `Set-MpPreference` 。 コマンドレットを `Set-MpPreference` 使用すると、既存のリストが上書きされます。
+> リスト `Add-MpPreference` にアプリを追加または追加する場合に使用します `Set-MpPreference`。 コマンドレットを使用 `Set-MpPreference` すると、既存のリストが上書きされます。
 
 ### <a name="use-mdm-csps-to-protect-additional-folders"></a>MDM CSP を使用して追加のフォルダーを保護する
 
-アプリが保護されたフォルダーに変更を加えるのを許可するには [、./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersList](/windows/client-management/mdm/policy-csp-defender#defender-guardedfolderslist) 構成サービス プロバイダー (CSP) を使用します。
+アプリが保護されたフォルダーに変更を加えるのを許可するには、. [/Vendor/MSFT/Policy/Config/Defender/GuardedFoldersList](/windows/client-management/mdm/policy-csp-defender#defender-guardedfolderslist) 構成サービス プロバイダー (CSP) を使用します。
 
 ## <a name="allow-specific-apps-to-make-changes-to-controlled-folders"></a>特定のアプリが管理フォルダーに変更を加えるのを許可する
 
@@ -128,20 +128,20 @@ ms.locfileid: "61218600"
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して **、Exploit** Guard Windowsフォルダー アクセスMicrosoft Defender ウイルス対策Windows Defender \>  \> **コンポーネント** \> **を展開します**。
+3. ツリーを展開して **、Exploit Guard Windowsフォルダー アクセスMicrosoft Defender ウイルス対策** \> **Windows Defender** \> **コンポーネント** \> **を展開します**。
 
 4. [許可されたアプリケーションの **構成] 設定をダブルクリック** し、オプションを [有効] に **設定します**。 [表示 **] を** 選択し、各アプリを入力します。
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>PowerShell を使用して特定のアプリを許可する
 
-1. **[PowerShell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します。**
+1. [**PowerShell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します。**
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessAllowedApplications "<the app that should be allowed, including the path>"
     ```
 
-    たとえば *、C:\apps* フォルダーtest.exe実行可能ファイルを追加するには、コマンドレットは次のようになります。
+    たとえば、C *:\apps* フォルダー ** test.exe実行可能ファイルを追加するには、コマンドレットは次のようになります。
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessAllowedApplications "c:\apps\test.exe"
@@ -152,11 +152,11 @@ ms.locfileid: "61218600"
    :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="アプリを許可する PowerShell コマンドレット。":::
 
 > [!IMPORTANT]
-> リスト `Add-MpPreference` にアプリを追加または追加する場合に使用します。 コマンドレットを `Set-MpPreference` 使用すると、既存のリストが上書きされます。
+> リスト `Add-MpPreference` にアプリを追加または追加する場合に使用します。 コマンドレットを使用 `Set-MpPreference` すると、既存のリストが上書きされます。
 
 ### <a name="use-mdm-csps-to-allow-specific-apps"></a>MDM CSP を使用して特定のアプリを許可する
 
-アプリが保護されたフォルダーを変更するには [、./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) 構成サービス プロバイダー (CSP) を使用します。
+アプリが保護されたフォルダーを変更するには、. [/Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) 構成サービス プロバイダー (CSP) を使用します。
 
 ## <a name="allow-signed-executable-files-to-access-protected-folders"></a>署名された実行可能ファイルに保護されたフォルダーへのアクセスを許可する
 
@@ -167,7 +167,7 @@ Microsoft Defender for Endpoint 証明書とファイル インジケーター�
 
 ## <a name="customize-the-notification"></a>通知をカスタマイズする
 
-ルールがトリガーされ、アプリまたはファイルをブロックするときに通知をカスタマイズする方法の詳細については、「Configure alert [notification in Microsoft Defender for Endpoint」を参照してください](configure-email-notifications.md)。
+ルールがトリガーされ、アプリまたはファイルをブロックするときに通知をカスタマイズする方法の詳細については、「Configure alert [notifications in Microsoft Defender for Endpoint」を参照してください](configure-email-notifications.md)。
 
 ## <a name="see-also"></a>関連項目
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6bce3370c5b59a6c120b810446bf16cd5364634
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: ce7eab7648285cb671ed5657e16516f5c1ed235c
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244717"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321977"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -63,7 +63,7 @@ ms.locfileid: "62244717"
 
 タグを追加または管理して、論理グループ所属を作成します。 デバイス タグはネットワークの適切なマッピングをサポートし、さまざまなタグを添付してコンテキストをキャプチャし、インシデントの一部として動的リストを作成できるようにします。
 
-デバイスタグ付けの詳細については、「デバイス タグの作成と [管理」を参照してください](machine-tags.md)。
+デバイスタグ付けの詳細については、「デバイス タグの作成 [と管理」を参照してください](machine-tags.md)。
 
 ## <a name="initiate-automated-investigation"></a>自動調査の開始
 
@@ -77,7 +77,7 @@ ms.locfileid: "62244717"
 
 ライブ応答は、法医学データの収集、スクリプトの実行、分析のための疑わしいエンティティの送信、脅威の修復、および新たな脅威の予防的な捜しを可能にすることで、調査を強化するように設計されています。
 
-ライブ応答の詳細については、「ライブ応答を使用 [してデバイス上のエンティティを調査する」を参照してください](live-response.md)。
+ライブ応答の詳細については、「ライブ応答を使用してデバイス [上のエンティティを調査する」を参照してください](live-response.md)。
 
 ## <a name="collect-investigation-package-from-devices"></a>デバイスから調査パッケージを収集する
 
@@ -112,9 +112,9 @@ ms.locfileid: "62244717"
 |フォルダー|説明|
 |---|---|
 |自動実行|デバイス上での攻撃者の永続性を識別するために、既知の自動開始エントリ ポイント (ASEP) のレジストリの内容を表す一連のファイルが格納されています。 <p> <div class="alert"><b>注:</b> レジストリ キーが見つからない場合、ファイルには次のメッセージが含まれます。"ERROR: システムは、指定されたレジストリ キーまたは値を見つかりませんでした。<div>|
-|インストールされているプログラム|この.CSVファイルには、デバイスに現在インストールされているプログラムを特定するのに役立つインストール済みプログラムの一覧が含まれている。 詳細については、「Win32_Product [クラス」を参照してください](https://go.microsoft.com/fwlink/?linkid=841509)。|
-|ネットワーク接続|このフォルダーには、疑わしい URL への接続、攻撃者のコマンドと制御 (C&C) インフラストラクチャ、任意の横方向の移動、またはリモート接続への接続を識別するのに役立つ接続情報に関連する一連のデータ ポイントが格納されています。 <ul><li>ActiveNetConnections.txt: プロトコル統計と現在の TCP/IP ネットワーク接続を表示します。 プロセスによって行われた疑わしい接続を探す機能を提供します。</li><li>Arp.txt: すべてのインターフェイスの現在のアドレス解決プロトコル (ARP) キャッシュ テーブルを表示します。 ARP キャッシュでは、ネットワーク上の他のホストが、内部攻撃の実行に使用された可能性があるネットワーク上の侵害または疑わしいシステムを明らかにできます。</il><li>DnsCache.txt: ローカル Hosts ファイルから事前に読み込まれるエントリと、コンピューターによって解決された名前クエリの最近取得したリソース レコードの両方を含む、DNS クライアント リゾルバー キャッシュの内容を表示します。 これは、疑わしい接続を識別するのに役立ちます。</li><li>IpConfig.txt: すべてのアダプターの TCP/IP 構成全体を表示します。 アダプターは、インストールされているネットワーク アダプターなどの物理インターフェイス、またはダイヤルアップ接続などの論理インターフェイスを表します。</li><li>FirewallExecutionLog.txt pfirewall.log</li></ul><p><div class="alert"><b>注:</b> pfirewall.log ファイルは %windir%\system32\logfiles\firewall\pfirewall.log に存在する必要があります。そのため、調査パッケージに含まれます。 ファイアウォール ログ ファイルの作成の詳細については、「高度なセキュリティ ログを使用してファイアウォール[Windows Defender構成する」を参照してください。](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
-|プリフェッチ ファイル|Windowsプリフェッチ ファイルは、アプリケーションの起動プロセスを高速化するように設計されています。 システムで最近使用されたファイルを追跡し、削除された可能性があるがプリフェッチ ファイルの一覧に残っている可能性があるアプリケーションのトレースを検索するために使用できます。 <ul><li>Prefetch フォルダー: からプリフェッチ ファイルのコピーが含まれる `%SystemRoot%\Prefetch` 。 注: プリフェッチ ファイルを表示するには、プリフェッチ ファイル ビューアーをダウンロードしてください。</li><li>PrefetchFilesList.txt: プリフェッチ フォルダーにコピーエラーが発生した場合に追跡するために使用できる、コピーされたファイルの一覧が含まれる。</li></ul>|
+|インストールされているプログラム|この.CSVファイルには、デバイスに現在インストールされているプログラムを特定するのに役立つインストール済みプログラムの一覧が含まれている。 詳細については、「Win32_Product [」を参照してください](https://go.microsoft.com/fwlink/?linkid=841509)。|
+|ネットワーク接続|このフォルダーには、疑わしい URL への接続、攻撃者のコマンドと制御 (C&C) インフラストラクチャ、任意の横方向の移動、またはリモート接続への接続を識別するのに役立つ接続情報に関連する一連のデータ ポイントが格納されています。 <ul><li>ActiveNetConnections.txt: プロトコル統計と現在の TCP/IP ネットワーク接続を表示します。 プロセスによって行われた疑わしい接続を探す機能を提供します。</li><li>Arp.txt: すべてのインターフェイスの現在のアドレス解決プロトコル (ARP) キャッシュ テーブルを表示します。 ARP キャッシュでは、ネットワーク上の他のホストが、内部攻撃の実行に使用された可能性があるネットワーク上の侵害または疑わしいシステムを明らかにできます。</il><li>DnsCache.txt: ローカル Hosts ファイルから事前に読み込まれるエントリと、コンピューターによって解決された名前クエリの最近取得したリソース レコードの両方を含む、DNS クライアント リゾルバー キャッシュの内容を表示します。 これは、疑わしい接続を識別するのに役立ちます。</li><li>IpConfig.txt: すべてのアダプターの TCP/IP 構成全体を表示します。 アダプターは、インストールされているネットワーク アダプターなどの物理インターフェイス、またはダイヤルアップ接続などの論理インターフェイスを表します。</li><li>FirewallExecutionLog.txt pfirewall.log</li></ul><p><div class="alert"><b>注:</b> pfirewall.log ファイルは %windir%\system32\logfiles\firewall\pfirewall.log に存在する必要があります。そのため、調査パッケージに含まれます。 ファイアウォール ログ ファイルの作成の詳細については、「Advanced Security Log を使用してファイアウォール[Windows Defender構成する」を参照してください。](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
+|プリフェッチ ファイル|Windowsプリフェッチ ファイルは、アプリケーションの起動プロセスを高速化するように設計されています。 システムで最近使用されたファイルを追跡し、削除された可能性があるがプリフェッチ ファイルの一覧に残っている可能性があるアプリケーションのトレースを検索するために使用できます。 <ul><li>Prefetch フォルダー: からプリフェッチ ファイルのコピーが含まれる `%SystemRoot%\Prefetch`。 注: プリフェッチ ファイルを表示するには、プリフェッチ ファイル ビューアーをダウンロードしてください。</li><li>PrefetchFilesList.txt: プリフェッチ フォルダーにコピーエラーが発生した場合に追跡するために使用できる、コピーされたファイルの一覧が含まれる。</li></ul>|
 |プロセス|実行中のプロセス.CSVファイルを含み、デバイスで実行中の現在のプロセスを識別する機能を提供します。 これは、疑わしいプロセスとその状態を識別する場合に役立ちます。|
 |スケジュールされたタスク|スケジュールされたタスク.CSVファイルが含まれています。これは、選択したデバイスで自動的に実行されるルーチンを識別して、自動的に実行するために設定された疑わしいコードを検索するために使用できます。|
 |セキュリティ イベント ログ|ログインまたはログアウトアクティビティのレコード、またはシステムの監査ポリシーで指定された他のセキュリティ関連イベントを含むセキュリティ イベント ログが含まれます。 <p><div class="alert"><b>注:</b> イベント ビューアーを使用してイベント ログ ファイルを開きます。</div>|
@@ -133,9 +133,9 @@ ms.locfileid: "62244717"
 
 >[!IMPORTANT]
 >- このアクションは、macOS および Linux では現在サポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答を使用してデバイス [上のエンティティを調査する」を参照してください。](live-response.md)
->- Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
+>- Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性に[関するMicrosoft Defender ウイルス対策参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide)。
 
-[ウイルス対策スキャンの **実行**] を選択した 1 つは、実行するスキャンの種類 (クイックまたはフル) を選択し、コメントを追加してからスキャンを確認します。
+[ウイルス対策スキャンの実行] を選択し、実行するスキャンの種類 (クイックまたはフル) を選択し、コメントを追加してからスキャンを確認します。
 
 ![クイック スキャンまたはフル スキャンを選択してコメントを追加する通知の画像。](images/run-antivirus.png)
 
@@ -146,7 +146,7 @@ ms.locfileid: "62244717"
 >
 > ScanAvgCPULoadFactor が構成されていない場合、既定値はスキャン中の最大 CPU 負荷の 50% の制限です。
 >
-> 詳細については [、「configure-advanced-scan-types-microsoft-defender-antivirus」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)。
+> 詳細については、「 [configure-advanced-scan-types-microsoft-defender-antivirus」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)。
 
 ## <a name="restrict-app-execution"></a>アプリの実行を制限する
 
@@ -160,9 +160,9 @@ ms.locfileid: "62244717"
 アプリケーションの実行を制限するために、Microsoft 発行の証明書によって署名されている場合にのみファイルを実行できるコード整合性ポリシーが適用されます。 この制限方法は、攻撃者が侵害されたデバイスを制御し、さらに悪意のあるアクティビティを実行するのを防ぐのに役立ちます。
 
 > [!NOTE]
-> アプリケーションの制限をいつでも実行から取り消す事が可能です。 デバイス ページのボタンが [アプリの制限の削除] に変わります。その後、アプリの実行を制限する手順と同じ手順を実行します。
+> アプリケーションの制限をいつでも実行から取り消す事が可能です。 デバイス ページのボタンが [アプリの制限を削除する] と表示され、アプリの実行を制限するのと同じ手順を実行します。
 
-デバイス ページで [ **アプリの実行** を制限する] を選択したら、コメントを入力し、[確認] を **選択します**。 アクション センターにスキャン情報が表示され、デバイスのタイムラインに新しいイベントが含まれます。
+デバイス ページで [ **アプリの実行** を制限する] を選択したら、コメントを入力し、[確認] を選択 **します**。 アクション センターにスキャン情報が表示され、デバイスのタイムラインに新しいイベントが含まれます。
 
 ![アプリ制限通知の画像。](images/restrict-app-execution.png)
 
@@ -192,7 +192,7 @@ ms.locfileid: "62244717"
 > [!NOTE]
 > いつでもデバイスをネットワークに再接続できます。 デバイス ページのボタンが [分離から解放] と表示され、デバイスを分離するのと同じ手順を実行します。
 
-デバイス ページで [ **デバイスの分離** ] を選択したら、コメントを入力し、[確認] を **選択します**。 アクション センターにスキャン情報が表示され、デバイスのタイムラインに新しいイベントが含まれます。
+デバイス ページで [ **デバイスの分離** ] を選択したら、コメントを入力し、[確認] を選択 **します**。 アクション センターにスキャン情報が表示され、デバイスのタイムラインに新しいイベントが含まれます。
 
 ![分離デバイスのイメージ。](images/isolate-device.png)
 

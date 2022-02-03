@@ -13,13 +13,14 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 2db9df56a858bd069141c2c9389cf232b7feee7c
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.collection: m365solution-scenario
+ms.date: ''
+ms.openlocfilehash: 98c97afb34518f32e4d8a5da03ad35d99e5494cd
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320745"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320801"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 
@@ -35,13 +36,13 @@ ms.locfileid: "61320745"
 この記事は、機能を有効にし、テスト サイトに案内することで、ネットワーク保護を評価するのに役立ちます。 この評価記事のサイトは悪意のあるものではない。 悪意のあるふりをする特別に作成された Web サイトです。 サイトは、ユーザーが悪意のあるサイトまたはドメインにアクセスした場合に発生する動作をレプリケートします。
 
 > [!TIP]
-> また、Microsoft Defender のデモ シナリオ Web サイトを [参照して](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 、demo.wd.microsoft.com の保護機能がどのように機能するのか確認することもできます。
+> また、Microsoft Defender のデモ シナリオ Web サイトを [参照して、](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) demo.wd.microsoft.com の保護機能がどのように機能するのか確認することもできます。
 
 ## <a name="enable-network-protection-in-audit-mode"></a>監査モードでネットワーク保護を有効にする
 
 監査モードでネットワーク保護を有効にして、ブロックされた IP アドレスとドメインを確認します。 業務用アプリに影響を与えなかったり、ブロックが発生する頻度を確認できます。
 
-1. **[powershell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します。**
+1. [**powershell]** と入力スタート メニューを右クリックし、[管理者 **Windows PowerShell****実行] を選択します。**
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
@@ -59,7 +60,7 @@ ms.locfileid: "61320745"
     ![[接続がブロックされました] という通知の例: IT 管理者が、このネットワークWindows セキュリティをブロックする原因になります。 IT ヘルプ デスクにお問い合わせください。](images/np-notif.png)
 
 > [!NOTE]
-> ネットワーク保護によってサイトがブロックされている場合でも、ネットワーク接続は成功する可能性があります。 詳細については、「ネットワーク保護 [」および「TCP 3 ウェイ ハンドシェイク」を参照してください](network-protection.md#network-protection-and-the-tcp-three-way-handshake)。
+> ネットワーク保護によってサイトがブロックされている場合でも、ネットワーク接続は成功する可能性があります。 詳細については、「ネットワーク保護 [と TCP 3 ウェイ ハンドシェイク」を参照してください](network-protection.md#network-protection-and-the-tcp-three-way-handshake)。
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>イベント ビューアーでネットワーク保護イベントWindows確認する
 

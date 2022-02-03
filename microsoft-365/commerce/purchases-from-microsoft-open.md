@@ -18,44 +18,44 @@ ms.custom:
 - commerce_purchase
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: ビジネス サブスクリプションのライセンスをアクティブ化、更新、または追加する方法Microsoft 365確認します。
+description: ビジネス サブスクリプションのライセンスをアクティブ化、更新、またはMicrosoft 365する方法について学習します。
 ms.date: 10/21/2020
-ms.openlocfilehash: f5192454ad202fb5ca79c018fb7e90271d06e32c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a967bd1cebdf33850d632779835f97d6fac4cbf0
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370394"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321533"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Microsoft Open から購入したプロダクト キーを入力する
 
-[Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=613298)Open License Program からMicrosoft 365を購入した場合、この記事はユーザー向けです。 プロダクト キーを購入したボリューム ライセンスのお客様は、このトピックに従ってサブスクリプションのアクティブ化、更新、またはライセンスの追加を行うことができます。
+Microsoft Open License program からMicrosoft 365を購入した場合、この[](https://go.microsoft.com/fwlink/p/?LinkID=613298)記事はユーザー向けです。 プロダクト キーを購入したボリューム ライセンスのお客様は、このトピックに従ってサブスクリプションのアクティブ化、更新、またはライセンスの追加を行うことができます。
   
- **すぐにヘルプが必要ですか?**[Microsoft サポートを呼び出します](../admin/get-help-support.md)。 
+ **すぐにヘルプが必要な場合** [Microsoft サポートに問い合わせください](../admin/get-help-support.md)。
   
  **他のヘルプが必要な場合**
- 
- **ホームまたは個人用のMicrosoft 365については、「製品** キーを使用してユーザーを使用する」[をOffice。](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)
+
+ **[ホーム] または [Microsoft 365] のヘルプについては、「** 製品キーを使用した製品キーの使用」を [参照](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759)Office。
   
- **小売店から購入Microsoft 365 Business Standardの** ヘルプについては、「小売店から購入したプロダクト キーを [入力する」を参照してください](enter-your-product-key.md)。 
+ **小売店から購入Microsoft 365 Business Standardについては**、「小売店から購入したプロダクト キーを入力する [」を参照してください](enter-your-product-key.md)。
   
 ## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a>Microsoft Open から購入したサブスクリプションのアクティブ化、更新、またはライセンスの追加を行う
 
 Microsoft Open ライセンス Microsoft 365からライセンスを購入した場合、サブスクリプションにライセンスをアクティブ化、更新、または追加するときに、システムが自動的にキーを入力します。
   
-1. パートナーからキーを購入したMicrosoft 365、ライセンス認証リンクを含む Microsoft からの電子メールを受信トレイで確認します。
-    
+1. Microsoft 365 パートナーからキーを購入した後で、受信トレイをチェックして、アクティブ化に必要なリンクが含まれたメールが Microsoft から届いていることを確認してください。
+
     > [!TIP]
     >  このメールは、ボリューム ライセンス契約にオンライン管理者として記載された人に送信されます。誰がオンライン管理者として指定されているのかがわからない場合は、Microsoft 365 パートナーにお問い合わせください。 
   
-2. 電子メールのリンクに従って、仕事または学校のアカウントでサインインし、Open License Agreement に同意し、サブスクリプションを更新します。 ステップ バイ ステップのチュートリアルでは、新しいサブスクリプションのアクティブ化、既存のサブスクリプションの更新、または既存のサブスクリプションへのライセンスの追加方法について説明する PDF ガイド「Activate [Online Services: Microsoft 365 Subscription」](https://go.microsoft.com/fwlink/p/?LinkId=618100)をダウンロードします。
-    
+2. 電子メールのリンクに従って、仕事または学校のアカウントでサインインし、Open License Agreement に同意し、サブスクリプションを更新します。 詳細なチュートリアルについては、新しいサブスクリプションのアクティブ化、既存のサブスクリプションの更新、または既存のサブスクリプションへのライセンスの追加方法を説明する PDF ガイド「Activate [Online Services: Microsoft 365 Subscription](https://go.microsoft.com/fwlink/p/?LinkId=618100)」をダウンロードします。
+
 > [!NOTE]
-> ボリューム ライセンスのお客様は、[ボリューム ライセンス サービス センター](https://go.microsoft.com/fwlink/p/?LinkID=282016)で、サブスクリプションをアクティブ化することもできます。 アクティブ化の方法については、PDF ガイド『[ボリューム ライセンス サービス センターで Online Service をアクティブ化する](https://go.microsoft.com/fwlink/p/?LinkId=618096)』をダウンロードして参照してください。 
+> ボリューム ライセンスのお客様は、[ボリューム ライセンス サービス センター](https://go.microsoft.com/fwlink/p/?LinkID=282016)で、サブスクリプションをアクティブ化することもできます。 アクティブ化の方法については、PDF ガイド『[ボリューム ライセンス サービス センターで Online Service をアクティブ化する](https://go.microsoft.com/fwlink/p/?LinkId=618096)』をダウンロードして参照してください。
   
 ## <a name="whats-next"></a>次の手順
 
-ビジネス向けサービスをMicrosoft 365する場合は、組織のMicrosoft 365[を確認してください](../admin/setup/setup.md)。
+ビジネス向けサービスをMicrosoft 365する場合は、組織のMicrosoft 365[を設定する方法について学習します](../admin/setup/setup.md)。
   
 ## <a name="still-having-trouble-with-product-keys"></a>プロダクト キーの問題が解決しない場合
 
@@ -65,4 +65,4 @@ Microsoft Open ライセンス Microsoft 365からライセンスを購入した
   
 ボリューム ライセンスのお客様は、「[Microsoft ボリューム ライセンス サービス センターのトレーニングおよびリソース](https://go.microsoft.com/fwlink/p/?LinkId=618103)」を参照してください。
   
-または、ユーザーと話をする場合は [、Microsoft サポートに電話してください](../admin/get-help-support.md)。
+または、ユーザーと話をする場合は、 [Microsoft サポートに電話してください](../admin/get-help-support.md)。

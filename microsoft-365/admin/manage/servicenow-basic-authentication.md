@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: f23ea7e941bd8c56815791fe3ed86e38efcf9a79
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: cf9b5149847b51d9d701a49e32624ada3f708a17
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62294929"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321485"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>ServiceNow とのサポート統合を構成する - 基本認証
 
@@ -115,7 +115,6 @@ ms.locfileid: "62294929"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="グラフィカル ユーザー インターフェイス、テーブルの説明が自動的に生成される":::
 
-
 1. \[ServiceNow Admin 統合ワークフロー\]を開 **Microsoft 365サポート &gt; セットアップ** に移動します。
 
     > [!NOTE]
@@ -130,10 +129,7 @@ ms.locfileid: "62294929"
 1. \[ServiceNow Admin\] 環境とセットアップの種類を構成します。
 
     このインストールがテスト環境にインストールされている場合は、[これはテスト環境です] オプションを選択します。 セットアップ後にこのオプションをすばやく無効にし、すべてのテストを後で完了できます。
-    インスタンスで受信接続の基本認証が許可されている場合は、[はい] を選択します。それ以外の場合は、[高度なセットアップと接続] [AAD。](servicenow-aad-oauth-token.md)
-
- :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
-
+    インスタンスで受信接続の基本認証が許可されている場合は、[はい] を選択します。それ以外の場合は、[高度なセットアップと接続] [AAD。](servicenow-aad-oauth-token.md) :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 1. \[ServiceNow Admin\] テナント ドメインMicrosoft 365入力します。
 
@@ -143,6 +139,7 @@ ms.locfileid: "62294929"
     1. アプリのAzure Active Directory (AAD) を登録します。
     1. [前提条件] セクションの手順を完了したら、[完了] をクリック **します**。 それ以外の場合は、ウィザードの指示に従って、アプリケーションに必要なアプリケーション登録を作成AAD。
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-4.png" lightbox="../../media/ServiceNow-guide/snowbasic-4.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+
     1. ServiceNow OAuth アプリを登録します。
     1. [前提条件] セクションの手順を完了したら、新しく作成した OAuth アプリケーションの登録を選択し、[次へ] をクリックします。 それ以外の場合は、手順に従って ServiceNow でエンティティを作成し、新しいアプリケーション登録を選択します。
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-5.png" lightbox="../../media/ServiceNow-guide/snowbasic-5.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
@@ -150,10 +147,14 @@ ms.locfileid: "62294929"
 1. \[ServiceNow Admin 受信\] 設定を構成します。
     1. 受信 OAuth API エンドポイントを構成します。
     1. [前提条件] セクションの手順を完了したら、新しく作成した OAuth アプリケーションの登録を選択し、[完了] をクリックします。 それ以外の場合は、指示に従ってエンティティを作成し、新しい REST エンドポイント登録を選択します。
+     
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-6.png" lightbox="../../media/ServiceNow-guide/snowbasic-6.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+
     1. 統合ユーザーを構成します。
     1. [前提条件] セクションの手順を完了したら、新しく作成した統合ユーザーを選択し、[次へ] をクリックします。 それ以外の場合は、手順に従って ServiceNow でエンティティを作成し、新しい統合ユーザーを選択します。
+    
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-7.png" lightbox="../../media/ServiceNow-guide/snowbasic-7.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+
 
 1. \[Microsoft 365テナント管理者\]ポータルの統合をMicrosoft 365 管理します。
 

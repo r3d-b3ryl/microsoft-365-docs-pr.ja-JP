@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 45bd61d9eed192977485792d72eb9783c71420b8
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: b0d179a412a2e0470db844a7e9b422c8ae89db34
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242061"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320681"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -287,9 +287,6 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 
 ## <a name="adaptive-or-static-policy-scopes-for-retention"></a>保持のためのアダプティブ ポリシー スコープまたは静的ポリシー スコープ
 
-> [!NOTE]
-> 新しい機能としてのアダプティブ スコープは現在プレビュー段階であり、変更される可能性があります。 代替オプションは静的スコープであり、アダプティブ スコープが導入される前と同じ動作を提供し、アダプティブ スコープがビジネス要件を満たしていない場合に使用できます。
-
 保持ポリシーまたは保持ラベル ポリシーを作成する場合、ポリシーのスコープを定義するには、アダプティブ ポリシーと静的ポリシーの間で選択する必要があります。
 
 - **アダプティブ スコープ** は、指定したクエリを使用します。そのため、メンバーシップは静的ではなく、選択した場所に指定した属性またはプロパティに対して毎日実行することで動的になります。 1 つのポリシーで複数のアダプティブ スコープを使用できます。
@@ -330,9 +327,6 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 > 現時点では、アダプティブ スコープでは [保持ポリシーと保持ラベル ポリシーを制限するための保管ロック](#use-preservation-lock-to-restrict-changes-to-policies)をサポートしていません。
 
 ## <a name="policy-lookup"></a>ポリシー検索
-
-> [!NOTE]
-> ポリシー検索は現在プレビュー段階であり、変更される可能性があります。
 
 Microsoft 365 の場所に対して複数の保持ポリシーと、発行または自動適用する複数の保持ラベル ポリシーを構成できます。 特定のユーザー、サイト、および Microsoft 365 グループに割り当てられている保持のポリシーを検索するには、Microsoft 365 コンプライアンス センターの **[情報ガバナンス]** から **[ポリシー検索]** を使用します:
 

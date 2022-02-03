@@ -22,18 +22,18 @@ ms.custom:
 - AdminTemplateSet
 description: 販売店から Microsoft 365 Business Standard 購入した場合は、プロダクト キーを引き換え、サブスクリプションをアクティブ化する方法を説明します。
 ms.date: 11/13/2020
-ms.openlocfilehash: 149fd15529937d3d8301b90ccfeefcd3e76664e0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c45a605346945c1056d708a238b3247c360b70d8
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370106"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322145"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクト キーを入力する
 
 小売店から Microsoft 365 Business Standard を購入した場合、この記事はサブスクリプションのライセンス認証を行うのに役立ちます。
   
- **他にヘルプが必要な場合**、**Microsoft 365 Family または Microsoft 365 Personal のヘルプについては**、「[Office でのプロダクト キーを使用する](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)」を参照してください。  
+ **他にヘルプが必要な場合**、**Microsoft 365 Family または Microsoft 365 Personal のヘルプについては**、「[Office でのプロダクト キーを使用する](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759)」を参照してください。  
  **ボリューム ライセンスをお持ちの場合**、[Microsoft Open ライセンス プログラム](https://go.microsoft.com/fwlink/p/?LinkID=613298)を利用して一般法人向け Microsoft 365 を購入した場合、「[Microsoft Open から購入したプロダクト キーを入力する](purchases-from-microsoft-open.md)」 を参照してください。
   
 ## <a name="activate-a-new-subscription"></a>新しいサブスクリプションのライセンス認証

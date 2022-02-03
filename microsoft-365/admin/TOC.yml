@@ -326,7 +326,7 @@
               href: manage/servicenow-overview.md
             - name: 基本認証を構成する
               href: manage/servicenow-basic-authentication.md
-            - name: AAD OAuth トークンを使用して構成する
+            - name: Azure AD の認証トークンを使用して構成する
               href: manage/servicenow-aad-oauth-token.md
             - name: サービス正常性インシデントと推奨ソリューションのみ
               href: manage/servicenow-service-health-incidents-solutions-only.md

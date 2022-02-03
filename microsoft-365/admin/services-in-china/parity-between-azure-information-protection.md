@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 description: 21Vianet が運用する 21Vianet Office 365 Azure Information Protection (AIP) の詳細と、中国の顧客向け構成方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7d5faeef81c59e068a1a61272f267379b9ce23f3
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 44681286bce5e16a08f7400a2dbb083288a6f3b7
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401440"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321221"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet がOffice 365 Azure Information Protection のサポート
 
-この記事では、21Vianet と商用製品が運用する Office 365 の Azure Information Protection (AIP) サポートの違い、および AIP オンプレミス スキャナーのインストール方法やコンテンツ スキャン ジョブの管理方法など、中国のお客様向け AIP を構成するための具体的な手順について説明します。 &mdash;
+この記事では、21Vianet と商用製品が運用する Office 365 の Azure Information Protection (AIP) サポートの違い、および AIP オンプレミス スキャナーをインストールしてコンテンツ スキャン ジョブを管理する方法を含む中国の顧客向け AIP&mdash; を構成するための具体的な手順について説明します。
 
 ## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>21Vianet がOffice 365する AIP と商用サービスの違い
 
@@ -53,6 +53,10 @@ ms.locfileid: "61401440"
 
 - Azure ポータルの AIP 領域は、中国のお客様が利用できません。 コンテンツ [スキャン ジョブの](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) 管理や実行など、ポータルでアクションを実行する代わりに PowerShell コマンドを使用します。
 
+- 21Vianet Office 365のIP エンドポイントは、他のクラウド サービスに必要なエンドポイントとは異なります。 クライアントから次のエンドポイントへのネットワーク接続が必要です。
+    - ラベルポリシーとラベル ポリシーをダウンロードします。 `*.protection.partner.outlook.cn`
+    - Azure Rights Management サービス: `*.aadrm.cn`
+
 ## <a name="configure-aip-for-customers-in-china"></a>中国の顧客向け AIP の構成
 
 中国の顧客向け AIP を構成するには、次の手順を行います。
@@ -64,7 +68,7 @@ ms.locfileid: "61401440"
 
 1. [AIP 統合ラベル 付けクライアントをインストールして構成します](#step-4-install-and-configure-the-aip-unified-labeling-client)。
 
-1. [アプリで AIP アプリを構成Windows。](#step-5-configure-aip-apps-on-windows)
+1. [アプリで AIP アプリを構成Windows](#step-5-configure-aip-apps-on-windows)。
 
 1. [AIP オンプレミス スキャナーをインストールし、コンテンツ スキャン ジョブを管理します](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs)。 
 
@@ -75,26 +79,26 @@ ms.locfileid: "61401440"
 1. RMS が有効になっているか確認します。
 
     1. 管理者として PowerShell を起動します。
-    2. AIPService モジュールがインストールされていない場合は、実行します `Install-Module AipService` 。
-    3. を使用してモジュールをインポート `Import-Module AipService` します。
-    4. Connectを使用してサービスにアクセスします `Connect-AipService -environmentname azurechinacloud` 。
-    5. 状態 `(Get-AipServiceConfiguration).FunctionalState` が . `Enabled`
+    2. AIPService モジュールがインストールされていない場合は、実行します `Install-Module AipService`。
+    3. を使用してモジュールをインポートします `Import-Module AipService`。
+    4. Connectを使用してサービスにアクセスします`Connect-AipService -environmentname azurechinacloud`。
+    5. 状態が `(Get-AipServiceConfiguration).FunctionalState` .`Enabled`
 
-2. 機能状態がである場合は `Disabled` 、実行します `Enable-AipService` 。
+2. 機能状態がである場合は `Disabled`、実行します `Enable-AipService`。
 
 ### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>手順 2: 同期サービス Microsoft Information Protectionを追加する
 
-同期 **Microsoft Information Protectionサービス** プリンシパルは、Azure China テナントでは既定では使用できません。Azure Information Protection には必須です。 Azure Az PowerShell モジュールを使用して、このサービス プリンシパルを手動で作成します。
+同期 **Microsoft Information Protectionサービス** プリンシパルは、Azure China テナントでは既定では使用できません。Azure Information Protection に必要です。 Azure Az PowerShell モジュールを使用して、このサービス プリンシパルを手動で作成します。
 
-1. Azure Az モジュールがインストールされていない場合は、それをインストールするか、Azure Az モジュールがプレインストールされているリソース (Azure Cloud Shell など) [を使用します](/azure/cloud-shell/overview)。 詳細については [、「Azure Az PowerShell モジュールのインストール」を参照してください](/powershell/azure/install-az-ps)。
+1. Azure Az モジュールがインストールされていない場合は、それをインストールするか、Azure Az モジュールがプレインストールされているリソース (Azure Cloud Shell など) [を使用します](/azure/cloud-shell/overview)。 詳細については、「 [Azure Az PowerShell モジュールのインストール」を参照してください](/powershell/azure/install-az-ps)。
 
-1. Connect-AzAccount コマンドレットと[環境Connectを](/powershell/module/az.accounts/Connect-AzAccount)使用してサービスに `azurechinacloud` アクセスします。
+1. [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) コマンドレットと環境Connectを使用してサービスに`azurechinacloud`アクセスします。
 
     ```powershell
     Connect-azaccount -environmentname azurechinacloud
     ```
 
-1. [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal)コマンドレットと同期サービスのアプリケーション Microsoft Information Protection ID を使用して、Microsoft Information Protection Sync Service サービス プリンシパルを手動で `870c4f2e-85b6-4d43-bdda-6ed9a579b725` 作成します。
+1. [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) `870c4f2e-85b6-4d43-bdda-6ed9a579b725` コマンドレットと Microsoft Information Protection 同期サービスのアプリケーション ID を使用して、同期サービス Microsoft Information Protectionプリンシパルを作成します。 **Microsoft Information Protection**
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
@@ -106,15 +110,15 @@ ms.locfileid: "61401440"
 
 暗号化が正しく動作するにはOfficeクライアント アプリケーションは、サービスの中国インスタンスに接続し、そこからブートストラップする必要があります。 クライアント アプリケーションを適切なサービス インスタンスにリダイレクトするには、テナント管理者が Azure RMS URL に関する情報を含む DNS SRV レコードを構成する必要があります。 DNS SRV レコードがない場合、クライアント アプリケーションは既定でパブリック クラウド インスタンスへの接続を試み、失敗します。
 
-また、テナントが所有するドメイン (たとえば) に基づいてユーザー名を使用してログインし、ユーザー名 (たとえば) でログインしないという前提 `joe@contoso.cn` `onmschina` があります `joe@contoso.onmschina.cn` 。 ユーザー名のドメイン名は、正しいサービス インスタンスへの DNS リダイレクトに使用されます。
+また、テナントが所有するドメイン (たとえば) に基づいてユーザー名を使用してログインし、ユーザー名 (`joe@contoso.cn``onmschina`たとえば) でログインしないという前提があります`joe@contoso.onmschina.cn`。 ユーザー名のドメイン名は、正しいサービス インスタンスへの DNS リダイレクトに使用されます。
 
 #### <a name="configure-dns-encryption---windows"></a>DNS 暗号化の構成 - Windows
 
 1. RMS ID を取得します。
 
     1. 管理者として PowerShell を起動します。
-    2. AIPService モジュールがインストールされていない場合は、実行します `Install-Module AipService` 。
-    3. Connectを使用してサービスにアクセスします `Connect-AipService -environmentname azurechinacloud` 。
+    2. AIPService モジュールがインストールされていない場合は、実行します `Install-Module AipService`。
+    3. Connectを使用してサービスにアクセスします`Connect-AipService -environmentname azurechinacloud`。
     4. RMS `(Get-AipServiceConfiguration).RightsManagementServiceId` ID を取得するために実行します。
 
 2. DNS プロバイダーにログインし、ドメインの DNS 設定に移動し、新しい SRV レコードを追加します。
@@ -125,9 +129,9 @@ ms.locfileid: "61401440"
     - Target = `[GUID].rms.aadrm.cn` (GUID は RMS ID)
     - 優先度、重み、秒、TTL = 既定値
 
-3. Azure portal のテナントにカスタム ドメインを関連 [付ける](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)。 これにより、DNS のエントリが追加され、DNS 設定に値を追加した後に検証に数分かかる場合があります。
+3. Azure portal のテナントにカスタム ドメインを [関連付ける](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)。 これにより、DNS のエントリが追加され、DNS 設定に値を追加した後に検証に数分かかる場合があります。
 
-4. 対応するグローバル管理者資格情報Microsoft 365 管理センターにログインし、ユーザー作成用のドメイン (たとえば `contoso.cn` ) を追加します。 検証プロセスでは、追加の DNS 変更が必要になる場合があります。 検証が完了すると、ユーザーを作成できます。
+4. 対応するグローバル管理者資格情報をMicrosoft 365 管理センターにログインし、ユーザー作成用のドメイン (`contoso.cn`たとえば) を追加します。 検証プロセスでは、追加の DNS 変更が必要になる場合があります。 検証が完了すると、ユーザーを作成できます。
 
 #### <a name="configure-dns-encryption---mac-ios-android"></a>DNS 暗号化の構成 - Mac、iOS、Android
 
@@ -173,41 +177,41 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
 
 コンテンツ スキャン ジョブを構成および管理する場合は、商用サービスで使用される [Azure ポータル](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=azure-portal-only) インターフェイスの代わりに、次の手順を使用します。
 
-詳細については、「Azure Information Protection 統合ラベル スキャナーとは」および [「PowerShell](/azure/information-protection/deploy-aip-scanner) のみを使用してコンテンツ スキャン ジョブを管理する」 [を参照してください](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)。
+詳細については、「 [Azure Information Protection](/azure/information-protection/deploy-aip-scanner) 統合ラベル スキャナーとは」および「PowerShell のみを使用してコンテンツ スキャン ジョブを管理する」 [を参照してください](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)。
 
 **スキャナーをインストールして構成するには、次の手順を実行します**。
 
 1. スキャナーを実行するWindowsサーバー コンピューターにサインインします。 ローカル管理者権限を持ち、マスター データベースに書き込む権限を持つアカウントSQL Server使用します。
 
-1. PowerShell を閉じた状態で開始します。 以前に AIP クライアントとスキャナーをインストールした場合は **、AIPScanner** サービスが停止されていることを確認します。
+1. PowerShell を閉じた状態で開始します。 以前に AIP クライアントとスキャナーをインストールした場合は、 **AIPScanner** サービスが停止されていることを確認します。
 
-1. [管理者としてWindows PowerShell] オプションを使用して、**セッションを開** きます。
+1. [管理者としてWindows PowerShell] オプションを使用して **、セッションを開** きます。
 
-1. [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)コマンドレットを実行し、Azure Information Protection スキャナー用のデータベースを作成する SQL Server インスタンスと、スキャナー クラスターのわかりやすい名前を指定します。
+1. [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) コマンドレットを実行し、Azure Information Protection スキャナー用のデータベースを作成する SQL Server インスタンスと、スキャナー クラスターのわかりやすい名前を指定します。
 
     ```PowerShell
     Install-AIPScanner -SqlServerInstance <name> -Cluster <cluster name>
     ```
 
     > [!TIP]
-    > [Install-AIPScanner](/powershell/module/azureinformationprotection/install-aipscanner)コマンドで同じクラスター名を使用して、複数のスキャナー ノードを同じクラスターに関連付けできます。 複数のスキャナー ノードに同じクラスターを使用すると、複数のスキャナーを組み合わせてスキャンを実行できます。
+    > [Install-AIPScanner](/powershell/module/azureinformationprotection/install-aipscanner) コマンドで同じクラスター名を使用して、複数のスキャナー ノードを同じクラスターに関連付けできます。 複数のスキャナー ノードに同じクラスターを使用すると、複数のスキャナーを組み合わせてスキャンを実行できます。
     > 
 
-1. 管理ツール サービスを使用してサービスがインストール **されていることを確認**  >  **します**。
+1. 管理ツールサービスを使用してサービスがインストール **されていることを** > **確認します**。
 
     インストールされているサービスの名前は **Azure Information Protection Scanner** で、作成したスキャナー サービス アカウントを使用して実行するように構成されています。
 
 1. スキャナーで使用する Azure トークンを取得します。 このAzure ADを使用すると、スキャナーは Azure Information Protection サービスに対して認証を行い、スキャナーを非対話的に実行できます。 
 
-    1. Azure portal を開き、認証Azure ADアクセス トークンを指定するアプリケーションを作成します。 詳細については [、「Azure Information Protection 用に対話](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)的にファイルにラベルを付ける方法」を参照してください。
+    1. Azure portal を開き、認証Azure ADアクセス トークンを指定するアプリケーションを作成します。 詳細については、「 [Azure Information Protection 用に対話](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)的にファイルにラベルを付ける方法」を参照してください。
     
         > [!TIP]
-        > [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)コマンド用に Azure AD アプリケーションを作成および構成する場合、[API のアクセス許可の要求] ウィンドウには **、[Microsoft** API] タブではなく [組織で使用する **API]** タブが表示されます。組織が使用する API を選択し **、[Azure Rights Management Services]** を選択します。 
+        > [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) コマンド用に Azure AD アプリケーションを作成および構成する場合、[API アクセス許可の要求] ウィンドウには、[**Microsoft** API] タブの代わりに [組織で使用する **API**] タブが表示されます。組織で使用する API を選択し、[**Azure Rights Management Services**] を選択します。 
         >
 
     1. Windows サーバー コンピューターから、スキャナー サービス アカウントにインストールに対するローカルログオン権限が付与されている場合は、このアカウントでサインインし、PowerShell セッションを開始します。 
     
-        スキャナー サービス アカウントにインストールに対してローカルにログオンする権限を付与できない場合は [、「Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)用に対話的にファイルにラベルを付ける方法」の説明に従って [、Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)を使用して *OnBehalfOf* パラメーターを使用します。
+        スキャナー サービス アカウントにインストールに対してローカルにログオンする権限を付与できない場合は、「[Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection) 用に対話的にファイルにラベルを付ける方法」の説明に従って、[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) で *OnBehalfOf* パラメーターを使用します。
 
     1. [Set-AIPAuthentication を実行](/powershell/module/azureinformationprotection/set-aipauthentication)し、アプリケーションからコピーされた値Azure ADします。
 
@@ -215,7 +219,7 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
       Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>
       ```
 
-      例:
+      次に例を示します。
 
       ```PowerShell
       $pscreds = Get-Credential CONTOSO\scanner
@@ -225,15 +229,15 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
 
     これで、スキャナーに認証用のトークンがAzure AD。 このトークンは、Web アプリ **/API** クライアント シークレットの構成に従って、1 年、2 年、または 2 年間有効Azure AD。 トークンの有効期限が切れたら、この手順を繰り返す必要があります。
 
-1. [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration)コマンドレットを実行して、スキャナーをオフライン モードで機能に設定します。 次のコマンドを実行します。
+1. [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) コマンドレットを実行して、スキャナーをオフライン モードで機能に設定します。 次のコマンドを実行します。
 
     ```powershell
     Set-AIPScannerConfiguration -OnlineConfiguration Off
     ```
 
-1. [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob)コマンドレットを実行して、既定のコンテンツ スキャン ジョブを作成します。
+1. [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) コマンドレットを実行して、既定のコンテンツ スキャン ジョブを作成します。
 
-    **Set-AIPScannerContentScanJob** コマンドレットで必要なパラメーターは、強制 **のみです**。 ただし、この時点でコンテンツ スキャン ジョブの他の設定を定義することもできます。 例:
+    **Set-AIPScannerContentScanJob** コマンドレットで必要なパラメーターは、強制 **のみです**。 ただし、この時点でコンテンツ スキャン ジョブの他の設定を定義することもできます。 次に例を示します。
 
     ```powershell
     Set-AIPScannerContentScanJob -Schedule Manual -DiscoverInformationTypes PolicyOnly -Enforce Off -DefaultLabelType PolicyDefault -RelabelFiles Off -PreserveFileDetails On -IncludeFileTypes '' -ExcludeFileTypes '.msg,.tmp' -DefaultOwner <account running the scanner>
@@ -246,11 +250,11 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
     - 感度 *ラベル* 付けポリシーを適用しない
     - 感度ラベル付けポリシーに定義されている既定のラベルを使用して、コンテンツに基づいてファイルに自動的にラベルを付ける
     - ファイル *の* 再ラベル付けは許可しない
-    - 値によって変更された日付、最後に変更された日付、および変更を含む、スキャンと自動ラベル付け中にファイル *の詳細を保持* します
+    - 値によって変更、最後に変更、変更された日付を含む、スキャンと自動ラベル付け中にファイルの *詳細を保持* します
     - 実行中に .msg ファイルと .tmp ファイルを除外するスキャナーを設定します。
     - スキャナーの実行時に使用するアカウントに既定の所有者を設定します。
 
-1. [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository)コマンドレットを使用して、コンテンツ スキャン ジョブでスキャンするリポジトリを定義します。 たとえば、以下を実行します。
+1. [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) コマンドレットを使用して、コンテンツ スキャン ジョブでスキャンするリポジトリを定義します。 たとえば、以下を実行します。
 
     ```powershell
     Add-AIPScannerRepository -OverrideContentScanJob Off -Path 'c:\repoToScan'
@@ -258,8 +262,8 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
     
     追加するリポジトリの種類に応じて、次のいずれかの構文を使用します。
 
-    - ネットワーク共有の場合は、 を使用します `\\Server\Folder` 。
-    - ライブラリの場合SharePointを使用します `http://sharepoint.contoso.com/Shared%20Documents/Folder` 。
+    - ネットワーク共有の場合は、 を使用します `\\Server\Folder`。
+    - ライブラリの場合SharePointを使用します`http://sharepoint.contoso.com/Shared%20Documents/Folder`。
     - ローカル パスの場合: `C:\Folder`
     - UNC パスの場合: `\\Server\Folder`
 

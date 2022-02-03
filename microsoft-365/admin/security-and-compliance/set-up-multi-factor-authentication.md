@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 384e904a77b1582c65ef24c22fe2f96d2946c381
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 48145df8fbaf5b29774b493f8c408e3bf48cb1b6
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421164"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322398"
 ---
 # <a name="set-up-multifactor-authentication"></a>多要素認証を設定する
 
@@ -120,4 +120,4 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 
 [多要素認証を設定する](set-up-multi-factor-authentication.md) (ビデオ)
 
-[スマートフォンの多要素認証をオンにする](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (ビデオ)
+[スマートフォンの多要素認証を有効にする](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)

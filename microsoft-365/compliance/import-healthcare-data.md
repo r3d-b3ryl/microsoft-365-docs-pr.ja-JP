@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、電子医療記録 (EHR) データを医療システムから医療システムにインポートするデータ コネクタをMicrosoft 365。 これにより、インサイダー リスク管理ポリシーで EHR データを使用して、従業員による患者データへの不正アクセス アクティビティを検出できます。
-ms.openlocfilehash: d814a68e49db4e8a51ad7b9abd14911b5abedf84
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 1be80dea0bd5692f07edbe34df1bf61cd85f3337
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271708"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320693"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>ヘルスケア EHR 監査データをインポートするコネクタをセットアップする (プレビュー)
 
@@ -39,7 +39,7 @@ ms.locfileid: "62271708"
 
 ## <a name="before-you-set-up-the-connector"></a>コネクタをセットアップする前に
 
-- 手順 3 で Healthcare コネクタを作成するユーザーには、メールボックスインポートエクスポートの役割が割り当てられている必要Exchange Online。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、新しい役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「役割グループの[管理」の](\Exchange\permissions-exo\role-groups#create-role-groups)記事[](\Exchange\permissions-exo\role-groups#modify-role-groups)の「役割グループの作成」または「役割グループの変更」セクションExchange Online。
+- 手順 3 で Healthcare コネクタを作成するユーザーには、メールボックスインポートエクスポートの役割が割り当てられている必要Exchange Online。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、新しい役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「役割グループの[管理」の](/Exchange/permissions-exo/role-groups#create-role-groups)記事[](/Exchange/permissions-exo/role-groups#modify-role-groups)の「役割グループの作成」または「役割グループの変更」セクションExchange Online。
 
 - 組織のヘルスケア EHR システムから (日単位で) データを取得またはエクスポートする方法を決定し、手順 2 で説明するテキスト ファイルを作成する必要があります。 手順 4 で実行するスクリプトは、テキスト ファイル内のデータを API エンドポイントにプッシュします。
 
@@ -174,7 +174,7 @@ Healthcare コネクタをセットアップする最後の手順は、テキス
 アップロードが成功した場合、スクリプトは成功したメッセージアップロード **表示** します。
 
 > [!NOTE]
-> 実行ポリシーのために前のコマンドを実行する際に問題がある場合は、「実行[](\powershell\module\microsoft.powershell.core\about\about_execution_policies)ポリシーについて」および「[Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy)」を参照して、実行ポリシーの設定に関するガイダンスを参照してください。
+> 実行ポリシーのために前のコマンドを実行する際に問題がある場合は、「実行[](/powershell/module/microsoft.powershell.core/about/about_execution_policies)ポリシーについて」および「[Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)」を参照して、実行ポリシーの設定に関するガイダンスを参照してください。
 
 ## <a name="step-5-monitor-the-healthcare-connector"></a>手順 5: ヘルスケア コネクタを監視する
 

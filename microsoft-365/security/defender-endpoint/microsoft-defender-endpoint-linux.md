@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 28ab23e46c951cd0b8bcf357f2420c0ea0804abb
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 8b7b4ca9f93811f3a1e3e036b4cee620ae639e95
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214023"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322133"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -37,7 +37,7 @@ ms.locfileid: "62214023"
 このトピックでは、Linux 上で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
 > [!CAUTION]
-> 他のサード パーティ製エンドポイント保護製品を Microsoft Defender for Endpoint on Linux で実行すると、パフォーマンスの問題や予期しない副作用につながる可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、パッシブ モードで実行するウイルス対策機能を構成した後でも、Linux EDR の Defender for Endpoint[](linux-preferences.md#enforcement-level-for-antivirus-engine)機能を安全に利用できます。
+> 他のサード パーティ製エンドポイント保護製品を Microsoft Defender for Endpoint on Linux で実行すると、パフォーマンスの問題や予期しない副作用につながる可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、パッシブ モードで実行するウイルス対策機能を構成した後も、Linux EDR の Defender for Endpoint 機能を安全に利用できます。[](linux-preferences.md#enforcement-level-for-antivirus-engine)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Linux に Microsoft Defender for Endpoint をインストールする方法
 
@@ -49,7 +49,7 @@ ms.locfileid: "62214023"
 - デバイスの管理特権 (手動展開の場合)
 
 > [!NOTE]
-> Microsoft Defender for Endpoint on Linux エージェントは [OMS エージェントから独立しています](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint は、独自の独立したテレメトリ パイプラインに依存しています。
+> Microsoft Defender for Endpoint on Linux エージェントは [、OMS エージェントから独立しています](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint は、独自の独立したテレメトリ パイプラインに依存しています。
 
 
 ### <a name="installation-instructions"></a>インストール手順
@@ -58,7 +58,7 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 
 一般に、次の手順を実行する必要があります。
 
-- Microsoft Defender for Endpoint サブスクリプションを持ち、Microsoft Defender for Endpoint ポータルへのアクセス権を持 [っている必要があります](microsoft-defender-security-center.md)。
+- Microsoft Defender for Endpoint サブスクリプションを持ち、Microsoft Defender for Endpoint ポータルへのアクセス [権を持っている必要があります](microsoft-defender-security-center.md)。
 - 次のいずれかの展開方法を使用して、Microsoft Defender for Endpoint on Linux を展開します。
   - コマンド ライン ツール:
     - [手動展開](linux-install-manually.md)
@@ -67,7 +67,7 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
     - [Ansible 構成管理ツールを使用した展開](linux-install-with-ansible.md)
     - [Chef 構成管理ツールを使用した展開](linux-deploy-defender-for-endpoint-with-chef.md)
 
-インストールエラーが発生した場合は、「Microsoft Defender for Endpoint on Linux でのインストールエラーのトラブルシューティング [」を参照してください](linux-support-install.md)。
+インストールエラーが発生した場合は、「 [Microsoft Defender for Endpoint on Linux](linux-support-install.md)」の「インストールエラーのトラブルシューティング」を参照してください。
 
 > [!NOTE]
 > 既定のインストール パス以外の場所に Microsoft Defender for Endpoint をインストールする場合はサポートされていません。 
@@ -119,11 +119,11 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
     - カーネル `fanotify` オプションを有効にする必要があります
 
       > [!CAUTION]
-      > Linux で Defender for Endpoint を他のベースのセキュリティ ソリューションと並べて実行する `fanotify` 方法はサポートされていません。 オペレーティング システムのハングを含む予期しない結果につながる可能性があります。
+      > Linux で Defender for Endpoint を他のベースのセキュリティ ソリューション `fanotify`と並べて実行する方法はサポートされていません。 オペレーティング システムのハングを含む予期しない結果につながる可能性があります。
 
 - ディスク領域: 1 GB
 
-- /opt/microsoft/mdatp/sbin/wdavdaemon には実行可能なアクセス許可が必要です。 詳細については、「Microsoft Defender for Endpoint on Linux のインストールに関する問題のトラブルシューティング」の「デーモンに実行可能なアクセス許可が付与されている」 [を参照してください](/microsoft-365/security/defender-endpoint/linux-support-install)。
+- /opt/microsoft/mdatp/sbin/wdavdaemon には実行可能なアクセス許可が必要です。 詳細については、「 [Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-install) のインストールに関する問題のトラブルシューティング」の「デーモンに実行可能なアクセス許可が付与されている」を参照してください。
 
 - コア: 最小 2、4 優先
 
@@ -153,14 +153,14 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 
 サービスを有効にした後、ネットワークまたはファイアウォールを構成して、ネットワークとエンドポイント間の送信接続を許可する必要がある場合があります。
 
-- 監査フレームワーク ( `auditd` ) を有効にする必要があります。
+- 監査フレームワーク (`auditd`) を有効にする必要があります。
 
   > [!NOTE]
-  > 追加されたルールによってキャプチャされたシステム イベントは (s) に追加され、ホストの監査とアップストリーム コレクション `/etc/audit/rules.d/` `audit.log` に影響を与える可能性があります。 Microsoft Defender for Endpoint on Linux で追加されたイベントには、キーがタグ付け `mdatp` されます。
+  > 追加されたルールによってキャプチャ`/etc/audit/rules.d/``audit.log`されたシステム イベントは (s) に追加され、ホストの監査とアップストリーム コレクションに影響を与える可能性があります。 Microsoft Defender for Endpoint on Linux で追加されたイベントには、キーがタグ付け `mdatp` されます。
 
 ### <a name="configuring-exclusions"></a>除外の構成
 
-ユーザーに除外を追加Microsoft Defender ウイルス対策、ユーザーの一般的な除外の間違い[を念頭に置Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+ユーザーに除外を追加Microsoft Defender ウイルス対策、ユーザーの一般的な除外の間違いを[念頭に置Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>ネットワーク接続
 
@@ -170,13 +170,16 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 
 ****
 
-|ドメインリストのスプレッドシート|説明|
+
+|ドメインリストのスプレッドシート| 説明|
 |---|---|
-|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ。](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> ここにスプレッドシートを [ダウンロードします](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)。|
-|||
+|商用顧客向け Microsoft Defender for Endpoint URL リスト | 商用顧客向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Gov/GCC/DoD のお客様向け Microsoft Defender for Endpoint URL リスト| Gov/GCC/DoD のお客様向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|
+
 
 > [!NOTE]
-> より具体的な URL リストについては [、「Configure proxy and internet connectivity settings」を参照してください](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
+> より具体的な URL リストについては、「 [Configure proxy and internet connectivity settings」を参照してください](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
 
 Defender for Endpoint では、次の検出方法を使用してプロキシ サーバーを検出できます。
 
@@ -190,15 +193,15 @@ Defender for Endpoint では、次の検出方法を使用してプロキシ サ
 >
 > SSL 検査および代行受信プロキシも、セキュリティ上の理由からサポートされていません。 SSL インスペクションとプロキシ サーバーの例外を構成して、Defender for Endpoint on Linux のデータを、インターセプトなしで関連する URL に直接渡します。 インターセプト証明書をグローバル ストアに追加すると、傍受は許可されない。
 
-トラブルシューティング手順については、「Microsoft Defender for Endpoint on Linux のクラウド接続の問題のトラブルシューティング [」を参照してください](linux-support-connectivity.md)。
+トラブルシューティング手順については、「 [Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md) のクラウド接続の問題のトラブルシューティング」を参照してください。
 
 ## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender を更新する方法
 
-Microsoft は、パフォーマンス、セキュリティ、および新機能の提供を行うソフトウェア更新プログラムを定期的に発行しています。 Microsoft Defender for Endpoint on Linux を更新するには、「Linux での Microsoft Defender for Endpoint の [更新プログラムの展開」を参照してください](linux-updates.md)。
+Microsoft は、パフォーマンス、セキュリティ、および新機能の提供を行うソフトウェア更新プログラムを定期的に発行しています。 Microsoft Defender for Endpoint on Linux を更新するには、「 [Deploy updates for Microsoft Defender for Endpoint on Linux」を参照してください](linux-updates.md)。
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint の構成方法
 
-エンタープライズ環境で製品を構成する方法については、「Linux での Microsoft Defender for Endpoint の基本設定の設定 [」を参照してください](linux-preferences.md)。
+エンタープライズ環境で製品を構成する方法については、「 [Linux での Microsoft Defender for Endpoint の基本設定の設定」を参照してください](linux-preferences.md)。
 
 ## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>エンドポイント向け Microsoft Defender への一般的なアプリケーションは、影響を与える可能性があります
 
@@ -206,4 +209,4 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 ## <a name="resources"></a>リソース
 
-- ログ記録、アンインストール、その他のトピックの詳細については [、「Resources」を参照してください](linux-resources.md)。
+- ログ記録、アンインストール、その他のトピックの詳細については、「Resources」を参照 [してください](linux-resources.md)。

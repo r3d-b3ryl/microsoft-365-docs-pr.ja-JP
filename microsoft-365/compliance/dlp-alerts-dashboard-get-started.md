@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: データ損失防止ポリシーのアラートの定義と管理について説明します。
-ms.openlocfilehash: 3c177bc75ff0f5820a07609c04bb20851a70e52a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d295a04c27231b937ca552feb06628f857528e34
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933529"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321593"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>データ損失防止の警告ダッシュボードを開始する
 
-データ損失防止 (DLP) ポリシーは、機密アイテムの意図しない共有を防ぐための保護措置を取る場合があります。 機密性の高いアイテムに対してアクションが実行された場合は、DLP のアラートを構成することで通知を受け取る可能性があります。 この記事では、データ損失防止 (DLP) ポリシーにリンクされているリッチ アラート ポリシーを定義する方法について説明します。 DLP ポリシー違反のアラート、イベント、および関連するメタデータを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>表示するには、Microsoft 365 コンプライアンス センターで[DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)アラート管理ダッシュボードを使用する方法について説明します。
+データ損失防止 (DLP) ポリシーは、機密アイテムの意図しない共有を防ぐための保護措置を取る場合があります。 機密性の高いアイテムに対してアクションが実行された場合は、DLP のアラートを構成することで通知を受け取る可能性があります。 この記事では、データ損失防止 (DLP) ポリシーにリンクされているリッチ アラート ポリシーを定義する方法について説明します。 DLP ポリシー違反のアラート、イベント、および<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">関連</a>するメタデータを表示するには、Microsoft 365 コンプライアンス センターで [DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) アラート管理ダッシュボードを使用する方法が表示されます。
 
 DLP アラートを使用する場合は、「データ損失防止アラート ダッシュボードについて [」を確認する必要があります。](dlp-alerts-dashboard-learn.md)
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 
 開始する前に、必要な前提条件が満たされていることを確認してください。
 
@@ -44,9 +44,9 @@ DLP アラートを使用する場合は、「データ損失防止アラート 
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP アラート管理ダッシュボードのライセンス
 
-DLP の対象となるテナントOffice 365 DLP アラート管理ダッシュボードにアクセスできます。 開始するには、オンライン、オンライン、およびOffice 365の DLP のExchange Online対象SharePoint必要OneDrive for Business。 OFFICE 365 DLP のライセンス要件の詳細については、「どのライセンスがユーザーにサービスの恩恵を受ける権利を提供するか」[を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
+DLP の対象となるテナントOffice 365 DLP アラート管理ダッシュボードにアクセスできます。 開始するには、オンライン、オンライン、およびOffice 365の DLP のExchange Online対象SharePoint必要OneDrive for Business。 DLP のライセンス要件の詳細については、「Office 365サービスを利用する権限をユーザーに提供するライセンス」[を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
 
-Teams [DLP](dlp-microsoft-teams.md)の対象となるエンドポイント[DLP](endpoint-dlp-learn-about.md)を使用しているお客様は、DLP アラート管理ダッシュボードにエンドポイント DLP ポリシーアラートと Teams DLP ポリシーアラートを表示します。
+エンドポイント DLP の対象[となるエンドポイント DLP](endpoint-dlp-learn-about.md) をTeams[、DLP](dlp-microsoft-teams.md) アラート管理ダッシュボードにエンドポイント DLP ポリシー Teams情報漏えい対策ポリシーアラートが表示されます。
 
 コンテンツ **プレビュー機能は** 、次のライセンスでのみ使用できます。
 
@@ -58,7 +58,7 @@ Teams [DLP](dlp-microsoft-teams.md)の対象となるエンドポイント[DLP](
 
 ### <a name="licensing-for-alert-configuration-options"></a>アラート構成オプションのライセンス
 
-**単** 一イベントアラートの構成: E1、F1、または G1 サブスクリプションまたは E3 または G3 サブスクリプションを持つ組織は、アクティビティが発生する度にアラートがトリガーされる場合にのみアラート ポリシーを作成できます。
+**単** 一イベントアラートの構成: E1、F1、または G1 サブスクリプションまたは E3 または G3 サブスクリプションを持つ組織は、アクティビティが発生する度にアラートがトリガーされる場合にのみ、アラート ポリシーを作成できます。
 
 **集約アラート構成**: しきい値に基づいて集約アラート ポリシーを構成するには、次のいずれかのライセンス構成が必要です。
 
@@ -93,32 +93,35 @@ DLP アラート管理ダッシュボードにアクセスするには、次の�
 
 データ分類コンテンツ ビューアーの役割が事前に割り当てられている。
 
-### <a name="roles-and-role-groups-in-preview"></a>プレビューでの役割と役割グループ
+### <a name="roles-and-role-groups-in-preview"></a>プレビュー段階の [役割と役割グループ]
 
-プレビューには、アクセス制御を微調整するためにテストアウトできる役割と役割グループがあります。
+プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
 
-プレビューに含Microsoft Information Protection (MIP) ロールの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センターの役割 [」を&してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
-- 情報保護管理者
-- 情報保護アナリスト
-- 情報保護調査員
-- 情報保護リーダー
+- Information Protection 管理者
+- Information Protection アナリスト
+- Information Protection 調査員
+- Information Protection 閲覧者
 
-プレビュー中の MIP 役割グループの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センター」の「役割 [グループ&参照してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
 
 - 情報保護
-- 情報保護管理者
-- 情報保護アナリスト
-- 情報保護調査員
-- 情報保護リーダー
+- Information Protection レベル
+- Information Protection アナリスト
+- Information Protection 調査担当者
+- Information Protection 閲覧者
 
 ## <a name="dlp-alert-configuration"></a>DLP アラート構成
 
-DLP ポリシーでアラートを構成する方法については、「データ損失防止の開始場所」 [を参照してください](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention)。
+DLP ポリシーでアラートを構成する方法については、「データ損失防止の開始場所 [」を参照してください](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention)。
+
+> [!IMPORTANT]
+> 組織は、ログ保持ポリシーの構成を監査し、コンソールにアラートが表示される期間を制御します。 詳細については、「 [監査ログ保持ポリシーの管理](audit-log-retention-policies.md#manage-audit-log-retention-policies) 」を参照してください。
 
 ### <a name="aggregate-event-alert-configuration"></a>集計イベントアラートの構成
 
-組織に集約アラート構成オプションの[](#licensing-for-alert-configuration-options)ライセンスが設定されている場合は、DLP ポリシーを作成または編集するときにこれらのオプションが表示されます。
+組織に集約アラート構成オプションの[](#licensing-for-alert-configuration-options)ライセンスが適用されている場合は、DLP ポリシーを作成または編集するときにこれらのオプションが表示されます。
 
 :::image type="content" source="../media/incident-reports-options-aggregated-alerts.png" alt-text="集約されたアラート構成オプションの対象となるユーザーのインシデント レポートのオプションを示すスクリーンショット。" border="false":::
 
@@ -126,7 +129,7 @@ DLP ポリシーでアラートを構成する方法については、「デー�
 
 ### <a name="single-event-alert-configuration"></a>単一イベントアラートの構成
 
-組織に単一イベントアラート構成[](#licensing-for-alert-configuration-options)オプションのライセンスが適用されている場合は、DLP ポリシーを作成または編集するときにこれらのオプションが表示されます。 DLP ルールの一致が発生する度に発生するアラートを作成するには、このオプションを使用します。
+組織に単一イベント通知構成[](#licensing-for-alert-configuration-options)オプションのライセンスが適用されている場合は、DLP ポリシーを作成または編集するときにこれらのオプションが表示されます。 DLP ルールの一致が発生する度に発生するアラートを作成するには、このオプションを使用します。
 
 :::image type="content" source="../media/incident-reports-options-single-event-alerts.png" alt-text="単一イベントアラート構成オプションの対象となるユーザーのインシデント レポートのオプションを示すスクリーンショット。" border="false":::
 
@@ -134,13 +137,13 @@ DLP ポリシーでアラートを構成する方法については、「デー�
 
 DLP アラート管理ダッシュボードを操作するには、次の操作を行います。
 
-1. [データ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">損失Microsoft 365 コンプライアンス センター]</a>**に移動します**。
+1. [データ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>] **に移動します**。
 2. [アラート] **タブを** 選択して、DLP アラート ダッシュボードを表示します。
 3. アラートを選択して詳細を表示します。
 
 :::image type="content" source="../media/alert-details.png" alt-text="DLP アラート管理ダッシュボードのアラートの詳細を示すスクリーンショット。" border="false":::
 
-4. [イベント **] タブを** 選択して、アラートに関連付けられているすべてのイベントを表示します。 特定のイベントを選択して、その詳細を表示できます。 使用可能なイベントの詳細の一覧については、「データ損失防止アラート ダッシュボードについて」 [を参照してください](dlp-alerts-dashboard-learn.md)。
+4. [イベント **] タブを** 選択して、アラートに関連付けられているすべてのイベントを表示します。 特定のイベントを選択して、その詳細を表示できます。 使用可能なイベントの詳細の一覧については、「データ損失防止アラート ダッシュボードについて [」を参照してください](dlp-alerts-dashboard-learn.md)。
 5. [詳細 **] を** 選択して、 **アラートの [概要** ] ページを開きます。 概要ページには、次の概要が表示されます。
     1. 何が起こったかの
     1. ポリシーの一致を引き起こしたアクションを実行したユーザー
@@ -153,7 +156,7 @@ DLP アラート管理ダッシュボードを操作するには、次の操作�
 
 7. [機密情報 **の種類] タブを** 選択して、コンテンツで検出された機密情報の種類に関する詳細を表示します。 詳細には、信頼度、カウント、および機密情報の種類に一致するコンテンツが含まれます。
 
-8. アラートを調査した後、[概要]タブに戻り、トリアージを管理し、アラートの処理を管理し、コメントを追加できます。
+8. アラートを調査した後、[概要] タブに戻り、トリアージを管理し、アラートの処理を管理し、コメントを追加できます。
 
 - ワークフロー管理の履歴を表示するには、[管理ログ] **を選択します**。
 - アラートに必要なアクションを実行した後、アラートの状態を [解決済み] **に設定します**。

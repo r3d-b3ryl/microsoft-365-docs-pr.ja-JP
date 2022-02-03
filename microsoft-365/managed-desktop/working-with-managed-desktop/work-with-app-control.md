@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 89ab1bf675c3668e01b31ff380f54ee993205374
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: b87da099ace71b13b03bb9d9247bc4cbfe420dc4
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281413"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322390"
 ---
 # <a name="work-with-app-control"></a>アプリ制御を操作する
 
@@ -39,7 +39,6 @@ ms.locfileid: "62281413"
 
 1. [発行元の詳細を収集します](#gather-publisher-details)。
 1. Microsoft Managed Desktop Operations でチケットを開き、署名者ルールを要求し、次の詳細を含める。  
-
     - アプリケーション名
     - アプリケーションのバージョン
     - 説明
@@ -72,7 +71,6 @@ ms.locfileid: "62281413"
 1. そのデバイスでイベント ビューアーを開きます。
 1. イベント ビューアーで、[アプリケーションとサービス ログ **\Microsoft\** Windows] に移動し、[**AppLocker] を選択します**。
 1. **8003** または **8006** イベントを検索し、イベントから情報をコピーします。
-
     - アプリケーション名
     - アプリケーションのバージョン
     - 説明

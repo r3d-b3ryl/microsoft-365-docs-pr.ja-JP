@@ -16,12 +16,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) 組織で使用できるフィッシング対策ポリシーを作成、変更、および削除する方法について説明します(Exchange Online メールボックスを使用する場合と使用しない場合)。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7abef6ea5872877981812bc2ad06b125147f73c6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6321dcb41e276ccd03d048033e063572506a3c0f
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939827"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321737"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -36,7 +36,7 @@ Exchange Online メールボックスのない Exchange Online 組織または�
 
 メールボックスがExchange Online組織は、Microsoft 365 Defender ポータルまたは PowerShell でフィッシングExchange Online構成できます。 スタンドアロン EOP 組織は、このポータルMicrosoft 365 Defenderできます。
 
-microsoft Defender for Office 365 で使用できる、より高度なフィッシング対策ポリシーを作成および変更する方法については[、「Configure anti-フィッシング](configure-mdo-anti-phishing-policies.md)ポリシー in Microsoft Defender for Office 365」を参照してください。
+microsoft Defender for Office 365 で使用できる、より高度なフィッシング対策ポリシーを作成および変更する方法については、「[Configure anti-フィッシング ポリシー in Microsoft Defender for Office 365」を参照してください](configure-mdo-anti-phishing-policies.md)。
 
 フィッシング対策ポリシーの基本的な要素は次のとおりです。
 
@@ -49,7 +49,7 @@ microsoft Defender for Office 365 で使用できる、より高度なフィッ�
 - フィッシング対策ポリシーを変更すると、名前、優先度、有効または無効、および受信者フィルターに関連する設定によって、フィッシング対策ルールが変更されます。 その他の設定はすべて、関連付けられたフィッシング対策ポリシーを変更します。
 - フィッシング対策ポリシーを削除すると、フィッシング対策ルールと関連付けられたフィッシング対策ポリシーが削除されます。
 
-PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理します。 詳細については、この記事の[後半Exchange Online「PowerShell](#use-exchange-online-powershell-to-configure-anti-phishing-policies)を使用してフィッシング対策ポリシーを構成する」を参照してください。
+PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理します。 詳細については、この記事の後半[Exchange Online「PowerShell](#use-exchange-online-powershell-to-configure-anti-phishing-policies) を使用してフィッシング対策ポリシーを構成する」を参照してください。
 
 すべての組織には、次のプロパティを持つ Office365 AntiPhish Default という名前の組み込みのフィッシング対策ポリシーがあります。
 
@@ -61,7 +61,7 @@ PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理し
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing>。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -76,21 +76,21 @@ PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理し
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [**組織の管理の表示のみ**][](/Exchange/permissions-exo/permissions-exo#role-groups)役割グループは、Exchange Online機能への読み取り専用アクセスも提供します <sup>\*</sup> 。
+  - [**組織の管理の表示のみ**] 役割 [](/Exchange/permissions-exo/permissions-exo#role-groups)グループはExchange Online機能への読み取り専用アクセスも提供します <sup>\*</sup>。
 
-- フィッシング対策ポリシーの推奨設定については、「EOP フィッシング対策ポリシー設定」 [を参照してください](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)。
+- フィッシング対策ポリシーの推奨設定については、「 [EOP フィッシング対策ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)。
 
 - 更新されたポリシーを適用するには、最大 30 分かかります。
 
-- フィルター 処理パイプラインでフィッシング対策ポリシーが適用される場所については、「メール保護の順序と優先順位」 [を参照してください](how-policies-and-protections-are-combined.md)。
+- フィルター パイプラインでフィッシング対策ポリシーが適用される場所については、「メール保護の順序と優先順位 [」を参照してください](how-policies-and-protections-are-combined.md)。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies"></a>フィッシング対策Microsoft 365 Defenderを作成するには、このポータルを使用します。
 
 Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリシーを作成すると、両方に同じ名前を使用して、フィッシング対策ルールと関連付けられたフィッシング対策ポリシーが同時に作成されます。
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
+1. [ポリシー] Microsoft 365 Defender  \>  \>  \> <https://security.microsoft.com>で、[ポリシー] セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」に **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing>。
 
-2. [フィッシング **対策] ページで、[作成** ] アイコン ![ をクリックします。](../../media/m365-cc-sc-create-icon.png) **Create**。
+2. [フィッシング **対策] ページで、[作成** ] アイコンを ![クリックします。](../../media/m365-cc-sc-create-icon.png) **Create**。
 
 3. ポリシー ウィザードが開きます。 [ポリシー名 **] ページで** 、次の設定を構成します。
    - **[名前]**: わかりやすい一意のポリシー名を入力します。
@@ -109,30 +109,30 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
    同じ条件に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 別の条件では、AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) を使用します。
 
-   - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。 設定と動作は、条件とまったく同じです。
+   - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
 
    完了したら、**[次へ]** をクリックします。
 
-5. 表示される **[フィッシング&の** しきい値] ページで、[スプーフィング インテリジェンスを有効にする] チェック ボックスを使用してスプーフィング インテリジェンスのオンとオフを切り替えます。 既定値はオン (選択) であり、オンのままにすることをお勧めします。 次のページで、ブロックされたスプーフィングされたメッセージに対して実行するアクションを構成します。
+5. 表示される **[フィッシング&の** しきい値] ページで、[スプーフィング  インテリジェンスを有効にする] チェック ボックスを使用して、スプーフィング インテリジェンスのオンとオフを切り替えます。 既定値はオン (選択) であり、オンのままにすることをお勧めします。 次のページで、ブロックされたスプーフィングされたメッセージに対して実行するアクションを構成します。
 
    スプーフィング インテリジェンスをオフにするには、チェック ボックスをオフにします。
 
    > [!NOTE]
-   > MX レコードが Microsoft 365 をポイントしない場合は、スプーフィング防止保護をオフにする必要があります。代わりに、コネクタの拡張フィルターを有効にします。 手順については、「拡張フィルタリング[for Connectors in Exchange Online」 を参照してください](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+   > MX レコードが Microsoft 365 をポイントしない場合は、スプーフィング防止保護をオフにする必要があります。代わりに、コネクタの拡張フィルターを有効にします。 手順については、「拡張フィルタリング [for Connectors」](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)を参照Exchange Online。
 
    完了したら、**[次へ]** をクリックします。
 
 6. **[アクション]** ページが表示されたら、次の設定を構成します。
    - **メッセージがスプーフィングとして検出された** 場合: この設定は、前のページで [スプーフィング インテリジェンスを有効にする] を選択した場合にのみ使用できます。 ブロックされたスプーフィングされた送信者からのメッセージについては、ドロップダウン リストで次のいずれかのアクションを選択します。
      - **受信者の迷惑メール フォルダーにメッセージを移動する**
-     - **メッセージを検疫する**: このアクションを選択すると、[検疫ポリシーの適用] ボックスが表示され、スプーフィング インテリジェンス保護によって検疫されるメッセージに適用される検疫ポリシーを選択します。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作と、ユーザーが検疫通知を受け取るかどうかを定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+     - **メッセージの検疫**: このアクションを選択すると、[検疫ポリシーの適用] ボックスが表示され、スプーフィング インテリジェンス保護によって検疫されるメッセージに適用される検疫ポリシーを選択します。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作と、ユーザーが検疫通知を受け取るかどうかを定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
-       [検疫 **ポリシーの適用]** の値が空白の場合は、既定の検疫ポリシーが使用されます (スプーフィング インテリジェンス検出の場合は DefaultFullAccessPolicy)。 後でフィッシング対策ポリシーを編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。 サポートされている保護フィルターの評決に使用される既定の検疫ポリシーの詳細については、次の表を [参照してください](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)。
+       [検疫 **ポリシーの適用] の値が空白** の場合は、既定の検疫ポリシーが使用されます (スプーフィング インテリジェンス検出の場合は DefaultFullAccessPolicy)。 後でフィッシング対策ポリシーを編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。 サポートされている保護フィルターの評決に使用される既定の検疫ポリシーの詳細については、次の表を [参照してください](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)。
 
-   - **安全上のヒント&インジケーター**:
-     - **最初の連絡先の安全性のヒント** を表示する : 詳細については [、「First contact 安全性のヒント」 を参照してください](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
-     - **ス** プーフィングの認証されていない送信者に対して (?) を表示する : メッセージが SPF チェックまたは DKIM チェックに合格しない場合に、メッセージが DMARC または複合認証に合格しない場合に、Outlook の [差出人] ボックスの送信者の写真に疑問符 <sup>\*</sup> (?)[](email-validation-and-authentication.md#composite-authentication)を追加します。
-     - **"via"** タグを表示する: DKIM 署名または MAIL FROM アドレスのドメインと異なる場合は、from アドレスに via タグ (chris@contoso.com 経由で <sup>\*</sup> fabrikam.com) を **追加** します。
+   - **安全に関する&インジケーター**:
+     - **最初の連絡先を表示安全性のヒント**: 詳細については、「[First contact 安全性のヒント」 を参照してください](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
+     - スプーフィングの認証されていない送信者に対して (?) を表示する: メッセージが SPF チェックまたは DKIM チェックに合格しない場合に、メッセージが DMARC または複合認証に合格しない場合、Outlook の [差出人] ボックスの送信者の写真に疑問 [](email-validation-and-authentication.md#composite-authentication)符 **(**<sup>\*</sup>?) を追加します。
+     - "**via"**<sup>\*</sup> タグを表示する: DKIM 署名または **MAIL FROM** アドレスのドメインと異なる場合は、from アドレスに via タグ (fabrikam.com 経由で chris@contoso.com) を追加します。
 
      設定を有効にする場合は、チェック ボックスをオンにします。 オフにする場合は、チェック ボックスをオフにします。
 
@@ -148,7 +148,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>フィッシング対策Microsoft 365 Defenderを表示するには、このポータルを使用します。
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
+1. [ポリシー] Microsoft 365 Defender  \>  \>  \> <https://security.microsoft.com>で、[ポリシー] セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」に **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing>。
 
 2. [フィッシング **対策] ページで** 、ポリシーの一覧に次のプロパティが表示されます。
 
@@ -161,11 +161,11 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>フィッシング対策Microsoft 365 Defenderポータルを使用して変更する
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
+1. [ポリシー] Microsoft 365 Defender  \>  \>  \> <https://security.microsoft.com>で、[ポリシー] セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」に **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing>。
 
 2. [フィッシング **対策] ページで** 、名前をクリックして一覧からポリシーを選択します。
 
-3. 表示されるポリシーの詳細ポップアップで、各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 設定の詳細については、この記事の「[](#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies)フィッシング対策ポリシーを作成Microsoft 365 Defenderを使用してフィッシング対策ポリシーを作成する」を参照してください。
+3. 表示されるポリシーの詳細ポップアップで、各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 設定の詳細については、この記事の「[](#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies)Microsoft 365 Defenderを使用してフィッシング対策ポリシーを作成する」セクションを参照してください。
 
    既定のフィッシング対策ポリシーでは、[ユーザー、グループ、ドメイン] セクションは使用できません (ポリシーはすべてのユーザーに適用されます)、ポリシーの名前を変更することはできません。
 
@@ -175,7 +175,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 既定のフィッシング対策ポリシーを無効にできない。
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
+1. [ポリシー] Microsoft 365 Defender  \>  \>  \> <https://security.microsoft.com>で、[ポリシー] セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」に **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing>。
 
 2. [フィッシング **対策] ページで** 、名前をクリックしてリストからカスタム ポリシーを選択します。
 
@@ -200,14 +200,14 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 - このポータルMicrosoft 365 Defender、フィッシング対策ポリシーの優先度を変更できるのは、作成後のみです。 PowerShell では、フィッシング対策ルールを作成するときに既定の優先度を上書きできます (既存のルールの優先度に影響を与える可能性があります)。
 - フィッシング対策ポリシーは、表示順に処理されます (最初のポリシーの **優先度** は 0 です)。 既定のフィッシング対策ポリシーの優先度の値は **[最低**] で、変更は行えなくないます。
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
+1. [ポリシー] Microsoft 365 Defender  \>  \>  \> <https://security.microsoft.com>で、[ポリシー] セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」に **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing>。
 
 2. [フィッシング **対策] ページで** 、名前をクリックしてリストからカスタム ポリシーを選択します。
 
 3. 表示されるポリシーの詳細ポップアップの上部には、現在の優先度の値とカスタム ポリシーの数に基づいて、**[優先度を上げる]** または **[優先度を下げる]** が表示されます。
-   - 優先度の値が **0** **のポリシー** には、[優先度を下にする]**オプションしか** 使用できません。
-   - 優先度の値が最も **低い** ポリシー ( **たとえば、3)** には、[優先度の引き上げ] **オプション** しか使用できません。
-   - 3 つ以上のポリシーがある場合、優先度の高い値と最も低い優先度の値の間のポリシーには、[優先度の引き上げ] オプションと [優先度の下 **げ]** の両方 **のオプションがあります** 。
+   - 優先度の値が 0 **のポリシー****には**、[優先度を下にする] **オプションしか** 使用できません。
+   - 優先度の値が最も **低い** ポリシー ( **たとえば、3**) には、[優先度の引き上げ] **オプション** しか使用できません。
+   - 3 つ以上のポリシーがある場合、優先度の高い値と最も低い優先度の値の間のポリシーには、[優先度の引き上げ] オプションと [優先度の下 **げ] の** 両方 **のオプションがあります** 。
 
    ![[優先度を上げる] アイコン](../../media/m365-cc-sc-increase-icon.png)、**[優先度を上げる]** の順にクリックするか、または ![[優先度を下げる] アイコン](../../media/m365-cc-sc-decrease-icon.png)、**[優先度を下げる]** の順にクリックして、**優先度** 値を変更します。
 
@@ -217,7 +217,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 Microsoft 365 Defenderポータルを使用してカスタムフィッシング対策ポリシーを削除すると、フィッシング対策ルールと対応するフィッシング対策ポリシーの両方が削除されます。 既定のフィッシング対策ポリシーを削除できない。
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー] セクションの&ルール脅威&フィッシング対策ポリシーにメールを送信する」 に <https://security.microsoft.com>  \>  \>  \> **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
+1. [ポリシー] Microsoft 365 Defender  \>  \>  \> <https://security.microsoft.com>で、[ポリシー] セクションの&ルール脅威ポリシー&フィッシング対策ポリシーにメールを送信する」に **移動** します。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing>。
 
 2. [フィッシング **対策] ページで** 、名前をクリックしてリストからカスタム ポリシーを選択します。
 
@@ -229,7 +229,7 @@ Microsoft 365 Defenderポータルを使用してカスタムフィッシング�
 
 前述したように、フィッシング対策ポリシーは、フィッシング対策ポリシーとフィッシング対策ルールで構成されています。
 
-PowerShell Exchange Online、フィッシング対策ポリシーとフィッシング対策ルールの違いは明らかです。 -AntiPhishPolicy コマンドレットを使用してフィッシング対策ポリシーを管理し **\* 、-AntiPhishRule** コマンドレットを使用してフィッシング対策ルールを管理します。 **\***
+PowerShell Exchange Online、フィッシング対策ポリシーとフィッシング対策ルールの違いは明らかです。 **\*-AntiPhishPolicy** **\*** コマンドレットを使用してフィッシング対策ポリシーを管理し、-AntiPhishRule コマンドレットを使用してフィッシング対策ルールを管理します。
 
 - PowerShell では、最初にフィッシング対策ポリシーを作成してから、そのルールが適用されるポリシーを識別するフィッシング対策ルールを作成します。
 - PowerShell では、フィッシング対策ポリシーとフィッシング対策ルールの設定を個別に変更します。
@@ -251,8 +251,8 @@ PowerShell でフィッシング対策ポリシーを作成するには、次の
 
 - ポリシーの作成後まで、Microsoft 365 Defender ポータルで使用できない PowerShell の新しいフィッシング対策ポリシーで次の設定を構成できます。
 
-  - 無効として新しいポリシーを作成 _します_ `$false` **(New-AntiPhishRule コマンドレットで有効** )。
-  -  _\<Number\>_ **New-AntiPhishRule** コマンドレットの作成時にポリシーの優先度 (優先度) を設定します。
+  - 無効として新しいポリシーを _作成します (_ `$false` **New-AntiPhishRule コマンドレットで有効** )。
+  - **New-AntiPhishRule** コマンドレットの _作成時にポリシー_ の優先度 (_\<Number\>_ Priority) を設定します。
 
 - PowerShell で作成した新しいフィッシング対策ポリシーは、ポリシーをフィッシング対策ルールに割り当てるまで、Microsoft 365 Defender ポータルに表示されません。
 
@@ -267,16 +267,16 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 この例では、次の設定を使用して、Research Quarantine という名前のフィッシング対策ポリシーを作成します。
 
 - 説明は、調査部門のポリシーです。
-- スプーフィング検出の既定のアクションを [検疫][](quarantine-policies.md)に変更し、検疫済みメッセージに既定の検疫ポリシーを _使用_ します (スプーフィンクエリアンタグ パラメーターは使用しません)。
+- スプーフィング検出の既定のアクションを [検疫] に変更 [](quarantine-policies.md)し、検疫済みメッセージに既定の検疫ポリシーを使用します (スプーフィンクエリアンタグ パラメーターは _使用_ しません)。
 
 ```powershell
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine
 ```
 
-構文とパラメーターの詳細については [、「New-AntiPhishPolicy」を参照してください](/powershell/module/exchange/New-AntiPhishPolicy)。
+構文とパラメーターの詳細については、「 [New-AntiPhishPolicy」を参照してください](/powershell/module/exchange/New-AntiPhishPolicy)。
 
 > [!NOTE]
-> フィッシング対策ポリシーで使用する検疫ポリシー[](quarantine-policies.md)を指定する詳細な手順については[、「Use PowerShell](quarantine-policies.md#anti-phishing-policies)を使用してフィッシング対策ポリシーで検疫ポリシーを指定する」を参照してください。
+> フィッシング対策ポリシーで使用する検疫ポリシー[](quarantine-policies.md)を指定する詳細な手順については、「[Use PowerShell を](quarantine-policies.md#anti-phishing-policies)使用してフィッシング対策ポリシーで検疫ポリシーを指定する」を参照してください。
 
 #### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a>手順 2: PowerShell を使用してフィッシング対策ルールを作成する
 
@@ -290,13 +290,13 @@ New-AntiPhishRule -Name "<RuleName>" -AntiPhishPolicy "<PolicyName>" <Recipient 
 
 - ルールは、Research Quarantine という名前のフィッシング対策ポリシーに関連付けられている。
 - ルールは Research Department という名前のグループのメンバーに適用されます。
-- Priority パラメーターを使用していないので _、既定_ の優先度が使用されます。
+- Priority パラメーターを使用していないの _で、既定_ の優先度が使用されます。
 
 ```powershell
 New-AntiPhishRule -Name "Research Department" -AntiPhishPolicy "Research Quarantine" -SentToMemberOf "Research Department"
 ```
 
-構文とパラメーターの詳細については [、「New-AntiPhishRule」を参照してください](/powershell/module/exchange/New-AntiPhishRule)。
+構文とパラメーターの詳細については、「 [New-AntiPhishRule」を参照してください](/powershell/module/exchange/New-AntiPhishRule)。
 
 ### <a name="use-powershell-to-view-anti-phish-policies"></a>PowerShell を使用してフィッシング対策ポリシーを表示する
 
@@ -318,7 +318,7 @@ Get-AntiPhishPolicy | Format-Table Name,IsDefault
 Get-AntiPhishPolicy -Identity "Executives"
 ```
 
-構文とパラメーターの詳細については [、「Get-AntiPhishPolicy」を参照してください](/powershell/module/exchange/Get-AntiPhishPolicy)。
+構文とパラメーターの詳細については、「 [Get-AntiPhishPolicy」を参照してください](/powershell/module/exchange/Get-AntiPhishPolicy)。
 
 ### <a name="use-powershell-to-view-anti-phish-rules"></a>PowerShell を使用してフィッシング対策ルールを表示する
 
@@ -350,14 +350,14 @@ Get-AntiPhishRule -State Enabled | Format-Table Name,Priority
 Get-AntiPhishRule -Identity "Contoso Executives"
 ```
 
-構文とパラメーターの詳細については [、「Get-AntiPhishRule」を参照してください](/powershell/module/exchange/Get-AntiPhishrule)。
+構文とパラメーターの詳細については、「 [Get-AntiPhishRule」を参照してください](/powershell/module/exchange/Get-AntiPhishrule)。
 
 ### <a name="use-powershell-to-modify-anti-phish-policies"></a>PowerShell を使用してフィッシング対策ポリシーを変更する
 
 次の項目以外にも、「手順 [1: PowerShell](#step-1-use-powershell-to-create-an-anti-phish-policy) を使用してフィッシング対策ポリシーを作成する」で説明したように、PowerShell でフィッシング対策ポリシーを変更する場合と同じ設定を使用できます。
 
 - 指定したポリシーを既定のポリシーに変換する _MakeDefault_ スイッチ (すべてのユーザーに適用され、常に優先度が最も低く、削除できません) は、PowerShell でフィッシング対策ポリシーを変更する場合にのみ使用できます。
-- フィッシング対策ポリシーの名前を変更することはできません **(Set-AntiPhishPolicy** コマンドレットには _Name_ パラメーターはありません)。 Microsoft 365 Defender ポータルでフィッシング対策ポリシーの名前を変更すると、フィッシング対策ルールの名前が変更 _されます_。
+- フィッシング対策ポリシーの名前を変更することはできません ( **Set-AntiPhishPolicy** コマンドレットには _Name_ パラメーターはありません)。 このポータルでフィッシング対策ポリシーの名前を変更Microsoft 365 Defenderフィッシング対策ルールの名前を変更する必要 _があります_。
 
 フィッシング対策ポリシーを変更するには、次の構文を使用します。
 
@@ -365,10 +365,10 @@ Get-AntiPhishRule -Identity "Contoso Executives"
 Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-構文とパラメーターの詳細については [、「Set-AntiPhishPolicy」を参照してください](/powershell/module/exchange/Set-AntiPhishPolicy)。
+構文とパラメーターの詳細については、「 [Set-AntiPhishPolicy」を参照してください](/powershell/module/exchange/Set-AntiPhishPolicy)。
 
 > [!NOTE]
-> フィッシング対策ポリシーで使用する検疫ポリシー[](quarantine-policies.md)を指定する詳細な手順については[、「Use PowerShell を](quarantine-policies.md#anti-phishing-policies)使用してフィッシング対策ポリシーで検疫ポリシーを指定する」を参照してください。
+> フィッシング対策ポリシーで使用する検疫ポリシー[](quarantine-policies.md)を指定する詳細な手順については、「[Use PowerShell を](quarantine-policies.md#anti-phishing-policies)使用してフィッシング対策ポリシーで検疫ポリシーを指定する」を参照してください。
 
 ### <a name="use-powershell-to-modify-anti-phish-rules"></a>PowerShell を使用してフィッシング対策ルールを変更する
 
@@ -382,7 +382,7 @@ PowerShell でフィッシング対策ルールを変更するときに使用で
 Set-AntiPhishRule -Identity "<RuleName>" <Settings>
 ```
 
-構文とパラメーターの詳細については [、「Set-AntiPhishRule」を参照してください](/powershell/module/exchange/set-antiphishrule)。
+構文とパラメーターの詳細については、「 [Set-AntiPhishRule」を参照してください](/powershell/module/exchange/set-antiphishrule)。
 
 ### <a name="use-powershell-to-enable-or-disable-anti-phish-rules"></a>PowerShell を使用してフィッシング対策ルールを有効または無効にする
 
@@ -406,7 +406,7 @@ Disable-AntiPhishRule -Identity "Marketing Department"
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-構文とパラメーターの詳細については [、「Enable-AntiPhishRule」](/powershell/module/exchange/enable-antiphishrule) および [「Disable-AntiPhishRule」を参照してください](/powershell/module/exchange/disable-antiphishrule)。
+構文とパラメーターの詳細については、「 [Enable-AntiPhishRule](/powershell/module/exchange/enable-antiphishrule) 」および「 [Disable-AntiPhishRule」を参照してください](/powershell/module/exchange/disable-antiphishrule)。
 
 ### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a>PowerShell を使用してフィッシング対策ルールの優先度を設定する
 
@@ -426,8 +426,8 @@ Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 
 **注**:
 
-- 新しいルールを作成するときに優先度を設定するには、代わりに **New-AntiPhishRule** コマンドレットの Priority パラメーターを使用します。 
-- 既定のフィッシング対策ポリシーには、対応するフィッシング対策ルールが設定されていないので、常に変更できない優先度の値が **[最低**] です。
+- 新しいルールを作成するときに優先度を設定するには、**代わりに New-AntiPhishRule** コマンドレットの Priority パラメーターを使用します。
+- 既定のフィッシング対策ポリシーには対応するフィッシング対策ルールが設定されていないので、常に変更できない優先度の値 **が [最低] になります**。
 
 ### <a name="use-powershell-to-remove-anti-phish-policies"></a>PowerShell を使用してフィッシング対策ポリシーを削除する
 
@@ -445,7 +445,7 @@ Remove-AntiPhishPolicy -Identity "<PolicyName>"
 Remove-AntiPhishPolicy -Identity "Marketing Department"
 ```
 
-構文とパラメーターの詳細については [、「Remove-AntiPhishPolicy」を参照してください](/powershell/module/exchange/Remove-AntiPhishPolicy)。
+構文とパラメーターの詳細については、「 [Remove-AntiPhishPolicy」を参照してください](/powershell/module/exchange/Remove-AntiPhishPolicy)。
 
 ### <a name="use-powershell-to-remove-anti-phish-rules"></a>PowerShell を使用してフィッシング対策ルールを削除する
 
@@ -463,15 +463,15 @@ Remove-AntiPhishRule -Identity "<PolicyName>"
 Remove-AntiPhishRule -Identity "Marketing Department"
 ```
 
-構文とパラメーターの詳細については [、「Remove-AntiPhishRule」を参照してください](/powershell/module/exchange/Remove-AntiPhishRule)。
+構文とパラメーターの詳細については、「 [Remove-AntiPhishRule」を参照してください](/powershell/module/exchange/Remove-AntiPhishRule)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
 EOP でフィッシング対策ポリシーが正常に構成されたことを確認するには、次の手順を実行します。
 
-- [フィッシング **対策] ページ** の [Microsoft 365 Defender] で、ポリシーの一覧、その状態の値、および優先度 <https://security.microsoft.com/antiphishing> の値を **確認** します。  詳細を表示するには、名前をクリックして表示されるフライアウトの詳細を表示して、一覧からポリシーを選択します。
+- [フィッシング **対策] ページ**<https://security.microsoft.com/antiphishing>の [Microsoft 365 Defender] で、ポリシーの一覧、その状態の値、および優先度の値 **を確認** します。 詳細を表示するには、名前をクリックして表示されるフライアウトの詳細を表示して、一覧からポリシーを選択します。
 
-- PowerShell Exchange Online、ポリシーまたはルールの名前に置き換え、次のコマンドを実行 \<Name\> し、設定を確認します。
+- PowerShell Exchange Online、ポリシー\<Name\>またはルールの名前に置き換え、次のコマンドを実行し、設定を確認します。
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

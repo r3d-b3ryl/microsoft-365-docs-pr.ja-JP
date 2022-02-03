@@ -17,24 +17,24 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: データのプライバシーに関する規制、関連するシナリオ、準備状況、および機密情報の種類を特定し、Microsoft 365します。
-ms.openlocfilehash: ebad5531ddd0343bb262fde1569811fcc02b993b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5f8b5844ad3db4152a6144f9506a0267fa3af8f2
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199287"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320753"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>データプライバシーリスクを評価し、機密アイテムを特定Microsoft 365
 
-Microsoft 365 の機能とサービスで達成可能な機能を含む、関連する改善アクションを実装する前に、組織が対象となるデータプライバシー規制とリスクを評価する重要な第一歩です。
+組織が対象となるデータプライバシー規制とリスクを評価する方法は、Microsoft 365 機能とサービスで達成可能なアクションを含む、関連する改善アクションを実装する前の第一歩です。
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>潜在的に適用可能なデータプライバシー規制
 
-データ プライバシー規制に関するより広範な規制フレームワークについては [、Microsoft Services](https://servicetrust.microsoft.com/) Trust Portal および一般データ保護規則 [(GDPR)](/compliance/regulatory/gdpr)規制に関する一連の記事、および業界または地域で適用される可能性がある規制に関するその他の資料を参照してください。
+データ プライバシー規制に関するより広範な規制フレームワークについては、「 [Microsoft Services Trust Portal](https://servicetrust.microsoft.com/) 」および「一般データ保護規則 [(GDPR)](/compliance/regulatory/gdpr) 規則」の一連の記事を参照してください。 また、業界や地域で適用される可能性のある規制に関する資料も確認してください。
 
 ### <a name="gdpr"></a>GDPR
 
-データプライバシー規制で最も有名で引用されている GDPR は、欧州連合 (EU) の居住者である特定または特定可能な自然人に関連する個人データの収集、保存、処理、および共有を規制します。
+GDPR は、データプライバシー規制の中で最も有名で引用されています。 欧州連合 (EU) の居住者である特定または特定可能な自然人に関連する個人データの収集、保存、処理、および共有を規制します。
 
 GDPR 第 4 条に従って、
 
@@ -48,7 +48,7 @@ ISO 27001 などの他の標準への準拠は、複数のヨーロッパの監�
 
 その他の重要なデータプライバシー規制では、個人データの取り扱いに関する要件も指定されています。
 
-米国では、カリフォルニア州消費者保護法 (CCPA)、HIPAA-HITECH (米国の医療プライバシー法)、グラハム リーチ ブライリー法 (GLBA) が含まれます。[](/compliance/regulatory/ccpa-faq) 追加の州固有の規制もインプレイスまたは開発中です。
+米国では、カリフォルニア州消費者保護法 ([CCPA](/compliance/regulatory/ccpa-faq))、HIPAA-HITECH (米国の医療プライバシー法)、グラハム リーチ ブライリー法 (GLBA) が含まれます。 追加の州固有の規制もインプレイスまたは開発中です。
 
 世界中で、ドイツの国内 GDPR 実施法 (BDSG)、ブラジルデータ保護法 (LGPD)、その他多くの例が含まれます。
 
@@ -60,7 +60,7 @@ ISO 27001 などの他の標準への準拠は、複数のヨーロッパの監�
 
 |規制|記事/セクション|抜粋|適用可能な技術制御カテゴリ|
 |---|---|---|---|
-|GDPR|記事 5(1)(f)|個人データは、不正または違法な処理に対する保護、偶発的な損失、破壊または損害に対する保護を含む、個人データの適切なセキュリティを確保する方法で、適切な技術的または組織的手段 ('整合性と機密性') を使用して処理されます。|(すべて) <br> ID <br> デバイス <br> 脅威保護 <br> 情報を保護する <br> 情報の統制 <br> 検出と対応|
+|GDPR|記事 5(1)(f)|個人データは、不正または違法な処理に対する保護、偶発的な損失、破壊または損害に対する保護を含む、個人データの適切なセキュリティを確保する方法で、適切な技術的または組織的手段 ('整合性と機密性') を使用して処理されます。|(すべて) <br> ID <br> デバイス <br> 脅威の防止 <br> 情報を保護する <br> 情報の統制 <br> 検出と対応|
 ||記事 (32)(1)(a)|最新の技術、実装のコスト、処理の性質、範囲、コンテキスト、および目的、および自然人の権利と自由に対するさまざまな可能性と重大度のリスクを考慮して、管理者とプロセッサは、リスクに適したレベルのセキュリティを確保するための適切な技術的および組織的措置を実施します。 (a) 個人データの仮名化と暗号化を含む。|情報を保護する|
 ||記事 (13)(2)(a)|"...管理者は、個人データが取得された時点で、(a) 個人データが保存される期間、またはそれができない場合は、その期間を決定するために使用される条件という、公正で透明な処理を確保するために必要な次の情報をデータ主体に提供します。|情報の統制|
 ||記事 (15)(1)(e)|データ主体は、管理者の確認から、自分に関する個人データが処理されているかどうかを確認する権利を有し、その場合、個人データへのアクセスおよび次の情報:(e) 個人データの削除または消去を要求する権利の存在、またはデータ主体に関する個人データの処理の制限、またはそのような対象に対するオブジェクトに対する個人データの処理の制限処理|検出と対応|
@@ -141,7 +141,7 @@ Web アプリケーションや CRM システムMicrosoft 365、このソリュ�
 このようなニーズに対応するために、組織は、従業員に関する情報の一部がビジネスの継続性にとって合理的に重要であると考えられる可能性があるとして、そのような要求を容易にする必要がある予防、探偵、修復に対応するプロセスと手順を実施する必要があります。 たとえば、個人がファイルを作成した、または関数を実行した情報などです。
 
 > [!NOTE]
-> ユーザーの個人データの調査と修復の手法については、Microsoft 365と応答の記事[を参照してください](information-protection-deploy-monitor-respond.md)。 また、組織の内部で個人データを制御し、悪意のあるアクターの状況で組織から離れるのを防ぐために、自動分類と保護スキームを使用することもできます。 詳細については [、保護情報の記事](information-protection-deploy-protect-information.md) を参照してください。
+> このページの個人データの調査と修復のMicrosoft 365、モニターと応答[の記事を参照してください](information-protection-deploy-monitor-respond.md)。 また、組織の内部で個人データを制御し、悪意のあるアクターの状況で組織から離れるのを防ぐために、自動分類と保護スキームを使用することもできます。 詳細については [、保護情報の記事](information-protection-deploy-protect-information.md) を参照してください。
 
 ### <a name="data-the-organization-has-about-its-business-customers-in-the-b2b-scenario"></a>B2B シナリオのビジネス顧客に関する組織のデータ
 
@@ -172,7 +172,7 @@ Microsoft 365 のコンプライアンス マネージャーなど、外部組�
 
 ## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>手順 2: データプライバシー規制に準拠するための準備状況を評価する
 
-GDPR に固有の質問ですが、 [無料の Microsoft GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) 評価ツールで示された質問は、全体的なデータ プライバシーの準備状況を理解する上での良いスタートを提供します。
+GDPR に固有の質問ですが、 [無料の Microsoft GDPR](https://clouddamcdnprodep.azureedge.net/gdc/1863571/original) 評価ツールで示された質問は、全体的なデータ プライバシーの準備状況を理解する上での良いスタートを提供します。
 
 米国の CCPA やブラジルの LGPD など、他のデータ プライバシー規制の対象となる組織は、GDPR との条項が重複する原因で、このツールの準備状況のインベントリの恩恵を受ける可能性があります。
 
@@ -192,7 +192,7 @@ GDPR 評価は、次のセクションで構成されます。
 
 個人を含む環境内のコンテンツを検索すると、コンプライアンス検索、電子情報開示、Advanced eDiscovery、DLP、監査の組み合わせが含まれる、複雑な作業になります。
 
-Microsoft Compliance管理センターの新しいデータ分類ソリューションでは、これは、個人データに関連[](../compliance/data-classification-content-explorer.md)する機密情報の種類を含む組み込みまたはカスタムの機密情報の種類で動作するコンテンツ エクスプローラー機能ではるかに簡単になりました。
+Microsoft Compliance 管理センターの新しいデータ分類ソリューションでは、これは、個人データに関連する機密情報[](../compliance/data-classification-content-explorer.md)の種類を含む組み込みまたはカスタムの機密情報の種類で動作するコンテンツ エクスプローラー機能ではるかに簡単になりました。
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
@@ -226,9 +226,9 @@ Microsoft Compliance 管理センターには、100 を超える機密情報の�
 
 コンテンツ エクスプローラーに加えて、組織はコンテンツ検索機能にアクセスして、高度な検索条件とカスタム フィルターを使用して、環境内の個人データを検索するカスタム検索を作成できます。
 
-個人データの検出のためのコンテンツ検索の使用に関する詳細なガイダンスについては、この記事で [説明します](/compliance/regulatory/gdpr)。 コンテンツ検索などの検出手法は、GDPR および [CCPA の DSR でも説明されています](/compliance/regulatory/gdpr-dsr-Office365#introduction-to-dsrs)。
+個人データの検出のためのコンテンツ検索の使用に関する詳細なガイダンスについては、この記事で [説明します](/compliance/regulatory/gdpr)。 コンテンツ検索などの検出手法については、 [GDPR および CCPA の DSR でも説明されています](/compliance/regulatory/gdpr-dsr-Office365#introduction-to-dsrs)。
 
-監視および応答の記事では、Microsoft 365の個人データの調査と修復の手法に関する追加の分析情報[を提供します](information-protection-deploy-monitor-respond.md)。
+データの調査および修復の手法に関するその他のMicrosoft 365、モニターと応答の記事[で説明されています](information-protection-deploy-monitor-respond.md)。
 
 > [!NOTE]
-> オンプレミスに保存されているファイルに含む機密情報の詳細については [、「Azure Information Protection」を参照してください](/azure/information-protection/quickstart-findsensitiveinfo)。
+> オンプレミスに保存されているファイルに含む機密情報の詳細については、「 [Azure Information Protection」を参照してください](/azure/information-protection/quickstart-findsensitiveinfo)。

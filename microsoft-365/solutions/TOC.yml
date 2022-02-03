@@ -374,6 +374,12 @@
           href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
         - name: Teams を使用して政府機関のリモート ワーカーをサポートする
           href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+    - name: 小売
+      items:
+        - name: 概要
+          href: retail-overview.md
+        - name: 小売店向けの Teams
+          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
 - name: エンタープライズ アーキテクチャの設計原則
   items:
     - name: 概要

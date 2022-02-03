@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 1636d7647a6c48b44608e991e1b8411b05367fb6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 89aba3f74925b4c591c523aae5aaeb1a2844b4b9
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61867625"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320489"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
@@ -38,12 +38,12 @@ Microsoft Teamsをリードする Microsoft 365 での生産性サービスの�
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![Teamsアーキテクチャのポスターを参照してください。](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>2022 年 1 月更新   |このポスターは、Contoso 社が一般的なコミュニケーション シナリオで従業員に情報を提供し、関与する方法を示しています。 Contoso では、新しいサービスである Viva Connections など、さまざまな M365 アプリを使用しています。<br/><br/>**関連するソリューション ガイド** <br/> <ul><li>[組織のコミュニケーション: ガイダンス、メソッド、および製品](/sharepoint/corporate-communications-overview)|
+|[![Contoso 社の企業コミュニケーション シナリオポスター。](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>2022 年 1 月更新   |このポスターは、Contoso 社が一般的なコミュニケーション シナリオで従業員に情報を提供し、関与する方法を示しています。 Contoso では、新しいサービスである Viva Connections など、さまざまな M365 アプリを使用しています。<br/><br/>**関連するソリューション ガイド** <br/> <ul><li>[組織のコミュニケーション: ガイダンス、メソッド、および製品](/sharepoint/corporate-communications-overview)|
 
 
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 のグループ
-この図には、IT アーキテクト向け情報がMicrosoft 365されています。 組織内のグループとチームをMicrosoft 365管理する方法については、「Microsoft 365 との安全なコラボレーションをセットアップする」および[「](/microsoft-365/solutions/setup-secure-collaboration-with-teams)コラボレーション ガバナンスとは」を[参照してください](/microsoft-365/solutions/collaboration-governance-overview)。
+この図には、IT アーキテクト向け情報がMicrosoft 365されています。 組織内のグループとチームをMicrosoft 365管理する方法については、「set up secure collaboration with Microsoft 365」および[「](/microsoft-365/solutions/setup-secure-collaboration-with-teams)What [is collaboration Governance?](/microsoft-365/solutions/collaboration-governance-overview)」を参照してください。
 
 | アイテム | 説明 |
 |:-----|:-----|
@@ -55,7 +55,7 @@ Microsoft では、移行中のコンテンツのセキュリティの保護と�
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![モデルポスター: [モデル] にMicrosoft 365。](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> 2021 年 3 月更新 |含まれる内容: <ul><li> ファイル共有の移行</li><li>SharePoint サーバーの移行</li></ul> <p> 詳細については、「コンテンツを[移行する」を参照Microsoft 365。](/sharepointmigration/migrate-to-sharepoint-online)|
+|[![モデルポスター: [モデル] にMicrosoft 365。](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> 2021 年 3 月更新 |含まれる内容: <ul><li> ファイル共有の移行</li><li>SharePoint サーバーの移行</li></ul> <p> 詳細については、「コンテンツを移行[する」を参照Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online)。|
 
 ## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365保護とコンプライアンス機能
 
@@ -107,7 +107,7 @@ Advanced eDiscovery環境内を含む、エンドツーエンドのワークフ�
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![モデルポスター: Advanced eDiscovery のアーキテクチャMicrosoft 365。](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [画像として表示する](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \|[PDF としてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[アプリとしてダウンロードVisio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 更新日: 2020 年 10 月|含まれる内容: <ul><li>  単一の環境でのエンドツーエンドのワークフロー</li><li>複数地域環境でのエンド Microsoft 365ワークフロー </li><li>EDRM ワークフローをサポートするエンドツーエンドのデータ フロー</li> |
+|[![モデルポスター: Advanced eDiscovery のアーキテクチャMicrosoft 365。](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [画像として表示する](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \|[PDF としてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\|[アプリとしてダウンロードVisio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 更新日: 2020 年 10 月|含まれる内容: <ul><li>  単一の環境でのエンドツーエンドのワークフロー</li><li>複数地域環境でのエンド Microsoft 365ワークフロー </li><li>EDRM ワークフローをサポートするエンドツーエンドのデータ フロー</li> |
 
 
 
@@ -117,7 +117,7 @@ Microsoft では、Microsoft クラウド内の Teams の使用を開始する�
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![Microsoft テレフォニー ソリューションのポスター。](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021 年 3 月更新 | 詳細については、「Plan [your your Teams 音声ソリューション」を参照してください](/microsoftteams/cloud-voice-landing-page)。|
+|[![Microsoft テレフォニー ソリューションのポスター。](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021 年 3 月更新 | 詳細については、「Plan [your your Teams」を参照してください](/microsoftteams/cloud-voice-landing-page)。|
 
 
 ## <a name="set-up-your-infrastructure-for-hybrid-work"></a>ハイブリッド ワーク用のインフラストラクチャを設定する

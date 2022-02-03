@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 教育機関向け価格に対する学校の適格性をMicrosoft 365 Educationする方法について学習します。
 ms.date: 07/21/2020
-ms.openlocfilehash: 0f25842aa6dd8cce30031b876ec0614960cfec57
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 9b97487c7f1fdc9ccfb0858cd49036dcb43d7f5e
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371906"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321137"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>サブスクリプションの学業Microsoft 365 Education確認する
 
@@ -34,16 +34,16 @@ ms.locfileid: "61371906"
 
 この記事では、学校の教育機関の資格を確認し、資格の状態を確認し、学校が承認された後に学術価格でサブスクリプションを購入する方法について説明します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
-試用版サブスクリプションが既Microsoft 365 Education必要です。 試用版サブスクリプションをお持ちでない場合は、この Web ページ [にアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
+試用版サブスクリプションが既Microsoft 365 Education必要です。 試用版サブスクリプションをお持ちでない場合は、この [Web ページにアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
 
 ## <a name="verify-that-you-have-a-trial-subscription"></a>試用版サブスクリプションを持っているのを確認する
 
 試用版サブスクリプションを使用している場合は、Microsoft 365 Education手順を使用して確認してください。
 
 1. Microsoft 365 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページに移動します。
-2. 学生向 **けOffice 365 A1試用版と学生向** けOffice 365 A1 **を探します**。 これらのサブスクリプションが見当たらない場合は、この Web ページ [にアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
+2. 学生向 **けOffice 365 A1試用版と学生向** けOffice 365 A1を **探します**。 これらのサブスクリプションが見当たらない場合は、この Web ページ [にアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
 
 ## <a name="verify-your-schools-academic-eligibility"></a>学校の学業資格を確認する
 
@@ -60,8 +60,7 @@ ms.locfileid: "61371906"
 
 試験を受けたMicrosoft 365 Education、学校の学業資格の状況をいつでも確認できます。
 
-1. 
-            <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に戻ります。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に戻ります。
 2. ホーム ページで、[課金] カード **を** 探します。\
     課金 **カード** は、検証プロセスの状態を示します。 カードには、承認済み、保留中、拒否、またはドメインの追加のいずれかの状態が表示されます。
 
@@ -78,7 +77,7 @@ ms.locfileid: "61371906"
     > [!NOTE]
     > 資格 **が** 保留中の場合、[教育] タブは表示されません。
 
-3. 購入するオファーを見つけたら、それを選択し、[購入] を **選択します**。
+3. 購入するオファーを見つけたら、購入を選択してから、[購入] を **選択します**。
 4. サブスクリプションを購入するには、チェックアウト プロセスを完了します。
 
 ## <a name="when-does-my-free-trial-end"></a>無料試用版はいつ終了しますか?
@@ -92,17 +91,17 @@ ms.locfileid: "61371906"
 
 ## <a name="my-school-isnt-eligible-what-do-i-do-now"></a>学校は対象外です。 今何をしますか?
 
-学校が Microsoft 認定教育機関として認定されていない場合でも、[課金の購入サービス] ページの管理センターで商用オファー \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">を購入</a>できます。 組織が非営利団体である場合、グループは非営利団体のサブスクリプションの対象となる可能性があります。 詳細については、「非営利団体 [の割引と寄付」を参照してください](https://www.microsoft.com/nonprofits/eligibility)。
+学校が Microsoft  \> 認定教育機関として認定されていない場合でも、[課金の購入サービス] ページの管理センターで商用オファー<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">を購入</a>できます。 組織が非営利団体である場合、グループは非営利団体のサブスクリプションの対象となる可能性があります。 詳しくは、「非営利団体向け [割引と寄付」をご覧ください](https://www.microsoft.com/nonprofits/eligibility)。
 
-学校の学業適格性の決定に関する質問がある場合は、[サポートに問い合わせ](../../admin/get-help-support.md)。
+学校の学業適格性の決定に関する質問がある場合は、サポート [にお問い合わせください](../../admin/get-help-support.md)。
 
 ## <a name="next-steps"></a>次の手順
 
-学校用にアプリを展開するMicrosoft 365については、「ドキュメントとリソースMicrosoft 365 Education[を参照してください](/microsoft-365/education/deploy/)。 次に、ユーザー [を追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。 必要に応じて、サブスクリプションの [ライセンスを購入できます](../licenses/buy-licenses.md)。
+学校向けアプリを展開するMicrosoft 365、ドキュメントとリソースMicrosoft 365 Education[参照してください](/microsoft-365/education/deploy/)。 次に、ユーザー [を追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。 必要に応じて、サブスクリプションの [ライセンスを購入できます](../licenses/buy-licenses.md)。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 Education IT 管理者向けドキュメント](/education/itadmins)(記事リンク)\
+[Microsoft 365 Education IT 管理者向けドキュメント](/education/itadmins) (記事リンク)\
 [Microsoft Teams for Education](https://microsoft.com/education/products/teams/default.aspx) (製品ページ)\
 [ビジネス向けサービスのサブスクリプションMicrosoft 365ライセンス](../licenses/subscriptions-and-licenses.md)について (記事)\
 [ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md) (記事)\

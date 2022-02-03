@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex に関するリソースの検索方法について説明します。
-ms.openlocfilehash: 1e0959a5772d88afae43e09028d3d65ffe82b3de
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 665a28c07e5405299cb88ffdce3fbafa1210415a
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645126"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322085"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
@@ -41,7 +41,7 @@ SharePoint Syntex は、次のような組織支援をする Microsoft 365 サ�
 
 ## <a name="get-started"></a>はじめに
 
-このセクションのリソースでは、SharePoint Syntex で使用されるデータの分類と抽出の 2 つの方法である、フォーム処理とドキュメントの理解の詳細について説明します。
+このセクションのリソースは、SharePoint Syntex で使用されるデータ分類と抽出の 3 つの方法 (ドキュメントの理解、フォーム処理、および事前構築) について説明します。
 
 > [!NOTE]
 > [SharePoint 管理センターからコンテンツ センターを作成](create-a-content-center.md)することで、ライセンスを購入せずに SharePoint Syntex の使用を開始できます。 ライセンス未付与のユーザーは、ドキュメントの理解モデルを作成することはできますが、それをドキュメント ライブラリに適用することはできません。
@@ -86,6 +86,7 @@ SharePoint Syntex は、次のような組織支援をする Microsoft 365 サ�
 |モデルの使用方法についての詳細情報|[コンテンツ センターを作成する](./create-a-content-center.md)<br><br>[分類子を作成する](./create-a-classifier.md)<br><br>[モデルを複製する](./duplicate-a-model.md)<br><br>[モデルの名前を変更する](./rename-a-model.md)<br><br>[抽出子を作成する](./create-an-extractor.md)<br><br>[抽出子の名前を変更する](./rename-an-extractor.md)<br><br>[フォーム処理モデルを作成する](./create-a-form-processing-model.md)<br><br>[説明の種類](./explanation-types-overview.md)<br><br>[説明テンプレートを使用する](./explanation-templates.md)<br><br>[ドキュメント理解モデルの適用](./apply-a-model.md)<br><br>[サンプル モデルを使用したドキュメント理解モデルについての詳細情報](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |モデルに保持ラベルを適用する|[保持ラベルをドキュメント理解モデルに適用する](./apply-a-retention-label-to-a-model.md)|
 |モデルに秘密度ラベルを適用する|[秘密度ラベルをドキュメント理解モデルに適用する](./apply-a-sensitivity-label-to-a-model.md)|
+|事前構築されたモデルを使用してドキュメントから情報を抽出する |[事前構築済みモデルを使用して請求書または領収書から情報を抽出する](./prebuilt-models.md)|
 |トレーニング済みのモデルを他のコンテンツ センターで使用する |[ドキュメント理解モデルの公開と検出](./model-discovery.md)|
 |ドキュメント ライブラリでメタデータ ベースのクエリを実行する|[ドキュメント ライブラリ内のメタデータを検索する](./metadata-search.md)|
 |エクストラクターの作成時に、 Managed Metadata Service の用語ストアの分類を使用する|[エクストラクターの作成時に用語ストアの分類を活用する](./leverage-term-store-taxonomy.md)|

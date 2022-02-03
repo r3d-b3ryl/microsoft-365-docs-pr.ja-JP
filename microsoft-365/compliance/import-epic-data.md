@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、組織の Epic システムから電子医療記録 (EHR) データをインポートするデータ コネクタをMicrosoft 365。 これにより、インサイダー リスク管理ポリシーで Epic EHR データを使用して、従業員による患者データへの不正アクセス アクティビティを検出できます。
-ms.openlocfilehash: b3382f47bb9ec91623c86e16394bb3452fb1619e
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 0da7386aa2b230492fedd5fdac5477d204aa63a8
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272020"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321125"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Epic EHR 監査データをインポートするコネクタをセットアップする (プレビュー)
 
@@ -39,7 +39,7 @@ Epic コネクタのセットアップは、次のタスクで構成されます
 
 ## <a name="before-you-set-up-the-connector"></a>コネクタをセットアップする前に
 
-- 手順 3 で Epic コネクタを作成するユーザーには、ユーザーにメールボックスインポートエクスポートの役割が割りExchange Online。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、新しい役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「役割グループの[管理」の](\Exchange\permissions-exo\role-groups#create-role-groups)記事[](\Exchange\permissions-exo\role-groups#modify-role-groups)の「役割グループの作成」または「役割グループの変更」セクションExchange Online。
+- 手順 3 で Epic コネクタを作成するユーザーには、ユーザーにメールボックスインポートエクスポートの役割が割りExchange Online。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、新しい役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「役割グループの[管理」の](/Exchange/permissions-exo/role-groups#create-role-groups)記事[](/Exchange/permissions-exo/role-groups#modify-role-groups)の「役割グループの作成」または「役割グループの変更」セクションExchange Online。
 
 - 組織の Epic EHR システムから (日単位で) データを取得またはエクスポートする方法を決定し、手順 2 で説明するテキスト ファイルを作成する必要があります。 手順 4 で実行するスクリプトは、テキスト ファイル内のデータを API エンドポイントにプッシュします。
 
@@ -161,7 +161,7 @@ Epic コネクタをセットアップする最後の手順は、テキスト �
 アップロードが成功した場合、スクリプトは成功したメッセージアップロード **表示** します。
 
 > [!NOTE]
-> 実行ポリシーのために前のコマンドを実行する際に問題がある場合は、「実行[](\powershell\module\microsoft.powershell.core\about\about_execution_policies)ポリシーについて」および「[Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy)」を参照して、実行ポリシーの設定に関するガイダンスを参照してください。
+> 実行ポリシーのために前のコマンドを実行する際に問題がある場合は、「実行[](/powershell/module/microsoft.powershell.core/about/about_execution_policies)ポリシーについて」および「[Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)」を参照して、実行ポリシーの設定に関するガイダンスを参照してください。
 
 ## <a name="step-5-monitor-the-epic-connector"></a>手順 5: Epic コネクタを監視する
 

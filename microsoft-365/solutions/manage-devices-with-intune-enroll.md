@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: b1f14944e89f94ab48e61103cdd7b9d78a3bdfea
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: 5810513cd3aa4fccd8ce0100f22c708c53527c42
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049229"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321641"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>手順 2。 Intune を使用してデバイスを管理に登録する
 
@@ -33,7 +33,7 @@ ms.locfileid: "62049229"
 
 デバイス登録プロセスは、ユーザー、デバイス、および Microsoft Intune サービス間の関係を確立します。 Microsoft Intune をスタンドアロン サービスとして使用すると、単一の Web ベースの管理コンソールを使用して、Windows PC、macOS、および最も一般的なモバイル デバイス プラットフォームを管理できます。
 
-この記事では、Intune を使用してデバイスを管理に登録する方法を推奨しています。 これらのメソッドと各メソッドの展開方法の詳細については、「[展開ガイダンス: Microsoft Intune にデバイスを登録する](/microsoft-365/security/defender/eval-overview)」を参照してください。
+この記事では、Intune を使用してデバイスを管理に登録する方法を推奨しています。 これらのメソッドと各メソッドの展開方法の詳細については、「[展開ガイダンス: Microsoft Intune にデバイスを登録する](/mem/intune/fundamentals/deployment-guide-enrollment)」を参照してください。
 
 ![デバイスを管理するための手順](../media/devices/intune-mdm-steps-1.png#lightbox)
 
@@ -45,7 +45,7 @@ Windows 10 および Windows 11 デバイスを登録するためのいくつか
 
 BYOD Windows デバイスの登録などの追加オプションについては、「[Windows デバイス向け Intune 登録メソッド](/mem/intune/fundamentals/deployment-guide-enrollment-windows)」を参照してください。
 
-## <a name="iosipados-and-ipados-enrollment"></a>iOS/iPadOS および iPadOS の登録
+## <a name="ios-and-ipados-enrollment"></a>iOS および iPadOS の登録
 
 ユーザー所有 (BYOD) デバイスの場合、次のいずれかの方法を使用して、ユーザーが個人用デバイスを Intune 管理に登録できるようにすることができます。
 - デバイスの登録は、一般的な BYOD 登録と考えられます。 これにより、管理者は幅広い管理オプションを使用できるようになります。

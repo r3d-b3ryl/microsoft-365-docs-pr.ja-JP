@@ -10,19 +10,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 06/10/2021
-ms.reviewer: v-maave
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 2fa55e3bdf0ca9c06093e843e9dca4d8ed502128
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: b7a91b948e7c9d8d99c6d7c1563503efc24fc8f9
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940556"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320861"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダーへのアクセス制御で重要なフォルダーを保護する
 
@@ -41,10 +41,10 @@ ms.locfileid: "61940556"
 > [!NOTE]
 > スクリプト エンジンは信頼されていないので、制御された保護されたフォルダーへのアクセスを許可することはできません。 たとえば、PowerShell は、証明書とファイルインジケーターで許可されている場合でも、フォルダー アクセスの制御 [によって信頼されません](/microsoft-365/security/defender-endpoint/indicator-certificates)。
 
-フォルダー アクセスの制御は [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)で最適に機能します。これにより、通常のアラート調査シナリオの一環として、フォルダー アクセスの制御イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
+フォルダー アクセスの制御は [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) で最適に機能します。これにより、通常のアラート調査シナリオの一環として、フォルダー アクセスの制御イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
 
 > [!TIP]
-> フォルダー アクセスブロックの制御は、アラート キューにアラートを [生成しない](alerts-queue.md)。 ただし、高度な検索を使用している間、またはカスタム検出ルール[](investigate-machines.md)を使用して、デバイス[](advanced-hunting-overview.md)タイムライン ビューでフォルダー アクセス ブロックの制御に関する情報[を表示できます](custom-detection-rules.md)。
+> フォルダー アクセスブロックの制御は、アラート キューにアラートを [生成しない](alerts-queue.md)。 ただし、高度な検索を使用している間、またはカスタム検出ルール[](investigate-machines.md)を使用して、デバイス タイムライン [](advanced-hunting-overview.md)ビューで制御されたフォルダー アクセス ブロックに関する情報[を表示できます](custom-detection-rules.md)。
 
 ## <a name="how-does-controlled-folder-access-work"></a>フォルダー アクセスの制御方法
 
@@ -62,11 +62,11 @@ ms.locfileid: "61940556"
 
 保護 [されたフォルダーには、](#review-controlled-folder-access-events-in-windows-event-viewer) 一般的なシステム フォルダー (ブート セクターを含む) が含まれます。さらにフォルダー [を追加できます](customize-controlled-folders.md#protect-additional-folders)。 アプリが [保護されたフォルダー](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) へのアクセス権を与えるのを許可することもできます。
 
-監査モードを [使用して](audit-windows-defender.md) 、フォルダー アクセスが有効になっている場合に組織に与える影響を評価できます。 また、テスト グラウンド web サイト[Windows Defenderサイト](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)demo.wd.microsoft.com 機能が動作し、動作を確認できます。
+監査モードを [使用して](audit-windows-defender.md) 、フォルダー アクセスが有効になっている場合に組織に与える影響を評価できます。 また、Windows Defenderテスト グラウンド web サイト demo.wd.microsoft.com、機能[が](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)動作し、動作を確認できます。
 
 フォルダー アクセスの制御は、次のバージョンのフォルダーでサポートWindows。
 
-- [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
+- [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
 - Windows 11
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
@@ -94,9 +94,9 @@ Windowsシステム フォルダーは、既定で保護され、他のいくつ
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>管理されたフォルダー アクセス イベントを Microsoft 365 Defenderする
 
-Defender for Endpoint は、イベントとブロックに関する詳細[](investigate-alerts.md)なレポートを、イベント ポータルのアラート調査シナリオの一部Microsoft 365 Defenderします。 [(「Microsoft Defender for Endpoint in Microsoft 365 Defender」を参照](../defender/microsoft-365-security-center-mde.md)してください。
+Defender for Endpoint は、イベントとブロックに関する詳細なレポートを[](investigate-alerts.md)、このポータルのアラート調査シナリオの一部としてMicrosoft 365 Defenderします。 (「[Microsoft Defender for Endpoint in Microsoft 365 Defender」を](../defender/microsoft-365-security-center-mde.md)参照してください。
 
-高度な検索を使用して、Microsoft Defender for Endpoint データ [を照会できます](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)。 監査モード[を使用している](audit-windows-defender.md)場合は、高度な検索[](advanced-hunting-overview.md)を使用して、フォルダー アクセスの制御設定が有効になっている場合に環境に与える影響を確認できます。
+高度な検索を使用して、Microsoft Defender for Endpoint データ [に対してクエリを実行できます](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-overview?view=o365-worldwide)。 監査モードを[使用している場合](audit-windows-defender.md)は、高度な検索[](advanced-hunting-overview.md)を使用して、フォルダー アクセスの制御設定が有効になっている場合に環境に与える影響を確認できます。
 
 クエリ例:
 
@@ -109,11 +109,11 @@ DeviceEvents
 
 次のイベント ログWindows確認して、フォルダー アクセス ブロック (または監査) の制御時に作成されるイベントをアプリで確認できます。
 
-1. 評価パッケージ [をダウンロードし](https://aka.ms/mp7z2w) 、デバイス上 *cfa-events.xmlアクセスしやすい* 場所にファイルを抽出します。
+1. 評価パッケージ [をダウンロードし](https://aka.ms/mp7z2w) 、デバイス上 *cfa-events.xmlにファイル* を抽出します。
 2. [**イベント ビューアー]** と入力スタート メニューイベント ビューアー Windows開きます。
-3. 左側のパネルの [アクション] **で、[** カスタム ビュー **のインポート... を選択します**。
-4. 抽出した場所に *移動cfa-events.xml選択* します。 または [、XML を直接コピーします](event-views.md)。
-5. **[OK]** を選択します。
+3. 左側のパネルの [アクション] **で、[** カスタム ビュー **のインポート....] を選択します**。
+4. 抽出した場所に *移動cfa-events.xml選択* します。 または、 [XML を直接コピーします](event-views.md)。
+5. [**OK**] を選択します。
 
 次の表に、フォルダー アクセスの制御に関連するイベントを示します。
 
@@ -131,8 +131,8 @@ Windows セキュリティアプリを使用して、フォルダー アクセ�
 
 1. 11 Windows 10または Windows 11 デバイスで、アプリを開Windows セキュリティします。
 2. **[ウイルスと脅威の防止]** を選択します。
-3. [ **ランサムウェア保護] で、[** ランサムウェア **保護の管理] を選択します**。
-4. フォルダー アクセスの制御がオフになっている場合は、有効にする必要があります。 保護 **されたフォルダーを選択します**。
+3. [ **ランサムウェア保護] で、[** ランサムウェア保護 **の管理] を選択します**。
+4. フォルダー アクセスの制御がオフになっている場合は、有効にする必要があります。 [保護 **されたフォルダー] を選択します**。
 5. 次のいずれかの手順を実行します。
    - フォルダーを追加するには、[+ 保護 **されたフォルダーの追加] を選択します**。
    - フォルダーを削除するには、フォルダーを選択し、[削除] を **選択します**。

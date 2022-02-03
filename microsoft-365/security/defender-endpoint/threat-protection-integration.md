@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb60bbd8172c54a7fa6ef9a5c0dce708f5506e3a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4f220b16b0402215aa1fad0681edf241b61062ed
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165692"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321233"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>エンドポイント向け Microsoft Defender および他の Microsoft ソリューション
 
@@ -62,7 +62,7 @@ Microsoft Defender for Cloud Apps では、Microsoft Defender for Endpoint シ�
 
 ### <a name="microsoft-defender-for-office"></a>Microsoft Defender for Office
 
-[Defender for Office 365](/office365/securitycompliance/office-365-atp)は、セーフ リンク、セーフ 添付ファイル、高度なフィッシング対策、スプーフィング インテリジェンス機能を通じて、電子メール メッセージまたはファイル内のマルウェアから組織を保護するのに役立ちます。 Microsoft Defender for Office 365 と Microsoft Defender for Endpoint の統合により、セキュリティ アナリストは攻撃のエントリ ポイントを調査するために上流に移動できます。 脅威インテリジェンスの共有を通じて、攻撃を封じ込め、ブロックすることができます。
+[Defender for Office 365](/office365/securitycompliance/office-365-atp)は、セーフ リンク、セーフ 添付ファイル、高度なフィッシング対策、スプーフィング インテリジェンス機能を通じて、電子メール メッセージやファイルのマルウェアから組織を保護するのに役立ちます。 Microsoft Defender for Office 365 と Microsoft Defender for Endpoint の統合により、セキュリティ アナリストは攻撃のエントリ ポイントを調査するために上流に移動できます。 脅威インテリジェンスの共有を通じて、攻撃を封じ込め、ブロックすることができます。
 
 > [!NOTE]
 > 過去 30 日以内Office 365データの Defender が表示されます。 アラートの場合、最初のOffice 365に基づいて、データの Defender が表示されます。 その後、データは Defender で使用できなくなりました。Office 365。
@@ -77,9 +77,9 @@ Microsoft 365 Defender では、Microsoft Defender for Endpoint およびさま�
 
 [詳細については、Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [統合などの高度な機能を構成する](advanced-features.md)
-- [Microsoft 365 Defender概要](/microsoft-365/security/defender/microsoft-threat-protection)
-- [Microsoft 365 Defender を有効にする](/microsoft-365/security/defender/mtp-enable)
+- [Microsoft 365 Defender概要](/microsoft-365/security/defender/microsoft-365-defender)
+- [Microsoft 365 Defender を有効にする](/microsoft-365/security/defender/m365d-enable)
 - [条件付きアクセスを使用してユーザー、データ、デバイスを保護する](conditional-access.md)

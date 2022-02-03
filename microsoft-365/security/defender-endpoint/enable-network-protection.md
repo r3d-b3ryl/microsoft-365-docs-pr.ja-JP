@@ -13,13 +13,14 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 465a510ef25b0be0ba406c1265096476959d8c19
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: 77c27d268a8f25c047f562a3cfc125092e64d2c7
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218024"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321797"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -41,15 +42,15 @@ ms.locfileid: "61218024"
 
 レジストリ エディターを使用して、ローカル デバイスでネットワーク保護が有効になっているか確認します。
 
-1. タスク バーの **[スタート** ] ボタンを選択し **、「regedit」と** 入力してレジストリ エディターを開きます。
+1. タスク バーの **[スタート** ] ボタンを選択し、「 **regedit」と** 入力してレジストリ エディターを開きます。
 
-2. サイド **メニュー HKEY_LOCAL_MACHINE** を選択します。
+2. サイド **HKEY_LOCAL_MACHINE** メニューから [設定] を選択します。
 
-3. 入れ子になったメニューを [**ソフトウェア** ポリシー] に移動し \> 、Microsoft **Windows Defender Windows Defender** \>  \>  \> **保護に** \> **移動します**。
+3. 入れ子になったメニューを [**ソフトウェア** \> ポリシー] **Microsoft** \> **Windows Defender** \> **Windows Defender** \> **エクスプロイト ガード ネットワーク保護に** \> **移動します**。
 
-キーが見つからない場合は、[**ソフトウェア** Microsoft] に移動し、[Exploit Guard \>  \>  \> **ネットワークWindows Defender Windows Defenderに** \> **移動します**。
+キーが見つからない場合は、**Exploit** \>  \> **Guard** \> ネットワーク保護Windows Defender **Windows Defender**\>に **移動します**。
 
-4. デバイス上のネットワーク保護の現在の状態を表示するには **、[EnableNetworkProtection]** を選択します。
+4. デバイス上のネットワーク保護の現在の状態を表示するには、[ **EnableNetworkProtection** ] を選択します。
 
    - 0 または **Off**
    - 1、または **On**
@@ -69,7 +70,7 @@ ms.locfileid: "61218024"
 
 ### <a name="powershell"></a>PowerShell
 
-1. **[powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
+1. [**powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
 
 2. 次のコマンドレットを入力します。
 
@@ -83,27 +84,27 @@ ms.locfileid: "61218024"
     Set-MpPreference -EnableNetworkProtection AuditMode
     ```
 
-    機能 `Disabled` の代わりに、 `AuditMode` または `Enabled` 機能をオフにする場合に使用します。
+    機能 `Disabled` の代わりに、または `AuditMode` 機能 `Enabled` をオフにする場合に使用します。
 
 ### <a name="mobile-device-management-mdm"></a>モバイル デバイスの管理 (MDM)
 
-[./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender)構成サービス プロバイダー (CSP) を使用して、ネットワーク保護を有効または無効にするか、監査モードを有効にします。
+[./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) 構成サービス プロバイダー (CSP) を使用して、ネットワーク保護を有効または無効にするか、監査モードを有効にします。
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャー
 
-1. 管理センターにサインインMicrosoft エンドポイント マネージャー ( https://endpoint.microsoft.com) .
+1. 管理センター (Microsoft エンドポイント マネージャーサインインしますhttps://endpoint.microsoft.com)。
 
-2. [デバイス構成 **プロファイル**  >  **] [プロファイルの**  >  **作成] に移動します**。
+2. [**DevicesConfiguration** >  profilesCreate  > **プロファイル] に移動します**。
 
-3. [プロファイルの **作成] フライアウト** で **、[プラットフォーム** ] を選択し、[プロファイルの種類] を **[テンプレート** ] **として選択します**。
+3. [プロファイルの **作成] フライアウトで** 、[ **プラットフォーム** ] を選択し、[プロファイル **の種類] を [テンプレート** ] **として選択します**。
 
-4. [テンプレート名 **] で**、テンプレート **の** 一覧から [エンドポイント保護] を選択し、[作成] を **選択します**。
+4. [テンプレート名 **] で、** テンプレート **の** 一覧から [エンドポイント保護] を選択し、[作成] を **選択します**。
 
-4. [エンドポイント保護 **の**  >  **基本] に移動** し、プロファイルの名前を指定し、[次へ] を **選択します**。
+4. [**Endpoint** **protectionBasics** > ] に移動し、プロファイルの名前を入力し、[次へ] を選択 **します**。
 
-5. [構成 **設定] セクション** で、[ネットワーク フィルターネットワークMicrosoft Defender Exploit Guard有効または監査]  >    >    >  **に****移動します**。 **[次へ]** を選択します。
+5. [構成 **設定] セクション** で、[ネットワーク フィルター **Microsoft Defender Exploit Guard** >  **Network** >  **protectionEnable** >  **または Audit] に** 移動 **します**。 [**次へ**] を選択します。
 
-6. 組織の **必要に応じて**、適切なスコープタグ、割 **り** 当て、適用ルールを選択します。 管理者は、より多くの要件を設定できます。
+6. 組織の必要 **に応じて、****適切なスコープ** タグ、割り当て、適用ルールを選択します。 管理者は、より多くの要件を設定できます。
 
 7. すべての情報を確認し、[作成] を **選択します**。
 
@@ -111,15 +112,15 @@ ms.locfileid: "61218024"
 
 ドメインに参加しているコンピューターまたはスタンドアロン コンピューターでネットワーク保護を有効にするには、次の手順を使用します。
 
-1. スタンドアロン コンピューターで、[スタート] に移動 **し、[グループ** ポリシーの編集] を入力して **選択します**。
+1. スタンドアロン コンピューターで、[スタート] に移動 **し、[グループ** ポリシーの編集] を **入力して選択します**。
 
     *-Or-*
 
-    ドメインに参加しているグループ ポリシー管理コンピューターで、グループ [](https://technet.microsoft.com/library/cc731212.aspx)ポリシー管理コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。
+    ドメインに参加しているグループ ポリシー管理コンピューターで、グループ ポリシー管理 [](https://technet.microsoft.com/library/cc731212.aspx)コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して **、Exploit Guard ネットワークWindows保護** \> **Microsoft Defender ウイルス対策Windows Defender** \> **コンポーネント** \> **を展開します**。
+3. ツリーを展開して **、Exploit Guard ネットワークWindows保護Microsoft Defender ウイルス対策** \>  \> Windows Defender **コンポーネントを** \> **展開します**。
 
    > [!NOTE]
    > 以前のバージョンの Windowsでは、グループ ポリシー パスは "Windows Defender ウイルス対策" ではなく "Microsoft Defender ウイルス対策" と表示Microsoft Defender ウイルス対策。
@@ -127,18 +128,18 @@ ms.locfileid: "61218024"
 4. [ユーザーとアプリによる **危険** な Web サイトへのアクセスを防止する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 [オプション] セクションで、次のいずれかのオプションを指定する必要があります。
     - **ブロック** - ユーザーは悪意のある IP アドレスとドメインにアクセスできません。
     - **無効 (既定)** - ネットワーク保護機能が機能しません。 ユーザーは悪意のあるドメインへのアクセスをブロックされません。
-    - **監査モード**- ユーザーが悪意のある IP アドレスまたはドメインにアクセスした場合、イベントはイベント ログWindowsされます。 ただし、ユーザーはアドレスへのアクセスをブロックされません。
+    - **監査モード** - ユーザーが悪意のある IP アドレスまたはドメインにアクセスした場合、イベントはイベント ログWindowsされます。 ただし、ユーザーはアドレスへのアクセスをブロックされません。
 
    > [!IMPORTANT]
-   > ネットワーク保護を完全に有効にするには、[グループ ポリシー] オプションを[有効]に設定し、[オプション] ドロップダウン メニューの [ブロック] を選択する必要があります。
+   > ネットワーク保護を完全に有効にするには、[グループ ポリシー] オプションを [有効] に設定し、[オプション] ドロップダウン メニューの [ブロック] を選択する必要があります。
 
 レジストリ エディターを使用して、ローカル コンピューターでネットワーク保護が有効になっているか確認します。
 
-1. [スタート **] を** 選択し **、「regedit」と** 入力してレジストリ **エディターを開きます**。
+1. [スタート **] を** 選択し、「 **regedit」と** 入力して **レジストリ エディターを開きます**。
 
 2. [ファイル] に **移動HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
-3. **[EnableNetworkProtection] を選択し**、値を確認します。
+3. [ **EnableNetworkProtection] を選択し** 、値を確認します。
    - 0=Off
    - 1=On
    - 2=Audit
@@ -147,12 +148,12 @@ ms.locfileid: "61218024"
 
 1. Configuration Manager コンソールを開きます。
 
-2. Exploit Guard **の [アセットと**  >  **コンプライアンスEndpoint Protection Windows Defender**  >  **に移動します**。 
+2. [アセットと **コンプライアンス] に移動Endpoint Protection** >  >  **Windows Defender Exploit Guard.** 
 
 3. リボン **から [Exploit Guard ポリシーの作成** ] を選択して、新しいポリシーを作成します。
    - 既存のポリシーを編集するには、ポリシーを選択し、リボンまたは右クリック メニューから [プロパティ] を選択します。 [ネットワーク保護 **] タブから** [ネットワーク保護の構成 **] オプションを編集** します。  
 
-4. [全般 **] ページ** で、新しいポリシーの名前を指定し、[ネットワーク保護] オプション **が有効になっているか** 確認します。 
+4. [全般 **] ページ** で、新しいポリシーの名前を指定し、[ネットワーク保護 **] オプションが有効になっているか** 確認します。 
 
 5. [ネットワーク保護 **] ページ** で、[ネットワーク保護の構成] オプションで次のいずれかの **設定を選択** します。
    - **Block**

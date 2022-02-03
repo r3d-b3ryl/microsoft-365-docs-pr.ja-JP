@@ -15,13 +15,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 05881e464e390fce9155f9a173542682a35401c1
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: af7ad58002adcccc51df0e69890a5134e57d4dfe
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937222"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320773"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -35,12 +36,12 @@ ms.locfileid: "61937222"
 
 ## <a name="overview-of-network-protection"></a>ネットワーク保護の概要
 
-ネットワーク保護は、インターネット ベースのイベントからデバイスを保護するのに役立ちます。 ネットワーク保護は、攻撃表面の縮小機能です。 これは、従業員がアプリケーションを通じて危険なドメインにアクセスするのを防ぐのに役立ちます。 インターネット上でフィッシング詐欺、悪用、その他の悪意のあるコンテンツをホストするドメインは危険と見なされます。 ネットワーク保護は[、Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)の範囲を拡張して、低評価ソース (ドメインまたはホスト名に基づく) への接続を試みるすべての送信 HTTP トラフィックをブロックします。
+ネットワーク保護は、インターネット ベースのイベントからデバイスを保護するのに役立ちます。 ネットワーク保護は、攻撃表面の縮小機能です。 これは、従業員がアプリケーションを通じて危険なドメインにアクセスするのを防ぐのに役立ちます。 インターネット上でフィッシング詐欺、悪用、その他の悪意のあるコンテンツをホストするドメインは危険と見なされます。 ネットワーク保護は、[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) の範囲を拡大して、低評価ソース (ドメインまたはホスト名に基づく) への接続を試みるすべての送信 HTTP トラフィックをブロックします。
 
-ネットワーク保護は、Web 保護の保護 [をオペレーティング](web-protection-overview.md) システム レベルまで拡張します。 Edge の Web 保護機能は、サポートされている他のブラウザーやブラウザー以外のアプリケーションに提供されます。 さらに、ネットワーク保護は、エンドポイントの検出と応答で使用する場合に、侵害の指標 (IOC) の可視性とブロック [を提供します](overview-endpoint-detection-response.md)。 たとえば、ネットワーク保護は、特定のドメイン [または](manage-indicators.md) ホスト名をブロックするために使用できるカスタムインジケーターと機能します。
+ネットワーク保護は、Web 保護の保護 [をオペレーティング](web-protection-overview.md) システム レベルまで拡張します。 Edge の Web 保護機能は、サポートされている他のブラウザーやブラウザー以外のアプリケーションに提供されます。 さらに、ネットワーク保護は、エンドポイントの検出と応答で使用される侵害の指標 (IOC) の可視性とブロック [を提供します](overview-endpoint-detection-response.md)。 たとえば、ネットワーク保護は、特定のドメイン [または](manage-indicators.md) ホスト名をブロックするために使用できるカスタムインジケーターと機能します。
 
 > [!TIP]
-> ネットワーク保護のしくみについては、「Microsoft Defender for [](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) Endpoint testground」の demo.wd.microsoft.com を参照してください。
+> ネットワーク保護のしくみについては、「Microsoft Defender for Endpoint testground」の [demo.wd.microsoft.com を参照](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) してください。
 
 ## <a name="requirements-for-network-protection"></a>ネットワーク保護の要件
 
@@ -52,7 +53,7 @@ ms.locfileid: "61937222"
 
 |Windows バージョン|Microsoft Defender ウイルス対策|
 |---|---|
-|Windows 10バージョン 1709 以降 <p> Windows 11 <p> Windows Server 1803 以降|[Microsoft Defender ウイルス対策保護とクラウド](configure-real-time-protection-microsoft-defender-antivirus.md)[配信保護を有効](enable-cloud-protection-microsoft-defender-antivirus.md)にする必要があります|
+|Windows 10バージョン 1709 以降 <p> Windows 11 <p> Windows Server 1803 以降|[Microsoft Defender ウイルス対策保護と](configure-real-time-protection-microsoft-defender-antivirus.md)クラウド配信[保護を有効にする](enable-cloud-protection-microsoft-defender-antivirus.md)必要があります|
 |
 
 サービスを有効にした後、サービスとデバイス (エンドポイントとも呼ばれます) 間の接続を許可するために、ネットワークまたはファイアウォールを構成する必要がある場合があります。
@@ -66,7 +67,7 @@ ms.locfileid: "61937222"
 
 ## <a name="viewing-network-protection-events"></a>ネットワーク保護イベントの表示
 
-ネットワーク保護は [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)で最適に機能します。これにより、アラート調査シナリオの一環として、エクスプロイト保護イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
+ネットワーク保護は [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) で最適に機能します。これにより、アラート調査シナリオの一環として、エクスプロイト保護イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
 
 ネットワーク保護が接続をブロックすると、アクション センターから通知が表示されます。 セキュリティ運用チームは、 [組織の詳細と](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) 連絡先情報を使用して通知をカスタマイズできます。 さらに、個々の攻撃表面の縮小ルールを有効にし、監視する特定の手法に合わせてカスタマイズできます。
 
@@ -74,7 +75,7 @@ ms.locfileid: "61937222"
 
 ## <a name="review-network-protection-events-in-the-microsoft-365-defender-portal"></a>ポータルでネットワーク保護イベントをMicrosoft 365 Defenderする
 
-Microsoft Defender for Endpoint は、アラート調査シナリオの一環として、イベントとブロックに関する詳細 [なレポートを提供します](investigate-alerts.md)。 これらの詳細は、アラート キューの Microsoft 365 Defenderポータル ( ) または高度な検索 [https://security.microsoft.com](https://security.microsoft.com) を[使用して表示できます](advanced-hunting-overview.md)。 [](review-alerts.md) 監査モードを使用 [している場合](audit-windows-defender.md)は、高度な検索を使用して、ネットワーク保護設定が有効になっている場合に環境に与える影響を確認できます。
+Microsoft Defender for Endpoint は、アラート調査シナリオの一環として、イベントとブロックに関する詳細な [レポートを提供します](investigate-alerts.md)。 これらの詳細は、アラート キューの Microsoft 365 Defenderポータル ([https://security.microsoft.com](https://security.microsoft.com)) または高度な検索を[](review-alerts.md)[使用して表示できます](advanced-hunting-overview.md)。 監査モードを使用している [場合](audit-windows-defender.md)は、高度な検索を使用して、ネットワーク保護設定が有効になっている場合に環境に与える影響を確認できます。
 
 高度な検索のクエリの例を次に示します。
 
@@ -89,7 +90,7 @@ DeviceNetworkEvents
 
 1. [XML を直接コピーします](event-views.md)。
 
-2. **[OK]** を選択します。
+2. [**OK**] を選択します。
 
 この手順では、ネットワーク保護に関連する次のイベントのみを表示するためにフィルター処理するカスタム ビューを作成します。
 
@@ -106,15 +107,15 @@ DeviceNetworkEvents
 
 ## <a name="network-protection-and-the-tcp-three-way-handshake"></a>ネットワーク保護と TCP 3 ウェイ ハンドシェイク
 
-ネットワーク保護では [、TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip)による 3 者間ハンドシェイクが完了した後で、サイトへのアクセスを許可またはブロックするかどうかを決定します。 したがって、サイトがネットワーク保護によってブロックされている場合、サイトが実際にブロックされている場合でも、Microsoft 365 Defender ポータルに under というアクションの種類が `ConnectionSuccess` `NetworkConnectionEvents` 表示される場合があります。 `NetworkConnectionEvents` は、ネットワーク保護ではなく TCP 層から報告されます。 3 ウェイ ハンドシェイクが完了すると、サイトへのアクセスがネットワーク保護によって許可またはブロックされます。
+ネットワーク保護では、 [TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip) による 3 者間ハンドシェイクが完了した後で、サイトへのアクセスを許可またはブロックするかどうかを決定します。 したがって、サイト`ConnectionSuccess``NetworkConnectionEvents`がネットワーク保護によってブロックされている場合、サイトが実際にブロックされている場合でも、Microsoft 365 Defender ポータルに under というアクションの種類が表示される場合があります。 `NetworkConnectionEvents` は、ネットワーク保護ではなく TCP 層から報告されます。 3 ウェイ ハンドシェイクが完了すると、サイトへのアクセスがネットワーク保護によって許可またはブロックされます。
 
 その動作の例を次に示します。
 
 1. ユーザーがデバイス上の Web サイトにアクセスしようとしたとします。 サイトは危険なドメインでホストされ、ネットワーク保護によってブロックされる必要があります。  
 
-2. TCP/IP による 3 ウェイ ハンドシェイクが開始されます。 完了する前に、アクション `NetworkConnectionEvents` がログに記録され、そのアクション `ActionType` がとして表示されます `ConnectionSuccess` 。 ただし、3 ウェイ ハンドシェイク プロセスが完了すると、ネットワーク保護によってサイトへのアクセスがブロックされます。 このすべてが非常に迅速に発生します。 [Microsoft Defender SmartScreen でも](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)同様のプロセスが発生します。これは、3 者間ハンドシェイクで決定が完了し、サイトへのアクセスがブロックまたは許可された場合です。
+2. TCP/IP による 3 ウェイ ハンドシェイクが開始されます。 完了する前に、アクション `NetworkConnectionEvents` がログに記録され、そのアクションが `ActionType` として表示されます `ConnectionSuccess`。 ただし、3 ウェイ ハンドシェイク プロセスが完了すると、ネットワーク保護によってサイトへのアクセスがブロックされます。 このすべてが非常に迅速に発生します。 [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) でも同様のプロセスが発生します。これは、3 者間ハンドシェイクによって決定が完了し、サイトへのアクセスがブロックまたは許可された場合です。
 
-3. このポータルMicrosoft 365 Defender、アラートがアラート キューに[一覧表示されます](alerts-queue.md)。 このアラートの詳細には、 と `NetworkConnectionEvents` の両方が含まれます `AlertEvents` 。 ActionType のアイテムがある場合でも、サイトがブロック `NetworkConnectionEvents` されているのを確認できます `ConnectionSuccess` 。
+3. このポータルMicrosoft 365 Defender、アラートがアラート キューに[一覧表示されます](alerts-queue.md)。 このアラートの詳細には、 と の両方が `NetworkConnectionEvents` 含まれます `AlertEvents`。 ActionType のアイテムがある `NetworkConnectionEvents` 場合でも、サイトがブロックされているのを確認できます `ConnectionSuccess`。
 
 ## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>マルチ セッションをWindowsしている仮想デスクトップWindows 10 Enterpriseに関する考慮事項
 

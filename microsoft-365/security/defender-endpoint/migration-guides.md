@@ -16,12 +16,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 11/29/2021
 ms.technology: mde
-ms.openlocfilehash: 050605dd764fdd5a17bbf4514a19d6f8d65e65e7
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 31e9a4497ec4d31ab5623b543d4865b627832f1c
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560710"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321509"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender への切り替え
 
@@ -54,4 +54,4 @@ Defender for Endpoint への移行を検討している場合は、ヘルプを�
 
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection?) 
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)

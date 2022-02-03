@@ -1,53 +1,101 @@
-- name: Microsoft SharePoint Syntex でのフォーム処理について学ぶ
+- name: Microsoft SharePoint Syntex
+  href: index.md
+- name: カスタム モデル
   items:
-    - name: SharePoint Syntex の概要
-      href: index.md
-    - name: ドキュメント理解の概要
-      href: document-understanding-overview.md
-    - name: フォーム処理の概要
-      href: form-processing-overview.md
-    - name: ドキュメント理解とフォーム処理モデルの違い
-      href: difference-between-document-understanding-and-form-processing-model.md
-- name: モデルから始める
+    - name: ドキュメント理解
+      items:
+        - name: 概要
+          href: document-understanding-overview.md
+        - name: モデル間の違い
+          href: difference-between-document-understanding-and-form-processing-model.md
+        - name: サンプル モデルをインポートします
+          href: learn-about-document-understanding-models-through-the-sample-model.md
+        - name: コンテンツ センターを作成する
+          href: create-a-content-center.md
+        - name: 分類子を作成する
+          href: create-a-classifier.md
+        - name: モデルを複製する
+          href: duplicate-a-model.md
+        - name: モデルの名前を変更する
+          href: rename-a-model.md
+        - name: 抽出子を作成する
+          href: create-an-extractor.md
+        - name: 抽出子の名前を変更する
+          href: rename-an-extractor.md
+        - name: 説明の種類
+          href: explanation-types-overview.md
+        - name: 説明テンプレートを使用する
+          href: explanation-templates.md
+        - name: ドキュメント理解モデルの適用
+          href: apply-a-model.md
+        - name: モデルを公開して発見する
+          href: model-discovery.md
+        - name: 保持ラベルを適用する
+          href: apply-a-retention-label-to-a-model.md
+        - name: 秘密度ラベルを適用する
+          href: apply-a-sensitivity-label-to-a-model.md
+        - name: モデルの利用分析
+          href: model-usage-analytics.md
+        - name: 抽出子の作成時に用語ストアの分類を活用する
+          href: leverage-term-store-taxonomy.md
+        - name: SharePoint Syntex アクセシビリティ モード
+          href: accessibility-mode.md
+    - name: フォーム処理
+      items:
+        - name: 概要
+          href: form-processing-overview.md
+        - name: モデル間の違い
+          href: difference-between-document-understanding-and-form-processing-model.md
+        - name: フォーム処理モデルを作成する
+          href: create-a-form-processing-model.md
+        - name: 保持ラベルを適用する
+          href: apply-a-retention-label-to-a-model.md
+        - name: モデルの利用分析
+          href: model-usage-analytics.md
+- name: 事前構築済みモデル
   items:
-    - name: サンプルのドキュメント理解モデルをインポートする
-      href: learn-about-document-understanding-models-through-the-sample-model.md
-    - name: コンテンツ センターを作成する
-      href: create-a-content-center.md
-    - name: 分類子を作成する
-      href: create-a-classifier.md
-    - name: モデルを複製する
-      href: duplicate-a-model.md
-    - name: モデルの名前を変更する
-      href: rename-a-model.md
-    - name: 抽出子を作成する
-      href: create-an-extractor.md
-    - name: 抽出子の名前を変更する
-      href: rename-an-extractor.md
-    - name: 説明の種類
-      href: explanation-types-overview.md
-    - name: 説明テンプレートを使用する
-      href: explanation-templates.md
-    - name: ドキュメント理解モデルの適用
-      href: apply-a-model.md
-    - name: フォーム処理モデルを作成
-      href: create-a-form-processing-model.md
-    - name: コンテンツア センブリを使用してドキュメントを作成する
-      href: content-assembly.md
-    - name: モデルを公開して発見する
-      href: model-discovery.md
+    - name: 請求書と領収書の事前構築済みモデル
+      href: prebuilt-models.md
     - name: 保持ラベルを適用する
       href: apply-a-retention-label-to-a-model.md
-    - name: 秘密度ラベルを適用する
-      href: apply-a-sensitivity-label-to-a-model.md
-    - name: ライブラリ内のメタデータを検索する
+- name: コンテンツ アセンブリ
+  items:
+    - name: コンテンツア センブリを使用してドキュメントを作成する
+      href: content-assembly.md
+- name: メタデータ検索
+  items:
+    - name: ドキュメント ライブラリ内のメタデータを検索する
       href: metadata-search.md
-    - name: モデルの利用分析
-      href: model-usage-analytics.md
-    - name: 抽出子の作成時に用語ストアの分類を活用する
-      href: leverage-term-store-taxonomy.md
-    - name: SharePoint Syntex アクセシビリティ モード
-      href: accessibility-mode.md
+- name: 分類
+  items:
+    - name: SKOS を使用してインポートする
+      href: import-term-set-skos.md
+    - name: SKOS フォーマット リファレンス
+      href: skos-format-reference.md
+    - name: コンテンツタイプをハブにプッシュする
+      href: push-content-type-to-hub.md
+    - name: 用語ストア レポート
+      href: term-store-analytics.md
+- name: 設定と管理
+  items:
+    - name: SharePoint Syntex のライセンス
+      href: syntex-licensing.md
+    - name: SharePoint Syntexを設定する
+      href: set-up-content-understanding.md
+    - name: コンテンツ センターを作成する
+      href: create-a-content-center.md
+    - name: PowerShell を使用して SharePoint Syntex を管理する
+      items:
+        - name: 概要
+          href: powershell-syntex-intro.md
+        - name: モデルのエクスポートとインポート
+          href: powershell-syntex-import-export.md
+        - name: モデルの公開
+          href: powershell-syntex-publishing.md
+        - name: モデルによる要求処理
+          href: powershell-syntex-processing.md
+        - name: モデルの説明を使った作業
+          href: powershell-syntex-explanations.md
 - name: 導入
   items:
     - name: 導入を開始する
@@ -66,33 +114,5 @@
           href: solution-manage-contracts-step2.md
         - name: 手順 3. Power Automateを使用する
           href: solution-manage-contracts-step3.md
-- name: 設定と管理
-  items:
-    - name: SharePoint Syntex のライセンス
-      href: syntex-licensing.md
-    - name: SharePoint Syntexを設定する
-      href: set-up-content-understanding.md
-    - name: PowerShell を使用して SharePoint Syntex を管理する
-      items:
-        - name: 概要
-          href: powershell-syntex-intro.md
-        - name: モデルのエクスポートとインポート
-          href: powershell-syntex-import-export.md
-        - name: モデルの公開
-          href: powershell-syntex-publishing.md
-        - name: モデルによる要求処理
-          href: powershell-syntex-processing.md
-        - name: モデルの説明を使った作業
-          href: powershell-syntex-explanations.md
-- name: コンテンツサービス
-  items:
-    - name: SKOS を使用してインポートする
-      href: import-term-set-skos.md
-    - name: SKOS フォーマット リファレンス
-      href: skos-format-reference.md
-    - name: コンテンツタイプをハブにプッシュする
-      href: push-content-type-to-hub.md
-    - name: 用語ストア レポート
-      href: term-store-analytics.md
 - name: 拡張性
   href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
