@@ -271,18 +271,16 @@
           href: eu-data-storage-locations.md
 - name: ID
   items:
-    - name: ロードマップ
-      href: identity-roadmap-microsoft-365.md
-    - name: 計画
+    - name: 概要
+      href: deploy-identity-solution-overview.md
+    - name: 手順 1. ID モデルを決定する
+      href: deploy-identity-solution-identity-model.md
+    - name: 手順 2. 特権アカウントを保護する
+      href: protect-your-global-administrator-accounts.md
+    - name: 手順 3. ユーザー アカウントを保護する
+      href: microsoft-365-secure-sign-in.md
+    - name: 手順 4. ID モデルを展開する
       items:
-        - name: ID モデル
-          href: about-microsoft-365-identity.md
-        - name: ハイブリッド ID
-          href: plan-for-directory-synchronization.md
-    - name: 展開
-      items:
-        - name: グローバル管理者アカウントを保護する
-          href: protect-your-global-administrator-accounts.md
         - name: クラウド専用 ID
           href: cloud-only-identities.md
         - name: ハイブリッド ID
@@ -318,8 +316,6 @@
                       href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
                 - name: Microsoft Azure での SharePoint Server 2013 の障害復旧
                   href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
-        - name: 安全なユーザー サインイン
-          href: microsoft-365-secure-sign-in.md
     - name: 管理
       items:
         - name: ユーザー アカウント
