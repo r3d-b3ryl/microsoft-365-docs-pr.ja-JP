@@ -2,7 +2,7 @@
 title: Microsoft 365 テスト環境のクラウド専用の ID およびデバイス アクセスの前提条件
 author: kelleyvice-msft
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 manager: laurawi
 audience: ITPro
@@ -10,17 +10,12 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Strat_O365_Enterprise
-ms.custom: ''
+  - M365-subscription-management
+  - Strat_O365_Enterprise
+ms.custom: null
 description: クラウド専用の認証用の前提条件で ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: c684e8598f7dd23218143f9f7707c815d834fda5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172013"
 ---
+
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のクラウド専用の ID およびデバイス アクセスの前提条件
 
 *このテスト ラボ ガイドは、エンタープライズ テスト環境Microsoft 365にのみ使用できます。*
@@ -36,7 +31,7 @@ ms.locfileid: "60172013"
 3. セルフサービスのパスワードのリセットを構成する
 4. 多要素認証を構成する
 5. ドメインに参加しているコンピューターのデバイスの自動登録Windowsする
-6. Azure ADパスワード保護を構成する 
+6. パスワード保護Azure AD構成する 
 7. Azure AD Identity Protection を有効化する
 8. Exchange Online および Skype for Business Online に対して先進認証を有効化する
 
@@ -81,7 +76,7 @@ User 2 アカウントの多要素認証のみテストします。
 
 ドメイン[に参加しているコンピューターの](/azure/active-directory/devices/hybrid-azuread-join-plan)デバイスの自動登録を有効にするには、次のWindows従います。
 
-## <a name="phase-6-configure-azure-ad-password-protection"></a>フェーズ 6: Azure のパスワード保護AD構成する 
+## <a name="phase-6-configure-azure-ad-password-protection"></a>フェーズ 6: パスワード保護Azure AD構成する 
 
 既知 [の脆弱なパスワードとその](/azure/active-directory/authentication/concept-password-ban-bad) バリアントをブロックするには、次の手順に従います。
 
@@ -109,7 +104,7 @@ Skype for Business Online については、
   Get-CsOAuthConfiguration
   ```
 
-その結果、ID およびデバイス アクセスのクラウド専用前提条件構成[](../security/office-365-security/identity-access-prerequisites.md#prerequisites)の要件を満たすテスト環境が得られます。 
+その結果、ID およびデバイス アクセスのクラウド専用前提条件構成の要件[](../security/office-365-security/identity-access-prerequisites.md#prerequisites)を満たすテスト環境が得られます。 
 
 ## <a name="next-step"></a>次の手順
 
@@ -119,10 +114,10 @@ Skype for Business Online については、
 
 [その他の ID のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md#identity)
 
-[ID ロードマップ](identity-roadmap-microsoft-365.md)
+[ID の展開](deploy-identity-solution-overview.md)
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

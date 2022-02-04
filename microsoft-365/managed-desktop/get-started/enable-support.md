@@ -9,21 +9,16 @@ manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7f0c6283d6e5a2fec722c3051420ea7d52ad3f64
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034727"
 ---
+
 # <a name="enable-user-support-features"></a>ユーザー サポート機能を有効にする
 
-独自のユーザー サポートを提供する場合でも、パートナーと一緒に提供する場合でも、サポート プロバイダーが管理者特権のデバイス アクセスを要求したり、必要に応じて Microsoft Managed Desktop に問題をエスカレートしたりするには、次の手順に従います。
+独自のユーザー サポートを提供する場合でも、パートナーと一緒にサポートを提供する場合でも、サポート プロバイダーがデバイスアクセスの昇格を要求したり、必要に応じて Microsoft Managed Desktop に問題をエスカレートしたりするには、以下の手順に従います。
 
-1. まだアカウントを持ってない場合、ユーザーは Microsoft Azure Active Directory デスクトップ デバイスと同Azure Active Directory (AAD) ドメインにアカウントを必要とします。
-2. 手順 1 のユーザー アカウントを、Roles-Support **の** モダン Workplace セキュリティ グループに追加AAD。
+1. まだアカウントを持ってない場合、ユーザーは Microsoft Azure Active Directory (AAD) ドメインと同じアカウントを必要とします。
+1. ユーザー アカウントを [モダン ワークプレース] Roles-Support **[パートナー**] セキュリティ グループに追加Azure Active Directory (AAD)。
 
-<!--when available, add link to downloadable articles at DLC--> 
+<!--when available, add link to downloadable articles at DLC-->
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft Managed Desktop の使用を開始する手順
 

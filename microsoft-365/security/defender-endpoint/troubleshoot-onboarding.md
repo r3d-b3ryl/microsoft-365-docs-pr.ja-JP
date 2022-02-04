@@ -14,13 +14,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 8ae4bc7235bd0a794569f1658b58095a3eda134c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166736"
 ---
+
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -38,15 +33,17 @@ ms.locfileid: "61166736"
 問題が発生した場合は、Microsoft Defender for Endpoint オンボーディング プロセスのトラブルシューティングが必要になる場合があります。
 このページでは、展開ツールのいずれかを使用して展開するときに発生する可能性のあるオンボーディングの問題と、デバイスで発生する可能性のある一般的なエラーをトラブルシューティングするための詳細な手順を示します。
 
+オンボーディング ツールで問題のトラブルシューティングを開始する前に、デバイスをサービスにオンボーディングするための最小要件が満たされるのを確認することが重要です。 [デバイスをサービスにオンボード](minimum-requirements.md)するライセンス、ハードウェア、およびソフトウェアの要件について説明します。
+
 ## <a name="troubleshoot-issues-with-onboarding-tools"></a>オンボーディング ツールに関する問題のトラブルシューティング
 
-オンボーディング プロセスを完了し、1 時間後に [デバイス[](investigate-machines.md)] リストにデバイスが表示されない場合は、オンボーディングまたは接続の問題を示している可能性があります。
+オンボーディング プロセスを完了し、1 時間後に [デバイス] リストにデバイス[](investigate-machines.md)が表示されない場合は、オンボーディングまたは接続の問題を示している可能性があります。
 
 ### <a name="troubleshoot-onboarding-when-deploying-with-group-policy"></a>グループ ポリシーを使用して展開する場合のオンボーディングのトラブルシューティング
 
 グループ ポリシーによる展開は、デバイスでオンボーディング スクリプトを実行して行います。 グループ ポリシー コンソールは、展開が成功したかどうかを示しません。
 
-オンボーディング プロセスが完了し、1 時間後に [デバイス[](investigate-machines.md)] リストにデバイスが表示されない場合は、デバイス上のスクリプトの出力を確認できます。 詳細については、「スクリプトを使用 [して展開する場合のオンボードのトラブルシューティング」を参照してください](#troubleshoot-onboarding-when-deploying-with-a-script)。
+オンボーディング プロセスが完了し、1 時間後に [デバイス] リストにデバイス[](investigate-machines.md)が表示されない場合は、デバイス上のスクリプトの出力を確認できます。 詳細については、「スクリプトを使用 [して展開する場合のオンボーディングのトラブルシューティング」を参照してください](#troubleshoot-onboarding-when-deploying-with-a-script)。
 
 スクリプトが正常に完了した場合は、「[](#troubleshoot-onboarding-issues-on-the-device)デバイスのオンボードの問題のトラブルシューティング」を参照して、発生する可能性がある追加のエラーについて説明します。
 
@@ -62,7 +59,7 @@ Configuration Manager の次のバージョンを使用してデバイスをオ�
 
 展開が失敗した場合は、デバイス上のスクリプトの出力を確認できます。
 
-オンボーディングが正常に完了したが、デバイスが 1 時間後に [デバイス] リスト[](#troubleshoot-onboarding-issues-on-the-device)に表示されない場合は、「発生する可能性がある追加のエラーについては、デバイスのオンボードの問題のトラブルシューティング」を参照してください。
+オンボーディングが正常に完了したが、デバイスが 1 時間後に [デバイス] リストに表示されない場合は[](#troubleshoot-onboarding-issues-on-the-device)、「発生する可能性がある追加のエラーについては、デバイスのオンボードの問題のトラブルシューティング」を参照してください。
 
 ### <a name="troubleshoot-onboarding-when-deploying-with-a-script"></a>スクリプトを使用して展開する場合のオンボーディングのトラブルシューティング
 
@@ -70,7 +67,7 @@ Configuration Manager の次のバージョンを使用してデバイスをオ�
 
 1. [スタート **] ボタンを** クリックし、「 **イベント ビューアー」と入力** し、Enter キーを **押します**。
 
-2. [ログ アプリケーション **Windows] に** \> **移動します**。
+2. [ログ アプリケーションWindows **] に移動** \> **します**。
 
 3. **WDATPOnboarding イベント ソースからイベントを** 探します。
 
@@ -87,11 +84,11 @@ Configuration Manager の次のバージョンを使用してデバイスをオ�
 |:---:|---|---|
 |`5`|オフボード データが見つかりましたが、削除できなかった|レジストリのアクセス許可を確認する (具体的には) <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.|
 |`10`|オンボード データをレジストリに書き込めなかった|レジストリのアクセス許可を確認する (具体的には) <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`. <p> スクリプトが管理者として実行されたと確認します。|
-|`15`|SENSE サービスの開始に失敗しました|サービスの正常性 (コマンド) を `sc query sense` 確認します。 中間の状態 *('Pending_Stopped'*、 *'Pending_Running'*) に含めず、(管理者権限を持つ) スクリプトを再度実行してください。 <p> デバイスがバージョン 1607 Windows 10実行してコマンドを実行している場合は、 `sc query sense` `START_PENDING` デバイスを再起動します。 デバイスを再起動しても問題が解決しない場合は、KB4015217 にアップグレードして、もう一度オンボーディングを試してください。|
-|`15`|SENSE サービスの開始に失敗しました|エラーのメッセージが次の場合:システム エラー 577 またはエラー 1058 が発生した場合は、Microsoft Defender ウイルス対策 ELAM ドライバーを有効にする必要があります。手順については[、「Microsoft Defender ウイルス対策](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)がポリシーによって無効にされていないか確認する」を参照してください。|
+|`15`|SENSE サービスの開始に失敗しました|サービスの正常性 (コマンド) を確認`sc query sense` します。 中間の状態 (*''Pending_Stopped',* *'Pending_Running'*) に入って、(管理者権限を持つ) スクリプトを再度実行してください。 <p> デバイスがバージョン 1607 `sc query sense` `START_PENDING`でWindows 10コマンドを実行している場合は、デバイスを再起動します。 デバイスを再起動しても問題が解決しない場合は、KB4015217 にアップグレードして、もう一度オンボーディングを試してください。|
+|`15`|SENSE サービスの開始に失敗しました|エラーのメッセージが次の場合:システム エラー 577 またはエラー 1058 が発生した場合は、Microsoft Defender ウイルス対策 ELAM ドライバーを有効にする必要があります。手順については、「[Microsoft Defender ウイルス対策](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) がポリシーによって無効にされていないか確認する」を参照してください。|
 |`30`|スクリプトがサービスの実行を待機できなかった|サービスの開始に時間がかかったか、開始しようとしている間にエラーが発生している可能性があります。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。|
 |`35`|スクリプトが必要なオンボーディング状態レジストリ値を見つけ出すに失敗しました|SENSE サービスが初めて開始されると、オンボード状態がレジストリの場所に書き込み <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> スクリプトは数秒後に検索に失敗しました。 手動でテストし、それがそこにあるか確認できます。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。|
-|`40`|SENSE サービスオンボーディングの状態が **1 に設定されていない**|SENSE サービスが正しくオンボードに失敗しました。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。|
+|`40`|SENSE サービスオンボーディングの状態が 1 に **設定されていない**|SENSE サービスが正しくオンボードに失敗しました。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。|
 |`65`|不十分な特権|管理者特権でスクリプトを再度実行します。|
 |
 
@@ -119,7 +116,7 @@ Intune でポリシーを構成し、デバイスに反映されない場合は�
 |:---:|---|---|---|---|
 |0x87D1FDE8|-2016281112|修復に失敗しました|オンボード <p> オフボード|**考えられる原因:** 誤った BLOB でオンボーディングまたはオフボードが失敗しました。署名が間違っていたり、PreviousOrgIds フィールドが見つからない場合。 <p> **トラブルシューティングの手順:** <p> [デバイス イベント ログのエージェントオンボーディング エラーの表示] セクション [でイベントの ID を確認](#view-agent-onboarding-errors-in-the-device-event-log) します。 <p> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に[従](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)Windows。|
 ||||オンボード <p> オフボード <p> SampleSharing|**考えられる原因:** Microsoft Defender for Endpoint Policy レジストリ キーが存在しないか、OMA DM クライアントに書き込み権限が付与されていない。 <p> **トラブルシューティングの手順:** 次のレジストリ キーが存在することを確認します。 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> 存在しない場合は、管理者特権でコマンドを開き、キーを追加します。|
-||||SenseIsRunning <p> OnboardingState <p> OrgId|**考えられる原因:** 読み取り専用プロパティによる修復の試行。 オンボーディングに失敗しました。 <p> **トラブルシューティングの手順:** 「デバイスでのオンボードの問題の [トラブルシューティング」のトラブルシューティング手順を確認します](#troubleshoot-onboarding-issues-on-the-device)。 <p> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に[従](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)Windows。|
+||||SenseIsRunning <p> OnboardingState <p> OrgId|**考えられる原因:** 読み取り専用プロパティによる修復の試行。 オンボーディングに失敗しました。 <p> **トラブルシューティングの手順:** 「デバイスでのオンボードの問題のトラブルシューティング [」のトラブルシューティング手順を確認します](#troubleshoot-onboarding-issues-on-the-device)。 <p> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に[従](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)Windows。|
 ||||すべて|**考えられる原因:** Microsoft Defender for Endpoint をサポートされていない SKU/プラットフォーム (特に Holographic SKU) に展開します。 <p> 現在サポートされているプラットフォーム: <p> Enterprise、教育、およびProfessional。<p> サーバーはサポートされていません。|
 |0x87D101A9|-2016345687|SyncML(425): 要求されたコマンドは、送信者が受信者に適切なアクセス制御アクセス許可 (ACL) を持たないので失敗しました。|すべて|**考えられる原因:** Microsoft Defender for Endpoint をサポートされていない SKU/プラットフォーム (特に Holographic SKU) に展開します。<p> 現在サポートされているプラットフォーム: <p> Enterprise、教育、およびProfessional。|
 |
@@ -170,16 +167,16 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
 1. [スタート **] ボタンを** クリックし、「 **イベント ビューアー」と入力** し、Enter キーを **押します**。
 
-2. [イベント **ビューアー (ローカル)] ウィンドウ** で、[**アプリケーション** とサービス ログ] \> **を展開します。Microsoft** Windows SENSE \>  \> **です**。
+2. [イベント **ビューアー (ローカル)]** ウィンドウで、[**アプリケーション**\>とサービス ログ] **を展開します。Microsoft** \>  \> Windows **SENSE。**
 
    > [!NOTE]
    > SENSE は、Microsoft Defender for Endpoint をサポートする動作センサーを参照するために使用される内部名です。
 
 3. [操作 **] を** 選択してログを読み込む。
 
-4. [操作] **ウィンドウで** 、[現在のログの **フィルター] をクリックします**。
+4. [操作] **ウィンドウで** 、[現在のログ **のフィルター] をクリックします**。
 
-5. [フィルター **] タブの**[イベント レベル] **で、[重大**] 、[警告] **、および**[**エラー**] を選択し **、[OK] をクリックします**。
+5. [フィルター] **タブの** [イベント レベル **] で、[重大**]、**[** 警告]、および **[エラー**] を選択し、[OK] をクリック **します**。 
 
    ![イベント ビューアー ログ フィルターのイメージ。](images/filter-log.png)
 
@@ -193,7 +190,7 @@ MDM イベント ログを表示して、オンボーディング中に発生す
    |:---:|---|---|
    |`5`|Microsoft Defender for Endpoint service が変数でサーバーに接続 _できなかった_|[デバイスにインターネット アクセス権が設定されている必要があります](#ensure-the-device-has-an-internet-connection)。|
    |`6`|Microsoft Defender for Endpoint Service はオンボードされていないので、オンボーディング パラメーターが見つかりませんでした。 エラー コード: _変数_|[オンボーディング スクリプトを再度実行します](configure-endpoints-script.md)。|
-   |`7`|Microsoft Defender for Endpoint service では、オンボーディング パラメーターの読み取りが失敗しました。 エラー コード: _変数_|[デバイスにインターネット アクセス権が設定されているのを](#ensure-the-device-has-an-internet-connection)確認し、オンボーディング プロセス全体を再度実行します。|
+   |`7`|Microsoft Defender for Endpoint service では、オンボーディング パラメーターの読み取りが失敗しました。 エラー コード: _変数_|[デバイスにインターネット アクセス権が設定されている必要](#ensure-the-device-has-an-internet-connection)があります。その後、オンボーディング プロセス全体を再度実行します。|
    |`9`|Microsoft Defender for Endpoint service は、開始の種類を変更できなかった。 エラー コード: 変数|オンボーディング中にイベントが発生した場合は、再起動し、オンボーディング スクリプトの実行を再試みします。 詳細については、「オンボード スクリプトを [再度実行する」を参照してください](configure-endpoints-script.md)。 <br><br>オフボード中にイベントが発生した場合は、サポートにお問い合わせください。|
    |`10`|Microsoft Defender for Endpoint Service は、オンボーディング情報を保持できなかった。 エラー コード: 変数|オンボーディング中にイベントが発生した場合は、オンボーディング スクリプトの実行を再試みします。 詳細については、「オンボード スクリプトを [再度実行する」を参照してください](configure-endpoints-script.md)。 <br><br>問題が解決しない場合は、サポートにお問い合わせください。|
    |`15`|Microsoft Defender for Endpoint では、URL 変数を使用してコマンド チャネルを開始 _できません。_|[デバイスにインターネット アクセス権が設定されている必要があります](#ensure-the-device-has-an-internet-connection)。|
@@ -226,7 +223,7 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
 
-   a. [スタート **] ボタンを** クリックし **、「cmd」** と入力し、Enter キーを **押します**。
+   a. [スタート **] ボタンを** クリックし、「 **cmd」** と入力し、Enter キーを **押します**。
 
    b. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
@@ -240,13 +237,13 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
    ![diagtrack の sc クエリ コマンドの結果。](images/windefatp-sc-qc-diagtrack.png)
 
-   に設定されていない場合は、自動的に開始するサービス `START_TYPE` `AUTO_START` を設定する必要があります。
+   に設定 `START_TYPE` されていない場合 `AUTO_START`は、自動的に開始するサービスを設定する必要があります。
 
 **コマンド ラインを使用して、診断データ Windowsを自動的に開始する設定を行います。**
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
 
-   a. [スタート **] ボタンを** クリックし **、「cmd」** と入力し、Enter キーを **押します**。
+   a. [スタート **] ボタンを** クリックし、「 **cmd」** と入力し、Enter キーを **押します**。
 
    b. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
@@ -262,7 +259,7 @@ MDM イベント ログを表示して、オンボーディング中に発生す
    sc qc diagtrack
    ```
 
-4. サービスを開始します。 コマンド プロンプトで、次のコマンドを入力し **、Enter** キーを押します。
+4. サービスを開始します。 コマンド プロンプトで、次のコマンドを入力し、Enter キーを **押します**。
 
    ```console
    sc start diagtrack
@@ -274,14 +271,14 @@ Microsoft Defender ATP センサーでは、センサー データをレポー�
 
 WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー コンテキスト アプリケーションとは独立しています。特定の環境で使用できるプロキシ サーバーを検出できる必要があります。
 
-センサーがサービス接続を確立するには [、「Microsoft Defender for Endpoint](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls) Service URL へのクライアント接続を確認する」のトピックで説明されている手順に従います。
+センサーがサービス接続を確立するには、「 [Microsoft Defender for Endpoint Service URL](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls) へのクライアント接続を確認する」のトピックで説明されている手順に従います。
 
 検証が失敗し、環境でプロキシを使用してインターネットに接続している場合は、「プロキシとインターネット接続の設定の構成」のトピックで説明されている手順 [に従](configure-proxy-internet.md) います。
 
 ### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>ポリシーによってMicrosoft Defender ウイルス対策が無効にされていないか確認する
 
 > [!IMPORTANT]
-> 以下は、2020年 8 月 (バージョン 4.18.2007.8) 更新プログラムを Microsoft Defender ウイルス対策 にまだ受信していないデバイスにのみ適用されます。
+> 以下は、2020 年 8  月 (バージョン 4.18.2007.8) 更新プログラムを Microsoft Defender ウイルス対策 にまだ受信していないデバイスにのみ適用されます。
 >
 > この更新プログラムは、システム Microsoft Defender ウイルス対策経由でクライアント デバイスで無効にできないことを確認します。
 
@@ -302,11 +299,11 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> この設定は `disableAntiSpyware` 中止され、2020 年 8 月 (バージョン 4.18.2007.8) 更新プログラムが Microsoft Defender ウイルス対策 に更新された現在、すべての Windows 10 デバイスでは無視されます。
+> `disableAntiSpyware`この設定は中止され、2020 年 8 月 (バージョン 4.18.2007.8) 更新プログラムが Microsoft Defender ウイルス対策 に更新された現在、すべての Windows 10 デバイスでは無視されます。
 
 - ポリシーをクリアした後、オンボーディング手順を再度実行します。
 
-- 以前のレジストリ キーの値を確認して、レジストリ キーを開いてポリシーが無効になっているか確認することもできます `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` 。
+- 以前のレジストリ キーの値を確認して、レジストリ キーを開いてポリシーが無効になっているか確認することもできます `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`。
 
     ![ユーザーのレジストリ キーのMicrosoft Defender ウイルス対策。](images/atp-disableantispyware-regkey.png)
 
@@ -331,21 +328,21 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 また、次の情報を確認する必要があります。
 
-- タスク マネージャーの [プロセス] タブで Microsoft Defender for Endpoint Service が **実行されている****のを確認します**。 例:
+- タスク マネージャーの [プロセス] タブで、Microsoft Defender for Endpoint Service **が実行されている** 状態 **を確認します**。 例:
 
     ![Microsoft Defender for Endpoint Service が実行されているプロセス ビューのイメージ。](images/atp-task-manager.png)
 
-- イベント **ビューアー アプリケーション** \> **とサービス ログ操作** マネージャー \> **をチェックして** 、エラーが発生した場合を確認します。
+- イベント **ビューアー アプリケーションと** \> **サービス ログ操作**\>マネージャー **をチェックして**、エラーが発生した場合を確認します。
 
-- [**サービス]** で、**サーバー** Microsoft Monitoring Agent実行しているサーバーを確認します。 例えば、
+- [**サービス]** で **、サーバー Microsoft Monitoring Agent** 実行しているサーバーを確認します。 例えば、
 
     ![サービスのイメージ。](images/atp-services.png)
 
-- [Microsoft Monitoring Agent  \> **Azure Log Analytics (OMS) で**、ワークスペースを確認し、状態が実行されているのを確認します。
+- Azure **Microsoft Monitoring Agent Log** \> **Analytics (OMS) で**、ワークスペースを確認し、状態が実行されているのを確認します。
 
     ![[プロパティ] Microsoft Monitoring Agentイメージ。](images/atp-mma-properties.png)
 
-- デバイスがポータルの [デバイス] リスト **に反映されているのを** 確認します。
+- デバイスがポータルの [デバイス] リストに反映 **されているのを** 確認します。
 
 ## <a name="confirming-onboarding-of-newly-built-devices"></a>新しく構築されたデバイスのオンボーディングの確認
 
@@ -359,11 +356,11 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 - このシナリオでは、オンボード パッケージが展開された場合でも、SENSE サービスは自動的に開始されません
 
 > [!NOTE]
-> SENSE サービスが Windows 10 Version 1809 または Windows Windows Server 2019、または Windows Server 2022 と[2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日の更新プログラムのロールアップで開始するには、OOBE の後のユーザー ログオンが必要なくなりました。 Windows 10バージョン 1909 と[2021 年 4](https://support.microsoft.com/kb/5001396)月の更新プログラムのロールアップ 。 Windows 10バージョン 2004/20H2 と[2021 年 4 月 28](https://support.microsoft.com/kb/5001391)日の更新プログラムのロールアップ 。 
+> SENSE サービスが Windows 10 Version 1809 または Windows Windows Server 2019、または Windows Server 2022 と [2021](https://support.microsoft.com/kb/5001384) 年 4 月 22 日の更新プログラムのロールアップで開始するには、OOBE 後のユーザー ログオンが必要なくなりました。 Windows 10バージョン 1909 と [2021 年 4](https://support.microsoft.com/kb/5001396) 月の更新プログラムのロールアップ。 Windows 10バージョン 2004/20H2 と [2021 年 4 月 28 日の更新プログラムのロールアップ。](https://support.microsoft.com/kb/5001391) 
 
 
 > [!NOTE]
-> 次の手順は、次の手順を使用する場合にのみMicrosoft Endpoint Configuration Manager。 アプリケーションを使用したオンボーディングの詳細については、「Microsoft Endpoint Configuration Manager [Microsoft Defender for Endpoint」を参照してください](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
+> 次の手順は、次の手順を使用する場合にのみMicrosoft Endpoint Configuration Manager。 アプリを使用したオンボーディングの詳細については、「Microsoft Endpoint Configuration Manager [Microsoft Defender for Endpoint」を参照してください](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 
 1. アプリケーションを作成Microsoft Endpoint Configuration Manager。
 
@@ -381,11 +378,11 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
     ![構成 4 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-4.png)
 
-5. [展開 **の種類] で、[** 追加] **を選択します**。
+5. [展開 **の種類] で[** 追加] **を選択します**。
 
     ![構成 5 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-5.png)
 
-6. [展開 **の種類情報を手動で指定する] を選択し**、[次へ] を **選択します**。
+6. [展開 **の種類情報を手動で指定する] を選択** し、[次へ] を **選択します**。
 
     ![構成 6 Microsoft Endpoint Configuration Managerのイメージ。](images/mecm-6.png)
 
@@ -393,19 +390,19 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
     ![構成 7 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-7.png)
 
-8. [ **コンテンツ インストール** \> **プログラム] で、** 次のコマンドを指定します `net start sense` 。
+8. [ **コンテンツ インストール プログラム** \> **] で、** 次のコマンドを指定します `net start sense`。
 
     ![configuration8 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-8.png)
 
-9. [ **検出方法] で**、[ **ルールを構成してこの** 展開の種類の存在を検出する] を選択し、[句の追加] **を選択します**。
+9. [ **検出方法] で**、[ **ルールの構成] を選択して**、この展開の種類の存在を検出し、[句の追加] **を選択します**。
 
     ![configuration9 のMicrosoft Endpoint Configuration Managerイメージ。](images/mecm-9.png)
 
-10. 次の検出ルールの詳細を指定し **、[OK] を選択します**。
+10. 次の検出ルールの詳細を指定し、[OK] を **選択します**。
 
     ![構成 10 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-10.png)
 
-11. [検出 **方法] で、[次** へ] **を選択します**。
+11. [検出 **方法] で、[次** へ] を **選択します**。
 
     ![構成 11 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-11.png)
 
@@ -425,7 +422,7 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
     ![構成 15 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-15.png)
 
-16. [ **完了] で**、[閉じる] **を選択します**。
+16. [ **完了] で**、[閉じる] を **選択します**。
 
     ![構成 16 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-16.png)
 
@@ -437,25 +434,25 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
     ![構成 18 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-18.png)
 
-    その後、状態が表示されます ![ 。configuration19 のイメージMicrosoft Endpoint Configuration Manager表示されます。](images/mecm-19.png)
+    その後、状態が表示されます。configuration19 ![のイメージMicrosoft Endpoint Configuration Manager表示されます。](images/mecm-19.png)
 
-19. [ **完了] で**、[閉じる] **を選択します**。
+19. [ **完了] で**、[閉じる] を **選択します**。
 
     ![configuration20 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-20.png)
 
-20. これで、アプリを右クリックして [展開] を選択して、アプリケーションを **展開できます**。
+20. これで、アプリを右クリックして [展開] を選択して、アプリケーションを展開 **できます**。
 
     ![configuration21 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-21.png)
 
-21. [全般 **] で** 、[ **依存関係のコンテンツを自動的に配布する] と [参照]** を **選択します**。
+21. [全般 **] で****、[依存関係のコンテンツを自動的に配布する] と [参照]** を **選択します**。
 
     ![configuration22 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-22.png)
 
-22. [コンテンツ **] で [次** へ] **を選択します**。
+22. [コンテンツ **] で [次** へ] を **選択します**。
 
     ![configuration23 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-23.png)
 
-23. [展開 **の設定] で**、[次へ] を **選択します**。
+23. [展開 **の設定] で、[** 次へ] を **選択します**。
 
     ![configuration24 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-24.png)
 
@@ -463,11 +460,11 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
     ![configuration25 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-25.png)
 
-25. [ **ユーザー エクスペリエンス] で**、[期限内またはメンテナンス 期間中に変更をコミットする **] (** 再起動が必要) を選択し、[次へ] を **選択します**。
+25. [ **ユーザー エクスペリエンス] で**、[期限内またはメンテナンス期間中に変更をコミットする ( 再起動が必要) ] を選択し、[次へ **]** を選択 **します**。
 
     ![configuration26 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-26.png)
 
-26. [アラート **] で [** 次へ] **を選択します**。
+26. [アラート **] で [** 次へ] を **選択します**。
 
     ![configuration27 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-27.png)
 
@@ -475,13 +472,13 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
     ![configuration28 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-28.png)
 
-    その後、状態は ![ configuration29 のイメージMicrosoft Endpoint Configuration Managerされます。](images/mecm-29.png)
+    その後、状態は configuration29 ![Microsoft Endpoint Configuration Manager表示されます。](images/mecm-29.png)
 
-28. [ **完了] で**、[閉じる] **を選択します**。
+28. [ **完了] で**、[閉じる] を **選択します**。
 
     ![configuration30 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-30.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint のトラブルシューティング](troubleshoot-mdatp.md)
 - [デバイスのオンボード](onboard-configure.md)

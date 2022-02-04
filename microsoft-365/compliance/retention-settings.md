@@ -1,29 +1,24 @@
 ---
 title: コンテンツを自動的に保持または削除するように保持設定を構成する
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+  - M365-security-compliance
+  - SPO_Content
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 81a5219826fc1f8e4bc43a54d0687306738a57da
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520934"
 ---
+
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
@@ -53,9 +48,6 @@ ms.locfileid: "61520934"
 
 ### <a name="configuration-information-for-adaptive-scopes"></a>アダプティブ スコープの構成情報
 
-> [!NOTE]
-> 新しい機能としてのアダプティブ スコープは現在プレビュー段階であり、変更される可能性があります。 代替オプションは静的スコープであり、アダプティブ スコープが導入される前と同じ動作を提供し、アダプティブ スコープがビジネス要件を満たしていない場合に使用できます。
-
 アダプティブ スコープを使用することを選択すると、必要なアダプティブ スコープの種類を選択するように求められます。 アダプティブ スコープには 3 つの異なる種類があり、それぞれが異なる属性またはプロパティをサポートしています。
 
 | アダプティブ スコープの種類 | サポートされている属性またはプロパティは次の通りです |
@@ -72,7 +64,9 @@ ms.locfileid: "61520934"
 表にリストされている属性とプロパティは、単純なクエリ ビルダーを使用してアダプティブ スコープを構成するときに簡単に指定できます。 次のセクションで説明するように、追加の属性とプロパティは高度なクエリ ビルダーでサポートされています。
 
 > [!TIP]
-> 高度なクエリ ビルダーの使用に関する追加情報については、次のウェビナーを参照してください: [アダプティブ ポリシー スコープを使用したユーザーおよびグループの高度なクエリの構築](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
+> 高度なクエリ ビルダーの使用の詳細については、次のウェビナーを参照してください。 
+> - [アダプティブ ポリシー スコープを使用したユーザーとグループの高度なクエリの構築](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
+> - [アダプティブ ポリシー スコープを使用した SharePoint サイトの高度なクエリの構築](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
 保持のための単一のポリシーには、1 つまたは複数のアダプティブ スコープを含めることができます。
 
@@ -82,10 +76,10 @@ ms.locfileid: "61520934"
 
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
     
-    - レコード管理を使用している場合:
+    - レコード管理ソリューションを使用している場合:
         - **[ソリューション]** > **「レコード管理]** > **[アダプティブ スコープ]** タブ > + **「スコープの作成]**
         
-    - レコード管理を使用していない場合:
+    - Information Governance ソリューションを使用している場合:
        - **[ソリューション]** > **[情報ガバナンス]** > **[アダプティブ スコープ]** タブ > + **「スコープの作成]**
     
     ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。 

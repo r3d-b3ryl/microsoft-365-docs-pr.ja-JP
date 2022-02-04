@@ -9,39 +9,36 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Adm_O365
-- O365p_AddUsersWithDirSync
-- O365M_AddUsersWithDirSync
-- O365E_HRCSetupAADConnectAboutLM617031
-- O365E_AddUsersWithDirSync
+  - Adm_O365
+  - O365p_AddUsersWithDirSync
+  - O365M_AddUsersWithDirSync
+  - O365E_HRCSetupAADConnectAboutLM617031
+  - O365E_AddUsersWithDirSync
 ms.collection:
-- Ent_O365
-- M365-identity-device-management
+  - Ent_O365
+  - M365-identity-device-management
 search.appverid:
-- MET150
-- MOP150
-- MOE150
-- MBS150
+  - MET150
+  - MOP150
+  - MOE150
+  - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: サブスクリプションでクラウド専用 ID を使用している場合Microsoft 365グループを作成する方法について説明します。
-ms.openlocfilehash: 55c836b4508399a86144c677e2fe28fc529a935a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190583"
 ---
+
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365専用 ID
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-クラウド専用 ID を使用すると、すべてのユーザー、グループ、連絡先が Azure Active Directory (Azure AD) テナントの Microsoft 365 サブスクリプションに格納されます。 クラウド専用 ID の基本的なコンポーネントを次に示します。
+クラウド専用 ID モデルを選択した場合は、Microsoft 365 サブスクリプション用の Azure Active Directory (Azure AD) テナントが既に存在し、すべてのユーザー、グループ、連絡先を格納できます。 手順 [2](protect-your-global-administrator-accounts.md) の管理者アカウントと、このソリューションの手順 [3](microsoft-365-secure-sign-in.md) のユーザー アカウントの保護を設定した後、組織で必要な新しいアカウントとグループの作成を開始する準備ができました。
+
+クラウド専用 ID の基本的なコンポーネントを次に示します。
  
 ![クラウド専用 ID の基本的なコンポーネント。](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-組織のユーザーとユーザー アカウントは、さまざまな方法で分類できます。 たとえば、従業員であり、永続的なステータスを持つユーザーもいます。 一部のベンダー、請負業者、または一時的なステータスを持つパートナーがあります。 一部のユーザー は、ユーザー アカウントを持たず、対話とコラボレーションをサポートするために特定のサービスとリソースへのアクセスを許可する必要がある外部ユーザーです。 次に例を示します。
+組織のユーザーとユーザー アカウントは、さまざまな方法で分類できます。 たとえば、従業員であり、永続的なステータスを持つユーザーもいます。 一部のベンダー、請負業者、または一時的なステータスを持つパートナーがあります。 一部のユーザー は、ユーザー アカウントを持たず、対話とコラボレーションをサポートするために特定のサービスとリソースへのアクセスを許可する必要がある外部ユーザーです。 例:
 
 - テナント アカウントは、組織内でクラウド サービスのライセンスを付与したユーザーを表します。
 
@@ -51,12 +48,12 @@ ms.locfileid: "60190583"
 
 また、一部のクラウド サービスを、ユーザー アカウントを持たない組織外のユーザーと共有できます。この場合、このような外部ユーザーのグループも指定する必要があります。
 
-Azure ADグループは、クラウド環境の管理を簡素化する目的で使用できます。 たとえば、Azure ADを使用すると、次の方法を実行できます。
+クラウド環境の管理を簡略化Azure AD、複数の目的でグループを使用できます。 たとえば、グループを使用Azure AD、次の方法を実行できます。
 
 - グループ ベースのライセンスを使用して、Microsoft 365アカウントがメンバーとして追加されたとすぐに自動的にユーザー アカウントにライセンスを割り当てる。
 - 部署名などのユーザー アカウント属性に基づいて、ユーザー アカウントを特定のグループに動的に追加します。
 - サービスとしてのソフトウェア (SaaS) アプリケーションのユーザーを自動的にプロビジョニングし、多要素認証 (MFA) および他の条件付きアクセス ポリシーを使用してそれらのアプリケーションへのアクセスを保護します。
-- オンライン チーム サイトに対するアクセス許可SharePointレベルをプロビジョニングします。
+- チームおよびオンライン チーム サイトに対するアクセス許可SharePointレベルをプロビジョニングします。
 
 ## <a name="next-steps-for-cloud-only-identity"></a>クラウド専用 ID の次の手順
 

@@ -10,17 +10,12 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
-- CSH
+  - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '概要: 高可用性フェデレーション認証をホストMicrosoft Azureインフラストラクチャを構成して、ユーザーにMicrosoft 365。'
-ms.openlocfilehash: b8a1bd473a84c382f8e609508298aaba44d0c85e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198447"
 ---
+
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1: Azure を構成する
 
 このフェーズでは、フェーズ 2、3、および 4 で仮想マシンをホストするリソース グループ、仮想ネットワーク (VNet)、可用性セットを Azure で作成します。 このフェーズは、「[Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)」に進む前に完了しておく必要があります。 すべての[フェーズについては、「高可用性フェデレーション認証を Azure Microsoft 365展開](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)する」を参照してください。
@@ -57,7 +52,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
     
 2. その結果のビットを 10 進数に変換して、ゲートウェイ サブネットのサイズに設定されたプレフィックス長のアドレス空間として表現します。
     
-この [計算を実行する PowerShell](address-space-calculator-for-azure-gateway-subnets.md) コマンド ブロックおよび C# または Python コンソール アプリケーションについては、「Azure ゲートウェイ サブネットのアドレス空間計算」を参照してください。
+この [計算を実行する PowerShell](address-space-calculator-for-azure-gateway-subnets.md) コマンド ブロックおよび C# Python コンソール アプリケーションについては、「Azure ゲートウェイ サブネットのアドレス空間計算」を参照してください。
   
 これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。
   
@@ -109,7 +104,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
 次に、Azure インフラストラクチャの構築を開始して、フェデレーション認証をホストMicrosoft 365。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「[使い始める」を参照Azure PowerShell。](/powershell/azure/get-started-azureps) 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「[使い始める」を参照Azure PowerShell](/powershell/azure/get-started-azureps)。 
   
 まず、Azure PowerShell プロンプトを起動して、自分のアカウントにログインします。
   
@@ -118,7 +113,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> カスタム設定に基づいてすぐに実行できる PowerShell コマンド ブロックを生成するには、次の構成[ブックMicrosoft Excel使用します](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
+> カスタム設定に基づいてすぐに実行できる PowerShell コマンド ブロックを生成するには、次の構成[Microsoft Excel使用します](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 次のコマンドを使用して、サブスクリプションの名前を取得します。
   
@@ -159,25 +154,25 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 次に示すコマンドで、新しいリソース グループを作成します。
   
 ```powershell
-$locName="<an Azure location, such as West US>&quot;
-$rgName=&quot;<Table R - Item 1 - Name column>&quot;
+$locName="<an Azure location, such as West US>"
+$rgName="<Table R - Item 1 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName=&quot;<Table R - Item 2 - Name column>&quot;
+$rgName="<Table R - Item 2 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName=&quot;<Table R - Item 3 - Name column>&quot;
+$rgName="<Table R - Item 3 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName=&quot;<Table R - Item 4 - Name column>&quot;
+$rgName="<Table R - Item 4 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
 次に、Azure 仮想ネットワークとそのサブネットを作成します。
   
 ```powershell
-$rgName=&quot;<Table R - Item 4 - Resource group name column>&quot;
-$locName=&quot;<your Azure location>&quot;
-$vnetName=&quot;<Table V - Item 1 - Value column>&quot;
-$vnetAddrPrefix=&quot;<Table V - Item 4 - Value column>&quot;
-$dnsServers=@( &quot;<Table D - Item 1 - DNS server IP address column>&quot;, &quot;<Table D - Item 2 - DNS server IP address column>" )
+$rgName="<Table R - Item 4 - Resource group name column>"
+$locName="<your Azure location>"
+$vnetName="<Table V - Item 1 - Value column>"
+$vnetAddrPrefix="<Table V - Item 4 - Value column>"
+$dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
 # Get the shortened version of the location
 $locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
@@ -304,7 +299,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 ![Azure のフェデレーション認証を Azure インフラストラクチャMicrosoft 365高可用性サーバーのフェーズ 1。](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [ [フェーズ 2: このワークロードの](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 構成を続行するドメイン コントローラーを構成する] を使用します。
   
@@ -316,4 +311,4 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 [Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/index.yml)
 
-[ID とMicrosoft 365についてAzure Active Directory](about-microsoft-365-identity.md)
+[ID Microsoft 365について](deploy-identity-solution-identity-model.md)

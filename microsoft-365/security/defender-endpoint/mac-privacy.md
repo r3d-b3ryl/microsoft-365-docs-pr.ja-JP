@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint on Mac のプライバシー
 description: プライバシー制御、プライバシーに影響を与えるポリシー設定を構成する方法、および Microsoft Defender for Endpoint on Mac で収集された診断データに関する情報。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, privacy, diagnostic
+keywords: 'microsoft、 defender、 Microsoft Defender for Endpoint, mac, privacy, diagnostic'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,16 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+  - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ca6e57fdbb8e2e197d3f57d07ec70694748a48
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170983"
 ---
+
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender のプライバシー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -51,7 +46,7 @@ Microsoft Defender for Endpoint クライアント ソフトウェアの診断�
 
 - **必須**: Microsoft Defender for Endpoint をセキュリティで保護し、最新の状態に保ち、インストールされているデバイスで期待通り実行するために必要な最小データ。
 
-- **オプション**: Microsoft が製品の改善を行い、問題の検出、診断、修復に役立つ拡張情報を提供する追加データ。
+- **オプション**: Microsoft が製品の改善に役立ち、問題の検出、診断、修復に役立つ拡張情報を提供する追加のデータ。
 
 既定では、必要な診断データだけが Microsoft に送信されます。
 
@@ -71,7 +66,7 @@ Microsoft Defender for Endpoint クライアント ソフトウェアの診断�
 
 IT 管理者の場合は、エンタープライズ レベルでこれらのコントロールを構成できます。
 
-前のセクションで説明したさまざまな種類のデータのプライバシー制御については、「MacOS での Microsoft Defender for Endpoint の基本設定の設定」 [で詳しく説明します](mac-preferences.md)。
+前のセクションで説明した各種データのプライバシー制御については、「 [MacOS での Microsoft Defender for Endpoint](mac-preferences.md) の基本設定の設定」で詳しく説明します。
 
 新しいポリシー設定と同様に、組織でポリシー設定を広く実装する前に、構成する設定が望ましい効果を得られるか確認するために、制限された制御された環境で慎重にテストする必要があります。
 
@@ -85,7 +80,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 次のフィールドは、すべてのイベントで一般的と見なされます。
 
-|フィールド|説明|
+|Field|説明|
 |---|---|
 |platform|アプリが実行されているプラットフォームの広範な分類。 Microsoft は、問題が発生している可能性のあるプラットフォームを特定して、問題の優先順位を正しく設定できます。|
 |machine_guid|デバイスに関連付けられている一意の識別子。 Microsoft は、問題がインストールの選択セットに影響を与えるかどうか、および影響を受け取るユーザーの数を特定できます。|
@@ -95,7 +90,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 |product_guid|製品の一意の識別子。 Microsoft は、製品の異なる味に影響を与える問題を区別できます。|
 |app_version|macOS アプリケーションの Microsoft Defender for Endpoint のバージョン。 Microsoft は、問題を表示している製品のバージョンを特定して、問題の優先順位を正しく設定できます。|
 |sig_version|セキュリティ インテリジェンス データベースのバージョン。 Microsoft が問題を表示しているセキュリティ インテリジェンスのバージョンを特定して、問題を正しく優先順位付けできます。|
-|supported_compressions|アプリケーションでサポートされている圧縮アルゴリズムの一覧 (例 `['gzip']` : . Microsoft は、アプリケーションと通信するときに使用できる圧縮の種類を理解できます。|
+|supported_compressions|アプリケーションでサポートされている圧縮アルゴリズム `['gzip']`の一覧 (例: . Microsoft は、アプリケーションと通信するときに使用できる圧縮の種類を理解できます。|
 |release_ring|デバイスが関連付けられているリング (Insider Fast、Insider Slow、Production など)。 Microsoft は、問題が発生している可能性のあるリリース リングを特定して、問題の優先順位を正しく設定できます。|
 
 ### <a name="required-diagnostic-data"></a>必須診断データ
@@ -110,7 +105,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|フィールド|説明|
+|Field|説明|
 |---|---|
 |correlation_id|インストールに関連付けられた一意の識別子。|
 |version|パッケージのバージョン。|
@@ -136,7 +131,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 |edr.early_preview|デバイスを早期プレビュー機能でEDRするかどうか。|
 |edr.group_id|検出および応答コンポーネントで使用されるグループ識別子。|
 |edr.tags|ユーザー定義のタグ。|
-|機能。 \[オプションの機能名\]|プレビュー機能の一覧と、機能が有効かどうか。|
+|機能。\[オプションの機能名\]|プレビュー機能の一覧と、機能が有効かどうか。|
 
 #### <a name="product-and-service-usage-data-events"></a>製品とサービスの利用状況データ イベント
 
@@ -144,7 +139,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|フィールド|説明|
+|Field|説明|
 |---|---|
 |from_version|元のセキュリティ インテリジェンスバージョン。|
 |to_version|新しいセキュリティ インテリジェンスのバージョン。|
@@ -161,7 +156,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|フィールド|説明|
+|Field|説明|
 |---|---|
 |v1_crash_count|クライアント コンピューターで V1 エンジン プロセスが 1 時間ごとにクラッシュした回数|
 |v2_crash_count|クライアント コンピューターで V2 エンジン プロセスが 1 時間ごとにクラッシュした回数|
@@ -171,7 +166,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|フィールド|説明|
+|Field|説明|
 |---|---|
 |version|macOS 上のエンドポイント用 Microsoft Defender のバージョン。|
 |instance_id|カーネル拡張機能の起動時に生成される一意の識別子。|
@@ -207,7 +202,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|フィールド|説明|
+|Field|説明|
 |---|---|
 |connection_retry_timeout|クラウドとの通信時に接続の再試行が時間切れになります。|
 |file_hash_cache_maximum|製品キャッシュのサイズ。|
@@ -229,7 +224,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|フィールド|説明|
+|Field|説明|
 |---|---|
 |how_to_check|製品の更新プログラムのチェック方法 (自動または手動など) を決定します。|
 |channel_name|デバイスに関連付けられているチャネルを更新します。|
@@ -242,18 +237,19 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|フィールド|説明|
+|Field|説明|
 |---|---|
 |sha256|サポート ログの SHA256 識別子。|
-|サイズ|サポート ログのサイズ。|
-|original_path|サポート ログへのパス (常に */Library/Application Support/Microsoft/Defender/wdavdiag/ の下*)。|
+|size|サポート ログのサイズ。|
+|original_path|サポート ログへのパス (常に *[/Library/Application Support/Microsoft/Defender/wdavdiag/] の下*)。|
 |format|サポート ログの形式。|
+|metadata|サポート ログの内容に関する情報。|
 
 #### <a name="diagnostic-log-upload-completed-report"></a>診断ログのアップロード完了レポート
 
 収集されるフィールドは、次のとおりです。
 
-|フィールド|説明|
+|Field|説明|
 |---|---|
 |request_id|サポート ログのアップロード要求の相関関係 ID。|
 |sha256|サポート ログの SHA256 識別子。|
@@ -269,7 +265,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|フィールド|説明|
+|Field|説明|
 |---|---|
 |pkt_ack_timeout|次のプロパティは、カーネル拡張機能の起動後に発生したイベントの数を表す集計された数値です。|
 |pkt_ack_conn_timeout||

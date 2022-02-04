@@ -9,13 +9,8 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: e2d1a6d2817d4e117bb80c737e71958c7a80ce75
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346292"
 ---
+
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
 Microsoft Managed Desktop [は、OneDrive for Business](/onedrive/plan-onedrive-enterprise) Microsoft 管理デスクトップ デバイスのクラウド ストレージ サービスとして使用します。 これにより、デバイスが可能な限りステートレスになります。 ユーザーは、サインインするデバイスに関係なく、ファイルを検索できます。 たとえば、Microsoft Managed Desktop デバイスを新しいデバイスに置き換える場合、ファイルは自動的に新しいデバイスに同期されます。
@@ -33,12 +28,15 @@ Microsoft Managed Devices では、既定でこれらの設定が自動的に構
 Microsoft Managed Desktop ユーザーが新しいデバイスを受け取ると、デバイスのセットアップ中に Azure 資格情報を入力して、初回実行のエクスペリエンスを実行します。 このプロセスが完了すると、デスクトップにアクセスし、ユーザーエクスペリエンスをOneDriveできます。
 
 1. システムは、ユーザー OneDrive構成済みであり、ユーザーが自動的にユーザーにサインインOneDrive。
+
 :::image type="content" source="media/onedrive-sync.png" alt-text="同期中の通知を読み取り、OneDriveでファイルを編集できます。OneDriveをクリックしてファイルを表示します。":::
 
 2. システムは、既知のフォルダー OneDriveが構成されていることをユーザーに伝えます。
+
 :::image type="content" source="media/onedrive-folders.png" alt-text="IT 部門が重要なフォルダーをバックアップしたという通知を読み取ります。これで、フォルダーがバックアップされ、OneDriveデバイスから使用できます。":::
 
 3. デバイスがリセットまたは再イメージ化されると、デスクトップ上のアイコンが重複しMicrosoft Edge、Microsoft Teamsアイコンが自動的にOneDrive 同期。この情報はエクスプローラーに表示されます。
+
 :::image type="content" source="media/onedrive-teams.png" alt-text="エクスプローラーで、Teamsとエッジの一覧が表示され、チェック ボックスがオフで、テキストのホバー値が [同期から除外] と表示されます。":::
 
 ## <a name="onedrive-sync-restrictions"></a>OneDrive 同期制限

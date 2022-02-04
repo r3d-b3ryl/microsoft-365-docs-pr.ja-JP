@@ -12,19 +12,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4e58cf272688a238a428fb6b15aed568b7fa51a4
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322061"
 ---
+
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開をセットアップする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -82,6 +77,9 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 エンドポイント用 Microsoft Defender へのオンボーディングは簡単です。 ナビゲーション メニューから、[エンドポイント] セクションの下の任意のアイテムを選択するか、インシデント、ハンティング、アクション センター、脅威分析などの Microsoft 365 Defender 機能を選択してオンボーディング プロセスを開始します。
 
 Web ブラウザーから、ポータルのMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">します</a>。
+
+## <a name="data-center-location"></a>データ センターの場所
+Microsoft Defender for Endpoint は、ユーザーが使用する場所と同じ場所にデータを[Microsoft 365 Defender。](/microsoft-365/security/defender/m365d-enable) まだ Microsoft 365 Defenderが有効にされていない場合は、Microsoft Defender for Endpoint へのオンボーディングも有効になりますMicrosoft 365 Defender と、アクティブな Microsoft 365 セキュリティ サービスの場所に基づいて、新しいデータ センターの場所が自動的に選択されます。 選択したデータ センターの場所が画面に表示されます。
 
 ## <a name="network-configuration"></a>ネットワークの構成
 

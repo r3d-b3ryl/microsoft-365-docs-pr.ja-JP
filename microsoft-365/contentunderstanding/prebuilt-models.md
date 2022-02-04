@@ -7,24 +7,17 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: null
 ms.collection:
-- enabler-strategic
-- m365initiative-syntex
+  - enabler-strategic
+  - m365initiative-syntex
 ms.localizationpriority: medium
 description: ビルド済みモデルを作成および構成する方法については、SharePoint Syntex。
-ms.openlocfilehash: bb557c9b98a265516da93e6e661caabf91994486
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322621"
 ---
+
 # <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>事前構築済みのモデルを使用して、Microsoft の請求書または領収書から情報を抽出SharePoint Syntex
 
 事前構築済みのモデルは、ドキュメントとドキュメント内の構造化された情報を認識するように事前にトレーニングされています。 新しいカスタム モデルを最初から作成する代わりに、既存の事前トレーニング済みモデルを反復処理して、組織のニーズに合った特定のフィールドを追加できます。 
-
-事前構築済みのモデルでは、光学式文字認識 (OCR) とディープ ラーニング モデルを組み合わせて使用して、特定のドキュメントの種類に共通する定義済みのテキストフィールドとデータ フィールドを識別および抽出します。 まず、作成済みのモデルに対してファイルの 1 つを分析します。 次に、目的に合った検出されたフィールドを選択します。 モデルが必要なフィールドを検出しない場合は、別のファイルを使用してもう一度分析できます。
 
 現在、使用できる事前構築済みのモデルは、請求書と受領書の 2 つがあります。
 

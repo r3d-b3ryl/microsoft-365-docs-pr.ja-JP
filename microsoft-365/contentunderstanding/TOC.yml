@@ -54,10 +54,14 @@
           href: model-usage-analytics.md
 - name: 事前構築済みモデル
   items:
+    - name: 概要
+      href: prebuilt-overview.md
     - name: 請求書と領収書の事前構築済みモデル
       href: prebuilt-models.md
     - name: 保持ラベルを適用する
       href: apply-a-retention-label-to-a-model.md
+    - name: モデルの利用分析
+      href: model-usage-analytics.md
 - name: コンテンツ アセンブリ
   items:
     - name: コンテンツア センブリを使用してドキュメントを作成する

@@ -32,7 +32,7 @@ conceptualContent:
   items:
     - title: 主要な要素を展開
       links:
-        - url: identity-roadmap-microsoft-365.md
+        - url: deploy-identity-solution-overview.md
           itemType: how-to-guide
           text: ID インフラストラクチャ
         - url: /windows/deployment/

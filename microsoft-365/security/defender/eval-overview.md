@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 06/25/2021
@@ -16,18 +16,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
+  - M365-security-compliance
+  - m365solution-overview
+  - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8e2a2555969da5b293a843732bbe333336e86b6e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106517"
 ---
+
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Microsoft 365 Defender の評価とパイロット
 
 **適用対象:**
@@ -42,7 +37,7 @@ Microsoft では、既存の製品版サブスクリプションで評価を作�
 
 ## <a name="the-anatomy-of-an-attack"></a>攻撃の解剖学
 
-Microsoft 365 Defenderは、クラウドベースの統合型、侵害前および侵害後のエンタープライズ防御スイートです。 エンドポイント、ID、アプリ、電子メール、共同作業アプリケーション、およびすべてのデータ間で防止、検出、調査、応答を調整します。 
+Microsoft 365 Defenderは、クラウドベースの統合型、侵害前および侵害後のエンタープライズ防御スイートです。 エンドポイント、ID *、* アプリ、電子メール、共同作業アプリケーション、およびすべてのデータ間で防止、検出、調査、応答を調整します。 
 
 この図では、攻撃が進行中です。 フィッシングメールは、組織内の従業員の受信トレイに届き、知らず知らずのうちにメールの添付ファイルを開きます。 これによりマルウェアがインストールされ、機密データの盗難で終わる可能性のある一部のイベントが発生します。 ただし、この場合、Defender for Office 365操作中です。
 
@@ -50,8 +45,8 @@ Microsoft 365 Defenderは、クラウドベースの統合型、侵害前およ�
 
 この図について:
 
-- **Exchange Online Protection、Microsoft** Defender for Office 365の一部は、フィッシング メールを検出し、メール フロー ルールを使用して受信トレイに届かなかったことを確認できます。
-- **Office 365** 安全な添付ファイルの Defender は添付ファイルをテストし、有害と判断します。そのため、受信したメールはユーザーが操作できないか、ポリシーによってメールが届かないので、メールが全く届かないので、問題ありません。
+- **Exchange Online Protection** Microsoft Defender for Office 365の一部であるこのメールは、フィッシング メールを検出し、メール フロー ルールを使用して受信トレイに届かねない状態にできます。
+- **Office 365** 安全な添付ファイルの Defender は添付ファイルをテストし、有害と判断します。そのため、受信したメールはユーザーが操作できないか、ポリシーによってメールが届かないので、メールが全く届かないので、
 - **Defender for Endpoint は** 、企業ネットワークに接続し、悪用される可能性のあるデバイスとネットワークの脆弱性を検出するデバイスを管理します。
 - **Defender for Identity は** 、特権エスカレーションやリスクの高い横方向の移動など、アカウントの突然の変更に注意します。 また、セキュリティ チームによる修正のために、拘束されていない Kerberos 委任など、簡単に悪用された ID の問題について報告します。
 - **Microsoft Defender for Cloud Apps** は、不可能な移動、資格情報へのアクセス、異常なダウンロード、ファイル共有、メール転送アクティビティのような異常な動作に気付き、セキュリティ チームに報告します。
@@ -66,7 +61,7 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 |Exchange Online Protection     |      Exchange Online Protectionは、スパムやマルウェアから組織を保護するのに役立つネイティブのクラウドベースの SMTP リレーおよびフィルター サービスです。      |   [Exchange Online Protection (EOP) の概要 - Office 365](../office-365-security/overview.md)     |
 |Microsoft Defender for Office 365     |     Microsoft Defender for Office 365、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによる悪意のある脅威から組織を保護します。      |    [Microsoft Defender for Office 365 - Office 365](../office-365-security/overview.md)    |
 |Microsoft Defender for Endpoint     |     Microsoft Defender for Endpoint は、デバイス保護、侵害後の検出、自動調査、推奨される対応のための統合プラットフォームです。      |   [Microsoft Defender for Endpoint - Windows セキュリティ](../defender-endpoint/microsoft-defender-endpoint.md)    |
-|Microsoft Defender for Cloud Apps     |      Microsoft Defender for Cloud Apps は、クラウド アプリに深い可視性、強力なデータ制御、強化された脅威保護をもたらす包括的なクロス SaaS ソリューションです。       |    [Defender for Cloud Appsとは?](/cloud-app-security/what-is-cloud-app-security)    |
+|Microsoft Defender for Cloud Apps     |      Microsoft Defender for Cloud Apps は、クラウド アプリに深い可視性、強力なデータ制御、強化された脅威保護をもたらす包括的なクロス SaaS ソリューションです。       |    [Defender for Cloud Apps とは](/cloud-app-security/what-is-cloud-app-security)    |
 |Azure AD Identity Protection|Azure AD Id Protection は、数十億回のサインイン試行からのリスク データを評価し、このデータを使用して、各サインインが環境に対するリスクを評価します。 このデータは、条件付Azure AD構成方法に応じて、アカウント アクセスを許可または防止するために、ユーザーが使用します。 Azure AD Id Protection は、ユーザーのライセンスとは別にMicrosoft 365 Defender。 このファイルは、Azure Active Directory Premium P2。|[Identity Protection とは](/azure/active-directory/identity-protection/overview-identity-protection)|
 | | | |
 
@@ -76,10 +71,10 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 
 ![Microsoft 365 Defenderアーキテクチャを使用します。](../../media/defender/m365-defender-eval-architecture.png)
 
-この図では、次の例を示します。
+この図について:
 
 - Microsoft 365 Defenderすべての Defender コンポーネントからの信号を組み合わせ、ドメイン間で拡張検出と応答 (XDR) を提供します。 これには、統合インシデント キュー、攻撃の停止に対する自動応答、自己修復 (侵害されたデバイス、ユーザー ID、メールボックスの場合)、クロス脅威検出、および脅威分析が含まれます。
-- Microsoft 365 Defenderメッセージ、リンク (URL)、およびコラボレーション ツールによって生じうる悪意のある脅威から組織を保護します。 これらのアクティビティに起因するシグナルを、Microsoft 365 Defender。 Exchange Online Protection (EOP) は、受信メールと添付ファイルに対するエンドツーエンドの保護を提供するために統合されています。
+- Microsoft Defender for Office 365 は、電子メール メッセージ、リンク (URL) や共同作業ツールによって生じる悪意のある脅威から組織を保護します。 これらのアクティビティに起因するシグナルを、Microsoft 365 Defender。 Exchange Online Protection (EOP) は、受信メールと添付ファイルに対するエンドツーエンドの保護を提供するために統合されています。
 - Microsoft Defender for Identity は、Active Directory フェデレーション サービス (AD FS) およびオンプレミスの Active Directory ドメイン サービス (AD DS) を実行しているサーバーからの信号を収集します。 これらのシグナルを使用して、侵害されたアカウントを使用してオンプレミス環境のワークステーション間を横方向に移動するハッカーからの保護など、ハイブリッド ID 環境を保護します。
 - Microsoft Defender for Endpoint は、組織で使用されているデバイスからの信号を収集し、保護します。
 - Microsoft Defender for Cloud Apps は、組織によるクラウド アプリの使用からのシグナルを収集し、環境とこれらのアプリの間で流れるデータ (認可されたクラウド アプリと認可されていないクラウド アプリの両方を含む) を保護します。
@@ -101,7 +96,7 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 |------|---------|---------|
 |1     | [評価環境の作成](eval-create-eval-environment.md)       |この手順を実行すると、ライセンスの試用版Microsoft 365 Defender。         |
 |2     | [Id の Defender を有効にする](eval-defender-identity-overview.md)        | アーキテクチャ要件を確認し、評価を有効にし、さまざまな攻撃の種類を特定して修復するためのチュートリアルを説明します。   |
-|3     | [[Defender for Office 365 ](eval-defender-office-365-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。 このコンポーネントには、Exchange Online Protectionが含まれるので、ここで両方を実際に *評価* します。      |
+|3     | [[Defender for Office 365 ](eval-defender-office-365-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。 このコンポーネントには、Exchange Online Protectionが含まれるので、ここでは両方を実際に *評価* します。      |
 |4     | [エンドポイントの Defender を有効にする ](eval-defender-endpoint-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。         |
 |5     | [クラウド アプリの Microsoft Defender を有効にする](eval-defender-mcas-overview.md)        |  アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。        |
 |6      | [脅威の調査と対応](eval-defender-investigate-respond.md)        |   攻撃をシミュレートし、インシデント対応機能の使用を開始します。      |

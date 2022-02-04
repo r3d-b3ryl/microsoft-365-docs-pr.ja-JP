@@ -1,6 +1,6 @@
 ---
 title: Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
-ms.reviewer: ''
+ms.reviewer: null
 description: エンタープライズで Microsoft Defender for Endpoint on Linux を構成する方法について説明します。
 keywords: Microsoft、Defender、Microsoft Defender for Endpoint、Linux、インストール、展開、アンインストール、puppet、ansible、linux、redhat、ubuntu、debian、sles、suse、centos
 ms.prod: m365-security
@@ -13,16 +13,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+  - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 210bfdec98ef4e603b5dc4e844688c9495d01a79
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214167"
 ---
+
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "62214167"
 
 構成プロファイルは 、キーで識別されるエントリ (基本設定の名前を示す) で構成される .json ファイルで、その後に、基本設定の性質に依存する値が続きます。 数値などの単純な値や、入れ子になった基本設定のリストなどの複雑な値を指定できます。
 
-通常、構成管理ツールを使用して、名前を持つファイルを場所 ```mdatp_managed.json``` にプッシュします ```/etc/opt/microsoft/mdatp/managed/``` 。
+通常、構成管理ツールを使用して、 ```mdatp_managed.json``` 名前を持つファイルを場所にプッシュします ```/etc/opt/microsoft/mdatp/managed/```。
 
 構成プロファイルのトップ レベルには、製品全体の基本設定と、製品のサブエリアのエントリが含まれています。これは、次のセクションで詳しく説明します。
 
@@ -68,10 +63,10 @@ ms.locfileid: "62214167"
 
 ウイルス対策エンジンの適用設定を指定します。 適用レベルを設定するには、次の 3 つの値があります。
 
-- リアルタイム ( ): リアルタイム保護 (ファイルへのアクセス時のスキャン `real_time` ) が有効になります。
-- オンデマンド ( ): `on_demand` ファイルはオンデマンドでのみスキャンされます。 この場合:
+- リアルタイム (): リアルタイム保護 (`real_time`ファイルへのアクセス時のスキャン) が有効です。
+- オンデマンド (`on_demand`): ファイルはオンデマンドでのみスキャンされます。 この場合:
   - リアルタイム保護はオフです。
-- パッシブ ( `passive` ): パッシブ モードでウイルス対策エンジンを実行します。 この場合:
+- パッシブ (`passive`): パッシブ モードでウイルス対策エンジンを実行します。 この場合:
   - リアルタイム保護はオフです。
   - オンデマンド スキャンが有効です。
   - 脅威の自動修復が無効になります。
@@ -156,7 +151,7 @@ ms.locfileid: "62214167"
 
 #### <a name="exclusion-merge-policy"></a>除外マージ ポリシー
 
-除外のマージ ポリシーを指定します。 管理者定義の除外とユーザー定義の除外 ( ) の組み合わせ、または管理者定義の除外 ( ) のみを `merge` 組み合わせて指定できます `admin_only` 。 この設定は、ローカル ユーザーが独自の除外を定義するのを制限するために使用できます。
+除外のマージ ポリシーを指定します。 管理者定義の除外とユーザー定義の除外 (`merge`) の組み合わせ、または管理者定義の除外 () のみを組み合わせて指定できます`admin_only`。 この設定は、ローカル ユーザーが独自の除外を定義するのを制限するために使用できます。
 
 <br>
 
@@ -246,12 +241,12 @@ ms.locfileid: "62214167"
 |**キー**|拡張機能|
 |**データ型**|String|
 |**指定可能な値**|有効なファイル拡張子|
-|**コメント**|適用 *できるのは* 、$type FileExtension が *除外されている場合のみです。*|
+|**コメント**|適用 *できるのは、$type**が excludedFileExtension である場合のみです。*|
 |
 
 ##### <a name="process-excluded-from-the-scan"></a>スキャンから除外されるプロセス*
 
-すべてのファイル アクティビティがスキャンから除外されるプロセスを指定します。 プロセスは、名前 (たとえば) または完全パス `cat` (たとえば) で指定できます `/bin/cat` 。
+すべてのファイル アクティビティがスキャンから除外されるプロセスを指定します。 プロセスは、名前 (たとえば) または完全パス ( `cat`たとえば) で指定できます `/bin/cat`。
 
 <br>
 
@@ -262,7 +257,7 @@ ms.locfileid: "62214167"
 |**キー**|name|
 |**データ型**|String|
 |**指定可能な値**|任意の文字列|
-|**コメント**|ファイルが excludedFileName *$type**場合にのみ適用されます。*|
+|**コメント**|指定したファイルが excludedFileName *$type**場合にのみ適用されます。*|
 |
 
 #### <a name="allowed-threats"></a>許可される脅威
@@ -330,7 +325,7 @@ ms.locfileid: "62214167"
 前のセクションで指定した種類の脅威に出く際に実行するアクション。 次の指定が可能です。
 
 - **監査**: デバイスは、この種類の脅威から保護されませんが、脅威に関するエントリがログに記録されます。
-- **ブロック**: デバイスは、この種類の脅威から保護され、セキュリティ コンソールで通知されます。
+- **ブロック**: この種類の脅威からデバイスが保護され、セキュリティ コンソールで通知されます。
 - **オフ**: デバイスは、この種類の脅威から保護され、何もログに記録されません。
 
 <br>
@@ -346,7 +341,7 @@ ms.locfileid: "62214167"
 
 #### <a name="threat-type-settings-merge-policy"></a>脅威の種類の設定の差し込みポリシー
 
-脅威の種類の設定のマージ ポリシーを指定します。 これは、管理者定義設定とユーザー定義設定 ( ) の組み合わせか、管理者定義の設定 ( ) のみを `merge` 組み合わせて使用できます `admin_only` 。 この設定を使用すると、ローカル ユーザーがさまざまな脅威の種類に対して独自の設定を定義するのを制限できます。
+脅威の種類の設定のマージ ポリシーを指定します。 これは、管理者定義設定とユーザー定義設定 () の組み合わせでも、管理者定義の設定 (`merge`) のみを組み合わせて使用することもできます`admin_only`。 この設定を使用すると、ローカル ユーザーがさまざまな脅威の種類に対して独自の設定を定義するのを制限できます。
 
 <br>
 
@@ -441,9 +436,9 @@ ms.locfileid: "62214167"
 
 疑わしいサンプル (脅威を含む可能性が高い) を Microsoft に送信するかどうかを決定します。 サンプル申請を制御するには、次の 3 つのレベルがあります。
 
-- **なし**: 疑わしいサンプルは Microsoft に送信されません。
+- **なし**: 疑わしいサンプルは Microsoft に提出されません。
 - **セーフ**: 個人を特定できる情報 (PII) を含む疑わしいサンプルだけが自動的に送信されます。 これは、この設定の既定値です。
-- **すべて**: すべての疑わしいサンプルが Microsoft に送信されます。
+- **すべて**: 疑わしいサンプルはすべて Microsoft に送信されます。
 
 <br>
 
@@ -483,7 +478,7 @@ ms.locfileid: "62214167"
   - **アーカイブボム** (圧縮率が高いファイル) は、製品ログに対して監査されます
 - セキュリティ インテリジェンスの自動更新を有効にする
 - クラウドによる保護の有効化
-- レベルで自動サンプル提出を `safe` 有効にする
+- レベルで自動サンプル提出を有効 `safe` にする
 - 動作監視を有効にする
 
 ### <a name="sample-profile"></a>サンプル プロファイル
@@ -508,7 +503,7 @@ ms.locfileid: "62214167"
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true,
-      "proxy":"http://proxy.server:port/"
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
    }
 }
 ```
@@ -577,47 +572,52 @@ ms.locfileid: "62214167"
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true,
-      "proxy": "http://proxy.server:port/"
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
    }
 }
 ```
 
 ## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>構成プロファイルにタグまたはグループ ID を追加する
 
-コマンドを初 `mdatp health` めて実行すると、タグとグループ ID の値は空白になります。 ファイルにタグまたはグループ ID を追加 `mdatp_managed.json` するには、次の手順に従います。
+コマンドを初めて `mdatp health` 実行すると、タグとグループ ID の値は空白になります。 ファイルにタグまたはグループ ID を追加するには、 `mdatp_managed.json` 次の手順に従います。
   
-  1. パスから構成プロファイルを開きます `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json` 。
-  2. ブロックがあるファイルの下部に移動 `cloudService` します。
-  3. 次の例として、必要なタグまたはグループ ID を追加します `cloudService` 。
+  1. パスから構成プロファイルを開きます `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`。
+  2. ブロックがあるファイルの下部 `cloudService` に移動します。
+  3. 次の例として、必要なタグまたはグループ ID `cloudService`を追加します。
 
   ```JSON
     },
-     "cloudService":{
-        "enabled":true,
-        "diagnosticLevel":"optional",
-        "automaticSampleSubmissionConsent":"safe",
-        "automaticDefinitionUpdateEnabled":true,
-        "proxy": "http://proxy.server:port/"
-     },
-     "edr":{
-          "groupIds":"GroupIdExample",
-          "tags":"MDETagExample"
-          }
+    "cloudService": {
+      "enabled": true,
+      "diagnosticLevel": "optional",
+      "automaticSampleSubmissionConsent": "safe",
+      "automaticDefinitionUpdateEnabled": true,
+      "proxy": "http://proxy.server:port/"
+  },
+  "edr": {
+    "groupIds":"GroupIdExample",
+    "tags": [
+              {
+              "key": "GROUP",
+              "value": "Tag"
+              }
+            ]
+        }
   }
   ```
 
   > [!NOTE]
-  > ブロックの最後の中かっこの後にコンマを追加することを忘 `cloudService` れないでください。 また、Tag または Group ID ブロックを追加した後で、2 つの中かっこが閉じ込め (上記の例を参照してください) を確認してください。
+  > ブロックの最後の中かっこの後にコンマを追加することを忘れないでください `cloudService` 。 また、Tag または Group ID ブロックを追加した後で、2 つの中かっこが閉じ込め (上記の例を参照してください) を確認してください。 現時点では、タグでサポートされている唯一のキー名はです `GROUP`。 
   
 ## <a name="configuration-profile-validation"></a>構成プロファイルの検証
 
-構成プロファイルは、有効な JSON 形式のファイルである必要があります。 これを確認するために使用できるツールは多数ある。 たとえば、デバイスにインストール `python` されている場合は、次の情報を使用します。
+構成プロファイルは、有効な JSON 形式のファイルである必要があります。 これを確認するために使用できるツールは多数ある。 たとえば、デバイスにインストールされている `python` 場合は、次の情報を使用します。
 
 ```bash
 python -m json.tool mdatp_managed.json
 ```
 
-JSON が整形式の場合、上記のコマンドはターミナルに出力し、終了コードを返します `0` 。 それ以外の場合は、問題を説明するエラーが表示され、コマンドは終了コードを返します `1` 。
+JSON が整形式の場合、上記のコマンドはターミナルに出力し、終了コードを返します `0`。 それ以外の場合は、問題を説明するエラーが表示され、コマンドは終了コードを返します `1`。
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>mdatp_managed.json ファイルが期待通り動作しているのを確認する
 
@@ -634,4 +634,4 @@ JSON が整形式の場合、上記のコマンドはターミナルに出力し
 
 ## <a name="configuration-profile-deployment"></a>構成プロファイルの展開
 
-企業の構成プロファイルを構築したら、企業が使用している管理ツールを使用して展開できます。 Defender for Endpoint on Linux は *、/etc/opt/microsoft/mdatp/managed/mdatp_managed.json ファイルから管理構成を読み取* ります。
+企業の構成プロファイルを構築したら、企業が使用している管理ツールを使用して展開できます。 Defender for Endpoint on Linux は、 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json ファイルから管理構成を読み取* ります。

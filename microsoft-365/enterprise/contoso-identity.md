@@ -2,7 +2,7 @@
 title: Contoso 社の ID
 author: kelleyvice-msft
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 manager: laurawi
 audience: ITPro
@@ -10,30 +10,25 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-identity-device-management
-- Strat_O365_Enterprise
-ms.custom: ''
+  - M365-identity-device-management
+  - Strat_O365_Enterprise
+ms.custom: null
 description: Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
-ms.openlocfilehash: aada3df25fefc99ddf080818ed5930dfb45ecf66
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122267"
 ---
+
 # <a name="identity-for-the-contoso-corporation"></a>Contoso 社の ID
 
 Microsoft は、クラウド サービス全体で Id as a Service (IDaaS) を提供Azure Active Directory (Azure AD)。 エンタープライズ向Microsoft 365を採用するには、Contoso IDaaS ソリューションでオンプレミス ID プロバイダーを使用し、既存の信頼できるサード パーティ ID プロバイダーとのフェデレーション認証を含める必要がありました。
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>Contoso Active Directory ドメイン サービス フォレスト
 
-Contoso は、7 つのサブドメインを持つ contoso com の単一の Active Directory ドメイン サービス (DS) フォレスト (AD DS) を使用します。1 つは世界の各地域に \. 1 つです。 本社、地域ハブ オフィス、サテライト オフィスには、ローカルの認証と承認のためのドメイン コントローラーが含まれています。
+Contoso は、7 つのサブドメインを持つ contosocom\. の単一の Active Directory ドメイン サービス (AD DS) フォレストを使用します。1 つは世界の各地域に 1 つです。 本社、地域ハブ オフィス、サテライト オフィスには、ローカルの認証と承認のためのドメイン コントローラーが含まれています。
 
 地域ハブを含む世界の各地域の地域ドメインを持つ Contoso フォレストを次に示します。
 
 :::image type="content" alt-text="Contoso 社のフォレストと世界中のドメイン。" source="../media/contoso-identity/contoso-identity-fig1.png" lightbox="../media/contoso-identity/contoso-identity-fig1.png":::
  
-Contoso 社は、contoso com フォレスト内のアカウントとグループを、そのワークロードとサービスの認証と承認Microsoft 365 \. 決定しました。
+Contoso 社は、\.contosocom フォレスト内のアカウントとグループを、そのワークロードとサービスの認証と承認Microsoft 365使用することを決定しました。
 
 ## <a name="the-contoso-federated-authentication-infrastructure"></a>Contoso フェデレーション認証インフラストラクチャ
 
@@ -74,13 +69,13 @@ Contoso ID ポリシーとデバイス条件付きアクセス ポリシーの�
 
 :::image type="content" alt-text="Contoso の ID とデバイスの条件付きアクセス ポリシー。" source="../media/contoso-identity/contoso-identity-fig5.png" lightbox="../media/contoso-identity/contoso-identity-fig5.png":::
  
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-Contoso 社が組織全体にMicrosoft Endpoint Configuration Managerインフラストラクチャを使用して現在の[Windows 10 Enterpriseを維持](contoso-win10.md)する方法について説明します。
+Contoso 社が組織全体にMicrosoft Endpoint Configuration Managerインフラストラクチャを使用して現在の[Windows 10 Enterprise維持する](contoso-win10.md)方法について説明します。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 の ID ロードマップ](identity-roadmap-microsoft-365.md)
+[ユーザーの ID を展開Microsoft 365](deploy-identity-solution-overview.md)
 
 [Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 

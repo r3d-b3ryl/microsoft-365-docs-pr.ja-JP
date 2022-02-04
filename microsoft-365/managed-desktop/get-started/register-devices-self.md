@@ -4,31 +4,23 @@ description: デバイスを自分で登録して、Microsoft Managed Desktop �
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 566472128cef48a14aa18de6d9e82a4bc0f2b91c
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035704"
 ---
+
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
-Microsoft Managed Desktop は、新しいデバイスを操作したり、既に持っている可能性のあるデバイスを再利用できます (再イメージ化が必要になります)。 Microsoft Managed Desktop にデバイスを登録するには、Microsoft エンドポイント マネージャーします。
+Microsoft Managed Desktop は、新しいデバイスを操作したり、既に持っているデバイス (再イメージ化が必要なデバイス) を再利用できます。 Microsoft Managed Desktop にデバイスを登録するには、Microsoft エンドポイント マネージャーします。
 
 > [!NOTE]
-> パートナーと一緒にデバイスを入手する その場合は、ハードウェア ハッシュの取得について心配する必要はありません。彼らはその世話をします。 パートナーがパートナー センターでユーザーとの関係を確立する [必要があります](https://partner.microsoft.com/dashboard)。 パートナーは、パートナー センターのヘルプ [で詳細を確認できます](/partner-center/request-a-relationship-with-a-customer)。 この関係が確立されると、パートナーはユーザーに代わってデバイスを登録するだけで、それ以上の操作は必要ありません。 詳細を確認する場合、またはパートナーに質問がある場合は、「デバイスを登録するパートナー向け [手順」を参照してください](register-devices-partner.md)。 デバイスが登録された後、イメージの [確認と](#check-the-image) ユーザーへのデバイスの [配信](#deliver-the-device) を続行できます。
-
-
+> パートナーと一緒にデバイスを入手する その場合は、ハードウェア ハッシュの取得について心配する必要はありません。彼らはその世話をします。 パートナーがパートナー センターでユーザーとの関係を[確立します。](https://partner.microsoft.com/dashboard) パートナーは、パートナー センターのヘルプ [で詳細を確認できます](/partner-center/request-a-relationship-with-a-customer)。 この関係が確立されると、パートナーはユーザーに代わってデバイスを登録するだけで、それ以上の操作は必要ありません。 詳細を確認する場合、またはパートナーに質問がある場合は、「デバイスを登録するパートナー向け [手順」を参照してください](register-devices-partner.md)。 デバイスが登録された後、イメージの [確認と](#check-the-image) ユーザーへのデバイスの [配信](#deliver-the-device) を続行できます。
 
 ## <a name="prepare-to-register-brand-new-devices"></a>新しいデバイスを登録する準備をする
-
 
 新しいデバイスを手に入したら、次の手順を実行します。
 
@@ -43,12 +35,12 @@ Microsoft Managed Desktop は、新しいデバイスを操作したり、既に
 Microsoft Managed Desktop は、ハードウェア ハッシュを参照することによって、各デバイスを一意に識別します。 この情報を取得するには、次の 3 つのオプションがあります。
 
 - ハードウェア ハッシュを含む AutoPilot 登録ファイルを OEM サプライヤーに問い合わせ。
-- 各デバイス[Windows PowerShellスクリプト](#powershell-script-method)を実行し、結果をファイルに収集します。
-- 各デバイスを起動しますが、セットアップ エクスペリエンスWindows完了して、リムーバブル フラッシュ ドライブでハッシュ[を収集する必要があります](#flash-drive-method)。
+- 各デバイスWindows PowerShell[スクリプト](#powershell-script-method)を実行し、結果をファイルに収集します。
+- 各デバイスを起動しますが、セットアップ エクスペリエンスWindows完了して、リムーバブル フラッシュ ドライブで[ハッシュを収集する必要があります](#flash-drive-method)。
 
 #### <a name="powershell-script-method"></a>PowerShell スクリプト メソッド
 
-PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell スクリプトを使用できます。 デバイス ID とハードウェア ハッシュの詳細については、「デバイスを[Autopilot に追加Windows参照してください](/mem/autopilot/add-devices#device-identification)。
+PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell スクリプトを使用できます。 デバイス ID とハードウェア ハッシュの詳細については、「デバイスを [Autopilot に追加するWindows参照してください](/mem/autopilot/add-devices#device-identification)。
 
 1. 管理者権限を持つ PowerShell プロンプトを開きます。
 2. `Install-Script -Name Get-WindowsAutoPilotInfo` を実行します。
@@ -60,15 +52,15 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 1. 登録するデバイス以外のデバイスで、USB ドライブを挿入します。
 2. 管理者権限を持つ PowerShell プロンプトを開きます。
 3. `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>` を実行します。
-4. 登録するデバイスをオンにしますが、セットアップ *エクスペリエンスは開始しない*。 セットアップ エクスペリエンスを誤って開始した場合は、デバイスをリセットまたは再イメージ化する必要があります。
+4. 登録するデバイスをオンにしますが、 *セットアップ エクスペリエンスは開始しない*。 セットアップ エクスペリエンスを誤って開始した場合は、デバイスをリセットまたは再イメージ化する必要があります。
 5. USB ドライブを挿入し、Shift + F10 キーを押します。
-6. 管理者権限を持つ PowerShell プロンプトを開き、次に実行します `cd <pathToUsb>` 。
+6. 管理者権限を持つ PowerShell プロンプトを開き、次に実行します `cd <pathToUsb>`。
 7. `Set-ExecutionPolicy -ExecutionPolicy Unrestricted` を実行します。
 8. `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv` を実行します。
 9. USB ドライブを削除し、実行してデバイスをシャットダウンする `shutdown -s -t 0`
 
 > [!IMPORTANT]
-> 登録が完了するまで、登録するデバイスの電源を入れる必要はありません。 
+> 登録が完了するまで、登録するデバイスの電源を入れる必要はありません。
 
 ### <a name="merge-hash-data"></a>ハッシュ データの結合
 
@@ -81,7 +73,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 
 ### <a name="register-devices-by-using-the-admin-portal"></a>管理者ポータルを使用してデバイスを登録する
 
-[[Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)で、左側 **のナビゲーション ウィンドウ** で [デバイス] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[デバイス] を **選択します**。 [Microsoft Managed Desktop Devices] ワークスペースで、[デバイスの登録] **を** 選択し、新しいデバイスを登録するフライインを開きます。
+[[Microsoft エンドポイント マネージャー](https://endpoint.microsoft.com/)] で、左側 **のナビゲーション ウィンドウ** で [デバイス] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[デバイス] を **選択します**。 [Microsoft Managed Desktop Devices] ワークスペースで、[デバイス **の選択と** 登録] をクリックすると、新しいデバイスを登録するフライインが開きます。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -91,7 +83,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 
 1. [ **ファイルのアップロード]** で、前に作成した CSV ファイルへのパスを指定します。
 2. ドロップダウン メニュー [でデバイス](../service-description/profiles.md) プロファイルを選択します。
-3. [デバイス **の登録] を選択します**。 システムは、デバイスのリストにデバイスを追加します。 **登録** 保留として **マークされます**。 登録に要する時間は通常 10 分未満で、成功するとデバイスは Ready **for user** として表示され、ユーザーが使用を開始する準備ができていることを意味します。
+3. [デバイス **の登録] を選択します**。 システムは、デバイスのリストにデバイスを追加します。登録保留として **マークされます**。 登録に要する時間は通常 10 分未満で、成功するとデバイスは Ready **for user** として表示され、ユーザーが使用を開始する準備ができていることを意味します。
 
 > [!NOTE]
 > デバイスの Azure Active Directory (AAD) グループ メンバーシップを手動で変更すると、デバイス プロファイルのグループに自動的に再割り当てされ、競合するグループから削除されます。
@@ -103,8 +95,8 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 | 登録保留中 | 登録はまだ行っていません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
 | ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft Managed Desktop では、初回セットアップをガイドしますので、それ以上の準備を行う必要はありません。 |
-| Active | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
-| 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  | 
+| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
+| 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  |
 
 #### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
 
@@ -124,7 +116,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 
 ### <a name="autopilot-group-tag"></a>Autopilot グループ タグ
 
-管理ポータルを使用してデバイスを登録する場合、パートナー センターを使用してデバイスの登録に記載されているデバイス プロファイルに関連付けられた自動パイロット グループ タグが自動的に [割り当てされます](register-devices-partner.md#register-devices-by-using-partner-center)。
+管理者ポータルを使用してデバイスを登録すると、[パートナー センターを使用してデバイスを登録する] に記載されているデバイス プロファイルに関連付けられた自動パイロット グループ タグが自動的に [割り当てされます](register-devices-partner.md#register-devices-by-using-partner-center)。
 このサービスは、すべての Microsoft Managed Desktop デバイスを毎日監視し、グループ タグをまだ持ってないデバイスに割り当てします。
 
 ### <a name="deliver-the-device"></a>デバイスの配信

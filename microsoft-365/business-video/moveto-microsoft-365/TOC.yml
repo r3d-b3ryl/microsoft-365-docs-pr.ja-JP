@@ -17,6 +17,6 @@
     - name: Microsoft 365 にドメインを接続する
       href: connect-domain-tom365.md
     - name: 移行マネージャーを使用してすべてのユーザーのデータを移動する
-      href: 'https://docs.microsoft.com/sharepointmigration/mm-google-overview'
+      href: migrate-files-migration-manager.md
     - name: Google Workspace をキャンセルする
       href: cancel-google.md

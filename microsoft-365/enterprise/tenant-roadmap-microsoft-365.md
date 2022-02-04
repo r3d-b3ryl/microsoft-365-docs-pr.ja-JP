@@ -1,7 +1,7 @@
 ---
 title: テナントのロードマップMicrosoft 365
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -10,17 +10,12 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- m365initiative-coredeploy
+  - M365-subscription-management
+  - m365initiative-coredeploy
 ms.custom: it-pro
 description: ユーザーのテナントをセットアップするためのロードマップMicrosoft 365。
-ms.openlocfilehash: c5afecd62d466f38c5504c1d485651fa5a31cb30
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202741"
 ---
+
 # <a name="tenant-roadmap-for-microsoft-365"></a>テナントのロードマップMicrosoft 365
 
 テナントMicrosoft 365は、組織に割り当てられた一連のサービスです。 通常、このテナントは 1 つ以上のパブリック DNS ドメイン 名に関連付けられるので、さまざまなサブスクリプションとユーザー アカウントに割り当てるライセンスの中央分離コンテナーとして機能します。 詳細については、「サブスクリプション、ライセンス、アカウント、および Microsoft のクラウド 製品のテナント」 [を参照してください](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)。
@@ -37,9 +32,9 @@ ms.locfileid: "60202741"
 
 テナントの実装を計画するには、次の方法を実行します。
 
-- [サブスクリプション、ライセンス、およびサブスクリプション (Azure Azure Active Directory) ADについて](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+- [サブスクリプション、ライセンス、およびサブスクリプション (Azure Active Directory) Azure ADについて](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [サードパーティの SSL 証明書の使い方を理解する](plan-for-third-party-ssl-certificates.md)
-- [テナントが Azure Microsoft 365 サービスと統合される方法ADする](integrated-apps-and-azure-ads.md)
+- [テナントとサービスMicrosoft 365統合する方法をAzure ADする](integrated-apps-and-azure-ads.md)
 - [クライアント アプリのサポートを計画する](microsoft-365-client-support-certificate-based-authentication.md)
 - [ハイブリッドモダン認証の使い方を決定する](hybrid-modern-auth-overview.md)
 - [2007 Officeおよび 2010 Officeアップグレードを計画する](plan-upgrade-previous-versions-office.md)
@@ -50,14 +45,14 @@ ms.locfileid: "60202741"
 テナントを展開するには、次の方法を実行します。 
 
 - 組織の [DNS ドメイン](../admin/setup/add-domain.md) を追加します。
-- [設定[ガイド] の [設定ガイドMicrosoft 365 管理センター。](setup-guides-for-microsoft-365.md)
-- ID インフラストラクチャを[構築し、](identity-roadmap-microsoft-365.md)[ユーザー サインインをセキュリティで保護します](microsoft-365-secure-sign-in.md)。
+- [設定[] ページのセットアップ ガイドをMicrosoft 365 管理センター](setup-guides-for-microsoft-365.md)。
+- ID インフラストラクチャを [構築します](deploy-identity-solution-overview.md)。
 
 ### <a name="move-a-tenants-geographic-locations"></a>テナントの地理的な場所を移動する
 
 Microsoft は、引き続き新しいデータセンターの地理的な場所 (geos) を開き、Microsoft 365します。 これらの新しいデータセンター geos は、顧客の需要と使用状況の増加をサポートするために容量と計算リソースを追加します。 さらに、新しいデータセンター geo では、コア カスタマー データを geo 内に常駐できます。
 
-詳細については、「コア データを新しいデータセンター geos[にMicrosoft 365する」を参照してください](moving-data-to-new-datacenter-geos.md)。
+詳細については、「コア データを[新しいデータセンター geos に移動Microsoft 365参照してください](moving-data-to-new-datacenter-geos.md)。
 
 
 ## <a name="deploy-microsoft-365-multi-geo"></a>複数地域Microsoft 365展開する
@@ -76,6 +71,6 @@ oganization に 1 つのテナントを持つことは理想的ですが、複�
 - [テナント間でのメールボックスの移行](cross-tenant-mailbox-migration.md)
 - [テナントからテナントへの移行](microsoft-365-tenant-to-tenant-migrations.md)
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-サブスクリプション、ライセンス、アカウント、 [テナントを使用してテナント計画を開始します](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)。
+サブスクリプション、ライセンス、アカウント、テナントを [使用してテナント計画を開始します](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)。

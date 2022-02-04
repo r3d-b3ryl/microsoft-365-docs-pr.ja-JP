@@ -1,46 +1,42 @@
 ---
 title: ユーザーがデバイスを使えるようにする
 description: ユーザーがデバイスを使用する準備を整えるのに役立つ情報
-keywords: Microsoft Managed Desktop, device, get started, Microsoft 365
+keywords: 'Microsoft Managed Desktop, device, get started, Microsoft 365'
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ee8e032c06587a3d8ac92f3be7ccdb5f6a5f6b1e
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034967"
 ---
+
 # <a name="get-your-users-ready-to-use-devices"></a>ユーザーがデバイスを使えるようにする
 
-Microsoft Managed Desktop デバイスがユーザーの手に入った後、そのデバイスの使用を開始するのは迅速かつ簡単です。 デバイスは、ユーザーがセットアップを完了すると、Windowsの現在のバージョンで事前構成され、構成とアプリがクラウドからインストールされます。 
- 
-これをさらに簡単にするために、初期セットアップをユーザーに説明し、必要に応じてセットアップと後で使用するためのヘルプ リソースを提供するガイドを提供します。 このガイドをカスタマイズして、組織固有の特定の詳細を含めることができます。 その後、ガイドをデバイスと共にユーザーに直接配布します。 
+Microsoft Managed Desktop デバイスがユーザーの手に入った後、開始は迅速かつ簡単です。 デバイスは、現在のバージョンの Windows構成で事前構成され、ユーザーがセットアップを完了するとアプリがクラウドからインストールされます。
 
-## <a name="to-prepare-the-guide"></a>ガイドを準備する
+作業を簡単にするために、初期セットアップをユーザーに説明するガイドを提供します。 このガイドでは、必要に応じて、セットアップと後で使用する両方に役立つリソースを提供します。 組織固有の特定の詳細を含めるには、次のガイドをカスタマイズできます。 その後、ガイドをデバイスと共にユーザーに直接配布します。
 
-1. ガイドをダウンロードする: [Microsoft Managed Desktop - デバイスの使用を開始します](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)。
+## <a name="prepare-the-guide"></a>ガイドの準備
+
+**ガイドを準備するには、次の方法を実行します。**
+
+1. [Microsoft Managed Desktop - デバイス ガイドの使用を開始するをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)します。
 2. PDF ファイルを開くことができる任意のアプリを使用して、組織に関連する詳細を入力します。
-    - セットアップを続行するためにユーザーが接続するネットワークの名前 (ガイドの手順 3)
-    - 組織の Azure テナント アカウントの名前 (ガイドの手順 4)
-    - 組織の内部 IT サポートの連絡先情報 (2 ページ目の上部)
-3. 編集した PDF を保存し、ユーザーに配布します。 
+    - セットアップを続行するためにユーザーが接続する必要があるネットワークの名前 (ガイドの手順 3)。
+    - 組織の Azure テナント アカウントの名前 (ガイドの手順 4)。
+    - 組織の内部 IT サポートの連絡先情報 (2 ページ目の上部)。
+3. 編集した PDF を保存し、ユーザーに配布します。
 
-## <a name="ready-to-use-guide"></a>"すぐに使用できるガイド"
+## <a name="ready-to-use-guide"></a>すぐに使用できるガイド
 
 また、カスタマイズする必要がない組織向けガイドのより一般的なバージョンも提供しています。
 
-ガイドをダウンロードするだけ: [Microsoft Managed Desktop - デバイスの使用を開始する (すぐに使用できます)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf)。
+Microsoft [Managed Desktop -](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) デバイスの使用を開始する (すぐに使用できる) ガイドをダウンロードしてください。
 
-この時点で、アプリの展開に進む準備が整いました。
-
+この時点で、アプリの展開に進 [む準備が整いました](deploy-apps.md)。
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft Managed Desktop の使用を開始する手順
 
