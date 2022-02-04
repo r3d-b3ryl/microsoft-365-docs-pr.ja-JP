@@ -1,7 +1,7 @@
 ---
 title: ステップ 1. MFA を使用してハイブリッド ワーカーのサインイン セキュリティを強化する
 f1.keywords:
-- NOCSH
+  - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: dansimp
@@ -10,20 +10,15 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- Strat_O365_Enterprise
-- remotework
-- m365solution-remotework
-- m365solution-scenario
-ms.custom: ''
+  - M365-security-compliance
+  - Strat_O365_Enterprise
+  - remotework
+  - m365solution-remotework
+  - m365solution-scenario
+ms.custom: null
 description: ハイブリッド ワーカーが多要素認証 (MFA) でサインインすることを要求します。
-ms.openlocfilehash: dfcda3eb0f79003a3e09bbda9d3c53dff6ae2f8f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934827"
 ---
+
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>ステップ 1. MFA を使用してハイブリッド ワーカーのサインイン セキュリティを強化する
 
 ハイブリッド ワーカーのサインインのセキュリティを強化するには、多要素認証 (MFA) を使用します。 MFA では、ユーザーのサインインは、ユーザー アカウントのパスワード以外に追加の検証を受ける必要があります。 悪意のあるユーザーがユーザー アカウントのパスワードを決定した場合でも、アクセスが許可される前にスマートフォンに送信されるテキスト メッセージなど、追加の検証に応答できる必要があります。
@@ -106,7 +101,7 @@ Azure AD Identity Protection を使用すると、ユーザーに MFA への登�
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>MFA と ID のための管理技術リソース
 
 - [Azure AD がリモート作業を可能にするのに役立つ 5 つの方法](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
-- [Microsoft 365 の ID ロードマップ](../enterprise/identity-roadmap-microsoft-365.md)
+- [Microsoft 365 の ID インフラストラクチャ](../enterprise/deploy-identity-solution-overview.md)
 - [Azure Academy Azure AD トレーニング ビデオ](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 
 ## <a name="results-of-step-1"></a>手順 1 の結果

@@ -1,33 +1,28 @@
 ---
 title: サブスクリプションをキャンセルする
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: 'jkinma, jmueller'
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- M365-subscription-management
-- Adm_O365
+  - M365-subscription-management
+  - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
-- commerce_subscriptions
-- AdminTemplateSet
-- admindeeplinkMAC
+  - AdminSurgePortfolio
+  - commerce_subscriptions
+  - AdminTemplateSet
+  - admindeeplinkMAC
 search.appverid: MET150
 description: Microsoft 365 管理センターで、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 の試用版または有料サブスクリプションをキャンセルする方法について説明します。
 ms.date: 01/20/2022
-ms.openlocfilehash: 21d7e6f2ff644861b1a8096511144b5343dc2a25
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345431"
 ---
+
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
 サブスクリプションは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>でいつでもキャンセルできます。 ただし、払い戻しを受けるには、特定の払い戻しの適格性要件を満たしている必要があります。 詳細については、「[払い戻しの適格性を理解する](#understand-refund-eligibility)」を参照してください。
@@ -57,7 +52,7 @@ Microsoft 365 Business Premium など、同じ製品に対して複数のサブ�
 
 |サブスクリプションがある場合  |できます  |
 |--------------|--------------|
-|25 個以下のライセンス  | 試用版または有料サブスクリプションは、いつでも <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 356 管理センター</a>でオンラインでキャンセルできます。        |
+|25 個以下のライセンス  | オンラインでの試用版または有料サブスクリプションは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>でいつでもキャンセルできます。        |
 |25 個を越えるライセンス   | ライセンスの数を 25 以下に減らして再試行するか、[サポートに連絡してサブスクリプションをキャンセルしてください](../../admin/get-help-support.md)。        |
 
 請求プロファイルがないサブスクリプションの場合、サブスクリプションを購入または更新した後、限られた時間枠内でのみキャンセルできます。 キャンセル期間が過ぎた場合は、[定期的な請求をオフにして](renew-your-subscription.md)、期間の終了時にサブスクリプションをキャンセルします。
