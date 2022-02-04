@@ -1,31 +1,26 @@
 ---
 title: Windows 10 または Windows 11 デバイスを Microsoft 365 にオンボードする概要
 f1.keywords:
-- CSH
+  - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
-- ms.o365.cc.DLPLandingPage
+  - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
-- M365-security-compliance
-- m365solution-mip
-- m365initiative-compliance
+  - M365-security-compliance
+  - m365solution-mip
+  - m365initiative-compliance
 search.appverid:
-- MET150
+  - MET150
 description: Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする
-ms.openlocfilehash: ec95fcbfca3ab41bb3a249534e5ff62721aac794
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272080"
 ---
+
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする概要
 
 **適用対象:**
@@ -100,7 +95,8 @@ Microsoft 365 エンドポイント DLP は、Windows 10 または Windows 11 �
 
 5. サポートされているバージョンの Microsoft Office がインストールされ、最新の状態になっています。 最も堅牢な保護とユーザー エクスペリエンスを実現するには、Microsoft 365 Apps バージョン 16.0.14701.0 以降がインストールされていることを確認してください。
 > [!NOTE]
-   >Office 265 を実行している場合 - KB 4577063 が必要です Microsoft 365 Apps バージョン 2004-2008 の月次エンタープライズ チャネルを使用している場合は、バージョン 2009 以降に更新する必要があります。 現在のバージョンについては「[Microsoft 365 アプリの更新履歴 (日付別の一覧)](/officeupdates/update-history-microsoft365-apps-by-date)」をご覧ください。 既知の問題の詳細については、[2020 年の最新のチャネル リリースのリリース ノート](/officeupdates/current-channel#version-2010-october-27)の「Office スイート」セクションを参照してください。
+   > - Office 365 を実行している場合 - KB 4577063 が必要です。
+   > - Microsoft 365 Apps バージョン 2004-2008 の月次エンタープライズ チャネルを使用している場合は、バージョン 2009 以降に更新する必要があります。 現在のバージョンについては「[Microsoft 365 アプリの更新履歴 (日付別の一覧)](/officeupdates/update-history-microsoft365-apps-by-date)」をご覧ください。 既知の問題の詳細については、[2020 年の最新のチャネル リリースのリリース ノート](/officeupdates/current-channel#version-2010-october-27)の「Office スイート」セクションを参照してください。
 
 6. デバイス プロキシを使用してインターネットに接続するエンドポイントがある場合は、「[情報保護のためのデバイス プロキシとインターネット接続設定の構成](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)」の手順に従います。
 

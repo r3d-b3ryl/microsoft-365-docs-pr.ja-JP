@@ -1,31 +1,26 @@
 ---
 title: 情報保護のためにデバイス プロキシとインターネット接続の設定を構成する
 f1.keywords:
-- CSH
+  - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
-- ms.o365.cc.DLPLandingPage
+  - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-mip
-- m365initiative-compliance
+  - M365-security-compliance
+  - m365solution-mip
+  - m365initiative-compliance
 search.appverid:
-- MET150
+  - MET150
 description: 情報保護のためにデバイス プロキシとインターネット接続の設定を構成する
-ms.openlocfilehash: 645bb3eca60e37db817f810992fd5022399e1249
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950862"
 ---
+
 # <a name="configure-device-proxy-and-internet-connection-settings-for-information-protection"></a>情報保護のためにデバイス プロキシとインターネット接続の設定を構成する
 
 Microsoft エンドポイント テクノロジは、Microsoft Windows HTTP (WinHTTP) を使用してデータを報告し、Microsoft エンドポイント クラウド サービスと通信します。 埋め込まれたサービスは、LocalSystem アカウントを使用してシステム コンテキストで実行されます。
@@ -137,7 +132,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 
 > [!NOTE]
 >
-> 接続アナライザー ツールは、ASR ルールと互換性がありません [PSExec および WMI コマンドから発生するプロセスの作成をブロックします](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。
+> 接続アナライザー ツールは、攻撃面の縮小ルール [PSExec および WMI コマンドから発生するプロセスの作成をブロックする](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-process-creations-originating-from-psexec-and-wmi-commands) と互換性がありません。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。
 >
 > TelemetryProxyServer がレジストリまたはグループ ポリシー経由で設定されている場合、Defender for Endpoint は、定義されたプロキシにアクセスできないと、ダイレクトにフォールバックします。関連トピック:
 >
