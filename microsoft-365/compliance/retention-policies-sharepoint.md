@@ -1,29 +1,24 @@
 ---
 title: SharePoint と OneDrive の保持の詳細
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+  - M365-security-compliance
+  - SPO_Content
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: 18ada99844e7d342244d578d9cca76f68a28501c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322159"
 ---
+
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
@@ -78,7 +73,9 @@ SharePoint と OneDrive では、保持する必要のあるコンテンツを�
 
 - ユーザーがラベル付きアイテムを削除できるレコード管理設定がオフになっています。
     
-    この設定を確認または変更するには、Microsoft 365 コンプライアンス センターで **[レコード管理]** ノードから **[レコード管理]**、 > **[レコード管理設定]**、 > **[保持ラベル]**、 > **[アイテムの削除]** の順に移動します。 SharePoint と OneDrive の設定は別です。
+    この設定を確認または変更するには、Microsoft 365 コンプライアンス センターで **[レコード管理]** ソリューションから **[レコード管理]**、 > **[レコード管理設定]**、 > **[保持ラベル]**、 > **[アイテムの削除]** の順に移動します。 SharePoint と OneDrive の設定は別です。
+    
+    または、**[レコード管理]** ソリューションにアクセスできない場合は、[Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) および [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant) から *AllowFilesWithKeepLabelToBeDeletedSPO* と *AllowFilesWithKeepLabelToBeDeletedODB* を使用できます。
 
 - 保持ラベルはアイテムをレコードとしてマークし、それは[ロック済み](record-versioning.md)です。
     
