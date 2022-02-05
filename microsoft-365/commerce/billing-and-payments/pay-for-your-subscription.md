@@ -1,34 +1,29 @@
 ---
 title: サブスクリプションの支払い
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: 'jkinma, jmueller'
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- M365-subscription-management
-- Adm_O365
+  - M365-subscription-management
+  - Adm_O365
 search.appverid: MET150
 description: Microsoft 365 for business サブスクリプションのお支払いには、クレジット カード、デビット カード、銀行口座をご利用ください。場合によっては、請求書によるお支払いも可能です。
 ms.custom:
-- okr_SMB
-- fwlink 808700 for SEPA UI glink 906 for older uI
-- AdminSurgePortfolio
-- commerce_billing
-- AdminTemplateSet
+  - okr_SMB
+  - fwlink 808700 for SEPA UI glink 906 for older uI
+  - AdminSurgePortfolio
+  - commerce_billing
+  - AdminTemplateSet
 ms.date: 10/28/2021
-ms.openlocfilehash: cff5ad543b2f3b007d8ed328cae552f07faaa49b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704817"
 ---
+
 # <a name="how-to-pay-for-your-subscription"></a>サブスクリプションの支払い方法
 
 > [!IMPORTANT]
@@ -48,7 +43,7 @@ ms.locfileid: "60704817"
 > [!IMPORTANT]
 > 一部の国または地域では、銀行口座引き落としによる支払いを利用できません。
 
-サブスクリプションはクレジット カード、デビット カード、または銀行口座引き落としでお支払いいただけます。 これらの支払い方法のいずれかでお支払いの場合、サブスクリプションの有効期限が切れるまで、またはキャンセルされるまで、その支払い方法に引き続き請求されます。 いつでも必要なときに[支払い方法を管理する](manage-payment-methods.md)ことができます。 また、[請求明細書のコピーをメールで受け取る](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) こともできます。
+サブスクリプションはクレジット カード、デビット カード、または銀行口座引き落としでお支払いいただけます。 これらの支払い方法のいずれかでお支払いの場合、サブスクリプションの有効期限が切れるまで、またはキャンセルされるまで、その支払い方法に引き続き請求されます。 いつでも必要なときに[支払い方法を管理する](manage-payment-methods.md)ことができます。 [組織の請求書をメールの添付ファイルとして受け取る](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)こともできます。
 
 ## <a name="paying-by-invoice"></a>請求書での支払い
 
@@ -65,7 +60,7 @@ ms.locfileid: "60704817"
 >
 > もしくは、口座間の電子決済により支払いを行うこともできます。 銀行と口座番号は請求書の下部に記載されています。 振替 ID の欄に請求書番号を入力する必要があります。
 
-サブスクリプションを請求書でお支払いになる場合、請求明細書が閲覧できるようになったとき、通知メールが届きます。このメールには、請求明細書のコピーは含まれません。しかし、[請求明細書のコピーをメールで受け取る](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)ことを選択することができます。請求明細書には、支払いに関するオプションとその送付先に関する詳細が記載されています。サブスクリプションを購入するときに発注書番号 (PO) を入力した場合、請求明細書にその番号が表示されます。請求明細書にアクセスする詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
+サブスクリプションを請求書でお支払いになる場合、請求明細書が閲覧できるようになったときにメールを受信します。 このメールには、請求明細書のコピーは含まれません。 ただし[組織の請求書をメールの添付ファイルとして受け取る](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)こともできます。 請求明細書には、支払いに関するオプションとその送付先の詳細が記載されています。 サブスクリプションを購入するときに発注書番号 (PO) を入力した場合、請求明細書にその番号が表示されます。 請求明細書へのアクセスの詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>未払額がある場合、どうなりますか。
 

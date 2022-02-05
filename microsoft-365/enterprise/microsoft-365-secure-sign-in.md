@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 テナントへのユーザー サインインの保護
+title: '手順 3: あなたの Microsoft 365 ユーザー アカウントを保護する'
 f1.keywords:
-- NOCSH
+  - NOCSH
 author: kelleyvice-msft
 ms.author: kvice
 manager: laurawi
@@ -11,19 +11,14 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- Strat_O365_Enterprise
-- m365initiative-coredeploy
-ms.custom: ''
+  - M365-security-compliance
+  - Strat_O365_Enterprise
+  - m365initiative-coredeploy
+ms.custom: null
 description: ユーザーが多要素認証（MFA）およびその他の機能を使用して安全にサインインすることを要求します。
-ms.openlocfilehash: 9c29bddee33ee7e06fcaf24bfff8649a12320e9c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200103"
 ---
-# <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Microsoft 365 テナントへのユーザー サインインの保護
+
+# <a name="step-3-protect-your-microsoft-365-user-accounts"></a>手順 3: あなたの Microsoft 365 ユーザー アカウントを保護する
 
 ユーザー サインインのセキュリティを強化するには：
 
@@ -52,17 +47,15 @@ MFA では、ユーザーのサインインは、ユーザー アカウントの
 
 ![正しいパスワードと追加認証によりサインインが成功します。](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-MFA を使用するための最初の手順は、***すべての管理者アカウント（特権アカウント）に MFA を要求する*** ことです。
+MFA を使用するための最初の手順は、[すべての管理者アカウント（特権アカウント）に MFA を要求する](protect-your-global-administrator-accounts.md)ことです。 この最初の手順以外にも、Microsoft はすべてのユーザーに MFA をお勧めします。
 
-この最初の手順以外にも、Microsoft はすべてのユーザーに MFA をお勧めします。
-
-Microsoft 365 プランに基づき管理者またはユーザーに MFA の使用を要求する方法は3つあります。
+Microsoft 365 プランに基づいてユーザーに MFA の使用を要求する方法は 3 つあります。
 
 | プラン | 推奨事項 |
 |---------|---------|
 |Microsoft 365 のすべてのプラン (Azure AD Premium P1 または P2 ライセンスなし)     |[Azure AD でセキュリティの既定値を有効にします](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。   |
-|Microsoft 365 E3 (Azure AD Premium P1 ライセンスを含む)     | [一般的な条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br>- [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [すべてのユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (Azure AD Premium P2 ライセンスを含む)     | Azure AD Identity Protection を利用して、次の 2 つのポリシーを作成して、Microsoft の[条件付きアクセスと関連ポリシーの推奨されるセット](../security/office-365-security/identity-access-policies.md)の実装を開始します。<br> - [サインインのリスクが中、または高のときに MFA を要求する](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [高リスク ユーザーはパスワードを変更する必要がある](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E3 (Azure AD Premium P1 ライセンスを含む)     | [共通の条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します: <br>- [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [すべてのユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (Azure AD Premium P2 ライセンスを含む)     | Azure AD Identity Protection を利用して、次の 2 つのポリシーを作成し、Microsoft の条件付きアクセスと関連したポリシーの推奨セットの実装を開始します:<br> - [サインインのリスクが中、または高のときに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [高リスク ユーザーはパスワードを変更する必要がある](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
 | | |
 
 ### <a name="security-defaults"></a>セキュリティの既定値
@@ -106,9 +99,9 @@ Microsoft 365 プランに基づき管理者またはユーザーに MFA の使�
 | **条件付きアクセス ポリシー** | いずれかが有効になっている場合、セキュリティの既定値を有効にすることはできません | すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます  | MFA 登録中にユーザーが指定  |
 ||||
 
-## <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
+## <a name="zero-trust-identity-and-device-access-configurations"></a>ゼロ トラスト ID とデバイスのアクセス構成
 
-ID とデバイス アクセスの設定とポリシーとは、特定のアクセス要求を許可するかどうか、およびどのような条件下で許可するかを決定する条件付きアクセス、Intune、およびAzure AD Identity Protection ポリシーと組み合わせて推奨される必須機能とその設定です。 この決定は、サインインのユーザーアカウント、使用しているデバイス、ユーザーがアクセスに使用しているアプリ、アクセス要求が行われた場所、および要求のリスクの評価に基づいています。 この機能により、承認されたユーザーとデバイスのみが重要なリソースにアクセスできるようになります。
+ゼロ トラスト ID とデバイス アクセス設定とポリシーは、与えられたアクセス要求を付与する必要があるかどうか、またどの条件の下でかを決定する条件付きアクセス、Intune、および Azure AD Identity Protection ポリシーと組み合わせて推奨される前提機能とそれらの設定です。 この決定は、サインインのユーザーアカウント、使用しているデバイス、ユーザーがアクセスに使用しているアプリ、アクセス要求が行われた場所、および要求のリスクの評価に基づいています。 この機能により、承認されたユーザーとデバイスのみが重要なリソースにアクセスできるようになります。
 
 >[!Note]
 >Azure AD Identity Protection には、Microsoft 365 E5 に含まれている Azure AD Premium P2 ライセンスが必要です。
@@ -122,7 +115,7 @@ ID とデバイスのアクセス ポリシーは、3つの層で使用するよ
 
 これらの層とそれに対応する構成は、データ、ID、およびデバイス全体で一貫したレベルの保護を提供します。
 
-Microsoft では、Microsoft Teams、Exchange Online、SharePoint の特定の設定など、組織内の ID およびデバイス アクセス ポリシーを構成して展開することを強く推奨します。詳細については、「[ID とデバイス アクセスの構成](../security/office-365-security/microsoft-365-policies-configurations.md)」を参照してください。
+Microsoft では、組織で Microsoft Teams、Exchange Online、および SharePoint の設定を含むゼロ トラスト ID とデバイス アクセス ポリシーの構成および展開を強くお勧めします。 詳細については、「[ゼロ トラスト ID とデバイス アクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)」を参照してください。
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
@@ -137,18 +130,23 @@ Azure AD Identity Protection では次の作業を実行できます。
 | 不審なインシデントを調査し、管理操作によって解決する | セキュリティ インシデントに関する情報を使用して、リスク イベントを調査できます。調査の追跡と修復処理 (パスワードのリセットなど) の開始のための基本的なワークフローを利用できます。 |
 |||
 
-[Azure AD Identity Protection の詳細情報](/azure/active-directory/active-directory-identityprotection)を参照してください。
+[Azure AD Identity Protection の詳細情報](/azure/active-directory/identity-protection/overview-identity-protection)を参照してください。
 
-[Azure AD Identity Protection を有効にする手順](/azure/active-directory/active-directory-identityprotection-enable)を参照してください。
+[Azure AD Identity Protection を有効にする手順](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)を参照してください。
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>MFA と安全なサインインのための管理技術リソース
 
 - [MFA for Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
-- [Microsoft 365 の ID ロードマップ](identity-roadmap-microsoft-365.md)
+- [Microsoft 365 ID の展開](deploy-identity-solution-overview.md)
 - [Azure Academy Azure AD トレーニング ビデオ](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Azure AD 多要素認証の登録ポリシーの構成](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [ID とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>次のステップ
 
-[ユーザー アカウントを管理する](manage-microsoft-365-accounts.md)
+![ID モデルの展開](../media/deploy-identity-solution-overview/deploy-identity-solution-identity-infrastructure.png)
+
+手順 4 に進み、選択した ID モデルに基づいて ID インフラストラクチャを展開します:
+
+- [クラウド専用 ID](cloud-only-identities.md)
+- [ハイブリッド ID](prepare-for-directory-synchronization.md)

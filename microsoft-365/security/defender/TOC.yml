@@ -166,6 +166,16 @@
                   href: investigate-incidents.md
                 - name: アラート
                   href: investigate-alerts.md
+                - name: アラート グレーディング プレイブック
+                  items:
+                    - name: 概要
+                      href: alert-grading-playbooks.md
+                    - name: 疑わしいメール転送
+                      href: alert-grading-playbook-email-forwarding.md
+                    - name: 疑わしい受信トレイ転送ルール
+                      href: alert-grading-playbook-inbox-forwarding-rules.md
+                    - name: 疑わしい受信トレイ操作ルール
+                      href: alert-grading-playbook-inbox-manipulation-rules.md
                 - name: ユーザー
                   href: investigate-users.md
             - name: インシデント対応プレイブック

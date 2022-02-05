@@ -1,37 +1,32 @@
 ---
 title: 課金内容または請求書を表示する
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: 'jkinma, jmueller'
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection:
-- M365-subscription-management
-- Adm_O365
+  - M365-subscription-management
+  - Adm_O365
 ms.custom:
-- TopSMBIssues
-- okr_smb
-- TRN_M365B
-- OKR_SMB_Videos
-- AdminSurgePortfolio
-- commerce_billing
-- AdminTemplateSet
-- adminvideo
+  - TopSMBIssues
+  - okr_smb
+  - TRN_M365B
+  - OKR_SMB_Videos
+  - AdminSurgePortfolio
+  - commerce_billing
+  - AdminTemplateSet
+  - adminvideo
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 01/25/2022
-ms.openlocfilehash: 755c5c90fb99204f2bef932961a235a7756a4dff
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218971"
 ---
+
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
 この記事は、一般法人向け Microsoft 365 サブスクリプションを持っているユーザーを対象としています。
@@ -70,6 +65,8 @@ ms.locfileid: "62218971"
 3. [概要] ページには、請求書のアイテム、数量、価格、割引、全アイテムの合計が表示されます。
 4. 請求書を PDF 形式で印刷または保存するには、[**PDF のダウンロード**] を選択します。
 
+請求書のコピーをメールで受け取りたい場合は、「[請求通知と請求書の添付ファイルの管理](manage-billing-notifications.md)」を参照してください。
+
 ::: moniker range="o365-21vianet"
 
 ## <a name="request-a-fapiao"></a>発票を要求する
@@ -89,31 +86,6 @@ ms.locfileid: "62218971"
 >
 > Microsoft 365 サービスでは、領収書は提供されません。
 > クレジット カードでのお支払いについては、請求書とクレジット カードの請求明細書を使用してお支払いを照合してください。
-
-## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>請求明細書のコピーをメールで受け取る
-
-請求明細書のコピーをメールの添付ファイルとして受け取ることができます。その場合は、次のことに注意してください。
-
-- メールは、通知の受信者として記載されているすべてのユーザーのプライマリと代替の両方のメール アドレスに送信されます。
-- 2 通の異なるメールを受け取ります。1 通目は請求の準備ができたことと、管理センターにサインインしてそれを確認するための手順を伝えるもので、2 通目には請求明細書が添付されています。
-
-### <a name="to-receive-your-billing-statement-in-email"></a>請求明細書をメールで受け取るには
-
-::: moniker range="o365-worldwide"
-
-1. 管理センターで、**[課金情報]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">[課金に関する通知]</a> ページに移動します。
-
-::: moniker-end
-
-2. **[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。
-
-    これを **[オフ]** に切り替えることで、請求明細書のメールでの受け取りをいつでも停止できます。
 
 ## <a name="run-the-unknown-charge-diagnostic"></a>不明な料金診断を実行する
 

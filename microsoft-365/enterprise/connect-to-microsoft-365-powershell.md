@@ -9,20 +9,15 @@ ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- LIL_Placement
-- O365ITProTrain
-- Ent_Office_Other
+  - LIL_Placement
+  - O365ITProTrain
+  - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Microsoft 365 テナントに接続するには、Microsoft 365 用 PowerShell を使用して、コマンド ラインから管理センターのタスクを実行します。
-ms.openlocfilehash: 96544e023ba9e5ff3e362911e82c86acc72d0970
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755726"
 ---
+
 # <a name="connect-to-microsoft-365-with-powershell"></a>PowerShell を使用して Microsoft 365 に接続する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
@@ -59,7 +54,7 @@ Microsoft 365 および管理者のユーザー アカウント、グループ�
 
 **PowerShell**
 
-- Graph 用 Azure Active Directory PowerShell モジュールでは、PowerShell バージョン 5.1 以降を使用する必要があります。
+- Graph 用 Azure Active Directory PowerShell モジュールでは、PowerShell バージョン 5.1 を使用する必要があります。
 
 - Windows PowerShell 用 Microsoft Azure Active Directory モジュールでは、PowerShell バージョン 5.1 から PowerShell バージョン 6 までを使用する必要があります。PowerShell バージョン 7 は使用できません。
        
@@ -124,7 +119,7 @@ Are you sure you want to install the modules from 'PSGallery'?
 >[!Note]
 >Windows PowerShell 用 Microsoft Azure Active Directory モジュールには、コマンドレット名に *Msol* が含まれています。
 
-PowerShell バージョン 7 以降は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。 PowerShell バージョン 7 以降では、Graph 用 Azure Active Directory PowerShell モジュールか Azure PowerShell を使用する必要があります。
+PowerShell バージョン 7 以降は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。 PowerShell バージョン 7 以降の場合は、Microsoft Graph PowerShell SDK を使用する必要があります。
 
 PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。
     
