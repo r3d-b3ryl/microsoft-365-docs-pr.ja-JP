@@ -1,6 +1,6 @@
 ---
 title: Linux 用 Microsoft Defender for Endpoint
-ms.reviewer: ''
+ms.reviewer: null
 description: Linux で Microsoft Defender for Endpoint をインストールして使用する方法について説明します。
 keywords: Microsoft、Defender、Microsoft Defender for Endpoint、Linux、インストール、展開、アンインストール、puppet、ansible、linux、redhat、ubuntu、debian、sles、suse、centos
 ms.prod: m365-security
@@ -13,17 +13,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b7b4ca9f93811f3a1e3e036b4cee620ae639e95
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322133"
 ---
+
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -98,15 +93,32 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
     - 6.9 の場合: 2.6.32-696.*
     - 6.10: 2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2:
     
-        |||||
-        |--|--|--|--|
-        |2.6.32-754.2.1.el6.x86_64|2.6.32-754.17.1.el6.x86_64|2.6.32-754.29.1.el6.x86_64|2.6.32-754.3.5.el6.x86_64|
-        |2.6.32-754.18.2.el6.x86_64|2.6.32-754.29.2.el6.x86_64|2.6.32-754.6.3.el6.x86_64|2.6.32-754.22.1.el6.x86_64|
-        |2.6.32-754.30.2.el6.x86_64|2.6.32-754.9.1.el6.x86_64|2.6.32-754.23.1.el6.x86_64|2.6.32-754.33.1.el6.x86_64|
-        |2.6.32-754.10.1.el6.x86_64|2.6.32-754.24.2.el6.x86_64|2.6.32-754.35.1.el6.x86_64|2.6.32-754.11.1.el6.x86_64|
-        |2.6.32-754.24.3.el6.x86_64|2.6.32-754.39.1.el6.x86_64|2.6.32-754.12.1.el6.x86_64|2.6.32-754.25.1.el6.x86_64|
-        |2.6.32-754.41.2.el6.x86_64|2.6.32-754.14.2.el6.x86_64|2.6.32-754.27.1.el6.x86_64|2.6.32-754.15.3.el6.x86_64|
-        |2.6.32-754.28.1.el6.x86_64|
+       - 2.6.32-754.10.1.el6.x86_64
+       - 2.6.32-754.11.1.el6.x86_64
+       - 2.6.32-754.12.1.el6.x86_64
+       - 2.6.32-754.14.2.el6.x86_64
+       - 2.6.32-754.15.3.el6.x86_64
+       - 2.6.32-754.17.1.el6.x86_64
+       - 2.6.32-754.18.2.el6.x86_64
+       - 2.6.32-754.2.1.el6.x86_64
+       - 2.6.32-754.22.1.el6.x86_64
+       - 2.6.32-754.23.1.el6.x86_64
+       - 2.6.32-754.24.2.el6.x86_64
+       - 2.6.32-754.24.3.el6.x86_64
+       - 2.6.32-754.25.1.el6.x86_64
+       - 2.6.32-754.27.1.el6.x86_64
+       - 2.6.32-754.28.1.el6.x86_64
+       - 2.6.32-754.29.1.el6.x86_64
+       - 2.6.32-754.29.2.el6.x86_64
+       - 2.6.32-754.3.5.el6.x86_64
+       - 2.6.32-754.30.2.el6.x86_64
+       - 2.6.32-754.33.1.el6.x86_64
+       - 2.6.32-754.35.1.el6.x86_64
+       - 2.6.32-754.39.1.el6.x86_64
+       - 2.6.32-754.41.2.el6.x86_64
+       - 2.6.32-754.6.3.el6.x86_64
+       - 2.6.32-754.9.1.el6.x86_64
+
 
     > [!NOTE]
     > 新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンは、技術的なアップグレードのサポートのためにのみ提供されます。

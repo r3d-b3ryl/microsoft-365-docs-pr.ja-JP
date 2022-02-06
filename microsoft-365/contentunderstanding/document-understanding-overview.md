@@ -8,19 +8,14 @@ audience: admin
 ms.topic: article
 ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: null
 ms.collection:
-- enabler-strategic
-- m365initiative-syntex
+  - enabler-strategic
+  - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex のドキュメント理解について説明します。
-ms.openlocfilehash: fe09298e32ce76cab3c8ea16e3d1075a0925f60f
-ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61153702"
 ---
+
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のドキュメント理解の概要
 
 
@@ -110,6 +105,13 @@ OCR 処理は、次の要件を満たすドキュメントで最適に機能し�
 - xls
 - xlsx
 
+### <a name="supported-languages"></a>サポートされている言語
+
+ドキュメント理解モデルでは、次の言語がサポートされています。
+- フランス語
+- ドイツ語
+- イタリア語
+- スペイン語
 
 
 ## <a name="see-also"></a>関連項目

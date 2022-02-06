@@ -14,15 +14,10 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 02/02/2022
+ms.date: 02/04/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 00c92b5d19c33a3f1c085715d0b1a6f2b4186667
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327339"
 ---
+
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策の除外をWindowsする
 
 
@@ -45,7 +40,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 - 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 自動除外は、フル スキャン、クイック スキャン、またはオンデマンド スキャン中には適用されません。
 - カスタム除外と重複除外は、自動除外と競合しない。
 - Microsoft Defender ウイルス対策展開イメージのサービスと管理 (DISM) ツールを使用して、コンピューターにインストールされている役割を特定します。
-- Windows Server 2012 R2 には自動的にデータが含Microsoft Defender ウイルス対策。 これらのサーバーを Defender for Endpoint にオンボードすると、Windows Defender ウイルス対策がインストールされ、オペレーティング システム ファイルの除外が既定で含まれます。 ただし、サーバー ロールの自動除外は機能し、必要に応じて除外を追加する必要があります。 詳細については、「[Windows サーバーを Microsoft Defender for Endpoint にオンボードする](configure-server-endpoints.md)」を参照してください。
+- Windows Server 2012 R2 にはインストールMicrosoft Defender ウイルス対策機能として使用できません。 これらのサーバーを Defender for Endpoint にオンボードすると、Windows Defender ウイルス対策がインストールされ、オペレーティング システム ファイルの既定の除外が適用されます。 ただし、サーバー の役割 (以下で指定) の除外は自動的には適用されません。これらの除外は必要に応じて構成する必要があります。 詳細については、「[Windows サーバーを Microsoft Defender for Endpoint にオンボードする](configure-server-endpoints.md)」を参照してください。
 
 この記事では、このページ以降のMicrosoft Defender ウイルス対策のWindows Server 2016説明します。
 

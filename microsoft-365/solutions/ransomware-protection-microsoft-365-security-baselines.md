@@ -2,7 +2,7 @@
 title: 手順 1. セキュリティ 基準を構成する
 author: JoeDavies-MSFT
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 manager: dansimp
 audience: ITPro
@@ -10,20 +10,15 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- Strat_O365_Enterprise
-- ransomware
-- m365solution-ransomware
+  - M365-security-compliance
+  - Strat_O365_Enterprise
+  - ransomware
+  - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人間が操作するランサムウェア、人手によるランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: セキュリティ ベースラインを使用して、ランサムウェア攻撃から Microsoft 365 リソースを保護します。
-ms.openlocfilehash: bd988f70dacc1ad2a7645b09c9d9994315b5a4df
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667796"
 ---
+
 # <a name="step-1-configure-security-baselines"></a>手順 1. セキュリティ 基準を構成する
 
 ランサムウェアの攻撃者に対抗する最初の手順として、次の Microsoft 定義のセキュリティ 基準を構成する必要があります。
@@ -38,7 +33,7 @@ ms.locfileid: "60667796"
 
 まず [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score) を使用してセキュリティ態勢を評価および測定し、指示に従って必要に応じて改善します。
 
-次に、[攻撃表面の縮小ルール](/microsoft-365/security/defender-endpoint/attack-surface-reduction)を使用して、疑わしいアクティビティと脆弱なコンテンツをブロックします。これらのルールには以下を防止するものが含まれています:
+次に、[攻撃表面の縮小ルール](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment)を使用して、疑わしいアクティビティと脆弱なコンテンツをブロックします。これらのルールには以下を防止するものが含まれています:
 
 - すべての Office アプリケーションによる子プロセスの作成
 - メール クライアントと Web メールからの実行可能なコンテンツ

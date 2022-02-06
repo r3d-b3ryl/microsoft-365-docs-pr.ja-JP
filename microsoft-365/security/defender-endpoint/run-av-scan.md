@@ -15,13 +15,8 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 13ec18a89080793637db2ee3dabbb992778ad4dc
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320772"
 ---
+
 # <a name="run-antivirus-scan-api"></a>ウイルス対策スキャン API の実行
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "62320772"
 > [!IMPORTANT]
 >
 > - このアクションは、Windows 10バージョン 1709 以降、および 11 のデバイスWindowsできます。
-> - ユーザー Microsoft Defender ウイルス対策 (Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関Microsoft Defender ウイルス対策他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender ウイルス対策パッシブ モードにできます。 詳細については、「互換性に[関するMicrosoft Defender ウイルス対策参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide)。
+> - ユーザー Microsoft Defender ウイルス対策 (Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関Microsoft Defender ウイルス対策他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender ウイルス対策パッシブ モードにできます。 詳細については、「互換性に[関するMicrosoft Defender ウイルス対策参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -76,7 +71,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 名前|種類|説明
 :---|:---|:---
-Authorization|文字列|ベアラー {token}。 **必須**。
+Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json
 
 ## <a name="request-body"></a>要求本文

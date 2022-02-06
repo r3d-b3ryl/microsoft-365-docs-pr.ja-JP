@@ -7,26 +7,20 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-- MOE150
+  - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 2dcc7e57182df3fe0a06bb1713b3a0786f35e144
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156138"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -39,7 +33,7 @@ ms.locfileid: "62156138"
 
 このMicrosoft 365 Defender関連するアラートは、インシデントを形成するために[まとめて集計されます](incidents-overview.md)。 インシデントは常に攻撃の広範なコンテキストを提供しますが、アラートの分析は、より深い分析が必要な場合に有用です。 
 
-アラート **キューには、** 現在の一連のアラートが表示されます。 [インシデント] ポータルのクイック **起動時**&通知>通知キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderされます</a>。
+アラート **キューには、** 現在の一連のアラートが表示されます。 インシデント ポータルのクイック 起動時に、**インシデント** &アラート>アラート キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="ポータル内のアラート キューのMicrosoft 365 Defenderします。":::
 
@@ -47,16 +41,20 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 既定では、ポータルのアラート キュー Microsoft 365 Defender過去 30 日間の新しいアラートと進行中のアラートが表示されます。 最新のアラートはリストの一番上に表示されます。最初に確認できます。 
 
-既定のアラート キューから [フィルター] を選択 **すると、[** フィルター] ウィンドウが表示され、そこからアラートのサブセットを指定できます。 次に例を示します。
+既定のアラート キューから [フィルター] を **選択すると、[** フィルター] ウィンドウが表示され、そこからアラートのサブセットを指定できます。 次に例を示します。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="ポータル内のアラート キューのフィルター ウィンドウのMicrosoft 365 Defenderします。":::
+
+<!--
+UPDATE SCREENSHOT
+--> 
 
 次の条件に従ってアラートをフィルター処理できます。
 
 - 重要度
 - 状態
 - サービス ソース
-- 影響を受け取ったアセット
+- エンティティ (影響を受け取ったアセット)
 - 自動調査の状態
 
 ## <a name="required-roles-for-defender-for-office-365-alerts"></a>ユーザー通知の Defender に必要Office 365役割
@@ -109,7 +107,7 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint、microsoft Defender
 | アラート ソース | 先頭文字 |
 | :---|:--- |
 | Microsoft Defender for Office 365 | `fa{GUID}` <br> 例: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
-| Microsoft Defender for Endpoint | `da` または `ed` カスタム検出アラートの場合 <br> |
+| Microsoft Defender for Endpoint | `da` またはカスタム `ed` 検出アラートの場合 <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> 例: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> 例: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
@@ -117,7 +115,7 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint、microsoft Defender
 
 [ **実行されたアクション** ] セクションには、このアラートの影響を受けるメールボックス、デバイス、ユーザーなど、影響を受けるアセットの一覧があります。 
 
-[アクション センターで表示 **] を選択して**、ポータルの[アクション センター] の [履歴] タブMicrosoft 365 Defenderすることもできます。  
+[アクション センターで **表示] を選択して**、ポータルの [アクション センター] の [履歴] タブMicrosoft 365 Defenderすることもできます。 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>アラート ストーリー内のアラートの役割を追跡する
 
@@ -167,7 +165,7 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint、microsoft Defender
 
 ## <a name="resolve-an-alert"></a>アラートを解決する
 
-アラートの分析が完了し、解決したら、[アラートの管理] ウィンドウに移動し、その状態を [解決済み] としてマークし、False アラートまたは **True** アラートとして分類します。 true アラートの場合は、[決定] フィールドにアラートの脅威の種類 **を指定** します。
+アラートの分析が完了して解決したら、[アラートの管理] ウィンドウに移動し、状態を [解決済み] としてマークし、False  アラートまたは **True** アラートとして分類します。 true アラートの場合は、[決定] フィールドにアラートの脅威の種類 **を指定** します。
 
 アラートを分類し、その決定を指定すると、Microsoft 365 Defenderを調整して、より多くの真のアラートと少ない誤った通知を提供できます。
 
@@ -187,7 +185,7 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint、microsoft Defender
 
 オートメーションを作成するには、Microsoft Defender for Cloud Apps に接続する前Power Automate API トークンが必要です。
 
-1. **[設定] をクリック** し **、[セキュリティ拡張機能]** を選択し、[API **トークン**] タブの [トークンの追加 **] をクリック** します。
+1. [**設定**] をクリックし、[**セキュリティ拡張機能] を** 選択し、[API **トークン**] タブの [トークンの追加 **] をクリック** します。
 
 2. トークンの名前を指定し、[生成] を **クリックします**。 後で必要に応じてトークンを保存します。
 
@@ -197,9 +195,9 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint、microsoft Defender
 
 このビデオでは、電源自動化を Defender for Cloud Apps に接続する方法も説明します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-インプロセス インシデントの必要に応じて、調査を続行 [します](investigate-incidents.md)。
+インプロセス インシデントの場合は、必要に応じて調査を続行 [します](investigate-incidents.md)。
 
 ## <a name="see-also"></a>関連項目
 

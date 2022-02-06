@@ -20,6 +20,8 @@
       href: review.md
     - name: パッケージ ガイドライン
       href: contentguideline.md
+    - name: アプリケーション/テスト ルール
+      href: rules.md
 - name: 使い方ガイド
   items:
     - name: サーバー アプリケーションのテスト
@@ -34,7 +36,7 @@
       href: cpu.md
     - name: SDK & API
       href: sdkapi.md
-- name: Reference
+- name: 参照
   items:
     - name: よく寄せられる質問
       href: faq.md

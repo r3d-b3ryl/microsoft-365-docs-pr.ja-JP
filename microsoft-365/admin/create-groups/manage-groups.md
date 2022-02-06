@@ -10,28 +10,23 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_TOC
 ms.custom: admindeeplinkMAC
 search.appverid:
-- BCS160
-- MET150
-- MOE150
+  - BCS160
+  - MET150
+  - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループ メンバーのMicrosoft 365追加、電子メール アドレス、グループ名、または説明の編集、グループの動作のカスタマイズなど、グループグループの管理について説明します。
-ms.openlocfilehash: 89e4ff11ffbb396038dd28c26b1f06762a2b5b21
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586459"
 ---
+
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>グループを管理するMicrosoft 365 管理センター
 
 グループを[作成し、Microsoft 365メンバー](create-groups.md)を追加したら、グループを構成できます。 グループ名または説明の編集、所有者またはメンバーの管理、外部送信者がグループにメールを送信できるかどうか、およびグループ会話のコピーをメンバーに送信するかどうかを指定できます。
 
-で、Microsoft 365 管理センターに移動します [https://admin.microsoft.com](https://admin.microsoft.com) 。
+[https://admin.microsoft.com](https://admin.microsoft.com) の Microsoft 365 管理センターに移動します。
 
 ## <a name="edit-the-group-name-or-description"></a>グループ名または説明を編集する
 
@@ -49,7 +44,7 @@ ms.locfileid: "60586459"
 
 3. [メンバー **] タブ** で、所有者またはメンバーを管理する場合を選択します。
 
-4. [追加 **] を** 選択してユーザーを追加するか **、[X] をクリックして** ユーザーを削除します。
+4. [追加 **] を** 選択してユーザーを追加するか、[ **X] をクリックして** ユーザーを削除します。
 
 5. [閉じる] をクリックします。
 
@@ -65,7 +60,7 @@ ms.locfileid: "60586459"
 
 2. 管理するグループの名前をクリックして、設定ウィンドウを開きます。
 
-3. [グループ **メッセージ設定]** タブで、[グループの会話とイベントのコピーをグループ メンバーに送信する] を選択します。メンバーがグループ メッセージと予定表アイテムのコピーを自分の受信トレイで受信する場合。
+3. [グループ メッセージ **設定**] タブで、[グループの会話とイベントのコピーをグループ メンバーに送信する] を選択します。メンバーがグループ メッセージと予定表アイテムのコピーを自分の受信トレイで受信する場合。
 
 4. **[保存]** を選択します。
 
@@ -77,12 +72,12 @@ ms.locfileid: "60586459"
 
 2. 管理するグループの名前をクリックして、設定ウィンドウを開きます。
 
-3. 管理センター グループの一覧で、変更するグループの名前を選択し、[設定] タブ **で、[** このグループにメールを送信する外部送信者を許可する] を **選択します**。
+3. 管理センター グループの一覧で、変更するグループの名前を **選択** し、[設定] タブで、[このグループにメールを送信する外部送信者を許可する] を **選択します**。
     
 4. **[保存]** を選択します。
 
 > [!NOTE]
-> オーガニック化以外のユーザーがグループにメールを送信するには、最大で 30 分かかる場合があります。
+> 組織外のユーザーがグループにメールを送信するには、最大で 30 分かかる場合があります。
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>グループを完全Microsoft 365する
 

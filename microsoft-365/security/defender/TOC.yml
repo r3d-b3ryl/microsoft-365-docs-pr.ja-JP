@@ -170,7 +170,7 @@
                   items:
                     - name: 概要
                       href: alert-grading-playbooks.md
-                    - name: 疑わしいメール転送
+                    - name: 疑わしいメール転送アクティビティ
                       href: alert-grading-playbook-email-forwarding.md
                     - name: 疑わしい受信トレイ転送ルール
                       href: alert-grading-playbook-inbox-forwarding-rules.md

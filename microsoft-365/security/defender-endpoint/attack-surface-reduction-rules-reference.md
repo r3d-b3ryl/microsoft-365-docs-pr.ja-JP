@@ -10,20 +10,16 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar, jcedola
+ms.reviewer: 'oogunrinde, sugamar, jcedola'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: ce8bfd2d9b2fc7b45c1fecef69588ba1b834b91b
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320717"
+ms.date: 02/04/2022
 ---
+
+
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃表面の縮小ルールのリファレンス
 
 **適用対象:**
@@ -76,7 +72,7 @@ ms.locfileid: "62320717"
 
 _パブリック プレビューの終了: サポートされているオペレーティング システム_
 
-## <a name="supported-operating-systems"></a>サポートされているオペレーティング システム 
+## <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
 次の表に、現在一般提供にリリースされているルールでサポートされているオペレーティング システムの一覧を示します。 ルールはアルファベット順に表示されます。
 
@@ -212,6 +208,9 @@ LSASS は、コンピューターにサインインするユーザーをWindows�
 
 > [!NOTE]
 > 一部のアプリでは、実行中のすべてのプロセスを列挙し、網羅的なアクセス許可を使用して開きます。 このルールは、アプリのプロセスのオープン アクションを拒否し、詳細をセキュリティ イベント ログに記録します。 このルールでは、多くのノイズが発生する可能性があります。 LSASS を列挙するだけで、機能に実際の影響がないアプリがある場合は、除外リストに追加する必要はありません。 それ自体では、このイベント ログ エントリは必ずしも悪意のある脅威を示すとは限りません。
+  
+> [!IMPORTANT]
+> 攻撃表面縮小 (ASR) ルール "Windows ローカル セキュリティ機関サブシステム (lsass.exe) からの資格情報の盗用をブロックする" の既定の状態が [構成されていない] から [構成済み]  に変更され、既定のモードが [ブロック] に設定されます。 他のすべての ASR ルールは既定の状態のままです。未 **構成です**。 エンドユーザーの通知を減らすために、ルールに追加のフィルター ロジックが既に組み込まれています。 ユーザーは、既定のモードを **上書きする監査** モード、 **警告** モード、または **無効** モードにルールを構成できます。 このルールの機能は、ルールが既定モードで構成されているかどうか、または手動でブロック モードを有効にした場合と同じです。  
 
 Intune 名: `Flag credential stealing from the Windows local security authority subsystem`
 

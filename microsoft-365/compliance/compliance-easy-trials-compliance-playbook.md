@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 コンプライアンス ソリューション試用版プレイブック
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
@@ -10,18 +10,13 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: Microsoft 365 コンプライアンス ソリューション試用版プレイブック。
-ms.openlocfilehash: 0da966fa23b12d4428a42eabbd102ba560c96b5f
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265705"
 ---
+
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>試用版プレイブック: Microsoft 365 コンプライアンス ソリューション
 
 Microsoft 365 コンプライアンス ソリューション試用版プレイブックへようこそ。 このプレイブックは、Microsoft 365 のコンプライアンスおよびセキュリティ製品の堅牢で包括的な機能の確認に役立てることで、90 日間の無料トライアルを最大限に活用することができます。
@@ -417,6 +412,8 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 データの収集と使用を規定する国、地域、業界の要求に対して、組織がリスクを評価し、効率的に対応するのに役立ちます。
 
 [コンプライアンス マネージャー プレミアム評価の試用版に関する詳細情報](compliance-easy-trials-compliance-manager-assessments.md)。
+
+[試用版プレイブック: Microsoft コンプライアンス マネージャー プレミアム アセスメント](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Microsoft Priva プライバシー リスク管理と Microsoft Priva 主体の権利要求
 

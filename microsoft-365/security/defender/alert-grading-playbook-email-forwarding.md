@@ -7,26 +7,20 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-- MOE150
+  - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 83e8061d2c9473c274d615c8905b2918e1b72d17
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355213"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>疑わしいメール転送アクティビティのアラート の評価
 
@@ -39,7 +33,7 @@ ms.locfileid: "62355213"
 
 電子メールは、転送ルールを使用して手動または自動的に転送できます。 自動転送は、受信トレイ ルール、トランスポート ルール (ETR)、SMTP 転送Exchange複数の方法で実装できます。 手動転送ではユーザーからの直接操作が必要ですが、自動転送された電子メールのすべてが認識されない場合があります。 このMicrosoft 365、ユーザーが悪意のある可能性のある電子メール アドレスに電子メールを自動転送すると、アラートが発生します。
 
-このプレイブックは、疑わしいメール転送に関するアラートを調査し、それらを True Positive (TP) または False Positive (FP) として迅速に評価するのに役立ちます。 その後、TP アラートに対して推奨されるアクションを実行して、攻撃を修復できます。
+このプレイブックは、不審なメール転送アクティビティアラートを調査し、それらを True Positive (TP) または False Positive (FP) として迅速に評価するのに役立ちます。 その後、TP アラートに対して推奨されるアクションを実行して、攻撃を修復できます。
 
 Microsoft Defender for Office 365および Microsoft Defender for Cloud Apps のアラート の評価の概要については、概要記事を[参照してください](alert-grading-playbooks.md)。
 
@@ -53,9 +47,9 @@ Microsoft Defender for Office 365および Microsoft Defender for Cloud Apps の
 
 ## <a name="email-forwarding-rules"></a>メール転送ルール
 
-電子メール転送ルールを使用すると、ユーザーのメールボックスに送信された電子メール メッセージを組織の内部または外部の別のユーザーのメールボックスに転送するルールを設定できます。 一部の電子メール ユーザー(特に複数のメールボックスを持つユーザー)は、雇用主の電子メールをプライベートメール アカウントに移動する転送ルールを構成します。 電子メール転送は便利な機能ですが、情報の開示が発生する可能性があるため、セキュリティリスクを引き起す可能性があります。 攻撃者は、この情報を使用して組織またはパートナーを攻撃する可能性があります。
+メール転送ルールを使用すると、ユーザーは、ユーザーのメールボックスに送信された電子メール メッセージを組織の内部または外部の別のユーザーのメールボックスに転送するルールを作成できます。 一部の電子メール ユーザー(特に複数のメールボックスを持つユーザー)は、雇用主の電子メールをプライベートメール アカウントに移動する転送ルールを構成します。 電子メール転送は便利な機能ですが、情報の開示が発生する可能性があるため、セキュリティリスクを引き起す可能性があります。 攻撃者は、この情報を使用して組織またはパートナーを攻撃する可能性があります。
 
-### <a name="suspicious-email-forwarding-rules"></a>疑わしいメール転送ルール
+### <a name="suspicious-email-forwarding-activity"></a>疑わしいメール転送アクティビティ
 
 攻撃者は、侵害されたユーザー メールボックス内の受信メールを非表示にし、悪意のあるアクティビティをユーザーから隠す電子メール ルールを設定する可能性があります。 また、侵害されたユーザー メールボックスにルールを設定して、メールを削除したり、RSS フォルダーなどの目立たない別のフォルダーにメールを移動したり、メールを外部アカウントに転送したりすることもできます。  
 
@@ -71,7 +65,7 @@ Microsoft Defender for Office 365疑わしいメール転送ルールを検出�
 
 ## <a name="alert-details"></a>アラートの詳細
 
-特定のアラートを確認するには、[アラート] ページ **を開** き、[アクティビティ一覧 **] セクションを表示** します。 次に例を示します。
+[不審なメール転送アクティビティ] アラートを確認するには、[通知] ページ **を開** き、[アクティビティ一覧 **] セクションを表示** します。 次に例を示します。
  
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="アラートに関連するアクティビティの一覧" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
@@ -177,12 +171,6 @@ Threat Explorer は、電子メール関連の脅威に対する対話的な調�
 - CloudAppEvents -ユーザー アクティビティの監査ログが含まれます。
 
 - IdentityLogonEvents - すべてのユーザーのログイン情報が含まれる。
-
-次に例を示します。
-
-:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png" alt-text="高度な検索ページの例" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png":::
-
-クエリを使用して、次の質問の情報を収集します。
 
 >[!Note]
 >特定のパラメーターは、組織またはネットワークに固有です。 各クエリの指示に従って、これらの特定のパラメーターを入力します。
@@ -291,6 +279,6 @@ let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder Identity
 ## <a name="see-also"></a>関連項目
 
 - [アラート の評価の概要](alert-grading-playbooks.md)
-- [不審な受信トレイ転送ルール](alert-grading-playbook-inbox-forwarding-rules.md)
+- [疑わしい受信トレイ転送ルール](alert-grading-playbook-inbox-forwarding-rules.md)
 - [疑わしい受信トレイ操作ルール](alert-grading-playbook-inbox-manipulation-rules.md)
 - [アラートの調査](investigate-alerts.md)

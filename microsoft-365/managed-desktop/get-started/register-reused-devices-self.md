@@ -32,9 +32,9 @@ Microsoft Managed Desktop は、新しいデバイスを使用したり、既に
 
 ### <a name="obtain-the-hardware-hash"></a>ハードウェア ハッシュの取得
 
-**ハードウェア ハッシュを取得するには、次の方法を実行します。**
+Microsoft Managed Desktop は、ハードウェア ハッシュを参照することによって、各デバイスを一意に識別します。 既に使用しているデバイスからこの情報を取得するには、4 つのオプションがあります。
 
-Microsoft Managed Desktop は、ハードウェア ハッシュを参照することによって、各デバイスを一意に識別します。 既に使用しているデバイスからこの情報を取得するには、次の 4 つのオプションがあります。
+**ハードウェア ハッシュを取得するには、次の方法を実行します。**
 
 - ハードウェア ハッシュを含む AutoPilot 登録ファイルを OEM サプライヤーに問い合わせ。
 - [データ] で情報[をMicrosoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)。

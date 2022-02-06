@@ -7,19 +7,13 @@ ms.author: mapatel
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
-ms.date: 07/06/2021
+ms.date: 02/04/2022
 ms.service: virtual-desktop
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
-ms.custom: ''
+ms.custom: null
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 156122ad2b5d92a4a093e92c64b55219238c8ee0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211779"
 ---
 # <a name="test-package-guidelines"></a>テスト パッケージのガイドライン
 
@@ -31,7 +25,7 @@ ms.locfileid: "60211779"
 
 アップロードする前に、zip ファイル内のコンテンツを認識することが重要です。 多くの場合、フォルダーを圧縮すると、ローカル コンピューターは zip ファイルの下にメイン フォルダーを作成します。 この場合、参照元は次の太字で **示** されます。
 
-**Contoso_App_Folder.zip:**
+**Contoso_App_Folder.zip**:
 
 ```console
 ├── Contoso_App_Folder
@@ -52,7 +46,7 @@ ms.locfileid: "60211779"
 
 その他の場合、zip ファイルの下にファイルやコンテンツが含めることもできます (たとえば、2nd レベルのフォルダーはありません)。
 
-**Zip_file_uploaded.zip:**
+**Zip_file_uploaded.zip**:
 
 ```console
 ├── file1.exe
@@ -75,7 +69,7 @@ ms.locfileid: "60211779"
 
 **機能テスト:** アプリケーション パッケージには、少なくとも 1 つの PowerShell スクリプトが含まれている必要があります。 複数のスクリプトが提供されている場合、スクリプトはアップロード シーケンスで実行され、特定のスクリプトでエラーが発生すると、後続のスクリプトの実行が停止します。
 
-### <a name="script-requirements"></a>スクリプトの要件
+### <a name="script-requirements"></a> スクリプトの要件
 
 - PowerShell バージョン 5.1+
 - 無人実行
@@ -97,11 +91,11 @@ ms.locfileid: "60211779"
 
 ## <a name="3-log-collection"></a>3. ログ収集
 
-各スクリプトは、生成されたログをという名前のフォルダーに出力する必要があります `logs` 。 という名前のディレクトリ内のすべてのフォルダー `logs` がコピーされ、ページにダウンロード用に表示 `Test Results` されます。
+各スクリプトは、生成されたログをという名前のフォルダーに出力する必要があります `logs`。 という名前のディレクトリ内のすべてのフォルダー `logs` がコピーされ、ページにダウンロード用に表示 `Test Results` されます。
 
-たとえば、インストール スクリプト **(App/scripts/install** ディレクトリに含まれます) は、ログ **/install.log** にログを出力し、最終的なログは **Apps/script/install/logs/install.log** に出力できます。
+たとえば、インストール スクリプト (**App/scripts/install** ディレクトリにある可能性があります) は、ログ **/install.log** にログを出力できます。最終的なログは Apps **/script/install/logs/install.log** になります。
 
-システムは、他のフォルダー内の他のファイルと共にファイルをピックアップし `install.log` `logs` 、ダウンロードのために照合します。
+システムは、他のフォルダー内の `install.log` 他 `logs` のファイルと共にファイルをピックアップし、ダウンロードのために照合します。
 
 ## <a name="4-application-binaries"></a>4. アプリケーション バイナリ
 
@@ -112,8 +106,12 @@ ms.locfileid: "60211779"
 > [!NOTE]
 > アップロードされた zip ファイルの名前にスペースや特殊文字を含めることはできません
 
-## <a name="next-steps"></a>次の手順
+## <a name="5-applicationtest-rules"></a>5. アプリケーション/テスト ルール
+
+アプリケーション/テストを Test Base インフラストラクチャの下で正しく実行するには、「アプリケーション/テスト ルール」で説明されているルールに従 [う必要があります ](rules.md)。 
+
+## <a name="next-steps"></a>次のステップ
 
 次の記事に進み、よく寄せられる **質問 (FAQ) を表示する**
 > [!div class="nextstepaction"]
-> [次の手順](faq.md)
+> [次のステップ](faq.md)

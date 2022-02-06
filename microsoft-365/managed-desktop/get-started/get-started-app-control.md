@@ -1,6 +1,6 @@
 ---
 title: アプリ制御の使用を開始する
-description: null
+description: この記事では、アプリコントロールを有効にする方法について説明します。
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: tiaraquan

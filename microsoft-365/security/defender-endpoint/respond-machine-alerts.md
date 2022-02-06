@@ -14,13 +14,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ce7eab7648285cb671ed5657e16516f5c1ed235c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321977"
 ---
+
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -133,7 +128,7 @@ ms.locfileid: "62321977"
 
 >[!IMPORTANT]
 >- このアクションは、macOS および Linux では現在サポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答を使用してデバイス [上のエンティティを調査する」を参照してください。](live-response.md)
->- Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性に[関するMicrosoft Defender ウイルス対策参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide)。
+>- Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性に[関するMicrosoft Defender ウイルス対策参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)。
 
 [ウイルス対策スキャンの実行] を選択し、実行するスキャンの種類 (クイックまたはフル) を選択し、コメントを追加してからスキャンを確認します。
 

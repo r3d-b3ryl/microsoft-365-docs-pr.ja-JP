@@ -1,30 +1,25 @@
 ---
 title: Windows で高度なトラブルシューティングを行うためのデータ収集
 description: 複雑なトラブルシューティング シナリオでクライアント アナライザーを使用してデータを収集する方法について説明します。
-keywords: analzyer,データ収集,mdeclientanalyzerのトラブルシューティング,高度なトラブルシューティング
+keywords: 'analzyer,データ収集,mdeclientanalyzerのトラブルシューティング,高度なトラブルシューティング'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ab670be80c34ced9318c51e2de29a9c9226ea17a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320825"
 ---
+
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Windows で高度なトラブルシューティングを行うためのデータ収集
 
 **適用対象:**
@@ -38,7 +33,7 @@ Microsoft サポート 担当者と共同作業する場合は、クライアン
 ![コマンド ラインのクライアント アナライザー パラメーターのイメージ。](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
-> 高度なトラブルシューティング パラメーターを使用すると、アナライザーは [MpCmdRun.exe] [https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus?view=o365-worldwide) を呼び出して、関連Microsoft Defender ウイルス対策ログを収集します。
+> 高度なトラブルシューティング パラメーターを使用すると、アナライザーは関連するサポート ログ[MpCmdRun.exe収集Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus)呼び出します。
 
 **-h** - [標準ログ セット](/windows-hardware/test/wpt/wpr-command-line-options)Windows詳細な一般的なパフォーマンス トレースを収集するために、パフォーマンス レコーダーを呼び出します。
 

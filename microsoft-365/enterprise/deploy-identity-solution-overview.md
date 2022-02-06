@@ -33,6 +33,12 @@ description: ユーザーの ID インフラストラクチャをMicrosoft 365�
 
 このポスター [はダウンロードして](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) 、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷できます。
 
+このソリューションは、ゼロトラスト展開スタックMicrosoft 365最初の手順です。
+
+![ゼロMicrosoft 365展開スタック](../media/deploy-identity-solution-overview/zero-trust-deployment-stack.png)
+
+詳細については、「ゼロトラスト展開計画Microsoft 365[」を参照してください](/microsoft-365/security/microsoft-365-zero-trust)。
+
 ## <a name="whats-in-this-solution"></a>このソリューションの機能
 
 このソリューションでは、従業員にアクセスを提供し、id ベースの攻撃から保護するために、Microsoft 365 テナントの ID インフラストラクチャを展開する手順を説明します。
