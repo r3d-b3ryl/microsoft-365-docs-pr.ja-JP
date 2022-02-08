@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d36fa53266245ea99f93c12eda14817b39d3eafa
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5281df5fe500907af6bb54384bb44b5a29534460
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936836"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444595"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender前提条件
 
@@ -35,7 +35,7 @@ ms.locfileid: "61936836"
 **適用対象:**
 - Microsoft 365 Defender
 
-ライセンスと、ライセンスのプロビジョニングと使用に関するその他の要件について[Microsoft 365 Defender。](microsoft-365-defender.md)
+ライセンスと、ライセンスのプロビジョニングと使用に関するその他の要件[Microsoft 365 Defender。](microsoft-365-defender.md)
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 これらのライセンスを使用すると、Microsoft 365 Defenderポータルを介してMicrosoft 365 Defender機能にアクセスできます。
@@ -53,36 +53,33 @@ ms.locfileid: "61936836"
 - Microsoft Defender for Cloud Apps
 - Defender for Office 365 (プラン 2)
 
-詳細については、サービス[プランのMicrosoft 365 Enterpriseしてください](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
+詳細については、サービス [プランのMicrosoft 365 Enterpriseしてください](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
 
 > まだライセンスがありませんか? [Microsoft 365 サブスクリプションを試用する/購入する](../../commerce/try-or-buy-microsoft-365.md)
 
 ### <a name="check-your-existing--licenses"></a>既存のライセンスを確認する
-[ライセンス] Microsoft 365 管理センター[(](https://admin.microsoft.com/)admin.microsoft.com ) に移動して、既存のライセンスを表示します。 管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。
+[ライセンス] Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.com/)) に移動して、既存のライセンスを表示します。 管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。
 
 >[!NOTE]
-> ライセンス情報を表示するには、課金管理者またはグローバル[](/azure/active-directory/roles/permissions-reference)閲覧Azure ADが割り当てられている必要があります。  アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
+> ライセンス情報を表示するには、アカウントの **課金** 管理者 [](/azure/active-directory/roles/permissions-reference)またはグローバル 閲覧者Azure AD割り当てる必要があります。 アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
-サーバーを有効に **するには、** グローバル管理者またはセキュリティ管理者Azure Active Directory必要Microsoft 365 Defender。 データへのアクセスを規制する方法Microsoft 365 Defender使用するために必要な役割の一覧については、「データへのアクセスの管理」を[参照](m365d-permissions.md)Microsoft 365 Defender。
+サーバーを有効に **するには、** グローバル管理者またはセキュリティ管理者Azure Active Directory必要Microsoft 365 Defender。 データへのアクセスの規制方法に関する情報Microsoft 365 Defender使用するために必要な役割の一覧については、「アクセスの管理」を参照[Microsoft 365 Defender。](m365d-permissions.md)
 
 ## <a name="browser-requirements"></a>ブラウザー要件
 11 Microsoft 365 Defender HTML 5 準拠の web ブラウザー Microsoft 365 Defender、Microsoft Edge 11 Internet Explorerを使用して、Microsoft 365 Defender ポータルでアクセスします。
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>米国の政府機関GCC、GCC、その他の米国政府機関への可用性
 
-米国政府機関のお客様に関連する情報については、「[米国政府機関のお客様Microsoft 365 Defenderを参照してください](usgov.md)。
+米国政府機関のお客様に関連する情報については、「[Microsoft 365 Defender」を参照してください](usgov.md)。
 
 現在、Microsoft Defender for Office 365統合Microsoft 365 Defenderは、次のデータセンターの場所Office 365使用できません。
 
-- ブラジル 
-- ドイツ 
 - ノルウェー 
-- シンガポール 
-- 南アフリカ
-- スウェーデン
-- スイス 
+- 南アフリカ 
 - アラブ首長国連邦 
+- スウェーデン 
+- シンガポール 
 
 
 ## <a name="related-topics"></a>関連項目

@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f5b1d0f79f9d85ab433aa91c043104362fb8f766
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1ec2694fa974cde3f8316f4ad0937fc686d16c63
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167864"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444655"
 ---
 # <a name="turn-on-block-at-first-sight"></a>事前ブロックを有効にする
 
@@ -65,7 +65,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
 
 - 多くの場合、このプロセスによって、従来数時間かかっていた新しいマルウェアへの対応時間が数秒に短縮されます。
 
-- クラウドベースの保護サービスによってファイルを分析する間、[ファイルが実行されないように抑制する時間の長さを指定する](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)こともできます。 また、ファイルがブロックされたときに[ユーザーのデスクトップに表示されるメッセージをカスタマイズする](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md)こともできます。 会社名、連絡先情報、メッセージの URL を変更することができます。
+- クラウドベースの保護サービスによってファイルを分析する間、[ファイルが実行されないように抑制する時間の長さを指定する](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)こともできます。 また、ファイルがブロックされたときに[ユーザーのデスクトップに表示されるメッセージをカスタマイズする](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information)こともできます。 会社名、連絡先情報、メッセージの URL を変更することができます。
 
 ## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>Microsoft Intune で事前ブロックを有効にする
 

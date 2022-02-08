@@ -17,16 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス管理の新機能と新機能を確認します。 更新された評価、新しい評価テンプレート、新しいアクションなどについて説明します。
-ms.openlocfilehash: f9583b69459d292b3fb485d09ce5ee5a8ca46620
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: a5489241b223b076e3ef44432fd934afb732b38f
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265506"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444415"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーの新機能
 
 **この記事では、次の情報を参照してください。** コンプライアンス マネージャーの最近の更新プログラムについて学習します。
+
+## <a name="february-2022"></a>2022 年 2 月
+
+### <a name="try-recommended-assessment-templates-for-your-organization"></a>組織の推奨評価テンプレートを試す
+
+組織は、コンプライアンス マネージャーから、どの評価が最も関連性の高い評価になるかについての推奨事項を取得し、迅速なセットアップ プロセスで立ち上げ、実行することができます。 ライセンスを購入する前に推奨事項とプレミアム評価テンプレートを試す方法の詳細については、「プレミアム評価の試用版を開始する [」を参照してください](compliance-manager-setup.md#start-a-premium-assessments-trial)。
 
 ## <a name="november-2021"></a>2021 年 11 月
 
@@ -73,11 +79,11 @@ ms.locfileid: "62265506"
 
 ### <a name="integration-with-microsoft-priva"></a>Microsoft Priva との統合
 
-コンプライアンス マネージャーは Microsoft Priva と手をつないで作業できます。このソリューションは、組織が組織に保存している個人データを保護するのに役立Microsoft 365。 Priva には、データの視覚化と理解、主要なリスク シナリオの管理、および件名の権利要求の処理のためのポリシーの実装に役立つツールが用意されています。 保存する個人データを保護するために Priva で手順を実行すると、コンプライアンス マネージャーのプライバシー評価に役立ち、コンプライアンス スコアの向上に役立ちます。 Priva や他のソリューションがどのようにスコアに貢献しているのか確認し、さらに改善する可能性のある機会については、「コンプライアンス マネージャー  」の「ソリューション」タブを参照してください。 Priva の詳細については、「Microsoft Priva について [」を参照してください](/privacy/priva)。
+コンプライアンス マネージャーは Microsoft Priva と手をつないで作業できます。このソリューションは、組織が組織に保存している個人データを保護するのに役立Microsoft 365。 Priva には、データの視覚化と理解、主要なリスク シナリオの管理、および件名の権利要求の処理のためのポリシーの実装に役立つツールが用意されています。 保存する個人データを保護するために Priva で手順を実行すると、コンプライアンス マネージャーのプライバシー評価に役立ち、コンプライアンス スコアの向上に役立ちます。 Priva や他のソリューションがどのようにスコアに貢献しているのか確認し、さらに改善する可能性のある機会については、「コンプライアンス マネージャー」の「ソリューション」タブを参照してください。 Priva の詳細については、「Microsoft Priva [について」を参照してください](/privacy/priva)。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
-新しいユニバーサル バージョンのテンプレートに基づいて、Microsoft 365以外の製品の評価を作成する機能が追加されました。 詳細については、「評価テンプレートの [操作」を参照してください](compliance-manager-templates.md)。
+新しいユニバーサル バージョンのテンプレートに基づいて、Microsoft 365以外の製品の評価を作成する機能が追加されました。 詳細については、「評価テンプレートの [操作」から始める必要があります](compliance-manager-templates.md)。
 
 ## <a name="may-2021"></a>2021 年 5 月
 
@@ -90,7 +96,7 @@ ms.locfileid: "62265506"
 - Sarbanes-Oxley法
 - 南アフリカ - 情報へのアクセスの促進法
 
-評価テンプレートの完全な一 [覧を確認してください](compliance-manager-templates-list.md)。
+評価テンプレートの完全な一 [覧を確認します](compliance-manager-templates-list.md)。
 
 ## <a name="april-2021"></a>2021 年 4 月
 

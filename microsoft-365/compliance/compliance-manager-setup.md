@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーのユーザー アクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: 5f8bdec9dd7a6a784ff9eb6e91ab44ffd97fcda0
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: fc7e82880cec01f7d3fd0051f75600948e51cdcc
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754891"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444451"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -57,9 +57,9 @@ ms.locfileid: "60754891"
 
 アクセス許可を設定し、ロールを割り当てるには、Microsoft 365 コンプライアンス センター手順に従います。
 
-1. [アクセス許可] ボックスにMicrosoft 365 コンプライアンス センターし、[アクセス許可]<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**を選択します**</a>。
+1. [アクセス許可] ボックスにMicrosoft 365 コンプライアンス センターし、[アクセス許可] <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**を選択します**</a>。
 
-2. [コンプライアンス センター] **ドロップダウンで** 、[役割] を **選択します**。
+2. [コンプライアンス センター] **ドロップダウンで、[** 役割] を **選択します**。
 
 3. 1 人以上のユーザーを追加する役割グループを探し、グループ名の左にあるチェック ボックスをオンにします。 ([以下の役割と関連する機能の一覧](#role-types)を参照してください。 役割グループ名は、ロール名を模倣します)。
 
@@ -83,14 +83,34 @@ Office 365 または Microsoft 365 のサブスクリプションを所有して
 
 以下の表は、コンプライアンス マネージャーの各ロールで許可される機能を示しています。 また、表には各 [Azure AD ロール](/azure/active-directory/roles/permissions-reference)がコンプライアンス マネージャー ロールにマッピングされる方法が示されています。 ユーザーがコンプライアンス マネージャーにアクセスするには、少なくともコンプライアンス マネージャー閲覧者ロール、または Azure AD グローバル閲覧者ロールが必要です。
 
-
 | ユーザーは次のことを行うことができます。 | コンプライアンス マネージャー ロール | Azure AD ロール | 
 | :------------- | :-------------: | :------------: |
-| **データの閲覧はできるが編集できない**| コンプライアンス マネージャー リーダー  | Azure AD グローバル閲覧者、セキュリティ閲覧者 | 
-| **データの編集**| コンプライアンス マネージャーの投稿 | コンプライアンス管理者 | 
-| **テスト結果の編集**| コンプライアンス マネージャー評価者 | コンプライアンス管理者 | 
-| **評価、テンプレート、およびテナント データの管理**| コンプライアンス マネージャー管理 | コンプライアンス管理者、コンプライアンス データ管理者、セキュリティ管理者  | 
-| **ユーザーを割り当てる**| グローバル管理者 | グローバル管理者 | 
+| **データの閲覧はできるが編集できない**| コンプライアンス マネージャー リーダー  | Azure AD グローバル閲覧者、セキュリティ閲覧者 |
+| **データの編集**| コンプライアンス マネージャーの投稿 | コンプライアンス管理者 |
+| **テスト結果の編集**| コンプライアンス マネージャー評価者 | コンプライアンス管理者 |
+| **評価、テンプレート、およびテナント データの管理**| コンプライアンス マネージャー管理 | コンプライアンス管理者、コンプライアンス データ管理者、セキュリティ管理者  |
+| **ユーザーを割り当てる**| グローバル管理者 | グローバル管理者 |
+
+## <a name="start-a-premium-assessments-trial"></a>プレミアム評価の試用版を開始する
+
+コンプライアンス マネージャーのプレミアム評価試用版は、組織に最も関連性の高い評価をすばやく設定するための優れた方法です。 300 を超えるテンプレートのライブラリは、世界中の政府の規制と業界標準に対応しています。
+プレミアム評価の [試用版の詳細をご覧ください](compliance-easy-trials-compliance-manager-assessments.md)。
+
+コンプライアンス マネージャーから試用版を直接開始し、次の手順に従って推奨評価を設定できます。
+
+1. [コンプライアンス マネージャーの概要] **ページで、[** 試用版の開始] **を選択します**。 組織の評価の推奨に役立つ質問をする試用版ライセンス認証ウィザードを入力します。
+
+2. [試用版の **アクティブ化] ページ** で、[ **次** へ] を選択して無料の 90 日間のプレミアム評価試用版を開始し、評価の作成を続行します。
+
+3. 組織を識別する 1 つ以上の業種を選択し、[次へ] を **選択します**。
+
+4. 組織の場所に 1 つ以上の地域を選択し、[次へ] を選択 **します**。
+
+5. [評価 **の選択]** 画面で、[推奨されるテンプレート] の横にあるドロップダウン矢印を選択して、組織に適用される評価の一覧を表示します。 評価の作成に使用するテンプレートの横にあるチェック ボックスをオンにし、[次へ] を選択 **します**。
+
+6. 最終的な選択内容を確認し、[推奨評価の追加] を **選択して** 新しい評価を作成します。
+
+評価の概要については、以下の「評価」ページのセクション [をご](#assessments-page) 覧ください。
 
 ## <a name="settings-for-automated-testing-and-user-history"></a>自動テストやユーザー履歴の設定
 
@@ -109,7 +129,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 #### <a name="to-manage-your-automated-testing-settings"></a>自動テストの設定を管理するには、以下のようにします。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定]**</a>で [Microsoft 365 コンプライアンス センター] を選択します。
+1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a>] で [Microsoft 365 コンプライアンス センター] をMicrosoft 365 コンプライアンス センター。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -131,7 +151,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 **ユーザー履歴の設定を確認するには、以下のようにします。**
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定]**</a>で [Microsoft 365 コンプライアンス センター] を選択します。
+1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a>] で [Microsoft 365 コンプライアンス センター] をMicrosoft 365 コンプライアンス センター。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -149,7 +169,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 **ユーザー別にレポートをエクスポートするには、以下の手順に従ってください。**
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定]**</a>で [Microsoft 365 コンプライアンス センター] を選択します。
+1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a>] で [Microsoft 365 コンプライアンス センター] をMicrosoft 365 コンプライアンス センター。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -167,7 +187,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 **以下の手順に従って、改善のための処置を別のユーザーに再割り当てします。**
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定]**</a>で [Microsoft 365 コンプライアンス センター] を選択します。
+1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a>] で [Microsoft 365 コンプライアンス センター] をMicrosoft 365 コンプライアンス センター。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -194,7 +214,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 ユーザーの履歴を削除するには、以下の手順に従います。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定]**</a>で [Microsoft 365 コンプライアンス センター] を選択します。
+1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a>] で [Microsoft 365 コンプライアンス センター] をMicrosoft 365 コンプライアンス センター。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -212,7 +232,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 コンプライアンス マネージャー ダッシュ ボードは、現在のコンプライアンス態勢を一目で把握できるように設計されています。
 
-:::image type="content" alt-text="コンプライアンス マネージャー - ダッシュボード。" source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
+:::image type="content" alt-text="コンプライアンス マネージャーのダッシュ ボード。" source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
 
 ### <a name="overall-compliance-score"></a>コンプライアンス スコア全体
 
