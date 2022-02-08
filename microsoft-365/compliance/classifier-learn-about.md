@@ -1,31 +1,26 @@
 ---
 title: トレーニング可能な分類子の詳細
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
-- m365solution-mip
-- m365initiative-compliance
+  - M365-security-compliance
+  - m365solution-mip
+  - m365initiative-compliance
 ms.custom: admindeeplinkMAC
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: トレーニング可能な分類子は、ラベル付けまたはポリシー アプリケーション用にさまざまな種類のコンテンツを認識するために、正のサンプルと負のサンプルを表示できます。
-ms.openlocfilehash: 6d0e16a599563cd28206311987adcfed773c0acc
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214239"
 ---
+
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 
 コンテンツを適切に保護および処理できるようにコンテンツを分類およびラベル付けすることは、情報保護に対するトレーニングの出発点です。 Microsoft 365 には、コンテンツを分類する 3 つの方法があります。
@@ -39,9 +34,9 @@ ms.locfileid: "62214239"
 この分類メカニズムのカテゴリには、次によるコンテンツの検索が含まれます。
 
 - キーワードまたはメタデータ値 (キーワード クエリ言語)。
-- 社会保障、クレジット カード、銀行口座番号 (機密情報の種類エンティティ定義) などの機密情報の以前に識別されたパターンを [使用する](sensitive-information-type-entity-definitions.md)。
-- アイテムがテンプレートのバリエーション (ドキュメントフィンガー印刷) なので、アイテム [を認識します](document-fingerprinting.md)。
-- 正確な文字列の存在を使用して、 [完全に一致するデータを使用します](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
+- 社会保障、クレジット カード、銀行口座番号 (機密情報の種類エンティティ定義) などの機密情報の以前に識別されたパターン [を使用する](sensitive-information-type-entity-definitions.md)。
+- テンプレートのバリエーション (ドキュメントフィンガー印刷) のため、アイテム [を認識する](document-fingerprinting.md)。
+- 正確な文字列の存在を使用して、 [完全なデータ一致](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
 
 その後、感度ラベルと保持ラベルを自動的に適用して、「データ損失防止の[](dlp-learn-about-dlp.md)詳細」および「保持ラベルのポリシーを自動適用する」でコンテンツを[使用できます](apply-retention-labels-automatically.md)。
 
@@ -55,7 +50,7 @@ ms.locfileid: "62214239"
 
 ### <a name="where-you-can-use-classifiers"></a>分類子を使用できる場所
 
-分類子は、Office の自動ラベル付け、条件[に](apply-sensitivity-label-automatically.md)基づく保持ラベル ポリシーの自動適用[](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)、および通信コンプライアンスの条件として[使用できます](communication-compliance.md)。 
+分類子は、Office ラベルによる自動ラベル付け、[](apply-sensitivity-label-automatically.md)条件に基づく保持ラベル ポリシーの自動適用、および[](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)通信コンプライアンスの条件として[使用できます](communication-compliance.md)。 
 
 感度ラベルは、条件として分類子を使用できます。「コンテンツに自動的に感度ラベルを適用 [する」を参照してください](apply-sensitivity-label-automatically.md)。
 
@@ -64,7 +59,7 @@ ms.locfileid: "62214239"
 
 ## <a name="types-of-classifiers"></a>分類子のタイプ
 
-- **事前トレーニング済みの分類子** - Microsoft は、トレーニングなしで使用を開始できる複数の分類子を作成および事前トレーニングしました。 これらの分類子は、 の状態で表示されます `Ready to use` 。
+- **事前トレーニング済みの分類子** - Microsoft は、トレーニングなしで使用を開始できる複数の分類子を作成および事前トレーニングしました。 これらの分類子は、 の状態で表示されます `Ready to use`。
 - **カスタムトレーニング可能な** 分類子 - 事前トレーニング済みの分類子がカバーする範囲を超える分類ニーズがある場合は、独自の分類子を作成してトレーニングできます。
 
 ### <a name="pre-trained-classifiers"></a>事前トレーニング済みの分類子
@@ -72,29 +67,29 @@ ms.locfileid: "62214239"
 Microsoft 365には、複数の事前トレーニング済み分類子が付属しています。
 
 > [!CAUTION]
-> 事前にトレーニングされた [**不快な言葉**] 分類子は、誤検知の数が多いため、廃止予定です。 使用しないでください。現在使用している場合は、ビジネス プロセスを移動する必要があります。 代わりに **、Threat** **、Profanity、** および **Harassment** の事前トレーニング済みの分類子を使用することをお勧めします。
+> 事前にトレーニングされた [**不快な言葉**] 分類子は、誤検知の数が多いため、廃止予定です。 使用しないでください。現在使用している場合は、ビジネス プロセスを移動する必要があります。 代わりに、**脅威、****冒と** く、ハラスメントの事前トレーニング済みの分類子を使用することをお勧めします。
 
 - **履歴書**: 申請者の個人、教育、専門的な資格、職歴、その他の個人識別情報のテキスト アカウントである docx、.pdf、.rtf、.txt アイテムを検出します。
-- ソース コード: GitHub で使用される上位 25 のコンピューター プログラミング言語で記述された一連の命令とステートメントを含むアイテムを検出します。ActionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプト。
+- ソース コード: GitHub actionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプトの上位 25 言語で記述された命令とステートメントのセットを検出します。
 
 > [!NOTE]
 > ソース コードは、テキストの大部分がソース コードである場合に検出するトレーニングを受けています。 プレーン テキストと相互に存在するソース コード テキストは検出されません。
 
 - **契約:** 非開示契約、作業明細書、ローンおよびリース契約、雇用契約、非競争契約などの法的契約に関連するコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml ファイルのコンテンツを検出します。
 - **判別**: 明示的な判別言語を検出し、他のコミュニティと比較すると、アフリカ系アメリカ人/黒人コミュニティに対する差別的な言語に敏感です。
-- **Finance**: 企業の財務、会計、経済、銀行、投資カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
-- **嫌** がらせ : 人種、民族、宗教、出身国、性別、性的指向、年齢、障がいなどの特性に基づいて、1 人または複数の個人を対象とする攻撃的行為に関連する攻撃的な言語テキスト 項目の特定のカテゴリを検出します。
-- **医療 :** 医療サービス、診断、治療、クレームなどの医療および医療管理の側面のコンテンツを検出します。.docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
+- **ファイナンス**: 企業の財務、会計、経済、銀行、投資カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
+- **ハラ** スメント: 人種、民族、宗教、出身国、性別、性的指向、年齢、障がいなどの特性に基づいて、1 人または複数の個人を対象とする攻撃的行為に関連する攻撃的な言語テキスト 項目の特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイルのコンテンツを検出します。
+- **ヘルスケア:** 医療サービス、診断、治療、クレームなどの医療および医療管理の側面のコンテンツを検出します。.docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
 - **人事**: 採用、面接、採用、トレーニング、評価、警告、終了の人事関連カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
 - **IP**: 営業秘密や類似の機密情報などの知的財産関連カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
 - **IT**: ネットワーク設定、情報セキュリティ、ハードウェア、ソフトウェアなどの情報テクノロジおよびサイバーセキュリティ カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
-- **法務 :** 訴訟、法的プロセス、法的義務、法律用語、法律、法律などの法務関連カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml ファイルのコンテンツを検出します。
+- **法務:** 訴訟、法的プロセス、法的義務、法律用語、法律、法律などの法務関連カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml ファイルのコンテンツを検出します。
 - **調達**: 入札、引用、購入、および商品やサービスの供給に対する支払いカテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、.xla ファイルのコンテンツを検出します。
-- **冒とく**: ほとんどの人を困らせる表現を含む不快な言語テキスト アイテムの特定のカテゴリを検出します。
-- **Tax**: 税務計画、税務フォーム、税務申告、税規制などの税務関係のコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、のコンテンツを検出します。 .txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppam、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam xlam ファイル。
-- **脅威**: 暴力を犯したり、人や財産に物理的な危害や損害を与える脅威に関連する、攻撃的な言語テキスト アイテムの特定のカテゴリを検出します。
+- **冒とく**: ほとんどの人を困らせる表現を含む不快な言語テキスト アイテムの特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイルのコンテンツを検出します。
+- **Tax**: Tax relation content (税計画、税務フォーム、税務申告、税規制など) を検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、のコンテンツを検出します。 .txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppam、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam xlam ファイル。
+- **脅威**: 暴力を犯したり、人や財産に物理的な危害や損害を与える脅威に関連する攻撃的な言語テキスト アイテムの特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイルのコンテンツを検出します。
 
-これらは、[データ分類] **Microsoft 365 コンプライアンス センター** の状態の [トレーニング可能な分類子]  >    >  ビューに表示されます `Ready to use` 。
+これらは、Microsoft 365 コンプライアンス センター  > **Data 分類の** > 状態を持つトレーニング可能な分類子ビューに表示されます。`Ready to use`
 
 ![分類子-事前トレーニング済み分類子。](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -139,7 +134,7 @@ Microsoft 365には、複数の事前トレーニング済み分類子が付属�
 
 - [保持ラベル](retention.md)
 - [データ損失防止について](dlp-learn-about-dlp.md)
-- [秘密度ラベル](sensitivity-labels.md)
+- [機密ラベル](sensitivity-labels.md)
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 - [ドキュメントの指の印刷](document-fingerprinting.md)
 - [完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

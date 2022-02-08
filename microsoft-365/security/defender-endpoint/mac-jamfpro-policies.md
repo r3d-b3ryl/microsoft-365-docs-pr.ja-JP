@@ -72,8 +72,8 @@ ms.technology: mde
 
    **全般**:
 
-   - 名前: macOS の MDATP オンボーディング
-   - 説明: mDATP EDR macOS のオンボーディング
+   - 名前: macOS の MDE オンボーディング
+   - 説明: mDE EDR macOS のオンボーディング
    - カテゴリ: なし
    - 配布方法: 自動的にインストールする
    - レベル: コンピューター レベル
@@ -728,14 +728,14 @@ Microsoft Defender for Endpoint は、時間の間に新しい設定を追加し
 2. [ **新規] を** クリックし、[オプション] に次の詳細を **入力します**。
 
     - タブ **全般**:
-        - **名前**: Microsoft Defender ATP ネットワーク拡張機能
+        - **名前**: Microsoft Defender Network Extension
         - **説明**: macOS 10.15 (Catalina) 以降
         - **カテゴリ**: なし *(既定)*
         - **配布方法**: 自動インストール *(既定)*
         - **レベル**: コンピューター レベル *(既定)*
 
     - タブ **コンテンツ フィルター**:
-        - **フィルター名**: Microsoft Defender ATP コンテンツ フィルター
+        - **フィルター名**: Microsoft Defender コンテンツ フィルター
         - **識別子**: `com.microsoft.wdav`
         - サービス **アドレス、組織****、ユーザー****名**、**パスワード**、**証明書** を空白のままにする (**Include** *は* 選択されません)
         - **フィルターの順序**: Inspector

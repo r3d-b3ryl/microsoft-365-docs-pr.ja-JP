@@ -16,13 +16,8 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 7881a09c0530da09880c0fa1c8c2d73ed0c83000
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327571"
 ---
+
 # <a name="onboard-windows-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -171,7 +166,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
-攻撃表面縮小ルール展開フェーズ 3: 実装から攻撃表面縮小ルール GUID の現在の一覧 [を取得します](attack-surface-reduction-rules-deployment-implement.md)。 ルールごとの詳細については、「攻撃表面の縮小 [ルールリファレンス」を参照してください。](attack-surface-reduction-rules-reference.md)
+攻撃表面縮小ルールの展開手順 [3: ASR](attack-surface-reduction-rules-deployment-implement.md) ルールの実装から攻撃表面縮小ルール GUID の現在の一覧を取得します。 ルールごとの詳細については、「攻撃表面の縮小 [ルールリファレンス」を参照してください。](attack-surface-reduction-rules-reference.md)
 
 1. [攻撃表面 **縮小の構成] ポリシーを開** きます。
 

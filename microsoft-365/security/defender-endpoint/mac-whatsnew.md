@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint on Mac の新機能
 description: 以前のバージョンの Microsoft Defender for Endpoint on Mac の主な変更点について説明します。
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
+keywords: 'microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew'
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -12,17 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 054a684829217676df4bb3bf7d8469dbfc53a2a3
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265693"
 ---
+
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,24 +28,19 @@ ms.locfileid: "62265693"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> [!NOTE]
-> 2022 年 1 月下旬から、Microsoft Defender for Endpoint (以前は Microsoft Defender ATP) は、macOS で MDE エクスペリエンスに直面しているエンド ユーザー全体で "Microsoft Defender" として参照されます。 
-> 
-> この変更は、ベータ版 (以前は Insider Fast と呼ばば) およびプレビュー (以前は Insider Slow と呼ばば) の更新チャネルで利用できます。 この変更を含む製品の最小バージョンは 101.56.35 です。 詳細については、このバージョンに対応する以下のリリース ノートを参照してください。
-> 
-> この変更は、コマンド ライン `mdatp` ツールには影響を与えかねない。
->
-> **必要な** アクション: 企業に製品名またはアプリケーション インストール パスに依存するカスタム構成がある場合は、上記の新しい値でこれらの構成を更新する必要があります。
+## <a name="1015662-20121122156620"></a>101.56.62 (20.121122.15662.0)
+
+- バグ修正
 
 ## <a name="1015635-20121121156350"></a>101.56.35 (20.121121.15635.0)
 
 - アプリケーションの名前が "Microsoft Defender ATP" から "Microsoft Defender" に変更されました。 エンド ユーザーは、次の変更を確認します。
-  - アプリケーションのインストール パスがから `/Application/Microsoft Defender ATP.app` に変更されました `/Applications/Microsoft Defender.app` 。
+  - アプリケーションのインストール パスがからに変更 `/Application/Microsoft Defender ATP.app` されました `/Applications/Microsoft Defender.app`。
   - ユーザー エクスペリエンス内で、"Microsoft Defender ATP" の発生が "Microsoft Defender" に置き換えられた
 - Microsoft Defender for Endpoint for Mac で配布されているネットワーク コンテンツ フィルターが原因で、一部の VPN アプリケーションが接続できない問題を解決しました
 - macOS 12.2 beta 2 で検出された問題に対処し、オペレーティング システム (OS) が変更され、特定の特性を持つパッケージのインストールを妨げるインストール パッケージを開くことができません。 この OS の変更は、macOS 12.2 の最終リリースには含まれていないと思えますが、将来の macOS バージョンで再導入される可能性があります。 そのため、すべてのエンタープライズ管理者は、管理コンソールの Microsoft Defender for Endpoint パッケージをこの製品バージョン (または新しいバージョン) に更新するようにお勧めしています。
 - 一部の M1 デバイスで、製品が無効なマルウェア対策定義でスタックし、正常に一連の定義に更新できない問題に対処しました。
-- `mdatp health` 出力は、Microsoft Defender for Endpoint for Mac のすべてのコンポーネントにフル ディスク アクセスが許可されているかどうかを判断するために使用できる追加の属性を使用 `full_disk_access_enabled` して拡張されました。
+- `mdatp health` 出力は、 `full_disk_access_enabled` Microsoft Defender for Endpoint for Mac のすべてのコンポーネントにフル ディスク アクセスが許可されているかどうかを判断するために使用できる追加の属性を使用して拡張されました。
 - バグ修正&パフォーマンスの向上
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0)
@@ -61,7 +51,7 @@ ms.locfileid: "62265693"
 
 ## <a name="1014925-20121092149250"></a>101.49.25 (20.121092.14925.0)
 
-- コマンド ライン ツールに新しいスイッチを追加し、オンデマンド スキャン中にアーカイブをスキャンするかどうかを制御しました。 これは、 を使用して構成できます `mdatp config scan-archives --value [enabled/disabled]` 。 既定では、 に設定されています `enabled` 。
+- コマンド ライン ツールに新しいスイッチを追加し、オンデマンド スキャン中にアーカイブをスキャンするかどうかを制御しました。 これは、 を使用して構成できます `mdatp config scan-archives --value [enabled/disabled]`。 既定では、 に設定されています `enabled`。
 - バグ修正
 
 ## <a name="1014727-20121082147270"></a>101.47.27 (20.121082.14727.0)
@@ -76,8 +66,8 @@ ms.locfileid: "62265693"
 ## <a name="1014110-20121072141100"></a>101.41.10 (20.121072.14110.0)
 
 - コマンド ライン ツールに新しいスイッチを追加しました。
-  - オンデマンド スキャンの並列処理の程度を制御します。 これは、 を使用して構成できます `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` 。 既定では、並列処理の程度が `2` 使用されます。
-  - セキュリティ インテリジェンス更新プログラムが有効または無効にされた後のスキャンを制御します。 これは、 を使用して構成できます `mdatp config scan-after-definition-update --value [enabled/disabled]` 。 既定では、 に設定されています `enabled` 。
+  - オンデマンド スキャンの並列処理の程度を制御します。 これは、 を使用して構成できます `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`。 既定では、並列処理の程度が `2` 使用されます。
+  - セキュリティ インテリジェンス更新プログラムが有効または無効にされた後のスキャンを制御します。 これは、 を使用して構成できます `mdatp config scan-after-definition-update --value [enabled/disabled]`。 既定では、 に設定されています `enabled`。
 - 製品ログ レベルを変更するには、昇格が必要になります。
 - バグ修正&パフォーマンスの向上
 
@@ -113,7 +103,7 @@ ms.locfileid: "62265693"
 - このバージョンから、コマンド ライン クライアントを介してトリガーされるオンデマンド ウイルス対策スキャン中に検出された脅威は自動的に修復されます。 ユーザー インターフェイスを介してトリガーされるスキャン中に検出された脅威には、手動操作が必要です。
 - `mdatp diagnostic real-time-protection-statistics` 2 つの追加スイッチがサポートされます。
   - `--sort`: スキャンされたファイルの総数で降順に出力を並べ替える
-  - `--top N`: 上位 N の結果を表示します (指定されている `--sort` 場合にのみ機能します)
+  - `--top N`: 上位 N の結果を表示します (指定されている場合 `--sort` にのみ機能します)
 - パフォーマンスの向上 (特に YARN を使用する場合) &修正
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
@@ -122,7 +112,7 @@ ms.locfileid: "62265693"
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
-- Microsoft Defender for Endpoint on macOS は、米国政府機関のお客様向けプレビューで利用できます。 詳細については [、「Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。
+- Microsoft Defender for Endpoint on macOS は、米国政府機関のお客様向けプレビューで利用できます。 詳細については、「 [Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。
 - パフォーマンスの向上 (特に、XCode Simulator アプリを使用する場合の状況) は、&修正されます。
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
@@ -141,9 +131,9 @@ ms.locfileid: "62265693"
 ## <a name="1011948-20120121119480"></a>101.19.48 (20.120121.11948.0)
 
 > [!NOTE]
-> このリリースでは、古いコマンド ライン ツールの構文は廃止されました。 新しい構文の詳細については [、「Resources」を参照してください](mac-resources.md#configuring-from-the-command-line)。
+> このリリースでは、古いコマンド ライン ツールの構文は廃止されました。 新しい構文の詳細については、「Resources」を [参照してください](mac-resources.md#configuring-from-the-command-line)。
 
-- ネットワーク拡張機能を無効にする新しいコマンド ライン スイッチを追加 `mdatp system-extension network-filter disable` しました。 このコマンドは、Microsoft Defender for Endpoint on Mac に関連する可能性があるネットワークの問題のトラブルシューティングに役立ちます。
+- ネットワーク拡張機能を無効にする新しいコマンド ライン スイッチを追加しました。 `mdatp system-extension network-filter disable` このコマンドは、Microsoft Defender for Endpoint on Mac に関連する可能性があるネットワークの問題のトラブルシューティングに役立ちます。
 - バグ修正&パフォーマンスの向上
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0)
@@ -153,7 +143,7 @@ ms.locfileid: "62265693"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0)
 
 - macOS 11 Big Sur で実行する場合のエージェントの信頼性が向上しました
-- カスタム スキャン中に AV の除外を無視する新しいコマンド ライン スイッチ ( `--ignore-exclusions` ) を追加しました ( `mdatp scan custom` )
+- カスタム スキャン中に AV の除外を無視する新しいコマンド ライン スイッチ (`--ignore-exclusions`) を追加しました (`mdatp scan custom`)
 - バグ修正&パフォーマンスの向上
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
@@ -176,12 +166,12 @@ ms.locfileid: "62265693"
 
 - この製品のバージョンは、macOS Big Sur 11 ベータ 9 で検証されています
 
-- コマンド ライン ツールの新 `mdatp` しい構文が既定の構文になります。 新しい構文の詳細については [、「Resources for Microsoft Defender for Endpoint on macOS」を参照してください。](mac-resources.md#configuring-from-the-command-line)
+- コマンド ライン ツールの新 `mdatp` しい構文が既定の構文になります。 新しい構文の詳細については、「 [Resources for Microsoft Defender for Endpoint on macOS」を参照してください。](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]
-  > 古いコマンド ライン ツールの構文は **、2021** 年 1 月 1 日に製品から削除されます。
+  > 古いコマンド ライン ツールの構文は、 **2021 年 1 月 1** 日に製品から削除されます。
 
-- 診断ログを別のディレクトリに保存できる新しいパラメーター `mdatp diagnostic create` ( `--path [directory]` ) を使用して拡張
+- 診断ログ `mdatp diagnostic create` を別のディレクトリに保存できる新しいパラメーター (`--path [directory]`) を使用して拡張
 - バグ修正&パフォーマンスの向上
 
 ## <a name="1010949"></a>101.09.49
@@ -192,10 +182,10 @@ ms.locfileid: "62265693"
 
 ## <a name="1010723"></a>101.07.23
 
-- パッシブ モードとグループ ID の状態を確認するために、新しいフィールド `mdatp --health` EDR追加しました
+- パッシブ モードとグループ ID の`mdatp --health`状態を確認するために、新しいフィールドEDR追加しました
 
   > [!NOTE]
-  > `mdatp --health` は、将来の製品 `mdatp health` 更新プログラムに置き換えられる予定です。
+  > `mdatp --health` は、将来の製品更新 `mdatp health` プログラムに置き換えられる予定です。
 
 - 自動サンプル送信がユーザー インターフェイスで管理済みとしてマークされていないバグを修正しました
 - ウイルス対策スキャン履歴内のアイテムの保持を制御するための新しい設定が追加されました。 これで、 [スキャン履歴内の](mac-preferences.md#antivirus-scan-history-retention-in-days) アイテムを保持する日数を指定し、スキャン履歴内のアイテムの最大数 [を指定できます。](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
@@ -203,12 +193,12 @@ ms.locfileid: "62265693"
 
 ## <a name="1010663"></a>101.06.63
 
-- バージョンで導入されたパフォーマンス回帰に対処しました `101.05.17` 。 この回帰は、SMB 共有にアクセスするときに一部のお客様が見たカーネル パニックを解消するための修正プログラムで導入されました。 このコード変更を元に戻し、カーネル パニックを排除する別の方法を検討しています。
+- バージョンで導入されたパフォーマンス回帰に対処しました `101.05.17`。 この回帰は、SMB 共有にアクセスするときに一部のお客様が見たカーネル パニックを解消するための修正プログラムで導入されました。 このコード変更を元に戻し、カーネル パニックを排除する別の方法を検討しています。
 
 ## <a name="1010517"></a>101.05.17
 
 > [!IMPORTANT]
-> コマンド ライン ツールの新しい拡張構文 `mdatp` に取り組む必要があります。 現在、新しい構文は Insider Fast および Insider Slow 更新チャネルの既定の構文です。 この新しい構文を使用して自分自身をfamliliarizeしてください。
+> コマンド ライン ツールの新しい拡張 `mdatp` 構文に取り組む必要があります。 現在、新しい構文は Insider Fast および Insider Slow 更新チャネルの既定の構文です。 この新しい構文を使用して自分自身をfamliliarizeしてください。
 >
 > 新しい構文と並行して古い構文をサポートし続け、今後数か月で古い構文の廃止計画に関するより多くのコミュニケーションを提供します。
 
@@ -235,7 +225,7 @@ ms.locfileid: "62265693"
 
 - Intune ユーザー [の製品オンボーディング エクスペリエンスの向上](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - ウイルス [対策の除外でワイルドカードがサポートされる](mac-exclusions.md#supported-exclusion-types)
-- macOS のコンテキスト メニューからウイルス対策スキャンをトリガーする機能が追加されました。 Finder でファイルまたはフォルダーを右クリックし、[Microsoft Defender for Endpoint でスキャン **] を選択できます。**
+- macOS のコンテキスト メニューからウイルス対策スキャンをトリガーする機能が追加されました。 Finder でファイルまたはフォルダーを右クリックし、[ **Microsoft Defender for Endpoint でスキャン] を選択できます。**
 - インプレイス製品のダウングレードは、インストーラーによって明示的に許可されません。 ダウングレードする必要がある場合は、まず既存のバージョンをアンインストールし、デバイスを再構成します。
 - バグ修正に関するその他&改善点
 
@@ -311,6 +301,6 @@ ms.locfileid: "62265693"
   > この同意を付与するメカニズムは、Microsoft Defender for Endpoint の展開方法によって異なります。
   >
   > - 手動展開については、「手動展開」の「更新された手順」 [を参照](mac-install-manually.md#how-to-allow-full-disk-access) してください。
-  > - 管理展開については[、「JAMF](mac-install-with-jamf.md)ベースの展開」および「Microsoft Intune展開」の更新された手順[を参照](mac-install-with-intune.md#create-system-configuration-profiles)してください。
+  > - 管理展開については、「[JAMF](mac-install-with-jamf.md) ベースの展開」および「Microsoft Intune展開」[の更新された手順を参照](mac-install-with-intune.md#create-system-configuration-profiles)してください。
 
 - バグ修正&パフォーマンスの向上

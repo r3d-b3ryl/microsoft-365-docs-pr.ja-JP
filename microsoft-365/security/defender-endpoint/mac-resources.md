@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint on Mac のリソース
 description: Microsoft Defender for Endpoint on Mac のリソース (アンインストール方法、診断ログの収集方法、CLI コマンド、製品に関する既知の問題など)。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: 'microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,17 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ab1cf8a93876c5669d561161874a1c34914b7fa3
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156354"
 ---
+
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender のリソース
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -51,10 +46,10 @@ ms.locfileid: "62156354"
 
 2. 問題を再現する
 
-3. Microsoft `sudo mdatp diagnostic create` Defender for Endpoint ログをバックアップするために実行します。 ファイルは、アーカイブ内に.zipされます。 このコマンドは、操作が成功した後、バックアップへのファイル パスも出力します。
+3. Microsoft Defender `sudo mdatp diagnostic create` for Endpoint ログをバックアップするために実行します。 ファイルは、アーカイブ内に.zipされます。 このコマンドは、操作が成功した後、バックアップへのファイル パスも出力します。
 
    > [!TIP]
-   > 既定では、診断ログはに保存されます `/Library/Application Support/Microsoft/Defender/wdavdiag/` 。 診断ログが保存されているディレクトリを変更するには、次のコマンドに渡し、目的の `--path [directory]` `[directory]` ディレクトリに置き換わります。
+   > 既定では、診断ログはに保存されます `/Library/Application Support/Microsoft/Defender/wdavdiag/`。 診断ログが保存されているディレクトリを変更するには `--path [directory]` 、次のコマンドに渡し `[directory]` 、目的のディレクトリに置き換わります。
 
    ```bash
    sudo mdatp diagnostic create
@@ -78,7 +73,7 @@ ms.locfileid: "62156354"
 
 インストール中にエラーが発生した場合、インストーラーは一般的なエラーのみを報告します。
 
-詳細ログはに保存されます `/Library/Logs/Microsoft/mdatp/install.log` 。 インストール中に問題が発生した場合は、このファイルを送信して、原因の診断に役立ちます。
+詳細ログはに保存されます `/Library/Logs/Microsoft/mdatp/install.log`。 インストール中に問題が発生した場合は、このファイルを送信して、原因の診断に役立ちます。
 
 ## <a name="uninstalling"></a>アンインストール
 
@@ -86,7 +81,7 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 
 ### <a name="interactive-uninstallation"></a>対話型アンインストール
 
-- Finder **ファイル>開きます**。 [Microsoft **Defender for Endpoint] を右クリックし>に移動します**。
+- [ **Finder > アプリケーション] を開きます**。 [Microsoft **Defender for Endpoint] を右クリックし>に移動します**。
 
 ### <a name="supported-output-types"></a>サポートされている出力の種類
 
@@ -104,7 +99,7 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 
 製品設定の制御やオンデマンド スキャンのトリガーなどの重要なタスクは、コマンド ラインから実行できます。
 
-|Group|シナリオ|command|
+|Group|シナリオ|コマンド|
 |---|---|---|
 |構成|リアルタイム保護のオン/オフ|`mdatp config real-time-protection --value [enabled/disabled]`|
 |構成|クラウド保護のオン/オフ|`mdatp config cloud --value [enabled/disabled]`|
@@ -138,7 +133,7 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 bash でオートコンプリートを有効にするには、次のコマンドを実行し、ターミナル セッションを再起動します。
 
 ```bash
-echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
+echo "source /Applications/Microsoft\ Defender.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
 ```
 
 zsh でオートコンプリートを有効にするには、次の方法を実行します。
@@ -160,13 +155,13 @@ zsh でオートコンプリートを有効にするには、次の方法を実�
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
 
-   sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
+   sudo ln -svf "/Applications/Microsoft Defender.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
 ## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>エンドポイント検疫ディレクトリのクライアント Microsoft Defender
 
-`/Library/Application Support/Microsoft/Defender/quarantine/` によって検疫されたファイルが含まれる `mdatp` 。 ファイルの名前は、脅威の追跡 Id にちなんで指定されます。 現在の trackingIds は 、 と一緒に表示されます `mdatp threat list` 。
+`/Library/Application Support/Microsoft/Defender/quarantine/`によって検疫されたファイルが含まれる。`mdatp` ファイルの名前は、脅威の追跡 Id にちなんで指定されます。 現在の trackingIds は 、 と一緒に表示されます `mdatp threat list`。
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Microsoft Defender for Endpoint ポータル情報
 
-[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)の機能が到着しました。Microsoft Defender for Endpoint ブログでは、Microsoft Defender for Endpoint Security Center で何を期待するのかについて詳細なガイダンスが提供されています。
+[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801) の機能が Microsoft Defender for Endpoint ブログに追加され、Microsoft Defender for Endpoint Security Center で何が期待されるのかについて詳細なガイダンスが提供されています。

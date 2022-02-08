@@ -14,15 +14,10 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: 61f5e5ab9b47aae190b0eefa74a04805ceace326
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327019"
+  - M365-security-compliance
+  - m365initiative-defender-endpoint
 ---
+
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 のセットアップと構成
 
 **適用対象:**
@@ -191,7 +186,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 > 攻撃表面の縮小ルールの詳細については、次のリソースを参照してください。
 > - [マルウェア感染を防ぐために攻撃面の減少ルールを使用する](attack-surface-reduction.md)
 > - [攻撃表面の縮小ルールの一覧を表示する](attack-surface-reduction-rules-reference.md)
-> - [攻撃表面の縮小ルールの展開フェーズ 3: 実装](attack-surface-reduction-rules-deployment-implement.md)
+> - [攻撃表面の縮小ルールの展開手順 3: ASR ルールの実装](attack-surface-reduction-rules-deployment-implement.md)
 
 ### <a name="ransomware-mitigation"></a>ランサムウェアの軽減
 
@@ -227,7 +222,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 9. [確認 **と作成] タブ** で、ポリシーの設定を確認し、[作成] を選択 **します**。 ポリシーは、Defender for Endpoint にオンボードされたエンドポイントにまもなく適用されます。
 
-### <a name="device-control"></a>デバイス制御
+### <a name="device-control"></a>デバイス コントロール
 
 Defender for Endpoint を構成して、リムーバブル デバイス上のリムーバブル デバイスとファイルをブロックまたは許可できます。 デバイスコントロールの設定Microsoft エンドポイント マネージャーを使用することをお勧めします。
 
@@ -399,7 +394,7 @@ WDAC 展開の計画に役立つ情報については、次のリソースを参
 
 - [Windows Defenderシナリオでのアプリケーション制御の展開:デバイスの種類](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 セットアップと構成プロセスが完了したので、次に、Defender for Endpoint の使用を開始します。 
 

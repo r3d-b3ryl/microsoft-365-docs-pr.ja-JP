@@ -1,7 +1,7 @@
 ---
 title: macOS での Microsoft Defender for Endpoint の手動展開
 description: コマンド ラインから手動で macOS に Microsoft Defender for Endpoint をインストールします。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: 'microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,18 +12,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f6524589146bd6daebbf77611cc637f0cc9e79d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171271"
 ---
+
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint の手動展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -44,16 +39,16 @@ ms.locfileid: "61171271"
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
-開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メインの [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。
+開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、 [メインの Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。
 
 ## <a name="download-installation-and-onboarding-packages"></a>インストール パッケージとオンボーディング パッケージのダウンロード
 
 インストールおよびオンボーディング パッケージを次のポータルからMicrosoft 365 Defenderします。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">[Microsoft 365 Defender] ポータルで</a>、[デバイス管理設定 >オンボーディング>**エンドポイント>移動します**。
+1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender] ポータルで</a>、[デバイス管理設定 >オンボーディング>**エンドポイント>移動します**。
 2. ページのセクション 1 で、オペレーティング システムを **macOS** に設定し、Deployment メソッドをローカル スクリプト **に設定します**。
 3. ページのセクション 2 で、[インストール パッケージのダウンロード **] を選択します**。 wdav.pkg としてローカル ディレクトリに保存します。
-4. ページのセクション 2 で、[オンボーディング パッケージの **ダウンロード] を選択します**。 同じディレクトリWindowsDefenderATPOnboardingPackage.zipとして保存します。
+4. ページのセクション 2 で、[オンボード パッケージの **ダウンロード] を選択します**。 同じディレクトリWindowsDefenderATPOnboardingPackage.zipとして保存します。
 
     ![Microsoft 365 Defender ポータルのスクリーンショット。](images/portal-onboarding-macos.png)
 
@@ -76,7 +71,7 @@ ms.locfileid: "61171271"
 
    ![アプリインストールのスクリーンショット 3.](images/mdatp-30-systemextension.png)
 
-3. [ **セキュリティの基本設定を開く]** または [システム環境設定を開く **] >[セキュリティ] &選択します**。 [許可 **] を選択します**。
+3. [ **セキュリティの基本設定を開く]** または [システム環境設定を開 **く] >[セキュリティ] &選択します**。 [許可] **を選択します**。
 
     ![セキュリティとプライバシー ウィンドウのスクリーンショット。](images/mdatp-31-securityprivacysettings.png)
 
@@ -98,7 +93,7 @@ ms.locfileid: "61171271"
 
 2. [ **続行] を** 選択し、ライセンス条項に同意し、メッセージが表示されたらパスワードを入力します。
 
-3. インストール プロセスの最後に、製品で使用されるシステム拡張機能を承認するように昇格されます。 [Open **Security Preferences] を選択します**。
+3. インストール プロセスの最後に、製品で使用されるシステム拡張機能を承認するように昇格されます。 [セキュリティ **設定を開く] を選択します**。
 
     ![システム拡張機能の承認。](images/monterey-install-2.png)
 
@@ -112,7 +107,7 @@ ms.locfileid: "61171271"
 
     ![システム拡張機能のセキュリティ設定 2.](images/monterey-install-4.png)
 
-7. [System **Preferences** Security & プライバシー] を開き、[プライバシー] タブに移動します。Microsoft Defender ATP および Microsoft Defender ATP Endpoint Security Extension にフル ディスク アクセスのアクセス許可を \> **付与します**。   
+7. [**System Preferences** \> **Security & プライバシー] を開** き、[プライバシー] タブに移動します。**Microsoft Defender および Microsoft Defenders** Endpoint Security Extension にフル ディスク アクセスのアクセス許可 **を付与します**。
 
     ![ディスクへのフル アクセス。](images/monterey-install-5.png)
 
@@ -120,7 +115,7 @@ ms.locfileid: "61171271"
 
 1. wdav.pkg と MicrosoftDefenderATPOnboardingMacOs.py を macOS に Microsoft Defender for Endpoint を展開するデバイスにコピーします。
 
-    クライアント デバイスがクライアント デバイスに関連付org_id。 org_id *属性は* 空白です。
+    クライアント デバイスがクライアント デバイスに関連付org_id。 属性が空白 *org_id* 注意してください。
 
     ```bash
     mdatp health --field org_id
@@ -148,7 +143,7 @@ ms.locfileid: "61171271"
 > [!CAUTION]
 > macOS 10.15 (Catalina) には、新しいセキュリティとプライバシーの強化が含まれている。 このバージョンでは、既定では、アプリケーションは明示的な同意なしにディスク上の特定の場所 (ドキュメント、ダウンロード、デスクトップなど) にアクセスできません。 この同意がない場合、Microsoft Defender for Endpoint はデバイスを完全に保護できません。
 
-1. 同意を許可するには **、[System Preferences** \> **Security &プライバシー** \> **のフル** ディスク アクセス \> **] を開きます**。 ロック アイコンをクリックして変更します (ダイアログ ボックスの下部)。 [エンドポイント用 Microsoft Defender] を選択します。
+1. 同意を許可するには、[**System Preferences** **Security] を開&** \> **プライバシー プライバシー**\>フル \> **ディスク アクセスを開きます**。 ロック アイコンをクリックして変更します (ダイアログ ボックスの下部)。 [エンドポイント用 Microsoft Defender] を選択します。
 
 2. AV 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
 
@@ -192,7 +187,7 @@ ms.locfileid: "61171271"
    >
    > > **開発者が検証者になれませんので、"MDATP MacOS DIY" を開くことができません。**<br/>
    > > macOS は、このアプリがマルウェアから解放されているのを確認できません。<br/>
-   > > **\[ ごみ箱の \] 取り消しに****\[ 移動する \]**
+   > > **\[ごみ箱の取り消しに移動\]****\[する\]**
 
 7. [ **キャンセル**] をクリックします。
 
@@ -214,7 +209,7 @@ ms.locfileid: "61171271"
 
     数分後に、"macOS EDRテスト アラート" という名前のアラートが発生する必要があります。
 
-11. [ポータル] ( Microsoft 365 Defender移動 https://security.microsoft.com/) します。
+11. [ポータル] Microsoft 365 Defender () に移動しますhttps://security.microsoft.com/)。
 
 12. [アラート キュー] に移動します。
 

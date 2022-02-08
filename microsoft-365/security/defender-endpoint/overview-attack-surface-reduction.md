@@ -1,8 +1,8 @@
 ---
-title: 攻撃面の減少を理解して使用する
-ms.reviewer: ''
+title: 攻撃表面の縮小 (ASR) の理解と使用
+ms.reviewer: null
 description: Microsoft Defender for Endpoint の攻撃表面の縮小機能について説明します。
-keywords: asr, 攻撃表面の縮小, Microsoft Defender for Endpoint, microsoft Defender, ウイルス対策, av, Windows Defender
+keywords: 'asr, 攻撃表面の縮小, Microsoft Defender for Endpoint, microsoft Defender, ウイルス対策, av, Windows Defender'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,13 +17,8 @@ ms.topic: conceptual
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: 22c90142de3b669bb4e7ba13266f04102af56fe0
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327695"
 ---
+
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能の理解と使用
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -226,7 +221,7 @@ E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint
 
 ****
 
-|特徴|プロバイダー/ソース|イベント ID|説明|
+|機能|プロバイダー/ソース|イベント ID|説明|
 |---|---|:---:|---|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|1|ACG の監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|2|ACG の実施|

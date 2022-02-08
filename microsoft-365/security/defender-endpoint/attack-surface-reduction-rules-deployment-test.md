@@ -1,6 +1,6 @@
 ---
-title: 攻撃表面の縮小ルールの展開フェーズ 2 - test
-description: 攻撃表面の縮小ルールの展開をテストするガイダンスを提供します。
+title: テスト攻撃表面の縮小 (ASR) ルール
+description: 攻撃表面の縮小 (ASR) ルールの展開をテストするガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -11,23 +11,20 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: 42560ab5db950981703a052901e5a269ab8b0402
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327620"
 ---
-# <a name="phase-2---test"></a>フェーズ 2 - テスト
 
-リング 1 で ASR ルールの展開を開始します。
+# <a name="step-2-test-asr-rules"></a>手順 2: ASR ルールをテストする
+
+攻撃表面の縮小 (ASR) ルールをテストすると、ルールが任意のルールを有効にする前に、業務ライン操作を妨げないかどうかを判断できます。 小規模で制御されたグループから開始すると、組織全体で展開を拡大する場合に、潜在的な作業の中断を制限できます。
+
+リング 1 で攻撃表面の縮小 (ASR) ルールの展開を開始します。
 
 > [!div class="mx-imgBorder"]
 > ![ASR ルールのテスト手順](images/asr-rules-testing-steps.png)
@@ -48,7 +45,7 @@ ms.locfileid: "62327620"
     > [!div class="mx-imgBorder"]
     > ![ASR ルール プロファイルの構成](images/asr-mem-create-profile.png)
 
-5. [**作成**] をクリックします。
+5. **[作成]** をクリックします。
 6. [プロファイル **の作成]** ウィンドウの [ **基本] タブ** で、[ **名前] で** ポリシーの名前を追加します。 [ **説明]** で、ASR ルール ポリシーの説明を追加します。
 7. [構成 **設定] タブの** [ **攻撃表面** 縮小ルール] で、すべてのルールを監査モード **に設定します**。
 
@@ -109,7 +106,7 @@ ASR ルールレポート ページは、**portalReportsAttack** >  **Microsoft 
 - ソース アプリ
 - Device
 - User
-- Publisher
+- 発行者
 
 > [!div class="mx-imgBorder"]
 > ![攻撃表面の縮小ルールの検出 GroupBy フィルター](images/asr-defender365-reports-detections.png)
@@ -200,10 +197,10 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
-[ASR ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
+[ASR ルールの展開の前提条件](attack-surface-reduction-rules-deployment.md)
 
-[フェーズ 1: 計画](attack-surface-reduction-rules-deployment-plan.md)
+[手順 1: ASR ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
 
-[フェーズ 3: 実装](attack-surface-reduction-rules-deployment-implement.md)
+[手順 3: ASR ルールを実装する](attack-surface-reduction-rules-deployment-implement.md)
 
-[フェーズ 4: 運用化](attack-surface-reduction-rules-deployment-operationalize.md)
+[手順 4: ASR ルールを操作する](attack-surface-reduction-rules-deployment-operationalize.md)

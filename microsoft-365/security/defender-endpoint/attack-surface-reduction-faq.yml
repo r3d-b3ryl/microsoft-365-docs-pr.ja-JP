@@ -177,6 +177,6 @@ sections:
         answer: |
           * [攻撃面の減少の概要](attack-surface-reduction.md)
           * [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
-          * [攻撃表面の縮小ルールの展開フェーズ 3: 実装](attack-surface-reduction-rules-deployment-implement.md)
+          * [攻撃表面の縮小ルールの展開手順 3: ASR ルールの実装](attack-surface-reduction-rules-deployment-implement.md)
           * [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
           * [他のウイルス対策Microsoft Defender ウイルス対策マルウェアとの互換性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

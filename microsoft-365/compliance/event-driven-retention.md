@@ -1,32 +1,27 @@
 ---
 title: イベントの発生時に保持を開始する
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+  - M365-security-compliance
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 ms.custom:
-- seo-marvel-apr2020
-- seo-marvel-may2020
-- seo-marvel-jun2020
+  - seo-marvel-apr2020
+  - seo-marvel-may2020
+  - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: c7e8d70d6ac535ee80e3ddb6ab719fe253836031
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241445"
 ---
+
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
@@ -171,7 +166,7 @@ Exchange アイテムの場合、キーワードまたはキーワード クエ�
 
 イベントを作成すると、既にラベル付けされてインデックスが作成されているコンテンツの保持設定が有効になります。 イベントが作成された後に保持ラベルが新しいコンテンツに追加された場合は、同じ詳細を使用して新しいイベントを作成する必要があります。
 
-イベントを削除しても、既にラベル付けされているコンテンツに対して現在有効になっている保持設定は取り消されません。 それを行うには、同じ詳細を使用して新しいイベントを作成しますが、日付は空白のままにします。 
+イベントを削除しても、既にラベル付けされているコンテンツに対して現在有効になっている保持設定は取り消されません。 現在、トリガーされたイベントをキャンセルすることはできません。
 
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>コンテンツ検索を使用して、特定のラベルまたはアセット ID が適用されたすべてのコンテンツを検索する
 

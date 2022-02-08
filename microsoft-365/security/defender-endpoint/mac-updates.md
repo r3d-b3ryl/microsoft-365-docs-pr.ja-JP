@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint の更新プログラムを Mac に展開する
 description: エンタープライズ環境での Microsoft Defender for Endpoint on Mac の更新プログラムを制御します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, updates, deploy
+keywords: 'microsoft、 defender、 Microsoft Defender for Endpoint, mac, updates, deploy'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,17 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ee8ea26c53bf5ae56c558f7aaa956974474dd101
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171439"
 ---
+
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -47,7 +42,7 @@ macOS のエンドポイント用 Microsoft Defender を更新するには、Mic
 
 ## <a name="use-msupdate"></a>Msupdate の使用
 
-MAU には *msupdate* と呼ばれるコマンド ライン ツールが含まれています。このツールは、IT 管理者向けに設計され、更新プログラムの適用時間を正確に制御できます。 このツールの使い方については、「msupdate を使用した更新プログラムOffice for Mac[を参照してください](/deployoffice/mac/update-office-for-mac-using-msupdate)。
+MAU には *msupdate* と呼ばれるコマンド ライン ツールが含まれています。これは、更新プログラムを適用する際の詳細な制御が可能な IT 管理者向けです。 このツールの使い方については、「msupdate を使用した更新プログラムOffice for Mac[を参照してください](/deployoffice/mac/update-office-for-mac-using-msupdate)。
 
 MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプリケーション識別子は *WDAV00 です*。 macOS の Microsoft Defender for Endpoint の最新の更新プログラムをダウンロードしてインストールするには、ターミナル ウィンドウから次のコマンドを実行します。
 
@@ -61,19 +56,19 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 
 ### <a name="set-the-channel-name"></a>チャネル名を設定する
 
-チャネルは、MAU を通じて提供される更新プログラムの種類と頻度を決定します。 デバイスは `Beta` 、デバイスの前に新しい機能を試 `Preview` し `Current` 、.
+チャネルは、MAU を通じて提供される更新プログラムの種類と頻度を決定します。 デバイスは、`Beta`デバイスの前に新しい機能を試`Preview`し、.`Current`
 
 チャネル `Current` には、製品の最も安定したバージョンが含まれている。
 
 > [!IMPORTANT]
 > Microsoft AutoUpdate バージョン 4.29 より前のチャネルの名前は異なります。
 >
-> - `Beta` という名前 `InsiderFast` が付けられた (Insider Fast)
-> - `Preview` という名前 `External` が付けられた (Insider Slow)
+> - `Beta` という名前が `InsiderFast` 付けられた (Insider Fast)
+> - `Preview` という名前が `External` 付けられた (Insider Slow)
 > - `Current` という名前が付けられた `Production`
 
 > [!TIP]
-> 新機能をプレビューし、早期のフィードバックを提供するには、企業内の一部のデバイスを構成するか、またはに構成をお `Beta` 勧めします `Preview` 。
+> 新機能をプレビューし、早期のフィードバックを提供するには、企業内の一部のデバイスを構成するか、またはに構成をお勧めします`Beta``Preview`。
 
 <br>
 
@@ -88,10 +83,10 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 |||
 
 > [!WARNING]
-> この設定は、Microsoft AutoUpdate を通じて更新されるすべてのアプリケーションのチャネルを変更します。 macOS 上の Microsoft Defender for Endpoint のチャネルのみを変更するには、目的のチャネルに置き換えた後、次のコマンド `[channel-name]` を実行します。
+> この設定は、Microsoft AutoUpdate を通じて更新されるすべてのアプリケーションのチャネルを変更します。 macOS `[channel-name]` 上の Microsoft Defender for Endpoint のチャネルのみを変更するには、目的のチャネルに置き換えた後、次のコマンドを実行します。
 >
 > ```bash
-> defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
+> defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
 
 ### <a name="set-update-check-frequency"></a>更新チェックの頻度を設定する
@@ -141,7 +136,7 @@ MAU が更新プログラムを検索する方法を変更します。
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**キー**|EnableCheckForUpdatesButton|
 |**データ型**|Boolean|
-|**指定可能な値**|True (既定) <p> 誤|
+|**指定可能な値**|True (既定) <p> False|
 |||
 
 ### <a name="disable-insider-checkbox"></a>Insider チェック ボックスを無効にする
@@ -157,7 +152,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**キー**|DisableInsiderCheckbox|
 |**データ型**|Boolean|
-|**指定可能な値**|False (既定) <p> 正|
+|**指定可能な値**|False (既定) <p> True|
 |||
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>MAU から送信されるテレメトリを制限する
@@ -173,7 +168,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**キー**|SendAllTelemetryEnabled|
 |**データ型**|Boolean|
-|**指定可能な値**|True (既定) <p> 誤|
+|**指定可能な値**|True (既定) <p> False|
 |||
 
 ## <a name="example-configuration-profile"></a>構成プロファイルの例
@@ -189,7 +184,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 > 次の構成は構成の例であり、設定の適切な確認と構成の調整なしに実稼働環境で使用する必要があります。
 
 > [!TIP]
-> 新機能をプレビューし、早期のフィードバックを提供するには、企業内の一部のデバイスを構成するか、またはに構成をお `Beta` 勧めします `Preview` 。
+> 新機能をプレビューし、早期のフィードバックを提供するには、企業内の一部のデバイスを構成するか、またはに構成をお勧めします`Beta``Preview`。
 
 ### <a name="jamf"></a>JAMF
 

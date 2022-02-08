@@ -1,6 +1,6 @@
 ---
-title: ASR ルールの展開の概要
-description: 攻撃表面の縮小ルールを展開するガイダンスを提供します。
+title: ASR ルールの展開の前提条件
+description: 攻撃表面縮小 (ASR) ルールの展開に関する概要と前提条件のガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -11,21 +11,16 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: c6fe1f185567efdc5054cf490579d93eebd5069f
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326983"
 ---
-# <a name="asr-rules-deployment-overview"></a>ASR ルールの展開の概要
+
+# <a name="asr-rules-deployment-prerequisites"></a>ASR ルールの展開の前提条件
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -39,7 +34,7 @@ ASR ルールは、次のような特定のソフトウェア動作を対象と�
 
 異なる攻撃表面を減らすことで、攻撃が最初に起こらされるのを防ぐのに役立ちます。
 
-最初の準備では、配置するシステムの機能を理解する必要があります。 この機能を理解すると、組織を保護するために最も重要な ASR ルールを特定するのに役立ちます。
+最初の準備では、配置するシステムの機能を理解する必要があります。 この機能を理解すると、組織を保護するために最も重要な ASR ルールを特定するのに役立ちます。 さらに、ASR 展開の準備に参加する必要があるいくつかの前提条件があります。
 
 >[!IMPORTANT]
 >このガイドでは、ASR ルールを構成する方法を決定するのに役立つ画像と例を示します。これらのイメージと例は、環境に最適な構成オプションを反映していない可能性があります。
@@ -111,7 +106,7 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 最新のMicrosoft Defender ウイルス対策維持すると、ASR ルールの誤検知結果を減らし、検出機能Microsoft Defender ウイルス対策向上します。 現在のバージョンと異なるコンポーネントを更新する方法の詳細については、Microsoft Defender ウイルス対策サポート[Microsoft Defender ウイルス対策参照してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
-## <a name="asr-rules-deployment-phases"></a>ASR ルールの展開フェーズ
+## <a name="asr-rules-deployment-steps"></a>ASR ルールの展開手順
 
 ビジネスラインの運用に影響を与える可能性のある新しい大規模な実装と同様に、計画と実装では計画的な方法が重要です。 ASR ルールがマルウェアを防止する強力な機能を備えるので、独自の顧客ワークフローに最適な動作を実現するには、これらのルールの慎重な計画と展開が必要です。 環境で作業するには、ASR ルールを慎重に計画、テスト、実装、運用する必要があります。  
 

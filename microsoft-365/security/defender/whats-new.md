@@ -14,16 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+  - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ce81edf38eed82deec6e112070b7137fca21dc03
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218899"
 ---
+
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -43,23 +38,23 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Microsoft Defender for Office 365 の新機能](../office-365-security/whats-new-in-defender-for-office-365.md)
 - [Microsoft Defender for Endpoint の新機能](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Microsoft Defender for Identity の新機能](/defender-for-identity/whats-new)
-- [新しい機能Microsoft Cloud App Security](/cloud-app-security/release-notes)
+- [Microsoft Defender for Cloud Apps の新機能](/cloud-app-security/release-notes)
 
-また、メッセージ センターから製品の更新や重要な通知を [取得することもできます](https://admin.microsoft.com/Adminportal/Home#/MessageCenter)。 
+また、メッセージ センターを通じて製品の更新や重要な通知を [取得することもできます](https://admin.microsoft.com/Adminportal/Home#/MessageCenter)。 
 
 ## <a name="december-2021"></a>2021 年 12 月
 
-- (GA)このテーブルは、高度な検索で短期的に追加され、デバイスで特定のソフトウェアが検出された場所の証拠 `DeviceTvmSoftwareEvidenceBeta` を確認できます。
+- (GA)この `DeviceTvmSoftwareEvidenceBeta` テーブルは、高度な検索で短期的に追加され、デバイスで特定のソフトウェアが検出された場所の証拠を確認できます。
 
 ## <a name="november-2021"></a>2021 年 11 月
 
-- (プレビュー)Defender for Cloud Apps のアプリケーション ガバナンス アドオン機能が、Microsoft 365 Defender で利用Microsoft 365 Defender。 アプリ ガバナンスは、Microsoft のセキュリティ API を介してデータにアクセスする OAuth が有効なアプリ用に設計Microsoft 365ポリシー管理機能Graph提供します。 アプリ ガバナンスは、実用的な分析情報と自動化されたポリシー アラートおよびアクションを通して、これらのアプリとそのユーザーが Microsoft 365 に保存されている機密データにアクセスし、使用し、共有する方法について、完全な可視性、修復、およびガバナンスを提供します。 [アプリケーション ガバナンスの詳細を参照してください](/cloud-app-security/app-governance-manage-app-governance)。
-- (プレビュー)高度 [な](advanced-hunting-overview.md) 検索ページには、複数タブのサポート、スマート スクロール、合理化されたスキーマ タブ、クエリのクイック編集オプション、クエリ リソースの使用状況インジケーター、その他の機能強化が追加され、クエリの円滑化と微調整が容易になりました。
+- (プレビュー)Defender for Cloud Apps のアプリケーション ガバナンス アドオン機能が、Microsoft 365 Defender で利用Microsoft 365 Defender。 アプリ ガバナンスは、Microsoft のセキュリティ API を介してデータにアクセスする OAuth が有効なアプリ用に設計Microsoft 365ポリシー管理機能Graph提供します。 アプリ ガバナンスは、実用的な分析情報と自動化されたポリシー アラートおよびアクションを通して、これらのアプリとそのユーザーが Microsoft 365 に保存されている機密データにアクセスし、使用し、共有する方法について、完全な可視性、修復、およびガバナンスを提供します。 [アプリケーション ガバナンスの詳細について説明します](/cloud-app-security/app-governance-manage-app-governance)。
+- (プレビュー) [高度な](advanced-hunting-overview.md) 検索ページには、複数タブのサポート、スマート スクロール、合理化されたスキーマ タブ、クエリのクイック編集オプション、クエリ リソースの使用状況インジケーター、その他の機能強化が追加され、クエリの円滑化と微調整が容易になりました。
 - (プレビュー)インシデント機能へのリンクを[](advanced-hunting-link-to-incident.md)使用して、高度な検索クエリ結果のイベントまたはレコードを、調査中の新規または既存のインシデントに含めることができます。
 
 ## <a name="october-2021"></a>2021 年 10 月
 
-- (GA)高度な検索では [、CloudAppEvents](advanced-hunting-cloudappevents-table.md) テーブルにさらに列が追加されました。 これで、クエリ `AccountType` に `IsExternalUser` `IsImpersonated` 、、、、、 `IPTags` `IPCategory` `UserAgentTags` を含めできます。
+- (GA)高度な検索では、 [CloudAppEvents](advanced-hunting-cloudappevents-table.md) テーブルにさらに列が追加されました。 これで、クエリに `AccountType`、 `IsExternalUser`、 `IsImpersonated`、 `IPTags`、 `IPCategory`、 `UserAgentTags` を含めできます。
 
 ## <a name="september-2021"></a>2021 年 9 月
 
@@ -67,17 +62,17 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - (GA)高度なOffice 365利用可能なデータの Microsoft Defender が一般提供されています。
 - (GA)インシデントとアラートをユーザー アカウントに割り当てる
 
-  インシデントに関連付けられているすべてのアラートを、インシデントの [インシデントの管理] ウィンドウまたはアラートの [管理] アラート ウィンドウの[割り当て] からユーザー アカウントに割り当てできます。 
+  インシデントに関連付けられているすべてのアラートを、インシデントの [インシデントの管理] ウィンドウまたはアラートの [管理] アラート  ウィンドウの [割り当て]  からユーザー アカウントに割り当てできます。
 
 ## <a name="august-2021"></a>2021 年 8 月
 
 - (プレビュー)Microsoft Defender for Office 365高度な検索で利用可能なデータ
 
-  電子メール テーブルの新しい列は、高度な検索を使用してより詳細な調査を行う電子メール ベースの脅威に関するより多くの洞察を提供できます。 この列は `AuthenticationDetails` [、EmailEvents、EmailAttachmentInfo、](./advanced-hunting-emailevents-table.md) `FileSize` [および](./advanced-hunting-emailattachmentinfo-table.md) `ThreatTypes` `DetectionMethods` [EmailPostDeliveryEvents テーブルに含](./advanced-hunting-emailpostdeliveryevents-table.md) める必要があります。
+  電子メール テーブルの新しい列は、高度な検索を使用してより詳細な調査を行う電子メール ベースの脅威に関するより多くの洞察を提供できます。 この列は`AuthenticationDetails`[、EmailEvents](./advanced-hunting-emailevents-table.md)`FileSize`、[EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)`ThreatTypes``DetectionMethods`、[および EmailPostDeliveryEvents テーブルに含](./advanced-hunting-emailpostdeliveryevents-table.md)める必要があります。
 
 - (プレビュー)インシデント グラフ
 
-  **インシデントの [Graph]** タブの新しい [セキュリティ] タブには、攻撃の全範囲、攻撃がネットワーク経由で時間の間にどのように広がったか、開始した場所、攻撃者がどこまで攻撃を行ったかが表示されます。
+  インシデントの **[Graph**] タブの新しい  [セキュリティ] タブには、攻撃の全範囲、攻撃がネットワーク全体に及び、開始場所、攻撃者がどこまで攻撃を行ったかが表示されます。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
@@ -101,7 +96,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 - (プレビュー) [ポータル内スキーマ参照](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)
 
-  セキュリティ センターで高度な検索スキーマ テーブルに関する情報を直接取得します。 テーブルと列の説明に加えて、この参照には、サポートされているイベントの種類 ( `ActionType` 値) とサンプル クエリが含まれます。
+  セキュリティ センターで高度な検索スキーマ テーブルに関する情報を直接取得します。 テーブルと列の説明に加えて、この参照には、サポートされているイベントの種類 (`ActionType` 値) とサンプル クエリが含まれます。
 
 - (プレビュー) [DeviceFromIP() 関数](advanced-hunting-devicefromip-function.md)
 
@@ -135,6 +130,6 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="february-2021"></a>2021 年 2 月
 
-- (プレビュー)拡張された[Microsoft 365 Defenderポータル ( https://security.microsoft.com) ](https://security.microsoft.com)がパブリック プレビューで利用可能になります。 この新しいエクスペリエンスにより、Defender for Endpoint と Defender for Office 365が中央に表示されます。 [変更点についての詳細情報](microsoft-365-defender.md#the-microsoft-365-defender-portal) はこちらを参照してください。
+- (プレビュー)拡張された[Microsoft 365 Defenderポータル (https://security.microsoft.com)](https://security.microsoft.com) はパブリック プレビューで使用できます。 この新しいエクスペリエンスにより、Defender for Endpoint と Defender for Office 365が中央に表示されます。 [変更点についての詳細情報](microsoft-365-defender.md#the-microsoft-365-defender-portal) はこちらを参照してください。
 
 - **[(プレビュー) Microsoft 365 Defender](api-overview.md)** API - トップ レベルの Microsoft 365 Defender API を使用すると、共有インシデントテーブルと高度なハンティング テーブルに基づいてワークフローを自動化できます。

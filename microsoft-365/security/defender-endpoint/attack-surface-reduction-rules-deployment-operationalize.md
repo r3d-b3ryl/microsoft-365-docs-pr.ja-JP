@@ -1,5 +1,5 @@
 ---
-title: 攻撃表面の縮小ルールの展開フェーズ 4 - 運用
+title: 攻撃表面の縮小 (ASR) ルールの展開を運用する
 description: 攻撃表面の縮小ルールの展開を運用化するガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
@@ -11,25 +11,20 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: 567a6b8c2793853fc5240a271e510bae6a561ba2
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327608"
 ---
-# <a name="phase-4---operationalize"></a>フェーズ 4 - 運用化
 
-ASR ルールを完全に展開した後は、ASR 関連のアクティビティを監視して対応するプロセスが整っている必要があります。
+# <a name="step-4-operationalize-asr-rules"></a>手順 4: ASR ルールを操作する
 
-## <a name="manage-false-positives"></a>誤検知の管理
+攻撃表面の縮小 (ASR) ルールを完全に展開した後は、ASR 関連のアクティビティを監視して対応するプロセスが整っている必要があります。
+
+## <a name="managing-false-positives"></a>誤検知の管理
 
 任意の脅威保護ソリューションで誤検知/負が発生する可能性があります。 誤検知とは、エンティティ (ファイルやプロセスなど) が検出され、悪意のあるエンティティとして識別される場合ですが、エンティティは実際には脅威ではありません。 対照的に、偽陰性とは、脅威として検出されたのではなく悪意のあるエンティティです。 誤検知と誤検知の詳細については、「 [Address false positives/negatives in Microsoft Defender for Endpoint」を参照してください。](defender-endpoint-false-positives-negatives.md)
 
@@ -77,10 +72,10 @@ AsrOfficeChildProcess ルールに焦点を当て、関連する実際のファ�
 
 ## <a name="topics-in-this-deployment-collection"></a>この展開コレクションのトピック
 
-[ASR ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
+[ASR ルールの展開の前提条件](attack-surface-reduction-rules-deployment.md)
 
-[フェーズ 1: 計画](attack-surface-reduction-rules-deployment-plan.md)
+[手順 1: ASR ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
 
-[フェーズ 2: テスト](attack-surface-reduction-rules-deployment-test.md)
+[手順 2: ASR ルールをテストする](attack-surface-reduction-rules-deployment-test.md)
 
-[フェーズ 3: 実装](attack-surface-reduction-rules-deployment-implement.md)
+[手順 3: ASR ルールを実装する](attack-surface-reduction-rules-deployment-implement.md)

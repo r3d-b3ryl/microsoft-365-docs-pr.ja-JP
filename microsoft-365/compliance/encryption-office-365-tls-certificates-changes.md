@@ -6,16 +6,11 @@ ms.author: pshelton
 manager: toddbeckett
 ms.topic: article
 audience: Developer
-ms.date: 1/21/2021
+ms.date: 2/4/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.openlocfilehash: c104f5bdc28966d080318ce0559dfe5acbfec8ea
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187271"
 ---
+
 # <a name="office-tls-certificate-changes"></a>Office TLS 証明書の変更
 
 Microsoft 365メッセージング、会議、テレフォニー、音声、ビデオに電力を供給するサービスを更新して、異なるルート証明機関 (CA) の TLS 証明書を使用します。 この変更は、現在のルート CA が 2025 年 5 月に期限切れになるので行います。
@@ -37,9 +32,15 @@ Microsoft 365メッセージング、会議、テレフォニー、音声、ビ�
 - *.communication.azure.com
 - *.operatorconnect.microsoft.com
 
-この変更は、米国政府機関、中国、またはドイツのクラウド インスタンスで使用される証明書、ドメイン、またはサービスには影響Microsoft 365。
+さらに、Skype for Businessの米国政府機関の国内クラウド インスタンスの Microsoft 365 Online エンドポイントも同じ変更を行い、次のようなエンドポイントに影響を与える可能性があります。
+- *.online.dod.skypeforbusiness.us
+- *.online.gov.skypeforbusiness.us
+- *.um-dod.office365.us
+- *.um.office365.us
 
-この記事のすべての証明書情報は、2020[年 10](./encryption-office-365-certificate-chains.md)月Microsoft 365暗号化チェーンで以前に提供されました。
+この変更は、米国政府機関、中国、またはドイツの国内クラウド インスタンスで使用される他の証明書、ドメイン、またはサービスには影響Microsoft 365。
+
+この記事のすべての証明書情報は、2020 [年](./encryption-office-365-certificate-chains.md) 10 月Microsoft 365暗号化チェーンで以前に提供されました。
 
 ## <a name="when-will-this-change-happen"></a>この変更がいつ発生しますか?
 
@@ -79,26 +80,26 @@ Microsoft 365メッセージング、会議、テレフォニー、音声、ビ�
 
 ## <a name="will-this-change-affect-me"></a>この変更は影響しますか?
 
-ルート CA "DigiCert Global Root G2" は、Windows、macOS、Android、iOS などのオペレーティング システムや、Microsoft Edge、Chrome、Safari、Firefox などのブラウザーによって広く信頼されています。 ほとんどのユーザー **がMicrosoft 365影響を受け取る可能性はありません**。 
+ルート CA "DigiCert Global Root G2" は、Windows、macOS、Android、iOS などのオペレーティング システムや、Microsoft Edge、Chrome、Safari、Firefox などのブラウザーによって広く信頼されています。 お客様 **の多Microsoft 365影響を受け取る可能性はありません**。 
 
-ただし、受け入れ可能な AS の一覧を明示的に指定すると、アプリケーションが **影響を受け取る可能性があります**。 この方法は"証明書のピン留め" と呼ばれる。 受け入れ可能な CA の一覧に新しいルート CA をお持ちではないお客様は、証明書の検証エラーを受け取り、アプリケーションの可用性または機能に影響を与える可能性があります。
+ただし、アプリケーションが受け入れ可能な AS の一覧を明示的に指定した場合、アプリケーションが影響 **を受け取る可能性があります**。 この方法は"証明書のピン留め" と呼ばれる。 受け入れ可能な CA の一覧に新しいルート CA をお持ちではないお客様は、証明書の検証エラーを受け取り、アプリケーションの可用性または機能に影響を与える可能性があります。
 
 アプリケーションが影響を受け得る可能性を検出する方法を次に示します。
 
-- ここで見つかった中間 CA の拇印、共通名、または他のプロパティをソース コードで検索 [します](https://www.microsoft.com/pki/mscorp/cps/default.htm)。 一致する場合は、アプリケーションに影響が及びかねない。 この問題を解決するには、ソース コードを更新して、新しい CAs のプロパティを追加します。 ベスト プラクティスとして、短い通知で、CAs を追加または編集できます。 業界の規制では、状況によっては 7 日以内に CA 証明書を交換する必要があります。そのため、証明書のピン留めを実装するアプリケーションは、これらの変更に迅速に対応する必要があります。
+- ソース コードで、拇印、共通名、またはここで見つかった中間 CA のその他のプロパティを検索 [します](https://www.microsoft.com/pki/mscorp/cps/default.htm)。 一致する場合は、アプリケーションに影響が及びかねない。 この問題を解決するには、ソース コードを更新して、新しい CAs のプロパティを追加します。 ベスト プラクティスとして、短い通知で、CAs を追加または編集できます。 業界の規制では、状況によっては 7 日以内に CA 証明書を交換する必要があります。そのため、証明書のピン留めを実装するアプリケーションは、これらの変更に迅速に対応する必要があります。
 
-- .NET では、標準の証明書ストアに依存するのではなく、開発者がカスタム ロジックを使用して証明書が有効かどうかを判断するコールバック関数とコールバック関数Windows `System.Net.ServicePointManager.ServerCertificateValidationCallback` `System.Net.HttpWebRequest.ServerCertificateValidationCallback` します。 開発者は、特定の共通名または拇印をチェックするロジックを追加したり、特定のルート CA ("Baltimore CyberTrust Root" など) のみを許可したりできます。 アプリケーションでこれらのコールバック関数を使用する場合は、古い CA と新しいルート CA と中間 CA の両方を受け入れる必要があります。
+- .NET では、`System.Net.ServicePointManager.ServerCertificateValidationCallback``System.Net.HttpWebRequest.ServerCertificateValidationCallback`標準の証明書ストアに依存するのではなく、開発者がカスタム ロジックを使用して証明書が有効かどうかを判断するコールバック関数とコールバック関数Windowsします。 開発者は、特定の共通名または拇印をチェックするロジックを追加したり、特定のルート CA ("Baltimore CyberTrust Root" など) のみを許可したりできます。 アプリケーションでこれらのコールバック関数を使用する場合は、古い CA と新しいルート CA と中間 CA の両方を受け入れる必要があります。
 
-- ネイティブ アプリケーションが使用されている場合があります。これにより、ネイティブ アプリケーション `WINHTTP_CALLBACK_STATUS_SENDING_REQUEST` はカスタム証明書検証ロジックを実装できます。 この通知の使用はまれであり、実装にはかなりの量のカスタム コードが必要です。 上記と同様に、アプリケーションが新しいルート CA と中間 CA の両方を受け入れる必要があります。 
+- ネイティブ アプリケーションが使用されている場合があります `WINHTTP_CALLBACK_STATUS_SENDING_REQUEST`。これにより、ネイティブ アプリケーションはカスタム証明書検証ロジックを実装できます。 この通知の使用はまれであり、実装にはかなりの量のカスタム コードが必要です。 上記と同様に、アプリケーションが新しいルート CA と中間 CA の両方を受け入れる必要があります。 
 
 - Microsoft Teams、Skype、Skype for Business Online、または Microsoft Dynamics API と統合するアプリケーションを使用し、証明書のピン留めを使用している場合は、アプリケーション ベンダーに確認してください。
 
 - Azure サービスと通信する異なるオペレーティング システムと言語ランタイムでは、新しい証明書チェーンを正しく構築して検証するために他の手順が必要な場合があります。
-   - **Linux**: 多くのディストリビューションでは、CAs を追加する必要があります `/etc/ssl/certs` 。 具体的な手順については、配布のドキュメントを参照してください。
-   - **Java**: キー ストアに上記Javaの一覧が含まれている必要があります。
-   - **Windows環境** で実行されている場合: 切断された環境で実行されているシステムには、新しいルート CA がストアに追加され、新しい中間 CA がストアに追加されている `Trusted Root Certification Authorities` 必要 `Intermediate Certification Authorities` があります。
+   - **Linux**: 多くのディストリビューションでは、CAs を追加する必要があります `/etc/ssl/certs`。 具体的な手順については、配布のドキュメントを参照してください。
+   - **Java**: キー ストアに上記Java一覧の CAs が含まれているか確認します。
+   - **Windows環境** で実行する場合: 切断された環境で実行されているシステムには、新しいルート CA `Trusted Root Certification Authorities` がストアに追加され、新しい中間 CA がストアに追加されている必要`Intermediate Certification Authorities`があります。
    - **Android**: デバイスと Android のバージョンのドキュメントを確認します。
-   - **IoT または埋** め込みデバイス : テレビ セットトップ ボックスなどの埋め込みデバイスは、多くの場合、一連のルート機関証明書を出荷し、証明書ストアを簡単に更新できません。 カスタム埋め込みデバイスまたは IoT デバイスのコードを記述したり、展開を管理したりする場合は、デバイスが新しいルート CA を信頼してください。 デバイスの製造元に問い合わせが必要な場合があります。
+   - **IoT または埋** め込みデバイス: テレビ セットのトップ ボックスなどの埋め込みデバイスは、多くの場合、制限されたルート機関証明書セットと一緒に出荷され、証明書ストアを簡単に更新できません。 カスタム埋め込みデバイスまたは IoT デバイスのコードを記述したり、展開を管理したりする場合は、デバイスが新しいルート CA を信頼してください。 デバイスの製造元に問い合わせが必要な場合があります。
 
 - ファイアウォールルールで特定のエンドポイントへの発信呼び出しのみを許可する環境がある場合は、次の証明書失効リスト (CRL) またはオンライン証明書状態プロトコル (OCSP) URL を許可します。
    - `http://crl3.digicert.com`
