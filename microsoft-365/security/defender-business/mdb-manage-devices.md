@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 01/06/2022
+ms.date: 02/09/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,18 +16,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
-ms.openlocfilehash: 91478d467fa0f7e3a0b5f6b67aeaf2fe5b34f497
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+- m365-initiative-defender-business
+ms.openlocfilehash: 143617fc3669b4a531bafe7fbbb9f2919a9ab295
+ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244561"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62520513"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business でデバイスを管理する (プレビュー)
 
 > [!IMPORTANT]
-> Microsoft Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と[](https://aka.ms/mdb-preview)IT パートナーに徐々にロールアウトされます。 今後数週間以内に最初の一連の顧客とパートナーをオンボードし、一般提供に至るプレビューを拡大します。 プレビューは一連のシナリオで [起動](mdb-tutorials.md#try-these-preview-scenarios)し、定期的に機能を追加します。
+> Microsoft Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐[](https://aka.ms/mdb-preview)々にロールアウトされます。 今後数週間以内に最初の一連の顧客とパートナーをオンボードし、一般提供に至るプレビューを拡大します。 プレビューは最初の一連 [のシナリオで](mdb-tutorials.md#try-these-preview-scenarios)起動し、定期的に機能を追加します。
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
@@ -47,23 +47,23 @@ Microsoft Defender for Business (プレビュー) では、次のようにデバ
 
 :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="デバイス インベントリのスクリーンショット":::
 
-1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
+1. ポータル () にMicrosoft 365 Defenderサインイン[https://security.microsoft.com](https://security.microsoft.com)します。
 
 2. ナビゲーション ウィンドウで、[デバイス インベントリ] **を選択します**。
 
 3. デバイスを選択して、そのフライアウト パネルを開き、その状態の詳細とアクションを実行できます。 
 
-   デバイスがまだリストされていない場合は、Microsoft Defender for Business にデバイス [をオンボードする (プレビュー)](mdb-onboard-devices.md)
+   デバイスがまだリストされていない場合は、 [Microsoft Defender for Business にデバイスをオンボードする (プレビュー)](mdb-onboard-devices.md)
 
 ## <a name="take-action-on-a-device-that-has-threat-detections"></a>脅威の検出があるデバイスでアクションを実行する
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="利用可能な詳細とアクションを含む選択したデバイスのスクリーンショット":::
 
-1. [ポータル( [https://security.microsoft.com](https://security.microsoft.com) Microsoft 365 Defender] のナビゲーション ウィンドウで、[デバイス インベントリ]**を選択します**。 
+1. [ポータル] Microsoft 365 Defender ()[https://security.microsoft.com](https://security.microsoft.com) のナビゲーション ウィンドウで、[デバイス インベントリ] **を選択します**。 
 
 2. デバイスを選択して、そのフライアウト パネルを開き、表示される情報を確認します。
 
-3. 省略記号 (**...**) を選択して、[操作] メニューを開きます。 
+3. 省略記号 (**....**) を選択して、[操作] メニューを開きます。 
 
 4. [ウイルス対策スキャンの実行] や **[自動** 調査の開始] **などのアクションを選択します**。 
 
@@ -73,7 +73,7 @@ Microsoft Defender for Business (プレビュー) では、次のようにデバ
 
 ## <a name="offboard-a-device"></a>デバイスのオフボード
 
-「 [デバイスのオフボード」を参照してください](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device)。
+「 [Offboard a device」を参照してください](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device)。
 
 ## <a name="next-steps"></a>次の手順
 

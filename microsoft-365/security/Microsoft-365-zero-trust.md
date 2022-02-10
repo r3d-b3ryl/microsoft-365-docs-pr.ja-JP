@@ -18,16 +18,16 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 5451d0876530cce1e372dd8f5308f75596c37513
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: c04ce53ba29d693f79b45c7d81fe04f0801aa50a
+ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049277"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62520561"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 ゼロ トラスト展開プラン
 
-この記事では、ゼロ トラストセキュリティを構築する展開計画について説明します。Microsoft 365。 ゼロ信頼は、侵害を前提とする新しいセキュリティ モデルであり、制御されていないネットワークから発生した場合と同様に各要求を検証します。 要求の発信元やアクセスするリソースに関係なく、ゼロ信頼モデルは「信頼しない、常に確認する」ことを教えています。
+この記事では、ゼロトラスト セキュリティを構築する展開計画について説明します。Microsoft 365。 ゼロ信頼は、侵害を前提とする新しいセキュリティ モデルであり、制御されていないネットワークから発生した場合と同様に各要求を検証します。 要求の発信元やアクセスするリソースに関係なく、ゼロ信頼モデルは「信頼しない、常に確認する」ことを教えています。
 
 
 ## <a name="zero-trust-security-architecture"></a>ゼロトラストセキュリティアーキテクチャ
@@ -53,7 +53,7 @@ ms.locfileid: "62049277"
 For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype). 
 -->
 
-ゼロ トラストの詳細については、「Microsoft のゼロ トラスト [ガイダンス センター」を参照してください](/security/zero-trust)。
+ゼロトラストの詳細については、「Microsoft のゼロ トラスト [**ガイダンス センター」を参照してください**](/security/zero-trust)。
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>ゼロ信頼の Microsoft 365展開
 
@@ -78,7 +78,7 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 
 
 
-これを実現 [するには、「ゼロトラスト ID とデバイス](office-365-security/microsoft-365-policies-configurations.md) アクセス保護」を参照してください。 この一連の記事では、ID およびデバイス アクセスの前提条件構成のセットと、Azure Active Directory (Azure AD) 条件付きアクセス、Microsoft Intune、および Microsoft 365 へのアクセスをセキュリティで保護するためのその他のポリシーのセットについて説明します。 エンタープライズ クラウド アプリとサービス、その他の SaaS サービス、およびアプリケーション プロキシで公開されたオンプレミス アプリケーションAzure ADします。
+これを実現 [**するには、「ゼロトラスト ID とデバイス アクセス保護**](office-365-security/microsoft-365-policies-configurations.md) 」を参照してください。 この一連の記事では、ID およびデバイス アクセスの前提条件構成のセットと、Azure Active Directory (Azure AD) 条件付きアクセス、Microsoft Intune、および Microsoft 365 へのアクセスをセキュリティで保護するためのその他のポリシーのセットについて説明します。 エンタープライズ クラウド アプリとサービス、その他の SaaS サービス、およびアプリケーション プロキシで公開されたオンプレミス アプリケーションAzure ADします。
 
 
 
@@ -100,7 +100,7 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="Intune を使用してエンドポイントを管理する" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
 
 
-これを実現 [するには、「Intune でデバイスを](../solutions/manage-devices-with-intune-overview.md) 管理する」を参照してください。 
+これを実現 [**するには、「Intune でデバイスを**](../solutions/manage-devices-with-intune-overview.md) 管理する」を参照してください。 
 
 
 |Includes  |前提条件  |含めない  |
@@ -114,7 +114,7 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="デバイス管理を使用したゼロ信頼 ID とアクセス ポリシー" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
-共通 ID[とデバイス アクセス ポリシーに戻り](office-365-security/identity-access-policies.md)、ポリシーを Enterpriseします。  
+共通 ID [**ポリシーとデバイス アクセス ポリシーに戻り**](office-365-security/identity-access-policies.md)、ポリシーを Enterpriseします。  
 
 :::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="ゼロ信頼 ID とアクセス ポリシー - Enterprise (推奨) 層" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
@@ -124,7 +124,7 @@ Microsoft 365 Defender は、エンドポイント、電子メール、アプリ
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="ゼロMicrosoft 365 Defenderアーキテクチャへの追加" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
-[評価と[パイロット] にMicrosoft 365 Defender](defender/eval-overview.md)コンポーネントのパイロットと展開に関する方法Microsoft 365 Defenderします。 
+[評価と [**パイロット] にMicrosoft 365 Defender**](defender/eval-overview.md)コンポーネントのパイロットと展開に関する方法Microsoft 365 Defenderします。 
 
 |Includes  |前提条件  |含めない  |
 |---------|---------|---------|
@@ -146,6 +146,6 @@ Microsoft Information Protection、特定のビジネス目標を達成するた
 
 ![Microsoft Information Protection (MIP) フレームワーク](../media/zero-trust/mip-solution-overview.png)
 
-情報保護を計画および展開する方法の詳細については、「Deploy [a a Microsoft Information Protection」を参照してください](../compliance/information-protection-solution.md)。 
+情報保護を計画および展開する方法の詳細については、「Deploy [**a a Microsoft Information Protection参照してください**](../compliance/information-protection-solution.md)。 
 
-データ プライバシー規制に関する情報保護を展開する場合、このソリューション ガイドは、プロセス全体に推奨されるフレームワークを提供します。Microsoft 365 を使用してデータプライバシー規制の[情報保護を展開します](../solutions/information-protection-deploy.md)。
+データ プライバシー規制に関する情報保護を展開する場合、このソリューション ガイドは、プロセス全体に推奨されるフレームワークを提供します。Microsoft 365 を使用してデータプライバシー規制の情報保護 [**を展開します**](../solutions/information-protection-deploy.md)。

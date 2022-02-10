@@ -10,52 +10,53 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 64b0acabf76e1ceb12bd056b02cb2b949df9c957
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 80770c6c122cc4e2892c22a43f185ffbac40c637
+ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035042"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62520416"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>ゲスト アカウントの前提条件
 
 ## <a name="external-collaboration-settings"></a>外部コラボレーションの設定
 
-Microsoft Managed Desktop では、ゲスト アカウント アクセス用に組織でAzure AD構成をお勧めします。 これらの設定は [、Azure portal](https://portal.azure.com) の [外部 **ID/ 外部コラボレーション設定] で調整できます**。
+Microsoft Managed Desktop では、ゲスト アカウント アクセス用に組織でAzure AD構成をお勧めします。 これらの設定は、 [Azure portal の [外部](https://portal.azure.com) ID **/ 外部コラボレーション設定] で調整できます**。
 
--   ゲスト **ユーザー アクセスの場合**、ゲスト ユーザーに設定すると、ディレクトリ オブジェクトのプロパティ **とメンバーシップへのアクセスが制限されています**
--   [ **ゲスト招待の設定**] で、[メンバー ユーザー] に設定し、特定の管理者ロールに割り当てられたユーザーは、メンバーのアクセス許可を持つゲストを含むゲスト **ユーザーを招待できます。**
+| Setting | 設定値 |
+| ------ | ------ |
+| ゲスト アクセス | ゲストは、ディレクトリ オブジェクトのプロパティとメンバーシップへのアクセスが制限されています。 |
+| ゲスト招待設定 | 特定の管理者ロールに割り当てられたメンバー ユーザーとユーザーは、メンバーのアクセス許可を持つゲストを含むゲストを招待できます |
 
-Microsoft Managed Desktop では、ゲスト アカウント アクセス用に組織Azure AD構成が必要です。 この設定は [、Azure portal](https://portal.azure.com) の [外部 **ID/ 外部コラボレーション設定] で調整できます**。
+Microsoft Managed Desktop では、ゲスト アカウント アクセス用に組織Azure AD構成が必要です。 この設定は、 [Azure portal の [外部](https://portal.azure.com) ID/ 外部コラボレーション **設定] で調整できます**。
 
--   **[コラボレーションの制限]** で、次のオプションを選択します。
-    -   [任意の **ドメインへの招待の** 送信を許可する ( 最も包括的な) ] を選択した場合、他の構成は必要ありません。
-    -   [指定した **ドメインへの** 招待を拒否する] を選択した場合は、Microsoft.com ドメインに一覧が表示されません。
-    -   [指定した **ドメインへの** 招待のみを許可する ] (最も制限の厳しい) を *選択した場合* は、Microsoft.com がターゲット ドメインに表示されます。
+| Setting | オプション |
+| ------ | ------ |
+| 共同作業における制限事項 | 次のオプションを選択します。 <ul><li>[任意の **ドメインへの招待の** 送信を許可する ( 最も包括的な) ] を選択した場合、他の構成は必要ありません。</li><li>[指定した **ドメインへの** 招待を拒否する] を選択した場合は、Microsoft.com ドメインに一覧が表示されていないか確認します。</li><li>[指定した **ドメイン** への招待のみを許可する ( 最も制限が厳しい) ] を選択した場合は、Microsoft.com  がターゲット ドメインに表示されます。</li><ul>
 
-これらの設定を操作する制限を設定する場合は、必ずモダン Workplace サービス Azure Active Directory **を除外してください**。 たとえば、ゲスト アカウントによる Intune ポータルへのアクセスを妨げる条件付きアクセス ポリシーがある場合は、このポリシーからモダン **Workplace サービス** アカウント グループを除外します。
+これらの設定を操作する制限を設定する場合は、モダン Workplace サービス Azure Active Directory **を除外してください**。 たとえば、ゲスト アカウントによる Intune ポータルへのアクセスを妨げる条件付きアクセス ポリシーがある場合は、このポリシーからモダン **Workplace サービス** アカウント グループを除外します。
 
-詳細については [、「B2B 外部コラボレーションを有効にする」および「ゲストを招待できるユーザーを管理する」を参照してください](/azure/active-directory/external-identities/delegate-invitations#to-configure-external-collaboration-settings)。
+詳細については、「 [B2B 外部コラボレーションを有効にし、ゲストを招待できるユーザーを管理する」を参照してください](/azure/active-directory/external-identities/delegate-invitations#to-configure-external-collaboration-settings)。
 
 ## <a name="unlicensed-intune-admin"></a>ライセンスのない Intune 管理者
 
-[ **ライセンスのない管理者へのアクセスを許可する** ] 設定を有効にする必要があります。 この設定を有効にしない場合、サービスを提供する組織にアクセスしようとAzure ADが発生する可能性があります。 アクセス範囲は、運用スタッフを含むユーザーに割り当てられた役割によって定義されますので、セキュリティへの影響を気にすることなく、この設定を安全に有効にできます。
+[ **ライセンスのない管理者へのアクセスを許可する] 設定** を有効にする必要があります。 この設定を有効にしない場合、サービスを提供する組織にアクセスしようとAzure ADが発生する可能性があります。 セキュリティへの影響を気にすることなく、この設定を安全に有効にできます。 アクセス範囲は、運用スタッフを含むユーザーに割り当てられた役割によって定義されます。
 
-この設定を有効にするには、次の手順を実行します。
+**この設定を有効にするには、次の方法を使用します。**
 
 1. 管理センターのMicrosoft エンドポイント マネージャー[移動します](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. [テナント管理 **の役割**  >  **]**  >  **[管理者ライセンス] に移動します**。
-3. [ **ライセンスのない管理者へのアクセスを許可する] で、[** はい] を **選択します**。
+2. [テナントの **管理] に移動し、[** 役割] を **選択します**。 次に、[ **管理者ライセンス] を選択します**。
+3. [ライセンス **のない管理者へのアクセスを許可する] セクション** で、[はい] を **選択します**。
 
 > [!IMPORTANT]
-> [はい] を選択した後は、この設定を元に **戻すことはできません**。
+> [はい] を選択した後は、この設定を元に戻 **すことはできません**。
 
-詳細については、「ライセンスのない管理者」[を参照Microsoft Intune。](/mem/intune/fundamentals/unlicensed-admins)
+詳細については、「ライセンスのない管理者」を[参照Microsoft Intune](/mem/intune/fundamentals/unlicensed-admins)。
 
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Microsoft Managed Desktop の準備をする手順
 
 1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
-2. [準備状況の評価ツール](readiness-assessment-tool.md)を実行します。
+1. [準備状況の評価ツール](readiness-assessment-tool.md)を実行します。
 1. [ポータル サイト](../get-started/company-portal.md)を購入します。
 1. ゲスト アカウントの前提条件を確認します (この記事)。
 1. [ネットワーク構成](network.md)をチェックします。
