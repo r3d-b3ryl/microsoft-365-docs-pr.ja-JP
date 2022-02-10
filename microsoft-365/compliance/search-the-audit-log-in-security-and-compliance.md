@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: fe473eba5bb2034044206eff3fb17e0249509447
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 84fee7a24c23fb9b7e0b7ba7151538ea79409ce2
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322097"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464882"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -1109,15 +1109,13 @@ Microsoft 365 監査ログに記録されるコミュニケーション コン�
 Exchange Online 組織で管理者 (または管理者のアクセス許可を割り当てられたユーザー) が変更を加えると、Exchange 管理者監査ログ (Microsoft 365 では既定で有効になります) により、監査ログにイベントが記録されます。Exchange 管理センターを使用するか、または Exchange PowerShell のコマンドレットを実行して加えられた変更は、Exchange 管理者監査ログに記録されます。監査ログには、動詞の **Get-**、**Search-**、または **Test-** で始まるコマンドレットは記録されません。Exchange 管理者監査ログの詳細については、「[管理者監査ログ](/exchange/administrator-audit-logging-exchange-2013-help)」を参照してください。
 
 > [!IMPORTANT]
-> Exchange 管理者監査ログ (または監査ログ) に記録されない一部の Exchange Online コマンドレット。 これらのコマンドレットの多くは、Exchange Online サービスの保守に関連しており、Microsoft データセンサーの担当者またはサービス アカウントによって実行されます。 "雑音の多い" 監査イベントが多数発生するため、これらのコマンドレットはログに記録されません。 監査されていない Exchange Online コマンドレットがある場合は、[セキュリティ/コンプライアンスの UserVoice フォーラム](https://office365.uservoice.com/forums/289138-office-365-security-compliance)に提案を送信して、監査を有効にするよう依頼してください。 Microsoft サポートには、デザイン変更依頼 (DCR) を送信することもできます。
+> Exchange 管理者監査ログ (または監査ログ) に記録されない一部の Exchange Online コマンドレット。 これらのコマンドレットの多くは、Exchange Online サービスの保守に関連しており、Microsoft データセンサーの担当者またはサービス アカウントによって実行されます。 "雑音の多い" 監査イベントが多数発生するため、これらのコマンドレットはログに記録されません。 監査されていない Exchange Online コマンドレットがある場合は、Microsoft サポートに設計変更要求 (DCR) を送信してください。
 
 監査ログを検索するときに Exchange 管理者のアクティビティを検索するためのヒントをいくつか紹介します。
 
 - Exchange 管理者監査ログのエントリを返すには、[**アクティビティ**] の一覧で [**すべてのアクティビティの結果を表示**] を選択する必要があります。特定の日付範囲内で特定の Exchange 管理者によって実行されるコマンドレットの検索結果を絞り込むには、日付範囲ボックスと [**ユーザー**] の一覧を使用します。
 
-- Exchange 管理者監査ログのイベントを表示するには、検索結果をフィルター処理して、[**アクティビティ**] フィルター ボックスに **-** (ダッシュ) を入力します。これにより、Exchange 管理イベントの [**アクティビティ**] 列に表示されるコマンドレット名が表示されます。この後、コマンドレット名をアルファベット順に並べ替えることができます。
-
-  ![[アクティビティ] ボックスにダッシュを入力して Exchange 管理イベントをフィルター処理する。](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+- Exchange 管理者監査ログのイベントを表示するには、**[アクティビティ]** 列をクリックして、コマンドレット名をアルファベット順に並べ替えます。
 
 - 実行されたコマンドレット、使用されたパラメーターおよびパラメーター値、影響を受けたオブジェクトに関する情報を取得するには、[**すべての結果をダウンロードする**] オプションを選択することで検索結果をエクスポートできます。 詳細については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。
 
