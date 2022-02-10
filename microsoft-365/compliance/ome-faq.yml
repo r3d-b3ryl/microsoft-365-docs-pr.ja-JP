@@ -2,7 +2,7 @@
 metadata:
   title: メッセージの暗号化についてよく寄せられる質問
   f1.keywords:
-    - NOCSH
+  - NOCSH
   ms.author: krowley
   author: kccross
   manager: laurawi
@@ -12,227 +12,221 @@ metadata:
   ms.service: O365-seccomp
   ms.localizationpriority: medium
   search.appverid:
-    - MET150
+  - MET150
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: 新しいメッセージ保護機能について質問がある場合は、 ここで回答をご覧ください。
   ms.custom: seo-marvel-apr2020
+  ms.openlocfilehash: 9d299ff6e290de5a476f85222c98e4038b724f8e
+  ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 02/09/2022
+  ms.locfileid: "62487471"
 title: メッセージの暗号化についてよく寄せられる質問
-summary: |
+summary: >
   新しいメッセージ保護機能について質問がある場合は、 ここで回答をご覧ください。 また、Azure Information Protection のデータ保護サービスである Azure Rights Management についての質問の回答については、「[Azure Information Protection でのデータ保護についてよく寄せられる質問](/information-protection/get-started/faqs-rms)」を参照してください。
 sections:
-  - name: 無視
-    questions:
-      - question: Office 365 Message Encryption (OME) とは何ですか?
-        answer: OME は、メールの暗号化と著作権管理機能を兼ね備えています。 著作権管理機能は Azure Information Protection を利用しています。
-      - question: |
-          どのユーザーが OME を使用できますか?
-        answer: |
-          OME の新機能は以下の条件で使用できます。
-            
-          - Office 365 の Exchange Online 用に OME または IRM をセットアップしたことがない場合。
+- name: 無視
+  questions:
+  - question: Office 365 Message Encryption (OME) とは何ですか?
+    answer: OME は、メールの暗号化と著作権管理機能を兼ね備えています。 著作権管理機能は Azure Information Protection を利用しています。
+  - question: >
+      どのユーザーが OME を使用できますか?
+    answer: "OME の新機能は以下の条件で使用できます。\n  \n- Office 365 の Exchange Online 用に OME または IRM をセットアップしたことがない場合。\n\n- OME と IRM がセットアップ済みで、Azure Information Protection から Azure Rights Management サービスを使用している場合は、次の手順を使用することができます。\n\n- Exchange Online Active Directory Rights Management サービス (AD RMS) を使用している場合は、これらの新機能をすぐに有効にすることはできません。 代わりに、[AD RMS から Azure Information Protection に移行する](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)必要があります。 移行が完了したら、OME を正常にセットアップできます。\n\n  Azure Information Protection に移行するのではなく、引き続き AD RMS と Exchange Online を使用する場合、これらの新機能は使用できません。\n"
+  - question: >
+      新しい OME 機能を使用するには、どのサブスクリプションが必要ですか?
+    answer: >
+      新しい OME 機能を使用するには、次のプランのいずれかが必要です。
 
-          - OME と IRM がセットアップ済みで、Azure Information Protection から Azure Rights Management サービスを使用している場合は、次の手順を使用することができます。
 
-          - Exchange Online Active Directory Rights Management サービス (AD RMS) を使用している場合は、これらの新機能をすぐに有効にすることはできません。 代わりに、[AD RMS から Azure Information Protection に移行する](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)必要があります。 移行が完了したら、OME を正常にセットアップできます。
+      - Office 365 Message Encryption E3 および E5、E3、E5、E3、E5、E3、Office 365 Enterprise、および E Microsoft 365 Enterprise 5 の一部Microsoft 365 Business Premium提供Office 365 A1、A3、および A5、および Office 365 Government G3 G5。 Azure Information Protection を利用した新しい保護機能を受信するために、追加のライセンスは必要ありません。
 
-            Azure Information Protection に移行するのではなく、引き続き AD RMS と Exchange Online を使用する場合、これらの新機能は使用できません。
-      - question: |
-          新しい OME 機能を使用するには、どのサブスクリプションが必要ですか?
-        answer: |
-          新しい OME 機能を使用するには、次のプランのいずれかが必要です。
 
-          - Office 365 Message Encryption E3 および E5、E3、E5、E3、E5、E3、Office 365 Enterprise、および E Microsoft 365 Enterprise 5 の一部Microsoft 365 Business Premium提供Office 365 A1、A3、および A5、および Office 365 Government G3 G5。 Azure Information Protection を利用した新しい保護機能を受信するために、追加のライセンスは必要ありません。
+      - Office 365 Message Encryption の新機能を利用するために、次のプランに Azure Information Protection プラン 1 を追加することもできます: Exchange Online プラン 1、Exchange Online プラン 2、Office 365 F1、Microsoft 365 Business Basic、Microsoft 365 Business Standard、Office 365 Enterprise E1。
 
-          - Office 365 Message Encryption の新機能を利用するために、次のプランに Azure Information Protection プラン 1 を追加することもできます: Exchange Online プラン 1、Exchange Online プラン 2、Office 365 F1、Microsoft 365 Business Basic、Microsoft 365 Business Standard、Office 365 Enterprise E1。
 
-          - Office 365 Message Encryption を利用するすべてのユーザーは、この機能の対象になるためにはライセンスが付与される必要があります。
+      - Office 365 Message Encryption を利用するすべてのユーザーは、この機能の対象になるためにはライセンスが付与される必要があります。
 
-          - 完全なリストについては、Office 365 Message Encryption の「[Exchange Online サービスの説明](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)」を参照してください。
-      - question: |
-          Azure Information Protection では、Exchange Online で Bring Your Own Key (BYOK) を使用できますか?
-        answer: |
-          はい。 Microsoft では、OME をセットアップする前に BYOK をセットアップするための手順を完了することをお勧めします。
-            
-          BYOK の詳細については、「[Azure Information Protection テナント キーを計画して実装する](/information-protection/plan-design/plan-implement-tenant-key)」を参照してください。
-            
-      - question: |
-          OME と Azure Information Protection における BYOK により、第三者による召喚状などのデータ要求に対する Microsoft のアプローチは変わりますか?
-        answer: |
-          いいえ。 OME と、Azure Information Protection における独自の暗号化キーを提供して制御するためのオプション (BYOK と呼ばれる) は、法執行機関による召喚状に対応するようには設計されていません。 OME と Azure Information Protection の BYOK は、規制遵守を重視する組織向けに設計されています。 Microsoft では、第三者による顧客データの要求に慎重に対応しています。 クラウド サービス プロバイダーとして、お客様のデータのプライバシーを常にサポートします。 Microsoft では、召喚状を受け取ると、第三者がお客様に個人情報を直接要求するように案内するよう努めます。 (Brad Smith のブログ「[政府機関による監視から顧客データを保護する](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)」を参照してください)。 Microsoft は、受け取った要求の詳細情報を定期的に公開しています。 第三者によるデータの要求に関する詳細については、Microsoft トラスト センターで「[顧客データへのアクセスに関する政府および法執行機関の要求への対応方法](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)」を参照してください。 [オンライン サービスの使用条件 (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx) で「顧客データの開示」も参照してください。
-            
-      - question: |
-          この機能は、従来の Office 365 Message Encryption (OME) および Information Rights Management (IRM) 機能とどのように関連していますか?
-        answer: |
-          Office 365 Message Encryption の新機能は、既存の IRM と従来の OME ソリューションの進化版です。 以下の表に詳細を示します。
-            
-          **従来の OME、IRM、新しい OME 機能の比較**
 
-          | 機能 | 以前のバージョンの OME | IRM | 新しい OME 機能 |
-          |:-----|:-----|:-----|:-----|
-          |**暗号化されたメールを送信する**|Exchange メール フロー ルールを使用した場合のみ|Outlook for Windows、Outlook for Mac、Outlook on the web から、または Exchange メール フロー ルールを使用して開始したエンドユーザー|Outlook for Windows、Outlook for Mac、Outlook on the web から、またはメール フロー ルールを使用して開始したエンドユーザー|
-          |**著作権管理**|-|[転送不可] オプションとカスタム テンプレート|[転送不可] オプション、[暗号化のみ] オプション、既定とカスタム テンプレート|
-          |**サポートされる受信者の種類**|外部受信者のみ|内部受信者のみ|内部および外部受信者|
-          |**受信者のエクスペリエンス**|外部受信者は、ダウンロードを実行し、ブラウザーまたはダウンロードしたモバイル アプリで開いたことを通知する HTML メッセージを受信しました。|内部受信者は、Outlook for Windows、Outlook for Mac、Outlook on the web でのみ暗号化されたメールを受信しました。|内部および外部受信者は、同じ組織内に存在するか、あるいはどの組織に存在するかに関係なく、Outlook for Windows、Outlook for Mac、Outlook on the web、Outlook for Android、Outlook for iOS で、または Web ポータルを通してメールを受信します。 OME ポータルで別途ダウンロードする必要はありません。|
-          |**Bring Your Own Key サポート**|使用不可|使用不可| BYOK がサポートされています|
-      - question: |
-          組織で新しい OME 機能を有効にするにはどうすればよいですか?
-        answer: |
-          「[新しい Office 365 Message Encryption 機能を設定する](set-up-new-message-encryption-capabilities.md)」を参照してください。
-            
-      - question: |
-          OME の以前のバージョンは廃止されますか?
-        answer: |
-          現時点で OME の以前のバージョンは廃止されず、引き続き使用できます。 ただし、組織が改良された新しい OME ソリューションを使用することを強くお勧めします。 OME をまだ展開していない場合、OME の以前のバージョンの新しい展開を設定することはできません。
-      - question: |
-          組織で Active Directory Rights Management を使用している場合、この機能を使用できますか?
-        answer: |
-          いいえ。 Exchange Online Active Directory Rights Management サービス (AD RMS) を使用している場合は、これらの新機能をすぐに有効にすることはできません。 代わりに、[AD RMS から Azure Information Protection に移行する](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)必要があります。
-            
-      - question: |
-          組織に Exchange ハイブリッド展開がある場合、 この機能を利用できますか?
-        answer: |
-          オンプレミス ユーザーは、Exchange Online のメール フロー ルールを使用して暗号化されたメールを送信できます。 これを行うには、Exchange Online を経由してメールをルーティングする必要があります。 詳細については、「[パート 2: 電子メール サーバーから Microsoft 365 にメールが流れるように構成する](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)」を参照してください。
-            
-      - question: |
-          OME で暗号化されたメッセージを作成するには、どのメール クライアントを使用する必要がありますか? 保護されたメッセージの送信がサポートされているアプリケーションはどれですか?
-        answer: |
-          保護されたメッセージは、Outlook 2016、Outlook 2013 for Windows、Outlook 2013 for Mac、および Outlook on the web から作成できます。 暗号化されたメッセージを送信することの詳細については、「[PC 版 Outlook での暗号化されたメッセージの送信、表示、および返信](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)」を参照してください。
-            
-      - question: |
-          保護されたメールの閲覧と返信がサポートされているメール クライアントはどれですか?
-        answer: |
-          Microsoft 365 ユーザーは、Outlook for Windows と Outlook for Mac (2013 と 2016)、Outlook on the web、および Outlook モバイル (Android と iOS) から閲覧して返信できます。 組織で許可されている場合は、iOS のネイティブ メール クライアントも使用できます。 Microsoft 365 ではない場合、Web ブラウザーを使用して暗号化されたメッセージを Web で閲覧して返信できます。
-      - question: |
-          暗号化のみの保護されたメールは、どのメール クライアントでサポートされていますか?
-        answer: |
-          Microsoft 365 ユーザーは、PC 版 Outlook バージョン 2019 および Microsoft 365 を使用して、暗号化のみのポリシーで保護されたメールを作成できます。  つまり、新しい暗号化のみのポリシーが適用されたメッセージは、Outlook on the web、Outlook for iOS、Outlook for Android に加えて、PC 版 Outlook バージョン 2019 および Microsoft 365 で直接閲覧できるようになりました。
-      - question: |
-          OME で送信できるメッセージのサイズに制限はありますか?
-        answer: |
-          はい。 OME で送信できるメッセージの最大サイズは、添付ファイルを含めて 25 MB です。 詳細については、「[メッセージの制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)」を参照してください。
-      - question: |
-          保護されたメールの添付ファイルとしてサポートされているファイルの種類は何ですか? 添付ファイルは保護されたメールに関連付けられている保護ポリシーを継承しますか?
-        answer: |
-          保護されたメールには、あらゆる種類のファイルを添付できます。 1 つ例外があり、保護ポリシーは「[Azure Information Protection クライアントでサポートされているファイルの種類](/information-protection/rms-client/client-admin-guide-file-types)」に記載されているファイル形式にのみ適用されます。 OME では、次の Office プログラムのバージョン 97 - 2003 はサポートされていません: Word (.doc)、Excel (.xls)、PowerPoint (.ppt)。
+      - 完全なリストについては、Office 365 Message Encryption の「[Exchange Online サービスの説明](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)」を参照してください。
+  - question: >
+      Azure Information Protection では、Exchange Online で Bring Your Own Key (BYOK) を使用できますか?
+    answer: "はい。 Microsoft では、OME をセットアップする前に BYOK をセットアップするための手順を完了することをお勧めします。\n  \nBYOK の詳細については、「[Azure Information Protection テナント キーを計画して実装する](/information-protection/plan-design/plan-implement-tenant-key)」を参照してください。\n  \n"
+  - question: >
+      OME と Azure Information Protection における BYOK により、第三者による召喚状などのデータ要求に対する Microsoft のアプローチは変わりますか?
+    answer: "いいえ。 OME と、Azure Information Protection における独自の暗号化キーを提供して制御するためのオプション (BYOK と呼ばれる) は、法執行機関による召喚状に対応するようには設計されていません。 OME と Azure Information Protection の BYOK は、規制遵守を重視する組織向けに設計されています。 Microsoft では、第三者による顧客データの要求に慎重に対応しています。 クラウド サービス プロバイダーとして、お客様のデータのプライバシーを常にサポートします。 Microsoft では、召喚状を受け取ると、第三者がお客様に個人情報を直接要求するように案内するよう努めます。 (Brad Smith のブログ「[政府機関による監視から顧客データを保護する](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)」を参照してください)。 Microsoft は、受け取った要求の詳細情報を定期的に公開しています。 第三者によるデータの要求に関する詳細については、Microsoft トラスト センターで「[顧客データへのアクセスに関する政府および法執行機関の要求への対応方法](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)」を参照してください。 [オンライン サービスの使用条件 (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx) で「顧客データの開示」も参照してください。\n  \n"
+  - question: >
+      この機能は、従来の Office 365 Message Encryption (OME) および Information Rights Management (IRM) 機能とどのように関連していますか?
+    answer: "Office 365 Message Encryption の新機能は、既存の IRM と従来の OME ソリューションの進化版です。 以下の表に詳細を示します。\n  \n**従来の OME、IRM、新しい OME 機能の比較**\n\n| 機能 | 以前のバージョンの OME | IRM | 新しい OME 機能 |\n|:-----|:-----|:-----|:-----|\n|**暗号化されたメールを送信する**|Exchange メール フロー ルールを使用した場合のみ|Outlook for Windows、Outlook for Mac、Outlook on the web から、または Exchange メール フロー ルールを使用して開始したエンドユーザー|Outlook for Windows、Outlook for Mac、Outlook on the web から、またはメール フロー ルールを使用して開始したエンドユーザー|\n|**著作権管理**|-|[転送不可] オプションとカスタム テンプレート|[転送不可] オプション、[暗号化のみ] オプション、既定とカスタム テンプレート|\n|**サポートされる受信者の種類**|外部受信者のみ|内部受信者のみ|内部および外部受信者|\n|**受信者のエクスペリエンス**|外部受信者は、ダウンロードを実行し、ブラウザーまたはダウンロードしたモバイル アプリで開いたことを通知する HTML メッセージを受信しました。|内部受信者は、Outlook for Windows、Outlook for Mac、Outlook on the web でのみ暗号化されたメールを受信しました。|内部および外部受信者は、同じ組織内に存在するか、あるいはどの組織に存在するかに関係なく、Outlook for Windows、Outlook for Mac、Outlook on the web、Outlook for Android、Outlook for iOS で、または Web ポータルを通してメールを受信します。 OME ポータルで別途ダウンロードする必要はありません。|\n|**Bring Your Own Key サポート**|使用不可|使用不可| BYOK がサポートされています|\n"
+  - question: >
+      組織で新しい OME 機能を有効にするにはどうすればよいですか?
+    answer: "「[新しい Office 365 Message Encryption 機能を設定する](set-up-new-message-encryption-capabilities.md)」を参照してください。\n  \n"
+  - question: >
+      OME の以前のバージョンは廃止されますか?
+    answer: >
+      現時点で OME の以前のバージョンは廃止されず、引き続き使用できます。 ただし、組織が改良された新しい OME ソリューションを使用することを強くお勧めします。 OME をまだ展開していない場合、OME の以前のバージョンの新しい展開を設定することはできません。
+  - question: >
+      組織で Active Directory Rights Management を使用している場合、この機能を使用できますか?
+    answer: "いいえ。 Exchange Online Active Directory Rights Management サービス (AD RMS) を使用している場合は、これらの新機能をすぐに有効にすることはできません。 代わりに、[AD RMS から Azure Information Protection に移行する](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)必要があります。\n  \n"
+  - question: >
+      組織に Exchange ハイブリッド展開がある場合、 この機能を利用できますか?
+    answer: "オンプレミス ユーザーは、Exchange Online のメール フロー ルールを使用して暗号化されたメールを送信できます。 これを行うには、Exchange Online を経由してメールをルーティングする必要があります。 詳細については、「[パート 2: 電子メール サーバーから Microsoft 365 にメールが流れるように構成する](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)」を参照してください。\n  \n"
+  - question: >
+      OME で暗号化されたメッセージを作成するには、どのメール クライアントを使用する必要がありますか? 保護されたメッセージの送信がサポートされているアプリケーションはどれですか?
+    answer: "保護されたメッセージは、Outlook 2016、Outlook 2013 for Windows、Outlook 2013 for Mac、および Outlook on the web から作成できます。 暗号化されたメッセージを送信することの詳細については、「[PC 版 Outlook での暗号化されたメッセージの送信、表示、および返信](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)」を参照してください。\n  \n"
+  - question: >
+      保護されたメールの閲覧と返信がサポートされているメール クライアントはどれですか?
+    answer: >
+      Microsoft 365 ユーザーは、Outlook for Windows と Outlook for Mac (2013 と 2016)、Outlook on the web、および Outlook モバイル (Android と iOS) から閲覧して返信できます。 組織で許可されている場合は、iOS のネイティブ メール クライアントも使用できます。 Microsoft 365 ではない場合、Web ブラウザーを使用して暗号化されたメッセージを Web で閲覧して返信できます。
+  - question: >
+      暗号化のみの保護されたメールは、どのメール クライアントでサポートされていますか?
+    answer: >
+      Microsoft 365 ユーザーは、PC 版 Outlook バージョン 2019 および Microsoft 365 を使用して、暗号化のみのポリシーで保護されたメールを作成できます。  つまり、新しい暗号化のみのポリシーが適用されたメッセージは、Outlook on the web、Outlook for iOS、Outlook for Android に加えて、PC 版 Outlook バージョン 2019 および Microsoft 365 で直接閲覧できるようになりました。
+  - question: >
+      OME で送信できるメッセージのサイズに制限はありますか?
+    answer: >
+      はい。 OME で送信できるメッセージの最大サイズは、添付ファイルを含めて 25 MB です。 詳細については、「[メッセージの制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)」を参照してください。
+  - question: >
+      保護されたメールの添付ファイルとしてサポートされているファイルの種類は何ですか? 添付ファイルは保護されたメールに関連付けられている保護ポリシーを継承しますか?
+    answer: "保護されたメールには、あらゆる種類のファイルを添付できます。 1 つ例外があり、保護ポリシーは「[Azure Information Protection クライアントでサポートされているファイルの種類](/information-protection/rms-client/client-admin-guide-file-types)」に記載されているファイル形式にのみ適用されます。 OME では、次の Office プログラムのバージョン 97 - 2003 はサポートされていません: Word (.doc)、Excel (.xls)、PowerPoint (.ppt)。\n\nWord、Excel、PowerPoint ファイルなど、ファイル形式がサポートされている場合、添付ファイルが受信者によってダウンロードされた後も、ファイルは常に保護されます。 たとえば、添付ファイルが転送不可によって保護されているとします。 元の受信者がファイルをダウンロードし、新しい受信者にメッセージを作成してファイルを添付します。 新しい受信者がファイルを受信すると、受信者は保護されたファイルを開くことができません。\n  \n"
+  - question: >
+      PDF の添付ファイルはサポートされていますか?
+    answer: >
+      簡単に答えるなら、"はい" です。 PDF の暗号化を有効にした場合、セキュリティで保護された通信またはセキュリティで保護されたコラボレーションによって機密性の高い PDF ドキュメントを保護できます。 メールを送信すると、Office 365 サービスが PDF の添付ファイルを暗号化します。 Outlook クライアントでは、PDF の添付ファイルは暗号化されません。
 
-          Word、Excel、PowerPoint ファイルなど、ファイル形式がサポートされている場合、添付ファイルが受信者によってダウンロードされた後も、ファイルは常に保護されます。 たとえば、添付ファイルが転送不可によって保護されているとします。 元の受信者がファイルをダウンロードし、新しい受信者にメッセージを作成してファイルを添付します。 新しい受信者がファイルを受信すると、受信者は保護されたファイルを開くことができません。
-            
-      - question: |
-          PDF の添付ファイルはサポートされていますか?
-        answer: |
-          簡単に答えるなら、"はい" です。 PDF の暗号化を有効にした場合、セキュリティで保護された通信またはセキュリティで保護されたコラボレーションによって機密性の高い PDF ドキュメントを保護できます。 メールを送信すると、Office 365 サービスが PDF の添付ファイルを暗号化します。 Outlook クライアントでは、PDF の添付ファイルは暗号化されません。
 
-          Outlook on the web、Outlook for iOS、Outlook for Android の場合、送信する PDF をその他の手順なしで暗号化できます。 これらのクライアントでは、本来より PDF の暗号化がサポートされています。
+      Outlook on the web、Outlook for iOS、Outlook for Android の場合、送信する PDF をその他の手順なしで暗号化できます。 これらのクライアントでは、本来より PDF の暗号化がサポートされています。
 
-          Outlook デスクトップでは本来、PDF の添付ファイルがサポートされていません。 PDF の添付ファイルに暗号化を適用するには、代わりに、まずは Exchange メール フロー ルールまたは DLP を設定する必要があります。 PDF の添付ファイル付きのメールを Outlook デスクトップから送信するとき、クライアントはまずメッセージを添付ファイルと一緒にサービスに送信します。 サービスがファイルを受信すると、サービスはデータ損失防止 (DLP) ポリシーの OME 保護または Exchange Online でのメール フロー ルールを適用します。 次に、Exchange Online はメッセージを PDF 添付ファイルと一緒に送信します。
 
-          PDF の添付ファイルの暗号化を有効にするには、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で次のコマンドを実行します。
+      Outlook デスクトップでは本来、PDF の添付ファイルがサポートされていません。 PDF の添付ファイルに暗号化を適用するには、代わりに、まずは Exchange メール フロー ルールまたは DLP を設定する必要があります。 PDF の添付ファイル付きのメールを Outlook デスクトップから送信するとき、クライアントはまずメッセージを添付ファイルと一緒にサービスに送信します。 サービスがファイルを受信すると、サービスはデータ損失防止 (DLP) ポリシーの OME 保護または Exchange Online でのメール フロー ルールを適用します。 次に、Exchange Online はメッセージを PDF 添付ファイルと一緒に送信します。
 
-          ```powershell
-          Set-IRMConfiguration -EnablePdfEncryption $true
-          ```
 
-          PDF の暗号化により、セキュリティで保護された通信またはセキュリティで保護されたコラボレーションによって機密性の高い PDF ドキュメントを保護できます。 すべての Outlook クライアントで、メッセージと保護されていない PDF の添付ファイルはデータ損失防止 (DLP) ポリシーの OME 保護または Exchange Online でのメール フロー ルールを継承します。 また、Outlook on the web のユーザーが保護されていない PDF ドキュメントを添付し、メッセージに保護を適用した場合、メッセージはメッセージの保護を継承します。 ユーザーは、保護された PDF がサポートされているアプリケーションでのみ暗号化された添付ファイルを開くことができます (OME ポータルと Azure Information Protection ビューアーなど)。
+      PDF の添付ファイルの暗号化を有効にするには、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で次のコマンドを実行します。
 
-          > [!IMPORTANT]
-          > Outlook デスクトップ クライアントでは、PDF の暗号化はサポートされていません。
-      - question: |
-          SharePoint Online や OneDrive for Business の添付ファイルはサポートされていますか?
-        answer: |
-          Not yet. SharePoint Online や OneDrive for Business の添付ファイルはサポートされていません。また、エンドユーザーがメールを暗号化することはできますが、クラウド添付ファイルは暗号化できません。
-      - question: |
-          保護されたメールの暗号化された添付ファイルのプレビューは、どのメール クライアントでサポートされていますか?
-        answer: |
-          保護されたメールで添付ファイルが保護されている場合、Outlook クライアントでドキュメントを直接プレビューする機能を使用できます。 Outlook では、Office ドキュメント (docx、xlsx、pptx、doc、xls、ppt) のプレビューがサポートされています。 Outlook on the web では、Office ドキュメント (docx、xlsx、pptx) と PDF のプレビューがサポートされています。  
-      - question: |
-          保護されたメールの失効は、どのメール クライアントでサポートされていますか?
-        answer: |
-          Outlook on the web では、保護されたメールの失効がサポートされています。  詳細については、「[送信した暗号化されたメッセージを取り消す方法](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent)」を参照してください。
-      - question: |
-          OME ポータルは、保護されたメールの暗号化された添付ファイルのプレビューをサポートしていますか?
-        answer: |
-          OME ポータルは、暗号化されたメールに追加された暗号化された添付ファイル コピーのプレビューをサポートします。 サポート ファイルの種類には、Word、Excel、Powerpoint、PDF ファイルが含まれます。  
-      - question: |
-          ポリシーを設定してメッセージを自動的に暗号化することはできますか?
-        answer: |
-          はい。 Exchange Online でメール フロー ルールを使用して、特定の条件に基づいてメッセージを自動的に暗号化します。 たとえば、受信者 ID、受信者ドメイン、またはメッセージの本文や件名の内容に基づくポリシーを作成できます。 「[Office 365 でメール メッセージを暗号化するためにメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
-            
-      - question: |
-          受信メールと送信メールの暗号化を自動的に削除することはできますか?
-        answer: |
-          管理者は、メール フロー ルールを設定して送信メールの暗号化を削除できます。 受信メールの暗号化を削除するルールは、組織内から送信されるメールに対してのみ設定できます。
-      - question: |
-          Microsoft 365 コンプライアンス センターからデータ損失防止 (DLP) でポリシーを設定して、メッセージを自動的に暗号化することはできますか?
-        answer: |
-          はい。 Exchange Online で、または Microsoft 365 コンプライアンス センターで DLP を使用して、メール フロー ルールを設定できます。
-      - question: |
-          暗号化されたメッセージを企業ブランドでカスタマイズすることはできますか?
-        answer: |
-          はい。 メール メッセージと OME ポータルのカスタマイズの詳細については、「暗号化されたメッセージに組織のブランドを追加する」を参照してください。 「[暗号化されたメッセージに組織のブランドを追加する](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。
-            
-      - question: |
-          暗号化されたメールのためのレポート機能や分析情報はありますか?
-        answer: |
-          セキュリティ/コンプライアンス センターに暗号化レポートがあります。 「[セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する](../security/office-365-security/view-email-security-reports.md)」を参照してください。
-            
-      - question: |
-          電子情報開示などのコンプライアンス機能でメッセージの暗号化を使用することはできますか?
-        answer: |
-          はい、OME によって保護されたほとんどのメッセージが検出可能です。 Microsoft 365 の別の組織から受信したメールが、メール フロー ルールによってカスタム ブランドが適用され、OME によって保護されている場合、このメールは電子情報開示サービスによって検出不能です。 つまり、メールがユーザーのメールボックスからアクセスできず、OME ポータルへのリンクのみによって表示できる場合、メールは検索可能ではありません。 詳細については、「[暗号化されたアイテムをサポートする電子情報開示アクティビティ](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items)」を参照してください。
-      - question: |
-          メールから暗号化を削除することはできますか?
-        answer: |
-          管理者は、メール フロー ルールを設定して暗号化を削除できます。 別の組織によって適用されたメールからメール フロー ルールを使用して暗号化を削除できない。
-      - question: |
-          共有メールボックスとして送信し、メールを暗号化することはできますか?
-        answer: |
-          暗号化メール フロー ルールに一致するメール メッセージを誰かが送信すると、メッセージは送信される前に暗号化されます。
-      - question: |
-          共有メールボックスに送信された暗号化されたメッセージを開くことはできますか?
-        answer: |
-          はい。 サポートされている Outlook クライアントにログインすると、共有メールボックスの暗号化されたメッセージを開くことができます。
 
-          - ユーザーは、共有メールボックスが配布グループの一部として保護されたメールを受信した場合、共有メールボックスの保護されたメールを開くことができます。
+      ```powershell
 
-          - ユーザーは、Outlook for Windows、Outlook for Mac、Outlook on the web を使用しているときに、メールから保護を継承する添付ファイルを表示できます。
+      Set-IRMConfiguration -EnablePdfEncryption $true
 
-          次の表に、共有メールボックスがサポートされるクライアントの一覧を示します。
+      ```
 
-          | プラットフォーム | メールを読む | メールの添付ファイルを表示する |
-          |----------|-----------|------------------------|
-          | Outlook on the web | はい | はい                |
-          | Outlook for Windows| はい | はい                |
-          | Outlook for Mac    | はい | はい                |
-          | Outlook for Android| はい | 不要                 |
-          | Outlook for iOS    | はい | 不要                 |
-          |
 
-          現在、2 つの既知の制限があります。
+      PDF の暗号化により、セキュリティで保護された通信またはセキュリティで保護されたコラボレーションによって機密性の高い PDF ドキュメントを保護できます。 すべての Outlook クライアントで、メッセージと保護されていない PDF の添付ファイルはデータ損失防止 (DLP) ポリシーの OME 保護または Exchange Online でのメール フロー ルールを継承します。 また、Outlook on the web のユーザーが保護されていない PDF ドキュメントを添付し、メッセージに保護を適用した場合、メッセージはメッセージの保護を継承します。 ユーザーは、保護された PDF がサポートされているアプリケーションでのみ暗号化された添付ファイルを開くことができます (OME ポータルと Azure Information Protection ビューアーなど)。
 
-          - モバイル デバイスで受信するメールの添付ファイルを Outlook モバイルを使用して開くことはできません。
 
-          - Win32 Outlookでは、電子メールが有効なセキュリティ グループを介して共有メールボックスに割り当てられたユーザーに対して、Web ブラウザーを使用して暗号化されたメールを表示する通知メールが表示されます。  Outlook Win32 で暗号化されたメールを直接表示するには、Outlook と Azure Information Protection の統合ラベル付けクライアントで、フル アクセス許可と自動マッピングが有効になっている共有メールボックスにユーザーを直接割り当てる必要があります。 自動マッピングは、Exchange Online に対して既定で有効になっています。
+      > [!IMPORTANT]
 
-          **ユーザーを共有メールボックスにアサインするには、次の操作を実行します**
+      > Outlook デスクトップ クライアントでは、PDF の暗号化はサポートされていません。
+  - question: >
+      SharePoint Online や OneDrive for Business の添付ファイルはサポートされていますか?
+    answer: >
+      Not yet. SharePoint Online や OneDrive for Business の添付ファイルはサポートされていません。また、エンドユーザーがメールを暗号化することはできますが、クラウド添付ファイルは暗号化できません。
+  - question: >
+      保護されたメールの暗号化された添付ファイルのプレビューは、どのメール クライアントでサポートされていますか?
+    answer: "保護されたメールで添付ファイルが保護されている場合、Outlook クライアントでドキュメントを直接プレビューする機能を使用できます。 Outlook では、Office ドキュメント (docx、xlsx、pptx、doc、xls、ppt) のプレビューがサポートされています。 Outlook on the web では、Office ドキュメント (docx、xlsx、pptx) と PDF のプレビューがサポートされています。  \n"
+  - question: >
+      保護されたメールの失効は、どのメール クライアントでサポートされていますか?
+    answer: >
+      Outlook on the web では、保護されたメールの失効がサポートされています。  詳細については、「[送信した暗号化されたメッセージを取り消す方法](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent)」を参照してください。
+  - question: >
+      OME ポータルは、保護されたメールの暗号化された添付ファイルのプレビューをサポートしていますか?
+    answer: "OME ポータルは、暗号化されたメールに追加された暗号化された添付ファイル コピーのプレビューをサポートします。 サポート ファイルの種類には、Word、Excel、Powerpoint、PDF ファイルが含まれます。  \n"
+  - question: >
+      ポリシーを設定してメッセージを自動的に暗号化することはできますか?
+    answer: "はい。 Exchange Online でメール フロー ルールを使用して、特定の条件に基づいてメッセージを自動的に暗号化します。 たとえば、受信者 ID、受信者ドメイン、またはメッセージの本文や件名の内容に基づくポリシーを作成できます。 「[Office 365 でメール メッセージを暗号化するためにメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。\n  \n"
+  - question: >
+      受信メールと送信メールの暗号化を自動的に削除することはできますか?
+    answer: >
+      管理者は、メール フロー ルールを設定して送信メールの暗号化を削除できます。 受信メールの暗号化を削除するルールは、組織内から送信されるメールに対してのみ設定できます。
+  - question: >
+      Microsoft 365 コンプライアンス センターからデータ損失防止 (DLP) でポリシーを設定して、メッセージを自動的に暗号化することはできますか?
+    answer: >
+      はい。 Exchange Online で、または Microsoft 365 コンプライアンス センターで DLP を使用して、メール フロー ルールを設定できます。
+  - question: >
+      暗号化されたメッセージを企業ブランドでカスタマイズすることはできますか?
+    answer: "はい。 メール メッセージと OME ポータルのカスタマイズの詳細については、「暗号化されたメッセージに組織のブランドを追加する」を参照してください。 「[暗号化されたメッセージに組織のブランドを追加する](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。\n  \n"
+  - question: >
+      暗号化されたメールのためのレポート機能や分析情報はありますか?
+    answer: "セキュリティ/コンプライアンス センターに暗号化レポートがあります。 「[セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する](../security/office-365-security/view-email-security-reports.md)」を参照してください。\n  \n"
+  - question: >
+      電子情報開示などのコンプライアンス機能でメッセージの暗号化を使用することはできますか?
+    answer: >
+      はい、OME によって保護されたほとんどのメッセージが検出可能です。 Microsoft 365 の別の組織から受信したメールが、メール フロー ルールによってカスタム ブランドが適用され、OME によって保護されている場合、このメールは電子情報開示サービスによって検出不能です。 つまり、メールがユーザーのメールボックスからアクセスできず、OME ポータルへのリンクのみによって表示できる場合、メールは検索可能ではありません。 詳細については、「[暗号化されたアイテムをサポートする電子情報開示アクティビティ](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items)」を参照してください。
+  - question: >
+      メールから暗号化を削除することはできますか?
+    answer: >
+      管理者は、メール フロー ルールを設定して暗号化を削除できます。 別の組織によって適用されたメールからメール フロー ルールを使用して暗号化を削除できない。
+  - question: >
+      共有メールボックスとして送信し、メールを暗号化することはできますか?
+    answer: >
+      暗号化メール フロー ルールに一致するメール メッセージを誰かが送信すると、メッセージは送信される前に暗号化されます。
+  - question: >
+      共有メールボックスに送信された暗号化されたメッセージを開くことはできますか?
+    answer: >
+      はい。 サポートされている Outlook クライアントにログインすると、共有メールボックスの暗号化されたメッセージを開くことができます。
 
-          1. [リモート PowerShell.asbx) で Exchange Online に接続します](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150)。
 
-          2. Automapping パラメーターを指定して Add-MailboxPermission コマンドレットを実行します。 この例では、Ayla にサポート メールボックスに対するフル アクセスのアクセス許可を付与します。
+      - ユーザーは、共有メールボックスが配布グループの一部として保護されたメールを受信した場合、共有メールボックスの保護されたメールを開くことができます。
 
-             ```powershell
-             Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
-             ```
-      - question: |
-          暗号化されたメッセージを開くときに代理アクセスはサポートされていますか? 代理人が別のユーザーのメールボックスに対するフル アクセスを持っている場合は、どうなりますか?
-        answer: |
-          暗号化されたメッセージの委任アクセスは、Outlook on the web、Outlook for Mac、Outlook for iOS、Outlook for Android でサポートされています。  Outlook for Windows では、代理アクセスはサポートされていません。
-      - question: |
-          OME ポータルでメールにアクセスできる期間はどのくらいですか?
-        answer: |
-          送信者の組織がアクティブで、メールが有効期限切れになるように構成されていない限り、OME ポータルにログインしてメールを取得できます。
-      - question: |
-          ワンタイム パス コードを要求した後に受信しない場合、どうすればよいですか?
-        answer: |
-          まずは、メール クライアントの迷惑メール フォルダーまたはスパム フォルダーを確認します。 組織の DKIM および DMARC 設定により、これらのメールがスパムとしてフィルター処理される可能性があります。
 
-          次に、セキュリティとコンプライアンス センターで検疫を確認します。 多くの場合、ワンタイム パス コードを含むメッセージは検疫されます。組織が初めて受信するメッセージの場合は特にそうです。
+      - ユーザーは、android 用の Windows Outlook、Outlook for Mac、Outlook for Mac、Outlook、iOS、および Outlook に対して Outlook を使用するときに、電子メールからの保護を継承する添付ファイルを表示Outlook on the web。
+
+
+      次の表に、共有メールボックスがサポートされるクライアントの一覧を示します。
+
+
+      | プラットフォーム | メールを読む | メールの添付ファイルを表示する |
+
+      |----------|-----------|------------------------|
+
+      | Outlook on the web | はい | はい                |
+
+      | Outlook for Windows| はい | はい                |
+
+      | Outlook for Mac    | はい | はい                |
+
+      | Outlook for Android| はい | はい                |
+
+      | Outlook for iOS    | はい | はい                 |
+
+
+      > [!NOTE]
+
+      > Android と iOS は、モバイル アプリOffice使用して暗号化された添付ファイルを表示し、モバイルで直接表示Outlookします。
+
+
+      現在、2 つの既知の制限があります。
+
+
+      - モバイル デバイスで受信するメールの添付ファイルを Outlook モバイルを使用して開くことはできません。
+
+
+      - Win32 Outlookでは、電子メールが有効なセキュリティ グループを介して共有メールボックスに割り当てられたユーザーに対して、Web ブラウザーを使用して暗号化されたメールを表示する通知メールが表示されます。  Outlook Win32 で暗号化されたメールを直接表示するには、Outlook と Azure Information Protection の統合ラベル付けクライアントで、フル アクセス許可と自動マッピングが有効になっている共有メールボックスにユーザーを直接割り当てる必要があります。 自動マッピングは、Exchange Online に対して既定で有効になっています。
+
+
+      **ユーザーを共有メールボックスにアサインするには、次の操作を実行します**
+
+
+      1. [リモート PowerShell.asbx) で Exchange Online に接続します](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150)。
+
+
+      2. Automapping パラメーターを指定して Add-MailboxPermission コマンドレットを実行します。 この例では、Ayla にサポート メールボックスに対するフル アクセスのアクセス許可を付与します。
+
+         ```powershell
+         Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
+         ```
+  - question: >
+      暗号化されたメッセージを開くときに代理アクセスはサポートされていますか? 代理人が別のユーザーのメールボックスに対するフル アクセスを持っている場合は、どうなりますか?
+    answer: >
+      暗号化されたメッセージの委任アクセスは、Outlook on the web、Outlook for Mac、Outlook for iOS、Outlook for Android でサポートされています。  Outlook for Windows では、代理アクセスはサポートされていません。
+  - question: >
+      OME ポータルでメールにアクセスできる期間はどのくらいですか?
+    answer: >
+      送信者の組織がアクティブで、メールが有効期限切れになるように構成されていない限り、OME ポータルにログインしてメールを取得できます。
+  - question: >
+      ワンタイム パス コードを要求した後に受信しない場合、どうすればよいですか?
+    answer: >-
+      まずは、メール クライアントの迷惑メール フォルダーまたはスパム フォルダーを確認します。 組織の DKIM および DMARC 設定により、これらのメールがスパムとしてフィルター処理される可能性があります。
+
+
+      次に、セキュリティとコンプライアンス センターで検疫を確認します。 多くの場合、ワンタイム パス コードを含むメッセージは検疫されます。組織が初めて受信するメッセージの場合は特にそうです。

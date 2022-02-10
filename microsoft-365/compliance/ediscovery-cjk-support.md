@@ -16,18 +16,18 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 2 Advanced eDiscovery文字セットMicrosoft 365使用する中国語、日本語、韓国語 (CJK) 言語をサポートする方法について学習します。
-ms.openlocfilehash: 8a2ed33c75fabfa92f8ddd8f6fc8a704a2e8a15f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4c1871eb49754ba93d762989e3cff9c53950d2c6
+ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942178"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62487325"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>CJK 言語サポートのAdvanced eDiscovery
 
 Advanced eDiscoveryでは、レビュー セットで次の高度なシナリオに対応する 2 バイト文字セット言語 (簡体字中国語、繁体字中国語、日本語、韓国語を総称して *CJK* 言語と呼ばれる) をサポートしています。
 
-- レビュー セット [のデータをクエリする場合](review-set-search.md)。
+- レビュー セット [内のデータをクエリする場合](review-set-search.md)。
 
 - レビュー セット [内のドキュメントにタグを付けするときに使用します](tagging-documents.md)。
 
@@ -37,9 +37,9 @@ Advanced eDiscoveryでは、レビュー セットで次の高度なシナリオ
 
 **CJK 文字を含むアイテムを収集する検索を作成する方法**
 
-CJK 文字は、キーワード[](building-search-queries.md#keyword-searches)検索、キーワード[](keyword-queries-and-search-conditions.md)クエリ、および検索条件に Advanced eDiscovery使用できます。 コア電子情報開示とコンテンツ検索でコンテンツを検索する場合は、CJK 文字の検索もサポートされています。
+CJK 文字は、キーワード検索[、](building-search-queries.md#keyword-searches)キーワード クエリ、[](keyword-queries-and-search-conditions.md)および検索条件に使用して、キーワード検索でコンテンツを検索Advanced eDiscovery。 コア電子情報開示とコンテンツ検索でコンテンツを検索する場合は、CJK 文字の検索もサポートされています。
 
-ブール演算子 AND  [](keyword-queries-and-search-conditions.md#search-operators) **、OR、NOT、NEAR** など、すべての検索演算子と検索条件に対して CJK サポートを **提供します**。 [](keyword-queries-and-search-conditions.md#search-conditions)
+ブール演算子 AND、**OR、NOT**、NEAR など [](keyword-queries-and-search-conditions.md#search-conditions)、すべての検索演算子と検索条件に対して CJK **サポート** を提供 **します**。[](keyword-queries-and-search-conditions.md#search-operators)
 
 コンテンツの場所またはアイテムに CJK 文字が含まれているが、検索で結果が返されない場合は、クエリ言語の国/地域アイコンをクリックします。 ![コンテンツ検索で言語と国/地域のアイコンを照会します。](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) をクリックし、検索に対応する言語と国のカルチャ コードの値を選択します。 デフォルトの言語/地域はニュートラルです。
 
@@ -49,7 +49,7 @@ CJK 文字は、キーワード[](building-search-queries.md#keyword-searches)�
 
 - レビュー セット[内のデータをクエリ](review-set-search.md)するときに、Advanced eDiscovery言語を検索できます。
 
-- データを [収集する検索を作成する場合](create-search-to-collect-data.md)は、ターゲットとする言語ごとに個別の検索を作成します。 たとえば、中国語と韓国語の両方を含むドキュメントを検索する場合は、最初のクエリで [中国語] を選択し、2 番目のクエリに [韓国語] を選択します。
+- データを [収集する検索を作成する場合](create-draft-collection.md)は、ターゲットとする言語ごとに個別のコレクションを作成します。 たとえば、中国語と韓国語の両方を含むドキュメントを検索する場合は、最初のコレクションに中国語を選択し、2 番目のコレクションに韓国語を選択します。
 
 **レビュー セット内のクエリの言語を選択するクエリ言語と国/地域のアイコンが表示されます。レビュー セット検索でクエリ言語を指定する方法**
 
@@ -59,7 +59,7 @@ CJK 文字は、キーワード[](building-search-queries.md#keyword-searches)�
 
 いいえ、ファイル メタデータに検出された言語は表示されません。
 
-**レビュー セット内のドキュメント言語でフィルター処理できますか**。
+**レビュー セット内のドキュメント言語でフィルター処理できますか**?
 
 いいえ、レビュー セット内のドキュメント言語でフィルター処理、並べ替え、または検索を行う方法はありません。
 
@@ -75,7 +75,7 @@ CJK 文字は、キーワード[](building-search-queries.md#keyword-searches)�
 
 - OCR はイメージ ファイルからの CJK 文字をサポートしません
 
-- 注釈ビューの電子メール ファイル (*.eml や[](view-documents-in-review-set.md#annotate-view)*.msg など) は、CJK 言語ではサポートされていません。
+- 注釈ビューの電子メール ファイル (*.eml や *.msg [](view-documents-in-review-set.md#annotate-view) など) は、CJK 言語ではサポートされていません。
 
 - テキスト ビューでの検索ヒット [の](view-documents-in-review-set.md#text-view) 強調表示は、CJK 言語ではサポートされていません。
 

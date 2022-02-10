@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '使用状況分析が API に接続する方法と、さまざまなサービスの使用状況の毎月の傾向Microsoft 365します。  '
-ms.openlocfilehash: 986a7c7b7f07fca9275f4d7d2d4171ae464158c7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 013fdd75063ad8ad2489ebe43c9091f05f94c14c
+ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191117"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62487277"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 
@@ -35,7 +35,7 @@ ms.locfileid: "60191117"
 Microsoft 365分析は、多次元データ モデルを公開する API に接続します。 使用状況分析がデータMicrosoft 365に使用する API は、一般に使用できるさまざまな API Graphです。 使用状況分析 API Microsoft 365自体の関数は、一般に使用できません。
   
 > [!NOTE]
-> 詳細については[、「Microsoft Microsoft 365での使用状況レポートの操作」を参照Graph。](/graph/api/resources/report) 
+> 詳細については、「Microsoft Microsoft 365での使用状況レポートの操作[」を参照Graph](/graph/api/resources/report)。 
   
 この API は、さまざまなサービスの使用状況の毎月の傾向に関するMicrosoft 365します。 API によって返される厳密なデータについては、次のセクションの表を参照してください。
   
@@ -68,12 +68,12 @@ Microsoft 365分析は、多次元データ モデルを公開する API に接�
 |UPN  <br/> |ユーザー プリンシパル名のことであり、他の外部データ ソースと結合できるよう、ユーザーを一意に識別します。  <br/> |
 |DisplayName  <br/> |ユーザーの表示名。  <br/> |
 |IDType  <br/> |ID の種類は、ユーザーが Yammer ID を使用して接続する Yammer ユーザーの場合は 1 に、Yammer に接続する場合は Microsoft 365 ID を使用して接続する場合は 0 に設定されます。  <br/> 値は 1 で、このユーザーが自分の id ではなく、Yammer ID Yammerに接続Microsoft 365します。  <br/> |
-|HasLicenseEXO  <br/> |ユーザーにライセンスが割り当てられており、Exchange を使用できる場合は、true に設定します。  <br/> |
-|HasLicenseODB  <br/> |ユーザーにライセンスが割り当てられており、OneDrive for Business を使用できる場合は、true に設定します。  <br/> |
-|HasLicenseSPO  <br/> |ユーザーにライセンスが割り当てられており、SharePoint Online を使用できる場合は、true に設定します。  <br/> |
-|HasLicenseYAM  <br/> |ユーザーにライセンスが割り当てられており、Yammer を使用できる場合は、true に設定します。  <br/> |
-|HasLicenseSFB  <br/> |ユーザーにライセンスが割り当てられており、Skype For Business を使用できる場合は、true に設定します。  <br/> |
-|HasLicenseTeams  <br/> |ユーザーにライセンスが割り当てられている場合は true に設定し、ユーザーがライセンスを使用Microsoft Teams。  <br/> |
+|HasLicenseEXO  <br/> |ユーザーがライセンスを割り当て、その月の最終日にExchangeを有効にしている場合は true に設定します。  <br/> |
+|HasLicenseODB  <br/> |ユーザーがライセンスを割り当て、その月の最終日にOneDrive for Businessを有効にしている場合は true に設定します。  <br/> |
+|HasLicenseSPO  <br/> |ユーザーがライセンスを割り当て、月の最終日に SharePointオンラインを使用できる場合は true に設定します。  <br/> |
+|HasLicenseYAM  <br/> |ユーザーがライセンスを割り当て、その月の最終日にYammerを有効にしている場合は true に設定します。  <br/> |
+|HasLicenseSFB  <br/> |ユーザーがライセンスを割り当て、月の最終日に Skype For Business を使用できる場合は true に設定します。  <br/> |
+|HasLicenseTeams  <br/> |ユーザーにライセンスが割り当てられている場合は true に設定し、Microsoft Teams日にユーザーを使用できます。  <br/> |
 |Company  <br/> |このユーザーの Azure Active Directory で表されている会社データです。  <br/> |
 |Department  <br/> |このユーザーの Azure Active Directory で表されている部署データです。  <br/> |
 |LocationCity  <br/> |このユーザーの Azure Active Directory で表されている都市データです。  <br/> |
