@@ -22,12 +22,12 @@ ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: '概要: 増大する脅威プロファイルを抱え、急速に変化する組織向けの計画および実装のガイダンスです。'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 290da11f8fc93d92e1d86a8067142e99d5e25c28
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 03816f13bb22eeab29b8799f1e767b86a0347115
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210463"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524143"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス
 
@@ -52,20 +52,6 @@ ms.locfileid: "60210463"
 |**選挙運動のための Microsoft Security ガイダンス** <br> [![ミニ ポスター セット用のサムネイル。](../../media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx)|このガイダンスでは、選挙運動を行う団体を例として使用しています。このガイダンスは、任意の環境を設計するための開始点としてご利用ください。|
 |**非営利組織のための Microsoft Security ガイダンス** <br> [![ダウンロード可能なファイル用のサムネイル画像。](../../media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx)|このガイドは、非営利組織用に少し改定されています。たとえば、Office 365 Nonprofit のプランについて言及しています。技術的なガイダンスは選挙運動のソリューション ガイドと同じです。|
 |
-
-## <a name="test-lab-guides"></a>テスト ラボ ガイド
-
-このソリューションの開発/テスト環境を作成するには、次のテスト ラボ ガイドを使用します。
-
-- [選挙運動の開発/テスト環境用にグループとユーザーを構成する](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
-
-  Office 365 および EMS の試用版サブスクリプションを作成し、代表的な選挙運動のためのグループとユーザーを作成します。
-
-- [選挙運動用の開発/テスト環境でチーム サイトを作成する](create-team-sites-in-a-political-campaign-dev-test-environment.md)
-
-  SharePoint Online の 4 つのチーム サイトを内部、プライベート、機密、および非常に機密性の高い社外秘のセキュリティ レベルで作成します。
-
-デモのための追加のセキュリティ機能や概念実証については、[Office 365 テスト ラボ ガイド](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)に関する記事をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 

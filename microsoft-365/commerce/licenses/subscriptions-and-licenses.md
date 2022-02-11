@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 受け取るアプリケーションとサービスは、購入Microsoft 365製品によって異Microsoft 365 Apps for business。
 ms.date: 07/01/2020
-ms.openlocfilehash: 29a56ecfc1cb2f3cbe3afebec552fff29905675b
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: e380ac61033435a86118f7178da9e014d13ad436
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756566"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524047"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>ビジネス向けサブスクリプションとライセンスMicrosoft 365理解する
 
@@ -43,7 +43,7 @@ ms.locfileid: "60756566"
 
 :::row:::
    :::column span="":::
-        - Microsoft 365 Apps for business - Microsoft 365 Apps for enterprise - Microsoft 365 Business Standard - Microsoft 365 Business Premium - Microsoft 365 A3 - Microsoft 365 A5
+        - Microsoft 365 Apps for business - Microsoft 365 Apps for enterprise - Microsoft 365 Business Standard - Microsoft 365 Business Premium -Microsoft 365 A3 - Microsoft 365 A5
    :::column-end:::
    :::column span="":::
         - Microsoft 365 E3 - Microsoft 365 E5 - Office 365 A1 Plus - Office 365 A3 - Office 365 A5 - Office 365 E3 - Office 365 E5
@@ -56,10 +56,10 @@ ms.locfileid: "60756566"
   
 |**サブスクリプションにこのサービスがある場合**|**自動的に行われます**|
 |:-----|:-----|
-|Exchange Online  <br/> |そのユーザーのメールボックスが作成されます。 <br/> このタスクを完了する SLA の詳細については、「[セットアップ..」を参照してください。のメッセージをMicrosoft 365 管理センター。](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
+|Exchange Online  <br/> |そのユーザーのメールボックスが作成されます。 <br/> このタスクを完了する SLA の詳細については、「[セットアップ..」を参照してください。メッセージをMicrosoft 365 管理センター](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
 |SharePoint Online  <br/> |既定の SharePoint Online チーム サイトの編集権限がそのユーザーに割り当てられます。  <br/> |
 |Skype for Business Online  <br/> |ユーザーは、ライセンスに関連付けられている機能にアクセスできます。  <br/> |
-|エンタープライズ向け Microsoft 365 アプリ  <br/> |ユーザーは、最大 5 Officeの Mac または PC、5 つのタブレット、および 5 つのスマートフォンでアプリをダウンロードできます。  <br/> |
+|Microsoft 365 Apps for enterpriseとMicrosoft 365 Apps for business  <br/> |ユーザーは、最大 5 Officeの Mac または PC、5 つのタブレット、および 5 つのスマートフォンでアプリをダウンロードできます。  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>ユーザー以外のメールボックスのライセンスについて
 
@@ -75,9 +75,9 @@ ms.locfileid: "60756566"
   
 |**管理者ロール**|**ライセンスを割り当てる**|**ライセンスの割り当てを解除する**|**その他のライセンスを購入する**|**アカウントの削除**|
 |:-----|:-----|:-----|:-----|:-----|
-|課金管理者  <br/> |いいえ  <br/> |いいえ  <br/> |はい  <br/> |いいえ  <br/> |
+|課金管理者  <br/> |いいえ  <br/> |不要  <br/> |はい  <br/> |不要  <br/> |
 |グローバル管理者  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |
-|ライセンス管理者 <br/> |はい <br/>|はい <br/> |いいえ <br/> |いいえ <br/> |
+|ライセンス管理者 <br/> |はい <br/>|はい <br/> |いいえ <br/> |不要 <br/> |
 |サービス サポート管理者  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |
 |ユーザー管理者  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |はい  <br/> |
 

@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9680c9c45441bc654103c11ea28c13f85859ee43
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: dee9c4a51175f9fbeac8b6d21f29490081258ba0
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355288"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524239"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>不審な受信トレイ転送ルールのアラート の評価
 
@@ -53,7 +53,7 @@ Microsoft Defender for Office 365および Microsoft Defender for Cloud Apps の
 
 受信トレイ ルールを構成して、定義済みの条件に基づいて電子メール メッセージを自動的に管理します。 たとえば、受信トレイ ルールを作成して、すべてのメッセージをマネージャーから別のフォルダーに移動したり、受信したメッセージを別のメール アドレスに転送することができます。
 
-### <a name="suspicious-inbox-forwarding-rules"></a>不審な受信トレイ転送ルール
+### <a name="suspicious-inbox-forwarding-rules"></a>疑わしい受信トレイ転送ルール
 
 ユーザーのメールボックスにアクセスした後、攻撃者はしばしば受信トレイ ルールを作成し、機密データを外部の電子メール アドレスに引き出し、悪意のある目的で使用することができます。 
 
@@ -130,6 +130,7 @@ let user_id = ""; // enter here the user id
 CloudAppEvents
 | where Timestamp between (start_date .. end_date)
 | where AccountObjectId == user_id
+| where Application == @"Microsoft Exchange Online"
 | where ActionType in ("Set-Mailbox", "New-InboxRule", "Set-InboxRule") //set new inbox rule related operations
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
 ```

@@ -1,8 +1,8 @@
 ---
 title: 手順 4. エンタープライズ テナントのMicrosoft 365移行
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: テナント用Windowsデバイス、Office アプリ、Office サーバーを移行Microsoft 365します。
-ms.openlocfilehash: 86f244ba8d28c242b59296a4de8b63b4a07b50ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1892ae3da900f1c940866a2b2a3c70c1d6cb5db3
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176190"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524251"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>手順 4. エンタープライズ テナントのMicrosoft 365移行
 
@@ -29,7 +29,7 @@ ms.locfileid: "60176190"
 
 エンタープライズ統合製品スイートMicrosoft 365のビジネス価値を最大化するには、次のリリースを移行するための戦略の計画と実装を開始します。
 
-| From | へ |
+| 送信元 | 宛先 |
 |:-------|:-----|
 | Windows 7 と Windows 8.1 | Windows 10 Enterprise |
 | Officeのデバイスにインストールされているクライアント製品を管理する | Microsoft 365 Apps for enterprise |
@@ -40,11 +40,11 @@ ms.locfileid: "60176190"
 
 エンタープライズ Microsoft 365の各ライセンスには、エンタープライズ ライセンスのWindows 10 Enterprise。 7 または 7 を実行するWindowsを移行Windows 8.1、インプレイス アップグレードを実行できます。 *2020* 年 1 月 14 Windows 7 日にサポートが終了しました。 
 
-一時アップグレードを超えてWindows 10 Enterpriseインストールするその他の方法については[、「Windows 10」を参照してください](/windows/deployment/windows-10-deployment-scenarios)。 自分で[Windows 10 の展開を計画](/windows/deployment/planning/)することもできます。
+インプレイス アップグレードを超えてWindows 10 Enterpriseするその他の方法については、「展開シナリオWindows 10[参照してください](/windows/deployment/windows-10-deployment-scenarios)。 自分で[Windows 10 の展開を計画](/windows/deployment/planning/)することもできます。
 
 ## <a name="migrating-to-microsoft-365-apps-for-enterprise"></a>サーバーへのMicrosoft 365 Apps for enterprise
 
-Microsoft 365には、microsoft クラウドからインストールおよび更新される Office クライアント製品 (Word、PowerPoint、Excel、および Outlook) のバージョンである Microsoft 365 Apps for enterprise が含まれます。 詳細については、「概要[」 を参照Microsoft 365 Apps for enterprise。](/deployoffice/about-microsoft-365-apps)
+Microsoft 365には、microsoft クラウドからインストールおよび更新される Office クライアント製品 (Word、PowerPoint、Excel、および Outlook) のバージョンである Microsoft 365 Apps for enterprise が含まれます。 詳細については、「概要[」を参照Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps)。
 
 2019 以前のバージョンのコンピューターを最新Officeではなく、次の手順を実行します。
 
@@ -96,7 +96,7 @@ Microsoft 365には、web ブラウザーや Outlook クライアントなど、
 - メールボックスの移行の状態に応じてExchange移行を組織にExchange Online展開します。
 - オンプレミスのサイト移行の状態に応じて、SharePointに移行をSharePoint移行Microsoft 365展開します。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [![手順 5.デバイスとアプリの管理を展開します。](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
 

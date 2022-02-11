@@ -1,8 +1,8 @@
 ---
 title: 手順 5.  エンタープライズ テナント用のデバイスMicrosoft 365管理
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: デバイスとアプリの管理に適切なオプションを展開し、Microsoft 365します。
-ms.openlocfilehash: 03126b373efcd3badb37590548c77889cb98391f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 09fd96977fbde0f546049d24b1705d27b4c92080
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174161"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524167"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>手順 5.  エンタープライズ テナント用のデバイスMicrosoft 365管理
 
@@ -40,7 +40,7 @@ E5 または Microsoft 365 E3がある場合は、Intune を使用する必要�
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-MDM または[MAM Microsoft Intune](/mem/intune/fundamentals/planning-guide)を使用して組織へのアクセスを管理するには、次の情報を使用します。 MDM とは、ユーザーが Intune でデバイスを "登録" する場合です。 デバイスが登録された後、デバイスは管理対象デバイスであり、組織のポリシー、ルール、および設定を受け取る可能性があります。 たとえば、特定のアプリのインストール、パスワード ポリシーの作成、VPN 接続のインストールなどです。
+MDM または [MAM Microsoft Intune](/mem/intune/fundamentals/planning-guide)を使用して組織へのアクセスを管理するには、次の情報を使用します。 MDM とは、ユーザーが Intune でデバイスを "登録" する場合です。 デバイスが登録された後、デバイスは管理対象デバイスであり、組織のポリシー、ルール、および設定を受け取る可能性があります。 たとえば、特定のアプリのインストール、パスワード ポリシーの作成、VPN 接続のインストールなどです。
 
 自分の個人用デバイスを持つユーザーは、自分のデバイスを登録したり、Intune と組織のポリシーで管理したりしたくない場合があります。 ただし、組織のリソースとデータを保護する必要があります。 このシナリオでは、MAM を使用してアプリを保護できます。 たとえば、ユーザーがデバイス上のユーザーにアクセスするときに PIN を入力する必要がある MAM SharePoint使用できます。
 

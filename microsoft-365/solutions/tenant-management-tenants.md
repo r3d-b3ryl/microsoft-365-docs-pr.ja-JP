@@ -1,8 +1,8 @@
 ---
 title: 手順 1. エンタープライズ Microsoft 365のユーザー 情報
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,25 +16,25 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 複数地域および移動場所のオプションMicrosoft 365単一または複数のテナントを展開および管理します。
-ms.openlocfilehash: 149dd4274e43d085f2c454774c4499a12561b766
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 305d7683413d5682c0dddda418e87de0a0a682b7
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206435"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524119"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>手順 1. エンタープライズ Microsoft 365のユーザー 情報
 
-テナントの最初の決定の 1 つは、必要な数です。 各Microsoft 365は、個別、一意、および他のすべてのテナントMicrosoft 365します。 対応する Azure ADは、他のすべてのテナントとは異なる、一意Microsoft 365です。
+テナントの最初の決定の 1 つは、必要な数です。 各Microsoft 365は、個別、一意、および他のすべてのテナントMicrosoft 365します。 対応するAzure ADテナントは、他のすべてのテナントと区別され、一意であり、Microsoft 365されます。
 
 ## <a name="single-tenant"></a>シングル テナント
-1 つのテナントを使用すると、組織による組織のアプリケーションの使用の多くの側面がMicrosoft 365。 1 つのテナントとは、単一の Azure ADアカウント、グループ、およびポリシーのセットを持つテナントを意味します。 組織全体のリソースのアクセス許可と共有は、この一元的な ID プロバイダーを通じて行えます。
+1 つのテナントを使用すると、組織による組織のアプリケーションの使用の多くの側面がMicrosoft 365。 1 つのテナントとは、1 Azure AD、グループ、およびポリシーの 1 つのセットを持つ 1 つのテナントを意味します。 組織全体のリソースのアクセス許可と共有は、この一元的な ID プロバイダーを通じて行えます。
 
 1 つのテナントは、ユーザーに最も機能が豊富で簡略化されたコラボレーションと生産性のエクスペリエンスを提供します。
 
-次に、テナントの既定の場所と Azure ADテナントをMicrosoft 365します。
+次に、テナントの既定の場所とAzure ADを示Microsoft 365します。
 
-![Azure Microsoft 365テナントを持つ単一のADテナント。](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![1 つのMicrosoft 365テナントを持Azure ADテナント。](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 ## <a name="multiple-tenants"></a>複数のテナント
 
@@ -47,9 +47,9 @@ ms.locfileid: "60206435"
 - 複合企業組織のブランド化の明確な分離
 - プレプロダクション、テスト、またはサンドボックス テナント
 
-同じ既定のデータセンター geo に 2 つのテナント (テナント A とテナント B) がある組織の例を次に示します。 各テナントは、個別の Azure ADテナントとして使用されます。
+同じ既定のデータセンター geo に 2 つのテナント (テナント A とテナント B) がある組織の例を次に示します。 各テナントを個別のテナントAzure ADします。
 
-![独自Microsoft 365 Azure テナントを持つ複数のADテナント。](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
+![独自Microsoft 365テナントを持つ複数のAzure ADテナント。](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
 複数のテナントがある場合は、それらを管理し、ユーザーにサービスを提供する際に、制限と追加の考慮事項があります。
 
@@ -81,15 +81,15 @@ ms.locfileid: "60206435"
 
 合併、買収、売却、その他のシナリオには、既存の Microsoft 365 テナントを新しいテナントに移行するためのいくつかのアーキテクチャアプローチがあります。 
 
-詳細なガイダンスについては、「テナント[間Microsoft 365移行」を参照してください](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)。
+詳細なガイダンスについては、「Microsoft 365[テナント間の移行」を参照してください](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)。
 
 ## <a name="multi-geo-for-a-tenant"></a>テナントの複数地域
 
 Microsoft 365 Multi-Geo を使用すると、データ常駐要件を満たすために選択した他のデータセンターの地理的な場所にデータをプロビジョニングして保存し、同時に、最新の生産性エクスペリエンスのグローバルロールアウトをワーカーにロック解除できます。
 
-複数地域環境では、Microsoft 365 テナントは、Microsoft 365 サブスクリプションが最初に作成された既定または中央の場所と、1 つ以上のサテライトの場所で構成されます。 複数地域のテナントでは、地域の場所、グループ、およびユーザー情報に関する情報は、グローバル Azure ADテナントでADされます。 テナント情報は一元的にマスターされ、各地域の場所に同期されますので、会社の誰もが関与するコラボレーション エクスペリエンスが場所全体で共有されます。
+複数地域環境では、Microsoft 365 テナントは、Microsoft 365 サブスクリプションが最初に作成された既定または中央の場所と、1 つ以上のサテライトの場所で構成されます。 複数地域のテナントでは、地域の場所、グループ、およびユーザー情報に関する情報は、グローバル テナントAzure ADされます。 テナント情報は一元的にマスターされ、各地域の場所に同期されますので、会社の誰もが関与するコラボレーション エクスペリエンスが場所全体で共有されます。
 
-ヨーロッパに既定の場所を持ち、北アメリカのサテライトの場所を持つ組織の例を次に示します。 どちらの場所も、単一のテナントAD同じグローバル Azure Microsoft 365共有します。
+ヨーロッパに既定の場所を持ち、北アメリカのサテライトの場所を持つ組織の例を次に示します。 どちらの場所も、1 つのテナントAzure AD同じグローバル テナントMicrosoft 365共有します。
 
 ![複数地域のテナントのMicrosoft 365します。](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
@@ -105,7 +105,7 @@ Microsoft は、引き続き新しいデータセンター geos を開き、Micr
 
 ![データセンター geo 間でMicrosoft 365テナントを移動する例。](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
 
-詳細については、「コア データを新しいデータセンター geos[にMicrosoft 365する」を参照してください](../enterprise/moving-data-to-new-datacenter-geos.md)。
+詳細については、「コア データを[新しいデータセンター geos に移動Microsoft 365参照してください](../enterprise/moving-data-to-new-datacenter-geos.md)。
 
 ## <a name="products-and-licenses-for-a-tenant"></a>テナントの製品とライセンス
 
@@ -137,7 +137,7 @@ Microsoft は、引き続き新しいデータセンター geos を開き、Micr
 - データ センター geo に対応する既定Microsoft 365場所です。
 - 製品とライセンスのセット。
 - 一連のクラウド生産性アプリは、製品に固有の一部です。
-- グローバル管理者ADアカウントと初期管理者名を含む Azure DNS ドメインテナント。
+- グローバルAzure ADアカウントと初期管理者名を含むDNS ドメインテナント。
 
 このソリューションの追加の手順を進め、この図を作成します。
 
@@ -152,7 +152,7 @@ Microsoft は、引き続き新しいデータセンター geos を開き、Micr
 - データ常駐要件に複数地域を追加します。
 - テナント間のコラボレーションを設定します。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [![手順 2.アクセスのためにネットワーク用にテナントを最適化します。](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
 

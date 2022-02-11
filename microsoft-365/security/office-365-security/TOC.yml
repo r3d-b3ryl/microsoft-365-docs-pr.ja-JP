@@ -374,10 +374,6 @@
           href: virus-detection-in-spo.md
         - name: 迷惑メールとバルク メールの違い
           href: what-s-the-difference-between-junk-email-and-bulk-email.md
-        - name: 選挙運動の開発/テスト環境用にグループとユーザーを作成する
-          href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-        - name: 選挙運動用の開発/テスト環境でチーム サイトを作成する
-          href: create-team-sites-in-a-political-campaign-dev-test-environment.md
     - name: Microsoft 365 Defender ドキュメント
       items:
         - name: Microsoft 365 Defender

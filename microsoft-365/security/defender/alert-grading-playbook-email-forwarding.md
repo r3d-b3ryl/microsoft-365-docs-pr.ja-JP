@@ -7,20 +7,26 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-  - MOE150
+- MOE150
 ms.technology: m365d
+ms.openlocfilehash: fe4a5e97704cbf1d4851484397e7c4424c099d3c
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524191"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>疑わしいメール転送アクティビティのアラート の評価
 
@@ -238,7 +244,8 @@ CloudAppEvents
 このクエリを実行して、このユーザーから異常なログイン イベントが発生した場合に確認します。 たとえば、不明な AP、新しいアプリケーション、一般的でない国、複数の LogonFailed イベントなどです。
 
 ```kusto
-let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder IdentityLogonEvents
+let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder 
+IdentityLogonEvents
 | where AccountUpn == sender
 ```
 

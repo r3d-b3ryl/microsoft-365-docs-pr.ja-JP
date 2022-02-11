@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 102731beb6da535e91ad197379a08d4d0f7cddfe
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: e1bfb37ebf88ffd67a7fcfaddde46141583fb717
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355252"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524095"
 ---
 # <a name="alert-grading-for-suspicious-inbox-manipulation-rules"></a>不審な受信トレイ操作ルールのアラート の評価
 
@@ -143,6 +143,7 @@ let user_id = ""; // enter here the user id
 CloudAppEvents
 | where Timestamp between (start_date .. end_date)
 | where AccountObjectId == user_id
+| where Application == @"Microsoft Exchange Online"
 | where ActionType in ("Set-Mailbox", "New-InboxRule", "Set-InboxRule") //set new inbox rule related operations
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
 ```
@@ -196,5 +197,5 @@ CloudAppEvents
 
 - [アラート の評価の概要](alert-grading-playbooks.md)
 - [疑わしいメール転送アクティビティ](alert-grading-playbook-email-forwarding.md)
-- [不審な受信トレイ転送ルール](alert-grading-playbook-inbox-forwarding-rules.md)
+- [疑わしい受信トレイ転送ルール](alert-grading-playbook-inbox-forwarding-rules.md)
 - [アラートの調査](investigate-alerts.md)

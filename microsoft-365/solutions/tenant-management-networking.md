@@ -1,8 +1,8 @@
 ---
 title: 手順 2.  エンタープライズ テナント向けMicrosoft 365最適なネットワーク
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: テナントへのネットワーク アクセスを最適化Microsoft 365します。
-ms.openlocfilehash: 963ffb40bbcdcaa4607f594389f84e2cee00cbcc
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 2ee0f5cd784112909cbba465b94031ac2429963f
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327618"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524227"
 ---
-# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>手順 2.  エンタープライズ テナント向けMicrosoft 365最適なネットワーク
+# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>手順 2。 エンタープライズ テナント向けMicrosoft 365最適なネットワーク
 
 Microsoft 365には、Teams や Exchange Online、Microsoft Intune などのクラウド生産性アプリと、Microsoft Azure の多くの ID およびセキュリティ サービスが含まれます。 これらのクラウドベースのサービスはすべて、オンプレミス ネットワークまたはインターネット上の任意の場所にあるクライアント デバイスからの接続のセキュリティ、パフォーマンス、および信頼性に依存します。 
 
@@ -84,7 +84,7 @@ Microsoft 365には、Teams や Exchange Online、Microsoft Intune などのク�
 
 スプリッ トトンネリングを使用すると、VPN クライアントを構成して、特定の種類のトラフィックが VPN 接続を介して、組織ネットワークに送信されることを除外できます。
 
-Microsoft 365 クラウドリソースへのアクセスを最適化するには、VPN 接続を介して、**最適化** カテゴリの Microsoft 365 エンドポイントへのトラフィックを除外するようにスプリット トンネリング VPN クライアントを構成します。 詳細については、「ネットワーク エンドポイント カテゴリ[Office 365、](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)スプリット[](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling)トンネリング用のオプティマイズ カテゴリ エンドポイントの一覧」を参照してください。
+Microsoft 365 クラウドリソースへのアクセスを最適化するには、VPN 接続を介して、**最適化** カテゴリの Microsoft 365 エンドポイントへのトラフィックを除外するようにスプリット トンネリング VPN クライアントを構成します。 詳細については、「ネットワーク エンドポイント カテゴリ[Office 365、](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)スプリット トンネリング[](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling)用のオプティマイズ カテゴリ エンドポイントの一覧」を参照してください。
 
 クラウド アプリへのトラフィックの大部分が VPN 接続をバイパスするスプリット トンネリングMicrosoft 365トラフィック フローを次に示します。
 
@@ -115,25 +115,25 @@ Microsoft 365 クラウドリソースへのアクセスを最適化するには
 > [!IMPORTANT]
 > ネットワーク 分析情報、パフォーマンスに関する推奨事項、および評価は、Microsoft 365 管理現在プレビュー状態です。 この機能は、Microsoft 365プログラムに登録されているテナントでのみ使用できます。
 
-詳細については、「ネットワーク ネットワーク[Microsoft 365」をインサイト。](../enterprise/office-365-network-mac-perf-insights.md)
+詳細については、「ネットワーク ネットワーク Microsoft 365[」をインサイト](../enterprise/office-365-network-mac-perf-insights.md)。
 
 ## <a name="sharepoint-performance-with-the-office-365-cdn"></a>SharePointを使用してパフォーマンスをOffice 365 CDN
 
 クラウドベースのContent Delivery Network (CDN) を使用すると、読み込み時間を短縮し、帯域幅を節約し、応答性を向上できます。 このCDNを要求するブラウザーに近いグラフィック ファイルやビデオ ファイルなどの静的アセットをキャッシュすることでパフォーマンスが向上し、ダウンロードの高速化と待機時間の短縮に役立ちます。 Microsoft 365 E3 および E5 の SharePoint に含まれる組み込みの Office 365 Content Delivery Network (CDN) を使用して、静的アセットをホストして、SharePoint ページのパフォーマンスを向上させることができます。
 
-Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホストできる複数の CDN で構成されているため、静的資産をグローバルな高速ネットワークから提供することができます。 ホストするコンテンツの種類に応じて、Office 365 CDN、プライベートオリジン、または両方を追加できます。  
+Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホストできる複数の CDN で構成されているため、静的資産をグローバルな高速ネットワークから提供することができます。 ホストするコンテンツの種類に応じて、Office 365 CDN、プライベートオリジン、または両方を追加できます。 
 
 展開および構成すると、Office 365 CDNはパブリックおよびプライベートのオリジンからアセットをアップロードし、インターネット上にあるユーザーに高速にアクセスできます。
 
 ![Office 365 CDN用に展開されます。](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN用に展開されている場合")
 
-詳細については、「オンラインと一[緒にOffice 365 CDNをSharePointする」を参照してください](../enterprise/use-microsoft-365-cdn-with-spo.md)。
+詳細については、「Use [the Office 365 CDN オンライン」をSharePointしてください](../enterprise/use-microsoft-365-cdn-with-spo.md)。
 
 ## <a name="automated-endpoint-listing"></a>エンドポイントの自動一覧
 
 オンプレミスのクライアント、エッジ デバイス、およびクラウドベースのパケット分析サービスに信頼済み Microsoft 365 トラフィックの処理をスキップするには、Microsoft 365 サービスに対応する一連のエンドポイント (IP アドレス範囲と DNS 名) を使用して構成する必要があります。 これらのエンドポイントは、ファイアウォールや他のエッジ セキュリティ デバイス、クライアント コンピューターがプロキシをバイパスする PAC ファイル、ブランチ オフィスの SD-WAN デバイスで手動で構成できます。 ただし、エンドポイントは時間の間に変化し、これらの場所でエンドポイント リストを継続的に手動でメンテナンスする必要があります。
 
-クライアント PAC ファイルおよびネットワーク デバイス内の Microsoft 365 エンドポイントの一覧と変更管理を自動化するには、Office 365 IP アドレスと[URL REST ベースの Web](../enterprise/microsoft-365-ip-web-service.md)サービスを使用します。 このサービスを使用すると、ネットワーク トラフィックのMicrosoft 365識別と区別が容易になり、最新の変更を評価、構成、および最新の状態に変えやすくなります。
+クライアント PAC ファイルおよびネットワーク デバイス内の Microsoft 365 エンドポイントの一覧と変更管理を自動化するには、[Office 365 IP アドレスと URL REST ベースの Web サービスを使用します](../enterprise/microsoft-365-ip-web-service.md)。 このサービスを使用すると、ネットワーク トラフィックのMicrosoft 365識別と区別が容易になり、最新の変更を評価、構成、および最新の状態に変えやすくなります。
 
 PowerShell、Python、または他の言語を使用して、時間の間にエンドポイントに対する変更を決定し、PAC ファイルとエッジ ネットワーク デバイスを構成できます。
 
@@ -143,7 +143,7 @@ PowerShell、Python、または他の言語を使用して、時間の間にエ�
 2. 毎日定期的に実行して、エンドポイントの変更を確認するか、通知方法を使用します。
 3. 変更が検出された場合は、クライアント コンピューターの PAC ファイルを再生成して再配布し、ネットワーク デバイスに変更を加えます。
 
-詳細については、「IP[アドレスOffice 365 URL Web サービス」を参照してください](../enterprise/microsoft-365-ip-web-service.md)。
+詳細については、「IP [アドレスOffice 365 URL Web サービス」を参照してください](../enterprise/microsoft-365-ip-web-service.md)。
 
 ## <a name="results-of-step-2"></a>手順 2 の結果
 
@@ -175,7 +175,7 @@ PowerShell、Python、または他の言語を使用して、時間の間にエ�
 - アセットを管理するには、Office 365 CDN。
 - エンドポイントの変更については、VPN クライアントの分割トンネリング構成を更新します。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [![手順 3.ID を同期し、セキュリティで保護されたサインインを適用します。](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
 

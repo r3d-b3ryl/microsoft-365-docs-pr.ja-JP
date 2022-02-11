@@ -1,8 +1,8 @@
 ---
 title: エンタープライズ向けMicrosoft 365テナント管理
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ユーザーのテナントの計画、展開、および継続的なMicrosoft 365概要。
-ms.openlocfilehash: 915f71e6a8ab1f6f346940fccc0e15c5f8ce8d65
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7a9545800c3f5f08b8094290c4173b4368caff4d
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176165"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524215"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>エンタープライズ向けMicrosoft 365テナント管理
 
@@ -43,17 +43,17 @@ Microsoft 365 テナントの正しい構成により、その基盤が提供さ
 
 Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定の既定の場所にMicrosoft 365組織データのサービスの専用インスタンスです。 この場所は、組織のテナントを作成するときに指定されます。 各Microsoft 365は、個別、一意、および他のすべてのテナントMicrosoft 365します。 Microsoft から 1 つMicrosoft 365製品 (Microsoft 365 E3 や E5 など) を購入する際に、Microsoft 365 E3 テナントを作成し、それぞれのライセンスのセットを作成します。
 
-またMicrosoft 365テナントには Azure Active Directory (Azure AD) テナントも含まれます。これは、ユーザー アカウント、グループ、その他のオブジェクト用の Azure AD の専用インスタンスです。 各 Azure ADテナントは、個別で一意であり、他のすべての Azure テナントとADされます。 組織では、Azure サブスクリプションでセットアップできる複数の Azure AD テナントを使用できます。Microsoft 365 テナントは、テナントの作成時に作成された単一の Azure AD テナントのみを使用できます。
+また、Microsoft 365 テナントには Azure Active Directory (Azure AD) テナントも含まれます。これは、ユーザー アカウント、グループ、その他のオブジェクト用の Azure AD の専用インスタンスです。 各Azure ADは、個別、一意、および他のすべてのテナントAzure ADします。 組織には Azure サブスクリプションでセットアップできる複数の Azure AD テナントを含め、Microsoft 365 テナントは、テナントの作成時に作成された Azure AD テナントを 1 つのみ使用できます。
 
 次に例を示します：
 
-![Azure Microsoft 365テナントを使用してテナントAD例を示します。](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![テナントがMicrosoft 365テナントを使用Azure AD例です。](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 *テナント管理* は、テナントの計画、展開、および継続的なMicrosoft 365です。
 
 ## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>十分に設計され、運用されているテナントの属性
 
-テナントの正しい名前と場所以外にも、Microsoft Teams や Exchange Online などのクラウド生産性アプリのユーザー エクスペリエンスを効果的、安全、パフォーマンスの高いものにするための計画、展開、管理のための追加の要素があります。 &mdash; &mdash;
+&mdash;テナントの正しい名前と場所を超えて、Microsoft Teams や Exchange Online&mdash; など、クラウド生産性アプリを使用してユーザー エクスペリエンスを効果的、安全、パフォーマンスに優れるものにするための、計画、展開、および管理のための追加の要素があります。
 
 要素は次のとおりです。
 
@@ -65,7 +65,7 @@ Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定�
   - エンタープライズ ネットワークの場合、オンサイト ワーカー向けに Microsoft ネットワークへのネットワーク トラフィックを最適化しました。
   - VPN クライアントを使用しているリモート ワーカーのネットワーク トラフィックを最適化しました。
 - Active Directory ドメイン サービス (DS) アカウント、AD、その他のオブジェクトを同期しました。
-  - Azure ADテナント アカウントは、電子メール アドレスExchange Online DNS ドメインを持つメールボックスにマップされます。
+  - テナント Azure ADは、電子メール アドレスExchange Online DNS ドメインを持つメールボックスにマップされます。
   - ユーザー アカウントには、正しい購入済み製品から適切なライセンスが割り当てられている (Microsoft 365 E3 E5 など)。
 - 強力な ID とアクセス管理を構成しました。
   - パスワードレス認証または多要素認証 (MFA) によるセキュリティで保護されたユーザー サインインが必要です。
@@ -84,13 +84,13 @@ Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定�
 - 製品とライセンスは、Microsoft 365 E3 E5 用です。
 - Microsoft 365生産性アプリ。
 - Intune には、登録済みデバイスとデバイスポリシーとアプリケーション ポリシーがあります。
-- ユーザー アカウントAD (グループなどのディレクトリ オブジェクトは表示されません)、ドメイン、条件付きアクセス ポリシーが同期されている Azure テナント。
+- ユーザー Azure AD (グループや他のディレクトリ オブジェクトは表示されません)、ドメイン、条件付きアクセス ポリシーが同期されているテナント。
 
 ## <a name="tenant-capabilities-for-microsoft-365-for-enterprise"></a>エンタープライズ向けMicrosoft 365テナント機能
 
 次のセクションと表は、このソリューションの手順の主な機能とライセンスの一覧です。
 
-### <a name="tenant"></a>Tenant
+### <a name="tenant"></a>テナント
 
 |機能|説明|ライセンス|
 |---|---|---|
@@ -112,7 +112,7 @@ Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定�
 
 |機能|説明|ライセンス|
 |---|---|---|
-|オンプレミスの Active Directory ドメイン サービス (AD DS) を Azure ドメイン テナントADする|ユーザー アカウント、グループ、その他のオブジェクトのオンプレミス ID プロバイダーを活用します。|Microsoft 365 E3 または E5|
+|オンプレミスの Active Directory ドメイン サービス (AD DS) をテナントAzure ADする|ユーザー アカウント、グループ、その他のオブジェクトのオンプレミス ID プロバイダーを活用します。|Microsoft 365 E3 または E5|
 |セキュリティの既定値が適用されている MFA|サインインには、2 つ目の認証形式を要求することで、ID とデバイスを侵害から保護します。セキュリティの既定値では、すべてのユーザー アカウントに MFA が必要です。|Microsoft 365 E3 または E5|
 |条件付きアクセスが適用されている MFA|条件付きアクセス ポリシーを使用してサインインの属性に基づいて MFA を要求します。|Microsoft 365 E3 または E5|
 |リスクベースの条件付きアクセスが適用されている MFA|ユーザーが Microsoft Defender for Identity でサインインするリスクに基づいて MFA を要求します。|Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3|
@@ -150,4 +150,4 @@ Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定�
 
 各手順では、展開オプション、結果、および継続的なメンテナンス タスクについて説明します。
 
-架空の代表的な多国籍組織がテナントの要素を展開した方法を理解Microsoft 365 Contoso のケース スタディを[参照してください](../enterprise/contoso-case-study.md)。
+架空の代表的な多国籍組織がテナントの要素を展開した方法を理解するには、Contoso のケース スタディMicrosoft 365[参照してください](../enterprise/contoso-case-study.md)。
