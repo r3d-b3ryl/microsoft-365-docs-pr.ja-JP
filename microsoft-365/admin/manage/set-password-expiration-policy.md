@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで、管理者がビジネス、学校、または非営利団体のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: b46867048d4c7fa632150c67d4a90e44f2e3d152
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: f7730e4dcadf8bb8743cd288ba5d38d45ad739b0
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156018"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62523975"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "62156018"
 
 特定の時間が経過するとユーザーのパスワードが期限切れになるように設定する場合は、以下の手順に従います。
 
-1. Microsoft 365 管理センター で、<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**[セキュリティとプライバシー]** タブ</a>に移動します。
+1. Microsoft 365 管理センターで、**[設定]** > **[組織の設定]** に移動し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**[セキュリティとプライバシー]** タブ</a>を選択します。
 
     グローバル管理者でない場合は、[セキュリティとプライバシー] オプションは表示されません。
   

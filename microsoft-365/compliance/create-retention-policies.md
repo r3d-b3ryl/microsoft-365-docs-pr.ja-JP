@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 3732e254d5b9dad450fd16338acf7a28e07bd8d1
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 115dcce1e99583ab0c3345da683be0b826b24ff7
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321017"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524071"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -73,7 +73,7 @@ ms.locfileid: "62321017"
 
 ### <a name="retention-policy-for-teams-locations"></a>Teams の場所のアイテム保持ポリシー
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、[**ポリシー**] > [**保持**] の順に選択します。
+1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[情報ガバナンス]** > **[保持ポリシー]** を選択します。
 
 2. [**新しいアイテム保持ポリシー**] を選択して、**アイテム保持ポリシー** 構成の作成を開始し、新しいアイテム保持ポリシーに名前を付けます。
 
@@ -131,7 +131,7 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
 >
 > この機能を使用するには、ご利用の Yammer ネットワークがハイブリッド モードではなく、[ネイティブ モード](/yammer/configure-your-yammer-network/overview-native-mode)になっている必要があります。
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、[**ポリシー**] > [**保持**] の順に選択します。
+1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[情報ガバナンス]** > **[保持ポリシー]** を選択します。
 
 2. 新しいアイテム保持ポリシーを作成するには、[**新しいアイテム保持ポリシー**] を選択します。
 
@@ -184,7 +184,7 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
 - Microsoft 365 グループ
 - Skype for Business
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、[**ポリシー**] > [**保持**] の順に選択します。
+1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[情報ガバナンス]** > **[保持ポリシー]** を選択します。
 
 2. [**新しいアイテム保持ポリシー**] を選択して、**アイテム保持ポリシー** 構成の作成を開始し、新しいアイテム保持ポリシーに名前を付けます。
 
