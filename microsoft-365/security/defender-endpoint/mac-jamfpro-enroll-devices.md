@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bec8c6a2a329bff8e80c6822480ea03dd5db4898
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: ab3db2e2b64261ae00008aef448a214cd235bda9
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171079"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765554"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>MacOS デバイス上の Microsoft Defender for Endpoint を Jamf デバイスに登録Pro
 
@@ -48,11 +47,11 @@ JamF に登録するには、複数の方法があります。
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>登録方法 1: 登録の招待
 
-1. Jamf Proで、[登録の招待]**に移動します**。
+1. Jamf Proで、[登録の招待 **] に移動します**。
 
     ![構成設定のイメージ 1。](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
-2. [+ **新規] を選択します**。
+2. [ **+ 新規] を選択します**。
 
     ![ロゴのクローズアップ Description が自動的に生成されます。](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
@@ -78,7 +77,7 @@ JamF に登録するには、複数の方法があります。
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>登録方法 2: 事前登録
 
-1. Jamf Proで **、[Prestage 登録] に移動します**。
+1. Jamf Proで、[**Prestage 登録] に移動します**。
 
     ![構成設定のイメージ 9.](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 

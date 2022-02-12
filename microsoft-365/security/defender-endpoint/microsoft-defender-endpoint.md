@@ -11,12 +11,19 @@ author: mjcaparas
 ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: 47773d3fb7f94811a03c78f181b2552245f89f97
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767582"
 ---
-
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be5888379264f287fc3f7424030e7a47529129df
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 0ce77d9d63aecdd3150b9dc0f536abcdab2755e8
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171243"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767363"
 ---
 # <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Jamf を使用した macOS での Microsoft Defender for Endpoint のPro
 
@@ -38,7 +37,7 @@ ms.locfileid: "61171243"
 Jamf を使用して macOS に Microsoft Defender for Endpoint を展開するPro。
 
 > [!NOTE]
-> macOS Catalina (10.15.4) 以降のバージョンの macOS を使用している場合は [、「macOS Catalina](/microsoft-365/security/defender-endpoint/mac-sysext-policies)および macOS の新しいバージョンの新しい構成プロファイル」を参照してください。
+> macOS Catalina (10.15.4) 以降のバージョンの macOS を使用している場合は、「 [macOS Catalina および新](/microsoft-365/security/defender-endpoint/mac-sysext-policies)しいバージョンの macOS の新しい構成プロファイル」を参照してください。
 
 これは、複数の手順のプロセスです。 次のすべての手順を完了する必要があります。
 

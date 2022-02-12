@@ -21,19 +21,30 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: 組織のプロファイル (組織名、住所、電話、技術的な連絡先、電子メールなど) を変更します。
-ms.date: 03/30/2021
-ms.openlocfilehash: 470c3561bd47d6c27279f45fa2041c5e4c1538f4
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.date: 02/11/2022
+ms.openlocfilehash: bec86787c3918bf794345178a15c9401bdc7ae06
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321521"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766598"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>組織の住所およびその他のプロファイル情報を変更する
   
 組織のプロファイル (組織名、住所、電話、技術的な連絡先など) を変更できます。 **この情報を更新するには、全体管理者でなければなりません。**
   
 請求書またはサブスクリプションに関連付けられている住所を変更するには、「ビジネス向けサービスの請求先住所をMicrosoft 365[する」を参照してください](../../commerce/billing-and-payments/change-your-billing-addresses.md)。
+
+## <a name="change-organization-settings-for-cloud-pcs"></a>クラウド PC の組織の設定を変更する
+
+既定では、新しいクラウド PC は Windows 11 オペレーティング システムと標準ユーザー アカウントの種類で作成されます。 これらの既定の設定を変更するには、次の手順を使用します。
+
+1. グローバル管理者アカウントでMicrosoft 365 管理センターにサインインします。
+2. [組織の設定] **設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**に移動**</a>します。
+3. [サービス **] タブ** で、[**365] Windows選択します**。
+4. 優先するオペレーティング システムとアカウントの種類を選択し、[保存] を **選択します**。
+
+組織の設定は、新しく作成されたクラウド PC にのみ適用されます。 これらの設定を変更しても、既存のクラウド PC の OS やアカウントの種類は変更されません。
 
 ## <a name="edit-organization-information"></a>会社情報の編集
 
@@ -43,9 +54,7 @@ ms.locfileid: "62321521"
 会社のプロファイル ページの他の情報を変更するには、次の手順を実行します。
   
 1. 管理センターで、[組織の設定] **ページ設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**移動**</a>します。
-
 2. [組織プロファイル **] タブで** 、[組織情報] **を選択します**。
-
 3. 組織の情報を更新し、[変更の保存] **を選択します**。 変更を保存できるようにするには、* のマークが付いたすべての必須フィールドに必ず入力してください。
 
 以下に、各フィールドの説明を示します。

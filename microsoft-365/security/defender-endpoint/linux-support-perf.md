@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f7a3404ec0ae64e3dcdc4d6a3072e7fc2936646
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 14424f0cdff908fc641d6de1c22d25546473cc13
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172453"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766046"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のパフォーマンスの問題のトラブルシューティング
 
@@ -34,12 +34,12 @@ ms.locfileid: "62172453"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-このドキュメントでは、利用可能な診断ツールを使用して、Linux 上の Defender for Endpoint に関連するパフォーマンスの問題を絞り込み、既存のリソース不足やシステムをそのような状況にしているプロセスを理解して軽減する方法について説明します。 パフォーマンスの問題は、主に、システム上のリソース使用率のプロファイルに応じて、1 つ以上のハードウェア サブシステムのボトルネックによって発生します。 場合によっては、アプリケーションはディスク I/O リソースに敏感であり、CPU 容量が必要な場合や、一部の構成ではサステナブルではなく、新しいプロセスが多すぎるとトリガーされ、ファイル記述子が多すぎます。
+このドキュメントでは、利用可能な診断ツールを使用して、Linux 上の Defender for Endpoint に関連するパフォーマンスの問題を絞り込み、既存のリソース不足やシステムをそのような状況にしているプロセスを理解して軽減する方法について説明します。 パフォーマンスの問題は、主に、システム上のリソース使用率のプロファイルに応じて、1 つ以上のハードウェア サブシステムのボトルネックによって発生します。 場合によっては、アプリケーションはディスク I/O リソースに敏感であり、CPU 容量が必要な場合や、一部の構成はサステイナブルではなく、新しいプロセスをトリガーしすぎ、ファイル記述子を開きすぎる場合があります。
 
 実行中のアプリケーションとデバイスの特性によっては、Defender for Endpoint on Linux を実行するときに最適でないパフォーマンスが発生する場合があります。 特に、CPU、ディスク、メモリなどの多くのリソースに短時間でアクセスするアプリケーションまたはシステム プロセスは、Defender for Endpoint on Linux のパフォーマンスの問題につながる可能性があります。
 
 > [!WARNING]
-> 開始する前に、 **他のセキュリティ製品がデバイスで現在実行されていないか確認してください**。 複数のセキュリティ製品が競合し、ホストのパフォーマンスに影響を与える可能性があります。
+> 開始する前に **、他のセキュリティ製品が現在デバイスで実行されていないか確認してください**。 複数のセキュリティ製品が競合し、ホストのパフォーマンスに影響を与える可能性があります。
 
 ## <a name="troubleshoot-performance-issues-using-real-time-protection-statistics"></a>リアルタイム保護統計を使用したパフォーマンスの問題のトラブルシューティング
 
@@ -62,17 +62,17 @@ ms.locfileid: "62172453"
     Configuration property updated
     ```
 
-    デバイスが組織によって管理されている場合は、「Defender for Endpoint on Linux の設定」の手順に従って、管理者がリアルタイム保護 [を無効にすることができます](linux-preferences.md)。
+    デバイスが組織によって管理されている場合は、「 [Defender for Endpoint on Linux](linux-preferences.md) の設定」の手順に従って、管理者がリアルタイム保護を無効にすることができます。
 
     > [!NOTE]
-    > リアルタイム保護がオフの間にパフォーマンスの問題が解決しない場合、問題の発生源はエンドポイント検出および応答 (EDR) コンポーネントである可能性があります。 この場合は、この記事の **「Microsoft Defender for Endpoint Client Analyzer** を使用したパフォーマンスの問題のトラブルシューティング」セクションの手順に従ってください。
+    > リアルタイム保護がオフの間にパフォーマンスの問題が解決しない場合、問題の発生源はエンドポイント検出および応答 (EDR) コンポーネントである可能性があります。 この場合は、この記事の「 **Microsoft Defender for Endpoint Client Analyzer** を使用したパフォーマンスの問題のトラブルシューティング」セクションの手順に従ってください。
 
 2. 最も多くのスキャンをトリガーしているアプリケーションを見つけるには、Defender for Endpoint on Linux によって収集されたリアルタイム統計を使用できます。
 
     > [!NOTE]
     > この機能は、バージョン 100.90.70 以降で使用できます。
 
-    この機能は、既定で and チャネル `Dogfood` で有効 `InsiderFast` になっています。 別の更新チャネルを使用している場合は、コマンド ラインからこの機能を有効にできます。
+    この機能は、既定で and チャネルで `Dogfood` 有効 `InsiderFast` になっています。 別の更新チャネルを使用している場合は、コマンド ラインからこの機能を有効にできます。
 
     ```bash
     mdatp config real-time-protection-statistics --value enabled
@@ -84,7 +84,7 @@ ms.locfileid: "62172453"
     mdatp health --field real_time_protection_enabled
     ```
 
-    エントリが `real_time_protection_enabled` . `true` それ以外の場合は、次のコマンドを実行して有効にしてください。
+    エントリが .`real_time_protection_enabled` `true` それ以外の場合は、次のコマンドを実行して有効にしてください。
 
     ```bash
     mdatp config real-time-protection --value enabled
@@ -105,7 +105,7 @@ ms.locfileid: "62172453"
 
     このコマンドの出力には、すべてのプロセスと関連するスキャン アクティビティが表示されます。
 
-3. Linux システムで、次のコマンドを使用して **python パーサー high_cpu_parser.py の** サンプルをダウンロードします。
+3. Linux システムで、次のコマンドを使用して python **パーサー high_cpu_parser.py のサンプルを** ダウンロードします。
 
     ```bash
     wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
@@ -151,7 +151,7 @@ ms.locfileid: "62172453"
     125  CrashPlanService 164
     ```
 
-    Defender for Endpoint on Linux のパフォーマンスを向上するには、行の下に数値が最も多いディフェンダーを見つけて除外 `Total files scanned` を追加します。 詳細については、「Linux での Defender for Endpoint の除外の構成と [検証」を参照してください](linux-exclusions.md)。
+    Defender for Endpoint on Linux `Total files scanned` のパフォーマンスを向上するには、行の下に数値が最も多いディフェンダーを見つけて除外を追加します。 詳細については、「Linux 上の Defender for Endpoint の除外を構成 [および検証する」を参照してください](linux-exclusions.md)。
 
     > [!NOTE]
     > アプリケーションは、統計をメモリに格納し、ファイルのアクティビティが開始され、リアルタイム保護が有効にされた後にのみ追跡します。 リアルタイム保護がオフの前または期間中に起動されたプロセスはカウントされません。 さらに、トリガーされたスキャンがカウントされるイベントのみ。
@@ -168,11 +168,11 @@ ms.locfileid: "62172453"
 Microsoft Defender for Endpoint Client Analyzer (MDECA) は、Linux 上のオンボード デバイスのパフォーマンスの問題をトラブルシューティングするために、トレース、ログ、および診断 [情報を収集](/microsoft-365/security/defender-endpoint/onboard-configure) できます。
 
 > [!NOTE]
-> Microsoft Defender for Endpoint Client Analyzer ツールは、Microsoft Defender for Endpoint で発生する可能性のある問題のトラブルシューティングに役立つ IP アドレス、PC 名などの情報を収集するために、Microsoft カスタマー サポート サービス (CSS) によって定期的に使用されます。 プライバシーに関する声明の詳細については [、「Microsoft Privacy Statement」を参照してください](https://privacy.microsoft.com/privacystatement)。
+> Microsoft Defender for Endpoint Client Analyzer ツールは、Microsoft Defender for Endpoint で発生する可能性のある問題のトラブルシューティングに役立つ IP アドレス、PC 名などの情報を収集するために、Microsoft カスタマー サポート サービス (CSS) によって定期的に使用されます。 プライバシーに関する声明の詳細については、「 [Microsoft Privacy Statement」を参照してください](https://privacy.microsoft.com/privacystatement)。
 
 ### <a name="requirements"></a>要件
 
-- クライアント アナライザーは、Microsoft Defender for Endpoint[](microsoft-defender-endpoint-linux.md#system-requirements)へのオンボーディングの前または後に、サポートされている Linux ディストリビューションで実行できます。
+- クライアント アナライザーは、Microsoft Defender for Endpoint へのオンボーディングの[](microsoft-defender-endpoint-linux.md#system-requirements)前または後に、サポートされている Linux ディストリビューションで実行できます。
 - ダウンロード可能な最新のプレビュー エディションから Linux 用のクライアント アナライザーをダウンロードするには、こちらをクリックしてください。 <https://aka.ms/XMDEClientAnalyzer>
 - デバイスがプロキシの背後にある場合は、プロキシ サーバーを環境変数として mde_support_tool.sh スクリプトに渡す必要があります。 例: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
@@ -185,7 +185,7 @@ Microsoft Defender for Endpoint Client Analyzer (MDECA) は、Linux 上のオン
 3. `cd XMDEClientAnalyzer`
 4. `chmod +x mde_support_tool.sh`
 5. ルート以外の使用として実行して、必要なピップと lxml をインストールします。 `./mde_support_tool.sh`
-6. 実際の診断パッケージを収集し、結果アーカイブ ファイルを生成するには、ルートとして再度実行します。例 `./mde_support_tool.sh -d` :
+6. 実際の診断パッケージを収集し、結果アーカイブ ファイルを生成するには、ルートとして再度実行します。例: `./mde_support_tool.sh -d`
 
    ![コマンド ラインの例のイメージ。](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
@@ -194,7 +194,7 @@ Microsoft Defender for Endpoint Client Analyzer (MDECA) は、Linux 上のオン
 > 
 > - また、現在、ツールのインストールには Python バージョン 3 以降が必要です。
 >
-> - Python 3 を使用できないマシンまたは lxml コンポーネントをフェッチできないコンピューターで実行している場合は、要件を満たしていないバイナリ ベースのバージョンのアナライザー [(XMDE Client Analyzer Binary)](https://aka.ms/XMDEClientAnalyzerBinary)をダウンロードできます。
+> - Python 3 を使用できないマシンまたは lxml コンポーネントをフェッチできないコンピューターで実行している場合は、要件を満たしていないバイナリ ベースのバージョンのアナライザー ([XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)) をダウンロードできます。
 
 ### <a name="additional-syntax-help"></a>その他の構文ヘルプ:
 

@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 185e0009fda70f78ca93f4bc72b2fb844508c111
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: dee6cec53ef6a3412d110837037f1de48fc6e92f
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217904"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765578"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストのデバイスを調査する
 
@@ -97,7 +97,7 @@ ms.locfileid: "61217904"
 
 ### <a name="alerts"></a>アラート
 
-[ **アラート]** タブには、デバイスに関連付けられているアラートの一覧が表示されます。 このリストは、アラート キューのフィルター[](alerts-queue.md)処理されたバージョンで、アラート、重大度 (高、中、低、情報)、キュー内の状態 (新規、進行中、解決済み)、分類 (設定されていない、誤ったアラート、真のアラート)、調査状態、アラートのカテゴリ、アラートに対処しているユーザー、および最後のアクティビティの短い説明を示します。 アラートをフィルター処理することもできます。
+[ **アラート]** タブには、デバイスに関連付けられているアラートの一覧が表示されます。 このリストは、アラート キューのフィルター処理[](alerts-queue.md)されたバージョンで、アラート、重大度 (高、中、低、情報)、キュー内の状態 (新規、進行中、解決済み)、分類 (設定されていない、誤ったアラート、真のアラート)、調査状態、アラートのカテゴリ、アラートに対処しているユーザー、および最後のアクティビティの短い説明を示します。 アラートをフィルター処理することもできます。
 
 ![デバイスに関連するアラートのイメージ。](images/alerts-device.png)
 
@@ -112,7 +112,7 @@ ms.locfileid: "61217904"
 タイムラインでは、特定の期間に発生したイベントを選択的にドリルダウンすることもできます。 選択した期間にデバイスで発生したイベントの一時的なシーケンスを表示できます。 ビューをさらに制御するには、イベント グループでフィルター処理するか、列をカスタマイズできます。
 
 > [!NOTE]
-> ファイアウォール イベントを表示するには、監査ポリシーを有効にする必要があります。「Audit [Filtering Platform 接続」を参照してください](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)。
+> ファイアウォール イベントを表示するには、監査ポリシーを有効にする必要があります。「 [Audit Filtering Platform 接続」を参照してください](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)。
 >
 > ファイアウォールでは、次のイベントについて説明します。
 >
@@ -146,7 +146,7 @@ ms.locfileid: "61217904"
 
 イベントを選択して、そのイベントに関する関連する詳細を表示します。 一般的なイベント情報を表示するパネルが表示されます。 適用可能なデータが使用可能な場合は、関連するエンティティとその関係を示すグラフも表示されます。
 
-イベントと関連イベントをさらに調するには、[関連イベントのハント][](advanced-hunting-overview.md)を選択して高度な検索クエリ **をすばやく実行できます**。 クエリは、選択したイベントと、同じエンドポイントで同時に発生した他のイベントの一覧を返します。
+イベントと関連するイベントをさらに調査するには、[関連イベントのハント] [](advanced-hunting-overview.md) を選択して高度な検索クエリ **をすばやく実行できます**。 クエリは、選択したイベントと、同じエンドポイントで同時に発生した他のイベントの一覧を返します。
 
 ![イベントの詳細パネルのイメージ。](images/event-details.png)
 
@@ -200,7 +200,7 @@ Microsoft Defender for Identity 機能を有効にし、アクティブなアラ
 
 ![セキュリティ評価カードのイメージ。](images/security-assessments.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)

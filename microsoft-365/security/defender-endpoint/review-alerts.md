@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: 5ea3ffa3f326c8a38c6f8fe52a20ebf872474d56
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a156b2a4514c3dfa090bcf43285abfbcfaa1f46e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166712"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766970"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のアラートを確認する
 
@@ -46,7 +46,7 @@ Defender for Endpoint でアラートの名前を選択すると、アラート 
 
 1. **アラート タイトルには** アラートの名前が表示され、ページで選択した情報に関係なく、現在の調査を開始したアラートを通知します。
 2. [**影響を受けるアセット**](#review-affected-assets) には、このアラートの影響を受けるデバイスとユーザーのカードが一覧表示され、詳細とアクションをクリックできます。
-3. アラート **ストーリーには、** ツリー ビューによって相互接続されたアラートに関連するエンティティすべてが表示されます。 タイトル内のアラートは、選択したアラートのページに最初に移動するときにフォーカスが入ったアラートです。 アラート ストーリー内のエンティティは展開可能でクリック可能で、アラート ページのコンテキストでアクションを実行することで、追加情報を提供し、応答を迅速に行うことができます。 アラート ストーリーを使用して調査を開始します。 詳細については [、「Microsoft Defender for Endpoint のアラートを調査する」を参照してください](/microsoft-365/security/defender-endpoint/investigate-alerts)。
+3. アラート **ストーリーには、** ツリー ビューによって相互接続されたアラートに関連するエンティティすべてが表示されます。 タイトル内のアラートは、選択したアラートのページに最初に移動するときにフォーカスが入ったアラートです。 アラート ストーリー内のエンティティは展開可能でクリック可能で、アラート ページのコンテキストでアクションを実行することで、追加情報を提供し、応答を迅速に行うことができます。 アラート ストーリーを使用して調査を開始します。 詳細については、「 [Microsoft Defender for Endpoint のアラートを調査する」を参照してください](/microsoft-365/security/defender-endpoint/investigate-alerts)。
 4. 詳細 **ウィンドウには、** 最初に選択したアラートの詳細が表示され、このアラートに関連する詳細とアクションが表示されます。 アラート ストーリーで影響を受けるアセットまたはエンティティを選択すると、詳細ウィンドウが変更され、選択したオブジェクトのコンテキスト情報とアクションが提供されます。
 
 アラートの検出状態に注意してください。
@@ -81,7 +81,7 @@ Defender for Endpoint でアラートの名前を選択すると、アラート 
 
    ![ユーザーが選択されている場合の詳細ウィンドウのスニペット。](images/user-page-details.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [インシデント キューの表示と整理](view-incidents-queue.md)
 - [インシデントの調査](investigate-incidents.md)

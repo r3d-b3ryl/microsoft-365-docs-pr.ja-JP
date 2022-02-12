@@ -1,7 +1,7 @@
 ---
 title: macOS での Microsoft Defender for Endpoint の手動展開
 description: コマンド ラインから手動で macOS に Microsoft Defender for Endpoint をインストールします。
-keywords: 'microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra'
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,13 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: 1fce7aa103de9fb90cafa88a286cbf33bc753456
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765123"
 ---
-
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint の手動展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,7 +37,7 @@ ms.technology: mde
 このトピックでは、Microsoft Defender for Endpoint を macOS に手動で展開する方法について説明します。 展開が成功するには、次のすべての手順を完了する必要があります。
 
 - [インストール パッケージとオンボーディング パッケージのダウンロード](#download-installation-and-onboarding-packages)
-- [アプリケーションのインストール (macOS 10.15 以前のバージョン)](#application-installation-macos-1015-and-older-versions)
+- [アプリケーションのインストール (macOS 10.15)](#application-installation-macos-1015)
 - [アプリケーションのインストール (macOS 11 以降のバージョン)](#application-installation-macos-11-and-newer-versions)
 - [クライアント構成](#client-configuration)
 
@@ -54,7 +58,7 @@ ms.technology: mde
 
 5. コマンド プロンプトから、2 つのファイルが存在するように確認します。
 
-## <a name="application-installation-macos-1015-and-older-versions"></a>アプリケーションのインストール (macOS 10.15 以前のバージョン)
+## <a name="application-installation-macos-1015"></a>アプリケーションのインストール (macOS 10.15)
 
 このプロセスを完了するには、デバイスに対する管理者権限が必要です。
 

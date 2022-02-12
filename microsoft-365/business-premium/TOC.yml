@@ -1,0 +1,70 @@
+- name: Microsoft 365 Business Premium
+  items:
+    - name: 概要
+      href: index.md
+    - name: Microsoft 365 Business を入手する
+      href: get-microsoft-365-business-premium.md
+    - name: Microsoft 365 for Campaigns を入手する
+      href: get-microsoft-365-campaigns.md
+    - name: Microsoft 365 がデータを保護する方法
+      href: m365-campaigns-users.md
+- name: セットアップとサインイン
+  items:
+    - name: 概要
+      href: microsoft-365-campaigns-setup-overview.md
+    - name: サインアップ
+      href: m365-campaigns-sign-up.md
+    - name: セットアップ
+      href: ../business/set-up.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: サインイン
+      href: m365-campaigns-sign-in.md
+    - name: サインイン ページをカスタマイズする
+      href: m365-customize-sign-in.md
+    - name: ユーザーを追加する
+      href: ../admin/add-users/add-users.md?bc=%2fmicrosoft-365%2fcampaigns%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json
+- name: セキュリティの保護を強化する
+  items:
+    - name: 概要
+      href: m365-campaigns-security-overview.md
+    - name: 管理者アカウントを保護する
+      href: m365-campaigns-protect-admin-accounts.md
+    - name: データへのアクセスを保護する
+      href: m365-campaigns-conditional-access.md
+    - name: マルウェアやその他の脅威から保護する
+      href: m365-campaigns-increase-protection.md
+- name: スタッフ全員のデバイスのセットアップ
+  items:
+    - name: 多要素認証をセットアップする
+      href: m365-campaigns-multifactor-authentication.md
+    - name: モバイル デバイスをセットアップする
+      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: PC と Mac を保護する
+      href: m365-campaigns-protect-pcs-macs.md
+    - name: 管理された Windows デバイスをセットアップする
+      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: スタッフ全員のメールを保護する
+  items:
+    - name: フィッシング詐欺やその他の攻撃から保護する
+      href: m365-campaigns-phishing-and-attacks.md
+    - name: 暗号化された電子メールを送信する
+      href: send-encrypted-email.md
+- name: セキュイティで保護された共同作業および共有を行う
+  items:
+    - name: 共同作業のためのチームを作成する
+      href: create-teams-for-collaboration.md
+    - name: 会議をセットアップする
+      href: set-up-meetings.md
+    - name: ファイルやビデオを共有する
+      href: share-files-and-videos.md
+    - name: 組織のコミュニケーション サイトを作成する
+      href: create-communications-site.md
+- name: デバイス上のキャンペーン データをリセットまたは削除する
+  items:
+    - name: キャンペーン データまたはビジネス データを削除する
+      href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: デバイスを工場出荷時の設定にリセットする
+      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: セキュリティ インシデントの管理
+  items:
+    - name: 侵害された電子メール アカウントへ対応する
+      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json

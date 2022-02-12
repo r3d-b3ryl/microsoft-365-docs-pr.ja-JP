@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad99fe597a9c445d1c7d0dcd07b1dcd19a5ac7d5
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 1d39bd46afae270fc7ac2a9fab8b5f4a2b4aaeb2
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170607"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765986"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint のパフォーマンスの問題のトラブルシューティング
 
@@ -59,17 +58,17 @@ ms.locfileid: "61170607"
       mdatp config real-time-protection --value disabled
       ```
 
-      デバイスが組織によって管理されている場合は [、「MacOS](mac-preferences.md)で Microsoft Defender for Endpoint の基本設定を設定する」の手順に従って、管理者がリアルタイム保護を無効にすることができます。
+      デバイスが組織によって管理されている場合は、「 [MacOS で Microsoft Defender for Endpoint](mac-preferences.md) の基本設定を設定する」の手順に従って、管理者がリアルタイム保護を無効にすることができます。
 
       リアルタイム保護がオフの間にパフォーマンスの問題が解決しない場合、問題の発生源はエンドポイント検出および応答コンポーネントである可能性があります。 この場合、詳細な手順と軽減策については、カスタマー サポートにお問い合わせください。
 
-2. Finder を開き、[アプリケーション ユーティリティ **]** \> **に移動します**。 [ **アクティビティ モニター] を** 開き、システムでリソースを使用しているアプリケーションを分析します。 一般的な例としては、ソフトウェアアップデータとコンパイラが含まれます。
+2. Finder を開き、[ **アプリケーション ユーティリティ] に** \> **移動します**。 [ **アクティビティ モニター] を** 開き、システムでリソースを使用しているアプリケーションを分析します。 一般的な例としては、ソフトウェアアップデータとコンパイラが含まれます。
 
 3. 最も多くのスキャンをトリガーしているアプリケーションを見つけるには、Defender for Endpoint on Mac によって収集されたリアルタイム統計を使用できます。
 
       > [!NOTE]
       > この機能は、バージョン 100.90.70 以降で使用できます。
-      この機能は **、Dogfood** チャネルと InsiderFast チャネルで既定 **で有効** になっています。 別の更新チャネルを使用している場合は、コマンド ラインからこの機能を有効にできます。
+      この機能は、 **Dogfood チャネルと InsiderFast** チャネルで既定 **で有効** になっています。 別の更新チャネルを使用している場合は、コマンド ラインからこの機能を有効にできます。
 
       ```bash
       mdatp config real-time-protection-statistics  --value enabled
@@ -149,11 +148,11 @@ ms.locfileid: "61170607"
         125  CrashPlanService 164
       ```
 
-      Defender for Endpoint on Mac のパフォーマンスを向上するには、[ファイルの合計スキャン] 行の下で最も多い数値の 1 つを見つけて、除外を追加します。 詳細については、「Linux での Defender for Endpoint の除外の構成と [検証」を参照してください](linux-exclusions.md)。
+      Defender for Endpoint on Mac のパフォーマンスを向上するには、[ファイルの合計スキャン] 行の下で最も多い数値の 1 つを見つけて、除外を追加します。 詳細については、「Linux 上の Defender for Endpoint の除外を構成 [および検証する」を参照してください](linux-exclusions.md)。
 
       > [!NOTE]
       > アプリケーションは、統計をメモリに格納し、ファイルのアクティビティが開始され、リアルタイム保護が有効にされた後にのみ追跡します。 リアルタイム保護がオフの前または期間中に起動されたプロセスはカウントされません。 さらに、トリガーされたスキャンがカウントされるイベントのみ。
       >
 6. パフォーマンスの問題に寄与するプロセスまたはディスクの場所を除外し、リアルタイム保護を再び有効にして、macOS 上の Microsoft Defender for Endpoint を構成します。
 
-     詳細 [については、「MacOS](mac-exclusions.md) での Microsoft Defender for Endpoint の除外の構成と検証」を参照してください。
+     詳細 [については、「MacOS での Microsoft Defender for Endpoint](mac-exclusions.md) の除外の構成と検証」を参照してください。

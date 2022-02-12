@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 4091a5945bbd754fb78bb957c46bd2ea5636e64d
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 090c43ea1d2d9f2d158f94d1e509490c3faf4799
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265513"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767090"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux の新機能
 
@@ -44,7 +43,7 @@ ms.locfileid: "62265513"
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
 
-- コマンド ライン ツールに新しいスイッチを追加し、オンデマンド スキャン中にアーカイブをスキャンするかどうかを制御しました。 これは、 を使用して構成できます `mdatp config scan-archives --value [enabled/disabled]` 。 既定では、 に設定されています `enabled` 。
+- コマンド ライン ツールに新しいスイッチを追加し、オンデマンド スキャン中にアーカイブをスキャンするかどうかを制御しました。 これは、 を使用して構成できます `mdatp config scan-archives --value [enabled/disabled]`。 既定では、 に設定されています `enabled`。
 - バグ修正
 
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
@@ -59,8 +58,8 @@ ms.locfileid: "62265513"
 ## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0)
 
 - コマンド ライン ツールに新しいスイッチを追加しました。
-  - オンデマンド スキャンの並列処理の程度を制御します。 これは、 を使用して構成できます `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` 。 既定では、並列処理の程度が `2` 使用されます。
-  - セキュリティ インテリジェンス更新プログラムが有効または無効にされた後のスキャンを制御します。 これは、 を使用して構成できます `mdatp config scan-after-definition-update --value [enabled/disabled]` 。 既定では、 に設定されています `enabled` 。
+  - オンデマンド スキャンの並列処理の程度を制御します。 これは、 を使用して構成できます `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`。 既定では、並列処理の程度が `2` 使用されます。
+  - セキュリティ インテリジェンス更新プログラムが有効または無効にされた後のスキャンを制御します。 これは、 を使用して構成できます `mdatp config scan-after-definition-update --value [enabled/disabled]`。 既定では、 に設定されています `enabled`。
 - 製品ログ レベルを変更するには、昇格が必要になります。
 - バグ修正
 
@@ -77,12 +76,12 @@ ms.locfileid: "62265513"
 - このバージョンから、コマンド ライン クライアントを介してトリガーされるオンデマンド ウイルス対策スキャン中に検出された脅威は自動的に修復されます。 ユーザー インターフェイスを介してトリガーされるスキャン中に検出された脅威には、手動操作が必要です。
 - `mdatp diagnostic real-time-protection-statistics` 2 つの追加スイッチがサポートされます。
   - `--sort`: スキャンされたファイルの総数で降順に出力を並べ替える
-  - `--top N`: 上位 N の結果を表示します (指定されている `--sort` 場合にのみ機能します)
+  - `--top N`: 上位 N の結果を表示します (指定されている場合 `--sort` にのみ機能します)
 - バグ修正&パフォーマンスの向上
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)
 
-- Microsoft Defender for Endpoint on Linux は、米国政府機関のお客様向けプレビューで利用できます。 詳細については [、「Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。
+- Microsoft Defender for Endpoint on Linux は、米国政府機関のお客様向けプレビューで利用できます。 詳細については、「 [Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。
 - FUSE ファイルシステムを使用するシステムで Linux 上の Microsoft Defender for Endpoint を使用すると OS がハングする問題を修正しました
 - 他のバグ修正&パフォーマンスの向上
 
@@ -98,9 +97,9 @@ ms.locfileid: "62265513"
 
 ## <a name="1011853"></a>101.18.53
 
-- EDR Linux の一般[提供が可能](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-- カスタム スキャン中に AV の除外を無視する新しいコマンド ライン スイッチ ( `--ignore-exclusions` ) を追加しました ( `mdatp scan custom` )
-- 診断ログを別のディレクトリに保存できる新しいパラメーター `mdatp diagnostic create` ( `--path [directory]` ) を使用して拡張
+- EDR Linux 用の機能が[一般提供されています](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+- カスタム スキャン中に AV の除外を無視する新しいコマンド ライン スイッチ (`--ignore-exclusions`) を追加しました (`mdatp scan custom`)
+- 診断ログ `mdatp diagnostic create` を別のディレクトリに保存できる新しいパラメーター (`--path [directory]`) を使用して拡張
 - バグ修正&パフォーマンスの向上
 
 ## <a name="1011299"></a>101.12.99
@@ -122,7 +121,7 @@ ms.locfileid: "62265513"
 
 ## <a name="1010075"></a>101.00.75
 
-- 次のファイル システムの種類のサポートが `ecryptfs` 追加されました。 `fuse` `fuseblk` `jfs` `nfs` `overlay` `ramfs` `reiserfs` `udf``vfat`
+- 次のファイル システムの種類のサポートが追加されました。 `ecryptfs``fuse``fuseblk``jfs``nfs``overlay``ramfs``reiserfs``udf``vfat`
 - コマンド ライン ツールの [新しい構文](linux-resources.md#configure-from-the-command-line)。
 - バグ修正&パフォーマンスの向上
 
@@ -132,6 +131,6 @@ ms.locfileid: "62265513"
 > インストール済みパッケージを 100.90.70 より前の製品バージョンからアップグレードすると、Red Hat ベースおよび SLES ディストリビューションで更新が失敗する可能性があります。 これは、ファイル パスの大きな変更のためです。 一時的な解決策として、古いパッケージを削除し、新しいパッケージをインストールします。 この問題は、新しいバージョンには存在しません。
 
 - ウイルス [対策の除外でワイルドカードがサポートされる](linux-exclusions.md#supported-exclusion-types)
-- コマンド ライン ツールを使用して [パフォーマンスの問題を](linux-support-perf.md) トラブルシューティング `mdatp` する機能が追加されました
+- コマンド ライン ツールを使用して[パフォーマンスの問題](linux-support-perf.md)`mdatp`をトラブルシューティングする機能が追加されました
 - パッケージのインストールをより堅牢にする改善点
 - バグ修正&パフォーマンスの向上

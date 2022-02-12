@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint の更新プログラムを Mac に展開する
 description: エンタープライズ環境での Microsoft Defender for Endpoint on Mac の更新プログラムを制御します。
-keywords: 'microsoft、 defender、 Microsoft Defender for Endpoint, mac, updates, deploy'
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, updates, deploy
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: ceff362daeb2054b6037ea0eecbeafbb9dbed4f3
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767630"
 ---
-
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

@@ -11,15 +11,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 232a6879f42f2b8bb1ae6b73556db330b61a30cf
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 9ce944e49b40a2b8be477bf13ae9a42c4f4e1f67
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164900"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765098"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>デバイスにオンボードして、Microsoft Defender for Endpoint 機能 を構成します
 
@@ -49,9 +51,6 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 - デバイスに応じて、Defender for Endpoint ポータルのオンボーディング セクションに示されている構成手順に従います。
 - デバイスに適切な管理ツールと展開方法を使用する
 - 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認する
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
-
 
 
 
@@ -85,7 +84,7 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 
 ## <a name="supported-capabilities-for-windows-devices"></a>デバイスでサポートされているWindows機能
 
-|オペレーティング システム  |Windows 10 & 11  |Windows Server 2012 R2 <sup> [[1](#fn1)]<sup></sup>  |Windows Server 2016 [ <sup> [1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
+|オペレーティング システム  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
 |---------|---------|---------|---------|---------|---------|
 |**予防**    |         |         |         |         |         |
 |攻撃表面の縮小ルール     |    Y     |   Y      |    Y     |    Y     |    Y     |
@@ -104,13 +103,13 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 |検出センサー     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |ネットワーク &検出のエンドポイント     |      Y   |    N     |     N    |    N    |    N   |
 |||||||
-|**Response**     |         |         |         |||
+|**応答**     |         |         |         |||
 |自動調査&応答 (AIR)    |      Y   |    Y     |     Y    |    Y    |    Y   |
 |デバイス応答機能: 分離、調査パッケージの収集、AV スキャンの実行     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |ファイル応答機能: ファイルの収集、深い分析、ファイルのブロック、停止、検疫プロセス     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |ライブ応答    |      Y   |    Y     |     Y    |    Y    |    Y   |
 
-(<a id="fn1">1</a>) 2016 年と 2016 年の最新の統合ソリューションWindows Server 2012します。 詳細については、「Defender [for Endpoint サービスへのオンボード Windows サーバー」を参照してください](configure-server-endpoints.md)。
+(<a id="fn1">1</a>) 2016 年と 2016 年の最新の統合ソリューションをWindows Server 2012します。 詳細については、「Defender [for Endpoint サービスへのオンボード Windows サーバー」を参照してください](configure-server-endpoints.md)。
 
 >[!NOTE]
 >Windows 7、8.1、Windows Server 2008 R2 には、EDR センサーのサポートと、System Center Endpoint Protection (SCEP) を使用した AV が含まれます。

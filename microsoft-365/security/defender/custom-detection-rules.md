@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1de43dbf64709e5e38caffbe5af0a8bbf37f0d2a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: bd964782303b05e97fe69996bcf3ce2c1a1e9eb8
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940176"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766934"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -42,16 +42,16 @@ ms.locfileid: "61940176"
 
 カスタム検出を管理するには、次の役割の割り当てのうちどれかが必要になります。
 
-- **セキュリティ管理者**:この役割を持 [Azure Active Directoryユーザーは](/azure/active-directory/roles/permissions-reference#security-administrator)、ポータルや他のポータルやサービスMicrosoft 365 Defender設定を管理できます。
+- **セキュリティ管理者** - この役割を持 [Azure Active Directoryユーザーは](/azure/active-directory/roles/permissions-reference#security-administrator)、ポータルおよび他のポータルおよびサービスMicrosoft 365 Defender設定を管理できます。
 
-- **セキュリティ オペレーター**-この [](/azure/active-directory/roles/permissions-reference#security-operator)Azure Active Directory ロールを持つユーザーは、アラートを管理し、セキュリティ関連の機能 (Microsoft 365 Defender ポータルのすべての情報を含む) へのグローバルな読み取り専用アクセス権を持つ。 この役割は、Microsoft Defender for Endpoint で役割ベースのアクセス制御 (RBAC) がオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC が構成されている場合は、Defender **for** Endpoint のセキュリティ設定の管理アクセス許可も必要です。
+- **セキュリティ オペレーター** - この [Azure Active Directory ロールを](/azure/active-directory/roles/permissions-reference#security-operator)持つユーザーは、アラートを管理し、セキュリティ関連の機能 (Microsoft 365 Defender ポータルのすべての情報を含む) へのグローバルな読み取り専用アクセス権を持つ。 この役割は、Microsoft Defender for Endpoint で役割ベースのアクセス制御 (RBAC) がオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC が構成されている場合は、 **Defender for Endpoint** のセキュリティ設定の管理アクセス許可も必要です。
 
-また、特定のソリューションのデータに適用されるカスタム検出Microsoft 365 Defenderアクセス許可がある場合は管理できます。 たとえば、Microsoft 365 DefenderのOfficeを管理する場合は、テーブルを使用してカスタム検出を作成できますが、テーブルは `Email` 作成 `Identity` できません。  
+また、特定のソリューションのデータに適用されるカスタム検出Microsoft 365 Defenderアクセス許可がある場合は管理できます。 たとえば、Microsoft 365 Defender`Email`のOfficeを管理する場合は、テーブルを使用してカスタム検出を作成できますが、テーブルは作成`Identity`できません。  
 
 必要なアクセス許可を管理するには、グローバル **管理者は次の機能を使用** できます。
 
-- [役割の **セキュリティ管理者] の** 下の [セキュリティ管理者 **] の** 下Microsoft 365 管理センター管理者または [セキュリティ](https://admin.microsoft.com/)オペレーター **の役割**  >  **を割り当てます**。
-- [アクセス許可の役割] の下にある [[Microsoft](https://security.microsoft.com/) Defender for Endpoint Microsoft 365 Defender RBAC 設定  >  **を**  >  **確認します**。 対応する役割を選択して、セキュリティ設定の **管理権限を割り当** てる。
+- [RolesSecurity admin **] の下****の [セキュリティ** Microsoft 365 管理センター管理者または [セキュリティ](https://admin.microsoft.com/) オペレーターの **役割** > **を割り当てます**。
+- [Microsoft Defender for Endpoint] の RBAC 設定 [を[Microsoft 365 Defender](https://security.microsoft.com/)  > **PermissionsRoles** >  設定 **確認します**。 対応する役割を選択して、セキュリティ設定の **管理権限を割り当** てる。
 
 > [!NOTE]
 > カスタム検出を管理 **するには、RBAC** が有効になっている場合、セキュリティオペレーターは Microsoft Defender for Endpoint のセキュリティ設定の管理権限を必要とします。
@@ -59,7 +59,7 @@ ms.locfileid: "61940176"
 ## <a name="create-a-custom-detection-rule"></a>カスタム検出ルールの作成
 ### <a name="1-prepare-the-query"></a>1. クエリを準備します。
 
-このポータルMicrosoft 365 Defender[高度な検索] に **移動し、** 既存のクエリを選択するか、新しいクエリを作成します。 新しいクエリを使用する場合は、クエリを実行してエラーを特定し、あり得る結果を想定します。
+ポータルでMicrosoft 365 Defenderに移動し、既存のクエリを選択するか、新しいクエリを作成します。 新しいクエリを使用する場合は、クエリを実行してエラーを特定し、あり得る結果を想定します。
 
 >[!IMPORTANT]
 >サービスでアラートの数が多くなりすぎないように、各ルールの実行時に生成されるアラートは 100 個に制限されています。 ルールを作成する前に、クエリを調整して、通常の毎日のアクティビティに対してアラートが生成されないようにします。
@@ -88,16 +88,16 @@ ms.locfileid: "61940176"
 >[!NOTE]
 >新しいテーブルが高度な狩猟スキーマに追加されるに応じて、追加のエンティティ [のサポートが追加されます](advanced-hunting-schema-tables.md)。
 
-単純なクエリ (結果をカスタマイズまたは集計するために or 演算子を使用しないクエリなど) は、通常、これらの一般的な `project` `summarize` 列を返します。
+単純なクエリ (結果をカスタマイズまたは集計するために or `project` `summarize` 演算子を使用しないクエリなど) は、通常、これらの一般的な列を返します。
 
-より複雑なクエリがこれらの列を返すには、さまざまな方法があります。 たとえば、次のような列の下のエンティティ別に集計してカウントする場合でも、各一意のイベントを含む最新のイベントから取得 `DeviceId` `Timestamp` `ReportId` できます `DeviceId` 。
+より複雑なクエリがこれらの列を返すには、さまざまな方法があります。 たとえば、`DeviceId``Timestamp``ReportId`次のような列の下のエンティティ別に集計してカウントする場合でも、各一意のイベントを含む最新のイベントから取得できます。`DeviceId`
 
 
 > [!IMPORTANT]
-> 列を使用してカスタム検出をフィルター処理 `Timestamp` しないようにします。 カスタム検出に使用されるデータは、検出頻度に基づいて事前にフィルター処理されます。
+> 列を使用してカスタム検出をフィルター処理しないように `Timestamp` します。 カスタム検出に使用されるデータは、検出頻度に基づいて事前にフィルター処理されます。
 
 
-以下のサンプル クエリは、ウイルス対策の検出を含む一意のデバイス ( ) の数をカウントし、この数を使用して 5 つを超える検出を持つデバイス `DeviceId` のみを検索します。 最新の値と `Timestamp` 対応する値を取得 `ReportId` するには、関数と `summarize` 一緒に演算子を使用 `arg_max` します。
+以下のサンプル クエリは、ウイルス対策検出を使用する一意のデバイス (`DeviceId`) の数をカウントし、この数を使用して 5 つを超える検出を持つデバイスのみを検索します。 最新の値と対応する `Timestamp` 値を取得するには `ReportId`、関数と一緒に演算子 `summarize` を使用 `arg_max` します。
 
 ```kusto
 DeviceEvents
@@ -114,14 +114,14 @@ DeviceEvents
 
 クエリ エディターでクエリを使用して、[検出ルールの作成] **を選択し** 、次のアラートの詳細を指定します。
 
-- **検出名**—検出ルールの名前
-- **頻度**—クエリを実行してアクションを実行する間隔。 [以下のその他のガイダンスを参照してください。](#rule-frequency)
-- **アラート タイトル**- ルールによってトリガーされたアラートで表示されるタイトル
-- **重大度**—ルールによって識別されるコンポーネントまたはアクティビティの潜在的なリスク
-- **Category**—ルールによって識別される脅威コンポーネントまたはアクティビティ
-- **MITRE ATT&CK** の手法 (CK フレームワークの [MITRE ATT](https://attack.mitre.org/)に記載されているルールによって識別される 1 つ以上の攻撃&です。 このセクションは、マルウェア、ランサムウェア、疑わしいアクティビティ、望ましくないソフトウェアなど、特定のアラート カテゴリでは非表示になっています。
-- **Description**—ルールによって識別されるコンポーネントまたはアクティビティの詳細 
-- **推奨されるアクション**—応答者がアラートに応答して実行する可能性がある追加のアクション
+- **検出名**: 検出ルールの名前。この名前は一意である必要があります。
+- **頻度** : クエリを実行してアクションを実行する間隔。 [以下のその他のガイダンスを参照してください。](#rule-frequency)
+- **アラート タイトル** : ルールによってトリガーされたアラートが表示されるタイトル。このタイトルは一意である必要があります。
+- **重大度** - ルールによって識別されるコンポーネントまたはアクティビティの潜在的なリスク
+- **Category** - ルールによって識別される脅威コンポーネントまたはアクティビティ
+- **MITRE ATT&CK** の手法は、CK フレームワークの [MITRE ATT](https://attack.mitre.org/) に記載されているルールによって識別される 1 つ以上の攻撃&です。 このセクションは、マルウェア、ランサムウェア、疑わしいアクティビティ、望ましくないソフトウェアなど、特定のアラート カテゴリでは非表示になっています。
+- **説明** - ルールによって識別されるコンポーネントまたはアクティビティの詳細 
+- **推奨されるアクション**- 応答者がアラートに応答して実行する可能性がある追加のアクション
 
 #### <a name="rule-frequency"></a>ルールの頻度
 新しいルールを保存すると、過去 30 日間のデータの一致が実行され、チェックされます。 その後、ルールは一定の間隔で再び実行され、選択した頻度に基づいてルックバック期間が適用されます。
@@ -129,7 +129,7 @@ DeviceEvents
 - **24 時間ごとに** 実行され、過去 30 日間のデータを確認します。
 - **12 時間ごとに** 実行され、過去 24 時間のデータを確認します。
 - **3 時間ごとに** 実行され、過去 6 時間のデータを確認します。
-- **1 時間** ごとに 1 時間ごとに実行され、過去 2 時間のデータを確認します。
+- **1 時間** ごとに実行され、過去 2 時間のデータを確認します。
 
 ルールを編集すると、設定した頻度に従ってスケジュールされた次の実行時に、適用する変更と一緒に実行されます。
 
@@ -141,7 +141,7 @@ DeviceEvents
 検出を監視する頻度に一致する頻度を選択します。 通知に応答する組織の容量を検討します。
 
 ### <a name="3-choose-the-impacted-entities"></a>3. 影響を受け取ったエンティティを選択します。
-影響を受ける主なエンティティまたは影響を受けるエンティティを検索するクエリ結果の列を特定します。 たとえば、クエリが送信者 (または) アドレスと受信者 `SenderFromAddress` `SenderMailFromAddress` ( ) アドレスを `RecipientEmailAddress` 返す場合があります。 これらの列の中で影響を受ける主なエンティティがある列を特定すると、サービスで関連するアラートの集計、インシデントの関連付け、応答アクションのターゲットができるようになります。
+影響を受ける主なエンティティまたは影響を受けるエンティティを検索するクエリ結果の列を特定します。 たとえば、クエリが送信者 (または) アドレスと受信者 (`SenderFromAddress``SenderMailFromAddress`) アドレスを`RecipientEmailAddress`返す場合があります。 これらの列の中で影響を受ける主なエンティティがある列を特定すると、サービスで関連するアラートの集計、インシデントの関連付け、応答アクションのターゲットができるようになります。
 
 エンティティの種類 (メールボックス、ユーザー、またはデバイス) ごとに 1 つの列のみを選択できます。 クエリによって返すことができない列は選択できません。
 
@@ -150,17 +150,17 @@ DeviceEvents
 
 #### <a name="actions-on-devices"></a>デバイスでのアクション
 これらのアクションは、クエリ結果の列 `DeviceId` にあるデバイスに適用されます。
-- **デバイスの分離**—Microsoft Defender for Endpoint を使用して完全なネットワーク分離を適用し、デバイスが任意のアプリケーションまたはサービスに接続できません。 [Microsoft Defender for Endpoint マシンの分離の詳細](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- **調査パッケージの収集**— ZIP ファイル内のデバイス情報を収集します。 [Microsoft Defender for Endpoint 調査パッケージの詳細](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **ウイルス対策スキャンの実行**- デバイスでWindows Defender ウイルス対策スキャンを実行します。
-- **調査を開始** する -デバイス [で自動調査](m365d-autoir.md) を開始する
-- **アプリの実行を制限** する :Microsoft 発行の証明書で署名されたファイルのみを実行できるデバイスの制限を設定します。 [Microsoft Defender for Endpoint でのアプリ制限の詳細](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
+- **デバイスの分離**: Microsoft Defender for Endpoint を使用して完全なネットワーク分離を適用し、デバイスが任意のアプリケーションまたはサービスに接続できません。 [Microsoft Defender for Endpoint マシンの分離の詳細](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **調査パッケージの収集** - ZIP ファイル内のデバイス情報を収集します。 [Microsoft Defender for Endpoint 調査パッケージの詳細](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- **ウイルス対策スキャンの実行** - デバイスでWindows Defender ウイルス対策スキャンを実行します。
+- **調査の開始** - デバイスの [自動調査](m365d-autoir.md) を開始する
+- **アプリの実行を制限** する : Microsoft が発行した証明書で署名されたファイルのみを実行できるデバイスの制限を設定します。 [Microsoft Defender for Endpoint でのアプリ制限の詳細](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>ファイルへのアクション
-選択すると、クエリ結果の 、または列のファイルに対して [ファイルの検疫] `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` アクションを適用できます。 このアクションでは、ファイルが現在ある場所から削除され、コピーが検疫に入ります。
+選択すると、クエリ結果の `SHA1``InitiatingProcessSHA1``SHA256``InitiatingProcessSHA256` 、または列のファイルに対して [ファイルの検疫] アクションを適用できます。 このアクションでは、ファイルが現在ある場所から削除され、コピーが検疫に入ります。
 
 #### <a name="actions-on-users"></a>ユーザーへのアクション
-選択されると、**ユーザーを侵害済みにする** アクションをクエリ結果の `AccountObjectId`、`InitiatingProcessAccountObjectId`、または `RecipientObjectId` 列にあるユーザーに適用することができます。 このアクションは、ユーザーのリスク レベルをユーザーのリスク レベルを Azure Active Directoryに設定し、対応する ID 保護[ポリシーをトリガーします](/azure/active-directory/identity-protection/overview-identity-protection)。
+選択されると、**ユーザーを侵害済みにする** アクションをクエリ結果の `AccountObjectId`、`InitiatingProcessAccountObjectId`、または `RecipientObjectId` 列にあるユーザーに適用することができます。 このアクションでは、ユーザーのリスク レベルをユーザーのリスク レベルを "高" に設定Azure Active Directory ID 保護ポリシー[をトリガーします](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
 > カスタム検出ルールの許可またはブロックアクションは、現在、ユーザー設定でMicrosoft 365 Defender。
@@ -188,48 +188,48 @@ DeviceEvents
 既存のカスタム検出ルールの一覧を表示し、以前の実行を確認し、トリガーしたアラートを確認できます。 必要に応じてルールを実行して変更できます。
 
 >[!TIP]
-> カスタム検出によって発生したアラートは、アラートとインシデント API で利用できます。 詳細については[、「Supported Microsoft 365 Defender API」を参照してください](api-supported.md)。
+> カスタム検出によって発生したアラートは、アラートとインシデント API で利用できます。 詳細については、「[Supported Microsoft 365 Defender API」を参照してください](api-supported.md)。
 
 ### <a name="view-existing-rules"></a>既存のルールを表示する
 
-既存のすべてのカスタム検出ルールを表示するには、[ハンティング カスタム検出 **ルール**  >  **] に移動します**。 ページには、次の実行情報を含むすべてのルールが一覧表示されます。
+既存のすべてのカスタム検出ルールを表示するには、**HuntingCustom** >  検出ルールに移動します。 ページには、次の実行情報を含むすべてのルールが一覧表示されます。
 
-- **Last run**—クエリの一致を確認し、アラートを生成するルールが最後に実行された場合
-- **最終実行の状態**:ルールが正常に実行されたかどうか
-- **次の実行**— 次のスケジュールされた実行
-- **Status**—ルールが有効または無効になっているかどうか
+- **最後の実行** - クエリの一致を確認し、アラートを生成するルールが最後に実行された場合
+- **最後の実行状態** : ルールが正常に実行されたかどうか
+- **次の実行** - 次のスケジュールされた実行
+- **Status** : ルールが有効または無効になっているかどうか
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>ルールの詳細の表示、ルールの変更、およびルールの実行
 
-カスタム検出ルールに関する包括的な情報を表示するには、[ハンティング カスタム検出ルール] に移動し、ルールの  >  名前を選択します。 その後、ルールの実行状態と範囲に関する情報など、ルールに関する一般的な情報を確認することができます。 このページには、トリガーされたアラートとアクションの一覧も表示されます。
+カスタム検出ルールに関する包括的な情報を表示するには、「**HuntingCustom**  >  検出ルール」に移動し、ルールの名前を選択します。 その後、ルールの実行状態と範囲に関する情報など、ルールに関する一般的な情報を確認することができます。 このページには、トリガーされたアラートとアクションの一覧も表示されます。
 
 ![カスタム検出ルールの詳細ページ。](../../media/custom-detect-rules-view.png)<br>
 *カスタム検出ルールの詳細*
 
 また、このページからルールに対して次のアクションを実行することもできます。
 
-- **Run**—ルールを直ちに実行します。 これにより、次の実行の間隔もリセットされます。
-- **Edit**—クエリを変更せずにルールを変更する
-- **クエリの変更**—高度な検索でクエリを編集する
-- **有効にする**  / **無効にする**-ルールを有効にするか、ルールの実行を停止する
-- **Delete**—ルールをオフにし、削除する
+- **[実行**] - ルールを直ちに実行します。 これにより、次の実行の間隔もリセットされます。
+- **[編集**] - クエリを変更せずにルールを変更する
+- **クエリの変更** - 高度な検索でクエリを編集する
+- **有効にする** / **[オフにする**] - ルールを有効にするか、ルールの実行を停止する
+- **[削除**] - ルールをオフにし、削除する
 
 ### <a name="view-and-manage-triggered-alerts"></a>トリガーされたアラートを表示して管理する
 
-ルールの詳細画面 (**ハンティング** カスタム検出 [ルール名]) で、[トリガーされたアラート] に移動し、ルールに一致して生成されたアラート  >    >  を一覧表示します。  アラートを選択して、アラートに関する詳細情報を表示し、次のアクションを実行します。
+ルールの詳細画面 (**HuntingCustom** >  detections > **[Rule name])** で、[トリガーされたアラート] に移動し、ルールに一致して生成されたアラートを一覧表示します。 アラートを選択して、アラートに関する詳細情報を表示し、次のアクションを実行します。
 
 - 状態と分類 (true または false アラート) を設定してアラートを管理する
 - アラートをインシデントにリンクする
 - 高度な捜索でアラートをトリガーしたクエリを実行する
 
 ### <a name="review-actions"></a>アクションを確認する
-ルールの詳細画面 (**ハンティング** カスタム検出 [ルール名]) で、[トリガーされたアクション] に移動し、ルールとの一致に基づいて実行されるアクションを  >    >  一覧表示します。 
+ルールの詳細画面 (**HuntingCustom** >  detections > **[Rule name])** で、[トリガーされたアクション] に移動し、ルールとの一致に基づいて実行されるアクションを一覧表示します。
 
 >[!TIP]
 >テーブル内のアイテムに関する情報をすばやく表示し、アクションを実行するには、表の左側にある [&#10003;] の選択列を使用します。
 
 >[!NOTE]
->この記事の一部の列は、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
+>この記事の一部の列は、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 「Advanced [hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)」の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動できます。
 
 ## <a name="see-also"></a>関連項目
 - [カスタム検出の概要](custom-detections-overview.md)

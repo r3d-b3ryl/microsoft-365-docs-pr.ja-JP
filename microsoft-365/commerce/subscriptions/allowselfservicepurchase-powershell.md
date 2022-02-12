@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: AllowSelfServicePurchase PowerShell コマンドレットを使用して、セルフサービスでの購入のオンまたはオフを切り替える方法をご紹介します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 07/16/2021
-ms.openlocfilehash: 4c4272b532fd40f1062404716614f8a7ee4a5230
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.date: 12/15/2021
+ms.openlocfilehash: ebe01b9ed55b13d1d61ae1a59dca3bdb6373f285
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531899"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765782"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する
 
@@ -108,10 +108,9 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows ハイブリッド特典付き Windows 365 Business | CFQ7TTC0HX99 |
 
-## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>AllowSelfServicePurchase の状態を表示または設定する
+*これらの ID は変更されました。 以前に古い ID を使用して製品をブロックした場合は、新しい ID を使用して製品が自動的にブロックされます。 追加の作業は必要ありません。
 
->[!NOTE] 
-> これらの ID は変更されました。 以前に古い ID を使用して製品をブロックした場合は、新しい ID を使用して製品が自動的にブロックされます。 追加の作業は必要ありません。
+## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>AllowSelfServicePurchase の状態を表示または設定する
 
 セルフサービスで購入可能な製品の一覧を表示した後、特定の製品の設定を確認したり変更したりすることができます。
 
@@ -170,7 +169,7 @@ TLS 1.2 にアップグレードします。 次の構文は、ServicePointManag
  [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 ```
 
-詳細については [、「TLS 1.2 を有効にする方法」を参照してください](/mem/configmgr/core/plan-design/security/enable-tls-1-2)。
+詳細については、「 [TLS 1.2 を有効にする方法」を参照してください](/mem/configmgr/core/plan-design/security/enable-tls-1-2)。
 
 <!--
 ## Uninstall the MSCommerce module

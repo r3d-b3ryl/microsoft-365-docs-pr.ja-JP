@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3ed4dd5f38369dd818d31e60e23de053dff4347
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: ba52d9587a2ac530eabeacf8c72336751a1a17d7
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170995"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767570"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>macOS の Microsoft Defender for Endpoint でのカーネル拡張機能の問題のトラブルシューティング
 
@@ -45,7 +44,7 @@ macOS での Microsoft Defender for Endpoint の展開/インストール中に�
 
    ![RTP が無効になっているスクリーンショット。](images/mdatp-32-main-app-fix.png)
 
-また、実行できます ```mdatp health``` 。 リアルタイム保護が有効になっているが使用できない場合に報告されます。 これは、カーネル拡張機能がデバイスでの実行が承認されていないことを示します。
+また、実行できます ```mdatp health```。 リアルタイム保護が有効になっているが使用できない場合に報告されます。 これは、カーネル拡張機能がデバイスでの実行が承認されていないことを示します。
 
 ```bash
 mdatp health
@@ -68,7 +67,7 @@ real_time_protection_available              : true
 
 ## <a name="manual-deployment"></a>手動展開
 
-製品のインストールから 30 分未満経過した場合は **、[System Preferences** Security & Privacy] に移動し、開発者 \> "Microsoft Corporation" のシステム ソフトウェアを許可する必要があります。
+製品のインストールから 30 分未満経過した場合は、[**System Preferences** \> **Security & Privacy**] に移動し、開発者 "Microsoft Corporation" のシステム ソフトウェアを許可する必要があります。
 
 このプロンプトが表示されない場合は、30 分以上経過し、カーネル拡張機能がデバイスでの実行が承認されていないことを意味します。
 
@@ -98,7 +97,7 @@ real_time_protection_available              : true
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
 
-    バナーは Defender アプリケーションから消え、リアルタイム保護が有効で使用可能になっている ```mdatp health``` と報告する必要があります。
+    バナーは Defender アプリケーションから ```mdatp health``` 消え、リアルタイム保護が有効で使用可能になっていると報告する必要があります。
 
     ```bash
     mdatp health

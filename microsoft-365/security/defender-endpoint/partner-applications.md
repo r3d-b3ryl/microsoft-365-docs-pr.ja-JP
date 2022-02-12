@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 430b087fc682eced9c20ef013b77ccc1d690187a
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: e7470115d053cd892b87399b53ba0b471c3cda8e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214011"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765705"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のパートナー アプリケーション
 
@@ -89,6 +89,7 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 :---|:---|:---
 ![Aruba ClearPass ポリシー マネージャーのロゴのイメージ。](images/aruba-logo.png)|[Aruba ClearPass ポリシー マネージャー](https://go.microsoft.com/fwlink/?linkid=2127544)|ネットワークへのアクセスを許可する前に、Defender for Endpoint が各エンドポイントにインストールされ、更新されていることを確認する
 ![ネットワーク ロゴの青い六角形のイメージ。](images/bluehexagon-logo.png)|[ネットワーク用青い六角形](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon は、ネットワーク脅威保護のための業界初のリアルタイムディープ ラーニング プラットフォームを構築しました
+![Corelight ロゴのイメージ。](images/logo-corelight.png)| [Corelight]( https://corelight.com/integrations/iot-security)| Corelight ネットワーク アプライアンスから送信されるデータを使用すると、Microsoft 365 Defender は、他の管理されていないデバイスや外部ネットワークとの通信など、管理されていないデバイスのネットワーク アクティビティの可視性を高めます。
 ![CyberMDX ロゴのイメージ。](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX は、包括的な医療資産の可視性、脅威防止、およびリプスを Defender for Endpoint 環境に統合します。
 ![HYAS Protect ロゴのイメージ。](images/hyas-logo.png)|[HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect は、攻撃者インフラストラクチャの権限のある知識を利用して、Microsoft Defender for Endpoint エンドポイントをサイバー攻撃からプロアクティブに保護します。
 ![Vectra ネットワーク検出と応答 (NDR) ロゴのイメージ。](images/vectra-logo.png)|[Vectra ネットワーク検出と応答 (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra は、AI &セキュリティ調査を適用して、サイバー攻撃をリアルタイムで検出して対応します

@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 61eae362d9f4e5e2777b5f917ac95d7c838e350c
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 8cd930fcc74994abe91f4c13255f97bc21159202
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214137"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765662"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 
@@ -62,9 +61,9 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 プレビュー機能設定をオンにして、今後の機能をいち早く試します。
 
-1. ナビゲーション ウィンドウで、[エンドポイントの高度な **機能設定** \>  \> **プレビュー機能]** \> **を選択します**。
+1. ナビゲーション ウィンドウで、[エンドポイントの **高度な機能設定** \>  \> **プレビュー機能] を** \> **選択します**。
 
-2. [オン] と [オフ]**の間で設定を****切り替え**、[基本設定の保存]**を選択します**。
+2. [オン] と [オフ] **の間で設定を****切り替え**、[基本設定 **の保存] を選択します**。
 
 > [!TIP]
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)

@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: fe10cad1f3b9f7afb32b5e3b0575477aee40c55b
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: f228d0ca44589b9c140226c2b39984c717c7d9f8
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218384"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766070"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のアラートを調査する
 
@@ -39,7 +39,7 @@ ms.locfileid: "61218384"
 
 アラート キューからアラートを選択して、アラート ページに移動します。 このビューには、アラート タイトル、影響を受けるアセット、詳細サイド ウィンドウ、およびアラート ストーリーが含まれる。
 
-アラート ページから、影響を受けるアセットまたはアラート ストーリー ツリー ビューのエンティティを選択して調査を開始します。 詳細ウィンドウには、選択した内容に関する詳細情報が自動的に表示されます。 ここで表示できる情報の種類を確認するには、「エンドポイント用 Microsoft Defender でアラートを確認 [する」を参照してください](/microsoft-365/security/defender-endpoint/review-alerts)。
+アラート ページから、影響を受けるアセットまたはアラート ストーリー ツリー ビューのエンティティを選択して調査を開始します。 詳細ウィンドウには、選択した内容に関する詳細情報が自動的に表示されます。 ここで表示できる情報の種類については、「 [Microsoft Defender for Endpoint でアラートを確認する」を参照してください](/microsoft-365/security/defender-endpoint/review-alerts)。
 
 ## <a name="investigate-using-the-alert-story"></a>アラート ストーリーを使用して調査する
 
@@ -58,7 +58,7 @@ ms.locfileid: "61218384"
 
 目的のエンティティを選択すると、詳細ウィンドウが変更され、選択したエンティティの種類に関する情報、利用可能な場合の歴史的な情報が表示され、アラート ページから直接このエンティティに対してアクションを実行するコントロールが提供されます。
 
-調査が完了したら、開始したアラートに戻り、アラートの状態を **[** 解決済み] としてマークし、False アラートまたはTrue アラートとして **分類します**。 アラートを分類すると、この機能を調整して、より真のアラートと誤ったアラートを減らします。
+調査が完了したら、開始したアラートに戻り、アラートの状態を **[** 解決済み] としてマークし、False アラートまたは True アラートとして **分類します**。 アラートを分類すると、この機能を調整して、より真のアラートと誤ったアラートを減らします。
 
 真のアラートとして分類する場合は、下の図に示すように、決定を選択できます。
 
@@ -69,10 +69,10 @@ ms.locfileid: "61218384"
 ![抑制ルールが強調表示された詳細ウィンドウのアクションと分類。](images/alert-false-suppression-rule.png)
 
 > [!TIP]
-> 上記に記載されていない問題が発生した場合は、ボタンを使用してフィードバックを提供するか、サポート 🙂 チケットを開きます。
+> 上記に記載されていない問題が 🙂 発生した場合は、ボタンを使用してフィードバックを提供するか、サポート チケットを開きます。
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
 - [Defender for Endpoint アラートに関連付けられたファイルを調査する](investigate-files.md)

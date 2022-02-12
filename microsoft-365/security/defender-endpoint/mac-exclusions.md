@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc4faa8289ad1a51345407442d866ddb0f8000b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a069e3dd3ef99f094f96318277e077c56b7cb974
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167222"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766670"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender の除外を構成および検証する
 
@@ -49,12 +48,12 @@ ms.locfileid: "61167222"
 
 ## <a name="supported-exclusion-types"></a>サポートされる除外の種類
 
-次の表に、Defender for Endpoint on Mac でサポートされている除外の種類を示します。
+次の表に、Defender for Endpoint on Mac でサポートされる除外の種類を示します。
 
 除外|定義|例
 ---|---|---
 ファイル拡張子|拡張機能を持つすべてのファイル (コンピューター上の任意の場所)|`.test`
-ファイル|完全パスで識別される特定のファイル|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
+File|完全パスで識別される特定のファイル|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
 フォルダー|指定したフォルダーの下のすべてのファイル (再帰的)|`/var/log/` <p> `/var/*/`
 プロセス|特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル|`/bin/cat` <p> `cat` <p> `c?t`
 
@@ -66,17 +65,17 @@ ms.locfileid: "61167222"
 ?|任意の 1 文字に一致する|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
 > [!NOTE]
-> 除外を評価するときに、製品は firmlinks の解決を試みる。 除外にワイルドカードが含まれているか、ターゲット ファイル (ボリューム上) が存在しない場合、Firmlink 解決 `Data` は機能しません。
+> 除外を評価するときに、製品は firmlinks の解決を試みる。 除外にワイルドカードが含まれているか、ターゲット ファイル ( `Data` ボリューム上) が存在しない場合、Firmlink 解決は機能しません。
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>除外の一覧を構成する方法
 
 ### <a name="from-the-management-console"></a>管理コンソールから
 
-JAMF、Intune、または別の管理コンソールから除外を構成する方法の詳細については、「Defender for Endpoint on Mac の設定」 [を参照してください](mac-preferences.md)。
+JAMF、Intune、または別の管理コンソールから除外を構成する方法の詳細については、「 [Defender for Endpoint on Mac の設定」を参照してください](mac-preferences.md)。
 
 ### <a name="from-the-user-interface"></a>ユーザー インターフェイスから
 
-Defender for Endpoint アプリケーションを開き、次のスクリーンショットに示すように、[設定の追加と削除] の [除外の管理] \> に移動します。
+次のスクリーンショットに示すように、Defender for  Endpoint \> アプリケーションを開き、[設定の追加と削除の除外 **..** を管理する] に移動します。
 
 ![除外のスクリーンショットを管理します。](images/mdatp-37-exclusions.png)
 
@@ -84,9 +83,9 @@ Defender for Endpoint アプリケーションを開き、次のスクリーン�
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>EICAR テスト ファイルを使用して除外リストを検証する
 
-除外リストが機能している場合は、テスト ファイルをダウンロード `curl` して検証できます。
+除外リストが機能している場合は、テスト ファイル `curl` をダウンロードして検証できます。
 
-次の Bash スニペットで、除外 `test.txt` ルールに準拠したファイルに置き換えます。 たとえば、拡張機能を除外した場合は、 `.testing` に置き換 `test.txt` える `test.testing` 。 パスをテストする場合は、そのパス内でコマンドを実行してください。
+次の Bash スニペットで、除外 `test.txt` ルールに準拠したファイルに置き換えます。 たとえば、拡張機能を除外した場合は `.testing` 、 に置き換 `test.txt` える `test.testing`。 パスをテストする場合は、そのパス内でコマンドを実行してください。
 
 ```bash
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
@@ -118,7 +117,7 @@ mdatp threat allowed add --name [threat-name]
 mdatp threat list
 ```
 
-たとえば、許可リストに (EICAR 検出に関連付けられている脅威名) を追加するには、 `EICAR-Test-File (not a virus)` 次のコマンドを実行します。
+たとえば、許可リスト `EICAR-Test-File (not a virus)` に (EICAR 検出に関連付けられている脅威名) を追加するには、次のコマンドを実行します。
 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"

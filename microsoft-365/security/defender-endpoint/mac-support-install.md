@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 52fdf612ac86c1a0cc99220793461507f86a6fe3
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 5f56e28d472cb3fdf8dd089effcd4beac6e42374
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170553"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766658"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint のインストールの問題のトラブルシューティング
 
@@ -41,7 +40,7 @@ ms.locfileid: "61170553"
 
 手動インストールの場合、インストール ウィザードの [概要] ページには、「インストール中にエラーが発生しました。 インストーラーでエラーが発生し、インストールに失敗しました。 ソフトウェア発行元に問い合わせてサポートを受けてください。 MDM の展開では、一般的なインストールエラーとして表示されます。
 
-エンド ユーザーに正確なエラーは表示されませんが、インストールの進行状況を示すログ ファイルを保持します `/Library/Logs/Microsoft/mdatp/install.log` 。 このログ ファイルには、各インストール セッションが追加されます。 最後のインストール `sed` セッションのみを出力するために使用できます。
+エンド ユーザーに正確なエラーは表示されませんが、インストールの進行状況を示すログ ファイルを保持します `/Library/Logs/Microsoft/mdatp/install.log`。 このログ ファイルには、各インストール セッションが追加されます。 最後のインストール セッション `sed` のみを出力するために使用できます。
 
 ```bash
 sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
@@ -54,7 +53,7 @@ correlation id=CB509765-70FC-4679-866D-8A14AD3F13CC
 preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ```
 
-この例では、実際の理由の先頭に . が付く `[ERROR]` 。
+この例では、実際の理由の先頭に . が付く `[ERROR]`。
 これらのバージョン間のダウングレードがサポートされていないため、インストールに失敗しました。
 
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP インストール ログが見つからないか更新されない

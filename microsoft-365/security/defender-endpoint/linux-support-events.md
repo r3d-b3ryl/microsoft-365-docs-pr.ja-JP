@@ -13,16 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82c1418d58679fef1b59e51b41052e4dfe584635
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5a17f94e3d26c08c0f6e0ca358778a65189cf6a5
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168543"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766018"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上の Microsoft Defender for Endpoint の不足しているイベントまたはアラートの問題のトラブルシューティング
 
@@ -33,14 +32,14 @@ ms.locfileid: "61168543"
 - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-この記事では、ポータルで不足しているイベントやアラートを軽減するための一般的なMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">します</a>。
+この記事では、ポータルで不足しているイベントやアラートを軽減するための一般的な<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。
 
-**Microsoft Defender for Endpoint** がデバイスに正しくインストールされると、ポータルにデバイス ページが生成されます。  記録されたイベントはすべて、デバイス ページの [タイムライン] タブ、または高度な検索ページで確認できます。 このセクションでは、一部またはすべての予期されるイベントが見つからない場合のトラブルシューティングを行います。
+**Microsoft Defender for Endpoint** がデバイスに正しくインストールされると _、ポータルに_ デバイス ページが生成されます。 記録されたイベントはすべて、デバイス ページの [タイムライン] タブ、または高度な検索ページで確認できます。 このセクションでは、一部またはすべての予期されるイベントが見つからない場合のトラブルシューティングを行います。
 たとえば、すべての _CreatedFile_ イベントが見つからない場合です。
 
 ## <a name="missing-network-and-login-events"></a>ネットワークイベントとログイン イベントが見つからない
 
-Microsoft Defender for Endpoint では、ネットワーク `audit` とログインアクティビティを追跡するために Linux からフレームワークを利用しました。
+Microsoft Defender for Endpoint では `audit` 、ネットワークとログインアクティビティを追跡するために Linux からフレームワークを利用しました。
 
 1. 監査フレームワークが機能している必要があります。
 
@@ -73,7 +72,7 @@ Microsoft Defender for Endpoint では、ネットワーク `audit` とログイ
     service auditd start
     ```
 
-**SLES システムでは** 、SYSCALL 監査は既定で無効になっている可能性があります。イベントが見つからない `auditd` 場合は考慮できます。
+**SLES システムでは** 、SYSCALL `auditd` 監査は既定で無効になっている可能性があります。イベントが見つからない場合は考慮できます。
 
 1. SYSCALL 監査が無効でなかっているのを検証するには、現在の監査ルールを一覧表示します。
 
@@ -87,11 +86,11 @@ Microsoft Defender for Endpoint では、ネットワーク `audit` とログイ
     -a task, never
     ```
 
-    監査ルールは 、 に位置します `/etc/audit/rules.d/audit.rules` 。
+    監査ルールは 、 に位置します `/etc/audit/rules.d/audit.rules`。
 
 ## <a name="missing-file-events"></a>ファイル イベントが見つからない
 
-ファイル イベントはフレームワークで収集 `fanotify` されます。 一部またはすべてのファイル イベントが見つからない場合は、デバイスで有効になっているか、ファイル システムが `fanotify` サポートされている必要 [があります](microsoft-defender-endpoint-linux.md#system-requirements)。
+ファイル イベントはフレームワークで収集 `fanotify` されます。 一部またはすべてのファイル イベント `fanotify` が見つからない場合は、デバイスで有効にし、ファイル システムがサポートされている必要 [があります](microsoft-defender-endpoint-linux.md#system-requirements)。
 
 コンピューター上のファイルシステムを次のコマンドで一覧表示します。
 

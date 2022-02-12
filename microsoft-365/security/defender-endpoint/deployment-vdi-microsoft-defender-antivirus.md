@@ -10,17 +10,17 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/08/2021
+ms.date: 02/11/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 65469220cb6b001d5dbb474181f723235aa6d3a9
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 83013faf2fca5a3a281c5668973523918b883f54
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345893"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766778"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
 
@@ -120,7 +120,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
     Name   ScopeName AccountName AccessControlType AccessRight
     ----   --------- ----------- ----------------- -----------
-    mdatp$ *         Everyone    Allow             Change
+    mdatp$ *         Everyone    Allow             Read
     ```
    
     > [!NOTE]
@@ -136,7 +136,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 2. 名前をセキュリティ インテリジェンス **アンパックとして入力します**。 [トリガー] タブ **に移動** します。[**新規]を選択します。** \>**[毎日]** を選択し、[**OK] を選択します**。
 
-3. [アクション] タブ **に移動** します。[ **新規]を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [引数 `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` の追加 **] フィールドに入力** します。 [**OK**] を選択します。
+3. [アクション] タブ **に移動** します。[ **新規]を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [引数 `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` の追加 **] フィールドに入力** します。 **[OK]** を選択します。
 
 4. 必要に応じて、追加の設定を構成できます。
 
@@ -198,7 +198,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 4. 通常どおりにグループ ポリシー オブジェクトを展開します。
 
-通知を抑制すると、スキャンMicrosoft Defender ウイルス対策修復アクションが実行された場合Windows 10アクション センターに通知が表示されません。 ただし、セキュリティ運用チームは、スキャンの結果をポータルに表示Microsoft 365 Defender[します](microsoft-defender-security-center.md)。
+通知を抑制すると、スキャンMicrosoft Defender ウイルス対策修復アクションが実行された場合Windows 10アクション センターに通知が表示されません。 ただし、セキュリティ運用チームは、攻撃が検出および停止されている間に、Microsoft 365 Defender ポータルで "初期アクセスアラート" などのアラートがトリガーされ、表示された状態でスキャン[の結果を表示](/microsoft-365/security/defender/microsoft-365-defender)します。
 
 > [!TIP]
 > 11 のアクション センターを開Windows 10 Windows、次のいずれかの手順を実行します。
@@ -234,7 +234,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. ポリシーを [有効] に **設定します**。
 
-4. [**OK**] を選択します。
+4. **[OK]** を選択します。
 
 5. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。
 

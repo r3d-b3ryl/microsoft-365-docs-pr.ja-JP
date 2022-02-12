@@ -16,15 +16,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365-initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e32880b46b04ce9ee755c09b6cbff2e3e484f4ff
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 56c7c2ab6a8023be8a570c5b33c64112d8545df1
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320853"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767666"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -99,9 +100,9 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 完全な OT/IOT アセット インベントリ Microsoft Defender for Endpoint を見つけ、特定し、セキュリティ保護するのに十分な可視性を得るという課題に対処するために、次の統合がサポートされています。
 
-- **Corelight**: Microsoft は Corelight と提携して、Corelight ネットワーク アプライアンスからデータを受信しました。 これにより、Microsoft 365 Defenderデバイスや外部ネットワークとの通信など、管理されていないデバイスのネットワーク アクティビティの可視性が向上します。 詳細については、「Enable [Corelight data integration 」を参照してください](corelight-integration.md)。
+- **Corelight**: Microsoft は Corelight と提携して、Corelight ネットワーク アプライアンスからデータを受信しました。 これにより、Microsoft 365 Defenderデバイスや外部ネットワークとの通信など、管理されていないデバイスのネットワーク アクティビティの可視性が向上します。 詳細については、「 [Enable Corelight data integration」を参照してください](corelight-integration.md)。
 
-- **Microsoft Defender for IoT:** この統合は、Microsoft Defender for Endpoint のデバイス検出機能と、Microsoft Defender for IoT のエージェントレス監視機能を組み合わせ、IT ネットワークに接続されているエンタープライズ IoT デバイス (VoIP、プリンター、スマートテレビなど) をセキュリティで保護します。 詳細については [、「Enable Microsoft Defender for IoT integration」を参照してください](enable-microsoft-defender-for-iot-integration.md)。
+- **Microsoft Defender for IoT**: この統合は、Microsoft Defender for Endpoint のデバイス検出機能と、Microsoft Defender for IoT のエージェントレス監視機能を組み合わせ、IT ネットワークに接続されているエンタープライズ IoT デバイス (VoIP、プリンター、スマートテレビなど) をセキュリティで保護します。 詳細については、「 [Enable Microsoft Defender for IoT integration」を参照してください](enable-microsoft-defender-for-iot-integration.md)。
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>検出されたデバイスの脆弱性評価
 
@@ -136,7 +137,7 @@ DeviceNetworkEvents
 
 ## <a name="changed-behavior"></a>変更された動作
 
-次のセクションでは、この機能が有効になっているときに Microsoft Defender for Endpoint および Microsoft 365 Defenderポータルで確認<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">する</a>変更を示します。
+次のセクションでは、この機能が有効になっているときに Microsoft Defender for Endpoint および Microsoft 365 Defenderポータルで確認<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">する</a>変更点を示します。
 
 1. Microsoft Defender for Endpoint にオンボードされていないデバイスは、デバイス インベントリ、高度な検索、API クエリに表示される必要があります。 これにより、クエリ結果のサイズが大幅に増加する可能性があります。
     1. Advanced Hunting の "DeviceInfo" テーブルと "DeviceNetworkInfo" テーブルには、検出されたデバイスが保持されます。 "OnboardingStatus" 属性を使用して、これらのデバイスをフィルター処理できます。

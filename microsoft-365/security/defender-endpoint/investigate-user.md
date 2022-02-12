@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 23eb3d53635334292b762941d39b9683f2a4dd9e
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 0506c5213fe6c4a9c5bb5556b987f64b22bda517
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218144"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765050"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のユーザー アカウントを調査する
 
@@ -77,17 +77,17 @@ ms.locfileid: "61218144"
 
 ### <a name="alerts"></a>アラート
 
-[ **アラート]** タブには、ユーザー アカウントに関連付けられているアラートの一覧が表示されます。 このリストは、アラート キューのフィルター[](alerts-queue.md)処理されたビューであり、ユーザー コンテキストが選択されたユーザー アカウントであるアラート、最後のアクティビティが検出された日付、アラートの短い説明、アラートに関連付けられたデバイス、アラートの重大度、キュー内のアラートの状態、およびアラートが割り当てられているユーザーを示します。
+[ **アラート]** タブには、ユーザー アカウントに関連付けられているアラートの一覧が表示されます。 この一覧は、アラート キューのフィルター[](alerts-queue.md)処理されたビューであり、ユーザー コンテキストが選択されたユーザー アカウントであるアラート、最後のアクティビティが検出された日付、アラートの短い説明、アラートに関連付けられたデバイス、アラートの重大度、キュー内のアラートの状態、およびアラートが割り当てられているユーザーを示します。
 
 ### <a name="observed-in-organization"></a>組織内で観察される
 
-[ **組織** で観察] タブを使用すると、日付範囲を指定して、このユーザーがログオンしているデバイスの一覧、これらの各デバイスで最も頻繁で最も頻繁にログオンしているユーザー アカウント、および各デバイスの総観測ユーザーを表示できます。
+**[組織** で観察] タブを使用すると、日付範囲を指定して、このユーザーがログオンしているデバイスの一覧、これらの各デバイスで最も頻繁で最も頻繁にログオンしているユーザー アカウント、および各デバイスの総観測ユーザーを表示できます。
 
 [組織で観察] テーブルでアイテムを選択すると、アイテムが展開され、デバイスの詳細が表示されます。 アイテム内のリンクを直接選択すると、対応するページに移動します。
 
 ## <a name="search-for-specific-user-accounts"></a>特定のユーザー アカウントを検索する
 
-1. [検索 **] バー** のドロップダウン **メニューから** [ユーザー] を選択します。
+1. [検索 **] バー** の **ドロップダウン メニューから** [ユーザー] を選択します。
 2. [検索] フィールドにユーザー アカウント **を入力** します。
 3. 検索アイコンをクリックするか、Enter キーを **押します**。
 
@@ -101,7 +101,7 @@ ms.locfileid: "61218144"
 - 30 日間
 - 6 か月
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)

@@ -19,12 +19,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: e56ffd44976d11986b6ccb6b3e8bc5cbf71e530c
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 3f3daaa068f067c8d4ffbbf40a4d8ba1d32d04b9
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326947"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766443"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>攻撃表面の縮小ルールの概要
 
@@ -102,6 +102,8 @@ Microsoft Defender ウイルス対策アクティブ モードでリアルタイ
 
 通知と生成されたアラートは、ポータルでMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">できます</a>。
 
+通知とアラート機能の詳細については、「ルールごとのアラートと [](attack-surface-reduction-rules-reference.md#per-rule-alert-and-notification-details)通知の詳細」の記事「攻撃表面の縮小ルールリファレンス」**を参照してください**。
+
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>高度な狩猟と攻撃表面の縮小イベント
 
 高度な検索を使用して、攻撃表面の縮小イベントを表示できます。 受信データの量を合理化するために、高度な検索では、1 時間ごとに一意のプロセスのみを表示できます。 攻撃表面の縮小イベントの時間は、1 時間以内に初めてイベントが表示されます。
@@ -122,8 +124,7 @@ Microsoft Defender ウイルス対策アクティブ モードでリアルタイ
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
   >[!NOTE]
-  >Windows Server 2016およびWindows Server 2012 R2 は、この機能を動作するためにオンボード サーバーのWindows[を](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)使用してオンボードする必要があります。 
-
+  >Windows Server 2016およびWindows Server 2012 R2 は、この機能を動作するためにオンボード サーバーのWindows[を](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)使用してオンボードする必要があります。
 
 攻撃表面の縮小ルールでは [E5](/windows/deployment/deploy-enterprise-licenses) ライセンスをWindows必要とWindows、高度な管理機能を利用できます。 E5 でのみ使用できる高度な機能はWindows含まれます。
 
@@ -136,7 +137,7 @@ Microsoft Defender ウイルス対策アクティブ モードでリアルタイ
 
 Defender for Endpoint は、アラート調査シナリオの一環として、イベントとブロックの詳細なレポートを提供します。
 
-高度な検索を使用して、[Microsoft 365 Defender Defender for](microsoft-defender-security-center.md) Endpoint データ[をクエリできます](advanced-hunting-query-language.md)。 監査モードを実行している [場合](audit-windows-defender.md)は、高度な検索を使用して、攻撃表面の縮小ルールが環境に与える影響を理解できます。
+高度な検索を使用して、[Microsoft 365 Defender Defender for](microsoft-defender-endpoint.md) Endpoint データ[をクエリできます](/microsoft-365/security/defender/advanced-hunting-query-language)。 
 
 クエリの例を次に示します。
 
@@ -157,7 +158,7 @@ DeviceEvents
 
 4. 抽出された場所 *cfa-events.xml* ファイルを選択します。 または、 [XML を直接コピーします](event-views.md)。
 
-5. [**OK**] を選択します。
+5. **[OK]** を選択します。
 
 イベントをフィルター処理して、次のイベントのみを表示するカスタム ビューを作成できます。そのすべては、フォルダー アクセスの制御に関連しています。
 

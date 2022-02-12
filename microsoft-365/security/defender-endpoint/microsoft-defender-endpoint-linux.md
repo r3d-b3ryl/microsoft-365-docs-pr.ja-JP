@@ -1,6 +1,6 @@
 ---
 title: Linux 用 Microsoft Defender for Endpoint
-ms.reviewer: null
+ms.reviewer: ''
 description: Linux で Microsoft Defender for Endpoint をインストールして使用する方法について説明します。
 keywords: Microsoft、Defender、Microsoft Defender for Endpoint、Linux、インストール、展開、アンインストール、puppet、ansible、linux、redhat、ubuntu、debian、sles、suse、centos
 ms.prod: m365-security
@@ -13,12 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: ebc5c0bfad32da316368c5c440fed23df28e9e17
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765686"
 ---
-
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -53,7 +58,7 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 
 一般に、次の手順を実行する必要があります。
 
-- Microsoft Defender for Endpoint サブスクリプションを持ち、Microsoft Defender for Endpoint ポータルへのアクセス [権を持っている必要があります](microsoft-defender-security-center.md)。
+- Microsoft Defender for Endpoint サブスクリプションを持っている必要があります。
 - 次のいずれかの展開方法を使用して、Microsoft Defender for Endpoint on Linux を展開します。
   - コマンド ライン ツール:
     - [手動展開](linux-install-manually.md)

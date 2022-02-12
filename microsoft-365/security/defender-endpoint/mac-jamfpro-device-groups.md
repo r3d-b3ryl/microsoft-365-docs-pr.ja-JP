@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d35cd0ecba75be5f6546840e5c80177f950b7193
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 3b9d6255320b5d702768614059bb9edff28be3b3
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171055"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767642"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Jamf デバイス グループの macOS デバイス グループで Microsoft Defender for Endpoint をセットアップPro
 
@@ -46,9 +45,9 @@ ms.locfileid: "61171055"
 
     ![Jamf Pro2 のイメージ。](images/jamfpro-machine-group.png)
 
-4. これで、[静的コンピューター グループ] の **下に Contoso のコンピューター** **グループが表示されます**。
+4. これで、[静的コンピューター グループ] の下 **に Contoso のコンピューター** **グループが表示されます**。
 
     ![Jamf Pro3 の画像。](images/contoso-machine-group.png)
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 - [Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro](mac-jamfpro-policies.md)

@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 235a0a79a4d388cd90668697677fe09934ae176c
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 2a297813fbde94499f2d239627be6c33c153e8b0
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217760"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765110"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でインシデントを調査する
 
@@ -92,7 +92,7 @@ Microsoft Defender for Endpoint は、脅威情報をインシデントに集約
 
 ### <a name="incident-graph"></a>インシデント グラフ
 
-この **Graph、** サイバーセキュリティ攻撃のストーリーを伝えます。 たとえば、どのデバイスで侵害またはアクティビティが観察されたかを示すエントリ ポイントが表示されます。 など
+この **Graph** は、サイバーセキュリティ攻撃のストーリーを伝えます。 たとえば、どのデバイスで侵害またはアクティビティが観察されたかを示すエントリ ポイントが表示されます。 など
 
 ![インシデント グラフのイメージ。](images/atp-incident-graph-tab.png)
 
@@ -100,7 +100,7 @@ Microsoft Defender for Endpoint は、脅威情報をインシデントに集約
 
 ![インシデントの詳細のイメージ。](images/atp-incident-graph-details.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [インシデント キュー](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Microsoft Defender for Endpoint でインシデントを調査する](/microsoft-365/security/defender-endpoint/investigate-incidents)

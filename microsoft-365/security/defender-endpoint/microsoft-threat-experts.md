@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f49274f6a166bd071ebec470ed26fd2ccd6763ec
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: cc9f0f4410e3f62a6f787efd01d899250cd67a93
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218995"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765674"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 
@@ -44,9 +44,9 @@ Microsoft 脅威エキスパートは、セキュリティ運用センター (SO
 > [!NOTE]
 > 管理対象の脅威ハンティング サービスに適用する前に、Microsoft Technical Service プロバイダーおよびアカウント チームと適格性要件について話し合います。
 
-Microsoft Defender for Endpoint のお客様の場合は **、Microsoft 脅威エキスパート -** ターゲット攻撃通知を申請して、環境内で最も重大な脅威を特定し、迅速に対応するために役立つ特別な分析情報と分析を取得する必要があります。
+Microsoft Defender for Endpoint のお客様の場合は、**Microsoft 脅威エキスパート -** ターゲット攻撃通知を申請して、環境内で最も重大な脅威を特定し、迅速に対応するために役立つ特別な分析情報と分析を取得する必要があります。
 
-[ターゲット攻撃Microsoft 脅威エキスパート通知] の特典に登録するには、「設定 エンドポイントの一般的な高度な機能Microsoft 脅威エキスパート - ターゲット攻撃通知を適用する」に \>  \>  \>  \> 移動します。 承認されると、標的型攻撃通知の特典が提供されます。
+[ターゲット攻撃Microsoft 脅威エキスパート通知 \>  \>  \>  \>] の特典に登録するには、「設定 エンドポイント全般高度な機能 Microsoft 脅威エキスパート **-** ターゲット攻撃通知を適用する」に移動します。 承認されると、標的型攻撃通知の特典が提供されます。
 
 **Microsoft 脅威エキスパート - Experts on Demand** を購読するには、アカウント チームまたは Microsoft 担当者に問い合わせ、組織が直面している関連する検出および敵対者について脅威の専門家と相談してください。
 

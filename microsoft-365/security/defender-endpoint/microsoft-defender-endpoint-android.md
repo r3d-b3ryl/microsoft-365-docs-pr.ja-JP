@@ -14,15 +14,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dc14eced2ef678a428b62ad975280fd32580c949
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 7d4e553e89f83f9b641367bb4037b4eb7da21f8b
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560734"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767042"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Android 用 Microsoft Defender for Endpoint
 
@@ -46,8 +46,8 @@ ms.locfileid: "61560734"
 
 - **エンド ユーザーの場合**:
   - アプリのエンド ユーザーに割り当てられた Microsoft Defender for Endpoint ライセンス。 [「Microsoft Defender for Endpoint ライセンス要件」を参照してください。](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
-  - Intune ポータル サイトは Google Play からダウンロード[可能](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)で、Android デバイスで利用できます。
-  - さらに、Intune デバイスコンプライアンス ポリシーを[](/mem/intune/user-help/enroll-device-android-company-portal)適用するために、Intune ポータル サイトアプリを介してデバイスを登録できます。 これには、エンド ユーザーにライセンスを割り当てるMicrosoft Intune必要があります。
+  - Intune ポータル サイトは [Google Play からダウンロード可能](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)で、Android デバイスで利用できます。
+  - さらに、Intune デバイスコンプライアンス ポリシーを適用するために[](/mem/intune/user-help/enroll-device-android-company-portal)、Intune ポータル サイトアプリを介してデバイスを登録できます。 これには、エンド ユーザーにライセンスを割り当てるMicrosoft Intune必要があります。
   - ライセンスを割り当てる方法の詳細については、「ユーザーにライセンスを割り当 [てる」を参照してください](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 
 - **管理者向け**
@@ -57,25 +57,25 @@ ms.locfileid: "61560734"
        - アプリ保護ポリシーで Microsoft Defender for Endpoint リスクシグナルを構成します。
   
     > [!NOTE]
-    > - Microsoft Defender for Endpoint では、モバイル デバイス管理 (MDM) を使用して登録されていないが、Intune を使用してモバイル アプリケーションを管理しているデバイスの管理アプリケーション (MAM) 内の組織のデータに対する保護が拡張されました。 また、このサポートは、他のエンタープライズ モビリティ管理ソリューションを使用しているお客様にも拡張しますが、モバイル アプリケーション管理 [(MAM)](/mem/intune/apps/mam-faq)には Intune を使用します。
+    > - Microsoft Defender for Endpoint では、モバイル デバイス管理 (MDM) を使用して登録されていないが、Intune を使用してモバイル アプリケーションを管理しているデバイスの管理アプリケーション (MAM) 内の組織のデータに対する保護が拡張されました。 また、このサポートは、他のエンタープライズ モビリティ管理ソリューションを使用しているお客様にも拡張しますが、モバイル アプリケーション管理 [(MAM)](/mem/intune/apps/mam-faq) には Intune を使用します。
     > - さらに、Microsoft Defender for Endpoint では、Intune モバイル デバイス管理 (MDM) を使用して登録されているデバイスが既にサポートされています。
 
 
 ### <a name="network-requirements"></a>ネットワーク要件
 
-- Microsoft Defender for Endpoint on Android がネットワークに接続されている場合に機能するには [、Microsoft Defender for Endpoint](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)サービス URL へのアクセスを有効にするようにファイアウォール/プロキシを構成する必要があります。
+- Microsoft Defender for Endpoint on Android がネットワークに接続されている場合に機能するには、 [Microsoft Defender for Endpoint サービス URL](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) へのアクセスを有効にするようにファイアウォール/プロキシを構成する必要があります。
 
 ### <a name="system-requirements"></a>システム要件
 
 - Android 6.0 以上を実行している携帯電話。 **Android go、タブレット、および Android を実行している他のモバイル デバイスを実行している携帯電話は、現在サポートされていません。**
-- Intune ポータル サイトは Google Play から[ダウンロードされ、](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)インストールされます。 Intune デバイス コンプライアンス ポリシーを適用するには、デバイスの登録が必要です。
+- Intune ポータル サイトは [Google Play からダウンロードされ、](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)インストールされます。 Intune デバイス コンプライアンス ポリシーを適用するには、デバイスの登録が必要です。
 
 ### <a name="installation-instructions"></a>インストール手順
 
 Android 上の Microsoft Defender for Endpoint は、登録されているデバイスの両方のモード (従来のデバイス管理者モードと Android デバイス モード) へのインストールEnterpriseサポートしています。 **現在、仕事用プロファイルと企業所有の完全に管理されたユーザー デバイス登録を持つ個人所有のデバイスは、Android Enterprise でサポートされています。他の Android Enterpriseのサポートは、準備ができたら発表されます。**
 
-- Android での Microsoft Defender for Endpoint の展開は、Microsoft Intune (MDM) 経由です。 詳細については、「Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune」[を参照してください](android-intune.md)。
-- Intune モバイル デバイス管理 (MDM) を使用して登録されていないデバイスへの Microsoft Defender for Endpoint のインストールについては、「Configure Microsoft Defender for Endpoint risk signals in app protection policy [(MAM)」](android-configure-mam.md)を参照してください。
+- Android での Microsoft Defender for Endpoint の展開は、Microsoft Intune (MDM) 経由です。 詳細については、「Deploy [Microsoft Defender for Endpoint on Android with android」](android-intune.md)を参照Microsoft Intune。
+- Intune モバイル デバイス管理 (MDM) を使用して登録されていないデバイスへの Microsoft Defender for Endpoint のインストールについては、「Configure [Microsoft Defender for Endpoint risk signals in app protection policy (MAM)](android-configure-mam.md)」を参照してください。
 
 > [!NOTE]
 > **Android 上のエンドポイント用 Microsoft Defender は [、Google Play で利用](https://play.google.com/store/apps/details?id=com.microsoft.scmx) できます。**
@@ -84,7 +84,7 @@ Android 上の Microsoft Defender for Endpoint は、登録されているデバ
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-android"></a>Android 上のエンドポイント用 Microsoft Defender を構成する方法
 
-Android の機能で Microsoft Defender for Endpoint を構成する方法については、「Configure Microsoft Defender for Endpoint on Android フィーチャー [」を参照してください](android-configure.md)。
+Android の機能で Microsoft Defender for Endpoint を構成する方法については、「Configure [Microsoft Defender for Endpoint on Android フィーチャー」を参照してください](android-configure.md)。
 
 ## <a name="related-topics"></a>関連項目
 

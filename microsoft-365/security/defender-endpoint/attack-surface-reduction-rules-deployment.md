@@ -11,15 +11,20 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
+ms.openlocfilehash: 7a05d2712adb37121b1e625ab5c4774a60af3e81
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767210"
 ---
-
 # <a name="asr-rules-deployment-prerequisites"></a>ASR ルールの展開の前提条件
 
 ## <a name="before-you-begin"></a>はじめに
@@ -106,6 +111,10 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 最新のMicrosoft Defender ウイルス対策維持すると、ASR ルールの誤検知結果を減らし、検出機能Microsoft Defender ウイルス対策向上します。 現在のバージョンと異なるコンポーネントを更新する方法の詳細については、Microsoft Defender ウイルス対策サポート[Microsoft Defender ウイルス対策参照してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
+### <a name="caveat"></a>注意点
+
+一部のルールは、署名されていない、内部的に開発されたアプリケーションとスクリプトの使用率が高い場合、うまく動作しません。 コード署名が適用されない場合は、ASR ルールを展開する方が困難です。
+
 ## <a name="asr-rules-deployment-steps"></a>ASR ルールの展開手順
 
 ビジネスラインの運用に影響を与える可能性のある新しい大規模な実装と同様に、計画と実装では計画的な方法が重要です。 ASR ルールがマルウェアを防止する強力な機能を備えるので、独自の顧客ワークフローに最適な動作を実現するには、これらのルールの慎重な計画と展開が必要です。 環境で作業するには、ASR ルールを慎重に計画、テスト、実装、運用する必要があります。  
@@ -126,7 +135,7 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 [フェーズ 4: 運用化](attack-surface-reduction-rules-deployment-operationalize.md)
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>Reference
 
 ### <a name="blogs"></a>ブログ
 

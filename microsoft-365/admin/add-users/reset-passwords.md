@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 - adminvideo
 search.appverid:
 - BCS160
@@ -29,12 +30,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 管理者アカウントでサインインMicrosoft 365、ビジネス サブスクリプションのユーザーのパスワードMicrosoft 365リセットします。
-ms.openlocfilehash: 2d79a1e7ea24782102c821100493b3b2eb8349ed
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 476418d97d3ad0fcfce1684282f2f69b3d56e8fb
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530408"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765854"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
@@ -42,6 +43,9 @@ ms.locfileid: "61530408"
 
 > [!NOTE]
 > また、ユーザーが自分のパスワードをリセットできるよう、セルフサービス パスワードのリセットを設定できます。 詳細については、「ユーザーが自分 [のパスワードをリセットする」を参照してください](let-users-reset-passwords.md)。
+
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、Microsoft の小規模ビジネス スペシャリストとの [作業を検討してください](https://go.microsoft.com/fwlink/?linkid=2186871)。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させるにつれて、従業員と一緒に 24 時間、中小企業の専門家にアクセスできます。
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -55,10 +59,10 @@ ms.locfileid: "61530408"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-1. ユーザーが新しいパスワードを要求すると、電子メールでパスワードリセット要求を受信します。 パスワードをリセットするには、アプリ起動ツールを開き、[管理者] を **選択します**。
-1. [ユーザー] Microsoft 365 管理センター [ユーザー] **、[アクティブ** なユーザー]<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**の順に**</a>選択し、リセットを要求したユーザーの横にあるキー アイコンを選択します。
+1. ユーザーが新しいパスワードを要求すると、電子メールでパスワードリセット要求を受信します。 パスワードをリセットするには、アプリ起動ツールを開き、[管理者] を選択 **します**。
+1. [ユーザー] **Microsoft 365 管理センターを選択** し、リセット <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>を要求したユーザーの横にあるキー アイコンを選択します。
 1. [ **パスワードの自動生成] を選択** すると、ランダムなパスワードが自動的に作成されます。
-1. [リセット] **を選択します**。
+1. [リセット] を **選択します**。
 
 このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
   
@@ -80,11 +84,11 @@ ms.locfileid: "61530408"
 
 パスワードを忘れたが、Microsoft 365 にサインインできる場合は、次の手順を実行します。たとえば、パスワードはブラウザーに保存されます。
 
-1. [個人用アカウントの個人情報] の右上隅にある> **(アイコン)**  >  **を選択します**。
+1. [My **AccountPersonal** >  Info] の右上隅にある> (アイコン) を選択します。
 
-2. [**連絡先の詳細]** で、代替メールが正確で、携帯電話番号が入力済みである場合は、もう一度確認します。 正しくない場合は、この場で変更します。
+2. [**連絡先の詳細**] で、代替メールが正確で、携帯電話番号が入力済みである場合は、もう一度確認します。 正しくない場合は、この場で変更します。
 
-3. サインアウト: 右上隅で自分の名前を選択します \> **。サインアウトします**。
+3. サインアウト: 右上隅で自分の名前を選択します\>**。サインアウトします**。
 
 4. もう一度サインインします: ユーザー名を入力し \> [**次へ**] \> [**パスワードを忘れた場合**] の順に選択します。
 
@@ -120,7 +124,7 @@ PowerShell を使用しましょう。Eyal Doron による次の投稿を確認�
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-概要については[、「Manage Microsoft 365 PowerShell 」を参照してください](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
+概要については、「[Manage Microsoft 365 PowerShell」を参照してください](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>社内のすべてのユーザーに対してパスワードの変更を強制する
 

@@ -7,17 +7,17 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.date: 04/21/2021
+ms.date: 02/11/2022
 ms.localizationpriority: medium
 ms.collection:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: ecc89350a9592703f52a603e5554bb23b71d15f2
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: f70980e280d63ad9b829240bafae00ef1089da81
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521104"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765518"
 ---
 # <a name="microsoft-365-and-microsoft-teams-infographics-for-your-users"></a>Microsoft 365ユーザー Microsoft Teamsインフォグラフィックの作成と管理
 
@@ -31,7 +31,7 @@ ms.locfileid: "61521104"
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![キャンペーン情報グラフィックの保護に役立ちます。](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [PDF としてダウンロードする](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)  \ [アプリとしてダウンロードPowerPoint](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)| 組織の情報をセキュリティで保護するために、これらのベスト プラクティスを共有Microsoft 365。 このインフォグラフィックは、高度なハッカーを対象とするために、政治キャンペーンのスタッフをサポートするために作成されました。 このインフォグラフィックをカスタマイズするには、PowerPointを使用してください。 関連記事:[ユーザーに対するセキュリティMicrosoft 365影響](../campaigns/m365-campaigns-users.md)|
+|[![キャンペーン情報グラフィックの保護に役立ちます。](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [PDF としてダウンロードする](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) \ [アプリとしてダウンロードPowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)| 組織の情報をセキュリティで保護するために、これらのベスト プラクティスを共有Microsoft 365。 このインフォグラフィックは、高度なハッカーを対象とするために、政治キャンペーンのスタッフをサポートするために作成されました。 このインフォグラフィックをカスタマイズするには、PowerPointを使用してください。 関連記事: [ユーザーに対する](../business-premium/m365-campaigns-users.md)セキュリティMicrosoft 365影響|
 
 ## <a name="share-your-business-files-with-teams-sharepoint-and-onedrive"></a>ビジネス ファイルを、Teams、SharePoint、OneDrive
 
@@ -39,7 +39,7 @@ ms.locfileid: "61521104"
   
 | アイテム | 説明 |
 |:-----|:-----|
-|[![[ビジネス ファイルを共有する] インフォグラフィックのサム イメージ。](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png)](https://go.microsoft.com/fwlink/?linkid=2079435) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079435)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | ビジネス ファイルを共有して共同作業する場合は、これらのベスト プラクティスを使用して、情報を安全かつ保護することができます。 電子メールまたはメールで共有Teams、ファイルを電子メールとSharePoint保存OneDrive。 関連記事: [ビジネス ファイルの共有の概要](../business-video/overview-file-sharing.md)|
+|[![[ビジネス ファイルを共有する] インフォグラフィックのサム イメージ。](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png)](https://go.microsoft.com/fwlink/?linkid=2079435) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079435) \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | ビジネス ファイルを共有して共同作業する場合は、これらのベスト プラクティスを使用して、情報を安全かつ保護することができます。 電子メールまたはメールで共有Teams、ファイルを電子メールとSharePoint保存OneDrive。 関連記事: [ビジネス ファイルの共有の概要](../business-video/overview-file-sharing.md)|
 
 ## <a name="host-online-meetings-in-microsoft-teams"></a>オンライン会議をMicrosoft Teams
 
@@ -47,7 +47,7 @@ ms.locfileid: "61521104"
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![ホスト オンライン会議のインフォグラフィックのサム イメージ。](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2078712)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | オンライン会議をホストまたは参加する方法の概要を簡単にMicrosoft Teams。 
+|[![ホスト オンライン会議のインフォグラフィックのサム イメージ。](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2078712) \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | オンライン会議をホストまたは参加する方法の概要を簡単にMicrosoft Teams。 
 
 ## <a name="work-from-anywhere-with-onedrive-and-microsoft-365"></a>どこからでも作業を行い、OneDriveとMicrosoft 365
 
@@ -55,7 +55,7 @@ ms.locfileid: "61521104"
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![任意の場所のインフォグラフィックからの作業のサム イメージ。](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079451)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | モバイル デバイスをセットアップして、モバイル デバイスとモバイル デバイスを使用してどこからでも作業Microsoft 365 Appsを参照OneDrive。 関連記事: [どこからでも作業する](../business-video/work-from-anywhere.md)|
+|[![任意の場所のインフォグラフィックからの作業のサム イメージ。](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079451) \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | モバイル デバイスをセットアップして、モバイル デバイスとモバイル デバイスを使用してどこからでも作業Microsoft 365 Appsを参照OneDrive。 関連記事: [どこからでも作業する](../business-video/work-from-anywhere.md)|
 
 ## <a name="survey-customers-with-forms-in-microsoft-365"></a>フォームを使用して顧客にアンケートをMicrosoft 365
 
@@ -63,4 +63,4 @@ ms.locfileid: "61521104"
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![フォームインフォグラフィックを使用したアンケートのお客様の親指画像。](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png)](https://go.microsoft.com/fwlink/?linkid=2079526) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079526)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Microsoft フォームを使用して、お客様の考え方を確認します。 関連記事: [Microsoft フォームで情報を収集する](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|
+|[![フォームインフォグラフィックを使用したアンケートのお客様の親指画像。](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png)](https://go.microsoft.com/fwlink/?linkid=2079526) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079526) \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Microsoft フォームを使用して、お客様の考え方を確認します。 関連記事: [Microsoft フォームで情報を収集する](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|

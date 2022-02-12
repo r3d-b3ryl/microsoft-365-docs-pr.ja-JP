@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -24,18 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: ユーザーから古いドメインを削除し、Microsoft 365別のドメインに移動するか、サブスクリプションをキャンセルする方法について学習します。
-ms.openlocfilehash: 3b6bd67c8678d4be2b483865ee76574fd727cda5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 875858804912ab75d0a5a0bab45c9bb1614c82ca
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370010"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765158"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。
 
 別のサブスクリプション プランにドメインを追加する場合、ドメインをMicrosoft 365しますか? それとも、サブスクリプションをキャンセルするためですか? [プランやサブスクリプションを変更する](../../commerce/subscriptions/switch-to-a-different-plan.md)ことも、[サブスクリプションをキャンセル](../../commerce/subscriptions/cancel-your-subscription.md)することもできます。
+
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、Microsoft の小規模ビジネス スペシャリストとの [作業を検討してください](https://go.microsoft.com/fwlink/?linkid=2186871)。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させるにつれて、従業員と一緒に 24 時間、中小企業の専門家にアクセスできます。
 
 ### <a name="step-1-move-users-to-another-domain"></a>手順 1: ユーザーを別のドメインに移動する
 
@@ -57,7 +61,7 @@ ms.locfileid: "61370010"
 
 3. 移動するすべてのユーザーの名前の横にあるボックスを選択します。
 
-4. ページの上部で、[ドメインの変更] **を選択します**。
+4. ページの上部で、[ドメインの変更 **] を選択します**。
 
 5. [ドメイン **の変更] ウィンドウで** 、別のドメインを選択します。
 
@@ -77,7 +81,7 @@ ms.locfileid: "61370010"
 
 ::: moniker-end
 
-2. [ユーザーの **アクティブ** \> **なユーザー]** に移動し、一覧からアカウントを選択します。
+2. [ユーザーの **アクティブな** \> **ユーザー]** に移動し、一覧からアカウントを選択します。
 
 3. [アカウント **] タブで** 、[ユーザー名の **管理] を選択** し、別のドメインを選択します。
 
@@ -97,11 +101,11 @@ ms.locfileid: "61370010"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>グループ グループ] **ページ** > **に移動** します。
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>グループ グループ] **ページに** > **移動** します。
 
 ::: moniker-end
 
-2. グループ名を選択し、[メール アドレス] の [全般] タブの **[** プライマリ] で、[編集] を **選択します**。
+2. グループ名を選択し、[メール アドレス] の [全般] **タブ****の [** プライマリ] で、[編集] を選択 **します**。
 
 3. ドロップダウン リストを使用して別のドメインを選択します。
 
@@ -125,7 +129,7 @@ ms.locfileid: "61370010"
 
 3. 右側のウィンドウで、[削除] を **選択します**。
 
-4. 追加のプロンプトに従って、[閉じる] を **選択します**。
+4. その他のプロンプトに従って、[閉じる] を **選択します**。
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>ドメインが削除されるまで、どれくらいかかりますか?
 
@@ -147,7 +151,7 @@ Microsoft 365 がセキュリティ グループ、配布リスト、ユーザ�
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> アカウントから [".partner.onmschina.cn"](../setup/domains-faq.yml) ドメインを削除することはできません。 ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".partner.onmschina.cn" アドレスに戻されます。
+> アカウントから [".partner.onmschina.cn" ドメイン](../setup/domains-faq.yml) を削除することはできません。 ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".partner.onmschina.cn" アドレスに戻されます。
 
 それでもうまくいかない場合、ドメインを手動で削除する必要があります。[ご連絡いただければ](../../business-video/get-help-support.md?view=o365-21vianet&preserve-view=true)、お手伝いいたします。
 
@@ -157,6 +161,6 @@ Microsoft 365 がセキュリティ グループ、配布リスト、ユーザ�
 
 [ドメインの FAQ](../setup/domains-faq.yml) (記事)
 
-[ビジネス プランの別のMicrosoft 365に切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)(記事)
+[ビジネス プランの別のMicrosoft 365に切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md) (記事)
 
 [サブスクリプションをキャンセルする](../../commerce/subscriptions/cancel-your-subscription.md) (記事)

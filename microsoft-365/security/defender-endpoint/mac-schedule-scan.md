@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5621ce43443a3e620ef0166c4b362e9dc04becae
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 629db5fc343d100913d631f59a680fc9160713ed
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156330"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765998"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする
 
@@ -38,7 +37,7 @@ Microsoft Defender for Endpoint を使用していつでも脅威スキャンを
 
 ## <a name="schedule-a-scan-with-launchd"></a>起動したスキャンを *スケジュールする*
 
-macOS デバイスで起動されたデーモンを使用 *してスキャン* スケジュールを作成できます。
+macOS デバイスで起動されたデーモンを使用 *してスキャン スケジュール* を作成できます。
 
 ここで使用する *.plist ファイル* 形式の詳細については、Apple の公式開発者向け Web サイトの「 [情報プロパティ リスト](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) ファイルについて」を参照してください。
 
@@ -134,10 +133,10 @@ macOS デバイスで起動されたデーモンを使用 *してスキャン* �
 
 3. スケジュールされたスキャンは、p リストで定義した日付、時刻、および頻度で実行されます。 前の例では、スキャンは毎週金曜日の午前 2 時 50 分に実行されます。 
 
-    - 値 `Weekday` は、週の 5 日目または金曜日を示すために整数 `StartCalendarInterval` を使用します。 範囲は 0 ~ 7 で、7 は日曜日を表します。
-    - 値 `Day` は `StartCalendarInterval` 、月の 3 日目を示すために整数を使用します。 範囲は 1 ~ 31 です。
-    - 値 `Hour` は `StartCalendarInterval` 、1 日の 2 時間目を示すために整数を使用します。 範囲は 0 ~ 24 です。
-    値 `Minute` は `StartCalendarInterval` 、1 時間の 50 分を示す整数を使用します。 範囲は 0 ~ 59 です。
+    - 値 `Weekday` は、 `StartCalendarInterval` 週の 5 日目または金曜日を示すために整数を使用します。 範囲は 0 ~ 7 で、7 は日曜日を表します。
+    - 値 `Day` は、 `StartCalendarInterval` 月の 3 日目を示すために整数を使用します。 範囲は 1 ~ 31 です。
+    - 値 `Hour` は、 `StartCalendarInterval` 1 日の 2 時間目を示すために整数を使用します。 範囲は 0 ~ 24 です。
+    値 `Minute` は、 `StartCalendarInterval` 1 時間の 50 分を示す整数を使用します。 範囲は 0 ~ 59 です。
     
     
  > [!IMPORTANT]
@@ -147,6 +146,6 @@ macOS デバイスで起動されたデーモンを使用 *してスキャン* �
 
 ## <a name="schedule-a-scan-with-intune"></a>Intune でスキャンをスケジュールする
 
-また、スキャンをスケジュールすることもできます。Microsoft Intune。 Microsoft [Defender](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) [for Endpoint runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh)使用可能なシェル スクリプトは、デバイスがスリープ モードから再開しても保持されます。 
+また、スキャンをスケジュールすることもできます。Microsoft Intune。 Microsoft [Defender](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) [for Endpoint runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) 使用可能なシェル スクリプトは、デバイスがスリープ モードから再開しても保持されます。 
 
 エンタープライズ [でこのスクリプトを使用する](/mem/intune/apps/macos-shell-scripts) 方法の詳細については、「Intune の macOS デバイスでシェル スクリプトを使用する」を参照してください。

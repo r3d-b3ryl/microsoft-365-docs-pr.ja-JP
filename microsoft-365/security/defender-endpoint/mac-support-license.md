@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b7a12d2eb88998496c4998396a5d7bf5084656e8
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: b0a328ffeee6ee5796cb92f00b8491b257e88a65
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520970"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765734"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上の Microsoft Defender for Endpoint のライセンスの問題のトラブルシューティング
 
@@ -30,14 +29,14 @@ ms.locfileid: "61520970"
 
 **適用対象:**
 
-- [macOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-mac.md) 
-[Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [macOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+[Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[MacOS](microsoft-defender-endpoint-mac.md)および手動展開テストまたは概念実証 (PoC) で Microsoft Defender for Endpoint を実行している間に、次のエラーが表示される場合があります。 [](mac-install-manually.md)
+MacOS および手動展開テストまたは概念実証 (PoC[](mac-install-manually.md)) で [Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md) を実行している間に、次のエラーが表示される場合があります。
 
 ![ライセンス エラーのイメージ。](images/no-license-found.png)
 
@@ -58,6 +57,6 @@ macOS エージェントの Microsoft Defender for Endpoint が最新の状態�
 
 **解決方法:**
 
-ここに記載されている MicrosoftDefenderATPOnboardingMacOs.py 手順に従います。クライアント [構成](mac-install-manually.md#client-configuration)
+ここで説明 MicrosoftDefenderATPOnboardingMacOs.py 手順に従います。クライアント [構成](mac-install-manually.md#client-configuration)
 
 macOS 上の Microsoft Defender for Endpoint が最新ではないシナリオでは、エージェントを更新する必要があります。 

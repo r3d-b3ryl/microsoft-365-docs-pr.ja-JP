@@ -1,7 +1,7 @@
 ---
 title: macOS Catalina および macOS の新しいバージョンの新しい構成プロファイル
 description: このトピックでは、macOS Catalina および macOS の新しいバージョンのカーネル拡張機能に代わるシステム拡張機能を利用するために行う必要がある変更について説明します。
-keywords: 'microsoft、 defender、 Microsoft Defender for Endpoint, mac, kernel, system, extensions, catalina'
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -14,13 +14,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
-ROBOTS: 'noindex,nofollow'
+ROBOTS: noindex,nofollow
 ms.technology: mde
+ms.openlocfilehash: 0cdf60708e84b0972099330d48f19b22d26766ba
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766838"
 ---
-
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS Catalina および macOS の新しいバージョンの新しい構成プロファイル
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -309,7 +313,7 @@ sysext.xml: OK
 1. Intune で、[デバイス構成の **管理]** \> **を開きます**。 [プロファイル **の管理]** \> **[プロファイルの作成** \> **] を選択します**。
 2. プロファイルの名前を選択します。 Platform **=macOS と** Profile **type=Custom を変更します**。 **[構成]** を選択します。
 3. 構成プロファイルを開き **、sysext.xml。** このファイルは、前の手順で作成されました。
-4. [**OK**] を選択します。
+4. **[OK]** を選択します。
 
     ![Intune のスクリーンショットのシステム拡張機能。](images/mac-system-extension-intune.png)
 

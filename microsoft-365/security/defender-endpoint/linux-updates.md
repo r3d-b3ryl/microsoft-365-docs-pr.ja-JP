@@ -14,15 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fe979da9c3f1144e595f31048689cbb6f6f4e959
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 71c689143feca3d8c87d219a55c4ea42b4f9d950
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166856"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767609"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint の更新プログラムを展開する
 
@@ -66,3 +65,6 @@ sudo zypper update mdatp
 ```bash
 sudo apt-get install --only-upgrade mdatp
 ```
+
+> [!IMPORTANT]
+> Microsoft Defender for Endpoint と Defender for Cloud を統合すると、mdatp エージェントは既定で更新プログラムを自動的に受信します。

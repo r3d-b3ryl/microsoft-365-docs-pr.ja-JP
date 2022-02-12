@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouse監査ログを確認する方法について説明します。
-ms.openlocfilehash: a2c9efe88930ad0aae197a5cac26cf06b1386a53
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 2044e61430ef26cf671340c02363658d54414f3b
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354938"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767486"
 ---
 # <a name="review-audit-logs"></a>監査ログの確認
 
@@ -30,7 +30,7 @@ ms.locfileid: "62354938"
 
 Microsoft 365 Lighthouse監査ログには、ライトハウスまたは他のサービスの変更を生成するMicrosoft 365記録されます。 作成、編集、削除、割り当て、リモート 操作はすべて、確認できる監査イベントを作成します。 既定では、すべてのお客様に対して監査が有効です。 それを無効にすることはできません。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 監査ログを表示するには、次のいずれかのアクセス許可が必要です。
 
@@ -78,7 +78,7 @@ Microsoft 365 Lighthouse監査ログには、ライトハウスまたは他の�
 |**restartDevice**                            | デバイス                          | Restart                                                          | Microsoft エンドポイント マネージャー |
 | **syncDevice**                               | デバイス                          | 同期                                                             | Microsoft エンドポイント マネージャー |
 | **rebootNow**                                | 脅威の管理                | 再起動                                                           | Microsoft エンドポイント マネージャー |
-| **reprovision**                              | テナント                          | Retry Provisioning                                               | Windows 365                |
+| **reprovision**                              | Windows 365     | Retry Provisioning                                               | Windows 365                |
 | **windowsDefenderScanFull**                  | 脅威の管理                | フル スキャン                                                       | Microsoft エンドポイント マネージャー |
 | **windowsDefenderScan**                      | 脅威の管理                | クイック スキャン                                                       | Microsoft エンドポイント マネージャー |
 | **windowsDefenderUpdateSignatures**          | 脅威の管理                | ウイルス対策の更新                                                | Microsoft エンドポイント マネージャー |

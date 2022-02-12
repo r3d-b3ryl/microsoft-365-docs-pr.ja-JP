@@ -1,7 +1,7 @@
 ---
 title: Intune のデバイス制御ポリシーの例
 description: Intune で使用できる例を使用してデバイス制御ポリシーを使用する方法について説明します。
-keywords: 'microsoft、 defender、 Microsoft Defender for Endpoint, mac, device, control, usb, リムーバブル, メディア, intune'
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, device, control, usb, リムーバブル, メディア, intune
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: e9edec2b4e0b08cf6506f6234fbfb1f2c3c03914
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767102"
 ---
-
 # <a name="examples-of-device-control-policies-for-intune"></a>Intune のデバイス制御ポリシーの例
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

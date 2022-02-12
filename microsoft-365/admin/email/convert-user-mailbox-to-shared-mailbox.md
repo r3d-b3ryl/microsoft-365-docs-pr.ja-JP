@@ -17,24 +17,28 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'プライベート メールボックスを、1 人ではなく複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: 45ed21e1638bfee2d13ee59193a542bd4f70e05b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: a1b82d744cc43f8119e9819537467133f2bae17c
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422269"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766610"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
 ユーザーのメールボックスを共有メールボックスに変換した場合、すべての既存のメールと予定表は保持されます。現在は、1 人のユーザーのみではなく何人かのユーザーがアクセスできる共有メールボックスにそれらが入っています。
 
-## <a name="before-you-begin"></a>始める前に
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、Microsoft の小規模ビジネス スペシャリストとの [作業を検討してください](https://go.microsoft.com/fwlink/?linkid=2186871)。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させるにつれて、従業員と一緒に 24 時間、中小企業の専門家にアクセスできます。
+
+## <a name="before-you-begin"></a>はじめに
 
 **知っておく必要がある重要な点事項を次に示します**
 
@@ -48,13 +52,13 @@ ms.locfileid: "61422269"
 
 ## <a name="use-the-classic-exchange-admin-center-to-convert-a-mailbox"></a>クラシック サーバー管理Exchangeを使用してメールボックスを変換する
  
-1. クラシック 管理センター<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">にExchangeします</a>。
+1. クラシック 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange移動します</a>。
 
 2. **[受信者]** \> **[メールボックス]** の順に選択します。
 
 3. ユーザー メールボックスを選択します。 **[共有メールボックスに変換]** で **[変換]** を選択します。
 
-4. メールボックスが 50 GB より小さい場合は、ユーザー[](../manage/remove-licenses-from-users.md)からライセンスを削除し、支払いを停止できます。 ユーザーのアカウントを削除しない。 共有メールボックスではそれをアンカーとして必要としています。 組織を離れる従業員のメールボックスを変換する場合は、追加の手順を実行して、その従業員がログインできなくなったか確認する必要があります。 詳細については、「元従業員を従業員[から削除する」を参照Microsoft 365。](../add-users/remove-former-employee.md)
+4. メールボックスが 50 GB より小さい場合は、ユーザーからライセンスを削除[](../manage/remove-licenses-from-users.md)し、支払いを停止できます。 ユーザーのアカウントを削除しない。 共有メールボックスではそれをアンカーとして必要としています。 組織を離れる従業員のメールボックスを変換する場合は、追加の手順を実行して、その従業員がログインできなくなったか確認する必要があります。 詳細については、「元従業員を削除[する」を参照Microsoft 365](../add-users/remove-former-employee.md)。
     
 > [!NOTE]
 > メールボックスの変換中にユーザーのパスワードをリセットする必要はありません。 ただし、パスワードがリセットされない場合、メールボックスの変換が終了した後も **元のユーザー名とパスワードは引き続き機能します**。
@@ -66,13 +70,13 @@ ms.locfileid: "61422269"
 
 ## <a name="use-the-new-exchange-admin-center-to-convert-a-mailbox"></a>メールボックスを変換Exchange新しい管理センターを使用する
 
-1. [管理センター] <a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank">Exchange移動します</a>。
+1. 管理センターの<a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank">Exchange移動します</a>。
 
 2. **[受信者]** \> **[メールボックス]** の順に選択します。
 
-3. ユーザー メールボックスを選択します。 [メールボックス] **タブの** [その他の **操作] で**、[共有 **メールボックスに変換] を選択します**。
+3. ユーザー メールボックスを選択します。 [メールボックス] **タブの** [その他 **の操作] で、[** 共有 **メールボックスに変換] を選択します**。
 
-4. メールボックスが 50 GB より小さい場合は、ユーザー[](../manage/remove-licenses-from-users.md)からライセンスを削除し、支払いを停止できます。 ユーザーのアカウントを削除しない。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「元[従業員を削除する」を参照Microsoft 365。](../add-users/remove-former-employee.md)
+4. メールボックスが 50 GB より小さい場合は、ユーザーからライセンスを削除[](../manage/remove-licenses-from-users.md)し、支払いを停止できます。 ユーザーのアカウントを削除しない。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「元[従業員を削除する」を参照Microsoft 365](../add-users/remove-former-employee.md)。
     
 > [!NOTE]
 > メールボックスの変換中にユーザーのパスワードをリセットする必要はありません。 ただし、パスワードがリセットされない場合、メールボックスの変換が終了した後も **元のユーザー名とパスワードは引き続き機能します**。
@@ -119,7 +123,7 @@ ms.locfileid: "61422269"
  
 
 > [!NOTE]
-> 組織の管理役割グループまたは受信者管理役割グループのメンバーである場合は、Exchange 管理シェルを使用して、ユーザー メールボックスをオンプレミスの共有メールボックスに変更できます。 たとえば、「 `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared` 」のように入力します。
+> 組織の管理役割グループまたは受信者管理役割グループのメンバーである場合は、Exchange 管理シェルを使用して、ユーザー メールボックスをオンプレミスの共有メールボックスに変更できます。 たとえば、`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared` などです。
 
 ## <a name="related-content"></a>関連コンテンツ
 

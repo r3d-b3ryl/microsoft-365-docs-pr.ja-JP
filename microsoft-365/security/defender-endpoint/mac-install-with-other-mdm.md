@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 64847494bba34be838617842481ce6016e0b803a
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: c8ffab850302967b9e36e841bf035cef07ad2775
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171319"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767239"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender 用の異なるモバイル デバイス管理 (MDM) システムを使用した展開
 
@@ -37,7 +36,7 @@ ms.locfileid: "61171319"
  
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
-開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メインの [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。
+開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、 [メインの Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。
 
 
 ## <a name="approach"></a>方法
@@ -67,7 +66,7 @@ Microsoft Defender for Endpoint on macOS は、ベンダー固有の機能に依
 
 ### <a name="package"></a>パッケージ
 
-インストール パッケージ[](mac-install-with-jamf.md)(wdav.pkg) をポータルからダウンロードして、必要なアプリケーション パッケージの[展開Microsoft 365 Defenderします](mac-install-with-jamf.md)。
+インストール パッケージ (wdav.pkg) をポータルからダウンロードして、必要なアプリケーション [パッケージの展開Microsoft 365 Defenderします](mac-install-with-jamf.md)。[](mac-install-with-jamf.md)
 
 パッケージを企業に展開するには、MDM ソリューションに関連付けられている手順を使用します。
 
@@ -77,7 +76,7 @@ Microsoft Defender for Endpoint on macOS は、ベンダー固有の機能に依
 
 macOS 上の Microsoft Defender for Endpoint は macOS の一部では設定、MDM ソリューションは"Custom 設定 プロファイル" と呼ぶ場合があります。
 
-プロパティ リスト jamf/WindowsDefenderATPOnboarding.plist を使用します。これは、Microsoft 365 Defender ポータルからダウンロードされたオンボーディング[パッケージから抽出できます](mac-install-with-jamf.md)。
+プロパティ リスト jamf/WindowsDefenderATPOnboarding.plist を使用します。これは、Microsoft 365 Defender ポータルからダウンロードされたオンボーディング [パッケージから抽出できます](mac-install-with-jamf.md)。
 システムが XML 形式の任意のプロパティ リストをサポートしている場合があります。 その場合は、jamf/WindowsDefenderATPOnboarding.plist ファイルを as-is でアップロードできます。
 または、最初にプロパティ リストを別の形式に変換する必要があります。
 
@@ -94,7 +93,7 @@ KEXT またはカーネル拡張ポリシーを設定します。 Microsoft が�
 
 ### <a name="system-extension-policy"></a>システム拡張ポリシー
 
-システム拡張ポリシーを設定します。 チーム識別子 **UBF8T346G9** を使用し、次のバンドル識別子を承認します。
+システム拡張ポリシーを設定します。 チーム識別子 **UBF8T346G9 を使用** し、次のバンドル識別子を承認します。
 
 - com.microsoft.wdav.epsext
 - com.microsoft.wdav.netext

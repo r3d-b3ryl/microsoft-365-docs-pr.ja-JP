@@ -13,15 +13,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 231adb590bc737c646566417db1891ac96fdb455
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 4573e7002454e9e72648df42352104abaa4c22d6
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156474"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767654"
 ---
 # <a name="onboard-non-windows-devices"></a>Windows 以外のデバイスをオンボードする
 
@@ -43,7 +45,7 @@ Defender for Endpoint は、セキュリティ プラットフォームと非プ
 統合を機能するには、Defender for Endpoint と互換性のある Linux ディストリビューションと macOS の正確なバージョンを知る必要があります。 詳細については、以下を参照してください。
 
 - [Microsoft Defender for Endpoint on Linux システム要件](microsoft-defender-endpoint-linux.md#system-requirements)
-- [Microsoft Defender for Endpoint on macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
+- [Microsoft Defender for Endpoint on macOS システム要件](microsoft-defender-endpoint-mac.md#system-requirements)。
 
 ## <a name="onboarding-non-windows-devices"></a>非デバイスのオンボードWindowsする
 
@@ -51,9 +53,9 @@ Defender for Endpoint は、セキュリティ プラットフォームと非プ
 
 1. オンボーディングの好みの方法を選択します。
 
-   - macOS デバイスの場合は、Microsoft Defender for Endpoint またはサード パーティ製ソリューションを使用してオンボードを選択できます。 詳細については [、「Microsoft Defender for Endpoint on Mac」を参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
+   - macOS デバイスの場合は、Microsoft Defender for Endpoint またはサード パーティ製ソリューションを使用してオンボードを選択できます。 詳細については、「 [Microsoft Defender for Endpoint on Mac」を参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
 
-   - その他の非接続デバイスWindowsサードパーティとの統合を通じてWindowsデバイスのオンボード **を選択します**。
+   - その他の非接続デバイスWindowsサードパーティとの統合を通Windowsデバイスのオンボード **を選択します**。
     1. ナビゲーション ウィンドウで、[パートナーと **API パートナー アプリケーション]** \> **を選択します** 。 サード パーティ製のソリューションが一覧に表示されます。
     2. [パートナー **アプリケーション] ページ** で、ユーザー以外のデバイスをサポートするパートナー Windowsします。
     3. [表示 **] を** クリックしてパートナーのページを開きます。 ページに記載されている手順に従います。
@@ -63,9 +65,9 @@ Defender for Endpoint は、セキュリティ プラットフォームと非プ
 
 ## <a name="offboard-non-windows-devices"></a>オフボードの非Windowsデバイス
 
-macOS および Linux デバイスの場合は、Microsoft Defender for Endpoint からオフボードを選択できます。 ナビゲーション ウィンドウで、[オフボードの選択 **設定** オペレーティング システムの選択] を選択 \>  \> **して、オフボード プロセスを開始します**。
+macOS および Linux デバイスの場合は、Microsoft Defender for Endpoint からオフボードを選択できます。 ナビゲーション ウィンドウで、[オフボードの選択 **設定** \>  \>]を選択して、オフ **ボード プロセスを開始します**。
 
-サードパーティの統合を無効にすることで、Windows以外のデバイスをオフボードすることもできます。 サードパーティのソリューションを統合することで、Windowsプラットフォームを実行しているデバイスのカバレッジ[を有効にします](https://security.microsoft.com/interoperability/partners)。
+サードパーティの統合を無効にすることで、Windows以外のデバイスをオフボードすることもできます。 サードパーティ のソリューションを統合することで、Windowsプラットフォームを実行しているデバイス[のカバレッジを有効にします](https://security.microsoft.com/interoperability/partners)。
 
 ## <a name="related-topics"></a>関連項目
 - [Windows デバイスのオンボード](configure-endpoints.md)

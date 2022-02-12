@@ -11,15 +11,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3df27d3a09b5a19b4e2c4c2ecea1ab0eb8c1e157
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 6d4d76a45d69994c82c2027f57d5c3b045e82397
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245173"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765062"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -35,17 +37,17 @@ ms.locfileid: "62245173"
 
 > [!TIP]
 >
-> - この記事では、Microsoft Defender for Endpoint Plan 2 の最小要件について説明します。 Defender for Endpoint Plan 1 に関する情報をお探しの場合は [、「Requirements for Defender for Endpoint Plan 1」を参照してください](mde-p1-setup-configuration.md#review-the-requirements)。
+> - この記事では、Microsoft Defender for Endpoint Plan 2 の最小要件について説明します。 Defender for Endpoint Plan 1 に関する情報をお探しの場合は、「 [Requirements for Defender for Endpoint Plan 1」を参照してください](mde-p1-setup-configuration.md#review-the-requirements)。
 > - Defender for Endpoint: Defender for Endpoint Tech Community の最新[の機能強化について説明します](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)。
 > - Defender for Endpoint は、最近の MITRE 評価で業界をリードする光学機能と検出機能を実証しました。 詳細については、「[MITRE ATT&CK ベース評価の分析](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)」を参照してください。
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
-Microsoft Defender for Endpoint のライセンス要件については [、「Microsoft Defender for Endpoint ライセンス情報」を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint)。
+Microsoft Defender for Endpoint のライセンス要件については、「 [Microsoft Defender for Endpoint ライセンス情報」を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint)。
 
 
 ライセンスの詳細については、「 [製品](https://www.microsoft.com/licensing/terms/) 条項」サイトを参照し、アカウント チームと一緒に使用して、契約条件の詳細について説明します。
 
-各エディションの機能の配列の詳細については、「Windowsエディションの比較」[を参照Windowsしてください](https://www.microsoft.com/windowsforbusiness/compare)。
+各エディションの機能の配列の詳細については、「Windowsエディションの比較[Windows参照してください](https://www.microsoft.com/windowsforbusiness/compare)。
 
 ## <a name="browser-requirements"></a>ブラウザー要件
 
@@ -61,8 +63,8 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
 ### <a name="supported-windows-versions"></a>サポート対象の Windows バージョン
 
-- Windows 7 SP1 Enterprise ([サポートには ESU が必要です](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq))。
-- Windows 7 SP1 Pro ([サポートには ESU が必要です](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq))。
+- Windows SP1 Enterprise ([サポートには ESU が必要](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)です)。
+- Windows 7 SP1 Pro ([サポートには ESU が必要](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)です)。
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
 - Windows 11 Enterprise
@@ -75,7 +77,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows サーバー
-  - Windows Server 2008 R2 SP1 ([サポートには ESU が必要)](/windows-server/get-started/extended-security-updates-deploy)
+  - Windows Server 2008 R2 SP1 ([サポートには ESU が必要](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server バージョン 1803 以降
@@ -101,7 +103,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 Microsoft Windows オペレーティング システムでコンポーネントが最新の状態である場合、Microsoft Defender for Endpoint のサポートは、それぞれのオペレーティング システムのライフサイクルに従います。 詳細については、「ライフサイクルに関するよく寄せられる [質問」を参照してください](/lifecycle/faq/general-lifecycle)。 通常、新しい機能は、ライフサイクルの終わりに達していないオペレーティング システムでのみ提供されます。 セキュリティ インテリジェンスの更新 (定義とエンジンの更新) と検出ロジックは、少なくとも次の場合まで提供されます。
 
 - サポート [終了日](/lifecycle/products/) (拡張セキュリティ更新プログラム (ESU) プログラムがないオペレーティング システムの場合)。
-- [ESU の終了日 (ESU](/lifecycle/faq/extended-security-updates)プログラムを持つオペレーティング システムの場合)。
+- [ESU の終了日 (ESU](/lifecycle/faq/extended-security-updates) プログラムを持つオペレーティング システムの場合)。
 
 
 
@@ -148,7 +150,7 @@ Microsoft Windows オペレーティング システムでコンポーネント�
 
    ![diagtrack の sc クエリ コマンドの結果。](images/windefatp-sc-qc-diagtrack.png)
 
-サービスが自動的に開始に設定されている場合は、START_TYPEに設定する **必要AUTO_START。**
+サービスがユーザーに設定されていない場合は、サービスを自動的に開始START_TYPEする **必要AUTO_START**。
 
 #### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>コマンド ラインを使用して、診断データ Windowsを自動的に開始する設定
 
@@ -174,7 +176,7 @@ Microsoft Windows オペレーティング システムでコンポーネント�
 
 Defender for Endpoint センサーは、1 日の平均帯域幅 5 MB を使用して Defender for Endpoint クラウド サービスと通信し、サイバー データを報告できます。 ファイルのアップロードや調査パッケージ コレクションなどの 1 回限りでのアクティビティは、この 1 日の平均帯域幅には含まれません。
 
-追加のプロキシ構成設定の詳細については、「デバイス プロキシとインターネット接続の設定 [を構成する」を参照してください](configure-proxy-internet.md)。
+その他のプロキシ構成設定の詳細については、「デバイス プロキシとインターネット接続の設定を構成 [する」を参照してください](configure-proxy-internet.md)。
 
 デバイスをオンボードする前に、診断データ サービスを有効にする必要があります。 このサービスは、既定で 11 の Windows 10およびWindowsされます。
 
@@ -188,7 +190,7 @@ Defender for Endpoint デバイスでセキュリティ インテリジェンス
 
 組織がグループ ポリシーまたは他のMicrosoft Defender ウイルス対策を使用して無効になっている場合は、オンボードされているデバイスをこのグループ ポリシーから除外する必要があります。
 
-サーバーをオンボーディングしている場合、Microsoft Defender ウイルス対策 がサーバー上のアクティブなマルウェア対策ではない場合は、Microsoft Defender ウイルス対策 をパッシブ モードにするかアンインストールするように構成する必要があります。 構成はサーバーのバージョンに依存します。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](microsoft-defender-antivirus-compatibility.md)。
+サーバーをオンボーディングしている場合、Microsoft Defender ウイルス対策 がサーバー上のアクティブなマルウェア対策ではない場合は、Microsoft Defender ウイルス対策 をパッシブ モードにするかアンインストールするように構成する必要があります。 構成はサーバーのバージョンに依存します。 詳細については、「互換性に[関するMicrosoft Defender ウイルス対策参照してください](microsoft-defender-antivirus-compatibility.md)。
 
 > [!NOTE]
 > 通常のグループ ポリシーはタンパープロテクションには適用されません。タンパープロテクションがオンの場合、Microsoft Defender ウイルス対策設定への変更は無視されます。
@@ -197,7 +199,7 @@ Defender for Endpoint デバイスでセキュリティ インテリジェンス
 
 デバイスでマルウェア対策Microsoft Defender ウイルス対策として実行している場合、Defender for Endpoint エージェントは正常にオンボードされます。
 
-サードパーティのマルウェア対策クライアントを実行し、モバイル デバイス管理ソリューションまたは Microsoft エンドポイント マネージャー (現在のブランチ) を使用する場合は、Microsoft Defender ウイルス対策 ELAM ドライバーが有効になっている必要があります。 詳細については、「ポリシーによって[無効Microsoft Defender ウイルス対策を確認する」を参照してください](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
+サードパーティのマルウェア対策クライアントを実行し、モバイル デバイス管理ソリューションまたは Microsoft エンドポイント マネージャー (現在のブランチ) を使用する場合は、Microsoft Defender ウイルス対策 ELAM ドライバーが有効になっている必要があります。 詳細については、「ポリシーによって無効[Microsoft Defender ウイルス対策確認する」を参照してください](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
 ## <a name="related-topics"></a>関連項目
 

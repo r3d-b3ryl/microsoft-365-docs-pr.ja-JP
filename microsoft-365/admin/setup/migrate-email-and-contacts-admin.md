@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid:
 - MET150
 - MOE150
@@ -30,18 +31,21 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Gmail や他のメール プロバイダーから連絡先、予定表、メールをインポートし、Microsoft 365 に移行する方法について説明します。
-ms.openlocfilehash: 91e079d24595c7c7f7d9e37eaddb49d34df886d1
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 7905dd767b29b50466729510ac0e4cff70eb242e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530432"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767522"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Microsoft 365 へのメールと連絡先の移行
 
 Gmail やその他のメール プロバイダーから Microsoft 365 にメールをインポートまたは移行します。
   
  **これに関するヘルプが必要な場合**  [ビジネス サポートMicrosoft 365お問い合わせください](../../business-video/get-help-support.md)。 
+
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、Microsoft の小規模ビジネス スペシャリストとの [作業を検討してください](https://go.microsoft.com/fwlink/?linkid=2186871)。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させるにつれて、従業員と一緒に 24 時間、中小企業の専門家にアクセスできます。
   
 この作業には、デスクトップにインストールされるバージョンの Outlook を使用する必要があります。 Outlook は、大部分の Microsoft 365 の[プラン](https://go.microsoft.com/fwlink/p/?LinkId=723731)に含まれています。
   
@@ -103,6 +107,6 @@ Outlook にアカウント (個人用 Gmail アカウントなど) を追加し�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ビジネス向けMicrosoft 365のセットアップを](plan-your-setup.md)計画する (記事)\
-[アプリケーションOfficeインストール](install-applications.md)(リンク ページ)\
-[概要] [Microsoft 365 管理センター][Microsoft 365 管理センター](./admin-overview/admin-center-overview.md) (ビデオ)
+[ビジネス向けMicrosoft 365のセットアップを計画](plan-your-setup.md)する (記事)\
+[アプリケーションOfficeインストール](install-applications.md) (リンク ページ)\
+[Microsoft 365 管理センターの概要](Microsoft 365 管理センターの概要](../admin-overview/admin-center-overview.md) (ビデオ)

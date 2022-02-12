@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71d453bbc5b94b4685a65c1074244ae98b16448c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 45c08c5a3c304a23b5761d96a4d9aceb1b4f1562
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166808"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766826"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>エンドポイント インシデントの Microsoft Defender の管理
 
@@ -40,7 +40,7 @@ ms.locfileid: "61166808"
 インシデントの管理は、すべてのサイバーセキュリティ操作の重要な部分です。 インシデントを管理するには、[インシデント] キューまたは [インシデント管理] ウィンドウからインシデント **を選択します**。 
 
 
-インシデント キューからインシデントを選択すると、[インシデント管理]ウィンドウが表示されます。インシデントの詳細については、インシデント ページを開きます。
+インシデント キューからインシデントを選択すると、[インシデント管理] ウィンドウが表示されます。インシデントの詳細については、インシデント ページを開きます。
 
 
 ![インシデント管理ウィンドウのイメージ。](images/atp-incidents-mgt-pane-updated.png)
@@ -81,7 +81,7 @@ ms.locfileid: "61166808"
 
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [インシデント キュー](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [インシデント キューを表示および整理する](view-incidents-queue.md)
 - [インシデントの調査](investigate-incidents.md)

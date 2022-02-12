@@ -12,15 +12,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a425c90d52da660c782a1d419f4d6e089cbefe95
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cfdbb84cfcc2cda08572709adb3b13db83e319fa
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168776"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766466"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint 展開の計画
 
@@ -72,12 +74,12 @@ Microsoft Defender for Endpoint の展開を計画して、スイート内のセ
 
 ## <a name="step-3-configure-capabilities"></a>手順 3: 機能を構成する
 
-エンドポイントのオンボード後、Defender for Endpoint のセキュリティ機能を構成して、スイートで使用可能な堅牢なセキュリティ保護を最大限に活用できます。 機能には、次のものが含まれます。
+エンドポイントのオンボード後、Defender for Endpoint のセキュリティ機能を構成して、スイートで使用可能な堅牢なセキュリティ保護を最大限に活用できます。 機能には、次の内容が含まれます。
 
 - エンドポイントの検出および応答
 - 次世代の保護
 - 攻撃面の縮小
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [展開フェーズ](deployment-phases.md)

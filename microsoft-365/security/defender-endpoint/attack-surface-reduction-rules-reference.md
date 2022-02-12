@@ -10,19 +10,24 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar, jcedola'
+ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
+ms.openlocfilehash: ca7f52c0a91540e68c845ca559daecd5736d9b60
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767498"
 ---
-
-
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃表面の縮小ルールのリファレンス
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -31,6 +36,7 @@ ms.date: 02/04/2022
 
 - [サポートされているオペレーティング システムのバージョン](#supported-operating-systems)
 - [サポートされている構成管理システム](#supported-configuration-management-systems)
+- [ルールごとのアラートと通知の詳細](#per-rule-alert-and-notification-details)
 - [ルールごとの説明](#per-rule-descriptions)
   - ルールの説明
   - GUID
@@ -66,7 +72,7 @@ ms.date: 02/04/2022
 |[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y |
 |[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | N | N |
 |[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | Y | Y |
-| **ルール名** | **&nbsp;Windows Server 2016** <sup>[[1](#fn1)]<sup></sup> | **&nbsp;Windows Server 2012 R2** <sup>[[1](#fn1)]<sup></sup> |
+|  |  |  |
 
 (<a id="fn1">1</a>) 2016 年と 2016 年の最新の統合ソリューションをWindows Server 2012します。 詳細については、「Defender [for Endpoint サービスへのオンボード Windows サーバー」を参照してください](configure-server-endpoints.md)。
 
@@ -78,12 +84,12 @@ _パブリック プレビューの終了: サポートされているオペレ�
 
 > [!Note]
 >
-> - 特に指定しない限り、最小 Windows&nbsp; 10 ビルドはバージョン 1709 (RS3、ビルド 16299) 以降です。最小 Windows&nbsp; Server ビルドはバージョン 1809 以降です。
+> 特に指定しない限り、最小 Windows&nbsp; 10 ビルドはバージョン 1709 (RS3、ビルド 16299) 以降です。最小 Windows&nbsp; Server ビルドはバージョン 1809 以降です。
 >
 
 |ルールの名前|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Server|
 |---|:---:|:---:|:---:|
-|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y バージョン 1803 (半期チャネル) 以降 | 
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y バージョン 1803 (半期チャネル) 以降 |
 |[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y バージョン 1809 以降 | Y | Y  <br><br> |
 |[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |
 |[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |
@@ -132,6 +138,53 @@ _パブリック プレビューの終了: サポートされているオペレ�
 - [Microsoft エンドポイント マネージャー CB 1710](/configmgr/core/servers/manage/updates)
 - [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM がMicrosoft Endpoint Configuration Manager。_
 
+## <a name="per-rule-alert-and-notification-details"></a>ルールごとのアラートと通知の詳細
+
+トースト通知は、ブロック モードのすべてのルールに対して生成されます。 他のモードのルールはトースト通知を生成しません
+
+"ルールの状態" が指定されているルールの場合:
+
+- 組み合わせを含む \<ASR Rule, Rule State\> ASR ルールは、高クラウド ブロック レベルのデバイスに対する Microsoft Defender for Endpoint の通知 (トースト通知) を表示するために使用されます。 高いクラウド ブロック レベルではないデバイスは、ASR ルール、ルールの状態、<の組み合わせに>されません。
+- EDRは、指定した状態の ASR ルールに対して生成されますが、クラウド ブロック レベルの高いデバイスに対してだけ生成されます。
+
+| ルール名: | ルールの状態: | サーバーでアラートを生成EDR? <br> (はい&nbsp;\|&nbsp;いいえ) | トースト通知を生成しますか? <br> (はい&nbsp;\|&nbsp;いいえ) |
+|---|:---:|:---:|:---:|
+|   |   |  _高クラウド ブロック レベルのデバイスの場合のみ_ | _ブロック モードの場合のみ_ |
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) |   | N  | Y |
+|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | ブロック  | Y <br> 高クラウド ブロック レベルのデバイスが必要  | Y <br> 高クラウド ブロック レベルのデバイスが必要 |
+|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) |   | N | Y |
+|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | Y |
+|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) |   | Y <br> 高クラウド ブロック レベルのデバイスが必要 | Y <br> 高クラウド ブロック レベルのデバイスが必要 |
+|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | Y |
+|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要 |
+|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ブロック | Y <br> 高クラウド ブロック レベルのデバイスが必要  | Y <br> 高クラウド ブロック レベルのデバイスが必要 |
+|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) |   | N | Y |
+|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | Y |
+|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
+|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要 |
+|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | Y |
+|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要 |
+|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) |   | N | Y |
+|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要 |
+|   |   |   |   |
+  
+## <a name="asr-rule-modes"></a>ASR ルール モード
+
+- **[構成されていない****] または [無効** にする]: これは、ASR ルールが有効になっていないか無効になっている状態です。 この状態のコードは 0 です。
+- **ブロック**: これは、ASR ルールが有効になっている状態です。 この状態のコードは 1 です。
+- **監査**: これは、ASR ルールが展開される組織または環境に対する影響的な動作について評価される状態です。 この状態のコードは 2 です。
+- **警告** これは、ASR ルールが有効になっている状態で、エンド ユーザーに通知を表示しますが、エンド ユーザーはブロックをバイパスできます。 この状態のコードは 6 です。
+
+_警告モード_ は、潜在的に危険なアクションについてユーザーに通知するブロック モードの種類です。 その後、ユーザーはブロック警告メッセージをバイパスし、基になるアクションを許可することができます。 [ **OK** ] を選択してブロックを適用するか、ブロックの時点で生成されるエンド ユーザーのポップアップ トースト通知を使用してバイパス **オプション (ブロック** 解除) を選択できます。 警告がブロック解除された後は、次回警告メッセージが発生するまで操作が許可され、その時点でエンド ユーザーはアクションを再実行する必要があります。
+
+[許可] ボタンをクリックすると、ブロックは 24 時間表示されません。 24 時間後、エンドユーザーはブロックを再度許可する必要があります。 ASR ルールの警告モードは、RS5+ (1809+) デバイスでのみサポートされます。 以前のバージョンのデバイスでバイパスが ASR ルールに割り当てられている場合、ルールはブロックモードになります。
+
+PowerShell を使用して警告モードでルールを設定するには、そのルールを "Warn" AttackSurfaceReductionRules_Actions指定します。 次に例を示します。
+
+```powershell
+-command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
+```
+
 ## <a name="per-rule-descriptions"></a>ルールごとの説明
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>悪用された脆弱な署名済みドライバーの悪用をブロックする
@@ -147,6 +200,9 @@ _パブリック プレビューの終了: サポートされているオペレ�
 > PowerShell を使用してこのルールを [構成できます](enable-attack-surface-reduction.md#powershell)。
 >
 > ドライバーを調べるには、この Web サイトを使用して分析 [用のドライバーを送信します](https://www.microsoft.com/en-us/wdsi/driversubmission)。
+
+<!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
+-->
 
 Intune 名: `Block abuse of exploited vulnerable signed drivers` (まだ使用できません)
 

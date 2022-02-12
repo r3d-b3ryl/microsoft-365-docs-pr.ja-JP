@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f85875308ebbb1316f1efcfc8b96d116864d7b8f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 02aacefc21f5789d686a8be03cd46f8fb7196322
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166148"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766682"
 ---
 # <a name="log-in-to-jamf-pro"></a>Jamf にログインPro
 
@@ -47,6 +46,6 @@ ms.locfileid: "61166148"
      ![ダッシュボード 3 の Jamf Proイメージ。](images/jamfpro-settings.png)
 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 [Jamf グループでデバイス グループをセットアップPro](mac-jamfpro-device-groups.md)
 

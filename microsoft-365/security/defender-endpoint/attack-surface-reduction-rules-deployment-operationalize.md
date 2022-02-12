@@ -11,16 +11,21 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
+ms.openlocfilehash: 3229cd0a98714819009e7d50baab0872f3a67c43
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766586"
 ---
-
-# <a name="step-4-operationalize-asr-rules"></a>手順 4: ASR ルールを操作する
+# <a name="step-4-operationalize-asr-rules"></a>手順 4: ASR ルールを運用化する
 
 攻撃表面の縮小 (ASR) ルールを完全に展開した後は、ASR 関連のアクティビティを監視して対応するプロセスが整っている必要があります。
 
@@ -44,6 +49,8 @@ ms.date: 1/18/2022
 高度な検索を通じて、ASR ルール情報を抽出し、レポートを作成し、特定の ASR ルール監査またはブロック イベントのコンテキストに関する詳細な情報を取得できます。
 
  ASR ルール イベントは、ポータルの詳細な検索セクションの DeviceEvents テーブルからMicrosoft 365 Defenderできます。 たとえば、次のような単純なクエリは、過去 30 日間、ASR ルールをデータ ソースとして持つすべてのイベントをレポートし、アクションタイプカウントで集計します。この場合は ASR ルールの実際のコード名になります。
+
+進む狩猟ポータルに表示される ASR イベントは、1 時間ごとに見られる一意のプロセスに調整されます。 ASR イベントの時刻は、その 1 時間以内に初めてイベントが表示されます。
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender高度な検索クエリコマンド ライン](images/asr-defender365-advanced-hunting3.png)

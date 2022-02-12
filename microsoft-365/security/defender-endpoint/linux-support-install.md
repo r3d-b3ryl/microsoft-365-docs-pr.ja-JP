@@ -14,15 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d9b764425807f45f41f0be5c57ad872223e0c3f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a0b2a571be5f78818279a343d253709e05814908
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166304"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766017"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のインストールに関する問題のトラブルシューティング
 
@@ -71,7 +70,7 @@ ms.locfileid: "61166304"
 |mdatp。Linux.x86_64.deb|Debian と Ubuntu 16.04、18.04、20.04|
 |
 
-手動 [展開の場合](linux-install-manually.md)は、正しいディストリビューションとバージョンが選択されていることを確認します。
+手動 [で展開する](linux-install-manually.md)場合は、正しいディストリビューションとバージョンが選択されていることを確認します。
 
 ## <a name="installation-failed"></a>インストールに失敗しました
 
@@ -123,12 +122,12 @@ service mdatp status
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path> 
     ```
 
-    ここで `<systemd_path>` `/lib/systemd/system` 、Rhel、CentOS、Oracle、SLES の Ubuntu および Debian ディストリビューションおよび /usr/lib/systemd/system' 用です。 次に、手順 2 を再実行します。
+    ここで `<systemd_path>` 、 `/lib/systemd/system` Rhel、CentOS、Oracle、SLES の Ubuntu および Debian ディストリビューションおよび /usr/lib/systemd/system' 用です。 次に、手順 2 を再実行します。
 
-4. 上記の手順が機能しない場合は、SELinux がインストールされ、エンフォースモードになっているか確認してください。 その場合は、これを制限モード (できれば) または無効モードに設定してみてください。 これは、パラメーターをファイル内で "permissive" または "disabled" に設定し、その後再起動 `SELINUX` `/etc/selinux/config` することで実行できます。 詳細については、selinux のマン ページを確認してください。
+4. 上記の手順が機能しない場合は、SELinux がインストールされ、エンフォースモードになっているか確認してください。 その場合は、これを制限モード (できれば) または無効モードに設定してみてください。 これは、パラメーターをファイル内で `SELINUX` "permissive" または "disabled" `/etc/selinux/config` に設定し、その後再起動することで実行できます。 詳細については、selinux のマン ページを確認してください。
 次に、手順 2 を使用して mdatp サービスを再起動します。 試して再起動した後、セキュリティ上の理由から、構成の変更を直ちに元に戻します。
 
-5. ディレクトリ `/opt` がシンボリック リンクの場合は、バインド マウントを作成します `/opt/microsoft` 。
+5. ディレクトリ `/opt` がシンボリック リンクの場合は、バインド マウントを作成します `/opt/microsoft`。
 
 6. デーモンが実行可能なアクセス許可を持っている必要があります。
 
@@ -162,7 +161,7 @@ service mdatp status
 
 ## <a name="command-line-tool-mdatp-isnt-working"></a>コマンド ライン ツール "mdatp" が機能しない
 
-1. コマンド ライン ツールを実行するとエラーが `mdatp` 発生する場合は `command not found` 、次のコマンドを実行します。
+1. コマンド ライン ツールを実行するとエラーが `mdatp` 発生する場合は `command not found`、次のコマンドを実行します。
 
     ```bash
     sudo ln -sf /opt/microsoft/mdatp/sbin/wdavdaemonclient /usr/bin/mdatp

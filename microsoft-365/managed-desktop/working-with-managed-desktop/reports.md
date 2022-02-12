@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: edf1025008fe13161e32a1a824413fd5eda0f5ff
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: f37a02c8cda29f48f926125f353d5e75410d9ab5
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322375"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765494"
 ---
 # <a name="work-with-reports"></a>レポートを操作する
 
@@ -36,6 +36,7 @@ Microsoft Managed Desktop には、いくつかのレポートとダッシュボ
 | **デバイスの状態の傾向** (*プレビューで*) | これは、Microsoft Managed Desktop デバイスの過去 60 日間のデバイスの状態の傾向を監視します。 傾向は、デバイスの状態を、新しい展開など、時間の間に他の変更と関連付けるのに役立ちます。 |
 | [**Windows更新レポート** (](security-updates-report.md)*プレビュー)* | このレポートでは、Microsoft Windowsデスクトップ デバイス間でセキュリティ更新プログラムがどのようにリリースされるのかについて説明します。 |
 | [**アプリケーション使用状況** レポート](app-usage-report.md) | このレポートでは、Microsoft Managed Desktop デバイス全体での一般的なアプリの使用状況に関する情報を提供します。 デバイスがデータをこのレポートに提供するには、オプションの診断データ レベルに設定する必要があります。 |
+| **サービス メトリックス レポート** (*プレビュー)* | このレポートでは、Microsoft Managed Desktop の主要な指標を月単位で簡単に要約できます。 |
 
 ## <a name="endpoint-analytics"></a>エンドポイントの分析
 
@@ -48,7 +49,9 @@ Microsoft Managed Desktop は、エンドポイント分析 [と統合されま�
 
 ## <a name="intune-reports"></a>Intune レポート
 
-Microsoft Intuneは、お客様に代わってデバイスを管理するために使用するサービスの 1 つです。 場合によっては、Intune レポートを使用して Microsoft 管理デスクトップ デバイスの管理を具体的に監視すると便利です。 他のデバイスの管理に使用するレポートから、管理するデバイスを除外できます。 次のレポートでは、Microsoft Managed Desktop デバイスを含めるか除外する機能をフィルター処理できます。
+Microsoft Intuneは、お客様に代わってデバイスを管理するために使用するサービスの 1 つです。
+
+場合によっては、Intune レポートを使用して Microsoft 管理デスクトップ デバイスの管理を具体的に監視すると便利です。 他のデバイスの管理に使用するレポートから、管理するデバイスを除外できます。 次のレポートでは、Microsoft Managed Desktop デバイスを含めるか除外する機能をフィルター処理できます。
 
 - [すべてのデバイス](/mem/intune/remote-actions/device-management#get-to-your-devices)
 - [デバイスのコンプライアンス](/mem/intune/fundamentals/reports#device-compliance-report-organizational)

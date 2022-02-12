@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7f9f51e9ce31881d66ca8a8e72fa128c458229aa
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5cb41b0bd3f185237055daa2d282f0a1d6975a49
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166172"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765542"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 
@@ -135,7 +134,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 - `block` - この適用レベルでは、ユーザーがデバイスで実行できる操作は、ポリシーで定義されている操作に制限されます。 さらに、ユーザーに通知が発生します。
 
 > [!NOTE]
-> 既定では、適用レベルは に設定されています `audit` 。
+> 既定では、適用レベルは に設定されています `audit`。
 
 <br>
 
@@ -162,7 +161,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
   - `execute` - デバイスで実行操作が許可されている
 
 > [!NOTE]
-> アクセス `none` 許可レベルに存在する場合、他のアクセス許可 ( `read` 、 、 、 ) `write` `execute` は無視されます。
+> アクセス`none`許可レベルに存在する場合、他のアクセス許可 (`read`、、`write``execute`または) は無視されます。
 >
 > この `execute` アクセス許可は、Mach-O バイナリの実行のみを参照します。 スクリプトの実行や他の種類のペイロードは含めではありません。
 
@@ -347,15 +346,15 @@ USB デバイスのベンダー ID、製品 ID、シリアル番号を確認す�
 
     ![システム レポート。](images/mac-device-control-lookup-2.png)
 
-1. 左側の列から **[USB] を選択します**。
+1. 左側の列から [USB] を **選択します**。
 
     ![すべての USB デバイスの表示。](images/mac-device-control-lookup-3.png)
 
-1. [USB **デバイス ツリー]** で、接続した USB デバイスに移動します。
+1. [ **USB デバイス ツリー]** で、接続した USB デバイスに移動します。
 
     ![USB デバイスの詳細。](images/mac-device-control-lookup-4.png)
 
-1. ベンダー ID、製品 ID、シリアル番号が表示されます。 ベンダー ID と製品 ID をリムーバブル メディア ポリシーに追加する場合は、後にパーツを追加する必要があります `0x` 。 たとえば、次の図では、ベンダー ID は、 `1000` 製品 ID は `090c` です。
+1. ベンダー ID、製品 ID、シリアル番号が表示されます。 ベンダー ID と製品 ID をリムーバブル メディア ポリシーに追加する場合は、後にパーツを追加する必要があります `0x`。 たとえば、次の図では、ベンダー ID は、 `1000` 製品 ID はです `090c`。
 
 #### <a name="discover-usb-devices-in-your-organization"></a>組織内の USB デバイスを検出する
 
@@ -381,7 +380,7 @@ Intune または JAMF を介して構成プロファイルをプッシュした�
 mdatp device-control removable-media policy list
 ```
 
-このコマンドは、製品が使用しているデバイス制御ポリシーを標準出力に出力します。 この印刷を行う場合は、(a) 構成プロファイルが実際に管理コンソールからデバイスにプッシュされ、(b) このドキュメントで説明するように、有効なデバイス制御ポリシーを使用してください。 `Policy is empty`
+このコマンドは、製品が使用しているデバイス制御ポリシーを標準出力に出力します。 この印刷を `Policy is empty`行う場合は、(a) 構成プロファイルが実際に管理コンソールからデバイスにプッシュされ、(b) このドキュメントで説明するように、有効なデバイス制御ポリシーを使用してください。
 
 ポリシーが正常に配信され、1 つ以上のデバイスが接続されているデバイスで、次のコマンドを実行して、すべてのデバイスと、ポリシーに適用される有効なアクセス許可を一覧表示できます。
 
@@ -400,9 +399,9 @@ mdatp device-control removable-media devices list
 | |-o Mount point: "/Volumes/TESTUSB"
 ```
 
-上記の例では、デバイスに配信されたデバイス制御ポリシーに従って、接続されているリムーバブル メディア デバイスが 1 つしか接続され、アクセス許可が `read` `execute` 付与されています。
+上記の例では`read``execute`、デバイスに配信されたデバイス制御ポリシーに従って、接続されているリムーバブル メディア デバイスが 1 つしか接続され、アクセス許可が付与されています。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Intune のデバイス制御ポリシーの例](mac-device-control-intune.md)
 - [JAMF のデバイス制御ポリシーの例](mac-device-control-jamf.md)
