@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで、管理者がビジネス、学校、または非営利団体のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: f7730e4dcadf8bb8743cd288ba5d38d45ad739b0
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 9ba871a166169a0125b68808c124b10802424dfd
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62523975"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765590"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -46,11 +47,14 @@ ms.locfileid: "62523975"
 
 ユーザーの場合は、自分のパスワードを期限なしに設定する権限はありません。職場または学校のテクニカル サポートに、この記事の手順を実行するように依頼してください。
 
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
+
 ## <a name="set-password-expiration-policy"></a>パスワードの有効期限ポリシーを設定する
 
 特定の時間が経過するとユーザーのパスワードが期限切れになるように設定する場合は、以下の手順に従います。
 
-1. Microsoft 365 管理センターで、**[設定]** > **[組織の設定]** に移動し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**[セキュリティとプライバシー]** タブ</a>を選択します。
+1. Microsoft 365 管理センターで、**[組織設定]** の <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**[セキュリティ & プライバシー]**</a>タブに移動します。
 
     グローバル管理者でない場合は、[セキュリティとプライバシー] オプションは表示されません。
   
@@ -63,7 +67,7 @@ ms.locfileid: "62523975"
 1. 2 つ目のボックスに、パスワードが期限切れになる前にユーザーに通知する日数を入力して、**[保存]** をクリックします。日数を 1 から 30 のうちから選びます。
 
 > [!IMPORTANT]
-> パスワードの有効期限の通知は、Microsoft 365 管理センターまたは Office アプリではサポートされなくなりました。
+> パスワード有効期限の通知は、Office Web アプリまたは[管理センター](https://portal.office.com)でサポートされなくなりました。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>パスワードの有効期限機能に関する重要事項
   
