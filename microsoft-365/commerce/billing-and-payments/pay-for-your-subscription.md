@@ -1,29 +1,35 @@
 ---
 title: サブスクリプションの支払い
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: 'jkinma, jmueller'
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
+- M365-subscription-management
+- Adm_O365
 search.appverid: MET150
 description: Microsoft 365 for business サブスクリプションのお支払いには、クレジット カード、デビット カード、銀行口座をご利用ください。場合によっては、請求書によるお支払いも可能です。
 ms.custom:
-  - okr_SMB
-  - fwlink 808700 for SEPA UI glink 906 for older uI
-  - AdminSurgePortfolio
-  - commerce_billing
-  - AdminTemplateSet
+- okr_SMB
+- fwlink 808700 for SEPA UI glink 906 for older uI
+- AdminSurgePortfolio
+- commerce_billing
+- business_assist
+- AdminTemplateSet
 ms.date: 10/28/2021
+ms.openlocfilehash: 839c7e94a2a89b20eef0779f44d864d69ed3a746
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766790"
 ---
-
 # <a name="how-to-pay-for-your-subscription"></a>サブスクリプションの支払い方法
 
 > [!IMPORTANT]
@@ -32,6 +38,9 @@ ms.date: 10/28/2021
 クレジットカード、デビットカード、または銀行口座を使用して、サブスクリプションの支払いを行うことができます。 場合によっては、小切手または銀行口座振込 (EFT) を使用して、請求書で支払うこともできます。 課金プロファイルがある場合、オプションは少し異なります。 詳細については、「[課金プロファイルを使用してサブスクリプションの支払いをする方法](pay-for-subscription-billing-profile.md)」を参照してください。 アカウントに課金プロファイルがあるかどうかわからない場合は、「[課金プロファイルを理解する](manage-billing-profiles.md)」をご覧ください。
 
 **請求書の支払い先をお知りになりたいですか?** 小切手または銀行口座振込 (EFT) で請求書を支払う場合は、「[小切手または EFT の送信はどこでできますか?](#where-do-i-send-my-check-or-eft-payment)」を参照してください。
+
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
 ## <a name="before-you-begin"></a>はじめに
 

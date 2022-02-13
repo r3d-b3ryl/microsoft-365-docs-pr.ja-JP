@@ -18,6 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
+- business_assist
 - okr_SMB
 - manage_licenses
 - commerce_licensing
@@ -25,12 +26,12 @@ ms.custom:
 search.appverid: MET150
 description: 製品ライセンスを特定のユーザーに割り当てるのか、またはユーザー ライセンスを特定の製品に割り当てるのかによって、ライセンスを割り当てます。
 ms.date: 09/16/2021
-ms.openlocfilehash: 90c567e27abf67bdb5a6cf74da4d64d9156e1432
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 4c9cf07ba93c19607e7d6d005439368ab0111229
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520862"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765938"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 
@@ -42,6 +43,9 @@ ms.locfileid: "61520862"
 > - 一部のサブスクリプションでは、サブスクリプションを購入または更新した後、限られた時間内にのみキャンセルできます。 キャンセル期間が過ぎた場合は、定期的な請求をオフにして、期間の終了時にサブスクリプションをキャンセルします。
 
 [ユーザーを追加すると同時にライセンスを割り当てる方法を説明します](../add-users/add-users.md)。
+
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
 ## <a name="before-you-begin"></a>はじめに
 

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: 57e86f1e41d3b4974a0f148c27be35adcb637714
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 8be6fc228a623f3a1f76efdf56354ba30beb9650
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401416"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767690"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
@@ -124,7 +124,9 @@ Office デスクトップ アプリの共同編集をサポートする設定を
     
     これらの暗号化構成のどれかを使用したラベルは Office アプリで表示されます。 ただし、ユーザーがこれらのラベルを選択し、他のユーザーがドキュメントを編集していない場合、共同編集と自動保存を使用できないという警告が表示されます。 他のユーザーがドキュメントを編集している場合は、ラベルを適用できないというメッセージが表示されます。
 
-- Azure Information Protection 統合ラベル付けクライアントを使用する場合: [その他の要件または制限](/azure/information-protection/known-issues#known-issues-for-co-authoring)については、このラベル付けクライアントのドキュメントを確認してください。
+- Azure Information Protection 統合ラベル付けクライアントを使用する場合: [その他の要件または制限](/azure/information-protection/known-issues#known-issues-for-co-authoring)については、このラベル付けクライアントのドキュメントを確認してください。 
+    > [!NOTE]
+    > 統合ラベル付け クライアントのこれらの制限には、アクセス許可の選択を求めるラベルを選択するユーザーの[ダイアログ ボックスの変更](/azure/information-protection/known-issues#user-interface-changes-when-applying-labels)が含まれます。
 
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>機密度ラベルを使用したファイルの共同編集を有効にする方法
 

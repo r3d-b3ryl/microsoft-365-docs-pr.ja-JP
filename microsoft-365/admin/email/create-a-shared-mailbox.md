@@ -19,18 +19,19 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 共有メールボックスを作成すると、社内の複数のユーザーが 1 つのメール アドレスに送付されたメールを閲覧したり、回答したりできます。
-ms.openlocfilehash: 19e27510b9ffd28aaae739c6d4da4299bca1a4fb
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: f8a7f725e029021626bf408a3797ac6bfbb16215
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422305"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765638"
 ---
 # <a name="create-a-shared-mailbox"></a>共有メールボックスを作成する 
 
@@ -44,6 +45,9 @@ ms.locfileid: "61422305"
 共有メールボックスには共有の予定表も含まれています。全員が予定を入力できる場所として、共有の予定表を利用したい小規模企業は数多くあります。たとえば、客先に訪問する社員が 3 人いる場合、全員で共有の予定表を使用して予定を入力できます。これで、誰がどこにいるのかが常にわかるようになります。
 
 共有メールボックスを作成する前に、「[共有メールボックスについて](about-shared-mailboxes.md)」を読んで詳細をご確認ください。
+
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>共有メールボックスを作成し、メンバーを追加する
   

@@ -18,24 +18,28 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 他のユーザーのメールボックスにアクセスする権利をユーザーに与えます。このアクセス権を持つユーザーは、他のユーザーのメールボックスからメールを読んだり送信したりできます。
-ms.openlocfilehash: 0b3871b57f9c486ca5eea6a5d121821c203f7a20
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 82a254081eba2e9b6f4ef83f952b07c743dee2c1
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421560"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765650"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ
 
 管理者として、一部のユーザーに別のユーザーのメールボックスへのアクセスを許可する会社要件を設定することができます。たとえば、アシスタントが上司のメールボックスの内容を読み取ったり、そこからメールを送信したりできるようにすること、または特定のユーザーが別のユーザーの代理でメールを送信できるようにすることが必要な場合があります。このトピックでは、これを実現する方法を説明します。
   
 共有メールボックスの作成および管理の方法については、「[共有メールボックスを作成する](../email/create-a-shared-mailbox.md)」を参照してください。
+
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>メールボックスのアクセス許可をどのように設定しますか?
 

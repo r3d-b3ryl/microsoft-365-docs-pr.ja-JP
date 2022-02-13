@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 3d28f5bfea3f532abf51d65452dcb9354ce7242d
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 6802947e786f13a577a6f3bf58ea3001599ee4d8
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "62428915"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766082"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -86,7 +86,6 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
 |:-----|:-----|:-----|
 |アプリの依存関係|はい ([最小バージョン](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |いいえ \* |
 |場所による制限|いいえ |はい |
-|条件: カスタムの機密情報の種類に関する Exact Data Match|はい |いいえ |
 |条件: トレーニング可能な分類子|はい |いいえ |
 |条件: メールの共有オプションと追加オプション|いいえ |はい |
 |条件: 例外|いいえ |はい (メールのみ) |
@@ -132,8 +131,8 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
 |既存のラベル |ラベル設定によりオーバーライドする: ファイルやメールの自動ラベル付け  |ポリシーによりオーバーライドする: 自動ラベル付け|
 |:-----|:-----|:-----|
 |任意の優先順位で手動で適用|Word、Excel、PowerPoint: いいえ <br /><br> Outlook: いいえ  |SharePoint および OneDrive: いいえ <br /><br> Exchange: 既定ではいいえですが、構成可能 |
-|自動的に適用され、優先度が低い |Word、Excel、PowerPoint: はい <br /><br> Outlook: はい | SharePoint および OneDrive: はい <br /><br> Exchange: はい |
-|自動的に適用され、優先度が高い |Word、Excel、PowerPoint: いいえ <br /><br> Outlook: いいえ |SharePoint および OneDrive: いいえ <br /><br> Exchange: 既定ではいいえですが、構成可能 |
+|ポリシーから自動的に適用されるラベルまたはデフォルトのラベル、優先度: 低 |Word、Excel、PowerPoint: はい <br /><br> Outlook: はい | SharePoint および OneDrive: はい <br /><br> Exchange: はい |
+|ポリシーから自動的に適用されるラベルまたはデフォルトのラベル、優先度: 高 |Word、Excel、PowerPoint: いいえ <br /><br> Outlook: いいえ |SharePoint および OneDrive: いいえ <br /><br> Exchange: 既定ではいいえですが、構成可能 |
 
 メール自動ラベル付けポリシーの構成可能な設定は、「**メールの追加設定**」 ページにあります。 このページは、Exchange の場所を含む自動ラベル付けポリシーの秘密度ラベルを選択した後に表示されます。
 
@@ -141,7 +140,7 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
 
 Office アプリの組み込みラベル付けについては、Office アプリでの自動ラベル付けに[必要な最小バージョン](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)を確認してください。
 
-Azure Information Protection 統合ラベル付けクライアントは、組み込みおよびカスタムの機密情報の種類に対する自動ラベル付けをサポートしていますが、完全データ一致 (EDM) を使用するトレーニング可能な分類子や機密情報の種類には対応していません。
+Azure Information Protection 統合ラベル付けクライアントは、組み込みおよびカスタムの機密情報タイプに対してのみ自動ラベル付けをサポートし、完全データ一致 (EDM) または名前付きエンティティを使用するトレーニング可能な分類子または機密情報タイプをサポートしません。
 
 Office アプリの自動ラベル付け設定は、[機密ラベルを作成または編集する](create-sensitivity-labels.md)ときに使用できます。 ラベルのスコープとして **[ファイルとメール]** が選択されていることを確認してください。
 
@@ -183,7 +182,7 @@ DLP ポリシーを構成する場合と同様に、インスタンス数と一�
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>ラベルのトレーニング可能な分類子を構成する
 
-このオプションを使用する場合は、自動ラベル付け用に構成された少なくとも 1 つの他の秘密度ラベルと[機密情報の種類のオプション](#configuring-sensitive-info-types-for-a-label)をテナントに公開していることを確認してください。
+このオプションを Microsoft 365 Apps for Windows バージョン 2106 以下、またはMicrosoft 365 Apps for Mac バージョン 16.50 以下で使用する場合、自動ラベル付けと[機密情報の種類オプション](#configuring-sensitive-info-types-for-a-label)用に構成された少なくとも 1 つの他の機密ラベルをテナントに公開していることを確認してください。 これらのプラットフォームでそれ以降のバージョンを使用する場合、この要件は必要ありません。
 
 **トレーニング可能な分類子** のオプションを選択する場合、1 つ以上の事前にトレーニングされた、またはカスタムのトレーニング可能な分類子を選択します。
 

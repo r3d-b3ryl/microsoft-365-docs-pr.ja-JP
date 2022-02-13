@@ -18,6 +18,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 48145df8fbaf5b29774b493f8c408e3bf48cb1b6
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 1279220ceb8de5c5fdb4361a258e2c2bfc1f7061
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322398"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767426"
 ---
 # <a name="set-up-multifactor-authentication"></a>多要素認証を設定する
 
@@ -40,6 +41,9 @@ ms.locfileid: "62322398"
 
 > [!IMPORTANT]
 > 2019 年 10 月 21 日以降にサブスクリプションまたは試用版を購入した場合、サインインすると MFA を要求するメッセージが表示され、[セキュリティの既定](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)の設定は、サブスクリプションに対して自動的に有効になります。
+
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
 ## <a name="watch-turn-on-multifactor-authentication"></a>ウォッチ: 多要素認証を有効にする
 

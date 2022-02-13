@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: アイテム保持ポリシーおよび保持ラベル ポリシーのポリシーおよびポリシーごとの項目の最大数を把握する
-ms.openlocfilehash: d8746f99961d209fb76f1fbe146162d9b6e2ed59
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f7b445ab8fd0afe5fb893933c3475385e09bc84e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370070"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767438"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーとアイテム保持ラベルの制限
 
@@ -37,13 +37,20 @@ ms.locfileid: "61370070"
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>テナントごとのポリシーの最大数
 
-1 つのテナントに最大 10,000 のポリシー (任意の構成) を含めることができます。 この最大値はデータ保持のため複数の異なるポリシーを包含します。またコンプライアンスのための他のポリシー、例えばDLP、情報バリア、電子情報開示、機密度ラベル等も同様です。
+1 つのテナントに最大 10,000 のポリシー (任意の構成) を含めることができます。 この最大値はデータ保持のため複数の異なるポリシーを包含します。またコンプライアンスのための他のポリシー、例えばDLP、情報バリア、電子情報開示、訴訟保持、インプレース保持、機密度ラベル等も同様です。 ただし、この最大値は次の値を除外します。
+
+- SharePoint と OneDrive のポリシーに、保持のみではなく削除のみ、または保持してから削除するラベルを付けます。 例外は、クラウド添付ファイルのラベルポリシーを自動適用する方法で、これは、常に最大 10,000 の中に含まれます。
+- [メッセージング レコード管理 (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) からの Exchange 保持ポリシー。
 
 この ポリシー 10,000個の制限内では、ワークロード毎のデータ保持ポリシーの最大数にもいくつかの制限があります。
 
 - Exchange (任意の構成): 1,800
+    - メールボックスあたり: パフォーマンスに影響を与える前に推奨される最大値は 25 です。 50 はサポートされている制限です。
 - SharePoint または OneDrive: (自動的に含まれるすべてのサイト): 13
 - SharePoint または OneDrive (含まれるまたは除外される特定の場所): 2,600
+
+> [!NOTE]
+> Exchange と SharePoint のこれらの最大数は、保持に限定されませんが、eDiscovery 保留、訴訟保留、インプレース保留などの他の種類の保留ポリシーと共有されます。
 
 Microsoft Teams と Yammer のデータ保持ポリシーでは、データ保持目的でメールボックスを使用しますが、Exchange Online のポリシーの最大数は、Teams と Yammer のデータ保持ポリシーを含みません。
 

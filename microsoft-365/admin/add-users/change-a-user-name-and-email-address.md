@@ -19,22 +19,26 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Microsoft 365 のグローバル管理者が、ユーザー名が変更されるときにユーザーのメール アドレスと表示名を変更する方法について説明します。 '
-ms.openlocfilehash: d5c5190dd5141ff4ee5d43ebdf537cff9617d0a2
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 3c3b83028ba2086cc167895075b9099795d988dc
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370634"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765506"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
 ユーザーが結婚し、姓が変わった場合など、メール アドレスと表示名を変更する必要が生じることがあります。
+
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
 ## <a name="watch-change-a-users-name-or-email-address"></a>視聴: ユーザー名またはメール アドレスを変更する
 

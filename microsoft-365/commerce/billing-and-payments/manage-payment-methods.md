@@ -20,15 +20,16 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid: MET150
 description: Microsoft 365 管理センターでは、既存の支払方法を使用したり、新しい支払方法を追加したりして、Microsoft からビジネス製品やサービスを購入できます。
 ms.date: 04/02/2021
-ms.openlocfilehash: 82a3133e4d22514608348b060b3466a74e184278
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7fde1149d97bb05863f4fd013f501b49203c33f6
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374294"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765530"
 ---
 # <a name="manage-payment-methods"></a>支払方法を管理する
 
@@ -45,6 +46,9 @@ Microsoft からビジネス製品またはサービスを購入する場合、�
 > 一部の国または地域では、銀行口座引き落としによる支払いを利用できません。
 >
 > テナントと同じ国から発行された支払方法を使用する必要があります。
+
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
 ## <a name="watch-update-your-payment-method"></a>ウォッチ: 支払い方法を更新する
 

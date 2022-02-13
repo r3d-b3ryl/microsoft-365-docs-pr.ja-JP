@@ -21,13 +21,14 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: ae8dc1c1d2f603e81d2affd723df2be460a873de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db2f41d485999928a69d299ccdb1295a7e3dc289
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164814"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766814"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 
@@ -38,6 +39,9 @@ ms.locfileid: "60164814"
 ドメインを追加しない場合、組織内のユーザーは、メール アドレスに onmicrosoft.com ドメインを使用します。 ユーザーを追加する前にドメインを追加することが重要です。それにより、ユーザーを再度セットアップする必要がなくなります。
 
 探している内容が見つからない場合は、[ドメインに関する FAQ](../setup/domains-faq.yml) を確認してください。
+
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
 ## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>手順 1: TXT または MX レコードを追加してドメインの所有を確認する 
 
