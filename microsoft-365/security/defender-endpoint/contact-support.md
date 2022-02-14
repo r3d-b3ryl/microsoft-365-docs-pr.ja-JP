@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c0608464384f963e60143309f80587d103a5793d
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 60a389d2422a2d3b2f50f77bc978f9f9bbc4a087
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218660"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62463443"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
 
@@ -46,7 +46,7 @@ Defender for Endpoint は最近、サポート プロセスをアップグレー
 
 少なくとも、サービス サポート管理者またはヘルプ **デスク管理者の** 役割が必要です。
 
-アクセス許可を持つ役割の詳細については、「セキュリティ管理者のアクセス許可 [」を参照してください](/azure/active-directory/roles/permissions-reference#security-administrator)。 アクションを含むロールは `microsoft.office365.supportTickets/allEntities/allTasks` 、ケースを送信できます。
+アクセス許可を持つ役割の詳細については、「セキュリティ管理者のアクセス許可 [」を参照してください](/azure/active-directory/roles/permissions-reference#security-administrator)。 アクションを含むロールは、 `microsoft.office365.supportTickets/allEntities/allTasks` ケースを送信できます。
 
 管理者ロールの一般的な情報については、「管理者ロール [について」を参照してください](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)。
 
@@ -82,7 +82,7 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 > [!NOTE]
 > Microsoft とプレミア サポート契約を結んだ場合は、ウィジェットにプレミア タグが表示されます。 設定されていない場合は、Microsoft アカウント マネージャーに問い合わせください。
 
-### <a name="contact-support"></a>サポートにお問い合せください
+### <a name="contact-support"></a>サポートに連絡
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="連絡先のサポート 2."::: </br>
 
@@ -92,7 +92,7 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 2. (省略可能)サポート ケースに追加のコンテキストを提供するために、問題に関連する添付ファイルを最大 5 つ含める。
 3. 該当する場合は、タイム ゾーンと別の言語を選択します。 要求は Microsoft サポート チームに送信されます。 チームは、サービス要求にまもなく応答します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [サービスに関する問題のトラブルシューティング](troubleshoot-mdatp.md)
-- [サービス正常性の確認](service-status.md)
+- [サービス正常性の確認](/microsoft-365/enterprise/view-service-health)

@@ -111,20 +111,6 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-        - name: クライアントとサービス アプリのサポート
-          items:
-            - name: クライアントとサービス アプリのサポート
-              href: microsoft-365-client-services-app-support.md
-            - name: 証明書ベースの認証
-              href: microsoft-365-client-support-certificate-based-authentication.md
-            - name: 条件付きアクセス
-              href: microsoft-365-client-support-conditional-access.md
-            - name: 多要素認証
-              href: microsoft-365-client-support-multi-factor-authentication.md
-            - name: シングル サインオン
-              href: microsoft-365-client-support-single-sign-on.md
-            - name: 基本的なモビリティ セキュリティと Intune のどちらかを選択する
-              href: /office365/securitycompliance/choose-between-mdm-and-intune
         - name: ハイブリッド先進認証
           items:
             - name: Skype for Business Server と Exchange Server の前提条件

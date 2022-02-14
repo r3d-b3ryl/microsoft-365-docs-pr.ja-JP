@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: c2ccbb0ae11703b8da25569a34655cabee940c5b
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 01d6b5cc77068bc8f86d4a32777663ae251acd8d
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507735"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465301"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business のポリシーの順序を理解する (プレビュー)
 
 > [!IMPORTANT]
-> Microsoft Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と[](https://aka.ms/mdb-preview)IT パートナーに徐々にロールアウトされます。 今後数週間以内に最初の一連の顧客とパートナーをオンボードし、一般提供に至るプレビューを拡大します。 プレビューは一連のシナリオで [起動](mdb-tutorials.md#try-these-preview-scenarios)し、定期的に機能を追加します。
+> Microsoft Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐[](https://aka.ms/mdb-preview)々にロールアウトされます。 今後数週間以内に最初の一連の顧客とパートナーをオンボードし、一般提供に至るプレビューを拡大します。 プレビューは最初の一連 [のシナリオで](mdb-tutorials.md#try-these-preview-scenarios)起動し、定期的に機能を追加します。
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
@@ -34,9 +34,9 @@ ms.locfileid: "61507735"
 
 Microsoft Defender for Business (プレビュー) には、従業員が使用するデバイスが確実に保護されるのに役立つ定義済みのポリシーが含まれています。 セキュリティ チームは、新しいポリシーも追加できます。 たとえば、特定の設定を一部のデバイスに適用し、他のデバイスに異なる設定を適用するとします。 これを行うには、次世代の保護ポリシーやファイアウォール ポリシーなどのポリシーを追加します。
 
-ポリシーが追加されるに従って、優先度の順序が割り当てられているのが分かっています。 定義したポリシーの優先度の順序を編集できますが、既定のポリシーの優先度の順序を変更することはできません。 たとえば、クライアント デバイスWindows、次の世代の保護ポリシーが 3 つあるとします。 この場合、既定のポリシーの優先度は 3 です。 1 と 2 の番号が付いたポリシーの順序を変更できますが、既定のポリシーはリストの番号 3 のままです。 
+ポリシーが追加されるに従って、優先度の順序が割り当てられているのが分かっています。 定義したポリシーの優先度の順序は編集できますが、既定のポリシーの優先度の順序は変更できます。 たとえば、クライアント デバイスWindows、次の世代の保護ポリシーが 3 つあるとします。 この場合、既定のポリシーの優先度は 3 です。 1 と 2 の番号が付いたポリシーの順序を変更できますが、既定のポリシーはリストの番号 3 のままです。 
 
-**複数のポリシーについて覚えておく必要がある重要な点は、デバイスが最初に適用されたポリシーのみを受け取る点です。** 3 つの次世代ポリシーの前の例を参照して、3 つのポリシーすべてによって対象となるデバイスがある場合を考えます。 この場合、これらのデバイスはポリシー番号 1 を受信しますが、番号 2 と 3 のポリシーは受信されません。 
+**複数のポリシーについて覚えておく必要がある重要な点は、デバイスが最初に適用されたポリシーのみを受け取る点です。** 3 つの次世代ポリシーの前の例を参照して、3 つのポリシーすべてによって対象となるデバイスがある場合を考えます。 この場合、これらのデバイスはポリシー番号 1 を受信しますが、2 と 3 という番号のポリシーは受信されません。 
 
 ## <a name="key-points-to-remember-about-policy-order"></a>ポリシーの順序に関する注意点
 

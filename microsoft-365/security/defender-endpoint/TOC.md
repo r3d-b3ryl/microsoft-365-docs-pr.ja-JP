@@ -8,7 +8,6 @@
 ### [プレビュー機能](preview.md)
 ### [データの保存とプライバシー](data-storage-privacy.md)
 ### [Microsoft Defender セキュリティ センターの概要](use.md)
-### [ポータルの概要](portal-overview.md)
 ### [Defender for Endpoint プラン 1]()
 #### [概要](defender-endpoint-plan-1.md)
 #### [セットアップと構成](mde-p1-setup-configuration.md)
@@ -707,7 +706,6 @@
 
 ### [Microsoft Defender for Endpoint サービスに関する問題のトラブルシューティング]()
 #### [サービスに関する問題のトラブルシューティング](troubleshoot-mdatp.md)
-#### [サービス正常性の確認](service-status.md)
 #### [Microsoft Defender for Endpoint サポートに連絡する](contact-support.md)
 
 ### [ライブ応答に関する問題のトラブルシューティング](troubleshoot-live-response.md)

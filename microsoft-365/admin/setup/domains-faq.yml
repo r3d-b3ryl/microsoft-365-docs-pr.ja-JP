@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: FAQ で質問に対する回答を見つけて、ドメイン (onmicrosoft ドメインと転送ドメイン) の詳細について説明します。
-  ms.openlocfilehash: 0b8790ab6c360859d94bb3cc343c1f3d238ece2b
-  ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+  ms.openlocfilehash: d2af94766d11e643856c3139c87ddc643057b957
+  ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/03/2022
-  ms.locfileid: "62326924"
+  ms.lasthandoff: 02/09/2022
+  ms.locfileid: "62464288"
 title: ドメインに関する FAQ
 summary: "\n\nこの記事では、Microsoft 365 のドメインに関してよく寄せられる質問にお答えします。\n\n質問の回答が見つからない場合は、コメントを残してお知らせください。ご質問を FAQ の一覧に追加します。\n"
 sections:
@@ -44,7 +44,7 @@ sections:
   - question: ドメイン名とは何ですか?
     answer: "ドメインとは、メール アドレスの **@** 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。通常は、  *yourbusiness.com*  や  *stateuniversity.edu*  のように、組織の名前と標準的なインターネット サフィックスの形式を取ります。 \n  \nMicrosoft 365 で「**rob\\@contoso.com**」のようなカスタム ドメインを使用すると、ブランドの信頼性や認知度を高めることができます。 \n  \n[Microsoft 365 でドメインを購入して](../get-help-with-domains/buy-a-domain-name.md) 自動的に設定するか、ドメイン レジストラーで購入したり、入手済みのドメインを使用することができます。\n    \n"
   - question: DNS プロバイダーで特定のレコードの種類がサポートされない場合はどうなりますか?
-    answer: "独自の DNS レコードを管理している場合、DNS ホストが Microsoft 365 に必要な DNS レコードの一部しかサポートしていないと、Microsoft 365 の一部の機能は動作しません。 必要な DNS レコードをすべてサポートしているレジストラーにドメインを移行することをお勧めします。\n  \nすべての必須の DNS レコードをサポートするプロバイダー。\n  \n- Dynadot\n    \n- eNomCentral\n    \n- Europe Registry\n    \n- GoDaddy\n    \n- Hover\n    \n- MyHosting.com\n    \n- Name.com\n    \n- Nearly Free Speech\n    \n- Nettica\n    \n- Network Information Center (NIC)\n    \n- Network Solutions\n    \n- Register.com\n  \n"
+    answer: "独自の DNS レコードを管理している場合、DNS ホストが Microsoft 365 に必要な DNS レコードの一部しかサポートしていないと、Microsoft 365 の一部の機能は動作しません。 必要な DNS レコードをすべてサポートしているレジストラーにドメインを移行することをお勧めします。\n  \nすべての必須の DNS レコードをサポートするプロバイダー。\n  \n- Dynadot\n    \n- eNomCentral\n    \n- Europe Registry\n\n- Cloudflare\n    \n- GoDaddy\n    \n- Hover\n    \n- MyHosting.com\n    \n- Name.com\n    \n- Nearly Free Speech\n    \n- Nettica\n    \n- Network Information Center (NIC)\n    \n- Network Solutions\n    \n- Register.com\n  \n"
   - question: Microsoft 365 の既定のドメインを設定または変更するにはどうすれば良いですか?
     answer: "既定のドメインを選択するには、1 つ以上のカスタム ドメインが Microsoft 365 に追加されている必要があります。\n\n::: moniker range=\"o365-worldwide\"\n\n1. 管理センターで、**[設定]** \\> <a href=\"https://go.microsoft.com/fwlink/p/?linkid=834818\" target=\"_blank\">[ドメイン]</a> ページの順に移動します。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n1. 管理センターで、**[設定]** > <a href=\"https://go.microsoft.com/fwlink/p/?linkid=2007048\" target=\"_blank\">[ドメイン]</a> ページの順に移動します。\n\n::: moniker-end\n    \n2. [**ドメイン**] ページで、新しいメール アドレスの既定として設定するドメインを選択します。 \n    \n3. [**既定に設定**] を選択します。\n    \n::: moniker range=\"o365-worldwide\"\n\n*.onmicrosoft.com* ドメインの最初の部分の名前を変更することはできません。 \n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n*.partner.onmschina.cn* ドメインの最初の部分の名前を変更することはできません。 \n\n::: moniker-end\n\n> [!NOTE]\n> 既定のドメインを変更しても、ユーザーの資格情報やアプリケーションやサービスへのアクセスには影響はありません。 ユーザーが関連付けられているドメインを変更すると、メール、オンライン ストレージ、ログイン資格情報に影響します。\n"
   - question: Microsoft 365 でカスタム サブドメインまたは複数のドメインを追加することはできますか?

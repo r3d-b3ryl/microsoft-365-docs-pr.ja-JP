@@ -11,14 +11,19 @@ ms.date: 02/03/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
-ms.reviewer: 'inbadian, shlomiakirav'
+ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
-  - SMB
-  - M365-security-compliance
-  - m365initiative-defender-business
+- SMB
+- M365-security-compliance
+- m365-initiative-defender-business
+ms.openlocfilehash: 81cd2774115478f4d85fa1878d7ce8a598600e7f
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465423"
 ---
-
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business でポリシーを表示または編集する (プレビュー)
 
 > [!IMPORTANT]
@@ -26,7 +31,7 @@ ms.collection:
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
-Microsoft Defender for Business (プレビュー) では、デバイスに適用されるポリシーによってセキュリティ設定が構成されます。 セットアップと構成のエクスペリエンスを簡素化するために、Defender for Business (プレビュー) には、オンボード後すぐに会社のデバイスを保護するための事前構成済みのポリシーが含まれています。 既定のポリシーを使用したり、ポリシーを編集したり、独自のポリシーを作成することができます。
+Microsoft Defender for Business (プレビュー) では、デバイスに適用されるポリシーによってセキュリティ設定が構成されます。 セットアップと構成のエクスペリエンスを簡素化するために、Defender for Business (プレビュー) には事前に構成されたポリシーが含まれています。 既定のポリシーを使用したり、ポリシーを編集したり、独自のポリシーを作成することができます。
 
 **この記事では、次の方法について説明します**。
 
@@ -42,10 +47,10 @@ Microsoft Defender for Business (プレビュー) では、デバイスに適用
 
 ## <a name="default-policies-in-defender-for-business"></a>Defender for Business の既定のポリシー
 
-Defender for Business (プレビュー) には、会社のデバイスを保護するための主なポリシーの 2 種類があります。
+Defender for Business (プレビュー) には、組織のデバイスを保護するための主なポリシーの 2 種類があります。
 
 - **次世代の保護ポリシー。** このポリシーは、Microsoft Defender ウイルス対策脅威保護機能の構成方法を決定します。
-- **ファイアウォール ポリシー:** 会社のデバイスに対するネットワーク トラフィックの流れとネットワーク トラフィックの間の流れを決定する
+- **ファイアウォール ポリシー:** 組織のデバイスに対するネットワーク トラフィックの流れと、組織のデバイスからのフローを決定する
 
 
 ## <a name="view-your-existing-policies"></a>既存のポリシーを表示する
@@ -105,11 +110,11 @@ Defender for Business (プレビュー) には、会社のデバイスを保護�
 
    1. 名前と説明を指定します。 この情報は、後でユーザーとチームがポリシーを識別するのに役立ちます。
    2. ポリシーの順序を確認し、必要に応じて編集します。 (詳細については、「ポリシーの順序 [」を参照](mdb-policy-order.md)してください)。
-   3. **[次へ]** を選択します。 
+   3. [**次へ**]を選択します。 
 
 7. [デバイス グループ **] タブ** で、新しいデバイス グループを作成するか、既存のグループを使用します。 ポリシーは、デバイス グループを介してデバイスに割り当てられます。 以下に注意する必要があるものがあります。
 
-   - 最初は、会社のユーザーが会社のデータと電子メールにアクセスするために使用しているデバイスを含む、既定のデバイス グループのみを持っている可能性があります。 既定のデバイス グループを保持して使用できます。
+   - 最初は、組織のユーザーが組織のデータと電子メールにアクセスするために使用しているデバイスを含む、既定のデバイス グループのみを持っている可能性があります。 既定のデバイス グループを保持して使用できます。
    - 既定のポリシーとは異なる特定の設定を持つポリシーを適用する新しいデバイス グループを作成します。 
    - デバイス グループを設定するときに、オペレーティング システムのバージョンなど、特定の条件を指定します。 条件を満たすデバイスは、除外しない限り、そのデバイス グループに含まれます。 
    - 定義する既定のデバイス グループとカスタム デバイス グループを含むすべてのデバイス グループは、Azure Active Directory (Azure AD) に格納されます。

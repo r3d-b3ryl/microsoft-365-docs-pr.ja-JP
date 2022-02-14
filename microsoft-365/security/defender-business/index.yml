@@ -10,17 +10,17 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  - m365initiative-defender-business
+  - m365-initiative-defender-business
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 01/03/2022
-  ms.openlocfilehash: 4e86c5b6ae127fa8d7a273b8ea3e311c5be01769
-  ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+  ms.date: 02/08/2022
+  ms.openlocfilehash: e612ef906d7e095fc3b95cccd09a90565818c717
+  ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/27/2022
-  ms.locfileid: "62244549"
+  ms.lasthandoff: 02/09/2022
+  ms.locfileid: "62465218"
 landingContent:
 - title: 概要
   linkLists:
@@ -30,13 +30,25 @@ landingContent:
       url: mdb-overview.md
     - text: 簡略化された構成プロセス
       url: mdb-simplified-configuration.md
-    - text: ビジネス向け Defender を取得する方法
-      url: get-defender-business.md
     - text: 中小企業のプランを比較する
       url: compare-mdb-m365-plans.md
     - text: ユーザーとのMicrosoft 365 Lighthouse
       url: mdb-lighthouse-integration.md
-- title: 設定
+- title: 作業の開始
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: ビジネス向け Defender の取得
+      url: get-defender-business.md
+    - text: セットアップ ウィザードを使用する
+      url: mdb-use-wizard.md
+    - text: ポータルの移動
+      url: mdb-get-started.md
+    - text: '[脅威の管理] &のダッシュボードを表示する'
+      url: mdb-view-tvm-dashboard.md
+    - text: チュートリアルとシミュレーションを試す
+      url: mdb-tutorials.md
+- title: セットアップと構成
   linkLists:
   - linkListType: deploy
     links:
@@ -52,20 +64,10 @@ landingContent:
       url: mdb-onboard-devices.md
     - text: 手順 5 - セキュリティ設定を構成する
       url: mdb-view-edit-policies.md
-- title: 作業の開始
-  linkLists:
-  - linkListType: get-started
-    links:
-    - text: ポータルの移動
-      url: mdb-get-started.md
-    - text: チュートリアルとシミュレーションを試す
-      url: mdb-tutorials.md
-- title: 使用
+- title: 脅威の表示と対応
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: デバイスの表示と管理
-      url: mdb-manage-devices.md
     - text: インシデントの表示と管理
       url: mdb-view-manage-incidents.md
     - text: 脅威への対応と軽減
@@ -74,14 +76,12 @@ landingContent:
       url: mdb-review-remediation-actions.md
     - text: レポートの表示と使用
       url: mdb-reports.md
-- title: 管理
+- title: セキュリティ ポリシーの管理
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: ポリシーの表示、編集、作成
       url: mdb-view-edit-create-policies.md
-    - text: デバイス グループを作成する
-      url: mdb-create-edit-device-groups.md
     - text: ファイアウォール ポリシーのルールを管理する
       url: mdb-custom-rules-firewall.md
   - linkListType: reference
@@ -92,6 +92,16 @@ landingContent:
       url: mdb-next-gen-configuration-settings.md
     - text: ファイアウォールの設定
       url: mdb-firewall.md
+- title: デバイスを管理する
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: デバイスの表示と管理
+      url: mdb-manage-devices.md
+    - text: デバイス グループを作成する
+      url: mdb-create-edit-device-groups.md
+    - text: デバイスのオンボード
+      url: mdb-onboard-devices.md
 - title: ヘルプとサポート
   linkLists:
   - linkListType: reference

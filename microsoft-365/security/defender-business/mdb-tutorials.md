@@ -16,21 +16,21 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 15c596a921c38df20c40788ec3dbbf791dea79ca
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ddaac75774c79ac946754cea5089507e0972fc98
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61874006"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464920"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business のチュートリアルとシミュレーション (プレビュー)
 
 > [!IMPORTANT]
-> Microsoft Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と[](https://aka.ms/mdb-preview)IT パートナーに徐々にロールアウトされます。 今後数週間以内に最初の一連の顧客とパートナーをオンボードし、一般提供に至るプレビューを拡大します。 プレビューは一連のシナリオで [起動](#try-these-preview-scenarios)し、定期的に機能を追加します。
+> Microsoft Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐[](https://aka.ms/mdb-preview)々にロールアウトされます。 今後数週間以内に最初の一連の顧客とパートナーをオンボードし、一般提供に至るプレビューを拡大します。 プレビューは最初の一連 [のシナリオで](#try-these-preview-scenarios)起動し、定期的に機能を追加します。
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
-Microsoft Defender for Business (プレビュー) のセットアップが完了したばかりの場合は、Defender for Business (プレビュー) の動作についてどこから学ぶのか疑問に思う場合があります。 この記事では、試すプレビュー シナリオと、Defender for Business (プレビュー) で使用できるいくつかのチュートリアルとシミュレーションについて説明します。 これらのリソースは、Defender for Business (プレビュー) が会社でどのように機能するのか確認するために設計されています。
+Microsoft Defender for Business (プレビュー) のセットアップが完了したばかりの場合は、Defender for Business (プレビュー) の動作についてどこから学ぶのか疑問に思う場合があります。 この記事では、試すプレビュー シナリオと、Defender for Business (プレビュー) で使用できるいくつかのチュートリアルとシミュレーションについて説明します。 これらのリソースは、Defender for Business (プレビュー) が組織でどのように機能するのか確認するために設計されています。
 
 >
 > **少し時間ありますか?**
@@ -45,11 +45,11 @@ Microsoft Defender for Business (プレビュー) のセットアップが完了
 
 | シナリオ  | 説明  |
 |---------|---------|
-| ローカル スクリプトを使用したデバイスのオンボード     | Defender for Business (プレビュー) では、各Windows 10でダウンロードして実行するスクリプトを使用して、デバイスと 11 台のデバイスをオンボードできます。 スクリプトは、ユーザー (Azure Active Directory) とのAzure ADを作成し、デバイスを Microsoft Intune。 詳細については、「Defender for Business (プレビュー)でローカル スクリプトを使用してデバイスをオンボードする [」を参照してください](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business)。         |
-| デバイスを使用したオンボード Microsoft Intune     | Defender for Endpoint を取得する前Microsoft Intuneを既に使用していた場合は、Microsoft Intuneデバイスをオンボードできます。 macOS、iOS、Linux、および Android デバイスのオンボーディングを試Microsoft Intune。 詳細については、「デバイスの[登録」を参照Microsoft Intune。](/mem/intune/enrollment/device-enrollment)        |
-| セキュリティ ポリシーと設定の編集     | Defender for Business (プレビュー) でセキュリティ ポリシーと設定を管理している場合は、[デバイス構成] ページを使用してポリシーを表示および編集します。 詳細については、「Microsoft Defender for Business (プレビュー)のポリシーを表示 [または編集する」を参照してください](mdb-view-edit-policies.md)。        |
-| シミュレートされた攻撃を実行する   | Defender for Business (プレビュー) では、いくつかのチュートリアルとシミュレーションを利用できます。 これらのチュートリアルとシミュレーションは、Defender for Business (プレビュー) の脅威保護機能が会社でどのように機能するのか、直接説明するように設計されています。 1 つ以上のチュートリアルを試す場合は、「Microsoft Defender for Business (プレビュー) の推奨チュートリアル [」を参照してください](#recommended-tutorials-for-defender-for-business)。         |
-| [インシデントの表示] Microsoft 365 Lighthouse     | ユーザーが Microsoft クラウド ソリューション プロバイダー[をMicrosoft 365 Lighthouse](/partner-center/enrolling-in-the-csp-program)場合は、顧客のテナント全体のインシデントを、Microsoft 365 Lighthouseポータルですぐに表示できます。 詳細については、「Microsoft 365 Lighthouse [Microsoft Defender for Business (プレビュー)」を参照してください](mdb-lighthouse-integration.md)。       |
+| ローカル スクリプトを使用したデバイスのオンボード     | Defender for Business (プレビュー) では、各Windows 10でダウンロードして実行するスクリプトを使用して、デバイスと 11 台のデバイスをオンボードできます。 スクリプトは、ユーザー (Azure Active Directory) とのAzure ADを作成し、デバイスを Microsoft Intune。 詳細については、「Defender for Business (プレビュー)でローカル スクリプトを使用してデバイスをオンボード [する」を参照してください](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business)。         |
+| デバイスを使用したオンボード Microsoft Intune     | Defender for Endpoint を取得する前Microsoft Intuneを既に使用していた場合は、Microsoft Intuneデバイスをオンボードできます。 macOS、iOS、Linux、および Android デバイスのオンボーディングを試Microsoft Intune。 詳細については、「デバイスの[登録」を参照Microsoft Intune](/mem/intune/enrollment/device-enrollment)。        |
+| セキュリティ ポリシーの編集     | Defender for Business (プレビュー) でセキュリティ ポリシーを管理している場合は、[デバイス構成] ページを使用してポリシーを表示および編集します。 詳細については、「Microsoft Defender for Business (プレビュー)のポリシーを表示 [または編集する」を参照してください](mdb-view-edit-policies.md)。        |
+| シミュレートされた攻撃を実行する   | Defender for Business (プレビュー) では、いくつかのチュートリアルとシミュレーションを利用できます。 これらのチュートリアルとシミュレーションは、Defender for Business (プレビュー) の脅威保護機能が組織でどのように機能できるのか、直接説明するように設計されています。 1 つ以上のチュートリアルを試す方法については、「 [Microsoft Defender for Business (プレビュー)の推奨チュートリアル」を参照してください](#recommended-tutorials-for-defender-for-business)。         |
+| [インシデントの表示] Microsoft 365 Lighthouse     | ユーザーが [Microsoft クラウド ソリューション プロバイダーをMicrosoft 365 Lighthouse](/partner-center/enrolling-in-the-csp-program)している場合は、顧客のテナント間のインシデントをすぐにポータルでMicrosoft 365 Lighthouseできます。 詳細については、「Microsoft 365 Lighthouse [Microsoft Defender for Business (プレビュー)」を参照してください](mdb-lighthouse-integration.md)。       |
 
 
 ## <a name="recommended-tutorials-for-defender-for-business"></a>Defender for Business の推奨チュートリアル
@@ -71,9 +71,9 @@ Microsoft Defender for Business (プレビュー) のセットアップが完了
 
 ## <a name="how-to-access-the-tutorials"></a>チュートリアルにアクセスする方法
 
-1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
+1. ポータル () にMicrosoft 365 Defenderサインイン[https://security.microsoft.com](https://security.microsoft.com)します。
 
-2. ナビゲーション ウィンドウの [エンドポイント] で **、[チュートリアル**] **を選択します**。
+2. ナビゲーション ウィンドウの [エンドポイント] **で、[チュートリアル**] **を選択します**。
 
 3. 次のいずれかのチュートリアルを選択します。
 

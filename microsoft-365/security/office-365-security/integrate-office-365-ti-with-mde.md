@@ -20,19 +20,19 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea7d4ba04b14c8889a3a95e225aaaf09dfa3e070
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 67406984e73f39858f4a7329a8c8520fcd35ac5c
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938182"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464761"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint とOffice 365 Microsoft Defender を使用する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender for Office 365](defender-for-office-365.md)は[、Microsoft Defender for Endpoint で動作するように構成できます](/windows/security/threat-protection)。
+[Microsoft Defender for Office 365](defender-for-office-365.md)は、[Microsoft Defender for Endpoint で動作するように構成できます](/windows/security/threat-protection)。
 
 Microsoft Defender for Office 365 Microsoft Defender for Endpoint と統合すると、セキュリティ運用チームがユーザーのデバイスが危険にさらされている場合に迅速に監視し、アクションを実行できます。 たとえば、統合が有効になると、セキュリティ運用チームは、検出された電子メール メッセージの影響を受ける可能性のあるデバイスと、Microsoft Defender for Endpoint のデバイスに対して生成された最近のアラートの数を確認できます。
 
@@ -40,10 +40,10 @@ Microsoft Defender for Office 365 Microsoft Defender for Endpoint と統合す�
 
 ![Microsoft Defender for Endpoint が有効になっている場合は、通知を含むデバイスの一覧を表示できます。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-この例では、検出された電子メール メッセージの受信者が 4 つのデバイスを持ち、1 つはアラートを持っているのを確認できます。 デバイスのリンクをクリックすると、サイト ポータル ([](../defender-endpoint/microsoft-defender-security-center.md)以前は Microsoft 365 Defender) にページがMicrosoft Defender セキュリティ センター。
+この例では、検出された電子メール メッセージの受信者が 4 つのデバイスを持ち、1 つはアラートを持っているのを確認できます。 デバイスのリンクをクリックすると、そのページがポータルのMicrosoft 365 Defender[されます](/microsoft-365/security/defender/microsoft-365-defender)。
 
 > [!TIP]
-> 新しいMicrosoft 365 Defenderポータルは、ユーザーを置き換Microsoft Defender セキュリティ センター。 「Microsoft [Defender for Endpoint in Microsoft 365 Defender」を参照してください](../defender/microsoft-365-security-center-mde.md)。
+> 新しいMicrosoft 365 Defenderポータルは、ユーザーを置き換Microsoft Defender セキュリティ センター。 「[Microsoft Defender for Endpoint in Microsoft 365 Defender」を参照してください](../defender/microsoft-365-security-center-mde.md)。
 
 ## <a name="requirements"></a>要件
 
@@ -57,21 +57,21 @@ Microsoft Defender for Office 365 Microsoft Defender for Endpoint と統合す�
 
 Microsoft Defender for Endpoint Office 365 Microsoft Defender の統合は、Defender for Endpoint と Defender for Endpoint の両方Office 365。
 
-1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
+1. ポータル () にMicrosoft 365 Defenderサインイン[https://security.microsoft.com](https://security.microsoft.com)します。
 
-2. [電子メール **] グループ & エクスプローラーに** \> **移動します**。 
+2. [メール] **グループ&エクスプローラーに移動** \> **します**。 
 
-3. [エクスプローラー **] ページ** の画面の右上隅にある **[MDE** ファイル] を選択設定。
+3. [エクスプローラー **] ページ** の画面の右上隅で、[**MDE**] を選択設定。
 
-3. 表示される **Microsoft Defender for Endpoint** 接続のフライアウトで、[エンドポイント用 Microsoft **Defender** Connect] (トグル オン) をオンにし、[閉じる] ![ ](../../media/scc-toggle-on.png) を **選択します**。
+3. 表示される **Microsoft Defender for Endpoint** 接続のフライアウトで、[エンドポイント用 **Microsoft Defender** Connect] (![トグル オン)](../../media/scc-toggle-on.png) をオンにし、[閉じる] を選択 **します**。
 
     :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE 接続。":::
 
-4. ナビゲーション ウィンドウで、[次へ]**を設定。** [エンドポイント]**設定[** エンドポイント]**を選択します。**
+4. ナビゲーション ウィンドウで、[次へ] **を設定**。 [エンドポイント] **ページ設定**[エンドポイント] **を選択します。**
 
-5. 開く **[エンドポイント] ページで** 、[高度な機能] **を選択します**。
+5. 開く **[エンドポイント] ページ** で、[高度な機能] **を選択します**。
 
-6. [脅威インテリジェンス] **Office 365まで** 下にスクロールし、オンにします ( ![ トグルオン ](../../media/scc-toggle-on.png) )。
+6. [脅威インテリジェンス] **接続Office 365下に** スクロールし、オンにします (![トグルオン)。](../../media/scc-toggle-on.png)
 
    完了したら、[基本設定の保存 **] を選択します**。
 

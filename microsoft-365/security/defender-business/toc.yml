@@ -7,13 +7,23 @@
           href: mdb-overview.md
         - name: 簡略化された構成プロセス
           href: mdb-simplified-configuration.md
-        - name: Defender for Business を取得する方法 (プレビュー)
-          href: get-defender-business.md
         - name: 中小企業のプランを比較する
           href: compare-mdb-m365-plans.md
         - name: ユーザーとのMicrosoft 365 Lighthouse
           href: mdb-lighthouse-integration.md
-    - name: セットアップと構成
+    - name: 作業の開始
+      items:
+        - name: ビジネス向け Defender の取得 (プレビュー)
+          href: get-defender-business.md
+        - name: セットアップ ウィザードを使用する
+          href: mdb-use-wizard.md
+        - name: ポータルの使用を開始する
+          href: mdb-get-started.md
+        - name: ダッシュボードを脆弱性の管理する
+          href: mdb-view-tvm-dashboard.md
+        - name: チュートリアルとシミュレーションを試す
+          href: mdb-tutorials.md
+    - name: Defender for Business のセットアップと構成
       items:
         - name: セットアップの概要
           href: mdb-setup-configuration.md
@@ -27,16 +37,8 @@
           href: mdb-onboard-devices.md
         - name: 手順 5 - セキュリティ設定を構成する
           href: mdb-configure-security-settings.md
-    - name: 概要
+    - name: 検出された脅威の表示と対応
       items:
-        - name: ポータルの使用を開始する
-          href: mdb-get-started.md
-        - name: チュートリアルとシミュレーションを試す
-          href: mdb-tutorials.md
-    - name: ビジネス向け Microsoft Defender の使用 (プレビュー)
-      items:
-        - name: デバイスの表示と管理
-          href: mdb-manage-devices.md
         - name: インシデントの表示と管理
           href: mdb-view-manage-incidents.md
         - name: 脅威への対応と軽減
@@ -45,20 +47,24 @@
           href: mdb-review-remediation-actions.md
         - name: レポートの表示と使用
           href: mdb-reports.md
-    - name: 設定とポリシーの管理
+    - name: セキュリティ ポリシーの管理
       items:
         - name: ポリシーの表示、編集、作成
           href: mdb-view-edit-create-policies.md
         - name: ポリシーの順序
           href: mdb-policy-order.md
-        - name: デバイス グループを作成する
-          href: mdb-create-edit-device-groups.md
         - name: 次世代の保護設定
           href: mdb-next-gen-configuration-settings.md
         - name: ファイアウォールの設定
           href: mdb-firewall.md
         - name: ファイアウォール ポリシーのルールを管理する
           href: mdb-custom-rules-firewall.md
+    - name: デバイスを管理する
+      items:
+        - name: デバイスの表示と管理
+          href: mdb-manage-devices.md
+        - name: デバイス グループを作成する
+          href: mdb-create-edit-device-groups.md
     - name: 参照情報
       items:
         - name: ヘルプを受ける方法やサポートに問い合わせする方法

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 16f5289cced499b3e64a401c2fa4a107f49b85fb
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: d331cf93097f66ddc5a464710d67b864419ab05c
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171283"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464661"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 
@@ -43,15 +43,15 @@ ms.locfileid: "61171283"
 
 ## <a name="how-client-behavioral-blocking-works"></a>クライアントの動作のブロックのしくみ
 
-[Microsoft Defender ウイルス対策、](microsoft-defender-antivirus-in-windows-10.md)不審な動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃など、デバイスで検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと適切な動作をミリ秒単位で区別し、各成果物を分類します。 ほぼリアルタイムで、アーティファクトが悪意のあると判明すると、デバイス上でブロックされます。
+[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)、デバイス上で疑わしい動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃を検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと適切な動作をミリ秒単位で区別し、各成果物を分類します。 ほぼリアルタイムで、アーティファクトが悪意のあると判明すると、デバイス上でブロックされます。
 
-疑わしい動作が検出されると、アラートが生成[](alerts-queue.md)され、Microsoft 365 Defender ポータル[(以前](microsoft-defender-security-center.md)はMicrosoft 365 Defender)。
+疑わしい動作が検出されると、アラートが生成[](alerts-queue.md)され、攻撃が検出および停止されている間に、"初期アクセスアラート" などのアラートがトリガーされ、[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) ポータル (以前は Microsoft 365 Defender) に表示されます。
 
 クライアントの動作ブロックは、攻撃の開始を防ぐだけでなく、実行を開始した攻撃を停止するのに役立つため、効果的です。 また、フィードバック [ループブロック](feedback-loop-blocking.md) (別の動作ブロックと格納機能) を使用すると、組織内の他のデバイスに対する攻撃が防止されます。
 
 ## <a name="behavior-based-detections"></a>動作ベースの検出
 
-動作ベースの検出の名前は[、MITRE ATT](https://attack.mitre.org/matrices/enterprise)&CK マトリックスに従Enterprise。 名前付け規則は、悪意のある動作が観察された攻撃段階を特定するのに役立ちます。
+動作ベースの検出の名前は、[MITRE ATT と CK マトリックス&に従ってEnterprise](https://attack.mitre.org/matrices/enterprise)。 名前付け規則は、悪意のある動作が観察された攻撃段階を特定するのに役立ちます。
 
 |戦術|検出の脅威名|
 |---|---|
@@ -74,7 +74,7 @@ ms.locfileid: "61171283"
 
 ## <a name="configuring-client-behavioral-blocking"></a>クライアントの動作ブロックの構成
 
-組織で Defender for Endpoint を使用している場合、クライアントの動作ブロックは既定で有効になっています。 ただし、動作ブロックや格納を含むすべての Defender [](behavioral-blocking-containment.md)for Endpoint 機能を利用するには、Defender for Endpoint の次の機能が有効で構成されていることを確認してください。
+組織で Defender for Endpoint を使用している場合、クライアントの動作ブロックは既定で有効になっています。 ただし、動作のブロックや格納を含むすべての Defender for [](behavioral-blocking-containment.md)Endpoint 機能を利用するには、Defender for Endpoint の次の機能が有効で構成されていることを確認してください。
 
 - [Defender for Endpoint baselines](configure-machines-security-baseline.md)
 - [Defender for Endpoint にオンボードされているデバイス](onboard-configure.md)

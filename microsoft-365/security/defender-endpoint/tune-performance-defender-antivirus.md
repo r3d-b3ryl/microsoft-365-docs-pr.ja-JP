@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6350b91a700000a5d8fecec90462d53721d2f1ca
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 91dd3dc8563e7bd443362c47190139101a5ede61
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936019"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464324"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>パフォーマンス アナライザー (Microsoft Defender ウイルス対策
 
@@ -57,18 +57,18 @@ ms.locfileid: "61936019"
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    where `-RecordTo` パラメーターは、トレース ファイルが保存される完全なパスの場所を指定します。 コマンドレットの詳細については、「Microsoft Defender ウイルス対策[コマンドレット」を参照してください](/powershell/module/defender)。
+    where `-RecordTo` パラメーターは、トレース ファイルが保存される完全なパスの場所を指定します。 コマンドレットの詳細については、「コマンドレット[のMicrosoft Defender ウイルス対策参照してください](/powershell/module/defender)。
 
 2. パフォーマンスに影響を与えるプロセスまたはサービスがある場合は、関連するタスクを実行して状況を再現します。
 
-3. Enter **キーを押** して録音を停止して保存するか **、Ctrl + C キーを押して録音** をキャンセルします。
+3. Enter **キーを押** して録音を停止して保存するか、 **Ctrl + C キーを押して録音** をキャンセルします。
 
-4. パフォーマンス アナライザーのパラメーターを使用して結果を分析 `Get-MpPerformanceReport` します。 たとえば、コマンドを実行すると、パフォーマンスに影響を与える上位 3 つのファイルに対する上位 10 回のスキャンの一覧 `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` がユーザーに提供されます。 
+4. パフォーマンス アナライザーのパラメーターを使用して結果を分析 `Get-MpPerformanceReport`します。 たとえば、コマンドを実行すると `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`、パフォーマンスに影響を与える上位 3 つのファイルに対する上位 10 回のスキャンの一覧がユーザーに提供されます。 
 
-コマンド ライン パラメーターとオプションの詳細については [、「New-MpPerformanceRecording」](#new-mpperformancerecording) および [「Get-MpPerformanceReport」を参照してください](#get-mpperformancereport)。
+コマンド ライン パラメーターとオプションの詳細については、「 [New-MpPerformanceRecording](#new-mpperformancerecording) 」および「 [Get-MpPerformanceReport」を参照してください](#get-mpperformancereport)。
 
 > [!NOTE]
-> 記録を実行するときに、「Windows Performance Recorder が既に記録されているため、パフォーマンス記録を開始できません」というエラーが表示された場合は、次のコマンドを実行して、新しいコマンドを使用して既存のトレースを停止します **。wpr -cancel -instancename** MSFT_MpPerformanceRecording
+> 記録を実行するときに、「Windows Performance Recorder が既に記録されているため、パフォーマンス記録を開始できません」というエラーが表示された場合は、次のコマンドを実行して、新しいコマンドを使用して既存のトレースを停止します。**wpr -cancel -instancename** MSFT_MpPerformanceRecording
 
 ### <a name="performance-tuning-data-and-information"></a>パフォーマンスチューニングのデータと情報
 
@@ -85,18 +85,18 @@ ms.locfileid: "61936019"
 
 - **エクスポートするには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
 
-- **変換するには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
+- **変換するには、次の値を使用します**。 `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
 #### <a name="for-json"></a>JSON の場合
 
-- **変換するには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
+- **変換するには、次の値を使用します**。 `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
 ### <a name="requirements"></a>要件
 Microsoft Defender ウイルス対策アナライザーには、次の前提条件があります。
 
 - サポートされているWindowsバージョン: Windows 10、Windows 11、Windows Server 2016以上
 - プラットフォーム バージョン: 4.18.2108.7+
-- PowerShell バージョン: PowerShell バージョン 5.1、PowerShell ISE
+- PowerShell バージョン: PowerShell バージョン 5.1、PowerShell ISE、リモート PowerShell (4.18.2201.10+)、PowerShell 7.x (4.18.2201.10+)
 
 ## <a name="powershell-reference"></a>PowerShell リファレンス
 次の 2 つの新しい PowerShell コマンドレットを使用して、パフォーマンスを調整Microsoft Defender ウイルス対策。 
@@ -116,11 +116,11 @@ New-MpPerformanceRecording -RecordTo <String >
 ```
 
 #### <a name="description-new-mpperformancerecording"></a>説明: New-MpPerformanceRecording
-コマンドレット `New-MpPerformanceRecording` は、スキャンのパフォーマンス記録をMicrosoft Defender ウイルス対策します。 これらのパフォーマンス記録には、Microsoft-Antimalware-Engine および NT カーネル プロセス イベントが含まれているので [、Get-MpPerformanceReport](#get-mpperformancereport) コマンドレットを使用してコレクション後に分析できます。
+コマンドレット`New-MpPerformanceRecording`は、スキャンのパフォーマンス記録をMicrosoft Defender ウイルス対策します。 これらのパフォーマンス記録には、Microsoft-Antimalware-Engine および NT カーネル プロセス イベントが含まれているので、 [Get-MpPerformanceReport](#get-mpperformancereport) コマンドレットを使用してコレクション後に分析できます。
 
-この `New-MpPerformanceRecording` コマンドレットは、問題のあるファイルに関する分析情報を提供し、問題のあるファイルのパフォーマンスが低下するMicrosoft Defender ウイルス対策。 このツールは "AS IS" で提供され、除外に関する提案を提供することを意図したツールではありません。 除外によって、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
+この`New-MpPerformanceRecording`コマンドレットは、問題のあるファイルに関する分析情報を提供し、問題のあるファイルのパフォーマンスが低下するMicrosoft Defender ウイルス対策。 このツールは "AS IS" で提供され、除外に関する提案を提供することを意図したツールではありません。 除外によって、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
 
-パフォーマンス アナライザーの詳細については [、「Performance Analyzer docs」を参照](/windows-hardware/test/wpt/windows-performance-analyzer) してください。
+パフォーマンス アナライザーの詳細については、「 [Performance Analyzer docs」を参照](/windows-hardware/test/wpt/windows-performance-analyzer) してください。
 
 > [!IMPORTANT]
 > このコマンドレットには、管理者特権が必要です。
@@ -140,7 +140,16 @@ Windows 10 以降を参照してください。
 New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 ```
 
-上記のコマンドは、パフォーマンス記録を収集し、指定されたパスに保存します **。.\Defender-scans.etl**。
+上記のコマンドは、パフォーマンス記録を収集し、指定されたパス **に保存します。.\Defender-scans.etl**。
+
+##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>例 2: リモート PowerShell セッションのパフォーマンス記録を収集する
+
+```powershell
+$s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
+New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $s
+```
+
+上記のコマンドは、Server02 のパフォーマンス記録 (引数 $s のパラメーター セッションで指定) を収集し、指定したパス C **:\LocalPathOnServer02\trace.etl on Server02** に保存します。
 
 #### <a name="parameters-new-mpperformancerecording"></a>パラメーター: New-MpPerformanceRecording
 
@@ -150,6 +159,17 @@ Microsoft Defender マルウェア対策のパフォーマンス記録を保存�
 ```yaml
 Type: String
 Position: Named
+Default value: None
+Accept pipeline input: False 
+Accept wildcard characters: False
+```
+
+##### <a name="-session"></a>-Session 
+パフォーマンス記録を作成して保存する PSSession オブジェクトMicrosoft Defender ウイルス対策します。 このパラメーターを使用する場合、RecordTo パラメーターはリモート コンピューター上のローカル パスを参照します。 Defender プラットフォーム バージョン 4.18.2201.10 で使用できます。
+
+```yaml
+Type: PSSession[]
+Position: 0
 Default value: None
 Accept pipeline input: False 
 Accept wildcard characters: False
@@ -193,11 +213,11 @@ Get-MpPerformanceReport    [-Path] <String>
 ```
 
 #### <a name="description-get-mpperformancereport"></a>説明: Get-MpPerformanceReport
-このコマンドレットは、以前に収集された Microsoft Defender ウイルス対策 パフォーマンス記録 `Get-MpPerformanceReport` [(New-MpPerformanceRecording)](#new-mpperformancerecording)を分析し、Microsoft Defender ウイルス対策 スキャンに最も大きな影響を与えるファイル パス、ファイル拡張子、およびプロセスを報告します。
+`Get-MpPerformanceReport`このコマンドレットは、以前に収集された Microsoft Defender ウイルス対策 パフォーマンス記録 ([New-MpPerformanceRecording](#new-mpperformancerecording)) を分析し、Microsoft Defender ウイルス対策 スキャンに最も大きな影響を与えるファイル パス、ファイル拡張子、およびプロセスを報告します。
 
 パフォーマンス アナライザーは、問題のあるファイルに関する分析情報を提供し、問題のあるファイルのパフォーマンスが低下するMicrosoft Defender ウイルス対策。 このツールは"AS IS" で提供され、除外に関する提案を提供することを意図したツールではありません。 除外によって、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
 
-パフォーマンス アナライザーの詳細については [、「Performance Analyzer docs」を参照](/windows-hardware/test/wpt/windows-performance-analyzer) してください。
+パフォーマンス アナライザーの詳細については、「 [Performance Analyzer docs」を参照](/windows-hardware/test/wpt/windows-performance-analyzer) してください。
 
 **サポートされている OS のバージョン**
 
@@ -235,7 +255,7 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:10
 #### <a name="parameters-get-mpperformancereport"></a>パラメーター: Get-MpPerformanceReport
 
 ##### <a name="-minduration"></a>-MinDuration
-レポートに含まれるファイル、拡張機能、およびプロセスのスキャン期間または合計スキャン期間の最小期間を指定します。**0.1234567sec、0.1234ms、0.1us、** または有効な TimeSpan のような値を受け入れる。  
+レポートに含まれるファイル、拡張機能、およびプロセスのスキャン期間または合計スキャン期間の最小期間を指定します。  **0.1234567sec**、 **0.1234ms**、 **0.1us**、または有効な TimeSpan のような値を受け入れる。
 
 ```yaml
 Type: String
