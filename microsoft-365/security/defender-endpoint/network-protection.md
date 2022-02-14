@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: overview
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: dfa84cf167dfdb366ad4a7c636a85a30b6de24a4
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: b94e7f959c44e44e5b61dfd0536b3c1077d0edc5
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326935"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807202"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -42,6 +42,9 @@ ms.locfileid: "62326935"
 
 > [!TIP]
 > ネットワーク保護のしくみについては、「Microsoft Defender for Endpoint testground」の [demo.wd.microsoft.com を参照](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) してください。
+
+> [!NOTE]
+> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
 
 ## <a name="requirements-for-network-protection"></a>ネットワーク保護の要件
 
@@ -90,7 +93,7 @@ DeviceNetworkEvents
 
 1. [XML を直接コピーします](event-views.md)。
 
-2. [**OK**] を選択します。
+2. **[OK]** を選択します。
 
 この手順では、ネットワーク保護に関連する次のイベントのみを表示するためにフィルター処理するカスタム ビューを作成します。
 

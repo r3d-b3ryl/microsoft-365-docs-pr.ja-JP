@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: オンプレミスのユーザー アカウントに非ルーティング ドメインが関連付けられている場合、Microsoft 365 テナントとの同期前に実行する手順について説明します。
-ms.openlocfilehash: 5b1ae0f11cc024dc4fa216ae67959da82b936e00
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bea80123c1a2db11baa07cd3344f65303cdd1084
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212799"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806602"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
 
@@ -43,13 +43,13 @@ Azure AD Connect では、ユーザーがオンプレミスで使用している
   
 ### <a name="change-your-primary-domain"></a>プライマリ ドメインを変更する
 
-プライマリ ドメインを、contoso.com など、Microsoft 365 で確認したドメインに変更します。これで、ドメイン contoso.local を使用しているすべてのユーザーが contoso.com に更新されます。ただし、これは非常に複雑なプロセスです。それよりも簡単な解決策として、次のセクションで説明されています。
+プライマリ ドメインを、ドメイン内で確認したドメイン (たとえば、Microsoft 365に変更 contoso.com。 その後、ドメイン contoso.local を持つすべてのユーザーが、contoso.com。 ただし、これは関連するプロセスであり、より簡単なソリューションについては、次のセクションで説明します。
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>UPN サフィックスを追加してユーザーをそのサフィックスに更新する
 
 Microsoft 365 で確認したドメイン (複数の場合あり) と一致するように、AD DS で新しい UPN サフィックス (複数の場合あり) を登録すると、".local" の問題を解決できます。新しいサフィックスを登録した後、ユーザーの UPN を更新して、".local" を新しいドメイン名で置き換えます。その結果、ユーザー アカウントは billa@contoso.com のようになります。
   
-確認済みドメインを使用するように UPN を更新すると、オンプレミス AD DS と Microsoft 365 を同期する準備が完了します。
+確認済みドメインを使用するために UPN を更新した後、オンプレミスの DS と ADを同期Microsoft 365。
   
 #### <a name="step-1-add-the-new-upn-suffix"></a>手順 1: 新しい UPN サフィックスを追加する**
   
@@ -90,7 +90,7 @@ Microsoft 365 で確認したドメイン (複数の場合あり) と一致す�
    
 ### <a name="use-powershell-to-change-the-upn-suffix-for-all-of-your-users"></a>すべてのユーザーの UPN サフィックスを変更するために PowerShell を使用する
 
-更新するユーザー アカウントが大量になる場合は、Windows PowerShell を使用すると作業が簡単になります。次の例では、コマンドレット [Get-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617241(v=technet.10)) と [Set-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617215(v=technet.10)) を使用して、すべての contoso.local サフィックスを AD DS で contoso.com に変更します。 
+更新するユーザー アカウントが多数ある場合は、PowerShell を使用する方が簡単です。 次の例では、[Get-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617241(v=technet.10)) コマンドレットと [Set-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617215(v=technet.10)) コマンドレットを使用して、AD DS のすべての contoso.local サフィックスを contoso.com に変更します。 
 
 たとえば、次の PowerShell コマンドを実行すると、すべての contoso.local サフィックスが contoso.com に更新されます。
     

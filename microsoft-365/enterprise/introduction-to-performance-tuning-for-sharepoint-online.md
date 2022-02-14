@@ -17,20 +17,20 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: この記事では、オンラインで最高のパフォーマンスを得るページを設計する際に考慮する必要がある具体的なSharePoint説明します。
-ms.openlocfilehash: 0a9dc1b5a6d94fe3e2afec11aeeded8f27069bac
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: deabb059e2121743b35d5519e4b8684a08dd28b4
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200139"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807238"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online のパフォーマンス チューニングの概要
 
 この記事では、オンラインで最高のパフォーマンスを得るページを設計する際に考慮する必要がある具体的なSharePoint説明します。
      
-## <a name="sharepoint-online-metrics"></a>SharePointオンライン 指標
+## <a name="sharepoint-online-metrics"></a>SharePointの指標
 
-オンラインの次の広範な指標SharePointパフォーマンスに関する実際のデータを提供します。
+オンラインの次の広範なSharePointは、パフォーマンスに関する実際のデータを提供します。
   
 - ページの読み込み速度
     
@@ -46,7 +46,7 @@ ms.locfileid: "60200139"
   
 - ほとんどのページは、オンライン上でSharePointします。
     
-- カスタマイズされていないページは非常に迅速に読み込まれます。
+- カスタマイズされていないページはすばやく読み込まれます。
     
 - OneDrive for Business、チーム サイトとシステム ページ (_layoutsなど) は、すべて読み込みも簡単です。
     
@@ -56,7 +56,7 @@ ms.locfileid: "60200139"
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>パフォーマンスを確認するときに標準のユーザー アカウントを使用する
 
-サイト コレクション管理者、サイト所有者、エディター、または共同作成者は、追加のセキュリティ グループに属し、追加のアクセス許可を持ち、ページに読み込SharePoint要素を追加します。
+サイト コレクション管理者、サイト所有者、エディター、または共同作成者は、別のセキュリティ グループに属し、より多くのアクセス許可を持ち、ページに読み込SharePoint追加の要素を持っています。
   
 これは、SharePoint および SharePoint Online に適用されますが、オンプレミスのシナリオでは、SharePoint Online と同じほど簡単に違いを確認できません。
   
@@ -106,13 +106,13 @@ SharePoint Online
     
 - Web からアプリケーション サーバーへ
     
-サーバーの操作が遅くなる可能性があるもう 1 つの問題は、キャッシュ ミスです。 オンプレミスのサイトとはSharePoint、以前にアクセスしたページに対して同じサーバーをヒットする可能性が非常に低い場合があります。これにより、オブジェクトのキャッシュは使用されなくなりました。
+サーバーの操作が遅くなる可能性があるもう 1 つの問題は、キャッシュ ミスです。 オンプレミスのSharePointとは異なり、以前にアクセスしたページに対して同じサーバーにアクセスする可能性が低くなっています。これにより、オブジェクトのキャッシュは廃止されます。
   
 ### <a name="network-connection"></a>ネットワーク接続
 
 WAN を使用しないオンプレミス SharePointを使用すると、データセンターとエンド ユーザーの間で高速接続を使用できます。 一般に、ネットワークの観点から簡単に管理できます。
   
-オンラインSharePoint、考慮すべきいくつかの要素があります。例えば：
+オンラインSharePoint、考慮すべきいくつかの要因があります。たとえば、次のようになります。
   
 - Microsoft ネットワーク
     
@@ -128,7 +128,7 @@ WAN を使用しないオンプレミス SharePointを使用すると、デー�
     
 - サーバーへの物理的な距離が大きい
     
-オンラインで活用できる機能の 1 SharePointは、Microsoft CDN (Content Delivery Network) です。 このCDNは、基本的に複数のデータセンターに展開されるサーバーの分散コレクションです。 クライアントがCDNサーバーから離れた場合でも、ページ上のコンテンツをクライアントに近いサーバーでホストSharePointできます。 Microsoft は、今後、カスタマイズできないページのローカル インスタンス (たとえば、オンライン管理者ホーム ページなど) を格納SharePoint使用します。 CDN の詳細については、「コンテンツ配信 [ネットワーク」を参照してください](content-delivery-networks.md)。
+オンラインで使用できる機能の 1 SharePointは、Microsoft CDN (Content Delivery Network) です。 このCDNは、基本的に複数のデータセンターに展開されるサーバーの分散コレクションです。 クライアントがCDNサーバーから離れた場合でも、ページ上のコンテンツをクライアントに近いサーバーでホストSharePointできます。 Microsoft は今後、この機能を使用して、カスタマイズできないページのローカル インスタンス (たとえば、SharePoint管理ホーム ページ) を格納します。 CDN の詳細については、「コンテンツ配信 [ネットワーク」を参照してください](content-delivery-networks.md)。
   
 注意する必要がありますが、あまり実行できない可能性がある点は、ISP の接続速度です。 簡単な速度テスト ツールは、接続速度を示します。
   
@@ -136,7 +136,7 @@ WAN を使用しないオンプレミス SharePointを使用すると、デー�
 
 パフォーマンスの観点から Web ブラウザーで考慮すべきいくつかの要因があります。
   
-複雑なページにアクセスすると、パフォーマンスに影響します。 ほとんどのブラウザーはキャッシュが小さい (約 90 MB) ですが、平均的な Web ページは通常約 1.6 MB です。 これは使い慣れるのに時間はかからない。
+複雑なページにアクセスすると、パフォーマンスに影響します。 ほとんどのブラウザーではキャッシュが小さい (約 90 MB)、平均 Web ページは通常約 1.6 MB です。 これは使い慣れるのに時間はかからない。
   
 帯域幅も問題になる可能性があります。 たとえば、ユーザーが別のセッションでビデオを視聴している場合、ユーザーのページのパフォーマンスにSharePointされます。 ユーザーがメディアをストリーミングするのを防ぐことはできないが、ページがユーザーに対して読み込む方法を制御できます。
   

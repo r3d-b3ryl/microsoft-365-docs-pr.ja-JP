@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365solution-scenario
 ms.date: ''
-ms.openlocfilehash: 98c97afb34518f32e4d8a5da03ad35d99e5494cd
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: fb46d0c03aaaaad016ca13be5bfa26a19887794c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320801"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807454"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 
@@ -37,6 +37,9 @@ ms.locfileid: "62320801"
 
 > [!TIP]
 > また、Microsoft Defender のデモ シナリオ Web サイトを [参照して、](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) demo.wd.microsoft.com の保護機能がどのように機能するのか確認することもできます。
+
+> [!NOTE]
+> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
 
 ## <a name="enable-network-protection-in-audit-mode"></a>監査モードでネットワーク保護を有効にする
 

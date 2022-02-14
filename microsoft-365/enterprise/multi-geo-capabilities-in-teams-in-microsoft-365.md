@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-spintranet
 ms.localizationpriority: medium
 description: 複数地域でのTeamsのMicrosoft 365について説明します。
-ms.openlocfilehash: e561332052f226fe98d0304bd6a76d6b76cfd1c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0315a9ff0429c5e00c662bd7345a3b6a39a591c3
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177281"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805870"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>複数地域の機能 (Microsoft Teams
 
-複数地域機能を使用するとTeams場所Teamsチャット データを保存できます。 チャット データは、プライベート メッセージ、チャネル メッセージ、チャットで使用される画像などのチャット メッセージで構成されます。
+複数地域の機能を使用Teams、Teamsの場所に保存するチャット データの保存を有効にできます。 チャット データは、プライベート メッセージ、チャネル メッセージ、チャットで使用される画像などのチャット メッセージで構成されます。
 
 Teamsユーザーとグループに優先データの場所 (PDL) を使用して、データを格納する場所を決定します。 PDL が設定されていないか無効な場合、データはテナントの中央の場所に格納されます。
 
@@ -43,7 +43,7 @@ Teamsユーザーとグループに優先データの場所 (PDL) を使用し�
 
 1 対 1 または 1 対多のチャットの保存場所は、チャットを作成したユーザーの PDL に基づいて行います。 そのユーザーの PDL が変更された場合、チャットは新しい地域の場所に移行されます。 会議チャットの保存場所は、会議開催者の PDL に基づいて行います。
 
-ユーザーのデータの現在の場所を[Teams、PowerShell](/powershell/module/teams/connect-microsoftteams)に接続Teams次のコマンドを実行します。
+ユーザーのデータの現在の場所をTeams、PowerShell に接続Teams[次の](/powershell/module/teams/connect-microsoftteams)コマンドを実行します。
 
 ```PowerShell
 Get-MultiGeoRegion -EntityType User -EntityId <UPN>
@@ -51,15 +51,15 @@ Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 
 ## <a name="channel-messages"></a>チャネル メッセージ
 
-各Microsoft 365グループには、関連するデータを格納する地域の場所を示す優先データの場所 (PDL) があります。 Teamsチームに関連付けられたグループの PDL を使用して、そのチームのチャネル メッセージング データを格納する場所を決定します。 これには、プライベート チャネルと、チャネル会議内で発生するチャットが含まれます。
+各Microsoft 365グループには、関連するデータを格納する地域の場所を示す優先データの場所 (PDL) があります。 Teamsチームに関連付けられたグループの PDL を使用して、そのチームのチャネル メッセージング データを格納する場所を決定します。 これには、チャネル会議内で発生するプライベート チャネルとチャットが含まれます。
 
 ユーザーが新しいチームを作成すると、そのユーザーの PDL によって、グループに割り当てられている PDL がMicrosoft 365されます。 グループ PDL は、そのチームのデータの格納場所を決定します。 そのユーザーの PDL が後で変更された場合、グループの PDL は変更されません。
 
 既存のチームの場合、管理者がチームをバックアップする Microsoft 365 グループの PDL を追加または変更すると、そのチームのチャネル メッセージング データが移行キューに追加され、指定した地域の場所に移動されます。
 
-グループグループの PDL をMicrosoft 365、選択Teamsに移行するデータをキューに入れられます。 ただし、グループに関連付けられたSharePointを自動的に移行するわけではありません。 「サイトを別の地域に移動する」の手順に従って、SharePoint[を個別に移動する必要があります](/microsoft-365/enterprise/move-sharepoint-between-geo-locations)。 異なる場所にある 1 つのグループのデータとTeamsデータSharePointしないように、両方の手順を実行してください。
+グループグループの PDL をMicrosoft 365、選択Teamsに移行するデータをキューに入れられます。 ただし、グループに関連付けられているSharePointを自動的に移行するわけではありません。 「サイトを別の地域の場所に移動する」の手順に従って[、SharePointを個別に移動する必要があります](/microsoft-365/enterprise/move-sharepoint-between-geo-locations)。 異なる場所にある 1 つのグループのデータとTeamsデータSharePointしないように、両方の手順を実行してください。
 
-チームのデータの現在の場所を見つけるには[、PowerShell](/powershell/module/teams/connect-microsoftteams) Teamsに接続し、次のコマンドを実行します。
+チームのデータの現在の場所を見つけるには、[PowerShell Teamsに](/powershell/module/teams/connect-microsoftteams)接続し、次のコマンドを実行します。
 
 ```PowerShell
 Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
@@ -67,7 +67,7 @@ Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
 
 ## <a name="user-experience"></a>ユーザー エクスペリエンス
 
-Teams複数地域はエンド ユーザーにシームレスです。 ユーザーまたはグループの PDL を変更すると、それぞれのデータが移行のためにキューに入れ、移行が自動的に行われるので、移行の実行中にアクティブな場合でも、ユーザーまたは Teams クライアントに影響はありません。
+Teamsジオはエンド ユーザーにシームレスに接続できます。 ユーザーまたはグループの PDL を変更すると、それぞれのデータが移行のためにキューに入れ、移行が自動的に行われます。移行の実行中にアクティブな場合でも、ユーザーまたは Teams クライアントに影響はありません。
 
 ## <a name="see-also"></a>関連項目
 

@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: a4e3d03a8293dbfeef53687d6a91fdfcd165a44a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 996a96f957d7446b0b951d4f1b3a34c822f64f49
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322049"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806662"
 ---
 # <a name="evaluate-controlled-folder-access"></a>制御されたフォルダー アクセスを評価する
 
@@ -41,6 +41,9 @@ ms.locfileid: "62322049"
 
 > [!TIP]
 > また、Microsoft Defender for Endpoint のデモ シナリオ web サイト demo.wd.microsoft.com、機能 [が](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 動作しているのを確認し、その動作を確認することもできます。
+
+> [!NOTE]
+> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
 
 ## <a name="use-audit-mode-to-measure-impact"></a>監査モードを使用して影響を測定する
 

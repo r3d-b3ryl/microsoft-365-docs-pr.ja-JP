@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Web Essentials でミニフィケーションとバンドルの手法を使用して HTTP 要求を削減する方法と、Web オンラインでページを読み込むのにかかる時間SharePointします。
-ms.openlocfilehash: bf9c997fc5245fbe58e1ffd8c306f9818783bd3f
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: fabf690f523cabf67fe775bbd1a10251a477f633
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281473"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807118"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online での縮小とバンドル
 
 この記事では、Web Essentials でミニフィケーションとバンドルの手法を使用して HTTP 要求の数を減らし、SharePoint Online のページの読み込みにかかる時間を短縮する方法について説明します。
   
-Web サイトをカスタマイズすると、カスタマイズをサポートするためにサーバーに多数の追加ファイルを追加する結果になります。 JavaScript、CSS、およびイメージを追加すると、サーバーへの HTTP 要求の数が増え、Web ページの表示にかかる時間が長くなります。 同じ種類のファイルが複数の場合は、これらのファイルをバンドルして、これらのファイルのダウンロードを高速化できます。
+Web サイトをカスタマイズすると、カスタマイズをサポートするためにサーバーに多数の追加ファイルを追加することができます。 JavaScript、CSS、およびイメージを追加すると、サーバーへの HTTP 要求の数が増え、Web ページの表示にかかる時間が長くなります。 同じ種類のファイルが複数の場合は、これらのファイルをバンドルして、これらのファイルのダウンロードを高速化できます。
   
 JavaScript ファイルと CSS ファイルの場合は、ミニフィケーションと呼ばれるアプローチを使用して、空白文字や不要な文字を削除してファイルの合計サイズを小さくすることもできます。
   
@@ -55,7 +55,7 @@ Web Essentials には、次の 2 つの形式のバンドルが用意されて�
 ### <a name="to-create-a-te000127218-and-css-bundle-in-web-essentials"></a>Web Essentials で TE000127218 と CSS バンドルを作成するには
   
 1. [Visual Studio エクスプローラーで、バンドルに含めるファイルを選択します。
-2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create JavaScript バンドル ファイル** ] を選択します。 例:
+2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create JavaScript バンドル ファイル** ] を選択します。 次に例を示します。
 
     ![Web Essentials メニュー オプションを示すスクリーンショット。](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -65,7 +65,7 @@ JavaScript および CSS バンドルを作成すると、Web Essentials は、J
   
 ![JavaScript および CSS レシピ ファイルのスクリーンショット。](../media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
   
-さらに、バンドル レシピで minify フラグが true に設定されている場合は、ファイルのサイズが縮小され、バンドルされます。 つまり、マスター ページで参照できる JavaScript ファイルの新しいバージョンが作成されました。
+さらに、バンドル レシピで minify フラグが true に設定されている場合は、ファイルのサイズが縮小され、まとめてバンドルされます。 つまり、マスター ページで参照できる JavaScript ファイルの新しいバージョンが作成されました。
   
 ![minify フラグが true に設定されているスクリーンショット。](../media/50523af2-6412-4117-ac3d-5bd26f6d562e.png)
   
@@ -90,7 +90,7 @@ JavaScript ファイルと CSS ファイルをバンドルする方法と同様�
 ### <a name="to-create-an-image-sprite-in-web-essentials"></a>Web Essentials** でイメージ スプライトを作成するには**
   
 1. [Visual Studio エクスプローラーで、バンドルに含めるファイルを選択します。
-2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create image sprite** ] を選択します。 例:
+2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create image sprite** ] を選択します。 次に例を示します。
 
     ![イメージ スプライトを作成する方法を示すスクリーンショット。](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

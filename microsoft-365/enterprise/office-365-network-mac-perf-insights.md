@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 ネットワーク インサイト
-ms.openlocfilehash: d5eca1f1c842c0182bc5ce132de90eda538e0695
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 429b066a7132cb29f2a35d43857534695391d33c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327570"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806950"
 ---
 # <a name="microsoft-365-network-insights"></a>Microsoft 365 ネットワーク インサイト
 
-**ネットワーク分析情報は**、Microsoft 365 テナントから収集されたパフォーマンス 指標であり、テナントの管理ユーザーだけが表示できます。 インサイトセンターにMicrosoft 365 管理表示されます <https://portal.microsoft.com/adminportal/home#/networkperformance> 。
+**ネットワーク分析情報は**、Microsoft 365テナントから収集されたパフォーマンス 指標であり、テナントの管理ユーザーだけが表示できます。 インサイトセンターにMicrosoft 365 管理表示されます<https://portal.microsoft.com/adminportal/home#/networkperformance>。
 
 インサイトは、オフィスの場所のネットワーク境界の設計に役立ちます。 各分析情報は、ユーザーがテナントにアクセスしている地理的な場所ごとに、特定の一般的な問題のパフォーマンス特性に関するライブの詳細を提供します。
 
@@ -74,13 +74,13 @@ ms.locfileid: "61327570"
 
 ネットワーク出力は、可能な限りオフィスの場所に近い場所にすることをお勧めします。  Microsoft 365は、Microsoft のグローバル ネットワークと最も近いサービス フロント ドアMicrosoft 365ルーティングする必要があります。 また、ユーザーのオフィスの場所に近いネットワーク出力を使用すると、Microsoft が将来、プレゼンスのネットワーク ポイントとサービス フロント ドアの両方Microsoft 365パフォーマンスを向上させることができます。
 
-この問題を解決する方法の詳細については、「ネットワーク[](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally)接続Egress」を参照Microsoft 365[してください](microsoft-365-network-connectivity-principles.md)。
+この問題を解決する方法の詳細については、「ネットワーク[](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally)接続の原則」のEgressネットワーク接続Microsoft 365[参照してください](microsoft-365-network-connectivity-principles.md)。
 
 ## <a name="network-intermediary-device"></a>ネットワーク仲介デバイス
 
 この分析情報は、ユーザーと Microsoft のネットワークの間でデバイスが検出された場合に表示されます。 ネットワーク トラフィックがこのようなデバイスをバイパスMicrosoft 365遅延に敏感なデバイスを使用することをお勧めします。 この推奨事項については、「ネットワーク接続[の原則Microsoft 365」で説明します](microsoft-365-network-connectivity-principles.md)。
 
-Exchange、SharePoint、Teams の重要な Microsoft 365 ネットワーク エンドポイントがネットワーク仲介デバイスによって傍受および復号化された場合の SSL ブレークとインスペクションが示されているネットワーク仲介の分析情報の 1 つです。
+Exchange、SharePoint、および Teams の重要な Microsoft 365 ネットワーク エンドポイントがネットワーク仲介デバイスによって傍受および復号化された場合の SSL ブレークとインスペクションが示されているネットワーク仲介の分析情報の 1 つです。
 
 ### <a name="what-does-this-mean"></a>これはどういうことですか?
 
@@ -174,7 +174,7 @@ Exchange、SharePoint、Teams の重要な Microsoft 365 ネットワーク エ�
 
 ### <a name="what-should-i-do"></a>どうすればよいですか?
 
-この分析情報に関連するパフォーマンスの問題を軽減する方法の詳細については、「中国のユーザー Microsoft 365のパフォーマンスの最適化」を[参照してください](microsoft-365-networking-china.md)。
+この分析情報に関連するパフォーマンスの問題を軽減する方法の詳細については、「Microsoft 365グローバル テナントのパフォーマンスの[最適化」を参照してください](microsoft-365-networking-china.md)。
 
 ## <a name="exchange-sampled-connections-affected-by-connectivity-issues"></a>Exchangeの問題の影響を受ける、サンプリングされた接続
 

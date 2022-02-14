@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 複数地域の環境内SharePoint別の地域の場所にサイトを移動し、ユーザーに変更の期待を伝える方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ccbe708c0fcfb51c1a28b354d8438e526815cec
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 9e4132b8399cc69067d24af6c3c9ec8e3baf52bd
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242037"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806866"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -35,7 +35,7 @@ SharePoint サイトの地域移動を使って、SharePoint サイトを複数�
 
 ジオ位置情報間でサイトを移動するには、全体管理者または SharePoint 管理者である必要があります。
 
-サイトの内容によりますが、約4～6時間のSharePoint サイトの地域移動中は、読み取り専用ウィンドウになります。
+サイトコンテンツに応じて、SharePoint約 4 ~ 6 時間の読み取り専用ウィンドウがあります。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
@@ -75,7 +75,7 @@ SharePoint サイトの地域移動を後でスケジュール設定するには
 
 SharePoint サイトの地域移動は　サイトがあるジオ位置情報でSharePoint の管理 URLから接続し、実行する必要があります。
 
-たとえば、サイト URL が次の場合は <https://contosohealthcare.sharepoint.com/sites/Turbines> 、次の SharePoint管理者 URL に接続します <https://contosohealthcare-admin.sharepoint.com> 。
+たとえば、サイトの URL <https://contosohealthcare.sharepoint.com/sites/Turbines>が次の場合は、次の SharePoint管理者 URL に接続します<https://contosohealthcare-admin.sharepoint.com>。
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
@@ -109,7 +109,7 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 <https://Contoso.sharepoint.com/sites/projectx> から <https://ContosoEUR.sharepoint.com/sites/projectx>
 
-グループの関連付Microsoft 365サイトの場合は、パラメーターを使用してサイトの名前を変更 `-DestinationUrl` することもできます。 例:
+グループの関連付Microsoft 365サイトの場合は、パラメーターを使用してサイトの名前を変更`-DestinationUrl`することもできます。 例:
 
 <https://Contoso.sharepoint.com/sites/projectx> から <https://ContosoEUR.sharepoint.com/sites/projecty>
 
@@ -159,7 +159,7 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 |---|---|
 |トリガーの準備|移動は開始されていません。|
 |スケジュール済み|移動がキューにあり、まだ開始されていません。|
-|InProgress (n/4)|移動は、検証 (1/4)、バックアップ (2/4)、復元 (3/4)、クリーンアップ (4/4) のいずれかの状態で進行中です。|
+|InProgress (n/4)|移行は、検証 (1/4)、バックアップ (2/4)、復元 (3/4)、クリーンアップ (4/4) のいずれかの状態で進行中です。|
 |Success|移動は正常に完了しています。|
 |Failed|移動は失敗しました。|
 |
@@ -172,7 +172,7 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 
 ### <a name="site"></a>サイト
 
-移動の実行中は、サイトは読み取り専用に設定されます。 移動の完了後に、ブックマークまたは他のリンクをクリックすると、新しいジオ位置情報の新しいサイトがユーザーに指定されます。
+移動の進行中に、サイトは読み取り専用に設定されます。 移動の完了後に、ブックマークまたは他のリンクをクリックすると、新しいジオ位置情報の新しいサイトがユーザーに指定されます。
 
 ### <a name="permissions"></a>アクセス許可
 
@@ -217,13 +217,13 @@ SharePoint 2013 ワークフローは、サイトの移動後に再発行する�
 
 ### <a name="apps"></a>アプリ
 
-アプリを使用してサイトを移動すると、移動先のジオ位置情報に接続できない場合があるので、サイトの新しいジオ位置情報でアプリを再インスタンス化する必要があります。
+アプリを使用してサイトを移動する場合は、アプリとその接続が移動先の地域の場所で利用できない可能性がある場合に、サイトの新しい地域の場所にアプリを再インストールする必要があります。
 
-### <a name="flow"></a>フロー
+### <a name="flow"></a>Flow
 
-ほとんどの場合、フローは SharePoint サイトの地域移動後に引き続き操作することができるようになります。 移動が完了したらテストすることをお勧めします。
+ほとんどの場合、フローはサイト地域の移動後も引き続SharePoint動作します。 移動が完了したらテストすることをお勧めします。
 
-### <a name="power-apps"></a>Power アプリ
+### <a name="power-apps"></a>Power Apps
 
 Power Apps場所に再作成する必要があります。
 

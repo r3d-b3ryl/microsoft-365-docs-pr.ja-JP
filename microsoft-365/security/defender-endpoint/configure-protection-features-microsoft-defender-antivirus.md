@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 374e955641a5b74a36bc506e3dfda32e1081e1a5
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: f949623b7d0647d71f4c665ed2016ee14a765e5f
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218612"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807514"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>行動、ヒューリスティック、リアルタイム保護を構成する
 
@@ -34,7 +34,7 @@ Microsoft Defender ウイルス対策を使用して脅威保護を提供しま�
 
 - 新しい脅威や新しい脅威のほぼ瞬時の検出とブロックのためのクラウド保護
 - ファイルとプロセスの動作の監視、その他のヒューリスティックを使用した常時スキャン ("リアルタイム保護" とも呼ばれる)
-- 機械学習、手動および自動のビッグデータ分析、徹底した脅威耐性調査に基づいた専用の保護の更新
+- 機械学習、人間および自動のビッグ データ分析、および詳細な脅威耐性の調査に基づく専用の保護更新プログラム
 
 グループ ポリシー、Microsoft Defender ウイルス対策 System Center構成管理、PowerShell コマンドレット、および WINDOWS 管理インストルメンテーション (WMI) を使用して、これらのメソッドWindows構成できます。
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bd964782303b05e97fe69996bcf3ce2c1a1e9eb8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 473d58cde13f1f776c31184b2b50e74e23810b22
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766934"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807034"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -114,9 +114,9 @@ DeviceEvents
 
 クエリ エディターでクエリを使用して、[検出ルールの作成] **を選択し** 、次のアラートの詳細を指定します。
 
-- **検出名**: 検出ルールの名前。この名前は一意である必要があります。
+- **検出名**: 検出ルールの名前。一意である必要があります
 - **頻度** : クエリを実行してアクションを実行する間隔。 [以下のその他のガイダンスを参照してください。](#rule-frequency)
-- **アラート タイトル** : ルールによってトリガーされたアラートが表示されるタイトル。このタイトルは一意である必要があります。
+- **アラート タイトル** : ルールによってトリガーされたアラートが表示されるタイトル。一意である必要があります
 - **重大度** - ルールによって識別されるコンポーネントまたはアクティビティの潜在的なリスク
 - **Category** - ルールによって識別される脅威コンポーネントまたはアクティビティ
 - **MITRE ATT&CK** の手法は、CK フレームワークの [MITRE ATT](https://attack.mitre.org/) に記載されているルールによって識別される 1 つ以上の攻撃&です。 このセクションは、マルウェア、ランサムウェア、疑わしいアクティビティ、望ましくないソフトウェアなど、特定のアラート カテゴリでは非表示になっています。

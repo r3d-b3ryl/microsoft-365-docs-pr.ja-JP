@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: この記事では、PowerShell のグループに対して一般的な管理Microsoft 365する方法について説明します。
-ms.openlocfilehash: aed6af15889d7a0923207be5ea4220b3c3d6937c
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 460444e1cb2f862f4d96ed6aad0178a146864658
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422113"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806446"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>PowerShell Microsoft 365グループを管理する
 
@@ -48,11 +48,11 @@ PowerShell Azure Active Directory (Azure AD) を使用して、ユーザーが�
 
 ## <a name="allow-users-to-send-as-the-microsoft-365-group"></a>ユーザーがグループとして送信Microsoft 365する
 
-グループを "送信者" にMicrosoft 365する場合は[、Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)コマンドレットと[Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission)コマンドレットを使用してこれを構成します。 この設定を有効にすると、Microsoft 365 ユーザーは Outlook または Outlook on the web を使用して電子メールを送信および返信Microsoft 365できます。 ユーザーはグループに移動し、新しいメールを作成して、「メールボックス所有者として送信する」フィールドをグループのメール アドレスに変更することができます。
+ユーザー グループで [名前を付Microsoft 365] を有効にする場合は、[Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission) コマンドレットと [Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission) コマンドレットを使用してこれを構成します。 この設定を有効にすると、Microsoft 365 ユーザーは Outlook または Outlook on the web を使用して電子メールを送信および返信Microsoft 365できます。 ユーザーはグループに移動し、新しいメールを作成して、「メールボックス所有者として送信する」フィールドをグループのメール アドレスに変更することができます。
 
 ([Exchange 管理センターでもこれを行うことができます](/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。)
 
-次のスクリプトを使用して、更新するグループのエイリアスと、アクセス許可を付与するユーザーのエイリアスに *\<GroupAlias\>* *\<UserAlias\>* 置き換える。 [Exchange Online PowerShell に接続し](/powershell/exchange/connect-to-exchange-online-powershell)、このスクリプトを実行します。
+次のスクリプトを使用して *\<GroupAlias\>**\<UserAlias\>*、更新するグループのエイリアスと、アクセス許可を付与するユーザーのエイリアスに置き換える。 [Exchange Online PowerShell に接続し](/powershell/exchange/connect-to-exchange-online-powershell)、このスクリプトを実行します。
 
 ```PowerShell
 $groupAlias = "<GroupAlias>"
@@ -66,26 +66,26 @@ Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAli
 
 ## <a name="create-classifications-for-microsoft-365-groups-in-your-organization"></a>組織内のグループMicrosoft 365分類を作成する
 
-組織内のユーザーがグループを作成するときに設定できる感度ラベルをMicrosoft 365できます。 グループを分類する場合は、以前のグループ分類機能ではなく、感度ラベルを使用することをお勧めします。 感度ラベルの使用の詳細については、「感度ラベルを使用して、Microsoft Teams、Microsoft 365、およびサイトのコンテンツを保護する」[をSharePointしてください](../compliance/sensitivity-labels-teams-groups-sites.md)。
+組織内のユーザーがグループを作成するときに設定できる感度ラベルをMicrosoft 365できます。 グループを分類する場合は、以前のグループ分類機能ではなく、感度ラベルを使用することをお勧めします。 感度ラベルの使用の詳細については、「感度ラベルを使用して、Microsoft Teams、Microsoft 365、SharePointサイトのコンテンツを保護する」[を参照してください](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 > [!IMPORTANT]
 > 現在分類ラベルを使用している場合、感度ラベルが有効になると、グループを作成するユーザーは使用できなくなりました。
 
 以前のグループ分類機能は引き続き使用できます。 組織のユーザーがグループを作成するときに設定できる分類をMicrosoft 365できます。 たとえば、作成するグループにユーザーが「標準」、「機密」、「極秘」といった分類を設定できるようにすることができます。 グループの分類は既定では設定されていないので、ユーザーに分類を設定させるには、分類を作成する必要があります。 PowerShell Azure Active Directoryを使用して、ユーザーに組織のグループの使用ガイドラインをMicrosoft 365します。
 
-グループ設定[Azure Active Directoryする](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)コマンドレットを確認し、「ディレクトリ レベルで設定を作成する」の手順に従って、グループグループのMicrosoft 365してください。
+グループ設定[Azure Active Directoryする](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)コマンドレットを確認し、「ディレクトリ レベルで設定を作成する」の手順に従って、グループのMicrosoft 365してください。
 
 ```powershell
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
 ```
 
-各分類に説明を関連付けるために、定義する設定属性 *ClassificationDescriptions* を使用できます。
+説明を各分類に関連付ける場合は、settings 属性  *ClassificationDescriptions を使用して* 定義できます。
 
 ```powershell
 $setting["ClassificationDescriptions"] ="Classification:Description,Classification:Description"
 ```
 
-ここで、Classification は ClassificationList の文字列と一致します。
+分類が ClassificationList の文字列と一致する場所。
 
 例:
 
@@ -139,7 +139,7 @@ Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationE
 Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
 ```
 
-メール ヒントと共に、MailTipTranslations を設定することもできます。これは、メール ヒントの追加言語を指定します。 スペイン語の翻訳を追加するとします。この場合は、次のコマンドを実行します。
+メール ヒントと共に、メール ヒントの他の言語を指定する MailTipTranslations を設定できます。 スペイン語の翻訳を追加するとします。この場合は、次のコマンドを実行します。
 
 ```powershell
 Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" -MailTipTranslations "@{Add="ES:Esta caja no se supervisa."
@@ -147,7 +147,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>グループの表示名をMicrosoft 365する
 
-表示名は、グループの名前Microsoft 365します。 この名前は、管理センター<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">またはExchangeで</a>確認<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター。</a> 次のコマンドを実行して、グループの表示名を編集したり、既存のグループに表示Microsoft 365割り当Set-UnifiedGroupできます。
+表示名は、グループの名前Microsoft 365します。 この名前は、管理センター<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">またはExchangeで</a>確認<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>。 次のコマンドを実行して、グループの表示名を編集したり、既存のグループに表示Microsoft 365割り当Set-UnifiedGroupできます。
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"

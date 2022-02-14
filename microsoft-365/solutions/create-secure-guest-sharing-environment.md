@@ -18,12 +18,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたゲスト共有環境を Microsoft 365 で作成するための使用可能なオプションについては、こちらを参照してください。ゲスト アクセスによって共同作業を改善します。
-ms.openlocfilehash: 775a5f1376df1bca553bc1b3b9cd92072736ac60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ae616bcaa78aa759ca5b1f1be4b1beaf8d709a00
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203737"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807610"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -142,7 +142,7 @@ Azure AD のアクセス レビューを使用すると、さまざまなチー�
 13. **レビュー名** を入力し、設定を確認します。
 14. **[作成]** をクリックします。
 
-重要な点として、ゲストにはチームやグループに対するアクセス権か、個々のファイルやフォルダーに対するアクセス権を付与できます。 ファイルやフォルダーに対するアクセス権を与えられているゲストは、特定のグループに追加できません。 チームやグループに属していないゲストに対してアクセス レビューを実行する場合は、Azure AD ですべてのゲストが含まれる動的グループを作成して、そのグループに対するアクセス レビューを作成できます。 サイト所有者は、[サイトのゲスト の有効期限](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)を管理することもできます。
+SharePoint と OneDrive の場所では、機密情報の検出直後に、ドキュメントが共有されているかどうかに関係なく、すべての外部ユーザーに対してドキュメントが事前にブロックされ、内部ユーザーは引き続きドキュメントにアクセスできることに注意してください。
 
 ### <a name="more-information"></a>詳細情報
 

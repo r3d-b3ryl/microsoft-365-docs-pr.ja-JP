@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b0be9c044b48788e5abb04f469b9f6ab0038cd5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b193279f9891badc78e639776a57a366a0fa8109
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374534"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807082"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを検出してブロックする
 
@@ -87,6 +87,9 @@ PUA 保護は、[Microsoft Intune](/mem/intune/protect/device-protect)、[Micros
 
 > [!TIP]
 > Microsoft Defender for Endpoint のデモ Web サイト [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) にアクセスすることで、この機能が動作していることを確認し、実際の操作を見ることができます。
+
+> [!NOTE]
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは非推奨であり、将来削除される予定です。
 
 監査モードの PUA 保護は、会社が内部ソフトウェア セキュリティ コンプライアンス チェックを実施していて、誤検知を回避したい場合に役立ちます。
 

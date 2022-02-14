@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365接続テスト ツール
-ms.openlocfilehash: bea7922baa1e92ffcaaff58678141758906ab955
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 602ab10c9741126360861586776863cb43ce162e
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281461"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806206"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365接続テスト ツール
 
@@ -159,7 +159,7 @@ ReportID リンクへのアクセスを提供することで、テスト レポ�
 
 使用されている DNS 再帰的リゾルバーは、特定の DNS 要求を行い、同じ要求を受信した IP アドレスを DNS ネーム サーバーに要求することで識別されます。 この IP アドレスは DNS 再帰的リゾルバーであり、場所を見つけるために IP アドレスの場所データベースで検索されます。 その後、ユーザーのオフィスの場所から DNS 再帰的リゾルバー サーバーの場所までの距離が計算されます。 これは、距離が **500 マイル (800 キロ** メートル) を超える場合のネットワーク分析情報として表示されます。
 
-ネットワーク出力 IP アドレスから見上げた場所が正確ではない可能性があります。このテストでは誤った結果が発生します。 特定の IP アドレスに対してこのエラーが発生した場合に検証するには、パブリックアクセス可能なネットワーク IP アドレスの場所 Web サイトを使用できます。
+ネットワーク出力 IP アドレスから見上げた場所が正確ではない可能性があります。このテストでは誤った結果が発生します。 特定の IP アドレスに対してこのエラーが発生している場合は、パブリックアクセス可能なネットワーク IP アドレスの場所 Web サイトを使用できます。
 
 このネットワークインサイトは、サービス フロント ドアの選択Exchange Online特に影響します。 この洞察に対処するには、ローカルおよび直接のネットワーク出力が前提条件であり、DNS 再帰的リゾルバーをそのネットワーク出力の近くに位置する必要があります。
 
@@ -193,7 +193,7 @@ Outlook がこれを行うのと同じ方法で、Exchange サービス フロ�
 
 #### <a name="download-speed"></a>ダウンロード速度
 
-15Mb ファイルのダウンロード速度は、サービス フロント SharePointから測定します。 結果は 1 秒あたりのメガバイト単位で表示され、1 秒間にダウンロードできるサイズ ファイルを mb 単位SharePointまたはOneDrive **示します**。 この数は、1 秒あたりのメガビットの最小回線帯域幅の 10 分の 1 に似ている必要があります。 たとえば、100 mbps のインターネット接続がある場合は、1 秒あたり 10 メガバイト (10MBps) が予想されます。
+サービス フロント ドアから 15 Mb ファイルのダウンロード速度SharePoint測定します。 結果は 1 秒あたりのメガバイト単位で表示され、1 秒間にダウンロードできるサイズ ファイルを mb 単位SharePointまたはOneDrive **示します**。 この数は、1 秒あたりのメガビットの最小回線帯域幅の 10 分の 1 に似ている必要があります。 たとえば、100 mbps のインターネット接続がある場合は、1 秒あたり 10 MB (10 MBps) が必要な場合があります。
 
 #### <a name="buffer-bloat"></a>バッファーの割り当て
 
@@ -209,13 +209,13 @@ Outlook がこれを行うのと同じ方法で、Exchange サービス フロ�
 
 #### <a name="media-connectivity-audio-video-and-application-sharing"></a>メディア接続 (オーディオ、ビデオ、およびアプリケーション共有)
 
-このテストでは、サービス フロント ドアMicrosoft Teams UDP 接続をテストします。 これをブロックすると、TCP Microsoft Teams機能する可能性がありますが、オーディオとビデオが損なわれる可能性があります。 これらの UDP ネットワーク測定値の詳細については、「Microsoft Teams Online のメディア品質とネットワーク接続のパフォーマンス」でもSkype for Business[してください](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)。
+このテストでは、サービス フロント ドアMicrosoft Teams UDP 接続をテストします。 これがブロックされている場合、TCP Microsoft Teams機能する可能性がありますが、オーディオとビデオが損なわれる可能性があります。 これらの UDP ネットワーク測定値の詳細については、「Microsoft Teams Online のメディア品質とネットワーク接続のパフォーマンス」でもSkype for Business[してください](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)。
 
 #### <a name="packet-loss"></a>パケット損失
 
-クライアントからサービス フロント ドアへの 10 秒間のテスト オーディオ呼び出しで測定Microsoft Teams UDP パケット損失を表示します。 これは、パスの **場合は 1.00% より** 低くする必要があります。
+クライアントからサービス フロント ドアへの 10 秒間のテスト オーディオ通話で測定された UDP パケット損失Microsoft Teams表示します。 これは、パスの **場合は 1.00% より** 低くする必要があります。
 
-#### <a name="latency"></a>遅延
+#### <a name="latency"></a>Latency
 
 **100ms** より低い UDP 待機時間を示します。
 
@@ -251,7 +251,7 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 > [!div class="mx-imgBorder"]
 > ![ネットワークの正常性状態。](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
 よく寄せられる質問の一部に対する回答を次に示します。
 

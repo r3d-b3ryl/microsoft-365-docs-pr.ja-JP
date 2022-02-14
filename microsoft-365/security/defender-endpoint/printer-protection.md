@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 3a9ca21c6cc59e2516220dd04e659d22df0a74e6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 496d9bf729eaaff6cf12e9734ae80eedacf98a63
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164864"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806122"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 
@@ -32,7 +32,7 @@ Microsoft Defender for Endpoint Device Control Printer Protection は、企業�
 
 ## <a name="licensing"></a>ライセンス
 
-Printer Protection の使用を開始する前に、サブスクリプションを[確認Microsoft 365必要があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 Printer Protection にアクセスして使用するには、次の情報が必要です。
+Printer Protection の使用を開始する前に、サブスクリプション[の内容を確認Microsoft 365必要があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 Printer Protection にアクセスして使用するには、次の情報が必要です。
 
 - Microsoft 365 E3/ポリシーの展開の詳細
 - Microsoft 365 E5レポートの詳細
@@ -56,8 +56,8 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 これらの要件を満Windows 10プリンター Windows 11 台のデバイスがインストールされている必要があります。
 
 1. 次の Windows Update がインストールされています。
-    - 1809 Windows: 更新プログラム[KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46) Windowsインストールする
-    - 1909 Windows: 更新プログラム[KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1) Windowsインストールする
+    - 1809 Windows: 更新プログラム [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46) Windowsインストールする
+    - 1909 Windows: 更新プログラム [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1) Windowsインストールする
     - 2004 Windows以降の場合
 
 2. グループ ポリシーを使用してポリシーを展開する予定の場合、デバイスは Microsoft Defender for Endpoint に参加している必要があります。ポリシーを展開する予定の場合は、Microsoft エンドポイント マネージャーを使用してデバイスを参加Microsoft Intune。
@@ -76,7 +76,7 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 |**承認済みの USB 接続印刷デバイスの一覧**\*|特定の USB プリンターを許可する|はい|はい|はい|はい|
 |
 
-\* このポリシーは、[デバイスコントロールの印刷制限を **有効にする] と一緒に使用する必要があります**。
+\* このポリシーは、[デバイス制御印刷の制限を **有効にする] と共に使用する必要があります**。
 
 ## <a name="deploy-policy-via-intune"></a>Intune 経由でポリシーを展開する
 
@@ -92,7 +92,7 @@ Intune では、現在デバイスコントロール プリンター保護は OM
 
   `./Vendor/MSFT/Policy/Config/Printers/EnableDeviceControlUser`
 
-CSP は、次の文字列をサポートします `<enabled/>` 。
+CSP は、次の文字列をサポートします `<enabled/>`。
 
 :::image type="content" source="../../media/customeditrow.png" alt-text="カスタム編集行。":::
 
@@ -106,7 +106,7 @@ CSP は、次の文字列をサポートします `<enabled/>` 。
 
   `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
-CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認された USB プリンターを使用して文字列をサポートします。次の例を示します `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">` 。
+CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認された USB プリンターを使用して文字列をサポートします。次の例を示します `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`。
 
 :::image type="content" source="../../media/editrow.png" alt-text="行の編集。":::
 
@@ -118,7 +118,7 @@ CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認され�
 
 - コンピューターにポリシーを適用する:
 
-  コンピューター構成 \> 管理用テンプレート \> プリンター: デバイスコントロールの印刷制限を有効にする
+  コンピューター構成管理 \> 用テンプレート \> プリンター: デバイスコントロールの印刷制限を有効にする
 
 - ユーザーにポリシーを適用する:
 
@@ -134,7 +134,7 @@ CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認され�
 
 - ユーザーにポリシーを適用する:
 
-  ユーザー構成 \> 管理用テンプレート \> コントロール パネル プリンター: 承認済み USB 接続印刷 \> デバイスの一覧
+  ユーザー構成 \> 管理用テンプレート \> コントロール パネル \> プリンター: 承認済み USB 接続印刷デバイスの一覧
 
 :::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="承認された USB 接続印刷デバイスの一覧。":::
 

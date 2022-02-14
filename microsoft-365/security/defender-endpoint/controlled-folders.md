@@ -17,18 +17,19 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: ae9d1946f0aaa189b716c7a6b63c2bac999f7872
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 8873a8f374280834970d14f72c2e6677292f7702
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327403"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807442"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダーへのアクセス制御で重要なフォルダーを保護する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -54,7 +55,7 @@ ms.locfileid: "62327403"
 
 アプリは、その普及率と評判に基づいてリストに追加されます。 組織全体で非常に普及しているアプリで、悪意のあると見なされる動作を一度も表示したことがないアプリは、信頼できると見なされます。 これらのアプリは自動的にリストに追加されます。
 
-アプリは、Configuration Manager または Intune を使用して、信頼できるリストに手動で追加することもできます。 追加のアクションは、ポータルからMicrosoft 365 Defenderできます。 
+アプリは、Configuration Manager または Intune を使用して、信頼できるリストに手動で追加することもできます。 追加のアクションは、ポータルからMicrosoft 365 Defenderできます。
 
 ## <a name="why-controlled-folder-access-is-important"></a>フォルダー アクセスの制御が重要な理由
 
@@ -63,6 +64,9 @@ ms.locfileid: "62327403"
 保護 [されたフォルダーには、](#review-controlled-folder-access-events-in-windows-event-viewer) 一般的なシステム フォルダー (ブート セクターを含む) が含まれます。さらにフォルダー [を追加できます](customize-controlled-folders.md#protect-additional-folders)。 アプリが [保護されたフォルダー](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) へのアクセス権を与えるのを許可することもできます。
 
 監査モードを [使用して](audit-windows-defender.md) 、フォルダー アクセスが有効になっている場合に組織に与える影響を評価できます。 また、Windows Defenderテスト グラウンド web サイト demo.wd.microsoft.com、機能[が](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)動作し、動作を確認できます。
+
+> [!NOTE]
+> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
 
 フォルダー アクセスの制御は、次のバージョンのフォルダーでサポートWindows。
 
@@ -75,6 +79,8 @@ ms.locfileid: "62327403"
 
 Windowsシステム フォルダーは、既定で保護され、他のいくつかのフォルダーと共に保護されます。
 
+保護されたフォルダーには、一般的なシステム フォルダー (ブート セクターを含む) が含まれるので、追加のフォルダーを追加できます。 アプリが保護されたフォルダーへのアクセス権を与えるのを許可することもできます。  既定Windows保護されているシステム フォルダーは次のとおりです。
+
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
 - `c:\Users\<username>\Pictures`
@@ -85,16 +91,20 @@ Windowsシステム フォルダーは、既定で保護され、他のいくつ
 - `c:\Users\Public\Music`
 - `c:\Users\<username>\Favorites`
 
+既定のフォルダーは、ユーザーのプロファイルの [この **PC] の下に表示されます**。
+   > [!div class="mx-imgBorder"]
+   > ![保護されたWindowsシステム フォルダー](images/defaultfolders.png)
+
 > [!NOTE]
 > 追加のフォルダーを保護として構成できますが、既定で保護Windowsシステム フォルダーを削除することはできません。
 
 ## <a name="requirements-for-controlled-folder-access"></a>フォルダー アクセスの制御の要件
 
-フォルダー アクセスの制御には、リアルタイムMicrosoft Defender ウイルス対策[を有効にする必要があります](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
+フォルダー アクセスの制御には、リアルタイムMicrosoft Defender ウイルス対策[を有効にする必要があります](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>管理されたフォルダー アクセス イベントを Microsoft 365 Defenderする
 
-Defender for Endpoint は、イベントとブロックに関する詳細なレポートを[](investigate-alerts.md)、このポータルのアラート調査シナリオの一部としてMicrosoft 365 Defenderします。 (「[Microsoft Defender for Endpoint in Microsoft 365 Defender」を](../defender/microsoft-365-security-center-mde.md)参照してください。
+Defender for Endpoint は、Microsoft 365 Defender ポータルでのアラート調査シナリオの一環として[](investigate-alerts.md)、イベントとブロックに関する詳細なレポートを提供します。詳細については、「[Microsoft Defender for Endpoint in Microsoft 365 Defender」を参照してください](../defender/microsoft-365-security-center-mde.md)。
 
 高度な検索を使用して、Microsoft Defender for Endpoint データ [に対してクエリを実行できます](advanced-hunting-overview.md)。 監査モードを[使用している場合](audit-windows-defender.md)は、高度な検索[](advanced-hunting-overview.md)を使用して、フォルダー アクセスの制御設定が有効になっている場合に環境に与える影響を確認できます。
 
@@ -113,7 +123,7 @@ DeviceEvents
 2. [**イベント ビューアー]** と入力スタート メニューイベント ビューアー Windows開きます。
 3. 左側のパネルの [アクション] **で、[** カスタム ビュー **のインポート....] を選択します**。
 4. 抽出した場所に *移動cfa-events.xml選択* します。 または、 [XML を直接コピーします](event-views.md)。
-5. [**OK**] を選択します。
+5. **[OK]** を選択します。
 
 次の表に、フォルダー アクセスの制御に関連するイベントを示します。
 

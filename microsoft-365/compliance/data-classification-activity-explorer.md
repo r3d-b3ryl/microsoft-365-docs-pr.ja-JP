@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーを使用すると、ラベル付きコンテンツに対してユーザーが実行しているアクションを表示およびフィルター処理できます。
-ms.openlocfilehash: 73e0d135112d109370aa4f3cdc75d30a8ab087a3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 93cd3910a79b136d95ba46fa79940d379340cf75
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61874042"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806566"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 
@@ -33,10 +33,10 @@ ms.locfileid: "61874042"
 
 使用可能なフィルターは 30 種類以上あり、以下がその一例です。
 
-- 日付の範囲
+- 日付範囲
 - アクティビティの種類
 - 場所
-- ユーザー
+- User
 - 機密ラベル
 - 保持ラベル
 - ファイル パス
@@ -59,24 +59,24 @@ ms.locfileid: "61874042"
 
 アカウントには、これらの役割グループのいずれかのメンバーシップを明示的に割り当てるか、役割を明示的に付与する必要があります。
 
-### <a name="roles-and-role-groups-in-preview"></a>プレビューでの役割と役割グループ
+### <a name="roles-and-role-groups-in-preview"></a>プレビュー段階の [役割と役割グループ]
 
 プレビューには、アクセス制御を微調整するためにテストアウトできる役割と役割グループがあります。
 
-プレビューに含Microsoft Information Protection (MIP) ロールの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センターの役割 [」を&してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
-- 情報保護管理者
-- 情報保護アナリスト
-- 情報保護調査員
-- 情報保護リーダー
+- Information Protection 管理者
+- Information Protection アナリスト
+- Information Protection 調査員
+- Information Protection 閲覧者
 
-プレビュー中の MIP 役割グループの一覧を次に示します。 詳細については、「セキュリティ コンプライアンス センター」の「役割 [グループ&参照してください。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
 
 - 情報保護
-- 情報保護管理者
-- 情報保護アナリスト
-- 情報保護調査員
-- 情報保護リーダー
+- Information Protection レベル
+- Information Protection アナリスト
+- Information Protection 調査担当者
+- Information Protection 閲覧者
 
 <!--
 > [!IMPORTANT]
@@ -99,31 +99,31 @@ ms.locfileid: "61874042"
 
 アクティビティ エクスプローラーは、複数のアクティビティ ソースの監査ログからアクティビティ情報を収集します。 どのラベル付けアクティビティがアクティビティ エクスプローラーに表示されるかの詳細については、「アクティビティ エクスプローラーで利用可能なイベントのラベル付け [」を参照してください](data-classification-activity-explorer-available-events.md)。
 
- Office ネイティブ アプリケーション、Azure Information Protection アドイン、SharePoint Online、Exchange Online (感度ラベルのみ)、および OneDrive からの感度ラベル アクティビティと保持ラベル付けアクティビティ。 次に例を示します。
+ Office ネイティブ アプリケーション、Azure  Information Protection アドイン、SharePoint Online、Exchange Online (感度ラベルのみ)、および OneDrive からの感度ラベル アクティビティと保持ラベル付けアクティビティ。 次に例を示します。
 
-- ラベルの適用
-- ラベルの変更 (アップグレード、ダウングレード、または削除)
-- 自動ラベル付けのシミュレーション
-- ファイルの読み取り 
+- ラベルが適用されました
+- ラベルが変更されました (アップグレード、ダウングレード、または削除されました)
+- 自動ラベル付けシミュレーション
+- ファイルの読み取り
 
 **Azure Information Protection (AIP) スキャナーと AIP クライアント**
 
-- 適用される保護
-- 保護の変更
-- 保護が削除されました
-- 検出されたファイル 
+- 保護を適用しました
+- 保護を変更しました
+- 保護を削除しました
+- 検出されたファイル
 
-アクティビティ エクスプローラーは、Exchange Online、SharePoint Online、OneDrive、Teams チャットとチャネル (プレビュー)、オンプレミスの SharePoint フォルダーとライブラリ、オンプレミスのファイル共有、および Windows 10 **デバイスからのイベントを収集します。エンドポイント データ損失防止 (DLP)**。 デバイスからのイベントの例Windows 10ファイルです。
+アクティビティ エクスプローラーは、Exchange Online、SharePoint Online、OneDrive、Teams チャットとチャネル (プレビュー)、オンプレミスの SharePoint フォルダーとライブラリ、オンプレミスのファイル共有、および Windows 10 **デバイスからのイベントを収集します。エンドポイント データ損失防止 (DLP)。** デバイスからのイベントの例Windows 10ファイルです。
 
 - 削除
-- creations
+- 作成
 - クリップボードにコピー
-- 更新日時
-- read
+- Modified
+- 読み取り
 - 印刷済み
 - 名前の変更
-- ネットワーク共有にコピーされる
-- 許可されていないアプリによってアクセスされる 
+- ネットワーク共有にコピー
+- 許可されていないアプリからアクセスする 
 
 機密性の高いラベル付きコンテンツで実行されるアクションを理解すると、データ損失防止ポリシーなどのコントロールが有効か、[](dlp-learn-about-dlp.md)有効ではないかを確認できます。 そうでない場合、つまり、多数の `highly confidential` でラベル付けされたアイテムおよび `general` にダウングレードされたアイテムなどの予想しない何かが検出された場合は、各種ポリシーを管理して、望ましくない動作を制限するための新しい操作を行うことができます。
 

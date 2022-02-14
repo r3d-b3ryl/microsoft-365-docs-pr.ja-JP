@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: この記事では、オンプレミスのサーバー 2013 および SharePoint Online でオブジェクト キャッシュを使用するSharePoint説明します。
-ms.openlocfilehash: a5d35ae0668641dd698a7e6bfc2c2573acf251e6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c763ebb1603ade7fdc98f7728fb03697c5e7425c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199839"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806998"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Online でオブジェクト キャッシュをSharePointする
 
@@ -34,7 +34,7 @@ ms.locfileid: "60199839"
   
 ## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>SharePoint Server 2013 SharePoint キャッシュのしくみ
 
-サーバー 2013 SharePointオンプレミスでホストされている場合、顧客はオブジェクト キャッシュをホストするプライベート フロントエンド Web サーバーを持っています。 つまり、キャッシュは 1 人の顧客専用であり、使用可能なメモリ量とオブジェクト キャッシュへの割り当て量によってのみ制限されます。 オンプレミスのシナリオでは、1 人の顧客だけがサービスを受け取るので、フロントエンド Web サーバーは通常、同じサイトに対して要求を行うユーザーを持っています。 つまり、キャッシュはすばやく完全に取得され、リスト クエリの結果と、ユーザーが定期的に要求しているSharePointオブジェクトの完全な状態を維持します。
+サーバー 2013 SharePointオンプレミスでホストされている場合、顧客はオブジェクト キャッシュをホストするプライベート フロントエンド Web サーバーを持っています。 つまり、キャッシュは 1 人の顧客専用であり、使用可能なメモリ量とオブジェクト キャッシュへの割り当て量によってのみ制限されます。 オンプレミスのシナリオでは 1 人の顧客しかサービスを提供しないので、フロントエンド Web サーバーには通常、ユーザーが同じサイトに対して要求を行い終える必要があります。 つまり、キャッシュはすばやく完全に取得され、リスト クエリの結果と、ユーザーが定期的に要求SharePointオブジェクトの完全な状態を維持します。
   
 ![オンプレミスのフロントエンド Web サーバーへのトラフィックと負荷を表示します。](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
   
@@ -52,7 +52,7 @@ ms.locfileid: "60199839"
   
 ## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>オブジェクト キャッシュを使用してオンラインのパフォーマンスを向上SharePoint場合、代わりに何を使用しますか?
 
-SharePoint Online でのキャッシュに依存してはならないので、オブジェクト キャッシュを使用するカスタマイズのSharePoint設計方法を評価する必要があります。 つまり、ユーザーに良い結果を生み出すには、オブジェクト キャッシュに依存しないパフォーマンスの問題に対するアプローチを使用します。 これは、このシリーズの他の記事の一部で説明され、次のものが含まれます。
+SharePoint Online でのキャッシュに依存してはならないので、オブジェクト キャッシュを使用するカスタマイズのSharePoint設計方法を評価する必要があります。 つまり、パフォーマンスの問題に対するアプローチを使用します。これは、ユーザーに良い結果を生み出すオブジェクトキャッシュに依存しない。 これは、このシリーズの他の記事の一部で説明され、次の内容が含まれています。
   
 - [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
     
@@ -62,4 +62,3 @@ SharePoint Online でのキャッシュに依存してはならないので、�
     
 - [SharePoint Online での画像の読み込み遅延と JavaScript](delay-loading-images-and-javascript-in-sharepoint-online.md)
     
-

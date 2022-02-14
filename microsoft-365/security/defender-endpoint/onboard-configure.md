@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9ce944e49b40a2b8be477bf13ae9a42c4f4e1f67
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 4492b50cfdfb0125a9079eb1f4a4945b6e06e011
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765098"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807466"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>デバイスにオンボードして、Microsoft Defender for Endpoint 機能 を構成します
 
@@ -76,7 +76,7 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 | 機能 | 説明 |
 |-|-|
 | [脅威の脆弱性&管理 (TVM) の構成](tvm-prerequisites.md) | 脅威&脆弱性管理は、Microsoft Defender for Endpoint のコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、次の固有の値を提供します。 <br><br> - リアルタイムのエンドポイント検出と応答 (EDR) の分析情報は、エンドポイントの脆弱性と関連しています。 <br><br> - インシデント調査中の貴重なデバイスの脆弱性コンテキスト。 <br><br> - 組み込みの修復プロセスは、Microsoft Intune Microsoft System Center Configuration Manager。  |
-| [次世代保護 (NGP) の構成](configure-microsoft-defender-antivirus-features.md) | Microsoft Defender ウイルス対策は、デスクトップ、ポータブル コンピューター、およびサーバーに次世代の保護を提供する組み込みのマルウェア対策ソリューションです。 Microsoft Defender ウイルス対策には、次のものが含まれます。<br> <br>-クラウドによって提供される、新しい脅威や新しい脅威のほぼ瞬時の検出とブロックに対する保護。 機械学習やインテリジェント セキュリティ グラフに加えて、クラウドによる保護は Microsoft Defender ウイルス対策を強化する次世代テクノロジの一部です。<br> <br> - 高度なファイルとプロセスの動作監視、その他のヒューリスティック ("リアルタイム保護" とも呼ばれる) を使用した常時スキャン。<br><br> - 機械学習、人間および自動化されたビッグ データ分析、および詳細な脅威耐性の調査に基づく専用の保護更新プログラム。 |
+| [次世代保護 (NGP) の構成](configure-microsoft-defender-antivirus-features.md) | Microsoft Defender ウイルス対策は、デスクトップ、ポータブル コンピューター、およびサーバーに次世代の保護を提供する組み込みのマルウェア対策ソリューションです。 Microsoft Defender ウイルス対策には、次のものが含まれます。<br> <br>-クラウドによって提供される、新しい脅威や新しい脅威のほぼ瞬時の検出とブロックに対する保護。 機械学習やインテリジェント セキュリティ グラフに加えて、クラウドによる保護は Microsoft Defender ウイルス対策を強化する次世代テクノロジの一部です。<br> <br> - 高度なファイルとプロセスの動作監視、その他のヒューリスティック ("リアルタイム保護" とも呼ばれる) を使用した常時スキャン。<br><br> - 機械学習、人間および自動のビッグ データ分析、および詳細な脅威耐性の調査に基づく専用の保護更新プログラム。 |
 | [攻撃表面の縮小を構成する (ASR)](overview-attack-surface-reduction.md) | Microsoft Defender for Endpoint の攻撃表面の縮小機能は、新しい脅威や新たな脅威から組織内のデバイスとアプリケーションを保護するのに役立ちます。 |
 | [自動調査と修復& (AIR) 機能の構成](configure-automated-investigations-remediation.md) | Microsoft Defender for Endpoint では、自動調査を使用して、個別に調査する必要があるアラートの量を大幅に削減します。 自動調査機能は、さまざまな検査アルゴリズムと、アナリストが使用するプロセス (プレイブックなど) を活用してアラートを調べ、違反を解決するために直ちに修復アクションを実行します。 これにより、アラート量が大幅に削減され、セキュリティ運用の専門家は、より高度な脅威やその他の価値の高い業務に集中できるようになります。 |
 | [[Microsoft 脅威エキスパート (MTE) 機能を構成する](configure-microsoft-threat-experts.md) | Microsoft 脅威エキスパートは、セキュリティ オペレーション センター (SOC) にエキスパート レベルの監視と分析を提供するマネージ ハンティング サービスで、固有の環境における重大な脅威を見逃すのを防いでお手伝いします。      |
@@ -96,7 +96,7 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 |Web 保護     |       Y   |    Y     |     Y    |    Y    |    Y   |
 |||||||
 |**検出**     |         |         |         |||
-|高度なハンティング     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|高度な追求     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |カスタム ファイル インジケーター     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |カスタム ネットワーク インジケーター     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |EDR ブロック &パッシブ モード     |      Y   |    Y     |     Y    |    Y    |    Y   |

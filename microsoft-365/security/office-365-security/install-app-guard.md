@@ -16,16 +16,16 @@ ms.collection: M365-security-compliance
 description: ハードウェア ベースの分離の最新情報を取得します。 悪用や悪意のあるリンクのような現在および新しい攻撃が従業員の生産性と企業のセキュリティを妨げるのを防ぐ。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2dcd218c5c3f9ab12ab4608aec1fdaac7bd00aeb
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: d1dfe0bf7082d05fa534a34cb0dd55d9227fca1a
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520549"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807070"
 ---
 # <a name="application-guard-for-office-for-admins"></a>管理者向け Application Guard for Office
 
-**適用対象:** Word、Excel、およびPowerPoint for Microsoft 365、Windows 10 Enterprise
+**適用対象:** Word、Excel、および PowerPoint for Microsoft 365、Windows 10 Enterprise、Windows 11 Enterprise
 
 Microsoft Defender Application Guard Office (Application Guard for Office) は、信頼されていないファイルが信頼できるリソースにアクセスし、企業が新しい攻撃や新たな攻撃から安全にアクセスするのを防ぐのに役立ちます。 この記事では、管理者が Application Guard for Office のプレビュー用にデバイスをセットアップする方法についてOffice。 デバイス上でアプリケーション ガードを有効にするためのシステム要件とインストール手順Office提供します。
 
@@ -39,8 +39,8 @@ Microsoft Defender Application Guard Office (Application Guard for Office) は�
 
 ### <a name="minimum-software-requirements"></a>最小ソフトウェア要件
 
-* **Windows 10**: Windows 10 Enterprise エディション、クライアント ビルド バージョン 2004 (20H1) ビルド 19041 以降
-* **Office**: Office チャネルおよび月次 Enterprise チャネルのビルド バージョン 2011 16.0.13530.10000 以降。 32 ビットバージョンと 64 ビット バージョンの両方のOfficeサポートされています。
+* **Windows**: Windows 10 Enterpriseバージョン 2004 (20H1) ビルド 19041 以降。 11 のWindowsがサポートされています。 
+* **Office**: Office チャネルおよび月次 Enterprise チャネルのビルド バージョン 2011 16.0.13530.10000 以降。 Office Semi-Annual Enterprise、ビルド バージョン 2108 以降。 32 ビットバージョンと 64 ビット バージョンの両方のOfficeサポートされています。
 * **更新プログラム パッケージ**: Windows 10月次セキュリティ更新 [プログラム KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 システム要件の詳細については、「システム要件」を参照[Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 また、仮想化テクノロジを有効にする方法については、コンピューターの製造元のガイドを参照してください。
@@ -128,7 +128,7 @@ Office次のポリシーをサポートし、アプリケーション の機能�
 > [!NOTE]
 > これらのポリシーを構成すると、Application Guard で開いたファイルの一部の機能が無効Office。
 
-|ポリシー|[説明]|
+|ポリシー|説明|
 |---|---|
 |アプリケーションに Application Guard を使用Office|このポリシーを有効にすると、Word、Excel、PowerPoint は、アプリケーション ガードの代わりに保護されたビュー分離コンテナーを使用Office。 このポリシーを使用すると、アプリケーション の有効な状態をOfficeに問題がある場合に、アプリケーション ガードを一時的に無効Microsoft Edge。|
 |コンテナーの事前作成Office Application Guard を構成する|このポリシーは、信頼されていないファイルを分離Office Application Guard for Office、実行時のパフォーマンスを向上するために事前に作成されるかどうかを決定します。 この設定を有効にした場合は、コンテナーの事前作成を続行する日数を指定するか、Office 組み込みのヒューリスティックでコンテナーを事前に作成できます。

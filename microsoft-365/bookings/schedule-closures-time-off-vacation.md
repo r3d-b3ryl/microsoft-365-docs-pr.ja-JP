@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: 指定された時間に従業員が予約に使用できないとマークされるように、予約カレンダーからオフィスの休業日と従業員の休み時間をスケジュールします。
-ms.openlocfilehash: 30f43af083da6a41ab8458e377bdc9fc99690678
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ea0b9b9870d5331d58b8f0e9f7671853d0e3433b
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164070"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807046"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>休業、休暇、休暇期間のスケジュール
 
@@ -32,7 +32,7 @@ ms.locfileid: "60164070"
 
    ![[予約] カレンダー ビューと [タイム オフ] ボタンのイメージ。](../media/bookings-calendar-timeoff.png)
 
-1. タイトル、開始日時と終了日時、場所、その他のメモなど、詳細情報を入力します。
+1. タイトル、開始日、終了日時、場所、追加メモなど、詳細を入力します。
 
 1. [ **終日イベント**] を選びます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "60164070"
 
 ## <a name="schedule-employee-time-off"></a>従業員の休暇のスケジュール
 
-1. [Microsoft 365] でアプリ 起動ツールを選択し、[予約]**を選択します**。
+1. [Microsoft 365] でアプリ 起動ツールを選択し、[予約] **を選択します**。
 
    ![アプリ起動ツールのイメージ。](../media/bookings-applauncher.png)
 
@@ -54,7 +54,7 @@ ms.locfileid: "60164070"
 
    ![[予約] カレンダー ビューと [タイム オフ] ボタンのイメージ。](../media/bookings-calendar-timeoff.png)
 
-1. タイトル、開始日時と終了日時、場所、その他のメモなど、詳細情報を入力します。従業員が丸 1 日、または数日間休暇を取る場合、[ **終日イベント**] を選びます。
+1. タイトル、開始日、終了日時、場所、その他のメモなど、詳細を入力します。 従業員が丸 1 日、または数日間休暇を取る場合、[ **終日イベント**] を選びます。
 
 1. 休暇を取る 1 名または複数名のスタッフ メンバーを選びます。
 

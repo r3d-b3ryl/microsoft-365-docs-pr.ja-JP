@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: ''
 description: '概要: DoD の DNS レコードOffice 365します。'
 hideEdit: true
-ms.openlocfilehash: 0e8fa63ec2a89f2bd807f661a43d20e6546c6621
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f3d7926b69de24786891406a7613c44ab5013dfa
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173405"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806362"
 ---
 # <a name="dns-records-for-office-365-dod"></a>Office 365 DoD の DNS レコード
 
 *この記事は DoD および DoD Office 365にMicrosoft 365します。*
 
-DoD へのオンボーディングOffice 365、オンライン サービス テナントに SMTP ドメインと SIP ドメインを追加する必要があります。  これを行うには、Azure AD PowerShell の New-MsolDomain コマンドレットを使用するか [、Azure Government Portal](https://portal.azure.us) を使用してドメインを追加して所有権を確認するプロセスを開始します。
+DoD へのオンボーディングOffice 365、オンライン サービス テナントに SMTP ドメインと SIP ドメインを追加する必要があります。  これを行うには、Azure AD PowerShell の New-MsolDomain コマンドレットを使用するか、[Azure Government Portal](https://portal.azure.us) を使用してドメインを追加して所有権を確認するプロセスを開始します。
 
 ドメインをテナントに追加して検証したら、次のガイダンスを使用して、以下のサービスに適切な DNS レコードを追加します。  受信 MX レコードおよび既存の Exchange 自動検出レコードに関して、組織のニーズに合わせて以下の表を変更する必要がある場合があります。  これらの DNS レコードをメッセージング チームと調整して、電子メールの停止や配信の誤りを避けることを強く推奨します。
 
@@ -39,37 +39,37 @@ DoD へのオンボーディングOffice 365、オンライン サービス テ�
 
 | Type | Priority | ホスト名 | アドレスまたは値をポイントする | TTL |
 | --- | --- | --- | --- | --- |
-| MX | 0 | @ | *tenant*.mail.protection.office365.us (詳細については、以下を参照してください) | 1 Hour |
-| TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | 1 Hour |
-| CNAME | - | autodiscover | autodiscover-dod.office365.us | 1 Hour |
+| MX | 0 | @ | *tenant.mail.protection.office365.us* (詳細については、以下を参照してください) | 1 時間 |
+| TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | 1 時間 |
+| CNAME | - | autodiscover | autodiscover-dod.office365.us | 1 時間 |
 
-### <a name="exchange-autodiscover-record"></a>Exchange自動検出レコード
+### <a name="exchange-autodiscover-record"></a>Exchange検出レコード
 
 オンプレミスでExchange Server場合は、Exchange Online への移行中に既存のレコードを残し、移行が完了したらそのレコードを更新することをお勧めします。
 
-### <a name="exchange-online-mx-record"></a>Exchange OnlineMX レコード
+### <a name="exchange-online-mx-record"></a>Exchange Online MX レコード
 
-受け入れドメインの MX レコード値は、上記の標準形式に従います。テナント *.mail.protection.office365.us* は、テナントを既定のテナント名の最初の部分に置き換えます。
+受け入れドメインの MX レコード値は、上記の標準形式に従います。*tenant.mail.protection.office365.us* は、テナントを既定のテナント名の最初の部分に置き換えます。
 
-たとえば、テナント名が contoso.onmicrosoft.us、MX レコード contoso.mail.protection.office365.us として使用します。
+たとえば、テナント名が contoso.onmicrosoft.us、MX レコード **contoso.mail.protection.office365.us として使用** します。
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online
 
 ### <a name="cname-records"></a>CNAME レコード
 
-| 型 | ホスト名 | アドレスまたは値をポイントする | TTL |
+| 種類 | ホスト名 | アドレスまたは値をポイントする | TTL |
 | --- | --- | --- | --- |
-| CNAME | sip | sipdir.online.dod.skypeforbusiness.us | 1 Hour |
-| CNAME | lyncdiscover | webdir.online.dod.skypeforbusiness.us | 1 Hour | 
+| CNAME | sip | sipdir.online.dod.skypeforbusiness.us | 1 時間 |
+| CNAME | lyncdiscover | webdir.online.dod.skypeforbusiness.us | 1 時間 | 
 
 ### <a name="srv-records"></a>SRV レコード
 
-| 型 | サービス | プロトコル | ポート | 太さ | 優先度 | 名前 | Target | TTL |
+| 種類 | サービス | プロトコル | ポート | 太さ | 優先度 | 名前 | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.dod.skypeforbusiness.us | 1 Hour |
-| SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.dod.skypeforbusiness.us | 1 Hour |
+| SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.dod.skypeforbusiness.us | 1 時間 |
+| SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.dod.skypeforbusiness.us | 1 時間 |
 
-## <a name="additional-dns-records"></a>追加の DNS レコード
+## <a name="other-dns-records"></a>その他の DNS レコード
 
 > [!IMPORTANT]
-> DNS ゾーンに既存の *msoid* CNAME レコードがある場合は、この時点で DNS からレコードを削除する必要があります。  msoid レコードは、Microsoft 365 Enterprise (以前は *Office 365 ProPlus)* と互換性がなく、ライセンス認証が成功しなかれない。
+> DNS ゾーンに既存の *msoid* CNAME レコードがある場合は、この時点で DNS  からレコードを削除する必要があります。  msoid レコードは、Microsoft 365 Enterprise (以前はOffice 365 ProPlus *)* と互換性がありません。ライセンス認証が成功しません。

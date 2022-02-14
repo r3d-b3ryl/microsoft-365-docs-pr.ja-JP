@@ -29,12 +29,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: ユーザーのサインアップ プロセスを実行する前に知る必要があるOffice 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: 0c372f52f1da5fef680a9eaeb499fcede7278489
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: bb74ab42bb16cc2d8b3a97850ae9be17600bfc9a
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643714"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805906"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 
@@ -62,13 +62,14 @@ ms.locfileid: "61643714"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 プランの選択に関するヘルプが必要ですか? 営業コンサルタントが質問に答えます。 [すべての製品 [を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動し、ページの左側に表示されている連絡先サポート オプションのいずれかを選択します。
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>無料試用版にサインアップするか、サブスクリプションを購入する準備ができましたか?
 
 [すべての [製品を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動して、購入するプランを選択し、サインアップ ウィザードを開始します。 
@@ -77,9 +78,9 @@ ms.locfileid: "61643714"
   
 試用版をキャンセルする必要はない。 試用版サブスクリプションを購入しない場合は、試用期間の最後に自動的に有効期限が切れ、すべての情報が完全に削除されます。
 
-## <a name="watch-set-up-microsoft-365-business-premium"></a>ウォッチ: 設定Microsoft 365 Business Premium
+## <a name="watch-sign-up-for-microsoft-365-business-premium"></a>ウォッチ: Microsoft 365 Business Premium にサインアップする
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
 ::: moniker-end
 
@@ -106,6 +107,10 @@ ms.locfileid: "61643714"
 
     > [!IMPORTANT]
     >  サインアップする場合は、組織に最適な支払い方法を選択してください。 支払いオプションを変更するには、課金サポートに連絡する必要があります。
+
+## <a name="watch-set-up-microsoft-365-business-premium"></a>ウォッチ: 設定Microsoft 365 Business Premium
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 ## <a name="related-content"></a>関連コンテンツ
 

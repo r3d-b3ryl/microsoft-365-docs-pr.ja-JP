@@ -1,8 +1,8 @@
 ---
 title: 攻撃表面の縮小 (ASR) の理解と使用
-ms.reviewer: null
+ms.reviewer: ''
 description: Microsoft Defender for Endpoint の攻撃表面の縮小機能について説明します。
-keywords: 'asr, 攻撃表面の縮小, Microsoft Defender for Endpoint, microsoft Defender, ウイルス対策, av, Windows Defender'
+keywords: asr, 攻撃表面の縮小, Microsoft Defender for Endpoint, microsoft Defender, ウイルス対策, av, Windows Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,8 +17,13 @@ ms.topic: conceptual
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
+ms.openlocfilehash: 78fdd5c6c02990943874807c285f8e5eb60ad6ad
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807586"
 ---
-
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能の理解と使用
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -93,6 +98,9 @@ Defender for Endpoint を使用して、各イベントの詳細を取得しま�
 > [!TIP]
 > また、テストグラウンドの[Windows Defenderにアクセス](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)して demo.wd.microsoft.com 機能を確認し、機能の動作を確認できます。
 
+> [!NOTE]
+> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
+
 | 監査オプション | 監査モードを有効にする方法 | イベントを表示する方法 |
 |---|---|---|
 | 監査はすべてのイベントに適用されます | [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md) | [フォルダー アクセスイベントの制御](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
@@ -150,7 +158,7 @@ E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint
 
 4. イベントをフィルター処理する機能の XML コードを XML セクションに貼り付けます。
 
-5. [**OK**] を選択します。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
+5. **[OK]** を選択します。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
 
 #### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻撃表面の縮小ルール イベントの XML
 

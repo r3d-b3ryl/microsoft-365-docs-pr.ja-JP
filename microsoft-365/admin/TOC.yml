@@ -328,8 +328,6 @@
               href: manage/servicenow-basic-authentication.md
             - name: Azure AD の認証トークンを使用して構成する
               href: manage/servicenow-aad-oauth-token.md
-            - name: サービス正常性インシデントと推奨ソリューションのみ
-              href: manage/servicenow-service-health-incidents-solutions-only.md
             - name: 構成をテストする
               href: manage/servicenow-testing-the-configuration.md
             - name: トラブルシューティング

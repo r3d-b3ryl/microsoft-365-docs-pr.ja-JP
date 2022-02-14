@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute for Office 365を実装する方法について説明します。これは、インターネットに接続している多数のサービスへの代替ルーティング パスOffice 365します。
-ms.openlocfilehash: 574704fa52c556eed6550a25ec33c53a65dbcde4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9fbfaec8304c0ad5273aed3f07cb3d32c590c638
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173453"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807262"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
@@ -35,7 +35,7 @@ ExpressRoute for Office 365は、インターネットに接続している多�
   
  **状態:** 完全ガイド v2
   
-Office 365 実装用の ExpressRoute を慎重に計画し、コア ネットワークとインターネットにルートを挿入した専用回線の両方でルーティングを利用できるネットワークの複雑さにも対応する必要があります。 このガイドの詳細な計画とテストをチームが実行しない場合は、ExpressRoute 回線が有効になっているときに、断続的な接続が発生したり、Office 365 サービスへの接続が完全に失われるリスクが高い場合があります。
+Office 365 実装用の ExpressRoute を慎重に計画し、コア ネットワークとインターネットにルートを挿入した専用回線の両方を介してルーティングを利用できるネットワークの複雑さを考慮する必要があります。 このガイドの詳細な計画とテストをチームが実行しない場合は、ExpressRoute 回線が有効になっているときに、断続的な接続が発生したり、Office 365 サービスへの接続が完全に失われるリスクが高い場合があります。
   
 実装を成功するには、インフラストラクチャ要件を分析し、詳細なネットワーク評価と設計を行い、段階的で管理された方法でロールアウトを慎重に計画し、詳細な検証とテスト計画を作成する必要があります。 大規模な分散環境では、実装が数か月に及び続くのを見るのも珍しいことではありません。 このガイドは、計画を立て支援するために設計されています。
   
@@ -47,9 +47,9 @@ Office 365 実装用の ExpressRoute を慎重に計画し、コア ネットワ
 
 2. ExpressRoute ネットワーク サービス プロバイダーを選択しました。 ExpressRoute パートナーと [ピアリングの場所の詳細を確認します](/azure/expressroute/expressroute-locations)。
 
-3. 既に ExpressRoute のドキュメントを読んで理解し、内部ネットワークは [ExpressRoute](https://azure.microsoft.com/documentation/services/expressroute/) の前提条件を最後まで満たしています。
+3. [既に ExpressRoute](https://azure.microsoft.com/documentation/services/expressroute/) のドキュメントを読んで理解し、内部ネットワークは ExpressRoute の前提条件を最後まで満たしています。
 
-4. チームは、チャネル 9 の azure [https://aka.ms/expressrouteoffice365](./azure-expressroute.md) [https://aka.ms/ert](https://aka.ms/ert) [ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer)シリーズを見て、以下を含む重要な技術的詳細を理解するために、すべてのパブリック ガイダンスとドキュメントを読み取っています。
+4. チームは、[https://aka.ms/expressrouteoffice365](./azure-expressroute.md)[https://aka.ms/ert](https://aka.ms/ert)チャネル 9 の [azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer) シリーズを見て、以下を含む重要な技術的詳細を理解するために、すべてのパブリック ガイダンスとドキュメントを読み取っています。
 
       - SaaS サービスのインターネット依存関係。
 
@@ -72,9 +72,9 @@ Office 365 実装用の ExpressRoute を慎重に計画し、コア ネットワ
 
   - すべての地理的ユーザーの場所と場所間の WAN 接続を識別し、現在インターネットに出力している場所と、ExpressRoute ピアリングの場所への出力が提案されている場所を特定します。
 
-  - プロキシ、ファイアウォールなど、すべてのエッジ デバイスを識別し、インターネットや ExpressRoute を越えるフローとの関係をカタログします。
+  - プロキシ、ファイアウォールなど、すべてのエッジ デバイスを識別し、インターネットと ExpressRoute を通るフローとの関係をカタログします。
 
-  - エンド ユーザーがインターネット フローと ExpressRoute フローの両方Office 365ルーティングまたは間接アプリケーション プロキシを介してサービスにアクセスするかどうかを文書化します。
+  - エンド ユーザーがインターネット フローと ExpressRoute フローの両方Office 365直接ルーティングまたは間接アプリケーション プロキシを介してサービスにアクセスするかどうかを文書化します。
 
 - テナントとミートミーの場所の場所をネットワークダイアグラムに追加します。
 
@@ -95,13 +95,13 @@ Office 365 実装用の ExpressRoute を慎重に計画し、コア ネットワ
 
 - 受信ネットワーク トラフィック フローは、Microsoft クラウドからオンプレミス ホストへの接続が開始されるシナリオです。 通常、これらの接続は、外部から発信されたフローに対して顧客のセキュリティ ポリシーが必要とするファイアウォールや他のセキュリティ インフラストラクチャを通過する必要があります。
 
-Office 365の記事 [「Route with ExpressRoute for Office 365」](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408)の「ルート対称性の確保」セクションを参照して、受信トラフィックを送信するサービスを特定し、Office 365 エンドポイントリファレンス記事の [「expressRoute](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) **for Office 365」** という列を探して、残りの接続情報を確認します。
+Office 365 の記事 「[Route with ExpressRoute for Office 365](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408)」の「ルート対称性の確保」セクションを参照して、受信トラフィックを送信するサービスを特定し、Office 365 エンドポイントリファレンス記事の **「expressRoute for Office 365**」という列を探して、残りの接続情報を確認します。[](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 送信接続が必要なサービスごとに、ネットワーク ルーティング、プロキシ構成、パケット 検査、帯域幅のニーズなど、サービスの計画された接続について説明します。
   
-受信接続が必要なサービスごとに、追加情報が必要になります。 Microsoft クラウド内のサーバーは、オンプレミス ネットワークへの接続を確立します。 接続が正しく行われたか確認するには、この接続のすべての側面について説明します。これらの受信接続を受け入れるサービスのパブリック DNS エントリ、CIDR によって書式設定された IPv4 IP アドレス、ISP 機器が関係している、およびこれらの接続に対する受信 NAT または送信元 NAT の処理方法。
+受信接続が必要なサービスごとに、追加情報が必要になります。 Microsoft クラウド内のサーバーは、オンプレミス ネットワークへの接続を確立します。 接続が正しく行われたか確認するには、この接続のすべての側面 (以下を含む) を記述する必要があります。これらの受信接続を受け入れるサービスのパブリック DNS エントリ、CIDR によって書式設定された IPv4 IP アドレス、ISP 機器が関係している、およびこれらの接続に対する受信 NAT または送信元 NAT の処理方法。
   
-非対称ルーティングが導入されていないかどうかを確認するには、インターネットまたは ExpressRoute を使用して接続するかどうかに関係なく、受信接続を確認する必要があります。 場合によっては、Office 365 サービスが受信接続を開始するオンプレミス のエンドポイントに対して、他の Microsoft および非接続サービスからアクセスする必要Microsoft サービス。 これらのサービスに対して ExpressRoute ルーティングを有効にしても、Office 365のシナリオが壊れる可能性は最も重要です。 多くの場合、ExpressRoute を有効にした後も Microsoft からの受信フローが対称的に維持するために、ソース ベースの NAT など、内部ネットワークに特定の変更を実装する必要がある場合があります。
+非対称ルーティングが導入されていないかどうかを確認するには、インターネットまたは ExpressRoute を使用して接続するかどうかに関係なく、受信接続を確認する必要があります。 場合によっては、Office 365 サービスが受信接続を開始するオンプレミス のエンドポイントに対して、他の Microsoft および非接続サービスからアクセスする必要Microsoft サービス。 これらのサービスに対して ExpressRoute ルーティングを有効にしても、Office 365のシナリオが壊れる可能性は最も重要です。 多くの場合、ExpressRoute を有効にした後も Microsoft からの受信フローが対称的な状態を維持するために、ソース ベースの NAT など、内部ネットワークに特定の変更を実装する必要がある場合があります。
   
 必要な詳細レベルのサンプルを次に示します。 この場合、Exchangeハイブリッドは ExpressRoute を使用してオンプレミス システムにルーティングされます。 
 
@@ -116,9 +116,9 @@ Office 365の記事 [「Route with ExpressRoute for Office 365」](https://suppo
 |**このオンプレミス エンドポイントは、インターネット上のユーザー/システムによって使用されます。** <br/> |はい  <br/> |
 |**パブリック エンドポイントを通じて公開される内部システム** <br/> |Exchange Server クライアント アクセスロール (オンプレミス) 192.168.101、192.168.102、192.168.103  <br/> |
 |**パブリック エンドポイントの IP アドバタイズ** <br/> |**インターネットへ**: 5.5.0.0/16 **To ExpressRoute**: 5.5.5.0/24  <br/> |
-|**セキュリティ/境界コントロール** <br/> |**インターネット パス**:  **expressRoute** DeviceID_002 : DeviceID_003  <br/> |
+|**セキュリティ/境界コントロール** <br/> |**インターネット パス**: **expressRoute DeviceID_002: DeviceID_003**  <br/> |
 |**高可用性** <br/> |2 つの geo 冗長 /ExpressRoute 回線間でアクティブ/アクティブ - シカゴとダラス  <br/> |
-|**パス対称制御** <br/> |**メソッド**: 送信元 NAT **インターネット** パス : 192.168.5.5 **ExpressRoute** パスへの送信元 NAT 受信接続 : 192.168.1.0 (シカゴ) と 192.168.2.0 への送信元 NAT 接続 (ダラス)  <br/> |
+|**パス対称制御** <br/> |**メソッド****: 送信元 NAT** インターネット パス: 192.168.5.5 **ExpressRoute** パスへの送信元 NAT 受信接続: 192.168.1.0 (シカゴ) および 192.168.2.0 への送信元 NAT 接続 (ダラス)  <br/> |
 
 送信のみであるサービスのサンプルを次に示します。
 
@@ -127,10 +127,10 @@ Office 365の記事 [「Route with ExpressRoute for Office 365」](https://suppo
 |**ネットワーク トラフィックの方向** <br/> |送信  <br/> |
 |**サービス** <br/> |SharePoint Online  <br/> |
 |**オンプレミス エンドポイント (ソース)** <br/> |ユーザー ワークステーション  <br/> |
-|**パブリック Office 365 エンドポイント (宛先)** <br/> |SharePointオンライン (IP アドレス)  <br/> |
-|**パブリック (インターネット) DNS エントリ** <br/> |\*.sharepoint.com (および追加の FQDN)  <br/> |
-|**CDN紹介** <br/> |cdn.sharepointonline.com (および追加の FQDN) - プロバイダーによって管理CDN IP アドレス)  <br/> |
-|**使用されている IP アドバタイズと NAT** <br/> |**インターネット パス/送信元 NAT**: 1.1.1.0/24  <br/> **ExpressRoute パス/ソース NAT**: 1.1.2.0/24 (シカゴ) と 1.1.3.0/24 (ダラス)  <br/> |
+|**パブリック Office 365 エンドポイント (宛先)** <br/> |SharePoint オンライン (IP アドレス)  <br/> |
+|**パブリック (インターネット) DNS エントリ** <br/> |\*.sharepoint.com (および他の FQDN)  <br/> |
+|**CDN紹介** <br/> |cdn.sharepointonline.com (その他の FQDN) - プロバイダーによって管理CDN IP アドレス)  <br/> |
+|**使用されている IP アドバタイズと NAT** <br/> |**インターネット パス/送信元 NAT**: 1.1.1.0/24  <br/> **ExpressRoute パス/Source NAT**: 1.1.2.0/24 (シカゴ) と 1.1.3.0/24 (ダラス)  <br/> |
 |**接続方法** <br/> |**インターネット**: レイヤー 7 プロキシ (.pac ファイル) 経由  <br/> **ExpressRoute**: 直接ルーティング (プロキシなし)  <br/> |
 |**セキュリティ/境界コントロール** <br/> |**インターネット パス**: DeviceID_002  <br/> **ExpressRoute パス**: DeviceID_003  <br/> |
 |**高可用性** <br/> |**インターネット パス**: 冗長なインターネット出力  <br/> **ExpressRoute パス**: 2 つの geo 冗長 ExpressRoute 回線間でのアクティブ/アクティブな 「ホット ジャガイモ」 ルーティング - シカゴとダラス  <br/> |
@@ -191,7 +191,7 @@ ExpressRoute 回線がネットワークを Microsoft ネットワークに接�
 
 **カリフォルニアとニューヨークの ExpressRoute meet-me の計画場所**
 
-|Location  <br/> |人数  <br/> |インターネット出力を通して Microsoft ネットワークに予想される待機時間  <br/> |ExpressRoute を使用した Microsoft ネットワークへの予期される待機時間  <br/> |
+|場所  <br/> |人数  <br/> |インターネット出力を通して Microsoft ネットワークに予想される待機時間  <br/> |ExpressRoute を使用した Microsoft ネットワークへの予期される待機時間  <br/> |
 |----------|-----------|----------|-----------|
 |Los Angeles  <br/> |10,000  <br/> |~15ms  <br/> |~10ms (シリコン バレー経由)  <br/> |
 |ワシントン DC  <br/> |15,000  <br/> |~20ms  <br/> |~10ms (ニューヨーク経由)  <br/> |
@@ -207,7 +207,7 @@ Office 365 地域、ExpressRoute ネットワーク サービス プロバイダ
 
 ![ExpressRoute 米国の地理的な meet-me。](../media/5ec38274-b317-4ec1-91c8-90c2a7fd32ca.png)
   
-この概念をさらに少し広げ、2 番目の図は、類似の情報と意思決定に直面している多国籍顧客の例を示しています。 この顧客はバングラデシュに小規模なオフィスを持ち、この地域でのフットプリントの拡大に集中する 10 人の小さなチームのみです。 チェンナイにはミートミーの場所と、チェンナイでホストされている microsoft データセンター Office 365、ミートミーの場所が理にかなっています。ただし、10 人の場合、追加回線の費用は負担になります。 ネットワークを見ていると、ネットワーク全体のネットワーク トラフィックの送信に関係する待機時間が、別の ExpressRoute 回線を取得するために資本を費やすよりも効果的かどうかを判断する必要があります。
+この概念をさらに少し広げ、2 番目の図は、類似の情報と意思決定に直面している多国籍顧客の例を示しています。 この顧客はバングラデシュに小規模なオフィスを持ち、この地域でのフットプリントの拡大に集中する 10 人の小さなチームのみです。 チェンナイにはミートミーの場所と、Office 365 がチェンナイでホストされている Microsoft データセンターがあるので、ミートミーの場所は理にかなっていますが、10 人の場合、余分な回線の費用は負担になります。 ネットワークを見ていると、ネットワーク全体のネットワーク トラフィックの送信に関係する待機時間が、別の ExpressRoute 回線を取得するために資本を費やすよりも効果的かどうかを判断する必要があります。
   
 また、バングラデシュの 10 人のユーザーは、インターネットを通して Microsoft ネットワークに送信されるネットワーク トラフィックのパフォーマンスが、導入図で示し、以下に再現された内部ネットワーク上でルーティングするよりも優れたパフォーマンスを得る場合があります。
   
@@ -235,14 +235,14 @@ Office 365 地域、ExpressRoute ネットワーク サービス プロバイダ
 
 - 最初の展開では、受信メールやハイブリッド接続など、すべての受信サービスがインターネットを使用する必要があります。
 
-- [PAC/WPAD](./managing-office-365-endpoints.md)ファイル、既定のルート、プロキシ サーバー、および BGP ルート アドバタイズの構成など、エンド ユーザー クライアント LAN ルーティングを計画します。
+- [PAC/WPAD](./managing-office-365-endpoints.md) ファイル、既定のルート、プロキシ サーバー、および BGP ルート アドバタイズの構成など、エンド ユーザー のクライアント LAN ルーティングを計画します。
 
 - プロキシ サーバー、ファイアウォール、クラウド プロキシなどの境界ルーティングを計画します。
 
 ### <a name="plan-your-bandwidth-security-high-availability-and-failover"></a>帯域幅、セキュリティ、高可用性、フェールオーバーを計画する
 <a name="availability"> </a>
 
-主要なワークロードごとに必要な帯域幅の計画Office 365します。 オンライン帯域幅Exchange Online、SharePoint、およびオンライン帯域幅Skype for Business個別に見積もる。 この関数で提供した見積もり計算Exchange Online、Skype for Businessとして使用できます。ただし、組織の帯域幅ニーズを完全に理解するには、ユーザー プロファイルと場所の代表的なサンプルを含むパイロット テストが必要です。
+主要なワークロードごとに必要な帯域幅の計画Office 365します。 オンライン帯域幅Exchange Online、SharePoint、およびオンライン帯域幅Skype for Business個別に見積もる。 Exchange Online および Skype for Business で提供した見積もり計算を開始場所として使用できます。ただし、組織の帯域幅ニーズを完全に理解するには、ユーザー プロファイルと場所の代表的なサンプルを含むパイロット テストが必要です。
   
 各インターネットおよび ExpressRoute 出力場所でのセキュリティの処理方法を計画に追加し、Office 365 への ExpressRoute 接続はすべてパブリック ピアリングを使用し、外部ネットワークへの接続に関する会社のセキュリティ ポリシーに従ってセキュリティで保護する必要があります。
   
@@ -250,24 +250,24 @@ Office 365 地域、ExpressRoute ネットワーク サービス プロバイダ
   
 #### <a name="plan-bandwidth-requirements-including-skype-for-business-requirements-on-jitter-latency-congestion-and-headroom"></a>ジッター、待機時間、輻輳Skype for Businessヘッドルームの要件を含む帯域幅要件を計画する
   
-Skype for Businessオンラインには、オンラインのメディア品質とネットワーク接続のパフォーマンスに関する記事で詳しく説明されている特定の追加[のネットワーク要件Skype for Businessがあります](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)。
+Skype for Businessオンラインには、特定の追加のネットワーク要件があります。詳細については、「メディア品質とネットワーク接続のパフォーマンス」の記事「Skype for Business [Online」を参照してください](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)。
   
-ネットワーク計画の **「Azure ExpressRoute の** 帯域幅計画」セクションを参照してください。このセクションでは [、ExpressRoute](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd)を使用Office 365。
+ネットワーク計画の「**Azure ExpressRoute の** 帯域幅計画」のセクションを参照してください。[ExpressRoute を使用Office 365](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd)。
   
 パイロット ユーザーと帯域幅評価を実行する場合は、ガイドを使用できます。[Office 365とパフォーマンス履歴を使用してパフォーマンス調整を行います](https://support.office.com/article/Office-365-performance-tuning-using-baselines-and-performance-history-1492cb94-bd62-43e6-b8d0-2a61ed88ebae)。
   
 #### <a name="plan-for-high-availability-requirements"></a>高可用性要件を計画する
   
-ニーズを満たして更新されたネットワーク トポロジ図に組み込む高可用性の計画を作成します。 「ネットワーク計画」**の「Azure ExpressRoute** を使用した高可用性とフェールオーバー」のセクションを参照 [Office 365。](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd)
+ニーズを満たして更新されたネットワーク トポロジ図に組み込む高可用性の計画を作成します。 「ネットワーク計画と **ExpressRoute** for Office 365」の「高可用性とフェールオーバー」[を参照してください](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd)。
   
 #### <a name="plan-for-network-security-requirements"></a>ネットワーク セキュリティ要件を計画する
   
-ネットワーク セキュリティ要件を満たす計画を作成し、更新されたネットワーク トポロジ図に組み込む。 「ネットワーク計画と ExpressRoute for Office 365」の **「Azure ExpressRoute** にセキュリティ制御を適用する」[のセクションをOffice 365。](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd)
+ネットワーク セキュリティ要件を満たす計画を作成し、更新されたネットワーク トポロジ図に組み込む。 「ネットワーク計画 **と ExpressRoute** for Office 365」の「[Azure ExpressRoute](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd) にセキュリティ制御を適用する」のセクションをOffice 365。
   
 ### <a name="design-outbound-service-connectivity"></a>送信サービスの接続を設計する
 <a name="outbound"> </a>
 
-ExpressRoute for Office 365には *、* 不慣れな可能性がある送信ネットワーク要件があります。 具体的には、Office 365 へのユーザーとネットワークを表し、Microsoft への送信ネットワーク接続の送信元エンドポイントとして機能する IP アドレスは、以下に示す特定の要件に従う必要があります。
+ExpressRoute for *Office 365には、* 不慣れな可能性がある送信ネットワーク要件があります。 具体的には、Office 365 へのユーザーとネットワークを表し、Microsoft への送信ネットワーク接続の送信元エンドポイントとして機能する IP アドレスは、以下に示す特定の要件に従う必要があります。
   
 1. エンドポイントは、会社に登録されているパブリック IP アドレス、または ExpressRoute 接続を提供する通信事業者である必要があります。
 
@@ -281,14 +281,14 @@ ExpressRoute for Office 365には *、* 不慣れな可能性がある送信ネ�
   
 上記の要件を満たすために使用できる最も一般的な方法は、ネットワークの一部として実装するか、ExpressRoute キャリアによって提供されるソース NAT を使用する方法です。 送信元 NAT を使用すると、ExpressRoute からインターネット ネットワークの詳細とプライベート IP アドレス指定を抽象化できます。適切な IP ルート アドバタイズと組み合う場合は、パスの対称性を確保するための簡単なメカニズムを提供します。 ExpressRoute ピアリングの場所に固有のステートフル ネットワーク デバイスを使用している場合は、パスの対称性を確保するために、ExpressRoute ピアリングごとに個別の NAT プールを実装する必要があります。
   
-[ExpressRoute NAT の要件の詳細については、以下を参照してください](/azure/expressroute/expressroute-nat)。
+[ExpressRoute NAT の要件の詳細について説明します](/azure/expressroute/expressroute-nat)。
   
 送信接続の変更をネットワーク トポロジ図に追加します。
   
 ### <a name="design-inbound-service-connectivity"></a>受信サービスの接続を設計する
 <a name="inbound"> </a>
 
-エンタープライズ Office 365 展開の大部分は、Office 365 からオンプレミス サービスへの何らかの形式の受信接続 (Exchange、SharePoint、および Skype for Business ハイブリッド シナリオ、メールボックスの移行、ADFS インフラストラクチャを使用した認証など) を前提とします。 ExpressRoute でオンプレミス ネットワークと Microsoft 間の追加ルーティング パスを有効にして送信接続を有効にした場合、これらの受信接続は、これらのフローが引き続きインターネットを使用する場合でも、非対称ルーティングの影響を不注意に受ける可能性があります。 以下に示すいくつかの予防措置は、インターネット ベースの受信フローに影響を与えなくするために、Office 365を推奨します。
+ほとんどのエンタープライズ Office 365 展開では、Office 365 からオンプレミス サービスへの何らかの形式の受信接続 (Exchange、SharePoint、Skype for Business ハイブリッド シナリオ、メールボックスの移行、ADFS インフラストラクチャを使用した認証など) を前提とします。 ExpressRoute で、送信接続のためにオンプレミス ネットワークと Microsoft 間の追加ルーティング パスを有効にした場合、これらの受信接続は、これらのフローが引き続きインターネットを使用する場合でも、非対称ルーティングの影響を不注意に受ける可能性があります。 以下に示すいくつかの予防措置は、インターネット ベースの受信フローに影響を与えなくするために、Office 365を推奨します。
   
 受信ネットワーク トラフィック フローの非対称ルーティングのリスクを最小限に抑えるために、すべての受信接続は、ExpressRoute へのルーティングの可視性を持つネットワークのセグメントにルーティングされる前に、送信元 NAT を使用する必要があります。 送信元 NAT を使用せずに ExpressRoute にルーティングを表示するネットワーク セグメントへの着信接続が許可されている場合、Office 365 から発信される要求はインターネットから入力されますが、Office 365 に戻る応答は ExpressRoute ネットワーク パスを Microsoft ネットワークに優先し、非対称ルーティングを引き起こします。
   
@@ -397,14 +397,14 @@ ExpressRoute 接続を使用して一部の受信フローを送信する場合�
   
 組織が採用するサービスとして以前に特定Office 365ネットワーク サービスのすべてについて、この操作を行う必要があります。
   
-このペーパーでは、2 人目のユーザーと一緒にルートを順を見て行うのに役立ちます。 各ネットワーク ホップが次のルートを取得する必要がある場所を説明し、ルーティング パスを理解している必要があります。 ExpressRoute は常に、Microsoft サーバー IP アドレスへのよりスコープ付きルートを提供し、インターネットの既定のルートよりも低いルート コストを提供します。
+このペーパーでは、2 人目のユーザーと一緒にルートのウォークスルーを行うのに役立ちます。 各ネットワーク ホップが次のルートを取得する必要がある場所を説明し、ルーティング パスを理解している必要があります。 ExpressRoute は常に、Microsoft サーバー IP アドレスへのよりスコープ付きルートを提供し、インターネットの既定のルートよりも低いルート コストを提供します。
   
 ### <a name="design-client-connectivity-configuration"></a>クライアント接続の構成を設計する
 <a name="asymmetric"> </a>
 
 ![ExpressRoute で PAC ファイルを使用する。](../media/7cfa6482-dbae-416a-ae6f-a45e5f4de23b.png)
   
-インターネット にバインドされたトラフィックにプロキシ サーバーを使用している場合は、PAC またはクライアント構成ファイルを調整して、ネットワーク上のクライアント コンピューターがプロキシ サーバーを通過せずに Office 365 に送信する ExpressRoute トラフィックを正しく構成し、一部の Office 365 トラフィックを含む残りのトラフィックが関連するプロキシに送信されるようにする必要があります。 PAC ファイルなどのエンドポイント[Office 365管理に関する](./managing-office-365-endpoints.md)ガイドを参照してください。
+インターネット にバインドされたトラフィックにプロキシ サーバーを使用している場合は、PAC またはクライアント構成ファイルを調整して、ネットワーク上のクライアント コンピューターがプロキシ サーバーを通過せずに Office 365 に送信する ExpressRoute トラフィックを正しく構成し、一部の Office 365 トラフィックを含む残りのトラフィックが関連するプロキシに送信されるようにする必要があります。 PAC ファイルなど、[Office 365エンドポイントの](./managing-office-365-endpoints.md)管理に関するガイドをお読みください。
   
 > [!NOTE]
 > エンドポイントは頻繁に変更されます 。多くの場合、週単位で変更されます。 組織が採用したサービスと機能に基づいて変更を加えるだけで、最新の状態を取り戻す必要がある変更の数を減らす必要があります。 変更が発表され、レコードが過去のすべての変更に保持される RSS フィードの有効日に細心の注意を払い、通知された IP アドレスは、有効日に達するまでアドバタイズされないか、広告から削除される可能性があります。
@@ -412,7 +412,7 @@ ExpressRoute 接続を使用して一部の受信フローを送信する場合�
 ## <a name="build-your-deployment-and-testing-procedures"></a>展開とテストの手順を構築する
 <a name="testing"> </a>
 
-実装計画には、テスト計画とロールバック計画の両方を含める必要があります。 実装が予想通り機能しない場合は、問題が発見される前に、最も少ない人数に影響を与える計画を設計する必要があります。 計画で考慮する必要がある高レベルの原則を次に示します。
+実装計画には、テスト計画とロールバック計画の両方を含める必要があります。 実装が予想通り機能しない場合は、問題が発見される前に、最も少ない人数に影響を与える計画を設計する必要があります。 計画で検討する必要があるいくつかの概要原則を次に示します。
   
 1. 中断を最小限に抑えるために、ネットワーク セグメントとユーザー サービスのオンボーディングをステージ化します。
 
@@ -434,11 +434,11 @@ ExpressRoute 接続を使用して一部の受信フローを送信する場合�
 
 2. ExpressRoute ネットワークへのルートを最初に 1 つのネットワーク セグメントにアドバタイズし、ネットワーク セグメントまたは地域別にルート アドバタイズを展開します。
 
-3. 初めてOffice 365を展開する場合は、ExpressRoute ネットワーク展開をパイロットとして使用して、少人数のユーザーをサポートします。
+3. 初めてOffice 365展開する場合は、数人のパイロットとして ExpressRoute ネットワーク展開を使用します。
 
-4. プロキシ サーバーを使用する場合は、テストとフィードバックを使用して少人数のユーザーを ExpressRoute に送信して、追加する前にテスト PAC ファイルを構成することもできます。
+4. プロキシ サーバーを使用する場合は、テストとフィードバックを使用して数人を ExpressRoute に送信して追加する前に、テスト PAC ファイルを構成することもできます。
 
-実装計画では、実行する必要がある各展開手順、またはネットワーク構成の展開に使用する必要があるコマンドを一覧表示する必要があります。 ネットワーク停止時間が到着すると、すべての変更が行われたのは、事前に作成され、ピア レビューされた、書き込まれた展開計画から行う必要があります。 ExpressRoute の技術的な構成に関するガイダンスを参照してください。
+実装計画では、実行する必要がある各展開手順、またはネットワーク構成の展開に使用する必要があるコマンドを一覧表示する必要があります。 ネットワークの停止時間が到着すると、行われた変更はすべて、事前に作成され、ピア レビューされた、書面による展開計画による必要があります。 ExpressRoute の技術的な構成に関するガイダンスを参照してください。
   
 - メールを送信し続けるオンプレミス サーバーの IP アドレスを変更した場合は、SPF TXT レコードを更新します。
 
@@ -446,7 +446,7 @@ ExpressRoute 接続を使用して一部の受信フローを送信する場合�
 
 - ルーティングまたはプロキシ構成を維持するために、エンドポイントOffice 365 RSS フィードにサブスクライブしてください。
 
-ExpressRoute の展開が完了したら、テスト計画の手順を実行する必要があります。 各プロシージャの結果をログに記録する必要があります。 テスト計画の結果が実装が成功しなかった場合に、元の実稼働環境にロールバックする手順を含める必要があります。
+ExpressRoute の展開が完了したら、テスト 計画の手順を実行する必要があります。 各プロシージャの結果をログに記録する必要があります。 テスト計画の結果が実装が成功しなかった場合に、元の実稼働環境にロールバックする手順を含める必要があります。
   
 ### <a name="build-your-test-procedures"></a>テスト 手順の作成
 
@@ -531,7 +531,7 @@ ExpressRoute の展開が完了したら、テスト計画の手順を実行す�
 
 ### <a name="set-up-a-test-connection-to-expressroute-with-a-test-network-segment"></a>テスト ネットワーク セグメントを使用して ExpressRoute へのテスト接続をセットアップする
 
-完成した計画を紙で作成したら、小規模でテストする必要があります。 このテストでは、オンプレミス ネットワーク上のテスト サブネットへの Microsoft Peering との 1 つの ExpressRoute 接続を確立します。 テスト サブネットとの[](https://go.microsoft.com/fwlink/p/?LinkID=403802)間の接続を持つ試用版 Office 365 テナントを構成し、テスト サブネットに実稼働環境で使用するすべての送信サービスと受信サービスを含めできます。 テスト ネットワーク セグメントの DNS を設定し、すべての受信サービスと送信サービスを確立します。 テスト 計画を実行し、各サービスのルーティングとルート伝達に精通している必要があります。
+完成した計画を紙で作成したら、小規模でテストする必要があります。 このテストでは、オンプレミス ネットワーク上のテスト サブネットへの Microsoft Peering との 1 つの ExpressRoute 接続を確立します。 テスト サブネットとの間の接続[を](https://go.microsoft.com/fwlink/p/?LinkID=403802)持つ試用版 Office 365 テナントを構成し、実稼働環境で使用するすべての送信サービスと受信サービスをテスト サブネットに含めできます。 テスト ネットワーク セグメントの DNS を設定し、すべての受信サービスと送信サービスを確立します。 テスト 計画を実行し、各サービスのルーティングとルート伝達に精通している必要があります。
   
 ### <a name="execute-the-deployment-and-test-plans"></a>展開計画とテスト 計画を実行する
 
@@ -558,7 +558,7 @@ ExpressRoute の展開が完了したら、テスト計画の手順を実行す�
   
 ### <a name="configure-qos-for-skype-for-business-online"></a>オンラインの QoS をSkype for Businessする
 
-QoS は、オンラインの音声および会議の利点を取得Skype for Business必要です。 ExpressRoute ネットワーク接続が他のサービス アクセスをブロックOffice 365 QoS を構成できます。 QoS の構成については、「オンライン」の[記事「ExpressRoute と QoS Skype for Businessされています](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d)。
+QoS は、オンラインの音声および会議の利点を取得Skype for Business必要です。 ExpressRoute ネットワーク接続が他のサービス アクセスをブロックOffice 365 QoS を構成できます。 QoS の構成については、「オンライン」の記事[「ExpressRoute と QoS Skype for Businessされています](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d)。
   
 ## <a name="troubleshooting-your-implementation"></a>実装のトラブルシューティング
 <a name="troubleshooting"> </a>
@@ -569,7 +569,7 @@ QoS は、オンラインの音声および会議の利点を取得Skype for Bus
   
 各顧客エンドポイントへのネットワーク トレースを使用して PSPing を実行し、送信元 IP アドレスと宛先 IP アドレスを評価して、期待通りである検証を行います。 ポート 25 で公開するメール ホストに telnet を実行し、SNAT が元の送信元 IP アドレスを非表示にしている必要がある場合は確認します。
   
-ExpressRoute 接続を使用して Office 365 を展開する場合は、ExpressRoute のネットワーク構成の両方が最適に設計され、クライアント コンピューターなどのネットワーク上の他のコンポーネントも最適化されている必要があります。 この計画ガイドを使用して、見逃した可能性のある手順のトラブルシューティングに加えて、パフォーマンスのトラブルシューティング計画も作成[Office 365。](https://support.office.com/article/Performance-troubleshooting-plan-for-Office-365-e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c)
+ExpressRoute 接続を使用して Office 365 を展開する場合は、ExpressRoute のネットワーク構成の両方が最適に設計され、クライアント コンピューターなどのネットワーク上の他のコンポーネントも最適化されている必要があります。 この計画ガイドを使用して、見逃した可能性のある手順のトラブルシューティングに加えて、パフォーマンスのトラブルシューティング[計画](https://support.office.com/article/Performance-troubleshooting-plan-for-Office-365-e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c)もOffice 365。
   
 ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/implementexpressroute365]()
   

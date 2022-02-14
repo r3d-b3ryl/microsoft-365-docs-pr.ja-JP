@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: 409a19f9e3579978eb3e3cf03d087820e494e181
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4a64a9dd9a15c9bc877288aa9ac8fc62c40cee51
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933769"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805882"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -48,7 +48,7 @@ ms.locfileid: "61933769"
 ## <a name="before-you-begin"></a>開始する前に
 
 アドインの一元展開では、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、または Microsoft 365 Enterprise ライセンス (E3/E5/F3) を使用している必要があります (Office 組織 ID、Office 365 Education ライセンス (A1/A3/A5)、または Microsoft 365 Education ライセンス (A3/A5) を使用し、Exchange Online およびアクティブな Exchange Online メールボックスを持っています。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリ内に存在するか、またはサブスクリプション ディレクトリにAzure Active Directory。
-次の手順に従って、OfficeとExchange要件を確認したり、集中展開の互換性チェックを[使用できます](#centralized-deployment-compatibility-checker)。
+以下に示す特定の要件Office、Exchange一元展開の互換性チェック[を使用できます](#centralized-deployment-compatibility-checker)。
 
 一元展開は、次の機能をサポートしていません。
 
@@ -88,7 +88,7 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
 集中展開を介してアドインを展開するには、組織のグローバル管理者または管理者Exchange必要があります。
 
 > [!NOTE]
-> 次Exchangeに示すように、管理者がアドインを展開できるのは、Azure Active Directory 管理センターで App **Registrations** プロパティが true に設定されている場合のみです。
+> 次Exchangeに示すように、アプリケーション管理者の役割が追加されている場合、または Azure Active Directory 管理センターで App **Registrations** プロパティが true に設定されている場合、管理者はアドインを展開できます。
 >
 > ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
@@ -112,7 +112,7 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   このコマンドは *_、TenantDomain_* *(TailspinToysIncorporated.onmicrosoft など) の入力を求めるプロンプトを表示します。 </span>com)**_および TenantAdmin_* 資格情報 (グローバル管理者資格情報を使用)、同意を要求します。
+   このコマンドは、  *_TenantDomain_* ( *TailspinToysIncorporated.onmicrosoft など) の入力を求めるプロンプトを表示します。</span>com*)  *_および TenantAdmin_* 資格情報 (グローバル管理者資格情報を使用)、同意を要求します。
 
    > [!NOTE]
    > テナントのユーザー数によって、チェックが完了するのに数分または数時間かかる場合があります。 
@@ -150,7 +150,7 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>グループにネストされたグループが含まれているかどうかを調べる
 
-グループにネストされたグループが含まれているかどうかを調べる最も簡単な方法は、Outlook 内のグループの連絡先カードを確認することです。 電子メールの **[To]** フィールドにグループ名を入力し、解決時にグループ名を選択すると、グループ名にユーザーまたは入れ子になったグループが含まれているかが表示されます。 次の例では、「テスト グループ」での Outlook 情報先カードの [ **メンバー**] タブには、ユーザーはなく、2 つのサブ グループのみが表示されています。
+グループにネストされたグループが含まれているかどうかを調べる最も簡単な方法は、Outlook 内のグループの連絡先カードを確認することです。 電子メールの [ **To** ] フィールドにグループ名を入力し、解決時にグループ名を選択すると、グループ名にユーザーまたは入れ子になったグループが含まれているかが表示されます。 次の例では、「テスト グループ」での Outlook 情報先カードの [ **メンバー**] タブには、ユーザーはなく、2 つのサブ グループのみが表示されています。
 
 ![連絡先カードの [Outlook] タブ。](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
@@ -162,17 +162,17 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
 
 ### <a name="contacting-microsoft-for-support"></a>Microsoft に連絡してサポートを受ける
 
-web 用 Office アプリ (Word、Excel など) の使用中にアドインの読み込み中に問題が発生した場合は、Microsoft サポートに問い合わせが必要な場合があります[(方法](../../business-video/get-help-support.md)について説明します)。 サポート チケットに、ユーザーのMicrosoft 365情報を入力します。
+web 用 Office アプリ (Word、Excel など) の使用中にアドインの読み込み中に問題が発生した場合は、Microsoft のサポートに連絡する必要があります (方法について説明します)。[](../../business-video/get-help-support.md) サポート チケットに、ユーザーのMicrosoft 365情報を入力します。
 
 | プラットフォーム | デバッグ情報 |
 |:-----|:-----|
 |Office | Charles/Fiddler ログ  <br/>  テナント ID ([方法の詳細](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID。 1 つの Office ページのソースを表示し、相関 ID の値を探してサポートに送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
-|リッチ クライアント (Windows、Mac) | Charles/Fiddler ログ  <br/>  クライアント アプリのビルド番号 (できれば **File/Account** のスクリーンショットとして) |
+|リッチ クライアント (Windows、Mac) | Charles/Fiddler ログ  <br/>  クライアント アプリのビルド番号 (できればファイル/アカウントの **スクリーンショット** として) |
 
 ## <a name="related-content"></a>関連コンテンツ
 
 [管理センターにアドインを展開](../manage/manage-deployment-of-add-ins.md) する (記事)\
 [管理センターでアドインを管理](manage-addins-in-the-admin-center.md) する (記事)\
 [集中展開に関する FAQ](../manage/centralized-deployment-faq.yml) (記事)\
-[ビジネス ユーザー Microsoft 365最新の Officeクライアント](../setup/upgrade-users-to-latest-office-client.md)にアップグレードする (記事)
+[ビジネス ユーザー Microsoft 365のクライアントを](../setup/upgrade-users-to-latest-office-client.md)最新のクライアントOfficeアップグレードする (記事)
  

@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: パートナー組織がチャネルを使用してどのように展開および更新するか。
-ms.openlocfilehash: a2ce901d6014079a729b0e1f069d4a2d0d4be42a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4e4ebfef9c505f3a6ac27726da9b1f6e5ebb932a
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167008"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806878"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>展開および更新プログラム チャネルの構成例
 
@@ -34,7 +34,7 @@ Windows 10 および Microsoft 365 Apps で使用する更新チャネルの選�
 
 |顧客/チャネルオファリング|Windows 10|Microsoft 365 Apps for Enterprise（Windows 10）|
 |:-------|:-------|:-----|
-|高度に技術的なユーザーと開発者を対象としています。 <p> 新しい最新のコードを使用して、開発サイクルで最も早く最新のビルドに最初にアクセスします。 <p> ラフエッジといくつかの不安定性があります。|Dev|該当なし|
+|高度に技術的なユーザーと開発者を対象としています。 <p> 最新のコードを使用して、開発サイクルで最も早く最新のビルドに最初にアクセスします。 <p> ラフエッジといくつかの不安定性があります。|Dev|該当なし|
 |まだ開発中の信頼性の高いビルドを望む早期導入者と IT 担当者に適切です。 <p> 今後の予定を確認し、新機能の検証にご協力ください。|ベータチャンネル|ベータチャンネル|
 |今後のリリースへの早期アクセスを希望する方を対象としています。 <p> 企業が広範な展開の前に今後のリリースをプレビューして検証する場合。 <p> これらはサポートされています。|リリースプレビュー|最新機能提供チャネル (プレビュー) <p> 半期エンタープライズ チャネル (プレビュー)|
 |
@@ -49,13 +49,13 @@ Windows 10 および Microsoft 365 Apps で使用する更新チャネルの選�
 
 |顧客/チャネルオファリング|Windows 10|Microsoft 365 Apps for Enterprise（Windows 10）|例|
 |:-------|:-------|:-----|:-------|
-|準備ができ次第、最新のリリースを希望するお客様を対象としています。|半期チャネル|[最新機能提供チャネル](/deployoffice/overview-update-channels#current-channel-overview)|[最新リリース](deploy-update-channels-examples-rapid-deploy.md)|
-|予測可能性を追加で備えた最新のリリースが必要な企業を対象としています。|半期チャネル|[月次エンタープライズ チャネル](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)||
+|準備が整い次第、最新のリリースを必要としているお客様に適切です。|半期チャネル|[最新機能提供チャネル](/deployoffice/overview-update-channels#current-channel-overview)|[最新リリース](deploy-update-channels-examples-rapid-deploy.md)|
+|より予測性の高い最新リリースが必要な企業に適切です。|半期チャネル|[月次エンタープライズ チャネル](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)||
 |各アップデートの前に広範なITテストが必要な企業を対象としています。|半期チャネル|[半期エンタープライズ チャネル](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview)||
 |
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: Microsoft 365の複数地域環境での SharePoint、OneDrive、および Exchange のユーザー エクスペリエンスについて説明します。
-ms.openlocfilehash: eff55ba327e1484b5aa3fd344f904c0e11f8f954
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 638aa7d65f9243bfd110eebac6473d641e1d0b61
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177149"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806938"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>複数地域環境でのユーザー エクスペリエンス
 
@@ -32,7 +32,7 @@ ms.locfileid: "60177149"
 
 ## <a name="hub-sites"></a>ハブ サイト
 
-SharePoint ハブ サイトは、プロジェクト、部門、または地域の完全で一貫した表現を作成しながら、従業員のためのコンテンツの発見とエンゲージメントを強化します。 複数地域の環境では、ハブ サイトの地理的な場所に関係なく、サテライトの場所のサイトをハブ サイトに簡単に関連付けることができます。 ユーザーは、サイトの地理的な場所に関係なく、単一の検索エクスペリエンスを通じてハブ全体で検索して結果を得ることができます。
+SharePointハブ サイトは、プロジェクト、部署、地域の完全で一貫した表現を作成しながら、従業員のコンテンツの検出とエンゲージメントを強化します。 複数地域の環境では、ハブ サイトの地理的な場所に関係なく、サテライトの場所のサイトをハブ サイトに簡単に関連付けることができます。 ユーザーは、サイトの地理的な場所に関係なく、単一の検索エクスペリエンスを通じてハブ全体で検索して結果を得ることができます。
 
 ## <a name="microsoft-365-app-launcher"></a>Microsoft 365 アプリ起動ツール
 
@@ -44,7 +44,7 @@ Office Word、Excel、PowerPoint などのアプリケーションは、ログ�
 
 ## <a name="onedrive-sync-app"></a>OneDrive 同期アプリ
 
-OneDrive 同期アプリ (バージョン 17.3.6943.0625 以降) は、ユーザーの適切な地域OneDriveを自動的に検出します。 同期アプリのサポートには、地域に関係なくグループ ベースのサイトを同期する機能が含まれています。 Groove 同期クライアントは複数地域ではサポートされていません。 
+OneDrive 同期アプリ (バージョン 17.3.6943.0625 以降) は、ユーザーの適切な地域OneDriveを自動的に検出します。 同期アプリのサポートには、地域に関係なくグループ ベースのサイトを同期する機能が含まれています。 複数Groove同期クライアントはサポートされていません。 
 
 ## <a name="onedrive-location"></a>OneDrive場所
 
@@ -52,9 +52,9 @@ OneDrive 同期アプリ (バージョン 17.3.6943.0625 以降) は、ユーザ
 
 ## <a name="onedrive-ios-and-android"></a>OneDrive iOS および Android 
 
-OneDrive iOS および Android モバイル アプリには、ユーザーの OneDrive ファイルと、ユーザーの地域の場所と関係なくユーザーが共有しているファイルが表示されます。OneDrive モバイル アプリからの検索では、すべての地域の場所から関連する結果が表示されます。これらのアプリの最新バージョンをダウンロードしてください。
+iOS OneDrive Android モバイル アプリでは、地理的な場所に関係なく、OneDriveファイルとファイルが表示されます。 モバイル アプリから検索OneDrive、すべての地域の場所から関連する結果が表示されます。 これらのアプリの最新バージョンをダウンロードします。
 
-詳細については、「[iOS で OneDrive を使う](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247)」および「[Android で OneDrive を使う](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36)」を参照してください。
+詳細については、「[Use OneDrive on iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247)」および「Use OneDrive [for Android」](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36)を参照してください。
 
 ## <a name="onedrive-mobile-client"></a>OneDrive モバイル アプリ 
 
@@ -78,7 +78,7 @@ OneDriveモバイル クライアントは複数地域に対応し、すべて�
 
 ## <a name="sharepoint-home"></a>SharePoint Home 
 
-[SharePoint-Geo] では、ユーザー SharePoint場所によって決定された場所で、ユーザーのホームがホストOneDriveされます。 たとえば、ユーザーがヨーロッパのサテライトOneDriveホストされている場合、ユーザーのホームSharePointヨーロッパからレンダリングされます。 SharePoint ホームには、地理的な場所に関係なく、ユーザーに関連するすべてのコンテンツが含まれています。 
+複数SharePoint地域では、ユーザーがSharePoint場所によって決定される場所で、ユーザーのホームがホストOneDriveされます。 たとえば、ユーザーがヨーロッパのサテライトOneDriveホストされている場合、ユーザーのホームSharePointヨーロッパからレンダリングされます。 SharePoint ホームには、地理的な場所に関係なく、ユーザーに関連するすべてのコンテンツが含まれています。 
 
 **フォローしているサイト、サイトからのニュース、最近のサイト、よく使うサイト、そしておすすめのサイト**
 
@@ -88,13 +88,13 @@ OneDriveモバイル クライアントは複数地域に対応し、すべて�
 
 管理者は、各地理的な場所に対応して、SharePoint ホームのおすすめリンクを構成できます。 これにより、管理者は各地域の SP ホームでその地域のユーザーに適したリンクをおすすめできます。 
 
-## <a name="sharepoint-mobile-client"></a>SharePoint モバイル クライアント 
+## <a name="sharepoint-mobile-client"></a>SharePoint モバイル クライアント
 
 SharePoint モバイル クライアントは複数地域に対応し、すべての地理的位置から関連コンテンツと結果を表示します。
 
 ## <a name="sharing"></a>共有
 
-連絡先の選択のエクスペリエンスでは、地理的な場所に関係なくすべてのユーザーが表示されます。 これにより、ユーザーは、同じ地域または他のテナントの地域内の他のユーザーと共有できます。 異なる地域の場所のコンテンツは、ユーザーのOneDrive、Word、Excel、PowerPoint、Office.com の [自分と共有] ビューに表示され、ホストされている地域の場所に関係なく、シングル Sign-On エクスペリエンスでアクセスできます。
+連絡先の選択のエクスペリエンスでは、地理的な場所に関係なくすべてのユーザーが表示されます。 これにより、ユーザーは、同じ地域または他のテナントの地域内の他のユーザーと共有できます。 異なる地域の場所からのコンテンツは、ユーザーの  OneDrive、Word、Excel、PowerPoint、および Office.com の [自分と共有] ビューに表示され、ホストされている地域の場所に関係なく、シングル Sign-On エクスペリエンスでアクセスできます。
 
 ## <a name="teams-experience"></a>Teams のエクスペリエンス
 

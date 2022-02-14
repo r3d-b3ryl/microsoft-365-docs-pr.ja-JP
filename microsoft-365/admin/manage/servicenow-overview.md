@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: d1e95d308364d92954d53a8ef105dc877d0376a5
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 0629b322a52702ef293ff1f73661359b410f2d69
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295112"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806014"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Microsoft 365 サポートと ServiceNow 構成の統合の概要
 
@@ -80,18 +80,12 @@ ServiceNow インスタンスの統合アプリをサポートするMicrosoft 36
 
 サポート統合Microsoft 365がインストールされると、2 つのアプリケーションクロススコープ アクセスが作成されます。 正常に作成されない場合は、手動で作成します。
 
-## <a name="what-features-will-work-for-your-organization-based-on-your-configuration"></a>構成に基づいて組織でどのような機能が機能しますか?
+## <a name="what-configuration-is-right-for-your-organization"></a>組織に適切な構成は何ですか?
 
-サポート統合用に構成をMicrosoft 365前に、次の質問に対する回答を確認してください。
+サポート統合用に構成をMicrosoft 365前に、ServiceNow 環境のセットアップ方法を理解してください。
 
-**質問 \#1**: ServiceNow 環境では、受信 Web サービス呼び出しに対して基本認証 (ServiceNow ユーザー資格情報によるアクセス) を許可していますか。
+- ServiceNow 環境で、受信 Web サービス呼び出しに対して基本認証 (ServiceNow ユーザー資格情報を使用したアクセス) が許可されている場合は、「[Set up Microsoft 365 ServiceNow Basic Authentication](servicenow-basic-authentication.md) との統合をサポートする」の手順に従います。
+- ServiceNow 環境で受信 Web サービス呼び出しに対して基本認証 (ServiceNow ユーザー資格情報を使用したアクセス) が許可されていない場合は、「Microsoft 365 のセットアップ」の手順に従って、Azure AD [認証トークンとの統合を](servicenow-aad-oauth-token.md)サポートします。
+  - この構成では、認証トークンが正しく動作AAD SSO テナントが必要になります。
 
-**質問 \#2**: 複数のテナントがある場合は、ServiceNow 環境と統合された 1 つのテナントを使用して、サポート統合をMicrosoft 365しますか?
-
-上記の質問に対する回答に応じて、次の表に、使用可能な機能と、サポート統合の設定方法Microsoft 365示します。 各機能の詳細については、「サポート統合Microsoft 365[参照してください](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)。
-
-| 質問 \#1 回答 | 質問 \#2 回答 | 利用できる機能は何ですか? | 構成の手順 |
-|---------------------|---------------------|-----------|----------------|
-| はい                 | はい/いいえ              | サービス正常性インシデント推奨ソリューション Microsoft サービス要求 | [ServiceNow Microsoft 365認証との統合をサポートする方法を設定する](servicenow-basic-authentication.md) |
-| いいえ                  | はい                 | サービス正常性インシデント推奨ソリューション Microsoft サービス要求 | [Auth トークンMicrosoft 365サポート統合Azure AD設定する](servicenow-aad-oauth-token.md)                 |
-| いいえ                  | いいえ                  | サービス正常性インシデント推奨ソリューション                           | [サポート統合Microsoft 365のセットアップのみインサイトする](servicenow-service-health-incidents-solutions-only.md)                    |
+各機能を理解するには、「サポート[統合Microsoft 365参照してください](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)。
