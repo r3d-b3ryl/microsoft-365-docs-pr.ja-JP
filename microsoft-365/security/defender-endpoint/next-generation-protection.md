@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a0f0b7a47a88fe5a94cdc37dc586ee23020723ae
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 94f920d298c5b74eff39290ced4ccdc58031ac0f
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244477"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807406"
 ---
 # <a name="next-generation-protection-overview"></a>次世代保護の概要
 
@@ -44,6 +44,9 @@ Microsoft Defender for Endpoint には、ネットワークのセキュリティ
 - クラウドによる保護
 - 事前ブロック (BAFS) 保護
 - 望ましくない可能性のあるアプリケーション (PUA) 保護
+
+> [!NOTE]
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 ## <a name="configure-next-generation-protection-services"></a>次世代の保護サービスを構成する
 

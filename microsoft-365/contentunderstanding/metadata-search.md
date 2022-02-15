@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 高度なメタデータ検索を使用して、SharePoint Syntex で SharePoint ドキュメント ライブラリ内のアイテムを検索する方法について説明します。
-ms.openlocfilehash: 99cf65c5baf57255ff880a859b8fd0b24bab733f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b5dffe0cd0bf481c1243d87450110d545578a06b
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717611"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806908"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のドキュメント ライブラリでメタデータを検索する
 
@@ -39,14 +39,15 @@ SharePoint Syntex の高度なメタデータ検索機能を使用すると、Sh
 
     ![メタデータ検索ウィンドウを示すドキュメント ライブラリ ページのスクリーンショット。](../media/content-understanding/metadata-search-pane.png)
 
-   現在、5 つのメタデータ検索フィールドを使用できます。 今後、さらにフィールドが追加される予定です。
+   現在、6 つのメタデータ検索フィールドを使用できます。 今後、さらにフィールドが追加される予定です。
 
    |Field    |このフィールドを使用して  |
    |---------|---------|
    |キーワード |メタデータまたはドキュメントのフルテキストで文字列の一致を検索します。 |
-   |名前     |ライブラリの **名前** 列を検索します。          |
+   |ファイル名     |ライブラリの **名前** 列を検索します。          |
    |ユーザー   |ライブラリ内の任意の列のユーザーとの一致を検索します。   |
-   |Modified |ライブラリの **更新** 列で、選択した日付範囲を検索します。         |
-   |種類     |選択したファイルの種類で検索します。        |
+   |更新日 |ライブラリの **更新** 列で、選択した日付範囲を検索します。         |
+   |ファイルの種類     |選択したファイルの種類 (Word 文書や PDF など) で検索します。        |
+   |コンテンツ タイプ  |選択したコンテンツ タイプで検索します。 このオプションは、ライブラリに既定以外のコンテンツ タイプが適用されている場合にのみ表示されます。 既定のコンテンツ タイプは、 *ドキュメント* と *フォルダー* です。        |
 
 3. **[検索]** を選択します。 メタデータ検索に一致するドキュメントが結果ページに表示されます。 

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 秘密度ラベルを DLP ポリシーの条件として使用できるサービスやアイテムの種類について説明します。
-ms.openlocfilehash: b74911765d9249834553c09bbd4efdd02e5f97ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1117471e38b430f1d7289c6aae76994ac5acd494
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163398"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806890"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>DLP ポリシーで秘密度ラベルを条件として使用する
 
@@ -79,7 +79,7 @@ ms.locfileid: "60163398"
 
 - 秘密度ラベルを条件として持つ DLP ポリシーが一致した場合、秘密度ラベルはインシデント レポート メールの一部としても表示されます。
 
-- 秘密度ラベルの詳細情報は、秘密度ラベルを条件として含む DLP ポリシーの一致の DLP ルール一致監査ログにも表示されます。
+- 秘密度ラベルの詳細は、条件として秘密度ラベルを含む DLP ポリシー一致の DLP ルール一致監査ログにも表示されます。
 
 
 ### <a name="support-policy-tips"></a>ポリシー ヒントのサポート
