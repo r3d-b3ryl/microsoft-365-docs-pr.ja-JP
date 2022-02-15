@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: MailItemsAccessed メールボックス監査アクションを使用して、侵害されたユーザー アカウントのフォレンシック調査を実行します。
-ms.openlocfilehash: 8446c933f71717e57850bbbf2cce49391e26782c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8bfba164bf3bfb0f4fa4bea687d0fe040cff4836
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872623"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806026"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>高度な監査を使用して、侵害されたアカウントを調査する
 
@@ -173,7 +173,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 |MailAccessType|アクセスがバインドまたは同期操作のどちらであるか。|
 |MailboxUPN|読み取られるメッセージが置かれているメールボックスの UPN です。|
 |User|メッセージを読んでいるユーザーの UPN です。|
-|SessionId|セッション ID は、同じアカウントでの攻撃者のアクションと日々のユーザー アクティビティを区別するのに役立ちます (侵害されたアカウントの場合)。セッションの詳細については、「[Contextualizing attacker activity within sessions in Exchange Online (Exchange Online のセッション内での攻撃者のアクティビティのコンテキスト化)](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801)」を参照してください。|
+|SessionId|セッション ID は、同じアカウントでの攻撃者のアクションと日々のユーザー アクティビティを区別するのに役立ちます (侵害されたアカウントの場合)。セッションの詳細については、「[Exchange Online のセッション内での攻撃者のアクティビティのコンテキスト化](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801)」を参照してください。|
 |
 
 ## <a name="identifying-the-access-contexts-of-different-audit-records"></a>異なる監査レコードのアクセス コンテキストの特定
