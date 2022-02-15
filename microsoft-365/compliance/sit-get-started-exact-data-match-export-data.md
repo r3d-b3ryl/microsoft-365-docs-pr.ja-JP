@@ -1,5 +1,5 @@
 ---
-title: 正確なデータ一致に基づく機密情報の種類のソース データをエクスポートする
+title: 完全なデータ一致に基づく機密情報の種類のソース データをエクスポートする
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく機密情報の種類のソース データをエクスポートする方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b2009687e52e4911345daed1b3c16c0942fc1a65
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 8253ff73d53100c986a2bd8580830703c9f4b363
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914899"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818530"
 ---
-# <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>正確なデータ一致に基づく機密情報の種類のソース データをエクスポートする
+# <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>完全なデータ一致に基づく機密情報の種類のソース データをエクスポートする
 
 
-機密データ テーブルは、ドキュメント内のコンテンツを比較して機密データを識別する値の行を含むテキスト ファイルです。 これらの値は、コンテンツで検出して保護アクションを実行するテキスト形式の個人を特定できる情報、製品レコード、その他の機密データである可能性があります。
+機密データ テーブルは、ドキュメント内のコンテンツを比較して機密データを識別する値の行を含むテキスト ファイルです。 これらの値は、個人を特定できる情報、製品レコード、またはコンテンツで検出し、保護アクションを実行するテキスト形式のその他の機密データである可能性があります。
 
 サポートされている形式でデータをエクスポートしたら、EDM スキーマの作成を続行できます。
 
@@ -41,9 +41,9 @@ EDM の機密性の高い型を定義する場合、最も重要な決定の 1 �
 - 機密データ テーブル内の異なるフィールドの複数の組み合わせをコンテンツで検出する必要がある場合は、そのようなほとんどの組み合わせに共通する列を特定し、他のフィールドの主要な要素と組み合わせをセカンダリ要素として指定します。
 - プライマリ フィールドとして使用する列が、テキスト文字列などの検出可能なパターンに従えない場合や、ドキュメントや電子メールの大部分のどこかに存在する検出可能なパターンに従う場合は、他のより良い構造化された列をプライマリ要素として選択してみてください。
 
-たとえば、列 、を持っている場合、最初と最後の名前は、検出するデータの異なる組み合わせに共通する列である場合でも、このような文字列は簡単に識別できるパターンに従うので、機密情報の種類として定義するのが難しい場合があります。 `full name` `date of birth` `account number` `Social Security Number` これは、一部の名前が大文字で始まる可能性もないので、2 つ、3 つ以上の単語で形成され、数字や他のアルファベット以外の文字を含む場合があります。 生年月日を簡単に識別できますが、すべての電子メールとほとんどのドキュメントに少なくとも 1 つの日付が含まれるので、それも良い候補ではありません。 社会保障番号とアカウント番号は、プライマリ フィールドとして使用する優れた候補です。
+`full name``Social Security Number``account number``date of birth`たとえば、列 、を持っている場合、最初と最後の名前は、検出するデータの異なる組み合わせに共通する列である場合でも、このような文字列は簡単に識別できるパターンに従うので、機密情報の種類として定義するのが難しい場合があります。 これは、一部の名前が大文字で始まる可能性もないので、2 つ、3 つ以上の単語で形成され、数字や他のアルファベット以外の文字を含む場合があります。 生年月日を簡単に識別できますが、すべての電子メールとほとんどのドキュメントに少なくとも 1 つの日付が含まれるので、それも良い候補ではありません。 社会保障番号とアカウント番号は、プライマリ フィールドとして使用する優れた候補です。
 
-## <a name="save-sensitive-data-in-csv-tsv-or-pipe-separated-format"></a>機密データを .csv.tsv またはパイプ区切り形式で保存する
+## <a name="save-sensitive-data-in-csv-tsv-or-pipe-separated-format"></a>機密データを .csv.tsv、またはパイプ区切り形式で保存する
 
 1. 使用する機密情報を特定します。 データをアプリにエクスポートし、Microsoft Excelファイルに保存します。 ファイルは、.csv (コンマ区切り値)、.tsv (タブ区切り値)、またはパイプ区切り (|) 形式で保存できます。 データ値に住所などのコンマが含まれている場合は、.tsv 形式をお勧めします。
 データ ファイルには、次のデータを含めることができます。
@@ -57,9 +57,9 @@ EDM の機密性の高い型を定義する場合、最も重要な決定の 1 �
 
 ## <a name="next-step"></a>次のステップ
 
-- [正確なデータ一致に基づく機密情報の種類のスキーマを作成する](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+- [完全なデータ一致に基づく機密情報の種類のスキーマを作成する](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
 
 ## <a name="see-also"></a>関連項目
 
 - [完全なデータ一致に基づく機密情報の種類の使用を開始する](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
-- [正確なデータ一致に基づく機密情報の種類について説明します。](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

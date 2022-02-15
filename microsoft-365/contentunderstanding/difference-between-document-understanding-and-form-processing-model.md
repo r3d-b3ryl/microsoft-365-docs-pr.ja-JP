@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
-ms.openlocfilehash: 7f79bc12c21162d294aaf15df0ef7d1434889faf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8a97c4a2c03d95a5ba9724423a405cb49d4a90fe
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201735"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818518"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>ドキュメント理解とフォーム処理モデルの違い 
 
@@ -84,7 +84,7 @@ Microsoft SharePoint Syntex のコンテンツを理解すると、SharePoint �
 | サポートされる地域| フォーム処理は Power Platform に依存しています。 Power Platform と AI Builder のグローバルな可用性については、「[Power Platform の可用性](https://dynamics.microsoft.com/geographic-availability/)」を参照してください。 | すべての地域で利用可能です。|
 | トランザクション コスト | AI Builder クレジットを使用します。<br>クレジットは 1 M のバッチで購入できます。<br>300 以上の SharePoint Syntex ライセンスを購入すると、1 M のクレジットが含まれています。<br>1 M のクレジットで 2,000 ファイル ページの処理が可能になります。<br>| 該当なし |
 | 容量 | 既定の Power Platform 環境を使用します (Dataverse データベースをサポートするカスタム環境)。 | 容量制限はありません。|
-| サポートされている言語| 英語 <br>2021 年後半公開予定: ラテン アルファベット言語 | モデルはすべてのラテン アルファベット言語で機能します。 英語に加えて: ドイツ語、スウェーデン語、フランス語、スペイン語、イタリア語、およびポルトガル語。|
+| サポートされている言語| 英語 <br>2022 年後半の予定: ラテンアルファベット言語 | モデルはすべてのラテン アルファベット言語で機能します。 英語に加えて: ドイツ語、スウェーデン語、フランス語、スペイン語、イタリア語、およびポルトガル語。|
 
 ## <a name="see-also"></a>関連項目
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: ユーザーとデバイスのデータとサービスへのアクセスを保護しMicrosoft 365データ損失から保護する方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9659d9117359fdb7a3264c244e128a1c20d0ec14
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 121c5b8f1168e9986693fea128aa66626b3e31fe
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326689"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818542"
 ---
 # <a name="protect-user-and-device-access"></a>ユーザーとデバイス アクセスの保護
 
@@ -45,7 +45,7 @@ Office 365、他の SaaS サービス、および Azure AD アプリケーショ
 - [特権アクセス管理の概要](privileged-access-management-overview.md)
 - [特権アクセス管理を構成する](privileged-access-management-configuration.md)
 
-もう 1 つの推奨事項は、管理作業用に特別に構成されたワークステーションを使用する方法です。 これらは、管理タスクにのみ使用される専用デバイスです。 「 [特権アクセスのセキュリティ保護」を参照してください](/windows-server/identity/securing-privileged-access/securing-privileged-access)。
+もう 1 つの一番上の推奨事項は、特に管理作業用に構成されたワークステーションを使用する方法です。 これらは、管理タスクにのみ使用される専用デバイスです。 「 [特権アクセスのセキュリティ保護」を参照してください](/windows-server/identity/securing-privileged-access/securing-privileged-access)。
 
 最後に、テナントに 2 つ以上の緊急アクセス アカウントを作成することで、管理アクセスの不注意による影響を軽減できます。 「[緊急アクセス アカウントを管理する」を参照Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access)。 
 
@@ -53,7 +53,7 @@ Office 365、他の SaaS サービス、および Azure AD アプリケーショ
 多要素認証 (MFA) と条件付きアクセス ポリシーは、侵害されたアカウントや不正アクセスを軽減するための強力なツールです。 一緒にテストされた一連のポリシーを実装することをお勧めします。 展開手順を含む詳細については、「 [Identity and device access configurations」を参照してください](../security/office-365-security/microsoft-365-policies-configurations.md)。
 
  これらのポリシーは、次の機能を実装します。
-- Mult-factor 認証
+- 多要素認証
 - 条件付きアクセス
 - Intune アプリ保護 (デバイスのアプリとデータ保護)
 - Intune デバイス コンプライアンス

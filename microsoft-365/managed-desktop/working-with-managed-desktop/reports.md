@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: f37a02c8cda29f48f926125f353d5e75410d9ab5
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 620e9d2bd95dc4782237af94966b5cb52579b656
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765494"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818578"
 ---
 # <a name="work-with-reports"></a>レポートを操作する
 
@@ -36,7 +36,7 @@ Microsoft Managed Desktop には、いくつかのレポートとダッシュボ
 | **デバイスの状態の傾向** (*プレビューで*) | これは、Microsoft Managed Desktop デバイスの過去 60 日間のデバイスの状態の傾向を監視します。 傾向は、デバイスの状態を、新しい展開など、時間の間に他の変更と関連付けるのに役立ちます。 |
 | [**Windows更新レポート** (](security-updates-report.md)*プレビュー)* | このレポートでは、Microsoft Windowsデスクトップ デバイス間でセキュリティ更新プログラムがどのようにリリースされるのかについて説明します。 |
 | [**アプリケーション使用状況** レポート](app-usage-report.md) | このレポートでは、Microsoft Managed Desktop デバイス全体での一般的なアプリの使用状況に関する情報を提供します。 デバイスがデータをこのレポートに提供するには、オプションの診断データ レベルに設定する必要があります。 |
-| **サービス メトリックス レポート** (*プレビュー)* | このレポートでは、Microsoft Managed Desktop の主要な指標を月単位で簡単に要約できます。 |
+| [**サービス メトリックス レポート**](service-metrics-report.md) (*プレビュー)* | このレポートでは、Microsoft Managed Desktop の主要な指標を月単位で簡単に要約できます。 |
 
 ## <a name="endpoint-analytics"></a>エンドポイントの分析
 

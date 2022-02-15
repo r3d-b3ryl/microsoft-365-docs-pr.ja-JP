@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: この記事では、サテライトの場所を追加する方法と、Microsoft 365 Multi-Geoのテナントを構成する方法について説明します。
-ms.openlocfilehash: 801bd2c094ded40714b07f2ebd8ce1db00769250
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 232791705dacfa9442304434559b67a4b01ca7dd
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177257"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818254"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo テナントの構成
 
@@ -83,7 +83,7 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 標準のユーザー作成フローの一部として、ユーザーの優先されるデータの場所の設定を含めることをお勧めします。
 
 > [!IMPORTANT]
-> OneDrive がプロビジョニングされていない新規ユーザーの場合、ユーザーが OneDrive for Business にログインする前に、ユーザーの PDL が Azure AD に同期されてから少なくとも 24 時間待ち、変更が反映されるようにします。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定しておくと、ユーザーの新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
+> OneDrive がプロビジョニングされていない新しいユーザーの場合は、アカウントにライセンスを与え、ユーザーの PDL が Azure AD に同期された後、ユーザーが OneDrive for Business にログインする前に変更が反映されるまで少なくとも 48 時間待ちます。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>クラウド専用ユーザーの優先されるデータの場所を設定する 
 
@@ -106,11 +106,11 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 標準のユーザー作成フローの一部として、ユーザーの優先されるデータの場所の設定を含めることをお勧めします。
 
 > [!IMPORTANT]
-> OneDrive がプロビジョニングされていない新規ユーザーの場合、ユーザーが OneDrive にログインする前に、ユーザーの PDL が 設定されてから少なくとも 24 時間待ち、変更が反映されるようにします。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
+> OneDrive プロビジョニングがない新しいユーザーの場合は、アカウントにライセンスを与え、ユーザーの PDL が設定された後、ユーザーが OneDrive にログインする前に変更が反映されるまで少なくとも 48 時間待ちます。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive のプロビジョニングと PDL の効果
 
-テナントに ユーザーの OneDrive サイトが既に作成されている場合は、そのユーザーの PDL を設定しても既存の OneDrive は自動的に移動されません。 ユーザーのデータを移動するにはOneDrive Geo Move [OneDrive for Businessを参照してください](move-onedrive-between-geo-locations.md)。
+テナントに ユーザーの OneDrive サイトが既に作成されている場合は、そのユーザーの PDL を設定しても既存の OneDrive は自動的に移動されません。 ユーザーのデータを移動するには、「OneDrive Geo [Move」OneDrive for Business参照してください](move-onedrive-between-geo-locations.md)。
 
 > [!NOTE]
 > Exchange Online PLD が変更され、MailboxRegion がメールボックス データベース地域の場所コードと一致しなくなった場合、ユーザーのメールボックスが自動的に再配置されます。 詳細については、「複数地域[環境Exchange Onlineメールボックスの管理」を参照してください](./administering-exchange-online-multi-geo.md)。

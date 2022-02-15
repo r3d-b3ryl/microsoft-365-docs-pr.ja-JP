@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、カスタム機密情報の種類にエンコードできるフィルターの一覧を示します。
-ms.openlocfilehash: 3c91ff4a31f8e80b4798743169d5c30195dcdcde
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e5f3fb99ec4454410c3719dc3d76356e02f03573
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175001"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818230"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>カスタム機密情報の種類のフィルター リファレンス
 
-Microsoft では、カスタム機密情報の種類 (SIT) を作成する際にフィルターや追加のチェックを定義できます。
+Microsoft では、カスタム機密情報の種類 (SIT) を作成する際にフィルターなどのチェックを定義できます。
 
 ## <a name="list-of-supported-filters-and-use-cases"></a>サポートされているフィルターと使用例の一覧
 
@@ -70,7 +70,7 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
 - 1000-3265-9874
 - 0100-7892-3012
 
-この xml を使用できます
+次の xml を使用できます。
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -96,7 +96,7 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
 - 1000-3265-9874
 - 0100-7892-3012
 
-この xml を使用できます
+次の xml を使用できます。
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -115,7 +115,7 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
 - 1234.4567.7091
 - 1234-8091-4564
 
-この xml を使用できます
+次の xml を使用できます。
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -139,7 +139,7 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
 - 1234.4567.7091
 - 1234-8091-4564
 
-この xml を使用できます
+次の xml を使用できます。
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -157,7 +157,7 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
 - 4111111111111111
 - 3241891031113111
 
-この xml を使用できます
+次の xml を使用できます。
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -178,7 +178,7 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
 - 4111111111111111
 - 3241891031113111
 
-この xml を使用できます
+次の xml を使用できます。
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -196,7 +196,7 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
 - 電話 45-124576532-123
 - 45-124576532-123
 
-この xml を使用できます
+次の xml を使用できます。
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -210,12 +210,12 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
   </Keyword>
 ```
 
-たとえば、クレジット カード番号の前にクレジット カードとカード **#** 文字列が含まれるオカレンスを次のようなリストに含めるには、次のようにします。
+たとえば、クレジット カード番号の前にクレジット  カードとカード **#** 文字列が含まれるオカレンスを次のようなリストに含めるには、次のようにします。
 
 - クレジット カード 45-124576532-123 
 - 45-124576532-123 (電話番号)
 
-この xml を使用できます
+次の xml を使用できます。
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -234,12 +234,12 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
 
 説明: 常に含めるか除外する必要がある次の文字を定義できます。 たとえば、クレジット カード番号の後に '/xuid' が続く場合は、有効な一致から一致を削除します。
 
-たとえば、次のようなリストに接尾辞として 4 桁のインスタンスが 5 つ追加されている場合、上位の除外オカレンスが発生します。
+たとえば、次のようなリストに接尾辞として 4 桁のインスタンスが 5 つ追加されている場合は、上位の出現を除外します。
 
 - 1234-5678-9321 4500 9870 6321 48925566
 - 1234-5678-9321
 
-この xml を使用できます
+次の xml を使用できます。
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -248,29 +248,32 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
 
   <Regexid="Regex_false_positives_suffix">(\d{4}){5,}</Regex>
 ```
-たとえば **、/xuidsuffix** が続く場合は、次のリストの出現を除外します。
+たとえば、/ **xuidsuffix** が続く場合は、次のリストの出現を除外します。
 
 - 1234-5678-9321 /xuid
 - 1234-5678-9321
 
 この xml を使用できます
 
-''xml <Filters id="cc_number_filters_exc">
+```xml
+<Filters id="cc_number_filters_exc">
     <Filter type="TextMatchFilter" direction="Prefix" logic="Exclude" textProcessorId="Keyword_false_positives_suffix">
 </Filter>
 
-  <Keyword id="Keyword_false_positives_suffix"> <Group matchStyle="string">
+  <Keyword id="Keyword_false_positives_suffix">
+    <Group matchStyle="string">
       <Term>/xuid</Term>
-    </Group> </Keyword>
+    </Group>
+  </Keyword>
 ```
 
-For example, to include an occurrence only if it is followed by **cvv** or **expires**, like two in this list:
+たとえば、次のリストに 2 つのように、**cvv** が続く場合、または有効期限が切れた場合にのみ、オカレンスを含めるには、次の手順を実行します。
 
 - 45-124576532-123 
-- 45-124576532-123  cvv 966
-- 45-124576532-123  expires 03/23
+- 45-124576532-123 cvv 966
+- 45-124576532-123 有効期限 03/23
 
-you can use this xml
+この xml を使用できます
 
 ```xml
 <Filters id="cc_filters_inc">
