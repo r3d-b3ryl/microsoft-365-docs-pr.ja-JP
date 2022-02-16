@@ -17,14 +17,16 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: 0629b322a52702ef293ff1f73661359b410f2d69
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 99024eabd4009dcdd14b3d999afe5ee1875fe23e
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806014"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825329"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Microsoft 365 サポートと ServiceNow 構成の統合の概要
+
+次のコンテンツは、Microsoft 365バージョン **1.0.7 の統合アプリに適用されます**。
 
 **Microsoft 365サポート統合** を使用すると、ヘルプMicrosoft 365、サービス正常性を ServiceNow インスタンスと統合できます。 Microsoft の既知および報告された問題を調査し、インシデントを解決し、Microsoft 推奨ソリューションを使用してタスクを完了し、必要に応じて Microsoft の人間支援サポートにエスカレートすることができます。
 
@@ -82,8 +84,10 @@ ServiceNow インスタンスの統合アプリをサポートするMicrosoft 36
 
 ## <a name="what-configuration-is-right-for-your-organization"></a>組織に適切な構成は何ですか?
 
-サポート統合用に構成をMicrosoft 365前に、ServiceNow 環境のセットアップ方法を理解してください。
+アプリをダウンロードしたら、SNOW 環境Microsoft 365セットアップ ウィザードに移動してセットアップ プロセスを完了します。
+:::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="雪のセットアップ ウィザード":::
 
+手順の詳細については、次のページを参照してください。
 - ServiceNow 環境で、受信 Web サービス呼び出しに対して基本認証 (ServiceNow ユーザー資格情報を使用したアクセス) が許可されている場合は、「[Set up Microsoft 365 ServiceNow Basic Authentication](servicenow-basic-authentication.md) との統合をサポートする」の手順に従います。
 - ServiceNow 環境で受信 Web サービス呼び出しに対して基本認証 (ServiceNow ユーザー資格情報を使用したアクセス) が許可されていない場合は、「Microsoft 365 のセットアップ」の手順に従って、Azure AD [認証トークンとの統合を](servicenow-aad-oauth-token.md)サポートします。
   - この構成では、認証トークンが正しく動作AAD SSO テナントが必要になります。

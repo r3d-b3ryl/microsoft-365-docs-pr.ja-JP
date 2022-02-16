@@ -1,0 +1,47 @@
+---
+title: Google ワークスペースからビジネス向Microsoft 365に切り替える
+f1.keywords:
+- NOCSH
+ms.author: twerner
+author: twernermsft
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+ms.localizationpriority: medium
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- adminvideo
+monikerRange: o365-worldwide
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+description: データとユーザーを Google ワークスペースからビジネス向けMicrosoft 365する方法について説明します。
+ms.openlocfilehash: 555e29d40b5135d8f3a6ffd44dbb61a8cfae6843
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825648"
+---
+# <a name="switch-from-google-workspace---overview"></a>Google ワークスペースから切り替える - 概要
+
+次の手順を使用して、データ、メール、ユーザーを Google ワークスペースからビジネス向Microsoft 365移動できます。 各手順の記事とビデオを使用して、Microsoft 管理センターで利用可能な移行ツールを移行および使用するための環境の準備と構成に役立ちます。
+
+
+| 手順  |説明  |
+|---------|---------|
+|手順 1 | [アカウントに](../admin-overview/sign-up-for-office-365.md)サインアップMicrosoft 365 Business Premium       |
+|手順 2 | [Google ワークスペースのMicrosoft 365の設定。](set-up-microsoft-365-forgoogle.md) </br> この手順では、Google Workspace で使用するドメインを所有し、ユーザーを追加し、デバイスの基本的なセキュリティを設定することを検証します。 |
+|手順 3 | [デバイスのセキュリティ ポリシーをWindowsします。](../setup/secure-win-10-pcs.md)</br> Windowsの [セットアップ] ページでセキュリティを個別にMicrosoft 365 管理センター。 |
+|手順 4 | [Google Workspace ドメインをユーザーに追加Microsoft 365](add-google-domain.md) </br> メールに使用しているドメインを所有しているのを確認した後、ユーザーと他のすべてのユーザーは、古いメールを使用してビジネス プレミアムにサインインMicrosoft 365できます。 |
+|手順 5 | [アプリOfficeインストールMicrosoft Teams](../setup/install-applications.md)。</br> ライセンスを持っているMicrosoft 365ユーザーは、Officeデバイスにインストールする必要があります。|
+|手順 6 | [すべてのユーザーのメールアイテムと予定表アイテムを移行します](migrate-email.md)。</br> この手順では、すべてのユーザーのメールExchange Online連絡先を Google ワークスペースから移動する移行を実行します。  |
+|手順 7 | [ConnectドメインをMicrosoft 365](connect-domain-tom365.md)。 </br> 接続すると、ドメイン メールが Microsoft 365され、すべてのMicrosoft 365機能します。|
+|手順 8|移行[マネージャーを使用して、すべての](migrate-files-migration-manager.md)ユーザーのデータをドライブから共有ドライブOneDriveチーム サイトに移動します。</br> この手順では、個人用ドライブと共有ドライブ内のすべてのデータがコピーされ、共有ドライブにMicrosoft 365。|
+|手順 9| [Google ワークスペースを中止します](cancel-google.md) が、ドメインは保持します。 </br> Google がドメインを管理している場合は、Google Workspace サブスクリプションを中止した後でも、そのドメインを保持できます。 必要に合って別の DNS ホストに移動する場合も選択できます。|
+

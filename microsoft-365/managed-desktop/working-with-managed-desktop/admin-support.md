@@ -9,8 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
+ms.openlocfilehash: 82903c15c0941a729f85bdbc69cba9779d4509e7
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825447"
 ---
-
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの管理者サポート
 
 Microsoft Managed Desktop Admin ポータルを使用して、サポート チケットまたはフィードバック要求を Microsoft に提出できます。 サポート要求は、フィードバックの送信よりも常に優先されます。
@@ -36,7 +41,7 @@ Microsoft Managed Desktop Admin ポータルを使用して、サポート チ�
 | ----- | ----- |
 インシデント | ユーザーの問題を調査するには、Microsoft Managed Desktop Operations チームが必要です。 たとえば、変更やサービスの停止による影響が広範囲に及んでいるとします。
 情報の要求 | ネットワーク、プロキシ構成、VPN システム、証明書の有効期限の変更を計画している場合、またはサービスに関する情報が必要な場合。 Microsoft Managed Desktop Operations チームからの応答は、組織内で変更を伝達するときにお勧めします。
-変更要求 | 更新プログラム グループ間でデバイスを移動するなどの変更を行うには、Microsoft Managed Desktop Operations チームが必要です。
+変更要求 | 更新プログラム グループ間でデバイスを移動するなどの変更を行うには、Microsoft Managed Desktop Operations チームが必要です。 すべての変更要求は重大度 C として扱います。
 
 > [!IMPORTANT]
 > サポート要求を作成する場合は、プライマリ連絡先を指定する必要があります。 この担当者は、サービス エンジニアと一緒に問題を解決するか、要求された変更に関する質問に答える責任があります。 また、関連するフォーカス領域に関[](../get-started/add-admin-contacts.md)するすべてのケース通知にコピーされる管理者連絡先を以前に設定している必要があります。 このユーザーは、ケースの主な連絡先に到達できない場合に、ケースの引き継ぎを求めるメッセージが表示されます。

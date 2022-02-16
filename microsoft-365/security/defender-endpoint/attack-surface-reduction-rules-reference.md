@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: ca7f52c0a91540e68c845ca559daecd5736d9b60
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: f6672bfe090458de9ffecae77b656b6f4a8a912d
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767498"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825483"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃表面の縮小ルールのリファレンス
 
@@ -47,11 +47,10 @@ ms.locfileid: "62767498"
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-次の表に、現在プレリリース製品である攻撃表面縮小ルールでサポートされているオペレーティング システムの一覧を示します。 ルールはアルファベット順に表示されます。
+次の表に、現在プレリリース製品である攻撃表面縮小ルールでサポートされているオペレーティング システムの一覧を示します。 ルールはアルファベット順に表示されます。 特に指定しない限り、最小 Windows&nbsp; 10 ビルドはバージョン 1709 (RS3、ビルド 16299) 以降です。最小 Windows&nbsp; Server ビルドはバージョン 1809 以降です。
 
-> [!Note]
->
-> - 特に指定しない限り、最小 Windows&nbsp; 10 ビルドはバージョン 1709 (RS3、ビルド 16299) 以降です。最小 Windows&nbsp; Server ビルドはバージョン 1809 以降です。
+> [!NOTE]
+> Windows Server2012R2&nbsp;&nbsp; および Windows&nbsp;&nbsp; Server2016&nbsp; の攻撃表面縮小ルールは、最新の統合ソリューション パッケージを使用してオンボードされたデバイスで使用できます。 詳細については、「[R2 および 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) の最新の統合ソリューションのWindows Server 2012」を参照してください。
 >
 
 | ルールの名前 | &nbsp;Windows Server 2016 <sup>[[1](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
@@ -89,7 +88,7 @@ _パブリック プレビューの終了: サポートされているオペレ�
 
 |ルールの名前|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Server|
 |---|:---:|:---:|:---:|
-|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y バージョン 1803 (半期チャネル) 以降 |
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br><br> バージョン 1803 (半期チャネル) 以降 |
 |[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y バージョン 1809 以降 | Y | Y  <br><br> |
 |[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |
 |[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |
@@ -113,7 +112,7 @@ _パブリック プレビューの終了: サポートされているオペレ�
 
 |ルールの名前 | Intune | Microsoft エンドポイント マネージャー |Microsoft Endpoint Configuration Manager |グループ ポリシー<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  [サポート](images/checkmark.png) <br><br> |
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  Y |
 |[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y |   | Y | Y  | Y  |
 |[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | Y |   |Y <br><br> CB 1710 | Y  | Y  |
 |[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
@@ -175,7 +174,7 @@ _パブリック プレビューの終了: サポートされているオペレ�
 - **監査**: これは、ASR ルールが展開される組織または環境に対する影響的な動作について評価される状態です。 この状態のコードは 2 です。
 - **警告** これは、ASR ルールが有効になっている状態で、エンド ユーザーに通知を表示しますが、エンド ユーザーはブロックをバイパスできます。 この状態のコードは 6 です。
 
-_警告モード_ は、潜在的に危険なアクションについてユーザーに通知するブロック モードの種類です。 その後、ユーザーはブロック警告メッセージをバイパスし、基になるアクションを許可することができます。 [ **OK** ] を選択してブロックを適用するか、ブロックの時点で生成されるエンド ユーザーのポップアップ トースト通知を使用してバイパス **オプション (ブロック** 解除) を選択できます。 警告がブロック解除された後は、次回警告メッセージが発生するまで操作が許可され、その時点でエンド ユーザーはアクションを再実行する必要があります。
+_警告モード_ は、潜在的に危険なアクションについてユーザーに通知するブロック モードの種類です。 ユーザーは、ブロック警告メッセージをバイパスし、基になるアクションを許可することができます。 [ **OK** ] を選択してブロックを適用するか、ブロックの時点で生成されるエンド ユーザーのポップアップ トースト通知を使用してバイパス **オプション (ブロック** 解除) を選択できます。 警告がブロック解除された後は、次回警告メッセージが発生するまで操作が許可され、その時点でエンド ユーザーはアクションを再実行する必要があります。
 
 [許可] ボタンをクリックすると、ブロックは 24 時間表示されません。 24 時間後、エンドユーザーはブロックを再度許可する必要があります。 ASR ルールの警告モードは、RS5+ (1809+) デバイスでのみサポートされます。 以前のバージョンのデバイスでバイパスが ASR ルールに割り当てられている場合、ルールはブロックモードになります。
 
