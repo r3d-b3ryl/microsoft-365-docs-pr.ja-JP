@@ -18,12 +18,12 @@ ms.custom: ''
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29e21c53ef7fa7456b8e38433006b1eab210f610
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: a2cfbe9dd976e6ba4d9052e661387689f903d049
+ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873563"
+ms.lasthandoff: 02/06/2022
+ms.locfileid: "62428698"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -79,6 +79,10 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - スパム対策ポリシーに推奨される設定については、「[EOP スパム対策ポリシーの設定](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)」を参照してください。
+
+- スパム フィルター処理を完全にオフにすることはできませんが、メール フロー ルール (トランスポート ルールとも呼ばれます) を使用して、受信メッセージのほとんどのスパム フィルター処理 (たとえば、サードパーティの保護サービスを介してメールをルーティングする場合、Microsoft 365 に配信する前のデバイス) をバイパスできます。 詳細については、「[メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)」を参照してください。
+  - 信頼度の高いフィッシング メッセージは、引き続きフィルター処理されます。 EOP のその他の機能は影響を受けません (たとえば、メッセージは常にマルウェアをスキャンします)。
+  - SecOps メールボックスまたはフィッシングシ ミュレーションのスパム フィルター処理をバイパスする必要がある場合は、メール フロー ルールを使用しないでください。 詳細については、「[サード パーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信するように構成する](configure-advanced-delivery.md)」を参照してください。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>Microsoft 365 Defender ポータルを使用して、スパム対策ポリシーを作成する
 
