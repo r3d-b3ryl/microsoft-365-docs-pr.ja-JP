@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 70824645edbf7c56a77aed76ec8fd07784bc43da
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: 9b1f3fbf48b58c477c1ae4c49870af6d58341bc4
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049314"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825206"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Intune の概要でデバイスを管理する
 
@@ -60,7 +60,7 @@ ms.locfileid: "62049314"
 |&nbsp;|手順 |説明  |ライセンスの要件  |
 |---------|---------|---------|---------|
 |1     | 開始点のゼロトラスト ID およびデバイス アクセス ポリシーを構成します       | ID 管理者と協力して、[レベル 2 のアプリ保護ポリシー (APP) データ保護を実装します](manage-devices-with-intune-app-protection.md)。 これらのポリシーでは、デバイスを管理する必要はありません。 Intune で APP ポリシーを構成します。 ID 管理者は、承認されたアプリを要求するように条件付きアクセス ポリシーを構成します。          |E3、E5、F1、F3、F5    |
-|2     | デバイスを管理に登録する       | このタスクを実装するには、より多くの計画と時間が必要です。 これを実現するためのツールと方法を選択できますが、「[手順 3 — デバイスを管理に登録する](manage-devices-with-intune-enroll.md)」と、Intune with Autopilot と自動登録を使用したプロセスがガイドされます。      | E3、E5、F1、F3、F5        |
+|2     | デバイスを管理に登録する       | このタスクを実装するには、より多くの計画と時間が必要です。 このツールは最適な統合を提供するため、Microsoft は Intune を使用してデバイスを登録することをお勧めします。 プラットフォームに応じて、デバイスを登録するためのいくつかのオプションがあります。 たとえば、Windows デバイスは、Azure AD Join または Autopilot を使用して登録できます。 各プラットフォームのオプションを確認し、ご使用の環境に最適な登録オプションを決定する必要があります。 詳細については、「[手順 3 — デバイスを管理に登録する](manage-devices-with-intune-enroll.md)」を参照してください。      | E3、E5、F1、F3、F5        |
 |3     | コンプライアンス ポリシーの構成        |  アプリやデータにアクセスしているデバイスが最小要件を満たしていることを確認する必要があります。たとえば、デバイスがパスワードまたは PIN で保護されており、オペレーティング システムが最新であることです。 コンプライアンス ポリシーは、デバイスが満たす必要のある要件を定義する方法です。 「[手順 3. コンプライアンス ポリシー](manage-devices-with-intune-compliance-policies.md)」を設定すると、これらのポリシーを構成するのに役立ちます。        |   E3、E5、F3、F5      |
 |4     | エンタープライズ (推奨) ゼロ トラスト ID およびデバイス アクセス ポリシーの構成        |デバイスが登録されたので、ID 管理者と協力して、[条件付きアクセス ポリシーを調整し、正常で準拠したデバイスを要求](manage-devices-with-intune-require-compliance.md)できます。          | E3、E5、F3、F5        |
 |5     |構成プロファイルの展開      | 設定した基準に基づいてデバイスを準拠または非準拠としてマークするだけのデバイス コンプライアンス ポリシーとは対照的に、構成プロファイルは実際にデバイスの設定の構成を変更します。 構成ポリシーを使用して、サイバー脅威に対してデバイスを強化できます。 「[手順 5. 構成プロファイルを展開する](manage-devices-with-intune-configuration-profiles.md)」を参照してください。        | E3、E5、F3、F5        |
@@ -84,6 +84,35 @@ ms.locfileid: "62049314"
 <!---
 ## Managing change with users
 --->
+
+## <a name="enrolling-devices-vs-onboarding-devices"></a>デバイスの登録とオンボーディング デバイス
+このガイダンスに従うと、Intune (または別のツール) を使用してデバイスを管理に登録し、次の 2 つのサービスでデバイスをオンボードします。
+- Defender for Endpoint
+- エンドポイント DLP
+
+
+次の図は、Intune を使用してこれがどのように機能するかを示しています。
+<br>
+
+![デバイスの登録とオンボーディングのプロセス](../media/devices/devices-enroll-onboard-process.png#lightbox)
+
+この図について:
+1. Intune を使用してデバイスを管理に登録します。
+2. Intune を使用して、デバイスを Defender for Endpoint にオンボードします。
+3. Defender for Endpoint にオンボードされているデバイスは、Endpoint DLP を含む Microsoft 365 コンプライアンス機能にもオンボードされています。
+ 
+Intune のみがデバイスを管理していることに注意してください。 オンボーディングとは、デバイスが特定のサービスと情報を共有する機能を指します。 次の表は、特定のサービスの管理デバイスとオンボーディング デバイスへのデバイスの登録の違いをまとめたものです。
+
+
+|         |登録     |オンボード  |
+|---------|---------|---------|
+|説明     |  登録はデバイスの管理に適用されます。 デバイスは、Intune または Configuration Manager で管理するために登録されます。        | オンボーディングは、Microsoft 365 の特定の機能セットで動作するようにデバイスを構成します。 現在、オンボーディングは、Microsoft Defender for Endpoint および Microsoft コンプライアンス機能に適用されます。 <br><br>Windows デバイスでは、オンボーディングには、Windows Defender の設定を切り替えて、Defender がオンライン サービスに接続し、デバイスに適用されるポリシーを受け入れることができるようにすることが含まれます。        |
+|範囲     | これらのデバイス管理ツールは、セキュリティなどの特定の目的を満たすようにデバイスを構成することを含め、デバイス全体を管理します。        |オンボーディングは、適用されるサービスにのみ影響します。     |
+|推奨される方法     | Azure Active Directory に参加すると、デバイスが Intune に自動的に登録されます。        | Intune は、Windows Defender for Endpoint にデバイスをオンボーディングするための推奨される方法であり、その結果、Microsoft 365 コンプライアンス機能になります。<br><br>他の方法を使用して Microsoft 365 コンプライアンス機能にオンボードされているデバイスは、Defender for Endpoint に自動的に登録されないことに注意してください。        |
+|その他の方法     |   その他の登録方法は、デバイスのプラットフォームと、BYOD であるか、組織によって管理されているかによって異なります。      | デバイスをオンボーディングする他の方法には、推奨される順序が含まれます。<br><li>構成マネージャー<li>その他のモバイル デバイス管理ツール (デバイスが 1 つで管理されている場合)<li>ローカル スクリプト<li>非永続仮想デスクトップ インフラストラクチャ (VDI) デバイスをオンボーディングするための VDI 構成パッケージ<li>グループ ポリシー|
+| | |     |
+
+
 
 ## <a name="learning-for-administrators"></a>管理者向けの学習
 次のリソースは、管理者が MEM と Intuneの使用に関する概念を学ぶのに役立ちます。

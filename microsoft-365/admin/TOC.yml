@@ -434,6 +434,28 @@
               href: basic-mobility-security/turn-off.md
             - name: トラブルシューティング
               href: basic-mobility-security/troubleshoot.md
+    - name: Google Workspace から M365 に切り替える
+      items:
+        - name: 概要
+          href: moveto-microsoft-365/move-from-google-workspace-overview.md
+        - name: Microsoft 365 にサインアップする
+          href: admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: Google 移行の Microsoft 365 を設定する
+          href: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
+        - name: Windows デバイスのセキュリティ ポリシーを設定する
+          href: setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: Google Workspace のドメインを追加する
+          href: moveto-microsoft-365/add-google-domain.md
+        - name: Office アプリと Microsoft Teams をインストールする
+          href: setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: メール、予定表、連絡先を Microsoft 365 へ移行する
+          href: moveto-microsoft-365/migrate-email.md
+        - name: Microsoft 365 にドメインを接続する
+          href: moveto-microsoft-365/connect-domain-tom365.md
+        - name: 移行マネージャーを使用してすべてのユーザーのデータを移動する
+          href: moveto-microsoft-365/migrate-files-migration-manager.md
+        - name: Google Workspace をキャンセルする
+          href: moveto-microsoft-365/cancel-google.md
     - name: 顧客と連携する
       items:
         - name: サイトとファイルをゲスト ユーザーと共有する
