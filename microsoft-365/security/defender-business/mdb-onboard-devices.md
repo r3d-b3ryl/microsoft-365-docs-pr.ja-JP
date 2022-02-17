@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/16/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 709af580211d999e5a2f4117a773686542d37160
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 073478300e6b5a9d5a9fc10e634f6e3113897fb3
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62465289"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879242"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business へのオンボード デバイス (プレビュー)
 
@@ -31,42 +31,59 @@ ms.locfileid: "62465289"
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
+Defender for Business のデバイス オンボーディング エクスペリエンスは、Microsoft Defender for Endpoint で使用されるのと同じデバイス オンボーディング プロセス上に構築されました。 次のビデオを見て、その動作を確認します。<br/><br/>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
+
 Microsoft Defender for Business (プレビュー) では、組織のデバイスをオンボーディングするためのオプションがいくつか用意されています。 この記事では、オプションについて説明し、オンボーディングのしくみの概要について説明します。
+
+> [!TIP]
+> Defender for Endpoint でのデバイスオンボーディングの詳細については、「オンボード デバイス」を参照し、 [Microsoft Defender for Endpoint の機能を構成します](../defender-endpoint/onboard-configure.md)。
 
 ## <a name="what-to-do"></a>操作
 
-1. [オンボーディング方法について説明](#types-of-onboarding-methods)し、自動オンボーディングまたは手動オンボーディングを使用するかどうかを判断します。
+1. オンボード デバイスのオプション [を参照してください](#device-onboarding-methods)。
 
-2. 次のいずれかの操作を行います。
+2. 次のいずれかの方法を使用してデバイスをオンボードします。
+    - [デバイスに登録されているWindowsデバイスの自動オンボーディングMicrosoft エンドポイント マネージャー](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
+    - [ローカル デバイス、macOS Windows Linux デバイス用のローカル スクリプト](#onboard-devices-using-a-local-script-in-defender-for-business)
+    - [Microsoft エンドポイント マネージャー、タブレット、および電話の場合](#onboard-devices-using-microsoft-endpoint-manager)
+    - [デバイスのグループ ポリシー Windowsポリシー](#onboard-windows-devices-using-group-policy)
+    - [ここにリストされていない別のメソッド](#onboard-devices-using-a-method-not-listed-here)
 
-   - 自動オンボーディングを使用している場合は、「手順 [5: Microsoft Defender for Business (](mdb-configure-security-settings.md)プレビュー)でセキュリティ設定とポリシーを構成する」に進みます。
-   - デバイスを手動でオンボーディングする場合は、[オンボーディング方法の種類[](#types-of-onboarding-methods)] でオンボーディング方法を選択し、その方法の指示に従います。
-   - 既にデバイス を使用している場合はMicrosoft Intuneデバイスを使用[してオンボード デバイスに進Microsoft Intune](#onboard-devices-using-microsoft-intune)。
-
-3. [新しくオンボードされたデバイスの](#run-a-detection-test) 検出テストを実行します。
+3. [新しくオンボードされたデバイス](#run-a-detection-test)の検出テストをWindowsします。
 
 4. [次の手順を参照してください](#next-steps)。 
 
-この記事には、デバイスのオフ [ボード方法に関する情報も含まれています](#what-if-i-want-to-offboard-a-device)。
+この記事には、デバイスの [オフボードに関する情報も含まれています](#offboarding-a-device)。
 
-## <a name="types-of-onboarding-methods"></a>オンボーディングメソッドの種類
+## <a name="device-onboarding-methods"></a>デバイスオンボーディングの方法
 
-次の表では、プレビュー時に Defender for Business でサポートされるオンボーディング メソッドの種類について説明します。 
-<br/><br/>
+次の表では、デバイスを Defender for Business にオンボードするために最も一般的に使用される方法について説明します。 
 
 | オンボーディング方法  | 説明  |
 |---------|---------|
-| **自動オンボーディング**<br/>(*既にユーザーを使用しているお客様Microsoft エンドポイント マネージャー*) | Defender for Business (プレビュー) をMicrosoft エンドポイント マネージャー前に既にアプリケーションを使用していた場合、Defender for Business は検出します。 以前にオンボードされたデバイスに対して自動オンボーディング プロセスを使用Microsoft エンドポイント マネージャー。 <br/><br/>自動オンボーディングは、Defender for Business (プレビュー) と Microsoft エンドポイント マネージャー間の接続をセットアップし、デバイスを Defender for Business (プレビュー) にオンボードします。 このオプションを使用すると、デバイスを Defender for Business (プレビュー) にすばやく効率的にオンボードできます。 現在Windowsに登録されているすべてのデバイスMicrosoft エンドポイント マネージャー Defender for Business にオンボードされます。 <br/><br/>自動オンボーディングを選択した場合は、この記事の手順をスキップし、「手順 [5: Microsoft Defender for Business (プレビュー](mdb-configure-security-settings.md))でセキュリティ設定とポリシーを構成する」に進みます。  |
-| **ローカル スクリプト**<br/>(*プレビュー中に推奨されます。一度にいくつかのデバイスをオンボーディングする場合に役立ちます*)  | プレビュー中に、macOS、Windows 10 または 11、および Linux デバイスでダウンロードして実行するスクリプトを使用して、Defender for Business (プレビュー) でデバイスをオンボードできます。 デバイス上でスクリプトを実行すると、Azure Active Directory (Azure AD) との信頼が作成され、デバイスがMicrosoft Intune。 このプロセスは、デバイスを [Microsoft Defender for Endpoint にオンボーディングするプロセスと似ています](../defender-endpoint/onboarding.md)。<br/><br/>このメソッドを使用するには、[ローカル スクリプトを使用してデバイスをオンボードする] に進[Microsoft 365 Defender。](#onboard-a-device-using-a-local-script-in-defender-for-business) |
-| **Microsoft Intune** <br/>(*既にユーザーを使用しているMicrosoft Intune*) | Defender for Business (プレビュー) [をMicrosoft Intune](/mem/intune/fundamentals/what-is-intune)前に既にアプリを使用していた場合は、Microsoft Intuneを使用してデバイスをオンボードできます。 プレビュー中に、Microsoft Intuneを使用Windows、iOS、macOS、Linux、Android デバイスを Defender for Business (プレビュー) にオンボードできます。 <br/><br/>このメソッドを使用するには、「 [Intune でのデバイス登録」を参照してください](/mem/intune/enrollment/device-enrollment)。 |
-| **グループ ポリシー** | [グループ ポリシー](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)) は、グループ ポリシーの設定とグループ ポリシーの基本設定を使用して、ユーザーとコンピューターの管理構成を指定できるインフラストラクチャです。 グループ ポリシー オブジェクト (GPO) は、グループ ポリシー コンテナーとグループ ポリシー テンプレートで構成される論理オブジェクトです。 組織で既にグループ ポリシーを使用している場合は、GPO を作成し、Defender for Business (プレビュー) で組織のデバイスに適用できます。<br/><br/>この方法の詳細については、「グループ ポリシーを使用したオンボード [Windowsデバイス」を参照してください](../defender-endpoint/configure-endpoints-gp.md)。 | 
-| **VDI オンボーディング スクリプト** | 組織が非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスを使用している場合は、ダウンロード可能なスクリプトを使用してそれらのエンドポイントをオンボードできます。 <br/><br/>この方法の詳細については、「オンボード非永続的 [VDI デバイス」を参照してください](../defender-endpoint/configure-endpoints-vdi.md)。  |
+| **自動オンボーディング**<br/>(*既にユーザーを使用しているお客様Microsoft エンドポイント マネージャー*) | 自動オンボーディングは、Defender for Business (プレビュー) と Microsoft エンドポイント マネージャー の間の接続をセットアップし、Windowsデバイスを Defender for Business (プレビュー) にオンボードします。 デバイスは、既にデバイスに登録されているエンドポイント マネージャー。<br/><br/>詳細については、「デバイスに登録されているデバイスの自動オンボーディングWindows[使用する」を参照Microsoft エンドポイント マネージャー](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)。 |
+| **ローカル スクリプト**<br/>(*プレビュー中に推奨されます。一度にいくつかのデバイスをオンボーディングする場合に役立ちます*)  | コンピューターを Defender for Business (プレビュー) にオンボードするには、Windows、macOS、または Linux デバイスでダウンロードして実行するスクリプトを使用します。 このスクリプトは、デバイスに対する信頼Azure Active Directory設定し、デバイスを登録します。<br/><br/>このメソッドを使用するには、「 [Defender for Business のローカル スクリプトを使用したオンボード デバイス」を参照してください](#onboard-devices-using-a-local-script-in-defender-for-business)。 |
+| **Microsoft Intune** または **Microsoft エンドポイント マネージャー**<br/>(*既にユーザーまたはユーザーを使用しているMicrosoft Intune利用可能エンドポイント マネージャー*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)モバイル [デバイスの管理は](/mem/intune/enrollment/device-enrollment)、デバイス管理の一部エンドポイント マネージャー。 Defender for Business (プレビュー) をエンドポイント マネージャー前に既にデバイスを使用していた場合は、引き続きデバイスのオンボードエンドポイント マネージャー管理する方法を選択できます。<br/><br/>このメソッドを使用するには、「デバイスを使用[したオンボード デバイスMicrosoft エンドポイント マネージャー](#onboard-devices-using-microsoft-endpoint-manager)。 |
+| **グループ ポリシー** | 組織で既にグループ ポリシーを使用している場合は、GPO を作成し、Defender for Business (プレビュー) で組織のデバイスに適用できます。<br/><br/>この方法の詳細については、「グループ ポリシーを使用したオンボード [Windowsデバイス」を参照してください](#onboard-windows-devices-using-group-policy)。 | 
 
+> [!IMPORTANT]
+> 問題が発生してオンボーディング プロセスが失敗した場合は、「 [Microsoft Defender for Business のトラブルシューティング」を参照してください](mdb-troubleshooting.yml)。
 
-> [!TIP]
-> デバイスのオンボード中に問題が発生した場合は、「 [Microsoft Defender for Business (プレビュー) のトラブルシューティング」を参照してください](mdb-troubleshooting.yml)。 
+## <a name="automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager"></a>デバイスに登録されているWindowsデバイスの自動オンボーディングMicrosoft エンドポイント マネージャー
 
-## <a name="onboard-a-device-using-a-local-script-in-defender-for-business"></a>Defender for Business でローカル スクリプトを使用してデバイスをオンボードする
+自動オンボーディング オプションは、デバイスWindows適用されます。 このオプションは、Defender for Business (プレビュー) を受け取る前に組織が Microsoft Intune で Microsoft エンドポイント マネージャー、Microsoft Intune、またはモバイル デバイス管理 (MDM) を既に使用し、Windows デバイスが既に登録されている場合に使用できます。エンドポイント マネージャー。 
+
+Windowsデバイスが エンドポイント マネージャー に既に登録されている場合、Defender for Business は、Defender for Business のセットアップおよび構成中にそれらのデバイスを検出します。 すべてのデバイスまたは一部のデバイスに対して自動オンボーディングを使用Windowsされます。 
+
+自動オンボーディング プロセスは、Defender for Business と エンドポイント マネージャー間の接続をセットアップし、デバイスを Defender for Business にオンボードします。 登録済みのすべてのデバイスを一度Windowsするか、オンボードするデバイスのセットWindows選択できます。
+
+詳細については、「ウィザードを使用して [Microsoft Defender for Business (](mdb-use-wizard.md)プレビュー)をセットアップする」の手順 3 を参照してください。
+
+## <a name="onboard-devices-using-a-local-script-in-defender-for-business"></a>Defender for Business のローカル スクリプトを使用したオンボード デバイス
+
+ローカル スクリプトを使用して、Windows、macOS、Linux デバイスを Defender for Business にオンボードできます。 デバイスでオンボード スクリプトを実行すると、Azure Active Directory との信頼が作成され、Microsoft エンドポイント マネージャー にデバイスが登録され、デバイスが Defender for Business にオンボードされます。 このメソッドは、Defender for Business でデバイスをオンボーディングする場合や、一度にいくつかのデバイスをオンボーディングする場合に便利です。
 
 1. ポータル () にMicrosoft 365 Defenderし[https://security.microsoft.com](https://security.microsoft.com)、サインインします。
 
@@ -82,18 +99,30 @@ Microsoft Defender for Business (プレビュー) では、組織のデバイス
    - macOS デバイス: [macOS での Microsoft Defender for Endpoint の手動展開](../defender-endpoint/mac-install-manually.md#client-configuration)
    - Linux デバイス: [Linux で Microsoft Defender for Endpoint を手動で展開する](../defender-endpoint/linux-install-manually.md#client-configuration)
 
-6. [デバイスの[検出テストを実行する](#run-a-detection-test)] に進Windowsします。
-
 > [!IMPORTANT]
 > 問題が発生してオンボーディング プロセスが失敗した場合は、「 [Microsoft Defender for Business (プレビュー) のトラブルシューティング」を参照してください](mdb-troubleshooting.yml)。
 
-## <a name="onboard-devices-using-microsoft-intune"></a>デバイスを使用したオンボード Microsoft Intune
+## <a name="onboard-devices-using-microsoft-endpoint-manager"></a>デバイスを使用したオンボード Microsoft エンドポイント マネージャー
 
-Defender for Business (プレビュー) をMicrosoft Intune前に既にアプリケーションを使用していた場合は、Microsoft Intuneを使用してデバイスをオンボードできます。 このヘルプについては、「デバイスの登録」[を参照Microsoft Intune](/mem/intune/enrollment/device-enrollment)。
+Defender for Business (プレビュー) をMicrosoft Intune前に既にデバイスを使用していた場合は、引き続きデバイスMicrosoft Intuneを使用できます。 このエンドポイント マネージャー、コンピューター、タブレット、および電話をオンボードできます。 
+
+「[デバイスの登録」を参照Microsoft Intune](/mem/intune/enrollment/device-enrollment)。
+
+## <a name="onboard-windows-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする
+
+[グループ ポリシー](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)) は、グループ ポリシーの設定とグループ ポリシーの基本設定を使用して、ユーザーとコンピューターの管理構成を指定できるインフラストラクチャです。 グループ ポリシー オブジェクト (GPO) は、グループ ポリシー コンテナーとグループ ポリシー テンプレートで構成される論理オブジェクトです。 
+
+組織で既にグループ ポリシーを使用してデバイスを管理している場合は、グループ ポリシーを使用してデバイスを Defender for Business にオンボードできます。 グループ ポリシーを新しく使用する場合は、別の方法 (エンドポイント マネージャースクリプトなど) を使用することをお勧めします。 
+
+「グループ [ポリシーをWindowsデバイスのオンボード」を参照してください](../defender-endpoint/configure-endpoints-gp.md)。
+
+## <a name="onboard-devices-using-a-method-not-listed-here"></a>ここに記載されていないメソッドを使用してデバイスをオンボードする
+
+この記事に記載されていない別の方法を使用してデバイスをオンボードする場合は、「オンボードと構成ツールのオプション」 [を参照してください](../defender-endpoint/onboard-configure.md#onboarding-and-configuration-tool-options)。
 
 ## <a name="run-a-detection-test"></a>検出テストを実行する
 
-デバイスを手動でWindowsした後、検出テストを実行して、Defender for Business (プレビュー) ですべてが正しく動作するようにすることができます。
+Windows デバイスを Defender for Business (プレビュー) にオンボードした後、Windows デバイスで検出テストを実行して、すべてが正しく動作するようにすることができます。
 
 1. デバイスでWindowsフォルダーを作成します。 `C:\test-MDATP-test`
 
@@ -105,9 +134,9 @@ Defender for Business (プレビュー) をMicrosoft Intune前に既にアプリ
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-コマンドを実行すると、[コマンド プロンプト] ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、新しくオンボードされたデバイスの Microsoft 365 Defender ポータルに約 10 分で新しいアラートが表示されます。
+コマンドを実行すると、[コマンド プロンプト] ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、新しくオンボードされたデバイスの Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に約 10 分で新しいアラートが表示されます。
 
-## <a name="what-if-i-want-to-onboard-devices-gradually"></a>デバイスを段階的にオンボードする場合は、
+## <a name="gradual-device-onboarding"></a>段階的なデバイスオンボーディング
 
 組織のデバイスを段階的にオンボードする場合は、次の手順を実行します。
 
@@ -124,7 +153,7 @@ Defender for Business (プレビュー) をMicrosoft Intune前に既にアプリ
 > [!TIP]
 > デバイスをオンボードする度に同じオンボーディング パッケージを使用する必要はない。 たとえば、ローカル スクリプトを使用して一部のデバイスをオンボードし、後で別の方法を選択して、より多くのデバイスをオンボードできます。
 
-## <a name="what-if-i-want-to-offboard-a-device"></a>デバイスのオフボードを行う場合は、
+## <a name="offboarding-a-device"></a>デバイスのオフボード
 
 デバイスをオフボードする場合は、次の手順を実行します。
 

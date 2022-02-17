@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/08/2022
+ms.date: 02/16/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 1659925081a96b4122910319b5c0a294d007f0b9
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 26bf8e46ba79094f74fe542f932921d4f1c2a50d
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62465356"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879134"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business-preview"></a>ウィザードを使用して Microsoft Defender for Business をセットアップする (プレビュー)
 
@@ -48,10 +48,13 @@ Microsoft Defender for Business (プレビュー) は、初期セットアップ
 
 2. **電子メール通知を設定します**。 この手順では、検出された脆弱性または新しいアラートが発生した場合に電子メール通知を受信するユーザーを決定します。 電子メール通知は、セキュリティ チームがデスクから離れていなくても、情報を保持するのに役立ちます。 [電子メール通知の詳細については、次の情報を参照してください](mdb-email-notifications.md)。 
 
-3. **デバイスのオンボードと構成Windowsします**。 この手順では、組織のデバイスを Defender for Business Windowsすぐにオンボードできます。 デバイスのオンボードは、1 日目からデバイスを保護するのに役立ちます。 [デバイスのオンボーディングについて詳しくは、詳しくは、「デバイスのオンボーディング」をご覧ください](mdb-onboard-devices.md)。
+3. **デバイスのオンボードと構成Windowsします**。 この手順では、組織のデバイスを Defender for Business Windowsすぐにオンボードできます。 デバイスのオンボードは、1 日目からデバイスを保護するのに役立ちます。 
 
-   - Microsoft エンドポイント マネージャー (Microsoft Intune を含む) を既に使用している場合は、エンドポイント マネージャー と Defender for Business の間の接続をセットアップし、登録されている Windows デバイスをオンボードする自動オンボーディングを使用する必要がある場合に尋ねらされます。エンドポイント マネージャー。 
-   - デバイス をまだ使用していないエンドポイント マネージャー段階的なデバイス オンボーディングを使用し、Defender for Business にオンボードするデバイスのセットを選択できます。 
+   - Microsoft Intune (Microsoft エンドポイント マネージャー の一部) を既に使用している場合に、組織にデバイスが エンドポイント マネージャー に登録されている場合は、登録されている Windows デバイスの一部またはすべてに対して自動オンボーディングを使用するかどうかを確認するメッセージが表示されます。 自動オンボーディングでは、エンドポイント マネージャーと Defender for Business の間の接続をセットアップし、Windowsデバイスを Defender for Business にシームレスにオンボードします。
+
+   - エンドポイント マネージャー をまだ使用していない場合、または エンドポイント マネージャー に登録されている Windows 以外のデバイスがある場合は、手動で Defender for Business (プレビュー) にデバイスをオンボードできます。 
+
+   - 「 [オンボード デバイスから Microsoft Defender for Business (プレビュー)」を参照してください](mdb-onboard-devices.md)。
    
 4. **セキュリティ ポリシーを構成します**。 Defender for Business には、組織のデバイスに適用できる既定のセキュリティ ポリシーが含まれています。 これらの既定のポリシーは推奨設定を使用し、デバイスに強力な保護を提供するように設計されています。 ただし、必要に合わせ、独自のセキュリティ ポリシーを作成できます。 また、セキュリティ ポリシーを既に使用しているエンドポイント マネージャー、セキュリティ ポリシーの管理に引き続き使用できます。 
 

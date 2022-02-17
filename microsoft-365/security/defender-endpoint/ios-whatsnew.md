@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 098ea7ee2934ac811035414b295a71012edc88e2
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 723dc6a70d9a8d37ef05cb301c41f0fea3911da9
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766910"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879146"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS のエンドポイント向け Microsoft Defender の新機能
 
@@ -36,6 +36,10 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 ## <a name="improved-experience-on-supervised-ios-devices"></a>監視対象の iOS デバイスでのエクスペリエンスの向上
 
 Microsoft Defender for Endpoint on iOS では、これらの種類のデバイスでプラットフォームによって提供される管理機能の強化を考えると、監視対象の iOS/iPadOS デバイスに特化した機能が追加されました。 また、デバイスでローカル **VPN を設定せずに Web 保護を提供することもできます**。 これにより、エンドユーザーはシームレスなエクスペリエンスを実現しながら、フィッシングなどの Web ベースの攻撃から保護されます。 詳細については、この [ドキュメントを参照してください。](ios-install.md#complete-deployment-for-supervised-devices)
+
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Microsoft Defender for Endpoint は現在、アプリ ストアの Microsoft Defender です
+
+Microsoft Defender for Endpoint は、アプリ ストア **で Microsoft Defender** として利用できます。 この更新プログラムを使用すると、アプリは米国地域の **コンシューマー向けプレビューとして利用できます**。 仕事用または個人用アカウントでアプリにログインする方法に基づいて、Microsoft Defender for Endpoint の機能、または個人向け Microsoft Defender の機能にアクセスできます。 詳細については、このブログ [を参照してください](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)。
 
 ## <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 

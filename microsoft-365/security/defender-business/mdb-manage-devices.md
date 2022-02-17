@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/09/2022
+ms.date: 02/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 143617fc3669b4a531bafe7fbbb9f2919a9ab295
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 498fa3824ec1e022cbf0abcb0c7789e5e236262e
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520513"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879194"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business でデバイスを管理する (プレビュー)
 
@@ -73,7 +73,7 @@ Microsoft Defender for Business (プレビュー) では、次のようにデバ
 
 ## <a name="offboard-a-device"></a>デバイスのオフボード
 
-「 [Offboard a device」を参照してください](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device)。
+「 [Offboarding a device」を参照してください](mdb-onboard-devices.md#offboarding-a-device)。
 
 ## <a name="next-steps"></a>次の手順
 

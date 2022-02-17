@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3e0246160424e76d0ddce42b3dacf74c6b56e43c
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: c144eb3cd0cec2d96f20294475618e7e9c49c816
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765077"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879158"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
 
@@ -74,7 +74,7 @@ ms.locfileid: "62765077"
 
 **システム要件**
 
-- iOS 12.0 以上を実行している iOS デバイス。 iPad もサポートされています。
+- iOS 12.0 以上を実行している iOS デバイス。 iPad もサポートされています。 *31 ~ 3 月 2022 日から、Microsoft Defender for Endpoint でサポートされる最小 iOS バージョンは iOS 13.0 です。*
 
 - デバイスは、Intune ポータル サイトアプリに登録するか[](https://apps.apple.com/us/app/intune-company-portal/id719171358)、同じアカウント[Azure Active Directory Microsoft Authenticatorに](https://apps.apple.com/app/microsoft-authenticator/id983156458)登録されます。
 

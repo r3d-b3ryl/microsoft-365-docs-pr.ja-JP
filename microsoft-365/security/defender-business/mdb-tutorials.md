@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 01/06/2022
+ms.date: 02/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ddaac75774c79ac946754cea5089507e0972fc98
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 570313132367ad591944d87959cff538cd5b75e8
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464920"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879230"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business のチュートリアルとシミュレーション (プレビュー)
 
@@ -45,7 +45,7 @@ Microsoft Defender for Business (プレビュー) のセットアップが完了
 
 | シナリオ  | 説明  |
 |---------|---------|
-| ローカル スクリプトを使用したデバイスのオンボード     | Defender for Business (プレビュー) では、各Windows 10でダウンロードして実行するスクリプトを使用して、デバイスと 11 台のデバイスをオンボードできます。 スクリプトは、ユーザー (Azure Active Directory) とのAzure ADを作成し、デバイスを Microsoft Intune。 詳細については、「Defender for Business (プレビュー)でローカル スクリプトを使用してデバイスをオンボード [する」を参照してください](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business)。         |
+| ローカル スクリプトを使用したデバイスのオンボード     | Defender for Business (プレビュー) では、各Windows 10でダウンロードして実行するスクリプトを使用して、デバイスと 11 台のデバイスをオンボードできます。 スクリプトは、ユーザー (Azure Active Directory) とのAzure ADを作成し、デバイスを Microsoft Intune。 詳細については、「 [Defender for Business のローカル スクリプトを使用したオンボード デバイス」を参照してください](mdb-onboard-devices.md#onboard-devices-using-a-local-script-in-defender-for-business)。         |
 | デバイスを使用したオンボード Microsoft Intune     | Defender for Endpoint を取得する前Microsoft Intuneを既に使用していた場合は、Microsoft Intuneデバイスをオンボードできます。 macOS、iOS、Linux、および Android デバイスのオンボーディングを試Microsoft Intune。 詳細については、「デバイスの[登録」を参照Microsoft Intune](/mem/intune/enrollment/device-enrollment)。        |
 | セキュリティ ポリシーの編集     | Defender for Business (プレビュー) でセキュリティ ポリシーを管理している場合は、[デバイス構成] ページを使用してポリシーを表示および編集します。 詳細については、「Microsoft Defender for Business (プレビュー)のポリシーを表示 [または編集する」を参照してください](mdb-view-edit-policies.md)。        |
 | シミュレートされた攻撃を実行する   | Defender for Business (プレビュー) では、いくつかのチュートリアルとシミュレーションを利用できます。 これらのチュートリアルとシミュレーションは、Defender for Business (プレビュー) の脅威保護機能が組織でどのように機能できるのか、直接説明するように設計されています。 1 つ以上のチュートリアルを試す方法については、「 [Microsoft Defender for Business (プレビュー)の推奨チュートリアル」を参照してください](#recommended-tutorials-for-defender-for-business)。         |

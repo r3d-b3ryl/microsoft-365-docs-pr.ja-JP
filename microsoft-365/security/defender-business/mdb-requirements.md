@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/08/2022
+ms.date: 02/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 519fd95a712d92760bf0963438aac4a0ea4ab471
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 59de83ae127a20fd7d7c529a626544cc0a9d2434
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62465161"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879206"
 ---
 # <a name="microsoft-defender-for-business-preview-requirements"></a>Microsoft Defender for Business (プレビュー) の要件
 
@@ -51,7 +51,7 @@ ms.locfileid: "62465161"
 | アクセス許可  | Microsoft Defender for Business (プレビュー) にサインアップするには、グローバル管理者である必要があります。<br/><br/>新しいポータルにMicrosoft 365 Defenderするには、ユーザーに割り当てられているアカウントで次[のいずれかのAzure AD](mdb-roles-permissions.md)必要があります。 <br/>- セキュリティ リーダー<br/>- セキュリティ管理者<br/>- グローバル管理者<br/><br/>詳細については、「 [Microsoft Defender for Business (プレビュー)の役割とアクセス許可」を参照してください](mdb-roles-permissions.md)。 |
 | ブラウザー要件 | Microsoft Edgeまたは Google Chrome |
 | オペレーティング システム | Microsoft Defender for Business (プレビュー) でデバイスを管理するには、デバイスで次のいずれかのオペレーティング システムを実行している必要があります。 <br/>- Windows 10 Business以降 <br/>- Windows 10 Professional以降 <br/>- Windows 10 Enterprise以降 <br/><br/>[KB5006738 がインストールされていることを](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541)確認します。 <br/><br/>Microsoft Intune (または Microsoft エンドポイント マネージャー) でデバイスを管理している場合、または Microsoft 以外のデバイス管理ソリューションを使用している場合は、[Microsoft Defender for Endpoint](../defender-endpoint/minimum-requirements.md) でサポートされているオペレーティング システムの 1 つがデバイスで実行されている必要があります。 |
-| アプリケーションとのMicrosoft エンドポイント マネージャー  |  **プレビュー中は、ローカル スクリプトを使用して** デバイスをオンボードできます。ローカル スクリプトとの統合はMicrosoft エンドポイント マネージャー。 ただし、Microsoft エンドポイント マネージャー、グループ ポリシー、System Center Configuration Manager、またはモバイル デバイス管理にダウンロード可能なパッケージを使用して、デバイスを Defender for Business (プレビュー) に手動でオンボードする場合は、次の要件を満たす必要があります。 <br/><br/>デバイスは、[KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) Windows 10または 11 Professional/Enterprise実行している必要があります。 <br/><br/>Microsoft [Defender for Endpoint のセキュリティ管理の前提条件を満たす必要があります](/mem/intune/protect/mde-security-integration)。<br/>- Azure AD、組織のデバイスと組織のデバイス間で信頼が作成Azure AD。 <br/>- Defender for Business (プレビュー) では、セキュリティ管理が有効になっている必要Microsoft エンドポイント マネージャー。<br/><br/>デバイスは、次の URL に接続できる必要があります。<br/>- `enterpriseregistration.windows.net`(Azure AD)<br/>- `login.microsoftonline.com`(Azure AD)<br/>- `*.dm.microsoft.com` (ワイルドカード (*) は、登録、チェックイン、およびレポートに使用されるクラウド サービス エンドポイントをサポートし、サービスの規模に応じ変更できます)。 |
+| アプリケーションとのMicrosoft エンドポイント マネージャー  |  **プレビュー中は、ローカル スクリプトを使用して** デバイスをオンボードできます。ローカル スクリプトとの統合はMicrosoft エンドポイント マネージャー。 ただし、Microsoft エンドポイント マネージャー、グループ ポリシー、System Center Configuration Manager、またはモバイル デバイス管理にダウンロード可能なパッケージを使用して、デバイスを Defender for Business (プレビュー) に手動でオンボードする場合は、次の要件を満たす必要があります。<br/><br/>Microsoft [Defender for Endpoint のセキュリティ管理の前提条件を満たす必要があります](/mem/intune/protect/mde-security-integration)。<br/>- Azure AD、組織のデバイスと組織のデバイス間で信頼が作成Azure AD。 <br/>- Defender for Business (プレビュー) では、セキュリティ管理が有効になっている必要Microsoft エンドポイント マネージャー。<br/><br/>デバイスは、次の URL に接続できる必要があります。<br/>- `enterpriseregistration.windows.net`(Azure AD)<br/>- `login.microsoftonline.com`(Azure AD)<br/>- `*.dm.microsoft.com` (ワイルドカード (*) は、登録、チェックイン、およびレポートに使用されるクラウド サービス エンドポイントをサポートし、サービスの規模に応じ変更できます)。 |
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) を使用して、ユーザーのアクセス許可とデバイス グループを管理します。 Azure AD Defender for Business (プレビュー) サブスクリプションに含まれています。 
