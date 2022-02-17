@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 6d617024f2a09b73b7b944fb34bd2f34d024d3c1
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d4e4f9baaf67b921358f17dae16908bcf9fed401
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661059"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818266"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップ スコア
 
@@ -35,7 +35,7 @@ ms.locfileid: "60661059"
 
 [Microsoft 365 Defender](microsoft-365-defender.md) は、侵害の前後に対応した統合エンタープライズ防御スイートです。エンドポイント、ID、メール、およびアプリケーション全体での検出、防止、調査、応答をネイティブに調整し、高度な攻撃に対する統合された保護を提供します。
 
-Microsoft 365 Defender は、[Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)、 [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection)、[Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/)、[Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)、および [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) の機能を 1 つのソリューションに結合します。
+Microsoft 365 Defender は、[Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)、[Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection)、[Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/)、[Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)、および [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) の機能を 1 つのソリューションに結合します。
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE: 実際の検出、対応、および高度な攻撃から保護する方法を示しました
 
@@ -87,15 +87,23 @@ AV テスト製品のレビューと認定レポートは、3 つのカテゴリ
 
 SE ラボでは、製品やサービスで使用されている攻撃を検出し、攻撃から保護する、さまざまなソリューションをテストします。 エンドポイント ソフトウェア、ネットワーク アプライアンス、クラウド サービスが含まれています。
 
-- エンタープライズ エンドポイントの保護: 2020 年 10 月から 12 月: [AAA 賞](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**最新**</sup>
+- 年次報告 2020 年～ 2021 年: [AAA 賞](https://selabs.uk/wp-content/uploads/2021/11/annual-report-2021.pdf) <sup>**最新**</sup>
 
-    Microsoft の次世代保護製品は、すべてのパブリックおよびターゲットを対象とした攻撃を停止しました。Microsoft Defender ウイルス対策は、悪意のある URL のブロック、搾取の処理、正当なアプリケーションと Web サイトの適切な分類を行う能力を発揮して、このような適切な結果を達成しました。
+- エンタープライズ エンドポイントの保護: 2021 年 10 月～ 12 月: [AAA 賞](https://selabs.uk/wp-content/uploads/2021/12/oct-dec-2021-enterprise.pdf)
 
-- エンタープライズ エンドポイントの保護: 2020 年 7 月～ 9 月: [AAA 賞](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
+- エンタープライズ拡張セキュリティ (EDR): Kaspersky: 2021 年 8 月～ 9 月: [AAA 賞](https://selabs.uk/wp-content/uploads/2021/12/AS-EDR-Kaspersky-EDR-2021-1.pdf)
 
-- エンタープライズ エンドポイントの保護: 2020 年 4 月～ 6 月[AAA 賞](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
+- エンタープライズ拡張セキュリティ (EDR): Crowdstrike: 2021 年 8 月～ 9 月: [AAA 賞](https://selabs.uk/wp-content/uploads/2021/12/AS-EDR-Crowdstrike-Falcon-2021-1.pdf)
 
-- エンタープライズ エンドポイントの保護: 2020 年 1 月～ 3 月:[AAA 賞](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup> | [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- 違反対応 (NDR 検出): VMware NSX ネットワーク検知と応答: 2021 年 8 月: [AAA 賞](https://selabs.uk/wp-content/uploads/2021/10/NDR-VMware-NSX-detection-2021-1.pdf)
+
+- エンタープライズ エンドポイントの保護: 2021 年 7 月～ 9 月: [AAA 賞](https://selabs.uk/wp-content/uploads/2021/11/july-sept-2021-enterprise.pdf)
+
+- 違反対応 (保護): BlackBerry の保護と光学: 2021 年 7 月: [AAA 賞](https://selabs.uk/wp-content/uploads/2021/07/BRT-BlackBerry-Protect-protection-2021-1.pdf)
+
+- エンタープライズ エンドポイントの保護: 2021 年 4 月～ 6 月[AAA 賞](https://selabs.uk/wp-content/uploads/2021/07/apr-jun-2021-enterprise-1.pdf)
+
+- エンタープライズ エンドポイントの保護: 2021 年 1 月～ 3 月:[AAA 賞](https://selabs.uk/wp-content/uploads/2021/04/jan-mar-2021-enterprise.pdf) <sup>**pdf**</sup>
 
 ## <a name="endpoint-detection--response"></a>エンドポイントの検出および応答
 

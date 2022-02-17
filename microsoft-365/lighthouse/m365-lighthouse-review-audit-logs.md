@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouse監査ログを確認する方法について説明します。
-ms.openlocfilehash: 2044e61430ef26cf671340c02363658d54414f3b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 69eb057c0b6a7daf835ec613b7d386e1a7fbfbaa
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767486"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859243"
 ---
 # <a name="review-audit-logs"></a>監査ログの確認
 
@@ -30,62 +30,62 @@ ms.locfileid: "62767486"
 
 Microsoft 365 Lighthouse監査ログには、ライトハウスまたは他のサービスの変更を生成するMicrosoft 365記録されます。 作成、編集、削除、割り当て、リモート 操作はすべて、確認できる監査イベントを作成します。 既定では、すべてのお客様に対して監査が有効です。 それを無効にすることはできません。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 監査ログを表示するには、次のいずれかのアクセス許可が必要です。
 
-- Azure ADロール - パートナー テナントのグローバル管理者
+- Azure Active Directory (Azure AD) 役割 - パートナー テナントのグローバル管理者
 
-- パートナー センターの役割 - 管理者エージェント
+- Microsoft パートナー センターの役割 - 管理者エージェント
 
-## <a name="review-logs"></a>ログの確認
+## <a name="review-audit-logs"></a>監査ログの確認
 
 1. ライトハウスの左側のナビゲーション ウィンドウで、[監査ログ] **を選択します**。
 
     > [!NOTE]
     > 新しいログを表示するには、最大で 1 時間かかる場合があります。 それぞれのサービスに移動して、最新の変更点を確認します。
 
-2. ログをフィルター処理するには、次のオプションを使用してリストを絞り込む必要があります。
+2. 必要に応じて、次のオプションを使用してログをフィルター処理します。
 
     - **日付範囲** - 前の月、週、または日。
     - **テナント -** テナント タグまたは顧客テナント名。
-    - **Activity** - Microsoft 365に対応するアクティビティの種類を指定します。 詳細については、「Activity Types table」を参照してください。
+    - **Activity** - Microsoft 365に対応するアクティビティの種類を指定します。 詳細については、「Activities」テーブル [を参照](#activities) してください。
     - **によって開始される** - Whoアクションを開始します。
 
 3. リストからログを選択すると、要求本文を含む詳細が **表示** されます。
 
-[ **エクスポート] を** 選択して、ログ データをコンマ区切り値 (.csv) ファイルにエクスポートします。
+    ログ データをコンマ区切り値 (.csv) ファイルにエクスポートするには、[エクスポート] を選択 **します**。
 
-## <a name="activity-types"></a>アクティビティの種類
+## <a name="activities"></a>アクティビティ
 
-次の表は、ライトハウス監査ログ内でキャプチャされるアクティビティの種類の一覧です。 新しいアクションが作成されると、リストは変更される可能性があります。 監査ログのアクティビティ値を使用して、開始されたアクションを確認できます。
+次の表に、ライトハウス監査ログ内でキャプチャされたアクティビティの一覧を示します。 新しいアクションが作成されると、リストは変更される可能性があります。 監査ログに一覧表示されているアクティビティを使用して、開始されたアクションを確認できます。<br><br>
 
-| アクティビティ名    | Microsoft 365 Lighthouse | 開始されたアクション  | サービスが影響を受け           |
-|------------------|----------------------------------|-------------------|----------------------------|
-|**適用する**                                   | テナント                          | 展開計画の適用                                           | Azure AD、Microsoft エンドポイント マネージャー                   |
-|**assignTag**                                | テナント                          | 顧客からのタグの適用                                      | Microsoft 365 Lighthouse   |
-|**changeDeploymentStatus**                   | テナント                          | 展開計画のアクション 計画の状態                        | Microsoft 365 Lighthouse   |
-|**offboardTenant**                            | テナント                          | 顧客の非アクティブ化                                          | Microsoft 365 Lighthouse   |
-|**resetTenantOnboardingStatus**              | テナント                          | 顧客の対応                                              | Microsoft 365 Lighthouse   |
-|**tenantTags**                               | テナント                          | タグを作成または削除する                                           | Microsoft 365 Lighthouse   |
-|**tenantCustomizedInformation**              | テナント                          | 顧客の Web サイトまたは連絡先情報を作成、更新、または削除する | Microsoft 365 Lighthouse   |
-|**unassignTag**                              | テナント                          | 顧客からタグを削除する                                    | Microsoft 365 Lighthouse   |
-| **blockUserSignin**                          | ユーザー                            | サインインをブロックする                                                     | Azure AD                   |
-| **confirmUsersCompromised**                  | ユーザー                            | ユーザーが侵害されたのを確認する                                        | Azure AD                   |
-| **dismissUsersRisk**                         | ユーザー                            | ユーザー リスクの却下                                                | Azure AD                   |
-| **resetUserPassword**                        | ユーザー                            | パスワードのリセット                                                   | Azure AD                   |
-| **setCustomerSecurityDefaultsEnabledStatus** | ユーザー                            | セキュリティの既定値を使用して MFA を有効にする                               | Azure AD                   |
-|**restartDevice**                            | デバイス                          | Restart                                                          | Microsoft エンドポイント マネージャー |
-| **syncDevice**                               | デバイス                          | 同期                                                             | Microsoft エンドポイント マネージャー |
-| **rebootNow**                                | 脅威の管理                | 再起動                                                           | Microsoft エンドポイント マネージャー |
-| **reprovision**                              | Windows 365     | Retry Provisioning                                               | Windows 365                |
-| **windowsDefenderScanFull**                  | 脅威の管理                | フル スキャン                                                       | Microsoft エンドポイント マネージャー |
-| **windowsDefenderScan**                      | 脅威の管理                | クイック スキャン                                                       | Microsoft エンドポイント マネージャー |
-| **windowsDefenderUpdateSignatures**          | 脅威の管理                | ウイルス対策の更新                                                | Microsoft エンドポイント マネージャー |
+| アクティビティ名 | ライトハウスのエリア | 開始されたアクション | サービスが影響を受け |
+|--|--|--|--|
+| **適用する** | テナント | 展開計画の適用 | Azure AD, Microsoft エンドポイント マネージャー (MEM) |
+| **assignTag** | テナント | 顧客からのタグの適用 | ライトハウス |
+| **changeDeploymentStatus** | テナント | 展開計画のアクション 計画の状態 | ライトハウス |
+| **offboardTenant** | テナント | 顧客の非アクティブ化 | ライトハウス |
+| **resetTenantOnboardingStatus** | テナント | 顧客の対応 | ライトハウス |
+| **tenantTags** | テナント | タグを作成または削除する | ライトハウス |
+| **tenantCustomizedInformation** | テナント | 顧客の Web サイトまたは連絡先情報を作成、更新、または削除する | ライトハウス |
+| **unassignTag** | テナント | 顧客からタグを削除する | ライトハウス |
+| **blockUserSignin** | ユーザー | サインインをブロックする | Azure AD |
+| **confirmUsersCompromised** | ユーザー | ユーザーが侵害されたと確認する | Azure AD |
+| **dismissUsersRisk** | ユーザー | ユーザー リスクの却下 | Azure AD |
+| **resetUserPassword** | ユーザー | パスワードのリセット | Azure AD |
+| **setCustomerSecurityDefaultsEnabledStatus** | ユーザー | セキュリティの既定値を使用して多要素認証 (MFA) を有効にする | Azure AD |
+| **restartDevice** | デバイス | Restart | MEM |
+| **syncDevice** | デバイス | 同期 | MEM |
+| **rebootNow** | 脅威の管理 | 再起動 | MEM |
+| **reprovision** | Windows 365 | プロビジョニングの再試行 | Windows 365 |
+| **windowsDefenderScanFull** | 脅威の管理 | フル スキャン | MEM |
+| **windowsDefenderScan** | 脅威の管理 | クイック スキャン | MEM |
+| **windowsDefenderUpdateSignatures** | 脅威の管理 | ウイルス対策の更新 | MEM |
 
 ## <a name="next-steps"></a>次の手順
 
-詳細が必要な場合は、Microsoft Graph API を使用して、より多くの監査イベントにアクセスできます。 詳細については、「Overview [for multi-tenant management using the Microsoft 365 Lighthouse API」を参照してください](/graph/managedtenants-concept-overview)。
+詳細が必要な場合は、Microsoft Graph API を使用して、より多くの監査イベントにアクセスします。 詳細については、「Overview [for multi-tenant management using the Microsoft 365 Lighthouse API」を参照してください](/graph/managedtenants-concept-overview)。
 
 ## <a name="related-content"></a>関連コンテンツ
 

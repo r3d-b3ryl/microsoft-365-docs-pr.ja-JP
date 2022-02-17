@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 07dcc4c5d6d9758828fe2b48344a3c6ccc3b8a2e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b6756ba1c0315bb2b89c272d8153715cffe8f976
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873539"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818566"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -79,20 +79,22 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 ****
 
-|Microsoft Defender for Office 365 プラン 1|Microsoft Defender for Office 365 プラン 2|
+|Microsoft Defender for Office 365 プラン 1|Defender for Office 365 プラン 2|
 |---|---|
-|構成、保護、および検出機能: <ul><li>[添付ファイル保護](safe-attachments.md)</li><li>[リンク保護](safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 保護のフィッシング詐欺対策](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 プラン 1 機能 <br>--- プラスのもの ---<br> 自動化、調査、修復、教育の機能:<ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレーション トレーニング](attack-simulation-training.md)</li><li>[キャンペーン ビュー](campaigns.md)</li></ul>|
-|
+|構成、保護、および検出機能: <ul><li>[添付ファイル保護](safe-attachments.md)</li><li>[リンク保護](safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 のフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイム検出](threat-explorer.md)</li></ul>|Defender for Office 365 プラン 1 の機能 <p> --- プラスのもの --- <p> 自動化、調査、修復、教育の機能: <ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレーション トレーニング](attack-simulation-training.md)</li><li>[Microsoft 365 Defender の高度な追求](advanced-hunting-overview.md)</li><li>[Microsoft 365 Defender のインシデント](investigate-incidents.md)</li><li>[Microsoft 365 Defender のアラート](investigate-alerts.md)</li></ul>|
 
-- Microsoft Defender for Office 365 プラン 2 は、Office 365 E5、Office 365 A5、および Microsoft 365 E5 Security と Microsoft 365 E5 に含まれています。
+
+- Microsoft Defender for Office 365 プラン 2 は、Office 365 E5、Office 365 A5、Microsoft 365 E5 に含まれています。
 
 - Microsoft Defender for Office 365 プラン 1 は、Microsoft 365 Business Premium に含まれています。
 
-- Microsoft Defender for Office 365 プラン 1 および Microsoft Defender for Office 365 プラン 2 はいずれも、特定のサブスクリプションのアドオンとして利用できます。 詳細については、「[Microsoft Defender for Office 365 プラン全体での機能の可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
+- Microsoft Defender for Office 365 プラン 1 および Microsoft Defender for Office 365 プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして提供されています。 詳細については、「[Microsoft Defender for Office 365 プラン全体での機能の可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
 
 - [安全なドキュメント](safe-docs.md)機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティ ライセンス (Microsoft Defender for Office 365 プランには含まれません) を持つユーザーのみが利用できます。
 
-- 現在のサブスクリプションに Microsoft Defender for Office 365 が含まれていない場合は、[販売員に連絡して試用版を開始](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)し、Defender for Office 365 が組織でどのように機能するかを確認してください。
+- 現在のサブスクリプションに Microsoft Defender for Office 365 が含まれていない場合に購入を希望する場合は、[営業担当者に問い合わせて試用版の使用を開始](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)し、お客様の組織にとって Microsoft Defender for Office 365 がどのようなメリットになるかを確認してください。
+
+- Microsoft Defender for Office 365 P2 をご利用のお客様は、**Microsoft 365 Defender 統合** にアクセスすると、インシデントやアラートを効率的に検出して確認しながら対応することができます。
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Microsoft Defender for Office 365 のポリシーを構成する
 

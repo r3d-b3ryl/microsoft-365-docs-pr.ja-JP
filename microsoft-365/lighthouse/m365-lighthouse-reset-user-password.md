@@ -16,23 +16,23 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseパスワードをリセットする方法について説明します。
-ms.openlocfilehash: 3630f94672b8c353e115668ed01febe5d737e1a7
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 0840725ffb74072d6f5973aa7175066a31fe32bb
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242124"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859267"
 ---
 # <a name="reset-user-password"></a>Reset user password
 
 > [!NOTE]
-> この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウントが設定されていない場合Microsoft 365 Lighthouse[を参照してください](m365-lighthouse-sign-up.md)Microsoft 365 Lighthouse。
+> この記事で説明する機能はプレビュー段階であり、変更される可能性があり、[要件](m365-lighthouse-requirements.md)を満たすパートナーのみが利用できます。 組織に Microsoft 365 Lighthouse がない場合は、「[Microsoft 365 Lighthouse にサインアップする](m365-lighthouse-sign-up.md)」を参照してください。
 
-Microsoft 365 Lighthouseパスワードを変更またはリセットできます。 1 人のユーザーまたは複数の危険なユーザーを、異なるテナント間でリセットできます。
+Microsoft 365 Lighthouseパスワードを変更またはリセットできます。 1 人のユーザーまたは複数のリスクの高いユーザーのパスワードを、異なるテナント間でリセットできます。
 
 ## <a name="reset-a-password-for-a-user"></a>ユーザーのパスワードをリセットする
 
-1. ライトハウスの左側のナビゲーション ウィンドウで、[ユーザー] を **選択します**。
+1. Lighthouse の左側のナビゲーション ウィンドウで、**[ユーザー]** を選択します。
 
 2. [ユーザーの **検索] タブを** 選択します。
 
@@ -42,17 +42,17 @@ Microsoft 365 Lighthouseパスワードを変更またはリセットできま�
 
 5. ユーザーの詳細ウィンドウで、[パスワードのリセット] **を選択します**。
 
-6. [パスワードのリセット] ウィンドウで、[ **パスワードの自動生成]** または [ **パスワードを作成する] を選択します**。
+6. [パスワードのリセット] ウィンドウで、[ **パスワードの自動生成]** または [ **パスワードの作成を行う] を選択します**。
 
-    a. パスワードを作成する場合は、パスワードを入力します。
+    - パスワードを作成する場合は、パスワードを入力します。
 
-    b. ユーザーが最初にサインインした後にパスワードを変更する場合は、チェック ボックスをオンにします。
+    - 最初のサインイン後にユーザーがパスワードを変更する場合は、チェック ボックスをオンにします。
 
 7. [**パスワードのリセット**] を選択します。
 
-## <a name="reset-password-for-risky-users"></a>危険なユーザーのパスワードをリセットする
+## <a name="reset-a-password-for-a-risky-user"></a>危険なユーザーのパスワードをリセットする
 
-1. ライトハウスの左側のナビゲーション ウィンドウで、[ユーザー] を **選択します**。
+1. Lighthouse の左側のナビゲーション ウィンドウで、**[ユーザー]** を選択します。
 
 2. [危険な **ユーザー] タブを選択** します。
 
@@ -60,15 +60,15 @@ Microsoft 365 Lighthouseパスワードを変更またはリセットできま�
 
 4. [**パスワードのリセット**] を選択します。
 
-5. [パスワードのリセット] ウィンドウで、[ **パスワードの自動生成]** または [ **パスワードを作成する] を選択します**。
+5. [パスワードのリセット] ウィンドウで、[ **パスワードの自動生成]** または [ **パスワードの作成を行う] を選択します**。
 
-   1. パスワードを作成する場合は、パスワードを入力します。
+   - パスワードを作成する場合は、パスワードを入力します。
 
-   1. ユーザーが最初にサインインした後にパスワードを変更する場合は、チェック ボックスをオンにします。
+   - 最初のサインイン後にユーザーがパスワードを変更する場合は、チェック ボックスをオンにします。
 
 6. [**パスワードのリセット**] を選択します。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザー Microsoft 365を管理する](../enterprise/manage-microsoft-365-accounts.md)\
-[ユーザーのサインインをブロックする](m365-lighthouse-block-user-signin.md)
+[ユーザー Microsoft 365の管理](../enterprise/manage-microsoft-365-accounts.md) (記事)\
+[ユーザー のサインインをブロックする](m365-lighthouse-block-user-signin.md) (記事)
