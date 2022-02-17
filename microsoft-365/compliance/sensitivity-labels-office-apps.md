@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4e8484f10f70d00b7db7422306ec625925d059d
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: efd28dbe00960c2644c476f6cd689c79385eed9d
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825459"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879218"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -408,26 +408,26 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 Outlook アプリが、ドキュメントの既定のラベル設定と異なる既定のラベル設定をサポートしている場合は、以下のようになります。
 
-- ラベル ポリシー ウィザードで、**[メールに既定のラベルを適用する]** ページでは、ラベルなしのすべてのメールに適用される秘密度ラベルを選択するか、既定のラベルをなしにするかを指定できます。 この設定は、ウィザードの以前の **[ドキュメント向けポリシー設定]** ページの **[既定でドキュメントにこのラベルを適用する]** 設定とは独立しています。
+- Microsoft 365 コンプライアンス センターのラベル ポリシー構成の **[メールに既定のラベルを適用する]** ページでは、ラベルなしのすべてのメールに適用される秘密度ラベルを選択するか、既定のラベルをなしにするかを指定できます。 この設定は、構成の以前の **[ドキュメント向けポリシー設定]** ページの **[既定でドキュメントにこのラベルを適用する**] 設定とは独立しています。
 
 Outlook アプリが、ドキュメント向けの既定のラベル設定と異なる既定のラベル設定をサポートしていない場合: Outlook は、ラベル ポリシー ウィザードの **[ドキュメント向けポリシー設定]** ページで **[既定でドキュメントにこのラベルを適用する]** に指定した値を常に使用します。
 
 Outlook アプリが、必須のラベル付けをオフすることをサポートする場合は、以下のようになります。
 
-- ラベル ポリシー ウィザードの **[ポリシーの設定]** ページで、**[メールやドキュメントへのラベルの適用をユーザーに要求する]** を選択します。 次に **[次へ]** > 、**[次へ]** の順に選択し、**[メールへのラベルの適用をユーザーに要求する]** チェックボックスをオフにします。 ドキュメントに加えて、メールにもラベル付けを必須にすることを適用する場合は、チェックボックスをオンにしたままにしておきます。
+- **[ポリシー設定]** ページの Microsoft 365 コンプライアンス センターのラベル ポリシー構成で、**[メールまたはドキュメントにラベルを適用するユーザーを要求する]** を選択します。 次に **[次へ]** > 、**[次へ]** の順に選択し、**[メールへのラベルの適用をユーザーに要求する]** チェックボックスをオフにします。 ドキュメントに加えて、メールにもラベル付けを必須にすることを適用する場合は、チェックボックスをオンにしたままにしておきます。
 
 Outlook アプリが必須のラベル付けをオフにすることをサポートしていない場合。ポリシー設定で **Require users to apply a label to their email or documents** を選択した場合、Outlookはラベルのない電子メールに対して常にユーザーにラベルの選択を促すようになります。
 
 > [!NOTE]
 > [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) コマンドレットまたは [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) コマンドレットを使用して、PowerShell の詳細設定 **OutlookDefaultLabel** および **DisableMandatoryInOutlook** を設定している場合は、このコマンドレットを使用してください。
 > 
-> これらの PowerShell 設定で選択した値は、ラベル ポリシー ウィザードに反映され、これらの設定をサポートする Outlook アプリで自動的に機能します。 その他の PowerShell の詳細設定は、Azure Information Protection 統合ラベル付けクライアントでのみサポートされたままです。
+> これらの PowerShell 設定で選択した値は、コンプライアンス センターのラベル ポリシー構成に反映され、これらの設定をサポートする Outlook アプリで自動的に機能します。 その他の PowerShell の詳細設定は、Azure Information Protection 統合ラベル付けクライアントでのみサポートされたままです。
 
 ## <a name="auditing-labeling-activities"></a>ラベル付けアクティビティの監査
 
 秘密度ラベル アクティビティによって生成される監査イベントの詳細については、[「コンプライアンス センターの監査ログを検索する」](search-the-audit-log-in-security-and-compliance.md)の「[秘密度ラベル アクティビティ](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)」セクションを参照してください。
 
-この監査情報は [コンテンツ エクスプローラー](data-classification-content-explorer.md) と [アクティビティ エクスプローラー](data-classification-activity-explorer.md) で視覚的に表され、秘密度ラベルの使用方法と、ラベル付けされたコンテンツの場所を理解するのに役立ちます。
+この監査情報は [コンテンツ エクスプローラー](data-classification-content-explorer.md) と [アクティビティ エクスプローラー](data-classification-activity-explorer.md) で視覚的に表され、秘密度ラベルの使用方法と、ラベル付けされたコンテンツの場所を理解するのに役立ちます。 [監査ログ レコードをエクスポートおよび構成](export-view-audit-log-records.md)するときには、セキュリティ情報とイベント管理 (SIEM) ソフトウェアを選択してカスタム レポート を作成することもできます。
 
 ## <a name="end-user-documentation"></a>エンド ユーザー向けのドキュメント
 
