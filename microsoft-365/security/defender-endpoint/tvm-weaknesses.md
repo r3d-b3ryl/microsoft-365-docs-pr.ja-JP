@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ee0e4464383bb634605ab6553485e1a946c003
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 23b0235382e748071f0d8e060e15624b5332326d
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936994"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887308"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織の脆弱性 - 脅威と脆弱性の管理
 
@@ -45,13 +45,13 @@ ms.locfileid: "61936994"
 > 公式の CVE-ID が脆弱性に割り当てられていない場合、脆弱性名は脆弱性の名前によって割り当脅威と脆弱性の管理。
 
 > [!TIP]
-> 新しい脆弱性イベントに関する電子メールを取得するには [、「Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
+> 新しい脆弱性イベントに関する電子メールを取得するには、「 [Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-weaknesses-page"></a>[弱点] ページに移動します。
 
 [弱点] ページにアクセスするには、次に示すいくつかの方法があります。
 
-- [Microsoft 365 Defender ポータル]の [脆弱性管理] ナビゲーション メニューから [弱点] を選択する (portal-overview.md)
+- セキュリティ ポータル **の [** 脆弱性管理] ナビゲーション メニューから [弱点] を [Microsoft 365 Defenderする](portal-overview.md)
 - グローバル検索
 
 ### <a name="navigation-menu"></a>[ナビゲーション] メニュー
@@ -78,7 +78,7 @@ ms.locfileid: "61936994"
 アイコンが赤に色付けされている場合は、[ **脅威** ] 列に関連する侵害と脅威の分析情報を表示します。
 
  > [!NOTE]
- > 継続的な脅威に関連付けられている推奨事項の優先順位を常に設定します。 これらの推奨事項には、脅威の分析情報アイコン赤いバグの簡単 ![ な描画がマークされています。](images/tvm_bug_icon.png) と侵害インサイト アイコン ![ ターゲットに当たる矢印の簡単な描画。 ](images/tvm_alert_icon.png)
+ > 継続的な脅威に関連付けられている推奨事項の優先順位を常に設定します。 これらの推奨事項には、脅威の分析情報アイコン ![赤いバグの簡単な描画がマークされています。](images/tvm_bug_icon.png) と侵害インサイト アイコン ![ターゲットに当たる矢印の簡単な描画.](images/tvm_alert_icon.png)。
 
 侵害の分析情報アイコンは、組織に脆弱性が見つかった場合に強調表示されます。
 ![アイコンの上にカーソルを置くと表示される可能性がある侵害インサイト テキストの例。 この 1 つは、「アクティブなアラートの可能性は、この推奨事項に関連付けられている可能性があります。](images/tvm-breach-insights.png)
@@ -108,7 +108,7 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>ダッシュボードの脆弱なソフトウェアの上位
 
-1. ダッシュボードの [[脅威と脆弱性の管理] に移動](tvm-dashboard-insights.md)し、[脆弱なソフトウェアの上位]**ウィジェットまで下にスクロール** します。 各ソフトウェアで見つかった脆弱性の数と、脅威情報、デバイスの露出の詳細なビューが表示されます。
+1. ダッシュボードに移動 [脅威と脆弱性の管理、](tvm-dashboard-insights.md)脆弱なソフトウェアの **トップ ウィジェットまで下にスクロール** します。 各ソフトウェアで見つかった脆弱性の数と、脅威情報、デバイスの露出の詳細なビューが表示されます。
 
     ![ソフトウェア、弱点、脅威、公開されたデバイスの 4 つの列を持つ、脆弱なソフトウェア カードの上位。](images/tvm-top-vulnerable-software500.png)
 

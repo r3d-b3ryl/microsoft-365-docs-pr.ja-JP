@@ -23,18 +23,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 60d804594b3e4f1daad2ea4813a55205c24a3dac
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: d31fa35ddf84b63a115cf3128673794617fcc730
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172165"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886894"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 このファイルは、ポータル https://security.microsoft.com/securescore のMicrosoft 365 Defender[表示されます](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
+Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 このファイルは、ポータルhttps://security.microsoft.com/securescoreのMicrosoft 365 Defender[があります](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
 セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 組織は、Microsoft 365 Defender ポータルの一元的なダッシュボードから、ユーザー ID、アプリ、デバイスのセキュリティを監視Microsoft 365作業できます。
 
@@ -44,11 +44,14 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 * 検出可能性、可視性、ガイダンス、制御機能を提供して、セキュリティ体制を改善します。  
 * ベンチマークと比較し、主要業績評価指標 (KPI) を確立します。
 
+セキュア スコアの概要については、このビデオをご覧ください。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWUPrP]
+
 指標と傾向の堅牢な視覚化、他の Microsoft 製品との統合、類似組織とのスコア比較などを、組織で利用することができます。 スコアは、サードパーティのソリューションが推奨アクションに対応した場合も反映されます。
 
 ![Secure Score のホームページ。](../../media/secure-score/secure-score-home-page.png)
 
-## <a name="how-it-works"></a>仕組み
+## <a name="how-it-works"></a>メカニズム
 
 次のアクションのポイントが与えられる。
 
@@ -90,7 +93,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 ### <a name="security-defaults"></a>セキュリティの既定値
 
-Microsoft Secure Score では[、Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)でセキュリティの既定値をサポートするように改善アクションが更新され、一般的な攻撃に対して事前に構成されたセキュリティ設定を使用して組織を保護しやすくなっています。
+Microsoft Secure Score では、[Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) でセキュリティの既定値をサポートするように改善アクションが更新され、一般的な攻撃に対して事前に構成されたセキュリティ設定を使用して組織を保護しやすくなっています。
 
 セキュリティの既定値を有効にした場合、次の改善アクションの完全なポイントが与されます。
 

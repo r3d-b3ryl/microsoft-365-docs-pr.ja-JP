@@ -16,12 +16,12 @@ ms.custom: ''
 description: 管理者は、標準ポリシーと厳密なポリシー設定を、Exchange Online Protection (EOP) と Microsoft Defender の保護機能全体に適用する方法をOffice 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c101b63d0d6839ae0406c738268ed653292575f
-ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+ms.openlocfilehash: ff81eea4232693662a907695ea0cef0d94941ac6
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62487457"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887256"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
 
@@ -63,10 +63,7 @@ ms.locfileid: "62487457"
 
   各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
 
-- **組み込みの保護** (Defender for Office 365): リンクと添付ファイルセーフのセーフを有効にするプロファイル。 この設定は、既定のポリシーを持ってセーフリンクと添付ファイルセーフ既定のポリシーを効果的に提供します。
-
-  > [!NOTE]
-  > 組 **み込みの保護の事前** 設定されたセキュリティ ポリシーは現在、すべての組織で利用可能な一般提供中です。
+- **組み込みの保護** (Defender for Office 365): リンクと添付ファイルセーフのセーフを有効にするプロファイル。 このプロファイルは、既定のポリシーを持セーフリンクセーフ添付ファイルの既定のポリシーを効果的に提供します。
 
   組 **み込み保護の** 場合、既定では、すべての Defender で既定でセキュリティ ポリシーがオンOffice 365されます。 お勧めしませんが、ユーザー、グループ、およびドメインに基づいて例外を構成して、保護が特定のユーザーに適用されなくすることもできます。
 

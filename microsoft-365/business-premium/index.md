@@ -25,19 +25,18 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 小規模ビジネスやキャンペーンで、ユーザーと安全に共同作業を行うMicrosoft 365 Business Premium。
-ms.openlocfilehash: 71ef42c8e95ed241a7e1566197f67c1563ec6101
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 7f53ee3df70e2310e7bb83d676fa18b544e3fb31
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766275"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886282"
 ---
 # <a name="microsoft-365-business-premium-overview"></a>Microsoft 365 Business Premium概要
 
 現代の社会において、データと通信を安全に保つことは、とりわけ医療および法務実務、政治キャンペーン、および他の多くの小規模ビジネスの分野において重要な事項です。 小規模ビジネス内で安全に共同作業Microsoft 365 Business Premiumセキュリティ機能を活用します。 このソリューションでは、お客様とお客様のデータを保護するための一連の推奨事項を提供しています。 このライブラリには、ビジネスの種類にかかわらず、推奨される環境をセットアップして使用するためのヘルプが用意されています。
 
-
-![Microsoft 365 Business Premiumツール、コラボレーション ツール、ファイル ストレージ、メール、デバイス、ID を保護します。](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
+:::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium、ファイル ストレージ、メール、デバイス、ID を保護します。":::
 
 この構成には、ビジネスを保護するための生産性、共同作業、ファイル ストレージ、メール、デバイス、および ID に関する以下のガイダンスが含まれています。
 

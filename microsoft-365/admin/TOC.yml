@@ -145,11 +145,11 @@
               href: add-users/remove-former-employee-step-1.md
             - name: 手順 2. 元従業員のメールボックスの内容を保存する
               href: add-users/remove-former-employee-step-2.md
-            - name: 手順 3. 元従業員のメールを別の従業員に転送するか、または元従業員のメールボックスを共有メールボックスに変換する
+            - name: 手順 3. 元従業員のモバイル デバイスをワイプし、ブロックする
               href: add-users/remove-former-employee-step-3.md
-            - name: 手順 4. 別の従業員に OneDrive および Outlook のデータへのアクセスを許可する
+            - name: 手順 4. 元従業員のメールを別の従業員に転送するか、または元従業員のメールボックスを共有メールボックスに変換する
               href: add-users/remove-former-employee-step-4.md
-            - name: 手順 5. 元従業員のモバイル デバイスをワイプし、ブロックする
+            - name: 手順 5.  別の従業員に OneDrive および Outlook データへのアクセスを許可する
               href: add-users/remove-former-employee-step-5.md
             - name: 手順 6. 元従業員から Microsoft 365 ライセンスを削除する
               href: add-users/remove-former-employee-step-6.md

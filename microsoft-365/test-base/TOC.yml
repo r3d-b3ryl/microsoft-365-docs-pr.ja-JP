@@ -8,6 +8,8 @@
   items:
     - name: テストベース アカウントの作成
       href: createAccount.md
+    - name: パッケージのビルド
+      href: buildpackage.md
     - name: パッケージのアップロード
       href: uploadApplication.md
     - name: アップロードバイナリ&依存関係
@@ -36,7 +38,7 @@
       href: cpu.md
     - name: SDK & API
       href: sdkapi.md
-- name: 参照
+- name: 関連情報
   items:
     - name: よく寄せられる質問
       href: faq.md
