@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在宅勤務、在宅勤務、ハイブリッド、リモート ワーカー、ハイブリッド ワーク、リモート従業員、ハイブリッド接続、リモート アクセス、在宅勤務、テレワーク、テレワーク、モバイル ワーク、リモート ジョブ、どこからでも作業、柔軟な職場
 description: ハイブリッド ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
-ms.openlocfilehash: 3eb70d99e44f296144ea9fa9c79ffd41475888ef
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 0370d30584021ab8560a24c7e54e3a7c7aadeb1f
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871913"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886256"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Microsoft 365 を使用したハイブリッドワーク用のインフラストラクチャを設定する
 
@@ -34,7 +34,7 @@ ms.locfileid: "61871913"
 
 - 再配置を望まない、または柔軟な作業環境を必要とする従業員を雇用および維持する。
 - ワーカーの通勤時間を減らして、生産的な時間を確保し、仕事以外でのストレス軽減のための時間を確保する。
-- オフィス スペースの節約。
+- オフィス スペースを節約する。
 
 Microsoft 365 には、ハイブリッド ワーカーがオンサイトまたはリモートで作業できるようにする機能があります。
 

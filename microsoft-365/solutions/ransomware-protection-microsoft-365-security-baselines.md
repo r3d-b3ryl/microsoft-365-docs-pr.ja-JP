@@ -2,7 +2,7 @@
 title: 手順 1. セキュリティ 基準を構成する
 author: JoeDavies-MSFT
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: josephd
 manager: dansimp
 audience: ITPro
@@ -10,15 +10,20 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - Strat_O365_Enterprise
-  - ransomware
-  - m365solution-ransomware
+- M365-security-compliance
+- Strat_O365_Enterprise
+- ransomware
+- m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人間が操作するランサムウェア、人手によるランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: セキュリティ ベースラインを使用して、ランサムウェア攻撃から Microsoft 365 リソースを保護します。
+ms.openlocfilehash: 66218d15a36faa510bd246b46dbc0dcd0f9948fb
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887522"
 ---
-
 # <a name="step-1-configure-security-baselines"></a>手順 1. セキュリティ 基準を構成する
 
 ランサムウェアの攻撃者に対抗する最初の手順として、次の Microsoft 定義のセキュリティ 基準を構成する必要があります。
@@ -52,7 +57,7 @@ description: セキュリティ ベースラインを使用して、ランサム
 
 Exchange メール 基準設定を使用して、テナントに対して電子メール ベースの攻撃の最初のアクセスが起きないように支援します。
 
-- 電子メールMicrosoft Defender ウイルス対策メール スキャンを有効にします。
+- [Microsoft Defender ウイルス対策のメール スキャン](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus)を有効にします。
 - Microsoft Defender for Office 365 を使用して、新しい脅威や多型バリアントに対する [強化されたフィッシング保護](/microsoft-365/security/office-365-security/anti-phishing-protection)とカバレッジを提供します。
 - Office 365 メール フィルター の設定を確認して、スプーフィングされたメール、スパム、マルウェア付きのメールをブロックします。 Microsoft Defender for Office 365 を使用して、新しい脅威や多型バリアントに対する強化されたフィッシング保護とカバレッジを提供します。 Defender for Office 365 を構成して、リンクを [再確認して](/microsoft-365/security/office-365-security/atp-safe-links)をクリックして、配信されたメールの[削除を新しく取得した脅威インテリジェンスに](/microsoft-365/security/office-365-security/zero-hour-auto-purge)応じて行います。
 - EOP および Defender for Office 365 のセキュリティのための [推奨設定を確認し、最新版に更新します](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)。
@@ -62,7 +67,7 @@ Exchange メール 基準設定を使用して、テナントに対して電子�
 
 次に [セキュリティ基準](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)を適用 します。
 
-- Microsoft Windows 10
+- Microsoft Windows 11 または 10
 - Microsoft 365 Apps for Enterprise
 - Microsoft Edge
 

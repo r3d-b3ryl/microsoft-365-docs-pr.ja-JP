@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft エンドポイント マネージャーを使用して、管理デバイス、PC、その他のエンドポイントを管理します。
-ms.openlocfilehash: 3d4a46a3513078b904afbe2b4f09642f338c8a81
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 03d212071db686079a76115d7cb94d2abb4cde88
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939433"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886416"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>手順 4. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 
@@ -30,7 +30,7 @@ ms.locfileid: "61939433"
 
 [Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)は、モバイル デバイス、デスクトップ コンピューター、仮想マシン、組み込みデバイス、およびサーバーを管理できるサービスおよびツールを提供します。これは、すでに使用している可能性のある次のサービスを組み合わせて使用します。
 
-![Microsoft 365 のエンドポイント管理のコンポーネント。](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+:::image type="content" source="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png" alt-text="Microsoft 365 のエンドポイント管理のコンポーネント" lightbox="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png":::
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -38,9 +38,9 @@ Microsoft Intune は、Microsoft 365 に付属しているモバイル デバイ
 
 - **MDM:** 組織所有のデバイスについては、設定、機能、およびセキュリティを含むフル コントロールを行うことができます。 デバイスは、ルールと設定で Intune ポリシーを受信するようにすることで 「登録」 されます。 たとえば、パスワードや PIN の要件を設定したり、VPN 接続を作成したり、脅威の保護を設定したりできます。
 
-- **MAM:** リモート ワーカーは個人のデバイス、いわゆる、「Bring-Your-Own Device (BYOD)」 にフル コントロールが必要でないかもしれません。 ハイブリッド ワーカーに選択肢を提示しながら、組織を保護することができます。 たとえば、ハイブリッド ワーカーが組織のリソースにフル アクセスすることを希望する場合、使用するデバイスを登録することができます。 または、これらのユーザーが電子メールや Microsoft Teams にのみアクセスできるようにする場合は、これらのアプリを使用できるように多要素認証 (MFA) を必要とするアプリ保護ポリシーを使用します。
+- **MAM:** リモート ワーカーは個人のデバイス、いわゆる、「Bring-Your-Own Device (BYOD)」にフル コントロールが必要でないかもしれません。 ハイブリッド ワーカーに選択肢を提示しながら、組織を保護することができます。 たとえば、ハイブリッド ワーカーが組織のリソースにフル アクセスすることを希望する場合、使用するデバイスを登録することができます。 または、これらのユーザーが電子メールや Microsoft Teams にのみアクセスできるようにする場合は、これらのアプリを使用できるように多要素認証 (MFA) を必要とするアプリ保護ポリシーを使用します。
 
-詳細については、「[Intune と Microsoft 365 の基礎ソリューションを使用したエンドポイントの管理](manage-devices-with-intune-overview.md)」を参照してください。
+詳細については、「[Intune を使用したデバイスの管理](manage-devices-with-intune-overview.md)」ファンデーション ソリューションを参照してください。
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
@@ -58,17 +58,9 @@ Configuration Manager は、ネットワークまたはインターネットベ�
 
 ## <a name="endpoint-analytics"></a>エンドポイントの分析
 
-エンドポイント分析は、Configuration Manager と統合し、分析情報とインテリジェンスを提供するクラウドベースのサービスであり、Windows クライアントに関する情報に基づいて意思決定を行うことができます。 組織のデータと、Microsoft クラウド サービスに接続されている他の数百万のデバイスから収集されたデータを組み合わせます。 
+エンドポイント分析は、ユーザー エクスペリエンスに関する分析情報を提供することで、ユーザーの生産性を向上させ、IT サポートのコストを削減することを目的としています。 IT 部門は、この分析情報を使用して、プロアクティブなサポートによりエンド ユーザー エクスペリエンスを最適化したり、構成変更がもたらすユーザーへの影響を評価して、ユーザー エクスペリエンスの低下を検知したりすることができます。
 
-エンドポイント分析を使用すると、次のことができます:
-
-- 組織内で実行されているアプリのインベントリを作成します。
-- 最新の Windows 10 機能更新プログラムの互換性を評価します。
-- 互換性の問題を特定し、クラウドに対応したデータ インサイトに基づいて対策の提案を受け取ります。
-- 最小単位のデバイスでアプリケーションとドライバーの全体を表すパイロット グループを作成します。
-- Windows 10 をパイロットおよび運用管理デバイスに展開します。
-
-詳細については、「[エンドポイント分析の概要](/mem/configmgr/desktop-analytics/overview)」をご覧ください。
+詳細については、「[エンドポイント分析の概要](/mem/analytics/overview)」をご覧ください。
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 

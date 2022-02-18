@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
-ms.openlocfilehash: 36aa96b1355eec41060881da26f7e709a5058898
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 97a0342347d848a27a8402b5b8506536c95c55c9
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190151"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886232"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>手順 5. ハイブリッド ワーカー生産性向上アプリとサービスを展開する
 
@@ -40,7 +40,7 @@ ms.locfileid: "60190151"
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>Microsoft Teams を使用して密接な連携を維持する
 
-Teams を使うことで、チャット、会議、通話、共同作業をすべて 1 つの場所で行えます。 何百万人ものユーザーが毎日 Teams で仕事をこなしています。Teams には、オンサイトまたはリモート ワークに必要なすべてのものが、チームワーク用のハブにまとめられているからです。 
+Teams with Microsoft Teams を使用すると、組織は、チャット、会議、通話、およびコラボレーションをすべて 1 か所で行うことができます。 何百万人ものユーザーが毎日 Teams で仕事をこなしています。Teams には、オンサイトまたはリモート ワークに必要なすべてのものが、チームワーク用のハブにまとめられているからです。 
 
 詳細なガイドについては、「[Microsoft Teams を使用してリモート ワーカーをサポートする](/microsoftteams/support-remote-work-with-teams)」を参照してください。 
 
@@ -48,7 +48,7 @@ Teams をハイブリッド ワークに使用するためのガイダンスと�
 
 ### <a name="chat-and-conversations"></a>チャットと会話
 
-チャットとスレッド形式の会話は、Teams の中核的な機能で、1 対 1 のチャットに加え、グループでのチャットや会話もサポートしています。 リモート ワーカーは、グループ チャットや 1 対 1 のメッセージで、GIF、ステッカー、絵文字を使用して情報、意見、自分らしさを共有できます。
+チャットとスレッド形式の会話は、Teams の中核的な機能で、1 対 1 のチャットに加え、グループでのチャットや会話もサポートしています。 リモート ワーカーは、グループ チャットや 1 対 1 のメッセージで、画像、ステッカー、絵文字を使用して情報、意見、自分らしさを共有できます。
 
 ### <a name="meetings-and-conferencing"></a>ミーティングと会議 
 

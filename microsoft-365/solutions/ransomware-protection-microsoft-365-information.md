@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、脅迫攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: 制御されたフォルダー アクセス、MIP、DLP、および Microsoft Defender for Cloud Apps を使用して、Microsoft 365 の機密データを保護します。
-ms.openlocfilehash: 4d6218ef32b10f99fcd1836444add49a7c4cb40c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e5973373b9a831a8abaf8356866524c6c0639224
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110045"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886992"
 ---
 # <a name="step-5-protect-information"></a>手順 5. 情報を保護する
 
@@ -31,7 +31,7 @@ ms.locfileid: "61110045"
 Microsoft 365 テナントの機密情報をさらに保護するには:
 
 - 機密情報を見つけます。
-- 厳密なアクセス許可を実装し、幅広いアクセスを排除します (書き込み、編集、および削除できるユーザーが多すぎるなど)。
+- 厳密なアクセス許可を実装し、幅広いアクセスを排除します (書き込み、編集、および削除できるユーザーが多すぎるのを防ぎます)。
 - 機密情報を保護します。
 
 >[!Note]
@@ -56,11 +56,11 @@ Microsoft 365 テナントの機密情報をさらに保護するには:
 
    - アクセス権を持つユーザー アカウント
 
-   - アクセス権を持つ各アカウントに許可されるアクション
+   - アクセス権を持つ各アカウントに許可されるアクション 
 
 ## <a name="implement-strict-permissions-for-locations-with-sensitive-information"></a>機密情報を含む場所に対する厳密なアクセス許可の実装
 
-Microsoft 365 テナント内での厳密なアクセス許可の使用は、位置とコミュニケーションの場に対する最小特権の原則です。Microsoft 365 では、通常、OneDrive フォルダー、SharePoint サイトとフォルダー、およびチームです。 
+Microsoft 365 テナント内での厳密なアクセス許可の実装は、位置とコミュニケーションの場に対する最小特権の原則を使用します。Microsoft 365 では、通常、OneDrive フォルダー、SharePoint サイトとフォルダー、およびチームです。 
 
 幅広いアクセス権を持つファイル ストレージの場所やチーム (組織内の全員の既定値など) を作成する方が簡単ですが、機密情報の場合、許可されるユーザー アカウントと許可されるアクションは、コラボレーションとビジネスの要件を満たすために必要な最小のセットに制限する必要があります。
 
@@ -80,7 +80,7 @@ Microsoft 365 テナント内での厳密なアクセス許可の使用は、位
 3. ユーザーの変更管理を実行して、機密情報の将来の場所が作成され、厳格なアクセス許可で維持されるようにします。
 4. 機密情報の場所を監査および監視して、広範なアクセス許可が付与されていないことを確認します。
 
-詳細については、「[Microsoft 365 と Microsoft Teams を使用してセキュリティで保護されたコラボレーションを設定する](setup-secure-collaboration-with-teams.md)」を参照してください。 機密情報に対する厳格なアクセス許可を持つコミュニケーションおよびコラボレーションの場の例は、[セキュリティ分離を備えたチーム](/microsoft-365/solutions/secure-teams-security-isolation)です。
+詳細なガイダンスについては、「[安全なファイル共有と Microsoft Teams とのコラボレーションの設定](setup-secure-collaboration-with-teams.md)」を参照してください。 機密情報に対する厳格なアクセス許可を持つコミュニケーションおよびコラボレーションの場の例は、[セキュリティ分離を備えたチーム](/microsoft-365/solutions/secure-teams-security-isolation)です。
 
 ## <a name="protect-your-sensitive-information"></a>機密情報を保護する
 
@@ -100,13 +100,13 @@ Microsoft 365 テナント内での厳密なアクセス許可の使用は、位
 
 さらに、Microsoft 365 テナントの機密情報を保護するために、ユーザーを次のようにトレーニングします。
 
-- 厳格なアクセス許可 (アクセス用のユーザー アカウントの最小セットとそれぞれに許可されるアクションの最小セット) を使用して、コミュニケーションとコラボレーションの場を作成します。 
+- 厳格なアクセス許可 (アクセス用のユーザー アカウントの最小セットとそれぞれのアカウントに許可されるアクションの最小セット) を使用して、コミュニケーションとコラボレーションの場を作成します。 
 - 機密情報に適切な秘密度ラベルを適用します。
 - 制御されたフォルダー アクセスを使用します。
 
 ## <a name="resulting-configuration"></a>結果の構成
 
-手順 1 - 5 のテナントのランサムウェア防止を次に示します。
+手順 1 から 5 のテナントのランサムウェア保護を次に示します。
 
 ![手順 5 の後の Microsoft 365 テナントのランサムウェア防止](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step5.png)
 
@@ -119,6 +119,7 @@ Microsoft の主な情報:
 - [ランサムウェアや強要から迅速に保護する](/security/compass/protect-against-ransomware)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (10- 19 ページを参照ください)
 - [ランサムウェア: Microsoft 365 Defender ポータルの脅威分析ノードの蔓延する継続的な脅威](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)に関するレポート (これらの「ライセンス要件」 を参照ください)
+- Microsoft 検出対応チーム (DART) ランサムウェアの[アプローチとベスト プラクティス](/security/compass/incident-response-playbook-dart-ransomware-approach)および[ケース スタディ](/security/compass/dart-ransomware-case-study)
 
 Microsoft 365:
 
@@ -128,7 +129,6 @@ Microsoft 365:
 - [ランサムウェアから Windows 10 PC を保護する](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [SharePoint Online でのランサムウェアの処理](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag)ポータルでのランサムウェアの脅威分析レポート
-
 
 Microsoft 365 Defender:
 

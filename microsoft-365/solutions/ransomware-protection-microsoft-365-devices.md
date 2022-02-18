@@ -17,34 +17,34 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人間が操作するランサムウェア、人手によるランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: Windows Intune を MDA および MAM プロバイダーとして使用し、Windows 10 セキュリティ機能を使用して、ランサムウェア攻撃からMicrosoft 365 リソースを保護します。
-ms.openlocfilehash: adbefb7ac8ec574a69bc59a67cab61cc69d00568
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 918dc75d11157bf6358e68a13d04c9a84c0a3837
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702213"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887594"
 ---
-# <a name="step-4-protect-devices"></a>手順 4. デバイスの保護
+# <a name="step-4-protect-devices"></a>手順 4. デバイスを保護する
 
-ランサムウェア攻撃の最初のアクセス部分からデバイスを保護するために
+ランサムウェア攻撃の最初のアクセス部分からデバイス (エンドポイント) を保護するために:
 
 - [Intune](/mem/intune/fundamentals/what-is-intune)を、デバイスのモバイル デバイス管理 (MDM) およびモバイル アプリケーション管理 (MAM) プロバイダーとして展開し、組織所有のデバイスを登録します。
-- ユーザー アカウントの資格情報とデバイスの正常性とコンプライアンスの要件を検証するために[共通 ID およびデバイス アクセス ポリシー](/microsoft-365/security/office-365-security/identity-access-policies)を実装します。
+- ユーザー アカウントの資格情報を検証し、デバイスの正常性とコンプライアンスの要件を適用するために、[共通 ID およびデバイス アクセス ポリシー](/microsoft-365/security/office-365-security/identity-access-policies)を実装します。
 - Microsoft Defender for Endpoint と Microsoft 365 Defender で [ネットワーク保護](/microsoft-365/security/defender-endpoint/network-protection) を有効にします。
 - Microsoft Defender SmartScreen の[サイトとダウンロードのチェック](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) と [アプリとファイルのチェック](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings)を設定して、ブロックまたは警告します。
 - ダウンロードしたファイルと添付ファイルの[Microsoft Defender ウイルス対策スキャン](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus)を有効にします。
 - **リモート デスクトップのセキュリティ レベル** を、Microsoft Defender for Endpoint と Microsoft 365 Defender で **TLS** に設定します。
 
-## <a name="windows-10-devices"></a>Windows 10 デバイス
+## <a name="windows-11-or-10-devices"></a>Windows 11 または 10 デバイス
 
-Windows 10 デバイスからの攻撃の横移動部分から保護するためには:
+Windows 11 または 10 デバイスからの攻撃の横移動部分から保護するためには:
 
 - [Microsoft Defender ファイアウォールを有効にします](https://support.microsoft.com/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f)。
-- [Microsoft Defender ウイルス対策の定義を更新します](/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus)。
+- [Microsoft Defender ウイルス対策の定義を更新します](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus)。
 
 攻撃の影響を軽減するには:
 
-- ランサムウェアに対する[高度な保護](/Microsoft-365/security/defender-endpoint/attack-surface-reduction#use-advanced-protection-against-ransomware)を使用します。
+- [攻撃面の減少ルールとランサムウェアに対する高度な保護](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#use-advanced-protection-against-ransomware)を使用します。
 
 セキュリティ防御を回避する攻撃者から保護するには:
 
@@ -65,13 +65,13 @@ Windows 10 デバイスからの攻撃の横移動部分から保護するため
 
 これらの保護を実装するときは、次の変更管理を実行します。
 
-- [一般的な ID とデバイスのアクセス ポリシー](/microsoft-365/security/office-365-security/identity-access-policies)は、非準拠デバイスを持つユーザーへのアクセスを拒否できます。
+- [一般的なゼロ トラスト ID とデバイスのアクセス ポリシー](/microsoft-365/security/office-365-security/identity-access-policies)は、非準拠デバイスを持つユーザーへのアクセスを拒否できます。
 - ファイルをダウンロードしようとすると、ダウンロード前にユーザーに警告が表示されたり、ブロックされたりする可能性があります。
 - 一部の Office、Excel 4.0、XLM、または VBA マクロは実行されなくなる可能性があります。
 
 ## <a name="resulting-configuration"></a>最終的な構成
 
-手順 1 から 4 のテナントのランサムウェア防止を次に示します。
+手順 1 から 4 のテナントのランサムウェア保護を次に示します。
 
 ![手順 4 の後の、Microsoft 365 テナントのランサムウェア保護](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step4.png)
 
