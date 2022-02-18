@@ -11,12 +11,12 @@ manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e696f1b89cf03bbd4123252ea967e2aca10ef49
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: bf6ead692a82d485f6a8e3b3148bc05484c887a8
+ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879254"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62896017"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Microsoft Managed Desktop での更新プログラムの処理方法
 
@@ -36,9 +36,9 @@ Microsoft Managed Desktop では、4 つのAzure ADグループを使用して�
 
 | Group | 説明 |
 | ------ | ------ |
-| テスト | Microsoft Managed Desktop ポリシーの変更、オペレーティング システムの更新プログラム、機能更新プログラム、および組織 ("tenant") にプッシュされたその他Azure AD検証するために使用されます。 テスト グループは次の場合です。 <ul><li>テストまたは早期フィードバックを提供できるユーザーに最適です。</li><li>確立されたサービス レベル契約およびユーザー サポートから除外されます。</li><li>新しいポリシーまたはオペレーティング システムの変更とアプリケーションの互換性を検証するために使用できます。</li></ul> |
+| テスト | Microsoft Managed Desktop ポリシーの変更、オペレーティング システムの更新プログラム、機能更新プログラム、および組織 ("tenant") にプッシュされたその他Azure AD検証するために使用されます。 テスト グループは次の場合です。 <br><ul><li>テストまたは早期フィードバックを提供できるユーザーに最適です。</li><li>確立されたサービス レベル契約およびユーザー サポートから除外されます。</li><li>新しいポリシーまたはオペレーティング システムの変更とアプリケーションの互換性を検証するために使用できます。</li></ul> |
 | 第 1 | リリース前の更新プログラムの対象となる可能性がある初期のソフトウェア導入者とデバイスが含まれています。 <br><br> テストリングでテスト中にカバーされなかったシナリオがある場合、このグループのデバイスで停止が発生する可能性があります。 |
-| 高速 | 安定性よりも速度を優先します。 Fast グループは次の場合です。 <ul><li>Broad グループに提供される前に品質の問題を検出する場合に役立ちます。</li> <li>検証の次の層で、通常は Test グループと First グループよりも安定しています。</li></ul> |
+| 高速 | 安定性よりも速度を優先します。 Fast グループは次の場合です。 <br><ul><li>Broad グループに提供される前に品質の問題を検出する場合に役立ちます。</li> <li>検証の次の層で、通常は Test グループと First グループよりも安定しています。</li></ul> |
 | 広範な質問 | このグループは、機能と品質の更新プログラムを利用できる最後のグループです。 <br><br> Broad グループには、組織のほとんどのユーザー Azure AD含まれているため、展開の速度に対する安定性が優れています。 アプリのテストは、環境が最も安定性が高いので、このグループで行う必要があります。 |
 
 ### <a name="moving-devices-between-update-groups"></a>更新グループ間でのデバイスの移動

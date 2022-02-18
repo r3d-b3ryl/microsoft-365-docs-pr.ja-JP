@@ -15,14 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b4ae8490fadecf60d4414218f42cac83b9035270
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: d687273a3029f3de080f06f328d4d40853142353
+ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354986"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62896101"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -239,7 +240,7 @@ Windows 7 SP1、Windows 8.1、Windows Server 2008 R2*など、以前のバージ
 
 プロキシの構成が正常に完了したと確認します。 その後、WinHTTP は環境内のプロキシ サーバーを介して検出して通信し、プロキシ サーバーは Defender for Endpoint サービス URL へのトラフィックを許可します。
 
-1. エンドポイント センサー [の Defender が](https://aka.ms/mdeanalyzer) 実行されている PC に Microsoft Defender for Endpoint クライアント アナライザー ツールをダウンロードします。
+1. エンドポイント センサー [の Defender が](https://aka.ms/mdeanalyzer) 実行されている PC に Microsoft Defender for Endpoint クライアント アナライザー ツールをダウンロードします。 ダウンレベル サーバーの場合は、最新のプレビュー エディションを使用して [Microsoft Defender for Endpoint Client Analyzer ツール Beta をダウンロードできます](https://aka.ms/BetaMDEAnalyzer)。
 
 2. デバイス上のMDEClientAnalyzer.zipを抽出します。
 
@@ -253,7 +254,7 @@ Windows 7 SP1、Windows 8.1、Windows Server 2008 R2*など、以前のバージ
     HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
-    *HardDrivePath を* MDEClientAnalyzer ツールがダウンロードされたパスに置き換える。 次に例を示します。
+    *HardDrivePath を* MDEClientAnalyzer ツールがダウンロードされたパスに置き換える。 例:
 
     ```PowerShell
     C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
@@ -263,7 +264,7 @@ Windows 7 SP1、Windows 8.1、Windows Server 2008 R2*など、以前のバージ
 
 6. サーバー *MDEClientAnalyzerResult.txt* 開き、サーバーの検出とサービス URL へのアクセスを有効にするプロキシ構成手順を実行したと確認します。
 
-   このツールは、Defender for Endpoint サービス URL の接続性をチェックします。 Defender for Endpoint クライアントが対話するように構成されていることを確認します。 このツールは、Defender for Endpoint サービスとの通信に使用される可能性 *のある* URL ごとに、MDEClientAnalyzerResult.txtファイルに結果を出力します。 次に例を示します。
+   このツールは、Defender for Endpoint サービス URL の接続性をチェックします。 Defender for Endpoint クライアントが対話するように構成されていることを確認します。 このツールは、Defender for Endpoint サービスとの通信に使用される可能性 *のある* URL ごとに、MDEClientAnalyzerResult.txtファイルに結果を出力します。 例:
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
