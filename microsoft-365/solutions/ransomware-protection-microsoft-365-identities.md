@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人間が操作するランサムウェア、人手によるランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: 安全なサインインと条件付きアクセスを使用して、Microsoft 365 リソースをランサムウェア攻撃から保護します。
-ms.openlocfilehash: 23a9833952aca745e869c13139823b4b0a9400bf
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 57fad156a4e7b97d3029c224059041d692224ed2
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666688"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887400"
 ---
 # <a name="step-3-protect-identities"></a>手順 3. ID を保護する
 
@@ -42,7 +42,7 @@ Azure Active Directory (Azure AD) のユーザー アカウントに[パスワ�
 
 ユーザー サインインの場合、これらのポリシーには次のものが含まれます。
 
-- 優先アカウント (直ちに)、最終的にはすべてのユーザー アカウントに MFA を要求する。
+- [優先度アカウント](/microsoft-365/admin/setup/priority-accounts) (直ちに) および最終的にすべてのユーザー アカウントに多要素 認証 (MFA ) を要求する。
 - MFA を使用するためにリスクの高いサインインを要求する。
 - リスクの高いサインインを持つリスクの高いユーザーにパスワードの変更を要求する。
 
@@ -50,7 +50,7 @@ Azure Active Directory (Azure AD) のユーザー アカウントに[パスワ�
 
 次のベスト プラクティスを使用します。
 
-- 「サインインにパスワードを使用しているユーザー アカウントの[サインイン セキュリティを強化する](#increase-sign-in-security)」で説明されているように、[最小特権](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)の原則を実装し、パスワード保護を使用します。 
+- サインインにパスワードを使用しているユーザー アカウントの「[サインイン セキュリティを強化する](#increase-sign-in-security)」で説明されているように、[最小特権](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)の原則を実装し、パスワード保護を使用します。 
 - ドメイン全体の管理者レベルのサービス アカウントの使用は避けてください。 
 - ローカル管理者特権を制限して、リモート アクセス トロイの木馬(RAT) やその他の不要なアプリケーションのインストールを制限します。
 - 管理ポータルへのアクセスを許可する前に、Azure AD 条件付きアクセスを使用して、ユーザーとワークステーションの信頼を明示的に検証します。 Azure ポータルについては、[この例](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)を参照してください。
@@ -69,7 +69,7 @@ Azure Active Directory (Azure AD) のユーザー アカウントに[パスワ�
 
 ## <a name="resulting-configuration"></a>結果の構成
 
-手順 1 から 3 のテナントのランサムウェア防止を次に示します。
+手順 1 から 3 のテナントのランサムウェア保護を次に示します。
 
 ![手順 3 の後の、Microsoft 365 テナントのランサムウェア防止](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step3.png)
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 のセキュリティ センターとコンプライアンスのサービスを使用して、ハイブリッド ワーカー向けにご使用のアプリケーション、データ、およびデバイスを保護します。
-ms.openlocfilehash: e1a5c277f9b5f06313fc924756dc72dbf47fad78
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7c898a1ef588ce8eee553490eaa8f5dd452df9e0
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934717"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886392"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>手順 3: ハイブリッド ワーカーのためのセキュリティとコンプライアンスの展開
 
@@ -41,7 +41,7 @@ ms.locfileid: "61934717"
 
 ハイブリッド ワーカーにセキュリティとコンプライアンス サービスを提供する Microsoft 365 の機能は次のとおりです。
 
-![これらの Microsoft 365 サービスを使用して、セキュリティによる保護とコンプライアンスを維持します。](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+:::image type="content" source="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png" alt-text="これらの Microsoft 365 サービスを使用して、セキュリティによる保護とコンプライアンスを維持します" lightbox="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png":::
 
 ## <a name="security"></a>セキュリティ
 

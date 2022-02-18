@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 クラウド サービスへのアクセスを最適化しながら、リモート ワーカーがオンプレミスのリソースにアクセスできることを確認します。
-ms.openlocfilehash: de2d8e5e58471ad994c611013e77909ed0ab0542
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 11fb3e37efe67103780fc4d234837da3bc15d97f
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871948"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886302"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>手順 2: オンプレミスのアプリとサービスへのリモート アクセスを提供する
 
@@ -57,7 +57,7 @@ Microsoft 365 トラフィックは、組織を経由して間接的にルーテ
 
 Microsoft 365 クラウドリソースへのアクセスを最適化するには、VPN 接続を介して、**最適化** カテゴリの Microsoft 365 エンドポイントへのトラフィックを除外するようにスプリット トンネリング VPN クライアントを構成します。 詳細については、「[Office 365 エンドポイントのカテゴリ](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)」をご覧ください。 最適化カテゴリのエンドポイントについては、[こちらのリスト](../enterprise/urls-and-ip-address-ranges.md)をご覧ください。
 
-Microsoft 365 クラウド アプリへのほとんどのトラフィックが VPN 接続をバイパスした結果としてのトラフィック フローは、以下のとおりです。
+結果として得られるトラフィック フローを次に示します。このフローでは、Microsoft 365クラウド アプリへのトラフィックのほとんどが VPN 接続をバイパスします。
 
 :::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png" alt-text="トンネリングのある VPN クライアントからのネットワーク トラフィック。" lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png":::
 
