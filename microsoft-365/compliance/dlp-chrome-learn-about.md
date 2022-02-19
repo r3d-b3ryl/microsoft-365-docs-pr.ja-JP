@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension は、ファイル アクティビティの監視と制御、および保護措置を Google Chrome ブラウザーに拡張します。
-ms.openlocfilehash: e41343f14e799f354906361fe88f6a99dba12908
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 15c62369bb8b4fc02926fa0e2b0bfc4834c371ac
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950667"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909709"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>Microsoft Compliance Extension の詳細情報
 
@@ -38,7 +38,7 @@ Microsoft Compliance Extension を使用すると、Windows 10 を実行して�
 
 アクティビティ |説明  | サポート対象のポリシー アクション|
 |---------|---------|---------|
-|ファイルがクラウドにコピーされました  | ユーザーが制限されたサービス ドメインに機密アイテムをアップロードしようとした場合、Chrome ブラウザーを介してアイテムにアクセスしようとした場合に検出します |監査、ブロック|
+|ファイルがクラウドにコピーされました  | ユーザーが制限されたサービス ドメインに機密アイテムをアップロードしようとした場合、Chrome ブラウザーを介してアイテムにアクセスしようとした場合に検出します |上書き、ブロックの監査、ブロック|
 |ファイルが印刷されました  |ユーザーが Chrome ブラウザーで開いている機密性の高いアイテムをローカルまたはネットワークプリンタに印刷しようとした場合に検出します |上書き、ブロックの監査、ブロック|
 |ファイルがクリップボードにコピーされました |ユーザーが Chrome ブラウザーで表示中の機密アイテムから情報をコピーし、他のアプリ、プロセス、またはアイテムに貼り付けようとした場合に検出します。 |上書き、ブロックの監査、ブロック|
 |ファイルがリムーバブル ストレージにコピーされました    | ユーザーが、機密アイテムや Chrome ブラウザーで開いている機密アイテムの情報をリムーバブルメディアや USB デバイスにコピーしようとした場合に検出します |上書き、ブロックの監査、ブロック|

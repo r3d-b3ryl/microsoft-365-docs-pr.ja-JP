@@ -9,23 +9,25 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 959c557501fe1232dd92f9c501f95b2f3faa37bc
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 3682087e47db062240b001e8631f73ae8cbc1cda
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765962"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909689"
 ---
 # <a name="shared-devices"></a>共有デバイス
 
-Microsoft Managed Desktop を使用すると、ユーザーが提供する共有デバイス モードと同様に、デバイスを "共有デバイス モード" で[登録Microsoft Intune](/mem/intune/configuration/shared-user-device-settings)。 このモードのデバイスは、ユーザーが単一のデスクに結び付けず、頻繁にデバイスを変更する状況 (通常は銀行の窓口や看護スタッフなどのフロントラインワーカー) に最適化されています。 このモードでは、Microsoft [Managed Desktop プロファイル](profiles.md) をデバイスに適用できます。 このモードで登録されているデバイスには、いくつかの重要な違いがあります。
+Microsoft Managed Desktop を使用すると、ユーザーが提供する共有デバイス モードと同様に、デバイスを "共有デバイス モード" で[登録Microsoft Intune](/mem/intune/configuration/shared-user-device-settings)。
+
+このモードのデバイスは、ユーザーが単一のデスクに縛られ、頻繁にデバイスを変更する状況に合って最適化されています。 たとえば、銀行の担当者や看護スタッフなどの最前線の労働者。 このモードでは、Microsoft [Managed Desktop プロファイル](profiles.md) をデバイスに適用できます。 このモードで登録されているデバイスには、いくつかの重要な違いがあります。
 
 - [デバイス ストレージ](#device-storage) は、共有ユーザー向けに最適化されています。
 - [非アクティブなアカウント](#deletion-of-inactive-accounts) は削除されます。
 - [ゲスト アカウント](#guest-accounts) は既定ではサポートされていません。
 - [Microsoft 365エンタープライズ ライセンス](#microsoft-365-apps-for-enterprise)用のアプリケーションは、共有デバイス用に最適化されています。
 
-Microsoft Managed Desktop への登録時に共有デバイス モードを使用する選択を行うので、後でこのモードから変更する場合は、登録を取りやめてもう一度登録する必要があります。
+Microsoft Managed Desktop の登録時点で共有デバイス モードを使用する選択を行うので、後でこのモードを変更する場合は、そのデバイスを登録し直して、もう一度登録する必要があります。
 
 ## <a name="when-to-use-shared-device-mode"></a>共有デバイス モードを使用する場合
 
@@ -33,7 +35,7 @@ Microsoft Managed Desktop への登録時に共有デバイス モードを使�
 
 たとえば、銀行の担当者は 1 か所で預金を管理している場合がありますが、住宅ローンを抱える顧客を支援するためにバック オフィスに移動します。 これらの各場所で、デバイスは異なるアプリケーションを実行し、複数のユーザーが使用しますが、それらのタスクに最適化されています。
 
-看護スタッフは通常、患者と対話する間に部屋とオフィスの間を移動します。そのため、オフィスのワークステーションにサインインできますが、リモート デスクトップに接続してメモを取るだけで、別の患者を持つ別の部屋でこれを繰り返す必要があります。
+看護スタッフは、通常、患者と対話する間、部屋とオフィスの間を移動します。 オフィスのワークステーションにサインインできますが、リモート デスクトップに接続してメモを取り、別の患者と別の部屋でこのプロセスを繰り返します。
 
 ## <a name="when-not-to-use-shared-device-mode"></a>共有デバイス モードを使用しない場合
 
@@ -54,11 +56,11 @@ Microsoft Managed Desktop への登録時に共有デバイス モードを使�
 
 パートナーがデバイスを登録する場合は、「デバイスを登録するパートナー [](../get-started/register-devices-partner.md)の手順」の手順に従い、次の表に示すようにグループ タグに **-Shared** を追加します。
 
-|デバイス プロファイル  |グループ タグ (標準モード)  |グループ タグ (共有デバイス モード)  |
-|---------|---------|---------|
-|機密性の高い日付 | Microsoft365Managed_SensitiveData        |  Microsoft365Managed_SensitiveData-Shared       |
-| Power User         | Microsoft365Managed_PowerUser        | サポート対象外        |
-|Standard     | Microsoft365Managed_Standard        | Microsoft365Managed_Standard-Shared  |
+| デバイス プロファイル | Autopilot グループ タグ (標準モード) | グループ タグ (共有デバイス モード) |
+| ----- | ----- | ----- |
+| 機密性の高いデータ | Microsoft365Managed_SensitiveData |  Microsoft365Managed_SensitiveData-Shared |
+| Power User | Microsoft365Managed_PowerUser | サポート対象外 |
+| Standard  | Microsoft365Managed_Standard | Microsoft365Managed_Standard-Shared |
 
 ## <a name="consequences-of-shared-device-mode"></a>共有デバイス モードの結果
 
@@ -89,7 +91,7 @@ Microsoft Managed Desktop では [、SharedPC](/mem/intune/configuration/shared-
 
 ### <a name="apps-and-policies-assigned-to-users"></a>ユーザーに割り当てられたアプリとポリシー
 
-共有デバイスでは、自分で管理しているアプリやポリシーを、ユーザー グループではなくデバイス *グループに割* り当てる必要があります。 これにより、各ユーザーのエクスペリエンスの一貫性が向上します。 例外[はポータル サイト。](#deploying-apps-with-company-portal)
+共有デバイスでは、自分で管理しているアプリやポリシーを、ユーザー グループではなくデバイス グループに割り当てる必要があります。 デバイス グループに割り当てると、各ユーザーのエクスペリエンスの一貫性が向上します。 例外[はポータル サイト。](#deploying-apps-with-company-portal)
 
 ## <a name="limitations-of-shared-device-mode"></a>共有デバイス モードの制限事項
 
@@ -105,17 +107,19 @@ Windows Helloカード エミュレーションを使用してユーザー [PIN]
 
 ### <a name="primary-user"></a>プライマリ ユーザー
 
-各デバイスMicrosoft Intuneプライマリ ユーザーを持ち、デバイスが Autopilot によって設定された場合に割り当てられます。 ただし、デバイスが共有されている場合、Intune ではプライマリ ユーザーを削除する必要があります。
+各Microsoft Intuneにはプライマリ ユーザーが割り当てられます。これは、デバイスが Autopilot によって設定された場合に割り当てられます。 ただし、デバイスが共有されている場合、Intune ではプライマリ ユーザーが削除される必要があります。
 
 > [!IMPORTANT]
 > 共有デバイス モードがパブリック プレビューの場合は、次の手順に従ってプライマリ ユーザーを削除してください。Microsoft エンドポイント マネージャー 管理センターにサインインし、[**DevicesAll**> デバイス] を選択し、デバイスを選択してから、[**PropertiesRemove**>] プライマリ ユーザーを選択し、そこに表示されているユーザーを削除します。
 
 ### <a name="deploying-apps-with-company-portal"></a>アプリを使用してアプリを展開ポータル サイト
 
-一部のアプリは、おそらくすべてのデバイスに存在する必要はないので、ユーザーが必要なアプリのみをインストールする必要がある場合は、アプリをインストール[ポータル サイト。](/mem/intune/user-help/install-apps-cpapp-windows) Microsoft Managed Desktop は、共有ポータル サイトモードのデバイスに対して既定で無効に設定されます。 この機能をポータル サイトする場合は、変更要求を送信できますが[](../working-with-managed-desktop/admin-support.md)、このパブリック プレビューでは、この機能のいくつかの制限に注意する必要があります。
+一部のアプリは、おそらくすべてのデバイスに存在する必要はないので、ユーザーが必要なアプリのみをインストールする必要がある場合は、アプリをインストール[ポータル サイト。](/mem/intune/user-help/install-apps-cpapp-windows)
+
+Microsoft Managed Desktop は、共有ポータル サイトモードのデバイスに対して既定で無効に設定されます。 この設定を有効ポータル サイト場合は、変更要求を[送信できます](../working-with-managed-desktop/admin-support.md)。 ただし、このパブリック プレビューでは、この機能のいくつかの制限に注意する必要があります。
 
 - アプリをユーザーが使用ポータル サイトするには、Intune のそのアプリ[](/mem/intune/apps/apps-deploy)にユーザー グループを割り当て、そのユーザー グループに各ユーザーを追加します。
-- デバイスにプライマリ ユーザー [を設定することはできません](#primary-user)。
+- デバイスにプライマリ ユーザー [を設定できません](#primary-user)。
 - ユーザーがアプリをインストールしたアプリをポータル サイト、そのデバイス上のすべてのユーザーからアプリをアンインストールする必要があります。
 
 > [!CAUTION]
@@ -123,7 +127,7 @@ Windows Helloカード エミュレーションを使用してユーザー [PIN]
 
 ### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>サーバーの再Microsoft 365 Apps for enterprise
 
-パブリック プレビュー中Microsoft 365 Apps再展開する必要がある場合、ユーザーはローカル サポート スタッフに連絡して、そのデバイスでエージェントの昇格と再インストールを要求Microsoft 365 Apps for enterprise必要があります。
+パブリック プレビュー中に、Microsoft 365 Apps再展開する必要がある場合、ユーザーはローカル サポート スタッフに連絡して、エージェントの昇格を要求し、そのデバイスMicrosoft 365 Apps for enterprise再インストールする必要があります。
 
 ### <a name="microsoft-teams"></a>Microsoft Teams
 

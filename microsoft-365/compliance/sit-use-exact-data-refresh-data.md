@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 機密情報ソース テーブル ファイルを更新します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79442356066263485c70bf455af5a6a44a0355d4
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 14ef2997da92e0f902fd757a3cbff2735fdeada5
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903712"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909725"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>機密情報ソース テーブル ファイルと完全一致するデータを更新する 
 
-機密情報データベースは、24 時間ごとに 2 回更新できます。 機密情報のソース テーブルを再表示してアップロードする必要があります。
+機密情報データベースは、24 時間ごとに最大 5 回更新できます。 機密情報のソース テーブルを再表示してアップロードする必要があります。
 
 1. 機密データを Microsoft Excel などのアプリに再エクスポートし、ファイルを .csv、.tsv 形式、またはパイプ (|) で区切られた形式で保存します。 以前にファイルをハッシュしてアップロードした場合と同じファイル名と場所を保持します。 機密データ [をエクスポートして](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) 正しい形式に取得する方法の詳細については、「完全なデータ一致ベースの機密情報の種類のソース データをエクスポートする」を参照してください。
 

@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: 04c56c78ac854141e2e9c6e207745b3722537e74
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7b675db1e17e7b7609a7a0394e2dffc8f2a74887
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938831"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909653"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft Compliance Extension を開始する
 
@@ -278,8 +278,7 @@ Microsoft エンドポイント マネージャーを使用しない場合は、
 
 ### <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
-1. クラウド エグレスに対する上書きのブロックの適用はサポートされていません。
-2. シークレット モードはサポートされていないため、無効にする必要があります。
+1. シークレット モードはサポートされていないため、無効にする必要があります。
 
 ## <a name="next-steps"></a>次の手順
 

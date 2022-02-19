@@ -1,26 +1,31 @@
 ---
 title: トレーニング可能な分類子の詳細
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
-  - m365solution-mip
-  - m365initiative-compliance
+- M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 ms.custom: admindeeplinkMAC
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: トレーニング可能な分類子は、ラベル付けまたはポリシー アプリケーション用にさまざまな種類のコンテンツを認識するために、正のサンプルと負のサンプルを表示できます。
+ms.openlocfilehash: 50d20c3a40b21696c06064b548d7766684fb12a0
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909641"
 ---
-
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 
 コンテンツを適切に保護および処理できるようにコンテンツを分類およびラベル付けすることは、情報保護に対するトレーニングの出発点です。 Microsoft 365 には、コンテンツを分類する 3 つの方法があります。
@@ -70,7 +75,7 @@ Microsoft 365には、複数の事前トレーニング済み分類子が付属�
 > 事前にトレーニングされた [**不快な言葉**] 分類子は、誤検知の数が多いため、廃止予定です。 使用しないでください。現在使用している場合は、ビジネス プロセスを移動する必要があります。 代わりに、**脅威、****冒と** く、ハラスメントの事前トレーニング済みの分類子を使用することをお勧めします。
 
 - **履歴書**: 申請者の個人、教育、専門的な資格、職歴、その他の個人識別情報のテキスト アカウントである docx、.pdf、.rtf、.txt アイテムを検出します。
-- ソース コード: GitHub actionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプトの上位 25 言語で記述された命令とステートメントのセットを検出します。
+- ソース コード: GitHub actionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプトの上位 25 言語で記述された命令とステートメントのセットを検出します。 .msg、.as、.h、.c、.cs、.cc、.cpp、.hpp のコンテンツを検出します。 .cxx、.hh、.c++、.clj、.cljc、.cljs、.coffee、.litcoffee、.go、.hs、.lhs、.java、.jar、.js、.mjs、.lua、.m、.mm、.pl、.pm、.t、.xs、.xs、.php、.phar、.php4.pyc、R、.r、.rda、.RData、.rds、.rb、.scala、.sc、.sh、.swift ファイル。
 
 > [!NOTE]
 > ソース コードは、テキストの大部分がソース コードである場合に検出するトレーニングを受けています。 プレーン テキストと相互に存在するソース コード テキストは検出されません。

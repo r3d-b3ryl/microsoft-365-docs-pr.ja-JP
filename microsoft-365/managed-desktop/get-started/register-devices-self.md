@@ -4,21 +4,26 @@ description: デバイスを自分で登録して、Microsoft Managed Desktop �
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
+ms.openlocfilehash: 8aba31c60d587667c4623d18b2a3d0e389681685
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909737"
 ---
-
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
 Microsoft Managed Desktop は、新しいデバイスを使用したり、既に持っている可能性のあるデバイスを再利用できます。 デバイスを再利用する場合は、デバイスを再イメージ化する必要があります。 Microsoft Managed Desktop にデバイスを登録するには、Microsoft エンドポイント マネージャーできます。
 
 > [!NOTE]
-> パートナーと一緒にデバイスを入手する その場合は、ハードウェア ハッシュの取得について心配する必要はありません。彼らはその世話をします。 パートナーがパートナー センターでユーザーとの関係を[確立します。](https://partner.microsoft.com/dashboard) パートナーは、パートナー センターのヘルプ [で詳細を確認できます](/partner-center/request-a-relationship-with-a-customer)。 この関係が確立されると、パートナーはユーザーに代わってデバイスを登録するだけで、それ以上の操作は必要ありません。 詳細を確認する場合、またはパートナーに質問がある場合は、「デバイスを登録するパートナー向け [手順」を参照してください](register-devices-partner.md)。 デバイスが登録された後、イメージの [確認と](#check-the-image) ユーザーへのデバイスの [配信](#deliver-the-device) を続行できます。
+> パートナーと一緒にデバイスを入手する その場合は、ハードウェア ハッシュの取得について心配する必要はありません。彼らはその世話をします。 パートナーがパートナー センターでユーザーとの関係を[確立します。](https://partner.microsoft.com/dashboard) パートナーは、パートナー センターのヘルプ [で詳細を確認できます](/partner-center/request-a-relationship-with-a-customer)。 <br><br>この関係が確立されると、パートナーはユーザーに代わってデバイスを登録するだけで、それ以上の操作は必要ありません。 詳細を確認する場合、またはパートナーに質問がある場合は、「デバイスを登録するパートナー向け [手順」を参照してください](register-devices-partner.md)。 デバイスが登録された後、イメージの [確認と](#check-the-image) ユーザーへのデバイスの [配信](#deliver-the-device) を続行できます。
 
 ## <a name="prepare-to-register-brand-new-devices"></a>新しいデバイスを登録する準備をする
 
@@ -101,7 +106,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 | 登録保留中 | 登録はまだ完了していません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了できなかった。 詳細については、「デバイス登録の [トラブルシューティング」を参照してください](#troubleshooting-device-registration)。 |
 | ユーザーの準備ができました | 登録が成功しました。 これで、デバイスをユーザーに配信する準備ができました。 Microsoft Managed Desktop では、初回セットアップをガイドしますので、それ以上の準備を行う必要はありません。 |
-| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
+| Active | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
 | 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近 (過去 7 日間) デバイスを使用していない。  |
 
 #### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
