@@ -1,6 +1,6 @@
 ---
 title: パイロット環境で攻撃シミュレーションMicrosoft 365 Defender実行する
-description: アラートとインシデントMicrosoft 365 Defender分析情報の取得、脅威の迅速な修復方法を確認するために、攻撃シミュレーションを実行します。
+description: アラートとインシデントのMicrosoft 365 Defender分析情報を取得し、脅威を迅速に修復する方法を確認するために、攻撃シミュレーションを実行します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b7118d51ce87e26b6752ac767040a26e87464f22
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: a3e1543ed56580983fec5b7eee6366e817d82079
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807478"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904161"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>パイロット環境で攻撃シミュレーションMicrosoft 365 Defender実行する
 
@@ -62,11 +62,11 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 1. シミュレーションの作成
 
-   新しいシミュレーションを作成して送信する方法の手順については、「フィッシング攻撃をシミュレートする [」を参照してください](/microsoft-365/security/office-365-security/attack-simulation-training)。
+   新しいシミュレーションを作成して起動する方法の手順については、「フィッシング攻撃をシミュレートする [」を参照してください](/microsoft-365/security/office-365-security/attack-simulation-training)。
 
 2. ペイロードの作成
 
-   シミュレーション内で使用するペイロードを作成する方法の手順については、「Create [a custom payload for Attack Simulation training」を参照してください](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)。
+   シミュレーション内で使用するペイロードを作成する方法の手順については、「Create [a custom payload for attack Simulation training」を参照してください](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)。
 
 3. 分析情報の取得
 
@@ -83,15 +83,15 @@ Microsoft の Defender for Endpoint シミュレーションを次に示しま�
 - ドキュメントドロップバックドア
 - 自動調査 (バックドア)
 
-Attack IQ と SafeBreach から追加のシミュレーションがあります。 一連のチュートリアルも用意されています。
+サードパーティのソースからの追加のシミュレーションがあります。 一連のチュートリアルも用意されています。
 
 シミュレーションまたはチュートリアルごとに、次の値を使用します。
 
-1. 選択したシミュレーションまたはシナリオで提供されるドキュメントの対応するウォークスルーをダウンロードして読み取る。
+1. 提供されている対応するウォークスルー ドキュメントをダウンロードして読み取る。
 
 2. シミュレーション ファイルをダウンロードします。 テスト デバイスでファイルまたはスクリプトをダウンロードすることもできますが、必須ではありません。
 
-3. ドキュメントの説明に従って、テスト デバイスでシミュレーション ファイルまたはスクリプトを実行します。
+3. ウォークスルー ドキュメントの指示に従って、テスト デバイスでシミュレーション ファイルまたはスクリプトを実行します。
 
  詳細については、「 [Experience Microsoft Defender for Endpoint through simulated attack」を参照してください](/microsoft-365/security/defender-endpoint/attack-simulations)。
 
@@ -322,13 +322,13 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 [インシデント] **ページで** 、[インシデントの管理 **] を選択します**。 状態を [インシデントの **解決] に** 設定し、分類に **対して [True alert** ] を選択し、判定に **対してセキュリティ テスト** を行います。
 
-![[インシデントの管理] パネルを開いたインシデント ページの例を示します。スイッチをクリックしてインシデントを解決できます。](../../media/mtp/fig16.png)
+![インシデントを解決できる [インシデントの管理] パネルを開いたインシデント ページの例。](../../media/mtp/fig16.png)
 
 インシデントが解決すると、関連付けられているすべてのアラートが、Microsoft 365 Defenderポータルと関連するポータルで解決されます。
 
 これにより、インシデント分析、自動調査、インシデント解決のための攻撃シミュレーションがラップされます。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [![インシデントMicrosoft 365 Defender機能を試してみてください。](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png)](eval-defender-investigate-respond-additional.md)
 

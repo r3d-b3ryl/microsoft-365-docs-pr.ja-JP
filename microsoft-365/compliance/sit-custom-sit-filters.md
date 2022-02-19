@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、カスタム機密情報の種類にエンコードできるフィルターの一覧を示します。
-ms.openlocfilehash: e5f3fb99ec4454410c3719dc3d76356e02f03573
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: bcecc13776b20f8b4c61eaf499a99397931fe498
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818230"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903755"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>カスタム機密情報の種類のフィルター リファレンス
 
@@ -343,4 +343,4 @@ Entity + パターンのフィルター
 
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 
-- [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)
+- [機密情報の種類関数](sit-functions.md)

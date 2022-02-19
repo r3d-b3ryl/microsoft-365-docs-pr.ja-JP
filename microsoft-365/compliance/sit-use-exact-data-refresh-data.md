@@ -1,5 +1,5 @@
 ---
-title: 機密情報ソース テーブル ファイルを更新する
+title: 完全なデータ一致情報ソース テーブル ファイルを更新する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,21 +17,21 @@ search.appverid:
 - MET150
 description: 機密情報ソース テーブル ファイルを更新します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fd083b798785f0dbfca8603f8b7bc28fece6004e
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 79442356066263485c70bf455af5a6a44a0355d4
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914849"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903712"
 ---
-# <a name="refresh-your-sensitive-information-source-table-file"></a>機密情報ソース テーブル ファイルを更新する 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>機密情報ソース テーブル ファイルと完全一致するデータを更新する 
 
 機密情報データベースは、24 時間ごとに 2 回更新できます。 機密情報のソース テーブルを再表示してアップロードする必要があります。
 
 1. 機密データを Microsoft Excel などのアプリに再エクスポートし、ファイルを .csv、.tsv 形式、またはパイプ (|) で区切られた形式で保存します。 以前にファイルをハッシュしてアップロードした場合と同じファイル名と場所を保持します。 機密データ [をエクスポートして](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) 正しい形式に取得する方法の詳細については、「完全なデータ一致ベースの機密情報の種類のソース データをエクスポートする」を参照してください。
 
       > [!NOTE]
-      > 機密情報ソース テーブル ファイルの構造 (フィールド名) に変更がない場合は、データを更新するときにデータベース スキーマ ファイルに変更を加える必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。 スキーマを編集 [または削除する](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) 手順については、「完全なデータ一致スキーマを管理する」を参照してください。 「EDM [SIT/rule](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) パッケージを編集または削除する手順については、「機密情報の種類/ルール パッケージと完全に一致するデータを作成する」を参照してください。
+      > 機密情報ソース テーブル ファイルの構造 (フィールド名) に変更がない場合は、データを更新するときにデータベース スキーマ ファイルに変更を加える必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。 スキーマを編集 [または削除する](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) 手順については、「完全なデータ一致スキーマを管理する」を参照してください。 「EDM SIT/rule パッケージを編集または削除する手順については、「機密情報の種類 [/](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) ルール パッケージと完全に一致するデータを作成する」を参照してください。
 
 2. [ハッシュ] の手順を [使用し、](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) 機密情報の種類と完全一致するデータの機密情報ソース テーブルをアップロードして、機密情報テーブルソース ファイルをアップロードします。
 

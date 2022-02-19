@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 723dc6a70d9a8d37ef05cb301c41f0fea3911da9
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: 503ae29fd371948f68b0c25aafe34f02f7bb8f1d
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879146"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903698"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS のエンドポイント向け Microsoft Defender の新機能
 
@@ -39,7 +39,7 @@ Microsoft Defender for Endpoint on iOS では、これらの種類のデバイ�
 
 ## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Microsoft Defender for Endpoint は現在、アプリ ストアの Microsoft Defender です
 
-Microsoft Defender for Endpoint は、アプリ ストア **で Microsoft Defender** として利用できます。 この更新プログラムを使用すると、アプリは米国地域の **コンシューマー向けプレビューとして利用できます**。 仕事用または個人用アカウントでアプリにログインする方法に基づいて、Microsoft Defender for Endpoint の機能、または個人向け Microsoft Defender の機能にアクセスできます。 詳細については、このブログ [を参照してください](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)。
+Microsoft Defender for Endpoint は、アプリ ストア **で Microsoft Defender** として利用できます。 この更新プログラムを使用すると、アプリは米国地域の **コンシューマー向けプレビューとして利用できます**。 仕事用または個人用アカウントでアプリにログインする方法に基づいて、Microsoft Defender for Endpoint の機能、または個人向け Microsoft Defender の機能にアクセスできます。 詳細については、このブログ [を参照してください](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals)。
 
 ## <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8e3d80cf1446541687ee2da1795b37ecf5d71865
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 3854c8891f1cc5175c87b9842d9c30b3164a6f46
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121652"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903636"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>手順 1. 最初のインシデントをトリアージして分析する
 
@@ -44,20 +44,20 @@ ms.locfileid: "61121652"
 
 Microsoft 365 Defender複数の Microsoft セキュリティ プラットフォームからアラートとイベントを検出ソースとして受け取り、悪意のあるアクティビティの全体像とコンテキストを作成します。 次に、検出の可能性があるソースを示します。
 
-- [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)は、Microsoft Defender ウイルス対策とクラウド対応の高度な脅威保護を Microsoft Security Graph を使用するエンドポイント検出および応答ソリューション (EDR) です。 Defender for Endpoint は、予防保護、侵害後の検出、自動調査、および対応のための統合プラットフォームです。 エンドポイントをサイバー脅威から保護し、高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化し、セキュリティの態勢を改善します。
-- [Microsoft Defender for Identity](/defender-for-identity/what-is) は、オンプレミスの Active Directory ドメイン サービス (AD DS) シグナルを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダーアクションを特定、検出、および調査するクラウドベースのセキュリティ ソリューションです。
+- [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) は、Microsoft Defender ウイルス対策とクラウド対応の高度な脅威保護を Microsoft Security Graph を使用するエンドポイント検出および応答ソリューション (EDR) です。 Defender for Endpoint は、予防保護、侵害後の検出、自動調査、および対応のための統合プラットフォームです。 エンドポイントをサイバー脅威から保護し、高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化し、セキュリティの態勢を改善します。
+- [Microsoft Defender for Identity](/defender-for-identity/what-is) は、オンプレミスの Active Directory ドメイン サービス (AD DS) 信号を使用して、組織に向けられた高度な脅威、侵害された ID、悪意のある内部者のアクションを特定、検出、および調査するクラウドベースのセキュリティ ソリューションです。
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) は、エンタープライズ ユーザーと使用するクラウド リソースの間で、ユーザーがどこにいても、使用しているデバイスに関係なく、リアルタイムでアクセスを仲介するゲートキーパーとして機能します。
 - [Microsoft Defender for Office 365](../office-365-security/overview.md)メール メッセージ、リンク (URL)、およびコラボレーション ツールにおける悪意のある脅威から組織を保護します。
 - [Azure Security Center](/azure/security-center/security-center-introduction) は、データ センターのセキュリティ体制を強化し、クラウドとオンプレミスのハイブリッド ワークロード全体で高度な脅威保護を提供する統合インフラストラクチャ セキュリティ管理システムです。
 
 
-この[Microsoft 365 Defender、インシデント](incidents-overview.md)は、これらの異なる検出ソースからのアラートを関連付けによって識別されます。 リソースを一緒に文字列化したり、複数のアラートをそれぞれのインシデントに区別したりするのではなく、Microsoft 365 Defenderから開始できます。 これにより、エンドポイント、ID、電子メール、アプリケーション間で効率的にインシデントをトリアージし、攻撃による被害を軽減できます。
+このMicrosoft 365 Defender[、インシデントは](incidents-overview.md)、これらの異なる検出ソースからのアラートを関連付けによって識別されます。 リソースを一緒に文字列化したり、複数のアラートをそれぞれのインシデントに区別したりするのではなく、Microsoft 365 Defenderから開始できます。 これにより、エンドポイント、ID、電子メール、アプリケーション間で効率的にインシデントをトリアージし、攻撃による被害を軽減できます。
 
 ## <a name="triage-your-incidents"></a>インシデントのトリアージ
 
 組織の推奨Microsoft 365 Defender方法を使用してインシデントの一覧をトリアージすると、インシデント対応が開始されます。 トリアージとは、インシデントに重要度または緊急度のレベルを割り当て、インシデントを調査する順序を決定します。
 
-優先度を設定するインシデントを決定するための便利なサンプル ガイドMicrosoft 365 Defender、重大度 + 影響 =*優先度という数式で要約できます*。
+優先度を設定するインシデントを決定するための便利なサンプル ガイドMicrosoft 365 Defender、重大度 *+ 影響 = 優先度という数式で要約できます*。
 
 - **重大度は**、セキュリティ コンポーネントとその統合Microsoft 365 Defenderによって指定されるレベルです。
 - **影響** は組織によって決定され、一般に、影響を受けるユーザー、デバイス、影響を受けるサービス (またはその組み合わせ)、およびアラートの種類のしきい値数が含まれますが、これらに限定されません。
@@ -66,7 +66,7 @@ Microsoft 365 Defender複数の Microsoft セキュリティ プラットフォ�
 
 インシデントの事前設定は、組織によって異なる場合があります。 NIST では、インシデントの機能的および情報的な影響、および回復可能性も考慮する必要があります。
 
-次に示すのは、トリアージに対する 1 つの方法です。
+次に示すのは、考慮すべきトリアージの 1 つの方法です。
 
 1. インシデント ページに [移動してトリ](incidents-overview.md) アージを開始します。 ここでは、組織に影響を与えるインシデントの一覧を確認できます。 既定では、最新のインシデントから最も古いインシデントに配置されます。 ここから、インシデントごとに異なる列が表示され、重大度、カテゴリ、アクティブなアラートの数、影響を受けたエンティティなどが表示されます。 列のセットをカスタマイズし、列名を選択して、一部の列でインシデント キューを並べ替えできます。 必要に応じてインシデント キューをフィルター処理することもできます。 使用可能なフィルターの完全な一覧については、「インシデントの優先順位 [付け」を参照してください](incident-queue.md#available-filters)。
 
@@ -80,7 +80,7 @@ Microsoft 365 Defender複数の Microsoft セキュリティ プラットフォ�
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="インシデント側ウィンドウの例。":::
 
-   たとえば、攻撃者がインシデントのカテゴリに基づいて使用した [MITRE ATT&CK](https://attack.mitre.org/) の戦術を見て、攻撃者が盗まれた資格情報を使用し、コマンドと制御を確立し、横方向の動きを実行し、一部のデータを削除したため、このインシデントの優先順位を付けることができます。 これは、攻撃者が既にネットワークに深く入り込み、機密情報を盗まれた可能性を示唆しています。
+   たとえば、攻撃者がインシデントのカテゴリに基づいて使用した [MITRE ATT&CK](https://attack.mitre.org/) の戦術を確認すると、攻撃者が盗まれた資格情報を使用し、コマンドと制御を確立し、横方向の動きを実行し、一部のデータを引き出したため、このインシデントの優先順位を設定できます。 これは、攻撃者が既にネットワークに深く入り込み、機密情報を盗まれた可能性を示唆しています。
 
    さらに、組織がゼロトラスト フレームワークを実装している場合は、資格情報アクセスを優先順位付けする価値のある重要なセキュリティ違反と見なします。
 
@@ -96,19 +96,19 @@ Microsoft 365 Defender複数の Microsoft セキュリティ プラットフォ�
 
 ## <a name="analyze-your-first-incident"></a>最初のインシデントを分析する
 
-アラートを取り巻くコンテキストを理解するのも同様に重要です。 多くの場合、アラートは 1 つの独立したイベントではありません。 同時に発生していない可能性があるプロセス、コマンド、およびアクションのチェーンがあります。 そのため、アナリストは、アラートのコンテキストを理解するために、デバイスのタイムラインで不審なエンティティの最初と最後のアクティビティを探す必要があります。
+アラートを取り巻くコンテキストを理解するのも同様に重要です。 多くの場合、アラートは 1 つの独立したイベントではありません。 同時に発生していない可能性があるプロセス、コマンド、およびアクションのチェーンがあります。 したがって、警告のコンテキストを理解するには、デバイスのタイムラインで不審なエンティティの最初と最後のアクティビティを探す必要があります。
 
-データの読み取りおよび分析には、Microsoft 365 Defender方法が複数ありますが、アナリストの最後の目標は、インシデントに可能な限り迅速に対応することです。 このMicrosoft 365 Defender業界をリードする自動調査と対応機能を通じて、平均修復時間[(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)を大幅に短縮することができますが、手動分析が必要な場合は常に存在します。 [](m365d-autoir.md)
+データの読み取りおよび分析には、Microsoft 365 Defender方法が複数ありますが、アナリストの最後の目標は、インシデントに可能な限り迅速に対応することです。 業界Microsoft 365 Defenderの自動調査と対応機能を通じて、平均修復時間 [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) を大幅に[](m365d-autoir.md)短縮することができますが、手動分析が必要な場合は常に存在します。
 
-次に例を示します。
+次に例を示します:
 
-1. トリアージの優先度が決定された後、アナリストはインシデント名を選択して詳細な分析を開始します。 このページには、 **分析を支援** するタブにデータが表示されるインシデントの概要が表示されます。 [アラート **] タブ** の下に、アラートの種類が表示されます。 アナリストは、各アラートをクリックして、それぞれの検出ソースをドリルダウンできます。
+1. トリアージの優先度が決定したら、インシデント名を選択して詳細な分析を開始できます。 このページには、 **分析を支援** するタブにデータが表示されるインシデントの概要が表示されます。 [アラート **] タブ** の下に、アラートの種類が表示されます。 アナリストは、各アラートをクリックして、それぞれの検出ソースをドリルダウンできます。
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="インシデントの [概要] タブの例。":::
 
-    各検出ソースがカバーするドメインに関するクイック ガイドについては、この記事の [「Detect」](#detection-by-microsoft-365-defender) セクションを参照してください。
+    各検出ソースがカバーするドメインに関するクイック ガイドについては、この記事の [「Detect](#detection-by-microsoft-365-defender) 」セクションを参照してください。
 
-2. [アラート **] タブ** から、アナリストは検出ソースにピボットして、より詳細な調査と分析を実行できます。 たとえば、検出元がアナリストに対応するアラート ページに移動する場合に、[Microsoft Defender for Cloud Apps でマルウェア検出] を選択します。
+2. [アラート **] タブ** から検出ソースにピボットして、より詳細な調査と分析を実行できます。 たとえば、検出元がアナリストに対応するアラート ページに移動する場合に、[Microsoft Defender for Cloud Apps でマルウェア検出] を選択します。
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="インシデントのアラートを選択する例。":::
 
@@ -118,15 +118,15 @@ Microsoft 365 Defender複数の Microsoft セキュリティ プラットフォ�
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="ユーザー ページの例。":::
 
-4. ユーザー ページには *、TOR* ネットワーク IP アドレスアラートからの危険なサインインから始まるイベントの時系列リストがあります。 アクティビティの疑いは、組織がビジネスを行う方法の性質によって異なりますが、ほとんどの場合、ユーザーが匿名で Web を閲覧できるネットワークである Onion Router (TOR) を企業環境で使用すると、通常のオンライン操作では非常に可能性が低く、不要と見なされる可能性があります。
+4. ユーザー ページには、 *TOR ネットワーク IP* アドレスアラートからの危険なサインインから始まるイベントの時系列リストがあります。 アクティビティの疑いは、組織がビジネスを行う方法の性質によって異なりますが、ほとんどの場合、ユーザーが匿名で Web を閲覧できるネットワークである Onion Router (TOR) を企業環境で使用すると、通常のオンライン操作では非常に可能性が低く、不要と見なされる可能性があります。
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="ユーザーのイベントの時系列リストの例。":::
 
-5. 各アラートを選択して、アクティビティの詳細を取得できます。 たとえば、[Tor **IP アドレス** ] アラートから [アクティビティ] を選択すると、そのアラートの独自のページに移動します。 Annette は、Office 365管理者であり、特権が昇格され、ソース インシデントが機密情報へのアクセスにつながった可能性があります。
+5. 各アラートを選択して、アクティビティの詳細を取得できます。 たとえば、[ **Tor IP アドレス] アラートから [** アクティビティ] を選択すると、そのアラートの独自のページに移動します。 Annette は、Office 365管理者であり、特権が昇格され、ソース インシデントが機密情報へのアクセスにつながった可能性があります。
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Microsoft Defender for Cloud Apps のアラートの詳細の例です。":::
 
-6. 他のアラートを選択すると、アナリストは攻撃の完全な画像を取得できます。
+6. 他のアラートを選択すると、攻撃の完全な画像を取得できます。
 
 ## <a name="next-step"></a>次の手順
 

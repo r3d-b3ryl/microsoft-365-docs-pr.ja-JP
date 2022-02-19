@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: この記事では、機密情報の種類の概要と、機密情報 (社会保障、クレジット カード、銀行口座番号など) を検出して機密情報を識別する方法について説明します。
-ms.openlocfilehash: 920934e8961110aae3333a30979878483cac51b3
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 6bc15ae90d591e2f2c4e432dce025201c9f13c18
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265495"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903789"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
@@ -31,7 +31,9 @@ ms.locfileid: "62265495"
 - 機密情報の種類などの自動パターン認識
 - [機械学習](classifier-learn-about.md)
 
-機密情報の種類は、パターン ベースの分類子です。 機密アイテムを識別するために、社会保障、クレジット カード、銀行口座番号などの機密情報を検出する場合は、「機密情報の種類エンティティ定義」 [を参照してください。](sensitive-information-type-entity-definitions.md)
+機密情報の種類 (SIT) は、パターン ベースの分類子です。 機密アイテムを識別するために、社会保障、クレジット カード、銀行口座番号などの機密情報を検出します。すべての SIT の完全な一覧については、「機密情報の種類エンティティ定義」を参照してください。[](sensitive-information-type-entity-definitions.md)
+
+Microsoft は多数の事前構成済み SIT を提供しているか、独自に作成できます。
 
 ## <a name="sensitive-information-types-are-used-in"></a>機密情報の種類は、
 
@@ -44,6 +46,32 @@ ms.locfileid: "62265495"
 - [自動ラベル付けポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
 
+## <a name="categories-of-sensitive-information-types"></a>機密情報の種類のカテゴリ
+
+### <a name="built-in-sensitive-information-types"></a>機密情報の種類が組み込み
+
+これらの SIT は、既定でコンプライアンス コンソールに表示される Microsoft によって作成されます。 これらの SIT は編集できませんが、テンプレートとして使用したり、カスタムの機密情報の種類を作成するためにコピーすることができます。
+
+### <a name="named-entity-sensitive-information-types"></a>名前付きエンティティの機密情報の種類
+
+名前付きエンティティの ST も既定でコンプライアンス コンソールに表示されます。 ユーザー名、物理的な住所、および医療に関する条件を検出します。 編集またはコピーすることはできません。 詳細については、「 [名前付きエンティティ (プレビュー)](named-entities-learn.md#learn-about-named-entities-preview) について」を参照してください。 名前付きエンティティの ST には、次の 2 種類があります。
+
+**un-bundled**
+
+これらの名前付きエンティティの T は、単一の国や単一のクラスの用語など、より狭いフォーカスを持っています。 検出範囲が狭い DLP ポリシーが必要な場合は、それらを使用します。 「名前付 [きエンティティの SIT の例」を参照してください](named-entities-learn.md#examples-of-named-entity-sits)。
+
+**バンドル**
+
+バンドルされた名前付きエンティティの ST は、すべての物理アドレスなど、クラス内のすべての可能な一致を検出します。 機密性の高いアイテムを検出するために、DLP ポリシーの広範な条件として使用します。 「名前付 [きエンティティの SIT の例」を参照してください](named-entities-learn.md#examples-of-named-entity-sits)。
+
+### <a name="custom-sensitive-information-types"></a>カスタムの機密情報の種類
+
+事前に構成された機密情報の種類がニーズを満たしない場合は、完全に定義する独自のカスタム機密情報の種類を作成するか、組み込みの機密情報の 1 つをコピーして変更できます。 詳細については、「 [コンプライアンス センターでカスタム機密情報の種類を作成する」](create-a-custom-sensitive-information-type.md) を参照してください。
+
+### <a name="exact-data-match-sensitive-information-types"></a>正確なデータ一致の機密情報の種類
+
+すべての EDM ベースの SIT はゼロから作成されます。 機密情報のデータベースで定義した正確な値を持つアイテムを検出するために使用します。 詳細については、「 [完全なデータ一致ベースの機密情報の種類について](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) 」を参照してください。
+
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>機密情報の種類の基本的な部分
 
 すべての機密情報の種類エンティティは、次のフィールドで定義されます。
@@ -51,7 +79,7 @@ ms.locfileid: "62265495"
 - name: 機密情報の種類の参照方法
 - description: 機密情報の種類が何を探しているのかを説明します。
 - pattern: パターンは、機密情報の種類が検出する情報を定義します。 これは、次のコンポーネントで構成されます。
-    - Primary 要素 – 機密情報の種類が探している主な要素。 これは、チェックサム検証 **、** キーワード リスト、キーワード 辞書、または関数を含む正規表現と指定 **できます**。
+    - Primary 要素 – 機密情報の種類が探している主な要素。 チェックサムの検証、キーワード **リスト**、キーワード 辞書、または関数を含む正規表現を指定 **できます**。
     - サポート要素 – 一致の信頼度を高めるのに役立つ証拠として機能する要素。 たとえば、SSN 番号に近接するキーワード "SSN" です。 これは、チェックサム検証、キーワード リスト、キーワード 辞書の付いた正規表現と指定できます。
     - 信頼度レベル - 信頼度レベル (高、中、低) は、主要素と共に検出された証拠の量を反映します。 アイテムに含まれる証拠が多いほど、一致するアイテムに探している機密情報が含まれているという信頼性が高くなります。
     - 近接 – プライマリ要素とサポート要素の間の文字数。
@@ -62,6 +90,8 @@ ms.locfileid: "62265495"
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
+
+
 
 ### <a name="example-sensitive-information-type"></a>機密情報の種類の例
 
@@ -83,7 +113,7 @@ ms.locfileid: "62265495"
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -121,8 +151,8 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 高信頼度は、最も少ない誤検知を返しますが、より多くの誤検知が発生する可能性があります。 低または中程度の信頼度は、より多くの誤検知を返しますが、偽陰性を返す値は少なから 0 です。
 
-- **低信頼**: 一致するアイテムには、最も少ない誤検知が含まれますが、最も誤検知が発生します。 低信頼度は、すべての低、中、および高信頼度の一致を返します。 低信頼度の値は 65 です。
-- **中程度の** 信頼度 : 一致するアイテムには、平均的な量の誤検知と誤検知が含まれます。 中程度の信頼度は、すべての中程度と高信頼度の一致を返します。 中信頼度の値は 75 です。
+- **信頼度** が低い: 一致したアイテムには、最も少ない偽陰性が含まれますが、最も誤検知が発生します。 低信頼度は、すべての低、中、および高信頼度の一致を返します。 低信頼度の値は 65 です。
+- **中程度の** 信頼度: 一致するアイテムには、平均的な量の誤検知と誤検知が含まれます。 中程度の信頼度は、すべての中程度と高信頼度の一致を返します。 中信頼度の値は 75 です。
 - **高信頼**: 一致したアイテムには、最も少ない誤検知が含まれますが、最も誤った負の値が含まれます。 高信頼度は、高信頼度の一致のみを返し、値が 85 です。  
 
 高信頼度レベルのパターンは、5 ~ 10 と低い信頼度パターンと、20 以上の高信頼度パターンを使用する必要があります。
@@ -172,6 +202,6 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
 - [PowerShell でカスタム機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
-機密情報の種類を使用してデータプライバシー規制に準拠する方法については、「データ[](../solutions/information-protection-deploy.md)プライバシー規制に関する情報保護を展開する (Microsoft 365 (aka.ms/m365dataprivacy)」を参照してください。
+機密情報の種類を使用してデータプライバシー規制に準拠する方法については、「データプライバシー規制に関する情報保護を展開する ([Microsoft 365 (aka.ms/m365dataprivacy](../solutions/information-protection-deploy.md))」を参照してください。
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

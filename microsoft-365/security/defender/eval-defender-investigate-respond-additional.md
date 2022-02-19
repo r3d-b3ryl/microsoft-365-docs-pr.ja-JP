@@ -23,33 +23,33 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c9f1a4c051aaf9cb542e73a7cf077c7ed1038411
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 362e8360900f53d7bfc9eccf12d1107091860cb9
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171121"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903624"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>パイロットMicrosoft 365 Defenderインシデント対応機能を試す
 
 **適用対象:**
 - Microsoft 365 Defender
 
-この記事は[、パイロット環境を使用](eval-defender-investigate-respond.md)してインシデントの調査と対応を実行するプロセスの手順 2 Microsoft 365 Defenderです。 このプロセスの詳細については、概要の記事を [参照](eval-defender-investigate-respond.md) してください。
+この記事は[、パイロット環境](eval-defender-investigate-respond.md)を使用してインシデントの調査と応答を実行するプロセスの手順 2 Microsoft 365 Defenderです。 このプロセスの詳細については、概要の記事を [参照](eval-defender-investigate-respond.md) してください。
 
-シミュレートされた攻撃[に対して](eval-defender-investigate-respond-simulate-attack.md)インシデント対応を実行したら、次のMicrosoft 365 Defenderを確認できます。
+シミュレートされた攻撃に対[してインシデント対応](eval-defender-investigate-respond-simulate-attack.md)を実行したら、次のMicrosoft 365 Defenderを確認できます。
 
 |機能 |説明 |
 |:-------|:-----|
-| [インシデントの優先度設定](#prioritize-incidents) | 次に対処するインシデントを決定するには、インシデント キューのフィルター処理と並べ替えを使用します。 |
+| [インシデントの優先順位付け](#prioritize-incidents) | 次に対処するインシデントを決定するには、インシデント キューのフィルター処理と並べ替えを使用します。 |
 | [インシデントの管理](#manage-incidents) | インシデント のプロパティを変更して、正しい割り当てを確認し、タグとコメントを追加し、インシデントを解決します。 |
-| [自動調査および対応](#examine-automated-investigation-and-response-with-the-action-center) | セキュリティ運用チームが脅威に効率的かつ効果的に対処するのに役立つ、自動調査と応答 (AIR) 機能。 アクション センターは、保留中の修復アクションの承認など、インシデントタスクおよびアラート タスクの "単一ウィンドウ" エクスペリエンスです。 |
-| [高度な追求](#advanced-hunting) | ネットワーク内のイベントを積極的に検査し、脅威インジケーターとエンティティを見つけ出すクエリ ベースの脅威検出ツール。 また、インシデントの調査と修復中に高度な検索を使用します。 |
+| [自動調査および対応](#examine-automated-investigation-and-response-with-the-action-center) | 自動調査と応答 (AIR) 機能を使用して、セキュリティ運用チームが脅威に効率的かつ効果的に対処するのに役立ちます。 アクション センターは、保留中の修復アクションの承認など、インシデントタスクおよびアラート タスクの "単一ウィンドウ" エクスペリエンスです。 |
+| [高度な追求](#use-advanced-hunting) | クエリを使用して、ネットワーク内のイベントを積極的に検査し、脅威インジケーターとエンティティを見つける。 また、インシデントの調査と修復中に高度な検索を使用します。 |
 
 
 ## <a name="prioritize-incidents"></a>インシデントの優先度を設定する
 
-インシデント ポータルのクイック 起動でインシデント &**アラート**>インシデント キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。 次に例を示します。
+インシデント ポータルのクイック 起動時に、インシデント &アラート **>** インシデント キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。":::
 
@@ -57,11 +57,11 @@ ms.locfileid: "62171121"
 
 インシデントの一覧を確認し、割り当てと調査の重要度を優先するには、次の方法を実行できます。 
 
-- カスタマイズ可能な列 ([列の **選択**] を選択) を構成して、インシデントまたは影響を受けたエンティティの異なる特性を可視化します。 これにより、分析のためのインシデントの事前設定に関する情報に基づいた意思決定を行う際に役立ちます。
+- カスタマイズ可能な列 ([列の **選択**] を選択) を構成して、インシデントまたは影響を受けたエンティティの異なる特性を表示します。 これにより、分析のためのインシデントの事前設定に関する情報に基づいた意思決定を行う際に役立ちます。
 
 - 特定のシナリオまたは脅威に焦点を当てるには、フィルターを使用します。 インシデント キューにフィルターを適用すると、すぐに注意が必要なインシデントを特定できます。 
 
-既定のインシデント キューから、[フィルター] を **選択して**[フィルター] ウィンドウを表示し、そこから特定のインシデント のセットを指定できます。 次に例を示します。
+既定のインシデント キューから、[フィルター] **を選択して** [フィルター] ウィンドウを表示し、そこから特定のインシデント のセットを指定できます。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="インシデント キューのフィルター ウィンドウの例。":::
 
@@ -88,7 +88,7 @@ ms.locfileid: "62171121"
 
   セキュリティ チームがインシデントを分類するために使用するタグを追加します。これは後でフィルター処理できます。
   
-- インシデントを自分に割り当てる
+- インシデントの割り当て
 
   ユーザー アカウント名に割り当て、後でフィルター処理できます。
   
@@ -108,7 +108,7 @@ ms.locfileid: "62171121"
 
 ## <a name="examine-automated-investigation-and-response-with-the-action-center"></a>アクション センターで自動調査と対応を確認する
 
-組織の自動調査および対応機能の構成方法に応じて、修復アクションは自動的に実行するか、セキュリティ運用チームによる承認を受けた場合にのみ実行されます。 保留中か完了かに関係ないすべてのアクションは、デバイスの保留中および完了[](m365d-action-center.md)済み修復アクション、電子メール & コラボレーション コンテンツ、および ID を 1 つの場所に一覧表示するアクション センターに一覧表示されます。
+組織の自動調査および対応機能の構成方法に応じて、修復アクションは自動的に実行するか、セキュリティ運用チームによる承認を受けた場合にのみ実行されます。 保留中か完了かに関係ないすべてのアクションがアクション センターに表示され、[](m365d-action-center.md)デバイスの保留中の修復アクションと完了済み修復アクション、メール & コラボレーション コンテンツ、および ID が 1 つの場所に一覧表示されます。
 
 次に例を示します。
 
@@ -120,9 +120,9 @@ ms.locfileid: "62171121"
 
 保留中のアクションをできるだけ早く承認 (または拒否) して、自動化された調査を実行し、時間に合った方法で完了できます。
 
-詳細については、「自動調査と [対応と](m365d-autoir.md) アクション センター」 [を参照してください](m365d-action-center.md)。
+詳細については、「自動調査 [と対応と](m365d-autoir.md) アクション センター」 [を参照してください](m365d-action-center.md)。
 
-## <a name="advanced-hunting"></a>高度な追及
+## <a name="use-advanced-hunting"></a>高度な検索を使用する
 
 > [!NOTE]
 > 高度な狩猟シミュレーションについて説明する前に、次のビデオを見て、高度な狩猟の概念を理解し、ポータルで検索できる場所を確認し、セキュリティ操作でどのように役立つのかをご確認ください。
@@ -134,14 +134,14 @@ ms.locfileid: "62171121"
 
 オプションのファイルレス [PowerShell](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) 攻撃シミュレーションが、既に資格情報アクセス ステージに達した実際の攻撃である場合は、調査の任意の時点で高度な検索を使用して、生成されたアラートと影響を受けるエンティティから既に知っている情報を使用して、ネットワーク内のイベントやレコードを積極的に検索できます。 
 
-たとえば、User and IP [address reconnaissance (SMB)](eval-defender-investigate-respond-simulate-attack.md#alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity)アラートの情報に基づいて、テーブルを使用してすべての SMB セッション列挙イベントを検索したり、テーブルを使用して Microsoft Defender for Identity データのさまざまなプロトコルで検出アクティビティを見つけたりできます。 `IdentityDirectoryEvents` `IdentityQueryEvents`
+たとえば、User and [IP address reconnaissance (SMB)](eval-defender-investigate-respond-simulate-attack.md#alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity) `IdentityDirectoryEvents` アラートの情報に基づいて、テーブルを使用してすべての SMB セッション列挙イベントを検索したり、テーブルを使用して Microsoft Defender for Identity `IdentityQueryEvents` データのさまざまなプロトコルで検出アクティビティを見つけたりできます。
 
 
 ### <a name="hunting-environment-requirements"></a>ハンティング環境の要件
 
 このシミュレーションには、内部メールボックスとデバイスが 1 つ必要です。 テスト メッセージを送信するには、外部メール アカウントも必要です。
 
-1. テナントが有効[になっているMicrosoft 365 Defender。](m365d-enable.md#confirm-that-the-service-is-on)
+1. テナントが有効になっているか確認[Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on)。
 2. 電子メールの受信に使用するターゲット メールボックスを特定します。
 
    - このメールボックスは、Microsoft Defender によって監視されている必要Office 365
@@ -150,17 +150,17 @@ ms.locfileid: "62171121"
 
 3. テスト デバイスを構成します。
 
-    a. バージョン 1903 以降Windows 10を使用してください。
+    a.  バージョン 1903 以降Windows 10を使用してください。
 
     b. テスト デバイスをテスト ドメインに参加します。
 
-    c. [[オンにする] をWindows Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)します。 問題が発生した場合は、このトラブルシューティング Windows Defender ウイルス対策を[参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
+    c. [[オン] をWindows Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)。 問題が発生した場合は、このWindows Defender ウイルス対策を[参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
-    d. [エンドポイント用 Microsoft Defender にオンボードします](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
+    d. [Microsoft Defender for Endpoint にオンボードします](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 ### <a name="run-the-simulation"></a>シミュレーションを実行する
 
-1. 外部メール アカウントから、ハンティング環境の要件セクションの手順 2 で識別されたメールボックスに電子メールを送信します。 既存の電子メール フィルター ポリシーで許可される添付ファイルを含める。 このファイルは、悪意のあるファイルや実行可能ファイルである必要があります。 推奨されるファイルの種類は<i>、.pdf、.exe</i><i>場合</i>)、または Word ファイルなどのOfficeドキュメントの種類です。
+1. 外部メール アカウントから、ハンティング環境の要件セクションの手順 2 で識別されたメールボックスに電子メールを送信します。 既存の電子メール フィルター ポリシーで許可される添付ファイルを含める。 このファイルは、悪意のあるファイルや実行可能ファイルである必要があります。 推奨されるファイルの種類は<i>.pdf</i><i> 、.exe</i> (許可されている場合)、または Word ファイルなどのOfficeドキュメントの種類です。
 
 2. [ハンティング環境の要件] セクションの手順 3 で定義されているデバイスから送信された電子メールを開きます。 添付ファイルを開くか、ファイルをデバイスに保存します。
 
@@ -168,13 +168,13 @@ ms.locfileid: "62171121"
 
 1. ポータルを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">開Microsoft 365 Defenderします</a>。
 
-2. ナビゲーション ウィンドウで、[ハンティング と高度な **>を選択します**。
+2. ナビゲーション ウィンドウで、[ハンティング と高度な **>選択します**。
 
 3. 電子メール イベントの収集から始まるクエリを作成します。
 
-   1. [クエリ **の実行] >新規を選択します**。
+   1. [クエリ **] を>新規します**。
 
-   1. [高度 **な検索]** の **[メール** グループ] で **、[EmailEvents] をダブルクリックします**。 これはクエリ ウィンドウに表示されます。
+   1. [高度 **な検索]** の **[メール** グループ] で、[ **EmailEvents] をダブルクリックします**。 これはクエリ ウィンドウに表示されます。
 
       ```console
       EmailEvents
@@ -192,7 +192,7 @@ ms.locfileid: "62171121"
         > [!NOTE]
         > 高度な検索では、クエリ結果が表形式のデータとして表示されます。 グラフなどの他の形式のデータを表示することもできます。
 
-   1. 結果を確認し、開いたメールを識別できる場合を確認します。 高度な検索でメッセージが表示されるには、最大 2 時間かかる場合があります。 結果を絞り込むには、クエリにwhere 条件を追加して、SenderMailFromDomain として "yahoo.com" を持つメールのみを検索できます。 次に例を示します。
+   1. 結果を確認し、開いたメールを識別できる場合を確認します。 高度な検索でメッセージが表示されるには、最大 2 時間かかる場合があります。 結果を絞り込むには、クエリに  where 条件を追加して、SenderMailFromDomain として "yahoo.com" を持つメールのみを検索できます。 次に例を示します。
 
       ```console
       EmailEvents
@@ -203,7 +203,7 @@ ms.locfileid: "62171121"
 
       ![高度な検索結果が選択されている場合に開く検査レコード側パネルの例。](../../media/advanced-hunting-incident-response-try-2.png)
 
-4. メールが表示されるのを確認したので、添付ファイルのフィルターを追加します。 環境内の添付ファイルを含むすべてのメールに焦点を当てる。 このシミュレーションでは、環境から送信されるメールではなく、受信メールに焦点を当てる必要があります。 追加したフィルターを削除して、メッセージを見つけて "メッセージ" を追加|AttachmentCount **> 0** と **EmailDirection**  ==  **"Inbound""**
+4. メールが表示されるのを確認したので、添付ファイルのフィルターを追加します。 環境内の添付ファイルを含むすべてのメールに焦点を当てる。 このシミュレーションでは、環境から送信されるメールではなく、受信メールに焦点を当てる必要があります。 追加したフィルターを削除して、メッセージを見つけて "メッセージ" を追加| **AttachmentCount > 0** と **EmailDirection** == **"Inbound""**
 
    次のクエリは、すべての電子メール イベントに対する最初のクエリよりも短いリストを持つ結果を表示します。
 
@@ -212,9 +212,9 @@ ms.locfileid: "62171121"
    | where AttachmentCount > 0 and EmailDirection == "Inbound"
    ```
 
-5. 次に、添付ファイルに関する情報 (ファイル名、ハッシュなど) を結果セットに含める。 これを行うには **、EmailAttachmentInfo テーブルに参加** します。 参加に使用する一般的なフィールドは **、NetworkMessageId** と **RecipientObjectId です**。
+5. 次に、添付ファイルに関する情報 (ファイル名、ハッシュなど) を結果セットに含める。 これを行うには、 **EmailAttachmentInfo テーブルに参加** します。 参加に使用する一般的なフィールドは **、NetworkMessageId** と **RecipientObjectId です**。
 
-   次のクエリには、追加の行 "| **project-rename EmailTimestamp=Timestamp**" は、次の手順で追加するファイルアクションに関連するタイムスタンプとメールに関連したタイムスタンプを識別するのに役立ちます。
+   次のクエリには、追加の行 "| **project-rename EmailTimestamp=Timestamp**" を使用すると、メールに関連したタイムスタンプと、次の手順で追加するファイルアクションに関連するタイムスタンプを特定できます。
 
    ```console
    EmailEvents
@@ -223,7 +223,7 @@ ms.locfileid: "62171121"
    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
    ```
 
-6. 次に **、EmailAttachmentInfo** テーブルの **SHA256** 値を使用して、そのハッシュの **DeviceFileEvents** (エンドポイントで発生したファイル アクション) を検索します。 ここでの共通フィールドは、添付ファイルの SHA256 ハッシュです。
+6. 次に、**EmailAttachmentInfo** テーブルの **SHA256** 値を使用して、そのハッシュの **DeviceFileEvents** (エンドポイントで発生したファイル アクション) を検索します。 ここでの共通フィールドは、添付ファイルの SHA256 ハッシュです。
 
    結果の表には、エンドポイント (Microsoft Defender for Endpoint) の詳細 (デバイス名、実行されたアクション (この場合は FileCreated イベントのみを含むフィルター処理)、ファイルが格納された場所が含まれます。 プロセスに関連付けられたアカウント名も含まれます。
 
@@ -238,7 +238,7 @@ ms.locfileid: "62171121"
 
    これで、ユーザーが添付ファイルを開いた、または保存した受信メールを識別するクエリを作成しました。 このクエリを絞り込み、特定の送信者ドメイン、ファイル サイズ、ファイルの種類などについてフィルター処理することもできます。
 
-7. 関数は、有病率、署名者、発行者情報などのファイルに関するより多くの TI データを取得できる、特別な種類の結合です。ファイルの詳細を取得するには **、FileProfile() 関数エンリッチメントを** 使用します。
+7. 関数は、有病率、署名者、発行者情報などのファイルに関するより多くの TI データを取得できる、特別な種類の結合です。ファイルの詳細を取得するには、 **FileProfile() 関数エンリッチメントを** 使用します。
 
     ```console
     EmailEvents
@@ -294,24 +294,6 @@ ms.locfileid: "62171121"
 
    ![ルールの実行の状態、トリガーされたアラートとアクション、検出の編集などについて確認できる電子メール添付ファイル ページの例。](../../media/mtp/fig28.png)
 
-<!--
-
-### Advanced hunting walk-through exercises
-
-To learn more about advanced hunting, the following webcasts will walk you through the capabilities of advanced hunting within Microsoft 365 Defender to create cross-pillar queries, pivot to entities, and create custom detections and remediation actions.
-
-> [!NOTE]
-> Be prepared with your own GitHub account to run the hunting queries in your pilot test lab environment.
-
-|Title|Description|Download MP4|Watch on YouTube|CSL file to use|
-|---|---|---|---|---|
-|Episode 1: KQL fundamentals|We'll cover the basics of advanced hunting capabilities in Microsoft 365 Defender. Learn about available advanced hunting data and basic KQL syntax and operators.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Episode 1: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
-|Episode 2: Joins|We'll continue learning about data in advanced hunting and how to join tables together. Learn about inner, outer, unique, and semi joins, and the nuances of the default Kusto innerunique join.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Episode 2: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
-|Episode 3: Summarizing, pivoting, and visualizing data|Now that we're able to filter, manipulate, and join data, it's time to start summarizing, quantifying, pivoting, and visualizing. In this episode, we'll cover the summarize operator and some of the calculations you can perform while diving into additional tables in the advanced hunting schema. We turn our datasets into charts that can help improve analysis.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Episode 3: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|Episode 4: Let's hunt! Applying KQL to incident tracking|Time to track some attacker activity! In this episode, we'll use our improved understanding of KQL and advanced hunting in Microsoft 365 Defender to track an attack. Learn some of the tips and tricks used in the field to track attacker activity, including the ABCs of cybersecurity and how to apply them to incident response.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episode 4: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
-|
-
---> 
 
 ### <a name="expert-training-on-advanced-hunting"></a>高度な狩猟に関する専門家のトレーニング
 

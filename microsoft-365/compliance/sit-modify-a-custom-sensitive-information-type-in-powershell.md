@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: PowerShell を使用してカスタム機密情報を変更する方法について説明します。
-ms.openlocfilehash: d402586463da1bed13d15dbaa32aece6badc9c72
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 2f1bc44dca9ec4a938c8cd3d4158163f9d5e2e2f
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271492"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900736"
 ---
 # <a name="modify-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタム機密情報の種類を変更する
 
@@ -66,7 +66,7 @@ ms.locfileid: "62271492"
    [System.IO.File]::WriteAllBytes('XMLFileAndPath', $rulepak.SerializedClassificationRuleCollection)
    ```
 
-   この例では、ルール パッケージを C:\My Documents フォルダーの ExportedRulePackage.xml という名前のファイルにエクスポートします。
+   次の使用例は、C:\My Documents フォルダーExportedRulePackage.xmlという名前のファイルにルール パッケージをエクスポートします。
 
    ```powershell
    [System.IO.File]::WriteAllBytes('C:\My Documents\ExportedRulePackage.xml', $rulepak.SerializedClassificationRuleCollection)
@@ -90,4 +90,4 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllB
 
 - [データ損失防止について](dlp-learn-about-dlp.md)
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
-- [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)
+- [機密情報の種類関数](sit-functions.md)

@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: PowerShell を使用してカスタム機密情報の種類を削除する方法について説明します。
-ms.openlocfilehash: bb3bf67a1493ec232a66b2bdc0c784ea52de32f5
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 852f9987b072f05dcf4f322f600bed23bcce7ef2
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914406"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900972"
 ---
 # <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタム機密情報の種類を削除する
 
 コンプライアンス センターの PowerShell では、カスタムの機密情報の種類を削除する 2 つの方法があります。
 
-- **個々のカスタム機密情報の種類を削除** する: [「PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell)を使用してカスタム機密情報の種類を変更する」に記載されているメソッドを使用します。 カスタム機密情報の種類を含むカスタム ルール パッケージをエクスポートし、機密情報の種類を XML ファイルから削除し、更新された XML ファイルを既存のカスタム ルール パッケージにインポートし戻します。
+- **個別のカスタム機密情報の種類を削除** する: 「PowerShell を使用してカスタム機密情報の種類を変更する」に記載されているメソッド [を使用します](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell)。 カスタム機密情報の種類を含むカスタム ルール パッケージをエクスポートし、機密情報の種類を XML ファイルから削除し、更新された XML ファイルを既存のカスタム ルール パッケージにインポートし戻します。
 
 - **カスタム ルール パッケージとそれに含まれるすべてのカスタムの機密情報の種類を削除する**: この方法は、このセクションに記載されています。
 
@@ -79,4 +79,4 @@ ms.locfileid: "60914406"
 
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 
-- [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)
+- [機密情報の種類関数](sit-functions.md)

@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9ef59cc47addce2a8f2171038f5894071549a40b
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: b9cc3e0ab911515d010b1a6e7feaac5cff8aed51
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156486"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903941"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>インシデントを管理Microsoft 365 Defender
 
@@ -36,9 +36,9 @@ ms.locfileid: "62156486"
 **適用対象:**
 - Microsoft 365 Defender
 
-インシデント管理は、脅威を確実に含め、対処する上で重要です。
+インシデント管理は、インシデントワークフローの時間を最適化し、脅威を迅速に含めて対処するために、インシデントの名前、割り当て、タグ付けを確実に行う上で重要です。
 
-インシデント ポータル (&) の&**で**>インシデントからのインシデントを管理 [Microsoft 365 Defender](https://security.microsoft.com)できます。security.microsoft.com。 次に例を示します。
+インシデント ポータル (&) **の**&で>インシデントからのインシデントを [管理Microsoft 365 Defender](https://security.microsoft.com)できます。security.microsoft.com。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -75,7 +75,7 @@ Microsoft 365 Defender影響を受けるエンドポイントの数、影響を�
 
 共通した特徴を持つインシデントのグループにフラグを設定するなど、インシデントにカスタム タグを追加できます。 こうすることで、特定のタグを含むすべてのインシデントのインシデント キューを後からフィルター処理できます。
 
-入力を開始すると、選択したタグの一覧から選択できます。
+入力を開始すると、以前に使用したタグと選択したタグの一覧から選択できます。
 
 ## <a name="assign-an-incident"></a>インシデントの割り当て
 
@@ -93,7 +93,7 @@ Microsoft 365 Defender影響を受けるエンドポイントの数、影響を�
 
 インシデントが修復された場合は、[インシデントの解決] **を** 選択してトグルを右に移動します。 インシデントを解決すると、インシデントに関連するリンクされたアラートとアクティブなアラートもすべて解決されます。
 
-解決されないインシデントは、Active として表示 **されます**。
+解決されないインシデントは、アクティブとして表示 **されます**。
 
 ## <a name="set-the-classification-and-determination"></a>分類と決定を設定する
 
@@ -103,7 +103,7 @@ Microsoft 365 Defender影響を受けるエンドポイントの数、影響を�
 
 ## <a name="add-comments"></a>コメントを追加する
 
-[コメント] フィールドを使用して、インシデントに複数のコメント **を追加** できます。 各コメントは、インシデントの履歴イベントに追加されます。 インシデントのコメントと履歴は、[概要] ページの[コメントと履歴] リンク **から確認** できます。
+[コメント] フィールドを使用して、インシデントに複数のコメント **を追加** できます。 各コメントは、インシデントの履歴イベントに追加されます。 インシデントのコメントと履歴は、[概要] ページの [コメントと履歴] リンク **から確認** できます。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 165f1ccb1e0a059d61802e9a8e026b9dbef3efc2
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: bfb8e1fb42dcde1a3140e0990221536c1b76b4f8
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914382"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904009"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>ユーザーを調査Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "60914382"
 
 - Microsoft 365 Defender
 
-インシデント調査の一部には、ユーザー アカウントを含めできます。 インシデントからのインシデント **の [ユーザー** ]タブから開始し、& \> ***_ \> _* Users を通知します**。
+インシデント調査の一部には、ユーザー アカウントを含めできます。 インシデントポータルのインシデントのアラートで識別されたユーザー アカウントの詳細は、インシデントMicrosoft 365 Defender **&**\>アラートインシデント ***_ \> _* Users から確認できます**。 次に例を示します。
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="インシデントの [ユーザー] ページの例。" lightbox="../../media/investigate-incidents/incident-users.png":::
 
@@ -43,11 +43,11 @@ ms.locfileid: "60914382"
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="インシデントのユーザー アカウントの概要ウィンドウの例。" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
-> [ユーザー] ページにはAzure Active Directory (Azure AD) 組織とグループが表示され、ユーザーに関連付けられているグループとアクセス許可を理解できます。
+> ユーザー ページには、Azure Active Directory (Azure AD) 組織とグループが表示され、ユーザーに関連付けられているグループとアクセス許可を理解できます。
 
-このフライアウト ページでは、現在のインシデント、アクティブなアラート、リスク レベル、ユーザーの露出、アカウント、デバイスなど、ユーザーの脅威情報を確認できます。
+このウィンドウでは、現在のインシデント、アクティブなアラート、リスク レベル、ユーザーの露出、アカウント、デバイスなど、ユーザーの脅威情報を確認できます。
 
-さらに、Microsoft 365 Defender ポータルで直接アクションを実行して、侵害されたユーザーに対処し、ユーザーが侵害されたのを確認したり、再度サインインを要求したりすることもできます。
+さらに、Microsoft 365 Defender ポータルで直接アクションを実行して、ユーザー アカウントが侵害されたか、新しいサインインが必要な場合など、侵害されたユーザーに対処できます。
 
 ここから、[ユーザー に移動] **ページを選択して** 、ユーザー アカウントの詳細を表示できます。 次に例を示します。
 
@@ -55,35 +55,28 @@ ms.locfileid: "60914382"
 
 [ユーザー] ページの一覧からユーザー アカウントの名前を選択すると、このページを **確認** することもできます。
 
-[グループ] で番号を選択すると、ユーザーのグループ メンバーシップを **確認できます**。
+[グループ] で番号を選択すると、ユーザーのグループ メンバーシップを確認 **できます**。
 
 :::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="ユーザーのグループ メンバーシップの例。" lightbox="../../media/investigate-users/user-group-membership.png":::
 
 [マネージャー] の下 **のアイコンを** 選択すると、ユーザーが組織ツリー内の場所を確認できます。
 
-[Microsoft 365 Defender ポータル ユーザー ページは、Microsoft Defender for Endpoint、Microsoft Defender for Identity、および Microsoft Cloud App Security (ライセンスに応じて) を結合します。
+[Microsoft 365 Defender ポータル ユーザー ページには、Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Cloud Apps の情報が組み合わせ込まれています (ライセンスに応じて異なる)。
 
-このページには、ユーザー アカウントのセキュリティ リスクに固有の情報が表示されます。 これには、ユーザーの全体的なリスクに寄与したリスクと最近のイベントやアラートを評価するのに役立つスコアが含まれます。
+このページには、ユーザー アカウントのセキュリティ リスクに固有の情報が表示されます。これには、リスクの評価に役立つスコアや、全体的なリスクに寄与した最近のイベントやアラートが含まれます。
 
 このページでは、次の追加アクションを実行できます。
 
 - ユーザー アカウントを侵害済みとしてマークする
 - ユーザーにもう一度サインインを要求する
 - ユーザー アカウントを中断する
-- [ユーザー アカウントAzure Active Directory (Azure AD) の設定を参照してください。
+- ユーザー アカウントのAzure ADを参照してください。
 - ユーザー アカウントが所有するファイルを表示する
 - このユーザーと共有されているファイルを表示します。
 
 次に例を示します。
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="インシデントのユーザー アカウントでのアクションの例。" lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
-
-<!--
-You can access this page from multiple areas in the Microsoft 365 Defender portal. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
-
-Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
-
--->
 
 ## <a name="view-lateral-movement-paths"></a>横方向の移動パスを表示する
 
@@ -99,7 +92,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 ## <a name="next-steps"></a>次の手順
 
-インプロセス インシデントの必要に応じて、調査を続行 [します](investigate-incidents.md)。
+インプロセス インシデントの場合は、必要に応じて調査を続行 [します](investigate-incidents.md)。
 
 ## <a name="see-also"></a>関連項目
 

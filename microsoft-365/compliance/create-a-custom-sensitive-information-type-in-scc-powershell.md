@@ -6,7 +6,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.article: article
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス センターでポリシーのカスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: ffca0717bbefdad90854f118131fe45ae3ce4dfd
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 89c215ca52b255a6e3aed72ff032cdd2475c0d87
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806242"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903863"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を作成する
 
@@ -235,7 +235,7 @@ A には `Pattern` 、複数の要素が含 `Match` まれる場合がありま�
 
 たとえば、従業員 ID `Func_us_date` バッジには採用日が含まれるので、このカスタム エンティティは組み込み関数を使用して、米国で一般的に使用される形式で日付を識別できます。
 
-詳細は、「[DLP 関数で探索する内容](what-the-dlp-functions-look-for.md)」を参照してください。
+詳細については、「機密情報の [種類関数」を参照してください](sit-functions.md)。
 
 ![組み込み関数を参照する Match 要素を示す XML マークアップ。](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
 
@@ -325,7 +325,7 @@ Entity には各パターン の confidenceLevel に加え、 recommendedConfide
 
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>コンプライアンス センターの UI で他の言語をサポートする場合 [LocalizedStrings 要素]
 
-コンプライアンス チームが Microsoft 365 コンプライアンス センターを使用して異なるロケールと異なる言語でポリシーを作成する場合、カスタムの機密情報の種類の名前と説明について、ローカライズされたバージョンを提供することができます。コンプライアンス チームがサポートしている言語で Microsoft 365 を使用すると、ローカライズされた名前が UI に表示されます。
+コンプライアンス チームが Microsoft 365 コンプライアンス センターを使用して、異なるロケールと異なる言語でポリシーを作成する場合は、カスタム機密情報の種類の名前と説明のローカライズされたバージョンを提供できます。 コンプライアンス チームが、サポートしている言語で Microsoft 365 を使用すると、UI にローカライズされた名前が表示されます。
 
 ![インスタンス数と一致精度の構成。](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -912,4 +912,4 @@ Microsoft 365 は、検索クローラーを使用して、サイト コンテ�
 
 - [データ損失防止について](dlp-learn-about-dlp.md)
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
-- [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)
+- [機密情報の種類関数](sit-functions.md)

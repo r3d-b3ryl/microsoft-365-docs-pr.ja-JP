@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 機密情報の種類/ルール パッケージと完全に一致するデータを作成する
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b28669a2791685d172889bf6486b89b9d971e36
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: eb15f54a8a944e1c764a2540f36926dd433fb2d3
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271924"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900748"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>機密情報の種類/ルール パッケージと完全に一致するデータを作成する
 
@@ -54,7 +54,7 @@ EDM 機密情報の種類は、1 つ以上のパターンで構成されます�
   - スキーマのプライマリ要素列に対して [区切り文字を無視する] オプションを選択した場合は、作成するカスタム SIT が、選択した区切り記号を使用せずにデータと一致します。
   - 組み込みの SIT を使用する場合は、選択する文字列を正確に検出し、周囲の文字を含めず、機密情報テーブルに格納されている文字列の有効な部分を除外します。
 
-「[機密情報の種類エンティティ定義」および「](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions)[カスタム機密情報の種類の使用を開始する」を参照してください](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types)。
+「[機密情報の種類エンティティ定義」および「](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions)[コンプライアンス センターでカスタム機密情報の種類を作成する」を参照してください](create-a-custom-sensitive-information-type.md)。
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>完全一致スキーマと機密情報の種類パターンウィザードを使用する
 
@@ -174,6 +174,6 @@ EDM 機密情報の種類は、1 つ以上のパターンで構成されます�
 > [!NOTE]
 > ルール パッケージ ファイルの構文は、他の機密情報の種類と同じです。 ルール パッケージ ファイルの構文と追加の構成オプションの詳細、および PowerShell を使用して機密情報の種類を変更および削除する手順については、「 [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md#create-a-custom-sensitive-information-type-using-powershell) を使用してカスタム機密情報の種類を作成する」を参照してください。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 - [機密情報の種類と完全に一致するデータをテストする](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)

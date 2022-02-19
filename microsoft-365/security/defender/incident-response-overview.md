@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a8ade86c701b35cf8526bf51fafaacaacaa628ec
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: f66f98d8de585d8b92fad50f70ad812b861d9202
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245245"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903897"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>データを使用して調査Microsoft 365 Defender
 
@@ -46,10 +46,10 @@ ms.locfileid: "62245245"
 
 Microsoft 365 サービスおよびアプリは、疑わしい、または悪意のあるイベントやアクティビティを検出した場合にアラートを作成します。 個々のアラートは、完了した攻撃、または進行中の攻撃に関する貴重な手がかりとなります。 ただし、攻撃は通常、デバイス、ユーザー、メールボックスなどの異なる種類のエンティティに対抗してさまざまな技術を採用しています。 その結果、テナント内の複数のエンティティに複数のアラートが表示されます。 個々のアラートを組み合わせて攻撃に関する分析情報を取得するのは困難で時間がかかるため、Microsoft 365 Defender はアラートとその関連情報を自動的にインシデントに集約します。
 
-継続的に、インシデント キュー内で、分析と解決優先度が最も高いインシデントを特定し、対応の準備をします。 これは、次を組み合わせたものです：
+継続的に、インシデント キューの分析と解決に最も優先度の高いインシデントを特定し、対応の準備を整える必要があります。 これは、次を組み合わせたものです：
 
-- [インシデント キューの](incident-queue.md) フィルター処理と並べ替えを通じて、優先度の高いインシデントを特定するトリアージ。
-- [タイトルを](manage-incidents.md) 変更し、アナリストに割り当て、タグとコメントを追加してインシデントを管理します。
+- [インシデント キューのフィルター](incident-queue.md) 処理と並べ替えによって、優先度の高いインシデントを決定する優先順位を設定します。 これはトリエージングとも呼ばれる。
+- [タイトルを](manage-incidents.md) 変更し、アナリストに割り当て、タグとコメントを追加し、解決時に分類することでインシデントを管理します。
 
 インシデントごとにインシデント対応ワークフローを使用して、インシデントとそのアラートとデータを分析して攻撃を含め、脅威を根絶し、攻撃から回復し、そこから学習します。 詳細[については、この](incidents-overview.md#example-incident-response-workflow-for-microsoft-365-defender)例をMicrosoft 365 Defender。
 
@@ -57,7 +57,7 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 組織が Microsoft 365 Defender を使用している場合、悪意のあるアクティビティや疑わしいアクティビティやアーティファクトが検出されると、セキュリティ運用チームは Microsoft 365 Defender ポータル内で警告を受け取ります。 脅威が終わりのない流れを考えると、セキュリティ チームは多くの場合、多くの場合、アラートの量が多い場合に対処する課題に直面します。 幸いMicrosoft 365 Defender、セキュリティ運用チームが脅威に効率的かつ効果的に対処するのに役立つ自動調査と応答 (AIR) 機能が含まれています。
 
-自動調査が完了すると、関連するインシデントに関するあらゆる証拠に対して、評決に達します。 評決に応じて、修復アクションが識別されます。 場合によっては、修復アクションが自動的に実行されます。それ以外の場合は、修復アクションは、Microsoft 365 Defender承認を待っています。 
+自動調査が完了すると、インシデントに関するあらゆる証拠に対して評決が下されます。 評決に応じて、修復アクションが識別されます。 場合によっては、修復アクションが自動的に実行されます。それ以外の場合は、修復アクションは、Microsoft 365 Defender承認を待っています。 
 
 詳細[については、「自動調査と応答」Microsoft 365 Defender](m365d-autoir.md)を参照してください。
 
@@ -69,7 +69,7 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 同じ脅威検出クエリを使用して、カスタム検出ルールを作成できます。 これらのルールは自動的に実行され、侵害の疑いのあるアクティビティ、正しく構成されていないコンピューター、その他の結果を確認し、それに対応します。
 
-詳細[については、「高度な検索を使用](advanced-hunting-overview.md)して脅威をプロアクティブにMicrosoft 365 Defenderを参照してください。
+詳細[については、「高度な検索機能を使用](advanced-hunting-overview.md)して脅威を予防的にMicrosoft 365 Defenderを参照してください。
 
 ## <a name="get-ahead-of-emerging-threats-with-threat-analytics"></a>脅威分析で新たな脅威を先取りする
 
@@ -83,9 +83,9 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 脅威分析には、特定された脅威ごとに、関連するインシデントや影響を受けたMicrosoft 365に関する情報も含まれます。
 
-特定された各脅威には、アナリスト レポート、サイバーセキュリティの検出と分析の最前線に立ち、Microsoft 365 Defender での攻撃の表示方法に関する情報を提供できる Microsoft セキュリティ研究者によって作成された脅威の包括的な分析が含まれます。
+特定された各脅威には、アナリスト レポート、サイバーセキュリティの検出と分析の最前線にいる Microsoft セキュリティ研究者によって書かれた脅威の包括的な分析が含まれます。 また、これらのレポートでは、攻撃の表示方法に関する情報をMicrosoft 365 Defender。
 
-詳細については、「脅威分析」を参照[Microsoft 365 Defender。](threat-analytics.md)
+詳細については、「脅威分析」を参照[Microsoft 365 Defender](threat-analytics.md)。
 
 ## <a name="collaborate-with-microsoft-experts"></a>Microsoft の専門家と共同作業する
 

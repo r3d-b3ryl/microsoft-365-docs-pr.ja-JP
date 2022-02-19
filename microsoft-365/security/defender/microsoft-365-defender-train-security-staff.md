@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c533684213bcae9ab21ad644f6a71e5e10db057c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 32d8927172e7479f125c0e3b1ae44441cbc3de13
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871162"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903885"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>セキュリティ スタッフのトレーニングをMicrosoft 365 Defender
 
@@ -41,7 +41,7 @@ ms.locfileid: "61871162"
 
 ## <a name="microsoft-365-defender-ninja-training"></a>Microsoft 365 Defenderニンジャトレーニング
 
-[Microsoft 365 Defenderのトレーニング](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)は、Microsoft 365 Defender の機能をステップ実行する一連の組織化されたセクションとモジュールです。これは、ワークロード全体に及ぶものすべてですが、個々のワークロード自体には適用されません。 
+[Microsoft 365 Defenderニンジャトレーニング](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)は、組織化されたセクションとモジュールのセットで、この機能をMicrosoft 365 Defender。 このトレーニングは、&mdash;Microsoft Defender for Endpoint&mdash; などの脅威信号ソースを横断しますが、個々のソース自体はカバーできません。 
 
 コンテンツは 3 つの異なるナレッジ レベルに構成され、複数のモジュール (基本、中間、エキスパート) が含まれます。 各レベルには、資料の理解をテストするナレッジ チェックが含まれています。
 
@@ -58,21 +58,18 @@ ms.locfileid: "61871162"
 
 ポータル[Microsoft 365 Defenderには、次](https://security.microsoft.com/learning)の学習パスが含まれています。
 
- - セキュリティ センターのMicrosoft 365する
-
- - [データを使用して調査するMicrosoft 365 Defender
-
- - Microsoft 365 Defender基本トレーニング
-
- - Microsoft Defender for Endpoint Basic Training
-
- - Microsoft Defender for Office 365ベスト プラクティス
+- セキュリティ センターのMicrosoft 365する
+- [データを使用して調査するMicrosoft 365 Defender
+- Microsoft 365 Defender基本トレーニング
+- Microsoft Defender for Endpoint Basic Training
+- Microsoft Defender for Office 365ベスト プラクティス
+- セットアップ
 
 ## <a name="hands-on-with-a-trial-environment"></a>試用版環境でのハンズオン
 
-学習する最善の方法の 1 つは、試用版環境でMicrosoft 365 Defenderサービスを構成してテストする方法です。 詳細[については、「評価とパイロット Microsoft 365 Defender」](eval-overview.md)を参照してください。
+学習する最善の方法の 1 つは、試用版環境でMicrosoft 365 Defenderサービスを構成してテストする方法です。 詳細[については、「評価とパイロット Microsoft 365 Defender](eval-overview.md)」を参照してください。
 
 ## <a name="simulating-an-attack"></a>攻撃のシミュレーション
 
-セキュリティ スタッフがサイバー攻撃を検出して対応する能力をテストするには、シミュレートされた攻撃を使用します。 詳細[については、「Microsoft 365 Defenderポータルを使用して攻撃をシミュレートする](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal)」を参照してください。 
+セキュリティ スタッフがサイバー攻撃を検出して対応する能力をテストするには、シミュレートされた攻撃を使用します。 詳細[については、「Microsoft 365 Defender ポータルを使用して攻撃をシミュレートする](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal)」を参照してください。 
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8b511bb5818ae923c30347dfe71853ca791061ae
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 46facb53ebffb26095a9de4cab60d255285cc949
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933217"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904119"
 ---
 # <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う
 
@@ -41,11 +41,11 @@ ms.locfileid: "61933217"
 
 次の表に、図の手順を示します。
 
-| |手順  |説明  |
-|---------|---------|---------|
-|1|[攻撃のシミュレーション](eval-defender-investigate-respond-simulate-attack.md)     |   評価環境に対する攻撃をシミュレートし、Microsoft 365 Defenderポータルを使用してインシデント対応を実行します。      |
-|2|[インシデント対応機能を試す ](eval-defender-investigate-respond-additional.md)    |    デバイスで機能を試Microsoft 365 Defender。     |
-||||
+|手順  |説明  |
+|---------|---------|
+| 1. [攻撃をシミュレートする](eval-defender-investigate-respond-simulate-attack.md)     |   評価環境に対する攻撃をシミュレートし、Microsoft 365 Defenderポータルを使用してインシデント対応を実行します。      |
+| 2. [インシデント対応機能を試す ](eval-defender-investigate-respond-additional.md)    |    インシデント対応の追加機能と機能を試Microsoft 365 Defender。     |
+|||
 
 ### <a name="navigation-you-may-need"></a>必要なナビゲーション
 

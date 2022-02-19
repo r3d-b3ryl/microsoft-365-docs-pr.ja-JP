@@ -25,12 +25,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: データ損失防止リファレンス 資料
-ms.openlocfilehash: 85fa08419b964555ce036b96a78f8c3fe6bab3a1
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 0c7fe1d3ccf1b74641be1d05506f1cc53b743218
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422869"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903530"
 ---
 # <a name="data-loss-prevention-reference"></a>データ損失防止リファレンス
 
@@ -73,7 +73,7 @@ With a DLP policy, you can:
 
 Microsoft 365 セキュリティ コンプライアンス センターの [データ損失防止] ページで、DLP ポリシーを作成して管理します。
 
-![セキュリティ コンプライアンス センターのOffice 365ページ &amp; 。](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![セキュリティ コンプライアンス センターのOffice 365ページ&amp;。](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -529,7 +529,7 @@ DLP は、インデックスを作成できるすべてのコンテンツを評�
 
 Exchange online を場所として含む DLP ポリシーを作成すると、このポリシーは Office 365 セキュリティ &amp; コンプライアンス センターから Exchange Online に同期され、その後、Exchange Online から Outlook on the web と Outlook に同期されます。
 
-メッセージが Outlook で作成される場合、作成中のコンテンツは DLP ポリシーに対して評価されるため、ユーザーはポリシー ヒントを確認できます。 メッセージが送信されると、メール フローの通常の一部として DLP ポリシーに対して評価され、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) および Exchange 管理センターで作成された<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">DLP</a>ポリシーが評価されます。 DLP ポリシーは、メッセージと添付ファイルの両方をスキャンします。
+メッセージが Outlook で作成される場合、作成中のコンテンツは DLP ポリシーに対して評価されるため、ユーザーはポリシー ヒントを確認できます。 メッセージが送信されると、メール フローの通常の部分として DLP ポリシーに対して評価され、Exchange 管理センターで作成された Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) と DLP ポリシーが評価されます。<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank"></a> DLP ポリシーは、メッセージと添付ファイルの両方をスキャンします。
 
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Office デスクトップ プログラムにおけるポリシー評価
 
@@ -545,7 +545,7 @@ Microsoft teams を場所として含む DLP ポリシーを作成すると、Of
 
 ## <a name="permissions"></a>アクセス許可
 
-既定では、グローバル管理者、セキュリティ管理者、コンプライアンス管理者は DLP ポリシーを作成して適用できます。 DLP ポリシーを作成するコンプライアンス チームの他のメンバーには、セキュリティ コンプライアンス センターへのアクセス許可が &amp; 必要です。 既定では、テナント管理者は、この場所にアクセスし、コンプライアンス担当者や他のユーザーに、テナント管理者のすべてのアクセス許可を与えることなく、セキュリティ コンプライアンス センターへのアクセス権を &amp; 付与できます。これを行うには、次の手順を実行することをお勧めします。
+既定では、グローバル管理者、セキュリティ管理者、コンプライアンス管理者は DLP ポリシーを作成して適用できます。 DLP ポリシーを作成するコンプライアンス チームの他のメンバーには、セキュリティ コンプライアンス センターへのアクセス許可が &amp; 必要です。 既定では、テナント &amp; 管理者は、この場所にアクセスし、コンプライアンス担当者や他のユーザーに、テナント管理者のすべてのアクセス許可を与えることなく、セキュリティ コンプライアンス センターへのアクセス権を付与できます。これを行うには、次の手順を実行することをお勧めします。
 
 1. Microsoft 365 でグループを作成して、コンプライアンス責任者をグループに追加します。
 
@@ -591,6 +591,6 @@ Microsoft teams を場所として含む DLP ポリシーを作成すると、Of
 
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 
-- [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)
+- [機密情報の種類関数](sit-functions.md)
 
 - [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)

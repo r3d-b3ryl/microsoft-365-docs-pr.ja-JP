@@ -7,20 +7,26 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-  - MOE150
+- MOE150
 ms.technology: m365d
+ms.openlocfilehash: cfa39ca38046c131de2531b4ad6446626895090f
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903953"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -44,10 +50,6 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 既定のアラート キューから [フィルター] を **選択すると、[** フィルター] ウィンドウが表示され、そこからアラートのサブセットを指定できます。 次に例を示します。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="ポータル内のアラート キューのフィルター ウィンドウのMicrosoft 365 Defenderします。":::
-
-<!--
-UPDATE SCREENSHOT
---> 
 
 次の条件に従ってアラートをフィルター処理できます。
 
@@ -195,7 +197,7 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint、microsoft Defender
 
 このビデオでは、電源自動化を Defender for Cloud Apps に接続する方法も説明します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 インプロセス インシデントの場合は、必要に応じて調査を続行 [します](investigate-incidents.md)。
 
