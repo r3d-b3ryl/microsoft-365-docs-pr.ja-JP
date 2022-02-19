@@ -114,6 +114,8 @@
               href: microsoft-secure-score-whats-coming.md
             - name: 新機能
               href: microsoft-secure-score-whats-new.md
+        - name: エンドポイントを保護する
+          href: ../defender-endpoint/index.yml
         - name: ID を保護する
           items:
             - name: センサーの設定と正常性
@@ -130,6 +132,8 @@
               href: ../defender-identity/exclusions.md
             - name: メールと Syslog の通知
               href: ../defender-identity/notifications.md
+        - name: Office 365 のワークロードを保護する
+          href: ../office-365-security/index.yml
     - name: 脅威の調査と対応
       items:
         - name: 概要
