@@ -18,12 +18,12 @@ ms.custom: ''
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2cfbe9dd976e6ba4d9052e661387689f903d049
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 1ac240f402d230362cb33ea818e62c1e0629eb39
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "62428698"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909749"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -115,11 +115,11 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
 
 5. 表示される **[一括メールのしきい値と迷惑メール プロパティ**] ページで、以下の設定を構成します。
 
-   - **一括メールのしきい値**: 次のページで、**一括** スパム対策フィルター判定に指定されたアクションをトリガーするメッセージの Bulk Complaint Level (BCL) を指定します (アクションは、指定された値以上ではなく、指定された値より大きい場合にトリガーされます)。 値が大きければ大きいほど、そのメッセージの信頼度は低い (迷惑メールである可能性が高い) ことを示します。 既定の値は 7 です。 詳細については、「[EOP の Bulk Complaint Level (BCL)](bulk-complaint-level-values.md)」および「[迷惑メールとバルク メールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
+   - **一括メールのしきい値**: 次のページで、**一括** スパム対策フィルター判定に指定されたアクションをトリガーするメッセージの Bulk Complaint Level (BCL) を指定します。 値が大きければ大きいほど、そのメッセージの信頼度は低い (迷惑メールである可能性が高い) ことを示します。 既定の値は 7 です。 詳細については、「[EOP の Bulk Complaint Level (BCL)](bulk-complaint-level-values.md)」および「[迷惑メールとバルク メールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
 
      既定では、スパム対策ポリシーでの PowerShell のみの設定である _MarkAsSpamBulkMail_ は、`On` です。 この設定は、**一括** フィルター処理判定の結果に大きく影響します。
 
-     - **_MarkAsSpamBulkMail_ が [On]**: しきい値よりも高い BCL は、フィルター判定「**スパム**」に相当する SCL 6 に変換され、**一括** フィルター処理判定に指定されたアクションがメッセージに対して実行されます。
+     - **_MarkAsSpamBulkMail_ が [On]**: しきい値よりも高いまたは等しい BCL は、フィルター判定「**スパム**」に相当する SCL 6 に変換され、**一括** フィルター処理判定に指定されたアクションがメッセージに対して実行されます。
      - **_MarkAsSpamBulkMail_ が [Off]**: メッセージには BCL がスタンプされますが、**一括** フィルター処理判定に対して _何のアクションも実行されません_。 実際には、BCL しきい値と **一括** フィルター処理判定アクションは無関係です。
 
    - **スパム スコアを上げる**、**スパムとしてマーク**<sup>\*</sup>、**テスト モード**: 既定で、高度なスパム フィルター (ASF) の設定はオフになっています。

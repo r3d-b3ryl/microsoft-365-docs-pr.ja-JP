@@ -322,7 +322,7 @@
               href: named-entities-learn.md
         - name: 機密情報の種類を使用開始
           items:
-            - name: 機密情報の種類を使用開始 - コンプライアンス センター
+            - name: カスタムの機密情報の種類を作成する - コンプライアンス センター
               href: create-a-custom-sensitive-information-type.md
             - name: 完全なデータ一致に基づく機密情報の種類の使用を開始する
               href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -344,6 +344,10 @@
               href: sit-modify-edm-schema-configurable-match.md
             - name: Exact Data Match アクティビティの通知を作成する (プレビュー)
               href: sit-edm-notifications-activities.md
+            - name: コンプライアンス センターでカスタムの機密情報の種類を管理する
+              href: sit-manage-custom-sits-compliance-center.md
+            - name: 機密情報の種類 REGEX バリデーターと追加チェック
+              href: sit-regex-validators-additional-checks.md
             - name: カスタムの機密情報の種類を作成する - PowerShell
               href: create-a-custom-sensitive-information-type-in-scc-powershell.md
             - name: カスタムの機密情報の種類を削除する - PowerShell
@@ -366,8 +370,8 @@
           items:
             - name: 機密情報の種類のエンティティ定義
               href: sensitive-information-type-entity-definitions.md
-            - name: DLP 関数の検索対象
-              href: what-the-dlp-functions-look-for.md
+            - name: 機密情報の種類の機能
+              href: sit-functions.md
             - name: カスタム機密情報の種類のフィルター リファレンス
               href: sit-custom-sit-filters.md
     - name: トレーニング可能な分類子

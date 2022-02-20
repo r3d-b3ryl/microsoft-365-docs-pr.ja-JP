@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: ランサムウェア攻撃から Microsoft 365 リソースを保護する手順を説明します。
-ms.openlocfilehash: 81f97ba6327f5f1803d972ad9e62f2333e65bc2b
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 634888ac603be17265733c4443a69495015296d7
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110273"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886038"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Microsoft 365 テナントにランサムウェア保護を展開する
 
@@ -76,13 +76,13 @@ Microsoft 365 テナントに侵入したランサムウェア攻撃者は、次
 
    ランサムウェアがファイルの新しい暗号化されたコピーを作成し、古いファイルを削除する場合、顧客は 93 日間の間にファイルをごみ箱から復元することが可能です。 93 日以降の場合でも、Microsoft がデータを回復できる 14 日間の猶予があります。 
   
-   セキュリティとヘルプデスク スタッフの負担を最小限に抑えるために、[ごみ箱からファイルを復元する](https://support.microsoft.com/en-us/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b)方法についてユーザーにトレーニングします。
+   セキュリティとヘルプデスク スタッフの負担を最小限に抑えるために、[ごみ箱からファイルを復元する](https://support.microsoft.com/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b)方法についてユーザーにトレーニングします。
 
-- [ファイルの復元](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436)
+- [ファイルの復元](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
    管理者とエンド ユーザーが過去 30 日間の任意の時点からファイルを復元できる SharePoint および OneDrive の完全なセルフサービス回復ソリューション。
 
-   セキュリティと IT ヘルプデスク スタッフの負担を最小限に抑えるために、[ファイルの復元](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436)の方法についてユーザーにトレーニングします。
+   セキュリティと IT ヘルプデスク スタッフの負担を最小限に抑えるために、[ファイルの復元](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15)の方法についてユーザーにトレーニングします。
 
 
 OneDrive のファイルと SharePoint のファイルについては、大量攻撃に遭った場合、Microsoft は最大 14 日前までの時点にロールバックできます。
@@ -119,11 +119,11 @@ OneDrive のファイルと SharePoint のファイルについては、大量�
 
     ファイルなどの機密情報のダウンロードをブロックします。 
 
-    また、[Microsoft Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization)を使用して、ユーザーとアプリケーション間の情報のフローをリアルタイムで監視することもできます。
+    また、[Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) を使用して、ユーザーとアプリケーション間の情報のフローをリアルタイムで監視することもできます。
 
 ## <a name="whats-in-this-solution"></a>このソリューションの機能
 
-このソリューションでは、Microsoft 365 の保護と軽減機能、構成、および継続的な操作を展開して、ランサムウェア攻撃者が Microsoft 365 テナント内の重要なデータを使用して身代金要求に対して組織を保持する能力を最小限に抑える手順を実行します。
+このソリューションでは、Microsoft 365 の保護と軽減機能、構成、および継続的な操作を展開して、ランサムウェア攻撃者が Microsoft 365 テナント内の重要なデータを使用し、身代金要求に対して組織を保持する能力を最小限に抑える手順を実行します。
 
 ![Microsoft 365 によるランサムウェアから保護するための手順](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step-grid.png)
 
@@ -155,31 +155,31 @@ Microsoft 365 テナント用にデプロイされたソリューションの 5 
 
 | 機能 | 説明 | 役立ちます... | ライセンス |
 |:-------|:-----|:-------|:-------|
-| Microsoft セキュア スコア |  Microsoft 365 テナントのセキュリティの姿勢を測定する | セキュリティ構成を評価し、改善点を提案します。 | Microsoft 365 E3 または Microsoft 365 E5 |
-| 攻撃面の減少ルール | さまざまな構成設定を使用して、サイバー攻撃に対する組織の脆弱性を軽減する | 疑わしいアクティビティと脆弱なコンテンツをブロックします。 | Microsoft 365 E3 または Microsoft 365 E5 |
-| Exchange のメール設定 |  メール ベースの攻撃に対する組織の脆弱性を軽減するサービスを有効にする | フィッシングなどのメール ベースの攻撃を通じてテナントへの初期アクセスを防止します。  | Microsoft 365 E3 または Microsoft 365 E5 |
-| Microsoft Windows、Microsoft Edge、およびMicrosoft 365 Apps for Enterprise の設定 | 広く知られ、証明済の業界標準のセキュリティ構成を提供します | Windows、Edge、Microsoft 365 Apps for Enterprise による攻撃を防ぎます。 | Microsoft 365 E3 または Microsoft 365 E5 |
+| Microsoft セキュア スコア |  Microsoft 365 テナントのセキュリティの姿勢を測定します。 | セキュリティ構成を評価し、改善点を提案します。 | Microsoft 365 E3 または Microsoft 365 E5 |
+| 攻撃面の減少ルール | さまざまな構成設定を使用して、サイバー攻撃に対する組織の脆弱性を軽減します。 | 疑わしいアクティビティと脆弱なコンテンツをブロックします。 | Microsoft 365 E3 または Microsoft 365 E5 |
+| Exchange のメール設定 |  メール ベースの攻撃に対する組織の脆弱性を軽減するサービスを有効にします。 | フィッシングなどのメール ベースの攻撃を通じてテナントへの初期アクセスを防止します。  | Microsoft 365 E3 または Microsoft 365 E5 |
+| Microsoft Windows、Microsoft Edge、およびMicrosoft 365 Apps for Enterprise の設定 | 広く知られ、証明済の業界標準のセキュリティ構成を提供します。 | Windows、Edge、Microsoft 365 Apps for Enterprise による攻撃を防ぎます。 | Microsoft 365 E3 または Microsoft 365 E5 |
 |
 
 ### <a name="2-detection-and-response"></a>2. 検出と応答
 
 | 機能 | 説明 | 検出と応答に役立ちます... | ライセンス |
 |:-------|:-----|:-------|:-------|
-| Microsoft 365 Defender | 信号を結合し、機能を統合して 1 つのソリューションに統合する <br><br> セキュリティ専門家が脅威信号を一緒に縫い合わせ、脅威の範囲と影響全体を特定します <br><br> 攻撃を防止または停止し、影響を受けるメールボックス、エンドポイント、およびユーザー ID を自己回復するためのアクションを自動化します。 | インシデント。これは、攻撃を構成するアラートとデータを組み合わせたものです。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
-| Microsoft Defender for Identity |  クラウドベースのセキュリティ インターフェイスを介して組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダーアクションを識別、検出、および調査するには、オンプレミスの Active Directory ドメイン サービス (AD DS) 信号を使用します。 | AD DS アカウントの資格情報の侵害。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
-| Microsoft Defender for Office 365 | メール メッセージ、リンク (URL)、共同作業ツールによってもたらされる悪意のある脅威から組織を保護します。 <br><br> マルウェア、フィッシング、スプーフィング、その他の攻撃の種類から保護する | フィッシング攻撃。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
-| Microsoft Defender for Endpoint | エンドポイント (デバイス) 全体の高度な脅威の検出と対応を可能にします | マルウェアのインストールとデバイスの侵害。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
-| Azure Active Directory(Azure AD) ID 保護 | ID ベースのリスクの検出と修復、およびそれらのリスクの調査を自動化します | Azure AD アカウントと特権のエスカレーションに対する資格情報の侵害。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
-| Microsoft Defender for Cloud Apps | Microsoft およびサード パーティのクラウド サービス全体で検出、調査、ガバナンスを行うクラウド アクセス セキュリティ ブローカー | 横方向の動きとデータ流出。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
+| Microsoft 365 Defender | シグナルを統合し、機能を単一のソリューションに調整します。 <br><br> セキュリティ担当者が脅威シグナルを結合し、脅威の範囲と影響を完全に特定できるようにします。 <br><br> 攻撃を防止または停止し、影響を受けるメールボックス、エンドポイント、およびユーザー ID を自己回復するためのアクションを自動化します。 | インシデント。これは、攻撃を構成するアラートとデータを組み合わせたものです。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
+| Microsoft Defender for Identity |  クラウドベースのセキュリティ インターフェイスを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダー アクションを識別、検出、調査するには、オンプレミスの Active Directory Domain Services (AD DS) シグナルを使用します。 | AD DS アカウントの資格情報の侵害。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
+| Microsoft Defender for Office 365 | メール メッセージ、リンク (URL)、共同作業ツールによってもたらされる悪意のある脅威から組織を保護します。 <br><br> マルウェア、フィッシング、スプーフィング、その他の攻撃の種類に対する保護。 | フィッシング攻撃。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
+| Microsoft Defender for Endpoint | エンドポイント (デバイス) 全体の高度な脅威の検出と対応を可能にします。 | マルウェアのインストールとデバイスの侵害。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
+| Azure Active Directory(Azure AD) ID 保護 | ID ベースのリスクの検出と修復と、それらのリスクの調査を自動化します。 | Azure AD アカウントと特権のエスカレーションに対する資格情報の侵害。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
+| Defender for Cloud Apps | Microsoft とサードパーティのすべてのクラウド サービスを対象に、検出、調査、ガバナンスを行うクラウド アクセス セキュリティ ブローカー。 | 横方向の動きとデータ流出。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
 |
 
 ### <a name="3-identities"></a>3. ID
 
 | 機能 | 説明 | 予防に役立ちます... | ライセンス |
 |:-------|:-----|:-------|:-------|
-|Azure AD パスワード保護|共通のリストとカスタム エントリからのパスワードをブロックします。|クラウドまたはオンプレミスのユーザー アカウントのパスワードの決定。|Microsoft 365 E3 または Microsoft 365 E5|
-|条件付きアクセスが適用されている MFA|条件付きアクセス ポリシーを使用したサインインのプロパティに基づいて MFA を要求します。|資格情報の侵害とアクセス。|Microsoft 365 E3 または Microsoft 365 E5|
-|リスクベースの条件付きアクセスが適用されている MFA|Azure AD Identity Protection を使用したユーザー サインインのリスクに基づいて MFA を要求します。 |資格情報の侵害とアクセス。|Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3|
+|Azure AD パスワード保護 | 共通のリストとカスタム エントリからのパスワードをブロックします。 | クラウドまたはオンプレミスのユーザー アカウントのパスワードの決定。 |Microsoft 365 E3 または Microsoft 365 E5|
+|条件付きアクセスが適用されている MFA | 条件付きアクセス ポリシーを使用したサインインのプロパティに基づいて MFA を要求します。 | 資格情報の侵害とアクセス。 | Microsoft 365 E3 または Microsoft 365 E5|
+|リスクベースの条件付きアクセスが適用されている MFA | Azure AD Identity Protection を使用したユーザー サインインのリスクに基づいて MFA を要求します。 |資格情報の侵害とアクセス。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3|
 |
 
 ### <a name="4-devices"></a>4. デバイス
@@ -188,10 +188,10 @@ Microsoft 365 テナント用にデプロイされたソリューションの 5 
 
 | 機能 | 説明 | 予防に役立ちます... | ライセンス |
 |:-------|:-----|:-------|:-------|
-| Microsoft Intune | デバイスと、デバイス上で実行されるアプリケーションを管理する  | デバイスまたはアプリの侵害とアクセス。 | Microsoft 365 E3 または E5 |
+| Microsoft Intune | デバイスと、デバイス上で実行されるアプリケーションを管理します。  | デバイスまたはアプリの侵害とアクセス。 | Microsoft 365 E3 または E5 |
 |  |  |  |  |
 
-Windows 10 デバイス (プレビュー)
+Windows 11 または 10 デバイス用:
 
 | 機能 | 説明 | 役立ちます... | ライセンス |
 |:-------|:-----|:-------|:-------|
@@ -205,10 +205,10 @@ Windows 10 デバイス (プレビュー)
 
 | 機能 | 説明 | 役立ちます... | ライセンス |
 |:-------|:-----|:-------|:-------|
-| コントロールされたフォルダー アクセス | 既知の信頼できるアプリの一覧に対してアプリをチェックしてデータを保護する | ファイルがランサムウェアによって変更または暗号化されないようにします。 | Microsoft 365 E3 または Microsoft 365 E5 |
+| コントロールされたフォルダー アクセス | 既知の信頼できるアプリの一覧に対してアプリをチェックしてデータを保護します。 | ファイルがランサムウェアによって変更または暗号化されないようにします。 | Microsoft 365 E3 または Microsoft 365 E5 |
 | Microsoft Information Protection | 身代金要求の対象となっている情報に対して、秘密度ラベルの適用が可能 | 流出した情報の使用を防ぎます。 | Microsoft 365 E3 または Microsoft 365 E5 |
-| データ損失防止 (DLP) | 機密データを保護し、ユーザーによる不適切な共有を防止することでリスクを軽減する | データ流出を防止する | Microsoft 365 E3 または Microsoft 365 E5 |
-| Microsoft Defender for Cloud Apps | 検出、調査、ガバナンスのためのクラウド アクセス セキュリティ ブローカー | 横方向の動きを検出し、データ流出を防ぎます。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
+| データ損失防止 (DLP) | 機密データを保護し、ユーザーによる不適切な共有を防止することでリスクを軽減します。 | データ流出を防止する | Microsoft 365 E3 または Microsoft 365 E5 |
+| Defender for Cloud Apps | 検出、調査、ガバナンスのためのクラウド アクセス セキュリティ ブローカー。 | 横方向の動きを検出し、データ流出を防ぎます。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
 |
 
 ## <a name="impact-on-users-and-change-management"></a>ユーザーへの影響と変更管理
@@ -240,6 +240,7 @@ Microsoft の主な情報:
 - [ランサムウェアや強要から迅速に保護する](/security/compass/protect-against-ransomware)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (10- 19 ページを参照ください)
 - [ランサムウェア: Microsoft 365 Defender ポータルの脅威分析ノードの蔓延する継続的な脅威](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)に関するレポート (これらの「ライセンス要件」 を参照ください)
+- Microsoft 検出対応チーム (DART) ランサムウェアの[アプローチとベスト プラクティス](/security/compass/incident-response-playbook-dart-ransomware-approach)および[ケース スタディ](/security/compass/dart-ransomware-case-study)
 
 Microsoft 365:
 
