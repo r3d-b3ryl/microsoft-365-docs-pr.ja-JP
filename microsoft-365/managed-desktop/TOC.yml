@@ -112,16 +112,23 @@
           href: get-started/localization.md
         - name: 新しいデバイスを検証する
           href: get-started/validate-device.md
-        - name: デバイスをセットアップする
-          href: get-started/set-up-devices.md
+        - name: デバイスを準備する
+          href: null
           items:
-            - name: 新しいデバイスを自分で登録する
-              href: get-started/register-devices-self.md
+            - name: 開始する
+              href: get-started/prepare-devices.md
+            - name: デバイスの登録
+              href: null
               items:
-                - name: デバイスを登録するためのパートナー向け手順
-                  href: get-started/register-devices-partner.md
-            - name: 既存のデバイスをj自分で登録する
-              href: get-started/register-reused-devices-self.md
+                - name: デバイスの登録方法
+                  href: get-started/device-registration-methods.md
+                  items:
+                    - name: 手動登録
+                      href: get-started/manual-registration.md
+                    - name: パートナーの登録
+                      href: get-started/partner-registration.md
+                    - name: 既存のデバイスの手動登録
+                      href: get-started/manual-registration-existing-devices.md
         - name: ユーザー サポート機能を有効にする
           href: get-started/enable-support.md
         - name: ユーザーがデバイスを使えるようにする
@@ -184,5 +191,5 @@
               href: working-with-managed-desktop/config-setting-deploy.md
         - name: Microsoft マネージド デスクトップを使用して Windows 11 をプレビューおよびテストする
           href: working-with-managed-desktop/test-win11-mmd.md
-    - name: Microsoft マネージド デスクトップのドキュメントの変更履歴
+    - name: 変更履歴
       href: change-history-managed-desktop.md

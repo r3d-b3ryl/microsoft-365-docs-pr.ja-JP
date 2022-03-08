@@ -36,9 +36,9 @@
       items:
         - name: 概要
           href: eval-overview.md
-        - name: 評価環境を構築する
+        - name: 手順 1. 評価環境を構築する
           href: eval-create-eval-environment.md
-        - name: Defender for Identity
+        - name: 手順 2。 Defender for Identity
           items:
             - name: 概要
               href: eval-defender-identity-overview.md
@@ -48,7 +48,7 @@
               href: eval-defender-identity-enable-eval.md
             - name: Pilot Defender for Identity
               href: eval-defender-identity-pilot.md
-        - name: Defender for Office 365
+        - name: 手順 3. Defender for Office 365
           items:
             - name: 概要
               href: eval-defender-office-365-overview.md
@@ -58,7 +58,7 @@
               href: eval-defender-office-365-enable-eval.md
             - name: Pilot Defender for Office
               href: eval-defender-office-365-pilot.md
-        - name: Defender for Endpoint
+        - name: 手順 4. Defender for Endpoint
           items:
             - name: 概要
               href: eval-defender-endpoint-overview.md
@@ -68,7 +68,7 @@
               href: eval-defender-endpoint-enable-eval.md
             - name: Pilot Defender for Endpoint
               href: eval-defender-endpoint-pilot.md
-        - name: Microsoft Defender for Cloud Apps
+        - name: 手順 5.  Microsoft Defender for Cloud Apps
           items:
             - name: 概要
               href: eval-defender-mcas-overview.md
@@ -78,7 +78,7 @@
               href: eval-defender-mcas-enable-eval.md
             - name: Microsoft Defender for Cloud Apps のパイロット
               href: eval-defender-mcas-pilot.md
-        - name: 調査と対応
+        - name: 手順 6. 調査と対応
           items:
             - name: 概要
               href: eval-defender-investigate-respond.md
@@ -86,7 +86,7 @@
               href: eval-defender-investigate-respond-simulate-attack.md
             - name: 機能を試す
               href: eval-defender-investigate-respond-additional.md
-        - name: 試用版を製品版に昇格する
+        - name: 手順 7. 無料試用版を運用版に昇格する
           href: eval-defender-promote-to-production.md
     - name: 作業の開始
       items:

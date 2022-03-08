@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用してレコードを宣言する。
-ms.openlocfilehash: 7c1599bd40059559b9e0d19383a08fe2382e6442
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 93e51698109819f4743dd4b5b45f5a5177739a2a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241701"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324845"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>保持ラベルを使用してレコードを宣言する
 
@@ -69,6 +69,11 @@ Microsoft 365 コンプライアンス センターの **レコード管理** �
 
 - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md) (規制レコードはサポート対象外です)
 
+## <a name="tenant-setting-for-editing-record-properties"></a>レコードのプロパティを編集するテナント設定
+
+保持ラベルを使用して SharePoint および OneDrive でアイテムをレコードとして (規制レコードではなく) 宣言する場合は、ファイルが 0 バイトを超える場合に[ロックされたレコード](record-versioning.md)のプロパティをユーザーが編集できる既定のテナント設定を変更する必要があるかどうかを検討してください。
+
+この既定値を変更するには、[[Microsoft 365 コンプライアンス センター]](https://compliance.microsoft.com/) > **[レコード管理]** > **[レコード管理設定]** > **[保持ラベル]** > **[レコードのプロパティの編集を許可する]** の順に移動し、**[ユーザーにレコードのプロパティの編集を許可する**] の設定をオフにします。
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>コンテンツに構成した保持ラベルを適用する
 
@@ -95,4 +100,4 @@ Exchange アイテムの場合:
 
 ## <a name="next-steps"></a>次の手順
 
-レコード管理でサポートされているシナリオの一覧については、「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios)」を参照してください。
+[SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理](record-versioning.md)を使用する方法を理解する。
