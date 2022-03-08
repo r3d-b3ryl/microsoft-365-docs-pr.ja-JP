@@ -22,27 +22,27 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: ee2aadd844eebf6da436c1d6d02b6244f093bfd6
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: d9f1b4619670c1998dbac584bf7ef4e1d1f940b6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171985"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314221"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Secure Score を使用してセキュリティの態勢を評価する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 このファイルは、ポータル https://security.microsoft.com/securescore のMicrosoft 365 Defender[表示されます](microsoft-365-defender.md)。
+Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 このファイルは、ポータルhttps://security.microsoft.com/securescoreのMicrosoft 365 Defender[があります](microsoft-365-defender.md)。
 
 必要な情報を迅速に見つけるために、Microsoft の改善アクションはグループに整理されています。
 
 - ID (Azure Active Directoryアカウント&ロール)
-- デバイス (Microsoft Defender for Endpoint, 既知 [の Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+- デバイス (Microsoft Defender for Endpoint( [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 - アプリ (電子メール アプリとクラウド アプリ(Office 365 Microsoft Defender for Cloud Apps を含む)
 
 >[!NOTE]
->Microsoft Secure Score の最近のリリースでは、スコア付けモデルが改善され、Microsoft Secure Score が一時的に Identity Secure Score および Graph API と互換性がありません。 [詳細の表示](microsoft-secure-score-whats-new.md)
+>Microsoft Secure Score の最近のリリースでは、スコアリング モデルが改善され、Microsoft Secure Score が一時的に Identity Secure Score および Graph API と互換性がありません。 [詳細の表示](microsoft-secure-score-whats-new.md)
 
 Microsoft Secure Score の概要ページで、これらのグループ間でのポイントの分割方法と使用可能なポイントを確認します。 また、合計スコアの全体表示、ベンチマーク比較によるセキュリティで保護されたスコアの履歴傾向、スコアを向上させるために実行できる優先順位付けされた改善アクションを取得できます。
 
@@ -82,7 +82,7 @@ Microsoft Secure Score の概要ページで、これらのグループ間での
 
 - [ **管理] を** 選択して構成画面に移動し、変更を行います。 その後、アクションが価値のあるポイントを取得し、フライアウトに表示されます。ポイントの更新には通常約 24 時間かかります。
 
-- [ **共有] を** 選択して、改善アクションへの直接リンクをコピーします。 また、リンクを共有するプラットフォーム (メール、Microsoft Planner など) をMicrosoft Teams選択できます。
+- [ **共有] を** 選択して、改善アクションへの直接リンクをコピーします。 また、リンクを共有するプラットフォーム (メール、Microsoft Planner などMicrosoft Teams選択できます。
 
 メモ **を追加** して、進行状況やコメントする他の項目を追跡します。 改善アクションに独自の **タグ** を追加する場合は、それらのタグでフィルター処理できます。
 
@@ -97,7 +97,7 @@ Microsoft Secure Score の概要ページで、これらのグループ間での
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>脅威& 脆弱性の管理改善アクション
 
-[デバイス] カテゴリの改善アクションでは、状態を選択できません。 代わりに、アクションを実行する脅威と脆弱性の管理[関連付けられている](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)セキュリティ[Microsoft Defender セキュリティ センター指示されます](/windows/security/threat-protection/microsoft-defender-atp/use)。 選択した例外と、作成する正当化は、そのポータルに固有です。 Microsoft Secure Score ポータルには表示されません。
+[デバイス] カテゴリの改善アクションでは、状態を選択できません。 代わりに、アクションを実行する脅威と脆弱性の管理[関連付けられている](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)セキュリティMicrosoft 365 Defender指示されます。 選択した例外と、作成する正当化は、そのポータルに固有です。 Microsoft Secure Score ポータルには表示されません。
 
 #### <a name="completed-improvement-actions"></a>改善アクションの完了
 

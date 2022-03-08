@@ -26,17 +26,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: AutoPilot をWindowsして、従業員が使用できる状態Windows 10新しいデバイスをセットアップする方法について学習します。
-ms.openlocfilehash: 4b187d5e8f9acc8fb76e77770ec88790394dfbe3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: AutoPilot Windowsを使用して、従業員が使用できる状態Windows 10新しいデバイスをセットアップする方法について学習します。
+ms.openlocfilehash: 12e86102633ddfc19960fb561b2a626da29f0560
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165642"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314015"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
 
-AutoPilot Windowsを使用して、ビジネス用の新しい Windows 10 デバイスをセットアップして、従業員に提供するときに使用できる状態にできます。
+> [!NOTE]
+> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 この機能は、デバイスに追加のセキュリティ機能を提供します。 [Defender for Business の詳細については、「Defender for Business」を参照してください](../../security/defender-business/mdb-overview.md)。
+
+AutoPilot Windowsを使用して、ビジネス用の新しい  Windows 10 デバイスをセットアップして、従業員に提供するときに使用できる状態にできます。
   
 ## <a name="device-requirements"></a>デバイスの要件
 
@@ -52,7 +55,7 @@ AutoPilot Windowsを使用して、ビジネス用の新しい Windows 10 デバ
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
 
-2. 左側のナビゲーション ウィンドウで、[デバイスの **自動パイロット]** \> **を選択します**。
+2. 左側のナビゲーション ウィンドウで、[デバイスの **自動操縦]** \> **を選択します**。
 
     ![管理センターで、[デバイス] を選択し、[自動パイロット] を選択します。](../../media/AutoPilot.png)
   
@@ -60,7 +63,7 @@ AutoPilot Windowsを使用して、ビジネス用の新しい Windows 10 デバ
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. [デバイスの **アップロード .csv付** きファイル] ページで、準備されたファイルがある場所を.CSVし、[次へ] を **開** \> **きます**。 ファイルには 3 つのヘッダーが必要です。
+3. [デバイスの **アップロード .csv** を含むファイル] ページで、準備されたファイルがある場所を参照.CSV、[次へ] を **開** \> **きます**。 ファイルには 3 つのヘッダーが必要です。
     
     - 列 A:デバイスのシリアル番号
     
@@ -68,14 +71,14 @@ AutoPilot Windowsを使用して、ビジネス用の新しい Windows 10 デバ
     
     - 列 C:ハードウェア ハッシュ
     
-    この情報は、ハードウェア ベンダーから取得するか [、Get-WindowsAutoPilotInfo PowerShell](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) スクリプトを使用して CSV ファイルを生成できます。 
+    この情報は、ハードウェア ベンダーから取得するか、 [Get-WindowsAutoPilotInfo PowerShell](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) スクリプトを使用して CSV ファイルを生成できます。 
     
     詳細については、[デバイスの一覧の CSV ファイル](../misc/device-list.md)を参照してください。また、[ **デバイスの一覧を含む .csv ファイルのアップロード**] ページでサンプル ファイルをダウンロードすることもできます。 
     
 > [!NOTE]
-> このスクリプトでは、WMI を使用して、ユーザーがデバイスを自動パイロットに登録するために必要Windowsします。 結果の CSV ファイルが Windows 製品 ID (PKID) の値を収集しないのは正常です。これはデバイスを登録する必要はありません。出力 CSV に PKID が NULL である場合は、完全に問題ありません。 シリアル番号とハードウェア ハッシュだけが設定されます。
+> このスクリプトでは、WMI を使用して、ユーザーがデバイスを自動パイロットに登録するために必要Windowsします。 デバイスの登録には必須ではなく、出力 CSV で PKID が NULL である場合は完全に問題ありませんので、結果の CSV ファイルが Windows 製品 ID (PKID) 値を収集しないのは正常です。 シリアル番号とハードウェア ハッシュだけが設定されます。
     
-4. [プロファイルの **割り当て** ] ページで、既存のプロファイルを選択するか、新しいプロファイルを作成できます。 まだ作成していない場合は、作成を求めるメッセージが表示されます。 
+4. [プロファイルの **割り当て] ページ** で、既存のプロファイルを選択するか、新しいプロファイルを作成できます。 まだ作成していない場合は、作成を求めるメッセージが表示されます。 
     
     プロファイルは、1 つのデバイスまたはデバイスのグループに適用できる設定のコレクションです。
     
@@ -85,9 +88,9 @@ AutoPilot Windowsを使用して、ビジネス用の新しい Windows 10 デバ
     
     - 会社のブランドを含む、サインイン エクスペリエンスを作成します。
     
-    - ConnectアカウントにデバイスをAzure Active Directoryし、デバイスによって管理されるアカウントを自動的に登録Microsoft 365 Business Premium。
+    - ConnectをアカウントにAzure Active Directoryし、デバイスによって管理されるアカウントを自動的に登録Microsoft 365 Business Premium。
     
-    詳細については、「概要 [- AutoPilot プロファイルの設定」を参照してください](autopilot-profile-settings.md)。 
+    詳細については、「 [概要 - AutoPilot Profile settings」を参照してください](autopilot-profile-settings.md)。 
     
 5. 他の設定には、[ **プライバシーの設定をスキップする**] や [ **ユーザーがローカルの管理者になることを許可しない**] があります。既定では、両方が [ **オフ**] に設定されます。 
     
@@ -98,4 +101,4 @@ AutoPilot Windowsを使用して、ビジネス用の新しい Windows 10 デバ
 ## <a name="related-content"></a>関連コンテンツ
 
 [概要 - AutoPilot プロファイルの設定](autopilot-profile-settings.md) (記事)\
-[デバイスとアプリ データを保護するためのオプション](../devices/choose-device-security.md) (記事)
+[デバイスとアプリ データを保護](../devices/choose-device-security.md)するためのオプション (記事) ビジネス プランのセキュリティ保護Microsoft 365 [10 の方法](../security-and-compliance/secure-your-business-data.md)

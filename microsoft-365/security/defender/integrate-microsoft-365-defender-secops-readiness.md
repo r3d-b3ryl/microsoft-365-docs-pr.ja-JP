@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,27 +22,27 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ca58d56e9caf6aa8a359a0776fc160cca04fec8a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 1197edf14977c0232936531399d726f62ab70889
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171792"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314309"
 ---
-# <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>手順 2. ゼロトラスト フレームワークを使用して SOC 統合準備評価を実行する
+# <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>手順 2。 ゼロトラスト フレームワークを使用して SOC 統合準備評価を実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-セキュリティ 運用センター (SOC) チームの主要な機能が定義された後、組織の次のステップは、ゼロトラストアプローチを通じて Microsoft 365 Defender の導入に備[える方法です](/security/zero-trust/)。 導入は、最新の業界をリードするプラクティスを使用して Microsoft 365 Defender を展開するために必要な要件を特定し、Microsoft 365 Defenderの機能を環境に対して評価するのに役立ちます。
+セキュリティ 運用センター (SOC) チームの主要な機能が定義された後、組織の次のステップは、ゼロトラストアプローチを通じて Microsoft 365 Defender の導入に備[える方法です](/security/zero-trust/)。 導入は、最新の業界をリードするプラクティスを使用してMicrosoft 365 Defenderを展開するために必要な要件を判断し、Microsoft 365 Defenderの機能を環境に対して評価するのに役立ちます。
 
 このアプローチは、強力な保護基盤に基づいており、ID、エンドポイント (デバイス)、データ、アプリ、インフラストラクチャ、ネットワークなどの主要な分野が含まれます。 準備状況評価チームは、サービスを有効にするための基礎要件がまだ満たされていないMicrosoft 365 Defender修復が必要な領域を決定します。
 
 SOC が SOC のプロセスを完全に最適化するために修復する必要がある項目の一部を次に示します。
 
-- **ID:** 従来のオンプレミス Active Directory ドメイン サービス (AD DS) ドメイン、MFA プランなし、特権アカウントのインベントリなし、その他。
+- **ID:** 従来のオンプレミスの Active Directory ドメイン サービス (AD DS) ドメイン、MFA プランなし、特権アカウントのインベントリなし、その他。
 - **エンドポイント (デバイス):** 従来のオペレーティング システム、限られたデバイス インベントリなど多数。
 - **データとアプリ:**  データ ガバナンスの標準が不足し、統合しないカスタム アプリのインベントリはありません。
 - **インフラストラクチャ:** 未許可の SaaS ライセンスの数が多く、コンテナー のセキュリティはありません。その他。
@@ -52,6 +52,6 @@ SOC が SOC のプロセスを完全に最適化するために修復する必�
 
 導入手順と使用例の作成については、手順 3 と 4 を参照してください。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [手順 3.サービスの SOC Microsoft 365 Defenderとの統合を計画する](integrate-microsoft-365-defender-secops-services.md)

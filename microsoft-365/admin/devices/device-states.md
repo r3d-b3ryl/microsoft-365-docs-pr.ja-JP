@@ -26,17 +26,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: ビジネス向け管理ホームの [デバイスアクション] リストで、さまざまなデバイスMicrosoft 365確認します。
-ms.openlocfilehash: c70740077e42d2dc7b8b15ac7e563d8e245ac455
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: ビジネス向け管理ホームの [デバイスの操作] リストで、さまざまなMicrosoft 365を確認します。
+ms.openlocfilehash: 798a753f6d523a3f586ac32698cda80a127c44b5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165522"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313819"
 ---
 # <a name="device-states"></a>デバイス状態
 
-この記事は、このMicrosoft 365 Business Premium。
+この記事は、ユーザーにMicrosoft 365 Business Premium。
+
+> [!NOTE]
+> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 この機能は、デバイスに追加のセキュリティ機能を提供します。 [Defender for Business の詳細については、「Defender for Business」を参照してください](../../security/defender-business/mdb-overview.md)。
 
 [ **デバイス アクション**] ([管理者のホーム] \> [ **デバイス アクション**]) の一覧にあるデバイスは、次のいずれかの状態になります。
   
@@ -44,7 +47,7 @@ ms.locfileid: "60165522"
   
 |**状態**|**説明**|
 |:-----|:-----|
-|Intune で管理  <br/> |管理は、Microsoft 365 Business Premium。  <br/> |
+|Intune で管理  <br/> |ユーザーによって管理Microsoft 365 Business Premium。  <br/> |
 |インベントリからの削除待ち  <br/> |Microsoft 365 Business Premiumから会社のデータを削除する準備が整っています。  <br/> |
 |回収を実行中です  <br/> |Microsoft 365 Business Premium現在、デバイスから会社のデータを削除しています。  <br/> |
 |インベントリからの削除失敗  <br/> | 会社データの削除アクションが失敗しました。  <br/> |
@@ -57,3 +60,7 @@ ms.locfileid: "60165522"
 |削除の保留中  <br/> |削除アクションが保留中です。  <br/> |
 |検出  <br/> |Microsoft 365 Business Premiumデバイスが検出されました。  <br/> |
    
+
+## <a name="see-also"></a>関連項目
+
+[ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法](../security-and-compliance/secure-your-business-data.md)

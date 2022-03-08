@@ -24,25 +24,28 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: ユーザーが自分のデバイスMicrosoft 365 PC に持っている会社のデータを削除するには、ビジネス向けアプリをWindowsしてください。
-ms.openlocfilehash: ec5734154913148945e3c37d80e6a5c994af85f9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: ユーザーが自分のデバイスMicrosoft 365 PC に持っている会社のデータを削除するために、ビジネスで Windowsする方法を確認します。
+ms.openlocfilehash: 7cd26dfc2ea73e32fb7588a4d1e15098594a9313
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165378"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313805"
 ---
 # <a name="remove-company-data-from-devices"></a>デバイスから会社のデータを削除する
 
-この記事は、このMicrosoft 365 Business Premium。
+この記事は、ユーザーにMicrosoft 365 Business Premium。
+
+> [!NOTE]
+> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 この機能は、デバイスに追加のセキュリティ機能を提供します。 [Defender for Business の詳細については、「Defender for Business」を参照してください](../../security/defender-business/mdb-overview.md)。
 
 ## <a name="remove-company-data"></a>会社データを削除する
 
-ビジネス向けMicrosoft 365を使用して、ユーザーが自分のデバイス上に持っている会社の[](app-protection-settings-for-android-and-ios.md)データや[](protection-settings-for-windows-10-devices.md)、Windowsによって保護されている pc を削除Microsoft 365。 **デバイスから会社データを削除すると、後でデータを復元することはできません** 。 
+ビジネス向けMicrosoft 365を使用して、ユーザーがデバイス上に持っている会社のデータや[](app-protection-settings-for-android-and-ios.md)、Windows[](protection-settings-for-windows-10-devices.md)によって保護されている pc を削除Microsoft 365。 **デバイスから会社データを削除すると、後でデータを復元することはできません** 。 
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
     
-2. 左側のナビゲーションで、[デバイスの管理]**を** \> **選択します**。  
+2. 左側のナビゲーションで、[デバイスの管理 **] を**\>**選択します**。  
   
 3. [管理 **] ページ** で、削除するデータを持つユーザーを選択または検索し、名前を選択します。 
     
@@ -53,4 +56,6 @@ ms.locfileid: "60165378"
 5. 確認ウィンドウで、[閉じる] **を選択** \> **します**。
     
 
+## <a name="see-also"></a>関連項目
 
+[ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法](../security-and-compliance/secure-your-business-data.md)

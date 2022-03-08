@@ -2,8 +2,8 @@
 title: 取得しているサブスクリプションが不明な場合
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,19 +16,19 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
+- commerce_subscriptions
 - okr_smb
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150
 description: '[製品] ページに移動して、組織が持つサブスクリプションを確認する方法について学習します。'
 ms.date: 01/21/2021
-ms.openlocfilehash: df18228d8b5b551f8c64246c96aa6f397ec13484
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad4c21b9cd4fbed746b8a272f56d5cb14be49d28
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153956"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314953"
 ---
 # <a name="what-subscription-do-i-have"></a>取得しているサブスクリプションが不明な場合
 
@@ -36,7 +36,7 @@ ms.locfileid: "60153956"
   
 **管理者ではない場合**: 「[ビジネスMicrosoft 365ライセンスに関する情報」を参照してください。](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 2. [製品 **] タブ** に、すべてのサブスクリプションが表示されます。 各サブスクリプション 行には、ライセンス、サブスクリプションの状態、請求に関する情報が含まれます。
 3. リストに表示される列を変更する場合は、[列の選択] **を選択します**。 列の選択を変更し、[保存] を **選択します**。
 4. 1 つのサブスクリプションの詳細を表示するには、そのサブスクリプションを選択します。

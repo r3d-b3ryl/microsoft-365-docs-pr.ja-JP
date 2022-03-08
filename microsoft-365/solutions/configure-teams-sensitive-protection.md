@@ -17,14 +17,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkSPO
 recommendations: false
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: edeeb0fc0f93ae962b85e113734dea1844b11d04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 42124881ac795c54288dee46e70dc1d5eccef3e3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213423"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314071"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -119,12 +120,11 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 
 サイトの既定の共有リンクの種類を更新するには
 
-1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
-2. **[サイト]** で、**[アクティブなサイト]** をクリックします。
-3. チームに関連付けられているサイトをクリックします。
-4. **[ポリシー]** タブで、**[外部共有]** の下側にある **[編集]** をクリックします。
-5. [既定の共有リンクの種類] で、**[組織レベルの設定と同じ]** チェック ボックスをオフにして、**[特定のユーザー (ユーザーが指定したユーザー人物のみ)]** を選びます。
-6. **[保存]** をクリックします。
+1. SharePoint 管理センターを開き、**[サイト]** で、<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**[アクティブなサイト]**</a> を選択します。
+1. チームに関連付けられているサイトを選択します。
+1. **[ポリシー]** タブで、**[外部共有]** の下側にある **[編集]** をクリックします。
+1. [既定の共有リンクの種類] で、**[組織レベルの設定と同じ]** チェック ボックスをオフにして、**[特定のユーザー (ユーザーが指定したユーザー人物のみ)]** を選びます。
+1. **[保存]** を選択します。
 
 チーム作成プロセスの一環としてスクリプトを実行する場合は、`-DefaultSharingLinkType Direct` パラメーターで [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) を使用して、既定の共有リンクを *特定のユーザー* に変更することができます。
 

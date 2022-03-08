@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
+ms.author: siosulli
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 56c7c2ab6a8023be8a570c5b33c64112d8545df1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9045c9a425b78f46d39ebb63664b693bf40252c4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767666"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314387"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -52,7 +52,7 @@ Microsoft Defender for Endpoint は、デバイス検出機能を提供し、追
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
 
-この機能と組み合わせて、Microsoft Defender for Endpoint にデバイスをオンボードするセキュリティ推奨事項は、既存の脅威と脆弱性の管理エクスペリエンスの一環として利用できます。
+この機能と組み合わせて、Microsoft Defender for Endpoint にデバイスをオンボードするセキュリティ推奨事項は、既存のセキュリティ エクスペリエンスの一部脅威と脆弱性の管理できます。
 
 ## <a name="discovery-methods"></a>探索メソッド
 
@@ -60,7 +60,7 @@ Microsoft Defender for Endpoint は、デバイス検出機能を提供し、追
 
 次の 2 つの検出モードを使用できます。
 
-- **基本的な検出**: このモードでは、エンドポイントはネットワーク内のイベントを受動的に収集し、そこからデバイス情報を抽出します。 基本的な検出では、SenseNDR.exeネットワーク データ収集にバイナリを使用し、ネットワーク トラフィックは開始されません。 エンドポイントは、オンボードデバイスで見られるすべてのネットワーク トラフィックからデータを抽出するだけで構成されます。 基本的な検出では、ネットワーク内の管理されていないエンドポイントの表示が制限されます。
+- **基本的な検出**: このモードでは、エンドポイントはネットワーク内のイベントを受動的に収集し、そこからデバイス情報を抽出します。 基本的な検出では、SenseNDR.exeデータ収集に対してバイナリを使用し、ネットワーク トラフィックは開始されません。 エンドポイントは、オンボードデバイスで見られるすべてのネットワーク トラフィックからデータを抽出するだけで構成されます。 基本的な検出では、ネットワーク内の管理されていないエンドポイントの表示が制限されます。
 
 - **標準検出** (推奨): このモードを使用すると、エンドポイントはネットワーク内のデバイスをアクティブに検索して、収集されたデータを強化し、より多くのデバイスを検出し、信頼性の高い一貫性のあるデバイス インベントリを構築できます。 パッシブ方式を使用して観測されたデバイスに加えて、標準モードでは、ネットワークでマルチキャスト クエリを使用する一般的な検出プロトコルも利用して、さらに多くのデバイスを検索します。 標準モードでは、スマートでアクティブなプロブを使用して、観測されたデバイスに関する追加情報を検出し、既存のデバイス情報を強化します。 Standard モードを有効にすると、検出センサーによって生成される最小限のごくわずかのネットワーク アクティビティが、組織内のネットワーク監視ツールによって観察される可能性があります。
 
@@ -72,21 +72,23 @@ Microsoft Defender for Endpoint は、デバイス検出機能を提供し、追
 > [!NOTE]
 > 検出エンジンは、企業ネットワークで受信されるネットワーク イベントと企業ネットワーク外のネットワーク イベントを区別します。 企業ネットワークに接続されていないデバイスは、デバイス インベントリで検出または一覧表示されません。
 
-## <a name="device-inventory"></a>デバイス インベントリ
+## <a name="device-inventory"></a>デバイス一覧
 
-Microsoft Defender for Endpoint によって検出されたが、まだオンボードおよびセキュリティ保護されていないデバイスは、[エンドポイント] タブの [デバイス インベントリ] に表示されます。
+Microsoft Defender for Endpoint によって検出されたが、まだオンボードおよびセキュリティ保護されていないデバイスは、[コンピューターとモバイル] タブ内のデバイス インベントリに表示されます。
 
-[オンボーディングの状態] と呼ばれるデバイス インベントリ リストでフィルターを使用できます。これは、次の値を持つ場合があります。
+これらのデバイスを評価するには、オンボード状態と呼ばれるデバイス インベントリ リストのフィルターを使用できます。これは、次の値を持つ場合があります。
 
 - オンボード: エンドポイントは Microsoft Defender for Endpoint にオンボードされます。
 - オンボード可能: ネットワークでエンドポイントが検出され、オペレーティング システムは Microsoft Defender for Endpoint でサポートされているエンドポイントとして識別されましたが、現在オンボードされていません。 これらのデバイスのオンボーディングを強くお勧めします。
 - サポートされていません: エンドポイントはネットワークで検出されましたが、Microsoft Defender for Endpoint ではサポートされていません。
 - 不十分な情報: システムは、デバイスのサポート可能性を判断する必要があります。 ネットワーク内のより多くのデバイスで標準検出を有効にすると、検出された属性を強化できます。
 
-![デバイス インベントリ ダッシュボードのイメージ。](images/2b62255cd3a9dd42f3219e437b956fb9.png)
+![デバイス インベントリ ダッシュボードのイメージ。](images/device-discovery-inventory.png)
 
 > [!TIP]
 > フィルターをいつでも適用して、デバイス インベントリ リストから管理されていないデバイスを除外できます。 また、API クエリのオンボーディング状態列を使用して、管理されていないデバイスをフィルター処理することもできます。
+
+詳細については、「デバイス インベントリ [」を参照してください](machines-view-overview.md)。
 
 ## <a name="network-device-discovery"></a>ネットワーク デバイスの検出
 
@@ -134,16 +136,6 @@ DeviceNetworkEvents
 | where ActionType == "ConnectionAcknowledged" or ActionType == "ConnectionAttempt"
 | take 10
 ```
-
-## <a name="changed-behavior"></a>変更された動作
-
-次のセクションでは、この機能が有効になっているときに Microsoft Defender for Endpoint および Microsoft 365 Defenderポータルで確認<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">する</a>変更点を示します。
-
-1. Microsoft Defender for Endpoint にオンボードされていないデバイスは、デバイス インベントリ、高度な検索、API クエリに表示される必要があります。 これにより、クエリ結果のサイズが大幅に増加する可能性があります。
-    1. Advanced Hunting の "DeviceInfo" テーブルと "DeviceNetworkInfo" テーブルには、検出されたデバイスが保持されます。 "OnboardingStatus" 属性を使用して、これらのデバイスをフィルター処理できます。
-    2. 検出されたデバイスは、ストリーミング API クエリ結果に表示される予定です。 これらのデバイスは、クエリでフィルターを使用 `OnboardingStatus` してフィルター処理できます。
-2. 管理されていないデバイスは、定義された条件に基づいて既存のデバイス グループに割り当てられます。
-3. まれに、標準検出によってネットワーク モニターやセキュリティ ツールでアラートがトリガーされる場合があります。 このようなイベントが発生した場合は、これらの問題が繰り返されるのを防ぐためのフィードバックをお寄せください。 特定のターゲットまたはサブネット全体が Standard Discovery によってアクティブにプローブされるのを明示的に除外できます。
 
 ## <a name="next-steps"></a>次の手順
 

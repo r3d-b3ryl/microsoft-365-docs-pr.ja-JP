@@ -14,18 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ce0fd83e95be6fd1f26b40a5992303162a265c3e
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: bd8b3c997a8efceb2791eca4de0b0e42d47513f8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300457"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314407"
 ---
 # <a name="get-live-response-results"></a>ライブ応答の結果を取得する
 
@@ -75,7 +73,7 @@ ms.locfileid: "61300457"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可を選択する方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
@@ -102,7 +100,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、コマンドへのリンクを保持するオブジェクトを含む 200 Ok 応答コードを value プロパティ *に返* します。 このリンクは 30 分間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。 有効期限が切れたリンクは、別の呼び出しによって再作成できます。また、ライブ応答を再度実行する必要はありません。
+成功した場合、このメソッドは、コマンドへのリンクを保持するオブジェクトを含む 200 Ok 応答コードを *value プロパティに返* します。 このリンクは 30 分間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。 有効期限が切れたリンクは、別の呼び出しによって再作成できます。また、ライブ応答を再度実行する必要はありません。
 
 *Runscript トランスクリプト プロパティ:*
 
@@ -150,7 +148,7 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [コンピューター アクション API の取得](get-machineaction-object.md)
 - [マシン アクションのキャンセル](cancel-machine-action.md)

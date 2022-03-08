@@ -12,18 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Microsoft Web サイトのコンテンツ センター サイト テンプレートをプロビジョニングして使用するSharePoint Syntex。
-ms.openlocfilehash: 342a8b42b8aa8a9bb60867f57379ce00db068c17
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: Microsoft SharePoint Syntex でコンテンツ センター サイト テンプレートをプロビジョニングして使用する方法について説明SharePoint Syntex。
+ms.openlocfilehash: 2650b98decc7977c4343f75b27ed46e2381abdef
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62902656"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314547"
 ---
 # <a name="use-the-content-center-site-template-for-microsoft-sharepoint-syntex"></a>Microsoft サイトのコンテンツ センター サイト テンプレートを使用SharePoint Syntex
 
-コンテンツ SharePoint Syntexサイトは、ユーザーの機能をよりよく理解SharePoint、すぐに展開できるサイト テンプレートSharePoint Syntexです。
+コンテンツ SharePoint Syntex サイトは、サイト の機能をよりよく理解SharePointな、すぐに展開できるSharePoint Syntexです。
 
 独自のモデルを作成してトレーニングするために必要なツールと情報について紹介します。 その後、このサイトを中央コンテンツ リポジトリとして、または独自のコンテンツ モデルを管理するためのコントロール センター SharePoint Syntexできます。
 
@@ -38,9 +37,9 @@ ms.locfileid: "62902656"
 ![コンテンツ センター サイト テンプレートのプロビジョニング ページのスクリーンショット。](../media/content-understanding/content-center-site-provisioning-page.png)
 
 > [!NOTE]
-> サイトをプロビジョニングするには、グローバル管理者SharePoint管理者Microsoft 365必要があります。
+> サイトをプロビジョニングするには、SharePoint管理者Microsoft 365管理者である必要があります。
 
-1. ページの外観ブックの [メイン ページSharePoint](https://lookbook.microsoft.com/)、[デザインの表示] メニューで、[コンテンツ センター]  >  SharePoint Syntex **SharePoint Syntex選択します**。
+1. 検索ブックのメイン [ページ](https://lookbook.microsoft.com/) > SharePoint、[デザインの表示] メニューで、[コンテンツ  センター] SharePoint Syntex **SharePoint Syntex選択します**。
 
 2. [コンテンツ **センター] ページで** 、[テナントに **追加] を選択します**。
 
@@ -62,7 +61,7 @@ ms.locfileid: "62902656"
 
 ### <a name="get-started-with-sharepoint-syntex"></a>ユーザー設定のSharePoint Syntex
 
-このページの概要SharePoint Syntex、組織で使用する方法について説明します。 概要を説明するビデオを見て、SharePoint Syntex役立つトレーニングを見つける。
+組織の概要をSharePoint Syntex、組織で使用する方法について説明します。 概要を説明するビデオを見て、SharePoint Syntex役立つトレーニングを見つける。
 
 ### <a name="learn-about-model-types"></a>モデルの種類の詳細
 
@@ -78,7 +77,7 @@ ms.locfileid: "62902656"
 
 ### <a name="streamline-everyday-processes-and-tasks"></a>日常のプロセスとタスクを合理化する
 
-ユーザー設定を使用して手動SharePoint Syntex、組織の自動化と合理化を行う方法について学習します。
+ユーザーが手動でSharePoint Syntexを使用して、組織の自動化と合理化を行う方法について学習します。
 
 ### <a name="manage-compliance"></a>コンプライアンスの管理
 
@@ -90,6 +89,6 @@ ms.locfileid: "62902656"
 
 ### <a name="find-additional-resources"></a>その他のリソースの検索
 
-この他のリソースとシナリオを見て、詳細を確認SharePoint Syntex。
+その他のリソースとシナリオを見て、詳細については、SharePoint Syntex。
 
 

@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 1dd603ae4f9f694b3b17794a71d1d5cc44800584
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 0bab6d8aa8aaef29b67ed8460f2d48e65cd24aa1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074416"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314323"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>インシデントを調査Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="チェック マーク列からインシデントを選択する例。" lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
 
-その場合、概要ウィンドウが開き、インシデントに関する重要な情報 (重大度、割り当て先、インシデントの[MITRE ATT&CK &trade; ](https://attack.mitre.org/)カテゴリなど) が表示されます。 次に例を示します。
+その場合、概要ウィンドウが開き、インシデントに関する重要な情報 (重大度、割り当て先、 [インシデントの MITRE ATT&CK&trade;](https://attack.mitre.org/) カテゴリなど) が表示されます。 次に例を示します。
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="インシデントの概要ウィンドウの例。" lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
@@ -62,13 +62,13 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 [ **概要] ページ** では、インシデントに関する一番上の情報をスナップショットで確認できます。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="ポータル内のインシデントの [概要] ページMicrosoft 365 Defender例" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="ポータル内のインシデントの概要ページMicrosoft 365 Defender例" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 情報は、これらのセクションで整理されています。
 
 | Section | 説明 |
 |:-------|:-----|
-| アラートとカテゴリ | キル チェーンに対する攻撃の進行状況を視覚的および数値的に表示します。 他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender CK フレームワークの[MITRE ATT &trade;&配置](https://attack.mitre.org/)されます。 アラートのタイムラインには、アラートが発生した時系列の順序と、それぞれの状態と名前が表示されます。 |
+| アラートとカテゴリ | キル チェーンに対する攻撃の進行状況を視覚的および数値的に表示します。 他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender CK フレームワークの [MITRE ATT&配置&trade;](https://attack.mitre.org/)されます。 アラートのタイムラインには、アラートが発生した時系列の順序と、それぞれの状態と名前が表示されます。 |
 | 範囲 |  影響を受けたデバイス、ユーザー、メールボックスの数を表示し、リスク レベルと調査の優先度の順にエンティティを一覧表示します。 |
 | 証拠 | インシデントの影響を受けるエンティティの数を表示します。 |
 | インシデント情報 | タグ、状態、重大度などのインシデントのプロパティを表示します。 |
@@ -82,7 +82,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 - 重大度。
 - アラートに関与したエンティティ。
-- アラートのソース (Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Defender for Cloud Apps、およびアプリ ガバナンス)。
+- アラートのソース (Microsoft Defender for Identity、Microsoft Defender for Endpoint、microsoft Defender for Office 365、Defender for Cloud Apps、およびアプリ ガバナンス アドオン)。
 - リンクされた理由。
 
 次に例を示します。
@@ -119,14 +119,14 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 :::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="インシデントの [デバイス] ページの例。" lightbox="../../media/investigate-incidents/incident-devices.png":::
 
-デバイスのチェック マークを選択すると、デバイス、ディレクトリ データ、アクティブなアラート、ログオンしているユーザーの詳細を確認できます。 デバイスの名前を選択すると、Microsoft Defender for Endpoint デバイス インベントリにデバイスの詳細が表示されます。 次に例を示します。
+デバイスのチェック マークを選択すると、デバイス、ディレクトリ データ、アクティブなアラート、ログオンしているユーザーの詳細を確認できます。 デバイスの名前を選択すると、Defender for Endpoint デバイス インベントリにデバイスの詳細が表示されます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Microsoft Defender for Endpoint のデバイス ページの例。" lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Defender for Endpoint のデバイス ページの例。" lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
-デバイス ページから、すべての通知、タイムライン、セキュリティに関する推奨事項など、デバイスに関する追加情報を収集できます。 たとえば、[タイムライン]タブから、コンピューターのタイムラインをスクロールして、発生したアラートと一緒に、コンピューター上で観察されたイベントと動作を時系列順に表示できます。
+デバイス ページから、すべての通知、タイムライン、セキュリティに関する推奨事項など、デバイスに関する追加情報を収集できます。 たとえば、[タイムライン] タブから、コンピューターのタイムラインをスクロールして、発生したアラートと一緒に、コンピューター上で観察されたイベントと動作を時系列順に表示できます。
 
 > [!TIP]
-> デバイス ページでオンデマンド スキャンを実行できます。 [デバイス] Microsoft 365 Defenderで、[エンドポイント] を **選択>デバイス インベントリを選択します**。 通知があるデバイスを選択し、ウイルス対策スキャンを実行します。 ウイルス対策スキャンなどのアクションは追跡され、[デバイス インベントリ] ページ **に表示** されます。 詳細については、「デバイスでスキャン[を実行Microsoft Defender ウイルス対策」を参照してください](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
+> デバイス ページでオンデマンド スキャンを実行できます。 [デバイス] Microsoft 365 Defenderで、[エンドポイント] を選択 **>デバイス インベントリを選択します**。 通知があるデバイスを選択し、ウイルス対策スキャンを実行します。 ウイルス対策スキャンなどのアクションは追跡され、[デバイス インベントリ] ページ **に表示** されます。 詳細については、「デバイスで [Defender ウイルス対策スキャンを実行する」を参照してください](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
 
 ## <a name="users"></a>ユーザー
 
@@ -136,7 +136,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 ユーザーのチェック マークを選択すると、ユーザー アカウントの脅威、露出、連絡先情報の詳細を確認できます。 ユーザー名を選択すると、追加のユーザー アカウントの詳細が表示されます。
 
-ユーザーの調査で追加のユーザー情報を表示し、インシデントのユーザーを管理する方法 [について学習します](investigate-users.md)。
+ユーザーの調査で、追加のユーザー情報を表示し、インシデントのユーザーを管理する [方法について学習します](investigate-users.md)。
 
 
 ## <a name="mailboxes"></a>メールボックス
@@ -145,11 +145,11 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="インシデントのメールボックス ページの例。" lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
-メールボックスのチェック マークを選択すると、アクティブなアラートの一覧を表示できます。 メールボックス名を選択すると、Microsoft Defender for microsoft Defender の [エクスプローラー] ページに追加のメールボックスの詳細が表示Office 365。
+メールボックスのチェック マークを選択すると、アクティブなアラートの一覧を表示できます。 メールボックス名を選択すると、その他のメールボックスの詳細が [エクスプローラー] ページで [Defender for defender for Office 365。
 
 ## <a name="investigations"></a>調査
 
-[ **調査] タブ** には、このインシデントのアラート [によって](m365d-autoir.md) トリガーされる自動調査の一覧が表示されます。 自動調査は、Microsoft Defender for Endpoint および Defender for Office 365 で実行するように自動調査を構成した方法に応じて、修復アクションを実行するか、アナリストによるアクションの承認を待機します。
+[ **調査] タブ** には、このインシデントのアラート [によって](m365d-autoir.md) トリガーされる自動調査の一覧が表示されます。 自動調査では、エンドポイント用 Defender および Defender for Office 365 で実行するように自動調査を構成した方法に応じて、修復アクションを実行するか、アナリストによるアクションの承認を待ちます。
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="インシデントの [調査] ページの例。" lightbox="../../media/investigate-incidents/incident-investigations.png":::
 
@@ -163,7 +163,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 調査グラフを使用すると、攻撃の一部であるさまざまな不審なエンティティと、ユーザー、デバイス、メールボックスなどの関連する資産を接続することで、攻撃の全範囲をすばやく把握できます。 
 
-詳細については、「自動調査と応答[」](m365d-autoir.md)を参照Microsoft 365 Defender。
+詳細については、「自動調査と応答」を参照[Microsoft 365 Defender](m365d-autoir.md)。
 
 ## <a name="evidence-and-response"></a>証拠と対応
 
@@ -177,9 +177,9 @@ Microsoft 365 Defenderアラート内のすべてのインシデントでサポ�
 
 ## <a name="graph-preview"></a>Graph (プレビュー)
 
-**[Graph]** タブには、攻撃の全範囲、攻撃がネットワーク経由で時間の間にどのように広がったか、開始した場所、攻撃者がどこまで攻撃を行ったかが表示されます。 攻撃の一部であるさまざまな不審なエンティティを、ユーザー、デバイス、メールボックスなどの関連資産と接続します。 
+[**Graph**] タブには、攻撃の全範囲、攻撃がネットワーク経由で時間の間にどのように広がったか、開始した場所、攻撃者がどこまで攻撃を行ったかが表示されます。 攻撃の一部であるさまざまな不審なエンティティを、ユーザー、デバイス、メールボックスなどの関連資産と接続します。 
 
-[オプション] **Graph** から、次の方法を実行できます。
+[オプション] **Graph** で、次の方法を実行できます。
 
 1. 時間の間に発生したアラートとグラフ上のノードを再生して、攻撃の時系列を把握します。
 
@@ -193,7 +193,7 @@ Microsoft 365 Defenderアラート内のすべてのインシデントでサポ�
 
 3. 関連するエンティティに基づいてアラートを強調表示します。
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="[通知] ページの警告のGraph例" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="[警告] ページの警告のGraph例" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
 ## <a name="next-steps"></a>次の手順
 
