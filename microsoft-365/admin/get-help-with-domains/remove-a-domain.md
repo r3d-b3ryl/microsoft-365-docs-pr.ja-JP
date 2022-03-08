@@ -2,8 +2,8 @@
 title: ドメインを削除する
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: ユーザーから古いドメインを削除し、Microsoft 365別のドメインに移動するか、サブスクリプションをキャンセルする方法について学習します。
-ms.openlocfilehash: 875858804912ab75d0a5a0bab45c9bb1614c82ca
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 3da47275e090296c9b192b4bd60ad19dd8cf4149
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765158"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316829"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
 
@@ -39,7 +39,7 @@ ms.locfileid: "62765158"
 別のサブスクリプション プランにドメインを追加する場合、ドメインをMicrosoft 365しますか? それとも、サブスクリプションをキャンセルするためですか? [プランやサブスクリプションを変更する](../../commerce/subscriptions/switch-to-a-different-plan.md)ことも、[サブスクリプションをキャンセル](../../commerce/subscriptions/cancel-your-subscription.md)することもできます。
 
 > [!TIP]
-> このトピックの手順に関するヘルプが必要な場合は、Microsoft の小規模ビジネス スペシャリストとの [作業を検討してください](https://go.microsoft.com/fwlink/?linkid=2186871)。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させるにつれて、従業員と一緒に 24 時間、中小企業の専門家にアクセスできます。
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
 ### <a name="step-1-move-users-to-another-domain"></a>手順 1: ユーザーを別のドメインに移動する
 
@@ -115,6 +115,9 @@ ms.locfileid: "62765158"
 
 ::: moniker range="o365-worldwide"
 
+> [!NOTE]
+> カスタム ドメインを削除する場合は、「カスタム ドメインを削除してから進む [」](#remove-a-custom-domain) を参照してください。
+
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
@@ -125,15 +128,44 @@ ms.locfileid: "62765158"
 
 ::: moniker-end
 
-2. [ドメイン **] ページ** で、削除するドメインを選択します。
+2. [**ドメイン**] ページで、削除するドメインを選択します。
 
-3. 右側のウィンドウで、[削除] を **選択します**。
+3. 右側のウィンドウで、[**削除**] を選択します。
 
-4. その他のプロンプトに従って、[閉じる] を **選択します**。
+4. 他の指示に従った後、[**閉じる**] を選択します。
+
+
+
+
+### <a name="remove-a-custom-domain"></a>カスタム ドメインを削除する
+
+サブスクリプションをキャンセルし、カスタム ドメインを使用する場合は、サブスクリプションをキャンセルする前に行う必要があるいくつかの追加手順があります。 
+
+#### <a name="change-your-domain-nameserver-records-if-needed"></a>ドメインのネームサーバー レコードを変更する (必要な場合)
+
+カスタム ドメインをセットアップすると、ドメインが Microsoft 365 サービスで機能するように、DNS レコードが追加されます。ドメインを削除する前に、DNS ホストでドメインの MX レコードなどの DNS レコードを更新してください。
+
+たとえば、DNS ホストで MX レコードを変更します。ドメインに送信される電子メールは、Microsoft アドレスに送信されなくなり、代わりに新しいメール プロバイダーに送信されます。(MX レコードは、ドメインの電子メールがどこに送信されるかを決定します。)
+
+- ネームサーバー (NS) レコードが [Microsoft 365 ネームサーバーをポイントしている](../../admin/setup/add-domain.md)場合、新しい DNS ホストをポイントするように NS レコードを変更するまでは、MX レコードの変更は有効になりません (手順 2 を参照)。
+
+- MX レコードを更新する前に、電子メールを切り替える日付、使う予定の新しいメール プロバイダーをユーザーに通知します。 また、ユーザーが既存の Microsoft メールを新しいプロバイダーに移行する場合は、追加の手順を実行する必要があります。
+
+- MX レコードを変更した日は、必ずデータを[](/microsoft-365/commerce/subscriptions/cancel-your-subscription#save-your-data)保存し、必要に[応じてOfficeアンインストールしてください](/microsoft-365/commerce/subscriptions/cancel-your-subscription#uninstall-office-optional)。
+
+#### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>(カスタム ドメインを使用している場合) ドメイン MX レコードとその他の DNS レコードを更新する
+
+ドメインをセットアップするときに、ネームサーバー (NS) レコードを Microsoft 365 に切り替えた場合は、MX レコード、および使用する予定の DNS ホストの他の DNS レコードを設定または更新してから、NS レコードをその DNS ホストに変更する必要があります。
+
+ドメインをセットアップするときに NS レコードを切り替えなかった場合は、MX レコードを変更すると、電子メールがすぐに新しいアドレスに送信されます。
+
+NS レコードを変更するには、「ネームサーバーを変更して任意のドメイン レジストラー Microsoft 365[設定する」を参照してください](../../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。
+
+
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>ドメインが削除されるまで、どれくらいかかりますか?
 
-Microsoft 365 がセキュリティ グループ、配布リスト、ユーザー、Microsoft 365 グループなどの多くの場所で参照されていない場合、ドメインを削除するにはわずか 5 分かかります。 ドメインを使用する参照が多い場合、ドメインが削除されるまでに数時間 (1 日) 程度かかることもあります。
+セキュリティ グループ、配布リスト、ユーザー、Microsoft 365 グループなどの多くの場所で参照されていなければ、5 分程度で Microsoft 365 からドメインが削除されます。 ドメインを使用する参照が多い場合、ドメインが削除されるまでに数時間 (1 日) 程度かかることもあります。
 
 数百から数千のユーザーがいる場合は、PowerShell を使用してすべてのユーザーに対するクエリを実行してから、別のドメインに移動してください。これを行わないと、一部のユーザーが UI に表示されない可能性があり、ドメインを削除しようとしてもなぜか失敗します。詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain) を使用します。
 
@@ -151,7 +183,7 @@ Microsoft 365 がセキュリティ グループ、配布リスト、ユーザ�
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> アカウントから [".partner.onmschina.cn" ドメイン](../setup/domains-faq.yml) を削除することはできません。 ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".partner.onmschina.cn" アドレスに戻されます。
+> アカウントから [".partner.onmschina.cn"](../setup/domains-faq.yml) ドメインを削除することはできません。 ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".partner.onmschina.cn" アドレスに戻されます。
 
 それでもうまくいかない場合、ドメインを手動で削除する必要があります。[ご連絡いただければ](../../business-video/get-help-support.md?view=o365-21vianet&preserve-view=true)、お手伝いいたします。
 

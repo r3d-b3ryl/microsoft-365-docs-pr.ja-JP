@@ -2,8 +2,8 @@
 title: Auth トークンMicrosoft 365サポート統合Azure AD構成する
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: f8bc7ee4647bf14521b9d29f616539acb95e7495
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 9f9985e07989f168f9b27dde1c1d574813c3f349
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295228"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320901"
 ---
 # <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>Auth トークンMicrosoft 365サポート統合Azure AD構成する
 
@@ -30,7 +30,7 @@ ms.locfileid: "62295228"
 
 これらの前提条件は、サポート統合のMicrosoft 365必要です。
 
-1. \[AAD管理者\][Azure AD] テナントの下に[送信用アプリケーションMicrosoft 365作成します。
+1. \[AAD管理者\][Azure AD] テナントの下に [送信用アプリケーション] Microsoft 365作成します。
 
     1. テナント資格情報を使用して Azure Portal にMicrosoft 365し、[アプリの登録] ページに移動して[](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)新しいアプリケーションを作成します。
 
@@ -44,7 +44,7 @@ ms.locfileid: "62295228"
 
 1. アプリケーション クライアント ID を取得し、クライアント シークレットを作成し、その値を取得します。
 
-1. \[AAD管理者\]テナントの下Azure ADアプリケーション for Rest API をMicrosoft 365します。
+1. \[AAD管理者\]テナントのAzure ADで、Rest 用アプリケーション API をMicrosoft 365します。
 
     1. テナント資格情報を[使用して Azure Portal](https://portal.azure.com/) にMicrosoft 365し、[アプリの登録] ページに移動して新しいアプリケーションを作成します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "62295228"
 
 1. アプリケーション クライアント ID を取得し、クライアント シークレットを作成し、その値を取得します。
 
-1. \[AAD管理者\]テナントのAzure ADで、Rest ユーザー用アプリケーションをMicrosoft 365します。
+1. \[AAD管理者\]テナントのAzure ADで、Rest ユーザー用のアプリケーション Microsoft 365作成します。
 
     1. テナント資格情報を[使用して Azure Portal](https://portal.azure.com/) にMicrosoft 365し、[アプリの登録] ページに移動して新しいアプリケーションを作成します。
 
@@ -66,17 +66,17 @@ ms.locfileid: "62295228"
 
 1. \[ServiceNow 管理者\] ServiceNow で送信 OAuth プロバイダーを設定します。
 
-    スコープがグローバルに設定されていない **&gt;場合は、開発者アプリケーションに移動設定グローバル&gt;** に切り替 **えます**。
+    スコープがグローバルに設定されていない **&gt;場合は、開発者アプリケーションに移動し設定グローバル&gt;** に切り替 **えます**。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、チャット、またはテキスト メッセージ説明が自動的に生成される":::
 
 1. [System **OAuth アプリケーション レジストリ &gt; ] に移動します**。
 
-1. [サード パーティの **OAuth** プロバイダー Connectを使用して新しいアプリケーションを作成し、次の値を入力します。
+1. サード パーティの **OAuth** プロバイダー オプションConnectを使用して新しいアプリケーションを作成し、次の値を入力します。
 
-    - クライアント ID: これは、前提条件 (Auth トークン) の手順 1 でAzure ADアプリケーション\#のクライアント ID です。
+    - クライアント ID: これは、前提条件 (Auth トークン) ステップ 1 でAzure ADアプリケーション\#のクライアント ID です。
 
-    - クライアント シークレット: これは、前提条件 (Auth トークン) ステップ 1 で作成Azure ADクライアント \#シークレット値です。
+    - クライアント シークレット: これは、前提条件 (Azure AD認証トークン) \#ステップ 1 で作成されたアプリケーションのクライアント シークレット値です。
 
     - 既定の付与の種類: クライアント資格情報
 
@@ -88,13 +88,13 @@ ms.locfileid: "62295228"
 
 1. \[ServiceNow Admin ServiceNow\] で OIDC プロバイダーを構成するには、オンライン ドキュメントを [参照してください](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html)。
 
-    スコープがグローバルに設定されていない場合 **は、[****&gt;開発者アプリケーション] 設定に&gt;** 移動し、[グローバル] に切り替 **えます**。
+    スコープがグローバルに設定されていない **場合は、[****&gt;開発者アプリケーション] 設定に&gt;** 移動し、[グローバル] に切り替 **えます**。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、チャット、またはテキスト メッセージ説明が自動的に生成される":::
 
 1. [System **OAuth アプリケーション レジストリ &gt; ] に移動します**。
 
-1. [**新規] を** 選択し、[新しい Open ID を作成する] **Connect選択します**。
+1. [**新規] を** 選択し、[新しい **Open ID を作成する] Connect選択します**。
 
 1. **[OAuth OIDC プロバイダー構成**] で、[検索] を選択し、次の値を使用して **oidcproviderconfiguration.list\_\_** の下に新しい OIDC プロバイダー構成を作成します。
 
@@ -102,7 +102,7 @@ ms.locfileid: "62295228"
 
     - OIDC メタデータ URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
-    - UserClaim: **appId**
+    - UserClaim: **appid**
 
     - UserField: **ユーザー ID**
 
@@ -112,7 +112,7 @@ ms.locfileid: "62295228"
 
     - 名前: **{TenantName\_}\_applicationinboundapi\_\_** (例: contosoapplicationinboundapi\_\_\_)
 
-    - クライアント ID: 前提条件 (Auth トークン) ステップ 2 でAzure ADアプリケーションのクライアント \#ID。
+    - クライアント ID: 前提条件 (Auth トークン) ステップ 2 でAzure ADアプリケーション\#のクライアント ID。
 
     - クライアント シークレット: 前提条件 (Auth トークン) ステップ 2 でAzure ADアプリケーションのアプリ シークレット\#。
 
@@ -159,7 +159,7 @@ ms.locfileid: "62295228"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="グラフィカル ユーザー インターフェイス、テーブルの説明が自動的に生成される":::
 
-1. \[ServiceNow Admin 統合ワークフロー\]を開 **Microsoft 365サポート &gt; セットアップ** に移動します。
+1. \[ServiceNow Admin [\]サポート Microsoft 365 **] に移動&gt;して**、統合ワークフローを開きます。
 
     > [!NOTE]
     > "スコープ 'xmiomsm365assis\_\_' からの 'oauthentity\_\_' に対する読み取り操作が、テーブルのクロススコープ アクセス ポリシーのために拒否されました」というエラーが表示される場合は、テーブル アクセス ポリシーが原因で発生しました。 [読み取り可能なすべての **アプリケーション スコープ &gt; ] が** テーブルの oauthentity に対してチェックされている必要\_があります。
@@ -188,9 +188,9 @@ ms.locfileid: "62295228"
 
 1. \[ServiceNow Admin 受信\] 設定を構成します。
     1. 受信アプリを構成AADします。
-    1. [前提条件] セクションの手順を完了したら、[完了] をクリックして次の手順に進みます。 それ以外の場合は、指示に従って、受信AADアプリ登録を作成します。
+    1. [前提条件] セクションの手順を完了したら、[完了] をクリックして次の手順に進みます。 それ以外の場合は、指示に従って、受信接続AADアプリ登録を作成します。
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-6.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-6.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
-    1. ServiceNow 外部 OpenID プロバイダー (OIDC プロバイダー) Connect構成します。
+    1. ServiceNow 外部 OpenID プロバイダー (OIDC プロバイダー Connect構成します。
     1. [前提条件] セクションの手順を完了したら、新しく作成したエンティティを選択し、[完了] をクリックします。 それ以外の場合は、手順に従って ServiceNow でエンティティを作成し、新しい外部 OIDC プロバイダー アプリ登録を選択します。
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-7.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-7.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
     1. 受信統合ユーザー AADアプリ登録を構成します。
@@ -224,11 +224,11 @@ ms.locfileid: "62295228"
 
     - クライアント ID: 手順 6 のクライアント **ID** の値 – 統合を完了します。
 
-    - クライアント シークレット: 前提条件 (Azure AD認証トークン) \#の手順 2 で作成された受信 OAuth プロバイダーのシークレット。
+    - クライアント シークレット: 前提条件 (Auth トークン) の手順 2 で作成Azure AD OAuth \#プロバイダーのシークレット。
 
-    - 残りのユーザー名: 手順 6 の [ユーザー名] の値 ( [前提条件] (Azure AD 認証トークン) \#の手順 3 で作成されたアプリケーションのクライアント **ID** である統合を完了します。
+    - 残りのユーザー名: 手順 6 の [ユーザー名] の値 ( [必須コンポーネント ] (Azure AD 認証トークン) \#の手順 3 で作成されたアプリケーションのクライアント **ID** である統合を完了します。
 
-    - Rest ユーザー パスワード: 前提条件 (Auth トークン) ステップ 3 で作成Azure ADアプリケーションのアプリ シークレット\#。
+    - ユーザーパスワードの保存: 前提条件 (Auth トークン) の手順 3 で作成Azure ADアプリケーションのアプリ シークレット\#。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image31.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image31.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
@@ -237,19 +237,19 @@ ms.locfileid: "62295228"
     1. [次 **へ] を** 選択して統合を完了します。
 
    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-10.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-10.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
-    サポートMicrosoft 365アプリはテストを実行して、統合が機能しているのを確認します。 構成に問題がある場合は、修正する必要がある内容を説明するエラー メッセージが表示されます。 それ以外の場合は、アプリケーションの準備ができました。
+    統合Microsoft 365アプリはテストを実行して、統合が機能しているのを確認します。 構成に問題がある場合は、修正する必要がある内容を説明するエラー メッセージが表示されます。 それ以外の場合は、アプリケーションの準備ができました。
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-11.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-11.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 1. \[ServiceNow Admin\] 既存のユーザーに対する Microsoft サポート統合を有効にする。
 
-    Microsoft 365の役割のいずれかを持つユーザーに対してサポート統合が有効になります。
+    Microsoft 365の役割のいずれかを持つユーザーに対して、サポート統合が有効になっている場合。
 
     - xmiomsm365assis.insightsuser\_\_\_\_
 
     - xmiomsm365assis.administrator\_\_\_
 
-1. \[OPTIONAL\] \[役割 xmiomsm365assis.administrator\_\_\_ リンクを持つユーザー は、\]管理者アカウントMicrosoft 365リンクします。
+1. \[OPTIONAL\] \[役割 xmiomsm365assis.administrator\_\_\_ リンクを持\]つユーザー は、管理者アカウントMicrosoft 365リンクします。
 
-    ユーザーが役割 xmiomsm365assis.administrator\_&gt;\_\_ を持ち、Microsoft 365 サポート ケースを管理するために異なる Microsoft 365 アカウントを使用している場合は、Microsoft 365 サポート リンク アカウントに移動して Microsoft 365 管理者メールを設定する必要があります。
+    ユーザーが役割 xmiomsm365assis.administrator\_\_\_ を持ち、Microsoft 365 サポート ケースを管理するために異なる Microsoft 365 &gt; アカウントを使用している場合は、Microsoft 365 サポート リンク アカウントに移動して Microsoft 365 管理者メールを設定する必要があります。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image21.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image21.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::

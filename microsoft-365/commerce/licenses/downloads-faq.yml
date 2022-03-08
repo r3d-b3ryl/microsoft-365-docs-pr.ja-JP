@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 metadata:
   title: よく寄せられる質問のダウンロード
-  ms.author: cmcatee
   author: cmcatee-MSFT
+  ms.author: cmcatee
   manager: scotv
   ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
@@ -12,27 +12,27 @@ metadata:
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: ダウンロードに関してよく寄せられるMicrosoft 365 管理センター質問です。
-  ms.openlocfilehash: 5ac5fb32f968902e772c5f98beb425d74f154ac8
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: ea42562d13184ef002699db35902a58127c4279f
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60163638"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63322311"
 title: よく寄せられる質問のダウンロード
 summary: ''
 sections:
-- name: 一般
+- name: 全般
   questions:
   - question: >
       アプリケーションからソフトウェアをダウンロードするための要件Microsoft 365 管理センター?
-    answer: "インストールを完了するには、ダウンロードする予定の製品のライセンスを購入し、各ライセンスの有効なプロダクト キーにアクセスする必要があります。 製品をダウンロードする前に、使用許諾契約書を確認してください。\n\n各製品のシステム要件は、管理センターにサインインし、[製品のダウンロード] ページおよび [製品の説明] に移動>  >  **確認できます**。 \n\n> [!NOTE]\n> プロダクト キーが必要な製品は一部ではありません。\n"
+    answer: "インストールを完了するには、ダウンロードする予定の製品のライセンスを購入し、各ライセンスの有効なプロダクト キーにアクセスする必要があります。 製品をダウンロードする前に、使用許諾契約書を確認してください。\n\n各製品のシステム要件を確認するには、管理センターにサインインし、[製品の説明] の [**製品** > のダウンロード] ページ>**移動します**。 \n\n> [!NOTE]\n> プロダクト キーが必要な製品は一部ではありません。\n"
   - question: >
       管理センターからダウンロードできる製品
     answer: >
       ダウンロード権が Open License、Open Value、または Open Value Subscription プログラムに関連付けられている場合は、既に購入した製品のみをダウンロードできます。 管理センターには、購入したライセンスのダウンロードだけが表示されます。
 
 
-      その他のライセンス プログラム (Select Plus、Enterprise、キャンパス、または学校) を使用すると、ライセンスを購入する前にカタログから製品をダウンロードできます。
+      その他のライセンス プログラム (Select Plus、Enterprise、キャンパス、または School) を使用すると、ライセンスを購入する前にカタログから製品をダウンロードできます。
 
 
       プロファイルが Open と他のライセンス プログラムの両方にリンクされている場合は、カタログ全体を表示できます。
@@ -41,7 +41,7 @@ sections:
       製品がダウンロードの対象かどうかを確認するには、次の方法を実行します。
 
         1. [ **ボリューム ライセンス] を** 選択し、製品またはダウンロード **の表示を選択します**。
-        2. [ **ダウンロード]** で、製品が使用できない場合は、「この製品はダウンロードできません」と表示されます。
+        2. [ **ダウンロード**] で、製品が使用できない場合は、「この製品はダウンロードできません」と表示されます。
   - question: >
       クライアント アクセス ライセンス (CAL) とは
     answer: >
@@ -59,11 +59,11 @@ sections:
         - SharePoint Server
         - System Center
         - Project Server
-  - question: "ファイルをダウンロードするOffice for Mac? \n"
+  - question: "ダウンロード方法Office for Mac? \n"
     answer: >
       ボリューム ライセンス バージョンのボリューム ライセンス Office for Mac、次のファイルをダウンロードしてインストールする必要があります。
-        - ボリューム[ライセンス (VL) シリアライザー](/deployoffice/mac/volume-license-serializer)パッケージは、Office for Macファイルに保存されます。
-        - インストール[Office for Mac パッケージ](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac)です。 個々のアプリケーションのインストーラー パッケージ ファイルは、アプリケーションのMicrosoft 365 管理センター。 Office for Mac VL Serializer を使用してボリューム ライセンス バージョンのライセンス認証を行うので、プロダクト キーはOffice for Mac。
+        - ボリューム [ライセンス (VL) シリアライザー](/deployoffice/mac/volume-license-serializer) パッケージは、Office for Macファイルに保存されます。
+        - インストール [Office for Macパッケージです](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac)。 個々のアプリケーションのインストーラー パッケージ ファイルは、アプリケーションのMicrosoft 365 管理センター。 Office for Mac VL Serializer を使用してボリューム ライセンス バージョンのライセンス認証を行うので、プロダクト キーはOffice for Mac。
   - question: >
       管理センターで製品をダウンロードする方法
     answer: "管理センターで製品をダウンロードするには、次の方法を実行します。\n1. [ **ボリューム ライセンス] を** 選択し、製品またはダウンロード **の表示を選択します**。\n2. [ **ダウンロード]** で、コンポーネントを選択し、ダウンロード アクションまたはダウンロード アイコンを選択します。 \n\n管理センターでダウンロードにアクセスするには、組織内の VLSC 管理者が、次のいずれかの役割にユーザーを割り当て、アクセス権を提供できます。\n  - 管理者\n  - ダウンロード\n  - ソフトウェア アシュアランス マネージャー\n"
@@ -74,7 +74,7 @@ sections:
 
       1. [ **ボリューム ライセンス] を** 選択し、製品またはダウンロード **の表示を選択します**。
 
-      2. [**ダウンロード] で**、[言語と **オペレーティング システム****の種類] を選択します**。
+      2. [ **ダウンロード] で**、[言語と **オペレーティング** システム **の種類] を選択します**。
 
 
       > [!NOTE]
@@ -86,7 +86,7 @@ sections:
   - question: >
       ISO イメージ ファイル ソフトウェアを使用して ISO イメージ ファイルをダウンロードして CD-R または DVD-R ディスクに保存する方法
     answer: >
-      オペレーティング システムで PC をWindows場合は、CD-R または DVD-R を書き込む追加のソフトウェアは必要ない。 ダウンロードした ISO ファイルをダブルクリックし、イメージ バーナー ウィザードの手順に従います。
+      オペレーティング システムで PC を使用しているWindows、CD-R または DVD-R を書き込む追加のソフトウェアは必要ない。 ダウンロードした ISO ファイルをダブルクリックし、イメージ バーナー ウィザードの手順に従います。
 
 
       他のオペレーティング システムを使用している場合Windowsソフトウェアが必要になる場合があります。 コンピューターに CD/DVD バーナが装備されている場合は、ソフトウェアが PC に読み込まれている可能性があります。 ほとんどの CD-R/DVD-R 書き込みソフトウェアでは、イメージ ファイルからディスクを作成できます。 [イメージを CD にコピー **] や [イメージの書き込み** ] などのメニュー項目を選択 **して、** この機能にアクセスします。
@@ -98,17 +98,17 @@ sections:
 
       > [!NOTE]
 
-      > この方法は、システムのアップグレードやマイナー システムのアップグレードなどのOfficeインストールする場合にのみお勧めできます。 インストール中に仮想ドライブが消えるので、この方法を使用してオペレーティング システムをインストールできない。
+      > この方法は、システムのアップグレードやマイナー システムのアップグレードなどのOfficeインストールする場合にのみお勧めします。 インストール中に仮想ドライブが消えるので、この方法を使用してオペレーティング システムをインストールできない。
   - question: >
       ダウンロードした製品のサポートを受け取る方法
     answer: >
-      サポート オプションの一覧については [、「Microsoft サポート」を参照してください](https://support.microsoft.com/)。 一部のボリューム ライセンスのお客様は、ソフトウェア アシュアランス特典である問題解決サポートを使用できます。 ソフトウェア アシュアランスの特典を確認して、適格性を確認します。
+      サポート オプションの一覧については、「 [Microsoft サポート」を参照してください](https://support.microsoft.com/)。 一部のボリューム ライセンスのお客様は、ソフトウェア アシュアランス特典である問題解決サポートを使用できます。 ソフトウェア アシュアランスの特典を確認して、適格性を確認します。
   - question: >
       この FAQ で説明されているトピックのサポートはどこで確認できますか?
     answer: >
-      ビデオを含むトレーニング リソースの詳細については [、「Microsoft Volume Licensing Service Center のトレーニングとリソース」を参照してください](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)。
+      ビデオを含むトレーニング リソースの詳細については、「 [Microsoft ボリューム ライセンス サービス センターのトレーニングとリソース」を参照してください](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)。
   - question: >
       Microsoft サポートへの問い合わせ方法
     answer: >
-      VLSC のお客様の電話または Web フォームのサポートについては、「お問い合 [わせ」を参照してください](/licensing/contact-us)。 Microsoft は 24 時間以内に Web フォームの申請に応答します。
+      VLSC のお客様の電話または Web フォームのサポートについては、「お問い [合わせ」を参照してください](/licensing/contact-us)。 Microsoft は 24 時間以内に Web フォームの申請に応答します。
 additionalContent: "\n## <a name=\"additional-resources\"></a>その他のリソース\n\n- [プロダクト キーに関する FAQ](product-keys-faq.yml)\n\n- [Open プログラムのオンライン サービスのライセンス認証に関する FAQ](online-service-activation-faq.yml)"

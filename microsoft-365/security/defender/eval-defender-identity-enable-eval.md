@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Identity の評価環境を有効にする
-description: Microsoft Defender for Identity を Microsoft 365 Defender試用版ラボまたはパイロット環境でセットアップするには、&センサーをインストールし、他のコンピューターにローカル管理者を検出します。
+description: Microsoft Defender for Identity を Microsoft 365 Defenderテスト ラボまたはパイロット環境でセットアップするには、センサーをインストールし、&コンピューターにローカル管理者を検出します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,19 +21,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6910336dea0559ad241c240cde09d3929fe2e422
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: ac5c1a1bb541dee61155a55f23a78533c2b5360c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62170977"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311607"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity の評価環境を有効にする
 
 **適用対象:**
 - Microsoft 365 Defender
 
-この記事は、Microsoft Defender for Identity の評価環境をセットアップする手順 [2/2](eval-defender-identity-overview.md) です。 このプロセスの詳細については、「概要」の記事を [参照してください](eval-defender-identity-overview.md)。
+この記事は [、Microsoft Defender for](eval-defender-identity-overview.md) Identity の評価環境をセットアップする手順 2/2 です。 このプロセスの詳細については、概要の記事を [参照してください](eval-defender-identity-overview.md)。
 
 次の手順を使用して、Microsoft Defender for Identity 環境をセットアップします。 
 
@@ -44,7 +44,7 @@ ms.locfileid: "62170977"
 - [手順 3.センサーを使用してコンピューターのイベント ログとプロキシ設定を構成する](#step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor)
 - [手順 4.Defender for Identity で他のコンピューター上のローカル管理者を識別する許可](#step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers)
 
-## <a name="step-1-set-up-the-defender-for-identity-instance"></a>手順 1. Id インスタンスの Defender をセットアップする
+## <a name="step-1-set-up-the-defender-for-identity-instance"></a>手順 1。 Id インスタンスの Defender をセットアップする
 
 Defender for Identity ポータルにサインインしてインスタンスを作成し、このインスタンスを Active Directory 環境に接続します。 
 
@@ -54,7 +54,7 @@ Defender for Identity ポータルにサインインしてインスタンスを�
 |2     | Connect Defender for Identity インスタンスを Active Directory フォレストに移動する   | [クイック スタート: Connect Active Directory フォレストにアクセスする](/defender-for-identity/install-step2)  |
 | | |
 
-## <a name="step-2-install-and-configure-the-sensor"></a>手順 2. センサーのインストールと構成
+## <a name="step-2-install-and-configure-the-sensor"></a>手順 2。 センサーのインストールと構成
 
 次に、ドメイン コントローラーおよびオンプレミス環境の FS AD Defender for Identity センサーをダウンロード、インストール、および構成します。
 
@@ -82,7 +82,7 @@ Microsoft Defender for Identity 横移動パスの検出は、特定のコンピ
 
 Windows クライアントとサーバーで Defender for Identity アカウントが SAM-R を実行するようにするには、ネットワーク アクセス ポリシーに記載されている構成済みのアカウントに加えて、Defender for Identity サービス アカウントを追加するためにグループ ポリシーを変更する必要があります。 ドメイン コントローラーを除くすべてのコンピューターにグループ ポリシー **を適用してください**。
 
-これを行う方法については [、「Configure Microsoft Defender for Identity to make remote calls to SAM](/defender-for-identity/install-step8-samr)」を参照してください。 
+これを行う方法については、「 [Configure Microsoft Defender for Identity to make remote calls to SAM」を参照してください](/defender-for-identity/install-step8-samr)。 
 
 ## <a name="next-steps"></a>次の手順
 
@@ -90,4 +90,4 @@ Windows クライアントとサーバーで Defender for Identity アカウン�
 
 Id の Microsoft Defender の [評価の概要に戻る](eval-defender-identity-overview.md)
 
-[評価とパイロット][の概要に戻Microsoft 365 Defender](eval-overview.md)
+[評価とパイロット] [の概要に戻Microsoft 365 Defender](eval-overview.md)

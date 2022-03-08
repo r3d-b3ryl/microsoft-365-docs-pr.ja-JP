@@ -2,8 +2,8 @@
 title: カスタム ドメインを使うように電子メール アドレスを変更する
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,13 +26,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: ドメイン名を購入し、ドメイン名に追加して、tom@fourthcoffee.com のような使いMicrosoft 365。
-ms.openlocfilehash: f388bfcea3131df6a66733c940ed2f566827d2e5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: ドメイン名を購入し、ドメイン名に追加して、tom@fourthcoffee.com のようなフレンドリーなメール アドレスに電子メール アドレスをMicrosoft 365。
+ms.openlocfilehash: 4630b3df4719611440e92801235fde20d7bd95f4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370574"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316423"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
 
@@ -46,11 +46,11 @@ ms.locfileid: "61370574"
 
 ::: moniker range="o365-21vianet"
 
-21Vianet Office 365の初期メール アドレスには、partner.onmschina.cn のような tom@fourthcoffee.partner.onmschina.cn。 このアドレスは、他のユーザーと同じフレンドリなアドレス tom@fourthcoffee.cn。 最初に使用するドメイン名など、独自の fourthcoffee.cn があります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
+21Vianet がOffice 365の最初の電子メール アドレスには、partner.onmschina.cn のような tom@fourthcoffee.partner.onmschina.cn。 このアドレスは、他のユーザーと同じフレンドリなアドレス tom@fourthcoffee.cn。 最初に使用するドメイン名など、独自の fourthcoffee.cn があります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
 
 ::: moniker-end
 
-ドメインのメールを Microsoft 365 に変更すると、セットアップ中にドメインの MX レコードを更新すると、そのドメインに送信されたメールはすべて Microsoft 365 に送信されます。 MX レコードを変更する前に、ドメインに電子メールを持Microsoft 365ユーザーと作成したメールボックスをユーザーに追加し、メールボックスを作成してください。 ドメイン上のすべてのユーザーのメールをメールに移動Microsoft 365? 代わりに、いくつかの電子メール[アドレスMicrosoft 365をパイロットする手順を実行できます](../misc/pilot-microsoft-365-from-my-custom-domain.md)。
+ドメインのメールを Microsoft 365 に変更すると、セットアップ中にドメインの MX レコードを更新すると、そのドメインに送信されたメールはすべて Microsoft 365 に送信されます。 MX レコードを変更する前に、ドメインにメールをMicrosoft 365ユーザーと作成したメールボックスをユーザーに追加してください。 ドメイン上のすべてのユーザーのメールをユーザーに移動Microsoft 365? 代わりに、少数の電子メール [アドレスMicrosoft 365をパイロットする手順を実行できます](../misc/pilot-microsoft-365-from-my-custom-domain.md)。
   
 ## <a name="set-up-business-email-with-a-new-domain"></a>新しいドメインを使用してビジネス メールを設定する
 
@@ -84,17 +84,17 @@ ms.locfileid: "61370574"
 
 ::: moniker range="o365-21vianet"
 
-1. で管理センターに移動します<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>。
+1. で管理センターに移動します<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>。
 
 ::: moniker-end
 
-2. [セットアップ ドメイン **]**  >  **ページに移動** します。
+2. **[セットアップ]** > **[ドメイン]** ページの順に移動します。
 
 3. [**ドメイン**] ページで、[**ドメインの追加**] を選択します。
 
-4. 手順に従って、ドメインを所有している必要があります。 すべての設定がドメインに正しく設定されるようにガイドが表示Microsoft 365。
+4. 手順に従って、ドメインを所有している必要があります。 Microsoft 365 でドメインを正しくセットアップするすべての手順が表示されます。
 
-5. [ユーザー] **[アクティブ**  >  **なユーザー] に移動します**。
+5. [UsersActive **ユーザー]** >  **に移動します**。
 
 6. ユーザー名を編集するユーザーを選択し、追加したドメインに変更します。
 

@@ -1,25 +1,28 @@
 ---
 title: Windows で高度なトラブルシューティングを行うためのデータ収集
 description: 複雑なトラブルシューティング シナリオでクライアント アナライザーを使用してデータを収集する方法について説明します。
-keywords: 'analzyer,データ収集,mdeclientanalyzerのトラブルシューティング,高度なトラブルシューティング'
+keywords: analzyer,データ収集,mdeclientanalyzerのトラブルシューティング,高度なトラブルシューティング
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
+ms.openlocfilehash: 513432dfb24af89451c4d8290ce5fde0951819b9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322703"
 ---
-
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Windows で高度なトラブルシューティングを行うためのデータ収集
 
 **適用対象:**
@@ -37,7 +40,7 @@ Microsoft サポート 担当者と共同作業する場合は、クライアン
 
 **-h** - [標準ログ セット](/windows-hardware/test/wpt/wpr-command-line-options)Windows詳細な一般的なパフォーマンス トレースを収集するために、パフォーマンス レコーダーを呼び出します。
 
-**-l** - 組み込みのパフォーマンス モニター Windows [呼](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters)び出して、軽量な perfmon トレースを収集します。 これは、時間の間に発生するパフォーマンス低下の問題を診断する場合に役立ちますが、オンデマンドで再現するのは難しい場合があります。
+**-l** - 組み込みのパフォーマンス モニター Windows [呼](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters)び出して、軽量の perfmon トレースを収集します。 これは、時間の間に発生するパフォーマンス低下の問題を診断する場合に役立ちますが、オンデマンドで再現するのは難しい場合があります。
 
 **-c** - リアルタイム ファイル [システム、](/sysinternals/downloads/procmon) レジストリ、およびプロセス/スレッド アクティビティの高度な監視を行うプロセス モニターへの呼び出し。 これは、さまざまなアプリケーション互換性シナリオのトラブルシューティングに特に役立ちます。
 
@@ -47,16 +50,16 @@ Microsoft サポート 担当者と共同作業する場合は、クライアン
 
 **-a** - ウイルス対策プロセス [(](/windows-hardware/test/wpt/wpr-command-line-options)Windows) に関連する CPU の高い問題の分析に固有の詳細なパフォーマンス トレースを収集するために、パフォーマンス レコーダーを呼び出MsMpEng.exe。
 
-**-v** - ほとんどの詳細 [ な -trace フラグMpCmdRun.exeコマンド ライン引数に](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) 対してウイルス対策を使用します。
+**-v** - ほとんどの詳細な [ -trace フラグMpCmdRun.exeコマンド ライン引数に](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) 対してウイルス対策を使用します。
 
 **-t** - エンドポイント DLP に関連するすべてのクライアント側コンポーネントの詳細なトレースを開始します。 これは、ファイルに対して [DLP](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) アクションが想定通り実行されないシナリオで役立ちます。
 
 **-q** - エンドポイント DLP DLPDiagnose.ps1構成と要件を検証するアナライザー 'Tools' ディレクトリからスクリプトを呼び出します。
 
-**-d** - **MsSenseS** ファイルのメモリ ダンプ (.exe以上の OS のセンサー プロセス) とWindows Server 2016プロセスを収集します。
+**-d** - **MsSenseS** ファイルのメモリ ダンプ (.exeまたは古い OS のセンサー プロセス) とWindows Server 2016プロセスを収集します。
 
 - \* このフラグは、上記のフラグと組み合わせて使用できます。
-- \*\*[PPL](/windows-hardware/drivers/install/early-launch-antimalware) で保護されたプロセス (MsSense.exe や MsMpEng.exe など) のメモリ ダンプのキャプチャは、現時点ではアナライザーではサポートされていません。
+- \*\*PPL で保護されたプロセス[](/windows-hardware/drivers/install/early-launch-antimalware)のメモリ ダンプ (MsSense.exe や MsMpEng.exe など) のキャプチャは、現時点ではアナライザーではサポートされていません。
 
 **-z** - [CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard) を介してマシンの完全なメモリ ダンプ コレクション用に準備するために、コンピューター上のレジストリ キーを構成します。 これは、コンピューターのフリーズの問題を分析する場合に役立ちます。
 
@@ -70,9 +73,9 @@ Microsoft サポート 担当者と共同作業する場合は、クライアン
 
 > [!NOTE]
 >
-> - RemoteMDEClientAnalyzer.cmd を使用する場合は、psexec を呼び出して、構成されたファイル共有からツールをダウンロードし、そのツールをローカルで PsExec.exe。
+> - RemoteMDEClientAnalyzer.cmd を使用する場合は、psexec を呼び出して、構成されたファイル共有からツールをダウンロードし、そのツールをローカルで実行PsExec.exe。
     CMD スクリプトは '-r' フラグを使用して、SYSTEM コンテキスト内でリモートで実行するように指定します。そのため、ユーザーに対するプロンプトは表示されません。
-> - この同じフラグを MDEClientAnalyzer.cmd と一緒に使用すると、データ収集の分数の指定を要求するユーザーに対するプロンプトを回避できます。 次に例を示します。
+> - この同じフラグを MDEClientAnalyzer.cmd と一緒に使用すると、データ収集の分数の指定を要求するユーザーに対するプロンプトを回避できます。 例:
 >
 >    **MDEClientAnalyzer.cmd -r -i -m 5**
 >

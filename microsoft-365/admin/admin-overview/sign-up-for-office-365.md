@@ -2,8 +2,8 @@
 title: サインアップする方法 - 管理者ヘルプ
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
@@ -16,29 +16,29 @@ ms.collection:
 - TRN_SMB
 - Adm_TOC
 ms.custom:
+- commerce_signup
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_signup
 - AdminTemplateSet
 - adminvideo
 - intro-get-started
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: ユーザーのサインアップ プロセスを実行する前に知る必要があるOffice 365。
+description: アカウントのサインアップ プロセスを実行する前に知る必要があるOffice 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: bb74ab42bb16cc2d8b3a97850ae9be17600bfc9a
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 045540074b42b528c07d638d643f0d1b74e1f724
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805906"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315891"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 
-チームが最新Microsoft 365バージョンの Word、Excel、PowerPoint、その他のプログラムの使用を開始Officeします。
+チームが最新Microsoft 365バージョンの Word、Excel、PowerPoint、その他の Office プログラムの使用を開始できるよう、ビジネス向けOfficeサインアップします。
 
 ::: moniker range="o365-21vianet"
 
@@ -47,7 +47,7 @@ ms.locfileid: "62805906"
 > [!NOTE]
 > これらのサービスは中国の法律に従います。
   
-チームが最新バージョンの Word、Excel、PowerPoint、その他の Office プログラムの使用を開始できるよう、21Vianet が運営する Office 365 にサインアップします。
+チームが最新バージョンの Word、Excel、PowerPoint、および他の Office プログラムの使用を開始できるよう、21Vianet が運営する Office 365 にサインアップします。
   
 サインアップする準備はできましたか? [プランを選択します](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
@@ -93,7 +93,7 @@ ms.locfileid: "62805906"
   - サブスクリプションに関する確認など、Microsoft から管理者に連絡する場合に使用する、 **メール アドレス** と **電話番号** 。管理者がパスワードを忘れた場合などに、この情報を使って仮のパスワードが送信されます。また、指定したメール アドレスに課金情報が送信されます。
 
     > [!NOTE]
-    > ここで入力する電子メール アドレスは、ユーザーのメール Microsoft 365 (以下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
+    > ここで入力する電子メール アドレスは、ユーザーのMicrosoft 365 (以下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
   
 - **サインイン名 (ユーザー ID):** このユーザー ID は、Microsoft 365開始するために、最初のメール アドレスになります。
 

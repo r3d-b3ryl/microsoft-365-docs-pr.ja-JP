@@ -2,13 +2,13 @@
 title: Connect DNS レコードを 123-reg.co.uk にMicrosoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
-description: ドメインを確認し、Microsoft の電子メール、Skype for Business、その他のサービスの DNS レコード 123-reg.co.uk 説明します。
-ms.openlocfilehash: 64fdb9df70598aed5113620ea11caf8f70b5926a
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: ドメインを確認し、Microsoft 向けメール、オンライン、その他のサービスSkype for Business DNS レコードを 123-reg.co.uk 説明します。
+ms.openlocfilehash: 050aad4ca3e0e768b160a7ba210a93e163d72fe7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648709"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314939"
 ---
 # <a name="connect-your-dns-records-at-123-regcouk-to-microsoft-365"></a>Connect DNS レコードを 123-reg.co.uk にMicrosoft 365
 
@@ -53,7 +53,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="確認するドメインを選択します。":::
 
-3. [ドメインの管理] ページの [高度な **ドメイン設定] で、[DNS** の管理] **を選択します**。
+3. [ドメインの管理] ページの [高度な **ドメイン設定] で、[** DNS の管理] **を選択します**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="ドロップダウン リストから [DNS の管理] を選択します。":::
   
@@ -61,7 +61,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="[高度な DNS] タブを選択します。":::
   
-5. 新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[TXT/SPF]** を選択し、次の表の他の値を入力またはコピーして貼り付けます。 
+5. 新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[TXT/SPF** ] を選択し、次の表の他の値を入力またはコピーして貼り付けます。 
 
     ||||
     |:-----|:-----|:-----|
@@ -70,7 +70,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="ドロップダウン リストから TXT/SPF の種類を選択し、値を入力します。":::
 
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="[追加] を選択します。":::
 
@@ -101,7 +101,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="編集するドメインの名前を選択します。":::
 
-3. [ドメインの管理] ページの [高度な **ドメイン設定] で、[DNS** の管理] **を選択します**。
+3. [ドメインの管理] ページの [高度な **ドメイン設定] で、[** DNS の管理] **を選択します**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="ドロップダウン リストから [DNS の管理] を選択します。":::
   
@@ -109,7 +109,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="[高度な DNS] タブを選択します。":::
 
-5. 新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[MX]** を選択し、次の表の他の値を入力またはコピーして貼り付けます。
+5. 新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[MX** ] を選択し、次の表の他の値を入力またはコピーして貼り付けます。
 
     |**Hostname**|**Type**|**Priority**|**Destination MX**|
     |:-----|:-----|:-----|:-----|
@@ -117,7 +117,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-MX.png" alt-text="ドロップダウン リストから MX の種類を選択し、値を入力します。":::
 
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-MX-Add.png" alt-text="[追加] を選択します。":::
 
@@ -133,7 +133,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="編集するドメインの名前を選択します。":::
 
-3. [ドメインの管理] ページの [高度な **ドメイン設定] で、[DNS** の管理] **を選択します**。
+3. [ドメインの管理] ページの [高度な **ドメイン設定] で、[** DNS の管理] **を選択します**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="ドロップダウン リストから [DNS の管理] を選択します。":::
   
@@ -143,7 +143,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 5. CNAME レコードを追加します。
 
-    新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[CNAME]** を選択し、次の表の他の値を入力またはコピーして貼り付けます。
+    新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[CNAME** ] を選択し、次の表の他の値を入力またはコピーして貼り付けます。
 
     |**Hostname**|**Type**|**Destination CNAME**|
     |:-----|:-----|:-----|
@@ -151,14 +151,14 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="ドロップダウン リストから CNAME の種類を選択し、値を入力します。":::
 
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="[追加] を選択します。":::
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 ドメインの SPF レコードが既にある場合は、Microsfot 用に新しい SPF レコードを作成しない。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](../../enterprise/external-domain-name-system-records.md)を参照してください。 To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 ドメインの SPF レコードが既にある場合は、Microsfot 用に新しい SPF レコードを作成しない。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む 1  *つの SPF*  レコードを作成します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](../../enterprise/external-domain-name-system-records.md)を参照してください。 To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
   
 1. まず、[このリンク](https://www.123-reg.co.uk/secure/cpanel/domain/overview)を使って 123-reg.co.uk でドメイン ページにアクセスします。 最初にログインするように求められます。
 
@@ -166,7 +166,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="編集するドメインの名前を選択します。":::
 
-3. [ドメインの管理] ページの [高度な **ドメイン設定] で、[DNS** の管理] **を選択します**。
+3. [ドメインの管理] ページの [高度な **ドメイン設定] で、[** DNS の管理] **を選択します**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="ドロップダウン リストから [DNS の管理] を選択します。":::
   
@@ -174,7 +174,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="[高度な DNS] タブを選択します。":::
 
-5. 新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[TXT/SPF]** を選択し、次の表の他の値を入力またはコピーして貼り付けます。
+5. 新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[TXT/SPF** ] を選択し、次の表の他の値を入力またはコピーして貼り付けます。
 
     |**Hostname**|**Type**|**Destination TXT/SPF**|
     |:-----|:-----|:-----|
@@ -182,11 +182,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="ドロップダウン リストから TXT/SPF の種類を選択し、値を入力します。":::
   
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
 
 ## <a name="advanced-option-skype-for-business"></a>詳細オプション: Skype for Business
 
-このオプションは、チャット、電話会議、ビデオ通話Skype for Business、電話会議など、オンライン通信サービスにネットワーク を使用している場合にのみ、このオプションをMicrosoft Teams。 Skype 4 つのレコードが必要です。ユーザー間通信用の SRV レコードが 2 件、ユーザーをサービスにサインインして接続するための CNAME レコードが 2 件必要です。
+このオプションは、チャット、電話会議、ビデオ通話Skype for Business、電話会議など、オンライン通信サービスに組織がネットワーク通信サービスを使用している場合にのみMicrosoft Teams。 Skype 4 つのレコードが必要です。ユーザー間通信には 2 つの SRV レコード、サービスにユーザーをサインインして接続するには 2 つの CNAME レコードが必要です。
 
 ### <a name="add-the-two-required-srv-records"></a>必要な 2 つの SRV レコードを追加する
 
@@ -196,7 +196,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="編集するドメインの名前を選択します。":::
 
-3. [ドメインの管理] ページの [高度な **ドメイン設定] で、[DNS** の管理] **を選択します**。
+3. [ドメインの管理] ページの [高度な **ドメイン設定] で、[** DNS の管理] **を選択します**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="ドロップダウン リストから [DNS の管理] を選択します。":::
   
@@ -206,7 +206,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 5. 2 つの SRV レコードの最初のレコードを追加します。
 
-   新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[SRV]** を選択し、次の表の他の値を入力またはコピーして貼り付けます。
+   新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[SRV** ] を選択し、次の表の他の値を入力またはコピーして貼り付けます。
 
     ||||||
     |:-----|:-----|:-----|:-----|:-----|
@@ -216,7 +216,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="ドロップダウン リストから TXT/SPF の種類を選択し、値を入力します。":::
 
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="[追加] を選択します。":::
 
@@ -233,7 +233,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="編集するドメインの名前を選択します。":::
 
-1. [ドメインの管理] ページの [高度な **ドメイン設定] で、[DNS** の管理] **を選択します**。
+1. [ドメインの管理] ページの [高度な **ドメイン設定] で、[** DNS の管理] **を選択します**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="ドロップダウン リストから [DNS の管理] を選択します。":::
   
@@ -243,7 +243,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 1. 1 番目の CNAME レコードを追加します。
 
-    新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[CNAME]** を選択し、次の表の他の値を入力またはコピーして貼り付けます。
+    新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[CNAME** ] を選択し、次の表の他の値を入力またはコピーして貼り付けます。
 
     | **Hostname** |**Type**|**Destination CNAME**|
     |:-----|:-----|:-----|
@@ -252,7 +252,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="ドロップダウン リストから CNAME の種類を選択し、値を入力します。":::
 
-1. **[追加]** を選択します。
+1. [**追加**] を選択します。
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="[追加] を選択します。":::
   
@@ -261,7 +261,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 > [!NOTE]
 > 通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>高度なオプション: Intune とモバイル デバイスの管理 (Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>詳細オプション: Intune とモバイル デバイスの管理 (Microsoft 365
 
 このサービスは、ドメインに接続するモバイル デバイスのセキュリティ保護とリモート管理に役立ちます。 モバイル デバイス管理では、ユーザーがサービスにデバイスを登録できるよう、2 つの CNAME レコードが必要です。
 
@@ -273,7 +273,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="編集するドメインの名前を選択します。":::
 
-1. [ドメインの管理] ページの [高度な **ドメイン設定] で、[DNS** の管理] **を選択します**。
+1. [ドメインの管理] ページの [高度な **ドメイン設定] で、[** DNS の管理] **を選択します**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="ドロップダウン リストから [DNS の管理] を選択します。":::
   
@@ -283,7 +283,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 1. 1 番目の CNAME レコードを追加します。
 
-    新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[CNAME]** を選択し、次の表の他の値を入力またはコピーして貼り付けます。
+    新しい **レコードの [種類** ] ボックスで、ドロップダウン リストから **[CNAME** ] を選択し、次の表の他の値を入力またはコピーして貼り付けます。
 
    | **Hostname**|**Type**|**Destination CNAME**|
    |:-----|:-----|:-----|
@@ -292,7 +292,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="ドロップダウン リストから CNAME の種類を選択し、値を入力します。":::
 
-1. **[追加]** を選択します。
+1. [**追加**] を選択します。
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="[追加] を選択します。":::
 

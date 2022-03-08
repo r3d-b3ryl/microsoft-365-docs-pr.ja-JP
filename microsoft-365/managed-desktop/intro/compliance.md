@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d34807d20f0b203efb3d45b6fe45eddce632e275
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 2606b6c241b364464b4c6f205a3beb13af50a814
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035078"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320383"
 ---
 # <a name="compliance"></a>コンプライアンス
 
@@ -39,10 +39,9 @@ Microsoft Managed Desktop は、次の認定を取得しました。
 - [健康保険の移植性と説明責任法 (HIPAA)](/compliance/regulatory/offering-hipaa-hitech)
 - [Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)](/compliance/regulatory/offering-hitrust)
 
-
 ## <a name="auditor-reports-and-compliance-certificates"></a>監査レポートとコンプライアンス証明書
 
-管理要件や技術要件などの関連情報は、サービス信頼ポータル[(STP)](https://servicetrust.microsoft.com/)で、サービスサービスに関するそのような情報の中央リポジトリMicrosoft Cloud Serviceできます。 監査レポート、コンプライアンス証明書などについては、STP の [監査レポート] [セクションから](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) ダウンロードできます。
+管理要件や技術要件などの関連情報は、サービス信頼ポータル [(STP) で確認できます](https://servicetrust.microsoft.com/)。 このポータルは、サービスに関するこのような情報のMicrosoft Cloud Serviceです。 監査レポート、コンプライアンス証明書などについては、STP の [監査レポート [] セクションから](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) ダウンロードできます。
 
 > [!NOTE]
 > Microsoft Managed Desktop は Azure で実行されるので、関連するドキュメントには通常、"Microsoft Azure、Dynamics 365、その他のオンライン サービス" などのファイル名があります。 これらのドキュメントでは、通常、カテゴリ "Microsoft Online Services" または "監視 + 管理" の下に Microsoft Managed Desktop があります。

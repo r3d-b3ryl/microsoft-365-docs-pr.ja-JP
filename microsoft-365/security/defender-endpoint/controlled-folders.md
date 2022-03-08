@@ -15,14 +15,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 8873a8f374280834970d14f72c2e6677292f7702
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: ea3e45a5469c9769f55f9ce90f799c54556de814
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807442"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322899"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダーへのアクセス制御で重要なフォルダーを保護する
 
@@ -63,10 +63,10 @@ ms.locfileid: "62807442"
 
 保護 [されたフォルダーには、](#review-controlled-folder-access-events-in-windows-event-viewer) 一般的なシステム フォルダー (ブート セクターを含む) が含まれます。さらにフォルダー [を追加できます](customize-controlled-folders.md#protect-additional-folders)。 アプリが [保護されたフォルダー](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) へのアクセス権を与えるのを許可することもできます。
 
-監査モードを [使用して](audit-windows-defender.md) 、フォルダー アクセスが有効になっている場合に組織に与える影響を評価できます。 また、Windows Defenderテスト グラウンド web サイト demo.wd.microsoft.com、機能[が](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)動作し、動作を確認できます。
+監査モードを [使用して](audit-windows-defender.md) 、フォルダー アクセスが有効になっている場合に組織に与える影響を評価できます。 また、テスト グラウンド web サイト[Windows Defenderサイト demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 機能が動作し、動作を確認できます。
 
 > [!NOTE]
-> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 フォルダー アクセスの制御は、次のバージョンのフォルダーでサポートWindows。
 
@@ -77,7 +77,7 @@ ms.locfileid: "62807442"
 
 ## <a name="windows-system-folders-are-protected-by-default"></a>Windowsシステム フォルダーは既定で保護されています
 
-Windowsシステム フォルダーは、既定で保護され、他のいくつかのフォルダーと共に保護されます。
+Windowsシステム フォルダーは、他のいくつかのフォルダーと共に既定で保護されます。
 
 保護されたフォルダーには、一般的なシステム フォルダー (ブート セクターを含む) が含まれるので、追加のフォルダーを追加できます。 アプリが保護されたフォルダーへのアクセス権を与えるのを許可することもできます。  既定Windows保護されているシステム フォルダーは次のとおりです。
 
@@ -104,7 +104,7 @@ Windowsシステム フォルダーは、既定で保護され、他のいくつ
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>管理されたフォルダー アクセス イベントを Microsoft 365 Defenderする
 
-Defender for Endpoint は、Microsoft 365 Defender ポータルでのアラート調査シナリオの一環として[](investigate-alerts.md)、イベントとブロックに関する詳細なレポートを提供します。詳細については、「[Microsoft Defender for Endpoint in Microsoft 365 Defender」を参照してください](../defender/microsoft-365-security-center-mde.md)。
+Defender for Endpoint は、Microsoft 365 Defender ポータルのアラート調査シナリオの一環として[](investigate-alerts.md)、イベントとブロックに関する詳細なレポートを提供します。詳細については、「[Microsoft Defender for Endpoint in Microsoft 365 Defender」を参照してください](../defender/microsoft-365-security-center-mde.md)。
 
 高度な検索を使用して、Microsoft Defender for Endpoint データ [に対してクエリを実行できます](advanced-hunting-overview.md)。 監査モードを[使用している場合](audit-windows-defender.md)は、高度な検索[](advanced-hunting-overview.md)を使用して、フォルダー アクセスの制御設定が有効になっている場合に環境に与える影響を確認できます。
 
@@ -117,12 +117,12 @@ DeviceEvents
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>イベント ビューアーで管理されたフォルダー アクセス イベントWindows確認する
 
-次のイベント ログWindows確認して、フォルダー アクセス ブロック (または監査) の制御時に作成されるイベントをアプリで確認できます。
+次のイベント ログWindows確認して、フォルダー アクセスブロック (または監査) の制御時に作成されるイベントをアプリで確認できます。
 
-1. 評価パッケージ [をダウンロードし](https://aka.ms/mp7z2w) 、デバイス上 *cfa-events.xmlにファイル* を抽出します。
+1. 評価パッケージ [をダウンロードし](https://aka.ms/mp7z2w) 、デバイス上 *cfa-events.xmlアクセスしやすい* 場所にファイルを抽出します。
 2. [**イベント ビューアー]** と入力スタート メニューイベント ビューアー Windows開きます。
 3. 左側のパネルの [アクション] **で、[** カスタム ビュー **のインポート....] を選択します**。
-4. 抽出した場所に *移動cfa-events.xml選択* します。 または、 [XML を直接コピーします](event-views.md)。
+4. 抽出した場所に移動し *cfa-events.xml* 選択します。 または、 [XML を直接コピーします](event-views.md)。
 5. **[OK]** を選択します。
 
 次の表に、フォルダー アクセスの制御に関連するイベントを示します。
@@ -137,7 +137,7 @@ DeviceEvents
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>保護されたフォルダーの一覧を表示または変更する
 
-Windows セキュリティアプリを使用して、フォルダー アクセスの制御によって保護されているフォルダーの一覧を表示できます。
+Windows セキュリティを使用して、フォルダー アクセスの制御によって保護されているフォルダーの一覧を表示できます。
 
 1. 11 Windows 10または Windows 11 デバイスで、アプリを開Windows セキュリティします。
 2. **[ウイルスと脅威の防止]** を選択します。

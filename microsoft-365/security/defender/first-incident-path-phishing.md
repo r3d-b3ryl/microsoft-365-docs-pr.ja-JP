@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c675486652e25e832685218caefe869739681e25
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 112bfd63a5f3667b22378790b62f3e33fba784d6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196755"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320299"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>フィッシングメール攻撃の例
 
@@ -36,13 +36,13 @@ ms.locfileid: "60196755"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defenderメール経由で配信される悪意のある添付ファイルを検出するのに役立ちます。 [Office 365](https://protection.office.com/)セキュリティとコンプライアンス センターは Microsoft 365 Defender と統合されていますので、セキュリティ アナリストは電子メールの添付ファイルなど、Office 365 から入ってくる脅威を可視化できます。
+Microsoft 365 Defenderメール経由で配信される悪意のある添付ファイルを検出するのに役立ちます。 [Office 365](https://protection.office.com/) セキュリティ とコンプライアンス センターは Microsoft 365 Defender と統合されていますので、セキュリティ アナリストは電子メールの添付ファイルなど、Office 365 から入ってくる脅威を可視化できます。
 
 たとえば、アナリストに複数ステージのインシデントが割り当てられたとします。
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="複数ステージのインシデントの例。"::: 
 
-インシデントの **[アラート**] タブに、Defender からのアラートが表示Office 365、Microsoft Cloud App Security表示されます。 アナリストは、電子メール メッセージ通知を選択して、Office 365の Defender にドリルダウンできます。 アラートの詳細がサイド ウィンドウに表示されます。
+インシデントの **[アラート**] タブに、Defender for Office 365 Microsoft Defender for Cloud Apps からのアラートが表示されます。 アナリストは、電子メール メッセージ通知を選択して、Office 365の Defender にドリルダウンできます。 アラートの詳細がサイド ウィンドウに表示されます。
 
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="電子メール通知の例。":::
  
@@ -54,9 +54,9 @@ Microsoft 365 Defenderメール経由で配信される悪意のある添付フ�
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="アラートの詳細の例。"::: 
 
-これにより、アナリストが [脅威の管理] ページに移動し、電子メールの件名、受信者、送信者、その他の情報が表示されます。 **[特別な** アクション **] の下の** ZAP は、ゼロ時間自動削除機能が実装されたとアナリストに指示します。 ZAP は、組織全体のメールボックスから悪意のあるメッセージやスパム メッセージを自動的に検出して削除します。 詳細については、「ゼロ時間自動削除[(ZAP)」を参照Exchange Online。](../office-365-security/zero-hour-auto-purge.md)
+これにより、アナリストが [脅威の管理] ページに移動し、電子メールの件名、受信者、送信者、その他の情報が表示されます。 **[特別な** アクション **] の下の** ZAP は、ゼロ時間自動削除機能が実装されたとアナリストに指示します。 ZAP は、組織全体のメールボックスから悪意のあるメッセージやスパム メッセージを自動的に検出して削除します。 詳細については、「ゼロ時間自動削除 [(ZAP)」を参照Exchange Online](../office-365-security/zero-hour-auto-purge.md)。
 
-[アクション] を選択すると、特定のメッセージに対して他のアクションを **実行できます**。 
+[アクション] を選択すると、特定のメッセージに対して他のアクションを実行 **できます**。 
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="他のアクションの例は、電子メール メッセージに対して実行できます。"::: 
 

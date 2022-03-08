@@ -1,13 +1,11 @@
 ---
 title: Microsoft 365 Business Premium のセットアップ
-f1.keywords:
-- NOCSH
 ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - O365E_M365SetupBanner
 - BCS365_M365SetupBanner
 ms.service: o365-administration
@@ -32,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: ドメインとユーザーの追加Microsoft 365 Business Premiumセキュリティ ポリシーの設定など、ユーザーのセットアップ手順について説明します。
-ms.openlocfilehash: adfb65a5dcbba398ea398a17f605e12c17375c5c
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: b4d12d34e535a58c952a752fca63af6f67e30a61
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422089"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312391"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>セットアップ ウィザードMicrosoft 365 Business Premiumの設定
 
@@ -51,7 +49,7 @@ ms.locfileid: "61422089"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
 
-1. [セットアップに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">]</a>をMicrosoft 365 管理センターにサインインし、[**セットアップに移動] を選択します**。 セットアップ ウィザードが起動します。
+1. [セットアップに <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">移動] Microsoft 365 管理センター</a>にサインインし、[**セットアップに移動] を選択します**。 セットアップ ウィザードが起動します。
 1. セットアップが完了したら、Microsoft 管理センターに戻します。 管理センターでは、[セットアップ] ページで、Windows 10、DLP などの機能を **引き続き設定** できます。
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>ドメイン、ユーザー、およびポリシーの設定を追加する
@@ -78,7 +76,7 @@ ms.locfileid: "61422089"
     ![[サインインのカスタマイズ] ページのスクリーンショット。](../../media/adddomain.png)
 
     
-4. ウィザードの手順に従って、ドメインを所有Microsoft 365 DNS ホスティング プロバイダー[で DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)レコードを作成します。 ドメイン ホストがわかっている場合は、「[Microsoft 365 にドメインを追加する](/microsoft-365/admin/setup/add-domain)」も参照してください。
+4. ウィザードの手順に従って、ドメインを所有Microsoft 365 DNS ホスティング プロバイダーで [DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) レコードを作成します。 ドメイン ホストがわかっている場合は、「[Microsoft 365 にドメインを追加する](/microsoft-365/admin/setup/add-domain)」も参照してください。
 
     ご利用のホスティング プロバイダーが GoDaddy または [Domain Connect](/office365/admin/get-help-with-domains/domain-connect) を有効にした別のホストである場合、プロセスは簡単です。サインインし、お客様に代わって Microsoft が認証するよう自動的に求められます。
 
@@ -94,7 +92,7 @@ ms.locfileid: "61422089"
 
 ![ウィザードの [新しいユーザーの追加] ページのスクリーンショット。](../../media/addnewuserspage.png)
 
-1. サブスクリプションにMicrosoft 365 Business Premiumユーザーがある場合 (たとえば、Azure AD Connect を使用した場合)、ライセンスを今すぐ割り当てるオプションが表示されます。 続行して、これらのユーザーにもライセンスを追加します。
+1. サブスクリプションにMicrosoft 365 Business Premium既存のユーザーが含まれています (たとえば、Azure AD Connect を使用した場合)、ライセンスを今すぐ割り当てるオプションが表示されます。 続行して、これらのユーザーにもライセンスを追加します。
 
 2. ユーザーを追加した後、資格証明書をそれらの新規ユーザーに共有するオプションが提供されます。それらをプリントアウトや電子メールで通知、またはダウンロードすることができます。
 
@@ -105,7 +103,7 @@ ms.locfileid: "61422089"
   
 サービスを設定するには、DNS ホストまたはドメイン レジストラーにあるレコードを更新する必要があります。
   
-1. セットアップ ウィザードでは通常、ユーザーのレジストラーが検出され、レジストラーの Web サイトで NS レコードを更新するための詳しい操作手順へのリンクが表示されます。 設定しない場合は、ネームサーバーを変更して、ドメイン[レジストラー Microsoft 365設定します](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。 
+1. セットアップ ウィザードでは通常、ユーザーのレジストラーが検出され、レジストラーの Web サイトで NS レコードを更新するための詳しい操作手順へのリンクが表示されます。 設定しない場合は、ネームサーバーを変更して、ドメイン [レジストラー Microsoft 365設定します](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。 
 
     - 既存の DNS レコード (たとえば、既存の Web サイト) を持っているのに、DNS ホストが [Domain Connect](/office365/admin/get-help-with-domains/domain-connect) に対して有効になっている場合には、[**レコードを追加してもらう**] を選択します。 [**オンライン サービスの選択**] ページで、すべて規定値のまま [**次へ**] を選択し、DNS ホストのページで [**承認**] を選択します。
     - 他の DNS ホストとの間に既存の DNS レコードがある場合 (Domain Connect では有効になっていません)、既存のサービスが接続されたままになっていることを確認するために、自分の DNS レコードを管理したいと思うかもしれません。詳しくは [ドメインの基礎](/office365/admin/get-help-with-domains/dns-basics) を参照してください。
@@ -118,29 +116,29 @@ ms.locfileid: "61422089"
 
 ウィザードで設定したポリシーは、[すべてのユーザー] というセキュリティ [グループ](/office365/admin/create-groups/compare-groups#security-groups) に自動的 *に適用されます*。 管理センターでポリシーを割り当てる追加のグループを作成することもできます。
 
-1. 高度な **サイバー脅威からの** 保護を強化する場合は、Office 365 [Advance Threat Protection](../../security/office-365-security/defender-for-office-365.md)でファイルとリンクをスキャンする既定を受け入Office勧めします。
+1. 高度な **サイバー脅威からの** 保護を強化する場合は、既定を受け入れて、Office 365 [Advanced Threat Protection](../../security/office-365-security/defender-for-office-365.md) がアプリ内のファイルとリンクをスキャンOffice勧めします。
 
     ![[保護の強化] ページのスクリーンショット。](../../media/increasetreatprotection.png)
 
 
-2. [機密データの漏洩を防止する] ページで、Office 365 データ損失防止 (DLP) を有効にする既定値を受け入れて、Office アプリで機密データを追跡し、組織外でこれらのデータを誤って共有しないようにします。
+2. [機密データの漏洩を防止する] ページで、Office 365 データ損失防止 (DLP) を有効にし、Office アプリ内の機密データを追跡し、組織外でこれらのデータを誤って共有しないようにするには、既定値を受け入れる必要があります。
 
-3. [モバイル 用 **データの保護]** Officeで、モバイル アプリの管理をオンのままにし、設定を展開して確認し、[モバイル アプリ管理ポリシーの作成]**を選択します**。
+3. [モバイル **用データの保護Office**] ページで、モバイル アプリの管理をオンのままにし、設定を展開して確認し、[モバイル アプリ管理ポリシーの作成] **を選択します**。
 
-    ![モバイル ページでデータを保護Officeのスクリーンショット。](../../media/protectdatainmobile.png)
+    ![モバイル ページでデータを保護Officeスクリーンショット。](../../media/protectdatainmobile.png)
 
 
 ## <a name="secure-windows-10-pcs"></a>Windows 10 PC をセキュリティで保護する
 
-左側のナビゲーションで、[セットアップ **]** を選択し、[サインインとセキュリティ] の下の [コンピューターのセキュリティを保護Windows 10 **します**。 [表示 **] を** 選択して開始します。 詳細な[手順については、「Windows 10コンピューターをセキュリティ](secure-win-10-pcs.md)で保護する」を参照してください。
+左側のナビゲーションで、[**セットアップ] を** 選択し、[サインインとセキュリティ] の下の [コンピューターのセキュリティ保護] **Windows 10します**。 [表示 **] を** 選択して開始します。 詳細な[手順については、「Windows 10コンピューターを](secure-win-10-pcs.md)セキュリティで保護する」を参照してください。
 
 ## <a name="deploy-office-365-client-apps"></a>クライアント Office 365を展開する
 
 セットアップ中に Office アプリを自動的にインストールすることを選択した場合、ユーザーが作業資格情報を使用して Windows デバイスから Azure AD にサインインすると、アプリは Windows 10 デバイスにインストールされます。
 
-モバイル iOS Office Android デバイスにアプリをインストールするには、「モバイル デバイスをユーザーにMicrosoft 365 Business Premium[する」を参照してください](set-up-mobile-devices.md)。
+モバイル iOS Office Android デバイスにインストールするには、「モバイル デバイスをユーザーに設定する」[をMicrosoft 365 Business Premiumしてください](set-up-mobile-devices.md)。
 
-また、個別にOfficeインストールできます。 手順[については、「pc Office Mac にインストールする」](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)を参照してください。
+また、個別にOfficeインストールできます。 手順[については、「pc Office Mac にインストールする](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 

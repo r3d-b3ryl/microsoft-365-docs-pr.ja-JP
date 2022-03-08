@@ -15,24 +15,21 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseコンプライアンス ポリシー設定を比較する方法について説明します。
-ms.openlocfilehash: 5e4fc396e2ea1e1cce576f6064f4239179db33cc
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouseデバイス コンプライアンス ポリシー設定を比較する方法について説明します。
+ms.openlocfilehash: 30645ef4d59fcdee0d994ae709ff9bb45fc21b09
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62859255"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320369"
 ---
 # <a name="compare-device-compliance-policy-settings"></a>デバイス コンプライアンス ポリシーの設定を比較する
 
-> [!NOTE]
-> この記事で説明する機能はプレビュー段階であり、変更される可能性があり、[要件](m365-lighthouse-requirements.md)を満たすパートナーのみが利用できます。 組織に Microsoft 365 Lighthouse がない場合は、「[Microsoft 365 Lighthouse にサインアップする](m365-lighthouse-sign-up.md)」を参照してください。
-
-Microsoft 365 Lighthouseを使用すると、テナント全体のコンプライアンス ポリシーを 1 つのビューで表示できます。 ポリシーを比較することで、テナント全体のセキュリティと標準化を推進できます。 ビューをフィルター処理して、構成済みの設定 (構成されていない設定と比較)、構成が異なる設定、または一致する設定を表示できます。 特定の設定を検索して、ポリシー間での比較方法を確認することもできます。
+Microsoft 365 Lighthouseでは、テナント全体のコンプライアンス ポリシーを 1 つのビューで表示できます。 ポリシーを比較することで、テナント全体のセキュリティと標準化を推進できます。 ビューをフィルター処理して、構成済みの設定 (構成されていない設定と比較)、構成が異なる設定、または一致する設定を表示できます。 特定の設定を検索して、ポリシー間での比較方法を確認することもできます。
 
 ## <a name="before-you-begin"></a>始める前に
 
-デバイスにライセンスが設定されMicrosoft Intune (MEM) に登録Microsoft エンドポイント マネージャー確認します。
+デバイスにライセンスライセンスがMicrosoft Intuneし、デバイス (MEM) にMicrosoft エンドポイント マネージャーしてください。
 
 ## <a name="compare-policy-settings"></a>ポリシー設定の比較
 
@@ -49,7 +46,7 @@ Microsoft 365 Lighthouseを使用すると、テナント全体のコンプラ�
 
 5. [比較 **] を選択します**。
 
-結果をフィルター処理して、異なる設定 **、** 一設定設定を **確認できます**。
+結果をフィルター処理して、異なる設定 **一** 致する設定構成済みの設定を **確認できます**。
 
 ## <a name="configure-a-policy-setting"></a>ポリシー設定の構成
 
@@ -59,7 +56,7 @@ Microsoft 365 Lighthouseを使用すると、テナント全体のコンプラ�
 
 3. 一覧からポリシー名を選択します。
 
-4. [ポリシーの詳細] ウィンドウで、[このポリシー **を表示する] を選択Microsoft エンドポイント マネージャー**。
+4. [ポリシーの詳細] ウィンドウで、[ポリシーを表示する] を **選択Microsoft エンドポイント マネージャー**。
 
 5. MEM で、必要に応じてポリシー設定を編集します。
 

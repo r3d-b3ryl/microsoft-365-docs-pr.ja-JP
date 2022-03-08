@@ -14,14 +14,14 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: fab57a3cb63823dcd4538f2b4bb381972d310c64
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: d8ff1b5946ccdcbc35a219bc0e656c2e23d6f3ea
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322073"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327659"
 ---
 # <a name="enable-controlled-folder-access"></a>制御されたフォルダー アクセスを有効にする
 
@@ -34,7 +34,7 @@ ms.locfileid: "62322073"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[フォルダー アクセスの制御により](controlled-folders.md) 、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019 Windows 10、Windows 11、および Windowsに含まれます。 フォルダー アクセスの制御は、Windows [Server 2012R2 および 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) の最新の統合ソリューションの一部として含まれています。
+[フォルダー アクセスの制御により](controlled-folders.md) 、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019 Windows 10、Windows 11、Windowsに含まれます。 フォルダー アクセスの制御は、Windows [Server 2012R2 および 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) の最新の統合ソリューションの一部として含まれています。
 
 次の方法を使用して、フォルダーアクセスの制御を有効にできます。
 
@@ -56,7 +56,7 @@ ms.locfileid: "62322073"
 
 ## <a name="windows-security-app"></a>Windows セキュリティアプリ
 
-1. タスク バー Windows セキュリティシールド アイコンを選択して、アプリを開きます。 また、スタート メニューを **検索して、** Windows セキュリティ。
+1. タスク バー Windows セキュリティシールド アイコンを選択して、アプリを開きます。 また、スタート メニューを検索 **して、Windows セキュリティ**。
 
 2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) を選択し、[ランサムウェア保護] **を選択します**。
 
@@ -65,19 +65,19 @@ ms.locfileid: "62322073"
 > [!NOTE]
 > *このメソッドは、サーバー 2012R2 Windows 2016 では使用できません。
 > 
-> グループ ポリシー、PowerShell、または MDM CSP を使用してフォルダー アクセスの制御が構成されている場合、デバイスの再起動後に Windows セキュリティ アプリで状態が変更されます。
+> グループ ポリシー、PowerShell、または MDM CSP でフォルダー アクセスの制御が構成されている場合、デバイスの再起動後に Windows セキュリティ アプリで状態が変更されます。
 > これらのツールを使用して機能が **監査** モードに設定されている場合、アプリWindows セキュリティ状態が Off として表示 **されます**。
-> ユーザー プロファイル データを保護する場合は、ユーザー プロファイルをインストール ドライブの既定のWindowsすることをお勧めします。
+> ユーザー プロファイル データを保護する場合は、ユーザー プロファイルが既定のインストール ドライブWindows勧めします。
 
 ## <a name="endpoint-manager"></a>エンドポイント マネージャー
 
-1. エンドポイント セキュリティにサインインし [エンドポイント マネージャー](https://endpoint.microsoft.com)開 **きます**。
+1. エンドポイント セキュリティ [にサインインエンドポイント マネージャー](https://endpoint.microsoft.com)開 **きます**。
 
 2. [攻撃表面 **の縮小ポリシー] に移動** \> **します**。
 
 3. [**プラットフォーム] を** 選択し **Windows 10を選択** し、[攻撃表面縮小ルールの作成] プロファイル **を選択** \> **します**。
 
-4. ポリシーに名前を付け、説明を追加します。 [**次へ**] を選択します。
+4. ポリシーに名前を付け、説明を追加します。 **[次へ]** を選択します。
 
 5. 下にスクロールし、[フォルダー保護を有効にする] ドロップダウンを選択し、[有効にする] を **選択します**。
 
@@ -100,7 +100,7 @@ ms.locfileid: "62322073"
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. このMicrosoft Endpoint Configuration Manager、**Exploit** \> Guard の [アセットと **コンプライアンス]** \> Endpoint Protection Windows Defender **移動します**。
+1. このMicrosoft Endpoint Configuration Manager、**Exploit** \> Guard の [アセットと **コンプライアンス] Endpoint Protection Windows Defender** \> **移動します**。
 
 2. [ホーム **エクスプロイト** \> **ガード ポリシーの作成] を選択します**。
 
@@ -121,14 +121,14 @@ ms.locfileid: "62322073"
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して **、exploit Guard Windowsアクセス> Microsoft Defender ウイルス対策 > Windows Defender管理>コンポーネントを表示します**。
+3. ツリーを展開して、**exploit Guard Windowsアクセス> Microsoft Defender ウイルス対策 > Windows Defender管理>コンポーネントを表示します**。
 
 4. [フォルダー アクセスの構成 **] 設定** をダブルクリックし、オプションを [有効] に **設定します**。 [オプション] セクションで、次のいずれかのオプションを指定する必要があります。
    - **有効** - 悪意のあるアプリや疑わしいアプリでは、保護されたフォルダー内のファイルを変更することはできません。 通知は、イベント ログWindowsされます。
    - **無効 (既定)** - フォルダー アクセスの制御機能が機能しません。 すべてのアプリは、保護されたフォルダー内のファイルを変更できます。
    - **監査モード** - 悪意のあるアプリや疑わしいアプリが保護されたフォルダー内のファイルに変更を加えた場合、変更が許可されます。 ただし、組織への影響を評価Windowsイベント ログに記録されます。
-   - **[ディスクの変更を** ブロックする] - 信頼されていないアプリがディスク セクターに書き込む試みは、イベント ログWindowsされます。 これらのログは、**運用 ID** \> \> \> \> 1123 に含Windows Windows Defenderで\>確認できます。
-   - 監査 **ディスクの** 変更のみ - 保護されたディスク セクターへの書き込みのみを Windows イベント ログに記録します (\>[アプリケーションとサービス ログ **Microsoft** \>  \> \> Windows Windows Defender **運用** \> **ID 1124**] の下)。 保護されたフォルダー内のファイルを変更または削除しようとすると、記録されません。
+   - **[ディスクの変更** をブロックする] - 信頼されていないアプリがディスク セクターに書き込む試みは、イベント ログWindowsされます。 これらのログは、**運用 ID** \> \> \> \> 1123 Windows Windows Defenderで\>確認できます。
+   - 監査 **ディスクの変更** のみ - 保護されたディスク セクターへの書き込みのみを Windows イベント ログに記録します (\>[アプリケーションとサービス ログ  **Microsoft** \>  \> \> Windows Windows Defender **運用** \> **ID 1124**] の下)。 保護されたフォルダー内のファイルを変更または削除しようとすると、記録されません。
 
       ![グループ ポリシー オプション [有効] および [監査モード] がドロップダウンで選択されているスクリーンショットです。](../../media/cfa-gp-enable.png)
 
@@ -137,7 +137,7 @@ ms.locfileid: "62322073"
 
 ## <a name="powershell"></a>PowerShell
 
-1. [**powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
+1. [**powershell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
 
 2. 次のコマンドレットを入力します。
 

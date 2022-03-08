@@ -1,5 +1,5 @@
 ---
-title: Id のMicrosoft 365 Defender評価、評価の設定
+title: 手順 2.  Id のMicrosoft 365 Defender評価、評価の設定
 description: 要件、eval の有効化Microsoft 365 Defenderアクティブ化、パイロットまたはテストのセットアップを含む ID の評価手順。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,20 +22,20 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 77ccebb394230c38140bc8cd62c97262ff1ddf7a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 37b387d1e38ca3e49406773820a63a6e0d239356
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171804"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311579"
 ---
-# <a name="evaluate-microsoft-defender-for-identity-overview"></a>Microsoft Defender for Identity の概要を評価する
+# <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>手順 2。 Microsoft Defender for Identity の概要を評価する
 
 
 **適用対象:**
 - Microsoft 365 Defender
 
-この記事では、Microsoft Defender for Identity を有効にしてパイロットするプロセスの概要を説明します。 このプロセスを開始する前に、評価プロセス全体を確認し、Microsoft 365 Defender評価[](eval-overview.md)環境をMicrosoft 365 Defender[してください](eval-create-eval-environment.md)。 
+この記事では、Microsoft Defender for Identity を有効にしてパイロットするプロセスの概要を説明します。 このプロセスを開始する前に、評価プロセス全体を確認し、Microsoft 365 Defender評価[](eval-overview.md)環境Microsoft 365 Defender[してください](eval-create-eval-environment.md)。 
 <br>
 
 次の手順を使用して、Microsoft Defender for Identity を有効にしてパイロットします。

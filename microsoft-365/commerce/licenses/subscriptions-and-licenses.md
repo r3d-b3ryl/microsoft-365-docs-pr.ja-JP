@@ -2,11 +2,11 @@
 title: ビジネス向けサブスクリプションとライセンスMicrosoft 365理解する
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -14,20 +14,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
-description: 受け取るアプリケーションとサービスは、購入Microsoft 365製品によって異Microsoft 365 Apps for business。
+description: 受け取るアプリケーションとサービスは、購入Microsoft 365製品 (Microsoft 365 Apps for business など) によって異Microsoft 365 Apps for business。
 ms.date: 07/01/2020
-ms.openlocfilehash: e380ac61033435a86118f7178da9e014d13ad436
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: fefdca1b1321e19d76a227ecd313708e700b9c01
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524047"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313315"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>ビジネス向けサブスクリプションとライセンスMicrosoft 365理解する
 
@@ -69,15 +69,15 @@ ms.locfileid: "62524047"
 - [共有メールボックスからライセンスを削除する](../../admin/email/remove-license-from-shared-mailbox.md)
 - [他のすべてのプランExchange Online](/exchange/collaboration-exo/shared-mailboxes)共有メールボックスMicrosoft 365します。
 
-## <a name="who-can-assign-licenses"></a>Who割り当て可能ですか?
+## <a name="who-can-assign-licenses"></a>Whoライセンスを割り当て可能ですか?
 
 個々の管理者が実行できるライセンスに関する作業は、その役割によって異なります。以下の表は、最も一般的なオプションをまとめたものです。管理者の役割と権限の詳細については、「[Office 365 の管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   
 |**管理者ロール**|**ライセンスを割り当てる**|**ライセンスの割り当てを解除する**|**その他のライセンスを購入する**|**アカウントの削除**|
 |:-----|:-----|:-----|:-----|:-----|
-|課金管理者  <br/> |いいえ  <br/> |不要  <br/> |はい  <br/> |不要  <br/> |
+|課金管理者  <br/> |いいえ  <br/> |いいえ  <br/> |はい  <br/> |いいえ  <br/> |
 |グローバル管理者  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |
-|ライセンス管理者 <br/> |はい <br/>|はい <br/> |いいえ <br/> |不要 <br/> |
+|ライセンス管理者 <br/> |はい <br/>|はい <br/> |いいえ <br/> |いいえ <br/> |
 |サービス サポート管理者  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |
 |ユーザー管理者  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |はい  <br/> |
 

@@ -2,8 +2,8 @@
 title: アカウントの源泉徴収税のクレジットを要求する (グローバルユーザー)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
@@ -16,16 +16,16 @@ ms.collection:
 search.appverid: MET150
 description: 支払った源泉徴収税のアカウントでクレジットを要求する方法について説明します。 この記事は、インドを除く世界中のお客様に適用されます。
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 monikerRange: o365-worldwide
 ms.date: 05/27/2021
-ms.openlocfilehash: c2f12293593d39e5e7a738c914ba7bab79316a4a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a38cff7648666db7b6817882355ff756d1070c17
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158612"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322297"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>アカウントの源泉徴収税のクレジットを要求する (グローバルユーザー)
 
@@ -33,7 +33,7 @@ ms.locfileid: "60158612"
 >
 > 組織がインドに拠点を置く場合は、「アカウントに源泉徴収税のクレジットを要求する (インドのお客様)」 [を参照してください](withholding-tax-credit-india.md)。
 
-一部の顧客は、外国にある Microsoft エンティティによって請求される Web ダイレクト (Azure および Microsoft 365) 請求書を受け取ります。 組織がそのエンティティに対してクロスボーダー支払いを行う場合、お客様の国の税務当局は、クロスボーダー支払いの一部を源泉徴収税 (WHT) として差し控える必要がある場合があります。 Microsoft に支払いを請求するときに、税務当局が要求する税金を差し引いた場合、この記事では、差し控え税のクレジットを請求するプロセスについて説明します。
+一部の顧客は、外国にある Microsoft エンティティによって請求される Web ダイレクト (Azure および Microsoft 365) の請求書を受け取ります。 組織がそのエンティティに対してクロスボーダー支払いを行う場合、お客様の国の税務当局は、クロスボーダー支払いの一部を源泉徴収税 (WHT) として差し控える必要がある場合があります。 Microsoft に支払いを請求するときに、税務当局が要求する税金を差し引いた場合、この記事では、差し控え税のクレジットを請求するプロセスについて説明します。
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>チェックまたはワイヤーで支払う請求書支払いのお客様向け
 

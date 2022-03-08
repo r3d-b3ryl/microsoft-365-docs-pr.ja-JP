@@ -11,23 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Oracle の Cisco Jabber からデータをインポートおよびアーカイブするために、Microsoft 365 コンプライアンス センターでコネクタをセットアップして使用する方法について説明Microsoft 365。
-ms.openlocfilehash: 6d38abfbbb8380a6f7eb5bc617460a1a3b8e6e73
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+description: Oracle の Cisco Jabber からデータをインポートおよびアーカイブするために、Microsoft 365 コンプライアンス センター でコネクタを設定して使用する方法について説明Microsoft 365。
+ms.openlocfilehash: d58d015e94050bc82b427ba450314b7bb447d4d1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643112"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320649"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Oracle データで Cisco Jabber をアーカイブするコネクタをセットアップする
 
-Oracle プラットフォーム上の Cisco Jabber から、Microsoft 365 コンプライアンス センター組織のユーザー メールボックスにデータをインポートおよびアーカイブするには、このページの Veritas コネクタMicrosoft 365します。 Veritas は、サードパーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された、Oracle コネクタ上の Cisco [Jabber](https://www.veritas.com/insights/merge1/jabber)を提供します。 コネクタは、ファイルやファイル操作、コメント、共有コンテンツなどのコンテンツを Oracle の Cisco Jabber から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
+Microsoft 365 コンプライアンス センター の Veritas コネクタを使用して、Oracle プラットフォーム上の Cisco Jabber から組織のユーザー メールボックスにデータをインポートMicrosoft 365します。 Veritas は、サードパーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された、Oracle コネクタ上の Cisco [Jabber](https://www.veritas.com/insights/merge1/jabber) を提供します。 コネクタは、ファイルやファイル操作、コメント、共有コンテンツなどのコンテンツを Oracle の Cisco Jabber から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
-Oracle データの Cisco Jabber がユーザー メールボックスに格納された後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルなどの Microsoft 365 コンプライアンス機能を適用できます。 Oracle コネクタで Cisco Jabber を使用してデータをインポートおよびアーカイブMicrosoft 365、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
+Oracle データの Cisco Jabber がユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルなどの Microsoft 365 コンプライアンス機能を適用できます。 Oracle コネクタで Cisco Jabber を使用してデータをインポートおよびアーカイブMicrosoft 365、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
 ## <a name="overview-of-archiving-cisco-jabber-on-oracle-data"></a>Oracle データに対する Cisco Jabber のアーカイブの概要
 
-次の概要では、コネクタを使用して、Cisco Jabber を Oracle データにアーカイブするプロセスについて説明Microsoft 365。
+次の概要では、コネクタを使用して、Cisco Jabber を Oracle データにアーカイブするプロセスMicrosoft 365。
 
 ![Oracle データに関する Cisco Jabber のアーカイブ ワークフロー。](../media/CiscoJabberOnOracleConnectorWorkflow.png)
 
@@ -41,19 +41,19 @@ Oracle データの Cisco Jabber がユーザー メールボックスに格納�
 
 ## <a name="before-you-begin"></a>始める前に
 
-- Microsoft コネクタ用の Merge1 アカウントを作成します。 これを行うには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/en_US)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の Merge1 アカウントを作成します。 これを行うには、 [Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/en_US)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
 
-- 手順 1 で Oracle コネクタで Cisco Jabber を作成し (および手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、データ コネクタ ページの[データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 既定では、この役割は、グループ内の任意の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- 手順 1 で Oracle コネクタで Cisco Jabber を作成し (手順 3 で完了する) ユーザーには、データ コネクタ管理者の役割が割り当てられている必要があります。 この役割は、データ コネクタ ページの [データ  コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 この役割は、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ とコンプライアンス センターのアクセス許可」の「セキュリティとコンプライアンス センターの役割& [してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。 または、組織内の管理者がカスタム役割グループを作成し、データ コネクタ管理者の役割を割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、「アクセス許可」の「カスタム役割グループを作成する」[セクションを参照Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)。
 
-- この Veritas データ コネクタは、米国政府機関クラウドGCC環境Microsoft 365プレビュー中です。 サード パーティのアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にあるサードパーティ システムに組織の顧客データを格納、送信、処理する必要がある場合があります。したがって、Microsoft 365 コンプライアンスとデータ保護のコミットメントの対象とはなってはいけなかっています。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
+- この Veritas データ コネクタは、米国政府機関クラウドGCC環境Microsoft 365プレビュー中です。 サード パーティ製のアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にある、Microsoft 365 コンプライアンスおよびデータ保護のコミットメントの対象となされていないサードパーティ システムに対して、組織の顧客データを保存、送信、および処理する必要があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
 
 ## <a name="step-1-set-up-the-cisco-jabber-on-oracle-connector"></a>手順 1: Oracle コネクタで Cisco Jabber をセットアップする
 
 最初の手順は、次のページの [データ コネクタ] ページにアクセスしMicrosoft 365 コンプライアンス センタージャバー データのコネクタを作成することです。
 
-1. Oracle の <https://compliance.microsoft.com> [データ コネクタ  >  **Cisco Jabber] に移動し、[データ コネクタ] をクリックします**。
+1. [データ コネクタ<https://compliance.microsoft.com>] に移動 **し、[Oracle] の** >  **[データ コネクタCisco Jabber] をクリックします**。
 
-2. [Oracle 製品 **の説明] ページの [Cisco Jabber]** で、[コネクタの追加] **をクリックします**。
+2. [ **Oracle 製品の説明] ページの [Cisco Jabber** ] で、[コネクタの追加] **をクリックします**。
 
 3. [サービス条件 **] ページで、[** 同意する] を **クリックします**。
 
@@ -63,7 +63,7 @@ Oracle データの Cisco Jabber がユーザー メールボックスに格納�
 
 ## <a name="step-2-configure-the-cisco-jabber-on-oracle-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトの Oracle で Cisco Jabber を構成する
 
-2 番目の手順は、Veritas Merge1 サイトの Oracle コネクタで Cisco Jabber を構成することです。 Oracle コネクタで Cisco Jabber を構成する方法については [、「Merge1 サードパーティ](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20Oracle%20User%20Guide.pdf)コネクタ ユーザー ガイド」を参照してください。
+2 番目の手順は、Veritas Merge1 サイトの Oracle コネクタで Cisco Jabber を構成することです。 Oracle コネクタで Cisco Jabber を構成する方法については、「Merge1 サードパーティ コネクタ ユーザー ガイド」 [を参照してください](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20Oracle%20User%20Guide.pdf)。
 
 [ファイルの **保存と&完了**] をクリックすると、コネクタ ウィザードの [ユーザー マッピング] ページが表示Microsoft 365 コンプライアンス センターされます。
 
@@ -79,11 +79,11 @@ Oracle データの Cisco Jabber がユーザー メールボックスに格納�
 
 Oracle コネクタで Cisco Jabber を作成した後は、コネクタの状態を [コネクタ] Microsoft 365 コンプライアンス センター。
 
-1. 左側の <https://compliance.microsoft.com/> ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
+1. 左側のナビゲーション <https://compliance.microsoft.com/> で [ **データ コネクタ] に** 移動してクリックします。
 
 2. [コネクタ **] タブをクリック** し、Oracle コネクタの **Cisco Jabber** を選択して、コネクタのプロパティと情報を含むフライアウト ページを表示します。
 
-3. [**ソースを含むコネクタの状態**] で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存) します。  このログには、Microsoft クラウドにインポートされたデータが含まれます。
+3. [**ソースを含むコネクタの** 状態] で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータが含まれます。
 
 ## <a name="known-issues"></a>既知の問題
 

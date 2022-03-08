@@ -9,15 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
+ms.openlocfilehash: d0c8dbb71a56701cb5ca75aadb1a5bcc7290844f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323361"
 ---
-
 # <a name="deploy-apps-to-devices"></a>アプリをデバイスに展開する
 
 Microsoft Managed Desktop へのオンボードの一部には、ユーザーのデバイスへのアプリの追加と展開が含まれます。 Microsoft Managed Desktop ポータルを使用すると、アプリを追加して展開できます。
 
 全体的なプロセスは次のように表示されます。
 
-1. [Microsoft Managed Desktop](#1) ポータルにアプリを追加する: これらのアプリは、既存の業務行 (LOB) アプリ、または Intune と同期した ビジネス向け Microsoft Store からのアプリです。
+1. [Microsoft Managed Desktop](#1) ポータルにアプリを追加する: これらのアプリは、既存の業務行 (LOB) アプリ、または Intune と同期した ビジネス向け Microsoft Store のアプリです。
 2. [アプリAzure Active Directory (AD)](#2) グループを作成する: これらのグループを使用してアプリの割り当てを管理します。
 3. [ユーザーにアプリを割り当てる](#3)。
 
@@ -25,7 +30,7 @@ Microsoft Managed Desktop へのオンボードの一部には、ユーザーの
 
 ## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>手順 1: Microsoft Managed Desktop ポータルにアプリを追加する
 
-[Win32、または MSI](#lob-apps) ベースのWindowsアプリ、または [ビジネス向け Microsoft Store](#msfb-apps) アプリを Microsoft Managed Desktop に追加し、Microsoft マネージ デスクトップ デバイスに展開できます。
+[Win32 または MSI](#lob-apps) ベースのアプリWindowsまたは [ビジネス向け Microsoft Store](#msfb-apps) アプリを Microsoft Managed Desktop に追加し、Microsoft マネージ デスクトップ デバイスに展開できます。
 
 <span id="lob-apps">
 
@@ -42,7 +47,7 @@ Microsoft Managed Desktop ポータルにサインインするか、Intune に�
 1. [Microsoft Managed Desktop Admin ポータルにサインインします](https://aka.ms/mmdportal)。
 2. [インベントリ **] で**、[アプリ] **を選択します**。
 3. [アプリのワークロード] セクションで、[追加] を **選択します**。
-4. [**アプリの追加**] で **、[Line-of-business** アプリ] または [アプリWindows **(Win32)] を選択します**。
+4. [**アプリの追加]** で **、[Line-of-business アプリ**] または [Windows **アプリ (Win32)] を選択します**。
     - Line-of-business アプリを選択した場合は、「[Windows](/intune/lob-apps-windows) **line-of-business** アプリを Microsoft Intune に追加して構成する」を参照してください。
     - アプリ (**Win32) Windows選択** した場合は、「[Win32](/intune/apps-win32-app-management) アプリの管理」を参照して、アプリの追加と構成Windowsしてください。
 
@@ -50,7 +55,7 @@ Microsoft Managed Desktop ポータルにサインインするか、Intune に�
 
 ### <a name="microsoft-store-for-business-apps"></a>ビジネス向け Microsoft Store アプリ
 
-アプリにサインアップしていないビジネス向け Microsoft Store、アプリを購入するときにサインアップできます。 アプリを作成した後、それらを Microsoft Managed Desktop と同期できます。
+アプリにサインアップしていないビジネス向け Microsoft Storeアプリを購入するときにサインアップできます。 アプリを作成した後、それらを Microsoft Managed Desktop と同期できます。
 
 **アプリを購入するには、次のビジネス向け Microsoft Store。**
 
@@ -70,9 +75,9 @@ Microsoft Store、組織の **製品にアプリ** を追加します。
 **Intune とアプリの間で強制的に同期するには、次ビジネス向け Microsoft Store。**
 
 1. Microsoft エンドポイント マネージャー管理センター
-2. [**テナントの管理]** 、[**コネクタとトークン] の順に選択し、[****ビジネス向け Microsoft Store。**
+2. [**テナントの管理]** 、[コネクタとトークン] の順 **に選択し**、[**ビジネス向け Microsoft Store。**
 3. [**同期を** 有効にする **ビジネス向け Microsoft Store有効にする] を選択すると、Intune でボリューム購入したアプリにアクセスできます。**
-4. 目的の言語を選択し、[**同期**] を選択して、アプリから購入したアプリを Intune Microsoft Store取得します。
+4. 使用する言語を選択し、[**同期**] を選択して、アプリから購入したアプリを Intune にMicrosoft Storeします。
 
 <span id="2" />
 
@@ -112,7 +117,7 @@ Microsoft Store、組織の **製品にアプリ** を追加します。
 1. [Intune ポータル サイト](company-portal.md)を展開して割り当てます。
 1. [ライセンスを割り当てる](assign-licenses.md)。
 1. アプリを展開する (この記事)。
-1. [デバイスをセットアップする](set-up-devices.md)。
+1. [デバイスを準備します](prepare-devices.md)。
 1. [Autopilot と登録ステータス ページの初回実行時エクスペリエンス](esp-first-run.md)のセットアップ。
 1. [ユーザー サポート機能を有効にする](enable-support.md)。
 1. [ユーザーがデバイスを使えるようにする](get-started-devices.md)。

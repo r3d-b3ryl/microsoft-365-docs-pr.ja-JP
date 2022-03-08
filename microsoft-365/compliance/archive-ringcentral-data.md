@@ -11,19 +11,19 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理者は、RingCentral データを Veritas からユーザーにインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、電子情報開示、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 35acb27e1d98738c6fb916db97cf75ab293f15d4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 管理者は、RingCentral データを Veritas からユーザーにインポートしてアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、電子情報開示、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
+ms.openlocfilehash: 08d61fb21df099beb8b117d390ffe18a7145ecee
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188291"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327463"
 ---
 # <a name="set-up-a-connector-to-archive-ringcentral-data"></a>RingCentral データをアーカイブするコネクタをセットアップする
 
-サーバーの Veritas コネクタを使用Microsoft 365 コンプライアンス センター、RingCentral プラットフォームから組織のユーザー メールボックスにデータをインポートおよびアーカイブMicrosoft 365します。 Veritas には、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成された[RingCentral](https://www.veritas.com/insights/merge1/ringcentral)コネクタMicrosoft 365。 コネクタは、チャット、添付ファイル、タスク、メモ、投稿などのコンテンツを RingCentral から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
+サーバー内の Veritas コネクタをMicrosoft 365 コンプライアンス センター、RingCentral プラットフォームから組織のユーザー メールボックスにデータをインポートMicrosoft 365します。 Veritas には、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムを他のデータ ソースにインポートするように構成された [RingCentral](https://www.veritas.com/insights/merge1/ringcentral) コネクタMicrosoft 365。 コネクタは、チャット、添付ファイル、タスク、メモ、投稿などのコンテンツを RingCentral から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
 
-RingCentral データをユーザー のメールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルMicrosoft 365コンプライアンス機能を適用できます。 RingCentral コネクタを使用してデータをインポートおよびアーカイブMicrosoft 365、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
+RingCentral データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルMicrosoft 365コンプライアンス機能を適用できます。 RingCentral コネクタを使用して、Microsoft 365データをインポートおよびアーカイブすると、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
 
 ## <a name="overview-of-archiving-ringcentral-data"></a>RingCentral データのアーカイブの概要
 
@@ -37,23 +37,25 @@ RingCentral データをユーザー のメールボックスに格納した後�
 
 3. Microsoft 365 コンプライアンス センター で作成した RingCentral コネクタは、毎日 Veritas Merge1 サイトに接続し、RingCentral コンテンツを Microsoft クラウド内の安全な Azure Storage 場所に転送します。
 
-4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **RingCentral** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべての RingCentral アイテムには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
+4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **RingCentral** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用してアイテムをインポートするメールボックスを *決定* します。 すべての RingCentral アイテムには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-set-up-a-connector"></a>コネクタをセットアップする前に
 
-- Microsoft コネクタ用の Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/form/requestacall/ms-connectors-contact)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の Merge1 アカウントを作成します。 このアカウントを作成するには、 [Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/form/requestacall/ms-connectors-contact)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
 
-- RingCentral アカウントからデータをフェッチする RingCentral アプリケーションを作成します。 アプリケーションの作成の手順については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20RingCentral%20User%20Guide.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
+- RingCentral アカウントからデータをフェッチする RingCentral アプリケーションを作成します。 アプリケーションの作成の手順については、「Merge1 サードパーティ コネクタ ユーザー ガイド」 [を参照してください](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20RingCentral%20User%20Guide.pdf)。
 
-- 手順 1 で RingCentral コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、データ コネクタ ページの[データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 既定では、この役割は、グループ内の任意の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- 手順 1 で RingCentral コネクタを作成し (手順 3 で完了する) ユーザーには、データ コネクタ管理者の役割が割り当てられている必要があります。 この役割は、データ コネクタ ページの [データ  コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 この役割は、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ とコンプライアンス センターのアクセス許可」の「セキュリティとコンプライアンス センターの役割& [してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。 または、組織内の管理者がカスタム役割グループを作成し、データ コネクタ管理者の役割を割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、「アクセス許可」の「カスタム役割グループを作成する」[セクションを参照Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)。
+
+- この Veritas データ コネクタは、米国政府機関クラウドGCC環境Microsoft 365プレビュー中です。 サード パーティ製のアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にある、Microsoft 365 コンプライアンスおよびデータ保護のコミットメントの対象となされていないサードパーティ システムに対して、組織の顧客データを保存、送信、および処理する必要があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
 
 ## <a name="step-1-set-up-the-ringcentral-connector"></a>手順 1: RingCentral コネクタをセットアップする
 
-最初の手順は、データ センターの [データ コネクタ] ページにアクセスし、RingCentral Microsoft 365 コンプライアンス センターコネクタを作成することです。
+最初の手順は、データ センターの  [データ コネクタ] ページにアクセスしMicrosoft 365 コンプライアンス センターリングCentral データのコネクタを作成することです。
 
-1. に移動し <https://compliance.microsoft.com> 、[データ コネクタ **]**  >  **[RingCentral] をクリックします**。
+1. [データ コネクタ <https://compliance.microsoft.com> RingCentral] に移動 **し** > **、[データ コネクタ] をクリックします**。
 
-2. **[RingCentral 製品の説明]** ページで、[コネクタの追加]**をクリックします**。
+2. **[RingCentral 製品の説明]** ページで、[コネクタの追加] **をクリックします**。
 
 3. [サービス条件 **] ページで、[** 同意する] を **クリックします**。
 
@@ -63,7 +65,7 @@ RingCentral データをユーザー のメールボックスに格納した後�
 
 ## <a name="step-2-configure-the-ringcentral-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトで RingCentral を構成する
 
-2 番目の手順は、Veritas Merge1 サイトで RingCentral コネクタを構成することです。 RingCentral コネクタを構成する方法の詳細については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20RingCentral%20User%20Guide.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
+2 番目の手順は、Veritas Merge1 サイトで RingCentral コネクタを構成することです。 RingCentral コネクタを構成する方法の詳細については、「Merge1 サード パーティ コネクタ ユーザー ガイド」 [を参照してください](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20RingCentral%20User%20Guide.pdf)。
 
 [ファイルの **保存と&完了]** をクリックすると、コネクタ ウィザードの [ユーザー マッピング] ページが表示Microsoft 365 コンプライアンス センターされます。
 
@@ -71,7 +73,7 @@ RingCentral データをユーザー のメールボックスに格納した後�
 
 ユーザーをマップし、コネクタのセットアップを完了するには、次Microsoft 365 コンプライアンス センター手順を実行します。
 
-1. **[RingCentral ユーザーをユーザーにMicrosoft 365する]** ページで、自動ユーザー マッピングを有効にします。 RingCentral アイテムには、組織内のユーザーの電子メール アドレスを含む *Email* というプロパティが含まれます。 コネクタでこのアドレスをユーザーに関連付Microsoft 365、アイテムはユーザーのメールボックスにインポートされます。
+1. [**RingCentral ユーザーをユーザーにMicrosoft 365する]** ページで、自動ユーザー マッピングを有効にします。 RingCentral アイテムには、組織内のユーザーのメール アドレスを含む *Email* というプロパティが含まれます。 コネクタでこのアドレスをユーザーに関連付Microsoft 365、アイテムはユーザーのメールボックスにインポートされます。
 
 2. [**次へ**] をクリックし、設定を確認し、[データ コネクタ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
@@ -79,11 +81,11 @@ RingCentral データをユーザー のメールボックスに格納した後�
 
 RingCentral コネクタを作成した後は、コネクタの状態を [コネクタ] Microsoft 365 コンプライアンス センター。
 
-1. 左側の <https://compliance.microsoft.com/> ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
+1. 左側のナビゲーション <https://compliance.microsoft.com/> で [ **データ コネクタ] に** 移動してクリックします。
 
-2. [コネクタ **] タブをクリック** し **、RingCentral** コネクタを選択して、コネクタのプロパティと情報を含むフライアウト ページを表示します。
+2. [コネクタ **] タブをクリック** し、 **RingCentral** コネクタを選択して、コネクタのプロパティと情報を含むフライアウト ページを表示します。
 
-3. [**ソースを含むコネクタの状態**] で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存) します。  このログには、Microsoft クラウドにインポートされたデータが含まれます。
+3. [**ソースを含むコネクタの** 状態] で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータが含まれます。
 
 ## <a name="known-issues"></a>既知の問題
 

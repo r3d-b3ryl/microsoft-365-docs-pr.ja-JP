@@ -1,24 +1,29 @@
 ---
 title: ステップ 1. MFA を使用してハイブリッド ワーカーのサインイン セキュリティを強化する
 f1.keywords:
-  - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+- NOCSH
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - Strat_O365_Enterprise
-  - remotework
-  - m365solution-remotework
-  - m365solution-scenario
-ms.custom: null
+- M365-security-compliance
+- Strat_O365_Enterprise
+- remotework
+- m365solution-remotework
+- m365solution-scenario
+ms.custom: ''
 description: ハイブリッド ワーカーが多要素認証 (MFA) でサインインすることを要求します。
+ms.openlocfilehash: 3bccf8b3ab6bc57417c6b9beafa35c8c7230f20f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323487"
 ---
-
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>ステップ 1. MFA を使用してハイブリッド ワーカーのサインイン セキュリティを強化する
 
 ハイブリッド ワーカーのサインインのセキュリティを強化するには、多要素認証 (MFA) を使用します。 MFA では、ユーザーのサインインは、ユーザー アカウントのパスワード以外に追加の検証を受ける必要があります。 悪意のあるユーザーがユーザー アカウントのパスワードを決定した場合でも、アクセスが許可される前にスマートフォンに送信されるテキスト メッセージなど、追加の検証に応答できる必要があります。

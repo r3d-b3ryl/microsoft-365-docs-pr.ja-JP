@@ -14,18 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 86adc16c5e275daf371c98c7a9709df4977025e8
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: fc4191043e19df7fea4f350d85acd78d2eca1551
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302160"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322913"
 ---
 # <a name="cancel-machine-action-api"></a>マシン アクション API のキャンセル
 
@@ -45,7 +43,7 @@ ms.locfileid: "61302160"
 
 ## <a name="api-description"></a>API の説明
 
-(完了、キャンセル、失敗) まだ最終状態ではない既に起動されているコンピューター の操作をキャンセルします。
+まだ最終状態ではない既に起動されているコンピューター アクションをキャンセルします (完了、取り消し、失敗)。
 
 ## <a name="limitations"></a>制限事項
 
@@ -53,7 +51,7 @@ ms.locfileid: "61302160"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可を選択する方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|

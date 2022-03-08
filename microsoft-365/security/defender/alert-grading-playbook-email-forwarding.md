@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: fe4a5e97704cbf1d4851484397e7c4424c099d3c
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 2349fb9ac736653b9a74c42aecf5e71cc95381ca
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524191"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321517"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>疑わしいメール転送アクティビティのアラート の評価
 
@@ -37,7 +37,7 @@ ms.locfileid: "62524191"
 
 脅威のアクターは、ユーザーの受信トレイ内のメールの読み取り、外部受信者へのメールの転送、フィッシング メールの送信など、いくつかの悪意のある目的で侵害されたユーザー アカウントを使用できます。 対象となるユーザーは、自分のメールが転送されているのに気づいていない可能性があります。 これは、ユーザー アカウントが侵害された場合に攻撃者が使用する非常に一般的な方法です。
 
-電子メールは、転送ルールを使用して手動または自動的に転送できます。 自動転送は、受信トレイ ルール、トランスポート ルール (ETR)、SMTP 転送Exchange複数の方法で実装できます。 手動転送ではユーザーからの直接操作が必要ですが、自動転送された電子メールのすべてが認識されない場合があります。 このMicrosoft 365、ユーザーが悪意のある可能性のある電子メール アドレスに電子メールを自動転送すると、アラートが発生します。
+電子メールは、転送ルールを使用して手動または自動的に転送できます。 自動転送は、受信トレイ ルール、ETR(ETR)、SMTP 転送Exchange複数の方法で実装できます。 手動転送ではユーザーからの直接操作が必要ですが、自動転送された電子メールのすべてが認識されない場合があります。 このMicrosoft 365、ユーザーが悪意のある可能性のある電子メール アドレスに電子メールを自動転送すると、アラートが発生します。
 
 このプレイブックは、不審なメール転送アクティビティアラートを調査し、それらを True Positive (TP) または False Positive (FP) として迅速に評価するのに役立ちます。 その後、TP アラートに対して推奨されるアクションを実行して、攻撃を修復できます。
 
@@ -61,7 +61,7 @@ Microsoft Defender for Office 365および Microsoft Defender for Cloud Apps の
 
 一部のルールでは、すべてのメールを別のフォルダーに移動して"読み取り" としてマークする場合があります。一部のルールでは、電子メール メッセージまたは件名に特定のキーワードが含まれるメールのみを移動する場合があります。 たとえば、受信トレイ ルールを設定して、"請求書"、"フィッシング"、"返信しない"、"疑わしいメール"、"スパム" など、キーワードを検索し、外部メール アカウントに移動します。 攻撃者は、侵害されたユーザー メールボックスを使用してスパム、フィッシングメール、マルウェアを配布する場合もあります。
  
-Microsoft Defender for Office 365疑わしいメール転送ルールを検出して通知することができ、ソースで非表示のルールを見つけて削除できます。
+Microsoft Defender for Office 365疑わしいメール転送ルールを検出して警告することができ、ソースで非表示のルールを見つけて削除できます。
 
 詳細については、次のブログ投稿を参照してください。
 
@@ -131,7 +131,7 @@ Microsoft Defender for Office 365疑わしいメール転送ルールを検出�
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="メール転送のアラート調査ワークフロー" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
 
-脅威エクスプローラーを使用して、または高度な検索クエリを使用して、電子メール転送アラートを調査できます。このポータルの機能の可用性にMicrosoft 365 Defenderできます。 必要に応じて、プロセス全体またはプロセスの一部に従います。
+脅威エクスプローラーを使用して、または高度な検索クエリを使用して、メール転送アラートを調査できます。このポータルの機能の可用性にMicrosoft 365 Defenderできます。 必要に応じて、プロセス全体またはプロセスの一部に従います。
 
 ## <a name="using-threat-explorer"></a>脅威エクスプローラーの使用
 
@@ -251,7 +251,7 @@ IdentityLogonEvents
 
 ### <a name="investigating-forwarding-rules"></a>転送ルールの調査
 
-また、ルールの種類 (アラートの FT 値) に基づいて、Exchange管理センターを使用して不審な転送ルールを検索することもできます。
+また、ルールの種類 (アラートの FT 値) に基づいて、Exchange管理センターを使用して疑わしい転送ルールを検索することもできます。
 
 - ETR 
 

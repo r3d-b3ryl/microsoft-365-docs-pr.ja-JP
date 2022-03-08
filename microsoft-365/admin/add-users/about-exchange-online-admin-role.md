@@ -2,8 +2,8 @@
 title: Exchange Online 管理者の役割について
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -22,18 +22,18 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Exchange管理者が組織のメールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。
-ms.openlocfilehash: f889b2c482734518d1a73802c3422c13bc5c4a59
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: f046d9d85c677d0793d2b991736185b49f4174e9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421392"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315331"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 
-管理者の管理に役立Microsoft 365、管理者センターから組織[](assign-admin-roles.md)のメールとメールボックスを管理するためのアクセス許可をユーザーに割り<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">当Exchangeできます</a>。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
+管理者の管理に役立Microsoft 365、管理者センターから組織[](assign-admin-roles.md)のメールとメールボックスを管理するためのアクセス許可をユーザー<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">に割り当Exchangeできます</a>。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
   
- **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 この方法では、Microsoft 365 管理センター サービスの正常性、変更およびリリース通知など、Exchange Onlineに重要な情報を表示できます。
+ **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 この方法では、Microsoft 365 管理センター サービスの正常性、変更とリリースの通知など、Exchange Onlineに重要な情報を表示できます。
 
 Exchange 管理者の役割を割り当てられた場合にユーザーが実行できる重要なタスクのいくつかを次に説明します。
   
@@ -43,7 +43,7 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
 
 - メールボックスの機能をセットアップします。たとえば、メールボックス共有ポリシーを設定すると、ユーザーが予定表や連絡先の情報を組織外の人とどのように共有できるかを指定できます。
 
-- "Send[as](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" と "[Send onhalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" delegates for someone's mailbox. たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。
+- ユーザーのメールボックスの "[Send as](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)[" 代理人と](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user) "代理送信" 代理人を設定します。 たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。
 
 - [共有メールボックスを作成して](../email/create-a-shared-mailbox.md) 、ユーザーのグループが共通のメール アドレスからメールを監視および送信できます。
 

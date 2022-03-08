@@ -2,8 +2,8 @@
 title: Microsoft 365 にドメインを追加する
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,24 +27,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: セットアップ ウィザードを使用して、DNS ホストに DNS レコードMicrosoft 365追加Microsoft 365 管理センターにドメインを追加します。
-ms.openlocfilehash: eb58c8fc69a26157aa7dfb323be03efb81ef76bf
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: セットアップ ウィザードを使用して、DNS ホストに DNS レコードMicrosoft 365追加Microsoft 365 管理センタードメインをドメインに追加します。
+ms.openlocfilehash: fa809486b968c4bc0f8c74e466285ee2ce9ac895
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766538"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321713"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](domains-faq.yml)** を参照してください。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 ドメインを追加、変更、または削除するには、ビジネスプランまたはエンタープライズ  プランのドメイン名管理者またはグローバル[管理者である必要があります](https://products.office.com/business/office)。 これらの変更はテナント全体に影響します。 *カスタマイズされた管理者* または *通常のユーザー* は、これらの変更を行う事ができません。
 
 > [!TIP]
-> このトピックの手順に関するヘルプが必要な場合は、Microsoft の小規模ビジネス スペシャリストとの [作業を検討してください](https://go.microsoft.com/fwlink/?linkid=2186871)。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させるにつれて、従業員と一緒に 24 時間、中小企業の専門家にアクセスできます。
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
 ## <a name="watch-add-a-domain"></a>ウォッチ: ドメインの追加
 
@@ -52,7 +52,7 @@ ms.locfileid: "62766538"
 
 会社によって、さまざまな目的で複数のドメイン名が必要になる場合があります。 たとえば、顧客が既にその会社名を使用していて、顧客とのコミュニケーションに失敗した場合、会社名に別のスペルを追加したい場合があります。
 
-1. [設定] Microsoft 365 管理センターを選択 <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**します**</a>。
+1. [設定] Microsoft 365 管理センター[セットアップ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**選択します**</a>。
 1. [**カスタム ドメインの設定を取得する] で、[****ViewManageAdd** >  ドメイン > **] を選択します**。
 1. 追加する新しいドメイン名を入力し、[**次へ**] を選択します。
 1. ドメイン レジストラーにサインインし、[次へ] を **選択します**。
@@ -153,15 +153,15 @@ ms.locfileid: "62766538"
 
 > [!NOTE]
 > ドメインを追加するには、グローバル管理者またはドメイン名管理者である必要があります。
-> 追加の .onmicrosoft ドメインを作成し、既定として使用すると、オンラインの名前SharePointされません。 .onmicrosoft SharePoint ドメインを変更するには、[SharePoint](/sharepoint/change-your-sharepoint-domain-name) ドメインの名前変更プレビューを使用する必要があります (現在、1,000 未満のサイトを持つテナントで利用できます)。
+> 追加の .onmicrosoft ドメインを作成し、既定として使用すると、オンラインの名前SharePointされません。 .onmicrosoft SharePoint ドメインを変更するには、[SharePoint](/sharepoint/change-your-sharepoint-domain-name) ドメインの名前変更プレビューを使用する必要があります (現在、1,000 サイト未満のテナントで利用できます)。
 > メール サービスを使用しているMicrosoft 365、最初の .onmicrosoft ドメインの削除はサポートされていません。
 
 
-ドメインを追加 onmicrosoft.com するには、次の onmicrosoft.com します。
+ドメインにドメイン onmicrosoft.com するには、次の onmicrosoft.com します。
 
 1. Microsoft 管理センターの [ドメイン] **設定** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**します**</a>。
 
-2. [概要] **タブで** 、[ドメインの **追加 onmicrosoft.com 選択します**。
+2. [概要] **タブで** 、[ドメイン **の追加 onmicrosoft.com 選択します**。
 
 所有している任意のドメインを既定のドメインとして設定できます。
 

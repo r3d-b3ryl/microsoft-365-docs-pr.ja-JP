@@ -2,8 +2,8 @@
 title: アカウントの源泉徴収税のクレジットを要求する (インドのお客様)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
@@ -16,17 +16,17 @@ ms.collection:
 search.appverid: MET150
 description: 支払った源泉徴収税のアカウントでクレジットを要求する方法について説明します。 この記事は、インドの顧客にのみ適用されます。
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: cf4e742dfae6866a20690b900604042a1c411503
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bd1f9af95d28ab8204c53afbe47c7def3230dbda
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189635"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327883"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>アカウントの源泉徴収税のクレジットを要求する (インドのお客様)
 
@@ -34,7 +34,7 @@ ms.locfileid: "60189635"
 >
 > 組織がインドに拠点を置かされていない場合は、「アカウントに源泉徴収税のクレジットを要求する (グローバルユーザー)」 [を参照してください](withholding-tax-credit-global.md)。
 
-インドのお客様は、Microsoft Regional Sales Pte Ltd. シンガポール (MRS) が請求する Web ダイレクト (Azure および Microsoft 365) の請求書を受け取り、請求書を決済するためにシンガポールへのクロスボーダー支払いを行います。 支払いを実行するときに税金を差し控える場合、この記事では、MRS を使用してアカウントで源泉徴収税 (WHT) のクレジットを請求するプロセスについて説明します。
+インドのお客様は、Microsoft Regional Sales Pte Ltd. シンガポール (MRS) が請求する Web ダイレクト (Azure および Microsoft 365) の請求書を受け取り、請求書を決済するためにシンガポールにクロスボーダー支払いを行います。 支払いを実行するときに税金を差し控える場合、この記事では、MRS を使用してアカウントで源泉徴収税 (WHT) のクレジットを請求するプロセスについて説明します。
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>チェックまたはワイヤーで支払う請求書支払いのお客様向け
 
@@ -67,13 +67,13 @@ Microsoft サポートでチケットを開いて WHT 要求を送信する
 | 1 | 4 月 ~ 6 月 | 15 -8 月 | 31 -8 月 |
 | 2 | 7 月 ~ 9 月 | 15-11 月 | 30-11 月 |
 | 3 | 10 月 ~ 12 月 | 15-Feb | 28-Feb |
-| 4  | 1 月 ~ 3 月 | 15-6 月 | 30-6 月 |
+| 4 | 1 月 ~ 3 月 | 15-6 月 | 30-6 月 |
 
 > [!IMPORTANT]
 >
 > - 顧客は、請求書の支払い後にのみ WHT 金額の払い戻しを要求できます。
 > - 源泉徴収税額控除フォームの請求書の金額は、TDS 証明書で識別された請求書金額と一致している必要があります。 請求書の金額が 2 つのフォーム間で異なる場合は、源泉徴収税額控除フォームの違いの理由を指定する必要があります。 この情報は、必要に応じて明確な質問をする可能性があるレビュー チームによってチェックされます。
-> - TDS 証明書ファイルは、次のいずれかのファイル形式である必要があります .PDF。JPEG、.PNG、または.GIF)。 また、ファイル名にはスペースや特殊文字を含めることはできません。 ファイル サイズは 1 MB を超えできません。
+> - TDS 証明書ファイルは、.PDF 次のいずれかのファイル形式である必要があります。JPEG、.PNG、または.GIF)。 また、ファイル名にはスペースや特殊文字を含めることはできません。 ファイル サイズは 1 MB を超えできません。
 
 要求を送信すると、承認プロセスに入り、完了が承認されるか、修正のために返送されます。
 

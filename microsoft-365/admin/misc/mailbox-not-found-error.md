@@ -2,8 +2,8 @@
 title: Outlook on the web で「メールボックスが見つかりませんでした」というエラーが表示される場合
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 「**のメールボックス見つかりませんでした**」 というエラーは、Outlook on the web への接続に使用したアカウントに Exchange Online のライセンスが存在しないという意味です。
-ms.openlocfilehash: a83219dbd22446d210d59b2c8613915129ecc1cb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: afde59262be1fd0776dd94bafc9c8b0d2e75bebc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167980"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316409"
 ---
 # <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>Outlook on the web で「メールボックスが見つかりませんでした」というエラーが表示されますか?
 

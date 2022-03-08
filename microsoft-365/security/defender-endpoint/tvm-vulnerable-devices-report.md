@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f096433534abb91b9cb14b8db2737dacf566624
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 50b30d38a42aab37c295a9f65bd070dd9613927c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167984"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312661"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>脆弱なデバイス レポート - 脅威と脆弱性の管理
 
@@ -74,11 +74,11 @@ ms.locfileid: "61167984"
 
 ## <a name="vulnerable-devices-by-windows-version-graphs"></a>バージョン グラフによるWindowsデバイス
 
-脆弱なアプリケーションまたは OS によってWindows 10または Windows 11 バージョンのデバイスの数。
+脆弱なアプリケーションまたは OS によってWindows 10または Windows 11 バージョン上のデバイスの数。
 
-![現在の脆弱なデバイスのバージョン別の 1 つのグラフWindows 10、1 つのグラフは、Windows 10バージョンで脆弱なデバイスを示します。](images/tvm-report-version.png)lightbox="images/tvm-report-version.png"::
+:::image type="content" alt-text="現在の脆弱なデバイスのバージョン別の 1 つのグラフWindows 10、1 つのグラフは、バージョンの時間のWindows 10によって脆弱なデバイスを示します。" source="images/tvm-report-version.png" lightbox="images/tvm-report-version.png":::
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

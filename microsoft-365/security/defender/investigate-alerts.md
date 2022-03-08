@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: cfa39ca38046c131de2531b4ad6446626895090f
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: ce75fff753acfa9d5e183154e09805b04d7523da
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903953"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321428"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -39,17 +39,17 @@ ms.locfileid: "62903953"
 
 このMicrosoft 365 Defender関連するアラートは、インシデントを形成するために[まとめて集計されます](incidents-overview.md)。 インシデントは常に攻撃の広範なコンテキストを提供しますが、アラートの分析は、より深い分析が必要な場合に有用です。 
 
-アラート **キューには、** 現在の一連のアラートが表示されます。 インシデント ポータルのクイック 起動時に、**インシデント** &アラート>アラート キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。
+アラート **キューには、** 現在の一連のアラートが表示されます。 [インシデント] からアラート キューにアクセスし **&>** ポータルのクイック 起動時に通知をMicrosoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">します</a>。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="ポータル内のアラート キューのMicrosoft 365 Defenderします。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="ポータル内のアラート キュー Microsoft 365 Defender例":::
 
-Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft Defender for microsoft Defender など、さまざまな Microsoft セキュリティ Office 365、Microsoft 365 Defenderここに表示されます。
+Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft Defender for microsoft Defender など、さまざまな Microsoft セキュリティ ソリューションOffice 365、Microsoft 365 Defender表示されます。
 
-既定では、ポータルのアラート キュー Microsoft 365 Defender過去 30 日間の新しいアラートと進行中のアラートが表示されます。 最新のアラートはリストの一番上に表示されます。最初に確認できます。 
+既定では、Microsoft 365 Defenderポータルのアラート キューには、過去 30 日間の新しいアラートと進行中のアラートが表示されます。 最新のアラートはリストの一番上に表示されます。最初に確認できます。 
 
 既定のアラート キューから [フィルター] を **選択すると、[** フィルター] ウィンドウが表示され、そこからアラートのサブセットを指定できます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="ポータル内のアラート キューのフィルター ウィンドウのMicrosoft 365 Defenderします。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="ポータル内のアラート キューのフィルター ウィンドウMicrosoft 365 Defender例":::
 
 次の条件に従ってアラートをフィルター処理できます。
 
@@ -59,9 +59,9 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 - エンティティ (影響を受け取ったアセット)
 - 自動調査の状態
 
-## <a name="required-roles-for-defender-for-office-365-alerts"></a>ユーザー通知の Defender に必要Office 365役割
+## <a name="required-roles-for-defender-for-office-365-alerts"></a>ユーザー通知に対する Defender の必須Office 365役割
 
-Microsoft Defender にアクセスして警告を表示するには、次の役割Office 365があります。
+Microsoft Defender にアクセスするには、次の役割を持つ必要があります。アラートOffice 365があります。
 
 - グローバル Azure Active Directory (Azure AD) の場合:
 
@@ -75,7 +75,7 @@ Microsoft Defender にアクセスして警告を表示するには、次の役�
 
    - セキュリティ閲覧者
 
-- Office 365 セキュリティ &コンプライアンス 役割グループ
+- Office 365 セキュリティ &コンプライアンス役割グループ
 
    - コンプライアンス管理者
 
@@ -87,16 +87,14 @@ Microsoft Defender にアクセスして警告を表示するには、次の役�
 
 メインのアラート ページを表示するには、アラートの名前を選択します。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="ポータル内のアラートの詳細ページMicrosoft 365 Defenderします。":::
-
-[警告の管理] ウィンドウ **から [メインのアラート ページを開** く] **アクションを選択** することもできます。
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="ポータル内のアラートの詳細ページMicrosoft 365 Defender例":::
 
 アラート ページは、次のセクションで構成されます。 
 
 - アラート ストーリー(このアラートに関連するイベントとアラートの連鎖を時系列順に示す)
 - 概要の詳細
 
-アラート ページ全体で、任意のエンティティの横にある省略記号 (**...**) を選択して、アラート ページを開く、またはアラートを別のインシデントにリンクするなどの使用可能なアクションを表示できます。
+アラート ページ全体で、任意のエンティティの横にある省略記号 (**...)** を選択すると、アラートを別のインシデントにリンクするなどの使用可能なアクションを確認できます。 使用可能なアクションの一覧は、アラートの種類によって異なります。
 
 ### <a name="alert-sources"></a>アラート ソース
 
@@ -134,42 +132,51 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint、microsoft Defender
 
 ## <a name="manage-alerts"></a>アラートの管理
 
-アラートを管理するには、その行のアラート キューでアラートを選択して、[警告の管理] **ウィンドウを表示** します。 次に例を示します。
+アラートを管理するには、アラート ページ **の** [概要の詳細] セクションで [アラートの管理] を選択します。 1 つのアラートの場合は、[警告の管理] ウィンドウの **例を次に示** します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="ポータル内のアラートの概要ウィンドウのMicrosoft 365 Defenderします。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="ポータルの [アラートの管理] ウィンドウMicrosoft 365 Defender例":::
 
 [ **警告の管理]** ウィンドウでは、次の項目を表示または指定できます。
 
 - アラートの状態 (新規、解決済み、進行中)。
 - アラートが割り当てられているユーザー アカウント。
-- アラートの分類 (設定されていない、True アラート、False Alert)。
-- 真のアラートとして分類する場合は、[決定] フィールドのアラートの脅威の種類 **を指定** します。
+- アラートの分類:
+
+   - **[設定しない** ] (既定)。
+
+   - **脅威の種類** に対して正の値を指定します。 実際の脅威を正確に示すアラートには、この分類を使用します。 脅威の種類を指定すると、セキュリティ チームは脅威パターンを確認し、組織を防御するために行動できます。
+
+   - **アクティビティの種類を含む、予想** される情報アクティビティ。 このカテゴリのオプションを使用して、セキュリティ テスト、赤いチーム アクティビティ、信頼できるアプリとユーザーからの予期される異常な動作に関するアラートを分類します。
+
+   - **悪意のある** アクティビティがない場合でも作成されたアラートの種類に対して誤検知。 アラートを誤検知として分類するとMicrosoft 365 Defender品質が向上します。
+
 - アラートに関するコメント。
 
 > [!NOTE]
 > タグを使用してアラートを管理する方法の 1 つ。 Microsoft Defender for microsoft Defender for Office 365段階的に展開中で、現在プレビュー中です。 <br>
 > 現在、変更されたタグ名は、更新後に作成された *アラートにのみ* 適用されます。 変更前に生成されたアラートには、更新されたタグ名は反映されません。 
 
-このウィンドウから、次の追加アクションを実行することもできます。 
+特定のアラート *に似た* 一連のアラートを管理するには、アラート ページの [概要の詳細] セクションの **[INSIGHT**] ボックスで [類似のアラートを表示する] を選択します。
 
-- メインアラート ページを開く
-- Microsoft 脅威の専門家に相談する
-- 提出の表示
-- 別のインシデントへのリンク
-- タイムラインでアラートを表示する
-- 抑制ルールの作成
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="ポータルでアラートをMicrosoft 365 Defenderする":::
 
-次に例を示します。
+[アラート **の管理]** ウィンドウで、関連するアラートを同時に分類できます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="ポータル内のアラートに対するアクションMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Microsoft 365 Defender ポータルでの関連Microsoft 365 Defender管理":::
 
-追加のアクションの一覧は、アラートの種類によって異なります。
+同様のアラートが過去に既に分類されている場合は、他の通知がどのように解決されたのかMicrosoft 365 Defender推奨事項を使用して時間を節約できます。 [概要の詳細] セクションで、[推奨事項] **を選択します**。
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="アラートの推奨事項の選択例":::
+
+[ **推奨事項] タブ** には、調査、修復、および防止のための次の手順のアクションとアドバイスが表示されます。 次に例を示します。
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="アラートの推奨事項の例":::
 
 ## <a name="resolve-an-alert"></a>アラートを解決する
 
-アラートの分析が完了して解決したら、[アラートの管理] ウィンドウに移動し、状態を [解決済み] としてマークし、False  アラートまたは **True** アラートとして分類します。 true アラートの場合は、[決定] フィールドにアラートの脅威の種類 **を指定** します。
+アラートの分析が完了したら、アラートまたは類似のアラートの [管理] アラート ウィンドウに移動し、状態を [解決済み] としてマークし、脅威の種類、アクティビティの種類が予想される情報アクティビティ、または False 陽性として分類します。 
 
-アラートを分類し、その決定を指定すると、Microsoft 365 Defenderを調整して、より多くの真のアラートと少ない誤った通知を提供できます。
+アラートの分類は、Microsoft 365 Defender品質を向上させるのに役立ちます。
 
 ## <a name="use-power-automate-to-triage-alerts"></a>アラートPower Automateトリアージに使用する
 
@@ -187,7 +194,7 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint、microsoft Defender
 
 オートメーションを作成するには、Microsoft Defender for Cloud Apps に接続する前Power Automate API トークンが必要です。
 
-1. [**設定**] をクリックし、[**セキュリティ拡張機能] を** 選択し、[API **トークン**] タブの [トークンの追加 **] をクリック** します。
+1. [**設定**] をクリックし、[**セキュリティ拡張機能]** を選択し、[API **トークン**] タブの [トークンの追加 **] をクリック** します。
 
 2. トークンの名前を指定し、[生成] を **クリックします**。 後で必要に応じてトークンを保存します。
 

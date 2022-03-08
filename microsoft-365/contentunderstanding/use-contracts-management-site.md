@@ -12,18 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Microsoft の契約管理サイト テンプレートをプロビジョニング、使用、およびカスタマイズする方法についてSharePoint Syntex。
-ms.openlocfilehash: 649596392cf2d7a8fc90ffc479d8875c69f26ffe
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: Microsoft の契約管理サイト テンプレートをプロビジョニング、使用、およびカスタマイズする方法について説明SharePoint Syntex。
+ms.openlocfilehash: e5629dd370899d504e9b64ef577a06ebf1bd3777
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904464"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320467"
 ---
 # <a name="use-the-contracts-management-site-template-for-microsoft-sharepoint-syntex"></a>Microsoft サービスの契約管理サイト テンプレートを使用SharePoint Syntex
 
-Contracts Management サイトは、組織がサイト の価値を最大限に高SharePoint、すぐに展開してカスタマイズできるサイト テンプレートSharePoint Syntex。 このサイトは、組織内の契約の状態を管理、処理、追跡するためのプロフェッショナル サイトを作成するように設計されています。
+契約管理サイトは、組織がサイト の価値を最大限に高SharePointできる、すぐに展開してカスタマイズ可能なサイト テンプレートSharePoint Syntex。 このサイトは、組織内の契約の状態を管理、処理、追跡するためのプロフェッショナル サイトを作成するように設計されています。
 
 ## <a name="features-of-the-site"></a>サイトの機能
 
@@ -31,7 +30,7 @@ Contracts Management サイトは、組織がサイト の価値を最大限に�
 
 契約管理サイトには、事前入力されたページ、Web パーツ、およびサイト ナビゲーションが含まれます。 サイトをカスタマイズして、組織独自のブランド化、従業員情報、ポリシーと計画情報、ワークフロー、連絡先、リソースを組み込む。
 
-このサイトでは、ドキュメント ライブラリで実行SharePoint Syntexモデルの機能を使用して、ドキュメントを分類し、メタデータを抽出します。 このサイトには、すぐに開始するために構築済みのドキュメント ライブラリが用意されています。必要に応じて独自のドキュメント ライブラリを作成できます。 サイトには、次の機能ライブラリが含まれています。
+サイトでは、ドキュメント ライブラリで実行されているSharePoint Syntexモデルの機能SharePointドキュメントを分類し、メタデータを抽出します。 このサイトには、すぐに開始するために構築済みのドキュメント ライブラリが用意されています。必要に応じて独自のドキュメント ライブラリを作成できます。 サイトには、次の機能ライブラリが含まれています。
 
 - **[地域** ] – 契約ドキュメントを地理的領域、国、または地域別に分類します。
 
@@ -41,7 +40,7 @@ Contracts Management サイトは、組織がサイト の価値を最大限に�
 
 - **クライアント** – 1 つの便利な場所でクライアント情報を検索します。
 
-- **モデル** – このモデル ライブラリを使用して、ドキュメントを分類し、メタデータを抽出します。 ユーザーは、ニーズに合わせて独自のモデルを作成し、このライブラリに追加できます。
+- **モデル** – このライブラリのモデルを使用して、ドキュメントを分類し、メタデータを抽出します。 ユーザーは、ニーズに合わせて独自のモデルを作成し、このライブラリに追加できます。
 
 - **サンプル コントラクト ライブラリ** – 分類され、メタデータが抽出されたファイルを、データ モデルを使用してSharePoint Syntexします。 
 
@@ -49,12 +48,12 @@ Contracts Management サイトは、組織がサイト の価値を最大限に�
 
 ## <a name="provision-the-site"></a>サイトのプロビジョニング
 
-コントラクト管理サイトは、サイトのルック ブック [サービスSharePointプロビジョニングできます](https://lookbook.microsoft.com/)。
+コントラクト管理サイトは、サイトのルック ブック サービス[SharePointプロビジョニングできます](https://lookbook.microsoft.com/)。
 
 ![[契約管理] サイト テンプレートのプロビジョニング ページのスクリーンショット。](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
 > [!NOTE]
-> サイトをプロビジョニングするには、グローバル管理者SharePoint管理者Microsoft 365必要があります。 また、このサイト テンプレートを組織にSharePoint Syntexライセンスを持っている必要があります。
+> サイトをプロビジョニングするには、SharePoint管理者Microsoft 365管理者である必要があります。 また、このサイト テンプレートを組織にSharePoint Syntexライセンスを持っている必要があります。
 
 1. [デザイン] ルック ブックの [メイン ページSharePoint](https://lookbook.microsoft.com/) > 、[デザインの表示] メニューで、[契約管理] SharePoint Syntex **SharePoint Syntex選択します**。
 
@@ -99,6 +98,16 @@ Contracts Management サイトは、組織がサイト の価値を最大限に�
 - [対象ユーザー設定](https://support.microsoft.com/office/target-navigation-news-and-files-to-specific-audiences-33d84cb6-14ed-4e53-a426-74c38ea32293)を使用して、特定のユーザーに特定のナビゲーションリンクを設定します。 
 - 必要な場合は、[不要なページを削除](https://support.microsoft.com/office/delete-a-page-from-a-sharepoint-site-1d4197b8-31b6-460d-906b-3fb492a51db1) します。
 
+
+### <a name="add-other-workflows"></a>他のワークフローを追加する
+
+契約管理サイトには、開始する必要があるコンポーネントが含まれますが、次のような追加のコンポーネントを含めもあります。
+
+- 新しい [契約Power Automate](/power-automate/getting-started)コントラクト要求ライブラリに追加するときにワークフローをトリガーするには、ワークフロー フローを **使用** します。
+- 追加のモデルを[SharePoint Syntexします](/microsoft-365/contentunderstanding/#models)。
+- テンプレート ライブラリ [のコンテンツ アセンブリ](content-assembly.md) 機能 **を使用** します。
+- 契約管理[ソリューションを作成するには](solution-manage-contracts-in-microsoft-365.md)、SharePoint Syntexの他のコンポーネントとMicrosoft 365。
+
 ## <a name="share-the-site-with-others"></a>サイトを他のユーザーと共有する
 
 [サイトを他のユーザーと共有します](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658)。 組織内の他のユーザーとパートナーを組み、契約管理サイトが広く知られていると採用されています。
@@ -111,6 +120,3 @@ Contracts Management サイトは、組織がサイト の価値を最大限に�
 - サイト分析からの分析 [情報を使用して](https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e) 、ホーム ページ上のコンテンツの宣伝、ナビゲーションの更新、コンテンツの書き換えを行ってわかりやすくします。
 - 必要に応じて契約管理サイトを確認し、コンテンツが最新で関連性が高い場合を確認します。
 
-## <a name="see-also"></a>関連項目
-
-[Microsoft 365 ソリューションを使用して契約を管理する](solution-manage-contracts-in-microsoft-365.md)

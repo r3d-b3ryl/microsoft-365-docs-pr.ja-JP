@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2569349bd5255f47ebca710263dfd7510aee817b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: e534211008ea560642ba306844b9223170ac0140
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172225"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323221"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity のアーキテクチャ要件と主な概念を確認する
 
@@ -34,13 +34,13 @@ ms.locfileid: "62172225"
 **適用対象:**
 - Microsoft 365 Defender
 
-この記事は、Microsoft Defender for Identity の評価環境をセットアップする手順 [1/3](eval-defender-identity-overview.md) です。 このプロセスの詳細については、「概要」の記事を [参照してください](eval-defender-identity-overview.md)。
+この記事は [、Microsoft Defender for](eval-defender-identity-overview.md) Identity の評価環境をセットアップする手順 1/3 です。 このプロセスの詳細については、概要の記事を [参照してください](eval-defender-identity-overview.md)。
 
 Microsoft Defender for Identity を有効にする前に、アーキテクチャを理解し、要件を満たしていることを確認してください。
 
-Microsoft Defender for Identity は、機械学習と行動分析を使用して、クラウド ID に関連するユーザー サインイン リスクの検出と予防に加えて、オンプレミス ネットワーク全体の攻撃を特定します。 詳細については [、「Microsoft Defender for Identity とは」を参照してください。](/defender-for-identity/what-is)
+Microsoft Defender for Identity は、機械学習と行動分析を使用して、クラウド ID に関連するユーザー サインイン リスクの検出と予防に加えて、オンプレミス ネットワーク全体の攻撃を特定します。 詳細については、「 [Microsoft Defender for Identity とは」を参照してください。](/defender-for-identity/what-is)
 
-Defender for Identity は、オンプレミスの Active Directory ユーザーおよび/または同期されたユーザーを保護Azure Active Directory (Azure AD)。 ユーザーのみから構成される環境を保護するには、「Azure AD Id [Protection」をAzure ADしてください](/azure/active-directory/identity-protection/overview-identity-protection)。
+Defender for Identity は、オンプレミスの Active Directory ユーザーおよび/または同期されたユーザーを保護Azure Active Directory (Azure AD)。 ユーザーのみから構成される環境を保護するには、「Azure AD Id [Protection」Azure AD参照してください](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 ## <a name="understand-the-architecture"></a>アーキテクチャを理解する
 
@@ -49,17 +49,17 @@ Defender for Identity は、オンプレミスの Active Directory ユーザー�
 ![Microsoft Defender for Identity のアーキテクチャ。](../../media/defender/m365-defender-identity-architecture.png)
 
 この図について:
-- ドメイン コントローラーにインストールADは、ログとネットワーク トラフィックを解析し、分析とレポートのために Microsoft Defender for Identity に送信します。
--  センサーは、フェデレーション認証を使用するように構成AD Active Directory フェデレーション サービス (AD FS Azure AD) を解析できます (図の点線)。 
+- このドメイン コントローラーにADセンサーは、ログとネットワーク トラフィックを解析し、分析とレポートのために Microsoft Defender for Identity に送信します。
+-  センサーは、フェデレーション認証を使用するように構成AD Active Directory フェデレーション サービス (Azure AD FS) を解析できます (図の点線)。 
 - Microsoft Defender for Identity は、拡張検出Microsoft 365 Defender応答 (XDR) のシグナルを共有します。
 
 
 Defender for Identity センサーは、次のサーバーに直接インストールできます。
 
 - ドメイン コントローラー: センサーは、専用サーバーやポート ミラーリングの構成を必要とせずに、ドメイン コントローラーのトラフィックを直接監視します。
-- AD FS: センサーはネットワーク トラフィックと認証イベントを直接監視します。
+- AD FS: センサーは、ネットワーク トラフィックと認証イベントを直接監視します。
 
-Defender for Identity のアーキテクチャ (Defender for Cloud Apps との統合を含む) の詳細については、「Microsoft Defender for Identity architecture」 [を参照してください](/defender-for-identity/architecture)。
+Defender for Identity のアーキテクチャ (Defender for Cloud Apps との統合など) の詳細については、「 [Microsoft Defender for Identity architecture」を参照してください](/defender-for-identity/architecture)。
 
 
 ## <a name="understand-key-concepts"></a>主要な概念を理解する
@@ -76,14 +76,14 @@ Defender for Identity のアーキテクチャ (Defender for Cloud Apps との�
 | ネットワーク名の解決    |  ネットワーク名解決 (NNR) は、ネットワーク トラフィック、Windows イベント、ETW などに基づいてアクティビティをキャプチャし、この生データを各アクティビティに関係する関連するコンピューターに関連付ける MDI 機能のコンポーネントです。       | [ネットワーク名の解決とは](/defender-for-identity/nnr-policy)      |
 | レポート    | Defender for Identity レポートを使用すると、システムとエンティティの状態情報を提供するレポートをスケジュールまたは即座に生成およびダウンロードできます。  システムの正常性、セキュリティアラート、および環境で検出された潜在的な横方向の移動パスに関するレポートを作成できます。   | [Microsoft Defender for Identity Reports ](/defender-for-identity/reports)       |
 | 役割グループ    | Defender for Identity は、管理者、ユーザー、閲覧者を含む組織の特定のセキュリティとコンプライアンスのニーズに応じて、役割ベースのグループと委任されたアクセスを提供します。        |  [Microsoft Defender for Identity の役割グループ](/defender-for-identity/role-groups)       |
-| 管理ポータル    |  セキュリティ ポータルにMicrosoft 365 Defender、Defender for Identity ポータル キャブを使用して、疑わしいアクティビティの監視と対応を行います。      | [Microsoft Defender for Identity ポータルとの連携](/defender-for-identity/workspace-portal)        |
+| 管理ポータル    |  セキュリティ ポータルにMicrosoft 365 Defender、Defender for Identity ポータルを使用して、疑わしいアクティビティの監視と対応を行います。      | [Microsoft Defender for Identity ポータルとの連携](/defender-for-identity/workspace-portal)        |
 | Microsoft Defender for Cloud Apps の統合   | Microsoft Defender for Cloud Apps は Microsoft Defender for Identity と統合され、ハイブリッド環境 (クラウド アプリとオンプレミスの両方) 全体でユーザー エンティティの動作分析 (UEBA) を提供します。   | Id 統合用 Microsoft Defender  |
 | | | |
 
 
 ## <a name="review-prerequisites"></a>前提条件の確認
 
-Defender for Identity では、オンプレミスの ID とネットワーク コンポーネントが最小要件を満たしていることを確認するために、いくつかの前提条件となる作業が必要です。 この記事をチェックリストとして使用して、環境の準備ができていることを確認します [。Microsoft Defender for Identity の前提条件](/defender-for-identity/prerequisites)です。
+Defender for Identity では、オンプレミスの ID とネットワーク コンポーネントが最小要件を満たしていることを確認するために、いくつかの前提条件となる作業が必要です。 この記事をチェックリストとして使用して、環境の準備ができていることを確認します。 [Microsoft Defender for Identity の前提条件](/defender-for-identity/prerequisites)。
 
 
 ## <a name="next-steps"></a>次の手順
@@ -92,4 +92,4 @@ Defender for Identity では、オンプレミスの ID とネットワーク �
 
 Id の Microsoft Defender の [評価の概要に戻る](eval-defender-identity-overview.md)
 
-[評価とパイロット][の概要に戻Microsoft 365 Defender](eval-overview.md) 
+[評価とパイロット] [の概要に戻Microsoft 365 Defender](eval-overview.md) 

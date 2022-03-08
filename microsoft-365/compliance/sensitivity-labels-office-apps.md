@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: efd28dbe00960c2644c476f6cd689c79385eed9d
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: b251789795cbb55cd5d79dc686449e4c87aa6f9f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879218"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316129"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -33,9 +33,9 @@ Microsoft 365 コンプライアンス センターまたは同等のラベリ�
 
 ## <a name="labeling-client-for-desktop-apps"></a>デスクトップ アプリのラベル付けクライアント
 
-Windows および Mac 用の Office デスクトップ アプリに組み込まれている秘密度ラベルを使用するには、Office のサブスクリプション エディションを使用する必要があります。 このラベル付けクライアントは、Office 2016 や Office 2019 などのスタンドアロン エディションの Office をサポートしていません。
+Windows および Mac 用の Office デスクトップ アプリに組み込まれている秘密度ラベルを使用するには、Office のサブスクリプション エディションを使用する必要があります。 このラベル付けクライアントは、スタンドアロン エディションの Office ("永続ライセンス版 Office"とも呼ばれます) をサポートしていません。
 
-Windows コンピューター上で Office のこれらのスタンドアロン エディションに秘密度ラベルを使用するには、[Azure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/aip-clientv2)をインストールします。
+Windows コンピューター用の Office のサブスクリプション バージョンの Microsoft 365 Apps for enterprise にアップグレードできない場合は、[Azure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/aip-clientv2)を使用できます。
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>アプリでの秘密度ラベル機能のサポート
 
@@ -72,16 +72,12 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 |[変数を使用した動的マーキング](#dynamic-markings-with-variables)                                              | 現在のチャネル: 2010 以上 <br /><br> 月次エンタープライズ チャネル: 2010 以上 <br /><br> 半期エンタープライズ チャネル: 2102 以上 | 16.42 以上     | 2.42 以上 | 16.0.13328 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ユーザーに権限の割り当てをさせる: <br /> - ユーザーに求める](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |現在のチャネル: 2004 以上 <br /><br> 月次エンタープライズ チャネル: 2004 以上 <br /><br> 半期エンタープライズ チャネル: 2008 以上 | 16.35 以上   | レビュー中   | レビュー中         | レビュー中                                                        |
-|[ラベル関連のユーザー アクティビティを監査する](#auditing-labeling-activities)                      | 現在のチャネル: 2011 以上 <br /><br> 月次エンタープライズ チャネル: 2011 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 | 2.46 以上 | 16.0.13628 以上 | はい <sup>\*</sup>                                                        |
+|[ラベル関連のユーザー アクティビティを監査する](#auditing-labeling-activities)                      | 現在のチャネル: 2011 以上 <br /><br> 月次エンタープライズ チャネル: 2011 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 | 2.46 以上 | 16.0.13628 以上 | はい |
 |[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | 現在のチャネル: 2101 以上 <br /><br> 月次エンタープライズ チャネル: 2101 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.45 以上         | 2.47 以上 | 16.0.13628 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - 機密情報の種類の使用                    | 現在のチャネル: 2009 以上 <br /><br> 月次エンタープライズ チャネル: 2009 以上 <br /><br> 半期エンタープライズ チャネル: 2102 以上 | 16.44 以上  | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2018 以上 | 16.49+ | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|ラベル付きおよび暗号化されたドキュメントの[共同編集と自動保存をサポート](sensitivity-labels-coauthoring.md) | 現在のチャネル: 2107 以上 <br /><br> 月次エンタープライズ チャネル: 2107 以上 <br /><br> 半期エンタープライズ チャネル: 2202 以上 |  16.51 以上 | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|
+|ラベル付きおよび暗号化されたドキュメントの[共同編集と自動保存をサポート](sensitivity-labels-coauthoring.md) | 現在のチャネル: 2107 以上 <br /><br> 月次エンタープライズ チャネル: 2107 以上 <br /><br> 半期エンタープライズ チャネル: 2202 以上 |  16.51 以上 | プレビュー: [オプトイン](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)する場合は 2.58 以上 | プレビュー: [オプトイン](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)する場合は 16.0.14931 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 
-**脚注:**
-
-<sup>\*</sup> 現在、ラベルを削除する、または分類レベルを下げるための配置テキストをロールアウトしています
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook での秘密度ラベル機能
 
@@ -131,32 +127,9 @@ Office 組み込みのラベル付けクライアントを使用するには、�
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 組み込みのラベル付けクライアントと Azure Information Protection クライアント
 
-ユーザーが [Azure Information Protection クライアント](/azure/information-protection/rms-client/aip-clientv2)を Windows コンピューターにインストールしている場合、既定では、組み込みのラベル付けクライアントは[サポートする Windows Office アプリ](#labeling-client-for-desktop-apps)でオフになっています。 組み込みラベルは、Azure Information Protection クライアントで使用される Office アドインを使用しないため、安定性とパフォーマンスの向上という利点があります。 また、高度な分類子などの最新の機能もサポートしています。
+ユーザーが [Azure Information Protection (API) クライアント](/azure/information-protection/rms-client/aip-clientv2)を Windows コンピューターにインストールしている場合、既定では、組み込みのラベル付けクライアントは[サポートする Windows Office アプリ](#labeling-client-for-desktop-apps)でオフになっています。 組み込みラベルは、AIP クライアントで使用される Office アドインを使用しないため、安定性とパフォーマンスの向上という利点があります。 また、高度な分類子などの最新の機能もサポートしています。
 
-Azure Information Protection クライアントをアンインストールするのではなく、Azure Information Protection アドインが Office アプリに読み込まれないようにすることをお勧めします。 その後、Office アプリに組み込まれているラベル付けの利点と、Office アプリの外部で Azure Information Protection クライアントラベル付けファイルの利点を得ることができます。 たとえば、Azure Information Protection クライアントは、エクスプローラーと PowerShell を使用して、すべてのファイルの種類にラベルを付けることができます。 Office アプリの外部でサポートされるラベル付け機能の詳細については、「[秘密度ラベルと Azure Information Protection](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)」 を参照してください。
-
-Windows Office アプリで Azure Information Protection クライアント アドインが読み込まれないようにするには、「[Office 2013 および Office 2016 プログラムのグループ ポリシー設定が原因で読み込まれたアドインがない](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)」に記載されている 「**管理されたアドインのリスト**」グループ ポリシー設定を使用します。
-
-組み込みのラベル付けをサポートする Office アプリの場合、Microsoft Word 2016、Excel 2016、PowerPoint 2016、Outlook 2016 の構成を使用し、Azure Information Protection クライアントに次のプログラム識別子 (ProgID) を指定し、オプションを **[0: アドインは常に無効 (ブロックされます)]** に設定します
-
-|アプリケーション  |ProgID  |
-|---------|---------|
-|Word     |     `MSIP.WordAddin`    |
-|Excel     |  `MSIP.ExcelAddin`       |
-|PowerPoint     |   `MSIP.PowerPointAddin`      |
-|Outlook | `MSIP.OutlookAddin` |
-| | | 
-
-グループ ポリシーを使用するか、[Office クラウド ポリシー サービス](/DeployOffice/overview-office-cloud-policy-service)を使用して、この設定を展開します。
-
-> [!IMPORTANT]
-> グループ ポリシー設定 **[Office の秘密度機能を使用して、秘密度ラベルを適用し表示する]** を使用して、これを **1** に設定する場合、Azure Information Protection クライアントが Office アプリに読み込まれる可能性があります。アドインが各アプリで読み込まれるのをブロックすると、このような問題が防止されます。
-
-二者択一的に、Word、Excel、PowerPoint、Outlook から office **Microsoft Azure Information Protection** を対話的に無効にしたり、削除したりすることもできます。 このメソッドは、単一のコンピューターおよびアドホック テストに適しています。 手順については、「[Office プログラムでアドインを表示、管理、インストールする](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)」を参照してください。 
-
-どちらの方法を選択した場合でも、変更は Office アプリの再起動時に有効になります。
-
-Azure Information Protection クライアントと Office 組み込みのラベル付けクライアントでサポートされている機能については、Azure Information Protection のドキュメントから 「[Windows ラベル付けソリューションを選択する](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)」 を参照してください。
+AIP クライアントでのラベル付けの選択肢の詳細については、「[Office アプリの AIP アドインに対して MIP 組み込みラベル付けを選択する理由](sensitivity-labels-aip.md)」を参照してください。
 
 ## <a name="office-file-types-supported"></a>サポートされる Office ファイルの種類
 
@@ -427,7 +400,14 @@ Outlook アプリが必須のラベル付けをオフにすることをサポー
 
 秘密度ラベル アクティビティによって生成される監査イベントの詳細については、[「コンプライアンス センターの監査ログを検索する」](search-the-audit-log-in-security-and-compliance.md)の「[秘密度ラベル アクティビティ](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)」セクションを参照してください。
 
-この監査情報は [コンテンツ エクスプローラー](data-classification-content-explorer.md) と [アクティビティ エクスプローラー](data-classification-activity-explorer.md) で視覚的に表され、秘密度ラベルの使用方法と、ラベル付けされたコンテンツの場所を理解するのに役立ちます。 [監査ログ レコードをエクスポートおよび構成](export-view-audit-log-records.md)するときには、セキュリティ情報とイベント管理 (SIEM) ソフトウェアを選択してカスタム レポート を作成することもできます。
+この監査情報は [コンテンツ エクスプローラー](data-classification-content-explorer.md) と [アクティビティ エクスプローラー](data-classification-activity-explorer.md) で視覚的に表され、秘密度ラベルの使用方法と、ラベル付けされたコンテンツの場所を理解するのに役立ちます。 
+
+また、[監査ログ レコードをエクスポートして構成](export-view-audit-log-records.md)するときに、選択したセキュリティ情報およびイベント管理 (SIEM) ソフトウェアを使用してカスタム レポート作成することもできます。大規模なレポート ソリューションについては、「[Office 365 マネージメント アクティビティ API リファレンス」](/office/office-365-management-api/office-365-management-activity-api-reference)を参照してください。
+
+> [!TIP]
+> カスタム レポートを作成するには、次のブログ記事を参照してください:
+> - [O365 マネージメント API による Microsoft 365 コンプライアンス監査ログ アクティビティ - パート 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
+> - [O365 マネージメント API による Microsoft 365 コンプライアンス監査ログ アクティビティ - パート 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
 
 ## <a name="end-user-documentation"></a>エンド ユーザー向けのドキュメント
 

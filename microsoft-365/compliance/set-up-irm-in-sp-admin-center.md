@@ -17,13 +17,15 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Microsoft Azure Active Directory Rights Management サービス (RMS) を通じて SharePoint Online IRM を使用し、SharePoint リストやドキュメント ライブラリを保護する方法について説明します。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f40977e453b228eddc745a6d29e3f5d119276abe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkSPO
+ms.openlocfilehash: 8c0f60ad1a571ba13ba83e3e92c1b5aca6535bb1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170597"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311635"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>SharePoint 管理センターにおける Information Rights Management (IRM) の設定
 
@@ -37,9 +39,9 @@ Rights Management サービスをアクティブにしたら、SharePoint 管理
   
 1. グローバル管理者または SharePoint 管理者としてサインインします。
     
-2. [アプリ起動ツール] アイコン ![ [アプリ起動ツール] アイコンを選択Office 365。](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) をクリックし、[**管理者**] を選択して、Microsoft 365 管理センター。 ([管理者] タイルが表示されない場合、組織の管理者のアクセス許可が付与されていません。) 
+2. [アプリ起動ツール] アイコン [![アプリ起動ツール] アイコンを選択Office 365。](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) をクリックし、[**管理者**] を選択して、Microsoft 365 管理センター。 ([管理者] タイルが表示されない場合、組織の管理者のアクセス許可が付与されていません。) 
     
-3. 左側のウィンドウで、**[管理センター]** \> **[SharePoint]** の順に選択します。
+3. 左側のウィンドウで、[管理センター] **を選択SharePoint** \> <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">管理センターにします</a>。
     
 4. 左側のウィンドウで、**[設定]** を選択してから、**[クラシック設定] ページ** を選択します。
     

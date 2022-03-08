@@ -1,5 +1,5 @@
 ---
-title: 手順 6 - 元従業員からMicrosoft 365ライセンスを削除および削除する
+title: 手順 6 - 元従業員からMicrosoft 365ライセンスを削除して削除する
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,18 +25,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 次の手順に従って、元Microsoft 365ライセンスを削除します。
-ms.openlocfilehash: 52ab851c88d05c33de58d28d566a46b5e8b1710b
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: b724e8d65c990396ad376544de86d4ffd0cb5fdc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805846"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315163"
 ---
-# <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>手順 6 - 元従業員Microsoft 365ライセンスを削除する
+# <a name="step-6---remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>手順 6 - 元従業員からMicrosoft 365ライセンスを削除して削除する
 
-他のユーザーが組織を離れた後にライセンスの支払いを行わない場合は、そのユーザーのライセンスを削除Microsoft 365サブスクリプションから削除する必要があります。 ライセンスを削除しない場合は、別のユーザーにライセンスを割り当てできます。
+他のユーザーが組織を離れた後にライセンスの支払いを行わない場合は、そのユーザーのライセンスを削除し、サブスクリプションMicrosoft 365削除する必要があります。 ライセンスを削除しない場合は、別のユーザーにライセンスを割り当てできます。
 
-コンプライアンスまたは法的な理由で電子情報開示のアクセス許可を付与された承認されたユーザーがメールボックスにアクセスする必要がある場合は、Exchange Online プラン 2 ライセンス (または Exchange Online Plan 1 ライセンスと Exchange Online Archiving アドオン ライセンス) を使用して、メールボックスを削除する前にメールボックスにホールドを適用できます。 ユーザー アカウントが削除された後、Exchange Onlineに関連付けられているすべてのライセンスを新しいユーザーに割り当てできます。
+コンプライアンスまたは法的な理由で電子情報開示のアクセス許可を付与された承認されたユーザーがメールボックスにアクセスする必要がある場合は、Exchange Online プラン 2 ライセンス (または Exchange Online プラン 1 ライセンスを Exchange Online Archiving で割り当てる必要があります。 アドオン ライセンス) を使用して、メールボックスを削除する前にメールボックスにホールドを適用できます。 ユーザー アカウントが削除された後、Exchange Onlineに関連付けられているすべてのライセンスを新しいユーザーに割り当てできます。
   
 ライセンスの削除後、そのユーザーのすべてのデータが 30 日間保持されます。 データに[アクセス](get-access-to-and-back-up-a-former-user-s-data.md)したり、ユーザーが復帰した場合にアカウントを[復元](restore-user.md)したりすることができます。 30 日後、すべてのユーザーのデータ (SharePoint Online に保存されているドキュメントを除く) は Microsoft 365 から完全に削除され、回復できません。
 
@@ -54,7 +54,7 @@ ms.locfileid: "62805846"
 
 ビジネスに [別のユーザー](add-users.md) を追加すると、1 つの手順でライセンスを同時に購入するように求めるメッセージが表示されます。
 
-Microsoft 365 for business 用のユーザー ライセンスの管理の詳細については、「ビジネス向け [Microsoft 365](../manage/assign-licenses-to-users.md) のユーザーにライセンスを割り当てる」と「Microsoft 365 for business のユーザーからのライセンス[の割り当て解除」を](../manage/remove-licenses-from-users.md)参照してください。
+Microsoft 365 for business 用のユーザー ライセンスの管理の詳細については、「ビジネス向け [Microsoft 365](../manage/assign-licenses-to-users.md) のユーザーにライセンスを割り当てる」と「Microsoft 365 for business のユーザーからのライセンス[の割り当](../manage/remove-licenses-from-users.md)て解除」を参照してください。
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>削除した従業員のアカウントが Skype for Business に与える影響
 
@@ -64,4 +64,4 @@ Office 365 からユーザーのライセンスを削除すると、ユーザー
 
 ## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>組織内のユーザーへの通話転送を設定する
 
-終了した従業員の電話番号の通話転送を設定する必要がある場合は、通話ポリシーの下の通話転送設定で、着信通話を他のユーザーに転送したり、同時に他のユーザーを呼び出したりできる転送を設定できます。 詳細については、「通話ポリシー[」を参照Microsoft Teams](/microsoftteams/teams-calling-policy)。
+終了した従業員の電話番号の通話転送を設定する必要がある場合は、通話ポリシーの下の通話転送設定で、着信通話を他のユーザーに転送したり、同時に他のユーザーを呼び出したりできる転送を設定できます。 詳細については、「通話ポリシー」[を参照Microsoft Teams](/microsoftteams/teams-calling-policy)。

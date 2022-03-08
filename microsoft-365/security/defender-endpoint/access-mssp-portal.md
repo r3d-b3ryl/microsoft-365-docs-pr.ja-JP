@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a359938dbee85ea64b5f46804761410cae1f48e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b1c133048e6600d553f0530e135ebfc2c441dd84
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166628"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323669"
 ---
 # <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>MSSP カスタマー Microsoft 365 Defenderにアクセスする
 
@@ -36,9 +36,9 @@ ms.locfileid: "61166628"
 > [!NOTE]
 > これらの一連の手順は、MSSP に向けて指示されます。
 
-既定では、MSSP のお客様は次の URL Microsoft 365 Defenderテナントにアクセスします `https://securitycenter.windows.com/` 。
+既定では、MSSP のお客様は次の URL Microsoft 365 Defenderテナントにアクセスします。 `https://security.microsoft.com/`
 
-ただし、MSSP は、MSSP カスタマー ポータルにアクセスするには、テナント固有の URL を次の形式で  `https://securitycenter.windows.com?tid=customer_tenant_id` 使用する必要があります。
+ただし、MSSP は、MSSP カスタマー ポータルにアクセスするには、テナント固有の URL  `https://security.microsoft.com?tid=customer_tenant_id` を次の形式で使用する必要があります。
 
 一般に、MSSP は、管理する予定の MSSP Azure ADに追加する必要があります。
 
@@ -48,11 +48,11 @@ ms.locfileid: "61166628"
 
 2. ディレクトリを MSSP 顧客のテナントに切り替えます。
 
-3. [プロパティ **Azure Active Directory >] を選択します**。 [ディレクトリ ID] フィールドにテナント ID があります。
+3. [プロパティ **Azure Active Directory >選択します**。 [ディレクトリ ID] フィールドにテナント ID があります。
 
-4. 次の URL の値を置き換え、MSSP カスタマー ポータル `customer_tenant_id` にアクセスします `https://securitycenter.windows.com/?tid=customer_tenant_id` 。
+4. 次の URL の値を置 `customer_tenant_id` き換え、MSSP カスタマー ポータルにアクセスします `https://security.microsoft.com/?tid=customer_tenant_id`。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
 - [アラート通知を構成する](configure-mssp-notifications.md)

@@ -2,8 +2,8 @@
 title: 請求先住所を変更する
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 search.appverid: MET150
 description: ビジネス向け請求通知の受信に使用する請求先住所または電子メール アドレスを更新Microsoft 365します。
 ms.date: 01/24/2022
-ms.openlocfilehash: 888e371cb81475b385ecd9d5cd3a3898039a5e94
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 3c03315612b4f3a65dc39d2dcabee639bc578edd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214107"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322269"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
@@ -40,19 +40,19 @@ ms.locfileid: "62214107"
 
 ほとんどの場合、これらの住所は同じです。 必要があれば、これらの住所のうち 1 つ以上を変更することができます。 また、請求通知を受信し、他の管理者の代替メール アドレスを変更する代替メール アドレスを指定することもできます。
 
-請求書または請求書の詳細については、「請求書または請求書[](view-your-bill-or-invoice.md)を表示する」および「請求書または請求書について」[を参照してください](understand-your-invoice2.md)。
+請求書または請求書の詳細については、「請求書または請求書[](view-your-bill-or-invoice.md)を表示する」および「請求書または請求書について[」を参照してください](understand-your-invoice2.md)。
 
 ## <a name="change-your-sold-to-address"></a>販売先住所を変更する
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[課金アカウント] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**に移動**</a> します。
+1. 管理センターで、[課金アカウント] **ページに** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**移動**</a> します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金アカウント] **ページ** > **に移動** します。
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金アカウント] **ページに** > **移動** します。
 
 ::: moniker-end
 
@@ -106,6 +106,6 @@ ms.locfileid: "62214107"
 ## <a name="related-content"></a>関連コンテンツ
 
 [課金内容または請求書を表示する](view-your-bill-or-invoice.md) (article)\
-[請求書または請求書](understand-your-invoice2.md) (記事) を理解する\
+[請求書または請求書 (記事](understand-your-invoice2.md) ) を理解する\
 [サブスクリプションの支払い](pay-for-your-subscription.md) (記事)\
 [サブスクリプションと課金 - 管理者ヘルプ](../index.yml) (リンク ページ)

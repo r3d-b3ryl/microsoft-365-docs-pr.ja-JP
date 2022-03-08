@@ -2,8 +2,8 @@
 title: Microsoft 365 管理センター - 概要
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 でシンプルなビューのいずれかを使用して、一般的なタスクやダッシュボード ビューの複雑な設定やタスクを管理します。
-ms.openlocfilehash: c6443ef9406f49fe8f27aa5977aac1e046583587
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 92d6188ee843d9c3148e1036894ab9a3819247af
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421812"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315933"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
@@ -130,7 +130,7 @@ Microsoft 365 は、Office 365、Windows 10、Enterprise Mobility + Security が
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
 
-詳細については、「Try [or buy a Microsoft 365サブスクリプション」を参照してください](../../commerce/try-or-buy-microsoft-365.md)。 
+詳細については、「Try [or buy a Microsoft 365ビジネス サブスクリプション」を参照してください](../../commerce/try-or-buy-microsoft-365.md)。 
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>バグを見つけた場合、または機能の強化をリクエストする場合は、 どのように Microsoft に連絡すればよいですか?
 

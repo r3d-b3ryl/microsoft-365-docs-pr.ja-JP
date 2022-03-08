@@ -2,8 +2,8 @@
 title: 商用顧客向け Payment Services ディレクティブ 2 と強力な顧客認証
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jamitche, jmueller
 audience: Admin
@@ -14,24 +14,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 search.appverid: MET150
 description: 2019 年 9 月 14 日現在、欧州経済地域の 31 か国の銀行は、支払いを処理する前に、オンライン購入を行う人物の身元を確認する必要があります。
-keywords: payment services ディレクティブ 2、強力な顧客認証、多要素認証
 ms.date: 11/03/2020
-ms.openlocfilehash: 7b2fdec6a921979dc5f314c5441b42eac84f6f1d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 72b0ab8c118d0fa94e3ced5fe2748a11247335ca
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167740"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321111"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>商用顧客向け Payment Services ディレクティブ 2 と強力な顧客認証
 
 2019 年 9 月 14 日現在、欧州経済地域の 31 か国の銀行は、支払いを処理する前に、オンライン購入を行う人物の身元を確認する必要があります。 この検証では、オンライン購入の安全性と保護を確保するために多要素認証が必要です。 この検証要件の日付は、一部の国では遅れる予定です。
 
-詳細については、「Payment Services ディレクティブ 2」および「強力な顧客認証」に関する Microsoft [FAQ を参照してください](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)。
+詳細については、「Payment Services ディレクティブ 2 と強力な顧客認証に関する [Microsoft FAQ」を参照してください](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)。
 
 ## <a name="when-is-multi-factor-authentication-required"></a>多要素認証が必要な場合
 
@@ -51,7 +50,7 @@ ms.locfileid: "60167740"
 
 定期的な支払いの料金が失敗する場合があります。 その場合は、フォローする指示が記載されたメールが届きます。 確認要求に応答し、現在の支払いを行うメッセージが表示されます。
 
-## <a name="need-more-help"></a>ヘルプを表示
+## <a name="need-more-help"></a>サポートが必要な場合
 
 金融機関は、次のシナリオに最適な連絡先です。
 

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,15 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: how-to
-ms.custom: autoir
+ms.custom:
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: df2effa41977624530b5f9ea8881f7f5aaeef82f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67246d7f7876457e6553818b469987a2b5a59eb0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209107"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321795"
 ---
 # <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>ユーザーの誤検知または誤検知に対処Microsoft 365 Defender
 
@@ -35,7 +37,7 @@ ms.locfileid: "60209107"
 **適用対象:**
 - Microsoft 365 Defender
 
-脅威保護ソリューションでは、誤検知や陰性が発生することがあります。 自動[調査および応答](m365d-autoir.md)機能がMicrosoft 365 Defenderまたは誤って検出された場合、セキュリティ運用チームが実行できる手順は次のとおりです。
+脅威保護ソリューションでは、誤検知や陰性が発生することがあります。 自動[調査と応答](m365d-autoir.md)機能がMicrosoft 365 Defenderまたは誤って検出された場合、セキュリティ運用チームが実行できる手順は次のとおりです。
 
 - [Microsoft に誤検知/陰性を報告する](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [アラートを調整](#adjust-an-alert-to-prevent-false-positives-from-recurring) する (必要な場合)
@@ -54,14 +56,14 @@ ms.locfileid: "60209107"
 
 |シナリオ |サービス |操作 |
 |--------|--------|--------|
-|- アラートは正当な使用によってトリガーされます <br/>- アラートが不正確    |[Microsoft Cloud App Security](/cloud-app-security)<br/> または <br/>[Azure の脅威保護](/azure/security/fundamentals/threat-detection)         |[ポータルでアラートをCloud App Securityする](/cloud-app-security/managing-alerts)         |
+|- アラートは正当な使用によってトリガーされます <br/>- アラートが不正確    |[Microsoft Defender for Cloud Apps](/cloud-app-security)<br/> または <br/>[Azure の脅威保護](/azure/security/fundamentals/threat-detection)         |[Defender for Cloud Apps ポータルでアラートを管理する](/cloud-app-security/managing-alerts)         |
 |ファイル、IP アドレス、URL、またはドメインは、安全なデバイス上のマルウェアとして扱われる|[Microsoft Defender for Endpoint](/windows/security/threat-protection) |["許可" アクションを使用してカスタム インジケーターを作成する](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>デバイスで実行された修復アクションを元に戻す
 
-エンティティ (デバイスや電子メール メッセージなど) に対して修復アクションが実行され、影響を受けるエンティティが実際には脅威ではない場合、セキュリティ運用チームはアクション センターで修復[](m365d-action-center.md)アクションを元に戻すことができます。
+エンティティ (デバイスや電子メール メッセージなど) で修復アクションが実行され、影響を受けるエンティティが実際には脅威ではない場合、セキュリティ運用チームはアクション センターで修復アクションを元に戻すことができます[](m365d-action-center.md)。
 
-1. [https://security.microsoft.com](https://security.microsoft.com) に移動し、サインインします。 
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderに移動し</a>、サインインします。 
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。 
 3. [履歴 **] タブ** で、元に戻す操作を選択します。 そのフライアウト ウィンドウが開きます。
 4. フライアウト ウィンドウで、[元に戻す] を **選択します**。

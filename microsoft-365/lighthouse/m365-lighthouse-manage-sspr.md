@@ -15,28 +15,25 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouseを使用する場合は、セルフサービス パスワードのリセットを管理する方法について説明します。
-ms.openlocfilehash: b8367d2ed2c088d56425b08c6da5dfd55fcd84b8
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseパスワードのリセットを管理する方法について説明します。
+ms.openlocfilehash: f9f8ef9a3c81281629c378fb4b55cd4c9a839c1d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128606"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311565"
 ---
 # <a name="manage-self-service-password-reset"></a>セルフサービスパスワードのリセットを管理する
 
-> [!NOTE]
-> この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウントが設定されていない場合Microsoft 365 Lighthouse[を参照してください](m365-lighthouse-sign-up.md)Microsoft 365 Lighthouse。
+Microsoft 365 Lighthouseパートナーは、Azure Active Directory (Azure AD) セルフサービス パスワード リセット (SSPR) を管理できます。 SSPR を使用すると、管理者やヘルプ デスクに関与する必要なく、ユーザーはパスワードを変更またはリセットできます。 ユーザーのアカウントがロックされている場合、またはパスワードを忘れた場合は、プロンプトに従って自分自身のブロックを解除し、作業に戻る必要があります。 この機能により、ユーザーがデバイスやアプリケーションにサインインできない場合に、ヘルプ デスクの呼び出しや生産性の低下が軽減されます。
 
-Microsoft 365 Lighthouseパートナーは、Azure Active Directory (Azure AD) セルフサービス パスワードリセット (SSPR) を管理できます。 SSPR を使用すると、管理者やヘルプ デスクに関与する必要なく、ユーザーはパスワードを変更またはリセットできます。 ユーザーのアカウントがロックされている場合、またはパスワードを忘れた場合は、プロンプトに従って自分自身のブロックを解除し、作業に戻る必要があります。 この機能により、ユーザーがデバイスやアプリケーションにサインインできない場合に、ヘルプ デスクの呼び出しや生産性の低下が軽減されます。
+## <a name="before-you-begin"></a>始める前に
 
-## <a name="before-you-begin"></a>はじめに
+テナントがリストに表示される前に、次の条件を満たす必要があります:
 
-テナントがリストに表示される前に、次の条件を満たしている必要があります。
+- 顧客テナントには、ユーザーごとに Azure AD Premium ライセンスが必要です。 SSPR をサポートするライセンスの詳細については、「セルフサービス パスワードのリセットに関するライセンス要件[Azure Active Directoryを参照してください](/azure/active-directory/authentication/concept-sspr-licensing)。
 
-- 顧客テナントには、各ユーザー Azure AD Premiumライセンスが必要です。 SSPR をサポートするライセンスの詳細については、「セルフサービス パスワードのリセットに関するライセンス要件[Azure Active Directoryを参照してください](/azure/active-directory/authentication/concept-sspr-licensing)。
-
-- 顧客テナントは、ライトハウス内でアクティブである必要があります。 テナントがアクティブかどうかを確認する方法については、「テナントの概要[」Microsoft 365 Lighthouseを参照してください](m365-lighthouse-tenants-page-overview.md)。
+- 顧客テナントは、ライトハウス内でアクティブである必要があります。 テナントがアクティブかどうかを確認する方法については、「テナントの概要」[Microsoft 365 Lighthouseを参照してください](m365-lighthouse-tenants-page-overview.md)。
 
 ## <a name="view-sspr-tenant-status"></a>SSPR テナントの状態を表示する
 
@@ -48,19 +45,19 @@ Microsoft 365 Lighthouseパートナーは、Azure Active Directory (Azure AD) �
 
 ## <a name="enable-sspr-for-a-tenant"></a>テナントの SSPR を有効にする
 
-1. ライトハウスの左側のナビゲーション ウィンドウで、[ユーザー] を **選択します**。
+1. Lighthouse の左側のナビゲーション ウィンドウで、**[ユーザー]** を選択します。
 
 2. [パスワードの **リセット] タブを選択** します。
 
 3. テナントの一覧からテナントを選択し、詳細ウィンドウを開きます。
 
-4. **[SSPR 設定の編集] を選択Azure Active Directory** (Azure Active Directory) に移動Azure AD。
+4. [**SSPR 設定の編集] を選択してAzure Active Directory** に移動します (Azure Active Directory) Azure AD。
 
 5. [Azure ADで、すべてのユーザーまたは選択したユーザーに対して SSPR を有効にしてください。 詳細については、「チュートリアル: ユーザーが自分のアカウントのロックを解除したり、セルフサービス パスワードのリセットを使用してパスワードをリセットAzure Active Directory[を有効にする」を参照してください](/azure/active-directory/authentication/tutorial-enable-sspr)。
 
 ## <a name="notify-users-to-register-for-sspr"></a>SSPR への登録をユーザーに通知する
 
-1. ライトハウスの左側のナビゲーション ウィンドウで、[ユーザー] を **選択します**。
+1. Lighthouse の左側のナビゲーション ウィンドウで、**[ユーザー]** を選択します。
 
 2. [パスワードの **リセット] タブを選択** します。
 
@@ -68,11 +65,11 @@ Microsoft 365 Lighthouseパートナーは、Azure Active Directory (Azure AD) �
 
 4. 通知するユーザーを選択します。
 
-5. [メール **の作成] を選択します**。
+5. **[メールの作成]** を選択します。
 
-ライトハウスは既定の電子メール クライアントを開き、SSPR に登録する手順が記載された電子メール メッセージを事前設定します。 選択したユーザーはすべて BCC 行に含まれます。 ユーザーを個別に電子メールで送信する場合は、ユーザー名の横にあるメール アイコンを選択できます。
+ライトハウスは既定の電子メール クライアントを開き、SSPR に登録する手順が記載された電子メール メッセージを事前設定します。 選択したすべてのユーザーが BCC 行に含まれます。 ユーザーに個別にメールを送信する場合は、ユーザー名の横にあるメール アイコンを選択できます。
 
-別のメール アカウントを使用する場合は、ユーザーの一覧をファイルにエクスポートできます。 また、会社のブランド化でカスタマイズできるサンプルメール テンプレートをダウンロードすることもできます。
+別のメール アカウントを使用する場合は、ユーザーのリストをファイルにエクスポートできます。 会社のブランドでカスタマイズできるサンプル メール テンプレートをダウンロードすることもできます。
 
 ## <a name="related-content"></a>関連コンテンツ
 

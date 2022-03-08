@@ -2,10 +2,10 @@
 title: 自動請求ポリシーを管理する
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.review: yinggiy, pablom
+ms.reviewer: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,30 +14,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 description: 特定のアプリのライセンスをユーザーに自動的に割り当てる自動請求ポリシーを作成して管理する方法について説明します。
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 28d05e0e3b1d1e8692672bf741a612ebee02e39f
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: d6cb3d78de914e84e831947089aeadf277e72ddf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753495"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321097"
 ---
 # <a name="manage-auto-claim-policies"></a>自動請求ポリシーを管理する
 
 自動請求ポリシーを使用すると、ユーザーがアプリに初めてサインインすると、自動的に製品のライセンスを要求することができます。 通常、管理者は手動で、またはグループ ベースのライセンスを使用して、ライセンスをユーザーに割り当てる必要があります。 自動請求ポリシーを使用すると、ユーザーが自動的にライセンスを要求できる製品を管理します。 これらのライセンスの取得先の製品を制御することもできます。
-
-自動請求ポリシーを作成した後は、次のタスクを実行してポリシーを管理できます:
-
-- [このポリシーをオンまたはオフにする](#turn-a-policy-on-or-off)
-- [ポリシーのフレンドリ名を編集する](#edit-the-policy-friendly-name)
-- [バックアップ製品を追加または削除する](#add-or-remove-backup-products)
-- [割り当て中のアプリとサービスを管理する](#change-the-assigning-apps-and-services)
-- [割り当て順序を変更する](#change-the-assigning-order-for-backup-products)
-- [ポリシー レポートを表示する](#view-an-auto-claim-policy-report)
 
 > [!IMPORTANT]
 > 現在、自動請求ポリシーは Microsoft Teams でのみ使用できます。 今後もさらに多くの製品でも使用できるようになる予定です。

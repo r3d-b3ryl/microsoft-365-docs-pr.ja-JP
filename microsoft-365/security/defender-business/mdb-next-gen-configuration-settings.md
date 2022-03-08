@@ -1,13 +1,13 @@
 ---
-title: Microsoft Defender for Business の次世代保護構成設定について (プレビュー)
-description: Microsoft Defender for Business の次世代保護の構成設定について (プレビュー)
+title: Microsoft Defender for Business の次世代保護構成設定について
+description: Microsoft Defender for Business の次世代保護の構成設定について
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,26 +16,28 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a4fd47c04e063e049265f037568a768eb05b6cc7
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: a3e4e9cb3b3350cbc901a40d171bb0171186519e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464568"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323011"
 ---
-# <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business の次世代の構成設定について (プレビュー)
+# <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Microsoft Defender for Business の次世代の構成設定について
 
 > [!IMPORTANT]
-> Microsoft Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐[](https://aka.ms/mdb-preview)々にロールアウトされます。 今後数週間以内に最初の一連の顧客とパートナーをオンボードし、一般提供に至るプレビューを拡大します。 プレビューは最初の一連 [のシナリオで](mdb-tutorials.md#try-these-preview-scenarios)起動し、定期的に機能を追加します。
+> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
-Defender for Business (プレビュー) の次世代保護には、堅牢なウイルス対策およびマルウェア対策保護が含まれます。 既定のポリシーは、生産性を妨げることなくデバイスとユーザーを保護するように設計されています。ただし、ビジネス ニーズに合わせてポリシーをカスタマイズすることもできます。 また、セキュリティ ポリシーを使用しているMicrosoft エンドポイント マネージャー、セキュリティ ポリシーを管理するために使用できます。
+Defender for Business の次世代保護には、堅牢なウイルス対策およびマルウェア対策保護が含まれます。 既定のポリシーは、生産性を妨げることなくデバイスとユーザーを保護するように設計されています。ただし、ビジネス ニーズに合わせてポリシーをカスタマイズすることもできます。 また、セキュリティ ポリシーを使用しているMicrosoft エンドポイント マネージャー、セキュリティ ポリシーを管理するために使用できます。
 
 **この記事では、次の情報について説明します**。
 
 - [次世代の保護の設定とオプション](#next-generation-protection-settings-and-options)
-- [Defender for Business のその他の事前構成済みの設定 (プレビュー)](#other-preconfigured-settings-in-defender-for-business) 
+
+- [Defender for Business のその他の事前構成済み設定](#other-preconfigured-settings-in-defender-for-business) 
+
 - [Defender for Business の既定の設定とMicrosoft エンドポイント マネージャー](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
 
 ## <a name="next-generation-protection-settings-and-options"></a>次世代の保護の設定とオプション
@@ -56,29 +58,32 @@ Defender for Business (プレビュー) の次世代保護には、堅牢なウ�
 | **スケジュールされたスキャンを実行する時刻** | 定期的にスケジュールされたウイルス対策スキャンを実行する時間を選択します。 |
 | **低パフォーマンスの使用** | この設定は既定でオフになっています。 *この設定をオフにすることをお勧めします。* ただし、この設定をオンにすると、スケジュールされたスキャン中に使用されるデバイス のメモリとリソースを制限できます。 <br/><br/>**大事な**[低パフォーマンスを **使用する] をオン** にした場合は、次の設定を構成Microsoft Defender ウイルス対策。 <br/>- アーカイブ ファイルがスキャンされない ([AllowArchiveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning))<br/>- スキャンには CPU 優先度が低く割り当てられます ([EnableLowCPUPriority](/windows/client-management/mdm/policy-csp-defender#defender-enablelowcpupriority)) <br/>- 完全なウイルス対策スキャンが見つからない場合、キャッチアップ スキャンは実行されません ([DisableCatchupFullScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan)) <br/>- クイック ウイルス対策スキャンが見つからない場合、キャッチアップ スキャンは実行されません ([DisableCatchupQuickScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan)) <br/>- ウイルス対策スキャン中の平均 CPU 負荷率を 50% から 20% に減少します ([AvgCPULoadFactor](/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor)) |
 | **ユーザーの操作性**   |  |
-| **ユーザーがアプリにアクセスWindows セキュリティする** | この設定をオンにすると、ユーザーはデバイスでアプリWindows セキュリティ開くことができる。 ユーザーは Microsoft Defender for Business (プレビュー) で構成した設定を上書きできますが、必要に応じてクイック スキャンを実行したり、検出された脅威を表示したりできます。 |
+| **ユーザーがアプリにアクセスWindows セキュリティする** | この設定をオンにすると、ユーザーはデバイスでアプリWindows セキュリティ開くことができる。 ユーザーは Microsoft Defender for Business で構成した設定を上書きできますが、必要に応じてクイック スキャンを実行したり、検出された脅威を表示したりできます。 |
 | **ウイルス対策の除外** | 除外は、スキャンによってスキップされるプロセス、ファイル、またはMicrosoft Defender ウイルス対策です。 *一般に、除外を定義する必要はない必要があります。* Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作と一般的な管理ファイルに基づく多くの自動除外が含まれます。<br/><br/>[除外の詳細](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md) |
 | **プロセスの除外** | プロセスの除外により、特定のプロセスによって開いたファイルが、特定のプロセスによってスキャンMicrosoft Defender ウイルス対策。 <br/><br/>[プロセスの除外の詳細](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) |
-| **ファイル拡張子の除外** | ファイル拡張子の除外により、特定の拡張子を持つファイルがファイルのスキャンMicrosoft Defender ウイルス対策。<br/><br/>[ファイル拡張子の除外の詳細](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
+| **ファイル拡張子の除外** | ファイル拡張子の除外により、特定の拡張子を持つファイルがファイルのスキャンをMicrosoft Defender ウイルス対策。<br/><br/>[ファイル拡張子の除外の詳細](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
 | **ファイルとフォルダーの除外** | ファイルとフォルダーの除外により、特定のフォルダー内のファイルがユーザーによってスキャンMicrosoft Defender ウイルス対策。 <br/><br/>[ファイルとフォルダーの除外の詳細](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
 
 ## <a name="other-preconfigured-settings-in-defender-for-business"></a>Defender for Business のその他の事前構成済み設定
 
-次のセキュリティ設定は、Defender for Business (プレビュー) で事前構成されています。
+Defender for Business では、以下のセキュリティ設定が事前構成されています。
 
 - リムーバブル ドライブのスキャンが有効になっている ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning))
+
 - 毎日のクイック スキャンに事前設定された時間が設定されている ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime))
+
 - ウイルス対策スキャンが実行される前にセキュリティ インテリジェンスの更新プログラムがチェックされます ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
+
 - セキュリティ インテリジェンスチェックは 4 時間ごとに行われます ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
 ## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>Defender for Business の既定の設定とMicrosoft エンドポイント マネージャー
 
-次の表では、Defender for Business (プレビュー) 用に事前構成されている設定と、これらの設定が Microsoft エンドポイント マネージャー (または Microsoft Intune) に表示される設定とどのように対応するかについて説明します。 Defender [for Business](mdb-simplified-configuration.md) (プレビュー) で簡略化された構成プロセスを使用している場合は、これらの設定を編集する必要があります。
+次の表では、Defender for Business 用に事前構成されている設定と、これらの設定が Microsoft エンドポイント マネージャー (または Microsoft Intune) に表示される設定とどのように対応するかについて説明します。 Defender [for Business](mdb-simplified-configuration.md) (プレビュー) で簡略化された構成プロセスを使用している場合は、これらの設定を編集する必要があります。
 <br/><br/>
 
 | Setting  | 説明  |
 |---------|---------|
-| [クラウド保護](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | クラウド配信保護または Microsoft Advanced Protection Service (MAPS) と呼ばれる場合、クラウド保護は Microsoft Defender ウイルス対策 と Microsoft クラウドと機能し、単一のデバイスが影響を受ける前でも、新しい脅威を特定します。 既定では [、AllowCloudProtection は](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) オンになっています。 <br/><br/>[クラウド保護について詳しくは、次のリンクを参照してください](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)。         |
+| [クラウド保護](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | クラウド配信保護または Microsoft Advanced Protection Service (MAPS) と呼ばれる場合、クラウド保護は Microsoft Defender ウイルス対策 と Microsoft クラウドと一緒に動作し、単一のデバイスが影響を受ける前でも、新しい脅威を特定します。 既定では [、AllowCloudProtection は](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) オンになっています。 <br/><br/>[クラウド保護について詳しくは、次のリンクを参照してください](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)。         |
 | [受信ファイルと送信ファイルの監視](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)     | 受信ファイルと送信ファイルを監視するために、 [RealTimeScanDirection は、](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection) すべてのファイルを監視するために設定されます。         |
 | [ネットワーク ファイルのスキャン](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | 既定では [、AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) は有効になっていません。ネットワーク ファイルはスキャンされません。 |
 | [電子メール メッセージのスキャン](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | 既定では [、AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) は有効になっていません。電子メール メッセージはスキャンされません。 |
@@ -92,9 +97,9 @@ Defender for Business (プレビュー) の次世代保護には、堅牢なウ�
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)](mdb-view-manage-incidents.md)
+- [Microsoft Defender for Business でのインシデントの表示と管理](mdb-view-manage-incidents.md)
 
-- [Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)](mdb-respond-mitigate-threats.md)
+- [Microsoft Defender for Business での脅威への対応と軽減](mdb-respond-mitigate-threats.md)
 
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)
 
@@ -103,6 +108,6 @@ Defender for Business (プレビュー) の次世代保護には、堅牢なウ�
 
 - [ポータルにアクセスMicrosoft 365 Defenderする](mdb-get-started.md)
 
-- [Microsoft Defender for Business のファイアウォール設定を管理する (プレビュー)](mdb-custom-rules-firewall.md)
+- [Microsoft Defender for Business でファイアウォール設定を管理する](mdb-custom-rules-firewall.md)
 
 - [ポリシー CSP - Defender](/windows/client-management/mdm/policy-csp-defender)

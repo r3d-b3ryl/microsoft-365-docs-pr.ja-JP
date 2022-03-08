@@ -2,8 +2,8 @@
 title: 提案ワークフローの理解
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: presharm, jmueller
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_purchase
+- AdminSurgePortfolio
 search.appverid: MET150
 description: Microsoft 製品とサービスの購入に役立つ提案について説明します。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: c358022648bb81c5ca90d348a9d3c3b812c36ff2
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 75674b03a1954c65fbb506baa2de3e37ee20ea5a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372890"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321083"
 ---
 # <a name="understand-the-proposal-workflow"></a>提案ワークフローの理解
 
@@ -49,13 +49,13 @@ Microsoft 担当者は、ユーザーと担当者が話し合ったアイテム�
 
 ### <a name="microsoft-customer-agreement"></a>Microsoft カスタマー 契約
 
-Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 製品とサービスを購入できます。 詳細については [、「Microsoft Customer Agreement」を参照してください](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement)。
+Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 製品とサービスを購入できます。 詳細については、「 [Microsoft Customer Agreement」を参照してください](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement)。
 
 ## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>契約に署名したり、アイテムの支払いを行う場合に必要なアクセス許可
 
 請求アカウントに割り当てられた役割が割り当てられていない場合、提案を表示すると、基本的な閲覧者の役割が割り当てられます。 この役割を使用すると、提案を表示できますが、何もアクションを実行できます。 契約に署名したり、製品やサービスを購入する前に、請求アカウントの所有者または請求アカウントの共同作成者の役割を割り当てる必要があります。 課金アカウントの所有者は、この役割を割り当てできます。
 
-課金アカウントの役割の詳細については、「請求アカウントへのアクセス [について」を参照してください](manage-billing-accounts.md#understand-access-to-billing-accounts)。
+課金アカウントの役割の詳細については、「請求アカウント [へのアクセスについて」を参照してください](manage-billing-accounts.md#understand-access-to-billing-accounts)。
 
 これが新しい請求アカウントで、誰も契約を受け入れていない場合は、次の条件を指定して、自動的に請求アカウントの所有者になります。
 
@@ -82,10 +82,10 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 課金アカウント | アカウント設定、請求書、支払い方法、および製品の管理に使用されるアカウント。 |
 | 課金プロファイル | 請求書に含まれるアイテムや請求書の支払い方法をカスタマイズできる組織に関する情報。 請求プロファイルには、請求アカウント名、特定の請求プロファイルに使用される支払い方法、連絡先情報、請求書設定、および請求プロファイルの変更、請求書の支払い、製品とサービスの購入を行う権限が含まれます。 |
-| 既存の契約 | 組織が既に Microsoft と締結している契約。 これには、サービス契約、Microsoft 製品Enterprise Agreementサービス契約& Microsoft カスタマー契約が含まれますが、これらに限定される場合があります。 |
+| 既存の契約 | 組織が既に Microsoft と締結している契約。 これには、サービス契約、Microsoft 製品Enterprise Agreementサービス契約&、または Microsoft カスタマー契約が含まれますが、これらに限定される場合があります。 |
 | Microsoft カスタマー 契約 (MCA) | Microsoft と組織が保持するアカウントの契約条件を概説する契約。 |
 | Microsoft 担当者 | お客様と組織の提案を準備する、承認された Microsoft 担当者。 |
-| 組織 | Microsoft 製品、テクノロジ、またはサービスを使用する法人。 |
+| Organization | Microsoft 製品、テクノロジ、またはサービスを使用する法人。 |
 | によって準備される | 提案を作成した Microsoft 担当者の電子メール アドレス。 |
 | 補足用語 | 組織固有の用語を含む MCA の修正。 補足用語を受け入れるには、電子署名を記録するために DocuSign を使用する必要があります。 |
 
@@ -97,11 +97,11 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 
 [ **組織] セクション** には、関連付けられた請求アカウントが表示されます。 課金アカウント情報は、既存の請求アカウントから取得するか、Microsoft 担当者が作成します。 組織が別の組織の関連会社である場合は、その組織の名前と住所を含む [リード組織] セクションも表示されます。
 
-組織が Microsoft との商用関係を初めて確立し、まだ MCA に署名していない場合は、組織またはリード組織の下の情報が正しくない場合は、担当者に連絡して変更を加えます。 MCA を受け入れてから、組織の住所と連絡先情報を確認して変更するには、ページの [[](https://go.microsoft.com/fwlink/p/?linkid=2084771)請求アカウント] ページMicrosoft 365 管理センター。 組織名が変更された場合は、サービス要求を開き、更新します。 [サービス要求を開く方法について学習します](../admin/get-help-support.md)。
+組織が Microsoft との商用関係を初めて確立し、まだ MCA に署名していない場合は、組織またはリード組織の下の情報が正しくない場合は、担当者に連絡して変更を加えます。 MCA を受け入れてから、組織の住所と連絡先情報を確認および変更するには、ページの [請求アカウント[](https://go.microsoft.com/fwlink/p/?linkid=2084771)] ページMicrosoft 365 管理センター。 組織名が変更された場合は、サービス要求を開き、更新します。 [サービス要求を開く方法について学習します](../admin/get-help-support.md)。
 
 ### <a name="your-information"></a>お客様の情報
 
-新しい顧客の場合は、[情報] の下に名前、メール アドレス、電話番号を入力し、[保存] を **選択します**。 既存の顧客の場合は、情報が正しいか確認します。 修正を行う場合は、[編集] を **選択し**、必要な変更を加え、[保存] を **選択します**。
+新しい顧客の場合は、[情報] の下に名前、メール アドレス、電話番号を入力し、[ **保存] を** 選択 **します**。 既存の顧客の場合は、情報が正しいか確認します。 修正を行う場合は、[編集] を **選択** し、必要な変更を加え、[保存] を **選択します**。
 
 準備ができたら、[続行] を **選択して** 次の手順に進みます。
 
@@ -138,7 +138,7 @@ MCA に署名するには、[次の手順] の下にあるボタン **を選択�
 
 このセクションには、提案に使用される請求先アカウントが表示されます。 情報を変更する必要がある場合は、[編集] リンク **を選択** します。 [編集] リンクを **使用して** 、組織の税 ID を追加することもできます。 税 ID は、[販売先] セクションに記載されている国 **に関連している必要** があります。 免税がある場合は、サポート チケットを開き、免税ステータスを要求する必要があります。
 
-Tax IDs の詳細と、免税ステータスを申請する方法については、「Tax [information」を参照してください](billing-and-payments/tax-information.md)。
+Tax IDs について、および免税ステータスを申請する方法の詳細については、「Tax information」 [を参照してください](billing-and-payments/tax-information.md)。
 
 ### <a name="billed-to"></a>請求の受け取り
 
@@ -159,15 +159,15 @@ Tax IDs の詳細と、免税ステータスを申請する方法については
 
 このセクションには、支払われるアイテムの数、小計、推定税、注文の合計金額が表示されます。
 
-注文を行う場合は、[注文の発注 **] または [** 契約注文 **の承諾] &amp; を選択します**。
+注文を行う場合は、[注文の発注 **] または [同意する****] の順に&amp;選択します**。
 
 注文を行った後、次の手順で確認を受け取ることになります。 Azure プランを購入した場合は、Azure ポータルで課金アカウントを設定します。
 
 ## <a name="step-4-set-up-your-new-billing-account-azure-customers-only"></a>手順 4: 新しい請求アカウントを設定する (Azure のお客様のみ)
 
-新しい顧客で、提案の一部として Azure 製品を購入している場合は、新しい請求アカウントを設定します。 方法については [、「Microsoft カスタマー 契約の請求アカウントを設定する」を参照してください](/azure/cost-management-billing/manage/mca-setup-account)。
+新しい顧客で、提案の一部として Azure 製品を購入している場合は、新しい請求アカウントを設定します。 方法については、「 [Microsoft カスタマー 契約の請求アカウントを設定する」を参照してください](/azure/cost-management-billing/manage/mca-setup-account)。
 
-Enterprise Agreement を持つ既存の Azure 顧客で、初めて MCA に署名する場合は、契約間の変更と、新しい請求アカウントでタスクを完了する方法について説明します。 詳細については、「Microsoft カスタマー 契約の請求Enterprise Agreementタスクを完了する[」を参照してください](/azure/cost-management-billing/manage/mca-enterprise-operations)。
+Enterprise Agreement を持つ既存の Azure 顧客で、初めて MCA に署名する場合は、契約間の変更と、新しい請求アカウントでタスクを完了する方法について説明します。 詳細については、「[Microsoft カスタマー 契約の請求Enterprise Agreementタスクを完了する」を参照してください](/azure/cost-management-billing/manage/mca-enterprise-operations)。
 
 ## <a name="understand-invoicing"></a>請求書の作成について
 

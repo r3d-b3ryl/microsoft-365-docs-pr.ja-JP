@@ -2,8 +2,8 @@
 title: 税務情報
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: 'さまざまな地域のビジネス サブスクリプションに対して請求される税金Microsoft 365を確認します。 '
+description: 'さまざまな地域のビジネス サブスクリプションに対して請求される税金Microsoft 365確認します。 '
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 391a3f3d59b5583a89db4e0b2a3d54b3e488f729
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 421abe7b69323be783831d9ce5de45c21ec98536
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372410"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313399"
 ---
 # <a name="tax-information"></a>税金情報
 
@@ -102,7 +102,7 @@ Microsoft 365製品とサービスを購入する場合、支払う税金は、�
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>ヨーロッパ、中東、アフリカ (EMEA)
 
-EMEA 地域でMicrosoft 365サービスを購入する場合、この購入は税 (VAT) のValue-Addedされる可能性があります。
+EMEA 地域Microsoft 365サービスを購入する場合、この購入は税 (VAT) のValue-Addedされる可能性があります。
   
 - EU 加盟国、アルメニア、ベラルーシ、ノルウェー、トルコ、またはアラブ首長国連邦に在住し、有効な現地 VAT ID を提供しない場合、Microsoft アイルランド Operations Ltd. は、アカウントが設定されている請求国に基づいて、現在の現地 VAT レートを適用します。
 
@@ -112,11 +112,11 @@ EMEA 地域でMicrosoft 365サービスを購入する場合、この購入は�
 
 次の場合は、VAT ゼロ評価の対象となる場合があります。
   
-- **アイルランド以外の欧州連合加盟国にいます。** 有効なローカル VAT ID を指定できます。 これにより、Microsoft アイルランド Operations Ltd. はトランザクションを VAT ゼロレートにできます。 ただし、現地の VAT 会計上の義務がある場合があります。 懸念がある場合は、税務顧問に確認してください。 手順については、「VAT [ID の追加」を参照してください](#add-your-vat-id)。
+- **アイルランド以外の欧州連合加盟国にいます。** 有効なローカル VAT ID を指定できます。 これにより、Microsoft アイルランド Operations Ltd. はトランザクションを VAT ゼロレートにできます。 ただし、現地の VAT 会計上の義務がある場合があります。 懸念がある場合は、税務顧問に確認してください。 手順については、「VAT [ID を追加する」を参照してください](#add-your-vat-id)。
 
 - **アイルランドにいて、関連する有効な VAT 免除認定を受け取っています。** Microsoft Ireland Operations Ltd. は、トランザクションを VAT から除外する権利を有する場合があります。 そうしない場合は、VAT ID を指定したかどうかに関して、Microsoft Ireland Operations Ltd. が現在のアイルランド VAT レートを適用します。
 
-- **アルメニア、ベラルーシ、ノルウェー、トルコ、またはアラブ首長国連邦の場合:** ローカル VAT ID を指定できます。 これにより、Microsoft Ireland Operations Ltd. に対し、トランザクションの VAT ゼロレートが適用されます。 ただし、現地の VAT 会計上の義務が適用される場合があります。懸念がある場合は、税務顧問にお問い合わせください。 手順については、「VAT [ID の追加」を参照してください](#add-your-vat-id)。
+- **アルメニア、ベラルーシ、ノルウェー、トルコ、またはアラブ首長国連邦の場合:** ローカル VAT ID を指定できます。 これにより、Microsoft Ireland Operations Ltd. に対し、トランザクションの VAT ゼロレートが適用されます。 ただし、現地の VAT 会計上の義務が適用される場合があります。懸念がある場合は、税務顧問にお問い合わせください。 手順については、「VAT [ID を追加する」を参照してください](#add-your-vat-id)。
 
 ## <a name="asia-pacific-countries-apac"></a>アジア太平洋地域 (APAC)
 
@@ -134,7 +134,7 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 米国、カナダ、メキシコ、チリ、コロンビアでは、製品の性質と場所に応じてさまざまな税率が適用されます。
   
-請求が Microsoft Corporation によって行われた場合[(請求書](view-your-bill-or-invoice.md)を参照し、米国、カナダ、プエルトリコ、チリ、コロンビア以外の Microsoft 365 にサインアップした場合、通常は税金は請求されません。
+請求が Microsoft Corporation によって行われた[場合 (請求書](view-your-bill-or-invoice.md)を参照し、米国、カナダ、プエルトリコ、チリ、コロンビア以外の Microsoft 365 にサインアップした場合、通常、税金は請求されません。
 
 ## <a name="add-your-vat-id"></a>VAT ID を追加する
 

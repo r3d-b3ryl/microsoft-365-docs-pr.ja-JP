@@ -7,8 +7,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 547356fadc05c2359b4c6cd639bc22110bf8be93
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 31b2a7b41c26bdba22e6f364e517471e31e9115c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346280"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313021"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 
@@ -80,11 +80,14 @@ ms.locfileid: "62346280"
 保留中か完了かの修復アクションはすべて、アクション センターで [追跡されます](auto-investigation-action-center.md)。 必要に応じて、セキュリティ運用チームは修復アクションを元に戻すことができます。 詳細については、「自動調査後 [の修復アクションの確認と承認」を参照してください](/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 
 > [!TIP]
-> このポータルで、新しい統合された調査ページMicrosoft 365 Defenderしてください。 詳細については、「( [NEW!)」を参照してください。統合された調査ページ](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
+> 新しい統合された調査ページを、新しいポータルでMicrosoft 365 Defenderしてください。 詳細については、「( [NEW!)」を参照してください。統合された調査ページ](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
 
 ## <a name="requirements-for-air"></a>AIR の要件
 
-組織には Defender for Endpoint が必要です (「 [エンドポイント用 Microsoft Defender の最小要件」を参照してください](minimum-requirements.md))。
+組織には Defender for Endpoint が必要です (「[エンドポイント用 Microsoft Defender の最小要件」を参照)。](minimum-requirements.md)
+
+> [!NOTE]
+> 自動調査と応答には、パッシブ Microsoft Defender ウイルス対策アクティブ モードで実行する必要があります。 無効Microsoft Defender ウイルス対策アンインストールすると、自動調査と応答が正しく機能しません。
 
 現在、AIR は次の OS バージョンのみをサポートしています。
 

@@ -2,8 +2,8 @@
 title: プロダクト キーを使用して支払われたサブスクリプションにライセンスを追加または拡張する
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - TopSMBIssues
 - AdminSurgePortfolio
-- commerce_licensing
 search.appverid: MET150
 description: プロダクト キーを使用してサブスクリプションにライセンスを追加または拡張する方法について学習します。
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: e9fed54eb7006906e7d54888709c14cdbff8a903
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4d14f00115059cf28cff71ac126b1f0fdfbb3890
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370958"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311866"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>プロダクト キーを使用して支払われたサブスクリプションにライセンスを追加または拡張する
 
@@ -49,7 +49,7 @@ ms.locfileid: "61370958"
 
 2. **[製品]** タブで、ライセンスを追加するサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの **[ライセンス]** セクションで、**[ライセンスを追加する]** を選択します。
-4. [ライセンスの **追加] ウィンドウで、[** 新しいプロダクト キーと未使用のプロダクト キーを使用する] を **選択** し、[次へ] を **選択します**。
+4. [ライセンスの **追加] ウィンドウで、[** 新しいプロダクト キーと未使用のプロダクト キーを使用する] を **選択** し、[次へ] を選択 **します**。
 5. プロダクト キーを入力し、[**次へ**] を選択します。
     > [!NOTE]
     > 複数のプロダクト キーがある場合は、[**別のプロダクト キーを追加する**] を選択してキーを入力できます。

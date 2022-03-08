@@ -12,24 +12,24 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 83ba5e60d77cd4b68834efeceb4572639348d122
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 65517399425fa71b2d4123da6103f9f15784db38
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035066"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327239"
 ---
 # <a name="microsoft-managed-desktop-supported-regions"></a>Microsoft Managed Desktop でサポートされている地域
 
-この記事では、Microsoft Managed Desktop を使用できる地域と、サポートされている地域の詳細について説明します。 ユーザー エクスペリエンスのために Microsoft Managed Desktop でサポートされる言語の詳細については、「ユーザーのデバイスをローカライズする [」を参照してください](../get-started/localization.md)。
+この記事では、Microsoft Managed Desktop をサポートする地域の詳細について説明します。
 
-Microsoft Managed Desktop サービスを中断することなく、これらの地域外の管理対象デバイスを使用できます。 たとえば、英国に拠点を置く従業員は、アジア、ヨーロッパ、南アメリカの旅行中に、安全に作業し、管理対象デバイスで更新プログラムを受け取る可能性があります。
+Microsoft Managed Desktop サービスを中断することなく、これらの地域外の管理対象デバイスを使用できます。 たとえば、英国の従業員は、アジア、ヨーロッパ、南アメリカへの旅行中に、安全に作業し、管理対象デバイスで更新プログラムを受け取る可能性があります。
 
-ユーザーエクスペリエンスと管理者エクスペリエンスで Microsoft Managed Desktop がサポートする言語の詳細については、「ユーザー エクスペリエンスのローカライズ」 [を参照してください](../get-started/localization.md)。
+Microsoft Managed Desktop でサポートされる言語の詳細については、「ユーザーのデバイスをローカライズ [する」を参照してください](../get-started/localization.md)。
 
-Microsoft Managed Desktop でのユーザー サポートの詳細については、「Microsoft Managed Desktop の [サポート」を参照してください](support.md)。
+Microsoft Managed Desktop でのユーザー サポートの詳細については、「Microsoft Managed [Desktop のサポート」を参照してください](support.md)。
 
-## <a name="availability-of-the-service"></a>サービスの可用性
+## <a name="service-availability"></a>サービスの可用性
 
 次の国の組織は、Microsoft Managed Desktop を購読できます。
 
@@ -47,4 +47,3 @@ Microsoft Managed Desktop でのユーザー サポートの詳細について�
 - アイスランド
 - オーストラリア
 - ニュージーランド
-

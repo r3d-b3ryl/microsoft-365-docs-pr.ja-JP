@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0f1e9c88c003551ca74c76d6348465f52fdbd171
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 261cb8af0f1fbb4c118aca649945f66015f1d25c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156390"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322781"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用したオンボーディング
 
@@ -39,14 +39,12 @@ ms.locfileid: "62156390"
 
 「計画 [」トピック](deployment-strategy.md) では、デバイスをサービスにオンボードする方法がいくつか用意されています。 このトピックでは、クラウド ネイティブ アーキテクチャについて説明します。
 
-![クラウド ネイティブ アーキテクチャのイメージ。 ](images/cloud-native-architecture.png)
+![クラウド ネイティブ アーキテクチャのイメージ。](images/cloud-native-architecture.png)
 *環境アーキテクチャの図*
 
-Defender for Endpoint はさまざまなエンドポイントとツールのオンボーディングをサポートしますが、この記事ではそれらをカバーしません。 サポートされている他の展開ツールと方法を使用した一般的なオンボーディングの詳細については、「オンボードの概要 [」を参照してください](onboarding.md)。
+Defender for Endpoint はさまざまなエンドポイントとツールのオンボーディングをサポートしますが、この記事ではそれらをカバーしません。 他のサポートされている展開ツールと方法を使用した一般的なオンボーディングの詳細については、「オンボーディングの概要 [」を参照してください](onboarding.md)。
 
-[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)は、複数のサービスを統合するソリューション プラットフォームです。 これには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
-
--based device management.
+[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)は、複数のサービスを統合するソリューション プラットフォームです。 これには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune)ベースのデバイス管理が含まれます。
 
 このトピックでは、次のユーザーをガイドします。
 
@@ -89,7 +87,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 1. MEM ポータルを開きます。
 
-2. [グループ **] を>新しいグループを開きます**。
+2. [グループ **] >新しいグループ] を開きます**。
 
     > [!div class="mx-imgBorder"]
     > ![ポータル 1 Microsoft エンドポイント マネージャーのイメージ。](images/66f724598d9c3319cba27f79dd4617a4.png)
@@ -101,9 +99,9 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 4. テスト ユーザーまたはデバイスを追加します。
 
-5. [グループ] **ウィンドウ>新しい** グループを開きます。
+5. [グループ] **ウィンドウの [>] ウィンドウで** 、新しいグループを開きます。
 
-6. [メンバー  **] を>メンバーを追加します**。
+6. [メンバー  **] >メンバーの追加] を選択します**。
 
 7. テスト ユーザーまたはデバイスを見つけて選択します。
 
@@ -134,7 +132,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > ![ポータル 4 Microsoft エンドポイント マネージャーのイメージ。](images/58dcd48811147feb4ddc17212b7fe840.png)
 
-3. [**プラットフォーム] で、[Windows 10]** と [後で] 、[プロファイル - エンドポイントの検出と応答] >選択します。
+3. [**プラットフォーム] で、[Windows 10] と [後で] 、[プロファイル - エンドポイント** の検出と応答] >選択します。
 
 4. 名前と説明を入力し、[次へ] を  **選択します**。
 
@@ -144,10 +142,10 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 5. 必要に応じて設定を選択し、[次へ] を  **選択します**。
 
     > [!div class="mx-imgBorder"]
-    > ![ポータル 6 Microsoft エンドポイント マネージャーのイメージ。](images/cea7e288b5d42a9baf1aef0754ade910.png)
+    > ![ポータル 6 Microsoft エンドポイント マネージャーイメージ。](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
-    > この例では、Defender for Endpoint が Intune に既に統合済みであるとして、これは自動的に設定されています。 統合の詳細については [、「Enable Microsoft Defender for Endpoint in Intune」を参照してください](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)。
+    > この例では、Defender for Endpoint が Intune に既に統合済みであるとして、これは自動的に設定されています。 統合の詳細については、「 [Enable Microsoft Defender for Endpoint in Intune」を参照してください](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)。
     >
     > 次の図は、Microsoft Defender for Endpoint が Intune と統合されていない場合に表示される例です。
     >
@@ -158,7 +156,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > ![ポータル 8 Microsoft エンドポイント マネージャーイメージ。](images/ef844f52ec2c0d737ce793f68b5e8408.png)
 
-7. [含めるグループを選択して **グループを選択** する] をクリックしてテスト グループを追加し、[次へ] を  **選択します**。
+7. [含めるグループの選択] をクリックしてテスト グループを追加 **し** 、グループを選択し、[次へ] を選択  **します**。
 
     > [!div class="mx-imgBorder"]
     > ![ポータル 9 Microsoft エンドポイント マネージャーのイメージ。](images/fc3525e20752da026ec9f46ab4fec64f.png)
@@ -166,7 +164,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 8. 確認して承諾し、[作成] を  **選択します**。
 
     > [!div class="mx-imgBorder"]
-    > ![ポータル 10 Microsoft エンドポイント マネージャーのイメージ。](images/289172dbd7bd34d55d24810d9d4d8158.png)
+    > ![ポータル 10 Microsoft エンドポイント マネージャーイメージ。](images/289172dbd7bd34d55d24810d9d4d8158.png)
 
 9. 完了したポリシーを表示できます。
 
@@ -177,22 +175,22 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 1. MEM ポータルを開きます。
 
-2. [ウイルス対策の **作成] >エンドポイント >に移動します**。
+2. [ポリシーの **作成] > [>エンドポイント セキュリティ] に移動します**。
 
     > [!div class="mx-imgBorder"]
     > ![ポータル 12 Microsoft エンドポイント マネージャーイメージ。](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. [**プラットフォーム] - [Windows 10] と [後] - [Windows] と [プロファイル] を選択Microsoft Defender ウイルス対策 >作成します**。
+3. [**プラットフォーム] - [Windows 10後] - [Windowsプロファイル] - [作成] Microsoft Defender ウイルス対策 >します**。
 
 4. 名前と説明を入力し、[次へ] を  **選択します**。
 
     > [!div class="mx-imgBorder"]
-    > ![ポータル 13 Microsoft エンドポイント マネージャーイメージ。](images/a7d738dd4509d65407b7d12beaa3e917.png)
+    > ![ポータル 13 Microsoft エンドポイント マネージャーのイメージ。](images/a7d738dd4509d65407b7d12beaa3e917.png)
 
-5. [構成 **設定] ページ**: [クラウド保護] (クラウド保護、除外、Microsoft Defender ウイルス対策保護、修復) に必要Real-Time設定します。
+5. [構成 **設定] ページ** で、 [クラウド保護] (クラウド保護、除外、Microsoft Defender ウイルス対策保護、修復) に必要Real-Time構成を設定します。
 
     > [!div class="mx-imgBorder"]
-    > ![ポータル 14 Microsoft エンドポイント マネージャーイメージ。](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
+    > ![ポータル 14 Microsoft エンドポイント マネージャーのイメージ。](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
 
 6. 必要に応じてスコープ タグを追加し、[次へ] を  **選択します**。
 
@@ -207,22 +205,22 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 8. 確認して作成し、[作成] を  **選択します**。
 
     > [!div class="mx-imgBorder"]
-    > ![ポータル 17 Microsoft エンドポイント マネージャーのイメージ。](images/dfdadab79112d61bd3693d957084b0ec.png)
+    > ![ポータル 17 Microsoft エンドポイント マネージャーイメージ。](images/dfdadab79112d61bd3693d957084b0ec.png)
 
 9. 作成した構成ポリシーが表示されます。
 
     > [!div class="mx-imgBorder"]
-    > ![ポータル 18 Microsoft エンドポイント マネージャーのイメージ。](images/38180219e632d6e4ec7bd25a46398da8.png)
+    > ![ポータル 18 Microsoft エンドポイント マネージャーイメージ。](images/38180219e632d6e4ec7bd25a46398da8.png)
 
 ### <a name="attack-surface-reduction---attack-surface-reduction-rules"></a>攻撃表面の縮小 - 攻撃表面の縮小ルール
 
 1. MEM ポータルを開きます。
 
-2. [エンドポイント セキュリティ **] に移動>攻撃の表面を縮小します**。
+2. [エンドポイント のセキュリティ **と攻撃>] に移動します**。
 
 3. [ポリシー  **の作成] を選択します**。
 
-4. [**プラットフォーム] - [Windows 10] と [後から] - [プロファイル] - [攻撃表面** の縮小ルール] を選択>作成します。
+4. [**プラットフォーム] - [Windows 10] と [後から] - [プロファイル] - [攻撃表面** の縮小ルール] >選択します。
 
     > [!div class="mx-imgBorder"]
     > ![ポータル 19 Microsoft エンドポイント マネージャーのイメージ。](images/522d9bb4288dc9c1a957392b51384fdd.png)
@@ -232,7 +230,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > ![ポータル 20 Microsoft エンドポイント マネージャーのイメージ。](images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png)
 
-6. [構成設定 **] ページ** で、攻撃表面の縮小ルールに必要な構成を設定し、[次へ] を  **選択します**。
+6. [構成 **設定] ページ** で、攻撃表面の縮小ルールに必要な構成を設定し、[次へ] を選択  **します**。
 
     > [!NOTE]
     > すべての攻撃表面縮小ルールを監査に構成します。
@@ -247,10 +245,10 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > ![ポータル 22 Microsoft エンドポイント マネージャーイメージ。](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
 
-8. テスト グループに含めるグループと割り当てるグループを選択し、[次へ] を  **選択します**。
+8. 含めるグループを選択し、テスト グループに割り当て、[次へ] を  **選択します**。
 
     > [!div class="mx-imgBorder"]
-    > ![ポータル 23 Microsoft エンドポイント マネージャーのイメージ。](images/45cefc8e4e474321b4d47b4626346597.png)
+    > ![ポータル 23 Microsoft エンドポイント マネージャーイメージ。](images/45cefc8e4e474321b4d47b4626346597.png)
 
 9. 詳細を確認し、[作成] を  **選択します**。
 
@@ -266,11 +264,11 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 1. MEM ポータルを開きます。
 
-2. [エンドポイント セキュリティ **] に移動>攻撃の表面を縮小します**。
+2. [エンドポイント のセキュリティ **と攻撃>] に移動します**。
 
 3. [ポリシー  **の作成] を選択します**。
 
-4. [作成 **Windows 10後 - Web 保護] を選択>作成します**。
+4. [Windows 10 **] と [後で- Web 保護] を選択>作成します**。
 
     > [!div class="mx-imgBorder"]
     > ![ポータル 26 Microsoft エンドポイント マネージャーイメージ。](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
@@ -280,27 +278,27 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > ![ポータル 27 Microsoft エンドポイント マネージャーイメージ。](images/5be573a60cd4fa56a86a6668b62dd808.png)
 
-6. [構成 **設定] ページで**、Web 保護に必要な構成を設定し、[次へ] を  **選択します**。
+6. [構成 **設定] ページ** で、Web Protection に必要な構成を設定し、[次へ] を選択  **します**。
 
     > [!NOTE]
     > Web Protection をブロックに構成しています。
     >
-    > 詳細については [、「Web Protection」を参照してください](web-protection-overview.md)。
+    > 詳細については、「 [Web Protection」を参照してください](web-protection-overview.md)。
 
     > [!div class="mx-imgBorder"]
     > ![ポータル 28 Microsoft エンドポイント マネージャーイメージ。](images/6104aa33a56fab750cf30ecabef9f5b6.png)
 
-7. [次 **へ] で必要に応じてスコープ タグ>追加します**。
+7. [次 **へ] で必要に応じてスコープ タグ>します**。
 
     > [!div class="mx-imgBorder"]
-    > ![ポータル 29 Microsoft エンドポイント マネージャーイメージ。](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
+    > ![ポータル 29 Microsoft エンドポイント マネージャーのイメージ。](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
 
 8. [テスト **グループに割り当てる] を選択し、[次>します**。
 
     > [!div class="mx-imgBorder"]
     > ![ポータル 30 Microsoft エンドポイント マネージャーのイメージ。](images/45cefc8e4e474321b4d47b4626346597.png)
 
-9. [レビュー **と作成] を選択>作成します**。
+9. [レビュー **] と [作成] >選択します**。
 
     > [!div class="mx-imgBorder"]
     > ![ポータル 31 Microsoft エンドポイント マネージャーのイメージ。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
@@ -316,7 +314,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 構成ポリシーが割り当てられると、適用に時間がかかる場合があります。
 
-タイミングの詳細については、「Intune 構成情報 [」を参照してください](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
+タイミングの詳細については、「 [Intune 構成情報」を参照してください](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
 
 構成ポリシーがテスト デバイスに適用されたと確認するには、構成ポリシーごとに次のプロセスに従います。
 
@@ -346,7 +344,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > このビューは、別のポリシーと競合する設定を識別するのに非常に便利です。
 
     > [!div class="mx-imgBorder"]
-    > [![ポータル 37 Microsoft エンドポイント マネージャーイメージ。](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
+    > [![ポータル 37 Microsoft エンドポイント マネージャーのイメージ。](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
 ### <a name="confirm-endpoint-detection-and-response"></a>エンドポイントの検出と応答の確認
 
@@ -355,15 +353,15 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > [![サービス パネル 1 のイメージ。](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
-2. 構成を適用した後、Defender for Endpoint Protectionサービスを開始する必要があります。
+2. 構成が適用された後、Defender for Endpoint Protectionサービスを開始する必要があります。
 
     > [!div class="mx-imgBorder"]
     > [![[サービスのイメージ] パネル 2。](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. サービスがデバイスで実行された後、デバイスはデバイスにMicrosoft Defender セキュリティ センター。
+3. サービスがデバイスで実行された後、デバイスはポータルにMicrosoft 365 Defenderされます。
 
     > [!div class="mx-imgBorder"]
-    > [![画像のMicrosoft Defender セキュリティ センター。](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![ポータルのMicrosoft 365 Defender。](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
 ### <a name="confirm-next-generation-protection"></a>次世代の保護を確認する
 
@@ -382,7 +380,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 ### <a name="confirm-attack-surface-reduction---attack-surface-reduction-rules"></a>攻撃表面の縮小を確認する - 攻撃表面の縮小ルール
 
-1. テスト デバイスにポリシーを適用する前に、PowerShell ウィンドウをペンで入力します `Get-MpPreference` 。
+1. テスト デバイスにポリシーを適用する前に、PowerShell ウィンドウをペンで入力します `Get-MpPreference`。
 
 2. これは、コンテンツを含めずに次の行で応答する必要があります。
 
@@ -394,7 +392,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
     ![コマンド ライン 1 のイメージ。](images/cb0260d4b2636814e37eee427211fe71.png)
 
-3. テスト デバイスにポリシーを適用した後、PowerShell ファイルを開きWindows入力します `Get-MpPreference` 。
+3. テスト デバイスにポリシーを適用した後、PowerShell ファイルを開きWindows入力します`Get-MpPreference`。
 
 4. これは、次に示すように、コンテンツを含む次の行で応答する必要があります。
 
@@ -402,13 +400,13 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 ### <a name="confirm-attack-surface-reduction---web-protection"></a>攻撃表面の縮小を確認する - Web 保護
 
-1. テスト デバイスで、PowerShell ファイルを開きWindows入力します `(Get-MpPreference).EnableNetworkProtection` 。
+1. テスト デバイスで、PowerShell ファイルを開きWindows入力します`(Get-MpPreference).EnableNetworkProtection`。
 
 2. これは、次に示すように 0 で応答する必要があります。
 
     ![コマンド ライン 3 のイメージ。](images/196a8e194ac99d84221f405d0f684f8c.png)
 
-3. ポリシーを適用した後、PowerShell ファイルを開Windows入力します `(Get-MpPreference).EnableNetworkProtection` 。
+3. ポリシーを適用した後、PowerShell ファイルを開Windows入力します`(Get-MpPreference).EnableNetworkProtection`。
 
 4. これは、次に示すように 1 で応答する必要があります。
 

@@ -9,23 +9,23 @@ manager: dougeby
 ms.topic: article
 ms.custom: intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 43ab54fbc80dcb0ad09d90f55178c0a9ae9eb1d9
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: aa6ee44820d0c49fa60696e3647752f28cd10c21
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035536"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315429"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの使用を開始する
 
-登録の準備ができたので、[Microsoft エンドポイント マネージャー](https://endpoint.microsoft.com/) を開き、**[テナント管理]** に移動します。 **[Microsoft マネージド デスクトップ]** サブセクションで **[テナントの登録]** を選択し、ウィザードに従ってテナントを Microsoft マネージド デスクトップ に登録します。
+登録する準備が整ったので、[テナントの管理] [Microsoft エンドポイント マネージャーを](https://endpoint.microsoft.com/)**開きます**。 [ **Microsoft Managed** Desktop] サブセクション **で [テナントの登録]** を選択します。 次に、指示に従ってテナントを Microsoft Managed Desktop に登録します。
 
 > [!NOTE]
 > 登録を完了するには、グローバル管理者としてログインする必要があります。 詳細については、[[管理ポータルへのアクセス]](access-admin-portal.md) を参照してください。
 
 登録が完了したら、以下の手順に従ってサービスを構成します。 この順番に従うことをお勧めしますが、必須ではありません。
 
-![この記事に記載されている、開始する手順の推奨されるシーケンス。](../../media/mmd-getstarted-sequence.png) 
+![この記事に記載されている、開始する手順の推奨されるシーケンス。](../../media/mmd-getstarted-sequence.png)
 
 1. [管理ポータル](access-admin-portal.md)にアクセスします。
 1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)。
@@ -33,7 +33,7 @@ ms.locfileid: "62035536"
 1. [Intune ポータル サイト](company-portal.md)を展開して割り当てます。
 1. [ライセンスを割り当てる](assign-licenses.md)。
 1. [アプリを展開する](deploy-apps.md)。
-1. [デバイスをセットアップする](set-up-devices.md)。
+1. [デバイスを準備します](prepare-devices.md)。
 1. [Autopilot と登録ステータス ページの初回実行時エクスペリエンス](esp-first-run.md)のセットアップ。
 1. [ユーザー サポート機能を有効にする](enable-support.md)。
 1. [ユーザーがデバイスを使えるようにする](get-started-devices.md)。

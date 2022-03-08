@@ -11,19 +11,17 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3f59b381e74dee32a438722b09044570bf8d870e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3fe3139f12b863b54d336e52939ffbb3057df6b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165824"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316003"
 ---
-# <a name="event-timeline---threat-and-vulnerability-management"></a>イベントタイムライン - 脅威と脆弱性の管理
+# <a name="event-timeline---threat-and-vulnerability-management"></a>イベント タイムライン - 脅威と脆弱性の管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,14 +34,14 @@ ms.locfileid: "61165824"
 
 イベントタイムラインは、新しい脆弱性や悪用を通じて組織にリスクがどのように導入されるのかを解釈するのに役立つリスクニュースフィードです。 組織のリスクに影響を与える可能性があるイベントを表示できます。 たとえば、導入された新しい脆弱性、悪用可能になった脆弱性、エクスプロイト キットに追加された悪用などがあります。
 
-イベント タイムラインには、露出スコアと[](tvm-exposure-score.md)Microsoft [Secure Score for Devices](tvm-microsoft-secure-score-devices.md)のストーリーも示され、大きな変更の原因を特定できます。 イベントは、デバイスまたはデバイスのスコアに影響を与える可能性があります。 優先順位付けされたセキュリティ推奨事項に基づいて修復する必要があるものに対処することで、露出 [を減らします](tvm-security-recommendation.md)。
+イベント タイムラインには、露出スコアと [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md) のストーリーも示され、大きな変更の原因を特定できます。[](tvm-exposure-score.md) イベントは、デバイスまたはデバイスのスコアに影響を与える可能性があります。 優先順位付けされたセキュリティ推奨事項に基づいて修復する必要があるものに対処することで、露出 [を減らします](tvm-security-recommendation.md)。
 
 > [!TIP]
-> 新しい脆弱性イベントに関する電子メールを取得するには [、「Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
+> 新しい脆弱性イベントに関する電子メールを取得するには、「 [Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-event-timeline-page"></a>[イベント タイムライン] ページに移動する
 
-また、ダッシュボードから 3 つの[脅威と脆弱性の管理があります](tvm-dashboard-insights.md)。
+また、ダッシュボードには、次の 3 [つの脅威と脆弱性の管理があります](tvm-dashboard-insights.md)。
 
 - **組織の露出スコア カード**: [時間の間の露出スコア] グラフのイベント ドットにカーソルを合わせると、[この日のすべてのイベントを表示する] を選択します。 このイベントは、ソフトウェアの脆弱性を表します。
 - **デバイスの Microsoft Secure Score**: [デバイスの時間のスコア] グラフのイベント ドットにカーソルを合わせると、[この日のすべてのイベントを表示する] を選択します。 イベントは、新しい構成評価を表します。
@@ -55,8 +53,8 @@ ms.locfileid: "61165824"
 
 デバイスやデバイスのスコアに影響するイベントがない場合は、何も表示されません。
 
-![露出スコアホバー ](images/tvm-event-timeline-exposure-score350.png) 
- ![Microsoft Secure Score for Devices ホバー。](images/tvm-event-timeline-device-hover360.png)
+![露出スコアホバー](images/tvm-event-timeline-exposure-score350.png) 
+![Microsoft Secure Score for Devices ホバー。](images/tvm-event-timeline-device-hover360.png)
 
 ### <a name="drill-down-to-events-from-that-day"></a>その日のイベントにドリルダウンする
 
@@ -87,9 +85,9 @@ ms.locfileid: "61165824"
 - **日付**: 月、日、年
 - **イベント**: 影響を受けのあるイベント (コンポーネント、種類、影響を受け取ったデバイスの数を含む)
 - **関連コンポーネント**: ソフトウェア
-- **もともと影響を受け取** ったデバイス : このイベントが最初に発生した場合の、影響を受け取ったデバイスの数と割合です。 また、最初に影響を受け取ったデバイスの割合を、デバイスの総数からフィルター処理することもできます。
-- **現在影響を受けるデバイス**: このイベントが現在影響しているデバイスの現在の数と割合。 [列のカスタマイズ] を選択すると、このフィールド **を検索できます**。
-- **種類**: スコアに影響を与えるタイムスタンプ付きイベントを反映します。 フィルター処理できます。
+- **最初に影響を受** け取ったデバイス: このイベントが最初に発生した場合の、影響を受け取ったデバイスの数と割合。 また、最初に影響を受け取ったデバイスの割合を、デバイスの総数からフィルター処理することもできます。
+- **現在影響を受けるデバイス**: このイベントが現在影響を受けるデバイスの現在の数と割合。 [列のカスタマイズ] を選択すると、このフィールド **を検索できます**。
+- **型**: スコアに影響を与えるタイムスタンプ付きイベントを反映します。 フィルター処理できます。
   - エクスプロイト キットに追加されたエクスプロイト
   - エクスプロイトが検証されました
   - 新しいパブリックエクスプロイト
@@ -114,11 +112,11 @@ ms.locfileid: "61165824"
 
 ![イベント タイムラインの飛び出し。](images/tvm-event-timeline-flyout500.png)
 
-そこから、[関連する **セキュリティの推奨事項** に移動] を選択し、[セキュリティの推奨事項] ページで、新しいソフトウェアの脆弱性に関する推奨事項 [を表示します](tvm-security-recommendation.md)。 セキュリティ推奨事項の説明と脆弱性の詳細を確認した後、修復要求を送信し、修復ページで要求を [追跡できます](tvm-remediation.md)。
+そこから、[関連する **セキュリティの推奨事項に移動]** を選択し、[セキュリティの推奨事項] ページで、新しいソフトウェアの脆弱性に関する推奨事項 [を表示します](tvm-security-recommendation.md)。 セキュリティ推奨事項の説明と脆弱性の詳細を確認した後、修復要求を送信し、修復ページで要求を [追跡できます](tvm-remediation.md)。
 
 ## <a name="view-event-timelines-in-software-pages"></a>ソフトウェア ページでイベントのタイムラインを表示する
 
-ソフトウェア ページを開く場合は、イベント > を選択し、フライアウトの 「関連コンポーネント」というセクションでハイパーリンクされたソフトウェア名 (Visual Studio 2017 など) を選択します。 [ソフトウェア ページの詳細](tvm-software-inventory.md#software-pages)
+ソフトウェア ページを開く場合は、イベント > を選択し、フライアウトの "関連コンポーネント" というセクションでハイパーリンクされたソフトウェア名 (Visual Studio 2017 など) を選択します。 [ソフトウェア ページの詳細](tvm-software-inventory.md#software-pages)
 
 特定のソフトウェアのすべての詳細が表示された完全なページが表示されます。 グラフの上にマウスを移動すると、その特定のソフトウェアのイベントのタイムラインが表示されます。
 
@@ -128,7 +126,7 @@ ms.locfileid: "61165824"
 
 ![[イベント タイムライン] タブを含むソフトウェア ページ。](images/tvm-event-timeline-software-pages.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

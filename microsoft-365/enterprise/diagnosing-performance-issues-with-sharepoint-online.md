@@ -18,19 +18,19 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
-description: この記事では、開発者ツールを使用してオンライン サイトで一般的なSharePointを診断Internet Explorer示します。
-ms.openlocfilehash: acd5fc05f933e5d47b5bb14c2d3317ea3a6e0186
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+description: この記事では、開発者向けツールを使用して、オンライン サイトSharePoint問題を診断Internet Explorer示します。
+ms.openlocfilehash: a3ad33b147a20cd5b072f7f3ccc1b9272a58ef54
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128738"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321503"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>SharePoint Online のパフォーマンスの問題の診断
 
-この記事では、開発者ツールを使用してオンライン サイトで一般的なSharePointを診断Internet Explorer示します。
+この記事では、開発者向けツールを使用して、オンライン サイトSharePoint問題を診断Internet Explorer示します。
   
-オンライン サイト上のページにカスタマイズのパフォーマンス上の問題SharePoint 4 つの異なる方法があります。
+オンライン サイト上のページにカスタマイズのパフォーマンス上の問題があるSharePoint 4 つの異なる方法があります。
 
 - サイトとページのパフォーマンス診断
   
@@ -40,14 +40,17 @@ ms.locfileid: "61128738"
 
 - SharePoint応答ヘッダーの指標
 
-このトピックでは、これらの各メソッドを使用してパフォーマンスの問題を診断する方法について説明します。 問題の原因を把握したら、見つけ出すパフォーマンスの向上に関する記事をSharePointソリューションに取り組む必要があります https://aka.ms/tune 。  
+このトピックでは、これらの各メソッドを使用してパフォーマンスの問題を診断する方法について説明します。 問題の原因を把握したら、次に示すパフォーマンスの向上に関する記事をSharePointソリューションに取り組む必要がありますhttps://aka.ms/tune。  
 
-## <a name="use-the-site-and-page-performance-diagnostic-from-the-microsoft-365-admin-center"></a>サイトとページのパフォーマンス診断を使用する (Microsoft 365 管理 センター)
+## <a name="use-the-site-and-page-performance-diagnostic-from-the-microsoft-365-admin-center"></a>サイトとページのパフォーマンス診断を使用するには、Microsoft 365 管理 センター
 
 > [!NOTE]
-> 管理者で、SharePoint でパフォーマンスに問題がある場合は、[テストの実行] を選択して、Microsoft 365 管理 センターの [サイトとページパフォーマンスの診断] を設定します。  これらのテストでは、構成を確認し、テナントのパフォーマンス向上に役立つSharePoint手順をすばやくお勧めします。
+> 管理者で、SharePoint でパフォーマンスに問題がある場合は、[テストの実行] を選択して、Microsoft 365 管理 センターで [サイトとページパフォーマンスの診断] を設定します。 これらのテストでは、構成を確認し、テナントのパフォーマンス向上に役立つSharePoint手順をすばやくお勧めします。
 >> [!div class="nextstepaction"]
 >> [テストの実行: パフォーマンスSharePointする](https://aka.ms/PillarSiteandPagePerf)
+
+> [!NOTE] 
+> この機能は、21Vianet によってMicrosoft 365、Microsoft 365、ドイツではMicrosoft 365できません。
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>F12 ツール バーを使用してオンラインでのパフォーマンスをSharePointする
 <a name="F12ToolInfo"> </a>
@@ -58,7 +61,7 @@ ms.locfileid: "61128738"
 
 - [F12 開発者ツールの使用](/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v=vs.85))
 
-開発者ツールを表示するには **、F12** キーを押し、次のアイコンWi-Fiクリックします。
+開発者ツールを表示するには、 **F12 キーを押し** 、次のアイコンWi-Fiクリックします。
   
 ![F12 開発者ツールの Wifi アイコンのスクリーンショット。](../media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
   
@@ -68,27 +71,27 @@ ms.locfileid: "61128738"
   
 また、このスクリーン ショットに示すように、右側にファイルのダウンロード時間を確認することもできます。
   
-![要求されたページを読み込むのに要する時間を示すSharePoint。](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
+![要求されたページを読み込むのに要する時間を示SharePoint。](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
   
 これにより、ファイルの読み込み時間が視覚的に表示されます。 緑の線は、ページをブラウザーでレンダリングする準備が整った状態を表します。 これにより、サイトのページ読み込み速度が遅くなる可能性があるさまざまなファイルを簡単に確認できます。
   
 ## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>オンライン用にカスタマイズされていないベースラインをSharePointする
 <a name="F12ToolInfo"> </a>
 
-サイトのパフォーマンスの弱点を特定する最善の方法は、オンラインで完全に使い切れたサイト コレクションをSharePointすることです。 この方法では、サイトのさまざまな側面と、ページ上のカスタマイズを行う必要がないものとを比較できます。 ホーム OneDrive for Businessは、カスタマイズを行う可能性が低い別のサイト コレクションの良い例です。
+サイトのパフォーマンスの弱点を特定する最善の方法は、オンラインで完全に使い切れたサイト コレクションをSharePointです。 この方法では、サイトのさまざまな側面と、ページ上のカスタマイズを行う必要がないものとを比較できます。 ホーム OneDrive for Businessは、カスタマイズを行う可能性が低い別のサイト コレクションの良い例です。
   
 ## <a name="viewing-sharepoint-response-header-information"></a>応答SharePoint情報の表示
 <a name="F12ToolInfo"> </a>
 
-[SharePointオンライン] では、各ファイルの応答ヘッダーでブラウザーに返される情報にアクセスできます。 パフォーマンスの問題を診断する最も有用な値は **SPRequestDuration** です。これは、要求が処理されるサーバーにかかった時間を表示します。 これは、要求が非常に重く、リソースが多いかどうかを判断するのに役立ちます。 これは、サーバーがページにサービスを提供するために実行している作業の量に関する最良の洞察です。
+[SharePoint] では、各ファイルの応答ヘッダーでブラウザーに返される情報にアクセスできます。 パフォーマンスの問題を診断する最も有用な値は **SPRequestDuration** です。これは、要求が処理されるサーバーにかかった時間を表示します。 これは、要求が非常に重く、リソースが多いかどうかを判断するのに役立ちます。 これは、サーバーがページにサービスを提供するために実行している作業の量に関する最良の洞察です。
 
 ### <a name="to-view-sharepoint-response-header-information"></a>応答ヘッダー SharePointを表示するには
   
-1. F12 ツールがインストールされていることを確認します。 これらのツールのダウンロードとインストールの詳細については [、「F12 ツールの新機能」を参照してください](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))。
+1. F12 ツールがインストールされていることを確認します。 これらのツールのダウンロードとインストールの詳細については、「 [F12 ツールの新機能」を参照してください](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))。
 
 2. F12 ツールの [ネットワーク] **タブで、** 緑色の再生ボタンを押してページを読み込む。
 
-3. ツールによって返される .aspx ファイルのいずれかをクリックし、[詳細] を **クリックします**。
+3. ツールによって返される .aspx ファイルのいずれかをクリックし、[詳細] をクリック **します**。
 
     ![応答ヘッダーの詳細を表示します。](../media/1f8a044a-caf8-4613-be2b-7e064141ac8a.png)
   
@@ -99,7 +102,7 @@ ms.locfileid: "61128738"
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>オンラインでのパフォーマンスの問題の原因SharePoint?
 <a name="F12ToolInfo"> </a>
 
-SharePoint [Online](navigation-options-for-sharepoint-online.md)のナビゲーション オプションの記事では、SPRequestDuration 値を使用して、複雑な構造ナビゲーションが原因でページがサーバー上で処理に長い時間がかかると判断する例を示します。 ベースライン サイトの値を取得することで (カスタマイズなし)、特定のファイルの読み込みに時間がかかっているかどうかを判断できます。 オンラインのナビゲーション オプションで[使用SharePointは](navigation-options-for-sharepoint-online.md)、メインの .aspx ファイルです。 このファイルには、ページの読み込み ASP.NET 実行されるコードのほとんどが含まれている。 使用するサイト テンプレートに応じて、ホーム ページをカスタマイズする場合は、start.aspx、home.aspx、default.aspx、または別の名前を使用できます。 この数がベースライン サイトよりかなり高い場合は、パフォーマンスの問題を引き起こしている複雑な問題がページに発生しているという良い兆候です。
+[SharePoint Online](navigation-options-for-sharepoint-online.md) のナビゲーション オプションの記事では、SPRequestDuration 値を使用して、複雑な構造ナビゲーションによってページがサーバー上で処理されるのに長い時間がかかると判断する例を示します。 ベースライン サイトの値を取得することで (カスタマイズなし)、特定のファイルの読み込みに時間がかかっているかどうかを判断できます。 オンラインのナビゲーション オプションで[使用SharePointは](navigation-options-for-sharepoint-online.md)、メインの .aspx ファイルです。 このファイルには、ページの読み込 ASP.NET 実行されるコードのほとんどが含まれている。 使用するサイト テンプレートに応じて、ホーム ページをカスタマイズする場合は、start.aspx、home.aspx、default.aspx、または別の名前を使用できます。 この数がベースライン サイトよりかなり高い場合は、パフォーマンスの問題を引き起こしている複雑な問題がページに発生しているという良い兆候です。
   
 サイト固有の問題を特定したら、パフォーマンスの低下の原因を把握するために推奨される方法は、ページのカスタマイズなど、考えられるすべての原因を排除し、それらをサイトに 1 つ 1 つ追加し戻すことです。 ページがうまく機能する十分なカスタマイズを削除したら、特定のカスタマイズを 1 つ 1 つ追加できます。
   

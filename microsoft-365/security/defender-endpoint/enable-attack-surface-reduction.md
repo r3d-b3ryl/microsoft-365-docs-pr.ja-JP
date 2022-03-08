@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.collection: m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: ec961261c798075e0e38b08a8c8952ca5c51b07b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9f5d721148bdbd70347868d8e237a8454b33c346
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766694"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312097"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -40,7 +40,7 @@ ms.locfileid: "62766694"
 
 複数のバージョンの攻撃表面Windows機能
 
-次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールをWindows。
+次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールを設定Windows。
 
 - Windows 10 Proバージョン [1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
 - Windows 10 Enterpriseバージョン [1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
@@ -68,10 +68,10 @@ ms.locfileid: "62766694"
 > [!IMPORTANT]
 > 現在、警告モードは、3 つの ASR ルール (MEM) で ASR ルールを構成するときにMicrosoft エンドポイント マネージャーサポートされていません。 詳細については、「警告モード [がサポートされていないケース」を参照してください](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
 
-microsoft [Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) で利用可能な高度な監視およびレポート機能を利用するには、Windows E5 ライセンス (または類似のライセンス SKU) で ASR ルールを使用することをお勧めします。 ただし、高度な監視機能やレポート機能を含む Windows Professional や Windows E3 などの別のライセンスがある場合は、ASR ルールがトリガーされる際に各エンドポイントで生成されるイベント (イベント転送など) の上に独自の監視およびレポート ツールを開発できます。
+Windows E5 ライセンス (または類似のライセンス SKU) で ASR ルールを使用して、[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) で利用できる高度な監視およびレポート機能を利用することをお勧めします。 ただし、高度な監視およびレポート機能を含む Windows Professional や Windows E3 などの別のライセンスがある場合は、ASR ルールがトリガーされる際に各エンドポイントで生成されるイベント (イベント転送など) の上に独自の監視およびレポート ツールを開発できます。
 
 > [!TIP]
-> ライセンスの詳細については、「Windowsライセンス」をWindows 10ボリューム ライセンス [](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) ガイドを参照[Windows 10。](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
+> ライセンスの詳細については、「Windows ライセンス」を参照しWindows 10[](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)ボリューム ライセンス ガイド[を](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)参照Windows 10。
 
 攻撃表面の縮小ルールは、次の方法で有効にできます。
 
@@ -81,7 +81,7 @@ microsoft [Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for 
 - [グループ ポリシー](#group-policy)
 - [PowerShell](#powershell)
 
-Enterprise、Intune などのレベルのMicrosoft エンドポイント マネージャーをお勧めします。 Enterpriseレベルの管理では、起動時に競合するグループ ポリシーまたは PowerShell 設定が上書きされます。
+Enterprise、Intune やアプリなどのMicrosoft エンドポイント マネージャーをお勧めします。 Enterpriseレベルの管理では、起動時に競合するグループ ポリシーまたは PowerShell 設定が上書きされます。
 
 ## <a name="exclude-files-and-folders-from-asr-rules"></a>ASR ルールからファイルとフォルダーを除外する
 
@@ -103,9 +103,9 @@ ASR ルールは、環境変数とワイルドカードをサポートします�
 
 2. MEM 管理デバイスの攻撃表面縮小ルールは、さまざまなポリシーからの設定の統合の動作をサポートし、デバイスごとにポリシーのスーパーセットを作成します。 競合していない設定だけがマージされ、競合している設定はルールのスーパーセットには追加されません。 以前は、1 つの設定に対して 2 つのポリシーに競合が含まれている場合、両方のポリシーが競合しているとしてフラグが設定され、どちらのプロファイルからの設定も展開されません。 攻撃表面の縮小ルールのマージ動作は次のとおりです。
    - 次のプロファイルからの攻撃表面の縮小ルールは、ルールが適用されるデバイスごとに評価されます。
-     - デバイス>構成ポリシー>エンドポイント保護プロファイル>  >  Microsoft Defender Exploit Guard[低下します](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules)。
-     - エンドポイント セキュリティ >**攻撃表面縮小ポリシーAttack** >  [surface reduction rules](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
-     - エンドポイント セキュリティ > Microsoft **Defender ATP BaselineAttack** surface Reduction ルール>基点 > [のセキュリティ 基準](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules)。
+     - デバイス>構成ポリシー>エンドポイント保護プロファイル> Microsoft Defender Exploit Guard  > [Attack Surface Reduction.](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules)
+     - エンドポイント セキュリティ > **攻撃表面の縮小ポリシー** > [攻撃表面の縮小ルール](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune)。
+     - エンドポイント のセキュリティ > Microsoft **Defender ATP** [BaselineAttack surface Reduction Rules](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) >のセキュリティ  >  ベースライン。
    - 設定しないポリシーは、デバイスのポリシーのスーパーセットに追加されます。
    - 複数のポリシーに競合する設定がある場合、競合する設定は結合ポリシーに追加されませんが、競合しない設定はデバイスに適用されるスーパーセット ポリシーに追加されます。
    - 競合する設定の構成だけが保持されます。
@@ -151,7 +151,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 ### <a name="mem"></a>MEM
 
-カスタム ASR ルールMicrosoft エンドポイント マネージャー(MEM) OMA-URI を使用して構成できます。 次の手順では、この例で「悪用された脆弱な署名済みドライバーの悪用を [ブロックする」](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) というルールを使用します。
+カスタム ASR Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して構成できます。 次の手順では、この例で「悪用された脆弱な署名済みドライバーの悪用を [ブロックする」](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) というルールを使用します。
 
 1. 新しいMicrosoft エンドポイント マネージャー (MEM) 管理センターを開きます。 [ホーム **] メニューの [** デバイス]  **をクリックし**、[構成プロファイル] **を選択** し、[プロファイルの作成] **をクリックします**。
 
@@ -162,6 +162,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
    - [**プラットフォーム] で**、[Windows 10 **以降] を選択します。**
    - [ **プロファイルの種類] で**、[ **テンプレート] を選択します。**
+   - ASR ルールがエンドポイント セキュリティによって既に設定されている場合は、[プロファイルの **種類] で**、[カタログ] **設定します**。
 
    [カスタム **] を** 選択し、[作成] を **選択します**。
 
@@ -219,7 +220,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    > [!div class="mx-imgBorder"]
    > ![MEM 適用性ルール。](images/mem07-5-applicability-rules.png)
 
-10. 次へ] を選択します。 手順 **6 [レビューと作成**] で、選択して入力した設定と情報を確認し、[作成] を選択 **します**。
+10. **[次へ]** を選択します。 手順 **6 [レビューと作成**] で、選択して入力した設定と情報を確認し、[作成] を選択 **します**。
 
     > [!div class="mx-imgBorder"]
     > ![MEM レビューと作成。](images/mem08-6-review-create.png)
@@ -264,7 +265,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. このMicrosoft Endpoint Configuration Manager、**Exploit** \> Guard の [アセットと **コンプライアンス]** \> Endpoint Protection Windows Defender **移動します**。
+1. このMicrosoft Endpoint Configuration Manager、**Exploit** \> Guard の [アセットと **コンプライアンス] Endpoint Protection Windows Defender** \> **移動します**。
 
 2. [ホーム **エクスプロイト** \> **ガード ポリシーの作成] を選択します**。
 
@@ -285,7 +286,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して、**攻撃Windows Microsoft Defender ウイルス対策** \>  \> **Microsoft Defender Exploit Guard** \> **を表示します**。
+3. ツリーを展開して **、WindowsのMicrosoft Defender ウイルス対策** \> **Microsoft Defender Exploit Guard** \>  \> **を表示します**。
 
 4. [攻撃 **表面縮小ルールの構成] を選択し、[** 有効] を **選択します**。 その後、[オプション] セクションで各ルールの個別の状態を設定できます。 [**Show....]** を選択し、[値名] 列にルール ID を入力し、[値] 列に選択した状態 **を** 次のように入力します。
 
@@ -311,7 +312,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 > [!div class="mx-imgBorder"]
 > ![ASR を有効にする "ユーザー定義"](images/asr-user-defined.png)
 
-1. [**powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
+1. [**powershell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
 
 2. 次のいずれかのコマンドレットを入力します。 (ルール ID [など、詳細については、「攻撃](attack-surface-reduction-rules-reference.md) 表面の縮小ルールリファレンス」を参照してください)。
 

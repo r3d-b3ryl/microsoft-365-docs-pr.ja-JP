@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e20b993d577f144e80c99479bac7bf70e484f785
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a32c8c91350218da619de18e0b1b398a93bf7fda
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168884"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312657"
 ---
 # <a name="resources"></a>リソース
 
@@ -77,7 +77,7 @@ ms.locfileid: "61168884"
 
 インストール中にエラーが発生した場合、インストーラーは一般的なエラーのみを報告します。
 
-詳細ログはに保存されます `/var/log/microsoft/mdatp/install.log` 。
+詳細ログはに保存されます `/var/log/microsoft/mdatp/install.log`。
 インストール中に問題が発生した場合は、このファイルを送信して、原因の診断に役立ちます。
 
 ## <a name="uninstall"></a>アンインストール
@@ -142,9 +142,9 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 |検疫の管理|検疫からすべてのファイルを削除する|`mdatp threat quarantine remove-all`|
 |検疫の管理|脅威として検出されたファイルを検疫に追加する|`mdatp threat quarantine add --id [threat-id]`|
 |検疫の管理|脅威として検出されたファイルを検疫から削除する|`mdatp threat quarantine remove --id [threat-id]`|
-|検疫の管理|検疫からファイルを復元する|`mdatp threat quarantine restore --id [threat-id]`|
+|検疫の管理|検疫からファイルを復元する|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
 |エンドポイントの検出と応答|早期プレビューの設定 (未使用)|`mdatp edr early-preview [enable|disable]`|
 |エンドポイントの検出と応答|group-id を設定する|`mdatp edr group-ids --group-id [group-id]`|
-|エンドポイントの検出と応答|タグの設定と削除、 `GROUP` サポートのみ|`mdatp edr tag set --name GROUP --value [tag]`|
+|エンドポイントの検出と応答|タグの設定と削除、サポート `GROUP` のみ|`mdatp edr tag set --name GROUP --value [tag]`|
 |エンドポイントの検出と応答|リストの除外 (ルート)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |

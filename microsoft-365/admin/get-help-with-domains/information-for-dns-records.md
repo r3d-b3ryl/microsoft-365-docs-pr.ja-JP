@@ -2,8 +2,8 @@
 title: DNS レコードを作成するために必要な情報を収集する
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: ドメインをサブスクリプションに接続するために DNS レコードを作成するために必要な値Microsoft 365します。
-ms.openlocfilehash: 81a1bd650e507e7f2c15a16cd5a048181ca6c816
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 672d57babb1b26e42b3fd24da8c9dc841223e41f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371126"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316801"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードを作成するために必要な情報を収集する
 
@@ -39,7 +39,7 @@ ms.locfileid: "61371126"
 
 ::: moniker range="o365-worldwide"
 
-1. [ドメイン] Microsoft 365 管理センター[ドメイン]**ページ設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">移動</a>します。
+1. [ドメイン] Microsoft 365 管理センター、[ドメイン] **ページ設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">移動</a>します。
 
 ::: moniker-end
 
@@ -53,9 +53,9 @@ ms.locfileid: "61371126"
     
 3. [ドメイン **検証] ページで** 、[ **ドメインの DNS** レコードに TXT レコードを追加する] を選択し、[続行] を **選択します**。
     
-4. 表示されている **TXT 値をコピー** します。 **MS=msXXXXXXXX は次のように見えます**。 
+4. 表示されている **TXT 値をコピー** します。 MS **=msXXXXXXXX は次のように見えます**。 
     
-5. [DNS レコード [の追加]](create-dns-records-at-any-dns-hosting-provider.md)に移動してドメインを接続し、DNS ホストの Web サイトでレコードを追加する手順に従います。
+5. [DNS [レコードの追加]](create-dns-records-at-any-dns-hosting-provider.md) に移動してドメインを接続し、DNS ホストの Web サイトでレコードを追加する手順に従います。
     
 6. DNS ホストで TXT レコード (または MX レコード) を作成する手順に従って、ドメインをドメインに戻Microsoft 365。
 
@@ -65,7 +65,7 @@ ms.locfileid: "61371126"
 
 ::: moniker range="o365-worldwide"
 
-1. [ドメイン] Microsoft 365 管理センター[ドメイン]**ページ設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">移動</a>します。
+1. [ドメイン] Microsoft 365 管理センター、[ドメイン] **ページ設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">移動</a>します。
 
 ::: moniker-end
 
@@ -77,13 +77,13 @@ ms.locfileid: "61371126"
     
 2. [ **ドメイン**] ページで、ドメインを選びます。
     
-3. [DNS **の管理]** を選択し、[その他 **のオプション]** 独自の DNS を追加し、[続行] を選択して追加する  >  DNS レコードを表示します。 
+3. [**DNS の管理]** を選択し、[**その他のオプション** > **] を選択して独自の DNS** を追加し、[続行] を選択して追加する DNS レコードを表示します。
     
     DNS ホストで変更を行う際もこの情報を使用できるように、値をコピーして貼り付けることができます。
     
     このページにリストされる DNS レコードのグループは、[ **ドメインの目的**] における選択によって変わります。
     
-4. [DNS レコード [の追加]](create-dns-records-at-any-dns-hosting-provider.md)に移動してドメインを接続し、DNS ホストの Web サイトでレコードを追加する手順に従います。
+4. [DNS [レコードの追加]](create-dns-records-at-any-dns-hosting-provider.md) に移動してドメインを接続し、DNS ホストの Web サイトでレコードを追加する手順に従います。
 
 5. 手順に従って、DNS ホストでレコードを作成します。
 

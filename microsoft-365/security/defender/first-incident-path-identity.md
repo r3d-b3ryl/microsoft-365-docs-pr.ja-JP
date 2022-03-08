@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4f15bf358d180e30ab34abff3105ba77edb6fa0d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 883c0480b5f8cb35abfe59458d35c8d1274b8493
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149837"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327537"
 ---
 # <a name="example-of-an-identity-based-attack"></a>ID ベースの攻撃の例
 
@@ -36,21 +36,21 @@ ms.locfileid: "60149837"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft Defender for Identity は、組織内の ID を侵害する悪意のある試みを検出するのに役立ちます。 Defender for Identity は Microsoft 365 Defender と統合されますので、セキュリティ アナリストは、Netlogon 特権昇格の疑いなど、Defender for Identity からの脅威を可視化できます。
+Microsoft Defender for Identity は、組織内の ID を侵害する悪意のある試みを検出するのに役立ちます。 Defender for Identity は Microsoft 365 Defender と統合され、セキュリティ アナリストは、Netlogon 特権昇格の疑いなど、Defender for Identity から入ってくる脅威を可視化できます。
 
 ## <a name="analyzing-the-attack-in-microsoft-defender-for-identity"></a>Microsoft Defender for Identity での攻撃の分析
 
-Microsoft 365 Defenderアナリストは、[インシデント] ページの [アラート] タブで検出ソースによってアラートをフィルター処理できます。 次の例では、検出ソースは Defender for **Identity にフィルター処理されます**。 
+Microsoft 365 Defender分析者は、[インシデント] ページの [アラート] タブで検出ソースによってアラートをフィルター処理できます。 次の例では、検出ソースは Defender for **Identity にフィルター処理されます**。 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Defender for Identity の検出ソースをフィルター処理する例。":::
 
-[疑わしいオーバーパス **-the ハッシュ** 攻撃] アラートを選択すると、詳細な情報を表示する Microsoft Cloud App Securityページに移動します。 [このアラートの種類の詳細] を選択して、攻撃の説明と修復の提案を読み[](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002)取り、アラートや攻撃の詳細をいつでも確認できます。
+[疑わしいオーバー **パス-the ハッシュ** 攻撃] アラートを選択すると、Microsoft Defender for Cloud Apps のページに移動し、詳細情報が表示されます。 [このアラートの種類の詳細] を選択して、攻撃の説明と修復の提案を読み取[](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002)り、アラートや攻撃の詳細をいつでも確認できます。
  
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="疑わしいオーバーパスのハッシュ攻撃アラートの例。"::: 
 
 ## <a name="investigating-the-same-attack-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender で同じ攻撃を調査する
 
-または、分析者は Defender for Endpoint を使用して、エンドポイントでのアクティビティの詳細を確認できます。 インシデント キューからインシデントを選択し、[アラート] タブ **を選択** します。ここから、検出ソースも識別できます。 [エンドポイントの検出と応答] EDR検出ソースは、Defender for Endpoint です。 ここから、アナリストはユーザーが検出したアラートをEDR。
+または、分析者は Defender for Endpoint を使用して、エンドポイントでのアクティビティの詳細を確認できます。 インシデント キューからインシデントを選択し、[アラート] タブ **を選択** します。ここから、検出ソースも識別できます。 検出ソースは、エンドポイントEDR検出と応答の略です。これは Defender for Endpoint です。 ここからアナリストは、ユーザーが検出したアラートをEDR。
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="Defender for Endpoint のエンドポイント検出と応答の例。"::: 
 
@@ -74,11 +74,11 @@ Windows Update 接続、Windows 信頼できるソフトウェアライセンス
 
 次の図では、アナリストがフィルター処理して、ネットワーク イベントとプロセス イベントのみを表示しました。 これにより、アナリストは、メモ帳が IP アドレスとの接続を確立したイベントを取り巻くネットワーク接続とプロセスを確認できます。これは、プロセス ツリーでも見ていました。 
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="悪意のある送信メモ帳接続を確立するために使用された方法の例。"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="悪意のある送信メモ帳接続を作成する方法の例を示します。"::: 
 
-この特定のイベントでは、悪意メモ帳送信接続を確立するために使用されたイベントです。 ただし、通常、攻撃者は iexplorer.exe を使用して悪意のあるペイロードをダウンロードする接続を確立します。通常、iexplorer.exeプロセスは通常の Web ブラウザーアクティビティと見なされます。
+この特定のイベントでは、悪意メモ帳送信接続を確立するために使用されたイベントです。 ただし、通常、攻撃者は通常、iexplorer.exe Web ブラウザーの通常の動作と見なiexplorer.exeを使用して悪意のあるペイロードをダウンロードする接続を確立します。
 
-タイムラインで探すもう 1 つの項目は、PowerShell が送信接続に使用する場合です。 アナリストは、悪意のあるファイルをホストする Web サイトへの送信接続などのコマンドを使用して、PowerShell 接続の成功 `IEX (New-Object Net.Webclient)` を探します。 
+タイムラインで探すもう 1 つの項目は、PowerShell が送信接続に使用する場合です。 アナリストは、悪意のあるファイルをホストする Web サイトへの送信接続などのコマンドを使用して、PowerShell `IEX (New-Object Net.Webclient)` 接続の成功を探します。 
 
 次の例では、PowerShell を使用して Web サイトから Mimikatz をダウンロードして実行しました。
 

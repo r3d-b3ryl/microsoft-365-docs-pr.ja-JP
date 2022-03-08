@@ -18,21 +18,21 @@ ms.custom:
 search.appverid:
 - MET150
 description: 異なる MDM メソッドと MAM メソッドの間で選択します。
-ms.openlocfilehash: 8048c532fc44ea14e391535f7f509a13c1e64d36
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0fa7389fc68523cf2db253c9e4e9f64cc85139a0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165546"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316451"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>デバイスとアプリ データを保護するためのオプション
 
 組織のデバイスとデータをビジネスおよび企業向けMicrosoft 365保護するには、いくつかの方法があります。 次のスタンドアロン プランを使用できます。
 
 - Intune (Microsoft エンドポイント管理の一部)
-- Azure Active Directory Premiumプラン。
-- Basic Mobility and Security (ビジネスおよびエンタープライズ プランのMicrosoft 365に含まれる)、または以前のスタンドアロン プランの一部またはすべてを含むサブスクリプションを使用します。
-
+- Azure Active Directory Premium計画。
+- Basic Mobility and Security (ビジネスおよびエンタープライズ プランのMicrosoft 365に含まれる) または以前のスタンドアロン プランの一部またはすべてを含むサブスクリプションを使用します。
+- Microsoft Defender for Business (Microsoft 365 Business Premiumに含まれます。スタンドアロン プランとしても利用できます)
 - 300 Microsoft 365 Business Premium以下の小規模ビジネス向けセキュリティと脅威の保護を含む、新しいサブスクリプション。
 - Microsoft 365 Enterprise高度なセキュリティと脅威の保護を含む計画を作成します。
 
@@ -42,17 +42,22 @@ ms.locfileid: "60165546"
 
     組織のセキュリティニーズがMicrosoft 365 Business BasicまたはMicrosoft 365 Business Standard場合は、Intune を購入することもできます。
  
-- **Microsoft Intune** は、一部のビジネスまたはエンタープライズ プランMicrosoft 365に含まれるスタンドアロン プランです。 Intune をスタンドアロンまたはサブスクリプションの一部として使用している場合は、デバイスとアプリ データ管理を微調整できます。 Intune の可用性の詳細については、「Microsoft 365 Intune の可用性」[を参照してください](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune)。
+- **Microsoft Intune** は、一部のビジネスプランまたはエンタープライズ プランMicrosoft 365含まれるスタンドアロン プランです。 Intune をスタンドアロンまたはサブスクリプションの一部として使用している場合は、デバイスとアプリ データ管理を微調整できます。 Intune の可用性の詳細については、「Microsoft 365 [Intune の可用性」を参照してください](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune)。
 
-    Microsoft Intune は、モバイル デバイス管理 (MDM) およびモバイル アプリケーション管理 (MAM) に重点を置いた、クラウドベースのサービスです。 携帯電話、タブレット、ラップトップなど、組織のデバイスの使用方法を制御します。 特定のポリシーを構成して、アプリケーションを制御できます。 詳細については、「ドキュメント」[をMicrosoft Intuneしてください](/mem/intune/)。
+    Microsoft Intune は、モバイル デバイス管理 (MDM) およびモバイル アプリケーション管理 (MAM) に重点を置いた、クラウドベースのサービスです。 携帯電話、タブレット、ラップトップなど、組織のデバイスの使用方法を制御します。 また、特定のポリシーを構成してアプリケーションを制御することもできます。 詳細については、「ドキュメント」[をMicrosoft Intuneしてください](/mem/intune/)。
 
-- **Azure Active Directory (AD) プレミアム** プランはスタンドアロン プランであり、ビジネスおよびエンタープライズ プランの一部Microsoft 365含むスタンドアロン プランです。 詳細については、「Azure AD価格 [」を参照してください](https://azure.microsoft.com/pricing/details/active-directory/)。
+- **Azure Active Directory (AD) プレミアム** プランはスタンドアロン プランであり、一部のMicrosoft 365企業向けプランも含むプランです。 詳細については、「価格設定[」をAzure ADしてください](https://azure.microsoft.com/pricing/details/active-directory/)。
 
-     Azure AD Premium P1とAzure AD Premium P2、条件付きアクセス機能、セルフサービス パスワードのリセットなどを設定できます。プランの機能の詳細については、「Azure プレミアム価格[」AD参照](https://azure.microsoft.com/pricing/details/active-directory/)してください。
-- **Microsoft 365 Business Premium** Intune と高度な脅威Azure Active Directory Premium P1とOffice 365が含まれます。 
+     Azure AD Premium P1とAzure AD Premium P2、条件付きアクセス機能、セルフサービス パスワードのリセットなどを設定できます。プランの機能の詳細については、「プレミアム価格[」Azure AD参照](https://azure.microsoft.com/pricing/details/active-directory/)してください。
+
+- **Microsoft 365 Business Premium** には、Intune と Azure Active Directory Premium P1、Microsoft Defender for Office 365プラン 1、Microsoft Defender for Business が含まれます。 
  
-    Microsoft 365 Business Premiumデバイスとアプリ データをセキュリティ保護するための一連のポリシー テンプレートを提供します。 これは、300 ユーザー以下のほとんどの企業に対して、優れたレベルのセキュリティと脅威の保護を提供します。 詳細については、「セットアップ ウィザード[のMicrosoft 365 Business Premium](../../business/set-up.md)セットアップ」、コンピューター Windows 10セキュリティと[](../../business/secure-win-10-pcs.md)コンプライアンスMicrosoft 365 Business Premium[を参照してください](/security-and-compliance/security-your-business-data.md)。
+    Microsoft 365 Business Premiumデバイスとアプリ データをセキュリティ保護するための一連のポリシー テンプレートを提供します。 これは、300 ユーザー以下のほとんどの企業に対して、優れたレベルのセキュリティと脅威の保護を提供します。 詳細については、「Microsoft Defender [for Business Microsoft 365 Business Premium概要](../../business-premium/index.md)」[を参照してください](../../security/defender-business/mdb-overview.md)。
 
-- **Microsoft 365サブスクリプションの** 場合、Microsoft Intune E5 には Azure ADプレミアム プラン 1 と 2 も含まれます。
+- **Microsoft 365サブスクリプションの** 場合、Microsoft Intune E5 にはプレミアム プラン 1 と 2 Azure ADも含まれます。
 
-    Microsoft 365 E5は、すべてのサブスクリプションの最高レベルのセキュリティと脅威Microsoft 365提供します。 詳細については、「エンタープライズの概要Microsoft 365[を参照してください](../../enterprise/microsoft-365-overview.md)。
+    Microsoft 365 E5は、すべてのサブスクリプションの最高レベルのセキュリティと脅威Microsoft 365提供します。 詳細については、「エンタープライズの概要Microsoft 365[」を参照してください](../../enterprise/microsoft-365-overview.md)。
+
+## <a name="see-also"></a>関連項目
+
+[ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法](../security-and-compliance/secure-your-business-data.md)

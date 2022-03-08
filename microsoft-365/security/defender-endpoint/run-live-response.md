@@ -14,18 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e8146a5e73cb056f6e22ec975f909c281d0890a
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: e81c235105a7c7479a917c7cb7cc404e2553f2f1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300960"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323515"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>デバイスでライブ応答コマンドを実行する
 
@@ -88,7 +86,7 @@ ms.locfileid: "61300960"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可を選択する方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
@@ -229,7 +227,7 @@ HTTP/1.1 200 Ok
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [コンピューター アクション API の取得](get-machineaction-object.md)
 - [ライブ応答結果の取得](get-live-response-result.md)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)
+title: Microsoft Defender for Business での脅威への対応と軽減
 description: 脅威が検出されると、これらの脅威に対応して軽減するためのアクションを実行できます。
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,21 +17,21 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 85c6262a03541b2aa0f79c69e60d9ebaec71bbe8
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 50a759c4f84aee72b376ff9126c54d381f4a373f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520525"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327785"
 ---
-# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)
+# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Microsoft Defender for Business での脅威への対応と軽減
 
 > [!IMPORTANT]
-> Microsoft Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐[](https://aka.ms/mdb-preview)々にロールアウトされます。 今後数週間以内に最初の一連の顧客とパートナーをオンボードし、一般提供に至るプレビューを拡大します。 プレビューは最初の一連 [のシナリオで](mdb-tutorials.md#try-these-preview-scenarios)起動し、定期的に機能を追加します。
+> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
-このMicrosoft 365 Defenderを使用すると、セキュリティ チームは検出された脅威に対応し、軽減できます。 この記事では、Defender for Business (プレビュー) を使用する方法の例について説明します。
+このMicrosoft 365 Defenderを使用すると、セキュリティ チームは検出された脅威に対応し、軽減できます。 この記事では、Defender for Business を使用する方法の例について説明します。
 
 >
 > **少し時間ありますか?**
@@ -60,12 +60,12 @@ ms.locfileid: "62520525"
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="選択したデバイスで使用可能なアクションのスクリーンショット":::
 
-6. 使用可能なアクションを選択します。 たとえば、[ウイルス対策スキャンの **実行**] を選択すると、Microsoft Defender ウイルス対策クイック スキャンが開始されます。 または、[自動調査の **開始] を選択** して、デバイスで自動調査をトリガーすることもできます。
+6. 使用可能なアクションを選択します。 たとえば、[ウイルス対策スキャンの **実行**] を選択すると、デバイスMicrosoft Defender ウイルス対策スキャンが開始されます。 または、[自動調査の **開始] を選択** して、デバイスで自動調査をトリガーすることもできます。
 
 ## <a name="next-steps"></a>次の手順
 
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)
 
-- [Microsoft Defender for Business でデバイスを管理する (プレビュー)](mdb-manage-devices.md)
+- [Microsoft Defender for Business でデバイスを管理する](mdb-manage-devices.md)
 
-- [Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)](mdb-view-manage-incidents.md)
+- [Microsoft Defender for Business でのインシデントの表示と管理](mdb-view-manage-incidents.md)

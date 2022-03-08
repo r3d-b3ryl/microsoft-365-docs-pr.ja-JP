@@ -1,18 +1,23 @@
 ---
 title: ユーザーがデバイスを使えるようにする
 description: ユーザーがデバイスを使用する準備を整えるのに役立つ情報
-keywords: 'Microsoft Managed Desktop, device, get started, Microsoft 365'
+keywords: Microsoft Managed Desktop, device, get started, Microsoft 365
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.openlocfilehash: 02bcb482de675e94c9b7c4f8eec80aae2f943ebe
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323137"
 ---
-
 # <a name="get-your-users-ready-to-use-devices"></a>ユーザーがデバイスを使えるようにする
 
 Microsoft Managed Desktop デバイスがユーザーの手に入った後、開始は迅速かつ簡単です。 デバイスは、現在のバージョンの Windows構成で事前構成され、ユーザーがセットアップを完了するとアプリがクラウドからインストールされます。
@@ -46,7 +51,7 @@ Microsoft [Managed Desktop -](https://github.com/MicrosoftDocs/microsoft-365-doc
 1. [Intune ポータル サイト](company-portal.md)を展開して割り当てます。
 1. [ライセンスを割り当てる](assign-licenses.md)。
 1. [アプリを展開する](deploy-apps.md)。
-1. [デバイスをセットアップする](set-up-devices.md)。
+1. [デバイスを準備します](prepare-devices.md)。
 1. [Autopilot と登録ステータス ページの初回実行時エクスペリエンス](esp-first-run.md)のセットアップ。
 1. [ユーザー サポート機能を有効にする](enable-support.md)。
 1. ユーザーがデバイスを使用する準備を整えます (この記事)。

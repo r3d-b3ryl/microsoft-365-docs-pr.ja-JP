@@ -1,6 +1,6 @@
 ---
 title: Windows 以外のプラットフォームの Microsoft Defender for Endpoint
-description: Microsoft Defender for Endpoint の非プラットフォーム向け機能Windowsする
+description: Microsoft Defender for Endpoint の非プラットフォーム向け機能についてWindowsする
 keywords: Windows 以外、Mac、macos、Linux、android
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,32 +17,32 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8887f9e26c53d57aa49ec6fb65733cac6e562a9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: bfe40a4c183f113c92e263e48d72c6aa7020152b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942718"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322017"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Windows 以外のプラットフォームの Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1 and Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft は、業界をリードするエンドポイント セキュリティ機能を、Windows および Windows Server から macOS、Linux、Android、および iOS に拡張する取り組み中です。
+Microsoft は、業界をリードするエンドポイント セキュリティ機能を Windows および Windows Server から macOS、Linux、Android、および iOS に拡張する取り組み中です。
 
-組織は、さまざまなプラットフォームやデバイス間で脅威に直面しています。 Microsoft のチームは *、Microsoft* だけでなく *Microsoft* からのセキュリティ ソリューションの構築にも取り組み、お客様が異種環境を保護し、セキュリティを確保できます。 お客様からのフィードバックに耳を傾け、お客様のニーズに合ったソリューションを構築するために、お客様と密接に提携しています。
+組織は、さまざまなプラットフォームやデバイス間で脅威に直面しています。 Microsoft のチームは *、Microsoft だけでなく* *Microsoft からの* セキュリティ ソリューションの構築にも取り組み、お客様が異種環境を保護し、セキュリティを確保できます。 お客様からのフィードバックに耳を傾け、お客様のニーズに合ったソリューションを構築するために、お客様と密接に提携しています。
 
-Microsoft Defender for Endpoint を使用すると、Microsoft 365 Defender ポータル内のすべての脅威とアラートを Windows プラットフォームと Windows 以外のプラットフォームで統一して表示することで、環境内で何が起こっているかを完全に理解し、脅威の評価と対応を迅速に行えるのです。
+Microsoft Defender for Endpoint を使用すると、Microsoft 365 Defender ポータル、Windows および Windows 以外のプラットフォームで、すべての脅威とアラートの統合ビューを利用して、環境で何が起こっているかを完全に理解し、脅威を迅速に評価して対応できます。
 
 ## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 用 Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint on macOS では、最新リリースバージョンの macOS に対して、ウイルス対策、エンドポイント検出と応答 (EDR)、脆弱性の管理 機能が提供されます。 顧客は、ソリューションを展開および管理するには、Microsoft エンドポイント マネージャー Jamf を使用します。 macOS 上Microsoft Officeアプリケーションと同様に、Microsoft Auto Update を使用して Microsoft Defender for Endpoint on Mac 更新プログラムを管理します。 主な機能と利点については、お知らせをご [覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
+Microsoft Defender for Endpoint on macOS では、最新の 3 つのリリースバージョンの macOS に対して、ウイルス対策、エンドポイント検出と応答 (EDR)、脆弱性の管理 機能が提供されます。 お客様は、ソリューションの展開と管理を、Microsoft エンドポイント マネージャー Jamf を通じて行います。 macOS 上Microsoft Officeアプリケーションと同様に、Microsoft Auto Update を使用して Microsoft Defender for Endpoint on Mac 更新プログラムを管理します。 主な機能と利点については、お知らせをご [覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
 
 開始方法の詳細については、「Defender for Endpoint on macOS」のドキュメントを参照 [してください](microsoft-defender-endpoint-mac.md)。
 
@@ -75,7 +75,7 @@ Microsoft Defender for Endpoint on Android は、Android 6.0 以上を実行し�
 
 ## <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
 
-Microsoft Defender for Endpoint on iOS は、iOS 11.0 以上を実行しているデバイス向けモバイル脅威防御ソリューションです。 顧客のテナント内に登録されているデバイス (登録済みまたは登録されていない) がサポートされています。 監視対象デバイスと教師付き登録済みデバイスの両方がサポートされています。 iOS では、フィッシング対策、安全でない接続のブロック、カスタムインジケーターの設定、脱獄の検出など、Web 保護を提供しています。 主な機能と利点の詳細については、お知らせを [参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
+Microsoft Defender for Endpoint on iOS は、iOS 11.0 以上を実行しているデバイス向けモバイル脅威防御ソリューションです。 顧客のテナント内に登録されているデバイス (登録済みまたは登録されていない) がサポートされています。 監視対象デバイスと教師付き登録済みデバイスの両方がサポートされています。 iOS では、フィッシング対策、安全でない接続のブロック、カスタムインジケーターの設定、脱獄の検出など、Web 保護を提供しています。 主な機能と利点の詳細については、お知らせをご [覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
 
 開始方法の詳細については、iOS の Microsoft Defender for Endpoint のドキュメントを参照 [してください](microsoft-defender-endpoint-ios.md)。
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 5382118753f3c865f6fceb7cd16a7a7953e7bfad
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 10ecf1f3906e7968328729257feea9c272562ffb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767610"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322633"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
@@ -31,6 +31,19 @@ ms.locfileid: "62767610"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1015950-20122021159500"></a>101.59.50 (20.122021.15950.0)
+
+- このバージョンでは、macOS 12.3 のサポートが追加されます。 macOS 12.3 から [、Apple は Python 2.7 を削除しています](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes)。 既定では、macOS に Python バージョンがプレインストールされません。 **必要なアクション**: 
+  - ユーザーは、デバイスを macOS モントレー 12.3 (または新しい) に更新する前に、Microsoft Defender for Endpoint for Mac をバージョン 101.59.50 (以降) に更新する必要があります。 この最小限のバージョン 101.59.50 は、macOS モントレーの Microsoft Defender for Endpoint for Mac に関する Python 関連の問題を排除する前提条件です。
+  - リモート展開では、既存の MDM セットアップを Microsoft Defender for Endpoint for Mac バージョン 101.59.50 (以降) に更新する必要があります。 MDM 経由で古い Microsoft Defender for Endpoint for Mac バージョンを macOS Monterey 12.3 (または新しいバージョン) にプッシュすると、インストールエラーが発生します。
+
+## <a name="1015910-20122012159100"></a>101.59.10 (20.122012.15910.0)
+
+- コマンド ライン ツールでは、検疫済みファイルを、ファイルが最初に検出された場所以外の場所に復元できます。 これは、 を使用して実行できます `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`。
+- Thunderbolt 3 で接続されたデバイスを処理する拡張デバイス制御
+- 無効なベンダーの ID と製品の ID を含むデバイス制御ポリシーの処理が改善されました。 このバージョンより前のバージョンでは、ポリシーに 1 つ以上の無効な ID が含まれている場合、ポリシー全体が無視されていました。 このバージョンから開始すると、ポリシーの無効な部分だけが無視されます。 ポリシーに関する問題は、 を通じて表面化されます `mdatp device-control removable-media policy list`。
+- バグ修正
 
 ## <a name="1015662-20121122156620"></a>101.56.62 (20.121122.15662.0)
 
@@ -117,7 +130,7 @@ ms.locfileid: "62767610"
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
 - Microsoft Defender for Endpoint on macOS は、米国政府機関のお客様向けプレビューで利用できます。 詳細については、「 [Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。
-- パフォーマンスの向上 (特に、XCode Simulator アプリを使用する場合の状況) は、&修正されます。
+- パフォーマンスの向上 (特に、XCode Simulator アプリを使用する場合の状況) は、&修正します。
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
 

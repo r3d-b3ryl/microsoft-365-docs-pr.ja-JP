@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ac908a03aad2ccbe203877250a84185cb6c8da16
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 25cdc0610f11d1bcd7e8c27faa1cdc9453677d51
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904381"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320881"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>インシデント対応とMicrosoft 365 Defender
 
@@ -63,17 +63,17 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 - 攻撃の範囲 (影響を受けたデバイス、ユーザー、メールボックスの数など)。 
 - 攻撃に関連付けられているすべてのデータ。
 
-有効[にすると、](m365d-enable.md)自動化Microsoft 365 Defender[人工知能を](m365d-autoir.md)使用してアラートを自動的に調査および解決できます。 また、追加の修復手順を実行して攻撃を解決することもできます。 
+有効[にすると、](m365d-enable.md)自動化Microsoft 365 Defender[人工知能を使用して](m365d-autoir.md)アラートを自動的に調査および解決できます。 また、追加の修復手順を実行して攻撃を解決することもできます。 
 
-## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>インシデントとアラート (Microsoft 365 Defender ポータル)
+## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>ポータル内のインシデントとMicrosoft 365 Defender
 
-インシデント ポータルのクイック 起動時&**インシデント**>アラートからインシデントを <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。 次に例を示します。
+インシデント ポータルのクイック 起動時に&**アラート>** インシデントからインシデントを <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="ポータルの [インシデント] ページMicrosoft 365 Defenderします。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 インシデント名を選択すると、インシデントの概要が表示され、追加情報を含むタブにアクセスできます。 例を次に示します。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="ポータル内のインシデントの [概要] ページMicrosoft 365 Defender例" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="ポータル内のインシデントの概要ページMicrosoft 365 Defender例" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 インシデントの追加タブは次のとおりです。
 
@@ -124,13 +124,13 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 1. インシデントごとに、攻撃とアラート [の調査と分析を開始します](investigate-incidents.md)。
  
-   1. インシデントの概要を表示して、そのスコープと重大度、および [概要] タブと [プレビュー] (プレビュー) タブで影響 **を受けるエンティティ** Graphを確認します。
+   1. インシデントの概要を表示して、そのスコープと重大度、および [概要] タブと [プレビュー **] (プレビュー**) タブで影響を受けるエンティティGraphを確認します。
 
    1. [アラート] タブを使用して、アラートの分析を開始して、発生元、スコープ、重大度 **を理解** します。
 
    1. 必要に応じて、[デバイス]、[ユーザー]、および [メールボックス] タブを使用して、影響を受け取ったデバイス、ユーザー、およびメールボックスに関する情報 **を収集** します。
 
-   1. [調査] Microsoft 365 Defenderで、一部のアラート [が](m365d-autoir.md)自動的に解決された方法 **について説明** します。
+   1. [調査] Microsoft 365 Defenderで、一 [部](m365d-autoir.md)のアラートが自動的に解決された方法 **について説明** します。
    
    1. 必要に応じて、インシデントのデータ セットの情報を使用して、[証拠と応答] タブを使用して詳細 **を確認** します。
 
@@ -165,7 +165,7 @@ Microsoft 製品全体のインシデント対応の詳細については、こ�
 毎月のタスクには、次のものが含まれます。
 
 - AIR 設定 [の確認](m365d-configure-auto-investigation-response.md)
-- セキュリティで保護[されたスコアと](microsoft-secure-score-improvement-actions.md)[脅威の&の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+- セキュリティで保護 [されたスコア](microsoft-secure-score-improvement-actions.md) と [脅威の&の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - IT セキュリティ管理チェーンへのレポート
 
 四半期ごとに、最高情報セキュリティ責任者 (CISO) へのセキュリティ結果の報告とブリーフィングが含まれます。
@@ -174,7 +174,7 @@ Microsoft 製品全体のインシデント対応の詳細については、こ�
 
 毎日、月次、四半期、年次のタスクを使用して、プロセス、ポリシー、およびセキュリティ構成を更新または調整できます。
 
-詳細[については、「セキュリティMicrosoft 365 Defender統合」](integrate-microsoft-365-defender-secops.md)を参照してください。
+詳細[については、「Microsoft 365 Defenderをセキュリティ操作に統合する](integrate-microsoft-365-defender-secops.md)」を参照してください。
 
 ### <a name="secops-resources-across-microsoft-products"></a>Microsoft 製品全体の SecOps リソース
 
@@ -227,7 +227,7 @@ Microsoft 製品全体の SecOps の詳細については、次のリソース�
 
 ## <a name="training-for-security-analysts"></a>セキュリティ アナリスト向けトレーニング
 
-Microsoft Learn のこの学習モジュールを使用して、インシデントとアラートの管理にMicrosoft 365 Defender方法を理解します。
+Microsoft Learn のこの学習モジュールを使用して、インシデントとアラートを管理するためにMicrosoft 365 Defender方法を理解します。
 
 |トレーニング: |Microsoft 365 Defender を使用してインシデントを調査する|
 |---|---|
@@ -246,7 +246,7 @@ Microsoft Learn のこの学習モジュールを使用して、インシデン�
 
 | レベル | 手順 |
 |:-------|:-----|
-| **New** | <ol><li> 攻撃の[例を使用](first-incident-overview.md)して、Microsoft 365 Defender ポータルで分析、修復、インシデント後のレビューの一般的なプロセスのガイド付きツアーを取得するには、「最初のインシデントに対応する」のチュートリアルを参照してください。 </li><li> 重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。</li></ol> |
+| **New** | <ol><li> 攻撃の[例を使用](first-incident-overview.md)して、Microsoft 365 Defender ポータルで分析、修復、およびインシデント後のレビューの一般的なプロセスのガイド付きツアーを取得するには、「最初のインシデントに対応する」のチュートリアルを参照してください。 </li><li> 重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。</li></ol> |
 | **経験豊富** | <ol><li> ポータルの [インシデント] ページからインシデント  キューをMicrosoft 365 Defenderします。 グループ プロフィールでは次の操作ができます。 </li> <ul><li> 重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。 </li><li> インシデント [の調査](investigate-incidents.md) を実行します。 </li></ul> </li><li> 脅威分析を使用して、新たな脅威 [を追跡して対応します](threat-analytics.md)。 </li><li>  高度な脅威の検出を使用して脅威 [を積極的に探します](advanced-hunting-overview.md)。 </li><li> フィッシング攻撃 [、パスワード スプレー攻撃](/security/compass/incident-response-playbooks) 、アプリ同意許可攻撃の詳細なガイダンスについては、次のインシデント対応プレイブックを参照してください。 </li></ol> |
 
 
@@ -259,5 +259,5 @@ Microsoft Learn のこの学習モジュールを使用して、インシデン�
 | インシデントレスポンダー (Tier 1) | ポータルの [インシデント] ページからインシデント  キューをMicrosoft 365 Defenderします。 グループ プロフィールでは次の操作ができます。 <ul><li> 重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。 </li></ul> |
 | セキュリティ調査担当者またはアナリスト (Tier 2) | <ol><li> ポータル[の [](investigate-incidents.md)インシデント] ページからインシデントの調査をMicrosoft 365 Defenderします。 </li><li> フィッシング攻撃 [、パスワード スプレー攻撃](/security/compass/incident-response-playbooks) 、アプリ同意許可攻撃の詳細なガイダンスについては、次のインシデント対応プレイブックを参照してください。 </li></ol> |
 | 高度なセキュリティ アナリストまたは脅威の検出者 (Tier 3) | <ol><li>ポータル[の [](investigate-incidents.md)インシデント] ページからインシデントの調査をMicrosoft 365 Defenderします。 </li><li> 脅威分析を使用して、新たな脅威 [を追跡して対応します](threat-analytics.md)。 </li><li> 高度な脅威の検出を使用して脅威 [を積極的に探します](advanced-hunting-overview.md)。 </li><li> フィッシング攻撃 [、パスワード スプレー攻撃](/security/compass/incident-response-playbooks) 、アプリ同意許可攻撃の詳細なガイダンスについては、次のインシデント対応プレイブックを参照してください。 |
-| SOC マネージャー | セキュリティ 運用センター ([SOC) Microsoft 365 Defenderを統合する方法を参照してください](integrate-microsoft-365-defender-secops.md)。 |
+| SOC マネージャー | セキュリティ 運用センター ([SOC) にMicrosoft 365 Defenderを統合する方法を参照してください](integrate-microsoft-365-defender-secops.md)。 |
 

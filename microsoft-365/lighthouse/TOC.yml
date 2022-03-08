@@ -8,10 +8,12 @@
   items:
     - name: サインアップ
       href: m365-lighthouse-sign-up.md
-- name: セキュリティで保護されたMicrosoft 365 Lighthouse
+- name: セキュリティで保護Microsoft 365 Lighthouse
   items:
     - name: ポータル のセキュリティを構成する
       href: m365-lighthouse-configure-portal-security.md
+    - name: 役割の設定
+      href: m365-lighthouse-set-up-roles.md
     - name: 監査ログの確認
       href: m365-lighthouse-review-audit-logs.md
 - name: ベースラインを使用して顧客を保護する
@@ -38,10 +40,12 @@
       href: m365-lighthouse-manage-mfa.md
     - name: セルフサービスパスワードのリセットを管理する
       href: m365-lighthouse-manage-sspr.md
-    - name: Reset user password
+    - name: ユーザー パスワードのリセット
       href: m365-lighthouse-reset-user-password.md
     - name: ユーザーの検索
       href: m365-lighthouse-search-for-users.md
+    - name: リスクの高いユーザーの表示と管理
+      href: m365-lighthouse-view-manage-risky-users.md
 - name: デバイスを管理する
   items:
     - name: デバイス コンプライアンス ページの概要
@@ -60,5 +64,9 @@
   items:
     - name: ヘルプとサポートを利用する
       href: m365-lighthouse-get-help-and-support.md
+    - name: 既知の問題
+      href: m365-lighthouse-known-issues.md
+    - name: 問題とエラー メッセージのトラブルシューティングと解決
+      href: m365-lighthouse-troubleshoot.md
     - name: よく寄せられる質問 (FAQ)
       href: m365-lighthouse-faq.yml

@@ -1,8 +1,8 @@
 ---
 title: セキュリティで保護されたドキュメントの推奨されるポリシー - Microsoft 365 for enterprise | Microsoft Docs
 description: SharePoint ファイル アクセスをセキュリティで保護する方法に関する、Microsoft が推奨するポリシーについて説明します。
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.prod: m365-security
 ms.topic: article
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: cf3e2eaf764dee35593b220d444dbf68bcabb037
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: f024f9d93b44e6d6a679311af914330f0e3db37c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245161"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312937"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項
 

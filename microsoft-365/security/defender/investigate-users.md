@@ -1,14 +1,14 @@
 ---
 title: ユーザーを調査Microsoft 365 Defender
-description: ポータル内のインシデントについてユーザー Microsoft 365 Defenderします。
+description: ポータル内のインシデントについてユーザーをMicrosoft 365 Defenderします。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティ センター、監視、レポート、ID、データ、デバイス、アプリ、インシデント、分析、応答
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: bfb8e1fb42dcde1a3140e0990221536c1b76b4f8
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: d49ef6b31e6446f3452d0efdce2e918813eabcc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904009"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327547"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>ユーザーを調査Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "62904009"
 
 - Microsoft 365 Defender
 
-インシデント調査の一部には、ユーザー アカウントを含めできます。 インシデントポータルのインシデントのアラートで識別されたユーザー アカウントの詳細は、インシデントMicrosoft 365 Defender **&**\>アラートインシデント ***_ \> _* Users から確認できます**。 次に例を示します。
+インシデント調査の一部には、ユーザー アカウントを含めできます。 インシデントポータルの \> ***\>*** インシデントのアラートで識別されたユーザー アカウントの詳細は、[インシデント] ポータルMicrosoft 365 Defenderインシデント_ _Users&確認できます。 次に例を示します。
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="インシデントの [ユーザー] ページの例。" lightbox="../../media/investigate-incidents/incident-users.png":::
 

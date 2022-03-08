@@ -11,18 +11,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 2e314f15719d4a6a0e75d5fd26ae788e2382b75a
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: b20a8d5f1f33ebe62fa1ec9a5e8c8e05dbddbc2b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217892"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323347"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpoint アラートに関連付けられている IP アドレスを調査する
 
@@ -71,7 +69,7 @@ IP アドレス ビューでは、次のセクションから情報を確認で�
 
 **外部 IP を調査します。**
 
-1. [検索] バーの **ドロップダウン メニューから** **[IP]** を選択します。
+1. [ **検索] バー** の **ドロップダウン メニューから** [IP] を選択します。
 2. [検索] フィールドに IP アドレス **を入力** します。
 3. 検索アイコンをクリックするか、Enter キーを **押します**。
 
@@ -84,7 +82,7 @@ IP アドレスの詳細は、登録の詳細 (利用可能な場合)、リバ�
 
 デバイス名をクリックすると、そのデバイスのビューにアクセスし、報告されたアラート、動作、およびイベントを引き続き調査できます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)

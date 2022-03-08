@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: b5d7a6c18f112b7f35aa2599ff2639894a735f9b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: adc939d44715bcfaeb97cdbfa530f55a5aeecd4e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171876"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322087"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -73,7 +73,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 > - **Information Protection 調査担当者**
 > - **Information Protection 閲覧者**
 >
-> それぞれの役割とその役割に含まれる新しい役割の説明については、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a> > **[アクセス許可と役割]** > **[コンプライアンス センター]** > **[役割]** を選択し、次にポップアップ ウィンドウで説明を確認します。 または、「[セキュリティ/コンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+> それぞれの役割とその役割に含まれる新しい役割の説明については、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a> > **[アクセス許可と役割]** > **[コンプライアンス センター]** > **[役割]** で役割グループを選択し、次にポップアップ ウィンドウで説明を確認します。または、「[セキュリティ/コンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
 
 ユーザーを既定の役割グループに追加する手順、または独自の役割グループを作成する手順については、「[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
 
@@ -99,6 +99,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 |ドキュメントが暗号化されている場合に、Office デスクトップ アプリで共同編集と自動保存を使用する | [機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする](sensitivity-labels-coauthoring.md)
 |秘密度ラベルをドキュメントとメールに自動的に適用する | [機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)|
 |秘密度ラベルを使用して、Teams や SharePoint のコンテンツを保護する |[Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する](sensitivity-labels-teams-groups-sites.md)|
+|秘密度ラベルを使用して、SharePoint と OneDrive のサイトと個々のドキュメントの既定の共有リンクの種類を構成する |[秘密度ラベルを使用して、SharePoint と OneDrive のサイトとドキュメントの既定の共有リンクを設定する](sensitivity-labels-default-sharing-link.md)|
 |ドキュメント理解モデルに機密ラベルを適用すると、SharePoint ライブラリ内の識別されたドキュメントが自動的に分類および保護されます |[Microsoft SharePoint Syntex のモデルに秘密度ラベルを適用する](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |特定の感度ラベルを持つファイルまたはメールをユーザーが共有しないように、または警告します。 |[DLP ポリシーで秘密度ラベルを条件として使用する](dlp-sensitivity-label-as-condition.md) |
 |保持ラベルを適用して、特定の秘密度ラベルを持つファイルまたはメールを保持または削除する|[保持ラベルを自動的に適用してコンテンツを保持または削除する](apply-retention-labels-automatically.md) |

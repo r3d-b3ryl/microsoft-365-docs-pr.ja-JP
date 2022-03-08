@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6b345eb898b84de9f15772e11fdc92e1af5dde6a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ab6a23d1f2c8893a86fb6432ab9fece95a10006c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167012"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322885"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>クライアント アナライザーの HTML レポートについて
 
@@ -55,7 +53,7 @@ ms.locfileid: "61167012"
 
 ## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>Microsoft へのサポート チケットを開き、Analyzer の結果を含める
 
-サポート チケットを開く際 [に](contact-support.md#open-a-service-request)アナライザーの結果ファイルを含めるには、[添付ファイル] セクションを使用 **し、ファイル** を含 `MDEClientAnalyzerResult.zip` めます。
+サポート チケットを開く際にアナライザーの結果ファイルを含める[には、[](contact-support.md#open-a-service-request)添付ファイル] セクションを使用し、ファイルを含`MDEClientAnalyzerResult.zip`めます。
 
 ![添付ファイルプロンプトの画像。](images/508c189656c3deb3b239daf811e33741.png)
 

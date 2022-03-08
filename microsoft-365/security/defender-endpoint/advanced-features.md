@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d0faebdf3b815bdca968cdd790767c5d36179b6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 56a836e14051e3f621fb42fd518fb2cf5efe8bed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165212"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327701"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -36,9 +36,9 @@ ms.locfileid: "61165212"
 
 ## <a name="enable-advanced-features"></a>高度な機能を有効にする
 
-1. ナビゲーション ウィンドウで、[エンドポイントの詳細設定 **] 設定** \> **を** \> **選択します**。
-2. 構成する高度な機能を選択し、設定を [オン] と [オフ] **の間で切り** 替 **えます**。
-3. [設定 **の保存] をクリックします**。
+1. ナビゲーション ウィンドウで、[エンドポイント **の詳細設定設定** \> **選択** \> **します**。
+2. 構成する高度な機能を選択し、設定を [オン] と [オフ] **の** 間で切り替 **えます**。
+3. [基本 **設定の保存] をクリックします**。
 
 次の高度な機能を使用して、潜在的に悪意のあるファイルから保護され、セキュリティ調査中により良い洞察を得る。
 
@@ -48,15 +48,18 @@ ms.locfileid: "61165212"
 
 ## <a name="live-response"></a>ライブ応答
 
+> [!NOTE]
+> ライブ応答では **、** Microsoft Defender for Endpoint ポータルの [詳細設定] セクションで有効にする前に、自動調査を有効にする必要があります。
+
 適切なアクセス許可を持つユーザーがデバイスでライブ応答セッションを開始できるよう、この機能を有効にします。
 
-役割の割り当ての詳細については、「役割の作成と [管理」を参照してください](user-roles.md)。
+役割の割り当ての詳細については、「役割の作成と管理 [」を参照してください](user-roles.md)。
 
 ## <a name="live-response-for-servers"></a>サーバーのライブ応答
 
 この機能を有効にし、適切なアクセス許可を持つユーザーがサーバーでライブ応答セッションを開始できます。
 
-役割の割り当ての詳細については、「役割の作成と [管理」を参照してください](user-roles.md)。
+役割の割り当ての詳細については、「役割の作成と管理 [」を参照してください](user-roles.md)。
 
 ## <a name="live-response-unsigned-script-execution"></a>ライブ応答の署名されていないスクリプトの実行
 
@@ -75,9 +78,9 @@ ms.locfileid: "61165212"
 > [!NOTE]
 > この設定を変更すると、将来のアラートの相関関係にのみ影響します。
 
-## <a name="enable-edr-in-block-mode"></a>ブロック モードEDR有効にする
+## <a name="enable-edr-in-block-mode"></a>ブロック モードでEDRを有効にする
 
-ブロック モードでのエンドポイントの検出と応答 (EDR) は、パッシブ モードで実行されている場合でも、悪意のあるMicrosoft Defender ウイルス対策からの保護を提供します。 オンにすると、EDRモードでデバイスで検出された悪意のあるアーティファクトや動作がブロックされます。 EDRモードでは、侵害後に検出された悪意のあるアーティファクトを修復するために、舞台裏で動作します。
+ブロック モードでのエンドポイントEDR応答 (EDR) は、パッシブ モードで実行されている場合でも、悪意のあるMicrosoft Defender ウイルス対策保護を提供します。 オンにすると、EDRモードでデバイスで検出された悪意のあるアーティファクトや動作がブロックされます。 EDRモードでは、侵害後に検出された悪意のあるアーティファクトを修復するために、舞台裏で動作します。
 
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve 修復されたアラート
 
@@ -95,28 +98,28 @@ Windows 10 Version 1809 以降に作成されたテナントの場合、自動�
 
 ブロックは、組織が次の要件を満たしている場合にのみ使用できます。
 
-- アクティブMicrosoft Defender ウイルス対策マルウェア対策ソリューションとして使用し、
+- アクティブMicrosoft Defender ウイルス対策マルウェア対策ソリューションとして使用します。
 - クラウドベースの保護機能が有効になっている
 
 この機能を使用すると、ネットワーク内の悪意のある可能性のあるファイルをブロックできます。 ファイルをブロックすると、組織内のデバイスでファイルが読み取り、書き込み、または実行されるのを防ぐ。
 
 ファイルを **許可またはブロックするには** 、次の手順を実行します。
 
-1. ナビゲーション ウィンドウで、[エンドポイントの全般 **詳細設定設定** ファイルを許可またはブロック \>  \>  \>  \> **する] を選択します**。
+1. ナビゲーション ウィンドウで、[エンドポイントの全般詳細設定設定 \>  \>  \> \>ファイルを許可またはブロック **する] を選択します**。
 
-1. [オン] と [オフ]**の間で設定を****切り替えます**。
+1. [オン] と [オフ] **の間で設定を** 切り **替えます**。
  
     :::image type="content" source="../../media/alloworblockfile.png" alt-text="ブロック ファイル機能の詳細設定のイメージ。":::
 
 1. ページ **の下部にある [基本** 設定の保存] を選択します。
 
-この機能を有効にした後、[](respond-file-alerts.md#allow-or-block-file)ファイルのプロファイルページの [インジケーターの追加] タブを使用してファイルをブロックできます。
+この機能を有効にした後、[](respond-file-alerts.md#allow-or-block-file)ファイルのプロファイル ページの [インジケーターの追加] タブを使用してファイルをブロックできます。
 
 ## <a name="custom-network-indicators"></a>カスタム ネットワーク インジケーター
 
 この機能を有効にすることで、IP アドレス、ドメイン、または URL のインジケーターを作成し、カスタム インジケーター リストに基づいて許可またはブロックするかどうかを決定できます。
 
-この機能を使用するには、デバイスがバージョン 1709 以降Windows 10バージョン 11 以降でWindows必要があります。 また、ブロック モードでネットワーク保護を行い、マルウェア対策プラットフォームのバージョン 4.18.1906.3 以降は KB 4052623 を参照 [してください](https://go.microsoft.com/fwlink/?linkid=2099834)。
+この機能を使用するには、デバイスがバージョン 1709 以降Windows 10バージョン 11 以降でWindows必要があります。 また、ブロック モードでネットワーク保護を行い、マルウェア対策プラットフォームのバージョン 4.18.1906.3 以降も KB 4052623 を [参照](https://go.microsoft.com/fwlink/?linkid=2099834)してください。
 
 詳細については、「指標の管理 [」を参照してください](manage-indicators.md)。
 
@@ -128,7 +131,7 @@ Windows 10 Version 1809 以降に作成されたテナントの場合、自動�
 
 タンパープロテクションは基本的Microsoft Defender ウイルス対策ロックし、アプリやメソッドを通じてセキュリティ設定が変更されるのを防ぐ。
 
-この機能は、組織でクラウド ベースMicrosoft Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウドで提供される保護を通じて、Microsoft Defender ウイルス対策テクノロジを使用[する」を参照してください](cloud-protection-microsoft-defender-antivirus.md)。
+この機能は、組織でクラウド ベースのMicrosoft Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウドによる保護を通じて次世代テクノロジを[Microsoft Defender ウイルス対策を使用する」を参照してください](cloud-protection-microsoft-defender-antivirus.md)。
 
 セキュリティ ソリューションとその重要な機能に対する望ましくない変更を防止するために、改ざん防止を有効にしてください。
 
@@ -140,14 +143,14 @@ Windows 10 Version 1809 以降に作成されたテナントの場合、自動�
 - アラート キュー
 - [デバイスの詳細] ページ
 
-詳細については、「ユーザー アカウントの [調査」を参照してください](investigate-user.md)。
+詳細については、「ユーザー アカウントを [調査する」を参照してください](investigate-user.md)。
 
 ## <a name="skype-for-business-integration"></a>Skype for Business 統合
 
-この統合をSkype for Businessすることで、ユーザーとのコミュニケーションをSkype for Business、電子メール、または電話を使用できます。 これは、ユーザーと通信し、リスクを軽減する必要がある場合に便利です。
+この統合をSkype for Businessすることで、ユーザーとコミュニケーションを取りSkype for Business、電子メール、または電話を使用できます。 これは、ユーザーと通信し、リスクを軽減する必要がある場合に便利です。
 
 > [!NOTE]
-> デバイスがネットワークから分離されている場合は、Outlook および Skype 通信を有効にし、ネットワークから切断されている間にユーザーに通信できるポップアップが表示されます。 この設定は、デバイスがSkypeモードOutlook通信に適用されます。
+> デバイスがネットワークから分離されている場合、Outlook および Skype 通信を有効にし、ネットワークから切断されている間にユーザーに通信できるポップアップが表示されます。 この設定は、デバイスが分離モードSkype、Outlookの通信に適用されます。
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Id 統合用 Microsoft Defender
 
@@ -160,46 +163,42 @@ Microsoft Defender for Identity との統合により、別の Microsoft Identit
 
 この機能は、アクティブなユーザーまたは脅威インテリジェンス Office 365 E5を使用している場合にのみ使用できます。 詳細については、「E5 製品のOffice 365 Enterpriseを参照してください。
 
-この機能を有効にした場合、microsoft Defender for Office 365 のデータを Microsoft 365 Defender に組み込み、Office 365 メールボックスと Windows デバイス全体で包括的なセキュリティ調査を実行できます。
+この機能を有効にした場合、microsoft Defender for Office 365 のデータを Microsoft 365 Defender に組み込み、Office 365 メールボックスおよび Windows デバイス全体で包括的なセキュリティ調査を行えます。
 
 > [!NOTE]
 > この機能を有効にするには、適切なライセンスが必要です。
 
-脅威インテリジェンスでコンテキスト デバイスのOffice 365を受け取る場合は、[セキュリティ とコンプライアンス] ダッシュボードで Defender for Endpoint &する必要があります。 詳細については、「脅威の調査 [と対応」を参照してください](/microsoft-365/security/office-365-security/office-365-ti)。
+脅威インテリジェンスでコンテキスト デバイスOffice 365統合を受け取る場合は、[セキュリティ とコンプライアンス] ダッシュボードで Defender for Endpoint の設定&必要があります。 詳細については、「脅威の調査 [と対応」を参照してください](/microsoft-365/security/office-365-security/office-365-ti)。
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 脅威エキスパート - ターゲット攻撃通知
 
-2 つの Microsoft Threat Expert コンポーネントの中で、標的型攻撃通知は一般提供です。 エキスパートオンデマンド機能はまだプレビュー中です。 experts-on-demand 機能は、プレビューを申請し、アプリケーションが承認されている場合にのみ使用できます。 ターゲット攻撃通知は、Defender for Endpoint ポータルMicrosoft 脅威エキスパート、構成した場合は電子メールを介して、ターゲット攻撃通知を受信できます。
+2 つの Microsoft Threat Expert コンポーネントの中で、標的型攻撃通知は一般提供です。 エキスパートオンデマンド機能はまだプレビュー中です。 experts-on-demand 機能は、プレビューを申請し、アプリケーションが承認されている場合にのみ使用できます。 ターゲット攻撃通知は、Defender for Endpoint ポータルMicrosoft 脅威エキスパート、構成した場合は電子メールで受信できます。
 
 > [!NOTE]
-> Defender for Endpoint Microsoft 脅威エキスパートの機能は、エンドポイントの E5 ライセンスで[Enterprise Mobility + Security。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+> Defender for Endpoint Microsoft 脅威エキスパート機能は、E5 ライセンスを使用して使用[Enterprise Mobility + Security。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
 この設定を有効にすると、Defender for Endpoint シグナルが Microsoft Defender for Cloud Apps に転送され、クラウド アプリケーションの使用状況を詳細に可視化できます。 転送されたデータは、Defender for Cloud Apps データと同じ場所に格納され、処理されます。
 
 > [!NOTE]
-> この機能は、Windows 10 バージョン 1709 (OS ビルド 16299.1085 および[KB4493441)](https://support.microsoft.com/help/4493441)、Windows 10 バージョン 1803 (OS ビルド 17134.704 [KB449344)](https://support.microsoft.com/help/4493464)、Windows 10 Version 1809 [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (OS ビルド 17763.379[および KB4489899)、Windows 10](https://support.microsoft.com/help/4489899)バージョン、または 11 Windowsします。
-
-## <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
-
-Microsoft Defender for Endpoint シグナルを、ポータルの Microsoft Secure Score に転送Microsoft 365 Defenderします。 この機能を有効にすることで、Microsoft Secure Score でデバイスのセキュリティ状態を確認できます。 転送されたデータは、Microsoft Secure Score データと同じ場所に保存および処理されます。
+> この機能は、Windows 10 バージョン 1709 (OS ビルド 16299.1085 および [KB4493441](https://support.microsoft.com/help/4493441))、Windows 10 バージョン 1803 (OS ビルド 17134.704 [kb449344](https://support.microsoft.com/help/4493464))、Windows 10 Version 1809 [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (OS ビルド 17763.379 [および KB4489899](https://support.microsoft.com/help/4489899))、Windows 10バージョン、または 11 Windowsします。
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Microsoft Defender for Identity ポータルから Microsoft Defender for Endpoint の統合を有効にする
 
 Microsoft Defender for Identity でコンテキスト デバイスの統合を受け取る場合は、Microsoft Defender for Identity ポータルで機能を有効にする必要があります。
 
-1. グローバル管理者または [セキュリティ管理者の](https://portal.atp.azure.com/) 役割を持つ Microsoft Defender for Identity ポータルにログインします。
+1. グローバル管理者または [セキュリティ管理者の役割を持つ Microsoft Defender for Identity](https://portal.atp.azure.com/) ポータルにログインします。
 
 2. [インスタンス **の作成] をクリックします**。
 
-3. [統合] 設定を [オン] **に切り替え、[** 保存] を **クリックします**。
+3. [統合] 設定を [オン] に **切り替え、[** 保存] を **クリックします**。
 
 両方のポータルの統合手順を完了すると、デバイスの詳細またはユーザーの詳細ページに関連するアラートを表示できます。
 
 ## <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
-望ましくないコンテンツを含む Web サイトへのアクセスをブロックし、すべてのドメインで Web アクティビティを追跡します。 ブロックする Web コンテンツ カテゴリを指定するには、Web コンテンツ フィルター ポリシー [を作成します](https://security.microsoft.com/preferences2/web_content_filtering_policy)。 Microsoft Defender for Endpoint セキュリティ ベースラインを展開する場合は、ブロック モードでネットワーク保護 [を行う必要があります](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)。
+望ましくないコンテンツを含む Web サイトへのアクセスをブロックし、すべてのドメインで Web アクティビティを追跡します。 ブロックする Web コンテンツ カテゴリを指定するには、Web コンテンツ フィルター [ポリシーを作成します](https://security.microsoft.com/preferences2/web_content_filtering_policy)。 Microsoft Defender for Endpoint セキュリティ ベースラインを展開する場合は、ブロック モードでネットワーク保護 [を行う必要があります](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)。
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Microsoft コンプライアンス センターとエンドポイント通知を共有する
 
@@ -209,22 +208,22 @@ Insider リスク管理設定で [セキュリティ ポリシー](/microsoft-36
 
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune接続
 
-Defender for Endpoint は、デバイス リスクベースの条件付[Microsoft Intune](/intune/what-is-intune)[アクセスを有効にするアプリケーションと統合できます](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 この機能 [を有効に](configure-conditional-access.md)した場合、Defender for Endpoint デバイス情報を Intune と共有し、ポリシーの適用を強化できます。
+Defender for Endpoint は、デバイス リスクベースの条件付[Microsoft Intune](/intune/what-is-intune)を有効にするために、エンドポイントと[統合できます](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 この機能 [を有効に](configure-conditional-access.md)した場合、Defender for Endpoint デバイス情報を Intune と共有し、ポリシーの適用を強化できます。
 
 > [!IMPORTANT]
-> この機能を使用するには、Intune と Defender for Endpoint の両方で統合を有効にする必要があります。 特定の手順の詳細については、「Endpoint 用 [Defender で条件付きアクセスを構成する」を参照してください](configure-conditional-access.md)。
+> この機能を使用するには、Intune と Defender for Endpoint の両方で統合を有効にする必要があります。 特定の手順の詳細については、「 [Configure Conditional Access in Defender for Endpoint」を参照してください](configure-conditional-access.md)。
 
 この機能は、次の場合にのみ使用できます。
 
 - E5 (または E5) Enterprise Mobility + Security E3およびWindowsライセンスMicrosoft 365 Enterpriseテナント
-- Intune でMicrosoft Intuneデバイスが参加しているアクティブなWindows環境Azure AD[環境です](/azure/active-directory/devices/concept-azure-ad-join/)。
+- Intune でMicrosoft Intuneデバイスが参加しているアクティブなWindows環境Azure AD[環境。](/azure/active-directory/devices/concept-azure-ad-join/)
 
 ### <a name="conditional-access-policy"></a>条件付きアクセス ポリシー
 
 Intune 統合を有効にした場合、Intune は従来の条件付きアクセス (CA) ポリシーを自動的に作成します。 この従来の CA ポリシーは、Intune に状態レポートを設定する前提条件です。 削除する必要があります。
 
 > [!NOTE]
-> Intune によって作成される従来の CA ポリシー[](/azure/active-directory/conditional-access/overview/)は、エンドポイントの構成に使用される最新の条件付きアクセス ポリシーとは異なります。
+> Intune によって作成される従来の CA ポリシーは、エンドポイント[](/azure/active-directory/conditional-access/overview/)の構成に使用される最新の条件付きアクセス ポリシーとは異なります。
 
 ## <a name="device-discovery"></a>デバイス検出
 
@@ -243,7 +242,7 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 検疫済みファイルを安全で準拠した場所にバックアップし、検疫から直接ダウンロードできます。 [ **ファイルのダウンロード]** ボタンは常にファイル ページで使用できます。 この設定は既定でオンになっています。 [要件の詳細](respond-file-alerts.md#download-quarantined-files)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [データ保持設定の更新](data-retention-settings.md)
 - [アラート通知を構成する](configure-email-notifications.md)

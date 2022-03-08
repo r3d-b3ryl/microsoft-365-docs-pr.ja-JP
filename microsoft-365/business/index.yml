@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft 365 Business Premium のリソース
-summary: Microsoft 365 Business Premium (以前の Microsoft 365 Business) は、従業員が 300 人未満の企業向けの包括的なサブスクリプション サービスです。 使い慣れた Office の生産性向上アプリとサービス、Microsoft Teams のような共同作業ツールが組み込まれており、高度なセキュリティとデバイス管理機能で統合します。
+summary: 最大 300 人の従業員を持つ企業では、Microsoft 365 Business Premiumやオンライン会議を使用して、Office生産性を向上させることができます。 高度なセキュリティ機能を使用してビジネスを保護し、1 つのソリューションで IT のセットアップと管理を効率化します。
 brand: m365
 metadata:
   title: Microsoft 365 Business Premium のリソース
@@ -13,176 +13,112 @@ metadata:
     - intro-hub-or-landing
   author: efrene
   ms.author: efrene
-  ms.date: 8/25/2021
+  ms.date: 03/01/2022
 productDirectory:
-  title: Microsoft 365 Business Premium でリモート ワークのセキュリティ保護をする
+  title: 生産性とセキュリティとMicrosoft 365 Business Premium
   items:
     - title: 視聴する
       imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
       summary: Microsoft 365 Business Premium の 5 つの主な利点。
       url: 'https://aka.ms/M365BPvideo'
-    - title: 無料のパートナー キットを入手
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: リモート ワークのセキュリティを保護するための、パートナー向けの実践的なガイダンスと市場投入のリソースです。
-      url: 'https://aka.ms/SMBSecurityKit'
     - title: 新機能
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: 今日の Microsoft Defender for Business プレビューに参加します。従業員数が 300 人未満の企業向けエンタープライズ グレードのエンドポイント ソリューションです。
-      url: 'https://aka.ms/MDB-previewblog'
+      summary: Business プレミアム および Microsoft 365 Lighthouse の新しい Defender for Business 機能について説明します。
+      url: 'https://aka.ms/SMBsecurityFebBlog'
+    - title: 無料のパートナー キットを入手
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
+      summary: ハイブリッド作業をセキュリティで保護するための実用的なガイダンスとパートナーの市場リソースに移動します。
+      url: 'https://aka.ms/SMBSecurityKit'
     - title: パートナー ウェビナー シリーズに参加
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: Microsoft 365 Business Premium、Microsoft Defender for Business、および Microsoft 365 Lighthouse を使用して、アップセルを増やし、ビジネスを成長Microsoft 365 Lighthouse。
+      summary: Microsoft 365 Business Premium、Microsoft Defender for Business、および Microsoft 365 Lighthouse を使用して、アップセルをMicrosoft 365 Lighthouse。
       url: 'https://aka.ms/M365MDBseries'
 conceptualContent:
   items:
     - title: Microsoft 365 Business Premium とは
       links:
-        - url: microsoft-365-business-overview.md
+        - url: ../business-premium/index.md
           itemType: overview
-          text: 概要
+          text: Microsoft 365 Business Premium の概要
         - url: ../business-video/index.yml
           itemType: video
-          text: Microsoft 365 Business Premium トレーニング
-        - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
-          itemType: overview
-          text: プランを比較
+          text: Microsoft 365トレーニングの詳細
         - url: 'https://go.microsoft.com/fwlink/?linkid=2164213'
-          itemType: reference
-          text: サービスの説明
+          itemType: overview
+          text: ビジネス プランMicrosoft 365比較する
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
-          text: FAQ
+          text: Microsoft 365に関するよくある質問
     - title: Microsoft 365 Business Premium のセットアップ
       links:
-        - url: ../admin/setup/business-set-up.md
+        - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
-          text: 1. セットアップ ウィザードを実行する
-        - url: ../admin/setup/secure-win-10-pcs.md
+          text: 1. Microsoft 365 Business Premium を取得する
+        - url: ../admin/setup/plan-your-setup.md
           itemType: how-to-guide
-          text: 2. PC をセキュリティで保護する
-        - url: /MicrosoftTeams/get-started-with-teams-quick-start
-          itemType: video
-          text: 3. Teams のセットアップ
-        - url: ../admin/setup/install-applications.md
-          itemType: get-started
-          text: 4. Office をインストールする
+          text: 2. セットアップ プロセスを計画する
+        - url: ../business-premium/m365bp-setup.md
+          itemType: how-to-guide
+          text: 3. Microsoft 365 Business Premium のセットアップ
+        - url: ../admin/security-and-compliance/secure-your-business-data.md
+          itemType: how-to-guide
+          text: 4. ビジネス向けセキュリティ保護Microsoft 365トップ 10
+    - title: 何がMicrosoft 365 Lighthouse?
+      links:
+        - url: ../lighthouse/m365-lighthouse-overview.md
+          itemType: overview
+          text: パートナー Microsoft 365 Lighthouseの概要
+        - url: ../lighthouse/m365-lighthouse-sign-up.md
+          itemType: how-to-guide
+          text: サインアップして Microsoft CSP になる方法
+        - url: ../lighthouse/m365-lighthouse-configure-portal-security.md
+          itemType: how-to-guide
+          text: ライトハウス ポータルのセットアップとセキュリティ保護
+        - url: ../lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview.md
+          itemType: overview
+          text: 顧客テナントのベースラインの使用
+        - url: ../lighthouse/m365-lighthouse-faq.yml
+          itemType: reference
+          text: Microsoft 365 Lighthouse FAQ
     - title: パートナー向けリソース (英語のみ)
       links:
-        - url: 'https://www.microsoft.com/microsoft-365/partners/business'
-          itemType: overview
-          text: パートナーページ
         - url: 'https://aka.ms/M365BPPartnerPlaybook'
-          itemType: download
-          text: ビジネス プレミアム パートナー プレイブック
-        - url: 'https://aka.ms/bpbdmpitchdeck'
-          itemType: download
-          text: ビジネスプレミアム意思決定者 (BDM) ピッチ デッキ
-        - url: 'https://aka.ms/bpitdmpitchdeck'
-          itemType: download
-          text: ビジネス プレミアム IT 意思決定者 (ITDM) ピッチ デッキ
-        - url: 'https://aka.ms/bppartneropportunitydeck'
-          itemType: download
-          text: ビジネス パートナープレミアム機会のプレゼンテーション
-        - url: 'https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery'
-          itemType: download
-          text: 技術の基礎
-        - url: 'https://aka.ms/SMBSecurityKit'
-          itemType: download
-          text: セキュリティ保護されたリモートワークキット
-        - url: 'https://cct.transform.microsoft.com/'
-          itemType: deploy
-          text: 顧客のコンサルティングツール
-        - url: 'https://vc.transform.microsoft.com/'
-          itemType: learn
-          text: 値計算機
-    - title: ユーザーの管理
+          itemType: how-to-guide
+          text: パートナー プレイブックMicrosoft 365 Business Premium準備シリーズを参照してください。
+        - url: 'https://aka.ms/M365MDBseries'
+          itemType: video
+          text: パートナーウェビナー シリーズに参加してください。
+        - url: 'https://partner.microsoft.com'
+          itemType: overview
+          text: Microsoft Partner Network
+        - url: 'https://docs.microsoft.com/partner-center/overview'
+          itemType: overview
+          text: パートナー センターの使用を開始する
+    - title: 会社のデバイスを保護する
       links:
-        - url: ../admin/add-users/add-users.md
-          itemType: how-to-guide
-          text: ユーザーの追加
-        - url: /office365/admin/add-users/remove-former-employee
-          itemType: how-to-guide
-          text: ユーザーを削除する
-        - url: /office365/admin/add-users/reset-passwords
-          itemType: how-to-guide
-          text: ユーザーのパスワードをリセットする
-      footerLink:
-        url: /microsoft-365/admin/
-        text: 詳細
-    - title: 脅威を管理する
+        - url: ../security/defender-business/mdb-overview.md
+          itemType: overview
+          text: Microsoft Defender for Business の概要
+        - url: ../security/defender-business/mdb-setup-configuration.md
+          itemType: overview
+          text: Defender for Business のセットアップと構成
+        - url: ../security/defender-business/compare-mdb-m365-plans.md
+          itemType: overview
+          text: プランのセキュリティ機能Microsoft 365比較する
+        - url: ../security/defender-business/mdb-faq.yml
+          itemType: reference
+          text: Defender for Business FAQ
+    - title: メール コンテンツとメール ファイルOffice保護する
       links:
         - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
-          text: Advanced Threat Protection
-        - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
+          text: Microsoft Defender for Office 365
+        - url: ../security/office-365-security/protect-against-threats.md
           itemType: how-to-guide
-          text: MFA をセットアップする
-        - url: ./increase-threat-protection.md#protect-against-ransomware
-          itemType: how-to-guide
-          text: ランサムウェアから保護する
-        - url: /azure/active-directory/conditional-access/overview
-          itemType: overview
-          text: 条件付きアクセス
-      footerLink:
-        url: /microsoft-365/admin/
-        text: 詳細
-    - title: データ管理
-      links:
-        - url: ../compliance/data-loss-prevention-policies.md
-          itemType: overview
-          text: データ損失防止
-        - url: 'https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980'
-          itemType: how-to-guide
-          text: 暗号化された電子メールを送信する
-        - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
-          itemType: how-to-guide
-          text: メールの保持を設定する
-        - url: ../admin/security-and-compliance/set-up-compliance.md
-          itemType: video
-          text: 機密ラベルを作成して使用
-      footerLink:
-        url: ../compliance/index.yml
-        text: 詳細
-    - title: デバイスを管理する
-      links:
-        - url: ../admin/devices/view-policies-and-devices.md
-          itemType: how-to-guide
-          text: PC とモバイルデバイス
-        - url: ../admin/devices/remove-company-data.md
-          itemType: how-to-guide
-          text: 会社データを削除する
-        - url: ../admin/devices/reset-devices-to-factory-settings.md
-          itemType: how-to-guide
-          text: ワイプとリセット
-        - url: /intune/index
-          itemType: overview
-          text: Intune
-        - url: ../admin/setup/manage-windows-devices.md
-          itemType: how-to-guide
-          text: ハイブリッド Azure AD join を設定する
-        - url: ../admin/setup/access-resources.md
-          itemType: how-to-guide
-          text: Azure AD join を設定する
-        - url: /windows/deployment/windows-autopilot/windows-autopilot
-          text: Windows Autopilot
-          itemType: overview
-      footerLink:
-        url: ../admin/setup/manage-windows-devices.md
-        text: 詳細
-    - title: セキュリティを監視する
-      links:
-        - url: ../security/defender/microsoft-secure-score.md
-          itemType: how-to-guide
-          text: セキュア スコア
-        - url: /intune/apps/app-protection-policies-monitor
-          itemType: overview
-          text: Intune アプリ保護ポリシーレポート
-        - url: ../enterprise/view-service-health.md
-          itemType: how-to-guide
-          text: 正常性の監視アラート
-      footerLink:
-        url: ../security/index.yml
-        text: 詳細
+          text: Defender for Office 365
+        - url: ../security/office-365-security/anti-malware-protection-faq-eop.yml
+          itemType: reference
+          text: Defender for Office 365 FAQ
     - title: サポートとコミュニティ
       links:
         - url: 'https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog'
@@ -196,21 +132,18 @@ conceptualContent:
           text: フィードバックの送信
         - url: 'https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB'
           itemType: overview
-          text: 中小企業向けの技術者コミュニティ
+          text: 中小企業Communityの技術サポート
     - title: 方法
       links:
-        - url: ../admin/admin-overview/sign-up-for-office-365.md
-          itemType: get-started
-          text: Microsoft 365 Business Premium にサインアップする
+        - url: ../admin/manage/find-your-partner-or-reseller.md
+          itemType: how-to-guide
+          text: 自分のビジネスに役立つ Microsoft パートナーを探す
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
-          text: Microsoft 365 Business Standard からの移行
-        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
+          text: 別のプランにMicrosoft 365する
+        - url: ../admin/setup/migrate-email-and-contacts-admin.md
           itemType: how-to-guide
-          text: Office 365 E3 から移行する
-        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
+          text: Microsoft 365 へのメールと連絡先の移行
+        - url: ../admin/get-help-support.md
           itemType: how-to-guide
-          text: Microsoft 365 Enterprise E3 移行する
-      footerLink:
-        url: ../admin/admin-overview/what-is-microsoft-365.md
-        text: 詳細
+          text: サポートに問い合Microsoft 365

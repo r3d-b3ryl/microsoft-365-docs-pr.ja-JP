@@ -2,8 +2,8 @@
 title: 手順 5. ハイブリッド ワーカー生産性向上アプリとサービスを展開する
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
-ms.openlocfilehash: 97a0342347d848a27a8402b5b8506536c95c55c9
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 31f3c25aa536dce42dfd3ee8677271f1523eb75a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886232"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312909"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>手順 5. ハイブリッド ワーカー生産性向上アプリとサービスを展開する
 

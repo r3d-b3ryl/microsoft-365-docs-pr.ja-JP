@@ -9,18 +9,20 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkSPO
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
 description: 管理者は、複数地域の環境でSharePointサービスOneDrive管理する方法について学習できます。
-ms.openlocfilehash: 31d361b2936c3d7bceca7137499c659030717eba
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 126b5de915fba7168b3895bbb05ccef6dcad749b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214195"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312055"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
@@ -28,7 +30,7 @@ ms.locfileid: "62214195"
 
 ## <a name="administrator-experience"></a>管理者エクスペリエンス
 
-管理[センター SharePoint](https://admin.microsoft.com/sharepoint)左側のナビゲーションに[地域の場所] タブが表示され、地域の場所を表示および管理できる地理的位置マップが表示されます。 テナントの地理的な場所を追加または削除するには、このページを使用します。
+管理SharePointの左側のナビゲーションには [地域<a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank"></a>の場所] タブがあります。このタブには、地域の場所を表示および管理できる地理的位置マップがあります。 テナントの地理的な場所を追加または削除するには、このページを使用します。
 
 ## <a name="audit-log-search"></a>監査ログ検索
 
@@ -43,7 +45,7 @@ BCS、Secure Store、およびすべての App は、各サテライトの場所
 
 ## <a name="compliance-admin-center"></a>コンプライアンス管理センター
 
-複数地域テナントには、コンプライアンス管理センターとコンプライアンス管理センターの 1[つのMicrosoft 365センターがあります](https://compliance.microsoft.com/)。
+複数地域テナントには、コンプライアンス管理センター Microsoft 365[センターがあります](https://compliance.microsoft.com/)。
 
 ## <a name="ediscovery"></a>電子情報開示
 
@@ -79,7 +81,7 @@ Power Apps作成されたデータは、テナントの中央の場所にある�
 
 ## <a name="stream"></a>ストリーム
 
-1:1 チャットで Stream にアップロードされたビデオは、アップロードするユーザーのOneDriveに保存されます。 会議の記録は、会議を記録OneDrive出席者のグループに保存されます。
+1:1 チャットで Stream にアップロードされたビデオは、アップロードOneDriveに保存されます。 会議の記録は、会議を記録OneDrive各出席者のグループに保存されます。
 
 ## <a name="taxonomy"></a>分類
 
@@ -97,4 +99,4 @@ Power Apps作成されたデータは、テナントの中央の場所にある�
 
 ## <a name="yammer"></a>Yammer
 
-Yammerは、複数地域のワークロードではありません。 Yammerに格納Yammerスレッドは、テナントの中央の場所に配置されます。 Yammerは、ファイルストレージの変更を展開しています。この変更により、Yammerファイルが格納SharePoint。 Yammerに保存SharePointファイルは、SharePointグループに関連付Yammerされます。 SharePointグループ サイトは、[サイトとグループ] で説明されている PDL[ロジックSharePoint基づいて作成されます](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)。
+Yammerは、複数地域のワークロードではありません。 Yammerに格納されているYammerは、テナントの中央の場所に配置されます。 Yammerは、ファイル ストレージの変更を展開しています。この変更により、Yammerファイルが格納SharePoint。 Yammerに格納されているSharePointは、SharePointグループにYammerされます。 SharePointグループ サイトは、「サイトとグループ」で説明されている PDL ロジック[SharePoint基づいて作成されます](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)。

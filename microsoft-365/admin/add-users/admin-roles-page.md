@@ -4,28 +4,29 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekua
-manager: svidican
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
-- Adm_O365
+- Adm_O365W
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 管理者の役割は、ビジネス機能にマップされ、管理センターで特定のタスクを実行するためのアクセス許可を提供します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 8232e95649ac894e8a024a2d2ac4e7b4261cb1f2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 813cc178b572be5a6b1abc28d355ede020918c55
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161920"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315247"
 ---
 # <a name="get-started-with-the-roles-page"></a>[役割] ページの使用を開始する
 
@@ -34,7 +35,7 @@ ms.locfileid: "60161920"
 ![管理者の役割を示す図。](../../media/roles-main-page.png)
 
 > [!TIP]
-> 役割の詳細な説明をお探しですか ? Azure AD [組み込みロールと](/azure/active-directory/roles/permissions-reference) 管理者ロール [についてを確認してください](/microsoft-365/admin/add-users/about-admin-roles)。
+> 役割の詳細な説明をお探しですか ? 組み[Azure ADロールと管理者ロール](/azure/active-directory/roles/permissions-reference)[についてを確認してください](/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="about-the-admin-roles-page"></a>[管理者の役割] ページについて
 
@@ -42,7 +43,7 @@ ms.locfileid: "60161920"
 
 ![管理者の役割をフィルターまたはインポートします。](../../media/admin-role-page-options.png)
 
-- [管理リストのエクスポート] を使用して、組織内のすべての管理者ユーザーの完全なリストを取得します。 リストは、ファイル内のExcel .csvされます。
+- [管理リストのエクスポート] を使用して、組織内のすべての管理者ユーザーの完全なリストを取得します。 このリストは、ファイルのExcel .csvされます。
 
 - [検索] を使用して管理者ロールを検索し、その役割に割り当てられているユーザーを確認します。
 
@@ -74,15 +75,15 @@ Microsoft オンライン サービス全体のほとんどの管理機能とデ
 
 ### <a name="service-admin"></a>サービス管理者
 
-Azure、Microsoft 365、およびサービスのサポート 要求を作成する必要があるユーザーにサービス管理者Office 365します。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Azure、Microsoft 365、およびサービスのサポート要求を作成する必要があるユーザーに、サービス管理者Office 365します。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>SharePoint 管理者
 
-サブスクリプションを購入Microsoft 365チーム サイトが自動的に作成され、グローバル管理者がプライマリ サイト コレクション管理者として設定されます。 管理者SharePointにアクセスするユーザーに管理者ロールを割り当SharePointします。 管理者ロールをSharePointユーザーは、サイト コレクションの作成と管理、サイト コレクション管理者の指定、ユーザー プロファイルの管理を行います。 管理者の役割をSharePointユーザーは、Microsoft サポートを通Microsoft 365グループを管理し、サポート要求を開くすることもできます。 [詳細情報](/sharepoint/sharepoint-admin-role)
+サブスクリプションを購入Microsoft 365チーム サイトが自動的に作成され、グローバル管理者がプライマリ サイト コレクション管理者として設定されます。 管理者SharePointにアクセスするユーザーに管理者ロールを割<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">りSharePointします</a>。 管理者ロールをSharePointユーザーは、サイト コレクションの作成と管理、サイト コレクション管理者の指定、ユーザー プロファイルの管理を行います。 管理者の役割をSharePointユーザーは、Microsoft サポートを通Microsoft 365グループを管理し、サポート要求を開くすることもできます。 [詳細情報](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Teams のサービス管理者
 
-管理センター Teams管理するユーザーに管理者ロールを割り当Teams & Skypeします。 管理者ロールをTeamsユーザーは、Microsoft サポートを通Microsoft 365グループを管理し、サポート要求を開くすることもできます。 [詳細情報](/MicrosoftTeams/using-admin-roles)
+管理センター Teams管理するユーザーに管理者ロールを割り当Teams & Skypeします。 管理者の役割をTeamsユーザーは、Microsoft サポートを通Microsoft 365グループを管理し、サポート要求を開くすることもできます。 [詳細情報](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>ユーザー管理者
 

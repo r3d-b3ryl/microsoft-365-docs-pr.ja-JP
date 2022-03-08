@@ -10,8 +10,13 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.openlocfilehash: a671bf36e957ffc416f51ec531aaeed6ddfa41b3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315401"
 ---
-
 # <a name="get-started-with-app-control"></a>アプリ制御の使用を開始する
 
 環境でアプリ制御を有効にする前に、 [Microsoft Managed Desktop](../service-description/app-control.md) がどのようにアプリを実装し、役割と責任を果たしたのか、必ず確認して理解してください。
@@ -62,7 +67,7 @@ IT 管理者は、テスト リングでアプリをテストし、警告やエ�
 1. [Intune ポータル サイト](company-portal.md)を展開して割り当てます。
 1. [ライセンスを割り当てる](assign-licenses.md)。
 1. [アプリを展開する](deploy-apps.md)。
-1. [デバイスをセットアップする](set-up-devices.md)。
+1. [デバイスを準備します](prepare-devices.md)。
 1. [Autopilot と登録ステータス ページの初回実行時エクスペリエンス](esp-first-run.md)のセットアップ。
 1. [ユーザー サポート機能を有効にする](enable-support.md)。
 1. [ユーザーがデバイスを使えるようにする](get-started-devices.md)。

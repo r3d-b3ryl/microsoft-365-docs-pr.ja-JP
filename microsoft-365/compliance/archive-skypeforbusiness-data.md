@@ -11,25 +11,25 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: データをインポートおよびアーカイブする方法については、Microsoft 365 コンプライアンス センターでコネクタを設定して使用して、Skype for BusinessからMicrosoft 365。
-ms.openlocfilehash: 68d89fc4dc71fb3426170efd5005455172f30e9b
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+description: データをインポートおよびアーカイブするために、Microsoft 365 コンプライアンス センターでコネクタを設定して使用する方法についてSkype for Business Microsoft 365。
+ms.openlocfilehash: a783ad4bea9b06fcef3f7da4f67a98c17310a38e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643738"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314605"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>データをアーカイブするコネクタをSkype for Businessする
 
-サーバーの Veritas コネクタを使用Microsoft 365 コンプライアンス センター、Skype for Business プラットフォームから組織のユーザー メールボックスにデータをインポートMicrosoft 365します。 Veritas には[](https://www.veritas.com/en/au/insights/merge1/skype-for-business)、Skype for Business データ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムをデータ ソースにインポートするように構成された Microsoft 365。 コネクタは、ユーザー間のメッセージ、常設チャット、会議メッセージなどのコンテンツを Skype for Business から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
+Microsoft 365 コンプライアンス センター の Veritas コネクタを使用して、Skype for Business プラットフォームから組織のユーザー メールボックスにデータをインポートMicrosoft 365します。 Veritas には、[](https://www.veritas.com/en/au/insights/merge1/skype-for-business)Skype for Business データ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成されたコネクタがあります。 コネクタは、ユーザー間のメッセージ、常設チャット、会議メッセージなどのコンテンツを Skype for Business から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
-ユーザー Skype for Businessにデータを保存した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルMicrosoft 365コンプライアンス機能を適用できます。 アプリケーション コネクタSkype for Business使用して、データをインポートおよびアーカイブMicrosoft 365、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
+データSkype for Businessユーザー メールボックスに保存した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルMicrosoft 365コンプライアンス機能を適用できます。 アプリケーション コネクタSkype for Businessを使用して、データをインポートおよびアーカイブMicrosoft 365、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
 ## <a name="overview-of-archiving-skype-for-business-data"></a>データのアーカイブSkype for Business概要
 
 次の概要では、コネクタを使用してデータをアーカイブするプロセスSkype for Business説明Microsoft 365。
 
-![データのアーカイブ ワークフロー Skype for Businessします。](../media/SkypeforBusinessConnectorWorkflow.png)
+![データをアーカイブするSkype for Businessワークフロー。](../media/SkypeforBusinessConnectorWorkflow.png)
 
 1. 組織は、Skype for Businessサイトをセットアップおよび構成するためにSkype for Businessします。
 
@@ -41,19 +41,19 @@ ms.locfileid: "61643738"
 
 ## <a name="before-you-set-up-a-connector"></a>コネクタをセットアップする前に
 
-- Microsoft コネクタ用の Merge1 アカウントを作成します。 これを行うには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/form/requestacall/ms-connectors-contact.html)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の Merge1 アカウントを作成します。 これを行うには、 [Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/form/requestacall/ms-connectors-contact.html)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
 
-- 手順 1 で Skype for Business コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、データ コネクタ ページの[データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 既定では、この役割は、グループ内の任意の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- 手順 1 で Skype for Businessコネクタを作成し 、手順 3 で完了するユーザーには、データ コネクタ管理者の役割が割り当てられている必要があります。 この役割は、データ コネクタ ページの [データ  コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 この役割は、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ とコンプライアンス センターのアクセス許可」の「セキュリティとコンプライアンス センターの役割& [してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。 または、組織内の管理者がカスタム役割グループを作成し、データ コネクタ管理者の役割を割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、「アクセス許可」の「カスタム役割グループを作成する」[セクションを参照Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)。
 
-- この Veritas データ コネクタは、米国政府機関クラウドGCC環境Microsoft 365プレビュー中です。 サード パーティのアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にあるサードパーティ システムに組織の顧客データを格納、送信、処理する必要がある場合があります。したがって、Microsoft 365 コンプライアンスとデータ保護のコミットメントの対象とはなってはいけなかっています。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
+- この Veritas データ コネクタは、米国政府機関クラウドGCC環境Microsoft 365プレビュー中です。 サード パーティ製のアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にある、Microsoft 365 コンプライアンスおよびデータ保護のコミットメントの対象となされていないサードパーティ システムに対して、組織の顧客データを保存、送信、および処理する必要があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
 
 ## <a name="step-1-set-up-the-skype-for-business-connector"></a>手順 1: コネクタをSkype for Businessする
 
-最初の手順は、 [データコネクタ] ページの [データ コネクタ] ページにアクセスしMicrosoft 365 コンプライアンス センターデータのコネクタをSkype for Businessすることです。
+最初の手順は、 [データ コネクタ] ページにアクセスし、Microsoft 365 コンプライアンス センターコネクタを作成Skype for Businessです。
 
-1. に移動し <https://compliance.microsoft.com> 、[**データ コネクタ] を**  >  **クリックSkype for Business。**
+1. [データ コネクタ<https://compliance.microsoft.com>] に移動 **し、[データ コネクタ** > **Skype for Business**。
 
-2. [製品の **Skype for Business]** ページで、[コネクタの追加]**をクリックします**。
+2. [製品の **Skype for Business**] ページで、[コネクタの追加] **をクリックします**。
 
 3. [サービス条件 **] ページで、[** 同意する] を **クリックします**。
 
@@ -63,7 +63,7 @@ ms.locfileid: "61643738"
 
 ## <a name="step-2-configure-the-skype-for-business-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトSkype for Businessを構成する
 
-2 番目の手順は、Veritas Merge1 サイトSkype for Businessコネクタを構成することです。 コネクタを構成する方法についてはSkype for Business [Merge1 サードパーティ](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Skype%20for%20Business%20%20User%20Guide.pdf)コネクタ ユーザー ガイドを参照してください。
+2 番目の手順は、Veritas Merge1 サイトSkype for Businessコネクタを構成することです。 コネクタを構成する方法の詳細Skype for Business Merge1 サードパーティ コネクタ ユーザー ガイド[を参照してください](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Skype%20for%20Business%20%20User%20Guide.pdf)。
 
 [ファイルの **保存と&完了**] をクリックすると、コネクタ ウィザードの [ユーザー マッピング] ページが表示Microsoft 365 コンプライアンス センターされます。
 
@@ -71,19 +71,19 @@ ms.locfileid: "61643738"
 
 ユーザーをマップし、コネクタのセットアップを完了するには、次Microsoft 365 コンプライアンス センター手順を実行します。
 
-1. [ユーザーを **ユーザーにSkype for BusinessするMicrosoft 365]** ページで、自動ユーザー マッピングを有効にします。 このSkype for Businessには、組織内のユーザーの電子メール アドレスを含む *Email* というプロパティが含まれます。 コネクタでこのアドレスをユーザーに関連付Microsoft 365、アイテムはユーザーのメールボックスにインポートされます。
+1. [ユーザーを **ユーザーにSkype for BusinessするMicrosoft 365] ページ** で、ユーザーの自動マッピングを有効にします。 このSkype for Businessには、組織内のユーザーの電子メール アドレスを含む *Email* というプロパティが含まれます。 コネクタでこのアドレスをユーザーに関連付Microsoft 365、アイテムはユーザーのメールボックスにインポートされます。
 
 2. [**次へ**] をクリックし、設定を確認し、[データ コネクタ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
-## <a name="step-4-monitor-the-skype-for-business-connector"></a>手順 4: コネクタをSkype for Businessする
+## <a name="step-4-monitor-the-skype-for-business-connector"></a>手順 4: コネクタのSkype for Businessする
 
 コネクタコネクタを作成Skype for Business、コネクタの状態を [コネクタ] で表示Microsoft 365 コンプライアンス センター。
 
-1. 左側の <https://compliance.microsoft.com/> ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
+1. 左側のナビゲーション <https://compliance.microsoft.com/> で [ **データ コネクタ] に** 移動してクリックします。
 
-2. [コネクタ **] タブを** クリックし、Skype for Businessコネクタを選択して、コネクタのプロパティと情報を含むフライアウト ページを表示します。 
+2. [コネクタ **] タブを** クリックし、Skype for Businessコネクタを選択して、コネクタのプロパティと情報を含むフライアウト ページを表示します。
 
-3. [**ソースを含むコネクタの状態**] で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存) します。  このログには、Microsoft クラウドにインポートされたデータが含まれます。
+3. [**ソースを含むコネクタの** 状態] で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータが含まれます。
 
 ## <a name="known-issues"></a>既知の問題
 

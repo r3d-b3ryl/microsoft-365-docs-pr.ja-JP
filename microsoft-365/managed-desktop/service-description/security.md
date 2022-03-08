@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 7b5f99a6927fd87b1d75bde0dcc5e4fde1ff3a62
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 4a6eb73a172ecfb680cbc48367851e40b1a54401
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909701"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315415"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Microsoft Managed Desktop のセキュリティ テクノロジ
 
@@ -40,11 +40,11 @@ Microsoft Managed Desktop では、すべての管理対象デバイスがセキ
 | ボリューム全体の暗号化 | Windows BitLocker は、Microsoft Managed Desktop デバイスのボリューム暗号化ソリューションです。<br><br>組織がサービスに登録すると、デバイスがスリープ モードまたはオフのときにローカル データへの不正アクセスを防止するために、Windows BitLocker と組み込みの信頼プラットフォーム モジュール (TPM) を使用してデバイスが暗号化されます。
 | 監視 | Microsoft Defender for Endpoint は、すべての Microsoft Managed Desktop デバイスでセキュリティ脅威の監視に使用されます。 Defender for Endpoint を使用すると、企業のお客様は、企業ネットワーク内の高度な脅威を検出、調査、および対応できます。 詳細については、「 [Microsoft Defender for Endpoint」を参照してください。](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) |
 | オペレーティング システムの更新 | Microsoft Managed Desktop デバイスは、常に最新のセキュリティ更新プログラムで保護されます。 |
-| Secure Device Configuration | Microsoft Managed Desktop は、Microsoft セキュリティ ベースラインを実装します。 詳細については、「セキュリティベースライン[Windows参照してください。](/windows/security/threat-protection/windows-security-baselines)|
+| Secure Device Configuration | Microsoft Managed Desktop は、Microsoft セキュリティ ベースラインを実装します。 詳細については、「セキュリティ ベースライン[のWindows参照してください。](/windows/security/threat-protection/windows-security-baselines)|
 
 ## <a name="identity-and-access-management"></a>ID およびアクセス管理
 
-ID とアクセス管理は、企業の資産とビジネスクリティカルなデータを保護します。 Microsoft Managed Desktop は、デバイスを構成して、Azure Active Directory (Azure AD ID) で安全に使用します。 顧客の責任で、テナント内の正確な情報をAzure ADします。
+ID とアクセス管理は、企業の資産とビジネスクリティカルなデータを保護します。 Microsoft Managed Desktop は、デバイスを構成して、Azure Active Directory (Azure AD ID) で安全に使用します。 顧客は、顧客のテナント内で正確な情報を維持Azure ADです。
 
 | サービス | 説明 |
 | ----- | ----- |
@@ -57,8 +57,7 @@ ID とアクセス管理は、企業の資産とビジネスクリティカル�
 
 | サービス | 説明 |
 | ----- | ----- |
-| VPN | 制限された企業リソースをイントラネットの外部に公開できるよう、お客様は VPN インフラストラクチャを所有しています。<br><br>最小要件: Microsoft Managed Desktop には、互換性Windows 10サポートされている VPN ソリューションが必要です。 組織で VPN ソリューションが必要な場合は、Intune を介してパッケージ化Windows 10展開可能な VPN ソリューションをサポートする必要があります。 詳細については、ソフトウェア発行元にお問い合わせください。<br><br>推奨事項:<br><ul><li> Microsoft では、VPN プロファイルをプッシュするために Intune を介して簡単に展開できる最新の VPN ソリューションをお勧めします。 このアプローチは、企業ネットワークにアクセスするための常時オン、シームレス、信頼性、および安全な方法を提供します。 詳細については、「Intune の [VPN 設定」を参照してください](/intune/vpn-settings-configure)。</li><li>厚い VPN クライアント、または古い VPN クライアントは、ユーザー環境に影響を与える可能性がある Microsoft Managed Desktop を使用している間、Microsoft によって推奨されません。</li><li>パフォーマンスの問題を回避するために、送信 Web トラフィックは VPN を経由せずにインターネットに直接送信する必要があります。</li><li>理想的には、VPN ではなくアプリ プロキシAzure Active Directory使用をお勧めします。</li></ul>
-
+| VPN | 制限された企業リソースをイントラネットの外部に公開できるよう、お客様は VPN インフラストラクチャを所有しています。<br><br>最小要件: Microsoft Managed Desktop には、互換性Windows 10サポートされている VPN ソリューションが必要です。 組織が VPN ソリューションを必要とする場合は、Intune を介してパッケージ化Windows 10展開可能な VPN ソリューションをサポートする必要があります。 詳細については、ソフトウェア発行元にお問い合わせください。<br><br>推奨事項:<br><ul><li> Microsoft では、VPN プロファイルをプッシュするために Intune を介して簡単に展開できる最新の VPN ソリューションをお勧めします。 このアプローチは、企業ネットワークにアクセスするための常時オン、シームレス、信頼性、および安全な方法を提供します。 詳細については、「Intune の [VPN 設定」を参照してください](/intune/vpn-settings-configure)。</li><li>厚い VPN クライアント、または古い VPN クライアントは、ユーザー環境に影響を与える可能性がある Microsoft Managed Desktop を使用している間、Microsoft によって推奨されません。</li><li>パフォーマンスの問題を回避するために、送信 Web トラフィックは VPN を経由せずにインターネットに直接送信する必要があります。</li><li>理想的には、VPN ではなくアプリ プロキシAzure Active Directory使用をお勧めします。</li></ul>
 
 ## <a name="information-security"></a>情報セキュリティ
 
@@ -67,4 +66,4 @@ ID とアクセス管理は、企業の資産とビジネスクリティカル�
 | サービス | 説明 |
 | ----- | ----- |
 | データ復旧 | デバイス上のキー フォルダーに格納されている情報は、OneDrive for Business。 Microsoft Managed Desktop は、データと同期されていないデータに対して責任を負OneDrive for Business。
-| Windows 情報保護 | 高レベルの情報セキュリティが必要な企業の場合は、Windows [Azure Information Protection を](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)[使用することをお勧めします。](https://www.microsoft.com/cloud-platform/azure-information-protection)
+| Windows 情報保護 | 高レベルの情報セキュリティを必要とする企業の場合は、Windows [Azure Information Protection を](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)[使用することをお勧めします。](https://www.microsoft.com/cloud-platform/azure-information-protection)

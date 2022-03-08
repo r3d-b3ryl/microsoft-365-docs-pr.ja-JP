@@ -2,8 +2,8 @@
 title: ドメイン の使用Connect
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
-description: ドメイン 管理者が有効なレジストラー Connectを使用して、ドメインをドメインに追加する方法Microsoft 365。
-ms.openlocfilehash: 6203292332d895d99131c4ab324fc342da9aaeed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: ドメイン 管理者が有効なレジストラーをConnectし、ドメインをドメインに追加する方法についてMicrosoft 365。
+ms.openlocfilehash: 1691d86ebd459ee69faca8d3a21d99b0caa89fca
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164790"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316913"
 ---
 # <a name="using-domain-connect"></a>ドメイン の使用Connect
 

@@ -2,8 +2,8 @@
 title: E4 サブスクリプションOffice 365アップグレードする
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,30 +14,30 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- customer-email
 - commerce_subscriptions
+- customer-email
 - admindeeplinkMAC
 search.appverid: MET150
 description: E4 サブスクリプションからアップグレードするOffice 365します。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c028106e13c12c3d9c702262911a251080cefb6a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 60e7cb7c97255f3588c99a0eb66bc7c8379de8b9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372398"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316339"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>E4 サブスクリプションOffice 365アップグレードする
 
-この記事では、E4 から新しいサブスクリプションへのアップグレードOffice 365手順を説明します。 E4 からアップグレードするときに使用できるオプションの詳細については、「E4 のお客様Office 365重要[な情報」Office 365 を参照してください](important-information-e4.md)。
+この記事では、E4 から新しいサブスクリプションへのアップグレードOffice 365手順を実行します。 E4 からアップグレードするときに使用できるオプションの詳細については、「Office 365 E4 のお客様に関する[重要Office 365参照してください](important-information-e4.md)。
 
 > [!IMPORTANT]
 > この記事は、Office 365または請求書のみを通じて Microsoft から直接購入された E4 サブスクリプションに適用されます。 サブスクリプションがパートナー経由やボリューム ライセンス サービス センター経由など、別の方法で購入された場合は、Microsoft アカウント担当者またはパートナーに連絡して、プランのアップグレードを支援してください。
 
 ## <a name="what-are-my-options-for-how-to-upgrade"></a>アップグレード方法に関するオプションは何ですか?
 
-プランをアップグレードする最も簡単な方法は、プランの [アップグレード] タブを<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">使用Microsoft 365 管理センター。</a> ただし、[アップグレード] **タブの** 使用は、すべての状況でサポートされるわけではありません。 シナリオがサポートされていない場合は、プランを手動でアップグレードできる場合があります。
+プランをアップグレードする最も簡単な方法は、プランの [アップグレード] <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">タブを使用</a>Microsoft 365 管理センター。 ただし、[アップグレード] **タブの** 使用は、すべての状況でサポートされるわけではありません。 シナリオがサポートされていない場合は、プランを手動でアップグレードできる場合があります。
 
 ## <a name="what-is-the-upgrade-tab"></a>[アップグレード] タブとは
 
@@ -71,7 +71,7 @@ ms.locfileid: "61372398"
 
 ## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>[アップグレード] タブを使用してプランをアップグレードする
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>始める前に
 
 ここでは、操作を始める前に知っておく必要がある重要な点について説明します。
 
@@ -87,11 +87,11 @@ ms.locfileid: "61372398"
 2. E4 サブスクリプションOffice 365選択します。
 3. [サブスクリプションの詳細] ページで、[アップグレード] タブ **を選択** します。
 4. 購入するサブスクリプションを見つけて、[アップグレード] を **選択します**。
-5. [カート **] ページ** で、すべてが正しいか確認します。 月払いまたは年払いを選択し、[数量] でライセンス数を **確認します**。
+5. [カート **] ページ** で、すべてが正しいか確認します。 月払いまたは年払いを選択し、[数量] でライセンス数を確認 **します**。
     > [!NOTE]
     > E4 サブスクリプションに関連付けられているアドオン サブスクリプション (Office 365 ファイルの追加などOffice 365がStorage表示されます。 ただし、アップグレードするサブスクリプションに含まれるアドオン サブスクリプションがある場合は、そのサブスクリプションを削除します。
 6. 注文を確認した後、[チェックアウトに移動] **を選択します**。
-7. [チェックアウト **] ページで** 、[ **販売済み]**、[ **請求** 済み] 、および [アイテム] を **この順序で確認します**。 これらの **項目の** 横にある [変更] を選択して、情報を編集します。
+7. [チェックアウト **] ページで**、[**販売者]、[****請求** 済み]、および [**アイテム] をこの順序で確認します**。 これらの **項目の** 横にある [変更] を選択して、情報を編集します。
     > [!NOTE]
     > 支払い方法として請求書を使用するオプションは、一定のコスト金額を超える注文でのみ使用できます。 請求書支払いオプションを選択すると、クレジット チェックが必要な場合、アップグレード プロセスが最大 2 営業日遅れることがあります。
 8. 完了したら、[注文の配置] **を選択します**。
@@ -110,7 +110,7 @@ ms.locfileid: "61372398"
 
 ### <a name="step-1-buy-a-new-subscription"></a>手順 1: 新しいサブスクリプションを購入する
 
-まだ新しいサブスクリプションを持っていない場合は、ビジネス サブスクリプション用に別Microsoft 365[購入できます](../try-or-buy-microsoft-365.md)。
+まだ新しいサブスクリプションを持っていない場合は、別のサブスクリプションをMicrosoft 365[購入できます](../try-or-buy-microsoft-365.md)。
 
 サブスクリプションが既にある場合は、次の手順に進みます。
 
@@ -128,14 +128,14 @@ ms.locfileid: "61372398"
 
 ### <a name="step-3-reassign-licenses-to-users"></a>手順 3: ユーザーにライセンスを再割り当てする
 
-一度に最大[20 Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)ライセンスを再割り当てする場合は、このツールを使用できます。 方法については、「ユーザーを別の [サブスクリプションに移動する」を参照してください](move-users-different-subscription.md)。
+一度に最大 20 [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)ライセンスを再割り当てする場合は、このツールを使用できます。 方法については、「ユーザーを別の [サブスクリプションに移動する」を参照してください](move-users-different-subscription.md)。
 
 > [!TIP]
 > ユーザーが多い場合は、PowerShell を使用してOffice 365[ライセンスを一括で割り当てできます](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
 
 ### <a name="step-4-cancel-the-office-365-e4-subscription"></a>手順 4: E4 サブスクリプションOffice 365キャンセルする
 
-すべてのユーザーが新しいサブスクリプションに再割り当てされた後[、E4 サブスクリプションOffice 365取り消します](cancel-your-subscription.md)。
+すべてのユーザーが新しいサブスクリプションに再割り当てされた後、[E4 サブスクリプションOffice 365取り消します](cancel-your-subscription.md)。
 
 ## <a name="related-content"></a>関連コンテンツ
 

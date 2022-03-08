@@ -3,25 +3,30 @@ title: 検疫ポリシー
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer: null
-ms.date: null
+ms.reviewer: ''
+ms.date: ''
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
 search.appverid:
-  - MET150
-ms.assetid: null
+- MET150
+ms.assetid: ''
 ms.collection:
-  - M365-security-compliance
-ms.custom: null
+- M365-security-compliance
+ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 8f015951fec4ea8fb9d433c8b48ccb26cd9e1222
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321293"
 ---
-
 # <a name="quarantine-policies"></a>検疫ポリシー
 
-Exchange Online Protection (EOP _) および_ Office 365 用 Microsoft Defender の検疫ポリシーでは、メッセージが検疫された理由に基づいて、ユーザーが検疫されたメッセージに対して実行できる操作を管理者が制御できます。
+Exchange Online Protection (EOP _) および_ Office 365 用 Microsoft Defender の検疫ポリシー (以前は検疫タグ) を使用すると、管理者はメッセージが検疫された理由に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を制御できます。
 
 従来、ユーザーは、メッセージが検疫された理由に基づいて、検疫メッセージに対する対話のレベルを許可または拒否されています。 たとえば、ユーザーはスパム対策フィルターによって検疫されたメッセージをスパムまたはバルクとして表示および解放できますが、高信頼のフィッシングやマルウェアとして検疫されたメッセージを表示または解放できます。
 
@@ -57,12 +62,12 @@ Exchange Online Protection (EOP _) および_ Office 365 用 Microsoft Defender 
 |既定の検疫ポリシー|使用されるアクセス許可グループ|検疫通知が有効になっていますか?|
 |---|---|---|
 |AdminOnlyAccessPolicy|アクセスなし|いいえ|
-|DefaultFullAccessPolicy|フル アクセス|不要|
+|DefaultFullAccessPolicy|フル アクセス|いいえ|
 |NotificationEnabledPolicy<sup>\*</sup>|フル アクセス|はい|
 
 事前設定されたアクセス許可グループの既定のアクセス許可が気に入らない場合、または検疫通知を有効にする場合は、カスタム検疫ポリシーを作成して使用します。 各アクセス許可の動作の詳細については、この記事の後半の「 [検疫ポリシーのアクセス許可の詳細](#quarantine-policy-permission-details) 」セクションを参照してください。
 
-Microsoft 365 Defender ポータルまたは PowerShell で検疫ポリシーを作成および割り当てる (Exchange Online メールボックスを持つ Microsoft 365 組織の場合は Exchange Online PowerShell、EOP 組織ではスタンドアロンの EOP PowerShell を使用せずにExchange Onlineメールボックス)。
+Microsoft 365 Defender ポータルまたは PowerShell で検疫ポリシーを作成および割り当てる (Exchange Online メールボックスを持つ Microsoft 365 組織の場合は Exchange Online Exchange Online PowerShell、EOP 組織ではスタンドアロンの EOP PowerShell を使用せずにExchange Onlineメールボックス)。
 
 > [!NOTE]
 > 検疫済みメッセージの有効期限が切れるまでの期間は、スパム対策ポリシーでこの日数の検疫にスパムを **保持 (**_QuarantineRetentionPeriod_) によって制御されます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
@@ -92,7 +97,7 @@ DefaultFullAccessPolicy のアクセス許可を提供しますが、検疫通�
 
 ## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>手順 1: セキュリティ ポータルで検疫ポリシーをMicrosoft 365 Defenderする
 
-1. このポータル [Microsoft 365 Defender、[](https://security.microsoft.com) \>  \>  \>ルール] セクションの&ルール脅威ポリシー&ポリシーを電子メールで送信する」**に移動** します。
+1. このポータル [Microsoft 365 Defender、[](https://security.microsoft.com) \>  \>  \>ルール] セクションの&ルール脅威ポリシー&ポリシーをメールで送信する」**に移動** します。
 
 2. [検疫ポリシー **] ページで** 、[カスタム ポリシーの追加] ![アイコンをクリックします。](../../media/m365-cc-sc-create-icon.png) **カスタム ポリシーを追加します**。
 
@@ -194,7 +199,7 @@ _EndUserQuarantinePermissionsValue_ パラメーターは、バイナリ値か�
 New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -EsnEnabled $true
 ```
 
-カスタムアクセス許可の場合は、前の表を使用して、必要なアクセス許可に対応するバイナリ値を取得します。 バイナリ値を 10 進値に変換し、 _EndUserQuarantinePermissionsValue_ パラメーターに 10 進値を使用します。
+カスタムアクセス許可の場合は、前の表を使用して、必要なアクセス許可に対応するバイナリ値を取得します。 バイナリ値を 10 進値に変換し、 _EndUserQuarantinePermissionsValue_ パラメーターに 10 進値を使用します。 パラメーター値にバイナリ値を使用しない。
 
 構文とパラメーターの詳細については、「 [New-QuarantinePolicy」を参照してください](/powershell/module/exchange/new-quarantinepolicy)。
 
@@ -209,10 +214,10 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 |機能|検疫ポリシーがサポートされていますか?|使用される既定の検疫ポリシー|
 |---|:---:|---|
 |[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** (_SpamAction_)</li><li>**高信頼スパム** (_HighConfidenceSpamAction_)</li><li>**フィッシング** (_PhishSpamAction_)</li><li>**高信頼フィッシング** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|はい|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li><li>AdminOnlyAccessPolicy (アクセスなし)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li></ul>|
-|フィッシング詐欺対策ポリシー: <ul><li>[スプーフィング インテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[ユーザーの Defender での偽装Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。<ul><li>**偽装ユーザーとしてメッセージが検出された場合** (_TargetedUserProtectionAction_)</li><li>**偽装ドメインとしてメッセージが検出された場合** (_TargetedDomainProtectionAction_)</li><li>**メールボックス インテリジェンスがユーザーを検出して偽装した** 場合 (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|はい|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li><li>偽装保護:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li></ul></li></ul>|
+|フィッシング詐欺対策ポリシー: <ul><li>[スプーフィング インテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**偽装ユーザーとしてメッセージが検出された場合** (_TargetedUserProtectionAction_)</li><li>**偽装ドメインとしてメッセージが検出された場合** (_TargetedDomainProtectionAction_)</li><li>**メールボックス インテリジェンスがユーザーを検出して偽装した** 場合 (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|はい|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li><li>偽装保護:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (フル アクセス)</li></ul></li></ul>|
 |[マルウェア対策ポリシー](configure-anti-malware-policies.md): 検出されたメッセージはすべて常に検疫されます。|はい|AdminOnlyAccessPolicy (アクセスなし)|
-|[セーフ添付ファイルの保護](safe-attachments.md): <ul><li>[添付ファイル] ポリシーによってマルウェアとして検疫された添付ファイルセーフメール メッセージ (_Enable_ and _Action_)</li><li>[ファイルの添付ファイル] セーフ[、SharePoint、](mdo-for-spo-odb-and-teams.md)およびOneDriveによってマルウェアとして検疫Microsoft Teams</li></ul>|<ul><li>はい</li><li>不要</li></ul>|<ul><li>AdminOnlyAccessPolicy (アクセスなし)</li><li>該当なし</li></ul>|
-|[アクションを含む](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)メール フロー ルール (トランスポート ルールとも呼ばれる): メッセージをホストされた検疫 (検疫) **に配信**_します_。|不要|該当なし|
+|[セーフ添付ファイルの保護](safe-attachments.md): <ul><li>[添付ファイル] ポリシーによってマルウェアとして検疫された添付ファイルセーフメール メッセージ (_Enable_ and _Action_)</li><li>[添付ファイル] を使用してマルウェア[セーフ検疫SharePoint、OneDrive、およびMicrosoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>はい</li><li>いいえ</li></ul>|<ul><li>AdminOnlyAccessPolicy (アクセスなし)</li><li>該当なし</li></ul>|
+|[アクションを含む](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)メール フロー ルール (トランスポート ルールとも呼ばれる): メッセージをホストされた検疫 (検疫) **に配信**_します_。|いいえ|該当なし|
 |
 
 <sup>\*</sup> この [記事で前述したように](#full-access-permissions-and-quarantine-notifications)、組織は DefaultFullAccessPolicy の代わりに NotificationEnabledPolicy を使用する場合があります。 これら 2 つの検疫ポリシーの唯一の違いは、NotificationEnabledPolicy で検疫通知がオンにされ、DefaultFullAccessPolicy でオフになっている点です。
@@ -226,7 +231,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 
 ### <a name="anti-spam-policies"></a>スパム対策ポリシー
 
-1. このポータル [Microsoft 365 Defender、[](https://security.microsoft.com) \>  \>  \>ポリシー] セクション&[&スパム対策のルール] に **移動します。** 
+1. [メール Microsoft 365 Defender [] ポータル](https://security.microsoft.com)の [メール &  \>  \>  \>ポリシー] &[ポリシー] セクションの [脅威ポリシースパム対策] **に移動** します。
 
    または、[ **Ant-spam** ポリシー] ページに直接移動するには、 を使用します <https://security.microsoft.com/antispam>。
 
@@ -295,7 +300,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 スプーフィング インテリジェンスは、EOP と Defender で使用Office 365。 ユーザー偽装保護、ドメイン偽装保護、およびメールボックス インテリジェンスは、Defender で使用できるのは、Office 365。 詳細については、「[Microsoft 365 でのフィッシング詐欺対策ポリシー](set-up-anti-phishing-policies.md)」を参照してください。
 
-1. [セキュリティ Microsoft 365 Defender []](https://security.microsoft.com) \>  \>  \> ポータルで、[ポリシー] セクション&[脅威&フィッシング対策ポリシー] に **移動します。**
+1. このポータル [Microsoft 365 Defender、[](https://security.microsoft.com) \>  \>  \>ポリシー] セクション&[&フィッシング対策] ルールの [メール グループ ポリシー] **に移動** します。
 
    または、[ **Ant-spam** ポリシー] ページに直接移動するには、 を使用します <https://security.microsoft.com/antiphishing>。
 
@@ -337,9 +342,9 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 <New-AntiPhishPolicy -Name "<Unique name>" | Set-AntiPhishPolicy -Identity "<Policy name>"> [-EnableSpoofIntelligence $true] [-AuthenticationFailAction Quarantine] [-SpoofQuarantineTag <QuarantineTagName>] [-EnableMailboxIntelligence $true] [-EnableMailboxIntelligenceProtection $true] [-MailboxIntelligenceProtectionAction Quarantine] [-MailboxIntelligenceQuarantineTag <QuarantineTagName>] [-EnableOrganizationDomainsProtection $true] [-EnableTargetedDomainsProtection $true] [-TargetedDomainProtectionAction Quarantine] [-TargetedDomainQuarantineTag <QuarantineTagName>] [-EnableTargetedUserProtection $true] [-TargetedUserProtectionAction Quarantine] [-TargetedUserQuarantineTag <QuarantineTagName>] ...
 ```
 
-**注**:
+**注意**:
 
-- 特定 _の保護\*_ 機能を有効にするには、Enable パラメーターが必要です。 _EnableMailboxIntelligence_ パラメーターと _EnableSpoofIntelligence_ パラメーターの既定値は $true なので、PowerShell で新しいフィッシング対策ポリシーを作成するときにこれらのパラメーターを使用する必要はありません。 その他 _のすべての Enable\*_ パラメーターには _\*_、$true値を設定して、対応する Action パラメーターで検疫ポリシーを割り当てる必要があります。 _*\Action パラメーターに既定値の検疫_ はありません。
+- 特定 _の保護\*_ 機能を有効にするには、Enable パラメーターが必要です。 _EnableMailboxIntelligence_ パラメーターと _EnableSpoofIntelligence_ パラメーターの既定値は $true なので、PowerShell で新しいフィッシング対策ポリシーを作成するときにこれらのパラメーターを使用する必要はありません。 その他 _のすべての Enable\*_ パラメーターには、対応するアクション パラメーター$true _\*_ 検疫ポリシーを割り当てる値を設定するために、値が設定されている必要があります。 _*\Action パラメーターに既定値の検疫_ はありません。
 
   既存のフィッシング対策ポリシーで重要なパラメーター値を確認するには、次のコマンドを実行します。
 
@@ -378,7 +383,7 @@ Set-AntiPhishPolicy -Identity "Human Resources" -EnableTargetedDomainsProtection
 
 ### <a name="anti-malware-policies"></a>マルウェア対策ポリシー
 
-1. [ポリシー] [Microsoft 365 Defenderで](https://security.microsoft.com) \>  \>  \>、[ポリシー] セクション&[脅威&マルウェア対策ポリシー] に **移動します。** 
+1. [セキュリティ Microsoft 365 Defender [] ポータル](https://security.microsoft.com) \>  \>  \>で、[ポリシー] セクション&ルール&マルウェア対策ポリシーをメールで送信する」**に移動** します。
 
    または、[マルウェア対策] ページに直接移動するには、 **を** 使用します <https://security.microsoft.com/antimalwarev2>。
 
@@ -434,16 +439,16 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 ### <a name="safe-attachments-policies-in-defender-for-office-365"></a>セーフの Defender の添付ファイル ポリシー Office 365
 
-1. このポータル [Microsoft 365 Defender、[](https://security.microsoft.com) \>  \>  \>ポリシー] セクション&[&の添付ファイルセーフメール] に **移動** します。
+1. このポータル [Microsoft 365 Defender、[](https://security.microsoft.com) \>  \>  \>ポリシー] セクション&の [&の脅威ポリシーセーフメール] **に移動** します。
 
    または、[添付ファイル] ページに直接移動 **セーフを** 使用します<https://security.microsoft.com/safeattachmentv2>。
 
 2. [添付 **ファイルセーフ] ページ** で、次のいずれかの手順を実行します。
-   - 既存の添付ファイル ポリシーをセーフ選択します。
-   - 新しい添付ファイル セーフ作成します。
+   - 既存の添付ファイル ポリシーを検索セーフ選択します。
+   - 新しい添付ファイルポリシーセーフ作成します。
 
 3. 次のいずれかの手順を実行します。
-   - **既存の編集**: ポリシーの名前をクリックしてポリシーを選択します。 ポリシーの詳細のフライアウトで、[設定] セクションに移動 **設定、[設定** の編集] **をクリックします**。
+   - **既存の編集**: ポリシーの名前をクリックしてポリシーを選択します。 ポリシーの詳細のフライアウトで、[設定] セクションに移動設定、[設定 **の** 編集] **をクリックします**。
    - **[新規の** 作成]: 新しいポリシー ウィザードで、[新しいポリシー] ページ **に設定** します。
 
 4. [ページの **設定**、次の手順を実行します。
@@ -452,7 +457,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
    **注**: 新しいポリシーを作成すると、空白の **検疫** ポリシー値は、既定の検疫ポリシーが使用されます。 後でポリシーを編集すると、前の表で説明したように、空白の値は実際の既定の検疫ポリシー名に置き換えられる。
 
-添付ファイル ポリシーを作成および変更するセーフ詳細については、「[Microsoft Defender](set-up-safe-attachments-policies.md) の添付ファイル ポリシーセーフセットアップ」で説明Office 365。
+添付ファイル ポリシーを作成および変更するセーフ手順については、「Microsoft Defender for セーフ 添付ファイル ポリシーをセットアップする」[を参照Office 365](set-up-safe-attachments-policies.md)。
 
 #### <a name="safe-attachments-policies-in-powershell"></a>セーフの添付ファイル ポリシー
 
@@ -466,7 +471,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 - _Action パラメーターの_ 値 Block、Replace、または DynamicDelivery を指定すると、検疫されたメッセージが発生する可能性があります (値 Allow はメッセージを検疫しません)。 Action パラメーターの _値は、Enable_ パラメーターの`$true`値が .
 
-- QuarantineTag パラメーターを使用せずに新しい セーフ 添付ファイル ポリシーを作成すると、電子メール内の セーフ 添付ファイル検出の既定の検疫ポリシーが使用されます (AdminOnlyAccessPolicy)。
+- QuarantineTag パラメーターを使用せずにセーフ添付ファイル ポリシーを新しく作成すると、電子メール内の セーフ 添付ファイル検出の既定の検疫ポリシーが使用されます (AdminOnlyAccessPolicy)。
 
   既定の検疫ポリシーをカスタム検疫ポリシーに置き換える必要があるのは、添付ファイル ポリシーによって検疫される電子メール メッセージの既定のエンド ユーザー機能を変更するセーフです。
 
@@ -476,7 +481,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
   Get-SafeAttachmentPolicy | Format-List Name,Enable,Action,QuarantineTag
   ```
 
-- PowerShell の新セーフ添付ファイル ポリシーには、**New-SafeAttachmentPolicy** コマンドレットを使用する安全な添付ファイル ポリシー (設定) と、**New-SafeAttachmentRule** コマンドレットを使用する排他的な安全な添付ファイル ルール (受信者フィルター) が必要です。 手順については、「[Use Exchange Online PowerShell またはスタンドアロン EOP PowerShell](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) を使用して添付ファイルポリシーセーフ構成する」を参照してください。
+- PowerShell の新セーフ 添付ファイル ポリシーには、**New-SafeAttachmentPolicy** コマンドレットを使用する安全な添付ファイル ポリシー (設定) と、**New-SafeAttachmentRule** コマンドレットを使用する排他的な安全な添付ファイル ルール (受信者フィルター) が必要です。 手順については、「[Use Exchange Online PowerShell またはスタンドアロン EOP PowerShell](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) を使用して添付ファイルポリシーセーフ構成する」を参照してください。
 
 この例では、検出されたメッセージをブロックし、検疫されたメッセージにアクセス許可を割り当てない NoAccess という名前のカスタム検疫ポリシーを使用する、Research Department という名前の安全な添付ファイル ポリシーを作成します。
 
@@ -494,7 +499,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 構文とパラメーターの詳細については、「[Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy)」を参照してください。
 
-## <a name="configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal"></a>ポータルでグローバル検疫通知設定をMicrosoft 365 Defenderする
+## <a name="configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal"></a>ポータルでグローバル検疫通知の設定をMicrosoft 365 Defenderする
 
 検疫ポリシーのグローバル設定を使用すると、検疫ポリシーで検疫通知が有効になっている場合に検疫メッセージの受信者に送信される検疫通知をカスタマイズできます。 これらの通知の詳細については、「検疫通知」 [を参照してください](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
@@ -526,7 +531,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      ![検疫ポリシーのグローバル検疫通知設定の [2 番目の言語] ボックスで選択した言語。](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
-   - **会社のロゴを使用** する: 検疫通知の上部で使用される既定の Microsoft ロゴを置き換える場合は、このオプションを選択します。 これを行う前に、「カスタム ロゴをアップロードするには、組織Microsoft 365テーマをカスタマイズする」の[手順](../../admin/setup/customize-your-organization-theme.md)に従う必要があります。
+   - **会社のロゴを使用** する: 検疫通知の上部で使用される既定の Microsoft ロゴを置き換える場合は、このオプションを選択します。 これを行う前に、「カスタム ロゴをアップロードするには、組織[](../../admin/setup/customize-your-organization-theme.md)Microsoft 365テーマをカスタマイズする」の指示に従う必要があります。
 
      次のスクリーンショットは、検疫通知のカスタム ロゴを示しています。
 
@@ -568,7 +573,7 @@ PowerShell を使用して検疫ポリシーを表示する場合は、次の手
 
 構文とパラメーターの詳細については、「[Get-HostedContentFilterPolicy](/powershell/module/exchange/get-hostedcontentfilterpolicy)」を参照してください。
 
-## <a name="modify-quarantine-policies-in-the-microsoft-365-defender-portal"></a>ポータルで検疫ポリシーをMicrosoft 365 Defenderする
+## <a name="modify-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで検疫ポリシーを変更する
 
 AdminOnlyAccessPolicy または DefaultFullAccessPolicy という名前の組み込みの検疫ポリシーを変更できない。 NotificationEnabledPolicy [という名前](#full-access-permissions-and-quarantine-notifications)の組み込みポリシー (持っている場合) とカスタム検疫ポリシーを変更できます。
 
@@ -596,7 +601,7 @@ Set-QuarantinePolicy -Identity "<QuarantinePolicyName>" [Settings]
 
 構文とパラメーターの詳細については、「 [Set-QuarantinePolicy」を参照してください](/powershell/module/exchange/set-quarantinepolicy)。
 
-## <a name="remove-quarantine-policies-in-the-microsoft-365-defender-portal"></a>セキュリティ ポータルで検疫ポリシーをMicrosoft 365 Defenderする
+## <a name="remove-quarantine-policies-in-the-microsoft-365-defender-portal"></a>ポータルで検疫ポリシーをMicrosoft 365 Defenderする
 
 **注**:
 

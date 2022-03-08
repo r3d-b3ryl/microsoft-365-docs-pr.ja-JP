@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
+title: Microsoft Defender Windowsサービスへのオンボード サーバー
 description: センサー Windowsを Microsoft Defender for Endpoint センサーに送信できるよう、オンボード サーバーを使用します。
 keywords: オンボード サーバー、サーバー、2012r2、2016、2019、サーバーオンボーディング、デバイス管理、エンドポイント サーバー用 Microsoft Defender の構成、Microsoft Defender for Endpoint サーバーのオンボード、Microsoft Defender for Endpoint サーバーのオンボード
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b04cd69afbf2c7804d8d559e1343336abc792cdc
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 2979216cb87982210ac33dd8e273702f8bc18bf0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909761"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328093"
 ---
-# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
+# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsサービスへのオンボード サーバー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "62909761"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
 
-Defender for Endpoint では、サポートを拡張して、サーバー オペレーティング Windowsも含まれます。 このサポートは、高度な攻撃の検出と調査機能を、Microsoft 365 Defender提供します。 サーバーのWindowsは、サーバーアクティビティ、カーネル攻撃とメモリ攻撃検出の範囲に関するより深い洞察を提供し、応答アクションを有効にします。
+Defender for Endpoint では、サポートを拡張して、サーバー オペレーティング Windowsも含まれます。 このサポートは、高度な攻撃の検出および調査機能を、Microsoft 365 Defenderします。 サーバーのサポートWindows、カーネル攻撃とメモリ攻撃の検出に関する詳細な分析情報を提供し、応答アクションを有効にします。
 
 このトピックでは、特定のサーバーを Microsoft Defender for Endpoint Windowsオンボードする方法について説明します。
 
@@ -53,9 +53,12 @@ Defender for Endpoint では、サポートを拡張して、サーバー オペ
 
 サーバーを正常にオンボードするには、次の一般的な手順を完了する必要があります。
 
-![サーバーとデバイスのオンボーディング フロー Windows図Windows 10図](images/server-onboarding-tools-methods.png)
+![サーバーとデバイスのオンボーディング フロー Windows Windows 10図](images/server-onboarding-tools-methods.png)
 
 **Windows Server 2012 R2 と Windows Server 2016 (プレビュー)**
+
+>[!IMPORTANT]
+> この機能を使用するには、プレビュー機能を [エンドポイント] セクションでオンMicrosoft 365 Defender必要があります。 [エンドポイント] [Microsoft 365 Defender > 設定 >高度>に移動し](https://security.microsoft.com/preferences2/integration)、[プレビュー] 機能をオンにする。
 
 - インストール パッケージとオンボーディング パッケージのダウンロード
 - インストール パッケージの適用
@@ -67,13 +70,13 @@ Defender for Endpoint では、サポートを拡張して、サーバー オペ
 - 対応するツールのオンボーディング手順に従う
 
 >[!IMPORTANT]
->Microsoft Defender for Endpoint Server SKU を購入する資格を得るには、Windows E5/A5、Microsoft 365 E5/A5、または Microsoft 365 E5 Security サブスクリプション ライセンスを組み合わせて購入している必要があります。  ライセンスの詳細については、「製品条項」 [を参照してください](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all)。  
+>Microsoft Defender for Endpoint Server SKU を購入する資格を得るには、Windows E5/A5、Microsoft 365 E5/A5、または Microsoft 365 E5 Security サブスクリプション ライセンスの組み合わせ最小数を既に購入している必要があります。  ライセンスの詳細については、「製品条項」 [を参照してください](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all)。  
 
 
 
 ### <a name="new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview"></a>最新Windows Server 2012ソリューションの R2 および 2016 の新機能 (プレビュー)
 
-R2 および R2 および Windows Server 2012の以前Windows Server 2016実装では、Microsoft Monitoring Agent (MMA) の使用が必要でした。
+R2 および R2 および Windows Server 2012の以前Windows Server 2016実装には、Microsoft Monitoring Agent (MMA) の使用が必要でした。
 
 新しい統合ソリューション パッケージを使用すると、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になります。 さらに、この統合ソリューション パッケージには、次の大きな改善点が付属しています。
 
@@ -89,19 +92,29 @@ R2 および R2 および Windows Server 2012の以前Windows Server 2016実装�
 - [自動調査と応答 (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
 - [タンパープロテクション](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
+オンボーディングを行うサーバーに応じて、統合ソリューションは、Microsoft Defender ウイルス対策センサーまたはEDRします。 次の表は、インストールされているコンポーネントと既定で組み込むコンポーネントを示しています。
+
+|サーバーのバージョン|AV|EDR|
+|----|----|----|
+|Windows Server 2012 R2 SP1|![はい。](images/svg/check-yes.svg)|![はい。](images/svg/check-yes.svg)|
+|Windows Server 2016|組み込み|![はい。](images/svg/check-yes.svg)|
+|Windows Server 2019 以降|組み込み|組み込み|
+
 以前に MMA を使用してサーバーをオンボードした場合は、「 [Server migration](server-migration.md) 」のガイダンスに従って新しいソリューションに移行します。
 
 >[!NOTE]
->R2 Windows Server 2012 と Windows Server 2016 のオンボーディングのこの方法はプレビュー中ですが、以前のオンボーディング方法を引き続き使用するには、Microsoft Monitoring Agent (MMA) を使用します。 詳細については、「 [MMA を使用してエンドポイントをインストールして構成する」を参照してください](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)。
+>R2 Windows Server 2012 と Windows Server 2016 のオンボーディングのこの方法はプレビュー中ですが、Microsoft Monitoring Agent (MMA) を使用して以前のオンボーディング方法を引き続き使用できます。 詳細については、「 [MMA を使用してエンドポイントをインストールして構成する」を参照してください](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)。
 
 #### <a name="known-issues-and-limitations-on-the-new-unified-solution-package-for-windows-server-2012-r2-and-2016"></a>R2 および 2016 の新しい統合ソリューション パッケージに関する既知Windows Server 2012制限事項
 
 次の詳細は、R2 および 2016 の新しい統合ソリューション パッケージWindows Server 2012適用されます。
 
-- 「プロキシ サーバー内の [Microsoft Defender for Endpoint サービス URL](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) へのアクセスを有効にする」で指定されている接続要件が満たされている必要があります。 これらは、サーバー 2019 Windowsと同じです。
-- 以前は、OMS/Log Analytics ゲートウェイが Defender クラウド サービスへの接続を提供するために、Windows Server 2016 以下の Microsoft Monitoring Agent (MMA) を使用する必要がありました。 Windows Server 2019、Windows Server 2022、Windows 10 の Microsoft Defender for Endpoint のような新しいソリューションは、このゲートウェイをサポートしません。
-- このWindows Server 2016、インストールMicrosoft Defender ウイルス対策アクティブで最新の状態に設定されていることを確認します。 Update を使用して、最新のプラットフォーム バージョンをダウンロードWindowsできます。 または、Microsoft Update Catalog または MMPC から更新[](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623)プログラム パッケージを手動で[ダウンロードします](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)。  
-- R2 Windows Server 2012では、ユーザー インターフェイスがMicrosoft Defender ウイルス対策。 さらに、ユーザー インターフェイスは、Windows Server 2016操作のみを許可します。 デバイスに対してローカルで操作を実行するには、「PowerShell、WMI、およびデバイスを使用して [Microsoft Defender for Endpoint ](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools)を管理する」を参照MPCmdRun.exe。 その結果、ユーザーの操作に特に依存する機能 (ユーザーに決定の指示や特定のタスクの実行を求めるメッセージが表示される場所など) は、期待した通りに機能しない可能性があります。 保護機能に影響を与える可能性がある場合は、ユーザー インターフェイスを無効にするか、無効にするか、管理サーバーでユーザーの操作を必要としません。
+- 「プロキシ サーバー内の [Microsoft Defender for Endpoint サービス URL](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) へのアクセスを有効にする」で指定されている接続要件が満たされている必要があります。 これらは、サーバー 2019 Windowsと同じです。 
+- 静的な TelemetryProxyServer を使用し、証明書失効リスト (CRL) URL が SYSTEM アカウント コンテキストから到達できない場合に、クラウドへの Windows Server 2012 R2 接続に関する問題を調査しています。 即時の軽減策は、このような接続を提供する代替プロキシ オプションを使用するか、SYSTEM アカウント コンテキストの WinInet 設定を使用して同じプロキシを構成する方法です。
+- 以前は、OMS/Log Analytics ゲートウェイが Defender クラウド サービスへの接続を提供するために許可されている Windows Server 2016 以下の Microsoft Monitoring Agent (MMA) の使用が許可されています。 Windows Server 2019、Windows Server 2022、Windows 10 の Microsoft Defender for Endpoint のような新しいソリューションは、このゲートウェイをサポートしません。
+
+- このWindows Server 2016、インストールMicrosoft Defender ウイルス対策アクティブで最新の状態に設定されていることを確認します。 更新プログラムを使用して、最新のプラットフォーム バージョンをダウンロードWindowsできます。 または、Microsoft Update Catalog または MMPC から更新[](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623)プログラム パッケージを手動で[ダウンロードします](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)。  
+- R2 Windows Server 2012では、ユーザー インターフェイスがMicrosoft Defender ウイルス対策。 また、ユーザー インターフェイス上のユーザー インターフェイスWindows Server 2016操作のみを許可します。 デバイスの操作をローカルで実行するには、「PowerShell、WMI、およびデバイスを使用して [Microsoft Defender for Endpoint ](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools)を管理する」を参照MPCmdRun.exe。 その結果、ユーザーの操作に特に依存する機能 (ユーザーに決定の指示や特定のタスクの実行を求めるメッセージが表示される場所など) は、期待した通りに機能しない可能性があります。 保護機能に影響を与える可能性がある場合は、ユーザー インターフェイスを無効にするか、無効にするか、管理サーバーでユーザーの操作を必要としません。
 - すべての攻撃表面縮小ルールがすべてのオペレーティング システムで使用できる場合があります。 「 [攻撃表面の縮小 (ASR) ルール」を参照してください](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)。
 - ネットワーク保護 [を有効にするには、](/microsoft-365/security/defender-endpoint/network-protection)追加の構成が必要です。
   - `Set-MpPreference -EnableNetworkProtection Enabled`
@@ -112,8 +125,8 @@ R2 および R2 および Windows Server 2012の以前Windows Server 2016実装�
   さらに、ネットワーク トラフィックが多いコンピューターでは、この機能を広く有効にする前に、環境でのパフォーマンス テストを強くお勧めします。 追加のリソース消費を考慮する必要がある場合があります。
 - R2 Windows Server 2012、ネットワーク イベントがタイムラインに設定されない場合があります。 この問題には、[2021 年 10 月 12 日の月次ロールアップ (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) の一部としてWindows更新プログラムが必要です。
 - オペレーティング システムのアップグレードはサポートされていません。 アップグレードする前にオフボードをアンインストールします。
-- サーバー の役割の自動 *除外* は R2 ではWindows Server 2012されませんが、オペレーティング システム ファイルの組み込みの除外はサポートされていません。 除外の追加の詳細については、「現在サポートされているバージョンのコンピューターを実行している Enterprise コンピューターのウイルス スキャンの推奨事項」を[参照](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc)Windows。
-- 現在、最新の統合ソリューションのオフボードとアンインストールを選択し、以前の MMA ベースの EDR センサーを再オンボードすると、クラッシュが`MsSenseS.exe`繰り返される可能性があります。 
+- サーバー ロールの自動 *除外* は R2 ではWindows Server 2012されませんが、オペレーティング システム ファイルの組み込みの除外はサポートされていません。 除外の追加の詳細については、「現在サポートされているバージョンのコンピューターを実行している Enterprise コンピューターのウイルス スキャンの推奨事項」を[参照](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc)Windows。
+- 現在、最新の統合ソリューションのオフボードとアンインストールを選択し、以前の MMA ベースの EDR センサーを`MsSenseS.exe`再オンボードすると、クラッシュが繰り返される可能性があります。 
 
 回避策として、次のレジストリ キーが存在する場合は削除します。
 - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\fdedb2b8-61e4-4a7e-8b15-abf214a08fcc`
@@ -137,7 +150,7 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 詳細については、「 [Microsoft Defender for Cloud との統合」を参照してください](azure-server-integration.md)。
 
 > [!NOTE]
-> 最新Windows Server 2012統合ソリューション プレビューを実行している R2 および 2016 の場合、アラートと自動展開用のサーバー用 Microsoft Defender for Cloud/ Microsoft Defender との統合はまだ利用できません。 これらのコンピューターに新しいソリューションを手動でインストールすることもできますが、Microsoft Defender for Cloud にはアラートは表示されません。
+> 最新Windows Server 2012統合ソリューション プレビューを実行している R2 と 2016 の場合、アラートと自動展開用のサーバー用 Microsoft Defender for Cloud/ Microsoft Defender との統合はまだ利用できません。 これらのコンピューターに新しいソリューションを手動でインストールすることもできますが、Microsoft Defender for Cloud にはアラートは表示されません。
 
 > [!NOTE]
 > - Microsoft Defender for server と Microsoft Defender for Endpoint の統合は、Windows Server 2022、[Windows Server 2019、Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview) をサポートするために拡張されました。
@@ -146,14 +159,13 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 と Windows Server 2016
 
 > [!NOTE]
-> R2 Windows Server 2012 と Windows Server 2016 のオンボーディングのこの方法はプレビュー中ですが、以前のオンボーディング方法を引き続き使用するには、Microsoft Monitoring Agent (MMA) を使用します。 詳細については、「 [MMA を使用してエンドポイントをインストールして構成する」を参照してください](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)。
+> R2 Windows Server 2012 と Windows Server 2016 のオンボーディングのこの方法はプレビュー中ですが、Microsoft Monitoring Agent (MMA) を使用して以前のオンボーディング方法を引き続き使用できます。 詳細については、「 [MMA を使用してエンドポイントをインストールして構成する」を参照してください](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)。
 
 ### <a name="prerequisites"></a>前提条件
 
 **R2 のWindows Server 2012前提条件**
 
 最新の月次ロールアップ パッケージを使用してコンピューターを完全 [](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e)に更新した場合、**追加の前提条件** はありません。
-
 
 インストーラー パッケージは、次のコンポーネントが更新プログラムを介して既にインストールされていることを確認します。
 
@@ -162,14 +174,18 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 
 **サーバーの前提条件Windows Server 2016** 
 
-最新の累積的な更新プログラム (LCU) を使用してコンピューターを完全に更新する以外に、Microsoft Defender ウイルス対策がインストールされ、アクティブで最新の状態になされていることを確認します。 Update を使用して、最新のプラットフォーム バージョンをダウンロードWindowsできます。 または、Microsoft Update Catalog または MMPC から更新[](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623)プログラム パッケージを手動で[ダウンロードします](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)。 
+最新の累積的な更新プログラム (LCU) を使用してコンピューターを完全に更新する以外に、Microsoft Defender ウイルス対策がインストールされ、アクティブで最新の状態になされていることを確認します。 更新プログラムを使用して、最新のプラットフォーム バージョンをダウンロードWindowsできます。 または、Microsoft Update Catalog または MMPC から更新[](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623)プログラム パッケージを手動で[ダウンロードします](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)。 
 
 > [!NOTE]
 > 4.10 以降のバージョン番号を持つ組み込みバージョンの Windows Defender を最新のプラットフォームに正常に更新するには、サービス スタック更新プログラムと、2018 年 9 月 20 日以降の最新累積的な更新プログラム (LCU) が適用されている必要があります。KB4457127 (OS ビルド 14393.2515)。
 
-**R2 および 2016 の Microsoft Defender for Endpoint Windows Server 2012更新プログラム パッケージ**
+**サード パーティのセキュリティ ソリューションを使用して実行するための前提条件**
 
-EDR センサー コンポーネントの製品の定期的な改善と修正を受け取Windows [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) の更新プログラムが適用または承認されます。 さらに、保護コンポーネントを更新し続ける場合は、「更新プログラムの管理と基準[Microsoft Defender ウイルス対策適用する」を参照してください](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
+サードパーティのマルウェア対策ソリューションを使用する場合は、パッシブ モードでMicrosoft Defender ウイルス対策必要があります。 インストールおよびオンボーディング プロセス中は、パッシブ モードに設定する必要があります。
+
+**Microsoft Defender for Endpoint on Windows Server 2012 R2 および 2016 の新しい更新プログラム パッケージ**
+
+EDR センサー コンポーネントの製品の定期的な改善と修正を受け取る場合は、Windows [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) の更新プログラムが適用または承認されます。 さらに、保護コンポーネントを更新し続ける場合は、「更新プログラムの管理と基準[Microsoft Defender ウイルス対策適用する」を参照してください](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
 
 ### <a name="onboarding-steps-summary"></a>オンボーディングの手順の概要
 
@@ -187,7 +203,7 @@ EDR センサー コンポーネントの製品の定期的な改善と修正を
 
 
    > [!NOTE]
-   > サーバー 2012R2 Windowsでは、Microsoft Defender ウイルス対策 パッケージによってインストールされ、パッシブ モードに設定しない限りアクティブになります。 このWindows Server 2016、Microsoft Defender ウイルス対策を実行する前に、最初に機能 ([「MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016) に切り替える」を参照) としてインストールし、完全に更新する必要があります。
+   > サーバー 2012R2 Windowsでは、Microsoft Defender ウイルス対策 パッケージによってインストールされ、パッシブ モードに設定しない限りアクティブになります。 このWindows Server 2016、Microsoft Defender ウイルス対策に進む前に、最初に機能 ([「MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016) に切り替える」を参照) としてインストールし、完全に更新する必要があります。
    > 
    > Microsoft 以外のマルウェア対策ソリューションを実行している場合は、インストール前に Microsoft Defender ウイルス対策 の除外を ([Defender プロセス] タブの Microsoft [Defender プロセス](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)のこのリストから) Microsoft 以外のソリューションに追加してください。  また、Microsoft 以外のセキュリティ ソリューションを Defender ウイルス対策除外リストに追加する方法も推奨されます。
 
@@ -205,7 +221,7 @@ EDR センサー コンポーネントの製品の定期的な改善と修正を
 
 2. [**R2 Windows Server 2012 2016] を選択します**。
 
-3. [ **インストール パッケージのダウンロード] を** 選択し、インストール ファイル.msiします。 
+3. [インストール **パッケージのダウンロード] を** 選択し、インストール ファイル.msiします。 
  
 4. [ **オンボード パッケージのダウンロード] を選択** し、.zip保存します。
 
@@ -251,9 +267,9 @@ Msiexec /x md4ws.msi /quiet
 スイッチ `/quiet` は、すべての通知を非表示にします。
 
 > [!NOTE]
-> Microsoft Defender ウイルス対策パッシブ モードには自動的には入らない。 Microsoft 以外のウイルス対策/マルウェア対策Microsoft Defender ウイルス対策を実行している場合は、パッシブ モードで実行するアプリケーションを設定できます。 コマンド ライン インストールの場合、`FORCEPASSIVEMODE=1`オプションでは、干渉を回避するために、Microsoft Defender ウイルス対策 コンポーネントをパッシブ モードに直ちに設定します。 次に、EDR Block のような機能をサポートするためにオンボーディング後に Defender ウイルス対策がパッシブ モードに維持されるのを確認するには、"ForceDefenderPassiveMode" レジストリ キーを設定します。
+> Microsoft Defender ウイルス対策パッシブ モードには自動的には入らない。 Microsoft 以外のウイルスMicrosoft Defender ウイルス対策マルウェア対策ソリューションを実行している場合は、パッシブ モードで実行する方法を選択できます。 コマンド ライン インストールの場合、オプション`FORCEPASSIVEMODE=1`では、干渉を回避するために、Microsoft Defender ウイルス対策 コンポーネントをパッシブ モードに直ちに設定します。 次に、EDR Block のような機能をサポートするためにオンボーディング後に Defender ウイルス対策がパッシブ モードに維持されるのを確認するには、"ForceDefenderPassiveMode" レジストリ キーを設定します。
 
-サーバーのWindowsは、サーバーアクティビティ、カーネル攻撃とメモリ攻撃検出の範囲に関するより深い洞察を提供し、応答アクションを有効にします。
+サーバーのサポートWindows、カーネル攻撃とメモリ攻撃の検出に関する詳細な分析情報を提供し、応答アクションを有効にします。
 
 ##### <a name="install-microsoft-defender-for-endpoint-using-a-script"></a>スクリプトを使用して Microsoft Defender for Endpoint をインストールする
 
@@ -267,7 +283,7 @@ Msiexec /x md4ws.msi /quiet
 
 3. グループ ポリシー **管理エディターで、[****コンピューターの構成**] 、[基本設定] の順に移動し、[コントロール パネルの設定 **] に移動します**。
 
-4. [スケジュールされたタスク **] を右クリック** し、[新規] をポイント **し、[イ** ミディエイト タスク] (少なくとも **7) Windowsクリックします**。
+4. [スケジュールされたタスク **] を右** クリックし、[新規] をポイントし、[イミディエイト タスク] (少なくとも **7) Windowsクリックします**。
 
 5. 開く **[タスク]** ウィンドウで、[全般] タブ **に移動** します。[セキュリティ **オプション] で[****ユーザーまたはグループの変更] をクリックし、「** SYSTEM」と入力し、[名前の確認] をクリックしてから **[OK****] を** クリックします。 NT AUTHORITY\SYSTEM は、タスクが実行されるユーザー アカウントとして表示されます。
 
@@ -284,7 +300,7 @@ Msiexec /x md4ws.msi /quiet
      >[!NOTE]
     >推奨される実行ポリシー設定はです `Allsigned`。 この場合、スクリプトがエンドポイントで SYSTEM として実行されている場合は、スクリプトの署名証明書をローカル コンピューター信頼済み発行元ストアにインポートする必要があります。
 
-    共有 \\install.ps1ファイルのファイル サーバーの完全修飾ドメイン名 (FQDN) を使用して、servername-or-dfs-space\share-name を UNC パス *に置き換* えてください。 インストーラー パッケージはmd4ws.msi同じディレクトリに配置する必要があります。  また、UNC パスのアクセス許可によって、プラットフォームをインストールしているコンピューター アカウントへの読み取りアクセスが許可されます。
+    共有 \\install.ps1ファイルのファイル サーバーの完全修飾ドメイン名 (FQDN) を使用して、servername-or-dfs-space\share-name を UNC パス *に置き換* えてください。 インストーラー パッケージmd4ws.msi同じディレクトリに配置する必要があります。  また、UNC パスのアクセス許可によって、プラットフォームをインストールしているコンピューター アカウントへの読み取りアクセスが許可されます。
 
    
 
@@ -292,7 +308,7 @@ Msiexec /x md4ws.msi /quiet
 
 9. [ **OK] を選択** し、開いている GPMC ウィンドウを閉じます。
 
-10. GPO を組織単位 (OU) にリンクするには、右クリックして[既存の GPO のリンク **] を選択します**。 表示されるダイアログ ボックスで、リンクするグループ ポリシー オブジェクトを選択します。 [**OK**] をクリックします。
+10. GPO を組織単位 (OU) にリンクするには、右クリックして[既存の GPO のリンク **] を選択します**。 表示されるダイアログ ボックスで、リンクするグループ ポリシー オブジェクトを選択します。 **[OK]** をクリックします。
 
 その他の構成設定については、「サンプル コレクション設定 [の構成」および](configure-endpoints-gp.md#configure-sample-collection-settings) 「その他の推奨 [される構成設定」を参照してください](configure-endpoints-gp.md#other-recommended-configuration-settings)。
 
@@ -322,14 +338,14 @@ Msiexec /x md4ws.msi /quiet
 Defender for Endpoint によって収集されたデータは、プロビジョニング中に特定されたテナントの地理的位置に格納されます。
 > - Microsoft Defender for Cloud を使用する前に Defender for Endpoint を使用する場合、後で Microsoft Defender for Cloud と統合した場合でも、テナントの作成時に指定した場所にデータが保存されます。
 > - 構成が完了すると、データの保存場所を変更できません。 データを別の場所に移動する必要がある場合は、Microsoft サポートに問い合わせ、テナントをリセットする必要があります。
-> - 現在、Windows Server 2019 および Windows Server 2022 Microsoft エンドポイント マネージャーオンボード パッケージがスクリプトを出荷しています。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
+> - 現在スクリプトが出荷されている Windows Server 2019 および Windows Server 2022 Microsoft エンドポイント マネージャーオンボード パッケージ。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
 > - ローカル スクリプトは概念実証に適していますが、実稼働展開には使用できません。 実稼働展開の場合は、グループ ポリシーまたはグループ ポリシーを使用Microsoft Endpoint Configuration Manager。
 
 
 
-## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows サーバー Semi-Annual Enterprise チャネルと Windows Server 2019 および Windows Server 2022
+## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Server 2019 および Windows Server 2022 のチャネルとWindowsサーバー
 
-Windows Server 2019 および Windows Server 2022 Microsoft エンドポイント マネージャーのオンボーディング パッケージは、現在スクリプトを出荷しています。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
+現在、スクリプトをWindowsサーバー 2019 および Windows Server 2022 Microsoft エンドポイント マネージャーオンボーディング パッケージ。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
 
 ### <a name="download-package"></a>パッケージのダウンロード
 
@@ -344,7 +360,7 @@ Windows Server 2019 および Windows Server 2022 Microsoft エンドポイン�
 
 ## <a name="verify-the-onboarding-and-installation"></a>オンボーディングとインストールを確認する
 
-エンドポイントのMicrosoft Defender ウイルス対策 Microsoft Defender が実行されているのを確認します。
+エンドポイントMicrosoft Defender ウイルス対策 Microsoft Defender が実行されているのを確認します。
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>検出テストを実行してオンボーディングを確認する
 
@@ -361,10 +377,10 @@ Windows Server 2019 および Windows Server 2022 Microsoft エンドポイン�
     `sc.exe query Windefend`
 
 
-    結果が '指定されたサービスがインストール済みサービスとして存在しない' の場合は、そのサービスをインストールするMicrosoft Defender ウイルス対策。 
+    結果が '指定されたサービスがインストール済みサービスとして存在しない' の場合は、サービスをインストールするMicrosoft Defender ウイルス対策。 
 
 
-    グループ ポリシーを使用して Windows サーバー上の Microsoft Defender ウイルス対策 を構成および管理する方法については、「グループ ポリシー設定を使用してグループ ポリシーを構成および管理する」を参照[Microsoft Defender ウイルス対策。](use-group-policy-microsoft-defender-antivirus.md)
+    グループ ポリシーを使用 Microsoft Defender ウイルス対策して Windows サーバーでグループ ポリシーを構成および管理する方法については、「グループ ポリシー設定を使用してグループ ポリシーを構成および管理する」を参照[Microsoft Defender ウイルス対策。](use-group-policy-microsoft-defender-antivirus.md)
 
 2. 次のコマンドを実行して、Microsoft Defender for Endpoint が実行されているのを確認します。
 
@@ -382,7 +398,7 @@ Windows Server 2019 および Windows Server 2022 Microsoft エンドポイン�
 
 ## <a name="offboard-windows-servers"></a>オフボード Windows サーバー
 
-Windows 10 クライアント デバイスで使用できるのと同じ方法で、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC)、Windows Server 2019、Windows Server 2019 Core edition のオフボードを使用できます。
+Windows Server 2012 クライアント デバイスで使用できるのと同じ方法で、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC)、Windows Server 2019、および Windows Server 2019 Core Windows 10 edition をオフボードにできます。
 
 - [グループ ポリシーを使用してデバイスをオフボードする](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Configuration Manager を使用したオフボード デバイス](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)

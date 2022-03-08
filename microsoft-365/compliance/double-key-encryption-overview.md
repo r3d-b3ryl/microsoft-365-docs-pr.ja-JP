@@ -4,7 +4,7 @@ description: 2 つのキーの暗号化に関するよく寄せられる質問�
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 12/11/2020
+ms.date: 02/28/2022
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -12,20 +12,20 @@ ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 8cdc4d71609430dd7bcb19edc3b55c49a3b9401d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 269937e78ffee6956df5a4dc8dc978fa30043912
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200535"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320985"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>二重キー暗号化に関するよく寄せられる質問
 
-ダブル キー暗号化の仕組みについて質問がありますか? ここで答えを確認してください。
+ダブル キー暗号化の仕組みについて質問がありますか? ここで回答をご覧ください。
 
-## <a name="what-is-double-key-encryption-for-microsoft-365-dke"></a>DKE (DKE) のMicrosoft 365キー暗号化とは
+## <a name="what-is-double-key-encryption-for-microsoft-365-dke"></a>DKE のダブル キー Microsoft 365とは
 
-Double Key Encryption for Microsoft 365、お客様は機密性の高いデータを保護して、特別な要件を満たします。 これにより、お客様は暗号化キーの完全な制御を維持できます。 2 つのキーを使用してデータを保護します。コントロール内の 1 つのキーと、コントロール内に安全に格納された 2 番目Microsoft Azure。 ダブル キー暗号化で保護されたデータを表示するには、両方のキーにアクセスする必要があります。 Microsoft ではこれらのキーの 1 つしかアクセスできないので、保護されたデータは Microsoft にアクセスできなくなり、データのプライバシーとセキュリティを完全に制御できます。  
+ユーザー向けダブル キー Microsoft 365、お客様は機密性の高いデータを保護して、特別な要件を満たします。 これにより、お客様は暗号化キーの完全な制御を維持できます。 2 つのキーを使用してデータを保護します。コントロール内の 1 つのキーと、コントロール内に安全に格納された 2 番目Microsoft Azure。 ダブル キー暗号化で保護されたデータを表示するには、両方のキーにアクセスする必要があります。 Microsoft ではこれらのキーの 1 つしかアクセスできないので、保護されたデータは Microsoft にアクセスできなくなり、データのプライバシーとセキュリティを完全に制御できます。  
 
 選択した場所 (オンプレミスのキー管理サーバーまたはクラウド内) で、キーを要求するために使用する Double Key Encryption サービスをホストできます。 他のアプリケーションと同じ方法でサービスを維持します。 ダブル キー暗号化を使用すると、ダブル キー暗号化サービスへのアクセスを制御できます。 機密性の高いデータは、オンプレミスに保存するか、クラウドに移動できます。 キーの完全な制御を維持するために、サード パーティ製のアクセスを防ぐことに自信を持って取り組む必要があります。 ダブル キー暗号化を使用すると、データとキーを同じ場所に格納できます。
 
@@ -41,7 +41,7 @@ DKE ラベルを使用すると、デスクトップ バージョンの Word、E
 
 ## <a name="how-is-double-key-encryption-different-from-the-existing-hold-your-own-key-hyok-solution"></a>ダブル キー暗号化と既存のホールド 独自のキー (HYOK) ソリューションの違い
 
-ダブル キー暗号化は、2 つのキーを使用してデータを暗号化します。 暗号化キーはコントロールに格納され、2 番目のキーは Microsoft Azureに格納され、暗号化されたデータをクラウドに移動できます。 HYOK は 1 つのキーでのみコンテンツを保護し、キーは常にオンプレミスにあります。  
+ダブル キー暗号化は、2 つのキーを使用してデータを暗号化します。 暗号化キーはコントロールに格納され、2 番目のキーは Microsoft Azure に格納され、暗号化されたデータをクラウドに移動できます。 HYOK は 1 つのキーでのみコンテンツを保護し、キーは常にオンプレミスにあります。  
 
 ## <a name="can-double-key-encrypted-documents-be-shared-externally"></a>Double Key Encrypted documents を外部で共有できますか?
 
@@ -57,23 +57,23 @@ Double Key Encrypted documents は、次のユーザーである限り、別の�
 
 ## <a name="can-i-run-double-key-encryption-in-my-non-microsoft-air-gapped-environment"></a>Microsoft 以外の空きモード環境でダブル キー暗号化を実行できますか?
 
-DKE は、サービスがこれらの環境にアクセスする必要Microsoft Azure。
+DKE は、サービスがこれらの環境へのアクセスを必要とMicrosoft Azure。
 
 ## <a name="where-can-i-store-double-key-encrypted-documents"></a>Double Key Encrypted ドキュメントはどこに保存できますか?
 
-Double Key Encrypted ドキュメントは、オンプレミスまたはクラウドに保存できます。 クラウドでは、暗号化されたコンテンツを [オンライン] および [SharePoint] にOneDrive for Business。 Microsoft はプライベート キーにアクセスできないので、暗号化されたデータは Microsoft に対して不透明なままです。 つまり、暗号化されたドキュメントを Web Apps でオンラインOffice表示できません。
+Double Key Encrypted ドキュメントは、オンプレミスまたはクラウドに保存できます。 クラウドでは、暗号化されたコンテンツを [オンライン] および [SharePoint] にOneDrive for Business。 Microsoft はプライベート キーにアクセスできないので、暗号化されたデータは Microsoft に対して不透明なままです。 つまり、暗号化されたドキュメントを Web Apps でオンラインOfficeすることもできます。
 
 ## <a name="what-regions-and-languages-is-double-key-encryption-available-in-is-double-key-encryption-available-worldwide"></a>利用可能な二重キー暗号化とは、どの地域と言語ですか? ダブル キー暗号化は世界中で利用できますか?
 
-DKE ラベルは、他の感度ラベルと同じ言語にローカライズMicrosoft Information Protection。 ダブル キー暗号化は世界中で利用できます。
+DKE ラベルは、その他の感度ラベルと同じ言語にローカライズMicrosoft Information Protection。 ダブル キー暗号化は世界中で利用できます。
 
 ## <a name="can-i-convert-a-non-dke-label-to-a-dke-label"></a>DKE 以外のラベルを DKE ラベルに変換できますか?
 
-その必要はありません。 ラベルを作成した後は、DKE をラベルに追加できない。 代わりに、[ダブル キー暗号化を **使用する** ] を選択し、ラベルを作成するときに、ダブル キー暗号化サービスの URL を指定する必要があります。
+いいえ。 ラベルを作成した後は、DKE をラベルに追加できない。 代わりに、[ダブル キー暗号化を **使用する** ] を選択し、ラベルを作成するときに、ダブル キー暗号化サービスの URL を指定する必要があります。
 
 ## <a name="how-do-i-roll-my-dke-keys"></a>DKE キーをロールする方法
 
-Azure に格納するキーのローリング (回転またはキー変更とも呼ばれる) の手順については [、「Operations for your Azure Information Protection テナント](/azure/information-protection/operations-customer-managed-tenant-key)キー」を参照してください。
+Azure に格納するキーのローリング (回転またはキー変更とも呼ばれる) の手順については、「 [Operations for your Azure Information Protection テナント キー」を参照してください](/azure/information-protection/operations-customer-managed-tenant-key)。
 
 DKE [サービスの新しいキーの](double-key-encryption.md#tenant-and-key-settings) 作成については、「テナントとキーの設定」を参照してください。
 

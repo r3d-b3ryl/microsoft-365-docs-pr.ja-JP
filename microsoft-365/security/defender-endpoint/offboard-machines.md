@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 19f4b517682fa58bde7253c074dc4402f6f95bf9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c2ec837ebc9fef0aabd2810dbd22db24597c52da
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163424"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322605"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスのオフボード デバイス
 
@@ -45,11 +45,11 @@ ms.locfileid: "61163424"
 >
 > オフボードされたデバイスのデータ (タイムライン、アラート、脆弱性など) は、構成された保持期間が経過するまでポータル [に](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) 残ります。
 >
-> デバイスのプロファイル (データなし) は、デバイス[](machines-view-overview.md)リストに 180 日間以上残ります。
+> デバイスのプロファイル (データなし) は、デバイス リストに 180 日間以上残ります。[](machines-view-overview.md)
 >
-> また、過去 30 日間にアクティブではないデバイスは、組織の 脅威と脆弱性の管理 露出スコアと Microsoft Secure Score for Devices[](tvm-exposure-score.md)を反映するデータには考慮されません。
+> さらに、過去 30 日間にアクティブではないデバイスは、組織の 脅威と脆弱性の管理 露出スコアと Microsoft Secure Score for Devices を反映するデータには考慮されません。 [](tvm-exposure-score.md)
 >
-> アクティブなデバイスのみを表示するには、正常性状態、[](machines-view-overview.md#health-state)デバイス タグ、または[コンピューター グループで](machine-tags.md)[フィルター処理できます](machine-groups.md)。
+> アクティブなデバイスのみを表示するには、センサーの正常性[](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views)状態、デバイス タグ、または[コンピューター グループで](machine-tags.md)[フィルター処理できます](machine-groups.md)。
 
 ## <a name="offboard-windows-devices"></a>オフボード Windows デバイス
 

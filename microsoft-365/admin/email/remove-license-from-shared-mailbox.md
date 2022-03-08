@@ -15,20 +15,20 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: '共有メールボックスからライセンスを削除して、別のユーザーに割り当てるか、ライセンスを返して支払いを行わない。 '
 ms.date: 05/11/2021
-ms.openlocfilehash: 89e5e3023121bb4633d7c8c1e2f92fbecc5f3e18
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 6de6f213cc0df7a216122d55ef07e270586aea12
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370562"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314799"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>共有メールボックスからライセンスを削除する
 
@@ -36,7 +36,7 @@ ms.locfileid: "61370562"
 
 > [!NOTE]
 >
-> 次Exchange Onlineシナリオでは、プラン 2 のライセンスが必要です。
+> プラン 2 Exchange Onlineは、次のシナリオで必要です。
 >
 > - 共有メールボックスには、50 GB を超えるストレージが使用されます。
 > - 共有メールボックスは、インプレイス アーカイブを使用します。
@@ -50,13 +50,13 @@ ms.locfileid: "61370562"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
@@ -65,11 +65,11 @@ ms.locfileid: "61370562"
   
 2. 共有メールボックスを選択します。
 
-3. [ライセンス **とアプリ] タブの 1** つで、[ライセンス] **を展開** し、削除するライセンスのボックスをオフにします。
+3. [ライセンス **とアプリ] タブの** 1 つで、[ **ライセンス] を展開** し、削除するライセンスのボックスをオフにします。
 
 4. **[変更の保存]** を選択します。
 
-5. [アクティブ ユーザー] ページ **に戻** った場合、共有メールボックスの状態は [ **ライセンス解除] になります**。
+5. [アクティブ ユーザー] ページ **に戻** った場合、共有メールボックスの状態は [ライセンス **解除] になります**。
 
 6. ライセンスの支払いは引き続き行います。 支払いを停止するには、 [サブスクリプションからライセンスを削除します](../../commerce/licenses/buy-licenses.md)。
 

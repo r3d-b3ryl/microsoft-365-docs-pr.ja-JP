@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 77c27d268a8f25c047f562a3cfc125092e64d2c7
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: acf474f472450456014a581366c8860d87607a79
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321797"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322647"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -44,11 +44,11 @@ ms.locfileid: "62321797"
 
 1. タスク バーの **[スタート** ] ボタンを選択し、「 **regedit」と** 入力してレジストリ エディターを開きます。
 
-2. サイド **HKEY_LOCAL_MACHINE** メニューから [設定] を選択します。
+2. サイド **メニュー HKEY_LOCAL_MACHINE** を選択します。
 
-3. 入れ子になったメニューを [**ソフトウェア** \> ポリシー] **Microsoft** \> **Windows Defender** \> **Windows Defender** \> **エクスプロイト ガード ネットワーク保護に** \> **移動します**。
+3. 入れ子になったメニューを[**ソフトウェア** \> ポリシー] **Microsoft** \>  \> Windows Defender \> Windows Defender **エクスプロイト ガード ネットワーク保護に** \> **移動します**。
 
-キーが見つからない場合は、**Exploit** \>  \> **Guard** \> ネットワーク保護Windows Defender **Windows Defender**\>に **移動します**。
+キーが見つからない場合は、Exploit  \> Guard ネットワーク保護のソフトウェア **Microsoft** \> Windows Defender **Windows Defender** \> **に** \> **移動します**。
 
 4. デバイス上のネットワーク保護の現在の状態を表示するには、[ **EnableNetworkProtection** ] を選択します。
 
@@ -70,7 +70,7 @@ ms.locfileid: "62321797"
 
 ### <a name="powershell"></a>PowerShell
 
-1. [**powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
+1. [**powershell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
 
 2. 次のコマンドレットを入力します。
 
@@ -102,7 +102,7 @@ ms.locfileid: "62321797"
 
 4. [**Endpoint** **protectionBasics** > ] に移動し、プロファイルの名前を入力し、[次へ] を選択 **します**。
 
-5. [構成 **設定] セクション** で、[ネットワーク フィルター **Microsoft Defender Exploit Guard** >  **Network** >  **protectionEnable** >  **または Audit] に** 移動 **します**。 [**次へ**] を選択します。
+5. [構成 **設定] セクション** で、[ネットワーク フィルター **Microsoft Defender Exploit Guard** >  **Network** >  **protectionEnable** >  **または Audit] に** 移動 **します**。 **[次へ]** を選択します。
 
 6. 組織の必要 **に応じて、****適切なスコープ** タグ、割り当て、適用ルールを選択します。 管理者は、より多くの要件を設定できます。
 
@@ -120,10 +120,10 @@ ms.locfileid: "62321797"
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して **、Exploit Guard ネットワークWindows保護Microsoft Defender ウイルス対策** \>  \> Windows Defender **コンポーネントを** \> **展開します**。
+3. ツリーを展開して、**Exploit Guard ネットワークWindows保護Microsoft Defender ウイルス対策** \> **Windows Defender** \> **コンポーネントを** \> **展開します**。
 
    > [!NOTE]
-   > 以前のバージョンの Windowsでは、グループ ポリシー パスは "Windows Defender ウイルス対策" ではなく "Microsoft Defender ウイルス対策" と表示Microsoft Defender ウイルス対策。
+   > 以前のバージョンの Windows では、グループ ポリシー パスに "Windows Defender ウイルス対策" ではなく "Microsoft Defender ウイルス対策" というMicrosoft Defender ウイルス対策。
 
 4. [ユーザーとアプリによる **危険** な Web サイトへのアクセスを防止する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 [オプション] セクションで、次のいずれかのオプションを指定する必要があります。
     - **ブロック** - ユーザーは悪意のある IP アドレスとドメインにアクセスできません。

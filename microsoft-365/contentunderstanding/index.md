@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex に関するリソースの検索方法について説明します。
-ms.openlocfilehash: 665a28c07e5405299cb88ffdce3fbafa1210415a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: db8526cbf85be1b9db5b95ed0739d0ec948c2faa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322085"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323165"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
@@ -54,11 +54,11 @@ SharePoint Syntex は、次のような組織支援をする Microsoft 365 サ�
 |Microsoft 技術コミュニティ リソース センターのリソースを参照してください。|[SharePoint Syntex - Microsoft 365 のコンテンツ サービス](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |Microsoft Tech Community Resource Center に関する SharePoint Syntex FAQ |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |SharePoint Syntex の入手方法 |[SharePoint Syntex 製品ページ](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
-|アプリの使い方SharePoint Syntex |[SharePoint Syntex学習パス](/learn/paths/syntex-get-started)|
+|ユーザー設定の使用SharePoint Syntex |[SharePoint Syntex学習パス](/learn/paths/syntex-get-started)|
 
 ## <a name="adoption"></a>導入
 
-ビジネス上の問題の解決に役立つ組織SharePoint Syntexを使用して実装する方法について詳しくは、ご覧ください。
+ビジネス上の問題の解決に役立つSharePoint Syntexを組織で使用および実装する方法について詳しくは、ご覧ください。
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
@@ -87,6 +87,7 @@ SharePoint Syntex は、次のような組織支援をする Microsoft 365 サ�
 |モデルに保持ラベルを適用する|[保持ラベルをドキュメント理解モデルに適用する](./apply-a-retention-label-to-a-model.md)|
 |モデルに秘密度ラベルを適用する|[秘密度ラベルをドキュメント理解モデルに適用する](./apply-a-sensitivity-label-to-a-model.md)|
 |事前構築されたモデルを使用してドキュメントから情報を抽出する |[事前構築済みモデルを使用して請求書または領収書から情報を抽出する](./prebuilt-models.md)|
+|ローカル サイトでモデルをローカルに作成SharePointする |[ローカル サイトにモデルをSharePointする](./create-local-model.md)|
 |トレーニング済みのモデルを他のコンテンツ センターで使用する |[ドキュメント理解モデルの公開と検出](./model-discovery.md)|
 |ドキュメント ライブラリでメタデータ ベースのクエリを実行する|[ドキュメント ライブラリ内のメタデータを検索する](./metadata-search.md)|
 |エクストラクターの作成時に、 Managed Metadata Service の用語ストアの分類を使用する|[エクストラクターの作成時に用語ストアの分類を活用する](./leverage-term-store-taxonomy.md)|

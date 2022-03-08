@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 81fdf04686f62acf3a2acce7e1bb400fe1d51aaa
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 2837b6009c143ea724d8c13d2548eeeca80e431d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904075"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321321"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>手順 2。 最初のインシデントを修復する
 
@@ -48,7 +48,7 @@ Microsoft 365 Defenderは、アナリストが手動で開始できるいくつ�
 - **自動調査を開始する** - デバイスで新しい汎用自動調査を開始できます。 調査の実行中、デバイスから生成された他のアラートは、その調査が完了するまで、継続的な自動調査に追加されます。 さらに、他のデバイスで同じ脅威が見られる場合は、それらのデバイスが調査に追加されます。
 - **ライブ応答の開始** - ライブ応答は、リモート シェル接続を使用してデバイスに瞬時にアクセスできる機能です。 これにより、詳細な調査作業を行い、迅速に特定された脅威をリアルタイムに含める即時対応アクションを実行できます。 ライブ応答は、法医学データの収集、スクリプトの実行、分析のための疑わしいエンティティの送信、脅威の修復、および新たな脅威の予防的な捜しを可能にすることで、調査を強化するように設計されています。
 - **調査パッケージの収集** - 調査または対応プロセスの一環として、デバイスから調査パッケージを収集できます。 調査パッケージを収集することで、デバイスの現在の状態を特定し、攻撃者が使用するツールと手法をさらに理解できます。 
-- **脅威の専門家** に相談する (デバイスとファイルの両方のアクションで利用可能) - 既に侵害されている可能性のあるデバイスやデバイスに関する詳細な分析情報については、Microsoft の脅威専門家に問い合うことができます。 Microsoft の脅威の専門家は、迅速かつ正確な対応のために、Microsoft 365 Defender内から直接関与できます。 
+- **脅威の専門家** に相談する (デバイスとファイルの両方のアクションで利用可能) - 既に侵害されている可能性のあるデバイスやデバイスに関する詳細な分析情報については、Microsoft の脅威専門家に問い合うことができます。 Microsoft の脅威の専門家は、迅速かつ正確な対応Microsoft 365 Defenderから直接関与できます。 
 
 ## <a name="actions-on-files"></a>ファイルへのアクション
 
@@ -61,7 +61,7 @@ Microsoft 365 Defenderは、アナリストが手動で開始できるいくつ�
 
 1. ユーザー アカウントのパスワードをすぐにリセットする
 2. 詳細な分析が完了するまでMicrosoft 365 Defenderデバイスを分離する
-3. 悪意のあるファイルがウイルスから検疫されたSharePoint
+3. 悪意のあるファイルがファイルから検疫されたSharePoint
 4. マルウェアの影響を受けたエンドポイントを確認する
 5. システムの再構築
 6. 他のユーザーに対する同様の Microsoft Defender for Cloud Apps アラートを確認する
@@ -70,7 +70,7 @@ Microsoft 365 Defenderは、アナリストが手動で開始できるいくつ�
 
    :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Microsoft Defender for Cloud Apps ポータルのガバナンス アクションの例。":::
 
-修復アクションの多くを、このページで適用および追跡Microsoft 365 Defender。
+修復アクションの大部分は、アプリケーションで適用および追跡Microsoft 365 Defender。
 
 ## <a name="using-playbooks"></a>プレイブックの使用
 

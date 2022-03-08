@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: この記事では、サテライトの場所を追加する方法と、Microsoft 365 Multi-Geoのテナントを構成する方法について説明します。
-ms.openlocfilehash: 232791705dacfa9442304434559b67a4b01ca7dd
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: 9842ff2295a64f544940f579d732c688735ae341
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818254"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312083"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo テナントの構成
 
@@ -44,17 +44,15 @@ _Microsoft 365 の複数地域機能_ プランは、ユーザー レベルの�
 
 サテライトの場所を追加する方法
 
-1. SharePoint 管理センターを開きます。
+1. SharePoint 管理センターを開きます。 をクリックし、[ <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**地域の場所] に移動します**</a>。
 
-2. **[地理的位置]** タブを開きます。
+1. [場所 **の追加] を選択します**。
 
-3. **[場所を追加します]** をクリックします。
+1. 追加する場所を選択し、[次へ] を選択 **します**。
 
-4. 追加する場所を選択して、**[次へ]** をクリックします。
+1. 地域の場所で使用するドメインを入力し、[追加] を選択 **します**。
 
-5. 地域の場所で使用するドメインを入力して、**[追加]** をクリックします。
-
-6. **[閉じる]** をクリックします。
+1. **[閉じる]** を選択します。
 
 テナントのサイズに応じて、プロビジョニングには最大 72 時間かかることがあります。サテライトの場所のプロビジョニングが完了すると、電子メールの確認通知が送信されます。OneDrive 管理センターの **[地理的位置]** タブにある地図上に、新しい地域の場所が青色で表示されているときには、その地域の場所にユーザーの優先されるデータの場所を設定する作業に進めます。 
 
@@ -83,7 +81,7 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 標準のユーザー作成フローの一部として、ユーザーの優先されるデータの場所の設定を含めることをお勧めします。
 
 > [!IMPORTANT]
-> OneDrive がプロビジョニングされていない新しいユーザーの場合は、アカウントにライセンスを与え、ユーザーの PDL が Azure AD に同期された後、ユーザーが OneDrive for Business にログインする前に変更が反映されるまで少なくとも 48 時間待ちます。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
+> OneDrive プロビジョニングされていない新しいユーザーの場合は、アカウントにライセンスを与え、ユーザーの PDL が Azure AD に同期された後、ユーザーが OneDrive for Business にログインする前に変更が反映されるまで少なくとも 48 時間待ちます。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>クラウド専用ユーザーの優先されるデータの場所を設定する 
 

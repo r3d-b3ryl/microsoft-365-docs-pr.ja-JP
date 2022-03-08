@@ -2,8 +2,8 @@
 title: 課金プロファイルを使用したサブスクリプションの支払い
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,16 +16,16 @@ ms.collection:
 search.appverid: MET150
 description: 課金プロファイルを使用してサブスクリプションに支払う支払い方法について説明します。
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 ms.date: 10/29/2021
-ms.openlocfilehash: 8e7e53ae188a8b91dbe6ceb1d6db79997348e134
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 42b0852e61e81228d1094bad575e6439c3c77745
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354650"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321531"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>課金プロファイルを使用してサブスクリプションの支払いを行う方法
 
@@ -51,7 +51,7 @@ ms.locfileid: "62354650"
 
 与信審査が必要な場合、サブスクリプションの購入時に、その必要性がお客様に知らされます。Microsoft からの連絡にご同意いただいた場合、クレジット カードの承認申請に関して詳細な情報が記載されたメールがお客様宛てに送信されます。与信審査は、通常 2 営業日以内で完了します。
 
-請求プロファイルが請求書に裏付けされている場合は、請求明細書を表示する準備が整ったときにメールが届きます。 このメールには、請求明細書のコピーは含まれません。 ただし、組織の請求書をメールの添付ファイル [として受信することもできます](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)。 請求明細書には、支払いに関するオプションとその送付先の詳細が記載されています。 請求プロファイルに発注書 (PO) 番号を入力すると、その番号が請求明細書に表示されます。 請求明細書へのアクセスの詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
+請求プロファイルが請求書に裏付けされている場合は、請求明細書を表示する準備が整ったときにメールが届きます。 このメールには、請求明細書のコピーは含まれません。 ただし[組織の請求書をメールの添付ファイルとして受け取る](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)こともできます。 請求明細書には、支払いに関するオプションとその送付先の詳細が記載されています。 請求プロファイルに発注書 (PO) 番号を入力すると、その番号が請求明細書に表示されます。 請求明細書へのアクセスの詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>小切手または EFT の送信はどこでできますか?
 
@@ -62,7 +62,7 @@ ms.locfileid: "62354650"
 
 ## <a name="can-i-pay-my-invoice-online"></a>請求書をオンラインで支払うことはできますか?
 
-請求プロファイルで定期的な請求がオフになっている場合は、クレジット カードを使用して請求書をオンラインで支払えます。 支払いを行う場合は、請求書の [今すぐ支払 **う**] ボタンを使用Microsoft 365 管理センター。 請求書を見つけるには、「請求書または [請求書を表示する」を参照してください](view-your-bill-or-invoice.md)。
+請求プロファイルで定期的な請求がオフになっている場合は、クレジット カードを使用して請求書をオンラインで支払えます。 支払いを行う場合は、請求書の [今すぐ支払う] ボタンを使用Microsoft 365 管理センター。 請求書を見つけるには、「請求書または [請求書を表示する」を参照してください](view-your-bill-or-invoice.md)。
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>現在の支払い方法から請求書による支払いに変更できますか?
 

@@ -1,14 +1,14 @@
 ---
-title: Connectの DNS レコードを Namecheap で削除してMicrosoft 365
+title: Connectの DNS レコードを Namecheap で取得してMicrosoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -21,15 +21,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
-description: ドメインを確認し、メール、オンライン、その他のサービスSkype for Business DNS レコードをセットアップする方法については、「Namecheap for Microsoft」を参照してください。
-ms.openlocfilehash: 31938656e17104d1388b53c05b6ccf3af9afc30f
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+description: ドメインを確認し、メール、オンライン、その他のサービスの DNS レコードSkype for Business設定する方法については、「Namecheap for Microsoft」を参照してください。
+ms.openlocfilehash: 146b76ef95a725faa3457eaf1795b153133cef92
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587031"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314995"
 ---
-# <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>Connectの DNS レコードを Namecheap で削除してMicrosoft 365
+# <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>Connectの DNS レコードを Namecheap で取得してMicrosoft 365
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
@@ -51,19 +51,19 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Namecheap にサインインします。":::
 
-1. ランディング ページの [アカウント]**で、****ドロップダウン** リストから [ドメイン 一覧] を選択します。 
+1. ランディング ページの [アカウント **] で、****ドロップダウン リスト** から [ドメイン一覧] を選択します。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="ドロップダウン リストから [ドメイン 一覧] を選択します。":::
 
-1. [ドメイン一覧] ページで、編集するドメインを選択し、[管理] を **選択します**。
+1. [ドメイン一覧] ページで、編集するドメインを選択し、[管理] を選択 **します**。
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="[管理] を選択します。":::
 
-1. [高度 **な DNS] を選択します**。
+1. [ **高度な DNS] を選択します**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="[高度な DNS] を選択します。":::
 
-1. [ホスト レコード **] セクションで** 、[新しい **レコードの追加] を選択します**。
+1. [ **ホスト レコード] セクションで** 、[新しい **レコードの追加] を選択します**。
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="[新しいレコードの追加] を選択します。":::
 
@@ -113,15 +113,15 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Namecheap にサインインします。":::
 
-1. ランディング ページの [アカウント]**で、****ドロップダウン** リストから [ドメイン 一覧] を選択します。 
+1. ランディング ページの [アカウント **] で、****ドロップダウン リスト** から [ドメイン一覧] を選択します。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="ドロップダウン リストから [ドメイン リスト] を選択します。":::
 
-1. [ドメイン **一覧] ページ** で、編集するドメインを選択し、[管理] を **選択します**。
+1. [ドメイン **一覧] ページ** で、編集するドメインを選択し、[管理] を選択 **します**。
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="[管理] を選択します。":::
 
-1. [高度 **な DNS] を選択します**。
+1. [ **高度な DNS] を選択します**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="[高度な DNS] を選択します。":::
 
@@ -141,7 +141,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     |**Type**|**Host**|**Value**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX レコード  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。 <br/> |30 分  <br/> |
+    |MX レコード  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:** Microsoft アカウントから  *\<domain-key\>*  ユーザーを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。 <br/> |30 分  <br/> |
 
      :::image type="content" source="../../media/f3b76d62-5022-48c1-901b-8615a8571309.png" alt-text="テーブルから値をコピーして貼り付けます。":::
 
@@ -167,19 +167,19 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Namecheap にサインインします。":::
 
-1. ランディング ページの [アカウント]**で、****ドロップダウン** リストから [ドメイン 一覧] を選択します。 
+1. ランディング ページの [アカウント **] で、****ドロップダウン リスト** から [ドメイン一覧] を選択します。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="[ドメイン 一覧] を選択します。":::
 
-1. [ドメイン **一覧] ページ** で、編集するドメインを選択し、[管理] を **選択します**。
+1. [ドメイン **一覧] ページ** で、編集するドメインを選択し、[管理] を選択 **します**。
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="[管理] を選択します。":::
 
-1. [高度 **な DNS] を選択します**。
+1. [ **高度な DNS] を選択します**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="[高度な DNS] を選択します。":::
 
-1. [ホスト レコード **] セクションで** 、[新しい **レコードの追加] を選択します**。
+1. [ **ホスト レコード] セクションで** 、[新しい **レコードの追加] を選択します**。
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="[新しいレコードの追加] を選択します。":::
 
@@ -205,23 +205,23 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む *1*  つの SPF レコードを作成します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む 1 *つの SPF*  レコードを作成します。 
 
 1. まず、[このリンク](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)を使って Namecheap でドメイン ページにアクセスします。サインインして続行するように求められます。
     
-1. ランディング ページの [アカウント]**で、****ドロップダウン** リストから [ドメイン 一覧] を選択します。 
+1. ランディング ページの [アカウント **] で、****ドロップダウン リスト** から [ドメイン一覧] を選択します。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="[ドメイン 一覧] を選択します。":::
 
-1. [ドメイン **一覧] ページ** で、編集するドメインを選択し、[管理] を **選択します**。
+1. [ドメイン **一覧] ページ** で、編集するドメインを選択し、[管理] を選択 **します**。
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="[管理] を選択します。":::
 
-1. [高度 **な DNS] を選択します**。
+1. [ **高度な DNS] を選択します**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="[高度な DNS] を選択します。":::
 
-1. [ホスト レコード **] セクションで** 、[新しい **レコードの追加] を選択します**。
+1. [ **ホスト レコード] セクションで** 、[新しい **レコードの追加] を選択します**。
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="[新しいレコードの追加] を選択します。":::
 
@@ -248,7 +248,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 ## <a name="advanced-option-skype-for-business"></a>詳細オプション: Skype for Business
 
-このオプションは、チャット、電話会議、ビデオ通話Skype for Business、電話会議など、オンライン通信サービスにネットワーク を使用している場合にのみ、このオプションをMicrosoft Teams。 Skype 4 つのレコードが必要です。ユーザー間通信用の SRV レコードが 2 件、ユーザーをサービスにサインインして接続するための CNAME レコードが 2 件必要です。
+このオプションは、チャット、電話会議、ビデオ通話Skype for Business、電話会議など、オンライン通信サービスに組織がネットワーク通信サービスを使用している場合にのみMicrosoft Teams。 Skype 4 つのレコードが必要です。ユーザー間通信には 2 つの SRV レコード、サービスにユーザーをサインインして接続するには 2 つの CNAME レコードが必要です。
 
 ### <a name="add-the-two-required-srv-records"></a>必要な 2 つの SRV レコードを追加する
 
@@ -256,19 +256,19 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Namecheap にサインインします。":::
 
-1. ランディング ページの [アカウント]**で、****ドロップダウン** リストから [ドメイン 一覧] を選択します。 
+1. ランディング ページの [アカウント **] で、****ドロップダウン リスト** から [ドメイン一覧] を選択します。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="[ドメイン 一覧] を選択します。":::
 
-1. [ドメイン **一覧] ページ** で、編集するドメインを選択し、[管理] を **選択します**。
+1. [ドメイン **一覧] ページ** で、編集するドメインを選択し、[管理] を選択 **します**。
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="[管理] を選択します。":::
 
-1. [高度 **な DNS] を選択します**。
+1. [ **高度な DNS] を選択します**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="[高度な DNS] を選択します。":::
 
-1. [ホスト レコード **] セクションで** 、[新しい **レコードの追加] を選択します**。
+1. [ **ホスト レコード] セクションで** 、[新しい **レコードの追加] を選択します**。
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="[新しいレコードの追加] を選択します。":::
 
@@ -299,11 +299,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 ### <a name="add-the-two-required-cname-records"></a>必要な 2 つの CNAME レコードを追加する 
   
-1. [ホスト レコード **] セクションで** 、[新しい **レコードの追加] を選択します**。
+1. [ **ホスト レコード] セクションで** 、[新しい **レコードの追加] を選択します**。
     
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="[新しい名前の追加] を選択します。":::
 
-1. [種類]**ドロップダウンで****、[CNAME] を選択します**。
+1. [種類] **ドロップダウンで** 、[ **CNAME] を選択します**。
     
     > [!NOTE]
     > [ **新しいレコード** の追加] を選択すると、[種類] ドロップダウン **が自動的に表示されます**。 
@@ -328,7 +328,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 > [!NOTE]
 > 通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>高度なオプション: Intune とモバイル デバイスの管理 (Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>詳細オプション: Intune とモバイル デバイスの管理 (Microsoft 365
 
 このサービスは、ドメインに接続するモバイル デバイスのセキュリティ保護とリモート管理に役立ちます。 モバイル デバイス管理では、ユーザーがサービスにデバイスを登録できるよう、2 つの CNAME レコードが必要です。
 
@@ -338,19 +338,19 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Namecheap にサインインします。":::
 
-1. ランディング ページの [アカウント]**で、****ドロップダウン** リストから [ドメイン 一覧] を選択します。 
+1. ランディング ページの [アカウント **] で、****ドロップダウン リスト** から [ドメイン一覧] を選択します。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="[ドメイン 一覧] を選択します。":::
 
-1. [ドメイン **一覧] ページ** で、編集するドメインを選択し、[管理] を **選択します**。
+1. [ドメイン **一覧] ページ** で、編集するドメインを選択し、[管理] を選択 **します**。
     
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="[管理] を選択します。":::
 
-1. [高度 **な DNS] を選択します**。
+1. [ **高度な DNS] を選択します**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="ドロップダウン リストから [DNS レコードの管理] を選択します。":::
 
-1. [ホスト レコード **] セクションで** 、[新しい **レコードの追加] を選択します**。
+1. [ **ホスト レコード] セクションで** 、[新しい **レコードの追加] を選択します**。
     
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="[新しいレコードの追加] を選択します。":::
 

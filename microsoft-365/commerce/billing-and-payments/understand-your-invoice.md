@@ -1,14 +1,12 @@
 ---
 title: 課金内容または請求書の内容を理解する
-f1.keywords:
-- CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - MACBillingBillsPaymentsInvoices
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,19 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
-keywords: 課金アカウント、組織情報、請求書
 ms.date: 05/04/2021
-ms.openlocfilehash: 3f6eaef9e26578f759a64fdf55dfeb6882be2458
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ce057a9a3fc72ab1ba818047112451f984894d99
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371270"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315807"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 
@@ -153,7 +150,7 @@ Microsoft 365 管理センターの請求書について質問がある場合、
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ビジネス向け請求書または請求書Microsoft 365を理解](understand-your-invoice2.md)する (記事)\
+[ビジネス向け請求書または請求書Microsoft 365を](understand-your-invoice2.md)理解する (記事)\
 [Microsoft Customer Agreement Azure クレジット 残高の追跡](/azure/billing/billing-mca-check-azure-credits-balance) (記事)\
-[Microsoft カスタマー 契約請求書](/azure/cost-management-billing/understand/review-customer-agreement-bill) (記事)を確認する\
+[Microsoft カスタマー 契約請求書 (記事](/azure/cost-management-billing/understand/review-customer-agreement-bill) )を確認する\
 [Microsoft Customer Agreement 請求アカウントの使用を開始する](/azure/billing/billing-mca-overview) (記事)

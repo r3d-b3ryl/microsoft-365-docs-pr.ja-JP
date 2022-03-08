@@ -8,17 +8,18 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.custom: admindeeplinkSPO
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntexでコンテンツセンターを作成する方法について説明します。
-ms.openlocfilehash: e44ed9433562bdfe8da471bd08c4711bc405b92d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0bab102ae440b8cf2c797458e7602c61794d0d06
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205955"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311593"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexでコンテンツセンターを作成する
 
@@ -46,7 +47,7 @@ SharePoint 管理者は、管理センター サイトプ ロビジョニング 
 
 新しいコンテンツ センターを作成するには
 
-1. Microsoft 365 管理センターで、[SharePoint 管理センター **アクティブ サイト** ページ](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true)に移動します。
+1. [アクティブMicrosoft 365 管理センター] で、[アクティブ サイト] SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">管理センター>**移動します**</a>。
 
 2. [**アクティブなサイト**] ページで、[**作成**] をクリックし、[**その他のオプション**] を選択します。
 
@@ -59,7 +60,7 @@ SharePoint 管理者は、管理センター サイトプ ロビジョニング 
 
 5. [**完了**] を選択します。
  
-コンテンツセンターサイトを作成すると、SharePoint 管理センターの [**アクティブなサイト**] ページに一覧表示されます。 
+コンテンツ センター サイトを作成すると、そのサイトが管理センターの <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**[**</a>アクティブ なサイトSharePoint表示されます。 
 
 ### <a name="give-access-to-additional-users"></a>追加のユーザーにアクセスを許可する
  

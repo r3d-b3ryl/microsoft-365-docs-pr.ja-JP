@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c91c0c5afc449d2e8fdfc415fae83fcc2c913c6a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 325146ba7ed40e27c50eaca490c70d3988b1198f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172321"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312655"
 ---
 # <a name="live-response-command-examples"></a>ライブ応答コマンドの例
 
@@ -34,7 +34,7 @@ ms.locfileid: "62172321"
 
 ライブ応答で使用される一般的なコマンドについて説明し、その一般的な使用例を参照してください。
 
-役割に応じて、基本的なライブ応答コマンドまたは高度なライブ応答コマンドを実行できます。 基本的なコマンドと高度なコマンドの詳細については、「ライブ応答を使用してデバイス上のエンティティを調査 [する」を参照してください](live-response.md)。
+役割に応じて、基本的なライブ応答コマンドまたは高度なライブ応答コマンドを実行できます。 基本的なコマンドと高度なコマンドの詳細については、「ライブ応答を使用してデバイス上の [エンティティを調査する」を参照してください](live-response.md)。
 
 ## `analyze`
 
@@ -110,7 +110,7 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 > [!NOTE]
 >
-> 次のファイルの種類 *は、Live* Response 内からこのコマンドを使用してダウンロードできません。
+> 次のファイルの種類 *は、* Live Response 内からこのコマンドを使用してダウンロードできません。
 >
 > - [Reparse ポイント ファイル](/windows/desktop/fileio/reparse-points/)
 > - [スパース ファイル](/windows/desktop/fileio/sparse-files/)
@@ -180,7 +180,7 @@ registry HKEY_CURRENT_USER\Console
 ```
 
 ```console
-# Show information about a specific registry value
+# Show information about a specific registry value (the double backslash \\ indicates a registry value versus key)
 registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
@@ -195,6 +195,11 @@ remediate file c:\Users\user\Desktop\malware.exe
 ```console
 # Remediate process with specific PID
 remediate process 7960
+```
+
+```console
+# Remediate a registry value (the double backslash \\ indicates a registry value versus key)
+remediate registry HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\\SPStartup
 ```
 
 ```console
@@ -216,8 +221,8 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 
 > [!NOTE]
 >
-> **'** run ' や '**getfile**'などの長時間実行されているコマンドの場合は、コマンドの最後に ' ' 記号を使用して、バックグラウンドでそのアクションを **&** 実行できます。
-> これにより、コンピューターの調査を続行し、'**fg**' basic コマンドを使用して実行すると、バックグラウンド コマンドに [戻る可能性があります](live-response.md#basic-commands)。
+> **'run**' や '**getfile**' などの長時間実行されているコマンドの場合は、コマンドの最後に '**&**' 記号を使用して、バックグラウンドでそのアクションを実行できます。
+> これにより、コンピューターの調査を続行し、'fg' 基本コマンドを使用して実行すると、バックグラウンド コマンド **に**[戻る事が可能になります](live-response.md#basic-commands)。
 
 ## `scheduledtask`
 

@@ -2,8 +2,8 @@
 title: DNS レコードを更新して現在のホスティング プロバイダーに Web サイトを維持する
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: カスタム ドメインの DNS レコードを管理するために Microsoft を設定している場合は、Microsoft の外部でホストされている既存のパブリック Web サイトにトラフィックをルーティングする方法について説明します。
-ms.openlocfilehash: bd318710b20373abafc0d27bbd9f91d5b42c7be6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9bb12d4f73e8d95717ddd90492fb9cb97c73eec9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165282"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314822"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>DNS レコードを更新して現在のホスティング プロバイダーに Web サイトを維持する
 
@@ -39,7 +39,7 @@ ms.locfileid: "60165282"
 
 1. [ドメイン **] ページで** 、ドメインを選択し、[DNS レコード] **を選択します**。
 
-1. [+ **レコードの追加] を選択** し、次の値を入力します。 
+1. [ **+ レコードの追加] を選択** し、次の値を入力します。 
     
    - 型 **の** 場合は Enter: **A (Address)**
     
@@ -53,7 +53,7 @@ ms.locfileid: "60165282"
     
 さらに、CNAME レコードを作成して、Web サイトを顧客が簡単に見つけることができるようにすることもできます。
   
-1. [+ **レコードの追加] を選択** し、次の値を入力します。 
+1. [ **+ レコードの追加] を選択** し、次の値を入力します。 
     
    - 型 **の** enter: **CNAME (Alias)**
     

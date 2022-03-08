@@ -1,14 +1,12 @@
 ---
 title: 課金プロファイルを理解する
-f1.keywords:
-- NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - MACBillingBillsPaymentsBillingProfiles
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: 請求プロファイルが請求書をサポートする方法について学習します。
 ms.date: 04/02/2021
-ms.openlocfilehash: 8407e3855a8e497c730925a424b999ed07da6228
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 472b5c4754d686877077133467e33592b5c0b85e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188555"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311867"
 ---
 # <a name="understand-billing-profiles"></a>課金プロファイルを理解する
 
@@ -35,7 +33,7 @@ ms.locfileid: "60188555"
 
 > [!NOTE]
 >
-> 請求プロファイルは、製品とサービスを購入する顧客は、Microsoft.com の [サービスの購入] ページではMicrosoft 365 管理センター。
+> 請求プロファイルは、製品およびサービスを購入するユーザーが、Microsoft.com またはサービスの購入ページでMicrosoft 365 管理センター。
 
 ## <a name="what-are-billing-profile-roles"></a>課金プロファイルの役割とは
 
@@ -63,18 +61,18 @@ ms.locfileid: "60188555"
 - **請求書の設定** &ndash; 請求先アカウントの国に基づく通貨、請求書の頻度と日付に関する情報、電子メールの添付ファイルとして請求書を受信するオプション、およびオプションの PO 番号フィールド
 - **支払い方法** &ndash; プロファイルのプライマリ支払い方法とバックアップ支払い方法がある場合は、その支払い方法を表示します。
 - **課金アカウント** &ndash; プロファイルが関連付けされている請求先アカウントの名前。 課金アカウントの詳細については、「請求アカウントについて [」を参照してください](../manage-billing-accounts.md)。
-- **連絡先情報** &ndash; 請求先住所と連絡先名と電子メール アドレス
+-  &ndash;連絡先情報請求先住所と連絡先名と電子メール アドレス
 - **課金プロファイルの役割** &ndash; そのプロファイルの処理を行う請求プロファイル の役割の 1 つが割り当てられているユーザーの一覧。 たとえば、請求書の支払い、PO 番号の追加、または購入に使用される支払い方法の置換を行います。
 
 > [!NOTE]
 >
 > 請求プロファイルの役割は、組織内のユーザーにのみ割り当てることができます。
 
-## <a name="need-help-contact-support"></a>お困りの際は、 サポートにお問い合せください
+## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートにお問い合せください
 
-Azure の料金に関する質問やサポートが必要な場合は、Azure サポートを <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">使用してサポート 要求を作成します</a>。
+Azure の料金に関する質問やサポートが必要な場合は、 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Azure サポートを使用してサポート 要求を作成します</a>。
 
-請求プロファイルに関する質問やサポートが必要な場合はMicrosoft 365 管理センター[サポートにお問い合わせください](../../business-video/get-help-support.md)。
+請求プロファイルに関する質問やサポートが必要な場合は、Microsoft 365 管理センター[問い合わせください](../../admin/get-help-support.md)。
 
 ## <a name="related-content"></a>関連コンテンツ
 

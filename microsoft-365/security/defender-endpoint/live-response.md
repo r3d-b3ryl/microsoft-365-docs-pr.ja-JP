@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bc7b18088d25e47cd214da2df94ff5eb524f2e78
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: e0e2490fb9026ff23e55990930ddedeb48144b92
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171912"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315975"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -221,7 +221,7 @@ ms.locfileid: "62171912"
 > 次のファイル サイズ制限が適用されます。
 >
 > - `getfile` 制限: 3 GB
-> - `fileinfo` 制限: 10 GB
+> - `fileinfo` limit: 30 GB
 > - `library` 制限: 250 MB
 
 ### <a name="download-a-file-in-the-background"></a>バックグラウンドでファイルをダウンロードする
@@ -351,6 +351,7 @@ processes > output.txt
 
 - ライブ応答セッションは、一度に 25 個のライブ応答セッションに制限されます。
 - ライブ応答セッションの非アクティブタイムアウト値は 30 分です。
+- 個々のライブ応答コマンドの制限時間は 10 `getfile``findfile``run`分です。ただし、制限時間は 30 分です。
 - ユーザーは、最大 10 個の同時セッションを開始できます。
 - デバイスは一度に 1 つのセッションにのみ存在できます。
 - 次のファイル サイズ制限が適用されます。

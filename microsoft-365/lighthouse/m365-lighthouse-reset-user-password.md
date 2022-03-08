@@ -1,5 +1,5 @@
 ---
-title: Reset user password
+title: ユーザー パスワードのリセット
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,18 +15,15 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseパスワードをリセットする方法について説明します。
-ms.openlocfilehash: 0840725ffb74072d6f5973aa7175066a31fe32bb
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+description: Microsoft 365 Lighthouse を使用する管理サービス プロバイダー (MSP) の場合は、1 人のユーザーのパスワードをリセットする方法、または異なるテナント間でリスクの高い複数のユーザーに対してパスワードをリセットする方法について説明します。
+ms.openlocfilehash: 5217db990816b8a1ec6ed927f8f9e05827cc215b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62859267"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311551"
 ---
-# <a name="reset-user-password"></a>Reset user password
-
-> [!NOTE]
-> この記事で説明する機能はプレビュー段階であり、変更される可能性があり、[要件](m365-lighthouse-requirements.md)を満たすパートナーのみが利用できます。 組織に Microsoft 365 Lighthouse がない場合は、「[Microsoft 365 Lighthouse にサインアップする](m365-lighthouse-sign-up.md)」を参照してください。
+# <a name="reset-a-user-password"></a>ユーザー パスワードのリセット
 
 Microsoft 365 Lighthouseパスワードを変更またはリセットできます。 1 人のユーザーまたは複数のリスクの高いユーザーのパスワードを、異なるテナント間でリセットできます。
 
@@ -70,5 +67,5 @@ Microsoft 365 Lighthouseパスワードを変更またはリセットできま�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザー Microsoft 365の管理](../enterprise/manage-microsoft-365-accounts.md) (記事)\
+[ユーザー Microsoft 365を管理](../enterprise/manage-microsoft-365-accounts.md)する (記事)\
 [ユーザー のサインインをブロックする](m365-lighthouse-block-user-signin.md) (記事)

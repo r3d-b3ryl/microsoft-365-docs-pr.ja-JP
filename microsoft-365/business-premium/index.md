@@ -24,36 +24,38 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: 小規模ビジネスやキャンペーンで、ユーザーと安全に共同作業を行うMicrosoft 365 Business Premium。
-ms.openlocfilehash: 7f53ee3df70e2310e7bb83d676fa18b544e3fb31
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+description: 小規模ビジネスやキャンペーンで、ユーザーと安全に共同作業を行う方法についてMicrosoft 365 Business Premium。
+ms.openlocfilehash: 77ca1cb7171097a0cae6063db20b1868dcd1b448
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886282"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321629"
 ---
 # <a name="microsoft-365-business-premium-overview"></a>Microsoft 365 Business Premium概要
 
-現代の社会において、データと通信を安全に保つことは、とりわけ医療および法務実務、政治キャンペーン、および他の多くの小規模ビジネスの分野において重要な事項です。 小規模ビジネス内で安全に共同作業Microsoft 365 Business Premiumセキュリティ機能を活用します。 このソリューションでは、お客様とお客様のデータを保護するための一連の推奨事項を提供しています。 このライブラリには、ビジネスの種類にかかわらず、推奨される環境をセットアップして使用するためのヘルプが用意されています。
+現代の社会において、データと通信を安全に保つことは、とりわけ医療および法務実務、政治キャンペーン、および他の多くの小規模ビジネスの分野において重要な事項です。 小規模ビジネスで安全に共同作業を行Microsoft 365 Business Premiumセキュリティ機能を活用します。 このソリューションでは、お客様とお客様のデータを保護するための一連の推奨事項を提供しています。 このライブラリには、ビジネスの種類にかかわらず、推奨される環境をセットアップして使用するためのヘルプが用意されています。
 
-:::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium、ファイル ストレージ、メール、デバイス、ID を保護します。":::
+:::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium、ファイル ストレージ、電子メール、デバイス、ID を保護します。":::
 
 この構成には、ビジネスを保護するための生産性、共同作業、ファイル ストレージ、メール、デバイス、および ID に関する以下のガイダンスが含まれています。
 
 | 保護の対象 | 説明 | リンク |
 | ----- | ----- | ----- | ----- |
-|メール | 多要素認証、ATP 高度なフィッシング保護、ATP の安全なリンク機能、安全な添付ファイルを使用し、機密情報には暗号化されたメールを使用します。| [多要素認証のセットアップ](m365-campaigns-multifactor-authentication.md)、[フィッシング攻撃からの保護](m365-campaigns-phishing-and-attacks.md)、[機密性の高いメールの暗号化またはラベル付け](send-encrypted-email.md) |
-|iOS および Android デバイス |多要素認証を使用し、Microsoft のモバイル アプリをセットアップし、PIN を要求する | [多要素認証をセットアップする](m365-campaigns-multifactor-authentication.md)、[モバイル デバイスをセットアップする](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)|
-|Bring-your-own-devices (BYOD) Mac および Windows 10 PC |Office や OS を最新の状態に保ち、セキュリティ機能を有効にします。 | [非管理対象の Windows 10 PC と Mac を保護する](m365-campaigns-protect-pcs-macs.md) |
+|メール | 機密情報については、多要素認証、高度なフィッシング対策、セーフリンクとセーフメール、暗号化された電子メールを使用します。| [多要素認証をセットアップする](m365bp-multifactor-authentication.md) <br/><br/>[フィッシング攻撃から保護する](m365-campaigns-phishing-and-attacks.md)<br/><br/>[機密情報を暗号化またはラベル付けする](send-encrypted-email.md) |
+|iOS および Android デバイス |多要素認証の使用、Microsoft モバイル アプリのセットアップ、PIN の要求 | [多要素認証をセットアップする](m365bp-multifactor-authentication.md)<br/><br/>[モバイル デバイスのセットアップ](../business/set-up-mobile-devices.md)|
+|Mac およびデバイス PC 用の独自デバイス (BYOD) をWindowsする |Office や OS を最新の状態に保ち、セキュリティ機能を有効にします。 | [管理されていないデバイスWindows Mac デバイスを保護する](m365bp-protect-pcs-macs.md) |
 |ファイルを安全に保存して共有する | Microsoft Teams、OneDrive、SharePoint、Microsoft Stream からファイルやビデオを共有し、機密データを保護します。| [ファイルやビデオを共有する](share-files-and-videos.md) |
-|管理された Windows 10 デバイス |管理されたデバイスを主要なスタッフに提供し、これらのデバイスを保護します。 | [管理されたデバイスをセットアップする](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
+|管理対象デバイスWindowsデバイス |管理されたデバイスを主要なスタッフに提供し、これらのデバイスを保護します。 | [管理されたデバイスをセットアップする](../business/set-up-windows-devices.md) |
 
 ## <a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の推奨セキュリティ構成
 
 この Microsoft 365 Business Premium の推奨される安全な構成は、お客様に以下のサービスを提供します。
 
 - 信頼できるビジネス生産性と共同作業ツール (Outlook、Word、Excel、その他の Office 製品など) に依存します。
-- iOS、Android、Windows 10 のすべてのデバイス上の作業ファイルを、管理が容易なエンタープライズ レベルのセキュリティで保護します。
+
+- 管理が簡単なエンタープライズ レベルのセキュリティで、すべての iOS、Android、Windowsデバイスで作業ファイルを保護します。
+
 - ユーザー アカウントと ID に追加の保護を適用します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
@@ -63,7 +65,9 @@ ms.locfileid: "62886282"
 このライブラリの内訳は次のとおりです。
 
 - セキュリティを強化する際に規範となるセットアップ ガイダンス。
-- セキュリティで保護されたアクセスができるよう、デバイスをセットアップするためのヘルプ。
+
+- ユーザーが安全なアクセスのためにデバイスをセットアップするためのヘルプ。
+
 - セキュイティで保護された共同作業および共有を行う方法を示したガイダンス。
 
 含まれる機能の詳細については、[[Microsoft 365 Business Premium]](https://www.microsoft.com/microsoft-365/business)を参照してください。
@@ -72,9 +76,9 @@ ms.locfileid: "62886282"
 
 以下の手順に従って開始しましょう。
 
+- 中小規模のビジネス向け: [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)
+
 - キャンペーンの場合:「[Microsoft 365 for Campaigns を入手する](get-microsoft-365-campaigns.md)」
-- 各種ビジネスの場合:「[ユーザーが Microsoft 365 を使用する方法について説明](m365-campaigns-users.md)」
-- 各種ビジネスの場合:「[Set up Microsoft 365 (Microsoft 365 のセットアップ)](microsoft-365-campaigns-setup-overview.md)」
 
 ## <a name="solutions-for-your-business"></a>ビジネス向けのソリューション
 
@@ -82,7 +86,7 @@ ms.locfileid: "62886282"
 
 | 共同作業のためのチームを作成する | オンライン会議を設定する |
 | ------------- | ------------- |
-| ![コミュニケーション SharePointを作成します。](../media/sm-m365-democracy-teams-collab.png) | ![オンライン会議](../media/m365-democracy-teams-meetings.png) |
+| ![通信SharePointサイトです。](../media/sm-m365-democracy-teams-collab.png) | ![オンライン会議](../media/m365-democracy-teams-meetings.png) |
 | 主要なスタッフ、すべてのスタッフ、およびパートナーまたはベンダーのチームと協力します。<br>[チームを作成する](create-teams-for-collaboration.md) | Microsoft Teams でオーディオ、ビデオ、共有を使用して会議をスケジュールします。<br>[会議を設定する](set-up-meetings.md) |
 
 | 機密情報を暗号化またはラベル付けする | コミュニケーション サイトを作成する |

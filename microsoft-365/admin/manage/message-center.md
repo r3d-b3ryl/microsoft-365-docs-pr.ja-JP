@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: メッセージ センターの概要Microsoft 365、新機能や変更された機能、その他の重要なアナウンスを追跡する役割について説明します。
-ms.openlocfilehash: 42549156172c0ed529dfb84619836c2e40f42fe8
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+description: 新しい機能や変更Microsoft 365重要なアナウンスを追跡する場合のメッセージ センターとその役割の概要を確認します。
+ms.openlocfilehash: 09ae8e85a6de64848733c4f80b5d2e28e99072fc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62463641"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322325"
 ---
 # <a name="message-center"></a>メッセージ センター
 
@@ -161,14 +161,14 @@ ms.locfileid: "62463641"
 
 ## <a name="monthly-active-users"></a>月次アクティブ ユーザー
 
-メッセージ センターの投稿を開いた場合、[サービス & 月間アクティブ ユーザー] セクションで、その Microsoft 365 アプリまたはサービスを使用しているユーザー **の数が表示** されます。 数値は過去 28 日間です。 この情報は、作業する必要がある変更に優先順位を付けるのに役立ちます。
+メッセージ センターの投稿を開く際に、[サービス & 月間アクティブ ユーザー] セクションで、その Microsoft 365 アプリまたはサービスを使用しているユーザー **の数が表示** されます。 数値は過去 28 日間です。 この情報は、作業する必要がある変更に優先順位を付けるのに役立ちます。
 
-:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="スクリーンショット: 毎月アクティブなユーザー データMicrosoft Teamsメッセージ センターの投稿に [チャットの密度] ページを表示する":::
+:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="スクリーンショット: 毎月アクティブなユーザー データMicrosoft Teamsメッセージ センター投稿の [チャット密度] ページを表示する":::
 
-月次ユーザーの数は、そのアプリまたはサービスを任意のデバイスで使用Microsoft 365すべてのユーザーに適用されます。
+月次ユーザーの数は、そのアプリまたはサービスを任意のデバイスで使用Microsoft 365ユーザーに適用されます。
 
 > [!NOTE]
-> この機能は、すべてのアプリとサービスMicrosoft 365使用できません。 機能が利用できない場合は、お知らせします。
+> この機能は、すべてのアプリとサービスMicrosoft 365使用できる機能ではありません。 機能が利用できない場合は、お知らせします。
 
 ## <a name="choose-columns"></a>列を選択する
 
@@ -213,6 +213,9 @@ ms.locfileid: "62463641"
 メッセージ センターでは、メッセージを選択して詳細を表示できます。
 
 メッセージに関するフィードバックを提供する場合、詳細ウィンドウで、メッセージ詳細ウィンドウの下部にある [**いいね!**] または [**嫌い**] アイコンを選択し、表示されるテキスト ボックスにオプションのフィードバックを入力します。 どんな個人情報も提供しないでください。 オプションで、**[このフィードバックについて私に連絡しても問題ありません]** を選択し、**[送信]** を選択できます。
+
+> [!NOTE]
+> Microsoft 365 を Government - GCC、 Microsoft 365 for Government - GCC High および Office 365 Government - DoD に使用している場合は、投稿に対するフィードバックを提供できないでしょう。
 
 ## <a name="share-a-message"></a>メッセージの共有
 

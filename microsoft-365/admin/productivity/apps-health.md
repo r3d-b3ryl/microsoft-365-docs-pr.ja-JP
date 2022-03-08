@@ -1,9 +1,9 @@
 ---
-title: Microsoft 生産性スコア - Microsoft 365の正常性
+title: Microsoft 生産性スコア - Microsoft 365アプリの正常性
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,20 +19,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 正常性の詳細 - Microsoft 365 Apps生産性スコア。
-ms.openlocfilehash: e1dbbd0f52ac0d06d5f5af677fb7acf3a4762a3c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22bc1d503bc177722cb12d54c63adc3869755491
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176105"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321769"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 アプリの正常性 – テクノロジ エクスペリエンス
 
-生産性スコアは、組織のデジタル変換の取り組みについて、Microsoft 365をサポートするテクノロジ エクスペリエンスを通じて分析情報を提供します。 組織のスコアは、ユーザーとテクノロジ エクスペリエンスの測定値を反映し、類似した組織のベンチマークと比較できます。 アプリの正常性カテゴリは、テクノロジ エクスペリエンスに該当する測定値の一部です。 詳細については、「生産性スコアの概要」 [を参照し](productivity-score.md) 、「Microsoft のプライバシーに関 [する声明」を参照してください](https://privacy.microsoft.com/privacystatement)。
+生産性スコアは、組織のデジタル変換の取り組みについて、Microsoft 365をサポートするテクノロジ エクスペリエンスに関する分析情報を提供します。 組織のスコアは、ユーザーとテクノロジ エクスペリエンスの測定値を反映し、類似した組織のベンチマークと比較できます。 アプリの正常性カテゴリは、テクノロジ エクスペリエンスに該当する測定値の一部です。 詳細については、「生産性スコアの概要」 [を参照し](productivity-score.md) 、「 [Microsoft のプライバシーに関する声明」を参照してください](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>組織がアプリの&#39;スコアMicrosoft 365重要な理由
 
-組織の生産性は、正常なアプリケーション環境に依存します。 推奨チャネルで最新バージョンの Microsoft 365 アプリを実行しているデバイスは、セキュリティが高く、組織内のユーザーが Microsoft 365 の機能を最も多く利用するのに役立ちます。
+組織の生産性は、正常なアプリケーション環境に依存します。 推奨チャネルで最新バージョンの Microsoft 365 アプリを実行しているデバイスの安全性が高く、組織内のユーザーがアプリの機能を最もMicrosoft 365。
 
 ## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>アプリの正常性スコアMicrosoft 365計算する方法
 
@@ -44,7 +44,7 @@ ms.locfileid: "60176105"
 
 主な分析情報は、推奨される更新されたチャネルでMicrosoft 365 Appsデバイスから計算されます。
 
-:::image type="content" source="../../media/appshealth-primary.png" alt-text="アプリの主な視覚Microsoft 365視覚化。":::
+:::image type="content" source="../../media/appshealth-primary.png" alt-text="アプリの主な視覚Microsoft 365表示。":::
 
 この場合に考慮される情報にはMicrosoft 365で実行されているアプリ チャネル、ビルド、およびバージョンが含まれます。
 
@@ -63,9 +63,9 @@ ms.locfileid: "60176105"
 
 ### <a name="scoring-framework"></a>スコアリング フレームワーク
 
-アプリMicrosoft 365正常性スコアは、デバイスが推奨チャネルと最新バージョンMicrosoft 365アプリで実行されているかどうかを測定します。
+アプリMicrosoft 365正常性スコアは、デバイスが推奨チャネルおよび最新バージョンMicrosoft 365アプリで実行されているかどうかを測定します。
 
-## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>組織のアプリ チャネルMicrosoft 365バージョンを確認する
+## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>アプリ チャネルとバージョンMicrosoft 365組織を確認する
 
 また、組織内で現在実行されているチャネルとバージョンのデバイスに関する追加の可視性を得るために役立つサポート情報も提供しています。 これらの追加の指標は生産性スコアには影響しませんが、デバイスが推奨チャネルで Microsoft 365 アプリを実行することで、Microsoft 365 アプリの正常性スコアを上げするためのアクション プランを作成するのに役立ちます。
 
@@ -76,9 +76,9 @@ ms.locfileid: "60176105"
 1. **ヘッダー:** 現在のチャネルでサポートされているバージョンのデバイスを実行しているデバイスの割合を強調表示Microsoft 365 Apps
 1. **本文:** 推奨チャネルでアプリを実行しているデバイスMicrosoft 365情報を提供します。
 1. **視覚化:** 視覚化の内訳は、次のように、最新バージョンおよびサポートされているバージョンの Microsoft 365 アプリのデバイスの割合を表します。
-    - **サポートされているバージョン:** 青いバーは、サポートされているバージョンのアプリで実行されているデバイスのMicrosoft 365します。
+    - **サポートされているバージョン:** 青いバーは、サポートされているバージョンのアプリで実行されているデバイスMicrosoft 365します。
     - **最新のリリース:** ティール カラー バーは、最新リリースのデバイスの割合を表します。
-1. **詳細については、次の情報を参照してください。**   ヘルプ コンテンツを表示するには、このリンクを選択します。
+1. **詳細情報：**   ヘルプ コンテンツを表示するには、このリンクを選択します。
 
 ### <a name="devices-running-latest-and-supported-versions"></a>最新バージョンとサポートされているバージョンを実行しているデバイス
 
@@ -86,14 +86,14 @@ ms.locfileid: "60176105"
 
 1. **ヘッダー:**  サポートされているバージョンと最新バージョンを実行しているデバイスを実行しているデバイスの割合を強調表示します。
 1. **本文:**  推奨チャネルおよびサポートされている/最新バージョンでデバイスを実行している値に関する情報を提供します。
-1. **視覚化:** 視覚化の内訳は、サポートされているバージョンと最新バージョンのアプリを実行しているデバイスの数を表示する範囲を表Microsoft 365されています。
+1. **視覚化:** 視覚化の内訳は、サポートされているバージョンと最新バージョンのアプリを実行しているデバイスの数を示す範囲を表Microsoft 365されています。
     - **サポートされているバージョン:** バーの青い (色付き) 部分とバーの分数 (分子/分母) は、サポートされているバージョンの Microsoft 365 アプリを実行しているデバイスの割合を表します。
         - Numerator: 過去 28 日以内にサポートされているバージョンMicrosoft 365アプリのデバイス数
-        - 分母: 過去 28 Microsoft 365アプリを使用するデバイスの数
-    - **最新のバージョン:** バーのティール (色付き) 部分とバーの分数 (分子/分母) は、最新バージョンの Microsoft 365 アプリを実行しているデバイスの割合を表します。
-        - Numerator: 過去 28 日以内の最新バージョンMicrosoft 365アプリのデバイス数
-        - 分母: 過去 28 Microsoft 365アプリを使用するデバイスの数
-1. **詳細については、次の情報を参照してください。**   ヘルプ コンテンツを表示するには、このリンクを選択します。
+        - 分母: 過去 28 日以内Microsoft 365アプリを使用するデバイスの数
+    - **最新のバージョン:** バーのティール (色付き) 部分とバーの分数 (分子/分母) は、最近のバージョンの Microsoft 365 アプリを実行しているデバイスの割合を表します。
+        - Numerator: 過去 28 日間の最新バージョンの Microsoft 365アプリのデバイスの数
+        - 分母: 過去 28 日以内Microsoft 365アプリを使用するデバイスの数
+1. **詳細情報：**   ヘルプ コンテンツを表示するには、このリンクを選択します。
 
 #### <a name="trend-visualization-of-the-devices"></a>デバイスの傾向の視覚化
 
@@ -103,11 +103,11 @@ ms.locfileid: "60176105"
 
 ## <a name="devices-in-your-organization"></a>組織内のデバイス
 
-このセクションでは、アプリの正常性 (テクノロジ エクスペリエンス) に関するすべての指標に関連情報を提供することで、注目するMicrosoft 365に基Microsoft 365役立ちます。
+このセクションでは、アプリの正常性 (テクノロジ エクスペリエンス) に関するすべての指標に関連情報を提供することで、注目する指標にMicrosoft 365役立ちます。
 
 次の列は、チャネル/バージョン レベルの表に表示されます。
 
-- **チャネル**: デバイスMicrosoft 365現在のアプリ チャネル。
+- **チャネル** : デバイスMicrosoft 365現在のアプリ チャネル。
 - **状態:**  Microsoft 365アプリは、現在のチャネルとバージョンに基づいてデバイスの状態をサポートします。
 - **バージョン:**  デバイスMicrosoft 365アプリの現在のバージョン。
 - **デバイスの数:**  デバイスの数。

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: 管理者が監査ログを検索する機能を有効または無効にするには、Microsoft 365 コンプライアンス センターの監査ログ検索機能を有効または無効にする方法を示します。
-ms.openlocfilehash: 9c0d523d05393b73f627bc9ac17568b2a0ec25ad
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e36fe410ed75522b0d531f2f9f7901b78f4974eb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109733"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316115"
 ---
 # <a name="turn-auditing-on-or-off"></a>監査のオンとオフを切り替える
 
@@ -38,32 +38,35 @@ Microsoft 365 コンプライアンス センター で監査を有効にする�
   
 ## <a name="before-you-turn-auditing-on-or-off"></a>監査を有効またはオフにする前に
 
-- 組織で監査を有効またはExchange Onlineするには、監査ログの役割を割りMicrosoft 365があります。 既定では、この役割は、管理センターの [アクセス許可] ページの[コンプライアンス管理] および [組織の管理Exchange割り当てられます。 グループ内のグローバルMicrosoft 365は、組織の管理役割グループのメンバー Exchange Online。
+- 組織で監査を有効またはExchange Onlineするには、監査ログの役割を割りMicrosoft 365があります。 既定では、この役割は管理センターの [アクセス許可] ページのコンプライアンス管理役割グループと組織Exchange割り当てられます。 グループ内のグローバルMicrosoft 365は、組織の管理役割グループのメンバー Exchange Online。
 
     > [!NOTE]
-    > 監査を有効またはオフに切り替Exchange Onlineユーザーにアクセス許可を割り当てる必要があります。 ユーザーに[アクセス許可] ページの[監査ログ] 役割を割り当てるMicrosoft 365 コンプライアンス センター、監査を有効またはオフにすることはできません。 これは、基になるコマンドレットが PowerShell コマンドレットExchange Onlineです。
+    > 監査を有効またはオフに切り替Exchange Onlineユーザーにアクセス許可を割り当てる必要があります。 ユーザーに[アクセス許可] ページの [監査ログ] 役割を割り当てるMicrosoft 365 コンプライアンス センター、監査を有効またはオフにすることはできません。 これは、基になるコマンドレットが PowerShell コマンドレットExchange Onlineです。
 
-- 監査ログの検索に関する詳細な手順については、「監査ログの検索 [」を参照してください](search-the-audit-log-in-security-and-compliance.md)。 管理アクティビティ API の詳細Microsoft 365、「管理 API の概要」を参照Microsoft 365[してください](/office/office-365-management-api/get-started-with-office-365-management-apis)。
+- 監査ログの検索に関する詳細な手順については、「監査ログの検索 [」を参照してください](search-the-audit-log-in-security-and-compliance.md)。 管理アクティビティ API の詳細Microsoft 365、「管理 API の概要[」をMicrosoft 365してください](/office/office-365-management-api/get-started-with-office-365-management-apis)。
 
 ## <a name="verify-the-auditing-status-for-your-organization"></a>組織の監査状態を確認する
 
-組織の監査が有効になっていることを確認するには、PowerShell で次のコマンド[Exchange Onlineできます](/powershell/exchange/connect-to-exchange-online-powershell)。
+組織の監査が有効になっていることを確認するには、PowerShell で次の[コマンドExchange Onlineできます](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ```powershell
 Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 ```
 
-`True` _UnifiedAuditLogIngestionEnabled_ プロパティの値は、監査が有効になっていることを示します。 値は `False` 、監査が有効になっていることを示します。
+`True` _UnifiedAuditLogIngestionEnabled_ プロパティの値は、監査が有効になっていることを示します。 値は、 `False` 監査が有効になっていることを示します。
+
+> [!NOTE]
+> PowerShell で前のコマンドを実行Exchange Onlineしてください。 このコマンドを実行するには、セキュリティ &コンプライアンス PowerShell を使用することはできません。
 
 ## <a name="turn-on-auditing"></a>監査を有効にする
 
-組織で監査を有効にしていない場合は、組織で有効にするか、PowerShell Microsoft 365 コンプライアンス センターを使用Exchange Onlineできます。 監査ログを検索するときに結果を返す前に、監査を有効にしてから数時間かかる場合があります。
+組織で監査を有効にしていない場合は、組織で有効Microsoft 365 コンプライアンス センター PowerShell を使用Exchange Onlineできます。 監査ログを検索するときに結果を返す前に、監査を有効にしてから数時間かかる場合があります。
   
 ### <a name="use-the-compliance-center-to-turn-on-auditing"></a>コンプライアンス センターを使用して監査を有効にする
 
 1. <https://compliance.microsoft.com> に移動し、サインインします。
 
-2. 左側のナビゲーション ウィンドウで、[監査] をMicrosoft 365 コンプライアンス センターを **クリックします**。
+2. ウィンドウの左側のナビゲーション ウィンドウで、[監査Microsoft 365 コンプライアンス センターをクリック **します**。
 
    組織の監査が有効ではない場合は、ユーザーと管理アクティビティの記録を開始するように求めるバナーが表示されます。
 
@@ -107,7 +110,7 @@ Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 
       `False` _UnifiedAuditLogIngestionEnabled_ プロパティの値は、監査がオフになっていることを示します。
 
-    - [監査]**ページの**[監査] Microsoft 365 コンプライアンス センター。
+    - [監査] **ページの** [監査] ページに移動Microsoft 365 コンプライアンス センター。
 
       組織の監査が有効ではない場合は、ユーザーと管理アクティビティの記録を開始するように求めるバナーが表示されます。
 
@@ -115,7 +118,7 @@ Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 
 組織の監査状態に対する変更は、自身が監査されます。 つまり、監査を有効または無効にした場合、監査レコードがログに記録されます。 管理者監査ログExchangeこれらの監査レコードを検索できます。
 
-管理者監査ログExchange監査を有効またはオフにするときに生成される監査レコードを検索するには[、PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)で次のコマンドExchange Onlineします。
+監査をオンまたはExchangeするときに生成される監査レコードを管理者監査ログで検索するには、PowerShell で次のコマンド[Exchange Onlineします](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ```powershell
 Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
@@ -127,12 +130,12 @@ Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLo
 
 ![監査を有効にする監査レコード](../media/AuditStatusAuditingEnabled.png)
 
-CmdletParameters プロパティの値は、コンプライアンス センターで、または `Confirm` **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled** $true コマンドレットを実行して、統合監査ログが有効になっていることを示します。
+`Confirm` *CmdletParameters* プロパティの値は、コンプライアンス センターで、または **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled** $true コマンドレットを実行して、統合監査ログが有効になっていることを示します。
 
 ### <a name="audit-record-for-turning-off-auditing"></a>監査をオフにする監査レコード
 
 ![監査をオフにする監査レコード](../media/AuditStatusAuditingDisabled.png)
 
-値は `Confirm` *、CmdletParameters プロパティには含* まれません。 これは **、Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled** コマンドを実行して、統合監査ログがオフ$falseします。
+値は、`Confirm`*CmdletParameters プロパティには含* まれません。 これは、 **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled** コマンドを実行して、統合監査ログがオフ$falseします。
 
-管理者監査ログの検索のExchange詳細については[、「Search-AdminAuditLog」を参照してください](/powershell/module/exchange/search-adminauditlog)。
+管理者監査ログの検索Exchange詳細については、「[Search-AdminAuditLog」を参照してください](/powershell/module/exchange/search-adminauditlog)。
