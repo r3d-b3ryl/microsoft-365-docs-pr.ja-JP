@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Microsoft Bookings の予定の前または後にバッファー時間を設定して、機器のクリーンアップまたはリセットに時間を割り当て。
-ms.openlocfilehash: c3d07be3c858eca5f6e9a672581b386625f5dd80
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a33159b0b5f168bbb61c88bc9b4181e05c8abbb1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164046"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329321"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Microsoft Bookings でバッファー時間を設定する
 
@@ -26,17 +26,18 @@ ms.locfileid: "60164046"
 
 バッファー時間の既定値は、Bookings の **[サービスの詳細** ] ページで設定されます。 このページで設定されているサービスの既定値と同様に、これらの既定値は、特定の顧客のニーズを満たすために、特定の予約に対してユーザーが編集できます。
 
-バッファー時間の設定は、[サービスの詳細] ページの **[既定の** 期間ピッカー] **の下にあります** 。 特定のサービスに対して設定する前に、バッファー時間トグルを選択してバッファー時間設定を有効にする必要があります。 これにより、次に **示** すように、予約の前と後に保持する既定の時間を選択するために使用される [Before] ドロップダウンと [After] ドロップダウンが表示されます。
+バッファー時間の設定は、[サービスの詳細] ページの **[既定の** 期間ピッカー] **の下にあります** 。 特定のサービスに対して設定する前に、バッファー時間トグルを選択してバッファー時間設定を有効にする必要があります。 これにより、次 **に示すように**、予約の前と後に保持する既定の時間を選択するために使用される [Before] ドロップダウンと [After] ドロップダウンが表示されます。
 
    ![バッファー時間が有効になっている予約のイメージ。](../media/bookings-buffertime.png)
 
-## <a name="buffer-time-and-appointment-timing"></a>バッファー時間と予定タイミング
+<!--## Buffer time and appointment timing
 
-顧客がいつお客様と会うのかについて混乱を避けるため、Bookings は、バッファー時間と実際の予定時間 (顧客が顧客と会う予定の時間) を予定表に表示し、関連するスタッフに電子メールで確認とリマインダーを表示します。 たとえば、予約前バッファー時間が 15 分を含む顧客との予定については、Bookings に表示される内容を次に示します。
+To avoid confusion about when customers expect to meet with you, Bookings shows buffer time and actual appointment time (the time your customers expect to meet with you) on your calendar, and in email confirmations and reminders to relevant staff. For example, below is what you’d see in Bookings for an appointment with a customer that includes 15 minutes of pre-appointment buffer time.
 
-イベント自体 (下の図の左側) には、バッファー時間の明るい網かけと、実際の顧客予定の濃い網かけが表示されます。 予定の呼び出し (イベントを選択すると開きます) は、特に予定が Katie Jordan の午前 9:00 から午前 10:00 までであり、予定の前に 15 分のバッファー時間と予定の 0 分後に含まれると具体的に示しています。 スタッフへの確認とリマインダーは、同様に特定のバッファーと予定時間を参照しますが、顧客は午前 9:00 ~ 午前 10:00AM の予定時間を参照する確認とリマインダーのみを取得します。
+Note that the event itself (on the left in the image below) shows lighter shading for the buffer time and darker shading for the actual customer appointment. The appointment call-out (which is opened when you select the event) specifically states that the appointment is from 9:00AM to 10:00AM with Katie Jordan and includes 15 minutes of buffer time before the appointment and 0 minutes after the appointment. Confirmations and reminders to staff similarly reference specific buffer and appointment time while the customer would only get confirmations and reminders that reference a 9:00AM to 10:00AM appointment time.
 
-   ![バッファー時間が表示された Bookings 予定の呼び出しのイメージ。](../media/bookings-buffertime-callout.png)
+   ![Image of Bookings appointment call-out with buffer time showing.](../media/bookings-buffertime-callout.png)
+-->
 
 ## <a name="buffer-time-and-availability"></a>バッファー時間と空き時間
 

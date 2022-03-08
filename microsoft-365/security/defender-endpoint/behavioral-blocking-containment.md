@@ -1,7 +1,7 @@
 ---
 title: 動作ブロックと封じ込め
 description: Microsoft Defender for Endpoint での動作のブロックと格納機能について説明します。
-keywords: Microsoft Defender for Endpoint,EDRモードでのサポート、パッシブ モードのブロック
+keywords: Microsoft Defender for Endpoint,EDRモードでのブロック、パッシブ モードのブロック
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -15,16 +15,14 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 90d6cef5ef34e2249b5da561559a5e9505f1db84
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: bab766fd69b9227f10ba897040faff79e65b1722
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464716"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325783"
 ---
 # <a name="behavioral-blocking-and-containment"></a>動作ブロックと封じ込め
 
@@ -44,7 +42,7 @@ ms.locfileid: "62464716"
 
 動作のブロックと格納機能は、Defender for Endpoint の複数のコンポーネントと機能と組み合わせ、攻撃を直ちに停止し、攻撃の進行を防止します。
 
-- [次世代の保護](microsoft-defender-antivirus-in-windows-10.md) (Microsoft Defender ウイルス対策を含む) は、動作を分析して脅威を検出し、実行を開始した脅威を停止できます。
+- [次世代の保護](microsoft-defender-antivirus-in-windows-10.md) (Microsoft Defender ウイルス対策 を含む) は、動作を分析して脅威を検出し、実行を開始した脅威を停止できます。
 
 - [エンドポイントの検出と応答](overview-endpoint-detection-response.md) (EDR) は、ネットワーク、デバイス、カーネルの動作全体でセキュリティ信号を受信します。 脅威が検出されると、アラートが作成されます。 同じ種類の複数のアラートがインシデントに集約され、セキュリティ運用チームが調査して対応しやすくなります。
 
@@ -58,7 +56,7 @@ ms.locfileid: "62464716"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>動作のブロックと格納のコンポーネント
 
-- **クライアント上のポリシー駆動型攻撃 [表面の縮小ルール](attack-surface-reduction.md)** 定義済みの一般的な攻撃動作は、攻撃表面の縮小ルールに従って実行されません。 このような動作を実行しようとすると、通知通知として<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender表示されます</a>。 攻撃表面の縮小ルールは既定では有効になっていません。ポータルでポリシー[をMicrosoft 365 Defenderします](/microsoft-365/security/defender/microsoft-365-defender)。
+- **クライアント上のポリシー駆動型攻撃 [表面の縮小ルール](attack-surface-reduction.md)** 定義済みの一般的な攻撃動作は、攻撃表面の縮小ルールに従って実行されません。 このような動作を実行しようとすると、通知通知として<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender表示されます</a>。 攻撃表面の縮小ルールは既定では有効になっていません。ポリシーは、Microsoft 365 Defender[ポータルで構成します](/microsoft-365/security/defender/microsoft-365-defender)。
 
 - **[クライアントの動作のブロック](client-behavioral-blocking.md)** エンドポイント上の脅威は機械学習によって検出され、ブロックされ、自動的に修復されます。 (クライアントの動作ブロックは既定で有効になっています)。
 
@@ -95,7 +93,7 @@ Defender for Endpoint の動作ベースのデバイス学習モデルは、攻�
 - 最初の保護層が悪用の動作を検出しました。 クラウド内のデバイス学習分類子は、脅威を正しく識別し、すぐにクライアント デバイスに攻撃をブロックするように指示しました。
 - 2 番目の保護層は、攻撃が最初のレイヤーを越え、プロセスの空きを検出し、そのプロセスを停止し、対応するファイル (Lokibot など) を削除した場合の停止に役立ちます。
 
-攻撃が検出および停止されている間に、"初期アクセスアラート" などのアラートがトリガーされ、Microsoft 365 Defender [ポータルに表示されました](/microsoft-365/security/defender/microsoft-365-defender)。
+攻撃が検出および停止されている間に、"初期アクセスアラート" などのアラートがトリガーされ、Microsoft 365 Defender[されました](/microsoft-365/security/defender/microsoft-365-defender)。
 
 :::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="ポータルの初期アクセス通知Microsoft 365 Defenderします。":::
 
@@ -123,8 +121,8 @@ Defender for Endpoint の動作ベースのデバイス学習モデルは、攻�
 
 - [攻撃表面の縮小ルールを構成する](attack-surface-reduction.md)
 
-- [ブロック モードEDR有効にする](edr-in-block-mode.md)
+- [ブロック モードでEDRを有効にする](edr-in-block-mode.md)
 
 - [最近のグローバル脅威アクティビティを確認する](https://www.microsoft.com/wdsi/threats)
 
-- [アプリケーションの概要をMicrosoft 365 Defender](../defender/microsoft-365-defender.md)
+- [データの概要をMicrosoft 365 Defender](../defender/microsoft-365-defender.md)

@@ -2,8 +2,8 @@
 title: 業界ニュースの管理
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,19 +18,19 @@ ms.custom:
 search.appverid:
 - MET150
 description: 業界と組織の情報に関する最新のニュース見出しをユーザーに提供し、ニュース サービスを使用して組織のカスタマイズされたニュース フィードを有効にします。
-ms.openlocfilehash: f53f9d7d52a68c29f1225dd38df90d9c4c3e72e2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 717c43861031611d3a71e9f0c7e0490ac2368e3b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168112"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319771"
 ---
 # <a name="manage-industry-news"></a>業界ニュースの管理
 
 > [!NOTE] 
-> Bing業界&ニュースは、現時点では en-US でのみ利用できます。
+> Bing業界&の更新プログラムは、現時点では en-US でのみ利用できます。
 
-業界と組織の情報に関する最新のニュース見出しをユーザーに提供するには、ニュース サービスを使用して組織のカスタマイズされたニュース フィードを有効にします。 また、毎日の業界更新プログラムのメールを有効にし、新しいタブ ページBingページMicrosoft Edge設定を管理することもできます。
+業界と組織の情報に関する最新のニュース見出しをユーザーに提供するには、ニュース サービスを使用して組織のカスタマイズされたニュース フィードを有効にします。 また、毎日の業界更新プログラムのメールを有効にし、新しいBingページMicrosoft Edge設定を管理することもできます。
 
 ## <a name="what-your-users-will-see"></a>ユーザーに表示される情報
 
@@ -42,7 +42,7 @@ ms.locfileid: "60168112"
 
 :::image type="content" source="../../media/industry-updates-new.png" alt-text="日付と見出しを含む業界の更新ページ。":::
 
-また、新しいタブ ページで、会社、業界、社内のニュースや個人Microsoft Edge情報を確認できます。
+また、会社、業界、社内ニュース、または個人設定された作業情報を新しいタブ ページMicrosoft Edge確認できます。
 
 :::image type="content" source="../../media/manage-industry-news-3.png" alt-text="ニュース ホームページの Microsoft。":::
 
@@ -50,7 +50,7 @@ ms.locfileid: "60168112"
 
 管理者は、選択した業界や Bing ホームページ、Microsoft Edge の新しいタブ ページ (エッジ 87 のリリースから開始)、電子メール エクスペリエンスなど、組織のニュース フィード設定を制御します。 
 
-1. [組織の設定Microsoft 365 管理センターに移動し、[組織設定ニュース]  >    >  **に**  >  [**移動します**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)。
+1. 次のMicrosoft 365 管理センターに移動します **設定** > **Org** **settingsServicesNews** >  > [**。**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
 
 1. [ニュース **] パネルで** 、[全般] タブ **をクリック** します。
 
@@ -66,37 +66,37 @@ ms.locfileid: "60168112"
 
 関連する業界ニュースを含む毎日のメール更新をユーザーの受信トレイに送信できます。 ユーザーの毎日の電子メール更新プログラムを設定するには、次の方法を実行します。
 
-1. [組織の設定Microsoft 365 管理センターに移動し、[組織設定ニュース]  >    >  **に**  >  [**移動します**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)。 
+1. 次のMicrosoft 365 管理センターに移動します **設定** > **Org** **settingsServicesNews** >  > [**。**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
 
 1. [ニュース **] パネルで** 、[業界の更新] **タブをクリック** します。 
 1. [毎日 **のメール更新プログラムを送信** する] を選択して、ユーザーに電子メールを送信します。
-1. ユーザーが電子メールの更新で取得したニュースをカスタマイズするには、[ユーザーが自分のトピックをカスタマイズする] **を選択します**。
+1. ユーザーがメール更新で取得したニュースをカスタマイズするには、[ユーザーが自分のトピックをカスタマイズする] **を選択します**。
 
 ## <a name="bing-homepage"></a>Bing ホーム ページ
 
-業界に関するニュースBingを含めるには、このページのホームページをカスタマイズできます。
+業界に関するBingを含めるには、このページのホームページをカスタマイズできます。
 
 ### <a name="toggle-news-for-business-or-enterprise-plans"></a>ビジネスプランまたはビジネス プランのニュースEnterprise切り替える
 
-1. [組織の設定Microsoft 365 管理センターに移動し、[組織設定ニュース]  >    >  **に**  >  [**移動します**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)。
+1. 次のMicrosoft 365 管理センターに移動します **設定** > **Org** **settingsServicesNews** >  > [**。**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
 
-1. [ニュース **] パネル** で、[ホームページ]**タブをBing** し、[ホームページに含 **める]** をBingします。
+1. [ニュース **] パネル** で、[ホームページ] タブBing **クリック** し、[ホームページに含める] **Bingします**。
 
     業界のニュースは、Bing.com の組織からの個人設定された情報の下に表示されます。
 
 ### <a name="toggle-news-types-for-education-plans"></a>Education プランのニュースの種類を切り替える
 
-1. [組織の設定Microsoft 365 管理センターに移動し、[組織設定ニュース]  >    >  **に**  >  [**移動します**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)。
+1. 次のMicrosoft 365 管理センターに移動します **設定** > **Org** **settingsServicesNews** >  > [**。**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
 
-1. [ニュース **] パネル** で、[ホーム ページBing] タブをクリックし、ユーザーに対してトレンドニュースまたは業界ニュースショーを選択できます。 
+1. [ニュース **] パネル** で、[ホーム ページ] タブ **Bing** クリックして、ユーザーに対してトレンドニュースまたは業界ニュースショーを選択できます。
 
 :::image type="content" source="../../media/enable-news-for-edu.png" alt-text="業界ニュースとトレンドニュースのトグル":::
 
-## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge新しいタブ ページ
+## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edgeタブ ページの追加
 
-ユーザーが有効な仕事用アカウントまたは学校アカウントMicrosoft Edge (リリース 87 以上) にサインインすると、組織に合わせたニュースが表示されます。
+ユーザーが有効な仕事用または学校Microsoft Edge (リリース 87 以上) にサインインすると、組織に合わせたニュースを表示できます。
 
-1. [組織の設定Microsoft 365 管理センターに移動し、[組織設定ニュース]  >    >  **に**  >  [移動します](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)。
+1. 次のMicrosoft 365 管理センターに移動します **設定** > **Org** **settingsServicesNews** >  > [。](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
 2. [ニュース **] パネルで**、[新しい **Microsoft Edge] をクリックします**。
 3. [新 **しいタブ ページOffice 365コンテンツを許可する] を選択します**。 有効にすると、ユーザーは新しいタブをカスタマイズして、Office 365 からの情報 (推奨ファイルや最近のファイルを含む) と、頻繁に使用される SharePoint サイトなどの情報を表示できます。
 4. [新 **しいタブ ページに会社情報と業界ニュースを表示する] を選択します**。 組織と業界に関するニュース記事は、新しいタブに記事を表示するユーザーに表示されます。

@@ -2,13 +2,13 @@
 title: Connectに GoDaddy で DNS レコードをMicrosoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: ドメインを確認し、GoDaddy for Microsoft で電子メール、Skype for Business、その他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: ac71bbe1c57e1471e1ff343df75f034cc15c5901
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 728fd6cc34517213b338e3da07e6a275a1a727d3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647786"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313553"
 ---
 # <a name="connect-your-dns-records-at-godaddy-to-microsoft-365"></a>Connectに GoDaddy で DNS レコードをMicrosoft 365
 
@@ -36,23 +36,23 @@ ms.locfileid: "60647786"
 
 使用している DNS ホスティング プロバイダーが GoDaddy の場合は、この記事に示す手順に従い、ドメインを確認して、メールや Skype for Business Online などの DNS レコードを設定します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 ドメインの DNS レコードを設定するには、次の 2 つのオプションがあります。
 
-- [**ドメイン の使用Connect**](#use-domain-connect-to-verify-and-set-up-your-domain)別のメール サービス プロバイダーを使用してドメインを設定していない場合は、ドメイン Connect の手順を使用して、新しいドメインを自動的に確認し、Microsoft 365 で使用する設定を行います。
+- [**[ドメイン Connect を**](#use-domain-connect-to-verify-and-set-up-your-domain)使用する] 別の電子メール サービス プロバイダーでドメインを設定していない場合は、ドメイン Connect の手順を使用して、新しいドメインを自動的に確認し、Microsoft 365 で使用する設定を行います。
 
    または
 
 - [**手動の手順を使用する**](#create-dns-records-with-manual-setup) 以下の手動手順を使用してドメインを確認し、ドメイン レジストラーに追加するレコードを選択します。 これにより、便利な場合など、新しい MX (メール) レコードを設定できます。
 
-## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>ドメインを確認Connect設定するには、ドメイン サーバーを使用します。
+## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>ドメインを確認Connect設定するには、Domain Connectを使用します。
 
 次の手順に従って、GoDaddy ドメインを自動的に確認して設定Microsoft 365。
 
-1. [ドメインMicrosoft 365 管理センター] を **設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**し**</a>、セットアップするドメインを選択します。
+1. [ドメイン] Microsoft 365 管理センター[ドメイン] **を** > 設定し、セットアップするドメインを選択します。<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
-1. 3 つのドット (その他のアクション) を選択し、[セットアップ>を **選択します**。
+1. 3 つのドット (その他のアクション) を選択>セットアップの開始 **] を選択します**。
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="[セットアップの開始] を選択します。":::
 
@@ -60,13 +60,13 @@ ms.locfileid: "60647786"
 
 1. [DNS レコードの追加] ページで、[DNS レコードの **追加] を選択します**。
 
-1. [GoDaddy ログイン] ページで、アカウントにサインインし、[承認] を **選択します**。
+1. [GoDaddy ログイン] ページで、アカウントにサインインし、[承認] を選択 **します**。
 
     これで、ドメインのセットアップが完了Microsoft 365。
 
 ## <a name="create-dns-records-with-manual-setup"></a>手動セットアップで DNS レコードを作成する
 
-GoDaddy でこれらのレコードを追加すると、ドメインはユーザーと一緒に動作Microsoft サービス。
+GoDaddy でこれらのレコードを追加した後、ドメインはユーザーと一緒に動作Microsoft サービス。
 
 > [!NOTE]
 > 通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。
@@ -80,7 +80,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 1. まず、[このリンク](https://account.godaddy.com/products/?go_redirect=disabled)を使って GoDaddy でドメイン ページにアクセスします。
 
-   ログインを求めるメッセージが表示された場合は、ログイン資格情報を使用して、右上のログイン名を選択し、[マイ 製品] **を選択します**。
+   ログインを求めるメッセージが表示されたら、ログイン資格情報を使用し、右上のログイン名を選択し、[マイ 製品] **を選択します**。
 
 1. [ **ドメイン] で**、確認するドメインの横にある 3 つのドットを選択し、[DNS の管理] **を選択します**。
 
@@ -90,7 +90,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="[追加] を選択します。":::
 
-1. ドロップダウン **リストから [TXT]** を選択します。
+1. ドロップダウン **リストから [TXT** ] を選択します。
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="[種類] ドロップダウン リストから [TXT] を選択します。":::
 
@@ -129,7 +129,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 1. まず、[このリンク](https://account.godaddy.com/products/?go_redirect=disabled)を使って GoDaddy でドメイン ページにアクセスします。
 
-   ログインを求めるメッセージが表示された場合は、ログイン資格情報を使用して、右上のログイン名を選択し、[マイ 製品] **を選択します**。
+   ログインを求めるメッセージが表示されたら、ログイン資格情報を使用し、右上のログイン名を選択し、[マイ 製品] **を選択します**。
 
 2. [ **ドメイン] で**、確認するドメインの横にある 3 つのドットを選択し、[DNS の管理] **を選択します**。
 
@@ -139,17 +139,17 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="[追加] を選択します。":::
 
-4. ドロップダウン **リストから [MX]** を選択します。
+4. ドロップダウン **リストから [MX** ] を選択します。
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="[種類] ドロップダウン リストから [MX] を選択します。":::
 
 5. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
 
-    (ドロップダウン リスト **から [Type]** と **[TTL]** の値を選択します)。
+    (ドロップダウン リスト **から [Type** ] と **[TTL** ] の値を選択します)。
 
     |**Type**|**Host**|**Points to**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> 優先度の詳細については、「[MX 優先度とは何か](../setup/domains-faq.yml)」を参照してください。 <br/> |1 hour  <br/> |
+    |MX  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから  *\<domain-key\>*  ユーザーを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> 優先度の詳細については、「[MX 優先度とは何か](../setup/domains-faq.yml)」を参照してください。 <br/> |1 hour  <br/> |
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="MX レコードのテーブルの値を入力します。":::
 
@@ -159,7 +159,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 1. まず、[このリンク](https://account.godaddy.com/products/?go_redirect=disabled)を使って GoDaddy でドメイン ページにアクセスします。
 
-   ログインを求めるメッセージが表示された場合は、ログイン資格情報を使用して、右上のログイン名を選択し、[マイ 製品] **を選択します**。
+   ログインを求めるメッセージが表示されたら、ログイン資格情報を使用し、右上のログイン名を選択し、[マイ 製品] **を選択します**。
 
 2. [ **ドメイン] で**、確認するドメインの横にある 3 つのドットを選択し、[DNS の管理] **を選択します**。
 
@@ -169,7 +169,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="[追加] を選択します。":::
 
-4. ドロップダウン **リストから [CNAME]** を選択します。
+4. ドロップダウン **リストから [CNAME** ] を選択します。
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="[種類] ドロップダウン リストから [CNAME] を選択します。":::
 
@@ -190,11 +190,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 ### <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む 1  *つの SPF*  レコードを作成します。
 
 1. まず、[このリンク](https://account.godaddy.com/products/?go_redirect=disabled)を使って GoDaddy でドメイン ページにアクセスします。
 
-   ログインを求めるメッセージが表示された場合は、ログイン資格情報を使用して、右上のログイン名を選択し、[マイ 製品] **を選択します**。
+   ログインを求めるメッセージが表示されたら、ログイン資格情報を使用し、右上のログイン名を選択し、[マイ 製品] **を選択します**。
 
 2. [ **ドメイン] で**、確認するドメインの横にある 3 つのドットを選択し、[DNS の管理] **を選択します**。
 
@@ -204,7 +204,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="[追加] を選択します。":::
 
-4. ドロップダウン **リストから [TXT]** を選択します。
+4. ドロップダウン **リストから [TXT** ] を選択します。
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="[種類] ドロップダウン リストから [TXT] を選択します。":::
 
@@ -222,13 +222,13 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 ## <a name="advanced-option-skype-for-business"></a>詳細オプション: Skype for Business
 
-このオプションは、チャット、電話会議、ビデオ通話Skype for Business、電話会議など、オンライン通信サービスにネットワーク を使用している場合にのみ、このオプションをMicrosoft Teams。 Skype 4 つのレコードが必要です。ユーザー間通信用の SRV レコードが 2 件、ユーザーをサービスにサインインして接続するための CNAME レコードが 2 件必要です。
+このオプションは、チャット、電話会議、ビデオ通話Skype for Business、電話会議など、オンライン通信サービスに組織がネットワーク通信サービスを使用している場合にのみMicrosoft Teams。 Skype 4 つのレコードが必要です。ユーザー間通信には 2 つの SRV レコード、サービスにユーザーをサインインして接続するには 2 つの CNAME レコードが必要です。
 
 ### <a name="add-the-two-required-srv-records"></a>必要な 2 つの SRV レコードを追加する
 
 1. まず、[このリンク](https://account.godaddy.com/products/?go_redirect=disabled)を使って GoDaddy でドメイン ページにアクセスします。
 
-   ログインを求めるメッセージが表示された場合は、ログイン資格情報を使用して、右上のログイン名を選択し、[マイ 製品] **を選択します**。
+   ログインを求めるメッセージが表示されたら、ログイン資格情報を使用し、右上のログイン名を選択し、[マイ 製品] **を選択します**。
 
 1. [ **ドメイン] で**、確認するドメインの横にある 3 つのドットを選択し、[DNS の管理] **を選択します**。
 
@@ -238,7 +238,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="[追加] を選択します。":::
 
-1. ドロップダウン **リストから [SRV]** を選択します。
+1. ドロップダウン **リストから [SRV** ] を選択します。
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="[種類] ドロップダウン リストから [SRV] を選択します。":::
 
@@ -246,7 +246,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
     新規レコードのボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。
 
-    (ドロップダウン リスト **から [Type]** と **[TTL]** の値を選択します)。
+    (ドロップダウン リスト **から [Type** ] と **[TTL** ] の値を選択します)。
 
     |**Type**|**Service**|**Protocol**| **Name** | **Target**|**Priority**|**Weight**|**Port**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -266,7 +266,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 1. まず、[このリンク](https://account.godaddy.com/products/?go_redirect=disabled)を使って GoDaddy でドメイン ページにアクセスします。
 
-   ログインを求めるメッセージが表示された場合は、ログイン資格情報を使用して、右上のログイン名を選択し、[マイ 製品] **を選択します**。
+   ログインを求めるメッセージが表示されたら、ログイン資格情報を使用し、右上のログイン名を選択し、[マイ 製品] **を選択します**。
 
 2. [ **ドメイン] で**、確認するドメインの横にある 3 つのドットを選択し、[DNS の管理] **を選択します**。
 
@@ -276,7 +276,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="[追加] を選択します。":::
 
-1. ドロップダウン **リストから [CNAME]** を選択します。
+1. ドロップダウン **リストから [CNAME** ] を選択します。
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="[種類] ドロップダウン リストから [CNAME] を選択します。":::
 
@@ -296,7 +296,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 > [!NOTE]
 > 通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。
   
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>高度なオプション: Intune とモバイル デバイスの管理 (Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>詳細オプション: Intune とモバイル デバイスの管理 (Microsoft 365
 
 このサービスは、ドメインに接続するモバイル デバイスのセキュリティ保護とリモート管理に役立ちます。 モバイル デバイス管理では、ユーザーがサービスにデバイスを登録できるよう、2 つの CNAME レコードが必要です。
 
@@ -304,7 +304,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 1. まず、[このリンク](https://account.godaddy.com/products/?go_redirect=disabled)を使って GoDaddy でドメイン ページにアクセスします。
 
-   ログインを求めるメッセージが表示された場合は、ログイン資格情報を使用して、右上のログイン名を選択し、[マイ 製品] **を選択します**。
+   ログインを求めるメッセージが表示されたら、ログイン資格情報を使用し、右上のログイン名を選択し、[マイ 製品] **を選択します**。
 
 1. [ **ドメイン] で**、確認するドメインの横にある 3 つのドットを選択し、[DNS の管理] **を選択します**。
 
@@ -314,7 +314,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="[追加] を選択します。":::
 
-1. ドロップダウン **リストから [CNAME]** を選択します。
+1. ドロップダウン **リストから [CNAME** ] を選択します。
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="[種類] ドロップダウン リストから [CNAME] を選択します。":::
 

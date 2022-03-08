@@ -14,31 +14,31 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: データ損失防止ポリシーとツールを使用Microsoft 365機密情報を保護し、DLP ライフサイクルを通じてツアーを行う方法について説明します。
-ms.openlocfilehash: 4d6cd204a6aafc261e6648d6f81ea359a5fcdfb8
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+description: データ損失防止ポリシーとツールを使用して機密情報Microsoft 365保護し、DLP ライフサイクルを通じてツアーを行う方法について説明します。
+ms.openlocfilehash: f64fa30ed0f2eddae03a14451c55f95c9e4249a3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354974"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317683"
 ---
 # <a name="learn-about-data-loss-prevention"></a>データ損失防止について
 
 組織には、財務データ、専有データ、クレジット カード番号、健康記録、社会保障番号などの機密情報が管理されています。 これらの機密データを保護し、リスクを軽減するには、こうしたデータを保持するべきでないユーザーと不適切に共有できないようにする方法が必要です。 この方法は、データ損失防止 (DLP) と呼ばれます。
 
-このMicrosoft 365、DLP ポリシーを定義して適用することで、データ損失防止を実装します。 DLP ポリシーを使用すると、次に示す間で機密性の高いアイテムを特定、監視、および自動的に保護できます。
+このMicrosoft 365 DLP ポリシーを定義して適用することで、データ損失防止を実装します。 DLP ポリシーを使用すると、次に示す間で機密性の高いアイテムを特定、監視、および自動的に保護できます。
 
 - Microsoft 365、Teams、Exchange、SharePointなどのOneDrive
 - Office、Word、Excel、PowerPoint
 - Windows 10、Windows 11 および macOS (Catalina 10.15 以上) エンドポイント
 - Microsoft 以外のクラウド アプリ
-- オンプレミスのファイル共有とオンプレミス のSharePoint。
+- オンプレミスのファイル共有とオンプレミスのSharePoint。
 
 Microsoft 365単純なテキスト スキャンではなく、ディープ コンテンツ分析を使用して機密性の高いアイテムを検出します。 コンテンツは、キーワードに一致するプライマリ データ、正規表現の評価、内部関数の検証、プライマリ データの一致に近いセカンダリ データの一致によって分析されます。 その他の DLP では、機械学習アルゴリズムや他の方法を使用して、DLP ポリシーに一致するコンテンツを検出します。
 
-## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP は、大規模なコンプライアンスMicrosoft 365の一部です
+## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP は、コンプライアンスサービスの大規模Microsoft 365一部です
 
-Microsoft 365 DLP は、Microsoft 365場所や旅行場所で機密アイテムを保護するために使用する重要なコンプライアンス ツールの 1 つにすすめることができます。 コンプライアンス ツール セットの他のツールMicrosoft 365、そのツールがどのようにインテレートし、より良い作業を行うのかについて理解する必要があります。  情報保護[プロセスMicrosoft 365詳細については、「](protect-information.md)コンプライアンス ツール」を参照してください。
+Microsoft 365 DLP は、機密性の高いMicrosoft 365場所や旅行の場所を保護するために使用するコンプライアンス ツールの 1 つにすすめることができます。 コンプライアンス ツール セットの他のツールMicrosoft 365、そのツールがどのようにインテレートし、より良い作業を行うのかについて理解する必要があります。  情報保護[プロセスMicrosoft 365詳細については、「](protect-information.md)コンプライアンス ツール」を参照してください。
 
 ## <a name="protective-actions-of-dlp-policies"></a>DLP ポリシーの保護アクション
 
@@ -94,7 +94,7 @@ DLP ポリシーは、保存中のデータ、使用されているデータ、�
 - オンプレミス リポジトリ
 - PowerBI サイト
 
-それぞれの前提条件は異なります。 一部の場所 (Exchange オンラインなど) の機密性の高いアイテムは、該当するポリシーを構成するだけで DLP の傘下に持ち込む可能性があります。 オンプレミスのファイル リポジトリなど、他のユーザーには Azure Information Protection (AIP) スキャナーの展開が必要です。 ブロックアクションをアクティブ化する前に、環境を準備し、下書きポリシーをコード化し、それらを徹底的にテストする必要があります。
+それぞれの前提条件は異なります。 一部の場所 (Exchange など) の機密性の高いアイテムは、該当するポリシーを構成するだけで DLP 傘下に持ち込む可能性があります。 オンプレミスのファイル リポジトリなど、他のユーザーには Azure Information Protection (AIP) スキャナーの展開が必要です。 ブロックアクションをアクティブ化する前に、環境を準備し、下書きポリシーをコード化し、それらを徹底的にテストする必要があります。
 
 ### <a name="deploy-your-policies-in-production"></a>実稼働環境でのポリシーの展開
 
@@ -133,7 +133,7 @@ DLP ポリシーは、保存中のデータ、使用されているデータ、�
 
 DLP ポリシーを作成および構成する方法に柔軟性があります。 定義済みのテンプレートから開始し、わずか数クリックでポリシーを作成するか、最初から独自のテンプレートを設計できます。 どちらを選んでも、すべての DLP ポリシーは、ユーザーから同じ情報を必要とします。
 
-1. **監視する対象を選択** します。 - Microsoft 365に役立つ多くの定義済みポリシー テンプレートが付属しているか、カスタム ポリシーを作成できます。
+1. **監視する対象を選択します**。 - Microsoft 365に付属している多数の定義済みポリシー テンプレートを使用して、開始したり、カスタム ポリシーを作成することができます。
     - 定義済みのポリシー テンプレート: 財務データ、医療および健康データ、さまざまな国および地域のプライバシー データ。
     - 使用可能な機密情報の種類、保持ラベル、および機密ラベルを使用するカスタム ポリシー。
 2. **監視する場所を選択する** - DLP で機密情報を監視する 1 つ以上の場所を選択します。 次の情報を監視できます。
@@ -143,7 +143,7 @@ DLP ポリシーを作成および構成する方法に柔軟性があります�
 |Exchange メール| 配布グループ|
 |SharePoint サイト |sites |
 |OneDrive アカウント |アカウントまたは配布グループ |
-|Teams チャットおよびチャネル メッセージ |アカウント |
+|Teams チャットおよびチャネル メッセージ |アカウントまたは配布グループ |
 |Windows 10、Windows 11、macOS (Catalina 10.15 以上) デバイス |ユーザーまたはグループ |
 |Microsoft Cloud App Security |インスタンス |
 |オンプレミス リポジトリ| リポジトリ ファイルのパス|
@@ -156,7 +156,7 @@ DLP ポリシーを作成および構成する方法に柔軟性があります�
 
 4. **ポリシー条件が満たされた場合** に実行するアクションを選択します。アクションは、アクティビティが発生している場所によって異なります。  次に例を示します。
 
-- SharePoint/Exchange/OneDrive: コンテンツにアクセスする組織フォーム外のユーザーをブロックします。 ヒントをユーザーに表示し、DLP ポリシーで禁止されているアクションを実行しているという電子メール通知を送信します。
+- SharePoint/Exchange/OneDrive: 組織外のユーザーがコンテンツにアクセスするフォームをブロックします。 ヒントをユーザーに表示し、DLP ポリシーで禁止されているアクションを実行しているという電子メール通知を送信します。
 - Teamsチャットとチャネル: 機密情報がチャットまたはチャネルで共有されるのをブロックする
 - Windows 10、Windows 11、macOS (Catalina 10.15 以上) デバイス: 機密性の高いアイテムを削除可能な USB デバイスにコピーする監査または制限する
 - Officeアプリ: 危険な動作を行っているユーザーに通知するポップアップを表示し、オーバーライドをブロックまたはブロックします。
@@ -181,7 +181,7 @@ All DLP policies are created and maintained in the Microsoft 365 Compliance cent
 
 ## <a name="viewing-policy-application-results"></a>ポリシー アプリケーションの結果の表示
 
-DLP は、監視、ポリシーの一致Microsoft 365アクション、およびユーザー アクティビティから、膨大な量の情報をレポートします。 機密アイテムに対して行うポリシーとトリアージアクションを調整するには、その情報を使用して処理する必要があります。 テレメトリは、コンプライアンス センター監査[](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center)ログMicrosoft 365最初に処理され、さまざまなレポート ツールに移動します。 各レポート ツールの目的は異なります。
+DLP は、監視、ポリシーの一致とアクションMicrosoft 365、ユーザー アクティビティからデータに膨大な量の情報を報告します。 機密アイテムに対して行うポリシーとトリアージアクションを調整するには、その情報を使用して処理する必要があります。 テレメトリは、コンプライアンス センター監査[](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center)ログMicrosoft 365最初に処理され、さまざまなレポート ツールに移動します。 各レポート ツールの目的は異なります。
 
 ### <a name="dlp-alerts-dashboard"></a>DLP アラート ダッシュボード
 

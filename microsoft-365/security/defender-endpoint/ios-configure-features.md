@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d4052ef2e73b7b81630c8013e17cad533383b215
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 3179ab18ab27bb41f5c0b1577d73ff48b3470b98
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578533"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326077"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS の機能で Microsoft Defender for Endpoint を構成する
 
@@ -37,9 +37,9 @@ ms.locfileid: "61578533"
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>iOS 上のエンドポイント用 Defender を使用した条件付きアクセス
 
-Microsoft Defender for Endpoint on iOS および Microsoft Intune および Azure Active Directory を使用すると、デバイス のリスク スコアに基づいてデバイスコンプライアンスと条件付きアクセス ポリシーを適用できます。 Defender for Endpoint は、Intune を介してこの機能を活用するために展開できるモバイル脅威防御 (MTD) ソリューションです。
+Microsoft Defender for Endpoint on iOS および Microsoft Intune および Azure Active Directoryにより、デバイス のリスク スコアに基づいてデバイスコンプライアンスと条件付きアクセス ポリシーを適用できます。 Defender for Endpoint は、Intune を介してこの機能を活用するために展開できるモバイル脅威防御 (MTD) ソリューションです。
 
-iOS 上の Defender for Endpoint で条件付きアクセスを設定する方法の詳細については [、「Defender for Endpoint and Intune」を参照してください](/mem/intune/protect/advanced-threat-protection)。
+iOS で Defender for Endpoint を使用して条件付きアクセスを設定する方法の詳細については、「 [Defender for Endpoint and Intune」を参照してください](/mem/intune/protect/advanced-threat-protection)。
 
 ### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint による脱獄の検出
 
@@ -47,11 +47,13 @@ Microsoft Defender for Endpoint には、脱獄された管理されていない
 
 ## <a name="web-protection-and-vpn"></a>Web 保護と VPN
 
-既定では、Defender for Endpoint on iOS には Web 保護機能が含まれています。 [Web 保護](web-protection-overview.md)は、Web の脅威からデバイスを保護し、フィッシング攻撃からユーザーを保護するのに役立ちます。 iOS のエンドポイントの Defender は、この保護を提供するために VPN を使用します。 これはローカル VPN であり、従来の VPN とは異なり、ネットワーク トラフィックはデバイスの外部に送信されません。
+既定では、Defender for Endpoint on iOS には Web 保護機能が含まれています。 [Web 保護](web-protection-overview.md)は、Web の脅威からデバイスを保護し、フィッシング攻撃からユーザーを保護するのに役立ちます。 フィッシング対策とカスタム インジケーター (URL と IP アドレス) は、Web Protection の一部としてサポートされています。 現在、iOS では Web コンテンツ フィルターはサポートされていません。
+
+iOS のエンドポイントの Defender は、この機能を提供するために VPN を使用します。 これはローカル VPN であり、従来の VPN とは異なり、ネットワーク トラフィックはデバイスの外部に送信されません。
 
 既定で有効になっている場合は、VPN を無効にする必要がある場合があります。 たとえば、VPN が構成されているときに動作しないアプリを実行する場合です。 このような場合は、次の手順に従って、デバイス上のアプリから VPN を無効にできます。
 
-1. iOS デバイスで、アプリを開き **設定[全般**] をクリック **またはタップ** し **、[VPN] をタップします**。
+1. iOS デバイスで、アプリを開き **設定、[全般**] を **クリックまたはタップ** し、[VPN] を **タップします**。
 1. Microsoft Defender for Endpoint の "i" ボタンをクリックまたはタップします。
 1. VPN を無効 **にするにはConnectをオフ** にします。
 
@@ -71,14 +73,14 @@ Microsoft Defender for Endpoint は、iOS/iPadOS のアプリ保護ポリシー 
 
 Microsoft Defender for Endpoint を使用してアプリ保護ポリシーをセットアップする手順は次のとおりです。
 
-1. Microsoft Defender for Endpoint への Microsoft エンドポイント マネージャーテナントからの接続を設定します。 [Microsoft Endpoint](https://go.microsoft.com/fwlink/?linkid=2109431)Manager 管理センターで、[テナント管理コネクタとトークン Microsoft Defender for Endpoint (クロス プラットフォーム) またはエンドポイント セキュリティ Microsoft Defender for Endpoint (セットアップ] の下) に移動し、[アプリ保護ポリシー 設定 for \>  \>   \>  **iOS]** のトグルをオンにします。
-1. [保存] を選択します。 [接続の状態 **] が [有効]** に設定されている必要 **があります**。
-1. アプリ保護ポリシーの作成: Microsoft Defender for Endpoint Connector のセットアップが完了したら、[アプリアプリ保護ポリシー] ([ポリシー] の下) に移動して、新しいポリシーを作成するか、既存のポリシー \> を更新します。
+1. クライアント テナントから Microsoft Defender for Endpoint Microsoft エンドポイント マネージャー接続をセットアップします。 [Microsoft Endpoint](https://go.microsoft.com/fwlink/?linkid=2109431) \>  \> Manager 管理センターで、[テナント管理コネクタとトークン **Microsoft Defender for** Endpoint (クロス プラットフォーム) または Endpoint **Security** \> **Microsoft Defender for** Endpoint (セットアップ] の下) に移動し、[アプリ保護ポリシー 設定 for **iOS**] のトグルをオンにします。
+1. [保存] を選択します。 [接続の状態 **] が [有効** ] に設定されている必要 **があります**。
+1. アプリ保護ポリシーの作成: Microsoft Defender for Endpoint  \> Connector のセットアップが完了したら、[アプリアプリ保護ポリシー **] ([** ポリシー] の下) に移動して、新しいポリシーを作成するか、既存のポリシーを更新します。
 1. 組織がポリシーに必要とするプラットフォーム、 **アプリ、データ** 保護、アクセス要件の設定を選択します。
-1. [ **条件付き起動** \> **デバイスの条件**] で、[最大許可デバイスの脅威レベル **] という設定が表示されます**。 これは、Low、Medium、High、または Secured のどちらかに構成する必要があります。 使用できるアクションは、[アクセスのブロック] **または [** データの **ワイプ] になります**。 この設定を有効にする前にコネクタをセットアップする情報ダイアログが表示される場合があります。 コネクタが既にセットアップされている場合は、このダイアログは無視できます。
+1. [ **条件付き起動** \> **デバイスの条件**] の下に、[許可されるデバイスの **脅威レベルの最大値] の設定が表示されます**。 これは、Low、Medium、High、または Secured のどちらかに構成する必要があります。 使用できるアクションは、[アクセスのブロック **] または [** データのワイプ **] になります**。 この設定を有効にする前にコネクタをセットアップする情報ダイアログが表示される場合があります。 コネクタが既にセットアップされている場合は、このダイアログは無視できます。
 1. [割り当て] で終了し、ポリシーを保存します。
 
-MAM またはアプリ保護ポリシーの詳細については [、「iOS アプリ保護ポリシー設定」を参照してください](/mem/intune/apps/app-protection-policy-settings-ios)。
+MAM またはアプリ保護ポリシーの詳細については、「 [iOS アプリ保護ポリシー設定」を参照してください](/mem/intune/apps/app-protection-policy-settings-ios)。
 
 ### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>MAM または登録されていないデバイスでの Microsoft Defender for Endpoint の展開
 
@@ -97,12 +99,12 @@ Microsoft Defender for Endpoint on iOS では、アプリ保護ポリシーの�
 
 次の手順を使用して、プライバシーを有効にし、フィッシングアラート レポートの一部としてドメイン名を収集しない。
 
-1. [[Microsoft エンドポイント マネージャー管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**アプリ** アプリの構成ポリシー] [管理対象  >    >  **デバイス**  >  **の追加] に移動します**。
-1. ポリシーに **iOS/iPadOS >という名前を付け**、プロファイルの種類を選択します。
-1. ターゲット **アプリとして [Microsoft Defender for Endpoint]** を選択します。
-1. [設定] ページで、[構成デザイナーを使用する]**を選択し**、キーと値の種類として **DefenderExcludeURLInReport** をブール型として追加 **します。**
-   - プライバシーを有効にしてドメイン名を収集しない場合は、値を as と入力し `true` 、このポリシーをユーザーに割り当てる必要があります。 既定では、この値はに設定されます `false` 。
-   - キーが設定されているユーザーの場合、悪意のあるサイトが Defender for Endpoint によって検出およびブロックされるたびに、フィッシング アラートにはドメイン名情報 `true` は含めされません。
+1. [[Microsoft エンドポイント マネージャー管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**AppsApp** >  >  構成ポリシー **] [デバイスの追加]** >  **に移動します**。
+1. ポリシーに名前を付け、「 **プラットフォーム > iOS/iPadOS**」でプロファイルの種類を選択します。
+1. ターゲット **アプリとして [Microsoft Defender for Endpoint** ] を選択します。
+1. [設定] ページで、[構成デザイナーを使用する] **を選択し**、キーと値の種類として **DefenderExcludeURLInReport** をブール型として追加 **します。**
+   - プライバシーを有効にしてドメイン名を収集しない場合は、値を as と入力し `true` 、このポリシーをユーザーに割り当てる必要があります。 既定では、この値はに設定されます `false`。
+   - キーが設定されているユーザー `true`の場合、悪意のあるサイトが Defender for Endpoint によって検出およびブロックされるたびに、フィッシング アラートにはドメイン名情報は含めされません。
 1. [次 **へ] を** クリックし、このプロファイルを対象のデバイス/ユーザーに割り当てる。
 
 上記のプライバシーコントロールをオンまたはオフにした場合、デバイスコンプライアンスチェックや条件付きアクセスには影響はありません。
@@ -116,7 +118,7 @@ Microsoft Defender for Endpoint on iOS では、アプリ保護ポリシーの�
 
 以下の手順に従って、脱獄されたデバイスに対するコンプライアンス ポリシーを作成します。
 
-1. 管理 [Microsoft エンドポイント マネージャーで、[](https://go.microsoft.com/fwlink/?linkid=2109431)デバイス コンプライアンス ポリシー  ->  **の作成ポリシー**]  ->  **に移動します**。 プラットフォームとして [iOS/iPadOS] を選択し、[作成] を **クリックします**。
+1. 管理 [Microsoft エンドポイント マネージャーで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**DevicesCompliance** ->  **policyesCreate Policy**]  ->  に移動します。 プラットフォームとして [iOS/iPadOS] を選択し、[作成] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
     > ![ポリシーを作成します。](images/ios-jb-policy.png)
@@ -132,8 +134,8 @@ Microsoft Defender for Endpoint on iOS では、アプリ保護ポリシーの�
     > [!div class="mx-imgBorder"]
     > ![ポリシー アクション。](images/ios-jb-actions.png)
 
-5. [割 **り当て** ] セクションで、このポリシーに含めるユーザー グループを選択し、[次へ] を **選択します**。
-6. [レビュー **+ 作成] セクション** で、入力した情報が正しいか確認し、[作成] を **選択します**。
+5. [割 **り当て** ] セクションで、このポリシーに含めるユーザー グループを選択し、[次へ] を選択 **します**。
+6. [レビュー **+ 作成] セクション** で、入力した情報が正しいか確認し、[作成] を選択 **します**。
 
 ## <a name="configure-custom-indicators"></a>カスタム インジケーターの構成
 

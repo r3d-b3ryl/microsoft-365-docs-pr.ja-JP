@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: bfbae00812400b211abdda9d7310179cc65e2c15
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 15a97fc419bc6e4264f3c3cd0bbe389b79e5c2f0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444667"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326973"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
-Microsoft 365 コンプライアンス センター に新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、[Microsoft 365](microsoft-365-compliance-center.md) を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今日のコンプライアンスに関する新機能については、以下Microsoft 365してください。
+[Microsoft 365 コンプライアンス センター への](microsoft-365-compliance-center.md)新しいソリューションの追加、フィードバックに基づく既存の機能の更新、新しい更新されたドキュメントの展開など、Microsoft 365 は、変化し続けるコンプライアンス環境を常に改善するのに役立ちます。 コンプライアンスに関する今日の新機能については、以下Microsoft 365ご覧ください。
 
 > [!NOTE]
 > 一部のコンプライアンス機能は、お客様に異なる速度で展開されます。 まだ機能が表示されない場合は、ターゲットリリースに自分自身を [追加してみてください](/office365/admin/manage/release-options-in-office-365)。
@@ -41,11 +41,34 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 >
 > また[、Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)にアクセスして、Microsoft 365、展開中、開発中、キャンセル済み、または以前にリリースされた機能について説明します。
 
+## <a name="february-2022"></a>2022 年 2 月
+
+### <a name="ediscovery"></a>電子情報開示
+
+- [Advanced eDiscovery](advanced-ediscovery-communications-library.md) でカストディアン通信テンプレートを管理する - 電子情報開示管理者は、組織内の任意のケースで使用できるカストディアンAdvanced eDiscovery作成できます。
+- [Advanced eDiscovery](advanced-ediscovery-issuing-officers.md) で発行担当者を管理する - 電子情報開示管理者は、組織内の任意の Advanced eDiscovery ケースでカストディアン通信に割り当て可能な発行担当者のリストを追加できます。
+
+### <a name="information-governance-and-records-management"></a>情報ガバナンスとレコード管理
+
+- [アイテム保持ポリシーと](retention.md#adaptive-or-static-policy-scopes-for-retention) 保持ラベル ポリシーのアダプティブ スコープが一般公開されました (GA)。 アダプティブ スコープを構成[](retention-settings.md#to-configure-an-adaptive-scope)する手順には、SharePoint サイト スコープの詳細が含まれます。カスタム サイト プロパティの使用に関するブログ投稿の参照、およびサイト プロパティ SiteTemplate を使用して、高度なクエリ ビルダーで特定のサイトの種類を含めるか除外する方法について説明します。
+- [情報ガバナンス](retention.md#policy-lookup) ソリューションのポリシー参照が一般提供されています (GA。
+- [Get-PnPTenant および Set-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) から AllowFilesWithKeepLabelToBeDeletedSPO と AllowFilesWithKeepLabelToBeDeletedODB を使用して、ユーザーが SharePoint および OneDrive のラベル付きアイテムを削除できるレコード管理設定に[]( /powershell/module/sharepoint-pnp/set-pnptenant)代わる PowerShell。
+
+### <a name="sensitivity-labels"></a>秘密度ラベル
+
+- 新しいガイダンス Azure Information Protection (AIP) 統合ラベル付けクライアントを Windows コンピューターで使用している場合は、Office アプリの AIP アドインに対して [MIP](sensitivity-labels-aip.md) 組み込みのラベル付けを選択する理由。 このページには、アプリの新しいプライベート プレビュー Office含まれています。
+- 自動ラベル付 [けポリシーの新しい設定](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange):
+  - 一致する感度ラベルを常に適用し、組織外から受信した電子メールに暗号化を適用する電子メールの追加設定。
+  - 特定のインスタンス (ユーザー、グループ、サイト) の除外は、[すべて] の既定の選択が [含まれる] に指定されている場合、新しい [除外] オプションを使用してサポート **されます**。
+- プレビュー中: モバイル デバイス (iOS と Android) は、[](sensitivity-labels-coauthoring.md)最小バージョンを持ち、このプレビューにオプトインする場合に共同編集をサポートします。
+- 既定の共有リンクの種類を設定するサポートは、ユーザーとユーザーの各ドキュメントSharePoint拡張OneDrive。 詳細については、新しい記事「感度ラベルを使用して、サイトとドキュメントの既定の共有リンクの種類を構成する」を参照SharePoint[。]( sensitivity-labels-default-sharing-link.md)OneDrive。
+- Teams管理センターでコンテナー ラベル (グループとサイトの範囲を持つ&しました。
+
 ## <a name="january-2022"></a>2022 年 1 月
 
 ### <a name="microsoft-information-governance"></a>Microsoft 情報ガバナンス
 
-- ドキュメントの Microsoft 365 ページおよびセクションの [Microsoft Information Governance](manage-information-governance.md) は、Microsoft 365 コンプライアンス センター で構成するソリューションに関連する情報を簡単に見つけ出すのに役立つ、データ コネクタ、情報ガバナンス、およびレコード管理を大幅に改訂および再構成しています。 この改訂の一環として、ドキュメントは、情報ガバナンスとレコード管理の保持シナリオの明確な違いを提供します。
+- [ドキュメントの Microsoft 365](manage-information-governance.md) ページとセクションの Microsoft Information Governance は、Microsoft 365 コンプライアンス センター で構成するソリューションに関連する情報を簡単に見つけ出すのに役立つ、データ コネクタ、情報ガバナンス、およびレコード管理を大幅に改訂および再構成しています。 この改訂の一環として、ドキュメントは、情報ガバナンスとレコード管理の保持シナリオの明確な違いを提供します。
 - [情報ガバナンスについて学ぶ](information-governance.md) - 新しい、再構築をサポートします。
 - [情報ガバナンスの概要](get-started-with-information-governance.md) - "保持の開始" を置き換える新しい、この記事では、保持を含むすべての情報ガバナンス機能の開始手順について説明します。
 - [保持ポリシーに対する例外](create-retention-labels-information-governance.md) の保持ラベルを作成します。レコード管理ではなく情報ガバナンスに保持ラベルを使用する新しい特定のシナリオ。
@@ -60,36 +83,36 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - プレビュー中の [新しい MIP 役割グループと役割](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)のサポート。
 - 自動 [ラベル付けポリシー](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) の新しい監視機能。
 - 次に、現在のチャネル (プレビュー) の既存のドキュメントの既定のラベルと、現在のドキュメントの位置合わせOffice on the web。
-- バージョン 2202+Semi-Annual Enterprise 7 月のバージョンチャネルについて発表: 共同編集と監査を行Outlook。
+- バージョン 2202+Semi-Annual Enterprise 7 月のリリースチャネルに関して発表: 共同編集と監査を行Outlook。
 
 ## <a name="december-2021"></a>2021 年 12 月
 
 ### <a name="compliance-and-service-assurance"></a>コンプライアンスとサービスアシュアランス
 
-- [Azure、Dynamics 365、および GDPR](/compliance/regulatory/gdpr-breach-notification) 下の Windows 侵害通知 - セキュリティおよびプライバシー通知を受信するために Defender for Cloud などの有料サービスを使用する必要がなことを明らかにするために更新されました
+- [Azure、Dynamics 365、および GDPR](/compliance/regulatory/gdpr-breach-notification) の下の Windows 侵害通知 - セキュリティおよびプライバシー通知を受信するために Defender for Cloud などの有料サービスを使用する必要がなことを明らかにするために更新されました
 
 ### <a name="ediscovery"></a>電子情報開示
 
-- [Advanced eDiscovery内のコンテンツ](teams-workflow-in-advanced-ediscovery.md#reference-guide)のMicrosoft Teamsワークフロー - 新しいダウンロード可能なクイック リファレンス ガイドで更新され、Teamsコンテンツを管理Advanced eDiscovery
+- [Advanced eDiscovery内の](teams-workflow-in-advanced-ediscovery.md#reference-guide)コンテンツのMicrosoft Teamsワークフロー - 新しいダウンロード可能なクイック リファレンス ガイドで更新され、Teamsコンテンツを管理Advanced eDiscovery
 
 ### <a name="information-governance"></a>情報ガバナンス
 
 - [コンプライアンス センターでアーカイブ メールボックスを有効にする](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) - アーカイブ メールボックスの新しい診断ツールに関するセクションが追加されました
-- [ネットワーク アップロードを使用して組織の PST](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) ファイルをインポートして、Microsoft 365にインポートする - PST インポートで AzCopy v10 がサポートされる
+- [ネットワーク アップロードを使用して組織の PST](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) ファイルをインポートMicrosoft 365 - PST インポートで AzCopy v10 がサポートされる
 - [非アクティブなメールボックスを復元](restore-an-inactive-mailbox.md) する - 非アクティブなメールボックスの LegacyExchangeDN を最初にターゲット メールボックスに追加して非アクティブなメールボックスを復元する手順を変更しました
 
 ### <a name="information-protection"></a>情報保護
 
-- [MIP ソリューションの展開 - MIP](information-protection-solution.md) (MIP) を展開するための事前のロードマップを探しているお客様向Microsoft Information Protectionガイダンス
+- [MIP ソリューションの展開 - MIP](information-protection-solution.md) (MIP) を展開するための事前のロードマップを探しているお客様向け新しいMicrosoft Information Protectionガイダンス
 
 ### <a name="retention-and-records-management"></a>保持とレコードの管理
 
 - 保持ポリシーを有効にするのにかかる時間の新 [しいガイダンス](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
-- 新しいテナント設定の展開: レコードとしてマークされ、ロックされているラベル付き SharePoint アイテムのプロパティの編集を防止するレコード管理設定、およびレコードとしてマークされたアイテムのロックを解除するユーザーを防ぐためのその他の設定
+- 新しいテナント設定の展開: レコードとしてマークされロックされているラベル付き SharePoint アイテムのプロパティの編集を防止するレコード管理設定、およびレコードとしてマークされたアイテムのロックを解除するユーザーを防ぐためのその他の設定
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-- 必須のラベル付けとユーザーの既定のラベルPower BI一般提供 (GA)
+- 必須のラベル付けとユーザーの既定のPower BI一般提供 (GA)
 
 ## <a name="november-2021"></a>2021 年 11 月
 
@@ -112,7 +135,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - [新しいケース形式が一般Advanced eDiscovery](advanced-ediscovery-new-case-format.md)リリースされ、"大きな大文字と小文字の形式" から名前が変更された場合は、新しいケース形式を使用します。
 
 ### <a name="retention-and-records-management"></a>保持とレコードの管理
-- 展開: 新しいレコード管理設定で、ユーザーがラベル付SharePointとOneDriveを削除できるかどうかを制御します。 以前は、コンテンツを保持するように構成され、アイテムをレコードとしてマークしなかった保持ラベルを使用すると、OneDrive でこのアクションが許可された場合、ユーザーは SharePoint でラベル付きコンテンツを削除する必要がありました。 詳細については、「アイテム保持[の機能」を参照SharePointおよびOneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)。
+- 展開: 新しいレコード管理設定で、ユーザーがラベル付SharePointとOneDriveを削除できるかどうかを制御します。 以前は、コンテンツを保持するように構成され、アイテムをレコードとしてマークしなかった保持ラベルを使用すると、OneDrive でこのアクションが許可されている場合、ユーザーは SharePoint でラベル付きコンテンツを削除する必要がありました。 詳細については、「アイテム保持[の機能」を参照SharePointおよびOneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)。
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
@@ -151,10 +174,10 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 ### <a name="data-loss-prevention"></a>データ損失防止
 
 - [macOS のサポートと高度](endpoint-dlp-learn-about.md) な分類のために更新されたデータ損失防止について説明します。サポートされているすべてのファイルの種類のアクティビティを監査するカスタム DLP ポリシーを作成するために更新されました。
-- [macOS のサポートMicrosoft 365高度](endpoint-dlp-getting-started.md)な分類のためにエンドポイントデータ損失防止が更新されました。
+- [macOS のサポートMicrosoft 365高度](endpoint-dlp-getting-started.md)な分類のためにエンドポイント データ損失防止が更新されました。
 - [エンドポイント データ損失防止の使用は](endpoint-dlp-using.md) 、macOS のサポートと高度な分類のために更新されました。
 - [macOS のサポートと高度](dlp-policy-tips-reference.md) な分類のために、データ損失防止ポリシー ヒントのリファレンスが更新されました。
-- [macOS デバイスのオンボード Microsoft 365 (プレビュー)](device-onboarding-macos-overview.md) は、macOS のサポートと高度な分類のために更新されました。
+- [macOS デバイスを macOS Microsoft 365 (プレビュー) に](device-onboarding-macos-overview.md)オンボードすると、macOS のサポートと高度な分類が更新されました。
 - オンボード デバイス用の次の新しいページが追加されました。
   - [Intune を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune.md)
   - [Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune-mde.md)
@@ -164,11 +187,11 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 ### <a name="ediscovery"></a>電子情報開示
 
 - [Advanced eDiscovery](advanced-ediscovery-cloud-attachments.md) でクラウド添付ファイルを収集すると、最新バージョンのクラウド添付ファイルの収集に加えて、電子メール メッセージまたは Teams チャット会話で共有されたバージョンを収集できます。共有バージョンの収集は、クラウド添付ファイルに保持ラベルを自動的に適用する新しい機能によって可能になります。
-- [SharePoint](advanced-ediscovery-historical-versions.md) サイトに保存されているドキュメントのすべてのバージョンを検索用にインデックス付けする Advanced eDiscovery 新機能で履歴バージョンを設定します。つまり、コレクション クエリに一致するコンテンツを含むドキュメント バージョンが検索結果に返されます。
+- SharePoint [Advanced eDiscovery](advanced-ediscovery-historical-versions.md) サイトに保存されているドキュメントのすべてのバージョンを検索用にインデックス付けする Advanced eDiscovery 新機能で履歴バージョンを設定します。つまり、コレクション クエリに一致するコンテンツを含むドキュメント バージョンが検索結果に返されます。
 
 ### <a name="encryption"></a>暗号化
 
-- [1 対 1 の](/microsoftteams/teams-end-to-end-encryption)通話 (パブリック プレビュー) の 1 対 1 の暗号化Microsoft Teamsパブリック プレビュー用の新しいコンテンツを使用します。
+- [1 対 1](/microsoftteams/teams-end-to-end-encryption) の通話 (パブリック プレビュー) Microsoft Teamsパブリック プレビュー用の新しいコンテンツに対して、エンドツーエンドの暗号化を使用します。
 
 ### <a name="information-governance"></a>情報ガバナンス
 
@@ -220,7 +243,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 ### <a name="data-connectors"></a>データ コネクタ
 
-- [CellTrust](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud) および 17a-4 LLC からの Microsoft 365 データ コネクタでのサード パーティデータのアーカイブが、米国政府機関クラウドの GCC組織で利用できる
+- [](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud) CellTrust および 17a-4 LLC からの Microsoft 365 データ コネクタ内のサード パーティ製データのアーカイブが、米国政府機関クラウドGCC組織で利用できる
 - [YouTube データをアーカイブするコネクタをセットアップすると、](archive-youtube-data.md) パブリック プレビューでこの機能の新しいガイダンスが提供されます。
 
 ### <a name="ediscovery"></a>電子情報開示
@@ -245,49 +268,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - アイテム保持ポリシー Teams[プライベート チャネルが](create-retention-policies.md#retention-policy-for-teams-locations)一般提供 (GA) されました。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
-- [](sensitivity-labels-coauthoring.md) Windows (現在のチャネルまたは月次 Enterprise チャネルから 2107 の最小バージョン) と macOS (最小バージョン 16.51) の共同編集と自動保存が一般に利用できます。
+- [](sensitivity-labels-coauthoring.md)共同編集と自動保存は、Windows (現在のチャネルまたは月次 Enterprise チャネルから 2107 の最小バージョン) と macOS (最小バージョン 16.51) で一般に使用できます。
 - 組み込Officeを使用するアプリの展開: 既定のラベル設定では、既存のドキュメントと新しいドキュメントがサポートされます。 この動作の変更は、Azure Information Protection の統合ラベル付けクライアントとのパリティを提供します。 アプリごとのロールアウトと最小バージョンの詳細については、Word、Excel、PowerPoint の [機能表](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) を参照してください。
-- コンテナー ラベルは、 [PowerShell の詳細設定を使用して既定の共有リンク設定をサポートしています](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings)。
+- コンテナー ラベルは、 [PowerShell の詳細設定を使用して既定の共有リンク設定をサポートしています](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings)。
 - 組[み](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)込みのラベル付けでサポートされている最小バージョンを一覧表示する機能テーブルに、現在のチャネル、月次 Enterprise チャネル、および Semi-Annual Enterprise チャネルのバージョンが追加されました。
-
-## <a name="august-2021"></a>2021 年 8 月
-
-### <a name="app-governance"></a>アプリのガバナンス
-- [アラート分析情報のエントリを拡張しました](app-governance-anomaly-detection-alerts.md#collection-alerts)。 新しいエントリが追加され、アプリガバナンスで利用可能なアラートインサイトが追加されました。
-
-### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
-- [通信コンプライアンス チャネルでは、](communication-compliance-channels.md)プライベート チャットやチャネルでの最新の添付ファイルのスキャンにTeams機能が追加されました。
-
-### <a name="compliance--service-assurance"></a>コンプライアンス&サービス アシュアランス
-
-- [サービスアシュア](/compliance/) ランスは、認定および適用性に関する声明に関する四半期ごとにコンテンツ更新プログラムを確認して更新されました。
-  - アーキテクチャ
-  - 監査ログ
-  - 暗号化とキー管理
-  - ID およびアクセス管理
-  - Microsoft 365の管理
-  - ネットワーク セキュリティ
-  - プライバシー
-  - 回復性および継続性
-  - リスク管理
-  - セキュリティ開発と運用
-  - セキュリティ監視
-  - サプライヤー管理
-  - 脆弱性管理
-
-### <a name="data-loss-prevention"></a>データ損失防止
-
-- [データ損失防止ポリシーリファレンス](dlp-policy-reference.md)。 ポリシーの作成を支援する新しいポリシー参照ページを追加しました。
-
-### <a name="insider-risk-management"></a>インサイダー リスクの管理
-- [インサイダー リスク管理ブラウザーのシグナル検出について説明し、構成します](insider-risk-management-browser-support.md)。 エッジ ブラウザーと Chrome ブラウザーのブラウザー信号検出を構成するためのプレビュー機能。
-
-### <a name="retention-and-records-management"></a>保持とレコードの管理
-- [アイテムが保持または完全](retention-flowchart.md) に削除される期間を決定するフローチャートで、保持の原則の概念と例を補足します。
-
-### <a name="sensitivity-labels"></a>秘密度ラベル
-- [](apply-sensitivity-label-automatically.md)サイトとポリシーでサポートされる番号の増加、すべての OneDrive サイトと SharePoint サイトのサポート、URL で各サイトを入力する代わりに使用可能な SharePoint サイトを選択する機能、およびシミュレーションの改善を含む自動ラベル付けポリシーの機能強化。
-- アプリの感度ラベル設定Officeラベル付けは、完全データ一致 [(EDM) をサポートしています](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match)。
-- 既定のラベルが (プレビューで) Power BI[に拡張されました](/power-bi/admin/service-security-sensitivity-label-default-label-policy)。
-- アクティビティ エクスプローラーでOutlook on the webの監査イベントが完全[](data-classification-activity-explorer-available-events.md)に展開され、すべてのプラットフォームのすべての Office アプリで組み込みラベルのユーザー アクティビティが利用できます。
-- サポート[](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)されている機能テーブルには、Windows 用の新しい脚注が追加され、最小バージョンが現在のチャネル用であり、先行ゼロを省略する古いバージョンを新しいバージョンと比較するヒントが追加されました。

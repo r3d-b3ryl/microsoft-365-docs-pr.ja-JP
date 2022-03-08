@@ -1,6 +1,6 @@
 ---
-title: パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う
-description: Microsoft 365 Defender 試用版ラボまたはパイロット環境で攻撃シミュレーションをセットアップし、デバイス、ID、データ、およびアプリケーションを保護するようにユーザーに教えるために設計されたセキュリティ ソリューションを試します。
+title: 手順 6. パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う
+description: Microsoft 365 Defenderラボまたはパイロット環境で攻撃シミュレーションをセットアップし、デバイス、ID、データ、およびアプリケーションを保護するようにユーザーに教えるために設計されたセキュリティ ソリューションを試します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,8 +10,8 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
@@ -21,19 +21,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 46facb53ebffb26095a9de4cab60d255285cc949
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: e7dafa34daed763bc0da11e5cd11f80b791db508
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904119"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318719"
 ---
-# <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う
+# <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>手順 6. パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う
 
 **適用対象:**
 - Microsoft 365 Defender
 
-この記事では、攻撃シミュレーションとチュートリアルを使用してインシデントを作成し、Microsoft 365 Defenderして対応するプロセスについて説明します。 このプロセスを開始する前に、評価プロセス全体を確認し、Microsoft 365 Defender評価[](eval-overview.md)環境をMicrosoft 365 Defender[してください](eval-create-eval-environment.md)。
+この記事では、攻撃シミュレーションとチュートリアルを使用してインシデントを作成し、Microsoft 365 Defenderして対応するプロセスについて説明します。 このプロセスを開始する前に、評価プロセス全体を確認し、Microsoft 365 Defender評価[](eval-overview.md)環境Microsoft 365 Defender[してください](eval-create-eval-environment.md)。
 
 次の手順を使用します。
 

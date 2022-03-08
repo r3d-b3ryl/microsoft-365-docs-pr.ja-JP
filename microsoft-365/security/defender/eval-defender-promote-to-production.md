@@ -1,5 +1,5 @@
 ---
-title: 評価環境Microsoft 365 Defenderを Production に昇格する
+title: 手順 7. 評価環境Microsoft 365 Defenderを Production に昇格する
 description: この記事を使用して、MDI、MDO、MDE、Defender for Cloud Apps のエバルを、Microsoft 365 Defender または M365D のライブ環境に昇格します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,19 +20,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e4b852ef7f252033a67e6aa3f1f8183400c18bdb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 47f36d965c9b2b6ef5f106c590e47fe0251163d8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943306"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323977"
 ---
-# <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>評価環境Microsoft 365 Defenderを実稼働環境に昇格する
+# <a name="step-7-promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>手順 7. 評価環境Microsoft 365 Defenderを実稼働環境に昇格する
 
 **適用対象:**
 - Microsoft 365 Defender
 
-評価環境をMicrosoft 365 Defenderするには、まず必要なライセンスを購入します。 「eval[環境の作成」](eval-create-eval-environment.md)の手順に従って、ライセンスOffice 365 E5購入します ([無料試用版の開始] を選択する代わりに)。
+評価環境をMicrosoft 365 Defenderするには、まず必要なライセンスを購入します。 「[eval 環境の作成」](eval-create-eval-environment.md)の手順に従って、ライセンスOffice 365 E5購入します ([無料試用版の開始] を選択する代わりに)。
 
 次に、追加の構成を完了し、パイロット グループが完全に稼働するまで展開します。
 

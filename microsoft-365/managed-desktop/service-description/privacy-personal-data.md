@@ -12,16 +12,16 @@ ms.author: tiaraquan
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: medium
-ms.openlocfilehash: a381bc70e73bf3bbb9f654f5d5dfffd2047f8ab5
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: c70b15a3d35dc4b19c5961e9fbe0404780c12309
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62895981"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330259"
 ---
 # <a name="privacy"></a>プライバシー
 
-Microsoft Managed Desktop は、従業員の Windows デバイスの展開と更新を維持するように設計されたエンタープライズ クラウドのお客様向け IT-as-a-Service (ITaaS) サービスです。
+Microsoft Managed Desktop は、従業員の Windows デバイスの展開と更新を維持するように設計されたエンタープライズ クラウド顧客向け IT-as-a-Service (ITaaS) サービスです。
 
 IT サービスの管理と運用、セキュリティとインシデント対応の監視、ユーザー サポートも提供します。 この記事では、Microsoft Managed Desktop のデータ プラットフォームとプライバシーコンプライアンスの詳細について説明します。
 
@@ -37,7 +37,7 @@ Microsoft Managed Desktop は、企業のお客様にサービスを提供し、
 | [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb) | 診断Windows 10 Enterpriseを使用して、更新プログラムに関する追加情報Windows 10します。 |
 | [Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview) | デバイスの管理とデータのセキュリティ保護。 次のデータ ソースは、次のMicrosoft エンドポイント マネージャー。<br><ul><li>[Microsoft Azure Active Directory](/azure/active-directory/): すべてのユーザー アカウントの認証と ID。</li><li>[Microsoft Intune](/mem/intune/): デバイス構成の配布、デバイス管理、およびアプリケーション管理。</li><li>[Endpoint Analytics](/mem/analytics/overview): デバイスとアプリの使用状況に関する分析分析情報。</li><li>[Windows自動操縦](/microsoft-365/windows/windows-autopilot): デバイスのプロビジョニングと展開。</li><li>[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/): デバイス セキュリティ監視やセキュリティ インテリジェンス データなどのセキュリティ サービスを提供します。</li></ul>
 | [Microsoft マネージド デスクトップ](https://endpoint.microsoft.com/#home) | お客様から提供されたデータ、またはサービスの実行中にサービスによって生成されたデータ。 |
-| [Microsoft 365アプリ](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?rtc=1)| 管理Microsoft 365 Apps。
+| [Microsoft 365向けアプリ](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?rtc=1)| 管理Microsoft 365 Apps。
 
 ## <a name="microsoft-managed-desktop-data-process-and-storage"></a>Microsoft Managed Desktop のデータ プロセスとストレージ
 
@@ -57,29 +57,29 @@ Microsoft Managed Desktop Engineering Operations および Security Operations �
 
 ### <a name="microsoft-windows-10-diagnostic-data"></a>Microsoft Windows 10診断データ
 
-Microsoft Managed Desktop [では、Windows 10](/windows/privacy/windows-diagnostic-data)拡張診断データを使用して、セキュリティWindows最新の状態に保ち、問題のトラブルシューティングを行い、製品の改善を行います。
+Microsoft Managed Desktop では、Windows 10[拡張](/windows/privacy/windows-diagnostic-data)診断データを使用して、セキュリティWindows最新の状態に保ち、問題のトラブルシューティングを行い、製品の改善を行います。
 
 拡張診断データ設定には、Microsoft Managed Desktop に登録されているデバイスとその設定、機能、デバイスの正常性に関する詳細情報が含まれています。 拡張診断データを選択すると、必要な診断データを含むデータが収集されます。 詳細については、「診断データの[設定とデータWindowsに](/windows/privacy/changes-to-windows-diagnostic-data-collection)関する診断データコレクションWindows 10変更」を参照してください。
 
-診断データの用語は、将来のバージョンのバージョンで変更Windows。 Microsoft Managed Desktop は、サービスに必要なデータのみを処理します。 これは、診断レベルがオプションに変わることを意味しますが、Microsoft Managed Desktop は、サービスに必要な診断データ収集を微調整するための限られた診断ポリシーを実装します。 詳細については、「診断データ収集[の変更点Windows参照してください](/windows/privacy/changes-to-windows-diagnostic-data-collection)。
+診断データの用語は、将来のバージョンのバージョンで変更Windows。 Microsoft Managed Desktop は、サービスに必要なデータのみを処理します。 これは、診断レベルがオプションに変わることを意味しますが、Microsoft Managed Desktop は、サービスに必要な診断データ収集を微調整するための限られた診断ポリシーを実装します。 詳細については、「診断データ収集[に対する変更Windows参照してください](/windows/privacy/changes-to-windows-diagnostic-data-collection)。
 
-Microsoft Managed Desktop は、アプリケーションやデバイスの信頼性、パフォーマンス情報などの登録済みデバイスから発生する Windows 10 オプションの診断データからシステム レベルのデータのみを処理して格納します。 Microsoft Managed Desktop は、チャットやブラウザーの履歴、音声、テキスト、音声データなどの顧客の個人データを処理および保存します。
+Microsoft Managed Desktop は、アプリケーションやデバイスの信頼性、パフォーマンス情報など、登録済みデバイスから発生する Windows 10 オプションの診断データからシステム レベルのデータを処理して保存します。 Microsoft Managed Desktop は、チャットやブラウザーの履歴、音声、テキスト、音声データなどの顧客の個人データを処理および保存します。
 
 Microsoft Windows 10 の診断データコレクションの詳細については、「Microsoft Privacy Statement」の「個人[](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule)データの保存と処理」セクションを参照してください。
 
 ### <a name="microsoft-windows-update-for-business"></a>Microsoft Windowsビジネス向け更新プログラム
 
-Microsoft Windows Update for Business は、更新プログラムのWindowsの状態とエラーを分析するために、ユーザー診断からのデータを使用します。 Microsoft Managed Desktop では、このデータを使用して問題を軽減および解決し、すべての登録済みデバイスが定義済みの更新プログラムのケイデンスに基づいて最新の情報に更新されます。
+Microsoft Windows Update for Business では、更新プログラムのWindowsのデータを使用して、更新の状態とエラーを分析します。 Microsoft Managed Desktop では、このデータを使用して問題を軽減および解決し、すべての登録済みデバイスが定義済みの更新プログラムのケイデンスに基づいて最新の情報に更新されます。
 
 ### <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
 
-Microsoft Managed Desktop で使用されるデータの識別は、Azure Active Directory (Azure AD) によって保存されます。 地理的な場所は、Microsoft オンライン サービスを購読する際に組織が提供する場所に基づいており、Microsoft Appsや Azure Enterpriseなどです。 データの場所のAzure AD詳細については、「Azure Active Directory [- データの場所」を参照してください。](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
+Microsoft Managed Desktop で使用されるデータの識別は、Azure Active Directory (Azure AD) によって地理的な場所に保存されます。 地理的な場所は、Microsoft オンライン サービスを購読する際に組織が提供する場所に基づいており、Microsoft Appsおよび Azure Enterpriseなどです。 データの場所のAzure AD詳細については、「Azure Active Directory [- データの場所」を参照してください。](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-Microsoft Intuneおよびサービスをサポートするために、Microsoft Managed Desktop にデータを収集、処理、および共有します。 Intune で収集されるデータの詳細については、「Intune での [データ収集」を参照してください。](/mem/intune/protect/privacy-data-collect) 
+Microsoft Intuneおよびサービスをサポートするために、Microsoft Managed Desktop にデータを収集、処理、および共有します。 Intune で収集されるデータの詳細については、「Intune での [データ収集」を参照してください。](/mem/intune/protect/privacy-data-collect)
 
-データの場所のMicrosoft Intune詳細については、「顧客データMicrosoft 365[場所」を参照してください](/microsoft-365/enterprise/o365-data-locations)。 Intune は、管理者が顧客データに対して行った保存場所の選択を尊重します。
+データの場所のMicrosoft Intune詳細については、「顧客データMicrosoft 365保存場所[」を参照してください](/microsoft-365/enterprise/o365-data-locations)。 Intune は、管理者が顧客データに対して行った保存場所の選択を尊重します。
 
 ### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -95,7 +95,7 @@ Microsoft Defender for Endpoint のデータ収集とストレージの場所の
 
 ### <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for Enterprise
 
-Microsoft 365 AppsデータEnterprise収集し、Microsoft Managed Desktop と共有して、これらのアプリが最新バージョンで最新のバージョンに更新されている必要があります。 これらの更新プログラムは、Microsoft Managed Desktop によって管理される定義済みの更新チャネルに基づいて行います。 ユーザーのデータ収集とMicrosoft 365 Appsの場所の詳細については、「[Microsoft Defender for Endpoint data storage and privacy」を参照してください](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)。
+Microsoft 365 AppsのEnterpriseを収集し、Microsoft Managed Desktop と共有して、これらのアプリが最新バージョンで最新のバージョンに更新されるのを確認します。 これらの更新プログラムは、Microsoft Managed Desktop によって管理される定義済みの更新チャネルに基づいて行います。 データ収集とストレージMicrosoft 365 Apps詳細については、「[Microsoft Defender for Endpoint data storage and privacy」を参照してください](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)。
 
 ## <a name="major-data-change-notification"></a>メジャー データ変更通知
 
@@ -103,11 +103,11 @@ Microsoft Managed Desktop は、サービス通信フレームワークで説明
 
 Microsoft は、Microsoft 365 メッセージ センターと Microsoft Managed Desktop Admin ポータルを通じて、セキュリティ インシデントとサービスの大きな変更の両方についてお客様に通知します。
 
-収集されたデータの種類と保存場所に対する変更は、重要な変更と見なされます。 この変更に関する詳細な通知は、製品およびサービスの標準的な方法と同様に、少なくとも 30 日間Microsoft 365提供します。 詳細については、「サービスの変更 [と通信」を参照してください](/microsoft-365/managed-desktop/service-description/servicechanges)。
+収集されたデータの種類と保存場所に対する変更は、重要な変更と見なされます。 この変更に関する詳細な通知は、製品とサービスの標準的なMicrosoft 365 30 日以上提供します。 詳細については、「サービスの変更 [と通信」を参照してください](/microsoft-365/managed-desktop/service-description/servicechanges)。
 
 ## <a name="compliance"></a>コンプライアンス
 
-Microsoft Managed Desktop は外部監査を受け、包括的なコンプライアンス提供のセットを取得しました。 詳細については、「コンプライアンス」を [参照してください](/microsoft-365/managed-desktop/intro/compliance)。 監査レポートは、Microsoft サービスセキュリティポータルでダウンロードできます。これは、Microsoft [サービス](https://aka.ms/stp)オンライン サービスのEnterprise機能します。 Microsoft Managed Desktop は、これらのドキュメント内の [監視と管理] カテゴリに一覧表示されます。
+Microsoft Managed Desktop は外部監査を受け、包括的なコンプライアンス提供のセットを取得しました。 詳細については、「コンプライアンス」を [参照してください](/microsoft-365/managed-desktop/intro/compliance)。 監査レポートは、Microsoft サービスセキュリティポータルでダウンロードできます。これは、Microsoft [サービス](https://aka.ms/stp) オンライン サービスの中央リポジトリEnterprise提供されます。 Microsoft Managed Desktop は、これらのドキュメント内の [監視と管理] カテゴリに一覧表示されます。
 
 ### <a name="data-subject-requests"></a>データ主体要求
 

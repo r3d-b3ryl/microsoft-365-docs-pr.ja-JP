@@ -7,14 +7,20 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: SharePoint Syntex でフォーム処理モデルを作成する方法について説明します。
+ms.openlocfilehash: 6048eabe8bb57da40d940923e313bd496ec1ecec
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330497"
 ---
-
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でフォーム処理モデルを作成する
 
 </br>
@@ -69,13 +75,13 @@ Microsoft PowerApps の機能である [AI ビルダー](/ai-builder/overview)�
 
         - **[選択したリスト]** ボックスで **[既存のリスト]** を選択した場合、使用するリストを選択します。
 
-4. フォーム処理モデルを作成する場合は、新しい SharePoint コンテンツタイプを作成します。 SharePointコンテンツタイプは、共通の特徴を持つドキュメントのカテゴリを表し、特定のコンテンツの列またはメタデータプロパティのコレクションを共有します。 SharePoint コンテンツ タイプは、SharePoint 管理センターを通じて管理されます。
+4. フォーム処理モデルを作成する場合は、新しい SharePoint コンテンツタイプを作成します。 SharePointコンテンツタイプは、共通の特徴を持つドキュメントのカテゴリを表し、特定のコンテンツの列またはメタデータプロパティのコレクションを共有します。 SharePointコンテンツ タイプは、管理センター SharePoint<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">によって管理されます</a>。
 
    このモデルを SharePoint コンテンツ タイプ ギャラリーの既存のコンテンツ タイプにマッピングするには、**[詳細設定]** を選択します。
 
     ![[フォームを処理するモデルの作成] パネルの [詳細設定] を示すスクリーンショット。](../media/content-understanding/new-form-model-advanced-settings.png) 
 
-   1. **[コンテンツ タイプ]** セクションで、新しいコンテンツ タイプを作成するか、既存のコンテンツ タイプを使用するかを選択します。 
+   1. [コンテンツ <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">タイプ] ギャラリーで</a>、新しいコンテンツ タイプを作成するか、既存のコンテンツ タイプを使用するか選択します。 
 
    2. 既存のコンテンツ タイプを使用するには、**[いずれかを選択]** を選択して、リストからコンテンツ タイプを選択します。
 
@@ -152,7 +158,7 @@ Microsoft PowerApps の機能である [AI ビルダー](/ai-builder/overview)�
 
 ### <a name="classification-date-field"></a>[分類日] フィールド
 
-フォーム処理SharePoint Syntexモデル (またはドキュメント理解モデル) をドキュメント ライブラリに適用すると、[分類日] フィールドがライブラリ  スキーマに含まれます。 既定では、このフィールドは空です。 ただし、ドキュメントがモデルによって処理および分類される場合、このフィールドは完了の日付/時刻スタンプで更新されます。 
+ドキュメント ライブラリSharePoint Syntexフォーム処理モデル (またはドキュメント理解モデル) を適用すると、[分類日] フィールドがライブラリ スキーマに含まれます。 既定では、このフィールドは空です。 ただし、ドキュメントがモデルによって処理および分類される場合、このフィールドは完了の日付/時刻スタンプで更新されます。 
 
 モデルに分類日付がスタンプされている場合は、SharePoint Syntex がファイル フローを処理した後に電子メールを送信を使用して、**SharePoint** ドキュメント ライブラリ内のモデルによって新しいファイルが処理および分類されたとユーザーに通知できます。
 
@@ -160,7 +166,7 @@ Microsoft PowerApps の機能である [AI ビルダー](/ai-builder/overview)�
 
 1. ファイルを選択し、[統合] を **選択Power Automate** >  > **フローを作成します**。
 
-2. [フローの **作成] パネルで**、[ファイルの処理後にSharePoint Syntex **を送信する] を選択します**。
+2. [フローの **作成] パネルで**、[ファイルの処理後に **電子SharePoint Syntex送信] を選択します**。
 
     ![[フロー パネルとフローの作成] オプションが強調表示されているスクリーンショット。](../media/content-understanding/integrate-create-flow.png) 
 

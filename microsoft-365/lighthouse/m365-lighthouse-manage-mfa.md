@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse を使用するマネージド サービス プロバイダー (MSP) 向けに、多要素認証を管理する方法を説明します。
-ms.openlocfilehash: 4587dffbe45eacaf62c49d0c84aeef86455980e1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
-ms.translationtype: HT
+ms.openlocfilehash: 5ab430e464fb2d20f9a911818f9fd6cb077d849e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557282"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326133"
 ---
 # <a name="manage-multifactor-authentication"></a>多要素認証の管理
-
-> [!NOTE]
-> この記事で説明する機能はプレビュー段階であり、変更される可能性があり、[要件](m365-lighthouse-requirements.md)を満たすパートナーのみが利用できます。 組織に Microsoft 365 Lighthouse がない場合は、「[Microsoft 365 Lighthouse にサインアップする](m365-lighthouse-sign-up.md)」を参照してください。
 
 Azure Active Directory (Azure AD) 多要素認証 (MFA) は、データとアプリケーションへのアクセスを保護するのに役立ち、2 つ目の形式の認証を使用して別のセキュリティ層を提供します。 [多要素認証] タブには、テナント全体での MFA 有効化の状態に関する詳細情報が表示されます。 一覧から任意のテナントを選択すると、そのテナントの詳細が表示されます。これには、MFA を必要とする条件付きアクセス ポリシーが既に構成されているものと、MFA にまだ登録していないユーザーが含まれます。
 
@@ -56,7 +53,7 @@ Azure Active Directory (Azure AD) 多要素認証 (MFA) は、データとアプ
 
 ## <a name="notify-users-who-arent-registered-for-mfa"></a>MFA に登録されていないユーザーに通知する
 
-1. Lighthouse の左側のウィンドウで、**[ユーザー]** を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、**[ユーザー]** を選択します。
 
 2. **[多要素認証]** タブを選択します。
 

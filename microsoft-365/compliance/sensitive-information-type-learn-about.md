@@ -16,16 +16,16 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: この記事では、機密情報の種類の概要と、機密情報 (社会保障、クレジット カード、銀行口座番号など) を検出して機密情報を識別する方法について説明します。
-ms.openlocfilehash: 6bc15ae90d591e2f2c4e432dce025201c9f13c18
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: fbe23bbb6c639857367cc0b8467f6084e9116af1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903789"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318845"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
-組織の管理下にある機密性の高いアイテムを識別および分類する方法は、情報保護の分野の最初の [ステップです](./information-protection.md)。  Microsoft 365には、分類可能なアイテムを識別する 3 つの方法があります。
+組織の管理下にある機密性の高いアイテムを識別および分類する方法は、情報保護の分野の最初の [ステップです](./information-protection.md)。  Microsoft 365には、分類できるアイテムを識別する 3 つの方法があります。
 
 - ユーザーが手動で行う
 - 機密情報の種類などの自動パターン認識
@@ -42,7 +42,6 @@ Microsoft は多数の事前構成済み SIT を提供しているか、独自�
 - [保持ラベル](retention.md)
 - [インサイダー リスク管理](insider-risk-management.md)
 - [通信コンプライアンス](communication-compliance.md)
-- [リスク管理の内部](insider-risk-management-solution-overview.md)
 - [自動ラベル付けポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
 
@@ -50,7 +49,7 @@ Microsoft は多数の事前構成済み SIT を提供しているか、独自�
 
 ### <a name="built-in-sensitive-information-types"></a>機密情報の種類が組み込み
 
-これらの SIT は、既定でコンプライアンス コンソールに表示される Microsoft によって作成されます。 これらの SIT は編集できませんが、テンプレートとして使用したり、カスタムの機密情報の種類を作成するためにコピーすることができます。
+これらの SIT は、既定でコンプライアンス コンソールに表示される Microsoft によって作成されます。 これらの SIT は編集できませんが、テンプレートとして使用したり、カスタムの機密情報の種類を作成するためにコピーすることができます。 すべての [SIT の完全な一覧については](sensitive-information-type-entity-definitions.md) 、「機密情報の種類エンティティ定義」を参照してください。
 
 ### <a name="named-entity-sensitive-information-types"></a>名前付きエンティティの機密情報の種類
 
@@ -86,7 +85,7 @@ Microsoft は多数の事前構成済み SIT を提供しているか、独自�
 
 ![腐食証拠と近接ウィンドウの図。](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-このビデオの信頼度の詳細
+この短いビデオでは、信頼度の詳細について説明します。
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
@@ -113,7 +112,7 @@ Microsoft は多数の事前構成済み SIT を提供しているか、独自�
 
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -174,7 +173,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - **PowerShell を使用** する - PowerShell を使用してカスタムの機密情報の種類を設定できます。 この方法は、UI を使用する場合よりも複雑ですが、より多くの構成オプションがあります。 詳細については、「[セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。
 
 > [!NOTE]
-> Microsoft 365 サービス、Microsoft 365 サービスの Microsoft Information Protection、コミュニケーション コンプライアンス、情報ガバナンス、レコード管理のデータ損失防止内ですぐに使用できる信頼性レベルの向上。
+> Microsoft 365 サービス、Microsoft 365 サービスの Microsoft Information Protection、コミュニケーション コンプライアンス、情報ガバナンス、レコード管理のデータ損失防止内ですぐに使用できる信頼レベルの向上。
 > Microsoft 365情報保護では、次の 2 バイト文字セット言語がサポートされています。
 > - 中国語 (簡体字)
 > - 中国語 (繁体字)
@@ -202,6 +201,6 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
 - [PowerShell でカスタム機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
-機密情報の種類を使用してデータプライバシー規制に準拠する方法については、「データプライバシー規制に関する情報保護を展開する ([Microsoft 365 (aka.ms/m365dataprivacy](../solutions/information-protection-deploy.md))」を参照してください。
+機密情報の種類を使用してデータ プライバシー規制に準拠する方法については、「データプライバシー規制に関する情報保護を展開する ([Microsoft 365)」を](../solutions/information-protection-deploy.md) aka.ms/m365dataprivacy。
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

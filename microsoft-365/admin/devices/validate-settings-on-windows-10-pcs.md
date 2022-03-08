@@ -27,26 +27,29 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: ビジネス アプリ保護の設定Microsoft 365ユーザーのデバイスに適用されたことを確認するWindows 10します。
-ms.openlocfilehash: 311da3efec8cd3ad57e722aea5a8c3888d1af7b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: be25acb8414705c48a8763a0530ec2a70565de83
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165330"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313595"
 ---
-# <a name="validate-device-protection-settings-for-windows-10-pcs"></a>PC のデバイス保護設定Windows 10する
+# <a name="validate-device-protection-settings-for-windows-10-pcs"></a>PC のデバイス保護設定をWindows 10する
+
+> [!NOTE]
+> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 この機能は、デバイスに追加のセキュリティ機能を提供します。 [Defender for Business の詳細については、「Defender for Business」を参照してください](../../security/defender-business/mdb-overview.md)。
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Windows 10 デバイス ポリシーが設定されていることを確認する
 
-[デバイス ポリシーを設定](protection-settings-for-windows-10-pcs.md) した後は、ポリシーがユーザーのデバイスに影響を与えるまで最大で数時間かかる場合があります。 ユーザーのデバイス上でさまざまな Windows の設定画面を表示して、ポリシーが反映されていることを確認できます。 ユーザーは Windows 10 デバイスの Windows Update と Windows Defender ウイルス対策 の設定を変更できないので、多くのオプションがグレー表示されます。
+デバイス ポリシー [を設定した後](protection-settings-for-windows-10-pcs.md)、ポリシーがユーザーのデバイスに適用されるのに最大で数時間かかる場合があります。 ユーザーのデバイス上でさまざまな Windows の設定画面を表示して、ポリシーが反映されていることを確認できます。 ユーザーは、Windows デバイスの Windows Update と Microsoft Defender ウイルス対策 Windows 10 の設定を変更できないので、多くのオプションがグレー表示されます。
   
-1. [セキュリティの **更新設定** 更新Windows]オプションに移動し、すべての設定が \> **&amp;** \>  \> 灰色で表示されているのを確認します。 
+1. [セキュリティの **設定** \> **更新Windows &amp;** \> **更新**\>] オプションに移動し、すべての設定が灰色で表示されているのを確認します。 
     
     ![[再起動] オプションはすべて灰色で表示されます。](../../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. [セキュリティの **設定** 更新Windows]オプションに移動し、すべての設定が灰色 \> **&amp;** \>  \> で表示されているのを確認します。 
+2. [セキュリティの **設定** \> **更新Windows &amp;** \>  \>]オプションに移動し、すべての設定が灰色で表示されているのを確認します。 
     
-    ![Windows詳細な更新プログラムのオプションはすべて灰色で表示されます。](../../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Windows詳細更新プログラムのオプションはすべて灰色で表示されます。](../../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
@@ -63,4 +66,5 @@ ms.locfileid: "60165330"
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365ドキュメントとリソースの詳細](/admin)\
-[Windows 10 の PC のデバイス構成を設定する](protection-settings-for-windows-10-pcs.md)
+[Pc のデバイス構成をWindows 10ビジネス](protection-settings-for-windows-10-pcs.md)
+ プランのセキュリティで保護する [10 Microsoft 365方法](../security-and-compliance/secure-your-business-data.md)

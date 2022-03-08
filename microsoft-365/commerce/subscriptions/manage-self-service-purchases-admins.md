@@ -2,8 +2,8 @@
 title: セルフサービス購入の管理 (管理者)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_ssp
 - AdminSurgePortfolio
 - okr_smb
-- commerce_ssp
 search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーが行ったセルフサービス購入を管理する方法について学習できます。
 ms.date: 03/26/2021
-ms.openlocfilehash: 854a013779f9d1b3d141b1770860740f633e8130
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 19f276107de7b1dd1053e500d249950a8700ac41
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371918"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319729"
 ---
 # <a name="manage-self-service-purchases-admin"></a>セルフサービスによる購入を管理する (管理者)
 
@@ -67,12 +67,12 @@ ms.locfileid: "61371918"
 
 ::: moniker-end
 
-2. フィルター アイコンを選択し、[セルフサービス] **を選択します**。
+2. フィルター アイコンを選択し、[セルフサービス **] を選択します**。
 3. 製品を選択すると、ユーザーに割り当てられたライセンスが表示されます。
     > [!NOTE]
     > 製品に複数の購入がある場合、その製品は 1 回だけ表示され、[利用可能な数量] 列には、その製品に対して購入されたサブスクリプションの合計が表示されます。
 4. [ **ユーザー]** リストは、セルフサービス購入を行ったユーザーの名前でグループ化されます。
-5. これらのサブスクリプションのライセンスを持つユーザーの一覧をエクスポートするには、エクスポートするサブスクリプションを選択し、[ユーザーのエクスポート] を **選択します**。
+5. これらのサブスクリプションのライセンスを持つユーザーの一覧をエクスポートするには、エクスポートするサブスクリプションを選択し、[ユーザーのエクスポート] **を選択します**。
 
 ## <a name="disable-or-enable-self-service-purchases"></a>セルフサービス購入を無効または有効にする
 
@@ -92,17 +92,17 @@ ms.locfileid: "61371918"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[課金の購入サービス **]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">ページに移動</a> します。
+1. 管理センターで、[課金の購入サービス **] ページ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">に移動</a> します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金の購入サービス **]** > **ページに移動** します。
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金の購入サービス **] ページ** > **に移動** します。
 
 ::: moniker-end
 
-2. 購入する製品を見つけて選択し、[購入] を **選択します**。
+2. 購入する製品を見つけて選択し、[購入] を選択 **します**。
 3. 残りの手順を完了して購入を完了します。
 4. 「セルフサービス購入サブスクリプション[](#view-who-has-licenses-for-a-self-service-purchase-subscription)のライセンスを持っているユーザーを表示する」の手順に従って、次の手順で参照するユーザーのリストをエクスポートします。
 5. 他のサブスクリプションでライセンスを持っているすべてのユーザーにライセンスを割り当てる。 完全な手順については、「ユーザーにライセンスを [割り当てる」を参照してください](../../admin/manage/assign-licenses-to-users.md)。
@@ -124,24 +124,24 @@ ms.locfileid: "61371918"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求] **ページ** > **に移動** します。
 
 ::: moniker-end
 
 2. **[製品]** タブで、フィルター アイコンを選択し、**[セルフサービス]** を選択します。
 3. 引き継ぐサブスクリプションを選択します。
 4. [サブスクリプションの詳細] ページの [ **サブスクリプションと設定** ] セクションで、[このサブスクリプションを制御 **する] を選択します**。
-5. 右側のウィンドウで、[ユーザーの移動] **を選択します**。
+5. 右側のウィンドウで、[ユーザーの移動 **] を選択します**。
 6. ユーザーを移動する製品を選択し、[ユーザーの移動] **を選択します**。
 7. [ユーザーの **移動] ボックスで** 、[ユーザーの移動 **] を選択します**。 移動プロセスには数分かかる場合があります。 プロセスの実行中にブラウザーを閉じない。
 8. 移動プロセスが完了したら、[完了した移動] **ウィンドウを閉じます**。
-9. [サブスクリプションの詳細] ページで、セルフサービス購入サブスクリプションのサブスクリプションの状態が [削除済み]**と表示されます**。
+9. サブスクリプションの詳細ページで **、セルフサービス購入** サブスクリプションのサブスクリプションの状態が [削除済み] と **表示されます**。
 
 ### <a name="cancel-a-self-service-purchase-subscription"></a>セルフサービス購入サブスクリプションをキャンセルする
 
@@ -149,13 +149,13 @@ ms.locfileid: "61371918"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求] **ページ** > **に移動** します。
 
 ::: moniker-end
 

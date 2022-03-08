@@ -2,8 +2,8 @@
 title: Microsoft 365 サポートと ServiceNow 構成の統合の概要
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,24 +17,24 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: 99024eabd4009dcdd14b3d999afe5ee1875fe23e
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: dc69f6210eda4ba04dfd0aecf9795bfcba2efe22
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825329"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324327"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Microsoft 365 サポートと ServiceNow 構成の統合の概要
 
-次のコンテンツは、Microsoft 365バージョン **1.0.7 の統合アプリに適用されます**。
+次のコンテンツは、Microsoft 365バージョン **1.0.7** の統合アプリに適用されます。
 
-**Microsoft 365サポート統合** を使用すると、ヘルプMicrosoft 365、サービス正常性を ServiceNow インスタンスと統合できます。 Microsoft の既知および報告された問題を調査し、インシデントを解決し、Microsoft 推奨ソリューションを使用してタスクを完了し、必要に応じて Microsoft の人間支援サポートにエスカレートすることができます。
+**Microsoft 365サポート統合を** 使用すると、ヘルプMicrosoft 365、サービス正常性を ServiceNow インスタンスと統合できます。 Microsoft の既知および報告された問題を調査し、インシデントを解決し、Microsoft 推奨ソリューションを使用してタスクを完了し、必要に応じて Microsoft の人間支援サポートにエスカレートすることができます。
 
 ServiceNow **Microsoft 365統合** アプリをサポートするには、[ServiceNow ストアに移動します](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)。
 
 ## <a name="key-features"></a>主な機能
 
-ServiceNow インスタンスの統合アプリをサポートするMicrosoft 365主な機能を次に示します。
+ServiceNow インスタンスでサポート統合アプリをMicrosoft 365主な機能は次のとおりです。
 
 - サービス正常性インシデント: 既知の Microsoft サービス正常性インシデントに関する情報 (ユーザーの影響、スコープ、現在の状態、次に予期される更新プログラムなど)。 機械学習を使用して、ServiceNow インシデントは、短い説明フィールドに基づいて Microsoft サービス正常性インシデントと一致します。
 
@@ -66,9 +66,9 @@ ServiceNow インスタンスの統合アプリをサポートするMicrosoft 36
 
 - 送信 API 呼び出しMicrosoft Azure Active Directory両方AAD認証用に、アプリケーションを (AAD) に登録します。
 
-- 送信データ フローと受信データ フローの両方Microsoft Azure ADアプリケーションを使用して ServiceNow エンティティを作成します。
+- 送信データ フローと受信データ フロー Microsoft Azure ADアプリケーションを使用して ServiceNow エンティティを作成します。
 
-- ServiceNow インスタンスを Microsoft サポートと統合するには、Microsoft 365を使用します。
+- ServiceNow インスタンスを Microsoft サポートと統合するには、Microsoft 365ポータルを使用します。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-integration-diagram.png" alt-text="ServiceNow 統合図。":::
 
@@ -82,14 +82,17 @@ ServiceNow インスタンスの統合アプリをサポートするMicrosoft 36
 
 サポート統合Microsoft 365がインストールされると、2 つのアプリケーションクロススコープ アクセスが作成されます。 正常に作成されない場合は、手動で作成します。
 
-## <a name="what-configuration-is-right-for-your-organization"></a>組織に適切な構成は何ですか?
+## <a name="setup-the-integration"></a>統合のセットアップ
 
-アプリをダウンロードしたら、SNOW 環境Microsoft 365セットアップ ウィザードに移動してセットアップ プロセスを完了します。
+アプリをダウンロードしたら、SNOW 環境Microsoft 365セットアップ ウィザードに移動して、セットアップ プロセスを完了します。
 :::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="雪のセットアップ ウィザード":::
 
 手順の詳細については、次のページを参照してください。
-- ServiceNow 環境で、受信 Web サービス呼び出しに対して基本認証 (ServiceNow ユーザー資格情報を使用したアクセス) が許可されている場合は、「[Set up Microsoft 365 ServiceNow Basic Authentication](servicenow-basic-authentication.md) との統合をサポートする」の手順に従います。
-- ServiceNow 環境で受信 Web サービス呼び出しに対して基本認証 (ServiceNow ユーザー資格情報を使用したアクセス) が許可されていない場合は、「Microsoft 365 のセットアップ」の手順に従って、Azure AD [認証トークンとの統合を](servicenow-aad-oauth-token.md)サポートします。
+- ServiceNow 環境で、受信 Web サービス呼び出しに対して基本認証 (ServiceNow ユーザー資格情報を使用したアクセス) が許可されている場合は、「[Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md)」の手順に従います。
+- ServiceNow 環境で受信 Web サービス呼び出しに対して基本認証 (ServiceNow ユーザー資格情報を使用したアクセス) を許可しない場合は、「Microsoft 365 のセットアップ」の手順に従って、Azure AD [認証トークンとの統合を](servicenow-aad-oauth-token.md)サポートします。
   - この構成では、認証トークンが正しく動作AAD SSO テナントが必要になります。
 
-各機能を理解するには、「サポート[統合Microsoft 365参照してください](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)。
+各機能を理解するには、「サポート統合[Microsoft 365参照してください](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)。
+
+> [!NOTE]
+> このアプリは、規制された環境や制限された環境ではサポートされていません。

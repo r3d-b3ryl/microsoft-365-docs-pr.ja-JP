@@ -11,14 +11,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex で分類子を作成する方法について説明します。
-ms.openlocfilehash: 1fe4200c68d6458d20a71b834bd2a0b08319ecb2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e9be6065e0328a412e73680a0200ea7929c8011
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203017"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324873"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexで分類子を作成する
 
@@ -61,7 +62,7 @@ ms.locfileid: "60203017"
 
 モデルを作成するときに、新しいサイトコンテンツタイプも作成します。 コンテンツタイプは、共通の特徴を持つドキュメントのカテゴリを表し、特定のコンテンツの列またはメタデータプロパティのコレクションを共有します。 SharePoint コンテンツの種類は、[[コンテンツの種類ギャラリー]](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f) で管理されます。 この例では、モデルを作成するときに、新しい *契約更新* コンテンツタイプを作成します。
 
-このモデルを SharePoint コンテンツタイプギャラリーの既存のエンタープライズコンテンツタイプにマッピングして、そのスキーマを使用するには、[ **詳細設定**] を選択します。 エンタープライズコンテンツタイプは、SharePoint 管理センターのコンテンツタイプハブに格納され、テナントのすべてのサイトにシンジケートされます。 ただし、既存のコンテンツタイプを使用して、スキーマを利用し、特定および分類を行うことができますが、特定のファイルから情報を抽出するためにモデルをトレーニングする必要があります。</br>
+スキーマ **を使用するために**、このモデルを [コンテンツ タイプ] ギャラリーの既存 <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">のエンタープライズ コンテンツ</a> タイプSharePointする場合は、[詳細設定] を選択します。 エンタープライズコンテンツタイプは、SharePoint 管理センターのコンテンツタイプハブに格納され、テナントのすべてのサイトにシンジケートされます。 ただし、既存のコンテンツタイプを使用して、スキーマを利用し、特定および分類を行うことができますが、特定のファイルから情報を抽出するためにモデルをトレーニングする必要があります。</br>
 
 ![詳細設定。](../media/content-understanding/advanced-settings.png)
 
@@ -106,7 +107,7 @@ ms.locfileid: "60203017"
 > [!NOTE]
 > 少なくとも5個のポジティブな例にラベルを付けます。 少なくとも1つのネガティブな例にラベルを付けます。 
 
-## <a name="create-an-explanation&quot;></a>説明を作成する
+## <a name="create-an-explanation"></a>説明を作成する
 
 次の手順では、トレーニングページに説明を作成します。 詳細を使用すると、モデルがドキュメントの識別をしやすくなります。 たとえば、契約更新ドキュメントには常に、テキスト文字列 *追加の開示要求* が含まれます。
 
@@ -119,7 +120,7 @@ ms.locfileid: "60203017"
 2. [トレーニング] ページの [**トレーニング済みファイル**] セクション には、以前にラベルが付けられたサンプルファイルの一覧が表示されています。 一覧からいずれかのポジファイルを選び、viewer で表示します。
 3. [説明] セクションで、[**新しい** ] を選択し、[**空** を選択し ます。
 4. [ **説明を作成する** ] ページで：</br>
-    a. **名前** を入力します (たとえば、&quot;暴露ブロック")。</br>
+    a. **名前** を入力します (たとえば、"暴露ブロック")。</br>
     b. [ **種類**]を選びます。 この例では、文字列を追加するので、[ **語句のリスト**] を選択します。</br>
     c. [ **ここに入力してください**] ボックスに、文字列を入力します。 このサンプルには、"追加情報開示の要求" を追加します。 文字列に大文字と小文字を区別する必要がある場合は、**大文字と小文字の区別** を選択することができます。</br>
     d.  **[保存]** をクリックします。

@@ -16,14 +16,14 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.collection: m365initiative-m365-defender
+  ms.collection: m365-security-compliance
   ms.date: 1/18/2022
-  ms.openlocfilehash: 2ead57e2c4926ad98c890759065d0f08f2ae1958
-  ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+  ms.openlocfilehash: 7699bc28f91d0d4ded4f94c24bacaffe1c342b65
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/14/2022
-  ms.locfileid: "62806674"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63328709"
 title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -44,10 +44,10 @@ sections:
   - question: >
       ASR ルールを実行するには、エンタープライズ ライセンスが必要ですか?
     answer: >
-      ASR ルールと機能の完全なセットは、エンタープライズ ライセンスが 11 または 11 の場合Windows 10サポートWindowsです。 限られた数のルールは、エンタープライズ ライセンスなしで動作する場合があります。 Business を使用Microsoft 365、Microsoft Defender ウイルス対策セキュリティ ソリューションとして設定し、PowerShell を使用してルールを有効にしてください。 エンタープライズ ライセンスなしで ASR を使用しても、正式にはサポートされていないので、ASR の完全な機能を使用することはできません。
+      ASR ルールと機能の完全なセットは、エンタープライズ ライセンスが 11 の場合Windows 10サポートWindowsです。 限られた数のルールは、エンタープライズ ライセンスなしで動作する場合があります。 ビジネスをMicrosoft 365場合は、Microsoft Defender ウイルス対策セキュリティ ソリューションとして設定し、PowerShell を使用してルールを有効にしてください。 エンタープライズ ライセンスなしで ASR を使用しても、正式にはサポートされていないので、ASR の完全な機能を使用することはできません。
 
 
-      ライセンスの詳細については、「Windowsライセンス」をWindows 10ボリューム ライセンス [](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) ガイドを参照[Windows 10。](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
+      ライセンスの詳細については、「Windows ライセンス」を参照しWindows 10[](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)ボリューム ライセンス ガイド[を](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)参照Windows 10。
   - question: >
       E3 ライセンスを持っている場合、ASR はサポートされていますか?
     answer: >
@@ -98,7 +98,7 @@ sections:
       ASR ルールが異なると、保護フローが異なります。 構成する ASR ルールが保護する機能と、実際の実行フローがどのようにパンアウトされるのかを常に考えておきます。
 
 
-      例: **Windows** ローカル セキュリティ機関サブシステムからの資格情報の盗用をブロック する ローカル セキュリティ機関サブシステム (LSASS) プロセスから直接読み取るプロセスは、企業の資格情報を公開する可能性があるから、セキュリティ リスクになる可能性があります。
+      例: **Windows** ローカル セキュリティ機関サブシステムから直接読み取るローカル セキュリティ機関サブシステム (LSASS) プロセスからの資格情報の盗用をブロックすると、企業の資格情報が公開される可能性があります。
 
 
       このルールにより、信頼されていないプロセスは LSASS メモリに直接アクセスできます。 プロセスが OpenProcess() 関数を使用して LSASS にアクセスしようとするたびに、PROCESS_VM_READ のアクセス権を持つルールは、そのアクセス権を特にブロックします。
@@ -128,7 +128,7 @@ sections:
 
       * [すべてのアプリケーションOffice子プロセスの作成をブロックする](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes)
 
-      * [実行可能Office作成するアプリケーションのブロック](attack-surface-reduction-rules-reference.md#block-office-applications-from-creating-executable-content)
+      * [実行可能Office作成するアプリケーションをブロックする](attack-surface-reduction-rules-reference.md#block-office-applications-from-creating-executable-content)
 
       * [アプリケーションOffice他のプロセスへのコードの挿入をブロックする](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)
 
@@ -148,7 +148,7 @@ sections:
 
       * [有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](attack-surface-reduction-rules-reference.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
 
-      * [通信Office子プロセスの作成をブロックする](attack-surface-reduction-rules-reference.md#block-office-communication-application-from-creating-child-processes)
+      * [通信Officeプロセスの作成をブロックする](attack-surface-reduction-rules-reference.md#block-office-communication-application-from-creating-child-processes)
 
       * [Adobe Reader の子プロセスの作成をブロックする](attack-surface-reduction-rules-reference.md#block-adobe-reader-from-creating-child-processes)
 
@@ -156,7 +156,7 @@ sections:
   - question: >
       ローカル セキュリティ機関サブシステムは既定で有効になっていますか?
     answer: >
-      攻撃表面縮小 (ASR) ルール "Windows ローカル セキュリティ機関サブシステム (lsass.exe) からの資格情報の盗用をブロックする" の既定の状態が [構成されていない] から [構成済み]  に変更され、既定のモードが [ブロック] に設定されます。 他のすべての ASR ルールは既定の状態のままです。未 **構成です**。 エンドユーザーの通知を減らすために、ルールに追加のフィルター ロジックが既に組み込まれています。 ユーザーは、既定のモードを **上書きする監査** モード、 **警告** モード、または **無効** モードにルールを構成できます。 このルールの機能は、ルールが既定モードで構成されているかどうか、または手動でブロック モードを有効にした場合と同じです。  
+      攻撃表面縮小 (ASR) ルール "Windows ローカル セキュリティ機関サブシステム (lsass.exe) からの資格情報の盗用をブロックする" の既定の状態は [構成されていません] から [構成済み] に変更され、既定のモードは [ブロック] に設定されます。 他のすべての ASR ルールは既定の状態のままです。未 **構成です**。 エンドユーザーの通知を減らすために、ルールに追加のフィルター ロジックが既に組み込まれています。 ユーザーは、既定のモードを **上書きする監査** モード、 **警告** モード、または **無効** モードにルールを構成できます。 このルールの機能は、ルールが既定モードで構成されているかどうか、または手動でブロック モードを有効にした場合と同じです。  
   - question: >
       ASR の使用を開始する場合の推奨事項を教えてください。
     answer: >
@@ -185,11 +185,11 @@ sections:
   - question: >
       ASR ルールは既定ですべてのアプリケーションをカバーしますか?
     answer: >
-      ルールによって異なります。 ほとんどの ASR ルールは、Word、Microsoft Office、Excel、PowerPoint、OneNote、またはサービスなどのOutlook。 難読化される可能性のあるスクリプトの実行をブロックするなどの特定の ASR ルールは、スコープ内で一般的です。
+      ルールによって異なります。 ほとんどの ASR ルールは、Word、Microsoft Office、Excel、PowerPoint、および OneNote などのOutlook。 難読化される可能性のあるスクリプトの実行をブロックするなどの特定の ASR ルールは、スコープ内で一般的です。
   - question: >
       ASR はサードパーティのセキュリティ ソリューションをサポートしていますか?
     answer: >
-      ASR は、Microsoft Defender ウイルス対策をブロックするために使用します。 現時点では、ブロックに別のセキュリティ ソリューションを使用する ASR を構成することはできません。
+      ASR では、Microsoft Defender ウイルス対策を使用してアプリケーションをブロックします。 現時点では、ブロックに別のセキュリティ ソリューションを使用する ASR を構成することはできません。
   - question: >
       E5 ライセンスを持ち、Defender for Endpoint と組み合わせていくつかの ASR ルールを有効にしました。 エンドポイントのイベント タイムラインの Defender に ASR イベントが一向に表示されない可能性はありますか?
     answer: >
@@ -218,14 +218,14 @@ sections:
   - question: >
       最近、ASR ルール 「Windows ローカル セキュリティ機関サブシステム (lsass.exe)からの資格情報の盗用をブロックする」を有効にし、多数の通知を受け取っています。 どうなっているのですか。
     answer: >
-      このルールによって生成された通知は、必ずしも悪意のあるアクティビティを示すとは限りません。ただし、このルールは、マルウェアがアカウントへの不正なアクセスを取得lsass.exeをターゲットにしている場合が多いため、悪意のあるアクティビティをブロックする場合に役立ちます。 このlsass.exeは、ユーザーがログインした後、ユーザー資格情報をメモリに格納します。 Windows資格情報を使用してユーザーを検証し、ローカル セキュリティ ポリシーを適用します。
+      このルールによって生成された通知は、必ずしも悪意のあるアクティビティを示すとは限りません。ただし、このルールは、マルウェアがアカウントへの不正なアクセスを得るためにlsass.exeをターゲットにしている場合が多いため、悪意のあるアクティビティをブロックする場合に役立ちます。 このlsass.exeは、ユーザーがログインした後、ユーザー資格情報をメモリに格納します。 Windows資格情報を使用してユーザーを検証し、ローカル セキュリティ ポリシーを適用します。
 
 
-      一般的な 1 日を通じて多くの正当なプロセスが資格情報を要求lsass.exe呼び出すので、このルールは特にノイズが多い場合があります。 既知の正当なアプリケーションによってこのルールが過剰な数の通知を生成する場合は、除外リストに追加できます。 他のほとんどの ASR ルールでは、lsass.exe を呼び出すのは多くのアプリケーションの通常の機能の一般的な動作のため、このルールと比較して、比較的少ない数の通知が生成されます。
+      一般的な 1 日を通して多くの正当なプロセスが資格情報を求lsass.exe呼び出すので、このルールは特にノイズが多い場合があります。 既知の正当なアプリケーションによってこのルールが過剰な数の通知を生成する場合は、除外リストに追加できます。 他のほとんどの ASR ルールでは、lsass.exe を呼び出すのは多くのアプリケーションの通常の機能の一般的な動作のため、このルールと比較して、比較的少ない数の通知が生成されます。
   - question: >
       LSA 保護と共に、「Windows ローカル セキュリティ機関サブシステム (lsass.exe)からの資格情報の盗用をブロックする」というルールを有効にしてください。
     answer: >
-      このルールを有効にすると、LSA 保護も有効になっている場合、 [追加の保護](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) は提供されません。 ルールと LSA 保護の両方が同じ方法で動作し、両方を同時に実行すると冗長になります。 ただし、LSA 保護を有効にできない場合があります。 このような場合は、このルールを有効にして、マルウェアを対象とするマルウェアに対して同等の保護lsass.exe。
+      このルールを有効にすると、LSA 保護も有効になっている場合、 [追加の保護](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) は提供されません。 ルールと LSA 保護の両方が同じ方法で動作し、両方を同時に実行すると冗長になります。 ただし、LSA 保護を有効にできない場合があります。 このような場合は、このルールを有効にして、ユーザーを対象とするマルウェアに対して同等の保護lsass.exe。
   - question: >
       関連項目
     answer: >-
@@ -237,4 +237,4 @@ sections:
 
       * [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
 
-      * [他のウイルス対策Microsoft Defender ウイルス対策マルウェアとの互換性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+      * [他のウイルス対策Microsoft Defender ウイルス対策マルウェア対策との互換性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

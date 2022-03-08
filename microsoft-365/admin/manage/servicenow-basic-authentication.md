@@ -2,8 +2,8 @@
 title: ServiceNow とのサポート統合を構成する - 基本認証
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,20 +17,20 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: cf9b5149847b51d9d701a49e32624ada3f708a17
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 23fab410b17cea9635c63b0ed0e4225d158dfdc8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321485"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323851"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>ServiceNow とのサポート統合を構成する - 基本認証
 
 ## <a name="prerequisites-basic-authentication"></a>前提条件 (基本認証)
 
-これらの前提条件は、統合をサポートするMicrosoft 365 **必要です**。
+これらの前提条件は、サポート統合のMicrosoft 365 **必要です**。
 
-1. \[AAD管理者\][Azure AD] テナントの下に Microsoft 365を作成します。
+1. \[AAD管理者\]テナントAzure AD下にアプリケーションをMicrosoft 365します。
 
     1. テナント資格情報を使用して Azure Portal にMicrosoft 365し、[アプリの登録] ページに移動して[](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)新しいアプリケーションを作成します。
 
@@ -46,7 +46,7 @@ ms.locfileid: "62321485"
 
 1. \[ServiceNow 管理者\] ServiceNow で送信 OAuth プロバイダーを設定します。
 
-    スコープがグローバルに設定されていない場合 **は、[****&gt;開発者アプリケーション] 設定に&gt;** 移動し、[グローバル] に切り替 **えます**。
+    スコープがグローバルに設定されていない **場合は、[****&gt;開発者アプリケーション] 設定に&gt;** 移動し、[グローバル] に切り替 **えます**。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、チャット、またはテキスト メッセージ説明が自動的に生成される":::
 
@@ -88,7 +88,7 @@ ms.locfileid: "62321485"
 
 ## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[OPTIONAL\] サービスの IP アドレスをサポート統合Microsoft 365許可する
 
-会社が独自のポリシーでインターネット アクセスを制限している場合は、以下の IP アドレスを受信 API アクセスと送信 API アクセスの両方に許可することで、Microsoft 365 サポート統合のサービスに対するネットワーク アクセスを有効にしてください。
+会社が独自のポリシーでインターネット アクセスを制限している場合は、以下の IP アドレスを受信 API アクセスと送信 API アクセスの両方に許可することで、Microsoft 365 サポート統合のサービスのネットワーク アクセスを有効にしてください。
 
 - 52.149.152.32
 
@@ -115,7 +115,7 @@ ms.locfileid: "62321485"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="グラフィカル ユーザー インターフェイス、テーブルの説明が自動的に生成される":::
 
-1. \[ServiceNow Admin 統合ワークフロー\]を開 **Microsoft 365サポート &gt; セットアップ** に移動します。
+1. \[ServiceNow Admin [\]サポート Microsoft 365 **] に移動&gt;して**、統合ワークフローを開きます。
 
     > [!NOTE]
     > "スコープ 'xmiomsm365assis\_\_' からの 'oauthentity\_\_' に対する読み取り操作が、テーブルのクロススコープ アクセス ポリシーのために拒否されました」というエラーが表示される場合は、テーブル アクセス ポリシーが原因で発生しました。 [読み取り可能なすべての **アプリケーション スコープ &gt; ] が** テーブルの oauthentity に対してチェックされている必要\_があります。
@@ -198,9 +198,19 @@ ms.locfileid: "62321485"
 
 1. \[ServiceNow Admin\] 接続のテスト 前の手順を完了した後、[接続のテスト] **をクリックします**。
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-8.png" lightbox="../../media/ServiceNow-guide/snowbasic-8.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
-    サポートMicrosoft 365アプリはテストを実行して、統合が機能しているのを確認します。 構成に問題がある場合は、修正する必要がある内容を説明するエラー メッセージが表示されます。 それ以外の場合は、アプリケーションの準備ができました。
+    統合Microsoft 365アプリはテストを実行して、統合が機能しているのを確認します。 構成に問題がある場合は、修正する必要がある内容を説明するエラー メッセージが表示されます。 それ以外の場合は、アプリケーションの準備ができました。
      :::image type="content" source="../../media/ServiceNow-guide/snowbasic-9.png" lightbox="../../media/ServiceNow-guide/snowbasic-9.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
-1. \[OPTIONAL\] [役割を持つユーザー x_mioms_m365_assis.administrator リンク] [アカウントMicrosoft 365 管理リンクします。
+1. \[ServiceNow Admin\] 既存のユーザーに対する Microsoft サポート統合を有効にする。
+
+    Microsoft 365の役割のいずれかを持つユーザーに対して、サポート統合が有効になっている場合。
+
+    - xmiomsm365assis.insightsuser\_\_\_\_
+
+    - xmiomsm365assis.administrator\_\_\_
+
+1. \[OPTIONAL\] [役割を持つユーザー x_mioms_m365_assis.administrator リンク] アカウントMicrosoft 365 管理リンクします。
+
     ユーザーが役割 x_mioms_m365_assis.administrator を持ち、Microsoft 365 サポート ケースを管理するために異なる Microsoft 365 アカウントを使用している場合は、Microsoft 365 サポート > リンク アカウントに移動して、Microsoft 365 管理者メールを設定する必要があります。
+    
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::

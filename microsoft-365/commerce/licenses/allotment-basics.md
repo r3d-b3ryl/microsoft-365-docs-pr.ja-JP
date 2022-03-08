@@ -2,8 +2,8 @@
 title: Allotment の基本
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
 audience: Admin
@@ -16,14 +16,15 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_licensing
+search.appverid: MET150
 description: 新しいアロットメント機能について学習します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 4a908441dbdaa5ecafcd140233b75adca0c22e4a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b41b3e27b7a3b05a9b80c3ac9590139adcee6fc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167728"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325446"
 ---
 # <a name="allotment-basics"></a>Allotment の基本
 
@@ -35,7 +36,7 @@ Allotments は、グループ ベースのライセンスを使用して、ユ�
 
 ## <a name="prerequisites"></a>前提条件
 
-グループ ベースのライセンスのライセンス要件を満 [たす必要があります](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)。
+グループ ベースのライセンスのライセンス要件 [を満たす必要があります](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)。
 
 ユーザーが使用できる任意の製品で割り当てを使用できます。
 
@@ -53,4 +54,4 @@ Allotments は、グループ ベースのライセンスを使用して、ユ�
 
 ## <a name="getting-started"></a>はじめに
 
-このアロットメント機能は、プライベート プレビューで使用できるユーザー数はわずかです。 参加する場合は、次のフォームに入力します [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) 。
+このアロットメント機能は、プライベート プレビューで使用できるユーザー数はわずかです。 参加する場合は、次のフォームに入力します [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。

@@ -1,19 +1,19 @@
-- name: Microsoft Defender for Business (プレビュー)
+- name: Microsoft Defender for Business
   href: index.yml
   items:
     - name: 概要
       items:
-        - name: Microsoft Defender for Business (プレビュー) とは
+        - name: Microsoft Defender for Business とは
           href: mdb-overview.md
         - name: 簡略化された構成プロセス
           href: mdb-simplified-configuration.md
         - name: 中小企業のプランを比較する
           href: compare-mdb-m365-plans.md
-        - name: ユーザーとのMicrosoft 365 Lighthouse
+        - name: アプリケーションとのMicrosoft 365 Lighthouse
           href: mdb-lighthouse-integration.md
-    - name: 作業の開始
+    - name: 概要
       items:
-        - name: ビジネス向け Defender の取得 (プレビュー)
+        - name: ビジネス向け Defender の取得
           href: get-defender-business.md
         - name: セットアップ ウィザードを使用する
           href: mdb-use-wizard.md
@@ -35,7 +35,7 @@
           href: mdb-email-notifications.md
         - name: 手順 4 - オンボード デバイス
           href: mdb-onboard-devices.md
-        - name: 手順 5 - セキュリティ設定を構成する
+        - name: 手順 5 - セキュリティ ポリシーを構成する
           href: mdb-configure-security-settings.md
     - name: 検出された脅威の表示と対応
       items:
@@ -73,5 +73,7 @@
           href: mdb-faq.yml
         - name: トラブルシューティング
           href: mdb-troubleshooting.yml
+        - name: Microsoft 365 Business Premium
+          href: /microsoft-365/business-premium
         - name: Microsoft 365 Lighthouse
           href: /microsoft-365/lighthouse/m365-lighthouse-overview

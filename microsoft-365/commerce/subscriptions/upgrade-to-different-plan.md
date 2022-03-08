@@ -2,8 +2,8 @@
 title: 別のビジネス プランへのアップグレード
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150
 description: プランをアップグレードする最も簡単な方法は、管理センターの [アップグレード] タブを使用する方法です。 ただし、[アップグレード] タブが常にサポートされているわけではありません。
 ms.date: 04/21/2021
-ms.openlocfilehash: 82bd20b70a5f199f7daead8084f70d985efe52ad
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 17e1a35d096762e1645fd4e7143935578cfc1a79
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370346"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329265"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 
@@ -36,7 +36,7 @@ ms.locfileid: "61370346"
 
 [アップグレード] タブ **を使用** すると、新しいプランを購入するプロセスが開始されます。 すべてのユーザーに新しいプランのライセンスが自動的に割り当てされ、古いプランがキャンセルされます。
 
-1. 管理センターで、[製品の請求]  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ページに移動</a>します。
+1. 管理センターで、[製品の請求] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">に移動</a> します。
 2. アップグレードするサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページで、[**アップグレード**] を選択します。
 4. アップグレードする計画を見つけ、[**アップグレード**] ボタンを選択します。
@@ -50,7 +50,7 @@ ms.locfileid: "61370346"
 
 ## <a name="the-upgrade-tab-is-empty"></a>[アップグレード] タブが空です
 
-[**アップグレード**] タブが空になっている場合は、現時点ではアップグレードできない理由が表示されます。 手動でプラン [を変更することができます](change-plans-manually.md)。 詳細については、「なぜプラン [をアップグレードできないのか」を参照してください](#why-cant-i-upgrade-plans)。
+[**アップグレード**] タブが空になっている場合は、現時点ではアップグレードできない理由が表示されます。 手動でプラン [を変更できます](change-plans-manually.md)。 詳細については、「なぜプランをアップグレード [できないのか」を参照してください](#why-cant-i-upgrade-plans)。
 
 ## <a name="i-dont-see-the-plan-i-want"></a>目的のプランが表示されない
 
@@ -60,7 +60,7 @@ ms.locfileid: "61370346"
 
 ## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>一部のユーザーのみをアップグレードします。 これを行う方法
 
-一部のユーザーを別のプランにアップグレードする場合に、最初に新しいサブスクリプションを購入する必要がある場合は、「プランを手動で変更する [」を参照してください](change-plans-manually.md)。 ユーザーをアップグレードするサブスクリプションが既に存在する場合は、「ユーザーを別のサブスクリプションに移動 [する」を参照してください](move-users-different-subscription.md)。
+一部のユーザーのみを別のプランにアップグレードするが、最初に新しいサブスクリプションを購入する必要がある場合は、「プランを手動で変更する [」を参照してください](change-plans-manually.md)。 ユーザーをアップグレードするサブスクリプションが既に存在する場合は、「ユーザーを別のサブスクリプションに移動 [する」を参照してください](move-users-different-subscription.md)。
 
 ## <a name="why-some-changes-take-longer"></a>一部の変更に時間がかかる理由
 
@@ -76,13 +76,13 @@ ms.locfileid: "61370346"
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>ライセンスより多くのユーザーを持つため、サブスクリプションを今すぐアップグレードできない
 
-プランを自動的にアップグレードするには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../commerce/licenses/buy-licenses.md)。 ライセンスの競合を解決した後、[アップグレード] タブにプランが **表示されます。** ない場合は、手動 [でプランを変更するか](change-plans-manually.md)、サポート [を呼び出します](../../admin/get-help-support.md)。
+プランを自動的にアップグレードするには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに、<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../commerce/licenses/buy-licenses.md)。 ライセンスの競合を解決した後、[アップグレード] タブにプランが **表示されます。** 変更しない場合は、手動 [でプランを変更するか](change-plans-manually.md)、サポート [に電話することができます](../../admin/get-help-support.md)。
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>このサブスクリプションが完全にセットアップされていないか、サービスが利用できないので、今すぐサブスクリプションをアップグレードできません
 
-たとえば、サービスの 1 つにインシデントが発生した場合、すべてのサービスが正常になるまでアップグレードを行う必要があります。 プロビジョニングまたはサービスの正常性の問題が発生した場合は、管理センターで [正常性サービスの正常性] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">に移動</a> します。
+たとえば、サービスの 1 つにインシデントが発生した場合、すべてのサービスが正常になるまでアップグレードを行う必要があります。 プロビジョニングまたはサービスの正常性の問題が発生した場合は、管理センターで [正常性サービスの正常性] **ページに** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">移動</a> します。
 
-サービスが完全にはプロビジョニングされていないか、サービス正常性に問題があることがわかった場合は、サービスが利用可能になるまで数時間待ってから、もう一度試してください。 それでも問題が解決しない場合は、サポートにお [問い合わせください](../../admin/get-help-support.md)。
+サービスが完全にはプロビジョニングされていないか、サービス正常性に問題があることがわかった場合は、サービスが利用可能になるまで数時間待ってから、もう一度試してください。 それでも問題が解決しない場合は、サポートにお問 [い合わせください](../../admin/get-help-support.md)。
 
 #### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>別のプランがアップグレード中か、クレジット チェックを保留中のため、プランをアップグレードできない
 
@@ -100,11 +100,11 @@ ms.locfileid: "61370346"
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>同じ製品に対して 2 つ以上のプランがある
 
-[アップグレード] タブは、 **すべてのユーザーが** 同じプランを購読している場合にのみ使用できます。 たとえば、2 つのプランMicrosoft 365 Business Standard場合、そのプランの 1 つを別のプランに自動的にアップグレードできない場合です。
+[アップグレード] タブは、 **すべてのユーザーが** 同じプランを購読している場合にのみ使用できます。 たとえば、2 つのプランMicrosoft 365 Business Standard場合は、そのプランの 1 つを別のプランに自動的にアップグレードできない場合があります。
 
 #### <a name="you-have-a-prepaid-plan"></a>プリペイド (先払い) プランを使用している
 
-サブスクリプションの支払いを事前に済ませた場合は、手動でプラン [を変更できる場合があります](change-plans-manually.md)。 ただし、現在のプランの有効期限が切れる前にプランをアップグレードした場合、現在のサブスクリプションに残っている未使用時間のクレジットは受け取れなくなっています。
+事前にサブスクリプションの支払いを済ませた場合は、手動でプラン [を変更できる場合があります](change-plans-manually.md)。 ただし、現在のプランの有効期限が切れる前にプランをアップグレードした場合、現在のサブスクリプションに残っている未使用時間のクレジットは受け取れなくなっています。
 
 サポートを呼 [び出してヘルプ](../../admin/get-help-support.md) を呼び出す方法も可能です。
 
@@ -118,21 +118,21 @@ ms.locfileid: "61370346"
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>アップグレードするプランがサポートされていないオプション
 
-プランをアップグレードすると、アップグレードできるプランが、現在のプランのサービスに基づいて表示されます。 同じデータ関連サービス (Exchange Online や SharePoint Online など) を持つプラン、または上位バージョンのプランにのみアップグレードできます。 これにより、アップグレード中にユーザー \' がそれらのサービスに関連するデータを失うのを確認できます。
+プランをアップグレードすると、アップグレードできるプランが、現在のプランのサービスに基づいて表示されます。 同じデータ関連サービス (Exchange Online や SharePoint Online など) を持つプラン、または上位バージョンのプランにのみアップグレードできます。 これにより、アップグレード中にユーザー\'がそれらのサービスに関連するデータを失うのを確実に行います。
 
 プランを自動的にアップグレードできない場合は、代わりに手動でプラン [を変更できる](change-plans-manually.md) 場合があります。 サポートを呼 [び出してヘルプ](../../admin/get-help-support.md) を呼び出す方法も可能です。
 
 #### <a name="your-subscription-has-an-add-on"></a>サブスクリプションにアドオンがある
 
-サブスクリプションにアドオンがある場合は、手動でプラン [を変更できる場合があります](change-plans-manually.md)。
+サブスクリプションにアドオンがある場合は、手動でプランを [変更できる場合があります](change-plans-manually.md)。
 
 #### <a name="your-subscription-has-an-unpaid-balance"></a>サブスクリプションの残高が未払い
 
-これを解決するには、[製品] ページでサブスクリプション <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">を</a>検索し、[課金]セクションで [今すぐ支払う] リンク **を選択** します。 支払いが完了した後、[アップグレード] タブ **を再度** 確認します。
+これを解決するには、[製品] ページでサブスクリプション <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">を</a>検索し、[課金] セクションで [今すぐ支払う] リンク **を選択** します。 支払いが完了した後、[アップグレード] タブ **を再度** 確認します。
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>プランをアップグレードすると、サービスと課金に対して何が行いますか?
 
-[プランの切り替え]ボタン (または新しい管理センターの [アップグレード] タブ) を使用してプランを自動的にアップグレードすると、サービスと課金が影響を受けます。
+[プランの切り替え]  ボタン (または新しい管理センターの [アップグレード] タブ) を使用してプランを自動的にアップグレードすると、サービスと課金が影響を受けます。
 
 ### <a name="access-to-services"></a>サービスへのアクセス
 
@@ -144,10 +144,10 @@ ms.locfileid: "61370346"
 
 古いサブスクリプションのユーザーは、自動的に新しいサブスクリプションに移ります。
 
-古いサブスクリプションに複数のサービスが含まれる場合、ユーザーが割り当てられているサービスを変更した場合は、プランをアップグレードする前にこの点に注意して、後で変更を再作成することができます。 すべてのユーザーには、新しいサブスクリプションのすべてのサービスへのアクセス権が与えられます。 たとえば、以前に 100 人のユーザー全員に対して Microsoft 365 Business Premium を購入したが、SharePoint Online サービスを 50 人から割り当て解除した場合、プランをアップグレードした後も、この変更は保持されません。
+古いサブスクリプションに複数のサービスが含まれる場合、ユーザーが割り当てられているサービスを変更した場合は、プランをアップグレードする前にこの点に注意して、後で変更を再作成することができます。 すべてのユーザーには、新しいサブスクリプションのすべてのサービスへのアクセス権が与えられます。 たとえば、以前に 100 人のユーザーすべてについて Microsoft 365 Business Premium を購入したが、SharePoint Online サービスを 50 人から割り当て解除した場合、プランをアップグレードした後も、この変更は保持されません。
 
 プランをアップグレードする前に複数のサブスクリプションを持ち、ユーザーに複数のサブスクリプションにライセンスを割り当てる場合、この割り当てパターンは新しいサブスクリプションで可能な限り保持されます。
-すべてのユーザー データは、アップグレード中に保持されます(メールボックス、Exchangeオンライン ドキュメントSharePoint、その他の情報を含む)。
+すべてのユーザー データは、アップグレード中に保持されます(メールボックス、Exchange、SharePoint、その他の情報を含む)。
   
 ### <a name="billing"></a>請求
 
@@ -165,4 +165,4 @@ ms.locfileid: "61370346"
 ## <a name="related-content"></a>関連コンテンツ
 
 [手動でプランを変更](change-plans-manually.md) する (記事)\
-[ビジネス プランのデータを切りMicrosoft 365する前にデータをバックアップする](back-up-data-before-switching-plans.md)(記事)
+[ビジネス プランのデータを切りMicrosoft 365する前にデータをバックアップする](back-up-data-before-switching-plans.md) (記事)

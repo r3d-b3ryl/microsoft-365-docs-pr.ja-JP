@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: dee9c4a51175f9fbeac8b6d21f29490081258ba0
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 08178a1672e3bdd5b124138f698b42be8181373a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524239"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325503"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>不審な受信トレイ転送ルールのアラート の評価
 
@@ -189,7 +189,7 @@ CloudAppEvents
 ## <a name="recommended-actions"></a>推奨処理
 
 1. 悪意のある受信トレイ ルールを無効にします。 
-2. ユーザーのアカウント資格情報をリセットします。 また、Microsoft Defender for Cloud Apps でユーザー アカウントが侵害されたのか確認することもできます。これは、Azure Active Directory (Azure AD) ID Protection からセキュリティ信号を取得します。
+2. ユーザーのアカウント資格情報をリセットします。 また、ユーザー アカウントが Microsoft Defender for Cloud Apps で侵害されたのか確認することもできます。これは、Azure Active Directory (Azure AD) Id Protection からセキュリティ信号を取得します。
 3. 影響を受け取ったユーザーが実行した他の悪意のあるアクティビティを検索します。
 4. 同じ IP または同じ ISP (ISP が一般的でない場合) から発生したテナント内の他の疑わしいアクティビティを確認して、他の侵害されたユーザーを検索します。
 

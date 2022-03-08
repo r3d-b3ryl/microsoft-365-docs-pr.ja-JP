@@ -1,5 +1,5 @@
 ---
-title: エンドポイントの一般的な設定を構成する
+title: エンドポイントの一般的な Defender の設定を構成する
 description: '[設定] ページを使用して、一般的な設定、アクセス許可、API、およびルールを構成します。'
 keywords: 設定、一般的な設定、アクセス許可、API、ルール
 ms.prod: m365-security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9e7c8b2f810cf94c796f2b2d73520a821db1c01
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: a2d6dd2e7ed6bb353fd4aeb9aaef97854e5f025e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464816"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329587"
 ---
-# <a name="configure-general-settings-for-endpoints"></a>エンドポイントの一般的な設定を構成する
+# <a name="configure-general-defender-for-endpoint-settings"></a>エンドポイントの一般的な Defender の設定を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,5 +42,5 @@ ms.locfileid: "62464816"
 アクセス許可 | RBAC とデバイス グループを使用してポータル アクセスを管理します。
 API | 脅威の Intel と SIEM の統合を有効にする。
 ルール | 抑制ルールとオートメーション設定を構成します。
-デバイス管理 | オンボードデバイスとオフボード デバイス。
+デバイスの管理 | オンボードデバイスとオフボード デバイス。
 ネットワーク評価 | 定期的にスキャンしてデバイス インベントリに追加するデバイスを選択します。

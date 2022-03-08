@@ -14,15 +14,13 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: 5a26951535b6e2197d8ada45b2108e62f15fda03
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 6ef9cfcec1c54cf9754d7152c098d7ef5b67b456
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245149"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330553"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>スキャンの除外を構成およびMicrosoft Defender ウイルス対策する
 
@@ -31,7 +29,7 @@ ms.locfileid: "62245149"
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-特定のファイル、フォルダー、プロセス、およびプロセスで開いたファイルを、特定のスキャンからMicrosoft Defender ウイルス対策できます。 このような除外は、スケジュール[されたスキャン、](scheduled-catch-up-scans-microsoft-defender-antivirus.md)[オンデマンド](run-scan-microsoft-defender-antivirus.md)スキャン、および常時オンのリアルタイム保護と[監視に適用されます](configure-real-time-protection-microsoft-defender-antivirus.md)。 プロセスで開いたファイルの除外は、リアルタイム保護にのみ適用されます。
+特定のファイル、フォルダー、プロセス、およびプロセスで開いたファイルを、特定のスキャンMicrosoft Defender ウイルス対策できます。 このような除外は、スケジュールされたスキャン[、](scheduled-catch-up-scans-microsoft-defender-antivirus.md)[オンデマンド](run-scan-microsoft-defender-antivirus.md) スキャン、常時オンのリアルタイム保護と監視[に適用されます](configure-real-time-protection-microsoft-defender-antivirus.md)。 プロセスで開いたファイルの除外は、リアルタイム保護にのみ適用されます。
 
 ## <a name="configure-and-validate-exclusions"></a>除外を構成および検証する
 
@@ -44,9 +42,9 @@ ms.locfileid: "62245149"
 ## <a name="recommendations-for-defining-exclusions"></a>除外を定義するための推奨事項
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるファイルなど) に基づく多くの自動除外が含まれます。
+> Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作と一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるファイルなど) に基づく多くの自動除外が含まれます。
 >
-> 除外を定義すると、ユーザーが提供する保護がMicrosoft Defender ウイルス対策。 除外の実装に関連付けられているリスクは常に評価する必要があります。悪意がないと確信しているファイルのみを除外する必要があります。
+> 除外を定義すると、Microsoft Defender ウイルス対策によって提供される保護が低下します。 除外の実装に関連付けられているリスクは常に評価する必要があります。悪意がないと確信しているファイルのみを除外する必要があります。
 
 除外を定義する場合は、次の点に注意してください。
 

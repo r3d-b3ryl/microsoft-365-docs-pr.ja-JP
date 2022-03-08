@@ -1,7 +1,7 @@
 ---
 title: ユーザーのプロトコル認識を有効Microsoft Defender ウイルス対策
 description: デバイスのプロトコル認識を有効Microsoft Defender ウイルス対策。
-keywords: Microsoft Defender ウイルス対策マルウェア対策、セキュリティ、防御側、プロトコル認識
+keywords: Microsoft Defender ウイルス対策、マルウェア対策、セキュリティ、ディフェンダー、プロトコル認識
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/07/2021
+ms.date: 02/21/2022
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cbb9b50714d252d86fcbaed9b43684351f903251
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 221eff4af6bf8e77f29db84694bf3a683107fc8c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167624"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325181"
 ---
 # <a name="turn-on-protocol-recognition"></a>プロトコル認識を有効にする
 
@@ -34,22 +34,25 @@ ms.locfileid: "61167624"
 
 このポリシー設定を使用すると、既知の脆弱性の悪用に対するネットワーク保護のためのプロトコル認識を構成できます。 この設定を有効または無効にすると、プロトコル認識が有効になります。 この設定を無効にすると、プロトコル認識は無効になります。
 
+[!IMPORTANT]
+この設定は廃止されました。 
+
 ## <a name="use-group-policy-to-configure-protocol-recognition"></a>グループ ポリシーを使用してプロトコル認識を構成する
 
 1. グループ ポリシー管理エンドポイントで、グループ ポリシー管理 [コンソールを開きます](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
 
-2. [コンピューターの **構成]** \> **[管理用** \> **テンプレート] Windowsネットワーク** \> **Microsoft Defender ウイルス対策** \> **システム] に移動します**。
+2. [コンピューター構成 **] [** \> **管理用** テンプレート] Windows \> **ネットワーク** \> \> Microsoft Defender ウイルス対策 **[コンポーネント] に移動します**。
 
-3. プロトコル **認識を選択します**。 既定では、この設定は有効になっています。 [構成されていません **] を設定すると**、定義の削除が有効になります。
+3. [プロトコル **認識] を選択します**。 既定では、この設定は有効になっています。 [構成されていません **] を設定すると**、定義の削除が有効になります。
 
 4. ポリシーを編集するには、[ポリシー設定の **編集] リンクを選択** します。
 
-5. [有効 **] を** 選択し **、[OK] を選択します**。
+5. [有効 **] を** 選択し、[OK] を **選択します**。
 
 6. 更新されたグループ ポリシー オブジェクトを展開します。 「 [グループ ポリシー管理コンソール」を参照してください](/windows/win32/srvnodes/group-policy)。
 
 > [!TIP]
-> オンプレミスでグループ ポリシー オブジェクトを使用していますか? クラウドでの翻訳方法を確認します。 [[プレビュー] でグループ ポリシー分析を使用して、オンプレミスのグループ ポリシー Microsoft エンドポイント マネージャーを分析します](/mem/intune/configuration/group-policy-analytics)。
+> オンプレミスでグループ ポリシー オブジェクトを使用していますか? クラウドでの翻訳方法を確認します。 [プレビュー] の [グループ ポリシー分析] を使用して、オンプレミス[のグループ ポリシー オブジェクトMicrosoft エンドポイント マネージャー分析します](/mem/intune/configuration/group-policy-analytics)。
 
 ## <a name="related-articles"></a>関連記事
 

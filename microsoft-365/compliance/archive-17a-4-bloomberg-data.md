@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Bloomberg DataParser コネクタをセットアップして使用して、ブルームバーグ データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: 1a3efc520e4427d49329b1c04dc6fe96e560d298
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: eaf9a79ebfb073de7f0707cf98a53a266ac95ee0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645390"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317851"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-data"></a>ブルームバーグ データをアーカイブするコネクタをセットアップする
 
-17a-4 LLC の[Bloomberg DataParser](https://www.17a-4.com/Bloomberg-dataparser/)を使用して、ブルームバーグから組織のユーザー メールボックスにデータをインポートおよびアーカイブMicrosoft 365します。 DataParser には、サード パーティ製のデータ ソースからアイテムをキャプチャし、それらのアイテムを他のデータ ソースにインポートするように構成されたブルームバーグ コネクタMicrosoft 365。 Bloomberg DataParser コネクタは、ブルームバーグ データを電子メール メッセージ形式に変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
+17a-4 [LLC の Bloomberg DataParser](https://www.17a-4.com/Bloomberg-dataparser/) を使用して、ブルームバーグから組織のユーザー メールボックスにデータをインポートおよびアーカイブMicrosoft 365します。 DataParser には、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムを他のデータ ソースにインポートするように構成されたブルームバーグ コネクタMicrosoft 365。 Bloomberg DataParser コネクタは、ブルームバーグ データを電子メール メッセージ形式に変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
 
-Bloomberg データがユーザー メールボックスに格納された後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 ブルームバーグ コネクタを使用して、Microsoft 365のデータをインポートおよびアーカイブすると、組織が政府と規制のポリシーに準拠しつ付けるのに役立ちます。
+Bloomberg データがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 ブルームバーグ コネクタを使用してデータをインポートおよびアーカイブMicrosoft 365、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
 
 ## <a name="overview-of-archiving-bloomberg-data"></a>ブルームバーグ データのアーカイブの概要
 
@@ -37,21 +37,21 @@ Bloomberg データがユーザー メールボックスに格納された後、
 
 3. Microsoft 365 コンプライアンス センター で作成した Bloomberg DataParser コネクタは、DataParser に接続し、Microsoft クラウド内のセキュリティで保護された Azure Storage 場所にメッセージを転送します。
 
-4. **Bloomberg DataParser** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー のメールボックスに作成され、そのフォルダーにブルームバーグ アイテムがインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべての Bloomberg アイテムには、このプロパティが含まれるので、すべての参加者の電子メール アドレスが設定されます。
+4. **Bloomberg DataParser** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー のメールボックスに作成され、そのフォルダーにブルームバーグ アイテムがインポートされます。 コネクタは、Email プロパティの値を使用してアイテムをインポートするメールボックスを *決定* します。 すべての Bloomberg アイテムには、このプロパティが含まれるので、すべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-set-up-a-connector"></a>コネクタをセットアップする前に
 
-- Microsoft コネクタ用の DataParser アカウントを作成します。 これを行うには [、17a-4 LLC にお問い合わせください](https://www.17a-4.com/contact/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の DataParser アカウントを作成します。 これを行うには、 [17a-4 LLC にお問い合わせください](https://www.17a-4.com/contact/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
 
-- 手順 1 でブルームバーグ DataParser コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、データ コネクタ ページの[データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 既定では、この役割はグループ内の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- 手順 1 でブルームバーグ DataParser コネクタを作成し (手順 3 で完了する) ユーザーには、データ コネクタ管理者の役割が割り当てられている必要があります。 この役割は、データ コネクタ ページの [データ  コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 この役割は、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ とコンプライアンス センターのアクセス許可」の「セキュリティとコンプライアンス センターの役割& [してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。 または、組織内の管理者がカスタム役割グループを作成し、データ コネクタ管理者の役割を割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、「アクセス許可」の「カスタム役割グループを作成する」[セクションを参照Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)。
 
-- この 17a-4 データ コネクタは、米国政府機関GCC環境Microsoft 365使用できます。 サード パーティのアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にあるサードパーティ システムに組織の顧客データを格納、送信、処理する必要がある場合があります。したがって、Microsoft 365 コンプライアンスとデータ保護のコミットメントの対象とはなってはいけなかっています。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
+- この 17a-4 データ コネクタは、米国政府機関GCC環境Microsoft 365利用できます。 サード パーティ製のアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にある、Microsoft 365 コンプライアンスおよびデータ保護のコミットメントの対象となされていないサードパーティ システムに対して、組織の顧客データを保存、送信、および処理する必要があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
 
 ## <a name="step-1-set-up-a-bloomberg-dataparser-connector"></a>手順 1: Bloomberg DataParser コネクタをセットアップする
 
-最初の手順は、ブルームバーグ データ用の 17a-4 コネクタを作成Microsoft 365 コンプライアンス センターデータ コネクタ ページにアクセスすることです。
+最初の手順は、ブルームバーグ データ用の 17a-4 コネクタを作成し、Microsoft 365 コンプライアンス センターの [データ コネクタ] ページにアクセスすることです。
 
-1. [データ <https://compliance.microsoft.com> コネクタ]**ブルームバーグ**  >  **DataParser に移動し、[データ コネクタ] をクリックします**。
+1. に移動し <https://compliance.microsoft.com> 、[ **データ コネクタ** > **Bloomberg DataParser] をクリックします**。
 
 2. Bloomberg **DataParser 製品の説明ページで、[** コネクタの追加] **をクリックします**。
 
@@ -67,17 +67,17 @@ Bloomberg データがユーザー メールボックスに格納された後、
 
 ## <a name="step-3-map-users"></a>手順 3: ユーザーをマップする
 
-Bloomberg DataParser コネクタは、ユーザーにデータをインポートする前に、ユーザー Microsoft 365メール アドレスに自動的にマップMicrosoft 365。
+Bloomberg DataParser コネクタは、ユーザーにデータをインポートする前に、Microsoft 365メール アドレスにユーザーを自動的にマップMicrosoft 365。
 
 ## <a name="step-4-monitor-the-bloomberg-dataparser-connector"></a>手順 4: Bloomberg DataParser コネクタを監視する
 
-Bloomberg DataParser コネクタを作成した後、コネクタの状態を[データ]ページでMicrosoft 365 コンプライアンス センター。
+Bloomberg DataParser コネクタを作成した後、コネクタの状態を [データ] Microsoft 365 コンプライアンス センター。
 
-1. 左側の <https://compliance.microsoft.com> ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
+1. 左側のナビゲーション <https://compliance.microsoft.com> で [ **データ コネクタ] に** 移動してクリックします。
 
 2. [コネクタ **] タブをクリック** し、作成した Bloomberg DataParser コネクタを選択して、コネクタのプロパティと情報を含むフライアウト ページを表示します。
 
-3. [**ソースを含むコネクタの状態**] で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存) します。  このログには、Microsoft クラウドにインポートされたデータが含まれます。
+3. [**ソースを含むコネクタの** 状態] で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータが含まれます。
 
 ## <a name="known-issues"></a>既知の問題
 

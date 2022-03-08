@@ -1,6 +1,6 @@
 ---
-title: アーキテクチャの確認など、エンドポイントの Microsoft Defender の概要を評価する
-description: 試用版ラボまたはパイロット環境Microsoft 365 Defenderセットアップの手順。 組織のデバイス、ID、データ、アプリを保護するようにセキュリティ ソリューションがどのように設計されているのかテストして体験します。
+title: 手順 4. アーキテクチャの確認など、エンドポイントの Microsoft Defender の概要を評価する
+description: テスト ラボまたはパイロット環境のセットアップMicrosoft 365 Defender手順。 組織のデバイス、ID、データ、アプリを保護するようにセキュリティ ソリューションがどのように設計されているのかテストして体験します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,21 +22,21 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1eaca5f9902b9617e47cc70d270f569d3a9dc60a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172129"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325951"
 ---
-# <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>エンドポイントの Microsoft Defender の概要を評価する
+# <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>手順 4. エンドポイントの Microsoft Defender の概要を評価する
 
 **適用対象:**
 
 - Microsoft 365 Defender
 
 
-この記事では、Microsoft Defender for Endpoint を有効にしてパイロットするプロセスの概要を説明します。 このプロセスを開始する前に、評価プロセス全体を確認し、Microsoft 365 Defender評価[](eval-overview.md)環境をMicrosoft 365 Defender[してください](eval-create-eval-environment.md)。 
+この記事では、Microsoft Defender for Endpoint を有効にしてパイロットするプロセスの概要を説明します。 このプロセスを開始する前に、評価プロセス全体を確認し、Microsoft 365 Defender評価[](eval-overview.md)環境Microsoft 365 Defender[してください](eval-create-eval-environment.md)。 
 <br>
 
 次の手順を使用して、Microsoft Defender for Endpoint を有効にしてパイロットします。

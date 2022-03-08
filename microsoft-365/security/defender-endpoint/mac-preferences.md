@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07e91e5b2cb93a6ba876510b558761f95489f496
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: cb3f38b861f85849165be330e03fe1d96a9c708c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765756"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326707"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -207,7 +207,7 @@ ms.locfileid: "62765756"
 |**キー**|path|
 |**データ型**|String|
 |**指定可能な値**|有効なパス|
-|**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
+|**コメント**|適用できるのは *、$type**が excludedPath である場合のみです。*|
 |||
 
 ## <a name="supported-exclusion-types"></a>サポートされる除外の種類
@@ -221,7 +221,7 @@ ms.locfileid: "62765756"
 |除外|定義|例|
 |---|---|---|
 |ファイル拡張子|拡張子が付いたすべてのファイル(デバイス上の任意の場所)|`.test`|
-|File|完全パスで識別される特定のファイル|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
+|ファイル|完全パスで識別される特定のファイル|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
 |フォルダー|指定したフォルダーの下のすべてのファイル (再帰的)|`/var/log/` <p> `/var/*/`|
 |プロセス|特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
@@ -255,7 +255,7 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 |**キー**|isDirectory|
 |**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
-|**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
+|**コメント**|適用できるのは *、$type**が excludedPath である場合のみです。*|
 |||
 
 ### <a name="file-extension-excluded-from-the-scan"></a>スキャンから除外されたファイル拡張子
@@ -272,7 +272,7 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 |**キー**|拡張機能|
 |**データ型**|String|
 |**指定可能な値**|有効なファイル拡張子|
-|**コメント**|適用 *できるのは、$type**が excludedFileExtension である場合のみです。*|
+|**コメント**|適用 *できるのは、$type* *FileExtension が除外されている場合のみです。*|
 |||
 
 ### <a name="process-excluded-from-the-scan"></a>スキャンから除外されるプロセス
@@ -289,7 +289,7 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 |**キー**|name|
 |**データ型**|String|
 |**指定可能な値**|任意の文字列|
-|**コメント**|指定したファイルが excludedFileName *$type**場合にのみ適用されます。*|
+|**コメント**|ファイルが *excludedFileName $type**場合にのみ適用されます。*|
 |||
 
 #### <a name="allowed-threats"></a>許可される脅威
@@ -472,7 +472,7 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 |**ドメイン**|`com.microsoft.wdav`|
 |**キー**|diagnosticLevel|
 |**データ型**|String|
-|**指定可能な値**|省略可能 (既定) <p> 必須出席者|
+|**指定可能な値**|省略可能 (既定) <p> 必須|
 |||
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>自動サンプル申請を有効または無効にする
@@ -554,6 +554,26 @@ macOS 上の Microsoft Defender for Endpoint のユーザー インターフェ�
 |**指定可能な値**|有効 (既定) <p> disabled|
 |**コメント**|Microsoft Defender for Endpoint version 101.19.61 以上で使用できます。|
 |||
+
+
+
+#### <a name="control-sign-in-to-consumer-version-of-microsoft-defender"></a>Microsoft Defender のコンシューマー バージョンへのサインインを制御する
+
+ユーザーが Microsoft Defender のコンシューマー バージョンにサインインできるかどうかを指定します。
+
+<br>
+
+****
+
+|Section|値|
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**キー**|consumerExperience|
+|**データ型**|String|
+|**指定可能な値**|有効 (既定) <p> disabled|
+|**コメント**|Microsoft Defender for Endpoint version 101.60.18 以上で使用できます。|
+|||
+
 
 ### <a name="endpoint-detection-and-response-preferences"></a>エンドポイントの検出と応答の基本設定
 
@@ -1064,7 +1084,7 @@ com.microsoft.wdav.plist: OK
 
 ### <a name="jamf-deployment"></a>JAMF の展開
 
-JAMF コンソールで、[**コンピューター**\>構成プロファイル] を開き、使用する構成プロファイルに移動し、[カスタム プロファイル] を **設定。** 優先ドメインとしてエントリを `com.microsoft.wdav` 作成し、前に作成した *.plist を* アップロードします。
+JAMF コンソールで [**コンピューター**\>構成プロファイル] を開き、使用する構成プロファイルに移動し、[カスタム プロファイル] を選択 **設定。** 優先ドメインとしてエントリを `com.microsoft.wdav` 作成し、前に作成した *.plist を* アップロードします。
 
 > [!CAUTION]
 > 正しい基本設定ドメイン () を入力する必要があります。`com.microsoft.wdav`それ以外の場合、設定は Microsoft Defender for Endpoint によって認識されません。

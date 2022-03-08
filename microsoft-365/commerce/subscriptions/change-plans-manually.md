@@ -1,9 +1,9 @@
 ---
-title: ビジネス プランMicrosoft 365手動で変更する
+title: Microsoft 365 for business プランを手動で変更する
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 search.appverid: MET150
 description: サブスクリプションを手動で変更するには、新しいサブスクリプションを購入し、両方のサブスクリプションがリストされアクティブに設定されます。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 12ff6bdec77e6407d1b854dc7a5fd78f0401c253
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: adc76ff3fbfa5fd81893f0b260e76018288350f1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374594"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328429"
 ---
 # <a name="change-plans-manually"></a>手動でプランを変更する
 
@@ -50,9 +50,9 @@ ms.locfileid: "61374594"
 
 または
 
-**新しいサブスクリプションとライセンスを購入します。**「ビジネス サブスクリプション用に別 [のMicrosoft 365を購入する」の](../try-or-buy-microsoft-365.md)手順に従って、新しいサブスクリプションを購入します。
+**新しいサブスクリプションとライセンスを購入します。** 「別の [Microsoft 365 for business](../try-or-buy-microsoft-365.md) サブスクリプションを購入する」の手順に従って、新しいサブスクリプションを購入します。
 
-必ずユーザーが現在所属している組織と同じ組織のサブスクリプションを購入してください。 たとえば、移動するユーザーのメール アドレスを確認します。 電子メール アドレスにメール アドレスが contoso.com 場合は、新しいサブスクリプションを購入する \@ 必要 contoso.com。
+必ずユーザーが現在所属している組織と同じ組織のサブスクリプションを購入してください。 たとえば、移動するユーザーのメール アドレスを確認します。 メール アドレスにメール アドレスが含 \@contoso.com、新しいサブスクリプションを購入する必要 contoso.com。
 移動する各ユーザーのライセンスを含めます。
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>手順 3: 新しいサブスクリプションとライセンスを確認する
@@ -61,7 +61,7 @@ ms.locfileid: "61374594"
 
 2. **両方のサブスクリプションが一覧表示され、アクティブな状態を確認する** ユーザーを移動するサブスクリプションと、ユーザーを移動するサブスクリプションを一緒に一覧表示する必要があります。 最初に確認したときに新しいサブスクリプションが表示されない場合は、後でもう一度確認してみてください。 両方のサブスクリプションがアクティブな状態を確認します。 新しいサブスクリプションが一覧に表示されない、またはアクティブではない場合は[新しいサブスクリプションが一覧に表示されない、またはアクティブではない](#the-new-subscription-isnt-listed-or-isnt-active)を参照してください。
 
-3. **ユーザーごとに十分なライセンスを持っているか確認する** 各ユーザーには、サブスクリプションに一致するライセンスが必要です。 したがって、10 人のユーザーを 10 人のユーザーに移動Microsoft 365 Business Premium、10 個のライセンスが使用可能なライセンスを使用できる必要があります。
+3. **ユーザーごとに十分なライセンスを持っているか確認する** 各ユーザーには、サブスクリプションに一致するライセンスが必要です。 したがって、10 人のユーザーを Microsoft 365 Business Premium に移行する場合は、10 個のライセンスが使用可能な必要があります。
 
 4. **新しいサブスクリプションのライセンスが必要な場合**
    [製品] ページ **に移動し** 、その他 [のライセンスを購入します](../licenses/buy-licenses.md)。
@@ -72,7 +72,7 @@ ms.locfileid: "61374594"
 
 - **2 つのサブスクリプションを購入し、両方とも一覧に表示されない場合** 、異なる組織 (異なるドメイン) 用に購入した可能性があります。 サブスクリプションは組織の境界を超えることはできません。
 
-- **サブスクリプションが追加で、** ここに記載されていない場合、またはアクティブではない場合は [、Microsoft サポートにお問い合わせください](../../admin/get-help-support.md)。
+- **サブスクリプションが追加で、** ここに記載されていない、またはアクティブではない場合は、 [Microsoft サポートにお問い合わせください](../../admin/get-help-support.md)。
 
 ### <a name="what-about-the-old-licenses"></a>古いライセンスの処理
 
@@ -80,19 +80,19 @@ ms.locfileid: "61374594"
 
 ## <a name="step-4-reassign-licenses"></a>手順 4: ライセンスの再割り当て
 
-新しいプランからOffice 365プランMicrosoft 365、すべてのユーザーのライセンス割り当てを変更する必要があります。 手動でプランを変更した場合、ライセンスは自動的に割り当てされません。
+365 プランOffice Microsoft 365 プランにアップグレードする場合は、すべてのユーザーのライセンス割り当てを変更する必要があります。 手動でプランを変更した場合、ライセンスは自動的に割り当てされません。
 
 ### <a name="reassign-a-license-for-one-user"></a>1 人のユーザーのライセンスを再割り当てする
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 2. [アクティブ **ユーザー] ページ** で、ライセンスを割り当てるユーザーを選択します。
 
-3. [ライセンス **とアプリ] タブ** で、[ **ライセンス**] を展開し、割り当てるライセンスのボックスを選択し、[変更の保存] **を選択します**。
+3. [ライセンス **とアプリ] タブで** 、[ **ライセンス] を** 展開し、割り当てるライセンスのボックスを選択し、[変更の保存] **を選択します**。
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>複数のユーザーのライセンスを一度に再割り当てする
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 2. 既存のライセンスを置き換えるユーザーの名前の横にある円を選択します。
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7b98ebf38d0e2e5ab5ec086e75002d0d660cff4c
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 77dbdb290a0f8643bd24e1a3c561b823e5c2e4b3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214083"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330595"
 ---
 # <a name="configure-device-discovery"></a>デバイス検出の構成
 
@@ -44,13 +44,13 @@ ms.locfileid: "62214083"
 
 デバイスの検出を設定するには、ポータルで次の<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">構成Microsoft 365 Defenderします</a>。
 
-[デバイスの検出 **設定**  >  **に移動する**
+[デバイスの検出 **設定** > **に移動する**
 
 1. オンボード デバイスで使用する検出モードとして Basic を構成する場合は、[基本] を選択し、[保存] を **選択します。**
 2. 標準検出を使用する場合は、アクティブなプロブに使用するデバイスを選択します。デバイス タグを指定して、すべてのデバイスまたはサブセットで使用し、[保存] を選択 **します**。
 
 > [!NOTE]
->標準検出では、さまざまな PowerShell スクリプトを使用して、ネットワーク内のデバイスをアクティブにプローブします。 これらの PowerShell スクリプトは Microsoft 署名済みで、次の場所から実行されます `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` 。 たとえば、「 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1` 」のように入力します。
+>標準検出では、さまざまな PowerShell スクリプトを使用して、ネットワーク内のデバイスをアクティブにプローブします。 これらの PowerShell スクリプトは Microsoft 署名済みで、次の場所から実行されます。 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` たとえば、`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1` などです。
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>デバイスが標準検出でアクティブにプローブされるのを除外する
 
@@ -60,7 +60,7 @@ ms.locfileid: "62214083"
 
 ## <a name="select-networks-to-monitor"></a>監視するネットワークの選択
 
- Microsoft Defender for Endpoint は、ネットワークを分析し、監視が必要な企業ネットワークか、無視できる非企業ネットワークかどうかを判断します。 通常、企業ネットワークは監視対象として選択されます。 ただし、オンボードデバイスが見つかった企業以外のネットワークを監視することで、この決定を上書きできます。
+Microsoft Defender for Endpoint は、ネットワークを分析し、監視が必要な企業ネットワークか、無視できる非企業ネットワークかどうかを判断します。 ネットワークを企業として識別するために、すべてのテナントのクライアント間でネットワーク識別子を関連付け、組織のデバイスの大部分が同じネットワーク名に接続されていることを報告する場合は、同じ既定のゲートウェイと DHCP サーバー アドレスを使用して、これが企業ネットワークである必要があります。 通常、企業ネットワークは監視対象として選択されます。 ただし、オンボードデバイスが見つかった企業以外のネットワークを監視することで、この決定を上書きできます。
 
 監視するネットワークを指定することで、デバイスの検出を実行できる場所を構成できます。 ネットワークを監視すると、デバイス検出をそのネットワークで実行できます。
 

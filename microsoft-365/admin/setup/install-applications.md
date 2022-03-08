@@ -2,8 +2,8 @@
 title: Office アプリケーションのインストール
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: landing-page
@@ -24,18 +24,18 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: 新しいアプリケーションをセットアップMicrosoft 365、Mac、PC、またはモバイル デバイスにOfficeアプリケーションをインストールする方法について学習します。
-ms.openlocfilehash: e943e5dd07f51ff6885cbb5f2567643597f360b9
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 9e573307bb0c2de1a0b6f4a9157bd35a4b81fe8a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128210"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317333"
 ---
 # <a name="install-office-applications"></a>Office アプリケーションをインストールする
 
 Microsoft 365 のセットアップが完了しましたので、Mac、PC、モバイル デバイスに個々の Office アプリケーションをインストールできます。
   
-## <a name="watch-install-office-apps"></a>ウォッチ: アプリOfficeインストールする
+## <a name="watch-install-office-apps"></a>ウォッチ: アプリをOfficeする
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
 
@@ -43,7 +43,7 @@ Microsoft Office アプリは、**[スタート]** メニューから見つけ�
 
 1. Office.com にアクセスします。 職場のアカウントでサインインする必要があるかもしれません。
 2. **[Office のインストール]**  >  **[Microsoft 365 Apps]**  >  **[実行]** の順に選択し、**[はい]** を選択します。
-3. アプリOfficeインストールされます。 このプロセスには数分かかる場合があります。 完了したら、**[閉じる]** を選択します。
+3. アプリOfficeインストールされている場合。 このプロセスには数分かかる場合があります。 完了したら、**[閉じる]** を選択します。
 4. Microsoft Teams をインストールするには、office.com ページに移動し、**[Teams]** を選択します。
 5. Windows アプリを入手してから、**[実行]** を選択します。 インストールが完了すると、Teams のダイアログが表示されます。
 

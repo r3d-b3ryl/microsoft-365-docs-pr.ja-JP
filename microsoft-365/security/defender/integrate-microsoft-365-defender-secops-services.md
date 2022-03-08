@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f18ff452d7f268aa652af097db19f53f2002d8ae
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 45497f74db9c68959d4b23e013c6ea483e86378a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187211"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323963"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>手順 3. サービスの SOC Microsoft 365 Defenderとの統合を計画する
 
@@ -59,23 +59,23 @@ Microsoft 365 Defenderテクノロジはさまざまな機能にまたがって�
 
 次に示すMicrosoft 365 Defenderコンポーネントを示します。
 
-- **Microsoft Defender for Identity** (旧 Azure Advanced Threat Protection( 旧 Azure ATP とも呼ばれる) は、Active Directory ドメイン サービス (AD DS) シグナルを使用して、組織向け高度な脅威、侵害された ID、悪意のあるインサイダーアクションを特定、検出、調査するクラウドベースのセキュリティ ソリューションです。
+- **Microsoft Defender for Identity** (旧 Azure Advanced Threat Protection( Azure ATP とも呼ばれる) は、Active Directory ドメイン サービス (AD DS) シグナルを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダーアクションを特定、検出、調査するクラウドベースのセキュリティ ソリューションです。
 
-- **Microsoft Defender for Endpoint** は、リスクベースの 脆弱性の管理 と評価、攻撃表面の縮小、行動ベースおよびクラウドベースの次世代保護、エンドポイントの検出と応答 (EDR)、自動調査と修復、管理された狩猟サービス、豊富な API、統合セキュリティ管理を含むデバイス向け、総合的なクラウド提供エンドポイント セキュリティ ソリューションです。
+- **Microsoft Defender for Endpoint** は、リスクベースの 脆弱性の管理 と評価、攻撃表面の縮小、行動ベースおよびクラウドベースの次世代保護、エンドポイントの検出と応答 (EDR)、自動調査と修復、管理された狩猟サービス、豊富な API、統合セキュリティ管理を含むデバイス向け包括的なクラウド提供エンドポイント セキュリティ ソリューションです。
 
- - **Microsoft Defender for Office 365** は、堅牢なゼロデイ保護を提供することで未知のマルウェアやウイルスから組織を保護し、組織を有害なリンクからリアルタイムで保護する機能を備えるクラウドベースの電子メール フィルター サービスです。 また、調査と狩猟、対応と修復、認識とトレーニング、安全な姿勢機能の包括的なスレートも提供します。
+ - **Microsoft Defender for Office 365** は、堅牢なゼロデイ保護を提供することで、不明なマルウェアやウイルスから組織を保護し、組織を有害なリンクからリアルタイムで保護する機能を備えるクラウドベースの電子メール フィルター サービスです。 また、調査と狩猟、対応と修復、認識とトレーニング、安全な姿勢機能の包括的なスレートも提供します。
 
 - **Microsoft Defender for Cloud Apps** は、ログ 収集、API コネクタ、リバース プロキシなど、さまざまな展開モードをサポートするクラウド アクセス セキュリティ ブローカー (CASB) です。 豊富な可視性、データ移動の制御、高度な分析を提供し、Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定し、対処します。
 
-Microsoft 365 Defenderコンポーネントとテクノロジはさまざまな機能にまたがるため、SOC チームは、Microsoft 365 Defender の各コンポーネントを管理し、サービス機能に合わせて調整するために最適な役割と責任を決定する必要があります。
+Microsoft 365 Defenderコンポーネントとテクノロジはさまざまな機能にまたがっていますので、SOC チームは、Microsoft 365 Defender の各コンポーネントを管理し、サービス機能に合わせて調整するために最適な役割と責任を決定する必要があります。
 
-サービスの機能を統合するにはMicrosoft 365 Defender SOC サービスを絞り込む必要があります。 アプリケーションの機能の詳細については、Microsoft 365 Defender記事を参照してください。
+システムの機能を統合するにはMicrosoft 365 Defender SOC サービスを絞り込む必要があります。 この機能の詳細については、次Microsoft 365 Defenderを参照してください。
 
 - [Microsoft Defender for Endpoint とは](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [Microsoft Defender for Identity とは?](/defender-for-identity/what-is)
 - [Defender for Office 365 とは](/office-365-security/defender-for-office-365)
 - [Microsoft Defender for Cloud Apps とは](/cloud-app-security/what-is-cloud-app-security)
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
-[手順 4.役割Microsoft 365 Defender監督の定義](integrate-microsoft-365-defender-secops-roles.md)
+[手順 4.役割Microsoft 365 Defender監督を定義する](integrate-microsoft-365-defender-secops-roles.md)

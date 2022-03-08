@@ -11,32 +11,32 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: 管理者は、Microsoft Defender for microsoft Defender for Office 365 プラン 2 を使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法について説明します。
+description: 管理者は、Microsoft Defender for Office 365 プラン 2 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 065b456d5a53a4d803c67ac0ac6ddc270391851a
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 31c8fd7b0369e5af522cd79b9bee7c5ee8460cc5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295444"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329643"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Defender の攻撃シミュレーション トレーニングを使用してフィッシング攻撃をシミュレートOffice 365
 
 **Microsoft Defender for** [Office 365プラン 2 に適用されます](defender-for-office-365.md)
 
-Microsoft Defender で計画 2 または Office 365の攻撃シミュレーション トレーニングMicrosoft 365 E5、組織内で良性のサイバー攻撃シミュレーションを実行できます。 これらのシミュレーションでは、セキュリティ ポリシーとプラクティスをテストし、従業員の意識を高め、攻撃に対する影響を減らします。 この記事では、攻撃シミュレーション トレーニングを使用してシミュレートされたフィッシング攻撃を作成する方法について説明します。
+Microsoft Defender for plan 2 または Office 365の攻撃シミュレーション トレーニングMicrosoft 365 E5、組織内で良性のサイバー攻撃シミュレーションを実行できます。 これらのシミュレーションでは、セキュリティ ポリシーとプラクティスをテストし、従業員の意識を高め、攻撃に対する影響を減らします。 この記事では、攻撃シミュレーション トレーニングを使用してシミュレートされたフィッシング攻撃を作成する方法について説明します。
 
 攻撃シミュレーション トレーニングの概要については、「攻撃シミュレーション トレーニングの使用を開始 [する」を参照してください](attack-simulation-training-get-started.md)。
 
 シミュレートされたフィッシング攻撃を起動するには、次の手順を実行します。
 
-1. [攻撃シミュレーションMicrosoft 365 Defender] <https://security.microsoft.com>ポータルの [電子メール &**攻撃**\>シミュレーション **トレーニング シミュレーション**\>] **タブに移動** します。
+1. ポータルの [Microsoft 365 Defender] <https://security.microsoft.com>で、[電子メール] **& [** \>  \>攻撃シミュレーション トレーニング シミュレーション] **タブに移動** します。
 
    [シミュレーション] タブに直接 **移動するには** 、 を使用します <https://security.microsoft.com/attacksimulator?viewid=simulations>。
 
 2. [シミュレーション] **タブで** 、[シミュレーションの起動 ![] アイコンを選択します。](../../media/m365-cc-sc-create-icon.png) **シミュレーションを起動します**。
 
-   ![ポータルの攻撃シミュレーション トレーニングの [シミュレーション] タブでシミュレーション ボタンをMicrosoft 365 Defenderします。](../../media/attack-sim-training-simulations-launch.png)
+   ![ポータルの攻撃シミュレーション トレーニングの [シミュレーション] タブでシミュレーション ボタンMicrosoft 365 Defenderします。](../../media/attack-sim-training-simulations-launch.png)
 
 3. シミュレーション作成ウィザードが開きます。 この記事の残りの部分では、ページとページに含まれる設定について説明します。
 
@@ -45,7 +45,7 @@ Microsoft Defender で計画 2 または Office 365の攻撃シミュレーシ�
 
 ## <a name="select-a-social-engineering-technique"></a>ソーシャル エンジニアリング手法の選択
 
-[テクニック **の選択]** ページで、 [MITRE ATT および CK フレームワークからキュ&ソーシャル エンジニアリング手法を選択®します](https://attack.mitre.org/techniques/enterprise/)。 さまざまなペイロードは、さまざまな手法で使用できます。 次のソーシャル エンジニアリング手法を使用できます。
+[テクニック **の選択]** ページで、CK フレームワークの [MITRE ATT からキュ&選択®します](https://attack.mitre.org/techniques/enterprise/)。 さまざまなペイロードは、さまざまな手法で使用できます。 次のソーシャル エンジニアリング手法を使用できます。
 
 - **資格情報の取得**: ユーザー名とパスワードを送信する入力ボックスが入力ボックス付きよく知られている Web サイトにユーザーを連れて行き、資格情報を収集します。
 - **マルウェアの添付** ファイル: 悪意のある添付ファイルをメッセージに追加します。 ユーザーが添付ファイルを開くと、攻撃者がターゲットのデバイスを侵害するのに役立つ任意のコードが実行されます。
@@ -74,7 +74,7 @@ Microsoft Defender で計画 2 または Office 365の攻撃シミュレーシ�
 
 次の詳細は、選択に役立つペイロードの一覧に表示されます。
 
-- **[名前]**
+- **名前**
 - **言語**: ペイロード コンテンツの言語。 Microsoft のペイロード カタログ (グローバル) は、10 以上の言語でペイロードを提供し、フィルター処理も可能です。
 - **クリック率**: このペイロードをクリックしたユーザー数。
 - **予測された侵害率**: このペイロードによって侵害される人Microsoft 365の割合を予測する、データ全体のペイロードの履歴データ。
@@ -138,7 +138,7 @@ Microsoft Defender で計画 2 または Office 365の攻撃シミュレーシ�
         - **過去 3 か月間にシミュレーションの対象とされないユーザー**
         - **繰り返し犯罪者**
 
-      - **ユーザー タグ**: ユーザー タグは、ユーザーの特定のグループ (優先度アカウントなど) の識別子です。 詳細については、「[Microsoft Defender の User tags for microsoft Defender for Office 365」 を参照してください](user-tags.md)。
+      - **ユーザー タグ**: ユーザー タグは、ユーザーの特定のグループ (優先度アカウントなど) の識別子です。 詳細については、「[Microsoft Defender のユーザー タグ」を参照Office 365](user-tags.md)。
 
           次のオプションを使用します。
 
@@ -194,7 +194,7 @@ Microsoft Defender で計画 2 または Office 365の攻撃シミュレーシ�
       - **シミュレーションが終了した 7 日後**
   - **トレーニングなし**: この値を選択した場合、ページの唯一のオプションは、[ランディング ページ] ページに移動する [次へ] [**ボタン**](#landing-page)です。
 
-![ポータルの攻撃シミュレーション トレーニングの [トレーニングの割り当て] ページに、推奨されるトレーニングMicrosoft 365 Defender追加します。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+![ポータルの [攻撃シミュレーション トレーニング] の [トレーニングの割り当て] ページに推奨Microsoft 365 Defenderします。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
 
 ### <a name="training-assignment"></a>トレーニングの割り当て
 
@@ -249,7 +249,7 @@ Microsoft が選択したランディング ページは、中国語 (簡体字)
 - **[ランディング ページの基本設定の選択**]: 使用可能な値は次のとおりです。
   - **Microsoft の既定のランディング ページを使用** する: これは、構成する次の関連付けられたオプションを持つ既定値です。
     - **[ランディング ページ レイアウトの選択**]: 使用可能なテンプレートのいずれかを選択します。
-    - **ロゴの追加**: [ **参照]** をクリックして、.png、.jpeg、またはファイルを.gifします。 ロゴを削除するには、[削除] を **クリックします**。
+    - **ロゴの追加**: [ **参照]** をクリックして、.png.jpeg、またはファイルを.gifします。 ロゴを削除するには、[削除] を **クリックします**。
     - **メールにペイロード インジケーターを追加** する: [テクニックの選択] ページで [マルウェアの添付ファイル] または [マルウェアへのリンク] を以前に選択した場合、この設定 [は使用](#select-a-social-engineering-technique)できません。
 
       [ **メールにペイロードインジケーターを追加する** ] を選択して、ユーザーがフィッシング メッセージを識別する方法について学習します。
@@ -361,6 +361,7 @@ Microsoft が選択したランディング ページは、中国語 (簡体字)
     - **起動時間の選択**
 - **シミュレーションを終了する日数を構成します。** 既定値は 2 です。
 - **地域対応タイム ゾーン配信を有効** にする: 地域に基づいて、勤務時間中にシミュレートされた攻撃メッセージを従業員に配信します。
+- **ドライブバイテクニックのインタースティシャル** データ収集ページを表示する: ドライブブ URL の手法攻撃に対して表示されるオーバーレイを表示できます。 オーバーレイを非表示にし、ランディング ページに直接移動するには、このオプションを選択し直します。
 
 完了したら、**[次へ]** をクリックします。
 

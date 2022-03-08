@@ -17,26 +17,23 @@ ROBOTS: NOINDEX
 description: ユーザーは、アクセス許可を持つ共有メールボックスに送信された検疫済みメッセージを表示および処理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e78a46bca97ea58a88195c9d05e11332528cf3af
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 8d9f83f176675be26fadf3d720dcc78e5146bde3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364870"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324523"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>共有メールボックスから検疫済みメッセージを表示および解放する
 
-> [!NOTE]
-> この記事で説明する機能は、現在プレビュー中であり、すべてのユーザーが利用できる機能ではなく、変更される可能性があります。
+ユーザーは、「EOP のユーザーとして検疫済みメッセージを検索して解放する」の説明に従って、検疫済みメッセージを受信者の 1 つである場所 [で管理できます](find-and-release-quarantined-messages-as-a-user.md)。 ただし、「**共有メールボックス」** の説明に従って、ユーザーがフル アクセスおよび Send As または Send on Behalf アクセス許可を持つ共有メールボックス [Exchange Online](/exchange/collaboration-exo/shared-mailboxes)。
 
-ユーザーは [、「EOP](find-and-release-quarantined-messages-as-a-user.md)で検疫済みメッセージをユーザーとして検索して解放する」の説明に従って、検疫済みメッセージを受信者の 1 つとして管理できます。 しかし、「共有 **メールボックス**」の説明に従って、ユーザーがフル アクセスおよび Send As または Send on Behalf のアクセス許可を持つ共有メールボックス [については](/exchange/collaboration-exo/shared-mailboxes)、Exchange Online?
-
-以前は、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理するには、管理者が共有メールボックスの自動マッピングを有効のままにする必要がありました (管理者がユーザーに別のメールボックスへのアクセス権を与える場合、既定で有効になっています)。 ただし、ユーザーがアクセスできるメールボックスのサイズと数に応じて、Outlook がユーザーがアクセスできるすべてのメールボックスを開くしようとすると、パフォーマンスが低下する可能性があります。 このため、多くの管理者が共有メールボックス [の自動マップを削除する選択をします](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
+以前は、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理するには、管理者が共有メールボックスの自動マッピングを有効のままにする必要がありました (管理者がユーザーに別のメールボックスへのアクセス権を与える場合、既定で有効になっています)。 ただし、ユーザーがアクセスできるメールボックスのサイズと数に応じて、Outlook がユーザーがアクセスできるすべてのメールボックスを開くしようとすると、パフォーマンスが低下する可能性があります。 このため、多くの管理者が共有メールボックス [の自動マップを削除します](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
 
 これで、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理するために、自動マッピングは不要になります。 動作します。 共有メールボックスに送信された検疫済みメッセージにアクセスするには、次の 2 つの方法があります。
 
-- 管理者が検疫通知[](quarantine-policies.md)(以前はエンド ユーザースパム通知と呼ばれる) を許可するように検疫ポリシーを構成している場合、共有メールボックス内の検疫通知にアクセスできるユーザーは、通知の [確認] ボタンをクリックして、Microsoft 365 Defender ポータルの検疫に移動できます。 この方法では、ユーザーが共有メールボックスに送信された検疫済みメッセージのみを管理できます。 ユーザーは、このコンテキストで独自の検疫メッセージを管理できません。
-- ユーザーは、Microsoft 365 Defender ポータルで検疫に [移動し、[](find-and-release-quarantined-messages-as-a-user.md)フィルター]をクリックして、受信者アドレス **(共有** メールボックスの電子メール アドレス) で結果をフィルター処理できます。 メインの [**検疫] ページ** で、[受信者] 列をクリックして、共有メールボックスに送信されたメッセージで並べ替えを行います。
+- 管理者が検疫通知 ([](quarantine-policies.md)以前はエンド ユーザースパム通知と呼ばれる) を許可するように検疫ポリシーを構成している場合、共有メールボックス内の検疫通知にアクセスできるユーザーは、通知の  [確認] ボタンをクリックして、Microsoft 365 Defender ポータルの検疫に移動できます。 この方法では、ユーザーが共有メールボックスに送信された検疫済みメッセージのみを管理できます。 ユーザーは、このコンテキストで独自の検疫メッセージを管理できません。
+- ユーザーは、Microsoft 365 Defenderポータルで検疫に移動し、[フィルター] [をクリック](find-and-release-quarantined-messages-as-a-user.md)して、受信者 **アドレス (共有** メールボックスの電子メール アドレス) で結果をフィルター処理できます。 メインの [**検疫] ページ** で、[受信者] 列をクリックして、共有メールボックスに送信されたメッセージで並べ替えを行います。
 
 ## <a name="things-to-keep-in-mind"></a>留意すべき点
 
@@ -48,7 +45,7 @@ ms.locfileid: "60364870"
 
 - 共有メールボックスの検疫操作について、入れ子になったセキュリティ グループを使用して共有メールボックスへのアクセスを許可する場合は、入れ子になったグループのレベルを 2 つ以下にすることをお勧めします。 たとえば、グループ A はグループ B のメンバーで、グループ C のメンバーです。共有メールボックスにアクセス許可を割り当てるには、ユーザーをグループ A に追加してから、グループ C を共有メールボックスに割り当てない。  
 
-- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーが _RecipientAddress_ パラメーターの値に対して共有メールボックスの電子メール アドレスを持つ [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)コマンドレットを使用してメッセージを識別する必要があります。 例:
+- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーが _RecipientAddress_ パラメーターの値に対して共有メールボックスの電子メール アドレスを持つ [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) コマンドレットを使用してメッセージを識別する必要があります。 例:
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com

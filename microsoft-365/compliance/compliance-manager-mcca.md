@@ -2,8 +2,8 @@
 title: コンプライアンス マネージャー用の Microsoft コンプライアンス構成アナライザー
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
-ms.openlocfilehash: 2e0327a11067a4e474831d95b2c74c4c289086ce
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3c5230a8a9998c4b924e5a9d4a9565ae1c97db89
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747228"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325111"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
 
@@ -30,28 +30,28 @@ ms.locfileid: "60747228"
 
 ## <a name="microsoft-compliance-configuration-analyzer-mcca-preview-overview"></a>Microsoft コンプライアンス構成アナライザー (MCCA) (プレビュー) の概要
 
-Microsoft コンプライアンス構成アナライザー (MCCA) は [、Microsoft](compliance-manager.md)コンプライアンス マネージャーの開始に役立つプレビュー ツールです。 MCCA は PowerShell ベースのユーティリティで、組織の現在の構成をフェッチし、推奨されるベスト プラクティスにMicrosoft 365検証します。 これらのベスト プラクティスは、データ保護とデータ ガバナンスの主要な規制と標準を含む一連のコントロールに基づいて行います。
+Microsoft コンプライアンス構成アナライザー (MCCA) は、Microsoft コンプライアンス マネージャーの開始に役立つプレビュー [ツールです](compliance-manager.md)。 MCCA は PowerShell ベースのユーティリティで、組織の現在の構成をフェッチし、推奨されるベスト プラクティスにMicrosoft 365検証します。 これらのベスト プラクティスは、データ保護とデータ ガバナンスの主要な規制と標準を含む一連のコントロールに基づいて行います。
 
-MCCA を使用すると、コンプライアンス マネージャーでどの改善アクションが現在の環境に適用Microsoft 365できます。 MCCA によって識別される各アクションには、コンプライアンス マネージャーへの直接リンクと、修正アクションの実行を開始する適切なソリューションを含む、実装に関する推奨事項が示されます。
+MCCA を使用すると、コンプライアンス マネージャーの改善アクションが現在の環境に適用Microsoft 365できます。 MCCA によって識別される各アクションには、コンプライアンス マネージャーへの直接リンクと、修正アクションの実行を開始する適切なソリューションを含む、実装に関する推奨事項が示されます。
 
-MCCA を理解するもう 1 つのリソースは、MCCA の README の手順[にアクセスGitHub。](https://github.com/OfficeDev/MCCA#overview) このページでは、前提条件に関する詳細な情報を提供し、完全なインストール手順を示します。 このページにアクセスするには、GitHubアカウントは必要ない。
+MCCA を理解するもう 1 つのリソースは、MCCA の [README](https://github.com/OfficeDev/MCCA#overview) の手順にアクセスGitHub。 このページでは、前提条件に関する詳細な情報を提供し、完全なインストール手順を示します。 このページにアクセスするには、GitHubアカウントは必要ない。
 
-**可用性**: MCCA は、Office 365 ライセンスおよび Microsoft 365 ライセンスと米国政府機関 Community (GCC) モデレート、GCC High、および国防総省 (DoD) のお客様のすべての組織で利用できます。
+**可用性**: MCCA は、Office 365 および Microsoft 365 ライセンスと米国政府機関 Community (GCC) モデレート、GCC 高、および国防総省 (DoD) のお客様のすべての組織で利用できます。
 
 ## <a name="install-mcca-and-run-a-report"></a>MCCA をインストールしてレポートを実行する
 
-MCCA ツールは、次のコマンドを使用Windows PowerShell。 ツールをダウンロードしてインストールしたら、レポートを実行するためにこれらの手順を繰り返す必要がなされません。 MCCA を開くごとに、ログイン資格情報を求め、新しい更新されたレポートが生成されます。
+MCCA ツールは、次の手順を使用Windows PowerShell。 ツールをダウンロードしてインストールしたら、レポートを実行するためにこれらの手順を繰り返す必要がなされません。 MCCA を開くごとに、ログイン資格情報を求め、新しい更新されたレポートが生成されます。
 
 ### <a name="step-1-install-windows-powershell"></a>手順 1: インストールWindows PowerShell
 
-まず、PowerShell ギャラリーで使用できる Exchange Online PowerShell モジュール (v2.0.3 以上) が必要です。 [インストール手順を取得します](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3)。
+まず、PowerShell ギャラリーで使用Exchange Online PowerShell モジュール (v2.0.3 以上) が必要です。 [インストール手順を取得します](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3)。
 
 ### <a name="step-2-install-mcca"></a>手順 2: MCCA をインストールする
 
 MCCA をインストールするには、まず管理者モードで PowerShell を使用します。 以下の手順に従います。
 
 1. [スタート] ボタンWindows **選択** します。
-1. **「PowerShell」と** 入力し、[**管理者として実行** Windows PowerShellを選択します **。**
+1. 「**PowerShell」と** 入力し、[**管理者として実行** Windows PowerShellを選択 **します**。
 1. コマンド プロンプトに次のコマンドを入力します。
 
     ```powershell
@@ -79,7 +79,7 @@ MCCA をインストールした後、MCCA を実行してレポートを生成�
 
 その後、レポートの生成に約 2 ~ 5 分かかります。 完了すると、ブラウザー ウィンドウが開き、HTML レポートが表示されます。 ツールを実行する度に、資格情報を要求し、新しいレポートを生成します。 このレポートは、次のディレクトリにローカルに格納されます。
 
-C:\Users \<username> \AppData\Local\Microsoft\MCCA。 
+C:\Users\<username>\AppData\Local\Microsoft\MCCA。 
 
 このディレクトリから、以前に生成されたレポートにアクセスできます。
 
@@ -98,7 +98,7 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
 特定の場所に基づいてレポートを実行するには、次の手順に従います。
 
 1. PowerShell を開く
-2. 特定の地域を指定するには、国または地域に対応する下の表の番号を使用してコマンドレットを実行します。 複数の数値をコンマで区切って入力します。 たとえば、次のコマンドレットは、ユーザーと日本のユーザー向Asia-Pacific実行します。
+2. 特定の地域を指定するには、国または地域に対応する下の表の番号を使用してコマンドレットを実行します。 複数の数値をコンマで区切って入力します。 たとえば、次のコマンドレットは、ユーザーと日本のユーザー向けAsia-Pacific実行します。
 
     ```powershell
     Get-MCCAReport -Geo @(1,7)
@@ -133,10 +133,10 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
 ![MCCA - 役割。](../media/compliance-manager-mcca-roles.png "MCCA の役割")
 
 例外:
-1. ユーザーは、[IRM を使用する] セクション以外の IP のレポートExchange Online表示されます。
-2. ユーザーは、[IP の IRM を使用する] セクション以外の IP のExchange Onlineできます。
+1. [IRM を使用する] セクション以外の IP のレポートを生成Exchange Onlineされます。
+2. ユーザーは、[IP の IRM を使用する] セクションとは別に、IP のExchange Onlineできます。
 3. ユーザーは、[O365 で通信コンプライアンスを有効にする] セクションとは別に、IP のレポートを生成できます。
-4. ユーザーは、[監査を有効にする] セクション以外の IP のレポートOffice 365表示されます。
+4. [監査を有効にする] セクション以外の IP のレポートを生成Office 365されます。
 5. ユーザーは、[監査を有効にする] セクション以外の IP のOffice 365できます。
 
 #### <a name="solutions-summary-section"></a>[ソリューションの概要] セクション
@@ -157,9 +157,9 @@ MCCA は、コンプライアンス マネージャーで推奨される改善�
 
 **[改善] 状態のアイテム**
 
-改善アクションの右側にある **[改善** ] ラベルの横にあるドロップダウンを選択します。 現在の設定と推奨される改善アクションに関する簡単な概要と詳細が表示されます。 概要には、コンプライアンス マネージャーへの直接リンク、関連するドキュメントの該当するソリューションMicrosoft 365 コンプライアンス センターが含まれます。
+改善アクションの右側にある **[改善** ] ラベルの横にあるドロップダウンを選択します。 現在の設定と推奨される改善アクションに関する簡単な概要と詳細が表示されます。 概要には、コンプライアンス マネージャーへの直接リンク、コンプライアンス マネージャーの該当するソリューションMicrosoft 365 コンプライアンス センター関連ドキュメントが含まれます。
 
-[コンプライアンス マネージャー] リンクをクリックすると、まだ実装していないソリューション内のすべての改善アクションのフィルタービューが表示されます。 そこから、コンプライアンス スコアを上げ、適用する評価、適用される規制[](compliance-score-calculation.md)と認定を増やして得るポイントの数を確認できます。
+[コンプライアンス マネージャー] リンクをクリックすると、まだ実装していないソリューション内のすべての改善アクションのフィルタービューが表示されます。 そこから、コンプライアンス スコアを上げ、適用する評価、および該当する規制[](compliance-score-calculation.md)と認定を得る目的で達成できるポイントの数を確認できます。
 
 DLP の場合、推奨される情報に基づいて事前に生成された PowerShell スクリプトを提供する [修復スクリプト] ボタンがあります。 PowerShell コンソールにコピーして直接貼り付けます。 テスト モードで DLP ポリシーを作成します
 
@@ -169,6 +169,6 @@ DLP の場合、推奨される情報に基づいて事前に生成された Pow
 
 ## <a name="resources"></a>リソース
 
-MCCA のインストール、セットアップ、および使用の詳細については、「GitHub」の[README](https://github.com/OfficeDev/MCCA#overview) GitHub参照してください。
+MCCA のインストール、セットアップ、および使用の詳細については、「GitHub」の [README](https://github.com/OfficeDev/MCCA#overview) GitHub参照してください。
 
-詳細については、「PowerShell Windows PowerShell[の使い方」を参照してください](/powershell/scripting/how-to-use-docs)。 [「Starting Windows PowerShell」も参照してください](/powershell/scripting/windows-powershell/starting-windows-powershell)。
+詳細については、「[PowerShell Windows PowerShellを使用する」を参照してください](/powershell/scripting/how-to-use-docs)。 「[Starting Windows PowerShell」も参照してください](/powershell/scripting/windows-powershell/starting-windows-powershell)。

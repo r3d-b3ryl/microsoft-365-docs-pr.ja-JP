@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: f6672bfe090458de9ffecae77b656b6f4a8a912d
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: 5ffbe15fe9fa06e7c06546f9452d6c4f2bddfc39
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825483"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329615"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃表面の縮小ルールのリファレンス
 
@@ -62,10 +62,10 @@ ms.locfileid: "62825483"
 |[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) | Y | Y |
 |[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y | Y |
 |[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | Y | Y |
-|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | N |
-|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | Y | Y |
+|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | N | N |
+|[実行可能Office作成するアプリケーションをブロックする](#block-office-applications-from-creating-executable-content) | Y | Y |
 |[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y |
-|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y | Y |
+|[通信Office子プロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y | Y |
 |[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) \*_ファイルとフォルダーの除外はサポートされていません。_ | N | N |
 |[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y | Y |
 |[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y |
@@ -96,9 +96,9 @@ _パブリック プレビューの終了: サポートされているオペレ�
 |[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |
 |[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | Y | Y <br><br> | Y <br><br> |
 |[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y <br><br> | Y <br><br> |
-|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | Y | Y <br><br> | Y <br><br> |
+|[実行可能Office作成するアプリケーションをブロックする](#block-office-applications-from-creating-executable-content) | Y | Y <br><br> | Y <br><br> |
 |[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |
-|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y | Y <br><br> | Y <br><br> |
+|[通信Office子プロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y | Y <br><br> | Y <br><br> |
 |[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) <br><br> \*_ファイルとフォルダーの除外はサポートされていません。_ | Y バージョン 1903 (ビルド 18362) 以降| Y | Y <br><br> バージョン 1903 (ビルド 18362) 以降 |
 |[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br>  |
 |[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |
@@ -134,8 +134,8 @@ _パブリック プレビューの終了: サポートされているオペレ�
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
-- [Microsoft エンドポイント マネージャー CB 1710](/configmgr/core/servers/manage/updates)
-- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM がMicrosoft Endpoint Configuration Manager。_
+- [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
+- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM は Microsoft Endpoint Configuration Manager です。_
 
 ## <a name="per-rule-alert-and-notification-details"></a>ルールごとのアラートと通知の詳細
 
@@ -144,22 +144,22 @@ _パブリック プレビューの終了: サポートされているオペレ�
 "ルールの状態" が指定されているルールの場合:
 
 - 組み合わせを含む \<ASR Rule, Rule State\> ASR ルールは、高クラウド ブロック レベルのデバイスに対する Microsoft Defender for Endpoint の通知 (トースト通知) を表示するために使用されます。 高いクラウド ブロック レベルではないデバイスは、ASR ルール、ルールの状態、<の組み合わせに>されません。
-- EDRは、指定した状態の ASR ルールに対して生成されますが、クラウド ブロック レベルの高いデバイスに対してだけ生成されます。
+- EDR アラートは、指定された状態の ASR ルールに対して生成されますが、クラウド ブロック レベルの高いデバイスに対してだけ生成されます。
 
-| ルール名: | ルールの状態: | サーバーでアラートを生成EDR? <br> (はい&nbsp;\|&nbsp;いいえ) | トースト通知を生成しますか? <br> (はい&nbsp;\|&nbsp;いいえ) |
+| ルール名: | ルールの状態: | EDR でアラートを生成しますか? <br> (はい&nbsp;\|&nbsp;いいえ) | トースト通知を生成しますか? <br> (はい&nbsp;\|&nbsp;いいえ) |
 |---|:---:|:---:|:---:|
 |   |   |  _高クラウド ブロック レベルのデバイスの場合のみ_ | _ブロック モードの場合のみ_ |
 |[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) |   | N  | Y |
 |[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | ブロック  | Y <br> 高クラウド ブロック レベルのデバイスが必要  | Y <br> 高クラウド ブロック レベルのデバイスが必要 |
 |[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) |   | N | Y |
-|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | Y |
+|[Windows ローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | Y |
 |[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) |   | Y <br> 高クラウド ブロック レベルのデバイスが必要 | Y <br> 高クラウド ブロック レベルのデバイスが必要 |
 |[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | Y |
 |[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要 |
 |[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ブロック | Y <br> 高クラウド ブロック レベルのデバイスが必要  | Y <br> 高クラウド ブロック レベルのデバイスが必要 |
-|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) |   | N | Y |
+|[実行可能Office作成するアプリケーションをブロックする](#block-office-applications-from-creating-executable-content) |   | N | Y |
 |[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | Y |
-|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
+|[通信Office子プロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
 |[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要 |
 |[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | Y |
 |[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要 |
@@ -178,7 +178,7 @@ _警告モード_ は、潜在的に危険なアクションについてユー�
 
 [許可] ボタンをクリックすると、ブロックは 24 時間表示されません。 24 時間後、エンドユーザーはブロックを再度許可する必要があります。 ASR ルールの警告モードは、RS5+ (1809+) デバイスでのみサポートされます。 以前のバージョンのデバイスでバイパスが ASR ルールに割り当てられている場合、ルールはブロックモードになります。
 
-PowerShell を使用して警告モードでルールを設定するには、そのルールを "Warn" AttackSurfaceReductionRules_Actions指定します。 次に例を示します。
+PowerShell を使用して警告モードでルールを設定するには、そのルールを "Warn" AttackSurfaceReductionRules_Actions指定します。 例:
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -240,7 +240,7 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 このルールは、Officeプロセスの作成をブロックします。 Officeには、Word、Excel、PowerPoint、OneNote、Access が含まれます。
 
-悪意のある子プロセスを作成する方法は、一般的なマルウェア戦略です。 マルウェアがベクターとしてOffice、VBA マクロを実行し、コードを悪用して、より多くのペイロードをダウンロードして実行しようとする場合があります。 ただし、一部の正当な業務行アプリケーションでは、良性の目的で子プロセスを生成する場合があります。コマンド プロンプトを生成したり、PowerShell を使用してレジストリ設定を構成したりします。
+悪意のある子プロセスを作成する方法は、一般的なマルウェア戦略です。 ベクターとして悪用Officeマルウェアは、VBA マクロを実行し、コードを悪用して、より多くのペイロードをダウンロードして実行しようとする場合が多い。 ただし、一部の正当な業務行アプリケーションでは、良性の目的で子プロセスを生成する場合があります。コマンド プロンプトを生成したり、PowerShell を使用してレジストリ設定を構成したりします。
 
 Intune 名: `Office apps launching child processes`
 
@@ -265,7 +265,7 @@ LSASS は、コンピューターにサインインするユーザーをWindows�
 > 一部のアプリでは、実行中のすべてのプロセスを列挙し、網羅的なアクセス許可を使用して開きます。 このルールは、アプリのプロセスのオープン アクションを拒否し、詳細をセキュリティ イベント ログに記録します。 このルールでは、多くのノイズが発生する可能性があります。 LSASS を列挙するだけで、機能に実際の影響がないアプリがある場合は、除外リストに追加する必要はありません。 それ自体では、このイベント ログ エントリは必ずしも悪意のある脅威を示すとは限りません。
   
 > [!IMPORTANT]
-> 攻撃表面縮小 (ASR) ルール "Windows ローカル セキュリティ機関サブシステム (lsass.exe) からの資格情報の盗用をブロックする" の既定の状態が [構成されていない] から [構成済み]  に変更され、既定のモードが [ブロック] に設定されます。 他のすべての ASR ルールは既定の状態のままです。未 **構成です**。 エンドユーザーの通知を減らすために、ルールに追加のフィルター ロジックが既に組み込まれています。 ユーザーは、既定のモードを **上書きする監査** モード、 **警告** モード、または **無効** モードにルールを構成できます。 このルールの機能は、ルールが既定モードで構成されているかどうか、または手動でブロック モードを有効にした場合と同じです。  
+> 攻撃表面縮小 (ASR) ルール "Windows ローカル セキュリティ機関サブシステム (lsass.exe) からの資格情報の盗用をブロックする" の既定の状態は [構成されていません] から [構成済み] に変更され、既定のモードは [ブロック] に設定されます。 他のすべての ASR ルールは既定の状態のままです。未 **構成です**。 エンドユーザーの通知を減らすために、ルールに追加のフィルター ロジックが既に組み込まれています。 ユーザーは、既定のモードを **上書きする監査** モード、 **警告** モード、または **無効** モードにルールを構成できます。 このルールの機能は、ルールが既定モードで構成されているかどうか、または手動でブロック モードを有効にした場合と同じです。  
 
 Intune 名: `Flag credential stealing from the Windows local security authority subsystem`
 
@@ -282,10 +282,10 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>メール クライアントと Web メールから実行可能なコンテンツをブロックする
 
-このルールは、Microsoft Outlook アプリケーション、または Outlook.com や他の一般的な Web メール プロバイダー内で開いた電子メールから、次の種類のファイルの起動をブロックします。
+このルールは、Microsoft Outlook アプリケーションまたは Outlook.com および他の一般的な Web メール プロバイダー内で開いた電子メールから起動する次のファイルの種類をブロックします。
 
-- 実行可能ファイル (.exe、.dll.scr など)
-- スクリプト ファイル (PowerShell .ps、Visual Basic .vbs、JavaScript .js ファイルなど)
+- 実行可能ファイル (.exe、.dll、.scr など)
+- スクリプト ファイル (PowerShell .ps、Visual Basic .vbs、JavaScript ファイル.jsなど)
 
 Intune 名: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
@@ -304,12 +304,12 @@ GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 > [メール **クライアントと Web メールからの** 実行可能なコンテンツをブロックする] というルールには、使用するアプリケーションに応じて、次の別の説明があります。
 >
 > - Intune (構成プロファイル): 電子メール (Web メール/メール クライアント) から削除された実行可能コンテンツ (exe、dll、ps、js、vbs など) の実行 (例外なし)。
-> - エンドポイント マネージャー: メールおよび Web メール クライアントからの実行可能コンテンツのダウンロードをブロックします。
+> - エンドポイント マネージャー: 電子メールおよび Web メール クライアントからの実行可能コンテンツのダウンロードをブロックします。
 > - グループ ポリシー: 電子メール クライアントと Web メールから実行可能なコンテンツをブロックします。
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする
 
-このルールは、実行ファイル (.exe、.dll .scr など) の起動をブロックします。 したがって、信頼されていない実行可能ファイルまたは不明な実行可能ファイルを起動すると、ファイルが悪意のあるものか最初は明らかではなかっていない可能性があります。
+このルールは、実行可能ファイル (.exe、.dll、.scr など) の起動をブロックします。 したがって、信頼されていない実行可能ファイルまたは不明な実行可能ファイルを起動すると、ファイルが悪意のあるものか最初は明らかではなかっていない可能性があります。
 
 > [!IMPORTANT]
 > このルールを [使用するには、クラウドによる保護](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) を有効にする必要があります。
@@ -369,9 +369,9 @@ GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
 依存関係: MDAV、AMSI
 
-### <a name="block-office-applications-from-creating-executable-content"></a>実行可能Office作成するアプリケーションのブロック
+### <a name="block-office-applications-from-creating-executable-content"></a>実行可能Office作成するアプリケーションをブロックする
 
-このルール Officeは、悪意のあるコードがディスクに書き込まれるのをブロックすることで、Word、Excel、PowerPoint などのアプリが悪意のある実行可能コンテンツを作成するのを防ぐためです。
+このルールはOfficeコードがディスクに書き込まれるのをブロックすることで、Word、Excel、PowerPoint などのアプリが悪意のある実行可能なコンテンツを作成するのを防止します。
 
 マルウェアは、Officeとして悪用され、悪意のあるOfficeをディスクに保存しようとする可能性があります。 これらの悪意のあるコンポーネントは、コンピューターの再起動後も存続し、システム上で保持されます。 したがって、このルールは一般的な永続化手法に対して防御します。
 
@@ -390,9 +390,9 @@ GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>アプリケーションOffice他のプロセスへのコードの挿入をブロックする
 
-このルールは、アプリから他のプロセスへのコードOffice試行をブロックします。
+このルールは、アプリから他のプロセスへのOffice挿入の試行をブロックします。
 
-攻撃者は、Officeを使用して、コード挿入を通じて悪意のあるコードを他のプロセスに移行しようとする可能性があります。そのため、コードはクリーン なプロセスとして悪用される可能性があります。
+攻撃者は、悪意のあるOfficeをコード挿入によって他のプロセスに移行するために、アプリを使用しようとする可能性があります。そのため、コードはクリーン なプロセスとして悪用される可能性があります。
 
 コードインジェクションを使用する正当なビジネス上の目的はありません。
 
@@ -411,11 +411,11 @@ GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 依存関係: MDAV
 
-### <a name="block-office-communication-application-from-creating-child-processes"></a>通信Officeプロセスの作成をブロックする
+### <a name="block-office-communication-application-from-creating-child-processes"></a>通信Office子プロセスの作成をブロックする
 
 このルールは、Outlookプロセスを作成する一方で、正当なプロセス機能Outlookします。
 
-このルールは、ソーシャル エンジニアリング攻撃から保護し、コードを悪用して、セキュリティ上の脆弱性を悪用Outlook。 また、ユーザーの資格情報[Outlook](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)侵害された場合に攻撃者が使用する可能性のある、特定のルールやフォームの悪用から保護します。
+このルールは、ソーシャル エンジニアリング攻撃から保護し、コードを悪用して、セキュリティ上の脆弱性を悪用Outlook。 また、ユーザーのOutlook[が](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)侵害された場合に攻撃者が使用する可能性のある、特定のルールやフォームの悪用から保護します。
 
 > [!NOTE]
 > このルールは、DLP ポリシー のヒントとツール ヒントをブロックOutlook。 このルールは、Outlookおよび Outlook.com にのみ適用されます。
@@ -477,7 +477,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする
 
-このルールを使用すると、管理者は、SD カードを含む USB リムーバブル ドライブから署名されていない実行可能ファイルまたは信頼されていない実行可能ファイルを実行できません。 ブロックされたファイルの種類には、実行可能ファイル (.exe、.dll.scr など) が含まれます。
+このルールを使用すると、管理者は、SD カードを含む USB リムーバブル ドライブから署名されていない実行可能ファイルまたは信頼されていない実行可能ファイルを実行できません。 ブロックされているファイルの種類には、実行可能ファイル (.exe、.dll.scr など) が含まれます。
 
 Intune 名: `Untrusted and unsigned processes that run from USB`
 
@@ -501,7 +501,7 @@ Office VBA では、Win32 API 呼び出しが有効です。 マルウェアは�
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows サーバー バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 

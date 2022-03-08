@@ -11,16 +11,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
+ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 1e235329fa57a703ab678049dd0da2d4f135de99
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: d250fefbdcc2c268563b6321ee7d91eca4881063
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767360"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328695"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android のエンドポイント向け Microsoft Defender の新機能
 
@@ -47,7 +46,7 @@ Microsoft Defender for Endpoint は、プレイ ストア **で Microsoft Defend
 **これは組織にどのような影響を与えるのか。** これらの変更は、Android 11 以降を実行しているデバイスで Microsoft Defender for Endpoint を使用し、Defender for Endpoint を更新してビルド 1.0.3501.0301 以降をリリースする場合に有効になります。
 
 > [!NOTE]
-> 新しい記憶域のアクセス許可は、管理者が [自動承認] を [自動承認] に構成Microsoft エンドポイント マネージャー。 ユーザーは、このアクセス許可へのアクセスを提供するためにアクションを実行する必要があります。
+> 新しい記憶域のアクセス許可は、管理者が [自動承認] から [自動承認] に構成Microsoft エンドポイント マネージャー。 ユーザーは、このアクセス許可へのアクセスを提供するためにアクションを実行する必要があります。
 
 - **ユーザー エクスペリエンス:** ユーザーは、アプリのセキュリティに対するアクセス許可が見つからないことを示す通知を受け取ります。 ユーザーがこのアクセス許可を拒否すると、デバイスで 'App security' 機能が無効になります。 ユーザーがアクセス許可を受け入れるか拒否しない場合、承認されるまで、デバイスのロックを解除するかアプリを開く際に、引き続きプロンプトが表示されます。
 

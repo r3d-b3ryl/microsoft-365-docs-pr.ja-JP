@@ -2,8 +2,8 @@
 title: Microsoft コンプライアンス マネージャーでの評価テンプレートの操作
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定されたファイルを使用してテンプレートを作成Excelします。
-ms.openlocfilehash: 99e243e86c66babd9a983ae6df891f4094cdbb83
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 6885008e58c1e1289723a6d8c1ee4e04d16740b0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701613"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317725"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーの評価テンプレートの詳細
 
-**この記事では、次の情報を参照してください。** テンプレート **の動作と評価** テンプレート **ページ** からテンプレートを管理する方法について説明します。 新しいテンプレートの作成 **、** 既存のテンプレートの拡張と変更、Excel を使用したテンプレート **データの** 書式設定、およびテンプレート レポートのエクスポートに関する手順を取得 **します**。
+**この記事では、次の情報を参照してください。** テンプレート **の動作と評価** テンプレート **ページ** からテンプレートを管理する方法について説明します。 新しいテンプレートの作成 **、** 既存のテンプレートの拡張と変更、テンプレート データの書式設定、テンプレート レポートのエクスポートExcel説明 **します**。
 
 > [!IMPORTANT]
 > 組織で使用できる評価テンプレートは、ライセンス契約によって異なります。 [詳細を確認します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
@@ -36,15 +36,19 @@ ms.locfileid: "60701613"
 
 テンプレートは、コンプライアンス マネージャーで評価を作成するためのコントロールのフレームワークです。 当社の包括的なテンプレートセットは、データの収集と使用を管理する国内、地域、および業界固有の要件を組織が遵守するのに役立ちます。
 
-テンプレートは、EU GDPR テンプレートや ISO/IEC 27701:2019 テンプレートなど、基になる認定または規制と同じ名前で参照されます。 コンプライアンス管理は、さまざまな種類の製品を評価するために使用できます。各テンプレートには、Microsoft 365 などの定義済み製品に適用されるバージョンと、選択した製品に合わせてカスタマイズできるユニバーサル バージョンの 2 つのバージョンがあります。
+## <a name="template-versions-microsoft-and-universal"></a>テンプレートのバージョン: Microsoft とユニバーサル
 
-米国政府機関 (Community) (GCC) 中程度、GCC高、および国防総省 (DoD) のお客様は現在、ユニバーサル テンプレートを使用できないことに注意してください。
+テンプレートは、EU GDPR テンプレートや ISO/IEC 27701:2019 テンプレートなど、基になる認定または規制と同じ名前で参照されます。
+
+コンプライアンス管理は、さまざまな種類の製品を評価するために使用できます。 ベースライン以外のすべてのテンプレートには、Microsoft 365 などの定義済み製品に適用される少なくとも 1 つのバージョンと、他の製品に合わせて調整できるユニバーサル バージョンがあります。 ユニバーサル テンプレートからの評価は一般化されますが、複数の製品間で組織のコンプライアンスを簡単に追跡できるので、汎用性が向上します。
+
+米国政府機関 (Community) (GCC) 中程度、GCC 高、および国防総省 (DoD) のお客様は現在、ユニバーサル テンプレートを使用できません。
 
 ## <a name="template-availability-and-licensing"></a>テンプレートの可用性とライセンス
 
 コンプライアンス マネージャーには、組み込みテンプレートとプレミアム テンプレートの 2 つのカテゴリがあります。
 
-1. **含まれるテンプレートは** 、コンプライアンス マネージャー のライセンスによって付与され、主要な規制と要件をカバーします。 ライセンス契約で使用できるテンプレートの詳細については、「ライセンスの詳細」 [を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
+1. **含まれるテンプレートは** 、コンプライアンス マネージャー のライセンスによって付与され、主要な規制と要件をカバーします。 ライセンス契約で使用できるテンプレートの詳細については、「ライセンスの詳細 [」を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
 2. **プレミアムのニーズ** とシナリオをカバーするテンプレートは、テンプレート ライセンスを購入することで入手できます。
 
 評価の作成を開始すると、コンプライアンス マネージャーはアクティブなテンプレートの数を追跡し、使用状況を監視できます。 詳細については、「アクティブなテンプレート [と非アクティブなテンプレート」を参照してください](compliance-manager-templates.md#active-and-inactive-templates)。
@@ -55,20 +59,20 @@ ms.locfileid: "60701613"
 
 テンプレート ライセンスは、コンプライアンス マネージャーのライセンス契約に応じて、1 つ以上の方法で取得できます。 購入が完了すると、テンプレートは 48 時間以内にテナントで利用できます。
 
-**商用およびGCC中程度**
+**商用およびGCCモデレート**
 
-商用アカウントGCC管理センターでテンプレート ライセンスを購入できます[(サブスクリプション](/microsoft-365/commerce/)、ライセンス、課金の詳細)。 購入するライセンスの数と支払いプランを選択します。
+商用アカウントGCC管理センターでテンプレート ライセンスを購入できます (サブスクリプション、ライセンス、請求の詳細[については、詳細を参照してください](/microsoft-365/commerce/))。 購入するライセンスの数と支払いプランを選択します。
 
 購入リンク:
 
 - [商用](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
-- [GCCモデレート](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+- [GCC モデレート](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
 
 また、プログラムまたはボリューム ライセンスへの参加を通クラウド ソリューション プロバイダー[ライセンス](https://partner.microsoft.com/membership/cloud-solution-provider)[を取得できます](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
 
-**GCC高アカウントと DOD アカウント**
+**GCCアカウントと DOD アカウント**
 
-GCC高いアカウントと DOD アカウントは、ボリューム ライセンスを使用してテンプレート ライセンス[を購入する必要があります](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
+GCC DOD アカウントは、ボリューム ライセンスを使用してテンプレート ライセンスを[購入する必要があります](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
 
 ### <a name="try-out-premium-templates"></a>プレミアム テンプレートを試す
 
@@ -78,7 +82,7 @@ GCC高いアカウントと DOD アカウントは、ボリューム ライセ�
 
 組織がユーザーライセンスまたは DOD ライセンスGCC場合は、組織の適切な試用版リンクを選択します。
 
-- [GCCモデレート](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
+- [GCC モデレート](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
 - [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
 - [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
 
@@ -123,11 +127,11 @@ GCC高いアカウントと DOD アカウントは、ボリューム ライセ�
 
 ## <a name="format-assessment-template-data-in-excel"></a>評価テンプレート のデータの書式を設定Excel
 
-コンプライアンス マネージャーで評価テンプレートを作成、変更、または拡張する場合は、特定の形式とスキーマを使用Excelスプレッドシートを使用します。 ファイルが正しくインポートされるようにするには、これらの仕様に従う必要があります。 詳細については、「評価テンプレート データ[の書式設定」を参照Excel。](compliance-manager-templates-format-excel.md)
+コンプライアンス マネージャーで評価テンプレートを作成、変更、または拡張する場合は、特定のExcelスキーマを使用するスプレッドシートを使用します。 ファイルが正しくインポートされるようにするには、これらの仕様に従う必要があります。 詳細については、「評価テンプレート データ[の書式設定」を参照Excel](compliance-manager-templates-format-excel.md)。
 
 ## <a name="export-a-template"></a>テンプレートのエクスポート
 
-テンプレートのすべてのデータをExcelファイルをエクスポートできます。 テンプレートを変更するには、変更プロセスで編集およびアップロードする Excelファイルになりますので、テンプレートをエクスポートする[必要があります](compliance-manager-templates-modify.md)。 新しいカスタム テンプレートの作成中にデータを使用する場合は、参照用にテンプレートをエクスポートすることもできます。
+テンプレートのすべてのデータをExcelファイルをエクスポートできます。 テンプレートを変更するには、テンプレートをエクスポートする必要があります。これは、変更プロセスで編集およびアップロードExcelファイル[になります。](compliance-manager-templates-modify.md) 新しいカスタム テンプレートの作成中にデータを使用する場合は、参照用にテンプレートをエクスポートすることもできます。
 
 テンプレートをエクスポートするには、テンプレートの詳細ページに移動し、[テンプレートにエクスポート] ボタン **Excel** します。
 

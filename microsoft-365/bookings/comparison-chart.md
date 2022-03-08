@@ -1,5 +1,5 @@
 ---
-title: '比較グラフ: Bookings Web app vs. Bookings Teamsアプリ'
+title: '比較グラフ: Bookings Web app vs. Bookings Teams アプリ'
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,20 +9,20 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: Bookings Web アプリと Bookings Web アプリの機能の違いを示す比較Teamsです。
-ms.openlocfilehash: 594674584c189dc03d60ec49c5b3a0fbb4ce34eb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cd253c41eafe3a478e6a2f12bf94977f81688347
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189803"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319743"
 ---
-# <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>比較グラフ: Bookings Web app vs. Bookings Teamsアプリ
+# <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>比較グラフ: Bookings Web app vs. Bookings Teams アプリ
 
-このページの Bookings アプリTeamsスケジューラがメイン タスクを処理し、一部の設定を変更できます。 ただし、Bookings Web には、アプリでまだ利用できない高度な機能とTeamsがあります。
+Bookings アプリを使用すると、Teamsタスクを処理し、一部の設定を変更できます。 ただし、Bookings Web には、アプリでまだ利用できない高度な機能とTeamsがあります。
 
-Teams機能は随時追加され、引き続きこの一覧を更新します。 詳細については **、「FAQ」** の「元の Bookings Web アプリのすべての機能は、Microsoft Teamsで使用できますか [」を参照](bookings-faq.yml)してください。
+Teams機能は随時追加され、引き続きこの一覧を更新します。 詳細については、「FAQ」の「元の **Bookings Web** アプリのすべての機能は、Microsoft Teamsで使用できますか [」を参照](bookings-faq.yml)してください。
 
-| 機能 | Bookings Web アプリ | 予約Teamsアプリ |
+| 機能 | Bookings Web アプリ | Bookings Teams アプリ |
 |:---|:---|:---|
 | 新しい予約カレンダーを作成する | はい | はい |
 | 予約カレンダーのスタッフの追加と削除 | はい | はい |
@@ -37,3 +37,4 @@ Teams機能は随時追加され、引き続きこの一覧を更新します。
 | セルフサービス のスケジュール ページを発行する | はい | いいえ |
 | 顧客の連絡先を管理する | はい | いいえ |
 | スタッフの時間を設定する | はい | いいえ |
+| スケジュールされたキュー ビュー | いいえ | はい |

@@ -2,8 +2,8 @@
 title: 組織内の誰か他のユーザーがサインアップに使用している場合、そのドメインは使用中の可能性がある
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
 description: 'IT 部門を含めずに、仕事や学校のメールを使用して Microsoft オンライン サービスにサインアップする方法について説明します。 '
-ms.openlocfilehash: eaae0c10f818e6fdd1cd702b84b2826bf2f5b7ea
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: adcbad88e098a06d5220e10a0c6d365b47bd2303
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192681"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319813"
 ---
 # <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>他のユーザーがサインアップした場合、ドメインが使用されている可能性があります
 

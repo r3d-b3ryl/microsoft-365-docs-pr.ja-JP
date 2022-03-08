@@ -11,17 +11,15 @@ author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12475d72341eee97915990c61339be7d297349f9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 677737f530e35ed52a2a1f3fe7a8d6f18c26e7b6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168416"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326568"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上の Microsoft Defender for Endpoint のクラウド接続の問題のトラブルシューティング
 
@@ -61,7 +59,7 @@ Testing connection with https://uk-v20.events.data.microsoft.com/ping ... [OK]
 Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 ```
 
-接続テストに失敗した場合は、デバイスにインターネット アクセス権が設定[](microsoft-defender-endpoint-mac.md#network-connections)されているのか、製品で必要なエンドポイントがプロキシまたはファイアウォールによってブロックされているのか確認します。
+接続テストに失敗した場合は、デバイスにインターネット アクセス権が設定されている[](microsoft-defender-endpoint-mac.md#network-connections)のか、製品で必要なエンドポイントがプロキシまたはファイアウォールによってブロックされているのか確認します。
 
 カール エラー 35 または 60 のエラーは、証明書のピン留め拒否を示し、SSL または HTTPS 検査の潜在的な問題を示します。 SSL 検査の構成については、以下の手順を参照してください。
 
@@ -72,7 +70,7 @@ Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 
 > [!WARNING]
 > 認証されたプロキシはサポートされていません。 PAC、WPAD、または静的プロキシだけが使用されている必要があります。 SSL 検査および代行受信プロキシも、セキュリティ上の理由からサポートされていません。 SSL インスペクションとプロキシ サーバーの例外を構成して、macOS 上の Microsoft Defender for Endpoint のデータを、傍受なしで関連する URL に直接渡します。 インターセプト証明書をグローバル ストアに追加すると、傍受は許可されない。
-接続がブロックされていないとテストするには:Mac または Safari の接続Microsoft Edgeなどのブラウザーで開 https://x.cp.wd.microsoft.com/api/report きます https://cdn.x.cp.wd.microsoft.com/ping 。
+接続がブロックされていないとテストするには:Mac または Safari の接続Microsoft Edgeなどのブラウザーで開きますhttps://x.cp.wd.microsoft.com/api/reporthttps://cdn.x.cp.wd.microsoft.com/ping。
 
 必要に応じて、ターミナルで次のコマンドを実行します。
 

@@ -2,8 +2,8 @@
 title: ドメインまたは DNS レコードを追加後に問題を特定して解決する
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,21 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS レコードが正しく設定されていることを確認して、カスタム ドメインのセットアップ中に発生した問題を追跡する方法について説明します。
-ms.openlocfilehash: 932eef134890784c76e6acfc85283159cdd9c7b9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7fa5a18ff0e4b7f0db8749f5659fefdd89cb3fcd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164738"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316885"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>ドメインまたは DNS レコードを追加後に問題を特定して解決する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
-ドメインをセットアップしてユーザーと一緒にMicrosoft 365は難しい場合があります。 DNS システムは、操作するには細かい設定があり、ドメインに対する DNS のセットアップ内容は、メールなどの重要な業務活動にも影響を与えます。
+ドメインをセットアップしてユーザーと一緒にMicrosoft 365は困難な場合があります。 DNS システムは、操作するには細かい設定があり、ドメインに対する DNS のセットアップ内容は、メールなどの重要な業務活動にも影響を与えます。
 
 > [!NOTE]
-> ドメインの状態を確認することで、ドメインに関する問題を確認できます。 [ドメインの **セットアップ**  >  **] に移動** し、[状態] 列に通知 **を表示** します。 問題が発生した場合は、3 つのドット (その他のアクション) を選択し、[正常性の確認] **を選択します**。 開くウィンドウは、ドメインで発生する問題について説明します。
+> ドメインの状態を確認することで、ドメインに関する問題を確認できます。 [ **SetupDomains** > **] に移動し** 、[状態] 列に通知 **を表示** します。 問題が発生した場合は、3 つのドット (その他のアクション) を選択し、[正常性の確認] **を選択します**。 開くウィンドウは、ドメインで発生する問題について説明します。
   
 ## <a name="whats-going-on"></a>何が起こっているのでしょうか?
 
@@ -47,7 +47,7 @@ ms.locfileid: "60164738"
     
 - [Outlookが動作していませんか?](#outlook-isnt-working)
     
-- [すべてのユーザーのメールがメールに切り替Microsoft 365メールのみを切り替えたかったのですか?](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
+- [すべてのユーザーの電子メールが [Microsoft 365] に切り替え、メールの切り替えのみを必要としましたか?](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
 
 - [非営利団体または学校のアカウントの状態を確認できませんか?](#cant-confirm-non-profit-or-school-account-status)
 
@@ -61,7 +61,7 @@ ms.locfileid: "60164738"
   
 1. **検証レコードの値が正しくない。** DNS ホストで正確な値をコピーし、TXT 検証レコードに貼り付けたことを二重に確認してください。共通の原因の 1 つに、レコードの「MS=」部分を含めていないことが挙げられています。この部分も含める必要があります。 
     
-2. **レコードが保存されていない。** DNS ホストによっては、インターネット全体で更新されるようにゾーン ファイル (DNS レコードが保存されているファイル) を保存するという作業も必要になります。 レコードを表示および確認するために、変更Microsoft 365保存済みである必要があります。 
+2. **レコードが保存されていない。** DNS ホストによっては、インターネット全体で更新されるようにゾーン ファイル (DNS レコードが保存されているファイル) を保存するという作業も必要になります。 レコードを確認および確認するために、変更Microsoft 365保存済みである必要があります。 
     
 3. **レコードがインターネット上で更新されません。** 通常、ユーザーへの新しいレコードの表示には数分しかかかりませんが、場合によっては、数時間かかることもあります。 
     
@@ -69,32 +69,32 @@ ms.locfileid: "60164738"
 
 ドメインに MX レコードとその他の DNS レコードを正しく設定しているが、メールが機能しない場合、弊社が [Outlook 問題の解消](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)を支援します。
   
-## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>すべてのユーザーのメールがメールに切り替Microsoft 365メールのみを切り替えたかったのですか?
+## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>すべてのユーザーの電子メールが [Microsoft 365] に切り替え、メールの切り替えのみを必要としましたか?
 <a name="BKMK_EmailSwitched"> </a>
 
 ドメインを Microsoft 365 に追加すると、通常、ドメインの MX レコードが (ユーザーまたは Microsoft 365 によって) Microsoft 365 をポイントして更新され、そのドメインに送信されたメールはすべて Microsoft 365 に送信されます。 MX レコードを変更する前に、ドメインMicrosoft 365メールを持つすべてのユーザーにメールボックスを作成してください。
   
-ドメイン上のすべてのユーザーのメールをユーザーに移動しない場合は、Microsoft 365。 代わりに、いくつかの電子メール[アドレスMicrosoft 365をパイロットする手順を実行できます](../setup/domains-faq.yml)。
+ドメイン上のすべてのユーザーのメールをユーザーに移動しない場合Microsoft 365。 代わりに、少数の電子メール [アドレスMicrosoft 365をパイロットする手順を実行できます](../setup/domains-faq.yml)。
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>非営利団体または学校のアカウントの状態を確認できませんか?
 <a name="BKMK_validateAcct"> </a>
 
 組織のドメインを確認し、サービスを設定しない場合は、いくつかのシナリオがあります。 たとえば、組織が学校Microsoft 365資格を持っていることを証明します。
   
-「Microsoft 365 ドメインを確認して所有権、非営利団体、または教育の状態を証明する、または[Yammer](../setup/domains-faq.yml)をアクティブ化する」のガイダンスを参照して、必要なすべての手順を完了してください。 状況ごとに少し異なります。 
+「Microsoft 365 ドメインの確認」のガイダンスを参照して、所有権、非営利団体、または教育の状態を証明するか、[Yammer](../setup/domains-faq.yml) をアクティブ化して、必要なすべての手順を完了してください。 状況ごとに少し異なります。 
   
 ## <a name="services-not-working-with-your-domain"></a>自分のドメインでサービスが機能しませんか?
 
 Microsoft では、ドメインの DNS セットアップに関わる問題を解消するためのサポートを用意しています。 [ドメインのトラブルシューティング] Microsoft 365、修正が必要なレコードと、レコードを設定する必要があるレコードが正確に表示されます。 
 
 > [!TIP]
-> DNS が正しく設定されましたが、メールはデスクトップ上のOutlook機能しませんか? ビジネス向[けに適切な](/exchange/mail-flow-best-practices/mail-flow-best-practices)設定がMicrosoft 365メール フローのシナリオを確認してください。 または、電子メールに関するトラブルシューティングのヘルプの詳細については、以下を参照してください。[問題Outlook修正します](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)。 
+> DNS が正しく設定されましたが、メールはデスクトップ上のOutlook機能しませんか? ビジネス用[に適切に](/exchange/mail-flow-best-practices/mail-flow-best-practices)設定されていることを確認するには、Microsoft 365で使用できるさまざまなメール フロー シナリオを確認してください。 または、電子メールに関するトラブルシューティングに関する詳細なヘルプを表示します。[問題Outlook修正します](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)。 
   
 ## <a name="accessing-your-website-isnt-working"></a>自分の Web サイトにアクセスできませんか?
 
 DNS の問題を解決しても、引き続き問題が発生する場合は、次のいずれかを試してください。
   
-- ユーザーが Web サイトにアクセスできない *場合:contoso.com* の問題 [を追跡する](../setup/add-domain.md)
+- ユーザーが Web サイトにアクセスできない *contoso.com:* [Web サイトの問題を追跡する](../setup/add-domain.md)
     
 - Web サイトを指す A レコードまたは CNAME レコードを更新[Microsoft 365](../setup/add-domain.md)
 

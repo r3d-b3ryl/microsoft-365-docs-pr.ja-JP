@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 86e2645891afef2523fb8dc80ec0d9a59b094fc4
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: a5ff8a9a662eb442b7a18726463f14e914d4a133
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444536"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317543"
 ---
 # <a name="adjust-settings-after-enrollment"></a>登録後に設定を調整する
 
@@ -25,16 +25,16 @@ Microsoft Managed Desktop への登録が完了したら、一部の管理設定
 3. すべての設定が正しいか再確認する場合は、準備状況評価ツールを再実行[](https://aka.ms/mmdart)して、Microsoft Managed Desktop との競合を確認できます。
 
 > [!NOTE]
-> 操作が数か月後に続いているので、Microsoft Managed Desktop に影響を与える Microsoft Intune、Azure Active Directory、または Microsoft 365 のポリシーに登録した後に変更を加えた場合、Microsoft Managed Desktop が正常に動作を停止する可能性があります。 サービスの問題を回避するには、「準備状況評価ツールで見つかった[](../get-ready/readiness-assessment-fix.md)問題を修正する」で説明されている特定の設定を確認してから、そこに表示されているポリシーを変更します。 準備状況評価ツールをいつでも再実行することもできます。
+> 数か月後に操作が続く場合、Microsoft Managed Desktop に影響を与える Microsoft Intune、Azure Active Directory、または Microsoft 365 のポリシーに登録した後に変更を加えた場合、Microsoft Managed Desktop が正常に動作しなくる可能性があります。 サービスの問題を回避するには、「準備状況評価ツールで見つかった[](../get-ready/readiness-assessment-fix.md)問題を修正する」で説明されている特定の設定を確認してから、そこに表示されているポリシーを変更します。 準備状況評価ツールをいつでも再実行することもできます。
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 
-| 設定 | 説明 |
+| Setting | 説明 |
 | ------ | ------ |
-| Autopilot 展開プロファイル | 自動パイロット ポリシーを使用する場合は、各ポリシーを更新して、モダン ワークプレース デバイス **-All** Azure ADします。 <br><br> **自動パイロット ポリシーを更新するには、次の方法を実行します。** <br><br> [**割り当** て] の [除外] グループで、Microsoft Managed Desktop の登録中に作成Azure ADモダン ワークプレース デバイス **-** All Azure AD グループを選択します。 <br><br> Microsoft Managed Desktop では、Autopilot プロファイルも作成され、名前に "モダン ワークプレース" (モダン ワークプレース **オートパイロット プロファイル) が含されます**。 独自の Autopilot プロファイルを更新する場合は、Microsoft Managed  Desktop によって作成されたモダン Workplace **Autopilot プロファイル** からモダン ワークプレース デバイス **-All** Azure AD グループを除外しなかしてください。 |
-| 条件付きアクセス ポリシー | Microsoft Managed Desktop の登録後にエンドポイントの Azure AD、Microsoft Intune、または Microsoft 365 Defender に関連する新しい条件付きアクセス ポリシーを作成する場合は、モダン ワークプレース サービス アカウント Azure AD グループを除外します。 詳細については、「条件付きアクセス [: ユーザーとグループ」を参照してください](/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。 Microsoft Managed Desktop は、これらのアカウントへのアクセスを制限するために、個別の条件付きアクセス ポリシーを維持します。 <br><br> **Microsoft Managed Desktop 条件付きアクセス ポリシー (Modern Workplace – Secure Workstation) を確認するには、次の手順を実行します。** <br><br> [エンドポイント セキュリティ] Microsoft エンドポイント マネージャーに移動し、[**エンドポイント セキュリティ] の [条件付きアクセス****] に移動します**。 名前に "モダン ワークプレース" Azure ADを持つ Microsoft Managed Desktop によって作成された条件付きアクセス ポリシーを変更しない。 |
-| 多要素認証 | Microsoft **Managed** Desktop 登録後にエンドポイントの Azure AD、Intune、または Microsoft 365 Defender に関連する条件付きアクセス ポリシーで新しい多要素認証要件を作成する場合は、モダン Workplace サービス アカウント Azure AD グループを除外します。 詳細については、「条件付きアクセス [: ユーザーとグループ」を参照してください](/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。 Microsoft Managed Desktop は、このグループのメンバーへのアクセスを制限するために、個別の条件付きアクセス ポリシーを維持します。 <br><br> **Microsoft Managed Desktop 条件付きアクセス ポリシー (モダン ワークプレース -):** <br><br> [エンドポイント セキュリティ] Microsoft エンドポイント マネージャーに移動し、[**エンドポイント セキュリティ] の [条件付きアクセス****] に移動します**。
-| Windows 10 更新リング | 作成したWindows 10リング ポリシーを更新する場合は、モダン **Workplace デバイス -All** Azure ADグループを各ポリシーから除外します。 詳細については、「更新リングの作成 [と割り当て」を参照してください](/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings)。 <br><br> Microsoft Managed Desktop では、一部の更新リング ポリシーも作成され、そのすべてが名前に "モダン ワークプレース" が含されます。 次に例を示します。 <ul><li>モダン ワークプレース更新ポリシー [Broad]</li><li>モダン ワークプレース更新ポリシー [Fast]</li><li>モダン ワークプレース更新ポリシー [First]</li><li>モダン ワークプレース更新ポリシー [Test]</li></ul> <br>独自のポリシーを更新する場合は、Microsoft Managed  Desktop が作成したグループからモダン ワークプレース デバイス **-all** Azure ADグループを除外しなかしてください。 |
+| Autopilot 展開プロファイル | 自動パイロット ポリシーを使用する場合は、各ポリシーを更新してモダン **Workplace デバイス -All** Azure ADします。 <br><br> **自動パイロット ポリシーを更新するには、次の方法を実行します。** <br><br> [**割り当** て] の [除外] グループで、Microsoft Managed Desktop の登録中に作成Azure ADモダン ワークプレース デバイス **-** All Azure AD グループを選択します。 <br><br> Microsoft Managed Desktop では、Autopilot プロファイルも作成され、名前に "モダン ワークプレース" (モダン ワークプレース **オートパイロット プロファイル) が含されます**。 独自の Autopilot プロファイルを更新する場合は、Microsoft Managed  Desktop によって作成されたモダン Workplace **Autopilot プロファイル** からモダン ワークプレース デバイス **-All** Azure AD グループを除外しなかしてください。 |
+| 条件付きアクセス ポリシー | Microsoft **Managed** Desktop の登録後にエンドポイントの Azure AD、Microsoft Intune、または Microsoft 365 Defender に関連する新しい条件付きアクセス ポリシーを作成する場合は、モダン Workplace サービス アカウント Azure AD グループを除外します。 詳細については、「条件付きアクセス [: ユーザーとグループ」を参照してください](/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。 Microsoft Managed Desktop は、これらのアカウントへのアクセスを制限するために、個別の条件付きアクセス ポリシーを維持します。 <br><br> **Microsoft Managed Desktop 条件付きアクセス ポリシー (Modern Workplace – Secure Workstation) を確認するには、次の手順を実行します。** <br><br> [エンドポイント セキュリティ] Microsoft エンドポイント マネージャーに移動し、[**エンドポイント セキュリティ] の [条件付きアクセス****] に移動します**。 名前に "モダン ワークプレース" Azure ADを持つ Microsoft Managed Desktop によって作成された条件付きアクセス ポリシーを変更しない。 |
+| 多要素認証 | Microsoft Managed Desktop 登録後にエンドポイントの Azure AD、Intune、または Microsoft 365 Defender に関連する条件付きアクセス ポリシーで新しい多要素認証要件を作成する場合は、モダン Workplace サービス **アカウント Azure AD グループ** を除外します。 詳細については、「条件付きアクセス [: ユーザーとグループ」を参照してください](/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。 Microsoft Managed Desktop は、このグループのメンバーへのアクセスを制限するために、個別の条件付きアクセス ポリシーを維持します。 <br><br> **Microsoft Managed Desktop 条件付きアクセス ポリシー (モダン ワークプレース -):** <br><br> [エンドポイント セキュリティ] Microsoft エンドポイント マネージャーに移動し、[**エンドポイント セキュリティ] の [条件付きアクセス****] に移動します**。
+| Windows 10 更新リング | 作成したWindows 10リング ポリシーを更新する場合は、モダン **Workplace デバイス -All** Azure ADグループを各ポリシーから除外します。 詳細については、「更新リングの作成 [と割り当て」を参照してください](/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings)。 <br><br> Microsoft Managed Desktop では、一部の更新リング ポリシーも作成され、そのすべてが名前に "モダン ワークプレース" が含されます。 例: <ul><li>モダン ワークプレース更新ポリシー [Broad]</li><li>モダン ワークプレース更新ポリシー [Fast]</li><li>モダン ワークプレース更新ポリシー [First]</li><li>モダン ワークプレース更新ポリシー [Test]</li></ul> <br>独自のポリシーを更新する場合は、Microsoft Managed  Desktop が作成したグループからモダン ワークプレース デバイス **-all** Azure ADグループを除外しなかしてください。 |
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory の設定
 
@@ -61,7 +61,7 @@ Microsoft Managed Desktop への登録が完了したら、一部の管理設定
 1. [Intune ポータル サイト](company-portal.md)を展開して割り当てます。
 1. [ライセンスを割り当てる](assign-licenses.md)。
 1. [アプリを展開する](deploy-apps.md)。
-1. [デバイスをセットアップする](set-up-devices.md)。
+1. [デバイスを準備します](prepare-devices.md)。
 1. [Autopilot と登録ステータス ページの初回実行時エクスペリエンス](esp-first-run.md)のセットアップ。
 1. [ユーザー サポート機能を有効にする](enable-support.md)。
 1. [ユーザーがデバイスを使えるようにする](get-started-devices.md)。

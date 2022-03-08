@@ -16,77 +16,71 @@ metadata:
   - AdminSurgePortfolio
   - M365-Lighthouse
   search.appverid: MET150
-  description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse に関するよく寄せられる質問 (FAQ) に対する回答をMicrosoft 365 Lighthouse。
-  ms.openlocfilehash: 948b4584f2f10cdfd3f709cfe007d1367ba110a9
-  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+  description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouse を使用している場合は、Microsoft 365 Lighthouse に関するよく寄せられる質問 (FAQ) に対する回答をMicrosoft 365 Lighthouse。
+  ms.openlocfilehash: 746ec9210e517921d1c2145c9e87f0d339a67758
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/09/2021
-  ms.locfileid: "61373730"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63326170"
 title: Microsoft 365 Lighthouseよく寄せられる質問 (FAQ)
 summary: >
-  > [!NOTE]
-
-  > この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウントが設定されていない場合Microsoft 365 Lighthouse[を参照してください](m365-lighthouse-sign-up.md)Microsoft 365 Lighthouse。
-
-
-  この記事では、ユーザーに関するよく寄せられる質問 (FAQ) に対する回答Microsoft 365 Lighthouse。
+  この記事では、ユーザーに関するよく寄せられる質問 (FAQ) に対する回答をMicrosoft 365 Lighthouse。
 
 
   質問に対する回答が見つからなかった場合は、コメントを残してお知らせします。この記事に追加します。
 sections:
 - name: 無視
   questions:
-  - question: データのMicrosoft 365 Lighthouse?
+  - question: 何がMicrosoft 365 Lighthouse?
     answer: >
-      Microsoft 365 Lighthouse は、Managed Service Providers (MSP) が、Microsoft 365 Business Premium または Microsoft 365 E3 を使用している中小企業 (SMB) のお客様向けデバイス、データ、およびユーザーを大規模に保護および管理するのに役立つ管理ポータルです。  ライトハウスは、SMB に合わせたセキュリティ構成基準を推奨し、すべての顧客環境でマルチテナント ビューを提供することで、テナントのオンボーディングを簡素化します。 詳細については、「概要」[を参照Microsoft 365 Lighthouse。](m365-lighthouse-overview.md)
+      Microsoft 365 Lighthouse は、Managed Service Providers (MSP) が Microsoft 365 Business Premium または Microsoft 365 E3 を使用している中小企業 (SMB) のお客様向けデバイス、データ、およびユーザーを大規模に保護および管理するのに役立つ管理ポータルです。  ライトハウスは、SMB に合わせたセキュリティ構成基準を推奨し、すべての顧客環境でマルチテナント ビューを提供することで、テナントのオンボーディングを簡素化します。 詳細については、「概要」[を参照Microsoft 365 Lighthouse](m365-lighthouse-overview.md)。
   - question: Azure ライトハウスとMicrosoft 365 Lighthouse違いは何ですか?
     answer: >
-      Microsoft 365 Lighthouse Azure サービスではなく、Microsoft 365サービスに重点を置く必要があります。 Azure ライトハウスは Azure ポータルに組み込み、IT パートナーが Azure の複数のテナントを管理することができますが、Microsoft 365 Lighthouse は、MSP が複数の Microsoft 365 Business Premium または Microsoft 365 E3 顧客テナントを管理するのに役立つスタンドアロン ポータルです。 詳細については、「Microsoft 365 Lighthouseの[概要」を参照Microsoft 365 Lighthouse。](m365-lighthouse-overview.md) Azure ライトハウスの詳細については、「What is Azure ライトハウス」 [を参照してください。](/azure/lighthouse/overview)
+      Microsoft 365 Lighthouse Azure サービスではなく、Microsoft 365サービスに重点を置く必要があります。 Azure ライトハウスは Azure ポータルに組み込み、IT パートナーが Azure の複数のテナントを管理することができますが、Microsoft 365 Lighthouse は、MSP が複数の Microsoft 365 Business Premium または Microsoft 365 E3 顧客テナントを管理するのに役立つスタンドアロン ポータルです。 詳細については、「Microsoft 365 Lighthouseの[概要」を参照Microsoft 365 Lighthouse](m365-lighthouse-overview.md)。 Azure ライトハウスの詳細については、「What [is Azure ライトハウス」を参照してください。](/azure/lighthouse/overview)
   - question: コストはMicrosoft 365 Lighthouseですか?
     answer: >
-      プレビュー バージョンのライトハウスを使用して、サービスと接続されたデバイスのMicrosoft 365 Business Premium管理Microsoft 365 E3追加コストは発生します。 ライトハウスは現在プレビュー中で、中小規模の企業にサービスを提供し、顧客と クラウド ソリューション プロバイダー (CSP) の関係を持つ MSP が利用できます。 間接プロバイダーは現在、ライトハウスでサポートされていません。 詳細については[、「Requirements for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-requirements.md)。
+      ライトハウスを使用して、サービスと接続されたデバイスのMicrosoft 365 Business Premium管理Microsoft 365 E3追加コストは発生し得ない。 ライトハウスは、中小企業にサービスを提供し、顧客との間にクラウド ソリューション プロバイダー (CSP) の関係を持つ MSP が利用できます。 間接プロバイダーは現在、ライトハウスでサポートされていません。 詳細については、「[Requirements for Microsoft 365 Lighthouse」を参照してください](m365-lighthouse-requirements.md)。
   - question: アプリケーションを使用する要件Microsoft 365 Lighthouse?
     answer: >
-      現在の要件の一覧については、「要件[」を参照Microsoft 365 Lighthouse。](m365-lighthouse-requirements.md)
-  - question: 利用可能な国と地域はMicrosoft 365 Lighthouseですか?
+      現在の要件の一覧については、「要件[」を参照Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
+  - question: 利用可能な国と地域Microsoft 365 Lighthouse?
     answer: >
-      ライトハウスは、中国とパレスチナ自治Microsoft 365を除くすべての国で利用できます。 ただし、デバイス管理や脅威管理などのライトハウスの機能は Microsoft Intune に依存し、ユーザー管理は Azure Active Directory (Azure AD) に依存し、Intune と Azure AD は一部の国や地域では利用できない場合があります。 アプリの可用性、Microsoft 365、intune Azure ADの完全な一覧については、「International [availability 」を参照してください](https://www.microsoft.com/microsoft-365/business/international-availability)。
+      ライトハウスは、中国とMicrosoft 365を除くすべての国で利用できます。 ただし、デバイス管理や脅威管理などのライトハウスの機能は Microsoft Intune に依存し、ユーザー管理は Azure Active Directory (Azure AD) に依存し、Intune と Azure AD は一部の国や地域では利用できない場合があります。 詳細な一覧については、「Microsoft 365、Azure AD Intune の可用性」[を参照してください](https://www.microsoft.com/microsoft-365/business/international-availability)。
 
 
       国のクラウドでは、ライトハウスを利用できません。
   - question: アカウントにサインアップMicrosoft 365 Lighthouse?
     answer: >
-      ライトハウスにサインアップするには、CSP プログラムに登録する必要があります。 現在、間接プロバイダーをサポートできません。 サインアップの手順については、「サインアップする」を参照[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md) CSP プログラムの詳細については、「CSP プログラムの概要[」クラウド ソリューション プロバイダー参照してください](/partner-center/csp-overview)。
+      ライトハウスにサインアップするには、CSP プログラムに登録する必要があります。 現在、間接プロバイダーをサポートできません。 サインアップの手順については、「サインアップしてサインインする」を参照[Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md)。 CSP プログラムの詳細については、「CSP プログラムの概要クラウド ソリューション プロバイダー[参照してください](/partner-center/csp-overview)。
   - question: サインアップが完了したのに、顧客テナントのデータが表示されません。
     answer: >
       お客様のテナント データがライトハウス内に読み込むには、最大 48 時間かかる場合があります。 オンボーディングが完了して 48 時間を超える時間が経った場合は、サポート チームにお問い合わせください。 オンボーディングが完了したら、ユーザーに知らせ、関連するスクリーンショットとログを提供する必要があります。 詳細については、「Get [help and support for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-get-help-and-support.md)。
   - question: 一部の顧客テナントのデータが表示されますが、他のテナントのデータは表示されない理由
-    answer: >
-      お客様のテナント データがライトハウスに表示される場合、パートナーはパートナー センターを通じて顧客と代理管理者特権 (DAP) を確立する必要があります。 詳細については、「パートナー センター [で顧客とのリセラー関係を要求する」を参照してください](/partner-center/request-a-relationship-with-a-customer)。 テナントには、少なくとも 1 つのサブスクリプションMicrosoft 365 Business PremiumまたはMicrosoft 365 E3、テナントのライセンスユーザー数が 500 人未満である必要があります。 詳細については[、「Requirements for Microsoft 365 Lighthouseテナント](m365-lighthouse-requirements.md)Microsoft 365 Lighthouse[概要」を参照してください](m365-lighthouse-tenants-page-overview.md)。
-  - question: 特定のテナントを表示しない場合は、Microsoft 365 Lighthouse。
+    answer: "\nお客様のテナント データをライトハウスに表示するには、MSP がパートナー センターを通じて顧客と代理管理者特権 (DAP) または詳細委任管理者特権 (GDAP) を確立する必要があります。 詳細については、「パートナー センター [で顧客とのリセラー関係を要求する」を参照してください](/partner-center/request-a-relationship-with-a-customer)。 テナントには、少なくとも 1 Microsoft 365 Business PremiumまたはMicrosoft 365 E3、テナントのライセンスユーザー数が 1,000 人未満である必要があります。 詳細については、「[Requirements for Microsoft 365 Lighthouseテナント](m365-lighthouse-requirements.md)Microsoft 365 Lighthouse[概要」を参照してください](m365-lighthouse-tenants-page-overview.md)。\n"
+  - question: ユーザーに特定のテナントを表示しない場合Microsoft 365 Lighthouse。
     answer: >
       特定のテナントとそのデータをライトハウスで表示しない場合は、それらのテナントを無効にできます。 テナントを非アクティブ化するには、次の手順を実行します。
 
 
       1. 左側 **のナビゲーション ウィンドウ** から [テナント] を選択して、[テナント] **ページを開** きます。
 
-      1. 非アクティブ化するテナントを検索し、テナント名の横にある 3 つのドットを選択し、[ **テナントの非アクティブ化] を選択します**。
+      1. 非アクティブ化するテナントを探し、テナント名の横にある 3 つのドットを選択し、[ **テナントの非アクティブ化] を選択します**。
 
       1. 表示される確認メッセージで、[確認] **を選択して** テナントを無効にします。
           > [!NOTE]
           > テナントを非アクティブ化すると、非アクティブ化が完了するまでテナントに対してアクションを実行できません。 非アクティブ化が完了するために最大 48 時間かかる場合があります。
 
-      テナントの詳細については、「テナントの概要[」Microsoft 365 Lighthouseを参照してください](m365-lighthouse-tenants-page-overview.md)。
-  - question: 顧客Microsoft 365 Lighthouseのサブスクリプションが他のサブスクリプションを持っている場合、Microsoft 365 Business Premium機能Microsoft 365 E3。
+      テナントの詳細については、「テナントの管理[Microsoft 365 Lighthouse概要」を参照してください](m365-lighthouse-tenants-page-overview.md)。
+  - question: 顧客Microsoft 365 Lighthouseのサブスクリプションが他のサブスクリプションを持っている場合、Microsoft 365 Business Premium機能Microsoft 365 E3?
     answer: >
-      ライトハウスは、ユーザーのライセンスがMicrosoft 365 Business PremiumまたはMicrosoft 365 E3顧客テナントを管理するのに役立ちます。 Business プレミアムまたは E3 ライセンスを持プレミアムテナントのユーザーの場合、ライトハウスの機能は制限されます。 たとえば、Intune を含むライセンスがユーザーに不足している場合、そのユーザーのデバイス、デバイスのコンプライアンス状態、および脅威の状態は使用できません。ユーザーに P1 を含むライセンスがAzure AD場合、そのユーザーのパスワードとサインイン管理は使用できません。 詳細については[、「Requirements for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-requirements.md)。
-  - question: カスタマー クラウド PC を管理する資格を取得するには、Microsoft 365 Lighthouse?
+      ライトハウスは、ユーザーのライセンスがMicrosoft 365 Business PremiumまたはMicrosoft 365 E3テナントを管理するのに役立ちます。 Business プレミアムまたは E3 ライセンスを持プレミアムテナントのユーザーの場合、ライトハウスの機能は制限されます。 たとえば、Intune を含むライセンスがユーザーに不足している場合、そのユーザーのデバイス、デバイスのコンプライアンス状態、および脅威の状態は使用できません。ユーザーに P1 を含むライセンスがAzure AD場合、そのユーザーのパスワードとサインイン管理は使用できません。 詳細については、「[Requirements for Microsoft 365 Lighthouse」を参照してください](m365-lighthouse-requirements.md)。
+  - question: 顧客クラウド PC を管理する資格を取得するには、Microsoft 365 Lighthouse。
     answer: >
-      ライトハウスを使用する要件を満たしている場合は、ライトハウスで顧客のクラウド PC を管理する資格があります。 現在の要件の一覧については、「要件[」を参照Microsoft 365 Lighthouse。](m365-lighthouse-requirements.md)
+      ライトハウスを使用する要件を満たしている場合は、ライトハウスで顧客のクラウド PC を管理する資格があります。 現在の要件の一覧については、「要件[」を参照Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
   - question: お客様にWindows 365 (Cloud PC) ライセンスはどこで購入できますか?
     answer: >
-      利用可能なすべての Microsoft 商用Windows 365 ライセンスを購入できます。 購入した 1 つのライセンスは、1 つのクラウド PC の購入と同等です。 現在、各ユーザーには同じ SKU タイプのクラウド PC を 1 つしか割り当てできませんが、SKU の種類が異なる場合は、複数のクラウド PC を割り当てることができます。 365 Windowsと価格を比較するには、「自分に合った[365 クラウド PC](https://www.microsoft.com/windows-365/business/compare-plans-pricing)Windowsを取得する」を参照してください。
+      利用可能なすべての Microsoft 商用Windows 365 ライセンスを購入できます。 購入した 1 つのライセンスは、1 つのクラウド PC の購入と同等です。 現在、各ユーザーには同じ SKU タイプのクラウド PC を 1 つしか割り当てできませんが、SKU の種類が異なる場合は、複数のクラウド PC を割り当てることができます。 365 Windowsと価格を比較するには、「適切な [365 クラウド PC](https://www.microsoft.com/windows-365/business/compare-plans-pricing) Windowsを取得する」を参照してください。
   - question: ヘルプとサポートを受ける方法
     answer: >
       [ライトハウス] で [ **?** アイコンをクリックして、ヘルプ ウィンドウ **を開** きます。 ここから、セルフヘルプ記事にアクセスしたり、サポートに問い合わせすることができます。 ヘルプとサポート オプションの詳細については、「[ヘルプ](m365-lighthouse-get-help-and-support.md)とサポートを受ける」を参照Microsoft 365 Lighthouse。

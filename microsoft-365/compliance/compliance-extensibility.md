@@ -19,43 +19,43 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: サード パーティ製のデータ Microsoft 365 API を使用してコンプライアンス ソリューションを拡張する方法Graph説明します。
-ms.openlocfilehash: 1127064394e5b4873adb046e2b0540b361064c9d
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: サード パーティ製のデータ Microsoft 365 API を使用したコンプライアンス ソリューションの拡張についてGraphします。
+ms.openlocfilehash: 0632de40141b86e6dfdebf3f5c3a97ca50219357
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806842"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330539"
 ---
-# <a name="microsoft-365-compliance-and-microsoft-priva-extensibility"></a>Microsoft 365コンプライアンスと Microsoft Priva の拡張性
+# <a name="microsoft-365-compliance-and-microsoft-priva-extensibility"></a>Microsoft 365コンプライアンスと Microsoft Priva 拡張
 
 Microsoft 365ソリューションは、組織がコンプライアンス リスクをインテリジェントに評価し、機密データを管理および保護し、規制要件に効果的に対応するのに役立ちます。 Microsoft 365は拡張性のシナリオに富み、組織はコンプライアンス ソリューションの適応、拡張、統合、加速、サポートを行えます。
 
 コンプライアンスの機能拡張には、次の 2 つの重要な構成要素があります。
 
-- **データ コネクタ**。 Microsoft 以外のデータをインポートおよびアーカイブするために使用し、保護とガバナンスMicrosoft 365をサード パーティのデータに適用できます。
+- **データ コネクタ**。 Microsoft 以外のデータをインポートおよびアーカイブするために使用し、Microsoft 365ガバナンス機能をサード パーティのデータに適用できます。
 
 - **API。** コンプライアンス機能にプログラムMicrosoft 365アクセスできます。
 
 ## <a name="data-connectors"></a>データ コネクタ
 
-Microsoft は、サード パーティ製のデータ コネクタを提供し、このコネクタで構成Microsoft 365 コンプライアンス センター。 Microsoft が提供するデータ コネクタの一覧については、「サード パーティ製データ コネクタ」 [の表を参照](archiving-third-party-data.md#third-party-data-connectors) してください。 また、サード パーティ製データ コネクタの表には、Microsoft 365 でデータをインポートおよびアーカイブした後にサード パーティデータに適用できるコンプライアンス ソリューションと、各コネクタの詳細な手順へのリンクも示されています。
+Microsoft は、サード パーティ製のデータ コネクタを提供し、このコネクタで構成Microsoft 365 コンプライアンス センター。 Microsoft が提供するデータ コネクタの一覧については、「サード パーティ製データ コネクタ」 [の表を参照](archiving-third-party-data.md#third-party-data-connectors) してください。 また、サード パーティ製データ コネクタの表には、Microsoft 365 でデータをインポートおよびアーカイブした後にサード パーティのデータに適用できるコンプライアンス ソリューションと、各コネクタの詳細な手順へのリンクも示されています。
 
 データ コネクタの詳細Microsoft 365については、「サードパーティ データのアーカイブ[」を参照してください](archiving-third-party-data.md)。 Microsoft 365 コンプライアンス センター で使用できるデータ コネクタでサード パーティ製のデータ型がサポートされていない場合は、カスタム コネクタを提供できるパートナーと作業できます。 使用できるパートナーの一覧と、このメソッドのステップ バイ ステップ プロセスについては、「パートナーと協力してサード パーティのデータをアーカイブする」 [を参照してください](work-with-partner-to-archive-third-party-data.md)。
 
 ### <a name="prerequisites-for-data-connectors"></a>データ コネクタの前提条件
 
-サード パーティのデータをインポートおよびアーカイブするために、Microsoft 365 コンプライアンス センターで使用できるデータ コネクタの多くは、サード パーティのデータ ソースで構成タスクを準備して実行する必要があります。 これらの前提条件は、サードパーティのデータ コネクタごとに詳細に説明されています。
+サードパーティ のデータをインポートおよびアーカイブするために、Microsoft 365 コンプライアンス センターで使用できるデータ コネクタの多くは、サード パーティのデータ ソースで構成タスクを準備して実行する必要があります。 これらの前提条件は、サードパーティのデータ コネクタごとに詳細に説明されています。
 
 Microsoft のパートナー Microsoft 365 コンプライアンス センター提供されるデータ コネクタの場合、コネクタを展開する前に、組織はパートナーとのビジネス関係を必要とします。
 
-サード パーティ製データ コネクタのライセンス要件については、「セキュリティ とコンプライアンスに関するMicrosoft 365」の「データ コネクタ[」セクション&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+サード パーティ製データ コネクタのガイダンスと要件については、「Microsoft 365 のセキュリティ コンプライアンス - サービスの説明」の「& データ コネクタ」セクションを[参照|Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="apis"></a>API
 
-Microsoft 365コンプライアンス API と Microsoft Priva API は、Microsoft Information Protection SDK、Microsoft Graph API、および Office 365 管理アクティビティ API で利用できます。 一部のコンプライアンス API は、Microsoft 365 のお客様、独立したソフトウェア ベンダー、システム インテグレーター、およびマネージド セキュリティ サービス プロバイダーの開発者が価値の高いセキュリティおよびコンプライアンス ソリューションを構築できる新しいセキュリティおよびコンプライアンス API の一部です。
+Microsoft 365および Microsoft Priva API は、Microsoft Information Protection SDK、Microsoft Graph API、および Office 365管理アクティビティ API で使用できます。 一部のコンプライアンス API は、Microsoft 365 のお客様、独立したソフトウェア ベンダー、システム インテグレーター、およびマネージド セキュリティ サービス プロバイダーの開発者が価値の高いセキュリティおよびコンプライアンス ソリューションを構築できる新しいセキュリティおよびコンプライアンス API の一部です。
 
-API にアクセスする方法の詳細については、「Graphの[概要」を参照](/graph/overview)Graph。
+API にアクセスする方法の詳細については、「Graphの[概要」を参照Graph](/graph/overview)。
 
 ### <a name="microsoft-graph-apis-for-subject-rights-requests"></a>サブジェクトGraph要求に対する Microsoft の API の追加
 
@@ -79,7 +79,7 @@ MIP SDK、前提条件、追加シナリオ、およびサンプルの詳細に�
 
 ### <a name="microsoft-graph-api-for-teams-dlp"></a>Microsoft Graph DLP Teams API
 
-[データ損失防止 (DLP)](dlp-microsoft-teams.md) 機能は、特に組織がリモート作業に移行Microsoft Teamsに広く使用されています。 最近、[Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/change-notifications-for-microsoft-teams-messages-now-generally-available/) のメッセージの変更通知 API の一般的な可用性をTeams。 この API を使用すると、開発者は、ほぼリアルタイムでMicrosoft Teamsメッセージをリッスンし、顧客とパートナーの両方に DLP シナリオを実装できるアプリを構築できます。 さらに、Microsoft Graph Patch API では、メッセージに DLP アクションTeamsできます。
+[データ損失防止 (DLP)](dlp-microsoft-teams.md) 機能は、特に組織がリモート作業に移行Microsoft Teamsに広く使用されています。 最近、[Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/change-notifications-for-microsoft-teams-messages-now-generally-available/) 変更通知 API の一般提供を発表しました。Teams。 この API を使用すると、開発者は、ほぼリアルタイムでMicrosoft Teamsメッセージをリッスンし、顧客とパートナーの両方に DLP シナリオを実装できるアプリを構築できます。 さらに、Microsoft Graph Patch API では、メッセージに DLP アクションTeamsできます。
 
 これら 2 つの API は、DLP 用の Microsoft Graph API をTeamsします。 サンプル アプリを試して開始 [できます](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)。 メッセージング Webhook のMicrosoft Teams詳細については、ドキュメントを参照[してください](/graph/api/subscription-post-subscriptions)。
 
@@ -87,20 +87,20 @@ DLP のライセンス要件については、「セキュリティTeamsコン�
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>Microsoft Graph API for eDiscovery (プレビュー)
 
-[Advanced eDiscovery を](overview-ediscovery-20.md)使用すると、組織は、データが Microsoft 365 のセキュリティとコンプライアンスの境界内にとどまっている間、関連するセットに対するデータを削減するために、インテリジェントな機械学習と分析機能を使用して、そのデータが保存されているデータを検出し、より多くのエンドツーエンドの電子情報開示ワークフローを管理できます。
+[Advanced eDiscovery](overview-ediscovery-20.md) を使用すると、組織は、データが Microsoft 365 のセキュリティとコンプライアンスの境界内にとどまっている間、インテリジェントな機械学習と分析機能を備え、データを関連セットに削減するインテリジェントな機械学習と分析機能を使用して、その場所にあるデータを検出し、エンド to エンドの電子情報開示ワークフローを管理できます。
 
 Graph API Advanced eDiscoveryを使用して、ケースの作成と管理、セットのレビュー、およびセット クエリのレビューを、スケーラブルで繰り返し可能な方法で行えます。 これにより、顧客とパートナーはアプリとワークフローを作成して、ケースの作成や保管担当者や法的ホールドの管理など、一般的で繰り返しのプロセスを自動化できます。
 
 電子情報開示用のGraph API の最初のセットは、パブリック プレビューで使用できます。 暦年の終わりまでに、より多くの機能を追加する予定です。 これらの API と他の更新プログラムの詳細については、Advanced eDiscoveryブログを参照[してください](https://aka.ms/Ignite2020AeDAA)。
 
-Advanced eDiscovery および API のライセンス要件については、「Microsoft 365 ライセンス ガイダンス」の「電子情報開示」セクションを参照して、セキュリティ とコンプライアンス&[してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#ediscovery)。
+Advanced eDiscovery API のライセンス要件については、「セキュリティとコンプライアンスに関するMicrosoft 365ライセンス ガイダンス」の「電子情報開示[」セクション&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#ediscovery)。
 
 ### <a name="microsoft-graph-api-for-teams-export"></a>Microsoft Graph API for Teams エクスポート
 
-Enterprise情報アーカイブ (EIA) Microsoft Teamsは、規制要件を解決できる重要なシナリオです。 Microsoft Teams のコンテンツをアーカイブするための組み込みの機能に加えて、顧客とパートナーは Teams Export API を使用してカスタム アプリケーションと統合のシナリオを解決できます。 この Teams エクスポート API は、メッセージとメッセージの添付ファイルの一括エクスポート (アプリごとに 1 秒/1 テナントあたり最大 200 要求) をサポートTeamsします。 削除されたメッセージは、削除後最大 30 日間 API からアクセスすることもできます。 これらのエクスポート API の詳細Teamsアプリケーションで使用する方法については、「エクスポート API を使用してコンテンツをエクスポートするMicrosoft Teams[参照してください](/microsoftteams/export-teams-content)。
+Enterprise情報アーカイブ (EIA) Microsoft Teamsは、規制要件を解決できる重要なシナリオです。 Microsoft Teams のコンテンツをアーカイブするための組み込みの機能に加えて、顧客とパートナーは Teams Export API を使用してカスタム アプリケーションと統合のシナリオを解決できます。 この Teams エクスポート API は、メッセージとメッセージ添付ファイルの一括エクスポート (アプリごとに 1 秒/1 テナントあたり最大 200 要求) をサポートTeamsします。 削除されたメッセージは、削除後最大 30 日間 API からアクセスすることもできます。 これらのエクスポート API の詳細Teamsアプリケーションで使用する方法については、「エクスポート API を使用してコンテンツをエクスポートするMicrosoft Teams[参照してください](/microsoftteams/export-teams-content)。
 
-エクスポート API の使用に関するライセンス要件については、「Teamsコンプライアンスに関するMicrosoft 365ライセンス [ガイダンス」を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+エクスポート API の使用に関するライセンス要件については、「Teamsコンプライアンスに関するMicrosoft 365ライセンス ガイダンス」[を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ### <a name="microsoft-graph-connector-apis-preview"></a>Microsoft Graph コネクタ API (プレビュー)
 
-[Microsoft Graphコネクタを使用](/microsoftsearch/connectors-overview)すると、組織はサードパーティのデータをインデックス化して、結果に表示Microsoft Searchできます。 この機能は、Microsoft 365 の生産性向上アプリと Microsoft の広範なエコシステムで検索可能な、コンテンツ ソースの種類を拡大しています。 サード パーティのデータは、オンプレミスまたはパブリック クラウドまたはプライベート クラウドでホストできます。 このAdvanced eDiscovery、接続されたアプリに組み込みのコンプライアンス値を開発者Microsoft 365しています。 これにより、シームレスなコンプライアンス エクスペリエンスをユーザーに提供Microsoft 365エコシステムに統合するアプリのコンプライアンスが可能となります。 Microsoft Graph コネクタ API をアプリ ビューに組み込む方法の詳細については、「Microsoft Graph で接続を作成、更新、[および削除する」を参照してください](/graph/connecting-external-content-connectors-api-overview)。
+[Microsoft Graphコネクタを使用](/microsoftsearch/connectors-overview)すると、組織はサード パーティ製のデータをインデックス化して、その結果に表示Microsoft Searchできます。 この機能は、Microsoft 365 の生産性向上アプリと Microsoft の広範なエコシステムで検索可能な、コンテンツ ソースの種類を拡大しています。 サード パーティのデータは、オンプレミスまたはパブリック クラウドまたはプライベート クラウドでホストできます。 新しいAdvanced eDiscovery、接続されたアプリの組み込みのコンプライアンス値の開発者Microsoft 365を有効にしています。 これにより、シームレスなコンプライアンス エクスペリエンスをユーザーに提供Microsoft 365エコシステムに統合するアプリのコンプライアンスが可能となります。 Microsoft Graph Connector API をアプリ ビューに組み込む方法の詳細については、「Microsoft Graph で接続を作成、更新、および削除する[」を参照してください](/graph/connecting-external-content-connectors-api-overview)。

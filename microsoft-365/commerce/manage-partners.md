@@ -1,27 +1,32 @@
 ---
 title: パートナー関係の管理
 f1.keywords:
-  - NOCSH
-ms.author: cmcatee
+- NOCSH
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: 'tugu, jmueller'
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
+- M365-subscription-management
+- Adm_O365
 ms.custom:
-  - AdminSurgePortfolio
-  - commerce_subscriptions
-  - admindeeplinkMAC
+- commerce_subscriptions
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid: MET150
 description: Microsoft 認定ソリューション プロバイダー (パートナー) と連携して、組織または学校の製品とサービスを購入および管理する方法について説明します。
 ms.date: 02/04/2022
+ms.openlocfilehash: c07267989e8df7203cced6c3a21ffd9aa667347f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328975"
 ---
-
 # <a name="manage-partner-relationships"></a>パートナー関係の管理
 
 Microsoft 認定ソリューション プロバイダー (パートナー) と連携して、組織または学校の製品とサービスを購入および管理できます。 物事をセットアップするには、いくつかの手順が必要です。
@@ -30,7 +35,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 2. パートナーは、パートナー関係を確立するために顧客に電子メール要求を送信します。
 3. 顧客は招待を受け入Microsoft 365 管理センターパートナーとの作業を開始します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
 
@@ -44,7 +49,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 | リセラー | Microsoft 製品を組織または学校に販売するパートナー。 |
 | 委任された管理者 | 組織または学校の製品とサービスを管理するパートナー。 [Azure Active Directory (AD) では、パートナーはテナントのグローバル管理者です。 この役割を使用すると、ユーザー アカウントの作成、ライセンスの割り当てと管理、パスワードのリセットなど、サービスを管理できます。 |
 | リセラー &委任された管理者 | 組織または学校に対して Microsoft 製品とサービスを販売および管理するパートナー。 |
-| パートナー | パートナーにテナント内のユーザー アカウントを与え、他のユーザー アカウントMicrosoft サービス代わりに使用します。 |
+| パートナー | パートナーにテナント内のユーザー アカウントを与え、パートナーが代理で他のMicrosoft サービスを使用します。 |
 | Advisor | パートナーは、パスワードをリセットし、サポート インシデントを処理できます。 |
 | Microsoft Products & サービス契約 (MPSA) パートナー | MPSA プログラムを通じて複数のパートナーと協力した場合は、お互いに購入した情報を表示できます。 |
 | LINE-of-business (LOB) パートナー | パートナーは、組織または学校に固有の LOB アプリを開発、提出、および管理できます。 |
@@ -62,8 +67,8 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 
 パートナーを見つけて、パートナーと一緒に作業すると、招待メールが送信されます。
 
-1. 電子メールで、リンクを選択して[メール] に<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">移動</a>Microsoft 365 管理センター。
-2. [契約の **承認&] ページで** 、Microsoft カスタマー 契約のリンク **を** 選択し、ドキュメントを読み取ります。
+1. 電子メールで、リンクを選択して、メール <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">に移動Microsoft 365 管理センター</a>。
+2. [契約 **の承認&] ページで** 、 **Microsoft カスタマー** 契約のリンクを選択し、ドキュメントを読み取ります。
 3. このボックスをオンにして、契約を読んだと確認します。
 4. [承認 **を受け&] を選択します**。
 5. 作業しているパートナーの一覧が表示されます。 詳細を表示するには、任意のパートナーを選択します。
@@ -72,7 +77,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 
 パートナーが既に存在するが、Microsoft カスタマー 契約にまだ署名していない場合は、契約に同意してから、そのパートナーが代わりにサブスクリプションを購入または管理する必要があります。
 
-1. パートナーからメールを受け取った場合は、リンクを選択して[同意する] ページMicrosoft 365 管理センター同意するページ<a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">に移動</a>します。
+1. パートナーから電子メールを受け取った場合は、リンクを選択して [同意する] ページMicrosoft 365 管理センター同意する] <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">ページに移動</a>します。
 2. Microsoft Customer Agreement のリンクを **選択し** 、ドキュメントを読み取る。
 3. このボックスをオンにして、契約を読んだと確認します。
 4. **[同意する]** を選択します。
@@ -80,7 +85,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 
 ## <a name="remove-partner-admin-roles"></a>パートナー管理者の役割を削除する
 
-パートナーによる要求に応じて、招待を受け入れる際に、グローバル管理者とヘルプデスク管理者の役割を付与することに同意します。 これらの管理者の役割をパートナーに与える場合は、自動的に代理管理者特権をパートナーに付与Azure AD。 詳細については、「管理者特権の[委任」を参照Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)。
+パートナーによる要求に応じて、招待を受け入れる際に、グローバル管理者とヘルプデスク管理者の役割を付与することに同意します。 これらの管理者の役割をパートナーに付与すると、ユーザーは自動的に代理管理者特権をパートナーに付与Azure AD。 詳細については、「管理者特権の[委任」を参照Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)。
 
 新しい細分化された委任された管理特権 (GDAP) 機能により、パートナーは顧客のワークロードに対するより詳細で時間的なアクセスが可能です。 つまり、パートナーは顧客のセキュリティに関する懸念に対処できます。 パートナーは、現在のレベルのパートナー アクセスに不快感を持ち、パートナーへの最小特権アクセスのみを提供する規制要件を持つ顧客に、より多くのサービスを提供できます。 GDAP を使用すると、パートナーの要求で指定されたロールを提供することに同意します。 これらの役割はカスタマイズ可能なので、特定のアクセス許可が承認されていない場合はパートナーと話し合います。
 
@@ -93,3 +98,5 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 3. パートナーの名前を含む行を選択します。
 4. パートナー ページで、[役割の削除] **を選択します**。
 5. [役割の **削除] ダイアログ ボックスで** 、[はい] を **選択します**。
+
+[役割の削除] オプションが **表示されない** 場合は、パートナー センターに [問い合わせください](https://partner.microsoft.com/support)。

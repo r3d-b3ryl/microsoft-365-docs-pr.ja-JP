@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 988632e84614b49262c9cc7b8a74b493c1a48b01
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: b063d8435817d7dd64c3febf6e3399f3876ef894
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171973"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319827"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Microsoft Defender for Endpoint パートナーになる
 
@@ -35,17 +35,17 @@ Defender for Endpoint ソリューション パートナーになるためには
 
 ## <a name="step-1-subscribe-to-a-microsoft-defender-for-endpoint-license"></a>手順 1: Microsoft Defender for Endpoint ライセンスをサブスクライブする
 
-Defender for Endpoint を試す場合は、 [無料試用版にサインアップします。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink) サブスクライブを使用すると、最大 3 つのデバイスを備える Microsoft Defender for Endpoint テナントを使用して、Microsoft Defender for Endpoint と統合するソリューションを開発できます。
+Defender for Endpoint を試す場合は、 [無料試用版にサインアップします](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。 サブスクライブを使用すると、最大 3 つのデバイスを備える Microsoft Defender for Endpoint テナントを使用して、Microsoft Defender for Endpoint と統合するソリューションを開発できます。
 
 ## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>手順 2: ソリューションの検証と認定の要件を満たす
 
-テクノロジ パートナーが統合が機能することを証明する最善の方法は、共同顧客に提案された統合設計を承認し (顧客は Microsoft Defender セキュリティ センターの [パートナー アプリケーション[](https://securitycenter.microsoft.com/interoperability/partners)] ページの [パートナー アプリケーションの推奨] オプションを使用して)、Microsoft Defender for Endpoint チームにテストしてデモを行う方法です。
+テクノロジ パートナーが統合が機能することを証明する最善の方法は、共同顧客に提案された統合設計を承認する方法です  (\(顧客は、Microsoft 365 Defender の [パートナー アプリケーション] ページの [パートナー オプションパートナーと API >\) パートナー アプリケーション[](https://security.microsoft.com/interoperability/partnersapps)の推奨] を使用して、Microsoft Defender for Endpoint チームにテストおよびデモを行います。
 
 Microsoft Defender for Endpoint チームが統合を確認して承認したら、Microsoft インテリジェント セキュリティ協会にパートナーとして参加するように指示します。
 
 ## <a name="step-3-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>手順 3: Microsoft Defender for Endpoint パートナー アプリケーション ポータルに表示される情報を取得する
 
-Microsoft Defender for Endpoint は、Microsoft Defender for Endpoint[](partner-applications.md)管理ポータルに埋め込まれている製品内パートナー ページを使用して、サードパーティアプリケーションの検出と統合をサポートします。
+Microsoft Defender for Endpoint は、Microsoft Defender for Endpoint 管理ポータルに埋め込まれている製品[](partner-applications.md)内パートナー ページを使用して、サードパーティアプリケーションの検出と統合をサポートします。
 
 会社をパートナーとして製品内パートナー ページに表示するには、次の情報を提供する必要があります。
 
@@ -70,12 +70,12 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Endpoint[](partner-
      MdePartner-Contoso-ContosoCognito/1.0.0
      ```
 
-   - 詳細については [、「RFC 2616 section-14.43」を参照してください](https://tools.ietf.org/html/rfc2616#section-14.43)。
+   - 詳細については、「 [RFC 2616 section-14.43」を参照してください](https://tools.ietf.org/html/rfc2616#section-14.43)。
 
 Microsoft Defender for Endpoint とのパートナーシップは、相互のお客様が防御をさらに合理化、統合、および調整するのに役立ちます。 Microsoft Defender for Endpoint パートナーになり、最新の脅威を一緒に防止して対応することで、顧客とその資産を効果的に保護する共通の目標を達成することを選んだのは嬉しく思います。
 
 ## <a name="misa-nomination"></a>MISA の指名 
-マネージド セキュリティ サービス プロバイダー (MSSP) と独立したソフトウェア ベンダー (ISV) は、Microsoft インテリジェント セキュリティ アソシエーション (MISA) にノミネートできます。 詳細については [、「MISA 情報ページ」を参照してください](https://www.microsoft.com/security/business/intelligent-security-association)。
+マネージド セキュリティ サービス プロバイダー (MSSP) と独立したソフトウェア ベンダー (ISV) は、Microsoft インテリジェント セキュリティ アソシエーション (MISA) にノミネートできます。 詳細については、「 [MISA 情報ページ」を参照してください](https://www.microsoft.com/security/business/intelligent-security-association)。
 
 
 ## <a name="related-topics"></a>関連項目

@@ -16,8 +16,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
+ms.openlocfilehash: 3b20242247e33f8550ce4d153c2f2618c64d7007
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324341"
 ---
-
 # <a name="onboard-windows-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,18 +38,18 @@ ms.technology: mde
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 > [!NOTE]
-> グループ ポリシー (GP) 更新プログラムを使用してパッケージを展開するには、サーバー 2008 R2 以降Windowsする必要があります。
+> グループ ポリシー (GP) の更新プログラムを使用してパッケージを展開するには、サーバー 2008 R2 以降Windowsする必要があります。
 >
-> Windows Server 2019 および Windows Server 2022 では、グループ ポリシーの基本設定で作成される XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。
+> Windows Server 2019 および Windows Server 2022 の場合、グループ ポリシーの基本設定が作成する XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。
 
 > [!NOTE]
-> Windows Server 2012 R2 および 2016 の新しい統合 Microsoft Defender for Endpoint ソリューションを使用している場合は、中央ストアで最新の ADMX ファイルを使用して、適切な Microsoft Defender for Endpoint ポリシー オプションにアクセスしてください。 「グループ [ポリシー管理](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)用中央ストア管理用テンプレートを作成および管理する方法」を参照し、Windows で使用する最新のファイルをダウンロード **Windows 10。**
+> Windows Server 2012 R2 および 2016 の新しい統合 Microsoft Defender for Endpoint ソリューションを使用している場合は、中央ストアの最新の ADMX ファイルを使用して、適切な Microsoft Defender for Endpoint ポリシー オプションにアクセスしてください。 「グループ [ポリシー管理](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)用中央ストア管理用テンプレートを作成および管理する方法」を参照し、Windows で使用する最新のファイルをダウンロード **Windows 10。**
 
 [エンドポイント用 [Defender](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio展開](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
 
 1. サービス オンボーディング ウィザードからダウンロードした GP 構成パッケージ ファイル (`WindowsDefenderATPOnboardingPackage.zip`) を開きます。 パッケージは、次のポータルから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderすることもできます</a>。
 
-    1. ナビゲーション ウィンドウで、[**EndpointsDevice** >  >  managementOnboarding] 設定を  > 選択します。
+    1. ナビゲーション ウィンドウで、[**EndpointsDevice** >  **managementOnboarding**] **設定** > を  > **選択します**。
 
     1. オペレーティング システムを選択します。
 
@@ -52,7 +57,7 @@ ms.technology: mde
 
     1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
-2. デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 *OptionalParamsPolicy* というフォルダーと *WindowsDefenderATPOnboardingScript.cmd ファイルが必要です*。
+2. デバイスがアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 *OptionalParamsPolicy* というフォルダーと *WindowsDefenderATPOnboardingScript.cmd ファイルが必要です*。
 
 3. 新しい GPO を作成するには、[グループ ポリシー管理](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)コンソール (GPMC) を開き、構成するグループ ポリシー オブジェクトを右クリックし、[新規] をクリック **します**。 表示されるダイアログ ボックスに新しい GPO の名前を入力し、[OK] をクリック **します**。
 
@@ -60,7 +65,7 @@ ms.technology: mde
 
 5. グループ ポリシー **管理エディターで、[****コンピューターの構成**] 、[基本設定] の順に移動し、[コントロール パネルの設定 **] に移動します**。
 
-6. [スケジュールされたタスク **] を右クリック** し、[新規] をポイント **し、[イ** ミディエイト タスク] (少なくとも **7) Windowsクリックします**。
+6. [スケジュールされたタスク **] を右** クリックし、[新規] をポイントし、[イミディエイト タスク] (少なくとも **7) Windowsクリックします**。
 
 7. 開く **[タスク]** ウィンドウで、[全般] タブ **に移動** します。[セキュリティ **オプション] で[****ユーザーまたはグループの変更] をクリックし、「** SYSTEM」と入力し、[名前の確認] をクリックしてから **[OK****] を** クリックします。 NT AUTHORITY\SYSTEM は、タスクが実行されるユーザー アカウントとして表示されます。
 
@@ -72,14 +77,14 @@ ms.technology: mde
 
 11. [ **OK] を選択** し、開いている GPMC ウィンドウを閉じます。
 
-12. GPO を組織単位 (OU) にリンクするには、右クリックして[既存の GPO のリンク **] を選択します**。 表示されるダイアログ ボックスで、リンクするグループ ポリシー オブジェクトを選択します。 [**OK**] をクリックします。
+12. GPO を組織単位 (OU) にリンクするには、右クリックして[既存の GPO のリンク **] を選択します**。 表示されるダイアログ ボックスで、リンクするグループ ポリシー オブジェクトを選択します。 **[OK]** をクリックします。
 
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボード [された Defender for Endpoint デバイスで検出テストを実行する」を参照してください](run-detection-test.md)。
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>エンドポイントの追加の Defender 構成設定
 
-デバイスごとに、詳細分析用にファイルを送信する要求が行われたときに、デバイスからサンプルをMicrosoft 365 Defenderできるかどうかを指定できます。
+デバイスごとに、詳細分析用にファイルを送信する要求が送信された場合に、デバイスからサンプルを収集できるかどうかをMicrosoft 365 Defenderできます。
 
 グループ ポリシー (GP) を使用して、ディープ分析機能で使用されるサンプル共有の設定などの設定を構成できます。
 
@@ -103,7 +108,7 @@ ms.technology: mde
 
 4. [ポリシー **] をクリック** し、[管理 **用テンプレート] をクリックします**。
 
-5. [**コンポーネントWindows] をクリック** し、[**ATP] Windows Defenderクリックします**。
+5. [**コンポーネントWindows] をクリック** し、[**ATP] Windows Defenderします**。
 
 6. デバイスからのサンプル共有を有効または無効にする場合に選択します。
 
@@ -118,7 +123,7 @@ ms.technology: mde
 
 すべてのポリシーは 、 の下に位置します `Computer Configuration\Policies\Administrative Templates`。
 
-**ポリシーの場所:** \Windows コンポーネント\atp Windows Defender ATP
+**ポリシーの場所:** \Windows コンポーネント\Windows Defender ATP
 
 ポリシー|Setting
 ---|---
@@ -150,17 +155,17 @@ Microsoft MAPS に参加する|有効、高度なマップ
 リアルタイム保護をオフにする|無効
 動作の監視を有効にする|Enabled
 ダウンロードしたファイルと添付ファイルをスキャンする|Enabled
-コンピューター上のファイルとプログラムのアクティビティを監視する|Enabled
+コンピューター上のファイルとプログラムのアクティビティを監視する|有効
 
 <br>
 
-**ポリシーの場所:** \Windows Components\Microsoft Defender ウイルス対策\Scan
+**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\Scan
 
 これらの設定は、エンドポイントの定期的なスキャンを構成します。 毎週のクイック スキャンを実行することをお勧めします。パフォーマンスが許容されます。
 
 ポリシー|Setting
 ---|---
-スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |Enabled
+スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |有効
 
 <br>
 
@@ -180,9 +185,9 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
    ![攻撃表面の縮小構成のイメージ。](images/asr-guid.png)
 
-ポリシー|Location|Setting
+ポリシー|場所|Setting
 ---|---|---
-フォルダー アクセスの制御を構成する| \Windows コンポーネント\Microsoft Defender ウイルス対策\Microsoft Defender Exploit Guard\制御されたフォルダー アクセス| 有効、監査モード
+フォルダー アクセスの制御を構成する| \Windows Components\Microsoft Defender ウイルス対策\Microsoft Defender Exploit Guard\制御されたフォルダー アクセス| 有効、監査モード
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>検出テストを実行してオンボーディングを確認する
 
@@ -205,7 +210,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
     1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
-2. デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 - *MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
+2. デバイスがアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 - *MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
 
 3. グループ ポリシー [管理コンソール](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] をクリック **します**。
 
@@ -219,7 +224,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 8. [名前] フィールドに、スケジュールされたタスクの適切な名前 (Defender for Endpoint Deployment など) を入力します。
 
-9. [アクション] タブ **に移動し** 、[ **新規....] を選択します**。[アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。 ファイル サーバーの完全修飾ドメイン名 (FQDN) を使用して、共有ファイル *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* ファイルの UNC パスを入力します。
+9. [アクション] タブ **に移動し** 、[ **新規....] を選択します**。[アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。 共有ファイル *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* ファイルのファイル サーバーの完全修飾ドメイン名 (FQDN) を使用して、UNC パスを入力します。
 
 10. [ **OK] を選択** し、開いている GPMC ウィンドウを閉じます。
 
@@ -269,17 +274,17 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 ### <a name="configure-windows-defender-smartscreen-settings"></a>SmartScreen Windows Defender構成する
 
-1. SmartScreen Explorer の **[** \> **コンピューター**\>構成ポリシー **] [** \> **管理Windowsコンポーネント** \> **Windows Defender参照** \> **します**。
+1. SmartScreen Explorer **の** \> **[**\>コンピューター構成ポリシー **]** \> **[管理用Windowsコンポーネント** \> **Windows Defender参照** \> **します**。
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows Defender スマート スクリーン エクスプローラー。":::
  
-2. [Computer **ConfigurationPoliciesAdministrative** >  >  **Templates** >  **Windowsコンポーネント** > **Windows Defender SmartScreen** >  **Microsoft Edge**。
+2. [**コンピューターの構成** > **PoliciesAdministrative** >  **テンプレート** > **Windowsコンポーネント** > **Windows Defender SmartScreen** >  **Microsoft Edge**。
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows Defender スマート スクリーン エッジ。":::
 
 ### <a name="configure-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを構成する
 
-[コンピューター構成 **ポリシー]** \> **[** \> **管理用**\>テンプレート] Windows **を参照Microsoft Defender ウイルス対策** \> **。**
+[コンピューター構成 **ポリシー]** \> **[** \> **管理用テンプレート**\>] Windows **を参照Microsoft Defender ウイルス対策** \> **。**
 
 :::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="潜在的な不要なアプリを構成します。":::
 
@@ -287,7 +292,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 ### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>クラウド配信保護を構成し、サンプルを自動的に送信する
 
-**[** コンピューター構成 **ポリシー]** \> **[** \> **管理用テンプレート] Windows** \> **マップMicrosoft Defender ウイルス対策** \> \>します。
+[コンピューター構成 **ポリシー]** \> **[** \> **管理用テンプレート] Windows** \> **マップMicrosoft Defender ウイルス対策** \>  \> **します**。
 
 :::image type="content" source="images/gpo-maps1.png" alt-text="マップ。":::
 
@@ -297,9 +302,15 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 :::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="詳細な分析が必要な場合は、ファイル サンプルを送信します。":::
 
+> [!NOTE]
+> [ **すべてのサンプルを送信する** ] オプションは、セキュリティの態勢を高めるバイナリ/スクリプト/ドキュメントの最も多くの分析を提供します。
+[ **安全なサンプルを送信** する] オプションは、分析するバイナリ/スクリプト/ドキュメントの種類を制限し、セキュリティの姿勢を低下します。 
+
+詳細については、「クラウド保護を[有効](enable-cloud-protection-microsoft-defender-antivirus.md)にする」および「Microsoft Defender ウイルス対策クラウド保護とサンプル申請」[を参照Microsoft Defender ウイルス対策。](cloud-protection-microsoft-antivirus-sample-submission.md)
+
 ### <a name="check-for-signature-update"></a>署名の更新を確認する
 
-[コンピューター構成 **ポリシー]** \> **[** \> **管理用テンプレート**\>] Windows **セキュリティ** \>  \> インテリジェンスMicrosoft Defender ウイルス対策 **を参照します**。
+[コンピューター構成 **ポリシー]** \> **[** \> **管理用テンプレート] Windows** \> **セキュリティ** \> **インテリジェンス** \> Microsoft Defender ウイルス対策 **を参照します**。
 
 :::image type="content" source="images/signature-update-1.png" alt-text="署名の更新。":::
 
@@ -307,7 +318,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>クラウド配信のタイムアウトと保護レベルを構成する
 
-[コンピューター構成 **ポリシー]** \> **[** \>  **管理用テンプレート**\>] Windows **MpEngine Microsoft Defender ウイルス対策** \> \> **参照します**。
+[コンピューター構成 **ポリシー]** \> **[** \> **管理用**\>テンプレート] Windows **MpEngine** \> **Microsoft Defender ウイルス対策** \> **参照します**。
 クラウド保護レベル のポリシーを既定のポリシーに構成Microsoft Defender ウイルス対策 **ポリシー** をブロックすると、ポリシーが無効になります。 これは、Windows の既定に保護レベルを設定するために必要な情報です。
 
 :::image type="content" source="images/config-extended-cloud-check.png" alt-text="config 拡張クラウド チェック。":::

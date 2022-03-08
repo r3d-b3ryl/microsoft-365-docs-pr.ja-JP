@@ -8,25 +8,25 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365-initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: b9cc3e0ab911515d010b1a6e7feaac5cff8aed51
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3418eac69930819fdb0e3fd8d1bae80312f89a9f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903941"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326413"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>インシデントを管理Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "62903941"
 
 インシデント管理は、インシデントワークフローの時間を最適化し、脅威を迅速に含めて対処するために、インシデントの名前、割り当て、タグ付けを確実に行う上で重要です。
 
-インシデント ポータル (&) **の**&で>インシデントからのインシデントを [管理Microsoft 365 Defender](https://security.microsoft.com)できます。security.microsoft.com。 次に例を示します。
+インシデント ポータル (&) **の&で**>インシデントからインシデントを管理 [Microsoft 365 Defender](https://security.microsoft.com)できます。security.microsoft.com。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -48,7 +48,7 @@ ms.locfileid: "62903941"
 - [インシデント タグの追加](#add-incident-tags)
 - [インシデントをユーザー アカウントに割り当てる](#assign-an-incident)
 - [それらを解決する](#resolve-an-incident)
-- [その分類と決定を設定する](#set-the-classification-and-determination)
+- [分類を指定する](#specify-the-classification)
 - [コメントの追加](#add-comments)
 
 インシデントを管理するには、インシデント用の[**インシデントの管理**] ウィンドウから行います。 次に例を示します。
@@ -64,7 +64,7 @@ ms.locfileid: "62903941"
 
 ## <a name="edit-the-incident-name"></a>インシデント名を編集する
 
-Microsoft 365 Defender影響を受けるエンドポイントの数、影響を受けるユーザー、検出ソース、カテゴリなどのアラート属性に基づいて、名前が自動的に割り当てされます。 これにより、インシデントの範囲をすばやく把握できます。 たとえば、複数 *のソースによって報告された複数のエンドポイントに対するマルチステージ インシデント。*
+Microsoft 365 Defender、影響を受けるエンドポイントの数、影響を受けるユーザー、検出元、カテゴリなどのアラート属性に基づいて名前が自動的に割り当てされます。 これにより、インシデントの範囲をすばやく把握できます。 たとえば、複数 *のソースによって報告された複数のエンドポイントに対するマルチステージ インシデント。*
 
 インシデント名は、[インシデントの管理] ウィンドウの **[インシデント名** ] フィールド **から編集** できます。
 
@@ -95,11 +95,16 @@ Microsoft 365 Defender影響を受けるエンドポイントの数、影響を�
 
 解決されないインシデントは、アクティブとして表示 **されます**。
 
-## <a name="set-the-classification-and-determination"></a>分類と決定を設定する
+## <a name="specify-the-classification"></a>分類を指定する
 
-インシデント分類は、分類フィールドから構成する、本当のアラートか誤ったアラートか **です** 。 
+[分類 **] フィールド** で、インシデントが次のかどうかを指定します。
 
-それが本当の警告である場合は、[決定] フィールドで脅威の種類も **指定する必要** があります。 脅威の種類を指定すると、セキュリティ チームは脅威パターンを確認し、組織を防御するために行動できます。 
+- **[設定しない** ] (既定)。
+- **脅威の種類** に対して正の値を指定します。 実際の脅威を正確に示すインシデントには、この分類を使用します。 脅威の種類を指定すると、セキュリティ チームは脅威パターンを確認し、組織を防御するために行動できます。
+- **アクティビティの種類を含む、予想** される情報アクティビティ。 このカテゴリのオプションを使用して、セキュリティ テスト、赤いチーム アクティビティ、信頼できるアプリとユーザーからの予期される異常な動作のインシデントを分類します。
+- **検出した** インシデントの種類に対して誤検知は、技術的に不正確または誤解を招くため無視できます。
+
+インシデントを分類し、その状態と種類を指定すると、時間のMicrosoft 365 Defenderの検出判定を向上するために、インシデントの調整に役立ちます。
 
 ## <a name="add-comments"></a>コメントを追加する
 

@@ -44,8 +44,14 @@
           items:
             - name: VPN 分割トンネリングの概要
               href: microsoft-365-vpn-split-tunnel.md
+            - name: VPN 分割トンネリングの一般的なシナリオ
+              href: microsoft-365-vpn-common-scenarios.md
             - name: VPN の分割トンネリングを実装する
               href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: VPN 分割トンネリングのための Teams メディア トラフィックのセキュリティ保護
+              href: microsoft-365-vpn-securing-teams.md
+            - name: VPN 環境でのストリーム イベントとライブ イベント
+              href: microsoft-365-vpn-stream-and-live-events.md
             - name: 中国ユーザー向け Microsoft 365 の最適化
               href: microsoft-365-networking-china.md
             - name: ネイティブ Windows 10 VPN クライアントでリモートワーカーのための Microsoft 365 のトラフィックを最適化する
@@ -182,6 +188,8 @@
               href: microsoft-365-mailbox-utilization-service-alerts.md
             - name: MRS ソース遅延のサービス アラート
               href: microsoft-365-mrs-source-delays-service-alerts.md
+            - name: 外部受信者のキューに登録されたメッセージのサービス アラート
+              href: microsoft-365-external-recipient-service-alerts.md
         - name: セットアップ ガイド
           href: setup-guides-for-microsoft-365.md
     - name: 複数のテナント

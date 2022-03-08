@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bc9e6814dc599b6a3474a00cd51676bbe708716a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 177a7965d3e5a2d4ddd2e62bdde95fbc2762645b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166820"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329601"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Microsoft Defender 更新プログラムの段階的なロールアウト プロセスを管理する
 
@@ -44,7 +44,7 @@ ms.locfileid: "61166820"
 更新プログラムは、段階的なリリース プロセスを使用して毎月リリースされます。 このプロセスは、早期障害検出が発生した時点で影響をキャッチし、大規模なロールアウトの前に迅速に対処するのに役立ちます。
 
 > [!NOTE]
-> 毎日のセキュリティ インテリジェンス更新プログラムを制御する方法の詳細については、「セキュリティ保護更新プログラムのスケジュール[Microsoft Defender ウイルス対策を参照してください](manage-protection-update-schedule-microsoft-defender-antivirus.md)。 更新プログラムにより、クラウド配信の保護がエンドポイントで利用できない場合でも、次世代の保護が新しい脅威から防御されます。
+> 毎日のセキュリティ インテリジェンス更新プログラムを制御する方法の詳細については、「セキュリティ保護更新プログラムのスケジュール[Microsoft Defender ウイルス対策参照してください](manage-protection-update-schedule-microsoft-defender-antivirus.md)。 更新プログラムにより、クラウド配信の保護がエンドポイントで利用できない場合でも、次世代の保護が新しい脅威から防御されます。
 
 ## <a name="microsoft-gradual-rollout-model"></a>Microsoft 段階的ロールアウト モデル
 
@@ -63,15 +63,15 @@ ms.locfileid: "61166820"
 > [!NOTE]
 > 独自の段階的なリリースを計画する場合は、プレビュー チャネルと段階的チャネルに登録されているデバイスを常に選択してください。 これにより、組織と Microsoft が環境固有の問題を防止または見つけて修正する機会が提供されます。
 
-Windows Server Update Services (WSUS) や Microsoft Endpoint Configuration Manager (MECM) などの更新プログラムを受け取るコンピューターの場合、Microsoft Defender for Endpoint のオプションを含め、Windows のすべての更新プログラムに対してさらに多くのオプションを使用できます。
+Windows Server Update Services (WSUS) や Microsoft Endpoint Configuration Manager (MECM) などの更新プログラムを受け取るコンピューターの場合、Microsoft Defender for Endpoint のオプションなど、Windows のすべての更新プログラムで使用できるオプションが追加されています。
 
-- WSUS、ME Microsoft Defender ウイルス対策CM のようなソリューションを使用して更新プログラムの配布とアプリケーションを管理する方法の詳細については、「更新プログラムの管理とベースラインの適用 - Windows[セキュリティ」を参照](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates)してください。
+- WSUS、MECM のようなソリューションを使用して更新プログラムの配布とアプリケーションを管理する方法の詳細については、「[Microsoft Defender ウイルス対策](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates) 更新プログラムの管理とベースラインの適用 - Windows セキュリティ」を参照してください。
 
 ## <a name="update-channels-for-monthly-updates"></a>月次更新プログラムのチャネルを更新する
 
 コンピューターを更新チャネルに割り当て、コンピューターが毎月エンジンとプラットフォームの更新プログラムを受け取るケイデンスを定義できます。
 
-更新プログラムを構成する方法の詳細については、「Microsoft Defender 更新プログラムのカスタム段階的ロールアウト プロセスを作成する」 [を参照してください](configure-updates.md)。
+更新プログラムを構成する方法の詳細については、「Microsoft Defender 更新プログラムのカスタム段階的ロールアウト プロセスを作成 [する」を参照してください](configure-updates.md)。
 
 次の更新プログラム チャネルを使用できます。
 
@@ -133,4 +133,4 @@ Windows Server Update Services (WSUS) や Microsoft Endpoint Configuration Manag
 - Microsoft エンドポイント マネージャー
 - PowerShell
 
-これらのツールの使い方の詳細については、「Microsoft Defender 更新プログラムのカスタム段階的ロールアウト プロセスを作成する [」を参照してください](configure-updates.md)。
+これらのツールの使い方の詳細については、「Microsoft Defender 更新プログラムのカスタム段階的ロールアウト プロセスを作成 [する」を参照してください](configure-updates.md)。

@@ -6,8 +6,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: f6886cd109e8727dd05c7de0b4055f839b847de2
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 952e5a057f893cfc11b928e40e2038255a93601c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164984"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329045"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>自動調査後の修復アクションの確認
 
@@ -46,11 +46,11 @@ ms.locfileid: "61164984"
 
 いくつかの例を示します。
 
-- **例 1**: Fabrikam のデバイス グループが Full **に設定されている -** 脅威を自動的に修復する (推奨される設定)。 この場合、自動調査後に悪意のあると見なされるアーティファクトに対して修復アクションが自動的に実行されます (「完了したアクションの確認 [」を参照](#review-completed-actions))。
+- **例 1**: Fabrikam のデバイス グループは[完全] **に** 設定され、脅威を自動的に修復します (推奨される設定)。 この場合、自動調査後に悪意のあると見なされるアーティファクトに対して修復アクションが自動的に実行されます (「完了したアクションを確認する [」を参照](#review-completed-actions))。
 
 - **例 2**: Contoso のデバイスは、Semi に設定されているデバイス グループに含まれています。修復には承認 **が必要です**。 この場合、Contoso のセキュリティ運用チームは、自動調査の後ですべての修復アクションを確認して承認する必要があります (「保留中のアクションの確認 [」を参照](#review-pending-actions))。
 
-- **例 3:** Tailspin Toys のデバイス グループは [自動応答なし] **に設定** されています (推奨されません)。 この場合、自動調査は行われません。 修復アクションは実行または保留中で、デバイスのアクション センターにアクションは[](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)記録されません (「デバイス グループの管理[」を参照](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups))。
+- **例 3**: Tailspin Toys のデバイス グループは [自動応答なし **] に設定** されています (推奨されません)。 この場合、自動調査は行われません。 修復アクションは実行または保留中で、デバイスのアクション センターにアクションは記録[](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)されません (「デバイス グループの管理[」を参照](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups))。
 
 自動的に行う場合も承認時に行う場合でも、自動調査によって、次の 1 つ以上の修復アクションが発生する可能性があります。
 
@@ -95,13 +95,13 @@ ms.locfileid: "61164984"
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>複数のアクションを一度に元に戻すには
 
-1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。
+1. アクション センター () に移動し[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)、サインインします。
 2. [履歴 **] タブ** で、元に戻す操作を選択します。 同じアクションの種類を持つアイテムを選択してください。 フライアウト ウィンドウが開きます。
 3. フライアウト ウィンドウで、[元に戻す] を **選択します**。
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>複数のデバイス間で検疫からファイルを削除するには
 
-1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。
+1. アクション センター () に移動し[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)、サインインします。
 2. [履歴 **] タブ** で、アクションタイプの検疫ファイルを持つアイテム **を選択します**。
 3. フライアウト ウィンドウで、[このファイルの **インスタンスを X** に適用する] を選択し、[元に戻す] を **選択します**。
 
@@ -122,7 +122,7 @@ ms.locfileid: "61164984"
 |**Semi - コア フォルダー修復の承認が必要**|証拠の一部に *対して疑* わしいという評決に達します。 <p> 修復アクションは承認待ちです。|[保留中のアクションを承認 (または拒否) します](#review-pending-actions)。|
 |**Semi - 一時フォルダー以外の修復の承認が必要**|証拠の一部に *対して悪意* のあるという評決に達します。 <p> 成果物が、ユーザーのダウンロード フォルダーや一時フォルダーなど、一時フォルダーに含されていないファイルまたは実行可能ファイルである場合、修復アクションは承認待ちです。 <p> 成果物が一時フォルダー内 *のファイルまたは* 実行可能ファイルである場合、修復アクションは自動的に実行されます。|<ol><li>[保留中のアクションを承認 (または拒否) する](#review-pending-actions)</li><li>[完了したアクションを確認する](#review-completed-actions)</li></ol>|
 |**Semi - 一時フォルダー以外の修復の承認が必要**|証拠の一部に *対して疑* わしいという評決に達します。 <p> 修復アクションは承認待ちです。|[保留中のアクションを承認 (または拒否) する](#review-pending-actions)|
-|完全または **半の** オートメーションレベル|証拠の一部に *対する脅威が見つからない* という評決に達しました。 <p> 修復アクションは実行され、承認待ちアクションはありません。|[自動調査の詳細と結果を表示する](/microsoft-365/security/defender-endpoint/auto-investigation-action-center)|
+|完全または **半の****オートメーション レベル**|証拠の一部に *対する脅威が見つからない* という評決に達しました。 <p> 修復アクションは実行され、承認待ちアクションはありません。|[自動調査の詳細と結果を表示する](/microsoft-365/security/defender-endpoint/auto-investigation-action-center)|
 |**自動応答なし** (推奨されません)|自動調査は実行されません。そのため、評決に達したり、修復アクションを実行したり、承認を待つ操作を行う必要はありません。|[フル オートメーションまたは Semi オートメーションを使用するデバイス グループ **の設定または** 変更 **を検討** する](/microsoft-365/security/defender-endpoint/machine-groups)|
 |
 

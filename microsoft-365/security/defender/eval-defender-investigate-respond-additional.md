@@ -1,7 +1,7 @@
 ---
 title: パイロットMicrosoft 365 Defenderインシデント対応機能を試す
 description: インシデント対応機能を試Microsoft 365 Defender、インシデントの優先順位付けと管理、調査の自動化、脅威検出での高度な検出の使用を行います。
-keywords: Microsoft 365 Defender試し、テストMicrosoft 365 Defender、評価Microsoft 365 Defender、Microsoft 365 Defenderラボ、Microsoft 365 Defender パイロット、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
+keywords: Microsoft 365 Defender試して、Microsoft 365 Defender、評価Microsoft 365 Defender、Microsoft 365 Defenderラボ、Microsoft 365 Defender パイロット、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -11,8 +11,8 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
@@ -23,21 +23,21 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 362e8360900f53d7bfc9eccf12d1107091860cb9
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: cc57c2b39466e84d5652ef60c56d6951fbe86714
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903624"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324089"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>パイロットMicrosoft 365 Defenderインシデント対応機能を試す
 
 **適用対象:**
 - Microsoft 365 Defender
 
-この記事は[、パイロット環境](eval-defender-investigate-respond.md)を使用してインシデントの調査と応答を実行するプロセスの手順 2 Microsoft 365 Defenderです。 このプロセスの詳細については、概要の記事を [参照](eval-defender-investigate-respond.md) してください。
+この記事は、[パイロット環境](eval-defender-investigate-respond.md)を使用してインシデントの調査と対応を実行するプロセスの手順 2 Microsoft 365 Defenderです。 このプロセスの詳細については、概要の記事を [参照](eval-defender-investigate-respond.md) してください。
 
-シミュレートされた攻撃に対[してインシデント対応](eval-defender-investigate-respond-simulate-attack.md)を実行したら、次のMicrosoft 365 Defenderを確認できます。
+シミュレートされた攻撃に対[して](eval-defender-investigate-respond-simulate-attack.md)インシデント対応を実行したら、次のMicrosoft 365 Defenderを確認できます。
 
 |機能 |説明 |
 |:-------|:-----|
@@ -49,7 +49,7 @@ ms.locfileid: "62903624"
 
 ## <a name="prioritize-incidents"></a>インシデントの優先度を設定する
 
-インシデント ポータルのクイック 起動時に、インシデント &アラート **>** インシデント キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。 次に例を示します。
+インシデント ポータルのクイック起動時に、インシデント &**アラート**>インシデント キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderきます</a>。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。":::
 
@@ -112,7 +112,7 @@ ms.locfileid: "62903624"
 
 次に例を示します。
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="[統合アクション] センター (Microsoft 365 Defender)。":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="[統合アクション センター] Microsoft 365 Defender。":::
 
 アクション センターから保留中のアクションを選択し、フライアウト ウィンドウで承認または拒否できます。 次に例を示します。
 
@@ -141,7 +141,7 @@ ms.locfileid: "62903624"
 
 このシミュレーションには、内部メールボックスとデバイスが 1 つ必要です。 テスト メッセージを送信するには、外部メール アカウントも必要です。
 
-1. テナントが有効になっているか確認[Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on)。
+1. テナントが有効になっている[Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on)。
 2. 電子メールの受信に使用するターゲット メールボックスを特定します。
 
    - このメールボックスは、Microsoft Defender によって監視されている必要Office 365
@@ -150,7 +150,7 @@ ms.locfileid: "62903624"
 
 3. テスト デバイスを構成します。
 
-    a.  バージョン 1903 以降Windows 10を使用してください。
+    a.  バージョン 1903 以降Windows 10使用してください。
 
     b. テスト デバイスをテスト ドメインに参加します。
 
@@ -160,7 +160,7 @@ ms.locfileid: "62903624"
 
 ### <a name="run-the-simulation"></a>シミュレーションを実行する
 
-1. 外部メール アカウントから、ハンティング環境の要件セクションの手順 2 で識別されたメールボックスに電子メールを送信します。 既存の電子メール フィルター ポリシーで許可される添付ファイルを含める。 このファイルは、悪意のあるファイルや実行可能ファイルである必要があります。 推奨されるファイルの種類は<i>.pdf</i><i> 、.exe</i> (許可されている場合)、または Word ファイルなどのOfficeドキュメントの種類です。
+1. 外部メール アカウントから、ハンティング環境の要件セクションの手順 2 で識別されたメールボックスに電子メールを送信します。 既存の電子メール フィルター ポリシーで許可される添付ファイルを含める。 このファイルは、悪意のあるファイルや実行可能ファイルである必要があります。 推奨されるファイルの種類は<i>、.pdf</i><i> 、.exe</i> 場合)、または Word ファイルなどのOfficeドキュメントの種類です。
 
 2. [ハンティング環境の要件] セクションの手順 3 で定義されているデバイスから送信された電子メールを開きます。 添付ファイルを開くか、ファイルをデバイスに保存します。
 
@@ -172,7 +172,7 @@ ms.locfileid: "62903624"
 
 3. 電子メール イベントの収集から始まるクエリを作成します。
 
-   1. [クエリ **] を>新規します**。
+   1. [クエリ **と新規>選択します**。
 
    1. [高度 **な検索]** の **[メール** グループ] で、[ **EmailEvents] をダブルクリックします**。 これはクエリ ウィンドウに表示されます。
 

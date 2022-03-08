@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f66f98d8de585d8b92fad50f70ad812b861d9202
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: c54d2989941d5c91cc2626941af36cf6cdf205ce
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903897"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329559"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>データを使用して調査Microsoft 365 Defender
 
@@ -55,7 +55,7 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 ## <a name="automated-investigation-and-remediation"></a>調査と修復の自動化
 
-組織が Microsoft 365 Defender を使用している場合、悪意のあるアクティビティや疑わしいアクティビティやアーティファクトが検出されると、セキュリティ運用チームは Microsoft 365 Defender ポータル内で警告を受け取ります。 脅威が終わりのない流れを考えると、セキュリティ チームは多くの場合、多くの場合、アラートの量が多い場合に対処する課題に直面します。 幸いMicrosoft 365 Defender、セキュリティ運用チームが脅威に効率的かつ効果的に対処するのに役立つ自動調査と応答 (AIR) 機能が含まれています。
+組織が Microsoft 365 Defender を使用している場合、悪意のあるアクティビティや疑わしいアクティビティやアーティファクトが検出されるたびに、セキュリティ運用チームは Microsoft 365 Defender ポータル内で警告を受け取ります。 脅威が終わりのない流れを考えると、セキュリティ チームは多くの場合、多くの場合、アラートの量が多い場合に対処する課題に直面します。 幸いMicrosoft 365 Defender、セキュリティ運用チームが脅威に効率的かつ効果的に対処するのに役立つ自動調査と応答 (AIR) 機能が含まれています。
 
 自動調査が完了すると、インシデントに関するあらゆる証拠に対して評決が下されます。 評決に応じて、修復アクションが識別されます。 場合によっては、修復アクションが自動的に実行されます。それ以外の場合は、修復アクションは、Microsoft 365 Defender承認を待っています。 
 
@@ -65,11 +65,11 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 攻撃が発生した場合は、攻撃に対応するのに十分ではありません。 ランサムウェアなどの複数フェーズの拡張攻撃では、進行中の攻撃の証拠を積極的に検索し、完了する前に停止するアクションを実行する必要があります。
 
-高度な検索は、最大 30 日間の生データを探索Microsoft 365 Defenderクエリ ベースの脅威検出ツールです。 ネットワーク内のイベントを事前に検査して、脅威インジケーターとエンティティを見つけることができます。 このデータへの柔軟なアクセスMicrosoft 365 Defender、既知の脅威と潜在的な脅威の両方に対する抑制されていない検出が可能です。
+高度な検索は、最大 30 日間の生データを探索Microsoft 365 Defenderクエリ ベースの脅威検出ツールです。 ネットワーク内のイベントを事前に検査して、脅威インジケーターとエンティティを見つけることができます。 このデータへの柔軟なアクセスMicrosoft 365 Defender、既知の脅威と潜在的な脅威の両方に対する拘束されていない検出が可能です。
 
 同じ脅威検出クエリを使用して、カスタム検出ルールを作成できます。 これらのルールは自動的に実行され、侵害の疑いのあるアクティビティ、正しく構成されていないコンピューター、その他の結果を確認し、それに対応します。
 
-詳細[については、「高度な検索機能を使用](advanced-hunting-overview.md)して脅威を予防的にMicrosoft 365 Defenderを参照してください。
+詳細[については、「高度な検索を](advanced-hunting-overview.md)使用して脅威を予防的にMicrosoft 365 Defenderを参照してください。
 
 ## <a name="get-ahead-of-emerging-threats-with-threat-analytics"></a>脅威分析で新たな脅威を先取りする
 
@@ -81,14 +81,14 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 - 一般的な攻撃対象領域
 - 流行しているマルウェア
 
-脅威分析には、特定された脅威ごとに、関連するインシデントや影響を受けたMicrosoft 365に関する情報も含まれます。
+脅威分析には、特定された脅威ごとに、関連するインシデントや影響を受Microsoft 365資産に関する情報も含まれます。
 
-特定された各脅威には、アナリスト レポート、サイバーセキュリティの検出と分析の最前線にいる Microsoft セキュリティ研究者によって書かれた脅威の包括的な分析が含まれます。 また、これらのレポートでは、攻撃の表示方法に関する情報をMicrosoft 365 Defender。
+特定された各脅威には、アナリスト レポート、サイバーセキュリティの検出と分析の最前線にいる Microsoft セキュリティ研究者によって書かれた脅威の包括的な分析が含まれます。 また、これらのレポートでは、攻撃がユーザーに表示される方法に関する情報Microsoft 365 Defender。
 
 詳細については、「脅威分析」を参照[Microsoft 365 Defender](threat-analytics.md)。
 
 ## <a name="collaborate-with-microsoft-experts"></a>Microsoft の専門家と共同作業する
 
-Microsoft 脅威エキスパート - ターゲット攻撃通知は、管理された脅威検出サービスです。 適用して受け入れられると、Microsoft の脅威の専門家から標的型攻撃通知が届くので、環境に対する重大な脅威を見逃す必要はありません。 これらの通知は、組織のエンドポイント、電子メール、および ID を保護するのに役立ちます。 Microsoft 脅威エキスパート – エキスパート オンデマンドを使用すると、組織が直面している脅威に関する専門家のアドバイスを受け取り、組織が直面している脅威に関する支援を求めることができます。 追加のサブスクリプション サービスとして利用できます。
+Microsoft 脅威エキスパート - ターゲット攻撃通知は、管理された脅威の検出サービスです。 適用して受け入れられると、Microsoft の脅威の専門家から標的型攻撃通知が届くので、環境に対する重大な脅威を見逃す必要はありません。 これらの通知は、組織のエンドポイント、電子メール、および ID を保護するのに役立ちます。 Microsoft 脅威エキスパート – エキスパート オンデマンドを使用すると、組織が直面している脅威に関する専門家のアドバイスを受け取り、組織が直面している脅威に関する支援を求めることができます。 追加のサブスクリプション サービスとして利用できます。
 
 詳細については、「概要」[のMicrosoft 脅威エキスパートをMicrosoft 365してください](/security/mtp/microsoft-threat-experts.md)。

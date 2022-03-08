@@ -1,9 +1,9 @@
 ---
 title: Contoso 社の COVID-19 の応答とハイブリッド作業のサポート
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso Corporation が COVID-19 パンデミックに対してどのように対応し、ハイブリッド作業用のソフトウェア のインストールと更新インフラストラクチャを設計したのかについて説明します。
-ms.openlocfilehash: 9ed3857c97bd82bd03a6a192bec5666f22e0589a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8b3829b7d3361c3a29ee495dd5a335a28a08c0b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207489"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325727"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Contoso 社の COVID-19 の応答とハイブリッド作業のサポート
 
@@ -31,13 +31,13 @@ COVID-19 パンデミックが始め、突然、不可欠な労働者を含む�
 
 Contoso 社は、既にリモートワークフォースの 25% をサポートするためにパリ本社オフィスにリモート アクセス VPN サーバーを持っていたが、従業員の 90% をサポートするリモート アクセス容量を拡大するために迅速に移行しました。 Contoso 社は、リモート ワーカーが Contoso イントラネットへのアクセスに地域的に近いエントリ ポイントを使用するために、各サテライト オフィスにリモート アクセス VPN サーバーを展開しました。
 
-Contoso 社は、スプリット トンネリング用のノート PC、タブレット、スマートフォンにインストールされている VPN クライアントの構成を更新し、Office 365 エンドポイントのオプティマイズ セットのトラフィックが VPN 接続をバイパスし、インターネット上で直接送信されました。 詳細については、「VPN スプリット トン[ネリングを使用Office 365ユーザーの接続を最適化する」を参照してください](../enterprise/microsoft-365-vpn-split-tunnel.md)。
+Contoso 社は、スプリット トンネリング用のノート PC、タブレット、スマートフォンにインストールされている VPN クライアントの構成を更新し、Office 365 エンドポイントのオプティマイズ セットのトラフィックが VPN 接続をバイパスし、インターネット上で直接送信された。 詳細については、「VPN スプリット トン[ネリングを使用Office 365ユーザーの接続を最適化する」を参照してください](../enterprise/microsoft-365-vpn-split-tunnel.md)。
 
 パリ本社と各サテライト オフィスに VPN デバイスをインストールした結果の構成を次に示します。 
 
 ![Contoso の VPN インフラストラクチャ。](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
 
-インストールされた VPN クライアントを持つリモート ワーカーは、DNS を使用して地域に最も近いオフィスを検索し、そこにインストールされている VPN デバイスに接続します。 スプリット トンネリングを使用すると、オプティマイズ エンドポイントMicrosoft 365へのトラフィックは、ネットワークの場所に最も近い地域にMicrosoft 365されます。 その他のすべてのトラフィックは、VPN 接続を通して VPN デバイスに送信されます。
+インストールされた VPN クライアントを持つリモート ワーカーは、DNS を使用して地域に最も近いオフィスを検索し、そこにインストールされている VPN デバイスに接続します。 スプリット トンネリングを使用すると、Microsoft 365最適化エンドポイントへのトラフィックは、地域で最も近いネットワークMicrosoft 365に直接送信されます。 その他のすべてのトラフィックは、VPN 接続を通して VPN デバイスに送信されます。
 
 ## <a name="contosos-support-for-hybrid-work"></a>Contoso 社によるハイブリッド作業のサポート
 
@@ -47,7 +47,7 @@ Contoso 社は、スプリット トンネリング用のノート PC、タブ�
 - 常にオンサイト。
 - オンサイトとリモートの組み合わせ。
 
-Microsoft 365、セキュリティ、コンプライアンス機能は、ゼロトラスト用に設計され、ユーザーとそのデバイスの場所に関係なく動作するように設計されています。 詳細については、「Zero [Trust」を参照してください](https://www.microsoft.com/security/business/zero-trust)。
+Microsoft 365、セキュリティ、コンプライアンスの機能は、ゼロトラスト用に設計され、ユーザーとそのデバイスの場所に関係なく動作するように設計されています。 詳細については、「Zero [Trust」を参照してください](https://www.microsoft.com/security/business/zero-trust)。
 
 ただし、ソフトウェアの新しいインストールと更新プログラムの管理は、インストールするソフトウェアがオンプレミスまたはインターネット ソースから提供される可能性があるため、デバイスの場所に依存します。 Contoso IT アーキテクトは、ワーカーではなく、デバイスの場所に基づいて新しいインストールと更新インフラストラクチャを設計しました。
 
@@ -55,13 +55,13 @@ Microsoft 365、セキュリティ、コンプライアンス機能は、ゼロ�
 
 ### <a name="dedicated-on-premises"></a>専用のオンプレミス
 
-専用のオンプレミス デバイスは、Contoso イントラネットから離れたことがないデスクトップまたはサーバー コンピューターであり、VPN クライアントがインストールされていません。 これらのオンプレミス デバイスは、Microsoft Endpoint Configuration Manager、Microsoft 365 Apps for enterprise、エッジ ブラウザーのインストールと更新に引き続き Windows 10 とその配布ポイントを使用します。
+専用のオンプレミス デバイスは、Contoso イントラネットから離れたことがないデスクトップまたはサーバー コンピューターであり、VPN クライアントがインストールされていません。 これらのオンプレミス デバイスは、引き続き Microsoft Endpoint Configuration Manager および配布ポイントを使用して、Windows 10、Microsoft 365 Apps for enterprise、エッジ ブラウザーのインストールと更新を行います。
 
 ### <a name="roaming"></a>ローミング
 
 ローミング デバイスは Contoso イントラネットから離れ、Contoso VPN クライアントがインストールされたスマートフォンやタブレットなど、多くのオフィス ワーカーとすべてのリモート ワーカー、その他の組織が所有するデバイスに発行されたラップトップを含む場合があります。 
 
-これらのデバイスは、いつでもインターネットに接続できるので、intune または他のクラウドベースのサービスを使用して、Windows 10、Microsoft 365 Apps for enterprise、および Edge のインストールと更新を行います。 既存のオンプレミスの Configuration Manager 配布ポイントは使用しない。
+これらのデバイスは、いつでもインターネットに接続できるので、Intune または他のクラウドベースのサービスを使用して、Windows 10、Microsoft 365 Apps for enterprise、および Edge のインストールと更新を行います。 既存のオンプレミスの Configuration Manager 配布ポイントは使用しない。
 
 つまり、ローミング デバイスのインストールと更新の一部は、オンプレミスでイントラネットに接続されている間、インターネット上で行われます。 しかし、Contoso IT アーキテクトは、特にほとんどのリモート ワーカーがイントラネットにほとんど接続されていない場合、インターネットへのイントラネット帯域幅の最適化よりも、構成の簡素化が重要だと決定しました。
 
@@ -81,9 +81,9 @@ Microsoft 365、セキュリティ、コンプライアンス機能は、ゼロ�
 
 ## <a name="new-onboarding-process"></a>新しいオンボーディング プロセス
 
-新しいワーカーまたはデータセンター内の新しいサーバーに発行された新しい専用のオンプレミス デバイスの場合、ワーカーがサインインすると、OnPremDevices グループのデバイスのメンバーシップに基づいて Configuration Manager クライアントが、Windows 10、Microsoft 365 Apps for enterprise、および Edge の最新の更新プログラムをオンプレミス構成マネージャー配布ポイントからダウンロードしてインストールします。 完了すると、専用のオンプレミス デバイスを使用する準備が整い、これらの配布ポイントを継続的な更新に使用します。
+新しいワーカーまたはデータセンター内の新しいサーバーに対して発行された新しい専用のオンプレミス デバイスの場合、ワーカーがサインインすると、OnPremDevices グループのデバイスのメンバーシップに基づいて Configuration Manager クライアントが、Windows 10、Microsoft 365 Apps for enterprise、および Edge の最新の更新プログラムをオンプレミスの Configuration Manager 配布ポイントからダウンロードしてインストールします。 完了すると、専用のオンプレミス デバイスを使用する準備が整い、これらの配布ポイントを継続的な更新に使用します。
 
-新しいワーカーに発行された新しいリモート デバイスの場合、ワーカーがサインインすると、RoamingDevices グループのメンバーシップに基づいてデバイスが Intune クラウド サービスや他のサービスに連絡し、Windows 10、Microsoft 365 Apps for enterprise、および Edge の最新の更新プログラムをダウンロードしてインストールします。 完了すると、リモート デバイスを使用する準備が整い、インストールされた VPN クライアントを使用してオンプレミス のリソースにアクセスし、継続的な更新のためにMicrosoft 365ネットワークを使用します。
+新しいワーカーに発行された新しいリモート デバイスの場合、ワーカーがサインインすると、RoamingDevices グループのメンバーシップに基づいてデバイスが Intune クラウド サービスや他のサービスに連絡し、Windows 10、Microsoft 365 Apps for enterprise、および Edge の最新の更新プログラムをダウンロードしてインストールします。 完了すると、リモート デバイスを使用する準備が整い、インストールされた VPN クライアントを使用してオンプレミス のリソースにアクセスし、継続的な更新Microsoft 365ネットワークにアクセスします。
 
 ## <a name="next-step"></a>次の手順
 

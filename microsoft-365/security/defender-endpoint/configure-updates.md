@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: af522fcd479b2fbcf8d3327f4cb382987cb7ad46
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 4261e32721da86233a0a929a435c318904d6ac12
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218576"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324145"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Microsoft Defender 更新プログラムのカスタム段階的ロールアウト プロセスを作成する
 
@@ -37,7 +37,7 @@ ms.locfileid: "61218576"
 > [!NOTE]
 > この機能には、Microsoft Defender ウイルス対策バージョン 4.18.2106.X 以降が必要です。
 
-Defender 更新プログラム用に独自のカスタム段階的ロールアウト プロセスを作成するには、グループ ポリシー、グループ ポリシー、Microsoft エンドポイント マネージャー PowerShell を使用できます。
+Defender 更新プログラム用に独自のカスタム段階的ロールアウト プロセスを作成するには、グループ ポリシー、Microsoft エンドポイント マネージャー、PowerShell を使用できます。
 
 次の表に、更新プログラム チャネルを構成するための使用可能なグループ ポリシー設定を示します。
 
@@ -56,21 +56,21 @@ Defender 更新プログラム用に独自のカスタム段階的ロールア�
 ## <a name="group-policy"></a>グループ ポリシー
 
 > [!NOTE]
-> 更新された Defender ADMX テンプレートは、21H2 リリースのバージョンと共に公開Windows 10。 ローカライズされていないバージョンはでダウンロードできます https://github.com/microsoft/defender-updatecontrols 。
+> 更新された Defender ADMX テンプレートが、21H2 リリースのバージョンと共に公開Windows 10。 ローカライズされていないバージョンはでダウンロードできます https://github.com/microsoft/defender-updatecontrols。
 
-グループ ポリシーを[使用して](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)、エンドポイントのMicrosoft Defender ウイルス対策管理できます。
+グループ ポリシーを使用[して、](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)エンドポイントのMicrosoft Defender ウイルス対策管理できます。
 
-一般に、次の手順を使用して、グループ ポリシー設定を構成Microsoft Defender ウイルス対策変更できます。
+一般に、次の手順を使用して、グループ ポリシー Microsoft Defender ウイルス対策構成または変更できます。
 
-1. グループ ポリシー管理マシンで、グループ ポリシー **管理** コンソールを開き、構成するグループ ポリシー オブジェクト **(GPO)** を右クリックし、[編集] をクリック **します**。
+1. グループ ポリシー管理マシンで、グループ ポリシー管理コンソールを開き、構成するグループ ポリシー **オブジェクト (GPO**) を右クリックし、[編集] をクリック **します**。
 
 2. グループ ポリシー管理エディターを使用して、[コンピューターの構成] **に移動します**。
 
 3. [管理 **用テンプレート] をクリックします**。
 
-4. ツリーを展開して **、Windowsコンポーネント> Microsoft Defender ウイルス対策。**
+4. ツリーを展開して、**Windowsコンポーネント> Microsoft Defender ウイルス対策**。
 
-5. 構成する設定を含むセクション(このトピックの表では Location と呼ばれます) を展開し、設定をダブルクリックして開き、構成を変更します。
+5. 構成する設定を含むセクション (このトピックの表では Location と呼ばれます) を展開し、設定をダブルクリックして開き、構成を変更します。
 
 6. [通常と同じ方法で更新された GPO を展開します](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx)。
 
@@ -78,13 +78,13 @@ Defender 更新プログラム用に独自のカスタム段階的ロールア�
 
 Intune でカスタム ポリシーを作成するには、以下のリンクの手順に従います。
 
-[Azure Microsoft Docs - Windows 10デバイスMicrosoft Intuneカスタム設定 \| を追加する](/mem/intune/configuration/custom-settings-windows-10)
+[Azure Microsoft Docs - Windows 10デバイスMicrosoft Intuneカスタム設定を\|追加する](/mem/intune/configuration/custom-settings-windows-10)
 
-段階的なロールアウト プロセスで使用される Defender CSP の詳細については [、「Defender CSP」を参照してください](/windows/client-management/mdm/defender-csp)。
+段階的なロールアウト プロセスで使用される Defender CSP の詳細については、「 [Defender CSP」を参照してください](/windows/client-management/mdm/defender-csp)。
 
 ## <a name="powershell"></a>PowerShell
 
-段階的な `Set-MpPreference` 更新プログラムのロールアウトを構成するには、コマンドレットを使用します。
+段階的な更新 `Set-MpPreference` プログラムのロールアウトを構成するには、コマンドレットを使用します。
 
 次のパラメーターを使用します:
 
@@ -100,4 +100,4 @@ Set-MpPreference
 
 ベータ `Set-MpPreference -PlatformUpdatesChannel Beta` チャネルから届くプラットフォーム更新プログラムを構成するために使用します。
 
-パラメーターの詳細と構成方法については[、「Set-MpPreference (Microsoft Defender ウイルス対策)|Microsoft Docs](/powershell/module/defender/set-mppreference).
+パラメーターの詳細と構成方法については、「[Set-MpPreference (Microsoft Defender ウイルス対策)|Microsoft Docs](/powershell/module/defender/set-mppreference)。

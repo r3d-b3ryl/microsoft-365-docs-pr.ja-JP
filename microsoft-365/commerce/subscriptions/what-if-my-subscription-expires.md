@@ -2,8 +2,8 @@
 title: サブスクリプションが終了した場合、データとアクセスはどうなりますか?
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: 一般法人向け Microsoft 365 のサブスクリプションが期限切れになった場合、無効になった場合、または解約された場合に、データがどうなるかについて説明します。
 ms.date: 09/16/2021
-ms.openlocfilehash: 0f31665c64ca3c8ffee50069b607d27ffbf48d20
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 8baebd55217dd5cd38228cca26a7504e5021f06b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322568"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322185"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
@@ -55,17 +55,17 @@ ms.locfileid: "62322568"
   
 > [!NOTE]
 >
-> **"顧客データ" とは何ですか?** [Microsoft オンライン サービス使用条件](https://go.microsoft.com/fwlink/p/?LinkId=613649)に定義されている顧客データとは、お客様自身が Microsoft 365 サービスを使用することによって、または代理によって Microsoft に提供されるすべてのテキスト、サウンド、または画像ファイルを含むすべてのデータを指します。 顧客データの保護の詳細については、「[Microsoft Service Trust Portal の使用を開始する](../../compliance/get-started-with-service-trust-portal.md)」を参照してください。
+> **「顧客データ」とは** 顧客データについては、[Microsoft オンライン サービス条件](https://go.microsoft.com/fwlink/p/?LinkId=613649)で定義されており、Microsoft 365 サービスの顧客の利用を通じて、顧客またはその代理人によって Microsoft に提供されるすべてのテキスト、音声、画像ファイルを含むすべてのデータのことを指します。顧客データの保護の詳細については、「[Microsoft Service Trust Portal の使用を開始する](../../compliance/get-started-with-service-trust-portal.md)」を参照してください。
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合
 
-期間の終了日より前にサブスクリプションをキャンセルすると、サブスクリプションは期限切れステージをスキップし、ほとんどの国と地域で無効ステージ (ほとんどのサブスクリプションにおいて 90 日間) に直接移行します。 キャンセルする前に[データをバックアップする](back-up-data-before-switching-plans.md)ことをお勧めしますが、管理者として、無効ステージにあっても組織のデータに引き続きアクセスしてバックアップすることができます。 残された顧客データは 90 日後に削除され、キャンセル後、180 日以内に削除されます。
+契約終了日前にサブスクリプションをキャンセルすると、サブスクリプションは期限切れステージをスキップして、直接無効ステージになります。無効状態は、ほとんどのサブスクリプションおよびほとんどの国と地域で 90 日間です。キャンセルする前に[データをバックアップ](back-up-data-before-switching-plans.md)しておくことをお勧めします。ただし、管理者であれば、無効ステージで、組織のデータにアクセスしてバックアップすることができます。残した顧客データは、90 日後に削除される可能性があり、キャンセルしてから 180 日以内にすべて削除されます。
   
 サブスクリプションをキャンセルした場合に想定される動作を説明します。
   
 - **管理者アクセス:** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。全体管理者または課金管理者の場合は、すべてのデータを維持したまま [サブスクリプションを再アクティブ化](reactivate-your-subscription.md)できる期間が 90 日間あります。
 
-- **ユーザー アクセス** ユーザーは、OneDrive for Business などのサービスの使用や、顧客データ (チーム サイトのメール、ドキュメントなど) へのアクセスができなくなります。 Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、 [ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)が表示されます。
+- **ユーザー アクセス** ユーザーは、OneDrive for Business などのサービスの使用や、顧客データ (チーム サイトのメール、ドキュメントなど) へのアクセスができなくなります。Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、[ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)が表示されます。
 
 キャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
   
@@ -88,10 +88,10 @@ ms.locfileid: "62322568"
   - 1 年間のプリペイド サブスクリプションを利用するオープン ボリューム ライセンス ユーザーの場合は、パートナーに連絡して、新しいプロダクト キーを購入してください。[ボリューム ライセンス サービス センター](https://go.microsoft.com/fwlink/p/?LinkID=282016)でキーをアクティブ化する手順をメールで受け取ります。新しいパートナーまたは以前のパートナーを見つける方法の詳細については、「[パートナーまたはリセラーを見つける](../../admin/manage/find-your-partner-or-reseller.md)」を参照してください。
   - Microsoft 365 Apps for business をお持ちの場合、「[サブスクリプションの継続請求を管理する](renew-your-subscription.md)」を参照してください。
 - **そのままサブスクリプションを期限切れにします。**
-  - クレジット カードまたは請求書を使って支払っており、サブスクリプションを継続しない場合は、[継続請求を無効にします](renew-your-subscription.md)。 有効期限日を過ぎるとサブスクリプションは期限切れになり、関連するメール通知はすべて無視できます。
+  - クレジット カードまたは請求書を使って支払っており、サブスクリプションを継続しない場合は、[継続請求を無効にします](renew-your-subscription.md)。有効期限日を過ぎるとサブスクリプションは終了し、関連するメール通知はすべて無視できます。
   - パートナーと連携しているオープン ボリューム ライセンス ユーザーの場合は、手続きを取らなければ、サブスクリプションを期限切れにすることができます。
   - Microsoft 365 Business Standard ユーザーであり、サブスクリプションの支払いとプロダクト キーによるアクティブ化が終わっている場合は、手続きを取らなければ、サブスクリプションを期限切れにすることができます。
-- **サブスクリプションの有効期限が切れる前にキャンセルします。** 詳細については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
+- **サブスクリプションの有効期限が切れる前にキャンセルする。** 詳細については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
 
 ## <a name="what-happens-after-my-subscription-expires"></a>サブスクリプションの有効期限が切れた場合
 
@@ -101,17 +101,17 @@ ms.locfileid: "62322568"
   
 ### <a name="state-expired"></a>状態: 期限切れ
 
-**想定される動作:** 期限切れステージは、[Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 経由で購入したサブスクリプションを含む、ほとんどのサブスクリプションおよびほとんどの国と地域で 30 日間です。 Microsoft Open を除くボリューム ライセンス製品の場合、期限切れステージは 90 日間です。
+**想定される動作:** 期限切れステージは、Microsoft Open 経由で購入したサブスクリプションを含む、ほとんどのサブスクリプションおよびほとんどの国と地域で 30 日間です。ボリューム ライセンス製品の場合、[Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) を除いて、期限切れステージは 90 日間です。
 
 この状態で、ユーザーは、Microsoft 365 ポータル、Office アプリケーション、サービス (メールや SharePoint Online など) に正常にアクセスできます。
   
-管理者は、引き続き管理センターにアクセスできます。 心配する必要はありません。グローバル管理者または課金管理者は、[サブスクリプションを再アクティブ化](reactivate-your-subscription.md)して、Microsoft 365 の使用を継続することができます。 再アクティブ化しない場合は、[データをバックアップ](back-up-data-before-switching-plans.md)してください。
+管理者は、引き続き管理センターにアクセスできます。期限が切れても心配はいりません。全体管理者または課金管理者は、[サブスクリプションを再アクティブ化し](reactivate-your-subscription.md)、Microsoft 365 を使い続けることができます。それ以外の場合は、[データをバックアップ](back-up-data-before-switching-plans.md)してください。
   
 ### <a name="state-disabled"></a>状態: 無効
 
 **想定される動作:** 期限切れ状態のときにサブスクリプションを再アクティブ化しなければ、無効状態に移行します。この期間は、ほとんどのサブスクリプションおよびほとんどの国と地域で 90 日間です。ボリューム ライセンス製品の場合、無効状態の期間は 30 日間です。
 
-この状態では、アクセス権が大幅に減少します。 ユーザーはサインインすることも、メールや SharePoint Online などのサービスにアクセスすることもできません。 Office アプリケーションは最終的に読み取り専用の機能制限モードに移り、[ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)が表示されます。 サインインして管理センターにアクセスすることはできますが、ユーザーにライセンスを割り当てることはできません。 すべてのユーザー データ、メール、チーム サイト上のファイルを含む顧客データは、あなたと他の管理者のみが利用できます。
+この状態では、アクセスが大幅に縮小されます。ユーザーは、サインインや、サービス (メール、SharePoint Online など) へのアクセスを行うことができなくなり、Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、[ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)が表示されます。管理者は、引き続きサインインして管理センターにアクセスできますが、ライセンスをユーザーに割り当てることはできません。チーム サイトのすべてのユーザー データ、メール、ファイルを含む顧客データには、管理者だけがアクセスできます。
 
 全体管理者または課金管理者は、[サブスクリプションを再アクティブ化](reactivate-your-subscription.md)し、すべての顧客データをそのまま残して Microsoft 365 を引き続き使用することができます。再アクティブ化しない場合は、[データをバックアップ](back-up-data-before-switching-plans.md)してください。
 
@@ -134,11 +134,11 @@ ms.locfileid: "62322568"
 
 - **Microsoft 365 を購入します。** 試用期間が経過すると、期限切れステージに入り、Microsoft 365 を購入するまでの期間がさらに 30 日間与えられます (ほとんどの国と地域のほとんどの試用版が対象)。 試用版を有料サブスクリプションに切り替える方法については、「[無料試用版からサブスクリプションを購入する](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial)」を参照してください。
 - **試用期間を延長する**。Microsoft 365 を評価する時間がさらに必要なときには、[試用期間を延長する](../extend-your-trial.md)ことができます。
-- **試用版を終了するか、期限切れにします。** Microsoft 365 を購入しない場合は、試用期間を終了するか、[キャンセルすることができます](cancel-your-subscription.md)。 保持するデータをバックアップします。 30 日間の期限切れステージの直後に、試用版アカウントの情報とデータが完全に消去されます。
+- **試用版をキャンセルするか期限切れにする。** Microsoft 365 を購入しない場合は、試用版を期限切れにするか、[キャンセルする](cancel-your-subscription.md)ことができます。必要なデータはバックアップしてください。30 日間の期限切れステージが過ぎるとすぐに、試用版のアカウントの情報とデータが完全に消去されます。
 
 > [!NOTE]
 >
-> このページに記載された情報には、「[Microsoft ポリシーの免責事項および変更に関する通知 (英語)](https://go.microsoft.com/fwlink/p/?LinkId=613651)」が適用されます。 このサイトに定期的にアクセスして、変更がないか確認してください。
+> このページに記載された情報には、「[Microsoft ポリシーの免責事項および変更に関する通知 (英語)](https://go.microsoft.com/fwlink/p/?LinkId=613651)」が適用されます。このサイトに定期的にアクセスして、変更がないか確認してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 

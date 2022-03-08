@@ -2,8 +2,8 @@
 title: MSOID の Office 365 CNAME レコードの目的
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 認証プロセスに最適なサーバーに移動する Office 365 の 'MSOID' CNAME レコードの詳細については、応答を速くします。
 monikerRange: o365-21vianet
-ms.openlocfilehash: e51847065ac3f91f44b8be35932869e9418e8a70
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1b053ac0df7cd770b5627b688e90641688f94141
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188795"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325125"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>MSOID の Office 365 CNAME レコードの目的
 
@@ -41,6 +41,6 @@ Office 365 で "MSOID" という CNAME レコードを追加する必要があ�
   
  **ドメインOffice 365 DNS レコードを** 管理する場合は、Office 365 CNAME レコードをセットアップします。 
   
- **DNS ホストでドメイン** の DNS レコードを管理している場合は、DNS ホストの指示に従って、このレコード [を自分で作成します](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
+ **DNS ホストでドメインの DNS** レコードを管理する場合は、DNS ホストの指示に従って、このレコード [を自分で作成します](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
   
-Office 365 展開を計画している場合に、追加または更新が必要なすべての DNS レコードの詳細については、「リファレンス: Office 365 の外部ドメイン ネーム システム[レコード」を参照してください](../../enterprise/external-domain-name-system-records.md)。
+Office 365 展開を計画し、追加または更新が必要なすべての DNS レコードの詳細については、「リファレンス: Office 365 の外部ドメイン ネーム システム レコード」を[参照してください](../../enterprise/external-domain-name-system-records.md)。

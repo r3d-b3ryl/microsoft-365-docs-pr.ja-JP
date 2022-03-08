@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e364a2cffcd1c18c3d220e0747010a855fafed2a
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 530846d4a7c18900f0697806bb656aa653b71947
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345953"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326161"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>デバイスの検出に関するよく寄せられる質問
 
@@ -49,11 +47,11 @@ ms.locfileid: "62345953"
 
 このモードでは、Microsoft Defender for Endpoint にオンボードされたエンドポイントは、ネットワーク内の監視されたデバイスをアクティブにプローブして、収集されたデータを強化できます (ネットワーク トラフィックの量はごくわずかです)。 基本検出モードで観測されたデバイスだけが、標準モードでアクティブにプローブされます。 このモードは、信頼性の高い一貫性のあるデバイス インベントリを構築する場合に強くお勧めします。 このモードを無効にし、[基本検出モード] を選択すると、ネットワーク内の管理されていないエンドポイントの表示が制限される可能性があります。
 
- また、標準モードでは、ネットワーク内のマルチキャスト クエリを使用する一般的な検出プロトコルを利用して、パッシブメソッドを使用して実行されたデバイスに加えて、さらに多くのデバイスを検索します。
+ また、標準モードでは、ネットワーク内でマルチキャスト クエリを使用する一般的な検出プロトコルを利用して、パッシブメソッドを使用して観察されたデバイスに加えて、さらに多くのデバイスを検索します。
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>標準検出を実行するデバイスを制御できますか?
 
-Standard Discovery の実行に使用されるデバイスの一覧をカスタマイズできます。 この機能をサポートしているすべてのオンボード デバイス (現在は Windows 10 以降および Windows Server 2019 以降のデバイスのみ) で Standard Discovery を有効にするか、デバイス タグを指定してデバイスのサブセットまたはサブセットを選択できます。 この場合、他のすべてのデバイスは基本検出のみを実行するように構成されます。 構成は、[デバイスの検出設定] ページで使用できます。
+Standard Discovery の実行に使用されるデバイスの一覧をカスタマイズできます。 この機能をサポートしているすべてのオンボード デバイス (現在は Windows 10 以降および Windows Server 2019 以降のデバイスのみ) で Standard discovery を有効にするか、デバイス タグを指定してデバイスのサブセットまたはサブセットを選択できます。 この場合、他のすべてのデバイスは基本検出のみを実行するように構成されます。 構成は、[デバイスの検出設定] ページで使用できます。
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>管理されていないデバイスをデバイス インベントリ リストから除外できますか?
 
@@ -69,7 +67,7 @@ Windows 10 バージョン 1809 以降、Windows 11、Windows Server 2019、ま�
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>キャプチャと分析を行うプロトコルは何ですか?
 
-既定では、 Windows 10 バージョン 1809 以降、Windows 11、Windows Server 2019、または Windows Server 2022 で実行されているオンボード デバイスはすべて、ARP、CDP、DHCP、DHCPv6、IP (ヘッダー)、LLDP、LLMNR、MDNS、MNDP、NBNS、SSDP、TCP (SYN ヘッダー) のプロトコルをキャプチャおよび分析しています。
+既定では、Windows 10 バージョン 1809 以降、Windows 11、Windows Server 2019、または Windows Server 2022 で実行されているオンボード デバイスはすべて、ARP、CDP、DHCP、DHCPv6、IP (ヘッダー)、LLDP、LLMNR、MDNS、MNDP、NBNS、SSDP、TCP (SYN ヘッダー) のプロトコルをキャプチャおよび分析しています。
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>Standard Discovery でアクティブなプロビリングに使用するプロトコルは何ですか?
 デバイスが標準検出を実行するように構成されている場合、公開されたサービスは、ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL、RPC、mDNS、DHCP、AFP、CrestonCIP、IphoneSync、WinRM、VNC、SLP、LDAP のプロトコルを使用してプローブされます。
@@ -90,7 +88,7 @@ Windows 10 バージョン 1809 以降、Windows 11、Windows Server 2019、ま�
 
 デバイスの特性の変化が観察された場合、デバイスはアクティブにプローブされ、既存の情報が最新の状態に更新されます (通常、デバイスは 3 週間に 1 回までプローブされます)
 
-## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>セキュリティ ツールによって開始されたUnicastScanner.ps1スキャン アクティビティに関するアラートが発生しました。何を行う必要がありますか?
+## <a name="my-security-tool-raised-alert-on-unicastscannerps1--psscript_guidps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>セキュリティ ツールによって開始された UnicastScanner.ps1/PSScript_{GUID}.ps1またはポート スキャン アクティビティに関する警告が発生しました。何を行う必要がありますか?
 
 アクティブなプロブ スクリプトは Microsoft によって署名され、安全です。 除外リストに次のパスを追加できます。 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
 
@@ -116,9 +114,9 @@ Windows 10 バージョン 1809 以降、Windows 11、Windows Server 2019、ま�
 
 Standard discovery を検討する場合は、プロブの影響、特にセキュリティ ツールが悪意のあるアクティビティを疑う可能性があるかどうかについて疑問に思う場合があります。 次のサブセクションでは、ほとんどの場合、組織が Standard Discovery を有効にするための懸念を持つ必要がない理由について説明します。  
 
-### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>Probing は、ネットワーク上のすべてのWindowsデバイスに分散されます。
+### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>Probing は、ネットワーク上Windowsデバイス全体に分散されます。
 
-通常、侵害されたデバイスの数が少ないネットワーク全体をスキャンする悪意のあるアクティビティとは対照的に、Microsoft Defender for Endpoint の Standard Discovery probing は、オンボードのすべての Windows デバイスから開始され、アクティビティは無害で異常ではありません。 プロブは、ネットワークでサポートされているオンボード デバイス間の試みをバランスを取るクラウドから一中心に管理されます。  
+通常、侵害されたデバイスの数が少ないネットワーク全体をスキャンする悪意のあるアクティビティとは対照的に、Microsoft Defender for Endpoint の Standard Discovery probing は、オンボードのすべての Windows デバイスから開始され、アクティビティが無害で異常ではありません。 プロブは、ネットワークでサポートされているオンボード デバイス間の試みをバランスを取るクラウドから一中心に管理されます。  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>アクティブなプロブは、余分なトラフィックのごくわずかの量を生成します
 
@@ -126,7 +124,7 @@ Standard discovery を検討する場合は、プロブの影響、特にセキ�
 
 ### <a name="your-windows-device-already-runs-active-discovery"></a>デバイスWindowsアクティブな検出が既に実行されている
 
-アクティブな検出機能は、Windows オペレーティング システムに常に埋め込まれているので、近くのデバイス、エンドポイント、プリンターを検索して、ネットワーク内のエンドポイント間での "プラグ アンド プレイ" エクスペリエンスとファイル共有を容易にします。 同様の機能は、モバイル デバイス、ネットワーク機器、インベントリ アプリケーションにも実装されています。  
+アクティブな検出機能は、Windows オペレーティング システムに常に埋め込まれているので、近くのデバイス、エンドポイント、およびプリンターを検索し、ネットワーク内のエンドポイント間での "プラグ アンド プレイ" エクスペリエンスとファイル共有を容易にします。 同様の機能は、モバイル デバイス、ネットワーク機器、インベントリ アプリケーションにも実装されています。  
 
 標準検出では、同じ検出方法を使用してデバイスを識別し、デバイス インベントリ内のネットワーク内のすべてのデバイスを統合Microsoft 365 Defenderします。 たとえば、標準検出では、ネットワーク内の利用可能なプリンターをリストする場合と同Windows近くのエンドポイントを識別します。 
 

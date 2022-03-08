@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: da12be831aa93032b5d087d36e551df0f6370560
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c922213a262fdc9c61d6f79d0205e6ead96fd44a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191517"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326427"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>[修復アクション] Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "60191517"
 > 修復アクションが自動的に実行されるのか、承認時にのみ実行されるのかは、オートメーション レベルなどの特定の設定によって異なります。 詳細については、次の記事を参照してください。
 > - [自動調査と応答機能を構成する方法は、Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
 > - [デバイスでの脅威の修復方法](../defender-endpoint/automated-investigations.md)
-> - [コラボレーション コンテンツに対する電子メール&修復アクション](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
+> - [電子メールとコラボレーション コンテンツに対する&修復アクション](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
 次の表は、現在サポートされている修復アクションの概要を示Microsoft 365 Defender。 
 
@@ -60,7 +60,7 @@ ms.locfileid: "60191517"
 
 | 判定    | 影響を受けるエンティティ    | 結果|
 |------|------|------|
-| Malicious (悪意のある)    | デバイス (エンドポイント)    | 修復アクションは自動的に実行されます (組織の [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)デバイス グループが完全に設定されている場合 - 脅威 **を自動的に修復する**)|
+| Malicious (悪意のある)    | デバイス (エンドポイント)    | 修復アクションは自動的に実行されます (組織のデバイス [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) グループが完全に設定されている場合 **- 脅威を自動的に修復する**)|
 | Malicious (悪意のある)    | メールのコンテンツ (URL または添付ファイル) | 推奨される修復アクションが承認待ちになります|
 | Suspicious (不審)    | デバイスまたはメールのコンテンツ | 推奨される修復アクションが承認待ちになります|
 | 脅威は検出されませんでした    | デバイスまたはメールのコンテンツ    | 必要な修復アクションはありません|
@@ -75,7 +75,7 @@ ms.locfileid: "60191517"
 - [デバイスまたは電子](../defender-endpoint/advanced-hunting-overview.md) メールでの高度なハンティング アクション
 - [迷惑](../office-365-security/threat-explorer.md) メールへのメールの移動、メールのソフト削除、メールのハード削除など、電子メール コンテンツに対するエクスプローラー アクション
 - ファイル [の削除](/windows/security/threat-protection/microsoft-defender-atp/live-response) 、プロセスの停止、スケジュールされたタスクの削除などの手動のライブ応答アクション
-- Microsoft Defender [for Endpoint API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)を使用したライブ応答アクション (デバイスの分離、ウイルス対策スキャンの実行、ファイルに関する情報の取得など)
+- [Microsoft Defender for Endpoint API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis) を使用したライブ応答アクション (デバイスの分離、ウイルス対策スキャンの実行、ファイルに関する情報の取得など)
 
 ## <a name="next-steps"></a>次の手順
 

@@ -2,8 +2,8 @@
 title: プロモーション コードを使用して価格を下
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -14,35 +14,35 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_purchase
 - AdminSurgePortfolio
 - okr_SMB
-- commerce_purchase
-search.appverid: MET150 S
-description: 価格を下Microsoft 365プロモーション コードを Microsoft 365する方法と、エラーが発生した場合のプロモーション コードのトラブルシューティング方法について説明します。
+search.appverid: MET150
+description: 価格を下Microsoft 365にプロモーション コードを適用する方法と、エラーが発生した場合のプロモーション コードのトラブルシューティング方法について説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: ac7d07406ff25c5f32d269567e418cd94f540d0f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 08a5df42de5c230ef7f0945e40c13262e0ae2bb7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160100"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325405"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>プロモーション コードを使用して価格を下
 
-サブスクリプションを購入する場合は、プロモーション コードを使用して価格を下ろします。 この記事では、プロモーション コードをサブスクリプションに適用する方法、 [プロモーション](#promo-code-terms)コードの用語について説明する方法、およびプロモーション コードのトラブルシューティング [を行う方法について説明します](#troubleshooting-promo-codes)。
+サブスクリプションを購入する場合は、プロモーション コードを使用して価格を下ろします。 この記事では、サブスクリプションにプロモーション コードを適用する方法、プロモーション コードの用語について、[](#promo-code-terms)プロモーション コードのトラブルシューティングを行う方法について[説明します](#troubleshooting-promo-codes)。
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>プロモーション コードをサブスクリプションに適用する
 
 1. 新しいサブスクリプションを購入するか、既存のサブスクリプションにサービスを追加して、購入を開始します。
-2. チェックアウト時に、[プロモーションコードまたは割引コードを持っている **]** を選択し、ボックスにコードを入力します。
+2. チェックアウト時に[プロモーションコード **または** 割引コードを持つ]を選択し、ボックスにコードを入力します。
 3. [プロモーション **コードの適用] を選択します**。 正常に適用されたことを確認する必要があります。 別のメッセージが表示される場合は、「[プロモーション コードのトラブルシューティング](#troubleshooting-promo-codes)」で原因を確認します。
 4. チェックアウトを続行します。注文確認ページに、金額に含まれる割引コードが表示されます。
 
-購入が完了すると、プロモーション コードによる割引が請求書に表示されます。 詳細については、「View your 」 [を参照してください](billing-and-payments/view-your-bill-or-invoice.md)。
+購入が完了すると、プロモーション コードによる割引が請求書に表示されます。 詳細については、「View [your」を参照してください](billing-and-payments/view-your-bill-or-invoice.md)。
   
 ## <a name="promo-code-terms"></a>プロモーション コードの用語
 
-次のガイドラインは、ビジネス サブスクリプションのプロモーション Microsoft 365適用されます。
+次のガイドラインは、ビジネス サブスクリプションのMicrosoft 365プロモーション コードに適用されます。
   
 - **各サブスクリプションのプロモーション コードの数** 同じ注文の複数のサブスクリプションに 1 つのプロモーション コードを使用できますが、同じサブスクリプションに複数のプロモーション コードを使用することはできません。
 - **割引期間** プロモーション コード割引は、注文に適用されると、サブスクリプションの期間だけ続きます。サブスクリプションの期間が月単位の場合、プロモーション コード割引は、プロモーション コードを入力した請求月の終わりまで続きます。サブスクリプションの期間が年単位の場合 (支払いが月単位でも)、プロモーション コード割引はプロモーション コードを入力した請求年の終わりまで続きます。

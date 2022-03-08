@@ -2,8 +2,8 @@
 title: E4 のお客様Office 365情報
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,23 +14,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- customer-email
 - commerce_subscriptions
+- customer-email
 - admindeeplinkMAC
 search.appverid: MET150
-description: E4 サブスクリプションを使用した顧客のプランのアップグレードまたは変更にOffice 365情報。
+description: E4 サブスクリプションを使用しているお客様のプランのアップグレードまたは変更にOffice 365情報。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/14/2020
-ms.openlocfilehash: 74ae379a1a159c85c4a2b58bd018acb2690e3332
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 13ee5f028e8b1d45494e64b6405100a5404acd8c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173633"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317949"
 ---
 # <a name="important-information-for-office-365-e4-customers"></a>E4 のお客様Office 365情報
 
-E4 Office 365は 2015 年に廃止されました。 グローバル管理者Microsoft 365として、電子メールの更新プログラムを受信し、アクションを実行する必要がある場合に関する情報をメッセージ センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">(Microsoft 365 管理センター</a>の一部) に表示します。
+E4 Office 365は 2015 年に廃止されました。 グローバル管理者Microsoft 365として、電子メールの更新プログラムを受信し、アクションを実行する必要がある場合に関する情報をメッセージ <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">センター (Microsoft 365 管理センター</a> の一部) に表示します。
 
 ## <a name="compare-your-options-for-upgrading-or-changing-plans"></a>プランのアップグレードまたは変更のオプションを比較する
 
@@ -39,7 +39,7 @@ E4 と同じ機能を維持するか、電話会議と電話会議の新機能�
 |  | オプション 1: アップグレードしてOffice 365 E5 | オプション 2: アップグレードしてMicrosoft 365 E5 | オプション 3: 電話会議なしでMicrosoft 365 E5にアップグレードする | オプション 4: [変更] Office 365 E3 | オプション 5: [変更] Microsoft 365 E3 |
 |-|-|-|-|-|-|
 | **現在の E4 サブスクリプションに含まれるすべてのサービスとOffice 365取得する** | はい | はい | はい | いいえ | いいえ |
-| **電話で管理される番号Microsoft 365** | はい | はい | いいえ | いいえ | いいえ |
+| **電話で管理されている番号Microsoft 365** | はい | はい | いいえ | いいえ | いいえ |
 | **電話オンプレミスとオンプレミスの両方を管理するMicrosoft 365番号 (ハイブリッド展開)**<br/><br/>通話、会議、ビデオ、および共有のための 1 つのプラットフォームを使用して、コストの高いプライベートブランチ交換 (PBX) 電話システムへの依存を減らし、通信インフラストラクチャを簡素化します。 | はい | はい | いいえ | いいえ | いいえ |
 | **通話プランを追加するオプション**<br/><br/>国内通話プランまたは国内通話プランMicrosoft 365国内通話プランと国際通話Microsoft 365ライセンスを追加できます。 詳細については、「最適な [通話プラン」を参照してください](/MicrosoftTeams/calling-plan-landing-page)。 | はい<sup>1</sup> | はい | はい | はい | はい |
 | **電話会議**<br/><br/>会議の出席者は、事実上Skype for Businessから会議にダイヤルインし、開催者はダイヤルアウトして出席者を引き込みできます。 | はい<sup>2</sup> | はい | はい | いいえ | いいえ |
@@ -55,4 +55,4 @@ E4 と同じ機能を維持するか、電話会議と電話会議の新機能�
 
 サブスクリプションを更新する時期が近い場合は、これらのプランの 1 つへのアップグレードを検討してください。
 
-Microsoft からサブスクリプションを直接購入し、今すぐアップグレードする場合は、「Upgrade from a [Office 365 E4 サブスクリプション」を参照してください](upgrade-Office-365-E4.md)。 E4 から新しいプランにアップグレードしても、データは失われる可能性があります。
+Microsoft からサブスクリプションを直接購入し、今すぐアップグレードする場合は、「Upgrade [from a Office 365 E4 サブスクリプション」を参照してください](upgrade-Office-365-E4.md)。 E4 から新しいプランにアップグレードしても、データは失われる可能性があります。

@@ -23,23 +23,23 @@ search.appverid:
 - BCS160
 - MET150
 description: デバイスMicrosoft 365 Business Premium、データ、通信に対するサイバーセキュリティの脅威から企業を保護するための情報を取得します。
-ms.openlocfilehash: 041202327c82ddffa02660acf9eb6127d65ada2a
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 2e6ad120407a7bc84e089b997c990e04d438ab29
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766294"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318509"
 ---
 # <a name="how-to-get-microsoft-365-business-premium"></a>データの取得Microsoft 365 Business Premium
 
 この記事では、会社のMicrosoft 365 Business Premium方法について説明します。 以下から選択できます。
 
-- [自分で購入Microsoft 365 Business Premium試す](#get-microsoft-365-business-premium-on-your-own)
+- [自分でMicrosoft 365 Business Premium購入する](#get-microsoft-365-business-premium-on-your-own)
 - [ソリューション プロバイダーの使用](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
 
 ## <a name="get-microsoft-365-business-premium-on-your-own"></a>自分Microsoft 365 Business Premiumを取得する
 
-「[ビジネス サブスクリプションに関するMicrosoft 365購入する」を参照してください](../commerce/try-or-buy-microsoft-365.md)。 [製品] [Microsoft 365で、[](https://www.aka.ms/office365signup)製品] **Microsoft 365 Business Premium**。
+「[ビジネス サブスクリプションに関するMicrosoft 365購入する」を参照してください](../commerce/try-or-buy-microsoft-365.md)。 [製品] [Microsoft 365で、[](https://www.aka.ms/office365signup)製品] を **選択Microsoft 365 Business Premium**。
 
 ## <a name="work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium"></a>Microsoft ソリューション プロバイダーと一緒に作業して、Microsoft 365 Business Premium
 
@@ -55,6 +55,6 @@ Microsoft には、サービスを販売する権限を持つソリューショ�
 
 4. 結果の一覧を確認します。 プロバイダーを選択して、専門知識と提供するサービスの詳細を確認します。
 
-## <a name="what-does-microsoft-365-business-premium-include"></a>その他のMicrosoft 365 Business Premium含まれるもの
+## <a name="what-does-microsoft-365-business-premium-include"></a>この機能にはMicrosoft 365 Business Premiumが含まれますか?
 
 [中小企業向Microsoft 365ユーザー サブスクリプション スイートを表示する](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM)

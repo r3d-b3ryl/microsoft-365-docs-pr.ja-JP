@@ -1,9 +1,9 @@
 ---
-title: サブスクリプションにSharePointストレージを追加する
+title: サブスクリプションに SharePoint ストレージを追加する
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -15,67 +15,72 @@ ms.collection:
 - Adm_O365
 - SPO_Content
 ms.custom:
+- commerce_purchase
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
+- business_assist
 - AdminTemplateSet
+- admindeeplinkSPO
 search.appverid: MET150
-description: サブスクリプションにファイル ストレージをMicrosoft 365します。 追加のファイル ストレージを使用すると、その他のコンテンツを SharePoint。
+description: Microsoft 365 サブスクリプションにファイル ストレージを追加します。 追加のファイル ストレージを使用すると、SharePoint にさらに多くのコンテンツを格納できます。
 ms.date: 04/02/2021
-ms.openlocfilehash: 027d4d92296b4dcc7d4867af101af00c80a0c0c1
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d3321643907535d01d0fa747ad454ee8d5898e91
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370118"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325461"
 ---
-# <a name="add-more-sharepoint-storage-to-your-subscription"></a>サブスクリプションにSharePointストレージを追加する
-サイトのストレージが使いSharePoint場合は、プランが適格な場合にサブスクリプションにストレージを追加できます。 利用可能なアドオンの一覧に Office 365 **ファイル** Storageが表示されない場合は、プランが対象とされていないことを意味します。 詳細については、「自分のプラン [が適格か」を参照してください。](#is-my-plan-eligible-for-office-365-extra-file-storage)
+# <a name="add-more-sharepoint-storage-to-your-subscription"></a>サブスクリプションに SharePoint ストレージを追加する
+SharePoint サイトのストレージが使い切れ始める場合は、プランが適格な場合にサブスクリプションにストレージを追加できます。 使用可能なアドオンの一覧に Office **365 Extra File Storage** が表示されない場合は、プランが対象外となります。 詳細については、「自分のプラン [が適格か」を参照してください。](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> ボリューム ライセンスまたは CSP を使用してサブスクリプションを購入した場合、Microsoftから直接組織Office 365追加Storageを購入することはできません。 サポートが必要な場合は、担当者またはパートナーにお問い合わせください。
-> ストレージの詳細については、「OneDriveユーザーの既定の記憶域[を設定する」をOneDriveしてください](/onedrive/set-default-storage-space)。
+> ボリューム ライセンスまたは CSP を使用してサブスクリプションを購入した場合、Microsoft から直接組織Office **365 Extra File Storage** を購入することはできません。 サポートが必要な場合は、担当者またはパートナーにお問い合わせください。
+> OneDrive ストレージの詳細については、「OneDrive ユーザーの [既定の記憶域を設定する」を参照してください](/onedrive/set-default-storage-space)。
 
-## <a name="before-you-begin"></a>はじめに
+> [!TIP]
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
-この記事のタスクを実行するにはSharePointまたは管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
+## <a name="before-you-begin"></a>開始する前に
+
+この記事のタスクを実行するには、グローバル管理者または SharePoint 管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="view-available-storage"></a>使用可能なストレージの表示
 
-1. 管理センター SharePoint[アクティブ サイト] ページ<a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank"></a>に移動し、組織の管理者権限を持つ[アカウントでサインイン](/sharepoint/sharepoint-admin-role)します。
+1. SharePoint 管理センターで、[アクティブ なサイト] に <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**移動し、**</a>組織の管理者権限を持つ [アカウントでサインイン](/sharepoint/sharepoint-admin-role) します。
 
-2. ページの右上に、すべてのサイトで使用されている記憶域の容量とサブスクリプションの記憶域の合計が表示されます。 組織で複数地域を構成している場合Office 365バーには、すべての地域の場所で使用される記憶域の量も表示されます。
+2. ページの右上に、すべてのサイトで使用されている記憶域の容量とサブスクリプションの記憶域の合計が表示されます。 組織が 365 から 365 で複数地域を構成しているOfficeバーには、すべての地域の場所で使用される記憶域の量も表示されます。
 
-   ![Storageページの [アクティブなサイト] バーをクリックします。](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+   ![[アクティブ なサイト] ページの記憶域バー。](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
    > [!NOTE]
    > 記憶域の使用量には、過去 24 から 48 時間以内に行われた変更は含まれません。
 
 使用している記憶域の量を決定した後、サブスクリプションの記憶域を追加または削除できます。 記憶域の追加に必要なコストを確認するには、この記事の手順に従い、購入前に価格情報を確認してください。
   
-サイト コレクションの記憶域制限の設定の詳細については [、「Manage site collection storage limits」を参照してください](/sharepoint/manage-site-collection-storage-limits)。
+サイト コレクションの記憶域制限の設定の詳細については、「 [Manage site collection storage limits」を参照してください](/sharepoint/manage-site-collection-storage-limits)。
   
 ## <a name="buy-the-extra-storage-add-on"></a>追加のストレージ アドオンを購入する
 
 サブスクリプション用の追加ストレージをまだ購入していない場合は、そのストレージを使用できます。
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">サービスを購入する</a>] ページに移動します。
-2. [サービスの購入]**ページ** の下部にある[アドオン] セクションで、[追加ファイル] Office 365をStorageし、[詳細] を **選択****します**。
-3. [製品の詳細] ページで、[次へ] を **選択します**。
+2. [サービスの **購入] ページ** の下部にある [アドオン] セクションで、[**365** Officeストレージ] を見つけて、[詳細] を選択 **します**。
+3. 製品の詳細ページで、**[次へ]** を選択します。
 4. 必要に応じて、基本サブスクリプションを選択し、追加するストレージのギガバイト数を入力します。
 5. [今 **すぐチェックアウト] を選択します**。
 6. [この **外観の確認方法]** ページで、選択したストレージのギガバイト数を確認し、価格情報を確認し、[次へ] を選択 **します**。
-7. [注文 **の完了] ページ** で、合計を確認します。 変更が必要な場合は、[順序の編集] **を選択します**。 注文で与信チェックが必要な場合は、チェック ボックスをオンにします。 完了したら、[管理ホームに移動する] を \> **選択します**。
+7. [注文 **の完了] ページ** で、合計を確認します。 変更が必要な場合は、[注文の編集] **を選択します**。 注文で与信チェックが必要な場合は、チェック ボックスをオンにします。 完了したら、[管理ホームに移動 **する**\>] を **選択します**。
 
 ## <a name="increase-or-decrease-your-extra-storage"></a>余分な記憶域を増やしたり減らしたりする
 
-**Office 365 Extra File Storage** アドオンを使用して追加のファイル ストレージを既に購入している場合は、次の手順を使用して、サブスクリプションの余分なストレージ領域を増減できます。 ストレージを 1 ギガバイトまで減らします。 余分な記憶域を削除するには、サポート [にお問い合わせください](../admin/get-help-support.md)。
+**Office 365 Extra File Storage** アドオンを使用して追加のファイル ストレージを既に購入している場合は、次の手順を使用して、サブスクリプションの余分なストレージ領域を増やしたり減らしたりできます。 ストレージを 1 ギガバイトまで減らします。 余分な記憶域を削除するには、サポート [にお問い合わせください](../admin/get-help-support.md)。
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-2. [製品 **] タブ** で、アドオンの追加ファイルを含Office 365 **サブスクリプションStorage** 選択します。
+2. [製品 **] タブ** で、 **365 Extra File Storage Officeを含むサブスクリプションを** 選択します。
 3. [製品の詳細] ページの [アドオン] セクション **で、[** アドオンの管理 **] を選択します**。
-4. [アドオン **の管理] ウィンドウの**[アドオン] ボックスの一覧から、[追加ファイル] Office 365 **を選択Storage。**
+4. [アドオン **の管理] ウィンドウの** [アドオン] リストから、[**365 Officeストレージ] を選択します**。
 5. [数量 **]** テキスト ボックスに、サブスクリプションに必要な記憶域の GB の数を入力します。
 6. **[保存]** を選択します。
 
@@ -90,8 +95,8 @@ Office 365 Extra File Storage は、次のサブスクリプションでご利�
 - Office 365 Enterprise E5
 - Office 365 A3 (教員)
 - Office 365 A5 (教員)
-- Office for the webプラン 1 SharePointを使用する
-- Office for the webプラン 2 SharePointと一緒に
+- Office SharePoint プラン 1 を使用した Web の詳細
+- Office SharePoint プラン 2 を使用した Web の詳細
 - SharePoint Online プラン 1
 - SharePoint Online プラン 2
 - Microsoft 365 Business Basic
@@ -102,7 +107,7 @@ Office 365 Extra File Storage は、次のサブスクリプションでご利�
 - Microsoft 365 F1
 
 > [!NOTE]
-> Office 365ファイルの追加Storageは、GCC、GCC DOD プランでも使用できます。
+> Office 365 Extra File Storage は、GCC、GCC High、DOD プランでも利用できます。
 
 ## <a name="related-content"></a>関連コンテンツ
 

@@ -1,6 +1,6 @@
 ---
 title: パイロット環境で攻撃シミュレーションMicrosoft 365 Defender実行する
-description: アラートとインシデントのMicrosoft 365 Defender分析情報を取得し、脅威を迅速に修復する方法を確認するために、攻撃シミュレーションを実行します。
+description: アラートとインシデントMicrosoft 365 Defender分析情報の取得、脅威の迅速な修復方法を確認するために、攻撃シミュレーションを実行します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,17 +22,17 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a3e1543ed56580983fec5b7eee6366e817d82079
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3712875579c7d157fe52a5e115d059fc88b4b6d7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904161"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326497"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>パイロット環境で攻撃シミュレーションMicrosoft 365 Defender実行する
 
 
-この記事は、[パイロット環境](eval-defender-investigate-respond.md)を使用してインシデントの調査と対応を実行するプロセスの手順 1 Microsoft 365 Defenderです。 このプロセスの詳細については、概要の記事を [参照](eval-defender-investigate-respond.md) してください。
+この記事は[、パイロット環境](eval-defender-investigate-respond.md)を使用してインシデントの調査と応答を実行するプロセスの手順 1 Microsoft 365 Defenderです。 このプロセスの詳細については、概要の記事を [参照](eval-defender-investigate-respond.md) してください。
 
 パイロット環境を準備[](eval-defender-investigate-respond.md)した後、シミュレートされた攻撃でインシデントを作成し、Microsoft 365 Defender ポータルを使用して調査と対応を行って、Microsoft 365 Defender のインシデント対応と自動調査と修復機能をテストします。
 
@@ -46,7 +46,7 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 ## <a name="simulate-attacks-with-the-microsoft-365-defender-portal"></a>ポータルで攻撃をMicrosoft 365 Defenderする
 
-このMicrosoft 365 Defenderには、パイロット環境に対するシミュレートされた攻撃を作成する組み込みの機能があります。
+このMicrosoft 365 Defenderポータルには、パイロット環境に対するシミュレートされた攻撃を作成する機能が組み込みされています。
 
 - で使用するMicrosoft 365 DefenderのOffice 365トレーニング[https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator)。
   
@@ -54,11 +54,11 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 - エンドポイントの&の攻撃Microsoft 365 Defenderのチュートリアル[https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations)です。
 
-  [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderで</a>、[エンドポイントとチュートリアル **] >シミュレーション&選択します**。
+  [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderで</a>、[**Endpoints >チュートリアル] &選択します**。
 
 ### <a name="defender-for-office-365-attack-simulation-training"></a>Defender for Office 365 攻撃シミュレーション トレーニング
 
-セキュリティプラン 2 Office 365、Microsoft 365 E5 Microsoft Defender を使用する場合Office 365フィッシング攻撃に対する攻撃シミュレーション トレーニングが含まれます。 基本的な手順は次のとおりです。
+セキュリティプラン 2 Office 365または Microsoft Defender Microsoft 365 E5の防御側には、Office 365攻撃に対する攻撃シミュレーション トレーニングが含まれます。 基本的な手順は次のとおりです。
 
 1. シミュレーションの作成
 
@@ -118,12 +118,12 @@ Microsoft の Defender for Endpoint シミュレーションを次に示しま�
 
    - バージョン 1903 Windows 10以降のバージョンで実行されます。
    - DS ドメイン コントローラー ドメインAD参加しています。
-   - 有効[Windows Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)を持つ。 問題が発生した場合は、このWindows Defender ウイルス対策を[参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
+   - 有効[Windows Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)。 問題が発生した場合は、このWindows Defender ウイルス対策を[参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
    - Microsoft [Defender for Endpoint にオンボードされています](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 テナントグループとデバイス グループを使用する場合は、テスト デバイス用の専用デバイス グループを作成し、それをトップ レベルにプッシュします。
 
-1 つの方法は、AD DS ドメイン コントローラーとテスト デバイスを仮想マシンとしてホストMicrosoft Azure方法です。 シミュレートされたエンタープライズ テスト ラボ ガイドのフェーズ [1](/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise#phase-1-create-a-simulated-intranet) の手順を使用できますが、APP1 仮想マシンの作成は省略できます。
+1 つの方法は、AD DS ドメイン コントローラーとテスト デバイスを仮想マシンとしてホストMicrosoft Azureです。 シミュレートされたエンタープライズ テスト ラボ ガイドのフェーズ [1](/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise#phase-1-create-a-simulated-intranet) の手順を使用できますが、APP1 仮想マシンの作成は省略できます。
 
 結果を次に示します。
 
@@ -135,7 +135,7 @@ Microsoft の Defender for Endpoint シミュレーションを次に示しま�
 
 ![プロセスインジェクションと SMB 偵察攻撃の図を使用したファイルレス PowerShell 攻撃。](../../media/mtp/mtpdiydiagram.png)
 
-シミュレーション中、攻撃はシェルコードを一見無実のプロセスに挿入します。 このシナリオでは、このシナリオを使用notepad.exe。 シミュレーションではこのプロセスを選択しましたが、攻撃者は長時間実行されるシステム プロセス (たとえば、svchost.exe) をターゲットにしている可能性が高svchost.exe。 その後、シェルコードは攻撃者のコマンド アンド コントロール (C2) サーバーに問い合わせ、続行方法に関する指示を受け取る。 スクリプトは、ドメイン コントローラー (DC) に対する偵察クエリの実行を試みます。 偵察により、攻撃者は最近のユーザー ログイン情報に関する情報を取得できます。 攻撃者がこの情報を取得すると、ネットワーク内を横方向に移動して、特定の機密性の高いアカウントにアクセスできます。
+シミュレーション中、攻撃はシェルコードを一見無実のプロセスに挿入します。 このシナリオでは、このシナリオを使用notepad.exe。 シミュレーションではこのプロセスを選択しましたが、攻撃者は長時間実行されるシステム プロセス (たとえば、システム プロセスをターゲットにしている可能性が高svchost.exe。 その後、シェルコードは攻撃者のコマンド アンド コントロール (C2) サーバーに問い合わせ、続行方法に関する指示を受け取る。 スクリプトは、ドメイン コントローラー (DC) に対する偵察クエリの実行を試みます。 偵察により、攻撃者は最近のユーザー ログイン情報に関する情報を取得できます。 攻撃者がこの情報を取得すると、ネットワーク内を横方向に移動して、特定の機密性の高いアカウントにアクセスできます。
 
 > [!IMPORTANT]
 > 最適な結果を得る場合は、可能な限り攻撃シミュレーションの指示に従ってください。
@@ -166,7 +166,7 @@ Microsoft の Defender for Endpoint シミュレーションを次に示しま�
 5. コピーしたスクリプトを PowerShell ウィンドウに貼り付け、実行します。
 
 > [!NOTE]
-> リモート デスクトップ プロトコル (RDP) を使用して PowerShell を実行している場合は、 **CTRL-V** ホットキーまたは右クリック貼り付けメソッドが機能しないので、RDP クライアントで [クリップボード テキストの種類] コマンドを使用します。 PowerShell の最近のバージョンでは、そのメソッドを受け入れれなく場合があります。最初にメモリ内の メモ帳 にコピーし、仮想マシンにコピーしてから PowerShell に貼り付ける必要があります。
+> リモート デスクトップ プロトコル (RDP) を使用して PowerShell を実行している場合は、 **CTRL-V** ホットキーまたは右クリック貼り付けメソッドが機能しないので、RDP クライアントで [クリップボード テキストの種類] コマンドを使用します。 PowerShell の最近のバージョンでは、そのメソッドを受け入れない場合があります。最初にメモリ内の メモ帳 にコピーし、仮想マシンにコピーしてから PowerShell に貼り付ける必要があります。
 
 数秒後、アプリメモ帳開きます。 シミュレートされた攻撃コードは、そのコードにメモ帳。 完全なシナリオを体験するためにメモ帳自動的に生成されたインスタンスを開いた状態に保ちます。
 
@@ -178,7 +178,7 @@ Microsoft の Defender for Endpoint シミュレーションを次に示しま�
 ran NetSessionEnum against [DC Name] with return code result 0
 ```
 
-[インシデントと応答の自動化] 機能が動作しているのを確認するには、プロセスを開notepad.exe保持します。 [インシデントと応答の自動停止] プロセスが表示メモ帳表示されます。
+[自動インシデントと応答] 機能が動作しているのを確認するには、プロセスを開いたnotepad.exe保持します。 [インシデントと応答の自動停止] プロセスがメモ帳されます。
 
 ### <a name="investigate-the-incident-for-the-simulated-attack"></a>シミュレートされた攻撃のインシデントを調査する
 
@@ -187,11 +187,11 @@ ran NetSessionEnum against [DC Name] with return code result 0
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-SOC アナリストの視点に切り替えて、このポータルで攻撃の調査Microsoft 365 Defenderできます。
+SOC アナリストの視点に切り替えて、このポータルで攻撃の調査をMicrosoft 365 Defenderできます。
 
 1. ポータルを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">開Microsoft 365 Defenderします</a>。
 
-2. ナビゲーション ウィンドウで、[インシデント] を選択 **し、[インシデント&通知>選択します**。
+2. ナビゲーション ウィンドウで、[インシデント] を選択 **&通知>選択します**。
 
 3. シミュレートされた攻撃の新しいインシデントがインシデント キューに表示されます。
 
@@ -207,11 +207,11 @@ Microsoft 365 Defender分析を関連付け、異なる製品のすべての関�
 
 1. ポータルを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">開Microsoft 365 Defenderします</a>。
 
-2. ナビゲーション ウィンドウで、[インシデント] を選択 **し、[インシデント&通知>選択します**。
+2. ナビゲーション ウィンドウで、[インシデント] を選択 **&通知>選択します**。
 
 3. インシデント名の左側にある円をクリックして、最新のアイテムを選択します。 サイド パネルには、関連するアラートを含むインシデントに関する追加情報が表示されます。 各インシデントには、含まれるアラートの属性に基づいて説明する一意の名前があります。
 
-   ダッシュボードに表示されるアラートは、Microsoft Defender for Identity、Microsoft Defender for Cloud Apps、Microsoft Defender for Endpoint、Microsoft 365 Defender、Microsoft Defender for Office 365 のサービス リソースに基づいてフィルター処理できます。
+   ダッシュボードに表示されるアラートは、サービス リソース (Microsoft Defender for Identity、Microsoft Defender for Cloud Apps、Microsoft Defender for Endpoint、Microsoft 365 Defender、および Microsoft Defender for Office 365) に基づいてフィルター処理できます。
 
 3. インシデント **の詳細を取得するには、[** インシデント ページを開く] を選択します。
 
@@ -242,7 +242,7 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 大規模な学習アルゴリズムを使用して、組織内および世界中の共通プロセスの通常の動作を確立し、これらのプロセスが異常な動作を示す状況を監視します。 これらの異常な動作は、多くの場合、余分なコードが導入され、それ以外の場合は信頼できるプロセスで実行されている状態を示しています。
 
-このシナリオでは、 <i> プロセスがnotepad.exe</i> 、外部の場所との通信を伴う異常な動作を示しています。 この結果は、悪意のあるコードの導入と実行に使用される特定のメソッドとは独立しています。
+このシナリオでは、 <i> プロセス がnotepad.exe</i> 、外部の場所との通信を伴う異常な動作を示しています。 この結果は、悪意のあるコードの導入と実行に使用される特定のメソッドとは独立しています。
 
 > [!NOTE]
 > このアラートは、追加のバックエンド処理を必要とする機械学習モデルに基づくため、ポータルでこのアラートが表示されるには時間がかかる場合があります。
@@ -277,7 +277,7 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 より興味深い動作の一部を展開すると、プロセス ツリーなどの有用な詳細が提供されます。
 
-たとえば、警告イベント [疑わしいプロセスの挿入が見られる] が見 **られるまで下にスクロールします**。 その下 **powershell.exe** プロセス イベントに挿入notepad.exeを選択して、この動作の完全なプロセス ツリーをサイド ウィンドウの **[イベント** エンティティ] グラフに表示します。 必要に応じて、検索バーを使用してフィルター処理を行います。
+たとえば、警告イベント [疑わしいプロセスの挿入が見られる] が見 **られるまで下にスクロールします**。 その下 **powershell.exe** プロセス notepad.exeに挿入するオブジェクトを選択し、この動作の完全なプロセス ツリーをサイド ウィンドウの **[イベント** エンティティ] グラフに表示します。 必要に応じて、検索バーを使用してフィルター処理を行います。
 
 ![選択した PowerShell ファイル作成動作のプロセス ツリーの例。](../../media/mtp/fig12.png)
 
@@ -312,9 +312,9 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 ![[調査の詳細] ページの例。](../../media/mtp/fig15.png)
 
-自動化された調査の間、Microsoft Defender for Endpoint は修復が必要な成果物の 1 notepad.exeプロセスを特定しました。 Defender for Endpoint は、自動修復の一環として疑わしいプロセスの挿入を自動的に停止します。
+自動調査の間、Microsoft Defender for Endpoint は修復を必要とするアーティファクトの 1 notepad.exeプロセスを特定しました。 Defender for Endpoint は、自動修復の一環として疑わしいプロセスの挿入を自動的に停止します。
 
-テスト デバイス上 <i>notepad.exe</i> プロセスの一覧から表示されなくなります。
+テスト デバイス上 <i>notepad.exe</i> プロセスの一覧から表示されなくなるのを確認できます。
 
 #### <a name="resolve-the-incident"></a>インシデントを解決する
 

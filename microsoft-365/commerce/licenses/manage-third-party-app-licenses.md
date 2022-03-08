@@ -1,11 +1,11 @@
 ---
-title: ISV アプリ のライセンスを管理するには、Microsoft 365 管理センター
+title: デバイスで ISV アプリ ライセンスを管理Microsoft 365 管理センター
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: argani
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,20 +14,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 独立したソフトウェア ベンダー (ISV) アプリのライセンスを管理する方法については、Microsoft 365 管理センター。
 ms.date: 06/15/2021
-ms.openlocfilehash: 4738c0fa2c21c189922087e54d8b00260cd68c93
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8530a9bdc13ec0ebee0857b8cfcd47b498460409
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179573"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328989"
 ---
-# <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>ISV アプリ のライセンスを管理するには、Microsoft 365 管理センター
+# <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>デバイスで ISV アプリ ライセンスを管理Microsoft 365 管理センター
 
 独立したソフトウェア ベンダー (ISV) アプリは、Microsoft 以外のソフトウェア ベンダーから購入するアプリです。
 
@@ -37,7 +37,7 @@ ms.locfileid: "60179573"
 
 ## <a name="assign-isv-app-licenses-to-users-or-groups"></a>ISV アプリ ライセンスをユーザーまたはグループに割り当てる
 
-1. [請求Microsoft 365 管理センター] ページ **に**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">移動</a>します。
+1. [アカウント] Microsoft 365 管理センター[**BillingLicenses** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">] ページに移動</a>します。
 2. ライセンスを割り当てるアプリを選択します。
 3. [ライセンスの詳細] ページで、[ライセンスの割り当て **] を選択します**。
 4. [ライセンスの **割り当** て] ウィンドウで、ユーザーまたはグループの名前の入力を開始し、結果から選択してリストに追加します。
@@ -45,7 +45,7 @@ ms.locfileid: "60179573"
 
 ## <a name="unassign-isv-app-licenses-from-users-or-groups"></a>ユーザーまたはグループからの ISV アプリ ライセンスの割り当てを解除する
 
-1. 管理センターの [課金 **ライセンス**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">] ページ</a>。
+1. 管理センターの **[**<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > ] ページ。
 2. ライセンスの割り当てを解除するアプリを選択します。
 3. [ライセンスの詳細] ページで、ライセンスを削除するユーザーとグループを選択し、[ライセンスの割り当て解除] を選択します。
 4. ダイアログ ボックスで、ライセンスを削除する必要がある場合は、[割り当て解除] を選択します。
@@ -58,9 +58,9 @@ ISV アプリ ライセンスは、アプリ ベンダーによって管理さ�
 
 購入した ISV アプリによっては、組織の環境にアプリをインストールする場合があります。 アプリをインストールすると、ユーザーがアプリを利用できます。 ISV アプリを環境にインストールするには、次の手順を実行します。
 
-1. 管理センターの [課金 **ライセンス**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">] ページ</a>。
+1. 管理センターの **[**<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > ] ページ。
 2. アカウントにインストールするアプリを選択します。
-3. [ライセンスの詳細] ページで、[この製品を **インストールする] を選択します**。 環境にアプリをインストールする別のプラットフォーム サイトにリダイレクトされます。
+3. [ライセンスの詳細] ページで、[この製品の **インストール] を選択します**。 環境にアプリをインストールする別のプラットフォーム サイトにリダイレクトされます。
 
 ## <a name="related-content"></a>関連コンテンツ
 

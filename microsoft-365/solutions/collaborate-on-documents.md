@@ -14,20 +14,21 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: この記事では、ドキュメントのゲストと共同作業を行う方法について、SharePointおよびOneDrive。
-ms.openlocfilehash: 7c58b9ef4fdc759c5afa1920083dd1875fad17f1
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: f27c47403e63c19bf341c69d8dffbe2ea450e1d4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899632"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324434"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>ゲストと共同でドキュメントの作業をする
 
-SharePoint または OneDrive のドキュメントで組織外のユーザーと共同作業する必要がある場合は、共有リンクをドキュメントに送信できます。 この記事では、組織のニーズに合った SharePoint と OneDrive の共有リンクを設定するために必要な Microsoft 365 構成手順について説明します。
+SharePoint または OneDrive のドキュメントで組織外のユーザーと共同作業する必要がある場合は、ドキュメントへの共有リンクを送信できます。 この記事では、組織のニーズに合った SharePoint と OneDrive の共有リンクを設定するために必要な Microsoft 365 構成手順について説明します。
 
 ## <a name="video-demonstration"></a>ビデオ デモンストレーション
 
@@ -37,7 +38,7 @@ SharePoint または OneDrive のドキュメントで組織外のユーザー�
 
 ## <a name="azure-external-collaboration-settings"></a>Azure の外部コラボレーション設定
 
-Microsoft 365 での共有は、[Azure Active Directory における B2B 外部コラボレーションの設定](/azure/active-directory/external-identities/delegate-invitations) によって最高レベルで管理されます。 ゲスト共有が無効または制限されている場合は、Azure AD で構成した共有設定が上書きMicrosoft 365。
+Microsoft 365 での共有は、[Azure Active Directory における B2B 外部コラボレーションの設定](/azure/active-directory/external-identities/delegate-invitations) によって最高レベルで管理されます。 ゲスト共有が無効または制限されている場合は、Azure ADで構成した共有設定が上書きMicrosoft 365。
 
 B2B 外部コラボレーション設定を確認して、ゲストとの共有がブロックされないか確認します。
 
@@ -49,7 +50,7 @@ B2B 外部コラボレーション設定を確認して、ゲストとの共有�
 2. 左側のナビゲーション ウィンドウで **[Azure Active Directory]** をクリックします。
 3. **[外部 ID]** をクリックします。
 4. **[開始]** 画面で、左側のナビゲーション ウィンドウで **[外部コラボレーション設定]** をクリックします。
-5. 特定の管理者ロールに割り当てられたメンバー ユーザーとユーザーが、メンバーアクセス許可を持つゲストを含むゲスト ユーザーを招待できるか、組織内のユーザーがゲストを含むゲスト ユーザーを招待し、管理者以外のユーザーを招待できます。
+5. 特定の **管理者ロールに割り当てられたメンバー ユーザーとユーザーが、メンバーアクセス許可を持つゲストを含むゲスト ユーザーを招待できるか**、**組織内のユーザーがゲストを含むゲスト ユーザーを招待し、管理者以外のユーザー** を招待できます。
 6. 変更を加えた場合は、**[保存]** をクリックします。
 
 **[共同作業の制限]** セクションの設定に注意してください。 共同作業するゲストのドメインがブロックされていないことを確認します。
@@ -60,11 +61,11 @@ B2B 外部コラボレーション設定を確認して、ゲストとの共有�
 
 組織外のユーザーが SharePoint または OneDrive のドキュメントにアクセスするには、SharePoint と OneDrive の組織レベルの共有設定で組織外のユーザーとの共有を許可する必要があります。
 
-組織レベルの設定は、SharePointサイトで使用できる設定をSharePointします。 サイトの設定は、組織レベルの設定よりも制限を緩和することはできません。 ユーザーの組織レベルの設定OneDrive、ユーザーの共有ライブラリで使用できる共有のOneDriveします。
+組織レベルの設定は、SharePointサイトで使用できる設定をSharePointします。 サイトの設定は、組織レベルの設定よりも制限を緩和することはできません。 ユーザーの組織レベルの設定OneDriveユーザーの共有ライブラリで使用できる共有のOneDriveします。
 
-[SharePointとOneDrive、認証されていないファイルとフォルダーの共有を許可する場合は、[すべてのユーザー] を **選択します**。 組織外のユーザーが認証する必要がある場合は、[新規ゲストと既存のゲスト] **を選択します**。 *誰* でもリンクを共有するのが最も簡単な方法です。組織外のユーザーは、認証なしでリンクを開き、それを他のユーザーに自由に渡します。
+[SharePointとOneDrive、認証されていないファイルとフォルダーの共有を許可する場合は、[すべてのユーザー] を選択 **します**。 組織外のユーザーが認証する必要がある場合は、[新規ゲストと既存のゲスト **] を選択します**。 *誰* でもリンクを共有するのが最も簡単な方法です。組織外のユーザーは、認証なしでリンクを開き、それを他のユーザーに自由に渡します。
 
-たとえばSharePoint、組織内の任意のサイトで必要になる最も制限の多い設定を選択します。
+[SharePoint、組織内の任意のサイトで必要になる最も制限の多い設定を選択します。
 
 ![SharePoint 組織レベルの共有設定のスクリーンショット。](../media/sharepoint-organization-external-sharing-controls.png)
 
@@ -72,9 +73,9 @@ B2B 外部コラボレーション設定を確認して、ゲストとの共有�
 SharePoint 組織レベルの共有設定を設定するには
 
 1. Microsoft 365 管理センターの左側のナビゲーション ウィンドウの **[管理センター]** で、**[SharePoint]** をクリックします。
-2. 管理センター SharePoint左側のナビゲーション ウィンドウの [ポリシー] で、[**共有]** を **クリックします**。
-3. ユーザーまたはユーザーの外部SharePoint共有OneDrive[すべてのユーザー] または [新しいゲストと既存のゲスト **] に設定します**。 (この設定は、OneDriveの設定よりもSharePoint注意してください。
-4. 変更を加えた場合は、**[保存]** をクリックします。
+2. 管理センター SharePoint左側のナビゲーション ウィンドウの [ポリシー] で、[**共有] を**<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**選択します**</a>。
+3. ユーザーまたはユーザーの外部SharePoint共有OneDrive[すべてのユーザー] または [新規ゲストと既存のゲスト **] に設定します**。 (この設定は、OneDrive設定よりも透過的SharePoint注意してください)。
+4. 変更を加えた場合は、[保存] を **選択します**。
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 組織レベルの既定のリンク設定
 
@@ -93,7 +94,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 組織レベルの既定SharePointのOneDriveのリンク設定を設定するには
 
-1. SharePoint 管理センターの共有ページに移動します。
+1. 管理センター <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**の [**</a>共有] SharePoint移動します。
 2. **ファイルとフォルダーのリンク** で、使用する既定の共有リンクを選択します。
 3. 変更を加えた場合は、**[保存]** をクリックします。
 
@@ -122,7 +123,7 @@ SharePoint サイト内のファイルとフォルダーを共有する場合は
 
 サイトレベルの共有設定を設定するには
 
-1. SharePoint 管理センターの左側のナビゲーション ウィンドウで、[**サイト**] を展開して [**アクティブなサイト**] をクリックします。
+1. 管理センター SharePoint左側のナビゲーション ウィンドウで、[サイト] を展開し、[アクティブ **なサイト]** <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**を選択します**</a>。
 2. ゲストとファイルやフォルダーを共有するサイトを選択します。
 3. 行 (選択したサイトが存在する) を右にスクロールし、[外部共有] 列の任意の **場所をクリック** します。
 4. ポップアップするページで、[ポリシー] タブ **をクリック** します。
@@ -132,7 +133,7 @@ SharePoint サイト内のファイルとフォルダーを共有する場合は
 
 ## <a name="invite-users"></a>ユーザーを招待する
 
-ゲスト共有の設定が構成されています。これで、ユーザーは組織外のユーザーとファイルやフォルダーを共有できます。 詳細[については、「OneDriveファイルとフォルダーの共有](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)」および[「SharePointフォルダーの共有」](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)を参照してください。
+ゲスト共有の設定が構成されています。これで、ユーザーは組織外のユーザーとファイルやフォルダーを共有できます。 詳細[については、「共有OneDriveファイルとフォルダーを共有](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)する」および「SharePoint[フォルダーを共有する」](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

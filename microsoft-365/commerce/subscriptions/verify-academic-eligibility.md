@@ -3,10 +3,10 @@ title: サブスクリプションの学業Microsoft 365 Education確認する
 f1.keywords:
 - CSH
 - FWLink-2135711
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: pablom
+ms.reviewer: pablom, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,22 +15,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150
 description: 教育機関向け価格に対する学校の適格性をMicrosoft 365 Educationする方法について学習します。
 ms.date: 07/21/2020
-ms.openlocfilehash: 9b97487c7f1fdc9ccfb0858cd49036dcb43d7f5e
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 178413d79147a388454061fea53901178eec5557
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321137"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328961"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>サブスクリプションの学業Microsoft 365 Education確認する
 
-教育機関の一部である場合は、無料の試用版にサインアップMicrosoft 365 Education。 Microsoft が学校の教育機関の資格を確認した後、教育機関向けMicrosoft 365を購入できます。 これには、教職員向けや学生向けOffice 365 A1など、無料Office 365 A1含まれます。 無料試用版が終了するまで、学術価格で有料サブスクリプションに変換できます。
+教育機関の一部である場合は、無料の試用版にサインアップMicrosoft 365 Education。 Microsoft が学校の教育機関の資格を確認した後、教育機関向けMicrosoft 365製品を購入できます。 これには、教職員向けや学生向けOffice 365 A1など、無料でOffice 365 A1製品が含まれます。 無料試用版が終了するまで、学術価格で有料サブスクリプションに変換できます。
 
 この記事では、学校の教育機関の資格を確認し、資格の状態を確認し、学校が承認された後に学術価格でサブスクリプションを購入する方法について説明します。
 
@@ -43,7 +43,7 @@ ms.locfileid: "62321137"
 試用版サブスクリプションを使用している場合は、Microsoft 365 Education手順を使用して確認してください。
 
 1. Microsoft 365 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページに移動します。
-2. 学生向 **けOffice 365 A1試用版と学生向** けOffice 365 A1を **探します**。 これらのサブスクリプションが見当たらない場合は、この Web ページ [にアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
+2. 学生向 **けOffice 365 A1試用版と学生向** けOffice 365 A1 **を探します**。 これらのサブスクリプションが見当たらない場合は、この Web ページ [にアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
 
 ## <a name="verify-your-schools-academic-eligibility"></a>学校の学業資格を確認する
 
@@ -97,7 +97,7 @@ ms.locfileid: "62321137"
 
 ## <a name="next-steps"></a>次の手順
 
-学校向けアプリを展開するMicrosoft 365、ドキュメントとリソースMicrosoft 365 Education[参照してください](/microsoft-365/education/deploy/)。 次に、ユーザー [を追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。 必要に応じて、サブスクリプションの [ライセンスを購入できます](../licenses/buy-licenses.md)。
+学校向けMicrosoft 365展開する方法については、「Microsoft 365 Education[」を参照してください](/microsoft-365/education/deploy/)。 次に、ユーザー [を追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。 必要に応じて、サブスクリプションの [ライセンスを購入できます](../licenses/buy-licenses.md)。
 
 ## <a name="related-content"></a>関連コンテンツ
 

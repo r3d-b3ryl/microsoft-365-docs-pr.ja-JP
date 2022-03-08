@@ -2,8 +2,8 @@
 title: Microsoft Defender for microsoft Defender for Office 365
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 93855320f21d537fdd03e81424b6105575f37485
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 5737a2d1974805dc55b85b7ff8f4117cbc1da898
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121209"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318187"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Microsoft Defender for microsoft Defender for Office 365
 
@@ -36,7 +36,7 @@ ms.locfileid: "61121209"
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-アラートの自動調査中に、Microsoft Defender for Office 365 は元の電子メールを分析して脅威を検出し、元の電子メールと攻撃の可能性のある部分に関連する他の電子メールを識別します。 電子メール攻撃が 1 つの電子メールで構成されることはほとんどないので、この分析は重要です。
+アラートの自動調査中に、Microsoft Defender for Office 365 は元の電子メールを脅威について分析し、元の電子メールと攻撃の可能性のある部分に関連する他の電子メールを識別します。 電子メール攻撃が 1 つの電子メールで構成されることはほとんどないので、この分析は重要です。
 
 自動調査の電子メール分析では、元の電子メールの属性を使用して、組織によって送信および受信されたメールのクエリを実行する電子メール クラスターを識別します。 これは、セキュリティ運用アナリストが Explorer または Advanced Hunting で関連する電子メールを検索する場合と似ています。 攻撃者は通常、セキュリティ検出を回避するために電子メール パラメーターをモーフィングするために、一致する電子メールを識別するためにいくつかのクエリが使用されます。 クラスタリング分析では、次のチェックを実行して、調査に関連する電子メールを処理する方法を決定します。
 
@@ -72,14 +72,14 @@ ms.locfileid: "61121209"
 
 ## <a name="the-display-of-incident-evidence-for-email-and-email-clusters"></a>電子メール クラスターと電子メール クラスターのインシデント証拠の表示
 
-インシデントの [証拠と **応答]** タブの電子メールベースの証拠に、次の情報が表示されます。
+インシデントの [証拠と **応答] タブ** の電子メールベースの証拠に、次の情報が表示されます。
 
 :::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Evidence and Response の電子メール分析情報の例。" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 
 図の番号付き吹き出しから、
 
 1. 修復アクションは、アクション センターに加えて **実行できます**。
-2. 悪意のある (ただし、疑わしいではない)電子メール クラスターに対して修復アクションを **実行できます**。
+2. 悪意のある (ただし、疑わしいではない) 電子メール クラスターに対して修復アクションを **実行できます**。
 3. メールスパムの評決では、フィッシングは高信頼と通常のフィッシングに分割されます。
 
    悪意のある評決の場合、脅威カテゴリはマルウェア、高信頼フィッシング、悪意のある URL、悪意のあるファイルです。
@@ -89,7 +89,7 @@ ms.locfileid: "61121209"
 4. 電子メールの数は、最新の配信場所に基づいており、メールボックスやオンプレミスではなく、メールボックス内の電子メールのカウンターが含まれます。
 5. クエリの日付と時刻が含まれます。最新のデータに対して更新される可能性があります。
 
-インシデントの [エンティティ]タブの電子メールクラスターまたは電子メール クラスターの場合、このアイテム (メールまたはクラスター) のメールボックスに悪意のある電子メールが存在しなかったという意味です。 次に例を示します。
+インシデントの [エンティティ] タブの電子メールクラスターまたは電子メール クラスターの場合、このアイテム (メールまたはクラスター) のメールボックスに悪意のある電子メールが存在しなかったという意味です。 次に例を示します。
 
 :::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="電子メールの防止の例。" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 

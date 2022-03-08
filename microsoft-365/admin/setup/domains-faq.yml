@@ -3,8 +3,8 @@ metadata:
   title: よく寄せられる質問のドメイン
   f1.keywords:
   - NOCSH
-  ms.author: pebaum
-  author: pebaum
+  ms.author: efrene
+  author: efrene
   manager: scotv
   audience: Admin
   ms.topic: article
@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: FAQ で質問に対する回答を見つけて、ドメイン (onmicrosoft ドメインと転送ドメイン) の詳細について説明します。
-  ms.openlocfilehash: 7fcc70ac6162a038e65646a26a2a6441be8081b9
-  ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+  ms.openlocfilehash: 6b99f8d2d6b976add06dea9382a22d0e1a0a2b6c
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/14/2022
-  ms.locfileid: "62806542"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63328555"
 title: ドメインに関する FAQ
 summary: "\n\nこの記事では、Microsoft 365 のドメインに関してよく寄せられる質問にお答えします。\n\n質問の回答が見つからない場合は、コメントを残してお知らせください。ご質問を FAQ の一覧に追加します。\n"
 sections:
@@ -44,13 +44,13 @@ sections:
   - question: ドメイン名とは何ですか?
     answer: "ドメインとは、メール アドレスの **@** 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。通常は、  *yourbusiness.com*  や  *stateuniversity.edu*  のように、組織の名前と標準的なインターネット サフィックスの形式を取ります。 \n  \nMicrosoft 365 で「**rob\\@contoso.com**」のようなカスタム ドメインを使用すると、ブランドの信頼性や認知度を高めることができます。 \n  \n[Microsoft 365 でドメインを購入して](../get-help-with-domains/buy-a-domain-name.md) 自動的に設定するか、ドメイン レジストラーで購入したり、入手済みのドメインを使用することができます。\n"
   - question: ドメインを個人用または家族向けのサービスに接続できますか?
-    answer: "Microsoft 365 Family または Microsoft 365 Personal サブスクリプションの利点として、Outlook.com メールボックス (yourname@example.com など) に関連付けられた個別の電子メール アドレスを作成できます。 現時点では、GoDaddy が管理するドメインと Outlook.com の接続のみをサポートしています。 詳細については、「カスタム メール アドレス[を取得する」](https://support.microsoft.com/office/get-a-personalized-email-address-in-microsoft-365-75416a58-b225-4c02-8c07-8979403b427b)を参照Microsoft 365。\n   \n"
+    answer: "Microsoft 365 Family または Microsoft 365 Personal サブスクリプションの利点として、Outlook.com メールボックス (yourname@example.com など) に関連付けられたパーソナライズされた電子メール アドレスを作成できます。 現時点では、GoDaddy が管理するドメインと Outlook.com の接続のみをサポートしています。 詳細については、「カスタム メール アドレス[を取得する」](https://support.microsoft.com/office/get-a-personalized-email-address-in-microsoft-365-75416a58-b225-4c02-8c07-8979403b427b)を参照Microsoft 365。\n   \n"
   - question: DNS プロバイダーで特定のレコードの種類がサポートされない場合はどうなりますか?
     answer: "独自の DNS レコードを管理している場合、DNS ホストが Microsoft 365 に必要な DNS レコードの一部しかサポートしていないと、Microsoft 365 の一部の機能は動作しません。 必要な DNS レコードをすべてサポートしているレジストラーにドメインを移行することをお勧めします。\n  \nすべての必須の DNS レコードをサポートするプロバイダー。\n  \n- Dynadot\n    \n- eNomCentral\n    \n- Europe Registry\n\n- Cloudflare\n    \n- GoDaddy\n    \n- Hover\n    \n- MyHosting.com\n    \n- Name.com\n    \n- Nearly Free Speech\n    \n- Nettica\n    \n- Network Information Center (NIC)\n    \n- Network Solutions\n    \n- Register.com\n  \n"
   - question: Microsoft 365 の既定のドメインを設定または変更するにはどうすれば良いですか?
     answer: "既定のドメインを選択するには、1 つ以上のカスタム ドメインが Microsoft 365 に追加されている必要があります。\n\n::: moniker range=\"o365-worldwide\"\n\n1. 管理センターで、**[設定]** \\> <a href=\"https://go.microsoft.com/fwlink/p/?linkid=834818\" target=\"_blank\">[ドメイン]</a> ページの順に移動します。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n1. 管理センターで、**[設定]** > <a href=\"https://go.microsoft.com/fwlink/p/?linkid=2007048\" target=\"_blank\">[ドメイン]</a> ページの順に移動します。\n\n::: moniker-end\n    \n2. [**ドメイン**] ページで、新しいメール アドレスの既定として設定するドメインを選択します。 \n    \n3. [**既定に設定**] を選択します。\n    \n::: moniker range=\"o365-worldwide\"\n\n*.onmicrosoft.com* ドメインの最初の部分の名前を変更することはできません。 \n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n*.partner.onmschina.cn* ドメインの最初の部分の名前を変更することはできません。 \n\n::: moniker-end\n\n> [!NOTE]\n> 既定のドメインを変更しても、ユーザーの資格情報やアプリケーションやサービスへのアクセスには影響はありません。 ユーザーが関連付けられているドメインを変更すると、メール、オンライン ストレージ、ログイン資格情報に影響します。\n"
   - question: Microsoft 365 でカスタム サブドメインまたは複数のドメインを追加することはできますか?
-    answer: "::: moniker range=\"o365-worldwide\"\n\nはい。 サブドメインを追加するには、レジストラーの Web サイトで DNS 設定を自分で管理する必要があります。 NS レコードの DNS 設定の管理を Microsoft が行っている場合または Microsoft からドメインを購入した場合は、サブドメインを追加できません。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\nはい。サブドメインを追加するには、レジストラーの Web サイトでの DNS 設定を自分で管理する必要があります。NS レコードの DNS 設定の管理を 21Vianet が行っている場合は、サブドメインを追加できません。\n\n::: moniker-end\n\n通常、最大 900 のドメインを Microsoft 365 サブスクリプションに追加できます。\n  \nたとえば、ドメイン を追加して `www.contoso.com`contoso.com、contosomarketing.com、サブドメイン 、`www.partners.contoso.com``www.marketing.partners.contoso.com`、など、追加できます。\n  \nサブドメインを追加すると、確認が行われる親ドメインでの確認に基づき、自動的に確認されます。\n  \n複数のドメインを Microsoft 365 に追加すると、追加した任意のドメインで任意のサービス (メールなど) をホストできます。  *ドメインの MX レコードを更新することで、メールを Office 365 に変更すると、そのドメインに送信されたすべてのメールが Office 365 に届くようになります。* \n \n::: moniker range=\"o365-worldwide\"\n\n> [!NOTE]\n> [contoso.com] ドメインを既に Microsoft 365 サブスクリプションに追加している場合は、サブドメイン [ xyz.contoso.com] を別の Microsoft 365 の組織に追加することもできます。 サブドメインを追加すると、DNS ホスティング プロバイダーに TXT レコードを追加するように求められます。\n::: moniker-end\n"
+    answer: "::: moniker range=\"o365-worldwide\"\n\nはい。 サブドメインを追加するには、レジストラーの Web サイトで DNS 設定を自分で管理する必要があります。 NS レコードの DNS 設定の管理を Microsoft が行っている場合または Microsoft からドメインを購入した場合は、サブドメインを追加できません。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\nはい。サブドメインを追加するには、レジストラーの Web サイトでの DNS 設定を自分で管理する必要があります。NS レコードの DNS 設定の管理を 21Vianet が行っている場合は、サブドメインを追加できません。\n\n::: moniker-end\n\n通常、最大 900 のドメインを Microsoft 365 サブスクリプションに追加できます。\n  \nたとえば、ドメイン を追加して`www.contoso.com`、contoso.com、contosomarketing.com、サブドメイン 、`www.partners.contoso.com``www.marketing.partners.contoso.com`、など、追加できます。\n  \nサブドメインを追加すると、確認が行われる親ドメインでの確認に基づき、自動的に確認されます。\n  \n複数のドメインを Microsoft 365 に追加すると、追加した任意のドメインで任意のサービス (メールなど) をホストできます。  *ドメインの MX レコードを更新することで、メールを Office 365 に変更すると、そのドメインに送信されたすべてのメールが Office 365 に届くようになります。* \n \n::: moniker range=\"o365-worldwide\"\n\n> [!NOTE]\n> [contoso.com] ドメインを既に Microsoft 365 サブスクリプションに追加している場合は、サブドメイン [ xyz.contoso.com] を別の Microsoft 365 の組織に追加することもできます。 サブドメインを追加すると、DNS ホスティング プロバイダーに TXT レコードを追加するように求められます。\n::: moniker-end\n"
   - question: Microsoft 365 から別のホストにドメインを移行するにはどうすれば良いですか?
     answer: >
       ドメインを移行する手順については、「[Microsoft から別のホストにドメインを移行する](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md)」を参照してください。
@@ -64,4 +64,4 @@ sections:
   - question: 非営利団体または教育機関のステータスを確認するにはどうすればよいですか?
     answer: "1. [管理センター](/admin)で [**セットアップ**] を選択してウィザードを開始します。 (最初に Office 365 にサインインしてください。) \n    \n2. 学校の管理者になるには、Microsoft  365 で [**管理者になる**] オプションを選択します。 \n    \n3. 自分のドメインの DNS ホストの Web サイトで、 TXT DNS レコードを追加するように求められます。 どうしてでしょうか? この理由は、DNS ホストへサインインしてドメイン用のレコードを追加することにより、ユーザーがドメイン名の所有者だということが Microsoft 365 で証明されるからです。\n    \n4. レコードを追加したら Microsoft 365 ポータルに戻り、レコードを追加したことを確認します。そうすると、Microsoft 365 で確認が行われます。\n    \n非営利団体で、Microsoft 365 を入手したいのですが。 [お客様の組織に資格があることを確認](https://www.microsoft.com/nonprofits/eligibility)してから、サービスにサインアップしてください。 \n  \n学校の管理者になる方法の詳細については、 [こちらのヘルプ記事をご覧ください](/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education\n)。\n"
   - question: ビジネス用の Web サイトを作成する方法
-    answer: "短い <a href=\"https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb?autoplay=false\" target=\"_blank\">ビデオを見る: Web</a> ホスティング プロバイダーを使用してドメインの Web サイトを作成する方法について、ビジネス Web サイトを作成します。\n\nMicrosoft 365ビジネス用のパブリック Web サイトは含めりません。 1 つを設定するには、GoDaddy、Wix、WordPress など、Web ホスティング会社の使用を検討してください。\n 1. Web サイトを構築できる Web ホスティング プロバイダーを検索します。\n \n 2. ドメイン名が登録されているのと同じ会社で Web サイト ビルダーを選択するのが最も簡単な場合があります。\n \n 3. ビジネス の Web サイトを設計し、ビジネス ロゴ、ビジネス目的、テキスト、画像、リンクを必ず含める。\n \n 4. Web サイトを Microsoft 365 と統合するには、ビジネス メールを Web サイトに追加し、Microsoft Teams、SharePoint、その他のコラボレーション ツールへのリンクを追加できます。\n \n 5. Web サイトをドメイン名に接続し、&#39;メールにも使用Microsoft 365。"
+    answer: "短い <a href=\"https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb?autoplay=false\" target=\"_blank\">ビデオを見る: Web</a> ホスティング プロバイダーを使用してドメインの Web サイトを作成する方法について、ビジネス Web サイトを作成します。\n\nMicrosoft 365ビジネス用のパブリック Web サイトは含めりません。 1 つを設定するには、GoDaddy、Wix、WordPress など、Web ホスティング会社の使用を検討してください。\n 1. Web サイトを構築できる Web ホスティング プロバイダーを検索します。\n \n 2. ドメイン名が登録されているのと同じ会社で Web サイト ビルダーを選択するのが最も簡単な場合があります。\n \n 3. ビジネス の Web サイトを設計し、ビジネス ロゴ、ビジネス目的、テキスト、画像、リンクを必ず含める。\n \n 4. Web サイトを Microsoft 365 と統合するには、ビジネス メールを web サイトに追加し、Microsoft Teams、SharePoint、または他のコラボレーション ツールへのリンクを追加できます。\n \n 5. Web サイトをドメイン名に接続し、&#39;メールにも使用Microsoft 365。"

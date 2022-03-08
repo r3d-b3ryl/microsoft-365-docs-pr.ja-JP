@@ -1,6 +1,6 @@
 ---
 title: 最初のインシデントへの対応
-description: ユーザーの最初のインシデントに対応する基本Microsoft 365 Defender。
+description: 最初のインシデントに対応する基本は、Microsoft 365 Defender。
 keywords: インシデント、アラート、調査、相関関係、攻撃、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365、インシデント対応、サイバー攻撃、自己調査、ランプアップ、オンボード、インシデントレスポンダー
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ced4fd4fc56a4aa6d189e9c7761ce661bd477796
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 16654281adf5ca6f31ea2d29aab3387d39424cb1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904097"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325937"
 ---
 # <a name="responding-to-your-first-incident"></a>最初のインシデントへの対応
 
@@ -38,7 +38,7 @@ ms.locfileid: "62904097"
 
 組織のインシデント対応戦略は、ますます破壊的なセキュリティ インシデントやサイバー犯罪に対処する能力を決定します。 予防措置を講じすることは重要ですが、検出されたインシデントを迅速に取り込み、根絶し、復旧する能力は、損害とビジネス上の損失を最小限に抑える可能性があります。
 
-このインシデント対応のチュートリアルでは、セキュリティ操作 (SecOps) チームの一部として、インシデントの主要な対応手順のほとんどを、Microsoft 365 Defender 内で実行する方法を示します。 それらのステップは次のとおりです。
+このインシデント対応のチュートリアルでは、セキュリティ操作 (SecOps) チームの一部として、インシデント対応の主要な手順のほとんどを、Microsoft 365 Defender 内で実行する方法を示します。 それらのステップは次のとおりです。
 
 - セキュリティ態勢の準備
 - インシデントごとに次の値を指定します。
@@ -48,7 +48,7 @@ ms.locfileid: "62904097"
 
 セキュリティ インシデントは、国立標準技術研究所 (NIST) によって「情報システムの機密性、整合性、または可用性を実際または潜在的に危険にさらす発生」と定義されます。またはシステムが処理、保存、または送信する情報。または、セキュリティ ポリシー、セキュリティ手順、または許容される使用ポリシーに対する違反または差し迫った脅威を構成します。
 
-インシデントはMicrosoft 365 Defender分析およびインシデント対応の論理的な開始点です。 インシデントの分析と修復は、通常、(SecOps) チームのタスクと時間のほとんどを構成します。
+分析およびインシデントMicrosoft 365 Defenderの論理的な開始点は、インシデントのインシデントです。 インシデントの分析と修復は、通常、(SecOps) チームのタスクと時間のほとんどを構成します。
 
 ## <a name="next-step"></a>次の手順
 

@@ -14,16 +14,14 @@ ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: d331cf93097f66ddc5a464710d67b864419ab05c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: c5a738584f1705365db1c4fad61f190a42d97660
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464661"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330231"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 
@@ -43,7 +41,7 @@ ms.locfileid: "62464661"
 
 ## <a name="how-client-behavioral-blocking-works"></a>クライアントの動作のブロックのしくみ
 
-[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)、デバイス上で疑わしい動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃を検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと適切な動作をミリ秒単位で区別し、各成果物を分類します。 ほぼリアルタイムで、アーティファクトが悪意のあると判明すると、デバイス上でブロックされます。
+[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)、不審な動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃など、デバイスで検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと適切な動作をミリ秒単位で区別し、各成果物を分類します。 ほぼリアルタイムで、アーティファクトが悪意のあると判明すると、デバイス上でブロックされます。
 
 疑わしい動作が検出されると、アラートが生成[](alerts-queue.md)され、攻撃が検出および停止されている間に、"初期アクセスアラート" などのアラートがトリガーされ、[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) ポータル (以前は Microsoft 365 Defender) に表示されます。
 
@@ -51,7 +49,7 @@ ms.locfileid: "62464661"
 
 ## <a name="behavior-based-detections"></a>動作ベースの検出
 
-動作ベースの検出の名前は、[MITRE ATT と CK マトリックス&に従ってEnterprise](https://attack.mitre.org/matrices/enterprise)。 名前付け規則は、悪意のある動作が観察された攻撃段階を特定するのに役立ちます。
+動作ベースの検出の名前は、[MITRE ATT&の CK マトリックスに従Enterprise](https://attack.mitre.org/matrices/enterprise)。 名前付け規則は、悪意のある動作が観察された攻撃段階を特定するのに役立ちます。
 
 |戦術|検出の脅威名|
 |---|---|

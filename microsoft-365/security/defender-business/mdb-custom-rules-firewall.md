@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,30 +16,35 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 2200c32d910a5afd20a8ff01c6e24625d72ae21c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 7df23c9f823f5c3c0435743f7a05cf4421704b32
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464592"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329797"
 ---
-# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business でファイアウォール ポリシーのカスタム ルールを管理する (プレビュー)
+# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Microsoft Defender for Business でファイアウォール ポリシーのカスタム ルールを管理する
 
 > [!IMPORTANT]
-> Microsoft Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐[](https://aka.ms/mdb-preview)々にロールアウトされます。 今後数週間以内に最初の一連の顧客とパートナーをオンボードし、一般提供に至るプレビューを拡大します。 プレビューは最初の一連 [のシナリオで](mdb-tutorials.md#try-these-preview-scenarios)起動し、定期的に機能を追加します。
+> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
 
-Microsoft Defender for Business (プレビュー) には、望ましくないネットワーク トラフィックからデバイスを保護するためのファイアウォール ポリシーが含まれています。 カスタム ルールを使用して、ファイアウォール ポリシーの例外を定義できます。 つまり、カスタム ルールを使用して、特定の接続をブロックまたは許可できます。
+Microsoft Defender for Business には、望ましくないネットワーク トラフィックからデバイスを保護するためのファイアウォール ポリシーが含まれています。 カスタム ルールを使用して、ファイアウォール ポリシーの例外を定義できます。 つまり、カスタム ルールを使用して、特定の接続をブロックまたは許可できます。
 
-ファイアウォール ポリシーと設定の詳細については、「 [ファイアウォール in Microsoft Defender for Business (プレビュー)」を参照してください](mdb-firewall.md)。
+ファイアウォール ポリシーと設定の詳細については、「 [Microsoft Defender for Business のファイアウォール」を参照してください](mdb-firewall.md)。
 
 **この記事では、次の方法について説明します**。
 
 - [ファイアウォール ポリシーのカスタム ルールを作成する](#create-a-custom-rule-for-a-firewall-policy)
 - [ファイアウォール ポリシーのカスタム ルールを編集する](#edit-a-custom-rule-for-a-firewall-policy)
 - [カスタム ルールの削除](#delete-a-custom-rule)
+
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+>
 
 ## <a name="create-a-custom-rule-for-a-firewall-policy"></a>ファイアウォール ポリシーのカスタム ルールを作成する
 
@@ -105,8 +110,8 @@ Microsoft Defender for Business (プレビュー) には、望ましくないネ
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)](mdb-view-manage-incidents.md)
+- [Microsoft Defender for Business でのインシデントの表示と管理](mdb-view-manage-incidents.md)
 
-- [Microsoft Defender for Business での脅威への対応と軽減 (プレビュー)](mdb-respond-mitigate-threats.md)
+- [Microsoft Defender for Business での脅威への対応と軽減](mdb-respond-mitigate-threats.md)
 
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)

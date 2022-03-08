@@ -2,8 +2,8 @@
 title: Microsoft 365ユーザー向けグローバル テナントパフォーマンスの最適化
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 11/17/2020
+manager: scotv
+ms.date: 3/3/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,27 +16,36 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: この記事では、グローバル テナントの中国ユーザー向けにネットワーク パフォーマンスを最適化Microsoft 365します。
-ms.openlocfilehash: 65f80137786ea708e2ee0200e63600906fd18d24
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6c99245d523048d30124fc8f8b0c01d7c2004327
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166984"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326931"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365ユーザー向けグローバル テナントパフォーマンスの最適化
 
 > [!IMPORTANT]
-> このガイダンスは、中国に拠点を持つエンタープライズ ユーザーがMicrosoft 365テナントに接続する使用シナリオ **Microsoft 365です**。 このガイダンスは、21Vianet Office 365には適用されません。
+> このガイダンスは、中国に位置するエンタープライズ  ユーザーがMicrosoft 365テナントに接続する使用 **シナリオMicrosoft 365です**。 このガイダンスは **、** 21Vianet Office 365テナントには適用されません。
+
+>[!NOTE]
+>この記事は、リモート ユーザーの最適化に関するMicrosoft 365の一部です。
+
+>- VPN スプリット トンネリングを使用してリモート ユーザー Microsoft 365接続を最適化する方法の概要については、「[Overview: VPN split tunneling for remoteing for remote」を参照](microsoft-365-vpn-split-tunnel.md)Microsoft 365。
+>- VPN スプリット トンネリングの実装に関する詳細なガイダンスについては、「VPN スプリット トンネリングの実装」を参照[Microsoft 365。](microsoft-365-vpn-implement-split-tunnel.md)
+>- VPN スプリット トンネリングのシナリオの詳細な一覧については、「VPN スプリット トンネリングの一般的なシナリオ」を参照[Microsoft 365。](microsoft-365-vpn-common-scenarios.md)
+>- VPN スプリット トンネリング環境でのTeamsメディア トラフィックのセキュリティ保護に関するガイダンスについては、「VPN スプリット トンネリングTeamsメディア トラフィックのセキュリティ[保護」を参照してください](microsoft-365-vpn-securing-teams.md)。
+>- VPN 環境で Stream イベントとライブ イベントを構成する方法については、「VPN 環境での Stream イベントとライブ イベントに関する特別な考慮事項」 [を参照してください](microsoft-365-vpn-stream-and-live-events.md)。
 
 グローバル Microsoft 365 テナントと中国での企業プレゼンスを持つ企業では、中国に拠点を置くユーザーの Microsoft 365 クライアントのパフォーマンスは、中国電話会社のインターネット アーキテクチャに固有の要因によって複雑になる可能性があります。
 
 中国の ISP は、国境を越えたネットワークの混雑が高レベルになりやすい境界デバイスを経由するグローバルパブリック インターネットへのオフショア接続を規制しています。 この輻輳により、中国に入り出るすべてのインターネット トラフィックに対してパケット損失と遅延が発生します。
 
-![Microsoft 365トラフィック - 最適化されていない。](../media/O365-networking/China-O365-unoptimized.png)
+![Microsoft 365 - 最適化されていない。](../media/O365-networking/China-O365-unoptimized.png)
 
 パケット損失と待機時間は、ネットワーク サービスのパフォーマンス、特に大規模なデータ交換が必要なサービス (大きなファイル転送など) や、ほぼリアルタイムのパフォーマンス (オーディオおよびビデオ アプリケーション) を必要とするサービスに有害です。
 
-このトピックの目標は、中国の国境を越えたネットワークの輻輳がサービスに及ぼす影響を軽減するためのベスト プラクティスMicrosoft 365です。 このトピックでは、中国のキャリア内での複雑なルーティングによる高いパケット遅延の問題など、他の一般的なラストマイルのパフォーマンスの問題については説明します。
+このトピックの目的は、中国の国境を越えたネットワークの輻輳がサービスに及ぼす影響を軽減するためのベスト プラクティスMicrosoft 365です。 このトピックでは、中国のキャリア内での複雑なルーティングによる高いパケット遅延の問題など、他の一般的なラストマイルのパフォーマンスの問題については説明します。
 
 ## <a name="corporate-network-best-practices"></a>企業ネットワークのベスト プラクティス
 
@@ -45,14 +54,14 @@ ms.locfileid: "60166984"
 > [!IMPORTANT]
 > すべてのプライベート WAN 実装と同様に、ネットワーク構成が準拠していることを確認するために、国や地域の規制要件を常に確認する必要があります。
 
-最初のステップとして、ネットワークの計画とパフォーマンスチューニングのベンチマーク ネットワーク ガイダンスに従って作業を行[Microsoft 365。](./network-planning-and-performance.md) 主な目標は、可能であれば中国のインターネットMicrosoft 365グローバル サービスにアクセスしないようにすることです。
+最初のステップとして、ネットワークの計画とパフォーマンス調整のベンチマーク ネットワーク ガイダンスに従って作業を行[Microsoft 365](./network-planning-and-performance.md)。 主な目標は、可能であれば中国のインターネットMicrosoft 365グローバル サービスにアクセスしないようにすることです。
 
 - 既存のプライベート ネットワークを活用して、中国Microsoft 365外部のパブリック インターネットに送信する、中国のオフィス ネットワークとオフショアの場所間のネットワーク トラフィックを管理します。 中国以外のほぼすべての場所が明確な利点を提供します。 ネットワーク管理者は、Microsoft グローバル ネットワークとの低遅延相互接続領域で出力することで、さらに [最適化できます](/azure/networking/microsoft-global-network)。 香港、シンガポール、日本、韓国が例です。
-- VPN 接続を使用して企業ネットワークにアクセスするユーザー デバイスを構成し、Microsoft 365のプライベート オフショア リンクを転送するトラフィックを許可します。 VPN クライアントがスプリット トンネリングを使用するように構成されていないか、またはユーザー デバイスがネットワーク トラフィックの分割トンネリングを無視するようにMicrosoft 365します。 メディア トラフィックとリアルタイム メディア トラフィックに対する VPN 接続Teamsの詳細については、このセクションを[参照してください](#optimizing-microsoft-teams-meetings-network-performance-for-users-in-china)。
-- プライベートのオフショア リンクを通Microsoft 365トラフィックをルーティングするネットワークを構成します。 プライベート リンク上のトラフィックの量を最小限に抑える必要がある場合は、[最適化] カテゴリのエンドポイントのみをルーティングし、[許可]および[既定のエンドポイント] への要求でインターネットを中継できます。  これにより、高遅延とパケット損失に最も敏感な重要なサービスに最適化されたトラフィックを制限することで、パフォーマンスを向上し、帯域幅の消費を最小限に抑えます。
+- VPN 接続を通して企業ネットワークにアクセスするユーザー デバイスを構成し、Microsoft 365のプライベート オフショア リンクを転送するトラフィックを許可します。 VPN クライアントがスプリット トンネリングを使用するように構成されていないか、またはユーザー デバイスがネットワーク トラフィックの分割トンネリングを無視するようにMicrosoft 365します。 メディア トラフィックとリアルタイム メディア トラフィックの VPN 接続Teamsの詳細については、このセクションを[参照してください](#optimizing-microsoft-teams-meetings-network-performance-for-users-in-china)。
+- すべてのトラフィックをプライベートオフショア リンクMicrosoft 365ルーティングするネットワークを構成します。 プライベート リンク上のトラフィックの量を最小限に抑える必要がある場合は、[最適化] カテゴリのエンドポイントのみをルーティングし、[許可] および [既定のエンドポイント] への要求でインターネットを中継できます。 これにより、高遅延とパケット損失に最も敏感な重要なサービスに最適化されたトラフィックを制限することで、パフォーマンスを向上し、帯域幅の消費を最小限に抑えます。
 - 可能な場合は、TCP の代わりに UDP を使用して、ライブ メディア ストリーミング トラフィックを使用Teams。 UDP は、TCP よりも優れたライブ メディア ストリーミング パフォーマンスを提供します。
 
-トラフィックを選択的にルーティングする方法については、「Microsoft 365エンドポイントの管理[」Office 365 を参照してください](managing-office-365-endpoints.md)。 すべての世界規模の URL と IP Office 365の一覧については、「Office 365 IP アドレスの範囲」[を参照してください](urls-and-ip-address-ranges.md)。
+トラフィックを選択的にルーティングする方法については、「Microsoft 365エンドポイントの管理[」を参照Office 365してください](managing-office-365-endpoints.md)。 世界中のすべての URL と IP アドレスOffice 365一覧については、「Office 365 IP アドレスの範囲[」を参照してください](urls-and-ip-address-ranges.md)。
 
 ![Microsoft 365トラフィック - 最適化されています。](../media/O365-networking/China-O365-optimized.png)
 
@@ -63,17 +72,17 @@ ms.locfileid: "60166984"
 国境を越えたプライベート ネットワークや企業ネットワークへの VPN アクセスがオプションではない場合でも、中国に拠点を置くユーザーがこれらのベスト プラクティスに従うトレーニングを行って、ユーザーごとのパフォーマンスの問題を軽減できます。
 
 - キャッシュをOfficeするリッチ クライアント (Outlook、Teams、OneDrive など) を利用し、Web ベースのクライアントを回避します。 Officeキャッシュ機能とオフライン アクセス機能を使用すると、ネットワークの輻輳と待機時間の影響を大幅に軽減できます。
-- ユーザーがMicrosoft 365電話会議機能を使用して構成されている場合、Teamsユーザーは公衆交換電話網 (PSTN) を介して会議に参加できます。 詳細については、「電話会議」を参照[Office 365。](/microsoftteams/audio-conferencing-in-office-365)
-- ネットワーク パフォーマンスの問題が発生した場合は、トラブルシューティングのために IT 部門に報告し、サービスの問題が疑われる場合は Microsoft 365 Microsoft サポートにエスカレートする必要があります。 一部の問題は、国境を越えたネットワークのパフォーマンスによって引き起こされるという問題ではありません。
+- ユーザーがMicrosoft 365電話会議機能で構成されている場合、Teamsユーザーは公衆交換電話網 (PSTN) を介して会議に参加できます。 詳細については、「電話会議」を参照[Office 365](/microsoftteams/audio-conferencing-in-office-365)。
+- ネットワーク パフォーマンスの問題が発生した場合は、トラブルシューティングのために IT 部門に報告し、サービスの問題が疑われる場合は Microsoft のサポートにエスカレートMicrosoft 365必要があります。 一部の問題は、国境を越えたネットワークのパフォーマンスによって引き起こされるという問題ではありません。
 
-## <a name="optimizing-microsoft-teams-meetings-network-performance-for-users-in-china"></a>中国のMicrosoft Teamsの会議ネットワークパフォーマンスの最適化
+## <a name="optimizing-microsoft-teams-meetings-network-performance-for-users-in-china"></a>中国のMicrosoft Teamsユーザーの会議ネットワークパフォーマンスの最適化
 
-グローバル Microsoft 365 テナントと中国でのプレゼンスを持つ組織では、中国ベースのユーザーの Microsoft 365 クライアントのパフォーマンスは、中国のインターネット アーキテクチャに固有の要因によって複雑になる可能性があります。 多くの企業や学校は、このガイダンスに従って良い結果を報告しています。 ただし、この範囲は、IT ネットワークセットアップの制御下にあるユーザー ネットワークの場所 (たとえば、VPN 接続を使用するオフィスの場所やホーム/モバイル エンドポイント) に制限されます。 Microsoft Teams通話や会議は、ホーム オフィス、モバイルの場所、道路、喫茶店などの外部の場所からよく使用されます。 通話や会議はリアルタイムのメディア トラフィックに依存しますので、これらのエクスペリエンスTeamsネットワークの混雑に特に敏感です。
+グローバル Microsoft 365 テナントと中国でのプレゼンスを持つ組織では、中国ベースのユーザーの Microsoft 365 クライアントのパフォーマンスは、中国のインターネット アーキテクチャに固有の要因によって複雑になる可能性があります。 多くの企業や学校は、このガイダンスに従って良い結果を報告しています。 ただし、この範囲は、IT ネットワークセットアップの制御下にあるユーザー ネットワークの場所 (たとえば、VPN 接続を使用するオフィスの場所やホーム/モバイル エンドポイント) に制限されます。 Microsoft Teams通話や会議は、ホーム オフィス、モバイルの場所、道路、喫茶店などの外部の場所からよく使用されます。 通話と会議はリアルタイム のメディア トラフィックに依存しますので、これらのエクスペリエンスTeamsネットワークの混雑に特に敏感です。
 
 その結果、Microsoft は通信プロバイダーと提携し、中国の国内および公共インターネット接続と Microsoft 365 グローバル クラウドの Teams サービスと Skype サービス間の高品質で優先的なネットワーク パスを使用して、Teams および Skype for Business Online のリアルタイム メディア トラフィックを運ぶ。 この機能により、パケット損失などの主要な指標が 10 倍以上向上し、ユーザーエクスペリエンスに影響を与えました。
 
 >[!IMPORTANT]
->現時点では、これらの機能強化は、大規模なブロードキャストや、Teams または Microsoft Stream を使用した "町役場" スタイルの会議などの Microsoft Live Events 会議への参加には対処していない。 ライブ イベント会議を表示するには、中国のユーザーがプライベート ネットワークまたは SDWAN/VPN ソリューションを使用する必要があります。 ただし、このエクスペリエンスはプロデューサーまたは発表者の定期的な Teams 会議として機能しますので、ネットワークの改善は、ライブ イベント会議を発表または作成しているユーザーにとって有益です。
+>現時点では、これらの機能強化は、大規模なブロードキャストや、microsoft Stream または Microsoft Stream を使用した大規模なブロードキャストや "町役場" スタイルの会議などの Microsoft Live Events 会議に参加Teamsではありません。 ライブ イベント会議を表示するには、中国のユーザーがプライベート ネットワークまたは SDWAN/VPN ソリューションを使用する必要があります。 ただし、このエクスペリエンスはプロデューサーまたは発表者の定期的な Teams 会議として機能しますので、ネットワークの改善は、ライブ イベント会議を発表または作成しているユーザーに利益をもたらすでしょう。
 
 ### <a name="organization-network-best-practices-for-teams-meetings"></a>組織のネットワークのベスト プラクティス (会議Teams)
 
@@ -94,22 +103,36 @@ ms.locfileid: "60166984"
 
 中国のユーザーは、固定電話またはモバイル接続を使用して中国のパブリック インターネット サービスに接続するだけで、これらの改善を利用できます。 Teamsインターネット上のリアルタイムのメディア オーディオおよびビデオ トラフィックは、接続性と品質の向上から直接恩恵を受ける。
 
-ただし、他の Microsoft 365 サービスからのデータ、およびチャットやファイルなど、Teams 内の他のトラフィックは、これらの改善の恩恵を直接受けるわけではありません。 組織のネットワーク外のユーザーは、このトラフィックのネットワーク パフォーマンスが低下する可能性があります。 この記事で説明したように、VPN または SDWAN を使用してこれらの影響を軽減できます。 また、ユーザーに Web クライアント上でリッチ デスクトップ クライアントを使用して、ネットワークの問題を軽減するためにアプリ内キャッシュをサポートすることもできます。
+ただし、他の Microsoft 365 サービスからのデータ、およびチャットやファイルなど、Teams内の他のトラフィックは、これらの改善の恩恵を直接受けるわけではありません。 組織のネットワーク外のユーザーは、このトラフィックのネットワーク パフォーマンスが低下する可能性があります。 この記事で説明したように、VPN または SDWAN を使用してこれらの影響を軽減できます。 また、ユーザーに Web クライアント上でリッチ デスクトップ クライアントを使用して、ネットワークの問題を軽減するためにアプリ内キャッシュをサポートすることもできます。
 
 ### <a name="identifying-teams-real-time-media-network-traffic"></a>リアルタイムTeamsネットワーク トラフィックの識別
 
-ネットワーク デバイスまたは VPN/SDWAN セットアップを構成するには、リアルタイムのメディア オーディオおよびビデオ トラフィックTeamsのみを除外する必要があります。 トラフィックの詳細は、ID 11 の URL と IP アドレス範囲のOffice 365[一覧で確認できます](urls-and-ip-address-ranges.md#skype-for-business-online-and-microsoft-teams)。 他のすべてのネットワーク構成はそのまま残る必要があります。
+ネットワーク デバイスまたは VPN/SDWAN セットアップを構成するには、リアルタイム のメディア オーディオおよびビデオ トラフィックTeamsのみを除外する必要があります。 トラフィックの詳細は、ID 11 の URL と IP アドレス範囲のOffice 365[一覧で確認できます](urls-and-ip-address-ranges.md#skype-for-business-online-and-microsoft-teams)。 他のすべてのネットワーク構成はそのまま残る必要があります。
 
-Microsoft は、ネットワーク アーキテクチャと特性のMicrosoft 365可能な範囲を超えるクライアントのユーザー エクスペリエンスとパフォーマンスの向上に継続的に取り組み続け中です。 [ネットワーク[Office 365] Communityに](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)アクセスして、会話を開始または参加し、リソースを検索し、機能の要求と提案を送信します。
+Microsoft は、ネットワーク アーキテクチャと特性のMicrosoft 365可能な範囲を超えるクライアントのユーザー エクスペリエンスとパフォーマンスの向上に継続的に取り組み続け中です。 Office 365 [Networking Tech Community](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)にアクセスして、会話を開始または参加し、リソースを検索し、機能の要求と提案を送信する
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
-[Microsoft 365 のネットワーク計画とパフォーマンス チューニング](./network-planning-and-performance.md)
+[概要: VPN スプリット トンネリング (Microsoft 365](microsoft-365-vpn-split-tunnel.md)
+
+[VPN スプリット トンネリングを実装するMicrosoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+
+[VPN スプリット トンネリングの一般的なシナリオ (Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+
+[VPN スプリット トンTeamsメディア トラフィックのセキュリティ保護](microsoft-365-vpn-securing-teams.md)
+
+[VPN 環境での Stream イベントとライブ イベントに関する特別な考慮事項](microsoft-365-vpn-stream-and-live-events.md)
 
 [Microsoft 365 ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)
 
-[Office 365 エンドポイントの管理](managing-office-365-endpoints.md)
+[Microsoft 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
-[Office 365 の URL および IP アドレスの範囲](urls-and-ip-address-ranges.md)
+[Microsoft 365 ネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
+
+[セキュリティ専門家と IT による、現代のユニークなリモート ワーク シナリオで最新のセキュリティ管理を実現するための代替的な方法 (Microsoft セキュリティ チーム ブログ)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Microsoft での VPN のパフォーマンス強化: Windows 10 の VPN プロファイルを使用して自動接続を許可する](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+
+[VPN で実行: Microsoft がリモート ワークの従業員をどのように接続させているか](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
 [Microsoft グローバル ネットワーク](/azure/networking/microsoft-global-network)

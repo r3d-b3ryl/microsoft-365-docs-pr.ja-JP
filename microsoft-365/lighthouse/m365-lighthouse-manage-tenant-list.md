@@ -16,29 +16,26 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseリストを管理する方法について説明します。
-ms.openlocfilehash: c2a1bfe65f2002f6b8c6548eabea5dc450366c32
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 3c62761bdb5fbed08be07e909d465aa0a790ff97
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254396"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330427"
 ---
 # <a name="manage-your-tenant-list"></a>テナントリストの管理
 
-> [!NOTE]
-> この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウントが設定されていない場合Microsoft 365 Lighthouse[を参照してください](m365-lighthouse-sign-up.md)Microsoft 365 Lighthouse。
-
 テナント リストを管理するために、Microsoft 365 Lighthouseにカスタム タグを適用できます。 これらのタグは、テナントを整理するために使用できます。また、関連するテナント セットで使用可能な既存のビューと分析情報をフィルター処理するのにも役立ちます。 [テナント] ページからタグを管理できます。 作成および割り当て後、タグに基づいてテナント、ユーザー、デバイス、脅威管理、および 365 ページWindowsデータをフィルター処理できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 テナント タグを管理するには、次の必要があります。
 
-- ユーザーの[要件を満Microsoft 365 Lighthouse。](m365-lighthouse-requirements.md)
+- ユーザーの[要件を満Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
 
-- 「登録する」の記事で説明[されているプロセスをMicrosoft 365 Lighthouse](m365-lighthouse-sign-up.md)します。
+- 「登録する」の記事で説明されている[プロセスをMicrosoft 365 Lighthouse](m365-lighthouse-sign-up.md)します。
 
-- 「Configure Microsoft 365 Lighthouseポータル のセキュリティ」[にMicrosoft 365 Lighthouse完了](m365-lighthouse-configure-portal-security.md)します。
+- 「Configure Microsoft 365 Lighthouse [ポータル セキュリティ」の記事で説明されているプロセスを完了](m365-lighthouse-configure-portal-security.md)します。
 
 - パートナー テナントのグローバル管理者である。
 
@@ -48,7 +45,7 @@ ms.locfileid: "61254396"
 
 2. [タグ **の管理] を選択します**。
 
-3. [タグの **管理] ウィンドウで** 、[タグの追加 **] を選択します**。
+3. [タグの **管理] ウィンドウで** 、[タグの追加] **を選択します**。
 
 4. 名前と説明を入力します。
 
@@ -76,9 +73,10 @@ ms.locfileid: "61254396"
 
 4. リストからタグを選択します。 一度に選択できるタグは 1 つのみです。
 
-テナントに既に割り当てられているタグには、タグ名の右側にチェック マークが表示されます。 また、リスト内の各テナントの横にあるチェック ボックスをオンにし、[タグの割り当て]を選択し、リストからタグを選択することで、複数のテナントにタグを割り当てすることもできます。
+テナントに既に割り当てられているタグには、タグ名の右側にチェック マークが表示されます。 また、リスト内の各テナントの横にあるチェック ボックスをオンにし、[タグの割り当て] を選択し、リストからタグを選択することで、複数のテナントにタグを割り当てすることもできます。
 
-**注**: 最大 30 の一意のタグを作成し、必要に応じて多数のテナントに割り当てできます。
+> [!NOTE]
+> 最大 30 の一意のタグを作成し、必要な数のテナントに割り当てできます。
 
 ## <a name="delete-a-tag"></a>タグを削除する
 
@@ -109,5 +107,5 @@ ms.locfileid: "61254396"
 ## <a name="related-content"></a>関連コンテンツ
 
 [アカウントにサインアップMicrosoft 365 Lighthouse](m365-lighthouse-sign-up.md) (記事)  
-[Microsoft 365 Lighthouse コンプライアンス ページの概要](m365-lighthouse-device-compliance-page-overview.md)(記事)  
+[Microsoft 365 Lighthouse コンプライアンス ページの概要](m365-lighthouse-device-compliance-page-overview.md) (記事)  
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)

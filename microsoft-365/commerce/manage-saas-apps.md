@@ -2,8 +2,8 @@
 title: 組織向けサービスとしてのソフトウェア アプリの管理
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jamitche, jmueller
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150
 description: Microsoft 365 管理センターでサードパーティ製アプリをアクティブにして管理する方法について説明します。
 ms.date: 04/15/2021
-ms.openlocfilehash: 4df8dd65656bf70329c0ea09911bc7ca4cd40f57
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: 1a8593e967f899f748f4124567028177777851e4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171269"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319715"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織向けサードパーティ製アプリのサブスクリプションを管理する
 

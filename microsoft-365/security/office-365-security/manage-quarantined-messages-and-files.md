@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、ユーザー (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理Exchange Online Protectionできます。 Microsoft Defender for Office 365組織の管理者は、SharePoint Online、OneDrive for Business、およびMicrosoft Teams。
+description: 管理者は、ユーザー (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理Exchange Online Protectionできます。 Microsoft Defender for Office 365組織の管理者は、SharePoint Online、OneDrive for Business、および Microsoft Teams で検疫済みファイルを管理Microsoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c216a84caefc783293cc1a4ce5b76357f4353a5
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7787943ad16a3ae641b475b01b7e1dd8bb7f51d2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935356"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318215"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -35,25 +35,25 @@ ms.locfileid: "61935356"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、危険な可能性があるメッセージまたは不要なメッセージは検疫済みメッセージとして保留されます。 詳細については [、「EOP の検疫済み電子メール メッセージ」を参照してください](quarantine-email-messages.md)。
+Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、危険な可能性があるメッセージまたは不要なメッセージは検疫済みメッセージとして保留されます。 詳細については、「 [EOP の検疫済み電子メール メッセージ」を参照してください](quarantine-email-messages.md)。
 
 管理者は、すべてのユーザーの検疫済みメッセージのすべての種類を表示、解放、および削除できます。 管理者は、誤検知を Microsoft に報告できます。
 
-既定では、マルウェア、高信頼フィッシング、またはメール フロー ルール (トランスポート ルールとも呼ばれる) の結果として検疫されたメッセージを管理できるのは管理者だけです。 ただし、管理者は検疫 _ポリシーを_ 使用して、メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を定義できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+既定では、マルウェア、高信頼フィッシング、またはメール フロー ルール (トランスポート ルールとも呼ばれる) の結果として検疫されたメッセージを管理できるのは管理者だけです。 ただし、管理者は _検疫ポリシーを_ 使用して、メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を定義できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
-microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルによって検疫されたファイルを[管理することもできます](mdo-for-spo-odb-and-teams.md)。
+Microsoft Defender for Office 365 を使用している組織の管理者は、SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルによって検疫されたファイルを[管理することもできます](mdo-for-spo-odb-and-teams.md)。
 
-検疫済みメッセージは、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、組織のスタンドアロン EOP PowerShell を表示および管理します。Exchange Onlineメールボックス)。
+Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、組織のスタンドアロン EOP PowerShell を表示および管理します。Exchange Onlineメールボックス)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 [検疫] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/quarantine> 。
+- Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 **"検疫"** ページに直接移動するには、<https://security.microsoft.com/quarantine> を使用します。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - この記事の手順を実行する際には、あらかじめ **Exchange Online** でアクセス許可を割り当てる必要があります。
-  - すべてのユーザーの検疫済みメッセージに対してアクションを実行するには、組織の管理、セキュリティ管理者、または検疫管理者の役割グループのメンバー **である** <sup>\*</sup> 必要があります。 Microsoft にメッセージを送信するには、セキュリティ管理者役割グループの **メンバーである** 必要があります。
-  - すべてのユーザーの検疫済みメッセージへの読み取り専用アクセスには、グローバル リーダーまたはセキュリティリーダーの役割グループの **メンバーである** 必要があります。
+  - すべてのユーザーの検疫済みメッセージに対してアクションを実行するには、組織の管理、セキュリティ管理者、または検疫管理者の役割グループのメンバー **である**<sup>\*</sup>必要があります。 Microsoft にメッセージを送信するには、セキュリティ管理者役割グループの **メンバーである** 必要があります。
+  - すべてのユーザーの検疫済みメッセージへの読み取り専用アクセスには、グローバル リーダーまたはセキュリティ リーダーの役割グループの **メンバーである** 必要があります。
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
@@ -61,15 +61,15 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
-  - <sup>\*</sup>Microsoft 365 Defender ポータルのメール **&** コラボレーション ロールの検疫管理者役割グループのメンバーは [、Exchange Online](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)の衛生管理役割グループのメンバーである必要があります [。Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) PowerShell で検疫手順を実行する必要があります。
+  - <sup>\*</sup>Exchange Online PowerShell  で検疫手順を実行するには、Microsoft 365 Defender ポータルの[メール &](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) コラボレーション ロールの検疫管理者役割グループのメンバーも [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の衛生管理役割グループのメンバーである必要があります。
 
-- 検疫されたメッセージは、検疫された理由に基づいて既定の期間保持されます。 保持期間が経過すると、メッセージは自動的に削除され、回復できません。 詳細については [、「EOP および Defender for Offie 365](quarantine-email-messages.md)の検疫済み電子メール メッセージ」を参照してください。
+- 検疫されたメッセージは、検疫された理由に基づいて既定の期間保持されます。 保持期間が経過すると、メッセージは自動的に削除され、回復できません。 詳細については、「[EOP および Defender for Office 365」を参照してください](quarantine-email-messages.md)。
 
-## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>検疫済みMicrosoft 365 Defenderを管理するには、このポータルを使用します。
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>検疫済みMicrosoft 365 Defenderを管理するには、Microsoft 365 Defender ポータルを使用します。
 
 ### <a name="view-quarantined-email"></a>検疫済みメールの表示
 
-1. [メール] Microsoft 365 Defenderで、[メール <https://security.microsoft.com> の送信] **& [検疫の確認]** \> **に** \> **移動します**。 [検疫] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/quarantine> 。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com> で、**[メールとコラボレーション]** \> **[レビュー]** \> **[検疫]** に移動します。 **"検疫"** ページに直接移動するには、<https://security.microsoft.com/quarantine> を使用します。
 
 2. [検疫 **] ページ** で、[電子メール] **タブが** 選択されているのを確認します。
 
@@ -94,7 +94,7 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 4. 結果をフィルター処理するには、**[フィルター]** をクリックします。 次のフィルターは、表示される **フィルター** ポップアップで使用できます。
    - **[メッセージ ID]**: メッセージのグローバル一意識別子。
 
-     たとえば、メッセージ [トレースを](message-trace-scc.md) 使用して、組織内のユーザーに送信されたメッセージを探し、メッセージが配信される代わりに検疫されたと判断しました。 メッセージ ID の完全な値 (角かっこ ( ) を含む場合があります) を必ず含める \<\> 必要があります。 例: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
+     たとえば、 [メッセージ トレースを](message-trace-scc.md) 使用して、組織内のユーザーに送信されたメッセージを探し、メッセージが配信される代わりに検疫されたと判断しました。 メッセージ ID の完全な値 (角かっこ () を含める場合があります\<\>。 例: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
 
    - **[送信者のアドレス]**
    - **受信者の住所**
@@ -110,10 +110,10 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
      - **トランスポート ルール** (メール フロー ルール)
      - **[バルク]**
      - **[スパム]**
-     - **マルウェア**: EOP のマルウェア対策ポリシー、セーフ Defender の添付ファイル ポリシー Office 365。 ポリシー **の種類の値** は、使用された機能を示します。
-     - **フィッシング**: スパム フィルターの評決は、フィッシングまたはフィッシング対策保護がメッセージ [(ス](set-up-anti-phishing-policies.md#spoof-settings)プーフィング設定または [偽装保護](set-up-anti-phishing-policis) を検疫しました。
+     - **マルウェア**: EOP のマルウェア対策ポリシー、または Defender セーフの添付ファイル ポリシー Office 365。 ポリシー **の種類の値** は、使用された機能を示します。
+     - **フィッシング**: スパム フィルターの評決は、フィッシングまたはフィッシング対策保護が [メッセージを検疫](set-up-anti-phishing-policies.md#spoof-settings)しました (スプーフィング設定または [偽装保護](set-up-anti-phishing-policis)。
      - **高確度のフィッシング**
-   - **受信者**: **[すべてのユーザー] または** **[自分のみ] です**。 エンド ユーザーは、送信された検疫済みメッセージのみを管理できます。
+   - **受信者**: **すべてのユーザーまたは****自分のみ**。 エンド ユーザーは、送信された検疫済みメッセージのみを管理できます。
    - **リリースの状態**: 次のいずれかの値。
      - **レビューが必要**
      - **承認済み**
@@ -147,12 +147,12 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 - **[送信者のアドレス]**
 - **[受信日時]**: メッセージを受信した日時。
 - **[件名]**
-- **検疫の理由**: メッセージがスパム、バルク、フィッシング、メールフロー ルール **(トランスポート** ルール) と一致したと識別された場合、またはマルウェアが含まれていると識別された場合に表示 **されます**。
-- **[ポリシーの種類]**
+- **検疫の理由**: メッセージがスパム、バルク、フィッシング、メール フロー **ルール (トランスポート** ルール) と一致した、またはマルウェアが含まれていると識別された場合に表示 **されます**。 
+- **ポリシーの種類**
 - **[ポリシー名]**
 - **受信者の数**
 - **[受信者]**: メッセージに複数の受信者が含まれている場合は、**[メッセージのプレビュー]** か **[メッセージ ヘッダーを表示]** をクリックして受信者の完全な一覧を表示する必要があります。
-- **受信者タグ**: 詳細については [、「Microsoft Defender の User tags for Office 365」 を参照してください](user-tags.md)。
+- **受信者タグ**: 詳細については、「[Microsoft Defender の User tags for Office 365](user-tags.md)。
 - **[有効期限]**: 検疫からメッセージが自動的に完全に削除される日時。
 - **[解放済み]**: メッセージが解放されたすべてのメール アドレス (ある場合)。
 - **[未解放]**: メッセージがまだ解放されていないすべてのメール アドレス (ある場合)。
@@ -170,20 +170,20 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 
 ![検疫済みメッセージの詳細ポップアップで使用可能なアクション。](../../media/quarantine-message-details-flyout-actions.png)
 
-- ![[メールを解放する] アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **電子メール** <sup>\*</sup> のリリース: 表示されるフライアウト ウィンドウで、次のオプションを構成します。
-  - **組織の許可リストに送信者を追加** する: 送信者からのメッセージが検疫されるのを防ぐには、このオプションを選択します。
+- ![[メールを解放する] アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **電子メールの**<sup>\*</sup>リリース: 表示されるフライアウト ウィンドウで、次のオプションを構成します。
+  - **組織の許可リストに** 送信者を追加する: 送信者からのメッセージが検疫されるのを防ぐには、このオプションを選択します。
   - 次のいずれかのオプションを選択します。
     - **すべての受信者にリリースする**
     - **特定の受信者へのリリース**: 表示される [受信者] ボックス **で受信者を** 選択します。
-  - **このメッセージのコピーを** 他の受信者に送信する: このオプションを選択し、表示される [受信者] ボックスに受信者の電子メール **アドレスを入力** します。
+  - **このメッセージのコピーを他** の受信者に送信する: このオプションを選択し、表示される [受信者] ボックスに受信者の電子メール **アドレスを入力** します。
 
     > [!NOTE]
-    > メッセージのコピーを他の受信者に送信するには、メッセージを元の受信者の少なくとも 1 つを解放する必要があります ([すべての受信者にリリース] または [特定の受信者にリリースする] を選択 **します)。**
+    > メッセージのコピーを他の受信者に送信するには、メッセージを元の受信者の少なくとも 1 つを解放する必要があります ([すべての受信者にリリースする] または [特定の受信者にリリースする] **を選択** します)。
 
-  - **メッセージを Microsoft** に送信して検出を改善する (誤検知) : このオプションは既定で選択され、誤って検疫されたメッセージが誤検知として Microsoft に報告されます。 メッセージがスパム、バルク、フィッシング、またはマルウェアを含むとして検疫された場合、メッセージは Microsoft スパム分析チームにも報告されます。 分析の結果に応じて、サービス全体のスパム フィルター ルールを調整して、メッセージの通過を許可する場合があります。
+  - **メッセージを Microsoft** に送信して検出を改善する (誤検知): このオプションは既定で選択され、誤って検疫されたメッセージが誤検知として Microsoft に報告されます。 メッセージがスパム、バルク、フィッシング、またはマルウェアを含むとして検疫された場合、メッセージは Microsoft スパム分析チームにも報告されます。 分析の結果に応じて、サービス全体のスパム フィルター ルールを調整して、メッセージの通過を許可する場合があります。
 
-  - **次のようなメッセージを許可** する : このオプションは既定でオフになっています ( ![ トグルオフ ](../../media/scc-toggle-off.png) )。 同様の URL、添付ファイル、その他のプロパティを含むメッセージが検疫されるのを一時的に防ぐには、オン (トグル オン ![ ](../../media/scc-toggle-on.png) ) にします。 このオプションを有効にすると、次のオプションを使用できます。
-    - **[削除後**]: このようなメッセージを許可する期間を選択します。 1 **日から** **30 日を選択します**。 既定値は 30 です。
+  - **次のようなメッセージを許可** する: このオプションは既定でオフになっています (![トグルオフ)。](../../media/scc-toggle-off.png) 同様の URL、![添付ファイル](../../media/scc-toggle-on.png)、その他のプロパティを含むメッセージが検疫されるのを一時的に防止するには、オン (トグル オン) します。 このオプションを有効にすると、次のオプションを使用できます。
+    - **[削除後**]: このようなメッセージを許可する期間を選択します。 [ **1 日から** **30 日] を選択します**。 既定値は 30 です。
     - **省略可能な** メモ: 許可の便利な説明を入力します。
 
   完了したら、[メッセージのリリース] **をクリックします**。
@@ -194,7 +194,7 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
   - メッセージを受信していない受信者だけが、潜在的な受信者の一覧に表示されます。
   - セキュリティ管理者 **役割グループの** メンバーだけが、メッセージを Microsoft に送信して検出 (誤検知 **)** を改善し、このオプションのようなメッセージを許可するを表示および **使用** できます。 
 
-- ![メールアイコンを共有します。](../../media/m365-cc-sc-share-email-icon.png) **メールの** 共有 : 表示されるフライアウトで、メッセージのコピーを受信する 1 つ以上の受信者を追加します。 完了したら、[共有] を **クリックします**。
+- ![メールアイコンを共有します。](../../media/m365-cc-sc-share-email-icon.png) **メールの** 共有: 表示されるフライアウトで、メッセージのコピーを受信する 1 つ以上の受信者を追加します。 完了したら、[共有] を **クリックします**。
 
 ![[その他のアクション] アイコン](../../media/m365-cc-sc-more-actions-icon.png)をクリックすると、次の操作を実行できます。**その他のアクション**:
 
@@ -213,15 +213,15 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 - ![[送信者ブロック] アイコン。](../../media/m365-cc-sc-block-sender-icon.png) **送信者のブロック**: **メールボックス** の [ブロックされた送信者] リストに送信者を追加します。 詳細については、「[メール送信者をブロックする](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)」を参照してください。
 
 - ![[送信のみ] アイコン。](../../media/m365-cc-sc-create-icon.png) **送信のみ**: 分析のためにメッセージを Microsoft に報告します。 表示されるフライアウトで、次のオプションを選択します。
-  - **送信の種類を選択します**。メール (既定 **)、URL、** または **[ファイル] を選択します**。 
+  - **申請の種類を選択します****。メール** (既定)、**URL**、または **ファイル。**
   - **ネットワーク メッセージ ID を追加するか、電子メール ファイルをアップロードする**: 次のいずれかのオプションを選択します。
     - **電子メール ネットワーク メッセージ ID を追加** します (既定では、ボックス内の対応する値を使用します)
     - **アップロードファイル (.msg または eml)** を選択する: [ファイルの参照] をクリックして、送信する .msg または .eml メッセージ ファイルを検索して選択します。
-  - **問題が発生した受信者を** 選択します:メッセージの元の受信者を 1 つ以上選択して、適用されたポリシーを分析します。
-  - **Microsoft に提出する理由を選択する**: 次のいずれかのオプションを選択します。
+  - **問題が発生した受信者を選択** します。メッセージの元の受信者を 1 つ以上選択して、適用されたポリシーを分析します。
+  - **Microsoft に提出する理由を選択** する: 次のいずれかのオプションを選択します。
     - **ブロックされていない (誤検知) (既定):** 次のオプションを使用できます。
-      - **次のようなメッセージを許可** する : このオプションは既定でオフになっています ( ![ トグルオフ ](../../media/scc-toggle-off.png) )。 同様の URL、添付ファイル、その他のプロパティを含むメッセージが検疫されるのを一時的に防ぐには、オン (トグル オン ![ ](../../media/scc-toggle-on.png) ) にします。 このオプションを有効にすると、次のオプションを使用できます。
-        - **[削除後**]: このようなメッセージを許可する期間を選択します。 1 **日から** **30 日を選択します**。 既定値は 30 です。
+      - **次のようなメッセージを許可** する: このオプションは既定でオフになっています (![トグルオフ)。](../../media/scc-toggle-off.png) 同様の URL、![添付ファイル](../../media/scc-toggle-on.png)、その他のプロパティを含むメッセージが検疫されるのを一時的に防止するには、オン (トグル オン) します。 このオプションを有効にすると、次のオプションを使用できます。
+        - **[削除後**]: このようなメッセージを許可する期間を選択します。 [ **1 日から** **30 日] を選択します**。 既定値は 30 です。
         - **省略可能な** メモ: 許可の便利な説明を入力します。
     - **ブロックされている必要があります (false 負の値)。**
 
@@ -259,33 +259,33 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
   - **組織の許可リストに送信者を追加する**
   - **このメッセージのコピーを他の受信者に送信する**
   - **検出を改善するためにメッセージを Microsoft に送信する (誤検知)**
-  - **次のようなメッセージを許可する**:
+  - **次のようなメッセージを許可します**。
     - **削除後**: **1 日** から **30 日**
     - **省略可能なメモ**
 
   完了したら、[メッセージのリリース] **をクリックします**。
 
   > [!NOTE]
-  > 次のシナリオを検討してください:john@gmail.com メッセージをメッセージに送信 faith@contoso.com と john@subsidiary.contoso.com。 Gmail は、このメッセージを 2 つのコピーに分割し、どちらも Microsoft でフィッシング詐欺として検疫にルーティングされます。 管理者は、これらのメッセージの両方をリリースして、admin@contoso.com。 管理メールボックスに到達した最初のリリース済みメッセージが配信されます。 2 番目にリリースされたメッセージは重複配信として識別され、スキップされます。 メッセージ ID と受信時間が同じ場合、メッセージは重複として識別されます。
+  > 次のシナリオを検討してください:john@gmail.com メッセージをメッセージに送信 faith@contoso.com と john@subsidiary.contoso.com。 Gmail は、このメッセージを 2 つのコピーに分割し、どちらも Microsoft でフィッシング詐欺として検疫にルーティングされます。 管理者は、これらのメッセージの両方をユーザーに admin@contoso.com。 管理メールボックスに到達した最初のリリース済みメッセージが配信されます。 2 番目にリリースされたメッセージは重複配信として識別され、スキップされます。 メッセージ ID と受信時間が同じ場合、メッセージは重複として識別されます。
 
-- ![検疫アイコンから削除します。](../../media/m365-cc-sc-delete-icon.png) **メッセージの削除**: 表示される警告 **で [は** い] をクリックすると、メッセージは元の受信者に送信されることなく、すぐに検疫から削除されます。
+- ![検疫アイコンから削除します。](../../media/m365-cc-sc-delete-icon.png) **メッセージの** 削除: 表示される警告 **で [は** い] をクリックすると、メッセージは元の受信者に送信されることなく、すぐに検疫から削除されます。
 - ![電子メール アイコンをダウンロードします。](../../media/m365-cc-sc-download-icon.png) **メッセージのダウンロード**
 - ![[送信のみ] アイコン。](../../media/m365-cc-sc-create-icon.png) **送信のみ**
 
 ## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>Defender の検疫済Microsoft 365 Defenderを管理するには、このポータルを使用Office 365
 
 > [!NOTE]
-> このセクションの検疫済みファイルの手順は、プラン 1 またはプラン 2 Office 365 Microsoft Defender でのみ使用できます。
+> このセクションの検疫済みファイルの手順は、Microsoft Defender Office 365プラン 1 またはプラン 2 サブスクライバーでのみ使用できます。
 
-Defender for Office 365 の組織では、管理者は セーフ、OneDrive、および Microsoft Teams の セーフ SharePoint 添付ファイルによって検疫されたファイルを管理できます。 これらのファイルの保護を有効にするには、「添付ファイルを有効にする[セーフ」をSharePoint、OneDrive、](turn-on-mdo-for-spo-odb-and-teams.md)およびMicrosoft Teams。
+Defender for Office 365 の組織では、管理者は、セーフ 添付ファイルによって検疫されたファイルを SharePoint、OneDrive、およびMicrosoft Teams。 これらのファイルの保護を有効にするには、「添付ファイルを有効にするセーフ[」をSharePoint、OneDrive、](turn-on-mdo-for-spo-odb-and-teams.md)およびMicrosoft Teams。
 
 ### <a name="view-quarantined-files"></a>検疫済みファイルの表示
 
-1. [メール] Microsoft 365 Defenderで、[メール <https://security.microsoft.com> の送信] **& [検疫の確認]** \> **に** \> **移動します**。 [検疫] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/quarantine> 。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com> で、**[メールとコラボレーション]** \> **[レビュー]** \> **[検疫]** に移動します。 **"検疫"** ページに直接移動するには、<https://security.microsoft.com/quarantine> を使用します。
 
-2. [検疫 **] ページで**、[ファイル]**タブ****([メール]** が既定のタブ) を選択します。
+2. [検疫 **] ページ** で、[ファイル] **タブを選択** します (**メール** は既定のタブです)。
 
-3. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 [列 **のカスタマイズ]** をクリックして、表示される列を変更します。 既定の列には、アスタリスク ( ) が付いています <sup>\*</sup> 。
+3. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 [列 **のカスタマイズ]** をクリックして、表示される列を変更します。 既定の列にはアスタリスク () が付いています<sup>\*</sup>。
    - [**User**<sup>\*</sup>]
    - **場所**<sup>\*</sup>
    - **添付ファイルのファイル名**<sup>\*</sup>
@@ -300,9 +300,9 @@ Defender for Office 365 の組織では、管理者は セーフ、OneDrive、�
 
 4. 結果をフィルター処理するには、**[フィルター]** をクリックします。 次のフィルターは、表示される **フィルター** ポップアップで使用できます。
    - **受信時刻**: **開始時刻** と **終了時刻** (日付)。
-   - **有効期限**:**開始時刻と****終了時刻**(日付)。
-   - **検疫の理由**: 使用可能な値は Malware **のみです**。
-   - **[ポリシーの種類]**
+   - **有効期限:** **開始時刻と****終了時刻** (日付) です。
+   - **検疫の理由**: 使用可能な値はマルウェア **のみです**。
+   - **ポリシーの種類**
 
    完了したら、[適用] または [キャンセル **] を****クリックします**。
 
@@ -325,8 +325,8 @@ Defender for Office 365 の組織では、管理者は セーフ、OneDrive、�
 - **ファイル サイズ**: キロバイト (KB) で指定します。
 - **組織** 組織の一意の ID。
 - **最終更新日時**
-- **[変更者**] : ファイルを最後に変更したユーザー。
-- **Secure Hash Algorithm 256-bit (SHA-256)** の値 : このハッシュ値を使用して、他の評価ストアまたは環境内の他の場所にあるファイルを識別できます。
+- **変更者**: ファイルを最後に変更したユーザー。
+- **Secure Hash Algorithm 256 ビット (SHA-256)** の値: このハッシュ値を使用して、他の評価ストアまたは環境内の他の場所にあるファイルを識別できます。
 
 ファイルに対してアクションを実行するには、次のセクションを参照してください。
 
@@ -341,9 +341,9 @@ Defender for Office 365 の組織では、管理者は セーフ、OneDrive、�
 
 ![検疫済みファイルの詳細フライアウトで使用可能なアクション。](../../media/quarantine-file-details-flyout-actions.png)
 
-- ![[ファイルの解放] アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **リリース ファイル**: 表示されるフライアウト ウィンドウで、分析のためにファイルを Microsoft に報告するをオンまたはオフにし、[リリース <sup>\*</sup> ] をクリック **します**。 
+- ![[ファイルの解放] アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **リリース ファイル**<sup>\*</sup>: 表示されるフライアウト ウィンドウで、分析のために **ファイルを Microsoft** に報告するをオンまたはオフにし、[リリース] をクリック **します**。
 - ![[ファイルの解放] アイコン。](../../media/m365-cc-sc-check-mark-icon.png)
-- ![ファイルのダウンロード アイコン。](../../media/m365-cc-sc-download-icon.png) **ダウンロード ファイル**: 表示されるフライアウトで、[このファイルのダウンロードによるリスクを理解する] を選択し、[ダウンロード] をクリックしてファイルのローカル コピーを保存します。
+- ![ファイルのダウンロード アイコン。](../../media/m365-cc-sc-download-icon.png) **ダウンロード ファイル**: 表示されるフライアウトで、[このファイルのダウンロードによるリスクを理解する] を選択し、[ダウンロード]  をクリックしてファイルのローカル コピーを保存します。
 - ![検疫アイコンから削除します。](../../media/m365-cc-sc-delete-icon.png) **検疫から削除**: 表示される警告 **で [は** い] をクリックすると、ファイルはすぐに削除されます。
 - ![[送信者ブロック] アイコン。](../../media/m365-cc-sc-block-sender-icon.png) **送信者のブロック**: **メールボックス** の [ブロックされた送信者] リストに送信者を追加します。 詳細については、「[メール送信者をブロックする](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)」を参照してください。
 
@@ -353,13 +353,13 @@ Defender for Office 365 の組織では、管理者は セーフ、OneDrive、�
 
 #### <a name="take-action-on-multiple-quarantined-files"></a>複数の検疫済みファイルに対してアクションを実行する
 
-[件名] 列の左側にある空白領域をクリックして、リスト内の複数の検疫済みファイル (最大 100) を選択すると、[一括操作] ドロップダウン リストが表示され、次の操作を実行できます。 
+[件名] 列の左側にある空白領域をクリックして、リスト内の複数の検疫済みファイル (最大 100) を選択すると、[一括操作] ドロップダウン リストが表示され、次の操作を実行できます。
 
 ![検疫中のファイルの一括操作のドロップダウン リスト。](../../media/quarantine-file-bulk-actions.png)
 
-- ![[ファイルの解放] アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **リリース ファイル**: 表示されるフライアウト ウィンドウで、分析のためにファイルを **Microsoft** に報告するをオンまたはオフにし、[リリース] をクリック **します**。
+- ![[ファイルの解放] アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **リリース ファイル**: 表示されるフライアウト ウィンドウで、分析のために **ファイルを Microsoft** に報告するをオンまたはオフにし、[リリース] をクリック **します**。
 - ![検疫アイコンから削除します。](../../media/m365-cc-sc-delete-icon.png) **検疫から削除**: 表示される警告 **で [は** い] をクリックすると、ファイルはすぐに削除されます。
-- ![ファイルのダウンロード アイコン。](../../media/m365-cc-sc-download-icon.png) **ダウンロード ファイル**: 表示されるフライアウトで、[このファイルのダウンロードによるリスクを理解する] を選択し、[ダウンロード] をクリックしてファイルのローカル コピーを保存します。
+- ![ファイルのダウンロード アイコン。](../../media/m365-cc-sc-download-icon.png) **ダウンロード ファイル**: 表示されるフライアウトで、[このファイルのダウンロードによるリスクを理解する] を選択し、[ダウンロード]  をクリックしてファイルのローカル コピーを保存します。
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>PowerShell Exchange Onlineスタンドアロン EOP PowerShell を使用して、検疫済みメッセージとファイルを表示および管理する
 
@@ -368,7 +368,7 @@ Defender for Office 365 の組織では、管理者は セーフ、OneDrive、�
 - [Delete-QuarantineMessage](/powershell/module/exchange/delete-quarantinemessage)
 - [Export-QuarantineMessage](/powershell/module/exchange/export-quarantinemessage)
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
-- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): このコマンドレットはメッセージ専用であり、セーフ 添付ファイルから SharePoint、OneDrive、および Microsoft Teams のファイルを検疫Microsoft Teams。
+- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): このコマンドレットはメッセージ専用であり、セーフ 添付ファイルから SharePoint、OneDrive、および Microsoft Teams のファイルは検疫されません。
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
 
 ## <a name="for-more-information"></a>詳細情報

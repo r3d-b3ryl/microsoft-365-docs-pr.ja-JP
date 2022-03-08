@@ -1,5 +1,5 @@
 ---
-title: セキュリティ スタッフのトレーニングをMicrosoft 365 Defender
+title: セキュリティ スタッフのトレーニングを行Microsoft 365 Defender
 description: セキュリティ スタッフの迅速な立ち上げのための主要なトレーニング リソースにアクセスします。
 keywords: ビデオ、セルフヘルプ、自己学習、立ち上げ、指導、コース、ラーニング パス、Microsoft Learn、コース、コース、SecOps、セキュリティ アナリスト
 search.product: eADQiWindows 10XVcnh
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,21 +22,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 32d8927172e7479f125c0e3b1ae44441cbc3de13
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 43e90c152f3eae42c9d24673bbc00bc282b963f3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903885"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326399"
 ---
-# <a name="train-your-security-staff-for-microsoft-365-defender"></a>セキュリティ スタッフのトレーニングをMicrosoft 365 Defender
+# <a name="train-your-security-staff-for-microsoft-365-defender"></a>セキュリティ スタッフのトレーニングを行Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-組織とそのデータを攻撃者から保護する緊急性が高い場合は、セキュリティ スタッフを迅速にオンボーディングしてセキュリティ Microsoft 365 Defender。 Microsoft では、複数の種類の学習および自己学習リソースを提供し、Microsoft 365 Defender関連付けられているサービスを提供しています。
+組織とそのデータを攻撃者から保護する緊急性が高い場合は、セキュリティ スタッフを迅速にオンボーディングして、セキュリティ Microsoft 365 Defender。 Microsoft では、複数の種類の学習および自己学習リソースを提供し、Microsoft 365 Defender関連付けられているサービスを提供しています。
 
 
 ## <a name="microsoft-365-defender-ninja-training"></a>Microsoft 365 Defenderニンジャトレーニング
@@ -47,7 +47,7 @@ ms.locfileid: "62903885"
 
 ## <a name="microsoft-learn-learning-paths"></a>Microsoft Learn ラーニング パス
 
-これらの Microsoft Learn ラーニング パスとそのモジュールを使用して、Microsoft 365 Defender と Microsoft Defender for Endpoint の理解を一度に 1 つのモジュールと単位で構築します。
+これらの Microsoft Learn ラーニング パスとそのモジュールを使用して、Microsoft 365 Defender と Microsoft Defender for Endpoint の理解を深め、一度に 1 つのモジュールとユニットを作成します。
 
  - [Microsoft 365 Defender を使用してサイバー攻撃を検出して対応する](/learn/paths/defender-detect-respond/)
 
@@ -62,7 +62,7 @@ ms.locfileid: "62903885"
 - [データを使用して調査するMicrosoft 365 Defender
 - Microsoft 365 Defender基本トレーニング
 - Microsoft Defender for Endpoint Basic Training
-- Microsoft Defender for Office 365ベスト プラクティス
+- Microsoft Defender for Office 365プラクティス
 - セットアップ
 
 ## <a name="hands-on-with-a-trial-environment"></a>試用版環境でのハンズオン

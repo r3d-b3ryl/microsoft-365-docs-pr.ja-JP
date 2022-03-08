@@ -2,8 +2,8 @@
 title: アドオンを購入するか、管理します
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -15,22 +15,22 @@ ms.collection:
 - Adm_O365
 search.appverid: MET150
 ms.custom:
+- commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 - AdminTemplateSet
 description: ビジネス サブスクリプション用のアドオンを購入および管理するMicrosoft 365を確認します。
 ms.date: 04/02/2021
-ms.openlocfilehash: 5b7bedc12cd8e8a0813689e42723f981561eb2c1
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ef24e1f6b743c19adc1e7f3120d76e90ebd82192
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370970"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329279"
 ---
 # <a name="buy-or-manage-add-ons"></a>アドオンを購入するか、管理します
 
-ビジネス プランMicrosoft 365には、サブスクリプション用に購入できるアドオンが多数含されています。 アドオンは、サブスクリプションエクスペリエンスを向上させるより多くの機能を提供します。
+ビジネス プランMicrosoft 365には、サブスクリプションで購入できるアドオンがあります。 アドオンは、サブスクリプションエクスペリエンスを向上させるより多くの機能を提供します。
 
 アドオンには次の 2 種類があります。
 
@@ -43,34 +43,34 @@ ms.locfileid: "61370970"
 
 ## <a name="buy-an-add-on"></a>アドオンを購入する
 
-次の手順を使用して、アドオンを検索して購入します。 リストには、使用可能なアドオンだけが含まれます。 このリストは、現在アクティブなサブスクリプションと、既に持っているその他の既存のアドオンに基づいて作成されます。 一覧にアドオンが含されていない場合は、購入できません。
+次の手順を使用して、アドオンを検索して購入します。 リストには、利用可能なアドオンのみが含まれています。 このリストは、現在アクティブなサブスクリプション、および既存のその他のアドオンに基づいています。 一覧にアドオンが含されていない場合は、購入できません。
 
 Skype for Business アドオンの詳細については、「[Skype for Business と Microsoft Teams のアドオン ライセンス](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)」を参照してください。
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">サービスを購入する</a>] ページに移動します。
-2. [サービスの購入]**ページ** の下部にある[アドオン] セクションで、購入するアドオンを見つけて、[詳細] を選択 **します**。
-3. [製品の詳細] ページで、[次へ] を **選択します**。
+2. **[サービスの購入]** ページの下部にある **[アドオン]** セクションで、購入するアドオンを見つけて、**[詳細]** を選択します。
+3. 製品の詳細ページで、**[次へ]** を選択します。
 4. 必要に応じて、その他の注文情報を入力します。 この情報には、アドオンのサブスクリプションの選択が含まれる場合があります。 完了したら、**[今すぐ確認する]** を選択します。
 5. 必要に応じて、注文と価格の情報を確認し、**[次へ]** を選択します。
 6. 支払い方法を選択するか、新しい支払い方法を追加し、**[注文]**  >  **[管理ホームに移動する]** を選択します。
 
 ## <a name="manage-an-add-on"></a>アドオンの管理
 
-スタンドアロン アドオン サブスクリプションは、他のサブスクリプションを管理するのと同じ方法で 、[製品] **ページで管理** します。 たとえば、ライセンスの[購入](licenses/buy-licenses.md)または削除、定期的な[](subscriptions/renew-your-subscription.md)請求の管理、スタンドアロン[](billing-and-payments/manage-payment-methods.md)アドオン サブスクリプションの支払い方法の編集または置換を行います。
+スタンドアロン アドオン サブスクリプションは、他のサブスクリプションを管理するのと同じ方法で 、[製品] **ページで管理** します。 たとえば、ライセンスの[購入](licenses/buy-licenses.md)または削除、定期的な[](subscriptions/renew-your-subscription.md)請求の管理、スタンドアロン アドオン [](billing-and-payments/manage-payment-methods.md) サブスクリプションの支払い方法の編集または置換を行います。
 
 従来のアドオンを管理するには、それを含むサブスクリプションにアクセスし、そこに変更を加えます。 従来のアドオンを管理するには、次の手順を使用します。
   
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 2. [製品 **] タブ** で、更新するアドオンを含むサブスクリプションを選択します。
-3. [サブスクリプションの詳細] ページの **[アドオン] セクションに** 、購入したアドオンが一覧表示されます。 [アドオン **の管理] を選択します**。
-4. [アドオン **の管理] ウィンドウ** の [アドオン] ドロップダウン リストから、変更するアドオンを選択します。
+3. [サブスクリプションの詳細] ページの **[アドオン] セクションに** 、購入したアドオンが一覧表示されます。 [ **アドオンの管理] を選択します**。
+4. [アドオン **の管理] ウィンドウ** の [アドオン] ドロップダウン  リストから、変更するアドオンを選択します。
 5. アドオンの数量変更を入力し、[保存] を **選択します**。
 
 ## <a name="remove-an-add-on"></a>アドオンを削除する
 
 スタンドアロン アドオン サブスクリプションを削除するには [、他の](subscriptions/cancel-your-subscription.md)サブスクリプションと同様に、サブスクリプションをキャンセルします。 または、定期的 [な請求をオフにできます](subscriptions/renew-your-subscription.md)。
 
-従来のアドオンは削除できない。 従来のアドオンを削除する場合は、サポートに問い合わせ(サポート[を受ける](../admin/get-help-support.md))
+従来のアドオンは削除できない。 従来のアドオンを削除する場合は、サポートに問い合わせ([サポートを受ける](../admin/get-help-support.md))。
   
 ## <a name="related-content"></a>関連コンテンツ
 

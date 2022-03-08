@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 090c43ea1d2d9f2d158f94d1e509490c3faf4799
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 58ba49a49b41d80bacb31efa780530e44a146fc1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767090"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326763"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux の新機能
 
@@ -28,6 +28,11 @@ ms.locfileid: "62767090"
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
+
+- コマンド ライン ツールでは、検疫済みファイルを、ファイルが最初に検出された場所以外の場所に復元できます。 これは、 を使用して実行できます `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`。
+- バグ修正
 
 ## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0)
 
@@ -39,7 +44,7 @@ ms.locfileid: "62767090"
 
 ## <a name="1015257-30121092152570"></a>101.52.57 (30.121092.15257.0)
 
-- アプリケーションで使用されている脆弱な log4j jar を検出Javaしました。 コンピューターは、log4j jars を読み込Javaプロセスを実行するために定期的に検査されます。 この情報は Microsoft Defender for Endpoint バックエンドに報告され、ポータルの [脆弱性の管理] 領域に公開されます。
+- アプリケーションで使用されている脆弱な log4j jars を検出Javaしました。 コンピューターは、log4j jars を読み込Javaプロセスを実行するために定期的に検査されます。 この情報は Microsoft Defender for Endpoint バックエンドに報告され、ポータルの [脆弱性の管理] 領域に公開されます。
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
 
@@ -97,7 +102,7 @@ ms.locfileid: "62767090"
 
 ## <a name="1011853"></a>101.18.53
 
-- EDR Linux 用の機能が[一般提供されています](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+- Linux 用 EDR が一 [般提供されました](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
 - カスタム スキャン中に AV の除外を無視する新しいコマンド ライン スイッチ (`--ignore-exclusions`) を追加しました (`mdatp scan custom`)
 - 診断ログ `mdatp diagnostic create` を別のディレクトリに保存できる新しいパラメーター (`--path [directory]`) を使用して拡張
 - バグ修正&パフォーマンスの向上

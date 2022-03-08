@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6e1bd4653318897ec82d49cd1dccfc0ab4105de
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: 28533f2ad3fcf547cab95812048b3de8af3bcb9a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218935"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324271"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Microsoft 脅威エキスパートの機能を構成および管理する
 
@@ -35,20 +35,20 @@ ms.locfileid: "62218935"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 > [!NOTE]
 > Microsoft 脅威エキスパート - ターゲット攻撃通知管理脅威検出サービスに適用する前に、Microsoft Technical Service プロバイダーおよびアカウント チームと適格性要件について話し合います。
 
 ラボのセットアップではなく、デバイスが登録された環境に Defender for Endpoint が展開されている必要があります。
 
-Defender for Endpoint のお客様の場合は **、Microsoft 脅威エキスパート -** ターゲット攻撃通知を申請して、最も重大な脅威を特定するのに役立つ特別な分析情報と分析を取得し、迅速に対応する必要があります。 アカウント チームまたは Microsoft 担当者に問 **い合わせ、Microsoft 脅威エキスパート - Experts on Demand** を購読し、関連する検出および敵対者に関する脅威の専門家と相談してください。
+Defender for Endpoint のお客様の場合は、**Microsoft 脅威エキスパート -** ターゲット攻撃通知を申請して、最も重大な脅威を特定するのに役立つ特別な分析情報と分析を取得し、迅速に対応する必要があります。 アカウント チームまたは Microsoft 担当者に問い合わせ、Microsoft 脅威エキスパート **- Experts on Demand** を購読し、関連する検出および敵対者に関する脅威の専門家と相談してください。
 
 ## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>[ターゲット攻撃通知Microsoft 脅威エキスパートを適用する]
 
 Defender for Endpoint のお客様が既に存在する場合は、ポータルからMicrosoft 365 Defenderできます。
 
-1. ナビゲーション ウィンドウから、[全般] 設定 > [ > - ターゲット攻撃通知> Microsoft 脅威エキスパート **] に移動します**。
+1. ナビゲーション ウィンドウで、[全般] 設定 > [ > - ターゲット攻撃通知 **> Microsoft 脅威エキスパートに移動します**。
 
 2. **[適用]** をクリックします。
 
@@ -60,7 +60,7 @@ Defender for Endpoint のお客様が既に存在する場合は、ポータル�
 
 4. プライバシーに [関する声明を読み](https://privacy.microsoft.com/privacystatement)、完了 **したら [送信** ] をクリックします。 アプリケーションが承認されると、ウェルカム メールが届きます。
 
-    ![アプリケーション確認Microsoft 脅威エキスパートのイメージ。](images/mte-applicationconfirmation.png)
+    ![アプリケーションの確認Microsoft 脅威エキスパートのイメージ。](images/mte-applicationconfirmation.png)
 
 受け入れられると、ウェルカム メールが届き、[ **適用** ] ボタンが "オン" のトグルに変更されます。 ターゲット攻撃通知サービスから自分を取り出す場合は、トグルをスライド "off" にし、ページの下部にある [設定の保存] をクリックします。
 
@@ -70,7 +70,7 @@ Microsoft 脅威エキスパートから、以下の媒体を通じて、標的�
 
 - Defender for Endpoint portal's **Incidents page**
 - Defender for Endpoint ポータルの **アラート** ダッシュボード
-- OData アラート [API と](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) REST [API](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- OData アラート [API と](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) [REST API](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
 - [高度な検索の DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) テーブル
 - ユーザーのメール(構成することにした場合)
 
@@ -82,19 +82,19 @@ Microsoft 脅威エキスパートから、以下の媒体を通じて、標的�
 
 ## <a name="view-the-targeted-attack-notification"></a>ターゲット攻撃の通知を表示する
 
-電子メール通知を受信するようにシステムを構成したMicrosoft 脅威エキスパートから、電子メール内のターゲット攻撃通知の受信を開始します。
+電子メール通知を受信するようにシステムを構成したMicrosoft 脅威エキスパートからターゲット攻撃通知の受信を開始します。
 
 1. メール内のリンクをクリックして、脅威の専門家とタグ付けされたダッシュボードの対応するアラート コンテキスト **に移動します**。
 
 2. ダッシュボードから、メールから受け取ったのと同じアラート トピックを選択して、詳細を表示します。
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>ユーザー登録Microsoft 脅威エキスパート - エキスパート オンデマンド
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>ユーザー登録 - Microsoft 脅威エキスパートエキスパート オンデマンド
 
 これはサブスクリプション サービスとして使用できます。 すでに Defender for Endpoint のお客様である場合は、Microsoft の担当者に連絡して、Microsoft 脅威エキスパート - エキスパート オンデマンドに登録することができます。
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>組織内の疑わしいサイバーセキュリティアクティビティについて Microsoft の脅威専門家に相談する
 
-ポータル内から直接Microsoft 脅威エキスパートできるユーザーとパートナーを組み、Microsoft 365 Defender正確な対応を行います。 エキスパートは、複雑な脅威、取得した標的型攻撃通知、またはポータル ダッシュボードに表示されるアラート、潜在的に侵害されたデバイス、または脅威インテリジェンス コンテキストに関する詳細が必要な場合について、より深く理解するために分析情報を提供します。
+パートナーは、Microsoft 脅威エキスパートポータル内から直接参加できるMicrosoft 365 Defenderと提携して、迅速かつ正確な対応を行います。 エキスパートは、複雑な脅威、取得した標的型攻撃通知、またはポータル ダッシュボードに表示されるアラート、潜在的に侵害されたデバイス、または脅威インテリジェンス コンテキストに関する詳細が必要な場合について、より深く理解するために分析情報を提供します。
 
 > [!NOTE]
 >
@@ -113,13 +113,13 @@ Microsoft 脅威エキスパートから、以下の媒体を通じて、標的�
 
     次の画面は、完全なサブスクリプションを使用している場合Microsoft 脅威エキスパートエキスパート オンデマンド サブスクリプションを表示します。
 
-    ![オンデマンドのMicrosoft 脅威エキスパートの完全なサブスクリプション画面の画像。](images/mte-eod-fullsubscription.png)
+    ![完全なサブスクリプションMicrosoft 脅威エキスパートのエキスパートの画像。](images/mte-eod-fullsubscription.png)
 
     [ **問い合わせ** ] トピック フィールドには、調査要求の関連ページへのリンクが事前に入力されています。 たとえば、要求を行った時点で発生したインシデント、アラート、またはデバイスの詳細ページへのリンクです。
 
-3. 次のフィールドで、調査を開始するのに十分なコンテキストMicrosoft 脅威エキスパート情報を提供します。
+3. 次のフィールドに、調査を開始するのに十分なコンテキストMicrosoft 脅威エキスパート情報を入力します。
 
-4. メール アドレスに対応するために使用するメール アドレスを入力Microsoft 脅威エキスパート。
+4. ユーザーに対応するために使用する電子メール アドレスを入力Microsoft 脅威エキスパート。
 
 > [!NOTE]
 > Microsoft Services Hub を通じてエキスパート オンデマンド ケースの状態を追跡する場合は、カスタマー サクセス アカウント マネージャーに連絡してください。
@@ -160,7 +160,7 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 
 ### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>管理された狩猟に関する問い合わせに関する進行状況レポートを受け取る
 
-お問い合Microsoft 脅威エキスパート、お問い合わせに応じて異なります。 2 日以内に脅威専門家の問い合わせに問い合わせて、次のカテゴリから調査状況を伝える進行状況レポートを電子メールで送信します。
+お問い合わせMicrosoft 脅威エキスパート、お問い合わせ内容によって異なります。 2 日以内に脅威専門家の問い合わせに問い合わせて、次のカテゴリから調査状況を伝える進行状況レポートを電子メールで送信します。
 
 - 調査を続行するには、さらに詳しい情報が必要です。
 - 技術的なコンテキストを決定するには、ファイルまたは複数のファイル サンプルが必要です

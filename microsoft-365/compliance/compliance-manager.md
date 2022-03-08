@@ -2,8 +2,8 @@
 title: Microsoft コンプライアンス マネージャー
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager は、組織がリスク評価を簡素化および自動化するのに役立ち、リスクに対処するために推奨されるアクションを提案します。
-ms.openlocfilehash: 47040da384c33e853f0c11735053bb8850735c3d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 289d82e8bc5f404589b263a2b6dec499d9e3b7e2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747756"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317669"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャー
 
@@ -31,7 +31,7 @@ ms.locfileid: "60747756"
 
 ## <a name="what-is-compliance-manager"></a>コンプライアンス マネージャーとは?
 
-[Microsoft コンプライアンス マネージャー](https://compliance.microsoft.com/compliancemanager)は、組織<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>Microsoft 365 コンプライアンス センターのコンプライアンス要件を簡単に管理し、利便性を高め、管理するのに役立つ機能です。 コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。
+[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) は、組織のコンプライアンス要件<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>容易に管理し、利便性を高め、組織のコンプライアンス要件を管理するのに役立つ、組織のコンプライアンス マネージャーの機能です。 コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。
 
 コンプライアンス マネージャーが組織がコンプライアンスを管理する方法を簡略化する方法については、以下のビデオをご覧ください。
 <br>
@@ -50,7 +50,7 @@ ms.locfileid: "60747756"
 
 コンプライアンス マネージャー ダッシュボードには、現在のコンプライアンス スコアが表示され、注意が必要な情報が表示され、重要な改善アクションが示されます。 コンプライアンス マネージャー ダッシュボードの外観の例を次に示します。
 
-![コンプライアンス マネージャー - ダッシュボード。](../media/compliance-manager-dashboard.png "コンプライアンス マネージャーのダッシュ ボード")
+![コンプライアンス マネージャーのダッシュ ボード。](../media/compliance-manager-dashboard.png "コンプライアンス マネージャーのダッシュ ボード")
 
 ## <a name="understanding-your-compliance-score"></a>コンプライアンス スコアについて
 
@@ -75,7 +75,7 @@ ms.locfileid: "60747756"
 コンプライアンス マネージャーは、次の種類のコントロールを追跡します。
 
 1. **Microsoft マネージ コントロール**: Microsoft クラウド サービスのコントロール(Microsoft が実装を担当する)
-2. **コントロール**: 顧客管理コントロールと呼ばれる場合があります。これらは組織によって実装および管理されるコントロールです。
+2. **コントロール:** 顧客管理コントロールと呼ばれる場合があります。これらは、組織によって実装および管理されるコントロールです。
 3. **共有コントロール**: これらは、組織と Microsoft の両方が実装の責任を共有するコントロールです。
 
 ##### <a name="learn-more"></a>詳細情報
@@ -86,15 +86,15 @@ ms.locfileid: "60747756"
 
 ### <a name="assessments"></a>評価
 
-評価とは、特定の規制、標準、またはポリシーからのコントロールのグループ化です。 評価は、標準、規則、または法律の要件を満たすのに役立つ評価内で処置を完了します。 たとえば、その中のすべてのアクションを完了すると、ISO 27001 の要件に沿った Microsoft 365 設定を作成するのに役立つ評価を受ける場合があります。
+評価とは、特定の規制、標準、またはポリシーからのコントロールのグループ化です。 評価は、標準、規則、または法律の要件を満たすのに役立つ評価内で処置を完了します。 たとえば、その中のすべてのアクションを完了すると、ISO 27001 の要件に沿った Microsoft 365 設定を作成するのに役立つという評価を受ける場合があります。
 
 評価には、次のいくつかのコンポーネントがあります。
 
 - **範囲内のサービス**: 評価に適用される Microsoft サービスの特定のセット
-- **Microsoft マネージ コントロール**: Microsoft クラウド サービスのコントロール。Microsoft がユーザーに代わって実装する
-- **コントロール**: 顧客管理コントロールと呼ばれる場合があります。これらは組織によって実装および管理されるコントロールです。
+- **Microsoft マネージ コントロール**: Microsoft クラウド サービスのコントロール(Microsoft がユーザーに代わって実装する)
+- **コントロール:** 顧客管理コントロールと呼ばれる場合があります。これらは、組織によって実装および管理されるコントロールです。
 - **共有コントロール**: これらは、組織と Microsoft の両方が実装の責任を共有するコントロールです。
-- **評価スコア**: 組織と Microsoft が管理する評価内のアクションから、可能な合計ポイントを達成するための進捗状況を示します。
+- **評価スコア**: 組織と Microsoft が管理する評価内のアクションから、可能なポイントの合計を達成するための進捗状況を示します。
 
 評価を作成する場合は、それらをグループに割り当てる必要があります。 組織にとって最も論理的な方法でグループを構成できます。 たとえば、監査年、地域、ソリューション、組織内のチーム、その他の方法で評価をグループ化できます。 グループを作成したら、コンプライアンス マネージャー [ダッシュボード](compliance-manager-setup.md#filtering-your-dashboard-view) をフィルター処理して、1 つ以上のグループでスコアを表示できます。
 

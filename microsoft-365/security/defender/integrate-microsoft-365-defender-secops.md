@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6bfec4b38d3451d25d65c63ce46fb8df74cd6d0e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 6ae973f6483035c450aea78664bf804ea0c67cb3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171997"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330203"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>セキュリティMicrosoft 365 Defenderに統合する
 
@@ -46,7 +46,7 @@ ms.locfileid: "62171997"
 - [Microsoft 365 Defender の使用を開始する](get-started.md)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)
 
-組織が既存のアーキテクチャとプロセスをMicrosoft 365 Defender場合、これらの記事は既存のアーキテクチャとプロセスを肯定または改善できます。
+組織で既存のアーキテクチャとプロセスの一部をMicrosoft 365 Defender場合、これらの記事は既存のアーキテクチャとプロセスを肯定または改善できます。
 
 >[!Note]
 >Microsoft のパートナーである Protiviti は、この記事のために情報や重要なフィードバックを提供してくれました。
@@ -66,12 +66,12 @@ ms.locfileid: "62171997"
 
 ## <a name="next-steps"></a>次の手順
 
-次の手順を使用して、Microsoft 365 Defenderを SOC に統合します。
+次の手順を使用して、MICROSOFT 365 DEFENDERを SOC に統合します。
 
 - [手順 1.運用の準備Microsoft 365 Defender計画する](integrate-microsoft-365-defender-secops-plan.md)
 - [手順 2.ゼロトラスト フレームワークを使用して SOC 統合準備評価を実行する](integrate-microsoft-365-defender-secops-readiness.md)
 - [手順 3.サービスの SOC Microsoft 365 Defenderとの統合を計画する](integrate-microsoft-365-defender-secops-services.md)
-- [手順 4.役割Microsoft 365 Defender監督の定義](integrate-microsoft-365-defender-secops-roles.md)
+- [手順 4.役割Microsoft 365 Defender監督を定義する](integrate-microsoft-365-defender-secops-roles.md)
 - [手順 5.使用例の開発とテスト](integrate-microsoft-365-defender-secops-use-cases.md)
 - [手順 6.SOC のメンテナンス タスクを特定する](integrate-microsoft-365-defender-secops-tasks.md)
 

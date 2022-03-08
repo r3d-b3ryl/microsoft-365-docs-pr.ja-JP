@@ -2,8 +2,8 @@
 title: Microsoft コンプライアンス マネージャーの新機能
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,18 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス管理の新機能と新機能を確認します。 更新された評価、新しい評価テンプレート、新しいアクションなどについて説明します。
-ms.openlocfilehash: a5489241b223b076e3ef44432fd934afb732b38f
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 48aed2e173231e3945bcdd3de73052de9f970a5b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444415"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317655"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーの新機能
 
 **この記事では、次の情報を参照してください。** コンプライアンス マネージャーの最近の更新プログラムについて学習します。
 
 ## <a name="february-2022"></a>2022 年 2 月
+
+### <a name="continuous-compliance-assessment-of-improvement-actions"></a>改善アクションの継続的なコンプライアンス評価
+
+コンプライアンス マネージャーでは、セキュリティで保護されたスコアで以前はカバーされていない 35 を超える改善アクションに対して、テストと証拠の自動生成を追加しています。 継続的なコンプライアンス評価を使用すると、コンプライアンス評価に関連し、関連するソリューションにアクセスするライセンスを取得している場合に、完了したこれらの改善アクションに関する更新プログラムを受け取る事が可能です。 継続的なコンプライアンス評価により、ユーザーは改善アクションのスコアリング ロジックを可視化し、特定のスコアを受け取った理由に関する洞察と証拠を提供します。 この機能は、Microsoft 365 Secure Score との既存の統合と共に機能し、以前に構成した自動アクションは引き続き同様に動作します。 自動テスト設定 [について詳しくは、次のページを参照してください](compliance-manager-setup.md#set-up-automated-testing)。
+### <a name="alerts-and-alert-policies"></a>アラートとアラート ポリシー
+
+ユーザーは、組織が追跡するコンプライアンス マネージャーの変更に関するアラートを設定できます。簡単なセットアップ ウィザードを使用すると、警告ポリシーを作成して、改善アクション スコアの変更、改善アクションの割り当ての変更、改善アクションのテストまたは実装状態の変更、および改善アクションの [ドキュメント] タブでのファイルのアップロードまたは削除という種類のイベントが発生した場合に通知を作成できます。詳しくは、「コンプライアンス マネージャーの [通知とアラート ポリシー」をご覧ください](compliance-manager-alert-policies.md)。
 
 ### <a name="try-recommended-assessment-templates-for-your-organization"></a>組織の推奨評価テンプレートを試す
 
@@ -49,7 +56,7 @@ ms.locfileid: "62444415"
 - ゼロトラスト ネットワーク
 - ゼロ信頼の可視性、自動化、およびオーケストレーション
 
-### <a name="new-assessment-templates"></a>新しい評価テンプレート
+### <a name="new-preview-templates"></a>新しいプレビュー テンプレート
 
 プレビューでは、次の評価テンプレートを使用できます。
 
@@ -79,7 +86,7 @@ ms.locfileid: "62444415"
 
 ### <a name="integration-with-microsoft-priva"></a>Microsoft Priva との統合
 
-コンプライアンス マネージャーは Microsoft Priva と手をつないで作業できます。このソリューションは、組織が組織に保存している個人データを保護するのに役立Microsoft 365。 Priva には、データの視覚化と理解、主要なリスク シナリオの管理、および件名の権利要求の処理のためのポリシーの実装に役立つツールが用意されています。 保存する個人データを保護するために Priva で手順を実行すると、コンプライアンス マネージャーのプライバシー評価に役立ち、コンプライアンス スコアの向上に役立ちます。 Priva や他のソリューションがどのようにスコアに貢献しているのか確認し、さらに改善する可能性のある機会については、「コンプライアンス マネージャー」の「ソリューション」タブを参照してください。 Priva の詳細については、「Microsoft Priva [について」を参照してください](/privacy/priva)。
+コンプライアンス マネージャーは、Microsoft Priva と手をつないで作業できます。このソリューションは、組織が組織に保存している個人データを保護するのに役立Microsoft 365。 Priva には、データの視覚化と理解、主要なリスク シナリオの管理、および件名の権利要求の処理のためのポリシーの実装に役立つツールが用意されています。 保存する個人データを保護するために Priva で手順を実行すると、コンプライアンス マネージャーのプライバシー評価に役立ち、コンプライアンス スコアの向上に役立ちます。 Priva や他のソリューションがどのようにスコアに貢献しているのか確認し、さらに改善する可能性のある機会については、「コンプライアンス マネージャー」の「ソリューション」タブを参照してください。 Priva の詳細については、「Microsoft Priva [について」を参照してください](/privacy/priva)。
 
 ## <a name="july-2021"></a>2021 年 7 月
 

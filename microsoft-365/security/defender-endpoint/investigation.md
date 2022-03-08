@@ -11,18 +11,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54cf42f18c6e31a11649dccc2181e88ffb21dd51
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1749404942b42778ecde99417a8e3501c7c4f4cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283691"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327225"
 ---
 # <a name="investigation-resource-type"></a>調査リソースの種類
 
@@ -53,7 +51,7 @@ Defender for Endpoint の自動調査エンティティを表します。
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ|種類|説明
+プロパティ|型|説明
 :---|:---|:---
 ID|String|調査エンティティの ID。 
 startTime|DateTime Nullable|調査が作成された日時。

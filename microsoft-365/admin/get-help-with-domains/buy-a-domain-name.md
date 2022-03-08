@@ -2,8 +2,8 @@
 title: ドメイン名を購入する
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: ドメイン名を購入する方法については、Microsoft 365。
-ms.openlocfilehash: 77270f7ba045d58ae29092437d3356371a40dc38
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8b9c4cea91caf91b5797515314342a7967af96d1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805858"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316983"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
 
@@ -40,7 +40,7 @@ ms.locfileid: "62805858"
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
-## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして[ドメインを購入する設定\>に\>移動する
+## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして[ドメインを購入する設定\>ドメインを\>購入する] に移動します。
 
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
@@ -99,10 +99,10 @@ ms.locfileid: "62805858"
 > [!CAUTION]
 > 一部のドメイン レジストラーまたは DNS ホスティング プロバイダーでは、ユーザーが必要とする DNS レコードの作成を許可Microsoft 365。 必要なすべてのレコードをサポートしているホスティング プロバイダーの一覧を次に示します。 別のホスティング プロバイダーの使用を考えている場合は、 [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)してください。 
   
-ドメインを (ドメイン レジストラーで) 登録した後、管理者としてMicrosoft 365サインインします。次に、ドメインを電子メール アドレスや他のサービスと一緒に使用できるようドメインを設定します。
+ドメイン (ドメイン レジストラー) を登録した後、管理者としてMicrosoft 365サインインします。次に、ドメインを電子メール アドレスや他のサービスと一緒に使用できるようドメインを設定します。
   
 > [!NOTE]
-> このSharePointオンラインパブリック Web サイトの情報は、組織が 2015 年 3 月 9 日より前Microsoft 365購入した場合にのみ適用されます。 
+> このSharePointのオンラインパブリック Web サイト情報は、組織が 2015 年 3 月 9 日より前Microsoft 365購入した場合にのみ適用されます。 
 
 ### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>ユーザーに必要なすべての DNS レコードをサポートするドメイン レジストラー Microsoft 365
 

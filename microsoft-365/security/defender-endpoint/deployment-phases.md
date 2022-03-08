@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8463d4b9c330d65ad36d60f20e93fbf00d95959e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5715a796e0c7b78ae369f074b5edcb6ccfc8ae90
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164540"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330567"
 ---
 # <a name="deployment-phases"></a>展開フェーズ
 
@@ -81,7 +81,7 @@ Microsoft Defender for Endpoint には多くの機能が備え付けられます
 
 ### <a name="in-scope"></a>スコープ内
 
-- サービスへのMicrosoft エンドポイント マネージャーとMicrosoft エンドポイント マネージャーの使用と機能の構成
+- サービスへのMicrosoft エンドポイント マネージャーとMicrosoft Endpoint Configuration Managerの使用と機能の構成
 - Defender for Endpoint エンドポイントの検出と応答 (EDR) 機能の有効化
 - Defender for Endpoint Endpoint Protection platform (EPP) 機能の有効化
   - 次世代の保護

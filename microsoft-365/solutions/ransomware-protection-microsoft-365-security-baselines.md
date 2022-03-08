@@ -1,9 +1,9 @@
 ---
 title: 手順 1. セキュリティ 基準を構成する
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人間が操作するランサムウェア、人手によるランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: セキュリティ ベースラインを使用して、ランサムウェア攻撃から Microsoft 365 リソースを保護します。
-ms.openlocfilehash: 66218d15a36faa510bd246b46dbc0dcd0f9948fb
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 22092994765e9015421c21f2ee057c63463d594d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887522"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320187"
 ---
 # <a name="step-1-configure-security-baselines"></a>手順 1. セキュリティ 基準を構成する
 

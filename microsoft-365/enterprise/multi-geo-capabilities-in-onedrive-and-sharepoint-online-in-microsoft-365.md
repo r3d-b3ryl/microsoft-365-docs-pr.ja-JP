@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: admindeeplinkSPO
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
@@ -18,12 +18,12 @@ ms.collection:
 ms.localizationpriority: medium
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: OneDrive Online の複数地域機能を使用して、複数の地域に Microsoft 365 のプレゼンスを展開します。
-ms.openlocfilehash: 52bdbeddec29879e5f985dd1dff64db0d04b8072
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 778efca6035dad05ec9bc77298b888e50f381ca1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189035"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330035"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive および SharePoint Online の複数地域機能
 
@@ -39,15 +39,15 @@ OneDrive および SharePoint Online の複数地域機能を使用すると、S
 
 ## <a name="sharepoint-sites-and-groups"></a>SharePoint サイトとグループ
 
-複数地域機能の管理は、SharePoint管理センターから利用できます。 詳細な情報は[対応するブログ記事](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)にあります。
+複数地域機能の管理は、管理センターからSharePoint<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">できます</a>。 詳細な情報は[対応するブログ記事](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)にあります。
 
 ユーザーが複数地域環境で SharePoint グループに接続されたサイトを作成する場合は、PDL を使用して、サイトと関連付けられているグループ メールボックスが作成される地域の場所を決定します。 (ユーザーの PDL 値が設定されていない場合、またはサテライトの場所として構成されていない地域の場所に設定されている場合、サイトとメールボックスは中央の場所に作成されます)。
 
-Microsoft 365、Exchange、OneDrive、SharePoint、Teams以外のサービスは複数地域ではありません。 ただし、Microsoft 365 によって作成されるグループは、作成者の PDL とその Exchange グループ メールボックスで構成され、SharePoint サイトは対応する geo にプロビジョニングされます。 
+Microsoft 365、Exchange、OneDrive、SharePoint、Teams以外のサービスは複数地域ではありません。 ただし、Microsoft 365によって作成されるグループは、作成者の PDL とその Exchange グループ メールボックスで構成され、SharePoint サイトは対応する geo にプロビジョニングされます。 
 
 ## <a name="managing-the-multi-geo-environment"></a>複数地域環境の管理
 
-複数地域環境の設定と管理は、SharePoint 管理センターで行います。 
+複数地域環境のセットアップと管理は、管理センターからSharePoint<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">されます</a>。 
 
 ![管理センターの [地域の場所] ページSharePointスクリーンショット。](../media/sharepoint-multi-geo-admin-center.png)
 

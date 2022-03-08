@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c30e6d318801dbfb63f4bfb7b5bbaf64dad24ac0
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 3801fdb4a7aeda5e75c4e36f622f7e76604d96a6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172117"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318733"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Id の Microsoft Defender のパイロット
 
@@ -34,7 +34,7 @@ ms.locfileid: "62172117"
 **適用対象:**
 - Microsoft 365 Defender
 
-この記事は、Microsoft Defender for Identity の評価環境をセットアップするプロセスの手順 [3/3](eval-defender-identity-overview.md) です。 このプロセスの詳細については、「概要」の記事を [参照してください](eval-defender-identity-overview.md)。
+この記事は [、Microsoft Defender for](eval-defender-identity-overview.md) Identity の評価環境をセットアップするプロセスの手順 3/3 です。 このプロセスの詳細については、概要の記事を [参照してください](eval-defender-identity-overview.md)。
 
 次の手順を使用して、Microsoft Defender のパイロットを ID 用にセットアップして構成します。 推奨事項には、パイロット グループの設定は含めかねない点に注意してください。 ベスト プラクティスは、Active Directory ドメイン サービス (AD DS) および Active Directory フェデレーション サービス (AD FS) を実行しているすべてのサーバーにセンサーをインストールする方法です。
 
@@ -47,11 +47,11 @@ ms.locfileid: "62172117"
 
 ## <a name="step-1-configure-benchmark-recommendations-for-your-identity-environment"></a>手順 1. ID 環境のベンチマーク推奨事項を構成する
 
-Microsoft は、Microsoft Cloud サービスを使用しているお客様にセキュリティ ベンチマークの推奨事項を提供します。 [Azure セキュリティ ベンチマーク](/security/benchmark/azure/overview)(ASB) は、Azure 上のワークロード、データ、およびサービスのセキュリティを向上させるのに役立つ、スクリプト的なベスト プラクティスと推奨事項を提供します。
+Microsoft は、Microsoft Cloud サービスを使用しているお客様にセキュリティ ベンチマークの推奨事項を提供します。 [Azure セキュリティ ベンチマーク](/security/benchmark/azure/overview) (ASB) は、Azure 上のワークロード、データ、およびサービスのセキュリティを向上させるのに役立つ、スクリプト的なベスト プラクティスと推奨事項を提供します。
 
-これらのベンチマーク推奨事項には、Microsoft Defender for [Identity の Azure セキュリティ ベースラインが含まれます](/security/benchmark/azure/baselines/defender-for-identity-security-baseline)。 これらの推奨事項を実装すると、計画と実装に時間がかかる場合があります。 これらは ID 環境のセキュリティを大幅に向上しますが、Microsoft Defender for Identity の評価と実装を継続して行うのを防ぐ必要があります。 これらは、お客様の認識のためにここに提供されています。
+これらのベンチマーク推奨事項には、 [Microsoft Defender for Identity の Azure セキュリティ ベースラインが含まれます](/security/benchmark/azure/baselines/defender-for-identity-security-baseline)。 これらの推奨事項を実装すると、計画と実装に時間がかかる場合があります。 これらは ID 環境のセキュリティを大幅に向上しますが、Microsoft Defender for Identity の評価と実装を継続して行うのを防ぐ必要があります。 これらは、お客様の認識のためにここに提供されています。
 
-## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>手順 2. 機能を試す - さまざまな攻撃の種類を特定して修復するためのチュートリアルの詳細
+## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>手順 2。 機能を試す - さまざまな攻撃の種類を特定して修復するためのチュートリアルの詳細
 
 Microsoft Defender for Identity のドキュメントには、さまざまな攻撃の種類を特定して修復するプロセスを説明する一連のチュートリアルが含まれています。
 
@@ -70,6 +70,6 @@ Defender for Identity のチュートリアルを試してみてください。
 
 [Microsoft Defender for Office 365 を評価する](eval-defender-office-365-overview.md)
 
-[Microsoft Defender for Office 365 の評価[] の概要に戻Office 365](eval-defender-office-365-overview.md)
+[365 の Microsoft Defender の評価の概要にOfficeします。](eval-defender-office-365-overview.md)
 
-[評価とパイロット][の概要に戻Microsoft 365 Defender](eval-overview.md)
+評価とパイロット [Microsoft 365 Defender の概要に戻る](eval-overview.md)
