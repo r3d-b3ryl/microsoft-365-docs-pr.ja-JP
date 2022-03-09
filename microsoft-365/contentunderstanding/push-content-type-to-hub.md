@@ -11,13 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 7e5acdde2d60db88b68273d0f1158ae1694a523e
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 4a7a84023f3155c2b6f1405a3da5d8c5776d0047
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559954"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322059"
 ---
 # <a name="push-content-types-to-a-hub"></a>コンテンツ タイプをハブにプッシュする
 
@@ -34,7 +35,7 @@ ms.locfileid: "61559954"
 
 コンテンツ タイプをハブにプッシュするには
 
-1. SharePoint 管理センターで、[**コンテンツ サービス**] を展開し、[**コンテンツ タイプ ギャラリー**] を選択します。
+1. SharePoint 管理センターで、[**コンテンツ サービス**] を展開し、[<a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">**コンテンツ タイプ ギャラリー**</a>] を選択します。
 2. ハブにプッシュするコンテンツ タイプを選択します。
 3. コマンド バーの [**編集**] を選択します。
 4. [**ハブ サイトの選択**] を選択します。

@@ -14,14 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 description: 従業員がいつでもどこからでもリモートで作業できるようにするセキュリティとインフラストラクチャを構成します。
-ms.openlocfilehash: 602bec66eec26551ae6d98bafdb99466747d8fa9
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 8ea359f2c0de98ac35b90a379e5a60c4578e66cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524083"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323417"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>開発/テスト環境でセキュリティの分離を使用してチームを構成する
 
@@ -38,7 +40,7 @@ ms.locfileid: "62524083"
 シミュレーションのエンタープライズで機密チームと高機密チームをテストするには、「[パスワード ハッシュの同期](../enterprise/password-hash-sync-m365-ent-test-environment.md)」の手順に従ってください。
 
 > [!NOTE]
-> セキュリティ分離を使用してチームをテストする場合、シミュレーションのエンタープライズ テスト環境は必要ありません。シミュレーションのエンタープライズ テスト環境には、インターネットに接続されたシミュレーションのイントラネット、Active Directory Domain Services (AD DS) フォレスト用のディレクトリ同期が含まれています。 この機能は、セキュリティ分離を使用してチームをテストし、一般的な組織と類似した環境で試していただけるようオプションとしてここで提供されています。
+> セキュリティ分離を使用してチームをテストする場合、シミュレーションのエンタープライズ テスト環境は必要ありません。シミュレーションのエンタープライズ テスト環境には、インターネットに接続されたシミュレーションのイントラネット、Active Directory Domain Services (AD DS) フォレスト用のディレクトリ同期が含まれています。この機能は、セキュリティ分離を使用してチームをテストし、一般的な組織と類似した環境で試していただけるようオプションとしてここで提供されています。
 
 ## <a name="phase-2-create-and-configure-your-azure-active-directory-azure-ad-group-and-users"></a>フェーズ 2: Azure Active Directory (Azure AD) のグループとユーザーを作成して構成する
 
@@ -173,15 +175,14 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 次に、新しいラベルを **会社戦略** チームに適用し、既定の共有リンクの種類を更新して、意図したよりも広い対象ユーザーにファイルやフォルダーが不用意に共有されるリスクを軽減します。
 
-1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
-1. **[サイト]** で、**[アクティブなサイト]** をクリックします。
-1. **会社戦略** サイトをクリックします。
-1. **[ポリシー]** タブで、**[秘密度]** の下側にある **[編集]** をクリックします。
-1. **会社戦略** ラベルを選択し、[**保存**] をクリックします。
-1. **[ポリシー]** タブで、**[外部共有]** の下側にある **[編集]** をクリックします。
+1. SharePoint 管理センターを開き、[**サイト**] で、[<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**アクティブなサイト**</a>] を選択します。
+1. **会社戦略** サイトを選択します。
+1. [**ポリシー**] タブで、[**秘密度**] の下側にある [**編集**] を選択します。
+1. **会社戦略** ラベルを選択し、[**保存**] を選択します。
+1. [**ポリシー**] タブで、[**外部共有**] の下側にある [**編集**] を選択します。
 1. [**組織内のユーザーのみ**] を選択します。
 1. [**既定の共有リンクの種類**] で、[**組織レベルの設定と同じ**] チェック ボックスをオフにして、[**既存のアクセス権を持つユーザー**] を選びます。
-1. [**保存**] をクリックします。
+1. **[保存]** を選択します。
 
 次に、**会社戦略** チームの所有者のみのサイト共有を構成します。
 
