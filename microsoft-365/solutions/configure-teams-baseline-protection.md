@@ -18,14 +18,15 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 recommendations: false
 description: ベースライン レベルの保護を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: ac16f3a1fd70cca22d0cc44e326d173b30cff77f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 21fe46a9df9b67c41ff2c0a21fbbe175295e1fdf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208363"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312741"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>ベースライン保護を使用してチームを構成する
 
@@ -68,10 +69,10 @@ Office 365 グループや SharePoint では既定でゲスト共有がオンに
 誤って組織外のユーザーとファイルやフォルダを共有してしまうリスクを減らすために、SharePoint の既定の共有リンクを [*自分の組織内のユーザーのみ*] に変更することをお勧めします。 (ユーザーが外部との共有を行う必要があり、ゲスト共有を有効にしている場合、ユーザーは共有時にリンクの種類を変更することができます。)
 
 既定の共有リンクを変更するには
-1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
-2. [**ポリシー**] で、[**共有**] をクリックします。
-3. [**ファイルとフォルダーのリンク**] で、[**自分の組織内のユーザーのみ**] を選択します。
-4. [**保存**] をクリックします。
+
+1. SharePoint 管理センターを開き、**[ポリシー]** の下側にある <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**[共有]**</a> を選択します。
+1. **[ファイルとフォルダーのリンク]** で、**[自分の組織内のユーザーのみ]** を選択します。
+1. **[保存]** を選択します。
 
 最高のゲスト共有エクスペリエンスのために、[SharePoint および OneDrive の Azure AD B2B との統合](/sharepoint/sharepoint-azureb2b-integration-preview)を有効にすることもお勧めします。
 

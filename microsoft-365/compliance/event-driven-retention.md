@@ -1,27 +1,32 @@
 ---
 title: イベントの発生時に保持を開始する
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 ms.custom:
-  - seo-marvel-apr2020
-  - seo-marvel-may2020
-  - seo-marvel-jun2020
+- seo-marvel-apr2020
+- seo-marvel-may2020
+- seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
+ms.openlocfilehash: ad5fb2ef567525fa021acb0388ebc5cc98b1148c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313301"
 ---
-
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
@@ -107,7 +112,7 @@ description: 通常、レコード管理ソリューションの一部として�
 
 ### <a name="step-2-create-a-new-event-type-for-your-label"></a>手順 2: ラベルの新しいイベントの種類を作成する
 
-保持設定で、[**新しいイベントの種類の作成**] を選択した場合は、イベントの種類の名前と説明を入力します。 次に、[**次へ**]、[**送信**]、[**完了**] を選択します。
+保持設定で、[**新しいイベントの種類の作成**] を選択した場合は、イベントの種類の名前と説明を入力します。次に、[**次へ**]、[**送信**]、[**完了**] を選択します。
 
 [**保持設定の定義**] ページに戻り、[**保持期間の開始日**] のドロップダウン リストを使用して、作成したイベントの種類を選択します。
 
@@ -115,7 +120,7 @@ description: 通常、レコード管理ソリューションの一部として�
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>手順 3: イベント ベースの保持ラベルを発行または自動適用する
 
 他の保持ラベルと同じように、イベント ベースのラベルを発行するか自動適用して、コンテンツに手動または自動で適用されるようにする必要があります。
-- [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
+- [アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)
 - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
 
 ### <a name="step-4-enter-an-asset-id"></a>手順 4: アセット ID を入力する
@@ -166,7 +171,7 @@ Exchange アイテムの場合、キーワードまたはキーワード クエ�
 
 イベントを作成すると、既にラベル付けされてインデックスが作成されているコンテンツの保持設定が有効になります。 イベントが作成された後に保持ラベルが新しいコンテンツに追加された場合は、同じ詳細を使用して新しいイベントを作成する必要があります。
 
-イベントを削除しても、既にラベル付けされているコンテンツに対して現在有効になっている保持設定は取り消されません。 現在、トリガーされたイベントをキャンセルすることはできません。
+イベントを削除しても、既にラベル付けされているコンテンツに対して現在有効になっている保持設定は取り消されません。現在、トリガーされたイベントをキャンセルすることはできません。
 
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>コンテンツ検索を使用して、特定のラベルまたはアセット ID が適用されたすべてのコンテンツを検索する
 

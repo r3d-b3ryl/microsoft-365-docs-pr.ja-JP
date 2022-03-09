@@ -2,8 +2,8 @@
 title: Microsoft コンプライアンス マネージャー プレミアム アセスメント試用版プレイブック
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャー プレミアム アセスメント試用版プレイブック。
-ms.openlocfilehash: e03fca9adfad720a4203885e98f2a9474243bbc4
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 7beff27d5d2eb7693f165d479bbc8df6e190d028
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561117"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321027"
 ---
 # <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>試用版プレイブック: Microsoft コンプライアンス マネージャー プレミアム アセスメント
 
@@ -70,7 +70,7 @@ Microsoft の推奨事項を使用すると、プレミアム アセスメント
 
 ### <a name="enable-trial-via-the-compliance-trial"></a>コンプライアンス試用版を通じて試用版を有効にする
 
-1. コンプライアンス センターで、左側のナビゲーション ウィンドウで **[試用版]** を選択します。 利用可能な試用版が表示されます。
+1. コンプライアンス センターで、左側のナビゲーション ウィンドウで **[試用版]** を選択します。利用可能な試用版が表示されます。
 1. コンプライアンス マネージャーのプレミアム アセスメントで **[今すぐ試す]** を選択します。
 1. 試用版を設定する前に、詳細についての学習資料がインフォメーション ページに表示されます。
 1. **[セットアップ]** を選択すると、変更が反映されるまでに最大 2 時間かかります。 使用可能なテンプレートを表示するには、もう一度サインインする必要があります。
@@ -87,7 +87,7 @@ Microsoft の推奨事項を使用すると、プレミアム アセスメント
 
 ## <a name="additional-resources"></a>その他のリソース
 
-**Microsoft Docs**: コンプライアンス マネージャーのプレミアム アセスメントの機能と、組織への最適な実装方法に関する詳細情報を取得します。 [ドキュメント](compliance-manager-templates.md)にアクセスします。
+**Microsoft Docs**: コンプライアンス マネージャーのプレミアム アセスメントの機能と、組織への最適な実装方法に関する詳細情報を取得します。[ドキュメント](compliance-manager-templates.md)にアクセスします。
 
 **ビデオの方法**: 詳細を学習するために、次のビデオを参照しましょう。
 

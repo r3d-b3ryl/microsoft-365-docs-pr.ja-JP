@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 115dcce1e99583ab0c3345da683be0b826b24ff7
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 37e94d43f2cfeab0e1135c42de34726ee5895714
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524071"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320593"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -92,7 +92,7 @@ ms.locfileid: "62524071"
 
 5. [**コンテンツを保持するか、削除するか、またはその両方を行うかを決定する**] ページで、コンテンツを保持および削除するための構成オプションを指定します。
 
-   削除せずにコンテンツを保持するだけのアイテム保持ポリシーを作成し、指定した期間が経過した後に保持してから削除するか、指定した期間が経過した後にコンテンツを削除するだけです。 詳細については、このページの「[コンテンツを保持および削除するための設定](retention-settings.md#settings-for-retaining-and-deleting-content)」を参照してください。
+   削除せずにコンテンツを保持するだけのアイテム保持ポリシーを作成し、指定した期間が経過した後に保持してから削除するか、指定した期間が経過した後にコンテンツを削除するだけです。詳細については、「[コンテンツを保持および削除するための設定](retention-settings.md#settings-for-retaining-and-deleting-content)」を参照してください。
 
 6. 構成を完了して、設定を保存します。
 
@@ -156,7 +156,7 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
 
 5. [**コンテンツを保持するか、削除するか、またはその両方を行うかを決定する**] ページで、コンテンツを保持および削除するための構成オプションを指定します。 
     
-    削除せずにコンテンツを保持するだけのアイテム保持ポリシーを作成し、指定した期間が経過した後に保持してから削除するか、指定した期間が経過した後にコンテンツを削除するだけです。 詳細については、このページの「[コンテンツを保持および削除するための設定](retention-settings.md#settings-for-retaining-and-deleting-content)」を参照してください。
+    削除せずにコンテンツを保持するだけのアイテム保持ポリシーを作成し、指定した期間が経過した後に保持してから削除するか、指定した期間が経過した後にコンテンツを削除するだけです。詳細については、「[コンテンツを保持および削除するための設定](retention-settings.md#settings-for-retaining-and-deleting-content)」を参照してください。
 
 6. 構成を完了して、設定を保存します。
 
@@ -164,7 +164,7 @@ Yammer 向けに機能する保持ポリシーの仕組みに関する詳細情�
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Yammer をサポートするのに必要な追加のアイテム保持ポリシー
 
-Yammer に備わっているのは、コミュニティのメッセージや個人用メッセージだけではありません。 Yammer ネットワークのメール メッセージを保持したり削除したりするには、**Microsoft 365 グループ** の場所を使用して、Yammer で使用されている任意の Microsoft 365 グループを含む追加の保持ポリシーを構成します。 
+Yammer に備わっているのは、コミュニティのメッセージや個人用メッセージだけではありません。Yammer ネットワークのメール メッセージを保持したり削除したりするには、**Microsoft 365 グループ** の場所を使用して、Yammer で使用されている任意の Microsoft 365 グループを含む追加のアイテム保持ポリシーを構成します。 
 
 Yammer に保存されているファイルを保持したり削除したりするためには、**Microsoft 365 グループ** や **OneDrive アカウント** の場所を含むアイテム保持ポリシーが必要です。
 
@@ -204,7 +204,7 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
 
 5. [**コンテンツを保持するか、削除するか、またはその両方を行うかを決定する**] ページで、コンテンツを保持および削除するための構成オプションを指定します。
     
-    削除せずにコンテンツを保持するだけのアイテム保持ポリシーを作成し、指定した期間が経過した後に保持してから削除するか、指定した期間が経過した後にコンテンツを削除するだけです。 詳細については、このページの「[コンテンツを保持および削除するための設定](retention-settings.md#settings-for-retaining-and-deleting-content)」を参照してください。
+    削除せずにコンテンツを保持するだけのアイテム保持ポリシーを作成し、指定した期間が経過した後に保持してから削除するか、指定した期間が経過した後にコンテンツを削除するだけです。詳細については、このページの「[コンテンツを保持および削除するための設定](retention-settings.md#settings-for-retaining-and-deleting-content)」を参照してください。
 
 6. 構成を完了して、設定を保存します。
 
@@ -214,15 +214,23 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
   
 ![アイテム保持ポリシーが有効になるタイミングの図。](../media/retention-policy-timings.png)
 
-まず、アイテム保持ポリシーを選択した場所に配布し、コンテンツに適用する必要があります。 保持ポリシーの配布状態は、コンプライアンス センターの **Retention ポリシー** ページから選択することでいつでも確認できます。 ポップアウト ウィンドウに、**オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
+まず、アイテム保持ポリシーを選択した場所に配布し、コンテンツに適用する必要があります。 保持ポリシーの配布状態は、コンプライアンス センターの **Retention ポリシー** ページから選択することでいつでも確認できます。 ポップアウト ウィンドウで、状態に **(エラー)** が表示され、場所の詳細に、ポリシーの展開またはポリシーの再展開に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) または [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください。
 
 1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)。
 
-2. 次のコマンドを実行します。
+2. 次のいずれかのコマンドを実行します：
     
-    ```PowerShell
-    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-    ```
+    - ポリシーの場所 **Teams の非公開チャネル メッセージ**、**Yammer ユーザーのメッセージ**、**Yammer コミュニティのメッセージ** の場合:
+    
+        ```PowerShell
+        Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
+    
+    - その他のすべての場所 (**Exchange メール**、**SharePoint サイト**、**Teams のチャネル メッセージ** など) の場合:
+    
+        ```PowerShell
+        Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
 
 ## <a name="updating-retention-policies"></a>アイテム保持ポリシーの更新
 
