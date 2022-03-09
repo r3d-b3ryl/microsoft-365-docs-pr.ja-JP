@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 基本モビリティとセキュリティの問題を追跡するには、次の手順を実行します。
-ms.openlocfilehash: f625fbc642392ee575b35f225f5e65b942362c4a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2ac25e36fced24e5b50e7e89d36dae3e842fda04
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165942"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400365"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>基本的なモビリティとセキュリティのトラブルシューティング
 
@@ -39,9 +39,9 @@ ms.locfileid: "60165942"
 
 ## <a name="ios-phone-or-tablet"></a>iOS スマートフォンまたはタブレット
 
-- 必ず APNs 証明書をセットアップしてください。 詳細については [、「iOS デバイス用の APNs 証明書を作成する」を参照してください](create-an-apns-certificate-for-ios-devices.md)。
+- 必ず APNs 証明書をセットアップしてください。 詳細については、「 [iOS デバイス用の APNs 証明書を作成する」を参照してください](create-an-apns-certificate-for-ios-devices.md)。
 
--  **[設定** プロファイル (またはデバイスの管理) で、管理プロファイルがインストール   >  ****   >  **** されていないか確認します。 その場合は、削除します。
+- [ **設定** > **GeneralProfile** >  **(またはデバイスの管理)** で、管理プロファイルがインストールされていないか確認します。 その場合は、削除します。
 
 - "デバイスの登録に失敗しました" というエラー メッセージが表示された場合は、Microsoft 365 にサインインし、Exchange Online を含むライセンスがデバイスにサインインしているユーザーに割り当てられている必要があります。
 
@@ -53,19 +53,19 @@ ms.locfileid: "60165942"
 
 ## <a name="windows-rt"></a>Windows RT
 
-- Basic Mobility and Security を使用するには、ドメインMicrosoft 365設定してください。 詳細については、「Set [up Basic Mobility and Security 」を参照してください](set-up.md)。
+- Basic Mobility and Security を使用するには、ドメインMicrosoft 365設定してください。 詳細については、「Set [up Basic Mobility and Security」を参照してください](set-up.md)。
     
-- [参加] を選択するのではなく、ユーザーが **[オン** にする] を   選択している必要 **があります**。
+- Join を選択するのではなく、ユーザーが  **[オン** にする] を選択している **必要があります**。
 
-## <a name="windows-10-pc"></a>Windows 10PC
+## <a name="windows-10-pc"></a>Windows 10 PC
 
-- Basic Mobility and Security を使用するには、ドメインMicrosoft 365設定してください。 詳細については、「Set [up Basic Mobility and Security 」を参照してください](set-up.md)。
+- Basic Mobility and Security を使用するには、ドメインMicrosoft 365設定してください。 詳細については、「Set [up Basic Mobility and Security」を参照してください](set-up.md)。
     
-- この設定がないAzure Active Directory Premium、ユーザーが [デバイス管理にのみ登録する] **** を選択し、[デバイスの管理] を選択   Connect。 ****
+- 必要な情報がないAzure Active Directory Premium、ユーザーが [デバイス管理] で [ **Enroll** ] を選択している場合は、選択 **Connect。**
 
 ## <a name="android-phone-or-tablet"></a>Android スマートフォンまたはタブレット
 
-- デバイスが Android 4.4 以降を実行している必要があります。
+- デバイスが Android を実行している必要があります。
 
 - Chrome が最新であり、既定のブラウザーとして設定されている必要があります。
 

@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 組み込みの Basic Mobility and Security を使用して、登録済みデバイスから情報を削除します。
-ms.openlocfilehash: ed658abc55d065e6d271893dc80a293e19373a34
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d5f610e2a9180f1d147f68e6aabf4a7291787033
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165882"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400170"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Basic Mobility and Security でモバイル デバイスをワイプする
 
 Microsoft 365 の組み込みの Basic Mobility and Security を使用して、組織情報のみを削除したり、出荷時のリセットを実行してモバイル デバイスからすべての情報を削除し、工場出荷時の設定に復元することができます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 モバイル デバイスは、機密性の高い組織情報を保存し、組織のリソースにアクセスMicrosoft 365できます。 組織の情報を保護するために、出荷時のリセットまたは会社データの削除を行います。
 
@@ -40,13 +40,13 @@ Microsoft 365 の組み込みの Basic Mobility and Security を使用して、�
 
 - **デバイスがワイプされると (出荷** 時のリセットまたは会社のデータの削除)、デバイスは管理対象デバイスの一覧から削除されます。
     
-- **デバイスを自動的** にリセットする: ユーザーがデバイス パスワードを特定の回数入力しようとして失敗した後、デバイスを自動的に出荷時にリセットする Basic Mobility and Security ポリシーを設定できます。 これを行うには、「基本モビリティとセキュリティでデバイス セキュリティ ポリシーを [作成する」の手順に従います](create-device-security-policies.md)。
+- **デバイスを自動的** にリセットする: ユーザーがデバイス のパスワードを特定の回数入力しようとして失敗した後、デバイスを出荷時に自動的にリセットする Basic Mobility and Security ポリシーを設定できます。 これを行うには、「基本モビリティとセキュリティでデバイス セキュリティ ポリシーを作成する [」の手順に従います](create-device-security-policies.md)。
     
-- **デバイスをワイプするときにユーザー エクスペリエンス** を知りたい場合は、「ユーザーとデバイスの影響   [について」を参照してください](#whats-the-user-and-device-impact)。
+- **デバイスをワイプするときにユーザー エクスペリエンス** を知りたい場合は、「ユーザーとデバイスへの影響とは」  [を参照してください](#whats-the-user-and-device-impact)。
 
 ## <a name="wipe-a-mobile-device"></a>モバイル デバイスをワイプする
 
-1. [ファイル] に移動 [Microsoft 365 管理センター。](../../admin/admin-overview/about-the-admin-center.md)
+1. [次へ]  [にMicrosoft 365 管理センター](../../admin/admin-overview/about-the-admin-center.md)。
 
 2. [モバイル デバイスの管理] を検索フィールドに入力し、結果の一覧から [モバイル デバイス **の管理** ] を選択します。
 
@@ -56,12 +56,12 @@ Microsoft 365 の組み込みの Basic Mobility and Security を使用して、�
 
 4. ワイプを実行するデバイスを選びます。
 
-5. [管理 **] を選択します**。
+5. [管理] **を選択します**。
 
 6. 実行するリモートワイプのタイプを選択します。
 
     - フル ワイプを実行し、デバイスを工場出荷時の設定に復元するには、[出荷時のリセット] **を選択します**。
-    - 組織情報のみを選択的にワイプして削除するには、[Microsoft 365削除]**を選択します**。
+    - 組織情報のみを選択的にワイプして削除するにはMicrosoft 365を選択します。[会社データの削除 **] を選択します**。
     - 組織からデバイスを削除するには、[デバイスの削除] **を選択します**。
 
 7. [**はい**] を選択して確認します。
@@ -82,9 +82,9 @@ Microsoft 365 の組み込みの Basic Mobility and Security を使用して、�
 
 ワイプはモバイル デバイスに直ちに送信され、デバイスは Azure Active Directory で非準拠としてマークされます。 デバイスが出荷時の既定値にリセットされると、すべてのデータが削除されます。次の表は、デバイスが会社のデータを削除するときにデバイスの種類ごとに削除されるコンテンツを示しています。
 
-|**コンテンツへの影響**|**iOS 10 以降**|**Android 5 以降**|
+|**コンテンツへの影響**|**iOS**|**Android**|
 |:-----|:-----|:-----|
-|Microsoft 365 Intune アプリ保護ポリシーでデバイスが保護されている場合、アプリ データはワイプされます。 アプリは削除されません。 モバイル アプリケーション管理 (MAM) ポリシーで保護されていないデバイスの場合、OutlookとOneDriveデータは削除されません。<br/>**メモ** Intune アプリ保護ポリシーを適用するには、Intune ライセンスが必要です。|はい|はい|
+|Microsoft 365 Intune アプリ保護ポリシーによってデバイスが保護されている場合、アプリ データはワイプされます。 アプリは削除されません。 モバイル アプリケーション管理 (MAM) ポリシーで保護されていないデバイスの場合、OutlookとOneDriveデータは削除されません。<br/>**メモ** Intune アプリ保護ポリシーを適用するには、Intune ライセンスが必要です。|はい|はい|
 |Basic Mobility と Security によってデバイスに適用されるポリシー設定は適用されなくなりました。ユーザーは設定を変更できます。|はい|はい|
 |Basic Mobility and Security によって作成されたメール プロファイルが削除され、デバイス上のキャッシュされたメールが削除されます。|はい|該当なし|
 

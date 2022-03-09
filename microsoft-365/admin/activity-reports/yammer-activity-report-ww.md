@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365管理センターのレポート - Yammerレポート
+title: Microsoft 365 管理センター Yammerアクティビティ レポート
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,15 +19,15 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: '[アクティビティ] Yammerレポートを取得し、メッセージの投稿、Yammer読み取りを行うユーザー数の詳細を知ります。'
-ms.openlocfilehash: 42598322c58682e467eba99a7b01a7036fe05581
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: '[Yammer アクティビティ] レポートを取得し、メッセージを投稿、Yammer、読み取るユーザーの数について知ります。'
+ms.openlocfilehash: e5e865266d09d839777ed00feddf3682a24b6e7e
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648757"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400435"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365管理センターのレポート - Yammerレポート
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365管理センターの [レポート] - アクティビティ Yammerレポート
 
 管理者Microsoft 365レポート ダッシュボードには、組織内の製品の使用状況に関するデータが表示されます。 管理センター [でアクティビティ レポートを確認します](activity-reports.md)。 **Yammer アクティビティ レポート** では、Yammer を使用してメッセージの投稿、「いいね!」の評価、または閲覧を行った一意のユーザー数や、組織全体で生成されたアクティビティの量を確認することで、Yammer に対する組織の関与レベルを把握することができます。 
  
@@ -45,9 +45,9 @@ ms.locfileid: "60648757"
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
 
-**[Yammerアクティビティ** レポートは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
+[**Yammerアクティビティ** レポートは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
   
-|アイテム|説明|
+|アイテム|内容|
 |:-----|:-----|
 |**測定基準**|**定義**|
 |Username  <br/> |ユーザーの電子メール アドレス。 実際のメール アドレスを表示することも、このフィールドを匿名にすることもできます。 このグリッドには、YammerアカウントMicrosoft 365シングル サインオンを使用してネットワークにログインしたユーザーが表示されます。 <br/> |

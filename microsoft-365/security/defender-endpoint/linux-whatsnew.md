@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 58ba49a49b41d80bacb31efa780530e44a146fc1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 48b278d23cd724cade823d2a6b052b11d02a3a13
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326763"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401092"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux の新機能
 
@@ -28,6 +28,15 @@ ms.locfileid: "63326763"
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1016093-30122012160930"></a>101.60.93 (30.122012.16093.0)
+
+- このバージョンには、 [CVE-2022-23278 のセキュリティ更新プログラムが含まれている](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
+
+## <a name="1016005-30122012160050"></a>101.60.05 (30.122012.16005.0)
+
+- RHEL 6.10 のカーネル バージョン 2.6.32-754.43.1.el6.x86_64サポートが追加されました
+- バグ修正
 
 ## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
 
@@ -102,7 +111,7 @@ ms.locfileid: "63326763"
 
 ## <a name="1011853"></a>101.18.53
 
-- Linux 用 EDR が一 [般提供されました](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+- EDR Linux 用の機能が[一般提供されています](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
 - カスタム スキャン中に AV の除外を無視する新しいコマンド ライン スイッチ (`--ignore-exclusions`) を追加しました (`mdatp scan custom`)
 - 診断ログ `mdatp diagnostic create` を別のディレクトリに保存できる新しいパラメーター (`--path [directory]`) を使用して拡張
 - バグ修正&パフォーマンスの向上

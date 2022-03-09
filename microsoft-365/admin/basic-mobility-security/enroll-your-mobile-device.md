@@ -19,36 +19,36 @@ ms.custom:
 search.appverid:
 - MET150
 description: デバイスで Microsoft 365 サービスを使用する前に、最初にデバイスの Basic Mobility and Security に登録する必要Microsoft 365。
-ms.openlocfilehash: 7573cce783be2a629adcba65562525794ad58999
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bc937442be852862172b4ef747d757df4785f880
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166098"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400351"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>基本モビリティとセキュリティを使用してモバイル デバイスを登録する
 
-仕事のために携帯電話、タブレット、その他のモバイル デバイスを使用すると、オフィスから離れてビジネス プロジェクトに関する情報を得て作業を行うのに最適な方法です。 デバイスで Microsoft 365 サービスを使用する前に、デバイスを使用するために、最初に Basic Mobility and Security に登録するMicrosoft 365必要Microsoft Intune ポータル サイト。
+仕事のために携帯電話、タブレット、その他のモバイル デバイスを使用すると、オフィスから離れてビジネス プロジェクトに関する情報を得て作業を行うのに最適な方法です。 デバイスで Microsoft 365 サービスを使用する前に、デバイスを使用する場合は、最初に Basic Mobility and Security に登録Microsoft 365必要Microsoft Intune ポータル サイト。
 
-組織では、従業員がモバイル デバイスを使用して仕事用メール、予定表、およびドキュメントに安全にアクセスできる一方で、ビジネスが重要なデータをセキュリティで保護し、コンプライアンス要件を満たしていることを確認するために、Basic Mobility and Security を選択します。詳細については、「基本モビリティとセキュリティ[の概要」を参照Microsoft 365。](overview.md) 詳細については、「デバイスを登録するときに組織に表示できる [情報」を参照してください](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)。
+組織では、従業員がモバイル デバイスを使用して仕事用メール、予定表、およびドキュメントに安全にアクセスできる一方で、ビジネスが重要なデータをセキュリティで保護し、コンプライアンス要件を満たしていることを確認するために、Basic Mobility and Security を選択します。詳細については、「基本モビリティとセキュリティ[の概要」を参照Microsoft 365](overview.md)。 詳細については、「デバイスを登録するときに組織に表示 [される情報」を参照してください](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)。
 
 > [!IMPORTANT]
-> Microsoft 365 の Basic Mobility and Security にデバイスを登録する場合、作業組織がデバイスをワイプするオプションを許可すると共に、パスワードの設定が必要になる場合があります。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>からデバイス ワイプを実行すると、パスワードが何度も誤って入力された場合や、使用条件が壊れている場合など、デバイスからすべてのデータを削除できます。
+> Microsoft 365 の Basic Mobility and Security にデバイスを登録する場合、作業組織がデバイスをワイプするオプションを許可すると共に、パスワードの設定が必要になる場合があります。 たとえば、パスワードが何度も誤って<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>入力された場合、または使用条件が壊れている場合に、デバイスからすべてのデータを削除するために、Microsoft 365 管理センター からデバイスワイプを実行できます。
 
 ## <a name="supported-devices"></a>サポート対象のデバイス
 
-Intune サービスによってホストMicrosoft 365基本的なモビリティとセキュリティは、ほとんどのモバイル デバイスで動作しますが、すべてではありません。 Basic Mobility and Security では、以下がサポートされています。
+Intune サービスによってホストMicrosoft 365基本的なモビリティとセキュリティは、モバイル デバイスのほとんどで動作しますが、すべてではありません。 Basic Mobility and Security では、以下がサポートされています。
 
-- iOS 10.0 以降
+- iOS
 
-- Android 4.4 以降
+- Android
 
 - Windows 8.1とWindows 10 (電話 PC)
 
 デバイスが上記に記載されていない場合に、Basic Mobility and Security でデバイスを使用する必要がある場合は、仕事または学校の管理者に問い合わせてください。
 
 > [!TIP]
-> デバイスの登録に問題がある場合は、「Troubleshoot Basic Mobility and Security 」 [を参照してください](troubleshoot.md)。
+> デバイスの登録に問題がある場合は、「 [Troubleshoot Basic Mobility and Security」を参照してください](troubleshoot.md)。
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Intune と Basic Mobility and Security を使用してモバイル デバイスをセットアップする
 
@@ -70,13 +70,13 @@ Apple App Store に移動し、アプリをダウンロードしてインスト�
 
 Google Play ストアに移動し、アプリをダウンロードしてインストールIntune ポータル サイト。
 
-ポータル サイトを使用して Android スマートフォンまたはタブレットを接続して構成するには、「Microsoft 365にデバイスを登録する」[をポータル サイト。](/mem/intune/user-help/enroll-device-android-company-portal)
+ポータル サイトを使用して Android スマートフォンまたはタブレットに接続して構成するには、「Microsoft 365を使用してデバイスを登録する」[をポータル サイト](/mem/intune/user-help/enroll-device-android-company-portal)。
 
-### <a name="windows-81-and-windows-10"></a>Windows 8.1とWindows 10
+### <a name="windows-81-and-windows-10"></a>Windows 8.1 および Windows 10
 
-[サーバー] に移動Microsoft Store、ダウンロードしてインストールIntune ポータル サイト
+[インストール] ページにMicrosoft Storeし、ダウンロードしてインストールIntune ポータル サイト
 
-ポータル サイトを使用してWindows電話または PC に接続して構成するには、「Microsoft 365でのWindowsデバイスの登録」を[参照Intune ポータル サイト。](/intune-user-help/windows-enrollment-company-portal)
+ポータル サイトを使用してWindows電話または PC に接続して構成するには、「Microsoft 365でのWindowsデバイスの登録」[を参照Intune ポータル サイト](/intune-user-help/windows-enrollment-company-portal)。
 
 ## <a name="next-steps"></a>次の手順
 

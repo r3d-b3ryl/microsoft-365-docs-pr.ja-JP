@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5ff454904678bc589328c6a9b454b7823ff36090
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bbd4100466fbfef75363848bc5b89bbb9a769265
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318775"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401078"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 
@@ -34,7 +34,7 @@ ms.locfileid: "63318775"
 1. 調査する [必要がある macOS](https://aka.ms/XMDEClientAnalyzer) または Linux コンピューターに XMDE クライアント アナライザー ツールをダウンロードします。
 
    > [!NOTE]
-   > 上記のリンクからダウンロードされた 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'AA6E73A5F451C3B78B066C9D55EE6499CE3C2F1A6E6E05CCE691A6055F36F93A3B'です。
+   > 上記のリンクからダウンロードされる 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'B95E2E2E21D5A93E0AC88BA401ACB20E5F721727B409D4186147C8D17468185583'です。
 
 2. コンピューター上のXMDEClientAnalyzer.zipを抽出します。
 
@@ -72,7 +72,7 @@ ms.locfileid: "63318775"
 >
 > - デバイスがプロキシの背後にある場合は、プロキシ サーバーを環境変数として mde_support_tool.sh スクリプトに渡す必要があります。 例: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
-例:
+例: 
 
 ![コマンド ラインの例のイメージ。](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 

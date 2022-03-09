@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365管理センターのレポート - デバイスYammerレポート
+title: Microsoft 365 管理センター Yammer使用状況レポート
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーがYammerを使用しているデバイスを確認するには、デバイス使用状況レポートをYammerします。
-ms.openlocfilehash: 25dbf966d0756cf90e39dcbe69d587434d3de3ae
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fc59060cc4ec0ad3d34aae2b165bcb36ee1aee89
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648745"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400421"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Microsoft 365管理センターのレポート - デバイスYammerレポート
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Microsoft 365管理センターの [レポート] - Yammer利用状況レポート
 
 Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
   
@@ -46,9 +46,9 @@ Yammer デバイスの使用状況レポートでは、ユーザーが Yammer �
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
 
-デバイス **Yammerレポート** は、過去 7 日間、30 日、90 日、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
+デバイス **Yammerレポート** では、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
   
-|アイテム|説明|
+|アイテム|内容|
 |:-----|:-----|
 |**測定基準**|**定義**|
 |Username  <br/> |ユーザーの電子メール アドレス。 実際のメール アドレスを表示することも、このフィールドを匿名にすることもできます。 このグリッドには、YammerアカウントMicrosoft 365シングル サインオンを使用してネットワークにログインしたユーザーが表示されます。 <br/> |
@@ -57,8 +57,8 @@ Yammer デバイスの使用状況レポートでは、ユーザーが Yammer �
 |状態の変更日 (UTC)  <br/> |ユーザーの状態が変更された日付は、Yammer。  <br/> |
 |最終アクティビティ日 (UTC)  <br/> |ユーザーがアクティビティに参加した最後の日付 (UTC) Yammerです。  <br/> |
 |Web  <br/> |ユーザーが web 上でYammerを使用したかどうかを示します。  <br/> |
-|Windows電話  <br/> | ユーザーが電話でユーザーがYammerしたかどうかをWindowsします。  <br/> |
-|Android スマートフォン  <br/> |ユーザーが Android スマートフォンでユーザーがYammerを使用したかどうかを示します。 <br/>|
+|Windows電話  <br/> | ユーザーが電話で使用したYammerをWindowsします。  <br/> |
+|Android スマートフォン  <br/> |ユーザーが Android スマートフォンでYammerを使用したかどうかを示します。 <br/>|
 |iphone <br/> | ユーザーがユーザーがユーザーに対してYammerを使用iPhone。  <br/> |
 |ipad  <br/> |ユーザーがユーザーがユーザーに対してYammerを使用iPad。 <br/>|
 |その他  <br/> |ユーザーが以前にリストされていない別Yammerデバイスで使用したかどうかを示します。 <br/>|

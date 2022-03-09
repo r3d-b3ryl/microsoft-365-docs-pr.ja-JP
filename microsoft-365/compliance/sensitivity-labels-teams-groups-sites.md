@@ -13,16 +13,17 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkSPO
 search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: d7d5ae1dfea2179c698922c4ddb045de0cd20ce5
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 39caee37f8bf8b2f885824bbdd12ca7b5b372e69
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354962"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320509"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -174,52 +175,11 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
     - PowerApps や Power Automate を使用したワークフロー
     - サードパーティ製アプリ
 
-### <a name="configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings"></a>PowerShell の詳細設定を使用してサイトの既定の共有リンクの設定を構成する
+### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>PowerShell の詳細設定を使用してサイトの既定の共有依存タイプの設定を構成する
 
-コンプライアンスセンターから構成できるサイトおよびグループのラベル設定に加えて、サイトの既定の共有リンク タイプ、および共有リンクのアクセス許可を構成することもできます。
+コンプライアンスセンターから構成できるサイトおよびグループのラベル設定に加えて、サイトの既定の共有依存タイプを構成することもできます。 ドキュメントの秘密度ラベルは、既定の共有依存タイプに対して構成することもできます。 ユーザーが Office アプリで **[共有]** ボタンを選択すると、過剰な共有を防ぐのに役立つこれらの設定が自動的に選択されます。 
 
-これらの設定の動作の詳細については、「[サイトの既定のリンクの種類を変更する](/sharepoint/change-default-sharing-link)」を参照してください。
-
-共有リンクのこれらの追加のラベル設定は、現在、PowerShell *AdvancedSettings* パラメーター、および [セキュリティ センターとコンプライアンス センターの PowerShell](/powershell/exchange/scc-powershell) の [Set-Label](/powershell/module/exchange/set-label) コマンドレットと [New-Label](/powershell/module/exchange/new-labelpolicy) コマンドレットとしてのみ使用できます。
-
-- **DefaultSharingScope**: 使用可能な値は次のとおりです。
-    - **SpecificPeople**: サイトの既定の共有リンクを "特定のユーザー" リンクに設定します。
-    - **Organization**: サイトの既定の共有リンクを "組織" リンクまたは会社共有可能リンクに設定します。
-    - **Anyone**: サイトの既定の共有リンクを匿名アクセスまたは [すべてのユーザー] リンクに設定します。
-
-- **DefaultShareLinkPermission**: 使用可能な値は次のとおりです。
-    - **View**: サイトの既定のリンクアクセス許可を "表示" アクセス許可に設定します。
-    - **Edit**: サイトの既定のリンクアクセス許可を "編集" アクセス許可に設定します。
-
-これら 2 つの設定と値は、*DefaultSharingScope*、*DefaultShareLinkPermission* および [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) コマンドレットのパラメーターと同等です。
-
-PowerShell の例、秘密度ラベル GUID は **8faca7b8-8d20-48a3-8ea2-0f96310a848e** です:
-
-- 共有リンクタイプを SpecificPeople に設定するには:
-    
-    ````powershell
-    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
-    ````
-
-- 共有リンクのアクセス許可を [編集] に設定するには:
-    
-    ````powershell
-    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
-    ````
-
-#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>詳細設定を指定するための PowerShell のヒント
-
-秘密度ラベルは名前で指定できますが、ラベル名または表示名を指定する際の混乱を避けるために、ラベル GUID を使用することをお勧めします。GUID を検索するには、以下の手順に従います。
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-これらの詳細設定のいずれかを秘密度ラベルから削除するには、同じ AdvancedSettings パラメーター構文を使用しますが、null 文字列値を指定します。 例として、以下のようなものがあります:
-
-````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
-````
+詳細と手順については、「[秘密度ラベルを使用して、SharePoint と OneDrive のサイトとドキュメントの既定の共有依存タイプを構成する](sensitivity-labels-default-sharing-link.md)」を参照してください。
 
 ## <a name="sensitivity-label-management"></a>機密ラベルの管理
 
@@ -351,7 +311,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>SharePoint 管理センターで秘密度ラベルを表示し管理する
 
-適用された秘密度ラベルを表示、並べ替え、および検索するには、新しい SharePoint 管理センターの [**アクティブなサイト**] ページを使用します。最初に **[秘密度]** 列を追加する必要がある場合があります。
+適用された秘密度ラベルを表示、並べ替え、および検索するには、新しい SharePoint 管理センターの <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**[アクティブなサイト]**</a> を使用します。最初に **[秘密度]** 列を追加する必要がある場合があります。
 
 ![[アクティブなサイト] ページの [機密] 列。](../media/manage-site-sensitivity-labels.png)
 
@@ -488,7 +448,7 @@ Set-SPOTenant -BlockSendLabelMismatchEmail $True
 
 ## <a name="how-to-disable-sensitivity-labels-for-containers"></a>コンテナーの秘密度ラベルを無効にする方法
 
-「[PowerShell で秘密度ラベルのサポートを有効にする](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)」と同じ手順で、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトの秘密度ラベルをオフにすることができます。 ただし、この機能を無効にするには、手順5で `$setting["EnableMIPLabels"] = "False"`を指定します。
+「[PowerShell で秘密度ラベルのサポートを有効にする](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)」と同じ手順で、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトの秘密度ラベルを無効にすることができます。ただし、この機能を無効にするには、手順 5 で `$setting["EnableMIPLabels"] = "False"` を指定します。
 
 秘密度ラベルを作成または編集するときに、グループおよびサイトですべての設定を使用できないようにすることに加えて、この操作では、コンテナーが構成に使用するプロパティは元に戻ります。 Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを有効にすると、**分類** ([Azure AD グループの分類](#classic-azure-ad-group-classification) に使用) に使用されているプロパティが **秘密度** に切り替わります。 コンテナーの秘密度ラベルを無効にすると、コンテナーは秘密度プロパティを無視して、もう一度分類プロパティを使用します。
 

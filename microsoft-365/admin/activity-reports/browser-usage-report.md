@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365管理センターの [レポート] - Microsoft ブラウザーの使用状況
+title: Microsoft 365 管理センター利用状況レポート
 ms.author: waxiaoyu
 author: sarahwxy
 manager: scotv
@@ -18,30 +18,30 @@ search.appverid:
 - MOE150
 - GEA150
 description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用して Microsoft Microsoft 365利用状況レポートを取得するMicrosoft 365 管理センター。'
-ms.openlocfilehash: d653bf1132f461b14644b1ddc04bab2fdceee358
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: cfeed7f311816e72d06f63e36aabe9f6ffad718f
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960960"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400966"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365管理センターの [レポート] - Microsoft ブラウザーの使用状況
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365管理センターのレポート - Microsoft ブラウザーの使用状況
 
-[Microsoft 365レポート] ダッシュボードには、組織内の製品全体のアクティビティの概要が表示されます。 これにより、個々の製品レベルレポートを掘り下して、各製品内のアクティビティに関するより詳細な分析情報を提供できます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft ブラウザーの使用状況レポートでは、ユーザーの使用状況、Internet Explorer、Microsoft Edge 従来版に関するMicrosoft Edgeできます。 利用状況レポートは、Microsoft Microsoft 365を使用してアクセスされるオンライン サービスに基づいて行います。
+[Microsoft 365レポート] ダッシュボードには、組織内の製品全体のアクティビティの概要が表示されます。 これにより、個々の製品レベルレポートを掘り下して、各製品内のアクティビティに関するより詳細な分析情報を提供できます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft ブラウザーの使用状況レポートでは、ユーザーの利用状況、Internet Explorer、Microsoft Edge 従来版に関するMicrosoft Edgeできます。 利用状況レポートは、Microsoft Microsoft 365を使用してアクセスされるオンライン サービスに基づいて行います。
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Microsoft ブラウザー使用状況レポートにアクセスする方法
 
-1. 管理センターで、[レポートの使用状況] **ページ** \> <b><a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">に移動</a></b> します。
+1. 管理センターで、[レポートの使用状況] **ページに** \> <b><a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">移動</a></b> します。
 
-2. ダッシュボードのホームページで、Microsoft ブラウザー **の使用状況** カードの [その他の表示] ボタンをクリックします。
+2. ダッシュボードのホームページで、Microsoft **ブラウザーの使用状況** カードの [その他の表示] ボタンをクリックします。
 
 ## <a name="how-to-notify-users-to-upgrade-their-browser"></a>ブラウザーのアップグレードをユーザーに通知する方法
 
 :::image type="content" alt-text="Microsoft ブラウザー使用状況レポートのアクション フロー。" source="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png" lightbox="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png":::
 
-グローバル管理者は、Internet Explorer から Microsoft 365 サービスにアクセスしているユーザーにメッセージを送信することをオプトインできます (Internet Explorer デスクトップ アプリケーションは 2022 年 6 月 15 日に廃止されます)。 この対象となるメッセージは、これらのブラウザーのサポートがすぐに送信され、Microsoft Edge に関する情報とブラウザーを切り替える簡単な手順を含むサポート記事へのリンクがユーザーに通知されます。 
+グローバル管理者は、Internet Explorer から Microsoft 365 サービスにアクセスしているユーザーにメッセージを送信することをオプトインできます (Internet Explorer デスクトップ アプリケーションは 2022 年 6 月 15 日に廃止されます)。 この対象となるメッセージは、これらのブラウザーのサポートが近日送信され、Microsoft Edge に関する情報とブラウザーを切り替える簡単な手順に関するサポート記事へのリンクがユーザーに通知されます。 
 
-この機能は、組織がレポートに表示される使用状況に基Internet Explorer場合は、[Microsoft ブラウザー使用状況レポート] ページで確認できます (グローバル管理者のアクセス許可が必要)。 メッセージが作成されると、ユーザーは 2022 年 6 月 15 日まで指定された頻度で通知を受け取ります。 この機能は、いつでもオンまたはオフにできます。
+この機能は、組織がレポートに表示される使用状況に基Internet Explorer場合は、[Microsoft ブラウザーの利用状況レポート] ページで確認できます (グローバル管理者のアクセス許可が必要)。 メッセージが作成されると、ユーザーは 2022 年 6 月 15 日まで指定された頻度で通知を受け取ります。 この機能は、いつでもオンまたはオフにできます。
 
 これは、現在、米国のグローバル管理者のみ利用可能で、オンラインでのユーザー通知を許可する時間Excelです。
 
@@ -53,8 +53,8 @@ ms.locfileid: "60960960"
 |:-----|:-----|
 |1. |**Microsoft ブラウザー使用状況レポート** は、過去 7 日間、30 日間、90 日、または 180 日間の傾向を確認できます。 |
 |2. |各レポートのデータは、通常、過去 7 日間までカバーされます。 |
-|3。 |[**日次アクティブ ユーザー** ] グラフには、Microsoft Edge サービスへのアクセスにMicrosoft Edge 従来版、Internet Explorerの日次ユーザー数Microsoft 365表示されます。 |
-|4. |[**アクティブ ユーザー]** グラフには、選択した期間に Microsoft Edge、Microsoft Edge 従来版、Internet Explorer を使用して Microsoft 365 サービスにアクセスするユーザーの総数が表示されます。 |
-|5. |テーブルには、ユーザー レベルでのデータの内訳が表示されます。テーブルの列は追加または削除できます。  <br/><br/>**ユーザー** 名は、Microsoft ブラウザーを使用してサービスにMicrosoft 365ユーザーの電子メール アドレスです。<br><br/>**ユーザー Microsoft Edge** サービスへの接続に使用した場合、Microsoft EdgeマークがMicrosoft 365されます。<br/><br/>**ユーザー Microsoft Edge 従来版** サービスへの接続に使用した場合に、Microsoft Edge 従来版マークがMicrosoft 365されます。<br/><br/>**ユーザー Internet Explorer** サービスへの接続に使用した場合、Internet ExplorerがMicrosoft 365されます。 |
+|3。 |[**毎日のアクティブ ユーザー**] グラフには、サービスへのアクセスに使用Microsoft Edge、Microsoft Edge 従来版、Internet Explorerの日次ユーザー数Microsoft 365表示されます。 |
+|4. |[**アクティブ ユーザー]** グラフには、選択した期間中に Microsoft Edge、Microsoft Edge 従来版、Internet Explorer を使用して Microsoft 365 サービスにアクセスするユーザーの総数が表示されます。 |
+|5. |テーブルには、ユーザー レベルでのデータの内訳が表示されます。テーブルの列は追加または削除できます。  <br/><br/>**ユーザー** 名は、Microsoft ブラウザーを使用してサービスに接続Microsoft 365の電子メール アドレスです。<br><br/>**ユーザー Microsoft Edge** サービスへの接続に使用した場合、Microsoft EdgeマークがMicrosoft 365されます。<br/><br/>**ユーザー Microsoft Edge 従来版** サービスへの接続に使用した場合、Microsoft Edge 従来版マークがMicrosoft 365されます。<br/><br/>**ユーザー Internet Explorer** サービスへの接続に使用した場合、Internet ExplorerマークがMicrosoft 365されます。 |
 |6. |[列の **選択] アイコン** を選択して、レポートの列を追加または削除します。|
 |7. |また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、簡単な集計、並べ替え、およびフィルター処理を実行して、さらに分析できます。 ユーザー数が 100 人未満の場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行えます。 ユーザーが 100 人を超える場合は、フィルター処理と並べ替えを行う場合は、データをエクスポートする必要があります。|

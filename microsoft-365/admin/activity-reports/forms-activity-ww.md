@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365管理センターのレポート - フォーム アクティビティ
+title: Microsoft 365 管理センターのアクティビティ レポート
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,15 +19,15 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用して Microsoft Forms アクティビティ Microsoft 365を取得する方法Microsoft 365 管理センター。'
-ms.openlocfilehash: 900ae6c273d47785296b94622060f2fe3b6dc0ca
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: Microsoft Forms アクティビティ レポートを取得する方法については、Microsoft 365の [レポート] ダッシュボードを使用Microsoft 365 管理センター。
+ms.openlocfilehash: 7b44dfe9fe8582a9efa7d768e9136b77f5d4219b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60652874"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400916"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365管理センターのレポート - フォーム アクティビティ
+# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365管理センターの [レポート] - フォーム アクティビティ
 
 Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要トピック](activity-reports.md)を参照してください。
   
@@ -48,7 +48,7 @@ Microsoft 365 の [レポート] ダッシュボードには、組織内での�
 
 フォーム **アクティビティ レポート** は、過去 7 日間、30 日間、90 日、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
   
-|アイテム|説明|
+|アイテム|内容|
 |:-----|:-----|
 |**測定基準**|**定義**|
 |Username  <br/> |Microsoft Forms でアクティビティを実行したユーザーの電子メール アドレス。  <br/> |

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除できるように、情報ガバナンスのアイテム保持ポリシーに対する例外の保持ラベルを作成する手順。
-ms.openlocfilehash: 40899f517c39b926cb65730956ccb310ba5a5159
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 699df2a62204115c60271a5d5aa70613db48c7d5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321041"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327267"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>アイテム保持ポリシーの例外の保持ラベルを作成する
 
@@ -32,9 +32,11 @@ ms.locfileid: "62321041"
 
 アイテム保持ポリシーはコンテナー レベルのすべてのアイテム (SharePoint サイト、ユーザー メールボックスなど) に自動的に適用されますが、保持ラベルは、SharePoint ドキュメントやメール メッセージなどの個々のアイテムに適用されます。
 
-特定の SharePoint、OneDrive、または Exchange アイテムのアイテム保持ポリシーを補完する保持ラベルを使用する前に、[保持の原則](retention.md#the-principles-of-retention-or-what-takes-precedence)を理解していることを確認してください。 通常、適用されたアイテム保持ポリシーよりも長く特定のアイテムを保持するために保持ラベルを使用しますが、別の削除期間を適用するために使用することもできます。
+特定の SharePoint、OneDrive、または Exchange アイテムのアイテム保持ポリシーを補完する保持ラベルを使用する前に、[保持の原則](retention.md#the-principles-of-retention-or-what-takes-precedence)を理解していることを確認してください。 通常、適用されたアイテム保持ポリシーよりも長く特定のアイテムを保持するために保持ラベルを使用しますが、保持期間の終了時に自動削除をオーバーライドしたり、別の削除期間を適用したりするために使用することもできます。
 
-たとえば、SharePoint サイトのコンテンツの大部分は 3 年間保持する必要があり、これはアイテム保持ポリシーでカバーされます。 ただし、7 年間保持する必要がある契約ドキュメントがいくつかあります。 これらの例外は、保持ラベルを使用して対処できます。 アイテム保持ポリシーをすべての SharePoint サイトに割り当てた後、保持ラベルを契約ドキュメントに適用します。 すべての SharePoint アイテムは 3 年間保持され、契約ドキュメントのみが 7 年間保持されます。
+一般的な例として、SharePoint サイトのコンテンツの大部分は 3 年間保持する必要があり、これはアイテム保持ポリシーでカバーされます。 ただし、7 年間保持する必要がある契約ドキュメントがいくつかあります。 これらの例外は、保持ラベルを使用して対処できます。 アイテム保持ポリシーをすべての SharePoint サイトに割り当てた後、保持ラベルを契約ドキュメントに適用します。 すべての SharePoint アイテムは 3 年間保持され、契約ドキュメントのみが 7 年間保持されます。
+
+保持ラベルをアイテム保持ポリシーの例外として使用する方法の詳細については、「[アイテム保持ポリシーと保持ラベルの組み合わせ](retention.md#combining-retention-policies-and-retention-labels)」を参照してください。
 
 保持ラベルでは、アイテム保持ポリシーよりも多くの機能もサポートされます。 詳細については、「[アイテム保持ポリシーと保持ラベルの機能](retention.md#compare-capabilities-for-retention-policies-and-retention-labels)」を参照してください。
 

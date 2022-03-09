@@ -1,7 +1,7 @@
 ---
 title: ネットワーク保護を有効にする
 description: グループ ポリシー、PowerShell、またはモバイル デバイス管理と構成マネージャーを使用してネットワーク保護を有効にします。
-keywords: ANetwork の保護、悪用、悪意のある Web サイト、IP、ドメイン、ドメイン、有効化、有効にする
+keywords: ネットワーク保護、悪用、悪意のある Web サイト、IP、ドメイン、ドメイン、有効化、有効にする
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,17 +10,17 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: ''
+ms.reviewer: mkaminska
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: acf474f472450456014a581366c8860d87607a79
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b21b2f2a69ab9a85f1f5003104969364ae9c6e78
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322647"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401148"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -57,7 +57,8 @@ ms.locfileid: "63322647"
    - 2、または **監査** モード
 
     :::image type="content" alt-text="ネットワーク保護レジストリ キー。" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-
+    
+    
 ## <a name="enable-network-protection"></a>ネットワーク保護を有効にする
 
 次の方法を使用してネットワーク保護を有効にする。
@@ -89,6 +90,9 @@ ms.locfileid: "63322647"
 ### <a name="mobile-device-management-mdm"></a>モバイル デバイスの管理 (MDM)
 
 [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) 構成サービス プロバイダー (CSP) を使用して、ネットワーク保護を有効または無効にするか、監査モードを有効にします。
+
+[ネットワーク保護を有効または無効に](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) するか、監査モードを有効にする前に、Microsoft Defender マルウェア対策プラットフォームを最新バージョンに更新します。
+
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャー
 
@@ -163,6 +167,7 @@ ms.locfileid: "63322647"
 6. 残りの手順を完了し、ポリシーを保存します。 
 
 7. リボンから [展開] **を選択** して、ポリシーをコレクションに展開します。
+
 
 > [!IMPORTANT]
 > Configuration Manager から Exploit Guard ポリシーを展開すると、展開を削除した場合、Exploit Guard の設定はクライアントから削除されません。 `Delete not supported` クライアントの Exploit Guard 展開を削除すると、Configuration Manager クライアントの ExploitGuardHandler.log に記録されます。 <!--CMADO8538577-->

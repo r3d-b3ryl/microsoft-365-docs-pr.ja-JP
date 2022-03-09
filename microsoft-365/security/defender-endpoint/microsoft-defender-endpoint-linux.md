@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebc5c0bfad32da316368c5c440fed23df28e9e17
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: b125689f6eaf2bad5ebfef9977417abdea051f3b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765686"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401134"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -43,7 +43,7 @@ ms.locfileid: "62765686"
 
 ### <a name="prerequisites"></a>前提条件
 
-- ポータルへのMicrosoft 365 Defenderアクセス
+- ポータルへのアクセスMicrosoft 365 Defenderする
 - systemd システム マネージャー [を使用した](https://systemd.io/) Linux 配布
 - Linux および BASH スクリプトでの初心者レベルのエクスペリエンス
 - デバイスの管理特権 (手動展開の場合)
@@ -121,6 +121,7 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
        - 2.6.32-754.35.1.el6.x86_64
        - 2.6.32-754.39.1.el6.x86_64
        - 2.6.32-754.41.2.el6.x86_64
+       - 2.6.32-754.43.1.el6.x86_64
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
@@ -177,7 +178,7 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 
 ### <a name="configuring-exclusions"></a>除外の構成
 
-ユーザーに除外を追加Microsoft Defender ウイルス対策、ユーザーの一般的な除外の間違いを[念頭に置Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+ユーザーに除外を追加するMicrosoft Defender ウイルス対策、ユーザーの一般的な除外の間違い[を念頭に置Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>ネットワーク接続
 
@@ -188,10 +189,10 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 ****
 
 
-|ドメインリストのスプレッドシート| 説明|
+|ドメインリストのスプレッドシート| 内容|
 |---|---|
 |商用顧客向け Microsoft Defender for Endpoint URL リスト | 商用顧客向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Gov/GCC/DoD のお客様向け Microsoft Defender for Endpoint URL リスト| Gov/GCC/DoD のお客様向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+| Gov/GCC/DoD のお客様向け Microsoft Defender for Endpoint URL リスト| Gov/GCC/DoD のお客様向けサービスの場所、地理的な場所、OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 |
 
 

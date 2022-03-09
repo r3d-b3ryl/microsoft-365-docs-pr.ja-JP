@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365管理センターのレポート - Dynamics 365 Customer Voice アクティビティ
+title: Microsoft Dynamics 365 カスタマー音声アクティビティ レポート
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Dynamics 365 Customer Voice アクティビティ レポートを取得する方法については、Microsoft 365 の [レポート] ダッシュボードを使用Microsoft 365 管理センター。
-ms.openlocfilehash: d143728f8170ae9c12a6d007e9e256a23f7ff74d
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fb3f631db84dbd974123863956d5505f02c382d6
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60650471"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400882"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365管理センターのレポート - Dynamics 365 Customer Voice アクティビティ
+# <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365管理センターの [レポート] - Dynamics 365 Customer Voice アクティビティ
 
 Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要トピック](activity-reports.md)を参照してください。
   
@@ -36,7 +36,7 @@ Microsoft 365 の [レポート] ダッシュボードには、組織内での�
 ## <a name="how-to-get-to-the-dynamics-365-customer-voice-activity-report"></a>Dynamics 365 Customer Voice アクティビティ レポートにアクセスする方法
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
-2. ダッシュボードのホームページで、Dynamics  365 Customer Voice カードの [その他の表示] ボタンをクリックします。
+2. ダッシュボードのホームページで、Dynamics 365 Customer Voice カードの [その他の表示] ボタンをクリックします。
   
 ## <a name="interpret-the-dynamics-365-customer-voice-activity-report"></a>Dynamics 365 Customer Voice アクティビティ レポートの解釈
 
@@ -48,7 +48,7 @@ Microsoft 365 の [レポート] ダッシュボードには、組織内での�
 
 **Dynamics 365 Customer Voice** アクティビティ レポートでは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
   
-|アイテム|説明|
+|アイテム|内容|
 |:-----|:-----|
 |**測定基準**|**定義**|
 |Username  <br/> |Microsoft Forms でアクティビティを実行したユーザーの電子メール アドレス。  <br/> |

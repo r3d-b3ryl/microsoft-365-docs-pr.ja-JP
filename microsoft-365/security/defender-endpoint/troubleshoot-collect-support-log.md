@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b6d4b6f78cc677f9be5f664d86d8734ebd8df2f7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a0d0f470a2af18dab298ba3a1af642362590da4c
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168404"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401162"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>ライブ応答を使用して Microsoft Defender for Endpoint のサポート ログを収集する
 
@@ -35,15 +35,13 @@ ms.locfileid: "61168404"
 
 このトピックでは、Live Response を使用してツールを実行する方法について説明します。
 
-1. 適切なスクリプトをダウンロードする
-   - Microsoft Defender for Endpoint クライアント センサー ログのみ:LiveAnalyzer.ps1 [ スクリプト](https://aka.ms/MDELiveAnalyzer)です。
-      - 結果パッケージの概算サイズ: ~100Kb
-   - Microsoft Defender for Endpoint クライアント センサーとウイルス対策ログ: [LiveAnalyzer+MDAV.ps1 スクリプト](https://aka.ms/MDELiveAnalyzerAV)です。
-       - 結果パッケージの概算サイズ: ~10 Mb
+1. [Microsoft Defender for Endpoint Client Analyzer](https://aka.ms/BetaMDEAnalyzer) の 'Tools' サブディレクトリから使用可能な必要なスクリプトをダウンロードしてフェッチします。 <br>
+たとえば、基本的なセンサーとデバイスの正常性ログを取得するには、.をフェッチします。\Tools\MDELiveAnalyzer.ps1」<br>
+Defender ウイルス対策サポート ログも必要な場合 (MpSupportFiles.cab)、.をフェッチします。\Tools\MDELiveAnalyzerAV.ps1" 
 
 2. 調査する [必要があるコンピューターで](live-response.md#initiate-a-live-response-session-on-a-device) ライブ応答セッションを開始します。
 
-3. [ライブラリ **アップロードファイルを選択します**。
+3. [ライブラリ **アップロードファイル] を選択します**。
 
     ![アップロード ファイルのイメージ。](images/upload-file.png)
 
@@ -51,7 +49,7 @@ ms.locfileid: "61168404"
 
     ![[ファイルの選択] ボタン 1 のイメージ。](images/choose-file.png)
 
-5. [ファイル] という名前のダウンロードしたMDELiveAnalyzer.ps1を選択し、[確認] を **クリックします。**
+5. ダウンロードしたファイルを [MDELiveAnalyzer.ps1] を選択し、[確認] を **クリックします。**
 
    ![ファイルの選択ボタン 2 のイメージ。](images/analyzer-file.png)
 
@@ -66,9 +64,9 @@ ms.locfileid: "61168404"
 
 > [!NOTE]
 >
-> - MDEClientAnalyzer の最新のプレビュー バージョンは、次の場所からダウンロードできます [https://aka.ms/Betamdeanalyzer](https://aka.ms/Betamdeanalyzer) 。
+> - MDEClientAnalyzer の最新のプレビュー バージョンは、次の場所からダウンロードできます。 [https://aka.ms/Betamdeanalyzer](https://aka.ms/Betamdeanalyzer)
 >
-> - LiveAnalyzer スクリプトは、次のファイルからトラブルシューティング パッケージをダウンロードします https://mdatpclientanalyzer.blob.core.windows.net 。
+> - LiveAnalyzer スクリプトは、次のファイルからトラブルシューティング パッケージをダウンロードします https://mdatpclientanalyzer.blob.core.windows.net。
 >
 >   コンピューターが上記の URL に到達できない場合は、LiveAnalyzer スクリプトを実行する前にMDEClientAnalyzerPreview.zipファイルをライブラリにアップロードします。
 >
@@ -78,9 +76,9 @@ ms.locfileid: "61168404"
 >   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
 >   ```
 >
-> - コンピューターが Microsoft Defender for Endpoint クラウド サービスと通信していない場合、または Microsoft Defender for Endpoint ポータルに予期した通り表示されない場合に、コンピューターでローカルにデータを収集する方法の詳細については、「Verify client [connectivity to Microsoft Defender for Endpoint](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)service URL」を参照してください。
+> - コンピューターが Microsoft Defender for Endpoint クラウド サービスと通信していない場合、または Microsoft Defender for Endpoint ポータルに予期した通り表示されない場合に、コンピューターでローカルにデータを収集する方法の詳細については、「 [Verify client connectivity to Microsoft Defender for Endpoint service URL](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)」を参照してください。
 > 
-> - 「Live [response command examples」](live-response-command-examples.md)で説明したように、コマンドの最後に '&' 記号を使用して、ログをバックグラウンド アクションとして収集することができます。
+> - Live response [command の例](live-response-command-examples.md)で説明したように、コマンドの最後に '&' 記号を使用して、ログをバックグラウンド アクションとして収集できます。
 >   ```console
 >   Run MDELiveAnalyzer.ps1&
 >   ```

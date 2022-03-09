@@ -1,5 +1,5 @@
 ---
-title: 事前構築済みのモデルを使用して、Microsoft の請求書または領収書から情報を抽出SharePoint Syntex
+title: 事前構築されたモデルを使用して、Microsoft の請求書または領収書から情報を抽出SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,15 +7,20 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
-description: ビルド済みモデルを作成および構成する方法については、SharePoint Syntex。
+description: 事前構築済みモデルを作成および構成する方法については、SharePoint Syntex。
+ms.openlocfilehash: 7867fe197fd53e6095f51869fc5aaad18af9157b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401050"
 ---
-
-# <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>事前構築済みのモデルを使用して、Microsoft の請求書または領収書から情報を抽出SharePoint Syntex
+# <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>事前構築されたモデルを使用して、Microsoft の請求書または領収書から情報を抽出SharePoint Syntex
 
 事前構築済みのモデルは、ドキュメントとドキュメント内の構造化された情報を認識するように事前にトレーニングされています。 新しいカスタム モデルを最初から作成する代わりに、既存の事前トレーニング済みモデルを反復処理して、組織のニーズに合った特定のフィールドを追加できます。 
 
@@ -29,7 +34,7 @@ description: ビルド済みモデルを作成および構成する方法につ�
 
 ## <a name="create-a-prebuilt-model"></a>事前構築済みモデルの作成
 
-次の手順に従って、事前構築済みのモデルを作成して、ドキュメントを分類SharePoint Syntex。
+次の手順に従って、事前構築済みモデルを作成して、ドキュメントを分類SharePoint Syntex。
 
 1. [モデル] **ページで** 、[モデルの **作成] を選択します**。
 
@@ -124,6 +129,9 @@ description: ビルド済みモデルを作成および構成する方法につ�
 - 変更を保存し、モデルのホーム ページに戻る場合は、[ **抽出** ] パネルで [保存して **終了] を選択します**。
 
 - モデルをライブラリに適用する準備が整った場合は、ドキュメント領域で [次へ] を選択 **します**。 [ライブラリ **に追加] パネルで** 、モデルを追加するライブラリを選択し、[追加] を選択 **します**。
+
+> [!TIP]
+> ドキュメント ライブラリのビューは、ニーズや設定に合わせて変更できます。 詳細については、「ドキュメント ライブラリで [ビューを変更する」を参照してください](apply-a-model.md#change-the-view-in-a-document-library)。
 
 ## <a name="see-also"></a>関連項目
 

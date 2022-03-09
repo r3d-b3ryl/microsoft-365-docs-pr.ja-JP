@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365管理センターのレポート - ビバ ラーニングアクティビティ
+title: Microsoft 365 管理センタービバラーニングアクティビティ レポート
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -17,24 +17,24 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: 詳細については、Microsoft 365の [ラーニングレポート] ダッシュボードを使用して、Microsoft 365ビバ アクティビティ レポートを取得するMicrosoft 365 管理センター。
-ms.openlocfilehash: 64ea4da8e87d1ba1b09a7f85617c6972ce26308e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: '[レポート] ダッシュボードの [Microsoft 365] ラーニングを使用して、ビバ Microsoft 365アクティビティ レポートを取得する方法についてMicrosoft 365 管理センター。'
+ms.openlocfilehash: 382513700f6008aa2b89f32f23f31b19cce63cab
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60651417"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400393"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>Microsoft 365管理センターのレポート - ビバ ラーニングアクティビティ
+# <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>Microsoft 365管理センターのレポート - ビバ ラーニング アクティビティ
 
-管理者はMicrosoft 365、組織のさまざまな製品のアクティビティの概要をレポート ダッシュボードに表示します。 これにより、各製品に固有のアクティビティについてより詳しく知ることができます。 [アクティビティ] の [アクティビティ レポート] をMicrosoft 365 管理センター。 
+管理者としてMicrosoft 365レポート ダッシュボードには、組織内のさまざまな製品のアクティビティの概要が表示されます。 これにより、各製品に固有のアクティビティについてより詳しく知ることができます。 [アクティビティ] の [アクティビティ レポート] をMicrosoft 365 管理センター。 
 
-たとえば、ライセンスを受け取った Viva ユーザーの操作をラーニングして、ユーザーのアクティビティを理解できます。 また、アプリ内で使用されている機能の種類をラーニングします。
+たとえば、ライセンスを受け取ったビバ ユーザーの操作をラーニング、ユーザーの操作を確認できます。 また、アプリ内で使用されている機能の種類をラーニングします。
 
-## <a name="how-do-i-get-to-the-to-the-viva-learning-activity-report"></a>ビバ のアクティビティ レポートにアクセスラーニング方法  
+## <a name="how-do-i-get-to-the-to-the-viva-learning-activity-report"></a>アクティビティ レポートにアクセスするにはラーニング方法を示します。  
 
-1. 管理センターで、[レポートの使用状況]**ページ**  >  **に移動** します。 
-2. ダッシュボードのホームページで、**ビバ** カードの [詳細を表示] ラーニングします。 
+1. 管理センターで、**レポート** > **使用状況** ページの順に移動します。 
+2. ダッシュボードのホームページで、[ビバ] **カードの [** その他の表示] ラーニングします。 
 
 ## <a name="interpret-the-microsoft-365-apps-usage-report"></a>使用状況レポートMicrosoft 365 Apps解釈する
 
