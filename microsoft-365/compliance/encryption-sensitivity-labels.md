@@ -1,7 +1,7 @@
 ---
 title: 秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,14 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2e337ef74975bd761de89b4aaae03379344efeed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311901"
 ---
-
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
@@ -188,6 +193,8 @@ ms.custom: seo-marvel-apr2020
 - 認証されたすべてのユーザー。選択する前に、この設定の[要件と制限事項](#requirements-and-limitations-for-add-any-authenticated-users)を理解しておいてください。
 
 - Azure AD で、特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([以前の Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))。 Microsoft 365 グループは、静的メンバーシップまたは[動的メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を持つことができます。 このグループの種類は Azure AD に同期されていないため、また、メールが有効になっていないセキュリティグループを使用できないため、[Exchange からの動的配布グループ](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) を使用することはできません。
+    
+    このオプションでサポートされている指定されたグループ内では、Azure Information Protection サービスによって、暗号化されたコンテンツを開く前に、各[ユーザーは、個別に認証されます](/azure/information-protection/prepare#azure-information-protection-requirements-for-user-accounts)。
 
 - 任意のメール アドレスまたはドメイン。 この組織の任意のドメイン名を入力して、Azure AD を使用する別の組織のすべてのユーザーを指定するには、このオプションを使用します。 **gmail.com**、**hotmail.com**、**outlook.com** などのドメイン名を入力することにより、ソーシャル プロバイダーに対してこのオプションを使用することもできます。
 
@@ -424,7 +431,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 - 承認されたユーザーが Office アプリで暗号化されたドキュメントを開くと、アプリの上部にある黄色のメッセージ バーにラベル名と説明が表示されます。 暗号化アクセス許可が組織外のユーザーに拡張されている場合は、ドキュメントを開いたときにこのメッセージ バーに表示されるラベル名と説明を慎重に確認します。
 
-- 暗号化されたファイルを複数のユーザーが同時に編集するには、全員が Office for the web を使用する必要があります。  または、Windows と Mac の場合は、[秘密度ラベルのある暗号化されたファイルの共同編集を有効に](sensitivity-labels-coauthoring.md)して、ユーザーは Word、Excel、PowerPoint の[必要な最小バージョン](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)を持っていることが必要です。 この状況が当てはまらず、ファイルが既に開かれている場合、次のことが起こります。
+- 複数のユーザーが暗号化されたファイルを同時に編集するには、すべて Office for the web を使用しているか、[秘密度ラベルで暗号化されたファイルの共同編集を有効にしていて](sensitivity-labels-coauthoring.md)、すべてのユーザーが[この機能をサポートする Office アプリ](sensitivity-labels-coauthoring.md#prerequisites)を持っている必要があります。 この状況が当てはまらず、ファイルが既に開かれている場合、次のことが起こります。
 
   - Office アプリ (Windows、Mac、Android、iOS)で、[**使用中のファイル**] メッセージがファイルをチェック アウトしているユーザーの名前とともにユーザーに表示されます。 その場合、ユーザーは読み取り専用コピーの閲覧またはそのコピーの保存と編集を行うことが可能で、他のユーザーによるファイルの使用が終了したときに通知を受け取ることができます。
   - Web 用 Office では、他のユーザーと同時にドキュメントを編集することはできないというメッセージがユーザーに表示されます。その場合は、[**閲覧表示で開く**] を選択できます。
@@ -435,7 +442,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 - ドキュメントを [SharePoint でチェックアウト](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)するときに Office アプリを使用することによって、暗号化されたラベルが追加されれ、その後、ユーザーがチェックアウトを破棄すると、ドキュメントはラベル付きの暗号化されたままになります。
 
-- [秘密度ラベルで暗号化されたファイルの共同編集を有効に](sensitivity-labels-coauthoring.md)していない限り、暗号化されたファイルに対する次の操作は Office アプリ (Windows、Mac、Android、iOS) ではサポートされておらず、問題が発生したことを示すエラー メッセージがユーザーに表示されます。 ただし、代替手段として SharePoint 機能を使用できます。
+- [秘密度ラベルで暗号化されたファイルの共同編集を有効に](sensitivity-labels-coauthoring.md)していない限り、暗号化されたファイルに対する次の操作は Office アプリ (Windows、Mac、Android、iOS) ではサポートされておらず、問題が発生したことを示すエラー メッセージがユーザーに表示されます。ただし、代替手段として SharePoint 機能を使用できます。
 
   - 以前のバージョンのコピーの表示、復元、および保存。代替方法として、[リストまたはライブラリのバージョン管理を有効にして構成する](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)と、Web 用 Office でこれらの操作を行えます。
   - ファイルの名前または場所の変更。代替方法として、[ドキュメント ライブラリ内のファイル、フォルダー、またはリンクの名前を SharePoint で変更](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)することができます。

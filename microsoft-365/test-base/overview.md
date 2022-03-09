@@ -2,8 +2,8 @@
 title: 概要
 description: テスト ベースについて
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
@@ -14,23 +14,23 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: b235fcb0de470f23afd75d8abd91d07451d040bd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8d7539dfeecf1e34a639bc506f312c35a4243323
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174125"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63405925"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>テスト ベースのMicrosoft 365?
 
 Test Base for Microsoft 365 (Test Base) は、セキュリティで保護された Azure 環境に基づく Microsoft の検証サービスです。
-テスト ベースを使用すると、ソフトウェア ベンダー (SV) とシステム インテグレーター (SIs) は、事前にリリースされた Windows セキュリティおよび機能ビルドに対するアプリケーションの検証を加速できます。 これは、SV パートナーと Microsoft の連携が強化され、共同テスト、検証、修復が可能です。
+Test Base を使用すると、ソフトウェア ベンダー (SV) とシステム インテグレーター (SIs) は、事前にリリースされた Windows セキュリティおよび機能ビルドに対するアプリケーションの検証を加速できます。 これは、SV パートナーと Microsoft の連携が強化され、共同テスト、検証、修復が可能です。
 
 Test Base は、お客様とパートナーが事前にリリースされたセキュリティ更新プログラムに対してアプリケーションのワークロードをステージおよびテストできる、Azure 上でセキュリティで保護された検証サービスを構築し、維持する大きな機会を提供します。
 
 Test Base を使用すると、Microsoft が更新プログラムを市場にリリースする前に、新しい OS リリースでアプリケーションが最高のパフォーマンスを得るのを妨げる可能性のある潜在的な問題について、より多くの可視性が提供されます。
 
-この新しいサービスは、SV がテスト作業をより簡単かつ効率的に行うのに役立ちます。 Enterpriseユーザーは、共同作業環境で一緒に SV と Microsoft のテストを行うメリットを得て、アプリケーションが期待通り動作するとの信頼性を高めます。
+この新しいサービスは、SV がテスト作業をより簡単かつ効率的に行うのに役立ちます。 Enterpriseユーザーは、共同作業環境で一緒に SV と Microsoft のテストを行うメリットを得て、アプリケーションが期待通り動作する自信を得ます。
 
 **テスト ベースがエンタープライズと SV パートナーに提供する利点は次のとおりです**。
 
@@ -51,9 +51,9 @@ Test Base を使用すると、Microsoft が更新プログラムを市場にリ
 
 4. お **客様** から受け取る一般的な質問に対する回答を提供するリファレンス セクション。
 
-## <a name="test-base-is-in-public-preview"></a>テスト ベースはパブリック プレビュー中です。
+## <a name="test-base-has-reached-general-availability"></a>テスト ベースが一般提供に達しました
 
-テスト ベースは、2021 年 7 月の Microsoft Inspire 会議中 `Public Preview` に正式に宣言されています。
+テスト ベースは、2021 年 11 月の Microsoft Ignite 会議中に正式に一般提供と宣言されています。 
 
 つまり、有効なエンタープライズ Azure アカウントを持つユーザーは、テストの担保をオンボードし、サービス上でアプリケーションのテストをすばやく開始できます。
 

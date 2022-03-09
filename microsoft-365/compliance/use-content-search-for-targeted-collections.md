@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: 特定のメールボックスまたはサイト フォルダー内Microsoft 365 コンプライアンス センターを検索する対象となるコレクションを実行するには、フォルダー内のコンテンツ検索を使用します。
-ms.openlocfilehash: 9de0c562f570a3028c7a96698241ac1be06b8ec1
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+description: 特定のメールボックスまたはサイト フォルダー Microsoft 365 コンプライアンス センターアイテムを検索する対象となるコレクションを実行するには、フォルダー内のコンテンツ検索を使用します。
+ms.openlocfilehash: a72984e3d4363dfd5d89e6167621dd65c9d57653
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321953"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406023"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>対象のコレクションにコンテンツ検索を使用する
 
-Microsoft 365 コンプライアンス センター のコンテンツ検索ツールは、UI で Exchange メールボックスまたは SharePoint サイトおよび OneDrive for Business サイト内の特定のフォルダーを検索する直接的な方法を提供します。 ただし、実際の検索クエリ構文でサイトのメールまたはパス ( *DocumentLink) プロパティ* のフォルダー ID プロパティを指定することで、特定のフォルダー (ターゲット コレクションと呼ばれる) を検索できます。 コンテンツ検索を使用して対象のコレクションを実行すると、ケースや特権アイテムに対応するアイテムが特定のメールボックスまたはサイト フォルダーにあると確信している場合に便利です。 この記事のスクリプトを使用して、メールボックス フォルダーのフォルダー ID を取得したり、SharePoint サイトおよびサイト上のフォルダーのパス (DocumentLink) をOneDrive for Businessできます。 次に、検索クエリのフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返します。
+Microsoft 365 コンプライアンス センター のコンテンツ検索ツールは、UI で直接、Exchange メールボックスまたは SharePoint サイトおよび OneDrive for Business サイト内の特定のフォルダーを検索する方法を提供します。 ただし、実際の検索クエリ構文でサイトのメールまたはパス ( *DocumentLink) プロパティ* のフォルダー ID プロパティを指定することで、特定のフォルダー (ターゲット コレクションと呼ばれる) を検索できます。 コンテンツ検索を使用して対象のコレクションを実行すると、ケースや特権アイテムに対応するアイテムが特定のメールボックスまたはサイト フォルダーにあると確信している場合に便利です。 この記事のスクリプトを使用して、メールボックス フォルダーのフォルダー ID、または SharePoint サイトおよびサイト上のフォルダーのパス (DocumentLink) をOneDrive for Businessできます。 次に、検索クエリのフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返します。
 
 > [!NOTE]
 > SharePoint または OneDrive for Business サイトのフォルダーにあるコンテンツを返す場合、このトピックのスクリプトでは Path プロパティの代わりに DocumentLink 管理プロパティを使用します。 DocumentLink プロパティはフォルダー内のすべてのコンテンツを返すのに対し、Path プロパティは一部のメディア ファイルを返さないので、Path プロパティよりも堅牢です。
@@ -37,9 +37,9 @@ Microsoft 365 コンプライアンス センター のコンテンツ検索ツ�
 
 - 手順 1 でスクリプトを実行するには、Microsoft 365 コンプライアンス センターの電子情報開示マネージャー役割グループのメンバーである必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
 
-- また、組織でメール受信者の役割を割り当Exchange Onlineがあります。 これは、スクリプトに含まれる **Get-MailboxFolderStatistics** コマンドレットを実行するために必要です。 既定では、メール受信者の役割は、組織の [組織の管理] 役割グループと [受信者の管理] 役割グループに割りExchange Online。 アクセス許可の割り当て方法の詳細については、「Exchange Onlineグループメンバーの[管理」を参照してください](/exchange/manage-role-group-members-exchange-2013-help)。 カスタム役割グループを作成し、その役割にメール受信者の役割を割り当て、手順 1 でスクリプトを実行する必要があるメンバーを追加することもできます。 詳細については、「役割グループの [管理」を参照してください](/Exchange/permissions-exo/role-groups)。
+- また、組織でメール受信者の役割を割り当Exchange Onlineがあります。 これは、スクリプトに含まれる **Get-MailboxFolderStatistics** コマンドレットを実行するために必要です。 既定では、メール受信者の役割は、組織の管理役割グループと受信者管理役割グループに割り当Exchange Online。 アクセス許可の割り当て方法の詳細については、「Exchange Onlineグループ メンバーの管理[」を参照してください](/exchange/manage-role-group-members-exchange-2013-help)。 カスタム役割グループを作成し、その役割にメール受信者の役割を割り当て、手順 1 でスクリプトを実行する必要があるメンバーを追加することもできます。 詳細については、「役割グループの [管理」を参照してください](/Exchange/permissions-exo/role-groups)。
 
-- この記事のスクリプトは、最新の認証をサポートしています。 スクリプトは、ユーザーまたは組織のMicrosoft 365使用Microsoft 365 GCCできます。 ドイツの Office 365、Microsoft 365 GCC High 組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、`Connect-ExchangeOnline`行を編集し、*ExchangeEnvironmentName* パラメーター (および組織の種類に適した値) を使用して、PowerShell に接続Exchange Onlineがあります。  `Connect-IPPSSession`また、行を編集し、*ConnectionUri* パラメーターと *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、セキュリティ & コンプライアンス センター PowerShell に接続する必要があります。 詳細については、「[PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) の使用例Connect、Exchange Onlineセキュリティ Connectコンプライアンス センター [PowerShell &参照してください](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
+- この記事のスクリプトは、最新の認証をサポートしています。 スクリプトは、ユーザーまたは組織のMicrosoft 365、Microsoft 365 GCCできます。 ドイツの Office 365、Microsoft 365 GCC 高組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、`Connect-ExchangeOnline`行を編集し、*ExchangeEnvironmentName* パラメーター (および組織の種類に適した値) を使用して、PowerShell に接続Exchange Onlineがあります。  `Connect-IPPSSession`また、行を編集し、*ConnectionUri* パラメーターと *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、セキュリティ & コンプライアンス センター PowerShell に接続する必要があります。 詳細については、「[PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) の使用例Connect」Exchange Online「セキュリティ Connectコンプライアンス センター [PowerShell &参照してください](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
 
 - スクリプトを実行する度に、新しいリモート PowerShell セッションが作成されます。 つまり、利用可能なすべてのリモート PowerShell セッションを使いきりできます。 この問題を回避するには、次のコマンドを実行して、アクティブなリモート PowerShell セッションを切断します。
 
@@ -65,11 +65,11 @@ Microsoft 365 コンプライアンス センター のコンテンツ検索ツ�
 
   - **OneDrive for Business**:`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
-- **ユーザー資格情報**: スクリプトは、資格情報を使用して、最新の認証を使用Exchange Online PowerShell またはセキュリティ & コンプライアンス センター PowerShell に接続します。 前に説明したように、このスクリプトを正常に実行するには、適切なアクセス許可を割り当てる必要があります。
+- **ユーザー資格情報**: スクリプトは、資格情報を使用して、最新の認証を使用Exchange Online PowerShell またはセキュリティ &コンプライアンス センター PowerShell に接続します。 前に説明したように、このスクリプトを正常に実行するには、適切なアクセス許可を割り当てる必要があります。
 
 メールボックス フォルダーまたはサイト ドキュメントリンク (パス) 名の一覧を表示するには、
 
-1. 次のテキストを、Windows PowerShell のファイル名サフィックスを使用して、.ps1 スクリプト ファイルに保存します`GetFolderSearchParameters.ps1`。
+1. 次のテキストを、Windows PowerShell ファイル名のサフィックスを使用して、.ps1 スクリプト ファイルに保存します`GetFolderSearchParameters.ps1`。
 
    ```powershell
    #########################################################################################################
@@ -195,7 +195,7 @@ Microsoft 365 コンプライアンス センター のコンテンツ検索ツ�
 
 ### <a name="script-output-for-mailbox-folders"></a>メールボックス フォルダーのスクリプト出力
 
-メールボックス フォルダーの ID を取得する場合、スクリプトは Exchange Online PowerShell に接続し、**Get-MailboxFolderStatisics** コマンドレットを実行し、指定したメールボックスのフォルダーの一覧を表示します。 メールボックス内のすべてのフォルダーに対して、スクリプトは FolderPath 列内のフォルダー名と **FolderQuery** 列のフォルダー ID **を表示** します。 さらに、スクリプトは **folderId** のプレフィックス (メールボックス プロパティの名前) をフォルダー ID に追加します。 **folderid プロパティは**`folderid:<folderid>`検索可能なプロパティなので、手順 2 の検索クエリでそのフォルダーを検索します。 このスクリプトには、最大 100 のメールボックス フォルダーが表示されます。
+メールボックス フォルダーの ID を取得する場合、スクリプトは Exchange Online PowerShell に接続し、**Get-MailboxFolderStatisics** コマンドレットを実行し、指定したメールボックスのフォルダーの一覧を表示します。 メールボックス内のすべてのフォルダーに対して、スクリプトは FolderPath 列内のフォルダー名と **FolderQuery** 列のフォルダー ID **を表示** します。 さらに、スクリプトは **folderId** のプレフィックス (メールボックス プロパティの名前) をフォルダー ID に追加します。 **folderid プロパティは**`folderid:<folderid>`検索可能なプロパティなので、手順 2 の検索クエリでそのフォルダーを検索します。 
 
 > [!IMPORTANT]
 > この記事のスクリプトには、 **Get-MailboxFolderStatistics** によって返される 64 文字のフォルダー Id 値を、検索用にインデックス付けされた 48 文字の形式に変換するエンコード ロジックが含まれています。 **PowerShell で Get-MailboxFolderStatistics** コマンドレットを実行して、(この記事のスクリプトを実行する代わりに) フォルダー ID を取得した場合、そのフォルダー ID 値を使用する検索クエリは失敗します。 コンテンツ検索で使用できる正しい形式のフォルダー ID を取得するには、スクリプトを実行する必要があります。
@@ -208,7 +208,7 @@ Microsoft 365 コンプライアンス センター のコンテンツ検索ツ�
 
 ### <a name="script-output-for-site-folders"></a>サイト フォルダーのスクリプト出力
 
-SharePoint または OneDrive for Business サイトから **documentlink** プロパティのパスを取得する場合、スクリプトはセキュリティ & コンプライアンス PowerShell に接続し、サイトでフォルダーを検索し、指定したサイトにあるフォルダーの一覧を表示する新しいコンテンツ検索を作成します。 スクリプトは、各フォルダーの名前を表示し、 **documentlink** のプレフィックスをフォルダー URL に追加します。 **documentlink プロパティ** は`documentlink:<path>`検索可能なプロパティなので、手順 2 の検索クエリで property:value ペアを使用して、そのフォルダーを検索します。 このスクリプトには、最大 200 のサイト フォルダーが表示されます。 サイト フォルダーが 200 を超える場合は、最新のフォルダーが表示されます。
+SharePoint または OneDrive for Business サイトから **documentlink** プロパティのパスを取得する場合、スクリプトはセキュリティ & コンプライアンス PowerShell に接続し、サイトでフォルダーを検索し、指定したサイトにあるフォルダーの一覧を表示する新しいコンテンツ検索を作成します。 スクリプトは、各フォルダーの名前を表示し、 **documentlink** のプレフィックスをフォルダー URL に追加します。 **documentlink プロパティ** は`documentlink:<path>`検索可能なプロパティなので、手順 2 の検索クエリで property:value ペアを使用して、そのフォルダーを検索します。 スクリプトには、最大 100 のサイト フォルダーが表示されます。 サイト フォルダーが 100 を超える場合は、最新のフォルダーが表示されます。
 
 サイト フォルダーのスクリプトによって返される出力の例を次に示します。
 
@@ -216,7 +216,7 @@ SharePoint または OneDrive for Business サイトから **documentlink** プ�
 
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>手順 2: フォルダー ID またはドキュメントリンクを使用して、対象のコレクションを実行する
 
-スクリプトを実行して、特定のユーザーのフォルダー ID またはドキュメント リンクの一覧を収集した後、次の手順で Microsoft 365 コンプライアンス センター に移動し、特定のフォルダーを検索する新しいコンテンツ検索を作成します。 [コンテンツ検索] キーワード `folderid:<folderid>` `documentlink:<path>` ボックスで構成した検索クエリで、または property:value ペアを使用します (**または、New-ComplianceSearch** コマンドレットを使用する場合は *ContentMatchQuery* パラメーターの値として)。 or プロパティを他の  `folderid` 検索  `documentlink` パラメーターまたは検索条件と組み合わせて使用できます。 クエリに or プロパティのみを`folderid``documentlink`含める場合は、指定したフォルダー内のすべてのアイテムが検索によって返されます。
+スクリプトを実行して、特定のユーザーのフォルダー ID またはドキュメント リンクの一覧を収集した後、次の手順で Microsoft 365 コンプライアンス センター に移動し、新しいコンテンツ検索を作成して特定のフォルダーを検索します。 [コンテンツ検索] キーワード `folderid:<folderid>` `documentlink:<path>` ボックスで構成した検索クエリで、または property:value ペアを使用します (**または、New-ComplianceSearch** コマンドレットを使用する場合は *ContentMatchQuery* パラメーターの値として)。 or プロパティを他の  `folderid` 検索  `documentlink` パラメーターまたは検索条件と組み合わせて使用できます。 クエリに or プロパティのみを`folderid``documentlink`含める場合は、指定したフォルダー内のすべてのアイテムが検索によって返されます。
 
 1. <https://compliance.microsoft.com>手順 1 でスクリプトの実行に使用したアカウントと資格情報を使用して、移動してサインインします。
 
@@ -238,9 +238,9 @@ SharePoint または OneDrive for Business サイトから **documentlink** プ�
 
       または
 
-    - [サイトの **SharePoint] の** 横にある  [サイトの選択] をクリックし、手順 1 でスクリプトを実行した際に指定したのと同じサイト URL を追加します。
+    - [サイトの **SharePoint]** の横にある [サイトの選択] をクリックし、手順 1 でスクリプトを実行した際に指定したのと同じサイト URL を追加します。
 
-6. 検索するコンテンツの場所を保存したら、[ファイルの保存&実行] **を** クリックし、コンテンツ検索の名前を入力し、[保存] をクリックして対象のコレクション検索を開始します。
+6. 検索するコンテンツの場所を保存したら、[ファイルの保存&実行] をクリックし、コンテンツ **検索** の名前を入力し、[保存] をクリックして対象のコレクション検索を開始します。
 
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>対象となるコレクションの検索クエリの例
 
@@ -270,7 +270,7 @@ SharePoint または OneDrive for Business サイトから **documentlink** プ�
   documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 この記事のスクリプトを使用して対象となるコレクションを実行する場合は、次のことを念頭に置いておきます。
 

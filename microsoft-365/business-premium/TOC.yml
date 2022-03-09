@@ -56,6 +56,14 @@
       href: share-files-and-videos.md
     - name: 組織のコミュニケーション サイトを作成する
       href: create-communications-site.md
+- name: Defender for Business でデバイスを保護する
+  items:
+    - name: Microsoft Defender for Business にデバイスをオンボードする
+      href: m365bp-onboard-devices-mdb.md
+    - name: デバイス ポリシーの確認と編集
+      href: m365bp-view-edit-create-mdb-policies.md
+    - name: デバイス グループの管理
+      href: m365bp-device-groups-mdb.md
 - name: デバイスからデータをリセットまたは削除する
   items:
     - name: デバイスからデータを削除する
@@ -64,9 +72,11 @@
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: セキュリティ インシデントの管理
   items:
+    - name: デバイスの修復アクションを確認する
+      href: m365bp-review-remediation-actions-devices.md
     - name: 侵害された電子メール アカウントへ対応する
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: 関連情報
+- name: Reference
   items:
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml

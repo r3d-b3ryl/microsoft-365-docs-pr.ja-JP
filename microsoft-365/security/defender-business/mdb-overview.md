@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/01/2022
+ms.date: 03/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 81afceeaf1307c2f65d718d009294720d7f6f3d9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4070cb273a64f34468f313f79c9c51c400bfe7db
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323718"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406208"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Microsoft Defender for Business の概要
 
@@ -36,7 +36,7 @@ Microsoft Defender for Business は、特に中小規模ビジネス向け (最�
 
 Defender for Business の詳細については、次のビデオをご覧ください。
 
-[:::image type="content" source="media/mdb-youtubevideo1.jpg" alt-text="Defender for Business に関する YouTube ビデオのスクリーンショット。":::](https://aka.ms/MDB-MicrosoftMechanics)
+> [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 
 この記事では、Defender for Business に含まれる内容について説明します。これらの機能の詳細については、リンクを参照してください。
 

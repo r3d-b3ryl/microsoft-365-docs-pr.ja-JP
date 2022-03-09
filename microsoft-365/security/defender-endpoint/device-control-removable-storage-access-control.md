@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 02/07/2022
-ms.openlocfilehash: a0bca99258bd256797437cdc4756910fc713cf26
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.date: 03/09/2022
+ms.openlocfilehash: 9f323d902f0e421ea73303706e0785f9bd76f3ff
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401188"
+ms.locfileid: "63406065"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -35,8 +35,6 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 - 除外の付いたリムーバブル 記憶域への読み取り、書き込み、または実行アクセスの監査、許可、または防止
 
-<br/><br/>
-
 |特権|アクセス許可|
 |---|---|
 |Access|読み取り、書き込み、実行|
@@ -45,8 +43,6 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 |GPO サポート|はい|
 |ユーザー ベースのサポート|はい|
 |コンピューター ベースのサポート|はい|
-
-<br/><br/>
 
 |機能|説明|Intune を使用した展開|グループ ポリシーによる展開|
 |---|---|---|---|
@@ -68,6 +64,8 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 - **4.18.2111** 以降: 'Enable or Disable Removable Storage Access Control', 'Default Enforcement', Client Machine policy update time through PowerShell, file information
 
+- **4.18.2201** 以降: OMA-URI を使用して許可ストレージに書き込まれたファイルのコピーをサポートする
+
 :::image type="content" source="images/powershell.png" alt-text="PowerShell インターフェイス。":::
 
 > [!NOTE]
@@ -82,17 +80,13 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 ### <a name="removable-storage-group"></a>リムーバブル Storage グループ
 
-<br/><br/>
-
 |プロパティ名|説明|オプション|
 |---|---|---|
 |**GroupId**|一意の ID である GUID は、グループを表し、ポリシーで使用されます。||
-|**DescriptorIdList**|グループでカバーするデバイス のプロパティを一覧表示します。 各デバイス プロパティの詳細については、「 [Device Properties」](device-control-removable-storage-protection.md) を参照してください。 すべてのプロパティでは大文字と小文字が区別されます。 |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices``WpdDevices`<p>**BusId**: たとえば、USB、SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId は、たとえば、システム内のデバイスを一意に識別する文字列です `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`。 末尾の番号 (たとえば、&0) は使用可能なスロットを表し、デバイス間で変更される場合があります。 最適な結果を得る場合は、末尾にワイルドカードを使用します。 たとえば、「 `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*` 」のように入力します。<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>0751_55E0: この完全な VID/PID ペアと一致する<p>55E0: PID=55E0 で任意のメディアと一致する <p>0751: 任意のメディアを VID=0751 と一致する|
+|**DescriptorIdList**|グループでカバーするデバイス のプロパティを一覧表示します。 各デバイス プロパティの詳細については、「 [Device Properties」](device-control-removable-storage-protection.md) を参照してください。 すべてのプロパティでは大文字と小文字が区別されます。 |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices``WpdDevices`<p>**BusId**: たとえば、USB、SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId は、たとえば、システム内のデバイスを一意に識別する文字列です `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`。 末尾の番号 (たとえば、&0) は使用可能なスロットを表し、デバイス間で変更される場合があります。 最適な結果を得る場合は、末尾にワイルドカードを使用します。 たとえば、「 `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*` 」のように入力します。<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: この完全な VID/PID ペアと一致する<p>`_55E0`: PID=55E0 と任意のメディアを一致する <p>`0751_`: 任意のメディアを VID=0751 と一致する|
 |**MatchType**|複数のデバイス プロパティが使用されている `DescriptorIDList`場合、MatchType はリレーションシップを定義します。|**MatchAll**: `DescriptorIdList` Will の下の属性は **And** `DeviceID` `InstancePathID`リレーションシップになります。たとえば、管理者が接続されている USB ごとに、USB が両方の値を満たしているかどうかをシステムがチェックします。 <p> **MatchAny**: DescriptorIdList の下の属性は **Or リレーションシップ** です。たとえば、管理者`DeviceID``InstancePathID`が接続されている USB ごとに、デバイス ID または **InstanceID** の値が同一である限り、システムは強制を **実行** します。 |
 
 ### <a name="access-control-policy"></a>アクセス制御ポリシー
-
-<br/><br/>
 
 | プロパティ名 | 説明 | オプション |
 |---|---|---|
@@ -164,7 +158,7 @@ Microsoft Defender for Endpoint Removable Storageアクセス制御について�
 
     特定のユーザーを制限する場合は、エントリに SID プロパティを使用します。 ポリシー Entry に SID がない場合、エントリはコンピューターのすべてのログイン インスタンスに適用されます。
     
-    書き込みアクセスのファイル情報を監視する場合は、右のオプション (8 または 16) で右の AccessMask を使用します。ファイル情報のキャプチャの [例を次に示します](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml)。
+    書き込みアクセスのファイル情報を監視する場合は、右のオプション (16) で右の AccessMask を使用します。ファイル情報のキャプチャの [例を次に示します](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml)。
 
     次の図は、SID プロパティの使用法とシナリオ 1: 書き込みおよび実行アクセスを許可するが、特定の承認済み USB を許可するシナリオ 1 の例 [を示しています](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)。
 
@@ -181,6 +175,7 @@ Microsoft Defender for Endpoint Removable Storageアクセス制御について�
 4. 既定の適用: ポリシーがない場合は、既定のアクセス (拒否または許可) をリムーバブル メディアに設定できます。 たとえば、RemovableMediaDevices のポリシー (Deny または Allow) しか持っていませんが、CdRomDevices または WpdDevices のポリシーを持たなかったり、このポリシーを使用して既定の拒否を設定すると、CdRomDevices または WpdDevices への読み取り/書き込み/実行アクセスがブロックされます。
 
    - この設定を展開すると、[既定の許可] または [ **既定の拒否]** **が表示されます**。
+   - この設定を構成するときに、ディスク レベルとファイル システム レベルの両方の AccessMask を検討します。たとえば、Default Deny を使用するが、特定の記憶域を許可する場合は、ディスク レベルとファイル システム レベルの両方のアクセスを許可する必要がある場合は、AccessMask を 63 に設定する必要があります。
 
     :::image type="content" source="images/148609579-a7df650b-7792-4085-b552-500b28a35885.png" alt-text="既定の許可または既定の拒否 PowerShell コード":::
 
@@ -188,13 +183,13 @@ Microsoft Defender for Endpoint Removable Storageアクセス制御について�
 
     :::image type="content" source="images/148608318-5cda043d-b996-4146-9642-14fccabcb017.png" alt-text="デバイスコントロールの設定":::
 
-   - この設定を展開すると、[有効] または [無効] が表示されます。無効にすると、このコンピューターでリムーバブル アクセス制御ポリシー Storageが実行されません。
+   - この設定を展開すると、[有効] または [無効 **] が** 表示 **されます**。 無効とは、このコンピューターにリムーバブル アクセス制御Storageが実行されていない状態を意味します。
 
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="PowerShell コードでデバイスコントロールを有効または無効にする":::
 
 6. ファイルのコピーの場所を設定する: 書き込みアクセスが発生した場合にファイルのコピーを作成する場合は、システムがコピーを保存できる場所を設定する必要があります。
     
-    これを右の AccessMask と Option と共に展開する必要があります。上記の手順 2 を参照してください。
+    これを右の AccessMask と Option と共に展開します。上記の手順 2 を参照してください。
 
     :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="グループ ポリシー - ファイル証拠の locaiton を設定する":::
 
@@ -246,7 +241,7 @@ Microsoft エンドポイント マネージャー センター (<https://endpoi
 
     - データ型: 文字列 (XML ファイル)
        
-    書き込みアクセスのファイル情報を監視する場合は、右のオプション (8 または 16) で右の AccessMask を使用します。ファイル情報のキャプチャの [例を次に示します](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml)。
+    書き込みアクセスのファイル情報を監視する場合は、右のオプション (16) で右の AccessMask を使用します。ファイル情報のキャプチャの [例を次に示します](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml)。
 
 3. 既定の適用: ポリシーがない場合は、既定のアクセス (拒否または許可) をリムーバブル メディアに設定できます。 たとえば、RemovableMediaDevices のポリシー (Deny または Allow) しか持っていませんが、CdRomDevices または WpdDevices のポリシーを持たなかったり、このポリシーを使用して既定の拒否を設定すると、CdRomDevices または WpdDevices への読み取り/書き込み/実行アクセスがブロックされます。
 
@@ -258,6 +253,7 @@ Microsoft エンドポイント マネージャー センター (<https://endpoi
       `DefaultEnforcementDeny = 2`
 
     - この設定を展開すると、[既定の許可] または **[既定の拒否]** **が表示されます。**
+    - この設定を構成するときに、ディスク レベルとファイル システム レベルの両方の AccessMask を検討します。たとえば、Default Deny を使用するが、特定の記憶域を許可する場合は、ディスク レベルと Fiel システム レベルの両方のアクセスを許可する必要がある場合は、AccessMask を 63 に設定する必要があります。
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="既定の強制 PowerShell コードを許可する":::
 
@@ -276,7 +272,7 @@ Microsoft エンドポイント マネージャー センター (<https://endpoi
 
 5. ファイルのコピーの場所を設定します。書き込みアクセスが発生した場合にファイルのコピーを作成する場合は、システムがコピーを保存できる場所を設定する必要があります。
     
-    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
 
     - データ型 : String
     
