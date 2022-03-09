@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 9c1eb0e7ba8f1c9388dd61f5e3433e47f9cd0cf4
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1c7ec0f9411d767e588e391eb7eb94ec95a219fb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940640"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312209"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -59,7 +59,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **さまざまなプラットフォームやデバイスで Office アプリのコンテンツを保護する。** Office デスクトップアプリと Office on the web では、Word、Excel、PowerPoint、Outlook でサポートされています。 Windows、macOS、iOS、Android でサポートされています。
 
-- Microsoft Defender for Cloud Apps を使用して **サード パーティ製アプリおよびサービスのコンテンツを保護する**。 Defender for Cloud Apps を使用すると、サード パーティ製アプリおよびサービス (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル適用、および保護できます (サード パーティ製のアプリやサービスが機密ラベルを認識しない場合やサポートしない場合でも可能です)。
+- Microsoft Defender for Cloud Apps を使用して **サードパーティ製アプリおよびサービスのコンテンツを保護します**。Defender for Cloud Apps を使用すると、サードパーティ製アプリおよびサービス (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル付け、および保護できます。これは、サードパーティ製のアプリやサービスが秘密度ラベルを認識またはサポートしない場合でも可能です。
 
 - Teams、Microsoft 365 グループ、SharePoint サイトを含む **コンテナーを保護します**。 たとえば、プライバシー設定、外部ユーザー アクセスと外部共有、および管理されていないデバイスからのアクセスを設定します。
 
@@ -67,7 +67,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **Azure Purview の資産に秘密度ラベルを拡張する**: 現在プレビュー中のこの機能をオンにすると、Azure Purview のファイルやスキーマ化されたデータ アセットに秘密度ラベルを適用することができます。 スキーマ化されたデータ資産には、SQL、Azure SQL、Azure Synapse、Azure Cosoms、AWS RDS が含まれます。
 
-- **秘密度ラベルの適用をサード パーティ製アプリやサービスに拡大する。** Microsoft Information Protection SDK を使用すると、秘密度ラベルの読み取りと保護設定の適用をサード パーティ製アプリで行えるようになります。
+- **秘密度ラベルをサードパーティ製アプリやサービスに拡張します。** Microsoft Information Protection SDK を使用すると、サード パーティ製アプリで秘密度ラベルの読み取りと保護設定の適用を行えるようになります。
 
 - **保護設定を何も使わずにコンテンツを分類する。** コンテンツの分類の結果としてラベルを単純に割り当てることもできます。 これにより、分類を組織のラベル名に視覚的にマッピングすることができます。ラベルを使用して、使用状況レポートを生成し、機密コンテンツのアクティビティ データを確認できます。 この情報に基づいて常に選択し、後で保護設定を適用できます。
 
@@ -104,11 +104,13 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
     
     ![ドキュメントに適用されたヘッダーと透かし。](../media/Sensitivity-label-watermark-header.png)
     
+    変数を使用した動的マーキングもサポートされています。 たとえば、ラベル名またはドキュメント名をヘッダー、フッター、または透かしに挿入します。 詳細については、「[変数を使用した動的マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)」を参照してください。
+    
     コンテンツ マーキングがいつ適用されるかを確認する必要がありますか？ 「[Office アプリがコンテンツ マーキングと暗号化を適用した場合](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption)」を参照してください。
     
-    すべてではありませんが、一部のアプリは変数を使用した動的マーキングをサポートしています。 たとえば、ラベル名またはドキュメント名をヘッダー、フッター、または透かしに挿入します。 詳細については、「[変数を使用した動的マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)」を参照してください。
+    特定のドキュメントに基づくテンプレートまたはワークフローがある場合は、ユーザーがラベルを使用できるようにする前に、選択したコンテンツ マーキングを使用してそれらのドキュメントをテストします。 認識しておくべき文字列の長さの制限がいくつかあります。
     
-    文字数の長さ: 透かしで使用できる文字数は、255 文字に制限されています。 Excel を除き、ヘッダーとフッターの文字数は 1,024 文字までに制限されています。 Excel では、ヘッダーとフッターの合計が 255 文字に制限されています。ただし、この制限には、書式設定コードなど、表示されない文字も含まれます。 この制限に達すると、入力した文字列が Excel で表示されなくなります。
+    透かしの文字数は 255 文字までに制限されています。 Excel を除き、ヘッダーとフッターの文字数は 1,024 文字までに制限されています。 Excel では、ヘッダーとフッターの合計が 255 文字に制限されています。ただし、この制限には、書式設定コードなど、表示されない文字も含まれます。 この制限に達すると、入力した文字列が Excel で表示されなくなります。
 
 - [Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する](sensitivity-labels-teams-groups-sites.md)機能を有効にすると、**サイトやグループなどのコンテナー内のコンテンツを保護します**。
     
@@ -119,6 +121,8 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
     ![必要なラベルを割り当てるかを確認するダイアログ。](../media/Sensitivity-label-Prompt-for-required-label.png)
     
     機密ラベルを作成または編集するときの **ファイルとメールの自動ラベル** の設定の詳細については、「Office アプリの [コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」および「[Azure Purview でラベルを付ける](/azure/purview/create-sensitivity-label)」を参照してください。
+
+- SharePoint サイトと個々のドキュメントの **既定の共有リンクの種類** を設定します。 ユーザーの過剰な公開を防ぐため、ユーザーが SharePoint および OneDrive からドキュメントを共有する際の[既定のスコープとアクセス許可](sensitivity-labels-default-sharing-link.md)を設定します。
 
 ### <a name="label-scopes"></a>ラベル スコープ
 
@@ -237,30 +241,16 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>秘密度ラベルと Azure Information Protection
 
-Windows コンピューターの Microsoft 365 Apps で秘密度ラベルを使用する場合、Office アプリに組み込まれているラベルを使用するか、[Azure Information Protection クライアント](/azure/information-protection/rms-client/aip-clientv2)を使用するかを選択できます。
+Windows、macOS、iOS、Android の Microsoft 365 Apps に組み込まれている秘密度ラベルは、ユーザーに一貫したラベル付けエクスペリエンスを提供するため、これらのデバイスすべてにおける外観と動作が非常に似ています。 ただし、Windows コンピューターでは、[Azure Information Protection (AIP) クライアント](/azure/information-protection/rms-client/aip-clientv2)を使用することもできます。 このクライアントは、現在[メンテナンス モード](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613)です。
 
-組み込みラベルは、Azure Information Protection クライアントで使用される Office アドインを使用しないため、安定性とパフォーマンスの向上という利点があります。 また、高度な分類子などの最新の機能もサポートしています。
-
-既定では、Azure Information Protection クライアントがインストールされている場合、組み込みのラベル付け機能はこれらのアプリでオフになっています。 この既定の動作を変更し、Office アプリの組み込みラベルを使用するには、「[Office 組み込みラベル付けクライアントと Azure Information Protection クライアント](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)」を参照してください。
-
-Office アプリで Azure Information Protection クライアントをインストールしたまま無効にしておくと、Azure Information Protection クライアントを次のように機密ラベルと共に使用するという利点が得られます。
-
-- オンプレミスに保存されている機密情報を検出し、オプションでそのコンテンツにラベルを付けるスキャナー
-
-- ユーザーがすべてのファイルの種類にラベルを適用するためのファイル エクスプローラーの右クリック オプション
-
-- テキスト、画像、または PDF ドキュメントの暗号化されたファイルを表示するビューアー
-
-- オンプレミスのファイル内の機密情報を検出し、これらのファイルからラベルおよび暗号化を適用または削除するための PowerShell モジュール。
-
-Azure Information Protection を初めて使用する場合は、Azure Information Protection のドキュメント「[Windows のラベル付けソリューションの選択](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)」を参照してください。
+AIP クライアントを使用している場合は、「[Office アプリの AIP アドインに対して MIP 組み込みラベル付けを選択する理由](sensitivity-labels-aip.md)」を参照して、Windows コンピューターのラベル付けのオプションを確認してください。
 
 ### <a name="azure-information-protection-labels"></a>Azure Information Protection のラベル
 
 > [!NOTE]
 > Azure Portal での Azure Information Protection ラベルのラベル管理は、**2021 年 3 月 31 日** に廃止されます。詳細については、公式の「[非推奨通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)」を参照してください。
 
-テナントがまだ[統合ラベル付けプラットフォーム](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)を使用していない場合は、機密ラベルを使用する前に、まず統合ラベルを有効化する必要があります。 手順については、、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](/azure/information-protection/configure-policy-migrate-labels)」を参照してください。 
+テナントがまだ[統合ラベル付けプラットフォーム](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)を使用していない場合は、機密ラベルを使用する前に、まず統合ラベルを有効化する必要があります。 手順については、、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>秘密度ラベルと Microsoft Information Protection SDK
 

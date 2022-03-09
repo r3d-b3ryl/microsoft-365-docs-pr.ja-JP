@@ -1,39 +1,44 @@
 ---
 title: 課金内容または請求書を表示する
 f1.keywords:
-  - NOCSH
-ms.author: cmcatee
+- NOCSH
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: 'jkinma, jmueller'
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
+- M365-subscription-management
+- Adm_O365
 ms.custom:
-  - TopSMBIssues
-  - okr_smb
-  - TRN_M365B
-  - OKR_SMB_Videos
-  - AdminSurgePortfolio
-  - commerce_billing
-  - AdminTemplateSet
-  - adminvideo
+- commerce_billing
+- TopSMBIssues
+- okr_smb
+- TRN_M365B
+- OKR_SMB_Videos
+- AdminSurgePortfolio
+- AdminTemplateSet
+- adminvideo
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 01/25/2022
+ms.openlocfilehash: 02905b1e31dc295d8b5d79bc150a0c93823c9dd7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316367"
 ---
-
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
 この記事は、一般法人向け Microsoft 365 サブスクリプションを持っているユーザーを対象としています。
   
 課金内容を表示した場合に料金について説明が必要な場合は、「[課金または請求書の内容を理解する](understand-your-invoice2.md)」 のページで詳細な解説を参照してください。
   
-**請求書に関して問題がある場合**: [一般法人向け製品のサポートにお問い合わせください](../../admin/get-help-support.md)。
+**請求書に問題がある場合** は、 [ビジネス製品のサポートに問い合わせます](../../admin/get-help-support.md)。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -44,7 +49,7 @@ ms.date: 01/25/2022
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 
 1. Microsoft 365 管理センターで、左側のナビゲーション ウィンドウの [**請求**] を選択して、<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[**請求書**] タブ</a>を選択します。
-1. 請求書を選択して表示します。 請求書が表示されない場合は、ドロップダウン リストの **フィルター:過去 6 か月間** を選択します。
+1. 請求書を選択して表示します。請求書が表示されない場合は、ドロップダウン リストの **フィルター: 過去 6 か月間** を選択します。
 1. 請求書の詳細を表示するには、請求書の右上隅にある [**PDF のダウンロード**] を選択します。
 
 ## <a name="view-a-bill-or-invoice"></a>課金内容または請求書を表示する
