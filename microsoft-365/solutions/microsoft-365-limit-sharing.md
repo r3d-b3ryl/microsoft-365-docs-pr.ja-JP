@@ -19,15 +19,16 @@ f1.keywords: NOCSH
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 recommendations: false
 description: Microsoft 365 で共有を制限または無効にするオプションについて説明します。
-ms.openlocfilehash: a34a1a457ed9c53f6393d65617f8ac0d9e611209
-ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+ms.openlocfilehash: b2e327d5a5c670ada389a3dfceb2775e516ac2aa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "61660168"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323473"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Microsoft 365 の共有を制限する
 
@@ -110,12 +111,13 @@ SharePoint サイトの共有は、サイト所有者のみに制限できます
 サイトの共有は、そのサイトに対してドメインを許可またはブロックすることで特定のドメインに制限できます。
 
 ドメイン単位でサイトの共有を制限するには
-1. SharePoint 管理センターで、**[サイト]** の下側にある **[アクティブなサイト]** をクリックします。
-2. 構成するサイトをクリックします。
-3. **[ポリシー]** タブで、**[外部共有]** の下側にある **[編集]** をクリックします。
+
+1. SharePoint 管理センターの **[サイト]** で、<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**[アクティブなサイト]**</a> を選択します。
+2. 構成するサイトを選択します。
+3. **[ポリシー]** タブで、**[外部共有]** の下側にある **[編集]** を選択します。
 4. **[外部共有の詳細設定]** の下側にある **[ドメインで外部共有を制限する]** を選択します。
-5. 許可またはブロックするドメインを追加して、**[保存]** をクリックします。
-6. **[保存]** をクリックします。
+5. 許可またはブロックするドメインを追加して、**[保存]** を選択します。
+6. **[保存]** を選択します。
 
     ![許可されたドメインのサイトレベル設定のスクリーンショット。](../media/limit-site-sharing-by-domain.png)
 
@@ -144,18 +146,19 @@ SharePoint サイトの共有は、サイト所有者のみに制限できます
 SharePoint または OneDrive のファイルおよびフォルダーの組織外のユーザーとの共有を禁止する場合は、組織全体または個別サイトのゲスト共有をオフにします。
 
 組織の SharePoint ゲスト共有をオフにするには
-1. SharePoint 管理センターで、**[ポリシー]** の下側にある **[共有]** をクリックします。
+
+1. SharePoint 管理センターで、**[ポリシー]** の下側にある <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**[共有]**</a> を選択します。
 2. **[外部共有]** で、SharePoint のスライダーを **[自分の組織内のユーザーのみ]** に下げます。
-3. **[保存]** をクリックします。
+3. **[保存]** を選択します。
 
     ![Anyone に設定された SharePoint 組織レベルの共有設定のスクリーンショット。](../media/sharepoint-tenant-sharing-off.png)
 
 
 サイトのゲスト共有をオフにするには
-1. SharePoint 管理センターで、**[サイト]** の下側にある **[アクティブなサイト]** をクリックします。
-2. 構成するサイトをクリックします。
-3. **[ポリシー]** タブで、**[外部共有]** の下側にある **[編集]** をクリックします。
-4. **[外部共有]** で、**[組織内のユーザーのみ]** を選択して **[保存]** をクリックします。
+1. SharePoint 管理センターの **[サイト]** で、<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**[アクティブなサイト]**</a> を選択します。
+2. 構成するサイトを選択します。
+3. **[ポリシー]** タブで、**[外部共有]** の下側にある **[編集]** を選択します。
+4. **[外部共有]** で、**[組織内のユーザーのみ]** を選択して **[保存]** を選択します。
 
     ![[組織内のユーザーのみ] に設定された SharePoint サイトレベルの共有設定のスクリーンショット。](../media/sharepoint-site-external-sharing-settings-off.png)
 
@@ -164,17 +167,19 @@ Microsoft 365 管理センターでユーザーをクリックし、**[OneDrive]
 組織外のユーザーとの共有を許可するときに、すべてのユーザーが認証されているようにするには、組織全体または個別サイトの *すべてのユーザー* (匿名の共有) リンクを無効にします。
 
 組織レベルで *すべてのユーザー* リンクをオフにするには
-1. SharePoint 管理センターで、**[ポリシー]** の下側にある **[共有]** をクリックします。
+
+1. SharePoint 管理センターで、**[ポリシー]** の下側にある <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**[共有]**</a> を選択します。
 2. **[外部共有]** で、SharePoint のスライダーを **[新規および既存のゲスト]** に下げます。
-3. **[保存]** をクリックします。
+3. **[保存]** を選択します。
 
     ![新規および既存のゲストに設定された SharePoint 組織レベルの共有設定のスクリーンショット。](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
 サイトの *すべてのユーザー* リンクをオフにするには
-1. SharePoint 管理センターで、**[サイト]** の下側にある **[アクティブなサイト]** をクリックします。
-2. 構成するサイトをクリックします。
-3. **[ポリシー]** タブで、**[外部共有]** の下側にある **[編集]** をクリックします。
-4. **[外部共有]** で、**[新規および既存のゲスト]** を選択して **[保存]** をクリックします。
+
+1. SharePoint 管理センターの **[サイト]** で、<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**[アクティブなサイト]**</a> を選択します。
+2. 構成するサイトを選択します。
+3. **[ポリシー]** タブで、**[外部共有]** の下側にある **[編集]** を選択します。
+4. **[外部共有]** で、**[新規および既存のゲスト]** を選択して **[保存]** を選択します。
 
     ![新規および既存の設定に設定された SharePoint サイトレベルの共有設定のスクリーンショット。](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 
