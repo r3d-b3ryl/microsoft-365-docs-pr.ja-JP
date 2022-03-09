@@ -1,9 +1,9 @@
 ---
 title: Microsoft 365 を使用したハイブリッドワーク用のインフラストラクチャを設定する
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在宅勤務、在宅勤務、ハイブリッド、リモート ワーカー、ハイブリッド ワーク、リモート従業員、ハイブリッド接続、リモート アクセス、在宅勤務、テレワーク、テレワーク、モバイル ワーク、リモート ジョブ、どこからでも作業、柔軟な職場
 description: ハイブリッド ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
-ms.openlocfilehash: 0370d30584021ab8560a24c7e54e3a7c7aadeb1f
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 87d72307f3e6a2b254bdbde21d07fc146806b89d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886256"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318579"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Microsoft 365 を使用したハイブリッドワーク用のインフラストラクチャを設定する
 
@@ -112,7 +112,7 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 
 - Web 経由で直接 Microsoft 365 クラウド アプリやサービスにアクセスするための機能、セキュリティ、パフォーマンスが備わった Surface ノート PC や Windows 11 または 10 などの最新のデバイス。
 
-- 自宅で使用されている古いノート PC やデスクトップなど [Windows 365 クラウド PC](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices) を介して間接的に Microsoft 365 クラウド アプリやサービスにアクセスできるすべてのデバイス。 このオプションは、高い性能、強力なセキュリティ、およびシンプルな IT 管理を提供します。
+- 自宅で使用されている古いノート PC やデスクトップなど [Windows 365 クラウド PC](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices) を介して間接的に Microsoft 365 クラウド アプリやサービスにアクセスできるすべてのデバイス。このオプションにより、高パフォーマンス、強力なセキュリティ、および簡素化された IT 管理が提供されます。
 
 ## <a name="next-steps"></a>次の手順
 

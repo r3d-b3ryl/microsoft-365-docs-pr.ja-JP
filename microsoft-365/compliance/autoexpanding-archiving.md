@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Exchange Online メールボックスに追加のアーカイブ記憶域を提供する自動拡張アーカイブについて説明します。
-ms.openlocfilehash: 527eea4f0fe97ba689cb70bddb78091112e1f353
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 1b4b8d81868cc97fc8e8faf5b0dc449e4c07a868
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241337"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328863"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>自動拡張アーカイブに関する詳細情報
 
@@ -92,11 +92,11 @@ Outlook または Outlook on the web を使って自動拡張アーカイブに�
 
 - アーカイブ メールボックスに少なくとも 1 つの自動拡張記憶域がある場合は、アーカイブ メールボックスまたは補助アーカイブからフォルダーを削除できません。 つまり、自動拡張されたストレージ領域がプロビジョニングされた後は、アーカイブ内のフォルダを削除することはできません。
 
-- 自動拡張されたストレージ領域のアイテムを削除できます。 ただし、メールボックスの自動拡張アーカイブが有効になっている場合は、削除済みアイテムの回復機能を使用してアイテムを回復することはできません。
+- 自動拡張されたストレージ領域のアイテムを削除できます。ただし、メールボックスの自動拡張アーカイブが有効になっている場合は、削除済みアイテムの回復機能を使用してアイテムを回復することはできません。
 
-- 自動拡張アーカイブの検索は、Web 版の Outlook (OWA) でも使用できます。 オンライン アーカイブと同様に、追加記憶域に移動されたアイテムを検索できます。 OWA で検索範囲としてアーカイブを選択すると、すべてのアーカイブ (自動拡張アーカイブを含む) とそれに対応するサブフォルダが検索されます。
+- 自動拡張アーカイブの検索は、Web 版の Outlook (OWA) でも使用できます。 オンライン アーカイブと同様に、追加記憶域に移動されたアイテムを検索できます。 OWA で検索範囲としてアーカイブを選択すると、すべてのアーカイブ (自動拡張アーカイブを含む) とそれに対応するサブフォルダが検索されます。 クラウドのみのアーカイブ状況 (プライマリ メールボックスはまだオンプレミス) では、自動拡張アーカイブ機能の検索はサポートされていないことに注意してください。
 
-- 自動拡張アーカイブの検索は、Outlook デスクトップの最新チャネル (プレビュー) で利用できます。 このプレビューでは、「現在のメールボックス」範囲が利用可能で、自動拡張アーカイブを検索することができます。 この機能やその他の Microsoft Search サポート機能の詳細については、「[Microsoft Search を活用して Windows 版 Outlook を Exchange Online に接続する方法](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)」を参照してください。 
+- 自動拡張アーカイブ検索は、Outlook for Windows の月次エンタープライズ チャネルで利用できます。 この更新により、「現在のメールボックス」範囲が利用可能で、自動拡張アーカイブを検索することができます。 クラウドのみのアーカイブ状況 (プライマリ メールボックスはまだオンプレミス) では、自動拡張アーカイブ機能の検索はサポートされていないことに注意してください。 この機能やその他の Microsoft Search サポート機能の詳細については、「[Microsoft Search を活用して Windows 版 Outlook を Exchange Online に接続する方法](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)」を参照してください。 
 
 - 自動拡張アーカイブ内の Outlook のアイテム数および閲覧済み/未読数 (Outlook および Outlook on the web) は正しくないことがあります。
 

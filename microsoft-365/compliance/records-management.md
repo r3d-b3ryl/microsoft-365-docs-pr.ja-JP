@@ -17,15 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom:
+- admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft 365 のレコード管理を使用すると、保持スケジュールをファイル計画に適用し、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: d5d4752e76a2a39b1c5fafab964d13ce11873e9b
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: c7546216a935960e5c4b66b37bb3308d0a69e89e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083069"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324817"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Microsoft 365 でのレコード管理について説明します。
 
@@ -51,7 +52,7 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 
 これらの機能を使用すると、組織の保持スケジュールと要件をレコード管理ソリューションに反映させ、保持、レコード宣言、廃棄を管理して、コンテンツのライフサイクル全体をサポートすることができます。
 
-オンライン ドキュメントの他にも、役に立つ[よくあるご質問のスライド デッキ](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)をレコード管理ウェビナーからダウンロードできます。 実際のウェビナーの記録は使用できなくなりました。
+オンライン ドキュメントの他にも、役に立つ[よくあるご質問のスライド デッキ](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)をレコード管理ウェビナーからダウンロードできます。実際のウェビナーの記録は使用できなくなりました。
 
 ## <a name="records"></a>レコード
 
@@ -91,9 +92,9 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 
 脚注:
 
-<sup>1</sup> 既定では許可されていますが、0 バイトより大きいファイルの以下のテナント設定によってブロックできます: Microsoft 365 コンプライアンス センターの **[レコード管理]** ノード > **[レコード管理設定]** > **[保持ラベル]** > **[レコード プロパティの編集を許可する]** に移動します。次に **[ユーザーにレコード プロパティの編集を許可する]** 設定をオフにします。
+<sup>1</sup> ロックされたレコードのプロパティの編集は既定で許可されますが、[[Microsoft 365 コンプライアンス センター]](https://compliance.microsoft.com/) > **[レコード管理]** > **[レコード管理設定]** > **[保持ラベル]** > **[レコードのプロパティの編集を許可する]** のテナント設定によりブロックできます。
 
-<sup>2</sup> SharePoint および OneDrive の場合、[Microsoft365 コンプライアンス センター] > **[レコード管理]** > **[レコード管理設定]** > **[保持ラベル]** > **[アイテムの削除]** でテナント設定としてブロックできます
+<sup>2</sup> SharePoint および OneDrive のラベル付きアイテムの削除は、[[Microsoft 365 コンプライアンス センター]](https://compliance.microsoft.com/) > **[レコード管理]** > **[レコード管理設定]** > **[保持ラベル]** > **[アイテムの削除]** で、テナント設定としてブロックできます。
 
 ドキュメントが添付されているリスト アイテムに保持ラベルを適用する場合、そのドキュメントは保持設定を継承せず、リスト アイテムから削除されます。 対照的に、そのリスト アイテムが保持ラベル付きのレコードとして宣言された場合、ドキュメントの添付ファイルは保持設定を継承し、削除されません。
 

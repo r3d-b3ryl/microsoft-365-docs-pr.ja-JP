@@ -1,9 +1,9 @@
 ---
 title: 手順 3. ID を保護する
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人間が操作するランサムウェア、人手によるランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: 安全なサインインと条件付きアクセスを使用して、Microsoft 365 リソースをランサムウェア攻撃から保護します。
-ms.openlocfilehash: 57fad156a4e7b97d3029c224059041d692224ed2
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 548e0649d7180ef39f693049210a91c1e0dce312
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887400"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320229"
 ---
 # <a name="step-3-protect-identities"></a>手順 3. ID を保護する
 
@@ -53,7 +53,7 @@ Azure Active Directory (Azure AD) のユーザー アカウントに[パスワ�
 - サインインにパスワードを使用しているユーザー アカウントの「[サインイン セキュリティを強化する](#increase-sign-in-security)」で説明されているように、[最小特権](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)の原則を実装し、パスワード保護を使用します。 
 - ドメイン全体の管理者レベルのサービス アカウントの使用は避けてください。 
 - ローカル管理者特権を制限して、リモート アクセス トロイの木馬(RAT) やその他の不要なアプリケーションのインストールを制限します。
-- 管理ポータルへのアクセスを許可する前に、Azure AD 条件付きアクセスを使用して、ユーザーとワークステーションの信頼を明示的に検証します。 Azure ポータルについては、[この例](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)を参照してください。
+- 管理ポータルへのアクセスを許可する前に、Azure AD 条件付きアクセスを使用して、ユーザーとワークステーションの信頼を明示的に検証します。Azure ポータルについては、 [この例](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) を参照してください。
 - ローカル管理者のパスワード管理を有効にします。
 - 特権の高いアカウントがサインインして資格情報を公開している場所を特定します。 特権の高いアカウントは、ワークステーションに存在しないようにする必要があります。
 - パスワードと資格情報のローカル ストレージを無効にします。

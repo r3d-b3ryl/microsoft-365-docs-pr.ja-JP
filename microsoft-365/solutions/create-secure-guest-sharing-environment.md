@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたゲスト共有環境を Microsoft 365 で作成するための使用可能なオプションについては、こちらを参照してください。ゲスト アクセスによって共同作業を改善します。
-ms.openlocfilehash: ae616bcaa78aa759ca5b1f1be4b1beaf8d709a00
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 97b9c3c26fce137ad4471bbf080d4b7340c8b622
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807610"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323795"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -180,9 +181,9 @@ Microsoft 365 グループとTeamsの場合は、Azure AD の条件付きアク�
 
 SharePointでゲストのアクセスを Web のみに制限するには
 
-1. [ [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)で **ポリシー** を展開し、[ **アクセス制御**] をクリックします。
-2. **非管理対象デバイス** をクリックします。
-3. **制限付きの web のみのアクセスを許可する** オプションを選択して、[**保存**] をクリックします。
+1. SharePoint 管理センターで、**ポリシー** を展開し、[<a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**アクセス制御**</a>] を選択します。
+2. [**管理 されていないデバイス**] を選択します。
+3. **制限付きの web のみのアクセスを許可する** オプションを選択して、[**保存**] を選択します。
 
 SharePoint 管理センターのこの設定では、Azure AD の条件付きアクセスポリシーをサポートしています。
 

@@ -2,8 +2,8 @@
 title: Microsoft 365 for business の更新
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150
 description: Microsoft 365 for Business のほとんどのサブスクリプションを更新し、継続請求をオンまたはオフにする方法について説明します。
 ms.date: 05/04/2021
-ms.openlocfilehash: 2fe78acab6423bbedefe2cad9dc7ae7ae3efe449
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b50e92bf71d4c172b55aa69db33fc3572d660684
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370082"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330161"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
 
@@ -60,7 +60,7 @@ ms.locfileid: "61370082"
 
 2. 継続請求を管理するサブスクリプションを選択します。
 3. サブスクリプションの詳細情報ページの **[Subscription and payment settings]** (サブスクリプションと支払い設定) の下で、**[Edit recurring billing]** (継続請求の編集) を選択します。
-4. **[継続請求の設定の編集]**  ウィンドウで、**[オン]**、**[オン、ただし一度更新]**、または **[オフにする]** を選択します。
+4. **[継続請求の設定の編集]** ウィンドウで、**[オン]**、**[オン、ただし一度更新]**、または **[オフにする]** を選択します。
 5. **[保存]** を選択します。
 
     > [!NOTE]

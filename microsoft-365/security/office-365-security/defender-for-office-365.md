@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6756ba1c0315bb2b89c272d8153715cffe8f976
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: f78194541db8221aad1243966ddee6b6dc071d7d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818566"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317053"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -56,7 +56,7 @@ Microsoft Defender for Office 365 は、メール メッセージ、リンク (U
 
 ## <a name="getting-started"></a>はじめに
 
-Microsoft Defender for Office 365 を初めて使用している場合、または *実行しながら* 最適な方法を学ぶ場合は、この記事を参照しながら、初期 Defender for Office 365 構成をチャンクに分割し、調査し、レポートを表示することをお勧めします。 論理的な初期構成チャンクは次の通りです。
+Microsoft Defender for Office 365 を初めて使用している場合、または *実行しながら* 最適な方法を学ぶ場合は、この記事を参照しながら、初期 Defender for Office 365 構成をチャンクに分割し、調査し、レポートを表示することをお勧めします。論理的な初期構成チャンクは次の通りです。
 
 - 名前に "*対策*" を使用してすべてを構成します。
   - マルウェア対策
@@ -81,7 +81,7 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 |Microsoft Defender for Office 365 プラン 1|Defender for Office 365 プラン 2|
 |---|---|
-|構成、保護、および検出機能: <ul><li>[添付ファイル保護](safe-attachments.md)</li><li>[リンク保護](safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 のフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイム検出](threat-explorer.md)</li></ul>|Defender for Office 365 プラン 1 の機能 <p> --- プラスのもの --- <p> 自動化、調査、修復、教育の機能: <ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレーション トレーニング](attack-simulation-training.md)</li><li>[Microsoft 365 Defender の高度な追求](advanced-hunting-overview.md)</li><li>[Microsoft 365 Defender のインシデント](investigate-incidents.md)</li><li>[Microsoft 365 Defender のアラート](investigate-alerts.md)</li></ul>|
+|構成、保護、および検出機能: <ul><li>[添付ファイル保護](safe-attachments.md)</li><li>[リンク保護](safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 のフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイム検出](threat-explorer.md)</li></ul>|Defender for Office 365 プラン 1 の機能 <p> --- プラスのもの --- <p> 自動化、調査、修復、教育の機能: <ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレーション トレーニング](attack-simulation-training.md)</li><li>[Microsoft 365 Defender の高度な捜索により、脅威を積極的に捜索する](../defender/advanced-hunting-overview.md)</li><li>[Microsoft 365 Defender でインシデントを調査する](../defender/investigate-incidents.md)</li><li>[Microsoft 365 Defender でアラートを調査する](../defender/investigate-alerts.md)</li></ul>|
 
 
 - Microsoft Defender for Office 365 プラン 2 は、Office 365 E5、Office 365 A5、Microsoft 365 E5 に含まれています。

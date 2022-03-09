@@ -12,17 +12,17 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
-ms.custom: ''
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーとファイルを共有する場合、情報が偶発的に公開されることを防止する方法を説明します。
-ms.openlocfilehash: 4c60f77f7f7807395a503ce083795e76398d99b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c1bf6424e2be70118dd2d85671a857a8a33ef2f9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196251"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329059"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する
 
@@ -43,7 +43,8 @@ ms.locfileid: "60196251"
 ニーズに応じて、特定のサイトまたは組織全体の [*すべてのユーザー*] リンクを無効にできます。
 
 組織の [*すべてのユーザー*] リンクをオフにするには
-1. SharePoint 管理センターの左側のナビゲーションで、[**共有**] をクリックします。
+
+1. SharePoint 管理センターの左側のナビゲーションで、<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**[共有]**</a> を選択します。
 2. SharePoint 外部共有設定を [**新規および既存のゲスト**] に設定します。
 
    ![組織レベルの SharePoint サイトの外部共有設定のスクリーンショット。](../media/sharepoint-organization-external-sharing-controls-new-users.png)
@@ -51,14 +52,15 @@ ms.locfileid: "60196251"
 3. [**保存**] をクリックします。
 
 サイトの [*すべてのユーザー*] リンクをオフにするには
-1. SharePoint 管理センターの左側のナビゲーションで、[**サイト**] を展開して [**アクティブなサイト**] をクリックします。
+
+1. SharePoint 管理センターの左側のナビゲーションで、[**サイト**] を展開して [<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**アクティブなサイト**</a>] を選択します。
 2. 構成するサイトを選択します。
-3. リボンで [**共有**] をクリックします。
+3. リボンで、[**共有**] を選択します。
 4. 共有が [**新規および既存のゲスト**] に設定されていることを確認します。
 
    ![サイト レベルの SharePoint サイトの外部共有設定のスクリーンショット。](../media/sharepoint-site-external-sharing-settings.png)
 
-5. 変更を加えた場合は、[**保存**] をクリックします。
+5. 変更した場合は、**[保存]** を選択します。
 
 ## <a name="domain-filtering"></a>ドメインのフィルター処理
 
@@ -71,7 +73,8 @@ ms.locfileid: "60196251"
 許可リストと拒否リストは、ゲストとの共有にのみ影響します。 禁止されたドメインのユーザーは、無効にしていない場合は、[*すべてのユーザー*] リンクを使用して共有できます。 ドメインの許可リストと拒否リストで最良の結果を得るには、上記のように [*すべてのユーザー*] リンクを無効にすることを検討してください。
 
 ドメイン許可リストまたは拒否リストを設定するには
-1. SharePoint 管理センターの左側のナビゲーションで、**[共有]** をクリックします。
+
+1. SharePoint 管理センターの左側のナビゲーションで、<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**[共有]**</a> を選択します
 2. [**外部共有の詳細設定**] で、[**ドメインごとに外部共有を制限する**] チェックボックスをオンにします。
 3. [**ドメインを追加**] をクリックします。
 4. ドメインをブロックするかどうかを選択し、ドメインを入力して、[**OK**] をクリックします。
@@ -87,14 +90,15 @@ SharePoint および OneDrive よりも高いレベルでドメインによる�
 組織外のユーザーとのファイル、フォルダー、およびサイトの共有を特定のセキュリティ グループのメンバーに制限できます。 これは、外部共有を有効にしたいが、承認ワークフローまたは要求プロセスを使用する場合に便利です。 あるいは、ユーザーがセキュリティ グループに追加され、外部との共有が許可される前に、ユーザーにトレーニング コースの完了を要求する可能性もあります。
 
 セキュリティ グループのメンバーに外部共有を制限するには
-1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)の左側のナビゲーションにある **[ポリシー]** で、**[共有]** をクリックします。
+
+1. SharePoint 管理センターの左側のナビゲーションにある **[ポリシー]** で、<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**[共有]**</a> を選択します。
 2. **[外部共有]** で、**[その他の外部共有の設定]** を展開します。
 
 3. **[特定のセキュリティ グループ内のユーザーにのみ、外部との共有を許可する]** を選択し、**[セキュリティ グループを管理する]** を選択します。
 
     ![[セキュリティグループを管理する] パネルのスクリーンショット。](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
-4. **[セキュリティ グループを追加する]** ボックスに、セキュリティ グループの名前を入力します。 [セキュリティ グループ] ボックスが表示されます。
+4. **[セキュリティ グループを追加する]** ボックスに、セキュリティ グループの名前を入力します。[セキュリティ グループ] ボックスが表示されます。
 
 5. セキュリティ グループ名の横にある **[共有可能]** ドロップダウンから、次のいずれかを選択します。
 
