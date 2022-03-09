@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1740d910f95a0076da34b7a08e66853fb7cca598
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 25333a1616bb1f4e4e529c17813bdd58f4c768b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939635"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312951"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -91,13 +91,11 @@ SPF ではメッセージ エンベロープに情報を追加しますが、DKI
 
 ![ドメインが選択された Microsoft 365 Defender ポータルの DKIM ページ。](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
-手順 2: [DKIM キーの作成] をクリックします。
+手順 2: トグルを **[有効]** にスライドします。 CNAME レコードを追加する必要があるというポップアップ ウィンドウが表示されます。
 
-![[DKIM キーの作成] ボタンを使用したドメイン詳細ポップアップ。](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+![トグルを [有効] にスライドして、DKIM を有効にする。](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
 
 手順 3: ポップアップ ウィンドウに表示される CNAME をコピーします
-
-![コピーする 2 つの CNAME レコードを含む [CNAME の公開] ポップアップ ウィンドウ。](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
 手順 4: コピーした CNAME レコードを DNS サービス プロバイダーに公開します。
 
@@ -199,7 +197,7 @@ TTL:                3600
 ここで、
 
 - Microsoft 365 では、セレクターは常に "selector1" または "selector2" になります。
-- _customDomainIdentifier_ は、mail.protection.outlook.com の前に表示されるカスタム ドメインのカスタマイズされた MX レコードの _customDomainIdentifier_ と同じです。 たとえば、次に示すドメイン contoso.com の MX レコードでは、_customDomainIdentifier_ は contoso-com です:
+- _customDomainIdentifier_ は、mail.protection.outlook.com の前に表示されるカスタム ドメインのカスタマイズされた MX レコードの _customDomainIdentifier_ と同じです。たとえば、次に示すドメイン contoso.com の MX レコードでは、_customDomainIdentifier_ は contoso-com です。
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
@@ -333,7 +331,7 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 ## <a name="default-behavior-for-dkim-and-microsoft-365"></a>DKIM と Microsoft 365 の既定の動作
 <a name="DefaultDKIMbehavior"> </a>
 
-DKIM を有効にしない場合、Microsoft 365は Microsoft Online Email Routing Address (MOERA)/initial ドメイン用の 2048 ビット DKIM 公開キーと、Microsoft がデータセンターに内部的に格納する関連する秘密キーを自動的に作成します。 既定では、Microsoft 365 は、所定のポリシーを持たないドメインに対して既定の署名構成を使用します。 これは、ユーザーが DKIM をセットアップしなければ、Microsoft 365 が、その既定のポリシーと、自らが作成するキーを使用して、そのドメインに対して DKIM を有効にすることを意味しています。
+DKIM を有効にしない場合、Microsoft 365 は Microsoft Online Email Routing Address (MOERA)/初期ドメインに対して 2048 ビットの DKIM 公開キーと、それに関連する秘密キー (これはデータセンターに内部的に保存されます) を作成します。既定では、Microsoft 365 は、所定のポリシーを持たないドメインに対して既定の署名構成を使用します。これは、ユーザーが DKIM をセットアップしなければ、Microsoft 365 が、その既定のポリシーと、自らが作成するキーを使用して、そのドメインに対して DKIM を有効にすることを意味しています。
 
 また、カスタム ドメインで DKIM 署名を有効にしてから無効にした場合にも、一定の期間が過ぎると、Microsoft 365 が自動的にカスタム ドメインに対して MOERA/初期ドメイン ポリシーを適用します。
 
@@ -395,9 +393,12 @@ Return-Path: <communication@bulkemailprovider.com>
 
 DKIM を設定したら、SPF をまだ設定していない場合は、設定する必要があります。SPF の簡単な概要と構成をすばやく行う方法については、「[**Microsoft 365 で SPF を設定して、スプーフィングを防止する**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。Microsoft 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについて確認する場合は、「[Microsoft 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法](how-office-365-uses-spf-to-prevent-spoofing.md)」からお読みください。
 
-次は、「[**DMARC を使用してメールを検証する**](use-dmarc-to-validate-email.md)」を参照してください。 [スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)には、Microsoft 365 が DKIM チェックに使用する構文とヘッダー フィールドが含まれています。
+次は、「[**DMARC を使用してメールを検証する**](use-dmarc-to-validate-email.md)」を参照してください。[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)には、Microsoft 365 が DKIM チェックに使用する構文とヘッダー フィールドが含まれています。
 
 **このテストで検証するのは**、DKIM 署名構成が正しく構成されていること、適切な DNS エントリが公開されていることです。
+
+> [!NOTE]
+> この機能には、Microsoft 365 管理者アカウントが必要です。 この機能は、Microsoft 365 Government、21Vianet が運用している Microsoft 365、または Microsoft 365 Germany では使用できません。
 
 <div class="nextstepaction">
 <p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">テストを実行する: DKIM</a></p>
