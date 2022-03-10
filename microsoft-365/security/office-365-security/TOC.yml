@@ -58,8 +58,6 @@
           href: office-365-ti.md
         - name: Office 365 セキュリティ インシデント対応
           href: office365-security-incident-response-overview.md
-        - name: 選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス
-          href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
     - name: 展開する
       items:
         - name: 脅威から保護する
@@ -312,6 +310,8 @@
           href: manage-quarantined-messages-and-files.md
         - name: 検疫ポリシー
           href: quarantine-policies.md
+        - name: 共有メールボックスから検疫済みメッセージを解放する
+          href: view-and-release-quarantined-messages-from-shared-mailboxes.md
         - name: 制限されたユーザー ポータルからブロックされたユーザーを削除する
           href: removing-user-from-restricted-users-portal-after-spam.md
         - name: 無効化ポータルを使って、受信拒否リストから自分自身を削除する

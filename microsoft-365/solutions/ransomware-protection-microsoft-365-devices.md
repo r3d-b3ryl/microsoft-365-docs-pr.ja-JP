@@ -1,9 +1,9 @@
 ---
 title: 手順 4. デバイスを保護する
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人間が操作するランサムウェア、人手によるランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: Windows Intune を MDA および MAM プロバイダーとして使用し、Windows 10 セキュリティ機能を使用して、ランサムウェア攻撃からMicrosoft 365 リソースを保護します。
-ms.openlocfilehash: 918dc75d11157bf6358e68a13d04c9a84c0a3837
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 0d7b9a5e125c3f0478948340dce5677a3ae65395
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887594"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318075"
 ---
 # <a name="step-4-protect-devices"></a>手順 4. デバイスを保護する
 
@@ -58,7 +58,7 @@ Windows 11 または 10 デバイスからの攻撃の横移動部分から保�
 - [Microsoft Defender ウイルス対策](/mem/intune/user-help/turn-on-defender-windows)をオンにします。
 - [Office マクロからの Win32 API 呼び出しをブロックします](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules#block-win32-api-calls-from-office-macros)。
 - [このプロセス](https://www.microsoft.com/microsoft-365/blog/2010/02/16/migrating-excel-4-macros-to-vba/)を使用して、Excel 4.0 マクロを必要とするすべてのレガシ ブックを、更新された VBA マクロ形式へ移行します。
-- [署名されていないマクロの使用を無効にします](https://support.microsoft.com/topic/enable-or-disable-macros-in-office-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6)。 ビジネス ニーズを持つすべての内部マクロが署名されていることを確認し、[信頼できる場所](/deployoffice/security/designate-trusted-locations-for-files-in-office)を活用して、不明なマクロが環境内で実行されないようにします。
+- [署名されていないマクロの使用を無効にします](https://support.microsoft.com/topic/enable-or-disable-macros-in-office-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6)。ビジネス ニーズを持つすべての内部マクロが署名されていることを確認し、[信頼できる場所](/deployoffice/security/designate-trusted-locations-for-files-in-office)を活用して、不明なマクロが環境内で実行されないようにします。
 - [マルウェア対策スキャン インターフェイス](https://www.microsoft.com/security/blog/2021/03/03/xlm-amsi-new-runtime-defense-against-excel-4-0-macro-malware/) (AMSI) によるランタイム マクロ スキャンがオンになっていることを確認して、悪意のある XLM マクロまたは VBA マクロを停止します。 この機能 (既定で有効) は、**マクロのランタイム スキャン スコープ** のグループ ポリシー設定が **[すべてのファイルに対して有効にする]** または **[低信頼ファイルに対して有効にする]** に設定されている場合は、オンになっています。 最新のグループ ポリシー テンプレート ファイルを取得します。
 
 ## <a name="impact-on-users-and-change-management"></a>ユーザーへの影響と変更管理

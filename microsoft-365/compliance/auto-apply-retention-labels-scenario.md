@@ -12,17 +12,19 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 search.appverid:
 - MOE150
 - MET150
 description: メタデータを使用してコンテンツを分類し、ラベルを自動的に適用し、イベントベースの保持を使用して保持期間を開始することにより、保持ラベルを使用して SharePoint のドキュメントのライフサイクルを管理する方法。
-ms.openlocfilehash: 586f9074628ed3c4c272715378b1ba413ebdd3ec
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 35c43a96e07fe52d9e5e0cc0a72195353b6f5da6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753669"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327169"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>保持ラベルを使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する
 
@@ -148,7 +150,7 @@ Microsoft 365 コンプライアンス センターを使用して、次の [保
 
 SharePoint がコンテンツのインデックスを作成するとき、各サイト列のクロールされたプロパティを自動的に生成します。 このシナリオでは、**ドキュメントの種類** プロパティと **状態** プロパティに関心があります。 検索でクロールされたプロパティを作成するには、適切なコンテンツの種類を使用し、サイト列に入力されたライブラリ内のドキュメントが必要です。
 
-SharePoint 管理センターで検索構成を開き、[**検索スキーマの管理**] を選択して、クロールされたプロパティを表示および構成できます。
+<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint 管理センター</a>で検索構成を開き、[**検索スキーマの管理**] を選択して、クロールされたプロパティを表示および構成できます。
 
 ![検索スキーマのクロールされたプロパティ。](../media/SPRetention8.png)
 
@@ -179,7 +181,7 @@ SharePoint 管理センターで検索構成を開き、[**検索スキーマの
 
 KQL は、検索クエリでクロールされたプロパティを使用できません。 管理プロパティを使用する必要があります。 通常の検索シナリオでは、管理プロパティを作成し、クロールされた必要なプロパティにマップします。 ただし、保持ラベルを自動適用する場合は、KQL で事前定義された管理プロパティのみを指定でき、カスタム管理プロパティは指定できません。 使用可能な文字列 *RefinableString00* から *RefinableString199* に対して、システム内で事前に定義された管理プロパティのセットがあります。 完全なリストについては、「[既定の未使用の管理プロパティ](/sharepoint/manage-search-schema#default-unused-managed-properties)」を参照してください。 これらの既定の管理プロパティは、通常、絞り込み検索の条件を定義するために使用されます。
 
-KQL クエリが機能し、正しい保持ラベルを製品ドキュメント コンテンツに自動適用するために、クロールされたプロパティ **ows\_Doc\_x0020\_Type* および *ows\_\_Status** を 2 つの絞り込み可能な管理プロパティにマップします。 このシナリオのテスト環境では、**RefinableString00** と **RefinableString01** は使用されていません。 SharePont 管理センターの [**検索スキーマの管理**] で [**管理プロパティ**] を見て、これを決定しました。
+KQL クエリが機能し、正しい保持ラベルを製品ドキュメント コンテンツに自動適用するために、クロールされたプロパティ **ows\_Doc\_x0020\_Type* および *ows\_\_Status** を 2 つの絞り込み可能な管理プロパティにマップします。 このシナリオのテスト環境では、**RefinableString00** と **RefinableString01** は使用されていません。 <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePont 管理センター</a>の [**検索スキーマの管理**] で [**管理プロパティ**] を見て、これを決定しました。
 
 [![検索スキーマの管理プロパティ。](../media/SPRetention12.png)](../media/SPRetention12.png#lightbox)
 
@@ -191,7 +193,7 @@ KQL クエリが機能し、正しい保持ラベルを製品ドキュメント 
 
 2. 結果一覧で、**RefinableString00** リンクを選択し、[**クロールされたプロパティへのマッピング**] セクションまで下にスクロールします。
 
-3. [**マッピングの追加**] を選択し、**_ows\_Doc\_x0020\_Type_*_ を [* クロールされたプロパティの選択**] ウィンドウの [_ **クロールされたプロパティ名の検索**] ボックスに入力します。 [**検索**] を選択します。
+3. [**マッピングの追加**] を選択し、**_ows\_Doc\_x0020\_Type_*_ を [**クロールされたプロパティの選択**] ウィンドウの _[* クロールされたプロパティ名の検索**] ボックスに入力します。[**検索**] を選択します。
 
 4. 結果リストで、**ows\_Doc\_x0020\_Type** を選択し、[**OK**] を選択します。
 
@@ -317,7 +319,7 @@ KQL クエリが機能していることを確認したので、KQL クエリを
 
 ### <a name="putting-it-all-together"></a>すべてをまとめる
 
-保持ラベルが作成されて自動適用され、フローが構成および作成されます。 [製品] リストの **[生産中]** 列の値が、**_[はい]_*_ から _*_[いいえ]_*_ に変更された場合は、フローがトリガーされてイベントが作成されます。コンプライアンス センターでこのイベントを確認するには、_*[レコード管理]** > **[イベント]** の順にアクセスしてください。
+保持ラベルが作成されて自動適用され、フローが構成および作成されます。[製品] リストの **[生産中]** 列の値が、**_[はい]_*_ から _*_[いいえ]_*_ に変更された場合は、フローがトリガーされてイベントが作成されます。コンプライアンス センターでこのイベントを確認するには、_*[レコード管理]** > **[イベント]** の順にアクセスしてください。
 
 [![コンプライアンス センターの [イベント] ページに表示されるフローによってトリガーされたイベント。](../media/SPRetention28.png)](../media/SPRetention28.png#lightbox)
 

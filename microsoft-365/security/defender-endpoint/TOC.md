@@ -196,7 +196,7 @@
 
 
 ### [ポータル設定を構成する]()
-#### [環境設定](preferences-setup.md)
+#### [Defender for Endpoint の一般的な設定を構成する](preferences-setup.md)
 #### [全般]()
 ##### [データの保管場所を確認し、データ保持設定を更新する](data-retention-settings.md)
 ##### [アラート通知を構成する](configure-email-notifications.md)
@@ -259,6 +259,12 @@
 #### [Corelight データ統合](corelight-integration.md)
 #### [デバイス検出に関する FAQ](device-discovery-faq.md)
 
+### [デバイス一覧]()
+#### [デバイス一覧](machines-view-overview.md)
+#### [デバイスを除外する](exclude-devices.md)
+#### [デバイス タイムライン イベント フラグ](device-timeline-event-flag.md)
+#### [デバイス グループとタグの管理](machine-tags.md)
+
 ### [ネットワークデバイス](network-devices.md)
 
 ### [Microsoft Defender for Endpoint でのホスト ファイアウォール レポート](host-firewall-reporting.md)
@@ -320,6 +326,7 @@
 #### [Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Microsoft Defender ウイルス対策のパフォーマンスの調整](tune-performance-defender-antivirus.md)
 #### [他のセキュリティ製品との互換性](microsoft-defender-antivirus-compatibility.md)
+#### [Microsoft Defender for Endpoint のマルウェア検出名を検索する](find-defender-malware-name.md)
 
 #### [ウイルス対策ソフトウェアとマルウェア対策の更新プログラムを取得する](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Microsoft Defender ウイルス対策更新プログラムのソースを管理する](manage-protection-updates-microsoft-defender-antivirus.md)
@@ -413,11 +420,6 @@
 ##### [ドメインの調査](investigate-domain.md)
 ###### [転送プロキシの背後で発生する接続イベントの調査](investigate-behind-proxy.md)
 ##### [ユーザー アカウントの調査](investigate-user.md)
-
-#### [デバイスの一覧]()
-##### [デバイスの一覧を表示および整理する](machines-view-overview.md)
-##### [デバイス タイムライン イベント フラグ](device-timeline-event-flag.md)
-##### [デバイス グループとタグの管理](machine-tags.md)
 
 #### [対応措置を講じる]()
 ##### [デバイスの対応措置を講じる]()
@@ -548,6 +550,12 @@
 ###### [IP]()
 ####### [IP 関連のアラートを取得する](get-ip-related-alerts.md)
 ####### [IP 統計を取得する](get-ip-statistics.md)
+
+###### [ライブ応答ライブラリ]()
+####### [ライブ応答ライブラリのメソッドとプロパティ](live-response-library-methods.md)
+####### [ライブラリ ファイルを一覧表示する](list-library-files.md)
+####### [ライブ応答ライブラリにアップロードする](upload-library.md)
+####### [ライブラリから削除する](delete-library.md)
 
 
 ###### [マシン]()

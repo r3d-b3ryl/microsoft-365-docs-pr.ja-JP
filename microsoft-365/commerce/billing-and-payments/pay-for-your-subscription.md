@@ -2,8 +2,8 @@
 title: サブスクリプションの支払い
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,19 +16,19 @@ ms.collection:
 search.appverid: MET150
 description: Microsoft 365 for business サブスクリプションのお支払いには、クレジット カード、デビット カード、銀行口座をご利用ください。場合によっては、請求書によるお支払いも可能です。
 ms.custom:
+- commerce_billing
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce_billing
 - business_assist
 - AdminTemplateSet
 ms.date: 10/28/2021
-ms.openlocfilehash: 839c7e94a2a89b20eef0779f44d864d69ed3a746
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fb6948c59505eaa3316dab73708658f7b31c43e7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766790"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326301"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>サブスクリプションの支払い方法
 
@@ -69,7 +69,7 @@ ms.locfileid: "62766790"
 >
 > もしくは、口座間の電子決済により支払いを行うこともできます。 銀行と口座番号は請求書の下部に記載されています。 振替 ID の欄に請求書番号を入力する必要があります。
 
-サブスクリプションを請求書でお支払いになる場合、請求明細書が閲覧できるようになったときにメールを受信します。 このメールには、請求明細書のコピーは含まれません。 ただし[組織の請求書をメールの添付ファイルとして受け取る](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)こともできます。 請求明細書には、支払いに関するオプションとその送付先の詳細が記載されています。 サブスクリプションを購入するときに発注書番号 (PO) を入力した場合、請求明細書にその番号が表示されます。 請求明細書へのアクセスの詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
+サブスクリプションを請求書でお支払いになる場合、請求明細書が閲覧できるようになったとき、通知メールが届きます。このメールには、請求明細書のコピーは含まれません。しかし、[組織の請求書をメールの添付ファイルとして受け取る](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)ことを選択することができます。請求明細書には、支払いに関するオプションとその送付先に関する詳細が記載されています。サブスクリプションを購入するときに発注書番号 (PO) を入力した場合、請求明細書にその番号が表示されます。請求明細書にアクセスする詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>未払額がある場合、どうなりますか。
 
@@ -86,7 +86,7 @@ ms.locfileid: "62766790"
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>小切手または EFT の送信はどこでできますか?
 
-お住まいの国または地域で利用できるお支払い方法については、[請求書をご確認ください](view-your-bill-or-invoice.md)。 未払い額がわからない場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[請求書と支払い]</a> ページの **[請求書]** タブで、請求書と請求履歴をオンラインで確認できます。
+お住まいの国または地域で利用できるお支払い方法については、[請求書をご確認ください](view-your-bill-or-invoice.md)。未払い額がわからない場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[請求書と支払い]</a> ページの **[請求書]** タブで、請求書と請求履歴をオンラインで確認できます。
 
 > [!NOTE]
 > - 小切手による支払いはいくつかの国のみで利用可能です。

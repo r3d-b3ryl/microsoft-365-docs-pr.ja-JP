@@ -2,8 +2,8 @@
 title: '手順 2: オンプレミスのアプリとサービスへのリモート アクセスを提供する'
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 クラウド サービスへのアクセスを最適化しながら、リモート ワーカーがオンプレミスのリソースにアクセスできることを確認します。
-ms.openlocfilehash: 11fb3e37efe67103780fc4d234837da3bc15d97f
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 6baaa8c4e3935676278ff411d0282b82143056fc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886302"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328653"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>手順 2: オンプレミスのアプリとサービスへのリモート アクセスを提供する
 
@@ -67,7 +67,7 @@ Microsoft 365 クラウドリソースへのアクセスを最適化するには
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>すべてのアプリが Web アプリであり、ハイブリッド ID がある場合にリモート アクセスを展開する
 
-リモート ワーカーが従来の VPN クライアントを使用しておらず、オンプレミスのユーザー アカウントとグループが Azure AD と同期している場合は、Azure AD アプリケーション プロキシを使用して、オンプレミスのサーバーでホストされている Web ベースのアプリケーションに対して安全なリモート アクセスを提供できます。 Web ベースのアプリケーションには、SharePoint Server サイト、Outlook Web Access サーバー、またはその他の Web ベースの基幹業務アプリケーションが含まれます。
+リモート ワーカーが従来の VPN クライアントを使用しておらず、オンプレミスのユーザー アカウントとグループが Azure AD と同期している場合は、Azure AD アプリケーション プロキシを使用して、オンプレミスのサーバーでホストされている Web ベースのアプリケーションに対して安全なリモート アクセスを提供できます。Web ベースのアプリケーションには、SharePoint Server サイト、Outlook Web Access サーバー、またはその他の Web ベースの基幹業務アプリケーションが含まれます。
 
 ここでは、Azure AD アプリケーション プロキシのコンポーネントを示します。
 
@@ -93,7 +93,7 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 
 ## <a name="deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>リモート ワーカーが個人用デバイスを使用してリモート アクセスできるように、Windows 365 を展開する
 
-個人用デバイスや管理されていないデバイスのみを使用できるリモート ワーカーをサポートするには、Windows 365 を使用して、ユーザーが自宅から使用する仮想デスクトップを作成して割り当てます。 オンプレミス ネットワーク接続 (OPNC) を使用すると、Windows 365 クラウド PC は、組織のネットワークに接続されている PC と同じように動作できます。
+個人用デバイスや管理されていないデバイスのみを使用できるリモート ワーカーをサポートするには、Windows 365 を使用して、ユーザーが自宅から使用する仮想デスクトップを作成して割り当てます。オンプレミス ネットワーク接続 (OPNC) を使用すると、Windows 365 クラウド PC は、組織のネットワークに接続されている PC と同じように動作できます。
 
 :::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-365.png" alt-text="Windows 365 のコンポーネント。" lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-365.png":::
 

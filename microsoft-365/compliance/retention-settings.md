@@ -1,24 +1,29 @@
 ---
 title: コンテンツを自動的に保持または削除するように保持設定を構成する
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - SPO_Content
+- M365-security-compliance
+- SPO_Content
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
+ms.openlocfilehash: decf8f53f30c7f29636e50900fe994aae25e6552
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326987"
 ---
-
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
@@ -56,7 +61,9 @@ description: 保持ポリシーまたは保持ラベル ポリシーで構成で
 |**SharePoint sites** - 適用対象:  <br/> - SharePoint サイト <br/> - OneDrive アカウント |サイトの URL <br/>サイト名 <br/> SharePoint カスタム プロパティ: RefinableString00 - RefinableString99 |
 |**Microsoft 365 Groups** - 適用対象:  <br/> - Microsoft 365 グループ <br/> - Teams チャネルのメッセージ <br/> - Yammer コミュニティのメッセージ |名前 <br/> 表示名 <br/> 説明 <br/> 電子メール アドレス <br/> Alias <br/> Exchange カスタム属性: CustomAttribute1 - CustomAttribute15 |
 
-サイトのプロパティ名は SharePoint サイトのマネージド プロパティに基づいており、ユーザーとグループの属性名は、Azure AD 属性にマップされる[フィルター可能な受信者プロパティ](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties)に基づいています。 例:
+サイトのプロパティ名は、SharePoint サイトで管理されているプロパティに基づいています。 カスタム属性の詳細については、「[カスタム SharePoint サイトプロパティを使用した Adaptive Policy Scope sでの Microsoft 365保持の適用](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970)」を参照してください。
+
+ユーザーとグループの属性名は、Azure AD 属性にマップされる[フィルター可能な受信者プロパティ](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties)に基づいています。次に例を示します。
 
 - **Alias** は LDAP 名 **mailNickname** にマップされ、Azure AD 管理センターで **Email** と表示されます。
 - **Email アドレス** は LDAP 名 **proxyAddresses** にマップされ、Azure AD 管理センターで **Proxy アドレス** として表示されます。
@@ -72,7 +79,9 @@ description: 保持ポリシーまたは保持ラベル ポリシーで構成で
 
 #### <a name="to-configure-an-adaptive-scope"></a>アダプティブ スコープを構成するには
 
-アダプティブ スコープを構成する前に、前のセクションを使用して、作成するスコープの種類と使用する属性と値を特定します。 他の管理者と協力してこの情報を確認し、SharePoint サイトの場合は、プロパティのインデックスが作成されていることを確認する必要がある場合があります。
+アダプティブ スコープを構成する前に、前のセクションを使用して、作成するスコープの種類と使用する属性と値を特定します。 この情報を確認するには、他の管理者と協力する必要がある場合があります。 
+
+特に SharePoint サイトの場合、[カスタム サイト プロパティ](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970)を使用する場合は、追加の SharePoint 構成が必要になることがあります。
 
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
     
@@ -82,7 +91,7 @@ description: 保持ポリシーまたは保持ラベル ポリシーで構成で
     - Information Governance ソリューションを使用している場合:
        - **[ソリューション]** > **[情報ガバナンス]** > **[アダプティブ スコープ]** タブ > + **「スコープの作成]**
     
-    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。 
+    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合は、まず、**[すべて表示]** を選択します。 
 
 2. 構成のプロンプトに従って、最初にスコープの種類を選択し、動的メンバーシップの構築に使用する属性またはプロパティを選択し、属性またはプロパティの値を入力します。
     
@@ -104,19 +113,31 @@ description: 保持ポリシーまたは保持ラベル ポリシーで構成で
     - **User** および **Microsoft 365 Group** スコープの場合は、[OPATH フィルタリング構文](/powershell/exchange/recipient-filters)を使用します。 たとえば、部署、国、州ごとにメンバーシップを定義するユーザー スコープを作成するには、次のようにします:
     
         ![高度なクエリを使用したアダプティブ スコープの例。](../media/example-adaptive-scope-advanced-query.png)
+        
+        これらの範囲に高度なクエリ ビルダーを使用する利点の 1 つは、クエリ演算子の選択肢が広いということです。
+        - **and**
+        - **or**
+        - **not**
+        - **eq** (等しい)
+        - **ne** (等しくない)
+        - **lt** (より小さい)
+        - **gt** (より大きい)
+        - **like** (文字列比較)
+        - **notlike** (文字列比較)
     
     - **SharePoint sites** スコープの場合は、キーワード クエリ言語 (KQL) を使用します。 KQL を使用してインデックス付きサイト プロパティを使用して SharePoint を検索する方法はすでにご存じかも知れません。 これらの KQL クエリを指定するには「[Keyword Query Language (KQL) 構文リファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
-    
-    高度なクエリ ビルダーを使用する利点の 1 つは、クエリ演算子の選択肢が広いということです。
-    - **and**
-    - **or**
-    - **not**
-    - **eq** (等しい)
-    - **ne** (等しくない)
-    - **lt** (より小さい)
-    - **gt** (より大きい)
-    - **like** (文字列比較
-    - **notlike** (文字列比較
+        
+        たとえば、SharePoint サイト範囲には、Microsoft 365 グループ接続サイトと OneDrive サイトを含むすべての SharePoint サイトの種類が自動的に含まれるため、インデックス付きサイト プロパティ **Site Template** を使用して、特定のサイトの種類を含めたり除外したりできます。 指定できるテンプレート:
+        - 最新のコミュニケーション サイト用の SITEPAGEPUBLISHING
+        - Microsoft 365 グループ接続サイト用の GROUP
+        - Microsoft Teams プライベート チャネル サイト用の TEAMCHANNEL
+        - 従来の SharePoint チーム サイト用の STS
+        - OneDrive サイト用の SPSPERS
+        
+        したがって、最新の通信サイトのみを含み、Microsoft 365 の goup 接続サイトと OneDrive サイトを除外するアダプティブ スコープを作成するには、次の KQL クエリを指定します。
+        ````console
+        SiteTemplate=SITEPAGEPUBLISHING
+        ````
     
     スコープ構成とは別に、[これらの高度なクエリを検証](#validating-advanced-queries)できます。
     
@@ -196,7 +217,7 @@ SharePoint 検索を使用してクエリを実行するには:
 
 Skype for Business を除き、既定では、選択した場所のすべてのインスタンスがポリシーに自動的に含まれます。インスタンスの包含を指定する必要はありません。
 
-たとえば、**Exchange email** の場所 **すべての受信者**。 この既定の設定では、既存のすべてのユーザー メールボックスがポリシーに含まれ、ポリシーの適用後に作成された新しいメールボックスは自動的にポリシーを継承します。
+たとえば、**Exchange email** の場所の **すべての受信者** です。この既定の設定では、既存のすべてのユーザー メールボックスがポリシーに含まれ、ポリシーの適用後に作成された新しいメールボックスは自動的にポリシーを継承します。
 
 #### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>特定の追加または除外を含むポリシー
 
@@ -207,9 +228,9 @@ Skype for Business を除き、既定では、選択した場所のすべての�
 > [!WARNING]
 > 含まれるインスタンスを構成してから最後のものを削除すると、その場所の構成は **All** に戻ります。  ポリシーを保存する前に、これが意図した構成であることをご確認ください。
 >
-> たとえば、データを削除するように設定されているアイテム保持ポリシーに含める SharePoint サイトを 1 つ指定していて、そのサイトを削除した場合、既定では、すべての SharePoint サイトがデータを完全に削除するアイテム保持ポリシーの対象となります。 Exchange 受信者、OneDrive アカウント、Teams チャット ユーザーなどに含むものにも同様に適用されます。
+> たとえば、データを削除するように設定されているアイテム保持ポリシーに含める SharePoint サイトを 1 つ指定していて、そのサイトを削除した場合、既定では、すべての SharePoint サイトがデータを完全に削除するアイテム保持ポリシーの対象となります。Exchange 受信者、OneDrive アカウント、Teams チャット ユーザーなどに含まれる内容にも同様に適用されます。
 >
-> このシナリオでは、その場所の **All** 設定をアイテム保持ポリシーの対象にしたくない場合、場所をオフに切り替えます。 あるいは、除外インスタンスをポリシーの適用から除外するように指定します。
+> このシナリオでは、その場所の **All** 設定をアイテム保持ポリシーの対象にしたくない場合、場所をオフに切り替えます。あるいは、ポリシーの適用からインスタンスを除外されるように指定することもできます。
 
 ## <a name="locations"></a>場所
 
@@ -290,7 +311,7 @@ Microsoft 365 グループ (以前の Office 365 グループ) のコンテン�
 
 機密情報の種類を使用する自動適用ポリシーを構成し、**Microsoft 365 グループ** の場所を選択する場合:
 
-- Microsoft 365 グループ メールボックスは含まれません。 これらのメールボックスをポリシーに含めるには、代わりに **Exchange メール** の場所を選択します。
+- Microsoft 365 グループのメールボックスは含まれていません。これらのメールボックスをポリシーに含めるには、代わりに **Exchange メール** の場所を選択します。
 
 #### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>ポリシーの適用後に Microsoft 365 グループが削除された場合の動作
 
@@ -372,9 +393,9 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
 > [!WARNING]
 > 含まれる内容を構成してから最後のものを削除すると、その場所の構成は **All** に戻ります。  ポリシーを保存する前に、これが意図した構成であることをご確認ください。
 >
-> たとえば、データを削除するように設定されているアイテム保持ポリシーに含める SharePoint サイトを 1 つ指定していて、そのサイトを削除した場合、既定では、すべての SharePoint サイトがデータを完全に削除するアイテム保持ポリシーの対象となります。 Exchange 受信者、OneDrive アカウント、Teams チャット ユーザーなどに含まれる内容にも同様に適用されます。
+> たとえば、データを削除するように設定されているアイテム保持ポリシーに含める SharePoint サイトを 1 つ指定していて、そのサイトを削除した場合、既定では、すべての SharePoint サイトがデータを完全に削除するアイテム保持ポリシーの対象となります。Exchange 受信者、OneDrive アカウント、Teams チャット ユーザーなどに含まれる内容にも同様に適用されます。
 >
-> このシナリオでは、その場所の **All** 設定をアイテム保持ポリシーの対象にしたくない場合、場所をオフに切り替えます。 あるいは、ポリシーの適用から除外されるように指定することもできます。
+> このシナリオでは、その場所の **All** 設定をアイテム保持ポリシーの対象にしたくない場合、場所をオフに切り替えます。あるいは、ポリシーの適用から除外されるように指定することもできます。
 
 ## <a name="updating-policies-for-retention"></a>保持ポリシーの更新
 
@@ -383,7 +404,7 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
 
 アイテム保持ポリシーを編集し、アイテムが既にアイテム保持ポリシーの元の設定の対象となっている場合、更新された設定は、新しく特定されたアイテムに加えて、このアイテムに自動的に適用されます。
 
-通常、この更新はかなり迅速ですが、数日かかる場合があります。 Microsoft 365 の場所間でのポリシーの複製が完了すると、Microsoft 365 コンプライアンス センターの保持ポリシーの状態が [**On (保留中)**] から [**オン (成功)**] に変わります。
+通常、この更新はかなり迅速ですが、数日かかる場合があります。Microsoft 365 の場所間でのポリシーの複製が完了すると、Microsoft 365 コンプライアンス センターのアイテム保持ポリシーの状態が [**オン (保留中)**] から [**オン (成功)**] に変わります。
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>変更を防止するためにポリシーをロックする
 
