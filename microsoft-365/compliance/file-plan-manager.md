@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイルプランでは、アイテム保持ラベルに高度な管理機能が提供されます。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 464cbe5af7ea08755ec3d49949d4707448566b27
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 2e028bae676b949c662a86178bac5e8ccdc557bf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241409"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317711"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>ファイル計画を使用して保持ラベルを作成および管理する
 
@@ -117,9 +117,9 @@ Microsoft 365 コンプライアンスセンターで、もしも既に **情報
 
 1. **[ファイル計画]** ページから、[**+ ラベルを作成する]** > **[保持ラベル]** を選択します。
 
-2. 指示に従って構成プロセスを実行します。
+2. 指示に従って構成プロセスを実行します。ラベルを保存すると変更できなくなるため、ラベルに選択する名前に注意してください。
     
-    
+    保持設定の詳細については、「[コンテンツを保持および削除するための設定](retention-settings.md#settings-for-retaining-and-deleting-content)」を参照してください。
     
     保持ラベルを使用してレコードを宣言するには、**アイテムをレコードとしてマーク**、または **アイテムを規制レコードとしてマーク** を選択します。 詳細については、「 [レコードを宣言するために保持ラベルを構成する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
 

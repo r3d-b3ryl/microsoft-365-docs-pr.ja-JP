@@ -34,6 +34,8 @@
           href: apply-a-retention-label-to-a-model.md
         - name: 秘密度ラベルを適用する
           href: apply-a-sensitivity-label-to-a-model.md
+        - name: ローカル モデルを作成する
+          href: create-local-model.md
         - name: モデルの利用分析
           href: model-usage-analytics.md
         - name: 抽出子の作成時に用語ストアの分類を活用する
@@ -60,6 +62,8 @@
       href: prebuilt-models.md
     - name: 保持ラベルを適用する
       href: apply-a-retention-label-to-a-model.md
+    - name: ローカル モデルを作成する
+      href: create-local-model.md
     - name: モデルの利用分析
       href: model-usage-analytics.md
 - name: コンテンツ アセンブリ
@@ -118,5 +122,9 @@
           href: solution-manage-contracts-step2.md
         - name: 手順 3. Power Automateを使用する
           href: solution-manage-contracts-step3.md
+    - name: 契約管理サイト テンプレート
+      href: use-contracts-management-site.md
+    - name: コンテンツ センター サイト テンプレート
+      href: use-content-center-site.md
 - name: 拡張性
   href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

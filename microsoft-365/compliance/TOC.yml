@@ -396,6 +396,8 @@
       items:
         - name: 秘密度ラベルの詳細
           href: sensitivity-labels.md
+        - name: Office アプリの MIP 組み込みラベル付けを選択する理由
+          href: sensitivity-labels-aip.md
         - name: 秘密度ラベルの概要
           href: get-started-with-sensitivity-labels.md
         - name: 秘密度ラベルを作成して発行する
@@ -410,6 +412,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: 秘密度ラベルで暗号化されたドキュメントの共同編集を有効にする
           href: sensitivity-labels-coauthoring.md
+        - name: 秘密度ラベルを使用して、既定の共有リンクの種類を設定する
+          href: sensitivity-labels-default-sharing-link.md
         - name: Office アプリで秘密度ラベルを管理する
           href: sensitivity-labels-office-apps.md
     - name: 暗号化
@@ -774,7 +778,7 @@
               href: export-a-content-search-report.md
             - name: スクリプトを使用して電子情報開示の保留リストにユーザーを追加する
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-            - name: 電子情報開示ケースの保留リストのレポートを作成する
+            - name: スクリプトを使用して保留レポートを作成する
               href: create-a-report-on-holds-in-ediscovery-cases.md
             - name: 検索結果のキーワード統計を表示する
               href: view-keyword-statistics-for-content-search.md
@@ -830,8 +834,15 @@
               href: manage-hold-notification.md
             - name: 保留通知を確認する
               href: acknowledge-hold-notification.md
+            - name: 通知責任者の管理
+              href: advanced-ediscovery-issuing-officers.md
+            - name: カストディアンの通信テンプレートを管理する
+              href: advanced-ediscovery-communications-library.md
         - name: 保留リストを管理する
           href: managing-holds.md
+          items:
+            - name: スクリプトを使用して保留レポートを作成する
+              href: create-a-report-on-holds-in-ediscovery-cases.md
         - name: 処理中のエラーを管理する
           href: processing-data-for-case.md
           items:
@@ -1036,8 +1047,10 @@
           href: compliance-manager-templates-format-excel.md
         - name: コンプライアンスマネージャーテンプレートの一覧
           href: compliance-manager-templates-list.md
-        - name: 改善アクションの割り当てと完了
+        - name: 改善のための処置の操作
           href: compliance-manager-improvement-actions.md
+        - name: アラート ポリシーを作成および管理する
+          href: compliance-manager-alert-policies.md
         - name: コンプライアンススコアの計算方法
           href: compliance-score-calculation.md
         - name: コンプライアンス構成アナライザー ツール

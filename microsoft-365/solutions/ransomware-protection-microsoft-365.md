@@ -1,9 +1,9 @@
 ---
 title: Microsoft 365 テナントにランサムウェア保護を展開する
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: ランサムウェア攻撃から Microsoft 365 リソースを保護する手順を説明します。
-ms.openlocfilehash: 634888ac603be17265733c4443a69495015296d7
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: c356a0e3fac83c77a7e1eb1eda6e169405f43863
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886038"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324411"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Microsoft 365 テナントにランサムウェア保護を展開する
 
@@ -145,7 +145,7 @@ Microsoft 365 テナント用にデプロイされたソリューションの 5 
 - **最低限の特権アクセスを使用する:** Just-In-Time および Just-Enough-Access (JIT/JEA)、リスクベースのアダプティブ ポリシー、データ保護を使用してユーザー アクセスを制限します。
 - **違反を想定する:** 影響範囲とセグメント アクセスを最小限に抑えます。 エンドツーエンドの暗号化を確認し、分析を使用して可視性を高め、脅威検出を推進し、防御を強化します。
 
-組織のファイアウォールの背後にあるすべてを信頼する従来のイントラネット アクセスとは異なり、ゼロ トラストは、組織のファイアウォールの背後またはインターネット上の各サインインとアクセスを、管理されていないネットワークからのもののように処理します。 ゼロ トラストでは、ネットワーク、インフラストラクチャ、ID、エンドポイント、アプリ、データを保護する必要があります。
+組織のファイアウォールの背後にあるすべてを信頼する従来のイントラネット アクセスとは異なり、ゼロ トラストは、組織のファイアウォールの背後またはインターネット上の各サインインとアクセスを、管理されていないネットワークからのもののように処理します。ゼロ トラストでは、ネットワーク、インフラストラクチャ、ID、エンドポイント、アプリ、データを保護する必要があります。
 
 ## <a name="microsoft-365-capabilities-and-features"></a>Microsoft 365 の機能と機能
 

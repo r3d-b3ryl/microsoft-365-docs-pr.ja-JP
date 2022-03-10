@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: この記事では、認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: 40bf61820f28656e6f038e76f066e9b122b30177
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ffe1219c468deef8c78e51e410e862ec52532483
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149636"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323837"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 
@@ -42,21 +43,19 @@ ms.locfileid: "60149636"
 
 組織全体で [すべてのユーザー] リンクの有効期限を設定するには
 
-1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
-2. 左側のナビゲーションで、**[ポリシー]** を展開し、**[共有]** をクリックします。
-3. **[[すべてのユーザー] リンクの有効期限とアクセス許可のオプションを選択する]** で、**[これらのリンクは、次の日数以内に期限切れにする必要があります]** チェック ボックスをオンにします。</br>
+1. SharePoint 管理センターを開き、[**ポリシー**] を展開してから、[<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共有**</a>] を選択します。
+1. **[[すべてのユーザー] リンクの有効期限とアクセス許可のオプションを選択する]** で、**[これらのリンクは、次の日数以内に期限切れにする必要があります]** チェック ボックスをオンにします。</br>
    ![SharePoint における組織レベルの [すべてのユーザー] リンクの有効期限設定のスクリーンショット。](../media/sharepoint-organization-anyone-link-expiration.png)
-4. このボックスに日数を入力し、**[保存]** をクリックします。
+1. このボックスに日数を入力し、**[保存]** をクリックします。
 
 特定のサイトで [すべてのユーザー] リンクの有効期限を設定するには
 
-1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
-2. 左側のナビゲーションで、**[サイト]** を展開し、**[アクティブなサイト]** をクリックします。
-3. 変更するサイトを選択し、**[共有]** をクリックします。
-4. **[[すべてのユーザー] リンクの詳細設定]** で、**[Expiration of Anyone links]** ([すべてのユーザー] リンクの有効期限) にある **[組織レベルの設定と同じ]** チェック ボックスをオフにします。</br>
+1. SharePoint 管理センターを開き、**[サイト]** を展開してから、<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**[アクティブなサイト]**</a> を選択します。
+1. 変更するサイトを選択してから、**[共有]** を選択します。
+1. **[[すべてのユーザー] リンクの詳細設定]** で、**[Expiration of Anyone links]** ([すべてのユーザー] リンクの有効期限) にある **[組織レベルの設定と同じ]** チェック ボックスをオフにします。</br>
    ![SharePoint におけるサイトレベルの [すべてのユーザー] リンクの有効期限設定のスクリーンショット。](../media/sharepoint-organization-anyone-link-expiration-site.png)
-5. **[これらのリンクは、次の日数以内に期限切れにする必要があります]** オプションを選択し、ボックスに日数を入力します。
-6. **[保存]** をクリックします。
+1. **[これらのリンクは、次の日数以内に期限切れにする必要があります]** オプションを選択し、ボックスに日数を入力します。
+1. **[保存]** を選択します。
 
 *[すべてのユーザー]* リンクの有効期限が切れても、新しい *[すべてのユーザー]* リンクを使用してファイルやフォルダーを再共有できることにご注意ください。
 
@@ -70,9 +69,8 @@ ms.locfileid: "60149636"
 
 組織全体で [すべてのユーザー] リンクのアクセス許可を設定するには
 
-1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
-2. 左側のナビゲーションで **[共有]** をクリックします。
-3. **[[すべてのユーザー] リンクの詳細設定]** で、使用するファイルとフォルダーのアクセス許可を選択します。</br>
+1. SharePoint 管理センターを開き、[<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共有**</a>] を選択します。
+1. **[[すべてのユーザー] リンクの詳細設定]** で、使用するファイルとフォルダーのアクセス許可を選択します。</br>
    ![SharePoint における組織レベルの [すべてのユーザー] リンクのアクセス許可設定のスクリーンショット。](../media/sharepoint-organization-anyone-link-permissions.png)
 
 *[すべてのユーザー]* リンクが **[表示]** に設定されていても、*[特定のユーザー]* リンクを使用することにより、ユーザーはファイルやフォルダーをゲストと共有して、ゲストに編集するアクセス許可を付与できます。 [特定のユーザー] リンクでは組織外のユーザーにゲストとしての認証が要求されるため、これらのリンクを使用して共有されているファイルやフォルダーに対するゲストのアクティビティを追跡および監査できます。
@@ -84,23 +82,22 @@ ms.locfileid: "60149636"
 既定のリンク設定を組織内のユーザーに対してのみ有効なリンクに変更することにより、このようなリスクを軽減できます。 認証されていない人と共有したいユーザーは、そのオプションを意図的に選択することが必要になります。
 
 組織の既定のファイルやフォルダーの共有リンクを設定するには
-1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
-2. 左側のナビゲーションで **[共有]** をクリックします。
-3. **[ファイルとフォルダーのリンク]** で、**[自分の組織内のユーザーのみ]** を選択します。
+1. SharePoint 管理センターを開き、[<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共有**</a>] を選択します。
+1. **[ファイルとフォルダーのリンク]** で、**[自分の組織内のユーザーのみ]** を選択します。
 
    ![SharePoint の既定のリンクの種類設定のスクリーンショット。](../media/sharepoint-default-sharing-link-company-link.png)
 
-4. **[保存]** をクリックします
+1. **[保存]** を選びます。
 
 特定のサイトの既定のファイルやフォルダーの共有リンクを設定するには
-1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
-2. 左側のナビゲーションで、**[サイト]** を展開し、**[アクティブなサイト]** をクリックします。
-3. 変更するサイトを選択し、**[共有]** をクリックします。
-4. **[既定の共有リンクの種類]** で、**[組織レベルの設定と同じ]** チェック ボックスをオフにします。
+
+1. SharePoint 管理センターを開き、**[サイト]** を展開してから、<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**[アクティブなサイト]**</a> を選択します。
+1. 変更するサイトを選択してから、**[共有]** を選択します。
+1. **[既定の共有リンクの種類]** で、**[組織レベルの設定と同じ]** チェック ボックスをオフにします。
 
    ![SharePoint のサイトレベルの既定のリンクの種類設定のスクリーンショット。](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
-5. **[組織内のユーザーのみ]** オプションを選択し、**[保存]** をクリックします。
+1. **[組織内のユーザーのみ]** オプションを選択してから、**[保存]** を選択します。
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>機密コンテンツの認証されていない共有を防止する
 
@@ -166,4 +163,4 @@ Microsoft 365 コンプライアンス管理センターで秘密度ラベルを
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](share-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有の環境を作成する](create-secure-guest-sharing-environment.md)
+[セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)

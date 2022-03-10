@@ -16,16 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Teams のゲストとのタスク、会話、ドキュメントの共同作業を行うためチームをセットアップするのに必要な Microsoft 365 の構成手順について説明します。
-ms.openlocfilehash: 4128f6cd5293972dd7383eed0802f7969f488d8a
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: bb6ccf4f3e17192d86675d99072eca8b836973e2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899644"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324551"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同作業する
 
@@ -110,10 +111,10 @@ Microsoft 365 グループのゲスト設定を行うには
 
 SharePoint 組織レベルの共有設定を設定するには
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の左側のナビゲーション ウィンドウの **[管理センター]** で、**[SharePoint]** をクリックします。
-2. SharePoint 管理センターの左側のナビゲーション ウィンドウで、**[ポリシー]** を展開し、**[共有]** をクリックします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の左側のナビゲーション ウィンドウの **[管理センター]** で、**[SharePoint]** を選択します。
+2. SharePoint 管理センターの左側のナビゲーション ウィンドウで、**[ポリシー]** を展開し、<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**[共有]**</a> を選択します。
 3. SharePoint の外部共有が **[全員]** または **[新規および既存のゲスト]** に設定されていることを確認します。
-4. 変更を加えた場合は、**[保存]** をクリックします。
+4. 変更した場合は、**[保存]** を選択します。
 
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 組織レベルの既定のリンク設定
@@ -133,9 +134,9 @@ SharePoint 組織レベルの共有設定を設定するには
 
 SharePoint 組織レベルの既定のリンク設定を設定するには
 
-1. SharePoint 管理センターの共有ページに移動します。
+1. SharePoint 管理センターの <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**[共有]**</a> に移動します。
 2. **ファイルとフォルダーのリンク** で、使用する既定の共有リンクを選択します。
-3. 変更を加えた場合は、**[保存]** をクリックします。
+3. 変更した場合は、**[保存]** を選択します。
 
 ## <a name="create-a-team"></a>チームの作成
 
@@ -158,11 +159,11 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 ![SharePoint サイトの外部共有設定のスクリーンショット。](../media/sharepoint-site-external-sharing-settings.png)
 
 サイトレベルの共有設定を設定するには
-1. SharePoint 管理センターの左側のナビゲーション ウィンドウで、[**サイト**] を展開して [**アクティブなサイト**] をクリックします。
+1. SharePoint 管理センターの左側のナビゲーション ウィンドウで、**[サイト]** を展開して <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**[アクティブなサイト]**</a> を選択します。
 2. 作成したチームのサイトを選択します。
-3. [...] をクリックして、**共有** を選択します。
+3. [...] を選択し、**[共有]** を選択します。
 4. 共有が **[全員]** または **[新規および既存のゲスト]** に設定されていることを確認します。
-5. 変更を加えた場合は、**[保存]** をクリックします。
+5. 変更した場合は、**[保存]** を選択します。
 
 ## <a name="invite-users"></a>ユーザーを招待する
 
