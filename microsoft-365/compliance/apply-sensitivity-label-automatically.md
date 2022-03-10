@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: f617338448b71541d5ab0d914ab1a3198d4f486c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ab47315fe56124f54b1404ceebc015a715eb74ee
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319653"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419320"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -315,7 +315,11 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
     ![自動ラベル付け構成の [場所の選択] ページ。](../media/locations-auto-labeling-wizard.png)
     
-    個々の OneDrive アカウントを指定するには、「[組織内のすべてのユーザーの OneDrive の URL 一覧を取得する](/onedrive/list-onedrive-urls)」を参照してください。
+    場所の詳細:
+    
+    - **Exchange** を選択し、組織外からの受信メールにラベルを付ける場合は、既定の [**すべて**] のままにする必要があります。 この構成のスコープを組織内の特定のユーザーに設定するには、次の手順で [**高度なルール**］選択します。 次に、特定の受信者を組織内に含めて、ユーザーのサブセットのスコープ要件を達成するように条件を構成します。
+    
+    - 個々の OneDrive アカウントを指定するには、「[組織内のすべてのユーザーの OneDrive の URL 一覧を取得する](/onedrive/list-onedrive-urls)」を参照してください。
 
 7. [**共通ルールまたは高度なルールの設定**] ページ: 既定の **共通ルール** を維持して、選択したすべての場所でラベルを付けるコンテンツを識別するルールを定義します。場所ごとに異なるルールが必要な場合は[**高度なルール**] を選択します。次に、[**次**]. を選択します。
 

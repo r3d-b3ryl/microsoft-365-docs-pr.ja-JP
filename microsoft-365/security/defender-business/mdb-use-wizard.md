@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 98660e437463a79ce263edd29f2cd01725d19762
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8c7100774057d399667a3176670a55d5b4479c73
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322927"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419031"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>ウィザードを使用して Microsoft Defender for Business をセットアップする
 
@@ -53,7 +53,7 @@ Microsoft Defender for Business は、初期セットアップと構成のため
 
 2. **デバイスのオンボードと構成Windowsします**。 この手順では、組織のデバイスを Defender for Business にWindowsオンボーディングできます。 デバイスのオンボードは、1 日目からデバイスを保護するのに役立ちます。 詳細については [、「オンボード デバイス to Microsoft Defender for Business」](mdb-onboard-devices.md) を参照してください。
 
-   - Microsoft Intune (Microsoft エンドポイント マネージャー の一部) を既に使用している場合に、組織に エンドポイント マネージャー に登録されているデバイスがある場合は、登録されている Windows デバイスの一部またはすべてに対して自動オンボーディングを使用するかどうかを確認するメッセージが表示されます。 自動オンボーディングは、エンドポイント マネージャーと Defender for Business の間の接続をセットアップし、Windowsデバイスを Defender for Business にシームレスにオンボードします。
+   - Microsoft Intune (Microsoft エンドポイント マネージャー の一部) を既に使用している場合に、組織に エンドポイント マネージャー に登録されているデバイスがある場合は、登録されている Windows デバイスの一部またはすべてに対して自動オンボーディングを使用[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)するかどうかを確認するメッセージが表示されます。 自動オンボーディングは、エンドポイント マネージャーと Defender for Business の間の接続をセットアップし、Windowsデバイスを Defender for Business にシームレスにオンボードします。
 
    - エンドポイント マネージャー をまだ使用していない場合、または Windows 以外のデバイスが エンドポイント マネージャー に登録されている場合は、手動で Defender for Business にデバイスをオンボードできます。 
    

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: d4e4f9baaf67b921358f17dae16908bcf9fed401
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: c12a0dbb56e81c6b2c6d7953cff77e367f2e435d
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818266"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419334"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップ スコア
 
@@ -41,7 +41,7 @@ Microsoft 365 Defender は、[Microsoft Defender for Endpoint](https://www.micro
 
 MITRE のテストアプローチの中心は、現実世界の攻撃をエミュレートして、ソリューションが十分に機能して、攻撃を検出し対応できるかどうかを理解することです。 テストがエンドポイントの検出と応答に重点を置いているのに対して、MITRE のシミュレートした APT29 攻撃は複数の攻撃ドメインにまたがり、単なるエンドポイント保護だけではなく、防御者の強化が行える機会を提供します。 Microsoft は、Microsoft 365 Defender によりエンドポイントを超えて可視性を拡張しました。
 
-- Microsoft 365 Defender の ATT&CK ベースの 評価 - 2020 年 5 月: [現実世界での検出において先導的立場](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
+- MICROSOFT 365 Defender の ATT&CK ベースの評価 - 2021 年 4 月: [評価は、Microsoft Defender for Endpoint がプラットフォーム間で高度な攻撃を停止したことを証明する](https://www.microsoft.com/security/blog/2021/04/21/)
 
  Microsoft 365 Defender は、攻撃チェーンのステージ全体で 100% 近くをカバーしました。 攻撃者のアクティビティに対して、先進的で実用的な可視性を提供しました。 可視性によって、特定の構成変更に依存していたセキュリティ運用センターおよびベンダー ソリューションの手動作業が大幅に削減されます。 また、Microsoft 365 Defender では、可視性のギャップ数が最も少なく、攻撃者が検出されないまま攻撃を行う能力が低下しました。
 
@@ -55,33 +55,33 @@ Microsoft Defender ウイルス対策は、現時点で最新の最も高度な�
 
 AV テスト製品のレビューと認定レポートは、3 つのカテゴリ (保護、パフォーマンス、ユーザビリティ) でテストされます。 次のスコアは、実際のテストと AV テスト参照セット ("流行しているマルウェア" と呼ばれます) の 2 つのスコアのある保護カテゴリを対象としています。
 
-- 2020 年 11 月から 12 月 AV テスト ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup>**最新**</sup>
+- 2021 年 11 月から 12 月の AV-TEST ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2021/microsoft-defender-antivirus-4.18-212622/)<sup>**最新**</sup>
 
-    Microsoft Defender ウイルス対策は、11 月と 12 月に 100% の完璧な保護スコア 6.0/6.0 を達成し、11,382 個のマルウェア サンプルを使用しました。
+    Microsoft Defender ウイルス対策 6.0/6.0 の完全な保護スコアを達成し、11 月と 12 月に 100% を達成しました。18,870 個のマルウェア サンプルが使用されました。
 
-- 2020 年 9 月から 10 月 AV テスト ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
+- 2021 年 9 月から 10 月の AV-TEST ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2021/microsoft-defender-antivirus-4.18-212518/)
 
-- 2020 年 7 月から 8 月 AV テスト ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/)
+- 2021 年 7 月から 8 月の AV-TEST ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2021/microsoft-defender-antivirus-4.18-212419/)
 
-- 2020 年 5 月～ 6 月 AV テスト ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
+- 2021 年 5 月から 6 月の AV-TEST ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2021/microsoft-defender-antivirus-4.18-212318/)
 
-- 2020 年 3 月～ 4 月 AV テスト ビジネス ユーザー テスト: [保護スコア 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
+- 2021 年 3 月から 4 月の AV-TEST ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2021/microsoft-defender-antivirus-4.18-212216/)
 
-- 2020 年 1 月～ 2 月 AV テスト ビジネス ユーザー テスト: [保護スコア 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) | [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
+- 2021 年 1 月から 2 月の AV-TEST ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2021/microsoft-defender-antivirus-4.18-212117/) | [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
 ### <a name="av-comparatives-protection-rating-of-998-in-the-latest-test"></a>AV 比較: 最新のテストでの 99.8% の保護率
 
 ビジネス セキュリティ テストは、次の 3 つの主要な部分で構成されています。オンライン マルウェア攻撃を模倣した実際の保護テスト、マルウェアがインターネットの外側 (USB など) からシステムに侵入するマルウェア保護テスト、およびシステムのパフォーマンスへの影響を確認するパフォーマンス テスト。
 
-- ビジネス セキュリティ テスト 2020 年 (8 月から 11 月): [実際の保護率 99.8%](https://www.av-comparatives.org/tests/business-security-test-2020-august-november/) <sup>**最新**</sup>
+- Business Security Test 2021 (2021 年 8 月から 11 月): [実世界の保護率 99.8%](https://www.av-comparatives.org/tests/business-security-test-2021-august-november/)<sup>**最新**</sup>
 
     Windows Defender ウイルス対策は、過去 1 年間の実際の保護率が一貫して高く、最新のテストで 99.8% を達成しています。
 
-- ビジネス セキュリティ テスト 2020 年 (3 月～ 6 月): [実際の保護率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
+- Business Security Test 2021 (3 月から 6 月): [の実世界保護率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2021-march-june/)
 
-- ビジネス セキュリティ テスト 2019 年 (8 月～ 11 月): [実際の保護率 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/)
+- Business Security Test 2020 (8 月から 11 月): [実世界保護率 99.8%](https://www.av-comparatives.org/tests/business-security-test-2020-august-november/)
 
-- ビジネス セキュリティ テスト 2019 年 (3月～ 6 月): [実際の保護率 99.9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
+- Business Security Test 2020 (2020 年 3 月から 6 月): [実世界の保護率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) | [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
 ### <a name="se-labs-aaa-award-in-the-latest-test"></a>SE ラボ: 最新のテストで AAA 受賞
 
@@ -110,14 +110,6 @@ SE ラボでは、製品やサービスで使用されている攻撃を検出�
 Microsoft Defender for Endpoint の [エンドポイント検出および対応](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)機能により、高度な攻撃をほぼリアルタイムで検出して対策が可能になりました。 セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。
 
 Microsoft Defender for Endpointの EDR およびエンドポイント保護機能は、業界のテストや出版物から良好な結果を受け取っています。 [SC ラボでは、2020 年 6 月にエンドポイント セキュリティ ツールを評価して、](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) Microsoft Defender for Endpointに対して [星 5 つのうち 5 ](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/)を与えました。 Microsoft Defender for Endpoint は、セキュリティ機能をフル セットで使用して最新の脅威環境から組織を保護する Microsoft Defender for Endpoint の能力を高く讃えました。 SC ラボでは、エンドポイント セキュリティ ソリューションは包括的で統合されたソリューションであると認識しました。 また、攻撃チェーンがソリューションで完全にカバーされるので、エンドポイント保護とエンドポイント検出と応答機能の統合についても高く評価しました。
-
-### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE: 業界をリードする光学および検知機能
-
-MITRE は、標的型攻撃グループ APT3 (Boron または UPS とも呼ばれます) でよく使われる技術を検出する製品の機能をテストしました。 検出機能を分離するために、すべての保護機能と防止機能が無効にされました。 Microsoft は、ATT&CK フレームワークに基づく MITRE 評価に登録した最初の EDR ベンダーの 1 つであることをうれしく思っています。 このフレームワークは、攻撃者の手法と戦術の最も包括的なカタログとして現在広く認められています。
-
-- Microsoft Defender for Endpoint のATT&CK ベースの評価 - 2018 年 12 月: [主要な光学と検出機能の](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/) | [分析](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
-
-    Microsoft Defender for Endpoint は、攻撃の連鎖全体にわたる攻撃者の手法に対して総合的にカバーしました。 そのハイライトには、テレメトリの幅、脅威インテリジェンスの強度、および機械学習、ヒューリスティック、動作監視による高度な自動検出などが含まれます。
 
 ## <a name="to-what-extent-are-tests-representative-of-protection-in-the-real-world"></a>テストはどの程度、実際の保護を表していますか?
 

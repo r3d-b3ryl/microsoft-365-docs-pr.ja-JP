@@ -14,13 +14,13 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-description: 組織で使用する方法に関するSharePoint Syntexを確認します。
-ms.openlocfilehash: 16688f08183e55c8e2f52cdbcd50919dff680c1b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 組織で使用する方法に関するビジネス シナリオSharePoint Syntex見つける。
+ms.openlocfilehash: fe4f72dc56014e5bc990e5ea39bd019785bd8572
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192057"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419087"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のシナリオとユース ケース
 
@@ -36,7 +36,7 @@ ms.locfileid: "60192057"
 
 ## <a name="scenario-track-data-from-invoices-with-form-processing"></a>シナリオ: フォーム処理を使用して請求書からデータを追跡する
 
-たとえば、請求書を追跡および監視するために、SharePoint Syntex機能Power Automateプロセスを設定できます。
+たとえば、請求書を追跡および監視するために、SharePoint SyntexおよびPower Automate機能を使用してプロセスを設定できます。
 
 1. 請求書ドキュメントを格納するライブラリを設定します。
 1. ドキュメント内のフィールドを認識するようにモデルをトレーニングします。
@@ -79,7 +79,7 @@ ms.locfileid: "60192057"
 - 会社のポリシーに準拠するために、領収書、契約などについて監査する。
 - コンプライアンスに必要なすべてのドキュメントがプロジェクトに含まれています。
 
-より良いガバナンスを必要とするドキュメントSharePoint Syntexフォームをキャプチャし、適切に分類、監査、フラグ付けするためのプロセスを設定します。 エンド ユーザーが手動でタグSharePoint Syntex、コンプライアンス チームがガバナンス ルールとアーカイブを手動で適用するのではなく、コンテンツを自動分類する方法を利用できます。 また、簡単な検索エクスペリエンスを有効にし、データボリュームを管理し、レコード管理と保持ポリシーを適用し、コンプライアンスを確保し、ベスト プラクティスのアーカイブと削除を行います。
+より良いガバナンスを必要とするドキュメントSharePoint Syntexフォームをキャプチャし、適切に分類、監査、フラグを設定するために、コンプライアンスに関するプロセスを設定します。 エンド ユーザーが手動でタグSharePoint Syntex、コンプライアンス チームがガバナンス ルールとアーカイブを手動で適用するのではなく、コンテンツを自動分類する方法を利用できます。 また、簡単な検索エクスペリエンスを有効にし、データボリュームを管理し、レコード管理と保持ポリシーを適用し、コンプライアンスを確保し、ベスト プラクティスのアーカイブと削除を行います。
 
 このシナリオを自動化すると、次のセキュリティを確保できます。
 
@@ -139,4 +139,4 @@ SharePoint Syntex契約情報のリマインダーと更新を自動化するの
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft SharePoint Syntex導入: 使い始める](adoption-getstarted.md)
+[Microsoft SharePoint Syntex導入: 開始する](adoption-getstarted.md)

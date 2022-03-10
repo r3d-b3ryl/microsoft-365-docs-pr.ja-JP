@@ -1,5 +1,5 @@
 ---
-title: SharePoint Syntex アクセシビリティ モード
+title: ユーザー補助モード (SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,17 +8,17 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
-description: ユーザー補助モードを使用してモデルをトレーニングする方法についてSharePoint Syntex。
-ms.openlocfilehash: 6a27615e0b676fdcefb617d76a206d9f47c6f882
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: ユーザー補助機能モードを使用して、ユーザー補助機能のトレーニングと操作を行う方法についてSharePoint Syntex。
+ms.openlocfilehash: 09fd16259a44a2aa4d1b82dca49fffa76065690b
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178997"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419059"
 ---
-# <a name="sharepoint-syntex-accessibility-mode"></a>SharePoint Syntex アクセシビリティ モード
+# <a name="accessibility-mode-in-sharepoint-syntex"></a>ユーザー補助モード (SharePoint Syntex
 
-この[SharePoint Syntex、](index.md)ユーザーはサンプル ドキュメントを操作するときに、モデル トレーニングのすべての段階 (ラベル、トレーニング、テスト) でアクセシビリティ モードを有効にできます。 アクセシビリティ モードを使用すると、ユーザーがドキュメント ビューアーで項目を移動およびラベル付けする場合に、ユーザーがキーボードのアクセシビリティを簡単に行えるのに役立ちます。
+この[SharePoint Syntex](index.md)、ユーザーはサンプル ドキュメントを操作するときに、モデル トレーニングのすべての段階 (ラベル、トレーニング、テスト) でアクセシビリティ モードを有効にできます。 アクセシビリティ モードを使用すると、ユーザーがドキュメント ビューアーで項目を移動およびラベル付けする場合に、ユーザーがキーボードのアクセシビリティを簡単に行えるのに役立ちます。
 
 これにより、ユーザーはキーボードを使用してドキュメント ビューアー内のテキスト内を移動したり、選択した値だけでなく、アクション (選択したテキストからのラベル付けや削除など) のナレーションや、追加のサンプル ドキュメントを使用してモデルをトレーニングする場合の予測ラベル値を聞くことができます。 
 
@@ -27,7 +27,7 @@ ms.locfileid: "60178997"
 
 ## <a name="requirements"></a>要件
 
-ナレーションの音声を聞く場合は、ナレーター アプリを[](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1)ナレーター設定でオンにWindows 10してください。
+ナレーションの音声を聞く場合は、ナレーターアプリをナ[](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1)レーター設定でオンWindows 10してください。
 
 ![ナレーターを有効にする。](../media/content-understanding/narrator-settings.png)
 

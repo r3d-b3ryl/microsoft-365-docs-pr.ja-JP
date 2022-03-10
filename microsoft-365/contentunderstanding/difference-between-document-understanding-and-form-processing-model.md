@@ -1,5 +1,5 @@
 ---
-title: ドキュメント理解とフォーム処理モデルの違い
+title: ドキュメントの理解モデルとフォーム処理モデルの違い
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
-ms.openlocfilehash: 8a97c4a2c03d95a5ba9724423a405cb49d4a90fe
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: 0605beb2b034343cc53e32058905870f75f811a4
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818518"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419292"
 ---
-# <a name="difference-between-document-understanding-and-form-processing-models"></a>ドキュメント理解とフォーム処理モデルの違い 
+# <a name="differences-between-document-understanding-and-form-processing-models"></a>ドキュメントの理解モデルとフォーム処理モデルの違い 
 
 Microsoft SharePoint Syntex のコンテンツを理解すると、SharePoint ドキュメントライブラリにアップロードされたドキュメントを識別および分類し、各ファイルから関連情報を抽出できます。  たとえば、ファイルが SharePoint ドキュメントライブラリにアップロードされると、*発注書* として識別されたすべてのファイルがそのように分類され、カスタム ドキュメント ライブラリ ビューに表示されます。 さらに、各ファイルから特定の情報 (*PO番号* や *合計* など) を取得して、ドキュメントライブラリビューの列として表示できます。 
 

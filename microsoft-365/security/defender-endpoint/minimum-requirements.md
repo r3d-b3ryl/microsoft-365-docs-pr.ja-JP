@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d4d76a45d69994c82c2027f57d5c3b045e82397
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 03ac5ed0d63fb88639e9b7e1b55987bf328476e1
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765062"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419073"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -63,7 +63,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
 ### <a name="supported-windows-versions"></a>サポート対象の Windows バージョン
 
-- Windows SP1 Enterprise ([サポートには ESU が必要](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)です)。
+- Windows 7 SP1 Enterprise ([サポートには ESU が必要](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)です)。
 - Windows 7 SP1 Pro ([サポートには ESU が必要](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)です)。
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
@@ -73,6 +73,11 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (以降)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise IoT
+
+    >[!NOTE]
+    >Windows 10 IoT Enterprise は Microsoft Defender for Endpoint でサポートされる OS であり、OEM/ODM が製品またはソリューションの一部として配布することができますが、ホスト ベースのインストール済みソフトウェアとサポート可能性に関する OEM/ODM のガイダンスに従う必要があります。
+
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
@@ -91,7 +96,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
 > コア: 最小 2、優先メモリ 4:最小 1 GB、4 優先
 
-サポートされているバージョンの Windows 10については、「(/windows/release-health/release-information)」を参照してください。
+サポートされるバージョンの詳細については、「Windows 10(/windows/release-health/release-information)」を参照してください。
 
 > [!NOTE]
 > モバイル バージョンのモバイル Windows (Windows CE、Windows 10 Mobileなど) はサポートされていません。
@@ -134,7 +139,7 @@ Microsoft Windows オペレーティング システムでコンポーネント�
 組織内のすべてのデバイスで診断データ サービスが有効になっているか確認します。
 既定では、このサービスは有効になっています。 センサー データを取得する方法を確認する方法をお試しください。
 
-#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>コマンド ラインを使用して、診断データ サービスWindowsの種類を確認する
+#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>コマンド ラインを使用して、診断データ サービスWindowsの種類を確認します。
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
@@ -150,7 +155,7 @@ Microsoft Windows オペレーティング システムでコンポーネント�
 
    ![diagtrack の sc クエリ コマンドの結果。](images/windefatp-sc-qc-diagtrack.png)
 
-サービスがユーザーに設定されていない場合は、サービスを自動的に開始START_TYPEする **必要AUTO_START**。
+サービスがユーザーに設定されていない場合は、サービス **を** 自動的に開始START_TYPE必要 **AUTO_START**。
 
 #### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>コマンド ラインを使用して、診断データ Windowsを自動的に開始する設定
 
@@ -182,7 +187,7 @@ Defender for Endpoint センサーは、1 日の平均帯域幅 5 MB を使用�
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender ウイルス対策構成要件
 
-Defender for Endpoint エージェントは、ファイルをMicrosoft Defender ウイルス対策情報を提供する機能に依存します。
+Defender for Endpoint エージェントは、ファイルをMicrosoft Defender ウイルス対策情報を提供する機能によって異なります。
 
 Defender for Endpoint デバイスでセキュリティ インテリジェンスの更新プログラムを構成Microsoft Defender ウイルス対策マルウェア対策が有効かどうかを指定します。 詳細については、「更新プログラムの[管理と基準Microsoft Defender ウイルス対策適用する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
 
