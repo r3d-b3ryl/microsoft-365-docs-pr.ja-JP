@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Microsoft 365 コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: 33c65cb61be14d72631fd3a272b68f2dad2ffea6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9361f7dea0e1b12d50733b9b1d1e91ac15577ab9
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204229"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400994"
 ---
 # <a name="search-for-and-delete-email-messages"></a>メール メッセージを検索して削除する
 
@@ -36,8 +36,8 @@ ms.locfileid: "60204229"
 
 - 機密データを含むメッセージ
 
-> [!CAUTION]
-> 検索と消去は、必要なアクセス許可が割り当てられていれば、誰でも組織のメールボックスからメール メッセージを削除できる強力な機能です。
+> [!TIP]
+> 組織に Office 365 プラン 2 の Defender サブスクリプションがある場合は、この記事で説明する手順に従うのではなく、[Office 365 で配信された悪意のあるメールの修復](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365)に関する手順を使用することをお勧めします。
 
 ## <a name="before-you-begin"></a>始める前に
 
