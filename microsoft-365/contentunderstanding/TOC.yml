@@ -40,7 +40,7 @@
           href: model-usage-analytics.md
         - name: 抽出子の作成時に用語ストアの分類を活用する
           href: leverage-term-store-taxonomy.md
-        - name: SharePoint Syntex アクセシビリティ モード
+        - name: アクセシビリティ モード
           href: accessibility-mode.md
     - name: フォーム処理
       items:

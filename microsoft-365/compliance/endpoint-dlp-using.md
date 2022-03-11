@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: 5fc271028e4c20d431c4535fcdbf902bf17cdbb4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cecd489aa5ceb5f0d5d233a4bf09caa24dee6f8b
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311845"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419157"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -168,7 +168,7 @@ Mac アプリの完全なパスを検索するには:
 
 #### <a name="unallowed-browsers"></a>許可されていないブラウザー
 
-Windows デバイスの場合、実行可能ファイル名で識別されるブラウザーを追加します。このブラウザーは、クラウド サービスへのアップロードの制限がブロックまたはブロックオーバーライドに設定されている、適用された DLP ポリシーの条件に一致するファイルへのアクセスがブロックされます。 これらのブラウザーがファイルへのアクセスをブロックされると、エンド ユーザーには、Microsoft Edgeを介してファイルを開くように求めるトースト通知が表示されます。
+Windows デバイスの場合、実行可能ファイル名で識別されるブラウザーを追加します。このブラウザーは、クラウド サービスへのアップロードの制限がブロックまたはブロックオーバーライドに設定されている、適用された DLP ポリシーの条件に一致するファイルへのアクセスがブロックされます。 これらのブラウザーがファイルへのアクセスをブロックされると、エンド ユーザーには、Microsoft Edgeを介してファイルを開くか、構成されている場合はカスタマイズされたメッセージを表示するように求めるトースト通知が表示されます。
 
 macOS デバイスの場合は、完全なファイル パスを追加する必要があります。 Mac アプリの完全なパスを検索するには:
 
