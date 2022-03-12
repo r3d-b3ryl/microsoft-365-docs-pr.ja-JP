@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 02/14/2022
 ms.technology: mde
-ms.openlocfilehash: 3e430d44789a1f3c43ec55a20ee7e06521f2dcaf
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 7342f368063c2c9024c4942c33a2e41f28eebd36
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807634"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449822"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>デバイス内の非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボードMicrosoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "62807634"
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **永続的な VDI の** - [永続的な VDI マシンを](configure-endpoints.md) Microsoft Defender for Endpoint にオンボーディングする方法は、デスクトップやラップトップなどの物理マシンをオンボードする場合と同じ方法で処理されます。 グループ ポリシー、Microsoft エンドポイント マネージャー、その他のメソッドを使用して、永続的なコンピューターをオンボードできます。 [ポータル] Microsoft 365 Defender (https://security.microsoft.com) [オンボーディング] で、優先するオンボーディング方法を選択し、その種類の指示に従います。 
+  > **永続的な VDI の** - [永続的な VDI マシンを](configure-endpoints.md) Microsoft Defender for Endpoint にオンボーディングする方法は、デスクトップやラップトップなどの物理マシンをオンボードする場合と同じ方法で処理されます。 グループ ポリシー、Microsoft エンドポイント マネージャー、その他のメソッドを使用して、永続的なコンピューターをオンボードできます。 [ポータル] Microsoft 365 Defender ( [https://security.microsoft.com)オンボーディング] で、優先するオンボーディング方法を選択し、その種類の指示に従います。 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
 
@@ -63,11 +63,14 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 > [!WARNING]
 > リソース構成が低い環境では、VDI ブート手順によって Defender for Endpoint センサーのオンボーディングが遅くなる可能性があります。
 
-### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>サーバー 11 Windows 10、Windowsサーバー 2019、Windowsサーバー 2022 Windowsの場合
+### <a name="for-windows-10-or-windows-11-or-windows-server-2012-r2-and-later"></a>11 Windows 10、Windows R2 以降Windows Server 2012の場合
 
-1.  サービス オンボーディング ウィザードから.zip *した VDI* 構成パッケージ (WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは、次のポータルから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderすることもできます</a>。
+> [!NOTE]
+> Windows Server 2016および Windows Server 2012 R2 は、この機能を動作するには、「[オンボード](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) Windows サーバー」の手順を使用してインストール パッケージを最初に適用して準備する必要があります。
 
-    1. ナビゲーション ウィンドウで、[**EndpointsDevice** >  >  managementOnboarding] 設定を > 選択します。
+1.  サービス オンボーディング ウィザードから.zipした VDI *構成パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは、次のポータルから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderすることもできます</a>。
+
+    1. ナビゲーション ウィンドウで、[**EndpointsDevice** >  **managementOnboarding**] **設定** > を > **選択します**。
 
     1. オペレーティング システムを選択します。
 
@@ -75,14 +78,14 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 
     1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
-2. .zip ファイルから抽出された WindowsDefenderATPOnboardingPackage フォルダーからパスの下のゴールデン/マスター イメージにファイルをコピーします `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`。
+2. .zip ファイルから抽出された WindowsDefenderATPOnboardingPackage フォルダーから、パスの下のゴールデン/マスター イメージにファイルをコピーします `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`。
     1. 各デバイスに複数のエントリ (セッションごとに 1 つ) を実装する場合は、WindowsDefenderATPOnboardingScript.cmd をコピーします。
-    2. デバイスごとに 1 つのエントリを実装する場合は、windowsDefenderATPOnboardingScript.cmd と windowsDefenderATPOnboardingScript.cmd の両方Onboard-NonPersistentMachine.ps1コピーします。
+    2. デバイスごとに 1 つのエントリを実装する場合は、Onboard-NonPersistentMachine.ps1 WindowsDefenderATPOnboardingScript.cmd の両方をコピーします。
 
     > [!NOTE]
     > フォルダーが表示しない場合は `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 、非表示になる可能性があります。 エクスプローラーから [非表示のファイル **とフォルダーを** 表示する] オプションを選択する必要があります。
 
-3. [ローカル グループ ポリシー エディター] ウィンドウを開き、[**コンピューターの構成]** \> **Windows 設定** \> **に移動** \> **します**。
+3. [ローカル グループ ポリシー エディター] ウィンドウを開き、[**コンピューター構成]** \>  \> Windows 設定 **に移動** \> **します**。
 
    > [!NOTE]
    > ドメイン グループ ポリシーは、永続的でない VDI デバイスのオンボーディングにも使用できます。
@@ -90,7 +93,7 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 4. 実装するメソッドに応じて、適切な手順に従います。
     - デバイスごとに 1 つのエントリの場合:
 
-         [**PowerShell スクリプト]** タブを選択し、[追加 **] をクリック** します (Windowsエクスプローラーは、以前にオンボーディング スクリプトをコピーしたパスで直接開きます)。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1`。 他のファイルは自動的にトリガーされますので、指定する必要はありません。
+         [**PowerShell スクリプト]** タブを選択し、[追加 **] をクリック** します (Windows、以前にオンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます)。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1`。 他のファイルは自動的にトリガーされますので、指定する必要はありません。
 
     - 各デバイスの複数のエントリの場合:
 
@@ -103,13 +106,16 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
    4. 別のユーザーと一緒にデバイスにログオンします。
    5. 実装するメソッドに応じて、適切な手順に従います。
       - デバイスごとに 1 つのエントリの場合: ポータルで 1 つのエントリMicrosoft 365 Defenderします。
-      - デバイスごとに複数のエントリの場合: ポータルで複数のエントリMicrosoft 365 Defenderします。
+      - デバイスごとに複数のエントリの場合: ポータルで複数のMicrosoft 365 Defenderします。
 
 6. [ナビゲーション **] ウィンドウの [** デバイス] リストをクリックします。
 
 7. デバイス名を入力して検索機能を使用し、[検索の種類として **デバイス]** を選択します。
 
-## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>ダウンレベル SKU の場合 (Windows Server 2008 R2/2012 R2/2016)
+## <a name="for-downlevel-skus-windows-server-2008-r2"></a>ダウンレベル SKU の場合 (Windows Server 2008 R2)
+
+> [!NOTE]
+> 他の Windows サーバー バージョンのこれらの手順は、MMA を必要とする以前の Microsoft Defender for Endpoint for Windows Server 2016 および Windows Server 2012 R2 を実行している場合にも適用されます。 新しい統合ソリューションに移行する手順については、 [Microsoft Defender for Endpoint のサーバー移行シナリオを参照してください](/microsoft-365/security/defender-endpoint/server-migration)。
 
 > [!NOTE]
 > 次のレジストリは、目的が "デバイスごとに 1 つのエントリ" を達成する場合にのみ関連します。
@@ -159,7 +165,7 @@ DISM コマンドとオフライン サービスの詳細については、以�
 
 3. 必要に応じてイメージをサービスします。
 
-4. 次のコマンドを PsExec.exe を使用して実行します ( https://download.sysinternals.com/files/PSTools.zip) 起動後にセンサーが蓄積した可能性があるサイバー フォルダーの内容をクリーンアップするためにダウンロードできます。
+4. 次のコマンドを PsExec.exe ( https://download.sysinternals.com/files/PSTools.zip) 起動後にセンサーが蓄積した可能性があるサイバー フォルダーの内容をクリーンアップするためにダウンロードできます) を使用して実行します。
 
     ```console
     PsExec.exe -s cmd.exe

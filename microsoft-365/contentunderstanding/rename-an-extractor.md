@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex で抽出子の名前を変更する方法および理由について説明します。
-ms.openlocfilehash: 0b5c52e00b287b6f4b41e7c8c3070261bccfda96
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 850359f71e7ca08b16265f93741ab2498e87d032
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195451"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450284"
 ---
 # <a name="rename-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex で抽出子の名前を変更する
 
@@ -37,15 +37,15 @@ ms.locfileid: "60195451"
 
 2. [**モデル**] ページの [**名前**] 列で、抽出子の名前を変更するモデルを選択します。
 
-3. [**エンティティ抽出**] で、名前を変更する抽出子の名前を選択し、[**名前の変更**] を選択します。</br>
+3. [**エンティティ抽出**] で、名前を変更する抽出子の名前を選択し、[**名前の変更**] を選択します。
 
-    ![[名前の変更] オプションが強調表示された状態で選択された抽出子を示す [エンティティ抽出] セクションのスクリーンショット。](../media/content-understanding/entity-extractor-rename.png) </br>
+    ![[名前の変更] オプションが強調表示された状態で選択された抽出子を示す [エンティティ抽出] セクションのスクリーンショット。](../media/content-understanding/entity-extractor-rename.png) 
 
 4. [**エンティティ抽出の名前の変更**] パネル上で: 
 
-   a. [**新しい名前**] で抽出子の新しい名前を入力します。</br>
+   a. [**新しい名前**] で抽出子の新しい名前を入力します。
 
-    ![[エンティティ抽出] パネルを示すスクリーンショット。](../media/content-understanding/rename-entity-extractor-panel.png) </br>
+    ![[エンティティ抽出] パネルを示すスクリーンショット。](../media/content-understanding/rename-entity-extractor-panel.png) 
 
    b. (省略可能)[**詳細設定**] で、既存のサイト列を関連付けるかどうかを選択します。
 

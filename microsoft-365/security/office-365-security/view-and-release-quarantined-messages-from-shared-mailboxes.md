@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: ユーザーは、アクセス許可を持つ共有メールボックスに送信された検疫済みメッセージを表示および処理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d9f83f176675be26fadf3d720dcc78e5146bde3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3f136f373fa63be7dab6cfbd63e44b33b4eca2ff
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324523"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450536"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>共有メールボックスから検疫済みメッセージを表示および解放する
 
@@ -45,10 +45,10 @@ ms.locfileid: "63324523"
 
 - 共有メールボックスの検疫操作について、入れ子になったセキュリティ グループを使用して共有メールボックスへのアクセスを許可する場合は、入れ子になったグループのレベルを 2 つ以下にすることをお勧めします。 たとえば、グループ A はグループ B のメンバーで、グループ C のメンバーです。共有メールボックスにアクセス許可を割り当てるには、ユーザーをグループ A に追加してから、グループ C を共有メールボックスに割り当てない。  
 
-- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーが _RecipientAddress_ パラメーターの値に対して共有メールボックスの電子メール アドレスを持つ [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) コマンドレットを使用してメッセージを識別する必要があります。 例:
+- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーが _RecipientAddress_ パラメーターの値に対して共有メールボックスの電子メール アドレスを持つ [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) コマンドレットを使用してメッセージを識別する必要があります。 次に例を示します。
 
   ```powershell
-  Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com
+  Get-QuarantineMessage -RecipientAddress officeparty@contoso.com
   ```
 
   次に、エンド ユーザーは、リストから検疫済みメッセージを選択して、表示またはアクションを実行できます。
@@ -56,9 +56,9 @@ ms.locfileid: "63324523"
   この例では、共有メールボックスに送信された検疫済みメッセージのすべてが表示され、リスト内の最初のメッセージが検疫から解放されます (リストの最初のメッセージは 0、2 番目は 1 など)。
 
   ```powershell
-  $SharedMessages = Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com | select -ExpandProperty Identity
+  $SharedMessages = Get-QuarantineMessage -RecipientAddress officeparty@contoso.com | select -ExpandProperty Identity
   $SharedMessages
-  Release-QuarantinedMessage -Identity $SharedMessages[0]
+  Release-QuarantineMessage -Identity $SharedMessages[0]
   ```
 
   構文およびパラメーターの詳細については、以下のトピックを参照してください。

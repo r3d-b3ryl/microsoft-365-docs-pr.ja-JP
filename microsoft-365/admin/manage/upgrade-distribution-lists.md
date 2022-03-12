@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: 1 つ以上の配布リストを Outlook の Microsoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: 7a6e0eff49958b99df9ca59702b814b364aefb46
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+description: 1 つ以上の配布リストを Microsoft 365 内の Outlook グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
+ms.openlocfilehash: 5394ce52f865d0b9a0383619cb11b9ebf3a94fc8
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612574"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449205"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook で配布リストを Microsoft 365 グループにアップグレードする
 
@@ -41,20 +41,20 @@ ms.locfileid: "61612574"
 
 ### <a name="use-the-new-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>新しい EAC を使用して、1 つ以上の配布リスト グループを、Microsoft 365グループにアップグレードOutlook
 
-1. [受信者グループ] のExchange管理センター>**移動** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">します</a>。
+1. 受信者グループの新Exchange管理センター>**移動** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">します</a>。
 
-2. [グループ] ページから、配布リスト グループ (配布 **グループとも呼** ばれる) を選択して、Microsoft 365グループ **にアップグレード** します。
+2. [グループ] ページから、グループにアップグレードする配布リスト グループ (配布 **グループとも呼** ばれる) Microsoft 365 **選択** します。
 
 3. ツール バー **から [アップグレード配布グループ** ] を選択します。
 
-4. [アップグレードの準備完了] ダイアログ ボックス **で、[アップグレード]** を **クリックします**。 プロセスがすぐに開始されます。 アップグレードする配布リスト グループのサイズと数に応じて、プロセスには数分または数時間かかる場合があります。
+4. [アップグレードの準備完了 **] ダイアログ ボックスで、[** アップグレード] を **クリックします**。 プロセスがすぐに開始されます。 アップグレードする配布リスト グループのサイズと数に応じて、プロセスには数分または数時間かかる場合があります。
 
 > [!NOTE]
-> 上部のバナーは、アップグレード (配布グループなど) がアップグレード *された状態を示します。変更を反映するには 5 分かかります。グループでMicrosoft 365して、アップグレードされた配布グループを確認します*。
+> 上部のバナーは、アップグレード (配布グループなど) がアップグレード *された状態を示します。変更を反映するには 5 分かかります。アップグレードされた配布Microsoft 365グループを表示するには、グループでフィルター処理します*。
 
 ### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>クラシック EAC を使用して、1 つ以上の配布リスト グループを、Microsoft 365グループにアップグレードOutlook
 
-1. [受信者グループ] Exchange管理センター>**移動** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**します**</a>。<br/>配布リスト (配布グループとも呼 **ばれる)** が存在し、配布グループにアップグレードする資格があるという通知Microsoft 365表示されます。<br/> ![[開始] ボタンを選択します。](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+1. [受信者グループ] Exchange管理センター>**移動** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**します**</a>。<br/>配布リスト (配布 **グループとも呼** ばれる) が存在し、配布グループにアップグレードする資格があるという通知がMicrosoft 365されます。<br/> ![[開始] ボタンを選択します。](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 1. [グループ] ページから 1 つ以上の配布リスト (配布 **グループ** とも呼ばれる) **を選択** します。<br/>![配布グループを選択します。](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "61612574"
 
 1 つ以上 **の対象配布** リストがアップグレードに失敗した場合、 
 
-1. この[スクリプト](https://aka.ms/DLToM365Group)を使用して、配布リストを Microsoft 365 グループにアップグレードしない可能性がある問題をスキャンし、スクリプトによって報告された問題を修正し、配布リストのアップグレードをもう 1 回試します。 
+1. この[スクリプト](https://aka.ms/DLToM365Group)を使用して、配布リストを Microsoft 365 グループにアップグレードしない可能性がある問題をスキャンし、スクリプトによって報告された問題を修正し、配布リストをもう一度アップグレードしてみてください。 
 
 2. 上記のスクリプトで問題が解決しない場合、または問題が解決しない場合は、サポート チケットを [開きます](../../business-video/get-help-support.md)。 問題を解決するために、この問題をグループ エンジニアリング チームにエスカレーションする必要があります。
 
@@ -109,7 +109,7 @@ Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
 <DL SMTP address3>, <DL SMTP address4>
 ```
 
-たとえば、SMTP アドレスを使用して 5 つの DLL をアップグレードする場合 `dl1@contoso.com` 、および `dl2@contoso.com` `dl3@contoso.com` 、 `dl4@contoso.com` `dl5@contoso.com` 次のコマンドを実行します。
+たとえば、SMTP アドレスを使用して 5 つの DLL `dl1@contoso.com` をアップグレードする場合、`dl2@contoso.com`および、 `dl4@contoso.com` `dl3@contoso.com``dl5@contoso.com`次のコマンドを実行します。
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
@@ -118,7 +118,7 @@ Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
 対象となるすべての DL をアップグレードするには、2 つの方法があります。
 
 > [!NOTE]
-> このUpgrade-DistributionGroupコマンドレットはパイプラインからデータを受け取らないので、"foreach-object" 演算子を使用して正常に {} 実行する必要があります。
+> このUpgrade-DistributionGroupコマンドレットはパイプラインからデータを受け取らないので、"foreach-object{}" 演算子を使用して正常に実行する必要があります。
 
 1. テナント内の適格な DLL を取得し、upgrade コマンドを使用してアップグレードします。
 
@@ -136,7 +136,7 @@ Get-DistributionGroup| Foreach-Object{
 }
 ```
 
-## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>配布リストのグループへのアップグレードに関する FAQ Microsoft 365のグループOutlook
+## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>配布リストを Microsoft 365 グループにアップグレードするOutlook
 
 ### <a name="which-distribution-lists-cant-be-upgraded"></a>アップグレードできない配布リスト
 
@@ -146,15 +146,15 @@ Get-DistributionGroup| Foreach-Object{
 |:-----|:-----|
 |オンプレミスで管理される配布リスト  <br/> |いいえ  <br/> |
 |入れ子になった配布リスト子グループがあるか、または別のグループのメンバーである配布リスト  <br/> |いいえ  <br/> |
-|**UserMailbox**、SharedMailbox **、TeamMailbox** **、MailUser** 以外のメンバー **RecipientTypeDetails** を持つ配布リスト  <br/> |いいえ  <br/> |
-|所有者が 100 人を超える配布リスト  <br/> |いいえ  <br/> |
-|メンバーのみを持ち、所有者がない配布リスト  <br/> |いいえ  <br/> |
+|**UserMailbox、SharedMailbox**、**TeamMailbox**、**MailUser** 以外のメンバー **RecipientTypeDetails** を持つ **配布** リスト  <br/> |不要  <br/> |
+|所有者が 100 人を超える配布リスト  <br/> |不要  <br/> |
+|メンバーのみを持ち、所有者がない配布リスト  <br/> |不要  <br/> |
 |特殊文字を含むエイリアスを含む配布リスト  <br/> |いいえ  <br/> |
 |配布リストが共有メールボックスの転送アドレスになるように構成されている場合  <br/> |いいえ  <br/> |
 |DL が別の DL の **送信者制限の一** 部である場合。  <br/> |いいえ  <br/> |
 |セキュリティ グループ  <br/> |いいえ  <br/> |
 |動的配布リスト  <br/> |いいえ  <br/> |
-|**RoomLists** に変換された配布リスト  <br/> |いいえ  <br/> |
+|**RoomLists** に変換された配布リスト  <br/> |不要  <br/> |
 
 ### <a name="check-which-dls-are-eligible-for-upgrade"></a>アップグレードの対象となる DLL を確認する
 
@@ -172,9 +172,9 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-an-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>連絡先カードに依然として配布リストが表示されるのはなぜでしょうか。 アップグレードされた配布リストが自動提案リストに表示されるのを防ぐには、どのような操作を行う必要がありますか?
 
-- [Outlook: 移行後に Microsoft 365 グループ名を入力して Outlook で電子メールを送信しようとすると、受信者はグループの代わりに配布リストとして解決されます。 受信者の連絡先カードは配布リストの連絡先カードとなります。 これは Outlook の受信者キャッシュまたはニックネーム キャッシュに起因します。 電子メールはグループに正常に送信されますが、送信者に混乱を招く可能性があります。<br/>この記事の手順を実行[できます。この](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list)問題を解決するキャッシュをリセットOutlookオートコンプリート リストに関する情報を参照してください。
+- [Outlook: 移行後に Microsoft 365 グループ名を入力して Outlook でメールを送信しようとすると、受信者はグループの代わりに配布リストとして解決されます。 受信者の連絡先カードは配布リストの連絡先カードとなります。 これは Outlook の受信者キャッシュまたはニックネーム キャッシュに起因します。 電子メールはグループに正常に送信されますが、送信者に混乱を招く可能性があります。<br/>この記事の手順を実行[できます。この](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list)問題を解決するキャッシュをリセットOutlookオートコンプリート の一覧に関する情報を参照してください。
 
-- [Outlook on the web: Outlook on the web場合、配布リストの受信者は引き続きキャッシュに残ります。 「自動完了リストから推奨[](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58)される名前または電子メール アドレスを削除する」の手順に従って、キャッシュを更新してグループ連絡先カードを表示できます。
+- [Outlook on the web: 配布リストOutlook on the web場合、配布リストの受信者はキャッシュに残ります。 「自動完了リストから推奨[](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58)される名前または電子メール アドレスを削除する」の手順に従って、キャッシュを更新してグループ連絡先カードを表示できます。
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新しいグループのメンバーは、受信トレイでウェルカム メッセージを受け取りますか?
 
@@ -186,7 +186,7 @@ DL が対象ですが、アップグレードできない場合もあります�
 
 - 管理者が組織内の **グループ** にグループ メール アドレス ポリシーを適用し、条件を満たしていない DLL をアップグレードしようとする場合、DL はアップグレードされません。
 
-- **MemberJoinRestriction** または **MemberDepartRestriction** が **Closed** に設定されている DLL をアップグレードできない
+- **MemberJoinRestriction** または **MemberDepartRestriction** が Closed に設定されている **DLL** をアップグレードできない
 
 - グループMicrosoft 365作成は、この記事の手順を使用して、少数のユーザーにのみ[許可されます](/microsoft-365/solutions/manage-creation-of-groups)。 このシナリオでは、配布リストの所有者が Microsoft 365 グループを作成できない場合、配布リストは Microsoft 365 グループにアップグレードされません。 回避策: 上記のシナリオでは、次のいずれかの回避策を使用します。
 1)  DL の所有者として言及されているすべてのユーザーが M365 グループの作成を許可されている、つまり M365 グループに許可されているセキュリティ グループのメンバーである必要があります。
@@ -197,8 +197,12 @@ DL が対象ですが、アップグレードできない場合もあります�
 
 呼び出しがサーバーに送信された場合にのみ、アップグレードが発生します。アップグレードが失敗した場合、配布リストはそのまま保持されます。配布リストは、以前のように動作します。
 
+### <a name="what-happens-to-message-approval-moderation-settings-on-distribution-groups-after-upgrading"></a>アップグレード後の配布グループのメッセージ承認 (モデレート) 設定は何が起こりますか?
+
+メッセージ承認 (モデレート) 設定は保持され、配布グループがグループにアップグレードされた後も引き続きMicrosoft 365されます。
+
 ## <a name="related-content"></a>関連コンテンツ
 
 [グループの比較](../create-groups/compare-groups.md) (記事)\
-[ユーザー Microsoft 365グループの説明](../create-groups/explain-groups-knowledge-worker.md)(記事)\
-[管理センターを使用して、Microsoft 365グループのメンバーを追加または削除する](../create-groups/add-or-remove-members-from-groups.md)
+[ユーザー Microsoft 365グループの説明](../create-groups/explain-groups-knowledge-worker.md) (記事)\
+[管理センターを使用してグループMicrosoft 365メンバーを追加または削除する](../create-groups/add-or-remove-members-from-groups.md)

@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f78f5e78067b3d8273d0ca9a3c7474eef66ed4fb
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 6fb3141b33948c5c452096c83a2f02657c199575
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301092"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450550"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Microsoft Defender for Endpoint (Linux) の更新をスケジュールする
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint on Linux で更新プログラムを実行するには [、「Deploy updates for Endpoint on Linux」を参照してください](/microsoft-365/security/defender-endpoint/linux-updates)。
+Microsoft Defender for Endpoint on Linux で更新プログラムを実行するには、「 [Deploy updates for Microsoft Defender for Endpoint on Linux」を参照してください](/microsoft-365/security/defender-endpoint/linux-updates)。
 
 Linux (および Unix) には、スケジュールされたタスクを実行できる **crontab** (タスク スケジューラと同様) というツールがあります。
 
@@ -53,7 +53,7 @@ sudo crontab -l > /var/tmp/cron_backup_201118.dat
 ```
 
 > [!NOTE]
-> ここで201118 == YYMMDD
+> ここで、201118 == YYMMDD
 
 > [!TIP]
 > 編集または削除する前に、この操作を行います。
@@ -79,7 +79,7 @@ And
 02**sat /bin/mdatp scan quick>~/mdatp_cron_job.log
 ```
 
-「Microsoft [Defender for Endpoint (Linux) でのスキャンのスケジュール設定」を参照してください。](linux-schedule-scan-mde.md)
+「 [Microsoft Defender for Endpoint (Linux) でのスキャンのスケジュール設定」を参照してください。](linux-schedule-scan-mde.md)
 
 "Insert" を押す
 
@@ -92,7 +92,7 @@ CRON_TZ=America/Los_Angeles
 > #<a name="rhel-and-variants-centos-and-oracle-linux"></a>!RHEL とバリアント (CentOS および Oracle Linux)
 >
 > ```bash
-> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp >> ~/mdatp_cron_job.log
+> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp -y >> ~/mdatp_cron_job.log
 > ```
 
 > #<a name="sles-and-variants"></a>!SLES とバリアント
@@ -108,11 +108,11 @@ CRON_TZ=America/Los_Angeles
 > ```
 
 > [!NOTE]
-> 上記の例では、00 分、24 時間形式の 6.m.(hour)、月の任意の日、任意の月、日曜日に設定しています。[$(date + \% d) -le 15] == 15 日 (3 週目) 以下の場合は実行されません。 つまり、月の第 3 日曜日(7) ごとに 6:00 に実行されます。 太平洋 (UTC -8)。
+> 上記の例では、00 分、24 時間形式の 6.m.(hour)、月の任意の日、任意の月、日曜日に設定しています。[$(date +\%d) -le 15] == 15 日 (3 週目) 以下の場合は実行されません。 つまり、月の第 3 日曜日(7) ごとに 6:00 に実行されます。 太平洋 (UTC -8)。
 
 "Esc" を押す
 
-二重引用符 `:wq` を付け、"" と入力します。
+二重引用符を`:wq`付け、"" と入力します。
 
 > [!NOTE]
 > w == 書き込み、q == quit
@@ -127,7 +127,7 @@ cron ジョブの実行を検査するには、次のコマンドを実行しま
 sudo grep mdatp /var/log/cron
 ```
 
-mdatp_cron_job.log を調するには
+mdatp_cron_job.log を検査するには
 
 ```bash
 sudo nano mdatp_cron_job.log
@@ -163,7 +163,7 @@ Puppet による自動化: Cron ジョブとスケジュールされたタスク
 
 詳細については、「<https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/>」を参照してください。
 
-## <a name="additional-information"></a>追加情報
+## <a name="additional-information"></a>ページの先頭へ
 
 ### <a name="to-get-help-with-crontab"></a>crontab のヘルプを表示するには
 

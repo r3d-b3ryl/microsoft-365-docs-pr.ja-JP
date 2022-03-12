@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2979216cb87982210ac33dd8e273702f8bc18bf0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5f0b846fdbfaa76250ae64ae281afc9592a24eb4
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328093"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450354"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsサービスへのオンボード サーバー
 
@@ -308,7 +308,7 @@ Msiexec /x md4ws.msi /quiet
 
 9. [ **OK] を選択** し、開いている GPMC ウィンドウを閉じます。
 
-10. GPO を組織単位 (OU) にリンクするには、右クリックして[既存の GPO のリンク **] を選択します**。 表示されるダイアログ ボックスで、リンクするグループ ポリシー オブジェクトを選択します。 **[OK]** をクリックします。
+10. GPO を組織単位 (OU) にリンクするには、右クリックして[既存の GPO のリンク **] を選択します**。 表示されるダイアログ ボックスで、リンクするグループ ポリシー オブジェクトを選択します。 [**OK**] をクリックします。
 
 その他の構成設定については、「サンプル コレクション設定 [の構成」および](configure-endpoints-gp.md#configure-sample-collection-settings) 「その他の推奨 [される構成設定」を参照してください](configure-endpoints-gp.md#other-recommended-configuration-settings)。
 
@@ -411,7 +411,7 @@ Windows Server 2012 クライアント デバイスで使用できるのと同�
 - Defender for Endpoint ワークスペース構成を削除する
 
 >[!NOTE]
->*他の Windows サーバー バージョンのこれらのオフボード手順は、MMA を必要とする Windows Server 2016 および Windows Server 2012 R2 用の以前の Microsoft Defender for Endpoint を実行している場合にも適用されます。 新しい未確認ソリューションに移行する手順は、 [Microsoft Defender for Endpoint のサーバー移行シナリオにあります](/microsoft-365/security/defender-endpoint/server-migration)。
+> mmA を必要とする Windows Server 2016 および Windows Server 2012 R2 用の以前の Microsoft Defender for Endpoint を実行している場合は、他の Windows サーバー バージョンに関するこれらのオフボード手順も適用されます。 新しい未確認ソリューションに移行する手順は、 [Microsoft Defender for Endpoint のサーバー移行シナリオにあります](/microsoft-365/security/defender-endpoint/server-migration)。
 
 ## <a name="related-topics"></a>関連項目
 

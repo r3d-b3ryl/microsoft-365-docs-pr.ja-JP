@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/02/2022
+ms.date: 03/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 8c7100774057d399667a3176670a55d5b4479c73
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 2cc157e363c42b94cac750b19a6122ed0a22c3de
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419031"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450760"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>ウィザードを使用して Microsoft Defender for Business をセットアップする
 
 > [!IMPORTANT]
-> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
+> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。[](../../business-premium/index.md) スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
@@ -55,7 +55,7 @@ Microsoft Defender for Business は、初期セットアップと構成のため
 
    - Microsoft Intune (Microsoft エンドポイント マネージャー の一部) を既に使用している場合に、組織に エンドポイント マネージャー に登録されているデバイスがある場合は、登録されている Windows デバイスの一部またはすべてに対して自動オンボーディングを使用[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)するかどうかを確認するメッセージが表示されます。 自動オンボーディングは、エンドポイント マネージャーと Defender for Business の間の接続をセットアップし、Windowsデバイスを Defender for Business にシームレスにオンボードします。
 
-   - エンドポイント マネージャー をまだ使用していない場合、または Windows 以外のデバイスが エンドポイント マネージャー に登録されている場合は、手動で Defender for Business にデバイスをオンボードできます。 
+   - エンドポイント マネージャー をまだ使用していない場合、または Windows 以外のデバイスが エンドポイント マネージャー に登録されている場合は、手動で Defender [for Business](mdb-onboard-devices.md#local-script-in-defender-for-business) にデバイスをオンボードできます。 
    
 3. **セキュリティ ポリシーを構成します**。 Defender for Business には、組織のデバイスに適用できる次世代保護とファイアウォール保護のための既定のセキュリティ ポリシーが含まれています。 これらの既定のポリシーは推奨設定を使用し、デバイスに強力な保護を提供するように設計されています。 
 

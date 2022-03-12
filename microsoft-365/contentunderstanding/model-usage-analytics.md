@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex での文書理解のモデル使用状況分析
+title: Microsoft Web サイトでのモデルの使い方をSharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: ドキュメント理解モデルの使用状況分析を検索して使用する方法について説明します。
-ms.openlocfilehash: 3dd77f760f70812045841ab56afbb13b02044d91
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: ドキュメントの理解とフォーム処理モデルの実行方法に関する詳細を確認する方法について学習します。
+ms.openlocfilehash: ddd4d602deae0fb871989e4739470a19b97b0238
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201759"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450522"
 ---
-# <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex での文書理解のモデル使用状況分析
+# <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Microsoft Web サイトでのモデルの使い方をSharePoint Syntex
 
 </br>
 

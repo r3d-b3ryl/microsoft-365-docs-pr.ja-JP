@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: decf8f53f30c7f29636e50900fe994aae25e6552
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2fd9f2655b13d8c9ac829108d3563a6a4322f3bc
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326987"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449247"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -127,7 +127,7 @@ ms.locfileid: "63326987"
     
     - **SharePoint sites** スコープの場合は、キーワード クエリ言語 (KQL) を使用します。 KQL を使用してインデックス付きサイト プロパティを使用して SharePoint を検索する方法はすでにご存じかも知れません。 これらの KQL クエリを指定するには「[Keyword Query Language (KQL) 構文リファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
         
-        たとえば、SharePoint サイト範囲には、Microsoft 365 グループ接続サイトと OneDrive サイトを含むすべての SharePoint サイトの種類が自動的に含まれるため、インデックス付きサイト プロパティ **Site Template** を使用して、特定のサイトの種類を含めたり除外したりできます。 指定できるテンプレート:
+        たとえば、SharePoint サイト範囲には、Microsoft 365 グループ接続サイトと OneDrive サイトを含むすべての SharePoint サイトの種類が自動的に含まれるため、インデックス付きサイト プロパティ **Site Template** を使用して、特定のサイトの種類を含めたり除外したりできます。指定できるテンプレートは次のとおりです:
         - 最新のコミュニケーション サイト用の SITEPAGEPUBLISHING
         - Microsoft 365 グループ接続サイト用の GROUP
         - Microsoft Teams プライベート チャネル サイト用の TEAMCHANNEL
@@ -367,6 +367,14 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
 保持期間の終了時にコンテンツを完全に削除するかどうかを選択します。
 
 ![[アイテム保持設定] ページ。](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+
+リテンション期間を構成する前に、まず、それぞれのワークロードの容量とストレージの制限について理解してください。
+
+- SharePoint と OneDrive の場合、保持されたアイテムはサイトのアイテム保管ライブラリに格納されます。このライブラリは、サイトのストレージ クォータに含まれます。 詳細については、SharePoint ドキュメントの「[管理サイトの記憶域の制限](/sharepoint/manage-site-collection-storage-limits)」を参照してください。
+
+- 保持されたメッセージがメールボックスに保存される Exchange、Teams、Yammer については「[Exchange Online の制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)」を参照し [auto-expanding archiving](autoexpanding-archiving.md) を有効にしてください。。
+    
+    ユーザーによって、またはポリシー設定から自動的に大量の電子メールが短時間で削除される極端なケースでは、ユーザーのプライマリ メールボックスの [回復可能なアイテム] フォルダーからアーカイブ メールボックスの [回復可能なアイテム] フォルダーにアイテムをより頻繁に移動するように Exchange を構成する必要がある場合もあります。 詳しい手順については、「[メールボックスの回復可能なアイテムクォータを保留にする](increase-the-recoverable-quota-for-mailboxes-on-hold.md)」を参照してください。
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>特定の経過時間を超えた古いコンテンツを削除する
 

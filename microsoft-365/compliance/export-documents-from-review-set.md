@@ -1,5 +1,5 @@
 ---
-title: レビューセットからドキュメントをエクスポートする
+title: レビュー セットからドキュメントをエクスポートする
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: プレゼンテーションまたは外部レビュー用のレビュー セットAdvanced eDiscoveryコンテンツを選択してエクスポートする方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6384d45121fc39d120d6906e46594b8b04124471
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 61de8fed9c5bcb00daf3a8273f3ebfc86fe75a35
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401064"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449458"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>[ドキュメント] のレビュー セットからドキュメントをエクスポートAdvanced eDiscovery
 
@@ -93,13 +93,16 @@ ms.locfileid: "63401064"
   
   - 警告とエラー x z.csv: このファイルには、レビュー セットからエクスポートしようとするときに発生したエラーに関する情報が含まれています。
   
-  - Exchange: このフォルダーには、PST ファイルにExchangeファイルからのすべてのコンテンツが含まれる。 このオプションには、編集された PDF ファイルを含めません。 レビュー セットで添付ファイルが選択されている場合、親メール メッセージは添付ファイルと一緒にエクスポートされます。 このフォルダーには、次の項目が含まれている場合があります。 
-
-    - デコードされた Information Rights Management (IRM) で保護されたメッセージ。 
-    - エラーが修復されたメッセージ。 
-    - メッセージで参照される最新の添付ファイルまたはリンク。 
+  - Exchange: このフォルダーには、PST ファイルにExchangeファイルからのすべてのコンテンツが含まれる。 このオプションには、編集した PDF ファイルを含めません。 レビュー セットで添付ファイルが選択されている場合、親メール メッセージは添付ファイルと一緒にエクスポートされます。
   
-  - SharePoint: このフォルダーには、ネイティブ ファイル形式でSharePointのすべてのネイティブ コンテンツが含まれる。 このオプションには、編集された PDF ファイルを含めません。
+    [Exchange] フォルダーには、次のアイテムを含む mailboxname_loosefiles.zip という名前のサブフォルダーが含まれている場合があります。
+
+    - デコードされた Information Rights Management (IRM) で保護されたメッセージ。
+    - エラーが修復されたメッセージ。
+    - メッセージで参照される最新の添付ファイルまたはリンク。
+    - 暗号化されたアイテム (このアイテムは、ファイル フォルダー内の PST ファイルにはExchangeされません)。
+  
+  - SharePoint: このフォルダーには、ネイティブ ファイル形式でSharePointのすべてのネイティブ コンテンツが含まれる。 このオプションには、編集した PDF ファイルを含めません。
 
 ### <a name="condensed-directory-structure"></a>ディレクトリ構造の要約
 
@@ -119,4 +122,4 @@ ms.locfileid: "63401064"
 
 ### <a name="condensed-directory-structure-exported-to-your-azure-storage-account"></a>アカウントにエクスポートされたディレクトリ構造をAzure Storageする
 
-このオプションは、*圧縮* ディレクトリ構造と同じ一般的な構造を使用しますが、コンテンツは圧縮され、データはユーザーのアカウントAzure Storageされます。 このオプションは、通常、サードパーティの電子情報開示プロバイダーを操作するときに使用されます。 このオプションの使い方の詳細については、「[レビュー](download-export-jobs.md) セット内のドキュメントを別のアカウントにエクスポートするAzure Storageしてください。
+このオプションは、*圧縮* ディレクトリ構造と同じ一般的な構造を使用しますが、コンテンツは圧縮されません。データはユーザーのアカウントAzure Storageされます。 このオプションは、通常、サードパーティの電子情報開示プロバイダーを操作するときに使用されます。 このオプションの使い方の詳細については、「[レビュー](download-export-jobs.md) セット内のドキュメントを別のアカウントにエクスポートするAzure Storageしてください。

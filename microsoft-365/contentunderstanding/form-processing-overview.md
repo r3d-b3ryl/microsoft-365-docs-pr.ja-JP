@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex でのフォーム処理について説明します。
-ms.openlocfilehash: 8079f12c3b05d62de95bcb08808d1acc931a37d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: AI ビルドを使用して Microsoft Web サイトでフォーム処理モデルを作成するSharePoint Syntex。
+ms.openlocfilehash: d04de2fc71b0b393e560e354253be42053725416
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189251"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450774"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でのフォーム処理の概要
 
@@ -37,11 +37,11 @@ AI Builder フォーム処理を使用して、機械学習テクノロジを使
 
 ![ドキュメント ライブラリ ビュー。](../media/content-understanding/doc-lib-done.png)</br>  
 
-サンプルファイルを使用してモデルをトレーニングし、フォームから抽出する情報を定義します。 文書のレイアウトは、モデルをトレーニングすることで学習されます。 開始するのに必要なフォーム ドキュメントは5つだけです。 AI Builderは、サンプル ファイルを分析してキーと値のペアを探します。また、検出されなかった可能性のあるファイルを手動で特定することもできます。  AI ビルダーを使用すると、サンプルファイルでモデルの精度をテストできます。
+サンプルファイルを使用してモデルをトレーニングし、フォームから抽出する情報を定義します。 文書のレイアウトは、モデルをトレーニングすることで学習されます。 開始するのに必要なフォーム ドキュメントは5つだけです。 AI ビルダーは、キーと値のペアについてサンプル ファイルを分析し、検出されていない可能性のあるファイルを手動で識別することもできます。  AI ビルダーを使用すると、サンプルファイルでモデルの精度をテストできます。
 
-モデルをトレーニングして公開すると、モデルは [Power Automate フロー](/power-automate/getting-started)を作成します。 フローは、ファイルが SharePoint ドキュメントライブラリにアップロードされたときに実行され、モデルで識別されたデータを抽出します。 抽出されたデータは、モデルのドキュメント ライブラリ ビューの列に表示されます。
+モデルをトレーニングして発行すると、モデルは新しいフロー Power Automate[します](/power-automate/getting-started)。 フローは、ファイルが SharePoint ドキュメントライブラリにアップロードされたときに実行され、モデルで識別されたデータを抽出します。 抽出されたデータは、モデルのドキュメント ライブラリ ビューの列に表示されます。
 
-Office 365 管理者 は、ユーザーが SharePoint ドキュメント ライブラリで[フォーム処理モデルを作成](create-a-form-processing-model.md)できるように、SharePoint ドキュメント ライブラリの[フォーム処理を有効にする](./set-up-content-understanding.md)必要があります。 セットアップ中、またはセットアップ後に管理設定でサイトを選択できます。
+管理者Office 365は、ユーザーがフォーム処理[](./set-up-content-understanding.md)モデルを作成するために、SharePoint ドキュメント ライブラリのフォーム処理[を有効にする](create-a-form-processing-model.md)必要があります。 セットアップ中、またはセットアップ後に管理設定でサイトを選択できます。
 
 ### <a name="file-limitations"></a>ファイルの制限事項
 

@@ -16,16 +16,16 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex に関するリソースの検索方法について説明します。
-ms.openlocfilehash: db8526cbf85be1b9db5b95ed0739d0ec948c2faa
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3b8c85cfd405e68884df844c502473cdd95a4fa5
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323165"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449430"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
-SharePoint Syntex は、次のような組織支援をする Microsoft 365 サービスです。
+SharePoint Syntexは、組織Microsoft 365に役立つサービスです。
 
 - 高度な AI および機械教育機能を使用して、人間の操作性を強化します
 - 自動コンテンツ処理
@@ -66,6 +66,8 @@ SharePoint Syntex は、次のような組織支援をする Microsoft 365 サ�
 |組織で SharePoint Syntex を使用する方法に関するアイデアを提供するシナリオの例を参照してください |[SharePoint Syntex のシナリオとユース ケース](./adoption-scenarios.md)| 
 |SharePoint Syntex の試用版パイロット プログラムを設定して実行する |[試用版を実行する](./trial-syntex.md)|
 |SharePoint Syntex を使用してドキュメント プロセスを自動化する方法について説明します |[Microsoft 365 ソリューションを使用して契約を管理する](./solution-manage-contracts-in-microsoft-365.md)| 
+|契約の管理に役立つSharePointカスタマイズ可能なサイト テンプレートを試す |[契約管理サイト テンプレートの使用](./use-contracts-management-site.md)| 
+|モデルの詳細については、コンテンツ センター サイト テンプレートの説明をご覧ください。 |[コンテンツ センター サイト テンプレートの使用](./use-content-center-site.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -76,6 +78,7 @@ SharePoint Syntex は、次のような組織支援をする Microsoft 365 サ�
 |SharePoint Syntex の設定と構成|[SharePoint Syntex の設定](./set-up-content-understanding.md)|
 |SharePoint Syntex のライセンスの詳細|[SharePoint Syntex のライセンス](./syntex-licensing.md)|
 |画像のタグ付けとを無効にする方法|[SharePoint Syntex での画像のタグ付け](./image-tagging.md)|
+|PowerShell を使用してデータを管理SharePoint Syntex|[PowerShell を使用して SharePoint Syntex を管理する](./powershell-syntex-intro.md)|
 
 ## <a name="models"></a>モデル
 

@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 267e293cf2a1d7b7755a58cddc7fb04af138e4ae
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e6ad964e250b9ae3bc01de02a4d51675beaf9c80
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329377"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449514"
 ---
 # <a name="get-started-using-the-microsoft-365-defender-portal"></a>ポータルの使用Microsoft 365 Defenderする
 
 > [!IMPORTANT]
-> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
+> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。[](../../business-premium/index.md) スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
@@ -57,7 +57,7 @@ Microsoft Defender for Business にサインアップした後は、ポータル
 
 画面の左側のナビゲーション バーを使用して、インシデントへのアクセス、レポートの表示、セキュリティ ポリシーの管理を行います。 次の表に、ナビゲーション バーに表示されるアイテムについて説明します。
 
-| 項目 | 説明 |
+| アイテム | 説明 |
 |:---|:---|
 | **ホーム** | ホーム ページに移動します。Microsoft 365 Defender。 ホーム ページには、検出されたアクティブな脅威を強調表示するカードと、組織のデータとデバイスのセキュリティ保護に役立つ推奨事項が含まれています。 <br/><br/>Defender for Business には推奨事項が含まれているので、セキュリティ チームの時間と労力を節約できます。 推奨事項は、業界のベスト プラクティスに基づいて行います。 推奨事項の詳細については、「セキュリティの推奨事項 - 脅威と脆弱性の管理」[を参照してください](../defender-endpoint/tvm-security-recommendation.md)。 |
 | **インシデント** | 最近のインシデントの一覧にアクセスします。 アラートがトリガーされると、インシデントが作成されます。 インシデントには、複数のアラートを含めできます。 インシデントを定期的に確認してください。 <br/><br/>インシデントの詳細については、「 [Microsoft Defender for Business でのインシデントの表示と管理」を参照してください](mdb-view-manage-incidents.md)。|

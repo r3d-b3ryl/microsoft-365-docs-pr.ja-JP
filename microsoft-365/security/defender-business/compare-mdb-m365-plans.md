@@ -17,17 +17,17 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 6d31f7ea4dcec4cc17eb182843b6aa4e9013542f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c7b7848eb9bd02c75304ffea4347beb19b873b3a
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329825"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449836"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Microsoft Defender for Business と Microsoft Defender を比較Microsoft 365 Business Premium
 
 > [!IMPORTANT]
-> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
+> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。[](../../business-premium/index.md) スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
@@ -81,18 +81,18 @@ Defender for Business は、Defender for Endpoint のエンタープライズ �
 | 機能/機能 | [Defender for Business](mdb-overview.md) (プレビュー) | [Defender for Endpoint プラン 1](../defender-endpoint/defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md) |
 |:---|:---|:---|
 | [集中管理](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup> | はい | はい | はい |
-| [簡略化されたクライアント構成](mdb-simplified-configuration.md) | はい | いいえ | いいえ |
-| [脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) | はい | いいえ | はい |
+| [簡略化されたクライアント構成](mdb-simplified-configuration.md) | はい | 不要 | 不要 |
+| [脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) | はい | 不要 | はい |
 | [攻撃表面の縮小機能](../defender-endpoint/overview-attack-surface-reduction.md) | はい | はい | はい |
 | [次世代の保護](../defender-endpoint/next-generation-protection.md) | はい | はい | はい |
 | [エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md) | は <sup>い [[2](#fn2)]</sup> | いいえ | はい |
-| [自動調査および対応](../defender-endpoint/automated-investigations.md) | は <sup>い [[2](#fn2)]</sup> | いいえ | はい |
-| [脅威の検出](../defender-endpoint/advanced-hunting-overview.md) と 6 か月間のデータ保持 | いいえ | いいえ | はい |
-| [脅威の分析](../defender-endpoint/threat-analytics.md) | は <sup>い [[2](#fn2)]</sup> | いいえ | はい |
+| [自動調査および対応](../defender-endpoint/automated-investigations.md) | は <sup>い [[2](#fn2)]</sup> | 不要 | はい |
+| [脅威の検出](../defender-endpoint/advanced-hunting-overview.md) と 6 か月間のデータ保持 | 不要 | 不要 | はい |
+| [脅威の分析](../defender-endpoint/threat-analytics.md) | は <sup>い [[2](#fn2)]</sup> | 不要 | はい |
 | [クロスプラットフォームのサポート](../defender-endpoint/minimum-requirements.md) <br/>(Windows macOS、iOS、Android OS) | は <sup>い [[3](#fn3)]</sup> | はい | はい |
-| [Microsoft 脅威エキスパート](../defender-endpoint/microsoft-threat-experts.md) | いいえ | いいえ | はい |
+| [Microsoft 脅威エキスパート](../defender-endpoint/microsoft-threat-experts.md) | 不要 | いいえ | はい |
 | パートナー API | はい | はい | はい |
-| [Microsoft 365 Lighthouse統合](../../lighthouse/m365-lighthouse-overview.md) <br/>(顧客テナント間でセキュリティ インシデントを表示する場合) | はい | いいえ | いいえ |
+| [Microsoft 365 Lighthouse統合](../../lighthouse/m365-lighthouse-overview.md) <br/>(顧客テナント間でセキュリティ インシデントを表示する場合) | はい | 不要 | いいえ |
 
 (<a id="fn1">1</a>) Microsoft 365 Defenderポータル () または別のツール ([https://security.microsoft.com](https://security.microsoft.com)など) でデバイスをオンボードMicrosoft エンドポイント マネージャー管理します[https://endpoint.microsoft.com](https://endpoint.microsoft.com)。
 

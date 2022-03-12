@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 コンプライアンス ソリューションでファイルが表示されます '
-ms.openlocfilehash: 7d8bc4dcb9d2852894ca838d88ae8ff2f5226298
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。ファイルは Microsoft 365 コンプライアンス ソリューションで表示されます '
+ms.openlocfilehash: 83608f005b9024583142515094b2d958b8f5d915
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271564"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450346"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
-Microsoft 365 のデータ損失防止 (DLP) を使用すると、機密があると判断されたアイテムに対して、発生しているアクションを監視し、それらのアイテムの意図しない共有を防ぐことができます。 DLP の詳細については、「[データ損失防止ポリシーについて](dlp-learn-about-dlp.md)」を参照してください。
+Microsoft 365 のデータ損失防止 (DLP) を使用すると、機密があると判断されたアイテムに対して、発生しているアクションを監視し、それらのアイテムの意図しない共有を防ぐことができます。DLPの詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。
 
 **エンドポイント データ損失防止** (Endpoint DLP) は、DLP のアクティビティ監視および保護能力を、Windows 10、Windows 11、および macOS (Catalina 10.15 以上) デバイスに物理的に保存される機密アイテムに拡張します。 デバイスが、 Microsoft 365 コンプライアンス ソリューションに オンボードすると、機密アイテムを使用してユーザーが行っていることに関する情報が[Activity Explorer](data-classification-activity-explorer.md)に表示され、[DLPポリシー](create-test-tune-dlp-policy.md)を通して、それらのアイテムに保護アクションを適用できます。
 
@@ -81,8 +81,33 @@ Microsoft Endpoint DLP を使用すると、ユーザーが物理的に Windows 
 > [!TIP]
 > サポートされているすべてのファイルの種類についてアクティビティが監査されるようにするには、[カスタム DLP ポリシー](create-test-tune-dlp-policy.md)を作成します。
 
-
 エンドポイント DLP は MIME の種類に基づいてアクティビティを監視するため、ファイルの拡張子が変更されてもアクティビティはキャプチャされます。
+
+### <a name="file-types-preview"></a>ファイルの種類 (プレビュー)
+
+ファイルの種類は、特定のワークフローまたはビジネス領域を保護するために使用されるファイル形式のグループです。 DLP ポリシーでは、1 つ以上のファイルの種類を条件として使用できます。
+
+|ファイルの種類 |アプリ  |監視対象のファイル拡張子  |
+|---------|---------|---------|
+|文書処理 |Word、PDF | .doc、.docx、.docm、.dot、.dotx、.dotm、.docb、.pdf |
+|スプレッドシート    |Excel、CSV、TSV |.xls、.xlsx、.xlt、.xlm、.xlsm、.xltx、.xltm、.xlsb、.xlw、.csv、.tsv         |
+|プレゼンテーション |PowerPoint|.ppt、.pptx、.pos、.pps、.pptm、.potx、.potm、.ppam、.ppsx|
+|アーカイブ  |ファイル アーカイブおよび圧縮ツール | .zip、.zipx、.dll、.7z、.tar、.gz        |
+|メール    |Outlook |.pst、.ost、.msg         |
+
+### <a name="file-extensions-preview"></a>ファイル拡張子 (プレビュー)
+
+ファイルの種類が、ポリシーの条件として一覧表示する必要があるファイル拡張子をカバーしていない場合は、代わりにコンマで区切られたファイル拡張子を使用できます。
+
+> [!IMPORTANT]
+> ファイル拡張子とファイルの種類のオプションは、同じ規則の条件として使用できません。 同じポリシーの条件として使用する場合は、個別のルールに含める必要があります。 
+
+> [!IMPORTANT]
+> これらの Windows バージョンでは、ファイルの種類とファイル拡張子の機能がサポートされています。
+>- Windows 10 バージョン 20H1/20H2/21H1 (KB 5006738)
+>- Windows 10 バージョン 19H1/19H2 (KB 5007189)
+>- Windows 10 RS5 (KB 5006744)
+
 
 ## <a name="whats-different-in-endpoint-dlp"></a>エンドポイント DLP との違い
 

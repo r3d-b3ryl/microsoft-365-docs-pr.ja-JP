@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e0e2490fb9026ff23e55990930ddedeb48144b92
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 882454e00517624c3bc43e87308007b00ece9507
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315975"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449744"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -87,6 +87,8 @@ ms.locfileid: "63315975"
 
   > [!NOTE]
   > これらの設定を編集できるのは、セキュリティ管理ロールまたはグローバル管理者ロールを持つユーザーのみです。
+  > 
+  > 自動調査は、ライブ応答を有効にする前に [高度な](advanced-features.md) 機能設定で有効にする必要があります。
 
 - **詳細設定ページ** (推奨) からサーバーのライブ応答を有効にします。
 

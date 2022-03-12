@@ -16,17 +16,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 7519e3b280b4415bb35237f922a2aa25d22b0c8f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4f92c50ad971de439541a7b8ea2e8f9fb5312c48
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323025"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449401"
 ---
 # <a name="get-microsoft-defender-for-business"></a>ビジネス向け Microsoft Defender を取得する
 
 > [!IMPORTANT]
-> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
+> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。[](../../business-premium/index.md) スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
@@ -59,7 +59,7 @@ Microsoft には、サービスを販売する権限を持つソリューショ�
 
 ## <a name="get-microsoft-365-business-premium"></a>Microsoft 365 Business Premium を取得する
 
-*2022 年 3 月 1 日から、Defender for Business は、2022* 年 3 月 1 日から、Microsoft 365 Business Premium。 
+*2022 年 3 月 1 日から、Defender for Business は、2022* 年 3 月 1 日にMicrosoft 365 Business Premium。 
 
 「[Try or buy Microsoft 365 Business Premium」を参照してください](../../business-premium/get-microsoft-365-business-premium.md)。
 
@@ -98,9 +98,9 @@ Microsoft には、サービスを販売する権限を持つソリューショ�
 
 試用版を開始する準備ができたら、2 つのメイン ポータルを使用して設定を行います。 次の表に、使用する 2 つのメイン ポータルの概要を示します。 <br/><br/>
 
-|portal  |説明  |
+|portal  |[説明]  |
 |---------|---------|
-| the Microsoft 365 管理センター ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | 試用版をMicrosoft 365 管理センターし、初めてサインインする場合は、このツールを使用します。<br/><br/> また、次のコマンドを使用Microsoft 365 管理センターします。 <br/>- ユーザーを追加または削除する<br/>- ユーザー ライセンスの割り当て<br/>- 製品とサービスを表示する<br/>- サブスクリプションのセットアップ タスクをMicrosoft 365する <br/><br/> 詳細については、「概要」[を参照Microsoft 365 管理センター](../../admin/admin-overview/admin-center-overview.md)。      |
+| the Microsoft 365 管理センター ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | 試用版をMicrosoft 365 管理センターし、初めてサインインするには、次の情報を使用します。<br/><br/> また、次のコマンドを使用Microsoft 365 管理センターします。 <br/>- ユーザーを追加または削除する<br/>- ユーザー ライセンスの割り当て<br/>- 製品とサービスを表示する<br/>- サブスクリプションのセットアップ タスクをMicrosoft 365する <br/><br/> 詳細については、「概要」[を参照Microsoft 365 管理センター](../../admin/admin-overview/admin-center-overview.md)。      |
 | ポータルMicrosoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Defender for Business をMicrosoft 365 Defender構成するには、このポータルを使用します。 <br/><br/>次の場合は、Microsoft 365 Defenderポータルを使用します。 <br/>- デバイスとデバイス保護ポリシーを表示する<br/>- 検出された脅威を表示し、アクションを実行する<br/>- セキュリティに関する推奨事項を表示し、セキュリティ設定を管理する <br/><br/>詳細については、「ポータルの使用を開始[する」をMicrosoft 365 Defenderしてください](mdb-get-started.md)。        |
 
 組織が組織で Microsoft 365 Business Premiumを使用している場合は、Microsoft Intune (Microsoft エンドポイント マネージャー の一部) を使用し、Microsoft エンドポイント マネージャー 管理センター () を使用している可能性があります[https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)。 エンドポイント マネージャーデバイスを管理し、セキュリティ設定を構成することもできます。 詳細については、「Microsoft Intune [MDM および MAM プロバイダー」を参照してください](/mem/intune/fundamentals/what-is-intune)。
