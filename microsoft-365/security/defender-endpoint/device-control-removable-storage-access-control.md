@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 03/09/2022
-ms.openlocfilehash: 9f323d902f0e421ea73303706e0785f9bd76f3ff
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: f696cd3631573bdb2206c665340f35601e4624ac
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63406065"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468986"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -253,7 +253,7 @@ Microsoft エンドポイント マネージャー センター (<https://endpoi
       `DefaultEnforcementDeny = 2`
 
     - この設定を展開すると、[既定の許可] または **[既定の拒否]** **が表示されます。**
-    - この設定を構成するときに、ディスク レベルとファイル システム レベルの両方の AccessMask を検討します。たとえば、Default Deny を使用するが、特定の記憶域を許可する場合は、ディスク レベルと Fiel システム レベルの両方のアクセスを許可する必要がある場合は、AccessMask を 63 に設定する必要があります。
+    - この設定を構成するときに、ディスク レベルとファイル システム レベルの両方の AccessMask を検討します。たとえば、Default Deny を使用するが、特定の記憶域を許可する場合は、ディスク レベルとファイル システム レベルの両方のアクセスを許可する必要がある場合は、AccessMask を 63 に設定する必要があります。
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="既定の強制 PowerShell コードを許可する":::
 
@@ -291,7 +291,7 @@ Microsoft エンドポイント マネージャー センター (<https://endpoi
 - Microsoft 365 E5 レポートの詳細
 
 ```kusto
-//events triggered by RemovableStoragePolicyTriggered
+//RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
 DeviceEvents
 | where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
@@ -311,6 +311,29 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
+```kusto
+//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
+DeviceEvents
+| where ActionType contains "RemovableStorageFileEvent"
+| extend parsed=parse_json(AdditionalFields)
+| extend Policy = tostring(parsed.Policy) 
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend MediaClassName = tostring(parsed.ClassName)
+| extend MediaInstanceId = tostring(parsed.InstanceId)
+| extend MediaName = tostring(parsed.MediaName)
+| extend MediaProductId = tostring(parsed.ProductId) 
+| extend MediaVendorId = tostring(parsed.VendorId) 
+| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
+    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
+    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
+    FileName, FolderPath, FileSize, FileEvidenceLocation,
+    AdditionalFields
+| order by Timestamp desc
+```
+    
 :::image type="content" source="images/block-removable-storage.png" alt-text="リムーバブル 記憶域のブロックを示す画面。":::
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問

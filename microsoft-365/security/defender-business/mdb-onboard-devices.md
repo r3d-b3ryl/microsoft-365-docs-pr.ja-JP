@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/10/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 545e0e3a12fda1c45bac27f9c71d4e465ca05b7e
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6b475a1f56f66c6ec9e1ed09b5311515c5eb31c8
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450606"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468696"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Microsoft Defender for Business にデバイスをオンボードする
 
@@ -57,11 +57,11 @@ Microsoft Defender for Business では、組織のデバイスをオンボーデ
 
 次の表では、デバイスを Defender for Business にオンボードするために最も一般的に使用される方法について説明します。 
 
-| オンボーディング方法  | [説明]  | OS |
+| オンボーディング方法  | 説明  | OS |
 |---------|---------|---------|
 | **自動オンボーディング**<br/>(*既にユーザーを使用しているMicrosoft エンドポイント マネージャー*) | *Microsoft 365 Business Premiumユーザーは既にMicrosoft Intune、このオプションを使用できます*。 自動オンボーディングは、Defender for Business と Microsoft エンドポイント マネージャー間の接続をセットアップし、Windows Defender for Business にデバイスをオンボードします。 このオプションを使用するには、デバイスが既にデバイスに登録されている必要エンドポイント マネージャー。<br/><br/>詳細については、「自動オンボーディング [」を参照してください](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)。 | Windows |
 | **ローカル スクリプト** <br/> | このオプションを使用すると、個々のデバイスを Defender for Business に手動でオンボードできます。 ローカル スクリプトを使用すると、一度に最大 10 台のデバイスをオンボードできます。<br/><br/>詳細については、「Defender [for Business のローカル スクリプト」を参照してください](#local-script-in-defender-for-business)。 | Windows <br/>macOS |
-| **Microsoft Intune** または **Microsoft エンドポイント マネージャー**<br/>(*ユーザーまたはユーザーが使用しているMicrosoft Intuneエンドポイント マネージャー*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)モバイル [デバイスの管理は](/mem/intune/enrollment/device-enrollment)、デバイスの一部エンドポイント マネージャー。 (Microsoft 365 Business Premiumユーザーが既にMicrosoft Intune。<br/><br/>Defender for Business を使用する前にエンドポイント マネージャーを使用していた場合は、デバイスのオンボードと管理にエンドポイント マネージャーを続行できます。<br/><br/>このメソッドを使用するには、「Microsoft エンドポイント マネージャー」 [を参照してください](#microsoft-endpoint-manager)。 | Windows <br/>macOS<br/>iOS<br/>Android OS | 
+| **Microsoft Intune** または **Microsoft エンドポイント マネージャー**<br/>(*ユーザーまたはユーザーが使用しているMicrosoft Intuneエンドポイント マネージャー*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)モバイル [デバイスの管理は](/mem/intune/enrollment/device-enrollment)、デバイスの一部エンドポイント マネージャー。 (Microsoft 365 Business Premiumユーザーが既にMicrosoft Intune。<br/><br/>Defender for Business を使用する前エンドポイント マネージャーを既に使用していた場合は、デバイスのオンボードと管理に エンドポイント マネージャーを引き続き使用することを選択できます。<br/><br/>このメソッドを使用するには、「Microsoft エンドポイント マネージャー」 [を参照してください](#microsoft-endpoint-manager)。 | Windows <br/>macOS<br/>iOS<br/>Android OS | 
 | **Microsoft Defender for Business セキュリティ構成** <br/>(*ポータルMicrosoft 365 Defender使用*) | このオプションを使用するには、特定の設定を構成して、Defender for Business とユーザー間の通信を容易エンドポイント マネージャー。 次に、各デバイスでダウンロードして実行するパッケージを使用して、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) のデバイスをオンボードします。 デバイスとデバイス間で信頼が確立Azure Active Directory (Azure AD)、Defender for Business セキュリティ ポリシーがデバイスにプッシュされます。<br/><br/>詳細については、「 [Microsoft Defender for Business セキュリティ構成」を参照してください](#microsoft-defender-for-business-security-configuration)。 | Windows <br/>macOS |
 
 > [!IMPORTANT]

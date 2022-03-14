@@ -17,18 +17,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ce5d8fcf693b6586c134b8fe2381d3881e68d9d3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 07cd42d1ab1c6b945525b1e9ed4b463ee76376e1
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767608"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468936"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender for Endpoint - Mobile Threat Defense
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -58,7 +59,7 @@ Android および iOS のエンドポイント向け Microsoft Defender には�
 
 ## <a name="overview-and-deploy"></a>概要と展開
 
-モバイルでの Microsoft Defender for Endpoint の展開は、MEM (Microsoft エンドポイント マネージャーを介して実行できます。 MTD の機能と展開の概要については、次のビデオをご覧ください。
+モバイルでの Microsoft Defender for Endpoint の展開は、MEM (Microsoft エンドポイント マネージャーを使用して行います。 MTD の機能と展開の概要については、次のビデオをご覧ください。
 
 <br/>
 
@@ -75,15 +76,15 @@ Android および iOS のエンドポイント向け Microsoft Defender には�
 |登録の種類     |詳細      |
 |--------------------|-------------|
 |Android Enterprise Intune Unified エンドポイント マネージャー (Microsoft エンドポイント マネージャー)|[登録済みデバイスEnterprise Android に展開する](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
-|Intune Unified エンドポイント マネージャー (Microsoft エンドポイント マネージャー) のデバイス管理者|[デバイス管理者が登録したデバイスに展開する](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
+|Intune Unified エンドポイント マネージャー デバイスMicrosoft エンドポイント マネージャー)|[デバイス管理者が登録したデバイスに展開する](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
 |他の統合エンドポイント マネージャーによって管理される管理されていない BYOD またはデバイス / セットアップ アプリ保護ポリシー (MAM)|[アプリ保護ポリシー (MAM) で Defender リスクシグナルを構成する](android-configure-mam.md)|
 
 **iOS**
 
 |登録の種類     |詳細      |
 |--------------------|-------------|
-|Intune Unified エンドポイント マネージャー の監視Microsoft エンドポイント マネージャー)|1. [iOS ストア アプリとして展開する](ios-install.md)<br/>2. [監視対象の iOS デバイス用に VPN を使用せずに Web 保護をセットアップする](ios-install.md#complete-deployment-for-supervised-devices)|
-|Intune UEM に登録されている未発行 (BYOD) デバイス (Microsoft エンドポイント マネージャー)|[iOS ストア アプリとして展開する](ios-install.md)|
+|Intune Unified エンドポイント マネージャー (Microsoft エンドポイント マネージャー) の監視対象デバイス|1. [iOS ストア アプリとして展開する](ios-install.md)<br/>2. [監視対象の iOS デバイス用に VPN を使用せずに Web 保護をセットアップする](ios-install.md#complete-deployment-for-supervised-devices)|
+|Intune UEM に登録されている未割り当て (BYOD) デバイス (Microsoft エンドポイント マネージャー)|[iOS ストア アプリとして展開する](ios-install.md)|
 |他の UEM によって管理される管理されていない BYOD またはデバイス / セットアップ アプリ保護ポリシー (MAM)|[アプリ保護ポリシー (MAM) で Defender リスクシグナルを構成する](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>エンド ユーザーのオンボーディング

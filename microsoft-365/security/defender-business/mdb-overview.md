@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/09/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 17f4ad39c89aa6990ec041e975a257fdab513d20
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6db82c1dcc9afceebcb9fff891cb90ddafa95f21
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450052"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468724"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Microsoft Defender for Business の概要
 
@@ -53,7 +53,7 @@ Defender for Business を使用すると、ビジネスで使用するデバイ�
 
 - **使いやすいセキュリティ ソリューション**。 Defender for Business は、エンドポイントのセキュリティに関する推奨事項と分析情報を基に行動を導く、合理化されたエクスペリエンスを提供します。 Defender for Business は、組織のデバイスを 1 日目から保護するために設計されたウィザード駆動型の構成と既定のセキュリティ ポリシーを提供していますので、専門的な知識は必要ありません。
 
-- **環境の柔軟性**。 ビジネス向け Defender は、Microsoft Cloud、オンプレミステクノロジ、または Microsoft 以外の生産性ソリューションを使用している場合でも、ビジネス環境で作業できます。 Defender for Business は、Windowsに組み込Windows macOS、iOS、および Android デバイス用のアプリで動作します。
+- **環境の柔軟性**。 ビジネス向け Defender は、ビジネス環境を使用している場合でも、Microsoft Cloud をMicrosoft Intuneでも、ビジネス環境で作業できます。 Defender for Business は、Windowsに組み込Windows macOS、iOS、および Android デバイス用のアプリで動作します。
 
 - **アプリケーションとのMicrosoft 365 Lighthouse**。 管理サービス プロバイダー (MSP) を使用している場合は、Microsoft 365 Lighthouse[](../../lighthouse/m365-lighthouse-overview.md)機能を利用できます。 顧客が Defender for Business とMicrosoft 365 Business Premiumを使用している場合は、セキュリティ インシデントとアラートを、ユーザーにオンボードされている顧客テナント間で表示Microsoft 365 Lighthouse。
 

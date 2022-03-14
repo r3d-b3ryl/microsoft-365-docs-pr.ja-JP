@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MET150
 description: 組織のコストを表示、分析、および管理するには、Microsoft 365 管理センターのコスト管理機能を使用する方法について説明します。
 ms.date: 03/09/2022
-ms.openlocfilehash: 0308b5f13d514bcd1f489508e1b95ac36f77040e
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 64531e7b7422c3267f053e1ef098a92bfe6bed28
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450875"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468750"
 ---
 # <a name="use-cost-management-in-the-microsoft-365-admin-center"></a>サーバーでコスト管理を使用Microsoft 365 管理センター
 
@@ -35,7 +35,7 @@ Microsoft Customer Agreement (MCA) を使用するグローバル管理者また
 
 ## <a name="what-is-cost-management"></a>コスト管理とは
 
-一般に、コスト管理は、組織の予算を計画および制御するために使用される方法です。 コスト管理機能Microsoft 365 管理センター、組織の資産を管理するために必要なコストとオーバーヘッドを削減するのに役立ちます。 この機能の一環として、Microsoft は、使用する料金のみを支払う、有料課金モデルを使用する新しい製品とサービスを導入しています。 新しいコスト管理機能を使用すると、次の場合に使用できます。
+コスト管理は、組織の予算を計画および制御するために使用される方法です。 Microsoft では、使用する料金のみを支払う有料課金モデルを使用する新しい製品とサービスが導入されています。 このMicrosoft 365 管理センター、コスト管理機能は、組織の資産を管理するために必要なコストとオーバーヘッドを削減し、移動時の変動費用を追跡するのに役立ちます。 以下のことも実行できます。
 
 - 月次請求書の生成に使用されるコストと使用状況データをダウンロードする
 - データ分析をコストに積極的に適用する

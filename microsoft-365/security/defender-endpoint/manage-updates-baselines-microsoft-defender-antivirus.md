@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/07/2022
+ms.date: 03/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e19b6400643b29005a6c92323f58f7dc996db49e
-ms.sourcegitcommit: ad6d9fd5ad050c72622a32a191997fe6d7b2deee
+ms.openlocfilehash: 2f6f2135e81bf99f6391b75067ad89d1af3a712c
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63353903"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468710"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新プログラムMicrosoft Defender ウイルス対策ベースラインの適用を管理する
 
@@ -42,7 +42,7 @@ ms.locfileid: "63353903"
 
 ## <a name="security-intelligence-updates"></a>セキュリティ インテリジェンスの更新プログラム
 
-Microsoft Defender ウイルス対策は、[クラウド](cloud-protection-microsoft-defender-antivirus.md)による保護 (Microsoft Advanced Protection Service または MAPS とも呼ばれる) を使用し、セキュリティ インテリジェンス更新プログラムを定期的にダウンロードして保護を提供します。
+Microsoft Defender ウイルス対策は、[クラウド](cloud-protection-microsoft-defender-antivirus.md)による保護 (Microsoft Advanced Protection Service または MAPS とも呼ばれる) を使用し、動的セキュリティ インテリジェンス更新プログラムを定期的にダウンロードして、追加の保護を提供します。 これらの動的更新プログラムは、セキュリティ インテリジェンス更新プログラム KB2267602 を介して、通常のセキュリティ インテリジェンス更新プログラムに取ってかかえって行う必要があります。
 
 > [!NOTE]
 > 更新プログラムは、次の KB の下でリリースされます。
@@ -649,7 +649,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 
 <br/>
@@ -664,7 +664,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -678,7 +678,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -692,7 +692,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -706,7 +706,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - ローカライズ ファイルに関する問題を修正しました
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -720,7 +720,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -734,7 +734,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -748,7 +748,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -762,7 +762,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -776,7 +776,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -790,7 +790,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -804,7 +804,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -818,7 +818,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -832,7 +832,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -846,7 +846,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -860,7 +860,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -874,7 +874,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - 更新されたMicrosoft Defender ウイルス対策署名
 <br/>
 </details><details>
@@ -888,7 +888,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし
 <br/>
 </details><details>
@@ -902,7 +902,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - RS1 以降の OS Windows 10インストール イメージのサポートが追加されました。
 <br/>
 </details>

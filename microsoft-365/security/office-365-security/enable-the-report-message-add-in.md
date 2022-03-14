@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: レポート メッセージまたはレポート フィッシング アドインを Outlook および Outlook on the web、個々のユーザー、または組織全体で有効にする方法について学習します。
+description: レポート メッセージまたはレポート フィッシング アドインを Outlook および Outlook on the web、個々のユーザー、または組織全体に対して有効にする方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7f2316cc787ede02644a48636a01b30458d7e349
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: dc4c03a0ed1f0a03d96776c841203c9131c3067c
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217796"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468882"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>メッセージのレポートまたはフィッシング アドインのレポートを有効にする
 
@@ -34,9 +34,9 @@ ms.locfileid: "61217796"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> 組織の管理者が Microsoft 365 メールボックスExchange Onlineしている場合は、Microsoft 365 Defender ポータルの [申請] ページを使用することをお勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
+> 組織の管理者が Microsoft 365 メールボックスExchange Onlineしている場合は、Microsoft 365 Defender ポータルで [申請] ページを使用することをお勧めします。 詳細については、「管理申請 [を使用して疑わしい](admin-submission.md)スパム、フィッシング、URL、ファイルを Microsoft に提出する」を参照してください。
 
-Outlook および Outlook on the web 用のレポート メッセージとレポートフィッシング アドイン (以前は Outlook Web App と呼ばれる) を使用すると、誤検知 (良い電子メールが悪いとマークされている) または誤検知 (悪いメールが許可されている) を Microsoft とその関連会社に簡単に報告して分析できます。
+Outlook および Outlook on the web (以前は Outlook Web App と呼ばれる) のレポート メッセージとレポートフィッシング アドインを使用すると、誤検知 (悪いマークが付いた良いメール) や誤検知 (悪いメールが許可されている) を Microsoft とその関連会社に簡単に報告して分析できます。
 
 Microsoft では、これらの申請を使用して、電子メール保護テクノロジの有効性を向上します。 たとえば、ユーザーがレポート フィッシング アドインを使用して多くのメッセージを報告するとします。 この情報は、セキュリティ ダッシュボードや他のレポートに表示されます。 組織のセキュリティ チームは、この情報をフィッシング対策ポリシーを更新する必要がある可能性を示す指標として使用できます。
 
@@ -52,14 +52,16 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- レポート メッセージ アドインとレポート フィッシング アドインの両方が、ほとんどのサブスクリプションおよびMicrosoft 365製品で動作します。
+- レポート メッセージ アドインとレポート フィッシング アドインの両方が、ほとんどのサブスクリプションとMicrosoft 365製品で動作します。
   - Outlook on the web
   - Outlook 2013 SP1 以降
   - Outlook 2016 for Mac
   - OutlookアプリにMicrosoft 365含まれているEnterprise
   - Outlook iOS と Android 用のアプリ
 
-- 両方のアドインは、オンプレミスおよび組織の共有メールボックスまたはメールボックスExchangeできません。
+- 両方のアドインは、共有メールボックスでは使用できません。
+
+- 両方のアドインは、オンプレミスおよびメールボックスExchangeできません。 
 
 - 既存の Web ブラウザーは、レポート メッセージ アドインとレポート フィッシング アドインの両方で動作する必要があります。ただし、アドインが使用できないか、期待通り動作していない場合は、別のブラウザーを試してください。
 
@@ -67,13 +69,13 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 - 管理者は、グローバル管理者役割グループのメンバーである必要があります。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-- レポート メッセージ機能を使用してメッセージを報告する方法の詳細については、「レポートで誤検知と誤検知を報告する」[を参照](report-false-positives-and-false-negatives.md)Outlook。
+- レポート メッセージ機能を使用してメッセージを報告する方法の詳細については、「Report false [positives and false negatives](report-false-positives-and-false-negatives.md) in Outlook。
 
-- URL フィルターまたはセキュリティ ソリューション (プロキシやファイアウォールなど) が実装されている組織では、HTTPS プロトコルで ipagave.azurewebsites.net エンドポイントと outlook.office.com エンドポイントにアクセスできる必要があります。
+- URL フィルターまたはセキュリティ ソリューション (プロキシやファイアウォールなど) が設定されている組織では、HTTPS プロトコルで ipagave.azurewebsites.net エンドポイントと outlook.office.com エンドポイントにアクセスできる必要があります。
 
 ### <a name="turn-off-the-built-in-reporting-experience"></a>組み込みのレポート エクスペリエンスをオフにする
 
-ユーザー申請ポリシーを使用できないので、Outlookの組み込みレポート エクスペリエンス[はお勧めしません](./user-submission.md)。 代わりに、レポート メッセージ アドインまたはレポート フィッシング アドインを使用することをお勧めします。
+ユーザー申請ポリシーを使用できないので、Outlookに組み込みのレポート エクスペリエンスをお[勧めしません](./user-submission.md)。 代わりに、レポート メッセージ アドインまたはレポート フィッシング アドインを使用することをお勧めします。
 
 このコマンドレットを実行する際には、あらかじめアクセス許可を割り当てる必要があります。 コマンドレットを組織内で実行するために必要になるアクセス許可とパラメーターを調べるには、「 [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions)」を参照してください。
 
@@ -87,13 +89,13 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 
 ### <a name="get-the-report-message-add-in-for-yourself"></a>自分でレポート メッセージ アドインを取得する
 
-1. [Microsoft AppSource] に移動し <https://appsource.microsoft.com/marketplace/apps> 、レポート メッセージ アドインを検索します。 レポート メッセージ アドインに直接移動するには、に移動します <https://appsource.microsoft.com/product/office/wa104381180> 。
+1. [Microsoft AppSource] に移動し <https://appsource.microsoft.com/marketplace/apps> 、レポート メッセージ アドインを検索します。 レポート メッセージ アドインに直接移動するには、に移動します <https://appsource.microsoft.com/product/office/wa104381180>。
 
 2. [今 **すぐ取得] をクリックします**。
 
    ![レポート メッセージ - 今すぐ取得します。](../../media/ReportMessageGETITNOW.png)
 
-3. 表示されるダイアログで、使用条件とプライバシー ポリシーを確認し、[続行] を **クリックします**。
+3. 表示されるダイアログで、利用規約とプライバシー ポリシーを確認し、[続行] をクリック **します**。
 
 4. 仕事用または学校用のアカウント (ビジネス用) または Microsoft アカウント (個人用) を使用してサインインします。
 
@@ -102,7 +104,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 - このOutlookアイコンは次のように表示されます。
 
     > [!div class="mx-imgBorder"]
-    > ![[レポート メッセージ] アドインのアイコン (Outlook)。](../../media/OutlookReportMessageIcon.png)
+    > ![[レポート メッセージ] アドイン アイコン (Outlook)。](../../media/OutlookReportMessageIcon.png)
 
 - このOutlook on the webアイコンは次のように表示されます。
 
@@ -114,12 +116,12 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 > [!NOTE]
 > アドインが組織に表示するには、最大で 12 時間かかる場合があります。
 
-1. [統合 [](https://admin.microsoft.com/AdminPortal/Home?#/homepage)Microsoft 365 管理センター] で、[統合 \> **設定] に移動します**。 [アプリ **の取得] をクリックします**。
+1. [統合 [Microsoft 365 管理センター](https://admin.microsoft.com/AdminPortal/Home?#/homepage)] で、[統合 **設定** \> **] に移動します**。 [アプリ **の取得] をクリックします**。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 365 管理センター統合アプリ](../../media/microsoft-365-admin-center-integrated-apps.png)
 
-2. 表示される **[Microsoft 365 Apps]** ページで、[検索] ボックスをクリックし、[レポート メッセージ] と入力し、[検索検索] アイコン **を** ![ クリックします ](../../media/search-icon.png) 。 結果の一覧で、[レポート メッセージ] を **見つけて選択します**。 
+2. 表示される **[Microsoft 365 Apps**] ページで、[検索] ボックスをクリックし、[レポート メッセージ] と入力し、[検索] アイコン **を**![クリックします](../../media/search-icon.png)。 結果の一覧で、[レポート メッセージ] を **見つけて選択します**。 
 
 3. アプリの詳細ページが開きます。 [今 **すぐ取得] を選択します**。 
 
@@ -144,7 +146,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
         > [!div class="mx-imgBorder"]
         > ![アプリのアクセス許可](../../media/microsoft-365-admin-center-deploy-new-app.png)
 
-     - **展開の終了**: アドインの展開を確認して終了します。 
+     - **展開の完了**: アドインの展開を確認して終了します。 
      - **展開が完了しました**: [ **完了] を選択** してセットアップを完了します。 
 
         > [!div class="mx-imgBorder"]
@@ -152,24 +154,24 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 
 ## <a name="edit-settings-for-the-report-message-add-in"></a>レポート メッセージ アドインの設定を編集する
 
-1. [統合Microsoft 365 管理センター] に移動 **設定** \> **します。** \. 次に、[レポート メッセージ] **アドインを** 見つけて選択します。
+1. [統合Microsoft 365 管理センター] に移動 **設定** \> **に移動します。** \. 次に、[レポート メッセージ] **アドインを** 見つけて選択します。
 
 2. 表示されるフライアウトで、[ユーザーの編集] **を選択して** ユーザー設定を編集します。
 
     > [!div class="mx-imgBorder"]
     > ![レポート メッセージの飛び出し](../../media/microsoft-365-admin-center-report-message-edit.png)
 
-3. アドインを削除するには、同じフライアウト **の [アクション** ] で **[アプリ** の削除] を選択します。 
+3. アドインを削除するには、同じフライアウト **の [アクション** ] **で [アプリ** の削除] を選択します。 
 
 ## <a name="get-the-report-phishing-add-in"></a>レポートフィッシング アドインを取得する
 
 ### <a name="get-the-report-phishing-add-in-for-yourself"></a>自分でレポートフィッシング アドインを取得する
 
-1. [Microsoft AppSource] に移動し、レポートフィッシング <https://appsource.microsoft.com/marketplace/apps> アドインを検索します。
+1. [Microsoft AppSource] に移動し <https://appsource.microsoft.com/marketplace/apps> 、レポートフィッシング アドインを検索します。
 
 2. [今 **すぐ取得] をクリックします**。
 
-3. 表示されるダイアログで、使用条件とプライバシー ポリシーを確認し、[続行] を **クリックします**。
+3. 表示されるダイアログで、利用規約とプライバシー ポリシーを確認し、[続行] をクリック **します**。
 
 4. 仕事用または学校用のアカウント (ビジネス用) または Microsoft アカウント (個人用) を使用してサインインします。
 
@@ -189,12 +191,12 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 > [!NOTE]
 > アドインが組織に表示するには、最大で 12 時間かかる場合があります。
 
-1. [統合 [](https://admin.microsoft.com/AdminPortal/Home?#/homepage)Microsoft 365 管理センター] で、[統合 \> **設定] に移動します**。 [アプリ **の取得] をクリックします**。
+1. [統合 [Microsoft 365 管理センター](https://admin.microsoft.com/AdminPortal/Home?#/homepage)] で、[統合 **設定** \> **] に移動します**。 [アプリ **の取得] をクリックします**。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 365 管理センター統合アプリ](../../media/microsoft-365-admin-center-integrated-apps.png)
 
-2. 表示される **[Microsoft 365 Apps]** ページで、[検索] ボックスをクリックし、[レポートフィッシング] と入力し、[検索検索] アイコン **を** ![ クリックします ](../../media/search-icon.png) 。 結果の一覧で、[フィッシングの報告] **を見つけて選択します**。 
+2. 表示される **[Microsoft 365 Apps**] ページで、[検索] ボックスをクリックし、[レポートフィッシング] と入力し、[検索検索] アイコン **を**![クリックします。](../../media/search-icon.png) 結果の一覧で、[フィッシングの報告] **を見つけて選択します**。 
  
 3. アプリの詳細ページが開きます。 [今 **すぐ取得] を選択します**。
 
@@ -204,11 +206,11 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 
 ## <a name="edit-settings-for-the-report-phishing-add-in"></a>レポートフィッシング アドインの設定を編集する
 
-1. [統合Microsoft 365 管理センター] に移動 **設定** \> **します。** \. 次に、[レポートフィッシング] **アドインを** 見つけて選択します。
+1. [統合Microsoft 365 管理センター] に移動 **設定** \> **に移動します。** \. 次に、[レポートフィッシング] **アドインを** 見つけて選択します。
 
 2. 表示されるフライアウトで、[ユーザーの編集] **を選択して** ユーザー設定を編集します。
 
     > [!div class="mx-imgBorder"]
     > ![レポート フィッシング フライアウト](../../media/microsoft-365-admin-center-report-phishing-edit.png)
 
-3. アドインを削除するには、同じフライアウト **の [アクション** ] で **[アプリ** の削除] を選択します。 
+3. アドインを削除するには、同じフライアウト **の [アクション** ] **で [アプリ** の削除] を選択します。 
