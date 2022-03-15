@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6b475a1f56f66c6ec9e1ed09b5311515c5eb31c8
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: c5de66418b242beb975cce0d6ece299753360c99
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468696"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504775"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Microsoft Defender for Business にデバイスをオンボードする
 
@@ -33,36 +33,44 @@ ms.locfileid: "63468696"
 
 Microsoft Defender for Business では、組織のデバイスをオンボーディングするためのオプションを複数選択できます。 この記事では、オプションについて説明し、オンボーディングのしくみの概要について説明します。
 
-## <a name="what-to-do"></a>操作
-
-1. オンボード デバイスのオプション [を確認し](#device-onboarding-methods)、次のいずれかの方法を選択します。 
-
-   - [デバイスに登録Windowsデバイスの自動オンボーディングMicrosoft エンドポイント マネージャー](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
-   - [ローカル デバイスと Mac Windowsローカル スクリプト](#local-script-in-defender-for-business)
-   - [Microsoft エンドポイント マネージャー (Microsoft Intune)](#microsoft-endpoint-manager)
-   - [Microsoft Defender for Business セキュリティ構成](#microsoft-defender-for-business-security-configuration)
-
-2. [新しくオンボードされたデバイス](#run-a-detection-test)の検出テストをWindowsします。
-
-3. [次の手順を参照してください](#next-steps)。 
-
-この記事には、デバイス[の検出テスト](#run-a-detection-test)の実行とデバイスWindowsボードに関[する情報も含まれています](#offboarding-a-device)。
-
 >
 > **少し時間ありますか?**
 > <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
 >
 
+## <a name="get-the-device-onboarding-guide"></a>デバイスオンボーディング ガイドの取得
+
+次のガイドと情報を使用して、組織に最適なオプションを選択します。
+
+[:::image type="content" source="media/mdb-device-onboarding.png" alt-text="デバイスオンボーディング図のスクリーンショット":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
+[PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
+
+## <a name="what-to-do"></a>操作
+
+1. [オンボーディング デバイスのオプションを確認し](#device-onboarding-methods)、方法を選択します。 
+
+   - [デバイスに既に登録されているデバイスWindows自動オンボーディングを使用Microsoft エンドポイント マネージャー](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
+   - [ローカル スクリプトを使用して、Windowsまたは macOS デバイスをオンボードする](#local-script-in-defender-for-business)
+   - [モバイル Microsoft エンドポイント マネージャー、macOS、Windowsデバイスのオンボードに使用する](#microsoft-endpoint-manager)
+   - [Microsoft Defender for Business セキュリティ構成を使用したデバイスオンボーディングの詳細](#microsoft-defender-for-business-security-configuration)
+
+2. [新しくオンボードされたデバイス](#run-a-detection-test)で検出テストをWindowsします。
+
+3. [次の手順を参照してください](#next-steps)。 
+
+この記事には、デバイスの [オフボードに関する情報も含まれています](#offboarding-a-device)。
+
 ## <a name="device-onboarding-methods"></a>デバイスオンボーディングの方法
 
-次の表では、デバイスを Defender for Business にオンボードするために最も一般的に使用される方法について説明します。 
+Defender for Business では、既に Microsoft エンドポイント マネージャー を使用している場合でも、簡単なオンボーディング エクスペリエンスが必要な場合でも、デバイスをオンボーディングする方法がいくつか用意されています。 デバイスを Defender for Business にオンボードするために最も一般的に使用される方法は次のとおりです。
 
-| オンボーディング方法  | 説明  | OS |
-|---------|---------|---------|
-| **自動オンボーディング**<br/>(*既にユーザーを使用しているMicrosoft エンドポイント マネージャー*) | *Microsoft 365 Business Premiumユーザーは既にMicrosoft Intune、このオプションを使用できます*。 自動オンボーディングは、Defender for Business と Microsoft エンドポイント マネージャー間の接続をセットアップし、Windows Defender for Business にデバイスをオンボードします。 このオプションを使用するには、デバイスが既にデバイスに登録されている必要エンドポイント マネージャー。<br/><br/>詳細については、「自動オンボーディング [」を参照してください](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)。 | Windows |
-| **ローカル スクリプト** <br/> | このオプションを使用すると、個々のデバイスを Defender for Business に手動でオンボードできます。 ローカル スクリプトを使用すると、一度に最大 10 台のデバイスをオンボードできます。<br/><br/>詳細については、「Defender [for Business のローカル スクリプト」を参照してください](#local-script-in-defender-for-business)。 | Windows <br/>macOS |
-| **Microsoft Intune** または **Microsoft エンドポイント マネージャー**<br/>(*ユーザーまたはユーザーが使用しているMicrosoft Intuneエンドポイント マネージャー*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)モバイル [デバイスの管理は](/mem/intune/enrollment/device-enrollment)、デバイスの一部エンドポイント マネージャー。 (Microsoft 365 Business Premiumユーザーが既にMicrosoft Intune。<br/><br/>Defender for Business を使用する前エンドポイント マネージャーを既に使用していた場合は、デバイスのオンボードと管理に エンドポイント マネージャーを引き続き使用することを選択できます。<br/><br/>このメソッドを使用するには、「Microsoft エンドポイント マネージャー」 [を参照してください](#microsoft-endpoint-manager)。 | Windows <br/>macOS<br/>iOS<br/>Android OS | 
-| **Microsoft Defender for Business セキュリティ構成** <br/>(*ポータルMicrosoft 365 Defender使用*) | このオプションを使用するには、特定の設定を構成して、Defender for Business とユーザー間の通信を容易エンドポイント マネージャー。 次に、各デバイスでダウンロードして実行するパッケージを使用して、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) のデバイスをオンボードします。 デバイスとデバイス間で信頼が確立Azure Active Directory (Azure AD)、Defender for Business セキュリティ ポリシーがデバイスにプッシュされます。<br/><br/>詳細については、「 [Microsoft Defender for Business セキュリティ構成」を参照してください](#microsoft-defender-for-business-security-configuration)。 | Windows <br/>macOS |
+- **デバイスに既に** Windowsされているデバイスの自動オンボーディングMicrosoft エンドポイント マネージャー。 自動オンボーディングは、Defender for Business と Microsoft エンドポイント マネージャー間の接続をセットアップし、Windows Defender for Business にデバイスをオンボードします。 このオプションを使用するには、デバイスが既にデバイスに登録されている必要エンドポイント マネージャー。 詳細については、「自動オンボーディング [」を参照してください](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)。
+
+- **ローカル スクリプトを使用** して、Windows macOS デバイスを Defender for Business に手動でオンボードします。 ローカル スクリプトを使用すると、一度に最大 10 台のデバイスをオンボードできます。 詳細については、「Defender [for Business のローカル スクリプト」を参照してください](#local-script-in-defender-for-business)。
+
+- **Microsoft Intune**、**macOS Microsoft エンドポイント マネージャー** モバイル デバイスWindowsオンボーディングを行います。 デバイスをデバイスに登録エンドポイント マネージャー、デバイスを Defender for Business にオンボードできます。 [Microsoft 365 Business Premium](../../business-premium/index.md)ユーザーが既[にMicrosoft Intuneし](/mem/intune/fundamentals/what-is-intune)、[Microsoft Intuneモバイル デバイス](/mem/intune/enrollment/device-enrollment)管理の両方が現在、エンドポイント マネージャー。 このメソッドを使用するには、「Microsoft エンドポイント マネージャー」 [を参照してください](#microsoft-endpoint-manager)。
+
+- **Microsoft Defender for Business セキュリティ構成** を使用して、Microsoft 365 Defender ポータル () でデバイスを直接オンボードします [https://security.microsoft.com](https://security.microsoft.com)。 このオプションを使用するには、特定の設定を構成して、Defender for Business とユーザー間の通信を容易エンドポイント マネージャー。 次に、各デバイスで選択、ダウンロード、および実行するパッケージを使用して、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) のデバイスをオンボードします。 デバイスとデバイス間で信頼が確立Azure Active Directory (Azure AD)、Defender for Business セキュリティ ポリシーがデバイスにプッシュされます。 詳細については、「 [Microsoft Defender for Business セキュリティ構成」を参照してください](#microsoft-defender-for-business-security-configuration)。 
 
 > [!IMPORTANT]
 > 問題が発生してオンボーディング プロセスが失敗した場合は、「 [Microsoft Defender for Business のトラブルシューティング」を参照してください](mdb-troubleshooting.yml)。
@@ -72,12 +80,13 @@ Microsoft Defender for Business では、組織のデバイスをオンボーデ
 自動オンボーディング オプションは、デバイスWindows適用されます。 自動オンボーディングは、次の条件が満たされている場合に使用できます。
 
 - Defender for Business を使用するMicrosoft エンドポイント マネージャー前Microsoft Intune組織で、Microsoft Intune、モバイル デバイス管理 (MDM) が既に使用されている
+
 - 既に、Windowsに登録されているデバイスエンドポイント マネージャー
 
 Windowsデバイスが エンドポイント マネージャー に既に登録されている場合、Defender for Business は、Defender for Business のセットアップおよび構成中にそれらのデバイスを検出します。 すべてのデバイスまたは一部のデバイスに対して自動オンボーディングを使用Windowsされます。 すべてのデバイスを一度Windowsしたり、最初に特定のデバイスを選択したり、後でデバイスを追加したりできます。
 
 > [!TIP]
-> [すべてのデバイスが登録されている] オプションを選択することをお勧めします。 この方法で、Windowsデバイスが後で登録エンドポイント マネージャー、Defender for Business に自動的にオンボードされます。
+> [すべてのデバイスが登録されている] オプションを選択することをお勧めします。 この方法で、Windowsデバイスが後で登録エンドポイント マネージャー、Defender for Business に自動的にオンボードされます。 また、エンドポイント マネージャー でセキュリティ ポリシーと設定を管理している場合は、Microsoft 365 Defender ポータルに切り替えてデバイス、ポリシー、設定を管理することをお勧めします。 詳細については、「セキュリティ ポリシーと [デバイスを管理する場所を選択する」を参照してください](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices)。
 
 自動オンボーディングの詳細については、「ウィザードを使用して [Microsoft Defender for Business](mdb-use-wizard.md) をセットアップする」の手順 2 を参照してください。
 

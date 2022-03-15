@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365接続テスト ツール
-ms.openlocfilehash: 8704da93d8f7ec95460ae5a275289176bccb0c22
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: e464b4e651276f8b36f54e91ea0bfc7b7b52d69b
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494500"
+ms.locfileid: "63504554"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365接続テスト ツール
 
@@ -255,7 +255,7 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 
 リモート展開および実行ツールで使用できるコマンド ライン実行可能ファイルを提供し、Microsoft 365 ネットワーク接続テスト ツール Web サイトで使用できるのと同じテストを実行します。
 
-コマンド ライン テスト ツールは、次の場所からダウンロードできます。 ![コマンド ライン ツール](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
+コマンド ライン テスト ツールは、次のコマンド ライン [ツールからダウンロードできます。](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
 
 実行するには、Windows エクスプローラーで実行可能ファイルをダブルクリックするか、コマンド プロンプトから起動するか、タスク スケジューラでスケジュールを設定します。
 

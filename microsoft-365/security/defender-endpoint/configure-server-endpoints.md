@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5f0b846fdbfaa76250ae64ae281afc9592a24eb4
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6f6ada6604190ccba270b287201d94ba2acbf6d2
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450354"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504847"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsサービスへのオンボード サーバー
 
@@ -298,6 +298,8 @@ Msiexec /x md4ws.msi /quiet
     ```  
 
      >[!NOTE]
+    >エージェントのインストールの問題をトラブルシューティングする必要がある場合は、スクリプト パラメーターに '-etl -log' をinstall.ps1します。
+    >
     >推奨される実行ポリシー設定はです `Allsigned`。 この場合、スクリプトがエンドポイントで SYSTEM として実行されている場合は、スクリプトの署名証明書をローカル コンピューター信頼済み発行元ストアにインポートする必要があります。
 
     共有 \\install.ps1ファイルのファイル サーバーの完全修飾ドメイン名 (FQDN) を使用して、servername-or-dfs-space\share-name を UNC パス *に置き換* えてください。 インストーラー パッケージmd4ws.msi同じディレクトリに配置する必要があります。  また、UNC パスのアクセス許可によって、プラットフォームをインストールしているコンピューター アカウントへの読み取りアクセスが許可されます。

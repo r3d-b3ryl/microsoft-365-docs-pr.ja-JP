@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: c943841a89acb7052f63ba76898e9b23e5dc3b4c
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 5673ac38577dbd87019a954eb388d6ab8f050328
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449500"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504756"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Microsoft Defender for Business でセキュリティ ポリシーと設定を表示および編集する
 
@@ -36,7 +36,9 @@ ms.locfileid: "63449500"
 組織のデバイスを Microsoft Defender for Business にオンボードした後、次にセキュリティ ポリシーと設定を表示し、必要に応じて編集します。 セキュリティ ポリシーには、次のものが含まれます。
 
 - **[組織のデバイスに](#view-or-edit-your-next-generation-protection-policies)** 対するウイルス対策とマルウェア対策の保護を決定する次世代の保護ポリシー
+
 - **[ファイアウォールの保護とルール](#view-or-edit-your-firewall-policies-and-custom-rules)**。組織のデバイスに対して、または組織のデバイスから流れるネットワーク トラフィックを決定する
+
 - **[成人向け](#set-up-web-content-filtering)** コンテンツや法的責任などのカテゴリに基づいて特定の Web サイト (URL) にアクセスできない Web コンテンツ フィルター。
 
 Defender for Business では、セキュリティ ポリシーはデバイス グループを介してデバイスに [適用されます](mdb-create-edit-device-groups.md#what-is-a-device-group)。 
@@ -72,10 +74,10 @@ Defender for Business では、 [セットアップと構成プロセスを](mdb
 
 | オプション | 説明 |
 |:---|:---|
-| **ポータルをMicrosoft 365 Defenderする** (*推奨*) | このMicrosoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) は、組織のデバイス、セキュリティ ポリシー、およびセキュリティ設定を管理するためのワンストップ ショップです。 セキュリティ ポリシーと設定にアクセスし、Threat [&](mdb-view-tvm-dashboard.md) の脆弱性管理ダッシュボードを使用し、インシデントの表示と[](mdb-view-manage-incidents.md)管理を 1 か所で行えます。  |
-| **使用Microsoft エンドポイント マネージャー** | 組織でセキュリティ ポリシーの管理に エンドポイント マネージャー (Microsoft Intune を含む) を既に使用している場合は、エンドポイント マネージャー を使用してデバイスとセキュリティ ポリシーを管理できます。 詳細については、「エンドポイント セキュリティ ポリシー[を使用](/mem/intune/protect/endpoint-security-policy)してデバイス セキュリティを管理する」を参照Microsoft Intune。 <br/><br/>代わりに、Defender [for Business](mdb-simplified-configuration.md) の簡略化された構成プロセスに切り替えて Microsoft 365 Defender ポータルを使用する場合は、後でポリシーの競合を回避するために、エンドポイント マネージャー の既存のセキュリティ ポリシーを削除するように求めるメッセージが表示[](mdb-troubleshooting.yml)されます。 |
+| **ポータルをMicrosoft 365 Defenderする** (*推奨*) | このMicrosoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) は、組織のデバイス、セキュリティ ポリシー、およびセキュリティ設定を管理するためのワンストップ ショップです。 セキュリティ ポリシーと設定にアクセスし、Threat [&](mdb-view-tvm-dashboard.md) の脆弱性管理ダッシュボードを使用し、インシデントの表示と[](mdb-view-manage-incidents.md)管理を 1 か所で行えます。 <br/><br/>セキュリティ ポリシーを使用しているMicrosoft エンドポイント マネージャー、Defender for Business にオンボードしたデバイスとセキュリティ ポリシーは、そのデバイスにエンドポイント マネージャー。 詳細については、次の記事を参照してください。<br/><br/>- [Defender for Business の既定の設定とMicrosoft エンドポイント マネージャー](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [ビジネス向け Microsoft Defender のファイアウォール](mdb-firewall.md)   |
+| **使用Microsoft エンドポイント マネージャー** | 組織でセキュリティ ポリシーの管理に エンドポイント マネージャー (Microsoft Intune を含む) を既に使用している場合は、エンドポイント マネージャー を使用してデバイスとセキュリティ ポリシーを管理できます。 詳細については、「エンドポイント セキュリティ ポリシー[を使用](/mem/intune/protect/endpoint-security-policy)してデバイス セキュリティを管理する」を参照Microsoft Intune。 <br/><br/>[Defender for Business](mdb-simplified-configuration.md) の簡略化された構成プロセスに切り替える場合は、エンドポイント マネージャー で既存のセキュリティ ポリシーを削除して、後でポリシーの競合を回避するように求めるメッセージ[](mdb-troubleshooting.yml)が表示されます。 |
 
-> [!NOTE]
+> [!IMPORTANT]
 > Microsoft 365 Defender ポータルでセキュリティ ポリシーを管理している場合は、ウイルス対策ポリシーまたはファイアウォール ポリシーとしてエンドポイント マネージャーでこれらのポリシーを表示できます。 ファイアウォール ポリシーを エンドポイント マネージャー で表示すると、ファイアウォール保護のポリシーとカスタム ルールの 2 つのポリシーが表示されます。
 
 ## <a name="view-or-edit-your-next-generation-protection-policies"></a>次世代の保護ポリシーを表示または編集する
@@ -101,9 +103,13 @@ Microsoft 365 Defender ポータルまたは Microsoft エンドポイント マ
 Web コンテンツ フィルターを使用すると、セキュリティ チームは、次のようなコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。
 
 - アダルト コンテンツ: カルト、ギャンブル、ヌード、ビデオ、性的に明示的な資料、または暴力に関連するサイト
+
 - 高帯域幅: サイト、イメージ共有サイト、ピアツーピア ホストをダウンロードする
+
 - 法的責任: 児童虐待画像を含むサイト、違法行為の促進、盗作や学校の不正行為の促進、または有害な活動を促進するサイト
+
 - レジャー: Web ベースのチャット ルーム、オンライン ゲーム、Web ベースの電子メール、またはソーシャル ネットワーキングを提供するサイト
+
 - 未分類: コンテンツがないサイト、または新しく登録されたサイト
 
 これらのカテゴリのすべての Web サイトが悪意のあるとは限りませんが、コンプライアンス規制、帯域幅の使用、その他の懸念により、組織にとって問題になる可能性があります。 さらに、監査専用ポリシーを作成して、セキュリティ チームが Web サイト のカテゴリをブロックするかどうかを理解することもできます。

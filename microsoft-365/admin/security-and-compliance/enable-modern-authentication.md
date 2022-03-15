@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Microsoft Office 2013 がインストールされているデバイスの最新の認証を有効にするレジストリ キーの設定方法を説明します。
-ms.openlocfilehash: 9ab3bb8e352a90cd4cef0c3c56496b3431e8b746
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 010dce00762e4e73d21a9da668a7ac9606d731f9
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494458"
+ms.locfileid: "63504753"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Windows デバイスの Office 2013 の先進認証を有効にする
 
@@ -48,9 +48,8 @@ Microsoft Office 2013 がインストールされている Windows を実行し�
 |レジストリ キー|型|値|
 |:---|:---:|---:|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|1|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
-|
+|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
+|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
 
 次のレジストリ キーを作成または変更して、Outlook EWS や自動検出など、Web サービスに新しい認証方法を使用するように強制します。 ユーザーがモダン認証を使用Outlookユーザーに強制することをお勧めします。
 
@@ -67,7 +66,7 @@ Microsoft Office 2013 がインストールされている Windows を実行し�
    HKEY_CURRENT_USER\Software\Microsoft\Exchange\
    ```
 
-4. *AlwaysUseMSOAuthForAutoDiscover* キーが見つからない場合は、「*AlwaysUseMSOAuthForAutoDiscover*」と入力し、Enter キーを押 **します。**
+4. *AlwaysUseMSOAuthForAutoDiscover* キーが見つからない場合は、[編集] メニューの [新規]  をポイントし、[**DWORD 値] を選択します**。 *「AlwaysUseMSOAuthForAutoDiscover」と入力し*、Enter キーを **押します。**
 
 5. *[AlwaysUseMSOAuthForAutoDiscover*] を右クリックし、[変更] を **クリックします。**
 
@@ -76,10 +75,10 @@ Microsoft Office 2013 がインストールされている Windows を実行し�
 7. [レジストリ エディター] で、次のレジストリ サブキーを見つけてクリックします。
 
    ```console
-   HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\
+   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
    ```
 
-8. 上記の表の値が既に存在する場合は、必要に応じて変更し、レジストリ エディターを終了します。 表示されない場合は、[編集] メニューの [新規] をポイントし、見つからないキーの **[DWORD 値**] をクリックします。 
+8. 上記の表のキーが既に存在する場合は、必要に応じて値を変更し、レジストリ エディターを終了します。 表示されない場合は、[編集] メニューの [新規]  をポイントし、[**DWORD 値**] を選択して、不足しているキーを作成します。 
 
 9. たとえば、 *EnableADAL キーが* 見つからない場合は、「 *EnableADAL」と入力* し、Enter キーを押 **します。**
 
@@ -105,9 +104,8 @@ Microsoft Office 2013 がインストールされている Windows を実行し�
 
 |レジストリ キー|型|値|
 |:---|:---:|---:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|0|
-|
    
 ## <a name="related-content"></a>関連コンテンツ
 

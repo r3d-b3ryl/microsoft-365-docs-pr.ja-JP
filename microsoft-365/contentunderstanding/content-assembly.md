@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft Web サイトでコンテンツ アセンブリを使用してドキュメントや他のコンテンツを自動的に作成するSharePoint Syntex。
-ms.openlocfilehash: 240b67ea2ca8c1119654096c365e958995e9c946
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 9da2aa91443ffe1dd3bbd632b5284ce8f7622069
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494556"
+ms.locfileid: "63504566"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Microsoft のコンテンツ アセンブリを使用してドキュメントを作成SharePoint Syntex
 
@@ -64,7 +64,7 @@ SharePoint Syntex を使用すると、契約、作業明細書、サービス�
    - [リストまたはライブラリの列の選択肢から選択する](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
 
    > [!NOTE]
-   > 現在、プレースホルダーをテーブル セルまたはテーブル内に追加できない。   
+   > テキストのプレースホルダーのみを作成できます。 現在、画像、スマート アート、テーブル、箇条書きリストはサポートされていません。   
 
 ### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>テキストを入力するか、日付を選択してプレースホルダーを関連付ける 
 

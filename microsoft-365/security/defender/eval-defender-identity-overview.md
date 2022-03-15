@@ -1,6 +1,6 @@
 ---
-title: 手順 2.  Id のMicrosoft 365 Defender評価、評価の設定
-description: 要件、eval の有効化Microsoft 365 Defenderアクティブ化、パイロットまたはテストのセットアップを含む ID の評価手順。
+title: 手順 2.  Id 評価Microsoft 365 Defenderの概要
+description: XDR Microsoft 365 Defenderで ID のMicrosoft 365 Defenderを使用します。 要件、eval の有効化Microsoft 365 Defenderアクティブ化、パイロットまたはテストのセットアップを含む ID の評価手順。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,23 +22,26 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 37b387d1e38ca3e49406773820a63a6e0d239356
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2438e7690230af88eae72e0864184e771bdd4135
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311579"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504804"
 ---
-# <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>手順 2。 Microsoft Defender for Identity の概要を評価する
+# <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>手順 2. Microsoft Defender for Identity の概要を評価する
 
 
 **適用対象:**
 - Microsoft 365 Defender
 
-この記事では、Microsoft Defender for Identity を有効にしてパイロットするプロセスの概要を説明します。 このプロセスを開始する前に、評価プロセス全体を確認し、Microsoft 365 Defender評価[](eval-overview.md)環境Microsoft 365 Defender[してください](eval-create-eval-environment.md)。 
+> [!NOTE]
+> この記事は、この概要Microsoft 365 Defender説明する XDR ソリューションの一部[です](eval-overview.md)。
+
+ Microsoft Defender for Identity を有効にしパイロットするプロセスを開始する前に、*Microsoft 365 Defender を eXtended Detection and Response (XDR* [Microsoft 365 Defender](eval-overview.md)) ソリューションとして評価する場合は、最初からプロセスを確認してください。[Microsoft 365 Defender評価環境。](eval-create-eval-environment.md)
 <br>
 
-次の手順を使用して、Microsoft Defender for Identity を有効にしてパイロットします。
+以下の手順を使用して、Microsoft Defender for Identity を有効にしてパイロットします。
 
 ![Microsoft Defender for Identity を Defender 評価環境に追加する手順。](../../media/defender/m365-defender-identity-eval-steps.png)
 
