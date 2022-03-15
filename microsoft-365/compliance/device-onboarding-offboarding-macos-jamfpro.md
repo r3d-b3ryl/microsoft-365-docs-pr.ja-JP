@@ -13,30 +13,29 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: JAMF ソリューション (プレビュー) を使用して、macOS デバイスをオンボードおよびオフボードMicrosoft 365コンプライアンス ソリューションにProする方法について学習します。
-ms.openlocfilehash: 2399dd901b9c31c3cd824e35bd4db844610125c5
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+description: JAMF を使用して macOS デバイスをオンボードおよびオフボードMicrosoft 365コンプライアンス ソリューションにPro (プレビュー)
+ms.openlocfilehash: 3f67acd7f6d6f62b8231a3c92e99551d7b90690d
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159493"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494990"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
 JAMF デバイスを使用Pro、エンドポイント データ損失防止Microsoft 365コンプライアンス ソリューションに macOS デバイスをオンボードできます。
 
 > [!IMPORTANT]
-> MacOS デバイスにMicrosoft Defender for Endpoint (MDE) が展開されていない場合は、次の手順を実行します。
+> MacOS デバイスに Microsoft  Defender for Endpoint (MDE) が展開されていない場合は、次の手順を実行します。
 
 **適用対象:**
 
 - [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
 - [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-- [macOS デバイスが参加Azure ADする](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- macOS デバイスが JAMF pro [を介して管理されている必要があります。](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- macOS デバイス[が JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) pro を介して管理され、JAMF Connect または Intune を介して ID (Azure AD参加 UPN) に関連付けられているConnect確認します。
 - macOS デバイスに v95+ Edge ブラウザーをインストールする 
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>JAMF を使用してMicrosoft 365コンプライアンス ソリューションにデバイスをオンボードPro
@@ -45,17 +44,17 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 |必要なファイル |ソース |
 |---------|---------|
-|オンボーディング パッケージ    |コンプライアンス ポータルオンボード パッケージ **、ファイル名** *DeviceComplianceOnboarding.plist からダウンロード* |
+|オンボーディング パッケージ    |コンプライアンス ポータルのオンボード パッケージ **、ファイル名** *DeviceComplianceOnboarding.plist からダウンロード* |
 |アクセシビリティ |[アクセシビリティ.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 フル ディスク アクセス     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |ネットワーク フィルター| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
 |システム拡張機能 |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |MDE の基本設定     |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
 |MAU の基本設定|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|
-|インストール パッケージ     |コンプライアンス ポータルのインストール パッケージ **からダウンロードされた** ファイル名 *\* wdav.pkg*\* |
+|インストール パッケージ     |コンプライアンス ポータルのインストール パッケージ **からダウンロードされたファイル** 名 *\*wdav.pkg*\* |
 
 > [!TIP]
-> *.mobileconfig* ファイルは、個別にダウンロードするか、以下を含 [む単一の結合ファイル](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)でダウンロードできます。
+> *.mobileconfig ファイルは*、個別にダウンロードするか、以下を含 [む単一の結合ファイル](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)でダウンロードできます。
 > - アクセシビリティ.mobileconfig
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
@@ -67,11 +66,11 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 ### <a name="get-the-device-onboarding-package"></a>デバイスオンボーディング パッケージの取得
 
-1. コンプライアンス **センターで[デバイスオン** ボーディング **設定**  >  **開き**、[オンボーディング]**を選択します**。
+1. [**コンプライアンス センター] で [****設定** > **Device オン** ボーディング] を開き、[オンボーディング] **を選択します**。
  
 1. [ **オンボーディング プロセスを開始するオペレーティング システムの選択] で** **macOS を選択する**
  
-1. [**展開方法] で**[**モバイル デバイスの管理/管理] を選択Microsoft Intune**
+1. [**展開方法] で** [**モバイル デバイスの管理/管理] を選択Microsoft Intune**
  
 1. [オンボード **パッケージのダウンロード] を選択する**
  
@@ -79,14 +78,14 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 ### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>オンボード パッケージの JAMF Pro構成プロファイルを作成する
 
-1. JAMF サーバーで新しい構成プロファイルをPro。 [JAMF 管理者ガイドPro参照してください](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 次の値を使用します。
+1. JAMF サーバーで新しい構成プロファイルをPro。 JAMF 管理者[ガイドPro参照してください](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 次の値を使用します。
     - 名前: `MDATP onboarding for macOS`
     - 説明: `MDATP EDR onboarding for macOS`
     - カテゴリ: `none`
     - 配布方法: `install automatically`
     - レベル: `computer level`
 
-2. JAMF コンソールで、[アプリケーション Pro **カスタム>設定**&**アップロード]** を選択し、[追加] を **選択します**。 次の値を使用します。
+2. JAMF コンソールで、[アプリケーション Proカスタム>**設定**&**アップロード] を** 選択し、追加 **します**。 次の値を使用します。
     - 基本設定ドメイン: `com.microsoft.wdav.atp`
 
 3. [ **アップロード] を** 選択し、オンボード ファイル **DeviceComplianceOnboarding.plist を選択します**。
@@ -102,16 +101,16 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 ### <a name="configure-preference-domain-using-the-jamf-pro-console"></a>JAMF PRO コンソールを使用して基本設定ドメインを構成する
 
 > [!IMPORTANT]
-> 基本設定ドメインの **値として * com.microsoft.wdav** _ を使用する必要があります。 Microsoft Defender for Endpoint では、この名前と _ *_com.microsoft.wdav.ext_** を使用して管理設定を読み込む。
+> 基本設定ドメインの **値として *com.microsoft.wdav** _ を使用する必要があります。 Microsoft Defender for Endpoint では、この名前と _ *_com.microsoft.wdav.ext_** を使用して管理設定を読み込む。
 
-1. JAMF サーバーで新しい構成プロファイルをPro。 [JAMF 管理者ガイドPro参照してください](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 次の値を使用します。
+1. JAMF サーバーで新しい構成プロファイルをPro。 JAMF 管理者[ガイドPro参照してください](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 次の値を使用します。
     - 名前: `MDATP MDAV configuration settings`
     - 説明: 空白のままにする
     - カテゴリ: `none`
     - 配布方法: `install automatically`
     - レベル: `computer level`
 
-1. [アプリケーション **]&[** カスタム 設定] タブで、[外部アプリケーション] を選択し、[追加] を選択し、基本設定ドメインの [カスタム **スキーマ**] を選択します。 次の値を使用します。
+1. [アプリケーション]**&[カスタム 設定] タブで、[外部アプリケーション] を選択し、[** 追加] を選択し、基本設定ドメインの [カスタム **スキーマ**] を選択します。 次の値を使用します。
     - 基本設定ドメイン: `com.microsoft.wdav`
 
 1. [**スキーマの追加]** **をアップロード** スキーマ *.json ファイルをアップロード* します。
@@ -122,7 +121,7 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
     - 機能 
         - システム拡張機能の使用: `enabled` - Catalina のネットワーク拡張機能に必要
         - データ損失防止の使用: `enabled`
-    - ウイルス対策エンジン>パッシブ モード: `true|false` . DLP `true` のみを展開する場合に使用します。 DLP と Microsoft Defender for Endpoint (MDE) を展開する場合は、値を使用するか `false` 、割り当てない。
+    - ウイルス対策エンジン>パッシブ モード: `true|false`. DLP `true`のみを展開する場合に使用します。 DLP `false` と Microsoft Defender for Endpoint (MDE) を展開する場合は、値を使用するか、割り当てない。
 
 1. [スコープ] **タブを選択** します。
 
@@ -133,16 +132,16 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 ### <a name="create-and-deploy-a-configuration-profile-for-microsoft-autoupdate-mau"></a>Microsoft AutoUpdate (MAU) の構成プロファイルを作成して展開する
 
-1. **com.microsoft.autoupdate2.plist** を使用Pro JAMF 構成ファイルを作成します。 [JAMF 管理者ガイドPro参照してください](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 次の値を使用します。
+1. **com.microsoft.autoupdate2.plist を使用Pro JAMF 構成ファイルを作成します**。 JAMF 管理者[ガイドPro参照してください](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 次の値を使用します。
     - 名前: `MDATP MDAV MAU settings`
     - 説明: `Microsoft AutoUPdate settings for MDATP for macOS`
     - カテゴリ: `none`
     - 配布方法: `install automatically`
     - レベル: `computer level`
 
-1. [**アプリケーション] & カスタム 設定、[** **アップロード] を****選択します**。
+1. [**アプリケーション] &カスタム 設定****、[ アップロード**] を **選択します**。
 
-1. [**基本設定] ドメインに** 入力 `com.microsoft.autoupdate2` し、[設定]**をアップロード。**
+1. [**基本設定] で、[** ドメイン] を入力`com.microsoft.autoupdate2`し、[設定] **をアップロード**。
 
 1. **com.microsoft.autoupdate2.plist ファイルを選択** します。
 
@@ -161,11 +160,11 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 1. **fulldisk.mobileconfig ファイルを使用** します。
 
-1. **アップロードdisk.mobileconfig ファイルを** JAMF に移動します。 [「JAMF を使用したカスタム構成プロファイルの展開」を参照Pro。](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)
+1. アップロード **disk.mobileconfig ファイルを** JAMF に移動します。 「[JAMF を使用したカスタム構成プロファイルの展開」を参照Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)。
 
 ### <a name="create-and-deploy-a-configuration-profile-for-system-extensions"></a>システム拡張機能の構成プロファイルを作成して展開する
 
-1. JAMF 管理者ガイドのProを使用して[、JAMF Pro構成ファイルを作成します](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 次の値を使用します。
+1. JAMF 管理者ガイドPro手順を使用して[、JAMF Pro構成ファイルを作成します](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 次の値を使用します。
     - 名前: `MDATP MDAV System Extensions`
     - 説明: `MDATP system extensions`
     - カテゴリ: `none`
@@ -176,7 +175,7 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
     - 表示名: `Microsoft Corp. System Extensions`
     - システム拡張の種類: `Allowed System Extensions`
     - チーム識別子: `UBF8T346G9`
-    - 許可されるシステム拡張機能: `com.microsoft.wdav.epsext` 、および `com.microsoft.wdav.netext`
+    - 許可されるシステム拡張機能: `com.microsoft.wdav.epsext`、および `com.microsoft.wdav.netext`
 
 1. [スコープ] **タブを選択** します。
 
@@ -190,37 +189,37 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 1.  サーバーから **ダウンロードした netfilter.mobileconfig** ファイルをGitHub。
 
-2.  アップロードを使用したカスタム構成プロファイルの展開」の説明に従って[JAMF](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)にPro。
+2.  アップロード Jamf を使用したカスタム構成プロファイルの展開」の説明に従って [JAMF にPro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ### <a name="grant-accessibility-access-to-dlp"></a>DLP へのアクセシビリティ アクセスを許可する
 
-1. ユーザー設定から **ダウンロードしたアクセシビリティ.mobileconfig** ファイルをGitHub。
+1. ユーザー設定 **からダウンロードしたアクセシビリティ.mobileconfig** ファイルをGitHub。
 
-2.  アップロードを使用したカスタム構成プロファイルの展開」の説明に従って[JAMF](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)にPro。
+2.  アップロード Jamf を使用したカスタム構成プロファイルの展開」の説明に従って [JAMF にPro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ### <a name="get-the-installation-package"></a>インストール パッケージの取得
 
-1. コンプライアンス **センターで[デバイスオン** ボーディング **設定**  >  **開き**、[オンボーディング]**を選択します**。
+1. [**コンプライアンス センター] で [****設定** > **Device オン** ボーディング] を開き、[オンボーディング] **を選択します**。
  
 1. [ **オンボーディング プロセスを開始するオペレーティング システムの選択] で** **macOS を選択する**
  
-1. [**展開方法] で**[**モバイル デバイスの管理/管理] を選択Microsoft Intune**
+1. [**展開方法] で** [**モバイル デバイスの管理/管理] を選択Microsoft Intune**
  
-1. [インストール **パッケージのダウンロード] を選択します**。 これにより *、wdav.pkg ファイルが表示* されます。
+1. [インストール **パッケージのダウンロード] を選択します**。 これにより、 *wdav.pkg ファイルが表示* されます。
 
 
 ### <a name="deploy-the-installation-package"></a>インストール パッケージの展開
 
-1. ファイルを保存した場所に `wdav.pkg` 移動します。
+1. ファイルを保存した場所に移動 `wdav.pkg` します。
 
 1. JAMF ダッシュボードをProします。
 
 1. コンピューターを選択し、上部の歯車をクリックし、[コンピューターの管理] **を選択します**。
 
-1. [パッケージ **] で** **[+新規] を選択します**。 次の詳細を入力します。
+1. [パッケージ **] で [****+新規] を選択します**。 次の詳細を入力します。
     - 表示名: .pkg ファイルを選択するとリセットされますので、空白のままにします。
     - カテゴリ: なし (既定)
-    - Filname: [ファイル] (この場合はファイル) を選択 `wdav.pkg` します。
+    - ファイル名: ファイルを選択します。この場合はファイルを選択 `wdav.pkg` します。
 
 1. [ **開く**] を選択します。 セット:
     - **表示名**: `Microsoft Endpoint Technology`
@@ -232,7 +231,7 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 1. [ポリシー] **ページを開** きます。
 
-1. **[+New] を選択** して新しいポリシーを作成します。
+1. [ **+New] を選択** して新しいポリシーを作成します。
 
 1. これらの値を入力する
     - **表示名**: `MDATP Onboarding200329 v100.86.92 or later`
@@ -241,7 +240,7 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 1. **[保存]** を選択します。
 
-1. [パッケージ **の構成]**  >  **を選択します**。
+1. [ **PackagesConfigure** > **] を選択します**。
 
 1. **[追加]** を選択します。
 
@@ -261,7 +260,7 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 1. macOS デバイスを再起動します。
 
-1. [**システム設定プロファイル]**  >  **を開きます**。
+1. [ **System PreferencesProfiles** > **] を開きます**。
 
 1. 次の情報が表示されます。
     - アクセシブル
@@ -276,7 +275,7 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 ## <a name="offboard-macos-devices-using-jamf-pro"></a>JAMF デバイスを使用するオフボード macOS Pro
 
 1. アプリケーションをアンインストールする (MDE を使用しない場合)
-    1. 「JAMF Pro ドキュメント - パッケージの展開 - [JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Pro管理者ガイド Jamf Pro管理者ガイド」を参照してください。
+    1. 「JAMF Pro ドキュメント - パッケージの展開 - [JAMF Pro管理者ガイド](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro管理者ガイド」を参照してください。
 
 1. macOS デバイスを再起動する - 一部のアプリケーションは、再起動するまで印刷機能が失われる可能性があります
 

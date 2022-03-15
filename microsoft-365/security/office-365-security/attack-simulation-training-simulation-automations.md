@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 で指定された条件を満たした場合に起動する特定の手法とペイロードを含む自動シミュレーションを作成する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 47732960ad5fac9884f388836ea23a2b9283c93c
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 029dce5b7f0b5c6e62b064aa9155d7b07c6a80d7
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419348"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63495026"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのシミュレーションの自動化
 
@@ -247,7 +247,7 @@ ms.locfileid: "63419348"
     [ランディング ページ] ページで次の追加設定を **構成する必要** があります。
 
     - **[ランディング ページ レイアウトの選択**]: 使用可能な 5 つのランディング ページ テンプレートの 1 つを選択します。
-    - **ロゴの追加**: [ **参照]** をクリックして、Microsoft が選択.png、.jpeg、または .gif ファイルを検索して選択し、すべてのペイロードに追加します。 ロゴを削除するには、[削除] を **クリックします**。
+    - **ロゴの追加**: [ **参照]** をクリックして、Microsoft が選択.png、.jpeg、または .gif ファイルを検索して選択し、すべてのペイロードに追加します。 ロゴサイズは、歪みを避けるために最大 210 x 70 である必要があります。 ロゴを削除するには、[削除] を **クリックします**。
     - **ペイロードインジケーター**: [ソーシャル エンジニアリング手法の選択] ページで [マルウェアの添付ファイル] または [マルウェアへのリンク] を以前に選択した場合、この設定 [は使用](#select-one-or-more-social-engineering-techniques)できません。
 
       [ **メールにペイロードインジケーターを追加する** ] を選択して、ユーザーがフィッシング メッセージを識別する方法について学習します。

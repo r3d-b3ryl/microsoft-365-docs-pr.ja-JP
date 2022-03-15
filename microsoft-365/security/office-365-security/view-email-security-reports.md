@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08ab4e4e0d85dec56de8285659cead3e1dfcb468
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3fdab6896edf704c4daa83ec993c0716c54d0f43
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321335"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494570"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>ポータルで電子メール セキュリティ レポートをMicrosoft 365 Defenderする
 
@@ -36,13 +36,35 @@ ms.locfileid: "63321335"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Defender ポータルでは、Microsoft 365 <https://security.microsoft.com> のスパム対策、マルウェア対策、暗号化機能などの電子メール セキュリティ機能が組織を保護している方法を確認できます。 必要なアクセス許可 [がある場合は](#what-permissions-are-needed-to-view-these-reports)、この記事の説明に従って、これらのレポートを表示してダウンロードできます。
+Microsoft 365 Defender ポータルでは、Microsoft 365 <https://security.microsoft.com> のスパム対策機能やマルウェア対策機能などの電子メール セキュリティ機能が組織を保護している方法を確認できます。 必要なアクセス許可 [がある場合は](#what-permissions-are-needed-to-view-these-reports)、この記事の説明に従って、これらのレポートを表示してダウンロードできます。
 
 > [!NOTE]
 >
 > [電子メール] コラボレーション レポート ページの一 **部のレポート& Microsoft** Defender が必要です。Office 365。 これらのレポートの詳細については、「[View Defender for Office 365ポータル」をMicrosoft 365 Defenderしてください](view-reports-for-mdo.md)。
 >
 > メール フローに関連するレポートが管理センター Exchangeされます。 これらのレポートの詳細については、「新しい管理センターのメール フロー [レポートExchange参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
+
+## <a name="email-security-report-changes-in-the-microsoft-365-defender-portal"></a>電子メール セキュリティ レポートの変更点 (Microsoft 365 Defender ポータル)
+
+置換Exchange Online Protection、移動、または廃止された Microsoft 365 Defender ポータルの Office 365 レポートのレポート (EOP) と Microsoft Defender について、次の表で説明します。
+
+<br>
+
+****
+
+|非推奨のレポートとコマンドレット|新しいレポートとコマンドレット|メッセージ センター ID|日付|
+|---|---|:---:|:---:|
+|**URL 追跡** <p> Get-URLTrace|[URL 保護レポート](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|2021 年 6 月|
+|**送信および受信した電子メール レポート** <p> Get-MailTrafficReport <br> Get-MailDetailReport|[脅威保護の状態レポート](#threat-protection-status-report) <br> [メールフローの状態レポート](#mailflow-status-report) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|2021 年 6 月|
+|**転送レポート** <p> コマンドレットなし|[EAC の自動転送メッセージ レポート](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <p> コマンドレットなし|MC250533|2021 年 6 月|
+|**セーフ添付ファイルの種類レポート** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[脅威保護の状態レポート: メール マルウェアによるデータの表示\>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|2021 年 6 月|
+|**セーフ添付ファイル メッセージ廃棄レポート** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[脅威保護の状態レポート: メール マルウェアによるデータの表示\>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|2021 年 6 月|
+|**電子メール レポートで検出されたマルウェア** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[脅威保護の状態レポート: メール マルウェアによるデータの表示\>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|2021 年 6 月|
+|**スパム検出レポート** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[脅威保護の状態レポート: メール スパムによるデータの \> 表示](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|2021 年 10 月|
+|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|2022 年 5 月|
+|**Exchangeルール レポート** <p> Get-MailTrafficPolicyReport <br> Get-MailDetailTransportRuleReport|[Exchange EAC でトランスポート ルール レポートを作成する](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> コマンドレットなし|MC316157|2022 年 4 月|
+|Get-MailTrafficTopReport|[脅威保護の状態レポート: メール マルウェアによるデータの表示\>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **注**: Get-MailTrafficTopReport の暗号化レポート機能に代わりはありません。|MC315742|2022 年 4 月|
+|
 
 ## <a name="compromised-users-report"></a>侵害されたユーザー レポート
 
@@ -384,7 +406,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **申請 ID**
 - **ネットワーク メッセージ ID**
 - **Sender**
-- **名前**
+- **[名前]**
 - **提出者**
 - **提出の理由**:
   - **迷惑メールではない**
@@ -786,7 +808,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **添付ファイルの名前**
 - **ワークロード**
 - **検出テクノロジ**
-- **ファイルのサイズ**
+- **ファイル サイズ**
 - **最後に変更したユーザー**
 
 [フィルター] を **クリックすると**、次のフィルターを使用できます。
@@ -1030,8 +1052,8 @@ URL **保護レポートは、** Microsoft Defender でのみ使用できます�
 
 - **組織の管理**
 - **セキュリティ管理者**
-- **セキュリティ リーダー**
-- **グローバル リーダー**
+- **セキュリティ閲覧者**
+- **グローバル閲覧者**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
@@ -1123,7 +1145,7 @@ URL **保護レポートは、** Microsoft Defender でのみ使用できます�
 
 2. [ダウンロード用 **のレポート] ページ** に、使用可能なレポートごとに次の情報が表示されます。
    - **開始日**
-   - **名前**
+   - **[名前]**
    - **レポートの種類**
    - **最終送信**
    - **方向**

@@ -17,12 +17,12 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、Microsoft 365 Lighthouseテナントを 1 つの場所でセキュリティで保護および管理する方法について説明します。
-ms.openlocfilehash: 5b4792bf60de688bc36b33b40aa09f6e882ffc2d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 88b6a3b1afff0905458f5ade7e4e91136b2c9d38
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311537"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494472"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>概要 Microsoft 365 Lighthouse
 
@@ -41,6 +41,10 @@ CSP プログラムの詳細については、「CSP プログラムの概要ク
 
 > [!NOTE]  
 > 同様のサービスである Azure ライトハウスは、Azure プラットフォームに組み込みの包括的で堅牢な管理ツールを使用して、サービス プロバイダーが Azure サービスの管理サービスを提供するのに役立ちます。 詳細については、「 [Azure ライトハウスとは」を参照してください。](/azure/lighthouse/overview)   
+
+## <a name="watch-what-is-microsoft-365-lighthouse"></a>ウォッチ: データのMicrosoft 365 Lighthouse?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QVMP]
 
 ## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse利点
 

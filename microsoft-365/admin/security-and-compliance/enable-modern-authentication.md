@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Microsoft Office 2013 がインストールされているデバイスの最新の認証を有効にするレジストリ キーの設定方法を説明します。
-ms.openlocfilehash: c5af8daa0538a1eb89521b12d1c85c310df6d012
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 9ab3bb8e352a90cd4cef0c3c56496b3431e8b746
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071878"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494458"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Windows デバイスの Office 2013 の先進認証を有効にする
 
@@ -40,26 +40,76 @@ Office 2013 がインストールされている Windows デバイスで先進�
 > 先進認証は Office 2016 クライアントで既に有効になっているため、Office 2016 のレジストリ キーを設定する必要はありません。 
   
 Microsoft Office 2013 がインストールされている Windows を実行しているデバイス (たとえばノート PC やタブレット) で先進認証を有効にするには、次のレジストリ キーを設定する必要があります。 最新の認証を有効にする各デバイスでキーを設定する必要があります。
-  
-|**レジストリ キー**|**型**|**値** |
-|:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
-   
-レジストリ キーを設定したら、2013 デバイス アプリOffice多要素認証[(MFA)](set-up-multi-factor-authentication.md)と一緒に使用Microsoft 365。 
+
+<br>
+
+****
+
+|レジストリ キー|型|値|
+|:---|:---:|---:|
+|HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|1|
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
+|
+
+次のレジストリ キーを作成または変更して、Outlook EWS や自動検出など、Web サービスに新しい認証方法を使用するように強制します。 ユーザーがモダン認証を使用Outlookユーザーに強制することをお勧めします。
+
+1. Outlook を終了します。
+
+2. レジストリ エディターのバージョンに応じて、次のいずれかの手順を使用してレジストリ エディターをWindows。
+
+   - **Windows 10、Windows 8.1、** およびWindows 8: キーを押Windows R キーを押して 、[実行] **ダイアログ ボックスを** 開きます。 " *regedit.exe*" と入力し、Enter キーを **押します。**
+   - **Windows 7:** [**スタート**] をクリックし、検索 *regedit.exe入力して* Enter キーを押 **します。**
+
+3. [レジストリ エディター] で、次のレジストリ サブキーを見つけてクリックします。
+
+   ```console
+   HKEY_CURRENT_USER\Software\Microsoft\Exchange\
+   ```
+
+4. *AlwaysUseMSOAuthForAutoDiscover* キーが見つからない場合は、「*AlwaysUseMSOAuthForAutoDiscover*」と入力し、Enter キーを押 **します。**
+
+5. *[AlwaysUseMSOAuthForAutoDiscover*] を右クリックし、[変更] を **クリックします。**
+
+6. [値の **データ]** ボックスに **「1」と入力** し、[OK] を **クリックします。**
+
+7. [レジストリ エディター] で、次のレジストリ サブキーを見つけてクリックします。
+
+   ```console
+   HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\
+   ```
+
+8. 上記の表の値が既に存在する場合は、必要に応じて変更し、レジストリ エディターを終了します。 表示されない場合は、[編集] メニューの [新規] をポイントし、見つからないキーの **[DWORD 値**] をクリックします。 
+
+9. たとえば、 *EnableADAL キーが* 見つからない場合は、「 *EnableADAL」と入力* し、Enter キーを押 **します。**
+
+10. [ *EnableADAL] を右クリックし*、[変更] を **クリックします。**
+
+11. [値の **データ]** ボックスに **「1」と入力** し、[OK] を **クリックします。**
+
+12. 必要に応じて、Version キーの同じプロセスに従います。 
+
+13. **レジストリ エディターを終了します。**
+
+レジストリ キーを設定したら、2013 デバイス Officeアプリで多要素認証 [(MFA)](set-up-multi-factor-authentication.md) を使用Microsoft 365。 
   
 現在、クライアント アプリのいずれかを使ってサインインしている場合、変更を有効にするには、サインアウトしてサインインし直す必要があります。 それ以外の場合、MRU とローミングの設定は、ID が確立されるまで使用できません。
   
 ## <a name="disable-modern-authentication-on-devices"></a>デバイスで先進認証を無効にする
 
 デバイスで先進認証を無効にするには、デバイスで次のレジストリ キーを設定します。
-  
-|**レジストリ キー**|**型**|**値**|
-|:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
+
+<br>
+
+****
+
+|レジストリ キー|型|値|
+|:---|:---:|---:|
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+|HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|0|
+|
    
 ## <a name="related-content"></a>関連コンテンツ
 
-[2 番目の検証Office 2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)にサインインする (記事)\
-[Outlookを求めるメッセージ](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)が表示され、モダン認証を使用してパスワードに接続Office 365しない (記事)
-
+[2 番目の検証Office 2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) にサインインする (記事)\
+[Outlookを求める](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)メッセージが表示され、モダン認証を使用してパスワードに接続Office 365しない (記事)

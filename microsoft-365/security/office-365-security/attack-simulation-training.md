@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 17e4bb55ee2c571c2e66b648d277f0a896551f39
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 5ce7b58410ea53e4f11d746ebc4583b125f1ade6
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419362"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494430"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Defender の攻撃シミュレーション トレーニングを使用してフィッシング攻撃をシミュレートOffice 365
 
@@ -249,7 +249,7 @@ Microsoft が選択したランディング ページは、中国語 (簡体字)
 - **[ランディング ページの基本設定の選択**]: 使用可能な値は次のとおりです。
   - **Microsoft の既定のランディング ページを使用** する: これは、構成する次の関連付けられたオプションを持つ既定値です。
     - **[ランディング ページ レイアウトの選択**]: 使用可能なテンプレートのいずれかを選択します。
-    - **ロゴの追加**: [ **参照]** をクリックして、.png.jpeg、またはファイルを.gifします。 ロゴを削除するには、[削除] を **クリックします**。
+    - **ロゴの追加**: [ **参照]** をクリックして、.png.jpeg、またはファイルを.gifします。 ロゴサイズは、歪みを避けるために最大 210 x 70 である必要があります。 ロゴを削除するには、[削除] を **クリックします**。
     - **メールにペイロード インジケーターを追加** する: [テクニックの選択] ページで [マルウェアの添付ファイル] または [マルウェアへのリンク] を以前に選択した場合、この設定 [は使用](#select-a-social-engineering-technique)できません。
 
     結果をプレビューするには、ページの下部にある **[プレビュー** パネルを開く] ボタンをクリックします。
