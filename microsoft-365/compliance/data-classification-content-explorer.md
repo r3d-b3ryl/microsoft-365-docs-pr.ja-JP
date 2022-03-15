@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: fb7448ffd4ed56deb41bbb1d128608b88e9617ea
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 61d262c04d4a304506bc521d155be71f81d219ca
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871829"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468762"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -70,7 +70,7 @@ ms.locfileid: "61871829"
 
 コンテンツ エクスプローラーへのアクセスを許可する 2 つの役割があり、<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Microsoft 365 コンプライアンス センター</a>を使用して許可されます。
 
-- **コンテンツ エクスプローラーのリスト ビューアー**: この役割のグループのメンバーシップにより、ユーザーは各アイテムおよびその場所をリスト ビューで確認することができます。 この役割グループには、`data classification list viewer` 役割が事前に割り当てられています。
+- **Content Explorer リスト ビューアー**: この役割グループのメンバーシップを使用すると、リスト ビューで各項目とその場所を表示できます。`data classification list viewer` のロールは、この役割グループに事前に割り当てられています。
 
 - **Content Explorer コンテンツ ビューアー**: この役割グループのメンバーシップを使用すると、リスト内の各項目の内容を表示できます。この役割グループには、`data classification content viewer` の役割が事前に割り当てられています。
 
@@ -107,9 +107,6 @@ ms.locfileid: "61871829"
 
 [DLP ポリシー](dlp-learn-about-dlp.md)は、機密情報の保護に役立ちます。これは、**機密の種類** として定義されます。Microsoft 365 には、ユーザーが使用できるさまざまなリージョンをまたいだ [多くの一般的な機密の種類の定義](sensitive-information-type-entity-definitions.md)が含まれています。たとえば、クレジット カード番号、銀行口座番号、国民 ID 番号、Windows Live ID サービス番号などです。
 
-> [!NOTE]
-> 現在、コンテンツ エクスプローラーは、Exchange Online の機密情報の種類をスキャンしません。
-
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
 [機密ラベル](sensitivity-labels.md)は、組織に対するアイテムの価値を示すタグです。 手動で、または自動的に適用することができます。 適用すると、ドキュメントに埋め込まれ、ドキュメントがどこへ移動されても機密ラベルは保持されます。 機密ラベルによって、必須のウォーターマークや暗号化など、さまざまな保護機能が有効化されます。
@@ -134,29 +131,26 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 ![データ分類エクスポート コントロール。](../media/data_classification_export_control.png)
 
 
+> [!NOTE]
+> コンテンツ エクスプローラーでカウントが更新されるまで、最大 *7日* かかる場合があります。
+
 ### <a name="search"></a>検索
 
-Exchange フォルダー、SharePoint、OneDrive サイトなどの場所をドリルダウンするとき、**検索** ツールが表示されます。
+Exchange またはTeams フォルダー、SharePoint、OneDrive サイトなどの場所をドリルダウンするとき、**検索** ツールが表示されます。
 
 ![コンテンツ エクスプローラー検索ツール。](../media/data_classification_search_tool.png)
 
-
 検索ツールの範囲は、**[すべての場所 ]** ウィンドウに表示される内容です。また、検索できる対象は、選択した場所によって異なります。 
 
-**Exchange** が選択された場所である場合、メールボックスの完全なメール アドレスを検索できます (`user@domainname.com` など)。
+**Exchange** または **Teams** が選択された場所である場合、`user@domainname.com` のようにメールボックスの完全なメール アドレスを検索できます。
 
 **SharePoint** または **OneDrive** が選択された場所である場合、サイト名、フォルダー、ファイルをドリルダウンすると、検索ツールが表示されます。 
 
-> [!NOTE]
-> **OneDrive** プレビュープログラム中に、OneDrive との統合に関する貴重なフィードバックをいただきました。 このフィードバックに基づき、すべての修正プログラムが適用されるまで、OneDrive の機能はプレビュー版のままになります。 テナントによっては、一部のお客様に OneDrive が場所として表示されない場合があります。 この件に関する継続的なサポートに感謝いたします。
-
 以下を検索できます。
-
 
 |値|例  |
 |---------|---------|
 |完全なサイト名    |`https://contoso.onmicrosoft.com/sites/sitename`    |
-|ルート フォルダー名 - すべてのサブフォルダーを取得する    | `/sites`        |
 |ファイル名    |    `RES_Resume_1234.txt`     |
 |ファイル名の最初のテキスト| `RES`|
 |ファイル名の下線文字 (_) 以降のテキスト|`Resume` または `1234`| 
