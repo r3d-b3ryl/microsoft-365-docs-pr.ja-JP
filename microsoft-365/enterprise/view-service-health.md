@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: アクティブ サービスが中断していないかどうかを確認するため、サポートに連絡する前に、Microsoft 365 サービスの正常性状態を表示します。
-ms.openlocfilehash: d5af62bd31bc5fe6c3a3f04657d6cf0ea6083eaa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4a72132872c890f755cb537e06c42412aa17fb9f
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166792"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468776"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Microsoft 365 サービス正常性を確認する方法
 
@@ -48,7 +48,7 @@ ms.locfileid: "60166792"
     > [!NOTE]
     > グローバル管理者またはサービス サポート管理者ロールが割り当てられているユーザーは、サービスの正常性を表示できます。Exchange、SharePoint、Skype for Business の管理者がサービス正常性を表示できるようにするには、サービス管理者ロールも割り当てられている必要があります。サービス正常性を表示できるロールの詳細については、「[管理者ロールについて](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)」を参照してください。
 
-2. サービス正常性を表示するには、管理センターで **[正常性]** > **[サービス正常性]** の順に移動するか、**ホーム ダッシュボード** の **サービス正常性** カードをクリックします。ダッシュボード カードは、アクティブなサービスの問題があるかどうかを示し、詳細な **[サービス正常性]** ページにリンクしています。
+2. サービス正常性を表示するには、管理センターの左側のナビゲーションで **[正常性]** > **[サービス正常性]** の順に移動するか、**[ホーム ダッシュボード]** の **[サービス正常性]** カードをクリックします。ダッシュボード カードは、アクティブなサービスの問題があるかどうかを示し、詳細な **[サービス正常性]** ページにリンクしています。
 
 3. [**サービス正常性**] ページでは、それぞれのクラウド サービスの正常性の状態は表形式で表示されます。
 
