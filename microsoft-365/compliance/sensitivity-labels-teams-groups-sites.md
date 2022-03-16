@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 39caee37f8bf8b2f885824bbdd12ca7b5b372e69
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 46daf3ecd4c918196fa7a50f8e8869bdd54c945e
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320509"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504821"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -327,7 +327,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
 ## <a name="support-for-sensitivity-labels"></a>秘密度ラベルのサポート
 
-感度ラベルをサポートする管理センターを使用すると、テナントのすべての感度ラベルが表示されます。 一方、公開ポリシーに従って感度ラベルをフィルター処理するユーザー アプリとサービスでは、これらのラベルのサブセットが表示される可能性があります。
+Azure Active Directory ポータルを除いて、秘密度ラベルをサポートする管理センターを使用すると、テナントのすべての秘密度ラベルが表示されます。 一方、公開ポリシーに従って感度ラベルをフィルター処理するユーザー アプリとサービスでは、これらのラベルのサブセットが表示される可能性があります。 Azure Active Directory ポータルは、公開ポリシーに従ってラベルもフィルター処理します。
 
 次のアプリとサービスで、サイトとグループの設定用に構成した秘密度ラベルをサポートしています。
 
@@ -335,9 +335,9 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
   - SharePoint 管理センター
   - Teams 管理センター
-  - Azure Active Directory ポータル
   - Microsoft 365 管理センター
   - Microsoft 365 コンプライアンス センター
+  - Azure Active Directory ポータル
 
 - ユーザーのアプリとサービス:
 

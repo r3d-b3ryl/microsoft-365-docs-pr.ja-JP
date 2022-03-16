@@ -149,7 +149,7 @@
               href: add-users/remove-former-employee-step-3.md
             - name: 手順 4. 元従業員のメールを別の従業員に転送するか、または元従業員のメールボックスを共有メールボックスに変換する
               href: add-users/remove-former-employee-step-4.md
-            - name: 手順 5.  別の従業員に OneDrive および Outlook データへのアクセスを許可する
+            - name: 手順 5. 別の従業員に OneDrive および Outlook のデータへのアクセスを許可する
               href: add-users/remove-former-employee-step-5.md
             - name: 手順 6. 元従業員から Microsoft 365 ライセンスを削除する
               href: add-users/remove-former-employee-step-6.md
@@ -344,12 +344,12 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: 優先アカウントを管理および監視する
           href: setup/priority-accounts.md
+        - name: アイドル セッション タイムアウトをオンにする
+          href: manage/idle-session-timeout-web-apps.md
         - name: Office 2013 の先進認証を有効にする
           href: security-and-compliance/enable-modern-authentication.md
         - name: データ保護のための前提条件
           href: security-and-compliance/pre-requisites-for-data-protection.md
-        - name: セキュリティ機能
-          href: security-and-compliance/secure-your-business-data.md
         - name: 驚異の保護を強化する
           href: security-and-compliance/increase-threat-protection.md
         - name: Microsoft Defender ウイルス対策によって検出された脅威
