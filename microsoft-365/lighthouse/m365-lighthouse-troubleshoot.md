@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouse、エラー メッセージと問題のトラブルシューティングと解決に関するヘルプを参照してください。
-ms.openlocfilehash: da1a247c789754f75642caff78418a0b405ec5b0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e39eea66222852d8f331aa6bc68b386bea3da763
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330956"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513034"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>問題とエラー メッセージのトラブルシューティングと解決を行Microsoft 365 Lighthouse
 
@@ -129,12 +129,6 @@ DAP 関係を持つお客様の場合、パートナー管理者はパートナ�
 **解決策:** テナント デバイスが追加されたら、デバイス データがライトハウスに表示されるのに 4 時間かかります。
 
 解決手順に従った後もデバイスコンプライアンスと脅威管理ページにデータが表示されない場合は、サポートにお問い合わせください。 詳細については、「Get [help and support for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-get-help-and-support.md)。
-
-### <a name="there-are-no-windows-365-business-cloud-pcs-in-lighthouse"></a>ライトハウスにはWindows 365 Business Cloud PC はありません  
-
-**原因**: 現在、365 Business Cloud PC の表示と管理をサポートWindowsライトハウスはサポートされていません。
-
-**解決策:** 365 Business Cloud PC のWindowsを [表示および管理](https://go.microsoft.com/fwlink/p/?linkid=2024339)するには、Microsoft 365 管理センターを使用します [https://windows365.microsoft.com](https://windows365.microsoft.com)。
 
 ## <a name="related-content"></a>関連コンテンツ
 

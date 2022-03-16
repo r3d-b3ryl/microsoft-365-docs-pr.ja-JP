@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365には、Exchange メールボックス、SharePoint、OneDrive for Business サイト、Microsoft 365 グループなど、さまざまな場所にあるコンテンツを検索およびエクスポートするために使用できる 3 つの電子情報開示ツールが用意されています。Microsoft Teamsし、会話Skype for Businessします。 コアの電子情報開示とAdvanced eDiscovery、調査の管理に役立つ多くの追加機能を提供します。
-ms.openlocfilehash: e92619ff0ecbfcdbdf1a7f41eb4cd35282a6f2d9
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: cccc30dd649dc5abe74c551434e904236ecf9d35
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494514"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512490"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Microsoft 365 の電子情報開示ソリューション
 
@@ -132,8 +132,8 @@ Microsoft 365には、コンテンツ検索、Core 電子情報開示、およ�
 - Microsoft 365 G1 サブスクリプション
 - Microsoft 365 F1 F3 サブスクリプション、または F5 セキュリティ アドオン
 - Microsoft 365 Business Premiumサブスクリプション
-- Microsoft 365 Business Standard
-- Microsoft 365 Business Basic
+- Microsoft 365 Business Standardサブスクリプション
+- Microsoft 365 Business Basicサブスクリプション
 - Office 365 Education A1 サブスクリプション
 - Office 365 E1サブスクリプション
 

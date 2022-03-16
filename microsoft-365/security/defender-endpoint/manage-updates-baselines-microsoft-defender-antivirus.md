@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 2f6f2135e81bf99f6391b75067ad89d1af3a712c
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: be3dcfd23c0fb77604cec140a4b1d3606f6ee345
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468710"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513046"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新プログラムMicrosoft Defender ウイルス対策ベースラインの適用を管理する
 
@@ -85,6 +85,27 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 - 統合の改善 ([クラウド、Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>2022 年 2 月 (プラットフォーム: 4.18.xxxx.xx |エンジン: 1.1.19000.8)</summary>
+
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.357.x.x**<br/>
+&ensp;リリース: **2022 年 3 月 14 日**<br/>
+&ensp;プラットフォーム: **4.18.xxxx.xx**<br/>
+&ensp;エンジン: **1.1.19000.8**<br/>
+&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
+
+エンジンのバージョン: 1.1.19000.8 <br/>
+セキュリティ インテリジェンス更新プログラムのバージョン: 1.357.x.x <br/>
+
+### <a name="whats-new"></a>新機能
+
+- 近日対応予定
+
+### <a name="known-issues"></a>既知の問題
+
+既知の問題はありません
+
+<br/><br/>
+</details><details>
 <summary>2022 年 1 月 (プラットフォーム: 4.18.2201.10 |エンジン: 1.1.18900.2)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.357.8.0**<br/>
@@ -138,14 +159,21 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません
 <br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
+
+新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。<br/><br/>
+
+<details>
 <summary> 2021 年 10 月 (プラットフォーム: 4.18.2110.6 |エンジン: 1.1.18700.4)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.353.3.0**<br/>
 &ensp;リリース日: **2021 年 10 月 28 日**<br/>
 &ensp;プラットフォーム: **4.18.2110.6**<br/>
 &ensp;エンジン: **1.1.18700.4**<br/>
-&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
+&ensp;サポート フェーズ: **テクニカル アップグレード のサポート (のみ)**<br/>
 
 エンジンのバージョン: 1.1.18700.4 セキュリティ インテリジェンス更新プログラムのバージョン: 1.353.3.0
 
@@ -160,14 +188,7 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません
 <br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
-
-新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。<br/><br/>
-
-<details>
+</details><details>
 <summary> 2021 年 9 月 (プラットフォーム: 4.18.2109.6 |エンジン: 1.1.18600.4)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.351.7.0**<br/>

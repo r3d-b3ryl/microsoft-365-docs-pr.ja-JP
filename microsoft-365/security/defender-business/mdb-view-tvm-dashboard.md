@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 807ed67a789364928b00431f9d7a5abb98eba137
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 7d529ffac45484f585cf654d30cb5522bbdffcd5
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449906"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512294"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Microsoft Defender for Business で&の脆弱性管理ダッシュボードを使用する
 
@@ -33,7 +33,7 @@ ms.locfileid: "63449906"
 
 Microsoft Defender for Business には、セキュリティ チーム&時間と労力を節約するように設計された脅威の脆弱性管理ダッシュボードが含まれています。 露出スコアの提供に加えて、公開されたデバイスとセキュリティに関する推奨事項に関する情報も表示できます。 [脅威の管理] ダッシュボード&使用して、次のコマンドを実行できます。
 
-- 組織内のデバイスに関連付けられている露出スコアを表示する
+- 会社のデバイスに関連付けられている露出スコアを表示する
 
 - デバイスとの通信障害への対処、ファイアウォール保護の有効化、定義の更新など、セキュリティに関するMicrosoft Defender ウイルス対策表示する
 

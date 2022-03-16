@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 4f92c50ad971de439541a7b8ea2e8f9fb5312c48
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: deae4e7449f142cbdbb9ef4d41953824499bedca
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449401"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512686"
 ---
 # <a name="get-microsoft-defender-for-business"></a>ビジネス向け Microsoft Defender を取得する
 
@@ -80,7 +80,7 @@ Microsoft には、サービスを販売する権限を持つソリューショ�
 
 4. 連絡先情報をフォームに入力します。 
 
-   - Microsoft パートナーを使用している顧客の場合は、[その他] ボックスにパートナーの組織名を入力します。 [ **Submit**] を選びます。
+   - Microsoft パートナーと一緒に作業している顧客の場合は、[その他]  ボックスにパートナーの会社名を入力します。 [ **Submit**] を選びます。
    - Microsoft パートナーの場合は、パートナーの種類と、作業を計画している顧客に関する情報を必ず示してください。
 
 5. フォームへの入力が完了したら、[送信] を選択 **します**。
@@ -98,12 +98,12 @@ Microsoft には、サービスを販売する権限を持つソリューショ�
 
 試用版を開始する準備ができたら、2 つのメイン ポータルを使用して設定を行います。 次の表に、使用する 2 つのメイン ポータルの概要を示します。 <br/><br/>
 
-|portal  |[説明]  |
+|portal  |説明  |
 |---------|---------|
 | the Microsoft 365 管理センター ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | 試用版をMicrosoft 365 管理センターし、初めてサインインするには、次の情報を使用します。<br/><br/> また、次のコマンドを使用Microsoft 365 管理センターします。 <br/>- ユーザーを追加または削除する<br/>- ユーザー ライセンスの割り当て<br/>- 製品とサービスを表示する<br/>- サブスクリプションのセットアップ タスクをMicrosoft 365する <br/><br/> 詳細については、「概要」[を参照Microsoft 365 管理センター](../../admin/admin-overview/admin-center-overview.md)。      |
 | ポータルMicrosoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Defender for Business をMicrosoft 365 Defender構成するには、このポータルを使用します。 <br/><br/>次の場合は、Microsoft 365 Defenderポータルを使用します。 <br/>- デバイスとデバイス保護ポリシーを表示する<br/>- 検出された脅威を表示し、アクションを実行する<br/>- セキュリティに関する推奨事項を表示し、セキュリティ設定を管理する <br/><br/>詳細については、「ポータルの使用を開始[する」をMicrosoft 365 Defenderしてください](mdb-get-started.md)。        |
 
-組織が組織で Microsoft 365 Business Premiumを使用している場合は、Microsoft Intune (Microsoft エンドポイント マネージャー の一部) を使用し、Microsoft エンドポイント マネージャー 管理センター () を使用している可能性があります[https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)。 エンドポイント マネージャーデバイスを管理し、セキュリティ設定を構成することもできます。 詳細については、「Microsoft Intune [MDM および MAM プロバイダー」を参照してください](/mem/intune/fundamentals/what-is-intune)。
+会社が Microsoft 365 Business Premium を使用している場合は、Microsoft Intune (Microsoft エンドポイント マネージャー の一部) を使用し、Microsoft エンドポイント マネージャー 管理センター () を使用している可能性があります[https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)。 エンドポイント マネージャーデバイスを管理し、セキュリティ設定を構成することもできます。 詳細については、「Microsoft Intune [MDM および MAM プロバイダー」を参照してください](/mem/intune/fundamentals/what-is-intune)。
 
 ## <a name="activate-your-trial"></a>試用版をアクティブ化する
 

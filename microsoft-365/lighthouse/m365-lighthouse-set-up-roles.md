@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouseを使用する場合は、顧客テナントを管理するための役割を設定する方法について説明します。
-ms.openlocfilehash: 82203c7faa361bf512c3184616b47760655083d4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 948e6909f0fc8d743c84662de6c8a2d9c0bc88e3
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331152"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512242"
 ---
 # <a name="set-up-roles-to-manage-customer-tenants"></a>顧客テナントを管理するための役割の設定
 
@@ -30,6 +30,9 @@ ms.locfileid: "63331152"
 MSP 技術者が代理管理者特権 (DAP) を通じて付与されたヘルプデスク エージェントまたは管理エージェントの役割を使用して顧客環境に引き続きアクセスする場合は、この記事の「ライトハウスの [DAP](#dap-in-lighthouse) 」を参照してください。 GDAP と DAP の両方が共存する場合、GDAP を介してユーザーに付与される役割は、GDAP 関係が確立されている顧客に優先されます。
 
 ## <a name="set-up-gdap-in-lighthouse"></a>ライトハウスで GDAP を設定する
+
+> [!NOTE]
+> GDAP は現在 [テクニカル プレビュー (](/partner-center/announcements/2022-february#6) パブリック プレビュー) で、パートナーが GDAP を一般に利用できる前に、詳細なアクセス許可を割り当て可能です。
 
 顧客との GDAP 関係を作成するには、以下の高レベルの手順が必要です。 GDAP の詳細については、「 [詳細な委任管理者特権 (GDAP) の概要」を参照してください。](/partner-center/gdap-introduction)
 

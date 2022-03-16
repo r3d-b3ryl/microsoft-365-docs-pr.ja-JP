@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse機能領域別のライトハウスの既知の問題の一覧を参照してください。
-ms.openlocfilehash: c91ef6a05bf335ed503615cbd058d12a5a43fd5a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4d19051de1b4466dabc535446182c7f630ee948b
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319269"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512268"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>ユーザーに関する既知のMicrosoft 365 Lighthouse
 
@@ -74,7 +74,7 @@ ms.locfileid: "63319269"
 ## <a name="granular-delegated-admin-permissionsgdap"></a>詳細な委任管理者アクセス許可 (GDAP)
 
 > [!NOTE]
-> GDAP は現在テクニカル プレビュー ( [パブリック](/partner-center/announcements/2022-february#6) プレビュー) で、パートナーが GDAP を一般に利用できる前に詳細なアクセス許可を割り当て可能です。
+> GDAP は現在 [テクニカル プレビュー (](/partner-center/announcements/2022-february#6) パブリック プレビュー) で、パートナーが GDAP を一般に利用できる前に、詳細なアクセス許可を割り当て可能です。
 
 | 問題 | 説明 | 解決方法 |
 | ---------------- | ---------------- | ---------------- |

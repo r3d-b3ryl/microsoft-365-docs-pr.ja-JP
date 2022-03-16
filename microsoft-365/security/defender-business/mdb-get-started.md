@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: e6ad964e250b9ae3bc01de02a4d51675beaf9c80
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 0754a16310df912a63ba92395b9cb9369436dc93
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449514"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512896"
 ---
 # <a name="get-started-using-the-microsoft-365-defender-portal"></a>ポータルの使用Microsoft 365 Defenderする
 
@@ -59,21 +59,21 @@ Microsoft Defender for Business にサインアップした後は、ポータル
 
 | アイテム | 説明 |
 |:---|:---|
-| **ホーム** | ホーム ページに移動します。Microsoft 365 Defender。 ホーム ページには、検出されたアクティブな脅威を強調表示するカードと、組織のデータとデバイスのセキュリティ保護に役立つ推奨事項が含まれています。 <br/><br/>Defender for Business には推奨事項が含まれているので、セキュリティ チームの時間と労力を節約できます。 推奨事項は、業界のベスト プラクティスに基づいて行います。 推奨事項の詳細については、「セキュリティの推奨事項 - 脅威と脆弱性の管理」[を参照してください](../defender-endpoint/tvm-security-recommendation.md)。 |
+| **ホーム** | ホーム ページに移動します。Microsoft 365 Defender。 ホーム ページには、検出されたアクティブな脅威を強調表示するカードと、会社のデータとデバイスのセキュリティ保護に役立つ推奨事項が含まれています。 <br/><br/>Defender for Business には推奨事項が含まれているので、セキュリティ チームの時間と労力を節約できます。 推奨事項は、業界のベスト プラクティスに基づいて行います。 推奨事項の詳細については、「セキュリティの推奨事項 - 脅威と脆弱性の管理」[を参照してください](../defender-endpoint/tvm-security-recommendation.md)。 |
 | **インシデント** | 最近のインシデントの一覧にアクセスします。 アラートがトリガーされると、インシデントが作成されます。 インシデントには、複数のアラートを含めできます。 インシデントを定期的に確認してください。 <br/><br/>インシデントの詳細については、「 [Microsoft Defender for Business でのインシデントの表示と管理」を参照してください](mdb-view-manage-incidents.md)。|
 | **アクション センター** | 完了または保留中のアクションを含む、応答アクションの一覧にアクセスします。 <br/>- [履歴] **タブを** 選択して、実行されたアクションを表示します。 一部のアクションは自動的に実行されます。他のユーザーは、承認された後に手動で実行または完了します。 <br/>- [ **保留中] タブを** 選択して、続行する承認が必要なアクションを表示します。 <br/><br/>アクション センターの詳細については、「アクション センターで [修復アクションを確認する」を参照してください](mdb-review-remediation-actions.md)。 |
 | **脅威の分析** | 現在の脅威のビューにアクセスし、脅威の状況を一目で確認できます。 脅威分析には、Microsoft セキュリティ研究者からのレポートや情報も含まれています。 <br/><br/>脅威分析の詳細については、「脅威分析を通じて新たな脅威を追跡して対応する」 [を参照してください](../defender-endpoint/threat-analytics.md)。 |
-| **セキュア スコア** | 組織のセキュリティの位置を表し、改善するための提案を提供します。<br/><br/>Secure Score の詳細については、「 [Microsoft Secure Score for Devices」を参照してください](../defender-endpoint/tvm-microsoft-secure-score-devices.md)。 |
+| **セキュア スコア** | 会社のセキュリティの位置を示す情報を提供し、改善するための提案を提供します。<br/><br/>Secure Score の詳細については、「 [Microsoft Secure Score for Devices」を参照してください](../defender-endpoint/tvm-microsoft-secure-score-devices.md)。 |
 | **ラーニング ハブ** | サブスクリプションに含まれるラーニング パスを使用して、セキュリティ トレーニングや他のリソースにアクセスできます。 製品、スキル レベル、役割などによってフィルター処理できます。 ラーニング ハブは、セキュリティ チームが Defender for Business の & 機能や、[Microsoft Defender for](../defender-endpoint/microsoft-defender-endpoint.md) Endpoint や Microsoft Defender for Office 365 などの Microsoft 製品のセキュリティ機能を強化するのに[役立](../office-365-security/defender-for-office-365.md)ちます。  |
 |  > エンドポイント **検索** | Microsoft Defender for Business にオンボードされた 1 つ以上のデバイスを検索できます。 |
 |  > エンドポイント **デバイス インベントリ** | Microsoft Defender for Business にオンボードされた 1 つ以上のデバイスを検索できます。 |
-|  > エンドポイント **脆弱性の管理** | ダッシュボード、推奨事項、修復アクティビティ、ソフトウェア インベントリ、および組織内の潜在的な弱点の一覧を提供します。 |
+|  > エンドポイント **脆弱性の管理** | ダッシュボード、推奨事項、修復アクティビティ、ソフトウェア インベントリ、および会社内の潜在的な弱点の一覧を提供します。 |
 |  > エンドポイント **チュートリアル** | 脅威保護機能の動作の詳細については、チュートリアルとシミュレーションにアクセスできます。 <br/><br/>各チュートリアルの **シミュレーション ファイルを取得** する前に、[チュートリアルの読み取り] リンクを選択します。 一部のシミュレーションではOfficeを読むには、Microsoft Wordなどのアプリを使用する必要があります。 |
 |  > エンドポイント **デバイス構成** | オペレーティング システム別および種類別にセキュリティ ポリシーを一覧表示します。 <br/><br/>セキュリティ ポリシーの詳細については、「Microsoft Defender for Business のポリシーを表示または編集 [する」を参照してください](mdb-view-edit-policies.md)。 |
-| **レポート** | 使用可能なセキュリティ レポートの一覧を表示します。 これらのレポートを使用すると、セキュリティの傾向を確認し、脅威の検出とアラートに関する詳細を表示し、組織の脆弱なデバイスの詳細を確認できます。 |
-| **正常性** | サービスの正常性状態を表示し、今後の変更を計画できます。 <br/>- [**サービスの正常性]** を選択して、組織のサブスクリプションにMicrosoft 365されているサービスの正常性状態を表示します。 <br/>- [ **メッセージ センター] を** 選択して、計画された変更と予想される変更について確認します。  |
-| **ロール&アクセス許可** | セキュリティを管理する組織内のユーザーにアクセス許可を割り当て、インシデントとレポートを Microsoft 365 Defenderできます。 また、組織のデバイスをオンボードし、脅威保護ポリシーを割り当てるデバイス グループを設定および管理することもできます。  |
-| **設定** | ポータルと Microsoft Defender for Business の設定Microsoft 365 Defender編集できます。 たとえば、オンボード (またはオフボード) と組織のデバイス (エンドポイントとも呼ばれます) を使用できます。 アラート抑制ルールなどのルールを定義し、特定のファイルまたはプロセスをブロックまたは許可するインジケーターを設定することもできます。  |
+| **レポート** | 使用可能なセキュリティ レポートの一覧を表示します。 これらのレポートを使用すると、セキュリティの傾向を確認し、脅威の検出とアラートに関する詳細を表示し、会社の脆弱なデバイスの詳細を確認できます。 |
+| **正常性** | サービスの正常性状態を表示し、今後の変更を計画できます。 <br/>- [**サービスの正常性]** を選択して、Microsoft 365に含まれるサービスの正常性状態を表示します。 <br/>- [ **メッセージ センター] を** 選択して、計画された変更と予想される変更について確認します。  |
+| **ロール&アクセス許可** | セキュリティを管理する会社のユーザーにアクセス許可を割り当て、インシデントとレポートを Microsoft 365 Defenderできます。 また、デバイス グループをセットアップおよび管理して、会社のデバイスをオンボードし、脅威保護ポリシーを割り当てすることもできます。  |
+| **設定** | ポータルと Microsoft Defender for Business の設定Microsoft 365 Defender編集できます。 たとえば、オンボード (またはオフボード) と会社のデバイス (エンドポイントとも呼ばれます) を使用できます。 アラート抑制ルールなどのルールを定義し、特定のファイルまたはプロセスをブロックまたは許可するインジケーターを設定することもできます。  |
 | **その他のリソース** | 他のポータル (Azure Active Directory など) に移動します。 他のポータルに移動する必要Microsoft 365 Defender、ユーザーのニーズを満たす必要がある場合は、このポータルに注意してください。 |
 
 ## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>インシデントと応答アクションに関する学習モジュールを完了する

@@ -18,12 +18,12 @@ ms.date: 03/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 3a0701880a5712de4ec930e49397bf2ef4b8e637
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 25d01c597da0f3a3e108eeee27d3a0dfe5b58eb7
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468858"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512532"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -153,13 +153,13 @@ Defender for Endpoint は、パッシブ モードMicrosoft Defender ウイル�
  | [ネットワーク保護](network-protection.md)  | はい | 不要 | 不要 | 不要 | 
  | [攻撃面の減少ルール](attack-surface-reduction.md)  | はい | 不要 | 不要  | いいえ | 
  | [限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | いいえ | 不要 | はい | 不要 | 
- | [スキャン中ファイルと検出情報](review-scan-results-microsoft-defender-antivirus.md) | はい | はい | 不要 | はい | 
- | [脅威の修復](configure-remediation-microsoft-defender-antivirus.md) | はい | メモ <sup>[[5] を参照](#fn5)してください。</sup> | 不要 | はい | 
+ | [スキャン中ファイルと検出情報](review-scan-results-microsoft-defender-antivirus.md) | はい | は<sup>い[[5](#fn5)]</sup> | 不要 | はい | 
+ | [脅威の修復](configure-remediation-microsoft-defender-antivirus.md) | はい | はい | 不要 | はい | 
  | [セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md) | はい | はい | 不要 | はい | 
 
 (<a id="fn4">4</a>) 一般に、Microsoft Defender ウイルス対策 がパッシブ モードの場合、リアルタイム保護は、有効でパッシブ モードの場合でも、ブロックまたは強制を提供しません。
 
-(<a id="fn5">5</a>) Microsoft Defender ウイルス対策モードの場合、脅威修復機能はスケジュールされたスキャンまたはオンデマンド スキャン中にのみアクティブになります。
+(<a id="fn5">5</a>) Microsoft Defender ウイルス対策モードの場合、スキャンはスケジュールされません。
 
 > [!NOTE]
 > [Microsoft 365エンドポイント のデータ](/microsoft-365/compliance/endpoint-dlp-learn-about)損失防止保護は、アクティブモードまたはパッシブ モードの場合Microsoft Defender ウイルス対策正常に動作し続ける。

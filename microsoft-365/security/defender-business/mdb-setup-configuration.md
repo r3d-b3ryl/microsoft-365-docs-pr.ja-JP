@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ec001f0a1576b767f93d74b7ef865e3912d397f1
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 8a649e7b7e2fef43661e9267c51956aac2a7bb2e
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449794"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512588"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Microsoft Defender for Business のセットアップと構成
 
@@ -47,7 +47,7 @@ Microsoft Defender for Business は、特に中小規模ビジネス向けに設
 | 1 | [要件を確認する](mdb-requirements.md) | Microsoft Defender for Business のサポートされているオペレーティング システムを含む要件を確認します。 「 [Microsoft Defender for Business の要件」を参照してください](mdb-requirements.md)。 |
 | 2 | [役割とアクセス許可の割り当て](mdb-roles-permissions.md)     | セキュリティ チームのユーザーには、検出された脅威& 修復アクションの確認、& 編集ポリシーの表示、デバイスのオンボーディング、レポートの使用など、タスクを実行するためのアクセス許可が必要です。 これらのアクセス許可は、特定の役割を通じて付与できます。 「ロール [とアクセス許可の割り当て」を参照してください](mdb-roles-permissions.md)。        |
 | 3 | [電子メール通知を設定する](mdb-email-notifications.md) | アラートがトリガーされた場合、または新しい脆弱性が検出された場合に電子メール通知を受け取るユーザーを指定できます。 「メール [通知を設定する」を参照してください](mdb-email-notifications.md)。| 
-| 4 | [デバイスのオンボード](mdb-onboard-devices.md)     | Microsoft Defender for Business は、組織のデバイスをオンボードするためのいくつかのオプションから選択できるようセットアップされています。 「 [オンボード デバイスから Microsoft Defender for Business」を参照してください](mdb-onboard-devices.md)。         |
+| 4 | [デバイスのオンボード](mdb-onboard-devices.md)     | Microsoft Defender for Business は、会社のデバイスをオンボードするためのいくつかのオプションから選択できるようセットアップされています。 「 [オンボード デバイスから Microsoft Defender for Business」を参照してください](mdb-onboard-devices.md)。         |
 | 5 | [セキュリティ設定とポリシーを構成する](mdb-configure-security-settings.md) | 複数のオプションから選択して、簡略化された構成プロセスやセキュリティ ポリシーなど、セキュリティ設定とポリシーを構成Microsoft エンドポイント マネージャー。 「 [セキュリティ設定とポリシーを構成する」を参照してください](mdb-configure-security-settings.md)。 |
 
 ## <a name="next-steps"></a>次の手順

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: c5de66418b242beb975cce0d6ece299753360c99
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: 3db4d1b3cd4e4299c892a352b4f701abf05055ae
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504775"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512770"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Microsoft Defender for Business にデバイスをオンボードする
 
@@ -31,7 +31,7 @@ ms.locfileid: "63504775"
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
-Microsoft Defender for Business では、組織のデバイスをオンボーディングするためのオプションを複数選択できます。 この記事では、オプションについて説明し、オンボーディングのしくみの概要について説明します。
+Microsoft Defender for Business では、会社のデバイスをオンボーディングするためのオプションを複数選択できます。 この記事では、オプションについて説明し、オンボーディングのしくみの概要について説明します。
 
 >
 > **少し時間ありますか?**
@@ -40,7 +40,7 @@ Microsoft Defender for Business では、組織のデバイスをオンボーデ
 
 ## <a name="get-the-device-onboarding-guide"></a>デバイスオンボーディング ガイドの取得
 
-次のガイドと情報を使用して、組織に最適なオプションを選択します。
+次のガイドと情報を使用して、会社に最適なオプションを選択します。
 
 [:::image type="content" source="media/mdb-device-onboarding.png" alt-text="デバイスオンボーディング図のスクリーンショット":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
 [PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
@@ -79,7 +79,7 @@ Defender for Business では、既に Microsoft エンドポイント マネー�
 
 自動オンボーディング オプションは、デバイスWindows適用されます。 自動オンボーディングは、次の条件が満たされている場合に使用できます。
 
-- Defender for Business を使用するMicrosoft エンドポイント マネージャー前Microsoft Intune組織で、Microsoft Intune、モバイル デバイス管理 (MDM) が既に使用されている
+- Defender for Business を使用するMicrosoft エンドポイント マネージャー、Microsoft Intune、またはモバイル デバイス管理 (MDM) をMicrosoft Intune会社が既に使用している
 
 - 既に、Windowsに登録されているデバイスエンドポイント マネージャー
 
@@ -107,11 +107,11 @@ Windowsデバイスが エンドポイント マネージャー に既に登録�
    | オペレーティング システム | Procedure |
    |---|---|
    | Windows | 1. デバイスWindows、構成パッケージの内容をデスクトップ フォルダーなどの場所に展開します。 という名前のファイルが必要です `WindowsDefenderATPLocalOnboardingScript.cmd`。 <br/><br/>2. 管理者としてコマンド プロンプトを開きます。<br/><br/>3. スクリプト ファイルの場所を入力します。 たとえば、ファイルをデスクトップ フォルダーにコピーした場合は、「: `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`」と入力し、Enter キーを押します (または **[OK] を選択します**)。<br/><br/>4. スクリプトの実行後、[検出テストの [実行] に進みます](#run-a-detection-test)。 |
-   | macOS | 1. Mac コンピューターで、インストール パッケージをローカル ディレクトリ `wdav.pkg` に保存します。 <br/><br/>2. オンボーディング パッケージをインストール パッケージ `WindowsDefenderATPOnboardingPackage.zip` に使用したのと同じディレクトリに保存します。 <br/><br/>3. Finder を使用して保存した `wdav.pkg` 場所に移動し、開きます。<br/><br/>4. [ **続行] を** 選択し、ライセンス条項に同意し、メッセージが表示されたらパスワードを入力します。<br/><br/>5. Microsoft のドライバーのインストールを許可するように求めるメッセージが表示されます ("System Extension Blocked" または "Installation is on hold"、または両方)。 ドライバーのインストールを許可する必要があります。 インストールを許可するには、[Open **Security Preferences**] または [**Open System PreferencesSecurity** >  &**プライバシー**] を選択し、[許可] を選択 **します**。<br/><br/>6. Bash で次の Python コマンドを使用してオンボーディング パッケージを実行します。 `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py` <br/><br/>7. デバイスが組織に関連付けられているか確認するには、Bash で次の Python コマンドを使用します。 `mdatp health --field org_id`<br/><br/>8. macOS 10.15 (Catalina) 以降を使用している場合は、デバイスを保護するために Defender for Business の同意を付与します。 「**System PreferencesSecurity** >  **&** **PrivacyFull** >  >  **Disk Access」に移動します**。  ロック アイコンを選択して変更を加えます (ダイアログ ボックスの下部)、Microsoft Defender for Business (または Defender for Endpoint) を選択します(表示されている場合)。 <br/><br/>9. デバイスがオンボードされているのを確認するには、Bash で次のコマンドを使用します。 `mdatp health --field real_time_protection_enabled`    |
+   | macOS | 1. Mac コンピューターで、インストール パッケージをローカル ディレクトリ `wdav.pkg` に保存します。 <br/><br/>2. オンボーディング パッケージをインストール パッケージ `WindowsDefenderATPOnboardingPackage.zip` に使用したのと同じディレクトリに保存します。 <br/><br/>3. Finder を使用して保存した `wdav.pkg` 場所に移動し、開きます。<br/><br/>4. [ **続行] を** 選択し、ライセンス条項に同意し、メッセージが表示されたらパスワードを入力します。<br/><br/>5. Microsoft のドライバーのインストールを許可するように求めるメッセージが表示されます ("System Extension Blocked" または "Installation is on hold"、または両方)。 ドライバーのインストールを許可する必要があります。 インストールを許可するには、[Open **Security Preferences**] または [**Open System PreferencesSecurity** >  &**プライバシー**] を選択し、[許可] を選択 **します**。<br/><br/>6. Bash で次の Python コマンドを使用してオンボーディング パッケージを実行します。 `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py` <br/><br/>7. デバイスが会社に関連付けられているか確認するには、Bash で次の Python コマンドを使用します。 `mdatp health --field org_id`<br/><br/>8. macOS 10.15 (Catalina) 以降を使用している場合は、デバイスを保護するために Defender for Business の同意を付与します。 「**System PreferencesSecurity** >  **&** **PrivacyFull** >  >  **Disk Access」に移動します**。  ロック アイコンを選択して変更を加えます (ダイアログ ボックスの下部)、Microsoft Defender for Business (または Defender for Endpoint) を選択します(表示されている場合)。 <br/><br/>9. デバイスがオンボードされているのを確認するには、Bash で次のコマンドを使用します。 `mdatp health --field real_time_protection_enabled`    |
 
 ## <a name="microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャー
 
-Defender for Business を使用する前に エンドポイント マネージャー (Microsoft Intune とモバイル デバイス管理を含む) を既に使用していた場合は、引き続き エンドポイント マネージャー を使用して組織のデバイスをオンボードできます。 このエンドポイント マネージャー、iOS デバイスや Android デバイスを含むコンピューター、タブレット、電話をオンボードできます。
+Defender for Business を使用する前に エンドポイント マネージャー (Microsoft Intune とモバイル デバイス管理を含む) を既に使用していた場合は、引き続き エンドポイント マネージャー を使用して会社のデバイスをオンボードできます。 このエンドポイント マネージャー、iOS デバイスや Android デバイスを含むコンピューター、タブレット、電話をオンボードできます。
 
 「[デバイスの登録」を参照Microsoft Intune](/mem/intune/enrollment/device-enrollment)。
 
@@ -152,7 +152,7 @@ Defender for Business に Windowsデバイスをオンボードした後、Windo
 
 ## <a name="gradual-device-onboarding"></a>段階的なデバイスオンボーディング
 
-組織のデバイスを段階的にオンボードできます。 *この段階的なデバイスオンボーディングを呼び出します*。 
+会社のデバイスを段階的にオンボードできます。 *この段階的なデバイスオンボーディングを呼び出します*。 
 
 1. オンボードするデバイスのセットを識別します。
 

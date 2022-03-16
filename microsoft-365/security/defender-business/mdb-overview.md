@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 6db82c1dcc9afceebcb9fff891cb90ddafa95f21
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 14b93f27c2d7bd0255fb08164072ba160af6be1b
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468724"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512448"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Microsoft Defender for Business の概要
 
@@ -32,7 +32,7 @@ ms.locfileid: "63468724"
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
-Microsoft Defender for Business は、特に中小規模ビジネス向け (最大 300 人の従業員) 向けに設計された新しいエンドポイント セキュリティ ソリューションです。 このエンドポイント セキュリティ ソリューションを使用すると、組織のデバイスはランサムウェア、マルウェア、フィッシング、その他の脅威から保護されます。 
+Microsoft Defender for Business は、特に中小規模ビジネス向け (最大 300 人の従業員) 向けに設計された新しいエンドポイント セキュリティ ソリューションです。 このエンドポイント セキュリティ ソリューションを使用すると、企業のデバイスはランサムウェア、マルウェア、フィッシング、その他の脅威から保護されます。 
 
 Defender for Business の詳細については、次のビデオをご覧ください。 <br/><br/>
 
@@ -51,7 +51,7 @@ Defender for Business を使用すると、ビジネスで使用するデバイ�
 
 - **Enterpriseグレードのセキュリティ**。 Defender for Business は、業界をリードする [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) ソリューションから強力なエンドポイント セキュリティ機能を提供し、IT 管理者が中小企業をサポートするためにこれらの機能を最適化します。
 
-- **使いやすいセキュリティ ソリューション**。 Defender for Business は、エンドポイントのセキュリティに関する推奨事項と分析情報を基に行動を導く、合理化されたエクスペリエンスを提供します。 Defender for Business は、組織のデバイスを 1 日目から保護するために設計されたウィザード駆動型の構成と既定のセキュリティ ポリシーを提供していますので、専門的な知識は必要ありません。
+- **使いやすいセキュリティ ソリューション**。 Defender for Business は、エンドポイントのセキュリティに関する推奨事項と分析情報を基に行動を導く、合理化されたエクスペリエンスを提供します。 Defender for Business は、ウィザード駆動型の構成と、会社のデバイスを 1 日目から保護するために設計された既定のセキュリティ ポリシーを提供していますので、専門的な知識は必要ありません。
 
 - **環境の柔軟性**。 ビジネス向け Defender は、ビジネス環境を使用している場合でも、Microsoft Cloud をMicrosoft Intuneでも、ビジネス環境で作業できます。 Defender for Business は、Windowsに組み込Windows macOS、iOS、および Android デバイス用のアプリで動作します。
 

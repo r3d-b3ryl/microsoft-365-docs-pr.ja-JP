@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: c955b85001a141933227873a1f74e681f74b004b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e1ef67f3f3011a660793858900f41f50c0e503b0
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322941"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512992"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Microsoft Defender for Business のチュートリアルとシミュレーション
 
@@ -30,7 +30,7 @@ ms.locfileid: "63322941"
 > 
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
 
-Microsoft Defender for Business のセットアップが完了したばかりの場合は、Defender for Business の動作についてどこから学ぶのか疑問に思う場合があります。 この記事では、試すプレビュー シナリオと、Defender for Business で使用できるいくつかのチュートリアルとシミュレーションについて説明します。 これらのリソースは、Defender for Business が組織でどのように機能できるのか確認するために設計されています。
+Microsoft Defender for Business のセットアップが完了したばかりの場合は、Defender for Business の動作についてどこから学ぶのか疑問に思う場合があります。 この記事では、試すプレビュー シナリオと、Defender for Business で使用できるいくつかのチュートリアルとシミュレーションについて説明します。 これらのリソースは、Defender for Business が会社でどのように機能できるのか確認するために設計されています。
 
 >
 > **少し時間ありますか?**
@@ -48,7 +48,7 @@ Microsoft Defender for Business のセットアップが完了したばかりの
 | ローカル スクリプトを使用したデバイスのオンボード <br/>(*実稼働展開用ではありません*)     | Defender for Business では、各デバイスでダウンロードして実行するスクリプトを使用して、Windows 10 デバイスと 11 台のデバイスを最大 10 台までオンボードできます。 環境内での Defender for Business の動作を評価する場合に適したスクリプトは、Azure Active Directory (Azure AD) を使用して信頼を作成し、デバイスを Microsoft Intune に登録します。 詳細については、「Defender [for Business のローカル スクリプト」を参照してください](mdb-onboard-devices.md#local-script-in-defender-for-business)。         |
 | デバイスを使用したオンボード Microsoft Intune     | Defender for Endpoint を取得する前Microsoft Intuneを使用していた場合は、引き続きデバイスMicrosoft Intuneを使用できます。 macOS、iOS、Android デバイスのオンボーディングを試Microsoft Intune。 詳細については、「デバイスの登録[」を参照Microsoft Intune](/mem/intune/enrollment/device-enrollment)。        |
 | セキュリティ ポリシーの編集     | Defender for Business でセキュリティ ポリシーを管理している場合は、[デバイス構成] ページを使用してポリシーを表示および編集します。 詳細については、「 [Microsoft Defender for Business のポリシーを表示または編集する」を参照してください](mdb-view-edit-policies.md)。        |
-| シミュレートされた攻撃を実行する   | Defender for Business では、いくつかのチュートリアルとシミュレーションを使用できます。 これらのチュートリアルとシミュレーションは、Defender for Business の脅威保護機能が組織でどのように機能できるのか、直接説明するように設計されています。 1 つ以上のチュートリアルを試す方法については、「 [Microsoft Defender for Business の推奨チュートリアル」を参照してください](#recommended-tutorials-for-defender-for-business)。         |
+| シミュレートされた攻撃を実行する   | Defender for Business では、いくつかのチュートリアルとシミュレーションを使用できます。 これらのチュートリアルとシミュレーションは、Defender for Business の脅威保護機能が会社でどのように機能できるのか、直接説明するように設計されています。 1 つ以上のチュートリアルを試す方法については、「 [Microsoft Defender for Business の推奨チュートリアル」を参照してください](#recommended-tutorials-for-defender-for-business)。         |
 | [インシデントの表示] Microsoft 365 Lighthouse     | アプリを使用[している](/partner-center/enrolling-in-the-csp-program)Microsoft クラウド ソリューション プロバイダー場合Microsoft 365 Lighthouse、顧客のテナント間のインシデントをすぐにポータルでMicrosoft 365 Lighthouseできます。 詳細については、「Microsoft Defender [for Business Microsoft 365 Lighthouse」を参照してください](mdb-lighthouse-integration.md)。       |
 
 
@@ -62,7 +62,7 @@ Microsoft Defender for Business のセットアップが完了したばかりの
 |---------|---------|
 | **ドキュメントドロップバックドア**     | テスト デバイスにファイル ベースのマルウェアを導入する攻撃をシミュレートします。 このチュートリアルでは、シミュレーション ファイルを取得して使用する方法と、シミュレーション ポータルで監視するMicrosoft 365 Defenderします。 <br/><br/>このチュートリアルでは、Microsoft Wordデバイスにインストールする必要があります。   |
 | **ライブ応答のチュートリアル**     | Live Response で基本コマンドと高度なコマンドを使用する方法について説明します。 不審なファイルを見つけ、ファイルを修復し、デバイス上の情報を収集する方法について学習します。   |
-| **脅威&の管理 (コア シナリオ)**     | 次の 3 つの脅威と脆弱性の管理の詳細について説明します。 <br/><br/>1. 組織の脅威と脆弱性の暴露を減らします。 <br/>2. 修復を要求します。 <br/>3. セキュリティに関する推奨事項の例外を作成します。 <br/><br/> 脅威と脆弱性の管理は、エンドポイントの脆弱性と誤った構成の検出、事前設定、および修復にリスクベースのアプローチを使用します。      |
+| **脅威&の管理 (コア シナリオ)**     | 次の 3 つの脅威と脆弱性の管理の詳細について説明します。 <br/><br/>1. 会社の脅威と脆弱性の暴露を減らします。 <br/>2. 修復を要求します。 <br/>3. セキュリティに関する推奨事項の例外を作成します。 <br/><br/> 脅威と脆弱性の管理は、エンドポイントの脆弱性と誤った構成の検出、事前設定、および修復にリスクベースのアプローチを使用します。      |
 
 各チュートリアルには、シナリオ、動作方法、および実行方法を説明するチュートリアル ドキュメントが含まれています。
 

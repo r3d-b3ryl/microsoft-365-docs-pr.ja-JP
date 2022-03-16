@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 5673ac38577dbd87019a954eb388d6ab8f050328
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: bccbc7cf33d8be285bac801512de974f0277cf06
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504756"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512462"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Microsoft Defender for Business でセキュリティ ポリシーと設定を表示および編集する
 
@@ -33,11 +33,11 @@ ms.locfileid: "63504756"
 
 ## <a name="overview"></a>概要
 
-組織のデバイスを Microsoft Defender for Business にオンボードした後、次にセキュリティ ポリシーと設定を表示し、必要に応じて編集します。 セキュリティ ポリシーには、次のものが含まれます。
+会社のデバイスを Microsoft Defender for Business にオンボードした後、次にセキュリティ ポリシーと設定を表示し、必要に応じて編集します。 セキュリティ ポリシーには、次のものが含まれます。
 
-- **[組織のデバイスに](#view-or-edit-your-next-generation-protection-policies)** 対するウイルス対策とマルウェア対策の保護を決定する次世代の保護ポリシー
+- **[企業のデバイスのウイルス](#view-or-edit-your-next-generation-protection-policies)** 対策とマルウェア対策の保護を決定する次世代の保護ポリシー
 
-- **[ファイアウォールの保護とルール](#view-or-edit-your-firewall-policies-and-custom-rules)**。組織のデバイスに対して、または組織のデバイスから流れるネットワーク トラフィックを決定する
+- **[ファイアウォールの保護とルール](#view-or-edit-your-firewall-policies-and-custom-rules)**。会社のデバイスに対して、または会社のデバイスからのネットワーク トラフィックの流れを決定する
 
 - **[成人向け](#set-up-web-content-filtering)** コンテンツや法的責任などのカテゴリに基づいて特定の Web サイト (URL) にアクセスできない Web コンテンツ フィルター。
 
@@ -74,8 +74,8 @@ Defender for Business では、 [セットアップと構成プロセスを](mdb
 
 | オプション | 説明 |
 |:---|:---|
-| **ポータルをMicrosoft 365 Defenderする** (*推奨*) | このMicrosoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) は、組織のデバイス、セキュリティ ポリシー、およびセキュリティ設定を管理するためのワンストップ ショップです。 セキュリティ ポリシーと設定にアクセスし、Threat [&](mdb-view-tvm-dashboard.md) の脆弱性管理ダッシュボードを使用し、インシデントの表示と[](mdb-view-manage-incidents.md)管理を 1 か所で行えます。 <br/><br/>セキュリティ ポリシーを使用しているMicrosoft エンドポイント マネージャー、Defender for Business にオンボードしたデバイスとセキュリティ ポリシーは、そのデバイスにエンドポイント マネージャー。 詳細については、次の記事を参照してください。<br/><br/>- [Defender for Business の既定の設定とMicrosoft エンドポイント マネージャー](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [ビジネス向け Microsoft Defender のファイアウォール](mdb-firewall.md)   |
-| **使用Microsoft エンドポイント マネージャー** | 組織でセキュリティ ポリシーの管理に エンドポイント マネージャー (Microsoft Intune を含む) を既に使用している場合は、エンドポイント マネージャー を使用してデバイスとセキュリティ ポリシーを管理できます。 詳細については、「エンドポイント セキュリティ ポリシー[を使用](/mem/intune/protect/endpoint-security-policy)してデバイス セキュリティを管理する」を参照Microsoft Intune。 <br/><br/>[Defender for Business](mdb-simplified-configuration.md) の簡略化された構成プロセスに切り替える場合は、エンドポイント マネージャー で既存のセキュリティ ポリシーを削除して、後でポリシーの競合を回避するように求めるメッセージ[](mdb-troubleshooting.yml)が表示されます。 |
+| **ポータルをMicrosoft 365 Defenderする** (*推奨*) | このMicrosoft 365 Defenderポータル ([https://security.microsoft.com/](https://security.microsoft.com/)) は、会社のデバイス、セキュリティ ポリシー、およびセキュリティ設定を管理するためのワンストップ ショップです。 セキュリティ ポリシーと設定にアクセスし、Threat [&](mdb-view-tvm-dashboard.md) の脆弱性管理ダッシュボードを使用し、インシデントの表示と[](mdb-view-manage-incidents.md)管理を 1 か所で行えます。 <br/><br/>セキュリティ ポリシーを使用しているMicrosoft エンドポイント マネージャー、Defender for Business にオンボードしたデバイスとセキュリティ ポリシーは、そのデバイスにエンドポイント マネージャー。 詳細については、次の記事を参照してください。<br/><br/>- [Defender for Business の既定の設定とMicrosoft エンドポイント マネージャー](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [ビジネス向け Microsoft Defender のファイアウォール](mdb-firewall.md)   |
+| **使用Microsoft エンドポイント マネージャー** | 会社がセキュリティ ポリシーを管理するために エンドポイント マネージャー (Microsoft Intune を含む) を既に使用している場合は、引き続き エンドポイント マネージャー を使用してデバイスとセキュリティ ポリシーを管理できます。 詳細については、「エンドポイント セキュリティ ポリシー[を使用](/mem/intune/protect/endpoint-security-policy)してデバイス セキュリティを管理する」を参照Microsoft Intune。 <br/><br/>[Defender for Business](mdb-simplified-configuration.md) の簡略化された構成プロセスに切り替える場合は、エンドポイント マネージャー で既存のセキュリティ ポリシーを削除して、後でポリシーの競合を回避するように求めるメッセージ[](mdb-troubleshooting.yml)が表示されます。 |
 
 > [!IMPORTANT]
 > Microsoft 365 Defender ポータルでセキュリティ ポリシーを管理している場合は、ウイルス対策ポリシーまたはファイアウォール ポリシーとしてエンドポイント マネージャーでこれらのポリシーを表示できます。 ファイアウォール ポリシーを エンドポイント マネージャー で表示すると、ファイアウォール保護のポリシーとカスタム ルールの 2 つのポリシーが表示されます。
@@ -112,7 +112,7 @@ Web コンテンツ フィルターを使用すると、セキュリティ チ�
 
 - 未分類: コンテンツがないサイト、または新しく登録されたサイト
 
-これらのカテゴリのすべての Web サイトが悪意のあるとは限りませんが、コンプライアンス規制、帯域幅の使用、その他の懸念により、組織にとって問題になる可能性があります。 さらに、監査専用ポリシーを作成して、セキュリティ チームが Web サイト のカテゴリをブロックするかどうかを理解することもできます。
+これらのカテゴリ内のすべての Web サイトが悪意のある Web サイトである可能性がありますが、コンプライアンス規制、帯域幅の使用、その他の懸念のため、会社にとって問題になる可能性があります。 さらに、監査専用ポリシーを作成して、セキュリティ チームが Web サイト のカテゴリをブロックするかどうかを理解することもできます。
 
 Web コンテンツ フィルターは主要な Web ブラウザーで利用できます。ブロックは Windows Defender SmartScreen (Microsoft Edge) とネットワーク保護 (Chrome、Firefox、Brave、および Opera) によって実行されます。 詳細については、「Web コンテンツ フィルター [の前提条件」を参照してください](../defender-endpoint/web-content-filtering.md#prerequisites)。
 
@@ -153,7 +153,7 @@ Web コンテンツ フィルターは主要な Web ブラウザーで利用で�
 | **セキュリティ センター** | **タイム ゾーン** | インシデント、検出された脅威、および自動調査に表示される日付と時刻に使用するタイム ゾーンを選択し、修復&します。 UTC またはローカル タイム ゾーン (推奨) を使用 *できます*。  |
 | **Microsoft 365 Defender** | **Account** | データの保存場所、テナント ID、組織 (組織) ID などの詳細を表示します。 |
 | **Microsoft 365 Defender**  | **プレビュー機能**  | プレビュー機能を有効にし、今後の機能と新機能を試します。 最初に新機能をプレビューし、フィードバックを提供することができます。 |
-| **エンドポイント**  | **電子メール通知** | 電子メール通知ルールを設定または編集します。 脆弱性が検出された場合、またはアラートが作成されると、電子メール通知ルールで指定された受信者が電子メールを受信します。 [電子メール通知の詳細については、次の情報を参照してください](mdb-email-notifications.md)。 |
+| **エンドポイント**  | **メール通知** | 電子メール通知ルールを設定または編集します。 脆弱性が検出された場合、またはアラートが作成されると、電子メール通知ルールで指定された受信者が電子メールを受信します。 [電子メール通知の詳細については、次の情報を参照してください](mdb-email-notifications.md)。 |
 | **エンドポイント**   | **デバイスの管理** > **オンボーディング** | ダウンロード可能なスクリプトを使用して、デバイスを Defender for Business にオンボードします。 詳細については、「オンボード デバイス [から Microsoft Defender for Business」を参照してください](mdb-onboard-devices.md)。   |  
 | **エンドポイント**  |  **デバイスの管理** > **オフボード** | Defender for Business からオフボード (削除) デバイス。 デバイスをオフボードすると、デバイスは Defender for Business にデータを送信しなくなりましたが、オフボード前に受信したデータは保持されます。 詳細については、「 [Offboarding a device」を参照してください](mdb-onboard-devices.md#offboarding-a-device)。  |
 

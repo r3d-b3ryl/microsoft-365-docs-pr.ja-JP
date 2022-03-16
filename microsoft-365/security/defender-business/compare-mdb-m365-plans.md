@@ -1,13 +1,13 @@
 ---
 title: 中小企業向けMicrosoft 365のセキュリティ機能を比較する
-description: Defender for Business と Defender for Endpoint の違いを理解します。 各プランに含まれる情報を確認すると、組織に関する情報に基づいた意思決定を行う際に役立ちます。
+description: Defender for Business と Defender for Endpoint の違いを理解します。 各プランに含まれる情報を知ることによって、会社に関する情報に基づいた意思決定を行う際に役立ちます。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 02/27/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: c7b7848eb9bd02c75304ffea4347beb19b873b3a
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: edad91bde18b4bf9a86e0ab02ffc28df675f4c10
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449836"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512504"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Microsoft Defender for Business と Microsoft Defender を比較Microsoft 365 Business Premium
 

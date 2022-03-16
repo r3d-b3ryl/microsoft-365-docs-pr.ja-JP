@@ -7,18 +7,18 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: e8fc4782d106e46061bf0c75cb3d5ed5400e9980
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 336a0d053f2fe3a14626ffe4aa2c7df56eecebda
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449373"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512882"
 ---
 # <a name="set-up-email-notifications"></a>電子メール通知を設定する
 
@@ -47,7 +47,7 @@ ms.locfileid: "63449373"
 
 電子メール通知を設定する場合は、次の表で説明するように、2 つの種類から選択できます。 <br/><br/>
 
-| 通知の種類  | [説明]  |
+| 通知の種類  | 説明  |
 |---------|---------|
 | 脆弱性  | 新しい悪用や脆弱性イベントが検出されると、受信者は電子メールを受信します。 |
 | 脆弱性&警告  | デバイスで脅威が検出されたため、または新しい悪用や脆弱性イベントが検出された場合、受信者は電子メールを受信します。 |
@@ -61,7 +61,7 @@ ms.locfileid: "63449373"
 
 ## <a name="view-and-edit-email-notifications"></a>メール通知の表示と編集
 
-組織のメール通知設定を表示または編集するには、次の手順を実行します。
+会社のメール通知設定を表示または編集するには、次の手順を実行します。
 
 1. ポータル () にMicrosoft 365 Defenderサインイン[https://security.microsoft.com](https://security.microsoft.com)します。
 

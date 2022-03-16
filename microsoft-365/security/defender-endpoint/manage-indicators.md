@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c241438e2cd9a0a5bd9bb018d671340c22ef7d0d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 00685ee4540949028b8bb438dd8a4965e2e9a5e7
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163544"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513060"
 ---
 # <a name="create-indicators"></a>インジケーターの作成
 
@@ -59,7 +59,7 @@ EnableFileHashComputation 設定は、ファイル スキャン時に cert と�
 
 - 許可 – IoC はデバイスで実行できます。
 - 監査 – IoC の実行時にアラートがトリガーされます。
-- 警告 – IoC は、ユーザーがバイパスできるという警告を表示します (Defender for Cloud Apps のみ)
+- 警告 – IoC は、ユーザーがバイパスできるという警告を表示します。 
 - 実行をブロックする - IoC の実行は許可されません。
 - ブロックと修復 - IoC の実行は許可されません。修復アクションが IoC に適用されます。
 
@@ -77,8 +77,8 @@ EnableFileHashComputation 設定は、ファイル スキャン時に cert と�
 | IoC の種類 | 使用可能なアクション |
 |:---|:---|
 | [Files](indicator-file.md) | 許可 <br> 監査 <br> ブロックと修復 |
-| [IP アドレス](indicator-ip-domain.md) | 許可 <br> 監査 <br> 実行のブロック |
-| [URL とドメイン](indicator-ip-domain.md) | 許可 <br> 監査 <br> 実行のブロック |
+| [IP アドレス](indicator-ip-domain.md) | 許可 <br> 監査 <br> 実行のブロック <br> 警告 |
+| [URL とドメイン](indicator-ip-domain.md) | 許可 <br> 監査 <br> 実行のブロック<br> 警告 |
 | [証明書](indicator-certificates.md) | 許可 <br> ブロックと修復 |
 
 既存の IoC の機能は変更されません。 ただし、インジケーターの名前は、現在サポートされている応答アクションと一致する名前に変更されました。

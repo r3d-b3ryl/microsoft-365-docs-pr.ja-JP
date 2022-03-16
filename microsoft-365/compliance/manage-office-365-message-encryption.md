@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 5/8/2019
+ms.date: 03/04/2022
 search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: OME (OME) のOffice 365 Message Encryptionしたら、いくつかの方法で展開をカスタマイズする方法について説明します。
-ms.openlocfilehash: c402b5f414e81fbb7403d56a7314c9255c8cf1b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49a3957eb4bc2cf1123f04ab0dea77d2adb638b0
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192225"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512172"
 ---
 # <a name="manage-office-365-message-encryption"></a>Office 365 Message Encryption
 
@@ -32,11 +32,11 @@ OME (OME) のOffice 365 Message Encryptionしたら、いくつかの方法で�
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Google、Yahoo、Microsoft アカウントの受信者が、これらのアカウントを使用してポータルにサインインできるかどうかをOffice 365 Message Encryptionする
 
-新しい組織の機能をOffice 365 Message Encryption、組織内のユーザーは組織外の受信者にメッセージを送信できます。 受信者が Google アカウント、Yahoo アカウント、Microsoft アカウントなどのソーシャル *ID* を使用している場合、受信者はソーシャル ID を使用して OME ポータルにサインインできます。 必要な場合は、受信者がソーシャル ID を使用して OME ポータルにサインインを許可しない場合に選択できます。
+新しい組織の機能をOffice 365 Message Encryptionすると、組織内のユーザーは組織外の受信者にメッセージを送信できます。 受信者が Google アカウント、Yahoo アカウント、Microsoft アカウントなどのソーシャル *ID* を使用している場合、受信者はソーシャル ID を使用して OME ポータルにサインインできます。 必要な場合は、受信者がソーシャル ID を使用して OME ポータルにサインインを許可しない場合に選択できます。
   
 ### <a name="to-manage-whether-recipients-can-use-social-ids-to-sign-in-to-the-ome-portal"></a>受信者がソーシャル ID を使用して OME ポータルにサインインできるかどうかを管理するには
   
-1. [Connect PowerShell をExchange Onlineする方法について説明します](/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [Connect PowerShell Exchange Onlineを使用する方法について説明します](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. SocialIdSignIn Set-OMEConfigurationを使用して、次のコマンドレットを実行します。
 
@@ -58,11 +58,11 @@ OME (OME) のOffice 365 Message Encryptionしたら、いくつかの方法で�
 
 ## <a name="manage-the-use-of-one-time-pass-codes-for-the-office-365-message-encryption-portal"></a>ポータルの 1 回のパス コードの使用Office 365 Message Encryptionする
 
-OME で暗号化されたメッセージの受信者が、受信者が使用するアカウントに関係なく、Outlook を使用しない場合、受信者は、メッセージを読み取る期間限定の Web ビュー リンクを受け取ります。 このリンクには、1 回のパス コードが含まれています。 管理者は、受信者がワンタイム パス コードを使用して OME ポータルにサインインできる場合に決定できます。
+OME で暗号化されたメッセージの受信者が、受信者が使用するアカウントに関係なく Outlook を使用しない場合、受信者は、メッセージを読み取る期間限定の Web ビュー リンクを受け取ります。 このリンクには、1 回のパス コードが含まれています。 管理者は、受信者がワンタイム パス コードを使用して OME ポータルにサインインできる場合に決定できます。
   
 ### <a name="to-manage-whether-ome-generates-one-time-pass-codes"></a>OME が 1 回のパス コードを生成するかどうかを管理するには
   
-1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShellセッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShell セッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. OTPEnabled Set-OMEConfigurationを使用して、次のコマンドレットを実行します。
 
@@ -88,7 +88,7 @@ OME で暗号化されたメッセージの受信者が、受信者が使用す�
   
 ### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>[暗号化] ボタンが [暗号化] ウィンドウに表示されるかどうかをOutlook on the web
   
-1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShellセッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShell セッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. -SimplifiedClientAccessEnabled パラメーターSet-IRMConfigurationを使用して、次のコマンドレットを実行します。
 
@@ -114,11 +114,11 @@ iOS メール アプリは、アプリで保護されたメッセージを復号
   
 暗号化解除されたメッセージを iOS メール アプリ ユーザーに送信しない場合、ユーザーはメッセージを表示する権限を持たなかったというメッセージを受信します。 既定では、サービス側の電子メール メッセージの復号化は有効になっていません。
   
-クライアント エクスペリエンスの詳細とビューについては、「暗号化されたメッセージをユーザーまたはユーザーに表示する[iPhone」をiPad。](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)
+クライアント エクスペリエンスの詳細とビューについては、「暗号化されたメッセージをユーザーまたはユーザーに表示iPhone[」をiPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)。
   
 ### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>iOS メール アプリのユーザーがユーザーによって保護されたメッセージを表示できるかどうかをOffice 365 Message Encryption
   
-1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShellセッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShell セッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. AllowRMSSupportForUnenlightenedApps パラメーターを使用して、次のコマンドレットを実行します。 Set-ActiveSyncOrganizations
 
@@ -151,11 +151,11 @@ iOS メール アプリは、アプリで保護されたメッセージを復号
   
 暗号化解除された電子メールの添付ファイルを許可しない場合(既定)、ユーザーは添付ファイルを表示する権限を持たなかったというメッセージを受信します。
   
-Microsoft 365 オプションを使用して電子メールと電子メール添付ファイルの暗号化を実装する方法の詳細については、「Encrypt-Only の暗号化のみオプション」を[参照してください。](/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+Microsoft 365 オプションを使用して電子メールとメール添付ファイルの暗号化を実装する方法の詳細については、「Encrypt-Only メールの暗号化のみオプション」を[参照してください。](/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
   
 ### <a name="to-manage-whether-email-attachments-are-decrypted-on-download-from-a-web-browser"></a>Web ブラウザーからのダウンロード時に電子メールの添付ファイルが復号化されるかどうかを管理するには
   
-1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShellセッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShell セッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. DecryptAttachmentForEncryptOnly パラメーターを使用して、Set-IRMConfigurationコマンドレットを実行します。
 
@@ -181,7 +181,7 @@ Microsoft 365 オプションを使用して電子メールと電子メール添
 
 ### <a name="use-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email"></a>カスタム テンプレートを使用して、すべての外部受信者に強制的に OME ポータルを使用し、暗号化された電子メールを使用する
 
-1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShellセッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShell セッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. 次のコマンドレットNew-TransportRule実行します。
 
@@ -193,9 +193,9 @@ Microsoft 365 オプションを使用して電子メールと電子メール添
 
    - `mail flow rule name` は、新しいメール フロー ルールに使用する名前です。
 
-   - `option name` は、 `Encrypt` または `Do Not Forward` です。
+   - `option name` は、 または `Encrypt` です `Do Not Forward`。
 
-   - `template name` は、カスタム ブランド テンプレートを指定した名前です。たとえば `OME Configuration` 。
+   - `template name`は、カスタム ブランド テンプレートを指定した名前です。たとえば。`OME Configuration`
 
    "OME 構成" テンプレートを使用してすべての外部メールを暗号化し、次のオプションをEncrypt-Onlyします。
 
@@ -211,7 +211,7 @@ Microsoft 365 オプションを使用して電子メールと電子メール添
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>電子メール メッセージと OME ポータルの外観をカスタマイズする
 
-組織の OME をカスタマイズする方法の詳細については、「暗号化されたメッセージに組織のブランドを追加 [する」を参照してください](add-your-organization-brand-to-encrypted-messages.md)。
+組織の OME をカスタマイズする方法の詳細については、「暗号化されたメッセージに組織のブランドを追加 [する」を参照してください](add-your-organization-brand-to-encrypted-messages.md)。 暗号化されたメッセージを追跡および取り消す機能を有効にするには、カスタム ブランドを OME ポータルに追加する必要があります。
   
 ## <a name="disable-the-new-capabilities-for-ome"></a>OME の新機能を無効にする
 
@@ -221,13 +221,13 @@ Microsoft 365 オプションを使用して電子メールと電子メール添
   
 1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-2. [暗号化]**ボタンを** 有効Outlook on the web、SimplifiedClientAccessEnabled パラメーターを使用して Set-IRMConfiguration コマンドレットを実行して無効にします。 それ以外の場合は、この手順をスキップします。
+2. [暗号化 **] ボタンを** 有効Outlook on the web、簡体字ClientAccessEnabled パラメーターを使用して Set-IRMConfiguration コマンドレットを実行して無効にします。 それ以外の場合は、この手順をスキップします。
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
    ```
 
-3. AzureRMSLicensingEnabled パラメーターを false に設定Set-IRMConfigurationコマンドレットを実行して、OME の新機能を無効にします。
+3. AzureRMSLicensingEnabled パラメーターを false に設定した Set-IRMConfiguration コマンドレットを実行して、OME の新機能を無効にします。
 
    ```powershell
    Set-IRMConfiguration -AzureRMSLicensingEnabled $false

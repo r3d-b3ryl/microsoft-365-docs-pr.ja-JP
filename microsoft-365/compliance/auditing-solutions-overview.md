@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 組織内のユーザーや管理者のアクティビティを監査する方法をご紹介します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff7a456317827fc629d4e704037ad7586bad9f0d
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 92fb008e7fe03b4871b8838d78965c1508a20fdc
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221366"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494528"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 での監査ソリューション
 
@@ -65,7 +65,7 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 
 - **監査記録の長期保持**。 Exchange、SharePoint、および Azure Active Directory の監査レコードは、既定で 1 年間保持されます。 その他のアクティビティの監査記録は、既定では 90 日間保持されますが、監査ログの保持ポリシーを使用して、より長い保持期間を構成することができます。
 
-- **価値の高い重要な高度な監査イベント**。 重要なイベントの監査記録は、いつメール項目がアクセスされたか、いつメール項目が返信されたか、または転送されたか、ユーザーがいつ何を Exchange Online や SharePoint Online で検索したかなどの可視性を提供することで、組織によるフォレンジック調査やコンプライアンス調査の実施をサポートします。 これらの重要なイベントは、起こりうる侵害を調査し、侵害の範囲を決定するのに役立ちます。
+- **価値が高く、重要な高度な監査イベント。** 重要なイベントの監査レコードは、メール アイテムにアクセスしたとき、メールア イテムに返信して転送したとき、ユーザーが Exchange Online と SharePoint Online でいつ何を検索したかなどのイベントを可視化することで、組織がフォレンジックおよびコンプライアンスの調査を実施するのに役立ちます。 これらの重大なイベントは、考えられる侵害を調査し、侵害の範囲を特定するのに役立ちます。
 
 - **Office 365 管理アクティビティ API への高帯域幅**。 高度な監査は、組織が Office 365 マネージメント アクティビティ API を通じて監査ログにアクセスするための帯域幅を増やします。 すべての組織 (基本的な監査または高度な監査を使用している組織) には、最初に 1 分あたり 2,000 リクエストの基準値が割り当てられますが、この制限は、組織のシート数とライセンス サブスクリプションに応じて動的に増加します。 この結果、高度な監査を導入した組織は、基本的な監査を導入した組織の約 2 倍の帯域幅を得ることができます。
 
@@ -98,6 +98,8 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 
 ### <a name="basic-audit"></a>基本的な監査
 
+- Microsoft 365 Business Basic サブスクリプション
+- Microsoft 365 Apps for Business サブスクリプション
 - Microsoft 365 Enterprise E3 サブスクリプション
 - Microsoft 365 Business Premium
 - Microsoft 365 Education A3 サブスクリプション
