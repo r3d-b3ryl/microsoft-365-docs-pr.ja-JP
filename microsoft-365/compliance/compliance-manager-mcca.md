@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
-ms.openlocfilehash: 3c5230a8a9998c4b924e5a9d4a9565ae1c97db89
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a679f0483431313672ac0dfa1101eb9909b6c060
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325111"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525155"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
 
@@ -77,9 +77,7 @@ MCCA をインストールした後、MCCA を実行してレポートを生成�
 
 3. MCCA を実行すると、初期バージョン チェックが実行され、資格情報が要求されます。 [ユーザー名の入力] プロンプトで、Microsoft 365 アカウントの電子メール アドレスでサインインします (レポートの作成に適格な役割[を表示します](#role-based-reporting))。 次に、パスワード プロンプトでパスワードを入力します。
 
-その後、レポートの生成に約 2 ~ 5 分かかります。 完了すると、ブラウザー ウィンドウが開き、HTML レポートが表示されます。 ツールを実行する度に、資格情報を要求し、新しいレポートを生成します。 このレポートは、次のディレクトリにローカルに格納されます。
-
-C:\Users\<username>\AppData\Local\Microsoft\MCCA。 
+その後、レポートの生成に約 2 ~ 5 分かかります。 完了すると、ブラウザー ウィンドウが開き、HTML レポートが表示されます。 ツールを実行する度に、資格情報を要求し、新しいレポートを生成します。 このレポートは、ディレクトリ C: \ Users \ *username* \ AppData \ Local \ Microsoft \ MCCA にローカルに格納されます。
 
 このディレクトリから、以前に生成されたレポートにアクセスできます。
 

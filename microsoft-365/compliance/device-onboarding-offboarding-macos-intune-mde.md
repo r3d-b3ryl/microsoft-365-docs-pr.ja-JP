@@ -8,23 +8,23 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: MDE のお客様向けソリューションを使用して、Microsoft 365コンプライアンス ソリューションに macOS デバイスMicrosoft Intuneオンボードおよびオフボードする方法 (プレビュー)
-ms.openlocfilehash: 0486c08734e049a82550c1fb596b0e3d789126b8
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+description: MDE のお客様向けソリューションを使用して、Microsoft 365コンプライアンス ソリューションに macOS Microsoft Intuneオンボードおよびオフボードする方法について (プレビュー)
+ms.openlocfilehash: 6cc4362e924f291c6a8396bff342c6f628e33be3
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159531"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526556"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
 > [!IMPORTANT]
-> Microsoft Defender  for Endpoint (MDE) を macOS デバイスに展開している場合は、次の手順を実行します。
+> Microsoft Defender for  Endpoint (MDE) を macOS デバイスに展開している場合は、次の手順を実行します。
 
 **適用対象:**
 
@@ -35,7 +35,7 @@ ms.locfileid: "62159531"
 
 ## <a name="before-you-begin"></a>はじめに
 
-- macOS デバイス[が Intune](/mem/intune/fundamentals/deployment-guide-platform-macos)にオンボードされ、アプリに登録ポータル サイト[します](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
+- macOS デバイス[が Intune に](/mem/intune/fundamentals/deployment-guide-platform-macos)オンボードされ、アプリに登録ポータル サイト[します](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
 - サーバー センターにアクセス[Microsoft エンドポイント マネージャーする](https://endpoint.microsoft.com/#home)
 - これは macOS バージョン Catalina 10.15 以上をサポートしています
 - macOS デバイスに v95+ Edge ブラウザーをインストールする 
@@ -52,7 +52,7 @@ MDE が既に展開されている場合は、以下の手順を使用して mac
 フル ディスク アクセス     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 
 > [!TIP]
-> *.mobileconfig* ファイルは、個別にダウンロードするか、以下を含 [む単一の結合ファイル](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)でダウンロードできます。
+> *.mobileconfig ファイルは*、個別にダウンロードするか、以下を含 [む単一の結合ファイル](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)でダウンロードできます。
 > - アクセシビリティ.mobileconfig
 > - fulldisk.mobileconfig
 > 
@@ -61,7 +61,7 @@ MDE が既に展開されている場合は、以下の手順を使用して mac
 
 ### <a name="create-system-configuration-profiles"></a>システム構成プロファイルの作成
 
-1. デバイス構成 **プロファイルMicrosoft エンドポイント マネージャー**  >  **センター**  >  **を開きます**。
+1. **centerDevicesConfiguration** >  **プロファイルMicrosoft エンドポイント マネージャー** > 開 **きます**。
 
 1. [プロファイルの **作成] を選択します**。 
 
@@ -78,13 +78,13 @@ MDE が既に展開されている場合は、以下の手順を使用して mac
 
 1. **[次へ]** を選択します
 
-1. [割り **当て]** タブで、これらの構成を展開するグループを追加し、[次へ] を **選択します**。
+1. [割り **当て]** タブで、これらの構成を展開するグループを追加し、[次へ] を選択 **します**。
 
 1. 設定を確認し、[作成] **を選択して** 構成を展開します。
 
-1. デバイス **構成**  >  **プロファイルを開きます**。作成したプロファイルが表示されます。
+1. **DevicesConfiguration** >  **プロファイルを開** きます。作成したプロファイルが表示されます。
 
-1. [構成プロファイル **]** ページで、作成したプロファイルを次の例の *AccessibilityformacOS* で選択し、[デバイスの状態] を選択して、デバイスの一覧と構成プロファイルの展開状態を表示します。
+1. [構成プロファイル **]** ページで、作成したプロファイルを次の *例の AccessibilityformacOS* で選択し、[デバイスの状態] を選択して、デバイスの一覧と構成プロファイルの展開状態を表示します。
 
 ### <a name="update-configuration-profiles"></a>構成プロファイルの更新
 
@@ -107,7 +107,7 @@ MDE が既に展開されている場合は、以下の手順を使用して mac
 > [!IMPORTANT]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。
 
-1. **[Microsoft エンドポイント マネージャーで、[****デバイス** 構成プロファイル] を開きます。作成した  >  プロファイルが表示されます。
+1. 中央 **Microsoft エンドポイント マネージャー** **DevicesConfiguration** >  プロファイルを開きます。作成したプロファイルがそこに表示されます。
 
 2. [構成 **プロファイル] ページで** 、MDE 基本設定プロファイルを選択します。
 
@@ -122,4 +122,4 @@ MDE が既に展開されている場合は、以下の手順を使用して mac
     <string>enabled</string>
 </dict>
 ```
-3. **保存 .**
+3. **保存します**。

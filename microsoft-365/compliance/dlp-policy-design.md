@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: データ損失防止 (DLP) ポリシーを設計する方法について学習する
-ms.openlocfilehash: 5cfea5add3a1790e8a30359e48ca1c94ca83f671
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 14e9fbb5efd20ddcf3d0a47da41a0cce89c88cee
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521458"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526320"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>データ損失防止ポリシーを設計する
 
@@ -41,7 +41,7 @@ DLP の使用をMicrosoft 365する場合は、ポリシーの設計を開始す
 
 ## <a name="policy-design-overview"></a>ポリシー設計の概要
 
-[ポリシーの設計は、](#policy-design-process)主にビジネス ニーズ[](#define-intent-for-the-policy)を明確に定義し、ポリシーインテントステートメントで文書化し、それらのニーズをポリシー構成に[マッピングする方法です](#map-business-needs-to-policy-configuration)。 計画フェーズで行った決定を使用して、ポリシー設計の決定の一部を通知します。 
+[ポリシーの設計は、](#policy-design-process)主にビジネス ニーズを[](#define-intent-for-the-policy)明確に定義し、ポリシーインテントステートメントで文書化し、それらのニーズをポリシー構成[にマッピングする方法です](#map-business-needs-to-policy-configuration)。 計画フェーズで行った決定を使用して、ポリシー設計の決定の一部を通知します。 
 
 ### <a name="define-intent-for-the-policy"></a>ポリシーの意図を定義する 
 
@@ -56,7 +56,7 @@ DLP ポリシー構成 [の概要では、すべての](dlp-learn-about-dlp.md#d
 
 たとえば、4 つの質問に対する回答を提供する、架空の最初の意図ステートメントの下書きを次に示します。 
 
-*「弊社は米国に拠点を置く組織であり、OneDrive/SharePoint に保存されている HIPPA がカバーする機密性の高い医療情報を含む Office ドキュメントを検出し、Teams チャットおよびチャネル メッセージで共有される情報から保護し、すべてのユーザーが承認されていない第三者と共有するのを制限する必要があります。* 
+*「弊社は米国に拠点を置く組織であり、OneDrive/SharePoint に保存されている HIPPA がカバーする機密性の高い医療情報を含む Office ドキュメントを検出し、Teams チャットメッセージやチャネル メッセージで共有される情報から保護し、すべてのユーザーが承認されていない第三者と共有するのを制限する必要があります。* 
 
 ポリシー設計を開発する場合、ステートメントを変更して拡張する可能性があります。
 
@@ -66,9 +66,9 @@ DLP ポリシー構成 [の概要では、すべての](dlp-learn-about-dlp.md#d
 
 |Statement  |構成に関する質問の回答と構成マッピング  |
 |---------|---------|
-| 「米国に拠点を置く組織であり、HIPPA がカバーする機密性Officeを含むドキュメントを検出する必要があります。  |- **監視対象**: ドキュメントOffice、米国健康保険法 [(HIPAA) テンプレートを使用](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa)する </br>- **一** 致の条件 : (事前構成済みですが編集可能) - アイテムには、米国 SSN および麻薬取締局 (DEA) 番号、国際疾病分類 (ICD-9-CM)、国際疾病分類 (ICD-10-CM) が含まれる場合、コンテンツは組織外のユーザーと共有されます。  </br> - 会話を駆動して、信頼度やインスタンス数[](sensitive-information-type-learn-about.md#more-on-confidence-levels)[(漏洩](dlp-policy-reference.md#content-contains)許容値と呼ばれる) などの検出のトリガーしきい値を明確にします。|
-|...に保存され、OneDrive/SharePointメッセージで共有される情報Teams保護します。。 |- **監視する場所**:[チャット](dlp-policy-reference.md#locations)/チャネル アカウントまたは配布グループOneDrive、SharePointサイトTeamsを含むまたは除外する場所のスコープ。 |
-|...すべてのユーザーがこれらのアイテムを承認されていない第三者と共有するのを制限します。  | - **実行するアクション**:[アクセスの](dlp-policy-reference.md#actions)*制限を追加するか、アクセス場所内のコンテンツMicrosoft 365します。* </br> - 共有制限などの保護アクション、通知やアラートなどの認識アクション、ブロックアクションのユーザーオーバーライドを許可するなどのユーザーエンパワーメントアクションなど、ポリシーがトリガーされた場合に実行するアクションに関する会話を推進します。 |
+| 「米国に拠点を置く組織であり、HIPPA がカバーするOfficeを含むドキュメントを検出する必要があります。  |- **監視対象: ドキュメント** Office、米国健康保険法 [(HIPAA) テンプレートを使用](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa)する </br>- **一** 致の条件: (事前構成済みですが編集可能) - アイテムには、米国 SSN および麻薬取締局 (DEA) 番号、国際疾病分類 (ICD-9-CM)、国際疾病分類 (ICD-10-CM) が含まれる場合、コンテンツは組織外のユーザーと共有されます。  </br> - 会話を駆動して、信頼度などの検出のトリガー[](sensitive-information-type-learn-about.md#more-on-confidence-levels)しきい値、およびインスタンス[数 (漏洩](dlp-policy-reference.md#content-contains)許容値と呼ばれる) を明確にします。|
+|...に保存され、OneDrive/SharePointメッセージで共有される情報Teams保護します。。 |- **監視する場所**: [チャット](dlp-policy-reference.md#locations)/チャネル アカウントまたは配布グループOneDrive、SharePointサイトTeamsを含む、または除外することで、場所のスコープを設定します。 |
+|...すべてのユーザーがこれらのアイテムを承認されていない第三者と共有するのを制限します。  | - **実行するアクション**: [アクセスの制限を](dlp-policy-reference.md#actions)*追加するか、ユーザーの場所でコンテンツMicrosoft 365します。* </br> - 共有制限などの保護アクション、通知やアラートなどの認識アクション、ブロックアクションのユーザーオーバーライドを許可するなどのユーザーエンパワーメントアクションなど、ポリシーがトリガーされた場合に実行するアクションに関する会話を推進します。 |
 
 この例では、DLP ポリシーのすべての構成ポイントをカバーしているので、展開する必要があります。 しかし、独自の DLP ポリシー意図ステートメントを開発する場合は、正しい方向に考える必要があります。
 

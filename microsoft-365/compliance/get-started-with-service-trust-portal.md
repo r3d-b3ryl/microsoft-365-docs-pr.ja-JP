@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: セキュリティ、プライバシー、コンプライアンスの実践に役立つ Microsoft Service Trust Portal にアクセスして使用する方法について説明します。
-ms.openlocfilehash: 5894fb57d4633c0dbc3c9d925be72910bdfc3f56
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: f23cf5be7f05462e505c4d3a46407255e460420b
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512910"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526152"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft Service Trust Portal の使用を開始する
 
@@ -30,7 +30,7 @@ Microsoft Service Trust Portal には、Microsoft のセキュリティ、プラ
 
 ## <a name="accessing-the-service-trust-portal"></a>サービス信頼ポータルへのアクセス
 
-Service Trust Portal では、Microsoft クラウド サービスおよびクラウド サービス内の顧客データを保護するための制御およびプロセスについて、Microsoft での実装状況に関する情報が提供されています。 サービス信頼ポータルで一部のリソースにアクセスするには、Microsoft クラウド サービス アカウント (Azure Active Directory 組織アカウントまたは Microsoft アカウント) を使用して認証済みユーザーとしてログインし、コンプライアンス資料に関する Microsoft の非開示契約を確認して承諾する必要があります。
+Service Trust Portal では、Microsoft クラウド サービスおよびクラウド サービス内の顧客データを保護するための制御およびプロセスについて、Microsoft での実装状況に関する情報が提供されています。 サービス信頼ポータルで一部のリソースにアクセスするには、Microsoft クラウド サービス アカウント (Azure Active Directory 組織アカウント) を使用して認証済みユーザーとしてログインし、コンプライアンス資料に関する Microsoft の非開示契約を確認して承諾する必要があります。
 
 ### <a name="existing-customers"></a>既存の顧客
 
@@ -41,7 +41,7 @@ Service Trust Portal では、Microsoft クラウド サービスおよびクラ
 - Azure
 
  > [!NOTE]
- > Azure Active Directory関連付けられているアカウントは、コンプライアンス マネージャーなど、さまざまなドキュメントや機能にアクセスできます。 個人の使用のために作成された Microsoft アカウントには、サービス信頼ポータルのコンテンツへのアクセスが制限されています。
+ > Azure Active Directory関連付けられているアカウントは、コンプライアンス マネージャーなど、さまざまなドキュメントや機能にアクセスできます。
 
 ### <a name="new-customers-and-customers-evaluating-microsoft-online-services"></a>Microsoft オンライン サービスを評価する新しい顧客と顧客
 

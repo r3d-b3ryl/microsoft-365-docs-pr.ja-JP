@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 description: 機密情報ソース テーブル ファイルを更新します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14ef2997da92e0f902fd757a3cbff2735fdeada5
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 347ff88391a19cb3d8688b1142e524a163159b6f
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909725"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525488"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>機密情報ソース テーブル ファイルと完全一致するデータを更新する 
 
 機密情報データベースは、24 時間ごとに最大 5 回更新できます。 機密情報のソース テーブルを再表示してアップロードする必要があります。
 
-1. 機密データを Microsoft Excel などのアプリに再エクスポートし、ファイルを .csv、.tsv 形式、またはパイプ (|) で区切られた形式で保存します。 以前にファイルをハッシュしてアップロードした場合と同じファイル名と場所を保持します。 機密データ [をエクスポートして](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) 正しい形式に取得する方法の詳細については、「完全なデータ一致ベースの機密情報の種類のソース データをエクスポートする」を参照してください。
+1. 機密データを Microsoft Excel などのアプリに再エクスポートし、.csv、.tsv 形式、またはパイプ (|) で区切られた形式でファイルを保存します。 以前にファイルをハッシュしてアップロードした場合と同じファイル名と場所を保持します。 機密データ [をエクスポートして](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) 正しい形式に取得する方法の詳細については、「完全なデータ一致ベースの機密情報の種類のソース データをエクスポートする」を参照してください。
 
       > [!NOTE]
       > 機密情報ソース テーブル ファイルの構造 (フィールド名) に変更がない場合は、データを更新するときにデータベース スキーマ ファイルに変更を加える必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。 スキーマを編集 [または削除する](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) 手順については、「完全なデータ一致スキーマを管理する」を参照してください。 「EDM SIT/rule パッケージを編集または削除する手順については、「機密情報の種類 [/](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) ルール パッケージと完全に一致するデータを作成する」を参照してください。

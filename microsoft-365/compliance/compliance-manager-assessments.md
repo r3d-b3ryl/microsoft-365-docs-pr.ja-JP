@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager で評価を構築し、組織にとって重要な規制と認定の要件を満たすのに役立ちます。
-ms.openlocfilehash: 59f2bd89a798567d51c3e28fda574e7b9f0ba326
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fb30fd8f55172890507b82910630e7202de0d996
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319533"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526610"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>コンプライアンス マネージャーでの評価の作成と管理
 
@@ -73,7 +73,7 @@ Microsoft では、コンプライアンス マネージャーでデータ保護
 - 同じグループ内の異なる評価の関連評価コントロールは、完了すると自動的に更新されます。
 - グループには同じ認定または規制の評価を含めできますが、各グループには、特定の製品認定ペアに対して 1 つの評価のみを含めできます。 たとえば、グループに 2 つの評価を含めOffice 365 NIST CSF です。 1 つのグループに同じ製品に対して複数の評価を含めできるのは、それぞれに対応する認定または規制が異なる場合のみです。
 - 評価を削除すると、その評価とグループの関係が壊れます。
-- グループを手動で削除することはできません。
+- グループを削除することはできません。
 
 ## <a name="understand-templates-before-creating-assessments"></a>評価を作成する前にテンプレートを理解する
 

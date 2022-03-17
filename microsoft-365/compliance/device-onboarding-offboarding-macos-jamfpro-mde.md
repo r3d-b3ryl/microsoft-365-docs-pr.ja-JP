@@ -8,25 +8,25 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: MICROSOFT Defender for Endpoint のお客様向け JAMF Microsoft 365を使用して、macOS デバイスをオンボードおよびオフボードProコンプライアンス ソリューションに組み込む方法について説明します (プレビュー)
-ms.openlocfilehash: cfe008e7d1334be58e9aabf45d441b2553cb0fe2
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+description: MICROSOFT Defender for Endpoint のお客様向け JAMF Microsoft 365を使用して、macOS デバイスをオンボードおよびオフボードProコンプライアンス ソリューションに接続する方法について説明します (プレビュー)
+ms.openlocfilehash: 7e2109f52590cc4d9ad23700fa4b51a09ae4b5db
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963313"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526472"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
-JAMF を使用して、Proコンプライアンス ソリューションに macOS デバイスMicrosoft 365できます。
+JAMF デバイスを使用Pro、コンプライアンス ソリューションに macOS Microsoft 365オンボードできます。
 
 > [!IMPORTANT]
-> Microsoft Defender  for Endpoint (MDE) を macOS デバイスに展開している場合は、次の手順を実行します。
+> Microsoft Defender for  Endpoint (MDE) を macOS デバイスに展開している場合は、次の手順を実行します。
 
 **適用対象:**
 
@@ -38,7 +38,7 @@ JAMF を使用して、Proコンプライアンス ソリューションに macO
 ## <a name="before-you-begin"></a>はじめに
 
 - [macOS デバイスが参加Azure ADする](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- macOS デバイスが JAMF pro [を介して管理されている必要があります。](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
+- [macOS デバイスが JAMF pro を介して管理されている必要があります。](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
 - macOS デバイスに v95+ Edge ブラウザーをインストールする 
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>JAMF を使用してMicrosoft 365コンプライアンス ソリューションにデバイスをオンボードPro
@@ -56,7 +56,7 @@ JAMF を使用して、Proコンプライアンス ソリューションに macO
 |MDE の基本設定 |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json)
 
 > [!TIP]
-> *.mobileconfig* ファイルは、個別にダウンロードするか、以下を含 [む単一の結合ファイル](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)でダウンロードできます。
+> *.mobileconfig ファイルは*、個別にダウンロードするか、以下を含 [む単一の結合ファイル](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)でダウンロードできます。
 > - アクセシビリティ.mobileconfig
 > - fulldisk.mobileconfig
 >
@@ -81,19 +81,19 @@ JAMF を使用して、Proコンプライアンス ソリューションに macO
 
 1. **fulldisk.mobileconfig** ファイルを使用して、既存のフル ディスク アクセス プロファイルを更新します。
 
-1. **アップロードdisk.mobileconfig ファイルを** JAMF に移動します。 [「JAMF を使用したカスタム構成プロファイルの展開」を参照Pro。](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)
+1. アップロード **disk.mobileconfig ファイルを** JAMF に移動します。 「[JAMF を使用したカスタム構成プロファイルの展開」を参照Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)。
 
 ### <a name="grant-accessibility-access-to-dlp"></a>DLP へのアクセシビリティ アクセスを許可する
 
 1. 以前にダウンロードしたアクセシビリティ.mobileconfig ファイルを使用します。
 
-1. アップロードを使用したカスタム構成プロファイルの展開」の説明に従って[JAMF](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)にPro。
+1. アップロード Jamf を使用したカスタム構成プロファイルの展開」の説明に従って [JAMF にPro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ### <a name="check-the-macos-device"></a>macOS デバイスを確認する 
 
 1. macOS デバイスを再起動します。
 
-1. [**システム設定プロファイル]**  >  **を開きます**。
+1. [ **System PreferencesProfiles** > **] を開きます**。
 
 1. 次の情報が表示されます。
     - アクセシブル

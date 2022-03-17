@@ -1,5 +1,5 @@
 ---
-title: 機密情報の種類に一致する正確なデータの機密情報ソース テーブルのハッシュとアップロード
+title: 機密情報の種類と完全に一致する機密情報のソース テーブルをハッシュしてアップロードする
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: 機密情報の種類に一致する正確なデータの機密情報ソース テーブルをハッシュしてアップロードします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 85a65bc0d9d68a4a148fbc820985b6f40b6f6792
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 8d3effe3d46375ffcaec268e4b3fc6d53fc5044e
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914898"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526500"
 ---
-# <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>機密情報の種類に一致する正確なデータの機密情報ソース テーブルのハッシュとアップロード
+# <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>機密情報の種類と完全に一致する機密情報のソース テーブルをハッシュしてアップロードする
 
 この記事では、機密情報ソース テーブルをハッシュしてアップロードする方法を示します。
 
@@ -34,7 +34,7 @@ ms.locfileid: "60914898"
 
 1. カスタム セキュリティ グループとユーザー アカウントを設定する
 2. エージェント ツールの EDM アップロード設定する
-3. EDM アップロードエージェント ツールを使用して、ソルト値と機密情報ソース テーブルをハッシュし、アップロードします。
+3. EDM アップロードエージェント ツールを使用して、ソルト値、機密情報ソース テーブルをハッシュし、アップロードします。
 
 ハッシュ化とアップロードは 1 台のコンピューターで行うこともできますし、ハッシュ化のステップとアップロードのステップを分離してセキュリティを高めることもできます。
 
@@ -43,10 +43,10 @@ ms.locfileid: "60914898"
 ダイレクト アクセス コンピューターでクリア テキストの機密情報ソース テーブル ファイルを公開しない場合は、セキュリティで保護された場所にあるコンピューターでハッシュし、ハッシュ ファイルとソルト ファイルを、アップロードのために Microsoft 365 テナントに直接接続できるコンピューターにコピーできます。 分離されたハッシュとアップロードのシナリオでは、両方のコンピューターで EDMUploadAgent が必要です。
 
 > [!IMPORTANT]
-> 完全一致スキーマと機密情報の種類ウィザードを使用してスキーマ ファイルを作成した場合は、まだスキーマを作成していない場合は、この手順のスキーマをダウンロードする必要があります。 「XML [形式の EDM スキーマ ファイルのエクスポート」を参照してください](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format)。
+> 完全一致スキーマと機密情報の種類ウィザードを使用してスキーマ ファイルを作成した場合は、まだスキーマを作成していない場合は、この手順のスキーマをダウンロードする必要があります。 「 [EDM スキーマ ファイルを XML 形式でエクスポートする」を参照してください](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format)。
 
 > [!NOTE]
-> 組織がテナント レベルで[](customer-key-overview.md)顧客キーをMicrosoft 365場合、完全なデータ一致は暗号化機能を自動的に利用します。 この機能を利用できるのは、商用クラウド内の E5 ライセンスが割り当てられたテナントのみです。
+> 組織がテナント レベルで顧客[](customer-key-overview.md)キーをMicrosoft 365場合、完全一致データは自動的に暗号化機能を利用します。 この機能を利用できるのは、商用クラウド内の E5 ライセンスが割り当てられたテナントのみです。
 
 ### <a name="best-practices"></a>ベスト プラクティス
 
@@ -64,19 +64,19 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 
 ツールが列数の不一致を示している場合は、列区切り記号と混同されているテーブルの値内にコンマまたは引用符が存在している可能性があります。 値全体を囲む場合を指定しない限り、単一引用符と二重引用符を使用すると、個々の列の開始または終了場所を誤って特定する可能性があります。 
 
-**完全な値を囲む単一引用符または二重引用符文字が見つ** かった場合は、そのままにしておく必要があります。
+**完全な値を囲む単一引用符または二重引用符文字が見つけた** 場合は、そのままにしておく必要があります。
 
-値の中に単一引用符またはコンマ (たとえば、人物の名前 Tom O'Neil や、アポストロフィ文字で始まる市区町村の s-Gravenhage) を見つけた場合は、そのような列を二重引用符で囲む機密情報テーブルを生成するために使用されるデータエクスポートプロセスを変更する必要があります。
+値の中に単一引用符またはコンマが含まれている場合(たとえば、人物の名前 Tom O'Neil、またはアポストロフィ文字で始まる市のS-Gravenhage)、そのような列を二重引用符で囲む機密情報テーブルを生成するために使用されるデータエクスポートプロセスを変更する必要があります。
 
-**値の内部に** 二重引用符が見つかった場合は、このような問題の影響を受けにくいテーブルに Tab 区切り形式を使用することが望ましい場合があります。
+**値の内部に** 二重引用符が見つかった場合は、このような問題の影響を受けにくい表に Tab 区切り形式を使用することが望ましい場合があります。
 
 ### <a name="prerequisites"></a>前提条件
 
 - **EDM\_DataUploaders** セキュリティ グループに追加される Microsoft 365 の職場または学校のアカウント
-- .NET Windows 10 4.6.2 Windows Server 2016のコンピューターまたはコンピューター <!--4.7.2 un comment this around 9/29-->EDMUploadAgent を実行する場合
+- .NET Windows 10 4.6.2 Windows Server 2016を持つコンピューターまたはコンピューター <!--4.7.2 un comment this around 9/29-->EDMUploadAgent を実行する場合
 - 以下のためのアップロード マシン上のディレクトリ。
   - [EDM アップロード エージェント](#links-to-edm-upload-agent-by-subscription-type)
-  - この例では、.csv .tsv またはパイプ (|) 形式の機密アイテムPatientRecords.csvファイル
+  - この例では、.csv.tsv またはパイプ (|) 形式の機密アイテムPatientRecords.csvファイル ****
   - この手順で作成した出力ハッシュ ファイルとソルト ファイル
   - **edm.xml** ファイルのデータストア名 (このサンプルでは `PatientRecords`)
 
@@ -117,7 +117,7 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
    >
    > EDMUploadAgent を使用して特定のデータ ストアにデータをアップロードできるのは、1 日に 2 回だけです。
 
-3. EDM アップロードエージェントを承認し、管理者としてコマンド プロンプト ウィンドウを開き **、C:\EDM\Data** ディレクトリに切り替えて、次のコマンドを実行します。
+3. EDM アップロードエージェントを承認し、管理者としてコマンド プロンプト ウィンドウを開き、**C:\EDM\Data** ディレクトリに切り替えて、次のコマンドを実行します。
 
    `EdmUploadAgent.exe /Authorize`
 
@@ -157,7 +157,7 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
    **ProcessingInProgress** にある状態を確認します。 状態が **完了** に変わるまで、数分ごとにご確認ください。 状態が完了になれば、EDM データはいつでも使用することができます。 機密情報ソース テーブル ファイルのサイズによっては、数分から数時間かかる場合があります。 
 
 > [!TIP]
-> アップロードされた機密データを使用する準備が整った後に通知を受け取る場合は、「完全なデータ一致アクティビティの通知を作成する」 [の手順に従います](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities)。
+> アップロードされた機密データを使用する準備が整った後に通知を受け取る場合は、「完全なデータ一致アクティビティの通知を作成する [」の手順に従います](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities)。
 
 ### <a name="separate-hash-and-upload"></a>ハッシュ化とアップロードを分離する
 
@@ -193,7 +193,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 2. これらのファイルを安全な方法で、機密情報ソース テーブル ファイル (PatientRecords) をテナントにアップロードするために使用するコンピューターにコピーします。
 
-3. EDM アップロードエージェントを承認し、管理者としてコマンド プロンプト ウィンドウを開き **、C:\EDM\Data** ディレクトリに切り替えて、次のコマンドを実行します。
+3. EDM アップロードエージェントを承認し、管理者としてコマンド プロンプト ウィンドウを開き、**C:\EDM\Data** ディレクトリに切り替えて、次のコマンドを実行します。
 
    `EdmUploadAgent.exe /Authorize`
 
@@ -229,5 +229,5 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
      
 ## <a name="next-step"></a>次のステップ
 
-- [機密情報の種類/ルール パッケージと完全一致するデータを作成する](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
+- [機密情報の種類/ルール パッケージと完全に一致するデータを作成する](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
 

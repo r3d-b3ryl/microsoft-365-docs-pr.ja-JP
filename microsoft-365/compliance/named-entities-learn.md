@@ -12,30 +12,30 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: 名前付きエンティティが、データ損失防止ポリシーを使用して、人の名前、物理的な住所、医療用語を含む機密アイテムを検出する方法について説明します。
-ms.openlocfilehash: 002905264d789e7ebe0b163a80fe033c028a6b4b
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 79f375fecf09a6f7ffe4c1a97b8d6864fbfb3e13
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110849"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63524867"
 ---
 # <a name="learn-about-named-entities-preview"></a>名前付きエンティティの詳細 (プレビュー)
 
 > [!IMPORTANT]
 > 名前付きエンティティ機能が展開され、テナントが利用可能なときにテナントに表示されます。 コンテンツ エクスプローラーとデータ損失防止 (DLP) ポリシー作成フローでそれらを確認します。 
 
-*名前付きエンティティは* 機密情報 [の種類 (SIT)](sensitive-information-type-learn-about.md) です。 これらは複雑な辞書とパターン ベースの分類子であり、ユーザー名、物理アドレス、医療条件を検出するために使用できます。 これらの情報は、コンプライアンス センターの [データ> **機密情報>で確認できます**。 次に、SIT を使用できる場所の一覧を示します。
+*名前付きエンティティは* 機密情報 [の種類](sensitive-information-type-learn-about.md) (SIT) です。 これらは複雑な辞書とパターン ベースの分類子であり、ユーザー名、物理アドレス、医療条件を検出するために使用できます。 これらの情報は、コンプライアンス センターの [データ> **機密情報>で確認できます**。 次に、SIT を使用できる場所の一覧を示します。
 
 - [データ損失防止ポリシー (DLP)](dlp-learn-about-dlp.md) 
 - [機密ラベル](sensitivity-labels.md)
 - [インサイダー リスク管理](insider-risk-management-solution-overview.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 
-DLP は、組織のニーズに合わせてカスタマイズできる事前構成された DLP ポリシーである拡張ポリシー テンプレートで、名前付きエンティティを特別に使用します。 また、空白[のテンプレートから独自の DLP](create-test-tune-dlp-policy.md) [](create-a-dlp-policy-from-a-template.md)ポリシーを作成し、名前付きエンティティ SIT を条件として使用することもできます。
+DLP は、組織のニーズに合わせてカスタマイズできる事前構成された DLP ポリシーである拡張ポリシー テンプレートで、名前付きエンティティを特別に使用します。 また、空白[のテンプレートから独自の DLP](create-test-tune-dlp-policy.md) ポリシーを[](create-a-dlp-policy-from-a-template.md)作成し、名前付きエンティティ SIT を条件として使用することもできます。
 
 <!-- There are many other SITs that detect strings like social security, credit card, or bank account numbers to identify sensitive items. For more information, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md).-->
 
@@ -43,15 +43,15 @@ DLP は、組織のニーズに合わせてカスタマイズできる事前構�
 
 ## <a name="examples-of-named-entity-sits"></a>名前付きエンティティの ST の例
 
-名前付きエンティティの STには、バンドルとバンドル解除の *2 つのフレーバーがあります。*
+名前付きエンティティの ST には、バンドルとバンドル解除の *2 つのフレーバーがあります。*
 
 バンドルされた名前付きエンティティの ST は、すべての可能な一致を検出します。 機密性の高いアイテムを検出するために、DLP ポリシーの広範な条件として使用します。
 
 Unbundled 名前付きエンティティの T は、単一の国のように、より狭いフォーカスを持っています。 検出範囲が狭い DLP ポリシーが必要な場合は、それらを使用します。
  
-名前付きエンティティの SIT の例を次に示します。 これらの 52 件はすべて、コンプライアンス センターの [データ> **機密情報>で確認できます**。
+名前付きエンティティの SIT の例を次に示します。 これらの 52 のすべては、コンプライアンス センターの [データ> **機密情報>で確認できます**。
 
-|名前付きエンティティ |[説明]  |バンドル/バンドル解除  |
+|名前付きエンティティ |説明  |バンドル/バンドル解除  |
 |---------|---------|---------|
 |すべての完全な名前    |完全な名前のすべての可能な一致を検出します         |   バンドル      |
 |すべての物理アドレス    |物理アドレスのすべての可能な一致を検出します     | バンドル |
@@ -62,9 +62,9 @@ Unbundled 名前付きエンティティの T は、単一の国のように、�
 
 ## <a name="examples-of-enhanced-dlp-policies"></a>拡張 DLP ポリシーの例
 
-名前付きエンティティの SIT を使用する拡張 DLP ポリシーの例を次に示します。 これらの 10 件はすべて、コンプライアンス センターの [データ損失防止>作成> **で確認できます**。 拡張テンプレートは、DLP および自動ラベル付けで使用できます。
+名前付きエンティティの SIT を使用する拡張 DLP ポリシーの例を次に示します。 これらの 10 件はすべて、コンプライアンス センターの [データ **損失防止**>作成>確認できます。 拡張テンプレートは、DLP および自動ラベル付けで使用できます。
 
-|ポリシー カテゴリ  |テンプレート  |[説明]  |
+|ポリシー カテゴリ  |テンプレート  |説明  |
 |---------|---------|---------|
 |財務的|米国の Gramm-Leach-Bliley 法 (GLBA) 拡張         |グラム リーチ ブライリー法 (GLBA) の対象となる情報 (社会保障番号やクレジット カード番号など) の存在を検出する際に役立ちます。 この拡張テンプレートは、ユーザーのフルネームである米国/英国も検出することで、元の名前を拡張します。 パスポート番号、米国の運転免許証番号、米国の物理アドレス。         |
 | 医療と健康   |オーストラリアの健康記録法 (HRIP 法) 拡張         |オーストラリアで一般的に保健医療記録情報プライバシー (HRIP) 法の対象になると見なされる情報 (医療口座番号や納税者番号など) の存在を検出する際に役立ちます。 この拡張テンプレートは、ユーザーの完全な名前、医療条件、オーストラリアの物理的な住所も検出することで、元の情報を拡張します。         |

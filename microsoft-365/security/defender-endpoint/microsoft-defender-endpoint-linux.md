@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b125689f6eaf2bad5ebfef9977417abdea051f3b
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: ebcfea808e64c89772f36fb22f5dfd75e6e8e27f
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401134"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525808"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -85,6 +85,7 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
   - Debian 9 以上
   - SUSE Linux Enterprise サーバー 12 以上
   - Oracle Linux 7.2 以上
+  - Oracle Linux 8.x
   - Amazon Linux 2
   - Fedora 33 以上
 
@@ -189,7 +190,7 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 ****
 
 
-|ドメインリストのスプレッドシート| 内容|
+|ドメインリストのスプレッドシート| 説明|
 |---|---|
 |商用顧客向け Microsoft Defender for Endpoint URL リスト | 商用顧客向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
 | Gov/GCC/DoD のお客様向け Microsoft Defender for Endpoint URL リスト| Gov/GCC/DoD のお客様向けサービスの場所、地理的な場所、OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)

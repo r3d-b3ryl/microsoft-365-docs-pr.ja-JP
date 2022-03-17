@@ -11,14 +11,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
-description: PowerShell でのドキュメント理解モデルSharePoint Syntexの作業について説明します。
-ms.openlocfilehash: 06f0eb7314b85f9463689fea32667666e5e167fd
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.localizationpriority: medium
+description: PowerShell でのドキュメント理解モデルSharePoint Syntex作業について説明します。
+ms.openlocfilehash: 12bdb4c7019b34ee7d2c1f4315673d78cbfb7ba1
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159711"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525696"
 ---
 # <a name="work-with-document-understanding-model-explanations-in-powershell"></a>PowerShell でのドキュメント理解モデルの説明を使用する
 

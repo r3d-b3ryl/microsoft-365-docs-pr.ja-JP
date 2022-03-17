@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 11/29/2021
+ms.date: 03/16/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 6b6e9f9c379d4d0a659b49b9b9ce9b22b6e5ee04
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6c3df0efe5c565497803ecdd84716ec70e590afd
+ms.sourcegitcommit: b67385243fb56ad20f2a6f1c40be46f5691c1c2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322661"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527828"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -63,15 +63,24 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理](nex
 
 ## <a name="enable-edr-in-block-mode"></a>ブロック モードでEDRを有効にする
 
+> [!IMPORTANT]
+> プラットフォーム バージョン 4.18.2202.X から、Intune CSP を使用して特定のデバイス グループをターゲットに設定するブロック モードで EDR を設定できます。 引き続き、EDRポータルでブロック モードのテナント全体でMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">できます</a>。 ブロック モードのEDRは、パッシブ モード (サードパーティ AV がアクティブ) で MDAV を実行しているデバイスに対して主に推奨されます。 
+
 > [!TIP]
 > ブロック モードで[オンにする前](#requirements-for-edr-in-block-mode)に、要件EDR確認してください。
+
+### <a name="security-portal"></a>セキュリティ ポータル 
 
 1. ポータル () にMicrosoft 365 Defenderサインイン[https://security.microsoft.com/](https://security.microsoft.com/)します。
 2. [エンドポイント **設定** \> **高度な機能** \> **] を** \> **選択します**。
 3. 下にスクロールし、[ブロック モードでEDR **を有効にする] をオンにします**。
 
-> [!IMPORTANT]
-> EDRモードの場合は、ポータルでのみオンMicrosoft 365 Defenderし、テナント全体<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>に適用されます。 ブロック モードで特定EDRグループまたはユーザーをターゲットに設定することはできません。 ブロック モードでレジストリ キー、Microsoft Intune、またはグループ ポリシーを使用して、EDRを有効または無効にすることはできません。
+### <a name="intune"></a>Intune
+
+Intune でカスタム ポリシーを作成するには、「Deploy OMA-URIs Intune を使用して CSP をターゲットにし、オンプレミスと比較 [する」を参照してください](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune)。
+
+ブロック モードで使用する Defender CSP のEDR詳細については、「Defender CSP」の「Configuration/PassiveRemediation」[を参照してください](/windows/client-management/mdm/defender-csp)。
+
 
 ## <a name="requirements-for-edr-in-block-mode"></a>ブロック モードでのEDR要件
 

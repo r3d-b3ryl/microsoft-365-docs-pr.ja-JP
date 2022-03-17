@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: reference
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b2c50999b7aab3588239f3965e41543680c9aad6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 84ec7e361cccdc886650b0710f738a4315c4db8d
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331016"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527060"
 ---
 #  <a name="upload-files-to-the-live-response-library"></a>アップロードをライブ応答ライブラリに保存する  
 
@@ -74,7 +74,7 @@ POST https://api.securitycenter.microsoft.com/api/libraryfiles
 
 |  名前   |    型    |       説明                         |
 |-----------------|--------|--------------------------------|
-| Authorization   | String | ベアラー\<token>。 必須です。      |
+| Authorization   | 文字列 | ベアラー\<token>。 必須です。      |
 | Content-Type    | string | multipart/form-data。 必須です。 |
 
 ## <a name="request-body"></a>要求本文
@@ -84,9 +84,9 @@ POST https://api.securitycenter.microsoft.com/api/libraryfiles
 | パラメーター         |     型         |       説明                                        |
 |-----------------------|--------------|------------------------------------------------------------|
 | ファイル                  | ファイル コンテンツ | ライブ応答ライブラリにアップロードするファイル。必須 |
-| 説明           | String       | ファイルの説明。                                  |
-| ParametersDescription | String       | (省略可能)スクリプトを実行するために必要なパラメーター。 既定値は空の文字列です。                |
-| OverrideIfExists      | ブール値      | (省略可能)ファイルが既に存在する場合に上書きするかどうかを指定します。 既定値は空の文字列です。          |
+| 説明           | 文字列       | ファイルの説明。                                  |
+| ParametersDescription | 文字列       | (省略可能)スクリプトを実行するために必要なパラメーター。 既定値は空の文字列です。                |
+| OverrideIfExists      | Boolean      | (省略可能)ファイルが既に存在する場合に上書きするかどうかを指定します。 既定値は空の文字列です。          |
 
 
 

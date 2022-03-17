@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 description: 正確なデータ一致に基づく機密情報の種類について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6b8b2bb5387257bf016e751713b9cba61de9691
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 21e6f3c12d7c401562a1ee1915e1e1c266724b1b
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426473"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526922"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>完全なデータ一致に基づく機密情報の種類の詳細
 
 [機密情報](sensitive-information-type-learn-about.md) の種類は、機密性の高いアイテムが誤って共有または不適切に共有されるのを防ぐため、電子情報開示で関連するデータを検索したり、特定の種類の情報にガバナンス アクションを適用したりするために使用されます。 次に基づいて、カスタムの機密情報の種類 (SIT) を定義します。
 
 - パターン
-- 従業員、社会保障 *番号、ID* などのキーワード *証拠*
+- 従業員、社会保障 *番号、* ID などのキーワード *証拠*
 - 特定のパターンの証拠に対する文字の近接性
 - 信頼度レベル
 
@@ -94,7 +94,7 @@ EDM SIT を使用する場合は、独自の概念を理解すると便利です
 
 ### <a name="you-supply-your-own-schema-and-data"></a>独自のスキーマとデータを指定する
 
-[Microsoft 365 200](sensitive-information-type-entity-definitions.md)を超える SITS と、定義済みのスキーマ、正規表現パターン、キーワード、信頼度が付属しています。 EDM の EDM の場合は、スキーマと、機密性の高いアイテムを識別するプライマリ フィールドとセカンダリ フィールドを定義します。 スキーマとプライマリ データ値とセカンダリ データ値は非常に機密性が高いので、ランダムに生成または自己[](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes)提供されたソルト値を含むハッシュ関数を使用して暗号化[します。](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) その後、これらのハッシュ値がサービスにアップロードされ、機密データが開かれません。
+[Microsoft 365 200](sensitive-information-type-entity-definitions.md) を超える SITS と、定義済みのスキーマ、正規表現パターン、キーワード、信頼度が付属しています。 EDM の EDM の場合は、スキーマと、機密性の高いアイテムを識別するプライマリ フィールドとセカンダリ フィールドを定義します。 スキーマとプライマリ データ値とセカンダリ データ値は非常に機密性が高いので、ランダムに生成または自己提供された[](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes)ソルト値を含むハッシュ関数を使用して[暗号化します。](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) その後、これらのハッシュ値がサービスにアップロードされ、機密データが開かれません。
 
 ### <a name="primary-and-secondary-support-elements"></a>プライマリおよびセカンダリ のサポート要素
 

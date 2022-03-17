@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: コンプライアンス ソリューションへの macOS デバイスのオンボーディングについて
-ms.openlocfilehash: fbf29e0d66bf31d058cede69aba9fe0c7814a3a7
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 93a930f13a17c19c3ff7209295ddada648b9575a
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963253"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526570"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)
 
@@ -35,7 +35,7 @@ MacOS デバイスは、Intune または JAMF Microsoft 365を使用して、コ
 macOS デバイス (Catalina 10.15 以降) での Endpoint DLP の使用を開始する前に、次の記事を理解する必要があります。
 
 - [Microsoft 365 のエンドポイントのデータ損失防止についての詳細情報](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
-- [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
+- [エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 
 DLP に精通していない場合は、次の記事も理解する必要があります。
 
@@ -48,10 +48,10 @@ Insider Risk に精通していない場合は、次の記事について理解�
  - [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
  - [インサイダー リスク管理のための計画](insider-risk-management-plan.md#plan-for-insider-risk-management)
 
-macOS デバイスは、Intune または JAMF を使用して既に管理されている必要Pro。
+macOS デバイスは、Intune または JAMF を介して既に管理されている必要Pro。
  
-- Intune にオンボードするには、「Deployment [guide: Manage macOS](/mem/intune/fundamentals/deployment-guide-platform-macos) devices in Microsoft Intune」および「Mac をデバイスに登録する」[をIntune ポータル サイト。](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) 
-- JAMF ProにPro [JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) Proインストールおよび構成ガイド」[を参照してください。](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- Intune にオンボードするには、「展開ガイド[: macOS](/mem/intune/fundamentals/deployment-guide-platform-macos) デバイスを管理する」および「Microsoft Intune Mac をデバイスに登録する」[を参照Intune ポータル サイト](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
+- JAMF にオンボードするPro、[JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) Pro管理者ガイドおよび [JAMF Pro インストールと構成ガイド for Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
 - macOS デバイスに v95+ Edge ブラウザーをインストールする 
 
 ## <a name="licensing-guidance"></a>ライセンスガイダンス
@@ -70,7 +70,7 @@ macOS デバイスがコンプライアンス ソリューションにオンボ�
 
 **クリップボードにコピー** する – 適用された場合、エンドポイント デバイス上のクリップボードにコピーされる保護されたファイル内のデータをブロック、警告、または監査します。 
 
-**アップロード**– このアクションは、保護されたファイルがグローバル設定の許可/許可されていないドメイン リストに基づいてクラウド サービスへのアップロードを禁止または許可されている場合にブロック、警告、または監査を行います。 このアクションを警告またはブロックに設定すると、他のブラウザー ([グローバル設定] の [許可されていないブラウザー] リストで定義) がファイルへのアクセスをブロックされます。 
+**アップロード** – このアクションは、保護されたファイルがグローバル設定の許可/許可されていないドメインリストに基づいてクラウド サービスへのアップロードを禁止または許可されている場合にブロック、警告、または監査を行います。 このアクションを警告またはブロックに設定すると、他のブラウザー ([グローバル設定] の [許可されていないブラウザー] リストで定義) がファイルへのアクセスをブロックされます。 
 
 **許可されていないアプリ** からアクセスします。このアクションを適用すると、許可されていないアプリの一覧 (グローバル設定で定義されている) にあるアプリケーションがエンドポイント デバイス上の保護されたファイルにアクセスできません。 サンプル シナリオ 
 
@@ -82,7 +82,7 @@ macOS デバイスがコンプライアンス ソリューションにオンボ�
 
 <!--If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list.-->
 
-1. [Microsoft コンプライアンス [センター] ページを開](https://compliance.microsoft.com)**設定[** デバイスの監視を **有効にする] を選択します**。
+1. [Microsoft コンプライアンス [センター] ページを開](https://compliance.microsoft.com)**設定**[デバイスの監視 **を有効にする] を選択します**。
 
    > [!NOTE]
    > 通常、デバイスのオンボーディングが有効になるまで約60秒かかりますが、Microsoft サポートに連絡するまでに最大 30 分かかります。
@@ -104,7 +104,7 @@ DLP センサーの利用統計情報をMicrosoft 365データ損失防止ポリ
 |[Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|JAMF Pro を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 - [Microsoft アプリ全体の DLP ポリシー ヒントのサポート マトリックス](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

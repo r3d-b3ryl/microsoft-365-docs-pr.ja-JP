@@ -11,14 +11,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: PowerShell を使用して、ドキュメント理解モデルで処理SharePoint Syntexする方法について説明します。
-ms.openlocfilehash: f6e013bddbec3c0f12bb8665de538967adfff116
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 8f66a0cc5e59ad2ccb6b92d98cfaee8ce84470f2
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159675"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526444"
 ---
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>PowerShell を使用してドキュメント理解モデルによる処理を要求する
 
@@ -38,7 +38,7 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -List "Documents"
 ```
 
-優先度の低い処理では、テナントがある営業時間外に処理するファイルをキューに入れる -OffPeak パラメーターの使用も検討できます。 詳細 [については、「Request-PnPSyntexClassifyAndExtract」](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) を参照してください。
+優先度の低い処理では、テナントがある営業時間外に処理するファイルをキューに入れる -OffPeak パラメーターの使用も検討できます。 詳細 [については、「Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) 」を参照してください。
 
 ## <a name="request-processing-of-all-items-in-a-library"></a>ライブラリ内のすべてのアイテムの処理を要求する
 
@@ -56,7 +56,7 @@ Request-PnPSyntexClassifyAndExtract -List "Documents" -Force
 
 ## <a name="request-processing-of-all-items-based-on-a-property"></a>プロパティに基づいてすべてのアイテムの処理を要求する
 
-ライブラリ内のアイテムの特定のサブセットに処理を制限する場合は、スクリプトを使用して特定のファイル グループを選択できます。 次の例では、スクリプトを使用してフィールドを選択し、フィールド値をフィルター処理できます。 [Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html)を使用すると、より複雑なクエリを実行できます。
+ライブラリ内のアイテムの特定のサブセットに処理を制限する場合は、スクリプトを使用して特定のファイル グループを選択できます。 次の例では、スクリプトを使用してフィールドを選択し、フィールド値をフィルター処理できます。 [Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html) を使用すると、より複雑なクエリを実行できます。
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process

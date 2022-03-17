@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7045ff8931def0f7aef2c1ac40ea76ec839c7ad0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 003c7cee09499fdec46f7d588e792878e0d3be66
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312659"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525362"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS での Microsoft Defender for Endpoint の展開
 
@@ -36,7 +36,7 @@ ms.locfileid: "63312659"
 
 このトピックでは、登録されているデバイス上の iOS での Defender for Endpoint のIntune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「 [Intune に iOS/iPadOS デバイスを登録する」を参照してください](/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - Microsoft Endpoint Manager 管理センター [へのアクセス権を持っている必要があります](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -117,7 +117,7 @@ Microsoft Defender for Endpoint on iOS アプリは、これらの種類のデ�
 
 1. **[確認および作成]** ページで、完了したら、**[作成]** を選択します。 構成プロファイルの一覧に新しいプロファイルが表示されます。
 
-1. 次に、フィッシング対策機能を強化するには、監視対象の iOS デバイスにカスタム プロファイルを展開できます。 以下の手順に従います。
+1. 次に、監視対象の iOS デバイスにカスタム プロファイルを展開する必要があります。 これは、強化されたフィッシング対策機能用です。 以下の手順に従います。
 
     - 構成プロファイルのダウンロード [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
     - **DevicesiOS** -> **/iPadOSConfiguration** ->  **profilesCreate Profile に** -> **移動する**
@@ -142,7 +142,7 @@ Microsoft Defender for Endpoint on iOS アプリは、これらの種類のデ�
 この手順では、VPN プロファイルを設定することでオンボーディング プロセスを簡略化します。 ゼロタッチまたはサイレント オンボーディングエクスペリエンスについては、次のセクション「ゼロタッチオンボード [」を参照してください](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview)。
 
 1. [Microsoft Endpoint Manager 管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**DevicesConfiguration** ->  **ProfilesCreate Profile**]  ->  に移動します。
-1. [**iOS****/iPadOS としてプラットフォーム] を選択し、[****VPN としてプロファイルの種類**] を **選択します**。 [**作成**] をクリックします。
+1. [**iOS****/iPadOS としてプラットフォーム] を選択し、[****VPN としてプロファイルの種類**] を **選択します**。 **[作成]** をクリックします。
 1. プロファイルの名前を入力し、[次へ] を **クリックします**。
 1. [ **接続の種類]** で [カスタム VPN] を選択し、[ **基本 VPN** ] セクションで、次の値を入力します。
     - 接続名 = エンドポイント用 Microsoft Defender

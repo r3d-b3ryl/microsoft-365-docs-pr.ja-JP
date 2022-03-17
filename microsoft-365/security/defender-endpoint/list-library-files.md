@@ -1,5 +1,5 @@
 ---
-title: リスト ライブラリ ファイル
+title: ライブラリ ファイルを一覧表示する
 description: ライブ応答ライブラリ ファイルを一覧表示する方法について説明します。
 keywords: apis, graph api, supported apis, get, devices
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,14 +20,14 @@ ms.collection:
 ms.topic: reference
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1700fffa7014733b44c8ed03b8fdffae085644a9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9c9bf11856cf518a1cd387b88a3b70dc4a34cc91
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331067"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526910"
 ---
-#  <a name="list-library-files"></a>リスト ライブラリ ファイル 
+#  <a name="list-library-files"></a>ライブラリ ファイルを一覧表示する 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -66,9 +66,9 @@ GET https://api.securitycenter.microsoft.com/api/libraryfiles
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前         |      型                     | 説明
+| 名前         |      種類                     | 説明
 |-----------------|--------|---------------------------|
-| Authorization   | String | ベアラー {token}。必須。 |
+| Authorization   | 文字列 | ベアラー {token}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 Empty

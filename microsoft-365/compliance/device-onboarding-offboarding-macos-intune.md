@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: macOS デバイスをオンボーディングおよびオフボードで、Microsoft 365コンプライアンス ソリューションにMicrosoft Intuneする方法 (プレビュー)
-ms.openlocfilehash: bab39cf101cb4fcae15f93ecc74bc52d81cadd91
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 5f8dd27490992e15d53dfc10311ce7b23b99683a
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327391"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526514"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Intune を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
@@ -35,7 +35,7 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 
 ## <a name="before-you-begin"></a>はじめに
 
-- macOS デバイス[が Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) にオンボードされ、アプリに登録ポータル サイト[します](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
+- macOS デバイス[が Intune に](/mem/intune/fundamentals/deployment-guide-platform-macos)オンボードされ、アプリに登録ポータル サイト[します](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
 - サーバー センターにアクセスMicrosoft エンドポイント マネージャー[します](https://endpoint.microsoft.com/#home)。
 - これは macOS バージョン Catalina 10.15 以上をサポートします。
 - 構成更新プログラムを割り当てるユーザー グループを作成します。
@@ -140,7 +140,7 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 ```
 -->
 
-2. **centerDevicesConfiguration** >  **Microsoft エンドポイント マネージャー** > を **開きます**。
+2. **centerDevicesConfiguration** >  **プロファイルMicrosoft エンドポイント マネージャー** > 開 **きます**。
 
 1. 選択: **プロファイルの作成** 
 
@@ -151,7 +151,7 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 
 1. [作成 **] を選択します。**
 
-1. この例のアクセシビリティフォーム *acOS* など、プロファイルの名前を選択します。 **[次へ]** を選択します。
+1. この例のアクセシビリティフォーム *acOS* など、プロファイルの名前を選択します。 **次へ** を選択します。
 
 1. 手順 1 **でダウンロードしたアクセシビリティ.mobileconfig** ファイルを構成プロファイル ファイルとして選択します。
 
@@ -174,7 +174,7 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 
 ### <a name="get-the-device-onboarding-package"></a>デバイスオンボーディング パッケージの取得
 
-1. [**コンプライアンス センター] で [****設定** > **Device オンボーディング**] を開き、[オンボーディング] **を選択します**。
+1. [**コンプライアンス センター] で [****設定** > **Device オン** ボーディング] を開き、[オンボーディング] **を選択します**。
  
 1. [**オンボーディング プロセスを開始するオペレーティング システムの選択] で、****macOS を選択します**。
  
@@ -184,7 +184,7 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 
 ### <a name="deploy-the-onboarding-package"></a>オンボーディング パッケージの展開
 
-1. **centerDevicesConfiguration** >  **Microsoft エンドポイント マネージャー** > を **開きます**。
+1. **centerDevicesConfiguration** >  **プロファイルMicrosoft エンドポイント マネージャー** > 開 **きます**。
 
 1. [プロファイルの **作成] を選択します**。 
 
@@ -195,9 +195,9 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 
 1. [作成 **] を選択します。**
 
-1. この例の *OnboardingPackage など、プロファイルの名前* を選択します。 **[次へ]** を選択します。
+1. この例の *OnboardingPackage など、プロファイルの名前* を選択します。 **次へ** を選択します。
 
-1. 構成プロファイル *DeviceComplianceOnboarding.xml* ファイルを選択します。
+1. 構成プロファイル *ファイルDeviceComplianceOnboarding.xml* ファイルを選択します。
 
 1. **[次へ]** を選択します
 
@@ -234,7 +234,7 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 
 ### <a name="get-the-installation-package"></a>インストール パッケージの取得
 
-1. [**コンプライアンス センター] で [****設定** > **Device オンボーディング**] を開き、[オンボーディング] **を選択します**。
+1. [**コンプライアンス センター] で [****設定** > **Device オン** ボーディング] を開き、[オンボーディング] **を選択します**。
  
 1. [ **オンボーディング プロセスを開始するオペレーティング システムの選択] で** **macOS を選択する**
  
@@ -255,7 +255,7 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 > [!NOTE]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は、最大 6 か月間保持されます。
 
-2. 中央 **Microsoft エンドポイント マネージャー** **DevicesConfiguration** >  プロファイルを開き、作成したプロファイルがそこに表示されます。
+2. 中央 **Microsoft エンドポイント マネージャー** **DevicesConfiguration** >  プロファイルを開きます。作成したプロファイルがそこに表示されます。
 
 1. [構成 **プロファイル] ページで** 、 *wdav.pkg.intunemac プロファイルを選択* します。
 

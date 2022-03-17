@@ -11,14 +11,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: PowerShell を使用してドキュメントSharePoint Syntexを発行する方法について説明します。
-ms.openlocfilehash: 215a073ea5cabe7c701d24a9b8972268c4dd21ff
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 5169e5ea5839cd5c341baa2477fd82281f5e5d76
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159699"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526486"
 ---
 # <a name="publish-document-understanding-models-with-powershell"></a>PowerShell を使用してドキュメント理解モデルを公開する
 
@@ -29,7 +29,7 @@ SharePoint Syntexモデルは、通常、テナント全体のドキュメント
 
 ## <a name="listing-the-available-models-in-a-content-center"></a>コンテンツ センターで使用可能なモデルの一覧を表示する
 
-現在のコンテンツ センター サイトに追加されたモデルのSharePoint Syntexを取得するには[、Get-PnPSyntexModel コマンドレットを使用](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html)します。
+現在のコンテンツ センター サイトに追加されたモデルのSharePoint Syntexを取得するには、[Get-PnPSyntexModel コマンドレットを使用](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html)します。
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -38,7 +38,7 @@ Get-PnPSyntexModel
 
 ## <a name="apply-a-model-to-a-library"></a>ライブラリにモデルを適用する
 
-モデルをライブラリに適用するには [、Publish-PnPSyntexModel コマンドレットを使用](https://pnp.github.io/powershell/cmdlets/Publish-PnPSyntexModel.html) します。
+モデルをライブラリに適用するには、 [Publish-PnPSyntexModel コマンドレットを使用](https://pnp.github.io/powershell/cmdlets/Publish-PnPSyntexModel.html) します。
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -47,7 +47,7 @@ Publish-PnPSyntexModel -Model "Contract Notice" -ListWebUrl "https://contoso.sha
 
 ## <a name="understanding-where-a-model-is-used"></a>モデルの使用場所を理解する
 
-モデルを多数のライブラリに展開したら、モデルを使用してライブラリの一覧を確認できます。 これは [、Get-PnPSyntexModelPublication コマンドレットを使用して実行](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModelPublication.html) できます。
+モデルを多数のライブラリに展開したら、モデルを使用してライブラリの一覧を確認できます。 これは、 [Get-PnPSyntexModelPublication コマンドレットを使用して実行](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModelPublication.html) できます。
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -56,7 +56,7 @@ Get-PnPSyntexModelPublication -Identity "Contract Notice"
 
 ## <a name="removing-a-model-from-a-library"></a>ライブラリからモデルを削除する
 
-ライブラリからモデルを削除すると、適用と同じパターンに従い [、Unpublish-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Unpublish-PnPSyntexModel.html) コマンドレットを対話型または複数のアクションのバッチとして使用できます。
+ライブラリからモデルを削除すると、適用と同じパターンに従い、 [Unpublish-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Unpublish-PnPSyntexModel.html) コマンドレットを対話型または複数のアクションのバッチとして使用できます。
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourSite"

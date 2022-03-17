@@ -1,5 +1,5 @@
 ---
-title: 機密情報の種類に関する一般的な使用シナリオ
+title: 機密情報の種類の一般的な使用シナリオ
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: 一般的な機密情報の種類の使用例のシナリオを実装する方法
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd11c4843d91923f1ca5e171cc8bfc8e1c64c73d
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 39afa17fc7bf258848de9d5554b3dd56a1ce21b5
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272293"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525738"
 ---
-# <a name="common-usage-scenarios-for-sensitive-information-types"></a>機密情報の種類に関する一般的な使用シナリオ
+# <a name="common-usage-scenarios-for-sensitive-information-types"></a>機密情報の種類の一般的な使用シナリオ
 
 この記事では、一般的な機密情報の種類 (SIT) の使用例のシナリオを実装する方法について説明します。 これらの手順は例として使用し、特定のニーズに合わせて調整できます。
 
@@ -36,8 +36,8 @@ Contoso Bank は、発行するクレジット カード番号を機密として
 
 1. クレジット カード SIT のコピーを作成します。 この手順を使用して [、機密情報の種類を](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) コピーして変更し、クレジット カード SIT をコピーします。
 1. 高信頼パターンを編集します。 機密情報の種類パターン [を編集または削除する手順に従います](sit-get-started-exact-data-match-create-rule-package.md#edit-or-delete-the-sensitive-information-type-pattern)。
-1. '開始' チェックを追加し、ビン桁の一覧を追加します (書式設定されていない&します。 たとえば、411111 & 433512 で始まるクレジット カードのみを有効と見なす場合は、次のようにリスト 4111 11、4111-11、411111、4335 12、4335-12、433512 に追加します。
-1. 低信頼パターンの場合&手順 2 と 3 を繰り返します。
+1. '開始' チェックを追加し、ビン桁の一覧を追加します (書式設定されていない&します。 たとえば、411111 & 433512 で始まるクレジット カードのみを有効と見なす場合は、リスト 4111 11、4111-11、411111、4335 12、4335-12、433512 に次のように追加します。
+1. 低信頼パターンの場合&手順 2 から 3 を繰り返します。
 
 ## <a name="test-numbers-similar-to-social-security-numbers"></a>社会保障番号に似たテスト番号
 
@@ -48,9 +48,9 @@ Contoso 社は、社会保障番号 (SSN) データ損失防止 (DLP) ポリシ�
 1. SSN SIT のコピーを作成します。 SSN SIT [をコピーする機密情報の種類を](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) コピーおよび変更するには、この手順を使用します。
 1. 高信頼パターンを編集します。 機密情報の種類パターン [を編集または削除する手順に従います](sit-get-started-exact-data-match-create-rule-package.md#edit-or-delete-the-sensitive-information-type-pattern)。
 1. [特定の値を除外する] 追加チェックで除外する数値を追加します。 たとえば、239-23-532 & 23923532を23923532で十分です
-1. 他の信頼パターン&手順 2 から 3 を繰り返す
+1. 他の信頼パターン&手順 2 と 3 を繰り返します。
 
-## <a name="phone-numbers-in-signature-trigger-match"></a>電話トリガー一致の番号
+## <a name="phone-numbers-in-signature-trigger-match"></a>電話トリガーの一致の番号
 
 オーストラリアに拠点を置く Contoso 社は、電子メール署名の電話番号がオーストラリアの会社番号 DLP ポリシーに一致するトリガーを設定しているのを検出します。
 

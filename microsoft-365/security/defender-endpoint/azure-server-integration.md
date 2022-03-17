@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8bf51b744e294e4bb2740b3e437305629eb23c2a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2ed9d25336cd7e8162849aa5d1d1a3e3382063fc
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934251"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526678"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloudとの統合
 
@@ -31,17 +31,17 @@ ms.locfileid: "61934251"
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender for Cloud
 
-Microsoft Defender for Endpoint は、Microsoft Defender for Cloud と統合して、包括的なサーバー保護ソリューションWindows提供できます。 この統合により、Microsoft Defender for Cloud は Defender for Endpoint の機能を使用して、セキュリティ サーバーの脅威検出を強化Windowsできます。
+Microsoft Defender for Endpoint は、Microsoft Defender for Cloud と統合して、包括的なサーバー保護Windows提供できます。 この統合により、Microsoft Defender for Cloud は Defender for Endpoint の機能を使用して、セキュリティ サーバーの脅威検出を強化Windowsできます。
 
 この統合には、次の機能が含まれています。
 
-- 自動オンボーディング - Defender for Endpoint センサーは、Microsoft Defender for Cloud にオンボードWindowsサーバーで自動的に有効になります。 Microsoft Defender for Cloud オンボーディングの詳細については、「Use [the integrated Microsoft Defender for Endpoint license 」を参照してください](/azure/security-center/security-center-wdatp)。
+- 自動オンボーディング - Defender for Endpoint センサーは、Microsoft Defender for Cloud にオンボードWindowsサーバーで自動的に有効になります。 Microsoft Defender for Cloud オンボーディングの詳細については、「 [Use the integrated Microsoft Defender for Endpoint license」を参照してください](/azure/security-center/security-center-wdatp)。
 
     > [!NOTE]
-    > Microsoft Defender for server と Microsoft Defender for Endpoint の統合は[、Windows Server 2019 と Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするために拡張されました。
+    > Microsoft Defender for server と Microsoft Defender for Endpoint の統合は、[Windows Server 2019 と Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview) をサポートするために拡張されました。
 
-- Windowsによって監視される Microsoft Defender for Cloud サーバーは、Defender for Endpoint - Microsoft Defender for Cloud でエンドポイント用 Defender テナントにシームレスに接続し、クライアントとサーバー間で 1 つのビューを提供します。  さらに、Defender for Endpoint アラートは Microsoft Defender for Cloud コンソールで利用できます。
-- サーバー調査 - Microsoft Defender for Cloud のお客様は、Microsoft 365 Defender ポータルにアクセスして詳細な調査を実行し、潜在的な侵害の範囲を明らかにできます。
+- Windowsによって監視される Microsoft Defender for Cloud サーバーは、Defender for Endpoint - Microsoft Defender for Cloud でも利用できます。Microsoft Defender for Endpoint テナントにシームレスに接続し、クライアントとサーバー間で 1 つのビューを提供します。  さらに、Defender for Endpoint アラートは Microsoft Defender for Cloud コンソールで利用できます。
+- サーバー調査 - Microsoft Defender for Cloud のお客様は、Microsoft 365 Defenderポータルにアクセスして詳細な調査を実行し、潜在的な侵害の範囲を明らかにすることができます。
 
 > [!IMPORTANT]
 > - Microsoft Defender for Cloud を使用してサーバーを監視すると、Defender for Endpoint テナントが自動的に作成されます (米国のユーザーは米国、EU ではヨーロッパおよび英国のユーザー)。<br>

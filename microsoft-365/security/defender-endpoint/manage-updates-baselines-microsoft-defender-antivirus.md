@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/15/2022
+ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: be3dcfd23c0fb77604cec140a4b1d3606f6ee345
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: c6454704c6cabfd5136eeec565c3c57dca044250
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63513046"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526896"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新プログラムMicrosoft Defender ウイルス対策ベースラインの適用を管理する
 
@@ -85,20 +85,28 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 - 統合の改善 ([クラウド、Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>2022 年 2 月 (プラットフォーム: 4.18.xxxx.xx |エンジン: 1.1.19000.8)</summary>
+<summary>2022 年 2 月 (プラットフォーム: 4.18.2202.4 |エンジン: 1.1.19000.8)</summary>
 
-&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.357.x.x**<br/>
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.361.14.0**<br/>
 &ensp;リリース: **2022 年 3 月 14 日**<br/>
-&ensp;プラットフォーム: **4.18.xxxx.xx**<br/>
+&ensp;プラットフォーム: **4.18.2202.4**<br/>
 &ensp;エンジン: **1.1.19000.8**<br/>
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
 
 エンジンのバージョン: 1.1.19000.8 <br/>
-セキュリティ インテリジェンス更新プログラムのバージョン: 1.357.x.x <br/>
+セキュリティ インテリジェンス更新プログラムのバージョン: 1.361.14.0 <br/>
 
 ### <a name="whats-new"></a>新機能
 
-- 近日対応予定
+- 検出と動作の監視ロジックの改善
+- 誤検知による攻撃表面の縮小検出の修正
+- 追加された修正プログラムにより、検出通知と高度なEDR検出アラートの忠実度が向上しました
+- Defender がトースト ポップアップのカスタム通知をサポートしなくなりました。 この変更を反映するように GPO/Intune/SCCM とドキュメントを変更しました。
+- リムーバブル 記憶域に書き込まれたファイルの情報とコピーの両方をキャプチャする機能強化。 詳細については、「[Microsoft Defender for Endpoint Device Control Removable Storageアクセスコントロール、リムーバブル ストレージ メディア」を参照してください](device-control-removable-storage-access-control.md)。
+- SmartScreen サービスに到達できない場合のトラフィック出力の改善 
+- 認証要件を持つプロキシを使用しているお客様の接続性の向上
+- ネットワーク FileShares の VDI デバイス更新のバグを修正しました 
+- EDRモードでは、新しい CSP を使用した詳細なデバイス ターゲット設定がサポートされます。 ブロック [モードでのエンドポイントの検出と応答 (EDR) を参照してください](edr-in-block-mode.md)。
 
 ### <a name="known-issues"></a>既知の問題
 

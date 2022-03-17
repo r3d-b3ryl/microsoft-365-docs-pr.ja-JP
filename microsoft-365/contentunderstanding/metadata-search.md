@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: 高度なメタデータ検索を使用して、SharePoint Syntex で SharePoint ドキュメント ライブラリ内のアイテムを検索する方法について説明します。
-ms.openlocfilehash: b5dffe0cd0bf481c1243d87450110d545578a06b
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 87edac08dd057c0e9dea2ce36f4339f9c0bb5344
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806908"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526528"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のドキュメント ライブラリでメタデータを検索する
 
@@ -50,4 +50,4 @@ SharePoint Syntex の高度なメタデータ検索機能を使用すると、Sh
    |ファイルの種類     |選択したファイルの種類 (Word 文書や PDF など) で検索します。        |
    |コンテンツ タイプ  |選択したコンテンツ タイプで検索します。 このオプションは、ライブラリに既定以外のコンテンツ タイプが適用されている場合にのみ表示されます。 既定のコンテンツ タイプは、 *ドキュメント* と *フォルダー* です。        |
 
-3. **[検索]** を選択します。 メタデータ検索に一致するドキュメントが結果ページに表示されます。 
+3. **検索** を選択します。メタデータ検索に一致するドキュメントが結果ページに表示されます。 

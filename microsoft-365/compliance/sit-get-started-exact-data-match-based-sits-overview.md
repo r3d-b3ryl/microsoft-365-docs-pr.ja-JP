@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 正確なデータ一致ベースの機密情報の種類の作成を開始します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 469cc7262ff1eef92d9a03e04070dc353e12b445
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: a75650484368b6ccbaf6f6d39aeead133403f5b8
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110501"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526278"
 ---
 # <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>完全なデータ一致に基づく機密情報の種類の使用を開始する
 
@@ -57,8 +57,8 @@ ms.locfileid: "61110501"
 |フェーズ|前提条件|
 |---|---|
 |[フェーズ 1: 完全なデータ一致ベースの機密情報の種類のソース データをエクスポートする](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|- 機密データへの読み取りアクセス|
-|[フェーズ 2: 完全なデータ一致ベースの機密情報の種類のスキーマを作成する](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- 機密情報の種類ウィザードへのアクセスは、Microsoft 365 管理センター </br>- コンプライアンス[PowerShell Microsoft 365 管理センター経由&アクセス](/powershell/exchange/connect-to-scc-powershell) |
-|[フェーズ 3: 機密情報の種類に一致する正確なデータの機密情報ソース テーブルのハッシュとアップロード](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- カスタムのセキュリティ グループとユーザー アカウント </br>- **1 つのコンピューターからの** ハッシュとアップロード : インターネットに直接アクセスできるコンピューターへのローカル管理者アクセスと、EDM クライアントエージェントアップロードします。 </br>- **個別の** コンピューターからのハッシュとアップロード: 直接インターネット アクセスを持つコンピューターへのローカル管理者アクセスと、EDM アップロード エージェントをホストして、セキュリティで保護されたコンピューターへのアップロードとローカル管理者アクセスをホストし、EDM アップロード エージェントをホストして機密情報ソース テーブルをハッシュする </br>- 機密情報ソース テーブル ファイルへの読み取りアクセス </br> スキーマ ファイル |
+|[フェーズ 2: 完全なデータ一致ベースの機密情報の種類のスキーマを作成する](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- 機密情報の種類ウィザードへのアクセスは、Microsoft 365 管理センター </br>- コンプライアンス [PowerShell Microsoft 365 管理センター経由&アクセス](/powershell/exchange/connect-to-scc-powershell) |
+|[フェーズ 3: 機密情報の種類に一致する正確なデータの機密情報ソース テーブルのハッシュとアップロード](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- カスタムのセキュリティ グループとユーザー アカウント </br>- **1 つのコンピューターからの** ハッシュとアップロード: インターネットに直接アクセスできるコンピューターへのローカル管理者アクセスと、EDM サーバーエージェントのホストアップロードします。 </br>- **個別の** コンピューターからのハッシュとアップロード: 直接インターネット にアクセスできるコンピューターへのローカル管理者アクセスと、EDM アップロード エージェントをホストして、セキュリティで保護されたコンピューターへのアップロードおよびローカル管理者アクセスをホストし、EDM アップロード エージェントをホストして機密情報ソース テーブルをハッシュする </br>- 機密情報ソース テーブル ファイルへの読み取りアクセス </br> スキーマ ファイル |
 |[フェーズ 4: 機密情報の種類/ルール パッケージと完全一致するデータを作成する](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |- コンプライアンス センター Microsoft 365アクセス |
 |[機密情報の種類と完全に一致するデータをテストする](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - コンプライアンス センター Microsoft 365アクセス
 

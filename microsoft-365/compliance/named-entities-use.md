@@ -12,16 +12,16 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: データ損失防止ポリシーで名前付きエンティティを利用するには、次の手順を使用します。
-ms.openlocfilehash: f3dac4efa1b0cf84971ac4d07f78144b438d1161
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 5adb410689e597395f1b13152ed62af75fa111d6
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271516"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525223"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
 
@@ -45,7 +45,7 @@ ms.locfileid: "62271516"
 
 ### <a name="permissions"></a>アクセス許可
 
-データ損失防止 (DLP) ポリシーの作成および編集に使用するアカウントには、 **DLP コンプライアンス管理の役割のアクセス許可が** 必要です。 詳細については、「ユーザーにコンプライアンス センター[へのアクセス権をOffice 365する」を参照してください。](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+データ損失防止 (DLP) ポリシーの作成および編集に使用するアカウントには、 **DLP コンプライアンス管理の役割のアクセス許可が** 必要です。 詳細については、「ユーザーにコンプライアンス [センターへのアクセス権を与Office 365する」を参照してください。](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 
 ## <a name="supported-locations"></a>サポートされている場所
@@ -74,7 +74,7 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの作
 - **Microsoft Defender for Cloud Apps では、** Defender for Cloud Apps ポリシーでの名前付きエンティティの使用がサポートされています。
 - **Insider Risk Management は、** Substrate サービスでの名前付きエンティティの使用をサポートします。
 - **通信コンプライアンス** は、トランスポート ルールとデータの保存時Exchange名前付きエンティティの使用をサポートしています。
-- **Microsoft Information Governance** (MIG) では、トランスポート ルールと保存データのExchange名前付きエンティティの使用はサポートされていません。
+- **Microsoft Information Governance** (MIG) では、トランスポート ルールとデータ保存時の名前付Exchangeの使用はサポートされていません。
  
 ### <a name="unified-dlp"></a>統合 DLP
 
@@ -83,10 +83,10 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの作
 |Office Win32 クライアント ポリシーヒント    |サポートなし  |
 |Office WAC クライアント ポリシーヒント    |サポートされる         |
 |OWA ポリシーヒント     |サポートなし         |
-|Outlookポリシーヒント     |サポートなし |
+|Outlookヒント     |サポートなし |
 |エンドポイント (Windows 10デバイス)     |サポートされる  |
 |Exchange トランスポート ルール     |サポートなし |
-|OneDrive for Business保存時のデータ     |サポート対象         |
+|OneDrive for Business保存時のデータ     |サポートされる         |
 |SharePointオンライン データの保存     |サポートされる         |
 |Teams保存時のデータ     |サポートされる         |
 |電子メール メッセージの保存時のデータ     |サポートなし         |

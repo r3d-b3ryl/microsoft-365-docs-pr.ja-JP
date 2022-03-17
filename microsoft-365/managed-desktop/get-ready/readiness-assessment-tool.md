@@ -10,12 +10,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 96bd667cf5d3661476111f7593632f0e5362cf45
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8d949b13203aaeab51d2518f16650ba6df832195
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766058"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525640"
 ---
 # <a name="readiness-assessment-tools"></a>準備状況の評価ツール
 
@@ -29,11 +29,11 @@ Microsoft Managed Desktop 管理者ポータルからアクセスする 1 つの
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>管理設定のためのオンライン準備評価ツール
 
-オンライン [ツール](https://aka.ms/mmdart)は、Microsoft エンドポイント マネージャー (具体的には Microsoft Intune)、Azure Active Directory (Azure AD)、Microsoft 365 の設定をチェックして、Microsoft マネージ デスクトップで動作します。
+オンライン [ツールは](https://aka.ms/mmdart)、Microsoft エンドポイント マネージャー (具体的には Microsoft Intune)、Azure Active Directory (Azure AD)、Microsoft 365 の設定をチェックして、Microsoft マネージ デスクトップで動作します。
 
 Microsoft Managed Desktop は、Azure AD 組織 (テナント) で最後にチェックを実行してから 12 か月間、これらのチェックに関連付けられたデータを保持します。 12 か月後、匿名化された形式で保持します。 収集したデータを削除することを選択できます。
 
-少なくともグローバル リーダーまたは Intune 管理者の役割を持つユーザーは、このツールを実行できますが、2 つの[チェック (条件付](readiness-assessment-fix.md#conditional-access-policies)きアクセス ポリシーと[](readiness-assessment-fix.md#multi-factor-authentication)多要素認証には追加のアクセス許可が必要です)。
+少なくともグローバル リーダーまたは Intune 管理者の役割を持つユーザーは、このツールを実行できますが、2 つの[チェック (条件付](readiness-assessment-fix.md#conditional-access-policies) きアクセス ポリシーと多要素 [認証) には](readiness-assessment-fix.md#multi-factor-authentication)追加のアクセス許可が必要です。
 
 > [!IMPORTANT]  
 > オンライン準備評価ツールは、Microsoft マネージド デスクトップに初めて登録する準備ができているかどうかを確認するのに役立ちます。 組織が既に Microsoft マネージド デスクトップに登録されている場合は、このツールを使用しないでください。
@@ -42,7 +42,7 @@ Microsoft Managed Desktop は、Azure AD 組織 (テナント) で最後にチ�
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 
-次に示す設定Microsoft Intune示します。
+次に示す設定Microsoft Intuneします。
 
 | チェック | 説明 |
 | ------ | ------ |
@@ -54,22 +54,22 @@ Microsoft Managed Desktop は、Azure AD 組織 (テナント) で最後にチ�
 | デバイスの種類の制限 | 組織内のWindows 10 Intune への登録が許可されていないことを確認します。 |
 | 登録ステータス ページ | [登録状態] ページが有効になっていないか確認します。 |
 | Intune の登録 | 組織のWindows 10デバイスが自動的Azure AD Intune に登録されるのを確認します。 |
-| ビジネス向け Microsoft Store | Intune でビジネス向け Microsoft Store同期が有効になっているか確認します。 |
+| ビジネス向け Microsoft Store | Intune でビジネス向け Microsoft Storeが有効で同期されているのを確認します。 |
 | 多要素認証 | 多要素認証が Microsoft Managed Desktop サービス アカウントに適用されていないか確認します。 |
-| PowerShell スクリプト | Microsoft 管理Windows PowerShell **デバイスを対象** とする方法で、スクリプトが割り当てられていないか確認します。 |
+| PowerShell スクリプト | Microsoft Managed Desktop Windows PowerShellターゲットとする方法で、スクリプトが割り当てられていないか確認します。 |
 | Region | 地域が Microsoft Managed Desktop でサポートされていないことを確認します。 |
 | セキュリティ基本計画 | セキュリティ 基準プロファイルがすべてのユーザーまたはすべてのデバイスを対象としないか確認します。 <br><br> セキュリティ ベースライン ポリシーは、 **Microsoft 管理** デスクトップ デバイスを対象とすべきではありません。 |
 | Windows アプリ | Microsoft Managed Desktop デバイスに割り当てるアプリを確認します。 |
-| Windows Hello for Business | ビジネスのWindows Helloが有効になっているか確認します。 |
-| Windows 10 更新リング | Intune の "更新Windows 10" ポリシーがすべてのユーザーまたはすべてのデバイスを対象としないか確認します。 <br><br> ポリシーは、 **Microsoft** 管理デスクトップ デバイスを対象とすべきではありません。 |
+| Windows Hello for Business | Business のWindows Helloが有効になっているか確認します。 |
+| Windows 10 更新リング | Intune の "更新リングWindows 10" ポリシーがすべてのユーザーまたはすべてのデバイスを対象としないか確認します。 <br><br> ポリシーは、 **Microsoft** 管理デスクトップ デバイスを対象とすべきではありません。 |
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory の設定
 
-次に示す設定Azure Active Directoryします。
+次に示す設定Azure Active Directory示します。
 
 | チェック | 説明 |
 | ----- | ----- |
-| Enterprise State Roaming の "アドホック" サブスクリプション | "false" に設定すると、状態ローミングが正常に動作しない可能性があるEnterprise確認する方法について説明します。 |
+| Enterprise State Roaming の "アドホック" サブスクリプション | "false" に設定すると、状態ローミングが正常に動作しないEnterprise設定を確認する方法について説明します。 |
 | Enterprise State Roaming | 状態ローミングが有効になっているEnterprise確認する方法について説明します。 |
 | ライセンス | 必要なライセンスを取得したと確認 [します](prerequisites.md#more-about-licenses)。 |
 | 多要素認証 | 多要素認証がすべてのユーザーに適用されていないか確認します。 <br><br> 多要素認証 **を Microsoft Managed** Desktop サービス アカウントに誤って適用しないようにする必要があります。 |
