@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e337ef74975bd761de89b4aaae03379344efeed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ac50568f9ce995f658e6b06c3a2b13b666211810
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311901"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512350"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -252,7 +252,7 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 > [!NOTE]
 > この機能は現在、Azure Information Protection 統合ラベル付けクライアントでのみサポートされています。
 
-このオプションは、二重キー暗号化サービスを構成していて、このラベルを適用するファイルにこの二重キー暗号化を使用する必要がある場合にのみ選択します。
+このオプションは、二重キー暗号化サービスを構成していて、このラベルを適用するファイルにこの二重キー暗号化を使用する必要がある場合にのみ選択します。ラベルを設定して保存すると、ラベルを編集できなくなります。
 
 詳細、前提条件、構成手順については、「[二重キー暗号化 (DKE)](double-key-encryption.md)」を参照してください。
 
@@ -431,7 +431,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 - 承認されたユーザーが Office アプリで暗号化されたドキュメントを開くと、アプリの上部にある黄色のメッセージ バーにラベル名と説明が表示されます。 暗号化アクセス許可が組織外のユーザーに拡張されている場合は、ドキュメントを開いたときにこのメッセージ バーに表示されるラベル名と説明を慎重に確認します。
 
-- 複数のユーザーが暗号化されたファイルを同時に編集するには、すべて Office for the web を使用しているか、[秘密度ラベルで暗号化されたファイルの共同編集を有効にしていて](sensitivity-labels-coauthoring.md)、すべてのユーザーが[この機能をサポートする Office アプリ](sensitivity-labels-coauthoring.md#prerequisites)を持っている必要があります。 この状況が当てはまらず、ファイルが既に開かれている場合、次のことが起こります。
+- 複数のユーザーが暗号化されたファイルを同時に編集するには、すべて Office for the web を使用しているか、[秘密度ラベルで暗号化されたファイルの共同編集を有効にしていて](sensitivity-labels-coauthoring.md)、すべてのユーザーが[この機能をサポートする Office アプリ](sensitivity-labels-coauthoring.md#prerequisites)を持っている必要があります。この状況が当てはまらず、ファイルが既に開かれている場合、次のことが起こります。
 
   - Office アプリ (Windows、Mac、Android、iOS)で、[**使用中のファイル**] メッセージがファイルをチェック アウトしているユーザーの名前とともにユーザーに表示されます。 その場合、ユーザーは読み取り専用コピーの閲覧またはそのコピーの保存と編集を行うことが可能で、他のユーザーによるファイルの使用が終了したときに通知を受け取ることができます。
   - Web 用 Office では、他のユーザーと同時にドキュメントを編集することはできないというメッセージがユーザーに表示されます。その場合は、[**閲覧表示で開く**] を選択できます。

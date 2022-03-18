@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 37e94d43f2cfeab0e1135c42de34726ee5895714
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ddd0553405aa92a1eb7a7978398392b780a0a2ea
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320593"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557811"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -103,8 +103,6 @@ Teams のアイテム保持ポリシーを使用するタイミングと、エ�
 #### <a name="known-configuration-issues"></a>既知の構成の問題
 
 - アイテムが最後に変更されたときに保持期間を開始するオプションを選択できますが、**アイテムが作成されたとき** の値が常に使用されます。 編集されたメッセージの場合、元のメッセージのコピーが元のタイムスタンプとともに保存され、この事前編集されたメッセージがいつ作成されたかを識別し、後編集されたメッセージのタイムスタンプが新しくなります。
-
-- **[Teams のチャネル メッセージ]** の場所にある **[編集]** を選択した場合、チームではない Microsoft 365 グループが表示される場合があります。これらのグループは選択しないでください。
 
 - [Teams のチャット] の場所にある **[編集]** を選択した場合、ゲストや、メールボックスのユーザーではないユーザーが表示される場合があります。 アイテム保持ポリシーはこれらのユーザー向けに設計されていないため、選択しないでください。
 
