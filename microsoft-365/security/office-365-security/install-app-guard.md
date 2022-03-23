@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 description: ハードウェア ベースの分離の最新情報を取得します。 悪用や悪意のあるリンクのような現在および新しい攻撃が従業員の生産性と企業のセキュリティを妨げるのを防ぐ。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1dfe0bf7082d05fa534a34cb0dd55d9227fca1a
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8a483c6430721e0540a7012dabfcbd4480fd7ad8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807070"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675374"
 ---
 # <a name="application-guard-for-office-for-admins"></a>管理者向け Application Guard for Office
 
 **適用対象:** Word、Excel、および PowerPoint for Microsoft 365、Windows 10 Enterprise、Windows 11 Enterprise
 
-Microsoft Defender Application Guard Office (Application Guard for Office) は、信頼されていないファイルが信頼できるリソースにアクセスし、企業が新しい攻撃や新たな攻撃から安全にアクセスするのを防ぐのに役立ちます。 この記事では、管理者が Application Guard for Office のプレビュー用にデバイスをセットアップする方法についてOffice。 デバイス上でアプリケーション ガードを有効にするためのシステム要件とインストール手順Office提供します。
+Microsoft Defender Application Guard (Office 用 Application Office Guard) は、信頼されていないファイルが信頼できるリソースにアクセスし、企業が新しい攻撃や新たな攻撃から安全にアクセスするのを防ぐのに役立ちます。 この記事では、管理者が Application Guard for Office のプレビュー用にデバイスをセットアップする方法についてOffice。 デバイス上でアプリケーション ガードを有効にするためのシステム要件とインストール手順Office提供します。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -40,24 +40,24 @@ Microsoft Defender Application Guard Office (Application Guard for Office) は�
 ### <a name="minimum-software-requirements"></a>最小ソフトウェア要件
 
 * **Windows**: Windows 10 Enterpriseバージョン 2004 (20H1) ビルド 19041 以降。 11 のWindowsがサポートされています。 
-* **Office**: Office チャネルおよび月次 Enterprise チャネルのビルド バージョン 2011 16.0.13530.10000 以降。 Office Semi-Annual Enterprise、ビルド バージョン 2108 以降。 32 ビットバージョンと 64 ビット バージョンの両方のOfficeサポートされています。
+* **Office**: Office チャネルと月次 Enterprise チャネルのビルド バージョン 2011 16.0.13530.10000 以降。 Office Semi-Annual Enterprise、ビルド バージョン 2108 以降。 32 ビットバージョンと 64 ビット バージョンの両方のOfficeサポートされています。
 * **更新プログラム パッケージ**: Windows 10月次セキュリティ更新 [プログラム KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 システム要件の詳細については、「システム要件」を参照[Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 また、仮想化テクノロジを有効にする方法については、コンピューターの製造元のガイドを参照してください。
-更新プログラム チャネルの詳細Office、更新プログラム チャネルの[概要を](/deployoffice/overview-update-channels)参照Microsoft 365。
+更新プログラム チャネルの詳細Office、更新プログラム チャネルの概要[を](/deployoffice/overview-update-channels)参照Microsoft 365。
 
 ### <a name="licensing-requirements"></a>ライセンスの要件
 
 * Microsoft 365 E5またはMicrosoft 365 E5 Security
 
 > [!NOTE]
-> Microsoft 365 Apps for enterpriseベースのライセンスを使用する場合、アプリケーション のアプリケーション ガードにアクセスOffice。
+> Microsoft 365 Apps for enterprise ベースのライセンスを使用している場合、アプリケーション のアプリケーション ガードにアクセスOffice。
 
 ## <a name="deploy-application-guard-for-office"></a>アプリケーションのアプリケーション ガードを展開Office
 
 ### <a name="enable-application-guard-for-office"></a>アプリケーションのアプリケーション ガードを有効Office
 
-1. 累積的な毎月の **Windows 10 KB4571756** をダウンロードしてインストールします。
+1. 累積的な毎月の **Windows 10 KB4571756 をダウンロードしてインストールします**。
 
 2. [機能 **Microsoft Defender Application Guard] Windows** 選択し、[OK] を **選択します**。 Application Guard 機能を有効にすると、システムの再起動が促されます。 今すぐ再起動するか、手順 3 の後に再起動することを選択できます。
 
@@ -79,7 +79,7 @@ Microsoft Defender Application Guard Office (Application Guard for Office) は�
 
 4. システムを再起動します。
 
-### <a name="set-diagnostics--feedback-to-send-full-data"></a>完全なデータ&送信する診断とフィードバックの設定
+### <a name="set-diagnostics--feedback-to-send-full-data"></a>完全なデータ&送信する診断情報を設定する
 
 > [!NOTE]
 > ただし、これは必須ではありません。ただし、オプションの診断データを構成すると、報告された問題の診断に役立ちます。
@@ -94,7 +94,7 @@ Microsoft Defender Application Guard Office (Application Guard for Office) は�
 
    ![Windows 設定メニュー。](../../media/ag06-diagnostic.png)
 
-3. [プライバシー] で、[診断情報 **] &を選択し、[** オプションの診断 **データ] を選択します**。
+3. [プライバシー] の下で、[診断 **&] を選択し、[** オプションの診断 **データ] を選択します**。
 
    ![[診断とフィードバック] メニュー。](../../media/ag07a-diagnostic.png)
 
@@ -102,15 +102,15 @@ Microsoft Defender Application Guard Office (Application Guard for Office) は�
 
 ### <a name="confirm-that-application-guard-for-office-is-enabled-and-working"></a>アプリケーションの Application Guard が有効Office動作を確認する
 
-Application Guard for Office が有効になっているか確認する前に、ポリシーが展開されているデバイスで Word、Excel、PowerPoint を起動します。 アクティブ化Office確認します。 作業 ID を使用して、最初に製品のライセンス認証をOffice場合があります。
+Application Guard for Officeが有効になっているか確認する前に、ポリシーが展開されているデバイスで Word、Excel、PowerPoint を起動します。 アクティブ化Office確認します。 作業 ID を使用して、最初に製品のライセンス認証Office場合があります。
 
-Application Guard for Officeが有効Office、Word、Excel、または PowerPointを起動し、信頼されていないドキュメントを開きます。 たとえば、インターネットからダウンロードされたドキュメントや、組織外のユーザーからの電子メールの添付ファイルを開きます。
+アプリケーションの Application Guard が有効Office確認するには、Word、Excel、PowerPointを起動し、信頼されていないドキュメントを開きます。 たとえば、インターネットからダウンロードされたドキュメントや、組織外のユーザーからの電子メールの添付ファイルを開きます。
 
 信頼されていないファイルを初めて開いた場合、次のOfficeのようなスプラッシュ画面が表示される場合があります。 アプリケーション のアプリケーション ガードがアクティブ化され、Office開いている間、しばらくの間表示される場合があります。 それ以降の信頼されていないファイルの開き方が速くなります。
 
 ![Office アプリスプラッシュ画面。](../../media/ag08-confirm.png)
 
-開いていると、ファイルが Application Guard 内で開いて次のような視覚的なインジケーターが表示Office。
+ファイルを開いた後、ファイルが Application Guard 内で開いているという視覚的なインジケーターが表示Office。
 
 * リボンの吹き出し
 
@@ -120,30 +120,29 @@ Application Guard for Officeが有効Office、Word、Excel、または PowerPoin
 
   ![タスク バーのアイコン。](../../media/ag12-limitations.png)
 
-## <a name="configure-application-guard-for-office"></a>アプリケーション用の Application Guard を構成Office
+## <a name="configure-application-guard-for-office"></a>アプリケーション用に Application Guard を構成Office
 
-Office次のポリシーをサポートし、アプリケーション の機能を構成するために Application Guard をOffice。 これらのポリシーは、グループ ポリシーまたはクラウド ポリシー [サービスOffice構成できます](/DeployOffice/overview-office-cloud-policy-service)。
+Office次のポリシーをサポートして、アプリケーション のアプリケーション の機能を構成Office。 これらのポリシーは、グループ ポリシーまたはクラウド ポリシー サービスOffice[構成できます](/DeployOffice/overview-office-cloud-policy-service)。
 
 
 > [!NOTE]
 > これらのポリシーを構成すると、Application Guard で開いたファイルの一部の機能が無効Office。
 
-|ポリシー|説明|
+|ポリシー|[説明]|
 |---|---|
-|アプリケーションに Application Guard を使用Office|このポリシーを有効にすると、Word、Excel、PowerPoint は、アプリケーション ガードの代わりに保護されたビュー分離コンテナーを使用Office。 このポリシーを使用すると、アプリケーション の有効な状態をOfficeに問題がある場合に、アプリケーション ガードを一時的に無効Microsoft Edge。|
+|アプリケーションに Application Guard を使用Office|このポリシーを有効にすると、Word、Excel、PowerPoint は、アプリケーション ガードの代わりに保護されたビュー分離コンテナーを使用Office。 このポリシーを使用すると、アプリケーションの有効な状態をOfficeに問題がある場合に、アプリケーション のアプリケーション ガードを一時的に無効Microsoft Edge。|
 |コンテナーの事前作成Office Application Guard を構成する|このポリシーは、信頼されていないファイルを分離Office Application Guard for Office、実行時のパフォーマンスを向上するために事前に作成されるかどうかを決定します。 この設定を有効にした場合は、コンテナーの事前作成を続行する日数を指定するか、Office 組み込みのヒューリスティックでコンテナーを事前に作成できます。
-|Application Guard で開いたドキュメントのコピー/貼りOffice貼り付けを許可Office|このポリシーを有効にすると、ユーザーは Application Guard for Office で開いたドキュメントから外部で開いたドキュメントにコンテンツをコピーして貼り付けできません。|
-|Application Guard でハードウェア アクセラレータを無効にして、Office|このポリシーは、Application Guard for Officeハードウェア アクセラレータを使用してグラフィックスをレンダリングするかどうかを制御します。 この設定を有効にすると、Application Guard for Office はソフトウェア ベース (CPU) レンダリングを使用し、サードパーティのグラフィックス ドライバーを読み込むか、接続されているグラフィックス ハードウェアを操作しません。
-|Application Guard でサポートされていないファイルの種類の保護を無効にOffice|このポリシーは、Application Guard for Officeサポートされていないファイルの種類を開くことをブロックするか、保護されたビューへのリダイレクトを有効にするかどうかを制御します。
-|Application Guard で開いたドキュメントのカメラとマイクへのアクセスをオフOffice|このポリシーを有効にすると、Application Guard OfficeのカメラとマイクへのアクセスがOffice。|
-|Application Guard で開いたドキュメントからの印刷を制限Office|このポリシーを有効にすると、ユーザーが Application Guard で開いたファイルから印刷できるプリンターが制限Office。 たとえば、このポリシーを使用して、ユーザーに PDF への印刷のみを制限できます。|
-|ユーザーがファイルに対する保護のために Application Guard をOffice防ぐ|このポリシーを有効にすると、Office アプリケーション エクスペリエンス内で) オプションが削除され、Office 保護のために Application Guard を無効にしたり、Application Guard for Office の外部でファイルを開くOffice。 <p> **注:** ユーザーは、ファイルから mark-of-the-web プロパティを手動で削除するか、ドキュメントを信頼できる場所に移動することによって、このポリシーをバイパスできます。|
-|
+|Application Guard で開いたドキュメントのコピー/貼りOffice貼り付けを許可Office|このポリシーを有効にすると、ユーザーは Application Guard で開いたドキュメントからコンテンツをコピーして貼り付け、Office開いたドキュメントに貼り付けできません。|
+|アプリケーション のアプリケーション ガードでハードウェア アクセラレータを無効Office|このポリシーは、Application Guard for Officeアクセラレータを使用してグラフィックスをレンダリングするかどうかを制御します。 この設定を有効にすると、Application Guard for Office はソフトウェア ベース (CPU) レンダリングを使用し、サードパーティのグラフィックス ドライバーを読み込むか、接続されているグラフィックス ハードウェアを操作しません。
+|Application Guard でサポートされていないファイルの種類の保護を無効Office|このポリシーは、Application Guard for Officeサポートされていないファイルの種類が開かれませんか、または保護されたビューへのリダイレクトを有効にするかどうかを制御します。
+|Application Guard で開いたドキュメントのカメラとマイクへのアクセスをオフOffice|このポリシーを有効にすると、Officeの Application Guard 内のカメラとマイクへのアクセスがOffice。|
+|Application Guard で開いたドキュメントからの印刷を制限Office|このポリシーを有効にすると、Application Guard で開いたファイルからユーザーが印刷できるプリンターが制限Office。 たとえば、このポリシーを使用して、ユーザーに PDF への印刷のみを制限できます。|
+|ユーザーがファイルに対する保護のために Application Guard をOffice防ぐ|このポリシーを有効にすると、Office アプリケーション エクスペリエンス内で) オプションが削除され、Office 保護の Application Guard を無効にしたり、Application Guard for Office の外部でファイルを開くOffice。 <p> **注:** ユーザーは、ファイルから mark-of-the-web プロパティを手動で削除するか、ドキュメントを信頼できる場所に移動することによって、このポリシーをバイパスできます。|
 
 > [!NOTE]
-> 次のポリシーでは、ユーザーがサインアウトして再度サインインして、Windowsを有効にする必要があります。
+> 次のポリシーでは、ユーザーがサインアウトして再度サインインして、Windowsする必要があります。
 >
-> * Application Guard で開いたドキュメントのコピー/貼り付けを無効にOffice
+> * アプリケーション のアプリケーション ガードで開いたドキュメントのコピー/貼り付けを無効Office
 > * Application Guard で開いたドキュメントの印刷を制限Office
 > * Application Guard で開いたドキュメントへのカメラとマイクのアクセスをオフOffice
 
@@ -161,7 +160,7 @@ Application Guard for Officeを起動するときに問題が発生した場合�
 
 4. [詳細な説明] ボックスに、発生した問題の詳細な説明と実行した手順を **入力** し、[次へ] を選択 **します**。
 
-5. [問題] の横にあるバブルを **選択します**。 選択したカテゴリが [セキュリティ **\>とプライバシー] Microsoft Defender Application Guard – Officeし、[次へ**] を選択します。
+5. [問題] の横にあるバブルを **選択します**。 選択したカテゴリが [セキュリティ **\>** とプライバシー] Microsoft Defender Application Guard – Officeし、[次へ] を選択します。
 
 6. [新 **しいフィードバック] を選択** し、[次へ] **を選択します**。
 
@@ -185,13 +184,13 @@ Application Guard for Officeを起動するときに問題が発生した場合�
 
 ### <a name="submit-feedback-via-office-customer-voice"></a>カスタマー ボイスからフィードバックOffice送信する
 
-また、Application Guard でドキュメントを開いたOffice問題が発生した場合は、Officeからフィードバックを送信できます。 フィードバックの送信については[、「Officeインサイダー ハンド](https://insider.office.com/handbook)ブック」を参照してください。
+また、Application Guard でドキュメントを開いたOffice問題が発生した場合は、Officeからフィードバックを送信できます。 フィードバックの送信[については、「Officeインサイ](https://insider.office.com/handbook)ダー ハンドブック」を参照してください。
 
-## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>エンドポイント向け Microsoft Defender と Microsoft Defender との統合とOffice 365
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>エンドポイント向け Microsoft Defender と Microsoft Defender との統合 (Office 365
 
 Application Guard for Office Microsoft Defender for Endpoint と統合され、分離された環境で発生する悪意のあるアクティビティの監視とアラートを提供します。
 
-[セーフ E365 E5](/microsoft-365/security/office-365-security/safe-docs) のドキュメントは、Microsoft Defender for Endpoint を使用して、Application Guard で開いたドキュメントをスキャンして、ユーザーのOffice。 追加の保護層では、スキャンの結果が決定されるまで、ユーザーはアプリケーションOfficeアプリケーション ガードから離れることができます。
+[セーフ E365 E5](/microsoft-365/security/office-365-security/safe-docs) のドキュメントは、Microsoft Defender for Endpoint を使用して、Application Guard で開いたドキュメントをスキャンして、そのドキュメントをスキャンOffice。 保護の層を追加する場合、スキャンの結果が決定されるまで、ユーザーは Application Guard を離れOfficeアプリケーション ガードを終了できません。
 
 Microsoft Defender for Endpoint は、エンタープライズ ネットワークが高度な脅威を防止、検出、調査、および対応するために設計されたセキュリティ プラットフォームです。 このプラットフォームの詳細については、「 [Microsoft Defender for Endpoint」を参照してください](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。 このプラットフォームへのデバイスのオンボーディングの詳細については、「 [デバイスを Microsoft Defender for Endpoint サービスにオンボードする」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
 
@@ -214,7 +213,7 @@ Microsoft Defender for Endpoint は、エンタープライズ ネットワー�
 
 * Information Rights Management (IRM) によって保護されているファイルは、既定でブロックされます。 ユーザーが保護されたビューでこのようなファイルを開く場合、管理者は、組織のサポートされていないファイルの種類のポリシー設定を構成する必要があります。
 
-* Application Guard for OfficeアプリケーションをOfficeするカスタマイズは、ユーザーがサインアウトして再度サインインした後、またはデバイスが再起動した後も保持されません。
+* Application Guard for OfficeアプリケーションをOfficeカスタマイズしても、ユーザーがサインアウトして再度サインインした後、またはデバイスが再起動した後も保持されません。
 
 * UIA フレームワークを使用するアクセシビリティ ツールのみ、アプリケーション ガードで開いたファイルに対してアクセス可能なエクスペリエンスを提供Office。
 
@@ -224,13 +223,13 @@ Microsoft Defender for Endpoint は、エンタープライズ ネットワー�
 
 ## <a name="performance-optimizations-for-application-guard-for-office"></a>アプリケーション用 Application Guard のパフォーマンスOffice
 
-このセクションでは、Application Guard で使用されるパフォーマンスの最適化の概要をOffice。 この情報は、Application Guard が有効な場合に、管理者がシステムまたはシステム全体Officeのパフォーマンスに関連するユーザーからのレポートを診断するのに役立ちます。
+このセクションでは、Application Guard で使用されるパフォーマンスの最適化の概要をOffice。 この情報は、Application Guard が有効な場合に、管理者がシステムまたはシステム全体Officeパフォーマンスに関連するユーザーからのレポートを診断するのに役立ちます。
 
 Application Guard は仮想化コンテナーを使用して、信頼されていないドキュメントをシステムから分離します。 コンテナーを作成し、Application Guard コンテナーをセットアップして Office ドキュメントを開くプロセスでは、パフォーマンスのオーバーヘッドが発生し、ユーザーが信頼できないドキュメントを開く際のユーザー エクスペリエンスに悪影響を及ぼす可能性があります。
 
 必要なファイルを開くエクスペリエンスをユーザーに提供するために、Application Guard はロジックを使用して、システムで次のヒューリスティックが満たされている場合にコンテナーを事前に作成します。ユーザーが過去 28 日間に保護ビューまたは Application Guard でファイルを開いた。
 
-このヒューリスティックが満たされた場合、Office ユーザーがサインインした後、ユーザーの Application Guard コンテナーを事前に作成Windows。 この事前作成操作の進行中に、システムのパフォーマンスが低下する可能性がありますが、操作が完了するとすぐに効果が解決されます。
+このヒューリスティックが満たされた場合、Officeユーザーがユーザーにサインインした後、ユーザーの Application Guard コンテナーを事前に作成Windows。 この事前作成操作の進行中に、システムのパフォーマンスが低下する可能性がありますが、操作が完了するとすぐに効果が解決されます。
 
 > [!NOTE]
 > ヒューリスティックがコンテナーを事前に作成するために必要なヒントは、ユーザーがコンテナーを使用Officeアプリケーションによって生成されます。 ユーザーが Application Guard が有効になっている新しいシステムに Office をインストールした場合、Office は、ユーザーがシステムで信頼されていないドキュメントを初めて開くまで、コンテナーを事前に作成しません。 ユーザーは、この最初のファイルが Application Guard で開くのに時間がかかるのを確認します。
@@ -239,8 +238,8 @@ Application Guard は仮想化コンテナーを使用して、信頼されて�
 
 * Web リンク ( または ) を`http` 選択 `https`しても、ブラウザーは開かれません。
 * コピー貼り付け保護ポリシーの既定の設定では、テキストへのクリップボード アクセスのみを有効にします。
-* サポートされていないファイルの種類保護ポリシーの既定の設定は、暗号化されている、または Information Rights Management (IRM) が設定されている、信頼されていないサポートされていないファイルの種類を開くのをブロックすることです。 これには、暗号化を使用して機密ラベルをMicrosoft Information Protectionするファイル (機密または機密性の高いファイル) が含まれます。
+* サポートされていないファイルの種類保護ポリシーの既定の設定は、暗号化されている、または Information Rights Management (IRM) が設定されている、信頼されていないサポートされていないファイルの種類を開くのをブロックすることです。 これには、暗号化を使用して機密ラベルMicrosoft Information Protectionするファイル (機密または機密性の高いファイル) が含まれます。
 * 現時点では、CSV ファイルと HTML ファイルはサポートされていません。
-* アプリケーションの Application Guard Office NTFS 圧縮ボリュームでは現在動作しません。 "エラー" が表示される場合は、ERROR_VIRTUAL_DISK_LIMITATIONの圧縮を解除してください。
-* .NET を更新すると、Application Guard でファイルが開かない場合があります。 回避策として、ユーザーは、このエラーが発生した場合にデバイスを再起動できます。 この問題の詳細については、「サンドボックスを開く際にエラー メッセージを受け取Windows Defender Application Guard[またはWindowsしてください](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)。
+* 現在、NTFS Officeの Application Guard は動作しません。 "エラー" が表示される場合は、ERROR_VIRTUAL_DISK_LIMITATIONの圧縮を解除してください。
+* .NET を更新すると、Application Guard でファイルが開かない場合があります。 回避策として、ユーザーは、このエラーが発生した場合にデバイスを再起動できます。 問題の詳細については、「サンドボックスを開く際にエラー メッセージを受け取Windows Defender Application Guard[またはWindowsしてください](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)。
 * 詳細については[、「よく寄せられる質問 - Microsoft Defender Application Guard」を参照してください。](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

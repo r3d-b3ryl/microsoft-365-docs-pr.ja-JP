@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint ドキュメント
 summary: Microsoft Defender for Endpoint は、予防的な保護、侵害後の検出、自動調査、および対応を行います。
 metadata:
   title: Microsoft Defender for Endpoint ドキュメント
-  description: Microsoft Defender for Endpoint について学習し、組み込みのセキュリティ機能を最大限に活用してデバイスを保護し、悪意のあるアクティビティを検出し、脅威を修復します#必須。検索結果に表示される記事の説明。 < 160 文字。
+  description: Microsoft Defender for Endpoint について学習し、組み込みのセキュリティ機能を最大限に活用してデバイスを保護し、悪意のあるアクティビティを検出し、脅威を修復します#必須; 検索結果に表示される記事の説明。160 文字未満。
   services: office-365-security-compliance
   ms.prod: m365-security
   ms.technology: mde
@@ -16,7 +16,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: d141c9f8b6109bd55bd64e5839db552fc13588de
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "61643032"
@@ -27,7 +27,7 @@ landingContent:
     links:
     - text: Microsoft Defender for Endpoint とは
       url: microsoft-defender-endpoint.md
-    - text: Defender for Endpoint Plan 1 とは
+    - text: Defender for Endpoint プラン 1 とは
       url: defender-endpoint-plan-1.md
     - text: Defender for Endpoint プラン 1 とプラン 2を比較する
       url: defender-endpoint-plan-1-2.md
@@ -35,7 +35,7 @@ landingContent:
     links:
     - text: Microsoft Defender for Endpoint の新機能
       url: whats-new-in-microsoft-defender-endpoint.md
-    - text: Microsoft Defender for Endpoint Plan 1 の発表
+    - text: Microsoft Defender for Endpoint プラン 1 の発表
       url: defender-endpoint-plan-1.md
   - linkListType: video
     links:
@@ -55,7 +55,7 @@ landingContent:
       url: deployment-phases.md
     - text: サポート対象デバイスのオンボード
       url: onboard-configure.md
-    - text: Defender for Endpoint Plan 1 のセットアップと構成
+    - text: Defender for Endpoint プラン 1 の設定と構成
       url: mde-p1-setup-configuration.md
   - linkListType: how-to-guide
     links:
@@ -85,7 +85,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Defender for Endpoint on Mac
+    - text: Mac 用 Microsoft Defender for Endpoint
       url: microsoft-defender-endpoint-mac.md
     - text: iOS 用 Microsoft Defender for Endpoint API
       url: microsoft-defender-endpoint-ios.md

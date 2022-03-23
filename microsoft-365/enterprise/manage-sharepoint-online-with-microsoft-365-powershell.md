@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: PowerShell を使用してユーザー、Microsoft 365、サイト グループを管理する方法について説明します。
-ms.openlocfilehash: 22276453c1d95cc7799da9082a8cd4b71229511d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9a138dd7622bda9cbb7d3206349ddd8992b93831
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210259"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675396"
 ---
 # <a name="manage-sharepoint-with-powershell"></a>PowerShell SharePointを管理する
 
@@ -35,7 +35,7 @@ SharePoint管理者は、サイト、サイト グループ、およびユーザ
 
 - [SharePoint Online 管理シェルの使用を開始する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
-- [PowerShell SharePointサイトを作成し、ユーザーを追加する](create-sharepoint-sites-and-add-users-with-powershell.md)
+- [PowerShell SharePointオンライン サイトを作成し、ユーザーを追加する](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 - [PowerShell SharePointオンライン ユーザーとグループを管理する](manage-sharepoint-users-and-groups-with-powershell.md)
 

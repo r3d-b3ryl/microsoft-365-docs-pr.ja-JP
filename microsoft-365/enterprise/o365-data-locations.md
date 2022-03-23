@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: 4240521579331c0d4aed329b952d0a560291df45
-ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+ms.openlocfilehash: c88eceadf6c00d165b0ac032fab19596abec49e1
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62487253"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525474"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -47,7 +47,7 @@ Azure Active Directory データの場所については、[AAD データ マッ
 
 ### <a name="how-does-microsoft-define-data"></a>Microsoft はどのようにデータを定義するのですか?
 
-Microsoft セキュリティ センターで[さまざまな種類のデータの定義](https://go.microsoft.com/fwlink/p/?linkid=864390)を確認してください。 [Microsoft オンライン サービスの使用条件](https://go.microsoft.com/fwlink/p/?linkid=862403)で、Microsoft は顧客データ/お客様のデータに関して契約上のコミットメントを行います。 Microsoft は、[Microsoft オンライン サービスの使用条件](https://go.microsoft.com/fwlink/p/?linkid=862403)に従ってお客様の地域内でのみ保管されている顧客データをコア カスタマー データと呼びます。
+Microsoft セキュリティ センターで[さまざまな種類のデータの定義](https://go.microsoft.com/fwlink/p/?linkid=864390)を確認してください。 [プライバシーとセキュリティの使用条件](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all)で、Microsoft は顧客データ/お客様のデータに関して契約上のコミットメントを行います。 Microsoft は、[プライバシーとセキュリティの使用条件](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all)に従ってお客様の地域内でのみ保管されている顧客データをコア カスタマー データと呼びます。
 
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>データ センターの正確な所在地はどこですか?
 
@@ -95,14 +95,14 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 
 ### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Intune データの保存場所については、どのような例外がありますか?
 
-Microsoft は、指定された地域外に Intune の顧客データを保存しません。 次の場合を除きます。
+Microsoft は、次の場合を除いて、指定された地域外に Intune の顧客データを保存しません。
 
 - Microsoft は、顧客サポートを提供したり、サービスのトラブルシューティングを行ったり、法的要件に準拠したりする必要があります。
 - ユーザーは、次のような用途を含む顧客データの保存を可能にするアカウントを構成します。
 
   - 地球規模のキャッシュ サービスを提供し、世界中に顧客データを保存する、コンテンツ配信ネットワーク (CDN) など、グローバルに動作するように設計された機能。
 
-  - ディレクトリ データをグローバルに保存できる、Azure Active Directory (Azure AD)。 この内容は、米国 (Azure AD データは米国のみに保存されます)、または欧州 (Azure AD データは欧州または米国に保存されています) の Azure AD の展開には適用されません。
+  - ディレクトリ データをグローバルに保存できる、Azure Active Directory (Azure AD)。この内容は、米国 (Azure AD データは米国のみに保存されます)、または欧州 (Azure AD データは欧州または米国に保存されています) の Azure AD の展開には適用されません。
    
   - 通常、顧客データは米国に保存されますが、プレビュー、ベータ、およびその他のプレリリース サービスについては、グローバルに保存することができます。
 

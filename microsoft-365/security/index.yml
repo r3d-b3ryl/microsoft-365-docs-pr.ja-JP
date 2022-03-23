@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft 365 のセキュリティに関するドキュメント
-summary: Microsoft 365 Defenderポータルは、1 つの包括的な管理コンソールに複数のセキュリティ テクノロジを統合し、企業を保護するための機能強化を行います。
+summary: Microsoft 365 Defender ポータルは、複数のセキュリティ テクノロジを 1 つの包括的な管理コンソールに統合し、企業を保護する拡張機能を提供します。
 metadata:
   title: Microsoft 365 のセキュリティに関するドキュメント
   description: Microsoft Defender for Endpoint について学ぶ - サイバー脅威からエンドポイントを保護し、セキュリティ運用チームに脅威を修復する機能を提供する方法。
@@ -15,7 +15,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: 199f3005de41d8b97b6ae110740d687d5d4692e9
   ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 11/19/2021
   ms.locfileid: "61106428"
@@ -78,7 +78,7 @@ landingContent:
     links:
     - text: Microsoft Defender for Cloud Apps とは
       url: /cloud-app-security/what-is-cloud-app-security
-    - text: Microsoft Defender for Cloud Apps の使用を開始する
+    - text: 'クイックスタート: Microsoft Defender for Cloud Apps の使用を開始する'
       url: /cloud-app-security/getting-started-with-cloud-app-security
 - title: セキュリティ管理
   linkLists:

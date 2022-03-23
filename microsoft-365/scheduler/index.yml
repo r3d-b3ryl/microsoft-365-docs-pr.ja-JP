@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Scheduler for Microsoft 365
-summary: スケジュール設定を使用して会議をスケジュールMicrosoft 365スケジューラを設定する方法Cortana。
+summary: Cortana を使用して会議をスケジュールする Scheduler for Microsoft 365 の設定方法について説明します。
 brand: m365
 metadata:
   title: Scheduler for Microsoft 365
-  description: スケジュール設定を使用して会議をスケジュールMicrosoft 365スケジューラを設定する方法Cortana。
+  description: Cortana を使用して会議をスケジュールする Scheduler for Microsoft 365 の設定方法について説明します。
   ms.service: exchange-online
   ms.topic: hub-page
   author: AshaIyengar21
@@ -15,21 +15,21 @@ metadata:
 additionalContent:
   sections:
     - items:
-        - title: Scheduler for Microsoft 365
-          summary: スケジューラの機能Microsoft 365、そのメリットとそのメリットについて説明します。
+        - title: Scheduler for Microsoft 365 とは?
+          summary: Scheduler for Microsoft 365 とその機能、および誰にどのようなメリットがあるかについて説明します。
           url: scheduler-overview.md
         - title: 信頼とプライバシー
-          summary: Scheduler for Microsoft 365、信頼とプライバシーが確実に保護される方法について説明します。
+          summary: Scheduler for Microsoft 365 によって信頼とプライバシーがどのように保護されるかについて説明します。
           url: scheduler-trust-privacy.md
         - title: Scheduler for Microsoft 365 を設定する
-          summary: スケジューラをセットアップするために必要なMicrosoft 365。
+          summary: Scheduler for Microsoft 365 を設定するために何が必要であるかについて説明します。
           url: scheduler-setup.md
-        - title: スケジューラを使用してMicrosoft 365
-          summary: スケジューラを使用してユーザーにMicrosoft 365。
+        - title: Scheduler for Microsoft 365 を使用する
+          summary: Scheduler for Microsoft 365 の利用方法について説明します。
           url: scheduler-using.md
-        - title: 動的な定期的な会議をスケジュールする
-          summary: 動的な定期的な会議をスケジュールする方法の詳細について説明します。
+        - title: 動的に繰り返される会議をスケジュールする
+          summary: 動的に繰り返される会議をスケジュールする方法について説明します。
           url: scheduler-recurring-meetings.md
-        - title: スケジューラに関するよく寄せられる質問
-          summary: Scheduler for Microsoft 365 でよく寄せられる質問とMicrosoft 365。
+        - title: スケジューラに関する FAQ
+          summary: Scheduler for Microsoft 365 に関してよく寄せられる質問と回答。
           url: scheduler-faqs.md
