@@ -31,13 +31,13 @@ productDirectory:
   title: 作業の開始
   summary: サブスクリプションのセットアップ、ユーザーの追加、およびアプリのインストールを行います。
   items:
-    - title: 今月の最も表示数の多い管理者ヘルプ記事の上位 20 件
+    - title: 今月の最も閲覧された管理者ヘルプ記事の上位 20 件
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
       summary: 他の管理者に最も人気のあるヘルプ記事をご覧ください。
       url: top-m365-admin-articles.yml
     - title: 管理者トレーニング ビデオ ライブラリ
       imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
-      summary: 短いビデオを使用してビジネスのMicrosoft 365設定および管理する方法について説明します。
+      summary: 短いビデオを使用してビジネス向けの Microsoft 365 を設定および管理する方法について説明します。
       url: admin-video-library.yml
     - title: 作業の開始
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'

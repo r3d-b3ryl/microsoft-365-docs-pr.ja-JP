@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft Defender for Business
-summary: 2022 年 3 月 1 日から、Microsoft Defender for Business が Microsoft 365 Business Premium。 スタンドアロン サブスクリプションとしての Defender for Business は現在プレビュー中で、サインアップする顧客と IT パートナーに徐々にロールアウトされます https://aka.ms/mdb-preview。
+summary: 2022 年 3 月 1 日以降、Microsoft Defender for Business は Microsoft 365 Business Premium に含まれています。 スタンドアロン サブスクリプションとしての Defender for Business は現在プレビュー段階であり、https://aka.ms/mdb-preview にサインアップするお客様と IT パートナーに段階的にロールアウトされます。
 metadata:
   title: Microsoft Defender for Business のドキュメント
   description: Microsoft Defender for Business の概要とセットアップ情報を取得する
@@ -17,7 +17,7 @@ metadata:
   ms.date: 03/10/2022
   ms.openlocfilehash: eb00a4fc76315360c789afacad4b77da3d28c323
   ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 03/12/2022
   ms.locfileid: "63450746"
@@ -30,37 +30,37 @@ landingContent:
       url: mdb-overview.md
     - text: 簡略化された構成プロセス
       url: mdb-simplified-configuration.md
-    - text: 中小企業のプランを比較する
+    - text: 中小規模のビジネスのプランを比較する
       url: compare-mdb-m365-plans.md
-    - text: アプリケーションとのMicrosoft 365 Lighthouse
+    - text: Microsoft 365 Lighthouse との統合
       url: mdb-lighthouse-integration.md
 - title: 作業の開始
   linkLists:
   - linkListType: get-started
     links:
-    - text: ビジネス向け Defender の取得
+    - text: Defender for Business を取得する
       url: get-defender-business.md
     - text: セットアップ ウィザードを使用する
       url: mdb-use-wizard.md
-    - text: ポータルの移動
+    - text: ポータル内を移動する
       url: mdb-get-started.md
-    - text: '[脅威の管理] &のダッシュボードを表示する'
+    - text: 脅威および脆弱性の管理ダッシュボード
       url: mdb-view-tvm-dashboard.md
     - text: チュートリアルとシミュレーションを試す
       url: mdb-tutorials.md
-- title: セットアップと構成
+- title: 設定と構成
   linkLists:
   - linkListType: deploy
     links:
     - text: セットアップの概要
       url: mdb-setup-configuration.md
-    - text: 手順 1 - 要件を確認する
+    - text: 手順 1 - 要件をレビューする
       url: mdb-requirements.md
-    - text: 手順 2 - 役割とアクセス許可を割り当てる
+    - text: 手順 2 - ロールとアクセス許可を割り当てる
       url: mdb-roles-permissions.md
-    - text: 手順 3 - 電子メール通知を設定する
+    - text: 手順 3 - メール通知を設定する
       url: mdb-email-notifications.md
-    - text: 手順 4 - オンボード デバイス
+    - text: 手順 4 - デバイスのオンボード
       url: mdb-onboard-devices.md
     - text: 手順 5 - セキュリティ ポリシーを構成する
       url: mdb-view-edit-policies.md
@@ -86,9 +86,9 @@ landingContent:
       url: mdb-custom-rules-firewall.md
   - linkListType: reference
     links:
-    - text: ポリシーの順序
+    - text: 'ポリシーの順序:'
       url: mdb-policy-order.md
-    - text: 次世代の保護設定
+    - text: 次世代保護の設定
       url: mdb-next-gen-configuration-settings.md
     - text: ファイアウォールの設定
       url: mdb-firewall.md
@@ -106,7 +106,7 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: ヘルプを受ける方法やサポートに問い合わせする方法
+    - text: ヘルプを入手する方法またはサポートに問い合わせる方法
       url: mdb-get-help.md
     - text: よく寄せられる質問
       url: mdb-faq.yml

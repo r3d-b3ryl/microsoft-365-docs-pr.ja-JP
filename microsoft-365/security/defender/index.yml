@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft 365 Defender
-summary: 攻撃の表面を越えて企業Microsoft 365 Defender保護できるよう、セキュリティ ソリューションの堅牢性について説明します。
+summary: あらゆる攻撃から企業をより良く保護するための、Microsoft 365 セキュリティの堅牢なセキュリティ ソリューションとサービスについて説明します。
 metadata:
-  title: Microsoft 365 Defenderドキュメント
-  description: 攻撃の表面を越えて企業Microsoft 365 Defender保護できるよう、セキュリティ ソリューションの堅牢性について説明します。
+  title: Microsoft 365 Defender ドキュメント
+  description: あらゆる攻撃から企業をより良く保護するための、Microsoft 365 セキュリティの堅牢なセキュリティ ソリューションとサービスについて説明します。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -16,7 +16,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: 473a0b6ca9641c12c7ae9b8d9aeba1e0e9d477d8
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "61645170"
@@ -41,7 +41,7 @@ landingContent:
     links:
     - text: 試用版ラボを作成する
       url: eval-overview.md
-    - text: 実稼働環境でパイロット プロジェクトを実行する
+    - text: 運用環境でパイロット プロジェクトを実行する
       url: eval-overview.md
 - title: 作業の開始
   linkLists:
@@ -71,9 +71,9 @@ landingContent:
       url: ../office-365-security/defender-for-office-365.md
     - text: Microsoft Defende for Office 365 サービス説明書
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-    - text: Microsoft Defender for Office 365 Microsoft 365 Defender
+    - text: Microsoft 365 Defender の Microsoft Defender for Office 365
       url: microsoft-365-security-center-mdo.md
-    - text: Microsoft Defender をリダイレクトして、Office 365のMicrosoft 365 Defender
+    - text: Microsoft 365 Defender で Microsoft Defender for Office 365 をリダイレクトする
       url: microsoft-365-security-mdo-redirection.md
 - title: Microsoft Defender for Endpoint
   linkLists:
@@ -83,7 +83,7 @@ landingContent:
       url: ../defender-endpoint/microsoft-defender-endpoint.md
     - text: Microsoft 365 Defender の Microsoft Defender for Endpoint
       url: microsoft-365-security-center-mde.md
-    - text: エンドポイントの Defender のリダイレクトMicrosoft 365 Defender
+    - text: Defender for Endpoint を Microsoft 365 Defender にリダイレクトする
       url: ../defender/microsoft-365-security-mde-redirection.md
 - title: Microsoft Defender for Cloud Apps
   linkLists:
@@ -103,7 +103,7 @@ landingContent:
       url: threat-analytics.md
     - text: 自動調査および対応
       url: m365d-autoir.md
-    - text: 脅威を探す
+    - text: 脅威を捜索する
       url: advanced-hunting-overview.md
 - title: 参照
   linkLists:

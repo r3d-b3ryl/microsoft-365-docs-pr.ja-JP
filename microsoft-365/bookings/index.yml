@@ -16,20 +16,20 @@ additionalContent:
   sections:
     - items:
         - title: Microsoft Bookings とは
-          summary: Web ベースの予約カレンダーとアプリを使用して予定をスケジュールおよび管理します(スタッフOutlook自動通知メールの統合を含む)。
+          summary: Web ベースの予約カレンダーとアプリを使用して予約をスケジュールおよび管理します (スタッフと自動通知メールの Outlook 統合を含む)。
           url: bookings-overview.md
         - title: 勤務先情報を入力する
-          summary: Microsoft Bookings のビジネス名、住所、電話番号、Web サイトの URL、ロゴ、営業時間など、会社情報の作成ページを入力します。
+          summary: Microsoft Bookings のビジネス名、住所、電話番号、Web サイトの URL、ロゴ、営業時間などを、会社紹介の作成ページに入力します。
           url: enter-business-information.md
         - title: Bookings アプリを取得する
-          summary: 色のテーマを変更し、外部の顧客向け予約ページの外観を設定します。
+          summary: 色のテーマを変更し、外部顧客向け予約ページの外観を設定します。
           url: customize-booking-page.md
         - title: Bookings にスタッフを追加する
-          summary: スタッフ リストを作成し、名前、電話番号、電子メール アドレスなどのスタッフ メンバーの詳細を管理します。
+          summary: スタッフ リストの作成、スタッフ メンバーの詳細情報 (名前、電話番号、メール アドレスなど) の管理を行います。
           url: add-staff.md
         - title: 休業、休暇、休暇期間のスケジュール
-          summary: 指定された時間に従業員が予約に使用できないとマークされるように、予約カレンダーからオフィスの休業日と従業員の休み時間をスケジュールします。
+          summary: オフィスの休業日や従業員の休暇のスケジュールは、Bookings の予定表から設定でき、その従業員は指定した時間帯は予約できなくなります。
           url: schedule-closures-time-off-vacation.md
-        - title: Microsoft Bookings の従業員の勤務時間
+        - title: Microsoft Bookings での従業員の勤務時間
           summary: Microsoft Bookings で従業員の勤務時間と空き時間を設定します。
           url: employee-hours.md

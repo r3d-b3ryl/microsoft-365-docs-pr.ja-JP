@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft Defender のOffice 365ドキュメント
-summary: メールとコラボレーション ツールをよりよく保護するために、Defender for Office 365の堅牢なセキュリティ ソリューションについて学習します。
+title: Microsoft Defender for Office 365 ドキュメント
+summary: 'メールとコラボレーション ツールをより適切に保護するための Defender for Office 365 の堅牢なセキュリティ ソリューションについて説明します。 '
 metadata:
-  title: Microsoft Defender for Office 365ドキュメント
-  description: メールとコラボレーション ツールをよりよく保護するために、Defender for Office 365の堅牢なセキュリティ ソリューションについて学習します。
+  title: Microsoft Defender for Office 365 セキュリティ ドキュメント
+  description: 'メールとコラボレーション ツールをより適切に保護するための Defender for Office 365 の堅牢なセキュリティ ソリューションについて説明します。 '
   services: office-365-security-compliance
   ms.prod: m365-security
   ms.technology: mdo
@@ -16,26 +16,26 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: c132c68ba56dedd7ae38ba4c922f815f316bb062
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "61645194"
 landingContent:
-- title: Defender for Office 365 & Exchange Online Protection
+- title: Defender for Office 365 と Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
     - text: Office 365 セキュリティの概要
       url: overview.md
-    - text: EOP および Defender で事前設定されたセキュリティ ポリシーを使用してセットアップOffice 365
+    - text: EOP および Defender for Office 365 の事前設定済みセキュリティ ポリシーを使用して設定する
       url: preset-security-policies.md
-- title: Defender for Office 365
+- title: Defender for Office 365 の使用を開始する
   linkLists:
   - linkListType: get-started
     links:
     - text: 脅威から保護する
       url: protect-against-threats.md
-    - text: EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
+    - text: EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー
       url: preset-security-policies.md
     - text: Microsoft Defender for Office 365 の新機能
       url: whats-new-in-defender-for-office-365.md
@@ -45,9 +45,9 @@ landingContent:
     links:
     - text: Defender for Office 365 の評価
       url: office-365-evaluation.md
-    - text: '[ユーザーに切り替Exchange Online Protection'
+    - text: Exchange Online Protection に切り替える
       url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
-- title: 電子メール認証保護のセットアップ
+- title: 電子メール認証保護の設定
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -63,7 +63,7 @@ landingContent:
     links:
     - text: Exchange Online Protection の概要
       url: exchange-online-protection-overview.md
-    - text: EOP と Microsoft Defender のセットアップOffice 365セキュリティに関する推奨設定
+    - text: EOP および Microsoft Defender for Office 365 セキュリティの設定の推奨設定
       url: recommended-settings-for-eop-and-office365.md
 - title: 防止
   linkLists:
@@ -71,7 +71,7 @@ landingContent:
     links:
     - text: セキュリティ強化のために、Microsoft 365 テナントを構成する
       url: tenant-wide-setup-for-increased-security.md
-    - text: EOP および Defender の構成アナライザー (Office 365
+    - text: EOP および Defender for Office 365 の構成アナライザー
       url: configuration-analyzer-for-security-policies.md
     - text: 攻撃シミュレーション トレーニングを通して洞察を得る
       url: attack-simulation-training-insights.md
@@ -89,19 +89,19 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 脅威エクスプローラーのビューとリアルタイム検出
+    - text: 脅威エクスプローラーとリアルタイムの検出のビュー
       url: threat-explorer-views.md
-    - text: Microsoft Defender のキャンペーン ビュー (Office 365
+    - text: Microsoft Defender for Office 365 のキャンペーン ビュー
       url: campaigns.md
-    - text: メールで配信された悪意のあるメールをOffice 365
+    - text: Office 365 で配信された悪意のあるメールの検索と調査
       url: investigate-malicious-email-that-was-delivered.md
     - text: Defender for Office 365 レポートを表示する
       url: view-reports-for-mdo.md
-- title: EOP で調査する
+- title: EOP での調査
   linkLists:
   - linkListType: overview
     links:
-    - text: EOP でのレポートとメッセージの追跡
+    - text: EOP でのレポート作成とメッセージ追跡
       url: reporting-and-message-trace-in-exchange-online-protection.md
     - text: 管理者監査ログを表示する
       url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
@@ -109,21 +109,21 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: メールで配信される悪意のある電子メールを修復Office 365
+    - text: Office 365 で配信された悪意のあるメールを修復する
       url: remediate-malicious-email-delivered-office-365.md
-    - text: 侵害されたメール アカウントに対応する
+    - text: 侵害された電子メール アカウントに対応する
       url: responding-to-a-compromised-email-account.md
-    - text: カスタム Outlookおよびカスタム フォームインジェクション攻撃の修復
+    - text: Outlook ルールとカスタム フォーム インジェクション攻撃を修復する
       url: detect-and-remediate-outlook-rules-forms-attack.md
-    - text: False Positives/False Negatives の送信
+    - text: 誤検知/偽陰性の送信
       url: admin-submission.md
-- title: 自動化
+- title: 自動化する
   linkLists:
   - linkListType: overview
     links:
-    - text: Defender での自動調査と応答 (AIR) の動作Office 365
+    - text: Defender for Office 365 での自動調査と対応 (AIR) のしくみ
       url: automated-investigation-response-office.md
-    - text: はじめに Defender で AIR を使用Office 365
+    - text: Defender for Office 365 にて AIR の使用を開始する
       url: office-365-air.md
-    - text: AIR で侵害されたユーザー アカウントに対処する
+    - text: AIR を使用して侵害されたユーザー アカウントに対処する
       url: address-compromised-users-quickly.md

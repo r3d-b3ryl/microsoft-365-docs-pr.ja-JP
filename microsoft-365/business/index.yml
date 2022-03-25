@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 Business Premium のリソース
-summary: 最大 300 人の従業員を持つ企業では、Microsoft 365 Business Premiumやオンライン会議を使用して、Office生産性を向上させることができます。 高度なセキュリティ機能を使用してビジネスを保護し、1 つのソリューションで IT のセットアップと管理を効率化します。
+summary: 最大 300 人の従業員を持つ企業の場合、Microsoft 365 Business Premium を使用すると、Office アプリやオンライン会議を使用して、どこからでも生産性を高めることができます。 高度なセキュリティ機能を使用してビジネスをセキュリティで保護し、単一のソリューションで IT のセットアップと管理を効率化します。
 brand: m365
 metadata:
   title: Microsoft 365 Business Premium のリソース
-  description: セットアップと操作に関するドキュメントは、Microsoft 365 Business Premium。
+  description: Microsoft 365 Business Premium のセットアップと操作に関するドキュメント。
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
@@ -15,7 +15,7 @@ metadata:
   ms.author: efrene
   ms.date: 03/01/2022
 productDirectory:
-  title: 生産性とセキュリティとMicrosoft 365 Business Premium
+  title: Microsoft 365 Business Premium による生産性とセキュリティ
   items:
     - title: 視聴する
       imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
@@ -23,15 +23,15 @@ productDirectory:
       url: 'https://aka.ms/M365BPvideo'
     - title: 新機能
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: Business プレミアム および Microsoft 365 Lighthouse の新しい Defender for Business 機能について説明します。
+      summary: Business Premium と Microsoft 365 Lighthouse の新しい Defender for Business 機能について説明します。
       url: 'https://aka.ms/SMBsecurityFebBlog'
     - title: 無料のパートナー キットを入手
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: ハイブリッド作業をセキュリティで保護するための実用的なガイダンスとパートナーの市場リソースに移動します。
+      summary: ハイブリッド作業のセキュリティを保護するための、パートナー向けの実践的なガイダンスと市場投入のリソースです。
       url: 'https://aka.ms/SMBSecurityKit'
     - title: パートナー ウェビナー シリーズに参加
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: Microsoft 365 Business Premium、Microsoft Defender for Business、および Microsoft 365 Lighthouse を使用して、アップセルをMicrosoft 365 Lighthouse。
+      summary: Microsoft 365 Business Premium、Microsoft Defender for Business、Microsoft 365 Lighthouse を使用してアップセルを推進し、ビジネスを成長させる方法について説明します。
       url: 'https://aka.ms/M365MDBseries'
 conceptualContent:
   items:
@@ -42,13 +42,13 @@ conceptualContent:
           text: Microsoft 365 Business Premium の概要
         - url: ../business-video/index.yml
           itemType: video
-          text: Microsoft 365トレーニングの詳細
+          text: 一般法人向け Microsoft 365 のトレーニング
         - url: 'https://go.microsoft.com/fwlink/?linkid=2164213'
           itemType: overview
-          text: ビジネス プランMicrosoft 365比較する
+          text: 一般法人向け Microsoft 365 のプランの比較
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
-          text: Microsoft 365に関するよくある質問
+          text: 一般法人向け Microsoft 365 に関する FAQ
     - title: Microsoft 365 Business Premium のセットアップ
       links:
         - url: ../business-premium/get-microsoft-365-business-premium.md
@@ -62,32 +62,32 @@ conceptualContent:
           text: 3. Microsoft 365 Business Premium のセットアップ
         - url: ../admin/security-and-compliance/secure-your-business-data.md
           itemType: how-to-guide
-          text: 4. ビジネス向けセキュリティ保護Microsoft 365トップ 10
-    - title: 何がMicrosoft 365 Lighthouse?
+          text: 4. 一般法人向け Microsoft 365 をセキュリティで保護する上位 10 の方法
+    - title: Microsoft 365 Lighthouse とは
       links:
         - url: ../lighthouse/m365-lighthouse-overview.md
           itemType: overview
-          text: パートナー Microsoft 365 Lighthouseの概要
+          text: Microsoft 365 Lighthouse の概要 (パートナー向け)
         - url: ../lighthouse/m365-lighthouse-sign-up.md
           itemType: how-to-guide
           text: サインアップして Microsoft CSP になる方法
         - url: ../lighthouse/m365-lighthouse-configure-portal-security.md
           itemType: how-to-guide
-          text: ライトハウス ポータルのセットアップとセキュリティ保護
+          text: Lighthouse ポータルを設定してセキュリティで保護する
         - url: ../lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview.md
           itemType: overview
-          text: 顧客テナントのベースラインの使用
+          text: 顧客テナントのベースラインを使用する
         - url: ../lighthouse/m365-lighthouse-faq.yml
           itemType: reference
-          text: Microsoft 365 Lighthouse FAQ
+          text: Microsoft 365 Lighthouse に関する FAQ
     - title: パートナー向けリソース (英語のみ)
       links:
         - url: 'https://aka.ms/M365BPPartnerPlaybook'
           itemType: how-to-guide
-          text: パートナー プレイブックMicrosoft 365 Business Premium準備シリーズを参照してください。
+          text: Microsoft 365 Business Premium パートナー プレイブックと準備シリーズを参照する
         - url: 'https://aka.ms/M365MDBseries'
           itemType: video
-          text: パートナーウェビナー シリーズに参加してください。
+          text: パートナー ウェビナー シリーズにご参加ください。
         - url: 'https://partner.microsoft.com'
           itemType: overview
           text: Microsoft Partner Network
@@ -104,18 +104,18 @@ conceptualContent:
           text: Defender for Business のセットアップと構成
         - url: ../security/defender-business/compare-mdb-m365-plans.md
           itemType: overview
-          text: プランのセキュリティ機能Microsoft 365比較する
+          text: Microsoft 365 プランのセキュリティ機能を比較する
         - url: ../security/defender-business/mdb-faq.yml
           itemType: reference
           text: Defender for Business FAQ
-    - title: メール コンテンツとメール ファイルOffice保護する
+    - title: メール コンテンツと Office ファイルを保護する
       links:
         - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
-          text: Microsoft Defender for Office 365
+          text: Microsoft Defender for Office 365 の概要
         - url: ../security/office-365-security/protect-against-threats.md
           itemType: how-to-guide
-          text: Defender for Office 365
+          text: Defender for Office 365 のセットアップと構成
         - url: ../security/office-365-security/anti-malware-protection-faq-eop.yml
           itemType: reference
           text: Defender for Office 365 FAQ
@@ -132,18 +132,18 @@ conceptualContent:
           text: フィードバックの送信
         - url: 'https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB'
           itemType: overview
-          text: 中小企業Communityの技術サポート
+          text: 中小企業向けの技術者コミュニティ
     - title: 方法
       links:
         - url: ../admin/manage/find-your-partner-or-reseller.md
           itemType: how-to-guide
-          text: 自分のビジネスに役立つ Microsoft パートナーを探す
+          text: ビジネスを支援する Microsoft パートナーを見つける
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
-          text: 別のプランにMicrosoft 365する
+          text: 別の Microsoft 365 プランに変更する
         - url: ../admin/setup/migrate-email-and-contacts-admin.md
           itemType: how-to-guide
           text: Microsoft 365 へのメールと連絡先の移行
         - url: ../admin/get-help-support.md
           itemType: how-to-guide
-          text: サポートに問い合Microsoft 365
+          text: Microsoft 365 のサポートにお問い合わせください
