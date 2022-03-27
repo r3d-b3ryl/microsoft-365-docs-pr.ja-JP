@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 053f92f0a3f7551d747c81b13b3832798c7e953c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 02b74d6f2a2e168f07a095207dcdc1bb6785aa8f
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312598"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715215"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -119,6 +119,10 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 
 [チーム ポリシー](/MicrosoftTeams/teams-policies)を使用して、プライベート チャネルを作成できるユーザーを制御することもできます。
 
+## <a name="shared-channel-settings"></a>共有チャネルの設定
+
+[共有チャネル](/MicrosoftTeams/shared-channels)には、チーム レベルの設定はありません。 Teams 管理センターと Azure AD で構成した共有チャネル設定は、秘密度に関係なくすべてのチームで利用できるようになります。
+
 ## <a name="sharepoint-settings"></a>SharePoint の設定
 
 秘密度ラベルを使用して新しいチームを作成するたびに、SharePoint で次の 2 つの手順を実行します。
@@ -136,9 +140,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 1. [既定の共有リンクの種類] で、**[組織レベルの設定と同じ]** チェック ボックスをオフにして、**[既存のアクセス権を持つユーザー]** を選びます。
 1. **[保存]** を選択します。
 
-#### <a name="private-channels"></a>プライベート チャネル
-
-チームにプライベート チャネルを追加する場合、各プライベート チャネルは、既定の共有設定を使用して新しい SharePoint サイトを作成します。 これらのサイトは SharePoint 管理センターでは表示されないので、Set-sposite PowerShell コマンドレットを使用して、ゲスト共有設定を更新する必要があります。
+チームにプライベート チャネルまたは共有チャネルを追加する場合、それぞれ既定の共有設定を使用して新しい SharePoint サイトが作成されることに注意してください。 チームに関連付けられているサイトを選択すると、SharePoint 管理センターで更新できます。
 
 ### <a name="site-sharing-settings"></a>サイト共有設定
 

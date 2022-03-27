@@ -35,17 +35,17 @@
           href: manage-devices-with-intune-overview.md
         - name: 手順 1. アプリ保護ポリシーを実装する
           href: manage-devices-with-intune-app-protection.md
-        - name: 手順 2。 デバイスを管理に登録する
+        - name: 手順 2.デバイスを管理に登録する
           href: manage-devices-with-intune-enroll.md
-        - name: 手順 3. コンプライアンス ポリシーを設定する
+        - name: 手順 3.コンプライアンス ポリシーを設定する
           href: manage-devices-with-intune-compliance-policies.md
-        - name: 手順 4. 正常で準拠したデバイスを要求する
+        - name: 手順 4.正常で準拠しているデバイスが必要
           href: manage-devices-with-intune-require-compliance.md
-        - name: 手順 5.  デバイス プロファイルを展開する
+        - name: 手順 5.デバイス プロファイルを展開する
           href: manage-devices-with-intune-configuration-profiles.md
-        - name: 手順 6. デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
+        - name: 手順 6.デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
           href: manage-devices-with-intune-monitor-risk.md
-        - name: 手順 7. 情報保護機能を備えたデータ損失防止 (DLP) を実装する
+        - name: 手順 7.情報保護機能を使用してデータ損失防止 (DLP) を実装する
           href: manage-devices-with-intune-dlp-mip.md
     - name: Microsoft 365 とセキュリティで保護された共同作業を設定する
       items:
@@ -67,7 +67,9 @@
           items:
             - name: 外部共有の概要
               href: collaborate-with-people-outside-your-organization.md
-            - name: 構成シナリオ
+            - name: 外部コラボレーションを計画する
+              href: plan-external-collaboration.md
+            - name: 構成
               items:
                 - name: ドキュメントでの共同作業
                   href: collaborate-on-documents.md
@@ -75,18 +77,32 @@
                   href: collaborate-in-site.md
                 - name: チームで共同作業を行う
                   href: collaborate-as-team.md
+                - name: チャネルで共同作業する
+                  href: collaborate-teams-direct-connect.md
+                - name: すべての組織で共有チャネルを有効にする
+                  href: allow-direct-connect-with-all-organizations.md
                 - name: B2B エクストラネットを作成する
                   href: b2b-extranet.md
-                - name: 共有を制限する
-                  href: microsoft-365-limit-sharing.md
-            - name: セキュリティ シナリオ
+                - name: 他の組織からの条件付きアクセスを信頼する
+                  href: trust-conditional-access-from-other-organizations.md
+            - name: 共有を制限する
               items:
-                - name: 認証されていない共有
-                  href: best-practices-anonymous-sharing.md
+                - name: ゲストを招待できるユーザーを制限する
+                  href: limit-who-can-invite-guests.md
+                - name: 組織が招待できるユーザーを制限する
+                  href: limit-invitations-from-specific-organization.md
+                - name: ゲスト共有を特定の組織に制限する
+                  href: limit-guest-sharing-to-specific-organization.md
+                - name: ユーザーをゲストにすることができる組織を制限する
+                  href: limit-organizations-where-users-have-guest-accounts.md
                 - name: 偶発的な公開を制限する
                   href: share-limit-accidental-exposure.md
-                - name: セキュリティで保護されたゲスト共有環境
-                  href: create-secure-guest-sharing-environment.md
+                - name: 共有を制限する
+                  href: microsoft-365-limit-sharing.md
+            - name: セキュリティで保護されたゲスト共有環境
+              href: create-secure-guest-sharing-environment.md
+            - name: 認証されていない共有
+              href: best-practices-anonymous-sharing.md
             - name: 外部共有リファレンス
               href: microsoft-365-guest-settings.md
     - name: Microsoft 365 テナントにランサムウェア保護を展開する
@@ -151,7 +167,7 @@
                   href: ../admin/add-users/remove-former-employee-step-3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: 手順 4. 元従業員のメールを別の従業員に転送するか、または元従業員のメールボックスを共有メールボックスに変換する
                   href: ../admin/add-users/remove-former-employee-step-4.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: 手順 5.  別の従業員に OneDrive および Outlook データへのアクセスを許可する
+                - name: 手順 5. 別の従業員に OneDrive および Outlook のデータへのアクセスを許可する
                   href: ../admin/add-users/remove-former-employee-step-5.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: 手順 6. 元従業員から Microsoft 365 ライセンスを削除する
                   href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
@@ -222,7 +238,7 @@
               href: ../contentunderstanding/solution-manage-contracts-step1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: 手順 2. Microsoft Teams を使う
               href: ../contentunderstanding/solution-manage-contracts-step2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: 手順 3. Power Automate
+            - name: 手順 3.Power Automate
               href: ../contentunderstanding/solution-manage-contracts-step3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: インテリジェントな SharePoint イントラネットの構築
           items:

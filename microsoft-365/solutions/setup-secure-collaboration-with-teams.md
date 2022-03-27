@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたファイルの共同作業と共有を設定し、Teamsに基づいてデータを保護するためのベスト プラクティスについて説明します。
-ms.openlocfilehash: 4bf18635b0c345e18c1ed5db8c7072ca6225e33c
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: db1ad7d6d5c62775c696da89c3d771114d48e67e
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064285"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714955"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>セキュリティで保護されたファイル共有とコラボレーションを設定Microsoft Teams
 
@@ -39,7 +39,7 @@ ms.locfileid: "61064285"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
-このMicrosoft 365、次に役立つTeams構成を使用して展開できます。
+このMicrosoft 365、以下に役立つTeams構成を使用して、さまざまな構成を展開できます。
 
 - 知的財産を保護する
 - ドキュメントや他のファイルとの簡単な共同作業を有効にする
@@ -68,22 +68,22 @@ ms.locfileid: "61064285"
 
 |製品またはコンポーネント|機能|ライセンス|
 |---|---|---|
-|Microsoft Defender for Office 365|セーフ SPO、OneDrive、Teams。セーフドキュメント;セーフ のリンクTeams|Microsoft 365 E1、E3、E5|
+|Microsoft Defender for Office 365|セーフ SPO、OneDrive、およびTeams。セーフドキュメント;セーフのリンクTeams|Microsoft 365 E1、E3、E5|
 |SharePoint|サイトとファイルの共有ポリシー、サイト共有のアクセス許可、リンクの共有、要求へのアクセス、サイトのゲスト共有設定|Microsoft 365 E1、E3、E5|
-|Microsoft Teams|ゲスト アクセス、プライベート チーム、プライベート チャネル|Microsoft 365 E1、E3、E5|
+|Microsoft Teams|ゲスト アクセス、プライベート チーム、プライベート チャネル、共有チャネル|Microsoft 365 E1、E3、E5|
 |Microsoft 365 コンプライアンス|秘密度ラベル|Microsoft 365 E3、E5|
 
 ## <a name="collaboration-governance-framework-for-teams-and-microsoft-365"></a>グループと組織のコラボレーション ガバナンス TeamsフレームワークMicrosoft 365
 
-Microsoft 365ソリューションを管理するための多くのオプションが提供されています。 この展開コンテンツをコラボレーション ガバナンス コンテンツと[](collaboration-governance-overview.md)共に使用して、組織に最適なコラボレーション ソリューションを作成することをお勧めします。
+Microsoft 365ソリューションを管理するための多くのオプションが提供されています。 この展開コンテンツをコラボレーション ガバナンス コンテンツと共に[](collaboration-governance-overview.md)使用して、組織に最適なコラボレーション ソリューションを作成することをお勧めします。
 
-### <a name="securing-teams-for-sensitive-and-highly-sensitive-data"></a>機密性の高Teams機密性の高いデータのセキュリティ保護
+### <a name="securing-teams-for-sensitive-and-highly-sensitive-data"></a>機密性の高Teamsデータのセキュリティ保護
 
-異なる感度で情報へのアクセスを管理するために、3 つの異なる層の保護を開発[Teams。](configure-teams-three-tiers-protection.md) これらの層は、ニーズやビジネスに合わせてカスタマイズできます。
+異なる感度を持つ情報へのアクセスを管理するために、3 つの異なる層の保護を開発[Teams。](configure-teams-three-tiers-protection.md) これらの層は、ニーズやビジネスに合わせてカスタマイズできます。
 
 ![3 つのレベルの保護を示Teams。](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
-次の表に示すように、これらの層 *(ベースライン*、機密性の高い、機密性の高い) は、過剰な情報漏洩や潜在的な情報漏洩を防ぐのに役立つ保護を徐々に強化します。
+次の表に示すように、これらの *層 (ベースライン*、機密性の高い、機密性の高い層) は、過剰な情報漏えいや潜在的な情報漏洩を防ぐのに役立つ保護を徐々に強化します。
 
 |-|ベースライン層|機密性の高い層|機密性の高い層|
 |---|---|---|---|
@@ -112,13 +112,14 @@ Microsoft 365ソリューションを管理するための多くのオプショ�
 
 ### <a name="sharing-with-people-outside-your-organization"></a>組織外のユーザーとの共有
 
-組織外のユーザー [と任意の感度の情報を共有する必要がある場合があります](collaborate-with-people-outside-your-organization.md)。 これは、単一のドキュメントを 1 人のユーザーと共有する場合から、大規模なパートナー組織や世界中のフリーランサーと主要なプロジェクトで共同作業を行う場合などです。 このMicrosoft 365、この範囲の外部共有は、機密情報を保護するための適切な保護手段を使用して簡単に行うことができます。
+組織外のユーザー [と任意の感度の情報を共有する必要がある場合があります](collaborate-with-people-outside-your-organization.md)。 これは、単一のドキュメントを 1 人のユーザーと共有する場合から、大規模なパートナー組織や世界中のフリーランサーと主要なプロジェクトで共同作業を行う場合などです。 このMicrosoft 365外部共有は、機密情報の保護に役立つ適切な保護手段を使用して簡単に行うことができます。
 
 これらのリソースは、組織外のユーザーと共同作業するための環境のセットアップを開始するのに役立ちます。
 
 - [フォルダーの個々のファイルを](collaborate-on-documents.md) 共有するドキュメントで共同作業を行います。
-- [サイトで共同作業を行](collaborate-in-site.md)い、サイト内のゲストとSharePointします。
+- [サイトで共同作業を行](collaborate-in-site.md)い、ユーザーと共同作業を行SharePointします。
 - [チーム内のゲストと](collaborate-as-team.md) 共同作業を行うチームとして共同作業を行います。
+- [チャネル内の外部参加者と共同作業](/microsoft-365/solutions/collaborate-teams-direct-connect) を行い、共有チャネルで組織外のユーザーと共同作業を行います。
 
 共有される情報の感度に応じて、セーフガードを追加して、過剰共有を防ぐのに役立ちます。 これらのリソースは、組織に必要な保護をセットアップするのに役立ちます。
 
@@ -126,7 +127,7 @@ Microsoft 365ソリューションを管理するための多くのオプショ�
 - [組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する](share-limit-accidental-exposure.md)
 - [セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
 
-パートナー組織を持つ主要なプロジェクトがある場合は、Azure Entitlement Management を使用して、プロジェクトに設定したチーム内のその組織のゲストを管理できます。 詳細については、「[Create a B2B extranet with managed guests (管理されたゲストで B2B エクストラネットを作成する)](b2b-extranet.md)」を参照してください。
+パートナー組織の主要なプロジェクトがある場合は、共有チャネルまたは [Azure Entitlement Management](b2b-extranet.md) を使用して、共同作業を行う必要がある組織外のユーザーを管理できます。[](/microsoft-365/solutions/collaborate-teams-direct-connect)
 
 ## <a name="training-for-administrators"></a>管理者向けトレーニング
 
@@ -154,7 +155,7 @@ Microsoft Learn のこれらのトレーニング モジュールを使用する
 
 |トレーニング: |Microsoft 365 で企業情報を保護する|
 |---|---|
-|![Teamsのトレーニング アイコンをクリックします。](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。 「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。 この学習パスは、セキュリティ管理者の認定:セキュリティ管理者アソシエMicrosoft 365 Microsoft 365認定: Enterpriseエキスパート認定の準備に役立ちます。<p>1 時間 - ラーニング パス - 5 モジュール|
+|![Teamsのトレーニング アイコンをクリックします。](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。このラーニング パスは、 Microsoft 365 認定: セキュリティ管理者アソシエイト  および  Microsoft 365 認定: エンタープライズ管理エキスパート  認定の準備に役立ちます。<p>1 時間 - ラーニング パス - 5 モジュール|
 
 > [!div class="nextstepaction"]
 > [スタート>](/learn/modules/m365-security-info-overview/introduction/)
@@ -180,13 +181,13 @@ Microsoft Learn のこれらのトレーニング モジュールを使用する
 
 ## <a name="illustrations"></a>図
 
-これらの図は、グループとチームが Microsoft 365 の他のサービスとやり取りする方法と、組織内でこれらのサービスを管理するのに役立つガバナンスおよびコンプライアンス機能を理解するのに役立ちます。
+これらの図は、グループとチームが Microsoft 365 で他のサービスとやり取りする方法と、組織内でこれらのサービスを管理するのに役立つガバナンスおよびコンプライアンス機能を理解するのに役立ちます。
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 のグループ
 
 IT アーキテクトが Microsoft 365 のグループについて知っておくべきこと
 
-|**アイテム**|**Description**|
+|**アイテム**|**説明**|
 |---|---|
 |[![グループインフォグラフィックのサム イメージ。](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \|[Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 更新日: 2019 年 6 月|これらの図は、さまざまな種類のグループがどのように作成および管理されているか、そしていくつかのガバナンスの推奨事項を詳述しています。|
 
@@ -194,7 +195,7 @@ IT アーキテクトが Microsoft 365 のグループについて知ってお�
 
 Microsoft Teamsをリードする Microsoft 365 での生産性サービスの論理的なアーキテクチャ。
 
-|**アイテム**|**Description**|
+|**アイテム**|**説明**|
 |---|---|
 |[![論理アーキテクチャポスター Teams親指画像。](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \|[Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>更新日: 2019 年 4 月|マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <p>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
 
@@ -202,7 +203,7 @@ Microsoft Teamsをリードする Microsoft 365 での生産性サービスの�
 
 このソリューションを展開する準備ができたら、次の手順に進みます。
 
-1. 3[つの異なる層の保護を構成Teams。](configure-teams-three-tiers-protection.md)
+1. 3 [つの異なる層の保護を構成Teams](configure-teams-three-tiers-protection.md)。
 2. 組織外のユーザーと任意の感度の情報を [共有する設定を構成します](collaborate-with-people-outside-your-organization.md)。
 
 ## <a name="see-also"></a>関連項目

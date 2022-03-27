@@ -3,7 +3,7 @@
     - name: 概要
       href: move-from-google-workspace-overview.md
     - name: Microsoft 365 にサインアップする
-      href: /admin-overview/sign-up-for-office-365?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+      href: ../admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
     - name: Google 移行の Microsoft 365 を設定する
       href: set-up-microsoft-365-forgoogle.md
     - name: Windows デバイスのセキュリティ ポリシーを設定する

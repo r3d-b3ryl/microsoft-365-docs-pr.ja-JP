@@ -19,31 +19,33 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーと共同作業をするために、Teams、OneDrive、SharePoint など、Microsoft 365 アプリを構成する方法について説明します。
-ms.openlocfilehash: 0a67eff5c201eaa82e36152c5a429df00c3ec876
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 65511cbafdc1f5a666c11e1bef7fefd6e6852ee3
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203725"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712776"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>組織外のユーザーとの共同作業
 
-Microsoft 365 の外部共有機能により、組織内のユーザーはディレクトリにアカウントを持たないパートナー、ベンダー、顧客などと共同作業ができます。 チームやサイト全体または単に個人的なファイルを組織外のユーザーと共有できます。
+Microsoft 365 の外部共有機能により、組織内のユーザーはディレクトリにアカウントを持たないパートナー、ベンダー、顧客などと共同作業ができます。 チーム、チャネル、またはサイト全体を組織外のユーザーと共有したり、個々のファイルを共有することができます。
 
-組織外のユーザーとの共同作業には、次の 2 つの主要なコンポーネントがあります。
+組織外のユーザーとの共同作業は、次の主要なコンポーネントで構成されます。
 
 - **共有を有効にする** - Azure Active Directory、Teams、Microsoft 365 グループ、および SharePoint 全体で共有コントロールを構成して、組織に必要な共有レベルを許可します。
+- **組織の関係を構成** する - 共有チャネルを使用している場合は、Azure Active Directory でテナント間アクセス設定を構成して、共同作業を行う組織ごとに B2B 直接接続アクセスを許可する必要があります。 (これらの組織では、テナントとの組織関係も構成する必要があります)。
 - **追加のセキュリティを有効にする** - 組織外のユーザーに認証を要求するように基本的な共有機能を構成することができると同時に、Microsoft 365 には、データを保護し、外部と共有しながらガバナンス ポリシーを維持するのに役立つ多くの追加のセキュリティとコンプライアンス機能があります。
 
-外部[共有がコラボレーション](/microsoft-365/solutions/setup-secure-collaboration-with-teams)ガイダンス全体とどのように結びMicrosoft 365、Microsoft Teamsとセキュリティで保護されたコラボレーションをセットアップするMicrosoft 365参照してください。
+外部[共有がコラボレーション](/microsoft-365/solutions/setup-secure-collaboration-with-teams) ガイダンス全体とどのように結びMicrosoft 365、Microsoft Teamsグループとの安全なコラボレーションのセットアップを参照Microsoft 365参照してください。
 
 ## <a name="enable-sharing"></a>共有を有効にする
 
-Microsoft 365では規定で、組織外のユーザーとの共有が有効になっています。 多くの外部共有シナリオは、追加の構成なしでも動作します。 使用しているシナリオの設定を確認するか、新しいシナリオを有効にするには、次のオプションから選びます。
+既定では、ゲスト アクセスまたは匿名アクセスを使用して組織外のユーザーとの共有が有効になっていますが、共有チャネルは、Azure AD で組織の関係を構成して有効にする必要があります。 ほとんどのゲスト共有シナリオは、それ以上の構成なしで動作します。 使用しているシナリオの設定を確認するか、新しいシナリオを有効にするには、次のオプションから選びます。
 
 - [ドキュメントの共同作業](collaborate-on-documents.md) - 組織外のユーザー (ゲストと認証されていないユーザーの両方) とファイルやフォルダーを共有および共同作業を許可するように Microsoft 365 を構成する方法について説明します。
 - [サイトでの共同作業](collaborate-in-site.md) - ゲストとの SharePoint サイトの共有を有効にするために Microsoft 365 を構成する方法について説明します。
 - [チームとして共同作業](collaborate-as-team.md) - Teams でゲスト コラボレーションを有効にするために Microsoft 365 を構成する方法について説明します。
+- [チャネル内の外部参加者と共同作業](/microsoft-365/solutions/collaborate-teams-direct-connect) を行い、共有チャネルで組織外のユーザーと共同作業を行います。
 
 Microsoft 365 で利用できるゲスト共有設定の全体像については、「[Microsoft 365 ゲスト共有設定リファレンス」](microsoft-365-guest-settings.md) をご参照ください。
 
@@ -57,7 +59,9 @@ Microsoft 365 で利用できるゲスト共有設定の全体像については
 
 ## <a name="collaborate-with-partner-companies"></a>パートナー企業と共同作業する
 
-別の組織の多くのゲストが関与する大規模なプロジェクトに取り組む場合、またはゲストが頻繁に変更される継続的なベンダー 関係がある場合は、Azure Active Directory の権利管理を使用してゲスト管理を簡素化し、パートナー企業が共同責任を持つようにすることができます。 詳細については、「[Create a B2B extranet with managed guests (管理されたゲストで B2B エクストラネットを作成する)](b2b-extranet.md)」を参照してください。
+別の組織のゲストを含む大規模なプロジェクトに取り組む場合は、共有チャネルを検討してください。 共有チャネルはゲスト アカウントを使用しないので、他の組織のユーザーは、組織に個別にログインすることなく、共有チャネルに直接アクセスできます。
+
+ゲストが頻繁に変更される継続的なベンダー関係がある場合は、Azure Active Directory でエンタイトルメント管理を使用してゲスト管理を簡素化し、パートナー企業が責任を共有できます。 詳細については、「[Create a B2B extranet with managed guests (管理されたゲストで B2B エクストラネットを作成する)](b2b-extranet.md)」を参照してください。
 
 ## <a name="limit-sharing"></a>共有を制限する
 

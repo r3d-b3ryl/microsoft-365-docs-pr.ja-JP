@@ -8,18 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MET150s
 description: 管理者は、受信メッセージ (EOP) をブロックするための使用可能なオプションと優先Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71f6312f160a445c184a52f96493360af8b9a360
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: bf47fd7723bc1fe9cdef1b57cf16e1948112e749
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62896089"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675650"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>EOP で受信拒否リストを作成する
 
@@ -30,9 +31,9 @@ ms.locfileid: "62896089"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、EOP は不要な送信者からの電子メールをブロックする複数の方法を提供します。 これらのオプションには、Outlook ブロックされた送信者、スパム対策ポリシーの受信拒否リストまたはブロックされたドメイン リスト、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる)、および IP 禁止一覧 (接続フィルター) が含まれます。 まとめて、これらのオプションは、受信拒否リスト _と考えて使用できます_。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、EOP は不要な送信者からの電子メールをブロックする複数の方法を提供します。 これらのオプションには、Outlook 禁止送信者、スパム対策ポリシーの受信拒否リストまたはブロックされたドメイン リスト、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる)、および IP 禁止一覧 (接続フィルター) が含まれます。 まとめて、これらのオプションは、受信拒否リスト _と考えて使用できます_。
 
-送信者をブロックする最適な方法は、影響の範囲によって異なります。 1 人のユーザーの場合、適切なソリューションを [ブロックOutlook送信者] に設定できます。 多くのユーザーの場合、他のオプションの 1 つが適切です。 次のオプションは、影響範囲と幅の両方でランク付けされます。 リストは狭い範囲から広い範囲に行きますが、完全な推奨事項の _詳細_ をお読みください。
+送信者をブロックする最適な方法は、影響の範囲によって異なります。 1 人のユーザーに対して、適切なソリューションをブロックOutlook可能性があります。 多くのユーザーの場合、他のオプションの 1 つが適切です。 次のオプションは、影響範囲と幅の両方でランク付けされます。 リストは狭い範囲から広い範囲に行きますが、完全な推奨事項の _詳細_ をお読みください。
 
 1. Outlook送信者のブロック (各メールボックスに格納されている受信拒否リスト)
 
@@ -87,4 +88,4 @@ EOP のスパム対策ポリシーの送信者リストとブロックされた�
 
 他のオプションのいずれかを使用して送信者をブロックできない場合は、接続フィルター ポリシーで IP  ブロック一覧を使用する必要があります。 詳細については、「[接続フィルター ポリシーを構成する](configure-the-connection-filter-policy.md)」を参照してください。 ブロックされた IP の数を最小限に抑え、IP アドレス範囲全体をブロックすることが _推奨_ されません。
 
-特に、コンシューマー サービス (outlook.com など) または共有インフラストラクチャに属する IP アドレス範囲を追加しないようにし、定期的なメンテナンスの一環としてブロックされた IP アドレスの一覧を確認してください。
+特に、コンシューマー サービス (outlook.com など) や共有インフラストラクチャに属する IP アドレス範囲を追加しないようにし、定期的なメンテナンスの一環として、ブロックされた IP アドレスの一覧を確認してください。

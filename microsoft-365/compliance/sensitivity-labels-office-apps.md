@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b251789795cbb55cd5d79dc686449e4c87aa6f9f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4a2b68e3e85b2c621a002ce762b7ec59ce31c891
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316129"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712754"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -75,7 +75,7 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 |[ラベル関連のユーザー アクティビティを監査する](#auditing-labeling-activities)                      | 現在のチャネル: 2011 以上 <br /><br> 月次エンタープライズ チャネル: 2011 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 | 2.46 以上 | 16.0.13628 以上 | はい |
 |[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | 現在のチャネル: 2101 以上 <br /><br> 月次エンタープライズ チャネル: 2101 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.45 以上         | 2.47 以上 | 16.0.13628 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - 機密情報の種類の使用                    | 現在のチャネル: 2009 以上 <br /><br> 月次エンタープライズ チャネル: 2009 以上 <br /><br> 半期エンタープライズ チャネル: 2102 以上 | 16.44 以上  | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2018 以上 | 16.49+ | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.49+ | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |ラベル付きおよび暗号化されたドキュメントの[共同編集と自動保存をサポート](sensitivity-labels-coauthoring.md) | 現在のチャネル: 2107 以上 <br /><br> 月次エンタープライズ チャネル: 2107 以上 <br /><br> 半期エンタープライズ チャネル: 2202 以上 |  16.51 以上 | プレビュー: [オプトイン](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)する場合は 2.58 以上 | プレビュー: [オプトイン](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)する場合は 16.0.14931 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 
 
@@ -98,7 +98,7 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 |[ユーザーに権限の割り当てをさせる: <br /> - 転送不可](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[ユーザーに権限の割り当てをさせる: <br /> - 暗号化のみ](encryption-sensitivity-labels.md#let-users-assign-permissions)  | 現在のチャネル: 2011 以上 <br /><br> 月次エンタープライズ チャネル: 2011 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.48 以上 <sup>\*</sup> | 4.2112.0 以上  | 4.2112.0 以上 | はい |
 |[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | 現在のチャネル: 2101 以上 <br /><br> 月次エンタープライズ チャネル: 2101 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 <sup>\*</sup>                    | 4.2111 以上            | 4.2111 以上                | はい                |
-|[ラベル関連のユーザー アクティビティを監査する](#auditing-labeling-activities) | 現在のチャネル: 2011 以上 <br /><br> 月次エンタープライズ チャネル: 2011 以上 <br /><br> 半期エンタープライズ チャネル: 2202 以上 | 16.51 以上 <sup>\*</sup> | 4.2126 以上 | 4.2126 以上 | はい |
+|[ラベル関連のユーザー アクティビティを監査する](#auditing-labeling-activities) | 現在のチャネル: 2011 以上 <br /><br> 月次エンタープライズ チャネル: 2011 以上 <br /><br> 半期エンタープライズ チャネル: 2022 以上 | 16.51 以上 <sup>\*</sup> | 4.2126 以上 | 4.2126 以上 | はい |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - 機密情報の種類の使用                    | 現在のチャネル: 2009 以上 <br /><br> 月次エンタープライズ チャネル: 2009 以上 <br /><br> 半期エンタープライズ チャネル: 2102 以上 | 16.44 以上 <sup>\*</sup>                    | レビュー中           | レビュー中               | はい |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.49+ | レビュー中           | レビュー中               | はい |
 |[既定ラベルと必須ラベルのさまざまな設定](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 <sup>\*</sup>                   | 4.2111 以上           | 4.2111 以上               | はい |

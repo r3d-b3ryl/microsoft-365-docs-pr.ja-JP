@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: ac57859d7f27b22060b88189e79d386791535c9e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a7498685709dfc24feae61453057d51025ee9168
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319393"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716301"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -117,6 +117,9 @@ ms.locfileid: "63319393"
 - Teams の非公開チャネル メッセージ
 - Yammer コミュニティのメッセージ
 - Yammer ユーザーのメッセージ
+
+> [!NOTE]
+> Teams チャネル メッセージには、標準チャンネルだけでなく、[共有チャネル](/MicrosoftTeams/shared-channels) (現在プレビュー段階) が含まれるようになりました。
 
 複数の場所にも特定の場所やユーザーにも、1 つのポリシーを非常に効率的に適用できます。
 
@@ -244,7 +247,7 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 |機能|アイテム保持ポリシー |保持ラベル|
 |:-----|:-----|:-----|:-----|
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
-|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
+|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> 不要 <br /> 不要 <br /> いいえ |
 |保持の自動適用 | はい | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリとキーワード、トレーニング可能な分類子、クラウド添付ファイル| いいえ | はい |
 |保持の手動適用 | いいえ | はい |
@@ -256,7 +259,7 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 |廃棄の証明 (最大 7 年間) | いいえ |はい、処分レビューを使用するか、アイテムがレコードとしてマークされている場合|
 |管理者アクティビティを監査する| はい | はい|
 |保持アクションの監査| いいえ | はい <sup>\*</sup> |
-|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> いいえ | <br /> はい <br /> はい|
+|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> 不要 | <br /> はい <br /> はい|
 
 **脚注:**
 

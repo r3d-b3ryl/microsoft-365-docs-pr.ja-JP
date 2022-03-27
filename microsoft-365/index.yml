@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 ドキュメント
-summary: お客様のビジネスや組織で Microsoft 365 の使用を開始するために必要なソリューション、シナリオ、リソースを案内します。
+summary: お客様のビジネスや組織で Microsoft 365 の使用を開始するために必要なソリューション、シナリオ、リソースを案内します。 Microsoft 365 には、Teams や SharePoint などのサービス、および Outlook、Word、Excel、PowerPoint などの Microsoft 365 アプリが含まれています。
 brand: m365
 metadata:
   title: Microsoft 365 ドキュメント
-  description: お客様のビジネスや組織で Microsoft 365 の使用を開始するために必要なソリューション、シナリオ、リソースを案内します。
+  description: お客様のビジネスや組織で、Office を含む Microsoft 365 の使用を開始するために必要なソリューション、シナリオ、リソースを案内します。
   ms.service: o365-solutions
   ms.topic: hub-page
   ms.collection: m365-security-compliance
@@ -185,8 +185,8 @@ additionalContent:
               url: /DeployOffice/plan-microsoft-365-apps
             - text: Office for Mac
               url: /DeployOffice/mac
-            - text: Office 2019
-              url: /DeployOffice/office2019
+            - text: Office LTSC 2021
+              url: /DeployOffice/ltsc2021/overview
             - text: その他 >
               url: /DeployOffice
         - title: SharePoint

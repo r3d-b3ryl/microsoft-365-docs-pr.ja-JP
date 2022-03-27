@@ -15,13 +15,13 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: グループ、グループ、グループ、Microsoft 365、およびTeamsアクセスの管理SharePoint。
-ms.openlocfilehash: e01326093476f341c6c4c75448efbdf8c745779f
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+description: グループ、グループ、グループ、およびMicrosoft 365のアクセスTeams管理SharePoint。
+ms.openlocfilehash: 3f4304a54cd1eae86c98d530e5a4ec4db5f6dc66
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064333"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716170"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>グループ、グループ、Microsoft 365、およびTeamsのアクセスを管理SharePoint
 
@@ -41,7 +41,7 @@ ms.locfileid: "61064333"
 ||管理されていないデバイスのサイト アクセスを制限します。|[管理SharePointデバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)|
 ||場所に基づいてサイト アクセスを制御する|[ネットワークの場所に基づいて SharePoint と OneDrive のデータへのアクセスを制御する](/sharepoint/control-access-based-on-network-location)|
 |ゲスト アクセス|||
-||指定したドメインSharePoint共有を許可またはブロックします。|[ドメイン別の SharePoint および OneDrive コンテンツの共有を制限する](/sharepoint/restricted-domains-sharing)|
+||指定したドメインからのSharePointを許可またはブロックします。|[ドメイン別の SharePoint および OneDrive コンテンツの共有を制限する](/sharepoint/restricted-domains-sharing)|
 ||指定したドメインからチームまたはグループのメンバーシップを許可またはブロックします。|[B2B ユーザーに対する特定組織からの招待を許可またはブロックする](/azure/active-directory/b2b/allow-deny-list)|
 ||匿名共有を防止します。|[[すべてのユーザー] リンクをオフにする](./share-limit-accidental-exposure.md#turn-off-anyone-links)|
 ||匿名アクセス リンクのアクセス許可を制御します。|[[ユーザー] リンクのリンクのアクセス許可を設定する](./best-practices-anonymous-sharing.md#set-link-permissions)|
@@ -53,7 +53,6 @@ ms.locfileid: "61064333"
 |ユーザーの管理|||
 ||チームとグループのメンバーシップを定期的に確認します。|[アクセス レビュー Azure ADは何ですか?](/azure/active-directory/governance/access-reviews-overview)|
 ||グループとチームへのアクセス管理を自動化します。|[エンタイトルメントAzure ADとは?](/azure/active-directory/governance/entitlement-management-overview)|
-||ユーザーによるプライベート チャネルの作成を許可またはブロックTeams。|[プライベート チャネルのライフ サイクルを管理Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>メンバーシップ
 
@@ -72,7 +71,7 @@ SharePointサイトでは、グループまたはチームのメンバーシッ�
 
 ## <a name="conditional-access"></a>条件付きアクセス
 
-このMicrosoft 365、組織内外の両方のユーザーに対して多要素認証を要求できます。 ユーザーに認証の第 2 の要素を求めるメッセージが表示される状況には、多くのオプションがあります。 組織に多要素認証を展開することを強くお勧めします。
+このMicrosoft 365、組織内外の両方のユーザーに多要素認証を要求できます。 ユーザーに認証の第 2 の要素を求めるメッセージが表示される状況には、多くのオプションがあります。 組織に多要素認証を展開することを強くお勧めします。
 
 - [Azure AD多要素認証](/azure/active-directory/authentication/concept-mfa-howitworks)
 
@@ -110,7 +109,7 @@ Microsoft 365リンクを使用して、ファイルとフォルダーの匿名�
 
 - [[すべてのユーザー] リンクの有効期限を設定する](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)
 
-ファイルまたはフォルダーを共有する場合、ユーザーは複数のリンクの種類から選択できます。 不適切な共有が誤って発生するリスクを軽減するために、ユーザーが共有するときに表示される既定のリンクの種類を変更できます。 たとえば、匿名アクセスを許可する[すべてのユーザー] リンクから[組織内のユーザー] リンクに既定値を変更すると、機密情報の望ましくない外部共有のリスクが軽減されます。
+ファイルまたはフォルダーを共有する場合、ユーザーは複数のリンクの種類から選択できます。 不適切な共有が誤って発生するリスクを軽減するために、ユーザーが共有するときに表示される既定のリンクの種類を変更できます。 たとえば、匿名アクセスを許可する  [すべてのユーザー] リンクから [組織内のユーザー] リンクに既定値を変更すると、機密情報の望ましくない外部共有のリスクが軽減されます。
 
 - [サイトの既定のリンクの種類を変更する](/sharepoint/change-default-sharing-link)
 
@@ -118,7 +117,7 @@ Microsoft 365リンクを使用して、ファイルとフォルダーの匿名�
 
 - [外部共有を指定したセキュリティ グループに制限する](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
 
-グループとグループTeams、ゲスト アクセスを許可または拒否する組織レベルの設定があります。 [Microsoft PowerShell を使用](per-group-guest-access.md)して、特定のチームまたはグループへのゲスト アクセスを制限することができますが、これを行う際には、感度ラベルを使用することをお勧めします。 感度ラベルを使用すると、適用されたラベルに基づいてゲスト アクセスを自動的に許可または拒否できます。
+グループとグループTeams、ゲスト アクセスを許可または拒否する組織レベルの設定があります。 [Microsoft PowerShell を使用](per-group-guest-access.md)して、特定のチームまたはグループへのゲスト アクセスを制限することができますが、これを行うには、感度ラベルを使用することをお勧めします。 感度ラベルを使用すると、適用されたラベルに基づいてゲスト アクセスを自動的に許可または拒否できます。
 
 - [秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)
 
@@ -156,17 +155,19 @@ Microsoft 365は、情報を共有するさまざまな方法を提供します�
 
 - [Microsoft Teams のプライベート チャネル](/MicrosoftTeams/private-channels)
 
-- [プライベート チャネルのライフ サイクルを管理Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)
+共有チャネルを使用すると、チーム外または組織外のユーザーを招待できます。 特定のビジネス ニーズと外部共有ポリシーに応じて、この機能を許可またはブロックできます。
+
+- [共有チャネル](/MicrosoftTeams/shared-channels)
 
 追加情報:
 
 - [Azure Active Directory ID ガバナンス](/azure/active-directory/governance)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-[コラボレーション ガバナンス計画の推奨事項](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
+[おすすめのコラボレーション ガバナンス計画](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
-[コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
+[コラボレーション ガバナンス計画を作成する](collaboration-governance-first.md)
 
 [Microsoft Teams のセキュリティとコンプライアンス](/microsoftteams/security-compliance-overview)
 

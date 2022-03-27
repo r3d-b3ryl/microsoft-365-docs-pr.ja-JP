@@ -1,25 +1,30 @@
 ---
 title: Microsoft 365 コンプライアンス ソリューション試用版プレイブック
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ROBOTS: 'NOINDEX, NOFOLLOW'
+ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: Microsoft 365 コンプライアンス ソリューション試用版プレイブック。
+ms.openlocfilehash: 896e3fe81c74cc2a594ab88807e0b9505fed1a18
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754240"
 ---
-
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>試用版プレイブック: Microsoft 365 コンプライアンス ソリューション
 
-Microsoft 365 コンプライアンス ソリューション試用版プレイブックへようこそ。 このプレイブックは、Microsoft 365 のコンプライアンスおよびセキュリティ製品の堅牢で包括的な機能の確認に役立てることで、90 日間の無料トライアルを最大限に活用することができます。
+Microsoft 365 コンプライアンス ソリューション試用版プレイブックへようこそ。このプレイブックは、Microsoft 365 コンプライアンスおよびセキュリティ製品の堅牢で包括的な機能を見つけ出すのに役立ち、90 日間の無料試用版を最大限に活用するのに役立ちます。
 
 それぞれのソリューションを試すことで、組織のコンプライアンスのニーズを満たすための十分な情報に基づいた決断に役立ちます。
 
@@ -73,7 +78,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 
 1. 監査ログ保持ポリシーの作成前 - ポリシーを作成する前に[知っておきたい主なポイント](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)。
 1. [PowerShell で監査ログの保持ポリシーを作成する](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Microsoft 365 コンプライアンス センターで監査ログの保持ポリシーを管理する](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - 監査ログの保持ポリシーは、[監査ログ保持ポリシー タブ] (ダッシュボードとも呼ばれます) に表示されます。 ダッシュボードを使用して、監査保持ポリシーを表示、編集、および削除できます。
+1. [Microsoft 365 コンプライアンス センターの監査ログ保持ポリシーの管理](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - 監査ログの保持ポリシーは、[監査の保持ポリシー] タブ (ダッシュボードとも呼ばれます) に一覧表示されます。ダッシュボードを使用して、監査アイテム保持ポリシーを表示、編集、および削除できます。
 1. PowerShell で監査ログ保持ポリシーを作成して管理する - セキュリティ/コンプライアンス センター PowerShellを使用して、[監査ログ保持ポリシーの作成および管理](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell)を行うこともできます。 PowerShell を使用する理由の 1 つは、UI で使用できないレコードの種類またはアクティビティのポリシーを作成することです。
 
 ## <a name="communication-compliance"></a>通信コンプライアンス
@@ -93,7 +98,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 > [!TIP]
 > 試用版のベスト プラクティス: 最初の 30 日以内に設定する
 
-この機能を使用するには、監査を有効にして、組織内のユーザーと管理者のアクティビティを記録し始めることができるようにしてください。これを有効にすると、アクティビティが監査ログに記録されて、レポートに表示できるようになります。 詳細については、「[監査ログの検索を有効または無効にする](turn-audit-log-search-on-or-off.md)」を参照してください。
+この機能を使用するには、監査を有効にして、組織内のユーザーと管理者のアクティビティを記録し始めることができるようにします。これを有効にすると、アクティビティが監査ログに記録されて、レポートに表示できるようになります。詳しくは、「[監査ログ検索のオン/オフを切り替える](turn-audit-log-search-on-or-off.md)」 を参照してください。
 
 ### <a name="step-3-create-a-communication-compliance-policy"></a>手順 3: [コミュニケーション コンプライアンス ポリシーを作成する](communication-compliance-policies.md)
 
@@ -231,7 +236,7 @@ Advanced eDiscovery にアクセスしたり、Advanced eDiscovery ケースの�
 
 1. Advanced eDiscovery を管理する - [Advanced eDiscovery の構成、セキュリティ/コンプライアンス センターを使用したケースの管理、Advanced eDiscovery でのワークフローの管理、Advanced eDiscovery の検索結果の分析などの方法を説明します](/learn/modules/manage-advanced-ediscovery)。
 1. [Advanced eDiscovery の新しいケース形式を使用して電子情報開示ケースを作成する](advanced-ediscovery-new-case-format.md)
-1. [ケースを閉じるかまたは削除する](close-or-delete-case.md) - 訴訟事例や調査が完了した場合は、閉じるか削除できます。 閉じたケースを再度開くことも可能です。
+1. [ケースを閉じるまたは削除します](close-or-delete-case.md) - 訴訟ケースまたは調査が完了したら、終了または削除できます。また、閉じたケースを再度開くこともできます。
 
 ### <a name="step-3-optional-settings"></a>手順 3 (省略可能): 設定
 
@@ -271,7 +276,7 @@ Microsoft の情報保護ラベルと機密ラベルを実装して、ユーザ�
 > [!TIP]
 > 試用版のベスト プラクティス: 1 日目
 
-対象となるお客様は、Microsoft Information Protection の既定のラベルとポリシーをアクティブ化できます。 試用版で既定の構成を有効にした場合、テナントのすべてのポリシーを構成するのに約 2 分、これらの既定のポリシーの結果を確認するのに最大 24 時間かかります。
+対象となるお客様は、Microsoft Information Protection の既定のラベルとポリシーをアクティブ化できます。試用版で既定の構成を有効にすると、テナントのすべてのポリシーを構成するのに約 2 分かかります。これらの既定のポリシーの結果を表示するには、最大 24 時間かかります。
 
 既定の構成を選択すると、1 クリックで次の設定が自動的に構成されます。
 
@@ -311,7 +316,7 @@ Microsoft の情報保護ラベルと機密ラベルを実装して、ユーザ�
 
 **インサイダー リスクの検出および修復**
 
-人工知能 (AI) を活用して、内部リスクをすばやく特定し、トリアージして修復します。 Microsoft 365 および Azure サービスのログを使用して、インサイダー リスク シグナルを監視するポリシーを定義し、ユーザー教育の促進や調査の開始などの修復アクションを実行できます。
+人工知能を活用して、内部リスクをすばやく特定、トリアージ、修復するのに役立ちます。Microsoft 365 および Azure サービスからのログを使用すると、インサイダー リスクシグナルを監視するポリシーを定義し、ユーザー教育の促進や調査の開始などの修復アクションを実行できます。
 
 ### <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>手順 1 (必須): [インサイダー リスク管理のアクセス許可を有効にする](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
@@ -429,6 +434,6 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 **含まれるもの**: Microsoft 365 コンプライアンス ソリューションの完全な一覧と製品レベル別の機能については、「[機能一覧](https://go.microsoft.com/fwlink/?linkid=2139145)」をご覧ください。
 
-**Microsoft Security Technical Content Library**: このライブラリを探索して、ユーザーのニーズに関連する対話型ガイドやその他の学習コンテンツを見つけます。 [ライブラリにアクセスします](/security/content-library)。
+**Microsoft Security Technical Content ライブラリ**: このライブラリを探索して、ユーザーのニーズに関連する対話型ガイドやその他の学習コンテンツを見つけます。[ライブラリに行く](/security)。
 
-**Microsoft セキュリティ リソース**: マルウェア対策からゼロ トラストまで、組織のセキュリティ ニーズに関連するすべてのリソースを入手します。 [リソースにアクセスします](/security/business/resources)。
+**Microsoft Security リソース**: マルウェア対策からゼロ トラストまで、組織のセキュリティ ニーズに関連するすべてのリソースを入手します。[リソースに行く](/security/business/resources)。

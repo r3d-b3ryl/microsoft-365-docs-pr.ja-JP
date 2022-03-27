@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 2fd9f2655b13d8c9ac829108d3563a6a4322f3bc
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 3b2833b2b6293845379f9f5aeffd3bd46610e2a8
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449247"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63713077"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -59,7 +59,7 @@ ms.locfileid: "63449247"
 |:-----|:-----|
 |**Users** - 適用対象:  <br/> Exchange メール <br/> OneDrive: アカウント <br/> Teams のチャット <br/> Teams の非公開チャネル メッセージ <br/> Yammer ユーザーのメッセージ| 名 <br/> 姓 <br/>表示名 <br/> 役職 <br/> 部署 <br/> 事業所 <br/>番地 <br/> 都市 <br/>都道府県 <br/>郵便番号 <br/> 国または地域 <br/> 電子メール アドレス <br/> Alias <br/> Exchange カスタム属性: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - 適用対象:  <br/> - SharePoint サイト <br/> - OneDrive アカウント |サイトの URL <br/>サイト名 <br/> SharePoint カスタム プロパティ: RefinableString00 - RefinableString99 |
-|**Microsoft 365 Groups** - 適用対象:  <br/> - Microsoft 365 グループ <br/> - Teams チャネルのメッセージ <br/> - Yammer コミュニティのメッセージ |名前 <br/> 表示名 <br/> 説明 <br/> 電子メール アドレス <br/> Alias <br/> Exchange カスタム属性: CustomAttribute1 - CustomAttribute15 |
+|**Microsoft 365 Groups** - 適用対象:  <br/> - Microsoft 365 グループ <br/> - Teams チャネル メッセージ (標準および共有) <br/> - Yammer コミュニティのメッセージ |名前 <br/> 表示名 <br/> 説明 <br/> 電子メール アドレス <br/> Alias <br/> Exchange カスタム属性: CustomAttribute1 - CustomAttribute15 |
 
 サイトのプロパティ名は、SharePoint サイトで管理されているプロパティに基づいています。 カスタム属性の詳細については、「[カスタム SharePoint サイトプロパティを使用した Adaptive Policy Scope sでの Microsoft 365保持の適用](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970)」を参照してください。
 
@@ -374,7 +374,7 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
 
 - 保持されたメッセージがメールボックスに保存される Exchange、Teams、Yammer については「[Exchange Online の制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)」を参照し [auto-expanding archiving](autoexpanding-archiving.md) を有効にしてください。。
     
-    ユーザーによって、またはポリシー設定から自動的に大量の電子メールが短時間で削除される極端なケースでは、ユーザーのプライマリ メールボックスの [回復可能なアイテム] フォルダーからアーカイブ メールボックスの [回復可能なアイテム] フォルダーにアイテムをより頻繁に移動するように Exchange を構成する必要がある場合もあります。 詳しい手順については、「[メールボックスの回復可能なアイテムクォータを保留にする](increase-the-recoverable-quota-for-mailboxes-on-hold.md)」を参照してください。
+    ユーザーによって、またはポリシー設定から自動的に大量の電子メールが短時間で削除される極端なケースでは、ユーザーのプライマリ メールボックスの [回復可能なアイテム] フォルダーからアーカイブ メールボックスの [回復可能なアイテム] フォルダーにアイテムをより頻繁に移動するように Exchange を構成する必要がある場合もあります。詳細な手順については、「[保留中のメールボックスの回復可能なアイテムのクォータを拡大する](increase-the-recoverable-quota-for-mailboxes-on-hold.md)」を参照してください。
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>特定の経過時間を超えた古いコンテンツを削除する
 

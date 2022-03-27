@@ -21,18 +21,21 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Teams のゲストとのタスク、会話、ドキュメントの共同作業を行うためチームをセットアップするのに必要な Microsoft 365 の構成手順について説明します。
-ms.openlocfilehash: bb6ccf4f3e17192d86675d99072eca8b836973e2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0fd723a86f79f97703eca96c0693882fbc05f13a
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324551"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712908"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同作業する
 
 ドキュメント、タスク、会話全体でゲストと共同作業する必要がある場合は、Microsoft Teams の使用をお勧めします。 Teams は、Office と SharePoint で利用可能なすべての共同作業の機能を、常設チャットと、カスタマイズ可能で拡張可能な共同作業のツールのセットを使用して、統合されたユーザー操作環境で提供します。
 
 この記事では、ゲストとの共同作業のためチームをセットアップするのに必要な Microsoft 365 の構成手順について説明します。 ゲスト アクセスを構成したら、「[Teams でゲストをチームに追加する](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)」の手順で、ゲストをチームに招待できます。
+
+> [!NOTE]
+> [共有チャネル](collaborate-teams-direct-connect.md) は、他のMicrosoft 365組織と共同作業する際に、ゲスト アカウントよりもシームレスなエクスペリエンスを提供します。 共有チャネルを使用すると、外部の参加者が組織にサインインしなくても、Teams チャネルを使用して組織外のユーザーと共同作業を行うことができます。 [外部コラボレーション](plan-external-collaboration.md)を計画する方法を確認して、特定のシナリオでゲストと共同作業するよりも共有チャネルの方が優れているかどうかを確認することをお勧めします。
 
 ## <a name="video-demonstration"></a>ビデオ デモンストレーション
 
@@ -195,5 +198,3 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 [管理されたゲストで B2B エクストラネットを作成する](b2b-extranet.md)
 
 [SharePoint および OneDrive の Azure AD B2B との統合](/sharepoint/sharepoint-azureb2b-integration-preview)
-
-[共有オプションは、SharePoint または OneDrive から共有するときに淡色表示されます。](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

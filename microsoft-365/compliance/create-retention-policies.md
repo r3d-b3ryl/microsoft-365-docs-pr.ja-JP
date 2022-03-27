@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: ddd0553405aa92a1eb7a7978398392b780a0a2ea
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: 94388a375c3c50d97e696637ef6ef4ebefc96aab
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557811"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715495"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -73,6 +73,9 @@ ms.locfileid: "63557811"
 
 ### <a name="retention-policy-for-teams-locations"></a>Teams の場所のアイテム保持ポリシー
 
+> [!NOTE]
+> データ保持ポリシーは、現在プレビュー段階の[共有チャネル](/MicrosoftTeams/shared-channels)をサポートするようになりました。 **Teams チャネル メッセージ** の場所に対するデータ保持設定を構成すると、チームに共有チャネルがある場合、それらはデータ保持設定を親チームから継承します。
+
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[情報ガバナンス]** > **[保持ポリシー]** を選択します。
 
 2. [**新しいアイテム保持ポリシー**] を選択して、**アイテム保持ポリシー** 構成の作成を開始し、新しいアイテム保持ポリシーに名前を付けます。
@@ -84,7 +87,7 @@ ms.locfileid: "63557811"
     - [**アダプティブ**] を選択した場合: [**アダプティブ ポリシー スコープと場所の選択**] ページで、[**スコープの追加**] を選択し、作成された 1 つ以上のアダプティブ スコープを選択します。 次に、1 つ以上の場所を選択します。 選択できる場所は、追加された[スコープの種類](retention-settings.md#configuration-information-for-adaptive-scopes)によって異なります。 たとえば、**"User"** のスコープの種類のみを追加した場合、**[Teams チャット]** を選択できますが、**[Teams チャネル メッセージ]** は選択できません。 
     
     - **"Static"** を選択した場合: **[ポリシーを適用する場所を選択しますの選択]** ページで、Teams の 1 つ以上の場所を選択します。
-        - **Teams チャネルメッセージ**: 標準チャネル チャットおよび標準チャネル会議からのメッセージですが、独自のポリシーの場所を持つ [プライベート チャネル](/microsoftteams/private-channels)からのメッセージではありません。
+        - **Teams チャネル メッセージ**: 標準、共有チャネル チャット、および標準、共有チャネル会議からのメッセージであり、独自のポリシーの場所を持つ [プライベート チャネル](/microsoftteams/private-channels)からのメッセージではありません。
         - **Teams チャット**: プライベート 1:1 チャット、グループ チャット、および会議チャットからのメッセージ。
         - **Teams プライベート チャネル メッセージ**: プライベート チャネル チャットおよびプライベート チャネル 会議からのメッセージ。
         
@@ -224,7 +227,7 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - その他のすべての場所 (**Exchange メール**、**SharePoint サイト**、**Teams のチャネル メッセージ** など) の場合:
+    - 他のすべてのポリシーの場所 (**Exchange メール**、**SharePoint サイト**、**Teams のチャネル メッセージ** など) の場合:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution

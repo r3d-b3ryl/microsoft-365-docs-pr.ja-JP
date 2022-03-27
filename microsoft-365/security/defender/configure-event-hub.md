@@ -19,12 +19,12 @@ ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: 034e577b4040e72f32a8e30b3f902c0d0bc2b8f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a842f9161aa823203354917326653b583e5fddb9
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315387"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754302"
 ---
 # <a name="configure-your-event-hub"></a>イベント ハブを構成する
 
@@ -38,10 +38,10 @@ ms.locfileid: "63315387"
 ## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>Event Hub サブスクリプションで必要なリソース プロバイダーを設定する
 
 1. [Azure portal](https://portal.azure.com) にサインインします。
-1. [**サブスクリプション]** >  **を選択します。** イベント ハブが }Resource プロバイダーに展開されるサブスクリプション > **を選択します**。
+1. [**サブスクリプション]** >  **を選択します。イベント** ハブが }Resource プロバイダーに展開されるサブスクリプション > **を選択します**。
 1. **Microsoft.インサイト** プロバイダーが登録されています。 それ以外の場合は、登録します。
 
-![リソース プロバイダーのMicrosoft Azure。](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
+:::image type="content" source="../../media/f893db7a7b1f7aa520e8b9257cc72562.png" alt-text="[サービス プロバイダー] ページの一覧 (Microsoft Azureポータル)" lightbox="../../media/f893db7a7b1f7aa520e8b9257cc72562.png":::
 
 ## <a name="set-up-azure-active-directory-app-registration"></a>アプリ登録Azure Active Directory設定する
 
@@ -51,13 +51,15 @@ ms.locfileid: "63315387"
 
 1. [名前] だけでフォームに入力します (リダイレクト URI は必要ありません)。
 
-    ![アプリケーションを登録するイメージ。](../../media/336bc84e6be23900c43232b4ef0c253c.png)
+    :::image type="content" source="../../media/336bc84e6be23900c43232b4ef0c253c.png" alt-text="[アプリケーション名] ポータルの [アプリケーション名Microsoft Azure]" lightbox="../../media/336bc84e6be23900c43232b4ef0c253c.png":::
 
-    ![概要情報のイメージ。](../../media/06ac04c4ff713c2065cec2ef2f99a294.png)
+
+    :::image type="content" source="../../media/06ac04c4ff713c2065cec2ef2f99a294.png" alt-text="ポータルの [概要] Microsoft Azureセクション" lightbox="../../media/06ac04c4ff713c2065cec2ef2f99a294.png":::
 
 1. [証明書] をクリックしてシークレットを作成 **&新しいクライアント** \> **シークレットを作成します**。
 
-    ![証明書とシークレットのイメージ。](../../media/d2ef88d3d2310d2c60c294b569cdf02e.png)
+    :::image type="content" source="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png" alt-text="[クライアント シークレット] セクション (Microsoft Azure ポータル)" lightbox="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png":::
+    
 
 > [!WARNING]
 > **クライアント シークレットに再度** アクセスできないので、必ず保存してください。
@@ -66,22 +68,23 @@ ms.locfileid: "63315387"
 
 1. イベント ハブ名前空間を作成します。
 
-    [**Event Hubs Add] \>** に移動し、予想される負荷に適した価格レベル、スループット 単位、自動インフレート (標準の価格と機能が必要) を選択します。 詳細については、「[Pricing - Event Hubs \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
+    [**イベント ハブの追加] \>** に移動し、予想される負荷に適した価格レベル、スループット単位、自動インフレート (標準の価格と機能が必要) を選択します。 詳細については、「Pricing [- Event Hub \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     > [!NOTE]
-    > 既存のイベント ハブを使用できますが、スループットとスケーリングは名前空間レベルで設定されます。そのため、イベント ハブは、その名前空間に配置する必要があります。
+    > 既存のイベント ハブを使用できますが、スループットとスケーリングは名前空間レベルで設定され、イベント ハブを独自の名前空間に配置する必要があります。
 
-   ![イベント ハブのネーム スペースのイメージ。](../../media/ebc4ca37c342ad1da75c4aee4018e51a.png)
+   :::image type="content" source="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png" alt-text="[イベント ハブ] セクション (Microsoft Azure ポータル)" lightbox="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png":::
 
-1. また、このイベント ハブ名前空間のリソース ID も必要です。 Azure Event Hubs 名前空間ページの [プロパティ] に移動 \> します。 [リソース ID] の下のテキストをコピーし、以下の [構成] セクションで使用Microsoft 365記録します。
+1. また、このイベント ハブ名前空間のリソース ID も必要です。 Azure Event Hub 名前空間ページの [プロパティ] に移動 \> します。 [リソース ID] の下のテキストをコピーし、以下の [構成] セクションで使用Microsoft 365記録します。
 
-    ![プロパティのイメージ。](../../media/759498162a4e93cbf17c4130d704d164.png)
+    :::image type="content" source="../../media/759498162a4e93cbf17c4130d704d164.png" alt-text="[イベント ハブのプロパティ] セクション (Microsoft Azure ポータル)" lightbox="../../media/759498162a4e93cbf17c4130d704d164.png":::
 
-1. イベント ハブ名前空間を作成したら、App Registration Service Principal を Reader、Azure Event Hubs Data Receiver、および投稿者として Microsoft 365 Defender にログインするユーザーとして追加する必要があります (リソース グループまたはサブスクリプション レベルでも実行できます)。
 
-    この手順は、**Event Hubs 名前空間** \> **アクセス制御 (IAM)** **[役割** の割り当て] \> で追加および **確認します**。
+1. イベント ハブ名前空間を作成したら、App Registration Service Principal を Reader、Azure Event Hub Data Receiver、および Microsoft 365 Defender に投稿者としてログインするユーザーを追加する必要があります (リソース グループまたはサブスクリプション レベルでも実行できます)。
 
-    ![アクセス制御のイメージ。](../../media/9c9c29137b90d5858920202d87680d16.png)
+    この手順は、 **Event Hub 名前空間** \> **アクセス制御 (IAM)** の [役割の割り当て] \> **で** 追加および **確認します**。
+
+    :::image type="content" source="../../media/9c9c29137b90d5858920202d87680d16.png" alt-text="ポータルのアプリケーション登録サービス プリンシパル セクションMicrosoft Azureします。" lightbox="../../media/9c9c29137b90d5858920202d87680d16.png":::
 
 ## <a name="set-up-event-hub"></a>イベント ハブのセットアップ
 
@@ -91,16 +94,16 @@ ms.locfileid: "63315387"
 
 **オプション 2:**
 
-すべてのイベントの種類 (テーブル) を 1 つのイベント ハブにエクスポートする代わりに、各テーブルをイベント ハブ名前空間内の別のイベント ハブ (イベントの種類ごとに 1 つのイベント ハブ) にエクスポートできます。
+すべてのイベントの種類 (テーブル) を 1 つのイベント ハブにエクスポートする代わりに、各テーブルをイベント ハブ名前空間内の異なるイベント ハブ (イベントの種類ごとに 1 つのイベント ハブ) にエクスポートできます。
 
 このオプションでは、Microsoft 365 Defenderイベント ハブを作成します。
 
 > [!NOTE]
 > イベント ハブ クラスターの一部ではないイベント ハブ名前空間を使用している場合は、Azure のイベント ハブ名前空間あたり 10 イベント ハブの制限により、定義した各エクスポート 設定 でエクスポートするイベント の種類 (テーブル) を最大 10 つまで選択できます。
 
-例:
+次に例を示します。
 
-![イベント ハブの例のイメージ。](../../media/005c1f6c10c34420d387f594987f9ffe.png)
+:::image type="content" source="../../media/005c1f6c10c34420d387f594987f9ffe.png" alt-text="ポータルのイベント ハブ セクションMicrosoft Azureします。" lightbox="../../media/005c1f6c10c34420d387f594987f9ffe.png":::
 
 このオプションを選択した場合は、[電子メール テーブルを送信する[Microsoft 365 Defenderの構成] セクションにスキップ](#configure-microsoft-365-defender-to-send-email-tables)できます。
 
@@ -108,11 +111,12 @@ ms.locfileid: "63315387"
 
 パーティション数を使用すると、並列処理によるスループットが増えるので、予想される負荷に基づいてこの数を増やしてください。 既定のメッセージの保持とキャプチャの値は 1 とオフをお勧めします。
 
-![イベント ハブの作成のイメージ。](../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png)
+:::image type="content" source="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png" alt-text="イベント ハブ作成セクション (Microsoft Azure ポータル)" lightbox="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png":::
+ 
 
-このイベント ハブ (名前空間ではない) では、送信、リッスンクレームを使用して共有アクセス ポリシーを構成する必要があります。 [イベント ハブの **共有** \> **アクセス** \> ポリシー] **+ [** 追加] をクリックし、ポリシー名 (他の場所では使用されません) を指定し、[送信とリッスン] **を** オン **にしてください**。
+これらのイベント ハブ (名前空間ではない) では、送信、リッスンクレームを使用して共有アクセス ポリシーを構成する必要があります。 [イベント ハブの **共有** \> **アクセス** \> ポリシー] **+ [** 追加] をクリックし、ポリシー名 (他の場所では使用されません) を指定し、[送信とリッスン] **を** オン **にしてください**。
 
-![共有アクセス ポリシーのイメージ。](../../media/1867d13f46dc6a0f4cdae6cf00df24db.png)
+:::image type="content" source="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png" alt-text="[共有アクセス ポリシー] ページ (Microsoft Azure ポータル)" lightbox="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png":::
 
 ## <a name="configure-microsoft-365-defender-to-send-email-tables"></a>電子メール Microsoft 365 Defender送信する方法を構成する
 
@@ -124,7 +128,7 @@ ms.locfileid: "63315387"
 
     - テナントのグローバル管理者またはセキュリティ管理者の役割は、Microsoft 365 Defender Azure に関連付けされます。
 
-    ![セキュリティ ポータルのイメージ。](../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png)
+      :::image type="content" source="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png" alt-text="ポータル設定の [Microsoft 365 Defender] ページ" lightbox="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png":::
 
 1. [Raw Data **Export + Add] \> をクリックします**。
 
@@ -136,13 +140,13 @@ ms.locfileid: "63315387"
 
     **Event-Hub リソース ID**: この値は、イベント ハブのセットアップ時に記録したイベント ハブ名前空間リソース ID です。
 
-    **イベント ハブ名**: イベント ハブ名前空間内にイベント ハブを作成した場合は、上記で記録したイベント ハブの名前を貼り付けます。
+    **イベント ハブ名**: イベント ハブ名前空間内にイベント ハブを作成した場合は、上記で記録したイベント ハブ名を貼り付けます。
 
-    イベントの種類 (テーブル) Microsoft 365 Defenderイベント ハブを作成する場合は、このフィールドを空のままにします。
+    イベント の種類 (テーブル) Microsoft 365 Defenderイベント ハブを作成する場合は、このフィールドを空のままにします。
 
     **イベントの種類**: イベント ハブに転送し、カスタム アプリに転送する高度なハンティング テーブルを選択します。 アラート テーブルは Microsoft 365 Defender から、デバイス テーブルは Microsoft Defender for Endpoint (EDR) から、電子メール テーブルは Microsoft Defender から提供Office 365。 電子メール イベントは、すべての電子メール トランザクションを記録します。 URL (セーフ リンク)、添付ファイル (セーフ 添付ファイル)、および配信後イベント (ZAP) も記録され、[NetworkMessageId] フィールドの [電子メール イベント] に参加できます。
 
-    ![ストリーミング API 設定のイメージ。](../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png)
+    :::image type="content" source="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png" alt-text="ポータルの [ストリーミング API 設定] ページMicrosoft Azureページ" lightbox="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png":::
 
 1. [送信] をクリック **してください**。
 
@@ -161,11 +165,11 @@ EmailEvents
 
 これにより、他のすべてのテーブルに参加した過去 1 時間に受信されたメールの数が表示されます。 また、イベント ハブにエクスポートできるイベントが表示される場合も表示されます。 この数に 0 が表示されている場合、イベント ハブにデータが表示されません。
 
-![高度な狩猟のイメージ。](../../media/c305e57dc6f72fa9eb035943f244738e.png)
+:::image type="content" source="../../media/c305e57dc6f72fa9eb035943f244738e.png" alt-text="ポータルの高度なMicrosoft Azureページ" lightbox="../../media/c305e57dc6f72fa9eb035943f244738e.png":::
 
-エクスポートするデータが含まれますのを確認したら、イベント ハブを表示して、メッセージが受信されるのを確認できます。 これには最大 1 時間かかる場合があります。
+エクスポートするデータが確認された後、イベント ハブ ページを表示して、メッセージが受信されるのを確認できます。 これには最大 1 時間かかる場合があります。
 
-1. Azure で、[イベント ハブ **] [**\>名前空間イベント ハブ]  \> \> [**イベント ハブ]** の [クリック] に **移動します**。
+1. Azure で、[イベント ハブ] [名前空間イベント  \> \> **ハブ**\>] [イベント **ハブ] の** [クリック] に **移動します**。
 1. [ **概要]** で下にスクロールし、[メッセージ] グラフに [受信メッセージ] と表示されます。 結果が表示されていない場合、カスタム アプリが取り込むメッセージは表示されません。
 
-    ![メッセージを含む [概要] タブのイメージ。](../../media/e88060e315d76e74269a3fc866df047f.png)
+:::image type="content" source="../../media/e88060e315d76e74269a3fc866df047f.png" alt-text="Azure portal の [概要] Microsoft 365ページ" lightbox="../../media/e88060e315d76e74269a3fc866df047f.png":::

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9cc2b77c9983fecc6e58be515fe316c6c5239fef
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 35bd11ac88859c3e587771552a02097a2f090a44
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317781"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712886"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>通信コンプライアンスでチャネル信号を検出する
 
@@ -33,7 +33,14 @@ ms.locfileid: "63317781"
 
 パブリック チャネルとプライベート チャットチャネルの両方Microsoft Teamsチャット通信をスキャンできます。 ユーザーが Microsoft Teams カバレッジを選択した通信コンプライアンス ポリシーに割り当てられている場合、ユーザーのチャット通信は、ユーザーがメンバーであるすべての Microsoft Teams で自動的に監視されます。 Microsoft Teamsは、定義済みのポリシー テンプレートに自動的に含まれており、カスタム ポリシー テンプレートで既定で選択されます。 Teamsコンプライアンス ポリシーの条件に一致するチャットの処理には、最大 48 時間かかる場合があります。
 
-プライベート チャットとプライベート チャネルの場合、通信コンプライアンス ポリシーはモダンな添付ファイルのスキャンをサポートします。 最新の添付ファイルは、[OneDriveまたはSharePoint](/onedrive/plan-onedrive-enterprise#modern-attachments)[に含](/sharepoint/dev/solution-guidance/modern-experience-customizations)まれるサイトからソースTeamsです。 これらの添付ファイルからテキストが自動的に抽出され、自動処理が行われます。また、アクティブな通信コンプライアンス ポリシー条件や分類子との一致が考えらされます。 モダン添付ファイルの検出と処理に必要な追加の構成はありません。 テキストは、ポリシー条件に一致する添付ファイルにのみ抽出されます。 ポリシーが一致するメッセージの添付ファイルについては、添付ファイルにポリシーの一致がある場合でも、テキストは抽出されません。
+プライベート チャットとプライベート チャネルの場合、通信コンプライアンス ポリシーは共有チャネルと [モダン添付ファイル](/MicrosoftTeams/shared-channels) のスキャンをサポートします。 共有チャネルは、Teams自動的に処理され、追加の通信コンプライアンス構成の変更を必要としない場合にサポートされます。 次の表は、グループやユーザーとチャネルを共有する際Teamsコンプライアンスの動作をまとめたものです。
+
+|**シナリオ**|**通信コンプライアンスの動作**|
+|:-----------|:------------------------------------|
+| **内部チームとチャネルを共有する** | 通信コンプライアンス ポリシーは、スコープ内のユーザーと共有チャネル内のすべてのメッセージに適用されます。 |
+| **外部チームとチャネルを共有する** | 通信コンプライアンス ポリシーは、内部組織の共有チャネル内の内部スコープのユーザーおよびメッセージに適用されます。 |
+
+最新の添付ファイルは、[OneDriveまたはSharePoint](/onedrive/plan-onedrive-enterprise#modern-attachments)[に含](/sharepoint/dev/solution-guidance/modern-experience-customizations)まれるサイトからソースTeamsです。 これらの添付ファイルからテキストが自動的に抽出され、自動処理が行われます。また、アクティブな通信コンプライアンス ポリシー条件や分類子との一致が考えらされます。 モダン添付ファイルの検出と処理に必要な追加の構成はありません。 テキストは、ポリシー条件に一致する添付ファイルにのみ抽出されます。 ポリシーが一致するメッセージの添付ファイルについては、添付ファイルにポリシーの一致がある場合でも、テキストは抽出されません。
 
 最新の添付ファイルのスキャンは、次の種類のファイルでサポートされています。
 

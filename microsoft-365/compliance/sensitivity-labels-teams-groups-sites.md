@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 46daf3ecd4c918196fa7a50f8e8869bdd54c945e
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: b5eb295e83e2a87a538201fe58c221f3f9400f97
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504821"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714919"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -57,6 +57,9 @@ ms.locfileid: "63504821"
 コンテナーの秘密度ラベルを有効にして構成すると、ユーザーは追加で秘密度ラベルを表示し、Microsoft チーム サイト、Microsoft 365 グループ、および SharePoint サイトに適用することができます。たとえば、SharePoint から新しいチーム サイトを作成する場合:
 
 ![SharePoint でチーム サイトを作成するときの機密ラベル。](../media/sensitivity-labels-new-team-site.png)
+
+> [!NOTE]
+> コンテナーの秘密度ラベルは、現在プレビュー段階の [Teams 共有チャネル](/MicrosoftTeams/shared-channels)をサポートしています。 チームに共有チャネルがある場合、そのチームは親チームから秘密度ラベル設定を自動的に継承し、そのラベルを削除したり、別のラベルに置き換えたりすることはできません。
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>コンテナーの秘密度ラベルを有効化してラベルを同期する方法
 

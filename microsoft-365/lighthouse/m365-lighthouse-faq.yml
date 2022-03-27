@@ -6,7 +6,7 @@ metadata:
   author: SKjerland
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.prod: microsoft-365-lighthouse
   ms.localizationpriority: medium
   ms.collection:
@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouse を使用している場合は、Microsoft 365 Lighthouse に関するよく寄せられる質問 (FAQ) に対する回答をMicrosoft 365 Lighthouse。
-  ms.openlocfilehash: 746ec9210e517921d1c2145c9e87f0d339a67758
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: 24edebe8ef0a04c3256937195252fd5421599558
+  ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63326170"
+  ms.lasthandoff: 03/24/2022
+  ms.locfileid: "63775436"
 title: Microsoft 365 Lighthouseよく寄せられる質問 (FAQ)
 summary: >
   この記事では、ユーザーに関するよく寄せられる質問 (FAQ) に対する回答をMicrosoft 365 Lighthouse。
@@ -32,7 +32,7 @@ summary: >
 sections:
 - name: 無視
   questions:
-  - question: 何がMicrosoft 365 Lighthouse?
+  - question: Microsoft 365 Lighthouse とは
     answer: >
       Microsoft 365 Lighthouse は、Managed Service Providers (MSP) が Microsoft 365 Business Premium または Microsoft 365 E3 を使用している中小企業 (SMB) のお客様向けデバイス、データ、およびユーザーを大規模に保護および管理するのに役立つ管理ポータルです。  ライトハウスは、SMB に合わせたセキュリティ構成基準を推奨し、すべての顧客環境でマルチテナント ビューを提供することで、テナントのオンボーディングを簡素化します。 詳細については、「概要」[を参照Microsoft 365 Lighthouse](m365-lighthouse-overview.md)。
   - question: Azure ライトハウスとMicrosoft 365 Lighthouse違いは何ですか?
@@ -57,7 +57,7 @@ sections:
     answer: >
       お客様のテナント データがライトハウス内に読み込むには、最大 48 時間かかる場合があります。 オンボーディングが完了して 48 時間を超える時間が経った場合は、サポート チームにお問い合わせください。 オンボーディングが完了したら、ユーザーに知らせ、関連するスクリーンショットとログを提供する必要があります。 詳細については、「Get [help and support for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-get-help-and-support.md)。
   - question: 一部の顧客テナントのデータが表示されますが、他のテナントのデータは表示されない理由
-    answer: "\nお客様のテナント データをライトハウスに表示するには、MSP がパートナー センターを通じて顧客と代理管理者特権 (DAP) または詳細委任管理者特権 (GDAP) を確立する必要があります。 詳細については、「パートナー センター [で顧客とのリセラー関係を要求する」を参照してください](/partner-center/request-a-relationship-with-a-customer)。 テナントには、少なくとも 1 Microsoft 365 Business PremiumまたはMicrosoft 365 E3、テナントのライセンスユーザー数が 1,000 人未満である必要があります。 詳細については、「[Requirements for Microsoft 365 Lighthouseテナント](m365-lighthouse-requirements.md)Microsoft 365 Lighthouse[概要」を参照してください](m365-lighthouse-tenants-page-overview.md)。\n"
+    answer: "顧客テナントデータをライトハウスに表示するには、MSP が顧客テナントを管理するための委任アクセスを確立する必要があります。 お客様をライトハウスにオンボードするには、代理管理者特権 (DAP) が必要です。 より安全な委任アクセスを有効にするには、顧客と一緒に詳細な委任管理者特権 (GDAP) を確立することをお勧めします。 DAP と GDAP が共存する一方で、両方のモデルが配置されている顧客には GDAP が優先されます。 まもなく、GDAP (DAP なし) をお持ちのお客様は、ライトハウスにオンボードできます。 委任されたアクセスの詳細については、「パートナー センターで顧客とのリセラー関係を要求する [」を参照してください](/partner-center/request-a-relationship-with-a-customer)。 テナントには、少なくとも 1 Microsoft 365 Business PremiumまたはMicrosoft 365 E3、テナントのライセンスユーザー数が 1,000 人未満である必要があります。 詳細については、「[Requirements for Microsoft 365 Lighthouseテナント](m365-lighthouse-requirements.md)Microsoft 365 Lighthouse[概要」を参照してください](m365-lighthouse-tenants-page-overview.md)。          \n"
   - question: ユーザーに特定のテナントを表示しない場合Microsoft 365 Lighthouse。
     answer: >
       特定のテナントとそのデータをライトハウスで表示しない場合は、それらのテナントを無効にできます。 テナントを非アクティブ化するには、次の手順を実行します。

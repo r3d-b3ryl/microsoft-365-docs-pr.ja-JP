@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouse、エラー メッセージと問題のトラブルシューティングと解決に関するヘルプを参照してください。
-ms.openlocfilehash: e39eea66222852d8f331aa6bc68b386bea3da763
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 49e6657815ed71476a3dc79d778f7e1fbacfa1f4
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63513034"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775458"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>問題とエラー メッセージのトラブルシューティングと解決を行Microsoft 365 Lighthouse
 
@@ -53,11 +53,14 @@ ms.locfileid: "63513034"
 
 **原因:** 顧客テナントが次の条件を満たさなかった。
 
-  - 管理サービス プロバイダー (MSP) に対してセットアップされた委任 (DAP) または詳細な委任 (GDAP) 管理者特権が必要です。
-  - 少なくとも 1 つのライセンスまたはMicrosoft 365 Business Premium必要Microsoft 365 E3
+  - 顧客テナアント* を管理するには、Managed Service Provider (MSP) に対して委任 (DAP) が設定されている必要があります。
+  - 365 Business ライセンスMicrosoft 365 Business PremiumライセンスMicrosoft 365 E3 1 つ以上Windows必要
   - ライセンスユーザーが 1000 人以下である必要があります 
 
-**解決策:** 次の表では、アクションを必要とするさまざまなテナントの状態について説明し、それらを解決する方法について説明します。<br><br>
+**解決策:** 次の表では、アクションを必要とするさまざまなテナントの状態について説明し、それらを解決する方法について説明します。
+
+*お客様をライトハウスにオンボードするには、代理管理者特権 (DAP) が必要です。 また、より安全な委任アクセスを有効にするには、顧客と一緒に詳細な委任管理者特権 (GDAP) を確立することをお勧めします。 DAP と GDAP が共存する一方で、両方のモデルが配置されている顧客には GDAP が優先されます。 まもなく、GDAP (DAP なし) をお持ちのお客様は、ライトハウスにオンボードできます。<br><br>
+
 
 | 状態 | 説明 | 解決方法 |
 |--|--|--|

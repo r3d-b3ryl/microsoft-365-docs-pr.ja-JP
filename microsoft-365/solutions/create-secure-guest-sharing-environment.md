@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたゲスト共有環境を Microsoft 365 で作成するための使用可能なオプションについては、こちらを参照してください。ゲスト アクセスによって共同作業を改善します。
-ms.openlocfilehash: 97b9c3c26fce137ad4471bbf080d4b7340c8b622
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 13190f2dba0f2cb1f4817a1a831b8d78359e1b81
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323795"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715143"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -68,7 +68,7 @@ ms.locfileid: "63323795"
 
 ### <a name="more-information"></a>詳細情報
 
-[Azure AD 多要素認証 の展開を計画する](/azure/active-directory/authentication/howto-mfa-getstarted)
+[Azure AD 多要素認証の展開を計画する](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>ゲスト用の利用規約を設定する
 
@@ -143,7 +143,7 @@ Azure AD のアクセス レビューを使用すると、さまざまなチー�
 13. **レビュー名** を入力し、設定を確認します。
 14. **[作成]** をクリックします。
 
-SharePoint と OneDrive の場所では、機密情報の検出直後に、ドキュメントが共有されているかどうかに関係なく、すべての外部ユーザーに対してドキュメントが事前にブロックされ、内部ユーザーは引き続きドキュメントにアクセスできることに注意してください。
+SharePoint と OneDrive の場所では、ドキュメントが共有されているかどうかに関係なく、機密情報の検出直後に、すべてのゲストに対してドキュメントは事前にブロックされますが、内部ユーザーは引き続きドキュメントにアクセスできることに注意してください。
 
 ### <a name="more-information"></a>詳細情報
 
@@ -283,7 +283,10 @@ DLP ルールを作成するには
 13. テスト オプションを選択し、**[次へ]** をクリックします。
 14. **[送信]** をクリックしてから、**[完了]** をクリックします。
 
-ゲストがサイトまたはチーム全体のメンバーである場合、このポリシーはゲストのアクセスを削除しないことに注意してください。 ゲスト メンバーのいるサイトやチームに機密ドキュメントを作成する場合は、[チーム内の非公開チャネル](https://support.microsoft.com/office/de3e20b0-7494-439c-b7e5-75899ebe6a0e)を使用して、その非公開チャネル内でお客様の組織のメンバーのみに許可することを検討してください。
+ゲストがサイトまたはチーム全体のメンバーである場合、このポリシーはゲストのアクセスを削除しないことに注意してください。 ゲスト メンバーを含むサイトやチームで機密性の高いドキュメントを使用する計画がある場合は、次のオプションを検討してください。
+
+- [プライベート チャネル](/MicrosoftTeams/private-channels)を使用し、プライベート チャネルで組織のメンバーのみを許可します。
+- [共有チャネル](/MicrosoftTeams/shared-channels)を使用 して組織外のユーザーと共同作業を行い、チーム自体には組織内のユーザーのみを含めます。
 
 ## <a name="additional-options"></a>追加オプション
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e534211008ea560642ba306844b9223170ac0140
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: de49205fe20cd5685279c0a5f9d138147f24bb8d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323221"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754160"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity のアーキテクチャ要件と主な概念を確認する
 
@@ -46,13 +46,13 @@ Defender for Identity は、オンプレミスの Active Directory ユーザー�
 
 次の図は、Defender for Identity のベースライン アーキテクチャを示しています。 
 
-![Microsoft Defender for Identity のアーキテクチャ。](../../media/defender/m365-defender-identity-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-architecture.png" alt-text="Microsoft Defender for Identity の ID アーキテクチャ" lightbox="../../media/defender/m365-defender-identity-architecture.png":::
 
 この図について:
+
 - このドメイン コントローラーにADセンサーは、ログとネットワーク トラフィックを解析し、分析とレポートのために Microsoft Defender for Identity に送信します。
 -  センサーは、フェデレーション認証を使用するように構成AD Active Directory フェデレーション サービス (Azure AD FS) を解析できます (図の点線)。 
 - Microsoft Defender for Identity は、拡張検出Microsoft 365 Defender応答 (XDR) のシグナルを共有します。
-
 
 Defender for Identity センサーは、次のサーバーに直接インストールできます。
 
@@ -66,7 +66,6 @@ Defender for Identity のアーキテクチャ (Defender for Cloud Apps との�
 
 次の表では、Microsoft Defender for Identity の評価、構成、展開を行う際に重要な重要な概念を示しています。
 
-
 |概念  |説明 |詳細情報  |
 |---------|---------|---------|
 | 監視対象のアクティビティ | Defender for Identity は、組織内から生成されたシグナルを監視して、疑わしいアクティビティや悪意のあるアクティビティを検出し、潜在的な脅威の有効性を判断し、効果的にトリアージして対応できます。  |  [Microsoft Defender for Identity 監視アクティビティ](/defender-for-identity/monitored-activities)       |
@@ -78,8 +77,6 @@ Defender for Identity のアーキテクチャ (Defender for Cloud Apps との�
 | 役割グループ    | Defender for Identity は、管理者、ユーザー、閲覧者を含む組織の特定のセキュリティとコンプライアンスのニーズに応じて、役割ベースのグループと委任されたアクセスを提供します。        |  [Microsoft Defender for Identity の役割グループ](/defender-for-identity/role-groups)       |
 | 管理ポータル    |  セキュリティ ポータルにMicrosoft 365 Defender、Defender for Identity ポータルを使用して、疑わしいアクティビティの監視と対応を行います。      | [Microsoft Defender for Identity ポータルとの連携](/defender-for-identity/workspace-portal)        |
 | Microsoft Defender for Cloud Apps の統合   | Microsoft Defender for Cloud Apps は Microsoft Defender for Identity と統合され、ハイブリッド環境 (クラウド アプリとオンプレミスの両方) 全体でユーザー エンティティの動作分析 (UEBA) を提供します。   | Id 統合用 Microsoft Defender  |
-| | | |
-
 
 ## <a name="review-prerequisites"></a>前提条件の確認
 

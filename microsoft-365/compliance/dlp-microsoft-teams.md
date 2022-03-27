@@ -15,62 +15,67 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teamsチャネルは、データ損失防止 (DLP) ポリシーをサポートします。
-ms.openlocfilehash: 66d451e55d5ee41abb0d43927e56295261bd4c8f
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 693b71181f34e948c0456779c7207fa22861dd5f
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786064"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715347"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
-組織にデータ損失防止 (DLP) がある場合は、ユーザーが機密情報をチャネルまたはチャット セッションで共有Microsoft Teamsポリシーを定義できます。 この保護のしくみの例を次に示します。
+組織にデータ損失防止 (DLP) がある場合は、Microsoft Teams チャネルまたはチャット セッションで機密情報を共有できないようにするポリシーを定義できます。 この保護のしくみの例を次に示します。
 
-- **例 1: メッセージ内の機密情報を保護します**。 ユーザーがチャットまたはチャネル内の機密情報をゲスト (外部ユーザー) Teams共有しようとしたとします。 これを防ぐために DLP ポリシーが定義されている場合は、外部ユーザーに送信される機密情報を含むメッセージが削除されます。 これは、DLP ポリシーの構成方法に従って、自動的に数秒で行われます。
+- **例 1: メッセージ内の機密情報の保護**。 ユーザーがチャットまたはチャネル内の機密情報をゲスト (外部ユーザー) Teams共有しようとしたとします。 これを防ぐために DLP ポリシーが定義されている場合は、外部ユーザーに送信される機密情報を含むメッセージが削除されます。 これは、DLP ポリシーの構成方法に従って、自動的に数秒で行われます。
 
     > [!NOTE]
-    > DLP for Microsoft Teamsは、次の権限を持つユーザーと共有Microsoft Teamsコンテンツをブロックします。<br/>- [チームとチャネル](/MicrosoftTeams/guest-access) でのゲスト アクセス。または<br/>- [会議およびチャット](/MicrosoftTeams/manage-external-access) セッションでの外部アクセス。 <p>外部チャット セッションの DLP は、送信者と受信者の両方が Teams モードでネイティブ フェデレーションMicrosoft Teams[使用している場合にのみ機能します](/microsoftteams/manage-external-access)。 ユーザーの DLP Teams、またはネイティブ以外[](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business)のフェデレーション チャット セッションとの相互運用Skype for Businessメッセージをブロックしません。
+    > DLP for Microsoft Teamsは、次の権限を持つユーザーと共有Microsoft Teamsコンテンツをブロックします。<br/>- [チームとチャネル](/MicrosoftTeams/guest-access) でのゲスト アクセス。または<br/>- [会議およびチャット](/MicrosoftTeams/manage-external-access) セッションでの外部アクセス。 <p>外部チャット セッションの DLP は、送信者と受信者の両方が [のみ] モードで、Teamsフェデレーションを使用している場合[Microsoft Teams動作します](/microsoftteams/manage-external-access)。 ユーザー向け DLP Teams、またはネイティブ以外のフェデレーション [](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) チャット セッションとの相互運用Skype for Businessメッセージをブロックしません。
 
-- **例 2: ドキュメント内の機密情報を保護します**。 ユーザーがチャネルまたはチャットのゲストとドキュメントを共有しようとMicrosoft Teams機密情報が含まれているとします。 これを防ぐために DLP ポリシーが定義されている場合、ドキュメントはそれらのユーザーに対して開かれません。 保護を適用するには、DLP ポリシーに SharePoint と OneDrive を含める必要があります。 これは、Microsoft Teams に表示される SharePoint の DLP の例であり、Office 365 DLP (Office 365 E3 に含まれる) のライセンスをユーザーに要求しますが、Office 365 Advanced Compliance のライセンスをユーザーに要求しません)。
+- **例 2: ドキュメント内の機密情報の保護**。 他のユーザーがチャネルまたはチャットのゲストとドキュメントを共有しようとMicrosoft Teams、ドキュメントに機密情報が含まれているとします。 これを防ぐために DLP ポリシーが定義されている場合、ドキュメントはそれらのユーザーに対して開かれません。 保護を適用するには、DLP ポリシーに SharePoint と OneDrive を含める必要があります。 これは、Microsoft Teams に表示される SharePoint の DLP の例であり、Office 365 DLP (Office 365 E3 に含まれる) のライセンスをユーザーに要求しますが、ユーザーのライセンスを必要としません。Office 365 Advanced Compliance.)
 
+- **例 3: 共有チャネルでの通信Teams保護します**。 共有チャネルの場合、チーム DLP Teamsホスト が適用されます。 たとえば、Contoso の TeamA が所有する共有チャネルがある場合を示します。 TeamA には DLP ポリシー P1 があります。 チャネルを共有するには、次の 3 つの方法があります。
+    - **メンバーと共有** する: Contoso から user1 を招待して、TeamA のメンバーにせずに共有チャネルに参加します。 この共有チャネルのすべてのユーザー (user1 を含む) は、P1 によってカバーされます。
+    - **チームと (内部的に)** 共有する: Contoso の別のチーム TeamB とチャネルを共有します。 別のチームが別の DLP ポリシーを持っている可能性がありますが、これは問題ではありません。 P1 は、TeamA ユーザーと TeamB ユーザーの両方を含む、この共有チャネルのすべてのユーザーに適用されます。
+    - **チーム (クロス テナント) と共有** する: Fabrikam でチーム TeamF とチャネルを共有します。 Fabrikam には独自の DLP ポリシーがありますが、これは問題ではありません。 P1 は、TeamA (Contoso) ユーザーと TeamF (Fabrikam) ユーザーの両方を含む、この共有チャネルのすべてのユーザーに適用されます。
+ 
 ## <a name="dlp-licensing-for-microsoft-teams"></a>DLP ライセンス Microsoft Teams
 
-[データ損失防止機能](dlp-learn-about-dlp.md)は、次のようなプライベート チャネル メッセージMicrosoft Teams含む、チャットメッセージやチャネル メッセージを含 **む機能が拡張** されました。
+[データ損失防止機能は](dlp-learn-about-dlp.md)、以下のプライベート チャネル メッセージMicrosoft Teams含む、チャットメッセージとチャネル メッセージを含 **む機能が拡張** されました。
 
 - Office 365 E5/A5/G5
 - Microsoft 365 E5/A5/G5
 - Microsoft 365 E5/A5/G5 情報保護とガバナンス
-- Microsoft 365 E5/A5/G5/F5 コンプライアンスと F5 セキュリティ & コンプライアンス
+- Microsoft 365 E5/A5/G5/F5 コンプライアンスと F5 セキュリティ &コンプライアンス
 
-Office 365およびMicrosoft 365 E3には、オンライン、SharePoint、およびOneDriveの DLP 保護Exchange Online。 また、このファイルには、Teamsを共有TeamsオンラインとSharePointをOneDriveするファイルも含まれます。
+Office 365およびMicrosoft 365 E3には、オンライン、SharePoint、およびOneDriveの DLP 保護Exchange Online。 また、このファイルには、Teamsを使用TeamsオンラインSharePoint共有OneDriveファイルも含まれます。
 
 チャットでの DLP 保護のサポートTeams E5 が必要です。
 
 ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。
 
 > [!IMPORTANT]
-> DLP は、チャットスレッドまたはチャネル スレッドの実際のメッセージにのみ適用されます。 アクティビティ通知 (短いメッセージ プレビューを含み、ユーザーの通知設定に基づいて表示される) は、DLP にTeamsされません。 メッセージの一部に表示される機密情報は、DLP ポリシーが適用され、メッセージ自体の機密情報が削除された後でも、通知に表示されます。
+> DLP は、チャットスレッドまたはチャネル スレッドの実際のメッセージにのみ適用されます。 アクティビティ通知 (短いメッセージ プレビューを含み、ユーザーの通知設定に基づいて表示される)  は、DLP にTeamsされません。 メッセージの一部に表示される機密情報は、DLP ポリシーが適用され、メッセージ自体の機密情報が削除された後でも、通知に表示されます。
 
 ## <a name="scope-of-dlp-protection"></a>DLP 保護の範囲
 
-DLP 保護は、エンティティに対してTeamsされます。
+DLP 保護は、エンティティに対してTeams適用されます。
 
 |ポリシーの範囲が次の場合 |これらのエンティティTeamsエンティティ |DLP 保護が利用可能になります|
 |---------|---------|---------|
 |個々のユーザー アカウント     |1:1/n チャット         |はい         |
-|     |一般的なチャット         |いいえ         |
-|     |プライベート チャネル         |はい         |
+|     |標準チャネル メッセージと共有チャネル メッセージ         |いいえ         |
+|     |Teams のチャネル メッセージ         |はい         |
 |セキュリティ グループ/配布リスト  | 1:1/n チャット         |はい         |
-|     |一般的なチャット         |いいえ         |
-|     |プライベート チャネル         |はい        |
-|Microsoft 365 グループ    |1:1/n チャット          |いいえ         |
-|     |一般的なチャット          |はい        |
-|     |プライベート チャネル|いいえ| 
+|     |標準チャネル メッセージと共有チャネル メッセージ  |いいえ         |
+|     |Teams のチャネル メッセージ         |はい        |
+|Microsoft 365グループ    |1:1/n チャット          |不要         |
+|     |標準チャネル メッセージと共有チャネル メッセージ          |はい        |
+|     |Teams のチャネル メッセージ|不要| 
 
 
 ## <a name="policy-tips-help-educate-users"></a>ポリシー ヒントは、ユーザーの教育に役立ちます
 
-[Exchange、Outlook、Outlook on the web、SharePoint](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web) [Online、OneDrive for Business](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)サイト、および Office デスクトップ クライアントでの DLP の動作と同様に、アクションが DLP ポリシーでトリガーされるとポリシー ヒント[が](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)表示されます。 ポリシー ヒントの例を次に示します。
+[Exchange、Outlook、Outlook on the web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)、[SharePoint Online、OneDrive for Business](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites) サイト、Office デスクトップ クライアントでの DLP の動作と同様に、アクションが DLP ポリシーでトリガーされるとポリシー ヒントが[](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)表示されます。 ポリシー ヒントの例を次に示します。
 
 ![[ブロックされたメッセージ通知] Teams。](../media/dlp-teams-blockedmessage-notification.png)
 
@@ -80,7 +85,7 @@ DLP 保護は、エンティティに対してTeamsされます。
 
 組織では、ユーザーに DLP ポリシーの上書きを許可できます。 DLP ポリシーを構成する場合は、既定のポリシー ヒントを使用するか、組織の [ポリシー ヒント](#to-customize-policy-tips) をカスタマイズできます。
 
-この例に戻り、送信者がユーザー チャネルで社会保障番号を共有Teams、受信者が見た情報を次に示します。
+送信者がソーシャル セキュリティ番号を共有しているこの例に戻り、Teams受信者が見た情報を次に示します。
 
 > [!div class="mx-imgBorder"]
 > ![メッセージがブロックされました。](../media/dlp-teams-blockedmessage-notification-to-user.png)
@@ -89,11 +94,11 @@ DLP 保護は、エンティティに対してTeamsされます。
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つロールを割り当てる必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. コンプライアンス センター ( ) に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、サインインします。
+1. コンプライアンス センター () に移動し[https://compliance.microsoft.com](https://compliance.microsoft.com)、サインインします。
 
 2. **[データ損失防止]** > **[ポリシー]** の順に選択します。
 
-3. ポリシーを選択し、[ポリシー設定] の **横にある**[編集] を **選択します**。
+3. ポリシーを選択し、[ポリシー設定] の **横にある [** 編集] を選択 **します**。
 
 4. 新しいルールを作成するか、ポリシーの既存のルールを編集します。
 
@@ -105,7 +110,7 @@ DLP 保護は、エンティティに対してTeamsされます。
     > [!div class="mx-imgBorder"]
     > ![ユーザー通知とポリシーヒントをカスタマイズします。](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
-6. 電子メール通知やポリシー ヒントに使用するテキストを指定し、[保存] を **選択します**。
+6. 電子メール通知やポリシー ヒントに使用するテキストを指定し、[保存] を選択 **します**。
 
 7. [ポリシー設定 **] タブで** 、[保存] を **選択します**。
 
@@ -116,21 +121,21 @@ DLP 保護は、エンティティに対してTeamsされます。
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つロールを割り当てる必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. コンプライアンス センター ( ) に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、サインインします。
+1. コンプライアンス センター () に移動し[https://compliance.microsoft.com](https://compliance.microsoft.com)、サインインします。
 
 2. **[データ損失防止]** > **[ポリシー]** の順に選択します。
 
-3. ポリシーを選択し、[場所] の下の値 **を確認します**。 チャットメッセージと **Teamsメッセージが表示される** 場合は、すべて設定されています。 編集しない場合は、[編集] を **クリックします**。
+3. ポリシーを選択し、[場所] の下の値 **を確認します**。 チャットメッセージと **Teamsメッセージが表示** される場合は、すべて設定されています。 編集しない場合は、[編集] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
     > ![既存のポリシーの場所。](../media/dlp-teams-editexistingpolicy.png)
 
-4. [状態 **] 列** で、チャットメッセージとチャネル メッセージのTeams **をオンにします**。
+4. [状態 **] 列** で、チャット メッセージとチャネル メッセージTeams **ポリシーをオンにします**。
 
     > [!div class="mx-imgBorder"]
     > ![チャットとチャネルTeams DLP。](../media/dlp-teams-addteamschatschannels.png)
 
-5. [場所 **の選択] タブ** で、すべてのアカウントの既定の設定を維持するか、[特定の場所を選択する] **を選択します**。 次の情報を指定できます。
+5. [場所の **選択] タブ** で、すべてのアカウントの既定の設定を維持するか、[特定の場所を選択する] **を選択します**。 次の情報を指定できます。
 
     1. 最大 1000 個の個別アカウントを含めるか除外する
     1. 含めるまたは除外する配布リストとセキュリティ グループ。 
@@ -138,7 +143,7 @@ DLP 保護は、エンティティに対してTeamsされます。
     
 6. **[次へ]** を選択します。
 
-7. **[保存]** をクリックします。
+7. [**保存**] をクリックします。
 
 変更がデータ センターを通じて動作し、ユーザー アカウントに同期するために約 1 時間を許可します。
 <!-- again, why user accounts? -->
@@ -147,7 +152,7 @@ DLP 保護は、エンティティに対してTeamsされます。
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つロールを割り当てる必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. コンプライアンス センター ( ) に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、サインインします。
+1. コンプライアンス センター () に移動し[https://compliance.microsoft.com](https://compliance.microsoft.com)、サインインします。
 
 2. **[データ損失防止]** > **[ポリシー]** > **[+ ポリシーの作成]** の順に選択します。
 
@@ -158,9 +163,9 @@ DLP 保護は、エンティティに対してTeamsされます。
     > [!div class="mx-imgBorder"]
     > ![DLP ポリシーのプライバシー テンプレート。](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
-4. [ポリシー **に名前を付け** ] タブで、ポリシーの名前と説明を指定し、[次へ] を **選択します**。
+4. [ポリシー **に名前を付け** ] タブで、ポリシーの名前と説明を指定し、[次へ] を選択 **します**。
 
-5. [場所 **の選択] タブ** で、すべてのアカウントの既定の設定を維持するか、[特定の場所を選択する] **を選択します**。 次の情報を指定できます。
+5. [場所の **選択] タブ** で、すべてのアカウントの既定の設定を維持するか、[特定の場所を選択する] **を選択します**。 次の情報を指定できます。
 
     1. 最大 1000 個の個別アカウントを含めるか除外する
     1. 含めるまたは除外する配布リストとセキュリティ グループ。 **これはパブリック プレビュー機能です。**
@@ -169,18 +174,18 @@ DLP 保護は、エンティティに対してTeamsされます。
     ![DLP ポリシーの場所。](../media/dlp-teams-selectlocationsnewpolicy.png)
 
     > [!NOTE]
-    > 機密情報を含むドキュメントが Teams で不適切に共有されない場合は **、SharePoint** サイトと **OneDrive** アカウントが Teams チャットメッセージとチャネル メッセージと共にオン **になっていることを** 確認します。
+    > Teams で機密情報を含むドキュメントが不適切に共有されない場合は、SharePoint サイトと **OneDrive** アカウントが Teams チャットおよびチャネル メッセージと共にオンになっていることを確認します。
 
-6. [ポリシー設定 **] タブ** の[保護するコンテンツの種類をカスタマイズする] で、既定の単純な設定を保持するか、[詳細設定を使用する] を選択して、[次へ] を選択 **します**。 詳細設定を選択した場合は、ポリシーのルールを作成または編集できます。 このヘルプについては、「簡易設定と [詳細設定」を参照してください](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)。
+6. [ポリシー設定 **] タブ** の [保護するコンテンツの種類をカスタマイズする] で、既定の単純な設定を保持するか、[詳細設定を使用する] を選択して、[次へ] を選択 **します**。 詳細設定を選択した場合は、ポリシーのルールを作成または編集できます。 このヘルプについては、「簡易設定と [詳細設定」を参照してください](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)。
 
-7.  [ポリシー **設定] タブ** の **[機密情報** が検出された場合の操作] で、設定を確認します。 ここでは、既定のポリシー ヒントと電子メール[](use-notifications-and-policy-tips.md)通知を保持するか、カスタマイズすることもできます。
+7.  [ポリシー設定 **] タブ** の [ **機密情報** が検出された場合に実行する操作] で、設定を確認します。 ここでは、既定のポリシー ヒントと電子メール通知[](use-notifications-and-policy-tips.md)を保持するか、カスタマイズすることもできます。
 
     > [!div class="mx-imgBorder"]
     > ![ヒントと通知を含む DLP ポリシー設定。](../media/dlp-teams-policysettings-tipsemails.png)
 
-    設定の確認または編集が完了したら、[次へ] を **選択します**。
+    設定の確認または編集が完了したら、[次へ] を選択 **します**。
 
-8. [ポリシーの **設定**] タブの [ポリシーを有効にするか、最初にテストするのかを選択しますか **?]** で、ポリシーを有効 [](dlp-overview-plan-for-dlp.md#policy-deployment)にするか、最初にテストするか、今のところオフにしておき、[次へ] を選択します。
+8. [ポリシーの **設定**] タブの [ポリシーを有効にするか、最初にテストする必要がありますか **?**] で、ポリシーを有効にするか、最初 [](dlp-overview-plan-for-dlp.md#policy-deployment)にテストするか、今のところオフにしておき、[次へ] を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![ポリシーを有効にするかどうかを指定します。](../media/dlp-teams-policysettings-turnonnow.png)
@@ -215,13 +220,13 @@ DLP 保護は、エンティティに対してTeamsされます。
         > [!div class="mx-imgBorder"]
         > ![機密性の高いコンテンツの外部共有をブロックする DLP アクション。](../media/dlp-teams-external-sharing/external-action.png)
 
-機密情報を含むドキュメントを外部ゲストと共有SharePoint DLP ポリシーが動作します。
+機密情報を含むドキュメントを外部ゲストと共有SharePoint DLP ポリシーが実行されます。
 
 > [!div class="mx-imgBorder"]
 > ![外部共有がブロックされました。](../media/dlp-teams-external-sharing/external-sharing-blocked.png)
 
 
-ゲストが外部ブロックを使用してドキュメントを開Teams DLP ポリシーが有効です。
+ゲストが外部ブロックを使用してドキュメントを開Teams DLP ポリシーが実行されます。
 
 > [!div class="mx-imgBorder"]
 > ![外部アクセスがブロックされました。](../media/dlp-teams-external-sharing/external-access-blocked.png)

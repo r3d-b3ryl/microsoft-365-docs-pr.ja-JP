@@ -1,5 +1,5 @@
 ---
-title: '[アラートの調査] Microsoft 365 Defender'
+title: Microsoft 365 Defender でアラートを調査する
 description: デバイス、ユーザー、メールボックス間で表示されるアラートを調査します。
 keywords: インシデント、アラート、調査、調査、分析、応答、相関関係、攻撃、コンピューター、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365
 ms.prod: m365-security
@@ -21,25 +21,29 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: ce75fff753acfa9d5e183154e09805b04d7523da
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 41583a89abc3418799263dc46643fbe06a07e818
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321428"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712842"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
+# <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを調査する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - Microsoft 365 Defender
+
+>[!Note]
+>この記事では、セキュリティ アラートについて説明Microsoft 365 Defender。 ただし、アクティビティ通知を使用して、ユーザーがユーザーが特定のアクティビティを実行するときに、自分または他の管理者に電子メール通知を送信Microsoft 365。 詳細については、「Create [activity alerts - Microsoft 365 コンプライアンス |Microsoft Docs](../../compliance/create-activity-alerts.md)。
 
 アラートは、すべてのインシデントの基礎であり、環境内で悪意のあるイベントや不審なイベントが発生したかどうかを示します。 アラートは通常、より広範な攻撃の一部であり、インシデントに関する手がかりを提供します。
 
-このMicrosoft 365 Defender関連するアラートは、インシデントを形成するために[まとめて集計されます](incidents-overview.md)。 インシデントは常に攻撃の広範なコンテキストを提供しますが、アラートの分析は、より深い分析が必要な場合に有用です。 
+このMicrosoft 365 Defender関連するアラートは、インシデントを形成するために[まとめて集計されます](incidents-overview.md)。 インシデントは常に攻撃の広範なコンテキストを提供しますが、アラートの分析は、より深い分析が必要な場合に有用です。
 
-アラート **キューには、** 現在の一連のアラートが表示されます。 [インシデント] からアラート キューにアクセスし **&>** ポータルのクイック 起動時に通知をMicrosoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">します</a>。
+アラート **キューには、** 現在の一連のアラートが表示されます。 [インシデント] からアラート キューにアクセスし **&>** ポータルのクイック 起動時に通知をMicrosoft 365 Defender [します](https://go.microsoft.com/fwlink/p/?linkid=2077139)。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="ポータル内のアラート キュー Microsoft 365 Defender例":::
 

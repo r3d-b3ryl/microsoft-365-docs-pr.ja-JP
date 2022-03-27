@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが SharePoint SharePoint サイトに保存するファイルの数、アクティブに使用されるファイルの数、および使用されたストレージの合計を確認するには、SharePoint サイト使用状況レポートを取得します。
-ms.openlocfilehash: da857d1814bf0aa27532d3f730d352c6edeb66e9
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: ae25562924f569431b3a6d7eda3099f69cd912b1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400685"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754233"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365管理センターの [レポート] - サイトSharePoint使用
 
@@ -80,7 +80,7 @@ ms.locfileid: "63400685"
 |管理されていないデバイス ポリシー  | 管理されていないデバイスのサイト アクセス ポリシー。  |
 |地域の場所  | サイトの地理的な場所。  |
 |ファイル  |サイト上のファイルの数。 |
-|アクティブ ファイル  | サイト上のアクティブ なファイルの数。<br/> 注: レポートの指定された期間中にファイルが削除された場合、レポートに表示されるアクティブ なファイルの数は、サイト上の現在のファイル数よりも多い場合があります。  |
+|アクティブ ファイル  | サイト上のアクティブ なファイルの数。 ファイルは一定期間中に保存、同期、変更、共有されるとアクティブとみなされます。<br/> 注: レポートの指定された期間中にファイルが削除された場合、レポートに表示されるアクティブ なファイルの数は、サイト上の現在のファイル数よりも多い場合があります。  |
 |Storage使用 (MB)  |サイトで現在使用されている記憶域の量。  |
 |Storage済み (MB)  |サイトに割り当てられた記憶域の最大量。  |
 |ページ ビュー  |サイトでページが表示された回数。  |

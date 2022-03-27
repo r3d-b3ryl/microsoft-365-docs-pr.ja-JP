@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 42124881ac795c54288dee46e70dc1d5eccef3e3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 51e4c3b13d1a54e4edcfd9926ae246dde7d7e3e4
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314071"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712701"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -109,6 +109,10 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 
 [チーム ポリシー](/MicrosoftTeams/teams-policies)を使用して、プライベート チャネルを作成できるユーザーを制御することもできます。
 
+## <a name="shared-channel-settings"></a>共有チャネルの設定
+
+[共有チャネル](/MicrosoftTeams/shared-channels)には、チーム レベルの設定はありません。 Teams 管理センターと Azure AD で構成した共有チャネル設定は、秘密度に関係なくすべてのチームに適用されます。
+
 ## <a name="sharepoint-settings"></a>SharePoint の設定
 
 秘密度ラベルを使用して新しいチームを作成するたびに、SharePoint で次の 2 つの手順を実行します。
@@ -128,23 +132,21 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 
 チーム作成プロセスの一環としてスクリプトを実行する場合は、`-DefaultSharingLinkType Direct` パラメーターで [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) を使用して、既定の共有リンクを *特定のユーザー* に変更することができます。
 
-#### <a name="private-channels"></a>プライベート チャネル
-
-チームにプライベート チャネルを追加する場合、各プライベート チャネルは、既定の共有設定を使用して新しい SharePoint サイトを作成します。 これらのサイトは SharePoint 管理センターでは表示されないので、Set-sposite PowerShell コマンドレットを使用して、ゲスト共有設定を更新する必要があります。
+チームにプライベート チャネルまたは共有チャネルを追加する場合、それぞれ既定の共有設定を使用して新しい SharePoint サイトが作成されることに注意してください。 チームに関連付けられているサイトを選択すると、SharePoint 管理センターで更新できます。
 
 ### <a name="site-sharing-settings"></a>サイト共有設定
 
-SharePoint サイトがチーム メンバーではないユーザーと共有されないようにするには、SharePoint サイトの共有を所有者に制限します。
+SharePoint サイトがチーム メンバーではないユーザーと共有されないようにするには、SharePoint サイトの共有を所有者に制限します。 これは、チームで作成された SharePoint サイトに対してのみ必要です。 プライベート チャネルまたは共有チャネルの一部として作成された追加サイトは、チームまたはチャネルの外部で共有することはできません。
 
-所有者のみのサイト共有を構成するには
+所有者のみのサイト共有を構成する
 1. Teams で、更新するチームの **[全般]** タブに移動します。
 2. チームのツール バーで、**[ファイル]** をクリックします。
 3. 省略記号をクリックし、**[SharePoint で開く]** をクリックします。
 4. 基となる SharePoint サイトのツール バーで、設定アイコンをクリックしてから、**[サイトの権限]** をクリックします。
 5. **[サイトの権限]** ウィンドウで、**[サイトの共有]** の **[メンバーが共有する方法を変更]** をクリックします。
-6. **[共有アクセス許可**] で、**[サイトの所有者とメンバー、および編集アクセス許可を持つユーザーは、ファイルとフォルダーを共有できますが、サイトの所有者のみがサイトを共有できます]** を選択し、**[保存]** をクリックします。
+6. [**共有アクセス許可**] で、[**サイトの所有者とメンバー、および編集権限を持つユーザーはファイルとフォルダを共有できますが、サイトを共有できるのはサイト所有者だけです**] を選択し、[**保存**] をクリックします。
 
 
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 [秘密度ラベルとそのポリシーを作成して構成する](../compliance/create-sensitivity-labels.md)
