@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f066610fec75b9c8f32e021460ae2f4b3471503c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8a31ce05ed6986159d9f6e4c489e6f7707cfecc4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165428"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465291"
 ---
 # <a name="device-control-report"></a>デバイス制御レポート
 
@@ -58,7 +58,7 @@ Microsoft Defender for Endpoint のデバイス制御により、セキュリテ
 このページには、種類ごとのイベントの集計数とイベントの一覧を示すダッシュボードが表示されます。 管理者は、時間範囲、メディア クラス名、およびデバイス ID をフィルター処理できます。
 
 > [!div class="mx-imgBorder"]
-> ![DeviceControlReportDetails](images/Detaileddevicecontrolreport.png)
+> :::image type="content" source="images/Detaileddevicecontrolreport.png" alt-text="[デバイス制御レポートの詳細] ページ (Microsoft 365 Defender ポータル)" lightbox="images/Detaileddevicecontrolreport.png":::
 
 イベントを選択すると、詳細を示すフライアウトが表示されます。
 
@@ -67,17 +67,17 @@ Microsoft Defender for Endpoint のデバイス制御により、セキュリテ
 - **場所の詳細:** デバイス名、ユーザー、および MDATP デバイス ID。
 
 > [!div class="mx-imgBorder"]
-> ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)
+> :::image type="content" source="images/devicecontrolreportfilter.png" alt-text="[デバイス制御レポートのフィルター] ページ" lightbox="images/devicecontrolreportfilter.png":::
 
 組織全体でこのメディアのリアルタイム アクティビティを表示するには、[高度な検索を開く] **ボタンを選択** します。 これには、事前に定義された埋め込みクエリが含まれます。
 
 > [!div class="mx-imgBorder"]
-> ![QueryOnDeviceControlReport](images/Devicecontrolreportquery.png)
+> :::image type="content" source="images/Devicecontrolreportquery.png" alt-text="[デバイス制御レポートのクエリ] ページ" lightbox="images/Devicecontrolreportquery.png":::
 
-デバイスのセキュリティを確認するには、フライアウトの [デバイス ページを **開く** ] ボタンを選択します。 このボタンをクリックすると、デバイス エンティティ ページが開きます。
+デバイスのセキュリティを確認するには、フライアウトの **[デバイス ページを開く** ] ボタンを選択します。 このボタンをクリックすると、デバイス エンティティ ページが開きます。
 
 > [!div class="mx-imgBorder"]
-> ![DeviceEntityPage](images/Devicesecuritypage.png)
+> :::image type="content" source="images/Devicesecuritypage.png" alt-text="[デバイス エンティティ] ページ" lightbox="images/Devicesecuritypage.png":::
 
 ## <a name="reporting-delays"></a>レポートの遅延
 

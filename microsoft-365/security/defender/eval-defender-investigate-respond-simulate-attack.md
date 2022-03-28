@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3712875579c7d157fe52a5e115d059fc88b4b6d7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5e1b841c5638bf9228efc844daa58d1d1e170726
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326497"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754766"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>パイロット環境で攻撃シミュレーションMicrosoft 365 Defender実行する
 
@@ -127,13 +127,13 @@ Microsoft の Defender for Endpoint シミュレーションを次に示しま�
 
 結果を次に示します。
 
-![シミュレートされたエンタープライズ テスト ラボ ガイドを使用した Defender 評価環境のエンドポイント。](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png)
+:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png" alt-text="シミュレートされたエンタープライズ テスト ラボ ガイドを使用した評価環境" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png":::
 
 高度な手法を使用して検出を非表示にする高度な攻撃をシミュレートします。 この攻撃は、ドメイン コントローラーで開いたサーバー メッセージ ブロック (SMB) セッションを列挙し、ユーザーのデバイスの最近の IP アドレスを取得します。 攻撃のこのカテゴリは、通常、被害者のデバイスにドロップされたファイルを含め、メモリ内でのみ発生します。 既存のシステムツールと管理ツールを使用して"土地から離れ"、コードをシステム プロセスに挿入して実行を非表示にします。 このような動作により、検出を回避し、デバイス上で保持できます。
 
 このシミュレーションでは、サンプル シナリオは PowerShell スクリプトから始まります。 実際には、ユーザーがスクリプトの実行を騙される可能性があります。または、以前に感染したデバイスから別のコンピューターへのリモート接続からスクリプトが実行される可能性があります。これは、攻撃者がネットワーク内で横方向に移動しようとした可能性があります。 管理者は、さまざまな管理アクティビティを実行するためにリモートでスクリプトを実行する場合も多いので、これらのスクリプトの検出が困難になる場合があります。
 
-![プロセスインジェクションと SMB 偵察攻撃の図を使用したファイルレス PowerShell 攻撃。](../../media/mtp/mtpdiydiagram.png)
+:::image type="content" source="../../media/mtp/mtpdiydiagram.png" alt-text="プロセスインジェクションと SMB 偵察攻撃によるファイルレス PowerShell 攻撃" lightbox="../../media/mtp/mtpdiydiagram.png":::
 
 シミュレーション中、攻撃はシェルコードを一見無実のプロセスに挿入します。 このシナリオでは、このシナリオを使用notepad.exe。 シミュレーションではこのプロセスを選択しましたが、攻撃者は長時間実行されるシステム プロセス (たとえば、システム プロセスをターゲットにしている可能性が高svchost.exe。 その後、シェルコードは攻撃者のコマンド アンド コントロール (C2) サーバーに問い合わせ、続行方法に関する指示を受け取る。 スクリプトは、ドメイン コントローラー (DC) に対する偵察クエリの実行を試みます。 偵察により、攻撃者は最近のユーザー ログイン情報に関する情報を取得できます。 攻撃者がこの情報を取得すると、ネットワーク内を横方向に移動して、特定の機密性の高いアカウントにアクセスできます。
 
@@ -195,7 +195,7 @@ SOC アナリストの視点に切り替えて、このポータルで攻撃の�
 
 3. シミュレートされた攻撃の新しいインシデントがインシデント キューに表示されます。
 
-    ![インシデント キューの例。](../../media/mtp/fig2.png)
+   :::image type="content" source="../../media/mtp/fig2.png" alt-text="ポータルのインシデント キュー Microsoft 365 Defender" lightbox="../../media/mtp/fig2.png":::
 
 #### <a name="investigate-the-attack-as-a-single-incident"></a>攻撃を 1 つのインシデントとして調査する
 
@@ -226,7 +226,7 @@ Microsoft 365 Defender分析を関連付け、異なる製品のすべての関�
 > [!NOTE]
 > シミュレートされた攻撃中に生成されたアラートの一部のみを実行します。 テスト デバイスで実行されている Windowsおよび Microsoft 365 Defender 製品のバージョンによっては、少し異なる順序で表示されるアラートが多く表示される場合があります。
 
-![生成されたアラートの例。](../../media/mtp/fig6.png)
+:::image type="content" source="../../media/mtp/fig6.png" alt-text="ポータルで生成されたMicrosoft 365 Defenderアラート" lightbox="../../media/mtp/fig6.png":::
 
 ##### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint"></a>アラート: 疑わしいプロセスの挿入が観察されました (ソース: Microsoft Defender for Endpoint)
 
@@ -234,7 +234,7 @@ Microsoft 365 Defender分析を関連付け、異なる製品のすべての関�
 
 SOC アナリストがこれらの高度な攻撃をキャッチできるよう、Microsoft Defender for Endpoint のディープ メモリ センサーは、さまざまなクロスプロセス コードインジェクション手法をこれまでにない可視性でクラウド サービスに提供します。 次の図は、Defender for Endpoint がコードを挿入しようとして検出され、警告を受け取った<i>notepad.exe。 </i>
 
-![悪意のある可能性のあるコードの挿入に関するアラートの例。](../../media/mtp/fig7.png)
+:::image type="content" source="../../media/mtp/fig7.png" alt-text="悪意のある可能性のあるコードをポータルに挿入Microsoft 365 Defenderアラート" lightbox="../../media/mtp/fig7.png":::
 
 ##### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint"></a>警告: コマンド ライン引数を使用しないプロセス実行で予期しない動作が発生します (ソース: Microsoft Defender for Endpoint)
 
@@ -251,11 +251,12 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 アラート プロセス ツリーで IP アドレスを選択して、[IP アドレスの詳細] ページを表示します。
 
-![コマンド ライン引数を指定しないプロセス実行による予期しない動作に対するアラートの例。](../../media/mtp/fig8.png)
+:::image type="content" source="../../media/mtp/fig8.png" alt-text="プロセス実行による予期しない動作に対する警告で、コマンド ラインの引数が Microsoft 365 Defenderされます。" lightbox="../../media/mtp/fig8.png":::
 
 次の図は、選択した IP アドレスの詳細ページを表示します (アラート プロセス ツリーの IP アドレスをクリックします)。
 
-![IP アドレスの詳細ページの例。](../../media/mtp/fig9.png)
+:::image type="content" source="../../media/mtp/fig9.png" alt-text="ポータルの [IP アドレスの詳細] ページMicrosoft 365 Defenderページ" lightbox="../../media/mtp/fig9.png":::
+
 
 ##### <a name="alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity"></a>アラート: ユーザーと IP アドレスの偵察 (SMB) (ソース: Microsoft Defender for Identity)
 
@@ -263,7 +264,7 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 この検出では、SMB セッション列挙がドメイン コントローラーに対して実行されると、アラートがトリガーされます。
 
-![ユーザーと IP アドレスの偵察に関する Microsoft Defender for Identity アラートの例。](../../media/mtp/fig10.png)
+:::image type="content" source="../../media/mtp/fig10.png" alt-text="Microsoft Defender for Identity alert for User and IP address reconnaissance in the Microsoft 365 Defender ポータル" lightbox="../../media/mtp/fig10.png":::
 
 #### <a name="review-the-device-timeline-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でデバイスのタイムラインを確認する
 
@@ -273,13 +274,13 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 [タイムライン **] タブ** を選択して、デバイスのタイムラインを開き、発生したアラートと一緒にデバイスで観察されたイベントと動作を時系列順に表示します。
 
-![動作を含むデバイスタイムラインの例。](../../media/mtp/fig11.png)
+:::image type="content" source="../../media/mtp/fig11.png" alt-text="[デバイスのタイムライン] セクション (Microsoft 365 Defender ポータル)" lightbox="../../media/mtp/fig11.png":::
 
 より興味深い動作の一部を展開すると、プロセス ツリーなどの有用な詳細が提供されます。
 
 たとえば、警告イベント [疑わしいプロセスの挿入が見られる] が見 **られるまで下にスクロールします**。 その下 **powershell.exe** プロセス notepad.exeに挿入するオブジェクトを選択し、この動作の完全なプロセス ツリーをサイド ウィンドウの **[イベント** エンティティ] グラフに表示します。 必要に応じて、検索バーを使用してフィルター処理を行います。
 
-![選択した PowerShell ファイル作成動作のプロセス ツリーの例。](../../media/mtp/fig12.png)
+:::image type="content" source="../../media/mtp/fig12.png" alt-text="選択した PowerShell ファイル作成動作のプロセス ツリー (Microsoft 365 Defender ポータル)" lightbox="../../media/mtp/fig12.png":::
 
 #### <a name="review-the-user-information-with-microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps を使用してユーザー情報を確認する
 
@@ -287,7 +288,7 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 ユーザー名を選択して、ユーザーのプロファイル ページを開き、詳細な調査を行います。 [リスクの高いユーザーの調査について詳しくは、次の記事を参照してください](/cloud-app-security/tutorial-ueba#identify)。
 
-![[Defender for Cloud Apps] ユーザー ページの例。](../../media/mtp/fig13.png)
+:::image type="content" source="../../media/mtp/fig13.png" alt-text="[クラウド アプリ用の Defender] ユーザー ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/mtp/fig13.png":::
 
 #### <a name="automated-investigation-and-remediation"></a>調査と修復の自動化
 
@@ -298,7 +299,7 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 ポータルでインシデントに戻Microsoft 365 Defenderします。 [ **インシデント] ページの** **[調査** ] タブには、Microsoft Defender for Identity と Microsoft Defender for Endpoint によってトリガーされた自動調査が表示されます。 次のスクリーンショットは、Defender for Endpoint によってトリガーされた自動調査のみを表示します。 既定では、Defender for Endpoint はキュー内にあるアーティファクトを自動的に修復します。修復が必要です。
 
-![インシデントに関連する自動調査の例。](../../media/mtp/fig14.png)
+:::image type="content" source="../../media/mtp/fig14.png" alt-text="インシデントに関連する自動調査のセクション (Microsoft 365 Defender ポータル)" lightbox="../../media/mtp/fig14.png":::
 
 調査をトリガーしたアラートを選択して、[調査の詳細] **ページを開** きます。 次の詳細が表示されます。
 
@@ -310,7 +311,7 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 > [!NOTE]
 > タイミングによっては、自動調査がまだ実行されている可能性があります。 証拠を収集して分析し、結果を確認する前に、プロセスが完了するまで数分待ちます。 [調査の **詳細] ページを** 更新して、最新の結果を取得します。
 
-![[調査の詳細] ページの例。](../../media/mtp/fig15.png)
+:::image type="content" source="../../media/mtp/fig15.png" alt-text="[調査の詳細] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/mtp/fig15.png":::
 
 自動調査の間、Microsoft Defender for Endpoint は修復を必要とするアーティファクトの 1 notepad.exeプロセスを特定しました。 Defender for Endpoint は、自動修復の一環として疑わしいプロセスの挿入を自動的に停止します。
 
@@ -322,7 +323,7 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 [インシデント] **ページで** 、[インシデントの管理 **] を選択します**。 状態を [インシデントの **解決] に** 設定し、分類に **対して [True alert** ] を選択し、判定に **対してセキュリティ テスト** を行います。
 
-![インシデントを解決できる [インシデントの管理] パネルを開いたインシデント ページの例。](../../media/mtp/fig16.png)
+:::image type="content" source="../../media/mtp/fig16.png" alt-text="[インシデントの管理] パネルで、インシデントを解決する機能をMicrosoft 365 Defenderできます。" lightbox="../../media/mtp/fig16.png":::
 
 インシデントが解決すると、関連付けられているすべてのアラートが、Microsoft 365 Defenderポータルと関連するポータルで解決されます。
 
@@ -330,7 +331,7 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 ## <a name="next-step"></a>次の手順
 
-[![インシデントMicrosoft 365 Defender機能を試してみてください。](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png)](eval-defender-investigate-respond-additional.md)
+[:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png" alt-text="インシデントMicrosoft 365 Defender機能" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png":::](eval-defender-investigate-respond-additional.md)
 
 手順 2 / 2: [インシデントMicrosoft 365 Defender機能を試す](eval-defender-investigate-respond-additional.md)
 

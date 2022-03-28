@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65df8553f5ee3b7dd7876557398e0d4aa22c7bd5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b0b94e4905a780be9a608c8e91967b47a4db7160
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323529"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465753"
 ---
 # <a name="create-and-manage-device-tags"></a>デバイス タグの作成と管理
 
@@ -56,11 +56,12 @@ API を使用してデバイス タグを追加するには、「[デバイス �
 
 2. [応答 **アクション] の** 行から [タグの管理] を選択します。
 
-    :::image type="content" alt-text="[タグの管理] ボタンのイメージ。" source="images/manage-tags-option.png":::
+    :::image type="content" source="images/manage-tags-option.png" alt-text="[タグの管理] ボタンのイメージ" lightbox="images/manage-tags-option.png":::
+    
 
 3. タグを検索または作成する入力
 
-    :::image type="content" alt-text="デバイス 1 にタグを追加するイメージ。" source="images/create-new-tag.png":::
+    :::image type="content" source="images/create-new-tag.png" alt-text="device1 でのタグの追加" lightbox="images/create-new-tag.png":::
 
 タグはデバイス ビューに追加され、[デバイス] インベントリ ビュー **にも反映** されます。 次に、[タグ] フィルター **を使用** して、関連するデバイスの一覧を表示できます。
 
@@ -71,7 +72,7 @@ API を使用してデバイス タグを追加するには、「[デバイス �
 
 このビューからタグを削除することもできます。
 
-:::image type="content" alt-text="デバイス 2 にタグを追加するイメージ。" source="images/new-tag-label-display.png":::
+:::image type="content" source="images/new-tag-label-display.png" alt-text="device2 でのタグの追加" lightbox="images/new-tag-label-display.png":::
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>レジストリ キーの値を設定してデバイス タグを追加する
 

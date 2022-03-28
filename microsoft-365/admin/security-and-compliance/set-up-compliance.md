@@ -2,8 +2,8 @@
 title: ユーザーの脅威保護を強化Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,76 +23,71 @@ search.appverid:
 - BCS160
 - MET150
 description: コンプライアンス機能を設定して、データ損失を防止し、お客様と顧客の機密情報を安全に保ちます。
-ms.openlocfilehash: 69960c4f158a30d9d47d749ed1e7eb2d2d74f430
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: baac8bc1ad9a425ad7219a1e76949286858f60e0
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521044"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64403734"
 ---
 # <a name="set-up-compliance-features"></a>コンプライアンス機能をセットアップする
 
-ユーザー Microsoft 365 Business Premiumデータとデバイスを保護し、ユーザーと顧客の機密情報を安全に保つ機能が付属しています。
+サブスクリプションMicrosoft 365 Business Premiumコンプライアンス機能とプライバシー機能が含まれます。 これらの機能は、会社のデータを保護し、お客様と顧客の機密情報を安全に保つのに役立ちます。 この記事は、コンプライアンス機能を使い始めるのに役立ちます。
 
-## <a name="watch-set-up-dlp-features"></a>ウォッチ: DLP 機能のセットアップ
+## <a name="before-you-begin"></a>はじめに
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3TGvL?autoplay=false]
+次のいずれかの役割が割り当てられているか確認Azure Active Directory。
 
-データ損失防止ポリシーは、社会保障番号や医療記録など、ビジネスの機密情報を特定して保護するのに役立ちます。
+- グローバル管理者
+- コンプライアンス管理者
 
-1. 開始するには、管理センターに移動し [、[](https://admin.microsoft.com)セットアップ] を **選択します**。
-1. [データ損失防止 **の設定] まで下にスクロールし、[** 表示] を選択し、[管理] を **選択します**。 
-1. ポリシーを編集するには、ポリシーを選択し、[ポリシーの編集] **を** 選択し、変更する内容を選択します。 たとえば、[場所] **を選択** して、スキャンする場所を変更します。
-1. 新しいポリシーを作成するには、[ポリシーの **作成] を選択します**。
-1. カスタム ポリシーを作成するか、テンプレートから開始できます。 たとえば、HIPAA ポリシーを作成するには、[医療と健康] テンプレートを選択し、[米国健康保険法 **(HIPAA) ] を選択します**。 **[次へ]** を選択します。
-1. 設定を確認し、[作成] を **選択します**。 ポリシーを有効にした後、説明された機密情報を含む電子メールがブロックされ、その情報を送信しようとした送信者に警告メッセージが表示されます。
+詳細については、「役割の使用 [を開始する」ページを参照してください](../add-users/admin-roles-page.md)。
 
-個人 [データの損失から保護する](../../compliance/create-a-dlp-policy-from-a-template.md) ポリシーを設定する方法の例については、「テンプレートから DLP ポリシーを作成する」を参照してください。 
-  
-DLP には、多くの異なる地域ですぐに使用できるポリシー テンプレートが多数付属しています。 たとえば、オーストラリアの財務データ、カナダの個人情報法、米国の財務データなどです。 完全 [なリストについては、「DLP ポリシー テンプレートに含まれる](../../compliance/what-the-dlp-policy-templates-include.md) もの」を参照してください。 これらのテンプレートはすべて、PII テンプレートの例と同様に有効にできます。
- 
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>メールの保持を設定するには、Exchange Online Archiving
+## <a name="use-compliance-manager-to-get-started"></a>コンプライアンス マネージャーを使用して開始する
 
- **Exchange Online Archiving** 機能は、電子情報開示用の電子メール コンテンツを保持することで、コンプライアンスと規制の標準を維持するのに役立ちます。 また、訴訟が発生した場合のリスクを軽減し、セキュリティ侵害後または削除済みアイテムを回復する必要がある場合にデータを回復する方法を提供します。 訴訟ホールドを使用して、すべてのユーザーのコンテンツを保持したり、保持ポリシーを使用して保持する内容をカスタマイズすることができます。
-  
-**訴訟ホールド:** ユーザーのメールボックス全体を訴訟ホールドに設定することで、削除済みアイテムを含むすべてのメールボックス コンテンツを保持できます。 
-    
-メールボックスを訴訟ホールドに設定するには、管理センターで次の処理を行います。
-    
-1. 左側のナビゲーションで、[ユーザーのアクティブな **ユーザー]** \> **に移動します**。
-    
-2. 訴訟ホールドにメールボックスを配置するユーザーを選択します。 ユーザー ウィンドウで、[メールの設定]**を展開** し、[その他の設定] の横にある **[プロパティ** の編集] Exchange **します**。
-    
-3. ユーザーのメールボックス ページで、左側のナビゲーションで ** メールボックス機能 ** を選択し、[訴訟ホールド] の [有効にする] リンク **を選択します**。
-    
-4. [訴訟 **ホールド] ダイアログ** ボックスで、[訴訟ホールド期間] フィールドで訴訟ホールド **期間を指定** できます。 無限ホールドを設定する場合は、フィールドを空のままにします。 メモを追加して、訴訟ホールドの詳細を説明する必要がある Web サイトにメールボックスの所有者を指示できます。 \>**保存 .**
-    
-**保持:** たとえば、カスタマイズした保持ポリシーを有効にして、特定の時間保持したり、保持期間の終わりにコンテンツを完全に削除したりできます。 詳細については、「アイテム保持ポリシー [の概要」を参照してください](../../compliance/retention.md)。
+:::image type="content" source="../../business-premium/media/m365bp-compliancemanager.png" alt-text="[コンプライアンス マネージャー] のスクリーンショットをMicrosoft 365 Business Premium。":::
 
-## <a name="watch-set-up-sensitivity-labels"></a>ウォッチ: 感度ラベルを設定する
+Microsoft 365 Business Premiumコンプライアンス マネージャーが含まれています。コンプライアンス機能のセットアップを開始するのに役立ちます。 このような機能には、データ損失防止、情報ガバナンス、インサイダーリスク管理が含まれます。 コンプライアンス マネージャーは、推奨事項、コンプライアンス スコア、スコアを向上させる方法を強調表示することで、時間を節約できます。
 
-感度ラベルには、Azure Information Protection (AIP) プラン 1 が付き、ラベルを適用してドキュメントと電子メールを分類し、必要に応じて保護するのに役立ちます。 ラベルは、ルールと条件を定義する管理者、ユーザーが手動で、またはユーザーに推奨される組み合わせを使用して自動的に適用できます。
+開始する方法を次に示します。
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3VRGT?autoplay=false]
+1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動し、サインインします。
 
-1. 管理センター [で、[](https://admin.microsoft.com)コンプライアンス管理センター **] を** 選択します。
-1. [分類 **]** を選択し、[ **感度] ラベルを選択します**。
-1. [ **ラベルの作成] を** 選択し、警告が表示されたら、[はい] を **選択します**。
-1. 設定を確認し、[作成] を **選択します**。 ラベルが作成されました。 必要な追加のラベルに対して、このプロセスを繰り返します。
-1. 既定では、ラベルは[機密]、Office、および [パブリック **]** の順に **アプリに****表示されます**。 順序を変更するには、ラベルごとに 3 つのドット (その他のアクション) を選択し、ラベルを上下に移動します。 通常、アクセス許可は、最低レベルから最高レベルのアクセス許可に一覧表示されます。
-1. 設定を確認し、[発行] を **選択します**。
+2. ナビゲーション ウィンドウで、[コンプライアンス マネージャー] **を選択します**。
 
-ラベルを機能するには、各ユーザーが Azure Information Protection 統合ラベル 付けクライアントをダウンロードする必要があります。 Web を検索 **しAzinfoProtection_UL.exe** Microsoft ダウンロード センターからダウンロードし、ユーザーのコンピューターで実行します。
+3. [概要 **] タブ** で、情報を確認します。 アイテムまたはリンクを選択して、詳細を表示したり、データ損失防止 (DLP) ポリシーの構成などのアクションを実行したりします。 たとえば、[スコアに影響 **を** 与えるソリューション] セクションで、[残りのアクション] 列でリンク **を選択** できます。
 
-次に Word のようなファイルを開Office アプリ、作成された感度ラベルが表示されます。 ラベルを変更または適用するには、[感度] を選択し、ラベルを選択します。
+   :::image type="content" source="../../business-premium/media/m365bp-compliancesolutions.png" alt-text="[スコア] ウィンドウに影響を与えるソリューションのスクリーンショット。":::
 
-### <a name="install-the-azure-information-protection-client-manually"></a>Azure Information Protection クライアントを手動でインストールする
+   このアクションを実行すると、[ **改善アクション]** タブが表示され、選択したアイテムに対してフィルター処理されます。 この例では、構成する DLP ポリシーについて説明します。
 
-AIP クライアントを手動でインストールするには、次の手順を実行します。
+   :::image type="content" source="../../business-premium/media/m365bp-dlppoliciestoconfigure.png" alt-text="構成する DLP ポリシーのスクリーンショット。":::
 
-1. Microsoft **ダウンロードAzinfoProtection_UL.exe** ダウンロード [センターからダウンロードします](https://www.microsoft.com/download/details.aspx?id=53018)。
- 
-2. Word ドキュメントを表示し、[ホーム] タブで [感度] オプションを使用して、インストールが機能したと **確認** できます。
-<br/>![Word ドキュメントの [保護] タブ のドロップダウン。](../../media/word-sensitivity.png)
+4. [改善アクション **] タブ** で、アイテムを選択します。 この例では、[カスタマイズされた DLP ポリシーまたは個人を特定できる情報を作成する **] を選択しました**。 構成するポリシーの詳細を示すページが読み込まれます。
 
-詳細については、「クライアントのインストール [」を参照してください](/azure/information-protection/infoprotect-tutorial-step3)。
+   :::image type="content" source="../../business-premium/media/m365bp-dlppolicyinfo.png" alt-text="顧客コンテンツの DLP ポリシーに関する情報のスクリーンショット。":::
+
+   画面上の情報に従って DLP ポリシーを設定します。
+
+ビジネス向けコンプライアンス機能の詳細については、「Microsoft 365コンプライアンスドキュメント[Microsoft 365参照してください](../../compliance/index.yml)。
+
+## <a name="use-sensitivity-labels"></a>感度ラベルを使用する
+
+感度ラベルは、Officeアプリ (Outlook、Word、Excel、PowerPoint) で使用できます。 ラベルの例を次に示します。
+
+- 標準
+- 個人
+- プライベート
+- 社外秘
+
+ただし、会社の他のラベルも定義できます。
+
+次の記事を使用して、感度ラベルの使用を開始します。
+
+1. [感度ラベルとは何ですか?](../../compliance/sensitivity-labels.md)
+
+2. [感度ラベルの作成を開始する](../../compliance/get-started-with-sensitivity-labels.md)
+
+3. [公開の感度ラベルとそのポリシー](../../compliance/create-sensitivity-labels.md)
+
+4. [会社のユーザーに、感度ラベルの使い方を表示する](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)

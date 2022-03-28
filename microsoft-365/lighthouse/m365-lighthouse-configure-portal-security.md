@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseのセキュリティを構成する方法について説明します。
-ms.openlocfilehash: 8f8ec851d2ce6795565530e120f3704128336ea2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: dd99330d520b409a93cfd5d1ca777c17b9ef4373
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323123"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775942"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>ポータル Microsoft 365 Lighthouseの構成
 
@@ -37,7 +37,7 @@ Managed Service Provider (MSP) がテナントにアクセス許可を委任し�
 
 ## <a name="set-up-role-based-access-control"></a>役割ベースのアクセス制御を設定する
 
-役割ベースのアクセス制御 (RBAC) は、ユーザー の役割に基づいてリソースまたは情報へのアクセスを許可します。 ライトハウスの顧客テナントデータと設定へのアクセスは、CSP (クラウド ソリューション プロバイダー) プログラムからの特定の役割に制限されます。 ライトハウスで RBAC の役割を設定するには、ユーザーに対して詳細な割り当てを実装するために、詳細な委任管理者特権 (GDAP) を使用することをお勧めします。
+役割ベースのアクセス制御 (RBAC) は、ユーザー の役割に基づいてリソースまたは情報へのアクセスを許可します。 ライトハウスの顧客テナントデータと設定へのアクセスは、CSP (クラウド ソリューション プロバイダー) プログラムからの特定の役割に制限されます。 ライトハウスで RBAC の役割を設定するには、ユーザーに対して詳細な割り当てを実装するために、詳細な委任管理者特権 (GDAP) を使用することをお勧めします。 テナントが正常にオンボードするには、引き続き委任された管理者特権 (DAP) が必要ですが、GDAP 専用のお客様は、DAP に依存せずにすぐにオンボードできます。 顧客に対して DAP と GDAP が共存する場合、GDAP アクセス許可が優先されます。 
 
 GDAP の使用を開始するには、「顧客テナントを [管理するための役割の設定」を参照してください](m365-lighthouse-set-up-roles.md)。
 

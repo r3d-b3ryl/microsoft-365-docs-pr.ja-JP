@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: この記事には、Microsoft 365 コンプライアンス センターのコンテンツ検索電子情報開示ツールに関する参照情報が含まれており、コンテンツ検索に関する多くの詳細情報を知ることができます。
-ms.openlocfilehash: 0688f3119b500f8e11675aa101d92942a3063e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3f2918c378d94fd65d4a89afed50957a2da40a7d
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175409"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716378"
 ---
 # <a name="feature-reference-for-content-search"></a>コンテンツ検索の機能のリファレンス
 
@@ -80,7 +80,7 @@ Microsoft Teams と Microsoft 365 グループのコンテンツを検索する�
 
 - Teams と Microsoft 365 グループにあるコンテンツを検索するには、チームまたはグループに関連付けられているメールボックスと SharePoint サイトを指定する必要があります。
 
-- プライベートチャネルのコンテンツは、チームのメールボックスではなく、ユーザーのメールボックスに保存されます。 プライベートチャネルのコンテンツを検索する方法については、「[プライベートチャネルの電子情報開示](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels)」を参照してください。
+- プライベートチャネルのコンテンツは、チームのメールボックスではなく、ユーザーのメールボックスに保存されます。 プライベートチャネルのコンテンツを検索する方法については、「[プライベートチャネルの電子情報開示](/microsoftteams/ediscovery-investigation#ediscovery-of-private-and-shared-channels)」を参照してください。
 
 - チームまたは Microsoft 365 グループのプロパティを表示するには、Exchange Online で **Get-UnifiedGroup** コマンドレットを実行します。これは、チームまたはグループに関連付けられているサイトの URL を取得するのに適した方法です。たとえば、次のコマンドは、上級管理職チームという名前の Microsoft 365 グループの選択されたプロパティを表示します。
 

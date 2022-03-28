@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3801fdb4a7aeda5e75c4e36f622f7e76604d96a6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bba910b46c4b4769e67ae00af0381e129139dfe5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318733"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754554"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Id の Microsoft Defender のパイロット
 
@@ -38,7 +38,7 @@ ms.locfileid: "63318733"
 
 次の手順を使用して、Microsoft Defender のパイロットを ID 用にセットアップして構成します。 推奨事項には、パイロット グループの設定は含めかねない点に注意してください。 ベスト プラクティスは、Active Directory ドメイン サービス (AD DS) および Active Directory フェデレーション サービス (AD FS) を実行しているすべてのサーバーにセンサーをインストールする方法です。
 
-![Microsoft Defender for Identity を Defender 評価環境に追加する手順。](../../media/defender/m365-defender-identity-pilot-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="Microsoft Defender 評価環境で Microsoft Defender for Identity をパイロットする手順" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
 
 次の表に、図の手順を示します。
 
@@ -70,6 +70,6 @@ Defender for Identity のチュートリアルを試してみてください。
 
 [Microsoft Defender for Office 365 を評価する](eval-defender-office-365-overview.md)
 
-[365 の Microsoft Defender の評価の概要にOfficeします。](eval-defender-office-365-overview.md)
+[Microsoft [Defender for Office 365](eval-defender-office-365-overview.md)
 
-評価とパイロット [Microsoft 365 Defender の概要に戻る](eval-overview.md)
+[評価とパイロット] [の概要に戻Microsoft 365 Defender](eval-overview.md)

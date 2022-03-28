@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: コンプライアンス ソリューションへの macOS デバイスのオンボーディングについて
-ms.openlocfilehash: 93a930f13a17c19c3ff7209295ddada648b9575a
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 783179ae749ac7cd6de671435927ba5bbdbdacad
+ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526570"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64387017"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)
 
@@ -27,14 +27,14 @@ MacOS デバイスは、Intune または JAMF Microsoft 365を使用して、コ
 
 **適用対象:**
 
-- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
+- [エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
 - [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>はじめに
 
 macOS デバイス (Catalina 10.15 以降) での Endpoint DLP の使用を開始する前に、次の記事を理解する必要があります。
 
-- [Microsoft 365 のエンドポイントのデータ損失防止についての詳細情報](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
+- [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 - [エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 
 DLP に精通していない場合は、次の記事も理解する必要があります。
@@ -87,10 +87,7 @@ macOS デバイスがコンプライアンス ソリューションにオンボ�
    > [!NOTE]
    > 通常、デバイスのオンボーディングが有効になるまで約60秒かかりますが、Microsoft サポートに連絡するまでに最大 30 分かかります。
 
-2. コンプライアンスセンターの設定ページを開き、[**オンボードデバイス**]を選択します。
-
-   > [!div class="mx-imgBorder"]
-   > ![デバイス管理を有効にする。](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. [コンプライアンス センターの設定] ページを開き、[ **macOS デバイスの監視を有効にする] を選択します**。
 
 ## <a name="next-steps"></a>次の手順
 

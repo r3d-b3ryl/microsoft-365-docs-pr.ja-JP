@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: f80ab9fcb0a3e057a20c22ff05c3a960cdf7eab4
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 4b14f2def771294bdfa05109d6060242736f26d5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512936"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754713"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>インサイダーリスク管理設定の使用を開始する
 
@@ -576,11 +576,15 @@ Insider Risk [Management Analytics](https://www.youtube.com/watch?v=5c0P5MCXNXk)
 
 ## <a name="admin-notifications"></a>管理者の通知
 
-管理者通知は、新しいポリシーに対して最初のアラートが生成されると、 *Insider Risk Management、Insider* Risk Management *Analysts*、Insider Risk *Management Investigators* の役割グループに含まれるユーザーに電子メール通知を自動的に送信します。 これは、すべての組織で既定で有効にされ、ポリシーは初回アラートに対して 24 時間ごとにチェックされます。 最初のアラートの後にポリシーで発生するアラートに関する通知は送信されません。
+管理者通知は、選択可能なインサイダー リスク管理役割グループに電子メール通知を自動的に送信します。 通知を有効にして、次のシナリオの通知を受け取る役割グループを割り当てできます。
 
-組織でインサイダー リスク管理 Analytics を有効にしている場合、Insider Risk *Management Admin* 役割グループのメンバーは、データ漏洩、盗難、および流出アクティビティに関する初期分析分析の分析情報に関する電子メール通知を自動的に受信します。
+- 新しいポリシーの最初のアラートが生成されると、通知メールを送信します。 ポリシーは初回アラートに対して 24 時間ごとにチェックされ、ポリシーの後続のアラートでは通知は送信されません。
+- 重大度の高い新しいアラートが生成されると、毎日メールを送信します。 ポリシーは、重大度の高いアラートが 24 時間ごとにチェックされます。
+- 未解決の警告があるポリシーを要約する週 1 回のメールを送信する
 
-管理者の通知を無効にする場合は、次の手順を実行します。
+組織でインサイダー リスク管理分析を有効にしている場合、 *Insider Risk Management Admin* 役割グループのメンバーは、データ漏洩、盗難、および流出アクティビティに関する初期分析分析の分析分析に関する電子メール通知を自動的に受信します。
+
+管理者および分析通知を無効にする場合は、次の手順を実行します。
 
 1. 次の [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)、**Insider リスク管理** > **Insider リスク設定に移動します**。
 2. [管理通知 **] ページを選択** します。
@@ -590,5 +594,3 @@ Insider Risk [Management Analytics](https://www.youtube.com/watch?v=5c0P5MCXNXk)
     - **Analytics がオフになっているときに電子メール通知を送信する**
 
 4. [保存 **] を選択** して構成して終了します。
-
-![Insider リスク管理管理者の通知設定。](../media/insider-risk-admin-notifications.png)

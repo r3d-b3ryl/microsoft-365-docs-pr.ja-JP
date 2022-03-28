@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: bab766fd69b9227f10ba897040faff79e65b1722
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f919a93768699c573c87b938cea37a05955ab9f2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325783"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465335"
 ---
 # <a name="behavioral-blocking-and-containment"></a>動作ブロックと封じ込め
 
@@ -38,7 +38,7 @@ ms.locfileid: "63325783"
 
 動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作とプロセス ツリーに基づいて、脅威を特定して停止するのに役立ちます。 次世代の保護、EDR、Defender for Endpoint のコンポーネントと機能は、動作ブロック機能と格納機能で機能します。
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="動作のブロックと格納。":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Microsoft Defender ATP ポータルでの動作のブロックと格納" lightbox="images/mdatp-next-gen-EDR-behavblockcontain.png":::
 
 動作のブロックと格納機能は、Defender for Endpoint の複数のコンポーネントと機能と組み合わせ、攻撃を直ちに停止し、攻撃の進行を防止します。
 
@@ -52,7 +52,7 @@ ms.locfileid: "63325783"
 
 次の図は、動作ブロックと格納機能によってトリガーされたアラートの例を示しています。
 
-:::image type="content" alt-text="動作のブロックと格納によるアラートの例。" source="images/blocked-behav-alert.png" lightbox="images/blocked-behav-alert.png":::
+:::image type="content" source="images/blocked-behav-alert.png" alt-text="動作のブロックと格納によるアラートを含む [アラート] ページ" lightbox="images/blocked-behav-alert.png":::
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>動作のブロックと格納のコンポーネント
 
@@ -90,12 +90,12 @@ Microsoft は引き続き脅威保護の機能を向上させるので、行動�
 
 Defender for Endpoint の動作ベースのデバイス学習モデルは、攻撃チェーンの 2 つのポイントで攻撃者の手法をキャッチして停止しました。
 
-- 最初の保護層が悪用の動作を検出しました。 クラウド内のデバイス学習分類子は、脅威を正しく識別し、すぐにクライアント デバイスに攻撃をブロックするように指示しました。
+- 最初の保護層が悪用の動作を検出しました。 クラウド内のデバイス学習分類子は、脅威を正しく識別し、すぐにクライアント デバイスに攻撃をブロックするよう指示しました。
 - 2 番目の保護層は、攻撃が最初のレイヤーを越え、プロセスの空きを検出し、そのプロセスを停止し、対応するファイル (Lokibot など) を削除した場合の停止に役立ちます。
 
 攻撃が検出および停止されている間に、"初期アクセスアラート" などのアラートがトリガーされ、Microsoft 365 Defender[されました](/microsoft-365/security/defender/microsoft-365-defender)。
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="ポータルの初期アクセス通知Microsoft 365 Defenderします。":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="ポータルでの初期アクセスMicrosoft 365 Defender通知" lightbox="images/behavblockcontain-initialaccessalert.png":::
 
 次の使用例は、クラウド内の動作ベースのデバイス学習モデルが、実行を開始した後でも、攻撃に対する新しい保護層を追加する方法を示しています。
 
@@ -103,13 +103,13 @@ Defender for Endpoint の動作ベースのデバイス学習モデルは、攻�
 
 最近のブログ記事「ビヘイビアー ブロック[](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection)と格納: 光学を保護に変換する」で説明したように、2020 年 1 月に Defender for Endpoint は組織内のデバイスで特権エスカレーション アクティビティを検出しました。 "NTLM リレーを使用した特権エスカレーションの可能性" というアラートがトリガーされました。
 
-:::image type="content" alt-text="ジューシー ジャガイモ マルウェアに関する NTLM アラート。" source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
+:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="ジューシー ポテト マルウェアに関する NTLM アラート" lightbox="images/NTLMalertjuicypotato.png":::
 
 脅威はマルウェアである判明しました。これは、デバイスの特権エスカレーションを取得するために攻撃者によって使用される、ジュート ポテトと呼ばれる悪名高いハッキング ツールの新しい、前に見られないバリアントでした。
 
 アラートがトリガーされた数分後、ファイルが分析され、悪意のあるものに確認されました。 次の図に示すように、プロセスは停止およびブロックされました。
 
-:::image type="content" alt-text="アーティファクトがブロックされました。" source="images/Artifactblockedjuicypotato.png" lightbox="images/Artifactblockedjuicypotato.png":::
+:::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="アーティファクトがブロックされている"  lightbox="images/Artifactblockedjuicypotato.png":::
 
 アーティファクトがブロックされた数分後、同じファイルの複数のインスタンスが同じデバイスでブロックされ、攻撃者や他のマルウェアがデバイスに展開されるのを防ぐ。
 

@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 3229cd0a98714819009e7d50baab0872f3a67c43
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9a3e8ab38c807b8cf3ea54bb5a18a5405d0b3c49
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766586"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465357"
 ---
 # <a name="step-4-operationalize-asr-rules"></a>手順 4: ASR ルールを運用化する
 
@@ -42,7 +44,7 @@ ms.locfileid: "62766586"
 この機能の最も強力な機能[の 1 つはMicrosoft 365 Defender](https://security.microsoft.com)高度な狩猟です。 高度な狩猟に精通していない場合は、「高度な狩猟を使用して脅威を積極的に探す」 [を参照してください](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender高度な検索](images/asr-defender365-advanced-hunting2.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="[高度な検索] ページ (Microsoft 365 Defender ポータル)" lightbox="images/asr-defender365-advanced-hunting2.png":::
 
 高度な検索はクエリ ベース (Kusto Query Language) の脅威検索ツールで、Microsoft Defender ATP Endpoint Detection and Response (EDR) がすべてのコンピューターから収集するキャプチャされた (生の) データを最大 30 日間探索できます。 高度な検索を通じて、イベントを積極的に検査して、興味深いインジケーターやエンティティを見つけ出します。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対して、無制限な捜索が容易になります。
 
@@ -53,10 +55,10 @@ ms.locfileid: "62766586"
 進む狩猟ポータルに表示される ASR イベントは、1 時間ごとに見られる一意のプロセスに調整されます。 ASR イベントの時刻は、その 1 時間以内に初めてイベントが表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender高度な検索クエリコマンド ライン](images/asr-defender365-advanced-hunting3.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting3.png" alt-text="ポータルの高度な検索クエリ コマンド ラインMicrosoft 365 Defenderします。" lightbox="images/asr-defender365-advanced-hunting3.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender高度な検索クエリの結果](images/asr-defender365-advanced-hunting4.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="高度な検索クエリの結果は、Microsoft 365 Defenderポータルに表示されます。" lightbox="images/asr-defender365-advanced-hunting4.png":::
 
 上記は、187 イベントが AsrLsassCredentialTheft に登録されたと示しています。
 
@@ -68,10 +70,10 @@ ms.locfileid: "62766586"
 AsrOfficeChildProcess ルールに焦点を当て、関連する実際のファイルとプロセスの詳細を取得する場合は、ActionType のフィルターを変更し、集計行を必要なフィールドの投影に置き換えます (この場合は DeviceName、FileName、FolderPath など)。
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender高度な検索クエリのフォーカス](images/asr-defender365-advanced-hunting4b.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting4b.png" alt-text="ポータルの高度な検索クエリに焦点を当てたMicrosoft 365 Defender例" lightbox="images/asr-defender365-advanced-hunting4b.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender高度な検索クエリに焦点を当てた結果](images/asr-defender365-advanced-hunting5b.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="高度な検索クエリに焦点を当てた結果は、Microsoft 365 Defenderポータルに表示されます。" lightbox="images/asr-defender365-advanced-hunting5b.png":::
 
 高度な検索の真の利点は、好きなクエリを形成できるという利点です。 クエリを整形することで、個々のコンピューターで何かを特定するか、環境全体から分析情報を抽出するかに関係なく、何が起こっていたかの正確なストーリーを確認できます。
 

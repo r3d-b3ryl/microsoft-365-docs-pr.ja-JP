@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint のセンサーの正常性状態を確認する
+title: Microsoft Defender for Endpoint でセンサーの正常性状態を確認する
 description: デバイスのセンサーの正常性を確認して、構成が誤っている、非アクティブである、またはセンサー データを報告していないデバイスを特定します。
 keywords: センサー、センサーの正常性、構成ミス、非アクティブ、センサー データなし、センサー データ、通信障害、通信障害
 ms.prod: m365-security
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 926e23da7e439aa6035574a13bab2752004dd189
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bba5fde870b2916501f4154c6ff628a0d2e3ff1f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171667"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465474"
 ---
-# <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のセンサーの正常性状態を確認する
+# <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でセンサーの正常性状態を確認する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,9 +40,9 @@ ms.locfileid: "61171667"
 - **正しく構成されていない** - これらのデバイスは、センサー データを部分的に Defender for Endpoint サービスに報告している可能性があります。また、修正が必要な構成エラーが発生している可能性があります。
 - **非** アクティブ - 過去 1 か月で 7 日間以上 Defender for Endpoint サービスへの報告を停止したデバイス。
 
-グループをクリックすると、[デバイス] リストが表示 **され、選択** に従ってフィルター処理されます。
+グループをクリックすると、[デバイス] リストが表示され、選択に従ってフィルター処理されます。
 
-![センサーの問題があるデバイスタイルのスクリーンショット。](images/atp-devices-with-sensor-issues-tile.png)
+:::image type="content" source="images/atp-devices-with-sensor-issues-tile.png" alt-text="センサーの問題のタイルを持つデバイス" lightbox="images/atp-devices-with-sensor-issues-tile.png":::
 
 [ **デバイス] リスト** で、正常性状態リストを次の状態でフィルター処理できます。
 
@@ -57,7 +57,7 @@ ms.locfileid: "61171667"
 > [!NOTE]
 > リストを CSV 形式でエクスポートして、フィルター処理されていないデータを表示します。 CSV ファイルには、ビュー自体に適用されるフィルター処理に関係なく、組織内のすべてのデバイスが含まれます。組織の規模によっては、ダウンロードにかなりの時間がかかる場合があります。
 
-![[デバイス] リスト ページのスクリーンショット。](images/atp-devices-list-page.png)
+:::image type="content" source="images/atp-devices-list-page.png" alt-text="[デバイス] リスト ページの [エクスポート] タブ" lightbox="images/atp-devices-list-page.png":::
 
 構成が正しく設定されていないデバイスまたは非アクティブなデバイスをクリックすると、デバイスの詳細を表示できます。
 

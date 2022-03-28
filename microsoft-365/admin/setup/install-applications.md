@@ -23,10 +23,10 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - adminvideo
-description: 新しいアプリケーションをセットアップMicrosoft 365、Mac、PC、またはモバイル デバイスにOfficeアプリケーションをインストールする方法について学習します。
+description: Microsoft 365 のセットアップが完了しましたので、Mac、PC、モバイル デバイスに個々の Office アプリケーションをインストールする方法をご確認ください。
 ms.openlocfilehash: 9e573307bb0c2de1a0b6f4a9157bd35a4b81fe8a
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63317333"
@@ -35,15 +35,15 @@ ms.locfileid: "63317333"
 
 Microsoft 365 のセットアップが完了しましたので、Mac、PC、モバイル デバイスに個々の Office アプリケーションをインストールできます。
   
-## <a name="watch-install-office-apps"></a>ウォッチ: アプリをOfficeする
+## <a name="watch-install-office-apps"></a>視聴: Office アプリをインストールする
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
 
-Microsoft Office アプリは、**[スタート]** メニューから見つけることができます。 表示しない場合は、自分でインストールできます。
+Microsoft Office アプリは、**[スタート]** メニューから見つけることができます。 表示されない場合は、自分でインストールできます。
 
-1. Office.com にアクセスします。 職場のアカウントでサインインする必要があるかもしれません。
+1. office.com にアクセスします。 仕事用アカウントでサインインする必要があるかもしれません。
 2. **[Office のインストール]**  >  **[Microsoft 365 Apps]**  >  **[実行]** の順に選択し、**[はい]** を選択します。
-3. アプリOfficeインストールされている場合。 このプロセスには数分かかる場合があります。 完了したら、**[閉じる]** を選択します。
+3. Office アプリがインストールされました。 このプロセスには数分かかる場合があります。 完了したら、**[閉じる]** を選択します。
 4. Microsoft Teams をインストールするには、office.com ページに移動し、**[Teams]** を選択します。
 5. Windows アプリを入手してから、**[実行]** を選択します。 インストールが完了すると、Teams のダイアログが表示されます。
 
@@ -63,10 +63,10 @@ Microsoft Office アプリは、**[スタート]** メニューから見つけ�
 
 ::: moniker range="o365-21vianet"
 
-Azure Active Directory Premium (AADP) プラン 1 またはプラン 2 を購入した場合には、Microsoft Identity Manager (MIM) の利用対象となります。 MIM をダウンロードするには、[ダウンロード センター](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)に移動します。
+Azure Active Directory Premium (AADP) プラン 1 またはプラン 2 を購入した場合には、Microsoft Identity Manager (MIM) の利用対象となります。MIM をダウンロードするには、[ダウンロード センター](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)に移動します。
 
 ::: moniker-end
 
 ## <a name="related-content"></a>関連コンテンツ
   
-[インストールのトラブルシューティング OfficeとMicrosoft 365 (](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)記事)
+[Office と Microsoft 365 を両方インストールする場合のトラブルシューティング](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2) (記事)

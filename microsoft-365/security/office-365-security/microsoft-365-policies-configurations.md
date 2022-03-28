@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: abfd2603d4b374899ba3ff17d1be977043c5d5ab
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c8bf111acd41ede8a493672234de4e4a33ccd105
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313035"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775854"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>ゼロ トラスト ID とデバイスのアクセス構成
 
@@ -39,7 +39,7 @@ ms.locfileid: "63313035"
 
 - 最小特権アクセスを使用する
 
-  Just-In-Time および Just-Enough-Access (JIT/JEA)、リスクベースのアダプティブ ポリシー、およびデータ保護を使用してユーザー アクセスを制限します。  
+  Just-In-Time および Just-Enough-Access (JIT/JEA)、リスクベースのアダプティブ ポリシー、およびデータ保護を使用してユーザー アクセスを制限します。
 
 - 違反を想定する
 
@@ -157,7 +157,6 @@ Azure AD ID 管理機能の完全なスイートを提供します。 これら�
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|組織の ID に影響を与える潜在的な脆弱性を検出し、自動修復ポリシーを低、中、高のサインイン リスクとユーザー リスクに構成できます。 このガイダンスは、多要素認証に条件付きアクセス ポリシーを適用するために、このリスク評価に依存します。 このガイダンスには、アカウントのリスクの高いアクティビティが検出された場合に、ユーザーがパスワードを変更する必要がある条件付きアクセス ポリシーも含まれています。|Microsoft 365 E5、Microsoft 365 E3 E5 セキュリティ アドオン、EMS E5、またはライセンスAzure AD Premium P2する|
 |[セルフサービス パスワードのリセット (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|管理者が制御できる複数の認証方法の検証を提供することで、ユーザーがヘルプ デスクの介入なしに安全にパスワードをリセットできます。|Microsoft 365 E3 または E5|
 |[Azure ADパスワード保護](/azure/active-directory/authentication/concept-password-ban-bad)|既知の脆弱なパスワードとそのバリアント、および組織に固有の追加の弱い用語を検出してブロックします。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。|Microsoft 365 E3 または E5|
-|
 
 Intune やアプリのオブジェクト、設定、およびサブサービスを含む、ゼロトラスト ID とデバイス アクセスAzure ADを次に示します。
 
@@ -199,7 +198,6 @@ Windows 11 または Windows 10のMicrosoft 365 Apps for enterpriseは、PC に�
 |**パスワードの変更を適用する**|リスクの高いユーザーの場合|リスクの高いユーザーの場合|リスクの高いユーザーの場合|
 |**Intune アプリケーション保護の適用**|はい|はい|はい|
 |**組織が所有するデバイスに Intune 登録を適用する**|準拠またはドメインに参加している PC が必要ですが、持ち込み専用デバイス (BYOD) の電話とタブレットを許可する|準拠しているデバイスまたはドメインに参加しているデバイスを要求する|準拠しているデバイスまたはドメインに参加しているデバイスを要求する|
-|
 
 ## <a name="device-ownership"></a>デバイスの所有権
 

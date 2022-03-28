@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint アーキテクチャの要件と主な概念を確認する
-description: テスト ラボまたはパイロット環境を構築する前Microsoft 365 Defenderの Microsoft Defender for Endpoint の技術図は、Microsoft 365の ID を理解するのに役立ちます。
+description: Microsoft Defender for Endpoint in Microsoft 365 Defenderの技術図は、Microsoft 365またはパイロット環境を構築する前に、ユーザーの ID を理解するのに役立ちます。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7a7e7a397f9cf9f89b75eb1f515e37a5386a73b1
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: b1381e7c2be2224818c72fb8e269ad65ffcacfc8
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171937"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755028"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Microsoft Defender for Endpoint アーキテクチャの要件と主な概念を確認する
 
@@ -34,7 +34,7 @@ ms.locfileid: "62171937"
 
 この記事では、Microsoft Defender for Endpoint 環境の評価をセットアップするプロセスについて説明します。
 
-このプロセスの詳細については、「概要」の記事を [参照してください](eval-defender-endpoint-overview.md)。
+このプロセスの詳細については、概要の記事を [参照してください](eval-defender-endpoint-overview.md)。
 
 Microsoft Defender for Endpoint を有効にする前に、アーキテクチャを理解し、要件を満たしていることを確認してください。
 
@@ -42,7 +42,7 @@ Microsoft Defender for Endpoint を有効にする前に、アーキテクチャ
 
 次の図は、Microsoft Defender for Endpoint アーキテクチャと統合を示しています。 
 
-![Defender 評価環境に Microsoft Defender を追加Office手順を実行します。](../../media/defender/m365-defender-endpoint-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="Defender 評価環境に Microsoft Defender を追加Office手順" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
 
 次の表で、図について説明します。
 
@@ -51,7 +51,7 @@ Microsoft Defender for Endpoint を有効にする前に、アーキテクチャ
 1 | デバイスは、サポートされている管理ツールのいずれかを介してオンボードされます。 
 2 | ボード上のデバイスは、Microsoft Defender for Endpoint シグナル データを提供して応答します。
 3 | 管理対象デバイスは、デバイスに参加または登録Azure Active Directory。
-4 | ドメインに参加しているWindowsデバイスは、デバイスを使用Azure Active DirectoryにAzure Active Directory Connect。
+4 | ドメインに参加しているWindowsデバイスは、ドメイン を使用してAzure Active DirectoryにAzure Active Directory Connect。
 5 | Microsoft Defender for Endpoint のアラート、調査、および応答は、Microsoft 365 Defender。
 
 ## <a name="understand-key-concepts"></a>主要な概念を理解する
@@ -75,12 +75,12 @@ Microsoft Defender for Endpoint に含まれる機能の詳細については、
 
 Microsoft Defender for Endpoint と Microsoft Sentinel を統合して、組織全体のセキュリティ イベントをより包括的に分析し、プレイブックを構築して効果的かつ迅速な対応を行います。 
 
-Microsoft Defender for Endpoint は、他のセキュリティ情報およびイベント管理 (SIEM) ソリューションにも統合できます。 詳細については [、「Enable SIEM integration in Microsoft Defender for Endpoint」を参照してください](/microsoft-365/security/defender-endpoint/enable-siem-integration)。
+Microsoft Defender for Endpoint は、他のセキュリティ情報およびイベント管理 (SIEM) ソリューションにも統合できます。 詳細については、「 [Enable SIEM integration in Microsoft Defender for Endpoint」を参照してください](/microsoft-365/security/defender-endpoint/enable-siem-integration)。
 
 
 ## <a name="next-steps"></a>次の手順
 [評価を有効にする](eval-defender-endpoint-enable-eval.md)
 
-エンドポイントの Microsoft [Defender の評価の概要に戻る](eval-defender-endpoint-overview.md)
+エンドポイントの Microsoft Defender の [評価の概要に戻る](eval-defender-endpoint-overview.md)
 
-[評価とパイロット][の概要に戻Microsoft 365 Defender](eval-overview.md)
+[評価とパイロット] [の概要に戻Microsoft 365 Defender](eval-overview.md)

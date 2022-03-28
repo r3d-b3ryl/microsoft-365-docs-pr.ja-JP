@@ -1,6 +1,6 @@
 ---
 title: Hello World for Microsoft 365 Defender REST API
-description: アプリを作成し、トークンを使用してアプリ API にアクセスするMicrosoft 365 Defenderする
+description: アプリを作成し、トークンを使用してアプリ API にアクセスするMicrosoft 365 Defender説明します。
 keywords: アプリ、トークン、アクセス、aad、アプリ、アプリケーション登録、powershell、スクリプト、グローバル管理者、アクセス許可、microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 1c83a64c3bf1e721ea54b526c0db0c5d7c403fba
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 3a8696a14b85374d4bcb0a8704c14b82fdd845b5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172441"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754603"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World for Microsoft 365 Defender REST API
 
@@ -47,45 +47,46 @@ ms.locfileid: "62172441"
 
 1. グローバル管理者ロール [を持](https://portal.azure.com) つユーザーとして Azure **にサインイン** します。
 
-2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。
+2. [アプリの **登録Azure Active Directory** > **新しい登録** > **] に移動します**。
 
-   ![アプリケーションの登録Microsoft Azureナビゲーションのイメージ。](../../media/atp-azure-new-app2.png)
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="[新しい登録] セクション (Microsoft 365 Defender ポータル)" lightbox="../../media/atp-azure-new-app2.png":::
 
-3. 登録フォームで、アプリケーションの名前を選択し、[登録] を **選択します**。 リダイレクト URI の選択はオプションです。 この例を完了するために必要な情報は不要です。
+3. 登録フォームで、アプリケーションの名前を選択し、[登録] を選択 **します**。 リダイレクト URI の選択はオプションです。 この例を完了するために必要な情報は不要です。
 
-4. アプリケーション ページで **、[API アクセス** 許可] [アクセス許可の追加] を選択し、組織で使用するアクセス許可 API > Microsoft Threat Protection と入力し  >    >  **、[Microsoft** Threat **Protection] を選択します**。 これで、アプリはアプリにアクセスMicrosoft 365 Defender。
+4. [アプリケーション] ページで、[**API PermissionsAdd** >  **permissionAPIs** > ] を選択します。組織で使用> **Microsoft Threat Protection** と入力し、[Microsoft Threat Protection] を **選択します**。 これで、アプリはアプリにアクセスMicrosoft 365 Defender。
 
    > [!TIP]
    > *Microsoft Threat Protection* は、元のMicrosoft 365 Defenderの名前であり、元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
-   ![API アクセス許可の選択のイメージ。](../../media/apis-in-my-org-tab.PNG)
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="ポータルでの API の使用状況のMicrosoft 365 Defenderします。" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
-   - [**アプリケーションのアクセス許可**  >  **インシデント.Read.All] を選択し、[** アクセス許可 **の追加] を選択します**。
+   - [ **アプリケーションのアクセス許可** > **Incident.Read.All] を選択し、[** アクセス許可 **の追加] を選択します**。
 
-   ![API アクセスと API の選択のイメージ。](../../media/request-api-permissions.PNG)
+     :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="アプリケーションポータルのアプリケーションのアクセス許可ウィンドウMicrosoft 365 Defenderします。" lightbox="../../media/request-api-permissions.PNG":::
 
-5. [管理者 **の同意を付与する] を選択します**。 アクセス許可を追加する度に、[管理者の同意 **を付与** する] を選択して有効に設定する必要があります。
+5. [管理者 **の同意を許可する] を選択します**。 アクセス許可を追加する度に、[管理者の同意 **を付与** する] を選択して有効に設定する必要があります。
 
-    ![アクセス許可の付与のイメージ。](../../media/grant-consent.PNG)
+    :::image type="content" source="../../media/grant-consent.PNG" alt-text="ポータルの [管理者の同意の付与Microsoft 365 Defender]" lightbox="../../media/grant-consent.PNG":::
 
-6. アプリケーションにシークレットを追加します。 [ **証明書とシークレット&選択** し、シークレットに説明を追加し、[追加] を **選択します**。
+6. アプリケーションにシークレットを追加します。 [ **証明書とシークレット&選択** し、シークレットに説明を追加してから、[追加] を選択 **します**。
 
     > [!TIP]
     > [追加] を **選択した後**、生成 **されたシークレット値をコピーします**。 退出後にシークレット値を取得できない。
 
-    ![アプリ キーの作成のイメージ。](../../media/webapp-create-key2.png)
+    :::image type="content" source="../../media/webapp-create-key2.png" alt-text="ポータルの [シークレットの追加] セクションMicrosoft 365 Defenderします。" lightbox="../../media/webapp-create-key2.png":::
+    
 
 7. アプリケーション ID とテナント ID を安全な場所に記録します。 アプリケーション ページの [概要] **に** 一覧表示されます。
 
-   ![作成されたアプリ ID のイメージ。](../../media/app-and-tenant-ids.png)
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="ポータルの [概要] セクションMicrosoft 365 Defenderします。" lightbox="../../media/app-and-tenant-ids.png":::
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>アプリを使用してトークンを取得し、トークンを使用して API にアクセスする
 
-トークンの詳細については、Azure Active Directoryチュートリアルを[Azure ADしてください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
+トークンの詳細については、「Azure Active Directoryチュートリアル[」をAzure ADしてください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 > [!IMPORTANT]
-> このデモ アプリの例では、テスト目的でシークレット値を貼り付けるのを推奨しますが、実稼働環境で実行されているアプリケーションにシークレットをハードコードする必要があります。 サード パーティは、シークレットを使用してリソースにアクセスできます。 [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates)を使用すると、アプリのシークレットをセキュリティで保護できます。 アプリを保護する方法の実用的な例については、「Azure Key Vault を使用してサーバー アプリのシークレットを管理する」 [を参照してください](/learn/modules/manage-secrets-with-azure-key-vault/)。
+> このデモ アプリの例では、テスト目的でシークレット値を貼り付けるのを推奨しますが、実稼働環境で実行されているアプリケーションにシークレットをハードコードする必要があります。 サード パーティは、シークレットを使用してリソースにアクセスできます。 [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates) を使用すると、アプリのシークレットをセキュリティで保護できます。 アプリを保護する方法の実用的な例については、「Azure Key Vault を使用してサーバー アプリのシークレットを管理する [」を参照してください](/learn/modules/manage-secrets-with-azure-key-vault/)。
 
-1. 下のスクリプトをコピーして、お気に入りのテキスト エディターに貼り付けます。 名前を付 **けてGet-Token.ps1。** また、PowerShell ISE でコードを as-is で実行することもできますが、次のセクションでインシデント フェッチ スクリプトを使用するときにもう一度実行する必要がある場合は、保存する必要があります。
+1. 下のスクリプトをコピーして、お気に入りのテキスト エディターに貼り付けます。 名前を付 **けてGet-Token.ps1** します。 また、PowerShell ISE でコードを as-is で実行することもできますが、次のセクションでインシデント フェッチ スクリプトを使用するときにもう一度実行する必要がある場合は、保存する必要があります。
 
     このスクリプトはトークンを生成し、作業フォルダーの名前の下に保存 *Latest-token.txt。*
 
@@ -114,18 +115,18 @@ ms.locfileid: "62172441"
 #### <a name="validate-the-token"></a>トークンを検証する
 
 1. 受信したトークンを [JWT](https://jwt.ms) にコピーして貼り付け、デコードします。
-1. *JWT は* *JSON Web トークンを表します*。 デコードされたトークンには、多数の JSON 形式のアイテムまたはクレームが含まれます。 デコードされたトークン内 *のロール* クレームに必要なアクセス許可が含まれているか確認します。
+1. *JWT は* *JSON Web トークンの略です*。 デコードされたトークンには、多数の JSON 形式のアイテムまたはクレームが含まれます。 デコードされたトークン内 *のロール* クレームに必要なアクセス許可が含まれているか確認します。
 
-    次の図では、アプリから取得したデコードトークンと、アクセス許可 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` を ```AdvancedHunting.Read.All``` 表示できます。
+    次の図では、アプリ```Incidents.Read.All```から取得したデコードトークンと、アクセス許可を```Incidents.ReadWrite.All``````AdvancedHunting.Read.All```表示できます。
 
-    ![イメージ jwt.ms。](../../media/api-jwt-ms.png)
+    :::image type="content" source="../../media/api-jwt-ms.png" alt-text="[デコードされたトークン] セクション (Microsoft 365 Defender ポータル)" lightbox="../../media/api-jwt-ms.png":::
 
 ### <a name="get-a-list-of-recent-incidents"></a>最近のインシデントの一覧を取得する
 
 以下のスクリプトでは、API **Get-Token.ps1** を使用します。 次に、過去 48 時間以内に最後に更新されたインシデントの一覧を取得し、そのリストを JSON ファイルとして保存します。
 
 > [!IMPORTANT]
-> このスクリプトは、保存したフォルダーと同じフォルダーに **Get-Token.ps1。**
+> このスクリプトは、保存したフォルダーと同 **じフォルダーに** Get-Token.ps1。
 
 ```PowerShell
 # This script returns incidents last updated within the past 48 hours.
@@ -176,7 +177,7 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 - [Microsoft 365 Defender API の概要](api-overview.md)
 - [API にMicrosoft 365 Defenderする](api-access.md)
 - [ユーザーなしでアプリを作成してMicrosoft 365 Defenderにアクセスする](api-create-app-web.md)
-- [ユーザーに代わって API にMicrosoft 365 Defenderするアプリを作成する](api-create-app-user-context.md)
-- [複数テナントパートナーによる API へのアクセス権を持つアプリをMicrosoft 365 Defenderする](api-partner-access.md)
+- [ユーザーに代わってアプリMicrosoft 365 Defender API にアクセスする](api-create-app-user-context.md)
+- [複数テナントパートナーによる API へのアクセス権を持つアプリMicrosoft 365 Defender作成する](api-partner-access.md)
 - [Azure Key Vault を使用してサーバー アプリのシークレットを管理する](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 ユーザー サインインと API アクセスの承認](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

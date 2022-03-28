@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bbd4100466fbfef75363848bc5b89bbb9a769265
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: f6767b1a788129266bff713a6608277a2450598c
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401078"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775898"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 
@@ -34,7 +34,7 @@ ms.locfileid: "63401078"
 1. 調査する [必要がある macOS](https://aka.ms/XMDEClientAnalyzer) または Linux コンピューターに XMDE クライアント アナライザー ツールをダウンロードします。
 
    > [!NOTE]
-   > 上記のリンクからダウンロードされる 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'B95E2E2E21D5A93E0AC88BA401ACB20E5F721727B409D4186147C8D17468185583'です。
+   > 上記のリンクからダウンロードされた 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'A9BF065DE3F2608A309BC4F529548BB9931F107BF2F01DC42A789C5527C1308'です。
 
 2. コンピューター上のXMDEClientAnalyzer.zipを抽出します。
 

@@ -23,12 +23,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cc57c2b39466e84d5652ef60c56d6951fbe86714
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0ad2fc9a1566e7816b3ff806b7d07ac29347cc89
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324089"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754771"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>パイロットMicrosoft 365 Defenderインシデント対応機能を試す
 
@@ -51,7 +51,8 @@ ms.locfileid: "63324089"
 
 インシデント ポータルのクイック起動時に、インシデント &**アラート**>インシデント キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderきます</a>。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="ポータルの [インシデント&通知] セクションMicrosoft 365 Defenderします。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+
 
 [ **最新のインシデントと** 通知] セクションには、過去 24 時間に受信したアラートとインシデントが作成された数のグラフが表示されます。
 
@@ -63,7 +64,7 @@ ms.locfileid: "63324089"
 
 既定のインシデント キューから、[フィルター] **を選択して** [フィルター] ウィンドウを表示し、そこから特定のインシデント のセットを指定できます。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="インシデント キューのフィルター ウィンドウの例。":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="[インシデント] ポータルの [インシデント&アラート] セクションの [フィルター] Microsoft 365 Defenderします。" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 詳細については、「インシデントの優先順位付 [け」を参照してください](incident-queue.md)。
 
@@ -71,7 +72,7 @@ ms.locfileid: "63324089"
 
 インシデントを管理するには、インシデント用の[**インシデントの管理**] ウィンドウから行います。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="インシデントの [インシデントの管理] ウィンドウの例。":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="[インシデント] ポータルの [インシデント&アラートの管理] Microsoft 365 Defenderします。" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 このウィンドウは、次の [インシデントの **管理** ] リンクから表示できます。
 
@@ -112,11 +113,12 @@ ms.locfileid: "63324089"
 
 次に例を示します。
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="[統合アクション センター] Microsoft 365 Defender。":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="統合アクション センター (Microsoft 365 Defender ポータル)" lightbox="../../media/m3d-action-center-unified.png":::
 
 アクション センターから保留中のアクションを選択し、フライアウト ウィンドウで承認または拒否できます。 次に例を示します。
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="アクションを承認または拒否します。":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="ポータルでアクションを承認または拒否するオプションを表示Microsoft 365 Defenderウィンドウ" lightbox="../../media/air-actioncenter-itemselected.png":::
+
 
 保留中のアクションをできるだけ早く承認 (または拒否) して、自動化された調査を実行し、時間に合った方法で完了できます。
 
@@ -187,7 +189,7 @@ ms.locfileid: "63324089"
       > [!NOTE]
       > データの取得を制限するオプションのフィルター処理については、次の手順を参照してください。
 
-      ![高度な検索クエリの結果の例。](../../media/advanced-hunting-incident-response-try-1.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-1.png" alt-text="[高度な検索] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/advanced-hunting-incident-response-try-1.png":::
 
         > [!NOTE]
         > 高度な検索では、クエリ結果が表形式のデータとして表示されます。 グラフなどの他の形式のデータを表示することもできます。
@@ -201,7 +203,7 @@ ms.locfileid: "63324089"
 
    1. クエリの結果の行をクリックして、レコードを検査できます。
 
-      ![高度な検索結果が選択されている場合に開く検査レコード側パネルの例。](../../media/advanced-hunting-incident-response-try-2.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-2.png" alt-text="ポータルの [高度な検索] ページの [レコードのMicrosoft 365 Defender] セクション" lightbox="../../media/advanced-hunting-incident-response-try-2.png":::
 
 4. メールが表示されるのを確認したので、添付ファイルのフィルターを追加します。 環境内の添付ファイルを含むすべてのメールに焦点を当てる。 このシミュレーションでは、環境から送信されるメールではなく、受信メールに焦点を当てる必要があります。 追加したフィルターを削除して、メッセージを見つけて "メッセージ" を追加| **AttachmentCount > 0** と **EmailDirection** == **"Inbound""**
 
@@ -259,40 +261,41 @@ ms.locfileid: "63324089"
 
 1. クエリ ページで、Go ハンティング手順の手順 7 で追加された行 7 と 8 を削除し、[検出ルールの作成] **をクリックします**。
 
-   ![高度な検索ページで [検出ルールの作成] をクリックできる場所の例。](../../media/advanced-hunting-incident-response-try-3.png)
+   :::image type="content" source="../../media/advanced-hunting-incident-response-try-3.png" alt-text="ポータルの [高度な検索] ページの [クエリ編集] Microsoft 365 Defenderセクション" lightbox="../../media/advanced-hunting-incident-response-try-3.png":::
 
    > [!NOTE]
    > [検出ルール **の作成] を** クリックし、クエリに構文エラーがある場合、検出ルールは保存されません。 クエリをダブルクリックして、エラーがないか確認します。
 
 2. 必要なフィールドに、セキュリティ チームがアラートを理解できる情報、アラートが生成された理由、および必要なアクションを入力します。
 
-   ![アラートの詳細を定義できる検出ルールの作成ページの例。](../../media/mtp/fig23.png)
+   :::image type="content" source="../../media/mtp/fig23.png" alt-text="[アラートの詳細] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/mtp/fig23.png":::
 
    この検出ルールアラートに関する情報に基づいた決定を次のユーザーに提供するために、フィールドに明確な情報を入力してください。
 
 3. このアラートで影響を受け取るエンティティを選択します。 この場合、[デバイスとメールボックス **] を****選択します**。
 
-   ![影響を受け取ったエンティティのパラメーターを選択できる検出ルールの作成ページの例。](../../media/mtp/fig24.png)
+   :::image type="content" source="../../media/mtp/fig24.png" alt-text="[影響を受け取ったエンティティの詳細] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/mtp/fig24.png":::
 
 4. アラートがトリガーされた場合に実行するアクションを決定します。 この場合、ウイルス対策スキャンを実行しますが、他の操作を実行できます。
 
-   ![脅威への対処に役立つアラートがトリガーされた場合にウイルス対策スキャンを実行できる検出ルールの作成ページの例。](../../media/mtp/fig25.png)
+   :::image type="content" source="../../media/mtp/fig25.png" alt-text="[アクション] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/mtp/fig25.png":::
 
 5. アラート ルールのスコープを選択します。 このクエリにはデバイスが含まれるので、デバイス グループは Microsoft Defender for Endpoint コンテキストに従って、このカスタム検出に関連します。 影響を受け取ったエンティティとしてデバイスを含めないカスタム検出を作成する場合、スコープは適用されません。
 
-   ![アラート ルールの範囲を設定できる検出ルールの作成ページの例は、表示される結果に対する期待値を管理します。](../../media/mtp/fig26.png)
+   :::image type="content" source="../../media/mtp/fig26.png" alt-text="[スコープ] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/mtp/fig26.png":::
+
 
    このパイロットの場合は、このルールを実稼働環境のテスト デバイスのサブセットに制限できます。
 
 6. **[作成]** を選択します。 次に、ナビゲーション **パネルから [カスタム** 検出ルール] を選択します。
 
-   ![メニューの [カスタム検出ルール] オプションの例。](../../media/mtp/fig27a.png)
+   :::image type="content" source="../../media/mtp/fig27a.png" alt-text="[カスタム検出ルール] オプション (Microsoft 365 Defender ポータル)" lightbox="../../media/mtp/fig27a.png":::
 
-   ![ルールと実行の詳細を表示する検出ルール ページの例。](../../media/mtp/fig27b.png)
+   :::image type="content" source="../../media/mtp/fig27b.png" alt-text="検出ルールと実行の詳細をポータルに表示Microsoft 365 Defenderページ" lightbox="../../media/mtp/fig27b.png":::
 
    このページから検出ルールを選択すると、詳細ページが開きます。
 
-   ![ルールの実行の状態、トリガーされたアラートとアクション、検出の編集などについて確認できる電子メール添付ファイル ページの例。](../../media/mtp/fig28.png)
+   :::image type="content" source="../../media/mtp/fig28.png" alt-text="トリガーされたアラートの詳細をポータルに表示Microsoft 365 Defenderページ" lightbox="../../media/mtp/fig28.png":::
 
 
 ### <a name="expert-training-on-advanced-hunting"></a>高度な狩猟に関する専門家のトレーニング

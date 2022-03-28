@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ab0eb6c9f7ecfbc51de4857d708f1fa34bd3f515
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 59933705bb113e4ad23b12fe8bf00e8d0ca2e701
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313197"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775810"
 ---
 # <a name="insider-risk-management-cases"></a>Insider リスク管理ケース
 
@@ -150,7 +150,7 @@ ms.locfileid: "63313197"
 
 ### <a name="contributors"></a>共同作成者
 
-ケースの [**共同作成者**] タブでは、リスク分析担当者や調査担当者が、ケースに別のレビュー担当者を追加することができます。 既定では、 **Insider Risk Management Analysts および Insider Risk Management** **Investigators** の役割が割り当てられているすべてのユーザーが、アクティブなケースとクローズされたケースごとに投稿者として一覧表示されます。 Insider Risk **Management Investigators ロールが割り** 当てられているユーザーだけが、コンテンツ エクスプローラーでファイルとメッセージを表示する権限を持ちます。
+ケースの [**共同作成者**] タブでは、リスク分析担当者や調査担当者が、ケースに別のレビュー担当者を追加することができます。 既定では、**Insider リスク** 管理アナリストと Insider リスク管理調査員の役割を割り当てられたすべてのユーザーが、アクティブなケースとクローズされたケースごとに投稿者として一覧表示されます。 Insider Risk **Management Investigators ロールが割り** 当てられているユーザーだけが、コンテンツ エクスプローラーでファイルとメッセージを表示する権限を持ちます。
 
 ユーザーを投稿者として追加することで、ケースへの一時的なアクセスを許可できます。 投稿者は、次の場合を除き、特定のケースに対してすべてのケース管理制御を持っています。
 

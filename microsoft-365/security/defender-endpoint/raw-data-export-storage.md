@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9db98456cc971b4ac4179cd4f3460dfe2137b91
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 77220c8e34cfcbcdb6b1ca527786696bb67e5d79
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156252"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465782"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Microsoft Defender for Endpoint を構成して、高度なハンティング イベントを自分のアカウントStorageする
 
@@ -36,11 +36,11 @@ ms.locfileid: "62156252"
 
 1. テナントに[Storageアカウント](/azure/storage/common/storage-account-overview)を作成します。
 
-2. Azure テナントに [ログイン](https://ms.portal.azure.com/)し、[サブスクリプション] >[リソース プロバイダー> **Microsoft.insights >に登録** する] に移動します。
+2. Azure テナントにログインし、[ [サブスクリプション](https://ms.portal.azure.com/)] >[リソース プロバイダー> **Microsoft.insights >に登録** する] に移動します。
 
 ## <a name="enable-raw-data-streaming"></a>生データ ストリーミングを有効にする
 
-1. *グローバル管理者 [Microsoft 365 Defender](https://security.microsoft.com) _***セキュリティ** 管理者 **として _ログイン_ します。
+1. *Global Administrator_ [Microsoft 365 Defender](https://security.microsoft.com) _*_Security_ **Administrator****としてログインします。
 
 2. [データの[エクスポート設定] ページに移動](https://security.microsoft.com/interoperability/dataexport)Microsoft 365 Defender。
 
@@ -48,11 +48,11 @@ ms.locfileid: "62156252"
 
 4. 新しい設定の名前を選択します。
 
-5. [**イベントを転送する] をAzure Storage** します。
+5. [**イベントを転送する] をAzure Storage**。
 
-6. アカウント リソース **ID Storage入力します**。 アカウント リソース **ID** を取得 [Storage、Azure portal](https://ms.portal.azure.com/)の [プロパティ] タブの [Storage アカウント] ページに移動し、[アカウント リソース ID] の下Storage \> \> **コピーします**。
+6. アカウント リソース **ID Storage入力します**。 アカウント リソース **ID** を取得Storage、[Azure portal](https://ms.portal.azure.com/) \> の [プロパティ] タブの [Storage アカウント] ページに移動し\>、[アカウント リソース ID] の下Storage **コピーします**。
 
-   :::image type="content" alt-text="イベント ハブ リソース ID1 のイメージ。" source="images/storage-account-resource-id.png" lightbox="images/storage-account-resource-id.png":::
+   :::image type="content" source="images/storage-account-resource-id.png" alt-text="リソース ID 1 のイベント ハブ" lightbox="images/storage-account-resource-id.png":::
 
 7. ストリーミングするイベントを選択し、[保存] を **クリックします**。
 
@@ -60,7 +60,7 @@ ms.locfileid: "62156252"
 
 - BLOB コンテナーは、イベントの種類ごとに作成されます。
 
-  :::image type="content" alt-text="イベント ハブ リソース ID2 のイメージ。" source="images/storage-account-event-schema.png" lightbox="images/storage-account-event-schema.png":::
+  :::image type="content" source="images/storage-account-event-schema.png" alt-text="リソース ID 2 を持つイベント ハブ" lightbox="images/storage-account-event-schema.png":::
 
 - BLOB 内の各行のスキーマは、次の JSON です。
 
@@ -77,15 +77,15 @@ ms.locfileid: "62156252"
 
 - 各行には、イベント名、Defender for Endpoint がイベントを受信した時刻、そのイベントが属するテナント (テナントからのみイベントを取得する)、および JSON 形式のイベントが "properties" と呼ばれるプロパティで含まれる。
 
-- Microsoft Defender for Endpoint イベントのスキーマの詳細については、「Advanced Hunting [overview」を参照してください](advanced-hunting-overview.md)。
+- Microsoft Defender for Endpoint イベントのスキーマの詳細については、「Advanced Hunting overview [」を参照してください](advanced-hunting-overview.md)。
 
-- Advanced Hunting では **、DeviceInfo** テーブルに **MachineGroup** という名前の列が含まれるので、デバイスのグループが含まれる。 ここでは、すべてのイベントもこの列で装飾されます。 詳細については [、「デバイス グループ](machine-groups.md) 」を参照してください。
+- Advanced Hunting では、 **DeviceInfo** テーブルに **MachineGroup** という名前の列が含まれるので、デバイスのグループが含まれる。 ここでは、すべてのイベントもこの列で装飾されます。 詳細については [、「デバイス グループ](machine-groups.md) 」を参照してください。
 
 ## <a name="data-types-mapping"></a>データ型マッピング
 
 イベント プロパティのデータ型を取得するには、次の操作を行います。
 
-1. ログイン[して[詳細](https://security.microsoft.com)Microsoft 365 Defender]ページ[に移動します](https://security.microsoft.com/hunting-package)。
+1. ログインして[詳細[Microsoft 365 Defender](https://security.microsoft.com)]ページ[に移動します](https://security.microsoft.com/hunting-package)。
 
 2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。
 
@@ -97,7 +97,7 @@ ms.locfileid: "62156252"
 
 - デバイス情報イベントの例を次に示します。
 
-  ![イベント ハブ リソース ID3 のイメージ。](images/data-types-mapping-query.png)
+  :::image type="content" source="images/data-types-mapping-query.png" alt-text="リソース ID 3 のイベント ハブ" lightbox="images/data-types-mapping-query.png":::
 
 ## <a name="related-topics"></a>関連項目
 

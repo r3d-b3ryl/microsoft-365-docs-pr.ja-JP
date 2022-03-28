@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: MICROSOFT Defender for Endpoint のお客様向け JAMF Microsoft 365を使用して、macOS デバイスをオンボードおよびオフボードProコンプライアンス ソリューションに接続する方法について説明します (プレビュー)
-ms.openlocfilehash: 7e2109f52590cc4d9ad23700fa4b51a09ae4b5db
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: f260d901f8f02c2c02007b2cc0d49ab9ee57dafd
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526472"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716323"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
@@ -37,9 +37,8 @@ JAMF デバイスを使用Pro、コンプライアンス ソリューション�
 
 ## <a name="before-you-begin"></a>はじめに
 
-- [macOS デバイスが参加Azure ADする](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- [macOS デバイスが JAMF pro を介して管理されている必要があります。](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
-- macOS デバイスに v95+ Edge ブラウザーをインストールする 
+- macOS デバイス[が JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) pro を介して管理され、JAMF Connect または Intune を介して ID (Azure AD参加 UPN) に関連付けられているConnect確認します。
+- macOS デバイスに v95+ Edge ブラウザーをインストールする
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>JAMF を使用してMicrosoft 365コンプライアンス ソリューションにデバイスをオンボードPro
 

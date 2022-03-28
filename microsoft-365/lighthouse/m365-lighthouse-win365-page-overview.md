@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse 365 (クラウド PC) ページWindowsを参照してください。
-ms.openlocfilehash: 60b96974e0070e4a151484a162c3eafc18d0bf4a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fa910e3de992aa3f3f76090f76a473a96aebc8fb
+ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315527"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64387119"
 ---
 # <a name="windows-365-cloud-pcs-page-overview"></a>Windows 365 (クラウド PC) ページの概要  
   
@@ -32,15 +32,15 @@ Windows 365 は、Microsoft エンドポイント マネージャー (MEM) 管�
 > [!IMPORTANT]
 > ライトハウスでクラウド [PC](https://go.microsoft.com/fwlink/p/?linkid=2150463) を管理するには、MEM に移動して顧客テナントごとにクラウド PC をプロビジョニングする必要があります。 ライトハウス内からプロビジョニングを行う必要があります。
 
-顧客テナント用にクラウド PC をプロビジョニングすると、Microsoft 365 ホーム ページの Windows 365 カードは、プロビジョニングに失敗したクラウド PC の数やオンプレミスネットワーク接続エラーなど、アクションが必要なクラウド PC に関する簡単な通知を提供します。 詳細な状態を取得するには、Windows 365 カードのボタンを選択します (または、左側のナビゲーション ウィンドウで **Windows 365** を選択します)、Windows 365 ページを開きます。 このページから、顧客テナントに割り当てられたクラウド PC の状態の概要を取得し、管理しているすべてのクラウド PC と、そのテナントが割り当てられているテナントの一覧を表示し、顧客テナントと Azure Active Directory (Azure AD) の間のオンプレミス ネットワーク接続とその状態を表示できます。
+顧客テナント用にクラウド PC をプロビジョニングすると、Microsoft 365 ホーム ページの Windows 365 カードは、プロビジョニングに失敗したクラウド PC の数や Azure ネットワーク接続エラーなど、アクションが必要なクラウド PC に関する簡単な通知を提供します。 詳細な状態を取得するには、Windows 365 カードのボタンを選択します (または、左側のナビゲーション ウィンドウで **Windows 365** を選択します)、Windows 365 ページを開きます。 このページでは、顧客テナントに割り当てられたクラウド PC の状態の概要を取得し、管理しているすべてのクラウド PC と、そのテナントが割り当てられているテナントの一覧を表示し、顧客テナントと Azure Active Directory (Azure AD) の間の Azure ネットワーク接続とその状態を表示できます。
 
 ## <a name="overview-tab"></a>[概要] タブ
 
-[概要] タブで、色付きカウント注釈バーには、次の状態を持つすべての顧客テナントにおけるクラウド PC またはオンプレミスネットワーク接続の総数が表示されます。ネットワーク接続の失敗、プロビジョニングの失敗、プロビジョニングの失敗、および間もなくプロビジョニング解除が行えます。
+[概要] タブで、色付きカウント注釈バーには、次の状態を持つすべての顧客テナントにおけるクラウド PC または Azure ネットワーク接続の総数が表示されます。ネットワーク接続の失敗、プロビジョニングの失敗、プロビジョニングの失敗、および間もなくプロビジョニング解除が行えます。
 
 各顧客テナントのクラウド PC の状態の内訳は、注釈バーの下の一覧で確認できます。 特定の状態のクラウド PC を持つテナントを確認するには、カウント注釈バーからその状態を選択してリストをフィルター処理します。 1 つ以上の特定の顧客テナントのクラウド PC の状態を確認するには、[テナント] ドロップダウン メニューを使用してリストをフィルター処理します。
 
-特定の顧客テナントの詳細な状態情報を取得するには、そのテナントの状態列の下の値を選択します。 値が含む列に応じて、[ **オンプレミス** ネットワーク接続] タブまたは [すべてのクラウド **PC** ] タブが開き、詳細が表示されます。
+特定の顧客テナントの詳細な状態情報を取得するには、そのテナントの状態列の下の値を選択します。 値が含む列に応じて、[ **Azure ネットワーク** 接続] タブまたは [すべてのクラウド **PC** ] タブが開き、詳細が表示されます。
 
 [概要] タブには、次のオプションも含まれています。
 
@@ -48,7 +48,7 @@ Windows 365 は、Microsoft エンドポイント マネージャー (MEM) 管�
 - **エクスポート:** クラウド PC データをコンマ区切り値 (Excel) ファイルにエクスポート.csvします。
 - **検索:** キーワードを入力して、リスト内の特定のクラウド PC をすばやく見つける。
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="[365 Windows] タブのスクリーンショット。":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="[365 Windows] タブのスクリーンショット。" lightbox="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png":::
 
 ## <a name="all-cloud-pcs-tab"></a>[すべてのクラウド PC] タブ
 
@@ -76,25 +76,25 @@ Windows 365 は、Microsoft エンドポイント マネージャー (MEM) 管�
 
 クラウド PC プロビジョニングの状態と、その意味の完全な一覧については、「Windows 365 ドキュメント ライブラリ」を参照してください。[](/windows-365/enterprise/device-management-overview#column-details)
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="[365 Windowsクラウド PC] タブのスクリーンショット。":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="[365 Windowsクラウド PC] タブのスクリーンショット。" lightbox="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png":::
 
-## <a name="on-premises-network-connections-tab"></a>[オンプレミスネットワーク接続] タブ
+## <a name="azure-network-connections-tab"></a>[Azure ネットワーク接続] タブ
 
-[オンプレミスのネットワーク接続] タブで、色付きカウント注釈バーに、次の状態を持つすべての顧客テナントのオンプレミス ネットワーク接続の総数が表示されます。成功した接続と失敗した接続。
+[Azure ネットワーク接続] タブで、色付きカウント注釈バーに、成功した接続と失敗した接続の状態を持つすべての顧客テナント間の Azure ネットワーク接続の総数が表示されます。
 
-カウント注釈バーの下の一覧では、すべてのオンプレミスネットワーク接続とその接続状態を表示できます。
+カウント注釈バーの下の一覧で、すべての Azure ネットワーク接続とその接続状態を表示できます。
 
 特定のプロビジョニング状態の接続を表示するには、カウント注釈バーからその状態を選択してリストをフィルター処理します。 1 つ以上の特定の顧客テナントの接続状態を表示するには、[テナント] ドロップダウン メニューを使用してリストをフィルター処理します。
 
 一覧でアクションを実行したり、接続のトラブルシューティングを行う必要がある場合は、[接続の詳細を表示する] を選択 **Microsoft エンドポイント マネージャー。**
 
-[オンプレミスネットワーク接続] タブには、次のオプションもあります。
+[Azure ネットワーク接続] タブには、次のオプションも含まれています。
 
 - **更新:** 最新の接続データを取得する場合に選択します。
 - **エクスポート:** 接続データをコンマ区切り (Excel) ファイルにエクスポート.csvします。
 - **検索:** キーワードを入力して、特定の接続をすばやく見つける。
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/on-prem-network-connections-tab.png" alt-text="[365 Windowsネットワーク接続] タブのスクリーンショット。":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="[Azure ネットワーク接続] タブのスクリーンショット。" lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::
 
 ## <a name="related-content"></a>関連コンテンツ
 

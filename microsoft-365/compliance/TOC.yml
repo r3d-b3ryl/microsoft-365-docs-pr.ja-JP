@@ -342,7 +342,7 @@
               href: customize-a-built-in-sensitive-information-type.md
             - name: 構成可能な一致を使用するために完全一致スキーマを変更する
               href: sit-modify-edm-schema-configurable-match.md
-            - name: Exact Data Match アクティビティの通知を作成する (プレビュー)
+            - name: Exact Data Match アクティビティの通知を作成する
               href: sit-edm-notifications-activities.md
             - name: コンプライアンス センターでカスタムの機密情報の種類を管理する
               href: sit-manage-custom-sits-compliance-center.md
@@ -517,6 +517,8 @@
               href: dlp-policy-reference.md
         - name: DLP の使用を開始する
           items:
+            - name: エンドポイント データ損失防止の設定を構成する
+              href: dlp-configure-endpoint-settings.md
             - name: 既定の DLP ポリシーの使用を開始する
               href: get-started-with-the-default-dlp-policy.md
             - name: テンプレートから DLP ポリシーを作成する
@@ -533,6 +535,8 @@
               href: dlp-chrome-get-started.md
             - name: データ損失防止の警告ダッシュボードを開始する
               href: dlp-alerts-dashboard-get-started.md
+            - name: Power BI (プレビュー) のデータ損失防止ポリシーの使用を開始する
+              href: dlp-powerbi-get-started.md
         - name: DLP を使用する
           items:
             - name: DLP と Microsoft Teams

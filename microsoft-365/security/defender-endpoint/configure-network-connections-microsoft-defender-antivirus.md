@@ -16,12 +16,12 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f29cf5f77acd52a4ff3ccc8384f3c64861e48b64
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 1029549339d5c54334690bf5577a46f2d2be6bf6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806038"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465313"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 
@@ -30,14 +30,14 @@ ms.locfileid: "62806038"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-クラウドでMicrosoft Defender ウイルス対策保護が適切に動作するには、セキュリティ チームが、エンドポイントと特定の Microsoft サーバー間の接続を許可するネットワークを構成する必要があります。 この記事では、ファイアウォール ルールの使用を許可する必要がある接続の一覧を示します。 また、接続を検証するための手順も示します。 保護を適切に構成すると、クラウド配信の保護サービスから最高の価値を受け取るはずです。
+クラウドでMicrosoft Defender ウイルス対策保護が正常に動作するには、セキュリティ チームが、エンドポイントと特定の Microsoft サーバー間の接続を許可するネットワークを構成する必要があります。 この記事では、ファイアウォール ルールの使用を許可する必要がある接続の一覧を示します。 また、接続を検証するための手順も示します。 保護を適切に構成すると、クラウド配信の保護サービスから最高の価値を受け取るはずです。
 
 > [!IMPORTANT]
 > この記事では、ネットワーク接続の構成に関する情報をMicrosoft Defender ウイルス対策。 Microsoft Defender for Endpoint を使用している場合 (Microsoft Defender ウイルス対策を含む)、「デバイス プロキシとインターネット接続の設定を Defender for Endpoint 用に構成する[」を参照してください](configure-proxy-internet.md)。
 
 
 > [!NOTE]
-> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>クラウド サービスへの接続Microsoft Defender ウイルス対策する
 
@@ -86,36 +86,36 @@ ms.locfileid: "62806038"
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Microsoft から偽のマルウェア ファイルをダウンロードする
 
-クラウドに正しく接続されているMicrosoft Defender ウイルス対策検出およびブロックするサンプル ファイルをダウンロードできます。 ファイル [https://aka.ms/ioavtest](https://aka.ms/ioavtest) のダウンロードにアクセスします。
+クラウドに適切に接続Microsoft Defender ウイルス対策検出およびブロックするサンプル ファイルをダウンロードできます。 ファイル [https://aka.ms/ioavtest](https://aka.ms/ioavtest) のダウンロードにアクセスします。
 
 > [!NOTE]
 > ダウンロードしたファイルは、正確にはマルウェアではありません。 これは、クラウドに適切に接続されている場合にテストするように設計された偽のファイルです。
 
 適切に接続されている場合は、警告メッセージが表示Microsoft Defender ウイルス対策表示されます。
 
-アプリを使用しているMicrosoft Edge、通知メッセージも表示されます。
+ユーザー設定を使用しているMicrosoft Edge、通知メッセージも表示されます。
 
-:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="マルウェアが Edge で検出されたという通知Azure IoTです。":::
+:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Edge でマルウェアが見つかったという通知" lightbox="../../media/wdav-bafs-edge.png":::
 
 次のようなメッセージが表示されます。次のコマンドを使用Internet Explorer。
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="マルウェアが見つかったという Microsoft Defender AV 通知。":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="マルウェアが見つかったという Microsoft Defender AV 通知" lightbox="../../media/wdav-bafs-ie.png":::
 
 #### <a name="view-the-fake-malware-detection-in-your-windows-security-app"></a>アプリで偽のマルウェア検出をWindows セキュリティする
 
 1. タスク バーで 、[シールド] アイコンを選択し、アプリを **開** Windows セキュリティします。 または、[セキュリティの開始 **] を***検索します*。
 
-2. [ **ウイルス対策&保護] を選択** し、[保護の履歴] **を選択します**。
+2. [ **ウイルス対策&保護] を選択し**、[保護の履歴] **を選択します**。
 
 3. [検疫された **脅威] セクションで** 、[完全な履歴を **表示** ] を選択して、検出された偽のマルウェアを確認します。
 
    > [!NOTE]
-   > バージョン 1703 Windows 10以前のバージョンのユーザー インターフェイスは異なります。 「[Microsoft Defender ウイルス対策」を参照Windows セキュリティしてください](microsoft-defender-security-center-antivirus.md)。
+   > バージョン 1703 Windows 10以前のバージョンのユーザー インターフェイスは異なります。 「[Microsoft Defender ウイルス対策アプリ」の「Windows セキュリティ」を参照してください](microsoft-defender-security-center-antivirus.md)。
 
    またWindowsイベント ログには、クライアント [Windows Defender ID 1116 も表示されます](troubleshoot-microsoft-defender-antivirus.md)。
 
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft Defender for Endpoint のデバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
-- [グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策](use-group-policy-microsoft-defender-antivirus.md)
+- [グループ ポリシー設定を使用して、グループ ポリシーを構成および管理Microsoft Defender ウイルス対策](use-group-policy-microsoft-defender-antivirus.md)
 - [Microsoft Active Protection Services エンドポイントの重要な変更点](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 

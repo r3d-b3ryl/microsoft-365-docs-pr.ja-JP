@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56a836e14051e3f621fb42fd518fb2cf5efe8bed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 94e5b18ab1090f6fb76cb7734e90411b93b444e7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327701"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465457"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -69,11 +69,11 @@ ms.locfileid: "63327701"
 
 望ましくない可能性のあるアプリケーション (PUA) は、コンピューターの動作が遅くなる、予期しない広告を表示する、または最悪の場合は他のソフトウェアをインストールするソフトウェアのカテゴリです。予期しない、または望ましくない可能性があります。
 
-この機能を有効にし、PUA 保護がデバイスで構成されていない場合でも、不要な可能性のあるアプリケーション (PUA) がテナント内のすべてのデバイスで修復されます。 これにより、ユーザーがデバイスに不要なアプリケーションを誤ってインストールすることを防役立ちます。 オフにすると、修復はデバイスの構成に依存します。
+この機能を有効にし、PUA 保護がデバイスで構成されていない場合でも、不要な可能性のあるアプリケーション (PUA) がテナント内のすべてのデバイスで修復されます。 この機能のアクティブ化は、ユーザーがデバイスに不要なアプリケーションを誤ってインストールすることを防するのに役立ちます。 オフにすると、修復はデバイスの構成に依存します。
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>スコープ付きデバイス グループ内への相関関係の制限
 
-この構成は、ローカルの SOC 操作でアラートの相関関係をアクセスできるデバイス グループにのみ制限する場合に使用できます。 この設定を有効にすると、デバイス グループをまたがったアラートで構成されるインシデントは、1 つのインシデントとは見なされません。 ローカル SOC は、関連するデバイス グループの 1 つへのアクセス権を持つため、インシデントに対してアクションを実行できます。 ただし、グローバル SOC では、1 つのインシデントではなく、デバイス グループ別に複数の異なるインシデントが表示されます。 組織全体のインシデントの相関関係の利点を上回らない限り、この設定を有効にすることをお勧めしません。
+この構成は、ローカルの SOC 操作でアラートの相関関係をアクセスできるデバイス グループにのみ制限する場合に使用できます。 この設定を有効にすると、デバイス間グループが 1 つのインシデントと見なされなくなるというアラートで構成されるインシデントが発生します。 ローカル SOC は、関連するデバイス グループの 1 つへのアクセス権を持つため、インシデントに対してアクションを実行できます。 ただし、グローバル SOC では、1 つのインシデントではなく、デバイス グループ別に複数の異なるインシデントが表示されます。 組織全体のインシデントの相関関係の利点を上回らない限り、この設定を有効にすることをお勧めしません。
 
 > [!NOTE]
 > この設定を変更すると、将来のアラートの相関関係にのみ影響します。
@@ -109,7 +109,7 @@ Windows 10 Version 1809 以降に作成されたテナントの場合、自動�
 
 1. [オン] と [オフ] **の間で設定を** 切り **替えます**。
  
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="ブロック ファイル機能の詳細設定のイメージ。":::
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="[エンドポイント] 画面" lightbox="../../media/alloworblockfile.png":::
 
 1. ページ **の下部にある [基本** 設定の保存] を選択します。
 
@@ -147,7 +147,7 @@ Windows 10 Version 1809 以降に作成されたテナントの場合、自動�
 
 ## <a name="skype-for-business-integration"></a>Skype for Business 統合
 
-この統合をSkype for Businessすることで、ユーザーとコミュニケーションを取りSkype for Business、電子メール、または電話を使用できます。 これは、ユーザーと通信し、リスクを軽減する必要がある場合に便利です。
+この統合をSkype for Businessすることで、ユーザーとコミュニケーションを取りSkype for Business、電子メール、または電話を使用できます。 このライセンス認証は、ユーザーと通信し、リスクを軽減する必要がある場合に便利です。
 
 > [!NOTE]
 > デバイスがネットワークから分離されている場合、Outlook および Skype 通信を有効にし、ネットワークから切断されている間にユーザーに通信できるポップアップが表示されます。 この設定は、デバイスが分離モードSkype、Outlookの通信に適用されます。
@@ -213,7 +213,7 @@ Defender for Endpoint は、デバイス リスクベースの条件付[Microsof
 > [!IMPORTANT]
 > この機能を使用するには、Intune と Defender for Endpoint の両方で統合を有効にする必要があります。 特定の手順の詳細については、「 [Configure Conditional Access in Defender for Endpoint」を参照してください](configure-conditional-access.md)。
 
-この機能は、次の場合にのみ使用できます。
+この機能は、次の前提条件がある場合にのみ使用できます。
 
 - E5 (または E5) Enterprise Mobility + Security E3およびWindowsライセンスMicrosoft 365 Enterpriseテナント
 - Intune でMicrosoft Intuneデバイスが参加しているアクティブなWindows環境Azure AD[環境。](/azure/active-directory/devices/concept-azure-ad-join/)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e127f757b2aaa2865e8cb109699d76ed79f41cb6
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 41427760a0a02f0dafbb9685da457a473698207c
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785515"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754988"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>高度な検索クエリの結果を処理する
 
@@ -38,7 +38,7 @@ ms.locfileid: "60785515"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-高度な検索クエリを[](advanced-hunting-overview.md)作成して非常に正確な情報を取得することもできますが、クエリの結果を処理して、さらに詳しい分析情報を得て、特定のアクティビティとインジケーターを調査することもできます。 クエリ結果に対して次のアクションを実行できます。
+高度な検索クエリを[](advanced-hunting-overview.md)作成して正確な情報を取得することもできますが、クエリ結果を使用してさらに詳細な分析情報を取得し、特定のアクティビティとインジケーターを調査することもできます。 クエリ結果に対して次のアクションを実行できます。
 
 - 結果を表またはグラフとして表示する
 - 表とグラフのエクスポート
@@ -49,7 +49,7 @@ ms.locfileid: "60785515"
 既定では、高度な検索ではクエリ結果が表形式データとして表示されます。 グラフと同じデータを表示することもできます。 高度な検索では、次のビューがサポートされています。
 
 | ビューの種類 | 説明 |
-| -- | -- |
+|--|--|
 | **Table** | クエリ結果を表形式で表示する |
 | **縦棒グラフ** | X 軸上の一連の一意の項目を、高さが別のフィールドの数値を表す垂直バーとしてレンダリングされます。 |
 | **積み上げ列グラフ** | x 軸上の一連の一意のアイテムを、高さが 1 つ以上の他のフィールドの数値を表す積み上げ縦棒としてレンダリングされます。 |
@@ -63,7 +63,7 @@ ms.locfileid: "60785515"
 グラフをレンダリングする場合、高度な検索では、関心のある列と集計する数値が自動的に識別されます。 意味のあるグラフを取得するには、表示する特定の値を返すクエリを作成します。 サンプル クエリと結果のグラフを次に示します。
 
 #### <a name="alerts-by-severity"></a>重大度別のアラート
-グラフを `summarize` 作成する値の数値カウントを取得するには、演算子を使用します。 以下のクエリでは、演算子 `summarize` を使用して重大度別のアラート数を取得します。
+グラフを `summarize` 作成する値の数値カウントを取得するには、演算子を使用します。 以下のクエリでは、演算子を使用 `summarize` して重大度別のアラート数を取得します。
 
 ```kusto
 AlertInfo
@@ -71,12 +71,12 @@ AlertInfo
 ```
 結果をレンダリングすると、各重大度値が個別の列として列グラフに表示されます。
 
-![列グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-column-chart-new.png)
+:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="ポータルに高度な検索結果を表示するグラフのMicrosoft 365 Defender例" lightbox="../../media/advanced-hunting-column-chart-new.png":::
 *列グラフとして表示される重大度別のアラートのクエリ結果*
 
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>上位 10 個の送信者ドメインのフィッシングメール
-有限ではない値のリストを扱う場合は、演算子を使用して、最も多くのインスタンスを持つ値のみを `Top` グラフ化できます。 たとえば、フィッシングメールが最も多い上位 10 個の送信者ドメインを取得するには、次のクエリを使用します。
+有限ではない値の `Top` リストを扱う場合は、演算子を使用して、最も多くのインスタンスを持つ値のみをグラフ化できます。 たとえば、フィッシングメールが最も多い上位 10 の送信者ドメインを取得するには、次のクエリを使用します。
 
 ```kusto
 EmailEvents
@@ -86,11 +86,11 @@ EmailEvents
 ```
 円グラフ ビューを使用して、上位ドメイン全体の分布を効果的に表示します。
 
-![円グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-pie-chart-new.png)
+:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="ポータルで高度な検索結果を表示する円グラフMicrosoft 365 Defenderします。" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
 *上位の送信者ドメイン間でのフィッシングメールの配布を示す円グラフ*
 
 #### <a name="file-activities-over-time"></a>時間の間のファイル アクティビティ
-演算子を `summarize` 関数と一緒に使用すると、時間のとともに特定のインジケーター `bin()` に関連するイベントを確認できます。 以下のクエリは、ファイルに関連するイベントを 30 分間隔でカウントして、そのファイルに関連するアクティビティの `invoice.doc` スパイクを表示します。
+演算子を関数 `summarize` と一緒に使用 `bin()` すると、時間のとともに特定のインジケーターに関連するイベントを確認できます。 以下のクエリは、 `invoice.doc` ファイルに関連するイベントを 30 分間隔でカウントして、そのファイルに関連するアクティビティのスパイクを表示します。
 
 ```kusto
 CloudAppEvents
@@ -98,25 +98,25 @@ CloudAppEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-以下の線グラフは、以下を含むより多くのアクティビティを含む期間を明確に強調表示します `invoice.doc` 。 
+以下の線グラフは、以下を含むより多くのアクティビティを含む期間を明確に強調表示します `invoice.doc`。 
 
-![線グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/line-chart-a.png)
+:::image type="content" source="../../media/line-chart-a.png" alt-text="高度な検索結果をポータルに表示するMicrosoft 365 Defenderグラフ" lightbox="../../media/line-chart-a.png":::
 *ファイルに関連するイベントの時間の数を示す線グラフ*
 
 
 ## <a name="export-tables-and-charts"></a>表とグラフのエクスポート
 クエリを実行した後、[エクスポート] **を選択** して、結果をローカル ファイルに保存します。 選択したビューは、結果のエクスポート方法を決定します。
 
-- **テーブル ビュー** - クエリ結果が表形式でブックとしてエクスポートMicrosoft Excelされます。
+- **テーブル ビュー** - クエリ結果は、表形式でブックとしてエクスポートMicrosoft Excelされます。
 - **任意のグラフ** - クエリ結果は、レンダリングされたグラフの JPEG イメージとしてエクスポートされます。
 
 ## <a name="drill-down-from-query-results"></a>クエリ結果からドリルダウンする
 クエリ結果のレコードをすばやく検査するには、対応する行を選択して [レコードの検査] パネル **を開** きます。 パネルには、選択したレコードに基づいて次の情報が表示されます。
 
-- **アセット** - レコード内にある主な資産 (メールボックス、デバイス、およびユーザー) の要約ビューで、リスクや露出レベルなどの利用可能な情報が充実しています。
+- **アセット** - レコード内にある主な資産 (メールボックス、デバイス、およびユーザー) の概要ビューで、リスクや露出レベルなどの利用可能な情報が充実しています。
 - **すべての詳細** - レコード内の列のすべての値  
 
-![選択したレコードのイメージと、レコードを検査するパネル。](../../media/results-inspect-record.png)
+:::image type="content" source="../../media/results-inspect-record.png" alt-text="選択したレコードとパネルで、ポータルでレコードをMicrosoft 365 Defenderする" lightbox="../../media/results-inspect-record.png":::
 
 コンピューター、ファイル、ユーザー、IP アドレス、URL など、クエリ結果内の特定のエンティティに関する詳細情報を表示するには、エンティティ識別子を選択して、そのエンティティの詳細なプロファイル ページを開きます。
 
@@ -125,14 +125,14 @@ CloudAppEvents
 
 - 選択した値 (`==`) を明示的に検索する
 - 選択した値をクエリ (`!=`) から除外する 
-- クエリに値を追加するためのより高度な演算子 `contains`、`starts with`、および `ends with` を取得する 
+- クエリに値を追加する高度`contains``starts with`な演算子 (、など) を取得する`ends with` 
 
-![高度な検索結果セットのイメージ。](../../media/work-with-query-tweak-query.png)
+:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="[レコードの検査] ページの [アクションの種類] Microsoft 365 Defenderポータル" lightbox="../../media/work-with-query-tweak-query.png":::
 
 
 
 >[!NOTE]
->この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
+>この記事の一部の表は、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「[Advanced Hunting queries を Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md) から移行する」の手順に従います。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)

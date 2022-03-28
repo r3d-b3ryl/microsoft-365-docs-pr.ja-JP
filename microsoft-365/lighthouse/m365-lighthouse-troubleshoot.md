@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouse、エラー メッセージと問題のトラブルシューティングと解決に関するヘルプを参照してください。
-ms.openlocfilehash: 49e6657815ed71476a3dc79d778f7e1fbacfa1f4
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 957177dd20817f9b3d5fbc378f22b19eeaef1f7f
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775458"
+ms.locfileid: "64403679"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>問題とエラー メッセージのトラブルシューティングと解決を行Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ ms.locfileid: "63775458"
 
 **原因:** 顧客テナントが次の条件を満たさなかった。
 
-  - 顧客テナアント* を管理するには、Managed Service Provider (MSP) に対して委任 (DAP) が設定されている必要があります。
+  - 顧客テナントを管理するには、Managed Service Provider (MSP) に対して委任 (DAP) が設定されている必要があります*
   - 365 Business ライセンスMicrosoft 365 Business PremiumライセンスMicrosoft 365 E3 1 つ以上Windows必要
   - ライセンスユーザーが 1000 人以下である必要があります 
 
