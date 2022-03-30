@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: 61d262c04d4a304506bc521d155be71f81d219ca
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: f402df53c19da78435e22717577b351fc302d0f4
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468762"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679964"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -34,15 +34,7 @@ ms.locfileid: "63468762"
 
 ## <a name="prerequisites"></a>前提条件
 
-データ分類にアクセスして使用するすべてのアカウントには、これらのいずれかのサブスクリプションのライセンスが割り当てられている必要があります。
-
-- Microsoft 365 (E5)
-- Office 365 (E5)
-- 高度なコンプライアンス (E5) アドオン
-- 高度な脅威インテリジェンス (E5) アドオン
-- Microsoft 365 E5/A5 情報保護およびガバナンス
-- Microsoft 365 E5/A5 コンプライアンス
-
+ライセンス要件については、「[Information Protection: データ分類分析: Over Content とアクティビティ エクスプローラー](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)」 を参照してください。
 
 ### <a name="permissions"></a>アクセス許可
 

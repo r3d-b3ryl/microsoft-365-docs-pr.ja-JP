@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
@@ -17,19 +17,19 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: Syndication および クラウド ソリューション プロバイダー (CSP) パートナーが顧客テナントWindows PowerShell管理Microsoft 365する方法。
-ms.openlocfilehash: 2678489d1e281a60d230c65e29b358dff5f1a8ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db991416c88c88541bd5e9ec77bbca538e4e376c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150560"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675308"
 ---
 # <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>委任されたアクセス許可Microsoft 365パートナー Windows PowerShellを管理する方法
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 委任アクセス許可 (DAP) パートナー とは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。 多くはネットワークまたは通信プロバイダーです。 サブスクリプションをMicrosoft 365サービスにバンドルします。 Microsoft 365 サブスクリプションを販売すると、顧客のテナンシーに対する管理 (AOBO) アクセス許可が自動的に付与され、それらのテナントを管理および報告できます。 これらのタスクは、この作業では困難Microsoft 365 管理センター。 PowerShell を使用すると、次のような管理Microsoft 365実行する方がずっと簡単です。
-- すべての顧客の **TenantId とそのドメイン** を一覧表示する 
+- すべての顧客 **の TenantId とそのドメイン** を一覧表示する 
 - 顧客テナントのすべてのユーザーと割り当てられたライセンスを識別する
 > [!NOTE]
 > 一部の管理タスクは PowerShell でのみ実行できます。

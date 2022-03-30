@@ -1,5 +1,5 @@
 ---
-title: PowerShell Microsoft 365ユーザー アカウントを表示する
+title: PowerShell で Microsoft 365 ユーザー アカウントを表示する
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,23 +19,23 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: PowerShell を使用して、さまざまな方法でユーザー アカウントMicrosoft 365表示、一覧表示、または表示する方法について説明します。
+description: PowerShell を使用して、さまざまな方法で Microsoft 365 ユーザー アカウントを閲覧、一覧表示、表示する方法について説明します。
 ms.openlocfilehash: 5c434825da95fd7d90594b2424cab287305f7d26
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2021
 ms.locfileid: "60667508"
 ---
-# <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントを表示する
+# <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell で Microsoft 365 ユーザー アカウントを表示する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-このサイトを使用Microsoft 365 管理センターテナントのアカウントをMicrosoft 365できます。 PowerShell for Microsoft 365これを有効にし、追加の機能も提供します。
+Microsoft 365 管理センターを使用して、Microsoft 365 テナントのアカウントを表示できます。 PowerShell for Microsoft 365 では、これが可能なだけでなく、追加の機能も用意されています。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+まず、[Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 ### <a name="view-all-accounts"></a>すべてのアカウントを表示する
 
@@ -45,7 +45,7 @@ ms.locfileid: "60667508"
 Get-AzureADUser
 ```
 
-次のような情報を取得する必要があります。
+次のような情報が表示されます。
   
 ```powershell
 ObjectId                             DisplayName                                           UserPrincipalName
@@ -66,7 +66,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 Get-AzureADUser -ObjectID <sign-in name of the user account>
 ```
 
-次に例を示します:
+次に例を示します。
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
@@ -74,21 +74,21 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>特定のアカウントの追加のプロパティ値を表示する
 
-**既定では、Get-AzureADUser コマンドレット** は、アカウントの *ObjectID、DisplayName、* および *UserPrincipalName* プロパティのみを表示します。 
+既定では、**Get-AzureADUser** コマンドレットは、アカウントの *ObjectID*、*DisplayName*、*UserPrincipalName* の各プロパティを表示します。
 
-表示するプロパティの詳細を選択するには **、Select** コマンドレットを **Get-AzureADUser** コマンドレットと組み合わせて使用します。 2 つのコマンドレットを組み合わせるには、"パイプ" 文字 ("|") を使用して、Azure Active Directory PowerShell に Graph のコマンドの結果を取得し、次のコマンドに送信します。 すべてのユーザー アカウントの DisplayName、Department、UsageLocation を表示する *コマンド* の例を次に示します。  
+表示するプロパティをより詳細に選択するには、**Select** コマンドレットを **Get-AzureADUser** コマンドレットと組み合わせて使用します。 この 2 つのコマンドレットを組み合わせるには、"パイプ" 文字 ("|") を使用します。この文字は、1 つのコマンドの結果を次のコマンドに送るよう Azure Active Directory PowerShell for Graph に指示します。 すべてのユーザー アカウントの *DisplayName*、*Department*、*UsageLocation* を表示するコマンドの例を次に示します。
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
 ```
 
-このコマンドは、PowerShell に次の指示を行います。
+このコマンドによって PowerShell に対して次の処理が命令されます。
   
-1. ユーザー アカウント **(Get-AzureADUser)** のすべての情報を取得し、次のコマンド ( ) に送信します **|** 。
+1. ユーザー アカウントのすべての情報を取得 (**Get-AzureADUser**) して、次のコマンドにそれを送信します (**|**)。
     
-1.  ユーザー アカウント名、部署、使用状況の場所のみを表示します **([DisplayName、 Department, UsageLocation] の選択**)。
+1.  ユーザー アカウント名、部署、使用場所 (**Select DisplayName、Department、UsageLocation**) だけを表示する。
   
-特定のユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*)を使用します。 次に例を示します:
+特定のユーザー アカウントのすべてのプロパティを表示するには、**Select** コマンドレットとワイルドカード文字 (*) を使用します。 次に例を示します。
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
@@ -100,22 +100,22 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
 ```
 
-### <a name="view-account-synchronization-status"></a>アカウントの同期状態の表示
+### <a name="view-account-synchronization-status"></a>アカウントの同期状態を表示する
 
 ユーザー アカウントには、次の 2 つのソースがあります。 
 
-- Windows Server Active Directory (AD) は、オンプレミスのユーザーからクラウドに同期ADアカウントです。
+- オンプレミス AD からクラウドに同期するアカウントである Windows Server Active Directory (AD)。
 
-- Azure Active Directory (Azure AD) アカウントは、クラウドに直接作成されます。
+- クラウドに直接作成される Azure Active Directory (Azure AD) アカウント。
 
-次のコマンドを使用して、オンプレミスのアカウントから同期しているアカウント **を** 検索AD。 属性 *DirSyncEnabled* を True に設定しているすべてのユーザーを取得するように PowerShell に指示 *します*。 
+次のコマンドを使用して、**オンプレミス** AD のアカウントから同期しているアカウントを検索できます。 属性 *DirSyncEnabled* が *True* に設定されているすべてのユーザーを取得するように PowerShell に指示します。 
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
 ```
 
-次のコマンドを使用して、クラウド専用 **アカウントを検索** できます。 これは、属性 *DirSyncEnabled* が False に設定されている、または設定されていない *(Null)* を持つすべてのユーザーを取得するように *PowerShell* に指示します。
-*DirSyncEnabled* が Null に設定されている場合、オンプレミスAD同期されたことがない *アカウント。* オンプレミスのサーバーから最初に同期ADが同期されなくなったアカウントでは *、DirSyncEnabled* が False に設定 *されています*。 
+次のコマンドを使用して、**クラウド専用** アカウントを検索できます。 属性 *DirSyncEnabled* が *False* に設定されているか、設定されていない (*Null* である) すべてのユーザーを取得するように PowerShell に指示します。
+オンプレミス AD から同期されたことがないアカウントでは、*DirSyncEnabled* が *Null* に設定されています。 最初にオンプレミス AD から同期されたものの、同期されなくなったアカウントでは、*DirSyncEnabled* が *False* に設定されています。 
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
@@ -123,36 +123,36 @@ Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
 
 ### <a name="view-accounts-based-on-a-common-property"></a>共通プロパティに基づいてアカウントを表示する
 
-表示するアカウントの一覧を選択するには **、Get-AzureADUser** コマンドレットと組み合わせて Where コマンドレットを使用できます。 2 つのコマンドレットを組み合わせるには、"パイプ" 文字 ("|") を使用して、Azure Active Directory PowerShell に Graph のコマンドの結果を取得し、次のコマンドに送信します。 使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を次に示します。
+表示するアカウント一覧をより詳細に選択するには、**Where** コマンドレットを **Get-AzureADUser** コマンドレットと組み合わせて使用できます。 この 2 つのコマンドレットを組み合わせるには、"パイプ" 文字 ("|") を使用します。この文字は、1 つのコマンドの結果を次のコマンドに送るよう Azure Active Directory PowerShell for Graph に指示します。 次に、使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を示します。
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-このコマンドは、次Azure Active Directory PowerShell にGraph指示します。
+このコマンドにより、Azure Active Directory PowerShell for Graph に対して次の処理が命令されます。
   
-1. ユーザー アカウント **(Get-AzureADUser)** のすべての情報を取得し、次のコマンド ( ) に送信します **|** 。
+1. ユーザー アカウントのすべての情報を取得 (**Get-AzureADUser**) して、次のコマンドにそれを送信します (**|**)。
     
-1. 使用場所が指定されていないすべてのユーザー アカウントを検索します **(Where {$ \_ .UsageLocation -eq $Null}**)。 中かっこ内で、このコマンドは、UsageLocation ユーザー アカウント プロパティ (**$ \_ .UsageLocation**) は指定されていません (**-eq $Null)。**
+1. 使用場所が指定されていないすべてのユーザー アカウントを検索します (**Where {$\_.UsageLocation -eq $Null}**)。 中かっこの中で、コマンドは PowerShell に対して、UsageLocation ユーザー アカウント プロパティ (**$\_.UsageLocation**) が指定されていない (**-eq $Null**) アカウントのセットだけを検索するように指示しています。
     
-**UsageLocation プロパティ** は、ユーザー アカウントに関連付けられている多数のプロパティの 1 つのみです。 特定のユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*)を使用します。 次に例を示します:
+**UsageLocation** プロパティは、ユーザー アカウントに関連付けられている多数のプロパティのうちの 1 つに過ぎません。 特定のユーザー アカウントのすべてのプロパティを表示するには、**Select** コマンドレットとワイルドカード文字 (*)を使用します。 次に例を示します。
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-たとえば **、City は** ユーザー アカウント プロパティの名前です。 次のコマンドを使用して、ロンドンに住むユーザーのすべてのアカウントを一覧表示できます。
+たとえば、**City** がユーザー アカウント プロパティの名前であるとします。 つまり、以下のコマンドを使用すると、ロンドン在住のユーザーのすべてのアカウントの一覧を表示できます。
   
 ```powershell
 Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
-> これらの例の **Where コマンドレット** の構文は **、Where {$ です \_ 。** [ユーザー アカウントのプロパティ名][比較演算子][value] **}**.> [比較演算子] は、等号の場合は **-eq、** 等しくない場合は **-ne、** より小さい場合は **-lt、** より大きい場合は **-gt、** その他は -gt です。  [value] は通常、文字列 (一連の文字、数字、その他の文字)、数値、または指定されていない$Null指定します。 詳細については [、「Where」 を参照してください](/powershell/module/microsoft.powershell.core/where-object)。
+> この例に示されている **Where** コマンドレットの構文は、**Where {$\_.** [user account property name] [comparison operator] [value] **}** です。> [comparison operator] は **-eq** (等しい)、**-ne** (等しくない)、**-lt** (より小さい)、**-gt** (より大きい) などです。  [value] は通常、文字列 (文字、数字などのシーケンス)、数値、**$Null** (未指定の場合) のいずれかです。 詳細については、「[Where](/powershell/module/microsoft.powershell.core/where-object)」を参照してください。
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+まず、[Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 ### <a name="view-all-accounts"></a>すべてのアカウントを表示する
 
@@ -166,7 +166,7 @@ Get-MsolUser
 >PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。
 >
 
-次のような情報を取得する必要があります。
+次のような情報が表示されます。
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -178,13 +178,13 @@ AnneWlitwareinc.onmicrosoft.com       Anne Wallace          True
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-**Get-MsolUser** コマンドレットには、表示するユーザー アカウントのセットをフィルターにかけるための一連のパラメーターもあります。 たとえば、ライセンスのないユーザーの一覧 (Microsoft 365 に追加されたが、まだサービスを使用するライセンスが与えされていないユーザー) の場合は、次のコマンドを実行します。
+**Get-MsolUser** コマンドレットには、表示するユーザー アカウントのセットをフィルターにかけるための一連のパラメーターもあります。たとえば、ライセンス未付与のユーザーの一覧 (Microsoft 365 に追加されたものの、どのサービスを使用するライセンスもまだ与えられていないユーザー) を表示するには、次のコマンドを実行します。
   
 ```powershell
 Get-MsolUser -UnlicensedUsersOnly
 ```
 
-次のような情報を取得する必要があります。
+次のような情報が表示されます。
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -193,7 +193,7 @@ BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-表示されるユーザー アカウントのセットをフィルター処理する追加のパラメーターの詳細については [、「Get-MsolUser」を参照してください](/previous-versions/azure/dn194133(v=azure.100))。
+表示されるユーザー アカウントのセットをフィルター処理するための追加のパラメーターの詳細については、「[Get-MsolUser](/previous-versions/azure/dn194133(v=azure.100))」を参照してください。
   
 ### <a name="view-a-specific-account"></a>特定のアカウントを表示する
 
@@ -205,19 +205,19 @@ Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 
 ### <a name="view-accounts-based-on-a-common-property"></a>共通プロパティに基づいてアカウントを表示する
 
-表示するアカウントの一覧を選択するには **、Get-MsolUser** コマンドレットと組み合わせて **Where** コマンドレットを使用できます。 2 つのコマンドレットを組み合わせるには、"pipe" 文字 ("|") を使用して、PowerShell に 1 つのコマンドの結果を取得し、次のコマンドに送信します。 使用場所が指定されていないユーザー アカウントのみを表示する例を次に示します。
+表示するアカウント一覧をより詳細に選択するには、**Where** コマンドレットを **Get-MsolUser** コマンドレットと組み合わせて使用できます。 この 2 つのコマンドレットを組み合わせるには、"パイプ" 文字 ("|") を使用します。この文字は、1 つのコマンドの結果を次のコマンドに送るよう PowerShell に指示します。 次に、使用場所が指定されていないユーザー アカウントのみを表示する例を示します。
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-このコマンドは、PowerShell に次の指示を行います。
+このコマンドによって PowerShell に対して次の処理が命令されます。
   
-1. ユーザー アカウント **(Get-MsolUser)** のすべての情報を取得し、次のコマンド ( ) に送信します **|** 。
+1. ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。
     
-1. 使用場所が指定されていないすべてのユーザー アカウントを検索します **(Where {$ \_ .UsageLocation -eq $Null}**)。 中かっこ内で、このコマンドは、UsageLocation ユーザー アカウント プロパティ (**$ \_ .UsageLocation**) は指定されていません (**-eq $Null)。**
+1. 使用場所が指定されていないすべてのユーザー アカウントを検索します (**Where {$\_.UsageLocation -eq $Null}**)。 中かっこの中で、コマンドは PowerShell に対して、UsageLocation ユーザー アカウント プロパティ (**$\_.UsageLocation**) が指定されていない (**-eq $Null**) アカウントのセットだけを検索するように指示しています。
     
-次のような情報を取得する必要があります。
+次のような情報が表示されます。
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -227,22 +227,22 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ```
 
-*UsageLocation プロパティ* は、ユーザー アカウントに関連付けられている多数のプロパティの 1 つのみです。 ユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*) を使用して、それらをすべて特定のユーザー アカウントに表示します。 次に例を示します:
+*UsageLocation* プロパティは、ユーザー アカウントに関連付けられている多数のプロパティのうちの 1 つに過ぎません。 ユーザー アカウントのすべてのプロパティを表示するには、**Select** コマンドレットとワイルドカード文字 (*) を使用して、特定のユーザー アカウントのすべてのプロパティを表示します。 次に例を示します。
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-たとえば *、City は* ユーザー アカウント プロパティの名前です。 次のコマンドを使用して、ロンドンに住むユーザーのすべてのユーザー アカウントを一覧表示できます。
+たとえば、*City* がユーザー アカウント プロパティの名前であるとします。 つまり、以下のコマンドを使用すると、ロンドン在住のユーザーのすべてのユーザー アカウントの一覧を表示できます。
   
 ```powershell
 Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
-> これらの例の **Where コマンドレット** の構文は **、Where {$ です \_ 。** [ユーザー アカウントのプロパティ名][比較演算子][value] **}**.  [比較演算子] は、等しい場合は **-eq、** 等しくない場合は **-ne、** より小さい場合は **-lt、** より大きい場合は **-gt、** その他は -gt です。  [value] は通常、文字列 (一連の文字、数字、その他の文字)、数値、または指定されていない$Null指定します。 詳細については [、「Where」 を参照してください](/powershell/module/microsoft.powershell.core/where-object)。
+> この例に示されている **Where** コマンドレットの構文は、**Where {$\_.** [user account property name] [comparison operator] [value] **}** です。  [comparison operator] は **-eq** (等しい)、**-ne** (等しくない)、**-lt** (より小さい)、**-gt** (より大きい) などです。  [value] は通常、文字列 (文字、数字などのシーケンス)、数値、**$Null** (未指定の場合) のいずれかです。 詳細については、「[Where](/powershell/module/microsoft.powershell.core/where-object)」を参照してください。
   
-ユーザー アカウントのブロックされた状態を確認するには、次のコマンドを使用します。
+ユーザー アカウントのブロック状態を確認するには、次のコマンドを使用します。
   
 ```powershell
 Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,BlockCredential
@@ -250,7 +250,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 
 ### <a name="view-additional-property-values-for-accounts"></a>アカウントの追加のプロパティ値を表示する
 
-既定では **、Get-MsolUser コマンドレットは** 、ユーザー アカウントの次の 3 つのプロパティを表示します。
+既定では、**Get-MsolUser** コマンドレットは、ユーザー アカウントの次の 3 つのプロパティを表示します。
   
 - UserPrincipalName
 
@@ -258,19 +258,19 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 
 - isLicensed
 
-ユーザーが働く部署、Microsoft 365 サービスを使用する国/地域などの追加のプロパティが必要な場合は **、Get-MsolUser** を Select コマンドレットと組み合わせて実行して、ユーザー アカウントのプロパティの一覧を指定できます。 次に例を示します:
+ユーザーの勤務先の部署やユーザーが Microsoft 365 サービスを使用する国/地域などの追加プロパティが必要な場合、**Get-MsolUser** を **Select** コマンドレットを組み合わせて実行し、ユーザー アカウント プロパティの一覧を指定できます。 次に例を示します。
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
 ```
 
-このコマンドは、PowerShell に次の指示を行います。
+このコマンドによって PowerShell に対して次の処理が命令されます。
   
-1. ユーザー アカウント **(Get-MsolUser)** に関する情報を取得し、次のコマンド ( ) に送信します **|** 。
+1. ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。
     
-1. ユーザー アカウント名、部署、使用状況の場所のみを表示します **([DisplayName、 Department, UsageLocation] の選択**)。
+1. ユーザー アカウント名、部署、使用場所 (**Select DisplayName、Department、UsageLocation**) だけを表示する。
     
-次のような情報を取得する必要があります。
+次のような情報が表示されます。
   
 ```powershell
 DisplayName             Department                       UsageLocation
@@ -283,27 +283,27 @@ Alex Darrow             Sales & Marketing                    US
 Scott Wallace           Operations
 ```
 
-Select **コマンドレットでは** 、表示するプロパティを選択できます。 特定のユーザー アカウントのすべてのプロパティを表示するには、ワイルドカード文字 (*)を使用します。 次に例を示します:
+**Select** コマンドレットでは、表示するプロパティを選択できます。 特定のユーザー アカウントのすべてのプロパティを表示するには、ワイルドカード文字 (*)を使用します。 次に例を示します。
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-表示するアカウントの一覧の詳細を選択するには **、Where** コマンドレットを使用することもできます。 使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を次に示します。
+アカウントの一覧をより選択的に表示する場合には、**Where** コマンドレットも使用できます。次に、使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を示します。
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Department, UsageLocation
 ```
 
-このコマンドは、PowerShell に次の指示を行います。
+このコマンドによって PowerShell に対して次の処理が命令されます。
   
-1. ユーザー アカウント **(Get-MsolUser)** に関する情報を取得し、次のコマンド ( ) に送信します **|** 。
+1. ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。
     
-1. 使用場所が指定されていないすべてのユーザー アカウントを検索します **(Where {$ \_ .UsageLocation -eq $Null} )** をクリックし、結果の情報を次のコマンド ( ) に送信します **|** 。 中かっこ内で、このコマンドは、UsageLocation ユーザー アカウント プロパティ (**$ \_ .UsageLocation**) は指定されていません (**-eq $Null)。**
+1. 使用場所が指定されていないすべてのユーザー アカウントを検索して (**Where {$\_.UsageLocation -eq $Null}**)、結果の情報を次のコマンドに送る (**|**)。中かっこの中で、コマンドは PowerShell に対して、UsageLocation ユーザー アカウント プロパティ (**$\_.UsageLocation**) が指定されていない (**-eq $Null**) アカウントのセットだけを検索するように指示しています。
     
-1. ユーザー アカウント名、部署、使用状況の場所のみを表示します **([DisplayName、 Department, UsageLocation] の選択**)。
+1. ユーザー アカウント名、部署、使用場所 (**Select DisplayName、Department、UsageLocation**) だけを表示する。
     
-次のような情報を取得する必要があります。
+次のような情報が表示されます。
   
 ```powershell
 DisplayName              Department                      UsageLocation
@@ -312,10 +312,10 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-ディレクトリ同期を使用して、Microsoft 365 ユーザーを作成および管理する場合は、Microsoft 365 ユーザーが投影されたローカル アカウントを表示できます。 次の例では、以下を前提とします。
+Microsoft 365 ユーザーの作成と管理にディレクトリ同期を使用している場合、Microsoft 365 ユーザーが投影されたローカル アカウントを表示できます。 次の例では、次のことを前提としています。
 
-- Azure AD Connect ObjectGUID の既定のソース アンカーを使用するように構成されています。 (ソース アンカーの構成の詳細については[、「Azure AD Connect: デザインの概念」を参照してください](/azure/active-directory/hybrid/plan-connect-design-concepts)。
-- PowerShell 用の Active Directory ドメイン サービス モジュールがインストールされています [(「RSAT ツール」を参照](https://www.microsoft.com/en-gb/download/details.aspx?id=45520))。
+- Azure AD Connect は、ObjectGUID の既定のソース アンカーを使用するように構成されています。 (ソース アンカーの構成の詳細については、「[Azure AD Connect: デザインの概念](/azure/active-directory/hybrid/plan-connect-design-concepts)」を参照してください)。
+- PowerShell の Active Directory Domain Services モジュールがインストールされています (「[RSAT ツール](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)」を参照してください)。
 
 ```powershell
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid

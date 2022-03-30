@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: サービスの構成
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 583a07eee97024d59efc8d81c1d7a9fd02d176ff
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: d0870cda205168e73d40adef7cdab333c7f0abdf
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526458"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679942"
 ---
 # <a name="test-an-exact-data-match-sensitive-information-type"></a>機密情報の種類と完全に一致するデータをテストする
 
@@ -69,7 +69,7 @@ SharePoint サイトまたはライブラリまたは OneDrive の既存のコ�
 
 - [DLP ポリシー](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
 - [自動ラベル作成ポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Microsoft Cloud App Securityポリシー](/cloud-app-security/data-protection-policies)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/data-protection-policies)
 
 ## <a name="troubleshooting-tips"></a>トラブルシューティングのヒント
 

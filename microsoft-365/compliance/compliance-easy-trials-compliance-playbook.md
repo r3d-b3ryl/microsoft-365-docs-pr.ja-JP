@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 コンプライアンス ソリューション試用版プレイブック。
-ms.openlocfilehash: 896e3fe81c74cc2a594ab88807e0b9505fed1a18
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: e0d48ba9c4a5ca50869b64d6312fe845ef9bf50c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754240"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679898"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>試用版プレイブック: Microsoft 365 コンプライアンス ソリューション
 
@@ -434,6 +434,6 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 **含まれるもの**: Microsoft 365 コンプライアンス ソリューションの完全な一覧と製品レベル別の機能については、「[機能一覧](https://go.microsoft.com/fwlink/?linkid=2139145)」をご覧ください。
 
-**Microsoft Security Technical Content ライブラリ**: このライブラリを探索して、ユーザーのニーズに関連する対話型ガイドやその他の学習コンテンツを見つけます。[ライブラリに行く](/security)。
+**Microsoft Security Technical Content ライブラリ**: このライブラリを探索して、ユーザーのニーズに関連する対話型ガイドやその他の学習コンテンツを見つけます。[ライブラリに行く](/security/content-library)。
 
 **Microsoft Security リソース**: マルウェア対策からゼロ トラストまで、組織のセキュリティ ニーズに関連するすべてのリソースを入手します。[リソースに行く](/security/business/resources)。

@@ -12,14 +12,15 @@ ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理者は、セキュリティ コンプライアンス センターのメール フロー ダッシュボードで自動転送&できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 734a072e23ecd77bcf1dd328c9c952387ba65c52
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 05ad934fbc7736c0cfbb86f7411a2ca73705112f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174269"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680162"
 ---
-# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでのメッセージの自動転送&分析
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでの自動転送&分析情報
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -28,9 +29,9 @@ ms.locfileid: "60174269"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-セキュリティ **&** コンプライアンス センターのメール [](mail-flow-insights-v2.md)フロー ダッシュボードの [](https://protection.office.com)自動転送メッセージインサイトには、組織から外部ドメインの受信者に自動的に転送されるメッセージに関する情報が表示されます。
+セキュリティ **&** コンプライアンス センターのメール フロー ダッシュボードの [](mail-flow-insights-v2.md)自動転送メッセージ分析情報 [](https://protection.office.com)には、組織から外部ドメインの受信者に自動的に転送されるメッセージに関する情報が表示されます。
 
-![セキュリティ コンプライアンス センターの自動転送&ウィジェット。](../../media/mfi-auto-forwarded-messages.png)
+![コンプライアンス センターのセキュリティ サーバーの自動転送&ウィジェット。](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>自動転送されたメッセージの詳細
 
@@ -40,7 +41,7 @@ ms.locfileid: "60174269"
 
   - **メール フロー ルール別**
   - **受信トレイ ルール別**
-  - **SMTP 転送 :** このメソッドは、「メールボックスの電子メール転送の構成」の説明に従って、管理者がメールボックスで構成できる自動転送 [を示します](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)。
+  - **SMTP 転送による:** このメソッドは、「メールボックスの電子メール転送の構成」の説明に従って、管理者がメールボックスで構成できる自動転送 [を示します](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)。
   - 詳細については、 [転送レポート](view-mail-flow-reports.md#forwarding-report) へのリンク。
 
 - **ドメインとユーザーによる自動転送メッセージ**:
@@ -62,4 +63,4 @@ ms.locfileid: "60174269"
 
 ## <a name="see-also"></a>関連項目
 
-メール フロー ダッシュボードの他の分析情報の詳細については、「Security & コンプライアンス センター」 [を参照してください](mail-flow-insights-v2.md)。
+メール フロー ダッシュボードの他の分析情報については、「Security [& コンプライアンス センター」を参照してください](mail-flow-insights-v2.md)。

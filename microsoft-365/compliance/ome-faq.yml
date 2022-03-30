@@ -8,7 +8,7 @@ metadata:
   manager: laurawi
   ms.date: 07/14/2021
   audience: ITPro
-  ms.topic: overview
+  ms.topic: faq
   ms.service: O365-seccomp
   ms.localizationpriority: medium
   search.appverid:
@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: 新しいメッセージ保護機能について質問がある場合は、 ここで回答をご覧ください。
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 9d299ff6e290de5a476f85222c98e4038b724f8e
-  ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+  ms.openlocfilehash: 008d9d93717f97d451acec0c9470ffafbb5f659f
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/09/2022
-  ms.locfileid: "62487471"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63679810"
 title: メッセージの暗号化についてよく寄せられる質問
 summary: >
   新しいメッセージ保護機能について質問がある場合は、 ここで回答をご覧ください。 また、Azure Information Protection のデータ保護サービスである Azure Rights Management についての質問の回答については、「[Azure Information Protection でのデータ保護についてよく寄せられる質問](/information-protection/get-started/faqs-rms)」を参照してください。
@@ -39,7 +39,7 @@ sections:
       新しい OME 機能を使用するには、次のプランのいずれかが必要です。
 
 
-      - Office 365 Message Encryption E3 および E5、E3、E5、E3、E5、E3、Office 365 Enterprise、および E Microsoft 365 Enterprise 5 の一部Microsoft 365 Business Premium提供Office 365 A1、A3、および A5、および Office 365 Government G3 G5。 Azure Information Protection を利用した新しい保護機能を受信するために、追加のライセンスは必要ありません。
+      - Office 365 Message Encryption E3 および E5、E3、E5、Office 365 Enterprise E3、E Microsoft 365 Enterprise 5、Microsoft 365 Business Premium、Office 365 A1、A3、および A5、および Office 365 Government G3 G5。 Azure Information Protection を利用した新しい保護機能を受信するために、追加のライセンスは必要ありません。
 
 
       - Office 365 Message Encryption の新機能を利用するために、次のプランに Azure Information Protection プラン 1 を追加することもできます: Exchange Online プラン 1、Exchange Online プラン 2、Office 365 F1、Microsoft 365 Business Basic、Microsoft 365 Business Standard、Office 365 Enterprise E1。
@@ -169,7 +169,7 @@ sections:
       - ユーザーは、共有メールボックスが配布グループの一部として保護されたメールを受信した場合、共有メールボックスの保護されたメールを開くことができます。
 
 
-      - ユーザーは、android 用の Windows Outlook、Outlook for Mac、Outlook for Mac、Outlook、iOS、および Outlook に対して Outlook を使用するときに、電子メールからの保護を継承する添付ファイルを表示Outlook on the web。
+      - ユーザーは、android 用の Windows Outlook、Outlook for Mac、Outlook、iOS、および Outlook on the web 用に Outlook を使用するときに、電子メールからの保護を継承する添付ファイルを表示できます。
 
 
       次の表に、共有メールボックスがサポートされるクライアントの一覧を示します。
@@ -192,7 +192,7 @@ sections:
 
       > [!NOTE]
 
-      > Android と iOS は、モバイル アプリOffice使用して暗号化された添付ファイルを表示し、モバイルで直接表示Outlookします。
+      > Android と iOS は、モバイル アプリOfficeを使用して暗号化された添付ファイルを表示し、モバイルで直接表示Outlookします。
 
 
       現在、2 つの既知の制限があります。

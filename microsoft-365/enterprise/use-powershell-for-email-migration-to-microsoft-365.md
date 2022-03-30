@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
@@ -15,15 +15,15 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: PowerShell を使用して既存のシステムから電子メールをMicrosoft 365する方法について説明します。
-ms.openlocfilehash: e23f528b846f23877a08cc9b26d0985f03c3490d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: PowerShell を使用して既存のシステムから既存のシステムに電子メールを移行Microsoft 365する方法について説明します。
+ms.openlocfilehash: 4b578057a4e95d1fb835c819d547fc93a970f5f2
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201567"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675286"
 ---
-# <a name="how-to-use-powershell-to-migrate-email-to-microsoft-365"></a>PowerShell を使用して電子メールをユーザーに移行するMicrosoft 365
+# <a name="how-to-use-powershell-to-migrate-email-to-microsoft-365"></a>PowerShell を使用してメールをユーザーに移行するMicrosoft 365
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
@@ -35,7 +35,7 @@ ms.locfileid: "60201567"
     
 - [Microsoft 365 への段階的な移行に PowerShell を使用する](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md)
     
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [PowerShell で Microsoft 365を管理する](manage-microsoft-365-with-microsoft-365-powershell.md)
   

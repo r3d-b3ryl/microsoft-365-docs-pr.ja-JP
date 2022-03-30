@@ -6,7 +6,7 @@ ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス ソリューションの試用版の詳細。
-ms.openlocfilehash: 8cfa95b5998d78a2128e2e99ac6b23babf11f3ff
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 247080c374cd99c93e538e46ed0894ad24e501cd
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271792"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679832"
 ---
 # <a name="about-the-compliance-solutions-trial"></a>コンプライアンス ソリューションの試用版の詳細
 
@@ -53,7 +53,7 @@ Microsoft 365 コンプライアンス試用版の[使用条件](terms-condition
 
 管理者は、コンプライアンス カードにアクセスして、いつでも試用版を無効化することができます。
 
-コンプライアンス ソリューション使用版の一部の機能に登録しないことを決定した場合、ソリューションに関して別途明記されていない限り、使用版データは一定期間 (通常 180 日間) 維持された後、完全に削除されます。 そのときまでは、試用期間中に収集したデータに引き続きアクセスすることができます。
+コンプライアンス ソリューションの使用版の一部の機能に登録しないことを決定した場合、ソリューションに別途記載がない限り、使用版データは一定期間 (通常 180 日間) 維持された後、完全に削除されます。それまでは、試用期間中に収集したデータに引き続きアクセスすることができます。
 
 ## <a name="availability"></a>可用性
 
@@ -69,7 +69,7 @@ Microsoft 365 コンプライアンス ソリューション試用版は、特�
 
 - **コミュニケーション コンプライアンス**
 
-  コミュニケーション コンプライアンスは、不適切なメッセージを自動的にキャプチャし、ポリシー違反の可能性を調査し、修復するための措置を講じ、内部および外部の通信に関連する最新のコンプライアンスの課題を克服するのに役立ちます。 [コミュニケーション コンプライアンス](communication-compliance.md)についての詳細情報
+  コミュニケーション コンプライアンスは、不適切なメッセージを自動的にキャプチャし、ポリシー違反の可能性を調査し、修復するための措置を講じ、社内外のコミュニケーションに関連する現代のコンプライアンスの課題を克服するのに役立ちます。詳細は、「[コミュニケーション・コンプライアンス](communication-compliance.md) 」をご覧ください。
 
 - **コンプライアンス マネージャー**
 
