@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender ウイルス対策イベントの ID とエラー コード
-description: イベントの原因と解決策を調Microsoft Defender ウイルス対策エラーの原因と解決策
+description: Microsoft Defender ウイルス対策のイベントと ID のエラーの原因と解決策を調べる
 keywords: イベント、エラー コード、siem、ログ、トラブルシューティング、wef、Windows イベント転送
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -17,7 +17,7 @@ ms.technology: mde
 ms.collection: M365-security-compliance
 ms.openlocfilehash: db4401e1215ab50e47425dee15a1337466e1e98a
 ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/14/2022
 ms.locfileid: "62807538"
@@ -30,40 +30,40 @@ ms.locfileid: "62807538"
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-問題が発生した場合Microsoft Defender ウイルス対策、このトピックの表を検索して、一致する問題と潜在的な解決策を見つける可能性があります。
+Microsoft Defender ウイルス対策で問題が発生した場合は、このトピックの表を検索して、一致する問題と考えられる解決策を見つけることができます。
 
 テーブルの一覧:
 
-- [Microsoft Defender ウイルス対策イベントの ID](#windows-defender-av-ids) (これらは、Windows 10、Windows 11、およびWindows Server 2016)
+- [Microsoft Defender ウイルス対策イベントの ID](#windows-defender-av-ids) (これらは、Windows 10、Windows 11、およびWindows Server 2016 に適用されます)
 - [Microsoft Defender ウイルス対策エラー コード](#error-codes)
-- [内部Microsoft Defender ウイルス対策クライアント エラー コード (開発およびテスト中に Microsoft が使用)](#internal-error-codes)
+- [内部 Microsoft Defender ウイルス対策クライアント エラー コード (開発およびテスト中に Microsoft が使用)](#internal-error-codes)
 
 > [!TIP]
-> Microsoft Defender for Endpoint のデモ Web サイトを [参照して、](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) demo.wd.microsoft.com 機能が動作しているのを確認できます。
+> Microsoft Defender for Endpoint のデモ Web サイト ([demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)) にアクセスして、次の機能が動作していることを確認することもできます:
 >
 > - クラウドによる保護
 > - 高速学習 (一目でブロックを含む)
 > - 望ましくない可能性があるアプリケーションのブロック
 
 > [!NOTE]
-> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 <a id="windows-defender-av-ids"></a>
-## <a name="microsoft-defender-antivirus-event-ids"></a>Microsoft Defender ウイルス対策イベントの ID
+## <a name="microsoft-defender-antivirus-event-ids"></a>Microsoft Defender - ウイルス対策イベント ID
 
-Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録します。
+Microsoft Defender ウイルス対策は、Windows イベント ログにイベント ID を記録します。
 
-イベント ログを直接表示するか、サードパーティのセキュリティ情報とイベント管理 (SIEM) ツールがある場合は、Microsoft Defender ウイルス対策 クライアント イベント [ID](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) を使用してエンドポイントから特定のイベントやエラーを確認することもできます。
+イベント ログを直接表示するか、サードパーティのセキュリティ情報とイベント管理 (SIEM) ツールがある場合は、Microsoft Defender ウイルス対策 クライアント イベント [ID](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) を使用してエンドポイントから特定のイベントとエラーを確認することもできます。
 
-このセクションの表に、メイン イベント MICROSOFT DEFENDER ウイルス対策の一覧を示し、可能な場合は、エラーを修正または解決するための推奨される解決策を示します。
+主要な Microsoft Defender ウイルス対策 イベント ID の一覧をこのセクションの表に示します。可能であれば、エラーを修正または解決するためのおすすめの解決策を示します。
 
-## <a name="to-view-a-microsoft-defender-antivirus-event"></a>イベントをMicrosoft Defender ウイルス対策するには
+## <a name="to-view-a-microsoft-defender-antivirus-event"></a>Microsoft Defender ウイルス対策 イベントを表示するには
 
-1. イベント **ビューアーを開きます**。
-2. コンソール ツリーで、[**アプリケーションとサービス** ログ] を展開し、[**Microsoft**] を展開し、[**Windows] を****Windows Defender。**
-3. [操作] を **ダブルクリックします**。
-4. 詳細ウィンドウで、個々のイベントの一覧を表示して、イベントを検索します。
-5. イベントをクリックすると、[全般] タブと [詳細] タブの下の下部ウィンドウにイベントに関する特定の **詳細が****表示** されます。
+1. **イベント ビューアー** を開きます。
+2. コンソール ツリーで、[**アプリケーションとサービス ログ**] を展開し、[**Microsoft**]、[**Windows**]、さらに [**Windows Defender**] の順に展開します。
+3. [**運用中**] をダブルクリックします。
+4. [詳細] ウィンドウで、個々のイベントのリストを表示して、イベントを検索します。
+5. イベントをクリックすると、下部ウィンドウの [**全般**] タブと [**詳細**] タブの下に、イベントに関する特定の詳細が表示されます。
 
 <table>
 <tr>
@@ -71,7 +71,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 </tr>
 <tr>
 <td>
-記号名:
+シンボリック名:
 </td>
 <td>
 <b>MALWAREPROTECTION_SCAN_STARTED</b>
@@ -82,7 +82,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策スキャンが開始されました。 </b>
+<b>マルウェア対策スキャンが開始されました。</b>
 </td>
 </tr>
 <tr>
@@ -91,21 +91,21 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 </td>
 <td >
 <dl>
-<dt>スキャン ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
-<dt>スキャンの種類: &lt;次に示すスキャン&gt;の種類を指定します。<ul>
+<dt>Scan ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
+<dt>スキャンの種類: &lt;スキャンの種類&gt;、例:<ul>
 <li>ウイルス対策</li>
 <li>スパイウェア対策</li>
 <li>マルウェア対策</li>
 </ul>
 </dt>
-<dt>スキャン パラメーター: &lt;スキャン パラメーター(&gt;次に示す場合)<ul>
+<dt>Scan Parameters: &lt;スキャン パラメーター&gt;、例:<ul>
 <li>フル スキャン</li>
 <li>クイック スキャン</li>
 <li>顧客スキャン</li>
 </ul>
 </dt>
 <dt>スキャン リソース: &lt;スキャンされたリソース (ファイル/ディレクトリ/BHO など)。&gt;</dt>
-<dt>ユーザー: &lt;Domainlt&gt;\&;ユーザー&gt;</dt>
+<dt>ユーザー: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -113,7 +113,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <th colspan="2">イベント ID: 1001</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SCAN_COMPLETED</b>
@@ -133,21 +133,21 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 </td>
 <td >
 <dl>
-<dt>スキャン ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
-<dt>スキャンの種類: &lt;次に示すスキャン&gt;の種類を指定します。<ul>
+<dt>Scan ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
+<dt>スキャンの種類: &lt;スキャンの種類&gt;、例:<ul>
 <li>ウイルス対策</li>
 <li>スパイウェア対策</li>
 <li>マルウェア対策</li>
 </ul>
 </dt>
-<dt>スキャン パラメーター: &lt;スキャン パラメーター(&gt;次に示す場合)<ul>
+<dt>Scan Parameters: &lt;スキャン パラメーター&gt;、例:<ul>
 <li>フル スキャン</li>
 <li>クイック スキャン</li>
 <li>顧客スキャン</li>
 </ul>
 </dt>
-<dt>ユーザー: &lt;Domainlt&gt;\&;UserScan&gt;</dt> 
-<dt>Time: &lt;スキャンの期間。&gt;</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
+<dt>Scan Time: &lt;スキャンの期間。&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -155,7 +155,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <th colspan="2">イベント ID: 1002</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SCAN_CANCELLED </b>
@@ -175,21 +175,21 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 </td>
 <td >
 <dl>
-<dt>スキャン ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
-<dt>スキャンの種類: &lt;次に示すスキャン&gt;の種類を指定します。<ul>
+<dt>Scan ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
+<dt>スキャンの種類: &lt;スキャンの種類&gt;、例:<ul>
 <li>ウイルス対策</li>
 <li>スパイウェア対策</li>
 <li>マルウェア対策</li>
 </ul>
 </dt>
-<dt>スキャン パラメーター: &lt;スキャン パラメーター(&gt;次に示す場合)<ul>
+<dt>Scan Parameters: &lt;スキャン パラメーター&gt;、例:<ul>
 <li>フル スキャン</li>
 <li>クイック スキャン</li>
 <li>顧客スキャン</li>
 </ul>
 </dt>
-<dt>ユーザー: &lt;Domainlt&gt;&amp;;UserScan&gt;</dt> 
-<dt>Time: &lt;スキャンの期間。&gt;</dt>
+<dt>User: &lt;ドメイン&gt;&amp;lt;ユーザー&gt;</dt>
+<dt>Scan Time: &lt;スキャンの期間。&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -197,7 +197,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <th colspan="2">イベント ID: 1003</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SCAN_PAUSED </b>
@@ -217,20 +217,20 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 </td>
 <td >
 <dl>
-<dt>スキャン ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
-<dt>スキャンの種類: &lt;次に示すスキャン&gt;の種類を指定します。<ul>
+<dt>Scan ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
+<dt>スキャンの種類: &lt;スキャンの種類&gt;、例:<ul>
 <li>ウイルス対策</li>
 <li>スパイウェア対策</li>
 <li>マルウェア対策</li>
 </ul>
 </dt>
-<dt>スキャン パラメーター: &lt;スキャン パラメーター(&gt;次に示す場合)<ul>
+<dt>Scan Parameters: &lt;スキャン パラメーター&gt;、例:<ul>
 <li>フル スキャン</li>
 <li>クイック スキャン</li>
 <li>顧客スキャン</li>
 </ul>
 </dt>
-<dt>ユーザー: &lt;Domainlt&gt;\&;ユーザー&gt;</dt>
+<dt>ユーザー: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -238,7 +238,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <th colspan="2">イベント ID: 1004</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SCAN_RESUMED </b>
@@ -258,20 +258,20 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 </td>
 <td >
 <dl>
-<dt>スキャン ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
-<dt>スキャンの種類: &lt;次に示すスキャン&gt;の種類を指定します。<ul>
+<dt>Scan ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
+<dt>スキャンの種類: &lt;スキャンの種類&gt;、例:<ul>
 <li>ウイルス対策</li>
 <li>スパイウェア対策</li>
 <li>マルウェア対策</li>
 </ul>
 </dt>
-<dt>スキャン パラメーター: &lt;スキャン パラメーター(&gt;次に示す場合)<ul>
+<dt>Scan Parameters: &lt;スキャン パラメーター&gt;、例:<ul>
 <li>フル スキャン</li>
 <li>クイック スキャン</li>
 <li>顧客スキャン</li>
 </ul>
 </dt>
-<dt>ユーザー: &lt;Domainlt&gt;\&;ユーザー&gt;</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -279,7 +279,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <th colspan="2">イベント ID: 1005</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SCAN_FAILED </b>
@@ -290,7 +290,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策スキャンに失敗しました。 </b>
+<b>マルウェア対策スキャンに失敗しました。</b>
 </td>
 </tr>
 <tr>
@@ -299,35 +299,35 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 </td>
 <td >
 <dl>
-<dt>スキャン ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
-<dt>スキャンの種類: &lt;次に示すスキャン&gt;の種類を指定します。<ul>
+<dt>Scan ID: &lt;関連するスキャンの ID 番号。&gt;</dt>
+<dt>スキャンの種類: &lt;スキャンの種類&gt;、例:<ul>
 <li>ウイルス対策</li>
 <li>スパイウェア対策</li>
 <li>マルウェア対策</li>
 </ul>
 </dt>
-<dt>スキャン パラメーター: &lt;スキャン パラメーター(&gt;次に示す場合)<ul>
+<dt>Scan Parameters: &lt;スキャン パラメーター&gt;、例:<ul>
 <li>フル スキャン</li>
 <li>クイック スキャン</li>
 <li>顧客スキャン</li>
 </ul>
 </dt>
-<dt>ユーザー: &lt;Domainlt&gt;\&;UserError&gt;</dt> 
-<dt>Code: エラー &lt;コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
+<dt>Error Code; &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
 ウイルス対策クライアントでエラーが発生し、現在のスキャンが停止しました。 クライアント側の問題が原因でスキャンが失敗する可能性があります。 このイベント レコードには、スキャン ID、スキャンの種類 (Microsoft Defender ウイルス対策、スパイウェア対策、マルウェア対策)、スキャン パラメーター、スキャンを開始したユーザー、エラー コード、エラーの説明が含まれます。
-このイベントをトラブルシューティングするには、次の手順を実行します。
+このイベントをトラブルシューティングするには:
 <ol>
 <li>スキャンを再度実行します。</li>
-<li>同じ方法で失敗した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポート</a> サイトに移動し、[検索] ボックスにエラー<b></b>番号を入力してエラー コードを探します。</li>
+<li>同じ方法で失敗した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポートサイト</a>に移動し、[<b>検索</b>] ボックスにエラー番号を入力してエラー コードを探します。</li>
 <li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
 </ol>
@@ -337,7 +337,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <th colspan="2">イベント ID: 1006</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_MALWARE_DETECTED </b>
@@ -348,7 +348,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策エンジンは、マルウェアや望ましくない可能性のある他のソフトウェアを検出しました。 </b>
+<b>マルウェア対策エンジンは、マルウェアや望ましくない可能性のある他のソフトウェアを検出しました。</b>
 </td>
 </tr>
 <tr>
@@ -358,18 +358,18 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <td >
 詳細については、次のトピックを参照してください。
 <dl>
-<dt>名前: &lt;脅威名&gt;</dt> 
-<dt>ID: &lt;脅威 IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(たとえば、次の場合)<ul>
+<dt>Name: &lt;脅威名&gt;</dt> 
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度:&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>パス: &lt;ファイルパス&gt;</dt>
-<dt>Detection Origin: &lt;検出元&gt;:次に例を示します。<ul>
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Path: &lt;ファイル パス&gt;</dt>
+<dt>Detection Origin: &lt;検出元&gt;、例:<ul>
 <li>不明</li>
 <li>ローカル コンピューター</li>
 <li>ネットワーク共有</li>
@@ -378,29 +378,29 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <li>送信トラフィック</li>
 </ul>
 </dt>
-<dt>検出の種類: &lt;次に示す検出&gt;の種類を指定します。<ul>
+<dt>検出の種類: &lt;検出の種類&gt;、例:<ul>
 <li>ヒューリスティック</li>
 <li>Generic</li>
 <li>コンクリート</li>
 <li>動的署名</li>
 </ul>
 </dt>
-<dt>検出ソース: 次 &lt;に示す検出&gt; ソースを指定します。<ul>
-<li>ユーザー: 開始されたユーザー</li>
-<li>システム: システムが開始されました</li>
-<li>リアルタイム: リアルタイム コンポーネントの開始</li>
-<li>IOAV: IE の高速添付ファイルのOutlookと設定が開始されました</li>
+<dt>Detection Source: &lt;検出ソース&gt;、例:<ul>
+<li>ユーザー: ユーザー始動</li>
+<li>システム: システム始動</li>
+<li>リアルタイム: リアルタイム コンポーネント始動</li>
+<li>IOAV: IE のダウンロードと Outlook Express の添付ファイル始動</li>
 <li>NIS: ネットワーク検査システム</li>
-<li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
+<li>IEPROTECT: IE - IExtensionValidation; これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
 </ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
-UACStatus</dt>
-<dt>: &lt;StatusUser&gt;</dt>
-<dt>: &lt;Domainlt&gt;\&;UserProcess&gt;</dt> 
-<dt>Name: &lt;プロセスの PIDSignature&gt;</dt> 
-<dt>バージョン: &lt;Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
+UAC</dt>
+<dt> Status: &lt;状態&gt;</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
+<dt>Process Name: &lt;PID 内のプロセス&gt;</dt>
+<dt>Signature version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -408,7 +408,7 @@ UACStatus</dt>
 <th colspan="2">イベント ID : 1007</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_MALWARE_ACTION_TAKEN </b>
@@ -419,7 +419,7 @@ UACStatus</dt>
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策プラットフォームは、マルウェアなどの望ましくない可能性のあるソフトウェアからシステムを保護するためのアクションを実行しました。 </b>
+<b>マルウェア対策プラットフォームにより、マルウェアなどの望ましくない可能性のあるソフトウェアからシステムを保護するためのアクションが実行されました。</b>
 </td>
 </tr>
 <tr>
@@ -427,32 +427,32 @@ UACStatus</dt>
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策、マルウェアなどの望ましくない可能性のあるソフトウェアからこのコンピューターを保護するための措置を取っています。 詳細については、次のトピックを参照してください。
+Microsoft Defender ウイルス対策、マルウェアや望ましくない可能性のある他のソフトウェアからこのコンピューターを保護するための措置を取っています。 詳細については、次のトピックを参照してください。
 <dl>
-<dt>ユーザー: &lt;Domainlt&gt;\&;UserName&gt;</dt>
-<dt>: &lt;Threat nameID&gt;</dt>
-<dt>: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(例:<ul>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
+<dt>Name: &lt;脅威名&gt;</dt>
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>Action: &lt;Action(アクション&gt;): たとえば、次のようになります。<ul>
-<li>クリーン: リソースがクリーンアップされました</li>
-<li>検疫: リソースが検疫されました</li>
-<li>削除: リソースが削除されました</li>
-<li>許可: リソースの実行/存在が許可されました</li>
-<li>ユーザー定義: ユーザーが指定したアクションのこのリストから通常 1 つであるユーザー定義のアクション</li>
-<li>アクションなし: アクションなし</li>
-<li>ブロック: リソースの実行がブロックされました</li>
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Action: &lt;アクション&gt;、例:<ul>
+<li>Clean: リソースがクリーンアップされました</li>
+<li>Quarantine: リソースが検疫されました</li>
+<li>Remove: リソースが削除されました</li>
+<li>Allow: リソースの実行/存在が許可されました</li>
+<li>User defined: ユーザーが指定したアクションのこのリストから通常 1 つであるユーザー定義のアクション</li>
+<li>No action: アクションなし</li>
+<li>Block: リソースの実行がブロックされました</li>
 </ul>
 </dt>
-<dt>状態: &lt;StatusSignature&gt;</dt> 
-<dt>バージョン: &lt;定義バージョン&gt;</dt>
-<dt>Engine バージョン: &lt;マルウェア対策エンジン バージョン&gt;</dt>
+<dt>Status: &lt;状態&gt;</dt>
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -460,7 +460,7 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <th colspan="2">イベント ID : 1008</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_MALWARE_ACTION_FAILED</b>
@@ -471,7 +471,7 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策プラットフォームは、マルウェアなどの望ましくない可能性があるソフトウェアからシステムを保護するためのアクションを実行しようとしたが、アクションは失敗した。</b>
+<b>マルウェア対策プラットフォームは、マルウェアなどの望ましくない可能性があるソフトウェアからシステムを保護するためのアクションを実行しようとしましたが、アクションは失敗しました。</b>
 </td>
 </tr>
 <tr>
@@ -479,35 +479,35 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策その他の望ましくない可能性のあるソフトウェアに対してアクションを実行するときにエラーが発生しました。 詳細については、次のトピックを参照してください。
+マルウェアやその他の望ましくない可能性のあるソフトウェアに対してアクションを実行するときに、Microsoft Defender ウイルス対策でエラーが発生しました。 詳細については、次のトピックを参照してください。
 <dl>
-<dt>ユーザー: &lt;Domainlt&gt;\&;UserName&gt;</dt>
-<dt>: &lt;Threat nameID&gt;</dt>
-<dt>: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(例:<ul>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
+<dt>Name: &lt;脅威名&gt;</dt>
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>パス: &lt;ファイル pathAction&gt;</dt>
-<dt>: &lt;アクション(たとえば&gt;、次の操作)<ul>
-<li>クリーン: リソースがクリーンアップされました</li>
-<li>検疫: リソースが検疫されました</li>
-<li>削除: リソースが削除されました</li>
-<li>許可: リソースの実行/存在が許可されました</li>
-<li>ユーザー定義: ユーザーが指定したアクションのこのリストから通常 1 つであるユーザー定義のアクション</li>
-<li>アクションなし: アクションなし</li>
-<li>ブロック: リソースの実行がブロックされました</li>
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Path: &lt;ファイル パス&gt;</dt>
+<dt>Action: &lt;アクション&gt;、例:<ul>
+<li>Clean: リソースがクリーンアップされました</li>
+<li>Quarantine: リソースが検疫されました</li>
+<li>Remove: リソースが削除されました</li>
+<li>Allow: リソースの実行/存在が許可されました</li>
+<li>User defined: ユーザーが指定したアクションのこのリストから通常 1 つであるユーザー定義のアクション</li>
+<li>No action: アクションなし</li>
+<li>Block: リソースの実行がブロックされました</li>
 </ul>
 </dt>
-<dt>エラー コード: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
-<dt>状態: &lt;StatusSignature&gt;</dt> 
-<dt>バージョン: &lt;定義バージョン&gt;</dt>
-<dt>Engine バージョン: &lt;マルウェア対策エンジン バージョン&gt;</dt>
+<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。 </dt>
+<dt>Status: &lt;状態&gt;</dt>
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -515,7 +515,7 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <th colspan="2">イベント ID : 1009</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_QUARANTINE_RESTORE </b>
@@ -536,20 +536,20 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <td >
 Microsoft Defender ウイルス対策アイテムを検疫から復元しました。 詳細については、次のトピックを参照してください。
 <dl>
-<dt>名前: &lt;脅威名&gt;</dt> 
-<dt>ID: &lt;脅威 IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(たとえば、次の場合)<ul>
+<dt>Name: &lt;脅威名&gt;</dt> 
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度:&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>パス: &lt;ファイルパス&gt;</dt>
-<dt>User: &lt;Domainlt&gt;\&;UserSignature&gt;</dt> 
-<dt>バージョン: &lt;定義バージョン&gt;</dt>
-<dt>Engine バージョン: &lt;マルウェア対策エンジン バージョン&gt;</dt>
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Path: &lt;ファイル パス&gt;</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt> 
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -557,7 +557,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しまし�
 <th colspan="2">イベント ID : 1010</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_QUARANTINE_RESTORE_FAILED </b>
@@ -568,7 +568,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しまし�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策プラットフォームでは、検疫からアイテムを復元する必要があります。 </b>
+<b>マルウェア対策プラットフォームは検疫から項目を復元できませんでした。</b>
 </td>
 </tr>
 <tr>
@@ -578,22 +578,22 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しまし�
 <td >
 Microsoft Defender ウイルス対策アイテムを検疫から復元しようとしてエラーが発生しました。 詳細については、次のトピックを参照してください。
 <dl>
-<dt>名前: &lt;脅威名&gt;</dt> 
-<dt>ID: &lt;脅威 IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(たとえば、次の場合)<ul>
+<dt>Name: &lt;脅威名&gt;</dt> 
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度:&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>パス: &lt;ファイルパス&gt;</dt>
-<dt>User: &lt;Domainlt&gt;\&;UserError&gt;</dt> 
-<dt>Code: エラー &lt;コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
-<dt>署名バージョン: &lt;定義バージョン&gt;</dt>
-<dt>Engine バージョン: マルウェア対策エンジン &lt;バージョン&gt;</dt>
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Path: &lt;ファイル パス&gt;</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt> 
+<dt>Error Code &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。 </dt>
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt; マルウェア対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -601,7 +601,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しよう�
 <th colspan="2">イベント ID: 1011</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_QUARANTINE_DELETE</b>
@@ -620,22 +620,22 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しよう�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策アイテムを検疫から削除しました。<br/>詳細については、次のトピックを参照してください。
+Microsoft Defender ウイルス対策が検疫から項目を削除しました。<br/>詳細については、次のトピックを参照してください。
 <dl>
-<dt>名前: &lt;脅威名&gt;</dt> 
-<dt>ID: &lt;脅威 IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(たとえば、次の場合)<ul>
+<dt>Name: &lt;脅威名&gt;</dt> 
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度:&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>パス: &lt;ファイルパス&gt;</dt>
-<dt>User: &lt;Domainlt&gt;\&;UserSignature&gt;</dt> 
-<dt>バージョン: &lt;定義バージョン&gt;</dt>
-<dt>Engine バージョン: &lt;マルウェア対策エンジン バージョン&gt;</dt>
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Path: &lt;ファイル パス&gt;</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt> 
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -643,7 +643,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しまし�
 <th colspan="2">イベント ID : 1012</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_QUARANTINE_DELETE_FAILED </b>
@@ -654,7 +654,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しまし�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策プラットフォームは、検疫からアイテムを削除する必要があります。</b>
+<b>マルウェア対策プラットフォームは検疫から項目を削除できませんでした。</b>
 </td>
 </tr>
 <tr>
@@ -662,25 +662,25 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しまし�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策アイテムを検疫から削除しようとしてエラーが発生しました。
+Microsoft Defender ウイルス対策検疫からアイテムを削除しようとしてエラーが発生しました。
 詳細については、次のトピックを参照してください。
 <dl>
-<dt>名前: &lt;脅威名&gt;</dt> 
-<dt>ID: &lt;脅威 IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(たとえば、次の場合)<ul>
+<dt>Name: &lt;脅威名&gt;</dt> 
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度:&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>パス: &lt;ファイルパス&gt;</dt>
-<dt>User: &lt;Domainlt&gt;\&;UserError&gt;</dt> 
-<dt>Code: エラー &lt;コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
-<dt>署名バージョン: &lt;定義バージョン&gt;</dt>
-<dt>Engine バージョン: マルウェア対策エンジン &lt;バージョン&gt;</dt>
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Path: &lt;ファイル パス&gt;</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt> 
+<dt>Error Code &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。 </dt>
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt; マルウェア対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -688,7 +688,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しよう�
 <th colspan="2">イベント ID: 1013</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_MALWARE_HISTORY_DELETE </b>
@@ -699,7 +699,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しよう�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策プラットフォームは、マルウェアなどの望ましくない可能性のあるソフトウェアの履歴を削除しました。</b>
+<b>マルウェア対策プラットフォームは、マルウェアやその他の望ましくない可能性のあるソフトウェアの履歴を削除しました。</b>
 </td>
 </tr>
 <tr>
@@ -707,10 +707,10 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しよう�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策、マルウェアなどの望ましくない可能性のあるソフトウェアの履歴が削除されました。
+Microsoft Defender ウイルス対策は、マルウェアやその他の望ましくない可能性のあるソフトウェアの履歴を削除しました。
 <dl>
-<dt>時間: イベントが発生した時刻 (たとえば、履歴が削除された時刻)。このパラメーターは脅威イベントでは使用されないので、修復時間と感染時間の違いはありません。具体的には、アクション時間または検出時間と呼ぶ必要があります。</dt>
-<dt>ユーザー: &lt;Domainlt&gt;\&;ユーザー&gt;</dt>
+<dt>Time: イベントが発生した時刻 (たとえば、履歴が削除された時刻)。このパラメーターは脅威イベントでは使用されないので、修復時間と感染時間の違いはありません。具体的には、アクション時間または検出時間と呼ぶ必要があります。</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -718,7 +718,7 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <th colspan="2">イベント ID: 1014</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_MALWARE_HISTORY_DELETE_FAILED </b>
@@ -729,7 +729,7 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 メッセージ:
 </td>
 <td >
-マルウェア対策プラットフォームでは、マルウェアなどの望ましくない可能性があるソフトウェアの履歴を削除する必要がありました。
+マルウェア対策プラットフォームは、マルウェアやその他の望ましくない可能性のあるソフトウェアの履歴を削除できませんでした。
 </td>
 </tr>
 <tr>
@@ -737,12 +737,12 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策、マルウェアなどの望ましくない可能性のあるソフトウェアの履歴を削除しようとしてエラーが発生しました。
+Microsoft Defender ウイルス対策で、マルウェアやその他の望ましくない可能性のあるソフトウェアの履歴を削除しようとしてエラーが発生しました。
 <dl>
-<dt>時間: イベントが発生した時刻 (たとえば、履歴が削除された時刻)。このパラメーターは脅威イベントでは使用されないので、修復時間と感染時間の違いはありません。具体的には、アクション時間または検出時間と呼ぶ必要があります。</dt>
-<dt>ユーザー: &lt;Domainlt&gt;\&;UserError&gt;</dt> 
-<dt>Code: エラー &lt;コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
+<dt>Time: イベントが発生した時刻 (たとえば、履歴が削除された時刻)。このパラメーターは脅威イベントでは使用されないので、修復時間と感染時間の違いはありません。具体的には、アクション時間または検出時間と呼ぶ必要があります。</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
+<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。</dt>
 </dl>
 </td>
 </tr>
@@ -750,7 +750,7 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <th colspan="2">イベント ID: 1015</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_BEHAVIOR_DETECTED </b>
@@ -769,20 +769,20 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策疑わしい動作が検出されました。<br/>詳細については、次のトピックを参照してください。
+Microsoft Defender ウイルス対策が疑わしい動作を検出しました。<br/>詳細については、次のトピックを参照してください。
 <dl>
-<dt>名前: &lt;脅威名&gt;</dt> 
-<dt>ID: &lt;脅威 IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(たとえば、次の場合)<ul>
+<dt>Name: &lt;脅威名&gt;</dt> 
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度:&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>パス: &lt;ファイルパス&gt;</dt>
-<dt>Detection Origin: &lt;検出元&gt;:次に例を示します。
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Path: &lt;ファイル パス&gt;</dt>
+<dt>Detection Origin: &lt;検出元&gt;、例:
 <ul>
 <li>不明</li>
 <li>ローカル コンピューター</li>
@@ -792,32 +792,32 @@ Microsoft Defender ウイルス対策疑わしい動作が検出されました�
 <li>送信トラフィック</li>
 </ul>
 </dt>
-<dt>検出の種類: &lt;次に示す検出&gt;の種類を指定します。<ul>
+<dt>検出の種類: &lt;検出の種類&gt;、例:<ul>
 <li>ヒューリスティック</li>
 <li>Generic</li>
 <li>コンクリート</li>
 <li>動的署名</li>
 </ul>
 </dt>
-<dt>検出ソース: 次 &lt;に示す検出&gt; ソースを指定します。<ul>
-<li>ユーザー: 開始されたユーザー</li>
-<li>システム: システムが開始されました</li>
-<li>リアルタイム: リアルタイム コンポーネントの開始</li>
-<li>IOAV: IE の高速添付ファイルのOutlookと設定が開始されました</li>
+<dt>Detection Source: &lt;検出ソース&gt;、例:<ul>
+<li>ユーザー: ユーザー始動</li>
+<li>システム: システム始動</li>
+<li>リアルタイム: リアルタイム コンポーネント始動</li>
+<li>IOAV: IE のダウンロードと Outlook Express の添付ファイル始動</li>
 <li>NIS: ネットワーク検査システム</li>
-<li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
+<li>IEPROTECT: IE - IExtensionValidation; これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
 </ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
-UACStatus</dt>
-<dt>: &lt;StatusUser&gt;</dt>
-<dt>: &lt;Domainlt&gt;\&;UserProcess&gt;</dt> 
-<dt>Name: &lt;PIDSignature&gt;</dt> 
-<dt>ID のプロセス: 列挙一致の重大度。</dt>
-<dt>署名バージョン: &lt;定義バージョン&gt;</dt>
-<dt>Engine バージョン: マルウェア対策エンジン&lt;&gt;</dt>
-<dt>バージョンFidelity Label:</dt>
-<dt>Target File Name: &lt;File name&gt; of the file.</dt>
+UAC</dt>
+<dt>Status: &lt;状態&gt;</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
+<dt>Process Name: &lt;PID 内のプロセス&gt;</dt>
+<dt>Signature ID: 列挙一致の重大度。</dt>
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
+<dt>Fidelity Label:</dt>
+<dt>Target File Name: &lt;ファイル名&gt; ファイルの名前。</dt>
 </dl>
 </td>
 </tr>
@@ -825,7 +825,7 @@ UACStatus</dt>
 <th colspan="2">イベント ID: 1116</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_STATE_MALWARE_DETECTED</b>
@@ -844,20 +844,20 @@ UACStatus</dt>
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策または他の望ましくない可能性のあるソフトウェアが検出されました。<br/>詳細については、次のトピックを参照してください。
+Microsoft Defender ウイルス対策は、マルウェアやその他の望ましくない可能性のあるソフトウェアを検出しました。<br/>詳細については、次のトピックを参照してください。
 <dl>
-<dt>名前: &lt;脅威名&gt;</dt> 
-<dt>ID: &lt;脅威 IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(たとえば、次の場合)<ul>
+<dt>Name: &lt;脅威名&gt;</dt> 
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度:&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>パス: &lt;ファイルパス&gt;</dt>
-<dt>Detection Origin: &lt;検出元&gt;:次に例を示します。
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Path: &lt;ファイル パス&gt;</dt>
+<dt>Detection Origin: &lt;検出元&gt;、例:
 <ul>
 <li>不明</li>
 <li>ローカル コンピューター</li>
@@ -867,44 +867,44 @@ Microsoft Defender ウイルス対策または他の望ましくない可能性�
 <li>送信トラフィック</li>
 </ul>
 </dt>
-<dt>検出の種類: &lt;次に示す検出&gt;の種類を指定します。<ul>
+<dt>検出の種類: &lt;検出の種類&gt;、例:<ul>
 <li>ヒューリスティック</li>
 <li>Generic</li>
 <li>コンクリート</li>
 <li>動的署名</li>
 </ul>
 </dt>
-<dt>検出ソース: 次 &lt;に示す検出&gt; ソースを指定します。<ul>
-<li>ユーザー: 開始されたユーザー</li>
-<li>システム: システムが開始されました</li>
-<li>リアルタイム: リアルタイム コンポーネントの開始</li>
-<li>IOAV: IE の高速添付ファイルのOutlookと設定が開始されました</li>
+<dt>Detection Source: &lt;検出ソース&gt;、例:<ul>
+<li>ユーザー: ユーザー始動</li>
+<li>システム: システム始動</li>
+<li>リアルタイム: リアルタイム コンポーネント始動</li>
+<li>IOAV: IE のダウンロードと Outlook Express の添付ファイル始動</li>
 <li>NIS: ネットワーク検査システム</li>
-<li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
+<li>IEPROTECT: IE - IExtensionValidation; これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
 </ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
-UACUser</dt>
-<dt>: &lt;Domainlt&gt;\&;UserProcess&gt;</dt> 
-<dt>Name: &lt;プロセスの PIDSignature&gt;</dt> 
-<dt>バージョン: &lt;Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
+UAC</dt>
+<dt>User: &lt;ドメイン&gt;\&ltユーザー&gt;</dt>
+<dt>Process Name: &lt;PID 内のプロセス&gt;</dt>
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-何もする必要はありません。 Microsoft Defender ウイルス対策、この脅威に対して定期的なアクションを中断して実行できます。 脅威を手動で削除する場合は、Microsoft Defender ウイルス対策[クリーン コンピューター] <b>をクリックします</b>。
+何もする必要はありません。 Microsoft Defender ウイルス対策は、この脅威に対して一時停止し、ルーティン アクションを実行できます。 手動で脅威を削除する場合は、Microsoft Defender ウイルス対策のインターフェイスで、[<b>コンピューターをクリーン</b>] をクリックします。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 1117</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_STATE_MALWARE_ACTION_TAKEN </b>
@@ -915,7 +915,7 @@ UACUser</dt>
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策プラットフォームは、マルウェアなどの望ましくない可能性のあるソフトウェアからシステムを保護するためのアクションを実行しました。 </b>
+<b>マルウェア対策プラットフォームにより、マルウェアなどの望ましくない可能性のあるソフトウェアからシステムを保護するためのアクションが実行されました。</b>
 </td>
 </tr>
 <tr>
@@ -923,20 +923,20 @@ UACUser</dt>
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策、マルウェアなどの望ましくない可能性のあるソフトウェアからこのコンピューターを保護するための措置を取っています。<br/>詳細については、次のトピックを参照してください。
+Microsoft Defender ウイルス対策、マルウェアや望ましくない可能性のある他のソフトウェアからこのコンピューターを保護するための措置を取っています。<br/>詳細については、次のトピックを参照してください。
 <dl>
-<dt>名前: &lt;脅威名&gt;</dt> 
-<dt>ID: &lt;脅威 IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(たとえば、次の場合)<ul>
+<dt>Name: &lt;脅威名&gt;</dt> 
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度:&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>パス: &lt;ファイルパス&gt;</dt>
-<dt>Detection Origin: &lt;検出元&gt;:次に例を示します。
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Path: &lt;ファイル パス&gt;</dt>
+<dt>Detection Origin: &lt;検出元&gt;、例:
 <ul>
 <li>不明</li>
 <li>ローカル コンピューター</li>
@@ -946,49 +946,49 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <li>送信トラフィック</li>
 </ul>
 </dt>
-<dt>検出の種類: &lt;次に示す検出&gt;の種類を指定します。<ul>
+<dt>検出の種類: &lt;検出の種類&gt;、例:<ul>
 <li>ヒューリスティック</li>
 <li>Generic</li>
 <li>コンクリート</li>
 <li>動的署名</li>
 </ul>
 </dt>
-<dt>検出ソース: 次 &lt;に示す検出&gt; ソースを指定します。<ul>
-<li>ユーザー: 開始されたユーザー</li>
-<li>システム: システムが開始されました</li>
-<li>リアルタイム: リアルタイム コンポーネントの開始</li>
-<li>IOAV: IE の高速添付ファイルのOutlookと設定が開始されました</li>
+<dt>Detection Source: &lt;検出ソース&gt;、例:<ul>
+<li>ユーザー: ユーザー始動</li>
+<li>システム: システム始動</li>
+<li>リアルタイム: リアルタイム コンポーネント始動</li>
+<li>IOAV: IE のダウンロードと Outlook Express の添付ファイル始動</li>
 <li>NIS: ネットワーク検査システム</li>
-<li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
+<li>IEPROTECT: IE - IExtensionValidation; これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
 </ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
-UACUser</dt>
-<dt>: &lt;Domainlt&gt;\&;UserProcess&gt;</dt> 
-<dt>Name: &lt;次に示す PIDAction&gt;</dt>
-<dt>: &lt;Action&gt; のプロセス。<ul>
-<li>クリーン: リソースがクリーンアップされました</li>
-<li>検疫: リソースが検疫されました</li>
-<li>削除: リソースが削除されました</li>
-<li>許可: リソースの実行/存在が許可されました</li>
-<li>ユーザー定義: ユーザーが指定したアクションのこのリストから通常 1 つであるユーザー定義のアクション</li>
-<li>アクションなし: アクションなし</li>
-<li>ブロック: リソースの実行がブロックされました</li>
+UAC</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt> 
+<dt>Process Name: &lt;PID 内のプロセス&gt;</dt>
+<dt>Action: &lt;アクション&gt;、例:<ul>
+<li>Clean: リソースがクリーンアップされました</li>
+<li>Quarantine: リソースが検疫されました</li>
+<li>Remove: リソースが削除されました</li>
+<li>Allow: リソースの実行/存在が許可されました</li>
+<li>User defined: ユーザーが指定したアクションのこのリストから通常 1 つであるユーザー定義のアクション</li>
+<li>No action: アクションなし</li>
+<li>Block: リソースの実行がブロックされました</li>
 </ul>
 </dt>
-<dt>アクションの状態: &lt;追加のアクションの説明&gt;</dt>
+<dt>Action Status: &lt;追加のアクションの説明&gt;</dt>
 <dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
-<dt>署名バージョン: &lt;定義バージョン&gt;</dt>
-<dt>Engine バージョン: &lt;&gt;</dt> マルウェア対策エンジンバージョン NOTE: Microsoft Defender ウイルス対策、Microsoft Security Essentials、悪意のあるソフトウェアの削除ツール、またはSystem Center Endpoint Protection検出されると、マルウェアが変更した可能性のある次のシステム設定とサービスが復元されます。<ul>
-<li>既定Internet ExplorerまたはMicrosoft Edge設定</li>
-<li>ユーザー アクセス制御の設定</li>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。 </dt>
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt;&gt;マルウェア対策エンジン バージョン</dt> メモ: Microsoft Defender ウイルス対策、Microsoft Security Essentials、悪意のあるソフトウェアの削除ツール、または Microsoft System Center Endpoint Protection がマルウェアを検出すると、マルウェアが変更された可能性のある次のシステム設定とサービスを復元します:<ul>
+<li>既定の Internet Explorer または Microsoft Edge の設定</li>
+<li>フィールド アクセス制御の設定</li>
 <li>Chrome の設定</li>
 <li>ブート コントロール データ</li>
-<li>Regedit と Task Manager のレジストリ設定</li>
-<li>Windows、バックグラウンド インテリジェント転送サービス、およびリモート プロシージャ 通話サービス</li>
-<li>Windows オペレーティング システム ファイル</li></ul>
-上記のコンテキストは、次のクライアントとサーバーのバージョンに適用されます。
+<li>Regedit とタスク マネーカーのレジストリ設定</li>
+<li>Windows Update、バックグラウンド インテリジェント転送サービス、およびリモート プロシージャ コール サービス</li>
+<li>Windows オペレーティング システムのデータ</li></ul>
+上記のコンテキストは、次のクライアントとサーバーのバージョンに適用されます:
 <table>
 <tr>
 <th>オペレーティング システム</th>
@@ -996,7 +996,7 @@ UACUser</dt>
 </tr>
 <tr>
 <td>
-クライアント オペレーティング システム
+クライアントのオペレーティング システム
 </td>
 <td>
 Windows Vista (Service Pack 1、または Service Pack 2)、Windows 7 以降
@@ -1007,7 +1007,7 @@ Windows Vista (Service Pack 1、または Service Pack 2)、Windows 7 以降
 サーバー オペレーティング システム
 </td>
 <td>
-Windows Server 2008、Windows Server 2008 R2、Windows Server 2012、およびWindows Server 2016
+Windows Server 2008、Windows Server 2008 R2、Windows Server 2012 および Windows Server 2016
 </td>
 </tr>
 </table>
@@ -1016,17 +1016,17 @@ Windows Server 2008、Windows Server 2008 R2、Windows Server 2012、およびWi
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-アクションは必要ありません。 Microsoft Defender ウイルス対策を削除または検疫した場合。
+操作は必要ありません。 Microsoft Defender ウイルス対策が脅威を削除または検疫しました。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 1118</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_STATE_MALWARE_ACTION_FAILED</b>
@@ -1037,7 +1037,7 @@ Windows Server 2008、Windows Server 2008 R2、Windows Server 2012、およびWi
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策プラットフォームは、マルウェアなどの望ましくない可能性があるソフトウェアからシステムを保護するためのアクションを実行しようとしたが、アクションは失敗した。 </b>
+<b>マルウェア対策プラットフォームは、マルウェアやその他の望ましくない可能性のあるソフトウェアからシステムを保護するアクションを実行しようとしましたが、操作は失敗しました。</b>
 </td>
 </tr>
 <tr>
@@ -1045,20 +1045,20 @@ Windows Server 2008、Windows Server 2008 R2、Windows Server 2012、およびWi
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策その他の望ましくない可能性のあるソフトウェアに対してアクションを実行するときに重大でないエラーが発生しました。<br/>詳細については、次のトピックを参照してください。
+マルウェアやその他の望ましくない可能性のあるソフトウェアに対してアクションを実行するときに、Microsoft Defender ウイルス対策で重大ではないエラーが発生しました。<br/>詳細については、次のトピックを参照してください。
 <dl>
-<dt>名前: &lt;脅威名&gt;</dt> 
-<dt>ID: &lt;脅威 IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(たとえば、次の場合)<ul>
+<dt>Name: &lt;脅威名&gt;</dt> 
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度:&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>パス: &lt;ファイルパス&gt;</dt>
-<dt>Detection Origin: &lt;検出元&gt;:次に例を示します。
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Path: &lt;ファイル パス&gt;</dt>
+<dt>Detection Origin: &lt;検出元&gt;、例:
 <ul>
 <li>不明</li>
 <li>ローカル コンピューター</li>
@@ -1068,57 +1068,57 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <li>送信トラフィック</li>
 </ul>
 </dt>
-<dt>検出の種類: &lt;次に示す検出&gt;の種類を指定します。<ul>
+<dt>検出の種類: &lt;検出の種類&gt;、例:<ul>
 <li>ヒューリスティック</li>
 <li>Generic</li>
 <li>コンクリート</li>
 <li>動的署名</li>
 </ul>
 </dt>
-<dt>検出ソース: 次 &lt;に示す検出&gt; ソースを指定します。<ul>
-<li>ユーザー: 開始されたユーザー</li>
-<li>システム: システムが開始されました</li>
-<li>リアルタイム: リアルタイム コンポーネントの開始</li>
-<li>IOAV: IE の高速添付ファイルのOutlookと設定が開始されました</li>
+<dt>Detection Source: &lt;検出ソース&gt;、例:<ul>
+<li>ユーザー: ユーザー始動</li>
+<li>システム: システム始動</li>
+<li>リアルタイム: リアルタイム コンポーネント始動</li>
+<li>IOAV: IE のダウンロードと Outlook Express の添付ファイル始動</li>
 <li>NIS: ネットワーク検査システム</li>
-<li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
+<li>IEPROTECT: IE - IExtensionValidation; これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
 </ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
-UACUser</dt>
-<dt>: &lt;Domainlt&gt;\&;UserProcess&gt;</dt> 
-<dt>Name: &lt;次に示す PIDAction&gt;</dt>
-<dt>: &lt;Action&gt; のプロセス。<ul>
-<li>クリーン: リソースがクリーンアップされました</li>
-<li>検疫: リソースが検疫されました</li>
-<li>削除: リソースが削除されました</li>
-<li>許可: リソースの実行/存在が許可されました</li>
-<li>ユーザー定義: ユーザーが指定したアクションのこのリストから通常 1 つであるユーザー定義のアクション</li>
-<li>アクションなし: アクションなし</li>
-<li>ブロック: リソースの実行がブロックされました</li>
+UAC</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt> 
+<dt>Process Name: &lt;PID 内のプロセス&gt;</dt>
+<dt>Action: &lt;アクション&gt;、例:<ul>
+<li>Clean: リソースがクリーンアップされました</li>
+<li>Quarantine: リソースが検疫されました</li>
+<li>Remove: リソースが削除されました</li>
+<li>Allow: リソースの実行/存在が許可されました</li>
+<li>User defined: ユーザーが指定したアクションのこのリストから通常 1 つであるユーザー定義のアクション</li>
+<li>No action: アクションなし</li>
+<li>Block: リソースの実行がブロックされました</li>
 </ul>
 </dt>
-<dt>アクションの状態: &lt;追加のアクションの説明&gt;</dt>
+<dt>Action Status: &lt;追加のアクションの説明&gt;</dt>
 <dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
-<dt>署名バージョン: &lt;定義バージョン&gt;</dt>
-<dt>Engine バージョン: マルウェア対策エンジン &lt;バージョン&gt;</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。 </dt>
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version &lt;マルウェア対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-アクションは必要ありません。 Microsoft Defender ウイルス対策修復に関連するタスクを完了できなかった場合。 これは重大なエラーではありません。
+操作は必要ありません。 Microsoft Defender ウイルス対策は、マルウェアの修復に関連するタスクを完了できませんでした。 これは重大なエラーではありません。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 1119</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_STATE_MALWARE_ACTION_CRITICALLY_FAILED </b>
@@ -1129,7 +1129,7 @@ UACUser</dt>
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策プラットフォームでは、マルウェアなどの望ましくない可能性のあるソフトウェアに対してアクションを実行しようとするときに重大なエラーが発生しました。イベント メッセージには詳細があります。</b>
+<b>マルウェアやその他の望ましくない可能性のあるソフトウェアに対してアクションを実行しようとしたときに、マルウェア対策プラットフォームで重大なエラーが発生しました。イベント メッセージに詳細があります。</b>
 </td>
 </tr>
 <tr>
@@ -1137,20 +1137,20 @@ UACUser</dt>
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策その他の望ましくない可能性のあるソフトウェアに対してアクションを実行するときに重大なエラーが発生しました。<br/>詳細については、次のトピックを参照してください。
+マルウェアやその他の望ましくない可能性のあるソフトウェアに対してアクションを実行するときに、Microsoft Defender ウイルス対策で重大なエラーが発生しました。<br/>詳細については、次のトピックを参照してください。
 <dl>
-<dt>名前: &lt;脅威名&gt;</dt> 
-<dt>ID: &lt;脅威 IDSeverity&gt;</dt>
-<dt>: &lt;重大度&gt;(たとえば、次の場合)<ul>
+<dt>Name: &lt;脅威名&gt;</dt> 
+<dt>ID: &lt;脅威 ID&gt;</dt>
+<dt>Severity: &lt;重大度:&gt;、例:<ul>
 <li>低</li>
 <li>中</li>
 <li>高</li>
 <li>重大</li>
 </ul>
 </dt>
-<dt>カテゴリ: &lt;カテゴリの&gt;説明 (脅威やマルウェアの種類など)。</dt>
-<dt>パス: &lt;ファイルパス&gt;</dt>
-<dt>Detection Origin: &lt;検出元&gt;:次に例を示します。
+<dt>Category: &lt;カテゴリの説明&gt; (脅威やマルウェアの種類など)。</dt>
+<dt>Path: &lt;ファイル パス&gt;</dt>
+<dt>Detection Origin: &lt;検出元&gt;、例:
 <ul>
 <li>不明</li>
 <li>ローカル コンピューター</li>
@@ -1160,50 +1160,50 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <li>送信トラフィック</li>
 </ul>
 </dt>
-<dt>検出の種類: &lt;次に示す検出&gt;の種類を指定します。<ul>
+<dt>検出の種類: &lt;検出の種類&gt;、例:<ul>
 <li>ヒューリスティック</li>
 <li>Generic</li>
 <li>コンクリート</li>
 <li>動的署名</li>
 </ul>
 </dt>
-<dt>検出ソース: 次 &lt;に示す検出&gt; ソースを指定します。<ul>
-<li>ユーザー: 開始されたユーザー</li>
-<li>システム: システムが開始されました</li>
-<li>リアルタイム: リアルタイム コンポーネントの開始</li>
-<li>IOAV: IE の高速添付ファイルのOutlookと設定が開始されました</li>
+<dt>Detection Source: &lt;検出ソース&gt;、例:<ul>
+<li>ユーザー: ユーザー始動</li>
+<li>システム: システム始動</li>
+<li>リアルタイム: リアルタイム コンポーネント始動</li>
+<li>IOAV: IE のダウンロードと Outlook Express の添付ファイル始動</li>
 <li>NIS: ネットワーク検査システム</li>
-<li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
+<li>IEPROTECT: IE - IExtensionValidation; これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
 </ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
-UACUser</dt>
-<dt>: &lt;Domainlt&gt;\&;UserProcess&gt;</dt> 
-<dt>Name: &lt;次に示す PIDAction&gt;</dt>
-<dt>: &lt;Action&gt; のプロセス。<ul>
-<li>クリーン: リソースがクリーンアップされました</li>
-<li>検疫: リソースが検疫されました</li>
-<li>削除: リソースが削除されました</li>
-<li>許可: リソースの実行/存在が許可されました</li>
-<li>ユーザー定義: ユーザーが指定したアクションのこのリストから通常 1 つであるユーザー定義のアクション</li>
-<li>アクションなし: アクションなし</li>
-<li>ブロック: リソースの実行がブロックされました</li>
+UAC</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt> 
+<dt>Process Name: &lt;PID 内のプロセス&gt;</dt>
+<dt>Action: &lt;アクション&gt;、例:<ul>
+<li>Clean: リソースがクリーンアップされました</li>
+<li>Quarantine: リソースが検疫されました</li>
+<li>Remove: リソースが削除されました</li>
+<li>Allow: リソースの実行/存在が許可されました</li>
+<li>User defined: ユーザーが指定したアクションのこのリストから通常 1 つであるユーザー定義のアクション</li>
+<li>No action: アクションなし</li>
+<li>Block: リソースの実行がブロックされました</li>
 </ul>
 </dt>
-<dt>アクションの状態: &lt;追加のアクションの説明&gt;</dt>
+<dt>Action Status: &lt;追加のアクションの説明&gt;</dt>
 <dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
-<dt>署名バージョン: &lt;定義バージョン&gt;</dt>
-<dt>Engine バージョン: マルウェア対策エンジン &lt;バージョン&gt;</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。 </dt>
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version &lt;マルウェア対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-クライアントMicrosoft Defender ウイルス対策、重大な問題が原因でこのエラーが発生しました。 エンドポイントが保護されていない可能性があります。 エラーの説明を確認し、以下の関連する <b>ユーザー アクションの手順に</b> 従います。
+Microsoft Defender ウイルス対策 クライアントで重大な問題が発生したため、このエラーが発生しました。 エンドポイントが保護されていない可能性があります。 エラーの説明を確認し、以下の関連する <b>ユーザー アクション</b>の手順に従います。
 <table>
 <tr>
 <th>Action</th>
@@ -1211,7 +1211,7 @@ UACUser</dt>
 </tr>
 <tr>
 <td>
-<b>削除</b>
+<b>Remove</b>
 </td>
 <td>
 定義を更新し、削除が成功したと確認します。
@@ -1219,7 +1219,7 @@ UACUser</dt>
 </tr>
 <tr>
 <td>
-<b>クリーン</b>
+<b>Clean</b>
 </td>
 <td>
 定義を更新し、修復が成功したと確認します。
@@ -1227,7 +1227,7 @@ UACUser</dt>
 </tr>
 <tr>
 <td>
-<b>検疫</b>
+<b>Quarantine</b>
 </td>
 <td>
 定義を更新し、ユーザーが必要なリソースにアクセスするためのアクセス許可を持っている必要があります。
@@ -1235,7 +1235,7 @@ UACUser</dt>
 </tr>
 <tr>
 <td>
-<b>許可する</b>
+<b>Allow</b>
 </td>
 <td>
 ユーザーが必要なリソースにアクセスするためのアクセス許可を持っている必要があります。
@@ -1243,9 +1243,9 @@ UACUser</dt>
 </tr>
 </table>
 
-このイベントが続く場合は、次の処理を行います。<ol>
+このイベントが続く場合は、次の処理を行います:<ol>
 <li>スキャンを再度実行します。</li>
-<li>同じ方法で失敗した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポート</a> サイトに移動し、[検索] ボックスにエラー<b></b>番号を入力してエラー コードを探します。</li>
+<li>同じ方法で失敗した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポートサイト</a>に移動し、[<b>検索</b>] ボックスにエラー番号を入力してエラー コードを探します。</li>
 <li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
 </ol>
@@ -1255,7 +1255,7 @@ UACUser</dt>
 <th colspan="2">イベント ID: 1120</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_THREAT_HASH</b>
@@ -1266,7 +1266,7 @@ UACUser</dt>
 メッセージ:
 </td>
 <td >
-<b>Microsoft Defender ウイルス対策リソースのハッシュを誘導しました。</b>
+<b>Microsoft Defender ウイルス対策は、脅威リソースのハッシュを推測しました。</b>
 </td>
 </tr>
 <tr>
@@ -1276,16 +1276,16 @@ UACUser</dt>
 <td >
 Microsoft Defender ウイルス対策は正常な状態で稼働しています。
 <dl>
-<dt>現在のプラットフォームのバージョン: &lt;現在のプラットフォーム バージョン&gt;</dt>
-<dt>Threat リソース パス: &lt;PathHashes&gt;</dt>
-<dt>: &lt;Hashes&gt;</dt>
+<dt>Current Platform Version: &lt;現在のプラットフォーム バージョン&gt;</dt>
+<dt>Threat Resource Path: &lt;パス&gt;</dt>
+<dt>Hashes: &lt;ハッシュ&gt;</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td></td>
 <td >
-<div class="alert"><b>注: このイベントは、次のポリシーが設定されている場合にのみログに <b>記録されます。ThreatFileHashLogging は署名なしです</b>。</div>
+<div class="alert"><b>メモ: このイベントは、次のポリシーが設定されている場合にのみログに記録されます: <b>ThreatFileHashLogging     unsigned</b>。</div>
 <div> </div>
 </td>
 </tr>
@@ -1293,7 +1293,7 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 <th colspan="2">イベント ID: 1127</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_FOLDER_GUARD_SECTOR_BLOCK</b>
@@ -1304,7 +1304,7 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 メッセージ:
 </td>
 <td >
-<b>フォルダー アクセスの制御 (CFA) は、信頼されていないプロセスがメモリに変更を加えるのをブロックしました。 </b>
+<b>フォルダー アクセス制御 (CFA) により、信頼されていないプロセスがメモリに変更を加えることができませんでした。</b>
 </td>
 </tr>
 <tr>
@@ -1312,42 +1312,42 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 説明:
 </td>
 <td >
-フォルダー アクセスの制御により、信頼されていないプロセスがディスク セクターを変更する可能性がブロックされています。
+フォルダー アクセスの制御により、信頼されていないプロセスによりディスク セクターを変更される可能性がブロックされました。
 <br/> イベント レコードの詳細については、以下を参照してください。
 <dl>
-<dt>EventID: &lt;&gt;EventID(例: 1127Version</dt>: Version、 例: 
-<dt>0Level: &lt;Level、 win:WarningTimeCreated: SystemTime, time when the event createdEventRecordID: EventRecordID, event logExecution ProcessID: Execution ProcessID, process the eventChannel: Event channel, example&gt;</dt>: 
-<dt>Microsoft- &lt;&gt;</dt>
-<dt>&lt;&gt;</dt>
-<dt>&lt;&gt;</dt>
-<dt>&gt;&lt;</dt>
-<dt>&lt;&gt;Windows-Windows Defender/</dt>
-<dt>OperationalComputer: &lt;コンピューター名&gt;</dt>
-<dt>Security UserID: &lt;Security UserIDProduct&gt;</dt> 
-<dt>Name: &lt;&gt;Product Name, 例: Microsoft Defender ウイルス対策</dt>
-<dt>Product Version: &lt;Product VersionDetection&gt;</dt> 
-<dt>Time: &lt;検出時間&gt;、CFA が信頼されていない</dt>プロセスをブロックした時間
-<dt>User: &lt;Domainlt&gt;\&;UserPath&gt;</dt>
-<dt>: &lt;&gt;</dt> デバイス名、信頼されていないプロセスが変更のためにアクセスしたデバイスまたはディスクの名前 
-<dt>プロセス名: &lt;&gt;</dt> プロセス パス、CFA がデバイスまたはディスクへのアクセスをブロックしたプロセス パス名
-<dt>Security Intelligence Version: &lt;Security Intelligence versionEngine&gt;</dt> 
-<dt>Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
+<dt>EventID: &lt;EventID&gt;、(例: 1127)</dt>
+<dt>Version: &lt;バージョン&gt;、例: 0 </dt>
+<dt>Level: &lt;レベル&gt;、例: win:Warning</dt>
+<dt>TimeCreated: &lt;SystemTime&gt;、イベントが作成された時間</dt>
+<dt>EventRecordID: &lt;EventRecordID&gt;、イベント ログでのイベントのインデックス番号</dt>
+<dt>Execution ProcessID: &lt;Execution ProcessID&gt;、イベントを生成したプロセス</dt>
+<dt>Channel: &lt;イベント チャネル&gt;、例: Microsoft-Windows-Windows Defender/Operational</dt>
+<dt>Computer: &lt;コンピューター名&gt;</dt>
+<dt>Security UserID: &lt;セキュリティ ユーザー ID&gt;</dt>
+<dt>Product Name: &lt;製品名&gt;、例: Microsoft Defender Antivirus</dt>
+<dt>Product Version: &lt;Product Version&gt;</dt>
+<dt>Detection Time: &lt;検出時間&gt;、CFA が信頼されていないプロセスをブロックした時間</dt>
+<dt>User: &lt;ドメイン&gt;\&;ltユーザー&gt;</dt>
+<dt>Path: &lt;デバイス名&gt;</dt>、信頼されていないプロセスが変更のためにアクセスしたデバイスまたはディスクの名前 
+<dt>Process Name: &lt;プロセス パス&gt;、変更のために CFA がdeviceやディスクにアクセスするのをブロックしたプロセス パス名</dt>
+<dt>Security Intelligence Version: &lt;セキュリティ インテリジェンス バージョン&gt;</dt>
+<dt>Engine Version: &lt;ウイルス対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-ユーザーは、Powershell または Windows セキュリティ センターを使用<i></i>して、CFA の [許可されたプロセス] リストにブロックされたプロセスをWindows セキュリティできます。
+ユーザーは、Powershell または Windows セキュリティ Center を使用して、CFA の <i>許可されたプロセス</i> リストにブロックされたプロセスを追加できます。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 1150</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SERVICE_HEALTHY</b>
@@ -1358,7 +1358,7 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策プラットフォームが監視プラットフォームに状態を報告する場合、このイベントは、マルウェア対策プラットフォームが実行され、正常な状態にあるかどうかを示します。 </b>
+<b>マルウェア対策プラットフォームが監視プラットフォームに状態を報告する場合、このイベントはマルウェア対策プラットフォームが実行中で正常な状態であることを示します。</b>
 </td>
 </tr>
 <tr>
@@ -1368,18 +1368,18 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 <td >
 Microsoft Defender ウイルス対策は正常な状態で稼働しています。
 <dl>
-<dt>プラットフォームのバージョン: &lt;現在のプラットフォームバージョン&gt;</dt>
-<dt>Signature Version: &lt;Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
+<dt>Platform Version: &lt;現在のプラットフォームバージョン&gt;</dt>
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt;マルウェア対策エンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-アクションは必要ありません。 クライアントMicrosoft Defender ウイルス対策正常な状態です。 このイベントは、1 時間単位で報告されます。
+操作は必要ありません。 Microsoft Defender ウイルス対策クライアントは正常な状態です。 このイベントは、1 時間単位で報告されます。
 </td>
 </tr>
 
@@ -1387,7 +1387,7 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 <th colspan="2">イベント ID: 1151</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SERVICE_HEALTH_REPORT</b>
@@ -1398,7 +1398,7 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 メッセージ:
 </td>
 <td >
-<b>Endpoint Protection正常性レポート (UTC の時刻)</b>
+<b>Endpoint Protection クライアント正常性レポート (UTC の時刻)</b>
 </td>
 </tr>
 <tr>
@@ -1408,29 +1408,29 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 <td >
 ウイルス対策クライアントの正常性レポート。
 <dl>
-<dt>プラットフォームのバージョン: &lt;&gt;</dt>
-<dt>現在&gt;のプラットフォームバージョンEngine バージョン: &lt;マルウェア対策エンジン</dt> versionNetwork リアルタイム検査エンジンバージョン
-<dt>: ネットワーク&gt;リアルタイム検査エンジンバージョンAntivirus signature version: &lt;</dt>
-<dt>&lt;&gt;</dt> Antivirus Signature 
-<dt>versionAntispyware signature version: Antispyware Signature version: &lt;Antispyware Signature versionNetwork&gt;</dt> 
-<dt>Realtime Inspection Signature version: &lt;ネットワークリアルタイム&gt;</dt>検査署名バージョン
-<dt>RTP 状態: &lt;&gt;</dt> リアルタイム保護状態 (有効または無効) OA 
-<dt>&lt;状態: On Access&gt; 状態 (Enabled または Disabled)</dt>
-<dt>IOAV 状態: &lt;IE ダウンロードと Outlook Express Attachments&gt; state (</dt>Enabled or Disabled)BM 状態: 
-<dt>&lt;&gt; 動作監視状態 (Enabled or Disabled)</dt>
-<dt>ウイルス&lt;&gt;対策署名の年齢: ウイルス対策署名の年齢 (日数)</dt>
-<dt>スパイウェア対策の署名の年齢: &lt;Antispyware&gt;</dt> 署名の年齢 (日) 最後のクイック スキャンの時間
-<dt>: &lt;&gt;</dt> 最後のクイック スキャンの年齢 (日) 最後のフル スキャンの時間: 
-<dt>&lt;&gt;</dt> 最後のフル スキャンの年齢 (日) ウイルス対策署名の作成
-<dt>時間: ?&lt;ウイルス対策署名の作成時間&gt;</dt>
-<dt>Antispyware 署名の作成時間: ?&lt;スパイウェア対策署名の作成時間&gt;</dt>
-<dt>Last クイック スキャンの開始時刻: ?&lt;最後のクイック スキャンの開始時刻&gt;</dt>
-<dt>Last クイック スキャン終了時刻: ?&lt;最後のクイック スキャン終了時刻&gt;</dt>Last クイック スキャン ソース
-<dt>: &lt;&gt;</dt> 最後のクイック スキャン ソース (0 = スキャンが実行されなかった、1 = ユーザーが開始、2 = システムが開始)、最後のフル スキャン開始時刻
-<dt>: ?&lt;最後のフル スキャン開始時刻&gt;</dt>
-<dt>Last full scan end time: ?&lt;最後のフル スキャン終了時刻&gt;</dt>Last フル スキャン ソース
-<dt>: &lt;&gt;</dt>最後のフル スキャン ソース (0 = スキャンが実行されなかった、1 = ユーザーが開始、2 = システム開始)製品
-<dt>の状態: 内部トラブルシューティングの場合
+<dt>Platform Version: &lt;現在のプラットフォーム バージョン&gt;</dt>
+<dt>Engine Version: &lt;マルウェア対策エンジン&gt;</dt>
+<dt>Network Realtime Inspection engine version: &lt;ネットワーク リアルタイム検査エンジン バージョン&gt;</dt>
+<dt>Antivirus signature version: &lt;ウイルス対策署名バージョン&gt;</dt>
+<dt>Antispyware Signature version: &lt;スパイウェア対策署名バージョン&gt;</dt>
+<dt>Network Realtime Inspection Signature version: &lt;ネットワークリアルタイム検査署名バージョン&gt;</dt>
+<dt>RTP state: &lt;リアルタイム保護状態&gt; (有効または無効)</dt>
+<dt>OA state: &lt;アクセス時の状態&gt; (Enabled または Disabled)</dt>
+<dt>IOAV state: &lt;IE ダウンロードと Outlook Express 添付ファイルの状態&gt;(有効または無効)</dt>
+<dt>BM state: &lt;動作監視状態&gt; (有効または無効)</dt>
+<dt>Antivirus signature age:&lt;ウイルス対策署名からの経時&gt; (日数)</dt>
+<dt>Antispyware signature age: &lt;スパイウェア対策の署名からの経時&gt; (日数)</dt>
+<dt>Last quick scan age: &lt;最後のクイック スキャンからの経時&gt; (日数)</dt>
+<dt>Last full scan age: &lt;最後のフル スキャンからの経時&gt; (日数)</dt>
+<dt>Antivirus signature creation time: ?&lt;ウイルス対策署名の作成時間&gt;</dt>
+<dt>Antispyware signature creation time: ?&lt;スパイウェア対策署名作成時間&gt;</dt>
+<dt>Last quick scan start time: ?&lt;最後のクイック スキャンの開始時刻&gt;</dt>
+<dt>Last quick scan end time: ?&lt;最後のクイック スキャン終了時刻&gt;</dt>
+<dt>Last quick scan source: &lt;最後のクリック スキャン ソース&gt; (0 = スキャン未実行, 1 = ユーザー始動, 2 = システム始動)</dt>
+<dt>Last full scan start time: ?&lt;最後のフル スキャン開始時間&gt;</dt>
+<dt>Last full scan end time: ?&lt;最後のフル スキャン終了時間&gt;</dt>
+<dt>Last full scan source: &lt;最後のフル スキャン ソース&gt; (0 = スキャン未実行, 1 = ユーザー始動, 2 = システム始動)</dt>
+<dt>Product status: 内部トラブルシューティング用
 </dl>
 </td>
 </tr>
@@ -1439,7 +1439,7 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 <th colspan="2">イベント ID: 2000</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SIGNATURE_UPDATED </b>
@@ -1450,7 +1450,7 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策の定義が正常に更新されました。 </b>
+<b>マルウェア対策の定義が正常に更新されました。</b>
 </td>
 </tr>
 <tr>
@@ -1460,35 +1460,35 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 <td >
 ウイルス対策署名のバージョンが更新されました。
 <dl>
-<dt>現在の署名バージョン: &lt;現在の署名バージョン&gt;</dt>
+<dt>Current Signature Version: &lt;現在の署名バージョン&gt;</dt>
 <dt>Previous Signature Version: &lt;以前の署名バージョン&gt;</dt>
-<dt>Signature Type: &lt;Signature type&gt;, example: <ul>
+<dt>Signature Type: &lt;署名の種類&gt;、例: <ul>
 <li>ウイルス対策</li>
 <li>スパイウェア対策</li>
 <li>マルウェア対策</li>
 <li>ネットワーク検査システム</li>
 </ul>
 </dt>
-<dt>更新プログラムの種類: &lt;更新の種類&gt; (Full または Delta)。</dt>
-<dt>ユーザー: &lt;Domainlt&gt;\&;UserCurrent&gt;</dt> 
-<dt>Engine Version: &lt;Current engine versionPrevious&gt;</dt> 
-<dt>Engine Version: &lt;Previous engine version&gt;</dt>
+<dt>Update Type: &lt;更新プログラムの種類&gt; (フルまたは差分)。</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
+<dt>Current Engine Version: &lt;現在のエンジン バージョン&gt;</dt>
+<dt>Previous Engine Version: &lt;以前のエンジン バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-アクションは必要ありません。 クライアントMicrosoft Defender ウイルス対策正常な状態です。 このイベントは、署名が正常に更新されると報告されます。
+操作は必要ありません。 Microsoft Defender ウイルス対策クライアントは正常な状態です。 このイベントは、署名が正常に更新されると報告されます。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 2001</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SIGNATURE_UPDATE_FAILED</b>
@@ -1499,7 +1499,7 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 メッセージ:
 </td>
 <td >
-<b>セキュリティ インテリジェンスの更新に失敗しました。 </b>
+<b>セキュリティ インテリジェンスの更新に失敗しました。</b>
 </td>
 </tr>
 <tr>
@@ -1507,20 +1507,20 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策更新中にエラーが発生しました。
+Microsoft Defender ウイルス対策が署名更新でエラーが発生しました。
 <dl>
-<dt>新しいセキュリティ インテリジェンスのバージョン: &lt;新しいバージョン番号&gt;</dt>
-<dt>Previous セキュリティ インテリジェンスのバージョン: &lt;以前のバージョン&gt;</dt>
-<dt>Update Source: &lt;Update source&gt;, example:
+<dt>New security intelligence version: &lt;新しいバージョン番号&gt;</dt>
+<dt>Previous security intelligence version: &lt;以前のバージョン&gt;</dt>
+<dt>Update Source: &lt;更新ソース&gt;、例:
 <ul>
-<li>セキュリティ インテリジェンス更新フォルダー</li>
+<li>セキュリティ インテリジェンス更新プログラムのフォルダー</li>
 <li>内部セキュリティ インテリジェンス更新サーバー</li>
-<li>Microsoft Update Server</li>
+<li>Microsoft Update Services</li>
 <li>ファイル共有</li>
-<li>Microsoft マルウェア プロテクション センター (MMPC)</li>
+<li>Microsoft Malware Protection Center (MMPC)</li>
 </ul>
 </dt>
-<dt>更新ステージ: &lt;更新ステージ(&gt;例:
+<dt>更新ステージ: &lt;更新ステージ&gt;、例:
 <ul>
 <li>検索</li>
 <li>ダウンロード</li>
@@ -1528,31 +1528,31 @@ Microsoft Defender ウイルス対策更新中にエラーが発生しました�
 </ul>
 </dt>
 <dt>ソース パス: ユニバーサル名前付け規則 (UNC) のファイル共有名、Windows Server Update Services (WSUS)/Microsoft Update/ADL のサーバー名。</dt>
-<dt>署名の種類: &lt;次に示す署名&gt;の種類を指定します。 <ul>
+<dt>Signature type: &lt;署名の種類&gt;、例: <ul>
 <li>ウイルス対策</li>
 <li>スパイウェア対策</li>
 <li>マルウェア対策</li>
 <li>ネットワーク検査システム</li>
 </ul>
 </dt>
-<dt>更新プログラムの種類: &lt;更新の種類&gt; (Full または Delta)。</dt>
-<dt>ユーザー: &lt;Domainlt&gt;\&;UserCurrent&gt;</dt> 
-<dt>Engine Version: &lt;Current engine versionPrevious&gt;</dt> 
-<dt>Engine Version: &lt;&gt;</dt> Previous engine 
-<dt>versionError Code: &lt;&gt; Error code Result code associated with threat status.標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
+<dt>Update Type: &lt;更新の種類&gt; (フルまたは 差分)。</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
+<dt>Engine Version: &lt;現在のエンジン バージョン&gt;</dt>
+<dt>Previous Engine Version: &lt;以前のエンジン バージョン&gt;</dt>
+<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準 HRESULT 値です。</dt>
+<dt>Error Description: &lt;エラーの説明。&gt; 当該エラーの説明。</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
 このエラーは、定義の更新に問題がある場合に発生します。
-このイベントをトラブルシューティングするには、次の手順を実行します。
+このイベントをトラブルシューティングするには:
 <ol>
-<li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">定義を更新し</a> 、エンドポイントで直接再スキャンを強制します。</li>
+<li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">定義を更新し</a>、エンドポイントで直接再スキャンを強制します。</li>
 <li>このエラーの詳細については、%Windir%\WindowsUpdate.log ファイルのエントリを確認します。</li>
 <li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
@@ -1563,7 +1563,7 @@ Microsoft Defender ウイルス対策更新中にエラーが発生しました�
 <th colspan="2">イベント ID: 2002</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_ENGINE_UPDATED</b>
@@ -1584,26 +1584,26 @@ Microsoft Defender ウイルス対策更新中にエラーが発生しました�
 <td >
 Microsoft Defender ウイルス対策エンジンのバージョンが更新されました。
 <dl>
-<dt>現在のエンジンのバージョン: &lt;現在のエンジンバージョン&gt;</dt>
+<dt>Current Engine Version: &lt;現在のエンジンバージョン&gt;</dt>
 <dt>Previous Engine Version: &lt;&gt;</dt> 以前のエンジン バージョン
-<dt>Engine Type: &lt;&gt;Engine type, Or Network Inspection System engine.</dt>
-<dt>ユーザー: &lt;Domainlt&gt;\&;ユーザー&gt;</dt>
+<dt>Engine Type: &lt;&gt;マルウェア対策エンジンまたはネットワーク検査システム エンジン</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-アクションは必要ありません。 クライアントMicrosoft Defender ウイルス対策正常な状態です。 このイベントは、マルウェア対策エンジンが正常に更新されると報告されます。
+操作は必要ありません。 Microsoft Defender ウイルス対策クライアントは正常な状態です。 このイベントは、マルウェア対策エンジンが正常に更新されると報告されます。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 2003</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_ENGINE_UPDATE_FAILED</b>
@@ -1622,26 +1622,26 @@ Microsoft Defender ウイルス対策エンジンのバージョンが更新さ�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策更新中にエラーが発生しました。
+Microsoft Defender ウイルス対策がエンジンの更新でエラーが発生しました。
 <dl>
-<dt>新しいエンジンバージョン:</dt>
-<dt>以前のエンジン バージョン: &lt;&gt;</dt> 以前のエンジン バージョン
-<dt>Engine Type: &lt;&gt;エンジン</dt>の種類、マルウェア対策エンジンまたはネットワーク検査システム エンジン。
-<dt>ユーザー: &lt;Domainlt&gt;\&;UserError&gt;</dt> 
-<dt>Code: エラー &lt;コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
+<dt>New Engine Version:</dt>
+<dt>Previous Engine Version: &lt;以前のエンジン バージョン&gt;</dt>
+<dt>Engine Type: &lt;エンジンの種類&gt;、マルウェア対策エンジンまたはネットワーク検査システム エンジン。</dt>
+<dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
+<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値です。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-クライアントMicrosoft Defender ウイルス対策が失敗しました。 このイベントは、クライアントが更新自体に失敗した場合に発生します。 このイベントは、通常、更新中にネットワーク接続が中断された場合に発生します。
-このイベントをトラブルシューティングするには、次の手順を実行します。
+Microsoft Defender ウイルス対策 クライアントの更新に失敗しました。 このイベントは、クライアントが更新自体に失敗した場合に発生します。 このイベントは、通常、更新中にネットワーク接続が中断された場合に発生します。
+このイベントをトラブルシューティングするには:
 <ol>
-<li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">定義を更新し</a> 、エンドポイントで直接再スキャンを強制します。</li>
+<li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">定義を更新し</a>、エンドポイントで直接再スキャンを強制します。</li>
 <li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
 </ol>
@@ -1651,7 +1651,7 @@ Microsoft Defender ウイルス対策更新中にエラーが発生しました�
 <th colspan="2">イベント ID: 2004</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SIGNATURE_REVERSION</b>
@@ -1662,7 +1662,7 @@ Microsoft Defender ウイルス対策更新中にエラーが発生しました�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策定義の読み込み中に問題が発生しました。マルウェア対策エンジンは、最後に知られている一連の定義の読み込みを試みます。</b>
+<b>マルウェア対策定義の読み込み中に問題が発生しました。マルウェア対策エンジンは、最後に認識された適切な定義のセットの読み込みを試みます。</b>
 </td>
 </tr>
 <tr>
@@ -1670,27 +1670,27 @@ Microsoft Defender ウイルス対策更新中にエラーが発生しました�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策を読み込もうとするとエラーが発生し、既知の良い一連の署名に戻そうとします。
+Microsoft Defender ウイルス対策で署名の読み込み中にエラーが発生したため、既知の適切な署名セットに戻そうとします。
 <dl>
-<dt>署名 試行済み:</dt>
-<dt>エラー コード: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
-<dt>署名バージョン: &lt;定義バージョン&gt;</dt>
-<dt>Engine バージョン: &lt;マルウェア対策エンジンのバージョン&gt;</dt>
+<dt>Signatures Attempted:</dt>
+<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値です。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。 </dt>
+<dt>Signature Version: &lt;定義バージョン&gt;</dt>
+<dt>Engine Version: &lt;マルウェア対策エンジンのバージョン&gt;</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-クライアントMicrosoft Defender ウイルス対策最新の定義ファイルのダウンロードとインストールを試み、失敗しました。 このエラーは、定義の読み込み中にクライアントがエラーを検出した場合、またはファイルが破損している場合に発生する可能性があります。 Microsoft Defender ウイルス対策は、既知の良い定義セットに戻す試みです。
-このイベントをトラブルシューティングするには、次の手順を実行します。
+Microsoft Defender ウイルス対策 クライアントが最新の定義ファイルをダウンロードしてインストールしようとして失敗しました。 このエラーは、定義の読み込み中にクライアントでエラーが発生した場合、またはファイルが破損している場合に発生する可能性があります。 Microsoft Defender ウイルス対策は、既知の適切な定義セットに戻そうとします。
+このイベントをトラブルシューティングするには:
 <ol>
-<li>コンピューターを再起動し、もう一度やり直してください。</li>
-<li>サイトから最新の定義<a href="https://aka.ms/wdsi">をMicrosoft セキュリティ インテリジェンスします</a>。
-注: サイトからダウンロードされる定義ファイルのサイズは 60 MB を超える場合があります。定義を更新するための長期的なソリューションとして使用する必要があります。
+<li>コンピューターを再起動して、もう一度やり直してください。</li>
+<li><a href="https://aka.ms/wdsi">Microsoft セキュリティ インテリジェンス サイト</a>から最新の定義をダウンロードします。
+注: サイトからダウンロードした定義ファイルのサイズは 60 MB を超える可能性があるため、定義を更新するための長期的なソリューションとして使用しないでください。
 </li>
 <li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
@@ -1701,7 +1701,7 @@ Microsoft Defender ウイルス対策を読み込もうとするとエラーが�
 <th colspan="2">イベント ID: 2005</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_ENGINE_UPDATE_PLATFORMOUTOFDATE</b>
@@ -1712,7 +1712,7 @@ Microsoft Defender ウイルス対策を読み込もうとするとエラーが�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策プラットフォームが最新ではないので、マルウェア対策エンジンの読み込みに失敗しました。マルウェア対策プラットフォームは、最後に知られている優れたマルウェア対策エンジンを読み込み、更新を試みる。</b>
+<b>マルウェア対策プラットフォームが最新ではないため、マルウェア対策エンジンを読み込めませんでした。マルウェア対策プラットフォームは、最新の正常なマルウェア対策エンジンを読み込み、更新を試みます。</b>
 </td>
 </tr>
 <tr>
@@ -1720,9 +1720,9 @@ Microsoft Defender ウイルス対策を読み込もうとするとエラーが�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策プラットフォームのバージョンがサポートされていないため、マルウェア対策エンジンを読み込めない場合があります。 Microsoft Defender ウイルス対策既知のエンジンに戻り、プラットフォームの更新が試行されます。
+現在のプラットフォーム バージョンがサポートされていないため、Microsoft Defender ウイルス対策がマルウェア対策エンジンを読み込めませんでした。 Microsoft Defender ウイルス対策は、最新の既知の正常なエンジンに戻り、プラットフォームの更新が試行されます。
 <dl>
-<dt>現在のプラットフォームのバージョン: &lt;現在のプラットフォームのバージョン&gt;</dt>
+<dt>Current Platform Version: &lt;現在のプラットフォームのバージョン&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -1730,7 +1730,7 @@ Microsoft Defender ウイルス対策プラットフォームのバージョン�
 <th colspan="2">イベント ID: 2006</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_PLATFORM_UPDATE_FAILED </b>
@@ -1741,7 +1741,7 @@ Microsoft Defender ウイルス対策プラットフォームのバージョン�
 メッセージ:
 </td>
 <td >
-<b>プラットフォームの更新に失敗しました。 </b>
+<b>プラットフォームの更新に失敗しました。</b>
 </td>
 </tr>
 <tr>
@@ -1751,9 +1751,9 @@ Microsoft Defender ウイルス対策プラットフォームのバージョン�
 <td >
 Microsoft Defender ウイルス対策を更新しようとしてエラーが発生しました。
 <dl>
-<dt>現在のプラットフォームのバージョン: &lt;現在のプラットフォーム バージョン&gt;</dt>
-<dt>のError Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
+<dt>Current Platform Version: &lt;現在のプラットフォーム バージョン&gt;</dt>
+<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値です。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。</dt>
 </dl>
 </td>
 </tr>
@@ -1761,7 +1761,7 @@ Microsoft Defender ウイルス対策を更新しようとしてエラーが発�
 <th colspan="2">イベント ID: 2007</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_PLATFORM_ALMOSTOUTOFDATE</b>
@@ -1772,7 +1772,7 @@ Microsoft Defender ウイルス対策を更新しようとしてエラーが発�
 メッセージ:
 </td>
 <td >
-<b>プラットフォームは間もなく更新されます。最新の保護を維持するために最新のプラットフォームをダウンロードします。</b>
+<b>プラットフォームは間もなく古くなります。最新の保護を維持するために、最新のプラットフォームをダウンロードします。</b>
 </td>
 </tr>
 <tr>
@@ -1780,9 +1780,9 @@ Microsoft Defender ウイルス対策を更新しようとしてエラーが発�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策、マルウェア対策エンジンの将来のバージョンをサポートするために、新しいプラットフォーム バージョンがすぐに必要になります。 最新のセキュリティ Microsoft Defender ウイルス対策をダウンロードして、利用可能な最高レベルの保護を維持します。
+Microsoft Defender ウイルス対策マルウェア対策エンジンの将来のバージョンをサポートするには、間もなく新しいプラットフォーム バージョンが必要になります。 最新のセキュリティ Microsoft Defender ウイルス対策をダウンロードして、利用可能な最高レベルの保護を維持しましょう。
 <dl>
-<dt>現在のプラットフォームのバージョン: &lt;現在のプラットフォームのバージョン&gt;</dt>
+<dt>Current Platform Version: &lt;現在のプラットフォームのバージョン&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -1790,7 +1790,7 @@ Microsoft Defender ウイルス対策、マルウェア対策エンジンの将�
 <th colspan="2">イベント ID: 2010</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SIGNATURE_FASTPATH_UPDATED </b>
@@ -1801,7 +1801,7 @@ Microsoft Defender ウイルス対策、マルウェア対策エンジンの将�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策エンジンは、動的署名サービスを使用して追加の定義を取得しました。 </b>
+<b>マルウェア対策エンジンは、動的署名サービスを使用して追加の定義を取得しました。</b>
 </td>
 </tr>
 <tr>
@@ -1809,36 +1809,36 @@ Microsoft Defender ウイルス対策、マルウェア対策エンジンの将�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策を<i>保護するために、動的署名サービス</i>を使用して追加の署名を取得しました。
+Microsoft Defender ウイルス対策は、<i>動的署名サービス</i>を使用して、コンピューターの保護に役立つ追加の署名を取得しました。
 <dl>
-<dt>現在の署名バージョン: &lt;現在の署名バージョン&gt;</dt>
-<dt>Signature Type: &lt;Signature type,&gt; example: <ul>
+<dt>Current Signature Version: &lt;現在の署名バージョン&gt;</dt>
+<dt>Signature Type: &lt;署名の種類&gt;、例: <ul>
 <li>ウイルス対策</li>
 <li>スパイウェア対策</li>
 <li>マルウェア対策</li>
 <li>ネットワーク検査システム</li>
 </ul>
 </dt>
-<dt>現在のエンジンのバージョン: &lt;現在のエンジンバージョン&gt;</dt>
-<dt>Dynamic Signature Type: &lt;動的署名の&gt;種類は、次のようになります。
+<dt>Current Engine Version: &lt;現在のエンジンバージョン&gt;</dt>
+<dt>Dynamic Signature Type: &lt;動的署名の種類&gt;、例:
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 <li>期間</li>
 </ul>
 </dt>
-<dt>永続パス: &lt;PathDynamic&gt;</dt> 
-<dt>Signature Version: &lt;Version numberDynamic&gt;</dt> 
-<dt>Signature Compilation Timestamp: &lt;TimestampPersistence&gt;</dt>
-<dt> Limit Type: &lt;Persistence limit type&gt;, example:
+<dt>Persistence Path: &lt;パス&gt;</dt>
+<dt>Dynamic Signature Version: &lt;バージョン番号&gt;</dt>
+<dt>Dynamic Signature Compilation Timestamp: &lt;タイムスタンプ&gt;</dt>
+<dt>Persistence Limit Type: &lt;永続化制限&gt;、例:
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 </ul>
 </dt>
-<dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
+<dt>Persistence Limit: 高速パス署名の永続性の制限。</dt>
 </dl>
 </td>
 </tr>
@@ -1846,7 +1846,7 @@ Microsoft Defender ウイルス対策を<i>保護するために、動的署名�
 <th colspan="2">イベント ID : 2011</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SIGNATURE_FASTPATH_DELETED </b>
@@ -1857,7 +1857,7 @@ Microsoft Defender ウイルス対策を<i>保護するために、動的署名�
 メッセージ:
 </td>
 <td >
-<b>動的署名サービスは、古い動的定義を削除しました。 </b>
+<b>動的署名サービスにより、古い動的定義が削除されました。</b>
 </td>
 </tr>
 <tr>
@@ -1865,53 +1865,53 @@ Microsoft Defender ウイルス対策を<i>保護するために、動的署名�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策<i>署名を破棄するために動的署名サービス</i>を使用しました。
+Microsoft Defender ウイルス対策は、<i>動的署名サービス</i>を使用して、古い署名を破棄します。
 <dl>
-<dt>現在の署名バージョン: &lt;現在の署名バージョン&gt;</dt>
-<dt>Signature Type: &lt;Signature type,&gt; example: <ul>
+<dt>Current Signature Version: &lt;現在の署名バージョン&gt;</dt>
+<dt>Signature Type: &lt;署名の種類&gt;、例: <ul>
 <li>ウイルス対策</li>
 <li>スパイウェア対策</li>
 <li>マルウェア対策</li>
 <li>ネットワーク検査システム</li>
 </ul>
 </dt>
-<dt>現在のエンジンのバージョン: &lt;現在のエンジンバージョン&gt;</dt>
-<dt>Dynamic Signature Type: &lt;動的署名の&gt;種類は、次のようになります。
+<dt>Current Engine Version: &lt;現在のエンジンバージョン&gt;</dt>
+<dt>Dynamic Signature Type: &lt;動的署名の種類&gt;、例:
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 <li>期間</li>
 </ul>
 </dt>
-<dt>永続パス: &lt;PathDynamic&gt;</dt> 
-<dt>Signature Version: &lt;Version numberDynamic&gt;</dt> 
-<dt>Signature Compilation Timestamp: &lt;TimestampRemoval&gt;</dt> 
-<dt>Reason:</dt>
-<dt>Persistence Limit Type: Persistence&gt; limit type, &lt;example:
+<dt>Persistence Path: &lt;パス&gt;</dt>
+<dt>Dynamic Signature Version: &lt;バージョン番号&gt;</dt>
+<dt>Dynamic Signature Compilation Timestamp: &lt;タイムスタンプ&gt;</dt>
+<dt>Removal Reason:</dt>
+<dt>Persistence Limit Type: &lt;永続化制限の種類&gt;、例:
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 </ul>
 </dt>
-<dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
+<dt>Persistence Limit: 高速パス署名の永続性の制限。</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-アクションは必要ありません。 クライアントMicrosoft Defender ウイルス対策正常な状態です。 このイベントは、動的署名サービスが古い動的定義を正常に削除すると報告されます。
+操作は必要ありません。 Microsoft Defender ウイルス対策クライアントは正常な状態です。 このイベントは、動的署名サービスが古い動的定義を正常に削除すると報告されます。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 2012</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SIGNATURE_FASTPATH_UPDATE_FAILED </b>
@@ -1922,7 +1922,7 @@ Microsoft Defender ウイルス対策<i>署名を破棄するために動的署�
 メッセージ:
 </td>
 <td >
-<b>動的署名サービスを使用しようとするときに、マルウェア対策エンジンでエラーが発生しました。 </b>
+<b>動的署名サービスを使用しようとするときに、マルウェア対策エンジンでエラーが発生しました。</b>
 </td>
 </tr>
 <tr>
@@ -1930,44 +1930,44 @@ Microsoft Defender ウイルス対策<i>署名を破棄するために動的署�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策署名サービスを使用しようとしてエラー<i>が発生しました</i>。
+Microsoft Defender ウイルス対策が<i>動的署名サービス</i>を使用しようとしてエラーが発生しました。
 <dl>
-<dt>現在の署名バージョン: &lt;現在の署名バージョン&gt;</dt>
-<dt>Signature Type: &lt;Signature type,&gt; example: <ul>
+<dt>Current Signature Version: &lt;現在の署名バージョン&gt;</dt>
+<dt>Signature Type: &lt;署名の種類&gt;、例: <ul>
 <li>ウイルス対策</li>
 <li>スパイウェア対策</li>
 <li>マルウェア対策</li>
 <li>ネットワーク検査システム</li>
 </ul>
 </dt>
-<dt>現在のエンジンのバージョン: &lt;現在のエンジンバージョン&gt;</dt>
-<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
-<dt>動的署名の種類: &lt;次に示す動的署名&gt;の種類を指定します。
+<dt>Current Engine Version: &lt;現在のエンジンバージョン&gt;</dt>
+<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値です。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。 </dt>
+<dt>Dynamic Signature Type: &lt;動的署名の種類&gt;、例:
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 <li>期間</li>
 </ul>
 </dt>
-<dt>永続パス: &lt;PathDynamic&gt;</dt> 
-<dt>Signature Version: &lt;Version numberDynamic&gt;</dt> 
-<dt>Signature Compilation Timestamp: &lt;TimestampPersistence&gt;</dt>
-<dt> Limit Type: &lt;Persistence limit type&gt;, example:
+<dt>Persistence Path: &lt;パス&gt;</dt>
+<dt>Dynamic Signature Version: &lt;バージョン番号&gt;</dt>
+<dt>Dynamic Signature Compilation Timestamp: &lt;タイムスタンプ&gt;</dt>
+<dt>Persistence Limit Type: &lt;永続化制限&gt;、例:
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 </ul>
 </dt>
-<dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
+<dt>Persistence Limit: 高速パス署名の永続性の制限。</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
 インターネット接続の設定を確認します。
@@ -1977,7 +1977,7 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 <th colspan="2">イベント ID: 2013</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_SIGNATURE_FASTPATH_DELETED_ALL </b>
@@ -1988,7 +1988,7 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 メッセージ:
 </td>
 <td >
-<b>動的署名サービスは、すべての動的定義を削除しました。 </b>
+<b>動的署名サービスは、すべての動的定義を削除しました。</b>
 </td>
 </tr>
 <tr>
@@ -1996,9 +1996,9 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策、<i>すべての動的署名サービス署名を</i>破棄しました。
+Microsoft Defender ウイルス対策が<i>すべての動的署名サービス</i>の署名を破棄しました。
 <dl>
-<dt>現在の署名バージョン: &lt;現在の署名バージョン&gt;</dt>
+<dt>Current Signature Version: &lt;現在の署名バージョン&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -2006,7 +2006,7 @@ Microsoft Defender ウイルス対策、<i>すべての動的署名サービス�
 <th colspan="2">イベント ID: 2020</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_CLOUD_CLEAN_RESTORE_FILE_DOWNLOADED </b>
@@ -2025,11 +2025,11 @@ Microsoft Defender ウイルス対策、<i>すべての動的署名サービス�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策ファイルをダウンロードしました。
+Microsoft Defender ウイルス対策がクリーン ファイルをダウンロードしました。
 <dl>
-<dt>ファイル名: &lt;ファイル名&gt; ファイルの名前。</dt>
-<dt>現在の署名バージョン: &lt;現在の署名バージョン&gt;</dt>
-<dt>現在のエンジンのバージョン: &lt;現在のエンジンのバージョン&gt;</dt>
+<dt>Filename: &lt;ファイル名&gt; ファイルの名前。</dt>
+<dt>Current Signature Version: &lt;現在の署名バージョン&gt;</dt>
+<dt>Current Engine Version: &lt;現在のエンジンのバージョン&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -2037,7 +2037,7 @@ Microsoft Defender ウイルス対策ファイルをダウンロードしまし�
 <th colspan="2">イベント ID: 2021</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_CLOUD_CLEAN_RESTORE_FILE_DOWNLOAD_FAILED</b>
@@ -2048,7 +2048,7 @@ Microsoft Defender ウイルス対策ファイルをダウンロードしまし�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策エンジンがクリーン ファイルのダウンロードに失敗しました。 </b>
+<b>マルウェア対策エンジンがクリーン ファイルのダウンロードに失敗しました。</b>
 </td>
 </tr>
 <tr>
@@ -2056,30 +2056,30 @@ Microsoft Defender ウイルス対策ファイルをダウンロードしまし�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策ファイルをダウンロードしようとしてエラーが発生しました。
+Microsoft Defender ウイルス対策がクリーン ファイルをダウンロードしようとしてエラーが発生しました。
 <dl>
-<dt>ファイル名: &lt;ファイル名&gt; ファイルの名前。</dt>
-<dt>現在の署名バージョン: &lt;現在の署名バージョン&gt;</dt>
-<dt>現在のエンジンバージョン: &lt;現在のエンジンバージョン&gt;</dt>
-<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
+<dt>Filename: &lt;ファイル名&gt; ファイルの名前。</dt>
+<dt>Current Signature Version: &lt;現在の署名バージョン&gt;</dt>
+<dt>Current Engine Version: &lt;現在のエンジン バージョン&gt;</dt>
+<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値です。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。 </dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
 インターネット接続の設定を確認します。
-動的Microsoft Defender ウイルス対策サービスを使用して特定の脅威に最新の定義をダウンロードするときに、クライアントでエラーが発生しました。 このエラーは、ネットワーク接続の問題が原因である可能性があります。
+Microsoft Defender ウイルス対策クライアントが、動的署名サービスを使用して最新の定義を特定の脅威に対してダウンロードするときにエラーが発生しました。 このエラーは、ネットワーク接続の問題が原因である可能性があります。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 2030</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_OFFLINE_SCAN_INSTALLED</b>
@@ -2098,14 +2098,14 @@ Microsoft Defender ウイルス対策ファイルをダウンロードしよう�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策再起動時に実行するようにオフライン ウイルス対策をダウンロードして構成します。
+Microsoft Defender ウイルス対策が次の再起動時に実行するようにオフライン ウイルス対策をダウンロードして構成しました。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 2031</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_OFFLINE_SCAN_INSTALL_FAILED </b>
@@ -2116,7 +2116,7 @@ Microsoft Defender ウイルス対策再起動時に実行するようにオフ�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策エンジンがオフライン スキャンをダウンロードして構成できなかった。</b>
+<b>マルウェア対策エンジンがオフライン スキャンをダウンロードして構成できませんでした。</b>
 </td>
 </tr>
 <tr>
@@ -2124,10 +2124,10 @@ Microsoft Defender ウイルス対策再起動時に実行するようにオフ�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策ウイルス対策をダウンロードして構成しようとしてエラーが発生しました。
+Microsoft Defender ウイルス対策がウイルス対策をダウンロードしてオフラインで構成しようとしてエラーが発生しました。
 <dl>
-<dt>エラー コード: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
+<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値です。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。 </dt>
 </dl>
 </td>
 </tr>
@@ -2135,7 +2135,7 @@ Microsoft Defender ウイルス対策ウイルス対策をダウンロードし�
 <th colspan="2">イベント ID: 2040</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_OS_EXPIRING </b>
@@ -2146,7 +2146,7 @@ Microsoft Defender ウイルス対策ウイルス対策をダウンロードし�
 メッセージ:
 </td>
 <td >
-<b>このオペレーティング システムバージョンのマルウェア対策のサポートは間もなく終了します。 </b>
+<b>このオペレーティング システム バージョンのマルウェア対策のサポートは間もなく終了します。</b>
 </td>
 </tr>
 <tr>
@@ -2154,14 +2154,14 @@ Microsoft Defender ウイルス対策ウイルス対策をダウンロードし�
 説明:
 </td>
 <td >
-オペレーティング システムのサポートはまもなく期限切れになります。 サポートMicrosoft Defender ウイルス対策を実行する方法は、脅威から保護するための適切なソリューションではありません。
+お客様のオペレーティング システムのサポートはまもなく期限切れになります。 サポート対象外のオペレーティング システムで Microsoft Defender ウイルス対策を実行することは、脅威からの保護に適切なソリューションではありません。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID : 2041</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_OS_EOL </b>
@@ -2172,7 +2172,7 @@ Microsoft Defender ウイルス対策ウイルス対策をダウンロードし�
 メッセージ:
 </td>
 <td >
-<b>このオペレーティング システムのマルウェア対策のサポートは終了しました。継続的なサポートのためにオペレーティング システムをアップグレードする必要があります。 </b>
+<b>このオペレーティング システムのマルウェア対策のサポートは終了しました。継続的なサポートのためには、オペレーティング システムをアップグレードする必要があります。 </b>
 </td>
 </tr>
 <tr>
@@ -2180,14 +2180,14 @@ Microsoft Defender ウイルス対策ウイルス対策をダウンロードし�
 説明:
 </td>
 <td >
-オペレーティング システムのサポートが期限切れです。 サポートMicrosoft Defender ウイルス対策を実行する方法は、脅威から保護するための適切なソリューションではありません。
+オペレーティング システムのサポートが期限切れです。 サポート対象外のオペレーティング システムで Microsoft Defender ウイルス対策を実行することは、脅威からの保護に適切なソリューションではありません。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 2042</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_PROTECTION_EOL </b>
@@ -2206,14 +2206,14 @@ Microsoft Defender ウイルス対策ウイルス対策をダウンロードし�
 説明:
 </td>
 <td >
-オペレーティング システムのサポートが期限切れです。 Microsoft Defender ウイルス対策システムではサポートされなくなったり、機能が停止し、マルウェアの脅威から保護されていません。
+オペレーティング システムのサポートが期限切れです。 Microsoft Defender ウイルス対策は、お客様のオペレーティング システムではサポートされなくなり、機能を停止しました。マルウェアの脅威から保護されていません。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 3002</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_RTP_FEATURE_FAILURE </b>
@@ -2232,29 +2232,29 @@ Microsoft Defender ウイルス対策ウイルス対策をダウンロードし�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策 Real-Time保護機能でエラーが発生し、失敗しました。
+Microsoft Defender ウイルス対策のリアルタイム保護機能でエラーが発生し、失敗しました。
 <dl>
-<dt>フィーチャー: &lt;フィーチャー&gt;(例:
+<dt>Feature: &lt;機能&gt;、例:
 <ul>
-<li>On Access</li>
-<li>Internet Explorerダウンロードと Microsoft Outlook Express 添付ファイル</li>
+<li>アクセス時</li>
+<li>Internet Explorer ダウンロードと Microsoft Outlook Express 添付ファイル</li>
 <li>動作の監視</li>
 <li>ネットワーク検査システム</li>
 </ul>
 </dt>
-<dt>エラー コード: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
-<dt>理由: リアルタイムMicrosoft Defender ウイルス対策機能が再起動された理由。</dt>
+<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。 </dt>
+<dt>Reason: Microsoft Defender ウイルス対策のリアルタイム保護機能により機能が再起動された理由。</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
 システムが一時保護されていない可能性がある場合は、システムを再起動してからフル スキャンを実行する必要があります。
-クライアントMicrosoft Defender ウイルス対策のリアルタイム保護機能は、サービスの 1 つが開始できなかったため、エラーが発生しました。
+Microsoft Defender ウイルス対策クライアントのリアルタイム保護機能で、サービスの 1 つを開始できなかったためエラーが発生しました。
 その後に 3007 イベント ID が続く場合、エラーは一時的なもので、マルウェア対策クライアントはエラーから回復しました。
 </td>
 </tr>
@@ -2262,7 +2262,7 @@ Microsoft Defender ウイルス対策 Real-Time保護機能でエラーが発生
 <th colspan="2">イベント ID: 3007</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_RTP_FEATURE_RECOVERED</b>
@@ -2273,7 +2273,7 @@ Microsoft Defender ウイルス対策 Real-Time保護機能でエラーが発生
 メッセージ:
 </td>
 <td >
-<b>障害から回復されたリアルタイム保護。このエラーが表示された場合は、完全なシステム スキャンを実行することをお勧めします。 </b>
+<b>リアルタイム保護が障害から回復しました。このエラーが表示された場合は、フル システム スキャンを実行することをお勧めします。</b>
 </td>
 </tr>
 <tr>
@@ -2281,33 +2281,33 @@ Microsoft Defender ウイルス対策 Real-Time保護機能でエラーが発生
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策保護が機能を再起動しました。 完全なシステム スキャンを実行して、このエージェントがダウンしている間に見つからない可能性があるアイテムを検出してください。
+Microsoft Defender ウイルス対策のリアルタイム保護機能により機能が再起動されました。 このエージェントがダウンしている間に失われた可能性のあるアイテムを検出するためにフル システム スキャンを実行することをおすすめします。
 <dl>
-<dt>フィーチャー: &lt;フィーチャー&gt;(例:
+<dt>Feature: &lt;機能&gt;、例:
 <ul>
-<li>On Access</li>
+<li>アクセス時</li>
 <li>IE のダウンロードとOutlook Express の添付ファイル</li>
 <li>動作の監視</li>
 <li>ネットワーク検査システム</li>
 </ul>
 </dt>
-<dt>理由: リアルタイムMicrosoft Defender ウイルス対策機能が再起動された理由。</dt>
+<dt>Reason: Microsoft Defender ウイルス対策のリアルタイム保護により機能が再起動された理由。</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-リアルタイム保護機能が再起動されました。 このイベントが再度発生した場合は、 <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポートにお問い合わせください</a>。
+リアルタイム保護機能が再起動されました。 このイベントが再度発生した場合は、 <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 5000</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_RTP_ENABLED </b>
@@ -2318,7 +2318,7 @@ Microsoft Defender ウイルス対策保護が機能を再起動しました。 
 メッセージ:
 </td>
 <td >
-<b>リアルタイム保護が有効になっています。 </b>
+<b>リアルタイム保護は有効です。</b>
 </td>
 </tr>
 <tr>
@@ -2326,14 +2326,14 @@ Microsoft Defender ウイルス対策保護が機能を再起動しました。 
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策、マルウェアなどの望ましくない可能性のあるソフトウェアのリアルタイム保護スキャンが有効になっています。
+Microsoft Defender ウイルス対策のマルウェアやその他の望ましくない可能性のあるソフトウェアのリアルタイム保護スキャンが有効になりました。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 5001</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_RTP_DISABLED</b>
@@ -2344,7 +2344,7 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 メッセージ:
 </td>
 <td >
-<b>リアルタイム保護は無効になっています。 </b>
+<b>リアルタイム保護が無効です</b>
 </td>
 </tr>
 <tr>
@@ -2352,14 +2352,14 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策、マルウェアなどの望ましくない可能性があるソフトウェアのリアルタイム保護スキャンが無効になりました。
+Microsoft Defender ウイルス対策のマルウェアやその他の望ましくない可能性のあるソフトウェアのリアルタイム保護スキャンが無効になりました。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 5004</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_RTP_FEATURE_CONFIGURED </b>
@@ -2378,11 +2378,11 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策保護機能の構成が変更されました。
+Microsoft Defender ウイルス対策のリアルタイム保護機能の構成が変更されました。
 <dl>
-<dt>フィーチャー: &lt;フィーチャー&gt;(例:
+<dt>Feature: &lt;機能&gt;、例:
 <ul>
-<li>On Access</li>
+<li>アクセス時</li>
 <li>IE のダウンロードとOutlook Express の添付ファイル</li>
 <li>動作の監視</li>
 <li>ネットワーク検査システム</li>
@@ -2396,7 +2396,7 @@ Microsoft Defender ウイルス対策保護機能の構成が変更されまし�
 <th colspan="2">イベント ID: 5007</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_CONFIG_CHANGED </b>
@@ -2415,10 +2415,10 @@ Microsoft Defender ウイルス対策保護機能の構成が変更されまし�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策が変更されました。 予期しないイベントの場合は、マルウェアの結果である可能性がある設定を確認する必要があります。
+Microsoft Defender ウイルス対策の構成が変更されました。 これが予期しないイベントの場合は、マルウェアの結果である可能性があるので、設定を確認する必要があります。
 <dl>
-<dt>古い値: &lt;古い値番号&gt; 古いウイルス対策構成の値。</dt>
-<dt>新しい値: &lt;新しい値の番号&gt; 新しいウイルス対策構成の値。</dt>
+<dt>Old value: &lt;古い値の番号&gt; 古いウイルス対策構成の値。</dt>
+<dt>New value: &lt;新しい値の番号&gt; 新しいウイルス対策構成の値。</dt>
 </dl>
 </td>
 </tr>
@@ -2426,7 +2426,7 @@ Microsoft Defender ウイルス対策が変更されました。 予期しない
 <th colspan="2">イベント ID: 5008</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_ENGINE_FAILURE</b>
@@ -2447,38 +2447,38 @@ Microsoft Defender ウイルス対策が変更されました。 予期しない
 <td >
 Microsoft Defender ウイルス対策エラーが原因でエンジンが終了しました。
 <dl>
-<dt>エラーの種類: &lt;エラーの種類&gt; (たとえば、 Crash または</dt> 
-<dt>HangException Code: &lt;Error codeResource&gt;</dt>
-<dt>: Resource&gt;) &lt;</dt>
+<dt>Failure Type: &lt;エラーの種類&gt; (たとえば、クラッシュまたはハンギング) </dt>
+<dt>Exception Code: &lt;エラー コード&gt;</dt>
+<dt>Resource: &lt;リソース&gt; </dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-このイベントをトラブルシューティングするには、次の手順を実行します。<ol>
+このイベントをトラブルシューティングするには:<ol>
 <li>サービスを再起動してみてください。<ul>
-<li>マルウェア対策、ウイルス対策、スパイウェアの場合は、管理者特権でコマンド プロンプトに「 <b>net stop msmpsvc</b>」と入力し、「 <b>net start msmpsvc</b> 」と入力してマルウェア対策エンジンを再起動します。</li>
-<li>ネットワーク検査<i>システム</i>の場合、管理者特権でコマンド プロンプトに「<b>net start nissrv</b>」と入力し、「<b>net start nissrv</b>」と入力<i></i>して、NiSSRV.exe ファイルを使用してネットワーク検査システム エンジンを再起動します。
+<li>マルウェア対策、ウイルス対策、スパイウェアの場合は、管理者特権でコマンド プロンプトに「<b>net stop msmpsvc</b>」と入力し、「<b>net start msmpsvc</b>」と入力してマルウェア対策エンジンを再起動します。</li>
+<li><i>ネットワーク検査システム</i>の場合は、管理者特権でのコマンド プロンプトに「<b>net start nissrv</b>」、さらに「<b>net start nissrv</b>」と入力して、NiSSRV.exe ファイルを使用して<i>ネットワーク検査システム</i> エンジンを再起動します。
 </li>
 </ul>
 </li>
-<li>同じ方法でエラーが発生した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft</a> サポート サイトにアクセスし、[検索] ボックスにエラー番号を入力して<b></b>エラー コードを検索し、<a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポートにお問い合わせください</a>。</li>
+<li>同じようでエラーが発生した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポート サイト</a>にアクセスし、[<b>検索</b>] ボックスにエラー番号を入力してエラー コードを検索し、<a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。</li>
 </ol>
 </td>
 </tr>
 <tr>
 <td>
-ユーザー アクション:
+ユーザー操作:
 </td>
 <td >
-予期Microsoft Defender ウイルス対策により、クライアント エンジンが停止しました。
-このイベントをトラブルシューティングするには、次の手順を実行します。
+予期しないエラーが発生したため、Microsoft Defender ウイルス対策のクライアント エンジンが停止しました。
+このイベントをトラブルシューティングするには:
 <ol>
 <li>スキャンを再度実行します。</li>
-<li>同じ方法で失敗した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポート</a> サイトに移動し、[検索] ボックスにエラー<b></b>番号を入力してエラー コードを探します。</li>
+<li>同じ方法で失敗した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポートサイト</a>に移動し、[<b>検索</b>] ボックスにエラー番号を入力してエラー コードを探します。</li>
 <li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
 </ol>
@@ -2488,7 +2488,7 @@ Microsoft Defender ウイルス対策エラーが原因でエンジンが終了�
 <th colspan="2">イベント ID: 5009</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_ANTISPYWARE_ENABLED </b>
@@ -2499,7 +2499,7 @@ Microsoft Defender ウイルス対策エラーが原因でエンジンが終了�
 メッセージ:
 </td>
 <td >
-<b>マルウェアなどの望ましくない可能性があるソフトウェアのスキャンが有効になります。 </b>
+<b>マルウェアやその他の望ましくない可能性があるソフトウェアのスキャンが有効です。</b>
 </td>
 </tr>
 <tr>
@@ -2507,14 +2507,14 @@ Microsoft Defender ウイルス対策エラーが原因でエンジンが終了�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策その他の望ましくない可能性のあるソフトウェアのスキャンが有効になっています。
+Microsoft Defender ウイルス対策のマルウェアやその他の望ましくない可能性のあるソフトウェアのスキャンが有効になっています。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 5010</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_ANTISPYWARE_DISABLED </b>
@@ -2525,7 +2525,7 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 メッセージ:
 </td>
 <td >
-<b>マルウェアなどの望ましくない可能性があるソフトウェアのスキャンが無効になります。</b>
+<b>マルウェアなどの望ましくない可能性があるソフトウェアのスキャンが無効です。</b>
 </td>
 </tr>
 <tr>
@@ -2533,14 +2533,14 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策その他の望ましくない可能性のあるソフトウェアのスキャンが無効になります。
+Microsoft Defender ウイルス対策のマルウェアやその他の望ましくない可能性のあるソフトウェアのスキャンが無効です。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 5011</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_ANTIVIRUS_ENABLED</b>
@@ -2551,7 +2551,7 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 メッセージ:
 </td>
 <td >
-<b>ウイルスのスキャンが有効になっています。</b>
+<b>ウイルスのスキャンが有効です。</b>
 </td>
 </tr>
 <tr>
@@ -2566,7 +2566,7 @@ Microsoft Defender ウイルス対策スキャンが有効になっています�
 <th colspan="2">イベント ID: 5012</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_ANTIVIRUS_DISABLED </b>
@@ -2577,7 +2577,7 @@ Microsoft Defender ウイルス対策スキャンが有効になっています�
 メッセージ:
 </td>
 <td >
-<b>ウイルスのスキャンは無効になっています。 </b>
+<b>ウイルスのスキャンは無効になっています。</b>
 </td>
 </tr>
 <tr>
@@ -2592,7 +2592,7 @@ Microsoft Defender ウイルス対策スキャンが無効になっています�
 <th colspan="2">イベント ID: 5013</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>
@@ -2604,7 +2604,7 @@ Microsoft Defender ウイルス対策スキャンが無効になっています�
 メッセージ:
 </td>
 <td >
-<b>改ざん防止によって、改ざんの変更がMicrosoft Defender ウイルス対策。</b>
+<b>改ざん防止によって、Microsoft Defender ウイルス対策がブロックされました。</b>
 </td>
 </tr>
 <tr>
@@ -2612,14 +2612,14 @@ Microsoft Defender ウイルス対策スキャンが無効になっています�
 説明:
 </td>
 <td >
-タンパープロテクションが有効になっている場合、ブロックされている場合に Defender の設定を変更しようとすると、イベント ID 5013 が生成され、どの設定変更がブロックされたのかが示されます。
+改ざん防止が有効になっている場合、Defender の設定を変更しようとするとブロックされ、イベント ID 5013 が生成され、どの設定の変更がブロックされたかが示されます。
 </td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 5100</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_EXPIRATION_WARNING_STATE </b>
@@ -2638,10 +2638,10 @@ Microsoft Defender ウイルス対策スキャンが無効になっています�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策猶予期間に入り、間もなく期限切れになります。 有効期限が切れ、このプログラムはウイルス、スパイウェア、その他の望ましくない可能性のあるソフトウェアに対する保護を無効にします。
+Microsoft Defender ウイルス対策は猶予期間に入り、間もなく有効期限が切れます。 有効期限が切れると、このプログラムによるウイルス、スパイウェアやその他の望ましくない可能性のあるソフトウェアに対する保護が無効になります。
 <dl>
-<dt>有効期限の理由: 有効期限が切れるMicrosoft Defender ウイルス対策理由。</dt>
-<dt>有効期限: 有効期限が切れるMicrosoft Defender ウイルス対策日付。</dt>
+<dt>Expiration ReasonMicrosoft Defender ウイルス対策の有効期限が切れる理由。</dt>
+<dt>Expiration Date: Microsoft Defender ウイルス対策の有効期限が切れる日。</dt>
 </dl>
 </td>
 </tr>
@@ -2649,7 +2649,7 @@ Microsoft Defender ウイルス対策猶予期間に入り、間もなく期限�
 <th colspan="2">イベント ID: 5101</th>
 </tr>
 <tr><td>
-記号名:
+シンボリック名:
 </td>
 <td >
 <b>MALWAREPROTECTION_DISABLED_EXPIRED_STATE </b>
@@ -2660,7 +2660,7 @@ Microsoft Defender ウイルス対策猶予期間に入り、間もなく期限�
 メッセージ:
 </td>
 <td >
-<b>マルウェア対策プラットフォームの有効期限が切れています。 </b>
+<b>マルウェア対策プラットフォームの有効期限が切れています。</b>
 </td>
 </tr>
 <tr>
@@ -2668,28 +2668,28 @@ Microsoft Defender ウイルス対策猶予期間に入り、間もなく期限�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策期限が切れています。 ウイルス、スパイウェア、その他の望ましくない可能性のあるソフトウェアに対する保護が無効になります。
+Microsoft Defender ウイルス対策の猶予期間の有効期限が切れています。 ウイルス、スパイウェア、その他の望ましくない可能性のあるソフトウェアに対する保護が無効です。
 <dl>
-<dt>有効期限の理由:</dt>
-<dt>有効期限: </dt>
-<dt>エラー コード: &lt;エラー コード&gt; 脅威の状態に関連付けられている結果コード。標準の HRESULT 値。</dt>
-<dt>エラーの説明: &lt;エラーの説明&gt; エラーの説明。 </dt>
+<dt>Expiration Reason:</dt>
+<dt>Expiration Date: </dt>
+<dt>Error Code: &lt;エラー コード&gt; 脅威の状態に関連付けられている結果コード。標準の HRESULT 値です。</dt>
+<dt>Error Description: &lt;エラーの説明&gt; 当該エラーの説明。</dt>
 </dl>
 </td>
 </tr>
 </table>
 
 <a id="error-codes"></a>
-##Microsoft Defender ウイルス対策 クライアント エラー コード Microsoft Defender ウイルス対策問題が発生した場合は、通常、問題のトラブルシューティングに役立つエラー コードが表示されます。 ほとんどの場合、エラーは更新プログラムのインストールに問題が発生したという意味です。
-このセクションでは、クライアント エラーに関する以下Microsoft Defender ウイルス対策説明します。
-- エラー コード エラー - の考えられる理由 - 今すぐ実行する操作に関するアドバイス
+## Microsoft Defender ウイルス対策 クライアント エラー コード。Microsoft Defender ウイルス対策でなにか問題が発生した場合は、通常、問題のトラブルシューティングに役立つエラー コードが表示されます。 ほとんどの場合、エラーは更新プログラムのインストールに問題が発生したという意味です。
+このセクションでは、Microsoft Defender ウイルス対策 クライアント エラーに関する次の情報を提供します。
+- エラー コード - エラーの考えられる理由 - 今すぐ実行する操作に関するアドバイス
 
-これらの表の情報を使用して、エラー コードのトラブルシューティングMicrosoft Defender ウイルス対策役立ちます。
+これらのテーブルの情報を使用して、Microsoft Defender ウイルス対策のエラー コードのトラブルシューティングに役立てます。
 
 
 <table>
 <tr>
-<th colspan="2">エラー コード: 0x80508007</th>
+<th colspan="2">エラーコード: 0x80508007</th>
 </tr>
 <tr>
 <td>メッセージ</td>
@@ -2702,7 +2702,7 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 考えられる理由
 </td>
 <td>
-このエラーは、メモリが使い切れている可能性を示します。
+このエラーは、メモリが使い果たされている可能性を示します。
 </td>
 </tr>
 <tr>
@@ -2726,17 +2726,17 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 </td>
 </tr><tr><td>解決方法</td><td>
 <ol>
-<li>定義を更新します。 いずれも：<ol>
-<li>[更新] <b>タブの</b> [定義の更新] ボタン<b>をクリックMicrosoft Defender ウイルス対策</b>。 <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>または、
+<li>定義を更新します。 次のいずれかを行います:<ol>
+<li>Microsoft Defender ウイルス対策の [<b>更新</b>] タブの [<b>定義の更新</b>]ボタンをクリックします。 <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>または、
 </li>
-<li>サイトから最新の定義<a href="https://aka.ms/wdsi">をMicrosoft セキュリティ インテリジェンスします</a>。
-注: サイトからダウンロードされる定義ファイルのサイズは 60 MB を超える場合があります。定義を更新するための長期的なソリューションとして使用する必要があります。
+<li><a href="https://aka.ms/wdsi">Microsoft セキュリティ インテリジェンス サイト</a>から最新の定義をダウンロードします。
+注: サイトからダウンロードした定義ファイルのサイズは 60 MB を超える可能性があるため、定義を更新するための長期的なソリューションとして使用しないでください。
 </li>
 </ol>
 </li>
 <li>フル スキャンを実行します。
 </li>
-<li>デバイスを再起動し、もう一度やり直してください。</li>
+<li>デバイスを再起動して、もう一度やり直します。</li>
 </ol>
 </td>
 </tr>
@@ -2756,7 +2756,7 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、脅威Microsoft Defender ウイルス対策検疫に失敗した可能性を示します。
+このエラーは、Microsoft Defender ウイルス対策が脅威を検疫できなかったことを示します。
 </td>
 </tr>
 <tr>
@@ -2766,7 +2766,7 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <td><b>ERR_MP_REBOOT_REQUIRED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、脅威の削除を完了するために再起動が必要な場合を示します。
+このエラーは、脅威の削除を完了するために再起動が必要なことを示します。
 </td>
 </tr>
 <tr>
@@ -2777,11 +2777,11 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <td><b>ERR_MP_THREAT_NOT_FOUND </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、脅威がメディアに存在しなくなったか、マルウェアがデバイスのスキャンを停止している可能性を示します。
+このエラーは、脅威がメディアに存在しなくなったか、マルウェアがデバイスのスキャンを阻止している可能性を示します。
 </tr><tr><td>解決方法
 </td>
 <td>
-セキュリティ ソフトウェアを<a href="https://www.microsoft.com/security/scanner/default.aspx">Microsoft Safety Scanner</a>し、もう一度やり直してください。
+<a href="https://www.microsoft.com/security/scanner/default.aspx">Microsoft Safety Scanner</a> を実行して、セキュリティ ソフトウェアを更新してから、もう一度お試しください。
 </td>
 </tr>
 <tr>
@@ -2795,7 +2795,7 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 </td></tr>
 <tr>
 <td>解決方法</td><td>
-完全なシステム スキャンを実行します。
+フル システム スキャンを実行します。
 </td>
 </tr>
 <tr>
@@ -2805,9 +2805,9 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <td><b>ERR_MP_MANUAL_STEPS_REQUIRED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、脅威の削除を完了するために手動の手順が必要です。
+このエラーは、脅威の削除を完了するために手動の手順が必要であることを示します。
 </td></tr><tr><td>解決方法</td><td>
-Microsoft マルウェア保護百科事典で説明されている手動 <a href="https://www.microsoft.com/security/portal/threat/Threats.aspx">修復手順に従います</a>。 イベント履歴には、脅威固有のリンクがあります。<br/></td>
+<a href="https://www.microsoft.com/security/portal/threat/Threats.aspx">Microsoft Malware Protection Center Encyclopedia</a> に記載されている手動修復手順に従います。 イベント履歴には、脅威に特化したリンクがあります。<br/></td>
 </tr>
 <tr>
 <th colspan="2">エラー コード: 0x80508026
@@ -2818,7 +2818,7 @@ Microsoft マルウェア保護百科事典で説明されている手動 <a hre
 <td>
 このエラーは、コンテナーの種類内の削除がサポートされていない可能性があることを示します。
 </td></tr><tr><td>解決方法</td><td>
-Microsoft Defender ウイルス対策内で検出された脅威を修復できない場合。 検出されたリソースを手動で削除する方法を検討してください。
+Microsoft Defender ウイルス対策は、アーカイブ内で検出された脅威を修復できません。 検出されたリソースを手動で削除する方法を検討してください。
 </td>
 </tr>
 <tr>
@@ -2840,9 +2840,9 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <td><b>ERROR_MP_RESCAN_REQUIRED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、脅威が必要な再スキャンを示します。
+このエラーは、脅威の再スキャンが必要であることを示します。
 </td></tr><tr><td>解決方法</td><td>
-完全なシステム スキャンを実行します。
+フル システム スキャンを実行します。
 </td>
 </tr>
 <tr>
@@ -2852,9 +2852,9 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <td><b>ERROR_MP_CALLISTO_REQUIRED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、オフライン スキャンが必要な場合に発生します。
+このエラーは、オフライン スキャンが必要であることを示します。
 </td></tr><tr><td>解決方法</td><td>
-オフライン で実行Microsoft Defender ウイルス対策。 これを行う方法については、オフラインの記事Microsoft Defender ウイルス対策<a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">できます</a>。
+Microsoft Defender ウイルス対策をオフラインで実行します。 これを行う方法については、<a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">オフラインの Microsoft Defender ウイルス対策の記事</a>を参照してください。
 </td>
 </tr>
 <tr>
@@ -2864,15 +2864,15 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、Microsoft Defender ウイルス対策が現在のバージョンのプラットフォームをサポートしていないので、新しいバージョンのプラットフォームが必要です。
+このエラーは、Microsoft Defender ウイルス対策が現在のバージョンのプラットフォームをサポートしておらず、新しいバージョンのプラットフォームが必要なことを示します。
 </td></tr><tr><td>解決方法</td><td>
-11 では、Microsoft Defender ウイルス対策および Windows 10でのみWindowsできます。 7 Windows 8 Vista Windows Vista Windowsの場合は、この機能を<a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>。<br/></td>
+Windows 10 と Windows 11 でのみ Microsoft Defender ウイルス対策を使用できます。 Windows 8、Windows 7、および Windows Vista では、<a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a> を使用できます。<br/></td>
 </tr>
 </table>
 
-<a id="internal-error-codes"></a>次のエラー コードは、内部テストのテスト中に使用Microsoft Defender ウイルス対策。
+<a id="internal-error-codes"></a> 次のエラー コードは、Microsoft Defender ウイルス対策の内部テスト中に使用されます。
 
-これらのエラーが表示された場合は、定義を[](manage-updates-baselines-microsoft-defender-antivirus.md)更新し、エンドポイントで直接再スキャンを実行できます。
+これらのエラーが表示された場合は、[定義を更新](manage-updates-baselines-microsoft-defender-antivirus.md)し、エンドポイントで直接再スキャンを実行できます。
 
 
 <table>
@@ -2881,7 +2881,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 </tr>
 <tr>
 <th><b>エラー コード</b></th>
-<th>表示されるメッセージ</th>
+<th>メッセージが表示されました</th>
 <th>エラーと解決の考えられる理由</th>
 </tr>
 <tr>
@@ -2892,7 +2892,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <b>ERROR_MP_NO_INTERNET_CONN </b>
 </td>
 <td>
-インターネット接続を確認してから、もう一度スキャンを実行します。
+インターネット接続を確認してから、もう一度スキャンを実行してください。
 </td>
 </tr>
 <tr>
@@ -3192,12 +3192,12 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <b>ERR_MP_SCAN_ABORTED </b>
 </td>
 <td>
-これは内部エラーです。 スキャンが完了しないときにトリガーされた可能性があります。
+これは内部エラーです。 スキャンの完了に失敗したときにトリガーされた可能性があります。
 </td>
 </tr>
 </table>
 
 ## <a name="related-topics"></a>関連項目
 
-- [保護に関するMicrosoft Defender ウイルス対策レポート](report-monitor-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策保護のレポート](report-monitor-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
