@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66b810f7bb6381d405ee7ffc0d6b1cf7a10f2bf2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c375d77c3aa64d996a8d8d2f8dce538829eaa3b2
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941434"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568316"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Microsoft 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
 
@@ -39,11 +39,11 @@ ms.locfileid: "61941434"
 
 ユーザーが[サービスの制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)または[送信スパム ポリシー](configure-the-outbound-spam-policy.md)で指定されている送信の制限のいずれかを超えた場合、そのユーザーはメールの送信を制限されますが、メールを受信することはできます。
 
-ユーザーは、Microsoft 365 Defender ポータルの **制限されたユーザー** ページに追加されます。メールを送信しようとすると、メッセージは配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) で返されます。エラー コード [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) と次のテキストが表示されます:
+ユーザーは、Microsoft 365 Defender ポータルの **［制限されたユーザー］** ページに追加されます。メールを送信しようとすると、メッセージは配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) で返されます。エラー コード [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) と次のテキストが表示されます:
 
 > 「有効な送信者として認識されなかったため、メッセージを配信できませんでした。」 この最も一般的な理由は、メールアドレスがスパムを送信している疑いがあり、メールを送信することを許可されていないことです。  詳細については、メールアドレスの管理者に問い合わせてください。 リモートサーバーが 「550 5.1.8 アクセスが拒否されました。アウトバウンド送信者が正しくありません」を返す
 
-管理者は、Microsoft 365 Defender または Exchange Online PowerShell の制限されたユーザー ページからユーザーを削除することができます。
+管理者は、Microsoft 365 Defender または Exchange Online PowerShell の **制限されたユーザー** ページからユーザーを削除することができます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -93,9 +93,9 @@ ms.locfileid: "61941434"
 > [!IMPORTANT]
 > アラートを機能させるには、監査ログ検索をオンにする必要があります。 詳細については、「[監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」をご覧ください。
 
-1. Microsoft 365 Defender ポータルで、**[メールと共同作業]** \> **[ポリシーとルール]** \> **[通知ポリシー]** に移動します。
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[メールと共同作業]** \> **[ポリシーとルール]** \> **[通知ポリシー]** に移動します。 **[通知ポリシー]** ページに直接移動するには、<https://security.microsoft.com/alertpolicies> を使用します。
 
-2. **[通知ポリシー]** ページで、「**メール送信を制限されたユーザー**」という名前の通知を見つけて選択します。 ポリシーを名前で並べ替えたり、**[検索ボックス]** を使用してポリシーを検索することができます。
+2. **[通知ポリシー]** ページで、「**メール送信を制限されたユーザー**」という名前の通知を見つけて選択します。 ポリシーを名前で並べ替えたり、**[検索]** ボックスを使用してポリシーを検索することができます。
 
 3. 表示される **[ユーザーに対してメールの送信が制限されました]** ポップアップで、次の設定を確認または構成します。
    - **状態**: ![[オンに切り替え]](../../media/scc-toggle-on.png) で、アラートがオンになっていることを確認します。

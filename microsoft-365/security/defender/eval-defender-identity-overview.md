@@ -22,14 +22,14 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2438e7690230af88eae72e0864184e771bdd4135
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: d77bb5f61127475c8c7c00e58af6c19013aaffe2
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504804"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755417"
 ---
-# <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>手順 2. Microsoft Defender for Identity の概要を評価する
+# <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>手順 2。 Microsoft Defender for Identity の概要を評価する
 
 
 **適用対象:**
@@ -43,14 +43,12 @@ ms.locfileid: "63504804"
 
 以下の手順を使用して、Microsoft Defender for Identity を有効にしてパイロットします。
 
-![Microsoft Defender for Identity を Defender 評価環境に追加する手順。](../../media/defender/m365-defender-identity-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-steps.png" alt-text="Microsoft Defender for Identity を Microsoft Defender 評価環境に追加する手順" lightbox="../../media/defender/m365-defender-identity-eval-steps.png":::
 
 次の表に、図の手順を示します。
 
-| |手順  |説明  |
+| シリアル番号|手順  |説明  |
 |---------|---------|---------|
 |1|[アーキテクチャ要件と主な概念を確認する](eval-defender-identity-architecture.md)    | Defender for Identity アーキテクチャを理解し、環境がアーキテクチャの前提条件を満たしていることを確認します。       |
 |2|[評価環境を有効にする](eval-defender-identity-enable-eval.md)     |   評価環境をセットアップするには、手順に従います。      |
 |3|[パイロットのセットアップ](eval-defender-identity-pilot.md)     |   ID 環境のベンチマーク設定について説明し、Defender for Identity のチュートリアルを試してみてください。     |
-||||
-

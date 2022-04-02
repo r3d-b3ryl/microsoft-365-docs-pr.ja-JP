@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e0cde3a8a852fab426c1e0bf0290f9785aa0b40
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 83e7bd2cc46469cb6a5a6bc8c29a8d21dba20b7f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61896407"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466193"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>エンドポイント通知の Microsoft Defender の管理
 
@@ -33,13 +33,13 @@ ms.locfileid: "61896407"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-Defender for Endpoint は、悪意のあるイベント、属性、コンテキスト情報の可能性を通知します。 新しいアラートの概要がセキュリティ操作ダッシュボードに表示され、アラート キュー内のすべてのアラートに **アクセスできます**。
+Defender for Endpoint は、悪意のあるイベント、属性、コンテキスト情報の可能性を通知します。 新しいアラートの概要がセキュリティ操作ダッシュボードに **表示され、** アラート キュー内のすべてのアラートに **アクセスできます**。
 
-アラートを管理するには、個別のデバイスの [通知] キューまたは[デバイス] ページの [アラート] タブでアラートを選択します。
+アラートを管理するには、アラート キューでアラートを選択するか、個々のデバイスの [デバイス] ページの [アラート] タブを選択します。
 
 いずれかの場所でアラートを選択すると、[アラート管理] **ウィンドウが表示されます**。
 
-![アラート管理ウィンドウとアラート キューのイメージ。](images/atp-alerts-selected.png)
+:::image type="content" source="images/atp-alerts-selected.png" alt-text="[アラート管理] ウィンドウと [アラート] キュー" lightbox="images/atp-alerts-selected.png":::
 
 ## <a name="link-to-another-incident"></a>別のインシデントへのリンク
 
@@ -51,7 +51,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 ## <a name="suppress-alerts"></a>アラートを抑制する
 
-アラートがユーザーに表示されるのを抑制する必要があるシナリオMicrosoft 365 Defender。 Defender for Endpoint を使用すると、組織内の既知のツールやプロセスなど、無実と知られている特定のアラートに対して抑制ルールを作成できます。
+警告が表示されるのを抑制する必要があるシナリオMicrosoft 365 Defender。 Defender for Endpoint を使用すると、組織内の既知のツールやプロセスなど、無実と知られている特定のアラートに対して抑制ルールを作成できます。
 
 抑制ルールは、既存のアラートから作成できます。 必要に応じて無効にし、再び有効にできます。
 
@@ -102,7 +102,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 #### <a name="view-the-list-of-suppression-rules"></a>抑制ルールの一覧を表示する
 
-1. ナビゲーション ウィンドウで、[アラートの抑制]**設定** \> **選択します**。
+1. ナビゲーション ウィンドウで、[アラートの抑制 **設定** \> **選択します**。
 
 2. 抑制ルールの一覧には、組織内のユーザーが作成したすべてのルールが表示されます。
 
@@ -110,7 +110,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 ## <a name="change-the-status-of-an-alert"></a>アラートの状態を変更する
 
-調査の進行に合わせ、アラートの状態を変更することで、アラート (New、In **Progress、** または **Resolved)** を分類できます。 これにより、チームがアラートに応答する方法を整理および管理できます。
+調査の進行に合わせ、アラートの状態を変更することで、アラート (New、**In Progress**、**または Resolved**) を分類できます。 これにより、チームがアラートに応答する方法を整理および管理できます。
 
 たとえば、チーム リーダーは、すべての新しいアラートを確認し、そのアラートを進行中のキューに割り当て、さらに分析を行います。
 

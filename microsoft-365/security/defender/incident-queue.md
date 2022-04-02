@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 38bfde92a2988cd8bdbca770402af96a4b9c5134
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 40178e42737bdfea756db55658aaeb988ad4f19f
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321831"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498739"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>グループ内のインシデントに優先順位をMicrosoft 365 Defender
 
@@ -43,7 +43,7 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 
 インシデント ポータルのクイック起動時に、インシデント &**アラート**>インシデント キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderきます</a>。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント ポータルのインシデント キューを表示する [インシデント] Microsoft 365 Defenderします。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 [ **最新のインシデントと** 通知] セクションには、過去 24 時間に受信したアラートとインシデントが作成された数のグラフが表示されます。
 
@@ -66,7 +66,7 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 
 既定のインシデント キューから[フィルター] を **選択すると、[** フィルター] ウィンドウが表示され、そこからフィルター処理されたインシデントのセットを指定できます。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="インシデント キューのフィルター ウィンドウの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="ポータル内のインシデント キューの [フィルター] ウィンドウMicrosoft 365 Defenderします。" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 [フィルター] ウィンドウを **表示するには**、インシデントの一覧の上にある [フィルター] リストでフィルターを選択します。
 

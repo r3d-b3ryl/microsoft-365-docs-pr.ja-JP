@@ -17,25 +17,25 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: 584da4e192ddbd8ac5b223e0d292a71f0c35c305
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 1277d001118dda764aa9b2a968f1024d5befcac1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767702"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755073"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅での作業をサポートするセキュリティ チームの上位 12 のタスク
 
 Microsoft と同じ [で](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) 、主にホーム ベースの従業員をサポートしている場合は、組織が可能な限り安全に作業を行うお手伝いをしたいと考えています。 この記事では、セキュリティ チームが最も重要なセキュリティ機能を可能な限り迅速に実装するためにタスクの優先順位を設定します。
 
-![これらのトップ タスクを実行して、自宅での作業をサポートします。](../media/security/security-support-remote-work.png)
+:::image type="content" source="../media/security/security-support-remote-work.png" alt-text="自宅での作業をサポートするセキュリティ チームの上位 12 のタスク" lightbox="../media/security/security-support-remote-work.png":::
 
 Microsoft のビジネス プランのいずれかを使用している小規模または中規模の組織の場合は、代わりに次のリソースを参照してください。
 
-- [ビジネス プランのセキュリティとセキュリティをOffice 365するMicrosoft 365トップ 10](../admin/security-and-compliance/secure-your-business-data.md)
+- [ビジネス プランのセキュリティとセキュリティOffice 365 Microsoft 365 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
 - [Microsoft 365キャンペーン (ビジネス](../business-premium/index.md)向け推奨セキュリティ構成Microsoft 365含む)
 
-Microsoft のエンタープライズ プランを使用しているお客様は、サービス プランに適用される次の表に示すタスクを完了してください。 エンタープライズ プランを購入する代Microsoft 365サブスクリプションを組み合わせる場合は、次の点に注意してください。
+Microsoft のエンタープライズ プランを使用しているお客様は、サービス プランに適用される次の表に示すタスクを完了してください。 エンタープライズ プランを購入する代わりにMicrosoft 365サブスクリプションを組み合わせる場合は、次の点に注意してください。
 
 - Microsoft 365 E3には、Enterprise Mobility + Security (EMS) E3 および Azure AD P1 が含まれます
 - Microsoft 365 E5 EMS E5 と P2 Azure AD含まれています
@@ -50,17 +50,16 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 |4|[Id の Microsoft Defender を構成する](#4-configure-microsoft-defender-for-identity)|||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5|[Microsoft 365 Defender を有効にする](#5-turn-on-microsoft-365-defender)|||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[電話とタブレットの Intune モバイル アプリ保護を構成する](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7 |[Intune アプリ保護を含む、ゲストの MFA と条件付きアクセスを構成する](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8 |[デバイス管理に PC を登録し、準拠している PC を必要とする](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9 |[クラウド接続のためにネットワークを最適化する](#9-optimize-your-network-for-cloud-connectivity)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10|[ユーザーのトレーニング](#10-train-users)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11|[Microsoft Defender for Cloud Apps の使用を開始する](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|12 |[脅威を監視し、アクションを実行する](#12-monitor-for-threats-and-take-action)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|
+|7 |[Intune アプリ保護を含む、ゲストの MFA と条件付きアクセスを構成する](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|8 |[デバイス管理に PC を登録し、準拠している PC を必要とする](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9 |[クラウド接続のためにネットワークを最適化する](#9-optimize-your-network-for-cloud-connectivity)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10|[ユーザーのトレーニング](#10-train-users)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11|[Microsoft Defender for Cloud Apps の使用を開始する](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|12 |[脅威を監視し、アクションを実行する](#12-monitor-for-threats-and-take-action)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 開始する前に、ポータル[Microsoft 365で](./defender/microsoft-secure-score.md)セキュリティで保護されたスコアを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderしてください</a>。 一元化されたダッシュボードから、ID、データ、アプリ、デバイス、インフラストラクチャMicrosoft 365のセキュリティを監視および改善できます。 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティのアプリケーションやソフトウェアを使用して推奨事項に対処したりするためのポイントが与えられる。 この記事で推奨されるタスクは、スコアを上げるとします。
 
-![Microsoft Secure Score のスクリーンショット。](../media/secure-score.png)
+:::image type="content" source="../media/secure-score.png" alt-text="[Microsoft Secure Score] 画面 (Microsoft 365 Defender ポータル)" lightbox="../media/secure-score.png":::
 
 ## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1: 多要素Azure AD認証 (MFA) を有効にする
 
@@ -72,12 +71,11 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 
 ****
 
-|計画|推奨事項|
+|プラン|推奨事項|
 |---|---|
 |Microsoft 365プラン (P1 または P2 Azure ADなし)|[Azure AD でセキュリティの既定値を有効にします](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。|
 |Microsoft 365 E3 (P1 Azure AD付き)|[一般的な条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br/>- [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [すべてのユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
 |Microsoft 365 E5 (P2 Azure AD付き)|Id Protection のAzure AD、次のポリシーを作成して、Microsoft の推奨される[](./office-365-security/identity-access-policies.md)条件付きアクセスポリシーと関連ポリシーの実装を開始します。<br/> - [サインインのリスクが中、または高のときに MFA を要求する](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [先進認証をサポートしないクライアントはブロックする](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [高リスク ユーザーはパスワードを変更する必要がある](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
-|
 
 ## <a name="2-protect-against-threats"></a>2: 脅威から保護する
 
@@ -88,11 +86,11 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 - フィッシング対策保護
 - スパム対策保護
 
-開始[点として使用できるガイダンスについては](office-365-security/protect-against-threats.md)、「Office 365の脅威から保護する」を参照してください。
+開始[点として使用できるガイダンスについては、「](office-365-security/protect-against-threats.md)Office 365の脅威から保護する」を参照してください。
 
 ## <a name="3-configure-microsoft-defender-for-office-365"></a>3: Microsoft Defender for Office 365
 
-Microsoft 365 E5 および Office 365 E5 に含まれる Microsoft Defender for Office 365 は、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによる悪意のある脅威から組織を保護します。 構成には数時間かかる場合があります。
+Microsoft 365 E5 および Office 365 E5 に含まれる Microsoft Defender for Office 365 は、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによって生じ得る悪意のある脅威から組織を保護します。 構成には数時間かかる場合があります。
 
 Microsoft Defender for Office 365:
 
@@ -122,9 +120,11 @@ Microsoft Defender for Office 365:
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5: 電源を入Microsoft 365 Defender
 
-Microsoft Defender for Office 365および Microsoft Defender for Identity が構成されたので、これらの機能からの結合された信号を 1 つのダッシュボードで表示できます。 [Microsoft 365 Defender では](./defender/microsoft-365-defender.md)、アラート、インシデント、自動調査と応答、およびワークロード全体の高度な検索 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Defender for Cloud Apps) を、Microsoft 365 Defender の 1 つのウィンドウにまとめます。<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータル</a>。
+Microsoft Defender for Office 365および Microsoft Defender for Identity が構成されたので、これらの機能からの結合された信号を 1 つのダッシュボードで表示できます。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)では、ワークロード全体にわたるアラート、インシデント、自動調査と対応、高度な検索 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Defender for Cloud Apps) を、Microsoft 365 Defender の 1 つのウィンドウにまとめます。<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータル</a>。
 
-![MTP ダッシュボードの図。](../media/top-ten-security-remote-work-mtp-dashboard.png)
+<!--
+:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="The MTP dashboard in the Microsoft 365 Defender portal" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
+--> 
 
 すべてのサービス用に 1 つ以上の Defender を構成したOffice 365 MTP を有効にしてください。 新しい機能は、MTP に継続的に追加されます。プレビュー機能の受信をオプトインすることを検討してください。
 
@@ -152,7 +152,7 @@ APP 保護ポリシーには、多くの設定が含まれます。 幸いなこ
 
 次に、引き続きゲストと共同作業を行って作業できます。 ユーザープランを使用Microsoft 365 E3、すべてのユーザーに MFA を実装している場合は、設定します。
 
-Microsoft 365 E5 プランを使用し、リスクベースの MFA に Azure Identity Protection を利用する場合は、いくつかの調整を行う必要があります (Azure AD Identity protection はゲストにまで及ばないので)。
+Microsoft 365 E5 プランを使用している場合に、リスクベースの MFA に Azure Identity Protection を利用する場合は、いくつかの調整を行う必要があります (Azure AD Identity protection はゲストにまで及ばないので)。
 
 - ゲストと外部ユーザーに常に MFA を要求する新しい条件付きアクセス ルールを作成します。
 - リスクベースの MFA 条件付きアクセス ルールを更新して、ゲストと外部ユーザーを除外します。
@@ -166,7 +166,7 @@ Microsoft 365 E5 プランを使用し、リスクベースの MFA に Azure Ide
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8: デバイス管理に PC を登録し、準拠している PC を必要とする
 
-従業員のデバイスを登録するには、いくつかの方法があります。 各方法は、デバイスの所有権 (個人または企業)、デバイスの種類 (iOS、Windows、Android)、および管理要件 (リセット、アフィニティ、ロック) に依存します。 これは、並べ替えに少し時間がかかる場合があります。「デバイス[をデバイスに登録する」を参照Microsoft Intune](/mem/intune/enrollment/)。
+従業員のデバイスを登録するには、いくつかの方法があります。 各方法は、デバイスの所有権 (個人または企業)、デバイスの種類 (iOS、Windows、Android)、および管理要件 (リセット、アフィニティ、ロック) に依存します。 これは、並べ替えに少し時間がかかる場合があります。「デバイスを[デバイスに登録する」を参照](/mem/intune/enrollment/)Microsoft Intune。
 
 最も簡単な方法は、デバイスの自動登録を設定[Windows 10です](/mem/intune/enrollment/quickstart-setup-auto-enrollment)。
 
@@ -177,10 +177,10 @@ Microsoft 365 E5 プランを使用し、リスクベースの MFA に Azure Ide
 
 デバイスを登録した後、共通 ID ポリシーとデバイス アクセス ポリシーのガイダンスを使用して [、次の](./office-365-security/identity-access-policies.md) ポリシーを作成します。
 
-- [デバイス コンプライアンス ポリシーの定義](./office-365-security/identity-access-policies.md#define-device-compliance-policies) - ウイルス対策保護を必要とするWindows 10の推奨設定。 必要な情報があるMicrosoft 365 E5 Microsoft Defender for Endpoint を使用して、従業員のデバイスの正常性を監視します。 他のオペレーティング システムのコンプライアンス ポリシーには、ウイルス対策保護とエンド ポイント保護ソフトウェアが含まれる必要があります。
+- [デバイス コンプライアンス ポリシーを定義する](./office-365-security/identity-access-policies.md#define-device-compliance-policies) - ウイルス対策保護を必要とするWindows 10の推奨設定。 ユーザーがMicrosoft 365 E5、Microsoft Defender for Endpoint を使用して従業員デバイスの正常性を監視します。 他のオペレーティング システムのコンプライアンス ポリシーには、ウイルス対策保護とエンド ポイント保護ソフトウェアが含まれる必要があります。
 - [準拠している PC を要求](./office-365-security/identity-access-policies.md#require-compliant-pcs-and-mobile-devices)する - デバイス コンプライアンス ポリシーを適用するAzure ADアクセスルールです。
 
-1 つのデバイスを管理できるのは 1 つの組織のみです。そのため、ゲスト アカウントは、デバイス内の条件付きアクセス ルールからAzure AD。 デバイスコンプライアンスを必要とするポリシーからゲストユーザーと外部ユーザーを除外しない場合、これらのポリシーはこれらのユーザーをブロックします。 詳細については、「ゲストアクセスと外部アクセスを許可および保護するための一般的なポリシー [の更新」を参照してください](./office-365-security/identity-access-policies-guest-access.md)。
+1 つのデバイスを管理できるのは 1 つの組織のみです。そのため、ゲスト アカウントは、デバイスの条件付きアクセス ルールから除外Azure AD。 デバイスコンプライアンスを必要とするポリシーからゲストユーザーと外部ユーザーを除外しない場合、これらのポリシーはこれらのユーザーをブロックします。 詳細については、「ゲストアクセスと外部アクセスを許可および保護するための一般的なポリシー [の更新」を参照してください](./office-365-security/identity-access-policies-guest-access.md)。
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9: クラウド接続のためにネットワークを最適化する
 
@@ -188,7 +188,7 @@ Microsoft 365 E5 プランを使用し、リスクベースの MFA に Azure Ide
 
 VPN コンセントレータ、中央ネットワーク出力機器 (プロキシやデータ損失防止デバイスなど)、中央インターネット帯域幅、バックホール MPLS 回線、NAT 機能などのネットワーク要素は、それらを使用するビジネス全体の負荷により、突然大きな負担を負います。 その結果、パフォーマンスと生産性が低下し、自宅での作業に適応しているユーザーのユーザー エクスペリエンスが低下します。
 
-従来、企業ネットワーク経由でトラフィックをルーティングして提供された保護の一部は、ユーザーがアクセスしているクラウド アプリによって提供されます。 この記事でこの手順に達した場合は、一連の高度なクラウド セキュリティ制御を、サービスとデータMicrosoft 365実装しました。 これらのコントロールを使用すると、リモート ユーザーのトラフィックを直接ユーザーにルーティングする準備Office 365。 他のアプリケーションへのアクセスに VPN リンクが必要な場合は、スプリット トンネリングを実装することで、パフォーマンスとユーザー エクスペリエンスを大幅に向上させることができます。 組織で合意を得た後は、1 日以内に、ネットワーク チームが十分に調整できます。
+従来、企業ネットワーク経由でトラフィックをルーティングして提供された保護の一部は、ユーザーがアクセスしているクラウド アプリによって提供されます。 この記事のこの手順に達した場合は、一連の高度なクラウド セキュリティ制御を、サービスとデータMicrosoft 365実装しました。 これらのコントロールを設定すると、リモート ユーザーのトラフィックを直接ユーザーにルーティングする準備Office 365。 他のアプリケーションへのアクセスに VPN リンクが必要な場合は、スプリット トンネリングを実装することで、パフォーマンスとユーザー エクスペリエンスを大幅に向上させることができます。 組織で合意を得た後は、1 日以内に、ネットワーク チームが十分に調整できます。
 
 詳細については、Docs の次のリソースを参照してください。
 
@@ -213,15 +213,14 @@ Microsoft 365、組織内のユーザーに通知するための次のリソー�
 |概念|リソース|
 |---|---|
 |Microsoft 365|[カスタマイズ可能な学習経路](/office365/customlearning/) <p>これらのリソースは、組織内のエンド ユーザー向けトレーニングをまとめるのに役立ちます。|
-|Microsoft 365 セキュリティ|[ラーニングモジュール: 組み込みのインテリジェント なセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365) <p>このモジュールを使用すると、セキュリティ機能Microsoft 365機能を説明し、これらのセキュリティ機能の利点を明確にできます。|
+|Microsoft 365 セキュリティ|[ラーニングモジュール: 組み込みのインテリジェント なセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365) <p>このモジュールを使用すると、セキュリティMicrosoft 365機能がどのように機能するのかについて説明し、これらのセキュリティ機能の利点を明確にできます。|
 |多要素認証|[2 段階認証: 追加の検証ページとは](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>この記事は、エンド ユーザーが多要素認証とは何か、および組織で使用される理由を理解するのに役立ちます。|
-|
 
 このガイダンスに加えて、Microsoft では、ユーザーが「アカウントとデバイスをハッカーやマルウェアから保護する」で説明されているアクション [を実行するようにお勧めします](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx)。 それらの操作を次に示します。
 
 - 強力なパスワードの使用
 - デバイスの保護
-- デバイス PC および Mac pc Windows 10セキュリティ機能の有効化 (非管理対象デバイスの場合)
+- デバイスおよび Mac PC Windows 10のセキュリティ機能を有効にする (管理されていないデバイスの場合)
 
 Microsoft では、次の記事で推奨されるアクションを実行して、ユーザーが個人の電子メール アカウントを保護することもできます。
 
@@ -243,7 +242,7 @@ Microsoft では、次の記事で推奨されるアクションを実行して�
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: 脅威を監視し、アクションを実行する
 
-Microsoft 365を監視し、適切なアクションを実行する方法がいくつか含まれています。 最適な開始点は、Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>ポータルであり、組織の [Microsoft Secure Score](./defender/microsoft-secure-score.md)、および注意を必要とするアラートまたはエンティティを表示できます。
+Microsoft 365状態を監視し、適切なアクションを実行する方法がいくつか含まれています。 最適な開始点は、Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>ポータルであり、組織の [Microsoft Secure Score](./defender/microsoft-secure-score.md)、および注意を必要とするアラートまたはエンティティを表示できます。
 
 - [新しいポータルのMicrosoft 365 Defenderする](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 - [「セキュリティ ポータル」を参照Microsoft 365](./defender/portals.md)

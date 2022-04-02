@@ -1,5 +1,5 @@
 ---
-title: Microsoft 脅威エキスパートのMicrosoft 365 Defenderの概要
+title: Microsoft 脅威エキスパートの概要Microsoft 365 Defender説明
 ms.reviewer: ''
 description: Microsoft 脅威エキスパートは、高度な専門知識を提供Microsoft 365 Defender。
 keywords: 管理された脅威の検出サービス、管理された脅威の検出、管理された検出と応答 (MDR) サービス、MTE、Microsoft 脅威エキスパート
@@ -15,14 +15,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: e47783d2308ca4b94360dd4fa06341d18f8973bb
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
+ms.openlocfilehash: 61e98e18466992a0463aa1f97ce2527b943f8abd
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61041987"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498673"
 ---
-# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 脅威エキスパートの概要Microsoft 365説明
+# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 脅威エキスパートのMicrosoft 365概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -33,21 +36,21 @@ ms.locfileid: "61041987"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft 脅威エキスパート - ターゲット攻撃通知は、管理された脅威検出サービスです。 適用して受け入れられると、Microsoft の脅威の専門家から標的型攻撃通知が届くので、環境に対する重大な脅威を見逃す必要はありません。 これらの通知は、組織のエンドポイント、電子メール、および ID を保護するのに役立ちます。
+Microsoft 脅威エキスパート - ターゲット攻撃通知は、管理された脅威の検出サービスです。 適用して受け入れられると、Microsoft の脅威の専門家から標的型攻撃通知が届くので、環境に対する重大な脅威を見逃す必要はありません。 これらの通知は、組織のエンドポイント、電子メール、および ID を保護するのに役立ちます。
 Microsoft 脅威エキスパート – エキスパート オンデマンドを使用すると、組織が直面している脅威に関する専門家のアドバイスを受け取ります。 組織が直面している脅威に関するヘルプを受け取ります。 サブスクリプション サービスとして利用できます。
 
 ## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>[ターゲット攻撃Microsoft 脅威エキスパートを適用する]
 
 > [!IMPORTANT]
-> 申請する前に、Microsoft Technical Service プロバイダーおよびアカウント チームと Microsoft 脅威エキスパート – ターゲット攻撃通知の適格性要件について説明してください。
+> 適用する前に、Microsoft テクニカル サービス プロバイダーおよびアカウント チームと Microsoft 脅威エキスパート – ターゲット攻撃通知の適格性要件について説明してください。
 
-Microsoft Defender for Endpoint および Microsoft 365 Defenderを既に持っている場合は、Microsoft 脅威エキスパート – ターゲット攻撃通知を自分のポータルからMicrosoft 365 Defenderできます。 [エンドポイントの **設定 >全般>に** 移動> – > Microsoft 脅威エキスパート攻撃通知] に移動し、[適用] を **選択します**。 詳細[については、「Microsoft 脅威エキスパート機能の](./configure-microsoft-threat-experts.md)構成」を参照してください。
+Microsoft Defender for Endpoint および Microsoft 365 Defenderを既に持っている場合は、Microsoft 脅威エキスパート – ターゲット攻撃通知を自分のポータルからMicrosoft 365 Defenderできます。 [全般] **設定 > [ > - >攻撃** 通知> Microsoft 脅威エキスパートに移動し、[ 適用] を選択 **します**。 詳細[については、「Microsoft 脅威エキスパート機能の構成](./configure-microsoft-threat-experts.md)」を参照してください。
 
-![MTE アプリケーション ページのスクリーンショット。](../../media/mte/mte-collaboratewithmte.png)
+:::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="ポータルの [エンドポイント] ページの左側のナビゲーション ウィンドウにある [高度な機能] Microsoft 365 Defenderします。" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 アプリケーションが承認されると、脅威の専門家が環境に対する脅威を検出するたびに、ターゲット攻撃通知の受信を開始します。
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>ユーザー登録Microsoft 脅威エキスパート - エキスパート オンデマンド
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>ユーザー登録 - Microsoft 脅威エキスパートエキスパート オンデマンド
 
 Microsoft 担当者に問い合わせ、エキスパート オンデマンドを購読してください。  詳細については[、「configure Microsoft 脅威エキスパート機能](./configure-microsoft-threat-experts.md)」を参照してください。
 
@@ -62,7 +65,7 @@ Microsoft 担当者に問い合わせ、エキスパート オンデマンドを
 
 ## <a name="collaborate-with-experts-on-demand"></a>専門家とオンデマンドで共同作業を行う
 
-また、セキュリティ ポータル内から Microsoft の脅威の専門家に直接連絡Microsoft 365、迅速かつ正確な脅威対応を行います。  専門家は、組織が直面する可能性がある複雑な脅威をより深く理解するために洞察を提供できます。  専門家に相談して、次の情報を提供します。
+また、迅速かつ正確な脅威対応を行う場合は、セキュリティ ポータル内Microsoft 365 Microsoft の脅威の専門家に直接お問い合わせください。  専門家は、組織が直面する可能性がある複雑な脅威をより深く理解するために洞察を提供できます。  専門家に相談して、次の情報を提供します。
 
 - 根本原因やスコープを含む、アラートとインシデントに関する追加情報を収集する
 - 高度な攻撃者に直面した場合、疑わしいデバイス、アラート、インシデントを明確にし、次の手順を実行する
@@ -71,19 +74,24 @@ Microsoft 担当者に問い合わせ、エキスパート オンデマンドを
 脅威の専門家 **に相談するオプション** は、ポータル全体のいくつかの場所で利用できます。
 
 - <i>**[デバイス ページのアクション] メニュー**</i><BR>
-![デバイス ページのアクション メニューの MTE-EOD メニュー オプションのスクリーンショット。](../../media/mte/device-actions-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/device-actions-mte-highlighted.png" alt-text="[デバイス] ポータルの [デバイス ページ] アクション メニューの [MTE-EOD] メニュー オプションMicrosoft 365 Defenderします。" lightbox="../../media/mte/device-actions-mte-highlighted.png":::
 
 - <i>**デバイス インベントリ ページのフライアウト メニュー**</i><BR>
-![デバイス インベントリ ページの MTE-EOD メニュー オプションのスクリーンショット。](../../media/mte/device-inventory-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/device-inventory-mte-highlighted.png" alt-text="ポータルの [デバイス インベントリ] ページの [MTE-EOD] メニュー オプションMicrosoft 365 Defenderします。" lightbox="../../media/mte/device-inventory-mte-highlighted.png":::
 
 - <i>**アラート ページの飛び出しメニュー**</i><BR>
-![アラート ページの MTE-EOD メニュー オプションのスクリーンショット。](../../media/mte/alerts-actions-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/alerts-actions-mte-highlighted.png" alt-text="ポータルの [アラート] ページの [MTE-EOD] メニュー オプションMicrosoft 365 Defenderします。" lightbox="../../media/mte/alerts-actions-mte-highlighted.png":::
 
 - <i>**[インシデント] ページの [操作] メニュー**</i><BR>
-![インシデント ページの MTE-EOD メニュー オプションのスクリーンショット。](../../media/mte/incidents-action-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="ポータルの [インシデント] ページの [MTE-EOD] メニュー オプションMicrosoft 365 Defenderします。" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
 
 - <i>**インシデント インベントリ ページ**</i><BR>
-![インシデント インベントリ ページの MTE-EOD メニュー オプションのスクリーンショット。](../../media/mte/incidents-inventory-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/incidents-inventory-mte-highlighted.png" alt-text="ポータルのインシデント インベントリ ページの MTE-EOD メニュー オプションMicrosoft 365 Defenderします。" lightbox="../../media/mte/incidents-inventory-mte-highlighted.png":::
 
 > [!NOTE]
 > プレミア サポート サブスクリプションを Microsoft Defender にマップして Office 365 ライセンスを取得している場合は、Microsoft Services Hub を通じてエキスパート オンデマンド ケースの状態を追跡できます。

@@ -22,7 +22,7 @@ description: Microsoft ビジネス製品の課金内容または請求書の内
 ms.date: 05/04/2021
 ms.openlocfilehash: ce057a9a3fc72ab1ba818047112451f984894d99
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63315807"
@@ -31,7 +31,7 @@ ms.locfileid: "63315807"
 
 請求書には、請求の概要と支払い方法が記載されています。 Microsoft 365 管理センターで[オンライン請求書を表示](#view-your-online-invoice)できます。 また、Portable Document Format (.pdf) でダウンロードして、メールで送信することもできます。
 
-請求書を表示および印刷するには、次の方法を使用します。
+請求書を表示および印刷する:
 
 1. [**課金情報**]  >  [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページで、請求書の日付範囲を選択します。
 2. 請求書を PDF 形式で印刷または保存するには、[**請求書 PDF のダウンロード**] を選択し、PDF を印刷します。
@@ -51,7 +51,7 @@ Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 3
 | 課金プロファイル |**請求先**、**PO 番号**、支払条件などの請求書プロパティを定義するために使用される課金プロファイルの名前。 この情報は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">課金プロファイル</a>] ページで管理できます。 課金プロファイルの詳細と、それらを使用して組織のより柔軟な課金オプションを構築する方法については、「[課金プロファイルの管理](manage-billing-profiles.md)」を参照してください。 |
 | 請求書番号 |追跡目的で使用される、Microsoft が生成した一意の請求書番号。 |
 | 請求日 |請求書が生成された日付。通常、請求サイクルの終了後 5 - 12 日です。 請求日は、課金プロファイルの詳細ページで確認できます。 請求期間の終了から請求日までの間に発生した料金は、次の請求期間であるため、翌月の請求に含まれます。 各請求書の請求期間の開始日と終了日は、**課金の概要** の上の請求書の PDF に記載されています。|
-| 支払条件 |Microsoft の請求書の支払い方法。 *30 日以内に全額* とは、請求日から 30 日以内に、請求書の指示に従って支払うことを意味します。 |
+| 支払条件 |Microsoft の請求書の支払い方法。*Net 30 days* とは、請求書の以下の指示に従って、請求書の日付から 30 日以内に支払うことを意味します。 |
 
 ## <a name="understand-the-billing-summary"></a>課金の概要を理解する
 
@@ -140,9 +140,9 @@ Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 3
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>お支払い方法として Azure の前払いが表示されないのはなぜですか?
 
-Azure 前払は、対象となる Azure 製品およびサービスの支払い方法としてのみ利用できます。
+Azure の前払いは、対象となる Azure 製品およびサービスのお支払い方法としてのみ利用できます。
 
-## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートにお問い合せください
+## <a name="need-help-contact-support"></a>お困りの際は、 サポートにお問い合せください
 
 Azure クレジットについて質問がある場合、またはサポートが必要な場合は、<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Azure サポートを使用してサポート要求を作成してください</a>。
 
@@ -150,7 +150,7 @@ Microsoft 365 管理センターの請求書について質問がある場合、
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ビジネス向け請求書または請求書Microsoft 365を](understand-your-invoice2.md)理解する (記事)\
-[Microsoft Customer Agreement Azure クレジット 残高の追跡](/azure/billing/billing-mca-check-azure-credits-balance) (記事)\
-[Microsoft カスタマー 契約請求書 (記事](/azure/cost-management-billing/understand/review-customer-agreement-bill) )を確認する\
-[Microsoft Customer Agreement 請求アカウントの使用を開始する](/azure/billing/billing-mca-overview) (記事)
+[Microsoft 365 for Business の請求書または請求明細書を理解する](understand-your-invoice2.md) (記事)\
+[Microsoft Customer Agreement Azure クレジット残高を追跡する](/azure/billing/billing-mca-check-azure-credits-balance) (記事)\
+[Microsoft Customer Agreement 請求明細書](/azure/cost-management-billing/understand/review-customer-agreement-bill) (記事)\
+[Microsoft Customer Agreement 請求アカウントとともに始めましょう](/azure/billing/billing-mca-overview) (記事)

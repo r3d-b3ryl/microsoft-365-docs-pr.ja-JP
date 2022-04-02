@@ -16,32 +16,32 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 897a8691bc7cbc3c03adcbf5befc2a2da8b12294
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d724b7663bd4484c630e97362eb5766490e1fa8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165791"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465907"
 ---
 # <a name="techniques-in-the-device-timeline"></a>デバイスタイムラインのテクニック
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-特定のデバイスで発生したイベントを分析することで、調査に関するより多くの洞察を得られる可能性があります。 まず、[デバイス] リストから目的のデバイス [を選択します](machines-view-overview.md)。 デバイス ページで、[タイムライン] タブを **選択** して、デバイスで発生したイベントを表示できます。
+特定のデバイスで発生したイベントを分析することで、調査に関するより多くの洞察を得られる可能性があります。 最初に、[デバイス] リストから目的のデバイス [を選択します](machines-view-overview.md)。 デバイス ページで、[タイムライン] タブを **選択** して、デバイスで発生したイベントを表示できます。
 
 ## <a name="understand-techniques-in-the-timeline"></a>タイムラインのテクニックを理解する
 
 > [!IMPORTANT]
 > 一部の情報は、パブリック プレビューで事前リリースされた製品機能に関連します。これは、商用リリース前に大幅に変更される可能性があります。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-Microsoft Defender for Endpoint では **、Techniques は** イベント タイムラインの追加データ型です。 技術は [、MITRE ATT](https://attack.mitre.org/) および CK の手法またはサブ&関連するアクティビティに関するより多くの洞察を提供します。
+Microsoft Defender for Endpoint では、 **Techniques は** イベント タイムラインの追加データ型です。 テクニックは、 [MITRE ATT および CK](https://attack.mitre.org/) テクニックまたはサブ&関連するアクティビティに関するより多くの洞察を提供します。
 
 この機能は、分析者がデバイスで観察されたアクティビティを理解するのを支援することで、調査エクスペリエンスを簡素化します。 アナリストは、さらに調査を行う場合があります。
 
 パブリック プレビューの場合、テクニックは既定で使用できます。デバイスのタイムラインを表示するときにイベントと共に表示されます。
 
-![デバイスタイムラインのスクリーンショットのテクニック。](images/device-timeline-2.png)
+:::image type="content" source="images/device-timeline-2.png" alt-text="デバイスタイムラインのテクニック" lightbox="images/device-timeline-2.png":::
 
 テクニックは太字で強調表示され、左側に青いアイコンが表示されます。 対応する MITRE ATT&CK ID とテクニック名は、[追加情報] の下にタグとして表示されます。
 
@@ -55,20 +55,20 @@ Microsoft Defender for Endpoint では **、Techniques は** イベント タイ
 
 右側に青いアイコンが表示されている場合は、エンティティの詳細をコピーできます。 たとえば、関連ファイルの SHA1 をコピーするには、青いページ アイコンを選択します。
 
-![エンティティの詳細をコピーします。](images/techniques-side-pane-clickable.png)
+:::image type="content" source="images/techniques-side-pane-clickable.png" alt-text="エンティティの詳細をコピーする" lightbox="images/techniques-side-pane-clickable.png":::
 
 コマンド ラインでも同じ操作を実行できます。
 
-![コマンド ラインをコピーします。](images/techniques-side-pane-command.png)
+:::image type="content" source="images/techniques-side-pane-command.png" alt-text="コマンド ラインをコピーするオプション" lightbox="images/techniques-side-pane-command.png":::
 
 ## <a name="investigate-related-events"></a>関連イベントの調査
 
 高度な [検索を使用して](advanced-hunting-overview.md) 、選択したテクニックに関連するイベントを検索するには、[関連イベントのハント **] を選択します**。 これにより、テクニックに関連するイベントを検索するクエリを含む高度な検索ページが表示されます。
 
-![関連するイベントを検索します。](images/techniques-hunt-for-related-events.png)
+:::image type="content" source="images/techniques-hunt-for-related-events.png" alt-text="関連イベントのハント オプション" lightbox="images/techniques-hunt-for-related-events.png":::
 
 > [!NOTE]
-> [テクニック] **サイド** ウィンドウから [関連イベントのハント] ボタンを使用してクエリを実行すると、特定された手法に関連するイベントはすべて表示されますが、クエリ結果にはテクニック自体は含めされません。
+> [テクニック **] サイド ウィンドウ** から [関連イベントのハント] ボタンを使用してクエリを実行すると、特定された手法に関連するイベントはすべて表示されますが、クエリ結果にはテクニック自体は含めされません。
 
 ## <a name="customize-your-device-timeline"></a>デバイスのタイムラインをカスタマイズする
 
@@ -80,7 +80,8 @@ Microsoft Defender for Endpoint では **、Techniques は** イベント タイ
 
 [列の選択] ボタンを選択すると、タイムラインで公開する列 **を選択** できます。
 
-![列をカスタマイズします。](images/filter-customize-columns.png)
+:::image type="content" source="images/filter-customize-columns.png" alt-text="列をカスタマイズできるウィンドウ" lightbox="images/filter-customize-columns.png":::
+
 
 そこから、含める情報セットを選択できます。
 
@@ -88,7 +89,7 @@ Microsoft Defender for Endpoint では **、Techniques は** イベント タイ
 
 イベントまたは手法のみを表示するには、デバイスタイムラインから [ **フィルター** ] を選択し、表示するデータ型を選択します。
 
-![フィルターのスクリーンショット。](images/device-timeline-filters.png)
+:::image type="content" source="images/device-timeline-filters.png" alt-text="[フィルター] ウィンドウ" lightbox="images/device-timeline-filters.png":::
 
 ## <a name="see-also"></a>関連項目
 

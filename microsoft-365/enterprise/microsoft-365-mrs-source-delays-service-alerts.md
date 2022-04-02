@@ -1,7 +1,7 @@
 ---
 title: MRS サービス通知
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -16,18 +16,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: メールボックス移行サービスの通知を使用して、組織内のメールボックス移行要求の遅延を監視します。
-ms.openlocfilehash: 25c569030bd5da914dc6eb7ec0e58ebadfe4d766
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6b4b618bae602c7c06b2d6371e39cc865d0a3407
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937893"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64567986"
 ---
-# <a name="service-alerts-for-mrs-source-delays-in-exchange-online-monitoring"></a>監視の MRS ソース遅延に対するサービスExchange Online通知
+# <a name="service-alerts-for-mrs-source-delays-in-exchange-online-monitoring"></a>Exchange Online 監視での MRS ソース遅延のサービス アラート
 
-メールボックス レプリケーション サービス (MRS) ソース遅延サービスアラートは、Microsoft 365 組織でのメールボックスの移行を遅らせる可能性があるテナント側 (移行ソース) の記憶域の制限やプロセッサ使用率の高い問題を通知します。 これらのサービス通知には、これらの問題の解決に役立つ Microsoft リソースへのリンクも含まれています。
+メールボックス レプリケーション サービス (MRS) ソース遅延サービスアラートは、Microsoft 365 組織でのメールボックスの移行を遅らせる可能性があるテナント側 (移行元) の記憶域の制限やプロセッサ使用率の高い問題を通知します。 これらのサービス通知には、これらの問題の解決に役立つ Microsoft リソースへのリンクも含まれています。
 
-これらのサービス通知は、サービス ウィンドウにMicrosoft 365 管理センター。 これらのサービス通知を表示するには、[**正常性** サービスの正常性] Exchange Online[アクティブな問題]  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >  **タブをクリック** します。
+これらのサービス通知は、サービス ウィンドウにMicrosoft 365 管理センター。 これらのサービス通知を表示するには、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> >  > 正常性サービス正常性Exchange Online] に移動し **、[** アクティブな問題] **タブをクリック** します。
 
 ## <a name="what-do-these-service-alerts-indicate"></a>これらのサービスアラートは何を示していますか?
 
@@ -56,13 +56,13 @@ ms.locfileid: "61937893"
 
 - **RemoteDatabaseName**: 移行元のデータベース名。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 MRS とメールボックスの移行の詳細については、次の記事を参照してください。
 
 - [メールボックスの移動は、Exchange](/exchange/recipients/mailbox-moves)
 
-- [Microsoft 365とOffice 365とベスト プラクティス](/exchange/mailbox-migration/office-365-migration-best-practices)
+- [Microsoft 365とOffice 365のパフォーマンスとベスト プラクティス](/exchange/mailbox-migration/office-365-migration-best-practices)
 
 - [メールボックス移行のパフォーマンス分析](https://techcommunity.microsoft.com/t5/exchange-team-blog/mailbox-migration-performance-analysis/ba-p/587134)
 

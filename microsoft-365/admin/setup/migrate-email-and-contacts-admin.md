@@ -33,7 +33,7 @@ ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Gmail や他のメール プロバイダーから連絡先、予定表、メールをインポートし、Microsoft 365 に移行する方法について説明します。
 ms.openlocfilehash: 7905dd767b29b50466729510ac0e4cff70eb242e
 ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/12/2022
 ms.locfileid: "62767522"
@@ -42,18 +42,18 @@ ms.locfileid: "62767522"
 
 Gmail やその他のメール プロバイダーから Microsoft 365 にメールをインポートまたは移行します。
   
- **これに関するヘルプが必要な場合**  [ビジネス サポートMicrosoft 365お問い合わせください](../../business-video/get-help-support.md)。 
+ **これに関するヘルプが必要な場合**  [Microsoft 365 for business support にお問い合わせ下さい](../../business-video/get-help-support.md)。 
 
 > [!TIP]
-> このトピックの手順に関するヘルプが必要な場合は、Microsoft の小規模ビジネス スペシャリストとの [作業を検討してください](https://go.microsoft.com/fwlink/?linkid=2186871)。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させるにつれて、従業員と一緒に 24 時間、中小企業の専門家にアクセスできます。
+> このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
   
-この作業には、デスクトップにインストールされるバージョンの Outlook を使用する必要があります。 Outlook は、大部分の Microsoft 365 の[プラン](https://go.microsoft.com/fwlink/p/?LinkId=723731)に含まれています。
+このタスクには、デスクトップにインストールされているバージョンの Outlook を使用する必要があります。Outlook は大抵のMicrosoft 365 [プラン](https://go.microsoft.com/fwlink/p/?LinkId=723731)に含まれています。
   
 ## <a name="watch-import-and-redirect-email"></a>注目 : 電子メールをインポートして再配置しましょう。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 
-アカウントにサインアップしたMicrosoft 365、メールが古いアカウントに送信される場合があります。たとえば、Gmail または Outlook アカウントを使用して作業している場合などです。 新しいアカウントと古いアカウントの両方を引き続き使用するか、古いアカウントから新しいアカウントにデータをインポートできます。
+Microsoft 365 にサインアップした後も、依然として旧アカウントに向けてメールが送信されている可能性があります。たとえば、仕事用に Gmail または Outlook account for work を使用した場合などです。 新旧アカウント両方を引き続き使用することも、旧アカウントから新アカウントにデータをインポートすることもできます。
 
 ## <a name="migrate-gmail-to-microsoft-365"></a>Gmail から Microsoft 365 への移行。
 
@@ -65,7 +65,7 @@ Microsoft 365 でメール、連絡先、予定表を Gmail から Outlook に�
     
 - [Google カレンダーをインポートする](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
 
-## <a name="watch-import-calendars"></a>ウォッチ: 予定表のインポート
+## <a name="watch-import-calendars"></a>ウォッチ: 予定表をインポートする
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
@@ -85,11 +85,11 @@ Microsoft 365 を使用してメール、連絡先、予定表を Outlook から
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
-![[ファイル] メニュー Outlook 2016。](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Outlook 2016 の [開く、&amp;エクスポート] コマンド](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 の [インポート/エクスポート] ボタン](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
+![Outlook 2016 の [ファイル] メニュー。](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Outlook 2016 の [開く、&amp;エクスポート] コマンド](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 の [インポート/エクスポート] ボタン](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>Outlook で他のメール アカウントを表示する
 
-Outlook で他のプロバイダー (Gmail、Yahoo、または Live.com など) のメールを単に表示したい場合は、 インポートや移行を行う必要はありません。 Outlook または Outlook Web App を設定して、Microsoft 365 メールボックスと同じ場所から他のアカウントにアクセスし、それらのアカウントに送信されたメールを送受信および閲覧することができます。
+別のプロバイダー (Gmail、Yahoo、Live.com など) からのメールを Outlook で表示しますか? インポートまたは移行する必要はありません。Outlook または Outlook Web App を設定して、Microsoft 365 メールボックスと同じ場所から他のアカウントにアクセスし、それらのアカウントで送信、受信、及び読むことができます。
   
 ### <a name="outlook-desktop"></a>Outlook (デスクトップ)
 
@@ -103,10 +103,10 @@ Outlook にアカウント (個人用 Gmail アカウントなど) を追加し�
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>メールボックスが複数の場合: 管理者は Microsoft 365 にメール、連絡先、予定表を一括インポートすることが可能です
 
-ソースのメール システムによっては、いくつかの一括移行処理方法を選択できます。 どの方法が適切かを判断するには、「[複数のメール アカウントを Microsoft 365 に移行する方法](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
+移行元のメール システムに応じて、いくつかの一括移行方法から選択できます。[複数のメール アカウントを Microsoft 365 に移行する方法](/Exchange/mailbox-migration/mailbox-migration) に関する記事を参照して、どの方法が対応可能かを判定してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ビジネス向けMicrosoft 365のセットアップを計画](plan-your-setup.md)する (記事)\
-[アプリケーションOfficeインストール](install-applications.md) (リンク ページ)\
+[Microsoft 365 for business の設定を計画する](plan-your-setup.md) (記事)\
+[Office アプリケーションをインストールする](install-applications.md) (リンク ページ)\
 [Microsoft 365 管理センターの概要](Microsoft 365 管理センターの概要](../admin-overview/admin-center-overview.md) (ビデオ)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c3b86a133b5126029378018fdac821d5423b2761
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c31a6e43e66b6e1ffeace75ac2d8419cc764174f
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321865"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499135"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>最初のインシデントのセキュリティ態勢を準備する
 
@@ -55,11 +55,11 @@ Microsoft 365 Defender のコンポーネントは、デバイス コンプラ�
 
 自動化は、ゼロトラスト環境を実装して維持する上で重要な部分であり、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数も減らします。 Microsoft 365 Defender のコンポーネントは、修復[アクション (Microsoft 365 Defender](m365d-autoir.md) ポータルのインシデントの調査と呼ばれる)、通知アクション、[ServiceNow](https://microsoft.service-now.com/sp/) などのサポート チケットの作成など、自動化できます。
 
-## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2。 組織のセキュリティ体制を決定する
+## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2. 組織のセキュリティ体制を決定する
 
 次に、組織は Microsoft [Secure Score](microsoft-secure-score.md) を使用して、Microsoft 365 Defenderのセキュリティ態勢を判断し、改善方法に関する推奨事項を検討できます。 スコアが高いほど、組織によってセキュリティに関する推奨事項と改善のアクションが多くなります。 セキュリティで保護されたスコアの推奨事項は、さまざまな製品間で取り上げ、組織がスコアを上げるのをさらに高くすることができます。 
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Microsoft セキュリティ センターの Microsoft Secure Score の例。":::
+:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Microsoft Secure Score ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/first-incident-prepare/first-incident-secure-score.png":::
  
 ## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>手順 3. 組織の脆弱性の暴露を評価する
 
@@ -67,7 +67,7 @@ Microsoft 365 Defender のコンポーネントは、デバイス コンプラ�
 
 ソフトウェアの修正プログラムの進行状況を確認するには、[](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)Defender for Endpoint の [脅威と脆弱性の管理] ページにアクセスし、Microsoft 365 Defender [その他のリソース] タブから **アクセス** できます。
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Microsoft セキュリティ センターの [脅威と脆弱性] ページの例。"::: 
+:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="ポータル ポータルの [脅威とMicrosoft 365 Defender] ページ" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png"::: 
  
 ## <a name="4-understand-emerging-threats"></a>4. 新たな脅威を理解する
 
@@ -85,7 +85,7 @@ Microsoft 365 Defender のコンポーネントは、デバイス コンプラ�
 
 スケジュール内で、ポータルの [[脅威](threat-analytics.md)分析] セクションを定期的に確認Microsoft 365 Defenderします。 詳細については[、セキュリティ操作の例Microsoft 365 Defender](incidents-overview.md#example-security-operations-for-microsoft-365-defender)を参照してください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [![手順 1: インシデントをトリアージして分析する方法について学習します。](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
 

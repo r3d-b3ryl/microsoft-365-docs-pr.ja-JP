@@ -1,7 +1,7 @@
 ---
-title: デバイスの Microsoft セキュア スコア
+title: デバイス向けの Microsoft セキュア スコア
 description: デバイスのスコアは、アプリケーション、オペレーティング システム、ネットワーク、アカウント、およびセキュリティ制御全体にわたるデバイスの一括セキュリティ構成状態を示します。
-keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, 脅威と脆弱性の管理, security controls, improvement opportunitis, security configuration score over time, security posture, baseline
+keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, 脅威と脆弱性の管理, security controls, improvement opportunitis, security configuration score over time, security configuration score, baseline
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +16,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccd5164839244250c5e2d908f41c35a706e0f49d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 97ce614a77b85ae6e22e771a413ae5bce51abce7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165560"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465797"
 ---
-# <a name="microsoft-secure-score-for-devices"></a>デバイスの Microsoft セキュア スコア
+# <a name="microsoft-secure-score-for-devices"></a>デバイス向けの Microsoft セキュア スコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "61165560"
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 > [!NOTE]
-> 構成スコアは、Microsoft Secure Score 脅威と脆弱性の管理デバイスの一部です。
+> 構成スコアは、Microsoft Secure Score 脅威と脆弱性の管理デバイスの一部になります。
 
 デバイスのスコアは、ポータルの脅威と脆弱性の管理[ダッシュボード](tvm-dashboard-insights.md)にMicrosoft 365 Defenderされます。 デバイスの Microsoft セキュア スコアが高いということは、エンドポイントがサイバー セキュリティの脅威攻撃に対してより回復力があることを意味します。 これは、次のカテゴリにわたるデバイスの一括セキュリティ構成状態を反映します。
 
@@ -54,9 +54,9 @@ Microsoft Defender for Endpoint シグナルを転送し、Microsoft Secure Scor
 
 変更は、ダッシュボードに反映するために数時間かかる場合があります。
 
-1. ナビゲーション ウィンドウで、[**エンドポイントの全般** 設定 \> **機能]** \>  \> **に移動します。**
+1. ナビゲーション ウィンドウで、[**エンドポイントの**\>全般設定 **機能]** \> **に** \> **移動します。**
 
-2. 下にスクロールして **Microsoft Secure Score に移動** し、設定を [オン] に **切り替える**。
+2. 下にスクロールして **Microsoft Secure Score に移動** し、設定を [オン] に切り **替える**。
 
 3. **[環境設定の保存]** を選択します。
 
@@ -78,23 +78,23 @@ Microsoft Secure Score for Devices カードのデータは、細心の注意を
 
 1. ダッシュボードの Microsoft Secure Score for Devices カード脅威と脆弱性の管理、カテゴリの 1 つを選択します。 そのカテゴリに関連する推奨事項の一覧が表示されます。 [セキュリティの推奨事項] [**ページに移動**](tvm-security-recommendation.md) します。 すべてのセキュリティ推奨事項を表示する場合は、[セキュリティの推奨事項] ページに移動したら、検索フィールドをクリアします。
 
-2. リストでアイテムを選択します。 フライアウト パネルが開き、推奨事項に関連する詳細が表示されます。 [修復 **オプション] を選択します**。
+2. リストでアイテムを選択します。 フライアウト パネルが開き、推奨事項に関連する詳細が表示されます。 [ **修復オプション] を選択します**。
 
-   :::image type="content" alt-text="セキュリティ制御関連のセキュリティ推奨事項。" source="images/security-controls.png":::
+   :::image type="content" source="images/security-controls.png" alt-text="セキュリティコントロールに関連するセキュリティの推奨事項" lightbox="images/security-controls.png":::
 
 3. 説明を読んで、問題のコンテキストと次に何を行うのかを理解します。 期日を選択し、メモを追加し、[すべての修復アクティビティ データを **CSV** にエクスポートする] を選択して、フォローアップのためにメールに添付できます。
 
 4. **要求を送信します**。 修復タスクが作成されたという確認メッセージが表示されます。
 
-   :::image type="content" alt-text="修復タスクの作成確認。" source="images/remediation-task-created.png":::
+   :::image type="content" source="images/remediation-task-created.png" alt-text="修復タスクの作成確認" lightbox="images/remediation-task-created.png":::
 
 5. CSV ファイルを保存します。
 
-   :::image type="content" alt-text="csv ファイルを保存します。" source="images/tvm_save_csv_file.png":::
+   :::image type="content" source="images/tvm_save_csv_file.png" alt-text="CSV ファイルを保存するオプションを含むページ" lightbox="images/tvm_save_csv_file.png":::
 
 6. IT 管理者にフォローアップ メールを送信し、修復がシステムに伝達される時間を許可します。
 
-7. ダッシュボードで **Microsoft Secure Score for Devices** カードを再度確認します。 セキュリティ制御の推奨事項の数は減少します。 [セキュリティの **推奨事項]** ページに戻る[セキュリティ コントロール] を選択すると、アドレス指定したアイテムは表示されません。 Microsoft Secure Score for Devices は増加する必要があります。
+7. ダッシュボードで **Microsoft Secure Score for Devices** カードを再度確認します。 セキュリティ制御の推奨事項の数は減少します。 [セキュリティの **推奨事項]** ページに戻る [セキュリティ コントロール] を選択すると、アドレス指定したアイテムは表示されません。 Microsoft Secure Score for Devices は増加する必要があります。
 
 > [!IMPORTANT]
 >脆弱性評価の検出率を上げるには、次の必須のセキュリティ更新プログラムをダウンロードし、ネットワークに展開します。
@@ -106,10 +106,10 @@ Microsoft Secure Score for Devices カードのデータは、細心の注意を
 >
 > セキュリティ更新プログラムをダウンロードするには、次の方法を実行します。
 >
-> 1. [Microsoft Update [Catalog] に移動します](https://www.catalog.update.microsoft.com/home.aspx)。
-> 2. ダウンロードする必要があるセキュリティ更新プログラムの KB 番号をキーインし、[検索] を **クリックします**。
+> 1. [Microsoft [Update Catalog] に移動します](https://www.catalog.update.microsoft.com/home.aspx)。
+> 2. ダウンロードする必要があるセキュリティ更新プログラムの KB 番号をキーインし、[検索] をクリック **します**。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

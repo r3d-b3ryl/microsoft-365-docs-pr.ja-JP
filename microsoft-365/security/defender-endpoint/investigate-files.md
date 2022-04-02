@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 6f93a5ec90404ca28fd47d4115a8ebf8d488216e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0cb7523036d6660d4b5556fdfd07e443a359b208
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322045"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466237"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpoint アラートに関連付けられたファイルを調査する
 
@@ -74,13 +74,13 @@ ms.locfileid: "63322045"
 > [!NOTE]
 > 異なるユーザーは、ファイル普及カードの組織セクションのデバイスに異なる値を表示する場合があります。 これは、ユーザーが持つ RBAC スコープに基づいて情報がカードに表示されるためです。 つまり、ユーザーが特定のデバイス セットで表示を許可されている場合、それらのデバイスに対するファイル組織の普及率だけが表示されます。
 
-![ファイル情報のイメージ。](images/atp-file-information.png)
+:::image type="content" source="images/atp-file-information.png" alt-text="ファイル情報" lightbox="images/atp-file-information.png":::
 
 ## <a name="alerts"></a>アラート
 
 [ **アラート]** タブには、ファイルに関連付けられているアラートの一覧が表示されます。 このリストには、影響を受けるデバイスが属するデバイス グループがある場合を除き、アラート キューと同じ情報の多くが含まれる。 列ヘッダーの上にあるツールバーから [列のカスタマイズ]  を選択すると、表示される情報の種類を選択できます。
 
-![ファイル セクションに関連するアラートのイメージ。](images/atp-alerts-related-to-file.png)
+:::image type="content" source="images/atp-alerts-related-to-file.png" alt-text="[ファイル] セクションに関連するアラート" lightbox="images/atp-alerts-related-to-file.png":::
 
 ## <a name="observed-in-organization"></a>組織内で観察される
 
@@ -89,7 +89,7 @@ ms.locfileid: "63322045"
 > [!NOTE]
 > このタブには、最大 100 台のデバイスが表示されます。 ファイルを _含む_ すべてのデバイスを表示するには、タブの列ヘッダーの上にあるアクション メニューから [エクスポート] を選択して、タブを CSV ファイルにエクスポートします。
 
-![ファイルを含む最新の観測デバイスのイメージ。](images/atp-observed-machines.png)
+:::image type="content" source="images/atp-observed-machines.png" alt-text="ファイルを含む最新の観測デバイス" lightbox="images/atp-observed-machines.png":::
 
 スライダーまたは範囲セレクターを使用して、ファイルに関連するイベントを確認する期間をすばやく指定します。 タイム ウィンドウは、1 日に限り小さく指定できます。 これにより、その時点でその IP アドレスと通信したファイルだけが表示され、不要なスクロールと検索が大幅に削減されます。
 
@@ -97,13 +97,13 @@ ms.locfileid: "63322045"
 
 [**深い分析**] タブを [](respond-file-alerts.md#deep-analysis)使用すると、ファイルを詳細に分析するためにファイルを提出し、ファイルの動作の詳細と、ファイルが組織に与える影響を明らかにできます。 ファイルを送信すると、結果が得られたら、このタブに詳細分析レポートが表示されます。 深い分析で何も見つからなかった場合、レポートは空で、結果領域は空白のままです。
 
-![[詳細な分析] タブのイメージ。](images/submit-file.png)
+:::image type="content" source="images/submit-file.png" alt-text="[深い分析] タブ" lightbox="images/submit-file.png":::
 
 ## <a name="file-names"></a>ファイル名
 
 [ **ファイル名] タブ** には、組織でファイルが使用されているすべての名前が一覧表示されます。
 
-![[ファイル名] タブのイメージ。](images/atp-file-names.png)
+:::image type="content" source="images/atp-file-names.png" alt-text="[ファイル名] タブ" lightbox="images/atp-file-names.png":::
 
 ## <a name="related-topics"></a>関連項目
 

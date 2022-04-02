@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d9f1b4619670c1998dbac584bf7ef4e1d1f940b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314221"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498643"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Secure Score を使用してセキュリティの態勢を評価する
 
@@ -46,7 +46,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 Microsoft Secure Score の概要ページで、これらのグループ間でのポイントの分割方法と使用可能なポイントを確認します。 また、合計スコアの全体表示、ベンチマーク比較によるセキュリティで保護されたスコアの履歴傾向、スコアを向上させるために実行できる優先順位付けされた改善アクションを取得できます。
 
-![Secure Score のホームページ。](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="セキュリティで保護されたスコアのホームページ (Microsoft 365 Defender ポータル)" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="check-your-current-score"></a>現在のスコアを確認する
 
@@ -62,7 +62,7 @@ Microsoft Secure Score の概要ページで、これらのグループ間での
 
 このビューは、すべての可能なスコア ビューを含めた場合の外観です。
 
-![計画スコア、現在のライセンス スコア、達成可能なスコアを含む、セキュリティで保護されたスコア。](../../media/secure-score/secure-score-achievable.png)
+:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="計画スコア、現在のライセンス スコア、および達成可能なスコアを含む、セキュリティで保護されたスコアがMicrosoft 365 Defenderポータル" lightbox="../../media/secure-score/secure-score-achievable.png":::
 
 ## <a name="take-action-to-improve-your-score"></a>スコアを上げるための対策
 
@@ -76,7 +76,7 @@ Microsoft Secure Score の概要ページで、これらのグループ間での
 
 特定の改善アクションを選択すると、ページ全体の飛び出しが表示されます。  
 
-![改善アクションのフライアウトの例。](../../media/secure-score/secure-score-improvement-action-details.png)
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="ポータルでの改善アクションのMicrosoft 365 Defender表示" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
 この操作を完了するには、いくつかの選択肢があります。
 

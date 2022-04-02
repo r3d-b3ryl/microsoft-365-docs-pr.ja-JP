@@ -22,12 +22,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: b64cbc55a975ee02bd1bd5d41d30330e8729d4be
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0bd86f7ba05ce04743f547292105875f3b8234b1
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329573"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499069"
 ---
 # <a name="the-action-center"></a>アクション センター
 
@@ -51,7 +51,7 @@ ms.locfileid: "63329573"
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="ポータルの統合アクション センター Microsoft 365 Defenderします。" lightbox="../../media/m3d-action-center-unified.png":::
 
-例: 
+次に例を示します。 
 
 - コンプライアンス センター ([https://protection.office.com](https://protection.office.com)) で Office 365 セキュリティ &使用していた場合は、Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータルで統合アクション センターをMicrosoft 365 Defenderしてください</a>。
 - () のアクション センターを使用している場合は、[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)Microsoft Defender セキュリティ センターポータルで統合アクション センター<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">をMicrosoft 365 Defenderしてください</a>。
@@ -134,6 +134,6 @@ ms.locfileid: "63329573"
 > [!TIP]
 > グローバル管理者 **の役割が** 割り当てられているユーザー Azure ADアクション センターで保留中のアクションを承認または拒否できます。 ただし、ベスト プラクティスとして、組織はグローバル管理者の役割が割り当てられているユーザー **の数を制限する必要** があります。 アクション センターのアクセス許可 **については、** 前の表に記載されているセキュリティ管理者、アクティブな修復アクション、および検索と削除の役割を使用することをお勧めします。 
 
-## <a name="next-step"></a>次の手順 
+## <a name="next-step"></a>次のステップ 
 
 - [修復アクションを表示および管理する](m365d-autoir-actions.md)

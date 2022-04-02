@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) 統合ラベル付けクライアントを使用するとき、AIP アドインではなく Office アプリの組み込みラベル付けを使用する利点を理解してください。
-ms.openlocfilehash: 88849422d295cc7caf2eb39837f7f1bb82b7a378
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 38aee57720f38793f4f61cc871a9bee556e28690
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319299"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498607"
 ---
 # <a name="why-choose-mip-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office アプリの AIP アドインに対して MIP 組み込みラベル付けを選択する理由
 
@@ -58,7 +58,7 @@ AIP クライアントが[メンテナンス モード](https://techcommunity.mi
 - アドインが他のアドインと競合する可能性があるため、安定性が低く、Office アプリがハングまたはクラッシュしたり、アドインを自動的に無効にしたりする可能性があります。
 - アドインの実行速度が低下し、ユーザーがラベル付け要件を回避するために無効にする可能性があります。
 - バグ修正の度に Azure Information Protection クライアントを再インストールする必要があります。
-- ユーザーのラベル付けエクスペリエンスは、ユーザーが他のデバイス (macOS、iOS、Android) で使用している組み込みラベルと、Office for the web を使用する場合とは少し異なります。 この違いにより、トレーニングとサポートのコストが増加する可能性があります。
+- ユーザーのラベル付けエクスペリエンスは、ユーザーが他のデバイス (macOS、iOS、Android) で使用している組み込みラベル、および Office for the web を使用する場合とは少し異なります。この違いによって、トレーニングとサポートのコストが増加する場合があります。
 - [組み込みラベル付けでのみサポートされる](#features-supported-only-by-built-in-labeling-for-office-apps) Office ラベル付け機能が既に新しくリリースされており、これらの機能は増え続けています。
 
 Windows Office アプリの AIP アドインは、既にユーザーに展開済みで、組み込みラベル付けに移行する時間が必要な場合にのみ使用します。 または、組み込みラベル付けでサポートされていない機能がユーザーに必要な場合に使用します。 これらの機能を特定するには、このページの「[同等の機能の情報](#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps)」を使用します。
@@ -68,7 +68,7 @@ Windows Office アプリの AIP アドインは、既にユーザーに展開済
 > [!NOTE]
 > 多くの新しいラベル付け機能が計画または開発中であるため、このセクションのリストは時間の経過と共に拡大する予定です。
 
-一部の機能は、Office アプリの組み込みラベル付けでのみサポートされ、AIP アドインではサポートされません。 これには、次のものが含まれます。
+一部の機能は、Office アプリの組み込みラベル付けでのみサポートされており、AIP アドインではサポートされません。これらには以下が含まれます。
 
 - 自動ラベル付けと推奨ラベル付けの場合:
     - [トレーニング可能な分類子](classifier-learn-about.md)、[完全データ一致 (EDM)](sit-learn-about-exact-data-match-based-sits.md)、[名前付きエンティティ](named-entities-learn.md)を含むインテリジェント分類サービスへのアクセス
@@ -88,7 +88,7 @@ Windows Office アプリの AIP アドインは、既にユーザーに展開済
 
 ## <a name="how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps"></a>AIP アドインを無効にして、Office アプリに組み込みラベル付けを使用する方法
 
-Office アプリ以外のラベル付けを拡張するために AIP クライアントをインストールした状態で、クライアントのアドインが Office アプリに読み込まれることを防ぐ場合は、「**Office 2013 および Office 2016 プログラムのグループ ポリシー設定が原因でアドインが読み込まれない**」に記載されているように、グループ ポリシー設定の[管理対象アドインの一覧](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)を使用します。
+Office アプリ以外のラベル付けを拡張するために AIP クライアントをインストールした状態で、クライアントのアドインが Office アプリに読み込まれることを防ぐ場合は、「**Office 2013 および Office 2016 プログラムのグループ ポリシー設定が原因でアドインが読み込まれない**」に記載されているように、グループ ポリシー設定の [管理対象アドインの一覧](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)を使用します。
 
 組み込みのラベル付けをサポートする Office アプリの場合、Microsoft Word 2016、Excel 2016、PowerPoint 2016、Outlook 2016 の構成を使用し、AIP クライアントに次のプログラム識別子 (ProgID) を指定し、オプションを **[0: アドインは常に無効 (ブロックされます)]** に設定します
 
@@ -110,7 +110,7 @@ Office アプリ以外のラベル付けを拡張するために AIP クライ�
 どちらの方法を選択した場合でも、変更は Office アプリの再起動時に有効になります。
 
 > [!NOTE]
-> 組み込みラベルには、Office アプリのサブスクリプション エディションが必要です。 Office のスタンドアロン エディション ("Office パーペチュアル" とも呼ばれる) がある場合は、Microsoft 365 Apps for Enterprise にアップグレードして、[最新のラベル付け機能](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)を利用することをお勧めします。
+> 組み込みラベルには、Office アプリのサブスクリプション エディションが必要です。Office のスタンドアロン エディション ("Office パーペチュアル" とも呼ばれる) がある場合は、Microsoft 365 Apps for Enterprise にアップグレードして、[最新のラベル付け機能](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)を利用することをお勧めします。
 
 このメソッドを使用して AIP アドインを無効にした場合でも、AIP クライアントを使用して、Office アプリ以外のラベル付けを行うこともできます。
 
@@ -118,7 +118,7 @@ Office アプリ以外のラベル付けを拡張するために AIP クライ�
 
 AIP アドインでサポートされているラベル付け機能の多くは、組み込みラベル付けでサポートされるようになりました。 機能のより詳細な一覧、必要な最小バージョン、構成情報については、「[Office アプリで秘密度ラベルを管理する](sensitivity-labels-office-apps.md)」を参照してください。
 
-さらに多くの機能が計画および開発中です。 特定の機能に興味をお持ちの場合は、[Microsoft 365 ロードマップ](https://aka.ms/MIPC/Roadmap)を確認し、[Office プライベート プレビューに Microsoft Information Protection](https://aka.ms/MIP/PreviewRing) を統合することを検討してください。
+さらに多くの機能が計画中および開発中です。特定の機能に興味をお持ちの場合は、[Microsoft 365 ロードマップ](https://aka.ms/MIPC/Roadmap)を確認し、[Office プライベート プレビューの Microsoft の情報保護](https://aka.ms/MIP/PreviewRing)に参加することをご検討ください。
 
 組み込みラベル付けでまだサポートされていない AIP アドインの機能を使用しているかどうかを判断するには、次の情報を使用してください。
 

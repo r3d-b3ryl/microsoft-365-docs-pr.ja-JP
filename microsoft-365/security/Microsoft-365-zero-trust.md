@@ -7,7 +7,7 @@ ms.author: bcarter
 author: brendacarter
 manager: dansimp
 audience: Admin
-description: 脅威から防御し、機密Microsoft 365保護するために、ゼロトラストセキュリティを環境に展開する方法について学習します。
+description: ゼロトラスト セキュリティを環境Microsoft 365して脅威から防御し、機密データを保護する方法について学習します。
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
@@ -18,16 +18,16 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 9b37e353af74b7a01c0647f99b149f5fac0ae8a3
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 59ebfb9ffb925cc5937802a31902e7c2342fc740
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524179"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755656"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 ゼロ トラスト展開プラン
 
-この記事では、ゼロトラスト セキュリティを構築する展開計画について説明します。Microsoft 365。 ゼロ信頼は、侵害を前提とする新しいセキュリティ モデルであり、制御されていないネットワークから発生した場合と同様に各要求を検証します。 要求の発信元やアクセスするリソースに関係なく、ゼロ信頼モデルは「信頼しない、常に確認する」ことを教えています。
+この記事では、ゼロ トラスト セキュリティを構築する展開計画について説明します。Microsoft 365。 ゼロ信頼は、侵害を前提とする新しいセキュリティ モデルであり、制御されていないネットワークから発生した場合と同様に各要求を検証します。 要求の発信元やアクセスするリソースに関係なく、ゼロ信頼モデルは「信頼しない、常に確認する」ことを教えています。
 
 
 ## <a name="zero-trust-security-architecture"></a>ゼロトラストセキュリティアーキテクチャ
@@ -36,13 +36,7 @@ ms.locfileid: "62524179"
 
 次の図は、ゼロ信頼に貢献する主な要素を示しています。
 
-<!---
-[![Zero Trust security architecture](../media/zero-trust/zero-trust-architecture.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/zero-trust/zero-trust-architecture.png)
--->
-
-:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="ゼロトラストセキュリティアーキテクチャ" lightbox="../media/zero-trust/zero-trust-architecture.png":::
-
-
+:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="ゼロトラストのセキュリティ アーキテクチャ" lightbox="../media/zero-trust/zero-trust-architecture.png":::
 
 この図について:
 - セキュリティ ポリシーの適用は、ゼロ信頼アーキテクチャの中心にあります。 これには、ユーザー アカウントのリスク、デバイスの状態、および設定したその他の条件とポリシーを考慮した条件付きアクセスによる多要素認証が含まれます。
@@ -55,9 +49,9 @@ For more information about this architecture, including deployment objectives fo
 
 ゼロトラストの詳細については、「Microsoft のゼロ トラスト [_**ガイダンス センター」を参照してください**_](/security/zero-trust)。
 
-## <a name="deploying-zero-trust-for-microsoft-365"></a>ゼロ信頼の Microsoft 365展開
+## <a name="deploying-zero-trust-for-microsoft-365"></a>ゼロトラストを展開する Microsoft 365
 
-Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多くのセキュリティおよび情報保護機能を備えて意図的に構築されています。 多くの機能を拡張して、組織が使用する他の SaaS アプリやこれらのアプリ内のデータへのアクセスを保護できます。
+Microsoft 365は、環境にゼロトラストを組み込むのに役立つ多くのセキュリティおよび情報保護機能を備えて意図的に構築されています。 多くの機能を拡張して、組織が使用する他の SaaS アプリやこれらのアプリ内のデータへのアクセスを保護できます。
 
 この図は、ゼロ信頼機能を展開する作業を表しています。 この作業は、一緒に構成できる作業単位に分割され、一番下から上に作業し、前提条件の作業が完了するようにします。
 
@@ -78,7 +72,7 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 
 
 
-これを実現 [**_するには、「ゼロトラスト ID とデバイス アクセス保護_**](office-365-security/microsoft-365-policies-configurations.md) 」を参照してください。 この一連の記事では、ID およびデバイス アクセスの前提条件構成のセットと、Azure Active Directory (Azure AD) 条件付きアクセス、Microsoft Intune、および Microsoft 365 へのアクセスをセキュリティで保護するためのその他のポリシーのセットについて説明します。 エンタープライズ クラウド アプリとサービス、その他の SaaS サービス、およびアプリケーション プロキシで公開されたオンプレミス アプリケーションAzure ADします。
+これを実現 [**_するには、「ゼロトラスト ID とデバイス アクセス保護_**](office-365-security/microsoft-365-policies-configurations.md) 」を参照してください。 この一連の記事では、ID とデバイス アクセスの前提条件の構成のセットと、Azure Active Directory (Azure AD) 条件付きアクセス、Microsoft Intune、その他のポリシーのセットについて説明します。Microsoft 365 エンタープライズ クラウド アプリとサービス、その他の SaaS サービス、およびアプリケーション プロキシで公開されたオンプレミス アプリケーションAzure ADします。
 
 
 
@@ -105,7 +99,7 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 
 |Includes  |前提条件  |含めない  |
 |---------|---------|---------|
-|Intune でデバイスを登録する<br>- 企業所有のデバイス<br>- Autopilot/automated<br>- 登録<br><br>ポリシーの構成<br>- アプリ保護ポリシー<br>- コンプライアンス ポリシー<br>- デバイス プロファイル ポリシー | エンドポイントを Azure AD     | 以下を含む情報保護機能の構成<br>- 機密情報の種類<br>- ラベル<br>- DLP ポリシー<br>これらの機能については、「手順 5」を参照してください。 データの保護と管理 (この記事の後半)。       |
+|Intune でデバイスを登録する<br>- 企業所有のデバイス<br>- Autopilot/automated<br>- 登録<br><br>ポリシーの構成<br>- アプリ保護ポリシー<br>- コンプライアンス ポリシー<br>- デバイス プロファイル ポリシー | エンドポイントをネットワークに登録Azure AD     | 以下を含む情報保護機能の構成<br>- 機密情報の種類<br>- ラベル<br>- DLP ポリシー<br>これらの機能については、「手順 5」を参照してください。 データの保護と管理 (この記事の後半)。       |
 |    |         |         |
 
 ## <a name="step-3-add-zero-trust-identity-and-device-access-protection--enterprise-policies"></a>手順 3. ゼロトラスト ID とデバイス アクセス保護の追加 — Enterpriseポリシー
@@ -114,21 +108,21 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="デバイス管理を使用したゼロ信頼 ID とアクセス ポリシー" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
-共通 ID [**_ポリシーとデバイス アクセス ポリシーに戻り_**](office-365-security/identity-access-policies.md)、ポリシーを Enterpriseします。  
+共通 ID [**_とデバイス アクセス ポリシーに戻り_**](office-365-security/identity-access-policies.md)、ポリシーを Enterpriseします。  
 
 :::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="ゼロ信頼 ID とアクセス ポリシー - Enterprise (推奨) 層" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
 ## <a name="step-4-evaluate-pilot-and-deploy-microsoft-365-defender"></a>手順 4. 評価、パイロット、および展開Microsoft 365 Defender
 
-Microsoft 365 Defender は、エンドポイント、電子メール、アプリケーション、ID など、Microsoft 365 環境全体から信号、脅威、およびアラート データを自動的に収集、関連付け、分析する拡張検出および応答 (XDR) ソリューションです。
+Microsoft 365 Defenderは、エンドポイント、電子メール、アプリケーション、ID など、Microsoft 365 環境全体から信号、脅威、およびアラート データを自動的に収集、関連付け、分析する拡張検出および応答 (XDR) ソリューションです。
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="ゼロMicrosoft 365 Defenderアーキテクチャへの追加" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
-[評価と [**_パイロット] にMicrosoft 365 Defender_**](defender/eval-overview.md)コンポーネントのパイロットと展開に関する方法Microsoft 365 Defenderします。 
+[評価と [**_パイロット] にMicrosoft 365 Defender_**](defender/eval-overview.md)コンポーネントのパイロットと展開に関するMicrosoft 365 Defenderします。 
 
 |Includes  |前提条件  |含めない  |
 |---------|---------|---------|
-| すべてのコンポーネントの評価環境とパイロット環境を設定します。<br>- Id の Defender<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Defender for Cloud Apps<br><br>脅威から保護する<br><br> 脅威の調査と対応   | 各コンポーネントのアーキテクチャ要件については、ガイドを参照Microsoft 365 Defender。        | Azure AD Id Protection は、このソリューション ガイドには含まれていません。 これは、「手順 1: ゼロトラスト ID とデバイス アクセス保護を構成する」に含まれています。        |
+| すべてのコンポーネントの評価環境とパイロット環境を設定します。<br>- Id の Defender<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Defender for Cloud Apps<br><br>脅威から保護する<br><br> 脅威の調査と対応   | 各コンポーネントのアーキテクチャ要件について説明するガイダンスを参照Microsoft 365 Defender。        | Azure AD Id Protection は、このソリューション ガイドには含まれていません。 これは、「手順 1: ゼロトラスト ID とデバイス アクセス保護を構成する」に含まれています。        |
 |    |         |         |
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>手順 5.  機密データの保護と管理
@@ -144,7 +138,8 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、デ�
 
 Microsoft Information Protection、特定のビジネス目標を達成するために使用できるフレームワーク、プロセス、および機能を提供します。
 
-![Microsoft Information Protection (MIP) フレームワーク](../media/zero-trust/mip-solution-overview.png)
+:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="Microsoft Information Protection フレームワーク" lightbox="../media/zero-trust/mip-solution-overview.png":::
+
 
 情報保護を計画および展開する方法の詳細については、「Deploy [**_a a Microsoft Information Protection参照してください_**](../compliance/information-protection-solution.md)。 
 

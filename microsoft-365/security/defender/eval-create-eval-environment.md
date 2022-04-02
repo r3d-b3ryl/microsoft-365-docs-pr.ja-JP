@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: d81d33a01802ebdf8ef0ea67a9ee74fc69b79384
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: 98d2ee2394e4384fbf8d7b2b3832d11a847b8521
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504736"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755159"
 ---
 # <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>手順 1. サイバーセキュリティを強化Microsoft 365 Defender評価環境を作成する
 
@@ -54,15 +54,15 @@ LYou は、このシリーズの残りの部分で配布Microsoft Defender XDR�
 2. ナビゲーション **メニューから [サービス** の購入] を選択します。
 3. [ライセンス] セクションまで下Office 365し、[**ライセンス] の** 下の [詳細] Office 365 E5します。
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="[Office 365] セクションには、クリックする [詳細] ボタンがあります。":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="ポータルの [詳細] Microsoft 365 Defender" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png":::
 
 4. [無料 **試用版の開始] リンクを** 選択します。
 
-   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="[無料試用版の開始] をクリックします (料金は 35$ です)。":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="[無料試用版の開始] ボタン (Microsoft 365 Defender ポータル)" lightbox="../../media/mdo-eval/3-m365-purchase-button.png":::
 
 5. 要求を確認し、[今すぐ試 **す] ボタンを** クリックします。
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="[チェックアウトして、注文を確認する] パネルに [今すぐ試す] ボタンがあります (25 人のユーザーに対して 1 か月Office 365 E5試用の場合)。":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="[今すぐ試す] ボタン (Microsoft 365 Defender ポータル)" lightbox="../../media/mdo-eval/4_mdo-trial-order.png":::
 
 ## <a name="go-to-the-next-step"></a>次の手順に進む
 

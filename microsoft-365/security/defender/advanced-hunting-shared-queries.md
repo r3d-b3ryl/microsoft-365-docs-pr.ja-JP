@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 06952be112f4eb28867a4a0cd4bffbee0c664b5c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 96db917808094487039a13740cba80ad751f062f
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935611"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755518"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>高度な捜索で共有クエリを使用する
 
@@ -38,7 +38,7 @@ ms.locfileid: "61935611"
 
 [高度な捜索](advanced-hunting-overview.md)クエリは、同じ組織内のユーザー間で共有できます。 また、GitHub で公開されているクエリも検索できます。 これらのクエリを使用すると、クエリを最初から作成することなく、特定の脅威の捜索シナリオを迅速に実行できます。
 
-![共有クエリのイメージ。](../../media/shared-query-1.png)
+:::image type="content" source="../../media/shared-query-1.png" alt-text="共有クエリの情報は、Microsoft 365 Defenderポータル" lightbox="../../media/shared-query-1.png":::
 
 ## <a name="save-modify-and-share-a-query"></a>クエリを保存、変更、共有する
 新規または既存のクエリを保存して、自分のみアクセスできるようにしたり、組織内の他のユーザーと共有したりできます。 
@@ -49,7 +49,7 @@ ms.locfileid: "61935611"
     
 3. クエリの名前を入力します。 
 
-   ![クエリを保存するイメージ。](../../media/shared-query-2.png)
+   :::image type="content" source="../../media/shared-query-2.png" alt-text="ポータルに保存される新しいクエリMicrosoft 365 Defenderします。" lightbox="../../media/shared-query-2.png":::
 
 4. クエリを保存するフォルダーを選択します。
     - [**共有クエリ**] — 組織のすべてのユーザーに共有する
@@ -60,12 +60,12 @@ ms.locfileid: "61935611"
 ## <a name="delete-or-rename-a-query"></a>クエリを削除または名前を変更する
 1. 名前を変更または削除するクエリの右側にある 3 つのドットを選択します。
 
-    ![削除クエリのイメージ。](../../media/shared-query-3.png)
+    :::image type="content" source="../../media/shared-query-3.png" alt-text="ポータルの [高度な検索] ページの共有クエリMicrosoft 365 Defenderオプション" lightbox="../../media/shared-query-3.png":::
 
 2. [**削除**] を選択して、削除を確認します。 または、[**名前の変更**] を選択して、クエリに新しい名前を入力ます。
 
 ## <a name="create-a-direct-link-to-a-query"></a>クエリへの直接リンクを作成する
-高度な検索クエリ エディターでクエリを直接開くリンクを生成するには、クエリを最終処理し、[リンクの共有] **を選択します**。
+高度な検索クエリ エディターでクエリを直接開くリンクを生成するには、クエリを最終処理し、[共有] リンク **を選択します**。
 
 ## <a name="access-queries-in-the-github-repository"></a>GitHub リポジトリ内のクエリにアクセスする  
 Microsoft のセキュリティ調査員は、[GitHub の指定された公開リポジトリ](https://aka.ms/hunting-queries)で高度な捜索クエリを定期的に共有しています。 このリポジトリは投稿できます。 投稿するには、[GitHub に無料で参加](https://github.com/)してください。

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 16654281adf5ca6f31ea2d29aab3387d39424cb1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3034c6020c3d7d04164e37beb1c1186e9aa30958
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325937"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499113"
 ---
 # <a name="responding-to-your-first-incident"></a>最初のインシデントへの対応
 
@@ -50,9 +50,9 @@ ms.locfileid: "63325937"
 
 分析およびインシデントMicrosoft 365 Defenderの論理的な開始点は、インシデントのインシデントです。 インシデントの分析と修復は、通常、(SecOps) チームのタスクと時間のほとんどを構成します。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-[![組織とテナントをMicrosoft 365します。](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="[最初のインシデントに対応する] ページの [修復] オプション" lightbox="../../media/first-incident-overview/first-incident-path.png":::
 
 組織と組織のテナントMicrosoft 365インシデント[処理の準備ができているか確認します](first-incident-prepare.md)。
 
@@ -64,7 +64,7 @@ ms.locfileid: "63325937"
 - [インシデントの調査](investigate-incidents.md)
 - [インシデントの管理](manage-incidents.md)
 
-最初のインシデント対応のその他の例:
+最初のインシデント応答のその他の例:
 
 - [フィッシング詐欺メール](first-incident-path-phishing.md)
 - [IDENTITY-base 攻撃](first-incident-path-identity.md)

@@ -14,8 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
+ms.openlocfilehash: 3878b2c7d73d528b765eb061484490e43fffb9f8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466171"
 ---
-
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -40,6 +45,7 @@ ms.technology: mde
 - アクション センター
 
 [![応答アクションのイメージ。](images/response-actions.png)](images/response-actions.png#lightbox)
+
 
  デバイス ページは、次のビューから検索できます。
 
@@ -92,11 +98,11 @@ ms.technology: mde
 
 1. デバイス **ページの [** 応答アクション] セクションから [アクション センター] を選択します。
 
-    ![アクション センター ボタンのイメージ。](images/action-center-package-collection.png)
+   :::image type="content" source="images/action-center-package-collection.png" alt-text="[アクション センター] オプション" lightbox="images/action-center-package-collection.png":::
 
 2. アクション センターのフライアウトで、[ **パッケージ コレクション** パッケージを選択して zip ファイルをダウンロードできます。
 
-    ![[パッケージのダウンロード] ボタンのイメージ。](images/collect-package.png)
+   :::image type="content" source="images/collect-package.png" alt-text="パッケージのダウンロード オプション" lightbox="images/collect-package.png":::
 
 パッケージには、次のフォルダーが含まれています。
 
@@ -108,17 +114,17 @@ ms.technology: mde
 |---|---|
 |自動実行|デバイス上での攻撃者の永続性を識別するために、既知の自動開始エントリ ポイント (ASEP) のレジストリの内容を表す一連のファイルが格納されています。 <p> <div class="alert"><b>注:</b> レジストリ キーが見つからない場合、ファイルには次のメッセージが含まれます。"ERROR: システムは、指定されたレジストリ キーまたは値を見つかりませんでした。<div>|
 |インストールされているプログラム|この.CSVファイルには、デバイスに現在インストールされているプログラムを特定するのに役立つインストール済みプログラムの一覧が含まれている。 詳細については、「Win32_Product [」を参照してください](https://go.microsoft.com/fwlink/?linkid=841509)。|
-|ネットワーク接続|このフォルダーには、疑わしい URL への接続、攻撃者のコマンドと制御 (C&C) インフラストラクチャ、任意の横方向の移動、またはリモート接続への接続を識別するのに役立つ接続情報に関連する一連のデータ ポイントが格納されています。 <ul><li>ActiveNetConnections.txt: プロトコル統計と現在の TCP/IP ネットワーク接続を表示します。 プロセスによって行われた疑わしい接続を探す機能を提供します。</li><li>Arp.txt: すべてのインターフェイスの現在のアドレス解決プロトコル (ARP) キャッシュ テーブルを表示します。 ARP キャッシュでは、ネットワーク上の他のホストが、内部攻撃の実行に使用された可能性があるネットワーク上の侵害または疑わしいシステムを明らかにできます。</il><li>DnsCache.txt: ローカル Hosts ファイルから事前に読み込まれるエントリと、コンピューターによって解決された名前クエリの最近取得したリソース レコードの両方を含む、DNS クライアント リゾルバー キャッシュの内容を表示します。 これは、疑わしい接続を識別するのに役立ちます。</li><li>IpConfig.txt: すべてのアダプターの TCP/IP 構成全体を表示します。 アダプターは、インストールされているネットワーク アダプターなどの物理インターフェイス、またはダイヤルアップ接続などの論理インターフェイスを表します。</li><li>FirewallExecutionLog.txt pfirewall.log</li></ul><p><div class="alert"><b>注:</b> pfirewall.log ファイルは %windir%\system32\logfiles\firewall\pfirewall.log に存在する必要があります。そのため、調査パッケージに含まれます。 ファイアウォール ログ ファイルの作成の詳細については、「Advanced Security Log を使用してファイアウォール[Windows Defender構成する」を参照してください。](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
+|ネットワーク接続|このフォルダーには、疑わしい URL への接続、攻撃者のコマンドと制御 (C&C) インフラストラクチャ、任意の横方向の移動、またはリモート接続への接続を識別するのに役立つ接続情報に関連する一連のデータ ポイントが格納されています。 <ul><li>ActiveNetConnections.txt: プロトコル統計と現在の TCP/IP ネットワーク接続を表示します。 プロセスによって行われた疑わしい接続を探す機能を提供します。</li><li>Arp.txt: すべてのインターフェイスの現在のアドレス解決プロトコル (ARP) キャッシュ テーブルを表示します。 ARP キャッシュでは、ネットワーク上の他のホストが、内部攻撃の実行に使用された可能性があるネットワーク上の侵害または疑わしいシステムを明らかにできます。</il><li>DnsCache.txt: ローカル ホスト ファイルから事前に読み込まれるエントリと、コンピューターによって解決された名前クエリの最近取得したリソース レコードの両方を含む、DNS クライアント リゾルバー キャッシュの内容を表示します。 これは、疑わしい接続を識別するのに役立ちます。</li><li>IpConfig.txt: すべてのアダプターの TCP/IP 構成全体を表示します。 アダプターは、インストールされているネットワーク アダプターなどの物理インターフェイス、またはダイヤルアップ接続などの論理インターフェイスを表します。</li><li>FirewallExecutionLog.txt pfirewall.log</li></ul><p><div class="alert"><b>注:</b> pfirewall.log ファイルは %windir%\system32\logfiles\firewall\pfirewall.log に存在する必要があります。そのため、調査パッケージに含まれます。 ファイアウォール ログ ファイルの作成の詳細については、「Advanced Security Log を使用してファイアウォール[Windows Defender構成する」を参照してください。](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
 |プリフェッチ ファイル|Windowsプリフェッチ ファイルは、アプリケーションの起動プロセスを高速化するように設計されています。 システムで最近使用されたファイルを追跡し、削除された可能性があるがプリフェッチ ファイルの一覧に残っている可能性があるアプリケーションのトレースを検索するために使用できます。 <ul><li>Prefetch フォルダー: からプリフェッチ ファイルのコピーが含まれる `%SystemRoot%\Prefetch`。 注: プリフェッチ ファイルを表示するには、プリフェッチ ファイル ビューアーをダウンロードしてください。</li><li>PrefetchFilesList.txt: プリフェッチ フォルダーにコピーエラーが発生した場合に追跡するために使用できる、コピーされたファイルの一覧が含まれる。</li></ul>|
 |プロセス|実行中のプロセス.CSVファイルを含み、デバイスで実行中の現在のプロセスを識別する機能を提供します。 これは、疑わしいプロセスとその状態を識別する場合に役立ちます。|
-|スケジュールされたタスク|スケジュールされたタスク.CSVファイルが含まれています。これは、選択したデバイスで自動的に実行されるルーチンを識別して、自動的に実行するために設定された疑わしいコードを検索するために使用できます。|
+|スケジュールされたタスク|スケジュールされた.CSVファイルが含まれています。これは、選択したデバイスで自動的に実行されるルーチンを識別して、自動的に実行するために設定された疑わしいコードを検索するために使用できます。|
 |セキュリティ イベント ログ|ログインまたはログアウトアクティビティのレコード、またはシステムの監査ポリシーで指定された他のセキュリティ関連イベントを含むセキュリティ イベント ログが含まれます。 <p><div class="alert"><b>注:</b> イベント ビューアーを使用してイベント ログ ファイルを開きます。</div>|
 |サービス|サービスとその状態.CSV一覧を示すファイルを格納します。|
-|Windows メッセージ ブロック (SMB) セッション|ファイル、プリンター、シリアル ポートへの共有アクセスと、ネットワーク上のノード間のその他の通信を一覧表示します。 これは、データの外ろ過や横方向の動きを特定するのに役立ちます。 <p> SMBInboundSessions および SMBOutboundSession 用のファイルが含まれる。 <p> <div class="alert"><b>注:</b> セッション (受信または送信) がない場合は、SMB セッションが見つからないことを示すテキスト ファイルが表示されます。</div>|
+|Windows サーバー メッセージ ブロック (SMB) セッション|ファイル、プリンター、シリアル ポートへの共有アクセスと、ネットワーク上のノード間のその他の通信を一覧表示します。 これは、データの外ろ過や横方向の動きを特定するのに役立ちます。 <p> SMBInboundSessions および SMBOutboundSession 用のファイルが含まれる。 <p> <div class="alert"><b>注:</b> セッション (受信または送信) がない場合は、SMB セッションが見つからないことを示すテキスト ファイルが表示されます。</div>|
 |システム情報|OS のバージョンSystemInformation.txtネットワーク カードなどのシステム情報を一覧表示するファイルを格納します。|
 |一時ディレクトリ|システム内のすべてのユーザーの %Temp% にあるファイルを一覧表示する一連のテキスト ファイルが含まれる。 <p> これにより、攻撃者がシステムにドロップした疑わしいファイルを追跡するのに役立ちます。 <p> <div class="alert"><b>注:</b> ファイルに次のメッセージが含まれている場合は、"システムが指定したパスを見つけ"、このユーザーの一時ディレクトリが存在しないという意味であり、ユーザーがシステムにログインしなかったためである可能性があります。</div>|
 |ユーザーとグループ|グループとそのメンバーを表すファイルの一覧を提供します。|
-|WdSupportLogs|データとMpCmdRunLog.txtを提供MPSupportFiles.cab  <p> <div class="alert"><b>注:</b>このフォルダーは、2020 年 2 月Windows 10更新プログラムのロールアップ以上がインストールされているバージョン 1709 以降のバージョンでのみ作成されます。 <ul><li>Win10 1709 (RS3) ビルド 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) ビルド 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) ビルド 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) ビルド 18362.693 および 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
+|WdSupportLogs|データとMpCmdRunLog.txtを提供MPSupportFiles.cab  <p> <div class="alert"><b>注:</b>このフォルダーは、2020 年 2 月の更新プログラムのロールアップWindows 10インストールされているバージョン 1709 以降のバージョンでのみ作成されます。 <ul><li>Win10 1709 (RS3) ビルド 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) ビルド 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) ビルド 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) ビルド 18362.693 および 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|このファイルは、調査パッケージ コレクションの概要であり、データ ポイントの一覧、データの抽出に使用されるコマンド、実行状態、およびエラー コード (エラー が発生した場合) が含まれます。 このレポートを使用して、パッケージに予期されるデータが含まれるか追跡し、エラーが発生した場合を特定できます。|
 |
 
@@ -128,11 +134,11 @@ ms.technology: mde
 
 >[!IMPORTANT]
 >- このアクションは、macOS および Linux では現在サポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答を使用してデバイス [上のエンティティを調査する」を参照してください。](live-response.md)
->- Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性に[関するMicrosoft Defender ウイルス対策参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)。
+>- Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「[Microsoft Defender ウイルス対策の互換性](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)」を参照してください。
 
 [ウイルス対策スキャンの実行] を選択し、実行するスキャンの種類 (クイックまたはフル) を選択し、コメントを追加してからスキャンを確認します。
 
-![クイック スキャンまたはフル スキャンを選択してコメントを追加する通知の画像。](images/run-antivirus.png)
+:::image type="content" source="images/run-antivirus.png" alt-text="クイック スキャンまたはフル スキャンを選択してコメントを追加する通知" lightbox="images/run-antivirus.png":::
 
 アクション センターにスキャン情報が表示され、デバイスのタイムラインに新しいイベントが含まれます。スキャン アクションがデバイスに送信されたのを反映します。 Microsoft Defender AV アラートは、スキャン中に表示された検出を反映します。
 
@@ -159,16 +165,16 @@ ms.technology: mde
 
 デバイス ページで [ **アプリの実行** を制限する] を選択したら、コメントを入力し、[確認] を選択 **します**。 アクション センターにスキャン情報が表示され、デバイスのタイムラインに新しいイベントが含まれます。
 
-![アプリ制限通知の画像。](images/restrict-app-execution.png)
+:::image type="content" source="images/restrict-app-execution.png" alt-text="アプリケーション制限通知" lightbox="images/restrict-app-execution.png":::
 
 ### <a name="notification-on-device-user"></a>デバイス ユーザーの通知
 
 アプリが制限されている場合は、アプリの実行が制限されているユーザーに通知する次の通知が表示されます。
 
-![アプリの制限のイメージ。](images/atp-app-restriction.png)
+:::image type="content" source="images/atp-app-restriction.png" alt-text="アプリケーション制限メッセージ" lightbox="images/atp-app-restriction.png":::
 
 >[!NOTE]
->通知は、R2 のWindows Server 2016 Windows Server 2012できません。
+>通知は、R2 のWindows Server 2016およびWindows Server 2012できません。
 
 ## <a name="isolate-devices-from-the-network"></a>ネットワークからデバイスを分離する
 
@@ -178,7 +184,7 @@ ms.technology: mde
 >- このアクションは、macOS および Linux では現在サポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答を使用してデバイス [上のエンティティを調査する」を参照してください。](live-response.md)
 >- Windows 10、バージョン 1703、Windows 11、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2022 のデバイスで完全な分離を使用できます。
 >- 選択的な分離は、Windows 10バージョン 1709 以降、および 11 のデバイスWindowsできます。
->- デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint にスプリット トンネリング VPN を使用し、クラウド ベースMicrosoft Defender ウイルス対策トラフィックを使用することをお勧めします。
+>- デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint およびクラウド ベースの保護関連トラフィックに対してスプリット トンネリング VPN Microsoft Defender ウイルス対策使用することをお勧めします。
 
 このデバイス分離機能は、デバイスを監視し続ける Defender for Endpoint サービスへの接続を維持しながら、侵害されたデバイスをネットワークから切断します。
 
@@ -189,16 +195,16 @@ ms.technology: mde
 
 デバイス ページで [ **デバイスの分離** ] を選択したら、コメントを入力し、[確認] を選択 **します**。 アクション センターにスキャン情報が表示され、デバイスのタイムラインに新しいイベントが含まれます。
 
-![分離デバイスのイメージ。](images/isolate-device.png)
+:::image type="content" source="images/isolate-device.png" alt-text="分離されたデバイスの詳細ページ" lightbox="images/isolate-device.png":::
 
 > [!NOTE]
-> デバイスは、ネットワークから分離されている場合でも、Defender for Endpoint サービスに接続されたままです。 通信を有効にOutlookし、Skype for Businessを有効にした場合は、デバイスが分離されている間にユーザーと通信できます。
+> デバイスは、ネットワークから分離されている場合でも、Defender for Endpoint サービスに接続されたままです。 通信を有効にOutlook Skype for Business場合は、デバイスが分離されている間にユーザーと通信できます。
 
 ### <a name="notification-on-device-user"></a>デバイス ユーザーの通知
 
 デバイスが分離されている場合、次の通知が表示され、デバイスがネットワークから分離されているという通知がユーザーに通知されます。
 
-![ネットワーク接続なしのイメージ。](images/atp-notification-isolate.png)
+:::image type="content" source="images/atp-notification-isolate.png" alt-text="ネットワーク接続メッセージなし" lightbox="images/atp-notification-isolate.png":::
 
 ## <a name="consult-a-threat-expert"></a>脅威のエキスパートに相談する
 
@@ -217,7 +223,8 @@ Microsoft の脅威の専門家に相談して、潜在的に侵害されたデ�
 
 その他のすべての関連する詳細も表示されます 。たとえば、申請の日時、ユーザーの送信、アクションの成功または失敗の場合などです。
 
-![情報を含むアクション センターのイメージ。](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="情報を含むアクション センター" lightbox="images/action-center-details.png":::
+
 
 ## <a name="see-also"></a>関連項目
 

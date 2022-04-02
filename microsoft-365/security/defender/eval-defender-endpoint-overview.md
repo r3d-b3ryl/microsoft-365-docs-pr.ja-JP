@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 05dbf222762837f2916a76cc5b183a99cd981101
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325951"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755110"
 ---
 # <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>手順 4. エンドポイントの Microsoft Defender の概要を評価する
 
@@ -41,7 +41,7 @@ ms.locfileid: "63325951"
 
 次の手順を使用して、Microsoft Defender for Endpoint を有効にしてパイロットします。
 
-![Microsoft Defender for Endpoint を Defender 評価環境に追加する手順。](../../media/defender/m365-defender-endpoint-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-steps.png" alt-text="Microsoft Defender for Endpoint を Microsoft Defender 評価環境に追加する手順" lightbox="../../media/defender/m365-defender-endpoint-eval-steps.png":::
 
 
 次の表に、図の手順を示します。
@@ -50,6 +50,4 @@ ms.locfileid: "63325951"
 |---------|---------|
 | [手順 1.アーキテクチャ要件と主な概念を確認する](eval-defender-endpoint-architecture.md)    | Defender for Endpoint アーキテクチャと使用可能な機能について説明します。       |
 |[手順 2.評価環境を有効にする](eval-defender-endpoint-enable-eval.md)     |   手順に従って、評価環境をセットアップします。      |
-|[手順 3.パイロットのセットアップ ](eval-defender-endpoint-pilot.md)    |    パイロット グループを確認し、シミュレーションを実行し、主要な機能とダッシュボードに慣れ親しんでください。     |
-
-
+|[手順 3.パイロットのセットアップ ](eval-defender-endpoint-pilot.md)    |    パイロット グループを確認し、シミュレーションを実行し、主要な機能とダッシュボードに慣れ親しんでください。 |

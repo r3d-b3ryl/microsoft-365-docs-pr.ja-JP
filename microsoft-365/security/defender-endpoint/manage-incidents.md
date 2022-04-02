@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45c08c5a3c304a23b5761d96a4d9aceb1b4f1562
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a84f7ba72acb4caf3e229f0bed4d997e123cc7ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766826"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466215"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>エンドポイント インシデントの Microsoft Defender の管理
 
@@ -42,8 +42,7 @@ ms.locfileid: "62766826"
 
 インシデント キューからインシデントを選択すると、[インシデント管理] ウィンドウが表示されます。インシデントの詳細については、インシデント ページを開きます。
 
-
-![インシデント管理ウィンドウのイメージ。](images/atp-incidents-mgt-pane-updated.png)
+:::image type="content" source="images/atp-incidents-mgt-pane-updated.png" alt-text="インシデント管理ウィンドウ" lightbox="images/atp-incidents-mgt-pane-updated.png":::
 
 インシデントを自分に割り当て、ステータスと分類を変更したり、名前を変更したり、コメントを付け、進捗状況を追跡することができます。
 
@@ -55,8 +54,7 @@ ms.locfileid: "62766826"
 > 自動インシデント名前付けのロールアウトの前に存在していたインシデントは、その名前を保持します。
 >
 
-
-![インシデントの詳細ページのイメージ。](images/atp-incident-details-updated.png)
+:::image type="content" source="images/atp-incident-details-updated.png" alt-text="インシデントの詳細ページ" lightbox="images/atp-incident-details-updated.png":::
 
 ## <a name="assign-incidents"></a>インシデントを割り当てる
 インシデントがまだ割り当てられていない場合は、[自分に割り当てる] を選択して、インシデントを自分に割り当てることができます。 これにより、インシデントの所有権だけでなくそのインシデントと関連するすべての警告の所有権が自分に割り当てられます。

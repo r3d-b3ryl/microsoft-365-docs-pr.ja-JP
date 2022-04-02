@@ -1,7 +1,7 @@
 ---
 title: 外部受信者サービスの通知
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -19,18 +19,18 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: 外部受信者サービス通知を使用して、メールボックスクォータに達している保留状態のメールボックスを監視します。
-ms.openlocfilehash: 931be51ee51bd5557633415004eed9a1c7e77888
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8db8e090ec5430f13153bc3edf5b3315c041d9cf
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331172"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568008"
 ---
 # <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>監視中の外部受信者への配信を保留しているメッセージに対するサービスExchange Online通知
 
 サービスアラートは、管理者にメール キューが外部の受信者に通知Exchange Online。 これらのアラートには、Microsoft 以外の修復アクションが必要な場合がありますが、修復に必要な情報を提供できます。
 
-これらのサービス通知は、サービス ウィンドウにMicrosoft 365 管理センター。 これらのサービス通知を表示するには、[**HealthService** >  正常性] に移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Exchange Online**</a> > **、[アクティブ** な問題] **タブをクリック** します。これらのサービス 通知の名前は、「しきい値を超える外部受信者へのメッセージ キュー」です。
+これらのサービス通知は、サービス ウィンドウにMicrosoft 365 管理センター。 これらのサービス通知を表示するには、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> >  > 正常性サービス正常性Exchange Online] に移動し **、[** アクティブな問題] **タブをクリック** します。これらのサービス 通知の名前は、「しきい値を超える外部受信者へのメッセージ キュー」です。
 
 ![監視ダッシュボードに表示される外部受信者への配信を保留しているメッセージExchange Online通知します。](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
 
@@ -63,11 +63,11 @@ ms.locfileid: "63331172"
 > [!NOTE]
 > Microsoft は、サード パーティベンダーが提供する SMTP エラー コードを考慮することはできません。 そのため、管理者は、組織で使用する MTA またはジャーナリング ソリューションに固有のエラー コードを調査する必要があります。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 組織が、オンプレミスまたは組織のメール フロー コネクタを最近作成または変更したExchange Online詳細については、次の記事を参照してください。
 
-- [コネクタを使用してメール フローを構成Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+- [Exchange Online でコネクタを使用してメール フローを構成する](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 
 - [メールをルーティングするコネクタの設定](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)
 

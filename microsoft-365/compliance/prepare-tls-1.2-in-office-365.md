@@ -15,7 +15,7 @@ appliesto:
 - Office 365 Business
 ms.openlocfilehash: d2562e52c307fcf251b0b3030219aca68dc96a0a
 ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61374582"
@@ -26,22 +26,22 @@ ms.locfileid: "61374582"
 
 お客様へ最高クラスの暗号化機能を提供するために、マイクロソフトは Office 365 および Office 365 GCC のトランスポート層セキュリティ (TLS) バージョン 1.0 および 1.1 を廃止することを計画しています。 お客様のデータに対するセキュリティの重要性を理解すると共に、お客様が利用しているサービスに影響を及ぼす可能性のある変更については、その情報を公開することをお約束いたします。
 
-[Microsoft TLS 1.0 実装](https://support.microsoft.com/help/3117336/schannel-implementation-of-tls-1-0-in-windows-security-status-update-n)においては、セキュリティに関する既知の脆弱性はありません。 ただし、今後プロトコル ダウングレード攻撃を受ける可能性や TLS に関する他の脆弱性が懸念されるため、Microsoft Office 365 と Office 365 GCC での TLS 1.0 および 1.1 のサポートを中止します。
+[Microsoft TLS 1.0 の実装](https://support.microsoft.com/help/3117336/schannel-implementation-of-tls-1-0-in-windows-security-status-update-n)には、既知のセキュリティの脆弱性はありません。ただし、将来のプロトコル ダウングレード攻撃やその他の TLS 脆弱性の可能性があるため、Microsoft Office 365 および Office 365 GCC での TLS 1.0 と 1.1 のサポートは廃止されます。
 
 TLS 1.0 および 1.1 の依存関係を削除する方法については、次のホワイト ペーパーを参照してください。[TLS 1.0 の問題の解決](https://www.microsoft.com/download/details.aspx?id=55266)。
 
-TLS 1.2 にアップグレードした後、使用している暗号スイートが Azure Front Door でサポートされている必要があります。 Microsoft 365 Azure Front Door では、暗号スイートのサポートに若干の違いがあります。 詳細については、「Azure Front Door でサポートされている現在の暗号スイートとは [」を参照してください](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)。
+TLS 1.2 にアップグレードした後、使用している暗号スイートが Azure Front Door でサポートされていることを確かめて下さい。 Microsoft 365 と Azure Front Door には、暗号スイートのサポートに軽微な違いがあります。 詳細については、[Azure Front Door でサポートされている現行の暗号スイートは何ですか?](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)を参照してください。
 
 ## <a name="more-information"></a>詳細
 
-2020 年 1 月の時点で、TLS 1.0 および 1.1 の廃止が開始されました。 DoD または GCC High インスタンスで TLS 1.0 または 1.1 を介して Office 365 に接続するクライアント、デバイス、またはサービスはサポートされていません。 Office 365 の商用顧客の場合、TLS 1.0 および 1.1 の廃止は 2020 年 10 月 15 日に開始され、ロールアウトは次の数週間から数か月の間続きます。
+2020 年 1 月の時点で、TLS 1.0 および 1.1 の廃止が開始されました。 DoD または GCC High インスタンスで TLS 1.0 または 1.1 を介して Office 365 に接続するクライアント、デバイス、またはサービスはサポートされていません。 Office 365 の商用のお客様の場合、TLS 1.0 と 1.1 の廃止は 2020 年 10 月 15 日に開始され、ロールアウトは今後数週間から数か月にわたって継続されます。
 
-Office 365 サービスへの接続を維持するためには、クライアントとサーバー間、ブラウザーとサーバー間のすべての組み合わせで TLS バージョン 1.2 (またはそれ以降のバージョン) を使用することをお勧めします。 クライアントとサーバー間、ブラウザーとサーバー間の特定の組み合わせについては、更新が必要になる場合があります。
+Office 365 サービスへの接続を維持するために、すべてのクライアント/サーバーとブラウザー/サーバーの組み合わせで TLS 1.2 (またはそれ以降のバージョン) を使用することをお勧めします。場合によっては、特定のクライアント/サーバーとブラウザー/サーバーの組み合わせを更新する必要があります。
 
   > [!NOTE]
-  > SMTP 受信メール フローの場合、TLS 1.0 および 1.1 の廃止後は、TLS 1.2 接続のみを受け入れる予定です。 ただし、TLS なしで暗号化されていない SMTP 接続を引き続き受け入れる必要があります。 暗号化なしで電子メール送信はお勧めしませんが。 
+  > SMTP 受信メール フローの場合、TLS 1.0 と 1.1 の廃止後、TLS 1.2 接続のみを受け入れます。 ただし、TLS なしで暗号化もされていない SMTP 接続は引き続き受け入れます。 しかし、暗号化なしで電子メール送信はお勧めしません。 
 
-TLS 1.0 または TLS 1.1 経由で Microsoft 365 API を呼び出すアプリケーションを更新して、TLS 1.2 を使用する必要があります。 .NET 4.5 の既定値は TLS 1.1 です。 .NET 構成を更新するには、「クライアントでトランスポート層セキュリティ [(TLS) 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)を有効にする方法」を参照してください。
+TLS 1.0 または TLS 1.1 経由で Microsoft 365 API を呼び出すアプリケーションを更新して、TLS 1.2 を使用する必要があります。 .NET 4.5 の既定値は TLS 1.1 になります。 .NET 構成を更新するには、「[クライアントでトランスポート層セキュリティ (TLS) 1.2 を有効にする方法](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)」を参照してください。
 
 次のクライアントは、TLS 1.2を使用できません。 サービスに継続的にアクセスするために、クライアントを更新してください。
 
@@ -75,12 +75,12 @@ Microsoft Teams ルームと Surface Hub 製品の TLS 1.2 のサポートも、
 以下の資料は、クライアントで TLS 1.2 以降のバージョンを確実に使用するために役立つガイダンスや、TLS 1.0 および 1.1 の無効化に関するガイダンスです。
 
 - Office 365 に接続する Windows 7 クライアントの場合、TLS 1.2 が Windows の WinHTTP の既定の安全なプロトコルであることを確認してください。 詳細については、「 [KB 3140245-Update to enable TLS 1.1」および「TLS 1.2 as a default secure protocol in Windows](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in)」を参照してください。
-- [TLS 暗号スイートは、ユーザーがサポートOffice 365](/microsoft-365/compliance/technical-reference-details-about-encryption#tls-cipher-suites-supported-by-office-365)
+- [Office 365 でサポートされている TLS 暗号スイート](/microsoft-365/compliance/technical-reference-details-about-encryption#tls-cipher-suites-supported-by-office-365)
 - TLS 1.0 および 1.1 の依存関係を削除することで脆弱な TLS への対処を開始するには、「[マイクロソフトにおける TLS 1.2 のサポート (英語)](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)」をご参照ください。
 - [IIS の新機能](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/)を使用すると、脆弱なセキュリティ プロトコルを使用してサービスに接続している [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) や [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) のクライアントを容易に確認できます。
-- [TLS 1.0 の問題を解決する方法の詳細については、以下を参照してください](https://www.microsoft.com/download/details.aspx?id=55266)。
+- TLS 1.0 の問題に関する詳細については、「[TLS 1.0 の問題の解決](https://www.microsoft.com/download/details.aspx?id=55266)」を参照してください。
 - セキュリティに対するマイクロソフトのアプローチについての公開情報をご覧になるには、[Office 365 セキュリティ センター](https://www.microsoft.com/trustcenter/cloudservices/office365)へアクセスしてください。
-- SMTP クライアントで使用される TLS のバージョンを特定するには、「セキュリティ ポリシー コンプライアンス センター」の [「SMTP Auth](../security/office-365-security/mfi-smtp-auth-clients-report.md)クライアントの分析情報とレポート&参照してください。
+- SMTP クライアントによって使用される TLS バージョンを特定するには、[セキュリティ/コンプライアンス センターの SMTP 認証クライアントの分析情報とレポート](../security/office-365-security/mfi-smtp-auth-clients-report.md)を参照してください。
 - [TLS 1.0/1.1 の廃止の準備 - Office 365 Skype for Business](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Preparing-for-TLS-1-0-1-1-Deprecation-O365-Skype-for-Business/ba-p/222247)
 - [Exchange サーバー TLS ガイダンス、パート 1: TLS 1.2 の準備](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)
 - [Exchange サーバー TLS ガイダンス パート 2: TLS 1.2 を有効にして、クライアントがそれを使用していない特定](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761)
