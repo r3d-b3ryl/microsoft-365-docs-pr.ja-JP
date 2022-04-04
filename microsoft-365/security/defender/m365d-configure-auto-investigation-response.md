@@ -18,12 +18,12 @@ ms.custom:
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 4ec06a96e345345560a2714fa7e23d91a6f5832f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0e38dc36ca85425c033d2b8fd4828043b4043f1a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314216"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499421"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Microsoft 365 Defender で自動調査と応答機能を構成する
 
@@ -92,7 +92,7 @@ Microsoft は、特定のリスク [を特定するのに](../../compliance/aler
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>有効になっているMicrosoft 365 Defender確認する
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="ユーザー設定が有効Microsoft 365 Defenderする方法。" lightbox="../../media/mtp-enable/mtp-on.png":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="オンの場合、Microsoft 365 DefenderポータルMicrosoft 365 Defenderナビゲーション ウィンドウ" lightbox="../../media/mtp-enable/mtp-on.png":::
 
 1. ポータルにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderする</a>
 
@@ -101,7 +101,7 @@ Microsoft は、特定のリスク [を特定するのに](../../compliance/aler
    - インシデント、*アクション センター*、**または** ハンティングが表示されない場合は、Microsoft 365 Defenderが有効にされていない可能性があります。 この場合は、 [アクション センターにアクセスします](m365d-action-center.md)。
 
 > [!TIP]
-> サポートが必要な場合 「[電源を入Microsoft 365 Defender」を参照してください](m365d-enable.md)。
+> お困りの際は、 「[電源を入Microsoft 365 Defender」を参照してください](m365d-enable.md)。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 473d58cde13f1f776c31184b2b50e74e23810b22
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: dac2a68249d90b212e6bbcaacdec84918560deb5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807034"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755813"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -42,16 +42,16 @@ ms.locfileid: "62807034"
 
 カスタム検出を管理するには、次の役割の割り当てのうちどれかが必要になります。
 
-- **セキュリティ管理者** - この役割を持 [Azure Active Directoryユーザーは](/azure/active-directory/roles/permissions-reference#security-administrator)、ポータルおよび他のポータルおよびサービスMicrosoft 365 Defender設定を管理できます。
+- **セキュリティ管理者** - この役割を持Azure Active Directory [ユーザーは](/azure/active-directory/roles/permissions-reference#security-administrator)、Microsoft 365 Defenderポータルおよび他のポータルおよびサービスでセキュリティ設定を管理できます。
 
-- **セキュリティ オペレーター** - この [Azure Active Directory ロールを](/azure/active-directory/roles/permissions-reference#security-operator)持つユーザーは、アラートを管理し、セキュリティ関連の機能 (Microsoft 365 Defender ポータルのすべての情報を含む) へのグローバルな読み取り専用アクセス権を持つ。 この役割は、Microsoft Defender for Endpoint で役割ベースのアクセス制御 (RBAC) がオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC が構成されている場合は、 **Defender for Endpoint** のセキュリティ設定の管理アクセス許可も必要です。
+- **セキュリティ オペレーター** - この Azure Active Directory ロール [](/azure/active-directory/roles/permissions-reference#security-operator)を持つユーザーは、アラートを管理し、セキュリティ関連の機能 (Microsoft 365 Defender ポータルのすべての情報を含む) へのグローバルな読み取り専用アクセス権を持つ。 この役割は、Microsoft Defender for Endpoint で役割ベースのアクセス制御 (RBAC) がオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC が構成されている場合は、 **Defender for Endpoint** のセキュリティ設定の管理アクセス許可も必要です。
 
-また、特定のソリューションのデータに適用されるカスタム検出Microsoft 365 Defenderアクセス許可がある場合は管理できます。 たとえば、Microsoft 365 Defender`Email`のOfficeを管理する場合は、テーブルを使用してカスタム検出を作成できますが、テーブルは作成`Identity`できません。  
+また、特定のソリューションのデータに適用されるカスタム検出Microsoft 365 Defenderアクセス許可がある場合に管理できます。 たとえば、Microsoft 365 Defender`Email`のOfficeを管理する場合は、テーブルを使用してカスタム検出を作成できますが、テーブルは作成`Identity`できません。  
 
 必要なアクセス許可を管理するには、グローバル **管理者は次の機能を使用** できます。
 
-- [RolesSecurity admin **] の下****の [セキュリティ** Microsoft 365 管理センター管理者または [セキュリティ](https://admin.microsoft.com/) オペレーターの **役割** > **を割り当てます**。
-- [Microsoft Defender for Endpoint] の RBAC 設定 [を[Microsoft 365 Defender](https://security.microsoft.com/)  > **PermissionsRoles** >  設定 **確認します**。 対応する役割を選択して、セキュリティ設定の **管理権限を割り当** てる。
+- [RolesSecurity admin **] の下** の [セキュリティ管理者] **または** [[](https://admin.microsoft.com/)セキュリティMicrosoft 365 管理センター **の** > 役割 **を割り当てます**。
+- [Microsoft Defender for Endpoint] の RBAC 設定 [を[Microsoft 365 Defender](https://security.microsoft.com/) **PermissionsRoles** >  **設定** > **確認します**。 対応する役割を選択して、セキュリティ設定の **管理権限を割り当** てる。
 
 > [!NOTE]
 > カスタム検出を管理 **するには、RBAC** が有効になっている場合、セキュリティオペレーターは Microsoft Defender for Endpoint のセキュリティ設定の管理権限を必要とします。
@@ -59,7 +59,7 @@ ms.locfileid: "62807034"
 ## <a name="create-a-custom-detection-rule"></a>カスタム検出ルールの作成
 ### <a name="1-prepare-the-query"></a>1. クエリを準備します。
 
-ポータルでMicrosoft 365 Defenderに移動し、既存のクエリを選択するか、新しいクエリを作成します。 新しいクエリを使用する場合は、クエリを実行してエラーを特定し、あり得る結果を想定します。
+このポータルMicrosoft 365 Defender[高度な検索] に **移動し、** 既存のクエリを選択するか、新しいクエリを作成します。 新しいクエリを使用する場合は、クエリを実行してエラーを特定し、あり得る結果を想定します。
 
 >[!IMPORTANT]
 >サービスでアラートの数が多くなりすぎないように、各ルールの実行時に生成されるアラートは 100 個に制限されています。 ルールを作成する前に、クエリを調整して、通常の毎日のアクティビティに対してアラートが生成されないようにします。
@@ -119,7 +119,7 @@ DeviceEvents
 - **アラート タイトル** : ルールによってトリガーされたアラートが表示されるタイトル。一意である必要があります
 - **重大度** - ルールによって識別されるコンポーネントまたはアクティビティの潜在的なリスク
 - **Category** - ルールによって識別される脅威コンポーネントまたはアクティビティ
-- **MITRE ATT&CK** の手法は、CK フレームワークの [MITRE ATT](https://attack.mitre.org/) に記載されているルールによって識別される 1 つ以上の攻撃&です。 このセクションは、マルウェア、ランサムウェア、疑わしいアクティビティ、望ましくないソフトウェアなど、特定のアラート カテゴリでは非表示になっています。
+- **MITRE ATT&、CK** フレームワークの [MITRE ATT](https://attack.mitre.org/) に記載されているルールによって識別される 1 つ以上の攻撃&です。 このセクションは、マルウェア、ランサムウェア、疑わしいアクティビティ、望ましくないソフトウェアなど、特定のアラート カテゴリでは非表示になっています。
 - **説明** - ルールによって識別されるコンポーネントまたはアクティビティの詳細 
 - **推奨されるアクション**- 応答者がアラートに応答して実行する可能性がある追加のアクション
 
@@ -160,7 +160,7 @@ DeviceEvents
 選択すると、クエリ結果の `SHA1``InitiatingProcessSHA1``SHA256``InitiatingProcessSHA256` 、または列のファイルに対して [ファイルの検疫] アクションを適用できます。 このアクションでは、ファイルが現在ある場所から削除され、コピーが検疫に入ります。
 
 #### <a name="actions-on-users"></a>ユーザーへのアクション
-選択されると、**ユーザーを侵害済みにする** アクションをクエリ結果の `AccountObjectId`、`InitiatingProcessAccountObjectId`、または `RecipientObjectId` 列にあるユーザーに適用することができます。 このアクションでは、ユーザーのリスク レベルをユーザーのリスク レベルを "高" に設定Azure Active Directory ID 保護ポリシー[をトリガーします](/azure/active-directory/identity-protection/overview-identity-protection)。
+選択されると、**ユーザーを侵害済みにする** アクションをクエリ結果の `AccountObjectId`、`InitiatingProcessAccountObjectId`、または `RecipientObjectId` 列にあるユーザーに適用することができます。 このアクションでは、ユーザーのリスク レベルをユーザーのリスク レベルを "高" に設定Azure Active Directory ID 保護ポリシー[がトリガーされます](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
 > カスタム検出ルールの許可またはブロックアクションは、現在、ユーザー設定でMicrosoft 365 Defender。
@@ -203,7 +203,7 @@ DeviceEvents
 
 カスタム検出ルールに関する包括的な情報を表示するには、「**HuntingCustom**  >  検出ルール」に移動し、ルールの名前を選択します。 その後、ルールの実行状態と範囲に関する情報など、ルールに関する一般的な情報を確認することができます。 このページには、トリガーされたアラートとアクションの一覧も表示されます。
 
-![カスタム検出ルールの詳細ページ。](../../media/custom-detect-rules-view.png)<br>
+:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="[カスタム検出ルールの詳細] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/custom-detect-rules-view.png":::<br>
 *カスタム検出ルールの詳細*
 
 また、このページからルールに対して次のアクションを実行することもできます。
@@ -226,10 +226,10 @@ DeviceEvents
 ルールの詳細画面 (**HuntingCustom** >  detections > **[Rule name])** で、[トリガーされたアクション] に移動し、ルールとの一致に基づいて実行されるアクションを一覧表示します。
 
 >[!TIP]
->テーブル内のアイテムに関する情報をすばやく表示し、アクションを実行するには、表の左側にある [&#10003;] の選択列を使用します。
+>テーブル内のアイテムに関する情報をすばやく表示し、アクションを実行するには、表の左側にある選択列 [&#10003;] を使用します。
 
 >[!NOTE]
->この記事の一部の列は、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 「Advanced [hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)」の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動できます。
+>この記事の一部の列は、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「[Advanced Hunting queries を Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md) から移行する」の手順に従います。
 
 ## <a name="see-also"></a>関連項目
 - [カスタム検出の概要](custom-detections-overview.md)

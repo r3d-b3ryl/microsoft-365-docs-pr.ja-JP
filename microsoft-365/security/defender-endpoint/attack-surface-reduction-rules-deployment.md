@@ -1,7 +1,7 @@
 ---
 title: ASR ルールの展開の前提条件
 description: 攻撃表面縮小 (ASR) ルールの展開に関する概要と前提条件のガイダンスを提供します。
-keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
+keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、ASR ルールの構成
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,20 +16,22 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 7a05d2712adb37121b1e625ab5c4774a60af3e81
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 4703867449877a35d6621b76072b9420a0cdbdec
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767210"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520553"
 ---
 # <a name="asr-rules-deployment-prerequisites"></a>ASR ルールの展開の前提条件
 
 ## <a name="before-you-begin"></a>はじめに
 
-攻撃表面は、組織がサイバー脅威や攻撃に対して脆弱なすべての場所です。 組織の攻撃表面には、攻撃者が組織のデバイスやネットワークを侵害する可能性があるすべての場所が含まれています。 攻撃の表面を減らすことは、組織のデバイスとネットワークを保護する手段であり、攻撃方法が少ない攻撃者を残します。 攻撃表面の縮小 (ASR) ルール (Microsoft Defender for Endpoint で見つかった多くのセキュリティ機能の 1 つ) を構成すると、役立ちます。
+攻撃表面は、組織がサイバー脅威や攻撃に対して脆弱なすべての場所です。 組織の攻撃表面には、攻撃者が組織のデバイスやネットワークを侵害する可能性があるすべての場所が含まれています。 攻撃の表面を減らすことは、組織のデバイスとネットワークを保護する手段であり、攻撃方法が少ない攻撃者を残します。 攻撃表面の縮小 (ASR) ルールを構成すると、Microsoft Defender for Endpointに見つかる多くのセキュリティ機能の 1 つが役立ちます。
 
 ASR ルールは、次のような特定のソフトウェア動作を対象とします。
 
@@ -44,9 +46,9 @@ ASR ルールは、次のような特定のソフトウェア動作を対象と�
 >[!IMPORTANT]
 >このガイドでは、ASR ルールを構成する方法を決定するのに役立つ画像と例を示します。これらのイメージと例は、環境に最適な構成オプションを反映していない可能性があります。
 
-開始する前に、「 [攻撃表面](overview-attack-surface-reduction.md)の縮小の概要」と「 [Demystifying Attack Surface Reduction rules - Part 1 for foundational](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) information」を参照してください。 カバレッジの領域と潜在的な影響を理解するには、ASR ルールの現在のセットについて理解してください。「攻撃 [表面の縮小ルールリファレンス」を参照してください](attack-surface-reduction-rules-reference.md)。
+開始する前に、「 [攻撃表面](overview-attack-surface-reduction.md)の縮小の概要」と「 [Demystifying Attack Surface Reduction rules - Part 1 for foundational](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) information」を参照してください。 カバレッジの領域と潜在的な影響を理解するには、ASR ルールの現在のセットについて理解してください。「攻撃 [表面の縮小ルールリファレンス」を参照してください](attack-surface-reduction-rules-reference.md)。  ASR ルール セットについて理解している間は、ルールごとの GUID マッピングに注意してください。「 [ASR ルールと GUID マトリックス」を参照してください](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix)。
 
-ASR ルールは、Microsoft Defender for Endpoint 内の攻撃表面縮小機能の機能の 1 つのみです。 このドキュメントでは、人間が操作するランサムウェアなどの高度な脅威を阻止するために、ASR ルールを効果的に展開する方法について詳しく説明します。  
+ASR ルールは、攻撃表面の縮小機能の 1 つの機能にMicrosoft Defender for Endpoint。 このドキュメントでは、人間が操作するランサムウェアなどの高度な脅威を阻止するために、ASR ルールを効果的に展開する方法について詳しく説明します。  
 
 ### <a name="rules-by-category"></a>カテゴリ別のルール
 
@@ -63,7 +65,7 @@ ASR ルールは、Microsoft Defender for Endpoint 内の攻撃表面縮小機�
 
 (<a id="fn1">1</a>) _脆弱_ な署名済みドライバーの悪用をブロックする機能は、MEM Endpoint セキュリティでは現在利用できません。 このルールは、 [MEM OMA-URI を使用して構成できます](enable-attack-surface-reduction.md#mem)。
 
-(<a id="fn1">2</a>) 一部の ASR ルールではかなりのノイズが発生しますが、機能はブロックできません。 たとえば、Chrome を更新する場合。Chrome はユーザーにlsass.exe。パスワードはデバイスの lsass に保存されます。 ただし、Chrome はローカル デバイスにアクセスlsass.exe。 lsass へのアクセスをブロックするルールを有効にした場合、多くのイベントが生成されます。 これらのイベントは、ソフトウェアの更新プロセスがユーザーにアクセスしないので、lsass.exe。 このルールを有効にすると、Chrome の更新プログラムによる lsass へのアクセスはブロックされますが、Chrome の更新はブロックされます。これは、ユーザーに対して不要な呼び出しを行う他のアプリケーションlsass.exe。 _lsass ルールへのブロック アクセスは、lsass_ への不要な呼び出しをブロックしますが、アプリケーションの実行をブロックしません。
+(<a id="fn1">2</a>) 一部の ASR ルールではかなりのノイズが発生しますが、機能はブロックできません。 たとえば、Chrome を更新する場合。Chrome はユーザーにlsass.exe。パスワードはデバイスの lsass に保存されます。 ただし、Chrome はローカル デバイスにアクセスlsass.exe。 lsass へのアクセスをブロックするルールを有効にした場合、多くのイベントが生成されます。 これらのイベントは、ソフトウェア更新プロセスがユーザーにアクセスしないので、lsass.exe。 このルールを有効にすると、Chrome の更新プログラムによる lsass へのアクセスはブロックされますが、Chrome の更新はブロックされます。これは、ユーザーに対して不要な呼び出しを行う他のアプリケーションlsass.exe。 _lsass ルールへのブロック アクセスは、lsass_ への不要な呼び出しをブロックしますが、アプリケーションの実行をブロックしません。
 
 ### <a name="infrastructure-requirements"></a>インフラストラクチャの要件
 
@@ -71,10 +73,10 @@ ASR ルールを実装する複数の方法が可能ですが、このガイド�
 
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM)
-- Windows 10およびWindows 11 台のデバイス
-- エンドポイント E5 または E5 ライセンスWindows Microsoft Defender
+- Windows 10デバイスとWindows 11デバイス
+- Microsoft Defender for Endpoint E5 ライセンスまたは e5 Windowsライセンス
 
-ASR ルールとレポートを完全に活用するには、E5 または E5 ライセンス、および A5 Microsoft 365 Defenderまたは Windows使用することをお勧めします。 詳細については、「 [Microsoft Defender for Endpoint の最小要件」をご覧ください](minimum-requirements.md)。
+ASR ルールとレポートをフルに活用するには、E5 または E5 ライセンス、および A5 Microsoft 365 DefenderをWindowsすることをお勧めします。 詳細については、「最小[要件」を参照](minimum-requirements.md)Microsoft Defender for Endpoint。
 
 >[!Note]
 >ASR ルールを構成するには、複数の方法があります。 ASR ルールは、Microsoft エンドポイント マネージャー(MEM)、PowerShell、グループ ポリシー、Microsoft System Center Configuration Manager (SCCM)、MEM OMA-URI を使用して構成できます。
@@ -103,13 +105,13 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 ### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Microsoft Defender ウイルス対策コンポーネントは現在のバージョンである必要があります
 
-次のMicrosoft Defender ウイルス対策コンポーネント のバージョンは、現在利用可能なバージョンより 2 つ以上古いバージョンである必要があります。
+次のMicrosoft Defender ウイルス対策コンポーネント バージョンは、現在利用可能なバージョンより 2 つ以上古いバージョンである必要があります。
 
-- **Microsoft Defender ウイルス対策プラットフォームの更新バージョン** - Microsoft Defender ウイルス対策は毎月更新されます。
+- **Microsoft Defender ウイルス対策プラットフォーム更新プログラムのバージョン** - Microsoft Defender ウイルス対策は毎月更新されます。
 - **Microsoft Defender ウイルス対策エンジンのバージョン** - Microsoft Defender ウイルス対策は毎月更新されます。
-- **Microsoft Defender ウイルス対策** インテリジェンス - Microsoft は、Microsoft Defender のセキュリティ インテリジェンス (定義と署名とも呼ばれる) を継続的に更新して、最新の脅威に対処し、検出ロジックを強化します。
+- **Microsoft Defender ウイルス対策インテリジェンス** - Microsoft は、Microsoft Defender のセキュリティ インテリジェンス (定義と署名とも呼ばれる) を継続的に更新して、最新の脅威に対処し、検出ロジックを絞り込む。
 
-最新のMicrosoft Defender ウイルス対策維持すると、ASR ルールの誤検知結果を減らし、検出機能Microsoft Defender ウイルス対策向上します。 現在のバージョンと異なるコンポーネントを更新する方法の詳細については、Microsoft Defender ウイルス対策サポート[Microsoft Defender ウイルス対策参照してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
+最新のMicrosoft Defender ウイルス対策を維持すると、ASR ルールの誤検知結果が減少し、検出機能Microsoft Defender ウイルス対策向上します。 現在のバージョンと異なるコンポーネントを更新する方法の詳細については、Microsoft Defender ウイルス対策サポートMicrosoft Defender ウイルス対策[覧ください](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 ### <a name="caveat"></a>注意点
 
@@ -120,10 +122,10 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 ビジネスラインの運用に影響を与える可能性のある新しい大規模な実装と同様に、計画と実装では計画的な方法が重要です。 ASR ルールがマルウェアを防止する強力な機能を備えるので、独自の顧客ワークフローに最適な動作を実現するには、これらのルールの慎重な計画と展開が必要です。 環境で作業するには、ASR ルールを慎重に計画、テスト、実装、運用する必要があります。  
 
 > [!div class="mx-imgBorder"]
-> ![ASR ルールの展開フェーズ](images/asr-rules-deployment-phases.png)
+> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="ASR ルールの展開フェーズ" lightbox="images/asr-rules-deployment-phases.png":::
 
 >[!Note]
->Microsoft 以外の HIPS を使用し、Microsoft Defender for Endpoint 攻撃表面縮小ルールに移行しているお客様の場合:監査モードからブロック モードに移行するまで、ASR ルールの展開を使用して HIPS ソリューションをサイド バイ サイドで実行する必要があります。 除外の推奨事項については、サードパーティのウイルス対策ベンダーに問い合う必要があります。  
+>Microsoft 以外の HIPS を使用し、Microsoft Defender for Endpoint 攻撃表面の縮小ルールに移行しているお客様の場合:監査モードからブロック モードに移行するまで、ASR ルールの展開を使用して HIPS ソリューションをサイド バイ サイドで実行する必要があります。 除外の推奨事項については、サードパーティのウイルス対策ベンダーに問い合う必要があります。  
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
@@ -135,7 +137,7 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 [フェーズ 4: 運用化](attack-surface-reduction-rules-deployment-operationalize.md)
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>関連情報
 
 ### <a name="blogs"></a>ブログ
 
@@ -165,17 +167,17 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 [クラウド配信保護と Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)
 
-[クラウドで配信される保護をオン Microsoft Defender ウイルス対策にする](enable-cloud-protection-microsoft-defender-antivirus.md)
+[クラウドで配信される保護を有効 Microsoft Defender ウイルス対策にする](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 [拡張機能、名前、または場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-[Microsoft Defender ウイルス対策サポート](manage-updates-baselines-microsoft-defender-antivirus.md)
+[Microsoft Defender ウイルス対策プラットフォームのサポート](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 [管理センターの在庫Microsoft 365 Apps概要](/deployoffice/admincenter/inventory)
 
 [ユーザーの展開計画を作成Windows](/windows/deployment/update/create-deployment-plan)
 
-[Intune で分散 IT に役割ベースのアクセス制御 (RBAC) とスコープ タグを使用する](/mem/intune/fundamentals/scope-tags)
+[役割ベースのアクセス制御 (RBAC) とスコープ タグを使用して、ネットワーク内の分散 IT にIntune](/mem/intune/fundamentals/scope-tags)
 
 [Microsoft Intune でのデバイス プロファイルの割り当て](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 

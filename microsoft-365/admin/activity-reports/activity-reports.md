@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 8dd72f1f153bb9052317afca1d0370645d8ad85b
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: c9d79b12d4a33282540274cf9f0688e071261469
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400980"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679336"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -94,7 +94,7 @@ ms.locfileid: "63400980"
 |[Office ライセンス認証数](microsoft-office-activations-ww.md)|はい|はい|はい|はい|はい|
 |[アクティブなユーザー](active-users-ww.md)|はい|はい|はい|はい|はい|
 |[Microsoft 365 グループ](office-365-groups-ww.md)|はい|はい|はい|はい|はい|
-|[Microsoft 365 Apps の使用法](microsoft365-apps-usage-ww.md)|はい|はい|いいえ [^1]|いいえ [^1]|いいえ [^1]|
+|[Microsoft 365 Apps の使用法](microsoft365-apps-usage-ww.md)|はい|はい|いいえ [^1]|いいえ [^1]|はい
 |[OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity-ww.md)|はい|はい|はい|はい|はい|
 |[OneDrive for Business の利用状況](onedrive-for-business-usage-ww.md)|はい|はい|はい|はい|はい|
 |[SharePoint サイトの利用状況](sharepoint-site-usage-ww.md)|はい|はい|はい|はい|はい|

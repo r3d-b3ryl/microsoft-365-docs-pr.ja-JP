@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e29ccfc963c0bfc2e730744a131a5c9485c72e42
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 364e83d03da53f5e6ffa8cecda4847e13c38f60e
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449416"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499487"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>脅威分析のアナリスト レポートをMicrosoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "63449416"
 
 各 [脅威分析レポートには、](threat-analytics.md) 動的セクションと、アナリスト レポートと呼ばれる包括的な記述セクション _が含まれます_。 このセクションにアクセスするには、追跡された脅威に関するレポートを開き、[アナリスト レポート] タブ **を選択** します。
 
-![脅威分析レポートのアナリスト レポート セクションのイメージ。](../../media/threat-analytics/ta_analystreport_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_analystreport_mtp.png" alt-text="脅威分析レポートのアナリスト レポート セクション" lightbox="../../media/threat-analytics/ta_analystreport_mtp.png":::
 
 _脅威分析レポートのアナリスト レポート セクション_
 
@@ -50,7 +50,7 @@ _脅威分析レポートのアナリスト レポート セクション_
 
 アナリスト レポートの各セクションは、アクション可能な情報を提供するように設計されています。 レポートはさまざまですが、ほとんどのレポートには、次の表に示すセクションが含まれます。
 
-| [レポート] セクション | [説明] |
+| [レポート] セクション | 説明 |
 |--|--|
 | エグゼクティブの概要 | 脅威の概要 (最初に見られた場合を含む)、その動機、重要なイベント、主要なターゲット、および個別のツールとテクニック。 この情報を使用して、業界、地理的位置、ネットワークのコンテキストで脅威に優先順位を付ける方法をさらに評価できます。 |
 | 分析 | 攻撃の詳細、攻撃者が新しい手法または攻撃表面を利用する方法など、脅威に関する技術情報 |

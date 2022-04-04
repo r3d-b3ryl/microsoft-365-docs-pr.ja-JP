@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: a368102b6cb4eabaadd459fd185d18e3a7dc7381
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e9ec5c27f5dabfa2df0f12ca6daecfcef860547c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323403"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499377"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -148,7 +148,7 @@ ms.locfileid: "63323403"
    
    # Enable customization if tenant is dehydrated
      $dehydrated=Get-OrganizationConfig | fl isdehydrated
-     if ($dehy -eq $true) {Enable-OrganizationCustomization}
+     if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
      
    $AppId = "[guid copied from the migrations app]"
 

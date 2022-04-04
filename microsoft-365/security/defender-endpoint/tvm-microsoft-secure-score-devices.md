@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 97ce614a77b85ae6e22e771a413ae5bce51abce7
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 1d63e240c0698273807421a4121061630b8f3951
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465797"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499531"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>デバイス向けの Microsoft セキュア スコア
 
@@ -47,18 +47,6 @@ ms.locfileid: "64465797"
 - セキュリティ コントロール
 
 カテゴリを選択して、[セキュリティの推奨事項 [**] ページに移動**](tvm-security-recommendation.md) し、関連する推奨事項を表示します。
-
-## <a name="turn-on-the-microsoft-secure-score-connector"></a>Microsoft Secure Score コネクタを有効にする
-
-Microsoft Defender for Endpoint シグナルを転送し、Microsoft Secure Score をデバイスのセキュリティ状態に可視化します。 転送されたデータは、Microsoft Secure Score データと同じ場所に保存および処理されます。
-
-変更は、ダッシュボードに反映するために数時間かかる場合があります。
-
-1. ナビゲーション ウィンドウで、[**エンドポイントの**\>全般設定 **機能]** \> **に** \> **移動します。**
-
-2. 下にスクロールして **Microsoft Secure Score に移動** し、設定を [オン] に切り **替える**。
-
-3. **[環境設定の保存]** を選択します。
 
 ## <a name="how-it-works"></a>しくみ
 

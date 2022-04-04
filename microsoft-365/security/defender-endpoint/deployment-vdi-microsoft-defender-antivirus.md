@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender ウイルス対策 デスクトップ インフラストラクチャの展開ガイド
-description: 仮想デスクトップ環境にMicrosoft Defender ウイルス対策、保護とパフォーマンスの最適なバランスを保つ方法について説明します。
+description: 仮想デスクトップ環境にMicrosoft Defender ウイルス対策保護とパフォーマンスの最適なバランスを保つ方法について説明します。
 keywords: vdi、hyper-v、vm、仮想マシン、Windows Defender、ウイルス対策、av、仮想デスクトップ、rds、リモート デスクトップ
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -10,17 +10,17 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 02/11/2022
+ms.date: 03/18/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9ff523e55efa872002e53f74a631def4c65b9929
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: d21fab14788a0402ddc314e2598dfcdf10830924
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818242"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679458"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
 
@@ -54,11 +54,11 @@ VDIs で実行されている VM に更新プログラムを簡単に展開す�
 > [!IMPORTANT]
 > VDI は Windows Server 2012 または Windows Server 2016 でホストすることができますが、以前のバージョンの Windows では使用できない保護テクノロジと機能が強化されたので、仮想マシン (VM) は少なくとも 1607 の Windows 10 を実行している必要があります。
 >
-> microsoft Defender AV が Windows 10 Insider Preview の仮想マシンで動作する方法には、パフォーマンスと機能の改善点があります。ビルド 18323 (以降)。 Insider Preview ビルドを使用する必要がある場合は、このガイドで確認します。指定されていない場合、最適な保護とパフォーマンスを実現するために必要な最小バージョンは 1607 Windows 10です。
+> microsoft Defender AV が Windows 10 Insider Preview の仮想マシンで動作する方法には、パフォーマンスと機能の改善点があります。ビルド 18323 (以降)。 Insider Preview ビルドを使用する必要がある場合は、このガイドで確認します。指定されていない場合、最適な保護とパフォーマンスを得る最小必要なバージョンは 1607 Windows 10です。
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>専用の VDI ファイル共有をセットアップする
 
-Windows 10 バージョン 1903 では、共有セキュリティ インテリジェンス機能が導入され、ダウンロードしたセキュリティ インテリジェンス更新プログラムのアンパック処理をホスト コンピューターにオフロードし、以前の CPU、ディスク、メモリ リソースを個々のコンピューターに保存しました。 この機能はバックポートされ、バージョン 1703 Windows 10で動作します。 この機能は、グループ ポリシーまたは PowerShell で設定できます。
+Windows 10 バージョン 1903 では、共有セキュリティ インテリジェンス機能が導入され、ダウンロードしたセキュリティ インテリジェンス更新プログラムのアンパック処理がホスト コンピューターにオフロードされ、以前の CPU、ディスク、メモリ リソースが個々のコンピューターに保存されました。 この機能はバックポートされ、バージョン 1703 Windows 10で動作します。 この機能は、グループ ポリシーまたは PowerShell で設定できます。
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>グループ ポリシーを使用して、共有セキュリティ インテリジェンス機能を有効にします。
 
@@ -68,7 +68,7 @@ Windows 10 バージョン 1903 では、共有セキュリティ インテリ�
 
 3. [管理 **用テンプレート] をクリックします**。
 
-4. ツリーを展開して、**セキュリティ Windows更新Microsoft Defender ウイルス対策** \>  \> **コンポーネントを追加します**。
+4. ツリーを展開して、**セキュリティ Windows更新Microsoft Defender ウイルス対策** \>  \> **コンポーネントを表示します**。
 
 5. [ **VDI クライアントのセキュリティ インテリジェンスの場所** を定義する] をダブルクリックし、オプションを [有効] に **設定します**。 フィールドが自動的に表示されます。
 
@@ -102,7 +102,7 @@ New-Item -ItemType Directory -Force -Path $vdmpath | Out-Null
 
 Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64' -OutFile $vdmpackage
 
-cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
+cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 ```
 
 スケジュールされたタスクを 1 日 1 回実行して、パッケージをダウンロードして開梱するたびに VM が新しい更新プログラムを受け取るのを設定できます。
@@ -135,7 +135,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>PowerShell スクリプトを実行するスケジュールされたタスクを設定する
 
-1. 管理マシンで、[タスク スケジューラ] を開スタート メニュー入力 **します**。 それを開き、 **サイド パネルで [タスクの作成...]** を選択します。
+1. 管理マシンで、[タスク スケジューラ] と入力スタート メニューを **開きます**。 それを開き、 **サイド パネルで [タスクの作成...]** を選択します。
 
 2. 名前をセキュリティ インテリジェンス **アンパックとして入力します**。 [トリガー] タブ **に移動** します。[**新規]を選択します。** \>**[毎日]** を選択し、[**OK] を選択します**。
 
@@ -179,7 +179,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 スケジュールされたスキャン中に実行するスキャンの種類を指定できます。 クイック スキャンは、マルウェアをアクティブにする必要があるすべての場所を検索するように設計された、優先的な方法です。 次の手順では、グループ ポリシーを使用してクイック スキャンを設定する方法について説明します。
 
-1. グループ ポリシー エディターで、[スキャン]  \> の [管理 **用Windows]** \> **Microsoft Defender ウイルス対策** \> **します**。
+1. グループ ポリシー エディターで、[スキャン]  \> の [管理 **用Windows]** \> **Microsoft Defender ウイルス対策** \> **移動します**。
 
 2. [ **スケジュールされたスキャンに使用するスキャンの種類を指定する] を選択** し、ポリシー設定を編集します。
 
@@ -191,9 +191,9 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="prevent-notifications"></a>通知を防止する
 
-場合によっては、Microsoft Defender ウイルス対策通知が複数のセッションに送信または保持される場合があります。 この問題を最小限に抑えるために、ユーザー インターフェイスのMicrosoft Defender ウイルス対策できます。 次の手順では、グループ ポリシーを使用して通知を抑制する方法について説明します。
+場合によっては、Microsoft Defender ウイルス対策セッション間で通知が送信または保持される場合があります。 この問題を最小限に抑えるために、ユーザー インターフェイスのMicrosoft Defender ウイルス対策することができます。 次の手順では、グループ ポリシーを使用して通知を抑制する方法について説明します。
 
-1. グループ ポリシー エディターで、[クライアント インターフェイスWindows **コンポーネントMicrosoft Defender ウイルス対策** \>  \> **移動します**。
+1. グループ ポリシー エディターで、[クライアント インターフェイスWindows **コンポーネント** \> **Microsoft Defender ウイルス対策** \> **移動します**。
 
 2. [すべての **通知を非表示にする] を** 選択し、ポリシー設定を編集します。
 
@@ -201,10 +201,10 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 4. 通常どおりにグループ ポリシー オブジェクトを展開します。
 
-通知を抑制すると、スキャンMicrosoft Defender ウイルス対策修復アクションが実行された場合Windows 10アクション センターに通知が表示されません。 ただし、セキュリティ運用チームは、攻撃が検出および停止されている間に、Microsoft 365 Defender ポータルで "初期アクセスアラート" などのアラートがトリガーされ、表示された状態でスキャン[の結果を表示](/microsoft-365/security/defender/microsoft-365-defender)します。
+通知を抑制すると、スキャンMicrosoft Defender ウイルス対策修復アクションが実行された場合Windows 10アクション センターに通知が表示されません。 ただし、セキュリティ運用チームは、攻撃が検出および停止されている間に、"初期アクセスアラート" などのアラートがトリガーされ、Microsoft 365 Defender ポータルに表示された状態でスキャン[の結果を表示](/microsoft-365/security/defender/microsoft-365-defender)します。
 
 > [!TIP]
-> 11 のアクション センターを開Windows 10 Windows、次のいずれかの手順を実行します。
+> 11 または 11 のアクション センター Windows 10開Windows、次のいずれかの手順を実行します。
 >
 > - タスク バーの右側にある [アクション センター] アイコンを選択します。
 > - [ロゴ] Windows + A を押します。
@@ -245,7 +245,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="enable-headless-ui-mode"></a>ヘッドレス UI モードを有効にする
 
-1. グループ ポリシー エディターで、[クライアント インターフェイスWindows **コンポーネントMicrosoft Defender ウイルス対策** \>  \> **移動します**。
+1. グループ ポリシー エディターで、[クライアント インターフェイスWindows **コンポーネント** \> **Microsoft Defender ウイルス対策** \> **移動します**。
 
 2. [ヘッド **レス UI モードを有効にする] を選択** し、ポリシーを編集します。
 

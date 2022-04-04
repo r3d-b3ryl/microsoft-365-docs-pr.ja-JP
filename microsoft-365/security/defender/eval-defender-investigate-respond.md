@@ -1,5 +1,5 @@
 ---
-title: 手順 6. パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う
+title: パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う
 description: Microsoft 365 Defenderラボまたはパイロット環境で攻撃シミュレーションをセットアップし、デバイス、ID、データ、およびアプリケーションを保護するようにユーザーに教えるために設計されたセキュリティ ソリューションを試します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e7dafa34daed763bc0da11e5cd11f80b791db508
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a32b6dc2fafb80905c4cba44b79fc24b7e6a3187
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318719"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568620"
 ---
 # <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>手順 6. パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う
 
@@ -37,7 +37,7 @@ ms.locfileid: "63318719"
 
 次の手順を使用します。
 
-![評価環境でシミュレートされたインシデント応答を実行Microsoft 365 Defender手順。](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
+:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png" alt-text="評価環境でシミュレートされたインシデント応答を実行Microsoft 365 Defender手順" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png":::
 
 次の表に、図の手順を示します。
 

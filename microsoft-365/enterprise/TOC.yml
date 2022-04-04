@@ -181,15 +181,22 @@
       items:
         - name: Microsoft 365 サービス正常性の状態
           href: microsoft-365-service-health.md
-        - name: Exchange Online の監視
-          href: microsoft-365-exchange-monitoring.md
+        - name: Microsoft 365 の監視
+          href: microsoft-365-monitoring.md
           items:
-            - name: メールボックス使用率のサービス アラート
-              href: microsoft-365-mailbox-utilization-service-alerts.md
-            - name: MRS ソース遅延のサービス アラート
-              href: microsoft-365-mrs-source-delays-service-alerts.md
-            - name: 外部受信者のキューに登録されたメッセージのサービス アラート
-              href: microsoft-365-external-recipient-service-alerts.md
+            - name: Exchange Online の監視
+              href: microsoft-365-exchange-monitoring.md
+              items:
+                - name: メールボックス使用率のサービス アラート
+                  href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: MRS ソース遅延のサービス アラート
+                  href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: 外部受信者のキューに登録されたメッセージのサービス アラート
+                  href: microsoft-365-external-recipient-service-alerts.md
+            - name: Microsoft 365 アプリの監視
+              href: microsoft-365-apps-monitoring.md
+            - name: Microsoft 365 Teams の監視
+              href: microsoft-365-teams-monitoring.md
         - name: セットアップ ガイド
           href: setup-guides-for-microsoft-365.md
     - name: 複数のテナント

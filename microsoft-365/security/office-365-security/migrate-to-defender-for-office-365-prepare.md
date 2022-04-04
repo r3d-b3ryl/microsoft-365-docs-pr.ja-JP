@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: migrationguides
-description: サード パーティ製の保護サービスまたはデバイスから Microsoft Defender に移行して保護を行う場合のOffice 365手順。
+description: サード パーティ製の保護サービスまたはデバイスから Microsoft Defender に移行して、保護を強化するためのOffice 365手順。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f8a35fa7e8ac469a87861d25f45e7078eb4be940
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 019f7152f0f892abd19bb09ffa9449874b00340c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886404"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466589"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-1-prepare"></a>Microsoft Defender に移行して、Office 365 - フェーズ 1: 準備する
 
@@ -33,7 +33,7 @@ ms.locfileid: "62886404"
 
 <br>
 
-|![フェーズ 1: 準備します。](../../media/phase-diagrams/prepare.png) <br> フェーズ 1: 準備|[![フェーズ 2: 設定](../../media/phase-diagrams/setup.png)](migrate-to-defender-for-office-365-setup.md) <br> [フェーズ 2: 設定](migrate-to-defender-for-office-365-setup.md)|[![フェーズ 3: オンボード](../../media/phase-diagrams/onboard.png)](migrate-to-defender-for-office-365-onboard.md) <br> [フェーズ 3: オンボード](migrate-to-defender-for-office-365-onboard.md)|
+|![フェーズ 1: 準備します。](../../media/phase-diagrams/prepare.png) <br> フェーズ 1: 準備|[![フェーズ 2: 設定](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [フェーズ 2: 設定](migrate-to-defender-for-office-365-setup.md)|[![フェーズ 3: オンボード](../../media/phase-diagrams/onboard.png#lightbox)](migrate-to-defender-for-office-365-onboard.md) <br> [フェーズ 3: オンボード](migrate-to-defender-for-office-365-onboard.md)|
 |---|---|---|
 |*お前はここにいる!*|||
 
@@ -57,13 +57,13 @@ Defender for Office 365のネイティブ機能と動作のテストと観察に
 - **接続またはコンテンツ フィルター**: Defender でこれらのカスタマイズのほとんどを必要としない可能性Office 365。
 - **ビジネス ルーティング**: 再作成する必要があるカスタマイズの大部分は、このカテゴリに分類される可能性があります。 たとえば、これらの設定を Microsoft 365 メール フロー Exchange (トランスポート ルールとも呼ばれる)、コネクタ、およびスプーフィング インテリジェンスの例外として再作成できます。
 
-古い設定を Microsoft 365 に盲目的に移動する代わりに、ユーザー メンバーシップの増加に伴うパイロット フェーズと、セキュリティに関する考慮事項と組織のビジネス ニーズのバランスに基づく監視ベースの調整を含むウォーターフォール アプローチをお勧めします。
+Microsoft 365 に古い設定を盲目的に移動する代わりに、ユーザー メンバーシップの増加に伴うパイロット フェーズ、およびセキュリティに関する考慮事項と組織のビジネス ニーズのバランスに基づく監視ベースのチューニングを含むウォーターフォール アプローチをお勧めします。
 
 ## <a name="check-your-existing-protection-configuration-in-microsoft-365"></a>既存の保護構成を確認Microsoft 365
 
 前に述べたように、サードパーティの保護サービスを使用している場合でも、Microsoft 365 に配信されるメールのすべての保護機能を完全にオフにすることはできません。 そのため、組織が少なくとも一部の電子Microsoft 365機能を構成するのも珍しいことではありません。 次に例を示します。
 
-- 過去には、サードパーティ製の保護サービスを使用してセキュリティ保護サービスを使用Microsoft 365。 現在無視されている一部の保護機能は、Microsoft 365使用して構成している可能性があります。 ただし、これらの設定は、「ダイヤルを回す」と有効になる Microsoft 365場合があります。
+- 過去には、サードパーティの保護サービスを使用してセキュリティ保護サービスを使用Microsoft 365。 現在無視されている一部の保護機能は、Microsoft 365使用して構成している可能性があります。 ただし、これらの設定は、"ダイヤルを回す" と有効にし、ユーザーの保護機能を有効Microsoft 365。
 - Microsoft 365 保護には、既存の保護サービスを通じて誤検知 (悪いマークが付いた良いメール) または偽陰性 (悪いメールが許可されている) に対する宿泊施設がある場合があります。
 
 既存の保護機能をMicrosoft 365、不要になった設定の削除または簡略化を検討してください。 何年も前に必要だったルールまたはポリシー設定は、組織を危険にさらし、保護に意図しないギャップを生み出す可能性があります。
@@ -79,11 +79,11 @@ Defender for Office 365のネイティブ機能と動作のテストと観察に
 
 - このMicrosoft 365を使用して、オンプレミスの電子メール サーバーから電子メールを中継すると、それ自体が複雑なプロジェクトになる可能性があります。 簡単な例は、メッセージのほとんどを内部受信者に送信するアプリやデバイスの数が少ない場合で、大量のメールには使用されません。 詳細 [については、このガイド](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) を参照してください。 より広範な環境では、より慎重にする必要があります。 受信者がスパムと見なす可能性があるマーケティング 電子メールとメッセージは許可されません。
 
-- DMARC Office 365を集計する機能を持つユーザー向け Defender を使用します。 [Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog) カタログにアクセスして、DMARC レポートを提供するサード パーティベンダーを表示Microsoft 365。
+- DMARC Office 365を集計する機能を持つユーザー向け Defender。 [Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog) カタログにアクセスして、DMARC レポートを提供するサード パーティベンダーを表示Microsoft 365。
 
 ## <a name="move-features-that-modify-messages-into-microsoft-365"></a>メッセージを変更する機能をユーザーにMicrosoft 365
 
-メッセージを変更するカスタマイズや機能を、任意の方法でユーザー設定にMicrosoft 365。 たとえば、既存の保護サービスは、外部送信者からのメッセージの件名またはメッセージ本文に外部タグを追加します。 リンクの折り返し機能によって、一部のメッセージに問題が発生します。 このような機能を今日使用している場合は、問題を最小限に抑えるための代替手段として、セーフ リンクのロールアウトに優先順位を付ける必要があります。
+メッセージを変更するカスタマイズや機能を、任意の方法でユーザー設定にMicrosoft 365。 たとえば、既存の保護サービスは、外部送信者からのメッセージの件名またはメッセージ本文に外部タグを追加します。 リンクの折り返し機能によって、一部のメッセージに問題が発生します。 このような機能を今日使用している場合は、問題を最小限に抑えるための代替手段として、セーフリンクのロールアウトに優先順位を付ける必要があります。
 
 既存の保護サービスでメッセージ変更機能をオフにしない場合は、次の負の結果が発生Microsoft 365。
 
@@ -91,9 +91,9 @@ Defender for Office 365のネイティブ機能と動作のテストと観察に
 - [このガイドの](anti-spoofing-protection.md) 後半のスプーフィング インテリジェンスとチューニング 手順は正しく動作しません。
 - 誤検知の数が多い (良いメールが正しいとマークされている) 可能性があります。
 
-外部の送信者 ID を Microsoft 365するには、次のオプションを使用します。
+外部送信者 ID を Microsoft 365するには、次のオプションがあります。
 
-- この[Outlook、最初の](https://techcommunity.microsoft.com/t5/exchange-team-blog/native-external-sender-callouts-on-email-in-outlook/ba-p/2250098)連絡先の安全に関するヒントと共に、外部[送信者の呼び出し機能を提供します](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
+- この[Outlook、最初の](https://techcommunity.microsoft.com/t5/exchange-team-blog/native-external-sender-callouts-on-email-in-outlook/ba-p/2250098)連絡先の安全に関するヒントと共[に、外部送信者の呼び出し機能を提供します](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
 - メール フロー ルール (トランスポート ルールとも呼ばれる)。 詳細については、「組織全体の[メッセージ](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)免責事項、署名、フッター、またはヘッダー」を参照Exchange Online。
 
 Microsoft は近い将来、業界と一緒に認証済み受信チェーン (ARC) 標準をサポートしています。 現在のメール ゲートウェイ プロバイダーでメッセージ変更機能を有効のままにする場合は、この標準をサポートするプランについて連絡することをお勧めします。
@@ -114,7 +114,7 @@ Microsoft は近い将来、業界と一緒に認証済み受信チェーン (AR
   - [スプーフィング](anti-spoofing-protection.md) インテリジェンスが正しく動作しません。
   - 誤検知の数が多い (良いメールが正しいとマークされている) 可能性があります。
 
-  最終的には、検疫への配信を支持して迷惑メール フォルダーへの電子メールの配信を防止する場合は、この決定が必要です。 ただし、1 つのことは確かです。Office 365 の Defender でのエクスペリエンスがユーザーの慣例とは異なる場合は、ユーザーに通知し、基本的なトレーニングを提供する必要があります。 パイロットからの学習を組み込み、ユーザーが電子メール配信の新しい動作に備えて準備されている必要があります。
+  最終的には、検疫への配信を支持して迷惑メール フォルダーへの電子メールの配信を防止する場合は、この決定が必要です。 ただし、1 つのことは確かです。Office 365 の Defender でのエクスペリエンスがユーザーの慣用とは異なる場合は、ユーザーに通知し、基本的なトレーニングを提供する必要があります。 パイロットからの学習を組み込み、ユーザーが電子メール配信の新しい動作に備えて準備されている必要があります。
 
 - **望ましくないバルク メールと望** ましくないバルク メール: 多くの保護システムを使用すると、ユーザーは自分でバルク メールを許可またはブロックできます。 これらの設定は簡単には移行できないのでMicrosoft 365で既存の構成を再作成するために、VIP とそのスタッフとの作業を検討Microsoft 365。
 
@@ -126,8 +126,8 @@ Microsoft は近い将来、業界と一緒に認証済み受信チェーン (AR
 
 この機能を利用できる場合は、優先度アカウントとユーザー タグを使用すると、重要なユーザーを特定し、Microsoft 365目立つユーザーを特定できます。 詳細については、「Microsoft [Defender の User tags for Office 365](user-tags.md)優先度アカウントの管理と[監視」を参照してください](/microsoft-365/admin/setup/priority-accounts)。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
-**おめでとう** ございます! Microsoft [Defender](migrate-to-defender-for-office-365.md#the-migration-process) への移行の **準備** フェーズが完了Office 365!
+**おめでとう** ございます! Microsoft [Defender](migrate-to-defender-for-office-365.md#the-migration-process) への移行の **準備** フェーズを完了し、Office 365!
 
 - [フェーズ [2: セットアップ] に進みます](migrate-to-defender-for-office-365-setup.md)。

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 40178e42737bdfea756db55658aaeb988ad4f19f
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 2d5477122a29c672a947a2022f49da3abeb7003b
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498739"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568546"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>グループ内のインシデントに優先順位をMicrosoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "64498739"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender関連するアラートと、さまざまな製品からの自動調査をインシデントに適用します。 Microsoft 365 Defenderは、Microsoft 365 Defender が製品のスイート全体で持つエンドツーエンドの可視性を考えると、悪意のあるアクティビティとしてのみ識別できるアクティビティに対する一意のアラートをトリガーします。 このビューにより、セキュリティ アナリストは広範な攻撃ストーリーを提供し、組織全体の複雑な脅威をよりよく理解し、対処するのに役立ちます。
+Microsoft 365 Defender関連するアラートと、さまざまな製品からの自動調査をインシデントに適用します。 Microsoft 365 Defenderは、Microsoft 365 Defender のエンド to エンドの可視性が製品のスイート全体にわたってある場合にのみ、悪意のあるアクティビティとして識別できるアクティビティに対する一意のアラートをトリガーします。 このビューにより、セキュリティ アナリストは広範な攻撃ストーリーを提供し、組織全体の複雑な脅威をよりよく理解し、対処するのに役立ちます。
 
 インシデント **キューには、** デバイス、ユーザー、メールボックス間で作成されたインシデントのコレクションが表示されます。 インシデントを並べ替え、情報に基づいたサイバーセキュリティ対応の決定 (インシデント トリアージと呼ばれるプロセス) を作成するのに役立ちます。
 
@@ -78,10 +78,10 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 | 重要度 | インシデントの重大度は、資産に与える影響を示しています。 重大度が高いほど、影響は大きく、通常は最も迅速な注意が必要です。 [**高、****中、低、****または** 情報] **を選択します**。 |
 | インシデントの割り当て | 割り当てられたユーザーまたはユーザーを選択します。 |
 | 複数のサービス ソース  | フィルターが複数のサービス ソース用であるかどうかを指定します。 |
-| サービス ソース  | 通知を含むインシデントを指定します。アプリ ガバナンス、Microsoft 365 Defender、microsoft Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Cloud Apps。 |
+| サービス ソース  | 通知を含むインシデントの指定: アプリ ガバナンス、Microsoft 365 Defender、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Cloud Apps。 |
 | タグ | リストから 1 つ以上のタグ名を選択します。 |
 | 複数のカテゴリ  | フィルターが複数のカテゴリの場合に使用するかどうかを指定します。 |
-| カテゴリ | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
+| Categories | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
 | Entities | ユーザー、デバイス、メールボックス、アプリケーション名などのアセットの名前を指定します。 |
 | データの機密性 | 一部の攻撃では、機密データや貴重なデータを排除することを目的としています。 特定の機密ラベルにフィルターを適用することで、機密情報が侵害された可能性があるかどうかを迅速に判断し、それらのインシデントに対処する優先順位を付けできます。 <br><br> このフィルターは、有効になっているMicrosoft Information Protection使用できます。 |
 | デバイス グループ | デバイス グループ [名を指定](/windows/security/threat-protection/microsoft-defender-atp/machine-groups) します。 |
@@ -105,7 +105,7 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 - 割り当てられていないインシデント
 - 重大度が高く、割り当てられていないインシデント
 - 割り当てられたインシデント
-- Microsoft Defender for Endpoint に割り当てられたインシデント
+- ユーザーとユーザーに割り当てられたインシデントMicrosoft Defender for Endpoint
 - 特定のタグまたはタグを持つインシデント
 - 特定の脅威カテゴリを持つインシデント
 - 特定の関連付けられた脅威を持つインシデント

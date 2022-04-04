@@ -535,8 +535,6 @@
               href: dlp-chrome-get-started.md
             - name: データ損失防止の警告ダッシュボードを開始する
               href: dlp-alerts-dashboard-get-started.md
-            - name: Power BI (プレビュー) のデータ損失防止ポリシーの使用を開始する
-              href: dlp-powerbi-get-started.md
         - name: DLP を使用する
           items:
             - name: DLP と Microsoft Teams

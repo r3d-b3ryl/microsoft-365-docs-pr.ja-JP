@@ -13,14 +13,16 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: fb46d0c03aaaaad016ca13be5bfa26a19887794c
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: c43fdfe746575837e8e5c8f36992f5fa6e2fec96
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807454"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679502"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 
@@ -39,13 +41,13 @@ ms.locfileid: "62807454"
 > また、Microsoft Defender のデモ シナリオ Web サイトを [参照して、](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) demo.wd.microsoft.com の保護機能がどのように機能するのか確認することもできます。
 
 > [!NOTE]
-> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 ## <a name="enable-network-protection-in-audit-mode"></a>監査モードでネットワーク保護を有効にする
 
 監査モードでネットワーク保護を有効にして、ブロックされた IP アドレスとドメインを確認します。 業務用アプリに影響を与えなかったり、ブロックが発生する頻度を確認できます。
 
-1. [**powershell]** と入力スタート メニューを右クリックし、[管理者 **Windows PowerShell****実行] を選択します。**
+1. [**powershell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します。**
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
@@ -54,7 +56,7 @@ ms.locfileid: "62807454"
 
 ### <a name="visit-a-fake-malicious-domain"></a>(偽の) 悪意のあるドメインにアクセスする
 
-1. ユーザー Internet Explorer、Google Chrome、または任意の他のブラウザーを開きます。
+1. [Internet Explorer、Google Chrome、または任意の他のブラウザーを開きます。
 
 2. [https://smartscreentestratings2.net](https://smartscreentestratings2.net) に移動します。
 
@@ -69,7 +71,7 @@ ms.locfileid: "62807454"
 
 ブロックされたアプリを確認するには、Microsoft-Windows-Windows Defender/運用ログでイベント ビューアーを開き、イベント ID 1125 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
 
-| イベント ID | 提供/ソース | 説明 |
+| イベント ID | 提供/ソース | [説明] |
 |---|---|---|
 | 5007 | Windows Defender (運用) | 設定が変更された場合のイベント |
 | 1125 | Windows Defender (運用) | ネットワーク接続が監査された場合のイベント |

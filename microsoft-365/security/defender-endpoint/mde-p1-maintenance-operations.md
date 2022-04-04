@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 69e4df29817675918873e4d13b81bfe5b00b1219
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5217cf3f8b61c4e5bc24dfc205fb78c5bde5a3b5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942778"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466633"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>エンドポイント プラン 1 の Microsoft Defender の管理
 
@@ -39,11 +39,11 @@ ms.locfileid: "61942778"
 - セキュリティ インテリジェンスの更新プログラム
 - 製品の更新 
 
-セキュリティ インテリジェンスと製品の更新プログラムを管理するには、「更新プログラムの管理Microsoft Defender ウイルス対策[ベースラインの適用」を参照してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
+セキュリティ インテリジェンスと製品の更新プログラムを管理するには、「更新プログラムの管理[Microsoft Defender ウイルス対策ベースラインの適用」を参照してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 ## <a name="fine-tune-and-adjust-defender-for-endpoint"></a>エンドポイントの Defender の微調整と調整
 
-Defender for Endpoint は、柔軟性と構成のオプションを提供します。 組織のニーズに合わせて設定を調整および調整できます。 たとえば、エンドポイントセキュリティ設定を管理Microsoft エンドポイント マネージャーグループ ポリシー、その他の方法を使用できます。 
+Defender for Endpoint は、柔軟性と構成のオプションを提供します。 組織のニーズに合わせて設定を調整および調整できます。 たとえば、エンドポイントのセキュリティ設定を管理Microsoft エンドポイント マネージャーグループ ポリシー、その他の方法を使用できます。 
 
 詳細については、「Manage [Defender for Endpoint」を参照してください](manage-mde-post-migration.md)。
 
@@ -51,9 +51,9 @@ Defender for Endpoint は、柔軟性と構成のオプションを提供しま�
 
 誤検知とは、ファイルやプロセスなどのアーティファクトであり、実際には脅威ではないにもかかわらず、悪意のあるものとして検出されました。 false negative は、実際には脅威として検出されていないエンティティです。 False positives/negatives は、Defender for Endpoint を含む任意のエンドポイント保護ソリューションで発生する可能性があります。 ただし、次の図に示す手順に従って、これらの種類の問題に対処し、ソリューションを微調整できます。
 
-:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="誤検知と負の処理の概要":::
+:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="誤検知と負の処理の概要" lightbox="../../media/defender-endpoint/false-positives-overview.png":::
 
-Defender for Endpoint で誤検知/陰性が表示される場合は [、「Address false positives/negatives in Microsoft Defender for Endpoint」を参照してください](defender-endpoint-false-positives-negatives.md)。
+Defender for Endpoint で誤検知/陰性が表示される場合は、「Address false [positives/negatives in Microsoft Defender for Endpoint」を参照してください](defender-endpoint-false-positives-negatives.md)。
 
 ## <a name="next-steps"></a>次の手順
 

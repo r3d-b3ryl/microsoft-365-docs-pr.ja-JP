@@ -1,5 +1,5 @@
 ---
-title: ユーザーにメールを送信する非顧客Microsoft 365
+title: ユーザーにメールを送信する非顧客向Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,33 +17,30 @@ ms.collection:
 description: 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2894d565a08cf500199b123a0acd738de129faf0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7af1a901bf9b3b27f08a7a3d36de69d49c2c85e9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174185"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679568"
 ---
-# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>ユーザーにメールを送信する非顧客Microsoft 365
+# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>ユーザーにメールを送信する非顧客向Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-電子メールの不正使用、迷惑メール、詐欺メール (フィッシング詐欺) は、引き続き電子メール エコシステム全体にとって負担となっています。 電子メールの使用に対するユーザーの信頼を維持するために、Microsoft はユーザーの保護に役立つさまざまなポリシーとテクノロジを導入しています。 ただし、正当な電子メールが不利を被らないようにするべきであることも理解しています。 そのため、送信者が送信評判を積極的に管理することで、Microsoft 365ユーザーに電子メールを配信する能力を向上させる一組のサービスを確立しました。
+電子メールの不正使用、迷惑メール、詐欺メール (フィッシング詐欺) は、引き続き電子メール エコシステム全体にとって負担となっています。 電子メールの使用に対するユーザーの信頼を維持するために、Microsoft はユーザーの保護に役立つさまざまなポリシーとテクノロジを導入しています。 ただし、正当な電子メールが不利を被らないようにするべきであることも理解しています。 そのため、送信者が自分の送信評判を積極的に管理することで、Microsoft 365ユーザーに電子メールを配信する能力を向上させる一組のサービスを確立しました。
 
 この概要では、お客様でない場合でも、組織に提供するメリットに関する情報を提供します。
 
 ## <a name="sender-solutions"></a>送信者のソリューション
-
-****
 
 |サービス|利点|
 |---|---|
 |このオンライン ヘルプ コンテンツ|提供内容： <ul><li>EOP ユーザーへの通信の提供に関連する質問の開始点。</li><li>ポリシーと要件を含む簡単なオンライン ガイドが含まれています。</li><li>Microsoft が採用している迷惑メール フィルターと認証テクノロジの概要。</li><ul>|
 |[Microsoft サポート](#microsoft-support)|配信の問題に対するセルフヘルプと充実したサポートを提供します。|
 |[スパム対策 IP リスト削除ポータル](#anti-spam-ip-delist-portal)|IP リストからの除外要求を送信するためのツール。この要求を送信する前に、送信者は、疑わしい IP から不正なメールや悪意のあるメールが送信されないことを確認する責任があります。|
-|[Exchange Online からの迷惑メールの不正使用とスパムの報告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|スパムなどの不要なメールが、インターネットやメール システムExchange Online迷惑メールから送信されるのを防きます。|
-|
+|[Exchange Online からの迷惑メールの不正使用とスパムの報告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|スパムなどの不要なメールがインターネットやメール システムExchange Online迷惑メールから送信されるのを防きます。|
 
 ## <a name="microsoft-support"></a>Microsoft サポート
 
@@ -63,8 +60,8 @@ Microsoft では、受信者へのメールの送信に問題があるユーザ�
 
 ## <a name="anti-spam-ip-delist-portal"></a>スパム対策 IP リスト削除ポータル
 
-これは、ブロックされた送信者リストから自分自身を削除するために使用Microsoft 365セルフサービス ポータルです。 Microsoft 365 に電子メール アドレスが含まれる受信者に電子メールを送信しようとするときにエラー メッセージが表示される場合は、このポータルを使用します。 詳細については、「[リストから除外ポータルを使って、受信拒否リストから自分自身を削除する](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)」を参照してください。
+これは、ブロックされた送信者リストから自分を削除するために使用できるセルフサービス ポータルMicrosoft 365です。 Microsoft 365 に電子メール アドレスが含まれる受信者に電子メールを送信しようとするときにエラー メッセージが表示される場合は、このポータルを使用します。 詳細については、「[リストから除外ポータルを使って、受信拒否リストから自分自身を削除する](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)」を参照してください。
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Exchange Online からの迷惑メールの不正使用とスパムの報告
 
-場合Microsoft 365の使用条件およびポリシーに違反して、第三者が迷惑メールを送信するために使用することがあります。 ユーザーから迷惑メールを受けOffice 365、これらのメッセージを Microsoft に報告できます。 手順については、「メッセージと [ファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。
+場合Microsoft 365の使用条件およびポリシーに違反して、第三者が迷惑メールを送信するために使用される場合があります。 ユーザーから迷惑メールを受けOffice 365、これらのメッセージを Microsoft に報告できます。 手順については、「メッセージと [ファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。

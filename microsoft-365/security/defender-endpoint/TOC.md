@@ -324,7 +324,6 @@
 ##### [PowerShell を使用してスキャンをスケジュールする](schedule-antivirus-scans-powershell.md)
 ##### [WMI を使用してスキャンをスケジュールする](schedule-antivirus-scans-wmi.md)
 #### [Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する](limited-periodic-scanning-microsoft-defender-antivirus.md)
-#### [Microsoft Defender ウイルス対策のパフォーマンスの調整](tune-performance-defender-antivirus.md)
 #### [他のセキュリティ製品との互換性](microsoft-defender-antivirus-compatibility.md)
 #### [Microsoft Defender for Endpoint のマルウェア検出名を検索する](find-defender-malware-name.md)
 
@@ -364,9 +363,13 @@
 ##### [Windows Server の除外](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [回避するべき一般的なミス](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
-#### Microsoft Defender ウイルス対策のトラブルシューティング
+#### Microsoft Defender ウイルス対策用の診断とパフォーマンス
+##### [デバイスの正常性とコンプライアンスのレポート](machine-reports.md)
+##### [リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング](troubleshoot-performance-issues.md) 
 ##### [更新プログラムのコンプライアンスでの Microsoft Defender ウイルス対策レポートのトラブルシューティング](troubleshoot-reporting.md)
-##### [パフォーマンスに関する問題のトラブルシューティング](troubleshoot-performance-issues.md)
+##### [Microsoft Defender ウイルス対策のパフォーマンスの調整](tune-performance-defender-antivirus.md)
+
+#### Microsoft Defender ウイルス対策のトラブルシューティング
 ##### [Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする](troubleshoot-microsoft-defender-antivirus.md)
 ##### [サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -456,7 +459,6 @@
 #### [レポート]()
 ##### [Power BI - API の使用方法 - サンプル](api-power-bi.md)
 ##### [脅威に対する保護のレポート](threat-protection-reports.md)
-#### [デバイスの正常性とコンプライアンスのレポート](machine-reports.md)
 
 ### [高度な追求]()
 #### [高度な追求の概要](advanced-hunting-overview.md)

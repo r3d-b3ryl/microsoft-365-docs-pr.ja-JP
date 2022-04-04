@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: b5bc61de14f54d65e4ce5eb6f7ae78303626c123
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5c80147c18cff8c27f8c205ab1ed600e892f7335
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938951"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499575"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -150,7 +150,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 5. 指示に従ってポリシー設定を構成します。
 
-    表示されるポリシー設定は、選択したラベルのスコープと一致します。 たとえば、**[ファイルとメール]** のスコープのみを持つラベルを選択した場合、ポリシー設定 **[このラベルを既定でグループとサイトに適用する]** および **[ユーザーにグループやサイトにラベルを付けるように要求する]** は表示されません。
+    表示されるポリシー設定は、選択したラベルのスコープと一致します。たとえば、**[ファイルとメール]** のスコープのみを持つラベルを選択した場合、ポリシー設定 **[このラベルを既定でグループとサイトに適用する]** および **[ユーザーにグループやサイトにラベルを付けるように要求する]** は表示されません。
 
     これらの設定の詳細については、概要情報の「[ラベル ポリシーでできること](sensitivity-labels.md#what-label-policies-can-do)」を参照してください。また、個々の設定については、UI のヘルプを参照してください。
 
@@ -168,20 +168,17 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 このボタンを選択すると、[**ポリシーの作成**] 構成が起動し、含めるラベルとラベルの設定を編集できます。 構成を完了すると、選択したユーザーとサービスに変更が自動的にレプリケートされます。
 
-Windows、macOS、iOS、Android の Office アプリに組み込みのラベル付けを使用すると、ユーザーには 4 時間以内に新しいラベルが表示されます。web 上のWord、Excel、PowerPoint の場合は更新を行ってから 1 時間以内に新しいラベルが表示されます。ただし、変更がすべてのアプリとサービスに複製されるまでに最大 24 時間かかります。
-
-機密ラベルをサポートする他のアプリやサービスは、独自の更新スケジュールとポリシー更新のトリガーを使用して、24 時間以上頻繁に更新される場合があります。 詳細については、ドキュメントを確認してください。 たとえば、Azure Information Protection 統合ラベル付けクライアントの場合は、「[Azure Information Protection クライアントの詳細な比較](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients)」表の「**ポリシーの更新**」行を参照してください。
-
-> [!TIP]
-> 機密ラベルとラベル ポリシーの動作が期待よりも遅れる可能性があるタイミングの依存関係を考慮に入れる必要があります。 たとえば、暗号化を適用するラベルに対して [Azure Information Protection](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) サービスによる新しいグループおよびグループ メンバーシップの変更、ネットワーク レプリケーションの待機時間と帯域幅制限、およびグループ メンバーシップのキャッシュを設定します。
-> 
-> それぞれ独自のタイミング サイクルを持つ多くの外部依存関係では、最近の変更に対するラベルとラベル ポリシーのトラブルシューティングを実施する前に 24 時間待機することをお考えください。
-
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>セキュリティ/コンプライアンス センターの PowerShell を含むその他のラベル ポリシー設定
 
 [セキュリティ/コンプライアンス センター](/powershell/exchange/scc-powershell) PowerShell の [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) コマンドレットを使用すると、追加のラベルポリシー設定を利用できます。
 
 Azure Information Protection の統合ラベル付けクライアントは、他のラベリング ソリューションからの移行や、送信されるメールを警告、正当化、またはブロックする Outlook のポップアップ メッセージなど、多くの[詳細設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)をサポートしています。 完全なリストについては、このクライアントの管理ガイドの [[利用できるラベルの詳細設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)] を参照してください。
+
+## <a name="when-to-expect-new-labels-and-changes-to-take-effect"></a>新しいラベルと変更が反映されるタイミング
+
+ラベルとラベル ポリシー設定の場合は、変更がサービスに反映されるまで 24 時間かかります。 それぞれ独自のタイミング サイクルを持つ多くの外部依存関係があるため、最近の変更に対するラベルとラベル ポリシーのトラブルシューティングを実施する前に 24 時間待機することをおすすめします。
+
+ただし、ラベルとラベル ポリシーの変更が反映されるまで 24 時間かからない場合もあれば、24 時間以上かかる場合もあります。 たとえば、Word、Excel、および PowerPoint on the web の新規および削除された秘密度ラベルの場合、1 時間以内に更新内容が複製される場合があります。 ただし、新しいグループとグループ メンバーシップの変更、またはネットワーク レプリケーションの待機時間と帯域幅の制限の設定に依存する構成の場合、これらの変更が反映されるまで 24 ～ 48 時間かかる場合があります。
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>機密ラベルとそのポリシーに PowerShell を使用する
 

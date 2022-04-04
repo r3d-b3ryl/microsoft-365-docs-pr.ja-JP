@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3418eac69930819fdb0e3fd8d1bae80312f89a9f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 14332b2787b59e2ef192741dc97e59a7c7cb5418
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326413"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499509"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>インシデントを管理Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "63326413"
 
 インシデント ポータル (&) **の&で**>インシデントからインシデントを管理 [Microsoft 365 Defender](https://security.microsoft.com)できます。security.microsoft.com。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="[インシデント] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 インシデントを管理する方法は次のとおりです。
 
@@ -53,7 +53,7 @@ ms.locfileid: "63326413"
 
 インシデントを管理するには、インシデント用の[**インシデントの管理**] ウィンドウから行います。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="インシデントの [インシデントの管理] ウィンドウの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="[インシデントの管理] ウィンドウ (Microsoft 365 Defender ポータル)" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 このウィンドウは、次の [インシデントの **管理** ] リンクから表示できます。
 

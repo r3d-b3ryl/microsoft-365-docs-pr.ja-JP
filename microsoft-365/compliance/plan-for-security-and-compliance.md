@@ -1,5 +1,5 @@
 ---
-title: セキュリティコンプライアンスを &amp; 計画する
+title: セキュリティコンプライアンスを計画 &amp; する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
@@ -17,16 +17,16 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: このランディング ページには、セキュリティとコンプライアンスに関するリンクと計画情報がOffice 365。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3138671bce7c2a659d0d7981c32e88d7ffdac0b8
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2a238f4d4c5598e9628bb6bb7adb607b7c24c6cb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110369"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679524"
 ---
-# <a name="plan-for-security-amp-compliance"></a>セキュリティコンプライアンスを &amp; 計画する
+# <a name="plan-for-security-amp-compliance"></a>セキュリティコンプライアンスを計画 &amp; する
 
-セキュリティとコンプライアンスの管理はパートナーシップです。 お客様はデータ、ID、およびデバイスを保護する責任を負い、Microsoft はサービスを積極的にMicrosoft 365します。 組織の適切Microsoft 365レベルをEnterprise Mobility + Security(EMS)を組み合わせて使用できます。
+セキュリティとコンプライアンスの管理はパートナーシップです。 お客様はデータ、ID、およびデバイスを保護する責任を負い、Microsoft はサービスを積極的にMicrosoft 365します。 EMS (Microsoft 365とEnterprise Mobility + Securityを使用して、組織の適切なレベルの保護を実現できます。
   
 ## <a name="step-1-review-capabilities"></a>手順 1: 機能の確認
 
@@ -42,7 +42,7 @@ ms.locfileid: "61110369"
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>手順 3: ID とデバイスのアクセス保護を計画する
 
-データとサービスへのMicrosoft 365保護することは、サイバー攻撃から防御し、データ損失から保護するために重要です。
+データとサービスへのアクセスMicrosoft 365保護することは、サイバー攻撃から防御し、データ損失から保護するために重要です。
   
 - [Office 365 でデータやサービスへのアクセスを保護する](protect-access-to-data-and-services.md)
     
@@ -56,15 +56,15 @@ ms.locfileid: "61110369"
   
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>手順 5: セキュリティ コンプライアンス センター Microsoft 365活用 &amp; する
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>手順 5: セキュリティ コンプライアンス センター Microsoft 365活用&amp;する
 
-セキュリティ コンプライアンス センターでは、脅威管理、データ ガバナンス、検索と調査など、Microsoft 365 セキュリティの範囲を管理するために使用するコントロールを 1 つのビュー &amp; で表示できます。 
+セキュリティ コンプライアンス センター&amp;では、脅威管理、データ ガバナンス、検索と調査など、Microsoft 365 セキュリティの範囲を管理するために使用するコントロールを 1 つのビューで確認できます。 
   
-- [セキュリティ コンプライアンス センター &amp; に移動する](./microsoft-365-compliance-center.md)
+- [セキュリティ コンプライアンス センターに &amp; 移動する](./microsoft-365-compliance-center.md)
     
-- [セキュリティ コンプライアンス センター &amp; のアクセス許可](~/security/office-365-security/protect-against-threats.md)
+- [セキュリティ コンプライアンス センターのアクセス &amp; 許可](~/security/office-365-security/protect-against-threats.md)
     
-- [ユーザーにセキュリティ コンプライアンス センターへのアクセス &amp; 権を与える](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [ユーザーにセキュリティ コンプライアンス センターへのアクセス権を &amp; 与える](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>手順 6: エンドツーエンドのセキュリティ シナリオを開始点として使用する
 
@@ -80,6 +80,6 @@ ms.locfileid: "61110369"
   
 |**サブスクリプション**|**管理 URL**|**ダッシュボードと管理センター**|
 |:-----|:-----|:-----|
-|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理センター  <br/>  セキュリティ/コンプライアンス センター  <br/>  Exchange 管理センター  <br/>  SharePointセンターと管理センター OneDrive for Business管理センター  <br/> |
+|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理センター  <br/>  セキュリティ/コンプライアンス センター  <br/>  Exchange 管理センター  <br/>  SharePoint管理センターと管理センター OneDrive for Business管理センター  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft Mobile Application Management  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Defender for Cloud Apps  <br/> |

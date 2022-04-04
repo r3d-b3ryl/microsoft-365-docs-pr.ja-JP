@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 496d9bf729eaaff6cf12e9734ae80eedacf98a63
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9a700cd57b7843625f40289b43acd0e7a7eda45a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806122"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466677"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 
@@ -34,7 +34,7 @@ Microsoft Defender for Endpoint Device Control Printer Protection は、企業�
 
 Printer Protection の使用を開始する前に、サブスクリプション[の内容を確認Microsoft 365必要があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 Printer Protection にアクセスして使用するには、次の情報が必要です。
 
-- Microsoft 365 E3/ポリシーの展開の詳細
+- Microsoft 365 E3/ポリシーの展開に関する情報
 - Microsoft 365 E5レポートの詳細
 
 ## <a name="permission"></a>アクセス許可
@@ -53,7 +53,7 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
-これらの要件を満Windows 10プリンター Windows 11 台のデバイスがインストールされている必要があります。
+これらの要件を満Windows 10プリンター Windows展開する予定のデバイスが 11 デバイスにインストールされている必要があります。
 
 1. 次の Windows Update がインストールされています。
     - 1809 Windows: 更新プログラム [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46) Windowsインストールする
@@ -94,7 +94,7 @@ Intune では、現在デバイスコントロール プリンター保護は OM
 
 CSP は、次の文字列をサポートします `<enabled/>`。
 
-:::image type="content" source="../../media/customeditrow.png" alt-text="カスタム編集行。":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="[カスタム] ページ" lightbox="../../media/customeditrow.png":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>シナリオ 2: Intune を使用して特定の承認済み USB プリンターを許可する
 
@@ -108,7 +108,7 @@ CSP は、次の文字列をサポートします `<enabled/>`。
 
 CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認された USB プリンターを使用して文字列をサポートします。次の例を示します `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`。
 
-:::image type="content" source="../../media/editrow.png" alt-text="行の編集。":::
+:::image type="content" source="../../media/editrow.png" alt-text="[行の編集] ウィンドウ" lightbox="../../media/editrow.png":::
 
 ## <a name="deploy-policy-via-group-policy"></a>グループ ポリシーを使用してポリシーを展開する
 
@@ -124,7 +124,7 @@ CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認され�
 
   ユーザー構成 \> 管理用テンプレート \> コントロール パネル \> プリンター: デバイス コントロールの印刷制限を有効にする
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="デバイスの印刷制限を有効にします。":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="[デバイスコントロール印刷の制限を有効にする] ウィンドウ" lightbox="../../media/enable-device-ctrl-printing-restrictions.png":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>シナリオ 2: グループ ポリシーを使用して特定の承認済み USB プリンターを許可する
 
@@ -136,7 +136,7 @@ CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認され�
 
   ユーザー構成 \> 管理用テンプレート \> コントロール パネル \> プリンター: 承認済み USB 接続印刷デバイスの一覧
 
-:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="承認された USB 接続印刷デバイスの一覧。":::
+:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="承認済みの USB 接続印刷デバイスの一覧" lightbox="../../media/list-of-approved-connected-print-devices.png":::
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Microsoft Defender for Endpoint ポータルでデバイスコントロールプリンター保護データを表示する
 
@@ -154,7 +154,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高度な狩猟。":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高度な狩猟" lightbox="../../media/device-control-advanced-hunting.png":::
 
  PnP イベントを使用して、組織で使用されている USB プリンターを検索できます。
 
@@ -175,4 +175,4 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="高度な狩猟":::
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="[高度な検索] ページ" lightbox="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png":::

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Office 365 の展開を計画するときに使用する外部ドメインネームシステムレコードの参照リスト。
-ms.openlocfilehash: 39b6f093c196d8b696a8d36458d2ebc18be2a5f2
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 3ba8345c17446f7f6d2d6b034415288eb994ee79
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401428"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568436"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 の外部ドメイン ネーム システムのレコード
 
@@ -48,12 +48,17 @@ SPF と MX レコードは、見つけ出すのが最も困難です。この記
 ## <a name="external-dns-records-required-for-office-365-core-services"></a>Office 365 に必要な外部の DNS レコード (コア サービス)
 <a name="BKMK_ReqdCore"> </a>
 
-すべての Office 365 のお客様は、外部の DNS に 2 つのレコードを追加する必要があります。最初の CNAME レコードは、Office 365 がワークステーションに適切な ID プラットフォームで認証を行うよう指定できるようにします。2 番目の必須レコードは、ドメイン名を所有していることを証明します。
+TXT レコードは、ドメインを所有していることを証明するために必要であり、すべての顧客に必須とされています。
+
+CNAME レコードは、[21Vianet が運用する Office 365](/microsoft-365/admin/services-in-china/services-in-china) を使用しているお客様にのみ必要です。 これにより、Office 365 がワークステーションに適切な ID プラットフォームでの認証を指示できるようになります。 
+
+
   
-|**DNS レコード** <br/> |**用途** <br/> |**使用する値** <br/> |
-|----------|-----------|------------|
-|**CNAME** <br/> **(スイート)** <br/> |正しい ID プラットフォームへの認証を指示するために Office 365 で使用されます。[詳細情報](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **注:** この CNAME は、21Vianet が運営する Office 365 にのみ適用されます。 Office 365 が 21Vianet によって操作されていない場合、カスタム ドメインのユーザーは、"*カスタム ドメイン* はシステムに存在しません" というエラーを受け取り、Office365 ライセンスをアクティブにできません。 [詳細情報](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet) |**エイリアス:** msoid  <br/> **対象:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
-|**TXT** <br/> **(ドメインの確認)** <br/> |このレコードは、ドメインを所有していることを確認するためだけに Office 365 で使用されます。他のものには影響しません。  <br/> |**ホスト:** @ (または、一部の DNS ホスティング プロバイダーでは自分のドメイン名)  <br/> **TXT 値:** Office 365 "_から提供されるテキスト文字列_"  <br/> このレコードを作成するために使用する値は、Office 365 の **ドメイン セットアップ ウィザード** で指定されます。  <br/> |
+|**DNS レコード** <br/> |**用途** <br/> |**使用する値** <br/> |**適用対象**|
+|----------|-----------|------------|------------|
+|**TXT** <br/> **(ドメインの確認)** <br/> |このレコードは、ドメインを所有していることを確認するためだけに Office 365 で使用されます。他のものには影響しません。  <br/> |**ホスト:** @ (または、一部の DNS ホスティング プロバイダーでは自分のドメイン名)  <br/> **TXT 値:** Office 365 "_から提供されるテキスト文字列_"  <br/> このレコードを作成するために使用する値は、Office 365 の **ドメイン セットアップ ウィザード** で指定されます。  <br/> |すべてのお客様|
+|**CNAME** <br/> **(スイート)** <br/> |正しい ID プラットフォームへの認証を指示するために Office 365 で使用されます。[詳細情報](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **注:** この CNAME は、21Vianet が運用する Office 365 にのみ適用されます。 Office 365 が 21Vianet によって操作されていない場合、カスタム ドメインのユーザーは、"*カスタム ドメイン* はシステムに存在しません" というエラーを受け取り、Office365 ライセンスをアクティブにできません。 [詳細情報](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet) |**エイリアス:** msoid  <br/> **対象:** clientconfig.partner.microsoftonline-p.net.cn  <br/> | 21Vianet のお客様のみ|
+
 
 
 ## <a name="external-dns-records-required-for-email-in-office-365-exchange-online"></a>Office 365 でのメールに必要な外部 DNS レコード (Exchange Online)

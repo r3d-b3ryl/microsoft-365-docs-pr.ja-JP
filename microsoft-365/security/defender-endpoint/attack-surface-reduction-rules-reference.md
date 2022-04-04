@@ -1,7 +1,7 @@
 ---
 title: 攻撃表面の縮小ルールのリファレンス
 description: ルールごとに攻撃表面の縮小ルールに関する詳細を一覧表示します。
-keywords: 攻撃表面の縮小ルール、ASR、asr ルール、ヒップ、ホスト侵入防止システム、保護ルール、悪用防止ルール、悪用防止ルール、悪用ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール、ASR ルールの説明
+keywords: 攻撃表面の縮小ルール、ASR、asr ルール、ヒップ、ホスト侵入防止システム、保護ルール、悪用防止ルール、脆弱性対策ルール、悪用ルール、感染防止ルール、Microsoft Defender for Endpoint、ASR ルールの構成、ASR ルールの説明
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 77edaa3d71911bd0594e707996c320285dddabc5
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: b9655189759707e9c4463d3c53a3b0b9fd20e730
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754109"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520582"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃表面の縮小ルールのリファレンス
 
@@ -37,9 +37,10 @@ ms.locfileid: "63754109"
 - [サポートされているオペレーティング システムのバージョン](#supported-operating-systems)
 - [サポートされている構成管理システム](#supported-configuration-management-systems)
 - [ルールごとのアラートと通知の詳細](#per-rule-alert-and-notification-details)
+- [ASR ルールと GUID マトリックス](#asr-rules-and-guids-matrix)
+- [ASR ルール モード](#asr-rule-modes)
 - [ルールごとの説明](#per-rule-descriptions)
   - ルールの説明
-  - GUID
   - 構成管理システムのルール名
 
 ## <a name="public-preview-supported-operating-systems"></a>パブリック プレビュー: サポートされているオペレーティング システム
@@ -110,7 +111,7 @@ _パブリック プレビューの終了: サポートされているオペレ�
 
 この表で参照されている構成管理システムのバージョンに関する情報へのリンクは、次の表の下に示します。
 
-|ルールの名前 | Intune | Microsoft エンドポイント マネージャー |Microsoft Endpoint Configuration Manager |グループ ポリシー<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
+|ルールの名前 | Intune | Microsoft エンドポイント マネージャー |Microsoft Endpoint Configuration Manager |<sup>グループ ポリシー[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
 |[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  Y  |
 |[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y |   | Y | Y  | Y  |
@@ -143,7 +144,7 @@ _パブリック プレビューの終了: サポートされているオペレ�
 
 "ルールの状態" が指定されているルールの場合:
 
-- 組み合わせを含む \<ASR Rule, Rule State\> ASR ルールは、高クラウド ブロック レベルのデバイスに対する Microsoft Defender for Endpoint の通知 (トースト通知) を表示するために使用されます。 高いクラウド ブロック レベルではないデバイスは、ASR ルール、ルールの状態、<の組み合わせに>されません。
+- 組み合わせの \<ASR Rule, Rule State\> ASR ルールは、高クラウド ブロック レベルのデバイスMicrosoft Defender for Endpoint通知 (トースト通知) を表示するために使用されます。 高いクラウド ブロック レベルではないデバイスは、ASR ルール、ルールの状態、<の組み合わせに>されません。
 - EDRは、指定された状態の ASR ルールに対して生成されますが、クラウド ブロック レベルの高いデバイスに対してだけ生成されます。
 
 | ルール名: | ルールの状態: | サーバーでアラートを生成EDR? <br> (はい&nbsp;\|&nbsp;いいえ) | トースト通知を生成しますか? <br> (はい&nbsp;\|&nbsp;いいえ) |
@@ -167,6 +168,27 @@ _パブリック プレビューの終了: サポートされているオペレ�
 |[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要 |
 |   |   |   |   |
   
+## <a name="asr-rules-and-guids-matrix"></a>ASR ルールと GUID マトリックス
+
+| [ルール名] | ルール GUID |
+|:-----|:-----|
+| 悪用された脆弱な署名済みドライバーの悪用をブロックする | 56a863a9-875e-4185-98a7-b882c64b5ce5 |
+| Adobe Reader の子プロセスの作成をブロックする | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c |
+| すべてのアプリケーションOffice子プロセスの作成をブロックする | d4f940ab-401b-4efc-aadc-ad5f3c50688a |
+| ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 |
+| メール クライアントと Web メールから実行可能なコンテンツをブロックする | be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 |
+| 有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする | 01443614-cd74-433a-b99e-2ecdc07bfc25 |
+| 難読化される可能性のあるスクリプトの実行をブロックする | 5beb7efe-fd9a-4556-801d-275e5ffc04cc |
+| JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする | d3e037e1-3eb8-44c8-a917-57927947596d |
+| 実行可能Office作成するアプリケーションをブロックする | 3b576869-a4ec-4529-8536-b80a7769e899 |
+| アプリケーションOffice他のプロセスへのコードの挿入をブロックする | 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 |
+| 通信Office子プロセスの作成をブロックする | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
+| WMI イベント サブスクリプションによる永続化のブロック <br>* ファイルとフォルダーの除外はサポートされていません。 | e6db77e5-3df2-4cf1-b95a-636979351e5b |
+| PSExec および WMI コマンドから発生するプロセス作成をブロックする | d1e49aac-8f56-4280-b9ba-993a6d77406c |
+| USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
+| Win32 API 呼び出しをブロックOfficeマクロ | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
+| ランサムウェアに対する高度な保護の使用 | c1db55ab-c21a-4637-bb3f-a12568109d35 |
+
 ## <a name="asr-rule-modes"></a>ASR ルール モード
 
 - **[構成されていない****] または [無効** にする]: これは、ASR ルールが有効になっていないか無効になっている状態です。 この状態のコードは 0 です。
@@ -203,9 +225,9 @@ PowerShell を使用して警告モードでルールを設定するには、そ
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
 -->
 
-Intune 名: `Block abuse of exploited vulnerable signed drivers` (まだ使用できません)
+Intune名: `Block abuse of exploited vulnerable signed drivers` (まだ使用できません)
 
-Configuration Manager 名: まだ使用できません
+Configuration Manager名: まだ使用できません
   
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
@@ -214,7 +236,7 @@ Advanced hunting action type:
 -->
 
 <!-- 
-Dependencies:
+Dependencies: none provided by engineering
 -->
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Adobe Reader の子プロセスの作成をブロックする
@@ -223,9 +245,9 @@ Dependencies:
 
 ソーシャル エンジニアリングや悪用を通じて、マルウェアはペイロードをダウンロードして起動し、Adobe Reader から抜け出す可能性があります。 Adobe Reader によって子プロセスが生成されるのをブロックすることで、子プロセスをベクターとして使用しようとするマルウェアが拡散を防止します。
 
-Intune 名: `Process creation from Adobe Reader (beta)`
+Intune名:`Process creation from Adobe Reader (beta)`
 
-Configuration Manager 名: まだ使用できません
+Configuration Manager名: まだ使用できません
 
 GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
@@ -242,9 +264,9 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 悪意のある子プロセスを作成する方法は、一般的なマルウェア戦略です。 マルウェアがベクターとしてOfficeマルウェアは、VBA マクロを実行し、コードを悪用して、より多くのペイロードをダウンロードして実行しようとする場合が多い。 ただし、一部の正当な業務行アプリケーションでは、良性の目的で子プロセスを生成する場合があります。コマンド プロンプトを生成したり、PowerShell を使用してレジストリ設定を構成したりします。
 
-Intune 名: `Office apps launching child processes`
+Intune名:`Office apps launching child processes`
 
-Configuration Manager 名: `Block Office application from creating child processes`
+Configuration Manager名:`Block Office application from creating child processes`
 
 GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
@@ -267,9 +289,9 @@ LSASS は、コンピューターにサインインするユーザーをWindows�
 > [!IMPORTANT]
 > 攻撃表面縮小 (ASR) ルール "Windows ローカル セキュリティ機関サブシステム (lsass.exe) からの資格情報の盗用をブロックする" の既定の状態は [構成されていません] から [構成済み] に変更され、既定のモードは [ブロック] に設定されます。 他のすべての ASR ルールは既定の状態のままです。未 **構成です**。 エンドユーザーの通知を減らすために、ルールに追加のフィルター ロジックが既に組み込まれています。 ユーザーは、既定のモードを **上書きする監査** モード、 **警告** モード、または **無効** モードにルールを構成できます。 このルールの機能は、ルールが既定モードで構成されているかどうか、または手動でブロック モードを有効にした場合と同じです。  
 
-Intune 名: `Flag credential stealing from the Windows local security authority subsystem`
+Intune名:`Flag credential stealing from the Windows local security authority subsystem`
 
-Configuration Manager 名: `Block credential stealing from the Windows local security authority subsystem`
+Configuration Manager名:`Block credential stealing from the Windows local security authority subsystem`
 
 GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
@@ -287,7 +309,7 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 - 実行可能ファイル (.exe、.dll、.scr など)
 - スクリプト ファイル (PowerShell .ps、Visual Basic .vbs、JavaScript ファイル.jsなど)
 
-Intune 名: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
+Intune名:`Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
 Microsoft エンドポイント マネージャー名:`Block executable content from email client and webmail`
 
@@ -318,9 +340,9 @@ GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 >
 > 個々のファイルまたはフォルダー (フォルダー パスまたは完全修飾リソース名を使用) を指定できますが、適用するルールや除外を指定することはできません。
 
-Intune 名: `Executables that don't meet a prevalence, age, or trusted list criteria`
+Intune名:`Executables that don't meet a prevalence, age, or trusted list criteria`
 
-Configuration Manager 名: `Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
+Configuration Manager名:`Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
 
 GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
@@ -337,9 +359,9 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
 スクリプト難読化は、マルウェア作成者と正当なアプリケーションの両方が、知的財産を隠したり、スクリプトの読み込み時間を短縮したりするために使用する一般的な手法です。 マルウェアの作成者は難読化を使用して悪意のあるコードを読みにくくし、人間やセキュリティ ソフトウェアによる詳細な調査を防止します。
 
-Intune 名: `Obfuscated js/vbs/ps/macro code`
+Intune名:`Obfuscated js/vbs/ps/macro code`
 
-Configuration Manager 名: `Block execution of potentially obfuscated scripts`
+Configuration Manager名:`Block execution of potentially obfuscated scripts`
 
 GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
@@ -356,9 +378,9 @@ GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
 一般的ではないが、一般企業向けアプリケーションでは、スクリプトを使用してインストーラーをダウンロードおよび起動する場合があります。
 
-Intune 名: `js/vbs executing payload downloaded from Internet (no exceptions)`
+Intune名:`js/vbs executing payload downloaded from Internet (no exceptions)`
 
-Configuration Manager 名: `Block JavaScript or VBScript from launching downloaded executable content`
+Configuration Manager名:`Block JavaScript or VBScript from launching downloaded executable content`
 
 GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
@@ -375,7 +397,7 @@ GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
 マルウェアは、Officeとして悪用され、悪意のあるOfficeをディスクに保存しようとする可能性があります。 これらの悪意のあるコンポーネントは、コンピューターの再起動後も存続し、システム上で保持されます。 したがって、このルールは一般的な永続化手法に対して防御します。
 
-Intune 名: `Office apps/macros creating executable content`
+Intune名:`Office apps/macros creating executable content`
 
 SCCM 名: `Block Office applications from creating executable content`
 
@@ -398,9 +420,9 @@ GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
 このルールは、Word、Excel、およびPowerPoint。
 
-Intune 名: `Office apps injecting code into other processes (no exceptions)`
+Intune名:`Office apps injecting code into other processes (no exceptions)`
 
-Configuration Manager 名: `Block Office applications from injecting code into other processes`
+Configuration Manager名:`Block Office applications from injecting code into other processes`
 
 GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
@@ -420,9 +442,9 @@ GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 > [!NOTE]
 > このルールは、DLP ポリシー のヒントとツール ヒントをブロックOutlook。 このルールは、Outlookおよび Outlook.com にのみ適用されます。
 
-Intune 名: `Process creation from Office communication products (beta)`
+Intune名:`Process creation from Office communication products (beta)`
 
-Configuration Manager 名: 使用できません
+Configuration Manager名: 使用できません
 
 GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
@@ -442,9 +464,9 @@ GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 ファイルレス脅威は、さまざまな戦術を採用して潜伏し、ファイル システムに見つからないようにして、定期的に実行制御を獲得します。 脅威の中には、WMI リポジトリとイベント モデルを悪用して、潜伏できるものがあります。
 
-Intune 名: 使用できません
+Intune名: 使用できません
 
-Configuration Manager 名: 使用できません
+Configuration Manager名: 使用できません
 
 GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
@@ -460,11 +482,11 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 このルールは、 [PsExec](/sysinternals/downloads/psexec) および WMI を介して作成 [されたプロセスの実行](/windows/win32/wmisdk/about-wmi) をブロックします。 PsExec と WMI の両方がコードをリモートで実行できるので、コマンドと制御の目的でこの機能を不正に使用したり、組織のネットワーク全体に感染を広げる危険性があります。
 
 > [!WARNING]
-> Intune または別の MDM ソリューションを使用してデバイスを管理する場合にのみ、 [このルールを](/intune) 使用します。 このルールは、Configuration Manager クライアント[が正しく](/configmgr)機能するためにMicrosoft Endpoint Configuration Manager WMI コマンドをブロックします。
+> このルールは、デバイスを他の MDM ソリューションで管理する場合[Intune](/intune)使用してください。 このルールは、クライアントが正[](/configmgr)しく機能するためにMicrosoft Endpoint Configuration Manager WMI コマンドをブロックConfiguration Manager管理と互換性がありません。
 
-Intune 名: `Process creation from PSExec and WMI commands`
+Intune名:`Process creation from PSExec and WMI commands`
 
-Configuration Manager 名: 該当なし
+Configuration Manager名: 該当なし
 
 GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
@@ -479,9 +501,9 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 このルールを使用すると、管理者は、SD カードを含む USB リムーバブル ドライブから署名されていない実行可能ファイルまたは信頼されていない実行可能ファイルを実行できません。 ブロックされているファイルの種類には、実行可能ファイル (.exe、.dll.scr など) が含まれます。
 
-Intune 名: `Untrusted and unsigned processes that run from USB`
+Intune名:`Untrusted and unsigned processes that run from USB`
 
-Configuration Manager 名: `Block untrusted and unsigned processes that run from USB`
+Configuration Manager名:`Block untrusted and unsigned processes that run from USB`
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
@@ -505,9 +527,9 @@ Office VBA では、Win32 API 呼び出しが有効です。 マルウェアは�
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
-Intune 名: `Win32 imports from Office macro code`
+Intune名:`Win32 imports from Office macro code`
 
-Configuration Manager 名: `Block Win32 API calls from Office macros`
+Configuration Manager名:`Block Win32 API calls from Office macros`
 
 GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
@@ -531,9 +553,9 @@ GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 > [!NOTE]
 > このルールを [使用するには、クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) を有効にする必要があります。
 
-Intune 名: `Advanced ransomware protection`
+Intune名:`Advanced ransomware protection`
 
-Configuration Manager 名: `Use advanced protection against ransomware`
+Configuration Manager名:`Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 

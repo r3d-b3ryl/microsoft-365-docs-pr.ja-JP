@@ -13,16 +13,31 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 57b4119c1c96132b2f9a5c715cb498f228802fcc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c979ace1b5d3f1fa807384c769c5711c9fc2fda7
+ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329853"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63761502"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
 この記事では、Microsoft Managed Desktop のドキュメントの新しい記事 [と更新された記事を一覧表示します](index.yml)。 「更新された」記事には、重要な追加や修正が含め、誤字、スタイル、書式設定の問題の修正などのマイナーな修正は一覧に表示されません。 特定のコミットの履歴 (変更の詳細を含む) を表示するには、常に、GitHub の[リポジトリにアクセスします](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)。
+
+## <a name="march-2022"></a>2022 年 3 月
+
+新しい記事または変更された記事 | 説明
+--- | ---
+| [構成可能な設定のリファレンス](working-with-managed-desktop/config-setting-ref.md) | プロキシ要件の追加 |
+| [ユーザー エクスペリエンスをローカライズ](get-started/localization.md) | [その他の言語のインストール] セクションにメモを追加しました |
+| [構成可能な設定のリファレンス](working-with-managed-desktop/config-setting-ref.md) | 従来のエッジに関するメモを追加しました |
+
+## <a name="february-2022"></a>2022 年 2 月
+
+新しい記事または変更された記事 | 説明
+--- | ---
+| [サービス指標レポート](working-with-managed-desktop/service-metrics-report.md) | サービス メトリック レポートを追加しました |
+| [Microsoft Edge](get-started/edge-browser-app.md) | 更新された記事 |
 
 ## <a name="october-2021"></a>2021 年 10 月
 

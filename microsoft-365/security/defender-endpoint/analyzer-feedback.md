@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 11f2c6202d31a3715a73b189648dcef0ade79b0b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7dbe8ca06c142a3e918c90523ee2d4f147734f18
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322871"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466281"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>Microsoft Defender for Endpoint クライアント アナライザー ツールに関するフィードバックを提供する
 
@@ -30,8 +30,12 @@ ms.locfileid: "63322871"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-Microsoft Defender for Endpoint クライアント アナライザーの改善に役立つフィードバックや提案がある場合は、次のリンクを使用してフィードバックを送信してください。
+Microsoft Defender for Endpoint クライアント アナライザーの改善に役立つフィードバックや提案がある場合は、次のいずれかのオプションを使用してフィードバックを送信します。
 
-Microsoft 365 Defender ポータル (security.microsoft.com):
+1. Microsoft 365 Defender ポータル (security.microsoft.com):
 
-![フィードバック ボタンの画像。](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)
+:::image type="content" source="images/3e2db5015cd4f47436b4765b2303f4f5.png" alt-text="スマイリー フィードバック アイコン" lightbox="images/3e2db5015cd4f47436b4765b2303f4f5.png":::
+
+2. Microsoft 365 Defender ポータル (security.microsoft.com):
+
+:::image type="content" source="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png" alt-text="[フィードバックの送信] ボタン" lightbox="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png":::

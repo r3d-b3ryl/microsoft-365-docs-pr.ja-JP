@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Ent_O365
@@ -15,21 +15,21 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
-description: この記事では、ピアに接続するためのコミュニティ リソースを提供し、PowerShell for Microsoft 365。
-ms.openlocfilehash: 29847774f9e2f04ca056d1b28bc8a659f2214778
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: この記事では、ピアに接続し、PowerShell のサポートを受けるコミュニティ リソースを提供Microsoft 365。
+ms.openlocfilehash: 29a2a2a72a03a082283ed36464790b0e13231174
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170333"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679380"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>PowerShell の Microsoft 365 コミュニティリソース
 
-Connectコミュニティに問い合わせ、同僚に問い合わせ、PowerShell の回答を得Microsoft 365します。 
+Connectコミュニティに問い合わせ、同僚に問い合わせ、PowerShell の質問に対する回答をMicrosoft 365します。 
   
-- [Microsoft 365Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
+- [Microsoft 365 Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
-- [Exchange ServerTechNet コミュニティ フォーラム](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
+- [Exchange Server TechNet コミュニティ フォーラム](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
 ## <a name="see-also"></a>関連項目
 

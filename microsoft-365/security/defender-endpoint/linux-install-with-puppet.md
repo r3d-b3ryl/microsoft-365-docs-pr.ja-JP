@@ -1,8 +1,8 @@
 ---
-title: Linux での Microsoft Defender for Endpoint の展開 (Puppet を使用)
+title: Puppet をMicrosoft Defender for Endpoint Linux に展開する
 ms.reviewer: ''
-description: Puppet を使用して Microsoft Defender for Endpoint を Linux に展開する方法について説明します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
+description: Puppet を使用して Linux にMicrosoft Defender for Endpointを展開する方法について説明します。
+keywords: microsoft、 defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +16,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 305dd74d31f3cbbf07db23f8de89b2b57fe52326
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: a8d92e67e45074fb4084e7fbbc1fa7359b34db36
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62073702"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568382"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Linux での Microsoft Defender for Endpoint の展開 (Puppet を使用)
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Puppet をMicrosoft Defender for Endpoint Linux に展開する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -51,11 +51,11 @@ ms.locfileid: "62073702"
 
 Microsoft 365 Defender ポータルからオンボーディング パッケージをダウンロードします。
 
-1. [Microsoft 365 Defender] ポータルで、[デバイス管理設定 >オンボーディング>**エンドポイント>移動します**。
+1. [Microsoft 365 Defender] ポータルで、[デバイス設定 >オンボーディング>**エンドポイント>移動します**。
 2. 最初のドロップダウン メニューで、オペレーティング システムとして **[Linux サーバー]** を選択します。 2 番目のドロップダウン メニューで、展開 **方法として [優先する Linux 構成管理ツール** ] を選択します。
 3. **[オンボーディング パッケージをダウンロードする]** を選択します。 ファイルを WindowsDefenderATPOnboardingPackage.zip として保存します。
 
-    ![Microsoft 365 Defender ポータルのスクリーンショット。](images/portal-onboarding-linux-2.png)
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="オンボード パッケージをダウンロードするオプション" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. コマンド プロンプトから、ファイルがあることを確認します。 
 
@@ -77,9 +77,9 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
 
 ## <a name="create-a-puppet-manifest"></a>Puppet マニフェストの作成
 
-Linux 上の Defender for Endpoint を、Puppet サーバーによって管理されるデバイスに展開するために、Puppet マニフェストを作成する必要があります。 この例では *、puppetlabs* から利用できる apt モジュールと *yumrepo* モジュールを使用し、モジュールが Puppet サーバーにインストールされていることを前提とします。
+Linux 上の Defender for Endpoint を、Puppet サーバーによって管理されるデバイスに展開するために、Puppet マニフェストを作成する必要があります。 この例では、 *puppetlabs* から利用できる apt モジュールと *yumrepo* モジュールを使用し、モジュールが Puppet サーバーにインストールされていることを前提とします。
 
-Puppet インストールの *modules フォルダー install_mdatp下に、install_mdatp/* ファイル、install_mdatp/マニフェストのフォルダーを作成します。  このフォルダーは、通常 *、/etc/puppetlabs/code/environments/production/modules* on your Puppet server にあります。 上にmdatp_onboardした mdatp_onboard.json ファイルを *、install_mdatp/files フォルダーにコピー* します。 *init.pp を作成する* 展開手順を含むファイルを次に示します。
+Puppet インストールの *modules フォルダー install_mdatp下に、install_mdatp/* ファイル、install_mdatp */* マニフェストのフォルダーを作成します。 このフォルダーは、通常、 */etc/puppetlabs/code/environments/production/modules* on your Puppet server にあります。 上にmdatp_onboardした mdatp_onboard.json ファイルを 、install_mdatp */files フォルダーにコピー* します。 *init.pp を作成する* 展開手順を含むファイルを次に示します。
 
 ```bash
 pwd
@@ -110,9 +110,9 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 > [!WARNING]
 > 初期インストール後にチャネルを切り替えるには、製品を再インストールする必要があります。製品チャネルを切り替えるには: 既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
 
-配布とバージョンをメモし、その下の最も近いエントリを識別します `https://packages.microsoft.com/config/[distro]/` 。
+配布とバージョンをメモし、その下の最も近いエントリを識別します `https://packages.microsoft.com/config/[distro]/`。
 
-以下のコマンドで *、[distro]* と *[version]* を、特定した情報に置き換える必要があります。
+以下のコマンドで、[ *distro]* と *[version]* を、特定した情報に置き換える必要があります。
 
 > [!NOTE]
 > RedHat、Oracle Linux、Amazon Linux 2、CentOS 8 の場合、[ *ディストリビューション]* を 'rhel' に置き換える。
@@ -131,7 +131,7 @@ $version = undef
     case $::osfamily {
         'Debian' : {
             apt::source { 'microsoftpackages' :
-                location => "https://packages.microsoft.com/config/${distro}/${version}/prod",
+                location => "https://packages.microsoft.com/${distro}/${version}/prod",
                 release  => $channel,
                 repos    => 'main',
                 key      => {
@@ -142,7 +142,7 @@ $version = undef
         }
         'RedHat' : {
             yumrepo { 'microsoftpackages' :
-                baseurl  => "https://packages.microsoft.com/config/${distro}/${version}/${channel}",
+                baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
                 descr    => "packages-microsoft-com-prod-${channel}",
                 enabled  => 1,
                 gpgcheck => 1,
@@ -208,7 +208,7 @@ org_id                                  : "[your organization identifier]"
 ...
 ```
 
-- **licensed**: これにより、デバイスが組織に関連付けられているのが確認されます。
+- **ライセンス:** これにより、デバイスが組織に関連付けられているのが確認されます。
 
 - **orgId**: これは Defender for Endpoint 組織識別子です。
 
@@ -220,19 +220,19 @@ org_id                                  : "[your organization identifier]"
 mdatp health --field healthy
 ```
 
-上記のコマンドは、 `1` 製品がオンボードされ、期待通り機能している場合に出力されます。
+上記のコマンドは、製品 `1` がオンボードされ、期待通り機能している場合に出力されます。
 
 > [!IMPORTANT]
 > 製品が初めて起動すると、最新のウイルス対策定義がダウンロードされます。 インターネット接続によっては、これには数分かかる場合があります。 この間、上記のコマンドは `0` の値を返します。
 
-製品が正常ではない場合、終了コード (チェックスルー `echo $?` 可能) は問題を示します。
+製品が正常ではない場合、終了コード ( `echo $?`チェックスルー可能) は問題を示します。
 
 - デバイスがまだオンボードされていない場合は 1。
 - デーモンへの接続を確立できない場合は 3。
 
 ## <a name="log-installation-issues"></a>インストールの問題をログする
 
- エラーが発生した場合にインストーラーによって作成される自動的に生成されたログを検索する方法の詳細については [、「Log installation issues 」を参照してください](linux-resources.md#log-installation-issues)。
+ エラーが発生した場合にインストーラーによって作成される自動的に生成されたログを検索する方法の詳細については、「 [Log installation issues」を参照してください](linux-resources.md#log-installation-issues)。
 
 ## <a name="operating-system-upgrades"></a>オペレーティング システムのアップグレード
 

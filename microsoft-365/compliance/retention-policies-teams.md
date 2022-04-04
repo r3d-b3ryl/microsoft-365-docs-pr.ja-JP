@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: fc870050b8ef69a908553617d755412d95efa288
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: f2b3b5a61eabbffc50da34b14baa20e025b8da0f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63714876"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568524"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -100,7 +100,7 @@ Teams のチャットとチャネル メッセージからのこのデータは�
 > [!NOTE]
 > 隠しフォルダーを含むメールボックスに保存されているメッセージは、電子情報開示ツールで検索できます。 メッセージは SubstituteHolds フォルダー内から完全に削除されるまで、電子情報開示ツールで検索できます。
 
-メッセージが SubstrateHolds フォルダーから完全に削除されると、削除操作がバックエンドの Azure チャット サービスに伝達され、その後、同じ操作が Teams クライアント アプリに中継されます。 この通信またはキャッシュの遅延は、ポリシーが割り当てられているユーザーが Teams アプリでこれらのメッセージを短期間表示しても、電子情報開示検索ではこれらのメッセージのデータが返されない理由を説明できます。
+メッセージの保存期間が終了して SubstrateHolds フォルダに移動すると、バックエンドの Azure チャットサービスに削除操作が伝えられ、同じ操作が Teams クライアントアプリに伝わります。 この通信またはキャッシュの遅延は、ユーザーが Teams アプリでこれらのメッセージを短時間表示し続ける理由を説明しています。
 
 保持ポリシーのために Azure チャット サービスが削除コマンドを受信するこのシナリオでは、Teams クライアント アプリ内の対応するメッセージが会話内のすべてのユーザーに対して削除されます。 これらのユーザーの中には、別の組織のユーザー、保持期間が長い保持ポリシー、または保持ポリシーが割り当てられていないユーザーもいます。 これらのユーザーの場合、メッセージのコピーはメールボックスに保存され、別の保持ポリシーによってメッセージが完全に削除されるまで、電子情報開示で検索可能なままです。
 

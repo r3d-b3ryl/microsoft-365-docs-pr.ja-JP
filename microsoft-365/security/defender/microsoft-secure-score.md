@@ -1,6 +1,6 @@
 ---
 title: Microsoft セキュア スコア
-description: Microsoft Secure Score について、Microsoft 365 Defenderポータルで説明します。セキュリティの態勢を改善する方法、およびセキュリティ管理者が期待できる機能について説明します。
+description: Microsoft Secure Score について、Microsoft 365 Defenderポータルで説明します。セキュリティの姿勢を改善する方法、およびセキュリティ管理者が期待できる機能について説明します。
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender ポータル, 改善アクション
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,12 +23,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d31fa35ddf84b63a115cf3128673794617fcc730
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: ed80d57d25fea2f3c19b6fe6363f993569c68a92
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886894"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499450"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -36,7 +36,7 @@ ms.locfileid: "62886894"
 
 Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 このファイルは、ポータルhttps://security.microsoft.com/securescoreのMicrosoft 365 Defender[があります](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
-セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 組織は、Microsoft 365 Defender ポータルの一元的なダッシュボードから、ユーザー ID、アプリ、デバイスのセキュリティを監視Microsoft 365作業できます。
+セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 組織は、Microsoft 365 Defender ポータルの一元的なダッシュボードから、id、アプリ、デバイスのセキュリティを監視Microsoft 365作業できます。
 
 セキュア スコアは、次のような方法で組織の役に立ちます。  
 
@@ -49,9 +49,9 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 指標と傾向の堅牢な視覚化、他の Microsoft 製品との統合、類似組織とのスコア比較などを、組織で利用することができます。 スコアは、サードパーティのソリューションが推奨アクションに対応した場合も反映されます。
 
-![Secure Score のホームページ。](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="Microsoft Secure Score ホームページ (Microsoft 365 Defender ポータル)" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>しくみ
 
 次のアクションのポイントが与えられる。
 

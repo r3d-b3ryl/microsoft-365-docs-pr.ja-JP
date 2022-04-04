@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 4888569318fd24d25368dc1c923a1efced9f4126
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 9b9658db71ea9945cedb746ec688eff5018a4ba4
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675440"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520618"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
@@ -101,16 +101,16 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 
 DLP ポリシーは、複数の場所にわたって機密情報を含むアイテムを検索して保護できます。
 
-|場所  |範囲を含める/除外する  |データ状態  |その他の前提条件 |
+|Location  |範囲を含める/除外する  |データ状態  |その他の前提条件 |
 |---------|---------|---------|---------|
-|Exchangeメールをオンラインで送信する |配布グループ | data-in-motion| いいえ |
+|Exchangeメールをオンラインで送信する |配布グループ | data-in-motion| 不要 |
 |SharePointサイト   |sites       | data-at-rest </br> data-in-use | いいえ|
-|OneDrive for Business アカウント| アカウントまたは配布グループ |data-at-rest </br> data-in-use|いいえ|
-|Teams チャットおよびチャネル メッセージ     | アカウントまたは配布グループ |data-in-motion </br> data-in-use |  いいえ       |
+|OneDrive for Business アカウント| アカウントまたは配布グループ |data-at-rest </br> data-in-use|不要|
+|Teams チャットおよびチャネル メッセージ     | アカウントまたは配布グループ |data-in-motion </br> data-in-use |  不要       |
 |Microsoft Defender for Cloud Apps   | クラウド アプリ インスタンス       |data-at-rest         | - [Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|デバイス  |ユーザーまたはグループ         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [エンドポイントのデータMicrosoft 365防止の詳細](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [エンドポイントのデータ損失防止の使用を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [情報保護のデバイス プロキシとインターネット接続の設定を構成する](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|オンプレミスリポジトリ (ファイル共有とSharePoint)    |リポジトリ         | data-at-rest         | - [データ損失防止Microsoft 365オンプレミス スキャナーの詳細](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [データ損失防止オンプレミス スキャナーの使用を開始する](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
-|PowerBI| ワークスペース | data-in-use | いいえ|
+|デバイス  |ユーザーまたはグループ         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [エンドポイントのデータMicrosoft 365防止の詳細](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [概要データ損失防止の使用](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [デバイス プロキシとインターネット接続の設定を構成Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|オンプレミスリポジトリ (ファイル共有とSharePoint)    |リポジトリ         | data-at-rest         | - [データ損失防止Microsoft 365オンプレミス スキャナーの詳細](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [概要データ損失防止オンプレミス スキャナーを使用する](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|PowerBI| ワークスペース | data-in-use | 不要|
 
 Exchange に特定の配布グループを含めるように選択した場合、DLP ポリシーはそのグループのメンバーにのみ適用されます。 同様に、配布グループを除外すると、その配布グループのすべてのメンバーがポリシー評価から除外されます。 ポリシーを配布リストのメンバー、動的配布グループ、セキュリティ グループの範囲にすることができます。 DLP ポリシーには、このような追加および除外を 50 個まで含めることができます。
 
@@ -125,16 +125,16 @@ DLP ポリシーは、機密情報の種類 (SIT)、機密ラベル、または�
 > [!IMPORTANT]
 > ポリシーに複数の場所を選択すると、コンテンツ定義カテゴリの "no" 値が "yes" 値よりも優先されます。 たとえば、サイトのみを選択SharePointポリシーは、1 つ以上の SIT、機密ラベル、または保持ラベルによる機密アイテムの検出をサポートします。 ただし、チャットとチャネル ***SharePointの場所*** Teamsを選択すると、ポリシーは SIT による機密性の高いアイテムの検出のみをサポートします。
 
-|場所| コンテンツは SIT で定義できます| コンテンツは、感度ラベルを定義できます| コンテンツは保持ラベルで定義できます|
+|Location| コンテンツは SIT で定義できます| コンテンツは、感度ラベルを定義できます| コンテンツは保持ラベルで定義できます|
 |---------|---------|---------|---------|
-|Exchangeメールをオンラインで送信する|はい| はい| いいえ|
+|Exchangeメールをオンラインで送信する|はい| はい| 不要|
 |SharePointサイト| はい| はい| はい|
 |OneDrive for Business アカウント| はい| はい| はい|
-|Teamsおよびチャネル メッセージ | はい| いいえ| いいえ|
-|デバイス |はい | はい|  いいえ|
+|Teamsおよびチャネル メッセージ | はい| 不要| 不要|
+|デバイス |はい | はい|  不要|
 |Microsoft Defender for Cloud Apps | はい| はい| はい|
-|オンプレミス リポジトリ| はい| はい| いいえ|
-|PowerBI|はい | はい| いいえ|
+|オンプレミス リポジトリ| はい| はい| 不要|
+|PowerBI|はい | はい| 不要|
 
 > [!NOTE]
 > DLP は、電子メールと添付ファイルの感度ラベルの検出をサポートしています。「DLP ポリシーで感度ラベルを条件として使用する [」を参照してください](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies)。
@@ -297,7 +297,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 - コンテンツが含まれている
 - 「監視 [およびアクションを実行できるエンドポイント アクティビティ」を参照してください。](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Microsoft Defender for Cloud Apps がサポートする条件
+##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>サポートMicrosoft Defender for Cloud Apps条件
 
 - コンテンツが含まれている
 - コンテンツは、ユーザーから共有Microsoft 365
@@ -405,33 +405,33 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 - すべてのアプリ
 - 定義する制限付きアプリの一覧
-- 定義した制限付きアプリ グループ (プレビュー) を指定します。
+- 定義する制限付きアプリ グループ (プレビュー) です。
 
 ##### <a name="service-domain-and-browser-activities"></a>サービス ドメインとブラウザーのアクティビティ
 
 [クラウド サービス ドメインの許可 **と** ブロック] と [許可しない [ブラウザー] リスト](dlp-configure-endpoint-settings.md#browser-and-domain-restrictions-to-sensitive-data) (「機密データに対するブラウザーとドメインの制限」を参照) `Audit only``Block with override``Block` を構成し、保護されたファイルをクラウド サービス ドメインにアップロードするか、許可されていないブラウザーからアクセスしようとすると、ポリシー アクションを 、アクティビティに構成できます。
 
-##### <a name="file-activities-for-all-apps"></a>すべてのアプリのファイル アクティビティ
+##### <a name="file-activities-for-all-apps"></a>すべてのアプリ向けファイル アクティビティ
 
 [すべての **アプリのファイル アクティビティ**] オプションを使用して、[ファイル アクティビティを制限しない] または [特定のアクティビティに制限を適用する **] を選択します**。 特定のアクティビティに制限を適用する場合、ここで選択したアクションは、ユーザーが DLP で保護されたアイテムにアクセスした場合に適用されます。 DLP には、次の `Audit only`ユーザー `Block with override`アクティビティに対 `Block` して 、(アクション) を指定できます。
 
-- **クリップボードにコピー**
+- **クリップボードにコピーする**
 - **USB リムーバブル ドライブへのコピー** 
-- **ネットワーク共有へのコピー**
-- **Print**
+- **ネットワーク共有にコピーする**
+- **印刷**
 - **許可されていないアプリを使用してコピーまたはBluetoothする**
 - **リモート デスクトップ サービス**
 
 
-##### <a name="restricted-app-activities"></a>制限付きアプリアクティビティ  
+##### <a name="restricted-app-activities"></a>制限されたアプリのアクティビティ  
 
 以前は「許可されていないアプリ」と呼ばばがありましたが、制限を適用するエンドポイント DLP 設定でアプリの一覧を定義します。 ユーザーが一覧にあるアプリを使用して DLP `Audit only``Block with override`で保護されたファイルにアクセスしようとすると、アクティビティを`Block`使用できます。 制限付きアプリ アクティビティ **で定義されている DLP アクションは** 、アプリが制限付きアプリ グループのメンバーである場合に上書きされます。 その後、制限付きアプリ グループで定義されているアクションが適用されます。
 
-##### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>制限付きアプリ グループ内のアプリのファイル アクティビティ (プレビュー)
+##### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>制限されたアプリ グループ内のアプリのファイル アクティビティ (プレビュー)
 
 制限付きアプリ グループは、エンドポイント DLP 設定で定義し、制限付きアプリ グループをポリシーに追加します。 制限付きアプリ グループをポリシーに追加する場合は、次のいずれかのオプションを選択する必要があります。
 
-- ファイルアクティビティを制限しない
+- ファイル アクティビティを制限しない
 - すべてのアクティビティに制限を適用する
 - 特定のアクティビティに制限を適用する
 
@@ -439,7 +439,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 詳細については、「 [制限付きアプリとアプリ グループ](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) 」を参照してください。 
 
-#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Microsoft Defender for Cloud Apps アクション
+#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Microsoft Defender for Cloud Appsアクション
 
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 - サード パーティ製アプリの制限
@@ -480,7 +480,7 @@ AND
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 - デバイスのアクティビティを監査またはWindowsする
 
-[デバイス] と [Microsoft Defender for Cloud Apps] を選択した場合、次のアクションを使用できます。
+[デバイスとデバイス] を選択Microsoft Defender for Cloud Apps、次のアクションを使用できます。
 
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 - デバイスのアクティビティを監査またはWindowsする
@@ -531,9 +531,9 @@ for where they are used/expected behavior-->
 
 をクリックし、電子メール テキスト、件名、ポリシー ヒント テキストをカスタマイズします。
 
-![Exchange、SharePoint、OneDrive、Teams チャットとチャネル、および Defender for Cloud Apps で使用可能なユーザー通知とポリシー ヒントの構成オプション](../media/dlp-user-notification-non-devices.png)
+![Exchange、SharePoint、SharePoint、OneDrive、Teams チャットとチャネル、Defender for Cloud アプリで使用できるユーザー通知とポリシー ヒントの構成オプション](../media/dlp-user-notification-non-devices.png)
 
-[デバイスのみ] を選択した場合、Exchange、SharePoint、OneDrive、Teams チャット、チャネル、Defender for Cloud Apps で使用可能なすべての同じオプションと、Windows 10 デバイスに表示される通知タイトルとコンテンツをカスタマイズするオプションが表示されます。
+[デバイスのみ] を選択した場合、Exchange、SharePoint、OneDrive、Teams チャット、チャネル、Defender for Cloud アプリで使用可能なすべての同じオプションと、Windows 10 デバイスに表示される通知タイトルとコンテンツをカスタマイズするオプションが表示されます。.
 
 ![デバイスで使用できるユーザー通知とポリシー ヒントの構成オプション](../media/dlp-user-notification-devices.png)  
 
@@ -601,7 +601,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 -->
 
-### <a name="user-overrides"></a>ユーザーの上書き
+### <a name="user-overrides"></a>ユーザー上書き
 
 ユーザーオーバーライドの目的は、ユーザーが作業を続行できるよう、Exchange、SharePoint、OneDrive、または Teams の機密性の高いアイテムに対する DLP ポリシーブロックアクションを正当化してバイパスする方法をユーザーに与える方法です。 ユーザーの上書きは、Office 365  サービスのユーザーにポリシー ヒントを通知するが有効になっている場合にのみ有効になっているので、ユーザーの上書きは通知とポリシーのヒントと手をつないで行きます。 
 

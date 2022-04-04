@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 50dbe395bee852601aae8e834514c6bbac3dd84d
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: d7e7f7d7c22da007187db5df8bd773dca798597c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245053"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466303"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 の概要
 
@@ -32,12 +32,12 @@ ms.locfileid: "62245053"
 
 Microsoft Defender for Endpoint は、高度な脅威を防止、検出、調査、および対応するための組織を支援するために設計されたエンタープライズ エンドポイント セキュリティ プラットフォームです。 Defender for Endpoint が次の 2 つのプランで利用可能になります。 
 
-- **エンドポイント プラン 1 の Defender** は、この記事で説明します。そして 
-- **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**(一般提供)、以前は Defender for Endpoint と [呼ばれる](microsoft-defender-endpoint.md)。
+- **この記事で説明するエンドポイント プラン 1** の Defender。そして 
+- **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**(一般提供)、以前は [Defender for Endpoint と呼ばれる](microsoft-defender-endpoint.md)。
 
 次の図の緑色のボックスは、Defender for Endpoint Plan 1 に含まれている情報を示しています。
 
-:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 ダイアグラム":::
+:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 で説明されている機能" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
 
 このガイドを使用して、以下を行います。
 
@@ -48,17 +48,17 @@ Microsoft Defender for Endpoint は、高度な脅威を防止、検出、調査
 - [メンテナンスと運用の概要を確認する](mde-p1-maintenance-operations.md)
 
 > [!TIP]
-> Defender for Endpoint Plan 1 と Plan 2 の違い[について詳しくは、以下をご覧ください](defender-endpoint-plan-1-2.md)。
+> [Defender for Endpoint Plan 1 と Plan 2 の違いについて説明します](defender-endpoint-plan-1-2.md)。
 
 ## <a name="defender-for-endpoint-plan-1-capabilities"></a>Defender for Endpoint Plan 1 の機能
 
 Defender for Endpoint Plan 1 には、次の機能が含まれています。
 
 - **[業界をリードする堅牢](#next-generation-protection)** なマルウェア対策とウイルス対策保護を含む次世代の保護
-- **[脅威が検出された](#manual-response-actions)** 場合にセキュリティ チームがデバイスまたはファイルに対して実行できる、検疫にファイルを送信するなどの手動対応アクション
+- **[脅威が検出](#manual-response-actions)** された場合にセキュリティ チームがデバイスまたはファイルに対して実行できる、検疫にファイルを送信するなどの手動対応アクション
 - **[デバイスを強化し、](#attack-surface-reduction)** ゼロデイ攻撃を防止し、エンドポイントのアクセスと動作を詳細に制御する攻撃表面の縮小機能
-- **[サーバー ポータルとの一元](#centralized-management)** 的な構成と管理Microsoft 365 Defenderと統合Microsoft エンドポイント マネージャー
-- **[さまざまなプラットフォームの](#cross-platform-support)** 保護 (Windows macOS、iOS、Android デバイスなど)
+- **[ポータルとの一元的](#centralized-management)** な構成と管理Microsoft 365 Defenderと統合Microsoft エンドポイント マネージャー
+- **[Windows](#cross-platform-support)**、macOS、iOS、Android デバイスなど、さまざまなプラットフォームの保護
 
 以下のセクションでは、これらの機能の詳細について説明します。 
 
@@ -80,8 +80,8 @@ Defender for Endpoint Plan 1 には、次の機能が含まれています。
 |:---|:---|:---|
 | Device | ウイルス対策スキャンの実行 | ウイルス対策スキャンを開始します。 デバイスで脅威が検出された場合、ウイルス対策スキャン中にこれらの脅威に対処する場合が多い。 |
 | Device | デバイスの分離 | Defender for Endpoint への接続を維持しながら、組織のネットワークからデバイスを切断します。 このアクションを使用すると、デバイスを監視し、必要に応じてさらにアクションを実行できます。 |
-| ファイル | 停止と検疫 |プロセスの実行を停止し、関連ファイルを検疫します。 |
-| ファイル | ファイルをブロックまたは許可するインジケーターを追加する | ブロックインジケーターは、ポータブル実行可能ファイルがデバイスで読み取り、書き込み、または実行されるのを防ぐ。 <p>許可インジケーターは、ファイルがブロックまたは修復されるのを防ぐ。 |
+| File | 停止と検疫 |プロセスの実行を停止し、関連ファイルを検疫します。 |
+| File | ファイルをブロックまたは許可するインジケーターを追加する | ブロックインジケーターは、ポータブル実行可能ファイルがデバイスで読み取り、書き込み、または実行されるのを防ぐ。 <p>許可インジケーターは、ファイルがブロックまたは修復されるのを防ぐ。 |
 
 詳細については、次の記事を参照してください。
 
@@ -100,7 +100,7 @@ Defender for Endpoint Plan 1 には、次の機能が含まれています。
 - [ネットワーク ファイアウォール](#network-firewall)
 - [アプリケーション制御](#application-control)
 
-Defender for Endpoint の攻撃表面縮小機能の詳細については、「攻撃表面の縮小の [概要」を参照してください](overview-attack-surface-reduction.md)。
+Defender for Endpoint の攻撃表面縮小機能の詳細については、「攻撃表面の縮小の概要 [」を参照してください](overview-attack-surface-reduction.md)。
 
 ### <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 
@@ -120,11 +120,11 @@ Defender for Endpoint の攻撃表面縮小機能の詳細については、「�
 
 詳細については、「フォルダー アクセスを [制御して重要なフォルダーを保護する」を参照してください](controlled-folders.md)。
 
-### <a name="device-control"></a>デバイス コントロール
+### <a name="device-control"></a>デバイス制御
 
 組織のデバイスに対する脅威は、USB ドライブなどのリムーバブル ドライブ上のファイルの形式で受け取る場合があります。 Defender for Endpoint には、承認されていない周辺機器からの脅威がデバイスを侵害するのを防ぐための機能が含まれています。 Defender for Endpoint を構成して、リムーバブル デバイス上のリムーバブル デバイスとファイルをブロックまたは許可できます。 
 
-詳細については [、「Control USB デバイスとリムーバブル メディア」を参照してください](control-usb-devices-using-intune.md)。
+詳細については、「 [Control USB デバイスとリムーバブル メディア」を参照してください](control-usb-devices-using-intune.md)。
 
 ### <a name="web-protection"></a>Web 保護
 
@@ -139,7 +139,7 @@ Web 保護を使用すると、Web の脅威や望ましくないコンテンツ
 
 ネットワーク保護を使用すると、フィッシング詐欺、悪用、その他の悪意のあるコンテンツをインターネット上でホストする可能性のある危険なドメインに組織がアクセスするのを防ぐことが可能です。 
 
-詳細については、「ネットワークの保護 [」を参照してください](network-protection.md)。
+詳細については、「ネットワークを保護 [する」を参照してください](network-protection.md)。
 
 ### <a name="network-firewall"></a>ネットワーク ファイアウォール
 
@@ -149,42 +149,42 @@ Web 保護を使用すると、Web の脅威や望ましくないコンテンツ
 - 機密データと知的財産を保護する
 - セキュリティ投資の拡張
 
-詳細については、「高度なセキュリティ[を備Windows Defenderファイアウォール」を参照してください](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
+詳細については、「高度なセキュリティ[Windows Defenderファイアウォール」を参照してください](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
 
 ### <a name="application-control"></a>アプリケーション制御
 
 アプリケーション制御は、システム Windows (カーネル) で信頼できるアプリケーションとコードのみを実行することで、アプリケーション エンドポイントを保護します。 セキュリティ チームは、アプリケーションの属性 (証明書の共同設計、評判、起動プロセスなど) を考慮するアプリケーション制御ルールを定義できます。 アプリケーションコントロールは、Windows 10以降で使用できます。
 
-詳細については、「アプリケーション コントロール[for Windows」 を参照してください](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)。
+詳細については、「アプリケーション コントロール [for Windows」を参照してください](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)。
 
 ## <a name="centralized-management"></a>集中管理
 
 Defender for Endpoint Plan 1 には Microsoft 365 Defender ポータルが含まれています。これにより、セキュリティ チームは検出された脅威に関する現在の情報を表示し、脅威を軽減するための適切なアクションを実行し、組織の脅威保護設定を一部管理できます。
 
-詳細については、「ポータルの概要[Microsoft 365 Defender」を参照してください](portal-overview.md)。
+詳細については、「ポータルの概要Microsoft 365 Defender[」を参照してください](portal-overview.md)。
 
 ### <a name="role-based-access-control"></a>役割ベースのアクセス制御
 
-役割ベースのアクセス制御 (RBAC) を使用して、セキュリティ管理者は役割とグループを作成して、管理者ポータル () への適切なアクセスをMicrosoft 365 Defenderできます [https://security.microsoft.com](https://security.microsoft.com) 。 RBAC を使用すると、Defender for Cloud にアクセスできるユーザーと、そのユーザーが見て何を行えるのかを詳細に制御できます。 
+役割ベースのアクセス制御 (RBAC) を使用して、セキュリティ管理者は役割とグループを作成して、ポータル ([https://security.microsoft.com](https://security.microsoft.com)) への適切なアクセスMicrosoft 365 Defenderできます。 RBAC を使用すると、Defender for Cloud にアクセスできるユーザーと、そのユーザーが見て何を行えるのかを詳細に制御できます。 
 
 詳細については、「役割ベースのアクセス [制御を使用してポータル アクセスを管理する」を参照してください](rbac.md)。
 
 ### <a name="reporting"></a>Reporting
 
-このMicrosoft 365 Defenderポータル ( ) は、検出された脅威に関する情報や、それらの脅威に対処するアクション [https://security.microsoft.com](https://security.microsoft.com) に簡単にアクセスできます。 
+このMicrosoft 365 Defenderポータル ([https://security.microsoft.com](https://security.microsoft.com)) は、検出された脅威に関する情報や、それらの脅威に対処するアクションに簡単にアクセスできます。 
 
 - ホーム **ページには** 、危険にさらされているユーザーまたはデバイス、検出された脅威の数、作成されたアラート/インシデントを一目で示すカードが含まれています。
 - [ **インシデントと&] セクション** には、トリガーされたアラートの結果として作成されたインシデントが一覧表示されます。 アラートとインシデントは、デバイス間で脅威が検出されると生成されます。
 - アクション **センターには、** 実行された修復アクションが一覧表示されます。 たとえば、ファイルが検疫に送信された場合、または URL がブロックされている場合、各アクションは [履歴] タブの [アクション センター] に **一覧表示** されます。
 - [ **レポート] セクション** には、検出された脅威とその状態を示すレポートが含まれています。 
 
-詳細については [、「Microsoft Defender for Endpoint Plan 1 の概要」を参照してください](mde-plan1-getting-started.md)。
+詳細については、「 [Microsoft Defender for Endpoint Plan 1 の概要」を参照してください](mde-plan1-getting-started.md)。
 
 ### <a name="apis"></a>API
 
 Defender for Endpoint API を使用すると、ワークフローを自動化し、組織のカスタム ソリューションと統合できます。 
 
-詳細については [、「Defender for Endpoint API」を参照してください](management-apis.md)。 
+詳細については、「 [Defender for Endpoint API」を参照してください](management-apis.md)。 
 
 ## <a name="cross-platform-support"></a>クロスプラットフォームのサポート
 
@@ -200,6 +200,6 @@ Defender for Endpoint API を使用すると、ワークフローを自動化し
 ## <a name="next-steps"></a>次の手順
 
 - [Microsoft Defender for Endpoint Plan 1 とプラン 2 の比較](defender-endpoint-plan-1-2.md)
-- [Defender for Endpoint Plan 1 のセットアップと構成](mde-p1-setup-configuration.md)
+- [Defender for Endpoint プラン 1 の設定と構成](mde-p1-setup-configuration.md)
 - [Defender for Endpoint Plan 1 の概要](mde-plan1-getting-started.md)
 - [エンドポイント プラン 1 の Defender の管理](mde-p1-maintenance-operations.md)

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e7253993a1c05bd25e6dd13865826c42dd7603a
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 5c5a457d960f7dd7906c7d26a099d242507fbe86
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400252"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499201"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 
@@ -27,6 +27,8 @@ ms.locfileid: "63400252"
 
 
 **適用対象:**
+
+- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -49,17 +51,12 @@ ms.locfileid: "63400252"
 
 一部のアクションでは、特定のアクセス許可が必要です。 次の表では、ポータブル実行可能ファイル (PE) および非 PE ファイルに対して特定のアクセス許可が実行できるアクションについて説明します。
 
-<br>
-
-****
-
 |アクセス許可|PE ファイル|PE 以外のファイル|
 |---|:---:|:---:|
 |データを表示|X|X|
 |アラートの調査|&#x2611;|X|
 |ライブ応答の基本|X|X|
 |ライブ応答の詳細設定|&#x2611;|&#x2611;|
-|
 
 役割の詳細については、「役割ベースのアクセス制御 [の役割の作成と管理」を参照してください](user-roles.md)。
 
@@ -72,7 +69,7 @@ ms.locfileid: "63400252"
 >
 > - アクションを実行しているデバイスは、Windows 10バージョン 1703 以降で実行され、Windows 11
 > - ファイルが信頼できるサード パーティの発行元に属していないか、Microsoft によって署名されていない
-> - Microsoft Defender ウイルス対策パッシブ モードで実行している必要があります。 詳細については、「互換性に[関するMicrosoft Defender ウイルス対策参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+> - Microsoft Defender ウイルス対策パッシブ モードで実行している必要があります。 詳細については、「[Microsoft Defender ウイルス対策の互換性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)」を参照してください。
 
 [ **ファイルの停止と検疫]** アクションには、実行中のプロセスの停止、ファイルの検疫、レジストリ キーなどの永続的なデータの削除が含まれます。
 
@@ -93,15 +90,15 @@ ms.locfileid: "63400252"
 
 2. トップ バーに移動し、[ファイルの停止 **と検疫] を選択します**。
 
-   ![ファイルの停止と検疫のアクションのイメージ。](images/atp-stop-quarantine-file.png)
+   :::image type="content" source="images/atp-stop-quarantine-file.png" alt-text="ファイルの停止と検疫のアクション" lightbox="images/atp-stop-quarantine-file.png":::
 
 3. 理由を指定し、[確認] を **選択します**。
 
-   ![ファイルのモーダル ウィンドウの停止と検疫のイメージ。](images/atp-stop-quarantine.png)
+   :::image type="content" source="images/atp-stop-quarantine.png" alt-text="[ファイルの停止と検疫] ページ" lightbox="images/atp-stop-quarantine.png":::
 
    アクション センターには、申請情報が表示されます。
 
-   ![ファイルの停止と検疫のアクション センターのイメージ。](images/atp-stopnquarantine-file.png)
+   :::image type="content" source="images/atp-stopnquarantine-file.png" alt-text="ファイルの停止と検疫のアクション センター" lightbox="images/atp-stopnquarantine-file.png":::
 
    - **申請時間** - アクションが送信された時刻を示します。
    - **成功** - ファイルが停止して検疫されているデバイスの数を示します。
@@ -114,7 +111,7 @@ ms.locfileid: "63400252"
 
 ファイルがデバイスから削除されると、次の通知が表示されます。
 
-![デバイス ユーザーの通知のイメージ。](images/atp-notification-file.png)
+:::image type="content" source="images/atp-notification-file.png" alt-text="デバイス上のユーザーに通知する" lightbox="images/atp-notification-file.png":::
 
 デバイスタイムラインでは、ファイルが停止して検疫されたデバイスごとに新しいイベントが追加されます。
 
@@ -130,7 +127,7 @@ ms.locfileid: "63400252"
 
    1. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-2. 次のコマンドを入力し、Enter キーを **押します**。
+2. 次のコマンドを入力して、**Enter キー** を押します。
 
    ```dos
    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
@@ -150,7 +147,7 @@ ms.locfileid: "63400252"
 
 既定では、検疫中のファイルをダウンロードできる必要があります。
 
-![ダウンロード ファイルアクションのイメージ。](images/atp-download-file-action.png)
+:::image type="content" source="images/atp-download-file-action.png" alt-text="[ファイルのダウンロード] アクション" lightbox="images/atp-download-file-action.png":::
 
 ### <a name="download-quarantined-files"></a>検疫済みファイルのダウンロード
 
@@ -232,7 +229,7 @@ ms.locfileid: "63400252"
 
 送信日時、ユーザーの送信、アクションが成功または失敗した場合など、他のすべての関連する詳細も表示されます。
 
-![情報を含むアクション センターのイメージ。](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="情報を含むアクション センター" lightbox="images/action-center-details.png":::
 
 ## <a name="deep-analysis"></a>詳細分析
 
@@ -256,10 +253,10 @@ ms.locfileid: "63400252"
 > [!NOTE]
 > 自動的に収集できるのはWindows 10 11 Windowsファイルと 11 ファイルのみです。
 
-ファイルが Windows 10 デバイス (または Windows 11) で観察されなかった場合は、[Microsoft セキュリティ](https://www.microsoft.com/security/portal/submission/submit.aspx) センター ポータルからサンプルを送信し、[詳細な分析] ボタンが使用可能になるのを待ちます。
+Windows 10 デバイス (または Windows 11) でファイルが観察されなかった場合は、[Microsoft 365 Defender ポータル](https://www.microsoft.com/security/portal/submission/submit.aspx)からサンプルを送信し、詳細分析ボタンが使用可能になるのを待ちます。
 
 > [!NOTE]
-> Microsoft Security Center Portal のバックエンド処理フローにより、Defender for Endpoint のディープ分析機能のファイル送信と可用性の間に最大 10 分の待機時間が発生する可能性があります。
+> Microsoft 365 Defender Portal のバックエンド処理フローにより、Defender for Endpoint のディープ分析機能のファイル送信と可用性の間に最大 10 分の待機時間が発生する可能性があります。
 
 ### <a name="submit-files-for-deep-analysis"></a>詳細分析用にファイルを送信する
 
@@ -271,7 +268,7 @@ ms.locfileid: "63400252"
 
 2. ファイル ビューの **[深い分析** ] タブで、[送信] を **選択します**。
 
-   ![PE ファイルは、[ファイルの詳細] セクションでのみ送信できます。](images/submit-file.png)
+   :::image type="content" source="images/submit-file.png" alt-text="[PE ファイルの送信] ボタン" lightbox="images/submit-file.png":::
 
    > [!NOTE]
    > PE ファイルのみサポートされます 。このファイルには、 _.exeファイル_ _.dll_ があります。
@@ -295,7 +292,7 @@ ms.locfileid: "63400252"
 1. 詳細分析のために提出したファイルを選択します。
 2. [詳細分析 **] タブを選択** します。以前のレポートがある場合は、レポートの概要がこのタブに表示されます。
 
-    ![詳細分析レポートには、複数のカテゴリの詳細情報が表示されます。](images/analysis-results-nothing500.png)
+   :::image type="content" source="images/analysis-results-nothing500.png" alt-text="複数のカテゴリの詳細情報を示す詳細な分析レポート" lightbox="images/analysis-results-nothing500.png":::
 
 #### <a name="troubleshoot-deep-analysis"></a>詳細な分析のトラブルシューティング
 

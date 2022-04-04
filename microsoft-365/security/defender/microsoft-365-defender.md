@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 28f50cbd362104ba910ed5560e184036fc7f8703
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 15f4d179d3bc5590e014a15622e462932e8dea7c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754646"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498717"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -83,15 +83,15 @@ Microsoft 365 Defender の独自の製品間レイヤーは、個々のサービ
 
 Microsoft 365 Defender ポータルが、製品間で関連するすべてのアラートを 1 つのインシデントに関連付ける方法の例を次に示します。
 
-:::image type="content" source="../../media/overview-incident.png" alt-text="インシデントの概要ページの例" lightbox="../../media/overview-incident.png":::
+:::image type="content" source="../../media/overview-incident.png" alt-text="インシデントの概要ページ" lightbox="../../media/overview-incident.png":::
 
 インシデントに関連するアラートの一覧の例を次に示します。
 
-:::image type="content" source="../../media/incident-list.png" alt-text="インシデントのアラートのリストの例" lightbox="../../media/incident-list.png":::
+:::image type="content" source="../../media/incident-list.png" alt-text="インシデントのアラートの一覧" lightbox="../../media/incident-list.png":::
 
 電子メールとエンドポイントの生データに基づくクエリベースのハンティングの例を次に示します。
 
-:::image type="content" source="../../media/advanced-hunting.png" alt-text="高度なハンティングとクエリの例" lightbox="../../media/advanced-hunting.png":::
+:::image type="content" source="../../media/advanced-hunting.png" alt-text=" クエリの詳細を含む [高度な検索] ページ" lightbox="../../media/advanced-hunting.png":::
 
 Microsoft 365 Defender クロスプロダクト機能には、次のようなものがあります。
 
@@ -155,11 +155,11 @@ Microsoft 365 Defender は、Microsoft Defender for Office 365 および Microso
 
 セキュリティ情報を一元化すると、Microsoft 365 全体でセキュリティ インシデントを調査するための単一の場所が作成されます。 主な例は、Microsoft 365 Defender のクイック起動時の **インシデントとアラート** の下の **インシデント** です。
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Microsoft 365 Defender の [インシデント] ページの例" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="[インシデント] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/converged-incidents-2.png.png":::
 
 インシデント名を選択すると、セキュリティ情報の一元化の価値を示すページが表示されます。
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Microsoft 365 Defender のインシデントの [概要] ページの例" lightbox="../../media/converged-incident-info-3.png":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="ポータル内のインシデントの概要ページMicrosoft 365 Defenderします。" lightbox="../../media/converged-incident-info-3.png":::
 
 インシデントのページの上部に、**[概要]**、**[アラート]**、**[デバイス]**、**[ユーザー]**、**[メールボックス]**、**[調査]**、**[証拠と応答]**、および **[グラフ]** タブが表示されます。 詳細については、これらのタブを選択してください。 たとえば、**[ユーザー]** タブには、集中型ワークロード (Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Cloud Apps) のユーザーと、オンプレミスの Active Directory Domain Services (AD DS)、Azure AD、サードパーティの ID プロバイダーなどのさまざまなソースの情報が表示されます。 詳細については、「[ユーザーを調査する](investigate-users.md)」を参照してください。
 
@@ -173,11 +173,11 @@ Microsoft 365 Defender は、Microsoft Defender for Office 365 および Microso
 
 #### <a name="unified-settings"></a>統一された設定
 
-:::image type="content" source="../../media/converged-add-role-9.png" alt-text="Microsoft 365 Defender ポータルの [設定] ページ" lightbox="../../media/converged-add-role-9.png":::
+:::image type="content" source="../../media/converged-add-role-9.png" alt-text="[設定] ポータルの [Microsoft 365 Defender] ページ" lightbox="../../media/converged-add-role-9.png":::
 
 #### <a name="permissions--roles"></a>アクセス許可と役割
 
-:::image type="content" source="../../media/converged-roles-5.png" alt-text="エンドポイントの役割とグループ、役割、およびデバイス グループを表示する [アクセス許可と役割] ページ" lightbox="../../media/converged-roles-5.png":::
+:::image type="content" source="../../media/converged-roles-5.png" alt-text="[アクセス許可と役割&] ページに表示されるエンドポイント の役割&グループ" lightbox="../../media/converged-roles-5.png":::
 
 Microsoft 365 Defender へのアクセスは、Azure AD グローバル ロールまたはカスタム ロールを使用して構成されます。 Defender for Endpoint については、「[Microsoft 365 Defender ポータルにユーザー アクセスを割り当てる](/microsoft-365/security/defender-endpoint/assign-portal-access)」を参照してください。 Defender for Office 365 については、「[Microsoft 365 コンプライアンス センターと Microsoft 365 Defender のアクセス許可](../office-365-security/permissions-microsoft-365-compliance-security.md)」をご覧ください。
 
