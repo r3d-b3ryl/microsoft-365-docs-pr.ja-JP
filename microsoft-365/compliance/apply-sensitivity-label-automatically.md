@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 80f3b5c69e482301dd8c4e926959087c7149a529
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 21ee443ba9bab0ac7071377befee5d6e6143a398
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499663"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634627"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -275,18 +275,6 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 シミュレーション モードでは、展開前に自動ラベル付けポリシーの範囲を徐々に広げることもできます。 たとえば、1 つのドキュメント ライブラリを持った SharePoint サイトなどの 1 つの場所から始めることができます。 次に、反復的な変更を加えて、範囲を複数のサイトに拡大し、次に OneDrive などの別の場所に拡大します。
 
 最後に、シミュレーション モードを使用して、自動ラベル付けポリシーの実行に必要な時間の概算を提供し、シミュレーション モードを使用せずに実行するタイミングを計画してスケジュールすることができます。
-
-#### <a name="deleted-onedrive-accounts-and-simulation-results"></a>削除された OneDrive アカウントとシミュレーション結果
-
-削除された OneDrive アカウントが[削除プロセスの保持段階](/onedrive/retention-and-deletion#the-onedrive-deletion-process)にある場合、シミュレーション結果に表示上の不一致が生じる可能性があります。 たとえば、ある従業員が組織を離れ、そのマネージャーがそのユーザーの OneDrive ファイルに一時的にアクセスしたとします。
-
-このシナリオでは、自動ラベル付けポリシーの URL で OneDrive アカウントが指定されていた場合、削除された OneDrive アカウントで一致したファイルがシミュレーション結果に含まれます。
-
-ただし、OneDrive アカウントが URL で指定されず、**すべて** の既定の設定に含まれていた場合は、この限りではありません。
-- SharePoint の場所がポリシーに含まれる場合は、削除された OneDrive アカウントで一致したファイルが、シミュレーション結果で SharePoint アイテムとして表示されます。
-- SharePoint の場所がポリシーに含まれる場合は、削除された OneDrive アカウントで一致したファイルが、シミュレーション結果に含まれません。
-
-いずれの場合も、一致したファイルは、OneDrive アカウントが完全に削除されるまでラベル付けされます。 表示上の不一致は、シミュレーション結果にのみ適用されます。
 
 ### <a name="creating-an-auto-labeling-policy"></a>自動ラベル付けポリシーの作成
 

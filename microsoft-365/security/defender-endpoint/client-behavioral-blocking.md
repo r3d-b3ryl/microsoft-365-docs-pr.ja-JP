@@ -1,6 +1,6 @@
 ---
 title: クライアントの動作ブロック
-description: クライアントの動作ブロックは、Microsoft Defender for Endpoint の動作ブロックと格納機能の一部です。
+description: クライアントの動作のブロックは、Microsoft Defender for Endpoint の動作ブロックと格納機能の一部です。
 keywords: 動作のブロック、迅速な保護、クライアントの動作、Microsoft Defender for Endpoint
 ms.pagetype: security
 author: denisebmsft
@@ -16,12 +16,12 @@ ms.custom:
 - edr
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: c5a738584f1705365db1c4fad61f190a42d97660
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8da3f04af66568bbe79dd6a74c38b30a8a1ab891
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330231"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470221"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 
@@ -35,7 +35,7 @@ ms.locfileid: "63330231"
 
 クライアントの動作ブロックは、Defender [](behavioral-blocking-containment.md) for Endpoint の動作ブロックと格納機能のコンポーネントです。 デバイス (クライアントまたはエンドポイントとも呼ばれます) で疑わしい動作が検出されると、アーティファクト (ファイルやアプリケーションなど) が自動的にブロック、チェック、修復されます。
 
-:::image type="content" alt-text="クラウドとクライアントの保護。" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
+:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="クラウドとクライアントの保護" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 ウイルス対策保護は、クラウド保護と組み合わせた場合に最適です。
 

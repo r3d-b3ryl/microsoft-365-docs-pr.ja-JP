@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
-ms.openlocfilehash: 40ad151dfa4ee26bf1e6177dda170cc2998c7c7e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: f1bb280502908143171cbc7b08df7080d0040df2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683869"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477107"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
@@ -74,7 +74,7 @@ Microsoft Defender for Office 365 試用版は、数回クリックした後、O
 
 試用版のライセンス カードには、次の情報が表示されます。
 
-![Microsoft Defender のライセンス カードをOffice 365します。](../../media/mdo-trial-licensing-card.png)
+:::image type="content" source="../../media/mdo-trial-licensing-card.png" alt-text="Microsoft Defender のライセンス カード (Office 365試用版)" lightbox="../../media/mdo-trial-licensing-card.png":::
 
 - **[使用法の種類** ] セクション:
   - **試用版**: 使用できるライセンスOffice 365の試用版 Defender の数。
@@ -98,7 +98,7 @@ Microsoft Defender for Office 365 試用版は、数回クリックした後、O
 
 試用版の使用を開始してから、変更や更新プログラムが利用できるようになるまで、最大で 2 時間かかる場合があります。 また、管理者はログアウトしてログインし、変更を確認する必要があります。
 
-## <a name="availability"></a>Availability
+## <a name="availability"></a>可用性
 
 Office 365 試用版の Defender は、特定の条件を満たす既存の顧客と、Office 365 Plan 2 ライセンス (サブスクリプションまたはアドオンに含まれる) の既存の Defender を持つユーザーに徐々に展開されています。
 
@@ -126,7 +126,7 @@ Defender for Office 365機能の包括的なスレートを提供することで
 
 Defender for Office 365については、この対話型ガイド[を参照してください](https://aka.ms/MS365D.InteractiveGuide)。
 
-![概念図Office 365 Microsoft Defender。](../../media/microsoft-defender-for-office-365.png)
+:::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="Microsoft Defender for Office 365概念図" lightbox="../../media/microsoft-defender-for-office-365.png":::
 
 ### <a name="prevention"></a>予防
 
@@ -140,7 +140,7 @@ Defender for Office 365については、この対話型ガイド[を参照し�
 
 業界をリードする AI は、悪意のあるコンテンツや疑わしいコンテンツを検出し、攻撃パターンを関連付け、保護を回避するために設計されたキャンペーンを特定します。
 
-- [Microsoft Defender for microsoft Defender のキャンペーン ビュー Office 365](campaigns.md)
+- [Microsoft Defender for Office 365 のキャンペーン ビュー](campaigns.md)
 
 ### <a name="investigation-and-hunting"></a>調査と狩猟
 
@@ -167,7 +167,7 @@ Defender for Office 365については、この対話型ガイド[を参照し�
 
 推奨されるテンプレートと構成に関する分析情報は、お客様が安全にアクセスし、安全を確保するのに役立ちます。
 
-- [EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365](preset-security-policies.md)
+- [EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)
 - [EOP および Microsoft Defender の保護](configuration-analyzer-for-security-policies.md)ポリシー用の構成Office 365。
 
 ## <a name="give-feedback"></a>フィードバックを送信

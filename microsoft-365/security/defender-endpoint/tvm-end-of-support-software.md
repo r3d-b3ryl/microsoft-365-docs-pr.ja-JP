@@ -16,14 +16,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65842d0bd56308b6a5e5476f84c089b63a04987b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3997e2cb372a2cbbbdb0d8e9b51c5b57bd38c7aa
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168020"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476689"
 ---
-# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>サポート終了のソフトウェアとソフトウェアのバージョンを計画する場合は、脅威と脆弱性の管理
+# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>サポート終了のソフトウェアとソフトウェア のバージョンを計画する場合は、脅威と脆弱性の管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,14 +44,14 @@ ms.locfileid: "61168020"
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>サポートされなくなったソフトウェアまたはソフトウェアのバージョンを検索する
 
-1. [セキュリティ] メニュー脅威と脆弱性の管理[セキュリティの推奨事項 [**] に移動します**](tvm-security-recommendation.md)。
-2. [フィルター] **パネルに移動** し、[タグ] セクションを探します。 1 つ以上の EOS タグ オプションを選択します。 次に **、適用します**。
+1. [セキュリティ脅威と脆弱性の管理] メニューから、[セキュリティの推奨事項 [**] に移動します**](tvm-security-recommendation.md)。
+2. [フィルター] **パネルに移動** し、[タグ] セクションを探します。 1 つ以上の EOS タグ オプションを選択します。 [適用 **] をクリックします**。
 
-    ![EOS ソフトウェア、EOS バージョン、および今後の EOS バージョンを示すスクリーンショット タグ。](images/tvm-eos-tag.png)
+   :::image type="content" source="images/tvm-eos-tag.png" alt-text="EOS ソフトウェア、EOS バージョン、および今後の EOS バージョン" lightbox="images/tvm-eos-tag.png":::
 
 3. サポートが終了しているソフトウェア、サポート終了のソフトウェア バージョン、またはサポートが終了するバージョンに関連する推奨事項の一覧が表示されます。 これらのタグは、ソフトウェア インベントリ ページ [にも表示](tvm-software-inventory.md) されます。
 
-    ![EOS タグの推奨事項。](images/tvm-eos-tags-column.png)
+   :::image type="content" source="images/tvm-eos-tags-column.png" alt-text="EOS タグを使用した推奨事項" lightbox="images/tvm-eos-tags-column.png":::
 
 ## <a name="list-of-versions-and-dates"></a>バージョンと日付の一覧
 
@@ -59,19 +59,19 @@ ms.locfileid: "61168020"
 
 1. サポートが終了したバージョンまたはサポートが近日終了するソフトウェアのセキュリティ推奨事項のフライアウトにメッセージが表示されます。
 
-    ![バージョン配布リンクのスクリーンショット。](images/eos-upcoming-eos.png)
+   :::image type="content" source="images/eos-upcoming-eos.png" alt-text="バージョン配布リンク" lightbox="images/eos-upcoming-eos.png":::
 
 2. バージョン配布 **リンクを選択** して、ソフトウェアのドリルダウン ページに移動します。 そこでは、タグがサポートの終了またはサポートの今後の終了として識別される、フィルター処理されたバージョンの一覧を表示できます。
 
-    ![サポート ソフトウェアが終了したソフトウェアドリルダウン ページのスクリーンショット。](images/software-drilldown-eos.png)
+   :::image type="content" source="images/software-drilldown-eos.png" alt-text="サポート ソフトウェアの終了の詳細を示すソフトウェア ドリルダウン ページ" lightbox="images/software-drilldown-eos.png":::
 
 3. 開くテーブルのバージョンのいずれかを選択します。 たとえば、バージョン 10.0.18362.1。 サポート終了日のフライアウトが表示されます。
 
-    ![サポート終了日のスクリーンショット。](images/version-eos-date.png)
+   :::image type="content" source="images/version-eos-date.png" alt-text="サポート終了日の表示" lightbox="images/version-eos-date.png":::
 
 サポート終了の状態により脆弱なソフトウェアとソフトウェアのバージョンを特定したら、それらを更新するか、組織から削除するか決定する必要があります。 これにより、組織は脆弱性や高度な永続的な脅威にさらされるリスクを軽減します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

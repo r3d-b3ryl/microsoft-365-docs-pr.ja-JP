@@ -1,7 +1,7 @@
 ---
 title: 非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
-description: 構成パッケージを仮想デスクトップ インフラストラクチャ (VDI) デバイスに展開して、Microsoft Defender for Endpoint サービスにオンボードします。
-keywords: 仮想デスクトップ インフラストラクチャ (VDI) デバイス、vdi、デバイス管理の構成、エンドポイント用 Microsoft Defender の構成、エンドポイント
+description: 仮想デスクトップ インフラストラクチャ (VDI) デバイスに構成パッケージを展開して、これらの構成パッケージを仮想デスクトップ サービスMicrosoft Defender for Endpointします。
+keywords: 仮想デスクトップ インフラストラクチャ (VDI) デバイス、vdi、デバイス管理の構成、仮想デスクトップ インフラストラクチャMicrosoft Defender for Endpointエンドポイント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,19 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 02/14/2022
 ms.technology: mde
-ms.openlocfilehash: 7342f368063c2c9024c4942c33a2e41f28eebd36
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: e292c2f1e0d01e51e3962b71a940927078ab95ad
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449822"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634715"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>デバイス内の非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボードMicrosoft 365 Defender
+
+仮想デスクトップ インフラストラクチャ (VDI) は、エンド ユーザーがほとんどすべてのデバイス (パーソナル コンピューター、スマートフォン、タブレットなど) からエンタープライズ仮想デスクトップ インスタンスにアクセスできる IT インフラストラクチャの概念で、組織がユーザーに物理コンピューターを提供する必要がなくなります。 VDI デバイスを使用すると、IT 部門が物理エンドポイントの管理、修復、および交換を行う責任がなくなったので、コストを削減できます。 承認されたユーザーは、セキュリティで保護されたデスクトップ クライアントまたはブラウザーを介して、承認済みデバイスから同じ会社のサーバー、ファイル、アプリ、およびサービスにアクセスできます。
+
+IT 環境の他のシステムと同様に、高度な脅威や攻撃から保護するために、エンドポイント検出と応答 (EDR) とウイルス対策ソリューションも必要です。
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,32 +43,34 @@ ms.locfileid: "63449822"
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **永続的な VDI の** - [永続的な VDI マシンを](configure-endpoints.md) Microsoft Defender for Endpoint にオンボーディングする方法は、デスクトップやラップトップなどの物理マシンをオンボードする場合と同じ方法で処理されます。 グループ ポリシー、Microsoft エンドポイント マネージャー、その他のメソッドを使用して、永続的なコンピューターをオンボードできます。 [ポータル] Microsoft 365 Defender ( [https://security.microsoft.com)オンボーディング] で、優先するオンボーディング方法を選択し、その種類の指示に従います。 
+  > **永続的な VDI の** - [永続的な VDI](configure-endpoints.md) マシンMicrosoft Defender for Endpointオンボーディングは、デスクトップやラップトップなどの物理マシンをオンボードするのと同じ方法で処理されます。 グループ ポリシー、Microsoft エンドポイント マネージャー、その他のメソッドを使用して、永続的なコンピューターをオンボードできます。 [ポータル] Microsoft 365 Defender ( [https://security.microsoft.com)オンボーディング] で、優先するオンボーディング方法を選択し、その種類の指示に従います。 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
 
 Defender for Endpoint は、永続的でない VDI セッションオンボーディングをサポートします。
 
-VDIs をオンボーディングする際に関連する課題が生じ得る場合があります。 このシナリオの一般的な課題は次のとおりです。
+VDI インスタンスをオンボーディングする際に、関連する課題が生じ得る場合があります。 このシナリオの一般的な課題は次のとおりです。
 
 - 短命セッションの即時早期オンボーディング。実際のプロビジョニングの前に Defender for Endpoint にオンボードする必要があります。
 - 通常、デバイス名は新しいセッションに再利用されます。
 
-VDI デバイスは、Defender for Endpoint ポータルに次のように表示できます。
+VDI 環境では、VDI インスタンスの寿命が短い場合があります。 VDI デバイスは、Defender for Endpoint ポータルに次のように表示できます。
 
-- デバイスごとに 1 つのエントリ。
+
+- VDI インスタンスごとに 1 つのポータル エントリ。 VDI インスタンスが既に Microsoft Defender for Endpoint にオンボードされ、ある時点で削除され、同じホスト名で再作成された場合、この VDI インスタンスを表す新しいオブジェクトはポータルに作成されません。 
+
 
   > [!NOTE]
   > この場合、セッションの作成 *時* に、無人応答ファイルを使用する場合など、同じデバイス名を構成する必要があります。
 
-- デバイスごとに複数のエントリ (セッションごとに 1 つ)。
+- デバイスごとに複数のエントリ (VDI インスタンスごとに 1 つ)。
 
 次の手順では、VDI デバイスのオンボードについて説明し、単一エントリと複数エントリの手順を強調表示します。
 
 > [!WARNING]
 > リソース構成が低い環境では、VDI ブート手順によって Defender for Endpoint センサーのオンボーディングが遅くなる可能性があります。
 
-### <a name="for-windows-10-or-windows-11-or-windows-server-2012-r2-and-later"></a>11 Windows 10、Windows R2 以降Windows Server 2012の場合
+### <a name="for-windows-10-or-windows-11-or-windows-server-2012-r2-and-later"></a>R2 Windows 10以降Windows 11、またはWindows Server 2012の場合
 
 > [!NOTE]
 > Windows Server 2016および Windows Server 2012 R2 は、この機能を動作するには、「[オンボード](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) Windows サーバー」の手順を使用してインストール パッケージを最初に適用して準備する必要があります。
@@ -83,12 +90,12 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
     2. デバイスごとに 1 つのエントリを実装する場合は、Onboard-NonPersistentMachine.ps1 WindowsDefenderATPOnboardingScript.cmd の両方をコピーします。
 
     > [!NOTE]
-    > フォルダーが表示しない場合は `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 、非表示になる可能性があります。 エクスプローラーから [非表示のファイル **とフォルダーを** 表示する] オプションを選択する必要があります。
+    > フォルダーが表示しない場合は `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 、非表示になる可能性があります。 [非表示のファイルとフォルダーを表示する] オプションを [ファイルとフォルダーの表示] から **選択** エクスプローラー。
 
-3. [ローカル グループ ポリシー エディター] ウィンドウを開き、[**コンピューター構成]** \>  \> Windows 設定 **に移動** \> **します**。
+3. [ローカル ファイル エディター] ウィンドウグループ ポリシー開き、[**コンピューター構成] Windows 設定** \> [**スクリプトの起動] に** \> **移動** \> **します**。
 
    > [!NOTE]
-   > ドメイン グループ ポリシーは、永続的でない VDI デバイスのオンボーディングにも使用できます。
+   > ドメイン グループ ポリシー非永続的な VDI デバイスのオンボーディングにも使用できます。
 
 4. 実装するメソッドに応じて、適切な手順に従います。
     - デバイスごとに 1 つのエントリの場合:
@@ -115,7 +122,7 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 ## <a name="for-downlevel-skus-windows-server-2008-r2"></a>ダウンレベル SKU の場合 (Windows Server 2008 R2)
 
 > [!NOTE]
-> 他の Windows サーバー バージョンのこれらの手順は、MMA を必要とする以前の Microsoft Defender for Endpoint for Windows Server 2016 および Windows Server 2012 R2 を実行している場合にも適用されます。 新しい統合ソリューションに移行する手順については、 [Microsoft Defender for Endpoint のサーバー移行シナリオを参照してください](/microsoft-365/security/defender-endpoint/server-migration)。
+> MMA を必要とする Microsoft Defender for Endpoint および Windows Server 2012 Windows Server 2016 R2 の前の Microsoft Defender for Endpoint を実行している場合は、他の Windows サーバー バージョンに関するこれらの手順も適用されます。 新しい統合ソリューションに移行する手順は、「[Microsoft Defender for Endpoint のサーバー移行シナリオ](/microsoft-365/security/defender-endpoint/server-migration)」 にあります。
 
 > [!NOTE]
 > 次のレジストリは、目的が "デバイスごとに 1 つのエントリ" を達成する場合にのみ関連します。
@@ -182,4 +189,4 @@ DISM コマンドとオフライン サービスの詳細については、以�
 - [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
-- [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)
+- [Microsoft Defender for Endpoint の問題のトラブルシューティング](troubleshoot-onboarding.md)

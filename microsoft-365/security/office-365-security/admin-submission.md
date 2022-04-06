@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d0d699c3344cc16f3e15996139f1d2d8b608ba50
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682639"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477151"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -84,7 +84,7 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
 
 3. [マークを **付け、通知** する] ドロップダウンを選択し、[フィッシングまたは迷惑メールが検出 **された**\>脅威がない **] を****選択します**。
 
-   :::image type="content" alt-text="ポータルからメッセージを送信します。" source="../../media/unified-submission-user-reported-message.png" lightbox="../../media/unified-submission-user-reported-message.png":::
+   :::image type="content" source="../../media/unified-submission-user-reported-message.png" alt-text="[申請] ページ" lightbox="../../media/unified-submission-user-reported-message.png":::
 
 報告されたメッセージは、誤検知または偽陰性としてマークされます。 メール通知は、ポータル内からメッセージを報告したユーザーに自動的に送信されます。
 
@@ -108,7 +108,7 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
 5. 完了したら、**[送信]** をクリックします。
 
     > [!div class="mx-imgBorder"]
-    > ![新しい URL 申請の例。](../../media/submission-flyout-email.png)
+    > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="新しい URL 申請プロセス" lightbox="../../media/submission-flyout-email.png":::
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>疑わしい URL を Microsoft に送信する
 
@@ -125,7 +125,7 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
 4. 完了したら、**[送信]** をクリックします。
 
     > [!div class="mx-imgBorder"]
-    > ![新しいメール送信の例。](../../media/submission-url-flyout.png)
+    > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="新しいメール送信プロセス" lightbox="../../media/submission-url-flyout.png":::
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>疑わしいメール添付ファイルを Microsoft に送信する
 
@@ -142,7 +142,7 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
 4. 完了したら、**[送信]** をクリックします。
 
     > [!div class="mx-imgBorder"]
-    > ![新しい添付ファイルの申請例。](../../media/submit-email-attachment-for-analysis.png)
+    > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="新しい添付ファイルの申請プロセス" lightbox="../../media/submission-file-flyout.png":::
 
 > [!NOTE]
 > マルウェア フィルターによってメッセージ添付ファイルが Malware Alert Text.txt ファイルに置き換えられた場合は、元の添付ファイルを含む検疫から元のメッセージを送信する必要があります。 検疫の詳細とマルウェアの誤検知を含むメッセージを解放する方法については、「検疫済みメッセージとファイルを管理者として管理する」 [を参照してください](manage-quarantined-messages-and-files.md)。
@@ -178,7 +178,7 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
      完了したら、**[適用]** をクリックします。
 
      > [!div class="mx-imgBorder"]
-     > ![管理者申請の新しい [列のカスタマイズ] オプション。](../../media/submit-admin-submissios-customize-columns.png)
+     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="管理者申請の [新しいカスタマイズ] 列オプション" lightbox="../../media/admin-submission-customize-columns.png":::
 
    - エントリをフィルター処理するには、[フィルター] を **クリックします**。 使用できるフィルターは次のとおりです。
      - **提出日**: **開始日と****終了日**。
@@ -195,11 +195,11 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
      完了したら、**[適用]** をクリックします。
 
      > [!div class="mx-imgBorder"]
-     > ![管理者申請の新しいフィルター オプション。](../../media/submit-admin-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="管理者申請の新しいフィルター オプション" lightbox="../../media/admin-submission-filters.png":::
 
    - エントリをグループ化するには、[グループ] を **クリック** し、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
-     - **Type**
+     - **型**
      - **理由**
      - **状態**
      - **結果**
@@ -263,7 +263,7 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
      完了したら、**[適用]** をクリックします。
 
      > [!div class="mx-imgBorder"]
-     > ![ユーザー申請の新しいフィルター オプション。](../../media/submit-user-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="ユーザー申請の新しいフィルター オプション" lightbox="../../media/admin-submission-reported-messages.png":::
 
    - エントリをグループ化するには、[グループ] を **クリック** し、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
@@ -298,4 +298,4 @@ Microsoft にメッセージを送信せずにユーザーが報告したメッ�
 - **トリガー調査**
 
 > [!div class="mx-imgBorder"]
-> ![[アクション] ボタンの [新しいオプション] をクリックします。](../../media/admin-submission-main-action-button.png)
+> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="[アクション] ボタンの [新しいオプション]" lightbox="../../media/admin-submission-main-action-button.png":::

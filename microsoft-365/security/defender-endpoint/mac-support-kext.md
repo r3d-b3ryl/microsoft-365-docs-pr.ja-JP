@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ba52d9587a2ac530eabeacf8c72336751a1a17d7
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 72d1aab8be071b5f4ec66988b35655571625b409
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767570"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477283"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>macOS の Microsoft Defender for Endpoint でのカーネル拡張機能の問題のトラブルシューティング
 
@@ -42,7 +42,7 @@ macOS High Sierra (10.13) から、macOS では、デバイスでの実行を許
 
 macOS での Microsoft Defender for Endpoint の展開/インストール中にカーネル拡張機能を承認しなかった場合、アプリケーションはバナーを表示して有効にするように求めます。
 
-   ![RTP が無効になっているスクリーンショット。](images/mdatp-32-main-app-fix.png)
+:::image type="content" source="images/mdatp-32-main-app-fix.png" alt-text="RTP が無効" lightbox="images/mdatp-32-main-app-fix.png":::
 
 また、実行できます ```mdatp health```。 リアルタイム保護が有効になっているが使用できない場合に報告されます。 これは、カーネル拡張機能がデバイスでの実行が承認されていないことを示します。
 
@@ -71,7 +71,7 @@ real_time_protection_available              : true
 
 このプロンプトが表示されない場合は、30 分以上経過し、カーネル拡張機能がデバイスでの実行が承認されていないことを意味します。
 
-![プロンプトの有効期限が切れたスクリーンショットの後のセキュリティとプライバシー ウィンドウ。](images/mdatp-33-securityprivacysettings-noprompt.png)
+:::image type="content" source="images/mdatp-33-securityprivacysettings-noprompt.png" alt-text="プロンプトの有効期限が切れた後のセキュリティとプライバシーのウィンドウ" lightbox="images/mdatp-33-securityprivacysettings-noprompt.png":::
 
 この場合、承認フローを再度トリガーするには、次の手順を実行する必要があります。
 
@@ -87,7 +87,7 @@ real_time_protection_available              : true
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. メニュー **から [System Preferences** \> **Security &プライバシー]** を開きます。 (開いている場合は、最初に閉じます)。
+2. [ **System Preferences Security]** \> **&から [プライバシー** ] を開きます。 (開いている場合は、最初に閉じます)。
 
 3. **開発者** からのシステム ソフトウェアの許可 "Microsoft Corporation"
 

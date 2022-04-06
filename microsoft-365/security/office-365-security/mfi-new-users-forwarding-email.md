@@ -13,12 +13,12 @@ description: 管理者は、セキュリティ & コンプライアンス セン
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 35ec1573096ecce392979cba11c6e55b1a1adcce
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7e7f97f2f246be609db813f1d42ef6aed6a152a9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681768"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470265"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターで電子メールの分析情報を&する新しいユーザー
 
@@ -35,11 +35,11 @@ ms.locfileid: "63681768"
 
 この分析情報は、問題が検出された場合にのみ表示され、[転送レポート] ページ [に表示](view-mail-flow-reports.md#forwarding-report) されます。
 
-![電子メールの分析情報を転送する新しいユーザー。](../../media/mfi-new-users-forwarding-email.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email.png" alt-text="メールを転送する新しいユーザーの分析情報" lightbox="../../media/mfi-new-users-forwarding-email.png":::
 
 ウィジェットをクリックすると、この記事で後述する転送変更レポートへのリンクなど、転送されたメッセージの詳細を確認できるフライアウトが表示[](#forwarding-modifications-report)されます。
 
-![電子メールの分析情報を転送する新しいユーザーをクリックした後に表示される詳細フライアウト。](../../media/mfi-new-users-forwarding-email-details.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email-details.png" alt-text="[新しいユーザーが電子メールを転送する] インサイトをクリックした後に表示される詳細フライアウト" lightbox="../../media/mfi-new-users-forwarding-email-details.png":::
 
 [レポート ダッシュボード] **または [**\>おすすめ情報] 領域の [上位の分析情報&を表示する] をクリックした後で、分析情報を選択 **すると、この** 詳細ページに **アクセス** することもできます<https://protection.office.com/insightdashboard>。
 
@@ -67,11 +67,11 @@ ms.locfileid: "63681768"
 
 - **データの表示: 新しい転送ユーザー**:
 
-  ![新しい転送ユーザーが [転送の変更] レポートに表示されます。](../../media/forwarding-modifications-report-new-forwarding-users.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarding-users.png" alt-text="[転送の変更] レポートの [新しい転送ユーザー] ビュー" lightbox="../../media/forwarding-modifications-report-new-forwarding-users.png":::
 
 - **データを表示する: 新しい転送ドメイン**:
 
-  ![転送変更レポートの新しい転送ドメイン ビュー。](../../media/forwarding-modifications-report-new-forwarded-domains.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarded-domains.png" alt-text="転送変更レポートの [転送された新しいドメイン] ビュー" lightbox="../../media/forwarding-modifications-report-new-forwarded-domains.png":::
 
 レポート ビューで **[フィルター]** をクリックすると、開始日と終了日で日付 **範囲****を指定できます**。
 
@@ -109,7 +109,7 @@ ms.locfileid: "63681768"
 - **開始日**
 - **推奨事項**: ここから、リンクをクリックして、ユーザーを管理Microsoft 365 管理センター。
 
-![転送変更レポートの [新しい転送ユーザー] ビューの詳細テーブルからの詳細フライアウト。](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
+  :::image type="content" source="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png" alt-text="転送変更レポートの [新しい転送ユーザー] ビューの詳細テーブルからの詳細フライアウト" lightbox="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png":::
 
 レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
 

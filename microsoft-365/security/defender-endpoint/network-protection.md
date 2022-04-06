@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 7b9443cac6543ac14f6d94bd2809b5263be0a860
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4c922ef443dbe6e4a1b55159f2c27b35926ff886
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681834"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634451"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -43,7 +43,7 @@ ms.locfileid: "63681834"
 ネットワーク保護は、Web 保護の保護 [をオペレーティング](web-protection-overview.md) システム レベルまで拡張します。 Edge の Web 保護機能は、サポートされている他のブラウザーやブラウザー以外のアプリケーションに提供されます。 さらに、ネットワーク保護は、エンドポイントの検出と応答で使用される侵害の指標 (IOC) の可視性とブロック [を提供します](overview-endpoint-detection-response.md)。 たとえば、ネットワーク保護は、特定のドメイン [または](manage-indicators.md) ホスト名をブロックするために使用できるカスタムインジケーターと機能します。
 
 > [!TIP]
-> ネットワーク保護のしくみについては、「Microsoft Defender for Endpoint testground」の [demo.wd.microsoft.com を参照](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) してください。
+> ネットワーク保護Microsoft Defender for Endpointについては、demo.wd.microsoft.com テストグラウンド サイトを参照[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)してください。
 
 > [!NOTE]
 > demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
@@ -68,11 +68,11 @@ ms.locfileid: "63681834"
 
 ## <a name="configuring-network-protection"></a>ネットワーク保護の構成
 
-ネットワーク保護を有効にする方法の詳細については、「ネットワーク保護を有効 **[にする」を参照してください](enable-network-protection.md)**。 グループ ポリシー、PowerShell、MDM CSP を使用して、ネットワーク内のネットワーク保護を有効にして管理します。
+ネットワーク保護を有効にする方法の詳細については、「ネットワーク保護を有効 **[にする」を参照してください](enable-network-protection.md)**。 ネットワークグループ ポリシー、PowerShell、MDM CSP を使用してネットワーク保護を有効にして管理します。
 
 ## <a name="viewing-network-protection-events"></a>ネットワーク保護イベントの表示
 
-ネットワーク保護は [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) で最適に機能します。これにより、アラート調査シナリオの一環として、エクスプロイト保護イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
+ネットワーク保護は、アラート調査[のシナリオMicrosoft Defender for Endpoint](microsoft-defender-endpoint.md)、エクスプロイト保護イベントとブロックに関する詳細なレポートを提供するネットワーク保護機能に[最適です](investigate-alerts.md)。
 
 ネットワーク保護が接続をブロックすると、アクション センターから通知が表示されます。 セキュリティ運用チームは、 [組織の詳細と](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) 連絡先情報を使用して通知をカスタマイズできます。 さらに、個々の攻撃表面の縮小ルールを有効にし、監視する特定の手法に合わせてカスタマイズできます。
 
@@ -80,7 +80,7 @@ ms.locfileid: "63681834"
 
 ## <a name="review-network-protection-events-in-the-microsoft-365-defender-portal"></a>ポータルでネットワーク保護イベントをMicrosoft 365 Defenderする
 
-Microsoft Defender for Endpoint は、アラート調査シナリオの一環として、イベントとブロックに関する詳細な [レポートを提供します](investigate-alerts.md)。 これらの詳細は、アラート キューの Microsoft 365 Defenderポータル ([https://security.microsoft.com](https://security.microsoft.com)) または高度な検索を[](review-alerts.md)[使用して表示できます](advanced-hunting-overview.md)。 監査モードを使用している [場合](audit-windows-defender.md)は、高度な検索を使用して、ネットワーク保護設定が有効になっている場合に環境に与える影響を確認できます。
+Microsoft Defender for Endpointアラート調査シナリオの一環として、イベントとブロックに関する詳細な[レポートを提供します](investigate-alerts.md)。 これらの詳細は、アラート キューの Microsoft 365 Defenderポータル ([https://security.microsoft.com](https://security.microsoft.com)) または高度な検索を[](review-alerts.md)[使用して表示できます](advanced-hunting-overview.md)。 監査モードを使用している [場合](audit-windows-defender.md)は、高度な検索を使用して、ネットワーク保護設定が有効になっている場合に環境に与える影響を確認できます。
 
 高度な検索のクエリの例を次に示します。
 
@@ -89,7 +89,7 @@ DeviceNetworkEvents
 |where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>イベント ビューアーでネットワーク保護イベントWindows確認する
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>ネットワーク保護イベントを確認Windows イベント ビューアー
 
 ネットワーク保護が悪意のある IP またはドメインWindowsアクセスをブロック (または監査) するときに作成されるイベントを確認するには、次のイベント ログを確認します。
 
@@ -142,7 +142,11 @@ Azure Windows 10 Enterprise Windows Virtual Desktop で使用されるマルチ�
 
 1. [ [ネットワーク保護を有効にする] を](enable-network-protection.md) 使用し、指示に従ってポリシーを適用します。
 
-2. 次の PowerShell コマンドを実行します。 `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+2. 次の PowerShell コマンドを実行します。
+  - `Set-MpPreference -EnableNetworkProtection Enabled`
+  - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+  - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
+  - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
 ## <a name="network-protection-troubleshooting"></a>ネットワーク保護のトラブルシューティング
 
@@ -157,5 +161,5 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 ## <a name="see-also"></a>関連項目
 
 - [ネットワーク保護の評価|](evaluate-network-protection.md) 機能の動作と、通常作成されるイベントを示す簡単なシナリオを実行します。
-- [ネットワーク保護の有効化|](enable-network-protection.md) グループ ポリシー、PowerShell、MDM CSP を使用して、ネットワーク内のネットワーク保護を有効にして管理します。
+- [ネットワーク保護の有効化|](enable-network-protection.md)ネットワークグループ ポリシー、PowerShell、MDM CSP を使用してネットワーク保護を有効にして管理します。
 - [攻撃表面の縮小機能の構成Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)

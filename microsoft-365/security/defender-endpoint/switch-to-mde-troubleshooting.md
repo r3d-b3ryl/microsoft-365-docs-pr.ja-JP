@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 30218ea9b3b5ecbec20fdbc3364546d25c80bcab
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 8334ce03bac5b7d4518433f83ab34d5f86e71339
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507516"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634165"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>デバイスに切り替える際のMicrosoft Defender for Endpoint
 
@@ -41,28 +41,8 @@ Defender for Endpoint に切り替える場合は、アクティブ モードで
 
 この問題を解決するには、次の手順を実行します。
 
-1. [DisableAntiSpyware レジストリ キーを false に設定します](#set-the-disableantispyware-registry-key-to-false)。
-2. [除外Microsoft Defender for Endpointに追加します](#add-microsoft-defender-for-endpoint-to-the-exclusion-list)。
-3. [パッシブ モードMicrosoft Defender ウイルス対策手動で設定します](#set-microsoft-defender-antivirus-to-passive-mode-manually)。
-
-### <a name="set-the-disableantispyware-registry-key-to-false"></a>DisableAntiSpyware レジストリ キーを false に設定する
-
-[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) レジストリ キーは、過去に Microsoft Defender ウイルス対策 を無効にし、McAfee、Symantec などの別のウイルス対策製品を展開するために使用しました。 **一般に、Windows** デバイスとエンドポイント`DisableAntiSpyware`にこのレジストリ キーを持つ必要はありません。ただし、構成されている場合は、その値を false に設定する方法を次に示します。
-
-1. サーバー デバイスでWindowsレジストリ エディターを開きます。
-
-2. `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` に移動します。
-
-3. そのフォルダーで、 **DisableAntiSpyware という DWORD エントリを探します**。
-   - そのエントリが表示されない場合は、すべて設定されます。
-   - **DisableAntiSpyware が表示された場合は、** 手順 4 に進みます。
-
-4. DisableAntiSpyware DWORD を右クリックし、[変更] を選択 **します**。
-
-5. に値を設定します `0`。 (このアクションは、レジストリ キーの値を false に *設定* します。
-
-> [!TIP]
-> このレジストリ キーの詳細については、「 [DisableAntiSpyware」を参照してください](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)。
+1. [除外Microsoft Defender for Endpointに追加します](#add-microsoft-defender-for-endpoint-to-the-exclusion-list)。
+2. [パッシブ モードMicrosoft Defender ウイルス対策手動で設定します](#set-microsoft-defender-antivirus-to-passive-mode-manually)。
 
 ### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>除外Microsoft Defender for Endpointに追加する
 

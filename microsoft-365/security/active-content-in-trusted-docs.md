@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: 管理者は、ドキュメント内のアクティブ なコンテンツをブロックするポリシーを作成するOfficeできます。
-ms.openlocfilehash: 89f2e51253d3c2fda0140dd7be8bc86b1fda2cf5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 33d53ab14fec1b6cd16b8de95befe8bc8a898e16
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682815"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468923"
 ---
 # <a name="manage-active-content-in-office-documents"></a>Office ドキュメントでアクティブなコンテンツを管理する
 
@@ -35,17 +35,17 @@ Officeがアクティブ なコンテンツを含む場合、ドキュメント�
 
 更新されたセキュリティ センター ロジックについては、次の図で説明します。
 
-:::image type="content" source="../media/office-trust-center-flow.png" alt-text="ポータル内の信頼センター ロジックを説明するフローチャートMicrosoft 365 Defender例" lightbox="../media/office-trust-center-flow.png":::
+:::image type="content" source="../media/office-trust-center-flow.png" alt-text="ポータルの信頼センター ロジックを説明するMicrosoft 365 Defenderグラフ" lightbox="../media/office-trust-center-flow.png":::
 
 1. ユーザーがアクティブなコンテンツをOfficeドキュメントを開きます。
 
 2. ドキュメントが信頼できる場所にある場合は、アクティブなコンテンツを有効にした状態でドキュメントが開きます。 ドキュメントが信頼できる場所からではない場合、評価は続行されます。
 
-3. 更新された動作が有効な場所を次に示します。
+3. 更新された動作が有効になります。
    - 以前は、次に評価された設定は、ユーザーが信頼できるドキュメントとしてこのドキュメントを識別していた場合でした。 有効にした場合は、アクティブなコンテンツが有効な状態でドキュメントが開きます。
    - ここで、ユーザーがドキュメントを信頼できるドキュメントとして識別したかどうかは、ここでは考慮されません (手順 8 で現在)。
 
-     これは、クラウド ポリシー (手順 4)、グループ ポリシー (手順 6)、ローカル設定 (手順 7) の基本的な変更点です。信頼できるドキュメントのユーザー指定が考慮される前にチェックされます。 これらの手順のいずれもアクティブ コンテンツへのアクセスをブロックし、どの手順でもユーザーの上書きを許可しない場合、信頼できるドキュメントとしてのドキュメントのユーザー識別は基本的に無関係です。
+     動作の基本的な変更については、クラウド ポリシー (手順 4)、グループ ポリシー (手順 6)、ローカル設定 (手順 7) を確認してから、信頼できるドキュメントのユーザー指定を検討します。 これらの手順の 1 つがアクティブ コンテンツへのアクセスをブロックし、どの手順もユーザーの上書きを許可しない場合、信頼できるドキュメントとしてのドキュメントのユーザー ID は関係ありません。
 
 4. クラウド ポリシーは、この種類のアクティブ コンテンツが許可またはブロックされる場合にチェックされます。 アクティブなコンテンツがブロックされていない場合、評価は手順 6 に進みます。
 
@@ -78,7 +78,7 @@ Officeがアクティブ なコンテンツを含む場合、ドキュメント�
 
 ## <a name="configure-trusted-document-settings-in-office-policies"></a>セキュリティ ポリシーで信頼できるドキュメントOffice構成する
 
-管理者は、組織内のユーザーを構成Office多くの方法があります。 例:
+管理者は、組織内のユーザーを構成Office多くの方法があります。 次に例を示します。
 
 - **Office クラウド** ポリシー サービス: Office アプリのファイルにアクセスするデバイス上のユーザーに適用されるユーザー ベースのポリシーを、Azure AD アカウントで設定します。 クラウド ポリシー サービスでクラウド [ポリシー Office構成を作成する](/DeployOffice/overview-office-cloud-policy-service)手順Office[参照してください](https://config.office.com/officeSettings/officePolicies)。
 - **Office Intune** のポリシー: Intune 設定 カタログまたは管理用テンプレートを使用して、HKCU ポリシーを Windows 10 PC に展開する: デバイス構成プロファイルの [MEM](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles)  \> 管理センターで。
@@ -111,17 +111,17 @@ Officeがアクティブ なコンテンツを含む場合、ドキュメント�
 ****
 |カテゴリ|アプリ|ポリシー名|セキュリティベースライン<br>設定 (推奨)|ユーザー プロンプトを使用した設定<br>利用可能な上書き?|
 |---|---|---|---|---|
-|ActiveX|事業所|ActiveXコントロールの初期化|**6**|**次の** 値に対してはい。 <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
-|ActiveX|事業所|Active X One Off フォームを許可する|**[Outlook のコントロールのみ読み込む]**|いいえ|
-|ActiveX|事業所|[ActiveX オブジェクトをチェックする]|セキュリティ基準設定ではありません。|いいえ|
-|ActiveX|事業所|すべての ActiveX を無効にする|セキュリティ基準設定ではありません。|**次の** 値に対してはい。 <ul><li>**Disabled**</li><li>**未構成**</li></ul>|
-|ActiveX|事業所|Forms3 でコントロールを読み込む|**1**|**次の** 値に対してはい。 <ul><li>**2**</li><li>**3**</li></ul>|
+|ActiveX|Office|ActiveXコントロールの初期化|**6**|**次の** 値に対してはい。 <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
+|ActiveX|Office|Active X One Off フォームを許可する|**[Outlook のコントロールのみ読み込む]**|いいえ|
+|ActiveX|Office|[ActiveX オブジェクトをチェックする]|セキュリティ基準設定ではありません。|いいえ|
+|ActiveX|Office|すべての ActiveX を無効にする|セキュリティ基準設定ではありません。|**次の** 値に対してはい。 <ul><li>**Disabled**</li><li>**未構成**</li></ul>|
+|ActiveX|Office|Forms3 でコントロールを読み込む|**1**|**次の** 値に対してはい。 <ul><li>**2**</li><li>**3**</li></ul>|
 |アドインの機能拡張&機能拡張|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|署名されていないアプリケーション アドインの信頼バー通知を無効にしてブロックする|**Enabled (有効)**|**[は** い] の値が **[無効] です**。|
 |アドインの機能拡張&機能拡張|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|アプリケーション アドインには信頼できる発行元による署名が必要|**Enabled (有効)**|いいえ|
 |アドインの機能拡張&機能拡張|Excel|AutoRepublish 警告アラートを表示しない|**Disabled**|いいえ|
 |アドインの機能拡張&機能拡張|Excel|WEBSERVICE 関数の通知設定|**通知ですべて無効にする**|**次の** 値に対してはい。 <ul><li>**通知ですべて無効にする**</li><li>**Disabled**</li><li>**未構成**</li></ul>|
-|アドインの機能拡張&機能拡張|事業所|発行済みOfficeサーバーをポーリングSharePointクライアントを無効にする|**Disabled**|いいえ|
-|アドインの機能拡張&機能拡張|事業所|ドキュメントおよびテンプレートによる UI の拡張を無効にする|Word で許可を解除する = True <p> [ファイルの許可をProject = False <p> [この値で許可Excel = True <p> [ユーザーの許可をVisio= False <p> [この値で許可PowerPoint = True <p> Access で許可を解除 = True <p> [ユーザーの許可をOutlook = True <p> [ユーザーの許可をPublisher = True <p> InfoPath で許可を解除する = True|いいえ|
+|アドインの機能拡張&機能拡張|Office|発行済みOfficeサーバーをポーリングSharePointクライアントを無効にする|**Disabled**|いいえ|
+|アドインの機能拡張&機能拡張|Office|ドキュメントおよびテンプレートによる UI の拡張を無効にする|Word で許可を解除する = True <p> [ファイルの許可をProject = False <p> [この値で許可Excel = True <p> [ユーザーの許可をVisio= False <p> [この値で許可PowerPoint = True <p> Access で許可を解除 = True <p> [ユーザーの許可をOutlook = True <p> [ユーザーの許可をPublisher = True <p> InfoPath で許可を解除する = True|いいえ|
 |アドインの機能拡張&機能拡張|Outlook|[アドレス帳にアクセスするときの Outlook オブジェクト モデルに関する確認について構成する]|**自動拒否**|**次の** 値に対してはい。 <ul><li>**プロンプト ユーザー**</li><li>**コンピューター のセキュリティに基づいてユーザーにプロンプトを表示する**</li><li>**Disabled**</li><li>**未構成**</li></ul>|
 |アドインの機能拡張&機能拡張|Outlook|オブジェクト Outlookプロンプトの構成 UserProperty オブジェクトの Formula プロパティにアクセスする場合|**自動拒否**|**次の** 値に対してはい。 <ul><li>**プロンプト ユーザー**</li><li>**コンピューター のセキュリティに基づいてユーザーにプロンプトを表示する**</li><li>**Disabled**</li><li>**未構成**</li></ul>|
 |アドインの機能拡張&機能拡張|Outlook|[[名前を付けて保存] を実行するときの Outlook オブジェクト モデルに関する確認について構成する]|**自動拒否**|**次の** 値に対してはい。 <ul><li>**プロンプト ユーザー**</li><li>**コンピューター のセキュリティに基づいてユーザーにプロンプトを表示する**</li><li>**Disabled**</li><li>**未構成**</li></ul>|
@@ -141,15 +141,15 @@ Officeがアクティブ なコンテンツを含む場合、ドキュメント�
 |マクロ|Access <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|VBA マクロ通知設定|**デジタル署名マクロを除くすべてのマクロを無効にする** <p> and <p> **信頼できる発行元がマクロに署名する必要がある**|**次の** 値に対してはい。 <ul><li>**Disabled**</li><li>**未構成**</li></ul>|
 |マクロ|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|インターネットからファイル内でマクロOffice実行をブロックする|**Enabled (有効)**|**次の** 値に対してはい。 <ul><li>**Disabled**</li><li>**未構成**</li></ul>|
 |マクロ|Excel|Open XML ブックで暗号化されたExcelスキャンする|**暗号化されたマクロをスキャンする (既定)**|いいえ|
-|マクロ|事業所|VBA で信頼されていないイントラネットの場所からのパスによる typelib 参照の読み込みを許可する|**Disabled**|いいえ|
-|マクロ|事業所|オートメーション セキュリティ|**[アプリケーションのマクロのセキュリティ レベルを適用する]**|いいえ|
-|マクロ|事業所|ローカル コンピューター上の安全でない場所を参照する可能性がある VBA ライブラリ参照の追加のセキュリティ チェックを無効にする|**Disabled**|いいえ|
-|マクロ|事業所|マクロ ランタイム スキャン スコープ|**すべてのドキュメントを有効にする**|いいえ|
-|マクロ|事業所|V3 署名を使用する VBA マクロのみを信頼する|セキュリティ基準設定ではありません。|いいえ|
+|マクロ|Office|VBA で信頼されていないイントラネットの場所からのパスによる typelib 参照の読み込みを許可する|**Disabled**|いいえ|
+|マクロ|Office|オートメーション セキュリティ|**[アプリケーションのマクロのセキュリティ レベルを適用する]**|いいえ|
+|マクロ|Office|ローカル コンピューター上の安全でない場所を参照する可能性がある VBA ライブラリ参照の他のセキュリティ チェックを無効にする|**Disabled**|いいえ|
+|マクロ|Office|マクロ ランタイム スキャン スコープ|**すべてのドキュメントを有効にする**|いいえ|
+|マクロ|Office|V3 署名を使用する VBA マクロのみを信頼する|セキュリティ基準設定ではありません。|いいえ|
 |マクロ|Outlook|Outlook セキュリティ モード|**セキュリティ Outlookポリシーを使用する**|GPO のすべての設定を有効にするにはOutlook必要です。 <p> 依存関係として言及されています (このポリシーは、アクティブ なコンテンツ自体をブロックしません)。|
 |マクロ|Outlook|マクロのセキュリティ設定|**署名を警告する、署名されていないを無効にする**|**次の** 値に対してはい。 <ul><li>**常に警告する**</li><li>**署名を警告する、署名されていないを無効にする**</li><li>**Disabled**</li><li>**未構成**</li></ul>|
 |マクロ|PowerPoint|Open XML プレゼンテーションで暗号化されたPowerPointスキャンする|**暗号化されたマクロをスキャンする (既定)**|いいえ|
-|マクロ|Publisher|Publisherオートメーション セキュリティ レベル|**選択 (確認)**|いいえ|
+|マクロ|発行者|Publisherオートメーション セキュリティ レベル|**選択 (確認)**|いいえ|
 |マクロ|Word|Word Open XML ドキュメントで暗号化されたマクロをスキャンする|**暗号化されたマクロをスキャンする (既定)**|いいえ|
 |
 
@@ -160,9 +160,9 @@ Officeがアクティブ なコンテンツを含む場合、ドキュメント�
 ****
 |カテゴリ|アプリ|ポリシー名|セキュリティベースライン<br>設定 (推奨)|ユーザー プロンプトを使用した設定<br>利用可能な上書き?|
 |---|---|---|---|---|
-|ActiveX|事業所|[ActiveX のインストールを制限する] |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|いいえ|
-|アドインの機能拡張&機能拡張|事業所|[アドオンの管理] |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|いいえ|
-|アドインの機能拡張&機能拡張|事業所|ドキュメントのフラッシュのアクティブ化をOfficeする|Com killbits の一覧については、「Microsoft セキュリティ ガイド ADMX/ADML ファイル」を参照して、アプリ内の Flash のすべてのライセンス認証をMicrosoft 365してください。 エンタープライズ セキュリティ ベースライン用の ADMX/ADML ファイルは、[セキュリティ コンプライアンス] ページ[Toolkit。](https://www.microsoft.com/download/details.aspx?id=55319)|いいえ|
-|Jscript & VBScript|事業所|従来のJScriptの実行をOffice|**有効**: <p> アクセス: 69632 <p> Excel: 69632 <p> OneNote: 69632 <p> Outlook: 69632 <p> PowerPoint: 69632 <p> Project: 69632 <p> Publisher: 69632 <p> Visio: 69632 <p> Word: 69632|いいえ|
-|Jscript & VBScript|事業所|[スクリプト化されたウィンドウのセキュリティ制限] |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|いいえ|
+|ActiveX|Office|[ActiveX のインストールを制限する] |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|いいえ|
+|アドインの機能拡張&機能拡張|Office|[アドオンの管理] |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|いいえ|
+|アドインの機能拡張&機能拡張|Office|ドキュメントのフラッシュのアクティブ化をOfficeする|Com killbits の一覧については、「Microsoft セキュリティ ガイド ADMX/ADML ファイル」を参照して、アプリで Flash のすべてのライセンス認証をMicrosoft 365してください。 エンタープライズ セキュリティ ベースライン用の ADMX/ADML ファイルは、[セキュリティ コンプライアンス] ページ[Toolkit。](https://www.microsoft.com/download/details.aspx?id=55319)|いいえ|
+|Jscript & VBScript|Office|従来のJScriptの実行をOffice|**有効**: <p> アクセス: 69632 <p> Excel: 69632 <p> OneNote: 69632 <p> Outlook: 69632 <p> PowerPoint: 69632 <p> Project: 69632 <p> Publisher: 69632 <p> Visio: 69632 <p> Word: 69632|いいえ|
+|Jscript & VBScript|Office|[スクリプト化されたウィンドウのセキュリティ制限] |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|いいえ|
 |

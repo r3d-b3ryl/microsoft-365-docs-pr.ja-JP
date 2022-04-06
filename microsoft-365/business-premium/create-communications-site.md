@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: キャンペーンやビジネス向けコミュニケーション サイトSharePoint作成する理由と方法についてMicrosoft 365。
-ms.openlocfilehash: d2634f8793c142cc34d6c1708481aa8e4df3184b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ba0f8f559bc8843a61baca1bbb6615c596ffdc65
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326329"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634385"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>ネットワークで通信サイトを作成SharePoint
 
@@ -40,9 +40,13 @@ ms.locfileid: "63326329"
 コミュニケーション サイトに次の要素を含める。
 
 1. ヘッダーイメージとテーマとしてロゴと色を追加します。
+
 2. ヒーロー Web パーツの戦略、メッセージ、重要なドキュメント、ディレクトリ、FAQ を **参照してください**。
+
 3. チームに CEO または候補ステートメントをテキスト **Web パーツに含める**。
+
 4. イベント Web パーツに **イベントを追加して、** 誰もが近日の予定を確認できます。
+
 5. ユーザーが使用または共有できる写真をイメージ ギャラリー **Web パーツに追加します**。
 
 ![キャンペーンで必要SharePoint共通の要素を含む、コミュニケーション ページの図。](../media/m365-democracy-comms-site.png)
@@ -58,7 +62,9 @@ ms.locfileid: "63326329"
 ## <a name="set-it-up"></a>設定する
 
 1. https://Office.comにサインインします。
+
 2. ページの左上隅で、アプリ起動ツール アイコンを選択し、[アプリ起動] タイル **SharePointします。** [サイト] タイルが **SharePoint表示されない** 場合は、[サイト] タイルまたは [すべて] SharePointクリックします。
+
 3. ホーム ページの上部にある [+ SharePoint] **をクリックし**、[通信サイト] **オプションを選択** します。
 
 コミュニケーション サイト[と、オンライン](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)でコミュニケーション サイト[を](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)作成する方法SharePointします。

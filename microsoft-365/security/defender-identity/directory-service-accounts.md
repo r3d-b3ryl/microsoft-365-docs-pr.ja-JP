@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0b7e9045ecc479c2da382979211caaa46e8a01d1
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e31c226037d5d9e945350ba73e1df9abc79571e9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683299"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470001"
 ---
 # <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Microsoft Defender for Identity Directory Services アカウント (Microsoft 365 Defender
 
@@ -34,19 +34,20 @@ ms.locfileid: "63683299"
 
 1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>] で、[id **] 設定** に **移動します**。
 
-    ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="[Id] オプション ([ids] 設定ページ)" lightbox="../../media/defender-identity/settings-identities.png":::
+
 
 1. [ **ディレクトリ サービス アカウント] を選択します**。 どのドメインに関連付けられているアカウントが表示されます。
 
-    ![ディレクトリ サービス アカウント。](../../media/defender-identity/directory-service-accounts.png)
+   :::image type="content" source="../../media/defender-identity/directory-service-accounts.png" alt-text="[ディレクトリ サービス アカウント] メニュー項目" lightbox="../../media/defender-identity/directory-service-accounts.png":::
 
 1. アカウントを選択すると、そのアカウントの設定でウィンドウが開きます。
 
-    ![アカウント設定。](../../media/defender-identity/account-settings.png)
+   :::image type="content" source="../../media/defender-identity/account-settings.png" alt-text="[アカウント設定] ページ" lightbox="../../media/defender-identity/account-settings.png":::
 
 1. 新しい Directory Services アカウントを追加するには、[新しいアカウントの作成] **を選択し**、[アカウント名]、[ドメイン]、および [**パスワード] を** 入力 **します**。 グループ管理サービス **アカウント (** gMSA) の場合と、それが単一ラベル ドメインに属している場合も **選択できます**。
 
-    ![新しいディレクトリ サービス アカウント。](../../media/defender-identity/new-directory-service-account.png)
+   :::image type="content" source="../../media/defender-identity/new-directory-service-account.png" alt-text="[新しいアカウントの作成] オプション" lightbox="../../media/defender-identity/new-directory-service-account.png":::
 
 1. **[保存]** を選択します。
 

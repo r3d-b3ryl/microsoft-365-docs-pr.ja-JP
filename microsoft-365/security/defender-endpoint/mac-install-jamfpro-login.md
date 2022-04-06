@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 02aacefc21f5789d686a8be03cd46f8fb7196322
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 3ae46425999ff36526330f5c19f2660ecad96c23
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766682"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470133"
 ---
 # <a name="log-in-to-jamf-pro"></a>Jamf にログインPro
 
@@ -35,17 +35,17 @@ ms.locfileid: "62766682"
 
 1. 資格情報を入力します。
 
-    ![ダッシュボード 1 の Jamf Proイメージ。](images/jamf-pro-portal1.png)
+   :::image type="content" source="images/jamf-pro-portal1.png" alt-text="Jamf Proダッシュボード1" lightbox="images/jamf-pro-portal1.png":::
 
 2. [コンピューター **] を選択します**。
 
-    ![ダッシュボード 2 の Jamf Proイメージ。](images/jamf-pro-dashboard.png)
+   :::image type="content" source="images/jamf-pro-dashboard.png" alt-text="Jamf Pro ダッシュボード2" lightbox="images/jamf-pro-dashboard.png":::
 
 3. 使用可能な設定が表示されます。
 
-     ![ダッシュボード 3 の Jamf Proイメージ。](images/jamfpro-settings.png)
+   :::image type="content" source="images/jamfpro-settings.png" alt-text="Jamf Proダッシュボード3" lightbox="images/jamfpro-settings.png":::
 
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 [Jamf グループでデバイス グループをセットアップPro](mac-jamfpro-device-groups.md)
 

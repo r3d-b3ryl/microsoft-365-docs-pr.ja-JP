@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f3c992ad94d63b44d2f89acff6bb295728a0804
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 48deec7763981b10daf1d0c16cbef95d0e2dbaeb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681438"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476535"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>ネットワークで配信された悪意のある電子メールをMicrosoft 365
 
@@ -84,7 +84,7 @@ Threat Explorer は、メッセージの検索と削除、悪意のあるメー�
 
 2. [表示 **] メニュー** のドロップダウン リスト **から [すべての** \> **メール** にメールを送信] を選択します。
 
-    ![[脅威エクスプローラー] [表示] メニュー、および [メール] - マルウェア、フィッシング、申請、すべてのメール オプション、コンテンツ - マルウェア。](../../media/tp-InvestigateMalEmail-viewmenu.png)
+    :::image type="content" source="../../media/tp-InvestigateMalEmail-viewmenu.png" alt-text="[マルウェア] ドロップダウン リスト" lightbox="../../media/tp-InvestigateMalEmail-viewmenu.png":::
 
     [ *マルウェア]* ビューは現在既定で、マルウェアの脅威が検出された電子メールをキャプチャします。 フィッシング *ビュー* は、フィッシングと同じ方法で動作します。
 
@@ -104,11 +104,11 @@ Threat Explorer は、メッセージの検索と削除、悪意のあるメー�
 
    高度なフィルター処理は、検索機能に大きな追加機能です。 受信者、送信者、送信者のドメイン  フィルターのブール **型** NOT を **使用** すると、管理者は値を除外して調査できます。 このオプションは、 **選択の [等しいなし]** です。 このオプションを使用すると、管理者は不要なメールボックスを調査 (アラート メールボックスや既定の返信メールボックスなど) から除外できます。管理者が特定の件名 ([注意] など) を検索し、受信者を [等しい] に設定できる場合に便利です。 *defaultMail@contoso.com*。 これは正確な値の検索です。
 
-   ![Recipients - 'Contains none of' Advanced フィルター。](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-AdvancedFilter.png" alt-text="[受信者] ウィンドウ" lightbox="../../media/tp-InvestigateMalEmail-AdvancedFilter.png":::
 
    開始日付と終了日にタイム フィルターを追加すると、セキュリティ チームはすばやくドリルダウンできます。 許可される最短の時間は 30 分です。 疑わしいアクションを時間枠 (3 時間前に発生したなど) で絞り込む場合は、コンテキストが制限され、問題を特定するのに役立ちます。
 
-   ![データ セキュリティ チームが処理する必要がある量を絞り込み、最短の期間が 30 分である場合は、時間単位でフィルター処理を行います。](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-FilterbyHours.png" alt-text="[時間によるフィルター処理] オプション" lightbox="../../media/tp-InvestigateMalEmail-FilterbyHours.png":::
 
 6. **脅威エクスプローラーのフィールド**: 脅威エクスプローラーは、配信アクション、配信場所、*特別* なアクション、方向性、上書き、URL の脅威など、セキュリティ関連のメール情報を公開 *します*。 また、組織のセキュリティ チームは、より確実に調査できます。
 
@@ -188,7 +188,7 @@ Threat Explorer は、メッセージの検索と削除、悪意のあるメー�
 
 ## <a name="related-topics"></a>関連項目
 
-[メールで配信される悪意のあるメールを修復Office 365](remediate-malicious-email-delivered-office-365.md)
+[Office 365 で配信された悪意のあるメールを修復する](remediate-malicious-email-delivered-office-365.md)
 
 [Microsoft Defender for Office 365](office-365-ti.md)
 

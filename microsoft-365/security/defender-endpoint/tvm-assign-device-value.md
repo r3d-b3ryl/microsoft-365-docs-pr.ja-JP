@@ -1,7 +1,7 @@
 ---
 title: デバイス値の割り当て - 脅威と脆弱性の管理
 description: 低、通常、または高い値をデバイスに割り当て、資産の優先順位を区別する方法について学習します。
-keywords: Microsoft Defender for Endpoint デバイス値、脅威と脆弱性の管理値、高価値デバイス、デバイス値の露出スコア
+keywords: Microsoft Defender for Endpoint device value, 脅威と脆弱性の管理値, 高価値デバイス, デバイス値露出スコア
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb8c0bd0870ea240e64c33dfac2fd6c00156def8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ff6d61e02ff923cc9406412c81e9a67799e6880a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166640"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477222"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>デバイス値の割り当て - 脅威と脆弱性の管理
 
@@ -36,15 +36,15 @@ ms.locfileid: "61166640"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-デバイスの値を定義すると、資産の優先順位を区別できます。 デバイスの値は、個々のアセットのリスクアペタイトを露出スコアの計算脅威と脆弱性の管理に組み込むのに使用されます。 "高い値" として割り当てられたデバイスは、より多くの重みを受け取る。
+デバイスの値を定義すると、資産の優先順位を区別できます。 デバイス値は、個々のアセットのリスクアペタイトを露出スコアの計算に組み込脅威と脆弱性の管理使用されます。 "高い値" として割り当てられたデバイスは、より多くの重みを受け取る。
 
 デバイス値の設定 [API を使用することもできます](set-device-value.md)。
 
 デバイス値のオプション:
 
-- 低い
+- 低
 - 標準 (既定値)
-- 高い
+- 高
 
 高い値を割り当てる必要があるデバイスの例を次に示します。
 
@@ -59,10 +59,11 @@ ms.locfileid: "61166640"
 
 2. ページ **の上部にある** アクション バーの横にある 3 つのドットから [デバイス値] を選択します。
 
-    ![デバイス値ドロップダウンの例。](images/tvm-device-value-dropdown.png)
+   :::image type="content" source="images/tvm-device-value-dropdown.png" alt-text="[デバイス値] オプション" lightbox="images/tvm-device-value-dropdown.png":::
 
 3. 現在のデバイス値とそれが何を意味するフライアウトが表示されます。 デバイスの値を確認し、デバイスに最適な値を選択します。
-![デバイス値のフライアウトの例。](images/tvm-device-value-flyout.png)
+
+:::image type="content" source="images/tvm-device-value-flyout.png" alt-text="[デバイスの値] ページ" lightbox="images/tvm-device-value-flyout.png":::
 
 ## <a name="how-device-value-impacts-your-exposure-score"></a>デバイスの値が露出スコアに与える影響
 
@@ -73,7 +74,7 @@ ms.locfileid: "61166640"
 - 高い値のデバイスには、NumberOfAssets / 10 の重みがあります。
     - デバイスが 100 台の場合、各高価値デバイスの重みは 10 (100/10) になります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [露出スコア](tvm-exposure-score.md)

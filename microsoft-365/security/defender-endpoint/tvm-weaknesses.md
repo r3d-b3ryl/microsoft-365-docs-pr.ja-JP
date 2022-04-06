@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23b0235382e748071f0d8e060e15624b5332326d
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: a2f3db3a28755c5e2bce46f7134eb1c977d1aa0a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887308"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476645"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織の脆弱性 - 脅威と脆弱性の管理
 
@@ -42,7 +42,7 @@ ms.locfileid: "62887308"
 [ **弱点] ページには** 、共通の脆弱性と露出 (CVE) ID を一覧表示して、デバイスが公開されるソフトウェアの脆弱性が一覧表示されます。 重大度、一般的な脆弱性スコアリング システム (CVSS) の評価、組織での普及率、対応する侵害、脅威の分析情報なども表示できます。
 
 > [!NOTE]
-> 公式の CVE-ID が脆弱性に割り当てられていない場合、脆弱性名は脆弱性の名前によって割り当脅威と脆弱性の管理。
+> 公式の CVE-ID が脆弱性に割り当てられていない場合、脆弱性名は脆弱性の名前に割り当脅威と脆弱性の管理。
 
 > [!TIP]
 > 新しい脆弱性イベントに関する電子メールを取得するには、「 [Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
@@ -51,7 +51,7 @@ ms.locfileid: "62887308"
 
 [弱点] ページにアクセスするには、次に示すいくつかの方法があります。
 
-- セキュリティ ポータル **の [** 脆弱性管理] ナビゲーション メニューから [弱点] を [Microsoft 365 Defenderする](portal-overview.md)
+- セキュリティ ポータル **の [** 脆弱性管理] ナビゲーション **メニューから [** 弱点] [をMicrosoft 365 Defenderする](portal-overview.md)
 - グローバル検索
 
 ### <a name="navigation-menu"></a>[ナビゲーション] メニュー
@@ -62,7 +62,9 @@ ms.locfileid: "62887308"
 
 1. グローバル検索ドロップダウン メニューに移動します。
 2. [ **脆弱性と** キーイン] を選択し、探している共通の脆弱性と露出 (CVE) ID を選択し、検索アイコンを選択します。 [ **弱点] ページ** が開き、探している CVE 情報が表示されます。
-![ドロップダウン オプション "脆弱性" が選択されたグローバル検索ボックスと CVE の例。](images/tvm-vuln-globalsearch.png)
+
+:::image type="content" source="images/tvm-vuln-globalsearch.png" alt-text="ドロップダウン オプションの脆弱性が選択されたグローバル検索ボックス" lightbox="images/tvm-vuln-globalsearch.png":::
+
 3. CVE を選択して、脆弱性の説明、詳細、脅威の分析情報、公開されたデバイスなど、詳細情報を含むフライアウト パネルを開きます。
 
 [弱点] ページで残りの脆弱性を確認するには、「CVE」と入力し、[検索] を選択します。
@@ -71,7 +73,7 @@ ms.locfileid: "62887308"
 
 公開されているデバイスの脆弱性を修復して、資産と組織のリスクを軽減します。 [ **公開されたデバイス] 列** に 0 が表示されている場合は、危険にさらされません。
 
-![ランディング ページの弱点。](images/tvm-weaknesses-overview.png)
+:::image type="content" source="images/tvm-weaknesses-overview.png" alt-text="弱点のランディング ページ" lightbox="images/tvm-weaknesses-overview.png":::
 
 ### <a name="breach-and-threat-insights"></a>侵害と脅威に関する分析情報
 
@@ -94,11 +96,11 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 - "OS 機能" カテゴリは、関連するシナリオで表示されます。
 - 公開されているデバイスを使用して、すべての CVE の関連するセキュリティ推奨事項に移動できます。
 
- ![弱点の飛び出しの例。](images/tvm-weakness-flyout400.png)
+ :::image type="content" source="images/tvm-weakness-flyout400.png" alt-text="[脆弱性の説明] ページ" lightbox="images/tvm-weakness-flyout400.png":::
 
 ### <a name="software-that-isnt-supported"></a>サポートされていないソフトウェア
 
-現在脅威や脅威によってサポートされていないソフトウェアの CVes は& 脆弱性の管理のページに表示されます。 ソフトウェアはサポートされていないので、使用できるデータは限られています。
+現在脅威によってサポートされていないソフトウェアの CVEs は、& 脆弱性の管理のページに表示されます。 ソフトウェアはサポートされていないので、使用できるデータは限られています。
 
 公開されているデバイス情報は、サポートされていないソフトウェアの CVEs では使用できません。 [公開されたデバイス] セクションで [使用できない] オプションを選択して、サポートされていないソフトウェアでフィルター処理します。
 
@@ -108,9 +110,9 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>ダッシュボードの脆弱なソフトウェアの上位
 
-1. ダッシュボードに移動 [脅威と脆弱性の管理、](tvm-dashboard-insights.md)脆弱なソフトウェアの **トップ ウィジェットまで下にスクロール** します。 各ソフトウェアで見つかった脆弱性の数と、脅威情報、デバイスの露出の詳細なビューが表示されます。
+1. ダッシュボードの [脅威と脆弱性の管理 [] に移動](tvm-dashboard-insights.md)し、[脆弱なソフトウェアの上位] **ウィジェットまで下にスクロール** します。 各ソフトウェアで見つかった脆弱性の数と、脅威情報、デバイスの露出の詳細なビューが表示されます。
 
-    ![ソフトウェア、弱点、脅威、公開されたデバイスの 4 つの列を持つ、脆弱なソフトウェア カードの上位。](images/tvm-top-vulnerable-software500.png)
+   :::image type="content" source="images/tvm-top-vulnerable-software500.png" alt-text="[脆弱なソフトウェアの上位] ページの [弱点] 列" lightbox="images/tvm-top-vulnerable-software500.png":::
 
 2. 調査するソフトウェアを選択してドリルダウン ページに移動します。
 
@@ -118,7 +120,7 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 
 4. 脆弱性の詳細については、調査する脆弱性を選択します。
 
-    ![Windows Server 2019 のドリルダウンの概要。](images/windows-server-drilldown.png)
+   :::image type="content" source="images/windows-server-drilldown.png" alt-text="サーバー Windows 2019 のドリルダウンの概要" lightbox="images/windows-server-drilldown.png":::
 
 ### <a name="discover-vulnerabilities-in-the-device-page"></a>デバイス ページで脆弱性を検出する
 
@@ -128,13 +130,13 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 
 2. [デバイス **インベントリ] ページ** で、調査するデバイス名を選択します。
 
-    ![調査するデバイスが選択されているデバイスの一覧。](images/tvm_machinetoinvestigate.png)
+   :::image type="content" source="images/tvm_machinetoinvestigate.png" alt-text="調査するデバイスが選択されているデバイスの一覧" lightbox="images/tvm_machinetoinvestigate.png":::
 
 3. [デバイス] ページが開き、調査するデバイスの詳細と応答オプションが表示されます。
 
 4. [検出 **された脆弱性] を選択します**。
 
-   :::image type="content" alt-text="詳細と応答オプションを含むデバイス ページ。" source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
+   :::image type="content" source="images/tvm-discovered-vulnerabilities.png" alt-text="詳細と応答オプションを含む [デバイス] ページ。" lightbox="images/tvm-discovered-vulnerabilities.png":::
 
 5. 調査する脆弱性を選択して、CVE の詳細 (脆弱性の説明、脅威の分析情報、検出ロジックなど) を含むフライアウト パネルを開きます。
 
@@ -144,7 +146,7 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 
 "OS 機能" カテゴリは、関連するシナリオにも表示されます。 CVE は、特定の OS コンポーネントが有効になっている場合にのみ、脆弱な OS を実行するデバイスに影響します。 たとえば、サーバー 2019 Windowsサーバー 2022 Windows DNS コンポーネントに脆弱性が存在するとします。 この新機能では、この CVE を OS で DNS 機能が有効になっている Windows Server 2019 および Windows Server 2022 デバイスにのみ接続します。
 
-:::image type="content" alt-text="デバイスと KB で検出されたソフトウェアを一覧表示する検出ロジックの例。" source="images/tvm-cve-detection-logic.png":::
+:::image type="content" source="images/tvm-cve-detection-logic.png" alt-text="デバイスで検出されたソフトウェアと KB を一覧表示する検出ロジックの例" lightbox="images/tvm-cve-detection-logic.png":::
 
 ## <a name="report-inaccuracy"></a>レポートの不正確さ
 

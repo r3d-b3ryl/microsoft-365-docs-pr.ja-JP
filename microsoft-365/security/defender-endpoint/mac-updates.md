@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ceff362daeb2054b6037ea0eecbeafbb9dbed4f3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 0b9ddf9693a242b3b8c466cfa1616b62c5eb73b9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767630"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469297"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 
@@ -40,13 +40,13 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 macOS のエンドポイント用 Microsoft Defender を更新するには、Microsoft AutoUpdate (MAU) という名前のプログラムが使用されます。 既定では、MAU は更新プログラムを毎日自動的にチェックしますが、毎週、月次、または手動に変更できます。
 
-![MAU のスクリーンショット。](images/MDATP-34-MAU.png)
+:::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
 
 ソフトウェア配布ツールを使用して更新プログラムを展開する場合は、ソフトウェア更新プログラムを手動で確認する MAU を構成する必要があります。 組織の Mac の更新プログラムを MAU がチェックする方法と時間を構成する基本設定を展開できます。
 
 ## <a name="use-msupdate"></a>Msupdate の使用
 
-MAU には *msupdate* と呼ばれるコマンド ライン ツールが含まれています。これは、更新プログラムを適用する際の詳細な制御が可能な IT 管理者向けです。 このツールの使い方については、「msupdate を使用した更新プログラムOffice for Mac[を参照してください](/deployoffice/mac/update-office-for-mac-using-msupdate)。
+MAU には *msupdate* と呼ばれるコマンド ライン ツールが含まれています。これは、更新プログラムを適用する際の詳細な制御が可能な IT 管理者向けです。 このツールの使い方については、「msupdate を使用した更新プログラムのOffice for Mac[を参照してください](/deployoffice/mac/update-office-for-mac-using-msupdate)。
 
 MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプリケーション識別子は *WDAV00 です*。 macOS の Microsoft Defender for Endpoint の最新の更新プログラムをダウンロードしてインストールするには、ターミナル ウィンドウから次のコマンドを実行します。
 
@@ -139,7 +139,7 @@ MAU が更新プログラムを検索する方法を変更します。
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**キー**|EnableCheckForUpdatesButton|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|True (既定) <p> False|
 |||
 
@@ -155,7 +155,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**キー**|DisableInsiderCheckbox|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|False (既定) <p> True|
 |||
 
@@ -171,7 +171,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**キー**|SendAllTelemetryEnabled|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|True (既定) <p> False|
 |||
 

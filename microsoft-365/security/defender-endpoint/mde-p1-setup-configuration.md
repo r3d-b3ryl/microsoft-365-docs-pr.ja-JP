@@ -1,5 +1,5 @@
 ---
-title: プラン 1 のセットアップMicrosoft Defender for Endpoint構成する
+title: Microsoft Defender for Endpoint Plan 1 のセットアップと構成
 description: Defender for Endpoint Plan 1 を設定および構成する方法について説明します。 要件を確認し、ロールアウトを計画し、環境をセットアップします。
 search.appverid: MET150
 author: denisebmsft
@@ -16,14 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 741450f2573e0d750a1d3de5012f97cf16a0780d
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: e2a8f7166e1fa3a05b95b1a48dbf91b30ef34224
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569094"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470375"
 ---
-# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>プラン 1 のセットアップMicrosoft Defender for Endpoint構成する
+# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 のセットアップと構成
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,7 +32,7 @@ ms.locfileid: "64569094"
 
 ## <a name="the-setup-and-configuration-process"></a>セットアップと構成プロセス
 
-:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="プラン 1 のセットアップとMicrosoft Defender for Endpointフロー" lightbox="images/mde-p1-deploymentflow.png":::
+:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Microsoft Defender for Endpoint Plan 1 のセットアップと展開フロー" lightbox="images/mde-p1-deploymentflow.png":::
 
 Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセスは次のとおりです。 <br/><br/>
 
@@ -53,7 +53,7 @@ Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセ
 
 | 要件 | 説明 |
 |:---|:---|
-| ライセンスの要件 | Defender for Endpoint プラン 1 |
+| ライセンスの要件 | Defender for Endpoint Plan 1 (以前は Microsoft Defender for Endpoint Lite と呼ばば)|
 | ブラウザー要件 | Microsoft Edge <br/> Internet Explorerバージョン 11 <br/> Google Chrome |
 | オペレーティング システム | Windows 10バージョン 1709 以降 <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave) <br/>iOS <br/>Android OS  |
 | Datacenter | 次のいずれかのデータセンターの場所。 <br/>- 欧州連合 <br/>- イギリス <br/>- 米国 |
@@ -65,9 +65,9 @@ Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセ
 
 | メソッド | 説明 |
 |:---|:---|
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Microsoft エンドポイント マネージャー) | クラウド Intune環境でエンドポイントを管理する場合は、次のコマンドを使用します。 |
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)と[Configuration Manager](/mem/configmgr/core/understand/introduction) (Microsoft エンドポイント マネージャー) | オンプレミスIntuneクラウドConfiguration Managerにまたがるエンドポイントとワークロードを管理する場合は、アプリケーションとサーバーを使用します。 |
-| [Configuration Manager](/mem/configmgr/core/understand/introduction) | クラウド Configuration Manager Defender for Endpoint のクラウド ベースの電源でオンプレミス エンドポイントを保護するには、この機能を使用します。 |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Microsoft エンドポイント マネージャー) | Intune を使用してクラウド ネイティブ環境のエンドポイントを管理する |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)[および Configuration Manager](/mem/configmgr/core/understand/introduction) (Microsoft エンドポイント マネージャー に含まれる) | Intune と Configuration Manager を使用して、オンプレミス環境とクラウド環境にまたがるエンドポイントとワークロードを管理する |
+| [Configuration Manager](/mem/configmgr/core/understand/introduction) | Configuration Manager を使用して、Defender for Endpoint のクラウドベースの機能を使用してオンプレミスのエンドポイントを保護する |
 | ポータルからダウンロードされたローカル Microsoft 365 Defenderスクリプト | エンドポイントでローカル スクリプトを使用してパイロットを実行するか、少数のデバイスをオンボードする |
 
 展開オプションの詳細については、「Defender [for Endpoint の展開を計画する」を参照してください](deployment-strategy.md)。 次のポスターをダウンロードします。 
@@ -77,7 +77,7 @@ Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセ
 **[展開ポスターを取得する](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)**
 
 > [!TIP]
-> 展開の計画の詳細については、「展開の計画」[をMicrosoft Defender for Endpointしてください](deployment-strategy.md)。
+> 展開の計画の詳細については、「 [Plan your Microsoft Defender for Endpoint deployment」を参照してください](deployment-strategy.md)。
 
 ## <a name="set-up-your-tenant-environment"></a>テナント環境のセットアップ
 
@@ -102,9 +102,9 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 次の表では、組織内の Defender for Endpoint で考慮する重要な役割について説明します。 <br/><br/>
 
-| 役割 | 説明 |
+| Role | 説明 |
 |:---|:---|
-| グローバル管理者 (グローバル管理者とも呼ばれます) <br/><br/> *ベスト プラクティスとして、グローバル管理者の数を制限します。* | グローバル管理者は、あらゆる種類のタスクを実行できます。 既定では、プラン 1 のMicrosoft 365またはMicrosoft Defender for Endpoint会社をサインアップしたユーザーは、グローバル管理者です。 <br/><br/> グローバル管理者は、次のようなすべてのポータルMicrosoft 365設定にアクセス/変更できます。 <br/>- Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
+| グローバル管理者 (グローバル管理者とも呼ばれます) <br/><br/> *ベスト プラクティスとして、グローバル管理者の数を制限します。* | グローバル管理者は、あらゆる種類のタスクを実行できます。 既定では、Microsoft Defender for Endpoint Plan 1 Microsoft 365または Microsoft Defender に会社をサインアップしたユーザーは、グローバル管理者です。 <br/><br/> グローバル管理者は、次のようなすべてのポータルMicrosoft 365設定にアクセス/変更できます。 <br/>- Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
 | セキュリティ管理者 (セキュリティ管理者とも呼ばれます) | セキュリティ管理者は、セキュリティ オペレーターのタスクと次のタスクを実行できます。 <br/>- セキュリティ関連のポリシーを監視する <br/>- セキュリティの脅威とアラートを管理する <br/>- レポートの表示 |
 | セキュリティ オペレーター | セキュリティオペレーターは、セキュリティ リーダー タスクと次のタスクを実行できます。 <br/>- 検出された脅威に関する情報を表示する <br/>- 検出された脅威を調査して対応する  |
 | セキュリティ閲覧者 | セキュリティ リーダーは、次のタスクを実行できます。 <br/>- セキュリティ関連のポリシーを複数のサービスMicrosoft 365する <br/>- セキュリティの脅威とアラートを表示する <br/>- レポートの表示  |
@@ -138,7 +138,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 2. [ **Endpoint securityAntivirus** > **] を** 選択し、既存のポリシーを選択します。 (既存のポリシーを持ってない場合は、新しいポリシーを作成します)。
 
-3. ウイルス対策の構成設定を設定または変更します。 サポートが必要な場合 次のリソースを参照してください。 <br/>
+3. ウイルス対策の構成設定を設定または変更します。 お困りの際は、 次のリソースを参照してください。 <br/>
 
    - [設定のWindows 10 Microsoft Defender ウイルス対策ポリシーのMicrosoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [iOS の機能でエンドポイント用 Defender を構成する](ios-configure-features.md)
@@ -258,7 +258,7 @@ Defender for Endpoint を構成して、リムーバブル デバイス上のリ
 10. [確認 **と作成] タブ** で、ポリシーの設定を確認し、[作成] を選択 **します**。 ポリシーは、Defender for Endpoint にオンボードされたエンドポイントにまもなく適用されます。
 
 > [!TIP]
-> 詳細については、「デバイスを使用して USB デバイスと他のリムーバブル メディアを制御する方法[」を参照](control-usb-devices-using-intune.md)Microsoft Defender for Endpoint。
+> 詳細については、「 [Microsoft Defender for Endpoint を使用して USB](control-usb-devices-using-intune.md) デバイスや他のリムーバブル メディアを制御する方法」を参照してください。
 
 ### <a name="network-protection"></a>ネットワーク保護
 
@@ -293,7 +293,7 @@ Defender for Endpoint を構成して、リムーバブル デバイス上のリ
 8. [確認 **と作成] タブ** で、ポリシーの設定を確認し、[作成] を選択 **します**。 ポリシーは、Defender for Endpoint にオンボードされたエンドポイントにまもなく適用されます。
 
 > [!TIP]
-> ネットワーク保護を有効にするには、Windows PowerShellやグループ ポリシー方法を使用できます。 詳細については、「ネットワーク保護を [有効にする」を参照してください](enable-network-protection.md)。
+> ネットワーク保護を有効にするには、Windows PowerShellグループ ポリシーなどの他の方法を使用できます。 詳細については、「ネットワーク保護を [有効にする」を参照してください](enable-network-protection.md)。
 
 ### <a name="web-protection"></a>Web 保護
 
@@ -311,7 +311,7 @@ Web 保護を使用すると、Web の脅威や望ましくないコンテンツ
 
 5. [構成設定 **] タブで** 、[ **Web Protection**] を展開し、次の表で設定を指定し、[次へ] を選択 **します**。 <br/><br/>
 
-   | Setting | 推奨事項 |
+   | 設定 | 推奨事項 |
    |:---|:---|
    | **ネットワーク保護を有効にする** | [有効] に **設定します**。 ユーザーが悪意のあるサイトやドメインにアクセスできない。 <br/><br/>または、ネットワーク保護を監査モード **に設定** して、環境での動作を確認することもできます。 監査モードでは、ネットワーク保護によってユーザーがサイトやドメインにアクセスできませんが、検出はイベントとして追跡されます。 |
    | **ユーザーに SmartScreen を要求Microsoft Edge 従来版** | [はい] **に設定します**。 潜在的なフィッシング詐欺や悪意のあるソフトウェアからユーザーを保護するのに役立ちます。 |
@@ -403,4 +403,4 @@ WDAC 展開の計画に役立つ情報については、次のリソースを参
 
 セットアップと構成プロセスが完了したので、次に、Defender for Endpoint の使用を開始します。 
 
-- [概要 Defender for Endpoint Plan 1 との関連付け](mde-plan1-getting-started.md)
+- [Defender for Endpoint Plan 1 の概要](mde-plan1-getting-started.md)

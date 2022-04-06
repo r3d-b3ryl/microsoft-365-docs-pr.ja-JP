@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f6767b1a788129266bff713a6608277a2450598c
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: d56cbb48697c4804aa493d945ff81c52e12f86c5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775898"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470089"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 
@@ -72,9 +72,9 @@ ms.locfileid: "63775898"
 >
 > - デバイスがプロキシの背後にある場合は、プロキシ サーバーを環境変数として mde_support_tool.sh スクリプトに渡す必要があります。 例: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
-例: 
+例:
 
-![コマンド ラインの例のイメージ。](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+:::image type="content" source="images/4ca188f6c457e335abe3c9ad3eddda26.png" alt-text="コマンド ラインの例" lightbox="images/4ca188f6c457e335abe3c9ad3eddda26.png":::
 
 その他の構文ヘルプ:
 

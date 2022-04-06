@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: ユーザーのプライバシーと同意通知を使用してサインイン ページをカスタマイズMicrosoft 365。
-ms.openlocfilehash: 003853e0577b2c23fc8240d2b19918c3235eade8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8beff76721ce622d5e1943aea1c16fda90b052f1
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767851"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634693"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>プライバシーと同意通知を使用してサインイン ページをカスタマイズする
 
@@ -42,8 +42,11 @@ ms.locfileid: "62767851"
 更新できる要素は次のとおりです。
 
 - **サインイン ページのテキスト** プライバシーと同意に関する声明を簡単に追加できます。
+
 - サインイン ページの背景画像
+
 - バナー ロゴ
+
 - ユーザー名のヒント
 
 プライバシーと同意に関する通知の例については、「コンピューターの検索と押収」および「犯罪捜査における電子証拠の取得」の付録 A [を参照してください](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)。

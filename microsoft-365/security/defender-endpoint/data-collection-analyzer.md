@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 513432dfb24af89451c4d8290ce5fde0951819b9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2825bc87750dc9bb130e35f9a4997283e470f869
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322703"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469891"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Windows で高度なトラブルシューティングを行うためのデータ収集
 
@@ -33,7 +33,7 @@ Microsoft サポート 担当者と共同作業する場合は、クライアン
 
 '**MDEClientAnalyzer.cmd /?' を実行** します。 をクリックして、使用可能なパラメーターとその説明の一覧を表示します。
 
-![コマンド ラインのクライアント アナライザー パラメーターのイメージ。](images/d89a1c04cf8441e4df72005879871bd0.png)
+:::image type="content" source="images/d89a1c04cf8441e4df72005879871bd0.png" alt-text="MDEClientAnalyzer.cmd のパラメーター" lightbox="images/d89a1c04cf8441e4df72005879871bd0.png":::
 
 > [!NOTE]
 > 高度なトラブルシューティング パラメーターを使用すると、アナライザーは関連するサポート ログ[MpCmdRun.exe収集Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus)呼び出します。
@@ -69,13 +69,13 @@ Microsoft サポート 担当者と共同作業する場合は、クライアン
 
 アナライザーと上記のすべてのシナリオ フラグは、"RemoteMDEClientAnalyzer.cmd' を実行することでリモートから開始できます。これはアナライザー ツールセットにもバンドルされています。
 
-![アナライザー情報を含むコマンド ラインのイメージ。](images/57cab9d82d08f672a92bf9e748ac9572.png)
+:::image type="content" source="images/57cab9d82d08f672a92bf9e748ac9572.png" alt-text="RemoteMDEClientAnalyzer.cmd のパラメーター" lightbox="images/57cab9d82d08f672a92bf9e748ac9572.png":::
 
 > [!NOTE]
 >
 > - RemoteMDEClientAnalyzer.cmd を使用する場合は、psexec を呼び出して、構成されたファイル共有からツールをダウンロードし、そのツールをローカルで実行PsExec.exe。
     CMD スクリプトは '-r' フラグを使用して、SYSTEM コンテキスト内でリモートで実行するように指定します。そのため、ユーザーに対するプロンプトは表示されません。
-> - この同じフラグを MDEClientAnalyzer.cmd と一緒に使用すると、データ収集の分数の指定を要求するユーザーに対するプロンプトを回避できます。 例:
+> - この同じフラグを MDEClientAnalyzer.cmd と一緒に使用すると、データ収集の分数の指定を要求するユーザーに対するプロンプトを回避できます。 次に例を示します。
 >
 >    **MDEClientAnalyzer.cmd -r -i -m 5**
 >

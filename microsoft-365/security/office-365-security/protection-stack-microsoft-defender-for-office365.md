@@ -14,12 +14,12 @@ description: Microsoft Defender の脅威フィルター スタックを通じ�
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 62d7ac9f13f59fce3b635f6d1dace2f22ee7f503
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e7be5c66e0ca3841a8bc4fd76555feaeafb1bd17
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683825"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469033"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
 
@@ -34,7 +34,7 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
 
 エッジ ブロックは自動的に設計されています。 誤検知の場合、送信者に通知され、問題に対処する方法が通知されます。 信頼できるパートナーからの評価が制限されているコネクタは、新しいエンドポイントのオンボーディング時に、配信性を確保したり、一時的な上書きを行う可能性があります。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Defender for Office 365のフェーズ 1 はエッジ保護です。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Defender のフェーズ 1 フィルター処理を使用Office 365" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png":::
 
 1. **ネットワーク調整は** Office 365一連のインフラストラクチャによって送信できるメッセージの数を制限することで、サービス拒否 (DOS) 攻撃からインフラストラクチャと顧客を保護します。
 
@@ -52,7 +52,7 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
 
 送信者インテリジェンスの機能は、スパム、バルク、偽装、および不正なスプーフィング メッセージをキャッチし、フィッシング検出を考慮に入れするために重要です。 これらの機能の大部分は個別に構成できます。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Defender のフィルター処理のフェーズ 2 Office 365送信者インテリジェンスです。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Defender for Office 365のフィルター処理のフェーズ 2 は、送信者インテリジェンスです。" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png":::
 
 1. **アカウントが異常な** 動作を持ち、侵害と一致すると、アカウント侵害検出トリガーとアラートが発生します。 場合によっては、組織のセキュリティ運用チームによって問題が解決されるまで、ユーザー アカウントがブロックされ、それ以上電子メール メッセージを送信できない場合があります。
 
@@ -82,7 +82,7 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
 
 このフェーズでは、フィルター スタックは、ハイパーリンクや添付ファイルなど、メールの特定のコンテンツの処理を開始します。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="MDO でのフィルター処理のフェーズ 3 は、コンテンツ フィルターです。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="MDO のフェーズ 3 フィルターはコンテンツ フィルターです" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png":::
 
 1. **トランスポート ルール** (メール フロー ルールまたは Exchange トランスポート ルールとも呼ばれる) を使用すると、管理者は、メッセージに対して同様に幅広い条件が満たされた場合に、さまざまなアクションを実行できます。 組織を流れるすべてのメッセージは、有効なメール フロー ルール/トランスポート ルールに対して評価されます。
 
@@ -110,7 +110,7 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
 
 最後のステージは、メールまたはファイルの配信後に行い、さまざまなメールボックス内のメールや、Microsoft Teams のようなクライアントに表示されるファイルやリンクに基Microsoft Teams。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Defender for Office 365のフェーズ 4 は、配信後の保護です。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Defender for the Phase-4 filtering for Office 365配信後の保護" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
 1. **安全なリンク** は、Defender for Office 365 のクリック時保護です。 すべてのメッセージのすべての URL は、Microsoft のリンク サーバーをポイントセーフされます。 URL をクリックすると、ユーザーがターゲット サイトにリダイレクトされる前に、最新の評価に対してチェックされます。 URL は、評判を更新するために非同期的にサンドボックス化されます。
 
@@ -134,7 +134,7 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
 
 最終的な図 (構成する図のすべての部分と同様) は、製品の成長と開発に応じて変更 *される可能性があります*。 このページをブックマーク **し、更新** 後に確認する必要がある場合は、下部にあるフィードバック オプションを使用します。 レコードの場合、これはすべてのフェーズを順番に持つスタックです。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Defender のフィルター処理のすべてのフェーズは、Office 365 1 ~ 4 です。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Defender のフィルター処理のすべてのフェーズは、Office 365 1 ~ 4 の順序で行います。" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
 ## <a name="more-information"></a>詳細情報
 

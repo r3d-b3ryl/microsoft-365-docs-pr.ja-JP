@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: c88eceadf6c00d165b0ac032fab19596abec49e1
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 17675917a737717c352125d23a32b432e681a77f
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525474"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634561"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -164,7 +164,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="afghanistan"></a>アフガニスタン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -192,7 +192,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="aland-islands"></a>オーランド諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -220,7 +220,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="albania"></a>アルバニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -248,7 +248,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="algeria"></a>アルジェリア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -276,7 +276,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="american-samoa"></a>米領サモア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -304,7 +304,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="andorra"></a>アンドラ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -332,7 +332,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="angola"></a>アンゴラ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -360,7 +360,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="anguilla"></a>アンギラ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -388,7 +388,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="antarctica"></a>南極大陸
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -416,7 +416,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="antigua-and-barbuda"></a>アンティグア バーブーダ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -444,7 +444,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="argentina"></a>アルゼンチン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -472,7 +472,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="armenia"></a>アルメニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -500,7 +500,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="aruba"></a>アルバ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -528,7 +528,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="australia"></a>オーストラリア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | オーストラリア |
 | OneDrive for Business | オーストラリア |
@@ -556,7 +556,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="austria"></a>オーストリア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -584,7 +584,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="azerbaijan"></a>アゼルバイジャン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -612,7 +612,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="bahamas"></a>バハマ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -640,7 +640,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="bahrain"></a>バーレーン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -668,7 +668,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="bangladesh"></a>バングラデシュ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -696,7 +696,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="barbados"></a>バルバドス
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -725,7 +725,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="belarus"></a>ベラルーシ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -753,7 +753,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="belgium"></a>ベルギー
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -781,7 +781,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="belize"></a>ベリーズ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -809,7 +809,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="benin"></a>ベナン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -837,7 +837,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="bermuda"></a>バミューダ諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -865,7 +865,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="bhutan"></a>ブータン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -893,7 +893,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="bolivia"></a>ボリビア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -921,7 +921,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="bonaire"></a>ボネール島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -949,7 +949,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="bosnia-and-herzegovina"></a>ボスニア・ヘルツェゴビナ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -977,7 +977,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="botswana"></a>ボツワナ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1005,7 +1005,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="bouvet-island"></a>ブーベ島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -1033,7 +1033,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="brazil"></a>ブラジル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | ブラジル |
 | OneDrive for Business | ブラジル |
@@ -1061,7 +1061,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="british-indian-ocean-territory"></a>イギリス領インド洋地域
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -1089,7 +1089,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="british-virgin-islands"></a>英領バージン諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -1117,7 +1117,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="brunei"></a>ブルネイ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -1145,7 +1145,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="bulgaria"></a>ブルガリア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -1173,7 +1173,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="burkina-faso"></a>ブルキナファソ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1201,7 +1201,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="burundi"></a>ブルンジ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1229,7 +1229,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="cambodia"></a>カンボジア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -1257,7 +1257,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="cameroon"></a>カメルーン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1285,7 +1285,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="canada"></a>カナダ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | カナダ |
 | OneDrive for Business | カナダ |
@@ -1313,7 +1313,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="cape-verde"></a>カーボベルデ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1341,7 +1341,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="cayman-islands"></a>ケイマン諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -1369,7 +1369,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="central-african-republic"></a>中央アフリカ共和国
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1397,7 +1397,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="chad"></a>チャド
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1425,7 +1425,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="chile"></a>チリ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -1453,7 +1453,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="china"></a>中国
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -1481,7 +1481,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="christmas-island"></a>クリスマス島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -1509,7 +1509,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="cocos-keeling-islands"></a>ココス諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -1537,7 +1537,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="colombia"></a>コロンビア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -1565,7 +1565,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="comoros"></a>コモロ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1594,7 +1594,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="congo-brazzaville"></a>コンゴ民主共和国 (ブラザビル)
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1623,7 +1623,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="congo-kinshasa"></a>コンゴ共和国、(キンシャサ)
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1652,7 +1652,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="cook-islands"></a>クック諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -1680,7 +1680,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="costa-rica"></a>コスタリカ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -1708,7 +1708,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="cote-divoire"></a>コートジボワール
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1736,7 +1736,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="croatia"></a>クロアチア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -1764,7 +1764,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="curacao"></a>キュラソー島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -1792,7 +1792,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="cyprus"></a>キプロス
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -1820,7 +1820,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="czech-republic"></a>チェコ共和国
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -1848,7 +1848,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="denmark"></a>デンマーク
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -1876,7 +1876,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="djibouti"></a>ジブチ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1904,7 +1904,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="dominica"></a>ドミニカ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -1932,7 +1932,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="dominican-republic"></a>ドミニカ共和国
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -1960,7 +1960,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="ecuador"></a>エクアドル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -1988,7 +1988,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="egypt"></a>エジプト
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2016,7 +2016,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="el-salvador"></a>エルサルバドル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -2044,7 +2044,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="equatorial-guinea"></a>赤道ギニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2072,7 +2072,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="eritrea"></a>エリトリア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2100,7 +2100,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="estonia"></a>エストニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -2128,7 +2128,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="ethiopia"></a>エチオピア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2156,7 +2156,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="falkland-islands-malvinas"></a>フォークランド (マルビナス) 諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -2184,7 +2184,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="faroe-islands"></a>フェロー諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2212,7 +2212,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="federated-states-of-micronesia"></a>ミクロネシア連邦
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -2240,7 +2240,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="fiji"></a>フィジー
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | オーストラリア |
 | OneDrive for Business | オーストラリア |
@@ -2268,7 +2268,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="finland"></a>フィンランド
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -2296,7 +2296,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="france"></a>フランス
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | フランス |
 | OneDrive for Business | フランス |
@@ -2324,7 +2324,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="french-guiana"></a>フランス領ギアナ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -2352,7 +2352,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="french-polynesia"></a>フランス領ポリネシア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -2380,7 +2380,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="french-southern-territories"></a>フランス領極南諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -2408,7 +2408,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="gabon"></a>ガボン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2436,7 +2436,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="gambia"></a>ガンビア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2464,7 +2464,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="georgia"></a>ジョージア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2492,7 +2492,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="germany"></a>ドイツ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | ドイツ |
 | OneDrive for Business | ドイツ |
@@ -2520,7 +2520,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="ghana"></a>ガーナ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2548,7 +2548,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="gibraltar"></a>ジブラルタル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2576,7 +2576,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="greece"></a>ギリシャ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -2605,7 +2605,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="greenland"></a>グリーンランド
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -2633,7 +2633,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="grenada"></a>グレナダ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -2661,7 +2661,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="guadeloupe"></a>グアドループ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -2689,7 +2689,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="guam"></a>グアム
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -2717,7 +2717,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="guatemala"></a>グアテマラ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -2745,7 +2745,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="guernsey"></a>ガーンジー島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2773,7 +2773,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="guinea"></a>ギニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2801,7 +2801,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="guinea-bissau"></a>ギニアビサウ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2829,7 +2829,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="guyana"></a>ガイアナ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -2857,7 +2857,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="haiti"></a>ハイチ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -2885,7 +2885,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="heard-and-mcdonald-islands"></a>ハード・マクドナルド諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -2913,7 +2913,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="herzegovina"></a>ヘルツェゴビナ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2941,7 +2941,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="holy-see-vatican-city-state"></a>バチカン市国
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2969,7 +2969,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="honduras"></a>ホンジュラス
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -2997,7 +2997,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="hong-kong-sar"></a>香港
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -3025,7 +3025,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="hungary"></a>ハンガリー
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -3053,7 +3053,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="iceland"></a>アイスランド
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3082,7 +3082,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="india"></a>インド
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | インド |
 | OneDrive for Business | インド |
@@ -3110,7 +3110,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="indonesia"></a>インドネシア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -3138,7 +3138,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="iraq"></a>イラク
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3166,7 +3166,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="ireland"></a>アイルランド
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -3194,7 +3194,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="isle-of-man"></a>マン島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3222,7 +3222,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="israel"></a>イスラエル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3250,7 +3250,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="italy"></a>イタリア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -3278,7 +3278,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="jamaica"></a>ジャマイカ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -3306,7 +3306,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="japan"></a>日本
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 日本 |
 | OneDrive for Business | 日本 |
@@ -3334,7 +3334,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="jersey"></a>ジャージー島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3362,7 +3362,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="jordan"></a>ヨルダン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3390,7 +3390,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="kazakhstan"></a>カザフスタン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3418,7 +3418,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="kenya"></a>ケニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3446,7 +3446,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="kiribati"></a>キリバス
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -3474,7 +3474,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="south-korea"></a>韓国
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 韓国 |
 | OneDrive for Business | 韓国 |
@@ -3502,7 +3502,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="kosovo"></a>コソボ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3530,7 +3530,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="kuwait"></a>クウェート
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3558,7 +3558,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="kyrgyzstan"></a>キルギスタン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3586,7 +3586,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="laos"></a>ラオス
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -3614,7 +3614,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="latvia"></a>ラトビア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -3642,7 +3642,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="lebanon"></a>レバノン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3671,7 +3671,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="lesotho"></a>レソト
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3700,7 +3700,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="liberia"></a>リベリア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3728,7 +3728,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="libya"></a>リビア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3757,7 +3757,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="liechtenstein"></a>リヒテンシュタイン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | スイス |
 | OneDrive for Business | スイス |
@@ -3785,7 +3785,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="lithuania"></a>リトアニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -3813,7 +3813,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="luxembourg"></a>ルクセンブルク
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -3841,7 +3841,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="madagascar"></a>マダガスカル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3869,7 +3869,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="malawi"></a>マラウイ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3897,7 +3897,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="malaysia"></a>マレーシア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -3925,7 +3925,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="maldives"></a>モルディブ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -3953,7 +3953,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="mali"></a>マリ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3981,7 +3981,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="malta"></a>マルタ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -4009,7 +4009,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="marshall-islands"></a>マーシャル諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4037,7 +4037,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="martinique"></a>マルティニーク島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -4065,7 +4065,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="mauritania"></a>モーリタニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4093,7 +4093,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="mauritius"></a>モーリシャス
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4121,7 +4121,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="mayotte"></a>マイヨット
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4149,7 +4149,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="mexico"></a>メキシコ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -4177,7 +4177,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="moldova"></a>モルドバ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4205,7 +4205,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="monaco"></a>モナコ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4233,7 +4233,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="mongolia"></a>モンゴル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4261,7 +4261,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="montenegro"></a>モンテネグロ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4289,7 +4289,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="montserrat"></a>モントセラト
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -4317,7 +4317,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="morocco"></a>モロッコ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4345,7 +4345,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="mozambique"></a>モザンビーク
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4373,7 +4373,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="myanmar"></a>ミャンマー
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4401,7 +4401,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="namibia"></a>ナミビア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4429,7 +4429,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="nauru"></a>ナウル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4458,7 +4458,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="nepal"></a>ネパール
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4487,7 +4487,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="netherlands"></a>オランダ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -4515,7 +4515,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="netherlands-antilles"></a>オランダ領アンティル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -4544,7 +4544,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="new-caledonia"></a>ニューカレドニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4572,7 +4572,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="new-zealand"></a>ニュージーランド
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | オーストラリア |
 | OneDrive for Business | オーストラリア |
@@ -4600,7 +4600,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="nicaragua"></a>ニカラグア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -4628,7 +4628,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="niger"></a>ニジェール
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4656,7 +4656,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="nigeria"></a>ナイジェリア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4684,7 +4684,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="niue"></a>ニウエ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4712,7 +4712,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="norfolk-island"></a>ノーフォーク島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4740,7 +4740,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="northern-mariana-islands"></a>北マリアナ諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4768,7 +4768,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="norway"></a>ノルウェー
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | ノルウェー |
 | OneDrive for Business | ノルウェー |
@@ -4797,7 +4797,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="oman"></a>オマーン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4825,7 +4825,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="pakistan"></a>パキスタン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4853,7 +4853,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="palau"></a>パラオ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4881,7 +4881,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="palestinian-authority"></a>パレスチナ自治政府
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4909,7 +4909,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="panama"></a>パナマ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -4937,7 +4937,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="papua-new-guinea"></a>パプアニューギニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -4965,7 +4965,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="paraguay"></a>パラグアイ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -4993,7 +4993,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="peru"></a>ペルー
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -5021,7 +5021,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="philippines"></a>フィリピン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -5049,7 +5049,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="pitcairn"></a>ピトケアン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -5077,7 +5077,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="poland"></a>ポーランド
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -5105,7 +5105,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="portugal"></a>ポルトガル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -5133,7 +5133,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="puerto-rico"></a>プエルトリコ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -5161,7 +5161,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="qatar"></a>カタール
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5189,7 +5189,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="republic-of-macedonia"></a>マケドニア共和国
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5217,7 +5217,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="runion"></a>レユニオン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5245,7 +5245,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="romania"></a>ルーマニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -5274,7 +5274,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 <details><summary>クリックして展開</summary><p>
 
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5303,7 +5303,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 <details><summary>クリックして展開</summary><p>
 
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5332,7 +5332,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 <details><summary>クリックして展開</summary><p>
 
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5360,7 +5360,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="saint-kitts-and-nevis"></a>セントクリストファー ネイビス
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -5388,7 +5388,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="saint-lucia"></a>セントルシア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -5416,7 +5416,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="saint-martin"></a>サンマルタン島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -5444,7 +5444,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="saint-pierre-and-miquelon"></a>サンピエール島/ミクロン島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -5472,7 +5472,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="saint-vincent-and-the-grenadines"></a>セントビンセント グレナディーン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -5500,7 +5500,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="saint-barthlemy"></a>サンバルテルミー
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -5528,7 +5528,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="samoa"></a>サモア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -5556,7 +5556,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="san-marino"></a>サンマリノ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5584,7 +5584,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="sao-tome-and-principe"></a>サントメ・プリンシペ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5612,7 +5612,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="saudi-arabia"></a>サウジアラビア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5640,7 +5640,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="senegal"></a>セネガル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5668,7 +5668,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="serbia"></a>セルビア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5696,7 +5696,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="seychelles"></a>セーシェル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5724,7 +5724,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="sierra-leone"></a>シエラレオネ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5752,7 +5752,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="singapore"></a>シンガポール
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -5780,7 +5780,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="sint-maarten"></a>シント・マールテン島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -5808,7 +5808,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="slovakia"></a>スロバキア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -5836,7 +5836,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="slovenia"></a>スロベニア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -5864,7 +5864,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="solomon-islands"></a>ソロモン諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -5893,7 +5893,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 <details><summary>クリックして展開</summary><p>
 
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5921,7 +5921,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="south-africa"></a>南アフリカ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 南アフリカ |
 | OneDrive for Business | 南アフリカ |
@@ -5949,7 +5949,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="south-georgia-and-the-south-sandwich-islands"></a>サウスジョージア サウスサンドウィッチ諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -5977,7 +5977,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="spain"></a>スペイン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
@@ -6005,7 +6005,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="sri-lanka"></a>スリランカ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -6033,7 +6033,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="suriname"></a>スリナム
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -6061,7 +6061,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="svalbard-and-jan-mayen-islands"></a>スバールバル諸島、ヤンマイエン島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6089,7 +6089,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="swaziland"></a>スワジランド
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6117,7 +6117,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="sweden"></a>スウェーデン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | スウェーデン |
 | OneDrive for Business | スウェーデン |
@@ -6145,7 +6145,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="switzerland"></a>スイス
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | スイス |
 | OneDrive for Business | スイス |
@@ -6173,7 +6173,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="taiwan"></a>台湾
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -6201,7 +6201,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="tajikistan"></a>タジキスタン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6229,7 +6229,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="united-republic-of-tanzania"></a>タンザニア連合共和国
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6257,7 +6257,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="thailand"></a>タイ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -6285,7 +6285,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="timor-leste"></a>ティモール・レステ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -6313,7 +6313,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="togo"></a>トーゴ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6341,7 +6341,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="tokelau"></a>トケラウ諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -6369,7 +6369,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="tonga"></a>トンガ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -6397,7 +6397,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="trinidad-and-tobago"></a>トリニダード・トバゴ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -6425,7 +6425,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="tunisia"></a>チュニジア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6453,7 +6453,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="turkey"></a>トルコ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6481,7 +6481,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="turkmenistan"></a>トルクメニスタン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6509,7 +6509,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="turks-and-caicos-islands"></a>タークス カイコス諸島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -6537,7 +6537,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="tuvalu"></a>ツバル
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -6565,7 +6565,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="us-virgin-islands"></a>ヴァージン諸島 (米国)
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -6593,7 +6593,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="uganda"></a>ウガンダ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6621,7 +6621,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="ukraine"></a>ウクライナ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6649,7 +6649,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="united-arab-emirates"></a>アラブ首長国連邦
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | アラブ首長国連邦 |
 | OneDrive for Business | アラブ首長国連邦 |
@@ -6677,7 +6677,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="united-kingdom"></a>英国
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 英国 |
 | OneDrive for Business | 英国 |
@@ -6705,7 +6705,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="united-states"></a>米国
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -6733,7 +6733,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="uruguay"></a>ウルグアイ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
@@ -6761,7 +6761,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="us-minor-outlying-islands"></a>合衆国領有小離島
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -6789,7 +6789,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="uzbekistan"></a>ウズベキスタン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6817,7 +6817,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="vanuatu"></a>バヌアツ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -6844,7 +6844,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 
 ## <a name="venezuela"></a>ベネズエラ
 <details><summary>クリックして展開</summary><p>
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
@@ -6873,7 +6873,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="vietnam"></a>ベトナム
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -6901,7 +6901,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="wallis-and-futuna-islands"></a>ウォリス フツナ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
@@ -6929,7 +6929,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="western-sahara"></a>西サハラ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6957,7 +6957,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="yemen"></a>イエメン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6985,7 +6985,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="zambia"></a>ザンビア
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -7013,7 +7013,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="zimbabwe"></a>ジンバブエ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |

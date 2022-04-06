@@ -14,12 +14,12 @@ description: 管理者は、セキュリティ & コンプライアンス セン
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 54bff65b29555fe0c94c86141cd7a10a77c36219
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 62da2d9654174bc2572a6d7cbb3acbd638757a6c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680008"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469473"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>コンプライアンス センターのセキュリティ &キューの分析情報
 
@@ -43,7 +43,8 @@ Microsoft 365は引き続き 24 時間配信を再試行します。 24 時間�
 
 - アラートは、セキュリティ コンプライアンス センター **(** アラート ダッシュボードまたは) の [最近&[通知](https://protection.office.com)**] ダッシュボードに**\>表示されます<https://protection.office.com/alertsdashboard>。
 
-  ![セキュリティ センターコンプライアンス センターの [アラート] ダッシュボード&最近の通知。](../../media/mfi-queued-messages-alert.png)
+  :::image type="content" source="../../media/mfi-queued-messages-alert.png" alt-text="セキュリティ コンプライアンス センターの [アラート] ダッシュボードの [最近&]" lightbox="../../media/mfi-queued-messages-alert.png":::
+
 
 - 管理者は、[メッセージ] という名前の既定のアラート ポリシーの構成に基づいて電子メール通知 **を受信します**。 このアラートの通知設定を構成するには、次のセクションを参照してください。
 
@@ -57,7 +58,7 @@ Microsoft 365は引き続き 24 時間配信を再試行します。 24 時間�
 
 3. [メッセージ **が遅延された] フライ** アウトが開いたら、通知をオンまたはオフにし、通知設定を構成できます。
 
-   ![メッセージの遅延アラート ポリシーの詳細は、コンプライアンス センター&詳細です。](../../media/mfi-queued-messages-alert-policy.png)
+   :::image type="content" source="../../media/mfi-queued-messages-alert-policy.png" alt-text="メッセージの詳細が遅延アラート" lightbox="../../media/mfi-queued-messages-alert-policy.png":::
 
    - **状態**: アラートのオンとオフを切り替えます。
 
@@ -70,7 +71,7 @@ Microsoft 365は引き続き 24 時間配信を再試行します。 24 時間�
    - **1 日の通知の** 制限: 既定値は **[制限なし] です**。
    - **しきい** 値: 既定値は 200 です。
 
-   ![[メッセージ] の通知設定は、コンプライアンス センターのセキュリティ ポリシー&遅れています。](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
+     :::image type="content" source="../../media/mfi-queued-messages-alert-policy-notification-settings.png" alt-text="メッセージの通知設定が遅延アラート" lightbox="../../media/mfi-queued-messages-alert-policy-notification-settings.png":::
 
 5. 完了したら、[保存して閉じる] **を****クリックします**。
 
@@ -78,7 +79,7 @@ Microsoft 365は引き続き 24 時間配信を再試行します。 24 時間�
 
 キューに入っているメッセージ ボリュームがしきい値を超えてアラートを生成した場合でも、メール フロー ダッシュボードの **Queues** インサイトを使用して、[](mail-flow-insights-v2.md)1 時間以上キューに入っているメッセージを確認し、キューに入っているメッセージの数が大きすぎる前にアクションを実行できます。
 
-![セキュリティ センターコンプライアンス センターのメール フロー ダッシュボードのキュー ウィジェット&表示します。](../../media/mfi-queues-widget.png)
+:::image type="content" source="../../media/mfi-queues-widget.png" alt-text="セキュリティ コンプライアンス センターの [メール フロー] ダッシュボードの [キュー] &ウィジェット" lightbox="../../media/mfi-queues-widget.png":::
 
 ウィジェット上のメッセージ数をクリックすると **、キューに** 入ったメッセージ のフライアウトが次の情報で表示されます。
 
@@ -91,11 +92,11 @@ Microsoft 365は引き続き 24 時間配信を再試行します。 24 時間�
 - **最後のエラー**
 - **修正方法**: 一般的な問題とソリューションを利用できます。 [今すぐ **修正する]** リンクが利用可能な場合は、それをクリックして問題を解決します。 それ以外の場合は、エラーと考えられる解決策の詳細については、利用可能なリンクをクリックしてください。
 
-![メール フロー ダッシュボードの [キュー] インサイトをクリックした後の詳細。](../../media/mfi-queues-details.png)
+:::image type="content" source="../../media/mfi-queues-details.png" alt-text="メール フロー ダッシュボードの [キュー] インサイトをクリックした後の詳細" lightbox="../../media/mfi-queues-details.png":::
 
 [メッセージの遅延通知] の詳細で  [キューの表示] をクリックすると、同じ **フライアウトが表示** されます。
 
-![メッセージは、セキュリティ コンプライアンス センターの&されています。](../../media/mfi-queued-messages-alert-details.png)
+:::image type="content" source="../../media/mfi-queued-messages-alert-details.png" alt-text="メッセージの詳細は、セキュリティ コンプライアンス センターで&されています" lightbox="../../media/mfi-queued-messages-alert-details.png":::
 
 ## <a name="see-also"></a>関連項目
 

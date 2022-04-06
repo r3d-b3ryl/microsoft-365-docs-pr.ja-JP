@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fe3139f12b863b54d336e52939ffbb3057df6b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 81c3a3a6d1d35551eec34d0fe12aba2f1fc6ec5e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316003"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469693"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>イベント タイムライン - 脅威と脆弱性の管理
 
@@ -53,18 +53,18 @@ ms.locfileid: "63316003"
 
 デバイスやデバイスのスコアに影響するイベントがない場合は、何も表示されません。
 
-![露出スコアホバー](images/tvm-event-timeline-exposure-score350.png) 
-![Microsoft Secure Score for Devices ホバー。](images/tvm-event-timeline-device-hover360.png)
+:::image type="content" source="images/tvm-event-timeline-exposure-score350.png" alt-text="露出スコアのホバー" lightbox="images/tvm-event-timeline-exposure-score350.png":::
+:::image type="content" source="images/tvm-event-timeline-device-hover360.png" alt-text="Microsoft Secure Score for Devices ホバー" lightbox="images/tvm-event-timeline-device-hover360.png":::
 
 ### <a name="drill-down-to-events-from-that-day"></a>その日のイベントにドリルダウンする
 
 [この **日のすべてのイベントを表示** する] を選択すると、その日のカスタム日付範囲を持つ [イベント タイムライン] ページに移動します。
 
-![イベント タイムラインで選択されたカスタムの日付範囲。](images/tvm-event-timeline-drilldown.png)
+:::image type="content" source="images/tvm-event-timeline-drilldown.png" alt-text="[イベント タイムライン] ページ" lightbox="images/tvm-event-timeline-drilldown.png":::
 
 [ **カスタム範囲] を** 選択して、日付範囲を別のカスタム範囲または事前設定された時間範囲に変更します。
 
-![イベント タイムラインの日付範囲のオプション。](images/tvm-event-timeline-dates.png)
+:::image type="content" source="images/tvm-event-timeline-dates.png" alt-text="イベント タイムラインの日付範囲オプション" lightbox="images/tvm-event-timeline-dates.png":::
 
 ## <a name="event-timeline-overview"></a>イベント タイムラインの概要
 
@@ -78,7 +78,7 @@ ms.locfileid: "63316003"
 
 ページの上部にある 2 つの大きな数字は、イベントではなく、新しい脆弱性と悪用可能な脆弱性の数を示しています。 一部のイベントには複数の脆弱性が存在する可能性があります。また、一部の脆弱性には複数のイベントが存在する可能性があります。
 
-![イベント タイムライン ページ。](images/tvm-event-timeline-overview-mixed-type.png)
+:::image type="content" source="images/tvm-event-timeline-overview-mixed-type.png" alt-text="イベントタイムライン" lightbox="images/tvm-event-timeline-overview-mixed-type.png":::
 
 ### <a name="columns"></a>段組み
 
@@ -110,7 +110,7 @@ ms.locfileid: "63316003"
 
 [スコアの傾向] の下の矢印は、このイベントが組織の露出スコアを上げたり下げたりする可能性があるかどうかを判断するのに役立ちます。 露出スコアが高いほど、デバイスは悪用に対してより脆弱になります。
 
-![イベント タイムラインの飛び出し。](images/tvm-event-timeline-flyout500.png)
+:::image type="content" source="images/tvm-event-timeline-flyout500.png" alt-text="イベント タイムラインのフライアウト" lightbox="images/tvm-event-timeline-flyout500.png":::
 
 そこから、[関連する **セキュリティの推奨事項に移動]** を選択し、[セキュリティの推奨事項] ページで、新しいソフトウェアの脆弱性に関する推奨事項 [を表示します](tvm-security-recommendation.md)。 セキュリティ推奨事項の説明と脆弱性の詳細を確認した後、修復要求を送信し、修復ページで要求を [追跡できます](tvm-remediation.md)。
 
@@ -120,11 +120,11 @@ ms.locfileid: "63316003"
 
 特定のソフトウェアのすべての詳細が表示された完全なページが表示されます。 グラフの上にマウスを移動すると、その特定のソフトウェアのイベントのタイムラインが表示されます。
 
-![[イベント タイムライン] グラフを含むソフトウェア ページ。](images/tvm-event-timeline-software2.png)
+:::image type="content" source="images/tvm-event-timeline-software2.png" alt-text="イベント タイムライン グラフを含むソフトウェア ページ" lightbox="images/tvm-event-timeline-software2.png":::
 
 [イベント タイムライン] タブに移動して、そのソフトウェアに関連付けられたすべてのイベントを表示します。 セキュリティに関する推奨事項、検出された脆弱性、インストールされているデバイス、バージョンの配布も確認できます。
 
-![[イベント タイムライン] タブを含むソフトウェア ページ。](images/tvm-event-timeline-software-pages.png)
+:::image type="content" source="images/tvm-event-timeline-software-pages.png" alt-text="[イベント タイムライン] タブを含むソフトウェア ページ" lightbox="images/tvm-event-timeline-software-pages.png":::
 
 ## <a name="related-topics"></a>関連項目
 

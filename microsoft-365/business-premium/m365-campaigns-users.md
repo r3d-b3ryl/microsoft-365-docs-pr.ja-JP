@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーに対するこれらのセキュリティに関する推奨事項Microsoft 365 Business Premium、データを保護する方法について学習します。
-ms.openlocfilehash: cf0af6aab22c4a025a0c6b907fc3cade397d0dcc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f1c327badefcd7f5d7f1728489a8388e7e7925e8
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328471"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635155"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>これらのセキュリティ推奨事項がユーザーに与える影響
 
@@ -42,7 +42,9 @@ ms.locfileid: "63328471"
 すべてのユーザーは、電子メールを安全に保つために、次の電子メールプラクティスを認識して使用する必要があります。
 
 - 認証アプリで多要素認証を使用するメールを設定します。
-- 正規のメールを確認し、セキュリティ保護のための Defender の高度なフィッシングからの安全Office 365します。
+
+- 正当なメールを確認し、高度なフィッシング保護 (Defender for Office 365) から安全に関するヒントを探します。
+
 - [リンクと添付ファイル] で確認された安全なリンクセーフ開セーフします。
 
 多要素認証 [とフィッシングなどの](m365bp-multifactor-authentication.md) 攻撃 [について詳しくは、次のページをご覧ください](m365-campaigns-phishing-and-attacks.md)。
@@ -54,7 +56,9 @@ ms.locfileid: "63328471"
 環境に追加するユーザーはすべて、 [iPhone と Android](../business/set-up-mobile-devices.md) デバイスをセットアップして安全に動作するために数分かかる必要があります。
 
 - 認証アプリで多要素認証を使用するデバイスを設定します。
+
 - アプリ ストアからモバイル、Word、Outlook、その他の Microsoft OneDriveなどの Microsoft モバイル アプリを使用します。 iPhone および Android デバイスに含まれるネイティブ メール アプリはサポートされていません。 
+
 - ユーザーがデバイスのロックを解除するには、PIN が必要です。
 
 これらの設定が完了すると、メールを含むこれらのデバイス上の組織データにアクセスするときに、認証アプリの使用を求めるメッセージがユーザーに表示されます。
@@ -64,6 +68,7 @@ ms.locfileid: "63328471"
 また、ユーザーが主な作業デバイスを最新の状態に保つ必要があります。
 
 - デスクトップ アプリの最新バージョンをインストールOffice、プロンプトが表示されたら、更新プログラムを最新の状態に保つ必要があります。
+
 - 最新の更新プログラムなどのオペレーティング システムの更新プログラムをWindowsしてください。
 
 管理[されていないWindows 10 Mac デバイスの](m365bp-protect-pcs-macs.md)場合、ユーザーは基本的なセキュリティ機能が有効になっているか確認する責任があります。

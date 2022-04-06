@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cb41b0bd3f185237055daa2d282f0a1d6975a49
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fbe693272a2f2893dff5f8614f3f9eff301069fd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765542"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477305"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 
@@ -72,7 +72,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 
 配置したデバイスコントロール ポリシーがデバイスに適用されている場合 (リムーバブル メディア デバイスへのアクセスが制限されているなど)、ユーザーに通知が表示されます。
 
-![デバイス制御の通知。](images/mac-device-control-notification.png)
+:::image type="content" source="images/mac-device-control-notification.png" alt-text="デバイス制御通知" lightbox="images/mac-device-control-notification.png":::
 
 エンド ユーザーがこの通知をクリックすると、既定のブラウザーで Web ページが開きます。 エンド ユーザーが通知をクリックするときに開く URL を構成できます。
 
@@ -340,19 +340,20 @@ USB デバイスのベンダー ID、製品 ID、シリアル番号を確認す�
 1. 識別子を参照する USB デバイスを接続します。
 1. macOS のトップ レベル メニューで、[この Mac について **] を選択します**。
 
-    ![この Mac について。](images/mac-device-control-lookup-1.png)
+   :::image type="content" source="images/mac-device-control-lookup-1.png" alt-text="[この Mac について] ページ" lightbox="images/mac-device-control-lookup-1.png":::
 
 1. [システム **レポート] を選択します**。
 
-    ![システム レポート。](images/mac-device-control-lookup-2.png)
+   :::image type="content" source="images/mac-device-control-lookup-2.png" alt-text="システム レポート" lightbox="images/mac-device-control-lookup-2.png":::
 
 1. 左側の列から [USB] を **選択します**。
 
-    ![すべての USB デバイスの表示。](images/mac-device-control-lookup-3.png)
+   :::image type="content" source="images/mac-device-control-lookup-3.png" alt-text="すべての USB デバイスのビュー" lightbox="images/mac-device-control-lookup-3.png":::
+    
 
 1. [ **USB デバイス ツリー]** で、接続した USB デバイスに移動します。
 
-    ![USB デバイスの詳細。](images/mac-device-control-lookup-4.png)
+   :::image type="content" source="images/mac-device-control-lookup-4.png" alt-text="USB デバイスの詳細" lightbox="images/mac-device-control-lookup-4.png":::
 
 1. ベンダー ID、製品 ID、シリアル番号が表示されます。 ベンダー ID と製品 ID をリムーバブル メディア ポリシーに追加する場合は、後にパーツを追加する必要があります `0x`。 たとえば、次の図では、ベンダー ID は、 `1000` 製品 ID はです `090c`。
 

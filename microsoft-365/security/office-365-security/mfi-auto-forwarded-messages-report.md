@@ -13,12 +13,12 @@ description: 管理者は、セキュリティ コンプライアンス セン�
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 05ad934fbc7736c0cfbb86f7411a2ca73705112f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4603e7d895c847513a41dc52764070f970a50d15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680162"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476381"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでの自動転送&分析情報
 
@@ -31,7 +31,7 @@ ms.locfileid: "63680162"
 
 セキュリティ **&** コンプライアンス センターのメール フロー ダッシュボードの [](mail-flow-insights-v2.md)自動転送メッセージ分析情報 [](https://protection.office.com)には、組織から外部ドメインの受信者に自動的に転送されるメッセージに関する情報が表示されます。
 
-![コンプライアンス センターのセキュリティ サーバーの自動転送&ウィジェット。](../../media/mfi-auto-forwarded-messages.png)
+:::image type="content" source="../../media/mfi-auto-forwarded-messages.png" alt-text="コンプライアンス センターの [セキュリティ] ボックスの [自動転送&ウィジェット" lightbox="../../media/mfi-auto-forwarded-messages.png":::
 
 ## <a name="auto-forwarded-messages-details"></a>自動転送されたメッセージの詳細
 
@@ -52,7 +52,7 @@ ms.locfileid: "63680162"
   - **新しいユーザー (先週)**
   - 詳細については、 [転送変更レポート](mfi-new-users-forwarding-email.md#forwarding-modifications-report) へのリンク。
 
-![[セキュリティ] コンプライアンス センターの [自動転送されたメッセージ] レポートの詳細&表示されます。](../../media/mfi-auto-forwarded-messages-details.png)
+:::image type="content" source="../../media/mfi-auto-forwarded-messages-details.png" alt-text="セキュリティ コンプライアンス センターの自動転送&ウィジェット" lightbox="../../media/mfi-auto-forwarded-messages-details.png":::
 
 ## <a name="insights"></a>分析情報
 

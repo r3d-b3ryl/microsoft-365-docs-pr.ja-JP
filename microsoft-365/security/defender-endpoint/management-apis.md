@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 36975b55d8f26ae7788495543ae42922ea404c66
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: cc73531540222791eb39eeca74570f34ff78a1b7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213999"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469781"
 ---
 # <a name="overview-of-management-and-apis"></a>管理と API の概要
 
@@ -41,7 +41,7 @@ Defender for Endpoint は、お客様がプラットフォームを簡単に採�
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>エンドポイントのオンボーディングとポータル アクセス
 
-デバイスオンボーディングは、クライアント デバイスの Microsoft エンドポイント マネージャー と Microsoft Intune、サーバー デバイス用の Microsoft Defender に完全に統合され、構成、展開、監視の完全なエンドツーエンドエクスペリエンスを提供します。 さらに、Microsoft Defender for Endpoint では、デバイス管理に使用されるグループ ポリシーや他のサード パーティ製ツールもサポートしています。
+デバイスオンボーディングは、クライアント デバイスの Microsoft エンドポイント マネージャー と Microsoft Intune、サーバー デバイス用の Microsoft Defender に完全に統合され、構成、展開、および監視の完全なエンドツーエンドエクスペリエンスを提供します。 さらに、Microsoft Defender for Endpoint では、デバイス管理に使用されるグループ ポリシーや他のサード パーティ製ツールもサポートしています。
 
 Defender for Endpoint は、役割ベースのアクセス制御 (RBAC) の柔軟性を通じて、ポータルにアクセスできるユーザーが見て実行できる機能を詳細に制御します。 RBAC モデルは、セキュリティ チーム構造のすべての機能をサポートします。
 
@@ -55,7 +55,7 @@ Microsoft Defender for Endpoint ソリューションは、統合対応プラッ
 
 Defender for Endpoint は、一連のプログラム API を使用して、そのデータとアクションの多くを公開します。 これらの API を使用すると、Defender for Endpoint の機能に基づいてワークフローを自動化し、革新することができます。
 
-![使用可能な API のイメージと、Microsoft Defender for Endpoint での統合。](images/mdatp-apis.png)
+:::image type="content" source="images/mdatp-apis.png" alt-text="Microsoft Defender for Endpoint で使用可能な API と統合" lightbox="images/mdatp-apis.png":::
 
 Defender for Endpoint API は、次の 3 つのグループにグループ化できます。
 
@@ -65,7 +65,7 @@ Defender for Endpoint API は、次の 3 つのグループにグループ化で
 
 ## <a name="microsoft-defender-for-endpoint-apis"></a>エンドポイント API 用 Microsoft Defender
 
-Defender for Endpoint は、構造化された、明確で使いやすいモデルのデータと機能を公開する、ユーザーまたは SaaS アプリケーションのコンテキストでのアクセスを許可する標準の Azure AD ベースの認証および承認モデルを通じて公開される、レイヤー化された API モデルを提供します。 API モデルは、エンティティと機能を一貫性のある形式で公開するように設計されています。
+Defender for Endpoint は、構造化された、明確で使いやすいモデルのデータと機能を公開する、ユーザーまたは SaaS アプリケーションのコンテキストでのアクセスを許可する標準的な Azure AD ベースの認証および承認モデルを通じて公開される、レイヤー化された API モデルを提供します。 API モデルは、エンティティと機能を一貫性のある形式で公開するように設計されています。
 
 Defender for Endpoint の API の概要については、このビデオをご覧ください。
 
@@ -81,10 +81,10 @@ Defender for Endpoint raw data streaming API は、お客様が単一のデー�
 
 Defender for Endpoint イベント情報は、長期的なデータ保持のために Azure ストレージに直接プッシュされ、視覚化サービスや追加のデータ処理エンジンによって使用される Azure Event Hubs にプッシュされます。
 
-詳細については、「Raw [data streaming API」を参照してください](raw-data-export.md)。
+詳細については、「 [Raw data streaming API」を参照してください](raw-data-export.md)。
 
-新しいストリーミング Microsoft 365 Defender API には、デバイス イベントに加えて、電子メールイベントとアラート イベントが含まれています。
-詳細については、「ストリーミング[API Microsoft 365 Defenderを参照してください](../defender/streaming-api.md)。
+ストリーミング API のMicrosoft 365 Defenderには、デバイス イベントに加えて、電子メールイベントとアラート イベントが含まれています。
+詳細については、「ストリーミング [API Microsoft 365 Defender参照してください](../defender/streaming-api.md)。
 
 ## <a name="siem-api"></a>SIEM API
 

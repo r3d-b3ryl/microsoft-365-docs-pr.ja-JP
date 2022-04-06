@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3986d44027824f2ba9ca508567d518cce270450
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 00d7afd9daec71a14d4b789d1d6dcfe5eaf07d83
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160504"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477195"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>セキュリティ推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
 
@@ -43,47 +43,47 @@ ms.locfileid: "61160504"
 
 "例外処理" 権限を持つユーザーだけが例外を管理できます (作成またはキャンセルを含む)。 [RBAC の役割について詳しくは、次のページを参照してください](user-roles.md)。
 
-![例外処理のアクセス許可の表示。](images/tvm-exception-permissions.png)
+:::image type="content" source="images/tvm-exception-permissions.png" alt-text="例外処理のアクセス許可" lightbox="images/tvm-exception-permissions.png":::
 
 ## <a name="create-an-exception"></a>例外の作成
 
 例外を作成するセキュリティ推奨事項を選択し、[例外オプション] を選択してフォームに入力します。
 
-!["例外オプション" のボタンがセキュリティ推奨事項のフライアウト内の場所である場所を表示します。](images/tvm-exception-options.png)
+:::image type="content" source="images/tvm-exception-options.png" alt-text="セキュリティ推奨事項のフライアウトの例外オプション ボタンの場所" lightbox="images/tvm-exception-options.png":::
 
 ### <a name="exception-by-device-group"></a>デバイス グループ別の例外
 
 現在のすべてのデバイス グループに例外を適用するか、特定のデバイス グループを選択します。 今後のデバイス グループは例外に含まれません。 既に例外があるデバイス グループは、一覧に表示されません。 特定のデバイス グループのみを選択した場合、推奨事項の状態は "アクティブ" から "部分的な例外" に変わります。 すべてのデバイス グループを選択すると、状態は "完全な例外" に変わります。
 
-![デバイス グループのドロップダウンを表示する。](images/tvm-exception-device-group-500.png)
+:::image type="content" source="images/tvm-exception-device-group-500.png" alt-text="[デバイス グループ] ドロップダウン" lightbox="images/tvm-exception-device-group-500.png":::
 
 #### <a name="filtered-views"></a>フィルター処理されたビュー
 
 任意のページでデバイス グループでフィルター処理した脅威と脆弱性の管理、フィルター処理されたデバイス グループだけがオプションとして表示されます。
 
-これは、デバイス グループ別にフィルター処理を行うボタンで、次のページ脅威と脆弱性の管理します。
+次に、任意のページでデバイス グループでフィルター処理脅威と脆弱性の管理します。
 
-![選択したデバイス グループ フィルターを表示する。](images/tvm-selected-device-groups.png)
+:::image type="content" source="images/tvm-selected-device-groups.png" alt-text="選択したデバイス グループ フィルター" lightbox="images/tvm-selected-device-groups.png":::
 
 フィルター処理されたデバイス グループを含む例外ビュー:
 
-![フィルター処理されたデバイス グループのドロップダウンを表示する。](images/tvm-exception-device-filter500.png)
+:::image type="content" source="images/tvm-exception-device-filter500.png" alt-text="フィルター処理されたデバイス グループのドロップダウン" lightbox="images/tvm-exception-device-filter500.png":::
 
 #### <a name="large-number-of-device-groups"></a>デバイス グループの数が多い
 
 組織に 20 を超えるデバイス グループがある場合は、フィルター処理されたデバイス グループ オプションの横にある **[** 編集] を選択します。
 
-![多数のグループを編集する方法を示します。](images/tvm-exception-edit-groups.png)
+:::image type="content" source="images/tvm-exception-edit-groups.png" alt-text="多数のグループを編集する手順" lightbox="images/tvm-exception-edit-groups.png":::
 
 含めるデバイス グループを検索して選択できるフライアウトが表示されます。 [検索] の下にあるチェック マーク アイコンを選択して、すべてチェック/オフを解除します。
 
-![大きなデバイス グループのフライアウトを表示する。](images/tvm-exception-device-group-flyout-400.png)
+:::image type="content" source="images/tvm-exception-device-group-flyout-400.png" alt-text="大規模なデバイス グループのフライアウト" lightbox="images/tvm-exception-device-group-flyout-400.png":::
 
 ### <a name="global-exceptions"></a>グローバル例外
 
 グローバル管理者のアクセス許可がある場合は、グローバル例外を作成およびキャンセルできます。 これは、 **組織内のすべての** 現在および将来のデバイス グループに影響を与え、同様のアクセス許可を持つユーザーだけが変更できます。 推奨事項の状態は、"active" から "完全な例外" に変更されます。
 
-![グローバル例外オプションの表示。](images/tvm-exception-global.png)
+:::image type="content" source="images/tvm-exception-global.png" alt-text="グローバル例外オプション" lightbox="images/tvm-exception-global.png":::
 
 次に注意する必要があります。
 
@@ -107,7 +107,7 @@ ms.locfileid: "61160504"
 
  詳細を含むフライアウトを開く場合は、例外を選択します。 デバイス グループごとの例外には、エクスポートできる例外が含むすべてのデバイス グループの一覧が表示されます。 関連する推奨事項を表示したり、例外を取り消したりできます。
 
-![[修復] ページに [例外] タブを表示します。](images/tvm-exception-view.png)
+:::image type="content" source="images/tvm-exception-view.png" alt-text="[修復] ページの [例外] タブ" lightbox="images/tvm-exception-view.png":::
 
 ## <a name="how-to-cancel-an-exception"></a>例外を取り消す方法
 
@@ -115,27 +115,27 @@ ms.locfileid: "61160504"
 
 すべてのデバイス グループまたはグローバル例外の例外を取り消す場合は、[すべてのデバイス グループの例外をキャンセル **する] ボタンを選択** します。 アクセス許可を持つデバイス グループの例外のみを取り消す事が可能です。
 
-![[キャンセル] ボタン。](images/tvm-exception-cancel.png)
+:::image type="content" source="images/tvm-exception-cancel.png" alt-text="[キャンセル] ボタン" lightbox="images/tvm-exception-cancel.png":::
 
 ### <a name="cancel-the-exception-for-a-specific-device-group"></a>特定のデバイス グループの例外をキャンセルする
 
 特定のデバイス グループを選択して、例外を取り消します。 デバイス グループのフライアウトが表示され、[例外のキャンセル] **を選択できます**。
 
-![特定のデバイス グループを選択する方法を示します。](images/tvm-exception-device-group-hover.png)
+:::image type="content" source="images/tvm-exception-device-group-hover.png" alt-text="特定のデバイス グループを選択する手順" lightbox="images/tvm-exception-device-group-hover.png":::
 
 ## <a name="view-impact-after-exceptions-are-applied"></a>例外が適用された後の影響の表示
 
-[セキュリティの推奨事項] ページで、[列のカスタマイズ] を選択し、(例外の後 **に)** 公開されているデバイスと影響 (例外の後) のチェック ボックス **をオンにします**。
+[セキュリティの推奨事項] ページで、[列のカスタマイズ] を選択し、[公開されたデバイス] (例外の後 **) と影響 (** 例外の後) のチェック ボックス **をオンにします**。
 
-![列のカスタマイズ オプションを表示する。](images/tvm-after-exceptions.png)
+:::image type="content" source="images/tvm-after-exceptions.png" alt-text="列のカスタマイズ オプション" lightbox="images/tvm-after-exceptions.png":::
 
 [例外の後に公開されたデバイス] 列には、例外が適用された後も引き続き脆弱性にさらされている残りのデバイスが表示されます。 露出に影響を与える例外の正当性には、'サード パーティコントロール' と '代替軽減' が含まれます。 その他の理由により、デバイスの露出は軽減されません。また、デバイスは引き続き公開されたと見なされます。
 
 影響 (例外の後) は、例外が適用された後の露出スコアまたはセキュリティで保護されたスコアへの影響が残ります。 スコアに影響を与える例外の正当性には、「サード パーティコントロール」と「代替軽減策」が含まれます。 その他の理由は、デバイスの露出を減らすことはないので、露出スコアと安全なスコアは変更されません。
 
-![テーブル内の列を表示します。](images/tvm-after-exceptions-table.png)
+:::image type="content" source="images/tvm-after-exceptions-table.png" alt-text="テーブル内の列" lightbox="images/tvm-after-exceptions-table.png":::
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [脆弱性を修復する](tvm-remediation.md)

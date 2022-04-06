@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f1d00c12512b70ffd62372aaeae787acf1911573
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 294531305321901dfa704462471d1573b9cb4b88
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330287"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635111"
 ---
 # <a name="device-images"></a>デバイスの画像
 
@@ -25,19 +25,24 @@ ms.locfileid: "63330287"
 
 ## <a name="new-devices"></a>新しいデバイス
 
-承認された製造元から新しいデバイスを[](device-requirements.md#minimum-requirements)注文する場合は、次の手順に従って、適切な Microsoft Managed Desktop イメージとソフトウェア構成でデバイスを出荷します。
+承認された製造元から新しいデバイスを[](device-requirements.md#minimum-requirements)注文する場合は、次の手順に従って、デバイスに適切なイメージとソフトウェア構成をMicrosoft Managed Desktop確認します。
 
 サービスに初めて特定のデバイス モデルを登録する予定がある場合は、そのモデルが期待するユーザー エクスペリエンスを確実に提供するための例をテストする必要があります。 詳細については、「新しいデバイスの [検証」を参照してください](/microsoft-365/managed-desktop/get-started/validate-device)。
+
+### <a name="windows-10-pro"></a>Windows 10 Pro
+デバイスを注文する場合は、Windows 10担当者と直接作業してください。 2022 年 11 月 1 日現在、OEM はダウングレード ライセンスWindows 10 ProのWindows 11 Pro販売Windows 10 Proできます。 詳細については、「サポートWindows 10[の](/lifecycle/products/windows-10-enterprise-and-education?msclkid=4a74c7b9b04111eca478c6fdafbc51a5)終了日」を参照Windows 10してください。
+
+このサイトへの移行にWindows 11、推奨されるプロセスの詳細については、こちらを参照[してください](/microsoft-365/managed-desktop/intro/win11-overview)。 
 
 ### <a name="dell"></a>Dell
 
 Dell の営業担当者と直接お問い合わせください。
 
-代理人は、Microsoft Managed Desktop によって承認されたイメージが、ご注文のデバイスに適用されます。 Dell デバイス、イメージ、並べ替えプロセスの詳細については、お問い合 MMD_at_dell@dell.com。
+担当者は、ユーザーが承認した画像がMicrosoft Managed Desktopデバイスに適用されます。 Dell デバイス、イメージ、並べ替えプロセスの詳細については、お問い合 MMD_at_dell@dell.com。
 
 ### <a name="hp"></a>HP
 
-HP から新しいデバイスを注文する場合は、[ビジネス デバイスの購入] ページにある各モデルの [追加要件] セクションに記載されている特定の SKU をWindows Pro[してください](https://www.microsoft.com/windows/business/devices#view-all-filter)。 ビューをフィルター処理して、Microsoft 管理デスクトップ デバイスを一覧表示します。
+HP から新しいデバイスを注文する場合は、[ビジネス デバイスの購入] ページにある各モデルの [追加要件] セクションに記載されている特定の SKU をWindows Pro[してください](https://www.microsoft.com/windows/business/devices#view-all-filter)。 ビューをフィルター処理して、デバイスのMicrosoft Managed Desktopします。
 
 例外として承認されているが、現在 [デバイス一覧] ページに表示されていない [](customizing.md)HP からデバイスを注文する場合は、モデルに使用する SKU を要求します。 例外要求を使用してこの情報を取得するために HP と作業します。 次のアドレスを使用して、デバイスとデバイスの順序付け手順に関する質問については、HP に直接お問い合わせください。
 
@@ -50,11 +55,11 @@ HP から新しいデバイスを注文する場合は、[ビジネス デバイ
 
 Lenovo からデバイスを注文する場合は、その順序で特定のパーツ番号を指定する必要があります。 Lenovo の営業担当者または Lenovo チャネル パートナーに問い合わせて、デバイス要件を満たすシステムを使用して"特別入札 *モデル" を* 作成 [してください。](device-requirements.md#minimum-requirements)
 
-Microsoft Managed Desktop と互換性のある事前読み込みイメージを含めるには、営業担当者に「システム構築ブロックパーツ番号 *SBB0Q94938 - MMD Enablement*」を参照してください。 推奨されるサービス、サポート、イメージング サービスについては、Lenovo 営業担当者または Lenovo チャネル パートナーと一緒に作業してください。
+Microsoft Managed Desktop と互換性のある事前に読み込まれたイメージを含めるには、営業担当者に「システム構築ブロックパーツ番号 *SBB0Q94938 - MMD Enablement*」を参照してください。 推奨されるサービス、サポート、イメージング サービスについては、Lenovo 営業担当者または Lenovo チャネル パートナーと一緒に作業してください。
 
 ### <a name="microsoft"></a>Microsoft
 
-デバイス要件を満たすすべての Microsoft デバイスには、Microsoft Managed Desktop で動作するイメージが用意されています。 他の手順は必要ありません。
+デバイス要件を満たすすべての Microsoft デバイスには、デバイスに対応するイメージがMicrosoft Managed Desktop。 他の手順は必要ありません。
 
 Microsoft デバイスのファクトリで利用可能な最新のイメージを取得するには、Surface スペシャリストと一緒に Surface "Pegged PO" プロセスを使用します。
 
@@ -67,7 +72,7 @@ Microsoft デバイスのファクトリで利用可能な最新のイメージ�
 
 製造元に関連する手順に従います。
 
-デバイスは、製造元のイメージを使用するか、Microsoft Managed Desktop "ユニバーサル イメージ" を使用して再イメージ化できます。 適切な製造元イメージを取得するには、再利用する [モデルの新](#new-devices) しいデバイスを少なくとも 1 つ注文します。 次に、そのデバイスからイメージを取得し、まったく同じモデルの他のデバイスに適用できます。
+デバイスは、製造元のイメージを使用するか、"ユニバーサル イメージMicrosoft Managed Desktop使用して再イメージ化できます。 適切な製造元イメージを取得するには、再利用する [モデルの新](#new-devices) しいデバイスを少なくとも 1 つ注文します。 次に、そのデバイスからイメージを取得し、まったく同じモデルの他のデバイスに適用できます。
 
 > [!NOTE]
 > イメージの作成、テスト、展開は、ユーザーが責任を負います。 また、カスタム イメージの代わりに可能な限り、製造元が提供する適切な画像を使用することをお勧めします。これには、"ユニバーサル イメージ" が含まれます。
@@ -100,9 +105,9 @@ Microsoft Surface デバイスには、各モデルに固有の "ベア メタ�
 
 ### <a name="universal-image"></a>ユニバーサル イメージ
 
-Microsoft Managed Desktop では、Microsoft 管理デスクトップで使用Windows Pro、Microsoft 365 AppsのEnterpriseを含むイメージが作成されました。
+Microsoft Managed Desktopで使用できるWindows ProとMicrosoft 365 Apps Enterpriseを含むイメージが作成Microsoft Managed Desktop。
 
-ただし、ユーザーがサインインした後に古い Windows バージョンを更新する必要がある場合でも、可能な限り、製造元が提供する Microsoft Managed Desktop に適したイメージを使用してください。 Microsoft Managed Desktop Universal イメージの使用は、最終的なオプションである必要があります。
+ただし、ユーザーがサインインした後に古い Windows バージョンを更新する必要がある場合でも、可能な限り、製造元が提供する Microsoft Managed Desktop に適した画像を使用してください。 ユニバーサル イメージをMicrosoft Managed Desktop、最終的なオプションにする必要があります。
 
 - 30 ~ 60 日ごとに最新の Windows の品質更新プログラムを使用し、少なくとも年に 2 回は Microsoft 365 Apps Enterprise 更新プログラムで画像を更新します。
 - イメージには、回復のシナリオに従ってMicrosoft 365 Apps Enterprise復元するための回復Windowsパッケージが含まれています。

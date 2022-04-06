@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f4a3e227dd43a812bea64e227e315d207eb6fc7b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 2de9f0a3a0d860b2513c8947a1fe92563b516444
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421452"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476601"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>ゼロデイの脆弱性を軽減する - 脅威と脆弱性の管理
 
@@ -50,11 +50,11 @@ ms.locfileid: "61421452"
 
 "トップ セキュリティのおすすめ" カードで、0 日のタグを含む推奨事項を探します。
 
-![ゼロデイ タグを含むおすすめ情報](images/tvm-zero-day-top-security-recommendations.png)
+:::image type="content" source="images/tvm-zero-day-top-security-recommendations.png" alt-text="0 日タグを含む上位の推奨事項" lightbox="images/tvm-zero-day-top-security-recommendations.png":::
 
 "トップ脆弱なソフトウェア" カードでゼロデイ タグを持つトップ ソフトウェアを見つける。
 
-![ゼロデイ タグを使用して、脆弱なソフトウェアを上位に設定します。](images/tvm-zero-day-top-software.png)
+:::image type="content" source="images/tvm-zero-day-top-software.png" alt-text="ゼロデイ タグを持つ脆弱な上位ソフトウェア" lightbox="images/tvm-zero-day-top-software.png":::
 
 ### <a name="weaknesses-page"></a>[弱点] ページ
 
@@ -64,19 +64,19 @@ ms.locfileid: "61421452"
 
 - この脆弱性に CVE-ID が割り当てられていない場合は、"TVM-XXXX-XXXX" のような内部の一時的な名前で検索されます。 名前は、公式の CVE-ID が割り当てられた後に更新されますが、以前の内部名はサイド パネルで検索可能で見つかる場合があります。
 
-:::image type="content" alt-text="弱点ページの CVE-2020-17087 のゼロ日の例。" source="images/tvm-zero-day-weakness-name.png" lightbox="images/tvm-zero-day-weakness-name.png":::
+:::image type="content" source="images/tvm-zero-day-weakness-name.png" alt-text="[弱点] ページの CVE-2020-17087 の 0 日間の例" lightbox="images/tvm-zero-day-weakness-name.png":::
 
 ### <a name="software-inventory-page"></a>ソフトウェア インベントリ ページ
 
 ゼロデイ タグを持つソフトウェアを探します。 "ゼロ日" タグでフィルター処理して、ゼロデイの脆弱性を持つソフトウェアのみを表示します。
 
-:::image type="content" alt-text="ソフトウェア インベントリ ページWindows Server 2016ゼロ日の例。" source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
+:::image type="content" source="images/tvm-zero-day-software-inventory.png" alt-text="ソフトウェア インベントリ ページの 0 Windows Server 2016の例" lightbox="images/tvm-zero-day-software-inventory.png":::
 
 ### <a name="software-page"></a>[ソフトウェア] ページ
 
 ゼロデイの脆弱性の影響を受けた各ソフトウェアのゼロデイ タグを探します。
 
-:::image type="content" alt-text="ソフトウェア ページの 0 Windows Server 2016例。" source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
+:::image type="content" source="images/tvm-zero-day-software-page.png" alt-text="[ソフトウェア] ページの 0 日Windows Server 2016例" lightbox="images/tvm-zero-day-software-page.png":::
 
 ### <a name="security-recommendations-page"></a>[セキュリティの推奨事項] ページ
 
@@ -84,7 +84,7 @@ ms.locfileid: "61421452"
 
 ゼロデイの脆弱性と追加の脆弱性を持つソフトウェアが存在する場合は、すべての脆弱性に関する推奨事項が 1 つ表示されます。
 
-:::image type="content" alt-text="[セキュリティの推奨事項] ページWindows Server 2016 0 日の例を示します。" source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
+:::image type="content" source="images/tvm-zero-day-security-recommendation.png" alt-text="セキュリティに関する推奨事項ページWindows Server 2016 0 日の例を示します。" lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>ゼロデイの脆弱性への対処
 
@@ -94,17 +94,17 @@ ms.locfileid: "61421452"
 
 修復オプションを開き、注意の種類を選択します。 更新プログラムがまだリリースされていないので、ゼロデイの脆弱性に対して"注意が必要な" 修復オプションをお勧めします。 実行する特定のアクションが行えなかから、期日を選択できない。 修復するこのソフトウェアの古い脆弱性がある場合は、[注意が必要] 修復オプションを上書きし、[更新] を選択できます。
 
-![セキュリティの推奨事項ページWindows Server 2016のゼロ日のフライアウトの例。](images/tvm-zero-day-recommendation-flyout400.png)
+:::image type="content" source="images/tvm-zero-day-recommendation-flyout400.png" alt-text="[セキュリティの推奨事項] ページで、Windows Server 2016のフライアウトの例を示します。" lightbox="images/tvm-zero-day-recommendation-flyout400.png":::
 
 ## <a name="track-zero-day-remediation-activities"></a>ゼロデイ修復アクティビティの追跡
 
-[修復[脅威と脆弱性の管理] ページに](tvm-remediation.md)移動して、修復アクティビティ アイテムを表示します。 [注意が必要] 修復オプションを選択した場合は、監視できる実際のアクションが行われなかから、進行状況バー、チケットの状態、または期限はありません。 "ソフトウェアの更新" や "注意が必要" などの修復の種類でフィルター処理して、同じカテゴリ内のすべてのアクティビティ アイテムを表示できます。
+[修復] ページ脅威と脆弱性の管理[し](tvm-remediation.md)、修復アクティビティ アイテムを表示します。 [注意が必要] 修復オプションを選択した場合は、監視できる実際のアクションが行われなかから、進行状況バー、チケットの状態、または期限はありません。 "ソフトウェアの更新" や "注意が必要" などの修復の種類でフィルター処理して、同じカテゴリ内のすべてのアクティビティ アイテムを表示できます。
 
 ## <a name="patching-zero-day-vulnerabilities"></a>ゼロデイの脆弱性へのパッチ適用
 
 0 日間の更新プログラムがリリースされると、推奨事項は "更新" に変更され、その横には "ゼロ日の新しいセキュリティ更新プログラム" という青いラベルが表示されます。 0 日と見なされなくなるので、0 日タグはすべてのページから削除されます。
 
-![新しいパッチ ラベルを使用して "Microsoft Windows 10 を更新する" に関する推奨事項。](images/tvm-zero-day-patch.jpg)
+![新しいパッチ ラベルを使用して "Microsoft Windows 10を更新する" に関する推奨事項。](images/tvm-zero-day-patch.jpg)
 
 ## <a name="related-articles"></a>関連記事
 

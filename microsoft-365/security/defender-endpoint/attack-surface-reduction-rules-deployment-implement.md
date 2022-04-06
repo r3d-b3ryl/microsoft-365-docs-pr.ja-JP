@@ -20,19 +20,20 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 2ca83735eab465e3a5ec6b25156143fde1719c0a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c85dcb985210167e04b51092d66fb59080280581
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683123"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477349"
 ---
 # <a name="step-3-implement-asr-rules"></a>手順 3: ASR ルールを実装する
 
 攻撃表面縮小 (ASR) ルールを実装すると、最初のテスト リングが有効な機能状態に移動します。
 
 > [!div class="mx-imgBorder"]
-> ![ASR ルールの実装手順](images/asr-rules-implementation-steps.png)
+> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="ASR ルールを実装する手順" lightbox="images/asr-rules-implementation-steps.png":::
+  
 
 ## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>手順 1: 監査からブロックへの ASR ルールの移行
 

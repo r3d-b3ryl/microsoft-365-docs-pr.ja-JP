@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 3b20242247e33f8550ce4d153c2f2618c64d7007
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e05927829ec680a303972090dc050514c31cdbc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324341"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468967"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする 
 
@@ -125,7 +125,7 @@ ms.locfileid: "63324341"
 
 **ポリシーの場所:** \Windows コンポーネント\Windows Defender ATP
 
-ポリシー|Setting
+ポリシー|設定
 ---|---
 Enable\Disable Sample collection|[有効] - [コンピューターでサンプル コレクションを有効にする] チェック ボックスをオンにします。
 
@@ -133,7 +133,7 @@ Enable\Disable Sample collection|[有効] - [コンピューターでサンプ�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策
 
-ポリシー|Setting
+ポリシー|設定
 ---|---
 望ましくない可能性があるアプリケーションの検出を構成する|有効、ブロック
 
@@ -141,7 +141,7 @@ Enable\Disable Sample collection|[有効] - [コンピューターでサンプ�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\MAPS
 
-ポリシー|Setting
+ポリシー|設定
 ---|---
 Microsoft MAPS に参加する|有効、高度なマップ
 詳細な分析が必要な場合にファイル サンプルを送信する | 有効、安全なサンプルの送信
@@ -150,12 +150,12 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\リアルタイム保護
 
-ポリシー|Setting
+ポリシー|設定
 ---|---
 リアルタイム保護をオフにする|無効
 動作の監視を有効にする|Enabled
 ダウンロードしたファイルと添付ファイルをスキャンする|Enabled
-コンピューター上のファイルとプログラムのアクティビティを監視する|有効
+コンピューター上のファイルとプログラムのアクティビティを監視する|Enabled
 
 <br>
 
@@ -163,9 +163,9 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 これらの設定は、エンドポイントの定期的なスキャンを構成します。 毎週のクイック スキャンを実行することをお勧めします。パフォーマンスが許容されます。
 
-ポリシー|Setting
+ポリシー|設定
 ---|---
-スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |有効
+スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |Enabled
 
 <br>
 
@@ -183,9 +183,9 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
    これにより、監査専用に設定されます。
 
-   ![攻撃表面の縮小構成のイメージ。](images/asr-guid.png)
+   :::image type="content" source="images/asr-guid.png" alt-text="攻撃表面の縮小構成" lightbox="images/asr-guid.png":::
 
-ポリシー|場所|Setting
+ポリシー|場所|設定
 ---|---|---
 フォルダー アクセスの制御を構成する| \Windows Components\Microsoft Defender ウイルス対策\Microsoft Defender Exploit Guard\制御されたフォルダー アクセス| 有効、監査モード
 
@@ -252,55 +252,53 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 2. [**Computer** **ConfigurationPoliciesAdministrative** >  >  **Templates** >  **Windowsコンポーネント** > **Microsoft Defender ウイルス対策** > **Real-time Protection] を参照します**。
 
-    :::image type="content" source="images/realtime-protect.png" alt-text="リアルタイム保護。":::
+    :::image type="content" source="images/realtime-protect.png" alt-text="リアルタイム保護" lightbox="images/realtime-protect.png":::
 
 1. [検疫] フォルダーで、検疫フォルダーからアイテムの削除を構成します。
 
-    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="削除アイテムの検疫フォルダー。":::
+    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="削除アイテムの検疫フォルダー" lightbox="images/removal-items-quarantine1.png":::
 
-    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="config-removal 検疫。":::
+    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="config-removal quarantine" lightbox="images/config-removal-items-quarantine2.png":::
 
 4. [スキャン] フォルダーで、スキャン設定を構成します。
 
-    :::image type="content" source="images/gpo-scans.png" alt-text="gpo スキャン。":::
+    :::image type="content" source="images/gpo-scans.png" alt-text="gpo スキャン" lightbox="images/gpo-scans.png":::
 
 ### <a name="monitor-all-files-in-real-time-protection"></a>リアルタイム保護ですべてのファイルを監視する
 
 [コンピューター構成 **ポリシー]** \> **[** \> **管理用**\>テンプレート] Windows **リアルタイム** \>  \> Microsoft Defender ウイルス対策 **を参照します**。
 
- "受信ファイルと送信ファイルをスキャンする" の値 (既定値) は 0 になっているので、"双方向 (フル オンアクセス)" 設定の "受信および送信ファイルとプログラムのアクティビティの監視を構成する" のグループ ポリシーが無効に変更されます。
-
-:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="受信送信ファイルアクティビティの監視を構成します。":::
+:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="受信送信ファイルアクティビティの監視を構成する" lightbox="images/config-monitor-incoming-outgoing-file-act.png":::
 
 ### <a name="configure-windows-defender-smartscreen-settings"></a>SmartScreen Windows Defender構成する
 
 1. SmartScreen Explorer **の** \> **[**\>コンピューター構成ポリシー **]** \> **[管理用Windowsコンポーネント** \> **Windows Defender参照** \> **します**。
 
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows Defender スマート スクリーン エクスプローラー。":::
+   :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Windows Defender スマート スクリーン エクスプローラーを構成する" lightbox="images/config-windows-def-smartscr-explorer.png":::
  
 2. [**コンピューターの構成** > **PoliciesAdministrative** >  **テンプレート** > **Windowsコンポーネント** > **Windows Defender SmartScreen** >  **Microsoft Edge**。
 
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows Defender スマート スクリーン エッジ。":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Windows Defender スマート スクリーン エッジを構成する" lightbox="images/config-windows-def-smartscr-explorer.png":::
 
 ### <a name="configure-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを構成する
 
 [コンピューター構成 **ポリシー]** \> **[** \> **管理用テンプレート**\>] Windows **を参照Microsoft Defender ウイルス対策** \> **。**
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="潜在的な不要なアプリを構成します。":::
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="潜在的な不要なアプリを構成する" lightbox="images/config-potential-unwanted-apps.png":::
 
-:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="config の可能性。":::
+:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="config の可能性" lightbox="images/config-potential-unwanted-apps2.png":::
 
 ### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>クラウド配信保護を構成し、サンプルを自動的に送信する
 
 [コンピューター構成 **ポリシー]** \> **[** \> **管理用テンプレート] Windows** \> **マップMicrosoft Defender ウイルス対策** \>  \> **します**。
 
-:::image type="content" source="images/gpo-maps1.png" alt-text="マップ。":::
+:::image type="content" source="images/gpo-maps1.png" alt-text="マップ" lightbox="images/gpo-maps1.png":::
 
-:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="一目でブロックします。":::
+:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="事前ブロック" lightbox="images/gpo-maps-block-atfirst-sight.png":::
 
-:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="Microsoft マップに参加します。":::
+:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="Microsoft マップに参加する" lightbox="images/gpo-maps-join-ms-maps.png":::
 
-:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="詳細な分析が必要な場合は、ファイル サンプルを送信します。":::
+:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="詳細な分析が必要な場合にファイル サンプルを送信する" lightbox="images/send-file-sample-further-analysis-require.png":::
 
 > [!NOTE]
 > [ **すべてのサンプルを送信する** ] オプションは、セキュリティの態勢を高めるバイナリ/スクリプト/ドキュメントの最も多くの分析を提供します。
@@ -312,18 +310,18 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 [コンピューター構成 **ポリシー]** \> **[** \> **管理用テンプレート] Windows** \> **セキュリティ** \> **インテリジェンス** \> Microsoft Defender ウイルス対策 **を参照します**。
 
-:::image type="content" source="images/signature-update-1.png" alt-text="署名の更新。":::
+:::image type="content" source="images/signature-update-1.png" alt-text="署名の更新" lightbox="images/signature-update-1.png":::
 
-:::image type="content" source="images/signature-update-2.png" alt-text="署名定義の更新。":::
+:::image type="content" source="images/signature-update-2.png" alt-text="署名定義の更新" lightbox="images/signature-update-2.png":::
 
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>クラウド配信のタイムアウトと保護レベルを構成する
 
 [コンピューター構成 **ポリシー]** \> **[** \> **管理用**\>テンプレート] Windows **MpEngine** \> **Microsoft Defender ウイルス対策** \> **参照します**。
 クラウド保護レベル のポリシーを既定のポリシーに構成Microsoft Defender ウイルス対策 **ポリシー** をブロックすると、ポリシーが無効になります。 これは、Windows の既定に保護レベルを設定するために必要な情報です。
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="config 拡張クラウド チェック。":::
+:::image type="content" source="images/config-extended-cloud-check.png" alt-text="config 拡張クラウド チェック" lightbox="images/config-extended-cloud-check.png":::
 
-:::image type="content" source="images/cloud-protection-level.png" alt-text="config クラウド保護レベル。":::
+:::image type="content" source="images/cloud-protection-level.png" alt-text="config クラウド保護レベル" lightbox="images/cloud-protection-level.png":::
 
 ## <a name="related-topics"></a>関連項目
 - [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)

@@ -17,18 +17,19 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: 1277d001118dda764aa9b2a968f1024d5befcac1
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 7f5c52eb0768adc4c64251ed7c3f34cccdf9cd57
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755073"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469451"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅での作業をサポートするセキュリティ チームの上位 12 のタスク
 
 Microsoft と同じ [で](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) 、主にホーム ベースの従業員をサポートしている場合は、組織が可能な限り安全に作業を行うお手伝いをしたいと考えています。 この記事では、セキュリティ チームが最も重要なセキュリティ機能を可能な限り迅速に実装するためにタスクの優先順位を設定します。
 
-:::image type="content" source="../media/security/security-support-remote-work.png" alt-text="自宅での作業をサポートするセキュリティ チームの上位 12 のタスク" lightbox="../media/security/security-support-remote-work.png":::
+:::image type="content" source="../media/security/security-support-remote-work.png" alt-text="自宅での作業をサポートするために実行するトップ タスク" lightbox="../media/security/security-support-remote-work.png":::
+
 
 Microsoft のビジネス プランのいずれかを使用している小規模または中規模の組織の場合は、代わりに次のリソースを参照してください。
 
@@ -71,7 +72,7 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 
 ****
 
-|プラン|推奨事項|
+|計画|推奨事項|
 |---|---|
 |Microsoft 365プラン (P1 または P2 Azure ADなし)|[Azure AD でセキュリティの既定値を有効にします](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。|
 |Microsoft 365 E3 (P1 Azure AD付き)|[一般的な条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br/>- [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [すべてのユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
@@ -122,9 +123,7 @@ Microsoft Defender for Office 365:
 
 Microsoft Defender for Office 365および Microsoft Defender for Identity が構成されたので、これらの機能からの結合された信号を 1 つのダッシュボードで表示できます。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)では、ワークロード全体にわたるアラート、インシデント、自動調査と対応、高度な検索 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Defender for Cloud Apps) を、Microsoft 365 Defender の 1 つのウィンドウにまとめます。<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータル</a>。
 
-<!--
-:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="The MTP dashboard in the Microsoft 365 Defender portal" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
---> 
+:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="[Microsoft 365 Defender] ダッシュボード" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
 
 すべてのサービス用に 1 つ以上の Defender を構成したOffice 365 MTP を有効にしてください。 新しい機能は、MTP に継続的に追加されます。プレビュー機能の受信をオプトインすることを検討してください。
 

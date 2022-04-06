@@ -18,12 +18,12 @@ ms.custom: ''
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 525b761b09a68c3e44443cec7bf718d9eaa4d8d1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9a38943b492e6bdae151a7906d1c8146a649949d
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327211"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634033"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーが報告したメッセージ設定
 
@@ -55,7 +55,7 @@ ms.locfileid: "63327211"
 
 - [](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)スパム用 ZAP とフィッシング用 ZAP がオフになっているカスタム メールボックスを含むスパム対策ポリシーを作成します (\>ゼロ時間自動削除セクション有効なゼロ時間自動削除 **(ZAP) は** 選択されません)。
 
-Microsoft Defender for Office 365場合は、高度なフィルター処理がメッセージを報告するユーザーに影響を与えないので、次の設定も構成する必要があります。
+この設定をMicrosoft Defender for Office 365、高度なフィルター処理がメッセージを報告するユーザーに影響を与えなくよう、次の設定も構成する必要があります。
 
 - セーフ リンク [スキャンが](set-up-safe-links-policies.md)オフになっているカスタム メールボックスを含む セーフ リンク ポリシーを作成します ([メッセージ] セクションで不明な可能性のある悪意のある **URL** \> のアクションを選択 **します)。**
 
@@ -71,7 +71,7 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
 
   - **[組織の** 管理 **] または [** セキュリティ管理者] ポータルの [アクセス許可 [] Microsoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
 
-- PowerShell へのアクセスExchange Online必要です。 使用しようとしているアカウントが Exchange Online PowerShell にアクセスできない場合は、申請メールボックスを指定すると、次のようなエラー メッセージが表示されます。
+- PowerShell へのアクセスExchange Online必要です。 使用しようとしているアカウントが Exchange Online PowerShell にアクセスできない場合は、申請メールボックスを指定するときに次のようなエラー メッセージが表示されます。
 
   > ドメイン内の電子メール アドレスを指定する
 
@@ -141,8 +141,8 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
 元の添付メッセージの報告された理由を指定する場合は、カスタム メールボックスに送信されるメッセージ (添付ファイルを変更しない) は、Subject (Envelope Title) の次のいずれかのプレフィックスで開始する必要があります。
 
 - 1|または迷惑メール:
-- 2|または迷惑メールではない
-- 3|またはフィッシング
+- 2|または迷惑メールではありません。
+- 3|またはフィッシング:
 
 例:
 

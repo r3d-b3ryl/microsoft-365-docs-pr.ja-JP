@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: feebff9361f1504e94069e82a3de87a2e1d95c0c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 76b0b7405c8dc1c434fbc9f991903b25d8b9d4f4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312663"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469341"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のユーザー アカウントを調査する
 
@@ -53,7 +53,7 @@ ms.locfileid: "63312663"
 - このユーザーに関連するアラート
 - 組織内で観察される (ログオンしているデバイス)
 
-![ユーザー アカウント エンティティの詳細ページのイメージ。](images/atp-user-details-view.png)
+:::image type="content" source="images/atp-user-details-view.png" alt-text="ユーザー アカウント エンティティの詳細ページ" lightbox="images/atp-user-details-view.png":::
 
 ### <a name="user-details"></a>ユーザーの詳細
 

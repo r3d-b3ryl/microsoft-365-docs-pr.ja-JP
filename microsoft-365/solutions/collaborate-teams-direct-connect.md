@@ -17,16 +17,16 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーと共有チャネルを使用する方法について説明します。
-ms.openlocfilehash: 1e14e83f82574f0ef944db56929fda8aded90d16
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 9fa58be15eab0844fa92d408320902c23f36de93
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716025"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468883"
 ---
 # <a name="collaborate-with-external-participants-in-a-channel"></a>チャネルで外部の参加者と共同作業する
 
-ユーザーが[共有チャネル](/MicrosoftTeams/shared-channels)で組織外のユーザーと共同作業を行うことができるようにするには、共同作業を行う組織ごとに B2B 直接接続を構成する必要があります。 (代わりに、[すべての外部組織と共有チャネルを有効にする](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)こともできます)。
+ユーザーが[共有チャネル](/MicrosoftTeams/shared-channels)で組織外のユーザーと共同作業を行うことができるようにするには、共同作業を行う組織ごとに B2B 直接接続を構成する必要があります (または、[外部組織すべてとの共有チャネルを有効](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)にできます)。
 
 別の組織と共有チャネルを有効にする場合:
 
@@ -84,7 +84,7 @@ Azure AD B2B 直接接続は既定で無効になっています。 共有チャ
 1. [[Azure Active Directory]](https://aad.portal.azure.com) で、**[外部 ID]** を選択し、**[クロス テナント アクセス設定 (プレビュー)]** を選択します。
 1. 変更する組織の受信アクセス リンクを選択します。
 1. **[B2B 直接接続]** タブで、**[設定のカスタマイズ]** を選択します。
-1. **[外部ユーザーとグループ]** タブで、**[アクセスを許可]** と **[すべてのユーザーとグループ]** を選択します。
+1. **[外部ユーザーとグループ]** タブで、**[アクセスを許可]** と **[すべてのユーザーとグループ]** を選択します。 (秘密保持契約書に署名したユーザーとグループなど、特定のユーザーとグループにアクセスを限定する場合、**［外部のユーザーとグループを選択 (Select external users and groups)]** を選ぶことができます)。
 1. **[アプリケーション]** タブで、**[アクセスを許可]** と **[アプリケーションの選択]** を選択します。
 1. **[アプリケーションの追加]** を選択します。
 1. **Office 365** アプリケーションを選択して、**[選択]** を選択します。

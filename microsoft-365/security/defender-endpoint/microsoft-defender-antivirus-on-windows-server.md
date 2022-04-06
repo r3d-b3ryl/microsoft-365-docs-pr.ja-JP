@@ -17,12 +17,12 @@ ms.date: 01/26/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 0ea2184720467b3756b5cde8c8973e8952d5b50c
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
-ms.translationtype: HT
+ms.openlocfilehash: 4962537e86010fceeb2845fdd6408270c97742dc
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244705"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469759"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -74,7 +74,7 @@ GUI がサーバーにインストールされておらず、インストール�
 
    Windows Server 2016 では、**役割と機能の追加ウィザード** は次のように表示されます。
 
-   ![役割と機能の追加ウィザードで Windows Defender 用 GUI オプションが表示されています。](images/server-add-gui.png)
+   :::image type="content" source="images/server-add-gui.png" alt-text="[役割と機能の追加] ウィザードで、[ユーザー設定] オプションの GUI をWindows Defenderします。" lightbox="images/server-add-gui.png":::
 
    Windows Server 2019 と Windows Server 2022 でも、**役割と機能の追加ウィザード** は同じようになります。
 

@@ -24,27 +24,30 @@ search.appverid:
 - MET150
 - MOE150
 description: フィッシングなどの攻撃から保護する方法は、Microsoft 365。
-ms.openlocfilehash: b1a6b5a80b00df010d4733c1b7cb8ce1d16a95d9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 09e72221e23f4f0d1e2f4a5e7dcb81abff46dcf2
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767923"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634253"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>フィッシングなどの攻撃から身を守る
 
 Microsoft 365 Business Premiumには、攻撃から保護する保護が多数含まれていますが、オンライン攻撃のリスクを制限して最小限に抑えるために、自分で実行できる操作があります。
 
 - **スパムまたは迷惑メール** 迷惑メールを受信する理由は多く、すべての迷惑メールが同じではない場合があります。 ただし、迷惑メールをフィルター処理することで、ユーザーに提供される情報を減らし、攻撃のリスクを軽減できます。
+
 - **フィッシング** フィッシング詐欺は、正当と思われるが、個人情報を取得したり、お金を盗んだりする試みである電子メールです。
+
 - **スプーフィング** 詐欺師はスプーフィングと呼ばれる手法を使用して、自分からメールを受信した場合と同様に表示することもできます。 
+
 - **マルウェア** は、リンクをクリックした後、または電子メールからドキュメントを開いた後にインストールされる、コンピューターにインストールできる悪意のあるソフトウェアです。 さまざまな種類のマルウェア (コンピューターが引き継がれ、ランサムウェアなど) がありますが、これらのマルウェアは必要としません。 
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
 ### <a name="reduce-spam-mail"></a>スパム メールの削減
 
-スパムを [減らす方法については、次の 10 のヒントに従ってください](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6)。
+スパムを [減らす方法については、次の 10 のヒントに従ってください](https://support.microsoft.com/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6)。
 
 ### <a name="report-it"></a>報告してください!
 
@@ -78,5 +81,6 @@ Microsoft 365 Business Premiumには、攻撃から保護する保護が多数�
 詳細については、次の方法を参照してください。
 
 - [ファイルと通信を安全に保管Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)。
+
 - [仕事で安全でプライベートな環境を確保します](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)。
   

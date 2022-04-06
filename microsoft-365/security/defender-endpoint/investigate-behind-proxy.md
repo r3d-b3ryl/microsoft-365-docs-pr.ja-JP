@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c0a2bdab641f0289975f1d8475627d3066ecf1f8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 580f41c24d6d78fb9e5ac7e20eb80e6ae78a505b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934203"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469803"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>転送プロキシの背後で発生する接続イベントの調査
 
@@ -45,10 +45,10 @@ Defender for Endpoint は、ネットワーク保護による高度な HTTP レ�
 ネットワーク保護は、次のモードを使用して制御できます。
 
 - **ブロック**: ユーザーまたはアプリが危険なドメインへの接続をブロックされます。 このアクティビティは、次のページでMicrosoft 365 Defender。
-- **監査**: ユーザーまたはアプリが危険なドメインへの接続をブロックされません。 ただし、このアクティビティは引き続き [Microsoft 365 Defender。
+- **監査**: ユーザーまたはアプリが危険なドメインへの接続をブロックされません。 ただし、このアクティビティは引き続き[Microsoft 365 Defender] に表示されます。
 
 
-ネットワーク保護をオフにした場合、ユーザーまたはアプリは危険なドメインへの接続をブロックされません。 [ネットワーク アクティビティ] は [Microsoft 365 Defender] に表示Microsoft 365 Defender。
+ネットワーク保護をオフにした場合、ユーザーまたはアプリは危険なドメインへの接続をブロックされません。 ネットワーク アクティビティは、Microsoft 365 Defender に表示Microsoft 365 Defender。
 
 構成しない場合、ネットワークブロックは既定で無効になります。
 
@@ -58,17 +58,17 @@ Defender for Endpoint は、ネットワーク保護による高度な HTTP レ�
 
 ネットワーク保護を有効にすると、デバイスのタイムラインで IP アドレスがプロキシを表し続け、実際のターゲット アドレスが表示されます。
 
-![デバイスのタイムライン上のネットワーク イベントのイメージ。](images/atp-proxy-investigation.png)
+:::image type="content" source="images/atp-proxy-investigation.png" alt-text="デバイスのタイムライン上のネットワーク イベント" lightbox="images/atp-proxy-investigation.png":::
 
 ネットワーク保護層によってトリガーされるその他のイベントは、プロキシの背後でも実際のドメイン名を表示できます。
 
 イベントの情報:
 
-![単一のネットワーク イベントのイメージ。](images/atp-proxy-investigation-event.png)
+:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="単一のネットワーク イベントの URL" lightbox="images/atp-proxy-investigation-event.png":::
 
 ## <a name="hunt-for-connection-events-using-advanced-hunting"></a>高度な検索を使用した接続イベントのハント
 
-すべての新しい接続イベントは、高度な狩猟を通じて狩りを行うのにも利用できます。 これらのイベントは接続イベントですから、アクションの種類の下にある DeviceNetworkEvents テーブルの下に `ConnecionSuccess` イベントを検索できます。
+すべての新しい接続イベントは、高度な狩猟を通じて狩りを行うのにも利用できます。 これらのイベントは接続イベントですから、アクションの種類の下にある DeviceNetworkEvents テーブルの下にイベントを `ConnecionSuccess` 検索できます。
 
 この単純なクエリを使用すると、関連するすべてのイベントが表示されます。
 
@@ -78,7 +78,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-![高度な検索クエリのイメージ。](images/atp-proxy-investigation-ah.png)
+:::image type="content" source="images/atp-proxy-investigation-ah.png" alt-text="高度な検索クエリ" lightbox="images/atp-proxy-investigation-ah.png":::
 
 プロキシ自体への接続に関連するイベントをフィルター処理することもできます。
 

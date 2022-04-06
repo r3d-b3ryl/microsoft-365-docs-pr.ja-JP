@@ -1,6 +1,6 @@
 ---
 title: 脆弱性を修復脅威と脆弱性の管理
-description: セキュリティ推奨事項によって検出されたセキュリティの弱点を修復し、必要に応じて例外を作成脅威と脆弱性の管理。
+description: セキュリティの推奨事項によって検出されたセキュリティの弱点を修復し、必要に応じて例外を作成脅威と脆弱性の管理。
 keywords: エンドポイント tvm 修復用 Microsoft Defender、Microsoft Defender for Endpoint tvm、脅威と脆弱性の管理、脅威 & 脆弱性の管理、脅威& 脆弱性の管理 修復、tvm 修復 intune、tvm 修復 sccm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4f00e28e4dfa1c7806167c789a869be70c6fb78
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 9631c38279fbcfcbc4d55b09409af9bb16c783f6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164264"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476667"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>脆弱性を修復脅威と脆弱性の管理
 
@@ -40,7 +40,7 @@ Microsoft Defender for Endpoint 脅威と脆弱性の管理機能は、修復要
 
 ### <a name="enable-microsoft-intune-connection"></a>接続Microsoft Intune有効にする
 
-この機能を使用するには、接続を有効Microsoft Intuneします。 [ポータル] Microsoft 365 Defender、[全般高度な機能 **設定** \> **に** \> **移動します**。 下にスクロールして、接続 **Microsoft Intuneします**。 既定では、トグルはオフになっています。 [接続] **Microsoft Intuneをオン****にします**。
+この機能を使用するには、接続を有効Microsoft Intuneします。 [ポータル] Microsoft 365 Defender、[**全般高度な** 設定\>**] に** \> **移動します**。 下にスクロールして、接続 **Microsoft Intuneします**。 既定では、トグルはオフになっています。 [接続] **Microsoft Intuneをオン****にします**。
 
 **注**: Intune 接続が有効になっている場合は、修復要求を作成するときに Intune セキュリティ タスクを作成するオプションを取得します。 接続が設定されていない場合、このオプションは表示されません。
 
@@ -48,37 +48,37 @@ Microsoft Defender for Endpoint 脅威と脆弱性の管理機能は、修復要
 
 ### <a name="remediation-request-steps"></a>修復要求の手順
 
-1. [セキュリティ] ポータルの **[脅威** と脆弱性管理] ナビゲーション メニューに移動Microsoft 365 Defenderし、[推奨事項のセキュリティに関する推奨事項][**を選択します**](tvm-security-recommendation.md)。
+1. [セキュリティ] ポータル **の [脅威** と脆弱性の管理] ナビゲーション メニューに移動し、[推奨事項Microsoft 365 Defender推奨事項 [**] を選択します**](tvm-security-recommendation.md)。
 
 2. 修復を要求するセキュリティ推奨事項を選択し、[修復オプション] **を選択します**。
 
 3. 修復を要求する項目、該当するデバイス グループ、優先度、期限、オプションのメモなど、フォームに入力します。
     1. [注意が必要] 修復オプションを選択した場合、特定のアクションが実行されないので、期日を選択できません。
 
-4. [要求 **の送信] を選択します**。 修復要求を送信すると、脅威と脆弱性の管理内に修復アクティビティ アイテムが作成され、この推奨事項の修復の進行状況を監視するために使用できます。 これにより、修復がトリガーされないか、デバイスに変更が適用されません。
+4. [要求 **の送信] を選択します**。 修復要求を送信すると、脅威と脆弱性の管理 内に修復アクティビティ アイテムが作成され、この推奨事項の修復の進行状況を監視するために使用できます。 これにより、修復がトリガーされないか、デバイスに変更が適用されません。
 
 5. IT 管理者に新しい要求について通知し、Intune にログインして要求を承認または拒否し、パッケージの展開を開始します。
 
 6. [修復] [**ページに**](tvm-remediation.md) 移動して、修復要求の状態を表示します。
 
-Intune でチケットがどのように表示されるのか確認する場合は、「Use Intune to [remediate vulnerabilited by Microsoft Defender for Endpoint」](/intune/atp-manage-vulnerabilities) を参照してください。
+Intune でチケットがどのように表示されるのか確認する場合は、「 [Use Intune to remediate vulnerabilited by Microsoft Defender for Endpoint](/intune/atp-manage-vulnerabilities) 」を参照してください。
 
 > [!NOTE]
 > 要求で 10,000 台を超えるデバイスの修復が必要な場合は、Intune に修復のために 10,000 台のデバイスのみを送信できます。
 
-組織のサイバーセキュリティの弱点が特定され、アクション可能なセキュリティ推奨事項にマップされた後、[](tvm-security-recommendation.md)セキュリティ タスクの作成を開始します。 修復チケットが作成される場所をMicrosoft Intuneを使用してタスクを作成できます。
+組織のサイバーセキュリティの弱点が特定され、アクション可能なセキュリティ推奨事項にマップされた後 [、セキュリティ タスク](tvm-security-recommendation.md)の作成を開始します。 修復チケットが作成されるMicrosoft Intuneを使用してタスクを作成できます。
 
 セキュリティに関する推奨事項を修復することで、組織の脆弱性による露出を低くし、セキュリティ構成を強化します。
 
 ## <a name="view-your-remediation-activities"></a>修復アクティビティの表示
 
-[セキュリティの推奨事項] ページから修復要求を送信すると、修復アクティビティが開始されます。 [修復] ページで追跡できるセキュリティ タスクが脅威と脆弱性の管理、修復チケットが [修復] ページにMicrosoft Intune。
+[セキュリティの推奨事項] ページから修復要求を送信すると、修復アクティビティが開始されます。 [修復] ページで追跡できるセキュリティ タスク脅威と脆弱性の管理、修復チケットが [修復チケット] ページにMicrosoft Intune。
 
 [注意が必要] 修復オプションを選択した場合は、監視できる実際のアクションが行われなかから、進行状況バー、チケットの状態、または期限はありません。
 
 [修復] ページに移動したら、表示する修復アクティビティを選択します。 修復手順を実行したり、進行状況を追跡したり、関連する推奨事項を表示したり、CSV にエクスポートしたり、完了としてマークすることができます。
 
-:::image type="content" source="../../media/remediation-flyouteolswnew.png" lightbox="../../media/remediation-flyouteolswnew.png" alt-text="選択した修復アクティビティを含む修復ページの例、および説明、IT サービスとデバイス管理ツール、デバイス修復を示すアクティビティのフライアウト":::
+:::image type="content" source="../../media/remediation-flyouteolswnew.png" alt-text="[修復] ページで、選択した修復アクティビティと、そのアクティビティのフライアウトに、説明、IT サービスとデバイス管理ツール、およびデバイス修復が一覧で表示されます。" lightbox="../../media/remediation-flyouteolswnew.png":::
 
 > [!NOTE]
 > 完了した修復アクティビティには 180 日間の保持期間があります。 修復ページのパフォーマンスを最適に維持するために、修復アクティビティは完了から 6 か月後に削除されます。
@@ -87,17 +87,17 @@ Intune でチケットがどのように表示されるのか確認する場合�
 
 [修復] ページの [完了者] 列を使用して、修復アクティビティを閉じたユーザーを追跡します。
 
-- **電子メール アドレス**: タスクを手動で完了したユーザーのメール
+- **電子メール アドレス**: タスクを手動で完了したユーザーの電子メール
 - **システム確認**: タスクが自動的に完了しました (すべてのデバイスが修復されました)
 - **N/A**: この古いタスクがどのように完了したのか分からないので、情報は利用できません
 
-:::image type="content" alt-text="2 行の列によって作成され、完了します。完了した行の 1 つは電子メールの例を持ち、もう 1 行はシステム確認と言います。" source="images/tvm-completed-by.png":::
+:::image type="content" source="images/tvm-completed-by.png" alt-text="2 行の列で作成および完了" lightbox="images/tvm-completed-by.png":::
 
 ### <a name="top-remediation-activities-in-the-dashboard"></a>ダッシュボードの上位修復アクティビティ
 
-脅威 **と脆弱性管理ダッシュボード** で上位 [の修復 **アクティビティを表示** します](tvm-dashboard-insights.md)。 [修復] ページに移動するエントリを **選択** します。 IT 管理者チームがタスクを修復した後、修復アクティビティを完了としてマークできます。
+脅威 **と脆弱性管理ダッシュボード** で上位 [の **修復アクティビティを表示** します](tvm-dashboard-insights.md)。 [修復] ページに移動するエントリを **選択** します。 IT 管理者チームがタスクを修復した後、修復アクティビティを完了としてマークできます。
 
-![セキュリティの推奨事項から生成された上位のアクティビティを一覧表示するテーブルを持つトップ修復アクティビティ カードの例。](images/tvm-remediation-activities-card.png)
+:::image type="content" source="images/tvm-remediation-activities-card.png" alt-text="[トップ修復アクティビティ] カード" lightbox="images/tvm-remediation-activities-card.png":::
 
 ## <a name="related-articles"></a>関連記事
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 882454e00517624c3bc43e87308007b00ece9507
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 8987c5642ea48e4c7887735cc0fce0e5bfccc119
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449744"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470397"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -101,7 +101,7 @@ ms.locfileid: "63449744"
 
   次のエラーが表示されます。
 
-  ![エラー メッセージの画像。](images/live-response-error.png)
+  :::image type="content" source="images/live-response-error.png" alt-text="エラー メッセージ" lightbox="images/live-response-error.png":::
 
 - **ライブ応答の署名されていないスクリプト実行** を有効にします (省略可能)。
 

@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b21b2f2a69ab9a85f1f5003104969364ae9c6e78
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 4c3b74179294d0b028dd07c3a6f4f28e844237d3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401148"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469935"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -56,9 +56,8 @@ ms.locfileid: "63401148"
    - 1、または **On**
    - 2、または **監査** モード
 
-    :::image type="content" alt-text="ネットワーク保護レジストリ キー。" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-    
-    
+    :::image type="content" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" alt-text="ネットワーク保護レジストリ キー" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
+
 ## <a name="enable-network-protection"></a>ネットワーク保護を有効にする
 
 次の方法を使用してネットワーク保護を有効にする。
@@ -98,7 +97,7 @@ ms.locfileid: "63401148"
 
 1. 管理センター (Microsoft エンドポイント マネージャーサインインしますhttps://endpoint.microsoft.com)。
 
-2. [**DevicesConfiguration** >  profilesCreate  > **プロファイル] に移動します**。
+2. **[デバイス]** > **[構成プロファイル]** > **[プロファイルの作成]** に移動します。
 
 3. [プロファイルの **作成] フライアウトで** 、[ **プラットフォーム** ] を選択し、[プロファイル **の種類] を [テンプレート** ] **として選択します**。
 

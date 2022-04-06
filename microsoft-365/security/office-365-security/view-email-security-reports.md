@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6d085d2e3c1e9c1e032f468f56d67a393269fe1
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b3b69b25f74f66a5ea0d8c63600f5eab0e780edb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683057"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477239"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>ポータルで電子メール セキュリティ レポートをMicrosoft 365 Defenderする
 
@@ -68,7 +68,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 <https://security.micr
 
 [**侵害されたユーザー]** レポートには、過去 7 日間に [疑わしい] または  [制限付き] とマークされたユーザー アカウントの数が表示されます。 これらの状態のどちらかのアカウントは、問題が発生したり、侵害された場合もあります。 頻繁に使用すると、レポートを使用して、疑わしいアカウントや制限付きアカウントのスパイクや傾向を見つけるのに使用できます。 侵害されたユーザーの詳細については、「侵害されたメール アカウントへの [応答」を参照してください](responding-to-a-compromised-email-account.md)。
 
-![[電子メール] ページの [グループ&侵害されたユーザー] ウィジェット。](../../media/compromised-users-report-widget.png)
+:::image type="content" source="../../media/compromised-users-report-widget.png" alt-text="[コラボレーション レポートの電子メール] ページの [侵害&ユーザー] ウィジェット" lightbox="../../media/compromised-users-report-widget.png":::
 
 集計ビューには過去 90 日間のデータが表示され、詳細ビューには過去 30 日間のデータが表示されます。
 
@@ -96,16 +96,24 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 <https://security.micr
 
 [侵害された **ユーザー] ページ** で、[スケジュールの作成 ![] アイコンをクリックします。](../../media/m365-cc-sc-create-icon.png) **[スケジュールの作成](#schedule-report)**、レポート ![の要求アイコン。](../../media/m365-cc-sc-download-icon.png) **[レポートを要求](#request-report)** し、[エクスポート ![] アイコンをクリックします。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](#export-report)** ボタンを使用できます。
 
-![[侵害されたユーザー] レポートのレポート ビュー。](../../media/compromised-users-report-activity-view.png)
+:::image type="content" source="../../media/compromised-users-report-activity-view.png" alt-text="[侵害されたユーザー] レポートの [レポート] ビュー" lightbox="../../media/compromised-users-report-activity-view.png":::
 
 ## <a name="exchange-transport-rule-report"></a>Exchangeルール レポート
 
+トランスポート **Exchangeレポートには**、組織内の受信メッセージと送信メッセージに対するメール フロー ルール (トランスポート ルールとも呼ばれる) の影響が表示されます。
+
+ポータルでレポートを表示するには \> Microsoft 365 Defender[レポートの電子メール] &**[**\>グループ&**] に移動します**。 [コラボレーション **レポートのメール&] ページ** で、トランスポート **Exchangeを見** つけて、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/ETRRuleReport>。
+
+:::image type="content" source="../../media/transport-rule-report-widget.png" alt-text="[Exchangeグループレポート] ページの [メール] &トランスポート ルール ウィジェット" lightbox="../../media/transport-rule-report-widget.png":::
+
+[トランスポート **Exchangeレポート] ページで**、使用可能なグラフとデータについて、次のセクションで説明します。
 > [!NOTE]
 > EAC **Exchangeトランスポート ルール レポート** を使用できます。 詳細については、「新しい [EAC Exchangeトランスポート ルール レポート」を参照してください](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report)。
 
+
 ### <a name="chart-breakdown-by-direction"></a>[方向] によるグラフの内訳
 
-![トランスポート ルール レポートExchangeトランスポート ルールのExchange表示します。](../../media/transport-rule-report-etr-direction-view.png)
+:::image type="content" source="../../media/transport-rule-report-etr-direction-view.png" alt-text="トランスポート ルール レポートExchangeトランスポート ルールのExchangeビュー" lightbox="../../media/transport-rule-report-etr-direction-view.png":::
 
 [方向によるグラフ **の内訳] を選択すると**、次のグラフを使用できます。
 
@@ -135,7 +143,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 <https://security.micr
 
 ### <a name="chart-breakdown-by-severity"></a>重大度別のグラフの内訳
 
-![トランスポート ルール レポートExchangeトランスポート ルールのExchange表示されます。](../../media/transport-rule-report-etr-severity-view.png)
+:::image type="content" source="../../media/transport-rule-report-etr-severity-view.png" alt-text="トランスポート ルール レポートの Exchangeトランスポート ルールのExchange表示" lightbox="../../media/transport-rule-report-etr-severity-view.png":::
 
 [重大度別の **グラフの内訳] を選択した** 場合は、次のグラフを使用できます。
 
@@ -175,11 +183,11 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 <https://security.micr
 
 [レポート] ポータルでレポートMicrosoft 365 Defenderするには<https://security.microsoft.com>\>、[レポートの電子メール] &**[**\>グループ&**] に移動します**。 [メール **の共有&] ページで** 、[ **メールフローの** 状態の概要] を探し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/mailflowStatusReport>。
 
-![[メール] グループ作業レポート ページの [メールフロー&概要] ウィジェット。](../../media/mail-flow-status-report-widget.png)
+:::image type="content" source="../../media/mail-flow-status-report-widget.png" alt-text="[メール] グループ作業レポート ページの [メールフロー&概要] ウィジェット" lightbox="../../media/mail-flow-status-report-widget.png":::
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>メールフロー状態レポートの種類ビュー
 
-![[メールフローの状態] レポートにビューを入力します。](../../media/mail-flow-status-report-type-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-type-view.png" alt-text="[メールフローの状態] レポートの [種類] ビュー" lightbox="../../media/mail-flow-status-report-type-view.png":::
 
 [メール **フローの状態] レポート ページで** 、[ **種類] タブ** が既定で選択されています。 グラフには、指定した日付範囲に関する次の情報が表示されます。
 
@@ -194,7 +202,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 <https://security.micr
 グラフの下の詳細テーブルは、次の情報を示しています。
 
 - **方向**
-- **Type**
+- **型**
 - **24 時間**
 - **3 日間**
 - **7 日間**
@@ -226,7 +234,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 <https://security.micr
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>メールフロー状態レポートの方向ビュー
 
-![メールフロー状態レポートの方向ビュー。](../../media/mail-flow-status-report-direction-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-direction-view.png" alt-text="[メールフローの状態] レポートの [方向] ビュー" lightbox="../../media/mail-flow-status-report-direction-view.png":::
 
 [方向] タブ **をクリック** すると、指定した日付範囲の次の情報がグラフに表示されます。
 
@@ -260,7 +268,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 <https://security.micr
 
 [ **メールフロー] ビュー** には、Microsoft の電子メール脅威保護機能が組織内の受信メールと送信メールをフィルター処理する方法が表示されます。 このビューでは、水平方向のフロー図 ( _サン_ キー図と呼ばれる) を使用して、メールの総数の詳細と、エッジ保護、マルウェア対策、フィッシング対策、スパム対策、スプーフィング対策などの構成済みの脅威保護機能が、この数にどのような影響を与えるのかについて説明します。
 
-![メールフロー状態レポートのメールフロー ビュー。](../../media/mail-flow-status-report-mailflow-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view.png" alt-text="[メールフローの状態] レポートの [メールフロー] ビュー" lightbox="../../media/mail-flow-status-report-mailflow-view.png":::
 
 集計ビューと詳細テーブル ビューでは、90 日間のフィルター処理が可能です。
 
@@ -286,7 +294,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 <https://security.micr
 
 <sup>\*</sup> この要素をクリックすると、図が展開され、詳細が表示されます。 展開されたノード内の各要素の説明については、「検出テクノロジ」 [を参照してください](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies)。
 
-![メールフロー状態レポートの Mailflow ビューのフィッシング ブロックの詳細。](../../media/mail-flow-status-report-mailflow-view-details.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view-details.png" alt-text="Mailflow 状態レポートの Mailflow ビューのフィッシング ブロックの詳細" lightbox="../../media/mail-flow-status-report-mailflow-view-details.png":::
 
 図の下の詳細テーブルは、次の情報を示しています。
 
@@ -312,7 +320,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 <https://security.micr
 
 [メールフローの **状態レポート] ページに戻** って、[傾向の表示] をクリックすると、表示される **メール** フローの傾向のフライアウトに傾向グラフを表示できます。
 
-![Mailflow 状態レポートの Mailflow ビューのメールフローの傾向フライアウト。](../../media/mail-flow-status-report-mailflow-view-show-trends.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view-show-trends.png" alt-text="[メールフローの状態] レポートの [Mailflow ビューのメールフローの傾向] フライアウト" lightbox="../../media/mail-flow-status-report-mailflow-view-show-trends.png":::
 
 [ **メールフローの状態レポート] ページで** 、[エクスポート] ![アイコンをクリックします。](../../media/m365-cc-sc-download-icon.png) **[エクスポート** ] ボタンを使用できます。
 
@@ -338,7 +346,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ポータルでレポートを表示するには \> Microsoft 365 Defender[レポートの電子メール] &**[**\>グループ&**] に移動します**。 [メール **の送信&] ページで** 、[スプーフィングの検出] **を探** し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/SpoofMailReport>。
 
-![[メール] グループ&スプーフィング検出ウィジェット。](../../media/spoof-detections-widget.png)
+:::image type="content" source="../../media/spoof-detections-widget.png" alt-text="[メールと共同作業レポート] ページの [スプーフィン&検出] ウィジェット" lightbox="../../media/spoof-detections-widget.png":::
 
 グラフには、次の情報が表示されます。
 
@@ -361,7 +369,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
   - **その他**
 - **スプーフィングの****種類: 内部と****外部**
 
-![[メール レポートのスプーフィング] ページ (Microsoft 365 Defenderポータル)。](../../media/spoof-detections-report-page.png)
+:::image type="content" source="../../media/spoof-detections-report-page.png" alt-text="[スプーフィング メール レポート] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/spoof-detections-report-page.png":::
 
 グラフの下の詳細テーブルは、次の情報を示しています。
 
@@ -386,7 +394,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 [レポート] ポータルでレポートMicrosoft 365 Defenderするには<https://security.microsoft.com>\>、[レポートの電子メール] &**[**\>グループ&**] に移動します**。 [コラボレーション **レポートのメール&] ページで** 、[申請] を探 **し** 、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/adminSubmissionReport>。 ポータルで [管理者の申請に移動するにはMicrosoft 365 Defender送信](admin-submission.md)に移動 **] をクリックします**。 管理者は過去 30 日間レポートを表示できます。
 
-![[電子メール] ページの [&] ウィジェット。](../../media/submissions-report-widget.png)
+:::image type="content" source="../../media/submissions-report-widget.png" alt-text="[メール] ページの [共同作業レポート] ページ&提出ウィジェット" lightbox="../../media/submissions-report-widget.png":::
 
 グラフには、次の情報が表示されます。
 
@@ -418,7 +426,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 [申請 **] ページで** 、[エクスポート] **[ボタン](#export-report)** を使用できます。
 
-![ポータルの申請レポート ページMicrosoft 365 Defenderします。](../../media/submissions-report-page.png)
+:::image type="content" source="../../media/submissions-report-page.png" alt-text="ポータルの [申請] Microsoft 365 Defenderページ" lightbox="../../media/submissions-report-page.png":::
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
@@ -433,7 +441,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - Defender for Office 365:<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
 
-![[メール] ページの [脅威&状態] ウィジェット。](../../media/threat-protection-status-report-widget.png)
+:::image type="content" source="../../media/threat-protection-status-report-widget.png" alt-text="[メール] グループの [コラボレーション レポート] ページの&状態ウィジェット" lightbox="../../media/threat-protection-status-report-widget.png":::
 
 既定では、グラフには過去 7 日間のデータが表示されます。 [脅威保護状態 **レポート]** **ページで** [フィルター] をクリックすると、90 日間の日付範囲を選択できます (試用版サブスクリプションは 30 日間に制限される場合があります)。 詳細テーブルでは、30 日間のフィルター処理が可能です。
 
@@ -441,7 +449,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ### <a name="view-data-by-overview"></a>概要でデータを表示する
 
-![脅威保護状態レポートの概要ビュー。](../../media/threat-protection-status-report-overview-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-overview-view.png" alt-text="脅威保護の状態レポートの [概要] ビュー" lightbox="../../media/threat-protection-status-report-overview-view.png":::
 
 [概要で **データを表示]** ビューでは、次の検出情報がグラフに表示されます。
 
@@ -480,7 +488,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ### <a name="view-data-by-email--phish-and-chart-breakdown-by-detection-technology"></a>検出テクノロジによってメールフィッシングと \> グラフの内訳でデータを表示する
 
-![脅威保護状態レポートのフィッシングメールの検出テクノロジ ビュー。](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-detection-tech-view.png" alt-text="脅威保護状態レポートのフィッシングメールの検出テクノロジ ビュー" lightbox="../../media/threat-protection-status-report-phishing-detection-tech-view.png":::
 
 > [!NOTE]
 > 2021 年 5 月から、メールのフィッシング検出が更新され、フィッシング URL を含むメッセージ添付ファイルが含まれています。 この変更により、検出ボリュームの **\>** 一部が [メール マルウェアによるデータの表示] ビューから [メールフィッシングによるデータの表示] ビュー **に移動する\>場合** があります。 つまり、従来はマルウェアとして識別されたフィッシング URL を含むメッセージ添付ファイルが、フィッシング詐欺として識別される可能性があります。
@@ -547,7 +555,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ### <a name="view-data-by-email--spam-and-chart-breakdown-by-detection-technology"></a>検出テクノロジによってメール スパムと \> グラフの内訳でデータを表示する
 
-![脅威保護状態レポートのスパムの検出テクノロジ ビュー。](../../media/threat-protection-status-report-spam-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-spam-detection-tech-view.png" alt-text="脅威保護状態レポートのスパムの検出テクノロジ ビュー" lightbox="../../media/threat-protection-status-report-spam-detection-tech-view.png":::
 
 [電子メール **スパムによるデータの\>****表示] ビュー** と [検出テクノロジによるグラフの内訳] ビューでは、次の情報がグラフに表示されます。
 
@@ -598,7 +606,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a>検出テクノロジによってメール マルウェアと \> グラフの内訳でデータを表示する
 
-![脅威保護状態レポートのマルウェアの検出テクノロジ ビュー。](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-malware-detection-tech-view.png" alt-text="脅威保護状態レポートのマルウェアの検出テクノロジ ビュー" lightbox="../../media/threat-protection-status-report-malware-detection-tech-view.png":::
 
 > [!NOTE]
 > 2021 年 5 月から、メール内のマルウェア検出が更新され、有害 **な URL** がメッセージ添付ファイルに含まれる。 この変更により、検出ボリュームの **\>** 一部が [メールフィッシングによるデータの表示] ビューから [メール マルウェアによるデータの表示] ビュー **に移動する\>場合** があります。 つまり、従来はフィッシングとして識別されたメッセージ添付ファイル内の有害な URL が、マルウェアとして識別される可能性があります。
@@ -654,7 +662,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ### <a name="chart-breakdown-by-policy-type"></a>ポリシーの種類別のグラフの内訳
 
-![脅威保護状態レポートのフィッシングメール、スパムメール、マルウェアメールのポリシーの種類の表示。](../../media/threat-protection-status-report-phishing-policy-type-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-policy-type-view.png" alt-text="脅威保護状態レポートのフィッシングメール、スパムメール、またはマルウェアメールのポリシーの種類ビュー" lightbox="../../media/threat-protection-status-report-phishing-policy-type-view.png":::
 
 [**メール フィッシング\>****\>****\>** によるデータの表示]、[メール スパムによるデータの表示]、または [メール マルウェアによるデータの表示] ビューで、[ポリシーの種類別のグラフの内訳] を選択すると、グラフに次の情報が表示されます。
 
@@ -724,7 +732,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ### <a name="chart-breakdown-by-delivery-status"></a>配信状態別のグラフの内訳
 
-![脅威保護状態レポートのフィッシングメールとマルウェアメールの配信状態ビュー。](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-delivery-status-view.png" alt-text="脅威保護状態レポートのフィッシングメールとマルウェアメールの配信状態ビュー" lightbox="../../media/threat-protection-status-report-phishing-delivery-status-view.png":::
 
 [**メール フィッシング\>****\>****\>** によるデータの表示]、[メール スパムによるデータの表示]、または [メール マルウェアによるデータの表示] ビューで、[配信状態別のグラフの内訳] を選択すると、グラフに次の情報が表示されます。
 
@@ -797,7 +805,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ### <a name="view-data-by-content--malware"></a>コンテンツ マルウェアによるデータの \> 表示
 
-![脅威保護状態レポートのコンテンツ マルウェア ビュー。](../../media/threat-protection-status-report-content-malware-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-content-malware-view.png" alt-text="脅威保護状態レポートの [コンテンツ マルウェア] ビュー" lightbox="../../media/threat-protection-status-report-content-malware-view.png":::
 
 [コンテンツ **マルウェアによるデータの\>** 表示] ビューでは、組織の Microsoft Defender のグラフに次のOffice 365されます。
 
@@ -809,7 +817,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 - **日付 (UTC)**
 - **添付ファイルの名前**
-- **ワークロード**
+- **Workload**
 - **検出テクノロジ**
 - **ファイル サイズ**
 - **最後に変更したユーザー**
@@ -826,7 +834,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-reason"></a>システムオーバーライドと理由によるグラフの内訳でデータを表示する
 
-![脅威保護状態レポートの [理由] ビューによるメッセージの上書きとグラフの内訳。](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
+:::image type="content" source="../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png" alt-text="脅威保護状態レポートの [理由別メッセージの上書きとグラフの内訳] ビュー" lightbox="../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png":::
 
 [システムオーバーライド **によるデータの表示]** **ビューと** [理由別グラフの内訳] ビューでは、次のオーバーライド理由情報がグラフに表示されます。
 
@@ -872,7 +880,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-delivery-location"></a>配信場所別にシステムオーバーライドとグラフの内訳でデータを表示する
 
-![脅威保護状態レポートの [メッセージの上書き] および [配信場所別グラフの内訳] ビュー。](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
+:::image type="content" source="../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png" alt-text="脅威保護状態レポートの [配信場所別のメッセージの上書きとグラフの内訳] ビュー" lightbox="../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png":::
 
 [システムの **上書きによるデータ** の表示 **] ビューと** [配信場所別のグラフの内訳] ビューでは、次のオーバーライド理由情報がグラフに表示されます。
 
@@ -933,7 +941,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ポータルでレポートを表示するには \> Microsoft 365 Defender[レポートの電子メール] &**[**\>グループ&**] に移動します**。 [メール **の作成と&] ページで** 、[トップ マルウェア] を探 **し** 、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/TopMalware>。
 
-![[メール] ページの [コラボレーション レポート] ページ&のトップ マルウェア ウィジェット。](../../media/top-malware-report-widget.png)
+:::image type="content" source="../../media/top-malware-report-widget.png" alt-text="[電子メール] グループの [コラボレーション レポート] ページ&のトップ マルウェア ウィジェット" lightbox="../../media/top-malware-report-widget.png":::
 
 円グラフのくさびの上にマウス ポインターを置くと、マルウェアの種類の名前と、そのマルウェアが検出されたメッセージの数を確認できます。
 
@@ -946,7 +954,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 [トップ **マルウェア] ページの** [スケジュールの作成 ![] アイコン。](../../media/m365-cc-sc-create-icon.png) **[スケジュールとエクスポート](#schedule-report)** アイコン ![を作成します。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](#export-report)** ボタンを使用できます。
 
-![トップ マルウェア レポート ビュー。](../../media/top-malware-report-view.png)
+:::image type="content" source="../../media/top-malware-report-view.png" alt-text="トップ マルウェア レポート ビュー" lightbox="../../media/top-malware-report-view.png":::
 
 ## <a name="top-senders-and-recipients-report"></a>上位の送信者と受信者レポート
 
@@ -959,7 +967,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - Defender for Office 365:<https://security.microsoft.com/reports/TopSenderRecipientsATP>
 - EOP: <https://security.microsoft.com/reports/TopSenderRecipient>
 
-![レポート ダッシュボードの上位の送信者と受信者ウィジェット。](../../media/top-senders-and-recipients-widget.png)
+:::image type="content" source="../../media/top-senders-and-recipients-widget.png" alt-text="レポート ダッシュボードの [上位の送信者と受信者] ウィジェット" lightbox="../../media/top-senders-and-recipients-widget.png":::
 
 円グラフのくさびの上にマウス ポインターを置くと、送信者または受信者のメッセージの数を確認できます。
 
@@ -985,7 +993,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 [上位 **の送信者と受信者] ページで** 、[エクスポート] ![アイコンをクリックします。](../../media/m365-cc-sc-download-icon.png) **[エクスポート** ] ボタンを使用できます。
 
-![[上位の送信者と受信者] レポートに [上位メール送信者] ビューのデータを表示します。](../../media/top-senders-and-recipients-report-view.png)
+:::image type="content" source="../../media/top-senders-and-recipients-report-view.png" alt-text="[上位の送信者と受信者] レポートの [上位メール送信者のデータを表示する] ビュー" lightbox="../../media/top-senders-and-recipients-report-view.png":::
 
 ## <a name="url-protection-report"></a>URL 保護レポート
 
@@ -1000,7 +1008,7 @@ URL **保護レポートは、** Microsoft Defender でのみ使用できます�
 
 ポータルでレポートを表示するには \> Microsoft 365 Defender[レポートの電子メール] &**[**\>グループ&**] に移動します**。 [コラボレーション **レポートのメール&] ページで**、[ユーザーが報告したメッセージ] を探し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/userSubmissionReport>。 ポータルで [管理者の申請に移動するにはMicrosoft 365 Defender送信](admin-submission.md)に移動 **] をクリックします**。
 
-![ユーザーが報告したメッセージ ウィジェットは、[電子メール &] ページに表示されます。](../../media/user-reported-messages-widget.png)
+:::image type="content" source="../../media/user-reported-messages-widget.png" alt-text="[コラボレーション レポートの電子メール] ページのユーザー&メッセージ ウィジェット" lightbox="../../media/user-reported-messages-widget.png":::
 
 [フィルター] をクリックし、表示されるフライアウトで次の値の 1 つ以上を選択すると、グラフと詳細テーブルの両方をフィルター処理できます。
 
@@ -1027,7 +1035,7 @@ URL **保護レポートは、** Microsoft Defender でのみ使用できます�
 - **再スキャンの結果**
 - **フィッシング シミュレーション**
 
-![ユーザーが報告したメッセージ レポート。](../../media/user-reported-messages-report.png)
+:::image type="content" source="../../media/user-reported-messages-report.png" alt-text="ユーザーが報告したメッセージ レポート" lightbox="../../media/user-reported-messages-report.png":::
 
 グラフの下の詳細テーブルは、次の情報を示しています。
 
@@ -1055,7 +1063,7 @@ URL **保護レポートは、** Microsoft Defender でのみ使用できます�
 
 - **組織の管理**
 - **セキュリティ管理者**
-- **セキュリティ閲覧者**
+- **セキュリティ リーダー**
 - **グローバル リーダー**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6effe1ffefaf7faeb90258163c539cdddcec2679
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 4425ee0a4ee9abb7c87be7ed45d9f5c94b84cdc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569999"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477019"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項
 
@@ -60,7 +60,7 @@ ms.locfileid: "64569999"
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>SharePoint でアプリによって適用される制限を使用する
 
-SharePoint でアクセス制御を実装すると、Azure AD で条件付きアクセス ポリシーが作成され、Azure AD で構成するポリシーを適用SharePoint。 既定では、このポリシーはすべてのユーザーに適用されますが、PowerShell を使用して指定したサイトへのアクセスは、PowerShell でアクセス制御を作成するときにのみSharePoint。 ポリシーは、特定のユーザー、グループ、またはサイトに対してスコープを設定することもできます。
+SharePoint でアクセス制御を実装する場合は、Azure AD でこの条件付きアクセス ポリシーを作成して、SharePoint で構成したポリシーを適用するように AzureAD に指示する必要があります。 このポリシーはすべてのユーザーに適用されますが、SharePoint でアクセス制御を作成するときに PowerShell を使用して指定したサイトへのアクセスにのみ影響します。
 
 このポリシーを構成するには、「[非管理対象デバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)」の「特定の SharePoint サイト コレクションまたは OneDrive アカウントへのアクセスを制限する」を参照してください。
 

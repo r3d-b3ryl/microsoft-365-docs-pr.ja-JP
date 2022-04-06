@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41ba14fd2e4a9e3726e4ef4287812cf8d3ffb2d1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 1d8459633d00d759fda1584e0084cd8ed4e12633
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767244"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477261"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する
 
@@ -56,8 +56,8 @@ ms.locfileid: "62767244"
 
    1. [コマンド プロンプト] **を右クリックし、[** 管理者として **実行] を選択します**。
 
-      ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ です。](images/run-as-admin.png)
-
+      :::image type="content" source="images/run-as-admin.png" alt-text="[管理者スタート メニュー実行] をポイントしているユーザー" lightbox="images/run-as-admin.png":::
+    
 3. プロンプトで、次のコマンドをコピーして実行します。
 
    ```powershell

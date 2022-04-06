@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 59ab309b4d5cbab971c161ee1b8a4abefe93be69
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a5c45ecda43b32e37f7309b9a2de33810d60bd15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683035"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469165"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Defender for Identity VPN の統合 (Microsoft 365 Defender
 
@@ -60,11 +60,11 @@ RRAS サーバーで次の手順を実行します。
 1. サーバー名を右クリックし、[プロパティ] を **選択します**。
 1. [セキュリティ **] タブの** [アカウンティング プロバイダー **] で、[** RADIUS アカウンティング] **を選択し、[** 構成] を **選択します**。
 
-    ![RADIUS セットアップ。](../../media/defender-identity/radius-setup.png)
+   :::image type="content" source="../../media/defender-identity/radius-setup.png" alt-text="RADIUS セットアップ" lightbox="../../media/defender-identity/radius-setup.png":::
 
 1. [**RADIUS サーバーの追加]** ウィンドウで、最[!INCLUDE [Product short](includes/product-short.md)]も近いセンサー (ネットワーク接続を持つ) のサーバー名を入力します。 高可用性を実現するには、RADIUS サーバーとして [!INCLUDE [Product short](includes/product-short.md)] 追加のセンサーを追加できます。 [ **ポート]** で、既定の 1813 が構成されていることを確認します。 [ **変更] を** 選択し、英数字の新しい共有シークレット文字列を入力します。 後で構成中に入力する必要がある場合は、新しい共有シークレット文字列に注意 [!INCLUDE [Product short](includes/product-short.md)] してください。 [ **RADIUS アカウントの送信] および [アカウンティング** オフ メッセージの送信] ボックスをオンにし、[開いているすべてのダイアログ ボックスで **[OK** ] を選択します。
 
-    ![VPN セットアップ。](../../media/defender-identity/vpn-set-accounting.png)
+   :::image type="content" source="../../media/defender-identity/vpn-set-accounting.png" alt-text="VPN セットアップ" lightbox="../../media/defender-identity/vpn-set-accounting.png":::
 
 ## <a name="configure-vpn-in-defender-for-identity"></a>Id の Defender で VPN を構成する
 
@@ -74,12 +74,12 @@ RRAS サーバーで次の手順を実行します。
 
 1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>] で、[id **] 設定** に **移動します**。
 
-    ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="[設定] メニュー項目の [Id] オプション" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. [ **VPN] を選択します**。
 1. [**半径の会計を有効** にする]  を選択し、RRAS VPN Server で以前に構成した共有シークレットを入力します。 その後、**[保存]** を選択します。
 
-    ![VPN 統合。](../../media/defender-identity/vpn-integration.png)
+   :::image type="content" source="../../media/defender-identity/vpn-integration.png" alt-text="VPN 統合" lightbox="../../media/defender-identity/vpn-integration.png":::
 
 これを有効にすると、すべての Defender for Identity センサーがポート 1813 で RADIUS アカウンティング イベントをリッスンし、VPN のセットアップが完了します。
 

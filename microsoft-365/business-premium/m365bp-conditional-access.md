@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: セキュリティの既定値が、ID 関連の攻撃から組織を保護するために、セキュリティ設定を事前に構成して提供する方法についてMicrosoft 365 Business Premium。
-ms.openlocfilehash: dfd0d3edff541d828b70d383641aaf66c93826b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9684dc2be113d6f511f1a84e8865ac04a6881ecc
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331122"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634671"
 ---
 # <a name="turn-on-security-defaults-for-microsoft-365-business-premium"></a>ユーザーのセキュリティの既定値を有効Microsoft 365 Business Premium
 
@@ -76,9 +76,13 @@ ms.locfileid: "63331122"
 条件付きアクセスを使用して、セキュリティの既定値で有効になっているポリシーと同等のポリシーを構成する場合は、次の手順ガイドを参照してください。
 
 - [管理者に対して MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+
 - [Azure 管理に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+
 - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+
 - [すべてのユーザーに対して MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+
 - [MFA Azure ADを要求](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)する - AZURE AD ID 保護が必要です。これは、AZURE ACTIVE DIRECTORY PREMIUM P2
 
 条件付きアクセスの詳細については、「条件付きアクセス [とは」を参照してください。](/azure/active-directory/conditional-access/overview) 条件付きアクセス ポリシーの作成の詳細については、「条件付きアクセス ポリシー [の作成」を参照してください](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。

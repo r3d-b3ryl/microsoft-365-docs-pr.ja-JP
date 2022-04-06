@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1119d13998510927f249288cc40a47eda45dc9ac
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: bc8cda3fb61ec9338b95eed58f5f0a70e1deb3e1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218408"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469363"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -47,19 +47,19 @@ ms.locfileid: "61218408"
 
 既定で有効になっている場合は、VPN を無効にする必要がある場合があります。 たとえば、VPN が構成されているときに動作しないアプリを実行する場合です。 このような場合は、Defender for Endpoint アプリから直接 VPN を無効にするか、次の手順を使用して無効にできます。
 
-1. iOS デバイスで、アプリを開き **設定[全般**] をクリック **またはタップ** し **、[VPN] をタップします**。
+1. iOS デバイスで、アプリを開き **設定、[全般**] を **クリックまたはタップ** し、[VPN] を **タップします**。
 1. Microsoft Defender for Endpoint の "i" ボタンをクリックまたはタップします。
 1. VPN を無効 **にするにはConnectをオフ** にします。
 
     > [!div class="mx-imgBorder"]
-    > ![VPN 構成はオンデマンドで接続します。](images/ios-vpn-config.png)
+    > :::image type="content" source="images/ios-vpn-config.png" alt-text="[Connectオンデマンド] オプション" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
 > VPN が無効になっている場合、Web 保護は使用できません。 Web 保護を再び有効にするには、デバイスで Microsoft Defender for Endpoint アプリを開き、[Web 保護を有効にする] をクリックします。
 
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>複数の VPN プロファイルとの共存
 
-Apple iOS では、同時にアクティブになる複数のデバイス全体の **VPN** はサポートされていません。 デバイスに複数の VPN プロファイルを存在することができますが、一度にアクティブにできる VPN は 1 つのみです。 デバイスで別の VPN を使用する必要がある場合は、他の VPN を使用している間に Defender for Endpoint VPN を無効にできます。
+Apple iOS では、同時にアクティブになる複数のデバイス全体 **の VPN は** サポートされていません。 デバイスに複数の VPN プロファイルを存在することができますが、一度にアクティブにできる VPN は 1 つのみです。 デバイスで別の VPN を使用する必要がある場合は、他の VPN を使用している間に Defender for Endpoint VPN を無効にできます。
 
 ## <a name="battery-consumption"></a>バッテリー消費
 
@@ -88,18 +88,18 @@ Microsoft Defender for Endpoint は、フィッシングなどの Web ベース�
 さらに、iOS デバイスに通知が表示されます。 通知をタップすると、ユーザーが詳細を確認する次の画面が開きます。
 
 > [!div class="mx-imgBorder"]
-> ![安全でない通知として報告されたサイトの画像。](images/ios-phish-alert.png)
+> :::image type="content" source="images/ios-phish-alert.png" alt-text="安全でない通知として報告されたサイト" lightbox="images/ios-phish-alert.png":::
 
 ## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>オンボード後に Defender for Endpoint コンソールにデバイスが表示されない。
 
-オンボード後、Defender for Endpoint セキュリティ コンソールのデバイス インベントリにデバイスが表示されるのに数時間かかります。 また、デバイスがインターネット接続を持つデバイスAzure Active Directoryに正しく登録されていることを確認します。 オンボードを成功するには、デバイスを Microsoft Authenticator または Intune ポータル サイト 経由で登録する必要があります。ユーザーは、Azure AD に登録されているデバイスと同じアカウントを使用してサインインする必要があります。
+オンボード後、Defender for Endpoint セキュリティ コンソールのデバイス インベントリにデバイスが表示されるのに数時間かかります。 また、デバイスがデバイスに正しく登録され、Azure Active Directoryがインターネットに接続されていることを確認します。 オンボードを成功するには、デバイスを Microsoft Authenticator または Intune ポータル サイト 経由で登録する必要があります。ユーザーは、Azure AD に登録されているデバイスと同じアカウントを使用してサインインする必要があります。
 
 > [!NOTE]
-> デバイス名が Intune (Intune) コンソールMicrosoft エンドポイント マネージャー一致しない場合があります。 Defender for Endpoint コンソールのデバイス名は、モデルの<username_iPhone/iPad形式>。 また、デバイス ID Azure AD使用して、Defender for Endpoint コンソールでデバイスを識別することもできます。
+> 場合によっては、デバイス名が Intune (Intune) コンソールMicrosoft エンドポイント マネージャー一致しない場合があります。 Defender for Endpoint コンソールのデバイス名は、モデルの<username_iPhone/iPad形式>。 また、デバイス ID Azure AD使用して、Defender for Endpoint コンソールでデバイスを識別することもできます。
 
 ## <a name="data-and-privacy"></a>データとプライバシー
 
-収集されたデータとプライバシーの詳細については、「プライバシー情報 [- Microsoft Defender for Endpoint on iOS」を参照してください](ios-privacy.md)。
+収集されたデータとプライバシーの詳細については、「 [プライバシー情報 - Microsoft Defender for Endpoint on iOS」を参照してください](ios-privacy.md)。
 
 ## <a name="connectivity-issue-on-cellular-network"></a>携帯電話ネットワークでの接続の問題
 
@@ -122,6 +122,6 @@ Defender for Endpoint コンテンツ フィルターがインストールされ
   - iOS/iPadOS デバイスで MSDefender アプリを開きます。
   - 左上隅のメニュー (プロファイル アイコン) をタップします。
   - [フィードバック **の送信] をタップします**。
-  - 指定されたオプションから選択します。 問題を報告するには、[気に入らない **] を選択します**。
+  - 指定されたオプションから選択します。 問題を報告するには、[気に入らない] **を選択します**。
   - 直面している問題の詳細を入力し、[診断データの送信 **] をオンにしてください**。 チームからソリューションまたはフォローアップの連絡を受け取る場合は、電子メール アドレスを含める必要があります。
   - [送信 **] を** タップして、フィードバックを正常に送信します。

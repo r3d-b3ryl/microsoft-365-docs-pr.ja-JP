@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b9af738d4b1f59705132a84239d06dc762447417
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 04e7617825a3e14eac541b296cbed9f4dd95e206
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683759"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469319"
 ---
 # <a name="customize-controlled-folder-access"></a>制御されたフォルダー アクセスをカスタマイズする
 
@@ -90,7 +90,7 @@ ms.locfileid: "63683759"
     ```
 3. 保護するフォルダーごとに手順 2 を繰り返します。 保護されているフォルダーは、アプリ内にWindows セキュリティされます。
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="コマンドレットが表示された PowerShell ウィンドウ。":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="コマンドレットが表示された PowerShell ウィンドウ" lightbox="images/cfa-allow-folder-ps.png":::
 
 > [!IMPORTANT]
 > リスト `Add-MpPreference` にアプリを追加または追加する場合に使用します `Set-MpPreference`。 コマンドレットを使用 `Set-MpPreference` すると、既存のリストが上書きされます。
@@ -120,7 +120,7 @@ ms.locfileid: "63683759"
 
 4. [ **許可されたアプリを追加する] を選択** し、プロンプトに従ってアプリを追加します。
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="許可されたアプリ ボタンを追加します。":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="[許可されたアプリの追加] ボタン" lightbox="images/cfa-allow-app.png":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>グループ ポリシーを使用して特定のアプリを許可する
 
@@ -149,7 +149,7 @@ ms.locfileid: "63683759"
 
    引き続き使用 `Add-MpPreference -ControlledFolderAccessAllowedApplications` して、リストにアプリを追加します。 このコマンドレットを使用して追加されたアプリは、アプリのWindows セキュリティされます。
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="アプリを許可する PowerShell コマンドレット。":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="アプリケーションを許可する PowerShell コマンドレット" lightbox="images/cfa-allow-app-ps.png":::
 
 > [!IMPORTANT]
 > リスト `Add-MpPreference` にアプリを追加または追加する場合に使用します。 コマンドレットを使用 `Set-MpPreference` すると、既存のリストが上書きされます。

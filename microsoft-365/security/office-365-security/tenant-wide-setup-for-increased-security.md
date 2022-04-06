@@ -21,12 +21,12 @@ ms.custom:
 description: このトピックでは、テナント全体の設定に対して推奨される構成について説明します。この構成は、テナント環境のセキュリティに影響Microsoft 365します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94da7316c5e749cf6dcc5e038c185bea4790765f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 96f31d0fb9eb3ef9d6eaec396fdac8fe96b96c3d
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682881"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476359"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>セキュリティ強化のために、Microsoft 365 テナントを構成する
 
@@ -63,7 +63,7 @@ Office 365スコアは、通常のアクティビティとセキュリティ設�
 
 環境の正常性の詳細については、これらのレポートとダッシュボードをご覧ください。 これらのレポートのデータは、組織がサービスを使用するOffice 365されます。 今のところ、監視およびアクションを実行できる機能について理解してください。
 
-|ダッシュボード|[説明]|
+|ダッシュボード|説明|
 |---|---|
 |電子メール セキュリティ レポート|これらのレポートは、Exchange Online Protection。 詳細については、「電子メール セキュリティ [レポートを表示する」を](view-email-security-reports.md)参照Microsoft 365 Defenderしてください。|
 |レポートのOffice 365ディフェンダー|レポートは、Defender のレポートでのみ使用Office 365。 詳細については、「View [Defender for Office 365ポータル」をMicrosoft 365 Defenderしてください](view-reports-for-mdo.md)。|
@@ -125,10 +125,10 @@ SharePoint管理センターと管理センター OneDrive for Business同じ設
 詳しくは、以下の資料を参照してください。
 
 - [Defender for Cloud Apps の展開](/cloud-app-security/getting-started-with-cloud-app-security)
-- [Microsoft Defender for Cloud Apps の詳細](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [Microsoft Defender for Cloud Apps の詳細情報](https://www.microsoft.com/cloud-platform/cloud-app-security)
 - [Defender for Cloud Apps とは](/cloud-app-security/what-is-cloud-app-security)
 
-![Defender for Cloud Apps ダッシュボード。](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+:::image type="content" source="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png" alt-text="Defender for Cloud Apps ダッシュボード" lightbox="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png":::
 
 ## <a name="additional-resources"></a>その他のリソース
 

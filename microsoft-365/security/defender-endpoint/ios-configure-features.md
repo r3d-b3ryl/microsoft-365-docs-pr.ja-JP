@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 85ddada93e20e36648fccdb0fe9b2b34ab473212
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c52fac7c5680d8e5f814098410dc2e1993328d2f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681482"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476909"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS の機能で Microsoft Defender for Endpoint を構成する
 
@@ -58,7 +58,7 @@ iOS のエンドポイントの Defender は、この機能を提供するため
 1. VPN を無効 **にするにはConnectをオフ** にします。
 
     > [!div class="mx-imgBorder"]
-    > ![VPN 構成はオンデマンドで接続します。](images/ios-vpn-config.png)
+    > :::image type="content" source="images/ios-vpn-config.png" alt-text="VPN 構成のトグル ボタンConnectオンデマンド オプション" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
 > VPN が無効になっている場合、Web 保護は使用できません。 Web Protection を再び有効にするには、デバイスで Microsoft Defender for Endpoint アプリを開き、[VPN の開始] をクリックまたは **タップします**。
@@ -121,18 +121,18 @@ Microsoft Defender for Endpoint on iOS では、アプリ保護ポリシーの�
 1. 管理 [Microsoft エンドポイント マネージャーで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**DevicesCompliance** ->  **policyesCreate Policy**]  ->  に移動します。 プラットフォームとして [iOS/iPadOS] を選択し、[作成] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![ポリシーを作成します。](images/ios-jb-policy.png)
+    > :::image type="content" source="images/ios-jb-policy.png" alt-text="[ポリシーの作成] タブ" lightbox="images/ios-jb-policy.png":::
 
 2. ポリシーの名前を指定します 。たとえば、「脱獄のコンプライアンス ポリシー」などです。
 3. [コンプライアンス設定] ページで、[デバイスの正常性] セクションをクリック **し、[脱** 獄デバイスのブロック **] フィールドをクリック** します。
 
     > [!div class="mx-imgBorder"]
-    > ![ポリシー設定。](images/ios-jb-settings.png)
+    > :::image type="content" source="images/ios-jb-settings.png" alt-text="[コンプライアンス設定] タブ" lightbox="images/ios-jb-settings.png":::
 
 4. [非 **準拠のアクション] セクションで** 、要件に従ってアクションを選択し、[次へ] を選択 **します**。
 
     > [!div class="mx-imgBorder"]
-    > ![ポリシー アクション。](images/ios-jb-actions.png)
+    > :::image type="content" source="images/ios-jb-actions.png" alt-text="[非準拠のアクション] タブ" lightbox="images/ios-jb-actions.png":::
 
 5. [割 **り当て** ] セクションで、このポリシーに含めるユーザー グループを選択し、[次へ] を選択 **します**。
 6. [レビュー **+ 作成] セクション** で、入力した情報が正しいか確認し、[作成] を選択 **します**。

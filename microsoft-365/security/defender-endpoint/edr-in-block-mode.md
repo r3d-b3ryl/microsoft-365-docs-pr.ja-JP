@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 04/04/2022
+ms.date: 04/01/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: eb40eaee9043e81331eca98c85f1467111cc37e4
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+ms.openlocfilehash: 898d6de45830068ad300a64a3312cff3d5914323
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/04/2022
-ms.locfileid: "64638358"
+ms.locfileid: "64634297"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -115,6 +115,10 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理](nex
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>デバイスで実行しているEDRブロック モードでMicrosoft Defender ウイルス対策する必要がありますか?
 
 ブロック モードでEDRの主な目的は、Microsoft 以外のウイルス対策製品によって見逃された侵害後の検出を修復する方法です。 Microsoft Defender ウイルス対策 がアクティブ モードのときにブロック モードで EDR を有効にすることで、リアルタイムの保護が検出を最初にキャッチして修復する必要があるため、最小限のメリットがあります。 Microsoft Defender for Antivirus EDRパッシブ モードで実行されているエンドポイントで、ブロック モードでアクティブ化を有効にすることをお勧めします。 EDR検出は[、PUA](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) 保護またはブロック モードでの修復機能の&調査によって[自動的に修復](automated-investigations.md)できます。
+
+- パッシブ Microsoft Defender ウイルス対策モードの場合、ブロック EDRモードの場合は、ブロック モードと共に別の防御Microsoft Defender for Endpoint。
+
+- Microsoft Defender ウイルス対策がアクティブ モードの場合、ブロック モードの EDR は追加のスキャンを提供しませんが、Microsoft Defender ウイルス対策 は侵害後の行動EDR検出に対して自動アクションを実行できます。
 
 ### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>ブロック モードEDRユーザーのウイルス対策保護に影響しますか?
 

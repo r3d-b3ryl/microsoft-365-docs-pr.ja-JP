@@ -1,11 +1,11 @@
 ---
-title: Microsoft Defender for Office 365 エンティティ ページ
+title: '[電子Microsoft Defender for Office 365エンティティ] ページ'
 f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 01/21/2021
+ms.date: 04/01/2022
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Microsoft Defender for Office 365 E5 P1 および P2 のお客様は、電子メール エンティティ ページを使用して各メールの 360 度のビューを取得できます。
-ms.openlocfilehash: d75ebd9b54fc5e7919154a4f65e0d5fc0e77e117
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+description: Microsoft Defender for Office 365 E5 および P1 および P2 のお客様は、メール エンティティ ページを使用して各メールの 360 度のビューを取得できます。
+ms.openlocfilehash: 1b74c4c79d05a4a52434810527c92de801b329f0
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475457"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634825"
 ---
 # <a name="the-email-entity-page"></a>メール エンティティ ページ
 
@@ -32,7 +32,7 @@ ms.locfileid: "64475457"
 - [[電子メール エンティティ] ページ タブを使用する](#use-email-entity-page-tabs)
 - [[電子メール エンティティ] ページの新機能](#new-to-the-email-entity-page)
 
-Microsoft Defender for Office 365 E5 および Office P1 と P2 の Defender の管理者は、[電子メール] エンティティ ページを使用して電子メールを 360 度表示 **します**。 この移動先の電子メール ページは、Threat Explorer の 「電子メールの詳細」 フライアウトで配信される情報を [強化するために作成されました](threat-explorer-views.md)。
+E5 および Microsoft Defender for Office 365 P1 と P2 の Office Defender の管理者は、[電子メール] エンティティ ページを使用して電子メールを 360 度 **表示します**。 この移動先の電子メール ページは、Threat Explorer の 「電子メールの詳細」 フライアウトで配信される情報を [強化するために作成されました](threat-explorer-views.md)。
 
 ## <a name="reach-the-email-entity-page"></a>電子メール エンティティ ページにアクセスする
 
@@ -88,7 +88,7 @@ Microsoft Defender for Office 365 E5 および Office P1 と P2 の Defender の
 
 これらの詳細は、電子メールの添付ファイルと URL に固有です。 ユーザーは、エクスプローラーに移動し、検出テクノロジ フィルター セットをファイルのデトレーションまたは URL のデトレーションに適用することで、これらの詳細を確認できます。 ファイルの削除用にフィルター処理されたメールには、削除の詳細を含む悪意のあるファイルが含まれるので、URL に対してフィルター処理されたメールには、悪意のある URL とその発発の詳細が含まれる。
 
-ユーザーは、既知の悪意のある添付ファイルまたはメール内に見つかった URL に関する強化された発発の詳細を表示します。これは、特定のテナントに対して削除されました。 これは、ユーザーが添付ファイルまたは URL が悪意のあると見なされ、削除されたと見なされた理由を理解するのに役立つ、Detonation チェーン、Detonation の概要、スクリーンショット、および観察された動作の詳細で構成されます。
+ユーザーは、既知の悪意のある添付ファイルまたはメール内に見つかった URL に関する強化された発発の詳細を表示します。これは、特定のテナントに対して削除されました。 これは、ユーザーが添付ファイルまたは URL が悪意のあると見なされ、削除されたと見なされた理由を理解するのに役立つ、Detonation チェーン、Detonation の概要、スクリーンショット、および観察された動作の詳細が含まれます。
 
 1. *起立チェーン*。 1 つのファイルまたは URL のデトレーションによって、複数のデトレーションがトリガーされる可能性があります。 Detonation チェーンは、元の悪意のあるファイルまたは URL を含む、元の悪意のあるファイルまたは URL、および起訴の影響を受ける他のすべてのファイルまたは URL を含む、起訴のパスを追跡します。 これらの URL または添付ファイルは、電子メールに直接存在しない場合がありますが、その分析を含めて、ファイルまたは URL が悪意のあると見つかった理由を判断する上で重要です。  
 
@@ -119,6 +119,14 @@ Microsoft Defender for Office 365 E5 および Office P1 と P2 の Defender の
 - *バルク 苦情レベル (BCL)*: メッセージの一括苦情レベル (BCL)。 BCL が高いほど、バルク メール メッセージが苦情を生成する可能性が高くなります (電子メールがスパムである可能性が高い場合、自然な結果)。
 
 - *スパム信頼レベル (SCL):* メッセージのスパム信頼レベル (SCL)。 値が高いほど、メッセージがスパムである可能性が高くなります。
+
+- *クライアントの種類*: メールが REST のように送信されたクライアントの種類を示します。
+
+- *転送*: autoforwaridng のシナリオでは、転送ユーザーと、ETR や SMTP 転送などの転送の種類を示します。 
+
+- *配布リスト*: 受信者が電子メールをリストのメンバーとして再設定した場合、配布リストを表示します。 ネストされた配布リストが含まれる場合は、トップ レベルの配布リストが表示されます。  
+
+- *[To, Cc*]: 電子メールの [To, Cc] フィールドにリストされているアドレスを示します。 これらのフィールドの情報は 5000 文字に制限されています。 
 
 - *ドメイン名*: 送信者のドメイン名です。
 
@@ -178,7 +186,7 @@ Microsoft Defender for Office 365 E5 および Office P1 と P2 の Defender の
 
     - *申請の詳細*: 次のような特定の申請に関する情報が含まれる。
         - 提出日
-        - 件名
+        - Subject
         - 申請の種類
         - 提出の理由
         - 申請 ID

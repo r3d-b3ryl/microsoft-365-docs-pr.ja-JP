@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e6bf614730caa9060a334c0a01c2dfe64b24df78
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cbd4634e779fe2bf853aaf014b59b1e7e1c1928f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325266"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470045"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>ソフトウェア インベントリ - 脅威と脆弱性の管理
 
@@ -66,7 +66,7 @@ ms.locfileid: "63325266"
 
 既定では、ビューは製品コード **(CPE) によってフィルター処理されます。使用可能です**。 また、ソフトウェアで見つかった弱点、関連付けられた脅威、およびソフトウェアがサポート終了に達したかどうかのようなタグに基づいてリスト ビューをフィルター処理することもできます。
 
-:::image type="content" alt-text="ソフトウェア インベントリのランディング ページの例。" source="images/software-inventory-page.png" lightbox="images/tvm-software-inventory.png":::
+:::image type="content" source="images/tvm-software-inventory.png" alt-text="ソフトウェア インベントリのランディング ページ" lightbox="images/tvm-software-inventory.png":::
 
 調査するソフトウェアを選択します。 フライアウト パネルが開き、ページ上の情報がコンパクトに表示されます。 調査の詳細を確認し、[ソフトウェア ページを開く] を選択するか、[不正確なレポート] を選択して技術的な不整合にフラグ **を設定します**。
 
@@ -74,7 +74,7 @@ ms.locfileid: "63325266"
 
 脅威によって現在サポートされていないソフトウェア& 脆弱性の管理インベントリ ページに存在する可能性があります。 サポートされていないので、限られたデータしか使用できません。 [弱さ] セクションの [使用できない] オプションを使用して、サポートされていないソフトウェアでフィルター処理します。
 
-:::image type="content" alt-text="サポートされていないソフトウェア フィルター。" source="images/tvm-unsupported-software-filter.png" lightbox="images/tvm-unsupported-software-filter.png":::
+:::image type="content" source="images/tvm-unsupported-software-filter.png" alt-text="サポートされていないソフトウェア フィルター" lightbox="images/tvm-unsupported-software-filter.png":::
 
 以下は、ソフトウェアがサポートされていない状態を示しています。
 
@@ -97,7 +97,7 @@ CPE を持つソフトウェアは、このデバイス固有のソフトウェ�
 
 ソフトウェア名を選択して、フライアウトを開き、"Software Evidence" というセクションを探します。
 
-:::image type="content" alt-text="デバイスの一覧からWindows 10証拠の例を示し、ソフトウェア証拠レジストリ パスを示します。" source="images/tvm-software-evidence.png" lightbox="images/tvm-software-evidence.png":::
+:::image type="content" source="images/tvm-software-evidence.png" alt-text="デバイスWindows 10の一覧のリスト" lightbox="images/tvm-software-evidence.png":::
 
 ## <a name="software-pages"></a>ソフトウェア ページ
 
@@ -117,7 +117,7 @@ CPE を持つソフトウェアは、このデバイス固有のソフトウェ�
   - ソフトウェアがインストールされているデバイス (デバイス名、ドメイン、OS などと共に)。
   - ソフトウェア のバージョン 一覧 (バージョンがインストールされているデバイスの数、検出された脆弱性の数、インストールされているデバイスの名前を含む)。
 
-    :::image type="content" alt-text="ソフトウェアの詳細、Visual Studio、公開されているデバイスなど、2017 年のソフトウェアサンプル ページ。" source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
+    :::image type="content" source="images/tvm-software-page-example.png" alt-text="2017 Visual Studioソフトウェアの詳細、弱点、公開されたデバイスなど" lightbox="images/tvm-software-page-example.png":::
 
 ## <a name="report-inaccuracy"></a>レポートの不正確さ
 
