@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d57097d255b9f64782320dbd380f90b7a98573cb
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: df5cbf5297a17dafb80a93ed49c7f7d81bc49d68
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160512"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474379"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Microsoft Defender for Endpoint インシデント キューを表示して整理する
 
@@ -47,7 +47,7 @@ ms.locfileid: "61160512"
 - ページ間の移動
 - フィルターの適用
 
-![インシデント キューのイメージ。](images/atp-incident-queue.png)
+:::image type="content" source="images/atp-incident-queue.png" alt-text="インシデント キュー" lightbox="images/atp-incident-queue.png":::
 
 ## <a name="sort-and-filter-the-incidents-queue"></a>インシデント キューの並べ替えとフィルター処理
 次のフィルターを適用して、インシデントの一覧を制限し、より集中したビューを取得できます。
@@ -56,9 +56,9 @@ ms.locfileid: "61160512"
 
 インシデントの重大度 | 説明
 :---|:---
-高い </br>(赤) | 多くの場合、高度な永続的な脅威 (APT) に関連付けられている脅威。 これらのインシデントは、デバイスに与える損害の重大度が高いリスクを示しています。
+高 </br>(赤) | 多くの場合、高度な永続的な脅威 (APT) に関連付けられている脅威。 これらのインシデントは、デバイスに与える損害の重大度が高いリスクを示しています。
 中 </br>(オレンジ) | 異常なレジストリ変更、疑わしいファイルの実行、攻撃段階の一般的な動作など、組織でまれに観察される脅威。
-低い </br>(黄色) | 組織を標的とする高度な脅威を必ずしも示すわけではない、一般的なマルウェアやハッキング ツールに関連する脅威。
+低 </br>(黄色) | 組織を標的とする高度な脅威を必ずしも示すわけではない、一般的なマルウェアやハッキング ツールに関連する脅威。
 情報 </br>(灰色) | 情報インシデントはネットワークに悪影響を及ぼすとは見なされませんが、追跡しておいた方が良い場合があります。
 
 ## <a name="assigned-to"></a>割り当て先

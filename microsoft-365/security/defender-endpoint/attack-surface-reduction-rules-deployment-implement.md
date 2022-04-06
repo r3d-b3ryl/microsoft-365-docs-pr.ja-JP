@@ -11,15 +11,22 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
+ms.openlocfilehash: 2ca83735eab465e3a5ec6b25156143fde1719c0a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683123"
 ---
-
 # <a name="step-3-implement-asr-rules"></a>手順 3: ASR ルールを実装する
 
 攻撃表面縮小 (ASR) ルールを実装すると、最初のテスト リングが有効な機能状態に移動します。
@@ -91,7 +98,7 @@ ms.date: 1/18/2022
 
 2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に移動 **し、[** 管理用 **テンプレート] をクリックします**。
 
-3. ツリーを展開して、**攻撃Windows Microsoft Defender ウイルス対策** \>  \> **Microsoft Defender Exploit Guard** \> **を表示します**。
+3. ツリーを展開して **、WindowsのMicrosoft Defender ウイルス対策** \> **Microsoft Defender Exploit Guard** \>  \> **を表示します**。
 
 4. [攻撃表面の縮小 **ルールからファイル** とパスを除外する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 [ **表示] を** 選択し、[値の名前] 列に各ファイル **またはフォルダーを入力** します。 各 **アイテムの [** 値] **列に** 0 を入力します。
 
@@ -100,7 +107,7 @@ ms.date: 1/18/2022
 
 ##### <a name="use-powershell-to-exclude-files-and-folders"></a>PowerShell を使用してファイルとフォルダーを除外する
 
-1. [**powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
+1. [**powershell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
 
 2. 次のコマンドレットを入力します。
 
@@ -119,7 +126,7 @@ ms.date: 1/18/2022
 
 ##### <a name="customize-the-notification"></a>通知をカスタマイズする
 
-ルールがトリガーされた場合の通知をカスタマイズし、アプリまたはファイルをブロックできます。 詳細については、「Windows セキュリティ」[を参照](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)してください。
+ルールがトリガーされた場合の通知をカスタマイズし、アプリまたはファイルをブロックできます。 詳しくは、[Windows セキュリティをご覧](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)ください。
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
@@ -129,4 +136,4 @@ ms.date: 1/18/2022
 
 [手順 2: ASR ルールをテストする](attack-surface-reduction-rules-deployment-test.md)
 
-[手順 4: ASR ルールを操作する](attack-surface-reduction-rules-deployment-operationalize.md)
+[手順 4: ASR ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md)

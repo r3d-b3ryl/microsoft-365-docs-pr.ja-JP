@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 処理確認を利用する場合や、レコードとしてマークされたアイテムが構成した設定に従って自動的に削除される場合、コンテンツの処理を監視および管理します。
-ms.openlocfilehash: 2d078eb00ffa6d2dd8279c7e5eb65a8fcfb6fa53
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: dbc713c665367bb973fb8faded24015ad6c2d5c3
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419185"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594820"
 ---
 # <a name="disposition-of-content"></a>コンテンツの処理
 
@@ -187,14 +187,16 @@ If you need additional information, visit the helpdesk website (https://support.
   
 - **処理の承認**:
     - 処理確認の中間ステージ (複数のステージを構成した場合) に対してこの操作が選択されている場合: その項目は次の処理ステージに移動します。
-    - 処理確認の最終ステージにこの操作が選択された場合、または処理のステージが 1 つだけの場合、そのアイテムは完全削除の対象としてマークされ、7日以内に削除されます。
+    - 処理確認の最終ステージにこの操作が選択された場合、または処理のステージが 1 つだけの場合、そのアイテムは完全削除の対象としてマークされ、タイマー ジョブは 7 日以内にアクションを実行します。 アイテムを完全に削除する正確なタイミングは、ワークロードによって異なります。 保存保持ライブラリの詳細については、「[SharePoint と OneDrive の保持のしくみ](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)」と「[Exchange の保持のしくみ](retention-policies-exchange.md#how-retention-works-for-exchange)」を参照してください。
+
 - **ラベルの変更**:
     - この操作を選択すると、アイテムは元のラベルの処理確認プロセスを終了します。 そして、そのアイテムは、新しく選択した保持ラベルの保持設定の対象となります。
+
 - **拡張**
     - この操作を選択すると、処理確認は延長期間が終了するまで実質的に中断され、その後、第 1 ステージから処理確認が再度開始されます。
+
 - **確認者の追加**
     - この操作を選択すると、他のユーザーを指定して追加するように求めるメッセージが表示されます。
-    
     > [!NOTE]
     > この操作により、追加されたユーザーにユーザーに、[必要なアクセス許可](#permissions-for-disposition) が自動的に付与されるわけではありません。 これらのアクセス許可を持っていない場合、処理確認には参加できません。
 

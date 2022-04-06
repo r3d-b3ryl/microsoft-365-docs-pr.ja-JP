@@ -1,7 +1,7 @@
 ---
 title: マネージド セキュリティ サービス プロバイダー (MSSP) アクセスを提供する
 description: ポータルからポータルへのMicrosoft Defender セキュリティ センターについてMicrosoft 365 Defenderする
-keywords: Microsoft 365 Defender ポータル、microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、単一ウィンドウのガラス、コンバージド ポータル、セキュリティ ポータル、Defender セキュリティ ポータルの開始
+keywords: Microsoft 365 Defender ポータル、microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、単一ウィンドウ のガラス、コンバージド ポータル、セキュリティ ポータル、Defender セキュリティ ポータルの開始
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 641636528d35c148ceaa41827721e841dfafd4ec
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: f0148a8bfe18c7636e95ceae7b268cc70b2e58ed
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171049"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500418"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>マネージド セキュリティ サービス プロバイダー (MSSP) アクセスを提供する 
 
@@ -37,7 +37,7 @@ ms.locfileid: "62171049"
 
 マルチテナント委任アクセス ソリューションを実装するには、次の手順を実行します。
 
-1. Defender for Endpoint[の](/windows/security/threat-protection/microsoft-defender-atp/rbac)役割ベースのアクセス制御を、Microsoft 365 Defender ポータル経由で有効にし、Azure Active Directory (Azure AD) グループに接続します。
+1. Defender for Endpoint [の](/windows/security/threat-protection/microsoft-defender-atp/rbac)役割ベースのアクセス制御を、Microsoft 365 Defenderポータル経由で有効にし、Azure Active Directory (Azure AD) グループに接続します。
 
 2. アクセス [要求とプロビジョニング用にガバナンス](/azure/active-directory/governance/identity-governance-overview) アクセス パッケージを構成します。
 
@@ -55,9 +55,9 @@ ms.locfileid: "62171049"
 
 2. ポータルの役割とグループ内の Customer Defender for Endpoint で適切なアクセス レベルに対応Microsoft 365 Defender Defender for Endpoint ロールを作成します。
 
-    カスタマー Microsoft 365 Defender ポータルで RBAC を有効にするには、グローバル管理者またはセキュリティ管理者権限を持つユーザー アカウントを使用して、> **Endpoints** の役割 & グループ > Roles にアクセスします。
+    カスタマー Microsoft 365 Defender ポータルで RBAC を有効にするには、グローバル管理者またはセキュリティ管理者の権限を持つユーザー アカウントを使用して、> エンドポイントの役割 **& > ロール** にアクセスします。
 
-    ![MSSP アクセスのイメージ。](../../media/mssp-access.png)
+    :::image type="content" source="../../media/mssp-access.png" alt-text="ポータルでの MSSP アクセスの詳細Microsoft 365 Defenderします。" lightbox="../../media/mssp-access.png":::
 
     次に、MSSP SOC Tier のニーズを満たす RBAC ロールを作成します。 [割り当てられたユーザー グループ] を使用して、作成されたユーザー グループにこれらの役割をリンクします。
 
@@ -77,15 +77,16 @@ ms.locfileid: "62171049"
 
     接続された組織として MSSP を追加すると、MSSP は要求し、アクセスが準備されます。 
 
-    これを行うには、テナントの顧客AD、Identity Governance: Connected organization にアクセスします。 新しい組織を追加し、テナント ID またはドメインを使用して MSSP Analyst テナントを検索します。 MSSP Analysts 用に個別のADテナントを作成する方法をお勧めします。
+    これを行うには、テナントの顧客AD Id ガバナンス: 接続された組織にアクセスします。 新しい組織を追加し、テナント ID またはドメインを使用して MSSP Analyst テナントを検索します。 MSSP Analysts 用に別のADテナントを作成する方法をお勧めします。
 
 2. **Customer AAD: Identity Governance でリソース カタログを作成する**
 
     リソース カタログは、テナントの顧客に作成されたアクセス パッケージADです。
 
-    これを行うには、テナントの顧客AD、Identity Governance: Catalogs にアクセスし、新しいカタログ **を追加します**。 この例では **、MSSP Accesses を呼び出します**。
+    これを行うには、テナントの顧客AD、Identity Governance: Catalogs にアクセスし、新しいカタログ **を追加します**。 この例では、**MSSP Accesses と呼ぶ。**
 
-    ![新しいカタログのイメージ。](../../media/goverance-catalog.png)
+    :::image type="content" source="../../media/goverance-catalog.png" alt-text="新しいカタログをMicrosoft 365 Defenderポータル" lightbox="../../media/goverance-catalog.png":::
+
 
     詳細については、「リソースのカタログ [を作成する」を参照してください](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
@@ -100,15 +101,15 @@ ms.locfileid: "62171049"
     - MSSP SOC テナント内のユーザーだけが要求できる
     - 365 日後に自動アクセスが期限切れになる
 
-    ![新しいアクセス パッケージのイメージ。](../../media/new-access-package.png)
+    :::image type="content" source="../../media/new-access-package.png" alt-text="新しいアクセス パッケージの詳細 (Microsoft 365 Defenderポータル)" lightbox="../../media/new-access-package.png":::
 
-    詳細については、「新しいアクセス [パッケージを作成する」を参照してください](/azure/active-directory/governance/entitlement-management-access-package-create)。
+    詳細については、「Create [a new access package」を参照してください](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
-4. **Customer AAD から MSSP リソースへのアクセス要求リンクを提供する: Identity Governance**
+4. **Customer AAD ID ガバナンスから MSSP リソースへのアクセス要求リンクを提供する**
 
     [マイ アクセス ポータル] リンクは、MSSP SOC アナリストが作成したアクセス パッケージを介してアクセスを要求するために使用されます。 リンクは永続的です。つまり、同じリンクが新しいアナリストのために時間の間に使用される可能性があります。 アナリスト要求は、MSSP アナリスト承認者による承認のためにキュー **に入ります**。
 
-    ![アクセス プロパティのイメージ。](../../media/access-properties.png)
+    :::image type="content" source="../../media/access-properties.png" alt-text="ポータルのアクセス プロパティMicrosoft 365 Defenderします。" lightbox="../../media/access-properties.png":::
 
     リンクは、各アクセス パッケージの概要ページに表示されます。
 
@@ -118,7 +119,7 @@ ms.locfileid: "62171049"
 
     アクセス要求は、MSSP Analyst Approvers グループのメンバーによって、お客様の My Access で管理されます。
 
-    これを行うには、次を使用して顧客の myaccess にアクセスします `https://myaccess.microsoft.com/@<Customer Domain>` 。
+    これを行うには、次を使用して顧客の myaccess にアクセスします `https://myaccess.microsoft.com/@<Customer Domain>`。
 
     例: `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 
@@ -129,4 +130,4 @@ ms.locfileid: "62171049"
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 割り当てられたアクセス許可とロールを使用します。
 
 > [!IMPORTANT]
-> Microsoft Defender for Endpoint への委任されたアクセスは、現在、Microsoft 365 Defenderウィンドウごとに 1 つのテナントにアクセスできます。
+> 現在、Microsoft 365 Defender ポータルの Microsoft Defender for Endpoint への委任されたアクセスでは、ブラウザー ウィンドウごとに 1 つのテナントにアクセスできます。

@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 5ce7b58410ea53e4f11d746ebc4583b125f1ade6
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 924fef8e5aba8a797cf6754b6c507624e51a64c2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494430"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474313"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Defender の攻撃シミュレーション トレーニングを使用してフィッシング攻撃をシミュレートOffice 365
 
@@ -36,7 +36,7 @@ Microsoft Defender for plan 2 または Office 365の攻撃シミュレーショ
 
 2. [シミュレーション] **タブで** 、[シミュレーションの起動 ![] アイコンを選択します。](../../media/m365-cc-sc-create-icon.png) **シミュレーションを起動します**。
 
-   ![ポータルの攻撃シミュレーション トレーニングの [シミュレーション] タブでシミュレーション ボタンMicrosoft 365 Defenderします。](../../media/attack-sim-training-simulations-launch.png)
+   :::image type="content" source="../../media/attack-sim-training-simulations-launch.png" alt-text="[シミュレーション] ポータルの [攻撃シミュレーション トレーニング] の [シミュレーション] タブの [シミュレーションの起動] Microsoft 365 Defenderします。" lightbox="../../media/attack-sim-training-simulations-launch.png":::
 
 3. シミュレーション作成ウィザードが開きます。 この記事の残りの部分では、ページとページに含まれる設定について説明します。
 
@@ -55,7 +55,7 @@ Microsoft Defender for plan 2 または Office 365の攻撃シミュレーショ
 
 説明の [詳細 **の表示]** リンクをクリックすると、詳細フライアウトが開き、その手法と、その手法から生じ得るシミュレーション手順について説明します。
 
-![[テクニックの選択] ページの資格情報の取得手法の詳細フライアウト。](../../media/attack-sim-training-simulations-select-technique-sim-steps.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="[Select technique] ページの資格情報の取得手法の詳細フライアウト" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
 
 完了したら、**[次へ]** をクリックします。
 
@@ -74,7 +74,7 @@ Microsoft Defender for plan 2 または Office 365の攻撃シミュレーショ
 
 次の詳細は、選択に役立つペイロードの一覧に表示されます。
 
-- **[名前]**
+- **名前**
 - **言語**: ペイロード コンテンツの言語。 Microsoft のペイロード カタログ (グローバル) は、10 以上の言語でペイロードを提供し、フィルター処理も可能です。
 - **クリック率**: このペイロードをクリックしたユーザー数。
 - **予測された侵害率**: このペイロードによって侵害される人Microsoft 365の割合を予測する、データ全体のペイロードの履歴データ。
@@ -102,14 +102,14 @@ Microsoft Defender for plan 2 または Office 365の攻撃シミュレーショ
 
 フィルターの構成が完了したら、[適用]、[キャンセル]、または [フィルターのクリア] **をクリックします**。
 
-![ポータルの攻撃シミュレーション トレーニングでペイロード ページMicrosoft 365 Defenderします。](../../media/attack-sim-training-simulations-select-payload.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="[攻撃シミュレーション トレーニング] の [ペイロードの選択] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
 
 リストからペイロードを選択すると、ペイロードの詳細がフライアウトに表示されます。
 
 - [ **概要]** タブには、ペイロードの例と他の詳細が含まれています。
 - [**シミュレーションの起動] タブには**、[シミュレーション名]、**[****クリック** 率]、[侵害率]、および [アクション **] が** 含 **まれます**。
 
-![ペイロードの詳細は、ポータルの攻撃シミュレーション トレーニングMicrosoft 365 Defender詳細です。](../../media/attack-sim-training-simulations-select-payload-details.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="[ペイロードの詳細] ポータルの攻撃シミュレーション トレーニングMicrosoft 365 Defenderします。" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
 
 名前をクリックしてリストから ![ペイロードを選択した場合は、[テスト ペイロードの送信] アイコンをクリックします。](../../media/m365-cc-sc-create-icon.png) **メイン ページに [テスト** の送信] ボタンが表示され、ペイロード 電子メールのコピーを自分 (現在ログインしているユーザー) に送信して検査を行います。
 
@@ -156,7 +156,7 @@ Microsoft Defender for plan 2 または Office 365の攻撃シミュレーショ
         - [すべての **タイトルを選択]**
         - 既存の Title 値を選択します。
 
-      ![ポータルの攻撃シミュレーション トレーニングの [ターゲット ユーザー] ページのユーザー フィルター Microsoft 365 Defenderします。](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="[ターゲット ユーザー] ページの [ターゲット ユーザー] ページの [ユーザー フィルター] は、Microsoft 365 Defenderポータルで行います。" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
       条件を特定すると、影響を受けるユーザーが表示される [ユーザー一覧] セクションに表示され、検出された受信者の一部またはすべてを選択できます。
 
@@ -194,7 +194,7 @@ Microsoft Defender for plan 2 または Office 365の攻撃シミュレーショ
       - **シミュレーションが終了した 7 日後**
   - **トレーニングなし**: この値を選択した場合、ページの唯一のオプションは、[ランディング ページ] ページに移動する [次へ] [**ボタン**](#landing-page)です。
 
-![ポータルの [攻撃シミュレーション トレーニング] の [トレーニングの割り当て] ページに推奨Microsoft 365 Defenderします。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="このポータルの攻撃シミュレーション トレーニングの [トレーニングの割り当て] ページに推奨されるトレーニングを追加Microsoft 365 Defenderオプション" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 ### <a name="training-assignment"></a>トレーニングの割り当て
 
@@ -236,7 +236,7 @@ Microsoft Defender for plan 2 または Office 365の攻撃シミュレーショ
 
 表示されているトレーニングを使用しない場合は、[トレーニングの削除] アイコン ![をクリックします。](../../media/m365-cc-sc-delete-icon.png) **Delete**
 
-![ポータルの攻撃シミュレーション トレーニングのトレーニング割り当Microsoft 365 Defenderページ。](../../media/attack-sim-training-training-assignment.png)
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="ポータルの攻撃シミュレーション トレーニングのトレーニングの割りMicrosoft 365 Defenderページ" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 完了したら、**[次へ]** をクリックします。
 
@@ -374,4 +374,4 @@ Microsoft が選択したランディング ページは、中国語 (簡体字)
 
 完了したら、**[送信]** をクリックします。
 
-![ポータルの攻撃シミュレーション トレーニングのシミュレーション ページMicrosoft 365 Defenderします。](../../media/attack-sim-training-simulations-review-simulation.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="[攻撃シミュレーション トレーニング] の [シミュレーションの確認] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::

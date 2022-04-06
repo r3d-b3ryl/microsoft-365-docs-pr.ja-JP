@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 22a8c8cdd5ebcaa8038c37b73aeeb6c5f80d4267
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d740ab4fb999697edc9ce7c8f662f6d5c6681fdf
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61932822"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500499"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Microsoft Secure Score の履歴を追跡し、目標を達成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Secure Score](microsoft-secure-score.md) は、組織のセキュリティ体制の測定で、より多くの改善アクションが実行されたことを示す数値が高くなります。 このファイルは、ポータル https://security.microsoft.com/securescore のMicrosoft 365 Defender[表示されます](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
+[Microsoft Secure Score](microsoft-secure-score.md) は、組織のセキュリティ体制の測定で、より多くの改善アクションが実行されたことを示す数値が高くなります。 このファイルは、ポータルhttps://security.microsoft.com/securescoreのMicrosoft 365 Defender[があります](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>スコアに影響を与えたアクティビティに関する分析情報を取得する
 
@@ -40,17 +40,17 @@ ms.locfileid: "61932822"
 
 グラフの下には、選択した時間範囲で行ったすべてのアクションとその属性 (結果のポイントやカテゴリなど) の一覧が表示されます。 日付範囲をカスタマイズし、カテゴリ別にフィルター処理できます。
 
-![アクティビティの履歴。](../../media/secure-score/secure-score-history-activity.png)
+:::image type="content" source="../../media/secure-score/secure-score-history-activity.png" alt-text="ポータル内のアクティビティ履歴を説明するページのMicrosoft 365 Defender例" lightbox="../../media/secure-score/secure-score-history-activity.png":::
 
 アクティビティに関連付けられた改善アクションを選択すると、完全な改善アクションのフライアウトが表示されます。
 
 特定の改善アクションのすべての履歴を表示するには、フライアウトで履歴リンクを選択します。
 
-![改善アクションの履歴。](../../media/secure-score/secure-score-history-flyout.png)
+:::image type="content" source="../../media/secure-score/secure-score-history-flyout.png" alt-text="ポータルの改善アクションに関する履歴ウィンドウMicrosoft 365 Defenderします。" lightbox="../../media/secure-score/secure-score-history-flyout.png":::
 
 ## <a name="discover-trends-and-set-goals"></a>傾向を発見し、目標を設定する
 
-[指標 **の傾向&]** タブには、傾向の可視性を高め、目標を設定するグラフとグラフがいくつかあります。 視覚エフェクトのページ全体の日付範囲を設定できます。 視覚化には、次のものが含まれます。
+[指標 **の傾向&** ] タブには、傾向の可視性を高め、目標を設定するグラフとグラフがいくつかあります。 視覚エフェクトのページ全体の日付範囲を設定できます。 視覚化には、次のものが含まれます。
 
 * **Secure Score Zone** - 組織の目標と、良好、大丈夫、および悪いスコア範囲の定義に基づいてカスタマイズされます。
 * **回帰傾向** - 構成、ユーザー、またはデバイスの変更のために回帰したポイントのタイムライン。  
@@ -66,7 +66,7 @@ ms.locfileid: "61932822"
 
 比較棒グラフは、[概要] タブ **で使用** できます。グラフにカーソルを合わせると、スコアとスコアの機会が表示されます。 
 
-**お客様のような組織** は、同じ地域の他のテナントの平均スコアです (少なくとも 5 つ以上のテナントを比較する場合) と、組織のサイズが類似しています。
+:::image type="content" source="../../media/secure-score/secure-score-comparison-bar.png" alt-text="ポータル内の類似の組織のスコアの棒グラフMicrosoft 365 Defender例" lightbox="../../media/secure-score/secure-score-comparison-bar.png":::
 
 比較データは匿名化され、他のテナントが混在しているかどうかは正確にはわかりません。
 
@@ -74,9 +74,9 @@ ms.locfileid: "61932822"
 
 #### <a name="comparison-trend"></a>比較傾向
 
-[指標 **と傾向&]** タブで、組織の Secure Score が他のユーザーの時間と比較する方法を確認します。
+[指標 **と&]** タブで、組織の Secure Score が他のユーザーの時間と比較する方法を確認します。
 
-![同様の組織の時間のスコアの線グラフ。](../../media/secure-score/secure-score-comparison-trend.png)
+:::image type="content" source="../../media/secure-score/secure-score-comparison-trend.png" alt-text="サイト ポータルでの類似した組織のスコアのMicrosoft 365 Defender例" lightbox="../../media/secure-score/secure-score-comparison-trend.png":::
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 

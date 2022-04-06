@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 4bba9797572193199dba0bd4c928693d94bf00de
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 776680db7b2666cc964f82e88cd6af9e6bab7558
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569160"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500257"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でインシデントを調査する
 
@@ -52,7 +52,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 その場合、概要ウィンドウが開き、インシデントに関する重要な情報 (重大度、割り当て先、 [インシデントの MITRE ATT&CK&trade;](https://attack.mitre.org/) カテゴリなど) が表示されます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="インシデントの概要の詳細をポータルに表示するMicrosoft 365 Defenderします。" lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="ポータル内のインシデントの概要の詳細を表示Microsoft 365 Defenderします。" lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
 ここから、[インシデントページを開 **く] を選択できます**。 これにより、インシデントのメイン ページが開き、アラート、デバイス、ユーザー、調査、および証拠の概要情報とタブが表示されます。
 
@@ -82,7 +82,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 - 重大度。
 - アラートに関与したエンティティ。
-- アラートのソース (Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Defender for Cloud アプリガバナンス アドオン)。
+- アラートのソース (Microsoft Defender for Identity、Microsoft Defender for Endpoint、microsoft Defender for Office 365、Defender for Cloud Apps、およびアプリ ガバナンス アドオン)。
 - リンクされた理由。
 
 次に例を示します。
@@ -121,7 +121,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 デバイスのチェック マークを選択すると、デバイス、ディレクトリ データ、アクティブなアラート、ログオンしているユーザーの詳細を確認できます。 デバイスの名前を選択すると、Defender for Endpoint デバイス インベントリにデバイスの詳細が表示されます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="[デバイス インベントリ] オプションに関連するページは、Microsoft Defender for Endpoint。" lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Microsoft Defender for Endpoint の [デバイス インベントリ] オプション関連ページ。" lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
 デバイス ページから、すべての通知、タイムライン、セキュリティに関する推奨事項など、デバイスに関する追加情報を収集できます。 たとえば、[タイムライン] タブから、コンピューターのタイムラインをスクロールして、発生したアラートと一緒に、コンピューター上で観察されたイベントと動作を時系列順に表示できます。
 
@@ -145,11 +145,11 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="ポータル内のインシデントの [メールボックス] ページMicrosoft 365 Defenderします。" lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
-メールボックスのチェック マークを選択すると、アクティブなアラートの一覧を表示できます。 メールボックス名を選択すると、その他のメールボックスの詳細が [エクスプローラー] ページに表示Defender for Office 365。
+メールボックスのチェック マークを選択すると、アクティブなアラートの一覧を表示できます。 メールボックス名を選択すると、その他のメールボックスの詳細が [エクスプローラー] ページで [Defender for defender for Office 365。
 
 ## <a name="investigations"></a>調査
 
-[ **調査] タブ** には、このインシデントのアラート [によって](m365d-autoir.md) トリガーされる自動調査の一覧が表示されます。 自動調査は、Defender for Endpoint および Defender for Office 365 で実行するように自動調査を構成した方法に応じて、修復アクションを実行するか、アナリストによるアクションの承認を待機します。
+[ **調査] タブ** には、このインシデントのアラート [によって](m365d-autoir.md) トリガーされる自動調査の一覧が表示されます。 自動調査では、エンドポイント用 Defender および Defender for Office 365 で実行するように自動調査を構成した方法に応じて、修復アクションを実行するか、アナリストによるアクションの承認を待ちます。
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="ポータル内のインシデントの [調査] Microsoft 365 Defender" lightbox="../../media/investigate-incidents/incident-investigations.png":::
 

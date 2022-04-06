@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 827b22ea2fb5e0864157dfae6748aa97ee4baf29
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: b6872fb13ba1a32f081b5fcc82fd590f2c196a6c
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499949"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569559"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>手順 2. 最初のインシデントを修復する
 
@@ -42,9 +42,9 @@ Microsoft 365 Defenderは、アナリストが手動で開始できるいくつ�
 
 ## <a name="actions-on-devices"></a>デバイスでのアクション
 
-- **デバイスを分離** する - このアクティビティは、マルウェアの拡散を最小限に抑え、悪意のあるアクターが攻撃を続けることなく分析を継続するために、すべてのネットワーク トラフィック (インターネットと内部) を直ちにブロックします。 許可される唯一の接続は、Microsoft Defender for Identity サービス クラウドへの接続なので、Microsoft Defender for Identity は引き続きデバイスを監視できます。 
+- **デバイスを分離** する - このアクティビティは、マルウェアの拡散を最小限に抑え、悪意のあるアクターが攻撃を続けることなく分析を継続するために、すべてのネットワーク トラフィック (インターネットと内部) を直ちにブロックします。 許可される唯一の接続は、Microsoft Defender for Identityサービス クラウドMicrosoft Defender for Identity監視を続行できます。 
 - **アプリの実行を** 制限する - アプリケーションの実行を制限するために、Microsoft が発行した証明書によって署名されている場合にのみファイルを実行できるコード整合性ポリシーが適用されます。 この制限方法は、攻撃者が侵害されたデバイスを制御し、さらに悪意のあるアクティビティを実行するのを防ぐのに役立ちます。
-- **[ウイルス対策スキャン** の実行] - Defender ウイルス対策Microsoft Defender ウイルス対策アクティブなウイルス対策ソリューションかどうかに関Microsoft Defender ウイルス対策ウイルス対策ソリューションと一緒にスキャンを実行できます。 別のウイルス対策ベンダー製品がプライマリ エンドポイント保護ソリューションである場合は、パッシブ モードで Defender ウイルス対策を実行できます。
+- **[ウイルス対策スキャン** の実行] - Defender ウイルス対策Microsoft Defender ウイルス対策アクティブなウイルス対策ソリューションかどうかに関Microsoft Defender ウイルス対策ウイルス対策ソリューションと一緒にスキャンを実行できます。 別のウイルス対策ベンダー製品が主要なエンドポイント保護ソリューションである場合は、パッシブ モードで Defender ウイルス対策を実行できます。
 - **自動調査を開始する** - デバイスで新しい汎用自動調査を開始できます。 調査の実行中、デバイスから生成された他のアラートは、その調査が完了するまで、継続的な自動調査に追加されます。 さらに、他のデバイスで同じ脅威が見られる場合は、それらのデバイスが調査に追加されます。
 - **ライブ応答の開始** - ライブ応答は、リモート シェル接続を使用してデバイスに瞬時にアクセスできる機能です。 これにより、詳細な調査作業を行い、迅速に特定された脅威をリアルタイムに含める即時対応アクションを実行できます。 ライブ応答は、法医学データの収集、スクリプトの実行、分析のための疑わしいエンティティの送信、脅威の修復、および新たな脅威の予防的な捜しを可能にすることで、調査を強化するように設計されています。
 - **調査パッケージの収集** - 調査または対応プロセスの一環として、デバイスから調査パッケージを収集できます。 調査パッケージを収集することで、デバイスの現在の状態を特定し、攻撃者が使用するツールと手法をさらに理解できます。 
@@ -52,7 +52,7 @@ Microsoft 365 Defenderは、アナリストが手動で開始できるいくつ�
 
 ## <a name="actions-on-files"></a>ファイルへのアクション
 
-- **ファイルの停止と** 検疫 - このアクションには、実行中のプロセスの停止、ファイルの検疫、レジストリ キーなどの永続的なデータの削除が含まれます。 このアクションは、過去 30 日間にファイルがWindows 11 または Windows 10 バージョン 1703 以降のデバイスで有効になります。 
+- **ファイルの停止と** 検疫 - このアクションには、実行中のプロセスの停止、ファイルの検疫、レジストリ キーなどの永続的なデータの削除が含まれます。 このアクションは、Windows 11 または Windows 10 バージョン 1703 以降のデバイスで、過去 30 日間にファイルが観察された場合に有効になります。 
 - **ファイルをブロックまたは許可** するインジケーターを追加する - 悪意のある可能性のあるファイルやマルウェアの疑いを禁止することで、組織内の攻撃の伝播を防止します。 この操作により、ファイルが組織内のデバイスで読み取り、書き込み、または実行されるのを防ぐ。
 - **ファイルのダウンロードまたは** 収集 – このアクションにより、アナリストはパスワードで保護されたファイルをアーカイブ ファイル.zipダウンロードして、組織による詳細な分析を行います。
 - **深い分析** – このアクションは、セキュリティで保護された完全にインストルメント化されたクラウド環境でファイルを実行します。 詳細な分析結果は、ファイルのアクティビティ、観察された動作、およびドロップされたファイル、レジストリの変更、IP アドレスとの通信など、関連する成果物を示します。 
@@ -64,11 +64,11 @@ Microsoft 365 Defenderは、アナリストが手動で開始できるいくつ�
 3. 悪意のあるファイルがファイルから検疫されたSharePoint
 4. マルウェアの影響を受けたエンドポイントを確認する
 5. システムの再構築
-6. 他のユーザーに対する同様の Microsoft Defender for Cloud Apps アラートを確認する
-7. Tor IP アドレスをブロックする Microsoft Defender for Endpoint でカスタム インジケーターを作成する
-8. 次の図に示すように、この種類のアラートのガバナンス アクションを Microsoft Defender for Cloud Apps に作成します。
+6. 他のユーザーに対Microsoft Defender for Cloud Apps同様のアラートを確認する
+7. Tor IP アドレスをブロックMicrosoft Defender for Endpointカスタム インジケーターを作成する
+8. 次の図に示Microsoft Defender for Cloud Apps、この種類のアラートのガバナンス アクションを作成します。
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Microsoft Defender for Cloud Apps ポータルのガバナンス アクション" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="管理ポータルでのガバナンス Microsoft Defender for Cloud Appsアクション" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 修復アクションの大部分は、アプリケーションで適用および追跡Microsoft 365 Defender。
 
@@ -89,9 +89,7 @@ Playbooks は、Power Automateを使用して、特定の条件がトリガー�
  
 プレイブックは、インシデント後のレビュー[](first-incident-post.md)中に作成して、解決されたインシデントから修復アクションを作成することもできます。 
 
-## <a name="next-step"></a>次のステップ
-
-[![手順 3: インシデントのインシデント後のレビューを実行する方法について学習します。](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
+## <a name="next-step"></a>次の手順
 
 インシデントのインシデント [後レビューを実行する方法について学習します](first-incident-post.md)。
 

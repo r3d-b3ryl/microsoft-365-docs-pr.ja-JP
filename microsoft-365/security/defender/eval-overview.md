@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2502a4781e9844fca8de3113d64ee1836efddabd
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: f7830bb25f2572c43d665d059e0a36bc1fdaa172
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557895"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500785"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Microsoft 365 Defender の評価とパイロット
 
@@ -65,7 +65,7 @@ Microsoft 365 Defenderは、クラウドベースの統合された、侵害前�
 
 この図では、攻撃が進行中です。 フィッシングメールは、組織内の従業員の受信トレイに届き、知らず知らずのうちにメールの添付ファイルを開きます。 これによりマルウェアがインストールされ、機密データの盗難で終わる可能性のある一部のイベントが発生します。 ただし、この場合、Defender for Office 365操作中です。
 
-![脅威Microsoft 365 Defenderチェーンを停止する方法。](../../media/defender/m365-defender-eval-threat-chain.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-threat-chain.png" alt-text="さまざまな攻撃の試み" lightbox="../../media/defender/m365-defender-eval-threat-chain.png":::
 
 この図について:
 
@@ -93,7 +93,7 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 
 次の図は、主要なコンポーネントと統合Microsoft 365 Defenderアーキテクチャを示しています。 *各 Defender* コンポーネントの詳細なアーキテクチャ、および使用例のシナリオについては、この一連の記事で説明します。
 
-![Microsoft 365 Defenderアーキテクチャを使用します。](../../media/defender/m365-defender-eval-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-architecture.png" alt-text="Microsoft 365 Defender ポータルのMicrosoft 365 Defenderアーキテクチャ" lightbox="../../media/defender/m365-defender-eval-architecture.png":::
 
 この図について:
 
@@ -116,20 +116,19 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 
 次に示す順序で、Microsoft 365コンポーネントを有効にしてください。
 
-![Microsoft 365 Defender評価プロセスを提供します。](../../media/defender/m365-defender-eval-process.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-process.png" alt-text="ポータルの高レベル評価プロセスMicrosoft 365 Defender" lightbox="../../media/defender/m365-defender-eval-process.png":::
 
 次の表に、この図を示します。
 
-|手順|リンク|説明|
-|---|---|---|
-|1|[評価環境の作成](eval-create-eval-environment.md)|この手順では、ライセンスの試用版ライセンスをMicrosoft 365 Defender。|
-|2|[Id の Defender を有効にする](eval-defender-identity-overview.md)|アーキテクチャ要件を確認し、評価を有効にし、さまざまな攻撃の種類を特定して修復するためのチュートリアルを説明します。|
-|3|[[Defender for Office 365](eval-defender-office-365-overview.md)|アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。 このコンポーネントにはExchange Online Protectionが含まれるので、実際に両方をここで *評価* します。|
-|4|[エンドポイントの Defender を有効にする](eval-defender-endpoint-overview.md)|アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。|
-|5|[クラウド アプリの Microsoft Defender を有効にする](eval-defender-mcas-overview.md)|アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。|
-|6 |[脅威の調査と対応](eval-defender-investigate-respond.md)|攻撃をシミュレートし、インシデント対応機能の使用を開始します。|
-|7 |[試用版を製品版に昇格する](eval-defender-promote-to-production.md)|1 Microsoft 365コンポーネントを 1 つ 1 つ生産に昇格します。|
-||||
+|  シリアル番号   |手順  |説明  |
+|------|---------|---------|
+|1     | [評価環境の作成](eval-create-eval-environment.md)       |この手順では、ライセンスの試用版ライセンスをMicrosoft 365 Defender。         |
+|2     | [Id の Defender を有効にする](eval-defender-identity-overview.md)        | アーキテクチャ要件を確認し、評価を有効にし、さまざまな攻撃の種類を特定して修復するためのチュートリアルを説明します。   |
+|3     | [[Defender for Office 365 ](eval-defender-office-365-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。 このコンポーネントにはExchange Online Protectionが含まれるので、実際に両方をここで *評価* します。      |
+|4     | [エンドポイントの Defender を有効にする ](eval-defender-endpoint-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。         |
+|5     | [クラウド アプリの Microsoft Defender を有効にする](eval-defender-mcas-overview.md)        |  アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。        |
+|6      | [脅威の調査と対応](eval-defender-investigate-respond.md)        |   攻撃をシミュレートし、インシデント対応機能の使用を開始します。      |
+|7      | [試用版を製品版に昇格する](eval-defender-promote-to-production.md)        | 1 Microsoft 365コンポーネントを 1 つ 1 つ生産に昇格します。        |
 
 これは、通常、機能の展開と構成に必要な労力に基づいて、機能の価値を迅速に活用するように設計された一般的に推奨される順序です。 たとえば、Defender for Office 365デバイスを Defender for Endpoint に登録するよりも少ない時間で構成できます。 もちろん、ビジネス ニーズを満たすためにコンポーネントに優先順位を付け、これらを別の順序で有効にする必要があります。
 

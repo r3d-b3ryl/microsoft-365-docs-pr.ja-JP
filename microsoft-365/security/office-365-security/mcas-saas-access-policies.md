@@ -3,7 +3,6 @@ title: SaaS アプリに推奨される Microsoft Defender for Cloud Apps ポリ
 description: Microsoft Defender for Cloud Apps との統合に関する推奨ポリシーについて説明します。
 author: BrendaCarter
 manager: laurawi
-ms.prod: microsoft-365-enterprise
 ms.topic: article
 audience: Admin
 ms.author: bcarter
@@ -15,14 +14,15 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 8d94207be88bd7c9e070057ac1790845a3be17ca
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.prod: m365-security
+ms.openlocfilehash: 95b46e1c92354015ce6f8d9c5b1fa4b6e9642785
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122004"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683321"
 ---
-# <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>SaaS アプリに推奨される Microsoft Defender for Cloud Apps ポリシー
+# <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>推奨される SaaS アプリ用 Microsoft Defender for Cloud Apps ポリシー
 
 Microsoft Defender for Cloud Apps は、Azure AD 条件付きアクセス ポリシーを基に構築され、ダウンロード、アップロード、コピー、貼り付け、印刷のブロックなど、SaaS アプリによる詳細なアクションをリアルタイムで監視および制御できます。 この機能は、企業リソースが管理されていないデバイスやゲスト ユーザーからアクセスされる場合など、固有のリスクを伴うセッションにセキュリティを追加します。
 
@@ -65,9 +65,9 @@ SaaS アプリのコレクション全体のデータを保護するために、
 |特殊なセキュリティ|すべてのデバイスから分類されたラベルが付いたファイルのダウンロードをブロックする (これにより、ブラウザーへのアクセスのみ可能)|
 |||
 
-条件付きアクセス アプリ制御の設定に関するエンドツーエンドの手順については、「Deploy Conditional Access App Control for featured apps」 [を参照してください](/cloud-app-security/proxy-deployment-aad)。 この記事では、SaaS アプリの作成とテストに必要な条件付きアクセス Azure AD手順を説明します。
+条件付きアクセス アプリコントロールを設定する方法については、「Deploy Conditional [Access App Control for featured apps」を参照してください](/cloud-app-security/proxy-deployment-aad)。 この記事では、SaaS アプリの作成とテストに必要な条件付きアクセス Azure AD手順を説明します。
 
-詳細については [、「Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control」を参照してください](/cloud-app-security/proxy-intro-aad)。
+詳細については、「 [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control」を参照してください](/cloud-app-security/proxy-intro-aad)。
 
 ## <a name="tune-protection-for-specific-saas-apps"></a>特定の SaaS アプリの保護を調整する
 
@@ -79,16 +79,16 @@ SaaS アプリのコレクション全体のデータを保護するために、
 - ほとんどアクセスがない国からのアクティビティ
 - 疑わしい IP アドレスからのアクティビティ
 - 不可能な移動
-- 終了したユーザーによって実行されるアクティビティ (IdP AADが必要)
+- 終了したユーザーが実行するアクティビティ (IdP AADが必要)
 - マルウェアの検出
 - 複数回のログイン試行の失敗
 - ランサムウェアのアクティビティ
 - 危険な Oauth アプリ
 - 通常と異なるファイル共有アクティビティ
 
-例を次に示します。 追加のポリシー テンプレートは、定期的に追加されます。 特定のアプリに追加の保護を適用する方法の例については、「接続されているアプリの保護 [」を参照してください](/cloud-app-security/protect-connected-apps)。
+例を次に示します。 追加のポリシー テンプレートは、定期的に追加されます。 特定のアプリに追加の保護を適用する方法の例については、「接続されたアプリの保護 [」を参照してください](/cloud-app-security/protect-connected-apps)。
 
-[Defender for Cloud Apps](/cloud-app-security/protect-box) が Box 環境の保護に役立つ方法は、Box や他のアプリのビジネス データを機密データで保護するのに役立つコントロールの種類を示しています。
+[Defender for Cloud Apps が Box](/cloud-app-security/protect-box) 環境の保護に役立つ方法は、Box や他のアプリのビジネス データを機密データで保護するのに役立つコントロールの種類を示しています。
 
 ## <a name="configure-data-loss-prevention-dlp-to-help-comply-with-data-protection-regulations"></a>データ保護規制に準拠するためにデータ損失防止 (DLP) を構成する
 
@@ -107,4 +107,4 @@ Defender for Cloud Apps は、コンプライアンス規制に対する保護�
 
 ## <a name="next-steps"></a>次の手順
 
-Defender for Cloud Apps の使用の詳細については [、「Microsoft Defender for Cloud Apps」のドキュメントを参照してください](//cloud-app-security/)。
+Defender for Cloud Apps の使用の詳細については、「 [Microsoft Defender for Cloud Apps」のドキュメントを参照してください](//cloud-app-security/)。

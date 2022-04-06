@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: ec4aa28c25982ea81662ff26fa19f615d13cd314
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: b659853d9323b4a1503cd75cff66a83cbd06e85e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465401"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682903"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>チャット、グループ、ファイルTeamsセキュリティ保護に関するポリシーの推奨事項
 
@@ -49,7 +49,7 @@ ms.locfileid: "64465401"
 
 チャット、グループ、およびコンテンツを保護するために、Teamsの ID ポリシーとデバイス アクセス ポリシーから更新するポリシーを次の図に示します。 更新するポリシーごとに、クラウド アプリの割りTeamsサービスと依存サービスが含まれているか確認します。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="サービスとその依存サービスへのアクセスの保護に関するTeamsの概要" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="サービスとその依存サービスへのアクセスを保護するためのTeamsの概要。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
 
 これらのサービスは、クラウド アプリの割り当てに含める依存サービスTeams。
 
@@ -77,7 +77,7 @@ ms.locfileid: "64465401"
 
 参考までに、次の図は、ユーザーがTeamsを示しています。 詳細と図については、「it アーキテ[クト向けMicrosoft Teamsの生産性サービスと関連Microsoft 365を参照してください](../../solutions/productivity-illustrations.md)。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="この図は、Teams、SharePoint、OneDrive for Businessの依存関係Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="ユーザー、Teams、およびSharePoint、OneDrive for BusinessにExchange。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
 
 ## <a name="guest-and-external-access-for-teams"></a>ゲストおよび外部アクセスのTeams
 
@@ -140,7 +140,7 @@ Teamsチャネルや個人用チャットなど、さまざまな場所でアプ
 
 ## <a name="next-steps"></a>次の手順
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="手順 4: クラウド アプリMicrosoft 365ポリシー" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+![手順 4: Microsoft 365 クラウド アプリのポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 次の条件付きアクセス ポリシーを構成する:
 

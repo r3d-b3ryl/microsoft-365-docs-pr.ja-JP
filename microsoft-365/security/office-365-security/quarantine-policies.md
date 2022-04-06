@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5133b98609c29e54361b8fe108e8810858f0d8c8
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 0e5f1ea75a24d84f0b6d6b9e003a0123928ac49a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467117"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682837"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -225,7 +225,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 
    **注**: 新しいポリシーを作成すると、空の **[** 検疫ポリシーの選択] の値は、その評決の既定の検疫ポリシーが使用されます。 後でポリシーを編集すると、前の表で説明したように、空白の値が実際の既定の検疫ポリシー名に置き換えられる。
 
-   :::image type="content" source="../../media/quarantine-tags-in-anti-spam-policies.png" alt-text="スパム対策ポリシーの検疫ポリシーの選択" lightbox="../../media/quarantine-tags-in-anti-spam-policies.png":::
+   ![スパム対策ポリシーの検疫ポリシーの選択。](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 スパム対策ポリシーを作成および変更する手順の詳細については、「EOP でのスパム対策ポリシーの構成」 [を参照してください](configure-your-spam-filter-policies.md)。
 
@@ -237,7 +237,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>"> [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**注**:
+**注意**:
 
 - _PhishSpamAction_ パラメーターと _HighConfidencePhishAction_ パラメーターの既定値は[検疫] なので、PowerShell で新しいスパム フィルター ポリシーを作成するときにこれらのパラメーターを使用する必要はありません。 新しいスパム対策ポリシーまたは既存のスパム対策ポリシーの _SpamAction_、 _HighConfidenceSpamAction_、 _および BulkSpamAction_ パラメーターの場合、検疫ポリシーは値が [検疫] の場合にのみ有効です。
 
@@ -305,7 +305,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
    **注**: 新しいポリシーを作成すると、[検疫ポリシーの適用] の値が空白の場合、そのアクションの既定の検疫ポリシーが使用されます。 後でポリシーを編集すると、前の表で説明したように、空白の値が実際の既定の検疫ポリシー名に置き換えられる。
 
-   :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="フィッシング対策ポリシーの検疫ポリシーの選択" lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
+   ![フィッシング対策ポリシーの検疫ポリシーの選択。](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
 フィッシング対策ポリシーを作成および変更する手順の詳細については、次のトピックを参照してください。
 
@@ -320,7 +320,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 <New-AntiPhishPolicy -Name "<Unique name>" | Set-AntiPhishPolicy -Identity "<Policy name>"> [-EnableSpoofIntelligence $true] [-AuthenticationFailAction Quarantine] [-SpoofQuarantineTag <QuarantineTagName>] [-EnableMailboxIntelligence $true] [-EnableMailboxIntelligenceProtection $true] [-MailboxIntelligenceProtectionAction Quarantine] [-MailboxIntelligenceQuarantineTag <QuarantineTagName>] [-EnableOrganizationDomainsProtection $true] [-EnableTargetedDomainsProtection $true] [-TargetedDomainProtectionAction Quarantine] [-TargetedDomainQuarantineTag <QuarantineTagName>] [-EnableTargetedUserProtection $true] [-TargetedUserProtectionAction Quarantine] [-TargetedUserQuarantineTag <QuarantineTagName>] ...
 ```
 
-**注**:
+**注意**:
 
 - 特定 _の保護\*_ 機能を有効にするには、Enable パラメーターが必要です。 _EnableMailboxIntelligence_ パラメーターと _EnableSpoofIntelligence_ パラメーターの既定値は $true なので、PowerShell で新しいフィッシング対策ポリシーを作成するときにこれらのパラメーターを使用する必要はありません。 その他 _のすべての Enable\*_ パラメーターには、対応するアクション パラメーター$true _\*_ 検疫ポリシーを割り当てる値を設定するために、値が設定されている必要があります。 _*\Action パラメーターに既定値の検疫_ はありません。
 
@@ -385,7 +385,7 @@ Set-AntiPhishPolicy -Identity "Human Resources" -EnableTargetedDomainsProtection
 <New-AntiMalwarePolicy -Name "<Unique name>" | Set-AntiMalwarePolicy -Identity "<Policy name>"> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**注**:
+**注意**:
 
 - 新しいマルウェア対策ポリシーを作成するときに、QuarantineTag パラメーターを使用せずに新しいマルウェア対策ポリシーを作成すると、マルウェア検出の既定の検疫ポリシーが使用されます (AdminOnlyAccessPolicy)。
 
@@ -445,7 +445,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**注**:
+**注意**:
 
 - _Action パラメーターの_ 値 Block、Replace、または DynamicDelivery を指定すると、検疫されたメッセージが発生する可能性があります (値 Allow はメッセージを検疫しません)。 Action パラメーターの _値は、Enable_ パラメーターの`$true`値が .
 
@@ -493,7 +493,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      次のスクリーンショットは、検疫通知のカスタマイズされた表示名を示しています。
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="検疫通知のカスタマイズされた送信者の表示名" lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
+     ![検疫通知でカスタマイズされた送信者の表示名。](../../media/quarantine-tags-esn-customization-display-name.png)
 
    - **免責** 事項: 検疫通知の下部にカスタム免責事項を追加します。 ローカライズされたテキスト、 **組織からの免責事項:** は常に最初に含まれていて、その後に指定したテキストが含まれます。
 
@@ -501,19 +501,19 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      次のスクリーンショットは、検疫通知でカスタマイズされた免責事項を示しています。
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="検疫通知の下部にあるカスタム免責事項" lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
+     ![検疫通知の下部にあるカスタム免責事項。](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
    - **[言語の選択**]: 検疫通知は、受信者の言語設定に基づいて既にローカライズされています。 表示名と免責事項の値には、異なる **言語でカスタマイズ** されたテキスト **を指定** できます。
 
      最初の言語ボックスから少なくとも 1 つの言語を選択し、[追加] を **クリックします**。 複数の言語を選択するには、[追加] をクリック **します** 。 セクションの言語ボックスには、選択した言語すべてが表示されます。
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="検疫ポリシーのグローバル検疫通知設定の 2 番目の言語ボックスで選択した言語" lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
+     ![検疫ポリシーのグローバル検疫通知設定の [2 番目の言語] ボックスで選択した言語。](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
    - **会社のロゴを使用** する: 検疫通知の上部で使用される既定の Microsoft ロゴを置き換える場合は、このオプションを選択します。 これを行う前に、「カスタム ロゴをアップロードするには、組織[](../../admin/setup/customize-your-organization-theme.md)Microsoft 365テーマをカスタマイズする」の指示に従う必要があります。
 
      次のスクリーンショットは、検疫通知のカスタム ロゴを示しています。
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="検疫通知のカスタム ロゴ" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
+     ![検疫通知のカスタム ロゴ。](../../media/quarantine-tags-esn-customization-logo.png)
 
    - **[エンド ユーザーのスパム通知を 1 日ごとに送信する]:** 検疫通知の頻度を選択します。
 
@@ -581,7 +581,7 @@ Set-QuarantinePolicy -Identity "<QuarantinePolicyName>" [Settings]
 
 ## <a name="remove-quarantine-policies-in-the-microsoft-365-defender-portal"></a>ポータルで検疫ポリシーをMicrosoft 365 Defenderする
 
-**注**:
+**注意**:
 
 - AdminOnlyAccessPolicy または DefaultFullAccessPolicy という名前の組み込みの検疫ポリシーを削除できない。 NotificationEnabledPolicy [という名前](#full-access-permissions-and-quarantine-notifications)の組み込みポリシー (持っている場合) とカスタム検疫ポリシーを削除できます。
 - 検疫ポリシーを削除する前に、検疫ポリシーが使用されていないか確認してください。 たとえば、PowerShell で次のコマンドを実行します。
@@ -648,14 +648,14 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
   - **検疫から削除**
   - **差出人をブロックする**
 
-  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-limited-access.png" alt-text="検疫ポリシーがユーザーに制限付きアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン" lightbox="../../media/quarantine-tags-quarantined-message-details-limited-access.png":::
+  ![検疫ポリシーがユーザーに制限付きアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン。](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
 - **検疫通知**: 次のボタンを使用できます。
   - **差出人をブロックする**
   - **リリースの要求**
   - **確認**
 
-  :::image type="content" source="../../media/quarantine-tags-esn-limited-access.png" alt-text="検疫ポリシーがユーザーに制限付きアクセス許可を与える場合、検疫通知で使用可能なボタン" lightbox="../../media/quarantine-tags-esn-limited-access.png":::
+  ![検疫ポリシーがユーザーに制限付きアクセス許可を与える場合、検疫通知で使用可能なボタン。](../../media/quarantine-tags-esn-limited-access.png)
 
 #### <a name="full-access"></a>フル アクセス
 
@@ -668,14 +668,14 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
   - **検疫から削除**
   - **差出人をブロックする**
 
-  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-full-access.png" alt-text="検疫ポリシーがユーザーにフル アクセスのアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン" lightbox="../../media/quarantine-tags-quarantined-message-details-full-access.png":::
+  ![検疫ポリシーがユーザーにフル アクセスのアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン。](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
 - **検疫通知**: 次のボタンを使用できます。
   - **差出人をブロックする**
   - **Release**
   - **確認**
 
-  :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="検疫ポリシーがユーザーにフル アクセスのアクセス許可を与える場合、検疫通知で使用可能なボタン" lightbox="../../media/quarantine-tags-esn-full-access.png":::
+  ![検疫ポリシーがユーザーにフル アクセスのアクセス許可を与える場合、検疫通知で使用可能なボタン。](../../media/quarantine-tags-esn-full-access.png)
 
 ### <a name="individual-permissions"></a>個々のアクセス許可
 

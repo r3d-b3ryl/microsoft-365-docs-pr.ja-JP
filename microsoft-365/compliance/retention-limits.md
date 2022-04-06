@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: アイテム保持ポリシーおよび保持ラベル ポリシーのポリシーおよびポリシーごとの項目の最大数を把握する
-ms.openlocfilehash: 4cd8fc5f141f9e039a271e8534e156e4df0582e9
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 4c175a9e43440c58f74da334a38bc73dae5b76e4
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419129"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595018"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーとアイテム保持ラベルの制限
 
@@ -116,8 +116,16 @@ SharePoint の例は、以下のとおりです。
 
 [コンテンツの処理](disposition.md)については、注意すべきいくつかの制限があります。
 
-- 各保持ラベルのステージごとに 1,000,000 アイテムの処理が保留中
-
-- アイテムが処理されてから最大 7 年間の処理の証明。その期間の保持ラベルごとに 1,000,000 アイテムの制限があります。 
+- テナントあたりの最大数:
     
-レコードとしてマークされているアイテムについて、この制限である 1,000,000 を超える処理の証明が必要な場合は、[Microsoft サポート](../admin/get-help-support.md)に連絡してください。
+    - 1,600 万個のアイテムのうち、処理確認状態が「保留中の処理」または「承認済みの処理」のいずれかであるもの
+        
+    - 1,600 万個のアイテムがレコードとして自動的に処理されるものとしてマークされました (処理確認なし)
+
+- 各保持ラベルの最大数:
+    
+    - 各保持ラベルのステージごとに 1,000,000 アイテムの処理が保留中
+    
+    - アイテムが処理されてから最大 7 年間の処理の証明。その期間の保持ラベルごとに 1,000,000 アイテムの制限があります。 
+        
+        レコードとしてマークされているアイテムについて、この制限である 1,000,000 を超える処理の証明が必要な場合は、[Microsoft サポート](../admin/get-help-support.md)に連絡してください。

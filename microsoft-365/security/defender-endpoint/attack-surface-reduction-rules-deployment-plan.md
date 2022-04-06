@@ -11,15 +11,22 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
+ms.openlocfilehash: e76ca3c1efd3ceb1cbb0f80cba4867988da51e1e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683079"
 ---
-
 # <a name="step-1-plan-asr-rules-deployment"></a>手順 1: ASR ルールの展開を計画する
 
 攻撃表面の縮小 (ASR) ルールをテストする場合は、適切なビジネス ユニットから開始することが重要です。 まず、特定のビジネス ユニットの少人数のグループから始める必要があります。 特定のビジネス ユニット内の一部の ASR チャンピオンを特定し、ASR ルールに関する実際の影響を提供し、実装の調整に役立ちます。
@@ -81,4 +88,4 @@ ASR ルールの状態とアクティビティの監視と通信を担当する�
 
 [手順 3: ASR ルールを実装する](attack-surface-reduction-rules-deployment-implement.md)
 
-[手順 4: ASR ルールを操作する](attack-surface-reduction-rules-deployment-operationalize.md)
+[手順 4: ASR ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md)

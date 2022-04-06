@@ -1,5 +1,5 @@
 ---
-title: 自動調査と対応が、ユーザーの作業でどのようにMicrosoft Defender for Office 365
+title: Microsoft Defender for microsoft Defender での自動調査と対応の仕組みOffice 365
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -16,20 +16,20 @@ ms.collection:
 - m365initiative-defender-office365
 keywords: 自動インシデント対応、調査、修復、脅威保護
 ms.date: 01/29/2021
-description: 調査と応答の自動化機能がネットワークでどのように機能Microsoft Defender for Office 365
+description: Microsoft Defender で自動調査と対応機能がどのように機能Office 365
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 41ba3bcf31725cd5a9fb8b25bc22b6c8bb591363
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 7173d45fed25fe1d0d1e93dbcc259046c1f221cd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569285"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474269"
 ---
-# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>自動調査と対応が、ユーザーの作業でどのようにMicrosoft Defender for Office 365
+# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for microsoft Defender での自動調査と対応の仕組みOffice 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "64569285"
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-セキュリティアラートがトリガーされると、セキュリティ運用チームがこれらのアラートを確認し、組織を保護するための手順を実行する必要があります。 場合によっては、セキュリティ運用チームがトリガーされるアラートの量に圧倒される場合があります。 自動調査と応答 (AIR) 機能は、Microsoft Defender for Office 365役立ちます。
+セキュリティアラートがトリガーされると、セキュリティ運用チームがこれらのアラートを確認し、組織を保護するための手順を実行する必要があります。 場合によっては、セキュリティ運用チームがトリガーされるアラートの量に圧倒される場合があります。 Microsoft Defender の自動調査と応答 (AIR) 機能は、Office 365役立ちます。
 
 AIR を使用すると、セキュリティ運用チームは、より効率的かつ効果的に運用できます。 AIR 機能には、現在存在する既知の脅威に対応する自動調査プロセスが含まれます。 適切な修復アクションは承認を待ち、セキュリティ運用チームが検出された脅威に対応できます。
 
@@ -66,10 +66,10 @@ AIR を使用すると、セキュリティ運用チームは、より効率的�
 次に、脅威の調査と捜索のための手順がいくつか実行されます。
 
 - 同様の電子メール メッセージは、電子メール クラスター検索を介して識別されます。
-- 信号は、他のプラットフォーム (例: Microsoft Defender for Endpoint) [と共有されます](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)。
+- 信号は、Microsoft [Defender for Endpoint などの他のプラットフォームと共有されます](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)。
 - 不審なメール メッセージ内の悪意のあるリンクをユーザーがクリックしたかどうかが判断されます。
-- チェックは、ユーザーによってExchange Online Protection ([EOP](exchange-online-protection-overview.md) [および (Microsoft Defender for Office 365](defender-for-office-365.md))、他の類似したメッセージが報告される場合に実行されます。
-- ユーザーに対する侵害があったかどうかがチェックされます。 このチェックでは、関連するユーザー アクティビティの異常[Office 365、Microsoft Defender for Cloud Apps](/cloud-app-security)、Azure Active Directory信号を[](/azure/active-directory)利用します。
+- チェックは、ユーザーがExchange Online Protection他の同様のメッセージが報告Office 365([EOP](exchange-online-protection-overview.md) および ([Microsoft Defender](defender-for-office-365.md) for Office 365) の間で行われます。
+- ユーザーに対する侵害があったかどうかがチェックされます。 このチェックでは、Office 365[、Microsoft Defender for Cloud Apps](/cloud-app-security)、Azure Active Directory関連するユーザー アクティビティの異常[](/azure/active-directory)を関連付ける信号を活用します。
 
 捜索フェーズでは、リスクと脅威がさまざまな捜索手順に割り当てられます。
 
@@ -77,7 +77,7 @@ AIR を使用すると、セキュリティ運用チームは、より効率的�
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>例: セキュリティ管理者が脅威エクスプローラーから調査を開始する
 
-アラートによってトリガーされる自動調査に加えて、組織のセキュリティ運用チームは、脅威エクスプローラーのビューから自動調査 [をトリガーできます](threat-explorer.md)。 この調査では、アラートも作成され、Microsoft 365 Defenderおよび外部 SIEM ツールは、この調査がトリガーされたと確認できます。
+アラートによってトリガーされる自動調査に加えて、組織のセキュリティ運用チームは、脅威エクスプローラーのビューから自動調査 [をトリガーできます](threat-explorer.md)。  また、この調査によってアラートが作成され、Microsoft 365 Defender外部 SIEM ツールは、この調査がトリガーされたのを確認できます。
 
 たとえば、エクスプローラーでマルウェア ビューを **使用すると** します。 グラフの下のタブを使用して、[メール] タブ **を選択** します。リストで 1 つ以上のアイテムを選択すると、[ **+ アクション] ボタンが** アクティブ化されます。
 
@@ -92,11 +92,11 @@ AIR を使用すると、セキュリティ運用チームは、より効率的�
 
 ## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>例: セキュリティ運用チームは、セキュリティ管理アクティビティ API を使用して AIR を SIEM Office 365統合します。
 
-AIR 機能には、[Microsoft Defender for Office 365監視&](air-view-investigation-results.md)にセキュリティ運用チームが使用できる詳細なレポートが含まれます。 ただし、AIR 機能を他のソリューションと統合できます。 たとえば、セキュリティ情報とイベント管理 (SIEM) システム、ケース管理システム、またはカスタム レポート ソリューションがあります。 これらの種類の統合は、管理アクティビティ [API Office 365使用して実行できます](/office/office-365-management-api/office-365-management-activity-api-reference)。
+Microsoft Defender for microsoft Defender for Office 365には、セキュリティ&チーム[](air-view-investigation-results.md)が脅威の監視と対処に使用できる詳細なレポートが含まれます。 ただし、AIR 機能を他のソリューションと統合できます。 たとえば、セキュリティ情報とイベント管理 (SIEM) システム、ケース管理システム、またはカスタム レポート ソリューションがあります。 これらの種類の統合は、管理アクティビティ [API Office 365使用して実行できます](/office/office-365-management-api/office-365-management-activity-api-reference)。
 
-たとえば、最近、組織はセキュリティ運用チームが AIR によって既に処理されたユーザーが報告したフィッシングアラートを表示する方法をセットアップしました。 ソリューションは、関連するアラートを組織の SIEM サーバーとそのケース管理システムと統合します。 このソリューションは、セキュリティ運用チームが実際の脅威に時間と労力を集中できるよう、誤検知の数を大幅に削減します。 このカスタム ソリューションの詳細については、「Tech Community ブログ: SOC の有効性を改善する」および「[O365 管理 API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185) Microsoft Defender for Office 365」を参照してください。
+たとえば、最近、組織はセキュリティ運用チームが AIR によって既に処理されたユーザーが報告したフィッシングアラートを表示する方法をセットアップしました。 ソリューションは、関連するアラートを組織の SIEM サーバーとそのケース管理システムと統合します。 このソリューションは、セキュリティ運用チームが実際の脅威に時間と労力を集中できるよう、誤検知の数を大幅に削減します。 このカスタム ソリューションの詳細については、「[Tech Community blog: improve the EFFECTIVENESS of your SOC with Microsoft Defender for Office 365 and the O365 Management API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
-- [概要 AIR の使用](office-365-air.md)
+- [AIR の使用を開始する](office-365-air.md)
 - [保留中または完了した修復アクションの表示](air-review-approve-pending-completed-actions.md)

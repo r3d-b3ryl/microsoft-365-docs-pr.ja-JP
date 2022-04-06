@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 805f857a95fab03f8356c5162db1509122e7250a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 21296ec7993b0d65e509d51f62ddae8f3415945c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680822"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500719"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -77,7 +77,7 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 
 ### <a name="system-requirements"></a>システム要件
 
-- サポートされる Linux サーバー配布と x64 (AMD64/EM64T) バージョン:
+- サポートされている Linux サーバー配布と x64 (AMD64/EM64T) および x86_64バージョン:
 
   - Red Hat Enterprise Linux 6.7 以上
   - Red Hat Enterprise Linux 7.2 以上
@@ -129,19 +129,50 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
+    Red Hat Enterprise Linux 6 および CentOS 6 の場合、サポートされているカーネル バージョンの一覧は次のとおりです。
+       - 6.7 の場合: 2.6.32-573.* 
+       - 6.8 の場合: 2.6.32-642.* 
+       - 6.9 の場合: 2.6.32-696.* 
+       - 6.10: 2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2:
 
-    > [!NOTE]
-    > 新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンは、技術的なアップグレードのサポートのためにのみ提供されます。
+ > [!NOTE]
+ > 新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートのみに縮小されます。 このセクションに記載されているバージョンより古いバージョンは、技術的なアップグレードのサポートのためにのみ提供されます。
 
-  - サポートされている配布の残りの部分では、必要な最小カーネル バージョンは 3.10.0-327 です。
+  バージョンの一覧:
 
-- イベント プロバイダーのメカニズム
-  - Red Hat Enterprise Linux 6 および CentOS 6: `Talpa` カーネル モジュール ベースのソリューション
-  - サポートされている配布の残りの部分については、次の条件を使用します。 `Fanotify`
-    - カーネル `fanotify` オプションを有効にする必要があります
+  - 2.6.32-754.2.1.el6.x86_64 
+  - 2.6.32-754.17.1.el6.x86_64
+  - 2.6.32-754.29.1.el6.x86_64
+  - 2.6.32-754.3.5.el6.x86_64 
+  - 2.6.32-754.18.2.el6.x86_64
+  - 2.6.32-754.29.2.el6.x86_64
+  - 2.6.32-754.6.3.el6.x86_64 
+  - 2.6.32-754.22.1.el6.x86_64
+  - 2.6.32-754.30.2.el6.x86_64
+  - 2.6.32-754.9.1.el6.x86_64 
+  - 2.6.32-754.23.1.el6.x86_64
+  - 2.6.32-754.33.1.el6.x86_64
+  - 2.6.32-754.10.1.el6.x86_64
+  - 2.6.32-754.24.2.el6.x86_64
+  - 2.6.32-754.35.1.el6.x86_64
+  - 2.6.32-754.11.1.el6.x86_64
+  - 2.6.32-754.24.3.el6.x86_64
+  - 2.6.32-754.39.1.el6.x86_64
+  - 2.6.32-754.12.1.el6.x86_64
+  - 2.6.32-754.25.1.el6.x86_64
+  - 2.6.32-754.41.2.el6.x86_64
+  - 2.6.32-754.14.2.el6.x86_64
+  - 2.6.32-754.27.1.el6.x86_64
+  - 2.6.32-754.15.3.el6.x86_64
+  - 2.6.32-754.28.1.el6.x86_64       
 
-      > [!CAUTION]
-      > Linux で Defender for Endpoint を他のベースのセキュリティ ソリューション `fanotify`と並べて実行する方法はサポートされていません。 オペレーティング システムのハングを含む予期しない結果につながる可能性があります。
+
+- 最小カーネル バージョン 3.10.0-327
+
+- カーネル `fanotify` オプションを有効にする必要があります
+
+  > [!CAUTION]
+  > Linux で Defender for Endpoint を他のベースのセキュリティ ソリューション `fanotify`と並べて実行する方法はサポートされていません。 オペレーティング システムのハングを含む予期しない結果につながる可能性があります。
 
 - ディスク領域: 1 GB
 
@@ -193,12 +224,10 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 ****
 
 
-|ドメインリストのスプレッドシート| [説明]|
+|ドメインリストのスプレッドシート| 説明|
 |---|---|
-|商用顧客向け Microsoft Defender for Endpoint URL リスト | 商用顧客向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Gov/GCC/DoD のお客様向け Microsoft Defender for Endpoint URL リスト| Gov/GCC/DoD のお客様向けサービスの場所、地理的な場所、OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
-|
-
+|:::image type="content" source="images/mdatp-urls.png" alt-text="Microsoft Defender for Endpoint URL スプレッドシート" lightbox="images/mdatp-urls.png":::|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> ここにスプレッドシートをダウンロード [します](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)。|
+|||
 
 > [!NOTE]
 > より具体的な URL リストについては、「 [Configure proxy and internet connectivity settings」を参照してください](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
@@ -229,6 +258,6 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 特定のアプリケーションの高い I/O ワークロードでは、Microsoft Defender for Endpoint のインストール時にパフォーマンスの問題が発生する可能性があります。 これには、Jenkins や Jira などの開発者シナリオ用のアプリケーションや、OracleDB や Postgres などのデータベース ワークロードが含まれます。 パフォーマンスの低下が発生した場合は、信頼できるアプリケーションの除外を設定し、一般的な除外の間違いを念頭に置[Microsoft Defender ウイルス対策検討してください](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)。 その他のガイダンスについては、サード パーティ製アプリケーションからのウイルス対策の除外に関するコンサルティング ドキュメントを検討してください。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 - ログ記録、アンインストール、その他のトピックの詳細については、「Resources」を参照 [してください](linux-resources.md)。

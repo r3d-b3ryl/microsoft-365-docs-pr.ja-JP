@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1d39bd46afae270fc7ac2a9fab8b5f4a2b4aaeb2
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: e83400e444d4c8c733bea5552a31954bb019e358
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765986"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474049"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint のパフォーマンスの問題のトラブルシューティング
 
@@ -50,7 +50,8 @@ ms.locfileid: "62765986"
 
     - ユーザー インターフェイスから。 macOS で Microsoft Defender for Endpoint を開き、[設定の管理] **に移動します**。
 
-      ![リアルタイムの保護スクリーンショットを管理します。](images/mdatp-36-rtp.png)
+      :::image type="content" source="images/mdatp-36-rtp.png" alt-text=" [リアルタイム保護の管理] ページ" lightbox="images/mdatp-36-rtp.png":::
+      
 
     - ターミナルから。 セキュリティ上の目的で、この操作には昇格が必要です。
 

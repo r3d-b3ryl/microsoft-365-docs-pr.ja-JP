@@ -19,12 +19,12 @@ description: セキュリティ & コンプライアンス センターで利用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5364733dc6dafb4508ff68447eb0b8af772da359
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 7f7171a7f064b9b5ad83dc21e2369cf2700553c8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466391"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683255"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのスマート レポートと分析情報
 
@@ -41,7 +41,7 @@ ms.locfileid: "64466391"
 
 セキュリティ & コンプライアンス センターで利用可能な監視機能には、コンプライアンスとセキュリティ管理者がセキュリティ攻撃や疑わしいアクティビティの増加など、優先度の高い問題に集中できるスマート レポートと分析情報が含まれます。 ダッシュボードでは、スマート レポートと分析情報は次の図のようになります。
 
-:::image type="content" source="../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png" alt-text="セキュリティ コンプライアンス センターの [レポート] &ダッシュボード" lightbox="../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png":::
+![セキュリティ コンプライアンス センターの [レポート] &ダッシュボード。](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
 
 問題の領域の強調表示に加えて、スマート リポートおよび分析情報にはおすすめ候補が含まれ、データの表示および検索にリンクしてクイック アクションも実行します。 たとえば、組織で突然多数の電子メール メッセージがエンド ユーザーによってスパムとしてマークされている場合は、適切なレベルの保護が行われたか確認するために、スパム対策ポリシーを再検討する必要があります。
 

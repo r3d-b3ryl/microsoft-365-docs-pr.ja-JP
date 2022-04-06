@@ -8,12 +8,12 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e2df92e44b323bd0555407d72ebd48a7e050c9a5
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 98ead1d0bde488cee0b35e11b477ea5fe81fe66e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473917"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683013"
 ---
 # <a name="configure-defender-for-identity-detection-exclusions-in-microsoft-365-defender"></a>[Id 検出の除外対象として Defender を構成する] Microsoft 365 Defender
 
@@ -38,11 +38,11 @@ ms.locfileid: "64473917"
 
 1. [[Microsoft 365 Defender](https://security.microsoft.com/)] で、[id **] 設定** に **移動します**。
 
-   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="[名前] 列の [ID] オプション" lightbox="../../media/defender-identity/settings-identities.png":::
+    ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
 
 1. 次に、左側の **メニューに [** 除外されたエンティティ] が表示されます。
 
-   :::image type="content" source="../../media/defender-identity/excluded-entities.png" alt-text="[除外されたエンティティ] ウィンドウ" lightbox="../../media/defender-identity/excluded-entities.png":::
+    ![除外されたエンティティ。](../../media/defender-identity/excluded-entities.png)
 
 次に、検出ルールによる除外とグローバル除外エンティティの 2 つの方法で除外 **を設定できます**。
 
@@ -50,37 +50,37 @@ ms.locfileid: "64473917"
 
 1. 左側のメニューで、[検出ルール **による除外] を選択します**。 検出ルールの一覧が表示されます。
 
-   :::image type="content" source="../../media/defender-identity/exclusions-by-detection-rule.png" alt-text="左側のウィンドウの [除外されたエンティティ] アイテムの [検出ルールによる除外] オプション" lightbox="../../media/defender-identity/exclusions-by-detection-rule.png":::
+    ![検出ルールによる除外。](../../media/defender-identity/exclusions-by-detection-rule.png)
 
 1. 構成する検出ごとに、次の手順を実行します。
 
     1. ルールを選択します。 検索バーを使用して検出を検索できます。 選択すると、検出ルールの詳細が表示されたウィンドウが開きます。
 
-       :::image type="content" source="../../media/defender-identity/detection-rule-details.png" alt-text="検出ルールの詳細" lightbox="../../media/defender-identity/detection-rule-details.png":::
+        ![検出ルールの詳細。](../../media/defender-identity/detection-rule-details.png)
 
     1. 除外を追加するには、[除外されたエンティティ **] ボタンを選択** し、除外の種類を選択します。 ルールごとに異なる除外エンティティを使用できます。 ユーザー、デバイス、ドメイン、IP アドレスが含まれます。 この例では、[デバイスの除外] と **[IP アドレス** の **除外] の選択肢を選択します**。
 
-       :::image type="content" source="../../media/defender-identity/exclude-devices-or-ip-addresses.png" alt-text="デバイスまたは IP アドレスを除外するオプション" lightbox="../../media/defender-identity/exclude-devices-or-ip-addresses.png":::
+        ![デバイスまたは IP アドレスを除外します。](../../media/defender-identity/exclude-devices-or-ip-addresses.png)
 
     1. 除外の種類を選択した後、除外を追加できます。 開くウィンドウで、除外を追加 **+** するボタンを選択します。
 
-       :::image type="content" source="../../media/defender-identity/add-exclusion.png" alt-text="除外を追加するオプション" lightbox="../../media/defender-identity/add-exclusion.png":::
+        ![除外を追加します。](../../media/defender-identity/add-exclusion.png)
 
     1. 次に、除外するエンティティを追加します。 [ **+ 追加] を** 選択して、エンティティをリストに追加します。
 
-       :::image type="content" source="../../media/defender-identity/add-excluded-entity.png" alt-text="除外するエンティティを追加するオプション" lightbox="../../media/defender-identity/add-excluded-entity.png":::
+        ![除外するエンティティを追加します。](../../media/defender-identity/add-excluded-entity.png)
 
     1. 次に、[ **IP アドレスの除外]** (この例では) を選択して除外を完了します。
 
-       :::image type="content" source="../../media/defender-identity/exclude-ip-addresses.png" alt-text="IP アドレスを除外するオプション" lightbox="../../media/defender-identity/exclude-ip-addresses.png":::
+        ![IP アドレスを除外します。](../../media/defender-identity/exclude-ip-addresses.png)
 
     1. 除外を追加したら、リストをエクスポートするか、[除外されたエンティティ] ボタンに戻って除外 **を削除** できます。 この例では、[デバイスの除外] に **戻っています**。 リストをエクスポートするには、下矢印ボタンを選択します。
 
-       :::image type="content" source="../../media/defender-identity/return-to-exclude-devices.png" alt-text="[デバイスの除外に戻す] オプション" lightbox="../../media/defender-identity/return-to-exclude-devices.png":::
+        ![[デバイスの除外] に戻る。](../../media/defender-identity/return-to-exclude-devices.png)
 
     1. 除外を削除するには、除外を選択し、ごみ箱アイコンを選択します。
 
-       :::image type="content" source="../../media/defender-identity/delete-exclusion.png" alt-text="[除外を削除する] オプション" lightbox="../../media/defender-identity/delete-exclusion.png":::
+        ![除外を削除します。](../../media/defender-identity/delete-exclusion.png)
 
 ## <a name="global-excluded-entities"></a>グローバル除外エンティティ
 
@@ -88,23 +88,23 @@ ms.locfileid: "64473917"
 
 1. 左側のメニューで、[グローバル除外 **エンティティ] を選択します**。 除外できるエンティティのカテゴリが表示されます。
 
-   :::image type="content" source="../../media/defender-identity/global-excluded-entities.png" alt-text="[グローバル除外エンティティ] サブメニュー アイテム" lightbox="../../media/defender-identity/global-excluded-entities.png":::
+    ![グローバル除外エンティティ。](../../media/defender-identity/global-excluded-entities.png)
 
 1. 除外の種類を選択します。 この例では、[ドメインの除外 **] を選択しました**。
 
-   :::image type="content" source="../../media/defender-identity/exclude-domains.png" alt-text="[ドメイン] タブ" lightbox="../../media/defender-identity/exclude-domains.png":::
+    ![ドメインを除外します。](../../media/defender-identity/exclude-domains.png)
 
 1. 除外するドメインを追加できるウィンドウが開きます。 除外するドメインを追加します。
 
-   :::image type="content" source="../../media/defender-identity/add-excluded-domain.png" alt-text="除外するドメインを追加するオプション" lightbox="../../media/defender-identity/add-excluded-domain.png":::
+    ![除外するドメインを追加します。](../../media/defender-identity/add-excluded-domain.png)
 
 1. ドメインがリストに追加されます。 [ **ドメインの除外] を選択** して除外を完了します。
 
-   :::image type="content" source="../../media/defender-identity/select-exclude-domains.png" alt-text="除外するドメインを選択するオプション" lightbox="../../media/defender-identity/select-exclude-domains.png":::
+    ![[除外ドメイン] を選択します。](../../media/defender-identity/select-exclude-domains.png)
 
 1. 次に、すべての検出ルールから除外するエンティティの一覧にドメインが表示されます。 リストをエクスポートするか、エンティティを選択して [削除] **ボタンをクリック** して削除できます。
 
-   :::image type="content" source="../../media/defender-identity/global-excluded-entries-list.png" alt-text="グローバル除外エントリの一覧" lightbox="../../media/defender-identity/global-excluded-entries-list.png":::
+    ![グローバル除外エントリの一覧。](../../media/defender-identity/global-excluded-entries-list.png)
 
 ## <a name="see-also"></a>関連項目
 

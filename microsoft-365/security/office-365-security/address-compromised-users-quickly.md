@@ -13,15 +13,15 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: ''
 ms.date: 06/10/2021
-description: Microsoft Defender for Office 365 プラン 2 の自動調査と対応機能を使用して、侵害されたユーザー アカウントを検出して対処するプロセスをスピードアップする方法について説明します。
+description: Microsoft Defender for Office 365 プラン 2 の自動調査および対応機能を使用して、侵害されたユーザー アカウントを検出して対処するプロセスを高速化する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbc3c6c8a81d59bebbd5272e13e0f96de2257623
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c1488598eb3a198a70997e755fe77a8a0c97e1c0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937690"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474364"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>調査と対応を自動化して、侵害されたユーザー アカウントに対処する
 
@@ -31,7 +31,7 @@ ms.locfileid: "61937690"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-[Microsoft Defender for Office 365プラン 2 には](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)、強力な自動調査と応答[(AIR)](office-365-air.md)機能が含まれています。 このような機能により、セキュリティ運用チームが脅威に対処するために多くの時間と労力を節約できます。 Microsoft は引き続きセキュリティ機能を強化しています。 最近、AIR の機能が強化され、セキュリティが侵害されたユーザー セキュリティ プレイブック (現在プレビュー中) が含まれます。 侵害されたユーザー セキュリティ プレイブックの詳細については、この記事を参照してください。 また、詳細については、[ブログの投稿「Microsoft Defender](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)を使用してユーザーの侵害を検出して対応する時間をOffice 365を参照してください。
+[Microsoft Defender for Office 365プラン 2 には](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)、強力な自動調査と[応答 (AIR](office-365-air.md)) 機能が含まれています。 このような機能により、セキュリティ運用チームが脅威に対処するために多くの時間と労力を節約できます。 Microsoft は引き続きセキュリティ機能を強化しています。 最近、AIR の機能が強化され、セキュリティが侵害されたユーザー セキュリティ プレイブック (現在プレビュー中) が含まれます。 侵害されたユーザー セキュリティ プレイブックの詳細については、この記事を参照してください。 また、詳細については、「[Microsoft Defender](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) を使用してユーザーの侵害を検出して対応する時間をOffice 365を参照してください。
 
 ![侵害されたユーザーの自動調査。](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -62,33 +62,33 @@ ms.locfileid: "61937690"
 - [自動調査の詳細を表示する](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> 次のタスクを実行するには、適切なアクセス許可が必要です。 「AIR [機能を使用するために必要なアクセス許可」を参照してください](office-365-air.md#required-permissions-to-use-air-capabilities)。
+> 次のタスクを実行するには、適切なアクセス許可が必要です。 「 [AIR 機能を使用するために必要なアクセス許可」を参照してください](office-365-air.md#required-permissions-to-use-air-capabilities)。
 
 ### <a name="view-and-investigate-restricted-users"></a>制限付きユーザーの表示と調査
 
-制限付きユーザーの一覧に移動するためのいくつかのオプションがあります。 たとえば、ポータルの [Microsoft 365 Defender] に移動して、グループ&**ユーザー** \> **の確認** \> **を行います**。 次の手順では、アラート ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性があるさまざまな種類のアラートを確認するための良い方法です。
+制限付きユーザーの一覧に移動するためのいくつかのオプションがあります。 たとえば、ポータルの [Microsoft 365 Defender] に移動して、[メール] & **[**\>制限付きユーザー **] を** \> **確認できます**。 次の手順では、アラート ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性があるさまざまな種類のアラートを確認するための良い方法です。
 
-1. [インシデント] Microsoft 365 Defenderを開 <https://security.microsoft.com> き、[インシデント] に移動し、[通知 **&通知] に** \> **移動します**。 または、**[アラート]** ページに直接移動するには、<https://security.microsoft.com/alerts> を使用します。
+1. [インシデントMicrosoft 365 Defender] ポータルを開<https://security.microsoft.com>き、[インシデント] &**に移動** \> **します**。 または、**[アラート]** ページに直接移動するには、<https://security.microsoft.com/alerts> を使用します。
 
-2. [アラート **] ページ** で、期間別に結果をフィルター処理し、[ユーザーが電子メールの送信を制限する] という名前 **のポリシーをフィルター処理します**。
+2. [アラート **] ページ** で、期間別に結果をフィルター処理し、ユーザーが電子メールの送信を制限するという名前 **のポリシーをフィルター処理します**。
 
-   ![制限付きユーザーに対してフィルター処理Microsoft 365 Defenderポータルの [アラート] ページ。](../../media/m365-sc-alerts-page-with-restricted-user.png)
+   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="制限付きユーザーに対してフィルター処理Microsoft 365 Defenderポータルの [アラート] ページ" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
 
-3. 名前をクリックしてエントリを選択すると、メールの送信を制限されたユーザー ページが開き、詳細を確認できます。 [アラートの管理 **] ボタンの横** にある [その他の ![ オプション] アイコンをクリックできます。](../../media/m365-cc-sc-more-actions-icon.png) **その他のオプション** を選択し、[制限付きユーザーの詳細を表示する] を選択して [制限付きユーザー] ページに移動し、制限付きユーザー [を解放できます](removing-user-from-restricted-users-portal-after-spam.md)。
+3. 名前をクリックしてエントリを選択すると、メールの送信を制限されたユーザー ページが開き、詳細を確認できます。 [アラートの管理 **] ボタンの横** にある [その他のオプション] ![アイコンをクリックできます。](../../media/m365-cc-sc-more-actions-icon.png) **その他の** オプションを選択し、[制限付きユーザーの詳細を表示する] を選択して [制限付きユーザー] ページに移動し、制限付きユーザー [を解放できます](removing-user-from-restricted-users-portal-after-spam.md)。
 
-   ![アラート センターから電子メール ページの送信を制限されたユーザー。](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
+  :::image type="content" source="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png" alt-text="[メールの送信を制限するユーザー] ページ" lightbox="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png":::
 
 ### <a name="view-details-about-automated-investigations"></a>自動調査の詳細を表示する
 
-自動調査が開始すると、その詳細と結果をセキュリティ コンプライアンス センター&確認できます。 [脅威管理 **の** \> **調査] に** 移動し、調査を選択して詳細を表示します。
+自動調査が開始すると、その詳細と結果をセキュリティ コンプライアンス センター&確認できます。 [脅威管理 **の調査]** \> **に移動** し、調査を選択して詳細を表示します。
 
-詳細については、「調査の詳細 [を表示する」を参照してください](air-view-investigation-results.md)。
+詳細については、「調査の [詳細を表示する」を参照してください](air-view-investigation-results.md)。
 
 ## <a name="keep-the-following-points-in-mind"></a>以下の点にご注意ください。
 
-- **アラートの上に滞在します**。 ご存知のように、妥協点が検出されなくなるほど、組織、顧客、パートナーに対する広範な影響とコストの可能性が大きくなります。 脅威を軽減するために、特にユーザーのアカウントが侵害された場合は、早期の検出と適切な対応が重要です。
+- **アラートの上に残る**。 ご存知のように、妥協点が検出されなくなるほど、組織、顧客、パートナーに対する広範な影響とコストの可能性が大きくなります。 脅威を軽減するために、特にユーザーのアカウントが侵害された場合は、早期の検出と適切な対応が重要です。
 
-- **オートメーションは、セキュリティ運用チームを支援しますが、置き換えは行ないます**。 調査と対応の自動化機能は、侵害されたユーザーを早期に検出できますが、セキュリティ運用チームは調査と修復を行う必要があります。 これにはいくつかのヘルプが必要ですか? 「アクション [の確認と承認」を参照してください](air-review-approve-pending-completed-actions.md)。
+- **オートメーションは、セキュリティ運用チームを支援しますが、代わるものではありません**。 調査と対応の自動化機能は、侵害されたユーザーを早期に検出できますが、セキュリティ運用チームは調査と修復を行う必要があります。 これにはいくつかのヘルプが必要ですか? 「アクション [の確認と承認」を参照してください](air-review-approve-pending-completed-actions.md)。
 
 - **疑わしいログインアラートを唯一のインジケーターとして使用しない**。 ユーザー アカウントが侵害されると、疑わしいログイン 通知がトリガーされる場合と、トリガーされない場合があります。 アカウントが侵害された後に発生する一連のアクティビティがアラートをトリガーする場合があります。 アラートについて詳しくは、お知りください。 「 [アラート ポリシー」を参照してください](../../compliance/alert-policies.md)。
 

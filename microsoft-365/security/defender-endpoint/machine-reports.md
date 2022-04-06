@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eaa9d05fd62127949e6a0b40de8d42a79c446d4d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bf89c0e57cbe14980b15ecf6f5a88f6db2b83e84
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170548"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474027"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のデバイスの正常性とコンプライアンス レポート
 
@@ -32,11 +32,11 @@ ms.locfileid: "61170548"
 
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-デバイスの状態レポートは、組織内のデバイスに関する高レベルの情報を提供します。 このレポートには、センサーの正常性状態、ウイルス対策の状態、OS プラットフォーム、および Windows 10 (および Windows 11) バージョンを示す傾向情報が含まれています。
+デバイスの状態レポートは、組織内のデバイスに関する高レベルの情報を提供します。 このレポートには、センサーの正常性状態、ウイルス対策の状態、OS プラットフォーム、Windows 10 (および 11 のWindowsが含まれます。
 
 ダッシュボードは、次の 2 つのセクションに構成されます。
 
-:::image type="content" alt-text="デバイス レポートのイメージ。" source="images/device-reports.png" lightbox="images/device-reports.png":::
+:::image type="content" source="images/device-reports.png" alt-text="デバイス レポート" lightbox="images/device-reports.png":::
 
 
 <br>
@@ -76,10 +76,10 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 レポートは、次のデバイス属性を表示するカードで構成されます。
 
-- **正常性状態**: デバイス上のセンサー状態に関する情報を表示し、アクティブなデバイス、通信障害、非アクティブ、またはセンサー データが見られないデバイスの集計ビューを提供します。
+- **正常性状態**: デバイス上のセンサーの状態に関する情報を表示し、アクティブなデバイス、通信障害、非アクティブ、またはセンサー データが見られないデバイスの集約ビューを提供します。
 - **アクティブなデバイスのウイルス対策Windows 10:** デバイスの数とデバイスの状態をMicrosoft Defender ウイルス対策。
-- **OS プラットフォーム**: 組織内に存在する OS プラットフォームの配布を示します。
-- **Windows 10バージョン**: 組織のデバイスとWindows 10の配布を示します。
+- **OS プラットフォーム:** 組織内に存在する OS プラットフォームの配布を示します。
+- **Windows 10バージョン**: 組織のWindows 10デバイスとそのバージョンの配布を示します。
 
 ## <a name="filter-data"></a>データをフィルター処理する
 
@@ -90,10 +90,10 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 > [!NOTE]
 > これらのフィルターは、 **レポート内のすべての** カードに適用されます。
 
-たとえば、アクティブ センサーの正常性状態を持Windows 10デバイスに関するデータを表示するには、次の方法を実行します。
+たとえば、アクティブ センサーの正常性状態を持つWindows 10デバイスに関するデータを表示するには、次の方法を実行します。
 
-1. [ **フィルター] >センサーの正常性状態>アクティブです**。
-2. 次に **、[OS プラットフォーム]** を> Windows 10します。
+1. [ **フィルター] >センサーの正常性状態が [アクティブ>します**。
+2. 次に、[**OS プラットフォーム] > Windows 10**。
 3. **[適用]** を選択します。
 
 ## <a name="related-topic"></a>関連トピック

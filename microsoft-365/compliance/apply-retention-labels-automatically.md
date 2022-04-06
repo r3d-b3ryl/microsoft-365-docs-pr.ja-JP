@@ -1,24 +1,29 @@
 ---
 title: 保持ラベルを自動的に適用してコンテンツを保持または削除する
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - SPO_Content
+- M365-security-compliance
+- SPO_Content
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: 必要なものを保持し、不要なものを削除するのにアイテム保持ポリシーを自動的に適用できるよう、保持ラベルと自動ラベル付けポリシーを作成します。
+ms.openlocfilehash: 2d141ef349c456b9e8397ea1c96a4e450eaa73fc
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500440"
 ---
-
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
@@ -76,7 +81,7 @@ description: 必要なものを保持し、不要なものを削除するのに�
     - Information Governance を使用している場合:
         - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル ポリシー**] タブ > [**自動適用ラベル**]
     
-    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。
+    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合は、まず、**[すべて表示]** を選択します。
 
 2. この自動ラベル付けポリシーに名前と説明を入力して、[**次へ**] を選択します。
 
@@ -146,7 +151,7 @@ SharePoint と OneDrive
 
 ![機密情報の種類によるポリシー テンプレート。](../media/sensitive-info-configuration.png)
 
-機密情報の種類の詳細については、「[機密情報の種類の詳細](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)」を参照してください。 現在、このシナリオでは、[完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)と[ドキュメント フィンガープリンティング](document-fingerprinting.md)はサポートされていません。
+機密情報の種類の詳細については、「[機密情報の種類の詳細](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)」を参照してください。 現在、このシナリオでは、[完全なデータ一致に基づく機密情報の種類](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)と[ドキュメント フィンガープリンティング](document-fingerprinting.md)はサポートされていません。
 
 ポリシー テンプレートを選択すると、すべての種類の機密情報を追加または削除したり、信頼度やインスタンス数を変更したりすることができます。以前のスクリーンショットの例では、これらのオプションを変更し、保持ラベルは次の場合にのみ自動的に適用されます。
   

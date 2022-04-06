@@ -12,8 +12,8 @@
   items:
     - name: ポータル のセキュリティを構成する
       href: m365-lighthouse-configure-portal-security.md
-    - name: 役割の設定
-      href: m365-lighthouse-set-up-roles.md
+    - name: アクセス許可の概要
+      href: m365-lighthouse-overview-of-permissions.md
     - name: 監査ログの確認
       href: m365-lighthouse-review-audit-logs.md
 - name: ベースラインを使用して顧客を保護する
@@ -46,7 +46,7 @@
       href: m365-lighthouse-search-for-users.md
     - name: リスクの高いユーザーの表示と管理
       href: m365-lighthouse-view-manage-risky-users.md
-- name: デバイスを管理する
+- name: デバイスの管理
   items:
     - name: デバイス コンプライアンス ページの概要
       href: m365-lighthouse-device-compliance-page-overview.md

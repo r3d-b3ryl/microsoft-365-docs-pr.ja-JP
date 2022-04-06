@@ -6,21 +6,21 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: hub-page
-ms.service: O365-seccomp
+ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
+ms.prod: m365-security
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft Defender for Office 365 ソリューション試用版のプレイブック。
-ms.openlocfilehash: 6b149f7b3fa218050c37f99f5567fd2658f26bc7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b8a0fedd01a3769f2ccf8952bd9e7bce0974a2f0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375763"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683211"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>試用版プレイブック: Microsoft Defender for Office 365
 
@@ -90,7 +90,7 @@ Defender for Office 365 の「優先アカウント保護」を使用して、�
 
 ### <a name="use-threat-explorer-to-investigate-malicious-email"></a>脅威エクスプローラーを使用して悪質なメールを調査する
 
-Defender for Office 365 を使用すると、組織内のユーザーを危険にさらすアクティビティを調査し、組織を保護するための行動をとることができます。 [脅威エクスプローラー (またはリアルタイム検出)](threat-explorer.md) を使用してこれを実行します。
+Defender for Office 365 を使用すると、組織内のユーザーを危険にさらすアクティビティを調査し、組織を保護するためのアクションを実行できます。これは、[Threat Explorer または (リアルタイム検出)](threat-explorer.md)を使用して行うことができます。
 
 - [配信された疑わしいメールの検索](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): メッセージを見つけて削除したり、悪意のあるメール送信者の IP アドレスを特定したり、さらなる調査のためにインシデントを開始したりすることができます。
 - [配信アクションと場所のチェック](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): このチェックにより、問題のあるメール メッセージの場所を把握することができます。
@@ -122,7 +122,7 @@ Defender for Office 365 のキャンペーン ビューを使用して、組織�
 
 ### <a name="dive-deep-into-data-with-query-based-hunting"></a>クエリベースのハンティングを使用してデータの詳細を理解する
 
-高度なハンティングを使用して、カスタムの検出ルールを記述し、環境内のイベントを予防的に検査し、脅威の指標を検索します。 環境内の生データを探索します。
+高度なハンティングを使用して、カスタムの検出ルールを記述し、環境内のイベントを予防的に検査し、脅威の指標を検索します。環境内のRaw データを調査します。
 
 - [カスタム検出ルールを作成します](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting)。
 - 他のユーザーが作成した[共有クエリにアクセスします](../defender/advanced-hunting-shared-queries.md)。
@@ -142,6 +142,6 @@ Defender for Office 365 の攻撃シミュレーション トレーニングを�
 ## <a name="additional-resources"></a>その他のリソース
 
 - **対話型のガイド**: Defender for Office 365 に慣れていないユーザー向け [対話型のガイド](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365)を確認して、利用を開始する方法を理解します。
-- **Microsoft のドキュメント**: Defender for Office 365 のしくみや、組織に最適な実装方法などの詳細情報を入手します。 [ドキュメント](overview.md)にアクセスします。
+- **Microsoft のドキュメント**: Defender for Office 365 のしくみや、組織に最適な実装方法などの詳細情報を入手します。「[ドキュメント](overview.md)」 の詳細。
 - **含まれるもの**: Office 365 メール セキュリティ機能の完全な一覧と製品レベル別の機能については、「[機能一覧](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability)」をご覧ください。
 - **Defender for Office 365 を選ぶ理由**: [Defender for Office 365 データシート](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy)では、お客様が Microsoft を選ぶ理由のトップ 10 を紹介しています。

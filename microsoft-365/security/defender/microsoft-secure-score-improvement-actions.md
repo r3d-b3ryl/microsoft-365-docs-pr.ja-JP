@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 8991c2aca277d2a08e5f8924a5e5cb354df6dc1f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498643"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569456"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Secure Score を使用してセキュリティの態勢を評価する
 
@@ -38,11 +38,11 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 必要な情報を迅速に見つけるために、Microsoft の改善アクションはグループに整理されています。
 
 - ID (Azure Active Directoryアカウント&ロール)
-- デバイス (Microsoft Defender for Endpoint( [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- アプリ (電子メール アプリとクラウド アプリ(Office 365 Microsoft Defender for Cloud Apps を含む)
+- デバイス (Microsoft Defender for Endpoint Microsoft [Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+- アプリ (電子メール アプリとクラウド アプリ(Office 365およびMicrosoft Defender for Cloud Apps)
 
 >[!NOTE]
->Microsoft Secure Score の最近のリリースでは、スコアリング モデルが改善され、Microsoft Secure Score が一時的に Identity Secure Score および Graph API と互換性がありません。 [詳細の表示](microsoft-secure-score-whats-new.md)
+>Microsoft Secure Score の最近のリリースでは、スコアリング モデルが改善され、Microsoft Secure Score は一時的に Identity Secure Score および Graph API と互換性がありません。 [詳細の表示](microsoft-secure-score-whats-new.md)
 
 Microsoft Secure Score の概要ページで、これらのグループ間でのポイントの分割方法と使用可能なポイントを確認します。 また、合計スコアの全体表示、ベンチマーク比較によるセキュリティで保護されたスコアの履歴傾向、スコアを向上させるために実行できる優先順位付けされた改善アクションを取得できます。
 
@@ -80,9 +80,9 @@ Microsoft Secure Score の概要ページで、これらのグループ間での
 
 この操作を完了するには、いくつかの選択肢があります。
 
-- [ **管理] を** 選択して構成画面に移動し、変更を行います。 その後、アクションが価値のあるポイントを取得し、フライアウトに表示されます。ポイントの更新には通常約 24 時間かかります。
+- [**管理] をMicrosoft 365 Defender** 構成画面に移動し、変更を行います。 その後、アクションが価値のあるポイントを取得し、フライアウトに表示されます。 ポイントの更新には通常約 24 時間かかります。
 
-- [ **共有] を** 選択して、改善アクションへの直接リンクをコピーします。 また、リンクを共有するプラットフォーム (メール、Microsoft Planner などMicrosoft Teams選択できます。
+- [ **共有] を** 選択して、改善アクションへの直接リンクをコピーします。 リンクを共有するプラットフォームを選択して、電子メール、メール、Microsoft Teams、Microsoft Planner。
 
 メモ **を追加** して、進行状況やコメントする他の項目を追跡します。 改善アクションに独自の **タグ** を追加する場合は、それらのタグでフィルター処理できます。
 

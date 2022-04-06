@@ -13,12 +13,13 @@ ms.technology: mdb
 ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: 2e2c12a84e23290592c5b53156b747d39f6a3131
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.collection: M365-security-compliance
+ms.openlocfilehash: bf11ed140d2e0609f2d12d1da3bcc448ff733235
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63524977"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683145"
 ---
 # <a name="set-up-email-notifications"></a>電子メール通知を設定する
 
@@ -47,7 +48,7 @@ ms.locfileid: "63524977"
 
 電子メール通知を設定する場合は、次の表で説明するように、2 つの種類から選択できます。 <br/><br/>
 
-| 通知の種類  | 説明  |
+| 通知の種類  | [説明]  |
 |---------|---------|
 | 脆弱性  | 新しい悪用や脆弱性イベントが検出されると、受信者は電子メールを受信します。 |
 | 脆弱性&警告  | デバイスで脅威が検出されたため、または新しい悪用や脆弱性イベントが検出された場合、受信者は電子メールを受信します。 |

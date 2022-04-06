@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: PowerShell for Microsoft 365 を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。
-ms.openlocfilehash: 40fc030c957fee2d31c18ea95f1939e3d9f0937b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cb546a7e4130509d7acd0021b3cb78df23c1819f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201675"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474474"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>PowerShell を使用して Skype for Business Online を管理する
 
@@ -30,7 +30,10 @@ Skype for Business Online 管理者は、ポリシーの管理を担当します
 ## <a name="before-you-start"></a>始める前に
 
 > [!NOTE]
-> Skype for Business Online Connector は現在、最新の Teams PowerShell モジュールに含まれています。 最新の Teams PowerShell パブリック リリースをご利用の場合は、Skype for Business Online Connector をインストールする必要はありません。
+> Skype for Business Online Connector は現在、最新の Teams PowerShell モジュールに含まれています。 最新の **Teams PowerShell** パブリック リリースをご利用の場合は、Skype for Business Online Connector をインストールする必要はありません。
+
+> [!NOTE]
+> Skype for Business Online 管理者は、PowerShell を使用して **Teams** と **Skype for Business Online** の両方のアプリ ポリシーを管理できます。
 
 [Teams PowerShell モジュール](/microsoftteams/teams-powershell-install)をインストールします。
 

@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: 組織外のユーザーとの共有に影響を与える可能性がある、Microsoft 365 で使用できるゲスト共有設定について説明します。
-ms.openlocfilehash: 2b6aac7a02c6c7c5feda041a2b06147c67dfa285
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9cb6eb52c523bba624af5f830c3c34c4edaf86b8
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316535"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594842"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -149,7 +149,7 @@ Teams のマスター ゲスト アクセスのスイッチである **[Teams �
 
 OneDrive はSharePoint のサイトの階層であるため、組織レベルの共有設定は、他の SharePoint サイトに影響するように OneDrive に直接影響します。
 
-**ナビゲーション:** [SharePoint 管理センター] > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**[共有]**</a>
+**ナビゲーション:** [SharePoint 管理センター] > **[ポリシー]**  > ><a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank"> **[共有]**</a>
 
 ![SharePoint 組織レベルの共有設定のスクリーンショット](../media/external-sharing.png)
 
@@ -160,7 +160,7 @@ OneDrive はSharePoint のサイトの階層であるため、組織レベルの
 
 ### <a name="sharepoint-and-onedrive-advanced-sharing-settings"></a>SharePoint と OneDrive の詳細な共有設定
 
-**ナビゲーション:** [SharePoint 管理センター] > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**[共有]**</a>
+**ナビゲーション:** [SharePoint 管理センター] > **[ポリシー]**  > ><a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank"> **[共有]**</a>
 
 ![SharePoint における組織レベルの追加共有設定のスクリーンショット](../media/external-sharing.png)
 
@@ -177,7 +177,7 @@ OneDrive はSharePoint のサイトの階層であるため、組織レベルの
 
 SharePoint と OneDrive でファイルとフォルダーを共有すると、共有の受信者はファイルまたはフォルダーに直接アクセスできるようになるのではなく、ファイルまたはフォルダーへのアクセス許可のリンクが送信されます。 リンクにはいくつかの種類があり、ユーザーがファイルまたはフォルダーを共有するときに表示される既定のリンクの種類を選択できます。 また、*すべてのユーザー* のリンクのアクセス許可と有効期限のオプションを設定することもできます。
 
-**ナビゲーション:** [SharePoint 管理センター] > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**[共有]**</a>
+**ナビゲーション:** [SharePoint 管理センター] > **[ポリシー]**  > ><a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank"> **[共有]**</a>
 
 ![SharePoint における組織レベルのファイルとフォルダー共有設定のスクリーンショット](../media/sharepoint-organization-files-folders-sharing-settings.png)
 

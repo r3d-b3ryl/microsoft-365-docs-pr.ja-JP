@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 49d6ee473f84b86f17482c00e254e96b64ec0bf7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 727a35b5d5b34fa567b399fcc81ccb0c05ded106
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166400"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500455"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の評価 
 
@@ -45,7 +45,6 @@ ms.locfileid: "61166400"
 
 これらの機能は、攻撃や悪用が組織に感染するのを防ぐのに役立ちます。
 
-- [攻撃表面の縮小を評価する](./evaluate-attack-surface-reduction.md)
 - [エクスプロイト保護の評価](./evaluate-exploit-protection.md)
 - [ネットワーク保護を評価する](./evaluate-exploit-protection.md)
 - [制御されたフォルダー アクセスを評価する](./evaluate-controlled-folder-access.md)

@@ -1,5 +1,5 @@
 ---
-title: ケース スタディ - Contoso 社は、コミュニケーションの管理、変更、およびMicrosoft Teams、Exchangeの不適切なYammer構成します。
+title: ケース スタディ - Contoso は、ユーザー、ユーザー、およびユーザーのコミュニケーションにMicrosoft Teamsテキスト ポリシー Exchange迅速にYammerします。
 description: Contoso 社のケース スタディと、通信コンプライアンス ポリシーを迅速に構成して、Microsoft Teams、Exchange Online、および Yammer の不適切なテキストを監視する方法について説明します。
 f1.keywords:
 - NOCSH
@@ -23,18 +23,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7532051d649be4d0e9320a372c53686879c31972
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 7235bbdfb956369eebe960568921bc4bba86651a
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035500"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595128"
 ---
-# <a name="case-study---contoso-quickly-configures-an-inappropriate-text-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>ケース スタディ - Contoso 社は、コミュニケーションの管理、変更、およびMicrosoft Teams、Exchangeの不適切なYammer構成します。
+# <a name="case-study---contoso-quickly-configures-an-inappropriate-text-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>ケース スタディ - Contoso は、ユーザー、ユーザー、およびユーザーのコミュニケーションにMicrosoft Teamsテキスト ポリシー Exchange迅速にYammerします。
 
-組織内の不適切Microsoft 365メッセージを検出、キャプチャ、および操作することで、コミュニケーション リスクを最小限に抑えるのに役立ちます。 不適切なテキストには、冒とく、脅迫、嫌がらせ、不適切な画像が含まれる場合があります。 事前に定義されたカスタムポリシーを使用すると、指定されたレビュー担当者が調査できるように、ポリシーの一致の確認のために内部および外部の通信をスキャンできます。 レビュー担当者は、組織内のスキャンされた電子メール、Microsoft Teams、Yammer、またはサードパーティの通信を調査し、組織のメッセージ標準に準拠しているか確認するために適切な修復アクションを実行できます。
+組織内の不適切Microsoft 365メッセージを検出、キャプチャ、および処理することで、コミュニケーション リスクを最小限に抑えるのに役立ちます。 不適切なテキストには、冒とく、脅迫、嫌がらせ、不適切な画像が含まれる場合があります。 事前に定義されたカスタムポリシーを使用すると、指定されたレビュー担当者が調査できるように、ポリシーの一致の確認のために内部および外部の通信をスキャンできます。 レビュー担当者は、組織内のスキャンされた電子メール、Microsoft Teams、Yammer、またはサードパーティの通信を調査し、組織のメッセージ標準に準拠しているか確認するために適切な修復アクションを実行できます。
 
-Contoso Corporation は架空の組織で、不適切なテキストを監視するポリシーをすばやく構成する必要があります。 ユーザーは電子メール、Microsoft 365、Yammer Microsoft Teamsサポートを主に使用していますが、職場での嫌がらせに関する会社のポリシーを適用する新しい要件があります。 Contoso IT 管理者とコンプライアンス スペシャリストは、Microsoft 365 を操作する基本知識を持ち、コミュニケーション コンプライアンスを迅速に開始する方法に関するエンドツーエンドのガイダンスを探しています。
+Contoso Corporation は架空の組織で、不適切なテキストを監視するポリシーをすばやく構成する必要があります。 ユーザーは電子メール、Microsoft 365、Microsoft Teams、Yammer のサポートを主に使用していますが、職場での嫌がらせに関する会社のポリシーを適用する新しい要件があります。 Contoso IT 管理者とコンプライアンス スペシャリストは、Microsoft 365 を操作する基本知識を持ち、コミュニケーション コンプライアンスを迅速に開始する方法に関するエンドツーエンドのガイダンスを探しています。
 
 このケース スタディでは、不適切なテキストの通信を監視する通信コンプライアンス ポリシーをすばやく構成するための基本について説明します。 このガイダンスは次のとおりです。
 
@@ -45,7 +45,7 @@ Contoso Corporation は架空の組織で、不適切なテキストを監視す
 
 ## <a name="step-1-planning-for-communication-compliance"></a>手順 1: 通信コンプライアンスの計画
 
-Contoso IT 管理者とコンプライアンス スペシャリストは、Microsoft 365 のコンプライアンス ソリューションに関するオンライン ウェビナーに参加し、コミュニケーション コンプライアンス ポリシーが職場のハラスメントを削減するための更新された企業ポリシー要件を満たすのに役立つと決定しました。 共に、Microsoft Teams で送信されたチャット、Yammer でのプライベート メッセージとコミュニティの会話、および Exchange Online で送信された電子メール メッセージについて、不適切なテキストを監視する通信コンプライアンス ポリシーを作成して有効にする計画を策定しました。 計画には次のものが含まれます:
+Contoso IT 管理者とコンプライアンス スペシャリストは、Microsoft 365 のコンプライアンス ソリューションに関するオンライン ウェビナーに参加し、コミュニケーション コンプライアンス ポリシーが、職場の嫌がらせを減らするための更新された企業ポリシー要件を満たすのに役立つと決定しました。 共に、Microsoft Teams で送信されたチャット、Yammer でのプライベート メッセージとコミュニティの会話、および Exchange Online で送信された電子メール メッセージについて不適切なテキストを監視する通信コンプライアンス ポリシーを作成して有効にする計画を策定しました。 計画には次のものが含まれます:
 
 - 通信コンプライアンス機能へのアクセスが必要な IT 管理者。
 - 通信ポリシーを作成および管理する必要があるコンプライアンス スペシャリスト。
@@ -56,26 +56,21 @@ Contoso IT 管理者とコンプライアンス スペシャリストは、Micro
 
 最初の手順は、Contoso のライセンスにMicrosoft 365コンプライアンス ソリューションのサポートが含まれるか確認します。 通信コンプライアンスにアクセスして使用するには、Contoso の IT 管理者が Contoso に次のいずれかを持っている必要があります。
 
-- Microsoft 365 E5 サブスクリプション (有料または試用版)
-- Microsoft 365 E5 コンプライアンス アドオンが含まれている Microsoft 365 E3 サブスクリプション。
-- Microsoft 365 E5 インサイダー リスク管理アドオンが含まれている Microsoft 365 E3 サブスクリプション。
-- Microsoft 365 A5 サブスクリプション (有料または試用版)
-- Microsoft 365 A5 コンプライアンス アドオンが含まれている Microsoft 365 A3 サブスクリプション。
-- Microsoft 365 A5 インサイダー リスク管理アドオンが含まれている Microsoft 365 A3 サブスクリプション。
-- Microsoft 365 G5 サブスクリプション (有料または試用版)
-- Microsoft 365 G5 コンプライアンス アドオンが含まれている Microsoft 365 G5 サブスクリプション。
-- Microsoft 365 G5 インサイダー リスク管理アドオンが含まれている Microsoft 365 G5 サブスクリプション。
+- Microsoft 365 E5/A5/F5/G5 サブスクリプション (有料または試用版)
+- Microsoft 365 E3/A3/F3/G5 サブスクリプション + Microsoft 365 E5/A5/F5/G5 コンプライアンス アドオン
+- Microsoft 365 E3/A3/F3/G5 サブスクリプション + Microsoft 365 E5/A5/F5/G5 Insider Risk Management アドオン
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
-- Office 365 Advanced Compliance アドオンが含まれている Office 365 Enterprise E3 サブスクリプション (新しいサブスクリプションでは利用できなくなりました。注を参照してください)
+- Office 365 A5 サブスクリプション (有料または試用版)
+- Office 365 Enterprise E3 サブスクリプション + Office 365 Advanced Compliance アドオン (新しいサブスクリプションでは使用できなくなりました。注を参照)
 
-また、通信コンプライアンス ポリシーに含まれるユーザーに上記のいずれかのライセンスが割り当てられている必要があります。
+コミュニケーション コンプライアンス ポリシーに含まれるユーザーには、上記のいずれかのライセンスを割り当てる必要があります。 サブスクリプションとライセンスの詳細については、「セキュリティとコンプライアンスMicrosoft 365[ガイダンス」を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)。
 
 > [!IMPORTANT]
 > Office 365 Advanced Compliance はスタンドアロン サブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れると、お客様は、同じまたは追加のコンプライアンス機能を含む上記のいずれかのサブスクリプションに移行する必要があります。
 
 Contoso IT 管理者は、Contoso のライセンス サポートを確認するために次の手順を実行します。
 
-1. IT 管理者は、アカウントにサインイン <https://admin.microsoft.com> Microsoft 365 管理センター、[課金ライセンス] Microsoft 365 管理センター >  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**に移動します**</a>。
+1. IT 管理者は、アカウントにサインインしMicrosoft 365 管理センター <https://admin.microsoft.com><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**BillingLicenses**</a> に > Microsoft 365 管理センター >移動します。
 
 2. ここでは、通信コンプライアンスのサポートを含む[](communication-compliance-configure.md#subscriptions-and-licensing)ライセンス オプションの 1 つが使用されているのを確認します。
 
@@ -95,10 +90,10 @@ Contoso 社は、コミュニケーション *コンプライアンス役割グ�
 | **コミュニケーション コンプライアンス調査担当者** | このグループを使用して、コミュニケーション コンプライアンス調査担当者として機能するユーザーにアクセス許可を割り当てます。 このロール グループに割り当てられているユーザーは、メッセージのメタデータとコンテンツの表示、追加のレビュー担当者へのエスカレーション、Advanced eDiscovery ケースへのエスカレーション、ユーザーへの通知の送信、アラートの解決を行うことができます。 |
 | **コミュニケーション コンプライアンス閲覧者** | このグループを使用して、コミュニケーション レポートを管理するユーザーにアクセス許可を割り当てます。 このロール グループに割り当てられたユーザーは、コミュニケーション コンプライアンス ホーム ページのすべてのレポート ウィジェットにアクセスでき、すべてのコミュニケーション コンプライアンス レポートを表示できます。 |
 
-1. Contoso IT 管理者は、グローバル管理者アカウント[の](https://compliance.microsoft.com/permissions)資格情報を使用して Microsoft 365 コンプライアンス センター アクセス許可ページにサインインし、管理者アカウントの役割を表示および管理するためのリンクをMicrosoft 365。
-2. [アクセス許可Microsoft 365 コンプライアンス センターアクセス許可] に移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank"></a>し、アクセス許可の役割を表示および管理するリンクをOffice 365。
-3. 管理者が [通信コンプライアンス] 役割 *グループを* 選択し、[役割グループの編集 **] を選択します**。
-4. 管理者は、左側の **ナビゲーション ウィンドウから [メンバー** の選択] を選択し、[編集] を **選択します**。
+1. Contoso IT 管理者は、グローバル[管理者アカウント](https://compliance.microsoft.com/permissions)の資格情報を使用して Microsoft 365 コンプライアンス センター アクセス許可ページにサインインし、このリンクを選択して、Microsoft 365 の役割を表示および管理します。
+2. [アクセス許可Microsoft 365 コンプライアンス センターアクセス許可] に移動し<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank"></a>、アクセス許可の役割を表示および管理するリンクをOffice 365。
+3. 管理者は、[通信コンプライアンス] 役割 *グループを* 選択し、[役割グループの **編集] を選択します**。
+4. 管理者は、左側の **ナビゲーション ウィンドウから [メンバー** の選択] を選択し、[編集] を選択 **します**。
 5. [追加] **を選択** し、通信コンプライアンスの管理、調査、およびアラートの確認を行うすべての Contoso ユーザーのチェック ボックスをオンにします。
 6. 管理者は [追加] を **選択し**、[完了] を **選択します**。
 7. [保存] **を選択** して、Contoso ユーザーを役割グループに追加します。 [閉じる **] を選択** して手順を完了します。
@@ -114,33 +109,33 @@ Contoso 社は、コミュニケーション *コンプライアンス役割グ�
 
 ### <a name="starting-directly-from-the-communication-compliance-solution"></a>コミュニケーション コンプライアンス ソリューションから直接開始する
 
-ソリューションにアクセスする最も簡単な方法は、コミュニケーション コンプライアンス ( ) ソリューションに **直接** <https://compliance.microsoft.com/supervisoryreview> サインインする方法です。 このリンクを使用すると、Contoso IT 管理者とコンプライアンス スペシャリストがコミュニケーション コンプライアンスの概要ダッシュボードに移動し、アラートの状態をすばやく確認し、定義済みのテンプレートから新しいポリシーを作成できます。
+ソリューションにアクセスする最も簡単な方法は、コミュニケーション **コンプライアンス (**<https://compliance.microsoft.com/supervisoryreview>) ソリューションに直接サインインする方法です。 このリンクを使用すると、Contoso IT 管理者とコンプライアンス スペシャリストがコミュニケーション コンプライアンスの概要ダッシュボードに移動し、アラートの状態をすばやく確認し、定義済みのテンプレートから新しいポリシーを作成できます。
 
 ![コミュニケーション コンプライアンスの概要。](../media/communication-compliance-case-overview.png)
 
 ### <a name="starting-from-the-microsoft-365-compliance-center"></a>最初のMicrosoft 365 コンプライアンス センター
 
-Contoso IT 管理者とコンプライアンス スペシャリストが通信コンプライアンス ソリューションにアクセスするためのもう 1 つの簡単な方法は、管理者に直接サインイン[Microsoft 365 コンプライアンス センター。](https://compliance.microsoft.com) サインイン後にすべてのコンプライアンス ソリューションを表示し、開始するには、**すべてを表示** を選択して、**通信コンプライアンス** ソリューションを選択すれば開始します。
+Contoso IT 管理者とコンプライアンス スペシャリストが通信コンプライアンス ソリューションにアクセスするもう 1 つの簡単[な方法](https://compliance.microsoft.com)は、管理者に直接サインインMicrosoft 365 コンプライアンス センター。 サインイン後にすべてのコンプライアンス ソリューションを表示し、開始するには、**すべてを表示** を選択して、**通信コンプライアンス** ソリューションを選択すれば開始します。
 
 ![コンプライアンス センター。](../media/communication-compliance-case-center.png)
 
 ### <a name="starting-from-the-microsoft-365-solution-catalog"></a>ソリューション カタログMicrosoft 365開始
 
-Contoso の IT 管理者とコンプライアンス スペシャリストは、ソリューション カタログを選択して、通信コンプライアンス ソリューションMicrosoft 365選択できます。 左側のナビゲーション **の [****ソリューション]** セクションで [カタログ] を選択すると、Microsoft 365 コンプライアンス センターコンプライアンス ソリューションのすべての一覧が表示Microsoft 365開きます。 [Insider リスク管理] セクション **までスクロール** ダウンすると、Contoso IT 管理者は [通信コンプライアンス] を選択して開始できます。 Contoso IT 管理者は、ナビゲーションコントロールで [表示] を使用して、通信コンプライアンス ソリューションを左側のナビゲーション ウィンドウにピン留めして、今後サインインするときにすばやくアクセスできます。
+Contoso IT 管理者とコンプライアンス スペシャリストは、ソリューション カタログから [通信コンプライアンス] ソリューションにアクセスMicrosoft 365選択できます。 左側のナビゲーション **の [****ソリューション]** セクションで [カタログ] を選択すると、Microsoft 365 コンプライアンス センターコンプライアンス ソリューションのすべての一覧が表示Microsoft 365開きます。 [Insider リスク管理] セクション **までスクロール** ダウンすると、Contoso IT 管理者は [通信コンプライアンス] を選択して開始できます。 Contoso IT 管理者は、ナビゲーションコントロールで [表示] を使用して、通信コンプライアンス ソリューションを左側のナビゲーション ウィンドウにピン留めして、今後サインインするときにすばやくアクセスできます。
 
 ![ソリューション カタログ。](../media/communication-compliance-case-solution.png)
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>最初のMicrosoft 365 管理センター
 
-Microsoft 365 管理センター から開始するときに通信コンプライアンスにアクセスするには、Contoso IT 管理者とコンプライアンス スペシャリストが Microsoft 365 管理センター にサインインします[( https://admin.microsoft.com) ](https://admin.microsoft.com)および[Microsoft 365 コンプライアンス センター [](https://compliance.microsoft.com)
+Contoso IT 管理者とコンプライアンス スペシャリストは、Microsoft 365 管理センター から開始するときに通信コンプライアンスにアクセスするには、Microsoft 365 管理センター にサインインします [(https://admin.microsoft.com)](https://admin.microsoft.com)および[Microsoft 365 コンプライアンス センター [](https://compliance.microsoft.com)
 
 ![通信コンプライアンス リンク。](../media/communication-compliance-case-compliance-link.png)
 
-このアクションでは、Office 365 **セキュリティ** とコンプライアンス センターが開き、ページの上部にあるバナーにMicrosoft 365 コンプライアンス センターリンクを選択する必要があります。
+このアクションでは、**Office 365セキュリティ** とコンプライアンス センターが開き、ページの上部にあるバナー Microsoft 365 コンプライアンス センターリンクを選択する必要があります。
 
 ![Office 365コンプライアンス センター。](../media/communication-compliance-case-scc.png)
 
-Contoso IT **管理者は**、Microsoft 365 コンプライアンス センターソリューションの完全な一覧を表示するには、[すべて表示] を選択します。
+Contoso **IT 管理者は** Microsoft 365 コンプライアンス センター、コンプライアンス ソリューションの完全な一覧を表示するには、[すべて表示] を選択します。
 
 ![通信コンプライアンス メニュー。](../media/communication-compliance-case-show-all.png)
 
@@ -162,7 +157,7 @@ Contoso IT 管理者は、[詳しい手順](turn-audit-log-search-on-or-off.md) 
 
 コミュニケーションコンプライアンスでは、組織Yammerテナントがネイティブ モードでプライベート メッセージやパブリック コミュニティの会話で不適切なテキストを監視する必要があります。
 
-Contoso IT 管理者は[、「Microsoft 365](/yammer/configure-your-yammer-network/overview-native-mode)の Yammer ネイティブ モードの概要」の記事の情報を確認し、「Microsoft 365 のネイティブ モード用[に Yammer](/yammer/configure-your-yammer-network/native-mode)ネットワークを構成する」の「移行ツールを実行する」の手順に従います。
+Contoso IT 管理者は、「[Microsoft 365 の Yammer](/yammer/configure-your-yammer-network/overview-native-mode) ネイティブ モードの概要」の記事の情報を確認し、「Microsoft 365 のネイティブ モード用に Yammer ネットワークを構成する」の「移行ツールを実行する」の手順に[従](/yammer/configure-your-yammer-network/native-mode)ってください。
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>範囲内のユーザーグループの設定
 
@@ -170,25 +165,25 @@ Contoso コンプライアンス スペシャリストは、不適切なテキ�
 
 すべての Contoso ユーザーを含める新しいグループを作成する必要があります。そのため、次の手順を実行します。
 
-1. Contoso IT 管理者は、IT 管理者が管理者にサインインMicrosoft 365 管理センター [グループグループに移動 https://admin.microsoft.com) Microsoft 365 管理センター >](https://admin.microsoft.com)  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**移動します**</a>。
-2. [グループの **追加] を選択** し、ウィザードを完了して新しいグループまたは配布 *Microsoft 365を**作成します*。
+1. Contoso IT 管理者は、管理者にサインインします [(Microsoft 365 管理センター GroupsGroupshttps://admin.microsoft.com)](https://admin.microsoft.com) Microsoft 365 管理センター >**移動** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**します**</a>。
+2. [グループの **追加] を選択** し、ウィザードを完了して新しいグループまたは配布Microsoft 365 *作成**します*。
 
     ![グループ](../media/communication-compliance-case-all-employees.png)
 
-3. 新しいグループの作成後、Contoso ユーザー全員を新しいグループに追加する必要があります。 管理者センターを開 **Exchange** [ https://outlook.office365.com/ecp) (](https://outlook.office365.com/ecp)および管理センター **の受信者グループExchange**  >  **に**  >  <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**移動します**</a>。 Contoso IT 管理者は、[メンバーシップ] 領域と、作成した新しい [すべての従業員] グループを選択し、[編集] コントロールを選択して、ウィザードの新しいグループにすべての Contoso ユーザーを追加します。
+3. 新しいグループの作成後、Contoso ユーザー全員を新しいグループに追加する必要があります。 管理者センターを **Exchange開き**[、https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp)管理 **センターrecipientsGroups** >  >  にExchange <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**移動します**</a>。 Contoso IT 管理者は、[メンバーシップ] 領域と、作成した新しい [すべての従業員] グループを選択し、[編集] コントロールを選択して、ウィザードの新しいグループにすべての Contoso ユーザーを追加します。
 
-    ![Exchange管理センター。](../media/communication-compliance-case-eac.png)
+    ![Exchange 管理センター。](../media/communication-compliance-case-eac.png)
 
 ### <a name="creating-the-policy-to-monitor-for-inappropriate-text"></a>不適切なテキストを監視するポリシーの作成
 
 すべての前提条件が完了すると、IT 管理者と Contoso のコンプライアンス スペシャリストは、不適切なテキストを監視するために通信コンプライアンス ポリシーを構成する準備が整いました。 新しい不適切なテキスト ポリシー テンプレートを使用して、このポリシーの構成は簡単かつ迅速です。
 
-1. Contoso IT 管理者およびコンプライアンス スペシャリストが **Microsoft 365 コンプライアンスセンター** にサインインし、左側のナビゲーション ウィンドウから **通信コンプライアンス** を選択します。 この操作により、通信コンプライアンス ポリシー テンプレートのクイック リンクを含む **概要** ダッシュボードが開きます。 [不適切なテキスト **テンプレートの監視] を選択するには** 、テンプレートの [開始する **]** を選択します。
+1. Contoso IT 管理者およびコンプライアンス スペシャリストが **Microsoft 365 コンプライアンスセンター** にサインインし、左側のナビゲーション ウィンドウから **通信コンプライアンス** を選択します。 この操作により、通信コンプライアンス ポリシー テンプレートのクイック リンクを含む **概要** ダッシュボードが開きます。 [不適切なテキスト **テンプレートの監視] を選択** するには、テンプレートの **概要を選択** します。
 
     ![通信コンプライアンスの不適切なテキスト テンプレート。](../media/communication-compliance-case-template.png)
 
 2. ポリシー テンプレート ウィザードでは、Contoso IT 管理者およびコンプライアンス スペシャリストが協働して、 **ポリシー名**、**ユーザーまたは監督対象のグループ** および **レビュー担当者** の3つの必要なフィールドを完了します。
-3. ポリシーウィザードには、既にポリシーの名前が提案されているので、IT 管理者およびコンプライアンス スペシャリストが、提案された名前を保持し、残りのフィールドにフォーカスします。 [監視する *ユーザー* またはグループ]フィールドの [すべてのユーザー] グループを選択し、[レビュー担当者] フィールドのポリシー通知を調査して修復するコンプライアンス スペシャリスト **を選択** します。 ポリシーを構成し、アラート情報の収集を開始する最後の手順は、[ポリシーの作成] **を選択します**。
+3. ポリシーウィザードには、既にポリシーの名前が提案されているので、IT 管理者およびコンプライアンス スペシャリストが、提案された名前を保持し、残りのフィールドにフォーカスします。 [監視する *ユーザー* またはグループ] フィールドの [すべてのユーザー] グループを選択し、[レビュー担当者] フィールドのポリシー通知を調査して修復するコンプライアンス スペシャリスト **を選択** します。 ポリシーを構成し、アラート情報の収集を開始する最後の手順は、[ポリシーの作成] **を選択します**。
 
     ![通信コンプライアンスの不適切なテキスト ウィザード。](../media/communication-compliance-case-wizard.png)
 
@@ -196,4 +191,4 @@ Contoso コンプライアンス スペシャリストは、不適切なテキ�
 
 不適切なテキストを監視する通信コンプライアンス ポリシーが構成されたので、Contoso コンプライアンス スペシャリストの次の手順では、ポリシーによって生成されたアラートを調査して修復します。 ポリシーによって、すべての通信ソース チャネルの通信を完全に処理し、警告が **通知ダッシュボード** に表示されるようになるには、最大で24時間かかります。
 
-アラートが生成されると、Contoso コンプライアンススペシャリストはワークフローの[](communication-compliance-investigate-remediate.md)指示に従って不適切なテキストの問題を調査し、修復します。
+アラートが生成されると、Contoso コンプライアンススペシャリストはワークフローの指示[](communication-compliance-investigate-remediate.md)に従って不適切なテキストの問題を調査し、修復します。

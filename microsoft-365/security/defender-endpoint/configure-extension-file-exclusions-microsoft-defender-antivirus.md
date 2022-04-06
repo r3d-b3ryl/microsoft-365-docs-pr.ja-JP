@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: da5add0e1f37a813e6962accbc391be6efba1cb1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9a67b05f089fd25e26f22508cbedb8f4b3ce086a
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472993"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595084"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -36,12 +36,12 @@ ms.locfileid: "64472993"
 - [プロセスによって開くファイルの除外](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策エンドポイントの検出と応答 [(EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)、攻撃表面縮小 [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) ルール、フォルダー アクセスの制御など、他の Microsoft Defender for Endpoint 機能には適用されません。[](/microsoft-365/security/defender-endpoint/controlled-folders) この記事で説明する方法を使用して除外するファイルは、アラートや他の検出EDRトリガーできます。
-> ファイルを広範囲に除外するには、それらを Microsoft Defender for Endpoint カスタム インジケーターに [追加します](/microsoft-365/security/defender-endpoint/manage-indicators)。
+> Microsoft Defender ウイルス対策除外は、[エンドポイントでの検出と対応 (EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)、攻撃表面縮小 [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) ルール、フォルダー アクセスの制御など、他の Microsoft Defender for Endpoint 機能には[適用されません](/microsoft-365/security/defender-endpoint/controlled-folders)。 この記事で説明する方法を使用して除外するファイルは、アラートや他の検出EDRトリガーできます。
+> ファイルを大まかに除外するには、カスタム インジケーター Microsoft Defender for Endpoint[追加します](/microsoft-365/security/defender-endpoint/manage-indicators)。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-除外 [リストを定義する前に、「除外を](configure-exclusions-microsoft-defender-antivirus.md) 定義するための推奨事項」を参照してください。
+除外[リストおすすめ定義する前に、「](configure-exclusions-microsoft-defender-antivirus.md)除外の定義」を参照してください。
 
 ## <a name="exclusion-lists"></a>除外リスト
 
@@ -52,8 +52,7 @@ ms.locfileid: "64472993"
 >
 > 自動除外は、ユーザーおよびWindows Server 2016にのみ適用されます。 これらの除外は、アプリと PowerShell のWindows セキュリティ表示されません。
 
-次の表に、ファイル拡張子とフォルダーの場所に基づく除外の例を示します。 
-<br/><br/>
+次の表に、ファイル拡張子とフォルダーの場所に基づく除外の例を示します。
 
 |除外|例|除外リスト|
 |---|---|---|
@@ -77,7 +76,7 @@ ms.locfileid: "64472993"
 
 - 除外は、スケジュールされたスキャン[、](scheduled-catch-up-scans-microsoft-defender-antivirus.md)[オンデマンド](run-scan-microsoft-defender-antivirus.md) スキャン、リアルタイム保護に[](configure-real-time-protection-microsoft-defender-antivirus.md)適用されますが、Defender for Endpoint 全体には適用されません。 Defender for Endpoint 全体で除外を定義するには、カスタム インジケーター [を使用します](manage-indicators.md)。
 
-- 既定では、リストに対して行われたローカルの変更 (PowerShell および WMI による変更を含む管理者特権を持つユーザー) は、グループ ポリシー、Configuration Manager、Intune によって定義 (展開) されたリストと結合されます。 グループ ポリシーの一覧は、競合がある場合に優先されます。 さらに、グループ ポリシーで行われた除外リストの変更は、アプリ内Windows セキュリティ[できます](microsoft-defender-security-center-antivirus.md)。
+- 既定では、リストに対して行われたローカルの変更 (PowerShell と WMI で行われた変更を含む管理者特権を持つユーザー) は、グループ ポリシー、Configuration Manager、または Intune によって定義された (展開された) リストと結合されます。 競合グループ ポリシー場合は、このリストが優先されます。 さらに、アプリで行われた除外リストのグループ ポリシーは、アプリWindows セキュリティ[されます](microsoft-defender-security-center-antivirus.md)。
 
 - ローカルの変更による管理展開設定の上書きを許可するには、ローカルおよびグローバルに定義された除外リストを結合する方法 [を構成します](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists)。
 
@@ -85,25 +84,25 @@ ms.locfileid: "64472993"
 
 複数の方法から選択して、ユーザーの除外を定義Microsoft Defender ウイルス対策。
 
-### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Intune を使用してファイル名、フォルダー、またはファイル拡張子の除外を構成する
+### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>ファイルIntune、フォルダー、またはファイル拡張子の除外を構成するには、次の手順を使用します。
 
 次の記事をご覧ください。
 
 - [Microsoft Intune でデバイスの制限設定を構成する](/intune/device-restrictions-configure)
-- [Microsoft Defender ウイルス対策 Intune のデバイス制限Windows 10設定](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+- [Microsoft Defender ウイルス対策のデバイス制限設定Windows 10設定Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
-### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Configuration Manager を使用してファイル名、フォルダー、またはファイル拡張子の除外を構成する
+### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>ファイルConfiguration Manager、フォルダー、またはファイル拡張子の除外を構成するには、次の手順を使用します。
 
 詳細[については、「マルウェア対策ポリシーを作成](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)して展開する方法: 除外設定」を参照Microsoft エンドポイント マネージャー (現在のブランチ)。
 
-### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>グループ ポリシーを使用してフォルダーまたはファイル拡張子の除外を構成する
+### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>フォルダーグループ ポリシーファイル拡張子の除外を構成するには、次の手順を使用します。
 
 > [!NOTE]
 > ファイルへの完全修飾パスを指定すると、そのファイルだけが除外されます。 フォルダーが除外で定義されている場合、そのフォルダーの下のすべてのファイルとサブディレクトリは除外されます。
 
 1. グループ ポリシー管理コンピューターで、[[グループ ポリシー管理コンソール]](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) を開き、構成するグループ ポリシー オブジェクトを右クリックして、**[編集]** をクリックします。
 
-2. グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動し、[** 管理 **用テンプレート] を選択します**。
+2. [管理エディター **グループ ポリシーコンピューター** の構成] に移動 **し、[** 管理用 **テンプレート] を選択します**。
 
 3. ツリーを展開して、**Windows除外** \> **Microsoft Defender ウイルス対策** \> **します**。
 
@@ -111,10 +110,10 @@ ms.locfileid: "64472993"
     1. オプションを [有効] に **設定します**。
     2. [オプション] **セクションで** 、[表示] を **選択します**。
     3. [値名] 列の下の各フォルダーを独自 **の行に指定** します。
-    4. ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。 
+    4. ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。
     5. [値 **] 列に「0****」と入力** します。
 
-5. [**OK**] を選択します。
+5. その後で、**[OK]** を選択します。
 
 6. [拡張機能 **の除外] 設定を** 開いて編集し、除外を追加します。
     1. オプションを [有効] に **設定します**。
@@ -122,7 +121,7 @@ ms.locfileid: "64472993"
     3. [値名] 列の下に、それぞれのファイル拡張子 **を独自の行に入力** します。
     4. [値 **] 列に「0****」と入力** します。
 
-7. [**OK**] を選択します。
+7. その後で、**[OK]** を選択します。
 
 <a id="ps"></a>
 
@@ -138,8 +137,6 @@ PowerShell を使用して、拡張子、場所、またはファイル名に基
 
 次の表に、 `<cmdlet>` PowerShell コマンドレットの部分で使用できるコマンドレットを示します。
 
-<br/><br/>
-
 |構成アクション|PowerShell コマンドレット|
 |:---|:---|
 |リストを作成または上書きする|`Set-MpPreference`|
@@ -147,8 +144,6 @@ PowerShell を使用して、拡張子、場所、またはファイル名に基
 |リストからアイテムを削除する|`Remove-MpPreference`|
 
 次の表に、 `<exclusion list>` PowerShell コマンドレットの部分で使用できる値を示します。
-
-<br/><br/>
 
 |除外の種類|PowerShell パラメーター|
 |---|---|
@@ -225,8 +220,6 @@ Set **、****Add**、**Remove** の使用は、PowerShell の対応するユー�
 
 次の表に、システム アカウント環境変数の一覧と説明を示します。
 
-<br/><br/>
-
 |このシステム環境変数...|リダイレクト先|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -296,14 +289,14 @@ Set **、****Add**、**Remove** の使用は、PowerShell の対応するユー�
 
 - [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
-- MpCmdRun
-- PowerShell
-- [Windows セキュリティアプリ](microsoft-defender-security-center-antivirus.md)
+- [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
+- [PowerShell](/powershell/module/defender)
+- [Windows セキュリティ アプリを開きます。](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> グループ ポリシーで行われた除外リストの変更 **は、** アプリ内のリストに [Windows セキュリティされます](microsoft-defender-security-center-antivirus.md)。
+> アプリで行われた除外リストグループ ポリシー **は、** アプリのリストに [Windows セキュリティされます](microsoft-defender-security-center-antivirus.md)。
 >
-> アプリで行われたWindows セキュリティ **グループ** ポリシー の一覧には表示されない。
+> アプリで行われた変更Windows セキュリティ **リスト** には表示グループ ポリシーされます。
 
 PowerShell を使用する場合は、次の 2 つの方法でリストを取得できます。
 
