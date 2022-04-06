@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Identity sensor health and settings in <DICT__Microsoft⚐365⚐Defender>Microsoft 365 Defender</DICT__Microsoft⚐365⚐Defender>
-description: Microsoft Defender for Identity センサーを構成し、ユーザーの正常性を監視する方法についてMicrosoft 365 Defender
+title: Microsoft Defender for Identity sensor health and settings in Microsoft 365 Defender
+description: Microsoft Defender for Identity センサーを構成し、その正常性を監視する方法については、Microsoft 365 Defender
 ms.date: 06/07/2021
 ms.topic: how-to
 author: dcurwin
@@ -8,28 +8,29 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 936b14ceaa5f80e9371e776727bbb5304c60590d
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.collection: M365-security-compliance
+ms.openlocfilehash: f55cb36d9960fef2da977a2c50ebab5a9e0e9122
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963181"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682022"
 ---
-# <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender for Identity sensor health and settings in <DICT__Microsoft⚐365⚐Defender>Microsoft 365 Defender</DICT__Microsoft⚐365⚐Defender>
+# <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender for Identity sensor health and settings in Microsoft 365 Defender
 
 **適用対象:**
 
 - Microsoft 365 Defender
 - Defender for Identity
 
-この記事では、Microsoft [Defender for Identity センサー](/defender-for-identity)を構成および監視する方法について説明Microsoft 365 Defender。 [](/microsoft-365/security/defender/overview-security-center)
+この記事では、Microsoft [Defender for Identity センサー](/defender-for-identity)を構成および監視する方法について説明[します。Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center)。
 
 >[!IMPORTANT]
->Id ポータルの Defender の場所Microsoft 365 Defender一部のオプションと詳細が変更されました。 使い慣れた機能と新機能の両方を見つける場所については、以下の詳細をお読みください。
+>Id ポータルの Defender Microsoft 365 Defenderの場所から、一部のオプションと詳細が変更されました。 使い慣れた機能と新機能の両方を見つける場所については、以下の詳細をお読みください。
 
 ## <a name="view-defender-for-identity-sensor-settings-and-status"></a>Id センサーの設定と状態に対する Defender の表示
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">[Microsoft 365 Defender]</a>で、[id]**設定** に **移動します**。
+1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>] で、[id **] 設定** に **移動します**。
 
     ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
 
@@ -54,13 +55,13 @@ ms.locfileid: "60963181"
 
     ![問題の詳細。](../../media/defender-identity/issue-details.png)
 
-1. [センサーの管理 **] を選択** すると、ウィンドウが開き、センサーの詳細を構成できます。
+1. [センサーの管理 **] を** 選択すると、ウィンドウが開き、センサーの詳細を構成できます。
 
     ![センサーを管理します。](../../media/defender-identity/manage-sensor.png)
 
     ![センサーの詳細を構成します。](../../media/defender-identity/configure-sensor-details.png)
 
-1. [センサー **] ページで** 、[エクスポート] を選択して、センサーの一覧を.csvファイルに **エクスポートできます**。
+1. [センサー **] ページで** 、[エクスポート] を選択して、センサーの一覧を .csvファイルにエクスポート **できます**。
 
     ![センサーの一覧をエクスポートします。](../../media/defender-identity/export-sensors.png)
 

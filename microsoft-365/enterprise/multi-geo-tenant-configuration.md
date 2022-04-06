@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: この記事では、サテライトの場所を追加する方法と、Microsoft 365 Multi-Geoのテナントを構成する方法について説明します。
-ms.openlocfilehash: 9842ff2295a64f544940f579d732c688735ae341
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2bd0db24b364c642255ef2e902abad0495d24337
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312083"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568880"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo テナントの構成
 
@@ -54,13 +54,13 @@ _Microsoft 365 の複数地域機能_ プランは、ユーザー レベルの�
 
 1. **[閉じる]** を選択します。
 
-テナントのサイズに応じて、プロビジョニングには最大 72 時間かかることがあります。サテライトの場所のプロビジョニングが完了すると、電子メールの確認通知が送信されます。OneDrive 管理センターの **[地理的位置]** タブにある地図上に、新しい地域の場所が青色で表示されているときには、その地域の場所にユーザーの優先されるデータの場所を設定する作業に進めます。 
+テナントのサイズに応じて、プロビジョニングには最大 72 時間かかることがあります。サテライトの場所のプロビジョニングが完了すると、電子メールの確認通知が送信されます。OneDrive 管理センターの **[地理的位置]** タブにある地図上に、新しい地域の場所が青色で表示されているときには、その地域の場所にユーザーの優先されるデータの場所を設定する作業に進めます。
 
 > [!IMPORTANT]
 > 新しいサテライトの場所は、既定の設定でセットアップされます。そのサテライトの場所は、この設定を使用して、ローカルのコンプライアンス ニーズに適合するように構成できます。
 
 ## <a name="setting-users-preferred-data-location"></a>ユーザーの優先されるデータの場所の設定
-<span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
+<span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span>
 
 必要なサテライトの場所を使用可能にすると、適切な優先されるデータの場所を使用するように、ユーザー アカウントを更新できます。ユーザーが中央の場所から移動しない場合でも、すべてのユーザーに対して優先されるデータの場所を設定するようにしてください。
 
@@ -72,7 +72,7 @@ _Microsoft 365 の複数地域機能_ プランは、ユーザー レベルの�
 
 Azure Active Directory (Azure AD) には、クラウドのみのユーザーと同期ユーザーの 2 種類のユーザー オブジェクトがあります。 ユーザーの種類に適した指示に従ってください。
 
-### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Azure AD Connect を使用してユーザーの優先されるデータの場所を同期する 
+### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Azure AD Connect を使用してユーザーの優先されるデータの場所を同期する
 
 会社のユーザーがオンプレミスの Active Directory システムから Azure AD に同期されている場合、彼らの PreferredDataLocation を AD に入力し、Azure AD に同期させる必要があります。
 
@@ -83,21 +83,25 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 > [!IMPORTANT]
 > OneDrive プロビジョニングされていない新しいユーザーの場合は、アカウントにライセンスを与え、ユーザーの PDL が Azure AD に同期された後、ユーザーが OneDrive for Business にログインする前に変更が反映されるまで少なくとも 48 時間待ちます。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
 
-### <a name="setting-preferred-data-location-for-cloud-only-users"></a>クラウド専用ユーザーの優先されるデータの場所を設定する 
+### <a name="setting-preferred-data-location-for-cloud-only-users"></a>クラウド専用ユーザーの優先されるデータの場所を設定する
 
 社内のユーザーがオンプレミスの Active Directory システムから Azure AD に同期されていない場合、つまり、ユーザーが Microsoft 365 または Azure AD で作成されている場合は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用して PDL を設定する必要があります。
 
 このセクションの手順では、[Windows PowerShell モジュール用 Microsoft Azure Active Directory モジュール](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0)が必要です。 このモジュールをすでにインストールしている場合は、必ず最新バージョンに更新してください。
 
-1.  テナントの一連のグローバル管理者の資格情報を使用して、[接続してサインイン](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
+1. テナントの一連のグローバル管理者の資格情報を使用して、[接続してサインイン](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
 
-2.  [Set-MsolUser](/powershell/msonline/v1/set-msoluser) コマンドレットを使用して、ユーザーごとに優先されるデータの場所を設定します。次に、例を示します。
+2. [Set-MsolUser](/powershell/msonline/v1/set-msoluser) コマンドレットを使用して、ユーザーごとに優先されるデータの場所を設定します。次に、例を示します。
 
-    `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
+   ```powershell
+   Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR
+   ```
 
     Get-MsolUser コマンドレットを使用すると、優先されるデータの場所が適切に更新されたことを確認できます。
 
-    `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
+   ```powershell
+   (Get-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation
+   ```
 
 ![set-msoluser を示す PowerShell ウィンドウのスクリーンショット。](../media/multi-geo-tenant-configuration-image3.png)
 
@@ -122,11 +126,8 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 既定では、それらのエントリ ポイントからの検索は、それぞれの検索インデックスが関連する地域の場所に配置されていたとしても、集約された結果を返します。
 
 - OneDrive for Business
-
 - Delve
-
 - SharePoint Home
-
 - 検索センター
 
 さらに、Multi-Geo 検索機能は、SharePoint 検索 API を使用するカスタムの検索アプリケーション用に構成することもできます。
@@ -137,22 +138,22 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 
 以下は、Microsoft 365 Multi-Geo を会社で広く展開する前に、検証のプランに含めることができる基本的なユース ケースです。 これらのテストと会社に関連するその他のユース ケースを完了すると、最初のパイロット グループへのユーザーの追加を開始できます。
 
-**OneDrive for Business**
+**OneDrive for Business**:
 
 Microsoft 365 アプリ起動ツールから OneDrive を選択し、ユーザーの PDL に基づいて、ユーザーの適切な地理的位置に自動的に誘導されることを確認します。 OneDrive for Business により、その場所でプロビジョニングが開始されるはずです。 プロビジョニングが完了したら、ドキュメントのアップロードやダウンロードを試してください。
 
-**OneDrive モバイル アプリ**
+**OneDriveアプリ**:
 
 OneDrive モバイル アプリにテスト用アカウントの資格情報でログインします。 OneDrive for Business のファイルを表示できることと、それらのファイルをモバイル デバイスから操作できることを確認します。
 
-**OneDrive 同期クライアント**
+**OneDrive 同期クライアント**:
 
 ログイン時に、OneDrive 同期クライアントが OneDrive for Business 地域の場所を自動的に検出することを確認します。同期クライアントのダウンロードが必要な場合は、OneDrive ライブラリで **[同期]** をクリックしてください。
 
-**Office アプリケーション**
+**Officeアプリケーション**:
 
-Word などの Office アプリケーションからのログインで OneDrive for Business にアクセスできることを確認します。Office アプリケーションを開いて、[OneDrive – <TenantName>] を選択します。Office によって、OneDrive の場所が検出され、開くことができるファイルが表示されます。
+Word などの Office アプリケーションからのログインで OneDrive for Business にアクセスできることを確認します。Office アプリケーションを開いて、[OneDrive – \<TenantName\>] を選択します。Office によって、OneDrive の場所が検出され、開くことができるファイルが表示されます。
 
-**共有**
+**共有**:
 
 OneDrive ファイルを共有してみます。地域の場所に関係なく、ユーザー選択にすべての SharePoint Online ユーザーが表示されていることを確認します。

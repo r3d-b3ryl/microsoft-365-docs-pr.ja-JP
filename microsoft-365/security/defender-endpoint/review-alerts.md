@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: a156b2a4514c3dfa090bcf43285abfbcfaa1f46e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 91cd06188a8337f3d0df0b9c67d7c98e389e4351
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766970"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466772"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のアラートを確認する
 
@@ -53,19 +53,19 @@ Defender for Endpoint でアラートの名前を選択すると、アラート 
 
 - [防止] : 不審なアクションが回避されました。 たとえば、ファイルがディスクに書き込まれたり、実行された場合などです。
 
-  ![脅威を示すアラート ページが防止されました。](images/detstat-prevented.png)
+  :::image type="content" source="images/detstat-prevented.png" alt-text="脅威の防止を示すページ" lightbox="images/detstat-prevented.png":::
 
 - ブロック: 疑わしい動作が実行され、ブロックされました。 たとえば、プロセスは実行されましたが、その後疑わしい動作が発生したため、プロセスは終了しました。
 
-  ![脅威を示すアラート ページがブロックされました。](images/detstat-blocked.png)
+  :::image type="content" source="images/detstat-blocked.png" alt-text="脅威のブロックを示すページ" lightbox="images/detstat-blocked.png":::
 
 - 検出: 攻撃が検出され、現在もアクティブである可能性があります。
 
-  ![脅威を示すアラート ページが検出されました。](images/detstat-detected.png)
+  :::image type="content" source="images/detstat-detected.png" alt-text="脅威の検出を示すページ" lightbox="images/detstat-detected.png":::
 
 その後、アラートの詳細ウィンドウで自動調査の詳細を確認し、既に実行されたアクションを確認し、推奨されるアクションに関するアラートの説明を読み取ります。
 
-![警告の説明と自動調査セクションが強調表示された詳細ウィンドウのスニペット。](images/alert-air-and-alert-description.png)
+:::image type="content" source="images/alert-air-and-alert-description.png" alt-text="警告の説明と自動調査セクションが強調表示された詳細ウィンドウ" lightbox="images/alert-air-and-alert-description.png":::
 
 アラートが開いた場合に詳細ウィンドウで使用できるその他の情報には、MITRE の手法、ソース、その他のコンテキストの詳細が含まれます。
 
@@ -75,11 +75,11 @@ Defender for Endpoint でアラートの名前を選択すると、アラート 
 
 - **デバイスの** 場合、詳細ウィンドウには、ドメイン、オペレーティング システム、IP など、デバイス自体に関する情報が表示されます。 アクティブな通知と、そのデバイス上のログオンしているユーザーも利用できます。 デバイスを分離したり、アプリの実行を制限したり、ウイルス対策スキャンを実行したりすることで、すぐにアクションを実行できます。 または、調査パッケージを収集したり、自動調査を開始したり、デバイス ページに移動してデバイスの観点から調査することもできます。
 
-   ![デバイスが選択されている場合の詳細ウィンドウのスニペット。](images/device-page-details.png)
+   :::image type="content" source="images/device-page-details.png" alt-text="デバイスが選択されている場合の詳細ウィンドウ" lightbox="images/device-page-details.png":::
 
 - **ユーザーの** 場合、詳細ウィンドウには、ユーザーの SAM 名や SID などの詳細なユーザー情報と、このユーザーが実行するログオンの種類、およびユーザーに関連するアラートとインシデントが表示されます。 [ユーザー ページを *開く]* を選択すると、そのユーザーの視点から調査を続行できます。
 
-   ![ユーザーが選択されている場合の詳細ウィンドウのスニペット。](images/user-page-details.png)
+   :::image type="content" source="images/user-page-details.png" alt-text="ユーザーが選択されている場合の詳細ウィンドウ" lightbox="images/user-page-details.png":::
 
 ## <a name="related-topics"></a>関連項目
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ddb02d67866e675febda59fac15e8e494188a47f
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 05e8fccc200b39a606fa67a857631e215c8d4b1c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302531"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467623"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Microsoft Defender for Endpoint (Linux) でのスキャンのスケジュール設定
 
@@ -27,7 +27,7 @@ ms.locfileid: "61302531"
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-Linux のスキャンを実行するには、「サポートされている [コマンド」を参照してください](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)。
+Linux のスキャンを実行するには、「サポートされる [コマンド」を参照してください](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)。
 
 Linux (および Unix) には、スケジュールされたタスクを実行できる **crontab** (タスク スケジューラと同様) というツールがあります。
 
@@ -53,7 +53,7 @@ sudo crontab -l > /var/tmp/cron_backup_200919.dat
 ```
 
 > [!NOTE]
-> ここで、200919 == YRMMDD
+> ここで200919 == YRMMDD
 
 > [!TIP]
 > 編集または削除する前に、この操作を行います。
@@ -88,14 +88,14 @@ CRON_TZ=America/Los_Angeles
 
 "Esc" を押す
 
-二重引用符 `:wq` を付けずに""と入力します。
+二重引用符を`:wq`付けずに「」と入力します。
 
 > [!NOTE]
 > w == 書き込み、q == quit
 
 cron ジョブを表示するには、 `sudo crontab -l`
 
-:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp。":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="Linux mdatp ページ" lightbox="../../media/linux-mdatp-1.png":::
 
 #### <a name="to-inspect-cron-job-runs"></a>cron ジョブの実行を調するには
 

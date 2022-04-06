@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: cbf2049841f2987eb71e9c716de133872c1e6a81
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: cfbd91743ed2e61809d9e2b6f0243b5c327bdae4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156546"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467557"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>サブスクリプションとポータル アクセスの問題のトラブルシューティング
 
@@ -35,11 +35,11 @@ ms.locfileid: "62156546"
 
 このページでは、Microsoft Defender for Endpoint サービスのセットアップ時に発生する可能性がある問題をトラブルシューティングするための詳細な手順について説明します。
 
-エラー メッセージが表示された場合、Microsoft 365 Defenderの内容と関連するリンクが提供される詳細な説明が表示されます。
+エラー メッセージが表示された場合、Microsoft 365 Defender問題と関連するリンクが提供される内容に関する詳細な説明が表示されます。
 
 ## <a name="no-subscriptions-found"></a>サブスクリプションが見つかりません
 
-Microsoft 365 Defender にアクセス中にサブスクリプションが見つからないというメッセージが表示される場合は、ユーザーのポータルへのログインに使用される Azure Active Directory (Azure AD) には、Microsoft Defender for Endpoint ライセンスがないという意味です。
+Microsoft 365 Defender にアクセス中にサブスクリプションが見つからないというメッセージが表示される場合は、ユーザーのポータルへのログインに使用される Azure Active Directory (Azure AD) には、Microsoft Defender for Endpoint ライセンスが存在しないという意味です。
 
 潜在的な理由:
 
@@ -50,33 +50,33 @@ Microsoft 365 Defender にアクセス中にサブスクリプションが見つ
 
 どちらの場合も、Microsoft Defender for [Endpoint Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) または Volume ライセンス のサポートで Microsoft サポートに問い [合わせるべきです](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)。
 
-![サブスクリプションが見つかりません。](images/atp-no-subscriptions-found.png)
+:::image type="content" source="images/atp-no-subscriptions-found.png" alt-text="[サブスクリプションが見つかりません] ページ" lightbox="images/atp-no-subscriptions-found.png":::
 
 ## <a name="your-subscription-has-expired"></a>サブスクリプションの有効期限が切れています
 
-サブスクリプションへのアクセス中Microsoft 365 Defenderサブスクリプションの有効期限が切れているメッセージが表示される場合、オンライン サービスサブスクリプションの有効期限が切れています。 Microsoft Defender for Endpoint サブスクリプションは、他のオンライン サービス サブスクリプションと同様に有効期限があります。
+サブスクリプションへのアクセス中Microsoft 365 Defenderサブスクリプションの有効期限が切れたメッセージが表示される場合、オンライン サービス サブスクリプションの有効期限が切れています。 Microsoft Defender for Endpoint サブスクリプションは、他のオンライン サービス サブスクリプションと同様に有効期限があります。
 
 ライセンスの更新または延長は、任意の時点で選択できます。 有効期限が切れた後にポータルにアクセスすると、サブスクリプションの有効期限が切れたメッセージが表示され、ライセンスを更新しない場合は、デバイスのオフボード パッケージをダウンロードするオプションが表示されます。
 
 > [!NOTE]
 > セキュリティ上の理由から、Offboard デバイスに使用されるパッケージは、ダウンロード日から 30 日後に期限切れになります。 デバイスに送信された期限切れのオフボード パッケージは拒否されます。 オフボード パッケージをダウンロードすると、パッケージの有効期限が通知され、パッケージ名にも含まれます。
 
-![サブスクリプションの有効期限が切れたイメージ。](images/atp-subscription-expired.png)
+:::image type="content" source="images/atp-subscription-expired.png" alt-text="サブスクリプションの有効期限が切れた通知メッセージ" lightbox="images/atp-subscription-expired.png":::
 
 ## <a name="you-are-not-authorized-to-access-the-portal"></a>ポータルへのアクセスが承認されていない
 
 ポータルへのアクセスが承認されていない場合、Microsoft Defender for Endpoint はセキュリティ監視、インシデント調査、応答製品であり、アクセスはユーザーによって制限および制御されます。
 詳細については、「ユーザー アクセスをポータルに [**割り当てる」を参照してください**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)。
 
-![ポータルへのアクセスが承認されていないイメージ。](images/atp-not-authorized-to-access-portal.png)
+:::image type="content" source="images/atp-not-authorized-to-access-portal.png" alt-text="アクセスが禁止された通知メッセージ" lightbox="images/atp-not-authorized-to-access-portal.png":::
 
 ## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>現在、ポータルの一部のセクションでデータを使用できない
 
 ポータル ダッシュボードや他のセクションに「現在データが使用できない」などのエラー メッセージが表示される場合は、次の手順を実行します。
 
-![現在、データの画像は使用できません。](images/atp-data-not-available.png)
+:::image type="content" source="images/atp-data-not-available.png" alt-text="データの利用不能通知メッセージ" lightbox="images/atp-data-not-available.png":::
 
-Web ブラウザーで、その下のすべてのサブドメインを許可 `security.windows.com` する必要があります。 たとえば、「 `*.security.windows.com` 」のように入力します。
+Web ブラウザーで、その下のすべての `security.windows.com` サブドメインを許可する必要があります。 たとえば、「 `*.security.windows.com` 」のように入力します。
 
 ## <a name="portal-communication-issues"></a>ポータル通信の問題
 

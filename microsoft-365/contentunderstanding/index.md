@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex に関するリソースの検索方法について説明します。
-ms.openlocfilehash: 3b8c85cfd405e68884df844c502473cdd95a4fa5
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 1b57283b5818a7fa502e112d903f873863a6e1b6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449430"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682066"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
@@ -41,7 +41,7 @@ SharePoint Syntexは、組織Microsoft 365に役立つサービスです。
 
 ## <a name="get-started"></a>はじめに
 
-このセクションのリソースは、SharePoint Syntex で使用されるデータ分類と抽出の 3 つの方法 (ドキュメントの理解、フォーム処理、および事前構築) について説明します。
+このセクションのリソースは、ユーザーが使用するデータ分類と抽出の方法の詳細をSharePoint Syntex。 カスタム モデルの種類は、ドキュメント[](document-understanding-overview.md)の理解と[](form-processing-overview.md)フォーム処理の 2 種類と、事前構築済みの[モデルの種類](prebuilt-overview.md)です。
 
 > [!NOTE]
 > [SharePoint 管理センターからコンテンツ センターを作成](create-a-content-center.md)することで、ライセンスを購入せずに SharePoint Syntex の使用を開始できます。 ライセンス未付与のユーザーは、ドキュメントの理解モデルを作成することはできますが、それをドキュメント ライブラリに適用することはできません。

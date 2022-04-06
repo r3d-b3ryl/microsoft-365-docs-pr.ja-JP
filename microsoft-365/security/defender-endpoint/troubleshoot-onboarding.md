@@ -14,8 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
+ms.openlocfilehash: 9813857bffe62ab26d377d49b2830f55d0f38f93
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473521"
 ---
-
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -47,7 +52,7 @@ ms.technology: mde
 
 スクリプトが正常に完了した場合は、「[](#troubleshoot-onboarding-issues-on-the-device)デバイスのオンボードの問題のトラブルシューティング」を参照して、発生する可能性がある追加のエラーについて説明します。
 
-### <a name="troubleshoot-onboarding-issues-when-deploying-with-microsoft-endpoint-configuration-manager"></a>アプリケーションを使用して展開する際のオンボーディングの問題のトラブルシューティングMicrosoft Endpoint Configuration Manager
+### <a name="troubleshoot-onboarding-issues-when-deploying-with-microsoft-endpoint-configuration-manager"></a>アプリケーションを使用して展開する際のオンボーディングの問題Microsoft Endpoint Configuration Manager
 
 Configuration Manager の次のバージョンを使用してデバイスをオンボーディングする場合:
 
@@ -84,7 +89,7 @@ Configuration Manager の次のバージョンを使用してデバイスをオ�
 |:---:|---|---|
 |`5`|オフボード データが見つかりましたが、削除できなかった|レジストリのアクセス許可を確認する (具体的には) <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.|
 |`10`|オンボード データをレジストリに書き込めなかった|レジストリのアクセス許可を確認する (具体的には) <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`. <p> スクリプトが管理者として実行されたと確認します。|
-|`15`|SENSE サービスの開始に失敗しました|サービスの正常性 (コマンド) を確認`sc query sense` します。 中間の状態 (*''Pending_Stopped',* *'Pending_Running'*) に入って、(管理者権限を持つ) スクリプトを再度実行してください。 <p> デバイスがバージョン 1607 `sc query sense` `START_PENDING`でWindows 10コマンドを実行している場合は、デバイスを再起動します。 デバイスを再起動しても問題が解決しない場合は、KB4015217 にアップグレードして、もう一度オンボーディングを試してください。|
+|`15`|SENSE サービスの開始に失敗しました|サービスの正常性 (コマンド) を確認`sc query sense` します。 中間の状態 (*''Pending_Stopped',* *'Pending_Running'*) に入って、(管理者権限を持つ) スクリプトを再度実行してください。 <p> デバイスがバージョン 1607 `sc query sense` `START_PENDING`Windows 10実行している場合は、デバイスを再起動します。 デバイスを再起動しても問題が解決しない場合は、KB4015217 にアップグレードして、もう一度オンボーディングを試してください。|
 |`15`|SENSE サービスの開始に失敗しました|エラーのメッセージが次の場合:システム エラー 577 またはエラー 1058 が発生した場合は、Microsoft Defender ウイルス対策 ELAM ドライバーを有効にする必要があります。手順については、「[Microsoft Defender ウイルス対策](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) がポリシーによって無効にされていないか確認する」を参照してください。|
 |`30`|スクリプトがサービスの実行を待機できなかった|サービスの開始に時間がかかったか、開始しようとしている間にエラーが発生している可能性があります。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。|
 |`35`|スクリプトが必要なオンボーディング状態レジストリ値を見つけ出すに失敗しました|SENSE サービスが初めて開始されると、オンボード状態がレジストリの場所に書き込み <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> スクリプトは数秒後に検索に失敗しました。 手動でテストし、それがそこにあるか確認できます。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。|
@@ -92,15 +97,15 @@ Configuration Manager の次のバージョンを使用してデバイスをオ�
 |`65`|不十分な特権|管理者特権でスクリプトを再度実行します。|
 |
 
-### <a name="troubleshoot-onboarding-issues-using-microsoft-intune"></a>ユーザー設定を使用してオンボーディングの問題をトラブルシューティングMicrosoft Intune
+### <a name="troubleshoot-onboarding-issues-using-microsoft-intune"></a>アプリケーションを使用してオンボーディングの問題をトラブルシューティングMicrosoft Intune
 
-エラー コードをMicrosoft Intune、問題の原因のトラブルシューティングを試みる場合は、このエラー コードを使用します。
+エラー コードを確認Microsoft Intune問題の原因のトラブルシューティングを試みる場合は、このエラー コードを使用します。
 
 Intune でポリシーを構成し、デバイスに反映されない場合は、MDM の自動登録を構成する必要があります。
 
 オンボーディング中に発生する可能性がある問題の原因を理解するには、次の表を使用します。
 
-- Microsoft Intune コードとエラー OMA-URIs表
+- Microsoft Intune コードとエラー テーブルOMA-URIsします。
 - コンプライアンス以外のテーブルに関する既知の問題
 - モバイル デバイス管理 (MDM) イベント ログ テーブル
 
@@ -167,7 +172,7 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
 1. [スタート **] ボタンを** クリックし、「 **イベント ビューアー」と入力** し、Enter キーを **押します**。
 
-2. [イベント **ビューアー (ローカル)]** ウィンドウで、[**アプリケーション**\>とサービス ログ] **を展開します。Microsoft** \>  \> Windows **SENSE。**
+2. [イベント **ビューアー (ローカル)] ウィンドウ** で、[**アプリケーション** とサービス ログ] **を展開します。Microsoft** \>  \> Windows \> **SENSE。**
 
    > [!NOTE]
    > SENSE は、Microsoft Defender for Endpoint をサポートする動作センサーを参照するために使用される内部名です。
@@ -178,7 +183,7 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
 5. [フィルター] **タブの** [イベント レベル **] で、[重大**]、**[** 警告]、および **[エラー**] を選択し、[OK] をクリック **します**。 
 
-   ![イベント ビューアー ログ フィルターのイメージ。](images/filter-log.png)
+   :::image type="content" source="images/filter-log.png" alt-text="イベント ビューアー ログ フィルター" lightbox="images/filter-log.png":::
 
 6. [操作] ウィンドウに問題を示すイベント **が表示** されます。 次の表のソリューションに基づいて、トラブルシューティングを試みできます。
 
@@ -223,11 +228,11 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
 
-   a. [スタート **] ボタンを** クリックし、「 **cmd」** と入力し、Enter キーを **押します**。
+   a.  [スタート **] ボタンを** クリックし、「 **cmd」** と入力し、Enter キーを **押します**。
 
    b. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-2. 次のコマンドを入力し、Enter キーを **押します**。
+2. 次のコマンドを入力して、**Enter キー** を押します。
 
    ```console
    sc qc diagtrack
@@ -235,7 +240,7 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
    サービスが有効になっている場合、結果は次のスクリーンショットのようになります。
 
-   ![diagtrack の sc クエリ コマンドの結果。](images/windefatp-sc-qc-diagtrack.png)
+   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="diagtrack の sc クエリ コマンドの結果" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
    に設定 `START_TYPE` されていない場合 `AUTO_START`は、自動的に開始するサービスを設定する必要があります。
 
@@ -243,17 +248,17 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
 
-   a. [スタート **] ボタンを** クリックし、「 **cmd」** と入力し、Enter キーを **押します**。
+   a.  [スタート **] ボタンを** クリックし、「 **cmd」** と入力し、Enter キーを **押します**。
 
    b. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-2. 次のコマンドを入力し、Enter キーを **押します**。
+2. 次のコマンドを入力して、**Enter キー** を押します。
 
    ```console
    sc config diagtrack start=auto
    ```
 
-3. 成功メッセージが表示されます。 次のコマンドを入力して変更を確認し、Enter キーを **押します**。
+3. 成功のメッセージが表示されます。 次のコマンドを入力して変更を確認し、**Enter キー** を押します。
 
    ```console
    sc qc diagtrack
@@ -299,13 +304,13 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> `disableAntiSpyware`この設定は中止され、2020 年 8 月 (バージョン 4.18.2007.8) 更新プログラムが Microsoft Defender ウイルス対策 に更新された現在、すべての Windows 10 デバイスでは無視されます。
+> `disableAntiSpyware`この設定は中止され、2020 年 8 月 (バージョン 4.18.2007.8) の Microsoft Defender ウイルス対策 への更新時に、すべての Windows 10 デバイスでは無視されます。
 
 - ポリシーをクリアした後、オンボーディング手順を再度実行します。
 
 - 以前のレジストリ キーの値を確認して、レジストリ キーを開いてポリシーが無効になっているか確認することもできます `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`。
 
-    ![ユーザーのレジストリ キーのMicrosoft Defender ウイルス対策。](images/atp-disableantispyware-regkey.png)
+  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="ユーザーのレジストリ キー Microsoft Defender ウイルス対策" lightbox="images/atp-disableantispyware-regkey.png":::
 
    > [!NOTE]
    > すべての Windows Defender (wdboot、wdfilter、wdnisdrv、wdnissvc、および windefend) は、既定の状態である必要があります。 これらのサービスの起動を変更する機能はサポートされていないため、システムのイメージを再作成する必要があります。
@@ -328,19 +333,19 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 また、次の情報を確認する必要があります。
 
-- タスク マネージャーの [プロセス] タブで、Microsoft Defender for Endpoint Service **が実行されている** 状態 **を確認します**。 例:
+- タスク マネージャーの [プロセス] タブで、Microsoft Defender for Endpoint Service **が実行されている** 状態 **を確認します**。 次に例を示します。
 
-    ![Microsoft Defender for Endpoint Service が実行されているプロセス ビューのイメージ。](images/atp-task-manager.png)
+  :::image type="content" source="images/atp-task-manager.png" alt-text="Microsoft Defender for Endpoint Service が実行されているプロセス ビュー" lightbox="images/atp-task-manager.png":::
 
 - イベント **ビューアー アプリケーションと** \> **サービス ログ操作**\>マネージャー **をチェックして**、エラーが発生した場合を確認します。
 
 - [**サービス]** で **、サーバー Microsoft Monitoring Agent** 実行しているサーバーを確認します。 例えば、
 
-    ![サービスのイメージ。](images/atp-services.png)
+  :::image type="content" source="images/atp-services.png" alt-text="サービス" lightbox="images/atp-services.png":::
 
-- Azure **Microsoft Monitoring Agent Log** \> **Analytics (OMS) で**、ワークスペースを確認し、状態が実行されているのを確認します。
+- Azure **Microsoft Monitoring Agent log** \> **Analytics (OMS) で**、ワークスペースを確認し、状態が実行されているのを確認します。
 
-    ![[プロパティ] Microsoft Monitoring Agentイメージ。](images/atp-mma-properties.png)
+  :::image type="content" source="images/atp-mma-properties.png" alt-text="プロパティMicrosoft Monitoring Agentプロパティ" lightbox="images/atp-mma-properties.png":::
 
 - デバイスがポータルの [デバイス] リストに反映 **されているのを** 確認します。
 
@@ -356,127 +361,128 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 - このシナリオでは、オンボード パッケージが展開された場合でも、SENSE サービスは自動的に開始されません
 
 > [!NOTE]
-> SENSE サービスが Windows 10 Version 1809 または Windows Windows Server 2019、または Windows Server 2022 と [2021](https://support.microsoft.com/kb/5001384) 年 4 月 22 日の更新プログラムのロールアップで開始するには、OOBE 後のユーザー ログオンが必要なくなりました。 Windows 10バージョン 1909 と [2021 年 4](https://support.microsoft.com/kb/5001396) 月の更新プログラムのロールアップ。 Windows 10バージョン 2004/20H2 と [2021 年 4 月 28 日の更新プログラムのロールアップ。](https://support.microsoft.com/kb/5001391) 
+> SENSE サービスが 2019 年 Windows 4 月 22 日に Windows 10 Version 1809 または Windows Server 2019 または Windows Server 2022 で開始するには、OOBE 後のユーザー ログオンが不要になります。更新プログラムのロールアップが [2021](https://support.microsoft.com/kb/5001384) 年 4 月 22 日です。 Windows 10バージョン 1909 と [2021 年 4](https://support.microsoft.com/kb/5001396) 月の更新プログラムのロールアップ。 Windows 10バージョン 2004/20H2 と [2021 年 4 月 28 日の更新プログラムのロールアップ。](https://support.microsoft.com/kb/5001391) 
 
 
 > [!NOTE]
-> 次の手順は、次の手順を使用する場合にのみMicrosoft Endpoint Configuration Manager。 アプリを使用したオンボーディングの詳細については、「Microsoft Endpoint Configuration Manager [Microsoft Defender for Endpoint」を参照してください](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
+> 次の手順は、アプリケーションを使用する場合にのみMicrosoft Endpoint Configuration Manager。 アプリケーションを使用したオンボーディングの詳細については、「Microsoft Endpoint Configuration Manager [Microsoft Defender for Endpoint」を参照してください](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 
 1. アプリケーションを作成Microsoft Endpoint Configuration Manager。
 
-    ![構成 1 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-1.png)
+   :::image type="content" source="images/mecm-1.png" alt-text="構成Microsoft Endpoint Configuration Manager-1" lightbox="images/mecm-1.png":::
 
 2. [アプリケーション **情報を手動で指定する] を選択します**。
 
-    ![構成 2 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-2.png)
+   :::image type="content" source="images/mecm-2.png" alt-text="構成Microsoft Endpoint Configuration Manager-2" lightbox="images/mecm-2.png":::
 
 3. アプリケーションに関する情報を指定し、[次へ] を **選択します**。
 
-    ![構成 3 Microsoft Endpoint Configuration Managerのイメージ。](images/mecm-3.png)
+   :::image type="content" source="images/mecm-3.png" alt-text="構成Microsoft Endpoint Configuration Manager-3" lightbox="images/mecm-3.png":::
 
 4. ソフトウェア センターに関する情報を指定し、[次へ] を **選択します**。
 
-    ![構成 4 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-4.png)
+   :::image type="content" source="images/mecm-4.png" alt-text="構成Microsoft Endpoint Configuration Manager-4" lightbox="images/mecm-4.png":::
 
 5. [展開 **の種類] で[** 追加] **を選択します**。
 
-    ![構成 5 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-5.png)
+   :::image type="content" source="images/mecm-5.png" alt-text="構成Microsoft Endpoint Configuration Manager-5" lightbox="images/mecm-5.png":::
 
 6. [展開 **の種類情報を手動で指定する] を選択** し、[次へ] を **選択します**。
 
-    ![構成 6 Microsoft Endpoint Configuration Managerのイメージ。](images/mecm-6.png)
+   :::image type="content" source="images/mecm-6.png" alt-text="構成Microsoft Endpoint Configuration Manager-6" lightbox="images/mecm-6.png":::
 
 7. 展開の種類に関する情報を指定し、[次へ] を **選択します**。
 
-    ![構成 7 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-7.png)
+   :::image type="content" source="images/mecm-7.png" alt-text="構成Microsoft Endpoint Configuration Manager-7" lightbox="images/mecm-7.png":::
 
 8. [ **コンテンツ インストール プログラム** \> **] で、** 次のコマンドを指定します `net start sense`。
 
-    ![configuration8 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-8.png)
+   :::image type="content" source="images/mecm-8.png" alt-text="構成Microsoft Endpoint Configuration Manager-8" lightbox="images/mecm-8.png":::
 
 9. [ **検出方法] で**、[ **ルールの構成] を選択して**、この展開の種類の存在を検出し、[句の追加] **を選択します**。
 
-    ![configuration9 のMicrosoft Endpoint Configuration Managerイメージ。](images/mecm-9.png)
+   :::image type="content" source="images/mecm-9.png" alt-text="構成Microsoft Endpoint Configuration Manager-9" lightbox="images/mecm-9.png":::
 
 10. 次の検出ルールの詳細を指定し、[OK] を **選択します**。
 
-    ![構成 10 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-10.png)
+    :::image type="content" source="images/mecm-10.png" alt-text="構成Microsoft Endpoint Configuration Manager-10" lightbox="images/mecm-10.png":::
 
 11. [検出 **方法] で、[次** へ] を **選択します**。
 
-    ![構成 11 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-11.png)
+    :::image type="content" source="images/mecm-11.png" alt-text="構成Microsoft Endpoint Configuration Manager-11" lightbox="images/mecm-11.png":::
 
 12. [ **ユーザー エクスペリエンス] で**、次の情報を指定し、[次へ] を **選択します**。
 
-    ![configuration12 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-12.png)
+    :::image type="content" source="images/mecm-12.png" alt-text="構成Microsoft Endpoint Configuration Manager-12" lightbox="images/mecm-12.png":::
 
 13. [要件 **] で、[** 次へ] を **選択します**。
 
-    ![構成 13 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-13.png)
+    :::image type="content" source="images/mecm-13.png" alt-text="構成Microsoft Endpoint Configuration Manager-13" lightbox="images/mecm-13.png":::
 
 14. [ **依存関係] で、[** 次へ] を **選択します**。
 
-    ![configuration14 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-14.png)
+    :::image type="content" source="images/mecm-14.png" alt-text="構成Microsoft Endpoint Configuration Manager-14" lightbox="images/mecm-14.png":::
 
 15. [概要 **] で、[** 次へ] を **選択します**。
 
-    ![構成 15 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-15.png)
+    :::image type="content" source="images/mecm-15.png" alt-text="構成Microsoft Endpoint Configuration Manager-15" lightbox="images/mecm-15.png":::
 
 16. [ **完了] で**、[閉じる] を **選択します**。
 
-    ![構成 16 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-16.png)
+    :::image type="content" source="images/mecm-16.png" alt-text="構成Microsoft Endpoint Configuration Manager-16" lightbox="images/mecm-16.png":::
 
 17. [展開 **の種類] で**、[次へ] を **選択します**。
 
-    ![構成 17 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-17.png)
+    :::image type="content" source="images/mecm-17.png" alt-text="構成Microsoft Endpoint Configuration Manager-17" lightbox="images/mecm-17.png":::
 
 18. [概要 **] で、[** 次へ] を **選択します**。
 
-    ![構成 18 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-18.png)
+    :::image type="content" source="images/mecm-18.png" alt-text="構成Microsoft Endpoint Configuration Manager-18" lightbox="images/mecm-18.png":::
 
-    その後、状態が表示されます。configuration19 ![のイメージMicrosoft Endpoint Configuration Manager表示されます。](images/mecm-19.png)
+    次に、状態が表示されます:::image type="content" source="images/mecm-19.png" alt-text=":Microsoft Endpoint Configuration Manager構成-19" lightbox="images/mecm-19.png":::
 
 19. [ **完了] で**、[閉じる] を **選択します**。
 
-    ![configuration20 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-20.png)
+    :::image type="content" source="images/mecm-20.png" alt-text="構成Microsoft Endpoint Configuration Manager-20" lightbox="images/mecm-20.png":::
 
 20. これで、アプリを右クリックして [展開] を選択して、アプリケーションを展開 **できます**。
 
-    ![configuration21 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-21.png)
+    :::image type="content" source="images/mecm-21.png" alt-text="構成Microsoft Endpoint Configuration Manager-21" lightbox="images/mecm-21.png":::
 
 21. [全般 **] で****、[依存関係のコンテンツを自動的に配布する] と [参照]** を **選択します**。
 
-    ![configuration22 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-22.png)
+    :::image type="content" source="images/mecm-22.png" alt-text="構成Microsoft Endpoint Configuration Manager-22" lightbox="images/mecm-22.png":::
 
 22. [コンテンツ **] で [次** へ] を **選択します**。
 
-    ![configuration23 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-23.png)
+    :::image type="content" source="images/mecm-23.png" alt-text="構成Microsoft Endpoint Configuration Manager-23" lightbox="images/mecm-23.png":::
 
 23. [展開 **の設定] で、[** 次へ] を **選択します**。
 
-    ![configuration24 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-24.png)
+    :::image type="content" source="images/mecm-24.png" alt-text="構成Microsoft Endpoint Configuration Manager-24" lightbox="images/mecm-24.png":::
 
 24. [**スケジュール] で****、利用可能な時間の後にできるだけ早く** 選択し、[次へ] を **選択します**。
 
-    ![configuration25 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-25.png)
+    :::image type="content" source="images/mecm-25.png" alt-text="構成Microsoft Endpoint Configuration Manager-25" lightbox="images/mecm-25.png":::
 
 25. [ **ユーザー エクスペリエンス] で**、[期限内またはメンテナンス期間中に変更をコミットする ( 再起動が必要) ] を選択し、[次へ **]** を選択 **します**。
 
-    ![configuration26 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-26.png)
+    :::image type="content" source="images/mecm-26.png" alt-text="構成Microsoft Endpoint Configuration Manager-26" lightbox="images/mecm-26.png":::
 
 26. [アラート **] で [** 次へ] を **選択します**。
 
-    ![configuration27 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-27.png)
+    :::image type="content" source="images/mecm-27.png" alt-text="構成Microsoft Endpoint Configuration Manager-27" lightbox="images/mecm-27.png":::
 
 27. [概要 **] で、[** 次へ] を **選択します**。
 
-    ![configuration28 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-28.png)
+    :::image type="content" source="images/mecm-28.png" alt-text="構成Microsoft Endpoint Configuration Manager-28" lightbox="images/mecm-28.png":::
+      
 
-    その後、状態は configuration29 ![Microsoft Endpoint Configuration Manager表示されます。](images/mecm-29.png)
+    その後、状態が表示:::image type="content" source="images/mecm-29.png" alt-text="されます Microsoft Endpoint Configuration Manager構成-29" lightbox="images/mecm-29.png":::
 
 28. [ **完了] で**、[閉じる] を **選択します**。
 
-    ![configuration30 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-30.png)
+    :::image type="content" source="images/mecm-30.png" alt-text="構成Microsoft Endpoint Configuration Manager-30" lightbox="images/mecm-30.png":::
 
 ## <a name="related-topics"></a>関連項目
 

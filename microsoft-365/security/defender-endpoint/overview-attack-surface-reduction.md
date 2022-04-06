@@ -15,14 +15,16 @@ audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection:
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 78fdd5c6c02990943874807c285f8e5eb60ad6ad
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9c489d28467582e0f95f3fde7440ff43022c44e1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807586"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682044"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能の理解と使用
 
@@ -65,7 +67,7 @@ ms.locfileid: "62807586"
 
    1. 高度なセキュリティを備Windows Defender[ファイアウォールの概要を確認します](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
    2. ファイアウォール ポリシー [Windows Defenderする](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide)方法を決定するには、「ファイアウォールの設計ガイド」を使用します。
-   3. 高度なセキュリティ[Windows Defender組織](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)のファイアウォールをセットアップするには、「ファイアウォールの展開ガイド」を使用します。
+   3. 高度な[セキュリティWindows Defender組織](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)のファイアウォールをセットアップするには、「ファイアウォールの展開ガイド」を使用します。
 
 > [!TIP]
 > ほとんどの場合、攻撃表面の縮小機能を構成する場合、次の方法から選択できます。
@@ -96,10 +98,10 @@ Defender for Endpoint を使用して、各イベントの詳細を取得しま�
 グループ ポリシー、PowerShell、および構成サービス プロバイダー (CSP) を使用して監査モードを有効にできます。
 
 > [!TIP]
-> また、テストグラウンドの[Windows Defenderにアクセス](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)して demo.wd.microsoft.com 機能を確認し、機能の動作を確認できます。
+> また、テストグラウンドのWindows Defenderにアクセスして demo.wd.microsoft.com 機能を確認し[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)、機能の動作を確認できます。
 
 > [!NOTE]
-> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 | 監査オプション | 監査モードを有効にする方法 | イベントを表示する方法 |
 |---|---|---|
@@ -116,23 +118,23 @@ Defender for Endpoint を使用して、各イベントの詳細を取得しま�
 
 このセクションでは、すべてのイベント、関連する機能または設定を一覧表示し、特定のイベントにフィルター処理するカスタム ビューを作成する方法について説明します。
 
-E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) を使用している場合は、Windows セキュリティの一部としてイベント、ブロック、および警告に関する詳細なレポートを取得します。
+E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) を使用している場合は、Windows セキュリティ、イベント、ブロック、および警告に関する詳細なレポートを取得します。
 
 ### <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>カスタム ビューを使用して攻撃表面の縮小機能を確認する
 
-イベント ビューアーにカスタム ビュー Windows特定の機能と設定のイベントのみを表示します。 最も簡単な方法は、カスタム ビューを XML ファイルとしてインポートすることです。 このページから XML を直接コピーできます。
+イベント ビューアーでカスタム ビュー Windows特定の機能と設定のイベントのみを表示します。 最も簡単な方法は、カスタム ビューを XML ファイルとしてインポートすることです。 このページから XML を直接コピーできます。
 
 また、機能に対応するイベント領域に手動で移動することもできます。
 
 #### <a name="import-an-existing-xml-custom-view"></a>既存の XML カスタム ビューをインポートする
 
-1. 空の.txtファイルを作成し、使用するカスタム ビューの XML をそのファイルに.txtします。 使用するカスタム ビューごとにこれを行います。 ファイルの名前を次のように変更します (種類を次のように変更.txt.xml)。
+1. 空の.txtファイルを作成し、使用するカスタム ビューの XML をそのファイルに.txtします。 使用するカスタム ビューごとにこれを行います。 ファイルの名前を次のように変更します (種類を次のように.txtに.xml。
     - フォルダー アクセス イベントのカスタム ビューの制御: *cfa-events.xml*
     - エクスプロイト保護イベントのカスタム ビュー: *ep-events.xml*
     - 攻撃表面の縮小イベントのカスタム ビュー: *asr-events.xml*
     - ネットワーク/保護イベントのカスタム ビュー: *np-events.xml*
 
-2. [**イベント ビューアー] と** 入力し、[スタート メニュービューアー **] を開きます**。
+2. [**イベント ビューアー] と** 入力し、[スタート メニュー ビューアー **] を開きます**。
 
 3. [アクション **のインポート** \> **] [カスタム ビュー...] を選択します。**
 
@@ -147,7 +149,7 @@ E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint
 
 #### <a name="copy-the-xml-directly"></a>XML を直接コピーする
 
-1. [**イベント ビューアー]** を [スタート メニュー入力して、[イベント ビューアー] Windows **開きます**。
+1. [**イベント ビューアー]** と入力スタート メニュー、イベント ビューアー Windows **開きます**。
 
 2. 左側のパネルの [アクション] **で、[** カスタム ビュー **の作成]を選択します。**
 
@@ -215,7 +217,7 @@ E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint
 
 ### <a name="list-of-attack-surface-reduction-events"></a>攻撃表面の縮小イベントの一覧
 
-すべての攻撃表面の縮小イベントは、**Microsoft >** > Windows の [アプリケーションとサービス ログ] の下にあり、次の表に示すフォルダーまたはプロバイダーにあります。
+すべての攻撃表面の縮小イベントは、**Microsoft** > > Windows の [アプリケーションとサービス ログ] の下にあり、次の表に示すフォルダーまたはプロバイダーにあります。
 
 これらのイベントには、次のイベント ビューアー Windowsアクセスできます。
 

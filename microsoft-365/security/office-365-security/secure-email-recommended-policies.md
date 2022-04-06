@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6ab6ff7c043dcceacfbb07d0f6fec5e974999204
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b4b47b5cd5b7f345d21f2fa60deec736d931c62f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682441"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473433"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -39,7 +39,7 @@ ms.locfileid: "63682441"
 
 電子メールを保護するために、次の図は、共通の ID およびデバイス アクセス ポリシーから更新するポリシーを示しています。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="アクセスを保護するためのポリシー更新プログラムの概要Exchange。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="Microsoft サービスへのアクセスを保護するためのポリシー更新プログラムの概要Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
 
 ActiveSync クライアントをブロックする新しいポリシー Exchange Onlineに注意してください。 これにより、モバイルでのOutlookされます。
 
@@ -108,7 +108,7 @@ Azure Information Protection のOffice 365 Message Encryption機能を活用す�
 
 ## <a name="next-steps"></a>次の手順
 
-![手順 4: Microsoft 365 クラウド アプリのポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="クラウド アプリのMicrosoft 365ポリシー" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 次の条件付きアクセス ポリシーを構成する:
 

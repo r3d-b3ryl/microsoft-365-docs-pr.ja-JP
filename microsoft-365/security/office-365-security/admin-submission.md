@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a897ba6973dfba86e3d0628088bad419c61c04c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324046"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682639"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -51,10 +51,10 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
 
 - <https://security.microsoft.com/> で Microsoft 365 Defender ポータルを開きます。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission>。
 
-- メッセージとファイルを Microsoft に送信するには、次のいずれかの役割グループのメンバーである必要があります。
+- メッセージとファイルを Microsoft に送信するには、次のいずれかの役割を持っている必要があります。
   - **ポータルの****セキュリティ** 管理者 [またはセキュリティ リーダー Microsoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
   
-    この記事で後述するように、カスタム メールボックスへのユーザー[](#view-user-submissions-to-microsoft)申請を表示するには、この役割グループのメンバーシップが必要です。
+    この記事で後述するように、カスタム メールボックスへの[](#view-user-submissions-to-microsoft)ユーザー申請を表示するには、これらの役割の 1 つが必要です。
 
 - 管理者は、メールボックスで引き続き使用できるメッセージであり、ユーザーまたは別の管理者によって削除されない場合は、30 日間の古いメッセージを送信できます。
 
@@ -199,7 +199,7 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
 
    - エントリをグループ化するには、[グループ] を **クリック** し、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
-     - **型**
+     - **Type**
      - **理由**
      - **状態**
      - **結果**
@@ -220,9 +220,9 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
 
 ## <a name="view-user-submissions-to-microsoft"></a>Microsoft へのユーザー申請の表示
 
-レポート メッセージ アドイン、レポート フィッシング アドイン[](enable-the-report-message-add-in.md)、またはユーザーが [Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) で組み込みのレポートを使用している場合は、[ユーザーレポートメッセージ] タブでユーザーが報告している情報を確認できます。[](enable-the-report-phish-add-in.md)
+レポート メッセージ アドイン、レポート フィッシング アドイン [](enable-the-report-message-add-in.md)、または [ユーザーが Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) の組 [](enable-the-report-phish-add-in.md)み込みレポートを使用している場合は、[ユーザーレポートメッセージ] タブでユーザーが報告している情報を **確認** できます。
 
-1. Microsoft 365 Defender ポータルの [<https://security.microsoft.com>申請] ページに移動します。[アクション] &**提出** \> **します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission>。
+1. [申請Microsoft 365 Defender] の [<https://security.microsoft.com>アクション] の [提出]  **ページ**\>に移動&**送信します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission>。
 
 2. [申請 **] ページで** 、[ユーザーが報告した **メッセージ] タブを選択** します。
 

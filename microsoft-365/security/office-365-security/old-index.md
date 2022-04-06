@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 におけるセキュリティについて、EOP、Defender for Office 365 プラン 1 およびプラン 2、セキュリティの標準構成と厳格な構成の違いなどを説明します。 持っている情報を理解し、プロパティをセキュリティで保護する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 688fe6bf984da77c7d53e647ec52b412e053852d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d75ed9a3b01a7a16e283ce007f7c4a5b50cdab09
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680556"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467491"
 ---
 # <a name="office-365-security"></a>Office 365 セキュリティ
 
@@ -55,17 +55,17 @@ Office 365 セキュリティ は、EOP で提供される中心的な保護機�
 |---|---|---|
 |広範な、ボリュームベースの既知の攻撃の防止。|ゼロデイ マルウェア、フィッシング、ビジネス メールの侵害からメールと共同作業を保護。|侵害後の調査、追求、対応のほか、オートメーションおよびシミュレーション (トレーニング用) の追加。|
 
-しかし、アーキテクチャの観点から見た場合、各コンポーネントをセキュリティの累積的な層と捉え、各層にはセキュリティに関する特定の強調点があると考えることが可能です。 以下のように理解できます。
+しかし、アーキテクチャの観点から見た場合、各コンポーネントをセキュリティの累積的な層と捉え、各層にはセキュリティに関する特定の強調点があると考えることが可能です。以下のように理解できます。
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic.":::-->
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP と Microsoft Defender for Office 365 およびこれらの間の関係とともにサービスの強調点が示され、メール認証に関するメモが含まれています":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP と Microsoft Defender Office 365、電子メール認証に関するメモを含む、サービスを重視して、お客様との関係について説明します。" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
 
 これらのサービスのそれぞれでは保護、検出、調査、対応のいずれかを強調していますが、***すべて** のサービスは保護、検出、調査、および対応の *_いずれの_**目標も達成できます。
 
 Office 365 セキュリティの中心は、EOP 保護です。 Microsoft Defender for Office 365 P1 には、EOP が含まれています。 Defender for Office 365 P2 には、P1 および EOP が含まれています。 累積的な構造となっています。 このため、この製品を構成する場合は、EOP から始め、その後に Defender for Office 365 へと進む必要があります。
 
-メール認証の構成はパブリック DNS で実行されますが、スプーフィングから保護するために、この機能を構成することが重要です。 *EOP をお持ちの場合は、****[メール認証を構成](email-validation-and-authentication.md)するようにしてください***。
+メール認証の構成はパブリック DNS で実行されますが、スプーフィングから保護するために、この機能を構成することが重要です。*EOP をお持ちの場合は、****[メール認証を構成](email-validation-and-authentication.md)するようにしてください***。
 
 Office 365 E3 以下をお持ちの場合は、EOP が含まれいますが、アップグレードを通してスタンドアロンの Defender for Office 365 P1 を購入するオプションが提供されています。 Office 365 E5 をお持ちの場合は、Defender for Office 365 P2 が含まれています。
 
@@ -90,7 +90,7 @@ Microsoft Defender for Office 365 プランを追加した場合に、EOP の脅
 
 |防止/検出|調査|対応|
 |---|---|---|
-|提供されるテクノロジ:<ul><li>スパム</li><li>フィッシング</li><li>マルウェア</li><li>バルク メール</li><li>スプーフィング インテリジェンス</li><li>偽装の検出</li><li>管理者検疫</li><li>管理者とユーザーによる誤検知と検出漏れの報告</li><li>URL およびファイルの許可/禁止</li><li>レポート</li></ul>|<li>監査ログ検索</li><li>メッセージ追跡</li>|<li>ゼロ時間自動削除 (ZAP)</li><li>許可リストと禁止リストの絞り込みとテスト</li>|
+|提供されるテクノロジ:<ul><li>スパム</li><li>フィッシング</li><li>マルウェア</li><li>バルク メール</li><li>スプーフィング インテリジェンス</li><li>偽装の検出</li><li>管理者検疫</li><li>管理者とユーザーによる誤検知と検出漏れの報告</li><li>URL およびファイルの許可/禁止</li><li>レポート</li></ul>|<li>監査ログ検索</li><li>メッセージ追跡</li>|<li>ゼロアワー自動消去 (ZAP)</li><li>許可リストと禁止リストの絞り込みとテスト</li>|
 
 EOP の詳細については、**[こちらの記事をご覧ください](exchange-online-protection-overview.md)**。
 
@@ -114,14 +114,14 @@ Microsoft Defender for Office 365 P1 では、調査機能として **リアル�
 |---|---|---|
 |EOP および Microsoft Defender for Office 365 P1に含まれるすべてのテクノロジに加えて:<ul><li>同上</li>|<li>**脅威エクスプローラー**</li><li>脅威トラッカー</li><li>キャンペーン ビュー</li>|<li>自動調査と応答 (AIR) </li><li>脅威エクスプローラーからの AIR</li><li>侵害されたユーザーの AIR</li><li>自動調査用 SIEM 統合 API</li>
 
-このように、Microsoft Defender for Office 365 P2 では、***検出/対応*** 面の機能が強化され、新たに 自動化された追及機能が追加されています。
+このように、Microsoft Defender for Office 365 P2 では、***検出/対応*** 面の機能が強化され、新しい追求の強みを追加します。オートメーション。
 
 Microsoft Defender for Office 365 P2 のメインの追及ツールは、リアルタイム検出ではなく **脅威エクスプローラー** と呼ばれるツールです。 Defender for Cloud に移動すると、脅威エクスプローラーが表示される場合は、Microsoft Defender Office 365されます。
 
 Microsoft Defender for Office 365 P1 および P2 の詳細については、**[こちらの記事をご覧ください](defender-for-office-365.md)**。
 
 > [!TIP]
-> EOP と Microsoft Defender for Office 365 は、エンド ユーザーに関する部分でも異なります。 EOP および Defender for Office 365 P1 では、*認識* に焦点を当てています。そのため、この 2 つのサービスには *メッセージ報告用 Outlook アドイン* が含まれており、ユーザーは不信なメールを報告して詳しい分析を受けられます。 <p> Defender for Office 365 P2 (EOP と P1 のすべての機能が含まれます) の場合、焦点はエンド ユーザーの *より一層のトレーニング* に切り替わります。そのため、セキュリティ運用センターでは、強力な *脅威シミュレーター* のほか、脅威シミュレーターで提供されるエンド ユーザー指標にアクセスできます。
+> EOP と Microsoft Defender for Office 365 は、エンド ユーザーに関する部分でも異なります。EOP および Defender for Office 365 P1 では、*認識* に焦点を当てています。そのため、この 2 つのサービスには *メッセージ報告用 Outlook アドイン* が含まれており、ユーザーは不信なメールを報告して詳しい分析を受けられます。<p> Defender for Office 365 P2 (EOP と P1 のすべての機能が含まれます) の場合、焦点はエンド ユーザーの *より一層のトレーニング* に切り替わります。そのため、セキュリティ運用センターでは、強力な *脅威シミュレーター* のほか、脅威シミュレーターで提供されるエンド ユーザー指標にアクセスできます。
 
 ## <a name="microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet"></a>Microsoft Defender for Office 365 プラン 1 とプラン 2 の違いに関するクイック ガイド
 

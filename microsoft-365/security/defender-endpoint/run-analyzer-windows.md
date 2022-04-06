@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 092a89e41efebafae36e81f5faa7cd3b52fde8d9
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 5fa284f5c57214f356bb6b90e12ca60ae019d277
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281533"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467139"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Windows でクライアント アナライザーを実行する
 
@@ -55,37 +55,37 @@ ms.locfileid: "62281533"
 > [!NOTE]
 > Windows 10/11、Windows Server 2019/2022、または Windows Server 2012R2/2016 [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) `MDEClientAnalyzer.exe` では、最新の統合ソリューションがインストールされている場合、クライアント アナライザー スクリプトは、クラウド サービス URL への接続テストを実行するために呼び出される実行可能ファイルを呼び出します。
 >
-> Windows 8.1、Windows Server 2016、または Microsoft Monitoring Agent (MMA) をオンボーディングに使用する以前の OS エディションでは、クライアント アナライザー スクリプトは、コマンドとコントロール (CnC) `MDEClientAnalyzerPreviousVersion.exe` URL の接続テストを実行するために呼び出される実行可能ファイルを呼び出します。Microsoft Monitoring Agent データ チャネル `TestCloudConnection.exe` URL の接続ツールを使用します。
+> Windows 8.1、Windows Server 2016、または Microsoft Monitoring Agent (MMA) をオンボーディングに使用する以前の OS エディションでは、クライアント アナライザー スクリプトは、コマンドとコントロール (CnC) `MDEClientAnalyzerPreviousVersion.exe` URL の接続テストを実行するために呼び出される実行可能ファイルを呼び出し、同時に呼び出します。Microsoft Monitoring Agentデータ チャネル `TestCloudConnection.exe` URL の接続ツールを使用します。
 
 
 アナライザーに含まれるすべての PowerShell スクリプトとモジュールは Microsoft 署名済みです。
 ファイルが何か変更されている場合、アナライザーは次のエラーで終了する必要があります。
 
-![クライアント アナライザー エラーのイメージ](images/sigerror.png)
+:::image type="content" source="images/sigerror.png" alt-text="クライアント アナライザー エラー" lightbox="images/sigerror.png":::
 
 
-このエラーが表示された場合、issuerInfo.txt出力には、その原因と影響を受けたファイルに関する詳細情報が含まれる。
+このエラーが表示された場合、issuerInfo.txt出力には、それが発生した理由と影響を受けたファイルに関する詳細情報が含まれる。
 
-![発行者情報の画像](images/issuerinfo.png)
-
-
-変更後のMDEClientAnalyzer.ps1例:
-
-![変更された ps1 ファイルのイメージ](images/modified-ps1.png)
+:::image type="content" source="images/issuerinfo.png" alt-text="発行者情報" lightbox="images/issuerinfo.png":::
 
 
+変更後のコンテンツMDEClientAnalyzer.ps1例:
 
-## <a name="result-package-contents-on-windows"></a>結果パッケージの内容がWindows
+:::image type="content" source="images/modified-ps1.png" alt-text="変更された ps1 ファイル" lightbox="images/modified-ps1.png":::
+
+
+
+## <a name="result-package-contents-on-windows"></a>結果パッケージのコンテンツ (Windows
 
 > [!NOTE]
 > キャプチャされる正確なファイルは、次のような要因によって変わる場合があります。
 >
 > - アナライザーが実行されるウィンドウのバージョン。
 > - コンピューター上のイベント ログ チャネルの可用性。
-> - センサーの開始状態 (EDRまだオンボードされていない場合、センサーは停止します)。
+> - センサーの開始状態EDR (コンピューターがまだオンボードされていない場合、センサーは停止されます)。
 > - アナライザー コマンドで高度なトラブルシューティング パラメーターが使用されている場合。
 
-既定では、開梱されたMDEClientAnalyzerResult.zipには、次の項目が含まれます。
+既定では、アンパックされたMDEClientAnalyzerResult.zipには、次の項目が含まれます。
 
 - MDEClientAnalyzer.htm
 
@@ -156,7 +156,7 @@ ms.locfileid: "62281533"
 
   - OperationsManager.evtx
 
-    説明: イベント ログMicrosoft Monitoring Agentエクスポートする
+    説明: イベント ログMicrosoft Monitoring Agentエクスポート
 
 
 

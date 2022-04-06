@@ -17,12 +17,12 @@ ms.collection:
 description: レポート メッセージまたはレポート フィッシング アドインを Outlook および Outlook on the web、個々のユーザー、または組織全体に対して有効にする方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc4c03a0ed1f0a03d96776c841203c9131c3067c
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 758ee81852d9037ce39cbfdc6f2c2d6ad795aff2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468882"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466831"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>メッセージのレポートまたはフィッシング アドインのレポートを有効にする
 
@@ -50,7 +50,7 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 グローバル管理者または Exchange Online 管理者で、Exchange が OAuth 認証を使用するように構成されている場合は、組織のレポート メッセージ アドインとレポート フィッシング アドインを有効にできます。 どちらのアドインも、集中展開を [通じて利用できます](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - レポート メッセージ アドインとレポート フィッシング アドインの両方が、ほとんどのサブスクリプションとMicrosoft 365製品で動作します。
   - Outlook on the web
@@ -93,7 +93,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 
 2. [今 **すぐ取得] をクリックします**。
 
-   ![レポート メッセージ - 今すぐ取得します。](../../media/ReportMessageGETITNOW.png)
+   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="[今すぐ取得] レポート メッセージ" lightbox="../../media/ReportMessageGETITNOW.png":::
 
 3. 表示されるダイアログで、利用規約とプライバシー ポリシーを確認し、[続行] をクリック **します**。
 
@@ -104,7 +104,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 - このOutlookアイコンは次のように表示されます。
 
     > [!div class="mx-imgBorder"]
-    > ![[レポート メッセージ] アドイン アイコン (Outlook)。](../../media/OutlookReportMessageIcon.png)
+    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="[レポート メッセージ] アドインの [レポート] Outlook" lightbox="../../media/OutlookReportMessageIcon.png":::
 
 - このOutlook on the webアイコンは次のように表示されます。
 
@@ -119,19 +119,20 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 1. [統合 [Microsoft 365 管理センター](https://admin.microsoft.com/AdminPortal/Home?#/homepage)] で、[統合 **設定** \> **] に移動します**。 [アプリ **の取得] をクリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft 365 管理センター統合アプリ](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="統合Microsoft 365 管理センターアプリ" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+
 
 2. 表示される **[Microsoft 365 Apps**] ページで、[検索] ボックスをクリックし、[レポート メッセージ] と入力し、[検索] アイコン **を**![クリックします](../../media/search-icon.png)。 結果の一覧で、[レポート メッセージ] を **見つけて選択します**。 
 
 3. アプリの詳細ページが開きます。 [今 **すぐ取得] を選択します**。 
 
     > [!div class="mx-imgBorder"]
-    > ![レポート メッセージ アドイン](../../media/microsoft-365-admin-center-report-message.png)  
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="レポート メッセージ アドイン" lightbox="../../media/microsoft-365-admin-center-report-message.png":::
 
 4. 基本的なプロファイル情報を入力し、[続行] を **クリックします**。 
 
     > [!div class="mx-imgBorder"]
-    > ![レポート メッセージ アドイン プロファイルのセットアップ](../../media/microsoft-365-admin-center-profile-info.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="レポート メッセージ アドイン プロファイルのセットアップ" lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
 
 5. [ **新しいアプリの展開]** フライアウトが開きます。 次の設定を構成します。 [次 **へ]** をクリックして、次のページに移動してセットアップを完了します。 
 
@@ -144,13 +145,13 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
      - **アクセス許可の要求を受け** 入れる: 次のページに進む前に、アプリのアクセス許可と機能を注意深く読んでください。
 
         > [!div class="mx-imgBorder"]
-        > ![アプリのアクセス許可](../../media/microsoft-365-admin-center-deploy-new-app.png)
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="[アクセス許可の要求を受け入れる] ページ" lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
 
      - **展開の完了**: アドインの展開を確認して終了します。 
      - **展開が完了しました**: [ **完了] を選択** してセットアップを完了します。 
 
         > [!div class="mx-imgBorder"]
-        > ![展開の完了](../../media/microsoft-365-admin-center-deployment-complete.png)
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="展開の通知メッセージが完了しました" lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
 
 ## <a name="edit-settings-for-the-report-message-add-in"></a>レポート メッセージ アドインの設定を編集する
 
@@ -159,7 +160,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 2. 表示されるフライアウトで、[ユーザーの編集] **を選択して** ユーザー設定を編集します。
 
     > [!div class="mx-imgBorder"]
-    > ![レポート メッセージの飛び出し](../../media/microsoft-365-admin-center-report-message-edit.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="レポート メッセージの飛び出し" lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
 
 3. アドインを削除するには、同じフライアウト **の [アクション** ] **で [アプリ** の削除] を選択します。 
 
@@ -194,7 +195,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 1. [統合 [Microsoft 365 管理センター](https://admin.microsoft.com/AdminPortal/Home?#/homepage)] で、[統合 **設定** \> **] に移動します**。 [アプリ **の取得] をクリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft 365 管理センター統合アプリ](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="統合Microsoft 365 管理センターアプリ" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
 2. 表示される **[Microsoft 365 Apps**] ページで、[検索] ボックスをクリックし、[レポートフィッシング] と入力し、[検索検索] アイコン **を**![クリックします。](../../media/search-icon.png) 結果の一覧で、[フィッシングの報告] **を見つけて選択します**。 
  
@@ -211,6 +212,6 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 2. 表示されるフライアウトで、[ユーザーの編集] **を選択して** ユーザー設定を編集します。
 
     > [!div class="mx-imgBorder"]
-    > ![レポート フィッシング フライアウト](../../media/microsoft-365-admin-center-report-phishing-edit.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="レポートのフィッシング フライアウト" lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
 3. アドインを削除するには、同じフライアウト **の [アクション** ] **で [アプリ** の削除] を選択します。 

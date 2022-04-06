@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex の事前構築済みモデルの概要
+title: Microsoft SharePoint Syntex での事前構築済みモデルの概要
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,15 +8,20 @@ audience: admin
 ms.topic: article
 ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex の事前構築済みモデルについて説明します。
+ms.openlocfilehash: 1146e4947392ce0e0848632e55f22e5b8b8d2d91
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569050"
 ---
-
-# <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の事前構築済みモデルの概要
+# <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex での事前構築済みモデルの概要
 
 ドキュメントの理解[モデルとフォーム](document-understanding-overview.md)処理[](form-processing-overview.md)モデルに加えて、SharePoint Syntex情報の抽出を自動化するための事前構築されたモデルが用意されています。
 
@@ -24,13 +29,15 @@ description: Microsoft SharePoint Syntex の事前構築済みモデルについ
 
 事前構築済みのモデルでは、光学式文字認識 (OCR) とディープ ラーニング モデルを組み合わせて使用して、特定のドキュメントの種類に共通する定義済みのテキストフィールドとデータ フィールドを識別および抽出します。 まず、作成済みのモデルに対してファイルの 1 つを分析します。 次に、目的に合った検出されたフィールドを選択します。 モデルが必要なフィールドを検出しない場合は、別のファイルを使用してもう一度分析できます。
 
-ドキュメントの理解モデルと同様に、事前構築済みのモデルはコンテンツ センターで [作成および管理されます](create-a-content-center.md)。 ドキュメント ライブラリに適用SharePoint、モデルはコンテンツ タイプに関連付け、抽出される情報を格納する列を持つ。 
+ドキュメントの理解モデルと同様に、事前構築済みのモデルはコンテンツ センターで [作成および管理されます](create-a-content-center.md)。 ドキュメント ライブラリに適用SharePoint、モデルはコンテンツ タイプに関連付けられるので、抽出される情報を格納する列があります。 
 
 モデルを公開したら、コンテンツセンターを使用して、アクセスできる SharePoint ドキュメントライブラリにモデルを適用します。  
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 - サポートされているファイル形式: JPEG、PNG、BMP、TIFF、PDF (テキスト埋め込みまたはスキャン)。
+
+- サポートされている言語: 現在サポートされている言語の米国英語の請求書のみです。 オーストラリア、カナダ、カナダ、米国、インドからの英語の販売領収書がサポートされています。
 
 - テキスト埋め込み PDF は、文字の抽出と場所でエラーが発生する可能性を排除するために最適です。
 

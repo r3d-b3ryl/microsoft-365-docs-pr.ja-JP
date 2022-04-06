@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 572794880015f53f6db0a3d449dd3d19987cae21
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 6b29bb45820c0fc74443f14fd2c6866bc026e969
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214035"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467293"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のプレビュー エクスペリエンスを有効にする
 
@@ -37,12 +37,12 @@ ms.locfileid: "62214035"
 
 プレビュー機能設定をオンにして、今後の機能をいち早く試します。
 
-1. ナビゲーション ウィンドウで、[エンドポイントの詳細設定 **] 設定** \> **を** \> **選択します**。
+1. ナビゲーション ウィンドウで、[エンドポイント **の詳細設定設定** \> **選択** \> **します**。
 
-    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="設定とプレビュー エクスペリエンス イメージ。":::
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="設定とプレビューエクスペリエンス" lightbox="../../media/atp-preview-features-new.png":::
 
 
-2. [オン] と [オフ]**の間で設定を****切り替え**、[基本設定の保存]**を選択します**。
+2. [オン] と [オフ] **の間で設定を****切り替え**、[基本設定 **の保存] を選択します**。
 
 ## <a name="related-topics"></a>関連項目
 - [Microsoft Defender for Endpoint の一般的な設定を更新する](data-retention-settings.md)

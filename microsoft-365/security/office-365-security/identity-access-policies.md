@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 36df54090e80de180ffa16f41641daa6b6966eb9
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 2a12a4198b91ab6ec91e0b49b9de3647e25d0be0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681328"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473851"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>一般的なゼロ信頼 ID とデバイス アクセス ポリシー
 
@@ -76,7 +76,7 @@ Here's a one-page PDF summary:
 
 MFA を要求するグループの割り当てと除外の例を次に示します。
 
-![MFA ポリシーのグループ割り当てと除外の例。](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png" alt-text="MFA ポリシーのグループ割り当てと除外の例" lightbox="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png":::
 
 結果は次のとおりです。
 
@@ -94,7 +94,7 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 これらのAzure ADの一部として作成されたすべてのグループは、グループとしてMicrosoft 365があります。 これは、ドキュメントをセキュリティで保護する際に、Microsoft Teamsラベルを展開SharePoint。
 
-![グループを作成するMicrosoft 365例。](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png" alt-text="グループのMicrosoft 365する" lightbox="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png":::
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>サインイン リスクに基づいて MFA を要求する
 
@@ -365,8 +365,8 @@ Android の場合Enterpriseプロファイル デバイス:
 |Password|モバイル デバイスのロックを解除するパスワードを要求する|必須|選択|
 ||単純なパスワード|ブロック|選択|
 ||パスワードの種類|デバイスの既定値|選択|
-||パスワードの最小文字数|6 |型|
-||パスワードが要求されるまでの非アクティブの最長時間 (分)|15 |型 <p> この設定は、Android バージョン 4.0 以上または KNOX 4.0 以上でサポートされています。 iOS デバイスの場合、iOS 8.0 以上でサポートされています。|
+||パスワードの最小文字数|6 |種類|
+||パスワードが要求されるまでの非アクティブの最長時間 (分)|15 |種類 <p> この設定は、Android バージョン 4.0 以上または KNOX 4.0 以上でサポートされています。 iOS デバイスの場合、iOS 8.0 以上でサポートされています。|
 ||パスワードの有効期限 (日)|41|型|
 ||再使用を禁止するパスワード世代数|5|型|
 ||デバイスがアイドル状態から戻る際にパスワードを要求する (Mobile および Holographic)|必須|Windows 10以降に使用可能|
@@ -375,7 +375,7 @@ Android の場合Enterpriseプロファイル デバイス:
 ||ウイルス対策|必須|選択|
 ||スパイウェア対策|必須|選択 <p> この設定には、アプリに登録されているスパイウェア対策ソリューションWindows セキュリティがあります。|
 |クラウド用 Defender|Microsoft Defender マルウェア対策|必須|選択|
-||Microsoft Defender マルウェア対策の最小バージョン||型 <p> デスクトップでのみWindows 10されます。 Microsoft では、最新バージョンから 5 つ以下のバージョンをお勧めします。|
+||Microsoft Defender マルウェア対策の最小バージョン||種類 <p> デスクトップでのみWindows 10されます。 Microsoft では、最新バージョンから 5 つ以下のバージョンをお勧めします。|
 ||Microsoft Defender マルウェア対策の署名を最新の情報に更新する|必須|選択|
 ||リアルタイム保護|必須|選択 <p> デスクトップおよび以降のデスクトップWindows 10サポートのみ|
 
@@ -440,8 +440,8 @@ To require compliant PCs:
 > [!NOTE]
 > このポリシーを有効にする前に、デバイスが準拠している必要があります。 それ以外の場合は、ユーザー アカウントが条件付きアクセス除外グループに追加されるまで、ロックアウトされ、このポリシーを変更できません。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
-[![手順 3: ゲストユーザーと外部ユーザーのポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
+[![手順 3: ゲストユーザーと外部ユーザーのポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png#lightbox)](identity-access-policies-guest-access.md)
 
 [ゲストユーザーと外部ユーザーのポリシー推奨事項の詳細](identity-access-policies-guest-access.md)

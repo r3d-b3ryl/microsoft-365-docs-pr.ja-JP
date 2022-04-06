@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4e819a9de9d5ccd66caab4bc13d8b11c1a95ab03
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bd76eed421f4d926a956508961dc44a643dbb125
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681724"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467095"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルのアクセス許可
 
@@ -55,7 +55,7 @@ Microsoft 365 Defender ポータルのアクセス許可は、役割ベースの
 
 Microsoft 365 Defender ポータル> には、割り当てる必要がある最も一般的なタスクと機能の既定の役割グループが含まれています。通常では、この既定の役割グループに (個人ユーザーまたはグループを) **メンバー** として追加することをお勧めします。
 
-![役割グループと、ロールおよびメンバーとの関係を示す図。](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+:::image type="content" source="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png" alt-text="役割グループとその役割およびメンバーの関係" lightbox="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png":::
 
 ## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルの役割と役割グループ
 
@@ -65,7 +65,7 @@ Microsoft 365 Defender ポータルの <https://security.microsoft.com/securityp
 
 - **メールと共同作業の役割**: セキュリティ/コンプライアンス センターで使用できるのと同じ役割グループですが、Microsoft 365 Defender ポータルから直接管理できます。 ここで割り当てるアクセス許可は Microsoft 365 Defender ポータル、Microsoft 365 コンプライアンス センター、およびセキュリティ/コンプライアンス センターに固有のものであり、他の Microsoft 365 ワークロードで必要なすべてのアクセス許可をカバーするものではありません。
 
-![Microsoft 365 Defender ポータルのアクセス許可と役割のページ。](../../media/m365-sc-permissions-and-roles-page.png)
+:::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="Microsoft 365 Defender ポータルのアクセス許可と役割のページ" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
 ### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルの Azure AD ロール
 
@@ -73,7 +73,7 @@ Microsoft 365 Defender ポータルの <https://security.microsoft.com/securityp
 
 役割を選択すると、役割の説明とユーザーの割り当てを含む詳細ポップアップが表示されます。 ただし、それらの割り当てを管理するには、詳細ポップアップで **[Azure AD でメンバーを管理する]** をクリックする必要があります。
 
-![Azure Active Directory のアクセス許可管理へのリンク。](../../media/permissions-manage-in-azure-ad-link.png)
+:::image type="content" source="../../media/permissions-manage-in-azure-ad-link.png" alt-text="Azure Active Directory のアクセス許可管理へのリンク" lightbox="../../media/permissions-manage-in-azure-ad-link.png":::
 
 詳細については、「[Azure Active Directory で管理者ロールを表示して割り当てる](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)」を参照してください。
 

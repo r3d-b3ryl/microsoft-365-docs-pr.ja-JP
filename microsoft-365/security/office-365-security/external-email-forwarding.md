@@ -16,12 +16,12 @@ ms.custom:
 description: この記事では、外部メール転送、自動転送、5.7.520 Access Denied メッセージ、外部転送の無効化、"管理者が外部転送を無効にしました" メッセージ、および送信スパム対策ポリシーなどのトピックについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14b41f21efe3608096636444afd4b36de3742a85
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8df0ff9902fe22fd44a0d15f7f01e13e791c7b12
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681416"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473609"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>外部メールの自動転送を制御Microsoft 365
 
@@ -59,7 +59,7 @@ ms.locfileid: "63681416"
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>送信スパム フィルター ポリシー設定が他の自動メール転送コントロールとどのように機能する
 
-管理者は、電子メールの自動転送を許可またはブロックするように他のコントロールを既に構成している可能性があります。 例:
+管理者は、電子メールの自動転送を許可またはブロックするように他のコントロールを既に構成している可能性があります。 次に例を示します。
 
 - [一部またはすべての](/exchange/mail-flow-best-practices/remote-domains/remote-domains) 外部ドメインへの自動メール転送を許可またはブロックするリモート ドメイン。
 - メール フロー ルール ([トランスポート Exchangeとも](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)呼ばれる) で、自動的に転送されたメッセージを検出して外部受信者にブロックする条件とアクション。
@@ -91,7 +91,8 @@ ms.locfileid: "63681416"
 - (省略可能) **次の操作** (アクション): オプションのアクションを構成できます。 たとえば、[メッセージのプロパティの変更\>] アクションを使用して、メッセージ ヘッダーを設定し、ヘッダー名 **X-Forwarded** と値 True を指定 **できます**。 ただし、アクションを構成する必要はありません。
 - 重大度 **レベルを使用してこの rue を監査する値** を **Low**、 **Medium、または High に** 設定 **します**。 この設定を使用すると、転送Exchange[の](view-email-security-reports.md#exchange-transport-rule-report)詳細を取得するために、トランスポート ルール レポートを使用できます。
 
-![転送されたメッセージを識別するルールの EAC のメール フロー ルールプロパティ。](../../media/mail-flow-rule-for-forwarded-messages.png)
+:::image type="content" source="../../media/mail-flow-rule-for-forwarded-messages.png" alt-text="転送されたメッセージを識別するルールの EAC のメール フロー ルールプロパティ" lightbox="../../media/mail-flow-rule-for-forwarded-messages.png":::
+
 
 ## <a name="blocked-email-forwarding-messages"></a>ブロックされたメール転送メッセージ
 

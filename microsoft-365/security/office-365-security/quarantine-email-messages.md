@@ -19,17 +19,17 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、潜在的に危険なメッセージまたは望ましくないメッセージExchange Online Protection (EOP) の検疫について学習できます。
+description: 管理者は、潜在的に危険なメッセージまたは望ましくないメッセージExchange Online Protection(EOP) の検疫について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 509e093d1618cf17d8f5f880aa82a2c54e8204bf
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: ac2d1bf550fd340c1e94ed5f3503352b40ba6556
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284147"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682771"
 ---
-# <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>EOP および Defender で検疫された電子メール Office 365
+# <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>EOP および Defender の検疫済み電子メール Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "61284147"
 
 Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、潜在的に危険なメッセージや望ましくないメッセージを保持するために検疫を利用できます。
 
-マルウェア対策ポリシーは、添付ファイルにマルウェアが含まれていると検出された場合、メッセージを自動的に検疫します。 詳細については [、「EOP でマルウェア対策ポリシーを構成する」を参照してください](configure-anti-malware-policies.md)。
+マルウェア対策ポリシーは、添付ファイルにマルウェアが含まれていると検出された場合、メッセージを自動的に検疫します。 詳細については、「 [EOP でマルウェア対策ポリシーを構成する」を参照してください](configure-anti-malware-policies.md)。
 
 既定では、スパム対策はフィッシングメッセージと高信頼フィッシング メッセージを検疫し、スパム、高信頼スパム、バルク メール メッセージをユーザーの迷惑メール フォルダーに配信します。 ただし、スパム対策ポリシーを作成およびカスタマイズして、スパム、高信頼スパム、バルク メール メッセージを検疫することもできます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
@@ -50,27 +50,22 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 - 管理者は、すべてのユーザーのすべての種類の検疫済みメッセージを処理できます。 既定では、マルウェア、高信頼フィッシング、またはメール フロー ルール (トランスポート ルールとも呼ばれる) の結果として検疫されたメッセージを管理者だけが処理できます。 詳細については、「[EOP の管理者として検疫済みのメッセージやファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。
 
-- 既定では、ユーザーは受信者であり、メッセージがスパム、バルク メール、またはフィッシング (高信頼フィッシングではない) として検疫された検疫済みメッセージを操作できます。 詳細については、「EOP で検疫済みメッセージをユーザーとして検索して解放する [」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
+- 既定では、ユーザーは受信者であり、メッセージがスパム、バルク メール、またはフィッシング (高信頼フィッシングではない) として検疫された検疫済みメッセージを操作できます。 詳細については、「 [EOP で検疫済みメッセージをユーザーとして検索して解放する」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
 
-  ユーザーが検疫済みフィッシング メッセージを管理するのを防ぐために、管理者はスパム対策ポリシーのフィッシングメール フィルターの評決から検疫済みメッセージへのアクセスを拒否する検疫ポリシーを割り当てできます。 詳細については、「スパム対策[ポリシーで検疫ポリシー](quarantine-policies.md#anti-spam-policies)を割り当てる」を[参照してください](quarantine-policies.md)。
+  ユーザーが検疫済みフィッシング メッセージを管理するのを防ぐために、管理者はスパム対策ポリシーのフィッシングメール フィルターの評決から検疫済みメッセージへのアクセスを拒否する検疫ポリシーを割り当てできます。 詳細については、「スパム対策[ポリシーで](quarantine-policies.md#anti-spam-policies)検疫ポリシーを割り当てる[Quarantine ポリシー」を参照してください](quarantine-policies.md)。
 
 - 管理者とユーザーは、検疫中に誤検知を Microsoft に報告できます。
 
 - 検疫済みメッセージが期限切れになる前に検疫に保持される期間は、メッセージが検疫された理由によって異なります。 メッセージとその対応する保持期間を検疫する機能については、次の表で説明します。
 
-  <br>
-
-  ****
-
   |検疫の理由|既定の保持期間|カスタマイズ可能ですか?|コメント|
   |---|---|:---:|---|
-  |スパム対策ポリシーによって検疫されたメッセージ: スパム、高信頼スパム、フィッシング、高信頼フィッシング、またはバルク。|15 日間: <ul><li>既定のスパム対策ポリシーで。</li><li>PowerShell で作成するスパム対策ポリシー。</li></ul> <p> ポータルで作成したスパム対策ポリシーで 30 Microsoft 365 Defender。|はい|スパム対策ポリシーでこの値を構成 (低く) できます。 詳細については、「スパム **対策ポリシーの** 構成」の「この日数の検疫にスパムを保持する (_QuarantineRetentionPeriod_) 」 [の設定を参照してください](configure-your-spam-filter-policies.md)。|
-  |フィッシング対策ポリシーによって検疫されたメッセージ: EOP のスプーフィング インテリジェンス。Defender のユーザー偽装、ドメイン偽装、またはメールボックス インテリジェンスOffice 365。|30 日間|はい|この保持期間は、スパム対策ポリシーの [この日数の検疫にスパムを保持する **(** _QuarantineRetentionPeriod)_ 設定によって **も** 制御されます。 使用される保持期間は、受信者が定義されている最初に一致するスパム対策ポリシーの値です。|
+  |スパム対策ポリシーによって検疫されたメッセージ: スパム、高信頼スパム、フィッシング、高信頼フィッシング、またはバルク。|15 日間: <ul><li>既定のスパム対策ポリシーで。</li><li>PowerShell で作成するスパム対策ポリシー。</li></ul> <p> ポータルで作成したスパム対策ポリシーで 30 日間Microsoft 365 Defenderします。|はい|スパム対策ポリシーでこの値を構成 (低く) できます。 詳細については、「スパム対策ポリシーを構成する」の「この日数の検疫にスパムを保持 **する (**_QuarantineRetentionPeriod_)設定 [」を参照してください](configure-your-spam-filter-policies.md)。|
+  |フィッシング対策ポリシーによって検疫されたメッセージ: EOP のスプーフィング インテリジェンス。Defender のユーザー偽装、ドメイン偽装、またはメールボックス インテリジェンスOffice 365。|30 日間|はい|この保持期間は、スパム対策ポリシーの [この日数の検疫にスパムを保持 **する (**_QuarantineRetentionPeriod_) 設定によって **も** 制御されます。 使用される保持期間は、受信者が定義されている最初に一致するスパム対策ポリシーの値です。|
   |マルウェア対策ポリシー (マルウェア メッセージ) によって検疫されたメッセージ。|15 日|いいえ||
-  |Defender の添付ファイル セーフによって検疫されたメッセージ (マルウェア Office 365メッセージ)。|15 日|不要||
-  |メール フロー ルールによって検疫されたメッセージ: アクションは、メッセージをホストされた検疫 (検疫)**に配信**_します_。|30 日間|不要||
-  |[添付ファイル] セーフ、SharePoint、OneDrive(マルウェア ファイルMicrosoft Teams) によって検疫されたファイル。|15 日|いいえ||
-  |
+  |Defender の [添付ファイル] セーフによって検疫されたメッセージ (マルウェア Office 365メッセージ)。|15 日|いいえ||
+  |メール フロー ルールによって検疫されたメッセージ: アクションは、メッセージをホストされた検疫 (検疫) **に配信**_します_。|30 日間|いいえ||
+  |[添付ファイル] セーフ、SharePoint、OneDrive(マルウェア Microsoft Teamsファイル) によって検疫されたファイル。|15 日|いいえ||
 
   検疫からメッセージの有効期限が切れると、メッセージを回復できません。
 

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 70a5eba3eb78878cc1f15bdd711a3331e9af870a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e9cd2388d3551ccc0c180d20a92ec0c513472797
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680888"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473675"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -122,7 +122,7 @@ Microsoft 365には、Exchange 管理者アクセス許可の悪用、マルウ�
 
 Microsoft Defender で既に AIR 機能を使用している場合は、Office 365ポータルでいくつかの変更点を確認[Microsoft 365 Defenderしています](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="統合アクション センター。":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="統合アクション センター" lightbox="../../media/m3d-action-center-unified.png":::
 
 新しく改善されたMicrosoft 365 Defenderポータル<https://security.microsoft.com>には、[Microsoft Defender for microsoft Defender と Microsoft Defender](defender-for-office-365.md) [for Endpoint Office 365 AIR 機能が統合されています](../defender-endpoint/automated-investigations.md)。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。
 
@@ -138,7 +138,7 @@ Microsoft Defender で既に AIR 機能を使用している場合は、Office 3
 
 次の表に、Microsoft Defender の AIR に加わる変更と改善点を示Office 365。
 
-|項目|何が変わるのか?|
+|アイテム|何が変わるのか?|
 |---|---|
 |**[調査]** ページ|更新された [ **調査] ページ** は、 [Microsoft Defender for Endpoint に表示される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
 |**[ユーザー]** タブ|[ **ユーザー]** タブが [ **メールボックス] タブ** です。ユーザーに関する詳細は、[メールボックス] タブ **に表示** されます。|

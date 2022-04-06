@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 で昇格された特権タスクを実行し、データへのリスクを軽減ため、Just-In-Time の時間制限付きアクセスをユーザーに付与するために Azure PIM を統合する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3be90ff1113e25ea418aaf1a25b12574b3bbbe1f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c45edc7ab7f90c98baecd15565508bc9a49f39a8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939479"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473411"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) と Microsoft Defender for Office 365 で使用する理由
@@ -58,7 +58,7 @@ Defender for Office 365 と連携するように PIM を設定することで、
 > [!NOTE]
 > Privileged Identity Management を簡単にレビューするには[このビデオ](https://www.youtube.com/watch?v=VQMAg0sa_lE)をご覧ください。
 
-:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="必ず特権アクセス管理で、セキュリティ リーダーの役割の設定をスキャンするようにしてください。ここでは、PIM ライセンス認証の最大期間が 8 時間であるのが表示されます。":::
+:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="役割設定の詳細 - [セキュリティ閲覧者] ページ" lightbox="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png":::
 
 ***手順 2***。追加のタスクに必要な 2 番目の (昇格された) アクセス許可グループを作成し、適格性を割り当てます。
 
@@ -99,7 +99,7 @@ Microsoft 365 Defender ポータルで、必要なアクセス許可を含むカ
 3. 脅威エクスプローラーを使用してメールを削除しようとすると、追加のアクセス許可が必要であることを示すエラーが表示されます。
 4. 2 度目は短時間の遅延の後に、PIM の役割がより昇格され、問題なくメールを削除できるようになります。
 
-   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="セキュリティ リーダー PIM の役割を介して追加したユーザー (Alex) が疑わしいメールを削除しようとすると、&quot;このメールに対してアクションを実行するには、検索と削除の役割が必要です&quot; というメッセージが表示されます。管理者に問い合わせて役割の割り当てを取得するか、インシデントにメールを追加します。":::
+   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="[メール] タブの [アクション] ペイン" lightbox="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG":::
 
 検索と削除の役割など管理者的役割の永続的な割り当てでは、ゼロ トラスト セキュリティ イニシアチブでは保持されませんが、PIM を使用して、必要なツールセットへのジャストインタイム アクセスが許可されます。
 

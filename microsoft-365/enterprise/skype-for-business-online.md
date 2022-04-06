@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 f1.keywords:
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: 管理者は、ネットワーク、会議、IM、ユーザーの外部アクセスなど、Skype for Business Online の一部をセットアップするためのヘルプを見つける。
-ms.openlocfilehash: 00ddd9072fccf07d7d0d5d2c148950112d40e075
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3be6eaaf5d39ebb62dcc4a7cc090633147681301
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197223"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682132"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365 の Skype for Business Online - 管理ヘルプ
 
@@ -71,7 +71,7 @@ Skype for Business を使用しているユーザーが、組織外部のユー�
     
 - [ビデオ: サインインとサインインのSkype for Business](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
-- [[オーディオ デバイス] オプションを [Skype for Business](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
+- [[オーディオ デバイス] オプションを [オーディオ デバイス] でSkype for Business](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
 - [Skype for Business 会議に参加する](https://support.office.com/article/3862be6d-758a-4064-a016-67c0febf3cd5)
     

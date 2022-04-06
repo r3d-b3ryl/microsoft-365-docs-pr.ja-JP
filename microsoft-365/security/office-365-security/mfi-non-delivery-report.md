@@ -15,12 +15,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで配信不可の詳細レポートを使用して、組織内の送信者からの配信不可レポート (NDRs またはバウンス メッセージとも呼ばれる) で最も頻繁に発生するエラー コードを監視する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73d48b831f42deca83b6b1b62fde09cd6c44562e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bc408f6bb28b11e77c49755b888c44e0ea4d9f57
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679634"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473741"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの配信&レポート
 
@@ -33,7 +33,7 @@ ms.locfileid: "63679634"
 
 [セキュリティ &](https://protection.office.com) コンプライアンス センターのメール フロー [](mail-flow-insights-v2.md) ダッシュボードの配信不可レポートには、組織内のユーザーの配信不可レポート (NDRs またはバウンス メッセージとも呼ばれる) で最も発生したエラー コードが表示されます。 このレポートには、メール配信の問題をトラブルシューティングするための、NDRs の詳細が表示されます。
 
-![セキュリティ センターコンプライアンス センターのメール フロー ダッシュボードの配信&ウィジェット。](../../media/mfi-non-delivery-report-widget.png)
+:::image type="content" source="../../media/mfi-non-delivery-report-widget.png" alt-text="セキュリティ 管理コンプライアンス センターのメール フロー ダッシュボードの配信&ウィジェット" lightbox="../../media/mfi-non-delivery-report-widget.png":::
 
 ## <a name="report-view-for-the-non-delivery-report"></a>配信不可レポートのレポート ビュー
 
@@ -43,7 +43,7 @@ ms.locfileid: "63679634"
 
 グラフ内の特定の日に特定の色 (エラー コード) にカーソルを合わせると、エラーのメッセージの総数が表示されます。
 
-![[承認されていないドメイン] レポートのレポート ビュー。](../../media/mfi-non-delivery-report-overview-view.png)
+:::image type="content" source="../../media/mfi-non-delivery-report-overview-view.png" alt-text="[非承諾ドメイン] レポートの [レポート] ビュー" lightbox="../../media/mfi-non-delivery-report-overview-view.png":::
 
 ## <a name="details-table-view-for-the-non-delivery-report"></a>配信不可レポートの詳細テーブル ビュー
 
@@ -65,7 +65,8 @@ ms.locfileid: "63679634"
 - **Count**
 - **サンプル メッセージ**: [サンプル メッセージの **表示] を** クリックすると [](message-trace-scc.md)、影響を受けるメッセージのサンプルのメッセージ トレース結果を確認できます。
 
-![[配信不可] レポートの [詳細] テーブル ビューで行を選択した後の詳細の飛び出し。](../../media/mfi-non-delivery-report-details-flyout.png)
+
+:::image type="content" source="../../media/mfi-non-delivery-report-details-flyout.png" alt-text="[配信不可] レポートの [詳細] テーブル ビューで行を選択した後の詳細フライアウト" lightbox="../../media/mfi-non-delivery-report-details-flyout.png":::
 
 ## <a name="related-topics"></a>関連項目
 

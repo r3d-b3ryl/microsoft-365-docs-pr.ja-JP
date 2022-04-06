@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defenderの設定
-description: ここに示す情報を使用して、タイム ゾーンの設定Microsoft 365 Defenderライセンス情報を表示します。
+description: ここに示す情報を使用して、タイム ゾーンMicrosoft 365 Defender設定を構成し、ライセンス情報を表示します。
 keywords: 設定, Microsoft Defender, サイバーセキュリティ脅威インテリジェンス, エンドポイント用 Microsoft Defender, タイム ゾーン, utc, 現地時間, ライセンス
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4353bbfc0ce11c4a767ca599ecb23a1ab4f77a56
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: adf693bded45dcb44abd8d1e7892e5edc7b65585
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214029"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467161"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defenderの設定
 
@@ -32,7 +32,8 @@ ms.locfileid: "62214029"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)
 
-[タイム ゾーン **] メニューの** ![ [タイム ゾーン設定] アイコン 1 を使用します。](images/atp-time-zone.png) をクリックして、タイム ゾーンを構成し、ライセンス情報を表示します。
+[タイム ゾーン **] メニューを** 使用してタイム ゾーンを構成し、ライセンス情報を表示します。
+:::image type="content" source="images/atp-time-zone.png" alt-text="タイム ゾーンの設定-1" lightbox="images/atp-time-zone.png":::
 
 ## <a name="time-zone-settings"></a>タイム ゾーンの設定
 
@@ -42,7 +43,9 @@ Cyberforensic の調査では、多くの場合、タイム スタンプを使�
 
 Microsoft Defender for Endpoint では、協定世界時 (UTC) または現地時間を表示できます。
 
-現在のタイム ゾーン設定が Microsoft Defender の設定に表示されます。 表示されるタイム ゾーンは、[タイムゾーン] メニューの [セキュリティ センター] の下 **設定 >変更できます**。
+現在のタイム ゾーン設定は、[エンドポイント用 Microsoft Defender] メニューに表示されます。 表示されるタイム ゾーンは、[タイム ゾーン] メニュー **で変更** できます。
+
+:::image type="content" source="images/atp-time-zone-menu.png" alt-text="タイム ゾーンの設定-2" lightbox="images/atp-time-zone-menu.png":::
 
 ### <a name="utc-time-zone"></a>UTC タイム ゾーン
 
@@ -64,17 +67,18 @@ Microsoft Defender for Endpoint タイム ゾーンは、既定では UTC に設
 
 タイム ゾーンを設定するには、次の方法を実行します。
 
-1. [ポータルタイム **設定** 設定] アイコン 3 の [[Microsoft 365 Defender]](https://security.microsoft.com/) ![ メニューをクリックします ](images/atp-time-zone.png) 。
-2. [セキュリティ **センター] を選択します**。
-3. [ **タイム ゾーン] を** 選択し、タイム ゾーンを UTC またはローカル タイム ゾーンに設定します。
+1. [タイム ゾーン **] メニューをクリック** します。
+   :::image type="content" source="images/atp-time-zone.png" alt-text="タイム ゾーンの設定-3" lightbox="images/atp-time-zone.png":::
+1. タイム ゾーン **UTC インジケーターを選択** します。
+1. [ **タイム ゾーン UTC]** またはローカル タイム ゾーン (-7:00 など) を選択します。
 
 ### <a name="regional-settings"></a>地域の設定
 
-Microsoft Defender for Endpoint に異なる日付形式を適用するには、MICROSOFT Defender (IE) と Internet Explorer (Edge) の地域Microsoft Edge使用します。 Google Chrome などの別のブラウザーを使用している場合は、必要な手順に従って、そのブラウザーの時刻と日付の設定を変更します。 
+Microsoft Defender for Endpoint に異なる日付形式を適用するには、Microsoft Defender for Endpoint (IE) と Internet Explorer (Edge) の地域Microsoft Edgeを使用します。 Google Chrome などの別のブラウザーを使用している場合は、必要な手順に従って、そのブラウザーの時刻と日付の設定を変更します。 
 
 #### <a name="internet-explorer-ie-and-microsoft-edge"></a>Internet Explorer (IE) と Microsoft Edge
 
-IE とMicrosoft Edgeコントロール パネルの[時計、言語、地域] オプションで構成された地域設定を使用します。 
+IE とMicrosoft Edgeコントロール パネルの [時計、言語、地域]  オプションで構成された地域設定を使用します。 
 
 #### <a name="known-issues-with-regional-formats"></a>地域の形式に関する既知の問題
 
@@ -99,4 +103,4 @@ IE とMicrosoft Edgeコントロール パネルの[時計、言語、地域] �
 
 ##### <a name="decimal-symbol-used-in-numbers"></a>数値で使用される 10 進記号
 
-使用される 10 進記号は、地域設定の Numbers形式設定でコンマが選択されている場合でも、常に **ドット** です。 たとえば、15,5K は 15.5K と表示されます。
+使用される 10 進記号は、地域設定の Numbers 形式設定でコンマが選択されている場合でも、常に **ドット** です。 たとえば、15,5K は 15.5K と表示されます。

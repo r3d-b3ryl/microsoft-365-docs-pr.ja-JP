@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Plan 1 のセットアップと構成
+title: プラン 1 のセットアップMicrosoft Defender for Endpoint構成する
 description: Defender for Endpoint Plan 1 を設定および構成する方法について説明します。 要件を確認し、ロールアウトを計画し、環境をセットアップします。
 search.appverid: MET150
 author: denisebmsft
@@ -14,11 +14,16 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-defender-endpoint
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: 741450f2573e0d750a1d3de5012f97cf16a0780d
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569094"
 ---
-
-# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 のセットアップと構成
+# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>プラン 1 のセットアップMicrosoft Defender for Endpoint構成する
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -27,7 +32,7 @@ ms.collection:
 
 ## <a name="the-setup-and-configuration-process"></a>セットアップと構成プロセス
 
-:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Microsoft Defender for Endpoint Plan 1 のセットアップと展開フロー":::
+:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="プラン 1 のセットアップとMicrosoft Defender for Endpointフロー" lightbox="images/mde-p1-deploymentflow.png":::
 
 Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセスは次のとおりです。 <br/><br/>
 
@@ -37,7 +42,7 @@ Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセ
 | 1 | [要件を確認する](#review-the-requirements)  | ライセンス、ブラウザー、オペレーティング システム、およびデータセンターの要件の一覧   |
 | 2 | [展開の計画](#plan-your-deployment) | 考慮すべきいくつかの展開方法の一覧と、使用する方法を決定する際に役立つその他のリソースへのリンクが含まれています。  |
 | 3 | [テナント環境のセットアップ](#set-up-your-tenant-environment) | テナント環境をセットアップするタスクの一覧 |
-| 4 | [役割とアクセス許可の割り当て](#assign-roles-and-permissions) | セキュリティ チームで考慮する役割とアクセス許可の一覧 <br/><br/>**ヒント**: 役割とアクセス許可が割り当てられるとすぐに、セキュリティ チームは新しいポータルを使用Microsoft 365 Defenderできます。 詳細については、「 [Getting started」を参照してください](mde-plan1-getting-started.md)。 |
+| 4 | [役割とアクセス許可の割り当て](#assign-roles-and-permissions) | セキュリティ チームで考慮する役割とアクセス許可の一覧 <br/><br/>**ヒント**: 役割とアクセス許可が割り当てられるとすぐに、セキュリティ チームはポータルのMicrosoft 365 Defenderできます。 詳細については、「 [Getting started」を参照してください](mde-plan1-getting-started.md)。 |
 | 5 | [Defender for Endpoint へのオンボード](#onboard-to-defender-for-endpoint) | Defender for Endpoint Plan 1 にオンボードするオペレーティング システム別のいくつかのメソッドの一覧と、各メソッドの詳細情報へのリンクが含まれています  |
 | 6  | [次世代の保護を構成する](#configure-next-generation-protection) | デバイスで次世代の保護設定を構成する方法についてMicrosoft エンドポイント マネージャー  |
 | 7  | [攻撃表面の縮小機能を構成する](#configure-your-attack-surface-reduction-capabilities)        | 構成できる攻撃表面の縮小機能の種類と、より多くのリソースへのリンクを含む手順を示します。  |
@@ -48,7 +53,7 @@ Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセ
 
 | 要件 | 説明 |
 |:---|:---|
-| ライセンスの要件 | Defender for Endpoint Plan 1 (以前は Microsoft Defender for Endpoint Lite と呼ばば)|
+| ライセンスの要件 | Defender for Endpoint プラン 1 |
 | ブラウザー要件 | Microsoft Edge <br/> Internet Explorerバージョン 11 <br/> Google Chrome |
 | オペレーティング システム | Windows 10バージョン 1709 以降 <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave) <br/>iOS <br/>Android OS  |
 | Datacenter | 次のいずれかのデータセンターの場所。 <br/>- 欧州連合 <br/>- イギリス <br/>- 米国 |
@@ -60,10 +65,10 @@ Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセ
 
 | メソッド | 説明 |
 |:---|:---|
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Microsoft エンドポイント マネージャー) | Intune を使用してクラウド ネイティブ環境のエンドポイントを管理する |
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)[および構成マネージャー](/mem/configmgr/core/understand/introduction) (Microsoft エンドポイント マネージャー) | Intune と Configuration Manager を使用して、オンプレミス環境とクラウド環境にまたがるエンドポイントとワークロードを管理する |
-| [Configuration Manager](/mem/configmgr/core/understand/introduction) | Configuration Manager を使用して、Defender for Endpoint のクラウドベースの機能を使用してオンプレミスのエンドポイントを保護する |
-| ポータルからダウンロードしたローカル Microsoft 365 Defender スクリプト | エンドポイントでローカル スクリプトを使用してパイロットを実行するか、少数のデバイスをオンボードする |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Microsoft エンドポイント マネージャー) | クラウド Intune環境でエンドポイントを管理する場合は、次のコマンドを使用します。 |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)と[Configuration Manager](/mem/configmgr/core/understand/introduction) (Microsoft エンドポイント マネージャー) | オンプレミスIntuneクラウドConfiguration Managerにまたがるエンドポイントとワークロードを管理する場合は、アプリケーションとサーバーを使用します。 |
+| [Configuration Manager](/mem/configmgr/core/understand/introduction) | クラウド Configuration Manager Defender for Endpoint のクラウド ベースの電源でオンプレミス エンドポイントを保護するには、この機能を使用します。 |
+| ポータルからダウンロードされたローカル Microsoft 365 Defenderスクリプト | エンドポイントでローカル スクリプトを使用してパイロットを実行するか、少数のデバイスをオンボードする |
 
 展開オプションの詳細については、「Defender [for Endpoint の展開を計画する」を参照してください](deployment-strategy.md)。 次のポスターをダウンロードします。 
 
@@ -72,7 +77,7 @@ Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセ
 **[展開ポスターを取得する](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)**
 
 > [!TIP]
-> 展開の計画の詳細については、「 [Plan your Microsoft Defender for Endpoint deployment」を参照してください](deployment-strategy.md)。
+> 展開の計画の詳細については、「展開の計画」[をMicrosoft Defender for Endpointしてください](deployment-strategy.md)。
 
 ## <a name="set-up-your-tenant-environment"></a>テナント環境のセットアップ
 
@@ -87,7 +92,7 @@ Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセ
 
 ## <a name="assign-roles-and-permissions"></a>役割とアクセス許可の割り当て
 
-Microsoft 365 Defender ポータルにアクセスしたり、Defender for Endpoint の設定を構成したり、検出された脅威に対して応答アクションを実行するなどのタスクを実行するには、適切なアクセス許可を割り当てる必要があります。 Defender for Endpoint では、アプリケーション[内で組み込みのAzure Active Directory](/azure/active-directory/roles/permissions-reference)。 
+Microsoft 365 Defender ポータルにアクセスしたり、Defender for Endpoint の設定を構成したり、検出された脅威に対して応答アクションを実行するなどのタスクを実行するには、適切なアクセス許可を割り当てる必要があります。 Defender for Endpoint では、アプリケーション内で組み込[みのAzure Active Directory](/azure/active-directory/roles/permissions-reference)。 
 
 Microsoft では、タスクを実行するために必要なレベルのアクセス許可のみをユーザーに割り当てる必要があります。 基本的なアクセス許可管理を使用するか、役割ベースのアクセス制御 (RBAC) を使用してアクセス許可 [を割り](rbac.md) 当てることができます。 
 
@@ -99,7 +104,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 | 役割 | 説明 |
 |:---|:---|
-| グローバル管理者 (グローバル管理者とも呼ばれます) <br/><br/> *ベスト プラクティスとして、グローバル管理者の数を制限します。* | グローバル管理者は、あらゆる種類のタスクを実行できます。 既定では、Microsoft Defender for Endpoint Plan 1 Microsoft 365または Microsoft Defender の会社にサインアップしたユーザーは、グローバル管理者です。 <br/><br/> グローバル管理者は、次のようなすべてのポータルMicrosoft 365設定にアクセス/変更できます。 <br/>- Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
+| グローバル管理者 (グローバル管理者とも呼ばれます) <br/><br/> *ベスト プラクティスとして、グローバル管理者の数を制限します。* | グローバル管理者は、あらゆる種類のタスクを実行できます。 既定では、プラン 1 のMicrosoft 365またはMicrosoft Defender for Endpoint会社をサインアップしたユーザーは、グローバル管理者です。 <br/><br/> グローバル管理者は、次のようなすべてのポータルMicrosoft 365設定にアクセス/変更できます。 <br/>- Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
 | セキュリティ管理者 (セキュリティ管理者とも呼ばれます) | セキュリティ管理者は、セキュリティ オペレーターのタスクと次のタスクを実行できます。 <br/>- セキュリティ関連のポリシーを監視する <br/>- セキュリティの脅威とアラートを管理する <br/>- レポートの表示 |
 | セキュリティ オペレーター | セキュリティオペレーターは、セキュリティ リーダー タスクと次のタスクを実行できます。 <br/>- 検出された脅威に関する情報を表示する <br/>- 検出された脅威を調査して対応する  |
 | セキュリティ閲覧者 | セキュリティ リーダーは、次のタスクを実行できます。 <br/>- セキュリティ関連のポリシーを複数のサービスMicrosoft 365する <br/>- セキュリティの脅威とアラートを表示する <br/>- レポートの表示  |
@@ -123,9 +128,9 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 ## <a name="configure-next-generation-protection"></a>次世代の保護を構成する
 
-次の図に[Microsoft エンドポイント マネージャー](/mem)、組織のデバイスとセキュリティ設定を管理するには、次の手順を使用することをお勧めします。
+次の図に[示Microsoft エンドポイント マネージャー](/mem)、組織のデバイスとセキュリティ設定を管理するには、次の情報を使用することをお勧めします。
  
-:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="MEM のエンドポイント セキュリティ ポリシー":::
+:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Micorosft エンドポイント マネージャーのエンドポイント セキュリティ ポリシー" lightbox="../../media/mde-p1/endpoint-policies.png":::
 
 次の手順に従って、Microsoft エンドポイント マネージャー保護を構成します。
 
@@ -156,9 +161,9 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 ### <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 
-攻撃表面の縮小ルールは、攻撃を実行しているデバイスWindows。 次の図に示すようにMicrosoft エンドポイント マネージャーを使用することをお勧めします。
+攻撃表面の縮小ルールは、攻撃を実行しているデバイスWindows。 次の図にMicrosoft エンドポイント マネージャーを使用することをお勧めします。
 
-:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="攻撃表面の縮小ルール (Microsoft エンドポイント マネージャー":::
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Microsoft エンドポイント マネージャー ポータルの攻撃表面の縮小ルール" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
 1. 管理センター () Microsoft エンドポイント マネージャーに移動し[https://endpoint.microsoft.com](https://endpoint.microsoft.com)、サインインします。
 
@@ -194,7 +199,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 管理フォルダー アクセスを構成Microsoft エンドポイント マネージャーを使用することをお勧めします。
 
-:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="ASR ポリシー (Microsoft エンドポイント マネージャー":::
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="ポータルの ASR Microsoft エンドポイント マネージャー" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
 1. 管理センター () Microsoft エンドポイント マネージャーに移動し[https://endpoint.microsoft.com](https://endpoint.microsoft.com)、サインインします。 
 
@@ -202,7 +207,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 3. [ **+ ポリシーの作成] を選択します**。 
 
-4. [**プラットフォーム]** で、[Windows 10 **] を選択** し、[**プロファイル**] で [攻撃表面の縮小ルール **] を選択します**。 次に [ **作成**] を選びます。 
+4. [**プラットフォーム] で**、[Windows 10 **] を選択** し、[**プロファイル**] で [攻撃表面の縮小ルール **] を選択します**。 次に [ **作成**] を選びます。 
 
 5. [基本 **] タブで** 、ポリシーに名前を付け、説明を追加します。 **[次へ]** を選択します。 
 
@@ -222,25 +227,25 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 9. [確認 **と作成] タブ** で、ポリシーの設定を確認し、[作成] を選択 **します**。 ポリシーは、Defender for Endpoint にオンボードされたエンドポイントにまもなく適用されます。
 
-### <a name="device-control"></a>デバイス コントロール
+### <a name="device-control"></a>デバイス制御
 
 Defender for Endpoint を構成して、リムーバブル デバイス上のリムーバブル デバイスとファイルをブロックまたは許可できます。 デバイスコントロールの設定Microsoft エンドポイント マネージャーを使用することをお勧めします。
 
-:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Microsoft エンドポイント マネージャー管理用テンプレート":::
+:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Microsoft エンドポイント マネージャー管理用テンプレート" lightbox="../../media/mde-p1/mem-admintemplates.png":::
 
 1. 管理センター () Microsoft エンドポイント マネージャーに移動し[https://endpoint.microsoft.com](https://endpoint.microsoft.com)、サインインします。 
 
 2. **[デバイス]** > **[構成プロファイル]** > **[プロファイルの作成]** の順に選択します。
 
-3. [**プラットフォーム] で**、[Windows 10 **] を選択** し、[プロファイルの **種類] で** [テンプレート] **を選択します**。 
+3. [**プラットフォーム]** で、[Windows 10 **] を選択** し、[プロファイルの **種類] で** [テンプレート] **を選択します**。 
 
    [ **テンプレート名] で**、[管理 **用テンプレート] を選択** し、[作成] を **選択します**。 
 
 4. [基本 **] タブで** 、ポリシーに名前を付け、説明を追加します。 **[次へ]** を選択します。 
 
-5. [構成設定 **] タブで**、[すべての設定 **] を設定**。 次に、検索ボックスに「リムーバブル `Removable` デバイスに関連するすべての設定を表示する」と入力します。
+5. [構成設定 **] タブで**、[すべての設定 **] 設定**。 次に、検索ボックスに「リムーバブル `Removable` デバイスに関連するすべての設定を表示する」と入力します。
 
-6. リスト内のアイテムを選択します([すべてのリムーバブル デバイス クラス] Storage: [すべてのアクセスを拒否する] など、そのアイテムを選択して、そのフライ **アウト** ウィンドウを開きます。 各設定のフライアウトは、有効、無効、または構成されていないときに何が起こるかを説明します。 設定を選択し、[OK] を **選択します**。 
+6. リスト内のアイテム ([すべてのリムーバブル] クラスなどStorage **アクセス** を拒否して、そのフライアウト ウィンドウを開きます。 各設定のフライアウトは、有効、無効、または構成されていないときに何が起こるかを説明します。 設定を選択し、[OK] を **選択します**。 
 
 7. 構成する設定ごとに手順 6 を繰り返します。 **[次へ]** を選択します。
 
@@ -253,25 +258,25 @@ Defender for Endpoint を構成して、リムーバブル デバイス上のリ
 10. [確認 **と作成] タブ** で、ポリシーの設定を確認し、[作成] を選択 **します**。 ポリシーは、Defender for Endpoint にオンボードされたエンドポイントにまもなく適用されます。
 
 > [!TIP]
-> 詳細については、「 [Microsoft Defender for Endpoint を使用して USB](control-usb-devices-using-intune.md) デバイスや他のリムーバブル メディアを制御する方法」を参照してください。
+> 詳細については、「デバイスを使用して USB デバイスと他のリムーバブル メディアを制御する方法[」を参照](control-usb-devices-using-intune.md)Microsoft Defender for Endpoint。
 
 ### <a name="network-protection"></a>ネットワーク保護
 
 ネットワーク保護を使用すると、フィッシング詐欺、悪用、およびインターネット上の他の悪意のあるコンテンツをホストする可能性のある危険なドメインから組織を保護できます。 ネットワーク保護を有効Microsoft エンドポイント マネージャーを使用することをお勧めします。
 
-:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="エンドポイント保護プロファイル (Microsoft エンドポイント マネージャー":::
+:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="エンドポイント保護プロファイル (Microsoft エンドポイント マネージャー ポータル)" lightbox="../../media/mde-p1/mem-endpointprotectionprofile.png":::
 
 1. 管理センター () Microsoft エンドポイント マネージャーに移動し[https://endpoint.microsoft.com](https://endpoint.microsoft.com)、サインインします。 
 
 2. **[デバイス]** > **[構成プロファイル]** > **[プロファイルの作成]** の順に選択します。
 
-3. [**プラットフォーム] で**、[Windows 10 **] を選択** し、[プロファイルの **種類] で** [テンプレート] **を選択します**。 
+3. [**プラットフォーム]** で、[Windows 10 **] を選択** し、[プロファイルの **種類] で** [テンプレート] **を選択します**。 
 
    [ **テンプレート名] で**、[ **エンドポイント保護] を選択** し、[作成] を **選択します**。 
 
 4. [基本 **] タブで** 、ポリシーに名前を付け、説明を追加します。 **[次へ]** を選択します。 
 
-5. [構成の **設定] タブ** で **、[ネットワーク フィルター** Microsoft Defender Exploit Guard] を **展開します**。
+5. [構成 **設定] タブ** で **、[ネットワーク フィルター** Microsoft Defender Exploit Guard] を **展開します**。
 
    [ネットワーク **保護] を [有効]** **に設定します**。 ([監査] を選択 **して** 、最初の環境でのネットワーク保護の動作を確認できます)。
 
@@ -288,7 +293,7 @@ Defender for Endpoint を構成して、リムーバブル デバイス上のリ
 8. [確認 **と作成] タブ** で、ポリシーの設定を確認し、[作成] を選択 **します**。 ポリシーは、Defender for Endpoint にオンボードされたエンドポイントにまもなく適用されます。
 
 > [!TIP]
-> ネットワーク保護を有効にするには、Windows PowerShellグループ ポリシーなどの他の方法を使用できます。 詳細については、「ネットワーク保護を [有効にする」を参照してください](enable-network-protection.md)。
+> ネットワーク保護を有効にするには、Windows PowerShellやグループ ポリシー方法を使用できます。 詳細については、「ネットワーク保護を [有効にする」を参照してください](enable-network-protection.md)。
 
 ### <a name="web-protection"></a>Web 保護
 
@@ -300,7 +305,7 @@ Web 保護を使用すると、Web の脅威や望ましくないコンテンツ
  
 2. [**Endpoint securityAttack** >  **surface reduction] を選択** し、[+ **ポリシーの作成] を選択します**。
 
-3. プラットフォームを選択します(Windows 10 **など)**、Web 保護プロファイルを選択し、[**作成**] を選択 **します**。 
+3. プラットフォームを選択します (Windows 10 **など)**、Web 保護プロファイルを選択し、[**作成**] を選択 **します**。 
 
 4. [基本] **タブで** 、名前と説明を指定し、[次へ] を選択 **します**。
 
@@ -347,7 +352,7 @@ Web 保護を使用すると、Web の脅威や望ましくないコンテンツ
 
 ネットワーク ファイアウォールは、ネットワーク セキュリティの脅威のリスクを軽減するのに役立ちます。 セキュリティ チームは、組織のデバイスとの間でフローを許可するトラフィックを決定するルールを設定できます。 ネットワーク ファイアウォールを構成するにはMicrosoft エンドポイント マネージャーを使用することをお勧めします。 
 
-:::image type="content" source="../../media/mde-p1/mem-firewallpolicy.png" alt-text="ファイアウォール ポリシー (Microsoft エンドポイント マネージャー":::
+:::image type="content" source="../../media/mde-p1/mem-firewallpolicy.png" alt-text="ファイアウォール ポリシー (Microsoft エンドポイント マネージャー ポータル)" lightbox="../../media/mde-p1/mem-firewallpolicy.png":::
 
 基本的なファイアウォール設定を構成するには、次の手順を実行します。
 
@@ -355,7 +360,7 @@ Web 保護を使用すると、Web の脅威や望ましくないコンテンツ
 
 2. [ **Endpoint securityFirewall** > **] を** 選択し、[+ ポリシーの作成 **] を選択します**。
 
-3. プラットフォームを選択します(Windows 10 **など**)、**Microsoft Defender Firewall** プロファイルを選択してから、[作成] を選択 **します**。 
+3. プラットフォームを選択します (Windows 10 **など**)、**Microsoft Defender ファイアウォール** プロファイルを選択し、[作成] を選択 **します**。 
 
 4. [基本] **タブで** 、名前と説明を指定し、[次へ] を選択 **します**。
 
@@ -392,10 +397,10 @@ WDAC 展開の計画に役立つ情報については、次のリソースを参
 
 - [Windows Defenderコントロール ポリシーの設計上の決定](/windows/security/threat-protection/windows-defender-application-control/understand-windows-defender-application-control-policy-design-decisions)
 
-- [Windows Defenderシナリオでのアプリケーション制御の展開:デバイスの種類](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
+- [Windows Defenderのアプリケーション制御の展開:デバイスの種類](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 セットアップと構成プロセスが完了したので、次に、Defender for Endpoint の使用を開始します。 
 
-- [Defender for Endpoint Plan 1 の概要](mde-plan1-getting-started.md)
+- [概要 Defender for Endpoint Plan 1 との関連付け](mde-plan1-getting-started.md)
