@@ -1,6 +1,6 @@
 ---
-title: エンドポイント プラン 1 の Microsoft Defender の管理
-description: Defender for Endpoint Plan 1 を維持および更新します。 設定を管理し、更新プログラムを取得し、誤検知/負に対処します。
+title: Microsoft Defender for Endpointプラン 1 の管理
+description: Defender for Endpoint プラン 1 を維持および更新します。 設定を管理し、更新プログラムを取得し、誤検知/否定に対処します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -14,47 +14,47 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5217cf3f8b61c4e5bc24dfc205fb78c5bde5a3b5
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 417dd33eed846e45453464e63ff403374ce224dc
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466633"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667408"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>エンドポイント プラン 1 の Microsoft Defender の管理
+# <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpointプラン 1 の管理
 
 **適用対象**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-組織内で Defender for Endpoint Plan 1 を使用する場合、セキュリティ チームはセキュリティ ソリューションを維持するために特定の手順を実行できます。 セキュリティ チームがメンテナンスと運用計画をまとめる場合は、少なくとも次のアクティビティを含める必要があります。
+組織内で Defender for Endpoint Plan 1 を使用すると、セキュリティ チームはセキュリティ ソリューションを維持するために特定の手順を実行できます。 セキュリティ チームがメンテナンスと運用計画をまとめるので、少なくとも次のアクティビティを含める必要があります。
 
-- [セキュリティ インテリジェンスと製品更新プログラムの管理](#manage-security-intelligence-and-product-updates)
-- [エンドポイントの Defender の微調整と調整](#fine-tune-and-adjust-defender-for-endpoint)
-- [誤検知/負のアドレス](#address-false-positivesnegatives)
+- [セキュリティ インテリジェンスと製品の更新プログラムを管理する](#manage-security-intelligence-and-product-updates)
+- [Defender for Endpoint の微調整と調整](#fine-tune-and-adjust-defender-for-endpoint)
+- [false positives/negatives に対処する](#address-false-positivesnegatives)
 
-## <a name="manage-security-intelligence-and-product-updates"></a>セキュリティ インテリジェンスと製品更新プログラムの管理
+## <a name="manage-security-intelligence-and-product-updates"></a>セキュリティ インテリジェンスと製品の更新プログラムを管理する
 
-新Microsoft Defender ウイルス対策攻撃の手法から保護するために、最新の状態を維持する必要があります。 Microsoft は、セキュリティ インテリジェンス、ウイルス対策、マルウェア対策保護の定期的な更新プログラムをリリースします。 更新プログラムは、次の 2 つのカテゴリに分類されます。 
+Microsoft Defender ウイルス対策を最新の状態に保つことは、新しいマルウェアや攻撃手法から保護するために不可欠です。 Microsoft では、セキュリティ インテリジェンス、ウイルス対策、マルウェア対策の保護に関する定期的な更新プログラムをリリースしています。 更新プログラムは、次の 2 つのカテゴリに分類されます。 
 
 - セキュリティ インテリジェンスの更新プログラム
-- 製品の更新 
+- 製品の更新プログラム 
 
-セキュリティ インテリジェンスと製品の更新プログラムを管理するには、「更新プログラムの管理[Microsoft Defender ウイルス対策ベースラインの適用」を参照してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
+セキュリティ インテリジェンスと製品の更新プログラムを管理するには、「[Microsoft Defender ウイルス対策更新プログラムの管理とベースラインの適用](manage-updates-baselines-microsoft-defender-antivirus.md)」を参照してください。
 
-## <a name="fine-tune-and-adjust-defender-for-endpoint"></a>エンドポイントの Defender の微調整と調整
+## <a name="fine-tune-and-adjust-defender-for-endpoint"></a>Defender for Endpoint の微調整と調整
 
-Defender for Endpoint は、柔軟性と構成のオプションを提供します。 組織のニーズに合わせて設定を調整および調整できます。 たとえば、エンドポイントのセキュリティ設定を管理Microsoft エンドポイント マネージャーグループ ポリシー、その他の方法を使用できます。 
+Defender for Endpoint には、柔軟性と構成オプションが多数用意されています。 組織のニーズに合わせて設定を調整し、微調整できます。 たとえば、Microsoft エンドポイント マネージャー、グループ ポリシー、その他の方法を使用して、エンドポイントのセキュリティ設定を管理できます。 
 
-詳細については、「Manage [Defender for Endpoint」を参照してください](manage-mde-post-migration.md)。
+詳細については、「 [Defender for Endpoint の管理」を参照してください](manage-mde-post-migration.md)。
 
-## <a name="address-false-positivesnegatives"></a>誤検知/負のアドレス
+## <a name="address-false-positivesnegatives"></a>false positives/negatives に対処する
 
-誤検知とは、ファイルやプロセスなどのアーティファクトであり、実際には脅威ではないにもかかわらず、悪意のあるものとして検出されました。 false negative は、実際には脅威として検出されていないエンティティです。 False positives/negatives は、Defender for Endpoint を含む任意のエンドポイント保護ソリューションで発生する可能性があります。 ただし、次の図に示す手順に従って、これらの種類の問題に対処し、ソリューションを微調整できます。
+偽陽性は、ファイルやプロセスなどのアーティファクトであり、実際には脅威ではないにもかかわらず、悪意のあるものとして検出されました。 偽陰性は、実際には脅威として検出されなかったエンティティです。 Defender for Endpoint を含むすべてのエンドポイント保護ソリューションで、偽陽性/陰性が発生する可能性があります。 ただし、次の図に示すように、このような問題に対処し、ソリューションを微調整するための手順があります。
 
-:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="誤検知と負の処理の概要" lightbox="../../media/defender-endpoint/false-positives-overview.png":::
+:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="False positives と negatives プロセスの概要" lightbox="../../media/defender-endpoint/false-positives-overview.png":::
 
-Defender for Endpoint で誤検知/陰性が表示される場合は、「Address false [positives/negatives in Microsoft Defender for Endpoint」を参照してください](defender-endpoint-false-positives-negatives.md)。
+Defender for Endpoint に誤検知/陰性が表示される場合は、「[Microsoft Defender for Endpointで誤検知/否定に対処する](defender-endpoint-false-positives-negatives.md)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Endpoint の新機能を確認する](whats-new-in-microsoft-defender-endpoint.md)
+- [Microsoft Defender for Endpointの新機能を確認する](whats-new-in-microsoft-defender-endpoint.md)

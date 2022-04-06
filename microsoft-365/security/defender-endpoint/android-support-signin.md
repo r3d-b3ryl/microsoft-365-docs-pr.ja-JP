@@ -1,7 +1,7 @@
 ---
-title: Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
-description: Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mde, android, cloud, connectivity, communication
+title: Android でのMicrosoft Defender for Endpointに関する問題のトラブルシューティング
+description: Android でのMicrosoft Defender for Endpointに関する問題のトラブルシューティング
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, クラウド, 接続, 通信
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 574e02c837ce1f2e3639ed562ed52bacc0e67629
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3103ab5332045da58609b048d637da30d287ed10
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472223"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666572"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -35,19 +35,19 @@ ms.locfileid: "64472223"
 
 デバイスのオンボード時に、アプリのインストール後にサインインの問題が表示される場合があります。
 
-オンボーディング中に、アプリがデバイスにインストールされた後にサインインの問題が発生する可能性があります。
+オンボード中に、アプリがデバイスにインストールされた後にサインインの問題が発生する可能性があります。
 
 この記事では、サインオンの問題に対処するためのソリューションを提供します。
 
 ## <a name="sign-in-failed---unexpected-error"></a>サインインに失敗しました - 予期しないエラー
 
-**サインインに失敗しました: 予期しない***エラーが発生した場合は、後で試してください*
+**サインインに失敗しました:** *予期しないエラーが発生した場合は、後で試してください*
 
 :::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="サインインに失敗したエラー Microsoft Defender 365 ポータルのサインイン ページで予期しないエラーが発生しました。" lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **メッセージ：**
 
-予期しないエラー、後で試す
+予期しないエラーが発生した場合は、後で試してください
 
 **原因:**
 
@@ -55,112 +55,112 @@ ms.locfileid: "64472223"
 
 **解決方法:**
 
-Google Play ストアから最新バージョン[とMicrosoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)インストールし、もう一度やり直してください。
+Google Play ストアから最新バージョンと[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)をインストールし、もう一度お試しください。
 
-## <a name="sign-in-failed---invalid-license"></a>サインインに失敗しました - 無効なライセンス
+## <a name="sign-in-failed---invalid-license"></a>サインインに失敗しました - ライセンスが無効です
 
-**サインインに失敗しました: ライセンス***が無効です。管理者に問い合わせてください*
+**サインインに失敗しました:** *ライセンスが無効です。管理者にお問い合わせください*
 
 :::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="Microsoft Defender 365 ポータルのサインイン ページのディレクティブ連絡先の詳細" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
-**メッセージ: 無効***なライセンス、管理者に問い合わせてください*
+**メッセージ:** *ライセンスが無効です。管理者にお問い合わせください*
 
 **原因:**
 
-ライセンスが割りMicrosoft 365されていないか、組織がサブスクリプションのライセンスを持Microsoft 365 Enterpriseです。
+Microsoft 365ライセンスが割り当てられていないか、組織にMicrosoft 365 Enterpriseサブスクリプションのライセンスがありません。
 
 **解決方法:**
 
-ヘルプについては、管理者に問い合わせてください。
+ヘルプについては、管理者にお問い合わせください。
 
 ## <a name="report-unsafe-site"></a>安全でないサイトを報告する
 
-フィッシング Web サイトは、お客様の個人情報または財務情報を取得する目的で信頼できる Web サイトになりすます。 フィッシング サイト [の可能性がある Web サイトを報告](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) する場合は、[ネットワーク保護に関するフィードバックを提供する] ページをご覧ください。
+フィッシング Web サイトは、お客様の個人情報または財務情報を取得する目的で、信頼できる Web サイトを偽装します。 フィッシング サイトである可能性がある Web サイトを報告する場合は、 [ネットワーク保護に関するフィードバックを提供](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) するページにアクセスしてください。
 
 ## <a name="phishing-pages-arent-blocked-on-some-oem-devices"></a>一部の OEM デバイスでフィッシング ページがブロックされない
 
 **適用対象:** 特定の OEM のみ
 
-- **Xiaomi**
+- **小米科技**
 
-Android 用 Defender for Endpoint によって検出されるフィッシングや有害な Web の脅威は、一部の Xiaomi デバイスではブロックされません。 次の機能は、これらのデバイスでは機能しません。
+Defender for Endpoint for Android によって検出されたフィッシングや有害な Web 脅威は、一部の Intune デバイスではブロックされません。 これらのデバイスでは、次の機能は機能しません。
 
-:::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="サイトセーフでない通知メッセージ" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
+:::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="サイトの安全でない通知メッセージ" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
 
 **原因:**
 
-Xiaomi デバイスには、新しいアクセス許可モデルが含まれます。 これにより、Defender for Endpoint for Android では、バックグラウンドで実行されている間にポップアップ ウィンドウが表示されなかっています。
+小米科技デバイスには、新しいアクセス許可モデルが含まれています。 これにより、Defender for Endpoint for Android がバックグラウンドで実行されている間にポップアップ ウィンドウが表示されなくなります。
 
-Xiaomi デバイスのアクセス許可: "バックグラウンドで実行中にポップアップ ウィンドウを表示する"
+「バックグラウンドで実行中にポップアップ ウィンドウを表示する」:
 
 :::image type="content" source="images/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="Microsoft Defender 365 ポータルのポップアップ設定ウィンドウ" lightbox="images/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
 
 **解決方法:**
 
-Xiaomi デバイスで必要なアクセス許可を有効にします。
+必要なアクセス許可を有効にします。
 
 - バックグラウンドで実行中にポップアップ ウィンドウを表示します。
 
-## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>一部の OEM デバイスでのオンボーディング中に '永続的な保護' のアクセス許可を許可できない
+## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>一部の OEM デバイスでのオンボード中に "永続的な保護" のアクセス許可を許可できない
 
 **適用対象:** 特定の OEM デバイスのみ。
 
-- **Xiaomi with Android 11**
+- **Android 11 を使用した小米科技**
 
-Defender App は、アプリのオンボーディングの一環としてデバイスに対するバッテリーの最適化/永続的な保護のアクセス許可を求め、許可を選択すると、アクセス許可を設定できなかったというエラーが返されます。 これは、"Permanent Protection" と呼ばれる最後のアクセス許可にのみ影響します。 
+Defender アプリは、アプリのオンボードの一環としてデバイスに対するバッテリの最適化/永続的な保護のアクセス許可を要求し、[ **許可]** を選択すると、アクセス許可を設定できなかったというエラーが返されます。 これは、"Permanent Protection" という最後のアクセス許可にのみ影響します。 
 
 **原因:**
 
-Xiaomi は、Android 11 のバッテリー最適化のアクセス許可を変更しました。 Defender for Endpoint では、バッテリーの最適化を無視するようにこの設定を構成できません。
+Android 11 でバッテリ最適化のアクセス許可が変更されました。 Defender for Endpoint では、バッテリの最適化を無視するようにこの設定を構成することはできません。
 
 **解決方法:**
 
-OEM と一緒に、アプリのオンボーディング画面からこのアクセス許可を有効にするソリューションを探しています。 この問題が解決された場合は、ドキュメントを更新します。
-ユーザーは、次の手順に従って、デバイス設定から同じアクセス許可を有効にできます。 
+OEM と協力して、アプリのオンボード画面からこのアクセス許可を有効にするソリューションを見つけます。 これが解決されると、ドキュメントが更新されます。
+ユーザーは、次の手順に従って、デバイス設定から同じアクセス許可を有効にすることができます。 
 
-1. デバイスの [**設定**] に移動します。
+1. デバイスの **設定** に移動します。
 
-2. [バッテリーの最適化] を **検索して選択します**。
+2. **バッテリの最適化** を検索して選択します。
 
-   :::image type="content" source="images/search-battery-optimisation.png" alt-text="[バッテリーの最適化] を検索して選択できるページ" lightbox="images/search-battery-optimisation.png":::
+   :::image type="content" source="images/search-battery-optimisation.png" alt-text="バッテリ最適化を検索して選択できるページ" lightbox="images/search-battery-optimisation.png":::
 
-3. [ **アプリの特別なアクセス] で**、[バッテリーの **最適化] を選択します**。
+3. **特別なアプリ アクセスで**、[**バッテリの最適化**] を選択します。
 
-   :::image type="content" source="images/special-app-access.png" alt-text="[バッテリーの最適化] を選択できる [特別なアプリ アクセス] ウィンドウ" lightbox="images/special-app-access.png":::
+   :::image type="content" source="images/special-app-access.png" alt-text="バッテリ最適化を選択できる [特別なアプリ アクセス] ウィンドウ" lightbox="images/special-app-access.png":::
 
-4. [ドロップダウン] を [すべてのアプリ] **に変更します**。
+4. ドロップダウンを変更して **[すべてのアプリ] を表示します**。
 
-   :::image type="content" source="images/show-all-apps-2.png" alt-text="[バッテリーの最適化] ウィンドウで値を [すべてのアプリ] に変更できるドロップダウン" lightbox="images/show-all-apps-2.png":::
+   :::image type="content" source="images/show-all-apps-2.png" alt-text="[バッテリ最適化] ウィンドウで値を [すべてのアプリ] に変更できるドロップダウン" lightbox="images/show-all-apps-2.png":::
 
-   :::image type="content" source="images/show-all-apps-1.png" alt-text="[バッテリーの最適化] ウィンドウの下に [すべてのアプリ] オプションを表示するドロップダウン" lightbox="images/show-all-apps-1.png":::
+   :::image type="content" source="images/show-all-apps-1.png" alt-text="[バッテリ最適化] ウィンドウの下に [すべてのアプリ] オプションを表示するドロップダウン" lightbox="images/show-all-apps-1.png":::
 
-5. [エンドポイント用 Microsoft Defender] を見つけて、[ **最適化しない] を選択します**。
+5. [Microsoft Defender for Endpoint] を見つけて、[**最適化しない**] を選択します。
 
-   :::image type="content" source="images/select-dont-optimise.png" alt-text="オプション Microsoft Defender for Endpoint の場所と最適化しないの選択を有効にするページ" lightbox="images/select-dont-optimise.png":::
+   :::image type="content" source="images/select-dont-optimise.png" alt-text="[最適化しない] のオプションMicrosoft Defender for Endpointと選択の場所を有効にするページ" lightbox="images/select-dont-optimise.png":::
 
-[Microsoft Defender for Endpoint オンボーディング] 画面に戻り、[許可] を選択すると、ダッシュボード画面にリダイレクトされます。
+Microsoft Defender for Endpointオンボード画面に戻り、[**許可**] を選択すると、ダッシュボード画面にリダイレクトされます。
 
-## <a name="send-in-app-feedback"></a>アプリ内フィードバックの送信
+## <a name="send-in-app-feedback"></a>アプリ内フィードバックを送信する
 
-ユーザーが上記のセクションでまだ解決されていない問題に直面した場合、またはリストされている手順を使用して解決できない場合、ユーザーは診断データと共にアプリ内フィードバックを **提供できます**。 その後、ログを調査して適切なソリューションを提供できます。 ユーザーは、次の手順に従って同じ操作を実行できます。
+ユーザーが上記のセクションでまだ対処されていない問題に直面している場合、または一覧表示されている手順を使用して解決できない場合、ユーザーは **診断データ** と共 **にアプリ内フィードバック** を提供できます。 その後、チームはログを調査して適切なソリューションを提供できます。 ユーザーは、次の手順に従って同じ操作を行うことができます。
 
-1.  デバイスで **MDE アプリケーション** を開き、左上隅 **にある** プロファイル アイコンをクリックします。
+1.  デバイスで **MDE アプリケーション** を開き、左上隅にある **プロファイル アイコン** をクリックします。
 
     :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="Microsoft Defender for Endpoint ポータルのプロファイル アイコン" lightbox="images/select-profile-icon-1.jpg":::
 
-2.  [フィードバックに関する&] を選択します。
+2.  [フィードバックの&ヘルプ] を選択します。
 
-    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="Microsoft Defender for endpoint &で選択できるフィードバック のヘルプ オプション" lightbox="images/selecthelpandfeedback2.png":::
+    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="Microsoft Defender for Endpoint ポータルで選択できるフィードバック オプション&ヘルプ" lightbox="images/selecthelpandfeedback2.png":::
 
 3.  [Microsoft にフィードバックを送信する] を選択します。
 
-    :::image type="content" alt-text="[Microsoft にフィードバックを送信する] を選択する" source="images/send-feedback-to-microsoft-3.jpg":::
+    :::image type="content" alt-text="Microsoft にフィードバックを送信するを選択する" source="images/send-feedback-to-microsoft-3.jpg":::
 
-4.  指定されたオプションから選択します。 問題を報告するには、[問題を報告する] を選択します。
+4.  指定したオプションから選択します。 問題を報告するには、[問題を報告する] を選択します。
 
     :::image type="content" source="images/report-issue-4.jpg" alt-text="[問題を報告する] オプション" lightbox="images/report-issue-4.jpg":::
 
-5.  直面している問題の詳細を入力し、[診断データの送信] をオンにしてください。 チームがソリューションまたはフォローアップで連絡を取り戻す場合は、[電子メール アドレスを含める] をオンにすることをお勧めします。
+5.  発生している問題の詳細を入力し、[診断データの送信] をオンにします。 チームがソリューションまたはフォローアップで連絡できるように、[メール アドレスを含める] をオンにすることをお勧めします。
 
     :::image type="content" source="images/finalsubmit5.png" alt-text="詳細を追加して診断データを添付できるウィンドウ" lightbox="images/finalsubmit5.png":::
 

@@ -1,7 +1,7 @@
 ---
-title: 高度な検索クエリの結果を処理する (Microsoft 365 Defender
-description: 高度な検索によって返されるクエリ結果を、高度な情報でMicrosoft 365 Defender
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto、視覚化、グラフ、フィルター、ドリルダウン
+title: 高度なハンティング クエリの結果をMicrosoft 365 Defenderで操作する
+description: Microsoft 365 Defenderの高度な捜索によって返されるクエリ結果を最大限に活用する
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, カスタム検出, スキーマ, kusto, 視覚化, グラフ, フィルター, ドリルダウン
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,17 +20,16 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 41427760a0a02f0dafbb9685da457a473698207c
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 0bfec0b56a67b1242d8dfd76b845aa273a76d27e
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754988"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667254"
 ---
-# <a name="work-with-advanced-hunting-query-results"></a>高度な検索クエリの結果を処理する
+# <a name="work-with-advanced-hunting-query-results"></a>高度なハンティング クエリの結果を操作する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 - Microsoft 365 Defender
@@ -38,59 +37,64 @@ ms.locfileid: "63754988"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-高度な検索クエリを[](advanced-hunting-overview.md)作成して正確な情報を取得することもできますが、クエリ結果を使用してさらに詳細な分析情報を取得し、特定のアクティビティとインジケーターを調査することもできます。 クエリ結果に対して次のアクションを実行できます。
+[高度な捜索](advanced-hunting-overview.md)クエリを作成して正確な情報を返すこともできますが、クエリ結果を操作して、さらに詳しい分析情報を得て、特定のアクティビティとインジケーターを調査することもできます。 クエリ結果に対して次のアクションを実行できます。
 
-- 結果を表またはグラフとして表示する
-- 表とグラフのエクスポート
+- 結果をテーブルまたはグラフとして表示する
+- テーブルとグラフをエクスポートする
 - 詳細なエンティティ情報にドリルダウンする
 - 結果から直接クエリを調整するか、フィルターを適用する
 
-## <a name="view-query-results-as-a-table-or-chart"></a>クエリ結果を表またはグラフとして表示する
-既定では、高度な検索ではクエリ結果が表形式データとして表示されます。 グラフと同じデータを表示することもできます。 高度な検索では、次のビューがサポートされています。
+## <a name="view-query-results-as-a-table-or-chart"></a>クエリ結果をテーブルまたはグラフとして表示する
+
+既定では、高度な検索では、クエリ結果が表形式のデータとして表示されます。 グラフと同じデータを表示することもできます。 高度なハンティングでは、次のビューがサポートされます。
 
 | ビューの種類 | 説明 |
 |--|--|
-| **Table** | クエリ結果を表形式で表示する |
-| **縦棒グラフ** | X 軸上の一連の一意の項目を、高さが別のフィールドの数値を表す垂直バーとしてレンダリングされます。 |
-| **積み上げ列グラフ** | x 軸上の一連の一意のアイテムを、高さが 1 つ以上の他のフィールドの数値を表す積み上げ縦棒としてレンダリングされます。 |
-| **円グラフ** | 一意のアイテムを表す断面円グラフをレンダリングします。 各円グラフのサイズは、別のフィールドの数値を表します。 |
-| **ドーナツ グラフ** | 一意のアイテムを表す断面円弧をレンダリングします。 各円弧の長さは、別のフィールドの数値を表します。 |
-| **折れ線グラフ** | 一連の一意の項目の数値をプロットし、プロットされた値を接続する |
+| **表** | クエリ結果を表形式で表示します |
+| **縦棒グラフ** | 高さが別のフィールドの数値を表す垂直バーとして、X 軸上の一連の一意の項目をレンダリングします |
+| **積み上げ縦棒グラフ** | 1 つ以上の他のフィールドの数値を表す高さを持つ積み上げ垂直バーとして、一連の一意の項目を x 軸にレンダリングします。 |
+| **円グラフ** | 一意の項目を表すセクション円グラフをレンダリングします。 各円のサイズは、別のフィールドの数値を表します。 |
+| **ドーナツ グラフ** | 一意の項目を表すセクション円弧をレンダリングします。 各円弧の長さは、別のフィールドの数値を表します。 |
+| **折れ線グラフ** | 一連の一意の項目の数値をプロットし、プロットされた値を接続します |
 | **散布図** | 一連の一意の項目の数値をプロットする |
-| **エリア グラフ** | 一連の一意の項目の数値をプロットし、プロットされた値の下のセクションを塗りつぶし |
+| **面グラフ** | 一連の一意の項目の数値をプロットし、プロットされた値の下のセクションに入力します。 |
 
 ### <a name="construct-queries-for-effective-charts"></a>効果的なグラフのクエリを作成する
-グラフをレンダリングする場合、高度な検索では、関心のある列と集計する数値が自動的に識別されます。 意味のあるグラフを取得するには、表示する特定の値を返すクエリを作成します。 サンプル クエリと結果のグラフを次に示します。
+
+グラフを表示する場合、高度な捜索では、対象の列と集計する数値が自動的に識別されます。 わかりやすいグラフを取得するには、視覚化して表示する特定の値を返すクエリを作成します。 いくつかのサンプル クエリと結果のグラフを次に示します。
 
 #### <a name="alerts-by-severity"></a>重大度別のアラート
-グラフを `summarize` 作成する値の数値カウントを取得するには、演算子を使用します。 以下のクエリでは、演算子を使用 `summarize` して重大度別のアラート数を取得します。
+
+演算子を `summarize` 使用して、グラフ化する値の数値カウントを取得します。 次のクエリでは、演算子を `summarize` 使用して重大度別のアラートの数を取得します。
 
 ```kusto
 AlertInfo
 | summarize Total = count() by Severity
 ```
-結果をレンダリングすると、各重大度値が個別の列として列グラフに表示されます。
 
-:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="ポータルに高度な検索結果を表示するグラフのMicrosoft 365 Defender例" lightbox="../../media/advanced-hunting-column-chart-new.png":::
-*列グラフとして表示される重大度別のアラートのクエリ結果*
+結果を表示する場合、縦棒グラフには各重大度の値が個別の列として表示されます。
 
+:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="Microsoft 365 Defender ポータルに高度なハンティング結果を表示するグラフの例" lightbox="../../media/advanced-hunting-column-chart-new.png":::
+*縦棒グラフとして表示される重大度別のアラートのクエリ結果*
 
-#### <a name="phishing-emails-across-top-ten-sender-domains"></a>上位 10 個の送信者ドメインのフィッシングメール
-有限ではない値の `Top` リストを扱う場合は、演算子を使用して、最も多くのインスタンスを持つ値のみをグラフ化できます。 たとえば、フィッシングメールが最も多い上位 10 の送信者ドメインを取得するには、次のクエリを使用します。
+#### <a name="phishing-emails-across-top-ten-sender-domains"></a>上位 10 の送信者ドメインにわたるフィッシングメール
+
+有限でない値の一覧を処理する場合は、演算子を `Top` 使用して、最も多くのインスタンスを持つ値のみをグラフ化できます。 たとえば、フィッシングメールが最も多い上位 10 の送信者ドメインを取得するには、次のクエリを使用します。
 
 ```kusto
 EmailEvents
-| where ThreatTypes has "Phish" 
-| summarize Count = count() by SenderFromDomain 
+| where ThreatTypes has "Phish"
+| summarize Count = count() by SenderFromDomain
 | top 10 by Count
 ```
-円グラフ ビューを使用して、上位ドメイン全体の分布を効果的に表示します。
 
-:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="ポータルで高度な検索結果を表示する円グラフMicrosoft 365 Defenderします。" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
-*上位の送信者ドメイン間でのフィッシングメールの配布を示す円グラフ*
+円グラフ ビューを使用して、上位ドメイン間の分布を効果的に表示します。
 
-#### <a name="file-activities-over-time"></a>時間の間のファイル アクティビティ
-演算子を関数 `summarize` と一緒に使用 `bin()` すると、時間のとともに特定のインジケーターに関連するイベントを確認できます。 以下のクエリは、 `invoice.doc` ファイルに関連するイベントを 30 分間隔でカウントして、そのファイルに関連するアクティビティのスパイクを表示します。
+:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="高度なハンティング結果をMicrosoft 365 Defender ポータルに表示する円グラフ" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
+*上位の送信者ドメイン間でのフィッシングメールの分布を示す円グラフ*
+
+#### <a name="file-activities-over-time"></a>時間の経過に伴うファイル アクティビティ
+`summarize`この関数で演算子を`bin()`使用すると、時間の経過と共に特定のインジケーターに関連するイベントを確認できます。 次のクエリでは、30 分間隔でファイル `invoice.doc` に関連するイベントがカウントされ、そのファイルに関連するアクティビティの急増が表示されます。
 
 ```kusto
 CloudAppEvents
@@ -98,43 +102,45 @@ CloudAppEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-以下の線グラフは、以下を含むより多くのアクティビティを含む期間を明確に強調表示します `invoice.doc`。 
 
-:::image type="content" source="../../media/line-chart-a.png" alt-text="高度な検索結果をポータルに表示するMicrosoft 365 Defenderグラフ" lightbox="../../media/line-chart-a.png":::
-*ファイルに関連するイベントの時間の数を示す線グラフ*
+次の折れ線グラフでは、次のアクティビティが含まれる `invoice.doc`期間が明確に示されています。
 
+:::image type="content" source="../../media/line-chart-a.png" alt-text="Microsoft 365 Defender ポータルに高度なハンティング結果を表示する折れ線グラフ" lightbox="../../media/line-chart-a.png":::
+*時間の経過に伴うファイルに関連するイベントの数を示す折れ線グラフ*
 
-## <a name="export-tables-and-charts"></a>表とグラフのエクスポート
-クエリを実行した後、[エクスポート] **を選択** して、結果をローカル ファイルに保存します。 選択したビューは、結果のエクスポート方法を決定します。
+## <a name="export-tables-and-charts"></a>テーブルとグラフをエクスポートする
 
-- **テーブル ビュー** - クエリ結果は、表形式でブックとしてエクスポートMicrosoft Excelされます。
-- **任意のグラフ** - クエリ結果は、レンダリングされたグラフの JPEG イメージとしてエクスポートされます。
+クエリを実行した後、 **エクスポート** を選択して結果をローカル ファイルに保存します。 選択したビューによって、結果のエクスポート方法が決まります。
 
-## <a name="drill-down-from-query-results"></a>クエリ結果からドリルダウンする
-クエリ結果のレコードをすばやく検査するには、対応する行を選択して [レコードの検査] パネル **を開** きます。 パネルには、選択したレコードに基づいて次の情報が表示されます。
+- **テーブル ビュー** - クエリ結果は、Microsoft Excel ブックとして表形式でエクスポートされます
+- **任意のグラフ** - クエリ結果は、レンダリングされたグラフの JPEG イメージとしてエクスポートされます
 
-- **アセット** - レコード内にある主な資産 (メールボックス、デバイス、およびユーザー) の概要ビューで、リスクや露出レベルなどの利用可能な情報が充実しています。
-- **すべての詳細** - レコード内の列のすべての値  
+## <a name="drill-down-from-query-results"></a>クエリ結果からのドリルダウン
 
-:::image type="content" source="../../media/results-inspect-record.png" alt-text="選択したレコードとパネルで、ポータルでレコードをMicrosoft 365 Defenderする" lightbox="../../media/results-inspect-record.png":::
+クエリ結果のレコードをすばやく調べるには、対応する行を選択して [レコードの **検査** ] パネルを開きます。 パネルには、選択したレコードに基づいて次の情報が表示されます。
 
-コンピューター、ファイル、ユーザー、IP アドレス、URL など、クエリ結果内の特定のエンティティに関する詳細情報を表示するには、エンティティ識別子を選択して、そのエンティティの詳細なプロファイル ページを開きます。
+- **資産** - レコードに含まれる主要な資産 (メールボックス、デバイス、およびユーザー) の概要ビュー。リスクレベルや露出レベルなどの利用可能な情報で強化されています
+- **すべての詳細** - レコード内の列のすべての値
+
+:::image type="content" source="../../media/results-inspect-record.png" alt-text="Microsoft 365 Defender ポータルでレコードを調べるパネルを含む選択したレコード" lightbox="../../media/results-inspect-record.png":::
+
+コンピューター、ファイル、ユーザー、IP アドレス、URL など、クエリ結果内の特定のエンティティの詳細を表示するには、エンティティ識別子を選択して、そのエンティティの詳細なプロファイル ページを開きます。
 
 ## <a name="tweak-your-queries-from-the-results"></a>結果からクエリを絞り込む
-[レコードの検査] パネルで、任意の列の右側にある 3 つのドット **を選択** します。 次のようなオプションを使用できます。
+
+[ **レコードの検査** ] パネルで、任意の列の右側にある 3 つのドットを選択します。 次のようなオプションを使用できます。
 
 - 選択した値 (`==`) を明示的に検索する
 - 選択した値をクエリ (`!=`) から除外する 
-- クエリに値を追加する高度`contains``starts with`な演算子 (、など) を取得する`ends with` 
+- 、、など`contains``starts with`、クエリに値を追加するためのより高度な演算子を取得します。`ends with`
 
-:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="[レコードの検査] ページの [アクションの種類] Microsoft 365 Defenderポータル" lightbox="../../media/work-with-query-tweak-query.png":::
+:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="Microsoft 365 Defender ポータルの [レコードの検査] ページの [アクションの種類] ウィンドウ" lightbox="../../media/work-with-query-tweak-query.png":::
 
-
-
->[!NOTE]
->この記事の一部の表は、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「[Advanced Hunting queries を Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md) から移行する」の手順に従います。
+> [!NOTE]
+> この記事の一部のテーブルは、Microsoft Defender for Endpointでは使用できない場合があります。 [Microsoft 365 Defenderを有効にして](m365d-enable.md)、より多くのデータ ソースを使用して脅威を検出します。 高度なハンティング クエリをMicrosoft Defender for Endpointから移行するの手順に従って、[高度なハンティング ワークフローをMicrosoft Defender for EndpointからMicrosoft 365 Defender](advanced-hunting-migrate-from-mde.md)に移動できます。
 
 ## <a name="related-topics"></a>関連項目
+
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

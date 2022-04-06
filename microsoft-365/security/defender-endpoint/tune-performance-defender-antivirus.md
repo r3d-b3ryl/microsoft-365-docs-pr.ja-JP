@@ -1,7 +1,7 @@
 ---
-title: パフォーマンス アナライザー (Microsoft Defender ウイルス対策
-description: パフォーマンスを調整する手順について説明Microsoft Defender ウイルス対策。
-keywords: tune, performance, microsoft Defender for endpoint, Defender Antivirus
+title: Microsoft Defender ウイルス対策のパフォーマンス アナライザー
+description: Microsoft Defender ウイルス対策のパフォーマンスを調整する手順について説明します。
+keywords: tune, Performance, Microsoft Defender for endpoint, Defender ウイルス対策
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b5d9346746dba3b7b4c75909cb8e36e47c3c9d99
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 7d24fe9a20c54a24a9c3406c66c1c591790bafc5
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472509"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667386"
 ---
-# <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>パフォーマンス アナライザー (Microsoft Defender ウイルス対策
+# <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のパフォーマンス アナライザー
 
 **適用対象**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -29,77 +29,77 @@ ms.locfileid: "64472509"
 
 **パフォーマンス アナライザー Microsoft Defender ウイルス対策とは**
 
-場合によっては、特定のファイルやフォルダーをスキャンする際に、Microsoft Defender ウイルス対策のパフォーマンスを調整する必要があります。 パフォーマンス アナライザーは PowerShell コマンド ライン ツールであり、個々のエンドポイントでパフォーマンスの問題を引き起こしている可能性があるファイル、ファイル拡張子、およびプロセスを特定するのに役立ちます。 この情報は、パフォーマンスの問題をより適切に評価し、修復アクションを適用するために使用できます。
+場合によっては、特定のファイルやフォルダーをスキャンするときに、Microsoft Defender ウイルス対策のパフォーマンスを調整する必要がある場合があります。 パフォーマンス アナライザーは、個々のエンドポイントでパフォーマンスの問題を引き起こしている可能性があるファイル、ファイル拡張子、およびプロセスを特定するのに役立つ PowerShell コマンド ライン ツールです。 この情報は、パフォーマンスの問題をより適切に評価し、修復アクションを適用するために使用できます。
 
 分析するオプションには、次のものがあります。
 
 - スキャン時間に影響を与える上位ファイル
 - スキャン時間に影響を与える上位プロセス
 - スキャン時間に影響を与える上位のファイル拡張子
-- 組み合わせ – たとえば、拡張子ごとの上位ファイル、ファイルごとの上位スキャン、プロセスごとのファイルごとの上位スキャン
+- 組み合わせ – たとえば、拡張子ごとの上位ファイル、ファイルごとの上位スキャン、プロセスごとのファイルごとの上位スキャンなど
 
 ## <a name="running-performance-analyzer"></a>パフォーマンス アナライザーの実行
 
-パフォーマンス アナライザーを実行するための高レベルのプロセスには、次の手順が含まれます。
+パフォーマンス アナライザーを実行するための高度なプロセスには、次の手順が含まれます。
 
-1. パフォーマンス アナライザーを実行して、エンドポイント上のイベントのMicrosoft Defender ウイルス対策記録を収集します。
+1. パフォーマンス アナライザーを実行して、エンドポイント上のMicrosoft Defender ウイルス対策 イベントのパフォーマンス記録を収集します。
 
    > [!NOTE]
-   > **Microsoft-antimalware-Engine** Microsoft Defender ウイルス対策のイベントのパフォーマンスは、パフォーマンス アナライザーによって記録されます。
+   > **Microsoft-Antimalware-Engine** 型のMicrosoft Defender ウイルス対策 イベントのパフォーマンスは、パフォーマンス アナライザーを使用して記録されます。
 
-2. さまざまな記録レポートを使用してスキャン結果を分析します。
+2. 異なる記録レポートを使用してスキャン結果を分析します。
 
 ## <a name="using-performance-analyzer"></a>パフォーマンス アナライザーの使用
 
-システム イベントの記録を開始するには、管理モードで PowerShell を開き、次の手順を実行します。
+システム イベントの記録を開始するには、PowerShell を管理モードで開き、次の手順を実行します。
 
-1. 次のコマンドを実行して、記録を開始します。
+1. 次のコマンドを実行して記録を開始します。
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    where `-RecordTo` パラメーターは、トレース ファイルが保存される完全なパスの場所を指定します。 コマンドレットの詳細については、「Microsoft Defender ウイルス対策[」を参照してください](/powershell/module/defender)。
+    ここで `-RecordTo` 、パラメーターはトレース ファイルを保存する完全なパスの場所を指定します。 コマンドレットの詳細については、「[Microsoft Defender ウイルス対策コマンドレット](/powershell/module/defender)」を参照してください。
 
-2. パフォーマンスに影響を与えるプロセスまたはサービスがある場合は、関連するタスクを実行して状況を再現します。
+2. パフォーマンスに影響を与えると考えられるプロセスまたはサービスがある場合は、関連するタスクを実行して状況を再現します。
 
-3. Enter **キーを押** して録音を停止して保存するか、 **Ctrl + C キーを押して録音** をキャンセルします。
+3. **Enter キー** を押して記録を停止して保存するか、**Ctrl + C キーを押** して記録を取り消します。
 
-4. パフォーマンス アナライザーのパラメーターを使用して結果を分析 `Get-MpPerformanceReport`します。 たとえば、コマンドを実行すると `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`、パフォーマンスに影響を与える上位 3 つのファイルに対する上位 10 回のスキャンの一覧がユーザーに提供されます。 
+4. パフォーマンス アナライザーのパラメーターを使用して結果を `Get-MpPerformanceReport`分析します。 たとえば、コマンド `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`を実行すると、パフォーマンスに影響を与える上位 3 つのファイルに対する上位 10 個のスキャンの一覧がユーザーに提供されます。 
 
-コマンド ライン パラメーターとオプションの詳細については、「 [New-MpPerformanceRecording](#new-mpperformancerecording) 」および「 [Get-MpPerformanceReport」を参照してください](#get-mpperformancereport)。
+コマンド ライン のパラメーターとオプションの詳細については、 [New-MpPerformanceRecording](#new-mpperformancerecording) と [Get-MpPerformanceReport](#get-mpperformancereport) を参照してください。
 
 > [!NOTE]
-> 記録を実行するときに、「Windows Performance Recorder が既に記録されているので、パフォーマンス記録を開始できません」というエラーが表示された場合は、次のコマンドを実行して、新しいコマンドを使用して既存のトレースを停止します。**wpr -cancel -instancename** MSFT_MpPerformanceRecording
+> 記録を実行しているときに、"パフォーマンス レコーダーが既に記録されているため、パフォーマンス記録 Windowsを開始できません" というエラーが表示された場合は、次のコマンドを実行して、新しいコマンドを使用して既存のトレースを停止します:**wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
 ### <a name="performance-tuning-data-and-information"></a>パフォーマンスチューニングのデータと情報
 
-クエリに基づいて、ユーザーはスキャンカウント、期間 (total/min/average/max/median)、パス、プロセス、およびスキャンの理由のデータを表示できます。 次の図は、スキャンに影響を与える上位 10 ファイルの簡単なクエリの出力例を示しています。 
+クエリに基づいて、ユーザーはスキャン数、期間 (合計/最小/平均/最大/中央値)、パス、プロセス、およびスキャンの理由のデータを表示できます。 次の図は、スキャンの影響を受けるための上位 10 ファイルの単純なクエリの出力例を示しています。 
 
 :::image type="content" source="images/example-output.png" alt-text="基本的な TopFiles クエリの出力例" lightbox="images/example-output.png":::
 
-### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>その他の機能: CSV および JSON へのエクスポートと変換
+### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>その他の機能: CSV と JSON へのエクスポートと変換
 
-パフォーマンス アナライザーの結果をエクスポートし、CSV または JSON ファイルに変換できます。
-サンプル コードによる "エクスポート" と "変換" のプロセスを説明する例については、以下を参照してください。
+パフォーマンス アナライザーの結果をエクスポートして、CSV または JSON ファイルに変換することもできます。
+サンプル コードを使用して "エクスポート" と "変換" のプロセスを記述する例については、以下を参照してください。
 
 #### <a name="for-csv"></a>CSV の場合
 
 - **エクスポートするには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
 
-- **変換するには、次の値を使用します**。 `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
+- **変換するには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
 #### <a name="for-json"></a>JSON の場合
 
-- **変換するには、次の値を使用します**。 `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
+- **変換するには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
 ### <a name="requirements"></a>要件
-Microsoft Defender ウイルス対策アナライザーには、次の前提条件があります。
+パフォーマンス アナライザー Microsoft Defender ウイルス対策次の前提条件があります。
 
-- サポートされているWindowsバージョン: Windows 10、Windows 11、Windows Server 2016以上
-- プラットフォーム バージョン: 4.18.2108.7+
-- PowerShell バージョン: PowerShell バージョン 5.1、PowerShell ISE、リモート PowerShell (4.18.2201.10+)、PowerShell 7.x (4.18.2201.10+)
+- サポートされているWindows バージョン: Windows 10、Windows 11、Windows Server 2016 以降
+- プラットフォーム バージョン: 4.18.2108.7 以降
+- PowerShell バージョン: PowerShell バージョン 5.1、PowerShell ISE、リモート PowerShell (4.18.2201.10 以降)、PowerShell 7.x (4.18.2201.10 以降)
 
 ## <a name="powershell-reference"></a>PowerShell リファレンス
-次の 2 つの新しい PowerShell コマンドレットを使用して、パフォーマンスを調整Microsoft Defender ウイルス対策。 
+Microsoft Defender ウイルス対策のパフォーマンスを調整するために使用される新しい PowerShell コマンドレットは 2 つあります。 
 
 - [New-MpPerformanceRecording](#new-mpperformancerecording)
 - [Get-MpPerformanceReport](#get-mpperformancereport)
@@ -107,7 +107,7 @@ Microsoft Defender ウイルス対策アナライザーには、次の前提条�
 
 ### <a name="new-mpperformancerecording"></a>New-MpPerformanceRecording
 
-次のセクションでは、新しい PowerShell コマンドレット New-MpPerformanceRecording の参照について説明します。 このコマンドレットは、スキャンのパフォーマンス記録をMicrosoft Defender ウイルス対策します。
+次のセクションでは、新しい PowerShell コマンドレット New-MpPerformanceRecording のリファレンスについて説明します。 このコマンドレットは、Microsoft Defender ウイルス対策 スキャンのパフォーマンス記録を収集します。
 
 #### <a name="syntax-new-mpperformancerecording"></a>構文: New-MpPerformanceRecording
 
@@ -116,18 +116,18 @@ New-MpPerformanceRecording -RecordTo <String >
 ```
 
 #### <a name="description-new-mpperformancerecording"></a>説明: New-MpPerformanceRecording
-コマンドレット`New-MpPerformanceRecording`は、スキャンのパフォーマンス記録をMicrosoft Defender ウイルス対策します。 これらのパフォーマンス記録には、Microsoft-Antimalware-Engine および NT カーネル プロセス イベントが含まれているので、 [Get-MpPerformanceReport](#get-mpperformancereport) コマンドレットを使用してコレクション後に分析できます。
+このコマンドレットは`New-MpPerformanceRecording`、Microsoft Defender ウイルス対策 スキャンのパフォーマンス記録を収集します。 これらのパフォーマンス記録には、Microsoft-Antimalware-Engine および NT カーネル プロセス イベントが含まれており、 [Get-MpPerformanceReport](#get-mpperformancereport) コマンドレットを使用してコレクション後に分析できます。
 
-この`New-MpPerformanceRecording`コマンドレットは、問題のあるファイルに関する分析情報を提供し、問題のあるファイルのパフォーマンスが低下するMicrosoft Defender ウイルス対策。 このツールは "AS IS" で提供され、除外に関する提案を提供することを意図したツールではありません。 除外によって、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
+この`New-MpPerformanceRecording`コマンドレットは、Microsoft Defender ウイルス対策のパフォーマンスの低下を引き起こす可能性のある問題のあるファイルに関する分析情報を提供します。 このツールは "AS IS" として提供され、除外に関する提案を提供することを目的としていません。 除外すると、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
 
-パフォーマンス アナライザーの詳細については、「 [Performance Analyzer docs」を参照](/windows-hardware/test/wpt/windows-performance-analyzer) してください。
+パフォーマンス アナライザーの詳細については、[パフォーマンス アナライザードキュメントを](/windows-hardware/test/wpt/windows-performance-analyzer)参照してください。
 
 > [!IMPORTANT]
-> このコマンドレットには、管理者特権が必要です。
+> このコマンドレットには管理者特権が必要です。
 
 **サポートされている OS のバージョン**
 
-Windowsバージョン 10 以降。
+Windows バージョン 10 以降。
 
 > [!NOTE]
 > この機能は、プラットフォーム バージョン 4.18.2108.X 以降で使用できます。
@@ -140,7 +140,7 @@ Windowsバージョン 10 以降。
 New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 ```
 
-上記のコマンドは、パフォーマンス記録を収集し、指定されたパス **に保存します。.\Defender-scans.etl**。
+上記のコマンドは、パフォーマンス記録を収集し、指定されたパス **(.\Defender-scan.etl**) に保存します。
 
 ##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>例 2: リモート PowerShell セッションのパフォーマンス記録を収集する
 
@@ -149,7 +149,7 @@ $s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
 New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $s
 ```
 
-上記のコマンドは、Server02 のパフォーマンス記録 (引数 $s のパラメーター セッションで指定) を収集し、指定したパス C **:\LocalPathOnServer02\trace.etl on Server02** に保存します。
+上記のコマンドは、Server02 でパフォーマンス記録を収集し (パラメーター セッションの引数$sで指定)、指定されたパス **(Server02 の C:\LocalPathOnServer02\trace.etl** ) に保存します。
 
 #### <a name="parameters-new-mpperformancerecording"></a>パラメーター: New-MpPerformanceRecording
 
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ##### <a name="-session"></a>-Session 
-パフォーマンス記録の作成および保存に使用する PSSession オブジェクトMicrosoft Defender ウイルス対策指定します。 このパラメーターを使用する場合、RecordTo パラメーターはリモート コンピューター上のローカル パスを参照します。 Defender プラットフォーム バージョン 4.18.2201.10 で使用できます。
+Microsoft Defender ウイルス対策パフォーマンス記録を作成して保存する PSSession オブジェクトを指定します。 このパラメーターを使用すると、RecordTo パラメーターはリモート コンピューター上のローカル パスを参照します。 Defender プラットフォーム バージョン 4.18.2201.10 で使用できます。
 
 ```yaml
 Type: PSSession[]
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ### <a name="get-mpperformancereport"></a>Get-MpPerformanceReport
 
-次のセクションでは、PowerShell コマンドレットGet-MpPerformanceReport説明します。 MDAV (MDAV) Microsoft Defender ウイルス対策記録に関する分析とレポート。
+次のセクションでは、Get-MpPerformanceReport PowerShell コマンドレットについて説明します。 Microsoft Defender ウイルス対策 (MDAV) パフォーマンス記録に関する分析とレポート。
 
 #### <a name="syntax-get-mpperformancereport"></a>構文: Get-MpPerformanceReport
 
@@ -213,15 +213,15 @@ Get-MpPerformanceReport    [-Path] <String>
 ```
 
 #### <a name="description-get-mpperformancereport"></a>説明: Get-MpPerformanceReport
-`Get-MpPerformanceReport`このコマンドレットは、以前に収集された Microsoft Defender ウイルス対策 パフォーマンス記録 ([New-MpPerformanceRecording](#new-mpperformancerecording)) を分析し、Microsoft Defender ウイルス対策 スキャンに最も大きな影響を与えるファイル パス、ファイル拡張子、およびプロセスを報告します。
+このコマンドレットは`Get-MpPerformanceReport`、以前に収集されたMicrosoft Defender ウイルス対策パフォーマンス記録 ([New-MpPerformanceRecording](#new-mpperformancerecording)) を分析し、Microsoft Defender ウイルス対策 スキャンに最も大きな影響を与えるファイル パス、ファイル拡張子、プロセスを報告します。
 
-パフォーマンス アナライザーは、問題のあるファイルに関する分析情報を提供し、問題のあるファイルのパフォーマンスが低下するMicrosoft Defender ウイルス対策。 このツールは"AS IS" で提供され、除外に関する提案を提供することを意図したツールではありません。 除外によって、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
+パフォーマンス アナライザーは、Microsoft Defender ウイルス対策のパフォーマンスの低下を引き起こす可能性のある問題のあるファイルに関する分析情報を提供します。 このツールは "AS IS" として提供され、除外に関する提案を提供することを目的としていません。 除外すると、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
 
-パフォーマンス アナライザーの詳細については、「 [Performance Analyzer docs」を参照](/windows-hardware/test/wpt/windows-performance-analyzer) してください。
+パフォーマンス アナライザーの詳細については、[パフォーマンス アナライザードキュメントを](/windows-hardware/test/wpt/windows-performance-analyzer)参照してください。
 
 **サポートされている OS のバージョン**
 
-Windowsバージョン 10 以降。
+Windows バージョン 10 以降。
 
 > [!NOTE]
 > この機能は、プラットフォーム バージョン 4.18.2108.X 以降で使用できます。
@@ -246,7 +246,7 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:1
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensionsPerProcess:3 -TopScansPerExtensionPerProcess:3
 ```
 
-##### <a name="example-4-using--minduration-parameter"></a>例 4: -MinDuration パラメーターの使用
+##### <a name="example-4-using--minduration-parameter"></a>例 4: -MinDuration パラメーターを使用する
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
@@ -255,7 +255,7 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:10
 #### <a name="parameters-get-mpperformancereport"></a>パラメーター: Get-MpPerformanceReport
 
 ##### <a name="-minduration"></a>-MinDuration
-レポートに含まれるファイル、拡張機能、およびプロセスのスキャン期間または合計スキャン期間の最小期間を指定します。  **0.1234567sec**、 **0.1234ms**、 **0.1us**、または有効な TimeSpan のような値を受け入れる。
+レポートに含まれるファイル、拡張機能、およびプロセスのスキャンまたは合計スキャン期間の最小期間を指定します。は  **、0.1234567sec**、 **0.1234ms**、 **0.1us**、または有効な TimeSpan などの値を受け入れます。
 
 ```yaml
 Type: String
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topextensions"></a>-TopExtensions 
-"Duration" で並べ替えた、出力する上位拡張機能の数を指定します。
+出力する上位の拡張機能の数を指定します。"Duration" で並べ替えられます。
 
 ```yaml
 Type: Int32
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess 
-トップ プロセスごとに出力する上位拡張機能の数を "Duration" で並べ替えた数を指定します。
+"Duration" で並べ替えられた各上位プロセスの出力する上位拡張機能の数を指定します。
 
 ```yaml
 Type: Int32
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfiles"></a>-TopFiles
-トップ ファイル レポートを要求し、出力する上位ファイルの数を "Duration" で並べ替えた数を指定します。
+上位ファイル レポートを要求し、出力する上位ファイルの数を "Duration" で並べ替えて指定します。
 
 
 ```yaml
@@ -311,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfilesperextension"></a>-TopFilesPerExtension 
-"Duration" で並べ替え、各上位拡張子に対して出力する上位ファイルの数を指定します。
+上部の拡張子ごとに出力する上位ファイルの数を指定します。"Duration" で並べ替えられます。
 
 
 ```yaml
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
-トップ プロセスごとに出力する上位ファイルの数を "Duration" で並べ替えた数を指定します。
+"Duration" で並べ替えられた各トップ プロセスの出力する上位ファイルの数を指定します。
 
 ```yaml
 Type: Int32
@@ -334,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topprocesses"></a>-TopProcesses
-トップ プロセス レポートを要求し、出力する上位プロセスの数を "Duration" で並べ替えた数を指定します。
+最上位プロセス レポートを要求し、出力する上位プロセスの数を "Duration" で並べ替えて指定します。
 
 ```yaml
 Type: Int32
@@ -345,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension 
-"Duration" で並べ替え、各上位拡張機能に対して出力する上位プロセスの数を指定します。
+上位拡張機能ごとに出力する上位プロセスの数を指定します。"Duration" で並べ替えられます。
 
 
 ```yaml
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 
 
 ### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
-トップ ファイルごとに出力する上位プロセスの数を "Duration" で並べ替えた数を指定します。
+上位ファイルごとに出力する上位プロセスの数を指定し、"Duration" で並べ替えて指定します。
 
 
 ```yaml
@@ -370,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscans"></a>-TopScans
-トップ スキャン レポートを要求し、出力するトップ スキャンの数を "Duration" で並べ替えた数を指定します。
+トップ スキャン レポートを要求し、出力する上位スキャンの数を "期間" で並べ替えて指定します。
 
 
 ```yaml
@@ -383,7 +383,7 @@ Accept wildcard characters: False
 
 
 ### <a name="-topscansperextension"></a>-TopScansPerExtension
-"Duration" で並べ替えた、上位の拡張機能ごとに出力するトップ スキャンの数を指定します。
+上位拡張機能ごとに出力するトップ スキャンの数を指定し、"Duration" で並べ替えます。
 
 
 ```yaml
@@ -396,7 +396,7 @@ Accept wildcard characters: False
 
 
 ### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess 
-トップ プロセスごとに出力するトップ スキャンの数を "Duration" で並べ替えた上位プロセスごとに指定します。
+上位プロセスごとに出力する上位スキャンの数を指定し、"Duration" で並べ替えます。
 
 
 ```yaml
@@ -409,7 +409,7 @@ Accept wildcard characters: False
 
 
 ### <a name="-topscansperfile"></a>-TopScansPerFile
-トップ ファイルごとに出力するトップ スキャンの数を "Duration" で並べ替えた数を指定します。
+"Duration" で並べ替えられた各トップ ファイルの出力するトップ スキャンの数を指定します。
 
 
 ```yaml
@@ -421,7 +421,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension 
-"Duration" で並べ替え、各トップ 拡張子の各トップ ファイルに対して出力するトップ スキャンの数を指定します。
+上位の拡張子ごとに出力する上位スキャンの数を指定し、"Duration" で並べ替えます。
 
 
 ```yaml
@@ -434,7 +434,7 @@ Accept wildcard characters: False
 
 
 ### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess 
-各トップ プロセスのトップ ファイルの出力を "Duration" で並べ替えた上位スキャンの数を指定します。
+"Duration" で並べ替えられた、各トップ プロセスの上位ファイルごとの出力のトップ スキャンの数を指定します。
 
 
 ```yaml
@@ -447,7 +447,7 @@ Accept wildcard characters: False
 
 
 ### <a name="-topscansperprocess"></a>-TopScansPerProcess 
-トップ プロセス レポートの上位プロセスごとに出力するトップ スキャンの数を "Duration" で並べ替えた数を指定します。
+上位プロセス レポートの上位プロセスごとに出力する上位スキャンの数を指定し、"期間" で並べ替えます。
 
 
 ```yaml
@@ -459,7 +459,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
-"Duration" で並べ替え、各上位の拡張機能の各上位プロセスの出力のトップ スキャンの数を指定します。
+"Duration" で並べ替えられた各上位プロセスの出力のトップ スキャンの数を指定します。
 
 
 ```yaml
@@ -471,7 +471,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
-"Duration" で並べ替えた各トップ ファイルの上位プロセスごとに出力をスキャンする上位スキャンの数を指定します。
+"Duration" で並べ替えられた各トップ ファイルの上位プロセスごとの出力のトップ スキャンの数を指定します。
 
 
 ```yaml

@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 metadata:
-  title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
-  description: Microsoft Defender for Endpoint の攻撃表面縮小ルールに関するよく寄せられる質問に対する回答を見つける。
-  keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
+  title: 攻撃面の削減に関してよく寄せられる質問 (FAQ)
+  description: Microsoft Defender for Endpointの攻撃面削減ルールに関してよく寄せられる質問に対する回答を見つけます。
+  keywords: 攻撃面の縮小ルール、asr、hips、ホスト侵入防止システム、保護ルール、アンチエクスプロイト、アンチエクスプロイト、エクスプロイト、感染防止、Microsoft Defender for endpoint
   ms.pagetype: security
   ms.prod: m365-security
   ms.mktglfcycl: manage
@@ -18,13 +18,13 @@ metadata:
   ms.technology: mde
   ms.collection: m365-security-compliance
   ms.date: 1/18/2022
-  ms.openlocfilehash: fbdeee9b98a0c9a3309cf0d18436fb8508afc060
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: 7c37f4f971ea603be2bf523568c03c84f669951c
+  ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63683781"
-title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
+  ms.lasthandoff: 04/06/2022
+  ms.locfileid: "64667166"
+title: 攻撃面の削減に関してよく寄せられる質問 (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,203 +38,207 @@ sections:
 - name: 無視
   questions:
   - question: >
-      攻撃表面の縮小 (ASR) は、攻撃の一部Windows?
+      Is attack surface reduction (ASR) part of Windows?
     answer: >
-      ASR はもともと、Microsoft Defender ウイルス対策 バージョン 1709 の Microsoft Defender ウイルス対策 Windows 10 の主要な更新プログラムとして導入されたエクスプロイト ガード機能のスイートの機能でした。 Microsoft Defender ウイルス対策は、マルウェア対策のネイティブ コンポーネントWindows。 ただし、完全な ASR 機能セットは、エンタープライズ ライセンスWindows使用できます。 また、ASR ルールの除外は、ユーザーの除外とは別Microsoft Defender ウイルス対策注意してください。
+      ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10, version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, the full ASR feature-set is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Microsoft Defender Antivirus exclusions.
   - question: >
-      ASR ルールを実行するには、エンタープライズ ライセンスが必要ですか?
+      Do I need to have an enterprise license to run ASR rules?
     answer: >
-      ASR ルールと機能の完全なセットは、エンタープライズ ライセンスが 11 の場合Windows 10サポートWindowsです。 限られた数のルールは、エンタープライズ ライセンスなしで動作する場合があります。 ビジネスをMicrosoft 365場合は、Microsoft Defender ウイルス対策セキュリティ ソリューションとして設定し、PowerShell を使用してルールを有効にしてください。 エンタープライズ ライセンスなしで ASR を使用しても、正式にはサポートされていないので、ASR の完全な機能を使用することはできません。
+      The full set of ASR rules and features is only supported if you have an enterprise license for Windows 10 or Windows 11. A limited number of rules may work without an enterprise license. If you have Microsoft 365 Business, set Microsoft Defender Antivirus as your primary security solution, and enable the rules through PowerShell. Using ASR without an enterprise license isn't officially supported and you won't be able to use the full capabilities of ASR.
 
 
-      ライセンスの詳細については、「Windows ライセンス」を参照しWindows 10[](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)ボリューム ライセンス ガイド[を](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)参照Windows 10。
+      To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
   - question: >
-      E3 ライセンスを持っている場合、ASR はサポートされていますか?
+      Is ASR supported if I have an E3 license?
     answer: >
-      はい。 ASR は E3 以上Windows Enterpriseサポートされています。
+      Yes. ASR is supported for Windows Enterprise E3 and above.
   - question: >
-      E5 ライセンスでサポートされている機能は何ですか?
+      Which features are supported with an E5 license?
     answer: >
-      E3 でサポートされるルールはすべて、E5 でもサポートされています。
+      All of the rules supported with E3 are also supported with E5.
 
 
-      E5 は、Defender for Endpoint とのより大きな統合を追加します。 E5 を使用すると、リアルタイムでアラートを表示し、ルールの除外を微調整し、ASR ルールを構成し、イベント レポートのリストを表示できます。
+      E5 adds greater integration with Defender for Endpoint. With E5, you can view alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
   - question: >
-      現在サポートされている ASR ルールは何ですか?
+      What are the currently supported ASR rules?
     answer: >
-      ASR は現在、以下のすべてのルールをサポートしています。
+      ASR currently supports all of the rules below.
   - question: >
-      有効にするルール すべて、または個々のルールを有効にできますか?
+      What rules to enable? All, or can I turn on individual rules?
     answer: >
-      環境に最適な機能を把握するために、監査モードで ASR ルールを [有効にしてください](audit-windows-defender.md)。 この方法では、組織に与える影響を判断します。 たとえば、業務のライン アプリケーションなどです。
+      To help you figure out what's best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you'll determine the possible affect to your organization. For example, your line-of-business applications.
   - question: >
-      ASR ルールの除外は、どのように機能しますか?
+      How do ASR rules exclusions work?
     answer: >
-      ASR ルールの場合、除外を 1 つ追加すると、すべての ASR ルールに影響します。
+      For ASR rules, if you add one exclusion, it will affect every ASR rule.
 
 
-      ASR ルールの除外は、ワイルドカード、パス、および環境変数をサポートします。 ASR ルールでワイルドカードを使用する方法の詳細については、「ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する [」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。
+      ASR rules exclusions support wildcards, paths, and environmental variables. For more information on how to use wildcards in ASR rules, see [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
 
 
-      ASR ルールの除外に関する次の項目 (ワイルドカードや env を含む) に注意してください。 変数:
+      Be aware of the following items about ASR rules exclusions (including wildcards and env. variables):
 
 
-      - ASR ルールの除外は、ユーザーの除外Microsoft Defender ウイルス対策独立しています
+      - ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions
 
-      - ワイルドカードを使用してドライブ文字を定義することはできません
+      - Wildcards cannot be used to define a drive letter
 
-      - 複数のフォルダー \*をパスで除外する場合は、\ の複数のインスタンスを使用して、複数の入れ子になったフォルダーを示します (たとえば、c:\Folder\*\*\Test)
+      - If you want to exclude more than one folder, in a path, use multiple instances of \*\ to indicate multiple nested folders (for example, c:\Folder\*\*\Test)
 
-      - Microsoft Endpoint Configuration Manager *ワイルドカード (** または ?) をサポートしていない場合
+      - Microsoft Endpoint Configuration Manager *does not* support wildcards (* or ?)
 
-      - ランダムな文字 (自動ファイル生成) を含むファイルを除外する場合は、'?' 記号を使用できます (たとえば、C:\Folder\fileversion?.docx)
+      - If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, C:\Folder\fileversion?.docx)
 
-      - グループ ポリシーの ASR 除外では引用符はサポートされていません (エンジンは長いパス、スペースなどをネイティブに処理しますので、引用符を使用する必要はありません)
+      - ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes)
 
-      - ASR ルールは NT AUTHORITY\SYSTEM アカウントで実行されます。そのため、環境変数はコンピューター変数に制限されます。
+      - ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
   - question: >
-      除外する必要がある情報を知る方法
+      How do I know what I need to exclude?
     answer: >
-      ASR ルールが異なると、保護フローが異なります。 構成する ASR ルールが保護する機能と、実際の実行フローがどのようにパンアウトされるのかを常に考えておきます。
+      Different ASR rules will have different protection flows. Always think about what the ASR rule you are configuring protects against, and how the actual execution flow pans out.
 
 
-      例: **Windows** ローカル セキュリティ機関サブシステムから直接読み取るローカル セキュリティ機関サブシステム (LSASS) プロセスからの資格情報の盗用をブロックすると、企業の資格情報が公開される可能性があります。
+      Example:
+
+      **Block credential stealing from the Windows local security authority subsystem**
+
+      Reading directly from Local Security Authority Subsystem (LSASS) process can be a security risk, since it might expose corporate credentials.
 
 
-      このルールにより、信頼されていないプロセスは LSASS メモリに直接アクセスできます。 プロセスが OpenProcess() 関数を使用して LSASS にアクセスしようとするたびに、PROCESS_VM_READ のアクセス権を持つルールは、そのアクセス権を特にブロックします。
+      This rule prevents untrusted processes from having direct access to LSASS memory. Whenever a process tries to use the OpenProcess() function to access LSASS, with an access right of PROCESS_VM_READ, the rule will  specifically block that access right.
 
 
-      :::image type="content" source="images/asrfaq1.png" alt-text="LSASS を盗む資格情報をブロックする":::
+      :::image type="content" source="images/asrfaq1.png" alt-text="block credential stealing LSASS":::
 
 
-      上記の例を見て、アクセス権がブロックされたプロセスの例外を実際に作成する必要がある場合、フル パスと共にファイル名を追加すると、ファイル名はブロックから除外され、LSASS プロセス メモリへのアクセスが許可された後は除外されます。 値 0 は、ASR ルールがこのファイル/プロセスを無視し、ブロック/監査を行うのを意味します。
+      Looking at the above example, if you really had to create an exception for the process that the access right was blocked, adding the filename along with full path would exclude it from being blocked and after allowed to access LSASS process memory. The value of 0 means that ASR rules will ignore this file/process and not block/audit it.
 
 
-      :::image type="content" source="images/asrfaq2.png" alt-text="ファイル asr を除外する":::
+      :::image type="content" source="images/asrfaq2.png" alt-text="exclude files asr":::
   - question: >
-      Microsoft が有効に推奨するルールは何ですか?
+      What are the rules Microsoft recommends enabling?
     answer: >
-      可能な限りすべてのルールを有効にすることをお勧めします。 ただし、ルールを有効にしない場合があります。 たとえば、エンドポイントを管理するために Microsoft Endpoint Configuration Manager (または System Center Configuration Manager - SCCM) を使用している場合は、PSExec コマンドおよび WMI コマンドルールから発生するプロセス作成をブロックすることを有効にすることをお勧めしません。
+      We recommend enabling every possible rule. However, there are some cases where you shouldn't enable a rule. For example, we don't recommend enabling the Block process creations originating from PSExec and WMI commands rule, if you're using Microsoft Endpoint Configuration Manager (or, System Center Configuration Manager - SCCM) to manage your endpoints.
 
 
-      ルール固有の各情報や警告については、パブリック ドキュメントで確認することを強 [くお勧めします](/microsoft-365/security/defender-endpoint/attack-surface-reduction)。
+      We highly recommend you that you read each rule-specific information and/or warnings, which are available in our
 
-      保護の複数の柱にまたがって、Office、資格情報、スクリプト、電子メールなど。WMI イベント サブスクリプションによる永続化のブロックを除くすべての ASR ルールは、1709 以降Windowsサポートされます。
+      [public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
+       spanning across multiple pillars of protection, like Office, Credentials, Scripts, E-Mail, etc. All ASR rules, except for Block persistence through WMI event subscription, are supported on Windows 1709 and later:
 
+      * [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 
-      * [悪用された脆弱な署名済みドライバーの悪用をブロックする](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
+      * [Block executable content from email client and webmail](attack-surface-reduction-rules-reference.md#block-executable-content-from-email-client-and-webmail)
 
-      * [メール クライアントと Web メールから実行可能なコンテンツをブロックする](attack-surface-reduction-rules-reference.md#block-executable-content-from-email-client-and-webmail)
+      * [Block all Office applications from creating child processes](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes)
 
-      * [すべてのアプリケーションOffice子プロセスの作成をブロックする](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes)
+      * [Block Office applications from creating executable content](attack-surface-reduction-rules-reference.md#block-office-applications-from-creating-executable-content)
 
-      * [実行可能Office作成するアプリケーションをブロックする](attack-surface-reduction-rules-reference.md#block-office-applications-from-creating-executable-content)
+      * [Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)
 
-      * [アプリケーションOffice他のプロセスへのコードの挿入をブロックする](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)
+      * [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
 
-      * [JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+      * [Block execution of potentially obfuscated scripts](attack-surface-reduction-rules-reference.md#block-execution-of-potentially-obfuscated-scripts)
 
-      * [難読化される可能性のあるスクリプトの実行をブロックする](attack-surface-reduction-rules-reference.md#block-execution-of-potentially-obfuscated-scripts)
+      * [Block Win32 API calls from Office macro](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros)
 
-      * [Win32 API 呼び出しをブロックOfficeマクロ](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros)
+      * [Use advanced protection against ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware)
 
-      * [ランサムウェアに対する高度な保護の使用](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware)
+      * [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
 
-      * [ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロック](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)する (lsass.exe)
+      * [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 
-      * [PSExec および WMI コマンドから発生するプロセス作成をブロックする](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)
+      * [Block untrusted and unsigned processes that run from USB](attack-surface-reduction-rules-reference.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
 
-      * [USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](attack-surface-reduction-rules-reference.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
+      * [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction-rules-reference.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
 
-      * [有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](attack-surface-reduction-rules-reference.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
+      * [Block Office communication applications from creating child processes](attack-surface-reduction-rules-reference.md#block-office-communication-application-from-creating-child-processes)
 
-      * [通信Officeプロセスの作成をブロックする](attack-surface-reduction-rules-reference.md#block-office-communication-application-from-creating-child-processes)
+      * [Block Adobe Reader from creating child processes](attack-surface-reduction-rules-reference.md#block-adobe-reader-from-creating-child-processes)
 
-      * [Adobe Reader の子プロセスの作成をブロックする](attack-surface-reduction-rules-reference.md#block-adobe-reader-from-creating-child-processes)
-
-      * [WMI イベント サブスクリプションによる永続化のブロック](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
+      * [Block persistence through WMI event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
   - question: >
-      ローカル セキュリティ機関サブシステムは既定で有効になっていますか?
+      Is Local security authority subsystem enabled by default?
     answer: >
-      攻撃表面縮小 (ASR) ルール "Windows ローカル セキュリティ機関サブシステム (lsass.exe) からの資格情報の盗用をブロックする" の既定の状態は [構成されていません] から [構成済み] に変更され、既定のモードは [ブロック] に設定されます。 他のすべての ASR ルールは既定の状態のままです。未 **構成です**。 エンドユーザーの通知を減らすために、ルールに追加のフィルター ロジックが既に組み込まれています。 ユーザーは、既定のモードを **上書きする監査** モード、 **警告** モード、または **無効** モードにルールを構成できます。 このルールの機能は、ルールが既定モードで構成されているかどうか、または手動でブロック モードを有効にした場合と同じです。  
+      The default state for the Attack Surface Reduction (ASR) rule "Block credential stealing from the Windows local security authority subsystem (lsass.exe)" will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.
   - question: >
-      ASR の使用を開始する場合の推奨事項を教えてください。
+      What are some good recommendations for getting started with ASR?
     answer: >
-      監査モードで短時間 ASR ルールを実行して、ASR ルールが組織に与える影響をテストしてから有効にします。 監査モードでルールを実行している間に、誤ってブロックされる可能性のある任意の業務アプリケーションを特定し、ASR から除外できます。
+      Test how ASR rules will impact your organization before enabling them by running ASR rules in audit mode for a brief period of time. While you are running the rules in audit mode, you can identify any line-of-business applications that might get blocked erroneously, and exclude them from ASR.
 
 
-      大規模な組織では、ますます広範なデバイスのサブセットでルールを監査および有効にすることで、ASR ルールを "リング" で展開する方法を検討する必要があります。 Intune またはグループ ポリシー管理ツールを使用して、組織のデバイスをリングに配置できます。
+      Larger organizations should consider rolling out ASR rules in "rings," by auditing and enabling rules in increasingly broader subsets of devices. You can arrange your organization's devices into rings by using Intune or a Group Policy management tool.
   - question: >
-      監査モードで ASR ルールをテストしてから有効にする期間を指定します。
+      How long should I test an ASR rule in audit mode before enabling it?
     answer: >
-      ルールを監査モードで約 30 日間保持し、組織全体でルールが運用される場合の動作に関する良好なベースラインを取得します。 監査期間中は、ルールによってブロックされる可能性のある任意の業務用アプリケーションを特定し、除外するルールを構成できます。
+      Keep the rule in audit mode for about 30 days to get a good baseline for how the rule will operate once it goes live throughout your organization. During the audit period, you can identify any line-of-business applications that might get blocked by the rule, and configure the rule to exclude them.
   - question: >
-      サードパーティのセキュリティ ソリューションから Defender for Endpoint への切り替えを行っています。 別のセキュリティ ソリューションから ASR にルールをエクスポートする "簡単な" 方法はありますか?
+      I'm making the switch from a third-party security solution to Defender for Endpoint. Is there an "easy" way to export rules from another security solution to ASR?
     answer: >
-      ほとんどの場合、別のセキュリティ ソリューションからルールをインポートするよりも、 [Defender for Endpoint](/windows/security/threat-protection) が提案するベースライン推奨事項から始める方が簡単で優れた方法です。 次に、監査モード、監視、分析などのツールを使用して、独自のニーズに合わせて新しいソリューションを構成します。
+      In most cases, it's easier and better to start with the baseline recommendations suggested by [Defender for Endpoint](/windows/security/threat-protection) than to attempt to import rules from another security solution. Then, use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs.
 
 
-      ほとんどの ASR ルールの既定の構成は、Defender for Endpoint のリアルタイム保護と組み合わせて、多数の悪用や脆弱性から保護されます。
+      The default configuration for most ASR rules, combined with Defender for Endpoint's real-time protection, will protect against a large number of exploits and vulnerabilities.
 
 
-      Defender for Endpoint 内から、カスタム インジケーターを使用して防御を更新し、特定のソフトウェア動作を許可およびブロックできます。 ASR では、ファイルとフォルダーの除外の形式でルールをカスタマイズすることもできます。 一般的なルールとして、一期間ルールを監査し、ブロックされる可能性がある任意の業務アプリケーションの除外を構成するのが最善です。
+      From within Defender for Endpoint, you can update your defenses with custom indicators, to allow and block certain software behaviors. ASR also allows for some customization of rules, in the form of file and folder exclusions. As a general rule, it is best to audit a rule for a period of time, and configure exclusions for any line-of-business applications that might get blocked.
   - question: >
-      ASR は、パスにシステム変数とワイルドカードを含むファイルまたはフォルダーの除外をサポートしていますか?
+      Does ASR support file or folder exclusions that include system variables and wildcards in the path?
     answer: >
-      はい。 [除外されたファイル](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) パスでのシステム変数とワイルドカードの使用の詳細については、「ASR ルールからファイルまたはフォルダーを[](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)除外する」および「ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する」を参照してください。
+      Yes. See [Excluding files and folders from ASR rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for more details on excluding files or folders from ASR rules, and [Configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for more on using system variables and wildcards in excluded file paths.
   - question: >
-      ASR ルールは既定ですべてのアプリケーションをカバーしますか?
+      Do ASR rules cover all applications by default?
     answer: >
-      ルールによって異なります。 ほとんどの ASR ルールは、Word、Microsoft Office、Excel、PowerPoint、および OneNote などのOutlook。 難読化される可能性のあるスクリプトの実行をブロックするなどの特定の ASR ルールは、スコープ内で一般的です。
+      It depends on the rule. Most ASR rules cover the behavior of Microsoft Office products and services, such as Word, Excel, PowerPoint, and OneNote, or Outlook. Certain ASR rules, such as *Block execution of potentially obfuscated scripts*, are more general in scope.
   - question: >
-      ASR はサードパーティのセキュリティ ソリューションをサポートしていますか?
+      Does ASR support third-party security solutions?
     answer: >
-      ASR では、Microsoft Defender ウイルス対策を使用してアプリケーションをブロックします。 現時点では、ブロックに別のセキュリティ ソリューションを使用する ASR を構成することはできません。
+      ASR uses Microsoft Defender Antivirus to block applications. It is not possible to configure ASR to use another security solution for blocking at this time.
   - question: >
-      E5 ライセンスを持ち、Defender for Endpoint と組み合わせていくつかの ASR ルールを有効にしました。 エンドポイントのイベント タイムラインの Defender に ASR イベントが一向に表示されない可能性はありますか?
+      I have an E5 license and enabled some ASR rules in conjunction with Defender for Endpoint. Is it possible for an ASR event to not show up at all in Defender for Endpoint's event timeline?
     answer: >
-      ASR ルールによって通知がローカルでトリガーされるたびに、イベントに関するレポートも Defender for Endpoint ポータルに送信されます。 イベントを見つけるのに問題がある場合は、検索ボックスを使用してイベントのタイムラインをフィルター処理できます。 また、[Defender for Cloud] タスク バーの [構成管理] アイコンから 、[攻撃表面の管理に移動] にアクセスして ASR イベントを表示することもできます。 攻撃表面の管理ページには、Defender for Endpoint に報告された ASR ルール イベントの完全な一覧を含む、レポート検出用のタブが含まれています。
+      Whenever a notification is triggered locally by an ASR rule, a report on the event is also sent to the Defender for Endpoint portal. If you're having trouble finding the event, you can filter the events timeline using the search box. You can also view ASR events by visiting **Go to attack surface management**, from the **Configuration management** icon in the Defender for Cloud taskbar. The attack surface management page includes a tab for report detections, which includes a full list of ASR rule events reported to Defender for Endpoint.
   - question: >
-      GPO を使用してルールを適用しました。 Microsoft Outlook でルールのインデックス オプションを確認すると、"アクセスが拒否されました" というメッセージが表示されます。
+      I applied a rule using GPO. Now when I try to check the indexing options for the rule in Microsoft Outlook, I get a message stating, 'Access denied'.
     answer: >
-      インデックス作成オプションを 11 から直接開Windows 10またはWindowsしてください。
+      Try opening the indexing options directly from Windows 10 or Windows 11.
 
 
-      1. タスク バー **の [** 検索] アイコンWindowsします。
+      1. Select the **Search** icon on the Windows taskbar.
 
 
-      1. 検索 **ボックスに「インデックス オプション** 」と入力します。
+      1. Enter **Indexing options** into the search box.
   - question: >
-      「有病率、年齢、または信頼できるリスト条件を満たしていない限り、実行可能ファイルの実行をブロックする」というルールで使用される条件は、管理者が構成できますか?
+      Are the criteria used by the rule, "Block executable files from running unless they meet a prevalence, age, or trusted list criterion," configurable by an admin?
     answer: >
-      いいえ。 このルールで使用される条件は、Microsoft クラウド保護によって管理され、信頼できるリストを常に最新の状態に保ち、世界中のデータを収集します。 ローカル管理者は、このデータを変更する書き込みアクセス権を持つ必要があります。 このルールを企業に合わせて調整するために構成する場合は、除外リストに特定のアプリケーションを追加して、ルールがトリガーされるのを防ぐことが可能です。
+      No. The criteria used by this rule are maintained by Microsoft cloud protection, to keep the trusted list constantly up to date with data gathered from around the world. Local admins do not have write access to alter this data. If you are looking to configure this rule to tailor it for your enterprise, you can add certain applications to the exclusions list to prevent the rule from being triggered.
   - question: >
-      ASR ルール 「有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする」を有効にしました。 しばらくすると、ソフトウェアの一部が更新され、以前はブロックされなくても、ルールがブロックされます。 何か問題が起こったことはありますか?
+      I enabled the ASR rule, 'Block executable files from running unless they meet a prevalence, age, or trusted list criterion'. After some time, I updated a piece of software, and the rule is now blocking it, even though it didn't before. Did something go wrong?
     answer: >
-      このルールは、信頼できるアプリの一覧に有病率、年齢、または包含によって測定される既知の評判を持つ各アプリケーションに依存します。 アプリケーションをブロックまたは許可するルールの決定は、最終的には Microsoft クラウド保護によるこれらの条件の評価によって決まります。
+      This rule relies upon each application having a known reputation, as measured by prevalence, age, or inclusion on a list of trusted apps. The rule's decision to block or allow an application is ultimately determined by Microsoft cloud protection's assessment of these criteria.
 
 
-      通常、クラウド保護は、アプリケーションの新しいバージョンが以前のバージョンと十分に似ていると判断し、長さに再評価する必要はないと判断できます。 ただし、バージョンの切り替え後、特にメジャー更新後にアプリが評価を構築するには、しばらく時間がかかる場合があります。 その間に、アプリケーションを除外リストに追加して、このルールが重要なアプリケーションをブロックするのを防ぐことが可能です。 新しいバージョンのアプリケーションを頻繁に更新して操作する場合は、監査モードでこのルールを実行することを選択できます。
+      Usually, cloud protection can determine that a new version of an application is similar enough to previous versions that it does not need to be reassessed at length. However, it might take some time for the app to build reputation after switching versions, particularly after a major update. In the meantime, you can add the application to the exclusions list, to prevent this rule from blocking important applications. If you are frequently updating and working with new versions of applications, you may opt instead to run this rule in audit mode.
   - question: >
-      最近、ASR ルール 「Windows ローカル セキュリティ機関サブシステム (lsass.exe)からの資格情報の盗用をブロックする」を有効にし、多数の通知を受け取っています。 どうなっているのですか。
+      I recently enabled the ASR rule, 'Block credential stealing from the Windows local security authority subsystem (lsass.exe)', and I am getting a large number of notifications. What is going on?
     answer: >
-      このルールによって生成された通知は、必ずしも悪意のあるアクティビティを示すとは限りません。ただし、このルールは、マルウェアがアカウントへの不正なアクセスを得るためにlsass.exeをターゲットにしている場合が多いため、悪意のあるアクティビティをブロックする場合に役立ちます。 このlsass.exeは、ユーザーがログインした後、ユーザー資格情報をメモリに格納します。 Windows資格情報を使用してユーザーを検証し、ローカル セキュリティ ポリシーを適用します。
+      A notification generated by this rule does not necessarily indicate malicious activity; however, this rule is still useful for blocking malicious activity, since malware often targets lsass.exe to gain illicit access to accounts. The lsass.exe process stores user credentials in memory after a user has logged in. Windows uses these credentials to validate users and apply local security policies.
 
 
-      一般的な 1 日を通して多くの正当なプロセスが資格情報を求lsass.exe呼び出すので、このルールは特にノイズが多い場合があります。 既知の正当なアプリケーションによってこのルールが過剰な数の通知を生成する場合は、除外リストに追加できます。 他のほとんどの ASR ルールでは、lsass.exe を呼び出すのは多くのアプリケーションの通常の機能の一般的な動作のため、このルールと比較して、比較的少ない数の通知が生成されます。
+      Because many legitimate processes throughout a typical day will be calling on lsass.exe for credentials, this rule can be especially noisy. If a known legitimate application causes this rule to generate an excessive number of notifications, you can add it to the exclusion list. Most other ASR rules will generate a relatively smaller number of notifications, in comparison to this one, since calling on lsass.exe is typical of many applications' normal functioning.
   - question: >
-      LSA 保護と共に、「Windows ローカル セキュリティ機関サブシステム (lsass.exe)からの資格情報の盗用をブロックする」というルールを有効にしてください。
+      Is it a good idea to enable the rule, 'Block credential stealing from the Windows local security authority subsystem (lsass.exe)', alongside LSA protection?
     answer: >
-      このルールを有効にすると、LSA 保護も有効になっている場合、 [追加の保護](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) は提供されません。 ルールと LSA 保護の両方が同じ方法で動作し、両方を同時に実行すると冗長になります。 ただし、LSA 保護を有効にできない場合があります。 このような場合は、このルールを有効にして、ユーザーを対象とするマルウェアに対して同等の保護lsass.exe。
+      Enabling this rule will not provide additional protection if you have [LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) enabled as well. Both the rule and LSA protection work in much the same way, so having both running at the same time would be redundant. However, sometimes you may not be able to enable LSA protection. In those cases, you can enable this rule to provide equivalent protection against malware that target lsass.exe.
   - question: >
-      関連項目
+      See also
     answer: >-
-      * [攻撃面の減少の概要](attack-surface-reduction.md)
+      * [Attack surface reduction overview](attack-surface-reduction.md)
 
-      * [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
+      * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 
-      * [攻撃表面の縮小ルールの展開手順 3: ASR ルールの実装](attack-surface-reduction-rules-deployment-implement.md)
+      * [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
 
-      * [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
+      * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 
-      * [他のウイルス対策Microsoft Defender ウイルス対策マルウェア対策との互換性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+      * [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

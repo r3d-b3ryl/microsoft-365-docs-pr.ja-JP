@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8987c5642ea48e4c7887735cc0fce0e5bfccc119
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5e5d2b2bd47ba30aaf152171605947bb9a627480
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470397"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666352"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -28,7 +28,6 @@ ms.locfileid: "64470397"
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -61,25 +60,22 @@ ms.locfileid: "64470397"
     - [ 1803 (バージョンRS 4)](/windows/whats-new/whats-new-windows-10-version-1803) と [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [バージョン1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) と[KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **macOS** - パブリック プレビューにのみ適用され、最低限必要なバージョン: 101.43.84 
-  
-   > [!NOTE]
-   > 現在サポートされているのは、Intel ベースの macOS システムのみです。
-    
+  - **macOS** - パブリック プレビューにのみ適用され、最小必要なバージョン: 101.43.84
 
-  - **Linux** - パブリック プレビューにのみ適用され、最低限必要なバージョン: 101.45.13 
-    
+   > [!NOTE]
+   > 現在、Intel ベースの macOS システムのみがサポートされています。
+
+  - **Linux** - パブリック プレビューにのみ適用され、最小必要なバージョン: 101.45.13
+
   - **Windows Server 2012 R2** - と [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
-  
+
   - **Windows Server 2016** - と [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
   - **Windows Server 2019**
     - バージョン 1903 以降 ( [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 以降
     - バージョン 1809 ( [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
-    
-  - **Windows Server 2022**
 
-       
+  - **Windows Server 2022**
 
 - **[詳細設定] ページからライブ応答を有効にします**。
 
@@ -87,8 +83,8 @@ ms.locfileid: "64470397"
 
   > [!NOTE]
   > これらの設定を編集できるのは、セキュリティ管理ロールまたはグローバル管理者ロールを持つユーザーのみです。
-  > 
-  > 自動調査は、ライブ応答を有効にする前に [高度な](advanced-features.md) 機能設定で有効にする必要があります。
+  >
+  > ライブ応答を有効にする前に、[ [高度な機能] 設定](advanced-features.md) で自動調査を有効にする必要があります。
 
 - **詳細設定ページ** (推奨) からサーバーのライブ応答を有効にします。
 
@@ -106,7 +102,7 @@ ms.locfileid: "64470397"
 - **ライブ応答の署名されていないスクリプト実行** を有効にします (省略可能)。
 
   >[!IMPORTANT]
-  >署名の検証は、PowerShell スクリプトにのみ適用されます。 
+  >署名の検証は、PowerShell スクリプトにのみ適用されます。
 
   > [!WARNING]
   > 署名されていないスクリプトの使用を許可すると、脅威にさらされる可能性があります。
@@ -161,9 +157,6 @@ ms.locfileid: "64470397"
 
 次のコマンドは、**基本的な** ライブ応答コマンド実行する権限が付与されているユーザー ロールで使用できます。 ロールの割り当ての詳細については、「 [ロールの作成と管理](user-roles.md)」を参照してください。
 
-<br>
-
-****
 | コマンド  | 説明  | Windows および Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
 | cd  | 現在のディレクトリを変更します。  | Y  | Y  | Y  |
@@ -180,7 +173,7 @@ ms.locfileid: "64470397"
 | jobs  | 現在実行中のジョブ、その ID と状態を表示します。  | Y  | Y  | Y  |
 | persistence  | デバイス上のすべての既知の永続化メソッドを表示します。  | Y  | N  | N  |
 | processes  | デバイスで実行されているすべてのプロセスが表示されます。  | Y  | Y  | Y  |
-| registry  | レジストリ値を表示します。  | Y  | N  | N  |
+| レジストリ  | レジストリ値を表示します。  | Y  | N  | N  |
 | scheduledtasks  | デバイス上のすべてのスケジュールされたタスクを表示します。  | Y  | N  | N  |
 | services  | デバイス上のすべてのサービスを表示します。  | Y  | N  | N  |
 | startupfolders  | デバイス上のスタートアップ フォルダー内のすべての既知のファイルを表示します。  | Y  | N  | N  |
@@ -191,10 +184,6 @@ ms.locfileid: "64470397"
 
 次のコマンドは、**高度な** ライブ応答コマンド実行する権限が付与されているユーザー ロールで使用できます。 ロールの割り当ての詳細については、「 [ロールの作成と管理](user-roles.md)」を参照してください。
 
-<br>
-
-****
-
 | コマンド  | 説明  | Windows および Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
 | analyze  | さまざまな解析エンジンを使用してエンティティを分析し、判定に達します。  | Y  | N  | N  |
@@ -204,10 +193,9 @@ ms.locfileid: "64470397"
 | run  | デバイス上のライブラリから PowerShell スクリプトを実行します。  | Y  | Y  | Y  |
 | library  | ライブ応答ライブラリにアップロードされたファイルを一覧表示します。  | Y  | Y  | Y  |
 | putfile  | ライブラリからデバイスにファイルを書き込みます。 ファイルは作業フォルダーに保存され、デバイスが既定で再起動すると削除されます。  | Y  | Y  | Y  |
-| remediate  | デバイス上のエンティティを修復します。 修復アクションは、エンティティの種類によって異なります: ファイル: プロセスの削除: 停止、イメージ ファイルの削除 サービス: 停止、イメージ ファイルの削除 レジストリ エントリ: スケジュールされたタスクの削除: スタートアップ フォルダー項目の削除: ファイルの削除 注意: このコマンドには前提条件のコマンドがあります。 -auto コマンドを修復と組み合わせて使用して、前提条件のコマンドを自動的に実行できます。  | Y  | Y  | Y  |
-| scan | ウイルス対策スキャンを実行して、マルウェアの特定と修復に役立ちます。 | N | Y | Y |
+| remediate  | デバイス上のエンティティを修復します。 修復アクションは、エンティティの種類によって異なります: ファイル: プロセスの削除: 停止、イメージ ファイルの削除 サービス: 停止、イメージ ファイルの削除 レジストリ エントリ: スケジュールされたタスクの削除: スタートアップ フォルダー項目の削除: ファイルの削除 注意: このコマンドには前提条件のコマンドがあります。 -auto コマンドを修復と組み合わせて使用すると、前提条件のコマンドを自動的に実行できます。  | Y  | Y  | Y  |
+| scan | マルウェアの特定と修復に役立つウイルス対策スキャンを実行します。 | N | Y | Y |
 | undo  | 修復されたエンティティを復元します。  | Y  | Y  | Y  |
-
 
 ## <a name="use-live-response-commands"></a>ライブ応答コマンドを使用する
 
@@ -223,7 +211,7 @@ ms.locfileid: "64470397"
 > 次のファイル サイズ制限が適用されます。
 >
 > - `getfile` 制限: 3 GB
-> - `fileinfo` limit: 30 GB
+> - `fileinfo` 制限: 30 GB
 > - `library` 制限: 250 MB
 
 ### <a name="download-a-file-in-the-background"></a>バックグラウンドでファイルをダウンロードする
@@ -353,7 +341,7 @@ processes > output.txt
 
 - ライブ応答セッションは、一度に 25 個のライブ応答セッションに制限されます。
 - ライブ応答セッションの非アクティブタイムアウト値は 30 分です。
-- 個々のライブ応答コマンドの制限時間は 10 `getfile``findfile``run`分です。ただし、制限時間は 30 分です。
+- 個々のライブ応答コマンドの制限時間は 10 分で`getfile``findfile``run`、制限は 30 分です。
 - ユーザーは、最大 10 個の同時セッションを開始できます。
 - デバイスは一度に 1 つのセッションにのみ存在できます。
 - 次のファイル サイズ制限が適用されます。

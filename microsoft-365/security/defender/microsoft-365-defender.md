@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 15f4d179d3bc5590e014a15622e462932e8dea7c
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: c8df50c6970ed3404283d1911f884057e7db5747
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498717"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666880"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -91,7 +91,7 @@ Microsoft 365 Defender ポータルが、製品間で関連するすべてのア
 
 電子メールとエンドポイントの生データに基づくクエリベースのハンティングの例を次に示します。
 
-:::image type="content" source="../../media/advanced-hunting.png" alt-text=" クエリの詳細を含む [高度な検索] ページ" lightbox="../../media/advanced-hunting.png":::
+:::image type="content" source="../../media/advanced-hunting.png" alt-text=" クエリの詳細を含む [高度なハンティング] ページ" lightbox="../../media/advanced-hunting.png":::
 
 Microsoft 365 Defender クロスプロダクト機能には、次のようなものがあります。
 
@@ -119,7 +119,7 @@ Microsoft 365 Defender クロスプロダクト機能には、次のようなも
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 は、メールと Office 365 リソースを保護するための一連の防止、検出、調査、およびハンティング機能を使用して、組織が企業を保護するのに役立ちます。
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** は、組織内のデバイスに対して、予防的な保護、侵害後の検出、自動調査、および対応を提供します。
-- **[Microsoft 365 Defender](microsoft-365-defender.md)** は、Microsoft の *Extended Detection and Response* (XDR) ソリューションの一部であり、Microsoft 365 セキュリティ ポートフォリオを活用して、ドメイン全体の脅威データを自動的に分析し、単一のダッシュボードで攻撃の全体像を構築します。
+- **[Microsoft 365 Defender](microsoft-365-defender.md)** は、Microsoft 365セキュリティ ポートフォリオを利用してドメイン間の脅威データを自動的に分析し、1 つのダッシュボードで攻撃の画像を作成する Microsoft *の拡張検出および応答* (XDR) ソリューションの一部です。
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** は、包括的なクロス SaaS および PaaS ソリューションであり、クラウド アプリに対する詳細な可視性、強力なデータ制御、強化された脅威保護を実現します。
 
 Office 365 セキュリティ/コンプライアンス センターまたは Microsoft 365 Defender ポータルからの変更点に関する情報が必要な場合は、以下を参照してください。
@@ -155,11 +155,11 @@ Microsoft 365 Defender は、Microsoft Defender for Office 365 および Microso
 
 セキュリティ情報を一元化すると、Microsoft 365 全体でセキュリティ インシデントを調査するための単一の場所が作成されます。 主な例は、Microsoft 365 Defender のクイック起動時の **インシデントとアラート** の下の **インシデント** です。
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="[インシデント] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Microsoft 365 Defender ポータルの [インシデント] ページ" lightbox="../../media/converged-incidents-2.png.png":::
 
 インシデント名を選択すると、セキュリティ情報の一元化の価値を示すページが表示されます。
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="ポータル内のインシデントの概要ページMicrosoft 365 Defenderします。" lightbox="../../media/converged-incident-info-3.png":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Microsoft 365 Defender ポータルのインシデントの [概要] ページ" lightbox="../../media/converged-incident-info-3.png":::
 
 インシデントのページの上部に、**[概要]**、**[アラート]**、**[デバイス]**、**[ユーザー]**、**[メールボックス]**、**[調査]**、**[証拠と応答]**、および **[グラフ]** タブが表示されます。 詳細については、これらのタブを選択してください。 たとえば、**[ユーザー]** タブには、集中型ワークロード (Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Cloud Apps) のユーザーと、オンプレミスの Active Directory Domain Services (AD DS)、Azure AD、サードパーティの ID プロバイダーなどのさまざまなソースの情報が表示されます。 詳細については、「[ユーザーを調査する](investigate-users.md)」を参照してください。
 
@@ -173,11 +173,11 @@ Microsoft 365 Defender は、Microsoft Defender for Office 365 および Microso
 
 #### <a name="unified-settings"></a>統一された設定
 
-:::image type="content" source="../../media/converged-add-role-9.png" alt-text="[設定] ポータルの [Microsoft 365 Defender] ページ" lightbox="../../media/converged-add-role-9.png":::
+:::image type="content" source="../../media/converged-add-role-9.png" alt-text="Microsoft 365 Defender ポータルの [設定] ページ" lightbox="../../media/converged-add-role-9.png":::
 
 #### <a name="permissions--roles"></a>アクセス許可と役割
 
-:::image type="content" source="../../media/converged-roles-5.png" alt-text="[アクセス許可と役割&] ページに表示されるエンドポイント の役割&グループ" lightbox="../../media/converged-roles-5.png":::
+:::image type="content" source="../../media/converged-roles-5.png" alt-text="[アクセス許可&ロール] ページに表示されるエンドポイント ロール&グループ" lightbox="../../media/converged-roles-5.png":::
 
 Microsoft 365 Defender へのアクセスは、Azure AD グローバル ロールまたはカスタム ロールを使用して構成されます。 Defender for Endpoint については、「[Microsoft 365 Defender ポータルにユーザー アクセスを割り当てる](/microsoft-365/security/defender-endpoint/assign-portal-access)」を参照してください。 Defender for Office 365 については、「[Microsoft 365 コンプライアンス センターと Microsoft 365 Defender のアクセス許可](../office-365-security/permissions-microsoft-365-compliance-security.md)」をご覧ください。
 
@@ -218,7 +218,7 @@ Defender for Endpoint と Defender for Identity では、次のエンティテ�
 - **ファイル、IP、URL** - Defender for Endpoint と同じ機能。
 
     >[!NOTE]
-    >IP 検索と URL 検索は完全に一致し、検索結果ページには表示されずに、エンティティ ページに直接移動します。 
+    >IP 検索と URL 検索は完全に一致し、検索結果ページには表示されません。エンティティ ページに直接移動します。 
 
 - **TVM** - Defender for Endpoint と同じ機能 (脆弱性、ソフトウェア、推奨事項)。 
 
@@ -244,7 +244,7 @@ Defender for Endpoint と Defender for Identity では、次のエンティテ�
 
 ラーニング ハブ内では、メールとコラボレーション (Microsoft Defender for Office 365) のガイダンスが、Endpoint (Microsoft Defender for Endpoint) および Microsoft 365 Defender ラーニング リソースと並んでいます。
 
-ラーニング ハブは、「Microsoft 365 Defender を使用して調査する方法」 および「Microsoft Defender for Office 365 のベスト プラクティス」などのトピックを中心に編成されたラーニング パスで始まります。 このセクションは現在、Microsoft 内のセキュリティ製品グループによってキュレーションされています。 各ラーニング パスは、概念を理解するのにかかると予想される時間を反映しています。 たとえば、「Microsoft Defender for Office 365 ユーザー アカウントが侵害された場合の手順」は 8 分かかると予想されており、その場で学ぶ価値があります。
+ラーニング ハブは、「Microsoft 365 Defenderを使用して調査する方法」などのトピックを中心に整理されたラーニング パスで開きます。 と "Microsoft Defender for Office 365ベスト プラクティス"。 このセクションは現在、Microsoft 内のセキュリティ製品グループによってキュレーションされています。 各ラーニング パスは、概念を理解するのにかかると予想される時間を反映しています。 たとえば、「Microsoft Defender for Office 365 ユーザー アカウントが侵害された場合の手順」は 8 分かかると予想されており、その場で学ぶ価値があります。
 
 コンテンツをクリックした後、このサイトをブックマークして、ブックマークを 'セキュリティ' または 'クリティカル' フォルダーに整理すると便利な場合があります。 すべてのラーニング パスを表示するには、メイン パネルの [すべて表示] リンクをクリックします。
 
