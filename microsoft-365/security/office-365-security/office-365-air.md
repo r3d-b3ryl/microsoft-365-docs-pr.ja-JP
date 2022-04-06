@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e01fe2bdc5765c77500ae98e9c8177a35c683fca
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 70a5eba3eb78878cc1f15bdd711a3331e9af870a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324565"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680888"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -89,10 +89,6 @@ Microsoft Defender for Office 365修復アクションは自動的に実行さ�
 
 Microsoft 365には、Exchange 管理者アクセス許可の悪用、マルウェアアクティビティ、外部および内部の潜在的な脅威、情報ガバナンスのリスクを特定するのに役立つ、多くの組み込みのアラート ポリシーが提供されています。 既定のアラート [ポリシーのいくつかは、](../../compliance/alert-policies.md#default-alert-policies) 自動調査をトリガーできます。 次の表では、自動調査をトリガーするアラート、Microsoft 365 Defender ポータルでの重大度、および生成方法について説明します。
 
-<br>
-
-****
-
 |通知|重要度|アラートの生成方法|
 |---|---|---|
 |悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次の場合に生成されます。 <ul><li>組織のリンクで保護[セーフユーザー](safe-links.md)が悪意のあるリンクをクリックする</li><li>URL の評決の変更は、Microsoft Defender によって特定Office 365</li><li>ユーザーは、セーフリンクの警告ページを上書きします (組織の [リンク] セーフ[に基づく](set-up-safe-links-policies.md))。</li></ul> <p> このアラートをトリガーするイベントの詳細については、「[Set up セーフリンク ポリシー」を参照してください](set-up-safe-links-policies.md)。|
@@ -101,7 +97,6 @@ Microsoft 365には、Exchange 管理者アクセス許可の悪用、マルウ�
 |配信後にフィッシング URL を含む電子メール メッセージが削除される|**情報**|このアラートは、フィッシングを含むメッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft は ZAP を使用して、感染Exchange Onlineメールボックス[から削除します](zero-hour-auto-purge.md)。|
 |不審なメール送信パターンが検出される|**Medium**|このアラートは、組織内の誰かが不審なメールを送信し、電子メールの送信を制限される危険性がある場合に生成されます。 このアラートは、アカウントが侵害されたが、ユーザーを制限するのに十分な重大性を示す可能性がある動作に関する早期の警告です。 <p> まれですが、このポリシーによって生成されるアラートは異常である可能性があります。 ただし、ユーザー アカウントが侵害されているかどうかを確認 [するとよいでしょう](responding-to-a-compromised-email-account.md)。|
 |ユーザーが電子メールの送信を制限されている|**High**|このアラートは、組織内のユーザーが送信メールの送信を制限されている場合に生成されます。 通常、このアラートはメール アカウントが [侵害された場合に発生します](responding-to-a-compromised-email-account.md)。 <p> 制限付きユーザーの詳細については、「[制限](removing-user-from-restricted-users-portal-after-spam.md)付きユーザーポータルからブロックされたユーザーを削除する」を参照Microsoft 365。|
-|
 
 > [!TIP]
 > アラート ポリシーの詳細や既定の設定の編集については、「アラート ポリシー」を参照[Microsoft 365 コンプライアンス センター。](../../compliance/alert-policies.md)
@@ -109,10 +104,6 @@ Microsoft 365には、Exchange 管理者アクセス許可の悪用、マルウ�
 ## <a name="required-permissions-to-use-air-capabilities"></a>AIR 機能を使用するために必要なアクセス許可
 
 アクセス許可は、次の表に示す役割など、特定の役割を通じて付与されます。
-
-<br>
-
-****
 
 |タスク|必要な役割|
 |---|---|
@@ -147,10 +138,6 @@ Microsoft Defender で既に AIR 機能を使用している場合は、Office 3
 
 次の表に、Microsoft Defender の AIR に加わる変更と改善点を示Office 365。
 
-<br>
-
-****
-
 |項目|何が変わるのか?|
 |---|---|
 |**[調査]** ページ|更新された [ **調査] ページ** は、 [Microsoft Defender for Endpoint に表示される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
@@ -161,7 +148,6 @@ Microsoft Defender で既に AIR 機能を使用している場合は、Office 3
 |**[証拠]** タブ|新しい **[証拠]** タブには、アクションに関連する主要なエンティティの結果が表示されます。 各証拠に関連するアクションは、保留中のアクションを選択するときに開くサイド ウィンドウで承認 (または拒否) できます。|
 |**アクション センター**|更新されたアクション **センター** (<https://security.microsoft.com/action-center>) は、電子メール、デバイス、および ID 間で保留中のアクションと完了したアクションをまとめます。 詳細については、「アクション センター」を参照してください。 (詳細については、「アクション センター [」を参照](../defender/m365d-action-center.md)してください。|
 |**[インシデント]** ページ|[ **インシデント] ページ** では、複数の調査を相互に関連付け、調査の統合されたビューを向上しました。 ([インシデントの詳細については、次を参照](../defender/incidents-overview.md)してください)。|
-|
 
 ## <a name="next-steps"></a>次の手順
 

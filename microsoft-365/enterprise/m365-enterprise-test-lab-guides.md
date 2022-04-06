@@ -7,7 +7,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/20/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 以下のテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 向けのデモ、概念実証、または開発/テスト環境を設定します。
-ms.openlocfilehash: 71be198b6ad96b6131680c41130a2debfd89693c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 18b243a0fea9cb4864a0375740c4ebadcc44d6c3
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210343"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681658"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 Enterprise のテスト ラボ ガイド
 
@@ -37,7 +37,7 @@ TLG はモジュール式に設計されています。 これらの構成は、
   
 ![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Microsoft 365 for enterprise Test Lab Guide スタック内のすべての記事を視覚的にマップするには、次の図を展開するか、エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 に[移動します](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+Microsoft 365 for enterprise Test Lab Guide スタック内のすべての記事を視覚的にマップするには、次の図を展開するか、エンタープライズ テスト ラボ ガイド スタックの [Microsoft 365 に移動します](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 [![エンタープライズ テスト Microsoft 365ガイド スタックの一覧です。](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
@@ -45,9 +45,9 @@ Microsoft 365 for enterprise Test Lab Guide スタック内のすべての記事
 
 まず、エンタープライズ向けテスト環境Microsoft 365[作成します](/microsoft-365-enterprise/)。 次の 2 種類の基本構成を作成できます。
 
-- [軽量の基本](lightweight-base-configuration-microsoft-365-enterprise.md)構成 - クラウド専用環境でエンタープライズ機能用の Microsoft 365 を構成およびデモンストレーションする場合に使用します。これには、オンプレミス コンポーネントは含まれます。
+- [軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md) - クラウド専用環境でエンタープライズ機能と機能の Microsoft 365 を構成およびデモンストレーションする場合に使用します。これには、オンプレミス コンポーネントは含めではありません。
 
-- [シミュレート](simulated-ent-base-configuration-microsoft-365-enterprise.md)されたエンタープライズ ベース構成 - Active Directory ドメイン サービス (AD DS) ドメインなどのオンプレミス コンポーネントを使用するハイブリッド クラウド環境で、エンタープライズ機能と機能の Microsoft 365 を構成およびデモンストレーションする場合に使用します。
+- [シミュレート](simulated-ent-base-configuration-microsoft-365-enterprise.md)されたエンタープライズ ベース構成 - Active Directory ドメイン サービス (AD DS) ドメインなどのオンプレミス コンポーネントを使用するハイブリッド クラウド環境でエンタープライズ機能の Microsoft 365 を構成およびデモンストレーションする場合に使用します。
 
 試用版または運用テスト環境に Microsoft 365 E5 ライセンスを追加することなく、Office 365 E5 のテスト環境を作成することもできます。
     
@@ -69,7 +69,7 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
 - [Azure AD シームレス シングル サインオン](single-sign-on-m365-ent-test-environment.md)
   
-   Azure ドメイン コントローラーを使用ADシームレス シングル サインオン (シームレス SSO) を有効ADテストします。
+   DS ドメイン コントローラー Azure ADシームレス シングル サインオン (シームレス SSO) を有効ADテストします。
 
 - [多要素認証](multi-factor-authentication-microsoft-365-test-environment.md)
   

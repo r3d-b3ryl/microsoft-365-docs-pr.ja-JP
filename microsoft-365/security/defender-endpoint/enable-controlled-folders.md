@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: d8ff1b5946ccdcbc35a219bc0e656c2e23d6f3ea
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b62ff851cbee58cf3b29a2b4dde6fb1b6107dd85
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327659"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472817"
 ---
 # <a name="enable-controlled-folder-access"></a>制御されたフォルダー アクセスを有効にする
 
@@ -130,7 +130,7 @@ ms.locfileid: "63327659"
    - **[ディスクの変更** をブロックする] - 信頼されていないアプリがディスク セクターに書き込む試みは、イベント ログWindowsされます。 これらのログは、**運用 ID** \> \> \> \> 1123 Windows Windows Defenderで\>確認できます。
    - 監査 **ディスクの変更** のみ - 保護されたディスク セクターへの書き込みのみを Windows イベント ログに記録します (\>[アプリケーションとサービス ログ  **Microsoft** \>  \> \> Windows Windows Defender **運用** \> **ID 1124**] の下)。 保護されたフォルダー内のファイルを変更または削除しようとすると、記録されません。
 
-      ![グループ ポリシー オプション [有効] および [監査モード] がドロップダウンで選択されているスクリーンショットです。](../../media/cfa-gp-enable.png)
+    :::image type="content" source="../../media/cfa-gp-enable.png" alt-text="グループ ポリシー オプション [有効] と [監査モード] が選択されている" lightbox="../../media/cfa-gp-enable.png":::
 
 > [!IMPORTANT]
 > 管理されたフォルダー アクセスを完全に有効にするには、[グループ ポリシー] オプションを [有効] に設定し、[オプション] ドロップダウン メニューの [ブロック] を選択する必要があります。

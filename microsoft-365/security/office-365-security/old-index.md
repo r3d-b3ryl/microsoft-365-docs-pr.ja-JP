@@ -1,5 +1,5 @@
 ---
-title: Office 365の概要、Microsoft Defender for Office 365 EOP、MSDO
+title: Office 365セキュリティの概要、 Microsoft Defender for Office 365 EOP、MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 におけるセキュリティについて、EOP、Defender for Office 365 プラン 1 およびプラン 2、セキュリティの標準構成と厳格な構成の違いなどを説明します。 持っている情報を理解し、プロパティをセキュリティで保護する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbcdf83423b8a6d4e40f34a96282059b44c9df3e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 688fe6bf984da77c7d53e647ec52b412e053852d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110357"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680556"
 ---
 # <a name="office-365-security"></a>Office 365 セキュリティ
 
@@ -54,7 +54,6 @@ Office 365 セキュリティ は、EOP で提供される中心的な保護機�
 |EOP|Microsoft Defender for Office 365 P1|Microsoft Defender for Office 365 P2|
 |---|---|---|
 |広範な、ボリュームベースの既知の攻撃の防止。|ゼロデイ マルウェア、フィッシング、ビジネス メールの侵害からメールと共同作業を保護。|侵害後の調査、追求、対応のほか、オートメーションおよびシミュレーション (トレーニング用) の追加。|
-|
 
 しかし、アーキテクチャの観点から見た場合、各コンポーネントをセキュリティの累積的な層と捉え、各層にはセキュリティに関する特定の強調点があると考えることが可能です。 以下のように理解できます。
 
@@ -92,7 +91,6 @@ Microsoft Defender for Office 365 プランを追加した場合に、EOP の脅
 |防止/検出|調査|対応|
 |---|---|---|
 |提供されるテクノロジ:<ul><li>スパム</li><li>フィッシング</li><li>マルウェア</li><li>バルク メール</li><li>スプーフィング インテリジェンス</li><li>偽装の検出</li><li>管理者検疫</li><li>管理者とユーザーによる誤検知と検出漏れの報告</li><li>URL およびファイルの許可/禁止</li><li>レポート</li></ul>|<li>監査ログ検索</li><li>メッセージ追跡</li>|<li>ゼロ時間自動削除 (ZAP)</li><li>許可リストと禁止リストの絞り込みとテスト</li>|
-|
 
 EOP の詳細については、**[こちらの記事をご覧ください](exchange-online-protection-overview.md)**。
 
@@ -118,7 +116,7 @@ Microsoft Defender for Office 365 P1 では、調査機能として **リアル�
 
 このように、Microsoft Defender for Office 365 P2 では、***検出/対応*** 面の機能が強化され、新たに 自動化された追及機能が追加されています。
 
-Microsoft Defender for Office 365 P2 のメインの追及ツールは、リアルタイム検出ではなく **脅威エクスプローラー** と呼ばれるツールです。 Defender for Cloud に移動するときに[脅威エクスプローラー] が表示される場合は、Microsoft Defender Office 365されます。
+Microsoft Defender for Office 365 P2 のメインの追及ツールは、リアルタイム検出ではなく **脅威エクスプローラー** と呼ばれるツールです。 Defender for Cloud に移動すると、脅威エクスプローラーが表示される場合は、Microsoft Defender Office 365されます。
 
 Microsoft Defender for Office 365 P1 および P2 の詳細については、**[こちらの記事をご覧ください](defender-for-office-365.md)**。
 
@@ -132,7 +130,6 @@ Microsoft Defender for Office 365 P1 および P2 の詳細については、**[
 |Microsoft Defender for Office 365 プラン 1|Defender for Office 365 プラン 2|
 |---|---|
 |構成、保護、および検出機能: <ul><li>[添付ファイル保護](safe-attachments.md)</li><li>[リンク保護](safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 のフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイム検出](threat-explorer.md)</li></ul>|Defender for Office 365 プラン 1 の機能 <p> --- プラスのもの --- <p> 自動化、調査、修復、教育の機能: <ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレータ](attack-simulator.md)</li></ul>|
-|
 
 - Microsoft Defender for Office 365 プラン 2 は、Office 365 E5、Office 365 A5、Microsoft 365 E5 に含まれています。
 

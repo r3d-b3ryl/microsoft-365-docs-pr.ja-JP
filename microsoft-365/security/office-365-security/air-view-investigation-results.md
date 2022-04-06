@@ -19,12 +19,12 @@ description: ワークフローの自動調査中およびMicrosoft 365結果と
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54b9389d323c1e775b50bf63beaa33b0c4b0cae6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bf9fe34a88444d9d8ec6dccf4b22a507e55dfb00
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314085"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680800"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>自動調査の詳細と結果Microsoft 365
 
@@ -41,10 +41,6 @@ Microsoft [Defender](defender-for-office-365.md) [で自動](office-365-air.md)�
 
 調査の状態は、分析と処理の進捗状況を示します。 調査が実行されると、状態の表示が変わり、脅威が検出されたかどうかと、処理が承認されているかどうかが示されるようになります。
 
-<br>
-
-****
-
 |状態|説明|
 |---|---|
 |**開始中**|調査がトリガーされ、実行の開始を待っています。|
@@ -58,7 +54,6 @@ Microsoft [Defender](defender-for-office-365.md) [で自動](office-365-air.md)�
 |**Failed**|少なくとも 1 つの調査アナライザーで、正しく完了できない問題が発生しました。 <p> **メモ** 修復アクションが承認された後に調査が失敗した場合、修復アクションは引き続き成功している可能性があります。 調査の詳細を表示します。|
 |**調整によってキューに入れられます**|調査がキューに保持されている。 他の調査が完了すると、キューに入った調査が開始されます。 調整は、サービスパフォーマンスの低下を回避するのに役立ちます。  <p> **ヒント**: 保留中のアクションでは、実行できる新しい調査の数を制限できます。 保留中のアクション [を承認 (または拒否) することを確認します](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)。|
 |**調整によって終了**|調査がキューに保持されている時間が長すぎると、停止します。 <p> **ヒント**: 脅威エクスプローラー [から調査を開始できます](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。|
-|
 
 ## <a name="view-details-of-an-investigation"></a>調査の詳細を表示する
 

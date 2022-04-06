@@ -422,6 +422,61 @@
                   href: ../defender-endpoint/troubleshoot-siem.md
             - name: 脅威インテリジェンスの概念を理解する
               href: ../defender-endpoint/threat-indicator-concepts.md
+        - name: セキュリティ インテリジェンス
+          items:
+            - name: セーフティ スキャナーのダウンロード
+              href: ../intelligence/safety-scanner-download.md
+            - name: マルウェアとその他の脅威を理解する
+              href: ../intelligence/understanding-malware.md
+              items:
+                - name: マルウェアの感染を防ぐ
+                  href: ../intelligence/prevent-malware-infection.md
+                - name: マルウェア名
+                  href: ../intelligence/malware-naming.md
+                - name: コイン マイナー
+                  href: ../intelligence/coinminer-malware.md
+                - name: エクスプロイトとエクスプロイト キット
+                  href: ../intelligence/exploits-malware.md
+                - name: ファイルレスの脅威
+                  href: ../intelligence/fileless-threats.md
+                - name: マクロ マルウェア
+                  href: ../intelligence/macro-malware.md
+                - name: フィッシング詐欺
+                  href: ../intelligence/phishing.md
+                - name: ランサムウェア
+                  href: /security/compass/human-operated-ransomware
+                - name: ルートキット
+                  href: ../intelligence/rootkits-malware.md
+                - name: サプライ チェーン攻撃
+                  href: ../intelligence/supply-chain-malware.md
+                - name: テクニカル サポート詐欺
+                  href: ../intelligence/support-scams.md
+                - name: トロイの木馬
+                  href: ../intelligence/trojans-malware.md
+                - name: 望ましくないソフトウェア
+                  href: ../intelligence/unwanted-software.md
+                - name: ワーム
+                  href: ../intelligence/worms-malware.md
+            - name: Microsoft がマルウェアと PUA を識別する方法
+              href: ../intelligence/criteria.md
+            - name: 分析のためにファイルを送信する
+              href: ../intelligence/submission-guide.md
+            - name: 業界コラボレーション プログラム
+              href: ../intelligence/cybersecurity-industry-partners.md
+            - name: ウイルス情報の提携
+              href: ../intelligence/virus-information-alliance-criteria.md
+            - name: Microsoft Virus Initiative
+              href: ../intelligence/virus-initiative-criteria.md
+            - name: 連携したマルウェア撲滅活動
+              href: ../intelligence/coordinated-malware-eradication.md
+            - name: Microsoft バグ報奨金プログラム
+              href: ../intelligence/microsoft-bug-bounty-program.md
+            - name: 開発者向けの情報
+              items:
+                - name: ソフトウェア開発者の FAQ
+                  href: ../intelligence/developer-faq.yml
+                - name: ソフトウェア開発者向けリソース
+                  href: ../intelligence/developer-resources.md
     - name: Microsoft 365 Defender ドキュメント
       items:
         - name: Defender for Office 365

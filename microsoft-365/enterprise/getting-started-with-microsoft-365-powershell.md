@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Ent_O365
@@ -16,19 +16,19 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: '概要: powerShell for Microsoft 365、Microsoft 365 テナントに接続する方法、およびヘルプを取得する場所について説明します。'
-ms.openlocfilehash: 8c0d2020235c1f00797a28bab3e30dca7c8a2198
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: '概要: Microsoft 365 の PowerShell の値、Microsoft 365 テナントに接続する方法、およびヘルプを取得する場所について説明します。'
+ms.openlocfilehash: f75e93d503a2cdb002178be16e6fb4c246fe7ae8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198471"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681152"
 ---
 # <a name="get-started-with-powershell-for-microsoft-365"></a>Microsoft 365 用 PowerShell の使用を開始する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-PowerShell のコマンドとスクリプトを使用して、Microsoft 365を管理Microsoft 365作業を効率化できます。 Microsoft 365 の管理に PowerShell for Microsoft 365 が重要である理由、Microsoft 365 サブスクリプションに接続してレポートを作成する方法、Microsoft 365 コミュニティから詳細な情報を取得する場所については、次の情報を参照してください。
+PowerShell のコマンドとスクリプトを使用すると、Microsoft 365を管理Microsoft 365作業を効率化できます。 Microsoft 365 の管理に PowerShell for Microsoft 365 が重要である理由、Microsoft 365 サブスクリプションに接続してレポートを作成する方法、Microsoft 365 コミュニティから詳細な情報を取得する場所については、次の情報を参照してください。
   
 次のトピックから選択します。
   
@@ -38,11 +38,11 @@ PowerShell のコマンドとスクリプトを使用して、Microsoft 365を�
     
 - [**PowerShell を使用して Microsoft 365 に接続する**](connect-to-microsoft-365-powershell.md)
     
-    ここでは、PowerShell を使用して Microsoft 365サブスクリプションに接続し、Microsoft 365から管理タスクを実行します。
+    ここでは、PowerShell を使用して Microsoft 365サブスクリプションに接続し、コマンド ラインMicrosoft 365管理タスクを実行します。
     
 - [**単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続する**](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)
     
-    オンライン、Microsoft 365、Skype for Business、オンライン、SharePoint、Microsoft Exchange Online、およびライセンスMicrosoft 365ウィンドウで管理できます。 または、1 つのウィンドウからすべて管理できます。 この記事では、その方法について説明します。
+    オンライン、Microsoft 365、Skype for Business、オンライン、SharePoint、Microsoft 365 Microsoft Exchange Onlineの各ウィンドウでMicrosoft 365管理できます。 または、1 つのウィンドウからすべて管理できます。 この記事では、その方法について説明します。
     
 - [**PowerShell を使用してレポートを作成Microsoft 365**](use-windows-powershell-to-create-reports-in-microsoft-365.md)
     
@@ -54,8 +54,8 @@ PowerShell のコマンドとスクリプトを使用して、Microsoft 365を�
     
 - [**PowerShell の Microsoft 365 コミュニティリソース**](microsoft-365-powershell-community-resources.md)
     
-    PowerShell コミュニティに接続し、PowerShell を使用して PowerShell を使用する方法の詳細については、こちらをMicrosoft 365。
+    ここでは、PowerShell コミュニティに接続し、PowerShell を使用してサーバーに接続する方法の詳細Microsoft 365。
     
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [PowerShell で Microsoft 365を管理する](manage-microsoft-365-with-microsoft-365-powershell.md)

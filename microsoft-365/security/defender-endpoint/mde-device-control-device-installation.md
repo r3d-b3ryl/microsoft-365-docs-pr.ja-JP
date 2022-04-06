@@ -13,12 +13,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ff727f95dd62c205cee7e9606cb024a5ea88bda
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: ccef3ec748983db89b6ceca9b8092eafbef0d899
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074656"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472619"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender for Endpoint Device Control Device Installation
 
@@ -32,7 +32,7 @@ Microsoft Defender for Endpoint Device Control Device Installation を使用す�
 - ユーザーが特定のデバイスをインストールできますが、他のデバイスを防止できます。
 
 > [!NOTE]
-> デバイス インストールとリムーバブル 記憶域アクセス制御の違いについては、「Microsoft Defender for Endpoint Device Control Removable Storage [Protection」を参照してください](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true)。
+> デバイス インストールとリムーバブル 記憶域アクセス制御の違いについては、「[Microsoft Defender for Endpoint Device Control Removable Storage保護」を参照してください](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true)。
 
 |特権|アクセス許可|
 |---|---|
@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint Device Control Device Installation を使用す�
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
-サーバー 2022 Windows 10、Windows 11 台のデバイスWindows展開します。
+サーバー 2022 Windows 10、Windows 11 台のデバイスにWindows展開します。
 
 ## <a name="device-properties"></a>デバイス プロパティ
 
@@ -56,7 +56,7 @@ Microsoft Defender for Endpoint Device Control Device Installation を使用す�
 - 互換性のある ID
 - デバイス クラス
 - 'リムーバブル デバイス' デバイスの種類: 一部のデバイスは、リムーバブル デバイスとして分類できます。 デバイスが接続されているデバイスのドライバーが、デバイスがリムーバブルであると示されている場合、デバイスはリムーバブルと見なされます。 たとえば、USB デバイスは、デバイスが接続されている USB ハブのドライバーによってリムーバブルと報告されます。
-詳細については、「デバイス の[インストール」を参照Windows。](/windows/client-management/manage-device-installation-with-group-policy)
+詳細については、「デバイス の[インストール」を参照Windows](/windows/client-management/manage-device-installation-with-group-policy)。
 
 ## <a name="policies"></a>ポリシー
 
@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint Device Control Device Installation を使用す�
 
 このポリシー設定では、プラグ アンド プレイ ハードウェアの一覧と、インストールが許可されているデバイスWindows互換性のある ID を指定できます。 このポリシー設定は、[すべてのデバイスの一致条件に対してデバイスのインストール ポリシーを許可する] ポリシーと [デバイスのインストールを防止する] の評価の順序を適用するポリシー設定が有効になっている場合にのみ使用されます。
 
-このポリシー設定が [すべてのデバイスの一致条件ポリシーに対してデバイスインストール ポリシーを許可および防止する] の評価順序を適用するポリシー設定と共に有効になっている場合、階層内の同じ層以上の別のポリシー設定でインストールを特に妨げる場合を含め、Windows は、作成したリストにプラグ アンド プレイ ハードウェア ID または互換性のある ID が表示されるデバイスをインストールまたは更新できます。 次のポリシー設定など。
+このポリシー設定が [すべてのデバイスの一致条件ポリシーに対してデバイスインストール ポリシーを許可および防止する] の評価順序を適用するポリシー設定と共に有効になっている場合、Windows は、階層内の同じ層以上の別のポリシー設定がインストールを特に妨げる場合を含め、作成したリストにプラグ アンド プレイ ハードウェア ID または互換性のある ID が表示されるデバイスをインストールまたは更新できます。 次のポリシー設定など。
 
 - これらのデバイスの ID に一致するデバイスのインストールを防止します。
 - これらのデバイス インスタンスの ID に一致するデバイスのインストールを防止します。
@@ -72,13 +72,13 @@ Microsoft Defender for Endpoint Device Control Device Installation を使用す�
 [すべてのデバイスの一致条件ポリシーに対してデバイスのインストール ポリシーを許可および防止する] の評価順序を適用するポリシー設定がこのポリシー設定で有効になっていない場合は、インストールを特に防止する他のポリシー設定が優先されます。
 
 > [!NOTE]
-> [**他** のポリシー設定で説明されていないデバイスのインストールを防止する] ポリシー設定は、サポートされているターゲット Windows 10 バージョンおよび Windows 11 のすべてのデバイス一致条件ポリシー設定で[デバイスのインストール ポリシーを許可および防止する] の評価のレイヤー順に置き換えられます。 可能な場合は、[許可] ポリシーと [デバイスインストール ポリシーをすべてのデバイス一致条件に適用する] ポリシー設定に対して、層別の評価順序 **を適用する** を使用してください。
+> **[他** のポリシー設定で説明されていないデバイスのインストールを防止する] ポリシー設定は、サポートされているターゲット Windows 10 バージョンおよび Windows 11 のすべてのデバイス一致条件ポリシー設定で[デバイスのインストール ポリシーを許可および防止する] の評価のレイヤー順に置き換えられます。 可能な場合は、[許可] ポリシーと [デバイスインストール ポリシーをすべてのデバイス一致条件に適用する] ポリシー設定に対して、層別の評価順序 **を適用する** を使用してください。
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>これらのデバイス インスタンスの ID に一致するデバイスのインストールを許可する
 
 このポリシー設定では、インストールが許可されているデバイスのプラグ アンド プレイ デバイス インスタンスの一Windows指定できます。 このポリシー設定は、[すべてのデバイスの一致条件に対してデバイスのインストール ポリシーを許可する] ポリシーと [デバイスのインストールを防止する] の評価の順序を適用するポリシー設定が有効になっている場合にのみ使用されます。
 
-このポリシー設定が [すべてのデバイスの一致条件ポリシーに対してデバイスのインストール ポリシーを許可および防止する] の評価順序を適用するポリシー設定と共に有効になっている場合、階層内の同じ層以上の別のポリシー設定がインストールを特に妨げる場合を含め、Windows は、作成したリストにプラグ アンド プレイ デバイス インスタンス ID が表示されるデバイスをインストールまたは更新できます。 次のポリシー設定など。
+このポリシー設定が [すべてのデバイス一致条件ポリシーに対してデバイスのインストール ポリシーを許可および防止する] の評価順序を適用するポリシー設定と共に有効になっている場合、階層内の同じ層以上の別のポリシー設定がインストールを特に妨げる場合を含め、Windows は、作成したリストにプラグ アンド プレイ デバイス インスタンス ID が表示されるデバイスをインストールまたは更新できます。 次のポリシー設定など。
 
 - これらのデバイス インスタンスの ID に一致するデバイスのインストールを防止する
 
@@ -88,7 +88,7 @@ Microsoft Defender for Endpoint Device Control Device Installation を使用す�
 
 このポリシー設定では、インストールが許可されているドライバー パッケージのデバイス セットアップ クラスのグローバル一意識別子 (GUID) のWindows指定できます。 このポリシー設定は、[すべてのデバイスの一致条件に対してデバイスのインストール ポリシーを許可する] ポリシーと [デバイスのインストールを防止する] の評価の順序を適用するポリシー設定が有効になっている場合にのみ使用されます。
 
-このポリシー設定が [すべてのデバイスの一致条件ポリシーに対してデバイス インストール ポリシーを許可および防止する] の評価順序を適用するポリシー設定と共に有効になっている場合、Windows は、デバイス セットアップ クラスの GUID が作成したリストに表示されるドライバー パッケージをインストールまたは更新できます。階層内の同じ層以上の層にある別のポリシー設定が、そのインストールを特に妨げる場合を含む限り、Windows はドライバー パッケージをインストールまたは更新できます。 次のポリシー設定など。
+このポリシー設定が [すべてのデバイスの一致条件ポリシーに対してデバイスインストール ポリシーを許可および防止する] の評価順序を適用するポリシー設定と共に有効になっている場合、Windows は、階層内の同じ層以上の層にある別のポリシー設定が、そのインストールを特に妨げる場合を限り、作成したリストにデバイス セットアップ クラス GUID が表示されるドライバー パッケージをインストールまたは更新できます。 次のポリシー設定など。
 
 - これらのデバイス クラスのデバイスのインストールを防止する
 - これらのデバイスの ID に一致するデバイスのインストールを防止する
@@ -126,7 +126,7 @@ Microsoft Defender for Endpoint Device Control Device Installation を使用す�
 
 ### <a name="prevent-installation-of-devices-that-match-any-of-these-device-ids"></a>これらのデバイスの ID に一致するデバイスのインストールを防止する
 
-このポリシー設定では、プラグ アンド プレイ ハードウェアの一覧と、インストールが妨Windowsデバイスの互換性のある ID を指定できます。 既定では、このポリシー設定は、デバイスのインストールを許可する他Windowsよりも優先されます。
+このポリシー設定を使用すると、プラグ アンド プレイ ハードウェアの一覧と、インストールが妨Windows対応するデバイスの互換性のある ID を指定できます。 既定では、このポリシー設定は、デバイスのインストールを許可する他Windowsよりも優先されます。
 
 > [!NOTE]
 > [これらのデバイス インスタンス **の IDs** ポリシーに一致するデバイスのインストールを許可する] ポリシー設定を有効にして、該当するデバイスに対してこのポリシー設定を変更するには、[すべてのデバイスの一致条件ポリシーでデバイスのインストール ポリシーを許可および防止する] の評価のレイヤー順を適用するポリシー設定 **を有効にします** 。
@@ -137,7 +137,7 @@ Microsoft Defender for Endpoint Device Control Device Installation を使用す�
 
 ### <a name="prevent-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>これらのデバイス インスタンスの ID に一致するデバイスのインストールを防止する
 
-このポリシー設定を使用すると、インストールが妨Windowsデバイスのプラグ アンド プレイ デバイス インスタンスの一覧を指定できます。 このポリシー設定は、デバイスのインストールを許可する他のWindowsよりも優先されます。
+このポリシー設定では、インストールが妨Windowsデバイスのプラグ アンド プレイ デバイス インスタンスの一覧を指定できます。 このポリシー設定は、デバイスのインストールを許可する他のWindowsよりも優先されます。
 
 このポリシー設定を有効にすると、Windowsリストにデバイス インスタンス ID が表示されるデバイスがインストールされません。 リモート デスクトップ サーバーでこのポリシー設定を有効にすると、ポリシー設定は、リモート デスクトップ クライアントからリモート デスクトップ サーバーへの指定したデバイスのリダイレクトに影響します。
 
@@ -150,18 +150,18 @@ Microsoft Defender for Endpoint Device Control Device Installation を使用す�
 > [!NOTE]
 > [これらのデバイス **の ID** に一致するデバイスのインストールを許可する] と [これらのデバイス インスタンス **の IDs** ポリシー設定に一致するデバイスのインストールを許可する] を有効にして、該当するデバイスに対してこのポリシー設定を超える場合は、[すべてのデバイスの一致条件ポリシーでデバイスのインストール ポリシーを許可および防止する] の評価のレイヤー順を適用するポリシー設定 **を有効にします** 。
 
-このポリシー設定を有効にすると、Windowsリストにデバイス セットアップ クラス GUID が表示されるドライバー パッケージをインストールまたは更新する機能が無効になります。 リモート デスクトップ サーバーでこのポリシー設定を有効にすると、ポリシー設定は、リモート デスクトップ クライアントからリモート デスクトップ サーバーへの指定したデバイスのリダイレクトに影響します。
+このポリシー設定を有効にすると、Windows一覧にデバイス セットアップ クラス GUID が表示されるドライバー パッケージをインストールまたは更新できます。 リモート デスクトップ サーバーでこのポリシー設定を有効にすると、ポリシー設定は、リモート デスクトップ クライアントからリモート デスクトップ サーバーへの指定したデバイスのリダイレクトに影響します。
 
-このポリシー設定を無効にした場合、または構成しない場合は、Windows設定で許可または防止されているデバイスをインストールおよび更新できます。
+このポリシー設定を無効にした場合、または構成しない場合、Windowsポリシー設定で許可または防止されているデバイスをインストールおよび更新できます。
 
 ### <a name="prevent-installation-of-removable-devices"></a>リムーバブル デバイスのインストールを防止する
 
-このポリシー設定を使用すると、リムーバブル デバイスWindowsのインストールを防止できます。 デバイスが接続されているデバイスのドライバーが、デバイスがリムーバブルであると示されている場合、デバイスはリムーバブルと見なされます。 たとえば、ユニバーサル シリアル バス (USB) デバイスは、デバイスが接続されている USB ハブのドライバーによって取り外し可能と報告されます。 既定では、このポリシー設定は、デバイスのインストールを許可する他Windowsよりも優先されます。
+このポリシー設定を使用すると、リムーバブル デバイスWindowsインストールを防止できます。 デバイスが接続されているデバイスのドライバーが、デバイスがリムーバブルであると示されている場合、デバイスはリムーバブルと見なされます。 たとえば、ユニバーサル シリアル バス (USB) デバイスは、デバイスが接続されている USB ハブのドライバーによって取り外し可能と報告されます。 既定では、このポリシー設定は、デバイスのインストールを許可する他Windowsよりも優先されます。
 
 > [!NOTE]
-> これらのデバイスセットアップ クラスに一致するドライバーを使用してデバイスのインストールを許可する、これらのデバイスの ID と一致するデバイスのインストールを許可する、およびこれらのデバイス インスタンス **の IDs** ポリシー設定に一致するデバイスのインストールを許可して、該当するデバイスに対してこのポリシー設定を超える場合は、[すべてのデバイス一致条件ポリシーでデバイスのインストール ポリシーを許可および防止する] の評価のレイヤー順を適用するポリシー設定を有効にします。
+> これらのデバイス セットアップ クラスに一致するドライバーを使用してデバイスのインストールを許可する、これらのデバイスの ID に一致するデバイスのインストールを許可する、およびこれらのデバイス インスタンス **の IDs** ポリシー設定に一致するデバイスのインストールを許可して、該当するデバイスに対してこのポリシー設定を超える場合は、[すべてのデバイス一致条件ポリシーでデバイスのインストール ポリシーを許可および防止する] の評価のレイヤー順を適用するポリシー設定を有効にします。
 
-このポリシー設定を有効にすると、Windowsデバイスのインストールが妨がり、既存のリムーバブル デバイスはドライバーを更新できません。 リモート デスクトップ サーバーでこのポリシー設定を有効にすると、ポリシー設定は、リモート デスクトップ クライアントからリモート デスクトップ サーバーへのリムーバブル デバイスのリダイレクトに影響します。
+このポリシー設定を有効にすると、Windowsデバイスのインストールが防止され、既存のリムーバブル デバイスではドライバーを更新できません。 リモート デスクトップ サーバーでこのポリシー設定を有効にすると、ポリシー設定は、リモート デスクトップ クライアントからリモート デスクトップ サーバーへのリムーバブル デバイスのリダイレクトに影響します。
 
 このポリシー設定を無効にするか構成しない場合、Windowsは、他のポリシー設定で許可または防止されているリムーバブル デバイスのドライバー パッケージをインストールおよび更新できます。
 
@@ -199,38 +199,40 @@ In Microsoft エンドポイント マネージャー [https://endpoint.microsof
 
 1. [構成 **] これらのデバイス セットアップ クラスに一致するドライバーを使用したデバイスのインストールを防止します**。
 
-    - Open Endpoint security > 攻撃表面の縮小 > ポリシー > プラットフォームの作成: Windows 10 (以降) & プロファイル: デバイス制御。
-
-      :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="プロファイルの編集":::
-
+    - Open Endpoint security > 攻撃表面の縮小 > ポリシー>プラットフォームの作成: Windows 10 (以降) & プロファイル: デバイス制御。
+    
+      :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="[プロファイルの編集] ページ" lightbox="../../media/devicepolicy-editprofile.png":::
+    
 2. USB デバイスをプラグインすると、次のエラー メッセージが表示されます。
 
-      :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="エラー メッセージ":::
+      :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="エラー メッセージ" lightbox="../../media/devicepolicy-errormsg.png":::
 
-3. [すべてのデバイスの一致条件でデバイスのインストール ポリシーを許可する] と [デバイスのインストールを防止する] の評価のレイヤー順 **を適用するを有効にします**。
+3. [ **すべてのデバイスの一致条件で** デバイスのインストール ポリシーを許可する] と [デバイスのインストールを防止する] の評価のレイヤー順を適用するを有効にします。
 
-    - **今のところ OMA-URI** のみをサポートしています: デバイス > 構成プロファイル > プロファイル> プラットフォームの作成: Windows 10 (以降) & プロファイル: Custom
+    - **現在は OMA-URI** のみをサポートしています: デバイス > 構成プロファイル > プロファイル> プラットフォームの作成: Windows 10 (以降) & プロファイル: Custom
+    
+      :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="[行の編集] ページ" lightbox="../../media/devicepolicy-editrow.png":::
 
-      :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="行の編集":::
-
-4. 許可されている USB インスタンス ID を有効にして追加する – これらのデバイス ID に一致するデバイスのインストール **を許可します**。
+4. 許可された USB インスタンス ID を有効にして追加する – これらのデバイス ID に一致するデバイスのインストール **を許可します**。
 
     - 手順 1 デバイス制御プロファイルを更新する
+    
+      :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="[デバイス制御] ページの識別子" lightbox="../../media/devicepolicy-devicecontrol.png":::
+       
+    PCI\CC_0C03の追加。PCI\CC_0C0330。PCI\VEN_8086。PNP0CA1;PNP0CA1&HOST; USB\ROOT_HUB30。USB\ROOT_HUB20。画面キャプチャUSB20_HUB USB\USB20_HUB 1 つの USB サム ドライブを有効にするには、1 つのハードウェア ID のみを有効にするのに十分ではないのでです。 ターゲットデバイスの前のすべての USB デバイスもブロック (許可) されない必要があります。 デバイス マネージャーを開き、PnP ツリーにデバイスをインストールする方法を確認するために、ビューを [接続別デバイス] に変更できます。 この場合、ターゲットの USB サム ドライブも許可される可能性がある場合は、次のデバイスを許可する必要があります。 
 
-      :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="devicecontrol":::
-
-    PCI\CC_0C03の追加。PCI\CC_0C0330。PCI\VEN_8086。PNP0CA1;PNP0CA1 &HOST; USB\ROOT_HUB30;USB\ROOT_HUB20。画面キャプチャUSB20_HUB USB\USB20_HUB 1 つの USB サム ドライブを有効にするには、単一のハードウェア ID のみを有効にするのに十分ではないのでです。 ターゲットデバイスの前のすべての USB デバイスもブロック (許可) されない必要があります。 デバイス マネージャーを開き、PnP ツリーにデバイスをインストールする方法を確認するために、ビューを [接続別デバイス] に変更できます。 この場合、ターゲットの USB サム ドライブも許可される可能性がある場合は、次のデバイスを許可する必要があります。
+    PCI\CC_0C03の追加。PCI\CC_0C0330。PCI\VEN_8086。PNP0CA1;PNP0CA1&HOST; USB\ROOT_HUB30。USB\ROOT_HUB20。画面キャプチャUSB20_HUB USB\USB20_HUB 1 つの USB サム ドライブを有効にするには、1 つのハードウェア ID のみを有効にするのに十分ではないのでです。 ターゲットデバイスの前のすべての USB デバイスもブロック (許可) されない必要があります。 デバイス マネージャーを開き、PnP ツリーにデバイスをインストールする方法を確認するために、ビューを [接続別デバイス] に変更できます。 この場合、ターゲットの USB サム ドライブも許可される可能性がある場合は、次のデバイスを許可する必要があります。
 
     - "Intel(R) USB 3.0 eXtensible ホスト コントローラー – 1.0 (Microsoft)" -> PCI\CC_0C03
     - "USB ルート ハブ (USB 3.0)" -> USB\ROOT_HUB30
     - "Generic USB Hub" -> USB\USB20_HUB
 
-    :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="デバイス制御":::
+    :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="[デバイス マネージャー] ページの [表示] メニュー項目" lightbox="../../media/devicepolicy-devicemgr.png":::
 
     > [!NOTE]
     > システム内の一部のデバイスには、システムへのインストールを定義する複数の接続層があります。 USB サム ドライブは、このようなデバイスです。 したがって、システムでそれらをブロックまたは許可する場合は、各デバイスの接続のパスを理解することが重要です。 システムで一般的に使用される一般的なデバイスの ID がいくつかあるので、このような場合に "許可リスト" を作成するための良いスタートを提供できます。 次に示す例は 1 つです (すべての USB では常に同じではありません。デバイス マネージャーを介して管理するデバイスの PnP ツリーを理解する必要があります)。
     >
-    > PCI\CC_0C03;PCI\CC_0C0330。PCI\VEN_8086。PNP0CA1;PNP0CA1&HOST (ホスト コントローラー用)/USB\ROOT_HUB30。USB\ROOT_HUB20 (USB ルート ハブ用)/USB\USB20_HUB (汎用 USB ハブ用)/
+    > PCI\CC_0C03。PCI\CC_0C0330。PCI\VEN_8086。PNP0CA1;PNP0CA1&HOST (ホスト コントローラー用)/USB\ROOT_HUB30。USB\ROOT_HUB20 (USB ルート ハブ用)/USB\USB20_HUB (汎用 USB ハブ用)/
     >
     > 特にデスクトップ コンピューターの場合は、キーボードとマウスが接続しているすべての USB デバイスを上記の一覧に記載することが重要です。 そうしない場合、ユーザーが HID デバイスを介してコンピューターにアクセスできません。
     >
@@ -238,7 +240,7 @@ In Microsoft エンドポイント マネージャー [https://endpoint.microsof
 
 5. 許可されている USB を再度接続します。 これで、許可と利用可能が表示されます。
 
-    :::image type="content" source="../../media/devicepolicy-removedrive.png" alt-text="ドライブを削除する":::
+    :::image type="content" source="../../media/devicepolicy-removedrive.png" alt-text="[ドライブの詳細の削除] ページ" lightbox="../../media/devicepolicy-removedrive.png":::
 
 #### <a name="deploying-and-managing-policy-via-group-policy"></a>グループ ポリシーによるポリシーの展開と管理
 
@@ -250,11 +252,11 @@ In Microsoft エンドポイント マネージャー [https://endpoint.microsof
 
 #### <a name="deploying-policy"></a>ポリシーの展開
 
-展開の詳細については、グループ ポリシーを使用してデバイスインストールを管理[する (Windows 10) - Windowsします](/windows/client-management/manage-device-installation-with-group-policy)。
+展開の詳細については、グループ ポリシーを使用してデバイス インストールを管理[する (Windows 10) - Windowsします](/windows/client-management/manage-device-installation-with-group-policy)。
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint Storageデバイス コントロールリムーバブル アクセス制御データを表示する
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でデバイスコントロールStorageアクセス制御データを表示する
 
-セキュリティ[Microsoft 365には、](https://sip.security.microsoft.com/homepage)デバイスコントロール デバイスのインストールによってブロックされたリムーバブル 記憶域が表示されます。 セキュリティにアクセスするにはMicrosoft 365サブスクリプションが必要です。
+セキュリティ [Microsoft 365には、](https://sip.security.microsoft.com/homepage)デバイスコントロール デバイスのインストールによってブロックされたリムーバブル 記憶域が表示されます。 セキュリティにアクセスするにはMicrosoft 365サブスクリプションが必要です。
 
 - Microsoft 365 E5 レポートの詳細
 
@@ -270,13 +272,13 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
-:::image type="content" source="../../media/block-removable-storage2.png" alt-text="ブロック ストレージ":::
+:::image type="content" source="../../media/block-removable-storage2.png" alt-text="ブロック ストレージ" lightbox="../../media/block-removable-storage2.png":::
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="how-can-i-know-whether-the-target-machine-gets-the-deployed-policy"></a>ターゲット コンピューターが展開されたポリシーを取得するかどうかを確認する方法
 
-次のクエリを使用して、セキュリティ ポータルでマルウェア対策クライアントのMicrosoft 365できます。
+次のクエリを使用して、セキュリティ ポータルでマルウェア対策クライアントMicrosoft 365取得できます。
 
 ```kusto
 //check whether the Device installation policy has been deployed to the target machine, event only when modification happens
@@ -289,4 +291,5 @@ DeviceRegistryEvents
 
 単一の USB サム ドライブを有効にするには、1 つのハードウェア ID のみを有効にするのに十分ではありません。 ターゲットデバイスの前のすべての USB デバイスもブロック (許可) されていないか確認します。
 
-:::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="デバイスのインストールに関するよく寄せられる質問":::
+:::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="デバイスのインストールに関するよく寄せられる質問" lightbox="../../media/devicemgrscrnshot.png":::
+

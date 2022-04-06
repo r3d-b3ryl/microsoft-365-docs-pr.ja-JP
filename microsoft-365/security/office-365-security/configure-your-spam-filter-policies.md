@@ -18,12 +18,12 @@ ms.custom: ''
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ac240f402d230362cb33ea818e62c1e0629eb39
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 8550d55553b1c406fa21ce362e201a8bbe3d5aea
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909749"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681306"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -80,8 +80,8 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 - スパム対策ポリシーに推奨される設定については、「[EOP スパム対策ポリシーの設定](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)」を参照してください。
 
-- スパム フィルター処理を完全にオフにすることはできませんが、メール フロー ルール (トランスポート ルールとも呼ばれます) を使用して、受信メッセージのほとんどのスパム フィルター処理 (たとえば、サードパーティの保護サービスを介してメールをルーティングする場合、Microsoft 365 に配信する前のデバイス) をバイパスできます。 詳細については、「[メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)」を参照してください。
-  - 信頼度の高いフィッシング メッセージは、引き続きフィルター処理されます。 EOP のその他の機能は影響を受けません (たとえば、メッセージは常にマルウェアをスキャンします)。
+- スパム フィルター処理を完全にオフにすることはできませんが、メール フロー ルール (トランスポート ルールとも呼ばれます) を使用して、受信メッセージのほとんどのスパム フィルター処理をバイパスできます (たとえば、サード パーティの保護サービスまたはデバイスを介してメールをルーティングしてMicrosoft 365に配信する場合など)。詳細については、「[メール フロー ルールを使用して、メッセージのスパム信頼度レベル (SCL) を設定する](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)」 を参照してください。
+  - 高確度のフィッシング メッセージは、引き続きフィルター処理されます。EOP のその他の機能は影響を受けません (たとえば、メッセージは常にマルウェアをスキャンします)。
   - SecOps メールボックスまたはフィッシングシ ミュレーションのスパム フィルター処理をバイパスする必要がある場合は、メール フロー ルールを使用しないでください。 詳細については、「[サード パーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信するように構成する](configure-advanced-delivery.md)」を参照してください。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>Microsoft 365 Defender ポータルを使用して、スパム対策ポリシーを作成する
@@ -148,10 +148,6 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
      - チェック マーク ( ![チェック マーク。](../../media/checkmark.png)) は、アクションが使用可能であることを示します (すべてのアクションがすべての判定に使用できるわけではありません)。
      - チェック マークの後にアスタリスク ( <sup>\*</sup> ) がある場合、スパム対策フィルター判定の既定のアクションであることを示しています。
 
-     <br>
-
-     ****
-
      |アクション|スパム|高<br>信頼度<br>スパム|フィッシング詐欺|高<br>信頼度<br>フィッシング詐欺|バルク|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**メッセージを迷惑メール フォルダーに移動する**: メッセージはメールボックスに配信され、[迷惑メール] フォルダーに移動されます。<sup>1</sup>|![チェック マーク。](../../media/checkmark.png)<sup>\*</sup>|![チェック マーク。](../../media/checkmark.png)<sup>\*</sup>|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)<sup>\*</sup>|
@@ -161,7 +157,6 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
      |**[メッセージの削除]:** 添付ファイルすべてを含め、メッセージ全体が確認なしで削除されます。|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)||![チェック マーク](../../media/checkmark.png)|
      |**[メッセージを隔離する]:** メッセージを本来の受信者に送信せず、検疫に送信します。 <p> 後で、検疫でメッセージを保持する期間を **[検疫]** ボックスに指定します。 <p> 表示される **[ポリシーの選択]** ボックスで、スパム フィルター判定に対する検疫済みメッセージに適用される [検疫ポリシー](quarantine-policies.md)を指定します。詳細については、[[検疫ポリシー]](quarantine-policies.md)を参照してください。<sup>3</sup>|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../../media/checkmark.png)|
      |**アクションなし**|||||![チェック マーク](../../media/checkmark.png)|
-     |
 
      > <sup>1</sup> EOP は、独自のメール フロー配信エージェントを使用して、迷惑メール ルールを使用するのではなく、メッセージを迷惑メール フォルダーにルーティングするようになりました。 **Set-MailboxJunkEmailConfiguration** コマンドレットの _Enabled_ パラメーターは、メール フローに影響を与えなくなりました。 詳細については、「[Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
      >
@@ -200,7 +195,7 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
      - **スパム メッセージに対して ZAP を有効にする**: 既定では、ZAP はスパム検出に対して有効になっていますが、チェックボックスをオフにすることで無効にできます。
 
    > [!NOTE]
-   > エンド ユーザーのスパム通知は、検疫ポリシーの _検疫通知_ に置き換えられました。 検疫通知には、サポートされているすべての保護機能 (スパム対策ポリシーおよびフィッシング対策ポリシーの判定だけでなく) の検疫済みメッセージに関する情報が含まれます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+   > エンドユーザーのスパム通知は、サポートされているすべての保護機能 (スパム対策ポリシー判定だけでなく) の検疫済みメッセージに関する情報を含む、検疫ポリシーの _検疫通知_ に置き換えられました。検疫通知には、サポートされているすべての保護機能 (スパム対策ポリシーとフィッシング対策ポリシーの評定だけではありません) の検疫済みメッセージに関する情報が含まれています。詳細については、「[検疫ポリシー](quarantine-policies.md)」 を参照してください。
 
    完了したら、**[次へ]** をクリックします。
 

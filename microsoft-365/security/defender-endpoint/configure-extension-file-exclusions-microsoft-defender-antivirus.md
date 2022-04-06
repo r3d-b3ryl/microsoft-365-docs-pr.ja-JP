@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: be22c80e51551b5de2a2aeed2f0dff0db9a8481f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: da5add0e1f37a813e6962accbc391be6efba1cb1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323655"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472993"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -114,7 +114,7 @@ ms.locfileid: "63323655"
     4. ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。 
     5. [値 **] 列に「0****」と入力** します。
 
-5. その後で、**[OK]** を選択します。
+5. [**OK**] を選択します。
 
 6. [拡張機能 **の除外] 設定を** 開いて編集し、除外を追加します。
     1. オプションを [有効] に **設定します**。
@@ -122,7 +122,7 @@ ms.locfileid: "63323655"
     3. [値名] 列の下に、それぞれのファイル拡張子 **を独自の行に入力** します。
     4. [値 **] 列に「0****」と入力** します。
 
-7. その後で、**[OK]** を選択します。
+7. [**OK**] を選択します。
 
 <a id="ps"></a>
 
@@ -334,7 +334,7 @@ Get-MpPreference
 
 次の例では、リストに含まれるアイテムが `ExclusionExtension` 強調表示されます。
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Get-MpPreference の PowerShell 出力。":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Get-MpPreference の PowerShell 出力" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
 詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender ウイルス対策 コマンドレット ](/powershell/module/defender/)」を参照してください。
 
@@ -350,7 +350,7 @@ $WDAVprefs.ExclusionPath
 
 次の例では、コマンドレットを使用するごとに、リストが新しい行に分割 `Add-MpPreference` されます。
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="除外リスト内のエントリのみを表示する PowerShell 出力。":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="除外リスト内のエントリのみを表示する PowerShell 出力" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
 詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender ウイルス対策 コマンドレット ](/powershell/module/defender/)」を参照してください。
 

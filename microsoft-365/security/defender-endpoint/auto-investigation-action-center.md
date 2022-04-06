@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 7c300a6d66ae67d481b61a0a35101a0472031266
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3cd45506601202a4a1bd5a400eeb51a0e07cecc0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327687"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473037"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>アクション センターにアクセスして修復アクションを確認する
 
@@ -40,7 +40,7 @@ ms.locfileid: "63327687"
 
 新しい統合アクション センター ()をお知らせ[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)します。
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="ポータルのアクション センター Microsoft 365 Defenderします。":::
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="[アクション センター] ページ (Microsoft 365 Defender ポータル)" lightbox="images/mde-action-center-unified.png":::
 
 次の表は、新しい統合アクション センターと前のアクション センターを比較します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "63327687"
 |---------|---------|
 |デバイスと電子メールの保留中のアクションと完了したアクションを 1 つの場所に一覧表示する <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp))|デバイスの保留中のアクションと完了したアクションの一覧 <br/> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) のみ)   |
 |場所は次の場所です。<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |場所は次の場所です。<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、[</a>アクション センター] **を選択します**。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="ポータルでアクション センターに移動Microsoft 365 Defenderします。"::: | [自動調査Microsoft 365 Defender] ポータルで、[**自動調査** > **] アクション センターを選択します**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="ポータルからアクション センターに移動Microsoft 365 Defenderします。":::  |
+| [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、[</a>アクション センター] **を選択します**。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="ポータルのアクション センターへのナビゲーション ウィンドウMicrosoft 365 Defenderします。" lightbox="images/action-center-nav-new.png"::: | [自動調査Microsoft 365 Defender] ポータルで、[**自動調査** > **] アクション センターを選択します**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="以前のバージョンのナビゲーション ウィンドウを、ポータルのアクション センター Microsoft 365 Defenderします。" lightbox="images/action-center-nav-old.png":::  |
 
 統合アクション センターでは、エンドポイント用の Defender と Defender をまたがった修復アクションOffice 365。 すべての修復アクションの共通言語を定義し、統合された調査エクスペリエンスを提供します。
 
@@ -77,7 +77,7 @@ ms.locfileid: "63327687"
 
 アクション センターでデータをカスタマイズ、並べ替え、フィルター処理、およびエクスポートできます。
 
-:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="アクション センターの列とフィルター。":::
+:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="列とフィルターを含むアクション センター" lightbox="images/new-action-center-columnsfilters.png":::
 
 - 列見出しを選択して、アイテムを昇順または降順に並べ替えます。
 - 期間フィルターを使用して、過去の日、週、30 日、または 6 か月のデータを表示します。

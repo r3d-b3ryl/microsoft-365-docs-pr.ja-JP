@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 84893d7f015ec354bc27ac706c00e864705a42e5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 55a620343aa7cda05def64acc9027925aaa96a1e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165668"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472597"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の脅威に対する保護のレポート
 
@@ -36,7 +36,7 @@ ms.locfileid: "61165668"
 
 ダッシュボードは、次の 2 つのセクションに構成されます。
 
-![脅威保護レポートのイメージ。](images/threat-protection-reports.png)
+:::image type="content" source="images/threat-protection-reports.png" alt-text="脅威保護レポート" lightbox="images/threat-protection-reports.png":::
 
 Section|説明
 ---|---
@@ -69,11 +69,11 @@ Section|説明
 
 レポートは、次のアラート属性を表示するカードで構成されています。
 
-- **検出ソース**: Microsoft Defender for Endpoint がアラートをトリガーするために使用するデータを提供するセンサーと検出テクノロジに関する情報を示します。
+- **検出ソース:** Microsoft Defender for Endpoint がアラートをトリガーするために使用するデータを提供するセンサーと検出テクノロジに関する情報を示します。
 - **脅威のカテゴリ**: アラートをトリガーした脅威または攻撃アクティビティの種類を示し、セキュリティ操作の可能なフォーカス領域を示します。
 - **重大度**: アラートの重大度レベルを示し、組織に対する脅威の潜在的な影響の集合的な潜在的な影響と、脅威に対処するために必要な対応のレベルを示します。
-- **Status**: アラートの解決状態を示し、手動のアラート応答の効率と自動修復 (有効な場合) を示します。
-- **分類&決定**: 解決時にアラートを分類した方法、実際の脅威 (真のアラート) として分類したかどうか、または誤った検出 (誤ったアラート) として分類した方法を示します。 これらのカードには、解決されたアラートの決定も表示され、検出された実際の脅威の種類や、誤って検出された正当なアクティビティなどの追加の分析情報が提供されます。
+- **状態**: アラートの解決状態を示し、手動のアラート応答の効率と自動修復 (有効な場合) を示します。
+- **分類&決定**: 解決時にアラートを分類した方法、アラートを実際の脅威 (真のアラート) として分類したか、誤った検出 (誤ったアラート) として分類したかを示します。 これらのカードには、解決されたアラートの決定も表示され、検出された実際の脅威の種類や、誤って検出された正当なアクティビティなどの追加の分析情報が提供されます。
 
 ## <a name="filter-data"></a>データをフィルター処理する
 
@@ -84,7 +84,7 @@ Section|説明
 
 たとえば、重大度の高いアラートに関するデータのみを表示するには、次の処理を行います。
 
-1. [ **インシデント] で&** \> **アラート** \> **フィルター>重大度]** で、[高] を **選択します**。
+1. [ **インシデント] で&アラート フィルター** \> **>** \> **重大度] で、[** 高] を **選択します**。
 2. [重大度] の下の他のすべての **オプションが選択** 解除されている必要があります。
 3. **[適用]** を選択します。
 

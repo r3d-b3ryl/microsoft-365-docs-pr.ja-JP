@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 で指定された条件を満たした場合に起動する特定の手法とペイロードを含む自動シミュレーションを作成する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 327091706ed7c8c2a6f1f1180af7888ed67c1a57
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 3ad24a8b6d2be18fb7ef5fd49be7f2197b3be3a7
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526180"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680954"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのシミュレーションの自動化
 
@@ -230,15 +230,10 @@ ms.locfileid: "63526180"
 
 - **[ランディング ページの選択]** 基本設定: 使用可能な値は、次の [](#select-payloads)表に示す [ペイロードの選択] ページでの以前の選択内容によって異なっています。
 
-  <br>
-
-  ****
-
   |[ペイロードの選択] ページでの選択|[ランディング ページの選択] 基本設定で使用可能な値|
   |---|---|
   |手動で選択する|Microsoft の既定のランディング ページを使用する <p> 独自のランディング ページを作成する <p> カスタム URL の使用 <p> **注**: [**ソーシャル エンジニアリング手法の** 選択] ページで [マルウェアの添付ファイル]  または [マルウェアへのリンク] を以前に選択した場合は、[カスタム URL を使用する] の値 [は使用](#select-one-or-more-social-engineering-techniques)できません。|
   |Randomize|Microsoft の既定のランディング ページを使用する|
-  |
 
   [ランディング **ページの基本設定の選択] の** 値と関連付けられている設定については、次の一覧で説明します。
 

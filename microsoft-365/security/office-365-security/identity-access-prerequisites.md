@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 1dbcfbff2a45cd3dfbc453f84eaa73e178174aee
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312013"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680910"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>ゼロトラスト ID とデバイス アクセス ポリシーを実装するための前提条件作業
 
@@ -54,7 +54,6 @@ ms.locfileid: "63312013"
 |[ID 保護Azure Active Directory有効にする](/azure/active-directory/identity-protection/overview-identity-protection)。 Azure AD Id Protection を使用すると、組織の ID に影響を与える潜在的な脆弱性を検出し、自動修復ポリシーを低、中、高のサインイン リスクとユーザー リスクに構成できます。||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
 |**オンラインおよびオンライン**[のExchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)最新の [Skype for Business有効にします](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。 最新の認証は、MFA を使用する前提条件です。 最新の認証は、2016 および 2019 Office クライアント、SharePoint、およびOneDrive for Business。||Microsoft 365 E3 または E5|
 |[ユーザーに対して継続的な](microsoft-365-continuous-access-evaluation.md)アクセス評価Azure AD。 継続的なアクセス評価は、アクティブなユーザー セッションを積極的に終了し、ほぼリアルタイムでテナント ポリシーの変更を適用します。||Microsoft 365 E3 または E5|
-|
 
 ## <a name="recommended-client-configurations"></a>推奨されるクライアント構成
 
@@ -87,7 +86,6 @@ BYOD デバイスWindows、ユーザーは [仕事用または学校用 **アカ
 |**Android**|Outlook for Android|[最新](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2019 年と 2016 年|
 |**Linux**|サポートされていません||
-|
 
 ### <a name="recommended-client-platforms-when-securing-documents"></a>ドキュメントをセキュリティで保護するときに推奨されるクライアント プラットフォーム
 
@@ -95,13 +93,12 @@ BYOD デバイスWindows、ユーザーは [仕事用または学校用 **アカ
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|[OneDrive 同期クライアント](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 11 または Windows 10|サポート|サポートされている|該当なし|該当なし|サポートされている|
-|Windows 8.1|サポートされている|サポートされている|該当なし|該当なし|サポート|
-|Android|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
-|iOS|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
-|macOS|サポート|サポートされている|該当なし|該当なし|サポートされていません|
+|Windows 11 または Windows 10|サポート|サポート|該当なし|該当なし|サポート|
+|Windows 8.1|サポート|サポート|該当なし|該当なし|サポート|
+|Android|サポート|サポート|サポート|サポート|N/A|
+|iOS|サポート|サポート|サポート|サポート|N/A|
+|macOS|サポート|サポート|該当なし|該当なし|サポートされていません|
 |Linux|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
-|
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 のクライアント サポート
 
@@ -123,7 +120,7 @@ BYOD デバイスWindows、ユーザーは [仕事用または学校用 **アカ
 - 管理者の役割にのみ割り当てられている個別 [のMicrosoft 365を作成して](../../admin/add-users/about-admin-roles.md)*使用します*。 管理者は、通常の非管理用に独自のユーザー アカウントを持ち、役割またはジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。
 - 特権[アカウントをセキュリティ](/azure/active-directory/admin-roles-best-practices)で保護するためのベスト プラクティスに従Azure AD。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [![手順 2: 共通のゼロ信頼 ID を構成し、条件付きアクセス ポリシーにアクセスします。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 

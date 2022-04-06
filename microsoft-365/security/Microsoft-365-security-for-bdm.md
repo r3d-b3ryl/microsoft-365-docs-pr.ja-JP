@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-ms.openlocfilehash: 59b74fdc13cc21f0266e0f110935f76656827f65
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 67943bc533c55961a2ceabbe89a0fe41c231ff71
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755166"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473191"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365意思決定者向けセキュリティ (BDM)
 
@@ -32,7 +32,7 @@ ms.locfileid: "63755166"
 
 Microsoft は、テナント内の Secure Score ツールを提供し、通常のアクティビティに基づいてセキュリティの態勢を自動的に分析し、スコアを割り当て、セキュリティ改善の推奨事項を提供します。 この記事で推奨されるアクションを実行する前に、現在のスコアと推奨事項に注意してください。 この記事で推奨されるアクションは、スコアを増やします。 目標は、最大スコアを達成するのではなく、ユーザーの生産性に悪影響を及ぼさない方法で環境を保護する機会を認識する方法です。 「 [Microsoft Secure Score」を参照してください](defender/microsoft-secure-score.md)。
 
-:::image type="content" source="../media/security/security-for-bdms-overview.png" alt-text="ビジネス環境保護対策を提供する Secure Score ツールの例を、Microsoft 365 Defenderします。" lightbox="../media/security/security-for-bdms-overview.png":::
+:::image type="content" source="../media/security/security-for-bdms-overview.png" alt-text="ビジネスのリスクを軽減するための手順" lightbox="../media/security/security-for-bdms-overview.png":::
 
 始める前にもう 1 つ。 . . 監査ログ [を有効にしてください](../compliance/search-the-audit-log-in-security-and-compliance.md)。 インシデントや侵害を調査する必要がある場合は、後でこのデータが必要になります。
 
@@ -48,7 +48,7 @@ Microsoft は、テナント内の Secure Score ツールを提供し、通常�
 |サービスを管理するには、特権アクセス ワークステーション (PAW) を構成して使用します。 インターネットを閲覧し、管理アカウントに関連しない電子メールを確認する場合は、同じワークステーションを使用しない。|  !![緑色のチェック マーク。](../media/green-check-mark.png)|![緑色のチェック マーク。](../media/green-check-mark.png)::: |
 
 次の図は、これらの機能を示しています。
-:::image type="content" source="../media/m365-security-bdm-illustrations-privileged-accounts.png" alt-text="特権アカウントを保護するためのツールによって提供される機能の例" lightbox="../media/m365-security-bdm-illustrations-privileged-accounts.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-privileged-accounts.png" alt-text="特権アカウントを保護するための推奨機能" lightbox="../media/m365-security-bdm-illustrations-privileged-accounts.png":::
 
 追加の推奨事項:
 
@@ -81,7 +81,8 @@ Microsoft は、テナント内の Secure Score ツールを提供し、通常�
 |**ビジネスを行う国からの接続をブロックします**。 これらの国Azure AD接続をブロックする条件付きアクセス ポリシーを作成し、テナントの周囲に地理的ファイアウォールを効果的に作成します。| |![緑色のチェック マーク。](../media/green-check-mark.png)|
 
 次の図は、これらの機能を示しています。
-:::image type="content" source="../media/m365-security-bdm-illustrations-known-threats.png" alt-text="さまざまな種類の脅威から保護するためのツールによって提供されるさまざまな機能の例" lightbox="../media/m365-security-bdm-illustrations-known-threats.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-known-threats.png" alt-text="既知の脅威から保護するための推奨機能" lightbox="../media/m365-security-bdm-illustrations-known-threats.png":::
+
 
 ## <a name="protect-against-unknown-threats"></a>未知の脅威から保護する
 
@@ -95,6 +96,7 @@ Microsoft は、テナント内の Secure Score ツールを提供し、通常�
 
 次の図は、これらの機能を示しています。
 :::image type="content" source="../media/m365-security-bdm-illustrations-unknown-threats.png" alt-text="未知の脅威から保護するためのツールによって提供される機能の例" lightbox="../media/m365-security-bdm-illustrations-unknown-threats.png":::
+
 
 追加の推奨事項:
 
@@ -122,8 +124,8 @@ Microsoft は、脅威や攻撃を防止するためにあらゆる手段を講�
 |**[AIP スキャナーを使用して](/azure/information-protection/deploy-aip-scanner)、サーバーとファイル共有全体の情報を識別および分類します**。 AIP レポート ツールを使用して結果を表示し、適切なアクションを実行します。|         |![緑色のチェック マーク。](../media/green-check-mark.png)|
 
 次の図は、これらの機能を示しています。
-![侵害から保護するための推奨機能。](../media/m365-security-bdm-illustrations-assume-breach.png)
-:::image type="content" source="../media/m365-security-bdm-illustrations-assume-breach.png" alt-text="侵害から保護するツールによって提供される機能の例" lightbox="../media/m365-security-bdm-illustrations-assume-breach.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-assume-breach.png" alt-text="不明な脅威から保護するために推奨される機能" lightbox="../media/m365-security-bdm-illustrations-assume-breach.png":::
+
 
 ## <a name="continuous-monitoring-and-auditing"></a>継続的な監視と監査
 
@@ -141,7 +143,9 @@ Microsoft は、脅威や攻撃を防止するためにあらゆる手段を講�
 |**Microsoft Defender for Cloud を使用して**、ハイブリッドワークロードとクラウド ワークロード全体の脅威を監視します。 Microsoft Defender for Cloud には、無料の機能層と、リソース時間またはトランザクションに基づいて支払われる標準レベルの機能が含まれています。|         |         |
 
 次の図は、これらの機能を示しています。
-:::image type="content" source="../media/m365-security-bdm-illustrations-monitoring-auditing.png" alt-text="脅威の保護と検出を有効にするツールによって提供される機能の例" lightbox="../media/m365-security-bdm-illustrations-monitoring-auditing.png":::
+
+:::image type="content" source="../media/m365-security-bdm-illustrations-monitoring-auditing.png" alt-text="継続的な監視と監査に推奨される機能" lightbox="../media/m365-security-bdm-illustrations-monitoring-auditing.png":::
+
 
 推奨される監視アクションの上位:
 

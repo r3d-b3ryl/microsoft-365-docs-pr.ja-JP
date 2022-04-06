@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 秘密度ラベルを SharePoint Syntex のモデルに適用する方法について説明します。
-ms.openlocfilehash: 624b441084b418d2bcfc3ab6b623da0f5a969fe8
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 189db9314e01a52618890daf6b0e5d4e81317de9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521116"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681702"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のモデルに秘密度ラベルを適用する
 
@@ -26,7 +26,7 @@ Microsoft SharePoint Syntex のドキュメント理解モデルに[秘密度ラ
 
 感度ラベルを使用すると、モデルが識別するドキュメントに暗号化を適用できます。 たとえば、モデルで、ドキュメント ライブラリにアップロードされた銀行口座番号またはクレジット カード番号を含む財務ドキュメントを特定するだけでなく、暗号化設定で構成された感度ラベルを適用して、そのコンテンツにアクセスできるユーザーと、その使用方法を制限します。 SharePoint Syntex モデルは[ラベルの順序](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label)規則を尊重し、ユーザーがファイルに手動で適用した既存のラベルを上書きしません。 
 
-モデルのホーム ページのモデル設定を使用して、既存の秘密度ラベルをモデルに適用できます。 モデル設定から選択できるようにするには、ラベルがすでに公開されている必要があります。
+モデルのホーム ページのモデル設定を使用して、既存の秘密度ラベルをモデルに適用できます。 モデル設定から選択できるようにするには、ラベルがすでに公開されている必要があります。 ラベルは、Word (Office)、.docx、PowerPoint (.pptx)、Excel (.xlsx) のExcel適用されます。 
 
 > [!Important]
 > 秘密度ラベルをドキュメント理解モデルに適用できるようにするには、秘密度ラベルを[作成して Microsoft 365 コンプライアンス センターで公開する](../admin/security-and-compliance/set-up-compliance.md)必要があります。

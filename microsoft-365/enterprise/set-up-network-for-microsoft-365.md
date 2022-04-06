@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: ネットワーク接続の概要やエンドポイントの一覧など、Microsoft 365の設定に役立つ情報を含む記事へのリンクを検索します。
-ms.openlocfilehash: c21a7a09e43957c806bca9dd64d425fcef2415fc
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: c6dbc4362648b3695c23f363c0e6925ead97bacb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566629"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680844"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>ネットワークをセットアップMicrosoft 365
 
@@ -37,13 +37,13 @@ ms.locfileid: "61566629"
 
 ## <a name="how-microsoft-365-networking-works"></a>ネットワークMicrosoft 365のしくみ
 
-次の記事を参照して、接続の概要を確認Microsoft 365。
+接続の概要については、以下の記事を参照Microsoft 365。
 
 - [Microsoft 365 ネットワーク接続の概要](microsoft-365-networking-overview.md)
 - [Microsoft 365 ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)
 - [Microsoft 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
-パフォーマンスの向上に関するアドバイスについては、「ネットワークの計画とパフォーマンスの調整」[を参照Microsoft 365。](network-planning-and-performance.md)
+パフォーマンスの向上に関するアドバイスについては、「ネットワークの計画とパフォーマンスの調整」[を参照Microsoft 365](network-planning-and-performance.md)。
 
 ## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>ネットワークMicrosoft 365ベンダーとしてのネットワークのサポート
 
@@ -59,7 +59,7 @@ Office 365 のクラウドベース サービスのパフォーマンスを最�
 
 現在、5 つの異なる Office 365 クラウドがあります。この表からそれぞれのクラウドのエンドポイント一覧へ移動できます。
 
-| エンドポイント | 説明 |
+| エンドポイント | [説明] |
 |:-------|:-----|
 | [世界中のエンドポイント](urls-and-ip-address-ranges.md) | 米国政府機関向けコミュニティ クラウド (GCC) を含む、世界中の Office 365 サブスクリプションのエンドポイント。 |
 | [米国政府の DoD エンドポイント](microsoft-365-u-s-government-dod-endpoints.md) | 米国国防総省 (DoD) のサブスクリプションのエンドポイント。 |

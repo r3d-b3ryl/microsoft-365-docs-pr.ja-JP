@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: PowerShell を使用してユーザー Microsoft 365、365 アプリを管理する方法について説明します。
-ms.openlocfilehash: 298955f37e3f29843a7efeaf1bdf8ce6f40862fc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fedef0edc9effc73ffbfbd678905e0b8276df8f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150584"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681240"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>PowerShell で Microsoft 365を管理する
 
@@ -32,11 +32,11 @@ ms.locfileid: "60150584"
 
 PowerShell for Microsoft 365は、この機能を補完する強力な管理Microsoft 365 管理センター。 たとえば、PowerShell オートメーションを使用して、複数のユーザー アカウントとライセンスを簡単に管理し、レポートを作成できます。
 
-PowerShell を使用して管理する方法については、次のトピックからMicrosoft 365。
+PowerShell を使用して管理する方法については、次のトピックから選択Microsoft 365。
   
-- [**作業の開始**](getting-started-with-microsoft-365-powershell.md)
+- [**開始する**](getting-started-with-microsoft-365-powershell.md)
 
-    PowerShell for Microsoft 365に慣れ親しまず、Microsoft 365 モジュールをインストールしてサブスクリプションに接続する場合は、ここから開始します。
+    PowerShell for Microsoft 365を理解していない場合、Microsoft 365モジュールをインストールしてサブスクリプションに接続する場合は、ここから開始します。
 
 - [**ユーザー アカウント、ライセンス、およびグループ**](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
@@ -44,7 +44,7 @@ PowerShell を使用して管理する方法については、次のトピック
 
 - [**SharePoint**](manage-sharepoint-online-with-microsoft-365-powershell.md)
 
-    オートメーション コマンドを使用してオートメーション コマンドを管理する場合は、ここからSharePoint。
+    オートメーション コマンドを使用して管理する必要がある場合は、ここからSharePoint。
 
 - [**Exchange Online**](/powershell/exchange/exchange-online-powershell)
 
@@ -60,8 +60,8 @@ PowerShell を使用して管理する方法については、次のトピック
 
 - [**委任されたアクセス許可 (DAP) パートナー**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
-    Syndication および CSP (CSP) パートナーを使用して顧客テナントクラウド ソリューション プロバイダー管理する場合はMicrosoft 365開始します。
+    Syndication および CSP (CSP) パートナーを使用して顧客テナントクラウド ソリューション プロバイダー管理する場合は、ここからMicrosoft 365開始します。
 
 - [**Skype for Business Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
-    オンラインを管理するには、Skype for Business開始します。
+    オンラインを管理するには、Skype for Businessします。

@@ -18,12 +18,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) で受信メッセージを許可するための利用可能なオプションと推奨されるオプションについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1edcbba31075e9880b8ea2034f4ffde50bb71e9
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 0370b72ccf29469bd88679d589d715d8897c921f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465731"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681680"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP で安全な差出人のリストを作成する
 
@@ -101,8 +101,7 @@ Exchange Online およびスタンドアロン EOP のメール フロー ルー
 
       メール フロー ルールが原因でメッセージがスパム フィルター処理をスキップすると、値 `SFV:SKN`値が **X-Forefront-Antispam-Report** ヘッダーにスタンプされます。 メッセージが IP 許可一覧にあるソースからのメッセージの場合、値 `IPV:CAL`も追加されます。 これらの値は、トラブルシューティングに役立ちます。
 
-      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="スパム フィルターをバイパスする EAC のメール フロー ルール設定" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
-
+![スパム フィルターをバイパスするための EAC のメール フロー ルール設定。](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 ## <a name="use-outlook-safe-senders"></a>Outlook の信頼できる差出人を使用する
 

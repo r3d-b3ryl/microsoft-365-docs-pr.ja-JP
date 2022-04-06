@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebcfea808e64c89772f36fb22f5dfd75e6e8e27f
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 805f857a95fab03f8356c5162db1509122e7250a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525808"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680822"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -40,6 +40,9 @@ ms.locfileid: "63525808"
 > 他のサード パーティ製エンドポイント保護製品を Microsoft Defender for Endpoint on Linux で実行すると、パフォーマンスの問題や予期しない副作用につながる可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、パッシブ モードで実行するウイルス対策機能を構成した後も、Linux EDR の Defender for Endpoint 機能を安全に利用できます。[](linux-preferences.md#enforcement-level-for-antivirus-engine)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Linux に Microsoft Defender for Endpoint をインストールする方法
+
+Microsoft Defender for Endpoint for Linux には、マルウェア対策とエンドポイントの検出と応答 (EDR) 機能が含まれています。 
+
 
 ### <a name="prerequisites"></a>前提条件
 
@@ -190,7 +193,7 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 ****
 
 
-|ドメインリストのスプレッドシート| 説明|
+|ドメインリストのスプレッドシート| [説明]|
 |---|---|
 |商用顧客向け Microsoft Defender for Endpoint URL リスト | 商用顧客向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
 | Gov/GCC/DoD のお客様向け Microsoft Defender for Endpoint URL リスト| Gov/GCC/DoD のお客様向けサービスの場所、地理的な場所、OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
@@ -226,6 +229,6 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 特定のアプリケーションの高い I/O ワークロードでは、Microsoft Defender for Endpoint のインストール時にパフォーマンスの問題が発生する可能性があります。 これには、Jenkins や Jira などの開発者シナリオ用のアプリケーションや、OracleDB や Postgres などのデータベース ワークロードが含まれます。 パフォーマンスの低下が発生した場合は、信頼できるアプリケーションの除外を設定し、一般的な除外の間違いを念頭に置[Microsoft Defender ウイルス対策検討してください](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)。 その他のガイダンスについては、サード パーティ製アプリケーションからのウイルス対策の除外に関するコンサルティング ドキュメントを検討してください。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - ログ記録、アンインストール、その他のトピックの詳細については、「Resources」を参照 [してください](linux-resources.md)。

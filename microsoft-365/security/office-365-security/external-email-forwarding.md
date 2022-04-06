@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: 11/17/2021
 audience: ITPro
 ms.topic: overview
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -15,12 +16,12 @@ ms.custom:
 description: この記事では、外部メール転送、自動転送、5.7.520 Access Denied メッセージ、外部転送の無効化、"管理者が外部転送を無効にしました" メッセージ、および送信スパム対策ポリシーなどのトピックについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 228bb4402fd67ba8e56dd84b270c64977667ff2d
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 14b41f21efe3608096636444afd4b36de3742a85
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401022"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681416"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>外部メールの自動転送を制御Microsoft 365
 
@@ -58,23 +59,18 @@ ms.locfileid: "63401022"
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>送信スパム フィルター ポリシー設定が他の自動メール転送コントロールとどのように機能する
 
-管理者は、電子メールの自動転送を許可またはブロックするように他のコントロールを既に構成している可能性があります。 次に例を示します。
+管理者は、電子メールの自動転送を許可またはブロックするように他のコントロールを既に構成している可能性があります。 例:
 
 - [一部またはすべての](/exchange/mail-flow-best-practices/remote-domains/remote-domains) 外部ドメインへの自動メール転送を許可またはブロックするリモート ドメイン。
 - メール フロー ルール ([トランスポート Exchangeとも](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)呼ばれる) で、自動的に転送されたメッセージを検出して外部受信者にブロックする条件とアクション。
 
 1 つの設定で外部転送が許可されているが、別の設定が外部転送をブロックすると、通常、ブロックは勝ちます。 例については、次の表で説明します。
 
-<br>
-
-****
-
 |シナリオ|結果|
 |---|---|
 |<ul><li>自動転送を許可するリモート ドメイン設定を構成します。</li><li>送信スパム フィルター ポリシーの自動転送は Off に設定 **されます**。</li></ul>|影響を受けるドメイン内の受信者に自動的に転送されたメッセージはブロックされます。|
 |<ul><li>自動転送を許可するリモート ドメイン設定を構成します。</li><li>送信スパム フィルター ポリシーの自動転送は、自動 **- システム制御に設定されます**。</li></ul>|影響を受けるドメイン内の受信者に自動的に転送されたメッセージはブロックされます。 <p> 前述したように、**Automatic - System-controlled** は On を意味するために使用されましたが、設定は時間の長い間、すべての組織で **Off** を意味するように変更されています。 <p> 明確にするために、送信スパム フィルター ポリシーを [オン] または [オフ] **に構成する** 必要 **があります**。|
 |<ul><li>送信スパム フィルター ポリシーの自動転送が [オン] に設定 **されている**</li><li>メール フロー ルールまたはリモート ドメインを使用して、自動的に転送されるメールをブロックします。</li></ul>|影響を受ける受信者に自動的に転送されたメッセージは、メール フロー ルールまたはリモート ドメインによってブロックされます。|
-|
 
 この動作 (たとえば) を使用して、送信スパム フィルター ポリシーでの自動転送を許可しますが、リモート ドメインを使用して、ユーザーがメッセージを転送できる外部ドメインを制御できます。
 

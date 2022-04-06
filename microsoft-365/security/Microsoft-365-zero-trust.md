@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 59ebfb9ffb925cc5937802a31902e7c2342fc740
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: f8ffdcb817763589dfb43f7389bc44b7a28459f2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755656"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473059"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 ゼロ トラスト展開プラン
 
@@ -56,7 +56,7 @@ Microsoft 365は、環境にゼロトラストを組み込むのに役立つ多�
 この図は、ゼロ信頼機能を展開する作業を表しています。 この作業は、一緒に構成できる作業単位に分割され、一番下から上に作業し、前提条件の作業が完了するようにします。
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="Microsoft 365 ゼロトラスト展開スタック" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="ゼロMicrosoft 365展開スタック" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
 
 この図について:
 - ゼロ信頼は、ID とデバイス保護の基礎から始まります。 
@@ -68,7 +68,7 @@ Microsoft 365は、環境にゼロトラストを組み込むのに役立つ多�
 最初の手順は、ID とデバイス アクセス保護を構成してゼロトラスト基盤を構築します。 
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="ゼロトラスト ID とデバイス アクセス保護を構成する" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-1b.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="ゼロトラスト ID とデバイス アクセス保護を構成するプロセス" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-1b.png":::
 
 
 
@@ -84,14 +84,14 @@ Microsoft 365は、環境にゼロトラストを組み込むのに役立つ多�
 まず、開始点層を実装します。 これらのポリシーでは、デバイスを管理に登録する必要がなされません。 
 
 
-:::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.png" alt-text="ゼロトラスト ID とデバイス アクセス ポリシー - 開始点層" lightbox="../media/zero-trust/identity-access-starting-point-tier.png":::
+:::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.png" alt-text="ゼロ信頼 ID とデバイス アクセス ポリシー - 開始点層" lightbox="../media/zero-trust/identity-access-starting-point-tier.png":::
 
 
-## <a name="step-2-manage-endpoints-with-intune"></a>手順 2。 Intune を使用してエンドポイントを管理する
+## <a name="step-2-manage-endpoints-with-intune"></a>手順 2. Intune を使用してエンドポイントを管理する
 
 次に、デバイスを管理に登録し、より高度なコントロールで保護を開始します。 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="Intune を使用してエンドポイントを管理する" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="Intune 要素を使用してエンドポイントを管理する" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
 
 
 これを実現 [**_するには、「Intune でデバイスを_**](../solutions/manage-devices-with-intune-overview.md) 管理する」を参照してください。 
@@ -106,17 +106,17 @@ Microsoft 365は、環境にゼロトラストを組み込むのに役立つ多�
 
 デバイスを管理に登録すると、推奨されるゼロトラスト ID とデバイス アクセス ポリシーの完全なセットを実装し、準拠デバイスを必要とします。
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="デバイス管理を使用したゼロ信頼 ID とアクセス ポリシー" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="デバイス管理を使用したゼロトラスト ID とアクセス ポリシー" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
 共通 ID [**_とデバイス アクセス ポリシーに戻り_**](office-365-security/identity-access-policies.md)、ポリシーを Enterpriseします。  
 
-:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="ゼロ信頼 ID とアクセス ポリシー - Enterprise (推奨) 層" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
+:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="ゼロトラスト ID およびアクセス ポリシー - Enterprise (推奨) 層" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
 ## <a name="step-4-evaluate-pilot-and-deploy-microsoft-365-defender"></a>手順 4. 評価、パイロット、および展開Microsoft 365 Defender
 
 Microsoft 365 Defenderは、エンドポイント、電子メール、アプリケーション、ID など、Microsoft 365 環境全体から信号、脅威、およびアラート データを自動的に収集、関連付け、分析する拡張検出および応答 (XDR) ソリューションです。
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="ゼロMicrosoft 365 Defenderアーキテクチャへの追加" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="ゼロトラスト アーキテクチャMicrosoft 365 Defender追加するプロセス" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
 [評価と [**_パイロット] にMicrosoft 365 Defender_**](defender/eval-overview.md)コンポーネントのパイロットと展開に関するMicrosoft 365 Defenderします。 
 
@@ -132,13 +132,13 @@ Microsoft Information Protection (MIP) を実装すれば、機密情報がど�
 MIP 機能は Microsoft 365 コンプライアンスに含まれており、データを把握し、データを保護し、データの損失を防止するためのツールを提供しています。
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="情報保護機能は、ポリシーの適用を通じてデータを保護します" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="ポリシーの適用を通じてデータを保護する情報保護機能" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 
 この作業は、この記事の前に示した展開スタックの上部で表しますが、いつでもこの作業を開始できます。 
 
 Microsoft Information Protection、特定のビジネス目標を達成するために使用できるフレームワーク、プロセス、および機能を提供します。
 
-:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="Microsoft Information Protection フレームワーク" lightbox="../media/zero-trust/mip-solution-overview.png":::
+:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="このMicrosoft Information Protection (MIP) フレームワーク" lightbox="../media/zero-trust/mip-solution-overview.png":::
 
 
 情報保護を計画および展開する方法の詳細については、「Deploy [**_a a Microsoft Information Protection参照してください_**](../compliance/information-protection-solution.md)。 

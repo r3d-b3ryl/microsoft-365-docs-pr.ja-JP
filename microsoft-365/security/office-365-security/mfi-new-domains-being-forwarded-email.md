@@ -9,15 +9,16 @@ audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: ''
-description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで、転送される新しいドメインを使用して、転送されたことがない外部ドメインにメッセージを転送するユーザーを調査する方法について学習できます。
+description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで、転送される新しいドメインを使用して、ユーザーが転送されたことがない外部ドメインにメッセージを転送する状況を調査する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ecc3c00f40d702f74681e9cbc194e83bd27f5df2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection: M365-security-compliance
+ms.openlocfilehash: df4f9e79439d435059374dd066a5298ba73d329b
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933841"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679656"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターで電子メールの分析情報を転送&ドメイン
 
@@ -32,7 +33,7 @@ ms.locfileid: "61933841"
 
 この条件は、ユーザー アカウントが侵害された可能性があります。 アカウントが侵害された疑いがある場合は、「侵害されたメール アカウントに応答 [する」を参照してください](responding-to-a-compromised-email-account.md)。
 
-セキュリティ **&** コンプライアンス センターでメールを転送する新しいドメインは、組織内 [の](https://protection.office.com) ユーザーが新しいドメインにメッセージを転送するときに通知します。
+セキュリティ **&** コンプライアンス センターで転送される新しいドメインは [](https://protection.office.com)、組織内のユーザーがメッセージを新しいドメインに転送するときに通知します。
 
 この分析情報は、問題が検出された場合にのみ表示され、[転送レポート] ページ [に表示](view-mail-flow-reports.md#forwarding-report) されます。
 
@@ -42,10 +43,10 @@ ms.locfileid: "61933841"
 
 ![[転送中の新しいドメイン] をクリックした後に表示される詳細フライアウトメールの分析情報。](../../media/mfi-new-domains-being-forwarded-details.png)
 
-[レポート ダッシュボード] または [ おすすめ] 領域の[トップ インサイト] 領域で [すべて表示] をクリックした後で&を選択すると、**この詳細** ページに \> **アクセス** することもできます <https://protection.office.com/insightdashboard> 。
+[レポート ダッシュボード] **または [**\>おすすめ情報] 領域の [上位の分析情報&を表示する] をクリックした後で、分析情報を選択 **すると、この** 詳細ページに **アクセス** することもできます<https://protection.office.com/insightdashboard>。
 
-外部ドメインへのメッセージの自動転送を防止するには、一部またはすべての外部ドメインにリモート ドメインを構成します。 詳細については、「リモート ドメインを[管理する」を参照Exchange Online。](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)
+外部ドメインへのメッセージの自動転送を防止するには、一部またはすべての外部ドメインにリモート ドメインを構成します。 詳細については、「リモート ドメインを[管理する」を参照Exchange Online](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)。
 
 ## <a name="related-topics"></a>関連項目
 
-メール フロー ダッシュボードの他の分析情報の詳細については、「Security & コンプライアンス センター」 [を参照してください](mail-flow-insights-v2.md)。
+メール フロー ダッシュボードの他の分析情報については、「Security [& コンプライアンス センター」を参照してください](mail-flow-insights-v2.md)。

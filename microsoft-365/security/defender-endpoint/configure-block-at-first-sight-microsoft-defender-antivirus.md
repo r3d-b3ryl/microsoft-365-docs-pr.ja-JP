@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c955ab15640a8c3154e14ba0201946e109f832a9
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 48a411d836669a47479daa68a83a96c3e65b949f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807382"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473235"
 ---
 # <a name="turn-on-block-at-first-sight"></a>事前ブロックを有効にする
 
@@ -50,7 +50,7 @@ Microsoft Defender ウイルス対策 は、疑わしいが検出されていな
 
 Microsoft Defender ウイルス対策は、複数の検出および防止テクノロジを使用して、正確でインテリジェントなリアルタイムの保護を提供します。
 
-![Microsoft Defender AV エンジンのリスト。](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="Microsoft Defender AV エンジンのリスト" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
 
 > [!TIP]
 > 詳細については、ブログ記事「[Microsoft Defender for Endpoint の次世代保護の中核となる高度なテクノロジについて」](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)を参照してください。
@@ -83,7 +83,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
    - **クラウドによるファイル スキャンの時間延長**: 50
    - **サンプルを送信する前にユーザーに確認メッセージを表示する**: 確認メッセージを表示せずにすべてのデータを送信する
 
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune 構成ブロックを一目で確認する。":::
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune 構成ブロックを一目で確認する" lightbox="../../media/intune-block-at-first-sight.png":::
 
 4. 設定内容を保存します。
 
@@ -108,7 +108,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
    - **クラウドによる保護レベル**: 高
    - **Microsoft Defender ウイルス対策 拡張タイムアウト 秒単位**: 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="EndpointManagerでの事前ブロックの設定。":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Microsoft エンドポイント マネージャー ポータルでの事前ブロックの設定" lightbox="images/endpointmgr-antivirus-cloudprotection.png":::
 
 4. Microsoft Defender ウイルス対策のプロファイルを、**[すべてのユーザー]**、**[すべてのデバイス]**、または **[すべてのユーザーとデバイス]** などのグループに適用します。
 
@@ -138,7 +138,7 @@ Windows セキュリティ アプリを使用して、個々のクライアン�
 
 2. **[ウイルスと脅威保護]** を選択し、**[ウイルスと脅威保護設定]** で **[設定の管理]** を選択します。
 
-   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Windows セキュリティ アプリの [ウイルスと脅威の防止の設定] ラベルのスクリーンショット":::
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Windows セキュリティ アプリの [ウイルスと脅威の防止の設定] ラベル" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
 3. **[クラウドベースの保護]** と **[サンプルの自動送信]** がオンになっていることを確認します。
 

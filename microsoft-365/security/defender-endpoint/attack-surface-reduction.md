@@ -17,14 +17,16 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
-ms.collection: m365initiative-m365-defender
+ms.collection:
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 3f3daaa068f067c8d4ffbbf40a4d8ba1d32d04b9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 53f338ec713038841ab5cc089c12cebf7fe46131
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766443"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680623"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>攻撃表面の縮小ルールの概要
 
@@ -86,7 +88,7 @@ Microsoft Defender ウイルス対策アクティブ モードでリアルタイ
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>警告モードがサポートされていない場合
 
-警告モードは、3 つの攻撃表面の縮小ルールを構成するときにサポートMicrosoft エンドポイント マネージャー。 (グループ ポリシーを使用して攻撃表面の縮小ルールを構成する場合は、警告モードがサポートされます)。警告モードを構成するときに警告モードをサポートしない 3 つのMicrosoft エンドポイント マネージャーは次のとおりです。
+警告モードは、3 つの攻撃表面の縮小ルールを構成するときにサポートMicrosoft エンドポイント マネージャー。 (グループ ポリシーを使用して攻撃表面の縮小ルールを構成する場合は、警告モードがサポートされます)。警告モードを構成するときに警告モードをサポートしない 3 つのMicrosoft エンドポイント マネージャー次のとおりです。
 
 - [ダウンロードした実行可能コンテンツ (](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)GUID) の起動から JavaScript または VBScript をブロックする`d3e037e1-3eb8-44c8-a917-57927947596d`
 - [WMI イベント サブスクリプション (GUID) による永続](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)化をブロックする`e6db77e5-3df2-4cf1-b95a-636979351e5b`
@@ -114,7 +116,7 @@ Microsoft Defender ウイルス対策アクティブ モードでリアルタイ
 
 ## <a name="attack-surface-reduction-features-across-windows-versions"></a>複数のバージョンの攻撃表面Windows機能
 
-次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールをWindows。
+次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールを設定Windows。
 
 - Windows 10 Proバージョン [1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
 - Windows 10 Enterpriseバージョン [1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
@@ -124,9 +126,9 @@ Microsoft Defender ウイルス対策アクティブ モードでリアルタイ
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
   >[!NOTE]
-  >Windows Server 2016およびWindows Server 2012 R2 は、この機能を動作するためにオンボード サーバーのWindows[を](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)使用してオンボードする必要があります。
+  >Windows Server 2016およびWindows Server 2012 R2 は、この機能を動作するには、「オンボード Windows サーバー」の[指示](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)に従ってオンボードする必要があります。
 
-攻撃表面の縮小ルールでは [E5](/windows/deployment/deploy-enterprise-licenses) ライセンスをWindows必要とWindows、高度な管理機能を利用できます。 E5 でのみ使用できる高度な機能はWindows含まれます。
+攻撃表面の縮小ルールでは E5 ライセンスをWindows必要としますが、[E5](/windows/deployment/deploy-enterprise-licenses) を使用している場合Windows高度な管理機能を利用できます。 E5 でのみ使用可能な高度な機能にはWindows含まれます。
 
 - Defender for Endpoint で利用できる監視、分析、 [およびワークフロー](microsoft-defender-endpoint.md)
 - レポート機能と構成機能は[、Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
@@ -150,9 +152,9 @@ DeviceEvents
 
 次のイベント ログをWindowsして、攻撃表面の縮小ルールによって生成されたイベントを表示できます。
 
-1. 評価パッケージ [をダウンロードし](https://aka.ms/mp7z2w) 、デバイス上 *cfa-events.xmlにファイル* を抽出します。
+1. 評価パッケージ [をダウンロードし](https://aka.ms/mp7z2w) 、デバイス上 *cfa-events.xmlアクセスしやすい* 場所にファイルを抽出します。
 
-2. [イベント *ビューアー] という* 単語を入力して、スタート メニューを開Windowsします。
+2. [イベント ビューアー] *という* 単語を入力して、スタート メニューを開Windowsします。
 
 3. [アクション **] で**、[ **カスタム ビューのインポート....] を選択します**。
 

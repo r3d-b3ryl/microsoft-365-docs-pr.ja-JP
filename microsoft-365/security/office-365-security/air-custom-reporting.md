@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d2812f9f2e1100a923dc5f9bb22a9b6df218a78
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3ff4317fc195a175a2b622c13ea4683a5e010b1c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321727"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680711"
 ---
 # <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Microsoft Defender for microsoft Defender for Office 365
 
@@ -44,7 +44,6 @@ Microsoft [Defender for Office 365](defender-for-office-365.md)、自動調査�
 |[Office 365 管理 API の使用を開始する](/office/office-365-management-api/get-started-with-office-365-management-apis)|Office 365管理 API は、Azure ADを使用して、アプリケーションがデータにアクセスする認証Microsoft 365します。 この記事の手順に従って、これを設定します。|
 |[Office 365 管理アクティビティ API リファレンス](/office/office-365-management-api/office-365-management-activity-api-reference)|Office 365 管理アクティビティ API を使用して、ユーザー、管理者、システム、およびポリシーのアクションとイベントに関する情報を、Microsoft 365 および Azure ADログから取得できます。 この機能の詳細については、この記事を参照してください。|
 |[Office 365 管理アクティビティ API のスキーマ](/office/office-365-management-api/office-365-management-activity-api-schema)|Office 365 管理アクティビティ API で[](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)使用できる特定の[](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)種類のデータについて学習するには、共通スキーマと Defender for Office 365 Office 365 および脅威の調査と応答スキーマの概要を確認します。|
-|
 
 ## <a name="see-also"></a>関連項目
 

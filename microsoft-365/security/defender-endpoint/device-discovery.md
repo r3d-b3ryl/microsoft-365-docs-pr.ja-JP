@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9045c9a425b78f46d39ebb63664b693bf40252c4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 926d23cb4e9abcecd9d34e976dee60851471613b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314387"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472927"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -83,7 +83,7 @@ Microsoft Defender for Endpoint によって検出されたが、まだオンボ
 - サポートされていません: エンドポイントはネットワークで検出されましたが、Microsoft Defender for Endpoint ではサポートされていません。
 - 不十分な情報: システムは、デバイスのサポート可能性を判断する必要があります。 ネットワーク内のより多くのデバイスで標準検出を有効にすると、検出された属性を強化できます。
 
-![デバイス インベントリ ダッシュボードのイメージ。](images/device-discovery-inventory.png)
+:::image type="content" source="images/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="デバイス インベントリ ダッシュボード" lightbox="images/2b62255cd3a9dd42f3219e437b956fb9.png":::
 
 > [!TIP]
 > フィルターをいつでも適用して、デバイス インベントリ リストから管理されていないデバイスを除外できます。 また、API クエリのオンボーディング状態列を使用して、管理されていないデバイスをフィルター処理することもできます。
@@ -111,14 +111,15 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 デバイスの脆弱性とリスク、およびネットワーク内で検出された他の管理されていないデバイスは、"セキュリティ推奨事項" の下にある現在の TVM フローの一部であり、ポータル全体のエンティティ ページに表示されます。
 "SSH" 関連のセキュリティ推奨事項を検索して、管理されていないデバイスと管理対象デバイスに関連する SSH の脆弱性を検索します。
 
-![セキュリティ推奨事項ダッシュボードのイメージ。](images/1156c82ffadd356ce329d1cf551e806c.png)
+:::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="セキュリティ推奨事項ダッシュボード" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>検出されたデバイスで高度なハンティングを使用する
 
 高度な検索クエリを使用すると、検出されたデバイスを表示できます。
 検出されたエンドポイントの詳細については、DeviceInfo テーブル、または DeviceNetworkInfo テーブルのこれらのデバイスに関するネットワーク関連の情報を参照してください。
 
-![高度な狩猟の使用のイメージ。](images/f48ba1779eddee9872f167453c24e5c9.png)
+:::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="クエリを使用できる高度な検索ページ" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
 デバイス検出では、Microsoft Defender for Endpoint オンボード デバイスをネットワーク データ ソースとして活用して、オンボードされていないデバイスにアクティビティを属性付けします。 つまり、Microsoft Defender for Endpoint オンボード デバイスがオンボードされていないデバイスと通信した場合、オンボードされていないデバイス上のアクティビティは、タイムライン上および高度なハンティング DeviceNetworkEvents テーブルで確認できます。
 

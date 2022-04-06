@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: a0d0f470a2af18dab298ba3a1af642362590da4c
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 138b532e7786a3d142c3cbbe68f668a4b0e05591
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401162"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472575"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>ライブ応答を使用して Microsoft Defender for Endpoint のサポート ログを収集する
 
@@ -43,15 +43,15 @@ Defender ウイルス対策サポート ログも必要な場合 (MpSupportFiles
 
 3. [ライブラリ **アップロードファイル] を選択します**。
 
-    ![アップロード ファイルのイメージ。](images/upload-file.png)
+   :::image type="content" source="images/upload-file.png" alt-text="アップロード ファイル" lightbox="images/upload-file.png":::
 
 4. [ファイル **の選択] を選択します**。
 
-    ![[ファイルの選択] ボタン 1 のイメージ。](images/choose-file.png)
+   :::image type="content" source="images/choose-file.png" alt-text="[ファイルの選択] ボタン-1" lightbox="images/choose-file.png":::
 
 5. ダウンロードしたファイルを [MDELiveAnalyzer.ps1] を選択し、[確認] を **クリックします。**
 
-   ![ファイルの選択ボタン 2 のイメージ。](images/analyzer-file.png)
+   :::image type="content" source="images/analyzer-file.png" alt-text="[ファイルの選択] ボタン-2" lightbox="images/analyzer-file.png":::
 
 6. LiveResponse セッション中は、次のコマンドを使用してアナライザーを実行し、結果ファイルを収集します。
 
