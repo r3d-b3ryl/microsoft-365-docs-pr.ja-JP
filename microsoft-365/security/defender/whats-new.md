@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender の新機能
-description: 新しい機能の一覧を表示Microsoft 365 Defender
+description: アプリケーションの新機能と機能を一覧表示Microsoft 365 Defender
 keywords: 新しい機能、Microsoft 365 Defender、一般提供、機能、利用可能、新しい
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -14,11 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
+ms.openlocfilehash: aebf7a82a886540374176c06535e9f0097e73a03
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499817"
 ---
-
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -42,6 +47,12 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 また、メッセージ センターを通じて製品の更新や重要な通知を [取得することもできます](https://admin.microsoft.com/Adminportal/Home#/MessageCenter)。 
 
+
+
+## <a name="march-2022"></a>2022 年 3 月
+
+- (プレビュー)インシデント キューは、調査に役立ついくつかの機能で強化されました。 機能強化には、ID または名前でインシデントを検索したり、カスタムの時間範囲を指定したり、その他の機能が含まれます。
+
 ## <a name="december-2021"></a>2021 年 12 月
 
 - (GA)この `DeviceTvmSoftwareEvidenceBeta` テーブルは、高度な検索で短期的に追加され、デバイスで特定のソフトウェアが検出された場所の証拠を確認できます。
@@ -59,20 +70,20 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="september-2021"></a>2021 年 9 月
 
 - (GA)Microsoft Defender for Office 365イベント データは、イベント ストリーミング API Microsoft 365 Defender使用できます。 イベントの種類の可用性と状態は、ストリーミング API のサポートされるイベントMicrosoft 365 Defender[で確認できます](supported-event-types.md)。
-- (GA)高度なOffice 365利用可能なデータの Microsoft Defender が一般提供されています。
+- (GA)高度な検索Office 365利用可能なデータの Microsoft Defender が一般提供されています。
 - (GA)インシデントとアラートをユーザー アカウントに割り当てる
 
   インシデントに関連付けられているすべてのアラートを、インシデントの [インシデントの管理] ウィンドウまたはアラートの [管理] アラート  ウィンドウの [割り当て]  からユーザー アカウントに割り当てできます。
 
 ## <a name="august-2021"></a>2021 年 8 月
 
-- (プレビュー)Microsoft Defender for Office 365高度な検索で利用可能なデータ
+- (プレビュー)高度な検索でOffice 365データを提供する Microsoft Defender
 
   電子メール テーブルの新しい列は、高度な検索を使用してより詳細な調査を行う電子メール ベースの脅威に関するより多くの洞察を提供できます。 この列は`AuthenticationDetails`[、EmailEvents](./advanced-hunting-emailevents-table.md)`FileSize`、[EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)`ThreatTypes``DetectionMethods`、[および EmailPostDeliveryEvents テーブルに含](./advanced-hunting-emailpostdeliveryevents-table.md)める必要があります。
 
 - (プレビュー)インシデント グラフ
 
-  インシデントの **[Graph**] タブの新しい  [セキュリティ] タブには、攻撃の全範囲、攻撃がネットワーク全体に及び、開始場所、攻撃者がどこまで攻撃を行ったかが表示されます。
+  **インシデントの [Graph**] タブの新しい  [セキュリティ] タブには、攻撃の全範囲、攻撃がネットワーク経由で時間の間にどのように広がったか、開始した場所、攻撃者がどこまで攻撃を行ったかが表示されます。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
@@ -116,11 +127,11 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 - Microsoft 365 Defender
 
-  改善[されたMicrosoft 365 Defenderポータル](https://security.microsoft.com)が利用可能になります。 この新しいエクスペリエンスでは、Defender for Endpoint、Defender for endpoint、defender for Office 365 Id、その他を 1 つのポータルにまとめます。 これは、セキュリティコントロールを管理するための新しいホームです。 [新機能について説明します](./microsoft-365-defender.md#the-microsoft-365-defender-portal)。
+  改善[されたMicrosoft 365 Defenderポータル](https://security.microsoft.com)が利用可能になります。 この新しいエクスペリエンスでは、Defender for Endpoint、Defender for endpoint、Defender for Office 365、Defender for Identity など、1 つのポータルにまとめます。 これは、セキュリティコントロールを管理するための新しいホームです。 [新機能について説明します](./microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
 - [Microsoft 365 Defender分析レポート](threat-analytics.md)
 
-  脅威分析は、アクティブな攻撃に対応し、影響を最小限に抑えるのに役立ちます。 また、セキュリティ ソリューションによってブロックされる攻撃の試みMicrosoft 365 Defender、さらなる暴露のリスクを軽減し、回復性を高める予防措置を講じてください。 統合セキュリティ エクスペリエンスの一環として、Microsoft Defender for Endpoint および Microsoft Defender では、E5 ライセンス所有者向Office利用できます。
+  脅威分析は、アクティブな攻撃に対応し、影響を最小限に抑えるのに役立ちます。 また、セキュリティ ソリューションによってブロックされる攻撃の試みMicrosoft 365 Defender、さらなる暴露のリスクを軽減し、回復性を高める予防措置を講じてみることができます。 統合セキュリティ エクスペリエンスの一環として、Microsoft Defender for Endpoint および Microsoft Defender では、E5 ライセンス所有者Office利用できます。
 
 ## <a name="march-2021"></a>2021 年 3 月
 
@@ -128,8 +139,3 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
   さまざまなクラウド アプリとサービスのイベントに関する情報を、Microsoft Cloud App Security。 この表には、以前に表で使用できる情報も含 `AppFileEvents` まれています。
 
-## <a name="february-2021"></a>2021 年 2 月
-
-- (プレビュー)拡張された[Microsoft 365 Defenderポータル (https://security.microsoft.com)](https://security.microsoft.com) はパブリック プレビューで使用できます。 この新しいエクスペリエンスにより、Defender for Endpoint と Defender for Office 365が中央に表示されます。 [変更点についての詳細情報](microsoft-365-defender.md#the-microsoft-365-defender-portal) はこちらを参照してください。
-
-- **[(プレビュー) Microsoft 365 Defender](api-overview.md)** API - トップ レベルの Microsoft 365 Defender API を使用すると、共有インシデントテーブルと高度なハンティング テーブルに基づいてワークフローを自動化できます。

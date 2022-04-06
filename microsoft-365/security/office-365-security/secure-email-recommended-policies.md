@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: b708d7aa993bdcd74b6fe00f633e3f7933ff04b8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6ab6ff7c043dcceacfbb07d0f6fec5e974999204
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321741"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682441"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -55,7 +55,6 @@ ActiveSync クライアントをブロックする新しいポリシー Exchange
 |**エンタープライズ**|[サインインのリスクが *低*、*中*、または *高* のときに MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド Exchange Online割り当てにアプリを含める|
 ||[準拠した PC *と* モバイル デバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウド Exchange Onlineリストにアプリを含める|
 |**特殊なセキュリティ**|[*常に* MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド Exchange Online割り当てにアプリを含める|
-|
 
 ## <a name="block-activesync-clients"></a>ActiveSync クライアントのブロック
 

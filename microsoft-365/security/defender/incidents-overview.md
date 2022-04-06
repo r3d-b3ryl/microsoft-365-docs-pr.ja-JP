@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 25cdc0610f11d1bcd7e8c27faa1cdc9453677d51
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 233c9993c8cd5978bcdfcbb54db8b9688c3ac056
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320881"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500037"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>インシデント対応とMicrosoft 365 Defender
 
@@ -73,7 +73,7 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 インシデント名を選択すると、インシデントの概要が表示され、追加情報を含むタブにアクセスできます。 例を次に示します。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="ポータル内のインシデントの概要ページMicrosoft 365 Defender例" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="ポータル内のインシデントの概要ページMicrosoft 365 Defenderします。" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 インシデントの追加タブは次のとおりです。
 
@@ -113,7 +113,7 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 次に、ポータルでインシデントに対応するワークフロー Microsoft 365例Microsoft 365 Defender示します。
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="インシデント対応ワークフローの例Microsoft 365。" lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="ポータルのインシデント対応ワークフローのMicrosoft 365 Defenderします。" lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
 継続的に、インシデント キュー内で、分析と解決優先度が最も高いインシデントを特定し、対応の準備をします。 これは、次を組み合わせたものです：
 
@@ -153,7 +153,7 @@ Microsoft 製品全体のインシデント対応の詳細については、こ�
 
 次に、セキュリティ操作 (SecOps) の例を示Microsoft 365 Defender。
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="ユーザーのセキュリティ操作のMicrosoft 365 Defender。" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="ユーザーのセキュリティ操作のMicrosoft 365 Defender" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 毎日のタスクには、次のものが含まれます。
 
@@ -215,7 +215,7 @@ Microsoft 製品全体の SecOps の詳細については、次のリソース�
     - [**メールに組織名を含める**] - 組織名をメール通知に表示する場合に選択します。
     - [**テナント固有のポータル リンクを含める**] - 特定の Microsoft 365 テナントにアクセスするため、メール通知にテナント ID を含むリンクを追加する場合、選択してください。
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="インシデントメール通知の通知設定。" lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="ポータル内のインシデントメール通知の通知設定ページMicrosoft 365 Defenderします。" lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
 
 5. **[次へ]** を選択します。 [受信者 **] ページ** で、インシデント通知を受信する電子メール アドレスを追加します。 新しい **メール アドレスを** 入力した後、[追加] を選択します。 通知をテストし、受信者が受信トレイで受信を確認するには、[テストメールの送信 **] を選択します**。 
 6. **[次へ]** を選択します。 [ルール **の確認] ページ** で、ルールの設定を確認し、[ルールの作成] **を選択します**。 受信者は、設定に基づいて電子メールを介してインシデント通知の受信を開始します。
@@ -254,7 +254,7 @@ Microsoft Learn のこの学習モジュールを使用して、インシデン�
 
 セキュリティ チームの役割に基づいて、次の表に従います。
 
-| 役割 | 手順 |
+| Role | 手順 |
 |:-------|:-----|
 | インシデントレスポンダー (Tier 1) | ポータルの [インシデント] ページからインシデント  キューをMicrosoft 365 Defenderします。 グループ プロフィールでは次の操作ができます。 <ul><li> 重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。 </li></ul> |
 | セキュリティ調査担当者またはアナリスト (Tier 2) | <ol><li> ポータル[の [](investigate-incidents.md)インシデント] ページからインシデントの調査をMicrosoft 365 Defenderします。 </li><li> フィッシング攻撃 [、パスワード スプレー攻撃](/security/compass/incident-response-playbooks) 、アプリ同意許可攻撃の詳細なガイダンスについては、次のインシデント対応プレイブックを参照してください。 </li></ol> |

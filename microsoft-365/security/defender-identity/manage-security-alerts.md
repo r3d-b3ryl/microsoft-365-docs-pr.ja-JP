@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3023dc05550aeee5a9d47bb7561eb221c6d1c588
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 59695ba5940bfa062e681ced172844f80ece045d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465819"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682331"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Defender for Identity security alerts in Microsoft 365 Defender
 
@@ -42,21 +42,21 @@ Defender for Identity から発信されたアラートは、Microsoft 365 Defen
 
 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>] で、[インシデント] **&に移動** し、[アラート] に **移動します**。
 
-:::image type="content" source="../../media/defender-identity/incidents-alerts.png" alt-text="[アラート] メニュー項目" lightbox="../../media/defender-identity/incidents-alerts.png":::
+![[インシデントと通知] の順に移動し、[アラート] をクリックします。](../../media/defender-identity/incidents-alerts.png)
 
 Defender for Identity からのアラートを表示するには、上部の [フィルター] を選択し、[サービス  ソース] で [**Microsoft Defender for Identity**] を選択し、[適用] を選択 **します**。
 
-:::image type="content" source="../../media/defender-identity/filter-defender-for-identity.png" alt-text="Defender for Identity イベントのフィルター" lightbox="../../media/defender-identity/filter-defender-for-identity.png":::
+![Defender for Identity イベントのフィルター。](../../media/defender-identity/filter-defender-for-identity.png)
 
 アラートは、アラート名、タグ、**重大度**、**調査** 状態、**状態**、カテゴリ、検出ソース、影響を受けたアセット、**最初** のアクティビティ、および最後のアクティビティの情報と一緒に **表示** されます。 
 
-:::image type="content" source="../../media/defender-identity/filtered-alerts.png" alt-text="Defender for Identity イベント" lightbox="../../media/defender-identity/filtered-alerts.png":::
+![Defender for Identity イベント。](../../media/defender-identity/filtered-alerts.png)
 
 ## <a name="manage-alerts"></a>アラートの管理
 
 アラートの **1 つの [アラート名** ] をクリックすると、アラートの詳細が表示されたページに移動します。 左側のウィンドウに、[発生した操作] の概要 **が表示されます**。
 
-:::image type="content" source="../../media/defender-identity/what-happened.png" alt-text="[何が起こったか] ウィンドウ" lightbox="../../media/defender-identity/what-happened.png":::
+![アラートで何が起こったか。](../../media/defender-identity/what-happened.png)
 
 [何が **起こったか]** ボックスの上には、アラートのアカウント、宛先 **ホスト**、および **送信元ホストの** ボタンがあります。 その他のアラートについては、追加のホスト、アカウント、IP アドレス、ドメイン、セキュリティ グループの詳細についてボタンが表示される場合があります。 関係するエンティティの詳細を取得するには、それらを選択します。
 
@@ -64,19 +64,19 @@ Defender for Identity からのアラートを表示するには、上部の [�
 
 - **このアラートを分類** する - ここでは、このアラートを True アラートまたは **False アラート** として **指定できます。**
 
-    :::image type="content" source="../../media/defender-identity/classify-alert.png" alt-text="アラートを分類できるページ" lightbox="../../media/defender-identity/classify-alert.png":::
+    ![アラートを分類します。](../../media/defender-identity/classify-alert.png)
 
 - **アラートの状態** - [ **分類の設定]** で、アラートを **True または False に** 分類 **できます**。 [ **割り当て** 済み] では、自分にアラートを割り当てたり、割り当てを解除することができます。
 
-    :::image type="content" source="../../media/defender-identity/alert-state.png" alt-text="[アラートの状態] ウィンドウ" lightbox="../../media/defender-identity/alert-state.png":::
+    ![アラートの状態。](../../media/defender-identity/alert-state.png)
 
 - **アラートの** 詳細 **- [アラート** の詳細] で、特定のアラートに関する詳細情報を確認し、アラートの種類に関するドキュメントへのリンクに従い、アラートが関連付けられているインシデントを確認し、このアラートの種類にリンクされている自動調査を確認し、影響を受けたデバイスとユーザーを確認できます。
 
-   :::image type="content" source="../../media/defender-identity/alert-details.png" alt-text="[アラートの詳細] ページ" lightbox="../../media/defender-identity/alert-details.png":::
+    ![アラートの詳細。](../../media/defender-identity/alert-details.png)
 
 - **コメント&履歴** - アラートにコメントを追加し、アラートに関連付けられているすべてのアクションの履歴を確認できます。
 
-    :::image type="content" source="../../media/defender-identity/comments-history.png" alt-text="[コメント&履歴] ページ" lightbox="../../media/defender-identity/comments-history.png":::
+    ![コメントと履歴。](../../media/defender-identity/comments-history.png)
 
 - **警告の** 管理 - [警告の **管理] を** 選択すると、次のウィンドウに移動して、次の情報を編集できます。
   - **[状態**] - [新規]**、[****解決済み]、** または [進行中] **を選択できます**。
@@ -85,7 +85,7 @@ Defender for Identity からのアラートを表示するには、上部の [�
 
     [警告の管理] の横にある 3 つのドットを選択した場合は、[脅威の専門家に相談する]、アラートを Excel ファイルにエクスポートする、または別のインシデントに **リンクすることができます**。
 
-    :::image type="content" source="../../media/defender-identity/manage-alert.png" alt-text="[アラートの管理] オプション" lightbox="../../media/defender-identity/manage-alert.png":::
+    ![アラートを管理します。](../../media/defender-identity/manage-alert.png)
 
     > [!NOTE]
     > このファイルExcel、使用可能なリンクが 2 つ用意されています。[**Id の Microsoft Defender** での表示] と [Id の表示 **]** の 2 つMicrosoft 365 Defender。 各リンクを使用すると、関連するポータルにアクセスし、そこにアラートに関する情報を提供します。

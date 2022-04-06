@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: c8bf111acd41ede8a493672234de4e4a33ccd105
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 7e8fbeab380ceac3531e2a288fb5e8fb5f43e166
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775854"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682375"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>ゼロ トラスト ID とデバイスのアクセス構成
 
@@ -39,7 +39,7 @@ ms.locfileid: "63775854"
 
 - 最小特権アクセスを使用する
 
-  Just-In-Time および Just-Enough-Access (JIT/JEA)、リスクベースのアダプティブ ポリシー、およびデータ保護を使用してユーザー アクセスを制限します。
+  Just-In-Time および Just-Enough-Access (JIT/JEA)、リスクベースのアダプティブ ポリシー、およびデータ保護を使用してユーザー アクセスを制限します。  
 
 - 違反を想定する
 
@@ -235,6 +235,6 @@ Windows 11 または Windows 10のMicrosoft 365 Apps for enterpriseは、PC に�
 
 ゼロトラスト ID とデバイス アクセスを構成した後、Azure AD 機能[](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)展開ガイドを参照して、考慮すべき追加機能の段階的なチェックリストと、アクセスの保護、監視、および監査を行う [Azure AD Identity Governance](/azure/active-directory/governance/) を参照してください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [ゼロトラスト ID とデバイス アクセス ポリシーを実装するための前提条件作業](identity-access-prerequisites.md)

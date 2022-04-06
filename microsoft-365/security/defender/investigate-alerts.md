@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 41583a89abc3418799263dc46643fbe06a07e818
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: c09a3880a9f117d0ce5ce6e5edf3736192fc9c95
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712842"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499861"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを調査する
 
@@ -45,7 +45,7 @@ ms.locfileid: "63712842"
 
 アラート **キューには、** 現在の一連のアラートが表示されます。 [インシデント] からアラート キューにアクセスし **&>** ポータルのクイック 起動時に通知をMicrosoft 365 Defender [します](https://go.microsoft.com/fwlink/p/?linkid=2077139)。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="ポータル内のアラート キュー Microsoft 365 Defender例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="[アラート] セクション (Microsoft 365 Defender ポータル)" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png":::
 
 Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft Defender for microsoft Defender など、さまざまな Microsoft セキュリティ ソリューションOffice 365、Microsoft 365 Defender表示されます。
 
@@ -53,7 +53,7 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 既定のアラート キューから [フィルター] を **選択すると、[** フィルター] ウィンドウが表示され、そこからアラートのサブセットを指定できます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="ポータル内のアラート キューのフィルター ウィンドウMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="ポータルの [フィルター] Microsoft 365 Defenderします。" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
 
 次の条件に従ってアラートをフィルター処理できます。
 
@@ -91,7 +91,9 @@ Microsoft Defender にアクセスするには、次の役割を持つ必要が�
 
 メインのアラート ページを表示するには、アラートの名前を選択します。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="ポータル内のアラートの詳細ページMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="ポータル内のアラートのMicrosoft 365 Defender" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
+
+[警告の管理] ウィンドウ **から [メインのアラート ページを開** く] **アクションを選択** することもできます。
 
 アラート ページは、次のセクションで構成されます。 
 
@@ -138,7 +140,7 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint、microsoft Defender
 
 アラートを管理するには、アラート ページ **の** [概要の詳細] セクションで [アラートの管理] を選択します。 1 つのアラートの場合は、[警告の管理] ウィンドウの **例を次に示** します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="ポータルの [アラートの管理] ウィンドウMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="ポータルの [アラートの管理Microsoft 365 Defender]" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
 
 [ **警告の管理]** ウィンドウでは、次の項目を表示または指定できます。
 

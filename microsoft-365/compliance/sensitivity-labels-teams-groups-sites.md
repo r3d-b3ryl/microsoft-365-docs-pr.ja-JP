@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: b5eb295e83e2a87a538201fe58c221f3f9400f97
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 759f7a6403eb41a6a853ed1f9b844ebd1ef679cc
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63714919"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500015"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -59,7 +59,7 @@ ms.locfileid: "63714919"
 ![SharePoint でチーム サイトを作成するときの機密ラベル。](../media/sensitivity-labels-new-team-site.png)
 
 > [!NOTE]
-> コンテナーの秘密度ラベルは、現在プレビュー段階の [Teams 共有チャネル](/MicrosoftTeams/shared-channels)をサポートしています。 チームに共有チャネルがある場合、そのチームは親チームから秘密度ラベル設定を自動的に継承し、そのラベルを削除したり、別のラベルに置き換えたりすることはできません。
+> コンテナーの秘密度ラベルは、現在プレビュー段階の [Teams 共有チャネル](/MicrosoftTeams/shared-channels)をサポートしています。チームに共有チャネルがある場合、そのチームは親チームから秘密度ラベル設定を自動的に継承し、そのラベルを削除したり、別のラベルに置き換えたりすることはできません。
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>コンテナーの秘密度ラベルを有効化してラベルを同期する方法
 
@@ -190,14 +190,16 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
 
 ### <a name="creating-and-publishing-labels-that-are-configured-for-sites-and-groups"></a>サイトとグループに対して構成されているラベルを作成して発行する
 
-新しい機密ラベルを作成して公開すると、チーム、グループ、およびサイトでユーザーには、1 時間以内に表示されます。 ただし、既存のラベルを変更する場合は、最大で 24 時間かかります。 このラベルがサイトおよびグループの設定に対して構成されている場合、次のガイダンスを使用して、ユーザーのラベルを発行します。
+このラベルがサイトおよびグループの設定に対して構成されている場合、次のガイダンスを使用して、ユーザーのラベルを発行します。
 
 1. 秘密度ラベルを作成し構成したら、少数のテスト ユーザーにのみ適用されるラベル ポリシーにこのラベルを追加します。
 
 2. 変更がレプリケートされるまで待機します。
-
-   - 新規ラベル: 1 時間待機します。
-   - 既存のラベル: 24 時間待機します。
+    
+   - 新規ラベル: 少なくとも 1 時間待機します。
+   - 既存のラベル: 少なくとも 24 時間待機します。
+    
+    ラベルのタイミングの詳細については、「[新しいラベルと変更が反映されるタイミング](create-sensitivity-labels.md#when-to-expect-new-labels-and-changes-to-take-effect)」を参照してください。
 
 3. この待ち時間の後、テスト ユーザー アカウントのいずれかを使用して、手順 1 で作成したラベルを持つチーム、Microsoft 365 グループ、または SharePoint サイトを作成します。
 
@@ -205,7 +207,7 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>サイトとグループに対して構成されている発行済みのラベルを変更する
 
-ベスト プラクティスとして、秘密度ラベルを複数のチーム、グループ、またはサイトに適用した後に、ラベルのサイトとグループの設定を変更しないようにします。 この場合、ラベルが適用されているすべてのコンテナーに変更を複製されるまで 24 時間待機することを忘れないでください。
+ベスト プラクティスとして、秘密度ラベルを複数のチーム、グループ、またはサイトに適用した後に、ラベルのサイトとグループの設定を変更しないようにします。 この場合、ラベルが適用されているすべてのコンテナーに変更が複製されるまで少なくとも 24 時間待機することを忘れないでください。
 
 また、**外部ユーザーのアクセス** 設定を含む変更は、次のようになります。
 
@@ -219,7 +221,7 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
 
 1. ラベルを含むすべてのラベル ポリシーから、機密ラベルを削除します。
 
-2. 1 時間待機します。
+2. 少なくとも 1 時間待機します。
 
 3. この待ち時間の後、チーム、グループ、またはサイトを作成し、ラベルが表示されなくなったことを確認してください。
 

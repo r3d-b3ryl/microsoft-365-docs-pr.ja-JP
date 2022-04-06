@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 747f8e389b90e20aad7162277b3e62b0a80ae3c7
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 4429226eaebc254676fac5589a2a25ca51acdeb6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645754"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499927"
 ---
 # <a name="get-started-with-microsoft-365-defender"></a>Microsoft 365 Defender の使用を開始する
 
@@ -38,7 +38,7 @@ Microsoft 365 Defenderは、企業全体のセキュリティを監視および�
 
 Microsoft スイートのセキュリティ製品を初めて使用する場合でも、個々のワークフローに精通している場合でも、このトピックでは、Microsoft 365 Defender の使用を開始するために必要な簡単な手順について説明します。
 
-![手順の開始のイメージMicrosoft 365 Defenderします。](../../media/mtp/get-started-m365d.png)
+:::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="ポータルの使用を開始するMicrosoft 365 Defender手順" lightbox="../../media/mtp/get-started-m365d.png":::
 
 一般に、開始するには、次の手順を実行する必要があります。
 
@@ -58,6 +58,6 @@ Microsoft スイートのセキュリティ製品を初めて使用する場合�
 | 機能 | 説明 |
 | ------ | ------ |
 | Microsoft Defender for Endpoint | 強力な行動センサー、クラウド分析、脅威インテリジェンスを中心に構築されたエンドポイント保護スイート |
-|Microsoft Defender for Office 365 | メールなどのコラボレーション ツールを含む、Office 365データの高度な保護 |
+|Microsoft Defender for Office 365 | 電子メールなどのコラボレーション ツールを含む、Office 365アプリとデータの高度な保護 |
 | Microsoft Defender for Identity | 関連付けされた Active Directory シグナルを使用して、高度な脅威、侵害された ID、悪意のあるインサイダーから防御する |
 | Microsoft Defender for Cloud Apps | Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定して対処する |

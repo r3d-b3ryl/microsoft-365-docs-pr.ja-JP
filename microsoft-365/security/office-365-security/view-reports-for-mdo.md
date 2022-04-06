@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fb48e432d20067f3c6ca1913349152154c57e81
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: de0dd5b7c0466a722a788ee3fe4e6c843d70f5eb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557885"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680976"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>[Defender for Office 365] Microsoft 365 Defenderポータル
 
@@ -211,22 +211,13 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 この記事で説明するレポートに加えて、次の表で説明するように、いくつかの他のレポートを使用できます。
 
-<br>
-
-****
-
 |レポート|トピック|
 |---|---|
 |**エクスプローラー** (Microsoft Defender for Office 365 プラン 2) またはリアルタイム **検出 (Microsoft** Defender for Office 365 プラン 1)|[脅威エクスプローラー (およびリアルタイムの検出)](threat-explorer.md)|
 |Defender を必要としない電子メール セキュリティ Office 365|[ポータルで電子メール セキュリティ レポートをMicrosoft 365 Defenderする](view-email-security-reports.md)|
 |管理センター (EAC) Exchangeフロー レポート|[新しい管理センターのメール フロー Exchangeレポート](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|
 
 PowerShell レポートコマンドレット:
-
-<br>
-
-****
 
 |レポート|トピック|
 |---|---|
@@ -237,7 +228,6 @@ PowerShell レポートコマンドレット:
 |侵害されたユーザー|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |メール フローの状態|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |スプーフィングされたユーザー|[Get-スプーフィングMailReport](/powershell/module/exchange/get-spoofmailreport)|
-|
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>レポートの Defender を表示するために必要なアクセス許可Office 365ですか?
 
@@ -246,7 +236,7 @@ PowerShell レポートコマンドレット:
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ閲覧者**
-- **グローバル閲覧者**
+- **グローバル リーダー**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 

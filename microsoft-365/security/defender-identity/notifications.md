@@ -8,12 +8,13 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 4e8969e51673676ecf13dc579ae304622e23e75d
-ms.sourcegitcommit: 1de72e5fd8af0ebc4a0dc91f47d2243498cfe5b9
+ms.collection: M365-security-compliance
+ms.openlocfilehash: fa740b483cd1a9591f7d4f7ef1961c5e96d4d44b
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63384607"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682242"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Defender for Identity notifications in Microsoft 365 Defender
 
@@ -37,7 +38,7 @@ ms.locfileid: "63384607"
 
 1. [正常性 **の問題の通知] を選択します**。
 
-1. 受信者のメール アドレスを入力します。 [**追加**] を選択します。
+1. 受信者のメール アドレスを入力します。 **[追加]** を選択します。
 
     ![正常性の問題のメール アドレスを入力します。](../../media/defender-identity/health-email-recipient.png)
 
@@ -58,7 +59,7 @@ ms.locfileid: "63384607"
 
 1. [アラート **通知] を選択します**。
 
-1. 受信者のメール アドレスを入力します。 [**追加**] を選択します。
+1. 受信者のメール アドレスを入力します。 **[追加]** を選択します。
 
     ![検出されたアラートのメール アドレスを入力します。](../../media/defender-identity/alert-email-recipient.png)
 

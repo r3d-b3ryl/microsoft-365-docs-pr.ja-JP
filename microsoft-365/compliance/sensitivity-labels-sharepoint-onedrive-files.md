@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、Word、Excel、および PowerPoint ファイルのSharePointサポートOneDrive。
-ms.openlocfilehash: 08c3daab9195e98c3b099255f1e7fb38a2324c33
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 12180dcc748764b1d73f6ad8a5c0ef7c77cd2b27
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320019"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499971"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -190,11 +190,9 @@ SharePoint と OneDrive で感度ラベルを使用する場合は、新しい�
 
 たとえば、暗号化を適用する新しい感度ラベルを作成して発行すると、ユーザーのデスクトップ アプリにすばやく表示されます。 ユーザーは、このラベルをドキュメントに適用し、ドキュメントまたはドキュメントSharePointアップロードOneDrive。 サービスのラベル レプリケーションが完了しない場合、アップロード時に新しい機能はドキュメントに適用されません。 その結果、ドキュメントは検索または電子情報開示で返され、ドキュメントを電子情報開示で開くOffice for the web。
 
-次の変更は、1 時間以内にレプリケートされます。新しいおよび削除された感度ラベルと、ポリシー内のラベルを含む感度ラベル ポリシー設定。
+ラベルのタイミングの詳細については、「新しいラベルと変更を有効にするときに」 [を参照してください](create-sensitivity-labels.md#when-to-expect-new-labels-and-changes-to-take-effect)。
 
-次の変更は、24 時間以内にレプリケートされます。既存のラベルの感度ラベル設定の変更。
-
-レプリケーションの遅延は新しい感度ラベルの場合は 1 時間だけなので、この例ではシナリオを実行する可能性は低いと考えられます。 ただし、安全対策として、最初に数人のテスト ユーザーに新しいラベルを発行し、1 時間待ち、SharePoint と OneDrive でラベルの動作を確認することをお勧めします。 最後の手順として、既存のラベル ポリシーにユーザーを追加するか、標準ユーザーの既存のラベル ポリシーにラベルを追加して、より多くのユーザーがラベルを使用できます。 標準ユーザーにラベルが表示された時点で、ラベルは既にユーザーとSharePoint同期OneDrive。
+セーフガードとして、最初に少数のテスト ユーザーに新しいラベルを発行し、少なくとも 1 時間待ち、SharePoint と OneDrive でラベルの動作を確認することをお勧めします。 少なくとも 1 日待って、既存のラベル ポリシーにユーザーを追加するか、標準ユーザーの既存のラベル ポリシーにラベルを追加して、より多くのユーザーがラベルを使用できます。 標準ユーザーがラベルを表示する前に、ラベルは既にユーザーとSharePoint同期OneDrive。
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint権限管理 (IRM) と感度ラベル
 
@@ -215,7 +213,6 @@ SharePoint と OneDrive で感度ラベルを使用する場合は、新しい�
 - 追加の IRM ライブラリ設定 (IRM をサポートしないドキュメントをユーザーがアップロードできないなど) を有効にした場合、これらの設定が適用されます。
 
 この動作により、ラベル付けされていない場合でも、Officeおよび PDF ファイルがダウンロードされた場合、すべてのファイルと PDF ファイルが不正アクセスから保護されます。 ただし、アップロードされたラベル付きファイルは、新しい機能の恩恵を受け取るわけではありません。
-
 
 ## <a name="search-for-documents-by-sensitivity-label"></a>感度ラベルでドキュメントを検索する
 
@@ -249,7 +246,7 @@ InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
 
 代わりに、グローバル管理者または [SharePoint](/sharepoint/sharepoint-admin-role) 管理者は [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを実行して、感度ラベルと暗号化の両方を削除できます。 このコマンドレットは、管理者がサイトまたはファイルへのアクセス許可を持っていなくても、Azure Rights Management サービスが利用できない場合でも実行されます。
 
-例:
+次に例を示します。
 
 ```powershell
 Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"

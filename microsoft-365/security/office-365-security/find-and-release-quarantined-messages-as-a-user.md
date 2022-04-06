@@ -20,12 +20,12 @@ ms.custom:
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1cfdd441cff8481ef1ec7ea5ef3cabc54f062694
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 35aa801d0d981f68de5c62a1928e1f85d82ee95d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873491"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682397"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -39,10 +39,6 @@ ms.locfileid: "61873491"
 Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、危険な可能性があるメッセージまたは不要なメッセージは検疫済みメッセージとして保留されます。詳細については、「[EOP での検疫](quarantine-email-messages.md)」を参照してください。
 
 通常のユーザー (管理者ではない) として、検疫済みのメッセージの受信者として使用できる **既定の** 機能を次の表に示します。
-
-<br>
-
-****
 
 |検疫の理由|表示|リリース|削除|
 |---|:---:|:---:|:---:|
@@ -64,7 +60,6 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 |悪意のあるファイルをマルウェアとして検疫する SharePoint、OneDrive、Microsoft Teams 向けの安全な添付ファイル。||||
 |**メール フロー ルール (トランスポート ルール)**||||
 |メール メッセージを検疫するメール フロー ルール。||||
-|
 
 _検疫ポリシー_ は、[サポートされている機能](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)でメッセージが検疫された理由に基づいて、検疫済みのメッセージに対してユーザーが実行できる操作を定義します。 既定の検疫ポリシーでは、前の表で説明したように、履歴機能を適用します。 管理者は、サポートされている機能で、ユーザーの制限を緩和したり厳しくしたりする機能を定義するカスタム検疫ポリシーを作成して適用できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 

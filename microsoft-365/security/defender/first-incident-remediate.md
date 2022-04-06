@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2837b6009c143ea724d8c13d2548eeeca80e431d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 827b22ea2fb5e0864157dfae6748aa97ee4baf29
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321321"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499949"
 ---
-# <a name="step-2-remediate-your-first-incident"></a>手順 2。 最初のインシデントを修復する
+# <a name="step-2-remediate-your-first-incident"></a>手順 2. 最初のインシデントを修復する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -68,7 +68,7 @@ Microsoft 365 Defenderは、アナリストが手動で開始できるいくつ�
 7. Tor IP アドレスをブロックする Microsoft Defender for Endpoint でカスタム インジケーターを作成する
 8. 次の図に示すように、この種類のアラートのガバナンス アクションを Microsoft Defender for Cloud Apps に作成します。
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Microsoft Defender for Cloud Apps ポータルのガバナンス アクションの例。":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Microsoft Defender for Cloud Apps ポータルのガバナンス アクション" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 修復アクションの大部分は、アプリケーションで適用および追跡Microsoft 365 Defender。
 
@@ -85,11 +85,11 @@ Playbooks は、Power Automateを使用して、特定の条件がトリガー�
 
 次に例を示します。
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="カスタムのロボット プロセスPower Automateフローの例。"::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="カスタムPower Automateプロセスの自動化フロー" lightbox="../../media/first-incident-remediate/first-incident-power-automate.png"::: 
  
 プレイブックは、インシデント後のレビュー[](first-incident-post.md)中に作成して、解決されたインシデントから修復アクションを作成することもできます。 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [![手順 3: インシデントのインシデント後のレビューを実行する方法について学習します。](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 

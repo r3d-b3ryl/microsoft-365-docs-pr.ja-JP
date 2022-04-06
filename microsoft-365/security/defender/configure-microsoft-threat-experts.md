@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 8a8de691ff08b50b56c34ed9e779cc97d48c5fcd
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 0bf6a6ecf48889228391688e41fb79070c3194a1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755825"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682220"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>管理を通じてMicrosoft 脅威エキスパート機能を構成Microsoft 365 Defender
 
@@ -52,15 +52,15 @@ Microsoft Defender for Endpoint および Microsoft 365 Defenderを既に持っ�
 
 2. **[適用]** を選択します。
 
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="ポータルMicrosoft 脅威エキスパートの [設定] ページMicrosoft 365 Defenderページ" lightbox="../../media/mte/mte-collaboratewithmte.png":::
+    ![ユーザー設定Microsoft 脅威エキスパートイメージ。](../../media/mte/mte-collaboratewithmte.png)
 
 3. Microsoft がアプリケーションについて連絡できるよう、名前とメール アドレスを入力します。
 
-    :::image type="content" source="../../media/mte/mte-apply.png" alt-text="[Microsoft 脅威エキスパート] ポータルの [Microsoft 365 Defender] ページ" lightbox="../../media/mte/mte-apply.png":::
-  
+    ![アプリケーションのMicrosoft 脅威エキスパートイメージ。](../../media/mte/mte-apply.png)
+
 4. プライバシーに [関する声明を読み](https://privacy.microsoft.com/en-us/privacystatement)、完了 **したら [送信** ] を選択します。 アプリケーションが承認されると、ウェルカム メールが届きます。
 
-    :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="ポータルMicrosoft 脅威エキスパートアプリケーションの確認Microsoft 365 Defender確認" lightbox="../../media/mte/mte-applicationconfirmation.png":::
+    ![アプリケーションの確認Microsoft 脅威エキスパートのイメージ。](../../media/mte/mte-applicationconfirmation.png)
 
 5. ウェルカム メールを受信すると、ターゲット攻撃通知の受信が自動的に開始されます。
 
@@ -105,13 +105,13 @@ Microsoft Defender for Endpoint のお客様が既に存在する場合は、Mic
 
 2. トップ メニューから [ **?脅威の専門家に相談してください**。
 
-    :::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="ポータルMicrosoft 脅威エキスパートメニューからオンデマンドのエキスパートをMicrosoft 365 Defenderします。" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
+    ![メニューからMicrosoft 脅威エキスパートエキスパートオンデマンドのイメージ。](../../media/mte/incidents-action-mte-highlighted.png)
 
     フライアウト画面が開きます。
 
     このヘッダーは、試用版サブスクリプションの場合、または完全なサブスクリプションを使用Microsoft 脅威エキスパートエキスパート オンデマンド サブスクリプションを示します。
 
-    :::image type="content" source="../../media/mte/mte-trial.png" alt-text="[Microsoft 脅威エキスパートポータルの [エキスパート オン デマンド試用版] Microsoft 365 Defender画面" lightbox="../../media/mte/mte-trial.png":::
+    ![ユーザーのMicrosoft 脅威エキスパートのサブスクリプション画面のイメージ。](../../media/mte/mte-trial.png)
 
     [ **調査] トピック** フィールドには、要求の関連ページへのリンクが既に入力されています。
 

@@ -18,12 +18,12 @@ ms.custom:
 ms.date: 03/18/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 151fb8de088531b9a9f053fc2b5d3c433055e21f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 6e6bf499ab348d05cba237fa69b205cb495dccb0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473125"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681064"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -48,7 +48,7 @@ ms.locfileid: "64473125"
 
 EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)。 組織のセキュリティ チームは、まだ有効になっていない[](tvm-security-recommendation.md)場合、ブロック モードEDR有効にするセキュリティの推奨事項を受け取ります。
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="ブロック モードでEDRする推奨事項" lightbox="images/edrblockmode-TVMrecommendation.png":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="ブロック モードでEDRを有効にしてください。":::
 
 > [!TIP]
 > 最適な保護を得る場合は、 **[必ず Microsoft Defender for Endpoint ベースラインを展開してください](configure-machines-security-baseline.md)**。
@@ -59,7 +59,7 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理](nex
 
 次の図は、ブロック モードで検出され、ブロックされたソフトウェアのインスタンスEDR示しています。
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="ブロック モードでのEDR検出" lightbox="images/edr-in-block-mode-detection.png":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDRモードで何かが検出されました。":::
 
 
 ## <a name="enable-edr-in-block-mode"></a>ブロック モードでEDRを有効にする
@@ -139,13 +139,13 @@ Windows 10、Windows 11、Windows Server、バージョン 1803 以降、Windows
 > [!NOTE]
 > Microsoft Defender ウイルス対策は、デバイスが Microsoft Defender for Endpoint にオンボードされている場合にのみパッシブ モードで実行できます。
 
-詳細については、「[Microsoft Defender ウイルス対策の互換性](microsoft-defender-antivirus-compatibility.md)」を参照してください。
+詳細については、「互換性に[関するMicrosoft Defender ウイルス対策参照してください](microsoft-defender-antivirus-compatibility.md)。
 
 ### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>アクティブまたはパッシブ モードMicrosoft Defender ウイルス対策確認する方法
 
 アクティブ モードまたはパッシブ Microsoft Defender ウイルス対策実行されているかどうかを確認するには、デバイスでコマンド プロンプトまたは PowerShell を使用Windows。
 
-|メソッド|プロシージャ|
+|メソッド|Procedure|
 |---|---|
 |PowerShell|1. 選択したスタート メニュー入力`PowerShell`を開始し、結果でWindows PowerShellを開きます。<br/><br/>2. と入力します `Get-MpComputerStatus`。<br/><br/>3. 結果の一覧の **[AMRunningMode** ] 行で、次のいずれかの値を探します。<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>詳細については、「 [Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。|
 |コマンド プロンプト|1. コマンド を選択スタート メニュー`Command Prompt`入力を開始し、結果でコマンド Windowsを開きます。<br/><br/>2. と入力します `sc query windefend`。<br/><br/>3. 結果の一覧の **STATE** 行で、サービスが実行されているのを確認します。 |

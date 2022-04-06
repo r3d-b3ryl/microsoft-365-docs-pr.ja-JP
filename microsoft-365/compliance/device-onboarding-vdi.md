@@ -14,19 +14,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: 構成パッケージを仮想デスクトップ インフラストラクチャ (VDI) デバイスに展開して、エンドポイント データ損失防止サービスMicrosoft 365オンボーディングします。
-ms.openlocfilehash: 6ac13edde066319a5174234450dac67c29209b1b
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 00804c93022f21715e3604eeb45c22caa4745f91
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950884"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682154"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ デバイスのオンボード
 
 **適用対象:**
 
-- [Microsoft 365 エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
+- [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 - 仮想デスクトップ インフラストラクチャ (VDI) デバイス
 
@@ -35,14 +35,14 @@ ms.locfileid: "60950884"
 
 ## <a name="onboard-vdi-devices"></a>オンボード VDI デバイス
 
-Microsoft 365非永続的仮想デスクトップ インフラストラクチャ (VDI) セッションオンボーディングをサポートします。
+Microsoft 365非永続的仮想デスクトップ インフラストラクチャ (VDI) セッションオンボーディングをサポートしています。
 
 > [!NOTE]
 > 永続的でない VDI セッションをオンボードするには、VDI デバイスが 1809 以上Windows 10必要があります。
 
 VDIs をオンボーディングする際に関連する課題が生じ得る場合があります。 このシナリオの一般的な課題は次のとおりです。
 
-- 短命セッションの早期オンボーディングは、実際のプロビジョニングの前にMicrosoft 365にオンボードする必要があります。
+- 短命セッションの早期オンボーディングは、実際のプロビジョニングの前にMicrosoft 365にオンボーディングする必要があります。
 - 通常、デバイス名は新しいセッションに再利用されます。
 
 VDI デバイスは、次のいずれかのMicrosoft 365コンプライアンス センターに表示できます。
@@ -56,24 +56,24 @@ VDI デバイスは、次のいずれかのMicrosoft 365コンプライアンス
 > [!WARNING]
 > リソース構成が低い環境では、VDI ブート手順によってデバイスのオンボーディング プロセスが遅くなる可能性があります。
 
-1. Microsoft コンプライアンス センターから VDI 構成.zip *(DeviceCompliancePackage.zip)*[を取得します](https://compliance.microsoft.com)。
+1. Microsoft コンプライアンス センターから VDI 構成 *.zip (DeviceCompliancePackage.zip*) [を取得します](https://compliance.microsoft.com)。
 
-2. ナビゲーション ウィンドウで、[デバイスオンボーディングオンボーディング]**設定**  >  **を**  >  **選択します**。
+2. ナビゲーション ウィンドウで、[デバイス オンボード **onboarding** > **] 設定** を > **選択します**。
 
-3. [展開方法 **] フィールドで** 、[永続的でないエンドポイントの VDI オンボーディング **スクリプト] を選択します**。
+3. [展開方法 **] フィールド** で、 **永続的でないエンドポイントの VDI オンボーディング スクリプトを選択します**。
 
 4. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
-5. パスの下のイメージに、.zipから抽出された DeviceCompliancePackage フォルダーからファイル `golden/master` をコピーします `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 。
+5. フォルダーから抽出された DeviceCompliancePackage フォルダーからファイル.zipパス `golden` の下のイメージにコピーします `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`。
 
 6. デバイスごとに 1 つのエントリを実装していない場合は、DeviceComplianceOnboardingScript.cmd をコピーします。
 
 7. デバイスごとに 1 つのエントリを実装する場合は、デバイスと DeviceComplianceOnboardingScript.cmd の両方Onboard-NonPersistentMachine.ps1コピーします。
 
     > [!NOTE]
-    > フォルダーが表示しない場合 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` は、非表示になる可能性があります。 エクスプローラーから [非表示のファイル **とフォルダーを** 表示する] オプションを選択する必要があります。
+    > フォルダーが表示しない場合は `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 、非表示になる可能性があります。 エクスプローラーから [非表示のファイル **とフォルダーを** 表示する] オプションを選択する必要があります。
 
-8. [ローカル グループ ポリシー エディター] ウィンドウを開き、[コンピューター **の構成**] Windows 設定  >    >  **に**  >  **移動します**。
+8. [ローカル グループ ポリシー エディター] ウィンドウを開き、[**コンピューターの構成** > **Windows 設定** > **ScriptsStartup** > **] に移動します**。
 
    > [!NOTE]
    > ドメイン グループ ポリシーは、永続的でない VDI デバイスのオンボーディングにも使用できます。
@@ -82,19 +82,19 @@ VDI デバイスは、次のいずれかのMicrosoft 365コンプライアンス
 
    **デバイスごとに 1 つのエントリの場合**
 
-   **[PowerShell スクリプト]** タブを選択し、[追加] **(Windows** オンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます) をクリックします。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1` 。
+   [**PowerShell スクリプト]** タブを選択し、[追加 **] をクリック** します (Windows、以前にオンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます)。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1`。
 
    **各デバイスの複数のエントリの場合**:
 
-   [スクリプト **] タブを** 選択し、[追加]**をクリック** します (Windows、以前にオンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます)。 オンボーディング bash スクリプトに移動します `DeviceComplianceOnboardingScript.cmd` 。
+   [スクリプト **] タブを** 選択し、[追加 **] をクリック** します (Windows、以前にオンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます)。 オンボーディング bash スクリプトに移動します `DeviceComplianceOnboardingScript.cmd`。
 
 10. ソリューションをテストします。
     1. 1 つのデバイスでプールを作成します。
-    1. デバイスへのログオン。
-    1. デバイスからのログオフ。
+    1. デバイスにログオンします。
+    1. デバイスからログオフします。
     1. 別のユーザーと一緒にデバイスにログオンします。
-    1. **デバイスごとに 1 つのエントリの場合**: デバイス内の 1 つのエントリMicrosoft Defender セキュリティ センター。
-       **デバイスごとに複数のエントリについて**: デバイス内の複数のエントリをMicrosoft Defender セキュリティ センター。
+    1. **デバイスごとに 1 つのエントリの** 場合: 1 つのデバイスで 1 つのエントリのみをMicrosoft Defender セキュリティ センター。
+       **デバイスごとに複数のエントリの場合**: デバイス内の複数のエントリをMicrosoft Defender セキュリティ センター。
 
 11. [ナビゲーション **] ウィンドウの [** デバイス] リストをクリックします。
 
@@ -102,7 +102,7 @@ VDI デバイスは、次のいずれかのMicrosoft 365コンプライアンス
 
 ## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>非永続的仮想デスクトップ インフラストラクチャ (VDI) イメージの更新
 
-ベスト プラクティスとして、オフライン サービス ツールを使用してゴールデン/マスター イメージにパッチを適用することをお勧めします。
+ベスト プラクティスとして、オフライン サービス ツールを使用してゴールデン イメージにパッチを適用することをお勧めします。
 
 たとえば、次のコマンドを使用して、イメージがオフラインのままで更新プログラムをインストールできます。
 
@@ -120,7 +120,7 @@ DISM コマンドとオフライン サービスの詳細については、以�
 
 非永続的な VDI 環境でオフライン サービスが実行可能なオプションでない場合は、一貫性とセンサーの正常性を確保するために次の手順を実行する必要があります。
 
-1. オンライン サービスまたは修正プログラムのマスター イメージを起動した後、オフボード スクリプトを実行して、デバイス監視センサー Microsoft 365オフにします。 詳細については、「ローカル スクリプトを [使用したオフボード デバイス」を参照してください](device-onboarding-script.md#offboard-devices-using-a-local-script)。
+1. オンライン サービスまたはパッチ適用用のゴールデン イメージを起動した後、オフボード スクリプトを実行して、デバイス監視センサー Microsoft 365オフにします。 詳細については、「ローカル スクリプトを [使用したオフボード デバイス」を参照してください](device-onboarding-script.md#offboard-devices-using-a-local-script)。
 
 2. CMD ウィンドウで以下のコマンドを実行して、センサーが停止した状態を確認します。
 
@@ -130,7 +130,7 @@ DISM コマンドとオフライン サービスの詳細については、以�
 
 3. 必要に応じてイメージをサービスします。
 
-4. 次のコマンドを PsExec.exe を使用して実行します (起動後にセンサーが蓄積した可能性があるサイバー フォルダーの内容をクリーンアップするためにダウンロード https://download.sysinternals.com/files/PSTools.zip) できます。
+4. 次のコマンドを PsExec.exe ( https://download.sysinternals.com/files/PSTools.zip) 起動後にセンサーが蓄積した可能性があるサイバー フォルダーの内容をクリーンアップするためにダウンロードできます) を使用して実行します。
 
     ```console
     PsExec.exe -s cmd.exe
@@ -140,12 +140,12 @@ DISM コマンドとオフライン サービスの詳細については、以�
     exit
     ```
 
-5. 通常と同じ方法で、ゴールデン/マスター イメージを再シールします。
+5. 通常と同じ方法で、ゴールデン イメージを再シールします。
 
 ## <a name="related-topics"></a>関連項目
 
 - [グループ ポリシー Windows 10使用Windows 11 台のデバイスをオンボードおよび管理する](device-onboarding-gp.md)
 - [デバイスWindows 10使用Windows 11 台のデバイスをオンボードMicrosoft Endpoint Configuration Manager](device-onboarding-sccm.md)
-- [モバイル Windows 10ツールWindows使用して 11 台のデバイスをオンボードおよびインストールする](device-onboarding-mdm.md)
-- [ローカル スクリプトWindows 10使用Windows 11 台のデバイスをオンボードおよびインストールする](device-onboarding-script.md)
+- [モバイル デバイス管理ツールを使用した Windows 10 および Windows 11 デバイスのオンボード](device-onboarding-mdm.md)
+- [ローカル スクリプトを使用した Windows 10 および Windows 11 デバイスのオンボード](device-onboarding-script.md)
 - [Microsoft Defender Advanced Threat Protection オンボーディングの問題のトラブルシューティング](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

@@ -15,12 +15,13 @@ ms.custom:
 description: 管理者は、メール フローとルーティングを構成するためのオプションについて、メール フロー (EOP) でExchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d7bca416a6144e2745a2c5d631c3e634e935ff4
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 296cd8aaa92005f094de2ee7d1c9f8bb9427df16
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554062"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681020"
 ---
 # <a name="mail-flow-in-eop"></a>EOP のメール フロー
 
@@ -31,7 +32,7 @@ ms.locfileid: "60554062"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Exchange Online メールボックスまたはスタンドアロン Exchange Online Protection (EOP) 組織が Exchange Online メールボックスを持つ組織では、組織に送信されたメッセージはすべて、ワーカーが EOP を表示する前に EOP を通過します。 処理のために EOP を通過するメッセージをワーカー受信トレイにルーティングする方法に関するオプションがあります。
+Microsoft 365 Exchange Online メールボックスを持つ組織、または Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織では、組織に送信されたメッセージはすべて EOP を通過してからワーカーに表示されます。 処理のために EOP を通過するメッセージをワーカー受信トレイにルーティングする方法に関するオプションがあります。
 
 ## <a name="working-with-messages-and-message-access-options"></a>メッセージとメッセージ アクセス オプションの操作
 
@@ -39,9 +40,9 @@ EOP は、メッセージのルーティング方法に柔軟性を提供しま�
 
 [無効な受信者に送信されるメッセージを拒否](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking) するには、ディレクトリ ベースのエッジ ブロックを使用するサービス ネットワーク境界で無効な受信者のメッセージを拒否できるディレクトリ ベースのエッジ ブロック機能について説明します。
 
-[EOP で受け入れドメインを表示または編集するには、EOP](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) サービスに関連付けられているドメインを管理する方法について説明します。
+[EOP で受け入れドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) を表示または編集するには、EOP サービスに関連付けられているドメインを管理する方法について説明します。
 
-組織にサブドメインを追加する場合にも、それらの管理に EOP サービスを活用できます。 サブドメインの詳細については、「メール のサブドメインのメール フローを有効にする」[を参照Exchange Online。](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)
+組織にサブドメインを追加する場合にも、それらの管理に EOP サービスを活用できます。 サブドメインの詳細については、「サブドメインのメール フローを有効にする」を参照[Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
 
 [コネクタを使用してメール フロー](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) を構成すると、コネクタが導入され、それらを使用してメール ルーティングをカスタマイズする方法が示されます。 シナリオには、パートナー組織との安全な通信の保証とスマート ホストのセットアップが含まれます。
 

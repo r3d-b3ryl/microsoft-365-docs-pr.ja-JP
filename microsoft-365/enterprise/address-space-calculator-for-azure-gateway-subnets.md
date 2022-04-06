@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 01/07/2021
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Ent_O365
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 description: '概要: C3、Python、または PowerShell を使用して Azure ゲートウェイ サブネットのアドレス空間を計算します。'
-ms.openlocfilehash: 2f782cfcb699a15ad9c1ac2d9546c8b83e1512c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 129c64e4484110517edf3640861636324e59de57
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205895"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681790"
 ---
 # <a name="address-space-calculator-for-azure-gateway-subnets"></a>Azure ゲートウェイ サブネットのアドレス空間計算
 
@@ -32,7 +32,7 @@ ms.locfileid: "60205895"
 
 2 番目の推奨事項では、ゲートウェイ サブネットに使用するビットを 0 に設定し、VNet アドレス空間の残りのビットを 1 に設定して、ゲートウェイ サブネットのアドレス空間を決定できます。 バイナリに変換して 10 進数に戻さずにゲートウェイ サブネット アドレス空間をすばやく計算するには、C# または Python または PowerShell コマンド ブロックで記述されたコンソール アプリケーションを使用できます。
 
-この記事では、vNet アドレス プレフィックスの w.x.y.z/n の値とゲートウェイ サブネット プレフィックスの長さに基づいてゲートウェイ サブネット アドレス空間を計算する C#、Python、および PowerShell のコード ブロックについて説明します。
+この記事では、vNet アドレス プレフィックスの w.x.y.z/n の値とゲートウェイ サブネットプレフィックスの長さに基づいてゲートウェイ サブネット アドレス空間を計算する C#、Python、および PowerShell のコード ブロックについて説明します。
 
 ## <a name="c-code-block"></a>C# コード ブロック
 
@@ -177,6 +177,6 @@ $dx= [string]$w2 + "." + [string]$x2 + "." + [string]$y2 + "." + [string]$z2 + "
 Write-Host "Your gateway address prefix is: " $dx
 ```
     
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [PowerShell で Microsoft 365を管理する](manage-microsoft-365-with-microsoft-365-powershell.md)
