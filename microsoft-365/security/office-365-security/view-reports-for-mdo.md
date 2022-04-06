@@ -16,19 +16,19 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理者は、Defender を検索して使用して、Office 365ポータルで使用できるレポートをMicrosoft 365 Defenderできます。
+description: 管理者は、ポータルで使用できるDefender for Office 365レポートを検索して使用するMicrosoft 365 Defenderできます。
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de0dd5b7c0466a722a788ee3fe4e6c843d70f5eb
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bcc77aaac71c8f8b4c3d3635b596a56ac12a3d7d
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680976"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507493"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>[Defender for Office 365] Microsoft 365 Defenderポータル
+# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>ポータルDefender for Office 365レポートを表示Microsoft 365 Defenderする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "63680976"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプション、Office 365 プラン 1 の Microsoft Defender、Office 365 プラン 2 アドオンの Microsoft Defender など) には、さまざまなセキュリティ関連レポートが含まれる。 必要なアクセス許可[を持っている場合](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)は、これらのレポートを表示して、このポータルMicrosoft 365 Defenderできます。
+Microsoft Defender for Office 365組織 (たとえば、Microsoft 365 E5プラン 1 または Microsoft Defender for Office 365プラン 1 またはMicrosoft Defender for Office 365プラン 2 アドオン) には、さまざまなセキュリティ関連のレポートが含まれている。 必要なアクセス許可[を持っている場合](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)は、これらのレポートを表示して、このポータルMicrosoft 365 Defenderできます。
 
 ## <a name="view-and-download-reports"></a>レポートを表示してダウンロードする
 
@@ -50,11 +50,11 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 1. [レポート] Microsoft 365 Defenderの <https://security.microsoft.com>[**ReportsEmail** > ] に移動し、&**コラボレーション レポート** \> **をダウンロードします**。 [ダウンロード用のレポート] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/ReportsForDownload?viewid=custom>。
 
-![[&] ポータルの [コラボレーション レポート] ページにMicrosoft 365 Defenderメールを送信します。](../../media/email-collaboration-download-reports.png)
+:::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="ポータルの [&コラボレーション レポートの電子メール] Microsoft 365 Defenderページ" lightbox="../../media/email-collaboration-download-reports.png":::
 
 > [!NOTE]
 >
-> Defender を必要としない電子メール セキュリティ レポートについては、「Office 365ポータルの電子メール セキュリティ レポートの表示」[でMicrosoft 365 Defenderされています](view-email-security-reports.md)。
+> 電子メール セキュリティ レポートの詳細については、「Defender for Office 365ポータルの電子メール セキュリティ レポートの表示」[でMicrosoft 365 Defenderされています](view-email-security-reports.md)。
 >
 > メール フローに関連するレポートは、現在、Exchangeセンター (EAC) に表示されます。 これらのレポートの詳細については、「新しい管理センターのメール フロー [レポートExchange参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
 
@@ -78,7 +78,8 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 [電子メール **&] コラボレーション** レポート ページで、[ **メールの待機時間** ] レポートを検索し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、 を使用します <https://security.microsoft.com/mailLatencyReport>。
 
-![[メール の遅延レポート] ウィジェットが [メール &] ページに表示されます。](../../media/mail-latency-report-widget.png)
+
+:::image type="content" source="../../media/mail-latency-report-widget.png" alt-text="[メールの遅延レポート] ページの [メールの遅延&ウィジェット]" lightbox="../../media/mail-latency-report-widget.png":::
 
 [メール **の待機時間レポート] ページで** 、[メールの待機時間] レポート ページで次 **のタブを使用** できます。
 
@@ -88,47 +89,50 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 選択したタブに関係なく、グラフには次のカテゴリに分類されたメッセージが表示されます。
 
-- **メール配信の待機時間**
-- **Detonations**
+- **全体**
+- **Detonation**
 
 グラフのカテゴリにカーソルを合わせると、各カテゴリの待機時間の内訳を確認できます。
 
-![メール待機時間レポートの 50 パーセント表示。](../../media/mail-latency-report-50th-percentile-view.png)
+:::image type="content" source="../../media/mail-latency-report-50th-percentile-view.png" alt-text="メール待機時間レポートの 50 パーセント表示" lightbox="../../media/mail-latency-report-50th-percentile-view.png":::
 
 [フィルター] **をクリック** すると、グラフと詳細テーブルの両方を次の値でフィルター処理できます。
 
 - **日付 (UTC)**: **開始日と****終了日**
 - **メッセージ ビュー**: 次のいずれかの値。
   - **すべてのメッセージ**
-  - **添付ファイルまたは URL を含むメッセージ**
-  - **削除されたメッセージ**
+  - **メッセージの削除**: 次のいずれかの値を指定します。
+    - **インラインデトレーション**: 配信前に完全にテストされたメッセージが含まれます。
+    - **非同期のデトレーション**
 
 フィルターの構成が完了したら、[適用]、[キャンセル]、または [フィルターのクリア] **をクリックします**。
 
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **日付 (UTC)**
-- **パーセント:** **50**、 **90**、 **または 99**
+- **Latency**
 - **メッセージ数**
-- **全体的な待機時間**
+- **50 パーセント**
+- **90 パーセント**
+- **99 パーセント**
 
 メイン レポート ページの [エクスポート] ![アイコン。](../../media/m365-cc-sc-download-icon.png) **[[エクスポート](view-email-security-reports.md#export-report)** ] ボタンを使用できます。
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
-脅威 **保護の** 状態レポートは、Exchange Online Protection (EOP) と Microsoft Defender for [Office 365](exchange-online-protection-overview.md) によって検出およびブロックされた悪意のあるコンテンツと悪意のある電子メールに関する情報をまとめる単一のビューです。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。
+脅威 **保護の状態** レポートは、悪意のあるコンテンツに関する情報と、[Exchange Online Protection](exchange-online-protection-overview.md) (EOP) と Microsoft Defender for Office 365 によって検出およびブロックされた悪意のあるメールに関する情報をまとめる単一のビューです。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。
 
 ## <a name="top-senders-and-recipients-report"></a>上位の送信者と受信者レポート
 
-[**上位の送信者と受信者] レポートには**、EOP と Defender の保護機能の上位受信者Office 365表示されます。 詳細については、「上位の送信者 [と受信者レポート」を参照してください](view-email-security-reports.md#top-senders-and-recipients-report)。
+[**上位の送信者と受信者] レポートには**、EOP および保護機能の上位受信者Defender for Office 365表示されます。 詳細については、「上位の送信者 [と受信者レポート」を参照してください](view-email-security-reports.md#top-senders-and-recipients-report)。
 
 ## <a name="url-protection-report"></a>URL 保護レポート
 
-**URL 保護レポートには、** 検出された脅威の概要と傾向ビュー、およびリンクの一部として URL クリックで行セーフ [されます](safe-links.md)。 このレポートには、[リンク] ポリシーが適用されているユーザーセーフのクリック データは表示されません。[ユーザーのクリックを追跡しない **] オプションが** 選択されています。
+**URL 保護レポートには、** 検出された脅威の概要と傾向ビュー、およびリンクの一部として URL クリックで行セーフ [されます](safe-links.md)。 このレポートには、[ユーザークリックの追跡] オプションが選択されていないセーフリンク ポリシーが適用されたユーザーからのクリック データはありません。
 
 レポートを表示するには、レポート ポータルを開きMicrosoft 365 Defender[レポートの電子 [メール]](https://security.microsoft.com) \> &**コラボレーション** \> レポート **&移動します**。 [メール **の作成&] ページで** 、[URL 保護] **ページを** 見つけて、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/URLProtectionActionReport>。
 
-![[メール] ページの [コラボレーション レポート] ページ& URL 保護レポート ウィジェット。](../../media/url-protection-report-widget.png)
+:::image type="content" source="../../media/url-protection-report-widget.png" alt-text="[コラボレーション レポートの電子メール] ページ& URL 保護レポート ウィジェット" lightbox="../../media/url-protection-report-widget.png":::
 
 [URL 保護レポート **] ページで** 使用可能なビューについては、次のセクションで説明します。
 
@@ -137,7 +141,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 ### <a name="view-data-by-url-click-protection-action"></a>URL クリック保護アクションによるデータの表示
 
-![URL 保護レポートの [URL] クリック保護アクション ビュー。](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+:::image type="content" source="../../media/url-threat-protection-report-url-click-protection-action-view.png" alt-text="URL 保護レポートのビュー (URL クリック保護アクション)" lightbox="../../media/url-threat-protection-report-url-click-protection-action-view.png":::
 
 [ **URL によるデータの表示] クリック保護アクション** ビューには、組織内のユーザーによる URL クリックの数と、クリックの結果が表示されます。
 
@@ -180,7 +184,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 ### <a name="view-data-by-url-click-by-application"></a>アプリケーション別の URL クリックによるデータの表示
 
-![URL 保護レポートのアプリケーション ビューで URL をクリックします。](../../media/url-threat-protection-report-url-click-by-application-view.png)
+:::image type="content" source="../../media/url-threat-protection-report-url-click-by-application-view.png" alt-text="URL 保護レポートの URL クリック保護アクション ビュー" lightbox="../../media/url-threat-protection-report-url-click-by-application-view.png":::
 
 [**URL によるデータの表示] アプリケーション** によるクリックビューには、リンクをサポートするアプリによる URL クリック数セーフ表示されます。
 
@@ -213,8 +217,8 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 |レポート|トピック|
 |---|---|
-|**エクスプローラー** (Microsoft Defender for Office 365 プラン 2) またはリアルタイム **検出 (Microsoft** Defender for Office 365 プラン 1)|[脅威エクスプローラー (およびリアルタイムの検出)](threat-explorer.md)|
-|Defender を必要としない電子メール セキュリティ Office 365|[ポータルで電子メール セキュリティ レポートをMicrosoft 365 Defenderする](view-email-security-reports.md)|
+|**エクスプローラー** (Microsoft Defender for Office 365プラン 2) またはリアルタイム **検出 (Microsoft Defender for Office 365** プラン 1)|[脅威エクスプローラー (およびリアルタイムの検出)](threat-explorer.md)|
+|電子メールを必要としない電子メール セキュリティ Defender for Office 365|[ポータルで電子メール セキュリティ レポートをMicrosoft 365 Defenderする](view-email-security-reports.md)|
 |管理センター (EAC) Exchangeフロー レポート|[新しい管理センターのメール フロー Exchangeレポート](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 
 PowerShell レポートコマンドレット:
@@ -229,13 +233,13 @@ PowerShell レポートコマンドレット:
 |メール フローの状態|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |スプーフィングされたユーザー|[Get-スプーフィングMailReport](/powershell/module/exchange/get-spoofmailreport)|
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>レポートの Defender を表示するために必要なアクセス許可Office 365ですか?
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>レポートを表示するために必要なアクセス許可Defender for Office 365ですか?
 
 この記事で説明するレポートを表示して使用するには、ポータルで次のいずれかの役割グループのメンバーであるMicrosoft 365 Defenderがあります。
 
 - **組織の管理**
 - **セキュリティ管理者**
-- **セキュリティ閲覧者**
+- **セキュリティ リーダー**
 - **グローバル リーダー**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
@@ -244,7 +248,7 @@ PowerShell レポートコマンドレット:
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 
-レポートのデータが Defender にOffice 365場合は、ポリシーが正しく設定されていることを確認してください。 Defender が保護をセーフするために、セーフ Office 365[リンク](set-up-safe-links-policies.md) ポリシー[](set-up-safe-attachments-policies.md)と添付セーフ添付ファイル ポリシーが定義されている必要があります。 「スパム [対策とマルウェア対策の保護」も参照してください](anti-spam-and-anti-malware-protection.md)。
+レポートにデータがDefender for Office 365場合は、ポリシーが正しく設定されていることを確認してください。 組織では、セーフ[保護](set-up-safe-links-policies.md)を適用セーフリンク ポリシーと添付[](set-up-safe-attachments-policies.md)ファイル ポリシー Defender for Office 365必要があります。 「スパム [対策とマルウェア対策の保護」も参照してください](anti-spam-and-anti-malware-protection.md)。
 
 ## <a name="related-topics"></a>関連項目
 

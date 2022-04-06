@@ -15,12 +15,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで SMTP Auth インサイトとレポートを使用して、認証された SMTP (SMTP AUTH) を使用して電子メール メッセージを送信する組織内の電子メール送信者を監視する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e21e9fae80880b479070b1920379b925bf7074c7
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8c2152820e7f3d5dbf04534e5f0b0fec344ecc7b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681130"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474995"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>SMTP Auth クライアントの分析情報とレポート (セキュリティ & コンプライアンス センター)
 
@@ -35,11 +35,11 @@ ms.locfileid: "63681130"
 
 ウィジェットは、過去 7 日間に SMTP Auth プロトコルを使用したユーザーまたはサービス アカウントの数を示します。
 
-![セキュリティ センターコンプライアンス センターのメール フロー ダッシュボードの SMTP &ウィジェット。](../../media/mfi-smtp-auth-clients-report-widget.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-widget.png" alt-text="セキュリティ コンプライアンス センターのメール フロー ダッシュボードにある SMTP & ウィジェット" lightbox="../../media/mfi-smtp-auth-clients-report-widget.png":::
 
 ウィジェット上のメッセージ数をクリックすると、 **SMTP Auth クライアント** のフライアウトが表示されます。 このフライアウトは、先週の TLS 使用状況とボリュームの集計ビューを提供します。
 
-![メール フロー ダッシュボードで SMTP Auth クライアント ウィジェットをクリックした後の詳細フライアウト。](../../media/mfi-smtp-auth-clients-report-details.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-details.png" alt-text="メール フロー ダッシュボードで SMTP Auth クライアント ウィジェットをクリックした後の詳細フライアウト" lightbox="../../media/mfi-smtp-auth-clients-report-details.png":::
 
 [SMTP **Auth クライアント** ] レポート リンクをクリックすると、次のセクションの説明に従って SMTP Auth クライアント レポートに移動できます。
 
@@ -53,11 +53,11 @@ ms.locfileid: "63681130"
 
 - データ **の表示方法:** 送信ボリューム: 既定では、すべてのドメインから送信された SMTP Auth クライアント メッセージの数がグラフに表示されます ([データの表示 **:** すべての送信者ドメインが既定で選択されています)。 [データの表示] をクリックし、ドロップダウン リストから送信者ドメインを選択すると、結果を特定の送信者ドメインにフィルター処理できます。 特定のデータ ポイント (日) をホバーすると、メッセージの数が表示されます。
 
-  ![コンプライアンス センターの [セキュリティ] ページの [SMTP Auth クライアント] レポート&送信します。](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
+  :::image type="content" source="../../media/mfi-smtp-auth-clients-report-sending-volume-view.png" alt-text="コンプライアンス センターの [セキュリティ] ページの [SMTP Auth クライアントの送信ボリューム &レポート" lightbox="../../media/mfi-smtp-auth-clients-report-sending-volume-view.png":::
 
 - **[データの表示方法: TLS 使用法**]: 選択した期間中のすべての SMTP Auth クライアント メッセージに対する TLS 使用率の割合がグラフに表示されます。 このグラフを使用すると、以前のバージョンの TLS を使用しているユーザーとシステム アカウントを特定してアクションを実行できます。
 
-  ![[セキュリティ] コンプライアンス センターの SMTP 認証クライアント レポートの TLS &表示されます。](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
+  :::image type="content" source="../../media/mfi-smtp-auth-clients-report-tls-usage-view.png" alt-text="セキュリティ コンプライアンス センターの SMTP Auth クライアント レポートの TLS &ビュー" lightbox="../../media/mfi-smtp-auth-clients-report-tls-usage-view.png":::
 
 レポート ビューで **[フィルター]** をクリックすると、開始日と終了日で日付 **範囲****を指定できます**。
 
@@ -88,7 +88,7 @@ ms.locfileid: "63681130"
 
 行を選択すると、同様の詳細がフライアウトに表示されます。
 
-![SMTP Auth クライアント レポートの TLS 使用状況ビューの詳細テーブルからの詳細フライアウト。](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png" alt-text="SMTP Auth クライアント レポートの TLS 使用状況ビューの詳細テーブルからの詳細フライアウト" lightbox="../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png":::
 
 [ **レポートの要求]** をクリックして、より詳細なバージョンのレポートを電子メール メッセージで受信します。 レポートを受信する日付範囲と受信者を指定できます。
 

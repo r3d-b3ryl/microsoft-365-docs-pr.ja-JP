@@ -18,18 +18,18 @@ ms.custom:
 description: 管理者は、Microsoft 365 E5 または Microsoft Defender for Office 365 プラン 2 組織の攻撃シミュレーションとトレーニングに関する展開に関する考慮事項とよく寄せられる質問について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 380241d44f667a845c47f85062d877192e1a7802
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 57b4d684e52fd51a2ece279cc7322389a953a17c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907995"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467799"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
 
 Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織は、実際の武器化されたフィッシング ペイロードを利用したフィッシング シミュレーションの作成と管理を可能にすることで、ソーシャル エンジニアリング リスクを測定および管理できます。 テラノバ のセキュリティと提携して提供されるハイパーターゲットトレーニングは、知識の向上と従業員の行動の変更に役立ちます。
 
-攻撃シミュレーション トレーニングの開始方法の詳細については、「攻撃シミュレーション トレーニングの使用を開始する [」を参照してください](attack-simulation-training-get-started.md)。
+攻撃シミュレーション トレーニングの概要については、「攻撃シミュレーション トレーニングの使用を開始 [する」を参照してください](attack-simulation-training-get-started.md)。
 
 シミュレーションの作成とスケジューリングの全体のエクスペリエンスは、自由に流れ、摩擦のない状態で設計されているが、企業規模でシミュレーションを実行するには計画が必要な場合が多い。 この記事は、お客様が独自の環境でシミュレーションを実行する場合に見る特定の課題に対処するのに役立ちます。
 
@@ -39,17 +39,17 @@ Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織は、
 
 URL レピュテーション サービスは、攻撃シミュレーション トレーニングで使用される 1 つ以上の URL を安全でないと識別する場合があります。 Google セーフ Chrome での閲覧は、詐欺サイトの先行メッセージを使用して、シミュレートされたフィッシング URL の一部 **をブロック** します。 多くの URL レピュテーション ベンダーと一緒にシミュレーション URL を常に許可しますが、必ずしも完全にカバーできるとは限らない。
 
-![Google Chrome のサイト先行警告を欺く。](../../media/attack-sim-training-faq-chrome-deceptive-site-message.png)
+:::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Google Chrome の Deceptive サイト先行警告" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
 この問題は、この問題に影響Microsoft Edge。
 
-計画フェーズの一環として、フィッシング キャンペーンで URL を使用する前に、サポートされている Web ブラウザーの URL の可用性を確認してください。 Google セーフ ブラウズによって URL がブロックされている場合は、Google からこのガイダンスに従って URL へのアクセスを許可します。 [](https://support.google.com/chrome/a/answer/7532419)
+計画フェーズの一環として、フィッシング キャンペーンで URL を使用する前に、サポートされている Web ブラウザーの URL の可用性を確認してください。 Google セーフブラウズによって URL がブロックされている場合は、Google からこのガイダンス[](https://support.google.com/chrome/a/answer/7532419)に従って URL へのアクセスを許可します。
 
 現在攻撃 [シミュレーション トレーニングで](attack-simulation-training-get-started.md) 使用されている URL の一覧については、「攻撃シミュレーション トレーニングの使用を開始する」を参照してください。
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>ネットワーク プロキシ ソリューションとフィルター ドライバーによってブロックされるフィッシング シミュレーションと管理 URL
 
-フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 以下に例を示します。
+フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 次に例を示します。
 
 - ファイアウォール
 - Web アプリケーション ファイアウォール (WAF) ソリューション
@@ -57,7 +57,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 このレイヤーでブロックされているお客様は少ない一方で、発生します。 問題が発生した場合は、必要に応じて、セキュリティ デバイスまたはフィルターによるスキャンをバイパスする次の URL を構成してください。
 
-- 「攻撃シミュレーション トレーニングの使用を開始する」の説明に従って、シミュレート [されたフィッシング URL を使用します](attack-simulation-training-get-started.md)。
+- 「攻撃シミュレーショントレーニングの使用を開始する」の説明に従って、シミュレート [されたフィッシング URL](attack-simulation-training-get-started.md)。
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
@@ -70,7 +70,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 - ゲスト ユーザー。
 - 現在アクティブでなくなったユーザー (Azure Active Directory) Azure AD。
 
-有効なメールボックスを持つゲスト以外のユーザーだけがシミュレーションに含まれます。 配布グループまたはメールが有効なセキュリティ グループを使用してユーザーを対象とする場合は[、Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)の[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember)コマンドレットを使用して配布グループメンバーを表示および検証できます。
+有効なメールボックスを持つゲスト以外のユーザーだけがシミュレーションに含まれます。 配布グループまたはメールが有効なセキュリティ グループを使用してユーザーを対象とする場合は、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) の [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) コマンドレットを使用して配布グループメンバーを表示および検証できます。
 
 ## <a name="issues-with-attack-simulation-training-reporting"></a>攻撃シミュレーショントレーニングレポートの問題
 
@@ -83,7 +83,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 - レポート データは、すべてのレポートで使用できるとは言えな。 レポートは空に表示されます。
 - データを使用できないので、トレーニングの割り当てがブロックされます。
 
-監査ログ検索を有効にする方法については、「監査ログ検索 [を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
+監査ログ検索を有効にする方法については、「 [監査ログ検索を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 > [!NOTE]
 > 空のアクティビティの詳細は、E5 ライセンスがユーザーに割り当てられていない場合にも発生します。 少なくとも 1 つの E5 ライセンスがアクティブ ユーザーに割り当てられているのを確認して、レポート イベントがキャプチャおよび記録されます。
@@ -96,11 +96,11 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 シミュレーションがスケジュールされた状態 **の間** 、シミュレーション レポートはほとんどの場合空になります。 この段階では、シミュレーション エンジンはターゲット ユーザーの電子メール アドレスを解決し、配布グループを展開し、リストからゲスト ユーザーを削除します。
 
-![スケジュールされた状態のシミュレーションを示すシミュレーションの詳細。](../../media/attack-sim-training-faq-scheduled-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="スケジュールされた状態のシミュレーションを示すシミュレーションの詳細" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
 
 シミュレーションが進行中のステージ **に入** った後、レポートにトリクルを開始する情報が表示されます。
 
-![進行中の状態のシミュレーションを示すシミュレーションの詳細。](../../media/attack-sim-training-faq-in-progress-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="進行中の状態のシミュレーションを示すシミュレーションの詳細" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
 
 個々のシミュレーション レポートが進行中の状態に移行した後に更新するには、最大 30 分 **かかる場合** があります。 シミュレーションが完了状態に達するまで、レポート データは引き続 **き作成** されます。 レポートの更新は、次の間隔で行われます。
 
@@ -116,7 +116,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 ### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>ユーザーがフィッシングとして報告したメッセージがシミュレーション レポートに表示されない
 
-攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 以下に例を示します。
+攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 次に例を示します。
 
 - メッセージ内のリンクをクリックしたユーザー。
 - 資格情報を渡したユーザー。
@@ -127,7 +127,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
 - phish@office365.microsoft.com
-- junk@office365.microsoft.com \_
+- not\_ junk@office365.microsoft.com
 
 ## <a name="other-frequently-asked-questions"></a>その他のよく寄せられる質問
 
@@ -140,7 +140,7 @@ A: ターゲット ユーザーに使用できるオプションは複数あり�
 - CSV ファイル (1 行に 1 つのメール アドレス) からユーザーを選択します。
 - Azure ADベースのターゲット設定。
 
-対象となるユーザーがグループによって識別されるキャンペーンは、Azure AD管理しやすいという結果が出ていました。
+対象となるユーザーがグループによって識別されるキャンペーンは、通常、Azure AD簡単に管理できると分かっています。
 
 ### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>Q: CSV からインポートする場合やユーザーを追加する場合、ユーザーのターゲット設定に制限はありますか?
 
@@ -158,7 +158,7 @@ A: 現在、40 以上のローカライズされたペイロードは、中国�
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>Q: 管理ポータルとトレーニング エクスペリエンスのために他の言語に切り替える方法を教えてください。
 
-A: ユーザー アカウントMicrosoft 365またはOffice 365、言語の構成はユーザー アカウントごとに固有で集中管理されています。 言語の設定を変更する方法については、「ビジネス向けページで表示言語とタイム ゾーンを変更する[Microsoft 365を参照してください](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
+A: ユーザー Microsoft 365またはOffice 365、言語の構成はユーザー アカウントごとに固有で集中管理されています。 言語設定を変更する方法については、「ビジネス向けページで表示言語とタイム ゾーンを変更する[Microsoft 365参照してください](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
 
 すべてのサービス間で同期するには、構成の変更に最大で 30 分かかる場合があります。
 
@@ -166,11 +166,11 @@ A: ユーザー アカウントMicrosoft 365またはOffice 365、言語の構�
 
 A: はい、可能です。 ウィザードの最後 **の [シミュレーションの** 確認] ページで、新しいシミュレーションを作成するには、テストを送信 **するオプションがあります**。 このオプションは、現在ログインしているユーザーにフィッシング シミュレーション メッセージのサンプルを送信します。 受信トレイでフィッシング メッセージを検証した後、シミュレーションを送信できます。
 
-![[シミュレーションの確認] ページの [テスト] ボタンを送信します。](../../media/attack-sim-training-simulations-review-simulation.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="[シミュレーションの確認] ページの [テストの送信] ボタン" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>Q: 同じシミュレーション キャンペーンの一環として、別のテナントに属するユーザーをターゲットにできますか?
 
-回答: いいえ。 現在、テナント間シミュレーションはサポートされていません。 すべての対象ユーザーが同じテナントに入っていることを確認します。 テナント間のユーザーまたはゲスト ユーザーは、シミュレーション キャンペーンから除外されます。
+A: いいえ。 現在、テナント間シミュレーションはサポートされていません。 すべての対象ユーザーが同じテナントに入っていることを確認します。 テナント間のユーザーまたはゲスト ユーザーは、シミュレーション キャンペーンから除外されます。
 
 ### <a name="q-how-does-region-aware-delivery-work"></a>Q: 地域対応配信の動作について
 

@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 悪意のある URL をセーフするフィッシングOffice 365攻撃から組織を保護するための Defender のリンク保護について学習します。 [Teams セーフリンク] を見て、リンク メッセージのセーフを参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 736efeb805e45170ec6471b57fc35005d0a12311
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 28215843f8c8edab4125ba46b483c2d596c78532
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320327"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474555"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフ Microsoft Defender for microsoft Defender のリンクOffice 365
 
@@ -84,10 +84,6 @@ ms.locfileid: "63320327"
 
 次の表では、Microsoft 365 および Office 365 の Defender for Office 365 を含む セーフ 組織の セーフ リンクのシナリオについて説明します (例では、ライセンスの不足は決して問題ではありません)。
 
-<br>
-
-****
-
 |シナリオ|結果|
 |---|---|
 |Jean はマーケティング部門のメンバーです。 セーフ Office 365 アプリのリンク保護は セーフ リンクのグローバル設定で有効にされ、マーケティング部門のメンバーに適用される セーフ リンク ポリシーが存在します。 Jean は、PowerPointメッセージでプレゼンテーションを開き、プレゼンテーション内の URL をクリックします。|Jean は、リンクによってセーフされます。 <p> Jean はリンク ポリシーセーフ含まれており、セーフアプリのリンクOffice 365保護が有効です。 <p> Office 365 アプリの セーフ リンク保護の要件の詳細については、この記事の後半の「セーフ リンク設定 for [Office 365 apps](#safe-links-settings-for-office-365-apps)」セクションを参照してください。|
@@ -95,7 +91,6 @@ ms.locfileid: "63320327"
 |Pat の組織では、管理者は セーフ リンク ポリシーを作成したが、セーフ アプリの Office 365保護が有効になっている。 Pat は Word ドキュメントを開き、ファイル内の URL をクリックします。|Pat はリンクによってセーフされません。 <p> セーフ Office 365 アプリのリンク保護はグローバルに有効になりますが、Pat はアクティブな セーフ リンク ポリシーには含まれていないので、保護を適用できます。|
 |Lee の組織では、`https://tailspintoys.com`リンクのグローバル設定の [次の **URL** をブロックする] セーフされます。 Lee セーフを含むリンク ポリシーが既に存在します。 Lee は URL を含む電子メール メッセージを受信します `https://tailspintoys.com/aboutus/trythispage`。 Lee が URL をクリックします。|Lee の URL が自動的にブロックされる場合があります。リスト内の URL エントリと、使用するメール クライアント Lee によって異なります。 詳細については、この記事の後半の「リンク」セクションの「セーフ [URL を](#block-the-following-urls-list-for-safe-links)ブロックする」を参照してください。|
 |Jamie と Julia は両方とも、contoso.com。 一昔前に、管理者は jamie と Julia の両方にセーフリンク ポリシーを構成していました。 Jamie は、電子メールに悪意のある URL が含まれていることを知らずに、電子メールを Julia に送信します。|Julia は、内部受信者セーフメッセージに適用セーフリンク ポリシーが構成されている場合は、セーフ リンクによって保護されます。 詳細については、この記事の[「セーフのリンク](#safe-links-settings-for-email-messages)設定」セクションを参照してください。|
-|
 
 ## <a name="safe-links-settings-for-email-messages"></a>セーフメール メッセージのリンク設定
 
@@ -185,7 +180,7 @@ Microsoft Teams の セーフ リンク保護を有効にすると、保護さ�
 
 Teams 保護が有効になっている セーフ Links ポリシーにリンクを送信したユーザーが含まれていない場合、ユーザーはコンピューターまたはデバイスの元の URL を自由にクリックできます。
 
-![悪意セーフを報告Teamsページのリンク。](../../media/tp-safe-links-for-teams-malicious.png)
+:::image type="content" source="../../media/tp-safe-links-for-teams-malicious.png" alt-text="悪意セーフを報告Teamsページのリンク" lightbox="../../media/tp-safe-links-for-teams-malicious.png":::
 
 警告ページの **[戻る** ] ボタンをクリックすると、ユーザーは元のコンテキストまたは URL の場所に戻ります。 ただし、元のリンクを再度クリックすると、セーフリンクが再スキャンされますので、警告ページが再表示されます。
 
@@ -265,7 +260,7 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 リンクのグローバル設定で URL の一覧を構成セーフします。 手順については、「次の [URL をブロックする」リストを構成するを参照してください](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)。
 
-**注意**:
+**注**:
 
 - あらゆる場所でブロックされている URL の本当に汎用的なリストについては、「 [Manage the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
 - [次の URL を **ブロックする] リストの制限** 。
@@ -281,17 +276,12 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 入力できる値とその結果の例を次の表に示します。
 
-<br>
-
-****
-
 |値|結果|
 |---|---|
 |`contoso.com` <p> または <p> `*contoso.com*`|ドメイン、サブドメイン、およびパスをブロックします。 たとえば、、`https://www.contoso.com``https://sub.contoso.com`、および`https://contoso.com/abc`ブロックされます。|
 |`https://contoso.com/a`|ブロック `https://contoso.com/a` ですが、追加のサブパスはブロックしない `https://contoso.com/a/b`。|
 |`https://contoso.com/a*`|ブロック`https://contoso.com/a`や追加のサブパス (.`https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|サブドメイン (この例では`toys` ) をブロックしますが、他のドメイン URL (など) へのクリックを許可 `https://contoso.com` します `https://home.contoso.com`。|
-|
 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>リンク ポリシーの 「次の URL を書き換セーフしない」
 
@@ -302,7 +292,7 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 新規または既存の セーフ リンク ポリシーのリストにエントリを追加するには、「[セーフ リンク](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) ポリシーの作成」または「セーフ [リンク ポリシーの変更」を参照](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)してください。
 
-**注意**:
+**注**:
 
 - 次のクライアントは、[リンク] ポリシーの [次の **URL** を書き換セーフしません。 ポリシーに含まれるユーザーは、次のクライアントで [リンク] スキャンの結果に基セーフ URL へのアクセスをブロックできます。
   - Microsoft Teams
@@ -323,17 +313,12 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 入力できる値とその結果の例を次の表に示します。
 
-<br>
-
-****
-
 |値|結果|
 |---|---|
 |`contoso.com`|サブドメインまたは `https://contoso.com` パスへのアクセスを許可しますが、アクセスを許可しない。|
 |`*.contoso.com/*`|ドメイン、サブドメイン、およびパス (`https://www.contoso.com``https://www.contoso.com`たとえば、) へのアクセスを`https://maps.contoso.com`許可します`https://www.contoso.com/a`。 <p> このエントリは、潜在的 `*contoso.com*`に詐欺的なサイトを許可しないので、本来よりも優れた方法です `https://www.falsecontoso.com` 。 `https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|サブパスへのアクセス `https://contoso.com/a`を許可しますが、サブパスは許可しない `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|次のようなアクセスと `https://contoso.com/a` サブパスを許可します `https://contoso.com/a/b`|
-|
 
 ## <a name="warning-pages-from-safe-links"></a>[リンク] からのセーフページ
 
@@ -345,33 +330,33 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 クリックされた URL は[リンク] でセーフされます。 リンクを再度試す前に、しばらく待つ必要がある場合があります。
 
-!["リンクがスキャン中" 通知](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+:::image type="content" source="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png" alt-text="リンクがスキャンされているという通知" lightbox="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png":::
 
 元の通知ページは次のように表示されます。
 
-![元の "リンクがスキャン中" 通知](../../media/04368763-763f-43d6-94a4-a48291d36893.png)
+:::image type="content" source="../../media/04368763-763f-43d6-94a4-a48291d36893.png" alt-text="リンクがスキャン中の通知" lightbox="../../media/04368763-763f-43d6-94a4-a48291d36893.png":::
 
 ### <a name="suspicious-message-warning"></a>疑わしいメッセージの警告
 
 クリックされた URL は、他の疑わしいメッセージに似た電子メール メッセージに含まれます。 サイトに進む前に、電子メール メッセージをもう一度確認することをお勧めします。
 
-!["疑わしいメッセージからリンクがクリックされました" という警告](../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+:::image type="content" source="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png" alt-text="疑わしいメッセージ警告からリンクがクリックされた" lightbox="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png":::
 
 ### <a name="phishing-attempt-warning"></a>フィッシングの試行の警告
 
 クリックされた URL は、フィッシング攻撃として識別された電子メール メッセージに含めでした。 その結果、電子メール メッセージ内のすべての URL がブロックされます。 サイトに進むのはやめすることをお勧めします。
 
-!["フィッシング メッセージからリンクがクリックされました" という警告](../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
+:::image type="content" source="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png" alt-text="フィッシング メッセージからリンクがクリックされたという警告" lightbox="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png":::
 
 ### <a name="malicious-website-warning"></a>悪意のある Web サイトの警告
 
 クリックされた URL は、悪意のあるサイトをポイントします。 サイトに進むのはやめすることをお勧めします。
 
-![「この Web サイトは悪意のある Web サイトに分類されます」という警告](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+:::image type="content" source="../../media/058883c8-23f0-4672-9c1c-66b084796177.png" alt-text="Web サイトが悪意のある Web サイトとして分類されているという警告" lightbox="../../media/058883c8-23f0-4672-9c1c-66b084796177.png":::
 
 元の警告ページは次のように表示されます。
 
-![元の "この Web サイトは悪意のある Web サイトとして分類されています" という警告](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+:::image type="content" source="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png" alt-text="Web サイトが悪意のある Web サイトとして分類されているという元の警告" lightbox="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png":::
 
 ### <a name="blocked-url-warning"></a>ブロックされた URL の警告
 
@@ -379,18 +364,18 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 管理者が特定の URL を手動でブロックする理由は複数あります。 サイトをブロックしない場合は、管理者に問い合わせください。
 
-!["この Web サイトは管理者によってブロックされました" という警告](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+:::image type="content" source="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png" alt-text="Web サイトが管理者によってブロックされたという警告" lightbox="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png":::
 
 元の警告ページは次のように表示されます。
 
-![元の "この Web サイトは、組織の URL ポリシーごとにブロックされています" という警告](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+:::image type="content" source="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png" alt-text="組織の URL ポリシーごとに Web サイトがブロックされたという元の警告" lightbox="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png":::
 
 ### <a name="error-warning"></a>エラー警告
 
 何らかのエラーが発生し、URL を開くことができません。
 
-![「アクセスしようとしているページを読み込め」という警告](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+:::image type="content" source="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png" alt-text="アクセスしようとしているページが読み込めなことを示す警告" lightbox="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png":::
 
 元の警告ページは次のように表示されます。
 
-![元の "この Web ページを読み込めない" という警告](../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
+:::image type="content" source="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png" alt-text="Web ページを読み込めなかせたという警告" lightbox="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png":::

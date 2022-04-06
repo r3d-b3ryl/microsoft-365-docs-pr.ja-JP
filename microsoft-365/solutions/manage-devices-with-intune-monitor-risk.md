@@ -1,5 +1,5 @@
 ---
-title: 手順 6. デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
+title: 手順 6.デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -20,23 +20,25 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: f58611f555b022b69211e39f149effef925dde17
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
-ms.translationtype: HT
+ms.openlocfilehash: e64006873c3419b9c6d93d3b367a5753f5478738
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049133"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651413"
 ---
-# <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>手順 6. デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
+# <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>手順 6.デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
 
 組織が Microsoft Defender for Endpoint を展開した後、MicrosoftI ntune を Defender for Endpoint と統合することで、デバイスの分析情報と保護を強化できます。 モバイル デバイスの場合、これにはアクセスの条件としてデバイスのリスクを監視する機能が含まれます。 Windows デバイスの場合、これらのデバイスのセキュリティ ベースラインへの準拠を監視できます。 
+
+注: Pertahanan Microsoft untuk Titik Akhirのデプロイには、オンボード エンドポイントが含まれます。 Microsoft 365 capabilties のデバイスのオンボードの詳細については、「[デバイスの登録とオンボードデバイス](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices)」を参照してください。  
 
 ![エンドポイントとMicrosoft Intuneの統合図のディフェンダー](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
 この図について:
 - Microsoft Defender for Endpoint は、デバイスの脅威保護の洗練度を大幅に向上させます。 
 - Microsoft Intune ではアプリ保護ポリシーの設定とデバイスの管理 (構成の変更を含む) が可能ですが、Defender for Endpoint はデバイスの脅威を継続的に監視し、自動化されたアクションを実行して攻撃を修正できます。 
-- Intune を使用して、デバイスを Defender for Endpoint にオンボードできます。 これを行う場合は、これらのデバイスもエンドポイントのデータ損失防止 (Microsoft 365 Endpoint data loss prevention (Endpoint DLP)) 機能とともに動作する様に有効化します。
+- Intune を使用して、デバイスを Defender for Endpoint にオンボードできます。 これを行うと、エンドポイント データ損失防止 (DLP) など、これらのデバイスがMicrosoft 365コンプライアンス機能を使用することもできます。
 
 この記事には、次の手順が含まれています。
 - Microsoft Intune を Defender for Endpoint に接続します

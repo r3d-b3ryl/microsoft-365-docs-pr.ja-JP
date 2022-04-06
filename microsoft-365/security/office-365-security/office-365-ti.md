@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365プランの脅威調査と対応機能について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 91a366b8169c783671145b73f66b0fde93b5fffe
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 53f1077d4ef32c6dc5698aae74de51dd5a421510
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680667"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474907"
 ---
 # <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
@@ -58,7 +58,7 @@ ms.locfileid: "63680667"
 
 [エクスプローラー (およびリアルタイム](threat-explorer.md)の検出) を使用して、脅威を分析し、時間の当たって攻撃の量を確認し、脅威ファミリ、攻撃者インフラストラクチャなどによってデータを分析します。 エクスプローラー (脅威エクスプローラーとも呼ばれます) は、セキュリティ アナリストの調査ワークフローの開始場所です。
 
-![脅威エクスプローラー。](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+:::image type="content" source="../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png" alt-text="[脅威エクスプローラー] ページ" lightbox="../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png":::
 
 このレポートを表示および使用するには、Microsoft 365 Defenderの <https://security.microsoft.com>[電子メール] **&に移動** \> **します**。 または、エクスプローラー ページに直接移動 **するには、 を** 使用します <https://security.microsoft.com/threatexplorer>。
 
@@ -77,11 +77,11 @@ ms.locfileid: "63680667"
 
 フライト セキュリティ インシデントの一覧を表示するには、[インシデント] リスト (これは [調査] とも呼ばれる) を使用します。 インシデントは、疑わしい電子メール メッセージなどの脅威を追跡し、さらに調査と修復を行う場合に使用されます。
 
-![現在の脅威インシデントの一覧 (Office 365)。](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+:::image type="content" source="../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png" alt-text="現在の脅威インシデントの一覧 (Office 365" lightbox="../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png":::
 
 [インシデント] ポータルで<https://security.microsoft.com>組織の現在のインシデントのMicrosoft 365 Defenderを表示するには、[インシデント] &**に** \> **移動します**。 または、[インシデント] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/incidents>。
 
-![[セキュリティ 管理] コンプライアンス &で、[脅威管理のレビュー] を選択 \> します。](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+:::image type="content" source="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png" alt-text="セキュリティ コンプライアンス センターの [&] ページ" lightbox="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png":::
 
 ### <a name="attack-simulation-training"></a>攻撃シミュレーション トレーニング
 
@@ -97,7 +97,7 @@ ms.locfileid: "63680667"
 
 Microsoft Defender for Office 365プラン 2 の提供の一環として、セキュリティ アナリストは既知の脅威に関する詳細を確認できます。 これは、ユーザーを安全に保つために実行できる追加の予防措置/手順が含まれるかどうかを判断する場合に役立ちます。
 
-![最近の脅威に関する情報を示すセキュリティの傾向。](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png)
+:::image type="content" source="../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png" alt-text="最近の脅威に関する情報を表示する [セキュリティの傾向] ウィンドウ" lightbox="../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png":::
 
 ## <a name="how-do-we-get-these-capabilities"></a>これらの機能を取得する方法
 
@@ -115,9 +115,9 @@ Microsoft Defender for Office 365ロール ベースのアクセス制御を使�
 
 |アクティビティ|ロールと権限|
 |---|---|
-|脅威の管理&ダッシュボード (または新しいセキュリティ ダッシュボード [) を使用する](security-dashboard.md) <p> 最近または現在の脅威に関する情報を表示する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらの役割は、Azure Active Directory () または Microsoft 365 管理センター<https://portal.azure.com>で割り当てることができます<https://admin.microsoft.com>。|
-|エクスプローラー [(およびリアルタイムの検出) を使用して](threat-explorer.md) 脅威を分析する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらの役割は、Azure Active Directory () または Microsoft 365 管理センター<https://portal.azure.com>で割り当てることができます<https://admin.microsoft.com>。|
-|インシデントの表示 (調査とも呼ばれます) <p> インシデントへの電子メール メッセージの追加|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらの役割は、Azure Active Directory () または Microsoft 365 管理センター<https://portal.azure.com>で割り当てることができます<https://admin.microsoft.com>。|
+|脅威の管理&ダッシュボード (または新しいセキュリティ ダッシュボード [) を使用する](security-dashboard.md) <p> 最近または現在の脅威に関する情報を表示する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ リーダー**</li></ul> <p> これらの役割は、Azure Active Directory () または Microsoft 365 管理センター<https://portal.azure.com>で割り当てることができます<https://admin.microsoft.com>。|
+|エクスプローラー [(およびリアルタイムの検出) を使用して](threat-explorer.md) 脅威を分析する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ リーダー**</li></ul> <p> これらの役割は、Azure Active Directory () または Microsoft 365 管理センター<https://portal.azure.com>で割り当てることができます<https://admin.microsoft.com>。|
+|インシデントの表示 (調査とも呼ばれます) <p> インシデントへの電子メール メッセージの追加|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ リーダー**</li></ul> <p> これらの役割は、Azure Active Directory () または Microsoft 365 管理センター<https://portal.azure.com>で割り当てることができます<https://admin.microsoft.com>。|
 |インシデントで電子メール アクションをトリガーする <p> 疑わしいメール メッセージの検索と削除|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者** と検索 **と削除の役割**</li></ul> <p> グローバル **管理者とセキュリティ****管理者の** 役割は、管理者 () または Azure Active Directory (<https://portal.azure.com>) のどちらかMicrosoft 365 管理センター割り当てることができます<https://admin.microsoft.com>。 <p> 検索 **と削除の役割** は、Microsoft 36 Defender **ポータル () &グループ** の役割を示す電子メール で割り当てる必要があります<https://security.microsoft.com>。|
 |Microsoft Defender for Office 365プラン 2 と Microsoft Defender for Endpoint の統合 <p> Microsoft Defender for Office 365プラン 2 と SIEM サーバーを統合する|[グローバル **管理者] または** **[セキュリティ管理者**] の役割が、Azure Active Directory (<https://portal.azure.com>) または [セキュリティMicrosoft 365 管理センターのいずれか<https://admin.microsoft.com>です。 <p> --- **plus** --- <p> 追加のアプリケーションで割り当てられた適切な役割 (Microsoft Defender セキュリティ センター [SIEM サーバーなど](/windows/security/threat-protection/microsoft-defender-atp/user-roles))。|
 

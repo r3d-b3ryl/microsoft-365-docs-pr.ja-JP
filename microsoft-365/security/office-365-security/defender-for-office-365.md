@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f78194541db8221aad1243966ddee6b6dc071d7d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b8041962ca1a696146f9a5828c66b1a6800c4b01
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317053"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683737"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -77,12 +77,9 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 次の表は、各プランに含まれる機能をまとめたものです。
 
-****
-
 |Microsoft Defender for Office 365 プラン 1|Defender for Office 365 プラン 2|
 |---|---|
 |構成、保護、および検出機能: <ul><li>[添付ファイル保護](safe-attachments.md)</li><li>[リンク保護](safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 のフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイム検出](threat-explorer.md)</li></ul>|Defender for Office 365 プラン 1 の機能 <p> --- プラスのもの --- <p> 自動化、調査、修復、教育の機能: <ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレーション トレーニング](attack-simulation-training.md)</li><li>[Microsoft 365 Defender の高度な捜索により、脅威を積極的に捜索する](../defender/advanced-hunting-overview.md)</li><li>[Microsoft 365 Defender でインシデントを調査する](../defender/investigate-incidents.md)</li><li>[Microsoft 365 Defender でアラートを調査する](../defender/investigate-alerts.md)</li></ul>|
-
 
 - Microsoft Defender for Office 365 プラン 2 は、Office 365 E5、Office 365 A5、Microsoft 365 E5 に含まれています。
 
@@ -144,10 +141,6 @@ Microsoft Defender for Office 365 プラン 2 には、組織のセキュリテ�
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Microsoft Defender for Office 365 の機能を使用するために必要な権限
 
 Microsoft Defender for Office 365 の機能にアクセスするには、適切な役割が割り当てられている必要があります。次のテーブルに例がいくつか示されています。
-
-<br>
-
-****
 
 |役割または役割グループ|追加情報|
 |---|---|

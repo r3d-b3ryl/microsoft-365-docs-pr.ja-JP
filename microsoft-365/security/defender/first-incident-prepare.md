@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c31a6e43e66b6e1ffeace75ac2d8419cc764174f
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 92b7efdad61a4738310d5fb469400033f78363a8
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499135"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570153"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>最初のインシデントのセキュリティ態勢を準備する
 
@@ -40,20 +40,20 @@ ms.locfileid: "64499135"
 
 Microsoft 365 Defender、インシデント防止のいくつかの側面に対処するのに役立ちます。 
 
-- ゼロトラスト フレームワーク [の](/security/zero-trust/) 実装
+- カスタム フレームワーク[ゼロ トラスト](/security/zero-trust/)実装する
 - Microsoft Secure Score でスコアを割り当て、セキュリティの態勢 [を決定する](microsoft-secure-score.md)
 - 脅威と脆弱性管理の脆弱性評価による [脅威の防止](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - 最新のセキュリティ脅威を理解し、脅威分析を使用してセキュリティ脅威 [に備える](threat-analytics.md)
 
-## <a name="step-1-implement-zero-trust"></a>手順 1. ゼロ信頼の実装
+## <a name="step-1-implement-zero-trust"></a>手順 1. 実装ゼロ トラスト
 
-[ゼロトラスト](/security/zero-trust/) は、モバイルワークフォース、ユーザー、デバイス、アプリケーション、データなど、モダンな環境の複雑な性質を考慮した統合セキュリティ哲学とエンドツーエンド戦略です。 すべての検出を一貫した方法で管理するための単一のウィンドウを提供することで、Microsoft 365 Defender を使用すると、セキュリティ運用チームがゼロトラストの指針を[](/security/zero-trust/#guiding-principles-of-zero-trust)実装しやすくなります。 
+[ゼロ トラスト](/security/zero-trust/)は、モバイルワークフォース、ユーザー、デバイス、アプリケーション、データなど、モダン環境の複雑な性質を考慮した統合セキュリティ哲学とエンドツーエンド戦略です。 すべての検出を一貫した方法で管理するための単一のウィンドウを提供することで、Microsoft 365 Defender はセキュリティ運用チームが ゼロ トラスト のガイド原則を実装しやすくなります。[](/security/zero-trust/#guiding-principles-of-zero-trust) 
 
-Microsoft 365 Defender のコンポーネントは、デバイス コンプライアンス ポリシーの情報ソースとして Microsoft Defender for Endpoint または他のモバイル セキュリティ ベンダーのデータを統合し、デバイスベースの条件付きアクセス ポリシーを実装することで、ゼロトラストの条件付きアクセス ポリシーを確立するために実装されているルールの違反を表示できます。 
+コンポーネントはMicrosoft 365 Defenderデータを統合することで、サーバーの条件付きアクセス ポリシーを確立するために実装されているゼロ トラスト違反を表示Microsoft Defender for Endpoint デバイス コンプライアンス ポリシーおよびデバイス ベースの条件付きアクセス ポリシーの実装の情報ソースとして、または他のモバイル セキュリティ ベンダー。 
 
-デバイスリスクは、そのデバイスのユーザーがアクセスできるリソースに直接影響します。 特定の条件に基づくリソースへのアクセス拒否は、ゼロ信頼の主なテーマであり、Microsoft 365 Defenderレベルの条件を決定するために必要な情報を提供します。 たとえば、Microsoft 365 Defender[脅威と脆弱性の管理] ページを使用してデバイスのソフトウェア バージョン レベルを提供し、条件付きアクセス ポリシーでは、古いバージョンまたは脆弱なバージョンのデバイスを制限できます。
+デバイスリスクは、そのデバイスのユーザーがアクセスできるリソースに直接影響します。 特定の条件に基づくリソースへのアクセス拒否は、ゼロ トラスト および Microsoft 365 Defender の主なテーマであり、信頼レベルの条件を決定するために必要な情報を提供します。 たとえば、Microsoft 365 Defender[脅威と脆弱性の管理] ページを使用してデバイスのソフトウェア バージョン レベルを提供し、条件付きアクセス ポリシーでは、古いバージョンまたは脆弱なバージョンのデバイスを制限できます。
 
-自動化は、ゼロトラスト環境を実装して維持する上で重要な部分であり、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数も減らします。 Microsoft 365 Defender のコンポーネントは、修復[アクション (Microsoft 365 Defender](m365d-autoir.md) ポータルのインシデントの調査と呼ばれる)、通知アクション、[ServiceNow](https://microsoft.service-now.com/sp/) などのサポート チケットの作成など、自動化できます。
+自動化は、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数を減らしながら、ゼロ トラスト 環境を実装および保守する上で重要な部分です。 Microsoft 365 Defender のコンポーネントは、修復[アクション (Microsoft 365 Defender](m365d-autoir.md) ポータルのインシデントの調査と呼ばれる)、通知アクション、[ServiceNow](https://microsoft.service-now.com/sp/) などのサポート チケットの作成など、自動化できます。
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2. 組織のセキュリティ体制を決定する
 
@@ -85,9 +85,7 @@ Microsoft 365 Defender のコンポーネントは、デバイス コンプラ�
 
 スケジュール内で、ポータルの [[脅威](threat-analytics.md)分析] セクションを定期的に確認Microsoft 365 Defenderします。 詳細については[、セキュリティ操作の例Microsoft 365 Defender](incidents-overview.md#example-security-operations-for-microsoft-365-defender)を参照してください。
 
-## <a name="next-step"></a>次のステップ
-
-[![手順 1: インシデントをトリアージして分析する方法について学習します。](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
+## <a name="next-step"></a>次の手順
 
 インシデントをトリアー [ジして分析する方法について学習します](first-incident-analyze.md)。
 

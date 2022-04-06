@@ -18,22 +18,22 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 5810513cd3aa4fccd8ce0100f22c708c53527c42
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: HT
+ms.openlocfilehash: 177c21b46357ca890994751b9f4d7597a57c6b64
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321641"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651281"
 ---
-# <a name="step-2-enroll-devices-into-management-with-intune"></a>手順 2。 Intune を使用してデバイスを管理に登録する
+# <a name="step-2-enroll-devices-to-intune"></a>手順 2。 デバイスをIntuneに登録する
 
-エンドポイントを保護する方法はいくつかあります。この用語は、デバイス、アプリ、ユーザー ID などの結合されたエンティティを指すためによく使用されます。 セキュリティ ポリシーは、アプリだけでなくデバイス自体にも一貫して確実に適用する必要があります。 デバイスを管理に登録し、Azure Active Directory などのクラウド ID プロバイダーに登録することは素晴らしいスタートです。
+エンドポイントを保護する方法はいくつかあります。この用語は、デバイス、アプリ、ユーザー ID などの結合されたエンティティを指すためによく使用されます。 セキュリティ ポリシーは、アプリだけでなくデバイス自体にも一貫して確実に適用する必要があります。 デバイスをIntuneに登録し、Azure Active Directoryなどのクラウド ID プロバイダーに登録することは、すばらしいスタートです。
 
 デバイスが個人所有の BYOD デバイスでも、企業所有の完全に管理されたデバイスでも、組織のリソースにアクセスするエンドポイントを可視化し、正常で準拠したデバイスのみを許可するようにすることをお勧めします。 これには、エンドポイントで実行されるモバイル アプリとデスクトップ アプリの正常性と信頼性が含まれます。 これらのアプリが正常で準拠していること、および悪意のある意図や偶発的な手段によって企業データがコンシューマー アプリやサービスに漏洩するのを防ぐ必要があります。
 
 デバイス登録プロセスは、ユーザー、デバイス、および Microsoft Intune サービス間の関係を確立します。 Microsoft Intune をスタンドアロン サービスとして使用すると、単一の Web ベースの管理コンソールを使用して、Windows PC、macOS、および最も一般的なモバイル デバイス プラットフォームを管理できます。
 
-この記事では、Intune を使用してデバイスを管理に登録する方法を推奨しています。 これらのメソッドと各メソッドの展開方法の詳細については、「[展開ガイダンス: Microsoft Intune にデバイスを登録する](/mem/intune/fundamentals/deployment-guide-enrollment)」を参照してください。
+この記事では、デバイスをIntuneに登録する方法をお勧めします。 これらのメソッドと各メソッドの展開方法の詳細については、「[展開ガイダンス: Microsoft Intune にデバイスを登録する](/mem/intune/fundamentals/deployment-guide-enrollment)」を参照してください。
 
 ![デバイスを管理するための手順](../media/devices/intune-mdm-steps-1.png#lightbox)
 

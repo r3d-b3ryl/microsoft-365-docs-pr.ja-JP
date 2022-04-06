@@ -1,6 +1,6 @@
 ---
 title: Web コンテンツ フィルタリング
-description: Microsoft Defender for Endpoint の Web コンテンツ フィルターを使用して、コンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制します。
+description: Web コンテンツ フィルターを使用して、Microsoft Defender for Endpointカテゴリに基づいて Web サイトへのアクセスを追跡および調整します。
 keywords: Web 保護、Web 脅威保護、Web 閲覧、監視、レポート、カード、ドメイン リスト、セキュリティ、フィッシング、マルウェア、悪用、Web サイト、ネットワーク保護、エッジ、Internet Explorer、Chrome、Firefox、Web ブラウザー
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 14d45f4ac22a9707b380d817cb89da1bbee562e2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 24cdf18ad510902a533834da2f3595acaa9b33d7
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326511"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595260"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -34,7 +34,7 @@ ms.locfileid: "63326511"
 > [!TIP]
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web コンテンツ フィルターは、Microsoft [Defender](web-protection-overview.md) for Endpoint の Web 保護機能の一部です。 これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。
+Web コンテンツ フィルターは、Web コンテンツの[保護](web-protection-overview.md)機能の一部Microsoft Defender for Endpoint。 これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。
 
 デバイス グループ全体のポリシーを構成して、特定のカテゴリをブロックします。 カテゴリをブロックすると、指定したデバイス グループ内のユーザーは、そのカテゴリに関連付けられた URL にアクセスできません。 ブロックされていないカテゴリの場合、URL は自動的に監査されます。 ユーザーは中断することなく URL にアクセスできます。また、アクセス統計を収集して、よりカスタム ポリシーの決定を作成できます。 表示しているページ上の要素がブロックされたリソースを呼び出している場合、ユーザーにブロック通知が表示されます。
 
@@ -44,7 +44,7 @@ Web コンテンツ フィルターは主要な Web ブラウザーで利用で�
 
 - ユーザーは、オンプレミスまたは離れた場所を閲覧している場合でも、ブロックされたカテゴリの Web サイトにアクセスできます。
 
-- セキュリティ チームは、 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/rbac) の役割ベースのアクセス制御設定で定義されているデバイス グループを使用して、ユーザーのグループにポリシーを簡単に展開できます。
+- セキュリティ チームは、役割ベースのアクセス制御設定で定義されているデバイス グループを使用して、Microsoft Defender for Endpointにポリシーを[展開できます](/microsoft-365/security/defender-endpoint/rbac)。
 
 - セキュリティ チームは、同じ中央の場所にある Web レポートにアクセスし、実際のブロックと Web 使用状況を可視化できます。
 
@@ -52,17 +52,17 @@ Web コンテンツ フィルターは主要な Web ブラウザーで利用で�
 
 この機能を試す前に、次の要件を満たしていることを確認してください。
 
-- サブスクリプションには、E5、Windows 10 Enterprise、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3 + Microsoft 365 E5 Security アドオン、または Microsoft Defender for Endpoint スタンドアロン ライセンスを使用します。 
+- サブスクリプションには、E5、Windows 10 Enterprise、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3+ Microsoft 365 E5 Securityアドオンが含まれます。またはMicrosoft Defender for Endpointスタンドアロン ライセンスを使用します。 
 
 - このポータルには、Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">アクセスできます</a>。
 
-- 組織のデバイスは、Windows 10 Anniversary Update (バージョン 1607) 以降、または最新のウイルス対策/マルウェア対策更新プログラムを使用して Windows 11 を実行[しています](manage-updates-baselines-microsoft-defender-antivirus.md)。
+- 組織のデバイスは、Anniversary Update (Windows 10 1607) 以降、または最新のウイルス対策/マルウェアWindows 11更新プログラムを使用して実行[されています](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 - Windows Defenderデバイスで SmartScreen とネットワーク保護が有効になっている場合。
 
 ## <a name="data-handling"></a>データの処理
 
-データは、Microsoft Defender for Endpoint のデータ処理設定の一部として選択された [領域に格納されます](data-storage-privacy.md)。 データは、その地域のデータ センターから離れる必要があります。 また、お客様のデータは、データ プロバイダーを含む第三者と共有されることはありません。
+データは、データ処理設定の一部として選択された領域Microsoft Defender for Endpoint[保存されます](data-storage-privacy.md)。 データは、その地域のデータ センターから離れる必要があります。 また、お客様のデータは、データ プロバイダーを含む第三者と共有されることはありません。
 
 ## <a name="turn-on-web-content-filtering"></a>Web コンテンツ フィルターを有効にする
 
@@ -134,7 +134,7 @@ Web コンテンツ フィルター ポリシーは、どのサイト カテゴ�
 
 **チャット**: 主に Web ベースのチャット ルームであるサイト。
 
-**ゲーム**: オンライン サービスのホスティングを通じてゲームを促進するサイトやゲームに関連する情報を含む、ビデオまたはコンピューター ゲームに関連するサイト。
+**ゲーム**: ビデオまたはコンピューター ゲームに関連するサイト(ゲームのホスティングを通じてゲームを宣伝するサイトオンライン サービスゲームに関連する情報を含む)。
 
 **インスタント メッセージング**: インスタント メッセージング ソフトウェアまたはクライアント ベースのインスタント メッセージングをダウンロードするために使用できるサイト。
 
@@ -203,9 +203,9 @@ Web コンテンツ フィルターでブロックされたカテゴリを上書
 
 ### <a name="url-category-lookup"></a>URL カテゴリの参照
 
-Web サイトのカテゴリを確認するには、[エンドポイント検索] の [Microsoft 365 Defender ポータル<https://security.microsoft.com>で使用できる URL 検索機能 **を使用** \> **できます**。 URL 検索結果では、[URL/ドメインの詳細] の下に Web コンテンツ フィルター **カテゴリが表示されます**。 管理者は、次の図に示すように、このページからドメインのカテゴリに直接異議を申し立てすることもできます。 カテゴリの結果が表示されない場合、URL は現在、既存の Web コンテンツ フィルター カテゴリに割り当てられていない。
+Web サイトのカテゴリを確認するには、[エンドポイント検索] の [Microsoft 365 Defender ポータル<https://security.microsoft.com>で使用できる URL 検索機能 **を使用** \> **できます**。 URL 検索結果では、[URL/ドメインの詳細] の下に Web コンテンツ フィルター **カテゴリが表示されます**。 カテゴリの結果が表示されない場合、URL は現在、既存の Web コンテンツ フィルター カテゴリに割り当てられていない。
 
-![Web コンテンツ フィルター カテゴリの参照結果のイメージ。](../../media/web-content-filtering-category-lookup.png)
+<!---:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="The web content filtering category lookup results" lightbox="../../media/web-content-filtering-category-lookup.png":::--->
 
 ## <a name="web-content-filtering-cards-and-details"></a>Web コンテンツ フィルター カードと詳細
 
@@ -217,25 +217,25 @@ Web サイトのカテゴリを確認するには、[エンドポイント検索
 
 この機能を使用した最初の 30 日間で、組織にはこの情報を表示するのに十分なデータが含めなかった可能性があります。
 
-![カテゴリ カード別の Web アクティビティのイメージ。](images/web-activity-by-category600.png)
+:::image type="content" source="images/web-activity-by-category600.png" alt-text="カテゴリ カード別の Web アクティビティ" lightbox="images/web-activity-by-category600.png":::
 
 ### <a name="web-content-filtering--summary-card"></a>Web コンテンツ フィルターの概要カード
 
 このカードは、異なる親 Web コンテンツ カテゴリに対するブロックされたアクセス試行の分布を表示します。 色付きバーのいずれかを選択して、特定の親 Web カテゴリに関する詳細を表示します。
 
-![Web コンテンツ フィルターの概要カードのイメージ。](images/web-content-filtering-summary.png)
+:::image type="content" source="images/web-content-filtering-summary.png" alt-text="Web コンテンツ フィルターの概要カード" lightbox="images/web-content-filtering-summary.png":::
 
 ### <a name="web-activity-summary-card"></a>Web アクティビティの概要カード
 
 このカードには、すべての URL の Web コンテンツに対する要求の総数が表示されます。
 
-![Web アクティビティの概要カードのイメージ。](images/web-activity-summary.png)
+:::image type="content" source="images/web-activity-summary.png" alt-text="Web アクティビティの概要カード" lightbox="images/web-activity-summary.png":::
 
 ### <a name="view-card-details"></a>カードの詳細を表示する
 
 カード内のグラフ **からテーブル** 行または色付きバーを選択すると、各カードのレポートの詳細にアクセスできます。 各カードのレポートの詳細ページには、Web コンテンツ カテゴリ、Web サイト ドメイン、デバイス グループに関する広範な統計データが含まれています。
 
-![Web 保護レポートの詳細のイメージ。](images/web-protection-report-details.png)
+:::image type="content" source="images/web-protection-report-details.png" alt-text="Web 保護レポートの詳細" lightbox="images/web-protection-report-details.png":::
 
 - **Web カテゴリ**: 組織内でアクセス試行を行った Web コンテンツ カテゴリを一覧表示します。 特定のカテゴリを選択してサマリー フライアウトを開きます。
 

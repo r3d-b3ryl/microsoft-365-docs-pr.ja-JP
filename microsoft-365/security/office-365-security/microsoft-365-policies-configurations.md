@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: 7e8fbeab380ceac3531e2a288fb5e8fb5f43e166
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 058eaded0e46a4dfe86bd2cdc5624ea0963f34ea
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682375"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474643"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>ゼロ トラスト ID とデバイスのアクセス構成
 
@@ -39,7 +39,7 @@ ms.locfileid: "63682375"
 
 - 最小特権アクセスを使用する
 
-  Just-In-Time および Just-Enough-Access (JIT/JEA)、リスクベースのアダプティブ ポリシー、およびデータ保護を使用してユーザー アクセスを制限します。  
+  Just-In-Time および Just-Enough-Access (JIT/JEA)、リスクベースのアダプティブ ポリシー、およびデータ保護を使用してユーザー アクセスを制限します。
 
 - 違反を想定する
 
@@ -112,7 +112,7 @@ ms.locfileid: "63682375"
 - **Enterprise**: 一部の顧客は、より高いレベルで保護する必要があるデータのサブセットを持つか、すべてのデータを高いレベルで保護する必要があります。 環境内のすべてのデータ セットまたは特定のデータ セットに対して保護を強化Microsoft 365できます。 機密データにアクセスする ID とデバイスはそれに相応しいレベルのセキュリティで保護することを推奨します。
 - **特殊なセキュリティ**: 必要に応じて、高度に分類された、企業秘密を構成する、または規制されている少量のデータを持つお客様もいます。 Microsoft では、これらのお客様が ID やデバイスに対する保護の追加など、これらの要件を満たすのに役立つ機能を提供しています。
 
-![セキュリティ コーン - すべての顧客が>一部の>顧客をサポートしています](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png" alt-text="セキュリティ コーン" lightbox="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png":::
 
 このガイダンスでは、これらの各レベルの保護に対して ID とデバイスに対してゼロトラスト保護を実装する方法を示します。 このガイダンスは、組織の最小要件として使用し、組織の特定の要件を満たすためにポリシーを調整します。
 
@@ -131,7 +131,7 @@ The **Zero Trust identity and device protection for Microsoft 365** architecture
 
 セキュリティ戦略を実装するには、セキュリティと生産性の間のトレードオフが必要です。 各決定がセキュリティ、機能、使いやすさのバランスにどのように影響するかを評価すると便利です。
 
-![セキュリティ、機能、使いやすさのバランスをとるセキュリティ トライアド。](../../media/microsoft-365-policies-configurations/security-triad.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/security-triad.png" alt-text="セキュリティ、機能、使いやすさのバランスをとるセキュリティ トライアド" lightbox="../../media/microsoft-365-policies-configurations/security-triad.png":::
 
 提供される推奨事項は、次の原則に基づいて行います。
 
@@ -160,7 +160,7 @@ Azure AD ID 管理機能の完全なスイートを提供します。 これら�
 
 Intune やアプリのオブジェクト、設定、およびサブサービスを含む、ゼロトラスト ID とデバイス アクセスAzure ADを次に示します。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="ゼロトラスト ID とデバイス アクセスのコンポーネント。" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="ゼロトラスト ID とデバイス アクセスのコンポーネント" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -226,7 +226,7 @@ Windows 11 または Windows 10のMicrosoft 365 Apps for enterpriseは、PC に�
 
 ## <a name="steps-to-configure-zero-trust-identity-and-device-access"></a>ゼロトラスト ID とデバイス アクセスを構成する手順
 
-![ゼロトラスト ID とデバイス アクセスを構成する手順。](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png" alt-text="ゼロトラスト ID とデバイス アクセスを構成する手順" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png":::
 
 1. 前提条件の ID 機能とその設定を構成します。
 2. 共通 ID を構成し、条件付きアクセス ポリシーにアクセスします。
@@ -235,6 +235,6 @@ Windows 11 または Windows 10のMicrosoft 365 Apps for enterpriseは、PC に�
 
 ゼロトラスト ID とデバイス アクセスを構成した後、Azure AD 機能[](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)展開ガイドを参照して、考慮すべき追加機能の段階的なチェックリストと、アクセスの保護、監視、および監査を行う [Azure AD Identity Governance](/azure/active-directory/governance/) を参照してください。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [ゼロトラスト ID とデバイス アクセス ポリシーを実装するための前提条件作業](identity-access-prerequisites.md)

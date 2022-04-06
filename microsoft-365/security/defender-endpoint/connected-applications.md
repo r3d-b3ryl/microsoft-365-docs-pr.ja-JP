@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4dd630dd2b35c2fedc0340cd873ff065b2685b41
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 9e15103f4366d0717af9cec44d516b4b16a7160a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300648"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475567"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の接続アプリケーション
 
@@ -40,13 +40,13 @@ ms.locfileid: "61300648"
 
 接続されているアプリケーションで API [を使用](/microsoft-365/security/defender-endpoint/apis-intro) するには、次の手順に従う必要があります。
 
-左側のナビゲーション メニューから、[ **パートナー** ] を選択& API ([ **エンドポイント**] の下) >接続済み **アプリケーションです**。
+左側のナビゲーション メニューで、[ **パートナー** ] & ([ **エンドポイント] の** 下) [接続済み> **選択します**。
 
 ## <a name="view-connected-application-details"></a>接続されているアプリケーションの詳細を表示する
 
 [接続されたアプリケーション] ページには、組織内Azure AD Microsoft Defender for Endpoint に接続されているアプリケーションに関する情報が表示されます。 接続されているアプリケーションの使用状況を確認できます。前回の表示、過去 24 時間の要求数、過去 30 日間の傾向の要求を行います。
 
-![接続されているアプリのイメージ。](images/connected-apps.png)
+:::image type="content" source="images/connected-apps.png" alt-text="接続されているアプリケーション" lightbox="images/connected-apps.png":::
  
 ## <a name="edit-reconfigure-or-delete-a-connected-application"></a>接続されているアプリケーションの編集、再構成、または削除
 

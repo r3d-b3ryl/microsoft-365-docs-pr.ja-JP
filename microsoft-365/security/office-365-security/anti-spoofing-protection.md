@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b93f2e1543a70ca7b5dde8ab5e83d48fba5f5a5e
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 140ed15b793b5d6b74b39a35b854b7432a658bc3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401332"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475171"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -48,7 +48,7 @@ EOP では、次のスプーフィング対策テクノロジを使用できま�
 
   EOP は、標準のメール認証方法と送信者評価手法の組み合わせによって認証されないメッセージを分析してブロックします。
 
-  ![EOP のスプーフィング対策チェック。](../../media/eop-anti-spoofing-protection.png)
+  :::image type="content" source="../../media/eop-anti-spoofing-protection.png" alt-text="EOP のスプーフィング対策チェック" lightbox="../../media/eop-anti-spoofing-protection.png":::
 
 - **スプーフィング インテリジェンス分析情報**: 7 日間で内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。詳細については、「[EOP のスプーフィング インテリジェンス分析情報](learn-about-spoof-intelligence.md)」を参照してください。
 

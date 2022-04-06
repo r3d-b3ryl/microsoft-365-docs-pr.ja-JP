@@ -20,14 +20,14 @@ ms.custom: ''
 description: 詳細については、「Microsoft Defender for microsoft Defender for microsoft Defender のキャンペーン ビュー」Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8fad29e82b647d309d3b7046e36bd03b64de81d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: eb1e5e6e740accdb9c6102b798df8e60ab47dfff
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682551"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467733"
 ---
-# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for microsoft Defender のキャンペーン ビュー Office 365
+# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のキャンペーン ビュー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "63682551"
 
 キャンペーンとは、1 つまたは複数の組織に対する組織的なメール攻撃のことです。 資格情報と会社のデータを盗む電子メール攻撃は、大規模で収益性の高い業界です。 攻撃を止めようとするテクノロジが増加する中、攻撃者は継続的な成功を確実に実現するためにメソッドを変更します。
 
-Microsoft は、サービス全体で膨大な量のフィッシング対策、スパム対策、マルウェア対策データを活用して、キャンペーンの特定に役立ちます。 攻撃情報を分析し、いくつかの要因に従って分類します。 例:
+Microsoft は、サービス全体で膨大な量のフィッシング対策、スパム対策、マルウェア対策データを活用して、キャンペーンの特定に役立ちます。 攻撃情報を分析し、いくつかの要因に従って分類します。 次に例を示します。
 
 - **攻撃元**: 送信元 IP アドレスと送信者メール ドメイン。
 - **メッセージのプロパティ**: メッセージのコンテンツ、スタイル、トーン。
@@ -59,7 +59,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 キャンペーン ビューは、メール Microsoft 365 Defenderコラボレーション <https://security.microsoft.com> キャンペーンで、&**で**\>直接使用できます。<https://security.microsoft.com/campaigns>
 
-![キャンペーンの概要は、Microsoft 365 Defenderポータルで行います。](../../media/campaigns-overview.png)
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="[キャンペーン] ポータルのMicrosoft 365 Defender概要" lightbox="../../media/campaigns-overview.png":::
 
 また、次の場所からキャンペーン ビューを取得できます。
 
@@ -89,7 +89,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 - **種類**: この値は、**フィッシングまたはマルウェア****のいずれかです**。
 
-- **サブ** タイプ: この値には、キャンペーンの詳細が含まれる。 例:
+- **サブ** タイプ: この値には、キャンペーンの詳細が含まれる。 次に例を示します。
   - **フィッシング**: 利用可能な場合、このキャンペーンによってフィッシングされているブランド。 たとえば、、`Microsoft`、`365``Unknown`、`Outlook`、、、 など`DocuSign`です。
   - **マルウェア**: たとえば、 `HTML/PHISH` または `HTML/<MalwareFamilyName>`.
 
@@ -113,7 +113,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 [キャンペーン] **ページの上部** には、特定のキャンペーンを見つけて特定するのに役立つフィルターとクエリの設定がいくつかあります。
 
-![キャンペーン フィルター。](../../media/campaign-filters-and-settings.png)
+:::image type="content" source="../../media/campaign-filters-and-settings.png" alt-text="キャンペーン フィルター" lightbox="../../media/campaign-filters-and-settings.png":::
 
 最も基本的なフィルター処理は、開始日/時刻と終了日時です。
 
@@ -192,7 +192,7 @@ Microsoft Defender for Endpoint サブスクリプションをお持ちの場合
 - 次のセクションで説明するように、キャンペーン フローの開始日時および終了データ/時刻フィルター。
 - キャンペーンアクティビティのインタラクティブなタイムライン: タイムラインには、キャンペーンの有効期間全体のアクティビティが表示されます。 グラフ内のデータ ポイントにカーソルを合わせると、検出されたメッセージの量を確認できます。
 
-![キャンペーン情報。](../../media/campaign-details-campaign-info.png)
+:::image type="content" source="../../media/campaign-details-campaign-info.png" alt-text="キャンペーン情報" lightbox="../../media/campaign-details-campaign-info.png":::
 
 ### <a name="campaign-flow"></a>キャンペーン フロー
 
@@ -201,7 +201,7 @@ Microsoft Defender for Endpoint サブスクリプションをお持ちの場合
 > [!TIP]
 > フロー図に表示される情報は、前のセクションで説明したように、タイムラインの日付範囲フィルターによって制御されます。
 
-![ユーザー URL のクリックを含むキャンペーンの詳細。](../../media/campaign-details-no-recipient-actions.png)
+:::image type="content" source="../../media/campaign-details-no-recipient-actions.png" alt-text="ユーザー URL のクリックを含むキャンペーンの詳細" lightbox="../../media/campaign-details-no-recipient-actions.png":::
 
 図内の横方向の帯にマウスのポインターを合わせると、関連するさまざまなメッセージが表示されます (特定のソース IP からのメッセージ、指定した送信者ドメインを使用した、特定のソース IP からのメッセージなど)。
 
@@ -211,7 +211,7 @@ Microsoft Defender for Endpoint サブスクリプションをお持ちの場合
 - [**Sender domains (送信者のドメイン)**]
 - **フィルターの評決**: Verdict 値は、「スパム対策メッセージ ヘッダー」の説明に従って、使用可能なフィッシングおよびスパム フィルターの評決 [に関連しています](anti-spam-message-headers.md)。 使用可能な値については、次の表で説明します。
 
-  |値|スパム フィルターの評決|[説明]|
+  |値|スパム フィルターの評決|説明|
   |---|---|---|
   |**可**|`SFV:SKN` <p> `SFV:SKI`|このメッセージは、スパム フィルターによって評価される前に、スパムではない、またはスキップされたフィルター処理としてマークされました。 たとえば、メッセージはメール フロー ルール (トランスポート ルールとも呼ばれる) によってスパムではないとマークされました。 <p> メッセージは、他の理由でスパム フィルター処理をスキップしました。 たとえば、送信者と受信者は同じ組織内にあると見なされます。|
   |**ブロック済み**|`SFV:SKS`|メッセージは、スパム フィルターによって評価される前にスパムとしてマークされました。 たとえば、メール フロー ルールによって指定します。|

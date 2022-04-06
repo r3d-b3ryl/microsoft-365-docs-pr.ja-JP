@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可を構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3823290e9f239b14e4bf97fe1ae8ef7020561697
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 755a23d7cddbeb2943809681fc90556a2adac25b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314113"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475545"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの許可リストを追加する
 
@@ -55,9 +55,7 @@ ms.locfileid: "63314113"
 
 7. 完了したら、[送信] ボタン **をクリック** します。
 
-> [!div class="mx-imgBorder"]
 > ![分析の例については、Microsoft にマルウェアを送信します。](../../media/admin-submission-allow-messages.png)
-
 ## <a name="add-url-allows-using-the-submissions-portal"></a>申請ポータルを使用して URL を追加できます
 
 [送信] ページの **[URL を許可** Microsoft 365 Defender。
@@ -78,7 +76,6 @@ ms.locfileid: "63314113"
 
 > [!div class="mx-imgBorder"]
 > ![分析用の URL を送信します。](../../media/submit-url-for-analysis.png)
-
 ## <a name="add-file-allows-using-the-submissions-portal"></a>ファイルの追加では、申請ポータルを使用できます
 
 [送信] ページ **の [ファイルを許可** する] Microsoft 365 Defender。

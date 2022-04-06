@@ -1,5 +1,5 @@
 ---
-title: 脅威エクスプローラーのビューとリアルタイム検出
+title: 脅威エクスプローラーとリアルタイムの検出のビュー
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ description: 脅威エクスプローラーとリアルタイム検出レポー�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d21773694e1dc9472a9a8ac566c8eaacc00fcab8
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 65fa6e3f1c591f41544a1450def3e05259be3b6a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682859"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474951"
 ---
-# <a name="views-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーのビューとリアルタイム検出
+# <a name="views-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイムの検出のビュー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "63682859"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-![脅威エクスプローラー。](../../media/explorer.png)
+:::image type="content" source="../../media/explorer.png" alt-text="[脅威エクスプローラー] ページ" lightbox="../../media/explorer.png":::
 
 [脅威エクスプローラー](threat-explorer.md) (およびリアルタイム検出レポート) は、セキュリティ運用チームが Microsoft 365 Defender ポータルの脅威を調査して対応するのに役立つ、リアルタイムに近い強力なツールです。 エクスプローラー (およびリアルタイム検出レポート) には、Office 365 の電子メールやファイルのマルウェアやフィッシングの疑い、および組織に対するその他のセキュリティ上の脅威やリスクに関する情報が表示されます。
 
@@ -55,7 +55,7 @@ ms.locfileid: "63682859"
 
 表示する情報 **を** 変更するには、[表示] メニューを使用します。 ツールヒントは、使用するビューを決定するのに役立ちます。
 
-![[脅威エクスプローラーの表示] メニュー。](../../media/all-email.png)
+:::image type="content" source="../../media/all-email.png" alt-text="[脅威エクスプローラーの表示] メニュー" lightbox="../../media/all-email.png":::
 
 ビューを選択したら、フィルターを適用してクエリを設定して、さらに分析を実行できます。 以下のセクションでは、エクスプローラーで使用できるさまざまなビュー (またはリアルタイム検出) の概要を示します。
 
@@ -63,43 +63,43 @@ ms.locfileid: "63682859"
 
 このレポートを表示するには、エクスプローラー (またはリアルタイムの検出) で、[電子メール マルウェアの表示 **] を** \> **選択** \> **します**。 このビューには、マルウェアが含まれていると識別された電子メール メッセージに関する情報が表示されます。
 
-![マルウェアとして識別された電子メールに関するデータを表示します。](../../media/detection-technology.png)
+:::image type="content" source="../../media/detection-technology.png" alt-text="マルウェアとして識別された電子メールに関するデータの表示" lightbox="../../media/detection-technology.png":::
 
 [送信者 **] を** クリックして、表示オプションの一覧を開きます。 この一覧を使用して、送信者、受信者、送信者ドメイン、件名、検出テクノロジ、保護状態などによってデータを表示します。
 
 たとえば、検出された電子メール メッセージに対して実行されたアクションを確認するには、一覧で [ **保護の状態** ] を選択します。 オプションを選択し、[更新] ボタンをクリックして、そのフィルターをレポートに適用します。
 
-![脅威エクスプローラーの [脅威保護の状態] オプション。](../../media/ThreatExplorerProtectionStatusOptions.png)
+:::image type="content" source="../../media/ThreatExplorerProtectionStatusOptions.png" alt-text="脅威エクスプローラーの [脅威保護の状態] オプション" lightbox="../../media/ThreatExplorerProtectionStatusOptions.png":::
 
 グラフの下に、特定のメッセージの詳細を表示します。 リストでアイテムを選択すると、フライアウト ウィンドウが開き、選択したアイテムの詳細を確認できます。
 
-![飛び出しを含む脅威エクスプローラーが開きます。](../../media/ThreatExplorerMalwareItemSelectedFlyout.png)
+:::image type="content" source="../../media/ThreatExplorerMalwareItemSelectedFlyout.png" alt-text="飛び出しを含む脅威エクスプローラーが開いた" lightbox="../../media/ThreatExplorerMalwareItemSelectedFlyout.png":::
 
 ## <a name="email--phish"></a>メール >フィッシング
 
 このレポートを表示するには、エクスプローラー (またはリアルタイムの検出) で、[メール フィッシングの表示 **] を** \> **選択** \> **します**。 このビューには、フィッシング詐欺の試みとして識別された電子メール メッセージが表示されます。
 
-![フィッシング詐欺の試みとして識別された電子メールに関するデータを表示します。](../../media/phish.png)
+:::image type="content" source="../../media/phish.png" alt-text="フィッシング詐欺の試みとして識別された電子メールに関するデータの表示" lightbox="../../media/phish.png":::
 
 [送信者 **] を** クリックして、表示オプションの一覧を開きます。 この一覧を使用して、送信者、受信者、送信者ドメイン、送信者 IP、URL ドメイン、クリックの評決などによってデータを表示します。
 
 たとえば、フィッシング詐欺の試みとして識別された URL をクリックしたユーザーが実行したアクションを確認するには、リストで [Click **verdict** ] を選択し、1 つ以上のオプションを選択し、[更新] ボタンをクリックします。
 
-![[フィッシング] レポートの [評決オプション] をクリックします。](../../media/click-verdict.png)
+:::image type="content" source="../../media/click-verdict.png" alt-text="フィッシング レポートの [クリックの評決] オプション" lightbox="../../media/click-verdict.png":::
 
 グラフの下に、特定のメッセージ、URL クリック、URL、メール配信元の詳細を表示します。
 
-![メール メッセージでフィッシングとして検出された URL。](../../media/ThreatExplorerEmailPhishURLs.png)
+:::image type="content" source="../../media/ThreatExplorerEmailPhishURLs.png" alt-text="メール メッセージでフィッシングとして検出された URL" lightbox="../../media/ThreatExplorerEmailPhishURLs.png":::
 
 リスト内のアイテム (検出された URL など) を選択すると、フライアウト ウィンドウが開き、選択したアイテムの詳細を確認できます。
 
-![検出された URL の詳細。](../../media/ThreatExplorerEmailPhishURLDetails.png)
+:::image type="content" source="../../media/ThreatExplorerEmailPhishURLDetails.png" alt-text="検出された URL の詳細" lightbox="../../media/ThreatExplorerEmailPhishURLDetails.png":::
 
 ## <a name="email--submissions"></a>メール>提出
 
 このレポートを表示するには、エクスプローラー (またはリアルタイムの検出) で、[電子メール送信の表示 **]** \> **を** \> **選択します**。 このビューには、ユーザーが迷惑メール、迷惑メール、フィッシングメールとして報告したメールが表示されます。
 
-![ユーザーによって報告された電子メール メッセージ。](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
+:::image type="content" source="../../media/ThreatExplorerEmailUserReportedViewOptions.png" alt-text="ユーザーによって報告された電子メール メッセージ" lightbox="../../media/ThreatExplorerEmailUserReportedViewOptions.png":::
 
 [送信者 **] を** クリックして、表示オプションの一覧を開きます。 この一覧を使用して、送信者、受信者、レポートの種類 (電子メールが迷惑メール、迷惑メール、フィッシングではないというユーザーの判断) などによって情報を表示します。
 
@@ -109,7 +109,7 @@ ms.locfileid: "63682859"
 
 グラフの下に、件名、送信者の IP アドレス、迷惑メール、迷惑メール、フィッシングなど、メッセージを報告したユーザーなど、特定の電子メール メッセージの詳細を表示します。
 
-![フィッシング詐欺の試みとして報告されたメッセージ。](../../media/ThreatExplorerEmailPhishUserReportedPhishDetails.png)
+:::image type="content" source="../../media/ThreatExplorerEmailPhishUserReportedPhishDetails.png" alt-text="フィッシング詐欺の試みとして報告されたメッセージ" lightbox="../../media/ThreatExplorerEmailPhishUserReportedPhishDetails.png":::
 
 リスト内のアイテムを選択して、追加の詳細を表示します。
 
@@ -122,7 +122,7 @@ ms.locfileid: "63682859"
 
 フィルターを適用するには、[ **送信者] を** 選択し、一覧でアイテムを選択し、[更新] ボタンをクリックします。 この例では、検出テクノロジ **を** フィルターとして使用しました (使用可能なオプションは複数あります)。 送信者、送信者のドメイン、受信者、件名、添付ファイル名、マルウェア ファミリ、保護状態 (Office 365 の脅威保護機能とポリシーによって実行されるアクション)、検出テクノロジ (マルウェアの検出方法)などによって情報を表示します。
 
-![検出テクノロジによって検出された電子メールに関するデータを表示します。](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
+:::image type="content" source="../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png" alt-text="検出テクノロジによって検出された電子メールに関するデータを表示する" lightbox="../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png":::
 
 グラフの下には、件名、受信者、送信者、状態など、特定の電子メール メッセージの詳細が表示されます。
 
@@ -132,7 +132,7 @@ ms.locfileid: "63682859"
 
 マルウェア ファミリ、検出テクノロジ (マルウェアの検出方法)、ワークロード (OneDrive、SharePoint、またはTeams)。
 
-![検出されたマルウェアに関するデータを表示します。](../../media/malware-family.png)
+:::image type="content" source="../../media/malware-family.png" alt-text="検出されたマルウェアに関するデータの表示" lightbox="../../media/malware-family.png":::
 
 グラフの下には、添付ファイルのファイル名、ワークロード、ファイル サイズ、ファイルを最後に変更したユーザーなど、特定のファイルの詳細が表示されます。
 
@@ -140,19 +140,19 @@ ms.locfileid: "63682859"
 
 エクスプローラー (およびリアルタイム検出) を使用すると、クリックでフィルターを適用できます。 凡例内のアイテムをクリックすると、そのアイテムがレポートのフィルターになります。 たとえば、エクスプローラーでマルウェア ビューを見ているとします。
 
-![[脅威管理エクスプローラー] に移動 \> します。](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="セキュリティ コンプライアンス ポータルの [エクスプローラー] &ページ" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
 
 このグラフ **で [ATP の削除]** をクリックすると、次のようなビューが表示されます。
 
-![エクスプローラーがフィルター処理され、削除結果に対して Defender Office 365表示されます。](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+:::image type="content" source="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png" alt-text="エクスプローラーがフィルター処理され、Detonation の結果に対して Defender Office 365表示されます" lightbox="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png":::
 
 このビューでは、添付ファイルによって削除されたファイルのデータをセーフ[しています](safe-attachments.md)。 グラフの下には、添付ファイルが添付ファイルによって検出された特定の電子メール メッセージに関する詳細セーフ示されています。
 
-![検出された添付ファイルを含む電子メール メッセージに関する具体的な詳細。](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
+:::image type="content" source="../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png" alt-text="検出された添付ファイルを含む電子メール メッセージに関する具体的な詳細" lightbox="../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png":::
 
 1 つ以上のアイテムを選択すると、[アクション] メニューがアクティブ化され、選択したアイテムに対して選択できる複数の選択肢があります。
 
-![アイテムを選択すると、[操作] メニューがアクティブ化されます。](../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
+:::image type="content" source="../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png" alt-text="[アクション] メニューをアクティブにするアイテムを選択するプロセス" lightbox="../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png":::
 
 クリックでフィルター処理して特定の詳細に移動する機能によって、脅威の調査に多くの時間を節約できます。
 

@@ -24,17 +24,17 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Android デバイスまたは iOS デバイスMicrosoft 365 Business Premiumアプリ保護設定を検証する方法について説明します。
-ms.openlocfilehash: 85d98a4741299327c0e88735cb9593e129fdc929
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b760b49c59d8033e4587cedd67f024f983547179
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313749"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632451"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Android デバイスまたは iOS デバイスのアプリ保護設定を検証する
 
 > [!NOTE]
-> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 この機能は、デバイスに追加のセキュリティ機能を提供します。 [Defender for Business の詳細については、「Defender for Business」を参照してください](../../security/defender-business/mdb-overview.md)。
+> Microsoft Defender for Business 2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 この機能は、デバイスに追加のセキュリティ機能を提供します。 [Defender for Business の詳細については、「Defender for Business」を参照してください](../../security/defender-business/mdb-overview.md)。
 
 Android または iOS デバイスのアプリ保護設定を検証するには、次のセクションの手順に従います。
   
@@ -42,7 +42,7 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>アプリの保護設定がユーザー デバイスで動作しているのを確認する
 
-[Android デバイス用のアプリの構成を設定](app-protection-settings-for-android-and-ios.md) し、アプリを保護したら、次の手順に従って、選択した設定が機能することを検証できます。 
+アプリを [保護するために Android デバイスまたは iOS](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) デバイスのアプリ保護設定を設定した後、次の手順に従って、選択した設定が動作することを検証できます。 
   
 まず、ポリシーを検証するアプリにポリシーが適用されます。
   
@@ -131,7 +131,7 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>ユーザーのデバイスでアプリ保護設定が機能していることを確認する
 
-[iOS デバイス用のアプリの構成を設定](app-protection-settings-for-android-and-ios.md) し、アプリを保護したら、次の手順に従って、選択した設定が機能することを検証できます。 
+[iOS デバイス用のアプリの構成を設定](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md) し、アプリを保護したら、次の手順に従って、選択した設定が機能することを検証できます。 
   
 まず、ポリシーを検証するアプリにポリシーが適用されます。
   

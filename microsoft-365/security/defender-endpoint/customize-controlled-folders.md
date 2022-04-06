@@ -13,14 +13,14 @@ ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365initiative-m365-defender
+ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: c290ad42702ddcb815880fedfe72d9de73065b8d
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: b9af738d4b1f59705132a84239d06dc762447417
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322483"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683759"
 ---
 # <a name="customize-controlled-folder-access"></a>制御されたフォルダー アクセスをカスタマイズする
 
@@ -31,7 +31,7 @@ ms.locfileid: "62322483"
 > [!TIP]
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-フォルダー アクセスの制御により、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、Windows Server 2019、Windows Server 2022、Windows 10、および Windows 11 クライアントでサポートされます。 この記事では、フォルダー アクセスの制御機能をカスタマイズする方法について説明し、次のセクションを示します。
+フォルダー アクセスの制御により、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、Windows Server 2019、Windows Server 2022、Windows 10、Windows 11 クライアントでサポートされます。 この記事では、フォルダー アクセスの制御機能をカスタマイズする方法について説明し、次のセクションを示します。
 
 - [追加のフォルダーを保護する](#protect-additional-folders)
 - [保護されたフォルダーへのアクセスを許可する必要がありますアプリを追加する](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -45,17 +45,17 @@ ms.locfileid: "62322483"
 
 フォルダー アクセスの制御は、ドキュメント、ピクチャ、ムービーなどのフォルダーを含む、多くのシステム フォルダーと既定の場所に **適用されます**。 保護する他のフォルダーを追加できますが、既定の一覧で既定のフォルダーを削除することはできません。
 
-他のフォルダーを制御されたフォルダー アクセスに追加すると、既定の Windows ライブラリにファイルを保存しない場合や、ライブラリの既定の場所を変更した場合に役立ちます。
+フォルダー アクセスの制御に他のフォルダーを追加すると、既定の Windows ライブラリにファイルを保存しない場合や、ライブラリの既定の場所を変更した場合に役立ちます。
 
 ネットワーク共有とマップされたドライブを指定することもできます。 環境変数とワイルドカードがサポートされています。 ワイルドカードの使用の詳細については、「ファイル名とフォルダー パスまたは拡張子の除外リストでワイルドカードを使用 [する」を参照してください](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
-保護されたフォルダーを追加および削除するには、Windows セキュリティ アプリ、グループ ポリシー、PowerShell コマンドレット、またはモバイル デバイス管理構成サービス プロバイダーを使用できます。
+保護されたフォルダーを追加Windows セキュリティ削除するには、アプリ、グループ ポリシー、PowerShell コマンドレット、またはモバイル デバイス管理構成サービス プロバイダーを使用できます。
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>アプリを使用Windows セキュリティフォルダーを保護する
 
 1. タスク バー Windows セキュリティシールド アイコンを選択するか、タスク バーでセキュリティを検索して、アプリを開スタート メニュー。
 
-2. [ **ウイルス対策&保護] を** 選択し、[ランサムウェアの保護] **セクションまで下にスクロール** します。
+2. [ **ウイルス対策&を選択** し、[ランサムウェアの保護] セクション **まで下にスクロール** します。
 
 3. [ランサムウェア **保護の管理] を** 選択して **、[ランサムウェア保護] ウィンドウを開** きます。
 
@@ -73,7 +73,7 @@ ms.locfileid: "62322483"
 
 3. グループ ポリシー **管理エディターで、[** コンピューター構成\>ポリシー] **[管理用** \> **テンプレート] に移動します**。
 
-4. ツリーを展開して **、Exploit Guard Windowsフォルダー アクセスMicrosoft Defender ウイルス対策** \> **Windows Defender** \> **コンポーネント** \> **を展開します**。 <br/>**注**: 以前のバージョンの Windowsでは、**Windows Defender ウイルス対策の代** わりに **Microsoft Defender ウイルス対策。**
+4. ツリーを展開して **、Exploit Guard WindowsアクセスMicrosoft Defender ウイルス対策** \>  \> Windows Defender **コンポーネント** \> **を表示します**。 <br/>**注**: 以前のバージョンの Windowsの場合は、**Windows Defender ウイルス対策の代** わりに **Microsoft Defender ウイルス対策。**
 
 5. [構成済みの **保護されたフォルダー] をダブルクリック** し、オプションを [有効] に **設定します**。 [ **表示] を** 選択し、保護する各フォルダーを指定します。
 
@@ -110,7 +110,7 @@ ms.locfileid: "62322483"
 
 許可されているアプリケーションまたはサービスは、開始後にのみ、制御フォルダーへの書き込みアクセス権を持つ。 たとえば、更新サービスは、イベントが停止して再起動されるまで、イベントが許可された後も引き続きトリガーされます。
 
-### <a name="use-the-windows-defender-security-app-to-allow-specific-apps"></a>特定のアプリWindows Defenderセキュリティ アプリを使用する
+### <a name="use-the-windows-defender-security-app-to-allow-specific-apps"></a>特定のアプリWindows Defenderを許可するには、セキュリティ アプリを使用する
 
 1. [セキュリティ] Windows セキュリティスタート メニューを検索して、アプリを開 **きます**。
 
@@ -128,7 +128,7 @@ ms.locfileid: "62322483"
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して **、Exploit Guard Windowsフォルダー アクセスMicrosoft Defender ウイルス対策** \> **Windows Defender** \> **コンポーネント** \> **を展開します**。
+3. ツリーを展開して **、Exploit Guard WindowsアクセスMicrosoft Defender ウイルス対策** \>  \> Windows Defender **コンポーネント** \> **を表示します**。
 
 4. [許可されたアプリケーションの **構成] 設定をダブルクリック** し、オプションを [有効] に **設定します**。 [表示 **] を** 選択し、各アプリを入力します。
 

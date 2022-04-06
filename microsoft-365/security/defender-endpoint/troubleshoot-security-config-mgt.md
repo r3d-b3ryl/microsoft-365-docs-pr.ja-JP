@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: d6c3beb5a33a6d2323159917944e0f069b02035e
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 8d18d0dd193e720f7f91ae0c3a9d384a3715be82
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074440"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467931"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のセキュリティ管理に関連するオンボーディングの問題のトラブルシューティング
 
@@ -32,19 +32,19 @@ ms.locfileid: "62074440"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender for Endpoint のセキュリティ管理は、ユーザーまたはユーザーが管理していないデバイスMicrosoft エンドポイント マネージャー機能Microsoft IntuneですMicrosoft Endpoint Configuration Managerをクリックして、Microsoft Defender for Endpoint のセキュリティ構成を直接クライアントから受信エンドポイント マネージャー。
-Microsoft Defender for Endpoint のセキュリティ管理の詳細については、「Manage Microsoft Defender for Endpoint on devices on devices with Microsoft エンドポイント マネージャー」 を[参照してください](/mem/intune/protect/mde-security-integration)。
+Microsoft Defender for Endpoint のセキュリティ管理は、ユーザーまたはユーザーが管理していないデバイスMicrosoft エンドポイント マネージャー機能Microsoft Intune Microsoft Endpoint Configuration Managerをクリックして、Microsoft Defender for Endpoint のセキュリティ構成をクライアントから直接受信エンドポイント マネージャー。
+Microsoft Defender for Endpoint のセキュリティ管理の詳細については、「Manage [Microsoft Defender for Endpoint on devices on devices with](/mem/intune/protect/mde-security-integration) Microsoft エンドポイント マネージャー。
 
-Microsoft Defender for Endpoint オンボーディング手順のセキュリティ管理については[、「Microsoft Defender for Endpoint Security Configuration Management」を参照してください](security-config-management.md)。
+Microsoft Defender for Endpoint オンボーディング手順のセキュリティ管理については、「[Microsoft Defender for Endpoint Security Configuration Management」を参照してください](security-config-management.md)。
 
 このエンドツーエンドのオンボーディングは、フリクションレスに設計され、ユーザー入力を必要とします。 ただし、オンボーディング中に問題が発生した場合は、Microsoft Defender for Endpoint プラットフォーム内のエラーを表示およびトラブルシューティングできます。
 
 > [!NOTE]
-> 新しいデバイスのオンボーディング フローに問題がある場合は [、Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration#prerequisites) の前提条件を確認し、オンボーディング手順に従ってください。
+> 新しいデバイスのオンボーディング フローに問題がある場合は、 [Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration#prerequisites) の前提条件を確認し、オンボーディング手順に従ってください。
 
 クライアント アナライザーの詳細については、「Microsoft Defender for Endpoint Client Analyzer を使用したセンサーの正常性のトラブルシューティング [」を参照してください](/microsoft-365/security/defender-endpoint/overview-client-analyzer)。
 
-## <a name="registering-domain-joined-computers-with-azure-active-directory"></a>ドメインに参加しているコンピューターをドメインに登録Azure Active Directory
+## <a name="registering-domain-joined-computers-with-azure-active-directory"></a>ドメインに参加しているコンピューターをユーザーに登録Azure Active Directory
 
 デバイスをデバイスに正常Azure Active Directoryするには、次の情報を確認する必要があります。
 
@@ -53,10 +53,10 @@ Microsoft Defender for Endpoint オンボーディング手順のセキュリテ
   - https://enterpriseregistration.windows.net
   - https://login.microsoftonline.com
   - https://device.login.microsoftonline.com
-- Azure ADは、コンピューター オブジェクトを同期するように構成されています。 既定では、コンピューターの US は同期スコープAzure AD接続できません。 コンピューター オブジェクトが特定の組織単位 (OUs) に属している場合は、その組織単位で同期Azure AD Connect。 コンピューター オブジェクトを使用してコンピューター オブジェクトを同期する方法の詳細については、「組織単位Azure AD Connectフィルター」[を参照してください](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering)。
+- Azure ADは、コンピューター オブジェクトを同期するように構成されています。 既定では、コンピューターの US は同期Azure ADスコープ内に表示されます。 コンピューター オブジェクトが特定の組織単位 (OUs) に属している場合は、特定の組織単位で同期Azure AD Connect。 コンピューター オブジェクトを同期する方法の詳細については、「組織単位ベースのフィルター Azure AD Connect」[を参照してください](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering)。
 
 > [!IMPORTANT]
-> Azure ADは R2 コンピューター オブジェクトWindows Server 2012同期しません。 Microsoft Defender for Endpoint のセキュリティ管理用 Azure AD に登録する必要がある場合は、Azure AD 接続同期ルールをカスタマイズして、それらのコンピューター オブジェクトを同期スコープに含める必要があります。 「[コンピューター参加ルールを適用する手順」を参照Azure Active Directory Connect。]()
+> Azure ADは R2 コンピューター オブジェクトWindows Server 2012同期しません。 Microsoft Defender for Endpoint のセキュリティ管理用 Azure AD に登録する必要がある場合は、Azure AD 接続同期ルールをカスタマイズして、それらのコンピューター オブジェクトを同期スコープに含める必要があります。 「[コンピューター参加ルールを適用する手順」を参照Azure Active Directory Connect]()。
 
 > [!NOTE]
 > オンボード フローを正常に完了し、デバイスのオペレーティング システムとは別に、デバイスの Azure Active Directory 状態は、デバイスの初期状態に基づいて変更できます。
@@ -75,15 +75,16 @@ Microsoft Defender for Endpoint オンボーディング手順のセキュリテ
 
 Microsoft Defender for Endpoint ポータルを通じて、セキュリティ管理者は Microsoft Defender for Endpoint オンボーディングのセキュリティ管理をトラブルシューティングできます。
 
-Endpoints  \> **Device inventory では、[****管理** によって管理] 列が追加され、管理チャネル (MEM など) でフィルター処理されます。
+**Endpoints** \> **Device inventory では、[****管理** によって管理] 列が追加され、管理チャネル (MEM など) でフィルター処理されます。
 
-:::image type="content" alt-text="デバイス インベントリ ページのイメージ" source="./images/device-inventory-mde-error.png":::
+:::image type="content" source="./images/device-inventory-mde-error.png" alt-text="[デバイス インベントリ] ページ" lightbox="./images/device-inventory-mde-error.png":::
 
-Microsoft Defender for Endpoint オンボーディング プロセスのセキュリティ管理に失敗したすべてのデバイスの一覧を表示するには **、MDE-Error** でテーブルをフィルター処理します。
+Microsoft Defender for Endpoint オンボーディング プロセスのセキュリティ管理に失敗したすべてのデバイスの一覧を表示するには、 **MDE-Error でテーブルをフィルター処理します**。
 
 一覧で、特定のデバイスを選択して、サイド パネルにトラブルシューティングの詳細を表示し、エラーの根本原因と対応するドキュメントを示します。
 
-:::image type="content" alt-text="フィルター処理されたデバイス インベントリ ページのイメージ" source="./images/secconfig-mde-error.png":::
+
+:::image type="content" source="./images/secconfig-mde-error.png" alt-text="デバイス インベントリ ページに適用されるフィルター条件" lightbox="./images/secconfig-mde-error.png":::
 
 ## <a name="run-microsoft-defender-for-endpoint-client-analyzer-on-windows"></a>Microsoft Defender for Endpoint Client Analyzer をコンピューターで実行Windows
 
@@ -92,24 +93,24 @@ Microsoft Defender for Endpoint オンボーディング フローのセキュ�
 クライアント アナライザー出力ファイル (MDE クライアント アナライザー Results.htm) は、次の重要なトラブルシューティング情報を提供できます。
 
 - [全般デバイスの詳細] セクションで、デバイス OS が Microsoft Defender for Endpoint オンボーディング フローのセキュリティ管理のスコープ **内にあるか確認** します。
-- [デバイス構成管理の詳細] で、デバイスがAzure Active Directoryに登録 **されたことを確認します。**
+- [デバイス構成の管理の詳細] で、デバイスAzure Active Directoryに登録 **されたことを確認します。**
 
-    ![クライアント アナライザーの結果のイメージ](images/client-analyzer-results.png)
+  :::image type="content" source="images/client-analyzer-results.png" alt-text="クライアント アナライザーの結果" lightbox="images/client-analyzer-results.png":::
 
 レポートの **[詳細な結果** ] セクションでは、クライアント アナライザーでも、操作可能なガイダンスを提供します。
 
 > [!TIP]
 > レポートの [詳細な結果] セクションに "エラー" が含めず、すべての "警告" メッセージを確認してください。
 
-たとえば、セキュリティ管理オンボーディング フローの一部として、Microsoft Defender for Endpoint Tenant の Azure Active Directory テナント ID が、レポートの [デバイス構成管理の詳細]セクションに表示される SCP テナント ID と一致する必要があります。 関連する場合は、レポート出力でこの検証を実行することをお勧めします。
+たとえば、セキュリティ管理オンボーディング フローの一部として、Microsoft Defender for Endpoint Tenant の Azure Active Directory テナント ID が、レポートの [デバイス構成管理の詳細] セクションに表示される SCP テナント ID と一致する必要があります。 関連する場合は、レポート出力でこの検証を実行することをお勧めします。
 
-![詳細な結果の画像](images/detailed-results.png)
+:::image type="content" source="images/detailed-results.png" alt-text="詳細な結果を表示するページ" lightbox="images/detailed-results.png"
 
 ## <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
-AAD または MEM でオンボード デバイスを識別できない場合に、登録中にエラーが表示されない場合は、レジストリ キーを確認すると、追加のトラブルシューティング情報を `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` 提供できます。
+AAD または MEM `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` でオンボード デバイスを識別できない場合に、登録中にエラーが発生しなかった場合は、レジストリ キーを確認すると、追加のトラブルシューティング情報を提供できます。
 
-:::image type="content" alt-text="登録状態のイメージ。" source="images/enrollment-status.png":::
+:::image type="content" source="images/enrollment-status.png" alt-text="登録状態を表示するページ" lightbox="images/enrollment-status.png":::
 
 次の表に、エラーに対処するために何を試す/チェックする方法に関するエラーと指示を示します。 エラーの一覧は完全ではなく、過去に顧客が発生した一般的なエラーまたは一般的なエラーに基づく点に注意してください。
 
@@ -120,50 +121,50 @@ AAD または MEM でオンボード デバイスを識別できない場合に�
 |エラー コード|登録の状態|管理者の操作|
 |---|---|---|
 |`5-9`,`11-12`, `26-33`|一般的なエラー|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生しました。 これは、デバイスが Microsoft Defender for Endpoint 管理チャネルの前提条件を満 [たしていない可能性があります](security-config-management.md)。 デバイスで [クライアント アナライザー](https://aka.ms/BetaMDEAnalyzer) を実行すると、問題の根本原因を特定できます。 それでも問題が生じなかった場合は、サポートにお問い合わせください。|
-|`13-14`,`20`,`24`,`25`|接続の問題|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生し、接続の問題が原因である可能性があります。 ファイアウォールで[Azure Active Directory Microsoft エンドポイント マネージャーエンドポイント](security-config-management.md#connectivity-requirements)が開いているか確認します。|
-|`10`,`42`|一般的なハイブリッド参加の失敗|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生し、OS がハイブリッド参加を実行できなかった。 OS[レベルのハイブリッドAzure Active Directory失敗の](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)トラブルシューティングには、ハイブリッド デバイスに参加しているデバイスのトラブルシューティングを使用します。|
-|`15`|テナントの不一致|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、Microsoft Defender for Endpoint テナント ID がテナント ID と一致しないので、セキュリティ構成管理フローにAzure Active Directoryでした。 Defender for Endpoint テナントAzure Active Directoryのテナント ID が、ドメインの SCP エントリのテナント ID と一致する必要があります。 詳細については、「Microsoft Defender for Endpoint のセキュリティ管理に関連するオンボードの問題 [のトラブルシューティング」を参照してください](troubleshoot-security-config-mgt.md)。|
-|`16`,`17`|ハイブリッド エラー - サービス接続ポイント|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、サービス接続ポイント (SCP) レコードが正しく構成されていないので、デバイスをデバイスに参加Azure AD。 これは、SCP が DRS に参加するように構成Enterpriseがあります。 ベスト プラクティスに従って SCP レコードAAD SCP が構成されていることを確認します。 詳細については、「サービス接続ポイント [の構成」を参照してください](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point)。|
-|`18`|証明書エラー|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、デバイス証明書エラーが原因でセキュリティ構成管理フローにエラーが発生しました。 デバイス証明書は、別のテナントに属します。 信頼できる証明書プロファイルを作成するときにベスト プラクティスが実行 [されるのを確認します](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles)。|
+|`13-14`,`20`,`24`,`25`|接続の問題|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生し、接続の問題が原因である可能性があります。 ファイアウォールでAzure Active Directory[エンドポイントMicrosoft エンドポイント マネージャーが](security-config-management.md#connectivity-requirements)開いているか確認します。|
+|`10`,`42`|一般的なハイブリッド参加の失敗|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生し、OS がハイブリッド参加を実行できなかった。 OS [レベルのハイブリッドAzure Active Directory失敗の](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)トラブルシューティングには、ハイブリッド デバイスに参加しているデバイスのトラブルシューティングを使用します。|
+|`15`|テナントの不一致|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、Microsoft Defender for Endpoint テナント ID がテナント ID と一致しないので、セキュリティ構成管理フローにAzure Active Directoryでした。 Defender for Endpoint テナントAzure Active Directoryのテナント ID が、ドメインの SCP エントリのテナント ID と一致する必要があります。 詳細については、「Microsoft Defender for Endpoint のセキュリティ管理」に関連するオン [ボーディングの問題のトラブルシューティングを参照してください](troubleshoot-security-config-mgt.md)。|
+|`16`,`17`|ハイブリッド エラー - サービス接続ポイント|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、サービス接続ポイント (SCP) レコードが正しく構成されていないので、デバイスをデバイスに参加Azure AD。 これは、SCP が DRS に参加するように構成Enterprise可能性があります。 ベスト プラクティスに従って SCP レコードAAD SCP が構成されていることを確認します。 詳細については、「サービス接続ポイント [の構成」を参照してください](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point)。|
+|`18`|証明書エラー|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、デバイス証明書エラーが原因でセキュリティ構成管理フローにエラーが発生しました。 デバイス証明書は、別のテナントに属します。 信頼できる証明書プロファイルを作成するときにベスト プラクティスが [実行されるのを確認します](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles)。|
 |`36`|LDAP API エラー|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生しました。 ネットワーク トポロジを確認し、ハイブリッド参加要求を完了するために LDAP API が使用できる必要があります。|
-|`37`|オンプレミス同期の問題|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生しました。 後でもう一度お試しください。 それでも問題が解決しない場合は、「オブジェクト同期と同期[のトラブルシューティング」をAzure AD Connectしてください](/azure/active-directory/hybrid/tshoot-connect-objectsync)。|
-|`38`,`41`|DNS エラー|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、DNS エラーが原因でセキュリティ構成管理フローにエラーが発生しました。 デバイスのインターネット接続や DNS 設定を確認します。 無効な DNS 設定がワークステーション側にある可能性があります。 Active Directory では、ドメイン DNS を使用して (ルーターのアドレスではなく) 正しく動作する必要があります。 詳細については、「Security Management for Microsoft Defender for Endpoint」に関連するオンボードの問題 [のトラブルシューティングを参照してください](troubleshoot-security-config-mgt.md)。|
+|`37`|オンプレミス同期の問題|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生しました。 後でもう一度お試しください。 それでも問題が解決しない場合は、「Troubleshoot [object sync with Azure AD Connect参照してください](/azure/active-directory/hybrid/tshoot-connect-objectsync)。|
+|`38`,`41`|DNS エラー|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、DNS エラーが原因でセキュリティ構成管理フローにエラーが発生しました。 デバイスのインターネット接続や DNS 設定を確認します。 無効な DNS 設定がワークステーション側にある可能性があります。 Active Directory では、ドメイン DNS を使用して (ルーターのアドレスではなく) 正しく動作する必要があります。 詳細については、「Security Management [for Microsoft Defender for Endpoint](troubleshoot-security-config-mgt.md)」に関連するオンボードの問題のトラブルシューティングを参照してください。|
 |`40`|クロック同期の問題|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生しました。 クロックが正しく設定され、エラーが発生したデバイスで同期されていることを確認します。|
 
 ## <a name="azure-active-directory-runtime-troubleshooting"></a>Azure Active Directoryランタイムのトラブルシューティング
 
-### <a name="azure-active-directory-runtime"></a>Azure Active Directoryランタイム
+### <a name="azure-active-directory-runtime"></a>Azure Active Directory ランタイム
 
-ランタイム (AADRT) のAzure Active Directoryする主なメカニズムは、デバッグ トレースを収集します。 Azure Active Directory ランタイム on Windows は **、ID bd67e65c-9cc2-51d8-7399-0bb9899e75c1** を持つ ETW プロバイダーを使用します。 ETW トレースは、エラーの再現と一緒にキャプチャする必要があります (たとえば、結合エラーが発生した場合は、参加を実行するために AADRT API の呼び出しをカバーする期間、トレースを有効にする必要があります)。
+ランタイム (AADRT) のAzure Active Directoryする主なメカニズムは、デバッグ トレースを収集します。 Azure Active Directoryランタイム Windows **ID bd67e65c-9cc2-51d8-7399-0bb9899e75c1** を持つ ETW プロバイダーを使用します。 ETW トレースは、エラーの再現と一緒にキャプチャする必要があります (たとえば、結合エラーが発生した場合は、参加を実行するために AADRT API の呼び出しをカバーする期間、トレースを有効にする必要があります)。
 
 AADRT ログの一般的なエラーと読み方については、以下を参照してください。
 
-![イベント プロパティのイメージ](images/event-properties.png)
+:::image type="content" source="images/event-properties.png" alt-text="イベントのプロパティ ページ" lightbox="images/event-properties.png":::
 
-メッセージの情報から、ほとんどの場合、発生したエラー、エラーが返された Win32 API 、使用された URL (該当する場合)、および発生した AAD ランタイム API エラーを理解できます。
+メッセージの情報から、ほとんどの場合、どのようなエラーが発生したのか、エラーが返された Win32 API、使用された URL (該当する場合)、および AAD ランタイム API エラーが発生したかを理解できます。
 
 ## <a name="instructions-for-applying-computer-join-rule-in-aad-connect"></a>コンピューターの参加ルールをコンピューターに適用するAAD Connect
 
-Windows Server 2012 R2 ドメインに参加しているコンピューター上の Microsoft Defender for Endpoint のセキュリティ管理では、Azure AD Connect 同期ルール "in from AD-Computer Join" への更新が必要です。 これは、ルールを複製して変更することで実現できます。これにより、元の "In from AD - Computer Join" ルールが無効にされます。 Azure AD Connect既定では、組み込みのルールを変更する場合にこのエクスペリエンスが提供されます。
+Windows Server 2012 R2 ドメインに参加しているコンピューター上の Microsoft Defender for Endpoint のセキュリティ管理では、Azure AD Connect 同期ルール "In from AD-Computer Join" の更新が必要です。 これは、ルールを複製して変更することで実現できます。これは、元の "In from AD - Computer Join" ルールを無効にします。 Azure AD Connect既定では、組み込みのルールを変更する場合にこのエクスペリエンスが提供されます。
 
 > [!NOTE]
 >これらの変更は、サーバーが実行されているサーバー AAD Connect必要があります。 複数のインスタンスが展開されているAAD Connect、これらの変更をすべてのインスタンスに適用する必要があります。
 
-1. スタート メニューから同期ルール エディター アプリケーションを開きます。 ルールの一覧で、[コンピューターの参加] の **[AD] という名前のルールを探します**。 **このルールの [優先順位] 列の値に注意してください。**
+1. スタート メニューから同期ルール エディター アプリケーションを開きます。 ルールの一覧で、[コンピューターの参加] の [AD **] という名前のルールを探します**。 **このルールの [優先順位] 列の値に注意してください。**
 
-    ![同期ルール エディターのイメージ](images/57ea94e2913562abaf93749d306dd6cf.png)
+   :::image type="content" source="images/57ea94e2913562abaf93749d306dd6cf.png" alt-text="同期ルール エディター" lightbox="images/57ea94e2913562abaf93749d306dd6cf.png":::
 
-2. In from **AD – Computer Join** ルールが強調表示されている場合は、[編集] を **選択します**。 [予約ルール **の確認の編集] ダイアログ ボックスで** 、[はい] を **選択します**。
+2. [In **from AD – コンピューター参加] ルールが** 強調表示されている場合は、[編集] を **選択します**。 [予約ルール **の確認の編集] ダイアログ ボックスで** 、[はい] を **選択します**。
 
-   ![予約済みルールの編集確認のイメージ](images/8854440d6180a5580efda24110551c68.png)
+   :::image type="content" source="images/8854440d6180a5580efda24110551c68.png" alt-text="予約済みルールの編集の確認ページ" lightbox="images/8854440d6180a5580efda24110551c68.png":::
 
 3. [ **受信同期ルールの編集] ウィンドウ** が表示されます。 このルールを使用して、サーバー 2012R2 Windows同期される点に注意するルールの説明を更新します。 優先順位の値を除き、他のすべてのオプションは変更しないでください。 元のルールの値よりも高い優先順位の値を入力します (ルール一覧に表示されます)。
 
-   ![確認の画像](images/ee0f29162bc3f2fbe666c22f14614c45.png)
+   :::image type="content" source="images/ee0f29162bc3f2fbe666c22f14614c45.png" alt-text="値を入力する [受信同期ルールの編集] ページ" lightbox="images/ee0f29162bc3f2fbe666c22f14614c45.png":::
 
-4. [次 **へ] を 3** 回選択します。 これにより、ルールの [変換] セクションに移動します。 ルールの 'スコープ フィルター' セクションと 'Join rules' セクションに変更を加えな [変換] セクションが表示されます。
+4. [次 **へ] を** 3 回選択します。 これにより、ルールの [変換] セクションに移動します。 ルールの 'スコープ フィルター' セクションと 'Join rules' セクションに変更を加えな [変換] セクションが表示されます。
 
-    ![受信同期ホーンルールのイメージ](images/296f2c2a705e41233631c3784373bc23.png)
+   :::image type="content" source="images/296f2c2a705e41233631c3784373bc23.png" alt-text="受信同期ルール" lightbox="images/296f2c2a705e41233631c3784373bc23.png":::
 
 5. 変換の一覧の一番下までスクロールします。 **cloudFiltered 属性の変換を検索** します。 [ソース] 列の **テキスト ボックス** で、すべてのテキスト (Control-A) を選択して削除します。 これで、テキスト ボックスは空になります。
 

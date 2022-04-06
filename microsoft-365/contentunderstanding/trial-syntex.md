@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: 組織のユーザー向け試用版パイロット プログラムを計画、サインアップ、SharePoint Syntexする方法について学習します。
-ms.openlocfilehash: c3f081654e7661e5c298bab15da90d8337dfc418
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: fc4221b0022aca8a0564c78e64d94028f6483104
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473631"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507101"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の試用版を実行SharePoint Syntex
 
@@ -44,7 +44,7 @@ ms.locfileid: "64473631"
     2. [**BillingPurchase** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Services] に移動します**</a>。
     3. **[アドオン]** セクションまで下にスクロールします。
     4. [詳細] タイルSharePoint Syntex詳細] を **選択します**。
-    5. **[無料試用版を取得]** を選択します。
+    5. [無料 **試用版の開始] を選択します**。
     6. 試用版を確認するには、残りのウィザードの手順に従います。
 
 試用版をアクティブにするには、Microsoft 365管理者または請求管理者である必要があります。
@@ -112,4 +112,4 @@ ms.locfileid: "64473631"
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft SharePoint Syntex導入: 開始する](adoption-getstarted.md)
+[Microsoft SharePoint Syntex導入: 概要](adoption-getstarted.md)

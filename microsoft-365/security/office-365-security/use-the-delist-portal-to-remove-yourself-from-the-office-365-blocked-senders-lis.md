@@ -20,12 +20,12 @@ ms.custom:
 description: この記事では、リストから削除するポータルを使用して、受信拒否リストから自分を削除Microsoft 365について学習します。 これは、アドレス 5.7.511 Access が拒否したエラーに対する最良の応答です。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 58ddb2913ce7ecd047b1d5acb360c8f4c9ff5074
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 627e8f91c9d4730fed6a7fca275e9d53e1dfd7fd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775788"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474797"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>拒否された送信者リストとアドレス 5.7.511 Access 拒否エラーから自分を削除するには、リストから削除するポータルを使用します。
 
@@ -65,7 +65,8 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
 
     ポータルは、指定したメール アドレスにメールを送信します。次のようなメールです。
 
-    ![一覧削除ポータルから要求を送信するときに受信した電子メールのスクリーンショット。](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    :::image type="content" source="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png" alt-text="一覧削除ポータルから要求を送信するときに受信した電子メール" lightbox="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png":::
+
 
 4. リストから除外のポータルから受信したメールの中にある確認のリンクをクリックします。
 

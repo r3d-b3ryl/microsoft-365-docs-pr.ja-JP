@@ -1,5 +1,5 @@
 ---
-title: 手順 7. 情報保護機能を備えたデータ損失防止 (DLP) を実装する
+title: 手順 7.情報保護機能を使用してデータ損失防止 (DLP) を実装する
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -21,21 +21,21 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: 情報保護とガバナンス チームと協力して組織の DLP ポリシーを作成することで、エンドポイント DLP を実装します。
-ms.openlocfilehash: 747a8ca3cd8301b83bfb98401989e21946248981
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
-ms.translationtype: HT
+ms.openlocfilehash: 605923c377aca77f84861116b38b6ef07f95ca4f
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049289"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651303"
 ---
-# <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>手順 7. 情報保護機能を備えたデータ損失防止 (DLP) を実装する.
+# <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>手順 7.情報保護機能を使用してデータ損失防止 (DLP) を実装する
 
 
 組織がすでにデータの理解、データ機密性スキーマの開発、およびスキーマの適用に時間を費やしている場合は、データ損失防止 (DLP) ポリシーを使用して、このスキーマの要素をエンドポイントに拡張する準備ができている可能性があります。 
 
 Microsoft Endpoint データ損失防止 (Endpoint DLP) は現在、次の対象に適用されます。
 - Windows 10、Windows 11
-- MacOS
+- macOS
 
 DLP ポリシーは、情報保護およびガバナンス チームによって作成されます。 各 DLP ポリシーは、機密情報の種類やラベルなど、データ セット内で検索する要素と、このデータを保護する方法を定義します。 
 
@@ -47,7 +47,7 @@ DLP ポリシーは、Exchange メールや SharePoint サイトなど、ポリ�
 
 ![デバイス管理者向けのエンドポイント DLP 手順](../media/devices/endpoint-dlp-steps.png#lightbox)
 
-「[手順 2. デバイスを管理に登録する](manage-devices-with-intune-enroll.md)」と[手順 6. デデバイスを Defender for Endpoint に登録して、デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する](manage-devices-with-intune-monitor-risk.md)を完了した場合、デバイスはすでにエンドポイント DLP に対して有効になっています。 
+手順 2. を完了した場合[。Intune](manage-devices-with-intune-enroll.md)と手順 6 にデバイスを登録[します。デバイスを Defender for Endpoint に登録して、デバイスのリスクとセキュリティ ベースラインへの準拠を監視](manage-devices-with-intune-monitor-risk.md)します。デバイスはエンドポイント DLP に対して既に有効になっています。 
 
 
 情報保護チームを使用するには、次の手順を使用します。

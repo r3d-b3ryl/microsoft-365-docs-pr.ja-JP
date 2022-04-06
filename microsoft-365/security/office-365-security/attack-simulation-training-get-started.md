@@ -1,7 +1,7 @@
 ---
 title: 攻撃シミュレーション トレーニングの使用を開始する
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,35 +9,40 @@ audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
 search.appverid:
-  - MET150
-  - MOE150
-ms.assetid: null
+- MET150
+- MOE150
+ms.assetid: ''
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.custom:
-  - seo-marvel-apr2020
-description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5 または Microsoft Defender でシミュレートされたフィッシング攻撃とパスワード攻撃を実行して、Office 365プラン 2 組織に対して実行する方法について説明します。
+- seo-marvel-apr2020
+description: 管理者は、攻撃シミュレーション トレーニングを使用して、シミュレーションされたフィッシング攻撃とパスワード攻撃を自分の組織またはプラン 2 組織Microsoft 365 E5 Microsoft Defender for Office 365学習できます。
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 244d0ae912a5cc2dc163b62f44b44877c0318b88
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507413"
 ---
-
-# <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Defender での攻撃シミュレーション トレーニングの使用を開始Office 365
+# <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>概要での攻撃シミュレーション トレーニングの使用Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Microsoft Defender for** [Office 365プラン 2 に適用されます](defender-for-office-365.md)
+**プラン** [2 Microsoft Defender for Office 365に適用されます。](defender-for-office-365.md)
 
-組織に Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 (脅威調査と対応機能を含む) がある[](office-365-ti.md)場合は、Microsoft 365 Defender ポータルで攻撃シミュレーション トレーニングを使用して、組織で現実的な攻撃シナリオを実行できます。 これらのシミュレートされた攻撃は、実際の攻撃が一番下の行に影響を与える前に、脆弱なユーザーを特定して見つけるのに役立ちます。 詳細については、この記事を参照してください。
+組織に脅威の調査と応答機能を含む Microsoft 365 E5 または Microsoft Defender for Office 365 プラン 2 がある場合は[](office-365-ti.md)、Microsoft 365 Defender ポータルで攻撃シミュレーション トレーニングを使用して、組織内で現実的な攻撃シナリオを実行できます。 これらのシミュレートされた攻撃は、実際の攻撃が一番下の行に影響を与える前に、脆弱なユーザーを特定して見つけるのに役立ちます。 詳細については、この記事を参照してください。
 
 > [!NOTE]
-> 攻撃シミュレーション のトレーニングは、脅威管理攻撃シミュレーターのセキュリティ & コンプライアンス センターで使用された古い攻撃シミュレーター v1  \> エクスペリエンスを **置き換** える。<https://protection.office.com/attacksimulator>
+> 攻撃シミュレーション トレーニングは、脅威管理攻撃シミュレーターのセキュリティ &コンプライアンス センターで使用された古い攻撃シミュレーター v1  \> エクスペリエンスを **置き換** える。<https://protection.office.com/attacksimulator>
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 攻撃シミュレーション のトレーニングは、メールと **コラボレーションの攻撃シミュレーション トレーニング** \> **で利用できます**。 攻撃シミュレーション のトレーニングに直接移動するには、 を使用します <https://security.microsoft.com/attacksimulator>。
 
-- さまざまなサブスクリプション間で攻撃シミュレーション トレーニングを利用Microsoft 365詳細については、「[Microsoft Defender for Office 365」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+- さまざまなサブスクリプション間での攻撃シミュレーション トレーニングの可用性の詳細については、「Microsoft 365サービスのMicrosoft Defender for Office 365[参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
 - この記事の手順を実行 **するには、Azure Active Directory** にアクセス許可を割り当てる必要があります。 具体的には、次のいずれかの役割のメンバーである必要があります。
   - **グローバル管理者**
@@ -56,7 +61,7 @@ ms.prod: m365-security
   > [!NOTE]
   > NOR、ZAF、ARE、DEU が最新の追加です。 報告された電子メールテレメトリを除くすべての機能は、これらの地域で利用できます。 これを有効にし、報告された電子メールテレメトリが利用可能になったらすぐにお客様に通知します。
 
-- 2021 年 6 月 15 日現在、攻撃シミュレーション のトレーニングは、GCC。 組織に Office 365 G5 GCC または Microsoft Defender for Office 365 (プラン 2) がある場合は、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングを使用して、この記事で説明したように、組織で現実的な攻撃シナリオを実行できます。 攻撃シミュレーションのトレーニングは、High 環境または DoD 環境GCCまだ利用できません。
+- 2021 年 6 月 15 日現在、攻撃シミュレーション トレーニングは、GCC。 組織に Office 365 G5 GCC または Microsoft Defender for Office 365 (プラン 2) がある場合は、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングを使用して、この記事で説明したように、組織で現実的な攻撃シナリオを実行できます。 攻撃シミュレーション のトレーニングは、High 環境または DoD 環境GCCまだ利用できません。
 
 > [!NOTE]
 > 攻撃シミュレーショントレーニングは、E3 のお客様に試用版として機能のサブセットを提供します。 試用版には、Credential Harvest ペイロードを使用する機能と、'ISA フィッシング' または 'マス マーケット フィッシング' トレーニング エクスペリエンスを選択する機能が含まれています。 他の機能は、E3 試用版の一部です。
@@ -78,7 +83,7 @@ ms.prod: m365-security
 - **ドライブバイ URL**: 攻撃者は、URL を含むメッセージを受信者に送信します。 受信者が URL をクリックすると、バックグラウンド コードを実行しようとする Web サイトにアクセスされます。 このバックグラウンド コードは、受信者に関する情報を収集したり、デバイスに任意のコードを展開したりします。 通常、リンク先の Web サイトは、侵害された既知の Web サイトまたは既知の Web サイトの複製です。 Web サイトに関する理解は、リンクが安全にクリックできるとユーザーに理解を深めさせるのに役立ちます。 この手法は、ウォーターホール攻撃 _とも呼ばれる_。
 
 > [!NOTE]
-> フィッシング キャンペーンで URL を使用する前に、サポートされている Web ブラウザーでシミュレートされたフィッシング URL の可用性を確認してください。 多くの URL レピュテーション ベンダーと一緒に、これらのシミュレーション URL を常に許可しますが、必ずしも完全な範囲 (Google セーフ ブラウズなど) を持つとは限らない。 ほとんどのベンダーは、特定の URL (たとえば) を常に許可できるガイダンスを提供します <https://support.google.com/chrome/a/answer/7532419>。
+> フィッシング キャンペーンで URL を使用する前に、サポートされている Web ブラウザーでシミュレートされたフィッシング URL の可用性を確認してください。 多くの URL レピュテーション ベンダーと一緒にこれらのシミュレーション URL を常に許可しますが、必ずしも完全な範囲 (Google セーフ ブラウズなど) を持つとは限らない。 ほとんどのベンダーは、特定の URL (たとえば) を常に許可できるガイダンスを提供します <https://support.google.com/chrome/a/answer/7532419>。
 
 攻撃シミュレーション トレーニングで使用される URL については、次の一覧で説明します。
 
@@ -120,4 +125,4 @@ ms.prod: m365-security
 レポートで分析情報を得る方法の手順については、「攻撃シミュレーション トレーニングを通じてインサイトを得る [」を参照してください](attack-simulation-training-insights.md)。
 
 > [!NOTE]
-> 攻撃シミュレーターでは、Office 365 用 Defender の セーフ リンクを使用して、フィッシング キャンペーンの対象受信者に送信されるペイロード メッセージ内の URL のクリック データを安全に追跡します 。セーフ Links ポリシーの [ユーザークリックを追跡しない] 設定がオンになっている場合でもです。
+> 攻撃シミュレーターでは、Defender for Office 365 の セーフ リンクを使用して、フィッシング キャンペーンの対象受信者に送信されるペイロード メッセージ内の URL のクリック データを安全に追跡します 。セーフ Links ポリシーの [ユーザーのクリックの追跡] 設定がオフになっている場合でもです。

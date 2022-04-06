@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b707a6f684df6b9888fb8f2d50c4bba9a6dd3195
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 71755add523b3426d144f748ab3582e3a3975dc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324173"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475237"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストのデバイスを調査する
 
@@ -53,7 +53,7 @@ ms.locfileid: "63324173"
 - タブ (概要、アラート、タイムライン、セキュリティ推奨事項、ソフトウェア インベントリ、検出された脆弱性、不足している KB)
 - カード (アクティブなアラート、ログオンしているユーザー、セキュリティ評価)
 
-![デバイス ビューのイメージ。](images/specific-device.png)
+:::image type="content" source="images/specific-device.png" alt-text="デバイス ビュー" lightbox="images/specific-device.png":::
 
 > [!NOTE]
 > 製品の制約により、デバイス プロファイルは 、(デバイス ページにも見られる) 'Last Seen' 時間枠を決定する際に、すべてのサイバー証拠を考慮する必要があります。
@@ -91,13 +91,13 @@ ms.locfileid: "63324173"
 
 [ **概要]** タブには、アクティブ [なアラート](#cards) 、ログオンしているユーザー、およびセキュリティ評価のカードが表示されます。
 
-![デバイス ページの [概要] タブのイメージ。](images/overview-device.png)
+:::image type="content" source="images/overview-device.png" alt-text="デバイス ページの [概要] タブ" lightbox="images/overview-device.png":::
 
 ### <a name="alerts"></a>アラート
 
 [ **アラート]** タブには、デバイスに関連付けられているアラートの一覧が表示されます。 このリストは、アラート キューのフィルター処理[](alerts-queue.md)されたバージョンで、アラート、重大度 (高、中、低、情報)、キュー内の状態 (新規、進行中、解決済み)、分類 (設定されていない、誤ったアラート、真のアラート)、調査状態、アラートのカテゴリ、アラートに対処しているユーザー、および最後のアクティビティの短い説明を示します。 アラートをフィルター処理することもできます。
 
-![デバイスに関連するアラートのイメージ。](images/alerts-device.png)
+:::image type="content" source="images/alerts-device.png" alt-text="デバイスに関連するアラートのタブ" lightbox="images/alerts-device.png":::
 
 アラートの左側にある円のアイコンが選択されている場合は、フライアウトが表示されます。 このパネルでは、アラートを管理し、インシデント番号や関連デバイスなどの詳細を表示できます。 一度に複数のアラートを選択できます。
 
@@ -118,7 +118,7 @@ ms.locfileid: "63324173"
 > - [5031](/windows/security/threat-protection/auditing/event-5031) - アプリケーションがネットワーク上の受信接続を受け入れるのをブロックする
 > - [5157](/windows/security/threat-protection/auditing/event-5157) - ブロックされた接続
 
-![イベントを含むデバイス タイムラインのイメージ。](images/timeline-device.png)
+:::image type="content" source="images/timeline-device.png" alt-text="イベントを含むデバイスタイムライン" lightbox="images/timeline-device.png":::
 
 一部の機能には、次の機能が含まれます。
 
@@ -146,30 +146,30 @@ ms.locfileid: "63324173"
 
 イベントと関連するイベントをさらに調査するには、[関連イベントのハント] [](advanced-hunting-overview.md) を選択して高度な検索クエリ **をすばやく実行できます**。 クエリは、選択したイベントと、同じエンドポイントで同時に発生した他のイベントの一覧を返します。
 
-![イベントの詳細パネルのイメージ。](images/event-details.png)
+:::image type="content" source="images/event-details.png" alt-text="イベントの詳細パネル" lightbox="images/event-details.png":::
 
 ### <a name="security-recommendations"></a>セキュリティ上の推奨事項
 
 **セキュリティに関する推奨事項** は、Microsoft Defender for Endpoint の Threat & [管理機能から生成](tvm-dashboard-insights.md) されます。 推奨事項を選択すると、推奨事項の説明や、推奨事項の制定に関連する潜在的なリスクなどの関連する詳細を表示できるパネルが表示されます。 詳細については [、「セキュリティに関する推奨事項](tvm-security-recommendation.md) 」を参照してください。
 
-![[セキュリティの推奨事項] タブのイメージ。](images/security-recommendations-device.png)
+:::image type="content" source="images/security-recommendations-device.png" alt-text="[セキュリティの推奨事項] タブ" lightbox="images/security-recommendations-device.png":::
 
 ### <a name="software-inventory"></a>ソフトウェア インベントリ
 
 [ **ソフトウェア インベントリ]** タブでは、デバイス上のソフトウェアと、弱点や脅威を表示できます。 ソフトウェアの名前を選択すると、ソフトウェアの詳細ページに移動し、セキュリティの推奨事項、検出された脆弱性、インストールされているデバイス、およびバージョン配布を表示できます。 詳細については [、「ソフトウェア インベントリ」](tvm-software-inventory.md) を参照してください。
 
-![[ソフトウェア インベントリ] タブのイメージ。](images/software-inventory-device.png)
+:::image type="content" source="images/software-inventory-device.png" alt-text="[ソフトウェア インベントリ] タブ" lightbox="images/software-inventory-device.png":::
 
 ### <a name="discovered-vulnerabilities"></a>検出された脆弱性
 
 [ **検出された脆弱性]** タブには、デバイスで検出された脆弱性の名前、重大度、および脅威の分析情報が表示されます。 特定の脆弱性を選択すると、説明と詳細が表示されます。
 
-![[検出された脆弱性] タブの画像。](images/discovered-vulnerabilities-device.png)
+:::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="[検出された脆弱性] タブ" lightbox="images/discovered-vulnerabilities-device.png":::
 
 ### <a name="missing-kbs"></a>不足している KB
 [ **不足している KB]** タブには、デバイスの不足しているセキュリティ更新プログラムが一覧表示されます。
 
-![不足している kbs タブのイメージ。](images/missing-kbs-device.png)
+:::image type="content" source="images/missing-kbs-device.png" alt-text="[不足している KB] タブ" lightbox="images/missing-kbs-device.png":::
 
 ## <a name="cards"></a>カード
 
@@ -177,7 +177,7 @@ ms.locfileid: "63324173"
 
 Microsoft Defender for Identity 機能を有効にし、アクティブなアラートがある場合、Azure Advanced **Threat Protection** カードには、デバイスとそのリスク レベルに関連するアラートの概要が表示されます。 詳細については、「アラート」ドリルダウンで確認できます。
 
-![アクティブなアラート カードのイメージ。](images/risk-level-small.png)
+:::image type="content" source="images/risk-level-small.png" alt-text="アクティブなアラート カード" lightbox="images/risk-level-small.png":::
 
 > [!NOTE]
 > この機能を使用するには、Microsoft Defender for Identity と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。
@@ -186,7 +186,7 @@ Microsoft Defender for Identity 機能を有効にし、アクティブなアラ
 
 [ **ログオンユーザー] カード** には、過去 30 日間にログオンしたユーザーの数と、最も頻度の少ないユーザーが表示されます。 [すべてのユーザーを表示する] リンクを選択すると、詳細ウィンドウが開き、ユーザーの種類、ログオンの種類、ユーザーが最初と最後に表示された時間などの情報が表示されます。 詳細については、「ユーザー エンティティの [調査」を参照してください](investigate-user.md)。
 
-![ユーザーの詳細ウィンドウのイメージ。](images/logged-on-users.png)
+:::image type="content" source="images/logged-on-users.png" alt-text="[ユーザーの詳細] ウィンドウ" lightbox="images/logged-on-users.png":::
 
 > [!NOTE]
 > 「最も頻繁に」ユーザー値は、対話的に正常にログオンしたユーザーの証拠にのみ基づいて計算されます。
@@ -196,7 +196,7 @@ Microsoft Defender for Identity 機能を有効にし、アクティブなアラ
 
 セキュリティ **評価カードには** 、全体的な露出レベル、セキュリティ推奨事項、インストール済みソフトウェア、および検出された脆弱性が表示されます。 デバイスの露出レベルは、保留中のセキュリティ推奨事項の累積的な影響によって決まります。
 
-![セキュリティ評価カードのイメージ。](images/security-assessments.png)
+:::image type="content" source="images/security-assessments.png" alt-text="セキュリティ評価カード" lightbox="images/security-assessments.png":::
 
 ## <a name="related-topics"></a>関連項目
 

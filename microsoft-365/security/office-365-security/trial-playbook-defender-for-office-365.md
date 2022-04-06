@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Defender for Office 365 ソリューション試用版のプレイブック。
-ms.openlocfilehash: b8a0fedd01a3769f2ccf8952bd9e7bce0974a2f0
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 1e943cc36d7a8787a41e16d61b15fe9e2eea129c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683211"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474885"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>試用版プレイブック: Microsoft Defender for Office 365
 
 Microsoft Defender for Office 365 試用版のプレイブックへようこそ。 このプレイブックでは、Defender for Office 365 を使用して組織を保護する方法を説明し、90 日間の無料試用版を最大限に活用するサポートを行います。 Microsoft 推奨事項を使用して、Defender for Office 365 が、保護ポリシーの定義、組織への脅威の分析、攻撃への対応にどのように役立つ方法を説明します。
 
-![Microsoft Defender for Office 365 のすべてのコンポーネントをグラフィカルに表示します。](../../media/mdo-trial-playbook-what-is-mdo.png)
+:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="Microsoft Defender for Office 365 のすべてのコンポーネントのグラフィカル表示" lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
 
 これらのアクションは、90 日間の試用版で利用できる主要な機能に関する Microsoft Defender チームの推奨事項です。
 
@@ -61,7 +61,7 @@ Defender for Office 365 のレポート機能を使用して、環境の詳細�
 - [メールフロー進捗レポート](view-email-security-reports.md#mailflow-status-report)を使用して、脅威がブロックされている場所を確認します。
 - ユーザーが表示した、またはシステムがブロックした[リンクを確認します](view-reports-for-mdo.md#url-protection-report)。
 
-![Microsoft 365 Defender ポータルのメールと共同作業のレポート。](../../media/mdo-trial-playbook-reporting.png)
+:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="Microsoft 365 Defender ポータルのメールと共同作業のレポート" lightbox="../../media/mdo-trial-playbook-reporting.png":::
 
 ## <a name="step-2-intermediate-steps"></a>手順 2: 中間ステップ
 
@@ -75,7 +75,7 @@ Defender for Office 365 の「優先アカウント保護」を使用して、�
 
 詳細については、以下のビデオをご覧ください。[Microsoft Defender for Office 365 での優先アカウントの保護 - YouTube](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11)。
 
-![Microsoft 365 Defender ポータルのアラート。](../../media/mdo-trial-playbook-alerts.png)
+:::image type="content" source="../../media/mdo-trial-playbook-alerts.png" alt-text="Microsoft 365 Defender ポータルのアラート" lightbox="../../media/mdo-trial-playbook-alerts.png":::
 
 ### <a name="avoid-costly-breaches-by-preventing-user-compromise"></a>ユーザーの侵害を防いでコストのかかる侵害を回避
 
@@ -84,7 +84,7 @@ Defender for Office 365 の「優先アカウント保護」を使用して、�
 - [侵害されたユーザーの警告](address-compromised-users-quickly.md#compromised-user-alerts)を確認します。
 - 侵害されたユーザーへの[脅威の調査と対応](address-compromised-users-quickly.md)。
 
-![侵害されたユーザーを調査します。](../../media/mdo-trial-playbook-investigation.png)
+:::image type="content" source="../../media/mdo-trial-playbook-investigation.png" alt-text="侵害されたユーザーの調査" lightbox="../../media/mdo-trial-playbook-investigation.png":::
 
 詳細については、以下のビデオをご覧ください。[Microsoft Defender for Office 365 での侵害の検出と対応 - YouTube](https://www.youtube.com/watch?v=Pc7y3a-wdR0&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=5)。
 
@@ -104,7 +104,7 @@ Defender for Office 365 のキャンペーン ビューを使用して、組織�
 - 攻撃の[範囲を可視化します](campaigns.md#campaign-views-in-the-microsoft-365-defender-portal)。
 - これらのメッセージを使用して[ユーザーの操作を追跡します](campaigns.md#campaign-details)。
 
-![Microsoft 365 Defender での攻撃活動の詳細。](../../media/mdo-trial-playbook-campaign-details.png)
+  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="Microsoft 365 Defender ポータルでの攻撃活動の詳細" lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
 
 詳細については、以下のビデオをご覧ください。[Microsoft Defender for Office 365 でのキャンペーン ビュー - YouTube](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14)。
 
@@ -116,7 +116,7 @@ Defender for Office 365 のキャンペーン ビューを使用して、組織�
 - 調査の[詳細と結果を表示します](email-analysis-investigations.md)。
 - [修復処理を承認する](air-remediation-actions.md)ことで、脅威を排除します。
 
-![調査結果。](../../media/mdo-trial-playbook-investigation-results.png)
+:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="調査結果" lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
 
 ## <a name="step-3-advanced-content"></a>手順 3: 高度なコンテンツ
 
@@ -137,7 +137,7 @@ Defender for Office 365 の攻撃シミュレーション トレーニングを�
 - シミュレーション結果に基づいて、ユーザーに[トレーニングを割り当てます](attack-simulation-training.md#assign-training)。
 - シミュレーションやトレーニング完了時の組織の[進捗状況を追跡します](attack-simulation-training-insights.md)。
 
-![Microsoft 365 Defender ポータルでの攻撃シミュレーション トレーニングの分析情報。](../../media/mdo-trial-playbook-attack-simulation-training-results.png)
+  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="Microsoft 365 Defender ポータルでの攻撃シミュレーション トレーニングの分析情報" lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
 
 ## <a name="additional-resources"></a>その他のリソース
 

@@ -20,13 +20,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Microsoft 365 管理センターで、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 の試用版または有料サブスクリプションをキャンセルする方法について説明します。
-ms.date: 01/20/2022
-ms.openlocfilehash: 82d579cab43b2c1edd7cc3bd898f2397bbd7a435
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 03/31/2022
+ms.openlocfilehash: d6b6c078c5f0d1b44143f3a9cc2d336a0a80fe03
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320089"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595282"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -49,11 +49,11 @@ ms.locfileid: "63320089"
 
 ### <a name="if-you-have-a-billing-profile"></a>請求プロファイルがある場合
 
-サブスクリプションの開始または更新後 72 時間以内にキャンセルした場合にのみ、キャンセルして日割り計算されたクレジットを受け取るか、払い戻しを受けることができます。 この限られた時間枠内にキャンセルした場合、日割り計算された金額は次の請求書に含められるか、次の請求サイクルで返金されます。
+サブスクリプションの開始または更新後 7 日以内にキャンセルした場合にのみ、キャンセルして日割り計算されたクレジットを受け取るか、払い戻しを受けることができます。 この限られた時間枠内にキャンセルした場合、日割り計算された金額は次の請求書に含められるか、次の請求サイクルで返金されます。
 
-サブスクリプションの開始または更新後 72 時間以内にキャンセルする必要がある場合は、この記事で後述する「[サブスクリプションをキャンセルする手順](#steps-to-cancel-your-subscription)」を参照してください。
+サブスクリプションの開始または更新後 7 日以内にキャンセルする必要がある場合は、この記事で後述する「[サブスクリプションをキャンセルする手順](#steps-to-cancel-your-subscription)」を参照してください。
 
-72 時間以上経過した場合は、[継続請求をオフにします](renew-your-subscription.md)。 これにより、サブスクリプションに対してもう一度課金されるのを防ぎ、サブスクリプションの残りの期間、製品とサービスへのアクセスを維持できます。
+7 日以上経過した場合は、[継続請求を無効にします](renew-your-subscription.md)。これにより、サブスクリプションに対してもう一度課金されるのを防ぎ、サブスクリプションの残りの期間、製品とサービスへのアクセスを維持できます。
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>請求プロファイルがない場合
 
@@ -66,7 +66,7 @@ ms.locfileid: "63320089"
 |25 個以下のライセンス  | <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>でオンラインでの試用版または有料サブスクリプションを[キャンセルするには、以下の手順を使用します](#steps-to-cancel-your-subscription)。        |
 |25 個を越えるライセンス   | ライセンスの数を 25 個以下に減らしてから、[以下の手順を使用してキャンセルします](#steps-to-cancel-your-subscription)。      |
 
-ライセンスの数を減らすことができない場合は、[継続請求をオフにします](renew-your-subscription.md)。 これにより、サブスクリプションに対してもう一度課金されるのを防ぎ、サブスクリプションの残りの期間、製品とサービスへのアクセスを維持できます。
+ライセンスの数を減らすことができない場合は、[継続請求をオフにします](renew-your-subscription.md)。これにより、サブスクリプションに対してもう一度課金されるのを防ぎ、サブスクリプションの残りの期間、製品とサービスへのアクセスを維持できます。
 
 サブスクリプションをキャンセルできない場合は、[サポートにお問い合わせください](../../admin/get-help-support.md)。
 

@@ -79,8 +79,6 @@
           items:
             - name: ドメイン ユーザーを Microsoft 365 に同期する
               href: setup/manage-domain-users.md
-            - name: ドメインに参加している Windows 10 デバイスを管理できるようにする
-              href: setup/manage-windows-devices.md
             - name: Azure AD 参加済みデバイスからリソースにアクセスする
               href: setup/access-resources.md
     - name: Microsoft 365 管理センターの概要
@@ -349,7 +347,7 @@
         - name: Office 2013 の先進認証を有効にする
           href: security-and-compliance/enable-modern-authentication.md
         - name: データ保護のための前提条件
-          href: security-and-compliance/pre-requisites-for-data-protection.md
+          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection.md
         - name: 驚異の保護を強化する
           href: security-and-compliance/increase-threat-protection.md
         - name: Microsoft Defender ウイルス対策によって検出された脅威
@@ -357,7 +355,7 @@
         - name: 検出された脅威を確認して対処する
           href: security-and-compliance/review-threats-take-action.md
         - name: コンプライアンス機能をセットアップする
-          href: security-and-compliance/set-up-compliance.md
+          href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - name: セキュア スコア
           href: /microsoft-365/security/defender/microsoft-secure-score
         - name: GDPR コンプライアンスのガイド
@@ -369,37 +367,27 @@
         - name: Microsoft Intune ドキュメント
           href: /mem/intune/
         - name: ポリシーとデバイスを表示し編集する
-          href: devices/view-policies-and-devices.md
+          href: /microsoft-365/business-premium/view-policies-and-devices.md
         - name: 会社データを削除する
-          href: devices/remove-company-data.md
+          href: /microsoft-365/business-premium/m365bp-remove-company-data.md
         - name: デバイスを工場出荷時の設定にリセットする
           href: devices/reset-devices-to-factory-settings.md
         - name: 保護機能を Intune の設定にマップする
-          href: devices/map-protection-features-to-intune-settings.md
+          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md
         - name: デバイス状態
           href: devices/device-states.md
         - name: Windows 10 PC のアプリの保護設定
           href: devices/protection-settings-for-windows-10-devices.md
-        - name: Android および iOS のアプリ保護を設定する
-          href: devices/app-protection-settings-for-android-and-ios.md
-          items:
-            - name: Android または iOS の設定を検証する
-              href: devices/validate-settings-on-android-or-ios.md
-        - name: Windows 10 PC のデバイス保護設定を編集または作成する
-          href: devices/protection-settings-for-windows-10-pcs.md
-          items:
-            - name: Windows 10 PC の設定を検証する
-              href: devices/validate-settings-on-windows-10-pcs.md
+        - name: Android または iOS の設定を検証する
+          href: devices/validate-settings-on-android-or-ios.md
+        - name: Windows 10 PC の設定を検証する
+          href: devices/validate-settings-on-windows-10-pcs.md
         - name: Autopilot
           items:
-            - name: Autopilot デバイスとプロファイルを追加する
-              href: devices/add-autopilot-devices-and-profile.md
             - name: AutoPilot プロファイルを作成し編集する
-              href: devices/create-and-edit-autopilot-profiles.md
+              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles.md
             - name: AutoPilot デバイスを作成し編集する
               href: devices/create-and-edit-autopilot-devices.md
-            - name: AutoPilot プロファイルの設定
-              href: devices/autopilot-profile-settings.md
         - name: Microsoft 365 for enterprise のドキュメント
           href: ../enterprise/index.yml
         - name: 基本的なモビリティとセキュリティ

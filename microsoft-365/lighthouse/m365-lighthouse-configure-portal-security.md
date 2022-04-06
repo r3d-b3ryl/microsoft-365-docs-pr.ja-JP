@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseのセキュリティを構成する方法について説明します。
-ms.openlocfilehash: 4d12755ca1b02988dff3f5ba6be6dd0d8da172ad
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 532ce9d6e90ea4d502c6898a105702d525f05a1b
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594754"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632691"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>ポータル Microsoft 365 Lighthouseの構成
 
@@ -39,11 +39,11 @@ Managed Service Provider (MSP) がテナントにアクセス許可を委任し�
 
 役割ベースのアクセス制御 (RBAC) は、ユーザー の役割に基づいてリソースまたは情報へのアクセスを許可します。 ライトハウスの顧客テナントデータと設定へのアクセスは、CSP (クラウド ソリューション プロバイダー) プログラムからの特定の役割に制限されます。 ライトハウスで RBAC の役割を設定するには、ユーザーに対して詳細な割り当てを実装するために、詳細な委任管理者特権 (GDAP) を使用することをお勧めします。 テナントが正常にオンボードするには、引き続き委任された管理者特権 (DAP) が必要ですが、GDAP 専用のお客様は、DAP に依存せずにすぐにオンボードできます。 顧客に対して DAP と GDAP が共存する場合、GDAP アクセス許可が優先されます。 
 
-GDAP の使用を開始するには、「[アクセス](m365-lighthouse-overview-of-permissions.md)許可の概要」を参照Microsoft 365 Lighthouse。
+GDAP リレーションシップを設定するには、「顧客のサービスを管理するための詳細な管理者アクセス許可を取得 [する」を参照してください](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)。 ライトハウスを使用することをお勧めする役割の詳細については、「権限の概要」を参照[Microsoft 365 Lighthouse。](m365-lighthouse-overview-of-permissions.md)
 
 MSP 技術者は、代理管理者特権 (DAP) を介して管理者エージェントまたはヘルプデスク エージェントの役割を使用して、ライトハウスにアクセスすることもできます。
 
-ライトハウスでの顧客以外のテナント関連のアクション (オンボーディング、顧客の非アクティブ化/再アクティブ化、タグの管理、ログの確認など) の場合、MSP 技術者はパートナー テナントに割り当てられた役割を持っている必要があります。 前の記事リンクでは、ライトハウスでこのような役割とそのアクセス許可の詳細を説明します。
+ライトハウスでの顧客以外のテナント関連のアクション (オンボーディング、顧客の非アクティブ化/再アクティブ化、タグの管理、ログの確認など) の場合、MSP 技術者はパートナー テナントに割り当てられた役割を持っている必要があります。 パートナー [テナントの役割の詳細については、「Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md)のアクセス許可の概要」を参照してください。
 
 ## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>セットアップ Azure AD Privileged Identity Management (PIM)
 

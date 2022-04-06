@@ -13,12 +13,12 @@ description: 管理者は、セキュリティ & コンプライアンス セン
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: df4f9e79439d435059374dd066a5298ba73d329b
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e23d63a519bf69f94ce4990d8851d673826dcb5c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679656"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475083"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターで電子メールの分析情報を転送&ドメイン
 
@@ -37,11 +37,12 @@ ms.locfileid: "63679656"
 
 この分析情報は、問題が検出された場合にのみ表示され、[転送レポート] ページ [に表示](view-mail-flow-reports.md#forwarding-report) されます。
 
-![電子メールの分析情報を転送する新しいドメイン。](../../media/mfi-new-domains-being-forwarded.png)
+:::image type="content" source="../../media/mfi-new-domains-being-forwarded.png" alt-text="転送される新しいドメインの電子メール分析情報" lightbox="../../media/mfi-new-domains-being-forwarded.png":::
+
 
 ウィジェットをクリックすると、転送されたメッセージの詳細 (転送レポートへのリンクなど) を確認できるフライアウトが [表示されます](view-mail-flow-reports.md#forwarding-report)。
 
-![[転送中の新しいドメイン] をクリックした後に表示される詳細フライアウトメールの分析情報。](../../media/mfi-new-domains-being-forwarded-details.png)
+:::image type="content" source="../../media/mfi-new-domains-being-forwarded-details.png" alt-text="[転送される新しいドメイン] をクリックした後に表示される詳細のフライアウト" lightbox="../../media/mfi-new-domains-being-forwarded-details.png":::
 
 [レポート ダッシュボード] **または [**\>おすすめ情報] 領域の [上位の分析情報&を表示する] をクリックした後で、分析情報を選択 **すると、この** 詳細ページに **アクセス** することもできます<https://protection.office.com/insightdashboard>。
 

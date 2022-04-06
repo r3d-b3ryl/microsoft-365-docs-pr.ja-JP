@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouse、エラー メッセージと問題のトラブルシューティングと解決に関するヘルプを参照してください。
-ms.openlocfilehash: 957177dd20817f9b3d5fbc378f22b19eeaef1f7f
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+ms.openlocfilehash: 1bd98a90af19d60aba2e0891c3f993e77523a12c
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403679"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632363"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>問題とエラー メッセージのトラブルシューティングと解決を行Microsoft 365 Lighthouse
 
@@ -53,20 +53,20 @@ ms.locfileid: "64403679"
 
 **原因:** 顧客テナントが次の条件を満たさなかった。
 
-  - 顧客テナントを管理するには、Managed Service Provider (MSP) に対して委任 (DAP) が設定されている必要があります*
-  - 365 Business ライセンスMicrosoft 365 Business PremiumライセンスMicrosoft 365 E3 1 つ以上Windows必要
+  - 顧客テナントを管理するには、Managed Service Provider (MSP) に対して委任されたアクセス設定が必要です*
+  - 少なくとも 1 つのライセンス、Microsoft 365 Business Premium、Microsoft 365 E3、またはライセンスWindows 365 Business必要
   - ライセンスユーザーが 1000 人以下である必要があります 
 
 **解決策:** 次の表では、アクションを必要とするさまざまなテナントの状態について説明し、それらを解決する方法について説明します。
 
-*お客様をライトハウスにオンボードするには、代理管理者特権 (DAP) が必要です。 また、より安全な委任アクセスを有効にするには、顧客と一緒に詳細な委任管理者特権 (GDAP) を確立することをお勧めします。 DAP と GDAP が共存する一方で、両方のモデルが配置されている顧客には GDAP が優先されます。 まもなく、GDAP (DAP なし) をお持ちのお客様は、ライトハウスにオンボードできます。<br><br>
+*お客様をライトハウスにオンボードするには、代理管理者特権 (DAP) が必要です。 また、より安全な委任アクセスを有効にするには、顧客と一緒に詳細な委任管理者特権 (GDAP) を確立することをお勧めします。 DAP と GDAP が共存する一方で、両方のモデルが配置されている顧客には GDAP が優先されます。 まもなく、GDAP (DAP なし) をお持ちのお客様は、ライトハウスにオンボードできます。
 
 
 | 状態 | 説明 | 解決方法 |
 |--|--|--|
 | 非アクティブ | テナントは MSP の要求でオフボードされ、ライトハウスで管理されなくなりました。 | テナントを再アクティブ化する必要があります。 [テナント **] ページで** 、再アクティブ化するテナントの横にある 3 つのドット (その他のアクション) を選択し、[テナントのアクティブ化] **を選択します**。 初期顧客データがライトハウスに表示されるには、24 ~ 48 時間かかる場合があります。 |
 | 不適格 - DAP または GDAP が設定されていない | テナントに対して DAP または GDAP 管理者特権が設定されている必要はありません。これは、ライトハウスで必要です。 | Microsoft パートナー センターで DAP または GDAP 管理者特権を設定します。 |
-| 不適格 - 必須のライセンスが見つからない | テナントに必要なライセンスがありません。 少なくとも 1 つのライセンスまたはMicrosoft 365 Business Premium必要Microsoft 365 E3です。 | テナントに少なくとも 1 つのライセンスまたはMicrosoft 365 Business PremiumがMicrosoft 365 E3してください。 |
+| 不適格 - 必須のライセンスが見つからない | テナントに必要なライセンスがありません。 少なくとも 1 つのライセンスMicrosoft 365 Business Premium、Microsoft 365 E3、またはWindows 365 Business必要です。 | テナントに少なくとも 1 つのライセンス、Microsoft 365 Business Premium、Microsoft 365 E3、またはWindows 365 Businessしてください。 |
 | 不適格 - ユーザー数を超えました | テナントには、ライトハウスで許可されているライセンスユーザーが最大 1000 人を超える。 | テナントに 1000 人を超えるライセンスユーザーが存在しない場合は、そのユーザーを確認します。 |
 | 不適格 - 地域チェックに失敗しました | ユーザーと顧客は、ライトハウスで必要とされる同じ地理的地域に存在しない。 | 顧客が地理的な地域に存在する可能性を確認します。 そうでなかった場合は、ライトハウスでテナントを管理できません。 |
 | プロセス中 | ライトハウスはテナントを検出しましたが、まだオンボーディング中です。 | テナントのオンボーディングを完了するには、ライトハウス 48 時間を許可します。 |
@@ -79,7 +79,7 @@ ms.locfileid: "64403679"
 
 **原因:** Azure AD で適切なセキュリティ グループに属していないか、またはライトハウスにアクセスするためにパートナー センターで正しい役割が割り当てられていない。
 
-**解決策:** 適切なアクセス許可を持つパートナー テナントの管理者が、Azure AD の適切な GDAP セキュリティ グループに割り当て、パートナー センターで正しい役割を割り当てしていることを確認します。 また、ライトハウスの一部のアクションでは、グローバル管理者である必要があります。GDAP の役割と各役割で実行できる機能の詳細については、「[Configure Microsoft 365 Lighthouseポータル セキュリティ」を参照してください](m365-lighthouse-configure-portal-security.md)。 GDAP のすべての組み込みAzure ADおよびアクセス許可の詳細については、「組み込みAzure AD[」を参照してください](/azure/active-directory/roles/permissions-reference)。
+**解決策:** 適切なアクセス許可を持つパートナー テナントの管理者が、Azure AD の適切な GDAP セキュリティ グループに割り当て、パートナー センターで正しい役割を割り当てしていることを確認します。 また、ライトハウスの一部のアクションでは、グローバル管理者である必要があります。GDAP の役割と各役割で実行できる操作の詳細については、「アクセス許可の概要」を参照[Microsoft 365 Lighthouse。](m365-lighthouse-overview-of-permissions.md) GDAP のすべての組み込みAzure ADおよびアクセス許可の詳細については、「組み込みAzure AD[」を参照してください](/azure/active-directory/roles/permissions-reference)。
 
 DAP 関係を持つお客様の場合、パートナー管理者はパートナー センターの管理エージェントまたはヘルプデスク エージェントの役割に割り当てる必要があります。 すべてのパートナー センターの役割とアクセス許可の詳細については、「ユーザーに役割とアクセス許可を割り当てる [」を参照してください](/partner-center/permissions-overview)。
 
@@ -87,7 +87,7 @@ DAP 関係を持つお客様の場合、パートナー管理者はパートナ�
 
 **原因:** 自分のセキュリティ グループに割り当てられている役割に基Azure AD GDAP アクセスが制限されています。
 
-**解決策:** 適切なアクセス許可を持つパートナー テナントの管理者が、適切な GDAP セキュリティ グループに割り当てられているAzure AD。 また、ライトハウスの一部のアクションでは、グローバル管理者である必要があります。GDAP の役割と各役割で実行できる機能の詳細については、「[Configure Microsoft 365 Lighthouseポータル セキュリティ」を参照してください](m365-lighthouse-configure-portal-security.md)。 GDAP のすべての組み込みAzure ADおよびアクセス許可の詳細については、「組み込みAzure AD[」を参照してください](/azure/active-directory/roles/permissions-reference)。
+**解決策:** 適切なアクセス許可を持つパートナー テナントの管理者が、適切な GDAP セキュリティ グループに割り当てられているAzure AD。 また、ライトハウスの一部のアクションでは、グローバル管理者である必要があります。GDAP の役割と各役割で実行できる操作の詳細については、「アクセス許可の概要」を参照[Microsoft 365 Lighthouse。](m365-lighthouse-overview-of-permissions.md) GDAP のすべての組み込みAzure ADおよびアクセス許可の詳細については、「組み込みAzure AD[」を参照してください](/azure/active-directory/roles/permissions-reference)。
 
 ## <a name="customer-tenant-management"></a>顧客テナント管理  
 
@@ -107,7 +107,7 @@ DAP 関係を持つお客様の場合、パートナー管理者はパートナ�
 
 **原因:** 顧客テナント内のサーバーの構成Microsoft Intune完了しなかった。
 
-**解決策:** 顧客テナント内で Intune の基本的な構成手順が完了したと確認します。 顧客テナントの Intune 構成が完了した後も問題が解決しない場合は、サポートにお問い合わせください。 詳細については、「Get [help and support for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-get-help-and-support.md)。
+**解決策:** 顧客テナント内のユーザーに対する基本的な構成Intune完了したと確認します。 顧客テナントの構成が完了Intune後も問題が解決しない場合は、サポートにお問い合わせください。 詳細については、「Get [help and support for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-get-help-and-support.md)。
 
 ### <a name="cant-access-partner-tenant-data-in-lighthouse"></a>ライトハウスのパートナー テナント データにアクセスできない
 
@@ -119,9 +119,9 @@ DAP 関係を持つお客様の場合、パートナー管理者はパートナ�
 
 ### <a name="i-dont-see-any-customer-tenant-data-on-the-device-compliance-and-threat-management-pages-of-lighthouse"></a>ライトハウスの [デバイスコンプライアンス] ページと [脅威管理] ページに顧客テナント データが表示される
 
-**原因 1:** 顧客テナントが Intune へのオンボーディングを完了してない。 顧客テナントの Intune へのオンボーディングが完了するまで、お客様のテナント データは、ライトハウスのデバイスコンプライアンスまたは脅威管理ページでは使用できません。
+**原因 1:** 顧客テナントは、ユーザーへのオンボーディングを完了Intune。 顧客テナントのデータは、顧客テナントがライトハウスへのオンボーディングを完了するまで、ライトハウスのデバイスコンプライアンスまたは脅威管理ページではIntune。
 
-**解決策:** データを表示しようとしている顧客テナントが Intune へのオンボーディングを完了したことを確認します。 Intune でオンボーディングが完了したら、デバイス データがライトハウスに表示されるのに 4 時間かかります。
+**解決策:** データを表示しようとしている顧客テナントが、ユーザーへのオンボーディングを完了Intune。 登録が完了したら、Intuneにデバイス データが表示されるのに 4 時間かかります。
 
 **原因 2:** 顧客テナントは最近、ライトハウスにオンボードされ、データはライトハウスで読み込み中です。
 

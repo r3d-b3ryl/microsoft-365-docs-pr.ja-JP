@@ -1,8 +1,8 @@
 ---
-title: 'Microsoft SharePoint Syntex導入: 使い始める'
-description: ビジネス上の問題の解決に役立つSharePoint Syntexを組織で使用および実装する方法について学習します。
-ms.author: samanro
-author: samanro
+title: Microsoft SharePoint Syntex
+description: ビジネス プロセスの合理化に役立つSharePoint Syntexを組織で使用および実装する方法について学習します。
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.date: ''
 audience: admin
@@ -14,22 +14,22 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 172c0a681bc8e7c7867e4bcba1c75f94cfc12e60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 40af6061029785705d262f3b8c5134531e76885f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193161"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467645"
 ---
-# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex導入: 使い始める
+# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex
 
 次の 3 つの部分を含む、SharePoint Syntexインテリジェント コンテンツ サービスを考えてみる必要があります。
 
 - **コンテンツの理解:** コンテンツから情報を分類して抽出するコードなし AI モデルを作成し、ナレッジの検出と再利用のためにメタデータを自動的に適用します。 詳しくは、コンテンツ [の理解に関するページを参照してください](document-understanding-overview.md)。
-- **コンテンツ処理:** コンテンツのキャプチャ、取り込み、および分類を自動化し、コンテンツ中心のプロセスをPower Automate。 コンテンツ処理について [詳しくは、次のページを参照してください](form-processing-overview.md)。
+- **コンテンツ処理:** コンテンツのキャプチャ、取り込み、および分類を自動化し、コンテンツ中心のプロセスをPower Automate。 詳しくは、コンテンツ [処理についてのページを参照してください](form-processing-overview.md)。
 - **コンテンツのコンプライアンス:** コンテンツの管理と管理を行い、セキュリティとガバナンスを強化し、セキュリティとガバナンスを強化Microsoft Information Protection。
 
-新しい AI サービスと機能を使用して、コンテンツの理解と分類アプリをコンテンツ管理フローに直接組み込むには、SharePoint Syntex。 コンテンツを理解するには、2 つの異なる方法があります。 使用するモデルの種類は、ファイル形式と使用例に基づいて行います。
+新しい AI サービスと機能を使用すると、コンテンツの理解と分類アプリをコンテンツ管理フローに直接組み込み、SharePoint Syntex。 コンテンツを理解するには、2 つの異なる方法があります。 使用するモデルの種類は、ファイル形式と使用例に基づいて行います。
 
 | フォーム処理 | ドキュメント理解 |
 |:-------|:-------|
@@ -72,7 +72,7 @@ ms.locfileid: "60193161"
 
 | SharePoint/知識管理者 | Power プラットフォーム管理者 | 知識マネージャー | モデル所有者 |
 |:-------|:-------|:-------|:-------|
-| AAD の役割| AAD の役割 | AAD の役割 | チャンピオン |
+| AADロール| AADロール | AADロール | チャンピオン |
 | フォーム処理を構成する | フォーム処理用に Dataverse 環境を構成する | 使用例の収集 | ビジネスの使用例を収集する |
 | コンテンツ センターとアクセス許可を管理する| AIB クレジットの購入と割り当て | ベスト プラクティスを確立し、モデル分析を確認する | モデルの作成と適用 |
 
@@ -86,7 +86,7 @@ ms.locfileid: "60193161"
 
 ## <a name="strategic-positioning"></a>戦略的な位置付け
 
-関係者と協力して、関係者がユーザーを使用する戦略に沿SharePoint Syntex。 この位置付けを支援するために、次のリソースを調査して提供します。
+利害関係者と協力して、関係者がユーザーを使用する戦略に沿SharePoint Syntex。 この位置付けを支援するために、次のリソースを調査して提供します。
 
 - ビジネスの成果:
   - 潜在的な財政結果

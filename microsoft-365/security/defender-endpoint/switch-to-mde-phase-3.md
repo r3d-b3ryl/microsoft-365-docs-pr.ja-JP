@@ -1,7 +1,7 @@
 ---
-title: エンドポイント用 Microsoft Defender に切り替える - オンボード
-description: Microsoft Defender for Endpoint に切り替えます。 デバイスをオンボードし、Microsoft 以外のソリューションをアンインストールします。
-keywords: 移行, Microsoft Defender for Endpoint, edr
+title: '[スイッチ] Microsoft Defender for Endpoint - オンボード'
+description: スイッチを [Microsoft Defender for Endpoint] にMicrosoft Defender for Endpoint。 デバイスをオンボードし、Microsoft 以外のソリューションをアンインストールします。
+keywords: 移行、 Microsoft Defender for Endpoint、edr
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -21,23 +21,23 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 12/02/2021
+ms.date: 03/28/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 3e92a0525dd70c0f420f581f86f4d6ceb7fd6326
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 1397c34e8e4a7f1fcb20df192409bd57bc50f40b
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807430"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507123"
 ---
-# <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>エンドポイント向け Microsoft Defender への切り替え - フェーズ 3: オンボード
+# <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>[スイッチ] Microsoft Defender for Endpoint - フェーズ 3: オンボード
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| [![フェーズ 1: Prepare3。](images/phase-diagrams/prepare.png)](switch-to-mde-phase-1.md)<br/>[フェーズ 1: 準備](switch-to-mde-phase-1.md) | [![フェーズ 2: 設定](images/phase-diagrams/setup.png)](switch-to-mde-phase-2.md)<br/>[フェーズ 2: 設定](switch-to-mde-phase-2.md) | ![フェーズ 3: オンボード](images/phase-diagrams/onboard.png)<br/>フェーズ 3: オンボード |
+| [![フェーズ 1: Prepare3。](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[フェーズ 1: 準備](switch-to-mde-phase-1.md) | [![フェーズ 2: 設定](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[フェーズ 2: 設定](switch-to-mde-phase-2.md) | ![フェーズ 3: オンボード](images/phase-diagrams/onboard.png#lightbox)<br/>フェーズ 3: オンボード |
 |--|--|--|
 || |*お前はここにいる!* |
 
@@ -54,27 +54,27 @@ ms.locfileid: "62807430"
 
 1. ポータル () にMicrosoft 365 Defenderサインイン[https://security.microsoft.com](https://security.microsoft.com)します。
 
-2. [**設定** \> **オンボーディング]** \> **を選択します** ([デバイス **管理] の下)。**
+2. [**設定** \> **オンボーディング]** \> **を選択します** ([デバイス **の管理] の下)。**
 
 3. [オンボード **プロセスを開始するオペレーティング システムの選択] ボックスの一覧で** 、オペレーティング システムを選択します。
 
-4. [ **展開方法] で**、オプションを選択します。 リンクとプロンプトに従って、組織のデバイスをオンボードします。 サポートが必要な場合 「 [Onboarding メソッド (この](#onboarding-methods) 記事)」を参照してください。
+4. [ **展開方法] で**、オプションを選択します。 リンクとプロンプトに従って、組織のデバイスをオンボードします。 お困りの際は、 「 [Onboarding メソッド (この](#onboarding-methods) 記事)」を参照してください。
 
 > [!NOTE]
-> オンボーディング中に問題が発生した場合は、「 [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング」を参照してください](troubleshoot-onboarding.md)。 この記事では、オンボーディングの問題とエンドポイントの一般的なエラーを解決する方法について説明します。
+> オンボーディング中に問題が発生した場合は、「[オンボードに関する問題Microsoft Defender for Endpointトラブルシューティング」を参照してください](troubleshoot-onboarding.md)。 この記事では、オンボーディングの問題とエンドポイントの一般的なエラーを解決する方法について説明します。
 
 ### <a name="onboarding-methods"></a>オンボーディングメソッド
 
 > [!IMPORTANT]
-> Microsoft Defender for Cloud を使用している場合は、「 [Microsoft Defender for Cloud との統合」を参照してください](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)。
+> この機能を使用している場合Microsoft Defender for Cloud、「[統合と統合」を参照Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)。
 
 展開方法は、オペレーティング システムと優先する方法によって異なります。 次の表に、Defender for Endpoint へのオンボードに役立つリソースの一覧を示します。
 
 |オペレーティング システム  |メソッド  |
 |---------|---------|
-|Windows 10以降<br/><br/>Windows Server 2019 以降<br/><br/>Windows Server バージョン 1803 以降<br/><br/>Windows Server 2012 R2 および 2016<sup>[[1](#fn1)]<sup>  |   [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md)<br><br/>   [グループ ポリシー](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft エンドポイント マネージャー/ モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md)<br>    [VDI スクリプト](configure-endpoints-vdi.md) <br><br> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境の展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。 |
-|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA) または](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **注**: Microsoft Monitoring Agentは Azure Log Analytics エージェントです。 詳細については、「 [Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  |
-|Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **注**: Microsoft Monitoring Agentは Azure Log Analytics エージェントです。 詳細については、「 [Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  
+|Windows 10以降<br/><br/>Windows Server 2019 以降<br/><br/>Windows Server バージョン 1803 以降<br/><br/>Windows Server 2012 R2 および 2016<sup>[[1](#fn1)]<sup>  |   [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md)<br><br/>   [グループ ポリシー](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft エンドポイント マネージャー/ Mobile デバイス管理 (Intune)](configure-endpoints-mdm.md)<br>    [VDI スクリプト](configure-endpoints-vdi.md) <br><br> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境の展開には使用できません。 実稼働展開の場合は、グループ ポリシー、Microsoft Endpoint Configuration Manager、またはIntune。 |
+|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [または Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については、「 [Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  |
+|Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については、「 [Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  
 | macOS (「 [システム要件」を参照)](microsoft-defender-endpoint-mac.md) | [ローカル スクリプト](mac-install-manually.md)<br/><br/>[Microsoft エンドポイント マネージャー](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[モバイル デバイス管理](mac-install-with-other-mdm.md)   |
 | Linux (「 [システム要件」を参照](microsoft-defender-endpoint-linux.md#system-requirements)) |  [ローカル スクリプト](linux-install-manually.md) <br><br/> [Puppet](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  
 | iOS | [Microsoft エンドポイント マネージャー](ios-install.md)     |
@@ -97,11 +97,11 @@ ms.locfileid: "62807430"
 |Linux (「 [システム要件」を参照](microsoft-defender-endpoint-linux.md#system-requirements))|1. 次のコマンドを実行し、1 の結果 **を探します**。 `mdatp health --field real_time_protection_enabled`<br/><br/>2. ターミナル ウィンドウを開き、次のコマンドを実行します。 `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`<br/><br/>3. 次のコマンドを実行して、検出された脅威を一覧表示します。 `mdatp threat list`<br/><br/>詳細については、「 [Defender for Endpoint on Linux」を参照してください](microsoft-defender-endpoint-linux.md)。|
 
 > [!NOTE]
-> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>エンドポイントでMicrosoft Defender ウイルス対策パッシブ モードの状態を確認する
 
-エンドポイントが Defender for Endpoint にオンボードされたので、次の手順では、パッシブ モードでMicrosoft Defender ウイルス対策確認します。 次の表で説明するように、いくつかの方法のいずれかを使用できます。
+エンドポイントが Defender for Endpoint にオンボードされたので、次の手順では、パッシブ モードでMicrosoft Defender ウイルス対策を確認します。 次の表で説明するように、いくつかの方法のいずれかを使用できます。
 
 <br/><br/>
 
@@ -109,11 +109,11 @@ ms.locfileid: "62807430"
 |---|---|
 |コマンド プロンプト|1. デバイスで、Windowsを開きます。<br/><br/>2. と入力し `sc query windefend`、Enter キーを押します。<br/><br/>3. 結果を確認して、Microsoft Defender ウイルス対策モードで実行されている状態を確認します。|
 |PowerShell|1. デバイスでWindows管理者としてWindows PowerShell開きます。<br/><br/>2. 次の PowerShell コマンドレットを実行します。 `Get-MpComputerStatus|select AMRunningMode` <br/><br/>3. 結果を確認します。 パッシブ モードが **表示されます**。|
-|Windows セキュリティアプリ|1. デバイスでWindowsアプリをWindows セキュリティします。<br/><br/>2. [ **ウイルス対策] &を選択します**。<br/><br/>3. [ユーザー **Who保護] の下** にある [プロバイダーの管理 **] を選択します**。<br/><br/>4. [セキュリティ **プロバイダー] ページの** [ウイルス対策] で、有効になっているMicrosoft Defender ウイルス対策 **を探します**。|
-|タスク マネージャー|1. デバイスWindowsタスク マネージャー アプリを開きます。<br/><br/>2. [詳細] タブ **を選択** します。リスト内 **MsMpEng.exe** を探します。|
+|Windows セキュリティアプリ|1. デバイスでWindowsアプリをWindows セキュリティします。<br/><br/>2. [ **ウイルス対策&保護] を選択します**。<br/><br/>3. [ユーザー **Who保護] の下** にある [プロバイダーの **管理] を選択します**。<br/><br/>4. [セキュリティ **プロバイダー] ページの** [ウイルス対策] で、有効になっているMicrosoft Defender ウイルス対策 **を探します**。|
+|タスク マネージャー|1. デバイスWindowsタスク マネージャー アプリを開きます。<br/><br/>2. [詳細] タブ **を選択** します。リストで **MsMpEng.exe** を探します。|
 
 > [!NOTE]
-> 一部の *バージョンWindows Defender ウイルス対策**のMicrosoft Defender ウイルス対策* の代わりに、Windows。
+> 一部の *バージョンの**Windows Defender ウイルス対策のMicrosoft Defender ウイルス対策* の代わりに、Windows。
 > パッシブ モードとアクティブ モードの詳細については、「パッシブ モードとアクティブ モードの詳細[Microsoft Defender ウイルス対策参照してください](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states)。
 
 ### <a name="set-microsoft-defender-antivirus-on-windows-server-to-passive-mode-manually"></a>サーバー Microsoft Defender ウイルス対策をWindowsパッシブ モードに手動で設定する
@@ -131,22 +131,22 @@ Windows Server、バージョン 1803 以降、または Windows Server 2019、�
 > [!NOTE]
 > 他のメソッドを使用して、次のようなレジストリ キーを設定できます。
 >
-> - [グループ ポリシーの基本設定](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
+> - [グループ ポリシー基本設定](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
 > - [ローカル グループ ポリシー オブジェクト ツール](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
-> - [Configuration Manager のパッケージ](/mem/configmgr/apps/deploy-use/packages-and-programs)
+> - [パッケージのConfiguration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
-### <a name="start-microsoft-defender-antivirus-on-windows-server-2016"></a>[Microsoft Defender ウイルス対策からWindows Server 2016
+### <a name="start-microsoft-defender-antivirus-on-windows-server-2016"></a>Microsoft Defender ウイルス対策からWindows Server 2016
 
-ユーザー設定を使用しているWindows Server 2016、手動で開始する必要Microsoft Defender ウイルス対策があります。 このタスクは、デバイスで PowerShell コマンドレットを使用 `mpcmdrun.exe -wdenable` して実行できます。
+ユーザー設定を使用しているWindows Server 2016、手動で開始するMicrosoft Defender ウイルス対策があります。 このタスクは、デバイスで PowerShell コマンドレットを使用 `mpcmdrun.exe -wdenable` して実行できます。
 
 ## <a name="get-updates-for-microsoft-defender-antivirus"></a>ユーザーの更新プログラムを取得Microsoft Defender ウイルス対策
 
 Microsoft Defender ウイルス対策モードで実行されている場合でも、新しいマルウェアや攻撃の手法から保護するために必要な最新のテクノロジと機能をデバイスに提供するには、最新のMicrosoft Defender ウイルス対策を維持する必要があります。 (「互換性[Microsoft Defender ウイルス対策」を](microsoft-defender-antivirus-compatibility.md)参照してください)。
 
-更新プログラムには、最新の状態を維持Microsoft Defender ウイルス対策 2 種類があります。
+Microsoft Defender ウイルス対策を最新の状態に保つことに関連する更新プログラムには、次の 2 種類があります。
 
 - セキュリティ インテリジェンスの更新プログラム
-- 製品の更新
+- 製品の更新プログラム
 
 更新プログラムを取得するには、「更新プログラムの管理」のガイダンス[にMicrosoft Defender ウイルス対策ベースラインを適用します](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
@@ -157,7 +157,10 @@ Microsoft Defender ウイルス対策モードで実行されている場合で�
 - 組織のデバイスを Defender for Endpoint にオンボードし、
 - Microsoft Defender ウイルス対策がインストールされ、有効になっている場合
 
-次に、Microsoft 以外のウイルス対策、マルウェア対策、エンドポイント保護ソリューションをアンインストールします。 Microsoft 以外のソリューションをアンインストールすると、Microsoft Defender ウイルス対策モードからアクティブ モードに切り替わります。 ほとんどの場合、これは自動的に行われます。
+次に、Microsoft 以外のウイルス対策、マルウェア対策、エンドポイント保護ソリューションをアンインストールします。 Microsoft 以外のソリューションをアンインストールすると、Microsoft Defender ウイルス対策モードからアクティブ モードに切り替わります。 ほとんどの場合、これは自動的に行われます。 
+
+> [!IMPORTANT]
+> Microsoft 以外のウイルス対策/マルウェア対策ソリューションをアンインストールした後に何らかの理由で Microsoft Defender ウイルス対策 がアクティブ モードに入らない場合は、「[Microsoft Defender ウイルス対策](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode) がパッシブ モードでスタックしているようです」を参照してください。
 
 Microsoft 以外のソリューションのアンインストールに関するヘルプを入手するには、テクニカル サポート チームにお問い合わせください。
 
@@ -170,7 +173,7 @@ Defender for Endpoint にオンボードし、以前の Microsoft 以外のソ�
 - ネットワーク保護 (NP)
 
 > [!NOTE]
-> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 ## <a name="next-steps"></a>次の手順
 

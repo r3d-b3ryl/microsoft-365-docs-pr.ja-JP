@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: AI ビルドを使用して Microsoft Web サイトでフォーム処理モデルを作成するSharePoint Syntex。
-ms.openlocfilehash: d04de2fc71b0b393e560e354253be42053725416
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: a3a3d1fa0e160b96d487a5eeb03c69f9e4fe7fb3
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450774"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507391"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でのフォーム処理の概要
 
@@ -46,6 +46,10 @@ AI Builder フォーム処理を使用して、機械学習テクノロジを使
 ### <a name="file-limitations"></a>ファイルの制限事項
 
 フォーム処理モデルを使用する場合は、[ファイルの使用に関する必要条件と制限事項](/ai-builder/form-processing-model-requirements)にご注意ください。
+
+### <a name="supported-languages"></a>サポートされている言語
+
+フォーム処理では、73 を超える言語のドキュメントがサポートされています。 言語の一覧については、「フォーム処理言語 [のサポート」を参照してください](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support)。
 
 ### <a name="multi-geo-environments"></a>Multi-Geo 環境
 

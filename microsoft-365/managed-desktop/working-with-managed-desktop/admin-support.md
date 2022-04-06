@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ad8ae319be7515282dc51e9dd9a519660b5d91f6
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: 7f13c11f73d9ddbb9d074782a03fa408ef2c3ec6
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879122"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595238"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの管理者サポート
 
-Microsoft Managed Desktop Admin ポータルを使用して、サポート チケットまたはフィードバック要求を Microsoft に提出できます。 サポート要求は、フィードバックの送信よりも常に優先されます。
+サポート チケットまたはフィードバック要求を Microsoft に送信するには、管理者ポータルMicrosoft Managed Desktop使用します。 サポート要求は、フィードバックの送信よりも常に優先されます。
 
 ## <a name="open-a-new-support-request"></a>新しいサポート リクエストを開く
 
@@ -27,7 +27,7 @@ Microsoft Managed Desktop Admin ポータルを使用して、サポート チ�
 **新しいサポート要求を開く方法:**
 
 1. サインイン [して、[テナント](https://endpoint.microsoft.com/)Microsoft エンドポイント マネージャー] メニュー **に移動** します。
-2. [ **Microsoft Managed Desktop] セクションで** 、[サービス要求 **] を選択します**。
+2. [サービス要求 **Microsoft Managed Desktop**] セクションで、[**サービス要求] を選択します**。
 3. [サービス **要求] セクションで、[** + 新しい **サポート要求] を選択します**。
 4. 必要な **ヘルプに一** 致する要求の種類を選択します。 次の表に、オプションの概要を示します。
 5. [重大度] **レベルを選択** します。 詳細については、「重大度定義 [テーブル」を参照してください](#support-request-severity-definitions)。
@@ -37,11 +37,11 @@ Microsoft Managed Desktop Admin ポータルを使用して、サポート チ�
 
 ### <a name="support-request-types"></a>サポート要求の種類
 
-| サポート要求の種類 | 使用する場合 |
+| サポート要求の種類 | いつ使用するか |
 | ----- | ----- |
-インシデント | ユーザーの問題を調査するには、Microsoft Managed Desktop Operations チームが必要です。 たとえば、変更やサービスの停止による影響が広範囲に及んでいるとします。
-情報の要求 | ネットワーク、プロキシ構成、VPN システム、証明書の有効期限の変更を計画している場合、またはサービスに関する情報が必要な場合。 Microsoft Managed Desktop Operations チームからの応答は、組織内で変更を伝達するときにお勧めします。
-変更要求 | 更新プログラム グループ間でデバイスを移動するなどの変更を行うには、Microsoft Managed Desktop Operations チームが必要です。 すべての変更要求は重大度 C として扱います。
+インシデント | ユーザーの問題を調査Microsoft Managed Desktop操作チームが必要です。 たとえば、変更やサービスの停止による影響が広範囲に及んでいるとします。
+情報の要求 | ネットワーク、プロキシ構成、VPN システム、証明書の有効期限の変更を計画している場合、またはサービスに関する情報が必要な場合。 組織内で変更Microsoft Managed Desktop通信する場合は、組織の運用チームからの応答をお勧めします。
+変更要求 | 更新グループ間でデバイスMicrosoft Managed Desktop移動するなどの変更を行うには、運用チームが必要です。 すべての変更要求は重大度 C として扱います。
 
 > [!IMPORTANT]
 > サポート要求を作成する場合は、プライマリ連絡先を指定する必要があります。 この担当者は、サービス エンジニアと一緒に問題を解決するか、要求された変更に関する質問に答える責任があります。 また、関連するフォーカス領域に関[](../get-started/add-admin-contacts.md)するすべてのケース通知にコピーされる管理者連絡先を以前に設定している必要があります。 このユーザーは、ケースの主な連絡先に到達できない場合に、ケースの引き継ぎを求めるメッセージが表示されます。
@@ -57,7 +57,7 @@ Microsoft Managed Desktop Admin ポータルを使用して、サポート チ�
 **アクティブなすべてのケースを表示するには、次の方法を実行します。**
 
 1. サインイン [して[テナント](https://endpoint.microsoft.com/)Microsoft エンドポイント マネージャー]メニュー **に移動** します。
-2. [ **Microsoft Managed Desktop] セクションで** 、[サービス要求] **を選択します**。
+2. [サービス要求 **Microsoft Managed Desktop**] セクションで、[サービス要求] **を選択します**。
 3. このビューから、概要ビューをエクスポートするか、任意のケースを選択して詳細を表示できます。
 
 ### <a name="edit-case-details"></a>ケースの詳細の編集
@@ -75,18 +75,21 @@ Microsoft Managed Desktop Admin ポータルを使用して、サポート チ�
 
 ケースを解決すると、そのケースを編集できなくなりました。 24 時間以内に要求が解決された場合は、編集ではなく再アクティブ化 **する** オプションが表示 **されます**。 再アクティブ化したら、再度要求を編集できます。  
 
+> [!NOTE]
+> 重大度レベルは、特定のサポート要求の種類にのみ設定できます。 サポート 要求の作成時に重大度レベルを選択するオプションが選択されていない場合は、サポート要求を編集できません。
+
 ### <a name="provide-feedback"></a>フィードバックの提供
 
 お客様からのフィードバックに感謝し、管理者サポート エクスペリエンスを向上させるために使用してください。
 
-サポート要求の主要な連絡先である場合は、Microsoft Managed Desktop Operations から電子メールを受信します。 メールは、問題が解決された後にエクスペリエンスについて確認します。 フィードバックは積極的に監視され、エンジニアリングと共有され、サービスを改善し、将来の機能に優先順位を付けます。 フィードバック フォームに個人情報を含めず、エクスペリエンスに集中してください。 プライバシーの詳細については、「 [Microsoft Privacy Statement」を参照してください](https://privacy.microsoft.com/privacystatement)。
+サポート要求の主な連絡先である場合は、サポートオペレーションから電子メールMicrosoft Managed Desktopされます。 メールは、問題が解決された後にエクスペリエンスについて確認します。 フィードバックは積極的に監視され、エンジニアリングと共有され、サービスを改善し、将来の機能に優先順位を付けます。 フィードバック フォームに個人情報を含めず、エクスペリエンスに集中してください。 プライバシーの詳細については、「 [Microsoft Privacy Statement」を参照してください](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="support-request-severity-definitions"></a>要求の重大度の定義をサポートする
 
-最初の応答時間は、サポート要求を送信するまでの期間で、Microsoft Managed Desktop エンジニアが連絡を取り、サポート要求の作業を開始します。 最初の応答時間は、要求のビジネス上の影響によって異なります。 これは、要求の重大度に基づいて行います。
+最初の応答時間は、サポート要求を送信するまでの期間で、Microsoft Managed Desktopエンジニアから連絡を受け、サポート要求の作業を開始します。 最初の応答時間は、要求のビジネス上の影響によって異なります。 これは、要求の重大度に基づいて行います。
 
 > [!NOTE]
-> この表では、「管理者サポート時間」とは、Microsoft Managed Desktop の管理者向けサポートが、ほとんどの国で月曜日から金曜日の 24 時間利用できるという意味 **です**。 重大度 1 つの問題は、1 日 24 時間、週の 7 日間すべて実行できます。
+> この表では、「管理者サポート時間」とは、管理者のサポートMicrosoft Managed Desktop、ほとんどの国で、月曜日から金曜日まで 24 時間利用できるという意味 **です**。 重大度 1 つの問題は、1 日 24 時間、週の 7 日間すべて実行できます。
 
 | 重大度レベル | 状況 | 初期応答時間 | ユーザーからの期待される応答 |
 | ----- | ----- |----- | ----- |
@@ -102,11 +105,11 @@ Microsoft Managed Desktop Admin ポータルを使用して、サポート チ�
 | ------ | ------ |
 | サポート言語 | すべてのサポートは英語で提供されます。 |
 | 重大度レベルの変更 | Microsoft は、適切なリソースを提供できない場合や、問題を解決し続ける応答ができない場合、重大度レベルをダウングレードする場合があります。 |
-| アプリケーションの互換性 | アプリケーションの互換性の問題を考慮するには、再現可能なエラーが必要です。 このエラーでは、以前のバージョンと現在のバージョンの間で、同じバージョンのアプリケーションを使用する必要Windows、またはMicrosoft 365 Apps for enterprise。 <br><br> アプリケーションの互換性の問題を解決するには、組織内の連絡先が必要です。 連絡先は、問題を調査して解決するために、ファースト トラック チームと直接作業する必要があります。 |
+| アプリケーションの互換性 | アプリケーションの互換性の問題を考慮するには、再現可能なエラーが必要です。 このエラーでは、以前のバージョンと現在のバージョンの間で、同じバージョンのアプリケーションを使用するか、WindowsをMicrosoft 365 Apps for enterprise。 <br><br> アプリケーションの互換性の問題を解決するには、組織内の連絡先が必要です。 連絡先は、問題を調査して解決するために、ファースト トラック チームと直接作業する必要があります。 |
 | 顧客の応答時間 | 予想される応答要件を満たしていない場合は、要求を 1 つの重大度レベルで最小重大度レベル (重大度 C) にダウングレードします。 <br><br> アクションの要求に応答しない場合は、前回の要求から 48 時間以内にサポート要求を軽減して終了します。 |
 
 ## <a name="more-resources"></a>その他のリソース
 
-- [Microsoft Managed Desktop のユーザー サポート](end-user-support.md)。
-- [Microsoft マネージ デスクトップのサポート](../service-description/support.md)。
-- Microsoft Managed Desktop を既に購読している場合は、「Microsoft Managed Desktop Admin Guide」の詳細な手順、プロセス フロー、作業手順、および FAQ を確認できます。 [[Microsoft エンドポイント マネージャー](https://endpoint.microsoft.com/)テナント管理] セクションに移動し、[Microsoft Managed Desktop] の [オンライン リソース] を選択し、[その他のリソース] を選択します。 管理者ガイドは、こちらからご覧いただけます。
+- [ユーザーサポートのMicrosoft Managed Desktop](end-user-support.md)。
+- [ユーザーのサポートMicrosoft Managed Desktop](../service-description/support.md)。
+- 既に Microsoft Managed Desktop を購読している場合は、「Microsoft Managed Desktop 管理ガイド」の詳細な手順、プロセス フロー、作業手順、および FAQ をMicrosoft Managed Desktopできます。 [[Microsoft エンドポイント マネージャー](https://endpoint.microsoft.com/)] セクションの [テナント管理] セクションに移動し、[Microsoft Managed Desktopリソース] を選択し、[その他のリソース] を選択します。 管理者ガイドは、こちらからご覧いただけます。

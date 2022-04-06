@@ -21,29 +21,29 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2e14e523c9aa662afc0ee38572f8a19be6f851b5
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: d9d418cee35976e621c173b3563b04ee8bdce7ca
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271804"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595305"
 ---
 # <a name="get-started-with-communication-compliance"></a>コミュニケーション コンプライアンスの使用を開始する
 
-コミュニケーション コンプライアンス ポリシーを使用して、内部または外部のレビュー担当者による調査用のユーザー コミュニケーションを識別します。 コミュニケーション コンプライアンス ポリシーを使用して組織内のコミュニケーションを監視する方法の詳細については、「[Microsoft 365 のコミュニケーション コンプライアンス ポリシー](communication-compliance.md)」を参照してください。 Microsoft Teams、Exchange Online、および Yammer の通信で不適切なコンテンツを監視する通信コンプライアンス ポリシーを Contoso が迅速に構成した方法を確認する場合は、このケース スタディを参照してください。[](communication-compliance-case-study.md)
+コミュニケーション コンプライアンス ポリシーを使用して、内部または外部のレビュー担当者による調査用のユーザー コミュニケーションを識別します。 コミュニケーション コンプライアンス ポリシーを使用して組織内のコミュニケーションを監視する方法の詳細については、「[Microsoft 365 のコミュニケーション コンプライアンス ポリシー](communication-compliance.md)」を参照してください。 Microsoft Teams、Exchange Online、および Yammer 通信で不適切なコンテンツを監視する通信コンプライアンス ポリシーを Contoso が迅速に構成した方法を確認する場合は、このケース スタディを参照してください。[](communication-compliance-case-study.md)
 
 ## <a name="subscriptions-and-licensing"></a>サブスクリプションとライセンス
 
 コミュニケーション コンプライアンスを開始する前に、[Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 コミュニケーション コンプライアンスにアクセスして使用するには、組織に次のいずれかのサブスクリプションまたはアドオンが必要です。
 
-- Microsoft 365 E5/A5/G5 サブスクリプション (有料または試用版)
-- Microsoft 365 E3/A3/G5 サブスクリプション + Microsoft 365 E5/A5/G5 コンプライアンス アドオン
-- Microsoft 365 E3/A3/G5 サブスクリプション + Microsoft 365 E5/A5/G5 Insider Risk Management アドオン
+- Microsoft 365 E5/A5/F5/G5 サブスクリプション (有料または試用版)
+- Microsoft 365 E3/A3/F3/G5 サブスクリプション + Microsoft 365 E5/A5/F5/G5 コンプライアンス アドオン
+- Microsoft 365 E3/A3/F3/G5 サブスクリプション + Microsoft 365 E5/A5/F5/G5 Insider Risk Management アドオン
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
 - Office 365 A5 サブスクリプション (有料または試用版)
 - Office 365 Enterprise E3 サブスクリプション + Office 365 Advanced Compliance アドオン (新しいサブスクリプションでは使用できなくなりました。注を参照)
 
-コミュニケーション コンプライアンス ポリシーに含まれるユーザーには、上記のいずれかのライセンスを割り当てる必要があります。
+コミュニケーション コンプライアンス ポリシーに含まれるユーザーには、上記のいずれかのライセンスを割り当てる必要があります。 サブスクリプションとライセンスの詳細については、「セキュリティとコンプライアンスMicrosoft 365[ガイダンス」を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)。
 
 > [!IMPORTANT]
 > 現在、通信コンプライアンスは、Azure サービスの依存関係でサポートされている地理的地域および国でホストされているテナントで利用できます。 組織で通信コンプライアンスがサポートされていないことを確認するには、「国/地域別 [の Azure 依存関係の可用性」を参照してください](/troubleshoot/azure/general/dependency-availability-by-country)。
@@ -55,7 +55,7 @@ ms.locfileid: "62271804"
 
 ## <a name="recommended-actions-preview"></a>推奨されるアクション (プレビュー)
 
-推奨されるアクションは、組織が通信コンプライアンス機能を使い始め、既存のポリシーを活用するのに役立ちます。 [ポリシー] **ページに含まれる** 推奨アクションは、組織内のコミュニケーションにおける機密情報の種類と不適切なコンテンツ アクティビティに関する分析情報と要約を提供します。 インサイトは、データ分類と機密[](data-classification-overview.md)ラベル、保持ラベル、機密情報の種類分類の適用によってサポートされます。 これらの分析情報には、組織内のユーザーの個人を特定できる情報 (PII) は含められない。
+推奨されるアクションは、組織が通信コンプライアンス機能を使い始め、既存のポリシーを活用するのに役立ちます。 [ポリシー] **ページに含まれる** 推奨アクションは、組織内のコミュニケーションにおける機密情報の種類と不適切なコンテンツ アクティビティに関する分析情報と要約を提供します。 インサイトは、データ分類と機密ラベル[](data-classification-overview.md)、保持ラベル、機密情報の種類分類の適用によってサポートされます。 これらの分析情報には、組織内のユーザーの個人を特定できる情報 (PII) は含められない。
 
 ![通信コンプライアンス推奨アクション。](../media/communication-compliance-recommended-actions.png)
 
@@ -68,10 +68,10 @@ ms.locfileid: "62271804"
 > [!IMPORTANT]
 > ロール グループを構成した後、ロール グループのアクセス許可が組織全体の割り当てられたユーザーに適用されるまでに最大 30 分かかる場合があります。
 
-通信コンプライアンス機能を管理するための初期アクセス許可を構成するために使用される役割グループは 6 つがあります。 Microsoft 365 コンプライアンス センター で通信コンプライアンスをメニュー オプションとして使用し、これらの構成手順を続行するには、次のいずれかの役割または役割グループに割り当てる必要があります。
+通信コンプライアンス機能を管理するための初期アクセス許可を構成するために使用される役割グループは 6 つがあります。 Microsoft 365 コンプライアンス センター のメニュー オプションとして通信コンプライアンスを使用し、これらの構成手順を続行するには、次のいずれかの役割または役割グループに割り当てる必要があります。
 
 - Azure Active Directory [*管理者の*](/azure/active-directory/roles/permissions-reference#global-administrator)役割
-- Azure Active Directory [*コンプライアンス管理者の*](/azure/active-directory/roles/permissions-reference#compliance-administrator)役割
+- Azure Active Directory [*管理者の*](/azure/active-directory/roles/permissions-reference#compliance-administrator)役割
 - Microsoft 365 コンプライアンス センター [*管理役割*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)グループ
 - Microsoft 365 コンプライアンス センター [*管理者役割*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)グループ
 - *コミュニケーション コンプライアンス役割* グループ
@@ -119,7 +119,7 @@ ms.locfileid: "62271804"
 
 このオプションを使用して、ユーザーを特定のロール グループに割り当てて、組織内のさまざまなユーザー間のコミュニケーション コンプライアンス アクセスと責任をセグメント化します。
 
-1. 組織 [の管理者Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)資格情報を使用して、Microsoft 365にサインインし、[アクセス許可] **に移動します**</a>。
+1. 組織の管理者 [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)資格情報を使用して、Microsoft 365にサインインし、[アクセス許可] に **移動します**</a>。
 
 2. Office 365 でロールの表示と管理へのリンクを選択します。
 
@@ -158,7 +158,7 @@ Microsoft 365 の組織では、監査が既定で有効になっています。
 |監督対象ユーザー <br> 除外されたユーザー | 配布グループ <br> Microsoft 365 グループ | 動的配布グループ <br> 入れ子になった配布グループ <br> メールが有効なセキュリティ グループ <br> 動的メンバーシップを持つ Microsoft 365 グループ |
 | レビュー担当者 | なし | 配布グループ <br> 動的配布グループ <br> 入れ子になった配布グループ <br> メールが有効なセキュリティ グループ |
 
-ポリシーで *配布グループを* 割り当てると、ポリシーは配布グループ内の各ユーザー Teamsメールとチャットを *監視します*。 ポリシーで *Microsoft 365* グループを割り当てると、ポリシーは、Microsoft 365 グループに送信された電子メールと *Teams* チャットを監視します。*は、各グループ メンバーが受信した個々の電子メールやチャットではありません。 通信コンプライアンス ポリシーで配布グループを使用して、各ユーザーからの個々の電子Teamsチャットが自動的に監視されます。
+ポリシーで *配布グループを* 割り当てると、ポリシーは配布グループ内Teamsのすべての電子メールとチャットを *監視します*。 ポリシーで *Microsoft 365* グループを割り当てると、ポリシーは Microsoft 365 グループに送信された電子メールと *Teams* チャットを監視します。*は、各グループ メンバーが受信した個々の電子メールやチャットではありません。 通信コンプライアンス ポリシーで配布グループを使用して、各ユーザーからの個々の電子Teamsチャットを自動的に監視する方法をお勧めします。
 
 Exchange オンプレミス展開または外部メール プロバイダーを使用している組織で、ユーザーの Microsoft Teams チャットをモニターする場合は、オンプレミスまたは外部のメールボックスを持つユーザーの配布グループを作成してモニターする必要があります。 これらの手順の後半では、ポリシー ウィザードで **監視対象ユーザーおよびグループ** の選択としてこの配布グループを割り当てます。 クラウドベースのストレージを有効にするための要件と制限事項、およびオンプレミス ユーザーに対する Teams のサポートの詳細については、「[オンプレミス ユーザーの Teams チャット データを検索する](search-cloud-based-mailboxes-for-on-premises-users.md)」を参照してください。
 
@@ -264,7 +264,7 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
 
 ## <a name="step-6-optional-update-compliance-boundaries-for-communication-compliance-policies"></a>手順 6 (オプション): 通信コンプライアンス ポリシーのコンプライアンス境界を更新する
 
-[コンプライアンスの](/microsoft-365/compliance/set-up-compliance-boundaries)境界は、電子情報開示マネージャーが検索できるユーザー コンテンツの場所 (メールボックス、OneDrive アカウント、SharePoint サイトなど) を制御する組織内に論理的な境界を作成します。
+[コンプライアンスの境界](/microsoft-365/compliance/set-up-compliance-boundaries)は、電子情報開示管理者が検索できるユーザー コンテンツの場所 (メールボックス、OneDrive アカウント、SharePoint サイトなど) を制御する組織内に論理的な境界を作成します。
 
 組織内でコンプライアンスの境界を構成している場合は、通信コンプライアンス ポリシーをサポートするメールボックスに特定のユーザーがアクセスできるコンプライアンスの境界を更新する必要があります。 ポリシー管理および調査および修復アクションが適切に機能するには、通信コンプライアンス管理者およびコミュニケーション コンプライアンス レビュー担当者へのアクセスを許可する必要があります。
 

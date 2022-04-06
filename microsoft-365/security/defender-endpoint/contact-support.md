@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 60a389d2422a2d3b2f50f77bc978f9f9bbc4a087
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: bbf7be489f969007badb4d00fb25ce22eb991f55
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62463443"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475347"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
 
@@ -56,11 +56,11 @@ Defender for Endpoint は最近、サポート プロセスをアップグレー
 
 1. ポータルの右上部にある疑問符をクリックし、[Microsoft サポート] をクリックします。
 
-    :::image type="content" source="../../media/contactsupport.png" alt-text="Microsoft のサポート。":::
+   :::image type="content" source="../../media/contactsupport.png" alt-text="ポータルの Microsoft サポート Microsoft 365 Defenderアイコン" lightbox="../../media/contactsupport.png":::
 
 2. [ヘルプが必要 **] をクリックします。**  ポータルの右下にあるボタンMicrosoft 365 Defenderします。
 
-    ![[必要なヘルプ] ボタンのイメージ。](images/need-help-option.png)
+   :::image type="content" source="images/need-help-option.png" alt-text="[ヘルプが必要] ボタン" lightbox="images/need-help-option.png":::
 
 ウィジェットでは、次の 2 つのオプションが提供されます。
 
@@ -71,7 +71,7 @@ Defender for Endpoint は最近、サポート プロセスをアップグレー
 
 このオプションには、質問に関連する可能性がある記事が含まれます。 検索ボックスに質問を入力し始めるだけで、検索に関連する記事が表示されます。
 
-:::image type="content" source="../../media/contactsupport1.png" alt-text="どのように支援できますか?":::
+:::image type="content" source="../../media/contactsupport1.png" alt-text="どのように支援できますか?" lightbox="../../media/contactsupport1.png":::
 
 提案された記事で十分でない場合は、サービス要求を開く必要があります。
 
@@ -82,11 +82,9 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 > [!NOTE]
 > Microsoft とプレミア サポート契約を結んだ場合は、ウィジェットにプレミア タグが表示されます。 設定されていない場合は、Microsoft アカウント マネージャーに問い合わせください。
 
-### <a name="contact-support"></a>サポートに連絡
+### <a name="contact-support"></a>サポートにお問い合せください
 
-:::image type="content" source="../../media/contactsupport2.png" alt-text="連絡先のサポート 2."::: </br>
-
-:::image type="content" source="../../media/contactsupport2.png" alt-text="連絡先のサポート 2":::
+:::image type="content" source="../../media/contactsupport2.png" alt-text="連絡先のサポート 2" lightbox="../../media/contactsupport2.png"::: </br>
 
 1. 直面している問題のタイトルと説明、お客様に連絡する可能性がある電話番号と電子メール アドレスを入力します。
 2. (省略可能)サポート ケースに追加のコンテキストを提供するために、問題に関連する添付ファイルを最大 5 つ含める。

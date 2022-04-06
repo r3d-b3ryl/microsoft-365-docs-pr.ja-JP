@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0cdf60708e84b0972099330d48f19b22d26766ba
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 53194aac16091b9afd9559b4f372c2d436c198bf
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766838"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474709"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS Catalina および macOS の新しいバージョンの新しい構成プロファイル
 
@@ -54,7 +54,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
-    ![承認済みのシステム拡張機能のスクリーンショット。](images/mac-approved-system-extensions.png)
+    :::image type="content" source="images/mac-approved-system-extensions.png" alt-text=" [承認済みシステム拡張機能] ページ" lightbox="images/mac-approved-system-extensions.png":::
 
 ### <a name="privacy-preferences-policy-control"></a>プライバシー設定ポリシー制御
 
@@ -65,11 +65,11 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
 3. コード要件をに設定する `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. アプリ **またはサービスを** **SystemPolicyAllFiles に設定し、[** 許可] にアクセス **します**。
 
-    ![プライバシー設定ポリシー制御。](images/mac-system-extension-privacy.png)
+   :::image type="content" source="images/mac-system-extension-privacy.png" alt-text=" [プライバシーの基本設定] ポリシー制御メニュー項目" lightbox="images/mac-system-extension-privacy.png":::
 
 ### <a name="network-extension-policy"></a>ネットワーク拡張ポリシー
 
-エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft 365 Defenderします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報をポータルMicrosoft 365 Defenderします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
 > [!NOTE]
 > JAMF には、コンテンツ フィルター ポリシーの組み込みのサポートが用意されていません。これは、macOS 上の Microsoft Defender for Endpoint がデバイスにインストールするネットワーク拡張機能を有効にするための前提条件です。 さらに、JAMF は展開するポリシーの内容を変更する場合があります。
@@ -170,7 +170,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
 
-5. JAMF ポータルから [構成プロファイル] に移動 **し、[** 設定] ボタン **アップロード** クリックします。 ファイル `com.microsoft.network-extension.signed.mobileconfig` の入力を求めるメッセージが表示されたら選択します。
+5. JAMF ポータルから [構成プロファイル] **に移動し、[** 設定] ボタン **アップロード** クリックします。 ファイル `com.microsoft.network-extension.signed.mobileconfig` の入力を求めるメッセージが表示されたら選択します。
 
 ## <a name="intune"></a>Intune
 
@@ -193,7 +193,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
    |com.microsoft.wdav.netext|UBF8T346G9|
    |||
 
-   ![システム構成プロファイルのスクリーンショット。](images/mac-system-extension-intune2.png)
+   :::image type="content" source="images/mac-system-extension-intune2.png" alt-text=" [システム構成プロファイル] ページ" lightbox="images/mac-system-extension-intune2.png":::
 
 5. タブで、 `Assignments` このプロファイルを [すべてのユーザー] に割り当& **すべてのデバイスに割り当てる必要があります**。
 6. この構成プロファイルを確認して作成します。
@@ -202,7 +202,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
 
 次の構成プロファイルは、ネットワーク拡張機能を有効にし、エンドポイント セキュリティ システム拡張機能へのフル ディスク アクセスを付与します。
 
-次のコンテンツを次の名前の **ファイルに保存** sysext.xml。
+次のコンテンツを次の名前 **のファイルに** 保存sysext.xml。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -315,7 +315,7 @@ sysext.xml: OK
 3. 構成プロファイルを開き **、sysext.xml。** このファイルは、前の手順で作成されました。
 4. **[OK]** を選択します。
 
-    ![Intune のスクリーンショットのシステム拡張機能。](images/mac-system-extension-intune.png)
+   :::image type="content" source="images/mac-system-extension-intune.png" alt-text=" Intune ページのシステム拡張機能" lightbox="images/mac-system-extension-intune.png":::
 
 5. タブで、 `Assignments` このプロファイルを [すべてのユーザー] に割り当& **すべてのデバイスに割り当てる必要があります**。
 6. この構成プロファイルを確認して作成します。

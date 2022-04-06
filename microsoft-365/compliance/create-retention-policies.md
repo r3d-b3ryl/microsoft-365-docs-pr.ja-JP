@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 94388a375c3c50d97e696637ef6ef4ebefc96aab
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 5a57093ed4ecd5b87a62701e3c055888ed16a5ca
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63715495"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595325"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -74,7 +74,7 @@ ms.locfileid: "63715495"
 ### <a name="retention-policy-for-teams-locations"></a>Teams の場所のアイテム保持ポリシー
 
 > [!NOTE]
-> データ保持ポリシーは、現在プレビュー段階の[共有チャネル](/MicrosoftTeams/shared-channels)をサポートするようになりました。 **Teams チャネル メッセージ** の場所に対するデータ保持設定を構成すると、チームに共有チャネルがある場合、それらはデータ保持設定を親チームから継承します。
+> アイテム保持ポリシーは、現在プレビュー段階の [共有チャネル](/MicrosoftTeams/shared-channels)をサポートするようになりました。**Teams チャネル メッセージ** の場所に対するデータ保持設定を構成すると、チームに共有チャネルがある場合、それらはデータ保持設定を親チームから継承します。
 
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[情報ガバナンス]** > **[保持ポリシー]** を選択します。
 
@@ -128,7 +128,7 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
 ### <a name="retention-policy-for-yammer-locations"></a>Yammer の場所のアイテム保持ポリシー
 
 > [!NOTE]
-> Yammer のアイテム保持ポリシーはプレビュー段階であり、現在、アイテム保持ポリシーの結果としてメッセージが削除されたときはユーザーに通知されません。
+> Yammer のアイテム保持ポリシーは、現在、アイテム保持ポリシーの結果としてメッセージが削除されたときはユーザーに通知されません。
 >
 > この機能を使用するには、ご利用の Yammer ネットワークがハイブリッド モードではなく、[ネイティブ モード](/yammer/configure-your-yammer-network/overview-native-mode)になっている必要があります。
 
@@ -143,11 +143,6 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
     - [**アダプティブ**] を選択した場合: [**アダプティブ ポリシー スコープと場所の選択**] ページで、[**スコープの追加**] を選択し、作成された 1 つ以上のアダプティブ スコープを選択します。 次に、1 つ以上の場所を選択します。 選択できる場所は、追加された[スコープの種類](retention-settings.md#configuration-information-for-adaptive-scopes)によって異なります。 たとえば、**"ユーザー"** のスコープの種類のみを追加した場合、**[Yammer ユーザー メッセージ]** を選択できますが、**[Yammer コミュニティ メッセージ]** は選択できません。 
     
     - **[静的]** を選択した場合: **[ポリシーを適用する場所の選択]** ページで、Yammer の場所の 1 つまたは両方をオンに切り替えます: **[Yammer コミュニティのメッセージ]** と **[Yammer ユーザーのメッセージ]**。
-        
-        > [!IMPORTANT]
-        > Yammer ユーザーのメッセージのみのアイテム保持ポリシーを作成できますが、この場所のアイテム保持ポリシーにより、すべてのコミュニティ メンバーの Yammer アプリからコミュニティ メッセージを削除できます。
-        > 
-        > このオプションを選択し、アイテム保持ポリシーがユーザー メッセージを削除するように構成されている場合は、この意味を理解してください。詳細については、「[Yammer での保持のしくみ](retention-policies-yammer.md#how-retention-works-with-yammer)」を参照してください。
         
         既定では、すべてのコミュニティとユーザーが選択されていますが、コミュニティやユーザーを含めるか、除外するかを指定して、設定し直すことができます。
         

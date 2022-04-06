@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd5b88c5d43f2ec20c200ee55458e2ef204775ae
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d2bf9a6fa1f874e7d550d0d0f7a42742a07665eb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164156"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468261"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>ASR ルールの展開と検出を最適化する
 
@@ -36,7 +36,7 @@ ms.locfileid: "61164156"
 [攻撃表面の縮小 (ASR) ルールは、一](./attack-surface-reduction.md) 般的なマルウェアの悪用を特定して防止します。 悪意のあるコードを実行できる可能性のある時間と方法を制御します。 たとえば、JavaScript または VBScript がダウンロードした実行可能ファイルを起動したり、Office マクロからの Win32 API 呼び出しをブロックしたり、USB ドライブから実行されるプロセスをブロックしたりすることができます。
 
 
-:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="攻撃表面管理カード。":::
+:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="攻撃表面管理カード" lightbox="../../media/attack-surface-mgmt.png":::
 <br>
 *攻撃表面管理カード*
 
@@ -46,15 +46,15 @@ ms.locfileid: "61164156"
 * ASR 検出を確認し、誤った検出の可能性を特定します。
 * 除外の影響を分析し、除外するファイル パスの一覧を生成します。
 
-[Go **to attack surface management Reports** \> **Attack** surface reduction \> **rules Add** \> **exclusions] を選択します**。 そこから、ポータルの他のセクションMicrosoft 365 Defenderできます。
+[ **Go to attack surface management Reports** \> **Attack** \> **surface reduction rules Add** \> **exclusions] を選択します**。 そこから、ポータルの他のセクションMicrosoft 365 Defenderできます。
 
-![[除外] タブは、ポータルの [攻撃表面の縮小ルール] ページMicrosoft 365 Defenderします。](images/secconmgmt_asr_m365exlusions.png)<br>
+:::image type="content" source="images/secconmgmt_asr_m365exlusions.png" alt-text="サイト ポータルの [攻撃表面縮小ルール] ページの [除外] タブをMicrosoft 365 Defenderする" lightbox="images/secconmgmt_asr_m365exlusions.png":::<br>
 ポータル ***の [攻撃表面縮小** ルール] ページの [除外のMicrosoft 365 Defender]*
 
 > [!NOTE]
-> ポータルにMicrosoft 365 Defenderするには、Microsoft 365 E3または E5 ライセンスと、ユーザーに対して特定の役割を持つアカウントAzure Active Directory。 [必要なライセンスとアクセス許可についてお読みください](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+> ポータルにMicrosoft 365 Defenderするには、Microsoft 365 E3または E5 ライセンスと、ユーザーに対して特定の役割を持つアカウントがAzure Active Directory。 [必要なライセンスとアクセス許可についてお読みください](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
-ASR ルールの展開の詳細については<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>、「Microsoft 365 Defender ASR ルールの展開と検出の監視と[管理」を参照してください](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
+ASR ルールの展開の詳細については、「<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>Microsoft 365 Defender ASR ルールの展開と検出の監視と[管理」を参照してください](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
 
 **関連トピック**
 

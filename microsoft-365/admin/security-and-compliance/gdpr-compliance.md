@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: 一般データ保護規則 (GDPR) プロセスで 一般法人向け Microsoft 365 がどのように役立つかについて説明します。
-ms.openlocfilehash: 7c8a2c402e362ede4eb9b2f4ec221dd8556052db
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+ms.openlocfilehash: d5c24fe2f2295e99798fcc5382dc284cec01d385
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403647"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632407"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR の簡略化: 小規模ビジネス向けのガイド
 
@@ -134,7 +134,7 @@ Microsoft 365 などのクラウドに個人データを保存する場合は、
 
 #### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365 の役立つ機能
 
-[コンプライアンス機能のセットアップ](set-up-compliance.md)を使用して、ビジネスの機密情報を保護できます。 コンプライアンス マネージャーを使用すると、すぐ使用を開始できます。 たとえば、[GDPR テンプレート](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr)を使用する [DLP ポリシーの設定](/microsoft-365/compliance/create-a-dlp-policy-from-a-template)ができます。
+[コンプライアンス機能のセットアップ](../../business-premium/m365bp-set-up-compliance.md)を使用して、ビジネスの機密情報を保護できます。 コンプライアンス マネージャーを使用すると、すぐ使用を開始できます。 たとえば、[GDPR テンプレート](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr)を使用する [DLP ポリシーの設定](/microsoft-365/compliance/create-a-dlp-policy-from-a-template)ができます。
 
 ### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>手順 5: データ処理アクティビティに関するドキュメントを保持する
 

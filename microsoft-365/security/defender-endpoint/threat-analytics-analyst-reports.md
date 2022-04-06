@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5cd7c8da3b4d22600293959bdcb47a783a8569c3
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 337f9a94b651adffc7360cb88b3d68c9c8167c0a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156239"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468107"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>脅威分析のアナリスト レポート
 
@@ -35,7 +35,7 @@ ms.locfileid: "62156239"
 
 各 [脅威分析レポートには、](threat-analytics.md) 動的セクションと、アナリスト レポートと呼ばれる包括的な記述セクション _が含まれます_。 このセクションにアクセスするには、追跡された脅威に関するレポートを開き、[アナリスト レポート] タブ **を選択** します。
 
-![脅威分析レポートのアナリスト レポート セクションのイメージ。](images/ta-analyst-report-small.png)
+:::image type="content" source="images/ta-analyst-report-small.png" alt-text="脅威分析レポートのアナリスト レポート セクション" lightbox="images/ta-analyst-report-small.png":::
 
 _脅威分析レポートのアナリスト レポート セクション_
 
@@ -51,8 +51,8 @@ _脅威分析レポートのアナリスト レポート セクション_
 |---|---|
 |エグゼクティブの概要|脅威の概要 (最初に見られた場合を含む)、その動機、重要なイベント、主要なターゲット、および個別のツールとテクニック。 この情報を使用して、業界、地理的位置、ネットワークのコンテキストで脅威に優先順位を付ける方法をさらに評価できます。|
 |分析|攻撃の詳細、攻撃者が新しい手法または攻撃表面を利用する方法など、脅威に関する技術情報|
-|MITRE ATT&CK 技術の観察|CK 攻撃フレームワークの[MITRE ATT](https://attack.mitre.org/)に&方法|
-|[緩和策](#apply-additional-mitigations)|脅威の影響を停止または軽減する可能性がある推奨事項。 このセクションには、脅威分析レポートの一部として動的に追跡されない軽減策も含まれています。|
+|MITRE ATT&CK 技術の観察|CK 攻撃フレームワークの [MITRE ATT](https://attack.mitre.org/) に&方法|
+|[軽減策](#apply-additional-mitigations)|脅威の影響を停止または軽減する可能性がある推奨事項。 このセクションには、脅威分析レポートの一部として動的に追跡されない軽減策も含まれています。|
 |[検出の詳細](#understand-how-each-threat-can-be-detected)|脅威に関連付けられたアクティビティやコンポーネントを表面化できる Microsoft セキュリティ ソリューションによって提供される特定の一般的な検出。|
 |[高度な追求](#find-subtle-threat-artifacts-using-advanced-hunting)|[脅威の可能性のあるアクティビティ](advanced-hunting-overview.md) を事前に特定するための高度な検索クエリ。 ほとんどのクエリは、特に悪意のある可能性のあるコンポーネントや、悪意のあると動的に評価できなかった動作を見つけ出す場合に、検出を補完するために提供されます。|
 |関連情報|レポートの作成中にアナリストが参照する Microsoft およびサードパーティの文書。 脅威分析コンテンツは、Microsoft の研究者によって検証されたデータに基づいて行います。 一般に公開されているサードパーティのソースからの情報は、その情報として明確に識別されます。|
@@ -61,11 +61,11 @@ _脅威分析レポートのアナリスト レポート セクション_
 
 ## <a name="apply-additional-mitigations"></a>追加の軽減策を適用する
 
-脅威分析は、セキュリティ更新プログラムと [セキュリティで保護された構成の状態を動的に追跡します](threat-analytics.md#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)。 この情報は、[軽減策] タブのグラフと表 **として使用** できます。
+脅威分析は、セキュリティ更新プログラム [とセキュリティで保護された構成の状態を動的に追跡します](threat-analytics.md#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)。 この情報は、[軽減策] タブのグラフと表 **として使用** できます。
 
 これらの追跡された軽減策に加えて、アナリスト レポートでは、動的に監視されない軽減 _策も説明_ します。 動的に追跡されない重要な軽減策の例を次に示します。
 
-- .lnk 添付ファイルまたは _他の疑わしい_ ファイルの種類を含むメールをブロックする
+- _.lnk 添付ファイルまたは他の疑わしい_ ファイルの種類を含むメールをブロックする
 - ローカル管理者パスワードをランダム化する
 - フィッシングメールや他の脅威ベクトルについてエンド ユーザーに教育する
 - 特定の攻撃表面 [の縮小ルールを有効にする](attack-surface-reduction.md)
@@ -74,18 +74,18 @@ _脅威分析レポートのアナリスト レポート セクション_
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>各脅威の検出方法を理解する
 
-また、アナリスト レポートには、Microsoft Defender ウイルス対策 _エンドポイント検出_ および応答 (EDR) 機能が提供されます。
+また、アナリスト レポートには、_Microsoft Defender ウイルス対策エンドポイントの_ 検出と応答 (EDR) 機能も提供されます。
 
 ### <a name="antivirus-detections"></a>ウイルス対策の検出
 
 これらの検出は、デバイスで有効になっているデバイス[Microsoft Defender ウイルス対策](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)使用できます。 これらの検出が Microsoft Defender for Endpoint にオンボードされているデバイスで発生すると、レポート内のグラフを点灯するアラートもトリガーされます。
 
 > [!NOTE]
-> アナリスト レポートには、 **追跡される** 脅威に固有のコンポーネントや動作に加えて、広範囲の脅威を識別できる一般的な検出も一覧表示されます。 これらの一般的な検出は、グラフには反映されません。
+> アナリスト レポートには **、追跡される** 脅威に固有のコンポーネントや動作に加えて、広範囲の脅威を識別できる一般的な検出も一覧表示されます。 これらの一般的な検出は、グラフには反映されません。
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>エンドポイントの検出と応答 (EDR) アラート
 
-EDRは、Microsoft Defender for Endpoint にオンボードされている[デバイスに対して発生します](onboard-configure.md)。 これらのアラートは、通常、Microsoft Defender for Endpoint センサーによって収集されるセキュリティ信号と、強力な信号ソースとして機能する他のエンドポイント機能 (ウイルス対策、ネットワーク保護、改ざん防止など) に依存します。
+EDRは、[Microsoft Defender for Endpoint にオンボードされているデバイスに対して発生します](onboard-configure.md)。 これらのアラートは、通常、Microsoft Defender for Endpoint センサーによって収集されるセキュリティ信号と、強力な信号ソースとして機能する他のエンドポイント機能 (ウイルス対策、ネットワーク保護、改ざん防止など) に依存します。
 
 ウイルス対策の検出の一覧と同様EDR一部のアラートは、追跡された脅威に関連付けされない疑わしい動作に一般的にフラグを設定するように設計されています。 このような場合、レポートはアラートを "汎用" として明確に識別し、レポート内のグラフには影響を与えかねない。
 
