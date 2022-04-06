@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 36713496b5885866dd21a3402dcfe66b4af5b76e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0208e21394e350c2b5ffffdca6f8e14ebba227c8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166772"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476051"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>ローカル オンボーディングスクリプトまたはオフボード スクリプトを使用する場合に通知ルールを作成する
 
@@ -45,52 +45,53 @@ ms.locfileid: "61166772"
 
 次のアクセス権が必要です。
 
-- Power Automate (少なくともユーザー単位のプラン)。 詳細については、「価格設定[」Power Automateを参照してください](https://flow.microsoft.com/pricing/)。
+- Power Automate (少なくともユーザー単位のプラン)。 詳細については、「価格設定[」Power Automate参照してください](https://flow.microsoft.com/pricing/)。
 - Azure Table または SharePointリストまたはライブラリ/SQL DB。
 
 ## <a name="create-the-notification-flow"></a>通知フローの作成
 
-1. In [flow.microsoft.com](https://flow.microsoft.com/).
+1. [ [flow.microsoft.com](https://flow.microsoft.com/)]
 
-2. [スケジュール済 **み] の [>のフロー>から] に移動します**。
+2. [新しい **フロー] > [ > ] に空白から移動します**。
 
-    ![フローのイメージ。](images/new-flow.png)
+   :::image type="content" source="images/new-flow.png" alt-text="フロー" lightbox="images/new-flow.png":::
+
 
 3. スケジュールされたフローを作成します。
    1. フロー名を入力します。
    2. 開始時刻を指定します。
    3. 頻度を指定します。 たとえば、5 分ごとに。
 
-    ![通知フローのイメージ。](images/build-flow.png)
+   :::image type="content" source="images/build-flow.png" alt-text="通知フロー" lightbox="images/build-flow.png":::
 
 4. +ボタンを選択して新しいアクションを追加します。 新しいアクションは、Defender for Endpoint セキュリティ センター デバイス API への HTTP 要求です。 また、既定の "WDATP Connector" (アクション: "Machines - Get list of machines") に置き換えすることもできます。
 
-    ![繰り返しのイメージとアクションの追加。](images/recurrence-add.png)
+   :::image type="content" source="images/recurrence-add.png" alt-text="定期的なアクションとアクションの追加" lightbox="images/recurrence-add.png":::
 
 5. 次の HTTP フィールドを入力します。
 
    - メソッド: デバイスの一覧を取得する値として "GET" を指定します。
-   - URI: を入力します `https://api.securitycenter.microsoft.com/api/machines` 。
+   - URI: を入力します `https://api.securitycenter.microsoft.com/api/machines`。
    - 認証: [Active Directory OAuth] を選択します。
-   - テナント: サインインし、[アプリの登録 https://portal.azure.com ] Azure Active Directory >**に移動し**、テナント ID の値を取得します。
+   - テナント: サインインし、[アプリhttps://portal.azure.comの登録] Azure Active Directory >**に** 移動し、テナント ID の値を取得します。
    - 対象ユーザー: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - クライアント ID: アプリ登録にサインインして、Azure Active Directory >に移動し、クライアント https://portal.azure.com ID の値を取得します。 
+   - クライアント ID: アプリ登録にhttps://portal.azure.comサインインして、Azure Active Directory >**に** 移動し、クライアント ID の値を取得します。
    - 資格情報の種類: [シークレット] を選択します。
-   - シークレット: サインインして、アプリの登録Azure Active Directory >に移動し、テナント https://portal.azure.com ID の値を取得します。 
+   - シークレット: サインインして、https://portal.azure.comアプリの登録Azure Active Directory >**に** 移動し、テナント ID の値を取得します。
 
-    ![HTTP 条件のイメージ。](images/http-conditions.png)
+    :::image type="content" source="images/http-conditions.png" alt-text="HTTP 条件" lightbox="images/http-conditions.png":::
 
-6. [新しいアクションの追加] を選択して新しい手順を追加 **し** 、[データ操作] を検索 **し** 、[JSON の解析] **を選択します**。
+6. [新しいアクションの追加] を選択して新しい手順を追加 **し、[** データ操作] を検索 **し** 、[JSON の解析] **を選択します**。
 
-    ![データ操作のイメージ。](images/data-operations.png)
+   :::image type="content" source="images/data-operations.png" alt-text="データ操作エントリ" lightbox="images/data-operations.png":::
 
 7. [コンテンツ] フィールドに **Body を追加** します。
 
-    ![解析 JSON のイメージ。](images/parse-json.png)
+   :::image type="content" source="images/parse-json.png" alt-text="[JSON の解析] セクション" lightbox="images/parse-json.png":::
 
 8. [サンプル ペイロード **を使用してスキーマを生成する] リンクを選択** します。
 
-    ![ペイロードを含む解析 json のイメージ。](images/parse-json-schema.png)
+   :::image type="content" source="images/parse-json-schema.png" alt-text="ペイロードを含む解析 JSON" lightbox="images/parse-json-schema.png":::
 
 9. 次の JSON スニペットをコピーして貼り付けます。
 
@@ -174,27 +175,27 @@ ms.locfileid: "61166772"
 
     ```
 
-10. JSON 呼び出しから値を抽出し、オンボードデバイスが /が既に登録されている場合は、SharePointリストに登録されています。
+10. JSON 呼び出しから値を抽出し、オンボードデバイスが /が既に登録されているSharePoint例として確認します。
 
     - はいの場合、通知はトリガーされません
     - いいえの場合は、新しいオンボード デバイスが [SharePoint] リストに登録され、Defender for Endpoint 管理者に通知が送信されます。
 
-    ![それぞれの画像に適用されます。](images/flow-apply.png)
+    :::image type="content" source="images/flow-apply.png" alt-text="各要素へのフローの適用" lightbox="images/flow-apply.png":::
 
-    ![取得項目を持つ各項目に適用されるイメージ。](images/apply-to-each.png)
+    :::image type="content" source="images/apply-to-each.png" alt-text="Get items 要素へのフローの適用" lightbox="images/apply-to-each.png":::
 
 11. [ **条件]** で、次の式を追加します。"length(body('Get_items')?'value']) をクリックし、条件を 0 に設定します。
 
-    ![各条件に適用されるイメージ。 ](images/apply-to-each-value.png)
-     ![condition1 のイメージ。 ](images/conditions-2.png)
-     ![condition2 のイメージ。 ](images/condition3.png)
-     ![電子メールの送信イメージ。](images/send-email.png)
+    :::image type="content" source="images/apply-to-each-value.png" alt-text="各条件へのフローの適用" lightbox="images/apply-to-each-value.png":::
+    :::image type="content" source="images/conditions-2.png" alt-text="condition-1" lightbox="images/conditions-2.png":::
+    :::image type="content" source="images/condition3.png" alt-text="condition-2" lightbox="images/condition3.png":::
+    :::image type="content" source="images/send-email.png" alt-text="[メールの送信] セクション" lightbox="images/send-email.png":::
 
 ## <a name="alert-notification"></a>アラート通知
 
 次の図は、電子メール通知の例です。
 
-![電子メール通知のイメージ。](images/alert-notification.png)
+:::image type="content" source="images/alert-notification.png" alt-text="メール通知画面" lightbox="images/alert-notification.png":::
 
 ## <a name="tips"></a>ヒント
 

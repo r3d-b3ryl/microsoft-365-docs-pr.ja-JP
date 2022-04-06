@@ -1,6 +1,6 @@
 ---
-title: 手順 3. 最初のインシデントのインシデント後レビューを実行する
-description: ユーザーの最初のインシデントのレビューを実行するMicrosoft 365 Defender。
+title: 手順 3. 最初のインシデントのインシデント後のレビューを実行する
+description: Microsoft 365 Defenderで最初のインシデントのレビューを実行する方法。
 keywords: インシデント、アラート、調査、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,35 +22,35 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3139cab64a967ed65a16867b53ad57a6913afd2c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d2d137ea2a97bb183187ca83eb12a34ab336bc53
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325895"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666000"
 ---
-# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>手順 3. 最初のインシデントのインシデント後レビューを実行する
+# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>手順 3. 最初のインシデントのインシデント後のレビューを実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-国立標準技術研究所 (NIST) は、攻撃から回復するためにすべての手順が実行された後、組織はインシデントを確認して、そこから学び、セキュリティの態勢またはプロセスを改善する必要があります。 インシデント処理のさまざまな側面を評価することが、次のインシデントの準備において重要になります。
+米国標準技術研究所 (NIST) は、攻撃から回復するためのすべての手順が実行されたら、組織はインシデントを確認してそこから学習し、セキュリティ体制またはプロセスを改善する必要があることを推奨しています。 インシデント処理のさまざまな側面を評価することは、次のインシデントに備える上で重要になります。
 
-Microsoft 365 Defender、[MITRE ATT および CK Framework](https://attack.mitre.org/) に合ったアラートを組織に提供することで、インシデント発生後のアクティビティを&できます。 すべての Microsoft Defender ソリューションは、ATT および CK の戦術または&に従って攻撃をラベル付けします。
+Microsoft 365 Defenderは、[MITRE ATT&CK Framework](https://attack.mitre.org/) に対応するアラートを組織に提供することで、インシデント後のアクティビティの実行に役立ちます。 すべての Microsoft Defender ソリューションは、ATT&CK 戦術または手法に従って攻撃にラベルを付けます。
 
-この業界フレームワークにアラートをマッピングすると、次の機能を使用できます。
+この業界フレームワークにアラートをマッピングすることで、次のことができます。
 
-- セキュリティ 範囲のギャップの分析を実行します。
-- 敵対者とキャンペーンの属性を決定します。
+- セキュリティ カバレッジのギャップの分析を行います。
+- 敵対的属性とキャンペーン属性を決定します。
 - 傾向分析を実行します。
 - 攻撃方法の認識におけるスキルのギャップを特定します。
-- 修復を高速化Power Automate Playbook を作成します。
+- 修復を高速化するためにPower Automateプレイブックを作成します。
 
-インシデント後のレビュー アクティビティによって、セキュリティ構成とセキュリティ チームのプロセスを微調整して、組織の対応機能を合理化することもできます。
+インシデント後のレビュー アクティビティでは、組織の対応機能を合理化するために、セキュリティ構成とセキュリティ チームのプロセスを微調整することもできます。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 次の追加の調査パスを参照してください。
 

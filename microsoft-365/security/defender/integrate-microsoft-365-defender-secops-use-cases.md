@@ -1,7 +1,7 @@
 ---
-title: 手順 5.  使用例の開発とテスト
-description: セキュリティ操作に統合する際の使用例の開発とテストMicrosoft 365 Defender基本。
-keywords: インシデント、アラート、調査、相関関係、攻撃、デバイス、ユーザー、ID、ID、メールボックス、メール、365、microsoft、m365、インシデント対応、サイバー攻撃、secops、セキュリティ操作、soc
+title: 手順 5.  ユース ケースの開発とテスト
+description: Microsoft 365 Defenderをセキュリティ操作に統合する場合のユース ケースの開発とテストの基本。
+keywords: インシデント, アラート, 調査, 相関関係, 攻撃, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365, インシデント対応, サイバー攻撃, secops, セキュリティ操作, soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,126 +22,126 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6621ca47356f87edd47a905e4edeb592d9b556ff
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 732b10bceaa3509f28f607228dc20ad6e941cb2f
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499091"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664460"
 ---
-# <a name="step-5-develop-and-test-use-cases"></a>手順 5.  使用例の開発とテスト
+# <a name="step-5-develop-and-test-use-cases"></a>手順 5.  ユース ケースの開発とテスト
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-セキュリティ 運用センター (SOC) に Microsoft 365 Defenderを展開する推奨される方法は、SOC チームの現在のツール、プロセス、およびスキルセットによって異なっています。 何百ものセキュリティ ソースではないにしろ、数十から大量のデータが収集されるので、プラットフォーム全体でサイバー衛生を維持するには困難な場合があります。 
+Security Operations Center (SOC) にMicrosoft 365 Defenderをデプロイするために推奨される方法は、SOC チームの現在のツール、プロセス、スキルセットのセットによって異なります。 何百ものセキュリティ ソースではないにしても、数十個から大量のデータが送信されるため、プラットフォーム間でサイバー検疫を維持することは困難な場合があります。 
 
-セキュリティ ツールは相互に関連しています。 セキュリティ テクノロジで 1 つの機能を有効にしたり、プロセスを変更したりすると、別の機能が壊れる可能性があります。 このため、SOC チームは、使用例を定義および優先順位付けするためのメソッドを形式化する必要があります。 使用例は、さまざまなチームで SOC 操作の要件とテスト プロセスを定義するのに役立ちます。 適切な役割とタスクの組み合わせが適切なスキルセットを持つ適切なチームに揃っているかどうかを判断するために、メトリックをキャプチャするための方法論を作成します。 
+セキュリティ ツールは相互に関連しています。 セキュリティ テクノロジで 1 つの機能を有効にするか、プロセスを変更すると、別の機能が中断される可能性があります。 このため、MICROSOFT では、SOC チームがユース ケースを定義して優先順位を付ける方法を形式化することをお勧めします。 ユース ケースは、さまざまなチーム間で SOC 操作の要件とテスト プロセスを定義するのに役立ちます。 メトリックをキャプチャするための手法を作成し、適切なロールとタスクの組み合わせが適切なチームと適切なスキルセットに合っているかどうかを判断します。 
 
-## <a name="develop-and-formalize-use-case-process"></a>使用例プロセスの開発と形式化
+## <a name="develop-and-formalize-use-case-process"></a>ユース ケース プロセスの開発と形式化
 
-SOC は、SOC Oversight チームによって規制される、使用例を開発するための高レベルの標準とプロセスを定義する必要があります。 SOC Oversight チームは、ビジネス、IT、法務、人事などのグループと一緒に作業し、最終的に SOC チームの Runbook やプレイブックに入る SOC の使用例に優先順位を付ける必要があります。 使用例の優先順位は、コンプライアンスやプライバシーなどの目的に基づいて行います。
+SOC は、SOC 監視チームによって規制されるユース ケースを開発するための高レベルの標準とプロセスを定義する必要があります。 SOC 監視チームは、最終的に SOC チームの Runbook とプレイブックに入る SOC のユース ケースに優先順位を付けるために、ビジネス、IT、法的、人事、その他のグループと協力する必要があります。 ユース ケースの優先順位は、コンプライアンスやプライバシーなどの目的に基づいています。
 
-使用例の開発に関連する SOC 監視アクティビティには、次のものが含まれます。 
+ユース ケースの開発に関連する SOC 監視アクティビティは次のとおりです。 
 
 - 要件
 - スタッフまたはトレーニングのニーズ
 - ソフトウェア ライセンス
-- ベンダー契約
-- 計画の管理
-- 使用例レジストリの維持
-- テンプレートの保守および更新
+- ベンダーの契約
+- プランの管理
+- ユース ケース レジストリの保守
+- テンプレートの保守/更新
 
-Runbook とプレイブックの作成プロセスを容易にするために、使用例の決定ツリーを作成します。 次の図は、例を示しています。
+Runbook とプレイブックの作成プロセスを容易にするには、ユース ケースデシジョン ツリーを作成します。 この図は例を示しています。
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="使用例の決定プロセス" lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="ユース ケースの決定プロセス" lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
 
-高レベルの使用例の標準が定義され、承認されると、次に実際の使用例を作成してテストします。 次のセクションでは、フィッシング対策と脅威と脆弱性スキャンのシナリオを例として使用します。
+高レベルのユース ケース標準が定義され、承認されたら、次の手順では実際のユース ケースを作成してテストします。 次のセクションでは、フィッシング対策と脅威と脆弱性スキャンのシナリオを例として使用します。
 
-## <a name="use-case-example-1-new-phishing-variant"></a>使用例 1: 新しいフィッシングバリアント
+## <a name="use-case-example-1-new-phishing-variant"></a>ユース ケースの例 1: 新しいフィッシングバリアント
 
-使用例を作成する最初の手順は、ストーリー ボードを使用してワークフローの概要を説明します。 脅威インテリジェンス チームへの新しいフィッシング攻撃通知のハイレベル ストーリー ボードの例を次に示します。
+ユース ケースを作成する最初の手順は、ストーリー ボードを使用してワークフローの概要を説明することです。 脅威インテリジェンス チームに対する新しいフィッシング悪用通知の概要を示すストーリー ボードの例を次に示します。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="フィッシング対策キャンペーンの使用例のワークフロー" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="フィッシング詐欺対策キャンペーンのユース ケースのワークフロー" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
 
-### <a name="invoke-the-use-case-workflow-for-example-1"></a>使用例のワークフロー (例 1) を呼び出す
+### <a name="invoke-the-use-case-workflow-for-example-1"></a>ユース ケース ワークフローの呼び出し (例 1)
 
-ストーリー ボードが承認されると、次に、使用例ワークフローを呼び出します。 フィッシング対策キャンペーンのプロセス例を次に示します。 
+ストーリー ボードが承認されたら、次の手順ではユース ケース ワークフローを呼び出します。 フィッシング対策キャンペーンのプロセスの例を次に示します。 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="フィッシング対策キャンペーンの詳細な使用例のワークフロー" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="フィッシング詐欺対策キャンペーンの詳細なユース ケース ワークフロー" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
 
-## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>使用例 2: 脅威と脆弱性のスキャン
+## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>ユース ケースの例 2: 脅威と脆弱性のスキャン
 
-使用例を使用できるもう 1 つのシナリオは、脅威と脆弱性のスキャンです。 この例では、SOC では、資産のスキャンを含む承認されたプロセスを介して、資産に対する脅威と脆弱性を修復する必要があります。 
+ユース ケースを使用できるもう 1 つのシナリオは、脅威と脆弱性のスキャンです。 この例では、SOC では、資産のスキャンを含む承認されたプロセスを使用して、資産に対する脅威と脆弱性を修復する必要があります。 
 
-アセットの種類に関する概要ストーリーボード脅威と脆弱性の管理次に示します。
+アセットの脅威と脆弱性の管理の高レベルストーリーボードの例を次に示します。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="ユーザーの使用例脅威と脆弱性の管理" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="脅威と脆弱性の管理のユース ケース ワークフロー" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
 
-### <a name="invoke-the-use-case-workflow-for-example-2"></a>使用例のワークフロー (例 2) を呼び出す
+### <a name="invoke-the-use-case-workflow-for-example-2"></a>ユース ケース ワークフローの呼び出し (例 2)
 
 脅威と脆弱性のスキャンのプロセスの例を次に示します。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="アプリケーションの詳細な使用例脅威と脆弱性の管理" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="脅威と脆弱性の管理の詳細なユース ケース ワークフロー" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
  
-### <a name="analyze-the-use-case-output-and-lessons-learned"></a>使用例の出力と学習した教訓を分析する
+### <a name="analyze-the-use-case-output-and-lessons-learned"></a>ユース ケースの出力と学習した教訓を分析する
 
-使用例が承認およびテストされた後、セキュリティ チーム間のギャップを、関係者、プロセス、および関連するMicrosoft 365 Defenderする必要があります。 Microsoft 365 Defenderテクノロジを分析して、望ましい結果を達成できるかを判断する必要があります。 チェックリストまたはマトリックスを使用して追跡できます。 
+ユース ケースが承認され、テストされた後、セキュリティ チーム間のギャップと、関連する人、プロセス、およびMicrosoft 365 Defenderテクノロジを特定する必要があります。 Microsoft 365 Defenderテクノロジを分析して、目的の成果を達成できるかどうかを判断する必要があります。 これらは、チェックリストまたはマトリックスを使用して追跡できます。 
 
-たとえば、フィッシング対策のシナリオの例では、SOC チームが次の表で検出を行った可能性があります。
+たとえば、フィッシング対策シナリオの例では、SOC チームがこの表で検出した可能性があります。
 
 
-| SOC チーム | 要件 | 要件を満たすユーザー | 要件を満たすプロセス | 関連するテクノロジ | 識別されるギャップ | 使用例の変更ログ | 除外 (Y/N) |
+| SOC チーム | 要件 | 要件を満たすユーザー | 要件を満たすプロセス | 関連するテクノロジ | 識別されたギャップ | ユース ケース変更ログ | 除外 (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
-| 脅威インテリジェンスと分析チーム | データ ソースが脅威インテリジェンス エンジンに適切に供給されています。 | 脅威インテリジェンス アナリスト/エンジニア | データ フィードの要件が確立され、承認済みソースからの脅威インテリジェンス トリガー | Microsoft Defender for Identity, Microsoft Defender for Endpoint | 脅威インテリジェンス チームは、オートメーション スクリプトを使用して、Microsoft 365 Defender INTEL エンジンと API をリンクしなかった | 脅威Microsoft 365 Defenderにデータ ソースとして追加する <BR> <BR> 使用例の実行ブックを更新する | N |
-| 監視チーム | データ ソースが監視ダッシュボードに適切にフィードされている | Tier 1,2 SOC Analyst-Monitoring &アラート | コンプライアンス センターのセキュリティ スコア&レポートのワークフロー | [セキュリティ コンプライアンス センター&アラート](/microsoft-365/security/office-365-security/alerts)  <br><br> セキュリティで保護されたスコアの監視  | SOC アナリストが新しいフィッシング バリアント検出の成功を報告してセキュリティで保護されたスコアを向上させるメカニズムはありません <br><br> [セキュリティ コンプライアンス センター&レポート](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| レポート ワークフローにセキュリティスコアの改善を追跡するためのプロセスを追加する | N | 
-| エンジニアリングチームと SecOps チーム | 変更コントロールの更新は、SOC チームの runbook で行います。 | Tier 2 SOC エンジニア | SOC チームの Runbook のコントロール通知手順を変更する | セキュリティ デバイスに対する承認済みの変更 | SOC セキュリティ テクノロジMicrosoft 365 Defenderの変更には承認が必要です | Microsoft Defender for Cloud Apps、Defender for Identity、Defender for Endpoint、Security & コンプライアンス センターを SOC runbooks に追加する | Y |
+| 脅威インテリジェンスと分析チーム | データ ソースは、脅威インテリジェンス エンジンに適切に供給されています。 | 脅威インテリジェンス アナリスト/エンジニア | データ フィードの要件が確立され、承認されたソースから脅威インテリジェンスがトリガーされる | Microsoft Defender for Identity、Microsoft Defender for Endpoint | 脅威インテリジェンス チームは、自動化スクリプトを使用してMicrosoft 365 Defender API と脅威 Intel エンジンをリンクしませんでした | 脅威エンジンにデータ ソースとしてMicrosoft 365 Defenderを追加する <BR> <BR> ユース ケース実行ブックを更新する | N |
+| 監視チーム | データ ソースが監視ダッシュボードに適切にフィードされている | 階層 1,2 SOC アナリスト – & アラートの監視 | セキュリティ & コンプライアンス センターのセキュリティ スコアを報告するためのワークフロー | [セキュリティ & コンプライアンス センターのアラート](/microsoft-365/security/office-365-security/alerts)  <br><br> セキュア スコアの監視  | SOC アナリストが、セキュリティスコアを向上させるための新しいフィッシングバリアント検出の成功を報告するメカニズムがない <br><br> [セキュリティ & コンプライアンス センターでのレポート](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Reporting ワークフローにセキュリティスコアの改善を追跡するプロセスを追加する | N | 
+| エンジニアリングチームと SecOps チーム | 変更制御の更新は、SOC チーム Runbook で行われます | Tier 2 SOC エンジニア | SOC チーム Runbook の変更制御通知手順 | セキュリティ デバイスに対する承認済みの変更 | SOC セキュリティ テクノロジへのMicrosoft 365 Defender接続を変更するには、承認が必要です | MICROSOFT DEFENDER FOR CLOUD APPS、Defender for Identity、Defender for Endpoint、Security & Compliance Center を SOC Runbook に追加する | Y |
 |||||||||
 
-さらに、SOC チームは、上記のシナリオに関して、以下の表に示す脅威と脆弱性の管理を行う可能性があります。
+さらに、SOC チームは、上で説明した脅威と脆弱性の管理シナリオに関して、次の表に示す発見を行った可能性があります。
 
-| SOC チーム | 要件 | 要件を満たすユーザー | 要件を満たすプロセス | 関連するテクノロジ | 識別されるギャップ | 使用例の変更ログ | 除外 (Y/N) |
+| SOC チーム | 要件 | 要件を満たすユーザー | 要件を満たすプロセス | 関連するテクノロジ | 識別されたギャップ | ユース ケース変更ログ | 除外 (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
-| SOC の監視 | 承認済みネットワークに接続されているすべてのアセットが識別され、分類されます。 | SOC 監視、BU 所有者、アプリケーション所有者、IT 資産所有者など | リスクに基づいて資産カテゴリと属性を検出および一覧表示する一元的な資産管理システム。 | ServiceNow または他のアセット。 <br><br>[Microsoft 365デバイス インベントリ](/security/defender-endpoint/device-discovery) | 資産の 70% だけが検出されました。 Microsoft 365 Defender既知の資産にのみ有効な修復追跡 | 資産ライフサイクル管理サービスを成熟し、Microsoft 365 Defender 100% のカバレッジを確保する | N |
-| エンジニアリング & SecOps Teams | アセットの影響が大きく、重大な脆弱性はポリシーに従って修復されます | SecOps のエンジニア、SOC アナリスト: 脆弱性&コンプライアンス、セキュリティ エンジニアリング | 高リスクと重大な脆弱性を分類する定義されたプロセス | [脅威と脆弱性の管理ダッシュボード](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Defender for Endpoint は、Microsoft 推奨アクティビティの修復計画や実装を行う必要がない、影響が大きく、アラートの高いデバイスを特定しました | ポリシーごとに 30 日以内に修復アクティビティが必要な場合にアセット所有者に通知するためのワークフローを追加します。資産所有者に修復手順を通知するチケット システムを実装します。 | N |
-| 監視Teams | 脅威と脆弱性の状態は、会社のイントラネット ポータルを介して報告されます | Tier 2 SOC アナリスト | アセットの修復の進行状況をMicrosoft 365 Defenderから自動生成されたレポート | [セキュリティ コンプライアンス センター&アラート](/microsoft-365/security/office-365-security/alerts) <br><br> セキュリティで保護されたスコアの監視 | アセットの脅威と脆弱性の状態に関するビューまたはダッシュボード レポートがアセット所有者に伝達されません。 | 自動化スクリプトを作成して、リスクの高い重要な資産脆弱性の修復の状態を組織に設定します。 | N |
+| SOC 監視 | 承認済みネットワークに接続されているすべての資産が識別され、分類されます | SOC 監視、BU 所有者、アプリケーション所有者、IT 資産所有者など。 | リスクに基づいて資産のカテゴリと属性を検出して一覧表示する一元化された資産管理システム。 | ServiceNow またはその他の資産。 <br><br>[デバイス インベントリのMicrosoft 365](/security/defender-endpoint/device-discovery) | 検出された資産の割合は 70% のみです。 既知の資産に対してのみ有効な修復追跡Microsoft 365 Defender | Microsoft 365 Defenderに 100% のカバレッジを確保するための成熟した資産ライフサイクル管理サービス | N |
+| エンジニアリング & SecOps Teams | 資産の高い影響と重大な脆弱性は、ポリシーに従って修復されます | SecOps エンジニア、SOC アナリスト: 脆弱性&コンプライアンス、セキュリティ エンジニアリング | 高リスクおよび重大な脆弱性を分類するための定義済みプロセス | [脅威と脆弱性の管理ダッシュボード](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Defender for Endpoint は、Microsoft 推奨アクティビティの修復計画または実装なしで、影響が大きく、アラートが高いデバイスを特定しました | ポリシーごとに 30 日以内に修復アクティビティが必要な場合に、資産所有者に通知するワークフローを追加します。チケット発行システムを実装して、修復手順を資産所有者に通知します。 | N |
+| 監視Teams | 脅威と脆弱性の状態は、会社のイントラネット ポータルを介して報告されます | 階層 2 SOC アナリスト | 資産の修復の進行状況を示すMicrosoft 365 Defenderから自動生成されたレポート | [セキュリティ & コンプライアンス センターのアラート](/microsoft-365/security/office-365-security/alerts) <br><br> セキュア スコアの監視 | 資産の脅威と脆弱性の状態に関して、ビューまたはダッシュボード レポートが資産所有者に伝達されません。 | 組織に対するリスクの高い重大な資産の脆弱性修復の状態を設定する自動化スクリプトを作成します。 | N |
 |||||||||
 
-次の使用例では、テストでは、各チームの責任の基準として確立された SOC チームの要件にいくつかのギャップが見えました。 使用例のチェックリストは、SOC チームが新しい SOC 要件または既存の SOC 要件との統合に備Microsoft 365 Defender包括的なチェックリストです。 これは反復的なプロセスなので、使用例の開発プロセスと使用例の出力コンテンツは、学習したレッスンで SOC の runbook を更新および成熟する際に自然に役立つでしょう。
+これらのユース ケースの例では、テストでは、SOC チームの要件に、各チームの責任のベースラインとして確立されたいくつかのギャップが明らかにされました。 ユース ケースチェックリストは、SOC チームが新しいまたは既存の SOC 要件とのMicrosoft 365 Defender統合に備えるために、必要に応じて包括的にすることができます。 これは反復的なプロセスであるため、ユース ケース開発プロセスとユース ケース出力コンテンツは、学習した教訓を得て SOC の Runbook を自然に更新し、成熟させるのに役立ちます。
 
-## <a name="update-production-runbooks-and-playbooks"></a>実稼働の Runbook とプレイブックを更新する
+## <a name="update-production-runbooks-and-playbooks"></a>運用 Runbook とプレイブックを更新する
 
-すべてのギャップに対する使用例のテストが修復された後、学習した教訓と、その中で収集された指標を、SOC チームの運用運用手順 (運用プロセス) およびプレイブック (インシデント対応とエスカレーション手順) に組み込む必要があります。 
+すべてのギャップに対してユース ケース テストが修復されると、その中で収集された教訓とメトリックを、SOC チームの運用 Runbook (運用プロセス) とプレイブック (インシデント対応とエスカレーション手順) に組み込むことができます。 
 
-SOC チームの Runbook とプレイブックのメンテナンスは、さまざまな方法で整理できます。 各 SOC チームが独自の責任を負う場合や、すべてのチームが中央リポジトリで共有する 1 つの一元化されたバージョンがある場合があります。 個々の組織の Runbook とプレイブックの管理は、サイズ、スキルセット、役割、および職務の分離に基づいて行います。 Runbook が更新された後は、プレイブックの更新プロセスに従う必要があります。 
+SOC チーム Runbook とプレイブックのメンテナンスは、さまざまな方法で整理できます。 各 SOC チームが独自の責任を負う場合や、すべてのチームが中央リポジトリで共有するための単一の一元化されたバージョンがある場合があります。 個々の組織の Runbook とプレイブックの管理は、サイズ、スキルセット、役割、職務の分離に基づいています。 Runbook が更新されたら、プレイブックの更新プロセスに従う必要があります。 
 
 ## <a name="use-a-standard-framework-for-escalation"></a>エスカレーションに標準フレームワークを使用する
 
-プレイブックは、実際のイベントが発生した場合に SOC チームが実行する必要がある手順です。この手順は、成功した統合と使用例のテストに基づいて行われます。 したがって、SOC はインシデント対応の主要な業界標準の 1 つになった [NIST](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) インシデント対応標準など、インシデント対応に対する正式なアプローチに従う必要があります。
+Playbooks は、ユース ケースの正常な統合とテストに基づいて、SOC チームが実際のイベントが発生したときに従う必要がある手順です。 そのため、SOC は、インシデント対応の主要な業界標準の 1 つである [NIST インシデント対応標準](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) など、インシデント対応に対する正式なアプローチに従う必要があります。
 
-NIST の 4 つの手順インシデント対応プロセスには、次の 4 つのフェーズが含まれます。
+NIST の 4 段階のインシデント対応プロセスには、次の 4 つのフェーズがあります。
 
 1.  準備
 2.  検出と分析
 3.  コンテインメント、根絶、および回復
 4.  インシデント後のアクティビティ
 
-### <a name="example-tracking-preparation-phase-activity"></a>例: 準備フェーズのアクティビティの追跡
+### <a name="example-tracking-preparation-phase-activity"></a>例: 準備フェーズアクティビティの追跡
 
-エスカレーション プレイブックの主要な基盤の 1 つは、各 SOC チームがイベントまたはインシデントの前、中、および後に行う必要があるものに関するあいまいさはほとんどない点です。 したがって、手順を示す手順を示すのが良い方法です。 
+エスカレーション プレイブックの中核となる基盤の 1 つは、各 SOC チームがイベントやインシデントの前、中、後に行うべきことについてあいまいさを少なくすることです。 そのため、ステップ バイ ステップの手順を一覧表示することをお勧めします。 
 
-たとえば、準備フェーズには、if/then または XoR マトリックスのタスクが含まれる場合があります。 新しいフィッシングバリアントの使用例の場合、このようなマトリックスは次のようになります。
+たとえば、準備フェーズには、タスクの if/then または XoR マトリックスを含める場合があります。 新しいフィッシングバリアントのユース ケースの例では、このようなマトリックスは次のようになります。
 
 | エスカレーションが保証される理由 | 次のステップ |
 |:-------|:-----|
-| SOC 監視のアラートは、**500 時間>クリティカルトリガーとして評価されます**  | [Playbook A, Section 2, Activity 5] ([プレイブック] セクションへのリンク付き) に移動します。 |
-| eCommerce が潜在的な DDoS 攻撃を報告しました | Playbook B-Section C, Activity 19 を呼び出す (playbook セクションへのリンク付き) |
-| エグゼクティブが不審なメールをスピアフィッシングの試みとして報告しました | [Playbook 5, Section 2, Activity 5] (Playbook セクションへのリンク付き) に移動します。 |
+| **500/時間**>**重大な** トリガーとして評価された SOC 監視のアラート | Playbook A、セクション 2、アクティビティ 5 に移動します (プレイブック セクションへのリンクあり) |
+| eCommerce で DDoS 攻撃の可能性が報告されました | Playbook B セクション C、アクティビティ 19 を呼び出す (プレイブック セクションへのリンクあり) |
+| エグゼクティブが不審なメールをスピア フィッシングの試みとして報告しました | Playbook 5、セクション 2、アクティビティ 5 に移動します (プレイブック セクションへのリンクあり) |
 |||
 
-準備フェーズを実行した後、組織は NIST で概説されている残りのフェーズを呼び出す必要があります。
+準備フェーズを実行した後、組織は NIST で概説されているように残りのフェーズを呼び出す必要があります。
 
 - 検出と分析
 - コンテインメント、根絶、および回復
@@ -149,4 +149,4 @@ NIST の 4 つの手順インシデント対応プロセスには、次の 4 つ
 
 ## <a name="next-step"></a>次のステップ
 
-[手順 6.SOC のメンテナンス タスクを特定する](integrate-microsoft-365-defender-secops-tasks.md)
+[手順 6.SOC メンテナンス タスクを特定する](integrate-microsoft-365-defender-secops-tasks.md)

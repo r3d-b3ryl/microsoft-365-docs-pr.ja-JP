@@ -15,12 +15,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.prod: m365-security
-ms.openlocfilehash: 95b46e1c92354015ce6f8d9c5b1fa4b6e9642785
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7cda1669b4f8441d13f92b09d7390e31f4add529
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683321"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472289"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>推奨される SaaS アプリ用 Microsoft Defender for Cloud Apps ポリシー
 
@@ -47,7 +47,7 @@ SaaS アプリへのアクセス許可は、通常、アプリへのアクセス
 
 SaaS アプリのコレクション全体のデータを保護するために、次の図は、必要な Azure AD 条件付きアクセス ポリシーと、Defender for Cloud Apps で作成できる推奨ポリシーを示しています。 この例では、Defender for Cloud Apps で作成されたポリシーが、管理しているすべての SaaS アプリに適用されます。 これらは、デバイスが管理されるかどうか、およびファイルに既に適用されている感度ラベルに基づいて適切なコントロールを適用するように設計されています。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Defender for Cloud Apps で SaaS アプリを管理するためのポリシー。" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Defender for Cloud Apps で SaaS アプリを管理するためのポリシー" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
 次の表に、新しい条件付きアクセス ポリシーを作成する必要Azure AD。
 
@@ -96,7 +96,7 @@ Defender for Cloud Apps は、コンプライアンス規制に対する保護�
 
 次の図と表に、一般データ保護規則 (GDPR) に準拠するように構成できるポリシーのいくつかの例を示します。 これらの例では、ポリシーは特定のデータを検索します。 データの感度に基づいて、各ポリシーは適切なアクションを実行するように構成されます。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="データ損失防止のためのクラウド アプリポリシーの例。" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="データ損失防止ページの Defender for Cloud Apps ポリシー" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
 
 |保護レベル|ポリシーの例|
 |---|---|

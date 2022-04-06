@@ -19,12 +19,12 @@ search.appverid:
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba164fde38be1e8eed53b71ab568124140deaac5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4024640173d6cbbf6817d3fa2b1c24cb7264833c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682705"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470859"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -33,7 +33,7 @@ ms.locfileid: "63682705"
 
 個人データの使用と転送を監視するために使用できるツールは数多くあります。このトピックでは、効果的な 3 つのツールについて説明します。
 
-![個人データの使用と転送を監視するためのツール。](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="個人データの使用と転送を監視するためのツール" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
 
 この図について:
 
@@ -62,7 +62,7 @@ DLP レポートは、Microsoft 365 コンプライアンス センターにあ�
 
 詳細については、「[データ損失防止のレポートの表示](../../compliance/view-the-dlp-reports.md)」を参照してください。
 
-![DLP ポリシーと一致することを示すレポート。](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image2.png" alt-text="DLP ポリシーの一致を示すレポート" lightbox="../../media/Monitor-for-leaks-of-personal-data-image2.png":::
 
 ## <a name="audit-log-and-alert-policies"></a>監査ログおよびアラートのポリシー
 
@@ -98,7 +98,7 @@ Microsoft Defender for Cloud Apps は、クラウド アプリのための詳細
 
 たとえば、次の図は GDPR に役立つ 2 つのDefender for Cloud Apps ポリシーを示しています。
 
-![Defender for Cloud Apps ポリシーの例](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image3.png" alt-text="Defender for Cloud Apps ポリシー" lightbox="../../media/Monitor-for-leaks-of-personal-data-image3.png":::
 
 1 番目のポリシーは、選択した事前定義の PII 属性またはカスタム式を持つファイルが、選択した SaaS アプリから組織外で共有されると警告します。
 
@@ -116,7 +116,7 @@ Defender for Cloud Apps の使用をまだ開始していない場合は、最�
 > [!NOTE]
 > Defender for Cloud Apps の使用を開始するときやラベルを割り当てる前に、[一般設定] の [Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする] を有効にしてください。設定後は、Defender for Cloud Apps は、変更されるまで既存ファイルを再スキャンしません。
 
-![アラートに関する情報を表示するダッシュボード。](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image4.png" alt-text="アラートに関する情報を表示するダッシュボード" lightbox="../../media/Monitor-for-leaks-of-personal-data-image4.png":::
 
 詳しくは、以下の資料を参照してください。
 

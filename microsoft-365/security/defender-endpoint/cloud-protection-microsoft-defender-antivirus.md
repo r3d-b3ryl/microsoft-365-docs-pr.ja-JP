@@ -1,7 +1,7 @@
 ---
 title: クラウド保護と Microsoft Defender ウイルス対策
-description: クラウド保護とクラウド のMicrosoft Defender ウイルス対策
-keywords: Microsoft Defender ウイルス対策、次世代テクノロジ、次世代 AV、機械学習、マルウェア対策、セキュリティ、防御、クラウド、クラウド保護
+description: クラウド保護とクラウド 保護についてMicrosoft Defender ウイルス対策
+keywords: Microsoft Defender ウイルス対策、次世代テクノロジ、次世代 av、機械学習、マルウェア対策、セキュリティ、防御、クラウド、クラウド保護
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 013b189dca95fc63dc8d189d020fcf3f7727cf82
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 881ae2de7a6c752c2be9bfc5ccdbe350050f340b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171691"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472003"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>クラウド保護と Microsoft Defender ウイルス対策
 
@@ -30,7 +30,7 @@ ms.locfileid: "61171691"
 
 新しい脅威や新Microsoft Defender ウイルス対策に対する、ほぼ即座に自動化された保護を提供する次世代テクノロジ。 新しい脅威を動的に特定するために、次世代テクノロジは、Microsoft Intelligent Security Graph および高度な機械学習モデルによって駆動される強力な人工知能 (AI) システムで、多数の相互接続されたデータを処理します。 クラウド保護は、正確でMicrosoft Defender ウイルス対策インテリジェントな保護を提供するために、クラウド保護と共に機能します。 
 
-[:::image type="content" source="images/mde-cloud-protection.png" alt-text="クラウド保護とクラウド保護の機能を示す図Microsoft Defender ウイルス対策":::](enable-cloud-protection-microsoft-defender-antivirus.md)
+[:::image type="content" source="images/mde-cloud-protection.png" alt-text="クラウド保護とクラウド保護の機能を示すMicrosoft Defender ウイルス対策" lightbox="images/mde-cloud-protection.png":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > クラウド保護を有効に保つことをお勧めします。 詳細については、「クラウド保護を[有効にする理由」](why-cloud-protection-should-be-on-mdav.md)を参照Microsoft Defender ウイルス対策。 
@@ -59,7 +59,7 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 ## <a name="how-to-get-cloud-protection"></a>クラウド保護を取得する方法 
 
-クラウド保護は既定で有効になっています。 ただし、以前の組織ポリシーの一部として無効になっている場合は、再び有効にする必要があります。 詳細については、「クラウド保護を [有効にする」を参照してください](enable-cloud-protection-microsoft-defender-antivirus.md)。
+クラウド保護は既定で有効になっています。 ただし、以前の組織ポリシーの一部として無効になっている場合は、再び有効にする必要があります。 詳細については、「クラウド保護 [を有効にする」を参照してください](enable-cloud-protection-microsoft-defender-antivirus.md)。
 
 サブスクリプションに E5 Windows 10含まれる場合は、緊急の動的インテリジェンス更新プログラムを利用できます。これは、新たな脅威からほぼリアルタイムで保護されます。 クラウド保護を有効にした場合、マルウェアの問題に対する修正プログラムは、次の更新を待つのではなく、数分以内にクラウド経由で配信できます。 「クラウド サービスMicrosoft Defender ウイルス対策レポートに基づいて新しい保護更新プログラムを自動的に受信する[方法の構成」を参照してください](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates)。
 
@@ -67,6 +67,6 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 クラウド保護の概要を次に示Microsoft Defender ウイルス対策次の手順を示します。
 
-1. 「[クラウド保護を有効にする理由」を参照Microsoft Defender ウイルス対策。](why-cloud-protection-should-be-on-mdav.md)
+1. 「[クラウド保護を有効にする理由」を参照](why-cloud-protection-should-be-on-mdav.md)Microsoft Defender ウイルス対策。
 
 2. [クラウド保護を [有効にする] に進む](enable-cloud-protection-microsoft-defender-antivirus.md)

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 61b275e5e42a10743eee744ab44bce48a25fa2eb
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 47c3cb5d680899a28e6467b24ef398a428851a07
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166480"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476161"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>デバイスが正しく構成されていることを確認する
 
@@ -41,11 +41,11 @@ ms.locfileid: "61166480"
 
 ナビゲーション **メニューから [構成の** 管理] をクリックして、[デバイス構成管理] ページを開きます。
 
-![[セキュリティ構成管理] ページ。](images/secconmgmt_main.png)
+:::image type="content" source="images/secconmgmt_main.png" alt-text="[セキュリティ構成管理] ページ" lightbox="images/secconmgmt_main.png":::
 
 *デバイス構成管理ページ*
 
-Microsoft Intune および Microsoft 365 Defender ポータルのデバイス管理ページへの直接の深いリンクを通じて、組織レベルで構成状態を追跡し、オンボーディングカバレッジの不備、コンプライアンスの問題、および最適化が不十分な攻撃表面の軽減策に対応して迅速<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">に</a>アクションを実行できます。
+Microsoft Intune および <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> ポータルのデバイス管理ページへの直接の深いリンクを通じて、組織レベルで構成状態を追跡し、オンボーディングカバレッジの低下、コンプライアンスの問題、および最適化の不十分な攻撃表面の軽減に対応して迅速にアクションを実行できます。
 
 そうすることで、次の利点があります。
 
@@ -58,10 +58,10 @@ Microsoft Intune および Microsoft 365 Defender ポータルのデバイス管
 
 デバイス構成管理は、Intune デバイス管理と密接に関係して、組織内のデバイスのインベントリとベースライン セキュリティ構成を確立します。 Intune で管理されているデバイス上の構成の問題を追跡およびWindowsできます。
 
-デバイスが適切に構成されていることを確認する前に、デバイスを Intune 管理に登録します。 Intune の登録は堅牢で、複数のデバイスに対してWindowsがあります。 Intune 登録オプションの詳細については、「デバイスの登録の設定」[を参照Windowsしてください](/intune/windows-enroll)。
+デバイスが適切に構成されていることを確認する前に、デバイスを Intune 管理に登録します。 Intune の登録は堅牢で、デバイスに対して複数Windowsがあります。 Intune 登録オプションの詳細については、「デバイスの登録の設定」[をWindowsしてください](/intune/windows-enroll)。
 
 > [!NOTE]
-> Intune にWindows登録するには、管理者にライセンスが既に割り当てられている必要があります。 [デバイスを登録するためのライセンス割り当て](/intune/licenses-assign)に関するページを参照してください。
+> Intune にデバイスWindows登録するには、管理者にライセンスが既に割り当てられている必要があります。 [デバイスを登録するためのライセンス割り当て](/intune/licenses-assign)に関するページを参照してください。
 
 > [!TIP]
 > Intune を使用してデバイス管理を最適化するには [、Intune を Defender for Endpoint に接続します](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
@@ -77,7 +77,7 @@ Microsoft Intune および Microsoft 365 Defender ポータルのデバイス管
 - デバイス コンプライアンス ポリシーへの読み取りアクセス許可
 - 組織へのアクセス許可の読み取り
 
-![Intune で必要なアクセス許可。](images/secconmgmt_intune_permissions.png)
+:::image type="content" source="images/secconmgmt_intune_permissions.png" alt-text="Intune で必要なアクセス許可" lightbox="images/secconmgmt_intune_permissions.png":::
 
 *Intune のデバイス構成のアクセス許可*
 

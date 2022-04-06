@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb92b67b3f19c578d12eb9673d2f80d5fadd131f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c8a96f3dba51de09a7237279b4053b9f4ed9b4a7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937846"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470485"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>管理セキュリティ サービス プロバイダー (MSSP) アクセス権の付与 (プレビュー)
 
@@ -37,7 +37,7 @@ ms.locfileid: "61937846"
 
 マルチテナント委任アクセス ソリューションを実装するには、次の手順を実行します。
 
-1. Defender for Endpoint [で役割ベースのアクセス制御](rbac.md) を有効にし、Active Directory (AD) グループに接続します。
+1. Defender [for Endpoint で役割ベースのアクセス制御](rbac.md) を有効にし、Active Directory (AD) グループに接続します。
 
 2. アクセス [要求とプロビジョニング用にガバナンス](/azure/active-directory/governance/identity-governance-overview) アクセス パッケージを構成します。
 
@@ -55,9 +55,9 @@ ms.locfileid: "61937846"
 
 2. エンドポイントの Customer Defender で適切なアクセス レベルの Defender for Endpoint ロールを作成します。
 
-    カスタマー Microsoft 365 Defender ポータルで RBAC を有効にするには、グローバル管理者またはセキュリティ管理者の権限を持つユーザー アカウントから 設定 > アクセス許可 **> ロール** と "ロールを有効にする" にアクセスします。
+    カスタマー Microsoft 365 Defender ポータルで RBAC を有効にするには、グローバル管理者またはセキュリティ管理者権限を持つユーザー アカウントから 設定 > アクセス許可 **> ロール** と "ロールを有効にする" にアクセスします。
 
-    ![MSSP アクセスのイメージ。](images/mssp-access.png)
+    :::image type="content" source="images/mssp-access.png" alt-text="MSSP アクセス" lightbox="images/mssp-access.png":::
 
     次に、MSSP SOC Tier のニーズを満たす RBAC ロールを作成します。 [割り当てられたユーザー グループ] を使用して、作成されたユーザー グループにこれらの役割をリンクします。
 
@@ -79,15 +79,15 @@ ms.locfileid: "61937846"
 
     接続された組織として MSSP を追加すると、MSSP は要求し、アクセスが準備されます。
 
-    これを行うには、テナントの顧客AD、Identity Governance: Connected organization にアクセスします。 新しい組織を追加し、テナント ID またはドメインを使用して MSSP Analyst テナントを検索します。 MSSP Analysts 用に個別のADテナントを作成する方法をお勧めします。
+    これを行うには、テナントの顧客AD Id ガバナンス: 接続された組織にアクセスします。 新しい組織を追加し、テナント ID またはドメインを使用して MSSP Analyst テナントを検索します。 MSSP Analysts 用に別のADテナントを作成する方法をお勧めします。
 
 2. **Customer AAD: Identity Governance でリソース カタログを作成する**
 
     リソース カタログは、テナントの顧客に作成されたアクセス パッケージADです。
 
-    これを行うには、テナントの顧客AD、Identity Governance: Catalogs にアクセスし、新しいカタログ **を追加します**。 この例では **、MSSP Accesses を呼び出します**。
+    これを行うには、テナントの顧客AD、Identity Governance: Catalogs にアクセスし、新しいカタログ **を追加します**。 この例では、**MSSP Accesses と呼ぶ。**
 
-    ![新しいカタログのイメージ。](images/goverance-catalog.png)
+    :::image type="content" source="images/goverance-catalog.png" alt-text="新しいカタログ ページ" lightbox="images/goverance-catalog.png":::
 
     詳細については、「リソースのカタログ [を作成する」を参照してください](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
@@ -103,16 +103,16 @@ ms.locfileid: "61937846"
     - 365 日後に自動アクセスが期限切れになる
 
     > [!div class="mx-imgBorder"]
-    > ![新しいアクセス パッケージのイメージ。](images/new-access-package.png)
+    > :::image type="content" source="images/new-access-package.png" alt-text="[新しいアクセス パッケージ] ページ" lightbox="images/new-access-package.png":::
 
-    詳細については、「新しいアクセス [パッケージを作成する」を参照してください](/azure/active-directory/governance/entitlement-management-access-package-create)。
+    詳細については、「Create [a new access package」を参照してください](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
-4. **Customer AAD から MSSP リソースへのアクセス要求リンクを提供する: Identity Governance**
+4. **Customer AAD ID ガバナンスから MSSP リソースへのアクセス要求リンクを提供する**
 
     [マイ アクセス ポータル] リンクは、MSSP SOC アナリストが作成したアクセス パッケージを介してアクセスを要求するために使用されます。 リンクは永続的です。つまり、同じリンクが新しいアナリストのために時間の間に使用される可能性があります。 アナリスト要求は、MSSP アナリスト承認者による承認のためにキュー **に入ります**。
 
     > [!div class="mx-imgBorder"]
-    > ![アクセス プロパティのイメージ。](images/access-properties.png)
+    > :::image type="content" source="images/access-properties.png" alt-text="[プロパティ] ページ" lightbox="images/access-properties.png":::
 
     リンクは、各アクセス パッケージの概要ページに表示されます。
 
@@ -122,7 +122,7 @@ ms.locfileid: "61937846"
 
     アクセス要求は、MSSP Analyst Approvers グループのメンバーによって、お客様の My Access で管理されます。
 
-    これを行うには、次を使用して顧客の myaccess にアクセスします `https://myaccess.microsoft.com/@<Customer Domain>` 。
+    これを行うには、次を使用して顧客の myaccess にアクセスします `https://myaccess.microsoft.com/@<Customer Domain>`。
 
     例: `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 

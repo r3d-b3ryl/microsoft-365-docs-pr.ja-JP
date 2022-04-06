@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 91dd3dc8563e7bd443362c47190139101a5ede61
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: b5d9346746dba3b7b4c75909cb8e36e47c3c9d99
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464324"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472509"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>パフォーマンス アナライザー (Microsoft Defender ウイルス対策
 
@@ -42,7 +42,7 @@ ms.locfileid: "62464324"
 
 パフォーマンス アナライザーを実行するための高レベルのプロセスには、次の手順が含まれます。
 
-1. パフォーマンス アナライザーを実行して、エンドポイント上のイベントMicrosoft Defender ウイルス対策記録を収集します。
+1. パフォーマンス アナライザーを実行して、エンドポイント上のイベントのMicrosoft Defender ウイルス対策記録を収集します。
 
    > [!NOTE]
    > **Microsoft-antimalware-Engine** Microsoft Defender ウイルス対策のイベントのパフォーマンスは、パフォーマンス アナライザーによって記録されます。
@@ -57,7 +57,7 @@ ms.locfileid: "62464324"
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    where `-RecordTo` パラメーターは、トレース ファイルが保存される完全なパスの場所を指定します。 コマンドレットの詳細については、「コマンドレット[のMicrosoft Defender ウイルス対策参照してください](/powershell/module/defender)。
+    where `-RecordTo` パラメーターは、トレース ファイルが保存される完全なパスの場所を指定します。 コマンドレットの詳細については、「Microsoft Defender ウイルス対策[」を参照してください](/powershell/module/defender)。
 
 2. パフォーマンスに影響を与えるプロセスまたはサービスがある場合は、関連するタスクを実行して状況を再現します。
 
@@ -68,13 +68,13 @@ ms.locfileid: "62464324"
 コマンド ライン パラメーターとオプションの詳細については、「 [New-MpPerformanceRecording](#new-mpperformancerecording) 」および「 [Get-MpPerformanceReport」を参照してください](#get-mpperformancereport)。
 
 > [!NOTE]
-> 記録を実行するときに、「Windows Performance Recorder が既に記録されているため、パフォーマンス記録を開始できません」というエラーが表示された場合は、次のコマンドを実行して、新しいコマンドを使用して既存のトレースを停止します。**wpr -cancel -instancename** MSFT_MpPerformanceRecording
+> 記録を実行するときに、「Windows Performance Recorder が既に記録されているので、パフォーマンス記録を開始できません」というエラーが表示された場合は、次のコマンドを実行して、新しいコマンドを使用して既存のトレースを停止します。**wpr -cancel -instancename** MSFT_MpPerformanceRecording
 
 ### <a name="performance-tuning-data-and-information"></a>パフォーマンスチューニングのデータと情報
 
 クエリに基づいて、ユーザーはスキャンカウント、期間 (total/min/average/max/median)、パス、プロセス、およびスキャンの理由のデータを表示できます。 次の図は、スキャンに影響を与える上位 10 ファイルの簡単なクエリの出力例を示しています。 
 
-:::image type="content" source="images/example-output.png" alt-text="基本的な TopFiles クエリの出力例":::
+:::image type="content" source="images/example-output.png" alt-text="基本的な TopFiles クエリの出力例" lightbox="images/example-output.png":::
 
 ### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>その他の機能: CSV および JSON へのエクスポートと変換
 
@@ -127,7 +127,7 @@ New-MpPerformanceRecording -RecordTo <String >
 
 **サポートされている OS のバージョン**
 
-Windows 10 以降を参照してください。
+Windowsバージョン 10 以降。
 
 > [!NOTE]
 > この機能は、プラットフォーム バージョン 4.18.2108.X 以降で使用できます。
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ##### <a name="-session"></a>-Session 
-パフォーマンス記録を作成して保存する PSSession オブジェクトMicrosoft Defender ウイルス対策します。 このパラメーターを使用する場合、RecordTo パラメーターはリモート コンピューター上のローカル パスを参照します。 Defender プラットフォーム バージョン 4.18.2201.10 で使用できます。
+パフォーマンス記録の作成および保存に使用する PSSession オブジェクトMicrosoft Defender ウイルス対策指定します。 このパラメーターを使用する場合、RecordTo パラメーターはリモート コンピューター上のローカル パスを参照します。 Defender プラットフォーム バージョン 4.18.2201.10 で使用できます。
 
 ```yaml
 Type: PSSession[]
@@ -221,7 +221,7 @@ Get-MpPerformanceReport    [-Path] <String>
 
 **サポートされている OS のバージョン**
 
-Windows 10 以降を参照してください。
+Windowsバージョン 10 以降。
 
 > [!NOTE]
 > この機能は、プラットフォーム バージョン 4.18.2108.X 以降で使用できます。

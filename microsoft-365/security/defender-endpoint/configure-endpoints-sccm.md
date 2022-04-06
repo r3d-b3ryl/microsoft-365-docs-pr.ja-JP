@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: b506cf15e2d08568633533ba29af5e2f809c2134
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d67a4ca067f16d74b15a1d7ece5c47d563f1a941
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166520"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471915"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Configuration Manager をWindowsデバイスのオンボード
 
@@ -32,7 +32,7 @@ ms.locfileid: "61166520"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft Endpoint Configuration Manager現在のブランチ
+- Microsoft Endpoint Configuration Managerブランチ
 - System Center 2012 R2 Configuration Manager
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
@@ -46,7 +46,7 @@ Configuration Manager を使用してデバイスをオンボードするため�
 
 
 
-R2 Windows Server 2012および Windows Server 2016 - オンボーディングの手順を完了した後、クライアントを構成および[更新するSystem Center Endpoint Protectionがあります](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients)。
+R2 Windows Server 2012および Windows Server 2016 - オンボーディングの手順を完了した後、クライアントの構成と[更新System Center Endpoint Protectionがあります](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients)。
 
 > [!NOTE]
 > Defender for Endpoint は、アウトオブボックス エクスペリエンス [(OOBE)](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) フェーズ中のオンボーディングをサポートしない。 インストールまたはアップグレードの実行後にユーザーが OOBE をWindows確認します。
@@ -56,7 +56,7 @@ R2 Windows Server 2012および Windows Server 2016 - オンボーディング�
 >
 > この動作は、"OnboardingState" レジストリ値 (タイプ REG_DWORD) が 1 の場合に検出ルールチェックを作成することで実現できます。
 > このレジストリ値は、"HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status" の下にあります。
-詳細については[、「Configure Detection Methods in System Center 2012 R2 Configuration Manager」を参照してください](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)。
+詳細については、「[Configure Detection Methods in System Center 2012 R2 Configuration Manager」を参照してください](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)。
 
 ### <a name="configure-sample-collection-settings"></a>サンプル コレクション設定の構成
 
@@ -84,7 +84,7 @@ Value: 0 or 1
 
 レジストリ キーが存在しない場合の既定値は 1 です。
 
-コンプライアンスの詳細については、「System Center Configuration Manager [System Center 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))Configuration Manager のコンプライアンス設定の概要」を参照してください。
+コンプライアンスの詳細については、「System Center Configuration Manager [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)) のコンプライアンス設定の概要」を参照してください。
 
 ## <a name="other-recommended-configuration-settings"></a>その他の推奨構成設定
 
@@ -126,11 +126,11 @@ Value: 0 or 1
 
 監査モードで機能を 30 日以上有効にします。 この期間が終了した後、検出を確認し、保護されたディレクトリへの書き込みを許可するアプリケーションの一覧を作成します。
 
-詳細については、「管理フォルダー アクセス [の評価」を参照してください](evaluate-controlled-folder-access.md)。
+詳細については、「制御されたフォルダー アクセス [を評価する」を参照してください](evaluate-controlled-folder-access.md)。
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>検出テストを実行してオンボーディングを確認する
 
-デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。
+デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボード [された Microsoft Defender for Endpoint デバイスで検出テストを実行する」を参照してください](run-detection-test.md)。
 
 ## <a name="offboard-devices-using-configuration-manager"></a>Configuration Manager を使用したオフボード デバイス
 
@@ -145,15 +145,15 @@ Value: 0 or 1
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>2012 R2 Configuration Manager System Centerを使用するオフボード デバイス
 
-1. ポータルからオフボード パッケージ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。
-    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定 \> **オフ** \> **ボード]** \> **を選択します**。  
-    1. オペレーティング Windows 10としてWindows 11 を選択します。
-    1. [展開方法 **] フィールド** で、[System Center Configuration Manager **2012/2012 R2/1511/1602] を選択します**。
-    1. [ **パッケージのダウンロード]** を選択し、ファイルを.zipします。
+1. ポータルからオフボード パッケージ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">をMicrosoft 365 Defenderします</a>。
+    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \> **オフ** \> **ボード**\>] **を選択します**。  
+    1. オペレーティング Windows 10または Windows 11 を選択します。
+    1. [展開方法 **] フィールド** で、[System Center Configuration Manager **2012/2012 R2/1511/1602**] を選択します。
+    1. [ **パッケージのダウンロード] を** 選択し、ファイルを.zipします。
 
-2. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 *-MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
+2. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 - *MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
 
-3. [2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))の「パッケージとプログラム」の記事の手順に従ってSystem Centerパッケージを展開します。
+3. [2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) の「パッケージとプログラム」の記事の手順に従ってSystem Centerを展開します。
 
    パッケージを展開する定義済みのデバイス コレクションを選択します。
 
@@ -162,7 +162,7 @@ Value: 0 or 1
 
 ## <a name="monitor-device-configuration"></a>デバイス構成の監視
 
-現在のブランチでMicrosoft エンドポイント マネージャー場合は、Configuration Manager コンソールの組み込みの Defender for Endpoint ダッシュボードを使用します。 詳細については [、「Defender for Endpoint - Monitor」を参照してください](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
+現在のブランチでMicrosoft エンドポイント マネージャー場合は、Configuration Manager コンソールの組み込みの Defender for Endpoint ダッシュボードを使用します。 詳細については、「 [Defender for Endpoint - Monitor」を参照してください](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
 2012 R2 Configuration Manager System Center使用している場合、監視は次の 2 つの部分で構成されます。
 
@@ -178,15 +178,15 @@ Value: 0 or 1
 
 3. パッケージ名を使用して展開を選択します。
 
-4. [完了統計] と [コンテンツ **の状態] の下の** 状態インジケーター **を確認します**。
+4. [完了統計] と [ **コンテンツの状態] の下の** 状態インジケーター **を確認します**。
 
-    失敗した展開 (エラー、要件が満たされていないデバイス、または失敗した状態) がある場合は、デバイスのトラブルシューティングが必要な場合があります。  詳細については [、「Troubleshoot Microsoft Defender for Endpoint オンボーディングの問題」を参照してください](troubleshoot-onboarding.md)。
+    展開に失敗した場合 (エラー、要件が満たされていない、または失敗した状態のデバイス)、デバイスのトラブルシューティングが必要な場合があります。 詳細については、「 [Troubleshoot Microsoft Defender for Endpoint オンボーディングの問題」を参照してください](troubleshoot-onboarding.md)。
 
-    ![エラーがない展開が成功した構成マネージャー。](images/sccm-deployment.png)
+    :::image type="content" source="images/sccm-deployment.png" alt-text="エラーがない正常な展開を示す Configuration Manager" lightbox="images/sccm-deployment.png":::
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>デバイスが Microsoft Defender for Endpoint サービスに準拠しているのを確認する
 
-2012 R2 Configuration Manager で構成アイテムのコンプライアンス System Center設定して、展開を監視できます。
+2012 R2 Configuration Manager で構成アイテムのコンプライアンス ルールをSystem Center展開を監視できます。
 
 このルールは *、対象となる* デバイスのレジストリ キーの値を監視する、修復されていないコンプライアンス ルール構成アイテムである必要があります。
 
@@ -198,9 +198,9 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-詳細については[、「2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))Configuration Manager のコンプライアンスSystem Center概要」を参照してください。
+詳細については、「[2012 R2 Configuration Manager のコンプライアンスSystem Center概要」を参照してください](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 - [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)

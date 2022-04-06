@@ -1,6 +1,6 @@
 ---
 title: デバイスのオンボーディング ツールWindows方法
-description: オンボード Windowsデバイスを使用して、センサー データを Microsoft Defender for Endpoint センサーに送信できます。
+description: デバイスWindows、センサー データを Microsoft Defender for Endpoint センサーに送信できるようオンボードする
 keywords: オンボード Windows、グループ ポリシー、エンドポイント構成マネージャー、モバイル デバイス管理、ローカル スクリプト、gp、sccm、mdm、intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4b70bfa9875d1e8c09d21e9435d8b4200555b5c
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 035a47f904029e839e3fe19393e4b152515aa808
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765602"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471900"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Defender for Endpoint のデバイスWindowsオンボーディング ツールとメソッド
 
@@ -42,7 +42,7 @@ Defender for Endpoint サービスがセンサー データを取得できるよ
 
 一般に、オンボーディングWindowsデバイスを特定し、デバイスまたは環境に適した対応するツールに従います。
 
-![オンボーディング ツールとメソッドのイメージ](images/onboarding-config-tools.png)
+:::image type="content" source="images/onboarding-config-tools.png" alt-text="オンボーディング ツールとメソッド" lightbox="images/onboarding-config-tools.png":::
 
 ## <a name="endpoint-onboarding-tools"></a>エンドポイントオンボーディング ツール
 
@@ -51,13 +51,13 @@ Defender for Endpoint サービスがセンサー データを取得できるよ
 Windowsデバイス | オンボーディング ツールまたはメソッド
 :---|:---
 |<ul><li> Windows 10</li> <li>Windows Server 1803 および 2019、および 2022</li> <li>Windows Server 2012 R2 および 2016<sup>[[1](#fn1)]<sup></li></ul>  |   [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md)<br>   [グループ ポリシー](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft エンドポイント マネージャー/ モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md)<br>    [VDI スクリプト](configure-endpoints-vdi.md) <br><br> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境の展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。
-|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[以前のバージョンの](onboard-downlevel.md) Windows[または Microsoft Defender for Cloud のオンボード](/azure/security-center/security-center-wdatp) <br><br> **注**: Microsoft Monitoring Agentは Azure Log Analytics エージェントです。 詳細については、「 [Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  
-|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8.1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **注**: Microsoft Monitoring Agentは Azure Log Analytics エージェントです。 詳細については、「 [Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。
+|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[以前のバージョンの](onboard-downlevel.md) Windows[または Microsoft Defender for Cloud のオンボード](/azure/security-center/security-center-wdatp) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については、「 [Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  
+|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8.1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については、「 [Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。
 
 (<a id="fn1">1</a>) Windows Server 2016および Windows Server 2012 R2 は、オンボード サーバーの指示に従ってオンボード[Windowsがあります](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
 
 >[!IMPORTANT]
->Microsoft Defender for Endpoint Server SKU を購入する資格を得るには、Windows E5/A5、Microsoft 365 E5/A5、または Microsoft 365 E5 Security サブスクリプション ライセンスを組み合わせて購入している必要があります。  ライセンスの詳細については、「製品条項」 [を参照してください](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all)。  
+>Microsoft Defender for Endpoint Server SKU を購入する資格を得るには、Windows E5/A5、Microsoft 365 E5/A5、または Microsoft 365 E5 Security サブスクリプション ライセンスの組み合わせ最小数を既に購入している必要があります。  ライセンスの詳細については、「製品条項」 [を参照してください](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all)。  
 
 トピック|説明
 :---|:---

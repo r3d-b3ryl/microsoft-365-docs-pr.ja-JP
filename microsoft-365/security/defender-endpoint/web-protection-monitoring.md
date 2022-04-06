@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d10354f68dd5ba26db7f4260425559167c8888c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cf702dbcbec1bf9141827610c1304a0f19e13b90
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160510"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475875"
 ---
 # <a name="monitor-web-browsing-security"></a>Web 閲覧のセキュリティを監視する
 
@@ -33,15 +33,15 @@ ms.locfileid: "61160510"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web 保護を使用すると、組織の Web 閲覧のセキュリティを監視するために、>ポータルの **[レポート** と Web 保護Microsoft 365 Defenderできます。 レポートには、Web 脅威検出の統計情報を提供するカードが含まれます。
+Web 保護を使用すると、組織の Web 閲覧のセキュリティを監視するために、>ポータルの [レポート] > **Web 保護** をMicrosoft 365 Defenderできます。 レポートには、Web 脅威検出の統計情報を提供するカードが含まれます。
 
 - **Web 脅威保護の** 検出時間の推移 - この傾向カードには、選択した期間中に種類別に検出された Web 脅威の数が表示されます (過去 30 日間、過去 3 か月、過去 6 か月)
 
-  :::image type="content" alt-text="時間の間に Web 脅威の保護検出を示すカードの画像。" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
+  :::image type="content" source="images/wtp-blocks-over-time.png" alt-text="Web 脅威の保護検出を時間の間に示すカード" lightbox="images/wtp-blocks-over-time.png":::
 
 - **Web 脅威保護の** 概要 - このカードには、過去 30 日間の Web 脅威検出の合計が表示され、さまざまな種類の Web 脅威に対する配布が表示されます。 スライスを選択すると、悪意のある Web サイトや望ましくない Web サイトで見つかったドメインの一覧が開きます。
 
-  :::image type="content" alt-text="Web 脅威保護の概要を示すカードのイメージ。" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
+  :::image type="content" source="images/wtp-summary.png" alt-text="Web 脅威保護の概要を示すカード"  lightbox="images/wtp-summary.png":::
 
 > [!NOTE]
 > ブロックがカードまたはドメイン リストに反映されるまで最大 12 時間かかる場合があります。
@@ -66,7 +66,7 @@ Web 脅威保護の概要カードで特定の Web 脅威カテゴリを **選�
 
 ドメインを選択して、そのドメイン内の URL にアクセスしようとしたデバイスの一覧と URL の一覧を表示します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Web 保護の概要](web-protection-overview.md)
 - [Web コンテンツ フィルタリング](web-content-filtering.md)

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1fce7aa103de9fb90cafa88a286cbf33bc753456
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 7793a367b591490f3b70055bc5b437eec798cb28
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765123"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475985"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint の手動展開
 
@@ -54,7 +54,7 @@ ms.locfileid: "62765123"
 3. ページのセクション 2 で、[インストール パッケージのダウンロード **] を選択します**。 wdav.pkg としてローカル ディレクトリに保存します。
 4. ページのセクション 2 で、[オンボード パッケージの **ダウンロード] を選択します**。 同じディレクトリWindowsDefenderATPOnboardingPackage.zipとして保存します。
 
-    ![Microsoft 365 Defender ポータルのスクリーンショット。](images/portal-onboarding-macos.png)
+   :::image type="content" source="images/portal-onboarding-macos.png" alt-text="インストール パッケージとオンボーディング パッケージをダウンロードするオプション" lightbox="images/portal-onboarding-macos.png":::
 
 5. コマンド プロンプトから、2 つのファイルが存在するように確認します。
 
@@ -64,20 +64,20 @@ ms.locfileid: "62765123"
 
 1. Finder でダウンロードした wdav.pkg に移動し、開きます。
 
-    ![アプリインストールのスクリーンショット 1.](images/mdatp-28-appinstall.png)
+   :::image type="content" source="images/mdatp-28-appinstall.png" alt-text="アプリケーションのインストール" lightbox="images/mdatp-28-appinstall.png":::
 
 2. [ **続行] を** 選択し、ライセンス条項に同意し、メッセージが表示されたらパスワードを入力します。
 
-    ![アプリのインストールのスクリーンショット 2.](images/mdatp-29-appinstalllogin.png)
+   :::image type="content" source="images/mdatp-29-appinstalllogin.png" alt-text="アプリケーションのインストール" lightbox="images/mdatp-29-appinstalllogin.png":::
 
    > [!IMPORTANT]
    > Microsoft のドライバーのインストールを許可するように求めるメッセージが表示されます ("System Extension Blocked" または "Installation is on hold" のいずれかまたは両方)。 ドライバーのインストールを許可する必要があります。
 
-   ![アプリインストールのスクリーンショット 3.](images/mdatp-30-systemextension.png)
+     :::image type="content" source="images/mdatp-30-systemextension.png" alt-text="アプリケーションのインストール" lightbox="images/mdatp-30-systemextension.png":::
 
 3. [ **セキュリティの基本設定を開く]** または [システム環境設定を開 **く] >[セキュリティ] &選択します**。 [許可] **を選択します**。
 
-    ![セキュリティとプライバシー ウィンドウのスクリーンショット。](images/mdatp-31-securityprivacysettings.png)
+   :::image type="content" source="images/mdatp-31-securityprivacysettings.png" alt-text="[セキュリティとプライバシー] ウィンドウ" lightbox="images/mdatp-31-securityprivacysettings.png":::
 
    インストールが続行されます。
 
@@ -93,33 +93,33 @@ ms.locfileid: "62765123"
 
 1. Finder でダウンロードした wdav.pkg に移動し、開きます。
 
-    ![アプリのインストールのスクリーンショット 4.](images/monterey-install-1.png)
+   :::image type="content" source="images/monterey-install-1.png" alt-text="アプリケーションのインストール プロセス" lightbox="images/monterey-install-1.png":::
 
 2. [ **続行] を** 選択し、ライセンス条項に同意し、メッセージが表示されたらパスワードを入力します。
 
 3. インストール プロセスの最後に、製品で使用されるシステム拡張機能を承認するように昇格されます。 [セキュリティ **設定を開く] を選択します**。
 
-    ![システム拡張機能の承認。](images/monterey-install-2.png)
+   :::image type="content" source="images/monterey-install-2.png" alt-text="システム拡張の承認" lightbox="images/monterey-install-2.png":::
 
 4. [セキュリティ] **ウィンドウの [&] ウィンドウで** 、[許可] を **選択します**。
 
-    ![システム拡張機能のセキュリティの基本設定 1.](images/monterey-install-3.png)
+   :::image type="content" source="images/monterey-install-3.png" alt-text="システム拡張機能のセキュリティ設定 1" lightbox="images/monterey-install-3.png":::
 
 5. Microsoft Defender for Endpoint on Mac で配布&すべてのシステム拡張機能について、手順 3 から 4 を繰り返します。
 
-6. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint on Mac はソケット トラフィックを検査し、この情報をポータルMicrosoft 365 Defenderします。 ネットワーク トラフィックをフィルター処理するための Microsoft Defender for Endpoint アクセス許可の付与を求めるメッセージが表示されたら、[許可] を **選択します**。
+6. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint on Mac はソケット トラフィックを検査し、この情報をポータルにMicrosoft 365 Defenderします。 ネットワーク トラフィックをフィルター処理するための Microsoft Defender for Endpoint アクセス許可の付与を求めるメッセージが表示されたら、[許可] を **選択します**。
 
-    ![システム拡張機能のセキュリティ設定 2.](images/monterey-install-4.png)
+   :::image type="content" source="images/monterey-install-4.png" alt-text="システム拡張機能のセキュリティ設定 2" lightbox="images/monterey-install-4.png":::
 
-7. [**System Preferences** \> **Security & プライバシー] を開** き、[プライバシー] タブに移動します。**Microsoft Defender および Microsoft Defenders** Endpoint Security Extension にフル ディスク アクセスのアクセス許可 **を付与します**。
+7. [**System Preferences** \> **Security &プライバシー**] を開き、[プライバシー]  タブに移動します。**Microsoft Defender および Microsoft Defenders** Endpoint Security Extension にフル ディスク アクセスのアクセス許可 **を付与します**。
 
-    ![ディスクへのフル アクセス。](images/monterey-install-5.png)
+   :::image type="content" source="images/monterey-install-5.png" alt-text="完全なディスク アクセス" lightbox="images/monterey-install-5.png":::
 
 ## <a name="client-configuration"></a>クライアントの構成
 
 1. wdav.pkg と MicrosoftDefenderATPOnboardingMacOs.py を macOS に Microsoft Defender for Endpoint を展開するデバイスにコピーします。
 
-    クライアント デバイスがクライアント デバイスに関連付org_id。 属性が空白 *org_id* 注意してください。
+    クライアント デバイスがクライアント デバイスに関連付org_id。 org_id属性 *は* 空白です。
 
     ```bash
     mdatp health --field org_id
@@ -140,14 +140,14 @@ ms.locfileid: "62765123"
     インストール後、右上隅の macOS ステータス バーに Microsoft Defender アイコンが表示されます。
 
     > [!div class="mx-imgBorder"]
-    > ![ステータス バーのスクリーンショットの Microsoft Defender アイコン。](images/mdatp-icon-bar.png)
+    > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="ステータス バーの Microsoft Defender アイコン" lightbox="images/mdatp-icon-bar.png":::
 
 ## <a name="how-to-allow-full-disk-access"></a>フル ディスク アクセスを許可する方法
 
 > [!CAUTION]
 > macOS 10.15 (Catalina) には、新しいセキュリティとプライバシーの強化が含まれている。 このバージョンでは、既定では、アプリケーションは明示的な同意なしにディスク上の特定の場所 (ドキュメント、ダウンロード、デスクトップなど) にアクセスできません。 この同意がない場合、Microsoft Defender for Endpoint はデバイスを完全に保護できません。
 
-1. 同意を許可するには、[**System Preferences** **Security] を開&** \> **プライバシー プライバシー**\>フル \> **ディスク アクセスを開きます**。 ロック アイコンをクリックして変更します (ダイアログ ボックスの下部)。 [エンドポイント用 Microsoft Defender] を選択します。
+1. 同意を許可するには、[**System Preferences** \> **Security &プライバシー の**\>フル ディスク アクセス **]** \> **を開きます**。 ロック アイコンをクリックして変更します (ダイアログ ボックスの下部)。 [エンドポイント用 Microsoft Defender] を選択します。
 
 2. AV 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
 
@@ -217,7 +217,7 @@ ms.locfileid: "62765123"
 
 12. [アラート キュー] に移動します。
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="重大度、カテゴリ、検出EDRアクションの折りたたみメニューを示す macOS テスト アラートの例。":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="macOS EDR、カテゴリ、検出ソース、およびアクションの折りたたみメニューを示すテスト アラートを表示します。" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
 
     アラートの詳細とデバイスのタイムラインを確認し、通常の調査手順を実行します。
 

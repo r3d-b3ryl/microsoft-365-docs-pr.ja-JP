@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: db4401e1215ab50e47425dee15a1337466e1e98a
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
-ms.translationtype: HT
+ms.openlocfilehash: c1fcf71aa91e944e36050dae85f0c31a316df344
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807538"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64665450"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -2612,7 +2612,7 @@ Microsoft Defender ウイルス対策スキャンが無効になっています�
 説明:
 </td>
 <td >
-改ざん防止が有効になっている場合、Defender の設定を変更しようとするとブロックされ、イベント ID 5013 が生成され、どの設定の変更がブロックされたかが示されます。
+改ざん防止が有効になっている場合、ブロックされている場合は Defender の設定を変更しようとすると、イベント ID 5013 が生成され、どの設定変更がブロックされたかが示されます。
 </td>
 </tr>
 <tr>

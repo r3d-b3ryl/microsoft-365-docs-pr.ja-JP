@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25333a1616bb1f4e4e529c17813bdd58f4c768b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fd236ff616ab585909b210c9c1b9a8f12b2e9fe2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312951"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472267"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -89,13 +89,15 @@ SPF ではメッセージ エンベロープに情報を追加しますが、DKI
 
 手順 1: DKIM ページで DKIM を構成するドメインをクリックします (https://security.microsoft.com/dkimv2 または https://protection.office.com/dkimv2)。
 
-![ドメインが選択された Microsoft 365 Defender ポータルの DKIM ページ。](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+:::image type="content" source="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png" alt-text="ドメインが選択された Microsoft 365 Defender ポータルの DKIM ページ" lightbox="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png":::
 
 手順 2: トグルを **[有効]** にスライドします。 CNAME レコードを追加する必要があるというポップアップ ウィンドウが表示されます。
 
-![トグルを [有効] にスライドして、DKIM を有効にする。](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+:::image type="content" source="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png" alt-text="[DKIM キーの作成] ボタンを使用したドメイン詳細ポップアップ" lightbox="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png":::
 
 手順 3: ポップアップ ウィンドウに表示される CNAME をコピーします
+
+:::image type="content" source="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png" alt-text="コピーする 2 つの CNAME レコードを含む [CNAME の公開] ポップアップ ウィンドウ" lightbox="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png":::
 
 手順 4: コピーした CNAME レコードを DNS サービス プロバイダーに公開します。
 
@@ -110,7 +112,7 @@ TTL: 3600 (or your provider default)
 
 手順 5: DKIM ページに戻って DKIM を有効にします。
 
-![トグルを [有効] にスライドして、DKIM を有効にする。](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+:::image type="content" source="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png" alt-text="DKIM を有効にするトグル" lightbox="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png":::
 
 CNAME レコードが存在しないというエラーが表示された場合は、次が原因である可能性があります。
 
@@ -248,7 +250,7 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>PowerShell を使用してカスタム ドメインの DKIM 署名を有効にするには
 
 > [!IMPORTANT]
-> :::image type="content" source="../../media/dkim.png" alt-text="「このドメインの DKIM キーが保存されていません。」エラー。":::
+> :::image type="content" source="../../media/dkim.png" alt-text="「このドメインの DKIM キーが保存されていません」エラー" lightbox="../../media/dkim.png":::
 > DKIM を初めて構成していて、「このドメインに DKIM キーが保存されていません」 というエラーが表示される場合は、次の手順 2 のコマンド ( `Set-DkimSigningConfig -Identity contoso.com -Enabled $true`など) を実行してキーを確認します。
 
 1. [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
@@ -408,4 +410,5 @@ DKIM を設定したら、SPF をまだ設定していない場合は、設定�
 
 PowerShell を介したキー ローテーション: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[DMARC を使用してメールを検証する](use-dmarc-to-validate-email.md)
+[DMARC を使用してメールを検証する](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide&preserve-view=true)
+

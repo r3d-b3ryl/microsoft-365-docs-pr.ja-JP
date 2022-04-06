@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 53f338ec713038841ab5cc089c12cebf7fe46131
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c09405043caeea57fdad1c241dfcd70e47ccd6f1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680623"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470734"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>攻撃表面の縮小ルールの概要
 
@@ -53,7 +53,7 @@ ms.locfileid: "63680623"
 
 攻撃表面の縮小ルールがネットワークに与える影響を評価するには、このルールのセキュリティに関する推奨事項を [脅威と脆弱性の管理。](/windows/security/threat-protection/#tvm)
 
-:::image type="content" source="images/asrrecommendation.png" alt-text="攻撃表面の縮小ルールのセキュリティ reco。":::
+:::image type="content" source="images/asrrecommendation.png" alt-text="ASR の推奨事項" lightbox="images/asrrecommendation.png":::
 
 [推奨事項の詳細] ウィンドウで、ユーザーの影響を確認して、生産性に悪影響を及ぼさずに、ブロック モードでルールを有効にする新しいポリシーを受け入れ可能なデバイスの割合を確認します。
 

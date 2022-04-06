@@ -18,12 +18,12 @@ ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e8a1e08242ab3f884115c414f8a1ba80f5f2aa17
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: be29874a087936c7131492bde1a3f541e7d00f43
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507079"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645080"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -161,7 +161,7 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 
 (<a id="fn5">5</a>) Microsoft Defender ウイルス対策モードの場合、スキャンはスケジュールされません。
 
-(<a id="fn6">6</a>) Microsoft Defender ウイルス対策モードの場合、脅威を修復しません。 ただし、[ブロック モードでは、エンドポイントの検出と応答 (EDR)](edr-in-block-mode.md) によって脅威を修復できます。 この場合、Microsoft Defender ウイルス対策がパッシブ モードの場合でも、ソースとして Microsoft Defender ウイルス対策を示すアラートが表示される場合があります。
+(<a id="fn6">6</a>) Microsoft Defender ウイルス対策モードの場合、脅威を修復しません。 ただし、ブロック モードのエンドポイント検出と応答 (EDR) によって脅威[を修復できます](edr-in-block-mode.md)。 この場合、Microsoft Defender ウイルス対策がパッシブ モードの場合でも、ソースとして Microsoft Defender ウイルス対策を示すアラートが表示される場合があります。
 
 > [!NOTE]
 > [Microsoft 365 Endpoint データ損失防止](/microsoft-365/compliance/endpoint-dlp-learn-about) 保護は、Microsoft Defender ウイルス対策がアクティブ モードであってもパッシブ モードであっても、正常に動作し続けます。

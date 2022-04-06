@@ -15,8 +15,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
+ms.openlocfilehash: 78f992e20ee0c0c2505777295ca3ba34a5c4ea66
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470639"
 ---
-
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>クラウド保護をオンMicrosoft Defender ウイルス対策
 
 **適用対象:**
@@ -30,7 +35,7 @@ ms.collection: m365-security-compliance
 
 次のいずれかの方法Microsoft Defender ウイルス対策使用して、クラウド保護のオンとオフを切り替えます。
 
-- Microsoft エンドポイント マネージャー、構成マネージャー Microsoft Intune含む
+- Microsoft エンドポイント マネージャー構成マネージャーをMicrosoft Intune含む
 - グループ ポリシー
 - PowerShell コマンドレット
 
@@ -45,9 +50,9 @@ ms.collection: m365-security-compliance
 
 1. 管理センター () Microsoft エンドポイント マネージャーに移動し[https://endpoint.microsoft.com](https://endpoint.microsoft.com)、サインインします。
 
-2. [ホーム **] ウィンドウで** 、[デバイス **構成] >選択します**。
+2. [ホーム **] ウィンドウで** 、[ **デバイス構成] >選択します**。
 
-3. 構成する **デバイス制限プロファイル** の種類を選択します。 新しいデバイス制限プロファイルの種類を作成 **する** 必要がある場合は、「デバイス制限の設定を構成する」を参照 [Microsoft Intune。](/intune/device-restrictions-configure)
+3. 構成する **デバイス制限プロファイル** の種類を選択します。 新しいデバイス制限プロファイルの種類を作成する必要がある場合は、「デバイス制限の設定を構成する」を参照[Microsoft Intune。](/intune/device-restrictions-configure)
 
 4. [プロパティ **の構成** \> **設定]: [プロパティの編集]** \> **Microsoft Defender ウイルス対策**。
 
@@ -55,7 +60,7 @@ ms.collection: m365-security-compliance
 
 6. [サンプル申請 **の前にユーザーに確認する] ドロップダウン** で、[すべてのデータを **自動的に送信する] を選択します**。
 
-Intune デバイス プロファイルの作成および構成方法など、Intune デバイス プロファイルの詳細については、「デバイス プロファイルとはMicrosoft Intune[参照してください。](/intune/device-profiles)
+Intune デバイス プロファイルの詳細 (設定の作成および構成方法など)については、「デバイス プロファイルとはMicrosoft Intune[参照してください。](/intune/device-profiles)
 
 ## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-protection"></a>クラウドMicrosoft エンドポイント マネージャーを有効にする
 
@@ -74,7 +79,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
 
 6. [ **レビューと保存] を選択し**、[保存] を **選択します**。
 
-セキュリティ ポリシーの構成の詳細Microsoft Endpoint Configuration Managerマルウェア対策ポリシーを作成して展開する方法[: クラウド保護サービス」を参照してください](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)。
+セキュリティ ポリシーの構成のMicrosoft Endpoint Configuration Manager、「マルウェア対策ポリシーを作成して展開する方法[: クラウド保護サービス」を参照してください](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)。
 
 ## <a name="use-group-policy-to-turn-on-cloud-protection"></a>グループ ポリシーを使用してクラウド保護を有効にする
 
@@ -84,12 +89,12 @@ Intune デバイス プロファイルの作成および構成方法など、Int
 
 3. [管理 **用テンプレート] を選択します**。
 
-4. ツリーを展開して、**WindowsマップMicrosoft Defender ウイルス対策 >** > **します。**
+4. ツリーを展開してWindows **マップMicrosoft Defender ウイルス対策 >** > **します。**
 
     > [!NOTE]
     > MAPS の設定は、クラウド配信の保護と同じです。
 
-5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、Basic **MAPS** または **Advanced MAPS に設定します**。 [**OK**] を選択します。
+5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、Basic **MAPS** または **Advanced MAPS に設定します**。 **[OK]** を選択します。
 
     検出されたソフトウェアに関する基本的な情報または追加情報を送信できます。
 
@@ -106,7 +111,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
    > [ **安全なサンプルを送信する** (1)] オプションは、ほとんどのサンプルが自動的に送信されるという意味です。 個人情報が含まれている可能性があるファイルは、引き続きプロンプトが表示され、追加の確認が必要です。
    > オプションを Always **Prompt** (0) に設定すると、デバイスの保護状態が低下します。 [送信しない **]** (2) に設定すると、Microsoft [](configure-block-at-first-sight-microsoft-defender-antivirus.md) Defender for Endpoint の一目でブロック機能が機能しません。
 
-7. [**OK**] を選択します。
+7. **[OK]** を選択します。
 
 ## <a name="use-powershell-cmdlets-to-turn-on-cloud-protection"></a>PowerShell コマンドレットを使用してクラウド保護を有効にする
 
@@ -117,7 +122,7 @@ Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
-PowerShell を Microsoft Defender ウイルス対策 と一緒に使用する方法の詳細については、「[Use PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) コマンドレットを使用して、PowerShell コマンドレットを構成および実行するMicrosoft Defender ウイルス対策およびMicrosoft Defender ウイルス対策[してください](/powershell/module/defender/)。 [ポリシー CSP - Defender には](/windows/client-management/mdm/policy-csp-defender) 、- [SubmitSamplesConsent に関する詳細な情報があります](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)。
+PowerShell を Microsoft Defender ウイルス対策 と一緒に使用する方法の詳細については、「[Use PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) コマンドレットを使用して、PowerShell コマンドレットを構成および実行Microsoft Defender ウイルス対策およびMicrosoft Defender ウイルス対策[してください](/powershell/module/defender/)。 [ポリシー CSP - Defender には](/windows/client-management/mdm/policy-csp-defender) 、- [SubmitSamplesConsent に関する詳細な情報があります](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)。
 
 > [!IMPORTANT]
 > - **SubmitSamplesConsent** `SendSafeSamples` を ( `NeverSend`既定の推奨設定)、または に設定できます `AlwaysPrompt`。 この `SendSafeSamples` 設定は、ほとんどのサンプルが自動的に送信されるという意味です。 個人情報が含まれている可能性が高いファイルは、続行を求めるプロンプトが表示され、確認が必要になります。
@@ -132,7 +137,7 @@ MAPSReporting
 SubmitSamplesConsent
 ```
 
-使用できるパラメーターの詳細については、「[WMIv2 API のWindows Defender参照してください。](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+許可されるパラメーターの詳細については、「[WMIv2 API のWindows Defender参照してください。](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>アプリを使用して個々のクライアントでクラウド保護Windows セキュリティする
 
@@ -141,9 +146,11 @@ SubmitSamplesConsent
 
 1. タスク バー Windows セキュリティシールド アイコンを選択するか、タスク バーのスタート メニューを検索して、アプリ **を開Windows セキュリティ**。
 
-2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) を選択し、[設定の管理] で  [ウイルス対策の脅威保護の設定&**選択します**。
+2. [ウイルス **の脅威&]** タイル (または左側のメニュー バーのシールド アイコン) を選択し、[設定の管理] で [ウイルス対策の脅威保護の設定] &**選択します**。
 
-3. [クラウドベース **の保護] と [自動** サンプル **申請] の両方が** [オン] に切り替わるのを確認 **します**。
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="ウイルス対策&の設定" lightbox="../../media/wdav-protection-settings-wdsc.png":::
+
+3. [クラウドベース **の保護] と [自動** サンプル **申請]** が [オン] に切り替わるのを確認 **します**。
 
    > [!NOTE]
    > グループ ポリシーで自動サンプル送信が構成されている場合、設定は灰色表示され、使用できません。

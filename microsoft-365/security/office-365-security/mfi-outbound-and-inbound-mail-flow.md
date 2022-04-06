@@ -14,12 +14,12 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 管理者は、セキュリティ コンプライアンス センターのメール フロー ダッシュボードで、送信メール フローと受信メール フロー&できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5de9c699a12a7c3f282c4e1752eb23c5842a8c5d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 3bc9d6c08dfc1c232018d79e988d741505079604
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679612"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475721"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでの送信メール フローと受信メール フロー&分析
 
@@ -34,7 +34,7 @@ ms.locfileid: "63679612"
 
 ウィジェットには、組織との間でメッセージが配信される際に接続に使用される TLS 暗号化が表示されます。 他の電子メール サービスで確立された接続は、TLS が両側から提供される場合、TLS によって暗号化されます。 ウィジェットは、メール フローの最後の週のスナップショットを提供します。
 
-![セキュリティ コンプライアンス センターの [メール フロー] ダッシュボードの送信および受信メール フロー &ウィジェット。](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png" alt-text="セキュリティ コンプライアンス センターの [メール フロー] ダッシュボードの送信および受信メール フロー &ウィジェット" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png":::
 
 ウィジェット内の情報は、コネクタと TLS メッセージ保護に関連Microsoft 365。 詳細については、以下のトピックを参照してください。
 
@@ -46,7 +46,7 @@ ms.locfileid: "63679612"
 
 ウィジェットの [ **詳細の表示]** をクリックすると、転送中 **に保護されたメッセージ (TLS によって)** フライアウトに、組織に入退出するメッセージに対する TLS 保護が表示されます。
 
-![送信メール ウィジェットと受信メール ウィジェットの [詳細の表示] をクリックした後に表示される転送中 (TLS) のフライアウトで保護されたメッセージ。](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png" alt-text="送信メール ウィジェットと受信メール ウィジェットの [詳細の表示] をクリックした後に表示される、転送中に保護されたメッセージ (TLS) のフライアウト" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png":::
 
 現在、TLS 1.2 は、ユーザーが提供する TLS の最も安全なMicrosoft 365。 多くの場合、コンプライアンス監査に使用されている TLS 暗号化を知る必要があります。 ほとんどの送信元および宛先の電子メール サーバー (所有していない、Microsoft は所有していない) と直接関係がない可能性があります。そのため、これらのサーバーで使用される TLS 暗号化を改善するためのオプションは多くはありません。
 

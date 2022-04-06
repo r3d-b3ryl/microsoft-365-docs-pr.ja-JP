@@ -1,7 +1,7 @@
 ---
 title: ダッシュボードの分析情報 - 脅威と脆弱性の管理
-description: この脅威と脆弱性の管理は、SecOps とセキュリティ管理者がサイバーセキュリティの脅威に対処し、組織のセキュリティの回復力を構築するのに役立ちます。
-keywords: Microsoft Defender for Endpoint-tvm, Microsoft Defender for Endpoint-tvm ダッシュボード, Threat & 脆弱性の管理, 脅威と脆弱性の管理, リスクベースの脅威 & 脆弱性の管理, セキュリティ構成, Microsoft Secure Score for Devices, exposure score
+description: この脅威と脆弱性の管理、SecOps とセキュリティ管理者がサイバーセキュリティの脅威に対処し、組織のセキュリティの回復力を構築するのに役立ちます。
+keywords: Microsoft Defender for Endpoint-tvm、Microsoft Defender for Endpoint-tvm ダッシュボード、Threat & 脆弱性の管理、脅威と脆弱性の管理、リスクベースの脅威 & 脆弱性の管理、セキュリティ構成、Microsoft Secure Score for Devices、露出スコア
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb93b179b9d342a4a0d098ddb889a94371fbabc4
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 76eedd78e6bc6a95450a50c04d4f85b0de46db8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464312"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472487"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>ダッシュボードの分析情報 - 脅威と脆弱性の管理
 
@@ -58,7 +58,7 @@ ms.locfileid: "62464312"
 
 ## <a name="threat-and-vulnerability-management-dashboard"></a>脅威と脆弱性の管理ダッシュボード
 
-:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="デバイスの脅威と脆弱性管理ダッシュボード。":::
+:::image type="content" source="../../media/tvmdashboard.png" alt-text="デバイスの脅威と脆弱性管理ダッシュボード" lightbox="../../media/tvmdashboard.png":::
 
 <br>
 

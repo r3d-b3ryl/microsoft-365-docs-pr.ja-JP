@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouse、エラー メッセージと問題のトラブルシューティングと解決に関するヘルプを参照してください。
-ms.openlocfilehash: 1bd98a90af19d60aba2e0891c3f993e77523a12c
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 24f282420bb69188106178cefc6fb89968f4fcf6
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632363"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645036"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>問題とエラー メッセージのトラブルシューティングと解決を行Microsoft 365 Lighthouse
 
@@ -54,7 +54,7 @@ ms.locfileid: "64632363"
 **原因:** 顧客テナントが次の条件を満たさなかった。
 
   - 顧客テナントを管理するには、Managed Service Provider (MSP) に対して委任されたアクセス設定が必要です*
-  - 少なくとも 1 つのライセンス、Microsoft 365 Business Premium、Microsoft 365 E3、またはライセンスWindows 365 Business必要
+  - 少なくとも 1 つのライセンス、Microsoft 365 Business Premium、Microsoft 365 E3、またはWindows 365 Business必要
   - ライセンスユーザーが 1000 人以下である必要があります 
 
 **解決策:** 次の表では、アクションを必要とするさまざまなテナントの状態について説明し、それらを解決する方法について説明します。
@@ -137,4 +137,4 @@ DAP 関係を持つお客様の場合、パートナー管理者はパートナ�
 
 [ユーザーに関する既知Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (記事)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)\
-[ヘルプとサポートを受ける (記事](m365-lighthouse-get-help-and-support.md)Microsoft 365 Lighthouse)
+[ヘルプとサポートを受けるMicrosoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (記事)

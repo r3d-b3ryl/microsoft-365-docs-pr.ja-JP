@@ -1,7 +1,7 @@
 ---
-title: 手順 4. 役割Microsoft 365 Defender監督を定義する
-description: セキュリティ操作に組み込む際の役割、責任、監督Microsoft 365 Defender基本。
-keywords: インシデント、アラート、調査、相関関係、攻撃、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、Microsoft 365、インシデント対応、サイバー攻撃、secops、セキュリティ操作、soc
+title: 手順 4. Microsoft 365 Defenderロール、責任、監視を定義する
+description: Microsoft 365 Defenderをセキュリティ操作に統合する際のロール、責任、監視を定義する基本。
+keywords: インシデント, アラート, 調査, 相関関係, 攻撃, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, Microsoft 365, インシデント対応, サイバー攻撃, secops, セキュリティ操作, soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,42 +22,42 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7562eca50b905bf70f17844cf8fe3079fbf3fc14
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5410db413ece81a39453070985e6c744e8b684a6
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314281"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664064"
 ---
-# <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>手順 4. 役割Microsoft 365 Defender監督を定義する
+# <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>手順 4. Microsoft 365 Defenderロール、責任、監視を定義する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-運用上の役割を定義するには、Microsoft 365 Defender ライセンス、構成、および管理の所有権と説明責任を初期タスクとして確立する必要があります。 通常、Microsoft 365 および Enterprise セキュリティ + モビリティ (EMS) サービス (Microsoft 365 Defender を含む) のライセンス、サブスクリプション コスト、および管理の所有権は、セキュリティ 運用センター (SOC) チームの外にあります。 SOC チームは、これらの個人と一緒に作業して、ユーザーの適切な監視をMicrosoft 365 Defender。 
+組織は、運用ロールを定義する前に、初期タスクとして、Microsoft 365 Defender ライセンス、構成、および管理の所有権と説明責任を確立する必要があります。 通常、ライセンスの所有権、サブスクリプション コスト、Microsoft 365および Enterprise Security + Mobility (EMS) サービス (Microsoft 365 Defenderを含む) の管理は、Security Operations Center (SOC) チームの外部にあります。 SOC チームは、これらの個人と協力して、Microsoft 365 Defenderを適切に監視する必要があります。 
 
-多くの最新の SOC は、自分のスキルセットと機能に基づいてチーム メンバーをカテゴリに割り当てる。 例:
+多くの最新 SOC では、スキルセットと機能に基づいてチーム メンバーをカテゴリに割り当てます。 例:
 
 - 脅威と分析機能のライフサイクル管理に関連するタスクに割り当てられた脅威インテリジェンス チーム。
-- ログ、アラート、イベント、および監視機能の管理を担当する SOC アナリストで構成される監視チーム。
-- セキュリティ デバイスの&に割り当てられたエンジニアリング チーム。
+- ログ、アラート、イベント、監視機能の管理を担当する SOC アナリストで構成される監視チーム。
+- セキュリティ デバイスのエンジニアリングと最適化に割り当てられたエンジニアリング &運用チーム。
 
-SOC チームの役割と責任Microsoft 365 Defenderこれらのチームに自然に統合されます。
+MICROSOFT 365 DEFENDERに対する SOC チームの役割と責任は、これらのチームに自然に統合されます。
 
-次の表は、各 SOC チームの役割と責任と、その役割とチームの役割の統合Microsoft 365 Defender。
+次の表は、各 SOC チームの役割と責任、およびそれらのロールがMicrosoft 365 Defenderとどのように統合されるかを示しています。
 
 | SOC チーム | 役割と責任 | Microsoft 365 Defenderタスク  |
 |:-------|:-----|:-------|
-| SOC の監視 | <ul><li>SOC ガバナンスを実行する</li><li>毎日、毎週、毎月のプロセスを確立する</li><li>トレーニングと認識を提供する</li><li>スタッフの採用、ピア グループと会議への参加</li><li>青、赤、紫のチーム演習を実施する</ul>  | <ul><li>Microsoft 365 Defenderアクセス制御</li><li>機能/URL とライセンス更新プログラムの登録を維持する</li><li>IT 関係者、法務関係者、コンプライアンス関係者、プライバシー関係者とのコミュニケーションを維持する</li><li>新しいグループまたはグループの取り組みMicrosoft 365変更Microsoft Azure参加する</ul> |
-| 脅威インテリジェンス & Analytics  | <ul><li>脅威の Intel フィード管理</li><li>ウイルスとマルウェアの属性</li><li>脅威のモデリング&イベントの分類</li><li>Insider Threat Attribute の開発 </li><li>Threat Intel Integration with Risk Management program</li><li>人事、法務、IT、およびセキュリティ チーム全体のデータ サイエンス、BI、分析とデータインサイトを統合する<ul> | <ul><li>Microsoft Defender for Identity の脅威モデリングを維持する</li><li>脅威のモデリングに関する Microsoft Defender Office 365維持</li><li>Microsoft Defender for Endpoint の脅威モデリングを維持する</ul> |
-| 監視 | <ul><li>Tier 1、2、3 アナリスト</li><li>ログ ソースのメンテナンスとエンジニアリング</li><li>データ ソースの取り込み </li><li>SIEM の解析、アラート、相関関係、最適化</li><li>イベントとアラートの生成</li><li>イベントとアラートの分析</li><li>イベントとアラートのレポート</li><li>チケット システムのメンテナンス</ul> | 用途: <ul><li>セキュリティ/コンプライアンス センター</li><li>Microsoft 365 Defender ポータル</ul> |
-| エンジニアリング & SecOps | <ul><li>アプリ、システム、およびエンドポイントの脆弱性管理</li><li>XDR/SOAR オートメーション</li><li>コンプライアンス テスト</li><li>フィッシングおよび DLP エンジニアリング</li><li>エンジニアリング</li><li>座標変更コントロール</li><li>Runbook の更新を調整する</li><li>侵入テスト<ul> | <ul><li>Microsoft Defender for Cloud Apps</li><li>Defender for Endpoint</li><li>Defender for Identity</ul> |
-| コンピューター セキュリティ インシデント対応チーム (CSIRT) | <ul><li>サイバー インシデントの調査と対応</li><li>forensics を実行する</li><li>**SOC から分離される場合が多い**</ul> | インシデント対応プレイブックMicrosoft 365 Defenderし、管理する |
+| SOC 監視 | <ul><li>SOC ガバナンスを実行する</li><li>毎日、毎週、毎月のプロセスを確立します</li><li>トレーニングと認識を提供する</li><li>スタッフを採用し、ピア グループや会議に参加する</li><li>青、赤、紫のチーム演習を実施する</ul>  | <ul><li>Microsoft 365 Defender ポータルのアクセス制御</li><li>機能/URL とライセンス更新レジスタを維持します</li><li>IT、法的、コンプライアンス、プライバシーの利害関係者とのコミュニケーションを維持します</li><li>新しいMicrosoft 365またはMicrosoft Azureイニシアチブの変更管理会議に参加する</ul> |
+| 脅威インテリジェンス & Analytics  | <ul><li>脅威 Intel フィード管理</li><li>ウイルスとマルウェアの属性</li><li>脅威モデリング&脅威イベントの分類</li><li>Insider threat Attribute development </li><li>Threat Intel と Risk Management プログラムの統合</li><li>人事、法務、IT、セキュリティ チーム全体のデータ サイエンス、BI、分析とデータ分析情報を統合する<ul> | <ul><li>Microsoft Defender for Identity脅威モデリングを維持します</li><li>Microsoft Defender for Office 365脅威モデリングを維持します</li><li>Microsoft Defender for Endpoint脅威モデリングを維持します</ul> |
+| 監視 | <ul><li>階層 1、2、3 のアナリスト</li><li>ログ ソースのメンテナンスとエンジニアリング</li><li>データ ソース インジェスト </li><li>SIEM 解析、アラート、相関関係、最適化</li><li>イベントとアラートの生成</li><li>イベントとアラートの分析</li><li>イベントとアラートのレポート</li><li>チケット発行システムのメンテナンス</ul> | 使用： <ul><li>セキュリティ/コンプライアンス センター</li><li>Microsoft 365 Defender ポータル</ul> |
+| エンジニアリング & SecOps | <ul><li>アプリ、システム、エンドポイントの脆弱性管理</li><li>XDR/SOAR オートメーション</li><li>コンプライアンス テスト</li><li>フィッシングと DLP エンジニアリング</li><li>エンジニアリング</li><li>座標変更コントロール</li><li>Runbook の更新を調整する</li><li>侵入テスト<ul> | <ul><li>Microsoft Defender for Cloud Apps</li><li>Defender for Endpoint</li><li>Defender for Identity</ul> |
+| コンピューター セキュリティ インシデント対応チーム (CSIRT) | <ul><li>サイバー インシデントの調査と対応</li><li>フォレンジックを実行する</li><li>**SOC から分離されることがよくあります**</ul> | インシデント対応プレイブックMicrosoft 365 Defender共同作業と保守 |
 ||||
 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-[手順 5.使用例の開発とテスト](integrate-microsoft-365-defender-secops-use-cases.md)
+[手順 5.ユース ケースの開発とテスト](integrate-microsoft-365-defender-secops-use-cases.md)

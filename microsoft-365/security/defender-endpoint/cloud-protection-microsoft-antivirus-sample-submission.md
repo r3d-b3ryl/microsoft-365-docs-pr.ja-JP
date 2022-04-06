@@ -15,14 +15,14 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9df9c387f24671d6790d9219590eeac490f2f1aa
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a647617de3706481c2e12f4e1772f5bc609db6fc
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328135"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470683"
 ---
-# <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>クラウド保護とサンプル申請 (Microsoft Defender ウイルス対策
+# <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>クラウド保護とサンプル申請 (Microsoft Defender ウイルス対策
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,7 +32,7 @@ Microsoft Defender ウイルス対策は、マルウェアを検出するため�
 
 疑わしいファイルや悪意のあるファイルが検出されると、分析のためにサンプルがクラウド サービスに送信され、Microsoft Defender ウイルス対策ブロックされます。 迅速に実行される決定が行われたらすぐに、ファイルはリリースまたはブロックされます。Microsoft Defender ウイルス対策。 
 
-この記事では、クラウド保護と自動サンプル申請の概要について説明します。Microsoft Defender ウイルス対策。 クラウド保護の詳細については、「クラウド保護[とクラウド保護」を参照Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)。
+この記事では、クラウド保護と自動サンプル申請の概要をMicrosoft Defender ウイルス対策。 クラウド保護の詳細については、「クラウド保護[とクラウド保護」を参照Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)。
 
 ## <a name="how-cloud-protection-and-sample-submission-work-together"></a>クラウド保護とサンプル申請の機能
 
@@ -40,7 +40,7 @@ Microsoft Defender ウイルス対策は、マルウェアを検出するため�
 
 次の図は、クラウド保護とサンプル申請のフローを示Microsoft Defender ウイルス対策。
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="クラウド配信の保護フロー":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="クラウド配信の保護フロー" lightbox="images/cloud-protection-flow.png":::
 
 Microsoft Defender ウイルス対策クラウド保護は、次の方法を使用して、一目で見たことの少ないほとんどの新しい脅威を自動的にブロックします。
 
@@ -80,14 +80,14 @@ Microsoft Defender ウイルス対策クラウド保護は、次の方法を使�
          - "送信しない" は、macOS ポリシーの "Disabled" 設定と同じです。
          - サンプル提出が無効になっている場合でも、検出用にメタデータが送信されます。
 
-   3. メタデータやファイルがクラウド保護に送信された後、サンプル、起訴、またはビッグ データ分析機械学習モデルを使用して、評決に達することができます。 クラウドによる保護をオフにした場合、分析は、ローカルの機械学習モデルや同様の機能を通じてクライアントが提供できる機能にのみ制限されます。
+   3. メタデータやファイルがクラウド保護に送信された後、サンプル、起用、またはビッグ データ分析の機械学習モデルを使用して、評決に達することができます。 クラウドによる保護をオフにした場合、分析は、ローカルの機械学習モデルや同様の機能を通じてクライアントが提供できる機能にのみ制限されます。
 
 > [!IMPORTANT]
 > [一目でブロック (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) は、ファイルまたはプロセスが安全かどうかを判断する発発と分析を提供します。 BAFS は、評決に達するまで、ファイルの開き方を一瞬遅らせる可能性があります。 サンプル提出を無効にすると、BAFS も無効になり、ファイル分析はメタデータにのみ制限されます。 サンプル申請と BAFS を有効に保つことをお勧めします。 詳細については、「一目でブロック [する」を参照してください。](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
 
 ## <a name="cloud-protection-levels"></a>クラウド保護レベル
 
-クラウド保護は、既定ではクラウド保護Microsoft Defender ウイルス対策。 組織の保護レベルを構成することもできますが、クラウド保護を有効にすることをお勧めします。 「[クラウド配信の保護レベルを指定する」を参照Microsoft Defender ウイルス対策](specify-cloud-protection-level-microsoft-defender-antivirus.md)。
+クラウド保護は、既定では既定で有効Microsoft Defender ウイルス対策。 組織の保護レベルを構成することもできますが、クラウド保護を有効にすることをお勧めします。 「[クラウド配信の保護レベルを指定する」を参照Microsoft Defender ウイルス対策](specify-cloud-protection-level-microsoft-defender-antivirus.md)。
 
 ## <a name="sample-submission-settings"></a>サンプル申請の設定
 
@@ -101,11 +101,11 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>クラウド保護サービスに送信されるメタデータの例
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="クラウド保護に送信されるメタデータの例を示す画像Microsoft Defender ウイルス対策":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="クラウド保護に送信されるメタデータの例 (Microsoft Defender ウイルス対策ポータル)" lightbox="images/cloud-protection-metadata-sample.png":::
 
 次の表に、クラウド保護によって分析のために送信されるメタデータの例を示します。
 
-| 型 | 属性 |
+| 種類 | 属性 |
 |:---|:---|
 | コンピューターの属性 | `OS version` <br/> `Processor` <br/> `Security settings` |
 | 動的属性とコンテキスト属性 | **プロセスとインストール** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**動作** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |
@@ -120,7 +120,7 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 - ISO 27001
 - ISO 27018
 - SOC I、II、III
-- および PCI
+- PCI
 
 詳細については、以下のリソースをご覧ください。
 
@@ -130,7 +130,7 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 
 ## <a name="other-file-sample-submission-scenarios"></a>その他のファイルサンプル提出シナリオ
 
-Defender for Endpoint が、クラウド保護に関連しないファイル サンプルを要求するシナリオは、さらに 2 Microsoft Defender ウイルス対策。 これらのシナリオについては、次の表で説明します。
+Defender for Endpoint でクラウド保護に関連しないファイル サンプルを要求するシナリオは、さらに 2 Microsoft Defender ウイルス対策。 これらのシナリオについては、次の表で説明します。
 
 | シナリオ | 説明 |
 |:---|:---|

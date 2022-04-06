@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d08994d0a69ba1985e69845b3a22abd40c753fd
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 574e02c837ce1f2e3639ed562ed52bacc0e67629
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166580"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472223"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -43,7 +43,7 @@ ms.locfileid: "61166580"
 
 **サインインに失敗しました: 予期しない***エラーが発生した場合は、後で試してください*
 
-:::image type="content" alt-text="サインインに失敗したエラーのイメージ 予期しないエラー。" source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
+:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="サインインに失敗したエラー Microsoft Defender 365 ポータルのサインイン ページで予期しないエラーが発生しました。" lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **メッセージ：**
 
@@ -55,19 +55,19 @@ ms.locfileid: "61166580"
 
 **解決方法:**
 
-Google Play ストアから最新バージョン[とMicrosoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)インストールして、もう一度やり直してください。
+Google Play ストアから最新バージョン[とMicrosoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)インストールし、もう一度やり直してください。
 
 ## <a name="sign-in-failed---invalid-license"></a>サインインに失敗しました - 無効なライセンス
 
-**サインインに失敗しました:** *ライセンスが無効です。管理者に問い合わせてください*
+**サインインに失敗しました: ライセンス***が無効です。管理者に問い合わせてください*
 
-:::image type="content" alt-text="サインインに失敗したイメージは、管理者に問い合わせてください。" source="images/920e433f440fa1d3d298e6a2a43d4811.png":::
+:::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="Microsoft Defender 365 ポータルのサインイン ページのディレクティブ連絡先の詳細" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
-**メッセージ:** *無効なライセンス、管理者に問い合わせてください*
+**メッセージ: 無効***なライセンス、管理者に問い合わせてください*
 
 **原因:**
 
-ライセンスが割りMicrosoft 365されていないか、組織にサブスクリプションのライセンスMicrosoft 365 Enterpriseです。
+ライセンスが割りMicrosoft 365されていないか、組織がサブスクリプションのライセンスを持Microsoft 365 Enterpriseです。
 
 **解決方法:**
 
@@ -85,7 +85,7 @@ Google Play ストアから最新バージョン[とMicrosoft Authenticator](htt
 
 Android 用 Defender for Endpoint によって検出されるフィッシングや有害な Web の脅威は、一部の Xiaomi デバイスではブロックされません。 次の機能は、これらのデバイスでは機能しません。
 
-![安全でないと報告されたサイトの画像。](images/0c04975c74746a5cdb085e1d9386e713.png)
+:::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="サイトセーフでない通知メッセージ" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
 
 **原因:**
 
@@ -93,7 +93,7 @@ Xiaomi デバイスには、新しいアクセス許可モデルが含まれま�
 
 Xiaomi デバイスのアクセス許可: "バックグラウンドで実行中にポップアップ ウィンドウを表示する"
 
-![ポップアップ設定のイメージ。](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
+:::image type="content" source="images/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="Microsoft Defender 365 ポータルのポップアップ設定ウィンドウ" lightbox="images/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
 
 **解決方法:**
 
@@ -118,50 +118,50 @@ Xiaomi は、Android 11 のバッテリー最適化のアクセス許可を変�
 OEM と一緒に、アプリのオンボーディング画面からこのアクセス許可を有効にするソリューションを探しています。 この問題が解決された場合は、ドキュメントを更新します。
 ユーザーは、次の手順に従って、デバイス設定から同じアクセス許可を有効にできます。 
 
-1. デバイスの **[設定]** に移動します。
+1. デバイスの [**設定**] に移動します。
 
 2. [バッテリーの最適化] を **検索して選択します**。
 
-   ![[バッテリーの最適化] を検索して選択します。](images/search-battery-optimisation.png)
+   :::image type="content" source="images/search-battery-optimisation.png" alt-text="[バッテリーの最適化] を検索して選択できるページ" lightbox="images/search-battery-optimisation.png":::
 
 3. [ **アプリの特別なアクセス] で**、[バッテリーの **最適化] を選択します**。
 
-   ![[アプリの特別なアクセス] で、[バッテリーの最適化] を選択します。](images/special-app-access.png)
+   :::image type="content" source="images/special-app-access.png" alt-text="[バッテリーの最適化] を選択できる [特別なアプリ アクセス] ウィンドウ" lightbox="images/special-app-access.png":::
 
 4. [ドロップダウン] を [すべてのアプリ] **に変更します**。
 
-   ![[すべてのアプリ] を表示するドロップダウンを変更するには、手順 1 を実行します。](images/show-all-apps-2.png)
+   :::image type="content" source="images/show-all-apps-2.png" alt-text="[バッテリーの最適化] ウィンドウで値を [すべてのアプリ] に変更できるドロップダウン" lightbox="images/show-all-apps-2.png":::
 
-   ![[すべてのアプリ] を表示するドロップダウンを変更するには、手順 2 を実行します。](images/show-all-apps-1.png)
+   :::image type="content" source="images/show-all-apps-1.png" alt-text="[バッテリーの最適化] ウィンドウの下に [すべてのアプリ] オプションを表示するドロップダウン" lightbox="images/show-all-apps-1.png":::
 
 5. [エンドポイント用 Microsoft Defender] を見つけて、[ **最適化しない] を選択します**。
 
-   ![[エンドポイント用 Microsoft Defender] を見つけて、[最適化しない] を選択します。](images/select-dont-optimise.png)
+   :::image type="content" source="images/select-dont-optimise.png" alt-text="オプション Microsoft Defender for Endpoint の場所と最適化しないの選択を有効にするページ" lightbox="images/select-dont-optimise.png":::
 
-Microsoft Defender for Endpoint オンボーディング画面に戻り、[ **許可**] を選択すると、ダッシュボード画面にリダイレクトされます。
+[Microsoft Defender for Endpoint オンボーディング] 画面に戻り、[許可] を選択すると、ダッシュボード画面にリダイレクトされます。
 
 ## <a name="send-in-app-feedback"></a>アプリ内フィードバックの送信
 
-ユーザーが上記のセクションでまだ解決されていない問題に直面しているか、リストされている手順を使用して解決できない場合、ユーザーは診断データと共にアプリ内フィードバックを **提供できます**。 その後、ログを調査して適切なソリューションを提供できます。 ユーザーは、次の手順に従って同じ操作を実行できます。
+ユーザーが上記のセクションでまだ解決されていない問題に直面した場合、またはリストされている手順を使用して解決できない場合、ユーザーは診断データと共にアプリ内フィードバックを **提供できます**。 その後、ログを調査して適切なソリューションを提供できます。 ユーザーは、次の手順に従って同じ操作を実行できます。
 
 1.  デバイスで **MDE アプリケーション** を開き、左上隅 **にある** プロファイル アイコンをクリックします。
 
-    :::image type="content" alt-text="[プロファイル] アイコンをクリックします。" source="images/select-profile-icon-1.jpg":::
+    :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="Microsoft Defender for Endpoint ポータルのプロファイル アイコン" lightbox="images/select-profile-icon-1.jpg":::
 
 2.  [フィードバックに関する&] を選択します。
 
-    :::image type="content" alt-text="ヘルプとフィードバックを選択します。" source="images/selecthelpandfeedback2.png":::
+    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="Microsoft Defender for endpoint &で選択できるフィードバック のヘルプ オプション" lightbox="images/selecthelpandfeedback2.png":::
 
 3.  [Microsoft にフィードバックを送信する] を選択します。
 
-    :::image type="content" alt-text="[フィードバックを Microsoft に送信する] を選択します。" source="images/send-feedback-to-microsoft-3.jpg":::
+    :::image type="content" alt-text="[Microsoft にフィードバックを送信する] を選択する" source="images/send-feedback-to-microsoft-3.jpg":::
 
 4.  指定されたオプションから選択します。 問題を報告するには、[問題を報告する] を選択します。
 
-    :::image type="content" alt-text="問題を報告する。" source="images/report-issue-4.jpg":::
+    :::image type="content" source="images/report-issue-4.jpg" alt-text="[問題を報告する] オプション" lightbox="images/report-issue-4.jpg":::
 
 5.  直面している問題の詳細を入力し、[診断データの送信] をオンにしてください。 チームがソリューションまたはフォローアップで連絡を取り戻す場合は、[電子メール アドレスを含める] をオンにすることをお勧めします。
 
-    :::image type="content" alt-text="詳細を追加し、診断データを添付します。" source="images/finalsubmit5.png":::
+    :::image type="content" source="images/finalsubmit5.png" alt-text="詳細を追加して診断データを添付できるウィンドウ" lightbox="images/finalsubmit5.png":::
 
 6.  [送信] をクリックして、フィードバックを正常に送信します。

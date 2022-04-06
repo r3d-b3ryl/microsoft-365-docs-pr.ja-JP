@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cfdbb84cfcc2cda08572709adb3b13db83e319fa
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 05ae6e0669784aef515d678835f0fa48be0f9f3f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766466"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471255"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint 展開の計画
 
@@ -38,7 +38,7 @@ Microsoft Defender for Endpoint の展開を計画して、スイート内のセ
 
 このソリューションでは、環境アーキテクチャを特定する方法、ニーズに最も適した展開ツールの種類を選択する方法、および機能を構成する方法に関するガイダンスを提供します。
 
-![展開フローのイメージ。](images/deployment-guide-plan.png)
+:::image type="content" source="images/deployment-guide-plan.png" alt-text="展開フロー" lightbox="images/deployment-guide-plan.png":::
 
 ## <a name="step-1-identify-architecture"></a>手順 1: アーキテクチャを識別する
 
@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint の展開を計画して、スイート内のセ
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![Defender for Endpoint 展開戦略のサム イメージ。](images/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li>
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Defender for Endpoint の展開戦略" lightbox="images/mde-deployment-strategy.png":::](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li>
 
 ## <a name="step-2-select-deployment-method"></a>手順 2: 展開方法の選択
 

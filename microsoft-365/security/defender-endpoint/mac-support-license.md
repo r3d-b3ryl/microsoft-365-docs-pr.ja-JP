@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b0a328ffeee6ee5796cb92f00b8491b257e88a65
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 35b77183ee9ceb00569c956d30debb0dd61e63f7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765734"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471739"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上の Microsoft Defender for Endpoint のライセンスの問題のトラブルシューティング
 
@@ -38,7 +38,7 @@ ms.locfileid: "62765734"
 
 MacOS および手動展開テストまたは概念実証 (PoC[](mac-install-manually.md)) で [Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md) を実行している間に、次のエラーが表示される場合があります。
 
-![ライセンス エラーのイメージ。](images/no-license-found.png)
+:::image type="content" source="images/no-license-found.png" alt-text="ライセンス エラー" lightbox="images/no-license-found.png":::
 
 **メッセージ：** 
 
@@ -57,6 +57,6 @@ macOS エージェントの Microsoft Defender for Endpoint が最新の状態�
 
 **解決方法:**
 
-ここで説明 MicrosoftDefenderATPOnboardingMacOs.py 手順に従います。クライアント [構成](mac-install-manually.md#client-configuration)
+ここに記載 MicrosoftDefenderATPOnboardingMacOs.py 手順に従います。クライアント [構成](mac-install-manually.md#client-configuration)
 
 macOS 上の Microsoft Defender for Endpoint が最新ではないシナリオでは、エージェントを更新する必要があります。 

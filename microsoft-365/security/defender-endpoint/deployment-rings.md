@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-endpointprotect
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7a9673591f4d77197390541a58169a58b04fe91
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 116960ed6e7d4a765479f0c76715e48ec8312e3b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872431"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472091"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Microsoft Defender for Endpoint をリングに展開する
 
@@ -42,7 +42,7 @@ Microsoft Defender for Endpoint の展開は、リング ベースの展開方�
 
 ## <a name="new-deployments"></a>新しい展開
 
-![展開リングのイメージ。](images/deployment-rings.png)
+:::image type="content" source="images/deployment-rings.png" alt-text="展開リング" lightbox="images/deployment-rings.png":::
 
 リング ベースのアプローチは、オンボードする一連のエンドポイントを識別し、より大きなデバイス セットにサービスを展開する前に特定の条件が満たされるのを確認する方法です。 各リングの終了条件を定義し、次のリングに進む前に満たされた条件を満たします。
 
@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint の展開は、リング ベースの展開方�
 
 表 1 に、使用できる展開リングの例を示します。
 
-**表 1:**
+**表 1**:
 
 <br>
 
@@ -96,15 +96,15 @@ Microsoft Defender for Endpoint は、サービスにオンボードできるさ
 
 次の資料を使用して、組織に最適な Microsoft Defender for Endpoint アーキテクチャを選択します。
 
-|**項目**|**説明**|
+|**Item**|**説明**|
 |:-----|:-----|
-|[![Microsoft Defender for Endpoint 展開戦略のサム イメージ。](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li></ul>
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Microsoft Defender for Endpoint 展開の戦略" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li></ul>
 
 ## <a name="existing-deployments"></a>既存の展開
 
 ### <a name="windows-endpoints"></a>Windowsエンドポイント
 
-サーバー Windowsおよび/または Windows サーバーの場合は、セキュリティ更新プログラム検証プログラム **(SUVP)** を使用して、(パッチ火曜日の前に) テストする複数のコンピューターを選択します。
+サーバー Windowsおよび/または Windowsサーバーの場合は、セキュリティ更新プログラム検証プログラム **(SUVP**) を使用して、(パッチ火曜日の前に) テストする複数のコンピューターを選択します。
 
 詳細については、以下を参照してください。
 
@@ -120,7 +120,8 @@ macOS と Linux を使用すると、いくつかのシステムを使用して�
 
 チャネルの選択により、デバイスに提供される更新プログラムの種類と頻度が決まります。 ベータ版のデバイスは、更新プログラムと新機能を最初に受け取ったデバイスで、後でプレビュー、最後に現在のデバイスが続きます。
 
-![インサイダー リングのイメージ。](images/insider-rings.png)
+:::image type="content" source="images/insider-rings.png" alt-text="インサイダー リング" lightbox="images/insider-rings.png":::
+
 
 新機能をプレビューし、早期のフィードバックを提供するには、ベータ版またはプレビュー版を使用する一部のデバイスをエンタープライズで構成する必要があります。
 

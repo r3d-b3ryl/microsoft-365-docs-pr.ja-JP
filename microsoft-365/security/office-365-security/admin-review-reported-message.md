@@ -14,12 +14,12 @@ ms.custom: ''
 description: 報告されたメッセージを確認し、ユーザーにフィードバックを与える方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cb979260bde62903e97a4726083924101b8711a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 44476e7a8ad3bad9b21e82a9528593ceb350257d
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61932797"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470903"
 ---
 # <a name="admin-review-for-reported-messages"></a>報告されたメッセージの管理者によるレビュー
 
@@ -33,14 +33,14 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
 
 この機能は、ユーザーにフィードバックを提供するように設計されているが、システム内のメッセージの評決を変更しません。 Microsoft がフィルターを更新して改善するには、管理者申請を使用して分析用のメッセージを送信 [する必要があります](admin-submission.md)。
 
-メッセージが誤検知または偽陰性として報告された場合にのみ、ユーザーにレビュー結果をマークして [通知できます](report-false-positives-and-false-negatives.md)。
+メッセージが誤検知または誤検知として報告された場合にのみ、ユーザーにレビュー結果をマークして [通知できます](report-false-positives-and-false-negatives.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission>。
 
 - ユーザー申請の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
-  - [組織の管理] または [セキュリティ管理者][をMicrosoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
+  - [組織の管理] または [セキュリティ[管理者] をMicrosoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
   - [組織の管理] [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)。
 
 - また、PowerShell へのアクセスExchange Online必要があります。 使用しようとしているアカウントが Exchange Online PowerShell にアクセスできない場合は、「ドメインに電子メール アドレスを指定する」というエラーが *表示されます*。 PowerShell へのアクセスを有効または無効にする方法のExchange Online、次のトピックを参照してください。
@@ -49,24 +49,24 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
 
 ## <a name="notify-users-from-within-the-portal"></a>ポータル内からユーザーに通知する
 
-1. [電子メール Microsoft 365 Defender] ポータルの [投稿] ページに移動し、[電子メール] & <https://security.microsoft.com> **投稿]**  \> **に移動します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
+1. [電子メール Microsoft 365 Defender] <https://security.microsoft.com>ポータルの [投稿] ページに移動し、&**を** \> **送信します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission>。
 
 2. [ **報告されたメッセージのユーザー**] をクリックし、マークして通知するメッセージを選択します。
 
-3. [マークを **付け、通知** する] ドロップダウンを選択し、[脅威が見 **つかりません]、[** フィッシング]、または [ **迷惑メール]** を **選択します**。
+3. [マークを **付け、通知** する] ドロップダウンを選択し、[脅威が見 **つかりません]、**[フィッシング]、または [迷惑メール] **を** 選択 **します**。
 
    > [!div class="mx-imgBorder"]
-   > ![ポータルからメッセージを送信します。](../../media/admin-review-send-message-from-portal.png)
+   > :::image type="content" source="../../media/admin-review-send-message-from-portal.png" alt-text="ユーザーが報告したメッセージを表示するページ" lightbox="../../media/admin-review-send-message-from-portal.png":::
 
 報告されたメッセージは誤検知または偽陰性としてマークされ、メッセージを報告したユーザーに通知するメールがポータル内から自動的に送信されます。
 
 ## <a name="customize-the-messages-used-to-notify-users"></a>ユーザーへの通知に使用するメッセージをカスタマイズする
 
-1. [Microsoft 365 Defender ポータルで、[メール & コラボレーション ポリシー& ルールの脅威ポリシー] の [ユーザーの申請] ページに移動します。[その他] セクションで、ユーザーがメッセージ設定を報告 <https://security.microsoft.com>  \>  \>  \> しました。  [ユーザー申請] ページに **直接移動するには** 、 を使用します <https://security.microsoft.com/userSubmissionsReportMessage> 。
+1. [Microsoft 365 Defender     <https://security.microsoft.com>ポータルで、[メール **& コラボレーション** \> \> \> ポリシー & ルールの脅威ポリシー] [その他] セクションの [ユーザーが報告したメッセージ設定] の [ユーザー申請] ページ **に** 移動します。 [ユーザー申請] ページに **直接移動するには** 、 を使用します <https://security.microsoft.com/userSubmissionsReportMessage>。
 
-2. [ユーザー申請] ページで、送信者の表示名を指定する場合は、[管理者レビュー結果の電子メール通知] セクションの [送信者として使用する **Office 365** 電子メール アドレスを指定する] チェック ボックスをオンにし、使用する名前を入力します。 メッセージに表示される電子メール Outlook、すべての返信がそこに送信されます。
+2. [ユーザー **申請**] ページで、送信者の表示名を指定する場合は、[管理者レビュー結果の電子メール通知] セクションの [送信者として使用する **Office 365** 電子メール アドレスを指定する] チェック ボックスをオンにし、使用する名前を入力します。 このメール アドレスは、Outlookに表示されます。
 
-3. テンプレートをカスタマイズする場合は、ページの下部にある **[メール** 通知のカスタマイズ] をクリックします。 開くフライアウトでは、次の情報のみをカスタマイズできます。
+3. テンプレートをカスタマイズする場合は、ページの下部 **にある [メール** 通知のカスタマイズ] をクリックします。 開くフライアウトでは、次の情報のみをカスタマイズできます。
 
     - フィッシング詐欺
     - 迷惑メール
@@ -74,6 +74,6 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
     - フッター
 
     > [!div class="mx-imgBorder"]
-    > ![ユーザーに送信するメッセージをカスタマイズします。](../../media/admin-review-customize-message.png)
+    > :::image type="content" source="../../media/admin-review-customize-message.png" alt-text="[確認メッセージのカスタマイズ] ページ" lightbox="../../media/admin-review-customize-message.png":::
 
 4. 完了したら、**[保存]** をクリックします。 これらの値をクリアするには、[ユーザー申請] **ページ** で **[破棄] をクリック** します。

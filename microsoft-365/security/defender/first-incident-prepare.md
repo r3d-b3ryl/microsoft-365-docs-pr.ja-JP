@@ -1,6 +1,6 @@
 ---
-title: 最初のインシデントのセキュリティ態勢を準備する
-description: 最初のインシデントMicrosoft 365、テナントのセキュリティ態勢を設定Microsoft 365 Defender。
+title: 初めてのインシデントに備え、セキュリティ体制を整える
+description: Microsoft 365 Defenderでの最初のインシデントに対して、Microsoft 365 テナントのセキュリティ体制を設定します。
 keywords: インシデント、アラート、調査、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,72 +22,72 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 92b7efdad61a4738310d5fb469400033f78363a8
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 0dbff9e88ed00dd8aa08fd64543266c3aef75d79
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64570153"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664086"
 ---
-# <a name="prepare-your-security-posture-for-your-first-incident"></a>最初のインシデントのセキュリティ態勢を準備する
+# <a name="prepare-your-security-posture-for-your-first-incident"></a>初めてのインシデントに備え、セキュリティ体制を整える
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-インシデント処理の準備には、さまざまな種類のセキュリティ インシデントから組織のネットワークを十分に保護する必要があります。 セキュリティ インシデントのリスクを軽減するために、国立標準技術研究所 (NIST) では、リスク評価、ホスト セキュリティの強化、ネットワークの安全な構成、マルウェアの防止など、いくつかのセキュリティプラクティスを推奨しています。 
+インシデント処理の準備には、さまざまな種類のセキュリティ インシデントから組織のネットワークを十分に保護する必要があります。 セキュリティ インシデントのリスクを軽減するために、米国標準技術研究所 (NIST) では、リスク評価、ホスト セキュリティの強化、ネットワークの安全な構成、マルウェアの防止など、いくつかのセキュリティプラクティスを推奨しています。
 
-Microsoft 365 Defender、インシデント防止のいくつかの側面に対処するのに役立ちます。 
+Microsoft 365 Defenderは、インシデント防止のいくつかの側面に対処するのに役立ちます。
 
-- カスタム フレームワーク[ゼロ トラスト](/security/zero-trust/)実装する
-- Microsoft Secure Score でスコアを割り当て、セキュリティの態勢 [を決定する](microsoft-secure-score.md)
-- 脅威と脆弱性管理の脆弱性評価による [脅威の防止](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
-- 最新のセキュリティ脅威を理解し、脅威分析を使用してセキュリティ脅威 [に備える](threat-analytics.md)
+- [ゼロ トラスト](/security/zero-trust/) フレームワークの実装
+- [Microsoft Secure](microsoft-secure-score.md) Score でスコアを割り当ててセキュリティ体制を決定する
+- [脅威と脆弱性管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)の脆弱性評価による脅威の防止
+- 脅威分析を使用して準備できるように、最新のセキュリティ[の脅威](threat-analytics.md)について理解する
 
-## <a name="step-1-implement-zero-trust"></a>手順 1. 実装ゼロ トラスト
+## <a name="step-1-implement-zero-trust"></a>手順 1. ゼロ トラストを実装する
 
-[ゼロ トラスト](/security/zero-trust/)は、モバイルワークフォース、ユーザー、デバイス、アプリケーション、データなど、モダン環境の複雑な性質を考慮した統合セキュリティ哲学とエンドツーエンド戦略です。 すべての検出を一貫した方法で管理するための単一のウィンドウを提供することで、Microsoft 365 Defender はセキュリティ運用チームが ゼロ トラスト のガイド原則を実装しやすくなります。[](/security/zero-trust/#guiding-principles-of-zero-trust) 
+[ゼロ トラスト](/security/zero-trust/)は、モバイル従業員やユーザー、デバイス、アプリケーション、データなど、あらゆる最新環境の複雑な性質を考慮した統合セキュリティ哲学とエンド ツー エンド戦略です。 すべての検出を一貫した方法で管理するための単一のウィンドウを提供することで、Microsoft 365 Defenderセキュリティ運用チームがゼロ トラストの[基本原則を](/security/zero-trust/#guiding-principles-of-zero-trust)実装しやすくなります。
 
-コンポーネントはMicrosoft 365 Defenderデータを統合することで、サーバーの条件付きアクセス ポリシーを確立するために実装されているゼロ トラスト違反を表示Microsoft Defender for Endpoint デバイス コンプライアンス ポリシーおよびデバイス ベースの条件付きアクセス ポリシーの実装の情報ソースとして、または他のモバイル セキュリティ ベンダー。 
+Microsoft 365 Defenderのコンポーネントは、Microsoft Defender for Endpointからのデータを統合することで、ゼロ トラストの条件付きアクセス ポリシーを確立するために実装されたルールの違反を表示できます。 またはデバイス コンプライアンス ポリシーの情報ソースとしての他のモバイル セキュリティ ベンダーや、デバイス ベースの条件付きアクセス ポリシーの実装。
 
-デバイスリスクは、そのデバイスのユーザーがアクセスできるリソースに直接影響します。 特定の条件に基づくリソースへのアクセス拒否は、ゼロ トラスト および Microsoft 365 Defender の主なテーマであり、信頼レベルの条件を決定するために必要な情報を提供します。 たとえば、Microsoft 365 Defender[脅威と脆弱性の管理] ページを使用してデバイスのソフトウェア バージョン レベルを提供し、条件付きアクセス ポリシーでは、古いバージョンまたは脆弱なバージョンのデバイスを制限できます。
+デバイス リスクは、そのデバイスのユーザーがアクセスできるリソースに直接影響します。 特定の条件に基づくリソースへのアクセス拒否は、ゼロ トラストの主なテーマであり、Microsoft 365 Defenderは信頼レベルの基準を決定するために必要な情報を提供します。 たとえば、Microsoft 365 Defenderは[脅威と脆弱性の管理] ページでデバイスのソフトウェア バージョン レベルを提供できます。条件付きアクセス ポリシーでは、バージョンが古い、または脆弱なデバイスが制限されます。
 
-自動化は、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数を減らしながら、ゼロ トラスト 環境を実装および保守する上で重要な部分です。 Microsoft 365 Defender のコンポーネントは、修復[アクション (Microsoft 365 Defender](m365d-autoir.md) ポータルのインシデントの調査と呼ばれる)、通知アクション、[ServiceNow](https://microsoft.service-now.com/sp/) などのサポート チケットの作成など、自動化できます。
+自動化は、ゼロ トラスト環境の実装と保守の重要な部分であり、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数を減らします。 Microsoft 365 Defenderのコンポーネントは、[修復アクション](m365d-autoir.md) (Microsoft 365 Defender ポータルでのインシデントの調査と呼ばれます)、通知アクション、[ServiceNow](https://microsoft.service-now.com/sp/) などのサポート チケットの作成など、自動化できます。
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2. 組織のセキュリティ体制を決定する
 
-次に、組織は Microsoft [Secure Score](microsoft-secure-score.md) を使用して、Microsoft 365 Defenderのセキュリティ態勢を判断し、改善方法に関する推奨事項を検討できます。 スコアが高いほど、組織によってセキュリティに関する推奨事項と改善のアクションが多くなります。 セキュリティで保護されたスコアの推奨事項は、さまざまな製品間で取り上げ、組織がスコアを上げるのをさらに高くすることができます。 
+次に、組織は、Microsoft 365 Defenderで [Microsoft Secure Score](microsoft-secure-score.md) を使用して、現在のセキュリティ体制を決定し、それを改善する方法に関する推奨事項を検討できます。 スコアが高いほど、組織によって実行されたセキュリティに関する推奨事項と改善アクションが多くなります。 セキュリティスコアに関する推奨事項は、さまざまな製品で取得でき、組織はスコアをさらに高くすることができます。
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Microsoft Secure Score ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/first-incident-prepare/first-incident-secure-score.png":::
- 
-## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>手順 3. 組織の脆弱性の暴露を評価する
+:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Microsoft 365 Defender ポータルの Microsoft Secure Score ページ" lightbox="../../media/first-incident-prepare/first-incident-secure-score.png":::
 
-インシデントを防止すると、セキュリティ運用の取り組みを合理化し、重要で重要なセキュリティ インシデントに集中できます。 ソフトウェアの脆弱性は、多くの場合、データの盗難、データの損失、またはビジネス操作の中断につながる可能性のある攻撃の予防可能なエントリ ポイントです。 攻撃が継続的に行なえない場合、セキュリティ運用は、組織内で許容できるレベルの脆弱性の暴露を達成し、維持するために [努力する必要](../defender-endpoint/tvm-exposure-score.md) があります。
+## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>手順 3. 組織の脆弱性の露出を評価する
 
-ソフトウェアの修正プログラムの進行状況を確認するには、[](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)Defender for Endpoint の [脅威と脆弱性の管理] ページにアクセスし、Microsoft 365 Defender [その他のリソース] タブから **アクセス** できます。
+インシデントを防ぐことは、セキュリティ運用の取り組みを効率化し、継続的な重大で重要なセキュリティ インシデントに焦点を当てるのに役立ちます。 多くの場合、ソフトウェアの脆弱性は、データの盗難、データの損失、または業務の中断につながる可能性がある攻撃の予防可能なエントリ ポイントです。 攻撃が進行中でない場合、セキュリティ操作は、組織で許容可能なレベルの [脆弱性にさらされるように](../defender-endpoint/tvm-exposure-score.md) 努める必要があります。
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="ポータル ポータルの [脅威とMicrosoft 365 Defender] ページ" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png"::: 
- 
-## <a name="4-understand-emerging-threats"></a>4. 新たな脅威を理解する
+ソフトウェアの修正プログラムの進行状況を確認するには、Defender for Endpoint の [[脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)] ページにアクセスします。このページには、Microsoft 365 Defenderから [**その他のリソース**] タブからアクセスできます。
 
-[Microsoft 365 Defenderポータル](threat-analytics.md)で脅威分析を使用して、現在のセキュリティ脅威の状況を最新の状態に保つ。 Microsoft のセキュリティ専門家は、最新のサイバー脅威を詳細に説明するレポートを作成し、Microsoft 365 サブスクリプション、デバイス、およびユーザーにどのような影響を与えるのか理解できます。 これらのレポートには、次のものが含まれます。
+:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Microsoft 365 Defender ポータル ポータルの [脅威と脆弱性] ページ" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png":::
+
+## <a name="4-understand-emerging-threats"></a>4. 新たな脅威について理解する
+
+Microsoft 365 Defender ポータルで[脅威分析](threat-analytics.md)を使用して、現在のセキュリティ脅威の状況を最新の状態に保ちます。 エキスパートの Microsoft セキュリティ研究者は、最新のサイバー脅威を詳細に説明するレポートを作成し、Microsoft 365サブスクリプション、デバイス、ユーザーにどのような影響を与えるかを理解できるようにします。 これらのレポートには、次のものが含まれます。
 
 - アクティブな脅威アクターとそのキャンペーン
-- 人気のある新しい攻撃手法
+- 一般的な攻撃手法と新しい攻撃手法
 - 重大な脆弱性
 - 一般的な攻撃対象領域
 - 流行しているマルウェア
 
-また、脅威分析では、構成とアラートを確認して、危険にさらされている方法と、レポートに適用されるアクティブなアラートが発生したかどうかを判断します。
+脅威分析では、構成とアラートも調べて、リスクの高い状況と、レポートに適用できるアクティブなアラートがあるかどうかを判断します。
 
-新たな脅威の推奨事項を実装して、セキュリティ体制を強化し、攻撃の表面領域を最小限に抑える。
+新たな脅威の推奨事項を実装して、セキュリティ体制を強化し、攻撃領域を最小限に抑えることができます。
 
-スケジュール内で、ポータルの [[脅威](threat-analytics.md)分析] セクションを定期的に確認Microsoft 365 Defenderします。 詳細については[、セキュリティ操作の例Microsoft 365 Defender](incidents-overview.md#example-security-operations-for-microsoft-365-defender)を参照してください。
+スケジュールに時間を取って、Microsoft 365 Defender ポータルの [Threat Analytics](threat-analytics.md) セクションを定期的に確認します。 詳細については、[Microsoft 365 Defenderのセキュリティ操作の例](incidents-overview.md#example-security-operations-for-microsoft-365-defender)を参照してください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-インシデントをトリアー [ジして分析する方法について学習します](first-incident-analyze.md)。
+[インシデントをトリアージして分析する](first-incident-analyze.md)方法について説明します。
 
 ## <a name="see-also"></a>関連項目
 

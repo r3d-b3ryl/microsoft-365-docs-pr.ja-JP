@@ -20,12 +20,12 @@ ms.custom:
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35aa801d0d981f68de5c62a1928e1f85d82ee95d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 44b1d86d441be5582b8c4b3381a383b2e03417a1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682397"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471541"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -142,7 +142,7 @@ _検疫ポリシー_ は、[サポートされている機能](quarantine-polici
 
 一覧から検疫済みメッセージを選択すると、表示される詳細ポップアップに次の情報が表示されます。
 
-![検疫済みメッセージの詳細ポップアップ。](../../media/quarantine-user-message-details.png)
+:::image type="content" source="../../media/quarantine-user-message-details.png" alt-text="検疫済みメッセージの詳細ポップアップ" lightbox="../../media/quarantine-user-message-details.png":::
 
 一覧でメール メッセージを選択すると、**[詳細]** ポップアップ ウィンドウにメッセージに関する次の詳細が表示されます。
 
@@ -161,7 +161,7 @@ _検疫ポリシー_ は、[サポートされている機能](quarantine-polici
 > [!NOTE]
 > 詳細ポップアップに留まり、表示される検疫済みメッセージを変更するには、ポップアップの上部にある上下の矢印を使用します。
 >
-> ![検疫済みメッセージの詳細ポップアップの上矢印と下矢印。](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="検疫済みメッセージの詳細ポップアップの上矢印と下矢印" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-email"></a>検疫済みメールを処理する
 
@@ -170,7 +170,7 @@ _検疫ポリシー_ は、[サポートされている機能](quarantine-polici
 
 一覧から検疫済みメッセージを選択すると、詳細ポップアップで次のアクションを使用できます。
 
-![検疫済みメッセージの詳細ポップアップで使用可能なアクション。](../../media/quarantine-user-message-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-user-message-details-flyout-actions.png" alt-text="検疫済みメッセージの詳細ポップアップで使用可能なアクション" lightbox="../../media/quarantine-user-message-details-flyout-actions.png":::
 
 - ![[メールのリリース] アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **メールのリリース**<sup>\*</sup>: 受信トレイにメッセージを配信します。
 
@@ -197,7 +197,8 @@ _検疫ポリシー_ は、[サポートされている機能](quarantine-polici
 > [!NOTE]
 > モバイル デバイスでは、説明テキストはアクション アイコン用に使用できません。
 >
-> ![使用可能なアクションが強調表示された検疫済みメッセージの詳細。](../../media/quarantine-user-message-details-flyout-mobile-actions.png)
+> :::image type="content" source="../../media/quarantine-user-message-details-flyout-mobile-actions.png" alt-text="使用可能なアクションが強調表示された検疫済みメッセージの詳細" lightbox="../../media/quarantine-user-message-details-flyout-mobile-actions.png":::
+
 >
 > アイコンの順序と対応する説明を次の表にまとめます。
 >
@@ -213,7 +214,7 @@ _検疫ポリシー_ は、[サポートされている機能](quarantine-polici
 
 最初の列の左側にある空白の領域をクリックして、一覧で複数の検疫済みメッセージ (最大 100) を選択すると、次の操作を実行できる **[一括操作]** ドロップダウン リストが表示されます。
 
-![検疫内のメッセージの [一括アクション] ドロップダウン リスト。](../../media/quarantine-user-message-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-user-message-bulk-actions.png" alt-text="検疫内のメッセージの [一括アクション] ドロップダウン リスト" lightbox="../../media/quarantine-user-message-bulk-actions.png":::
 
 - ![[メールを解放する] アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **メールを解放する**: 受信トレイにメッセージを配信します。
 - ![[検疫から削除] アイコン。](../../media/m365-cc-sc-delete-icon.png) **メッセージの削除**: 表示される警告で **[はい]** をクリックすると、メッセージは元の受信者に送信されずに検疫から直ちに削除されます。

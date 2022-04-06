@@ -1,6 +1,6 @@
 ---
-title: エンドポイント用 Microsoft Defender への切り替え - 準備
-description: Microsoft Defender for Endpoint に切り替える準備をします。 デバイスを更新し、ネットワーク接続を構成します。
+title: '[ファイルに切りMicrosoft Defender for Endpoint - 準備]'
+description: ユーザーに切り替える準備をMicrosoft Defender for Endpoint。 デバイスを更新し、ネットワーク接続を構成します。
 keywords: 移行、Microsoft Defender for Endpoint、ベスト プラクティス
 ms.prod: m365-security
 ms.technology: mde
@@ -21,16 +21,16 @@ ms.topic: article
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 11/30/2021
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: aa0bd45c1765e2aa794e00e437bf08a63d1d742f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 33ad09cb87c80aecbaa72ebe9fb2b6523962498f
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476733"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634429"
 ---
-# <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
+# <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>[次のMicrosoft Defender for Endpoint - フェーズ 1: 準備] に切り替えます。
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -64,9 +64,7 @@ ms.locfileid: "64476733"
 
 組織のデバイスの更新に関するヘルプが必要ですか? 以下のリソースを参照してください。
 
-<br/><br/>
-
-|OS|Resource|
+|OS|リソース|
 |---|---|
 |Windows|[Microsoft Update](https://www.update.microsoft.com)|
 |macOS|[Mac でソフトウェアを更新する方法](https://support.apple.com/HT201541)|
@@ -74,7 +72,7 @@ ms.locfileid: "64476733"
 |Android|[Android &更新する方法を確認する](https://support.google.com/android/answer/7680439)|
 |Linux|[Linux 101: システムの更新](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
 
-## <a name="get-microsoft-defender-for-endpoint"></a>エンドポイントの Microsoft Defender を取得する
+## <a name="get-microsoft-defender-for-endpoint"></a>Get Microsoft Defender for Endpoint
 
 組織のデバイスを更新したので、次の手順では、Defender for Endpoint を取得し、ライセンスを割り当て、サービスがプロビジョニングされているのを確認します。
 
@@ -99,12 +97,14 @@ ms.locfileid: "64476733"
 
 1. セキュリティ管理者とセキュリティオペレーターの役割とアクセス許可を計画します。 「 [役割ベースのアクセス制御」を参照してください](prepare-deployment.md#role-based-access-control)。
 
-2. RBAC を設定して構成します。 Intune を使用[して RBAC](/mem/intune/fundamentals/what-is-intune) を構成することをお勧めします。特に、組織でデバイス、macOS、iOS、および Android デバイスの組み合わせをWindows 10使用している場合。 [「Intune を使用した RBAC のセットアップ」を参照してください](/mem/intune/fundamentals/role-based-access-control)。
+2. RBAC を設定して構成します。 特に、組織[で](/mem/intune/fundamentals/what-is-intune) Intune、macOS、iOS、および Android デバイスの組み合わせを使用している場合は、WINDOWS 10を使用して RBAC を構成することをお勧めします。 詳細については[、「RBAC のセットアップ」を参照Intune](/mem/intune/fundamentals/role-based-access-control)。
 
-    組織で Intune 以外の方法が必要な場合は、次のいずれかのオプションを選択します。
+    組織で他の方法が必要なIntune、次のいずれかのオプションを選択します。
 
     - [Configuration Manager](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
+
     - [高度なグループ ポリシーの管理](/microsoft-desktop-optimization-pack/agpm)
+    
     - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
 
 3. ポータルへのアクセス権をMicrosoft 365 Defenderします。 (ヘルプが必要ですか? 「 [RBAC を使用したポータル アクセスの管理」を参照してください](rbac.md)。
@@ -113,19 +113,16 @@ ms.locfileid: "64476733"
 
 デバイスと Defender for Endpoint 間の通信を有効にするには、プロキシとインターネットの設定を構成します。 次の表に、さまざまなオペレーティング システムと機能のプロキシとインターネット設定を構成するために使用できるリソースへのリンクを示します。
 
-<br/><br/>
-
 |機能|オペレーティング システム|リソース|
 |---|---|---|
 |[エンドポイントの検出と応答](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information)以降<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)|[コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)|
 |EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
 |EDR|macOS (「 [システム要件」を参照)](microsoft-defender-endpoint-mac.md)|[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
-|[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)|
+|[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information)以降 <br/><br/>Windows Server 2022 <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> [Windows Server 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)|
 |ウイルス対策|macOS (「 [システム要件」を参照)](microsoft-defender-endpoint-mac.md)|[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
 |ウイルス対策|Linux (「 [システム要件」を参照](microsoft-defender-endpoint-linux.md#system-requirements))|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
 
-
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 **おめでとう** ございます! Defender for Endpoint への **切り替** えの [準備フェーズが完了しました](switch-to-mde-overview.md#the-migration-process)。
 

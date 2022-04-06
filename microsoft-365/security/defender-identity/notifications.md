@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fa740b483cd1a9591f7d4f7ef1961c5e96d4d44b
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 89ed7ae50bf89c28bde81ea02e8905d0056ede53
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682242"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470925"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Defender for Identity notifications in Microsoft 365 Defender
 
@@ -34,17 +34,18 @@ ms.locfileid: "63682242"
 
 1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>] で、[id **] 設定** に **移動します**。
 
-    ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
+  :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="[名前] 列の [ID] オプション" lightbox="../../media/defender-identity/settings-identities.png":::
+
 
 1. [正常性 **の問題の通知] を選択します**。
 
 1. 受信者のメール アドレスを入力します。 **[追加]** を選択します。
 
-    ![正常性の問題のメール アドレスを入力します。](../../media/defender-identity/health-email-recipient.png)
+   :::image type="content" source="../../media/defender-identity/health-email-recipient.png" alt-text="正常性が通知サブメニューアイテムを発行する" lightbox="../../media/defender-identity/health-email-recipient.png":::
 
 1. Defender for Identity が正常性の問題を検出すると、受信者は詳細を記載した電子メール通知を受信します。
 
-    ![正常性の問題の電子メールの例。](../../media/defender-identity/health-email.png)
+   :::image type="content" source="../../media/defender-identity/health-email.png" alt-text="正常性の問題の電子メール" lightbox="../../media/defender-identity/health-email.png":::
 
     > [!NOTE]
     > このメールには、問題に関する詳細を示す 2 つのリンクが記載されています。 MDI Health Center または **M365D の新しい正常性センターに移動できます**。
@@ -55,13 +56,13 @@ ms.locfileid: "63682242"
 
 1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>] で、[id **] 設定** に **移動します**。
 
-    ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="[ID] オプション" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. [アラート **通知] を選択します**。
 
 1. 受信者のメール アドレスを入力します。 **[追加]** を選択します。
 
-    ![検出されたアラートのメール アドレスを入力します。](../../media/defender-identity/alert-email-recipient.png)
+   :::image type="content" source="../../media/defender-identity/alert-email-recipient.png" alt-text="[アラート通知] サブメニュー アイテム" lightbox="../../media/defender-identity/alert-email-recipient.png":::
 
 ## <a name="syslog-notifications"></a>Syslog 通知
 
@@ -72,17 +73,17 @@ Defender for Identity は、指名されたセンサーを介して Syslog サ�
 
 1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>] で、[id **] 設定** に **移動します**。
 
-    ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="[名前] 列の [ID] のオプション" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. [ **Syslog 通知] を選択します**。
 
 1. syslog 通知を有効にするには、Syslog サービスの **トグルを** オンの位置に **設定** します。
 
-    ![syslog サービスを有効にする。](../../media/defender-identity/syslog-service.png)
+   :::image type="content" source="../../media/defender-identity/syslog-service.png" alt-text="有効にできる Syslog サービス オプション" lightbox="../../media/defender-identity/syslog-service.png":::
 
 1. [サービス **の構成] を選択します**。 ウィンドウが開き、syslog サービスの詳細を入力できます。
 
-    ![syslog サービスの詳細を入力します。](../../media/defender-identity/syslog-sensor.png)
+   :::image type="content" source="../../media/defender-identity/syslog-sensor.png" alt-text="Syslog サービスの詳細を入力するページ" lightbox="../../media/defender-identity/syslog-sensor.png":::
 
 1. 次の詳細を入力します。
 
@@ -97,7 +98,7 @@ Defender for Identity は、指名されたセンサーを介して Syslog サ�
 
 1. Syslog サービスを構成したら、 **Syslog** サーバーに送信する通知の種類 (アラートまたは正常性の問題) を選択できます。
 
-    ![Syslog サービスが構成されています。](../../media/defender-identity/syslog-configured.png)
+   :::image type="content" source="../../media/defender-identity/syslog-configured.png" alt-text="Syslog サービスが構成されているオプションがオン" lightbox="../../media/defender-identity/syslog-configured.png":::
 
 ## <a name="see-also"></a>関連項目
 

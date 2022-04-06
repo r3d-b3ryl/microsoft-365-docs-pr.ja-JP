@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8123b3602569ec1effcbf79cb12d242ab19d960e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680910"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472355"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>ゼロトラスト ID とデバイス アクセス ポリシーを実装するための前提条件作業
 
@@ -98,7 +98,7 @@ BYOD デバイスWindows、ユーザーは [仕事用または学校用 **アカ
 |Android|サポート|サポート|サポート|サポート|N/A|
 |iOS|サポート|サポート|サポート|サポート|N/A|
 |macOS|サポート|サポート|該当なし|該当なし|サポートされていません|
-|Linux|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
+|Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 のクライアント サポート
 
@@ -120,8 +120,8 @@ BYOD デバイスWindows、ユーザーは [仕事用または学校用 **アカ
 - 管理者の役割にのみ割り当てられている個別 [のMicrosoft 365を作成して](../../admin/add-users/about-admin-roles.md)*使用します*。 管理者は、通常の非管理用に独自のユーザー アカウントを持ち、役割またはジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。
 - 特権[アカウントをセキュリティ](/azure/active-directory/admin-roles-best-practices)で保護するためのベスト プラクティスに従Azure AD。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
-[![手順 2: 共通のゼロ信頼 ID を構成し、条件付きアクセス ポリシーにアクセスします。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![手順 2: 共通のゼロ信頼 ID を構成し、条件付きアクセス ポリシーにアクセスします。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
 
 [共通のゼロトラスト ID とデバイス アクセス ポリシーを構成する](identity-access-policies.md)

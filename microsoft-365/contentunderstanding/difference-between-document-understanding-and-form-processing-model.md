@@ -1,5 +1,5 @@
 ---
-title: ドキュメントの理解モデルとフォーム処理モデルの違い
+title: ドキュメント理解モデルとフォーム処理モデルの違い
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,20 +13,20 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
-ms.openlocfilehash: e5de4c55cc8a559ad03d722b1f7235797db76e07
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: ee51b60b69bc2ec489f074a73555cbc6f1a17143
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681284"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664637"
 ---
-# <a name="differences-between-document-understanding-and-form-processing-models"></a>ドキュメントの理解モデルとフォーム処理モデルの違い 
+# <a name="differences-between-document-understanding-and-form-processing-models"></a>ドキュメント理解モデルとフォーム処理モデルの違い 
 
-Microsoft SharePoint Syntex のコンテンツの理解により、SharePoint ドキュメント ライブラリにアップロードされたドキュメントを識別して分類し、各ファイルから関連情報を抽出できます。 たとえば、ファイルが SharePoint ドキュメントライブラリにアップロードされると、*発注書* として識別されたすべてのファイルがそのように分類され、カスタム ドキュメント ライブラリ ビューに表示されます。 さらに、各ファイルから特定の情報 (*PO番号* や *合計* など) を取得して、ドキュメントライブラリビューの列として表示できます。 
+Microsoft SharePoint Syntex でのコンテンツの理解により、SharePointドキュメント ライブラリにアップロードされたドキュメントを識別して分類し、各ファイルから関連情報を抽出できます。 たとえば、ファイルが SharePoint ドキュメントライブラリにアップロードされると、*発注書* として識別されたすべてのファイルがそのように分類され、カスタム ドキュメント ライブラリ ビューに表示されます。 さらに、各ファイルから特定の情報 (*PO番号* や *合計* など) を取得して、ドキュメントライブラリビューの列として表示できます。 
 
 コンテンツの理解により、必要な情報を特定して抽出するための *モデル* を作成できます。 モデルは、検索、ビジネスプロセス、コンプライアンス、およびその他の多くのビジネス問題の解決を支援する上で価値があります。
 
-使用できるカスタム モデルの種類は 2 種類です。
+使用できるカスタム モデルには、次の 2 種類があります。
 
 - [ドキュメント理解モデル](document-understanding-overview.md)
 - [フォーム処理モデル](form-processing-overview.md)
@@ -52,7 +52,7 @@ Microsoft SharePoint Syntex のコンテンツの理解により、SharePoint �
 > [!NOTE]
 > 入力ドキュメントの詳細については、[フォーム処理モデルの要件と制限](/ai-builder/form-processing-model-requirements)を参照してください。 
 
-フォーム処理モデルは PowerApps [AI ビルダー](/ai-builder/overview)で作成されますが、作成は SharePoint ドキュメント ライブラリから直接開始されます。 ドキュメント ライブラリでは、ユーザーがそのドキュメントのためにフォーム処理モデルを作成する前に、フォーム処理モデルの作成を有効にしておく必要があります。 管理者は、コンテンツの理解の管理設定でフォーム処理モデルの作成を有効にできます。 フォーム処理モデルは、Power Automateを使用して、ドキュメント ライブラリにアップロードされたファイルを処理します。
+フォーム処理モデルは PowerApps [AI ビルダー](/ai-builder/overview)で作成されますが、作成は SharePoint ドキュメント ライブラリから直接開始されます。 ドキュメント ライブラリでは、ユーザーがそのドキュメントのためにフォーム処理モデルを作成する前に、フォーム処理モデルの作成を有効にしておく必要があります。 管理者は、コンテンツの理解の管理設定でフォーム処理モデルの作成を有効にできます。 フォーム処理モデルでは、Power Automate フローを使用して、ドキュメント ライブラリにアップロードされたときにファイルを処理します。
 
 ドキュメント理解モデルを作成するときは、SharePoint コンテンツタイプギャラリーに保存される新しい [SharePoint コンテンツ タイプ](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)を作成します。 または、必要に応じて、既存のコンテンツタイプを使用してモデルを定義できます。
 
@@ -79,12 +79,12 @@ Microsoft SharePoint Syntex のコンテンツの理解により、SharePoint �
 | 分類の種類| 抽出するデータに関する手がかりをシステムに与える設定可能な分類子。| 機械教育を使用して、抽出するデータのドキュメントの場所を割り当てる、オプションの抽出子を備えたトレーニング可能な分類子。|
 | 場所 | 単一のドキュメント ライブラリ用にトレーニングされています。| 複数のライブラリに適用できます。|
 | サポートされているファイルの種類| PDF、JPG、PNG 形式、合計 50 MB および 500 ページでトレーニングします。| 否定的な例を含め、5 - 10 個の PDF、Office、またはメール ファイルでトレーニングします。<br>Office ファイルは 64k 文字で切り捨てられます。 OCR でスキャンされるファイルは 20 ページに制限されています。|
-| 管理メタデータとの統合 | いいえ | はい。設定された管理対象メタデータ フィールドを参照するエンティティ抽出子のトレーニングを行います。|
+| マネージド メタデータと統合する | いいえ | はい。設定された管理対象メタデータ フィールドを参照するエンティティ抽出子のトレーニングを行います。|
 | Microsoft Information Protection が有効になっている場合のコンプライアンス機能の統合 | 発行された保持ラベルを設定します。<br>秘密度ラベルを設定します。 | 発行された保持ラベルを設定します。<br>発行された秘密度ラベルを設定します。 |
 | サポートされる地域| フォーム処理は Power Platform に依存しています。 Power Platform と AI Builder のグローバルな可用性については、「[Power Platform の可用性](https://dynamics.microsoft.com/geographic-availability/)」を参照してください。 | すべての地域で利用可能です。|
 | トランザクション コスト | AI Builder クレジットを使用します。<br>クレジットは 1 M のバッチで購入できます。<br>300 以上の SharePoint Syntex ライセンスを購入すると、1 M のクレジットが含まれています。<br>1 M のクレジットで 2,000 ファイル ページの処理が可能になります。<br>| 該当なし |
 | 容量 | 既定の Power Platform 環境を使用します (Dataverse データベースをサポートするカスタム環境)。 | 容量制限はありません。|
-| サポートされている言語| 英語 <br>2022 年後半の予定: ラテンアルファベット言語 | モデルは、すべてのラテンアルファベット言語で動作します。 英語に加えて: ドイツ語、スウェーデン語、フランス語、スペイン語、イタリア語、およびポルトガル語。|
+| サポートされている言語| 73 以上の [言語の言語](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support)サポート。 | モデルは、すべてのラテンアルファベット言語で動作します。 英語に加えて: ドイツ語、スウェーデン語、フランス語、スペイン語、イタリア語、およびポルトガル語。|
 
 ## <a name="see-also"></a>関連項目
 

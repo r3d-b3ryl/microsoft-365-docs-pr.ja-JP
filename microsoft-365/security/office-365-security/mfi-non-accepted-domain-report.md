@@ -15,12 +15,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードの [非承諾ドメイン] レポートを使用して、送信者のドメインが Microsoft 365 で構成されていないオンプレミス組織からのメッセージを監視する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25a8b1adb882aa83861e936d48534fc0a5f826e4
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8f16dfbafa12080058cd1784120e4bc2157e0cff
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679678"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470837"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの非&レポート
 
@@ -35,7 +35,7 @@ ms.locfileid: "63679678"
 
 Microsoft 365の意図が悪意のあるものであることを証明するデータがある場合は、これらのメッセージを調整する可能性があります。 したがって、何が起こっているのかを理解し、問題を解決することが重要です。
 
-![セキュリティ センターコンプライアンス センターのメール フロー ダッシュボードの非&ウィジェット。](../../media/mfi-non-accepted-domain-report-widget.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-widget.png" alt-text="セキュリティ コンプライアンス センターの [メール フロー] ダッシュボードの [非&ウィジェット" lightbox="../../media/mfi-non-accepted-domain-report-widget.png":::
 
 ## <a name="report-view-for-the-non-accepted-domain-report"></a>非承諾ドメイン レポートのレポート ビュー
 
@@ -45,7 +45,7 @@ Microsoft 365の意図が悪意のあるものであることを証明するデ�
 
 グラフ内のデータ ポイント (日) にカーソルを合わせると、コネクタのメッセージの総数が表示されます。
 
-![[承認されていないドメイン] レポートのレポート ビュー。](../../media/mfi-non-accepted-domain-report-overview-view.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-overview-view.png" alt-text="[非承諾ドメイン] レポートの [レポート] ビュー" lightbox="../../media/mfi-non-accepted-domain-report-overview-view.png":::
 
 ## <a name="details-table-view-for-the-non-accepted-domain-report"></a>非承諾ドメイン レポートの詳細テーブル ビュー
 
@@ -69,7 +69,7 @@ Microsoft 365の意図が悪意のあるものであることを証明するデ�
 - **メッセージ数**
 - **サンプル メッセージ**: [サンプル メッセージの **表示] を** クリックすると [](message-trace-scc.md)、影響を受けるメッセージのサンプルのメッセージ トレース結果を確認できます。
 
-![[承認されていないドメイン] レポートの [詳細] テーブル ビューで行を選択した後の詳細フライアウト。](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-details-flyout.png" alt-text="[承認されていないドメイン] レポートの [詳細] テーブル ビューで行を選択した後の詳細フライアウト" lightbox="../../media/mfi-non-accepted-domain-report-details-flyout.png":::
 
 レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
 

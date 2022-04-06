@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint の新機能
-description: Microsoft Defender for Endpoint の最新リリースで一般的に利用可能な機能 (GA) と、Windows 10 および Windows サーバーのセキュリティ機能を参照してください。
-keywords: Microsoft Defender for Endpoint の新機能、ga、一般提供、機能、利用可能、新しい
+description: Microsoft Defender for Endpointの最新リリースで一般公開されている機能 (GA) と、Windows 10およびWindows サーバーのセキュリティ機能を確認します。
+keywords: Microsoft Defender for Endpoint、ga、一般公開、機能、利用可能、新規の新機能
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 37348d04002034b15c7b2d1d31b44dcedb795893
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 06018eb69e369b06425c9db1f63f22ff97f15eac
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327253"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664482"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -36,9 +36,9 @@ ms.locfileid: "62327253"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-次の機能は、Microsoft Defender for Endpoint の最新リリースのプレビュー機能または一般公開 (GA) です。
+次の機能は、Microsoft Defender for Endpointの最新リリースでプレビュー段階または一般公開 (GA) されています。
 
-プレビュー機能の詳細については、「プレビュー機能」 [を参照してください](preview.md)。
+プレビュー機能の詳細については、「 [プレビュー機能](preview.md)」を参照してください。
 
 > [!TIP]
 > RSS フィード: ご自身のフィード リーダーに次の URL をコピーして貼り付けると、このページの更新時に通知を受け取ることができます。
@@ -47,88 +47,88 @@ ms.locfileid: "62327253"
 > https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
-他の Microsoft Defender セキュリティ製品の新機能の詳細については、以下を参照してください。
+他の Microsoft Defender セキュリティ製品の新機能の詳細については、次を参照してください。
 
 - [Microsoft 365 Defender の新機能](../defender/whats-new.md)
 - [Microsoft Defender for Office 365 の新機能](../office-365-security/whats-new-in-defender-for-office-365.md)
-- [Microsoft Defender for Identity の新機能](/defender-for-identity/whats-new)
-- [新しい機能Microsoft Cloud App Security](/cloud-app-security/release-notes)
+- [Microsoft Defender for Identityの新機能](/defender-for-identity/whats-new)
+- [Microsoft Cloud App Securityの新機能](/cloud-app-security/release-notes)
 
-他のオペレーティング システム上の Microsoft Defender for Endpoint の詳細については、次の手順を実行します。
+他のオペレーティング システムでのMicrosoft Defender for Endpointの詳細については、次の手順を参照してください。
 
-- [MacOS の Defender for Endpoint の新機能](mac-whatsnew.md)
-- [iOS の Defender for Endpoint の新機能](ios-whatsnew.md)
+- [macOS 上の Defender for Endpoint の新機能](mac-whatsnew.md)
+- [iOS 上の Defender for Endpoint の新機能](ios-whatsnew.md)
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
 
 
 ## <a name="january-2022"></a>2022 年 1 月
 
-- 評価ラボの機能強化: ラボに 11 Windows Linux デバイスを追加できます。 
+- 評価ラボの機能強化: Windows 11デバイスと Linux デバイスをラボに追加できるようになりました。 
 
-- Android と iOS 脆弱性の管理の脅威と脅威が一般に利用可能になります。 [詳細情報](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663) を参照してください。
+- Android と iOS の脅威と脆弱性の管理が一般公開されるようになりました。 [詳細情報](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663) を参照してください。
 
 ## <a name="december-2021"></a>2021 年 12 月
 
-- 脅威と脅威脆弱性の管理アプリケーションとコンポーネントの Log4j の脆弱性を特定するのに役立ちます。 [詳細情報](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM) を参照してください。
+- 脅威と脆弱性の管理は、アプリケーションとコンポーネントの Log4j の脆弱性を特定するのに役立ちます。 [詳細情報](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM) を参照してください。
 
-- IoT デバイスの検出 (プレビュー): [デバイス](device-discovery.md) 検出で、企業ネットワークに接続されている管理されていない IoT デバイスを見つけるのに役立つ機能が追加されています。 これにより、他の IT デバイス (ワークステーション、サーバー、モバイル) と共に、IoT インベントリの単一の統合ビューが提供されます。
+- IoT デバイスの検出 (プレビュー): [デバイス検出](device-discovery.md) は、企業ネットワークに接続されているアンマネージド IoT デバイスを見つけるのに役立つようになりました。 これにより、他の IT デバイス (ワークステーション、サーバー、モバイル) と共に IoT インベントリを 1 つの統合ビューで表示できます。
 
-- [Microsoft Defender for IoT 統合 (プレビュー)](enable-microsoft-defender-for-iot-integration.md): この統合により、Microsoft Defender for IoT が提供するエージェントレス監視機能を使用して、デバイスの検出機能が強化されます。 これにより、ネットワーク内の IoT デバイスの検索、識別、セキュリティ保護に役立つ可視性が向上します。
+- [Microsoft Defender for IoT 統合 (プレビュー)](enable-microsoft-defender-for-iot-integration.md): この統合により、Microsoft Defender for IoT によって提供されるエージェントレス監視機能を使用して、デバイス検出機能が強化されます。 これにより、ネットワーク内の IoT デバイスの特定、識別、セキュリティ保護に役立つ可視性が向上します。
 
 ## <a name="november-2021"></a>2021 年 11 月
 
-- [セキュリティ構成管理](security-config-management.md) <br/> Microsoft エンドポイント マネージャー または Microsoft Intune または Microsoft Endpoint Configuration Manager によって管理されていないデバイスが、Microsoft Defender のセキュリティ構成を直接受信する機能エンドポイント マネージャー。
+- [セキュリティ構成管理](security-config-management.md) <br/> Microsoft IntuneまたはMicrosoft Endpoint Configuration ManagerのMicrosoft エンドポイント マネージャーによって管理されていないデバイスが Microsoft Defender のセキュリティ構成を直接受信する機能。エンドポイント マネージャー。
 
-- クロスプラットフォーム サポートの機能強化。
+- クロスプラットフォームサポートの機能強化。
 
 ## <a name="october-2021"></a>2021 年 10 月
 
-- [R2 と R2 のオンボーディングと機能のパリティWindows Server 2012更新Windows Server 2016 (プレビュー)](configure-server-endpoints.md)<br/> 新しい統合ソリューション パッケージを使用すると、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になります。 さらに、この統合ソリューション パッケージには、多くの新機能が追加されています。
+- [Windows Server 2012 R2 とWindows Server 2016のオンボードと機能パリティを更新しました (プレビュー)](configure-server-endpoints.md)<br/> 新しい統合ソリューション パッケージでは、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になります。 さらに、この統合ソリューション パッケージには、多くの新機能が追加されています。
 
-- Windows 11 のサポートが Microsoft Defender for Endpoint および Microsoft 365 Defender に追加されました。
+- Microsoft Defender for EndpointとMicrosoft 365 DefenderにWindows 11サポートが追加されました。
 
 ## <a name="september-2021"></a>2021 年 9 月
 
-- [Web コンテンツ フィルタリング](web-content-filtering.md) <br/>Microsoft Defender for Endpoint の Web 保護機能の一環として、Web コンテンツ フィルターを使用すると、組織のセキュリティ チームはコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 カテゴリには、アダルト コンテンツ、高帯域幅、法的責任、余暇、未分類が含まれます。 これらのカテゴリの 1 つ以上に分類される多くの Web サイトは悪意のあるものではない可能性があります。コンプライアンス規制、帯域幅の使用、その他の懸念により、問題が発生する可能性があります。 [Web コンテンツ フィルターの詳細について説明します](web-content-filtering.md)。
+- [Web コンテンツ フィルタリング](web-content-filtering.md) <br/>Microsoft Defender for Endpointの Web 保護機能の一環として、Web コンテンツ フィルターを使用すると、組織のセキュリティ チームは、コンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 カテゴリには、成人用コンテンツ、高帯域幅、法的責任、娯楽、分類されていないものなどがあります。 これらのカテゴリの 1 つ以上に分類される多くの Web サイトは悪意がない可能性がありますが、コンプライアンス規制、帯域幅の使用、またはその他の懸念のために問題が発生する可能性があります。 [Web コンテンツ のフィルター処理の詳細について説明します](web-content-filtering.md)。
 
 ## <a name="august-2021"></a>2021 年 8 月
 
-- (プレビュー) [Microsoft Defender for Endpoint Plan 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (プレビュー) は、次世代の保護、攻撃表面の縮小、集中管理とレポート作成、API を含むエンドポイント保護ソリューションです。 Defender for Endpoint Plan 1 (プレビュー) は、エンドポイント保護機能を試して、Microsoft 365 E3 を持ち、まだ Microsoft 365 E5 を持っていないお客様向け新しいサービスです。 
+- (プレビュー)[Microsoft Defender for Endpoint プラン 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (プレビュー) は、次世代の保護、攻撃面の削減、一元管理とレポート、API を含むエンドポイント保護ソリューションです。 Defender for Endpoint Plan 1 (プレビュー) は、エンドポイント保護機能を試したい、Microsoft 365 E3を持ち、まだMicrosoft 365 E5していないお客様向けの新しいオファリングです。 
 
-   詳細については、「 [Microsoft Defender for Endpoint Plan 1 (プレビュー)」を参照してください](defender-endpoint-plan-1.md)。 既存の [Defender for Endpoint](microsoft-defender-endpoint.md) 機能は、Defender for Endpoint Plan 2 と呼ばれる予定です。 
+   詳細については、「[Microsoft Defender for Endpoint プラン 1 (プレビュー)](defender-endpoint-plan-1.md)」を参照してください。 既存の [Defender for Endpoint](microsoft-defender-endpoint.md) 機能は、Defender for Endpoint プラン 2 と呼ばれます。 
 
-- (プレビュー) [Web コンテンツ フィルター](web-content-filtering.md)<br>  Web コンテンツ フィルターは、Microsoft Defender for Endpoint の Web 保護機能の一部です。 これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。
+- (プレビュー) [Web コンテンツ フィルター](web-content-filtering.md)<br>  Web コンテンツ のフィルター処理は、Microsoft Defender for Endpointの Web 保護機能の一部です。 これにより、組織は、コンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡し、規制することができます。 これらの Web サイトの多くは、悪意はありませんが、コンプライアンス規制、帯域幅の使用、またはその他の懸念のために問題が発生する可能性があります。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
-- (プレビュー) [デバイスの正常性とコンプライアンス レポート](machine-reports.md) <br>  デバイスの正常性とコンプライアンス レポートは、組織内のデバイスに関する高レベルの情報を提供します。
+- (プレビュー) [デバイスの正常性とコンプライアンス レポート](machine-reports.md) <br>  デバイスの正常性とコンプライアンス レポートには、組織内のデバイスに関する高度な情報が表示されます。
 
 ## <a name="june-2021"></a>2021 年 6 月
 
-- [デルタ エクスポート ソフトウェアの脆弱性評価](get-assessment-methods-properties.md#31-methods) API <br> 脆弱性とセキュリティで保護された構成 API コレクションのエクスポート [評価に](get-assessment-methods-properties.md) 加えて。 <br> デバイス別に組織のソフトウェア脆弱性評価のスナップショット全体を取得するために使用される完全なソフトウェア脆弱性評価 (JSON 応答) とは異なり、デルタ エクスポート API 呼び出しは、選択した日付と現在の日付 ("デルタ" API 呼び出し) の間に発生した変更のみを取得するために使用されます。 毎回大量のデータを含む完全なエクスポートを取得する代わりに、新規、固定、および更新された脆弱性に関する特定の情報のみを取得します。 デルタ エクスポート API 呼び出しを使用して、「修正された脆弱性の数」や「組織に追加された新しい脆弱性の数」など、さまざまな KPI を計算することもできます。
+- [Delta Export ソフトウェアの脆弱性評価](get-assessment-methods-properties.md#31-methods) API <br> [脆弱性とセキュリティで保護された構成 API コレクションのエクスポート評価に](get-assessment-methods-properties.md)加えて。 <br> 完全なソフトウェア脆弱性評価 (JSON 応答) とは異なり、これは、デバイス別に組織のソフトウェア脆弱性評価のスナップショット全体を取得するために使用されます。差分エクスポート API 呼び出しは、選択した日付と現在の日付 ("delta" API 呼び出し) の間に発生した変更のみをフェッチするために使用されます。 毎回大量のデータを含む完全なエクスポートを取得する代わりに、新しい脆弱性、修正された脆弱性、更新された脆弱性に関する特定の情報のみを取得します。 Delta export API 呼び出しを使用して、「修正された脆弱性の数」や「組織に追加された新しい脆弱性の数」など、さまざまな KPI を計算することもできます。
 
-- [脆弱性とセキュリティで保護された構成の評価をエクスポートする](get-assessment-methods-properties.md) API <br> デバイス単位でデータを取得脅威と脆弱性の管理 API のコレクションを追加します。 さまざまな種類のデータを取得するためのさまざまな API 呼び出しがあります。セキュリティで保護された構成評価、ソフトウェア インベントリ評価、およびソフトウェアの脆弱性評価。 各 API 呼び出しには、組織内のデバイスに必要なデータが含まれる。
+- [脆弱性とセキュリティで保護された構成の評価をエクスポートする](get-assessment-methods-properties.md) API <br> デバイスごとにデータをプル脅威と脆弱性の管理 API のコレクションを追加します。 セキュリティで保護された構成評価、ソフトウェア インベントリの評価、ソフトウェアの脆弱性の評価など、さまざまな種類のデータを取得するための API 呼び出しが異なります。 各 API 呼び出しには、組織内のデバイスに必要なデータが含まれています。
 
-- [修復アクティビティ](get-remediation-methods-properties.md) API <br> テナントで作成された修復アクティビティを脅威と脆弱性の管理応答を含む API のコレクションを追加します。 応答情報の種類には、ID による 1 つの修復アクティビティ、すべての修復アクティビティ、および 1 つの修復アクティビティの公開されたデバイスが含まれます。
+- [修復アクティビティ](get-remediation-methods-properties.md) API <br> テナントに作成された脅威と脆弱性の管理修復アクティビティを含む応答を含む API のコレクションを追加します。 応答情報の種類には、ID 別の 1 つの修復アクティビティ、すべての修復アクティビティ、および 1 つの修復アクティビティの公開デバイスが含まれます。
 
-- [デバイス検出](device-discovery.md) <br> 追加のアプライアンスや面倒なプロセス変更を必要とせずに、企業ネットワークに接続されている管理されていないデバイスを見つけるのに役立ちます。 オンボード デバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。 その後、検出されたデバイスをオンボードして、ネットワークに管理されていないエンドポイントを持つことに関連するリスクを軽減できます。
+- [デバイス検出](device-discovery.md) <br> 余分なアプライアンスや煩雑なプロセス変更を必要とせずに、会社のネットワークに接続されているアンマネージド デバイスを見つけるのに役立ちます。 オンボードされたデバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。 その後、検出されたデバイスをオンボードして、ネットワーク内にアンマネージド エンドポイントを持つことに関連するリスクを軽減できます。
 
    > [!IMPORTANT]
-   > 標準検出は、2021 年 7 月 19 日からすべてのユーザーの既定のモードになります。 基本モードは、[設定] ページで保持できます。
+   > Standard Discovery は、2021 年 7 月 19 日からのすべてのお客様の既定のモードになります。 [設定] ページで、基本モードを保持することを選択できます。
 
-- [デバイス グループ定義には、](/microsoft-365/security/defender-endpoint/machine-groups) 条件ごとに複数の値を含めることができます。 複数のタグ、デバイス名、ドメインを 1 つのデバイス グループの定義に設定できます。
+- [デバイス グループ定義に、](/microsoft-365/security/defender-endpoint/machine-groups) 条件ごとに複数の値を含めることができるようになりました。 複数のタグ、デバイス名、ドメインを 1 つのデバイス グループの定義に設定できます。
 
-- [モバイル アプリケーション管理のサポート](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> この機能強化により、Intune がモバイル アプリケーションの管理に使用されている場合に、Microsoft Defender for Endpoint が管理アプリケーション内で組織のデータを保護できます。 モバイル アプリケーション管理の詳細については、このドキュメント [を参照してください](/microsoft-365/mem/intune/apps/mam-faq)。
+- [モバイル アプリケーション管理のサポート](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> この機能強化により、Intuneがモバイル アプリケーションの管理に使用されている場合に、マネージド アプリケーション内で組織のデータを保護Microsoft Defender for Endpointできます。 モバイル アプリケーション管理の詳細については、 [このドキュメントを参照してください](/microsoft-365/mem/intune/apps/mam-faq)。
 
-- [Microsoft Tunnel VPN 統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN 機能は、Android 用 Microsoft Defender for Endpoint アプリと統合されました。 この統合により、組織は 1 つのセキュリティ アプリでエンド ユーザー エクスペリエンスを簡素化できます。モバイル脅威防御とモバイル デバイスからプレムリソースにアクセスする機能の両方を提供し、セキュリティチームと IT チームは、使い慣れた管理者エクスペリエンスを維持できます。
+- [Microsoft Tunnel VPN 統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN 機能が Android 用Microsoft Defender for Endpointアプリと統合されるようになりました。 この統合により、組織は 1 つのセキュリティ アプリでシンプルなエンド ユーザー エクスペリエンスを提供できます。モバイル脅威の防御とモバイル デバイスからオンプレミスのリソースにアクセスする機能の両方を提供し、セキュリティチームと IT チームは、使い慣れた管理者エクスペリエンスを維持できます。
 
-- [iOS での脱獄の検出](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> iOS 上の Microsoft Defender for Endpoint の脱獄検出機能が一般提供されました。 これにより、既に存在するフィッシング保護が追加されます。  詳細については、「デバイス リスク信号 [に基づく条件付きアクセス ポリシーのセットアップ」を参照してください](/microsoft-365/security/defender-endpoint/ios-configure-features)。
+- [iOS での脱獄検出](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> iOS でのMicrosoft Defender for Endpointでの脱獄検出機能が一般公開されました。 これにより、既に存在するフィッシング保護が追加されます。  詳細については、「 [デバイス リスク信号に基づいて条件付きアクセス ポリシーを設定する](/microsoft-365/security/defender-endpoint/ios-configure-features)」を参照してください。
 
 
 ## <a name="march-2021"></a>2021 年 3 月
-- [ポータルを使用して改ざん防止をMicrosoft 365 Defenderする](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Windows 10、Windows Server 2016、Windows Server 2019、Windows Server 2022 のタンパープロテクション設定は、テナント接続というメソッドを使用して *管理できます*。
+- [Microsoft 365 Defender ポータルを使用して改ざん防止を管理する](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> *テナントアタッチ* と呼ばれるメソッドを使用して、Windows 10、Windows Server 2016、Windows Server 2019、Windows Server 2022 で改ざん防止設定を管理できます。
 
 
 ## <a name="january-2021"></a>2021 年 1 月
 
-- [Azure 仮想デスクトップ](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint が Azure Virtual Desktop のサポートを追加しました。
+- [Azure 仮想デスクトップ](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint Azure Virtual Desktop のサポートが追加されました。

@@ -21,12 +21,12 @@ ms.custom: ''
 description: 管理者は、セキュリティ設定を昇格し、組織の優先度アカウントに関するレポート、アラート、および調査Microsoft 365できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f27e146df680b36c117816f0a07e45e0345c647a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c997f38e06444aab8ff6de550759959eb8f71d9f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675418"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470771"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 の優先アカウントのセキュリティに関する推奨事項
 
@@ -36,7 +36,7 @@ ms.locfileid: "63675418"
 
 Microsoft 365 Microsoft Defender for Office 365には、優先度アカウントに追加のセキュリティ層を提供するいくつかの主要な機能が含まれている必要があります。 この記事では、これらの機能とそれらを使用する方法について説明します。
 
-![アイコン 形式のセキュリティ推奨事項の概要。](../../media/security-recommendations-for-priority-users.png)
+:::image type="content" source="../../media/security-recommendations-for-priority-users.png" alt-text="アイコン フォームのセキュリティ推奨事項の概要" lightbox="../../media/security-recommendations-for-priority-users.png":::
 
 |タスク|すべてのOffice 365 Enterpriseプラン|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
@@ -105,7 +105,7 @@ Harvard Kennedy School [Cybersecurity キャンペーン](https://www.belfercent
 
 Microsoft 365、組織内のユーザーに通知するための次のリソースを提供します。
 
-|概念|関連情報|[説明]|
+|概念|リソース|説明|
 |---|---|---|
 |Microsoft 365|[カスタマイズ可能な学習経路](/office365/customlearning/)|これらのリソースは、組織内のユーザーのトレーニングをまとめる上で役立ちます。|
 |Microsoft 365 セキュリティ|[ラーニングモジュール: 組み込みのインテリジェント なセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365)|このモジュールを使用すると、セキュリティMicrosoft 365機能がどのように機能するのかについて説明し、これらのセキュリティ機能の利点を明確にできます。|

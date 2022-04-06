@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a82d49e7ac6f87847e7ac61cc4451ad63c2bdeef
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f65b48f37d1cf141611af075e55328226db6c6bd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168392"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471585"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>露出スコア - 脅威と脆弱性の管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "61168392"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-露出スコアは、ポータルの[[脅威と脆弱性の管理]](tvm-dashboard-insights.md)ダッシュボードにMicrosoft 365 Defenderされます。 これは、組織がサイバーセキュリティの脅威に対してどのように脆弱かを反映しています。 露出スコアが低いということは、デバイスが悪用の影響を受けやすいという意味です。
+露出スコアは、セキュリティ ポータルの [[](tvm-dashboard-insights.md)脅威と脆弱性の管理] ダッシュボードMicrosoft 365 Defender表示されます。 これは、組織がサイバーセキュリティの脅威に対してどのように脆弱かを反映しています。 露出スコアが低いということは、デバイスが悪用の影響を受けやすいという意味です。
 
 - 組織のセキュリティの状態に関する高レベルのテイクアウトを迅速に理解し、特定します。
 - 現在の状態を改善するために調査またはアクションが必要な領域を検出して対応します。
@@ -43,7 +43,7 @@ ms.locfileid: "61168392"
 
 このカードは、時間の流れによる露出スコアの傾向を高レベルで表示します。 グラフ内のスパイクは、サイバーセキュリティの脅威に対する高い暴露を視覚的に示し、さらに調査することができます。
 
-![露出スコア カード。](images/tvm_exp_score.png)
+:::image type="content" source="images/tvm_exp_score.png" alt-text="露出スコアカード" lightbox="images/tvm_exp_score.png":::
 
 ## <a name="how-it-works"></a>しくみ
 
@@ -57,9 +57,9 @@ ms.locfileid: "61168392"
 
 ## <a name="reduce-your-threat-and-vulnerability-exposure"></a>脅威と脆弱性の暴露を減らす
 
-セキュリティに関する推奨事項を修正することで、脅威と脆弱性の暴露 [を削減します](tvm-security-recommendation.md)。 最も重要なセキュリティ推奨事項を修復して、露出スコアに最も大きな影響を与えます。これは、脅威と脆弱性の管理[ダッシュボードで確認できます](tvm-dashboard-insights.md)。
+セキュリティに関する推奨事項を修正することで、脅威と脆弱性の暴露 [を削減します](tvm-security-recommendation.md)。 最も重要なセキュリティ推奨事項を修復して、露出スコアに最も影響を与えるのは、ダッシュボードで脅威と脆弱性の管理[してください](tvm-dashboard-insights.md)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)

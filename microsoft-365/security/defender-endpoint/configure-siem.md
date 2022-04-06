@@ -1,7 +1,7 @@
 ---
-title: SIEM ツールをユーザー設定と統合Microsoft Defender for Endpoint
-description: インシデントとアラートを取り込み、SIEM ツールを統合する方法について学習します。
-keywords: siem、セキュリティ情報とイベント管理ツール、splunk、arcsight、カスタム インジケーター、rest API、アラート定義、侵害の指標を構成する
+title: SIEM ツールとMicrosoft Defender for Endpointを統合する
+description: インシデントとアラートを取り込み、SIEM ツールを統合する方法について説明します。
+keywords: siem、セキュリティ情報とイベント管理ツール、splunk、arcsight、カスタム インジケーター、rest API、アラート定義、侵害のインジケーターを構成する
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed88048b506ecfcddb8394667e7d800927fc1d83
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: d679ac0d01a7e922e49b72b574a43e6f684179f9
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634913"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664504"
 ---
-# <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>SIEM ツールをユーザー設定と統合Microsoft Defender for Endpoint
+# <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>SIEM ツールとMicrosoft Defender for Endpointを統合する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,61 +36,61 @@ ms.locfileid: "64634913"
 
 > [!NOTE]
 >
-> [Microsoft Defender for Endpointアラートは](alerts.md)、デバイス上で発生した 1 つ以上の疑わしいイベントまたは悪意のあるイベントとその関連する詳細から構成されます。 アラート Microsoft Defender for Endpoint API は、アラートの使用に関する最新の API であり、各アラートに関連する証拠の詳細な一覧を含む。 詳細については、「Alert メソッドと[プロパティ」および「List alerts」](alerts.md)[を参照してください](get-alerts.md)。
+> [Microsoft Defender for Endpoint アラート](alerts.md)は、デバイスで発生した 1 つ以上の疑わしいイベントまたは悪意のあるイベントとその関連する詳細から構成されます。 Microsoft Defender for Endpointアラート API は、アラートを使用するための最新の API であり、各アラートに関連する証拠の詳細な一覧が含まれています。 詳細については、「 [アラートのメソッドとプロパティ」と](alerts.md) 「 [アラートの一覧表示](get-alerts.md)」を参照してください。
 
-Microsoft Defender for Endpointは、登録されたユーザーの OAuth 2.0 認証プロトコルを使用して、Azure Active Directory (AAD) のエンタープライズ テナントから情報を取り込むセキュリティ情報とイベント管理 (SIEM) ツールをサポートAAD 環境にインストールされている特定の SIEM ソリューションまたはコネクタを表すアプリケーション。
+Microsoft Defender for Endpointでは、登録済みAADの OAuth 2.0 認証プロトコルを使用して、Azure Active Directory (AAD) でエンタープライズ テナントから情報を取り込むセキュリティ情報とイベント管理 (SIEM) ツールがサポートされます 環境にインストールされている特定の SIEM ソリューションまたはコネクタを表すアプリケーション。
 
 詳細については、以下を参照してください。
 
-- [Microsoft Defender for Endpoint API ライセンスと使用条件](api-terms-of-use.md) 
+- [Microsoft Defender for Endpoint API のライセンスと使用条件](api-terms-of-use.md) 
 - [Microsoft Defender for Endpoint API にアクセスする](apis-intro.md)
-- [Hello World例 (アプリケーションをアプリケーションに登録する方法Azure Active Directory)](api-hello-world.md)
+- [Hello World例 (Azure Active Directoryにアプリケーションを登録する方法について説明します)](api-hello-world.md)
 - [アプリケーション コンテキストでアクセスする](exposed-apis-create-app-webapp.md)
 
 
-Microsoft Defender for Endpointは、現在、次の SIEM ソリューション統合をサポートしています。 
+Microsoft Defender for Endpointは現在、次の SIEM ソリューション統合をサポートしています。 
 
-- [ユーザーからのインシデントとアラートの取り込みMicrosoft 365 Defender、Microsoft Defender for Endpointおよびアラート REST API](#ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis)
-- [イベント ストリーミング API Microsoft Defender for EndpointイベントMicrosoft 365 Defender取り込む](#ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api)
+- [Microsoft 365 Defenderからインシデントとアラートを取り込み、インシデントをMicrosoft Defender for Endpointし、REST API にアラートを送信する](#ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis)
+- [Microsoft 365 Defender イベント ストリーミング API からのMicrosoft Defender for Endpoint イベントの取り込み](#ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api)
 
-## <a name="ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis"></a>ユーザーからのインシデントとアラートの取り込みMicrosoft 365 Defender、Microsoft Defender for Endpointおよびアラート REST API
+## <a name="ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis"></a>Microsoft 365 Defenderからインシデントとアラートを取り込み、インシデントをMicrosoft Defender for Endpointし、REST API にアラートを送信する
 
-### <a name="ingesting-incidents-from-the-microsoft-365-defender-incidents-rest-api"></a>REST API からインシデントMicrosoft 365 Defender取り込む
+### <a name="ingesting-incidents-from-the-microsoft-365-defender-incidents-rest-api"></a>Microsoft 365 Defender インシデント REST API からのインシデントの取り込み
 
-インシデント API の詳細については、「Microsoft 365 Defenderメソッドとプロパティ[」を参照してください](../defender/api-incident.md)。
+Microsoft 365 Defenderインシデント API の詳細については、「[インシデントのメソッドとプロパティ](../defender/api-incident.md)」を参照してください。
 
-### <a name="ingesting-alerts-from-the-microsoft-defender-for-endpoint-alerts-rest-api"></a>REST API に対する通知Microsoft Defender for Endpoint取り込む
+### <a name="ingesting-alerts-from-the-microsoft-defender-for-endpoint-alerts-rest-api"></a>Microsoft Defender for Endpoint アラート REST API からアラートを取り込む
 
-アラート API の詳細については、「Microsoft Defender for Endpointのメソッド[とプロパティ」を参照してください](alerts.md)。
+Microsoft Defender for Endpoint アラート API の詳細については、「[アラートのメソッドとプロパティ](alerts.md)」を参照してください。
 
-## <a name="siem-tool-integration-with-microsoft-defender-for-endpoint"></a>SIEM ツールとツールのMicrosoft Defender for Endpoint
+## <a name="siem-tool-integration-with-microsoft-defender-for-endpoint"></a>SIEM ツールとMicrosoft Defender for Endpointの統合
 
 ### <a name="splunk"></a>Splunk
 
-以下をMicrosoft 365 Defender Splunk 用のアドオンを使用します。
+サポートする Splunk 用のMicrosoft 365 Defender アドオンの使用:
 
-- アラートMicrosoft Defender for Endpoint取り込む
-- Splunk 内からMicrosoft Defender for Endpointアラートを更新する
+- Microsoft Defender for Endpointアラートの取り込み
+- Splunk 内からMicrosoft Defender for Endpointのアラートを更新する
 
-Splunk 用のMicrosoft 365 Defender詳細については、「[splunkbase」を参照してください](https://splunkbase.splunk.com/app/4959/)。
+Splunk 用のMicrosoft 365 Defender アドオンの詳細については、「[splunkbase](https://splunkbase.splunk.com/app/4959/)」を参照してください。
 
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 
-Microsoft 365 Defender 用の新しい SmartConnector は、Microsoft Defender for Endpoint を含むすべての Microsoft 365 Defender 製品からのアラートを含むインシデントを ArcSight に取り込み、これらを Common Event Framework (CEF) にマップします。
+Microsoft 365 Defender用の新しい SmartConnector は、Microsoft Defender for Endpointからのアラートを含むすべてのMicrosoft 365 Defender製品からのアラートを含むインシデントを ArcSight に取り込み、これらを Common Event Framework (CEF) にマップします。
 
-新しい ArcSight SmartConnector for Microsoft 365 Defender [ArcSight 製品のドキュメントを参照してください](https://www.microfocus.com/documentation/arcsight/arcsight-smartconnectors/microsoft-365-defender/index.html)。
+新しい ArcSight SmartConnector for Microsoft 365 Defenderの詳細については、[ArcSight 製品のドキュメントを参照してください](https://www.microfocus.com/documentation/arcsight/arcsight-smartconnectors/microsoft-365-defender/index.html)。
 
-SmartConnector は、以前の FlexConnector のデータをMicrosoft 365 Defender。
+SmartConnector は、以前の FlexConnector をMicrosoft 365 Defenderに置き換えます。
 
 ### <a name="ibm-qradar"></a>IBM QRadar
 
 >[!NOTE]
->IBM QRadar Microsoft 365 Defender との統合 (Microsoft Defender for Endpoint を含む) は、Microsoft 365 Defender デバイス サポート モジュール (DSM) でサポートされています。[Microsoft 365 Defenderを含](../defender/streaming-api.md)む、他の製品からストリーミング イベント データMicrosoft 365 Defender取り込Microsoft Defender for Endpoint。 新しい QRadar Microsoft 365 Defender DSM の詳細については、「[IBM QRadar](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender) 製品ドキュメント」、およびストリーミング API でサポートされるイベントの種類の詳細については、「サポートされるイベントの種類」[を参照](../defender/supported-event-types.md)してください。
+>IBM QRadar と Microsoft 365 Defender の統合(Microsoft Defender for Endpointを含む)は、次のように呼び出す新しいMicrosoft 365 Defenderデバイス サポート モジュール (DSM) によってサポートされるようになりました。[Microsoft Defender for Endpoint](../defender/streaming-api.md)を含むMicrosoft 365 Defender製品からストリーミング イベント データを取り込むストリーミング API をMicrosoft 365 Defenderします。 新しい QRadar Microsoft 365 Defender DSM の詳細については、「[IBM QRadar 製品ドキュメント」を参照](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender)し、Streaming API でサポートされるイベントの種類の詳細については、「[サポートされているイベントの種類](../defender/supported-event-types.md)」を参照してください。
 
-新しい顧客は、以前の QRadar Microsoft Defender ATP デバイス サポート モジュール (DSM) を使用してオンボードされなくなりました。既存のお客様は、新しい Microsoft 365 Defender DSM をすべての Microsoft 365 Defender 製品との統合の単一ポイントとして採用してください。
+新しい顧客は、以前の QRadar Microsoft Defender ATP デバイス サポート モジュール (DSM) を使用してオンボードされなくなり、既存のお客様は、すべてのMicrosoft 365 Defender製品との統合のシングル ポイントとして新しいMicrosoft 365 Defender DSM を採用することをお勧めします。
 
-## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>イベント ストリーミング API Microsoft Defender for EndpointイベントMicrosoft 365 Defender取り込む
+## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Microsoft 365 Defender イベント ストリーミング API からのMicrosoft Defender for Endpoint イベントの取り込み
 
-Microsoft 365 Defenderストリーミング イベント データには、Microsoft Defender 製品や他の Microsoft Defender 製品からのMicrosoft Defender for Endpointその他のイベントが含まれます。 これらのイベントは、アカウントまたはアカウントにAzure StorageストリーミングAzure Event Hubs。 イベント ハブを介した統合モデルは、現在 Splunk と IBM QRadar でサポートされています。
+Microsoft 365 Defenderストリーミング イベント データには、Microsoft Defender for Endpointおよびその他の Microsoft Defender 製品からのアラートやその他のイベントが含まれます。 これらのイベントは、Azure Storage アカウントまたはAzure Event Hubsにストリーミングできます。 現在、イベント ハブを介した統合モデルは、Splunk と IBM QRadar によってサポートされています。
 
-詳細については、「SIEM 統合[のMicrosoft 365 Defender参照してください](../defender/configure-siem-defender.md)。
+詳細については、「[MICROSOFT 365 DEFENDER SIEM 統合」を](../defender/configure-siem-defender.md)参照してください。

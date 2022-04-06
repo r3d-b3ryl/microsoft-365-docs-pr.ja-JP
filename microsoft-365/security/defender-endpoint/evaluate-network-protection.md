@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: c43fdfe746575837e8e5c8f36992f5fa6e2fec96
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: df79062d1dafcd8d82dfa4ff9b9847ff4fad1775
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679502"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476139"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 
@@ -62,7 +62,7 @@ ms.locfileid: "63679502"
 
     ネットワーク接続が許可され、テスト メッセージが表示されます。
     
-    ![[接続がブロックされました] という通知の例: IT 管理者が、このネットワークWindows セキュリティをブロックする原因になります。 IT ヘルプ デスクにお問い合わせください。](images/np-notif.png)
+    :::image type="content" source="images/np-notif.png" alt-text="接続のブロック通知" lightbox="images/np-notif.png":::
 
 > [!NOTE]
 > ネットワーク保護によってサイトがブロックされている場合でも、ネットワーク接続は成功する可能性があります。 詳細については、「ネットワーク保護 [と TCP 3 ウェイ ハンドシェイク」を参照してください](network-protection.md#network-protection-and-the-tcp-three-way-handshake)。
@@ -71,7 +71,7 @@ ms.locfileid: "63679502"
 
 ブロックされたアプリを確認するには、Microsoft-Windows-Windows Defender/運用ログでイベント ビューアーを開き、イベント ID 1125 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
 
-| イベント ID | 提供/ソース | [説明] |
+| イベント ID | 提供/ソース | 説明 |
 |---|---|---|
 | 5007 | Windows Defender (運用) | 設定が変更された場合のイベント |
 | 1125 | Windows Defender (運用) | ネットワーク接続が監査された場合のイベント |

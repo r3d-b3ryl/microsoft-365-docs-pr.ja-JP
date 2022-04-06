@@ -1,7 +1,7 @@
 ---
 title: エンドポイント API で Microsoft Defender を使用する
 ms.reviewer: ''
-description: ユーザーなしで Microsoft Defender for Endpoint にプログラムWindowsアクセスを取得するネイティブ アプリを設計する方法について説明します。
+description: ユーザーなしで Microsoft Defender for Endpoint にプログラムWindowsアクセスするには、ネイティブ アプリを設計する方法について説明します。
 keywords: apis, graph api, サポートされている API, アクター, アラート, デバイス, ユーザー, ドメイン, IP, ファイル, 高度なハンティング, クエリ
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f6cc0ea9cac46fa2e6ad2b5fe56422683d4a3e28
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 752e08d3fddb28b7d30122281009e54fc235b129
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284663"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471211"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>エンドポイント API で Microsoft Defender を使用する
 
@@ -39,11 +39,11 @@ ms.locfileid: "61284663"
 
 このページでは、ユーザーに代わって Defender for Endpoint へのプログラムによるアクセスを取得するアプリケーションを作成する方法について説明します。
 
-ユーザーなしで Microsoft Defender for Endpoint にプログラムでアクセスする必要がある場合は、「Access Microsoft Defender for Endpoint with application [context」を参照してください](exposed-apis-create-app-webapp.md)。
+ユーザーなしで Microsoft Defender for Endpoint にプログラムでアクセスする必要がある場合は、「Access [Microsoft Defender for Endpoint with application context」を参照してください](exposed-apis-create-app-webapp.md)。
 
 必要なアクセスが分からない場合は、[概要] ページをお [読みください](apis-intro.md)。
 
-Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API を使用すると、Microsoft Defender for Endpoint の機能に基づいてワークフローを自動化し、革新することができます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については[、「OAuth 2.0 Authorization Code Flow」 を参照してください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API を使用すると、Microsoft Defender for Endpoint の機能に基づいてワークフローを自動化し、革新することができます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については、「[OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般に、API を使用するには、次の手順を実行する必要があります。
 
@@ -51,11 +51,11 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 - このアプリケーションを使用してアクセス トークンを取得する
 - トークンを使用して Defender for Endpoint API にアクセスする
 
-このページでは、アプリケーションを作成しAAD、エンドポイント用 Microsoft Defender へのアクセス トークンを取得し、トークンを検証する方法について説明します。
+このページでは、アプリケーションを作成しAAD、Microsoft Defender for Endpoint へのアクセス トークンを取得し、トークンを検証する方法について説明します。
 
 > [!NOTE]
 > ユーザーに代わって Microsoft Defender for Endpoint API にアクセスする場合は、適切なアプリケーションアクセス許可とユーザーアクセス許可が必要です。
-> Microsoft Defender for Endpoint のユーザーアクセス許可に精通していない場合は、「役割ベースのアクセス制御を使用してポータル アクセスを管理する」 [を参照してください](rbac.md)。
+> Microsoft Defender for Endpoint のユーザーアクセス許可に精通していない場合は、「役割ベースのアクセス制御を使用してポータル アクセスを管理する [」を参照してください](rbac.md)。
 
 > [!TIP]
 > ポータルでアクションを実行するアクセス許可がある場合は、API でアクションを実行するアクセス許可を持つ必要があります。
@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 2. [アプリの **登録Azure Active Directory** \> **新しい登録]** \> **に移動します**。
 
-   :::image type="content" alt-text="アプリケーションの登録Microsoft Azureナビゲーションのイメージ。" source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="[アプリの登録] ページ (Microsoft Azureポータル)" lightbox="images/atp-azure-new-app2.png":::
 
 3. [**アプリケーションの登録**] ページが表示されたら、以下のアプリケーションの登録情報を入力します。
    - **名前** - アプリのユーザーに表示されるわかりやすいアプリケーション名を入力します。
@@ -92,7 +92,7 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 4. アプリケーションが Microsoft Defender for Endpoint にアクセスし、"アラートの読み取り" アクセス許可を割り当てるのを許可します。
 
-   - アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API を選択します。組織で \>  \> WindowsDefenderATP >を使用し **、WindowsDefenderATP** で選択します。 
+   - アプリケーション ページで、[**API アクセス** \>  \>許可の追加] アクセス許可 API を選択します。組織で **WindowsDefenderATP** >種類を使用し、**WindowsDefenderATP で選択します**。
 
      > [!NOTE]
      > *WindowsDefenderATP* は元のリストには表示されません。 テキスト ボックスに名前を書き始め、表示を確認します。
@@ -101,15 +101,15 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
    - [ **委任されたアクセス許可]** \> **[Alert.Read] を選択>** アクセス許可 **の追加] を選択します**。
 
-      :::image type="content" alt-text="アプリケーションのアクセス許可。" source="images/application-permissions-public-client.png" lightbox="images/application-permissions-public-client.png":::
+      :::image type="content" source="images/application-permissions-public-client.png" alt-text="アプリケーションの種類とアクセス許可ウィンドウ" lightbox="images/application-permissions-public-client.png":::
 
    > [!IMPORTANT]
    > 関連するアクセス許可を選択します。 アラートの読み取りは、一例にすのみです。
 
-     例:
+     次に例を示します。
 
      - 高度 [なクエリを実行するには、[](run-advanced-query-api.md)高度な **クエリの実行] アクセス許可を選択** します。
-     - デバイス [を分離するには、[コンピューターのアクセス](isolate-machine.md)許可 **を分離する] を** 選択します。
+     - デバイス [を分離するには、[コンピューターの](isolate-machine.md)アクセス許可 **を分離する] を** 選択します。
      - 必要なアクセス許可を確認するには、呼 **び** 出す API の [アクセス許可] セクションを表示します。
 
    - [同意 **の付与] を選択します**。
@@ -117,13 +117,13 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
       > [!NOTE]
       > アクセス許可を追加する度に、新しい **アクセス許可を** 有効にするための同意の付与を選択する必要があります。
 
-      ![アクセス許可の付与のイメージ。](images/grant-consent.png)
+      :::image type="content" source="images/grant-consent.png" alt-text="[グランド管理者の同意] オプション" lightbox="images/grant-consent.png":::
 
 5. アプリケーション ID とテナント ID を書き出します。
 
     アプリケーション ページで、[概要] に移動 **し** 、次の情報をコピーします。
 
-    :::image type="content" alt-text="作成されたアプリ ID のイメージ。" source="images/app-and-tenant-ids.png" lightbox="images/app-and-tenant-ids.png":::
+    :::image type="content" source="images/app-and-tenant-ids.png" alt-text="作成されたアプリ ID"  lightbox="images/app-and-tenant-ids.png":::
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
@@ -180,15 +180,15 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 - 目的のアプリのアクセス許可を持つ 'scp' クレームを取得する方法を確認します。
 - 以下のスクリーンショットでは、チュートリアルでアプリから取得したデコードされたトークンを確認できます。
 
-  :::image type="content" alt-text="トークン検証のイメージ。" source="images/nativeapp-decoded-token.png" lightbox="images/nativeapp-decoded-token.png":::
+  :::image type="content" source="images/nativeapp-decoded-token.png" alt-text="トークン検証ページ" lightbox="images/nativeapp-decoded-token.png":::
 
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>トークンを使用して Microsoft Defender for Endpoint API にアクセスする
 
-- 使用する API を選択します 。 サポートされている [Microsoft Defender for Endpoint API](exposed-apis-list.md)。
+- 使用する API - サポートされている [Microsoft Defender for Endpoint API を選択します](exposed-apis-list.md)。
 - 送信する HTTP 要求の承認ヘッダーを "Bearer {token}" に設定します (ベアラーは承認スキームです)。
 - トークンの有効期限は 1 時間です (同じトークンで複数の要求を送信できます)。
 
-- 次のコマンドを使用してアラートの一覧を取得する要求を送信 **するC#。**
+- 次のコマンドを使用してアラートの一覧を取得する要求を送信 **C#**。
 
     ```csharp
     var httpClient = new HttpClient();

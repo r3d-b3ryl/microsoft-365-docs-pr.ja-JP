@@ -1,6 +1,6 @@
 ---
 title: Jamf グループでデバイス グループをPro
-description: MacOS 上の Microsoft Defender for Endpoint Pro Jamf Proデバイス グループをセットアップする方法について説明します。
+description: MacOS の Microsoft Defender for Endpoint Pro Jamf Proをセットアップする方法について説明します。
 keywords: device, group, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3b9d6255320b5d702768614059bb9edff28be3b3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: c22a1a68af2722e6b17d155a37632c1f6417b605
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767642"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471761"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Jamf デバイス グループの macOS デバイス グループで Microsoft Defender for Endpoint をセットアップPro
 
@@ -33,21 +33,21 @@ ms.locfileid: "62767642"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-グループ ポリシーの組織単位 (OUs)、Microsoft Endpoint Configuration Managerコレクション、Intune のデバイス グループに似たデバイス グループを設定します。
+グループ ポリシー組織単位 (OUs)、デバイス コレクション、Intune のMicrosoft Endpoint Configuration Managerに似たデバイス グループを設定します。
 
 1. [静的コンピューター **グループ] に移動します**。
 
 2. [**新規**]を選択します。 
 
-    ![Jamf Pro1 のイメージ。](images/jamf-pro-static-group.png)
+   :::image type="content" source="images/jamf-pro-static-group.png" alt-text="Jamf Pro1 ページ" lightbox="images/jamf-pro-static-group.png":::
 
 3. 表示名を指定し、[保存] を **選択します**。
 
-    ![Jamf Pro2 のイメージ。](images/jamfpro-machine-group.png)
+   :::image type="content" source="images/jamfpro-machine-group.png" alt-text="Jamf Pro2 ページ" lightbox="images/jamfpro-machine-group.png":::
 
 4. これで、[静的コンピューター グループ] の下 **に Contoso のコンピューター** **グループが表示されます**。
 
-    ![Jamf Pro3 の画像。](images/contoso-machine-group.png)
+   :::image type="content" source="images/contoso-machine-group.png" alt-text="Jamf Pro3 ページ" lightbox="images/contoso-machine-group.png":::
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 - [Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro](mac-jamfpro-policies.md)

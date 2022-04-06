@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f228d0ca44589b9c140226c2b39984c717c7d9f8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: e2ebdffa171266fdc0ec77047c9fecc5be9e56ba
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766070"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471167"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のアラートを調査する
 
@@ -52,7 +52,7 @@ ms.locfileid: "62766070"
 > [!NOTE]
 > [アラート ストーリー] セクションには複数のアラートが含まれている場合があります。選択したアラートの前または後に、同じ実行ツリーに関連する追加のアラートが表示されます。
 
-![アラートにフォーカスがあるアラート ストーリーと、展開されたカードの例です。](images/alert-story-tree.png)
+:::image type="content" source="images/alert-story-tree.png" alt-text="アラートにフォーカスが入ったアラート ストーリーと、いくつかの拡張カード" lightbox="images/alert-story-tree.png":::
 
 ## <a name="take-action-from-the-details-pane"></a>詳細ウィンドウからアクションを実行する
 
@@ -62,11 +62,11 @@ ms.locfileid: "62766070"
 
 真のアラートとして分類する場合は、下の図に示すように、決定を選択できます。
 
-![解決済みアラートと判定ドロップダウンが展開された詳細ウィンドウのスニペット。](images/alert-details-resolved-true.png)
+:::image type="content" source="images/alert-details-resolved-true.png" alt-text="解決済みアラートと決定ドロップダウンが展開された詳細ウィンドウ" lightbox="images/alert-details-resolved-true.png":::
 
 業務用アプリケーションで誤ったアラートが発生している場合は、この種類のアラートを今後回避するために抑制ルールを作成します。
 
-![抑制ルールが強調表示された詳細ウィンドウのアクションと分類。](images/alert-false-suppression-rule.png)
+:::image type="content" source="images/alert-false-suppression-rule.png" alt-text="抑制ルールが強調表示された詳細ウィンドウのアクションと分類" lightbox="images/alert-false-suppression-rule.png":::
 
 > [!TIP]
 > 上記に記載されていない問題が 🙂 発生した場合は、ボタンを使用してフィードバックを提供するか、サポート チケットを開きます。

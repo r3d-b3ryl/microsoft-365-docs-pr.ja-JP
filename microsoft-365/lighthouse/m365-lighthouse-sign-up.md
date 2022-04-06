@@ -17,18 +17,18 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
-ms.openlocfilehash: 2607a131908a06ec4b7072cbf718739e1db00ad7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 25ad88edc63d53e3c9110062a64285bbb759a775
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326959"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645182"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
 
-この記事では、ユーザーにサインアップする方法について説明Microsoft 365 Lighthouse。 Microsoft 365 Lighthouse は、Managed Service Providers (MSP) が Microsoft 365 Business Premium または Microsoft 365 E3 を使用している中小企業 (SMB) のお客様向けデバイス、データ、およびユーザーを大規模に保護および管理するのに役立つ管理ポータルです。 
+この記事では、ユーザーにサインアップする方法について説明Microsoft 365 Lighthouse。 Microsoft 365 Lighthouse は、管理サービス プロバイダー (MSP) が、Microsoft 365 Business Premium、Microsoft 365 E3、またはを使用している中小企業 (SMB) のお客様向けデバイス、データ、およびユーザーのセキュリティ保護と管理に役立つ管理ポータルです。Windows 365 Business。 
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 - &mdash;Microsoft 365 Lighthouseパートナー テナントにのみ展開されますが、ユーザーと顧客テナントが Microsoft 365 Lighthouse 要件に記載されている要件[を満たしていることを確認](m365-lighthouse-requirements.md)します。
 
@@ -68,4 +68,4 @@ ms.locfileid: "63326959"
 
 [データのMicrosoft 365 Lighthouse](m365-lighthouse-overview.md) (記事)   
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)   
-[Microsoft 365 Lighthouse Microsoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md) (記事)
+[Microsoft 365 LighthouseとMicrosoft Defender für Unternehmen](../security/defender-business/mdb-lighthouse-integration.md) (記事)

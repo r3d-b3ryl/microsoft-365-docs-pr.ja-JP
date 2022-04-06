@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint API 接続とエンドポイント API Power BI
+title: Microsoft Defender for Endpoint API からエンドポイント API への接続Power BI
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint API の上に Power Business Intelligence (BI) レポートを作成します。
 keywords: apis、サポートされている api、Power BI、レポート
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 765af5e4a2e880aa9b6c1208495537ad8cf5f26b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4cad6fd5188745773ce561d1db697989598a1dc5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165116"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472157"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>ユーザー設定を使用してカスタム レポートをPower BI
 
@@ -40,19 +40,19 @@ ms.locfileid: "61165116"
 
 このセクションでは、Defender for Endpoint API の上にPower BIレポートを作成する方法について説明します。
 
-最初の例は、Power BI を Advanced Hunting API に接続する方法を示し、2 番目の例では、マシン アクションやアラートなどの OData API への接続を示しています。
+最初の例は、Power BIを Advanced Hunting API に接続する方法を示し、2 番目の例では、マシン アクションやアラートなどの OData API への接続を示しています。
 
 ## <a name="connect-power-bi-to-advanced-hunting-api"></a>Connect Power BI高度なハンティング API へのアクセス
 
-- Microsoft ファイルを開Power BI
+- Microsoft ファイルを開Power BI。
 
-- [データ **の空のクエリ** \> **の取得] をクリックします。**
+- [データ **の空のクエリの** \> **取得] をクリックします**。
 
-  ![空のクエリを作成するイメージ。](images/power-bi-create-blank-query.png)
+  :::image type="content" source="images/power-bi-create-blank-query.png" alt-text="[データの取得] メニュー項目の [空のクエリ] オプション" lightbox="images/power-bi-create-blank-query.png":::
 
-- [高度 **なエディター] をクリックします。**
+- [高度 **なエディター] をクリックします**。
 
-  ![開いている高度なエディターのイメージ。](images/power-bi-open-advanced-editor.png)
+  :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="[高度なエディター] メニュー項目" lightbox="images/power-bi-open-advanced-editor.png":::
 
 - 以下をコピーし、エディターに貼り付けます。
 
@@ -94,23 +94,24 @@ ms.locfileid: "61165116"
     in Table
 ```
 
-- [完了] を **クリックします。**
+- **[完了]** をクリックします。
 
-- [資格情報 **の編集] をクリックします。**
+- [資格情報 **の編集] をクリックします**。
 
-    ![編集資格情報 0 のイメージ。](images/power-bi-edit-credentials.png)
+    :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="[資格情報の編集] メニュー項目" lightbox="images/power-bi-edit-credentials.png":::
+    
 
-- [ **組織アカウント]** \> **[サインイン] の選択**
+- [ **組織アカウント] [** \> **サインイン] を選択します**。
 
-    ![set credentials1 のイメージ。](images/power-bi-set-credentials-organizational.png)
+    :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="[組織アカウント] メニュー項目の [サインイン] オプション" lightbox="images/power-bi-set-credentials-organizational.png":::
 
-- 資格情報を入力し、サインインを待つ
+- 資格情報を入力し、サインインするのを待ちます。
 
-- [次 **Connect**
+- **[接続]** をクリックします。
 
-    ![set credentials2 のイメージ。](images/power-bi-set-credentials-organizational-cont.png)
+    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="[組織アカウント] メニュー項目のサインイン確認メッセージ" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
-- これでクエリの結果がテーブルとして表示され、その上にビジュアライゼーションのビルドを開始できます。
+- これでクエリの結果が表として表示され、その上に視覚化を作成できます。
 
 - このテーブルを複製し、名前を変更し、高度な検索クエリを内部で編集して、必要なデータを取得できます。
 
@@ -130,18 +131,18 @@ ms.locfileid: "61165116"
         Source
 ```
 
-- アラートとコンピューターでも同 **じ操作** を **実行できます**。
-- クエリ フィルターに OData クエリを使用することもできます [。「Using OData Queries」を参照してください。](exposed-apis-odata-samples.md)
+- アラートとコンピューターでも同 **じ操作を****実行できます**。
+- また、クエリ フィルターに OData クエリを使用することもできます。「 [Using OData Queries」を参照してください](exposed-apis-odata-samples.md)。
 
-## <a name="power-bi-dashboard-samples-in-github"></a>Power BIダッシュボードのサンプルをGitHub
+## <a name="power-bi-dashboard-samples-in-github"></a>Power BIダッシュボードのサンプルのGitHub
 
-詳細については、「レポート テンプレートのPower BI[を参照してください](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
+詳細については、「レポート テンプレートPower BI[参照してください](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
 
 ## <a name="sample-reports"></a>サンプル レポート
 
-レポート サンプルの Microsoft Defender for Endpoint Power BI表示します。 詳細については、「Browse [code samples 」を参照してください](/samples/browse/?products=mdatp)。
+レポート サンプルの Microsoft Defender for Endpoint Power BI表示します。 詳細については、「Browse [code samples」を参照してください](/samples/browse/?products=mdatp)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [エンドポイント API の Defender](apis-intro.md)
 - [高度な追求 API](run-advanced-query-api.md)
