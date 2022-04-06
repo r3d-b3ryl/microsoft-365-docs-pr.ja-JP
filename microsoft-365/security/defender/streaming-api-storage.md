@@ -1,5 +1,5 @@
 ---
-title: ユーザー Microsoft 365 DefenderアカウントにイベントをStorageする
+title: イベントMicrosoft 365 DefenderアカウントにStorageする
 description: 詳細ハンティング イベントを Microsoft 365 Defenderアカウントにストリーミングする方法をStorageします。
 keywords: raw data export, Streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 159b4a41d423c2a7af3d367185e29af35a378b6b
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: ed62807c0efc7003bab8fc725c2753c3d91ef1d6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963109"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501225"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>高度Microsoft 365 Defenderイベントを自分のアカウントにストリーミングするStorage構成する
 
@@ -38,22 +38,22 @@ ms.locfileid: "60963109"
 
 1. テナントに[Storageアカウント](/azure/storage/common/storage-account-overview)を作成します。
 
-2. Azure テナントに [ログイン](https://ms.portal.azure.com/)し、[サブスクリプション] > サブスクリプション > リソース プロバイダー> **Microsoft.インサイト** に登録します。
+2. Azure テナントにログインし、[[サブスクリプション](https://ms.portal.azure.com/)] > > リソース プロバイダー> Microsoft **.インサイトに登録** します。
 
 ## <a name="enable-raw-data-streaming"></a>生データ ストリーミングを有効にする
 
-1. *グローバル管理者 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> _***セキュリティ** 管理者 **として _ログイン_ します。
+1. *Global Administrator_ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> _*_Security_ **Administrator****としてログインします。
 
-2. [ストリーミング API \> **設定Microsoft 365 Defender]** \> **に移動します**。 ストリーミング API ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/settings/mtp_settings/raw_data_export> 。
+2. [ストリーミング API **設定** \> **Microsoft 365 Defender** \> **] に移動します**。 ストリーミング API ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/settings/mtp_settings/raw_data_export>。
 
 3. **[追加]** をクリックします。
 
 4. 表示される **[新しいストリーミング API 設定の追加** ] フライアウトで、次の設定を構成します。
    1. **名前**: 新しい設定の名前を選択します。
-   2. [イベント **を転送する] をAzure Storage** します。
-   3. 表示される **[Storage リソース ID]** ボックスに、アカウント リソース ID Storage **入力します**。 アカウント リソース ID をStorageするには、Azure portal を開き、[Storage アカウント] をクリックして、[プロパティ] タブに移動し、[アカウント リソース **ID]** の下Storage <https://portal.azure.com>  \> \> **コピーします**。
+   2. [イベント **を転送する] をAzure Storage**。
+   3. 表示される **[Storage リソース ID**] ボックスに、アカウント リソース **ID Storage入力します**。 アカウント リソース **ID を取得Storage** Azure portal <https://portal.azure.com> \> \> を開き、[Storage アカウント] をクリックして、[プロパティ] タブの [アカウント リソース **ID**] の下のStorageコピーします。
 
-      ![イベント ハブ リソース ID1 のイメージ。](../defender-endpoint/images/storage-account-resource-id.png)
+      :::image type="content" source="../defender-endpoint/images/storage-account-resource-id.png" alt-text="アカウント Storage ID" lightbox="../defender-endpoint/images/storage-account-resource-id.png":::
 
    4. [新しい **ストリーミング API 設定の追加] フライアウトに** 戻り、ストリーミング **するイベント** の種類を選択します。
 
@@ -63,7 +63,7 @@ ms.locfileid: "60963109"
 
 - BLOB コンテナーは、イベントの種類ごとに作成されます。
 
-  ![イベント ハブ リソース ID2 のイメージ。](../defender-endpoint/images/storage-account-event-schema.png)
+  :::image type="content" source="../defender-endpoint/images/storage-account-event-schema.png" alt-text="BLOB コンテナーの例" lightbox="../defender-endpoint/images/storage-account-event-schema.png":::
 
 - BLOB 内の各行のスキーマは、次の JSON です。
 
@@ -80,13 +80,13 @@ ms.locfileid: "60963109"
 
 - 各行には、イベント名、Defender for Endpoint がイベントを受信した時刻、そのイベントが属するテナント (テナントからのみイベントを取得する)、および JSON 形式のイベントが "properties" と呼ばれるプロパティで含まれる。
 
-- イベントのスキーマの詳細については、「高度なMicrosoft 365 Defender概要[」を参照してください](../defender/advanced-hunting-overview.md)。
+- イベントのスキーマの詳細については、「高度なMicrosoft 365 Defender[概要」を参照してください](../defender/advanced-hunting-overview.md)。
 
 ## <a name="data-types-mapping"></a>データ型マッピング
 
 イベント プロパティのデータ型を取得するには、次の操作を行います。
 
-1. ログインして <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">[Microsoft 365 Defender</a>高度なハンティング **]** \> **に移動します**。 [高度な検索] ページに **直接移動するには** 、次の<security.microsoft.com/advanced-hunting>。
+1. ログイン <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">して [Microsoft 365 Defender</a>高度な狩 **猟] に** \> **移動します**。 [高度な検索] ページ **に直接移動するには** 、次の<security.microsoft.com/advanced-hunting>。
 
 2. [クエリ **] タブ** で、次のクエリを実行して、各イベントのデータ型マッピングを取得します。
 
@@ -98,11 +98,11 @@ ms.locfileid: "60963109"
 
 - デバイス情報イベントの例を次に示します。
 
-  ![イベント ハブ リソース ID3 のイメージ。](../defender-endpoint/images/machine-info-datatype-example.png)
+  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="デバイス情報クエリの例" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度なハンティングの概要](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defenderストリーミング API](streaming-api.md)
-- [Azure Microsoft 365 Defenderアカウントにイベントをストリーミングする](streaming-api-storage.md)
+- [Azure Microsoft 365 Defenderにイベントをストリーミングする](streaming-api-storage.md)
 - [Azure Storageアカウントのドキュメント](/azure/storage/common/storage-account-overview)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 112bfd63a5f3667b22378790b62f3e33fba784d6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 413c4fadcc6de3527643be712713d37a1e2c346c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320299"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501137"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>フィッシングメール攻撃の例
 
@@ -40,27 +40,27 @@ Microsoft 365 Defenderメール経由で配信される悪意のある添付フ�
 
 たとえば、アナリストに複数ステージのインシデントが割り当てられたとします。
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="複数ステージのインシデントの例。"::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="複数ステージのインシデント" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-incident.png":::
 
 インシデントの **[アラート**] タブに、Defender for Office 365 Microsoft Defender for Cloud Apps からのアラートが表示されます。 アナリストは、電子メール メッセージ通知を選択して、Office 365の Defender にドリルダウンできます。 アラートの詳細がサイド ウィンドウに表示されます。
 
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="電子メール通知の例。":::
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="電子メール通知" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png":::
  
 さらに下にスクロールすると、より多くの情報が表示され、影響を受ける悪意のあるファイルとユーザーが表示されます。
 
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="電子メール アラートのユーザーとファイルへの影響の例。":::
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="電子メールアラートのユーザーとファイルの影響" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-impact.png":::
   
 [アラート **を開く] ページ** を選択すると、特定のアラートに移動し、リンクを選択することでさまざまな情報を詳細に表示できます。 実際の電子メール メッセージは、パネルの下部に向かって **[エクスプローラー** でメッセージを表示する] を選択して表示できます。
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="アラートの詳細の例。"::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="アラートの詳細" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png"::: 
 
 これにより、アナリストが [脅威の管理] ページに移動し、電子メールの件名、受信者、送信者、その他の情報が表示されます。 **[特別な** アクション **] の下の** ZAP は、ゼロ時間自動削除機能が実装されたとアナリストに指示します。 ZAP は、組織全体のメールボックスから悪意のあるメッセージやスパム メッセージを自動的に検出して削除します。 詳細については、「ゼロ時間自動削除 [(ZAP)」を参照Exchange Online](../office-365-security/zero-hour-auto-purge.md)。
 
 [アクション] を選択すると、特定のメッセージに対して他のアクションを実行 **できます**。 
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="他のアクションの例は、電子メール メッセージに対して実行できます。"::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="電子メール メッセージに対して実行できるその他のアクション" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-actions.png"::: 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 ID ベース [の攻撃調査パスを](first-incident-path-identity.md) 参照してください。
 

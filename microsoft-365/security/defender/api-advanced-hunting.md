@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 94ce63f30b0016a920fdca60dd10b486922ffa32
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 05957fcf7cf2b3b03fbc757fc8b21e67156b285a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172281"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500829"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender高度なハンティング API
 
@@ -50,24 +50,24 @@ ms.locfileid: "62172281"
 3. テナントごとに 1 分あたり最大 45 回の通話を行います。
 4. テナントが 100% に達した場合、次の 15 分のサイクル終了までクエリはブロックされます。
 5. 1 つの要求が 10 分以上実行された場合、その要求はタイム アウトし、エラーを返します。
-6. HTTP 応答コードは、送信された要求の数または割り当てられた実行時間のいずれかによって、クォータに達 `429` したかどうかを示します。 応答本文を読んで、到達した制限を理解します。 
+6. HTTP `429` 応答コードは、送信された要求の数または割り当てられた実行時間のいずれかによって、クォータに達したかどうかを示します。 応答本文を読んで、到達した制限を理解します。 
 
 > [!NOTE]
 > 上記のすべてのクォータ (たとえば、1 分あたり 15 回の呼び出し) はテナント サイズごとに設定されます。 これらのクォータは最小です。
 
 ## <a name="permissions"></a>アクセス許可
 
-高度な検索 API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については[、「Access the Microsoft 365 Defender保護 API」を参照してください。](api-access.md)
+高度な検索 API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Access the Microsoft 365 Defender保護 API」を参照してください。](api-access.md)
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 -|-|-
-アプリケーション | AdvancedHunting.Read.All | 高度なクエリを実行する
-委任 (職場または学校のアカウント) | AdvancedHunting.Read | 高度なクエリを実行する
+アプリケーション | AdvancedQuery.Read.All| 高度なクエリを実行する
+委任 (職場または学校のアカウント) | AdvancedQuery.Read | 高度なクエリを実行する
 
 >[!Note]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
->- ユーザーは、"データの表示" ロールを持AD必要があります
+>- ユーザーが 'データの表示' ロールを持AD
 >- ユーザーは、デバイス グループの設定に基づいて、デバイスにアクセスする必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
@@ -87,13 +87,13 @@ Content-Type | application/json
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 種類 | 説明
+パラメーター | 型 | 説明
 -|-|-
 Query | テキスト | 実行するクエリ。 **注: 必須**
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答本文の _QueryResponse_ オブジェクトを返します。
+成功した場合、このメソッドは応答本文 `200 OK`の _QueryResponse_ オブジェクトを返します。
 
 応答オブジェクトには、次の 3 つのトップ レベル プロパティが含まれる。
 
@@ -103,7 +103,7 @@ Query | テキスト | 実行するクエリ。 **注: 必須**
 
 ## <a name="example"></a>例
 
-次の例では、ユーザーが以下のクエリを送信し、、 、および を含む API 応答オブジェクト `Stats` `Schema` を受け取ります `Results` 。
+次の例では、ユーザーが以下のクエリを送信し、、 、および を含む API `Stats`応答オブジェクトを `Schema`受け取ります `Results`。
 
 ### <a name="query"></a>Query
 

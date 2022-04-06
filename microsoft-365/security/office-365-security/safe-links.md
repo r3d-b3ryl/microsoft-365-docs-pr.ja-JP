@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender セーフのリンクの概要を完了Office 365
+title: '[リンクセーフの概要を完了Microsoft Defender for Office 365'
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -25,17 +25,17 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: 悪意のある URL をセーフするフィッシングOffice 365攻撃から組織を保護するための Defender のリンク保護について学習します。 [Teams セーフリンク] を見て、リンク メッセージのセーフを参照してください。
+description: 悪意のある URL をセーフするフィッシングDefender for Office 365攻撃から組織を保護するための、セーフリンク保護について学習します。 [Teams セーフリンク] を見て、リンク メッセージのセーフを参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28215843f8c8edab4125ba46b483c2d596c78532
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 11c22239a34b731b57a8730ad1bf03d764ebb106
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474555"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507211"
 ---
-# <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフ Microsoft Defender for microsoft Defender のリンクOffice 365
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフのリンクMicrosoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -46,11 +46,11 @@ ms.locfileid: "64474555"
 > [!IMPORTANT]
 > この記事は、[Microsoft Defender for Office 365](defender-for-office-365.md) をご利用の法人のお客様を対象としています。 Outlook.com、Microsoft 365 Family、または Microsoft 365 Personal を使用している場合に、Outlook の Safelinks に関する情報を探している場合は、「Advanced [Outlook.com セキュリティ](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
-セーフ リンクは、メール フロー内の受信メール メッセージの URL のスキャンと書き換え、電子メール メッセージなどの URL とリンクのクリック時の検証を提供する[、Office 365](defender-for-office-365.md) の Defender の機能です。 セーフリンクスキャンは、受信メール メッセージ (EOP) のスパム[](anti-spam-and-anti-malware-protection.md)対策およびマルウェア対策保護に加えてExchange Online Protectionされます。 安全なリンクのスキャンは、フィッシングやその他の攻撃で使用される悪意のあるリンクから組織を保護できます。
+セーフ リンクは[、Defender for Office 365](defender-for-office-365.md) の機能で、メール フロー内の受信メール メッセージの URL のスキャンと書き換え、電子メール メッセージなどの URL とリンクのクリック時の検証を提供します。 セーフリンクスキャンは、受信メール メッセージ (EOP) のスパム[](anti-spam-and-anti-malware-protection.md)対策およびマルウェア対策保護に加えてExchange Online Protectionされます。 安全なリンクのスキャンは、フィッシングやその他の攻撃で使用される悪意のあるリンクから組織を保護できます。
 
 安全なリンクの保護機能は以下の場所で利用できます。
 
-- **電子** メール メッセージ: 既定の セーフ リンク ポリシーは使用されませんが、組み込みの保護プリセット セキュリティ ポリシーは、すべての受信者 (カスタム セーフ リンク ポリシーで定義されていないユーザー) に セーフ リンク保護を提供します。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および「[Microsoft Defender for microsoft Defender for Office 365](preset-security-policies.md)。 また、特定のユーザーセーフドメインに適用されるリンク ポリシーを作成できます。 手順については、「[Microsoft Defender for セーフの](set-up-safe-links-policies.md)リンク ポリシーをセットアップする」を参照Office 365。
+- **電子** メール メッセージ: 既定の セーフ リンク ポリシーは使用されませんが、組み込みの保護プリセット セキュリティ ポリシーは、すべての受信者 (カスタム セーフ リンク ポリシーで定義されていないユーザー) に セーフ リンク保護を提供します。 詳細については、「EOP および EOP のセキュリティ ポリシーを事前に設定[する」を参照Microsoft Defender for Office 365](preset-security-policies.md)。 また、特定のユーザーセーフドメインに適用されるリンク ポリシーを作成できます。 手順については、「セーフ[のリンク ポリシーを設定する」を参照Microsoft Defender for Office 365](set-up-safe-links-policies.md)。
 
   電子メール メッセージのリンク保護セーフ詳細については、この記事の「セーフのリンク[設定](#safe-links-settings-for-email-messages)」セクションを参照してください。
   
@@ -63,7 +63,7 @@ ms.locfileid: "64474555"
 
   セーフ のリンク保護の詳細Teams、この記事の「セーフ リンク[Microsoft Teams設定」](#safe-links-settings-for-microsoft-teams)を参照してください。
 
-- **Office 365 アプリ**: Office 365 アプリの安全なリンク保護は、サポートされたデスクトップ、モバイル、および Web アプリで利用できます。 リンク **ポリシーセーフ** 外Office 365グローバル設定で、アプリのリンク保護を構成セーフします。 手順については、「[Microsoft Defender for セーフリンク](configure-global-settings-for-safe-links.md)設定のグローバル設定を構成する」を参照Office 365。
+- **Office 365 アプリ**: Office 365 アプリの安全なリンク保護は、サポートされたデスクトップ、モバイル、および Web アプリで利用できます。 リンク **ポリシーセーフ** 外Office 365グローバル設定で、アプリのリンク保護を構成セーフします。 手順については、「グループリンクの[グローバル設定を構成セーフリンクの設定」を参照Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)。
 
   Office 365 アプリ向けの安全なリンクの保護は、Microsoft Defender for Office 365 のライセンスを付与された組織内のすべてのユーザーに適用され、そのユーザーがアクティブな安全なリンク ポリシーに含まれているかどうかは関係ありません。
 
@@ -82,7 +82,7 @@ ms.locfileid: "64474555"
   - [セーフアプリの [リンク] Office 365設定](#safe-links-settings-for-office-365-apps)
   - [リンクの [次の URL をブロックする] セーフします。](#block-the-following-urls-list-for-safe-links)
 
-次の表では、Microsoft 365 および Office 365 の Defender for Office 365 を含む セーフ 組織の セーフ リンクのシナリオについて説明します (例では、ライセンスの不足は決して問題ではありません)。
+次の表では、Microsoft 365 および Office 365 組織で Defender for Office 365 を含む セーフ リンクのシナリオについて説明します (この例では、ライセンスの不足は決して問題ではありません)。
 
 |シナリオ|結果|
 |---|---|
@@ -100,34 +100,34 @@ ms.locfileid: "64474555"
 
 電子メール メッセージにセーフリンク ポリシーの設定については、次の一覧で説明します。
 
-- **メッセージ内の不明な潜在的に** 悪意のある URL のアクションを選択します。電子メール セーフのリンク スキャンを有効または無効にします。 推奨される値は **On です**。 この設定を有効にすると、次の操作が実行されます。
-
+- **On: セーフ リンク** は、ユーザーがメール内のリンクをクリックすると、既知の悪意のあるリンクの一覧をチェックします。電子メール メッセージでリンクのスキャンを有効またはセーフ無効にします。 推奨される値が選択され (オン)、次のアクションが実行されます。
   - セーフリンクスキャニングは、Outlook (C2R) で有効Windows。
   - URL は書き換え、ユーザーはメッセージ内の URL をクリックセーフリンク保護を介してルーティングされます。
   - クリックすると、既知の悪意のある URL の一覧と [次の URL をブロックする] リストに対して [URL がチェックされます](#block-the-following-urls-list-for-safe-links)。
   - 有効な評価を持つ URL は、バックグラウンドで非同期的に無効になります。
 
-- **ファイルを指** す疑わしいリンクやリンクのリアルタイム URL スキャンを適用する: ダウンロード可能なコンテンツを指す電子メール メッセージ内のリンクを含む、リンクのリアルタイム スキャンを有効にします。 推奨される値は有効です。
+  次の設定は、電子メール メッセージセーフリンクスキャンがオンの場合にのみ使用できます。
+
+  - **[セーフ** 組織内で送信された電子メール メッセージへのリンクの適用: 同じ組織内の内部送信者と内部受信者の間で送信されたメッセージに対する セーフ Exchange Online リンクのスキャンを有効または無効にします。 推奨される値が選択されています (オン)。
+
+  - **ファイルを指** す疑わしいリンクやリンクのリアルタイム URL スキャンを適用する: ダウンロード可能なコンテンツを指す電子メール メッセージ内のリンクを含む、リンクのリアルタイム スキャンを有効にします。 推奨される値が選択されています (オン)。
+
   - **メッセージを配信する前に URL のスキャンが完了するのを待ちます**。
-    - 有効: URL を含むメッセージは、スキャンが完了するまで保持されます。 メッセージは、URL が安全と確認された後にのみ配信されます。 これは推奨される値です。
-    - 無効: URL スキャンを完了できない場合は、メッセージを配信します。
+    - 選択済み (オン): URL を含むメッセージは、スキャンが完了するまで保持されます。 メッセージは、URL が安全と確認された後にのみ配信されます。 これは推奨される値です。
+    - 選択されていない (オフ): URL スキャンを完了できない場合は、メッセージを配信します。
 
-- **[セーフ** 組織内で送信された電子メール メッセージへのリンクの適用: 同じ組織内の内部送信者と内部受信者の間で送信されたメッセージに対する セーフ Exchange Online リンクのスキャンを有効または無効にします。 推奨される値は有効です。
+  - **URL を書き換えないで、SafeLinks API** を使用してチェックを行います。この設定が有効になっている場合、URL の折り返しは行なされません。 セーフリンクは、URL クリック時に API を介して排他的に呼び出され、それをサポートするOutlookによって呼び出されます。 推奨値は無効です。
 
-- **ユーザーのクリックを追跡** しない: 電子メール メッセージでクリックセーフリンククリック データの保存を有効または無効にします。 推奨値は、この設定を選択しないままにすることをお勧めします (ユーザーのクリックを追跡する場合)。
+- **ユーザークリックの追跡**: 電子メール メッセージでクリックセーフ URL のリンク クリック データの保存を有効または無効にします。 推奨値は、この設定を選択したままにすること (ユーザーのクリックを追跡する) です。
 
   内部送信者と内部受信者の間で送信される電子メール メッセージ内のリンクの URL クリック追跡は、現在サポートされていません。
 
-- **ユーザーに元の URL** へのクリックを許可しない: 警告ページから元の URL へのクリックを [](#warning-pages-from-safe-links)ユーザーに許可またはブロックします。 推奨値が有効です。
+- **ユーザーに元の URL への** クリックを許可する: ユーザーが警告ページをクリックして [](#warning-pages-from-safe-links)元の URL をクリックしたりブロックしたりします。 推奨値は無効です。
 
 - **通知ページと警告ページに組織** のブランドを表示する: このオプションは、警告ページに組織のブランド化を表示します。 ブランド化は、既定の Microsoft 警告ページが攻撃者によって頻繁に使用されるので、ユーザーが正当な警告を識別するのに役立ちます。 カスタマイズされたブランド化の詳細については、「組織のカスタマイズ [Microsoft 365テーマ」を参照してください](../../admin/setup/customize-your-organization-theme.md)。
 
-- **次の URL を書き換えない**: URL は変更しない。 スキャンを必要としない安全な URL のカスタム リストを保持します。 リストは、リンク ポリシーごとにセーフされます。 [次の URL を書き換えない] リストの詳細については、この記事の「セーフ Links ポリシー」の「[次の URL を](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)書き換えない」の一覧を参照してください。
-
   [リンク] ポリシーの Standard および Strict ポリシー設定の推奨値のセーフ詳細については、「セーフリンク ポリシー設定」[を参照してください](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
-- **URL を書き換えないで、SafeLinks API** を使用してチェックを行います。この設定が有効になっている場合、URL の折り返しは行なされません。 セーフリンクは、URL クリック時に API を介して排他的に呼び出され、それをサポートするOutlookによって呼び出されます。 推奨値は無効です。
-  
 - **受信者フィルター**: ポリシーが適用されるユーザーを決定する受信者の条件と例外を指定する必要があります。 条件や例外には次のプロパティを使用できます。
   - **受信者が次の場合**
   - **受信者ドメインは、**
@@ -190,7 +190,7 @@ Teams 保護が有効になっている セーフ Links ポリシーにリンク
 
 1. ユーザーがアプリのTeamsします。
 
-2. Microsoft 365は、ユーザーの組織に microsoft Defender for Office 365 が含まれており、ユーザーがアクティブな セーフ リンク ポリシーに含まれていて、Microsoft Teams の保護が有効になっているか確認します。
+2. Microsoft 365の組織に Microsoft Defender for Office 365 が含まれており、ユーザーがアクティブな セーフ リンク ポリシーに含まれていて、Microsoft Teams の保護が有効になっているか確認します。
 
 3. URL は、チャット、グループ チャット、チャネル、およびタブ内のユーザーのクリック時に検証されます。
 
@@ -211,7 +211,7 @@ Teams 保護が有効になっている セーフ Links ポリシーにリンク
 
 - ユーザーは、自分の仕事または学校のアカウントを使用してサインインします。 詳細については、「サインインしてサインイン[する」を参照Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。
 
-リンクポリシーセーフではなく、Office 365 セーフ リンクのグローバル設定で、セーフ セーフ リンク保護を構成します。 この保護は、ユーザーがアクティブな セーフ リンク ポリシーに含まれているかどうかに関係なく、Office 365 の Defender のライセンスを受け取っている組織内のすべてのユーザーに適用されます。
+リンクポリシーセーフではなく、Office 365 セーフ リンクのグローバル設定で、セーフ セーフ リンク保護を構成します。 この保護は、ユーザーがアクティブな セーフ Links ポリシーに含まれているかどうかに関係なく、Defender for Office 365 のライセンスを取得している組織内のすべてのユーザーに適用されます。
 
 [リンク] セーフは、アプリで使用できるOffice 365示します。
 

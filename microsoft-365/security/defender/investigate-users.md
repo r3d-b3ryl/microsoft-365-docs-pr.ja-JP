@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d49ef6b31e6446f3452d0efdce2e918813eabcc6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 51bb4f451329a74417c21db0a64aadae6dccbce6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327547"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500873"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>ユーザーを調査Microsoft 365 Defender
 
@@ -36,11 +36,11 @@ ms.locfileid: "63327547"
 
 インシデント調査の一部には、ユーザー アカウントを含めできます。 インシデントポータルの \> ***\>*** インシデントのアラートで識別されたユーザー アカウントの詳細は、[インシデント] ポータルMicrosoft 365 Defenderインシデント_ _Users&確認できます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="インシデントの [ユーザー] ページの例。" lightbox="../../media/investigate-incidents/incident-users.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="ポータル内のインシデントの [ユーザー] ページMicrosoft 365 Defenderします。" lightbox="../../media/investigate-incidents/incident-users.png":::
 
 インシデントのユーザー アカウントの概要を簡単に取得するには、ユーザー アカウント名の横にあるチェック マークを選択します。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="インシデントのユーザー アカウントの概要ウィンドウの例。" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="ポータル内のインシデントの [ユーザー] タブMicrosoft 365 Defenderします。" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
 > ユーザー ページには、Azure Active Directory (Azure AD) 組織とグループが表示され、ユーザーに関連付けられているグループとアクセス許可を理解できます。
@@ -51,13 +51,13 @@ ms.locfileid: "63327547"
 
 ここから、[ユーザー に移動] **ページを選択して** 、ユーザー アカウントの詳細を表示できます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="インシデントのユーザー アカウント ページの例。" lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="ポータル内のユーザー アカウントのMicrosoft 365 Defender" lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
 
 [ユーザー] ページの一覧からユーザー アカウントの名前を選択すると、このページを **確認** することもできます。
 
 [グループ] で番号を選択すると、ユーザーのグループ メンバーシップを確認 **できます**。
 
-:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="ユーザーのグループ メンバーシップの例。" lightbox="../../media/investigate-users/user-group-membership.png":::
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="ポータル内のユーザーのグループ メンバーシップに関するMicrosoft 365 Defenderします。" lightbox="../../media/investigate-users/user-group-membership.png":::
 
 [マネージャー] の下 **のアイコンを** 選択すると、ユーザーが組織ツリー内の場所を確認できます。
 
@@ -76,7 +76,7 @@ ms.locfileid: "63327547"
 
 次に例を示します。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="インシデントのユーザー アカウントでのアクションの例。" lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="ポータル内のインシデントに対するユーザー アカウントのアクションについて説明するMicrosoft 365 Defender。" lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
 
 ## <a name="view-lateral-movement-paths"></a>横方向の移動パスを表示する
 
@@ -86,7 +86,7 @@ ms.locfileid: "63327547"
 
 過去 2 日間にエンティティの潜在的な横方向の移動パスが検出されない場合、グラフは表示されません。 [別の日付を表示する] を使用して別の日付を選択して、このエンティティで検出された前の横方向の移動パスグラフを表示します。 横方向の移動パス レポートは、検出された潜在的な横方向の移動パスに関する情報を提供するために常に使用できます。また、時間によってカスタマイズできます。
 
-:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="ユーザーの横方向の移動パスの例。" lightbox="../../media/investigate-users/lateral-movement-path.png":::
+:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="ポータル内のユーザーの横方向のMicrosoft 365 Defenderパス" lightbox="../../media/investigate-users/lateral-movement-path.png":::
 
 詳細については、「横方向の移動 [パス」を参照してください](/defender-for-identity/use-case-lateral-movement-path)。
 

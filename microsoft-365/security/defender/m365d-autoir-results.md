@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 05e16a32fb21f682a756c32201a69c192d398184
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5a95980147c66fa8655f5c1b2ebe8adfff9e87c0
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321809"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501269"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
 
@@ -89,13 +89,13 @@ ms.locfileid: "63321809"
 
 次に例を示します。
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="調査ページの例。" lightbox="../../media/mtp-incidentdetails-tabs.png":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="ポータルの調査Microsoft 365 Defender" lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## <a name="investigation-details"></a>調査の詳細
 
 調査の詳細ビューを使用して、調査に関連する過去、現在、保留中のアクティビティを表示します。 次に例を示します。
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調査の詳細の例。" lightbox="../../media/mtp-air-investdetails.png":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="ポータルの [調査の詳細] ページMicrosoft 365 Defenderページ" lightbox="../../media/mtp-air-investdetails.png":::
 
 調査の詳細ビューでは、次の表で説明する [**Investigation graph (調査のグラフ)**]、[**Alerts (警告)**]、[**Device (デバイス)**]、[**Identities (ID)**]、[**Key findings (主な検出事項)**]、[**Entities (エンティティ)**]、[**Log (ログ)**]、[**Pending actions (保留中のアクション)**] の各タブに情報が表示されます。
 
@@ -108,7 +108,7 @@ ms.locfileid: "63321809"
 | **アラート** | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、Office アプリ、Microsoft Defender for Cloud Apps、その他のセキュリティ機能の脅威保護機能Microsoft 365 Defenderがあります。|
 | **Devices** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、 [デバイス グループのオートメーション レベルに対応](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)します)。 |
 | **メールボックス** |検出された脅威の影響を受けたメールボックスを一覧表示します。  |
-| **ユーザー**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
+| **Users**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
 | **証拠** | アラートまたは調査によって発生した証拠の一部を一覧表示します。 評決 (悪意のある、疑 *わしい**、**不明* な、または脅威が見 *つからない) と* 修復の状態が含まれます。 |
 | **Entities** | 各エンティティの種類 (悪意のある、疑わしい、または検出された脅威なし) の評決を含む、分析された各エンティティに関する詳細 *を提供します*。|
 |**Log** | アラートがトリガーされた後に行ったすべての調査アクションの時系列的で詳細なビューを提供します。|

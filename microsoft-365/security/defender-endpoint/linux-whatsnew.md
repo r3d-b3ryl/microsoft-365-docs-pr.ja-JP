@@ -1,7 +1,7 @@
 ---
-title: Linux の新Microsoft Defender for Endpoint新機能
-description: Linux 上のユーザーの主なMicrosoft Defender for Endpoint一覧です。
-keywords: microsoft, defender, Microsoft Defender for Endpoint, Linux, whatsnew, release
+title: Microsoft Defender for Endpoint on Linux の新機能
+description: Microsoft Defender for Endpoint on Linux の主な変更点の一覧。
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 45b5bbcc1268c1f425b914a3f8279fe8dcc583f2
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 993820bace174d993ed81fafb7f1f3b1c7645d37
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569955"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500895"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux の新Microsoft Defender for Endpoint新機能
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,7 +46,6 @@ ms.locfileid: "64569955"
 ## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
 
 - コマンド ライン ツールでは、検疫済みファイルを、ファイルが最初に検出された場所以外の場所に復元できます。 これは、 を使用して実行できます `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`。
-- このバージョンから、Linux のネットワーク保護をオンデマンドで評価できます
 - バグ修正
 
 ## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0)
@@ -59,7 +58,7 @@ ms.locfileid: "64569955"
 
 ## <a name="1015257-30121092152570"></a>101.52.57 (30.121092.15257.0)
 
-- アプリケーションで使用されている脆弱な log4j jars を検出Javaしました。 コンピューターは、log4j jars を読み込Javaプロセスを実行するために定期的に検査されます。 この情報は、Microsoft Defender for Endpointに報告され、ポータルの [脆弱性の管理] 領域に表示されます。
+- アプリケーションで使用されている脆弱な log4j jars を検出Javaしました。 コンピューターは、log4j jars を読み込Javaプロセスを実行するために定期的に検査されます。 この情報は Microsoft Defender for Endpoint バックエンドに報告され、ポータルの [脆弱性の管理] 領域に公開されます。
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
 
@@ -68,7 +67,7 @@ ms.locfileid: "64569955"
 
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
 
-- このバージョンから、次のディストリビューションMicrosoft Defender for Endpointサポートを提供しています。 
+- このバージョンでは、Microsoft Defender for Endpoint のサポートを次のディストリビューションに追加しています。 
   - RHEL6.7-6.10 および CentOS6.7-6.10 バージョン。
   - Amazon Linux 2
   - Fedora 33 以上
@@ -101,8 +100,8 @@ ms.locfileid: "64569955"
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)
 
-- Microsoft Defender for Endpointは、米国政府機関のお客様向けプレビューで利用できます。 詳細については、「米国政府機関のお客様[Microsoft Defender for Endpointを参照してください](gov.md)。
-- FUSE ファイルシステムを使用したシステムで Linux Microsoft Defender for Endpointを使用すると OS がハングする問題を修正しました
+- Microsoft Defender for Endpoint on Linux は、米国政府機関のお客様向けプレビューで利用できます。 詳細については、「 [Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。
+- FUSE ファイルシステムを使用するシステムで Linux 上の Microsoft Defender for Endpoint を使用すると OS がハングする問題を修正しました
 - 他のバグ修正&パフォーマンスの向上
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0)

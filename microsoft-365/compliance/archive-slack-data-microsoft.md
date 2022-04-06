@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft が提供する Slack 電子情報開示データ コネクタをセットアップして使用して、インスタント メッセージング データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 2bd4df859d5bb3a4ccd048c83a864d44f81f33bc
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 7882524bb01a1d28c0f4f7c564472961d04baa07
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525073"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501203"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Slack 電子情報開示データをアーカイブするコネクタをセットアップする (プレビュー)
 
@@ -77,7 +77,15 @@ Microsoft が提供する Slack 電子情報開示データ コネクタを使�
 
    [許可] **をクリック** すると、Slack ページが閉じ、コネクタ ウィザードMicrosoft 365に Slack 電子情報開示ユーザーをマップするページが表示されます。
 
-## <a name="step-3-map-users-and-select-data-types-to-import"></a>手順 3: ユーザーをマップし、インポートするデータ型を選択する
+## <a name="step-3-specify-the-users-to-import-data-for"></a>手順 3: データをインポートするユーザーを指定する
+
+次のいずれかのオプションを選択して、インポートする Slack 電子情報開示データを持つユーザーを指定します。
+
+- **組織内のすべてのユーザー**。 すべてのユーザーのデータをインポートするには、このオプションを選択します。
+
+- **訴訟ホールドのユーザーのみ**。 メールボックスが訴訟ホールドに置かれたユーザーのデータのみをインポートするには、このオプションを選択します。 このオプションは、LitigationHoldEnabled プロパティが True に設定されているユーザー メールボックスにデータをインポートします。 詳細については、「訴訟ホールドの [作成」を参照してください](create-a-litigation-hold.md)。
+
+## <a name="step-4-map-users-and-select-data-types-to-import"></a>手順 4: ユーザーをマップし、インポートするデータ型を選択する
 
 1. Slack ユーザーを自分のメールボックスにマップするために、次のオプションの 1 つMicrosoft 365構成します。
 
@@ -103,7 +111,7 @@ Microsoft が提供する Slack 電子情報開示データ コネクタを使�
 
 3. インポートするデータ型を構成したら、[次へ] をクリック **し、コネクタ** の設定を確認し、[ **完了** ] をクリックしてコネクタを作成します。
 
-## <a name="step-4-monitor-the-slack-ediscovery-connector"></a>手順 4: Slack 電子情報開示コネクタを監視する
+## <a name="step-5-monitor-the-slack-ediscovery-connector"></a>手順 5: Slack 電子情報開示コネクタを監視する
 
 Slack 電子情報開示コネクタを作成した後、コネクタの状態を [メール] Microsoft 365 コンプライアンス センター。
 
