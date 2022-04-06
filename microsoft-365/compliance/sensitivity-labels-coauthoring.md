@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: 252d32e0f301bf332bf8143082ec86be2f1072ea
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: baa2236915d37917e4ed69e5356db31262795d57
+ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320047"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64687209"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
@@ -67,11 +67,6 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 
 ## <a name="prerequisites"></a>前提条件
 
-> [!IMPORTANT]
-> この機能を使用するには、すべてのユーザーが Microsoft 365 Apps for enterprise を使用している必要があります。 この共同編集機能のサポートは、Office 更新プログラムの半期エンタープライズ チャネルではまだ利用できません。 Officeアプリにこの更新チャネルを使用している場合は、現在のチャネルまたは月次のエンタープライズ チャネルに変更します。
-> 
-> 詳細については、「[更新チャネルを構成および管理する方法](/deployoffice/overview-update-channels#how-to-configure-and-manage-update-channels)」を参照してください。
-
 この機能を有効にする前に、次の前提条件を必ず把握します。
 
 - この機能を有効にする場合は、グローバル管理者である必要があります。
@@ -79,7 +74,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 - テナントに対して、[SharePoint、OneDrive で Office ファイル](sensitivity-labels-sharepoint-onedrive-files.md) への秘密度レベルを有効にする必要があります。 この機能が有効になっていない場合、秘密度レベルがあるファイルへの共同編集を有効にする設定を選択すると、自動的に有効になります。
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: 現在のチャネルまたは月次チャネルからの最小バージョン Enterprise 2107
+    - **Windows**: Current Channel または Monthly Enterprise Channel の最小バージョン 2107、またはSemi-Annual Enterprise チャネルの最小バージョン 2202
     - **macOS**: 最小バージョン 16.51
     - **iOS**: 最小バージョン 2.58 で [オプトイン](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)するとプレビューになります
     - **Android**: 最小バージョン 16.0.14931 で [オプトイン](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)するとプレビューになります

@@ -1,7 +1,7 @@
 ---
-title: 高度な検索で共有クエリMicrosoft 365 Defender使用する
+title: 高度なハンティングで共有クエリMicrosoft 365 Defender使用する
 description: 定義済みおよび共有クエリを使用して、脅威の捜索をすぐに開始します。 クエリを公開または組織に共有します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto、github リポジトリ、自分のクエリ、共有クエリ
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, カスタム検出, スキーマ, kusto, github repo, マイ クエリ, 共有クエリ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 96db917808094487039a13740cba80ad751f062f
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 21dbcdebbb640e15ef4023c0bf0cfdaf4739fdb7
+ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755518"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64686991"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>高度な捜索で共有クエリを使用する
 
@@ -34,11 +34,14 @@ ms.locfileid: "63755518"
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
+[高度な捜索](advanced-hunting-overview.md)クエリは、同じ組織内のユーザー間で共有できます。 また、自分だけがアクセスできるクエリを保存することもできます。 また、GitHubでパブリックに共有されているコミュニティ クエリを検索することもできます。 これらの保存されたクエリを使用すると、クエリを最初から記述しなくても、特定の脅威ハンティング シナリオを迅速に実行できます。
+
+高度な検索の [クエリ] タブには、[**共有クエリ**]、[**マイ クエリ**]、[**Community クエリ**] のドロップダウン メニューがあります。 下向きの矢印を選択してメニューを展開できます。
 
 
-[高度な捜索](advanced-hunting-overview.md)クエリは、同じ組織内のユーザー間で共有できます。 また、GitHub で公開されているクエリも検索できます。 これらのクエリを使用すると、クエリを最初から作成することなく、特定の脅威の捜索シナリオを迅速に実行できます。
+:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Microsoft 365 Defender ポータルの共有クエリ情報" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
 
-:::image type="content" source="../../media/shared-query-1.png" alt-text="共有クエリの情報は、Microsoft 365 Defenderポータル" lightbox="../../media/shared-query-1.png":::
+
 
 ## <a name="save-modify-and-share-a-query"></a>クエリを保存、変更、共有する
 新規または既存のクエリを保存して、自分のみアクセスできるようにしたり、組織内の他のユーザーと共有したりできます。 
@@ -49,7 +52,7 @@ ms.locfileid: "63755518"
     
 3. クエリの名前を入力します。 
 
-   :::image type="content" source="../../media/shared-query-2.png" alt-text="ポータルに保存される新しいクエリMicrosoft 365 Defenderします。" lightbox="../../media/shared-query-2.png":::
+   :::image type="content" source="../../media/shared-query-2.png" alt-text="Microsoft 365 Defender ポータルに保存される新しいクエリ" lightbox="../../media/shared-query-2.png":::
 
 4. クエリを保存するフォルダーを選択します。
     - [**共有クエリ**] — 組織のすべてのユーザーに共有する
@@ -60,18 +63,23 @@ ms.locfileid: "63755518"
 ## <a name="delete-or-rename-a-query"></a>クエリを削除または名前を変更する
 1. 名前を変更または削除するクエリの右側にある 3 つのドットを選択します。
 
-    :::image type="content" source="../../media/shared-query-3.png" alt-text="ポータルの [高度な検索] ページの共有クエリMicrosoft 365 Defenderオプション" lightbox="../../media/shared-query-3.png":::
+    :::image type="content" source="../../media/shared-query-3.png" alt-text="Microsoft 365 Defender ポータルの [高度な検索] ページの共有クエリのオプション" lightbox="../../media/shared-query-3.png":::
 
 2. [**削除**] を選択して、削除を確認します。 または、[**名前の変更**] を選択して、クエリに新しい名前を入力ます。
 
 ## <a name="create-a-direct-link-to-a-query"></a>クエリへの直接リンクを作成する
-高度な検索クエリ エディターでクエリを直接開くリンクを生成するには、クエリを最終処理し、[共有] リンク **を選択します**。
+高度な検索クエリ エディターでクエリを直接開くリンクを生成するには、クエリを終了し、[ **リンクの共有**] を選択します。
 
-## <a name="access-queries-in-the-github-repository"></a>GitHub リポジトリ内のクエリにアクセスする  
-Microsoft のセキュリティ調査員は、[GitHub の指定された公開リポジトリ](https://aka.ms/hunting-queries)で高度な捜索クエリを定期的に共有しています。 このリポジトリは投稿できます。 投稿するには、[GitHub に無料で参加](https://github.com/)してください。
+## <a name="access-community-queries-in-the-github-repo"></a>GitHub リポジトリのコミュニティ クエリにアクセスする  
+Microsoft のセキュリティ調査員は、[GitHub の指定された公開リポジトリ](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender)で高度な捜索クエリを定期的に共有しています。 このリポジトリへの投稿は、発行する前に確認されます。 投稿するには、[GitHub に無料で参加](https://github.com/)してください。
+
+これらのクエリは、**Communityクエリ** ドロップダウンでも簡単に見つけることができます。
+
+:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Microsoft 365 Defender ポータルに保存される新しいクエリ" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
+
 
 >[!tip]
->また、Microsoft のセキュリティ調査員は高度な捜索クエリも提供しています。これを使用して、新たな脅威に関連するアクティビティやインジケータを特定できます。 これらのクエリは、脅威分析レポートの一[](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)部として、Microsoft 365 Defender。
+>また、Microsoft のセキュリティ調査員は高度な捜索クエリも提供しています。これを使用して、新たな脅威に関連するアクティビティやインジケータを特定できます。 これらのクエリは、Microsoft 365 Defenderの[脅威分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)レポートの一部として提供されます。
 
 
 ## <a name="related-topics"></a>関連項目
