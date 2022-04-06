@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6abd2c26f8557277b4c1b13e5189a42fea9a60f1
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1ea1661a89585d46aa5fc234f6f88be66512c1be
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943390"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468701"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows デバイスのオンボード
 
@@ -41,22 +41,22 @@ ms.locfileid: "61943390"
 > ローカル スクリプトは、Microsoft Defender for Endpoint を評価するための特別なオンボーディング 方法です。
 > ローカル スクリプトを使用してオンボーディングを行う場合、データレポートの頻度は、他のオンボーディング方法よりも高く設定されます。
 > この設定は評価用であり、通常は実稼働環境では使用されません。 このため、環境への影響について懸念が生じ、ローカル スクリプトを使用する展開の数を 10 に制限することをお勧めします。
-> 前述のように実稼働環境に展開する場合は、グループ ポリシーや[](configure-endpoints.md)グループ ポリシーなどの他の展開オプションMicrosoft Endpoint Configuration Manager。
+> 前述のように、実稼働環境に展開する場合は、グループ ポリシーや[](configure-endpoints.md)グループ ポリシーなどの他の展開オプションMicrosoft Endpoint Configuration Manager。
 
-[[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。 
+[エンドポイント用 [Defender](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。 
 
 ## <a name="onboard-devices"></a>デバイスのオンボード 
 
-1.  サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 また、次のポータルから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">パッケージをMicrosoft 365 Defenderすることもできます</a>。
+1.  サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 また、次のポータルから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">パッケージMicrosoft 365 Defenderできます</a>。
 
-    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定**  >    >  **オンボーディング]**  >  **を選択します**。
+    1. ナビゲーション ウィンドウで、[**EndpointsDevice** >  **managementOnboarding**] **設定** > を > **選択します**。
 
 
-[[](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
+[エンドポイント用 [Defender](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio展開](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
 
-1. サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 また、次のポータルから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">パッケージをMicrosoft 365 Defenderすることもできます</a>。
-    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \>  \> **オンボーディング]** \> **を選択します**。
-    2. オペレーティング Windows 10としてWindows 11 を選択します。
+1. サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 また、次のポータルから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">パッケージMicrosoft 365 Defenderできます</a>。
+    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \> **オン**\>ボーディング **] を** \> **選択します**。
+    2. オペレーティング Windows 10または Windows 11 を選択します。
     3. [展開方法 **] フィールドで** 、[ローカル スクリプト] **を選択します**。
     4. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
@@ -66,22 +66,22 @@ ms.locfileid: "61943390"
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
    2. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-    ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ です。](images/run-as-admin.png)
+    :::image type="content" source="images/run-as-admin.png" alt-text="[管理者スタート メニュー実行] をポイントするウィンドウ のプロパティ" lightbox="images/run-as-admin.png":::
 
-4.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd」と入力します。*
+4.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は、「 *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd」と入力します。*
 
-5.  Enter キーを **押** するか **、[OK] をクリックします**。
+5.  Enter キーを **押** するか、[OK] を **クリックします**。
 
-デバイスが準拠し、センサー データが正しく報告されていることを手動で検証する方法については、「Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング」 [を参照してください](troubleshoot-onboarding.md)。
+デバイスが準拠し、センサー データが正しく報告されていることを手動で検証する方法については、「 [Troubleshoot Microsoft Defender for Endpoint オンボーディングの問題」を参照してください](troubleshoot-onboarding.md)。
 
 > [!TIP]
-> デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint エンドポイントで検出テストを実行する [」を参照してください](run-detection-test.md)。
+> デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボード [された Microsoft Defender for Endpoint エンドポイントで検出テストを実行する」を参照してください](run-detection-test.md)。
 
 ## <a name="configure-sample-collection-settings"></a>サンプル コレクション設定の構成
 
 デバイスごとに構成値を設定して、Microsoft 365 Defender から詳細分析用にファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかを示します。
 
-regedit を使用するか *、.reg* ファイルを作成して実行することで、デバイスのサンプル共有設定 *を手動で構成* できます。
+regedit を使用するか、. *reg* ファイルを作成して実行することで、デバイスのサンプル共有設定 *を手動で構成* できます。
 
 構成は、次のレジストリ キー エントリを使用して設定されます。
 
@@ -100,7 +100,7 @@ Name 型は D-WORD です。 使用可能な値は次のとおりです。
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>検出テストを実行してオンボーディングを確認する
 
-デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。
+デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボード [された Microsoft Defender for Endpoint デバイスで検出テストを実行する」を参照してください](run-detection-test.md)。
 
 ## <a name="offboard-devices-using-a-local-script"></a>ローカル スクリプトを使用してデバイスをオフボードする
 
@@ -109,23 +109,23 @@ Name 型は D-WORD です。 使用可能な値は次のとおりです。
 > [!NOTE]
 > オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。
 
-1. ポータルからオフボード パッケージ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。
-    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定 \> **オフ** \> **ボード]** \> **を選択します**。
-    2. オペレーティング Windows 10としてWindows 11 を選択します。
+1. ポータルからオフボード パッケージ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">をMicrosoft 365 Defenderします</a>。
+    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \> **オフ** \> **ボード**\>] **を選択します**。
+    2. オペレーティング Windows 10または Windows 11 を選択します。
     3. [展開方法 **] フィールドで** 、[ローカル スクリプト] **を選択します**。
     4. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
-2. デバイスがアクセスできる共有.zipファイルの内容を読み取り専用の場所に抽出します。 *-MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
+2. デバイスがアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 - *MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
 
 3. デバイスで管理者特権のコマンド ライン プロンプトを開き、スクリプトを実行します。
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
    2. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-        ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ です。](images/run-as-admin.png)
+      :::image type="content" source="images/run-as-admin.png" alt-text="[管理者Windows スタート メニュー実行] オプションをポイントしているユーザー" lightbox="images/run-as-admin.png":::
 
-4. スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd」と入力します。*
+4. スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は、「 *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd」と入力します。*
 
-5. Enter キーを **押** するか **、[OK] をクリックします**。
+5. Enter キーを **押** するか、[OK] を **クリックします**。
 
 > [!IMPORTANT]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: cdd368e7e78458067b9f363d41f7931ac5a2c0cd
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 05375332df6542cd87e986bba68ef7c6753f8e36
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754205"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64637964"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -36,9 +36,9 @@ ms.locfileid: "63754205"
 
 インサイダー リスク管理を開始する前に、サブスクリプションとMicrosoft 365[を](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)確認する必要があります。 インサイダー リスク管理にアクセスして使用するには、組織に次のいずれかのサブスクリプションまたはアドオンが必要です。
 
-- Microsoft 365 E5/A5/G5 サブスクリプション (有料または試用版)
-- Microsoft 365 E3/A3/G3 サブスクリプション + Microsoft 365 E5/A5/G5 コンプライアンス アドオン
-- Microsoft 365 E3/A3/G3 サブスクリプション + Microsoft 365 E5/A5/G5 Insider Risk Management アドオン
+- Microsoft 365 E5/A5/F5/G5 サブスクリプション (有料または試用版)
+- Microsoft 365 E3/A3/F3/G3 サブスクリプション + Microsoft 365 E5/A5/F5/G5 コンプライアンス アドオン
+- Microsoft 365 E3/A3/F3/G3 サブスクリプション + Microsoft 365 E5/A5/F5/G5 Insider Risk Management アドオン
 - Office 365 E3 サブスクリプション + Enterprise Mobility and Security E3 + Microsoft 365 E5 Compliance アドオン
 
 インサイダー リスク管理ポリシーに含まれるユーザーには、上記のいずれかのライセンスが割り当てられている必要があります。
@@ -221,13 +221,13 @@ Insider リスク管理は、物理的な制御およびアクセス プラッ�
 
 組織の [物理不良](import-physical-badging-data.md) コネクタを構成する手順については、「物理不良データをインポートするコネクタをセットアップする」の記事を参照してください。 コネクタを構成した後、次の構成手順に戻ってください。
 
-### <a name="configure-microsoft-defender-for-endpoint-optional"></a>エンドポイント用 Microsoft Defender の構成 (オプション)
+### <a name="configure-microsoft-defender-for-endpoint-optional"></a>構成Microsoft Defender for Endpoint (オプション)
 
-[Microsoft Defender for Endpoint は](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 、エンタープライズ ネットワークが高度な脅威を防止、検出、調査、および対応するために設計されたエンタープライズ エンドポイント セキュリティ プラットフォームです。 組織内のセキュリティ違反をよりよく可視化するには、インサイダー リスク管理のセキュリティ違反ポリシー テンプレートから作成されたポリシーで使用されるアクティビティについて、Defender for Endpoint アラートをインポートしてフィルター処理できます。
+[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)は、エンタープライズ ネットワークが高度な脅威を防止、検出、調査、および対応するために設計されたエンタープライズ エンドポイント セキュリティ プラットフォームです。 組織内のセキュリティ違反をよりよく可視化するには、インサイダー リスク管理のセキュリティ違反ポリシー テンプレートから作成されたポリシーで使用されるアクティビティについて、Defender for Endpoint アラートをインポートしてフィルター処理できます。
 
-セキュリティ違反ポリシーを作成する場合は、組織内で Microsoft Defender for Endpoint を構成し、Defender セキュリティ センターで Defender for Endpoint for Insider リスク管理統合を有効にしてセキュリティ違反アラートをインポートする必要があります。 要件の詳細については、「Microsoft Defender for Endpoint の最小要件 [」を参照](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) してください。
+セキュリティ違反ポリシーを作成する場合は、組織内で Microsoft Defender for Endpoint を構成し、Defender セキュリティ センターで Defender for Endpoint for Insider リスク管理統合を有効にして、セキュリティ違反アラートをインポートする必要があります。 要件の詳細については、「最小要件」の記事[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)してください。
 
-Defender for Endpoint を [インサイダー](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) リスク管理統合用に構成する詳細なガイダンスについては、「Defender for Endpoint の高度な機能を構成する」の記事を参照してください。 Microsoft Defender for Endpoint を構成した後、次の構成手順に戻ってください。
+Defender for Endpoint を [インサイダー](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) リスク管理統合用に構成する詳細なガイダンスについては、「Defender for Endpoint の高度な機能を構成する」の記事を参照してください。 構成が完了した後、Microsoft Defender for Endpoint手順に戻ってください。
 
 ## <a name="step-5-required-configure-insider-risk-settings"></a>手順 5 (必須): Insider リスク設定の構成
 
@@ -247,7 +247,7 @@ Defender for Endpoint を [インサイダー](/windows/security/threat-protecti
     - [ファイルの種類の除外](insider-risk-management-settings.md#file-type-exclusions)
     - [異常なアクティビティのスコアを上げる 1 日の最小イベント数](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [アラート ボリューム レベル](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft Defender for Endpoint アラートの状態](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
+    - [Microsoft Defender for Endpointの状態](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [ドメイン設定](insider-risk-management-settings.md#domains)
 6. [アラートの **エクスポート] ページ** で、必要に応じて、Office 365管理 API を使用してインサイダー リスクアラート情報のエクスポートを有効にします。
 7. [優先度の **ユーザー グループ] ページ** で、優先度の高いユーザー グループを作成し、手順 3 で作成されていない場合はユーザー **を追加します**。

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57c1909ff54fea6b9151e212f465abb75bab48f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e7ff7a98e8550996068686b5b0805ea3a72cd6ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325321"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468569"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>セキュリティに関する推奨事項 - 脅威と脆弱性の管理
 
@@ -70,7 +70,8 @@ ms.locfileid: "63325321"
 
 セキュリティ管理者として特定の日に、[脅威と脆弱性の管理](tvm-dashboard-insights.md) ダッシュボードを見て、露出スコアを [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md) と並[](tvm-exposure-score.md)べて確認できます。 目標は、組織の脆弱性による露出を低くし、組織のデバイス セキュリティを強化して、サイバーセキュリティの脅威攻撃に対する回復力を高める方法です。 セキュリティに関する推奨事項の上位一覧は、その目標を達成するのに役立ちます。
 
-![4 つのセキュリティ推奨事項を含むトップ セキュリティ推奨事項カードの例。](images/top-security-recommendations350.png)
+:::image type="content" source="images/top-security-recommendations350.png" alt-text="トップ セキュリティ推奨事項カード" lightbox="images/top-security-recommendations350.png":::
+
 
 上位のセキュリティ推奨事項は、前のセクションで説明した重要な要因 (脅威、侵害される可能性、および価値) に基づいて優先順位付けされた改善の機会を示しています。 推奨事項を選択すると、詳細を示すセキュリティの推奨事項ページが表示されます。
 
@@ -83,7 +84,7 @@ ms.locfileid: "63325321"
 > [!NOTE]
 > 脅威と脆弱性の管理は、最大 30 日前に使用していた **デバイスを示** します。 これは、他の Microsoft Defender for Endpoint とは異なります。デバイスが 7 日間以上使用されていない場合は、"非アクティブ" 状態になっています。
 
-![セキュリティに関する推奨事項のランディング ページの例。](images/tvmsecrec-updated.png)
+:::image type="content" source="images/tvmsecrec-updated.png" alt-text="セキュリティに関する推奨事項のランディング ページ" lightbox="images/tvmsecrec-updated.png":::
 
 ### <a name="icons"></a>アイコン
 
@@ -97,7 +98,7 @@ ms.locfileid: "63325321"
 
 調査または処理するセキュリティ推奨事項を選択します。
 
-:::image type="content" alt-text="セキュリティ推奨事項のフライアウト ページの例。" source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
+:::image type="content" source="images/secrec-flyouteolsw.png" alt-text="セキュリティ推奨事項のフライアウト ページ" lightbox="images/secrec-flyouteolsw.png":::
 
 フライアウトから、次のオプションを選択できます。
 
@@ -140,7 +141,7 @@ ms.locfileid: "63325321"
 
 例外を作成するセキュリティ推奨事項を選択し、[例外オプション] **を選択します**。
 
-!["例外オプション" のボタンがセキュリティ推奨事項のフライアウト内の場所である場所を表示します。](images/tvm-exception-options.png)
+:::image type="content" source="images/tvm-exception-options.png" alt-text="セキュリティ推奨事項のフライアウトの例外オプション ボタン" lightbox="images/tvm-exception-options.png":::
 
 フォームに入力して送信します。 すべての例外 (現在と過去) を表示するには、[脅威 **&** の脆弱性管理] メニューの [修復] ページに移動し、[例外]  タブを選択します [](tvm-exception.md#create-an-exception)。例外を作成する方法の詳細については、以下を参照してください。[](tvm-remediation.md)
 
@@ -152,7 +153,7 @@ ms.locfileid: "63325321"
 
 2. 報告するセキュリティ推奨事項の横にある 3 つの点を選択し、[不正確なレポート] **を選択します**。
 
-    ![[不正確なレポート] ボタンがセキュリティ推奨事項のフライアウト内にある場所を表示します。](images/report-inaccuracy500.png)
+   :::image type="content" source="images/report-inaccuracy500.png" alt-text="[不正確なレポート] ボタン" lightbox="images/report-inaccuracy500.png":::
 
 3. フライアウト ウィンドウで、ドロップダウン メニューから不正確なカテゴリを選択し、電子メール アドレスを入力し、不正確に関する詳細を入力します。
 

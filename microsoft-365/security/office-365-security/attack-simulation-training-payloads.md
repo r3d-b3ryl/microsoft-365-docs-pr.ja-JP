@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、計画 2 の Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成Office 365できます。
 ms.technology: mdo
-ms.openlocfilehash: d670236aa81f4b5086263a75bbeceb8ca7e1e25f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8aa81a1940e564e9877af6a1848ff439aea58d8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679766"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468503"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成Office 365
 
@@ -147,7 +147,7 @@ ms.locfileid: "63679766"
       - **名前の** 挿入: メッセージ本文に追加される値は、 です `${userName}`。
       - **電子メールの** 挿入: メッセージ本文に追加される値は、 です `${emailAddress}`。
 
-      ![Microsoft Defender の攻撃シミュレーション トレーニングのペイロード作成ウィザードの [ペイロードの構成] ページの [電子メール メッセージ] Office 365。](../../media/attack-sim-training-payloads-configure-payload-email-message.png)
+      :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="Microsoft Defender の攻撃シミュレーション トレーニングのペイロード作成ウィザードの [ペイロードの構成] ページの [電子メール メッセージ] Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
       **フィッシング リンクコントロール**: このコントロールは、[Select **technique**] ページで [資格情報の取得]、[添付ファイルのリンク]、または [ドライブバイ **URL**] を選択した場合 **にのみ使用** できます。 このコントロールを使用して、[フィッシング] リンク セクションで以前に選択した **URL を挿入** します。
 
@@ -204,7 +204,7 @@ ms.locfileid: "63679766"
 
   インジケーターの場所として電子メール メッセージの件名またはメッセージ本文を選択すると、[テキストの選択] **ボタン** を使用できます。 このボタンをクリックして、インジケーターを表示するメッセージの件名またはメッセージ本文のテキストを選択します。 完了したら、[選択] を **クリックします**。
 
-  ![攻撃シミュレーション トレーニングのペイロード作成ウィザードでインジケーターに追加するメッセージ本文のテキストの場所を選択します。](../../media/attack-sim-training-payloads-add-indicators-select-location.png)
+  :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="攻撃シミュレーション トレーニングのペイロード作成ウィザードのインジケーターに追加するメッセージ本文の [選択されたテキストの場所]" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
   - **インジケーターの** 説明: インジケーターの既定の説明を受け入れるか、カスタマイズできます。
 
@@ -232,7 +232,7 @@ ms.locfileid: "63679766"
 
 完了したら、**[送信]** をクリックします。 表示された [確認]ページで、**[完了]** をクリックします。
 
-![ポータルの攻撃シミュレーション トレーニングのペイロード ページMicrosoft 365 Defenderします。](../../media/attack-sim-training-payloads-review-payload.png)
+:::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="[攻撃シミュレーション トレーニング] の [ペイロードの確認] ページ (Microsoft 365 Defender ポータル)" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 > [!IMPORTANT]
 > 作成したペイロードには、Source プロパティ **の値 Tenant** が **設定** されます。 シミュレーションを作成してペイロードを選択する場合は、Source 値テナントをフィルター処理しな **か** から外 **してください**。

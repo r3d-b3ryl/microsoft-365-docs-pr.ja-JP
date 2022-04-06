@@ -17,22 +17,22 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、Microsoft 365 Lighthouseテナントを 1 つの場所でセキュリティで保護および管理する方法について説明します。
-ms.openlocfilehash: 88b6a3b1afff0905458f5ade7e4e91136b2c9d38
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: fde2ee27692b1d8fb53d46077cf58deb6d9a0550
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494472"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645058"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>概要 Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse は、Managed Service Providers (MSP) が Microsoft 365 Business Premium または Microsoft 365 E3 を使用している中小企業 (SMB) のお客様向けデバイス、データ、およびユーザーを大規模に保護および管理するのに役立つ管理ポータルです。 
+Microsoft 365 Lighthouse は、管理サービス プロバイダー (MSP) が、Microsoft 365 Business Premium、Microsoft 365 E3、またはを使用している中小企業 (SMB) のお客様向けデバイス、データ、およびユーザーのセキュリティ保護と管理に役立つ管理ポータルです。Windows 365 Business。 
 
-ライトハウスは、SMB のお客様に合わせたセキュリティ構成基準を推奨し、すべての顧客環境でマルチテナント ビューを提供することで、Microsoft 365 Business Premium テナントと Microsoft 365 E3 テナントのオンボーディングを簡素化します。 ライトハウスを使用すると、MSP は顧客の管理を拡大し、最も重要な点に集中し、リスクをすばやく見つけて調査し、顧客を健全で安全な状態に保つアクションを実行できます。
+ライトハウスは、SMB のお客様に合わせたセキュリティ構成基準を推奨し、すべての顧客環境でマルチテナント ビューを提供することで、Microsoft 365 Business Premium、Microsoft 365 E3、および Windows 365 Business テナントのオンボーディングを簡素化します。 ライトハウスを使用すると、MSP は顧客の管理を拡大し、最も重要な点に集中し、リスクをすばやく見つけて調査し、顧客を健全で安全な状態に保つアクションを実行できます。
 
-ライトハウスを使用してサービスと接続されたデバイスを管理するためにMicrosoft 365コストは発生します。 ライトハウスは、クラウド ソリューション プロバイダー (CSP) プログラムに登録され、SMB のお客様に対して、Microsoft 365 Business PremiumまたはMicrosoft 365 E3できます。
+ライトハウスを使用してサービスと接続されたデバイスを管理するためにMicrosoft 365コストは発生します。 ライトハウスは、クラウド ソリューション プロバイダー (CSP) プログラムに登録され、SMB のお客様に Microsoft 365 Business Premium、Microsoft 365 E3、または Windows 365 Business サブスクリプションを提供する場合に利用できます。
 
-Microsoft CSP チャネル パートナーによるライトハウスの使用は、お客様がサポートされているMicrosoft 365 Business PremiumまたはMicrosoft 365 E3使用します。 これには、CSP パートナーが Microsoft と直接取引することや、間接プロバイダー (ディストリビューター) を介して取引するパートナーが含まれます。 
+Microsoft CSP チャネル パートナーによるライトハウスの使用で、お客様が Microsoft 365 Business Premium、Microsoft 365 E3、Windows 365 Businessサポートされます。 これには、CSP パートナーが Microsoft と直接取引することや、間接プロバイダー (ディストリビューター) を介して取引するパートナーが含まれます。 
 
 > [!IMPORTANT] 
 > ライトハウスを使用するには、MSP とその顧客テナントが、この要件に記載されている要件Microsoft 365 Lighthouse[があります](m365-lighthouse-requirements.md)。     
@@ -68,4 +68,4 @@ CSP プログラムの詳細については、「CSP プログラムの概要ク
 [Microsoft 365 Lighthouseテナント ページの概要](m365-lighthouse-tenants-page-overview.md) (記事)   
 [Microsoft 365 Lighthouse コンプライアンス ページの概要](m365-lighthouse-device-compliance-page-overview.md) (記事)   
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)   
-[Microsoft Defender for Business](../security/defender-business/index.yml) (リンク ページ)
+[Microsoft Defender für Unternehmen](../security/defender-business/index.yml) (リンク ページ)

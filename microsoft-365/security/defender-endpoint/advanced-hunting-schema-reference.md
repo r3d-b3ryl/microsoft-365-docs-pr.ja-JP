@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 290d302f815de38c4cd84f417118205ed6504fe2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2e45a4ae78d0beb9bc57b72a59b9cf1376ac7da7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934263"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468349"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の高度なハンティング スキーマを理解する
 
@@ -39,16 +39,16 @@ ms.locfileid: "61934263"
 
 クエリを作成する場合は、組み込みのスキーマ参照を使用して、スキーマ内の各テーブルに関する次の情報をすばやく取得します。
 
-- **テーブルの** 説明 : テーブルに含まれるデータの種類と、そのデータのソース。
+- **テーブルの** 説明: テーブルに含まれるデータの種類と、そのデータのソース。
 - **列**: テーブル内のすべての列。
-- **アクションの種類**: テーブルでサポートされているイベントの種類を表す列 `ActionType` の値を指定できます。 これは、イベント情報を含むテーブルにのみ提供されます。
-- **サンプル クエリ**: テーブルの利用方法を特徴付けするクエリの例。
+- **アクションの種類**: テーブルでサポートされている `ActionType` イベントの種類を表す列の値を指定できます。 これらの値は、イベント情報を含むテーブルにのみ提供されます。
+- **サンプル クエリ**: テーブルの利用方法を備えたクエリの例。
 
 ### <a name="access-the-schema-reference"></a>スキーマ参照へのアクセス
 
 スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある [参照の表示] アクションを選択します。 [スキーマ参照] **を選択して** テーブルを検索することもできます。
 
-![ポータル内スキーマ参照にアクセスする方法を示す画像。](images/ah-reference.png)
+:::image type="content" source="images/ah-reference.png" alt-text="[高度な検索] ページ" lightbox="images/ah-reference.png":::
 
 ## <a name="learn-the-schema-tables"></a>スキーマ テーブルの詳細
 
@@ -71,7 +71,7 @@ ms.locfileid: "61934263"
 |**[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)**|レジストリ エントリの作成と変更|
 |**[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)**|サインインとその他の認証イベント|
 |**[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)**|DLL の読み込みイベント|
-|**[DeviceEvents](advanced-hunting-deviceevents-table.md)**|複数のイベントの種類 (セキュリティ制御によってトリガーされるイベントを含む)(Microsoft Defender ウイルス対策悪用防止など)|
+|**[DeviceEvents](advanced-hunting-deviceevents-table.md)**|複数のイベントの種類 (セキュリティ制御によってトリガーされるイベントなど) (Microsoft Defender ウイルス対策悪用防止など)|
 |**[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)**|エンドポイント上の証明書検証イベントから取得した署名済みファイルの証明書情報|
 |**[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)**|デバイスにインストールされているソフトウェアのインベントリ (バージョン情報とサポート終了の状態を含む)|
 |**[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)**|デバイスで見つかったソフトウェアの脆弱性と、各脆弱性に対処する利用可能なセキュリティ更新プログラムの一覧|
@@ -81,9 +81,9 @@ ms.locfileid: "61934263"
 |
 
 > [!TIP]
-> Microsoft 365 Defender で高度な検索[を](/microsoft-365/security/defender/advanced-hunting-overview)使用して、Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps、Microsoft Defender for Identity のデータを使用して脅威を検出します。 [[設定] をオンMicrosoft 365 Defender。](/microsoft-365/security/defender/m365d-enable)
+> Microsoft 365 Defender で高度な検索[を](/microsoft-365/security/defender/advanced-hunting-overview)使用して、Defender for Endpoint、microsoft Defender for Office 365、Microsoft Defender for Cloud Apps、Microsoft Defender for Identity のデータを使用して脅威を探します。 [[オンにする] Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)。
 
-高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動する方法については、「Advanced Hunting [queries](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)を Microsoft Defender for Endpoint から移行する」を参照してください。
+高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動する方法の詳細については、「[Advanced hunting queries from Microsoft Defender for Endpoint」を参照してください](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)。
 
 ## <a name="related-topics"></a>関連項目
 

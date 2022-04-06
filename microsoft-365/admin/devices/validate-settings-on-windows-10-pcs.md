@@ -27,27 +27,27 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: ビジネス アプリ保護の設定Microsoft 365ユーザーのデバイスに適用されたことを確認するWindows 10します。
-ms.openlocfilehash: be25acb8414705c48a8763a0530ec2a70565de83
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 47c220b36050376d1eddf7d83435f175e00f88cb
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313595"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633285"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>PC のデバイス保護設定をWindows 10する
 
 > [!NOTE]
-> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 この機能は、デバイスに追加のセキュリティ機能を提供します。 [Defender for Business の詳細については、「Defender for Business」を参照してください](../../security/defender-business/mdb-overview.md)。
+> Microsoft Defender for Business 2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 この機能は、デバイスに追加のセキュリティ機能を提供します。 [Defender for Business の詳細については、「Defender for Business」を参照してください](../../security/defender-business/mdb-overview.md)。
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Windows 10 デバイス ポリシーが設定されていることを確認する
 
-デバイス ポリシー [を設定した後](protection-settings-for-windows-10-pcs.md)、ポリシーがユーザーのデバイスに適用されるのに最大で数時間かかる場合があります。 ユーザーのデバイス上でさまざまな Windows の設定画面を表示して、ポリシーが反映されていることを確認できます。 ユーザーは、Windows デバイスの Windows Update と Microsoft Defender ウイルス対策 Windows 10 の設定を変更できないので、多くのオプションがグレー表示されます。
+デバイス ポリシー [を設定した後](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md)、ポリシーがユーザーのデバイスに適用されるのに最大で数時間かかる場合があります。 ユーザーのデバイス上でさまざまな Windows の設定画面を表示して、ポリシーが反映されていることを確認できます。 ユーザーは、Windows Update デバイスの Windows Update と Microsoft Defender ウイルス対策 の設定を変更できないので、多くのWindows 10がグレー表示されます。
   
-1. [セキュリティの **設定** \> **更新Windows &amp;** \> **更新**\>] オプションに移動し、すべての設定が灰色で表示されているのを確認します。 
+1. [セキュリティの **設定** \> **の更新&amp;Windows Update** \>  \> **]** オプションに移動し、すべての設定が灰色で表示されているのを確認します。 
     
     ![[再起動] オプションはすべて灰色で表示されます。](../../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. [セキュリティの **設定** \> **更新Windows &amp;** \>  \>]オプションに移動し、すべての設定が灰色で表示されているのを確認します。 
+2. [セキュリティの **設定** \> **更新&amp;Windows Update** \>  \> **オプション]** に移動し、すべての設定がグレー表示に設定されているのを確認します。 
     
     ![Windows詳細更新プログラムのオプションはすべて灰色で表示されます。](../../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
@@ -65,6 +65,7 @@ ms.locfileid: "63313595"
   
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365ドキュメントとリソースの詳細](/admin)\
-[Pc のデバイス構成をWindows 10ビジネス](protection-settings-for-windows-10-pcs.md)
- プランのセキュリティで保護する [10 Microsoft 365方法](../security-and-compliance/secure-your-business-data.md)
+[Microsoft 365ドキュメントとリソースの詳細](/admin)
+
+[Pc のデバイス構成をWindows 10ビジネス](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
+ プランのセキュリティで保護する [10 Microsoft 365方法](../../admin/security-and-compliance/secure-your-business-data.md)

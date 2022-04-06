@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2a297813fbde94499f2d239627be6c33c153e8b0
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: d66dde2c3f346449c7ecd03a7ef577e39cf98991
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765110"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468801"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でインシデントを調査する
 
@@ -49,7 +49,7 @@ ms.locfileid: "62765110"
 
 インシデントをクリックすると、[インシデント] ウィンドウ **が表示されます**。 [ **インシデントを開く] ページ** を選択して、インシデントの詳細と関連情報 (アラート、デバイス、調査、証拠、グラフ) を表示します。
 
-![インシデントの詳細の画像 1.](images/atp-incident-details.png)
+:::image type="content" source="images/atp-incident-details.png" alt-text="インシデントの詳細" lightbox="images/atp-incident-details.png":::
 
 ### <a name="alerts"></a>アラート
 
@@ -62,7 +62,7 @@ ms.locfileid: "62765110"
 - 同じファイル - アラートに関連付けられているファイルは、まったく同じです
 - 同じ URL - アラートをトリガーした URL は、まったく同じです。
 
-![[アラート] タブの画像で、そのインシデントでアラートがリンクされた理由を示すインシデントの詳細ページが表示されます。](images/atp-incidents-alerts-reason.png)
+:::image type="content" source="images/atp-incidents-alerts-reason.png" alt-text="[アラート] タブに、そのインシデントでアラートがリンクされた理由を示すインシデントの詳細ページが表示されます。" lightbox="images/atp-incidents-alerts-reason.png":::
 
 アラートを管理し、他の情報と共にアラート メタデータを表示できます。 詳細については、「アラートの調査 [」を参照してください](investigate-alerts.md)。
 
@@ -70,13 +70,13 @@ ms.locfileid: "62765110"
 
 また、特定のインシデントの一部または関連するデバイスを調査することもできます。 詳細については、「デバイスの調査 [」を参照してください](investigate-machines.md)。
 
-![インシデントの詳細ページの [デバイス] タブのイメージ。](images/atp-incident-device-tab.png)
+:::image type="content" source="images/atp-incident-device-tab.png" alt-text="インシデントの詳細ページの [デバイス] タブ" lightbox="images/atp-incident-device-tab.png":::
 
 ### <a name="investigations"></a>調査
 
 [ **調査] を** 選択して、インシデント通知に応答してシステムによって起動された自動調査を表示します。
 
-![インシデントの詳細ページの [調査] タブのイメージ。](images/atp-incident-investigations-tab.png)
+:::image type="content" source="images/atp-incident-investigations-tab.png" alt-text="インシデントの詳細ページの [調査] タブ" lightbox="images/atp-incident-investigations-tab.png":::
 
 ## <a name="going-through-the-evidence"></a>証拠を確認する
 
@@ -84,7 +84,7 @@ Microsoft Defender for Endpoint は、インシデントがサポートしてい
 
 分析された各エンティティは、感染、修復、または疑わしいとマークされます。
 
-![インシデントの詳細ページの [証拠] タブの画像。](images/atp-incident-evidence-tab.png)
+:::image type="content" source="images/atp-incident-evidence-tab.png" alt-text="インシデントの詳細ページの [証拠] タブ" lightbox="images/atp-incident-evidence-tab.png":::
 
 ## <a name="visualizing-associated-cybersecurity-threats"></a>関連するサイバーセキュリティの脅威を視覚化する
 
@@ -94,11 +94,11 @@ Microsoft Defender for Endpoint は、脅威情報をインシデントに集約
 
 この **Graph** は、サイバーセキュリティ攻撃のストーリーを伝えます。 たとえば、どのデバイスで侵害またはアクティビティが観察されたかを示すエントリ ポイントが表示されます。 など
 
-![インシデント グラフのイメージ。](images/atp-incident-graph-tab.png)
+:::image type="content" source="images/atp-incident-graph-tab.png" alt-text="インシデント グラフ" lightbox="images/atp-incident-graph-tab.png":::
 
 インシデント グラフの円をクリックすると、悪意のあるファイルの詳細、関連するファイルの検出、世界中に発生したインスタンスの数、組織で観察されている場合は、インスタンス数を表示できます。
 
-![インシデントの詳細のイメージ。](images/atp-incident-graph-details.png)
+:::image type="content" source="images/atp-incident-graph-details.png" alt-text="インシデントの詳細ページ" lightbox="images/atp-incident-graph-details.png":::
 
 ## <a name="related-topics"></a>関連項目
 

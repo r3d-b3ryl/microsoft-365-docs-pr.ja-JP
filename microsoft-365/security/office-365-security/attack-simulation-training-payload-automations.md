@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、ペイロードオートメーション (ペイロードハーベスト) を使用して、Microsoft Defender for Office 365 プラン 2 での攻撃シミュレーショントレーニングの自動シミュレーションを収集および起動する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 13215b76646c5358bc9a043b91d3dbd403818684
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: aa223ab1abda110e32a9b9dc55e9dc76a1983321
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526306"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468437"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのペイロードの自動化
 
@@ -33,7 +33,7 @@ Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 の攻撃シ
 
 2. [ペイロードの **自動化] タブで、[** オートメーションの作成] ![アイコンを選択します。](../../media/m365-cc-sc-create-icon.png) **オートメーションを作成します**。
 
-   ![ポータルの攻撃シミュレーション トレーニングの [ペイロードの自動化] タブにMicrosoft 365 Defenderします。](../../media/attack-sim-training-payload-automations-create.png)
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="[ペイロードの自動化] タブの [シミュレーションの作成] ボタンは、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニング" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. 作成ウィザードが開きます。 この記事の残りの部分では、ページとページに含まれる設定について説明します。
 

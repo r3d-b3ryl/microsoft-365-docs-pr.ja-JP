@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 37eb6edb32c78df7ae23fe7cb52b249f81ca18b3
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 50b22bc5d1cf81754cc690808d67b6026991e296
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682176"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468845"
 ---
 # <a name="asr-rules-deployment-prerequisites"></a>ASR ルールの展開の前提条件
 
@@ -94,7 +94,7 @@ Microsoft Defender ウイルス対策モードを使用しない必要があり�
 - パッシブ
 - ブロック モードでのエンドポイントの検出と応答 (EDR) のパッシブ モード
 - 限られた定期的なスキャン (LPS)
-- オフ
+- Off
 
 「クラウド[配信の保護と保護」を参照Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)。
 
@@ -122,7 +122,7 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 ビジネスラインの運用に影響を与える可能性のある新しい大規模な実装と同様に、計画と実装では計画的な方法が重要です。 ASR ルールがマルウェアを防止する強力な機能を備えるので、独自の顧客ワークフローに最適な動作を実現するには、これらのルールの慎重な計画と展開が必要です。 環境で作業するには、ASR ルールを慎重に計画、テスト、実装、運用する必要があります。  
 
 > [!div class="mx-imgBorder"]
-> ![ASR ルールの展開フェーズ](images/asr-rules-deployment-phases.png)
+> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="ASR ルールの展開フェーズ" lightbox="images/asr-rules-deployment-phases.png":::
 
 >[!Note]
 >Microsoft 以外の HIPS を使用し、Microsoft Defender for Endpoint 攻撃表面縮小ルールに移行しているお客様の場合:監査モードからブロック モードに移行するまで、ASR ルールの展開を使用して HIPS ソリューションをサイド バイ サイドで実行する必要があります。 除外の推奨事項については、サードパーティのウイルス対策ベンダーに問い合う必要があります。  
@@ -137,7 +137,7 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 [フェーズ 4: 運用化](attack-surface-reduction-rules-deployment-operationalize.md)
 
-## <a name="reference"></a>関連情報
+## <a name="reference"></a>参照
 
 ### <a name="blogs"></a>ブログ
 

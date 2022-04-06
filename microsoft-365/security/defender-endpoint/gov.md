@@ -1,7 +1,7 @@
 ---
 title: 米国政府のお客様向けの Microsoft Defender for Endpoint
-description: Microsoft Defender for Endpoint for US Government のお客様の要件と利用可能な機能について説明します。
-keywords: government, gcc, high, requirements, capabilitis, defender, Microsoft Defender for Endpoint, endpoint, dod
+description: 利用可能な米国政府機関Microsoft Defender for Endpoint要件と機能の概要
+keywords: government, gcc, high, requirements, capabilitis, defender, Microsoft Defender for Endpoint, エンドポイント, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77160c44a3f0eda44e68c43c91aeddc169de24e1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: b6c9594112e347439945d3c21f61f9272edb935f
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475303"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507369"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府のお客様向けの Microsoft Defender for Endpoint
 
@@ -29,7 +29,7 @@ ms.locfileid: "64475303"
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender for Endpoint for US Government のお客様は、Azure US Government 環境で構築され、Azure Commercial の Defender for Endpoint と同じ基礎テクノロジを使用します。
+Microsoft Defender for Endpoint米国政府機関環境で構築された米国政府機関のお客様は、Azure Commercial の Defender for Endpoint と同じ基になるテクノロジを使用します。
 
 この製品は、GCC、GCC、DoD のお客様に提供され、商用バージョンと同じ予防、検出、調査、修復に基づいて提供されます。 ただし、このサービスの機能の可用性にはいくつかの違いがあります。
 
@@ -38,7 +38,7 @@ Microsoft Defender for Endpoint for US Government のお客様は、Azure US Gov
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
-Microsoft Defender for Endpoint for US Government のお客様には、次のいずれかの Microsoft ボリューム ライセンスオファーが必要です。
+Microsoft Defender for Endpointのお客様には、次のいずれかの Microsoft ボリューム ライセンスオファーが必要です。
 
 ### <a name="desktop-licensing"></a>デスクトップ ライセンス
 
@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint for US Government のお客様には、次のい
 |---|---|---|
 |Microsoft 365 GCC G5|Microsoft 365 E5 High のGCC|Microsoft 365 G5 for DOD|
 |Microsoft 365 G5 セキュリティ GCC|Microsoft 365 G5 Security for GCC High|Microsoft 365 G5 Security for DOD|
-|Microsoft Defender for Endpoint - GCC|Microsoft Defender for Endpoint for GCC High|Microsoft Defender for Endpoint for DOD|
+|Microsoft Defender for Endpoint - GCC|Microsoft Defender for Endpoint High のGCC|Microsoft Defender for Endpoint DOD の詳細|
 |Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 for GCC High|Windows 10 Enterprise E5 for DOD|
 |
 
@@ -62,13 +62,13 @@ Microsoft Defender for Endpoint for US Government のお客様には、次のい
 
 |GCC|GCC High|DoD|
 |---|---|---|
-|Microsoft Defender for Endpoint Server GCC|Microsoft Defender for Endpoint Server for GCC High|Microsoft Defender for Endpoint Server for DOD|
+|Microsoft Defender for Endpoint サーバー GCC|Microsoft Defender for Endpoint サーバー for GCC High|Microsoft Defender for Endpoint サーバー for DOD|
 |サーバー用 Microsoft Defender|Microsoft Defender for servers - Government|Microsoft Defender for servers - Government|
 |
 
 ## <a name="portal-urls"></a>ポータル URL
 
-米国政府機関のお客様向け Microsoft Defender for Endpoint ポータル URL を次に示します。
+米国政府機関のお客様向Microsoft Defender for Endpointポータル URL を次に示します。
 
 <br />
 
@@ -81,7 +81,7 @@ Microsoft Defender for Endpoint for US Government のお客様には、次のい
 |DoD|<https://security.microsoft.us>|
 |
 > [!NOTE]
-> Microsoft Defender for Endpoint https://transition.security.microsoft.com GCC商用から GCC に移行する過程で、Microsoft Defender for Endpoint 商用データにアクセスする場合は、Microsoft Defender for Endpoint にアクセスします。
+> お客様がGCCの顧客でありhttps://transition.security.microsoft.com、商用からMicrosoft Defender for Endpointに移行するGCC、商用データにアクセスMicrosoft Defender for Endpoint使用します。
 
 ## <a name="endpoint-versions"></a>エンドポイントのバージョン
 
@@ -104,7 +104,7 @@ Windows 10バージョン 1903 ([KB4586819](https://support.microsoft.com/help/4
 Windows 10 Version 1809 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows 10バージョン 1803 ([KB4598245](https://support.microsoft.com/help/4598245) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows 10バージョン 1709|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![は](images/svg/check-yes.svg) い [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> 注: [非推奨、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
-Windows 10バージョン 1703 以前|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
+Windows 10バージョン 1703 以前|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません|![不要](images/svg/check-no.svg) <br /> 注: サポートされません
 Windows Server 2022|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows Server 2019 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows Server 2016 (モダン) <sup>2</sup>|![はい。](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー
@@ -152,9 +152,10 @@ Windows Server 2008 R2 SP1|![はい。](images/svg/check-yes.svg)|![はい](imag
 
 次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルタールールが存在しないか、許可ルールを作成します。
 
-ドメインリストのスプレッドシート|説明
-:-----|:-----
-:::image type="content" source="images/mdatp-urls.png" alt-text="Microsoft Defender for Endpoint URL スプレッドシート" lightbox="images/mdatp-urls.png":::|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+|ドメインリストのスプレッドシート| 説明|
+|---|---|
+|Microsoft Defender for Endpointの URL リスト| 商用顧客向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender for Endpoint/Gov/GCC/DoD の URL リスト | Gov/GCC/DoD のお客様向けサービスの場所、地理的な場所、OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 詳細については、「デバイス プロキシと [インターネット接続の設定を構成する」を参照してください](configure-proxy-internet.md)。
 
@@ -190,13 +191,13 @@ API ドキュメントに記載されているパブリック URI の代わり�
 
 |フィーチャー名|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|ネットワーク評価|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
+|ネットワーク評価|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
 |ネットワーク検出|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
-|レポート: デバイス制御、デバイスの正常性、ファイアウォール|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
-|Web コンテンツ フィルタリング|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
+|レポート: デバイス制御、デバイスの正常性、ファイアウォール|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
+|Web コンテンツ フィルタリング|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
   
 
-Mobile Threat Defense の機能と既知のギャップは次のとおりです [(Microsoft Defender for Endpoint on Android & iOS):](mtd.md)
+Mobile Threat Defense の機能と既知のギャップを次に示します [(Android Microsoft Defender for Endpoint iOS &)](mtd.md)
 
 <br />
 
@@ -205,12 +206,12 @@ Mobile Threat Defense の機能と既知のギャップは次のとおりです 
 |フィーチャー名|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |Web 保護 (フィッシング対策とカスタム インジケーター)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
-|マルウェア保護 (Android-Only)|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
+|マルウェア保護 (Android-Only)|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
 |脱獄検出 (iOS-Only)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |条件付きアクセス/条件付き起動|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |MAM のサポート|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |プライバシーコントロール|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
-|脅威と脆弱性の管理 (TVM)|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
-|Web コンテンツ フィルタリング|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
+|脅威と脆弱性の管理 (TVM)|![いいえ](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
+|Web コンテンツ フィルタリング|![いいえ](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
   
 

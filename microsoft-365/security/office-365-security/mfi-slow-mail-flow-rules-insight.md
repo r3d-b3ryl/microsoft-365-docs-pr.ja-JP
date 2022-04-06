@@ -16,12 +16,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターで [低速メール フロー ルールの修正] 分析情報を使用して、組織内の非効率的または壊れたメール フロー ルール (トランスポート ルールとも呼ばれる) を特定して修正する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af6d727f84cdaaed1b7f7558313ac7d080a13c93
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 30dda2b890df9f33fbc9af04b5821fb24593a335
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681526"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468393"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでメール フロー ルールの分析情報が遅&修正する
 
@@ -44,7 +44,7 @@ ms.locfileid: "63681526"
 
 この通知を使用すると、メール フロー ルールを特定して微調整し、メール フローの遅延を減らすのに役立ちます。
 
-![メール フロー ダッシュボードの [推奨されるユーザー] 領域で、メール フロー ルールの低速分析情報を修正します。](../../media/mfi-fix-slow-mail-flow-rules.png)
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules.png" alt-text="メール フロー ダッシュボードの [おすすめ] 領域の [低速メール フロー ルールの修正] インサイト" lightbox="../../media/mfi-fix-slow-mail-flow-rules.png":::
 
 ウィジェットの [ **詳細の表示]** をクリックすると、詳細情報が表示されるフライアウトが表示されます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "63681526"
 - **各メッセージに費やされた平均時間**
 - **メッセージに費やされた中央値**: 上半分と下半分の時間データを分離する中央値。
 
-![[低速メール フロー ルールの修正] インサイトの [詳細の表示] をクリックした後に表示される詳細フライアウト。](../../media/mfi-fix-slow-mail-flow-rules-details.png)
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules-details.png" alt-text="[低速メール フロー ルールの修正] インサイトの [詳細の表示] をクリックした後に表示される詳細フライアウト" lightbox="../../media/mfi-fix-slow-mail-flow-rules-details.png":::
 
 メール フロー ルールにおける条件と例外の詳細については、「[Mail flow rule conditions and exceptions (predicates) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)」を参照してください。
 

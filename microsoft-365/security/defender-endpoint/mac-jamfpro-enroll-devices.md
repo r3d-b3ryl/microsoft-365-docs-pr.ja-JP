@@ -1,6 +1,6 @@
 ---
-title: MacOS デバイス上の Microsoft Defender for Endpoint を Jamf デバイスに登録Pro
-description: MacOS デバイス上の Microsoft Defender for Endpoint を Jamf デバイスに登録Pro
+title: MacOS デバイス上の Microsoft Defender for Endpoint を Jamf Pro
+description: MacOS デバイス上の Microsoft Defender for Endpoint を Jamf Pro
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ab3db2e2b64261ae00008aef448a214cd235bda9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 6189b61826cd56e2a8652032998c3b2df8f980ce
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765554"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468679"
 ---
-# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>MacOS デバイス上の Microsoft Defender for Endpoint を Jamf デバイスに登録Pro
+# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>MacOS デバイス上の Microsoft Defender for Endpoint を Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,39 +47,39 @@ JamF に登録するには、複数の方法があります。
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>登録方法 1: 登録の招待
 
-1. Jamf Proで、[登録の招待 **] に移動します**。
+1. [Jamf Pro] ダッシュボードで、[登録の招待 **] に移動します**。
 
-    ![構成設定のイメージ 1。](images/a347307458d6a9bbfa88df7dbe15398f.png)
+   :::image type="content" source="images/a347307458d6a9bbfa88df7dbe15398f.png" alt-text="構成設定1" lightbox="images/a347307458d6a9bbfa88df7dbe15398f.png":::
 
 2. [ **+ 新規] を選択します**。
 
-    ![ロゴのクローズアップ Description が自動的に生成されます。](images/b6c7ad56d50f497c38fc14c1e315456c.png)
+   :::image type="content" source="images/b6c7ad56d50f497c38fc14c1e315456c.png" alt-text="ロゴの説明が自動的に生成される閉じる" lightbox="images/b6c7ad56d50f497c38fc14c1e315456c.png":::
 
 3. [ **招待の受信者の指定] >** **[** 電子メール アドレス] の下に、受信者の電子メール アドレスを入力します。
 
-    ![構成設定 2 のイメージ。](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
+    :::image type="content" source="images/718b9d609f9f77c8b13ba88c4c0abe5d.png" alt-text="構成設定 2" lightbox="images/718b9d609f9f77c8b13ba88c4c0abe5d.png":::
 
-    ![構成設定のイメージ 3.](images/ae3597247b6bc7c5347cf56ab1e820c0.png)
+    :::image type="content" source="images/ae3597247b6bc7c5347cf56ab1e820c0.png" alt-text="構成設定3" lightbox="images/ae3597247b6bc7c5347cf56ab1e820c0.png":::
 
     たとえば、次の janedoe@contoso.com
 
-    ![構成設定のイメージ 4.](images/4922c0fcdde4c7f73242b13bf5e35c19.png)
+    :::image type="content" source="images/4922c0fcdde4c7f73242b13bf5e35c19.png" alt-text="構成設定4" lightbox="images/4922c0fcdde4c7f73242b13bf5e35c19.png":::
 
 4. 招待のメッセージを構成します。
 
-    ![構成設定のイメージ 5。](images/ce580aec080512d44a37ff8e82e5c2ac.png)
+   :::image type="content" source="images/ce580aec080512d44a37ff8e82e5c2ac.png" alt-text="構成設定5" lightbox="images/ce580aec080512d44a37ff8e82e5c2ac.png":::
 
-    ![構成設定のイメージ 6.](images/5856b765a6ce677caacb130ca36b1a62.png)
+   :::image type="content" source="images/5856b765a6ce677caacb130ca36b1a62.png" alt-text="構成設定6" lightbox="images/5856b765a6ce677caacb130ca36b1a62.png":::
 
-    ![構成設定のイメージ 7.](images/3ced5383a6be788486d89d407d042f28.png)
+   :::image type="content" source="images/3ced5383a6be788486d89d407d042f28.png" alt-text="構成設定7" lightbox="images/3ced5383a6be788486d89d407d042f28.png":::
 
-    ![構成設定 8 のイメージ。](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
+   :::image type="content" source="images/54be9c6ed5b24cebe628dc3cd9ca4089.png" alt-text="構成設定8" lightbox="images/54be9c6ed5b24cebe628dc3cd9ca4089.png":::
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>登録方法 2: 事前登録
 
 1. Jamf Proで、[**Prestage 登録] に移動します**。
 
-    ![構成設定のイメージ 9.](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
+   :::image type="content" source="images/6fd0cb2bbb0e60a623829c91fd0826ab.png" alt-text="構成設定9" lightbox="images/6fd0cb2bbb0e60a623829c91fd0826ab.png":::
 
 2. 「Computer [PreStage 登録」の手順に従います](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html)。
 
@@ -87,24 +87,24 @@ JamF に登録するには、複数の方法があります。
 
 1. [ **続行] を** 選択し、[システムの基本設定] ウィンドウから **CA 証明書をインストール** します。
 
-    ![登録 1 の Jamf Proイメージ。](images/jamfpro-ca-certificate.png)
+   :::image type="content" source="images/jamfpro-ca-certificate.png" alt-text="Jamf Pro登録 1" lightbox="images/jamfpro-ca-certificate.png":::
 
 2. CA 証明書がインストールされた後、ブラウザー ウィンドウに戻り、[続行] を **選択して** MDM プロファイルをインストールします。
 
-    ![登録 2 の Jamf Proイメージ。](images/jamfpro-install-mdm-profile.png)
+   :::image type="content" source="images/jamfpro-install-mdm-profile.png" alt-text="Jamf Pro登録 2" lightbox="images/jamfpro-install-mdm-profile.png":::
 
 3. [JAMF **からの** ダウンロードを許可する] を選択します。
 
-    ![登録 3 の Jamf Proイメージ。](images/jamfpro-download.png)
+   :::image type="content" source="images/jamfpro-download.png" alt-text="Jamf Pro登録3" lightbox="images/jamfpro-download.png":::
 
 4. [続行 **] を** 選択して MDM プロファイルのインストールを続行します。
 
-    ![登録 4 の Jamf Proイメージ。](images/jamfpro-install-mdm.png)
+   :::image type="content" source="images/jamfpro-install-mdm.png" alt-text="Jamf Pro登録 4" lightbox="images/jamfpro-install-mdm.png":::
 
 5. [続行 **] を** 選択して MDM プロファイルをインストールします。
 
-    ![登録 5 の Jamf Proイメージ。](images/jamfpro-mdm-unverified.png)
+   :::image type="content" source="images/jamfpro-mdm-unverified.png" alt-text="Jamf Pro登録5" lightbox="images/jamfpro-mdm-unverified.png":::
 
 6. [続行 **] を**  選択して構成を完了します。
 
-    ![登録 6 の Jamf Proイメージ。](images/jamfpro-mdm-profile.png)
+   :::image type="content" source="images/jamfpro-mdm-profile.png" alt-text="Jamf Pro登録 6" lightbox="images/jamfpro-mdm-profile.png":::

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: デバイス上のユーザーが検出した脅威を確認Microsoft Defender ウイルス対策管理Windows 10します。
-ms.openlocfilehash: e0e0613ad7805b8c4bde221aa2192c788fb75106
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c836554445f56a9a915885d55a4490c6bb5bd1a9
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324285"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633218"
 ---
 # <a name="review-detected-threats-and-take-action"></a>検出された脅威を確認して対処する
 
@@ -32,7 +32,7 @@ Microsoft Defender ウイルス対策検出し、次の種類の脅威から保�
 - フィッシングの試行
 - データ盗難の試行
 
-IT プロフェッショナル/管理者は、Intune に登録されている複数のデバイスWindows 10の脅威[](/mem/intune/enrollment/device-enrollment)検出に関する情報を表示Microsoft 365 管理センター。 次のような概要情報が表示されます。
+IT プロフェッショナル/管理者は、Windows 10 デバイスに登録されている Windows 10 デバイス間の脅威[](/mem/intune/enrollment/device-enrollment)検出に関する情報をIntune表示Microsoft 365 管理センター。 次のような概要情報が表示されます。
 
 - ウイルス対策保護が必要なデバイスの数
 - セキュリティ ポリシーに準拠していないデバイスの数
@@ -58,7 +58,7 @@ IT プロフェッショナル/管理者は、Intune に登録されている複
 
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>[アクティブな脅威] ページで **脅威検出を管理** する
 
-以下の手順は、お客様がご利用のお客様Microsoft 365 Business Premium。 [Windows 10デバイスをセキュリティで保護し、](../setup/secure-win-10-pcs.md)[Intune に登録する必要があります](/mem/intune/enrollment/windows-enrollment-methods)。
+以下の手順は、お客様がご利用のお客様Microsoft 365 Business Premium。 [Windows 10デバイスをセキュリティで保護し](../setup/secure-win-10-pcs.md)[、デバイスに登録するIntune](/mem/intune/enrollment/windows-enrollment-methods)。
 
 > [!NOTE]
 > [**Microsoft Defender ウイルス対策** アクティブな脅威] ページは段階的に展開され、すぐにアクセスできない場合があります。
@@ -77,8 +77,8 @@ IT プロフェッショナル/管理者は、Intune に登録されている複
 
 | アクション | 説明 |
 |--|--|
-| 保護の構成 | 脅威保護ポリシーを構成する必要があります。 ポリシー構成ページに移動するリンクを選択します。<br><br>サポートが必要な場合 「[デバイス セキュリティを管理する」を参照](/mem/intune/protect/endpoint-security-policy)してください。Microsoft Intune。 |
-| ポリシーを更新する | ウイルス対策ポリシーとリアルタイム保護ポリシーを更新または構成する必要があります。 リンクを選択して、ポリシー構成ページに移動します。<br><br>サポートが必要な場合 「[デバイス セキュリティを管理する」を参照](/mem/intune/protect/endpoint-security-policy)してください。Microsoft Intune。 |
+| 保護の構成 | 脅威保護ポリシーを構成する必要があります。 ポリシー構成ページに移動するリンクを選択します。<br><br>お困りの際は、 「[デバイス セキュリティを管理する」を参照](/mem/intune/protect/endpoint-security-policy)してください。Microsoft Intune。 |
+| ポリシーを更新する | ウイルス対策ポリシーとリアルタイム保護ポリシーを更新または構成する必要があります。 リンクを選択して、ポリシー構成ページに移動します。<br><br>お困りの際は、 「[デバイス セキュリティを管理する」を参照](/mem/intune/protect/endpoint-security-policy)してください。Microsoft Intune。 |
 | クイック スキャンの実行 | レジストリ キーや既知のスタートアップ フォルダーなど、マルウェアが登録される可能性がある一般的な場所に焦点を当て、デバイスでWindowsスキャンを開始します。 |
 | フル スキャンの実行 | デバイス上で完全なウイルス対策スキャンを開始し、マルウェアが登録される可能性がある一般的な場所と、デバイス上のすべてのファイルとフォルダーを含む場所に注目します。 結果は、ユーザーに[Microsoft エンドポイント マネージャー](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)。 |
 | ウイルス対策の更新 | ウイルス対策およびマルウェア対策保護 [のセキュリティ インテリジェンス更新](https://go.microsoft.com/fwlink/?linkid=2149926) プログラムを取得するには、デバイスが必要です。 |
@@ -86,7 +86,7 @@ IT プロフェッショナル/管理者は、Intune に登録されている複
 
 ## <a name="manage-threat-detections-in-microsoft-endpoint-manager"></a>脅威の検出を管理Microsoft エンドポイント マネージャー
 
-脅威検出を管理Microsoft エンドポイント マネージャーを使用できます。 Windows 10 Intune (デバイス[の](/mem/intune/enrollment/windows-enrollment-methods)一部) に登録する必要Microsoft エンドポイント マネージャー。
+脅威検出を管理Microsoft エンドポイント マネージャーを使用できます。 Windows 10デバイスは、デバイス [(Intune](/mem/intune/enrollment/windows-enrollment-methods)の一部) に登録するMicrosoft エンドポイント マネージャー。
 
 1. 管理センターのMicrosoft エンドポイント マネージャーに移動し<a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a>、サインインします。
 
@@ -105,7 +105,7 @@ IT プロフェッショナル/管理者は、Intune に登録されている複
 | Restart | 5 分以内Windows 10デバイスを強制的に再起動します。<br><br>**大事な：** デバイスの所有者またはユーザーは自動的に再起動の通知を受け取らなく、保存されていない作業を失う可能性があります。 |
 | クイック スキャン | レジストリ キーや既知のスタートアップ フォルダーなど、マルウェアが登録される可能性がある一般的な場所に焦点を当て、デバイスでWindowsスキャンを開始します。 結果は、ユーザーに[Microsoft エンドポイント マネージャー](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)。 |
 | フル スキャン | デバイス上で完全なウイルス対策スキャンを開始し、マルウェアが登録される可能性がある一般的な場所と、デバイス上のすべてのファイルとフォルダーを含む場所に注目します。 結果は、ユーザーに[Microsoft エンドポイント マネージャー](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)。 |
-| 同期 | デバイスが Intune でチェックインする必要があります (デバイスの一部Microsoft エンドポイント マネージャー)。 デバイスがチェック インすると、デバイスに割り当てられている保留中のアクションまたはポリシーがデバイスに受信されます。 |
+| 同期 | デバイスがデバイスにチェックインする必要があります (Intuneの Microsoft エンドポイント マネージャー一部)。 デバイスがチェック インすると、デバイスに割り当てられている保留中のアクションまたはポリシーがデバイスに受信されます。 |
 | 署名の更新 | ウイルス対策およびマルウェア対策保護 [のセキュリティ インテリジェンス更新](https://go.microsoft.com/fwlink/?linkid=2149926) プログラムを取得するには、デバイスが必要です。 |
 
 > [!TIP]
@@ -117,6 +117,6 @@ IT プロフェッショナル/管理者は、Intune に登録されている複
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法](secure-your-business-data.md)
+[ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法](../../admin/security-and-compliance/secure-your-business-data.md)
 
-[Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) の概要 (Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています)
+[概要 (Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています)

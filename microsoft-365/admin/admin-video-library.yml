@@ -1,24 +1,24 @@
 ### YamlMime:Landing
 title: 管理者トレーニング ビデオ ライブラリ
-summary: 短いビデオを使用してビジネスのMicrosoft 365設定および管理する方法について説明します。
+summary: 短いビデオを使用してビジネス向けの Microsoft 365 を設定および管理する方法について説明します。
 metadata:
   title: 管理者トレーニング ビデオ ライブラリ
-  description: 短いビデオを使用してビジネスのMicrosoft 365設定および管理する方法について説明します。
+  description: 短いビデオを使用してビジネス向けの Microsoft 365 を設定および管理する方法について説明します。
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: landing-page
   author: efrene
   ms.author: efrene
-  ms.date: 02/25/2022
+  ms.date: 03/31/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: daa4b3f2892a27229404dd61a836792a4b35eef5
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: 9d9a9515cf9bda34d49cd927e0b59e90fa0c79ed
+  ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63315863"
+  ms.lasthandoff: 04/04/2022
+  ms.locfileid: "64633197"
 landingContent:
-- title: 開始する
+- title: 作業の開始
   linkLists:
   - linkListType: video
     links:
@@ -119,9 +119,9 @@ landingContent:
   - linkListType: video
     links:
     - text: Windows 10 Pro デバイスをセキュリティで保護する
-      url: devices/protection-settings-for-windows-10-pcs.md
+      url: /microsoft-365/business-premium/m365bp-secure-windows-devices.md
     - text: iOS の Office アプリをセキュリティで保護する
-      url: devices/app-protection-settings-for-android-and-ios.md
+      url: /business-premium/m365bp-app-protection-settings-for-android-and-ios.md
 - title: セキュリティとコンプライアンス
   linkLists:
   - linkListType: video
@@ -143,9 +143,9 @@ landingContent:
     - text: 安全なリンクを管理する
       url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
     - text: データの損失を防止する
-      url: security-and-compliance/set-up-compliance.md
+      url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
     - text: 秘密度ラベルを作成する
-      url: security-and-compliance/set-up-compliance.md
+      url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
 - title: サポート
   linkLists:
   - linkListType: video

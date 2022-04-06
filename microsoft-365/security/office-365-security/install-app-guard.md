@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: ハードウェア ベースの分離の最新情報を取得します。 悪用や悪意のあるリンクのような現在および新しい攻撃が従業員の生産性と企業のセキュリティを妨げるのを防ぐ。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: da61ee2f5e29501e033ad44bc3fdb04ee2c042f0
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 1a8f752fd05499c9fec0d0c337c9ffee430f154f
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473323"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638073"
 ---
 # <a name="application-guard-for-office-for-admins"></a>管理者向け Application Guard for Office
 
@@ -39,7 +39,7 @@ Microsoft Defender Application Guard (Office 用 Application Office Guard) は�
 
 ### <a name="minimum-software-requirements"></a>最小ソフトウェア要件
 
-* **Windows**: Windows 10 Enterpriseバージョン 2004 (20H1) ビルド 19041 以降。 11 のWindowsがサポートされています。 
+* **Windows**: Windows 10 Enterpriseバージョン 2004 (20H1) ビルド 19041 以降。 すべてのバージョンのWindows 11サポートされています。 
 * **Office**: Office チャネルと月次 Enterprise チャネルのビルド バージョン 2011 16.0.13530.10000 以降。 Office Semi-Annual Enterprise、ビルド バージョン 2108 以降。 32 ビットバージョンと 64 ビット バージョンの両方のOfficeサポートされています。
 * **更新プログラム パッケージ**: Windows 10月次セキュリティ更新 [プログラム KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
@@ -51,7 +51,7 @@ Microsoft Defender Application Guard (Office 用 Application Office Guard) は�
 * Microsoft 365 E5またはMicrosoft 365 E5 Security
 
 > [!NOTE]
-> Microsoft 365 Apps for enterprise ベースのライセンスを使用している場合、アプリケーション のアプリケーション ガードにアクセスOffice。
+> Microsoft 365 Apps for enterpriseライセンス認証またはデバイス ベースのライセンスを使用する場合、アプリケーション のライセンス認証に対して Application Guard にアクセスOffice。
 
 ## <a name="deploy-application-guard-for-office"></a>アプリケーションのアプリケーション ガードを展開Office
 
@@ -186,15 +186,15 @@ Application Guard for Officeを起動するときに問題が発生した場合�
 
 また、Application Guard でドキュメントを開いたOffice問題が発生した場合は、Officeからフィードバックを送信できます。 フィードバックの送信[については、「Officeインサイ](https://insider.office.com/handbook)ダー ハンドブック」を参照してください。
 
-## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>エンドポイント向け Microsoft Defender と Microsoft Defender との統合 (Office 365
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>ユーザーとMicrosoft Defender for EndpointとのMicrosoft Defender for Office 365
 
-Application Guard for Office Microsoft Defender for Endpoint と統合され、分離された環境で発生する悪意のあるアクティビティの監視とアラートを提供します。
+Application Guard for Officeは、Microsoft Defender for Endpoint環境で発生する悪意のあるアクティビティの監視と警告を提供するために、アプリケーション と統合されています。
 
-[セーフ E365 E5](/microsoft-365/security/office-365-security/safe-docs) のドキュメントは、Microsoft Defender for Endpoint を使用して、Application Guard で開いたドキュメントをスキャンして、そのドキュメントをスキャンOffice。 保護の層を追加する場合、スキャンの結果が決定されるまで、ユーザーは Application Guard を離れOfficeアプリケーション ガードを終了できません。
+[セーフ E365 E5](/microsoft-365/security/office-365-security/safe-docs) のドキュメントは、Microsoft Defender for Endpoint を使用してアプリケーション ガードで開いたドキュメントをスキャンして、Office。 保護の層を追加する場合、スキャンの結果が決定されるまで、ユーザーは Application Guard を離れOfficeアプリケーション ガードを終了できません。
 
-Microsoft Defender for Endpoint は、エンタープライズ ネットワークが高度な脅威を防止、検出、調査、および対応するために設計されたセキュリティ プラットフォームです。 このプラットフォームの詳細については、「 [Microsoft Defender for Endpoint」を参照してください](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。 このプラットフォームへのデバイスのオンボーディングの詳細については、「 [デバイスを Microsoft Defender for Endpoint サービスにオンボードする」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
+Microsoft Defender for Endpointは、エンタープライズ ネットワークが高度な脅威を防止、検出、調査、および対応するために設計されたセキュリティ プラットフォームです。 このプラットフォームの詳細については、「Microsoft Defender for Endpoint」 [を参照してください](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。 このプラットフォームへのデバイスのオンボーディングの詳細については、「オンボード デバイスからサービスへの[オンボードMicrosoft Defender for Endpointしてください](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
 
-また、Defender for Endpoint で動作Office 365 Microsoft Defender を構成できます。 詳細については、「Integrate [Defender for Office 365 Microsoft Defender for Endpoint」を参照してください](integrate-office-365-ti-with-mde.md)。
+Defender for Endpoint でMicrosoft Defender for Office 365を構成できます。 詳細については、「アプリに統合する[」Defender for Office 365をMicrosoft Defender for Endpoint](integrate-office-365-ti-with-mde.md)。
 
 ## <a name="limitations-and-considerations"></a>制限事項と考慮事項
 
@@ -241,5 +241,5 @@ Application Guard は仮想化コンテナーを使用して、信頼されて�
 * サポートされていないファイルの種類保護ポリシーの既定の設定は、暗号化されている、または Information Rights Management (IRM) が設定されている、信頼されていないサポートされていないファイルの種類を開くのをブロックすることです。 これには、暗号化を使用して機密ラベルMicrosoft Information Protectionするファイル (機密または機密性の高いファイル) が含まれます。
 * 現時点では、CSV ファイルと HTML ファイルはサポートされていません。
 * 現在、NTFS Officeの Application Guard は動作しません。 "エラー" が表示される場合は、ERROR_VIRTUAL_DISK_LIMITATIONの圧縮を解除してください。
-* .NET を更新すると、Application Guard でファイルが開かない場合があります。 回避策として、ユーザーは、このエラーが発生した場合にデバイスを再起動できます。 問題の詳細については、「サンドボックスを開く際にエラー メッセージを受け取Windows Defender Application Guard[またはWindowsしてください](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)。
+* .NET を更新すると、Application Guard でファイルが開かない場合があります。 回避策として、ユーザーは、このエラーが発生した場合にデバイスを再起動できます。 この問題の詳細については、「エラー メッセージを受信する」を参照Windows Defender Application Guard[またはWindows サンドボックス](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)。
 * 詳細については[、「よく寄せられる質問 - Microsoft Defender Application Guard」を参照してください。](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

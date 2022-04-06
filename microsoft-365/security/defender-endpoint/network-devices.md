@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2affbe19484348a511487930d034da6799ca348c
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: f6092800de89ebfdeed35230b1ade296e0396a85
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560217"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468779"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 
@@ -36,9 +36,9 @@ ms.locfileid: "61560217"
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]
-> [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 04-13-2021 に公開されたネットワーク デバイスの検出と脆弱性評価ブログでは、Defender for Endpoint の新しいネットワーク デバイス検出機能に関する分析情報を \) 提供します。 この記事では、ネットワーク デバイスの検出が対処するように設計されている課題の概要と、これらの新機能の使用を開始する方法に関する詳細な情報を提供します。
+> 04-13-2021\) に公開されたネットワーク デバイスの検出と脆弱性評価ブログでは、Defender for Endpoint の新しいネットワーク  デバイス検出機能に関する分析情報を提供します。[](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( この記事では、ネットワーク デバイスの検出が対処するように設計されている課題の概要と、これらの新機能の使用を開始する方法に関する詳細な情報を提供します。
 
-ネットワーク検出機能は、Microsoft 365 Defenderコンソールの[デバイス インベントリ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>] セクションMicrosoft 365 Defender使用できます。
+ネットワーク検出機能は、Microsoft 365 Defenderコンソールと  Microsoft 365 Defenderセクションで使用できます<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>。
 
 指定された Microsoft Defender for Endpoint デバイスは、構成済みのネットワーク デバイスの定期的な認証スキャンを実行するために、各ネットワーク セグメントで使用されます。 検出された Defender for Endpoint の 脅威と脆弱性の管理 機能は、検出されたスイッチ、ルーター、WLAN コントローラー、ファイアウォール、VPN ゲートウェイを保護するための統合ワークフローを提供します。
 
@@ -98,17 +98,17 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 ## <a name="permissions"></a>アクセス許可
 
-評価ジョブを構成するには、Defender でセキュリティ設定を管理するというユーザーアクセス許可オプション **が必要です**。 アクセス許可は、ロールにアクセスして **設定** \> **できます**。 詳細については、「役割ベースの [アクセス制御の役割を作成および管理する」を参照してください](user-roles.md)。
+評価ジョブを構成するには、Defender でセキュリティ設定を管理するというユーザーアクセス許可オプション **が必要です**。 [ロール] にアクセスしてアクセス許可 **を設定** \> **できます**。 詳細については、「[ロールベースのアクセス制御のロールの作成と管理](user-roles.md)」を参照してください。
 
 ## <a name="install-the-network-scanner"></a>ネットワーク スキャナーのインストール
 
-1. [エンドポイント評価 **Microsoft 365の設定** に移動します \>  \>  \> ([**ネットワーク評価] の下**)。
+1. [エンドポイント評価 **Microsoft 365の設定** \>  \> **に** \> **移動** します ([**ネットワーク評価**] の下)。
     1. このポータルMicrosoft 365 Defender、[評価ジョブ] ページ設定 >移動します。
 
 2. ネットワーク スキャナーをダウンロードし、指定された Defender for Endpoint 評価デバイスにインストールします。
 
     > [!div class="mx-imgBorder"]
-    > ![[スキャナーのダウンロード] ボタン。](images/assessment-jobs-download-scanner.png)
+    > :::image type="content" source="images/assessment-jobs-download-scanner.png" alt-text="[スキャナーのダウンロード] ボタン" lightbox="images/assessment-jobs-download-scanner.png":::
 
 ## <a name="network-scanner-installation--registration"></a>ネットワーク スキャナーのインストール&登録
 
@@ -127,12 +127,12 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 ## <a name="configure-a-new-assessment-job"></a>新しい評価ジョブを構成する
 
-[評価ジョブ] ページ **で、[ネットワーク** 設定ジョブの **追加] を選択します**。 セットアップ プロセスに従って、定期的にスキャンしてデバイス インベントリに追加するネットワーク デバイスを選択します。
+[評価ジョブ] ページ **の [設定** ネットワーク評価 **ジョブの追加] を選択します**。 セットアップ プロセスに従って、定期的にスキャンしてデバイス インベントリに追加するネットワーク デバイスを選択します。
 
 ネットワーク デバイス インベントリでデバイスの重複を防止するには、各 IP アドレスが複数の評価デバイスで 1 回だけ構成されていることを確認します。
 
 > [!div class="mx-imgBorder"]
-> ![[ネットワーク評価ジョブの追加] ボタン。](images/assessment-jobs-add.png)
+> :::image type="content" source="images/assessment-jobs-add.png" alt-text="[ネットワーク評価ジョブの追加] ボタン" lightbox="images/assessment-jobs-add.png":::
 
 ネットワーク評価ジョブステップの追加:
 
@@ -162,17 +162,17 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 新しく検出されたデバイスは、[デバイス インベントリ] ページの [新しい **ネットワーク** デバイス] タブ **に表示** されます。 デバイスが更新されるまで、評価ジョブを追加するまでに最大 2 時間かかる場合があります。
 
 > [!div class="mx-imgBorder"]
-> ![[デバイス インベントリ] の [ネットワーク デバイス] セクション。](images/assessment-jobs-device-inventory.png)
+> :::image type="content" source="images/assessment-jobs-device-inventory.png" alt-text="デバイス インベントリの [ネットワーク デバイス] セクション" lightbox="images/assessment-jobs-device-inventory.png":::
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 ### <a name="network-scanner-installation-has-failed"></a>ネットワーク スキャナーのインストールに失敗しました
 
-ファイアウォール設定で、許可されているドメインに必要な URL が追加されるのを確認します。 また、「デバイス プロキシとインターネット接続の設定を構成する」の説明に従ってプロキシ [設定が構成されていることを確認します](configure-proxy-internet.md)。
+ファイアウォール設定で、許可されているドメインに必要な URL が追加されるのを確認します。 また、「デバイス プロキシとインターネット接続の設定を構成する」の説明に従ってプロキシ設定 [が構成されていることを確認します](configure-proxy-internet.md)。
 
-### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>Web Microsoft.com/devicelogin が表示されない
+### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>Web Microsoft.com/devicelogin ページが表示されない
 
-必要な URL がファイアウォールで許可されているドメインに追加されるのを確認します。 また、「デバイス プロキシとインターネット接続の設定を構成する」の説明に従ってプロキシ [設定が構成されていることを確認します](configure-proxy-internet.md)。
+必要な URL がファイアウォールで許可されているドメインに追加されるのを確認します。 また、「デバイス プロキシとインターネット接続の設定を構成する」の説明に従ってプロキシ設定 [が構成されていることを確認します](configure-proxy-internet.md)。
 
 ### <a name="network-devices-are-not-shown-in-the-device-inventory-after-several-hours"></a>数時間後にネットワーク デバイスがデバイス インベントリに表示されない
 

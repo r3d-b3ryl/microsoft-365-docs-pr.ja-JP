@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f55cb36d9960fef2da977a2c50ebab5a9e0e9122
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 246fd5ca880ca2d7e187283d06f19d071f5d7e0e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682022"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468525"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender for Identity sensor health and settings in Microsoft 365 Defender
 
@@ -32,7 +32,7 @@ ms.locfileid: "63682022"
 
 1. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>] で、[id **] 設定** に **移動します**。
 
-    ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="[ユーザー] ページの [設定]" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. [センサー **] ページを選択** すると、すべての Defender for Identity センサーが表示されます。 センサーごとに、その名前、ドメイン メンバーシップ、バージョン番号、更新プログラムの遅延が必要な場合、サービスの状態、更新状態、正常性状態、正常性の問題の数、センサーの作成時が表示されます。
 
@@ -45,7 +45,7 @@ ms.locfileid: "63682022"
 
     [![センサー フィルター。](../../media/defender-identity/sensor-filters.png)](../../media/defender-identity/sensor-filters.png#lightbox)
 
-    ![フィルター処理されたセンサー。](../../media/defender-identity/filtered-sensor.png)
+    :::image type="content" source="../../media/defender-identity/filtered-sensor.png" alt-text="フィルター処理されたセンサー" lightbox="../../media/defender-identity/filtered-sensor.png":::
 
 1. センサーのいずれかを選択すると、センサーとその正常性状態に関する情報がウィンドウに表示されます。
 
@@ -53,17 +53,18 @@ ms.locfileid: "63682022"
 
 1. 正常性の問題を選択すると、その詳細を示すウィンドウが表示されます。 閉じた問題を選択した場合は、ここから再び開きます。
 
-    ![問題の詳細。](../../media/defender-identity/issue-details.png)
+   :::image type="content" source="../../media/defender-identity/issue-details.png" alt-text="問題の詳細" lightbox="../../media/defender-identity/issue-details.png":::
+    
 
 1. [センサーの管理 **] を** 選択すると、ウィンドウが開き、センサーの詳細を構成できます。
 
-    ![センサーを管理します。](../../media/defender-identity/manage-sensor.png)
+   :::image type="content" source="../../media/defender-identity/manage-sensor.png" alt-text="[センサーの管理] オプション" lightbox="../../media/defender-identity/manage-sensor.png":::
 
-    ![センサーの詳細を構成します。](../../media/defender-identity/configure-sensor-details.png)
+   :::image type="content" source="../../media/defender-identity/configure-sensor-details.png" alt-text="センサーの設定を構成するページ" lightbox="../../media/defender-identity/configure-sensor-details.png":::
 
 1. [センサー **] ページで** 、[エクスポート] を選択して、センサーの一覧を .csvファイルにエクスポート **できます**。
 
-    ![センサーの一覧をエクスポートします。](../../media/defender-identity/export-sensors.png)
+   :::image type="content" source="../../media/defender-identity/export-sensors.png" alt-text="センサーのエクスポート リスト" lightbox="../../media/defender-identity/export-sensors.png":::
 
 ## <a name="add-a-sensor"></a>センサーの追加
 
@@ -71,11 +72,11 @@ ms.locfileid: "63682022"
 
 1. [センサー **の追加] を選択します**。
 
-    ![センサーを追加します。](../../media/defender-identity/add-sensor.png)
+   :::image type="content" source="../../media/defender-identity/add-sensor.png" alt-text="[センサーの追加] オプション" lightbox="../../media/defender-identity/add-sensor.png":::
 
 1. ウィンドウが開き、センサー インストーラーと生成されたアクセス キーをダウンロードするためのボタンが表示されます。
 
-    ![インストーラーとアクセス キーをダウンロードします。](../../media/defender-identity/installer-access-key.png)
+   :::image type="content" source="../../media/defender-identity/installer-access-key.png" alt-text="インストーラーをダウンロードしてキーを再生成するオプション" lightbox="../../media/defender-identity/installer-access-key.png":::
 
 1. [インストーラー **のダウンロード]** を選択して、パッケージをローカルに保存します。 zip ファイルには、次のファイルが含まれます。
 

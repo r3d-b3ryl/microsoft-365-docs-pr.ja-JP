@@ -1,7 +1,7 @@
 ---
 title: ブロック モードでのエンドポイントの検出と応答
-description: ブロック モードでのエンドポイントの検出と応答の詳細
-keywords: Microsoft Defender for Endpoint, mde, EDRモード, パッシブ モードのブロック
+description: ブロック モードでのエンドポイントでの検出と対応の詳細
+keywords: Microsoft Defender for Endpoint、mde、EDRモード、パッシブ モードのブロック
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 03/18/2022
+ms.date: 04/04/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 6e6bf499ab348d05cba237fa69b205cb495dccb0
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: eb40eaee9043e81331eca98c85f1467111cc37e4
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681064"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638358"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -48,31 +48,31 @@ ms.locfileid: "63681064"
 
 EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)。 組織のセキュリティ チームは、まだ有効になっていない[](tvm-security-recommendation.md)場合、ブロック モードEDR有効にするセキュリティの推奨事項を受け取ります。
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="ブロック モードでEDRを有効にしてください。":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="ブロック モードでEDRする推奨事項" lightbox="images/edrblockmode-TVMrecommendation.png":::
 
 > [!TIP]
-> 最適な保護を得る場合は、 **[必ず Microsoft Defender for Endpoint ベースラインを展開してください](configure-machines-security-baseline.md)**。
+> 最適な保護を得る場合は、必ずベースライン **[をMicrosoft Defender for Endpointしてください](configure-machines-security-baseline.md)**。
 
 ## <a name="what-happens-when-something-is-detected"></a>何かが検出されると何が起こりますか?
 
-ブロック EDRがオンになっていて、悪意のあるアーティファクトが検出されると、Microsoft Defender for Endpoint は、そのアーティファクトをブロックして修復します。 セキュリティ運用チームは、アクション センターで検出状態を [ブロック] または [[](respond-machine-alerts.md#check-activity-details-in-action-center)防止済み] と表示し、完了したアクションとして一覧表示されます。
+ブロック EDRがオンになっていて、悪意のあるアーティファクトが検出されると、そのアーティファクトMicrosoft Defender for Endpointブロックして修復します。 セキュリティ運用チームは、アクション センターで検出状態を [ブロック] または [[](respond-machine-alerts.md#check-activity-details-in-action-center)防止済み] と表示し、完了したアクションとして一覧表示されます。
 
 次の図は、ブロック モードで検出され、ブロックされたソフトウェアのインスタンスEDR示しています。
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDRモードで何かが検出されました。":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="ブロック モードでのEDR検出" lightbox="images/edr-in-block-mode-detection.png":::
 
 
 ## <a name="enable-edr-in-block-mode"></a>ブロック モードでEDRを有効にする
 
 > [!IMPORTANT]
-> プラットフォーム バージョン 4.18.2202.X から、Intune CSP を使用して特定のデバイス グループをターゲットに設定するブロック モードで EDR を設定できます。 引き続き、EDRポータルでブロック モードのテナント全体でMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">できます</a>。 EDRモードの場合は、パッシブ モードで Microsoft Defender ウイルス対策 を実行しているデバイス (Microsoft 以外のウイルス対策ソリューションがデバイスにインストールされ、アクティブ) に主に推奨されます。 
+> プラットフォーム バージョン 4.18.2202.X から、EDR をブロック モードで設定して、INTUNE CSP を使用して特定のデバイス グループをターゲットにできます。 引き続き、EDRポータルでブロック モードのテナント全体でMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">できます</a>。 EDRモードの場合は、パッシブ モードで Microsoft Defender ウイルス対策 を実行しているデバイス (Microsoft 以外のウイルス対策ソリューションがデバイスにインストールされ、アクティブ) に主に推奨されます。 
 
 > [!TIP]
 > ブロック モードで[オンにする前](#requirements-for-edr-in-block-mode)に、要件EDR確認してください。
 
 ### <a name="security-portal"></a>セキュリティ ポータル 
 
-1. ポータル () にMicrosoft 365 Defenderサインイン[https://security.microsoft.com/](https://security.microsoft.com/)します。
+1. Microsoft 365 Defender ポータル ([https://security.microsoft.com/](https://security.microsoft.com/)) に移動してサインインします。
 
 2. [エンドポイント **設定** \> **高度な機能** \> **] を** \> **選択します**。
 
@@ -80,7 +80,7 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理](nex
 
 ### <a name="intune"></a>Intune
 
-Intune でカスタム ポリシーを作成するには、「Deploy OMA-URIs Intune を使用して CSP をターゲットにし、オンプレミスと比較 [する」を参照してください](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune)。
+カスタム ポリシーを Intune作成するには、「OMA-URIsを使用して CSP をターゲットIntune展開する」および「オンプレミスとの比較」[を参照してください](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune)。
 
 ブロック モードで使用する Defender CSP のEDR詳細については、「Defender CSP」の「Configuration/PassiveRemediation」[を参照してください](/windows/client-management/mdm/defender-csp)。
 
@@ -93,7 +93,7 @@ Intune でカスタム ポリシーを作成するには、「Deploy OMA-URIs In
 |---|---|
 |アクセス許可|グローバル管理者またはセキュリティ管理者の役割が管理者に割り当てられている必要[Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。 詳細については、「基本アクセス許可 [」を参照してください](basic-permissions.md)。|
 |オペレーティング システム|デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows。 <br/>- Windows 11 <br/>- Windows 10 (すべてのリリース)<br/>- Windows Server 2022 <br/>- Windows Server 2019<br/>- Windows Server バージョン 1803 以降<br/>- Windows Server 2016とWindows Server 2012 R2 (新しい統合クライアント ソリューションを[使用](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview))<sup>[[1](#fn1)]</sup>  |
-|Microsoft Defender for Endpoint|デバイスは Defender for Endpoint にオンボードされている必要があります。 次の記事をご覧ください。 <br/>- [エンドポイント用 Microsoft Defender の最小要件](minimum-requirements.md)<br/>- [デバイスをオンボードし、Microsoft Defender for Endpoint の機能を構成する](onboard-configure.md)<br/>- [Defender Windowsサービスへのオンボード サーバー](configure-server-endpoints.md)<br/>- [最新Windows Server 2012ソリューションの R2 および 2016 の新機能 (プレビュー)](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) |
+|Microsoft Defender for Endpoint|デバイスは Defender for Endpoint にオンボードされている必要があります。 次の記事をご覧ください。 <br/>- [ユーザーの最小要件Microsoft Defender for Endpoint](minimum-requirements.md)<br/>- [デバイスをオンボードし、Microsoft Defender for Endpoint機能を構成する](onboard-configure.md)<br/>- [Defender Windowsサービスへのオンボード サーバー](configure-server-endpoints.md)<br/>- [最新Windows Server 2012ソリューションの R2 および 2016 の新機能 (プレビュー)](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) |
 |Microsoft Defender ウイルス対策|デバイスには、アクティブ Microsoft Defender ウイルス対策パッシブ モードでインストールおよび実行されている必要があります。 [アクティブMicrosoft Defender ウイルス対策モードまたはパッシブ モードの状態を確認します](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。|
 |クラウドによる保護|Microsoft Defender ウイルス対策保護を有効にするように[構成する必要があります](enable-cloud-protection-microsoft-defender-antivirus.md)。|
 |Microsoft Defender ウイルス対策プラットフォーム|デバイスは最新である必要があります。 PowerShell を使用して確認するには、 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) コマンドレットを管理者として実行します。 **AMProductVersion 行** に **4.18.2001.10 以上** が表示されます。 <p> 詳細については、「[Microsoft Defender ウイルス対策の更新プログラムの管理とベースラインの適用](manage-updates-baselines-microsoft-defender-antivirus.md)」を参照してください。|
@@ -102,7 +102,7 @@ Intune でカスタム ポリシーを作成するには、「Deploy OMA-URIs In
 (<a id="fn1">1</a>) [「ブロック モードEDR R2 でサポートされているWindows Server 2016」をWindows Server 2012してください。](#is-edr-in-block-mode-supported-on-windows-server-2016-and-windows-server-2012-r2)
 
 > [!IMPORTANT]
-> 最適な保護値を取得するには、ウイルス対策ソリューションが定期的な更新プログラムと重要な機能を受信するように構成され、除外が構成 [されていることを確認します](configure-exclusions-microsoft-defender-antivirus.md)。 EDRモードでは、Microsoft Defender for Endpoint に対して定義されているインジケーターではなく、Microsoft Defender ウイルス対策に対して定義されている[](manage-indicators.md)除外が尊重されます。
+> 最適な保護値を取得するには、ウイルス対策ソリューションが定期的な更新プログラムと重要な機能を受信するように構成され、除外が構成 [されていることを確認します](configure-exclusions-microsoft-defender-antivirus.md)。 EDRモードでは、ブロック モードに対して定義されている除外Microsoft Defender ウイルス対策、ブロック モードに対して定義されているインジケーター[](manage-indicators.md)はMicrosoft Defender for Endpoint。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -110,15 +110,11 @@ Intune でカスタム ポリシーを作成するには、「Deploy OMA-URIs In
 
 誤検知を受け取った場合は、ファイルを提出する際に、そのファイルを提出サイトのMicrosoft セキュリティ インテリジェンス[できます](https://www.microsoft.com/en-us/wdsi/filesubmission)。
 
-また、ユーザーの除外を定義Microsoft Defender ウイルス対策。 詳細については[、「除外の構成と検証」を参照Microsoft Defender ウイルス対策してください](configure-exclusions-microsoft-defender-antivirus.md)。
+また、ユーザーの除外を定義Microsoft Defender ウイルス対策。 「[Microsoft Defender ウイルス対策のスキャンの除外を構成および検証する](configure-exclusions-microsoft-defender-antivirus.md)」を参照してください。
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>デバイスで実行しているEDRブロック モードでMicrosoft Defender ウイルス対策する必要がありますか?
 
-ブロック モードでEDRの主な目的は、Microsoft 以外のウイルス対策製品によって見逃された侵害後の検出を修復する方法です。 ただし、パッシブ モードEDRアクティブ モードで実行されている場合Microsoft Defender ウイルス対策、ブロック モードの状態を維持することをお勧めします。
-
-- パッシブ Microsoft Defender ウイルス対策モードの場合、ブロック モードEDR、Microsoft Defender for Endpoint と共に別の防御層が提供されます。
-
-- Microsoft Defender ウイルス対策がアクティブ モードの場合、ブロック モードの EDR は追加のスキャンを提供しませんが、Microsoft Defender ウイルス対策 は侵害後の行動EDR検出に対して自動アクションを実行できます。
+ブロック モードでEDRの主な目的は、Microsoft 以外のウイルス対策製品によって見逃された侵害後の検出を修復する方法です。 Microsoft Defender ウイルス対策 がアクティブ モードのときにブロック モードで EDR を有効にすることで、リアルタイムの保護が検出を最初にキャッチして修復する必要があるため、最小限のメリットがあります。 Microsoft Defender for Antivirus EDRパッシブ モードで実行されているエンドポイントで、ブロック モードでアクティブ化を有効にすることをお勧めします。 EDR検出は[、PUA](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) 保護またはブロック モードでの修復機能の&調査によって[自動的に修復](automated-investigations.md)できます。
 
 ### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>ブロック モードEDRユーザーのウイルス対策保護に影響しますか?
 
@@ -134,23 +130,23 @@ EDRモードの場合、ユーザーのデバイスで実行されているサ�
 
 ### <a name="what-is-the-difference-between-active-and-passive-mode"></a>アクティブ モードとパッシブ モードの違いは何ですか?
 
-Windows 10、Windows 11、Windows Server、バージョン 1803 以降、Windows Server 2019、Windows Server 2022 を実行しているエンドポイントでは、Microsoft Defender ウイルス対策 がアクティブ モードの場合、デバイス上のプライマリ ウイルス対策として使用されます。 パッシブ モードで実行する場合、Microsoft Defender ウイルス対策ウイルス対策製品ではありません。 この場合、脅威はリアルタイムでMicrosoft Defender ウイルス対策修復されない。
+Windows 10、Windows 11、Windows Server、バージョン 1803 以降、Windows Server 2019、Windows Server 2022 を実行しているエンドポイントの場合、Microsoft Defender ウイルス対策 がアクティブ モードの場合は、デバイス上のプライマリ ウイルス対策として使用されます。 パッシブ モードで実行する場合、Microsoft Defender ウイルス対策ウイルス対策製品ではありません。 この場合、脅威はリアルタイムでMicrosoft Defender ウイルス対策修復されない。
 
 > [!NOTE]
-> Microsoft Defender ウイルス対策は、デバイスが Microsoft Defender for Endpoint にオンボードされている場合にのみパッシブ モードで実行できます。
+> Microsoft Defender ウイルス対策がパッシブ モードで実行できるのは、デバイスがデバイスにオンボードされている場合Microsoft Defender for Endpoint。
 
-詳細については、「互換性に[関するMicrosoft Defender ウイルス対策参照してください](microsoft-defender-antivirus-compatibility.md)。
+詳細については、「[Microsoft Defender ウイルス対策の互換性](microsoft-defender-antivirus-compatibility.md)」を参照してください。
 
-### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>アクティブまたはパッシブ モードMicrosoft Defender ウイルス対策確認する方法
+### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>操作方法モードMicrosoft Defender ウイルス対策モードかパッシブ モードか確認してください。
 
 アクティブ モードまたはパッシブ Microsoft Defender ウイルス対策実行されているかどうかを確認するには、デバイスでコマンド プロンプトまたは PowerShell を使用Windows。
 
-|メソッド|Procedure|
+|Method|プロシージャ|
 |---|---|
 |PowerShell|1. 選択したスタート メニュー入力`PowerShell`を開始し、結果でWindows PowerShellを開きます。<br/><br/>2. と入力します `Get-MpComputerStatus`。<br/><br/>3. 結果の一覧の **[AMRunningMode** ] 行で、次のいずれかの値を探します。<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>詳細については、「 [Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。|
 |コマンド プロンプト|1. コマンド を選択スタート メニュー`Command Prompt`入力を開始し、結果でコマンド Windowsを開きます。<br/><br/>2. と入力します `sc query windefend`。<br/><br/>3. 結果の一覧の **STATE** 行で、サービスが実行されているのを確認します。 |
 
-### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>パッシブ モードでブロック モードEDRがオンになっていることを確認するにはMicrosoft Defender ウイルス対策方法を示します。
+### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>操作方法モードでEDRがオンになっていることを確認し、パッシブ モードでMicrosoft Defender ウイルス対策を確認しますか?
 
 PowerShell を使用して、パッシブ モードEDR実行されている状態でブロック モードのMicrosoft Defender ウイルス対策確認できます。
 

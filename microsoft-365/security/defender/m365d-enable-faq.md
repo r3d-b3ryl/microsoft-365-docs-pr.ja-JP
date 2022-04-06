@@ -1,7 +1,7 @@
 ---
-title: ユーザー設定をオンにするときによく寄せられる質問Microsoft 365 Defender
-description: ライセンス、アクセス許可、初期設定、およびライセンスの有効化に関連するその他の製品およびサービスに関する最も一般的な質問に対する回答をMicrosoft 365 Defender
-keywords: よく寄せられる質問、FAQ、GCC、開始、Microsoft 365 Defender、Microsoft 365 Defender、M365、セキュリティ、データの場所、必要なアクセス許可、ライセンスの適格性、設定ページの有効化
+title: Microsoft 365 Defenderを有効にする際によく寄せられる質問
+description: ライセンス、アクセス許可、初期設定、およびMicrosoft 365 Defenderの有効化に関連するその他の製品やサービスに関してよく寄せられる質問への回答を取得します。
+keywords: よく寄せられる質問, FAQ, GCC, 作業の開始, Microsoft 365 Defenderを有効にする, Microsoft 365 Defender, M365, セキュリティ, データの場所, 必要なアクセス許可, ライセンス資格, 設定ページ
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,14 +21,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e5ed41f400c24a2522ea49f2524d0fe629bdbb9f
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 73dddcfc1389eb5bb0b0115f0666c413dc7d2a01
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374756"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663206"
 ---
-# <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>ユーザー設定をオンにするときによく寄せられる質問Microsoft 365 Defender
+# <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Microsoft 365 Defenderを有効にする際によく寄せられる質問
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,43 +36,43 @@ ms.locfileid: "61374756"
 **適用対象:**
 - Microsoft 365 Defender
 
-必要なライセンスとアクセス許可、サポート サービスの展開、初期設定[など](microsoft-365-defender.md)、Microsoft 365 Defender の有効に関する最も一般的な質問に対する回答を読み取る。
+必要なライセンスとアクセス許可、サポート サービスの展開、初期設定など、[Microsoft 365 Defender](microsoft-365-defender.md)の有効化に関してよく寄せられる質問に対する回答をお読みください。
 
-サービスを有効にする方法については、「サービスを有効にする」[を参照Microsoft 365 Defender。](m365d-enable.md)
+サービスを有効にする方法については、「[Microsoft 365 Defenderを有効にする」を参照](m365d-enable.md)してください。
 
-## <a name="i-dont-have-a-microsoft-365-e5-license-can-i-still-use-microsoft-365-defender"></a>ライセンスを持Microsoft 365 E5。 引き続き使用Microsoft 365 Defender?
+## <a name="i-dont-have-a-microsoft-365-e5-license-can-i-still-use-microsoft-365-defender"></a>Microsoft 365 E5 ライセンスがありません。 Microsoft 365 Defenderを引き続き使用できますか?
 
-次の E5 以外のライセンスをお持ちのお客様は、次のMicrosoft 365 Defender。
+次の E5 以外のライセンスをお持ちのお客様は、Microsoft 365 Defenderを使用できます。
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
 - Defender for Office 365 (プラン 2)
 
-サポートされているライセンスの完全な一覧については、ライセンス [要件を参照してください](prerequisites.md#licensing-requirements)。
+サポートされているライセンスの完全な一覧については、 [ライセンス要件を参照](prerequisites.md#licensing-requirements)してください。
 
-## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>アプリケーションの使用を開始するには、何かをインストールまたは展開するMicrosoft 365 Defender。
+## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>Microsoft 365 Defenderの使用を開始するには、何かをインストールまたはデプロイする必要がありますか?
 
-いいえ、Microsoft 365 Defender既に展開Microsoft 365サービスからデータを統合します。 オンにした後、インシデント、オートメーション、およびハンティング エクスペリエンスは、展開された製品の範囲内で動作し始めるでしょう。 これらの製品が適切に展開されていない場合、Microsoft 365 Defenderはデータを表示し、何も実行できません。
+いいえ。Microsoft 365 Defenderは、既にデプロイしたMicrosoft 365セキュリティ サービスのデータを統合します。 これを有効にすると、インシデント、自動化、およびハンティング のエクスペリエンスが、デプロイされた製品の範囲内で動作し始めます。 これらの製品のいずれも適切にデプロイされていない場合、Microsoft 365 Defenderはデータを表示せず、何もアクションを実行できません。
 
-ユーザー エクスペリエンスを最適化Microsoft 365 Defender、サポートされているセキュリティ製品とサービスMicrosoft 365[展開することをお勧めします](deploy-supported-services.md)。
+Microsoft 365 Defenderエクスペリエンスを最適化するために、サポート *されているすべての*[Microsoft 365セキュリティ製品とサービス](deploy-supported-services.md)をデプロイすることをお勧めします。
 
-## <a name="where-does-microsoft-365-defender-process-and-store-my-data"></a>データをMicrosoft 365 Defender保存する場所
+## <a name="where-does-microsoft-365-defender-process-and-store-my-data"></a>データの処理と保存Microsoft 365 Defender場所
 
-Microsoft 365 Defenderデータが処理および保存されるデータ センターに最適な場所が自動的に選択されます。 Microsoft Defender for Endpoint を使用している場合は、Defender for Endpoint で使用される場所と同じ場所が選択されます。
+Microsoft 365 Defender統合データが処理および格納されるデータ センターに最適な場所が自動的に選択されます。 Microsoft Defender for Endpointがある場合は、Defender for Endpoint で使用されているのと同じ場所が選択されます。
 
 >[!NOTE]
->Microsoft Defender for Cloud を使用してオンにすると、Microsoft Defender for Endpoint が欧州連合 (EU) データ センターで自動的にプロビジョニングされます。 Microsoft 365 Defender、この方法で Microsoft Defender for Endpoint をプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングされます。
+>Microsoft Defender for Endpoint Microsoft Defender for Cloudを有効にすると、欧州連合 (EU) データ センターで自動的にプロビジョニングされます。 Microsoft 365 Defenderは、この方法でMicrosoft Defender for Endpointをプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングされます。
 
-データ センターの場所は、サービスがプロビジョニングされる前と後に、[データ センターの設定] ページに表示Microsoft 365 Defender **(** 設定 > Microsoft 365 Defender)。 別のデータ センターの場所を使用する場合は、Microsoft サポートに問い合わせMicrosoft 365 Defenderポータルで [ヘルプが必要か] を選択します。
+データ センターの場所は、Microsoft 365 Defender (**設定 > Microsoft 365 Defender**) の設定ページでサービスがプロビジョニングされる前と後に表示されます。 別のデータ センターの場所を使用する場合は、Microsoft 365 Defender ポータルで [**ヘルプが必要ですか?**] を選択して Microsoft サポートにお問い合わせください。
 
-## <a name="where-can-i-access-microsoft-365-defender"></a>アクセスできる場所Microsoft 365 Defender?
+## <a name="where-can-i-access-microsoft-365-defender"></a>Microsoft 365 Defenderにアクセスできる場所
 
-Microsoft 365 Defenderは次の場所で利用できます <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> 。
+Microsoft 365 Defenderは次<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a>の場合に使用できます。
 
-## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>ユーザーにアクセスするために必要なアクセス許可Microsoft 365 Defender。
+## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>Microsoft 365 Defenderにアクセスするには、どのようなアクセス許可が必要ですか?
 
-次の役割 (Azure Active Directory) Azure AD割り当てられたアカウントは、Microsoft 365 Defender機能とデータにアクセスできます。
+次のAzure Active Directory (Azure AD) ロールが割り当てられたアカウントは、Microsoft 365 Defender機能とデータにアクセスできます。
 
 - グローバル管理者
 - セキュリティ管理者
@@ -88,23 +88,23 @@ Microsoft 365 Defenderは次の場所で利用できます <a href="https://go.m
 > [!NOTE]
 > Microsoft Defender for Endpoint でのロールベースのアクセス制御設定は、データへのアクセスに影響を与えます。 詳細については、「[Microsoft 365 Defender へのアクセスの管理](m365d-permissions.md)」をお読みください。
 
-## <a name="what-time-zone-does-microsoft-365-defender-default-to"></a>既定で使用Microsoft 365 Defenderタイム ゾーンは何ですか?
+## <a name="what-time-zone-does-microsoft-365-defender-default-to"></a>既定Microsoft 365 Defenderタイム ゾーンは何ですか?
 
-既定では、Microsoft 365 Defenderタイム ゾーンに時刻情報が表示されます。 この設定を変更して、ローカル タイム ゾーンを使用できます。 [タイム ゾーンの設定の詳細](m365d-time-zone.md)
+既定では、Microsoft 365 Defenderは UTC タイム ゾーンに時刻情報を表示します。 この設定は、ローカル タイム ゾーンを使用するように変更できます。 [タイム ゾーンの設定の詳細](m365d-time-zone.md)
 
-## <a name="how-can-i-learn-about-new-microsoft-365-defender-feature-and-ui-updates"></a>新しい機能と UI の更新Microsoft 365 Defenderを確認する方法
+## <a name="how-can-i-learn-about-new-microsoft-365-defender-feature-and-ui-updates"></a>新しいMicrosoft 365 Defender機能と UI 更新プログラムについて学習するにはどうすればよいですか?
 
-Microsoft は、以下を含むさまざまなチャネルを通じて定期的に情報を提供しています。
+Microsoft は、次のようなさまざまなチャネルを通じて定期的に情報を提供しています。
 
-- メッセージ[センター](../../admin/manage/message-center.md) (Microsoft 365 管理センター
-- コンプライアンス 技術コミュニティMicrosoft 365[セキュリティ&ブログ投稿](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
+- Microsoft 365 管理センターの[メッセージ センター](../../admin/manage/message-center.md)
+- [Microsoft 365 セキュリティ&コンプライアンス 技術コミュニティ](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)のブログ投稿
 
-プレビュー機能をオンにして、一般に公開されている最新のエクスペリエンス [を取得します](preview.md)。
+[プレビュー機能](preview.md)をオンにして、公開されている最新のエクスペリエンスを取得します。
 
 ## <a name="related-topics"></a>関連項目
 
-- [Microsoft 365 Defender概要](microsoft-365-defender.md)
-- [[設定] をオンMicrosoft 365 Defender。](m365d-enable.md)
+- [Microsoft 365 Defenderの概要](microsoft-365-defender.md)
+- [Microsoft 365 Defenderをオンにします](m365d-enable.md)。
 - [ライセンス要件およびその他の前提条件](prerequisites.md)
 - [サポートされているサービスを展開する](deploy-supported-services.md)
 - [プレビュー機能を有効にする](preview.md)

@@ -3,21 +3,21 @@
   items:
     - name: 概要
       items:
-        - name: Microsoft Defender for Business とは
+        - name: データのMicrosoft Defender for Business?
           href: mdb-overview.md
         - name: 簡略化された構成プロセス
           href: mdb-simplified-configuration.md
-        - name: 中小企業のプランを比較する
+        - name: 中小規模のビジネスのプランを比較する
           href: compare-mdb-m365-plans.md
-        - name: アプリケーションとのMicrosoft 365 Lighthouse
+        - name: Microsoft 365 Lighthouse との統合
           href: mdb-lighthouse-integration.md
-    - name: 概要
+    - name: 作業の開始
       items:
-        - name: ビジネス向け Defender の取得
+        - name: Defender for Business を取得する
           href: get-defender-business.md
         - name: セットアップ ウィザードを使用する
           href: mdb-use-wizard.md
-        - name: ポータルの使用を開始する
+        - name: 概要を使用する方法
           href: mdb-get-started.md
         - name: ダッシュボードを脆弱性の管理する
           href: mdb-view-tvm-dashboard.md
@@ -27,13 +27,13 @@
       items:
         - name: セットアップの概要
           href: mdb-setup-configuration.md
-        - name: 手順 1 - 要件を確認する
+        - name: 手順 1 - 要件をレビューする
           href: mdb-requirements.md
-        - name: 手順 2 - 役割とアクセス許可を割り当てる
+        - name: 手順 2 - ロールとアクセス許可を割り当てる
           href: mdb-roles-permissions.md
-        - name: 手順 3 - 電子メール通知を設定する
+        - name: 手順 3 - メール通知を設定する
           href: mdb-email-notifications.md
-        - name: 手順 4 - オンボード デバイス
+        - name: 手順 4 - デバイスのオンボード
           href: mdb-onboard-devices.md
         - name: 手順 5 - セキュリティ ポリシーを構成する
           href: mdb-configure-security-settings.md
@@ -51,9 +51,9 @@
       items:
         - name: ポリシーの表示、編集、作成
           href: mdb-view-edit-create-policies.md
-        - name: ポリシーの順序
+        - name: 'ポリシーの順序:'
           href: mdb-policy-order.md
-        - name: 次世代の保護設定
+        - name: 次世代保護の設定
           href: mdb-next-gen-configuration-settings.md
         - name: ファイアウォールの設定
           href: mdb-firewall.md
@@ -67,13 +67,13 @@
           href: mdb-create-edit-device-groups.md
     - name: 参照情報
       items:
-        - name: ヘルプを受ける方法やサポートに問い合わせする方法
+        - name: ヘルプを入手する方法またはサポートに問い合わせる方法
           href: mdb-get-help.md
         - name: よく寄せられる質問
           href: mdb-faq.yml
         - name: トラブルシューティング
           href: mdb-troubleshooting.yml
         - name: Microsoft 365 Business Premium
-          href: /microsoft-365/business-premium
+          href: /microsoft-365/business-premium/
         - name: Microsoft 365 Lighthouse
           href: /microsoft-365/lighthouse/m365-lighthouse-overview
