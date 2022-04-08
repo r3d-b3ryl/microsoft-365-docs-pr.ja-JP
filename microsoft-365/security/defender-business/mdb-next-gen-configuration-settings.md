@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a5ffc97c6b2cfd1016da1f218ab2a16c153a5528
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a39a0a55592ba8f76403f9e8d9aaf7416cb35228
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666286"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714243"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessで次世代の構成設定を理解する
 
@@ -88,7 +88,7 @@ Defender for Business では、次のセキュリティ設定が事前構成さ�
 | [ネットワーク ファイルをスキャンする](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | 既定では、 [AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) は有効ではなく、ネットワーク ファイルはスキャンされません。 |
 | [電子メール メッセージをスキャンする](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | 既定では、 [AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) は有効ではなく、電子メール メッセージはスキャンされません。 |
 | [検疫されたマルウェアを保持する日数 (0 ~ 90)](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | 既定では、 [DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) この設定はゼロ (0) 日に設定されます。 検疫内のArtifactsは自動的に削除されません。  |
-| [サンプルの同意を送信する](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | 既定では、 [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) は安全なサンプルを自動的に送信します。 安全なサンプルの例には`.bat`、`.dll``.scr`個人を特定できる情報 (PII) が含まれていないファイル、`.exe`ファイルなどがあります。 ファイルに PII が含まれている場合、ユーザーは、サンプルの送信の続行を許可する要求を受け取ります。<br/><br/>[クラウド保護とサンプル送信の詳細を確認する](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
+| [サンプルの同意を送信する](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | 既定では、 [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) は安全なサンプルを自動的に送信するように設定されています。 安全なサンプルの例には`.bat`、`.dll``.scr`個人を特定できる情報 (PII) が含まれていないファイル、`.exe`ファイルなどがあります。 ファイルに PII が含まれている場合、ユーザーは、サンプルの送信の続行を許可する要求を受け取ります。<br/><br/>[クラウド保護とサンプル送信の詳細を確認する](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
 | [リムーバブル ドライブをスキャンする](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | 既定では、 [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) は、デバイス上の USB サム ドライブなどのリムーバブル ドライブをスキャンするように構成されています。<br/><br/>[マルウェア対策ポリシー設定の詳細を確認する](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
 | [毎日のクイック スキャン時間を実行する](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | 既定では、 [ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) は午前 2 時に設定されます。<br/><br/>[スキャン設定の詳細については、こちらを参照してください](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)。   |
 | [スキャンを実行する前に署名の更新を確認する](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | 既定では、 [CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) は、ウイルス対策/マルウェア対策スキャンを実行する前にセキュリティ インテリジェンス更新プログラムをチェックするように構成されています。<br/><br/>スキャン設定と[セキュリティ インテリジェンスの更新の](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates)[詳細について説明](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)します。   |

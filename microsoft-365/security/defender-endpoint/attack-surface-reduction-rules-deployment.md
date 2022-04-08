@@ -1,5 +1,5 @@
 ---
-title: ASR ルールの展開の前提条件
+title: 攻撃対象領域の削減 (ASR) ルールの展開の概要
 description: 攻撃表面縮小 (ASR) ルールの展開に関する概要と前提条件のガイダンスについて説明します。
 keywords: 攻撃表面の縮小ルールの展開、ASR 展開、ASR の有効化、ASR の構成、ホスト侵入防止システム、保護規則、悪用防止ルール、悪用防止ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、ASR 規則の構成
 search.product: eADQiWindows 10XVcnh
@@ -20,16 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 0180bfcef9d478dcf8e334a180ea3df993585e00
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 8743d13939e73e25cefd08724d9a2f8d5a7fa410
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666418"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705540"
 ---
-# <a name="asr-rules-deployment-prerequisites"></a>ASR ルールの展開の前提条件
-
-## <a name="before-you-begin"></a>はじめに
+# <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>攻撃対象領域の削減 (ASR) ルールの展開の概要
 
 攻撃面は、組織がサイバー脅威や攻撃に対して脆弱なすべての場所です。 組織の攻撃面には、攻撃者が組織のデバイスまたはネットワークを侵害する可能性があるすべての場所が含まれます。 攻撃対象を減らすことは、組織のデバイスとネットワークを保護することを意味します。これにより、攻撃者の攻撃方法が少なくなります。 Microsoft Defender for Endpointで見つかった多くのセキュリティ機能の 1 つである攻撃表面縮小 (ASR) ルールの構成が役立ちます。
 
@@ -40,6 +38,8 @@ ASR ルールは、次のような特定のソフトウェア動作を対象と�
 - 通常の日常的な作業中にアプリが通常発生しない動作
 
 さまざまな攻撃面を減らすことで、最初に攻撃が発生するのを防ぐのに役立ちます。
+
+## <a name="before-you-begin"></a>はじめに
 
 最初の準備では、配置するシステムの機能を理解することが重要です。 この機能を理解すると、組織を保護するために最も重要な ASR 規則を判断するのに役立ちます。 また、ASR デプロイの準備に必要な前提条件がいくつかあります。
 
@@ -129,13 +129,13 @@ Microsoft Defender ウイルス対策バージョンを最新の状態に保つ�
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>このデプロイ コレクションのその他のトピック
 
-[フェーズ 1: 計画](attack-surface-reduction-rules-deployment-plan.md)
+[攻撃面の縮小 (ASR) ルールをテストする](attack-surface-reduction-rules-deployment-test.md)
 
-[フェーズ 2: テスト](attack-surface-reduction-rules-deployment-test.md)
+[攻撃面の縮小 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md)
 
-[フェーズ 3: 実装](attack-surface-reduction-rules-deployment-implement.md)
+[攻撃面の縮小 (ASR) ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[フェーズ 4: 運用化](attack-surface-reduction-rules-deployment-operationalize.md)
+[攻撃対象の縮小 (ASR) ルールリファレンス](attack-surface-reduction-rules-reference.md)
 
 ## <a name="reference"></a>Reference
 
@@ -155,7 +155,7 @@ Microsoft Defender ウイルス対策バージョンを最新の状態に保つ�
 
 [マルウェア感染を防ぐために攻撃面の減少ルールを使用する](attack-surface-reduction.md)
 
-[攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
+[攻撃対象の縮小ルールを有効にする - 代替構成](enable-attack-surface-reduction.md)
 
 [攻撃面の縮小ルールリファレンス](attack-surface-reduction-rules-reference.md)
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc4ed070e900f9df892abb58cd05cdad2dca619
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 5f04933d54bf02732fea34df25b25e3996e23932
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687013"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705101"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -48,6 +48,10 @@ Linux のMicrosoft Defender for Endpointには、マルウェア対策とエン�
 
 - Microsoft 365 Defender ポータルへのアクセス
 - [systemd](https://systemd.io/) システム マネージャーを使用した Linux ディストリビューション
+
+  >[!NOTE]
+  >RHEL/CentOS 6.x を除くシステム マネージャーを使用した Linux ディストリビューションでは、SystemV と Upstart の両方がサポートされます。
+
 - Linux および BASH スクリプトの初心者レベルのエクスペリエンス
 - デバイスに対する管理者特権 (手動展開の場合)
 
@@ -221,6 +225,6 @@ Microsoft は、パフォーマンス、セキュリティ、新機能を提供�
 
 特定のアプリケーションからの高い I/O ワークロードでは、Microsoft Defender for Endpointインストール時にパフォーマンスの問題が発生する可能性があります。 これには、Jenkins や Jira などの開発者シナリオ用のアプリケーションや、OracleDB や Postgres などのデータベース ワークロードが含まれます。 パフォーマンスの低下が発生する場合は、信頼されたアプリケーションの除外を設定することを検討し、[Microsoft Defender ウイルス対策の一般的な除外ミス](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)を考慮してください。 その他のガイダンスについては、サード パーティ製アプリケーションからのウイルス対策の除外に関するドキュメントを参照することを検討してください。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - ログ、アンインストール、またはその他のトピックの詳細については、「 [リソース](linux-resources.md)」を参照してください。

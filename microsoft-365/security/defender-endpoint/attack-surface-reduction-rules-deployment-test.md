@@ -1,7 +1,7 @@
 ---
-title: テスト攻撃表面の縮小 (ASR) ルール
-description: 攻撃表面の縮小 (ASR) ルールの展開をテストするガイダンスを提供します。
-keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
+title: 攻撃面の縮小 (ASR) ルールをテストする
+description: 攻撃面削減 (ASR) ルールのデプロイをテストするためのガイダンスを提供します。
+keywords: 攻撃表面の縮小ルールの展開、ASR 展開、ASR の有効化、ASR の構成、ホスト侵入防止システム、保護規則、悪用防止ルール、悪用防止ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、ASR 規則の構成
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,92 +20,91 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 2f3a97da3eff16a639df995d88b9ceda91497f11
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: facce2b736cb23cc41625b4b7d5c3f8b0ca5cfae
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475413"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705277"
 ---
-# <a name="step-2-test-asr-rules"></a>手順 2: ASR ルールをテストする
+# <a name="test-attack-surface-reduction-asr-rules"></a>攻撃面の縮小 (ASR) ルールをテストする
 
-攻撃表面の縮小 (ASR) ルールをテストすると、ルールが任意のルールを有効にする前に、業務ライン操作を妨げないかどうかを判断できます。 小規模で制御されたグループから開始すると、組織全体で展開を拡大する場合に、潜在的な作業の中断を制限できます。
+攻撃表面縮小 (ASR) ルールのテストは、ルールがルールを有効にする前に基幹業務を妨げるかどうかを判断するのに役立ちます。 小規模で制御されたグループから始めることで、組織全体に展開を拡大するときに、潜在的な作業中断を制限できます。
 
-リング 1 で攻撃表面の縮小 (ASR) ルールの展開を開始します。
+リング 1 を使用して、攻撃面の縮小 (ASR) ルールの展開を開始します。
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="ASR ルールのテスト手順" lightbox="images/asr-rules-testing-steps.png":::
   
-
 ## <a name="step-1-test-asr-rules-using-audit"></a>手順 1: 監査を使用して ASR ルールをテストする
 
-ルールが [監査] に設定されている ASR ルールをオンにして、リング 1 のチャンピオン ユーザーまたはデバイスからテストフェーズを開始します。 通常、テスト フェーズ中にトリガーされるルールを特定できるよう、すべてのルール (監査) を有効にしてください。 [監査] に設定されているルールは、通常、ルールが適用されるエンティティまたはエンティティの機能には影響を与えず、評価のためにログに記録されたイベントを生成します。エンド ユーザーには影響しません。
+テスト フェーズを開始するには、リング 1 のチャンピオン ユーザーまたはデバイスから始めて、監査に設定されたルールを使用して ASR ルールをオンにします。 通常、テスト フェーズ中にトリガーされるルールを決定できるように、すべてのルール (監査) を有効にすることをお勧めします。 監査に設定されたルールは、通常、ルールが適用されるエンティティまたはエンティティの機能には影響しませんが、評価のためにログに記録されたイベントが生成されることに注意してください。エンド ユーザーには影響しません。
 
 ### <a name="configure-asr-rules-using-mem"></a>MEM を使用して ASR ルールを構成する
 
-カスタム ASR ルールMicrosoft エンドポイント マネージャー(MEM) エンドポイント セキュリティを使用して構成できます。
+Microsoft エンドポイント マネージャー (MEM) エンドポイント セキュリティを使用して、カスタム ASR ルールを構成できます。
 
-1. 管理[Microsoft エンドポイント マネージャーを開きます](https://endpoint.microsoft.com/#home)。
-2. [Endpoint **SecurityAttack]** >  **サーフェスの縮小に移動します**。
+1. [管理センター Microsoft エンドポイント マネージャー](https://endpoint.microsoft.com/#home)開きます。
+2. **Endpoint SecurityAttack** >  **surface reduction** に移動します。
 3. **[ポリシーを作成する]** を選択します。
-4. [**プラットフォーム] で**、[Windows 10 **] を** 選択し、[**プロファイル**] で [攻撃表面の縮小ルール **] を選択します**。
+4. **[プラットフォーム**] **で [Windows 10以降**] を選択し、[**プロファイル**] で [**攻撃面の縮小ルール**] を選択します。
   
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/asr-mem-create-profile.png" alt-text="ASR ルールのプロファイル作成ページ" lightbox="images/asr-mem-create-profile.png":::
 
 5. **[作成]** をクリックします。
-6. [プロファイル **の作成]** ウィンドウの [ **基本] タブ** で、[ **名前] で** ポリシーの名前を追加します。 [ **説明]** で、ASR ルール ポリシーの説明を追加します。
-7. [構成 **設定] タブの** [ **攻撃表面** 縮小ルール] で、すべてのルールを監査モード **に設定します**。
+6. [**プロファイルの作成**] ウィンドウの [**基本**] タブの [**名前]** にポリシーの名前を追加します。 [ **説明]** に、ASR ルール ポリシーの説明を追加します。
+7. [ **構成設定** ] タブの [ **攻撃表面の縮小ルール**] で、すべてのルールを **監査モード** に設定します。
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/asr-mem-configuration-settings.png" alt-text="監査モードへの ASR ルールの構成" lightbox="images/asr-mem-configuration-settings.png":::
 
     >[!Note]
-    >一部の ASR ルール モードの一覧にはバリエーションがあります。 _[ブロック]_ と _[有効] は_ 、同じ機能を提供します。
+    >一部の ASR ルール モードの一覧にはバリエーションがあります。 _ブロック_ と _有効化は_ 、同じ機能を提供します。
 
-8. [省略可能][スコープ タグ **] ウィンドウ** で、特定のデバイスにタグ情報を追加できます。 また、役割ベースのアクセス制御タグとスコープ タグを使用して、適切な管理者が適切な Intune オブジェクトに対する適切なアクセスと可視性を確保することもできます。 詳細については、「 [Intune で分散 IT に役割ベースのアクセス制御 (RBAC) タグとスコープ タグを使用する」を参照してください](/mem/intune/fundamentals/scope-tags)。
-9. [割 **り当て]** ウィンドウで、ユーザーまたはデバイス グループにプロファイルを展開または "割り当て" できます。 詳細: デバイス [プロファイルの割り当て (](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)Microsoft Intune
-10. [確認と作成] ウィンドウ **で設定を確認** します。 [作成 **] を** クリックしてルールを適用します。
+8. [省略可能][ **スコープ タグ** ] ウィンドウでは、特定のデバイスにタグ情報を追加できます。 また、ロールベースのアクセス制御とスコープ タグを使用して、適切な管理者が適切なIntune オブジェクトに対して適切なアクセスと可視性を持つようにすることもできます。 詳細情報: [Intuneで分散 IT にロールベースのアクセス制御 (RBAC) タグとスコープ タグを使用](/mem/intune/fundamentals/scope-tags)する。
+9. [ **割り当て** ] ウィンドウでは、ユーザーまたはデバイス グループにプロファイルを展開または "割り当てる" ことができます。 詳細情報: [Microsoft Intuneでデバイス プロファイルを割り当てる](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
+10. [ **確認と作成** ] ウィンドウで設定を確認します。 [ **作成** ] をクリックしてルールを適用します。
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/asr-mem-review-create.png" alt-text="[プロファイルの作成] ページ" lightbox="images/asr-mem-review-create.png":::
 
-ASR ルールの新しい攻撃表面縮小ポリシーは、[エンドポイント セキュリティ ポリシー] に **|攻撃表面の縮小**。
+ASR ルールに対する新しい攻撃面削減ポリシーは、 **エンドポイント セキュリティ |に一覧表示されます。攻撃面の縮小**。
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/asr-mem-my-asr-rules.png" alt-text=" [攻撃表面の縮小] ページ" lightbox="images/asr-mem-my-asr-rules.png":::
+   > :::image type="content" source="images/asr-mem-my-asr-rules.png" alt-text=" [攻撃面の縮小] ページ" lightbox="images/asr-mem-my-asr-rules.png":::
 
-## <a name="step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>手順 2: サイト ポータルの [攻撃表面の縮小ルール] レポート ページMicrosoft 365 Defenderする
+## <a name="step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>手順 2: Microsoft 365 Defender ポータルの [攻撃対象の縮小ルール] レポート ページについて
 
-ASR ルールレポート ページは、**portalReportsAttack** >  **Microsoft 365 Defender** > に **表示されます**。 このページには、次の 3 つのタブがあります。
+ASR ルール レポート ページは **、Microsoft 365 Defender** **portalReportsAttack** >  >  **surface reduction rules** にあります。 このページには、次の 3 つのタブがあります。
 
 - Detections
 - 構成
-- 除外の追加
+- 除外を追加する
 
 ### <a name="detections-tab"></a>[検出] タブ
 
-検出された監査イベントとブロックされたイベントの 30 日間のタイムラインを提供します。
+検出された監査とブロックされたイベントの 30 日間のタイムラインを提供します。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-01.png" alt-text="[攻撃表面の縮小ルールの検出] タブ" lightbox="images/asr-defender365-01.png":::
+> :::image type="content" source="images/asr-defender365-01.png" alt-text="[攻撃面の縮小ルールの検出] タブ" lightbox="images/asr-defender365-01.png":::
 
-[攻撃表面の縮小ルール] ウィンドウには、ルールごとに検出されたイベントの概要が表示されます。
+[攻撃面の縮小ルール] ウィンドウには、検出されたイベントの概要がルールごとに表示されます。
 
 >[!Note]
 >ASR ルール レポートにはいくつかのバリエーションがあります。 Microsoft は、一貫性のあるエクスペリエンスを提供するために ASR ルール レポートの動作を更新中です。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-01b.png" alt-text="[攻撃表面の縮小ルール] ページ" lightbox="images/asr-defender365-01b.png"::: 
+> :::image type="content" source="images/asr-defender365-01b.png" alt-text="[攻撃面の縮小ルール] ページ" lightbox="images/asr-defender365-01b.png"::: 
 
-[ **検出の表示] をクリック** して、[検出 **] タブを開** きます。
+[ **検出の表示** ] をクリックして、[検出] タブ **を** 開きます。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="攻撃表面の縮小ルールの検出" lightbox="images/asr-defender365-reports-detections.png":::
+> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="攻撃面の縮小ルールの検出" lightbox="images/asr-defender365-reports-detections.png":::
 
-**[GroupBy] ウィンドウと** **[フィルター] ウィンドウ** には、次のオプションがあります。
+**[GroupBy**] ウィンドウと **[フィルター]** ウィンドウには、次のオプションがあります。
 
-**GroupBy は**、結果セットを次のグループに返します。
+**GroupBy は**、次のグループに設定された結果を返します。
 
 - グループ化なし
 - 検出されたファイル
@@ -117,98 +116,100 @@ ASR ルールレポート ページは、**portalReportsAttack** >  **Microsoft 
 - 発行者
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="攻撃表面の縮小ルールの検出 GroupBy フィルター" lightbox="images/asr-defender365-reports-detections.png":::
+> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="攻撃面の縮小ルール検出 GroupBy フィルター" lightbox="images/asr-defender365-reports-detections.png":::
 
-**フィルター** によって [ **ルールのフィルター]** ページが開き、選択した ASR ルールのみを結果の範囲に設定できます。
+**[フィルター** ] で **[ルールのフィルター]** ページが開きます。これにより、選択した ASR ルールのみに結果の範囲を設定できます。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-filter.png" alt-text="ルールに対する攻撃表面の縮小ルール検出フィルター" lightbox="images/asr-defender365-filter.png":::
+> :::image type="content" source="images/asr-defender365-filter.png" alt-text="攻撃面の縮小ルールの検出は、ルールに対するフィルター" lightbox="images/asr-defender365-filter.png":::
 
 >[!Note]
->Microsoft Microsoft 365 Security E5 または A5、Windows E5、または A5 ライセンスをお持ちの場合は、次のリンクをクリックすると、[Microsoft Defender 365 Reports > Attack [surface](https://security.microsoft.com/asr?viewid=detections) reductions > Detections] タブが開きます。
+>Microsoft Microsoft 365 Security E5 または A5、Windows E5、または A5 ライセンスをお持ちの場合は、次のリンクをクリックすると、Microsoft Defender 365 レポート>[攻撃面の減少](https://security.microsoft.com/asr?viewid=detections)>検出タブが開きます。
 
 ### <a name="configuration-tab"></a>[構成] タブ
 
-ASR ルールの集約状態 (Off、Audit、Block) は、コンピューター単位でリストします。
+コンピューター単位で、ASR ルールの集計状態である[オフ]、[監査]、[ブロック] の一覧。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-configurations.png" alt-text="[攻撃表面の縮小ルール] [構成] タブとそのページ内のエントリ" lightbox="images/asr-defender365-configurations.png":::
+> :::image type="content" source="images/asr-defender365-configurations.png" alt-text="[攻撃表面の縮小ルールの構成] タブとそのページのエントリ" lightbox="images/asr-defender365-configurations.png":::
 
-[構成] タブでは、ASR ルールを確認するデバイスを選択して、デバイスごとに、どの ASR ルールが有効になっているか、どのモードで確認できます。
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-configurations.settings.png" alt-text="攻撃表面の縮小ルールの有効化とモード" lightbox="images/asr-defender365-configurations.settings.png":::
-
-[**開始] リンク** は、Microsoft エンドポイント マネージャー管理センターを開き、ASR のエンドポイント保護ポリシーを作成または変更できます。
+[構成] タブでは、ASR ルールを確認するデバイスを選択することで、デバイスごとにどの ASR ルールが有効か、どのモードでオンにするかを確認できます。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-05b-mem1.png" alt-text="[概要] ページの [*Endpoint security] メニュー項目" lightbox="images/asr-defender365-05b-mem1.png":::
+> :::image type="content" source="images/asr-defender365-configurations.settings.png" alt-text="攻撃面の縮小ルールが有効でモード" lightbox="images/asr-defender365-configurations.settings.png":::
 
-[エンドポイント セキュリティ] |[概要] で、[ **攻撃表面の縮小] を選択します**。
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-05b-mem2.png" alt-text="MEM の攻撃表面の縮小" lightbox="images/asr-defender365-05b-mem2.png":::
-
-Endpoint Security |攻撃表面の縮小ウィンドウが開きます。
+**概要** リンクをクリックすると、Microsoft エンドポイント マネージャー管理センターが開き、ASR のエンドポイント保護ポリシーを作成または変更できます。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-05b-mem3.png" alt-text="[エンドポイント セキュリティ攻撃] 表面の縮小ウィンドウ" lightbox="images/asr-defender365-05b-mem3.png":::
+> :::image type="content" source="images/asr-defender365-05b-mem1.png" alt-text="[概要] ページの *[エンドポイント セキュリティ] メニュー項目" lightbox="images/asr-defender365-05b-mem1.png":::
+
+エンドポイント セキュリティ |[概要]、[ **攻撃面の縮小**] の順に選択します。
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="images/asr-defender365-05b-mem2.png" alt-text="MEM の攻撃面の削減" lightbox="images/asr-defender365-05b-mem2.png":::
+
+Endpoint Security |[攻撃面の縮小] ウィンドウが開きます。
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="images/asr-defender365-05b-mem3.png" alt-text="[エンドポイント セキュリティの攻撃面の縮小] ウィンドウ" lightbox="images/asr-defender365-05b-mem3.png":::
 
 >[!Note]
->Microsoft Defender 365 E5 (または Windows E5?) ライセンスをお持ちの場合、このリンクにより[Microsoft Defender 365 Reports > Attack surface [reductions > Configurations](https://security.microsoft.com/asr?viewid=configuration)] タブが開きます。
+>Microsoft Defender 365 E5 (または Windows E5?) ライセンスをお持ちであれば、このリンクをクリックすると、Microsoft Defender 365 レポート>攻撃面の縮小> [[構成]](https://security.microsoft.com/asr?viewid=configuration) タブが開きます。
 
-### <a name="add-exclusions"></a>除外の追加
+### <a name="add-exclusions"></a>除外を追加する
 
-このタブには、検出されたエンティティ (誤検知など) を除外対象として選択するメソッドが表示されます。 除外が追加された場合、予想される影響の概要がレポートに表示されます。
+このタブには、検出されたエンティティ (誤検知など) を除外対象として選択するメソッドが用意されています。 除外が追加されると、予想される影響の概要がレポートに表示されます。
 
 >[!Note]
-> Microsoft Defender ウイルス対策の除外は ASR ルールによって適用されます。  「 [拡張機能、名前、または場所に基づいて除外を構成して検証する」を参照してください](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
+> MICROSOFT DEFENDER ウイルス対策 AV 除外は ASR ルールによって適用されます。  [拡張機能、名前、または場所に基づいて除外を構成して検証](configure-extension-file-exclusions-microsoft-defender-antivirus.md)する方法に関するページを参照してください。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="Images/asr-defender365-06d.png" alt-text="検出されたファイルを除外するウィンドウ" lightbox="Images/asr-defender365-06d.png":::
+> :::image type="content" source="Images/asr-defender365-06d.png" alt-text="検出されたファイルを除外するためのウィンドウ" lightbox="Images/asr-defender365-06d.png":::
 
 > [!Note]
->Microsoft Defender 365 E5 (または Windows E5?) ライセンスをお持ちの場合、このリンクにより[Microsoft Defender 365 Reports > Attack surface [reductions > 除外](https://security.microsoft.com/asr?viewid=exclusions)] タブが開きます。
+>Microsoft Defender 365 E5 (または Windows E5?) ライセンスをお持ちの場合、このリンクをクリックすると、Microsoft Defender 365 レポート>攻撃面の縮小> [[除外]](https://security.microsoft.com/asr?viewid=exclusions) タブが開きます。
 
 ### <a name="use-powershell-as-an-alternative-method-to-enable-asr-rules"></a>ASR ルールを有効にする代替方法として PowerShell を使用する
 
-MEM の代わりに PowerShell を使用すると、監査モードで ASR ルールを有効にして、機能が完全に有効になっている場合にブロックされた可能性があるアプリのレコードを表示できます。 また、通常の使用中にルールが発生する頻度を確認することもできます。
+MEM の代わりに PowerShell を使用すると、監査モードで ASR ルールを有効にして、機能が完全に有効になっている場合にブロックされたアプリのレコードを表示できます。 また、通常の使用時にルールが発生する頻度を把握することもできます。
 
-監査モードで攻撃表面の縮小ルールを有効にするには、次の PowerShell コマンドレットを使用します。
+監査モードで攻撃表面縮小ルールを有効にするには、次の PowerShell コマンドレットを使用します。
 
 ```PowerShell
 Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
 ```
 
-攻撃 `<rule ID>` 表面の [縮小ルールの GUID 値はここで指定します](attack-surface-reduction-rules-reference.md)。
+[攻撃面の縮小ルールの GUID 値](attack-surface-reduction-rules-reference.md)はどこにありますか`<rule ID>`。
 
-監査モードで追加された攻撃表面の縮小ルールを有効にするには、次の PowerShell コマンドレットを使用します。
+監査モードで追加されたすべての攻撃表面縮小ルールを有効にするには、次の PowerShell コマンドレットを使用します。
 
 ```PowerShell
 (Get-MpPreference).AttackSurfaceReductionRules_Ids | Foreach {Add-MpPreference -AttackSurfaceReductionRules_Ids $_ -AttackSurfaceReductionRules_Actions AuditMode}
 ```
 
 > [!TIP]
-> 組織内での攻撃表面の縮小ルールの動作を完全に監査する場合は、管理ツールを使用して、ネットワーク内のデバイスにこの設定を展開する必要があります。
+> 組織内で攻撃表面縮小ルールがどのように機能するかを完全に監査する場合は、管理ツールを使用してこの設定をネットワーク内のデバイスに展開する必要があります。
 
-グループ ポリシー、Intune、またはモバイル デバイス管理 (MDM) 構成サービス プロバイダー (CSP) を使用して、設定を構成および展開することもできます。 詳しくは、「攻撃表面の [縮小ルール」のメイン記事を参照](attack-surface-reduction.md) してください。
+グループ ポリシー、Intune、モバイル デバイス管理 (MDM) 構成サービス プロバイダー (CSP) を使用して設定を構成および展開することもできます。 詳細については、主な [攻撃面の縮小ルールに関する](attack-surface-reduction.md) 記事を参照してください。
 
-## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>イベント Windowsポータルの攻撃表面縮小ルールレポート ページの代わりに、イベント ビューアー レビューをMicrosoft 365 Defenderする
+## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルの [攻撃表面の縮小ルールのレポート] ページの代わりにWindows イベント ビューアーレビューを使用する
 
-ブロックされているアプリを確認するには、Microsoft-Windows-Windows Defender/運用ログでイベント ビューアーを開き、イベント ID 1121 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
+ブロックされたアプリを確認するには、イベント ビューアーを開き、Microsoft Windows-Windows Defender/運用ログでイベント ID 1121 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
 
 イベント ID | 説明
 -|-
  5007 | 設定が変更された場合のイベント
- 1121 | ブロック モードで攻撃表面の縮小ルールが発生した場合のイベント
- 1122 | 監査モードで攻撃表面の縮小ルールが発生した場合のイベント
+ 1121 | 攻撃面の縮小ルールがブロック モードで発生した場合のイベント
+ 1122 | 攻撃表面の縮小ルールが監査モードで発生した場合のイベント
 
-## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
+## <a name="additional-topics-in-this-deployment-collection"></a>このデプロイ コレクションのその他のトピック
 
-[ASR ルールの展開の前提条件](attack-surface-reduction-rules-deployment.md)
+[攻撃対象領域の削減 (ASR) ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
 
-[手順 1: ASR ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
+[攻撃面削減 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
 
-[手順 3: ASR ルールを実装する](attack-surface-reduction-rules-deployment-implement.md)
+[攻撃面の縮小 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md)
 
-[手順 4: ASR ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md)
+[攻撃面の縮小 (ASR) ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md)
+
+[攻撃対象の縮小 (ASR) ルールリファレンス](attack-surface-reduction-rules-reference.md)

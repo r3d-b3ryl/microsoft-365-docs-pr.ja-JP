@@ -7,93 +7,93 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
-description: このページを使用して、スタッフ リストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。
-ms.openlocfilehash: 03ebf5c21e40d53e87067866e05fc37c2c255331
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+description: このページを使用して、スタッフリストを作成し、名前、電話番号、メール アドレスなどのスタッフ メンバーの詳細を管理します。
+ms.openlocfilehash: 2df48efe321a91c1eb2df712e954033eb28357aa
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049362"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713935"
 ---
 # <a name="add-staff-to-bookings"></a>Bookings にスタッフを追加する
 
-Bookings の [スタッフ] ページでは、スタッフリストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。 また、ここから各スタッフの勤務時間を設定できます。
+> [!NOTE]
+> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
+
+Bookingsの [スタッフ] ページでは、スタッフ リストを作成し、名前、電話番号、メール アドレスなどのスタッフ メンバーの詳細を管理します。 また、ここから各スタッフの勤務時間を設定することもできます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-Bookings は、Microsoft 365の機能ですが、すべてのスタッフがアカウントを持つ必要Microsoft 365ではありません。 予約を受け取り、変更をスケジュールするには、すべてのスタッフが有効な電子メール アドレスを持っている必要があります。
+BookingsはMicrosoft 365の機能ですが、すべてのスタッフメンバーがMicrosoft 365アカウントを持っている必要はありません。 すべてのスタッフ メンバーは、予約を受け取り、変更をスケジュールできるように、有効な電子メール アドレスを持っている必要があります。
 
-## <a name="watch-add-your-staff-to-bookings"></a>ウォッチ: 予約にスタッフを追加する
+## <a name="watch-add-your-staff-to-bookings"></a>ウォッチ: Bookingsにスタッフを追加する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
 ## <a name="steps"></a>手順
 
-> [!NOTE]
-> これらの手順は、新しい Bookings エクスペリエンスではまだ利用できません。
+1. ホームページから予定表を選択します。 
 
-1. [スタッフの管理] [ページに移動し、[](https://outlook.office.com/bookings/staff) スタッフの追加 **] を選択します。**
+2. 左側のウィンドウのスタッフ オプションに移動し、[ **新しいスタッフの追加**] を選択します。
 
-2. [スタッフの **追加] ボタンを** 選択します。
+3. 組織内からスタッフを追加する場合は、[ **ユーザーの追加]** フィールドに名前を入力し、ドロップダウン メニューに表示されたら選択します。 その他のフィールドは自動的に設定されます。
 
-3. 組織内からスタッフを追加する場合は、[ユーザーの追加]フィールドに名前を入力し、ドロップダウン メニューに表示されたら選択します。 他のフィールドは自動的に設定されます。
+    スタッフ メンバーが追加されたら、すべてのBookings通信に表示される名前を編集するには、その名前の横にある **x** を選択し、[**ユーザーの追加]** フィールドを編集します。 これは、Adele Vance を "Dr. Vance, MD" として一覧表示するなど、スタッフメンバーに特定のタイトルまたは名前を表示させる場合に役立ちます。
 
-    スタッフ メンバーが追加されたら、すべての Bookings コミュニケーションに表示される名前を編集するには、そのメンバーの名前の横にある **x** を選択し、[ユーザーの追加] フィールド **を編集** します。 これは、Adele Vance を "Dr. Vance, MD" としてリストするなど、スタッフメンバーに特定のタイトルまたは名前を表示する場合に便利です。
-
-4. 組織外からスタッフを追加するには、メールなどの情報を手動で入力します。
+4. 組織外のスタッフを追加するには、メールやその他の情報を手動で入力します。
 
     > [!NOTE]
-    > テナント外のスタッフは、空き時間情報を Bookings と共有できません。
+    > テナントの外部のスタッフは、空き時間情報をBookingsと共有できません。
 
-5. 各スタッフ メンバーに対して、役割 (管理者、ビューアー、またはゲスト) を選択します。
-    - **管理者は** 、すべての設定の編集、スタッフの追加と削除、予約の作成、編集、または削除を行います。
-    - **閲覧** 者はカレンダー上のすべての予約を表示できますが、変更や削除は行えます。 設定への読み取り専用アクセス権があります。
-    - **ゲスト** は予約に割り当てることができますが、予約メールボックスを開くことができません。
+5. スタッフ メンバーごとに、管理者、ビューアー、またはゲストのロールを選択します。
+    - **管理者は** 、すべての設定の編集、スタッフの追加と削除、予約の作成、編集、または削除を行うことができます。
+    - **閲覧者** は予定表上のすべての予約を表示できますが、変更や削除はできません。 設定に対する読み取り専用アクセス権があります。
+    - **ゲスト** は予約に割り当てることができますが、予約メールボックスを開くできません。
 
-6. [ **割り当てられた予約が** 作成または変更された場合に、すべてのスタッフにメールで通知する] を選択して、スタッフのメールを有効にします。 電子メールの例を次に示します。
+6. [ **割り当てられた予約が作成または変更されたときに、すべてのスタッフに電子メールで通知** する] を選択して、スタッフのメールを有効にします。 電子メールの例を次に示します。
 
-    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Bookings からの通知メール。":::
+    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Bookingsからの通知メール。":::
 
-7. スタッフ **メンバーの予定表Office 365空** き時間情報が Bookings を通じて予約サービスの可用性に影響を与える場合は、[スケジュールカレンダーのイベント] を選択します。
+7. **スタッフメンバーの予定表** の空き時間情報をBookingsを通じて予約サービスの空き時間情報に影響を与える場合は、[Office 365予定表のイベント] を選択します。
 
-    たとえば、水曜日の午後 3 時にチーム会議または個人の予定がスタッフ メンバーにスケジュールされている場合、Bookings は、そのスタッフ メンバーが、そのタイム スロットで予約できないと表示されます。 この時間は、次の例に示すように、予約カレンダー ビューにビジーまたは暫定的に表示されます。
+    たとえば、スタッフ メンバーが水曜日の午後 3 時に予定されているチーム会議や個人的な予定がある場合、Bookingsそのスタッフ メンバーがそのタイム スロットで予約できないことが表示されます。 その時刻は、次の例に示すように、Bookings予定表ビューにビジー状態または仮の状態で表示されます。
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Bookings カレンダーのビュー。":::
+    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Bookings予定表のビュー。":::
 
 > [!IMPORTANT]
-> ダブル予約を避け、スタッフ メンバーの可用性を最適化するために、この設定をオンのままにすることを強くお勧めします (既定では有効になっています)。
+> ダブルブッキングを回避し、スタッフメンバーの可用性を最適化するために、この設定をオンのままにすることを非常に推奨します (既定ではオンになっています)。
 
-8. [**ビジネス情報]** ページの [営業時間] セクションで設定した営業時間内にのみ、スタッフメンバーのすべての予約可能な時間を設定するには、[営業時間を使用する] を選択します。
+8. [ **営業時間を使用する** ] を選択すると、スタッフ メンバーのすべての予約可能な時間が、[ビジネス情報] ページの [ **営業時間** ] セクションで設定した営業時間内のみに設定されます。
 
-    このボックスの選択を解除すると、スタッフに予約できる時間をさらに制限するカスタム時間を指定できます。 これは、スタッフメンバーが火曜日と水曜日にしかサイトにいない場合や、1 種類の予定に対して朝を、その他の種類の午後に使用する場合に役立ちます。
+    このボックスの選択を解除すると、スタッフに、予約できる時間をさらに制限するカスタム時間を指定できます。 これは、スタッフメンバーが火曜日と水曜日にのみサイトに配置される場合や、1 種類の予定に朝を割り当て、午後を他の種類に割り当てられるシナリオに役立ちます。
 
     > [!NOTE]
-    > Bookings は、Bookings カレンダーで最大 100 人のスタッフをサポートします。
+    > Bookingsは、Bookingsカレンダーで最大 100 人のスタッフ メンバーをサポートします。
 
-## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Bookings ユーザーを、Bookings のスタッフとして追加せずにスーパー ユーザーにする
+## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Bookings ユーザーをスーパー ユーザーにBookingsの Staff として追加せずにスーパー ユーザーにする
 
-ユーザーを顧客またはクライアントが利用できない場合は、Bookings のスタッフ リストにユーザーを追加できます。 スーパー ユーザーになると、予約メールボックスの管理者になります。 予約メールボックスの管理者であることは、予約メールボックスに対するフル アクセスおよび送信権限を持つこととして定義されます。
+ユーザーを顧客やクライアントが利用できるようにせずに、Bookingsのスタッフ リストにユーザーを追加することもできます。 スーパー ユーザーにすると、予約メールボックスの管理者になります。 予約メールボックスの管理者は、予約メールボックスへのフル アクセスと送信アクセス許可を持つものとして定義されます。
 
 > [!NOTE]
-> これらの手順は、追加するユーザーに Bookings でビューアー ロールがまだ割り当てられていない場合にのみ機能します。
+> これらの手順は、追加するユーザーにBookingsで **ビューアー** ロールがまだ割り当てられていない場合にのみ機能します。
 
-1. [Connect PowerShell をMicrosoft 365する方法を説明します](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+1. [PowerShell を使用してMicrosoft 365するConnect](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-2. PowerShell を使用して、次のコマンドでフル アクセスを割り当てる。
+2. PowerShell を使用して、次のコマンドを使用してフル アクセスを割り当てます。
 
     ```powershell
     Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
     ```
 
-3. 次に、このコマンドを実行して send-as アクセス許可を割り当てる。
+3. 次に、このコマンドを実行して、送信としてのアクセス許可を割り当てます。
 
     ```powershell
     Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
     ```
 
-Contoso のデケア予約メールボックスに Allie Bellew を追加する PowerShell コマンドの例を次に示します。
+Contoso の託児所予約メールボックスに Allie Bellew を追加する PowerShell コマンドの例を次に示します。
 
-1. まず、次のコマンドを実行します。
+1. 最初に次のコマンドを実行します。
 
     ```powershell
     Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
@@ -105,4 +105,4 @@ Contoso のデケア予約メールボックスに Allie Bellew を追加する 
     Add-RecipientPermission -Identity "daycare@contoso.com" -Trustee "Allie Bellew" -AccessRights SendAs -Confirm:$false
     ```
 
-**Allie Bellew は** 管理者アクセス権を持っていますが、Bookings では予約可能なスタッフとして表示されません。
+**Allie Bellew** は管理者アクセス権を持つようになりましたが、Bookingsでは予約可能なスタッフとして表示されません。

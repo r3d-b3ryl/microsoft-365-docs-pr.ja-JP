@@ -1,8 +1,8 @@
 ---
-title: 攻撃表面の縮小 (ASR) の理解と使用
+title: 攻撃面の縮小 (ASR) を理解して使用する
 ms.reviewer: ''
-description: Microsoft Defender for Endpoint の攻撃表面の縮小機能について説明します。
-keywords: asr, 攻撃表面の縮小, Microsoft Defender for Endpoint, microsoft Defender, ウイルス対策, av, Windows Defender
+description: Microsoft Defender for Endpointの攻撃面の縮小機能について説明します。
+keywords: asr, 攻撃面の縮小, 攻撃面の縮小ルール, Microsoft Defender for Endpoint, microsoft defender, ウイルス対策, av, Windows Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 9c489d28467582e0f95f3fde7440ff43022c44e1
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 5b71134f9a7d33880e9762701e825c3fbf708f6b
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682044"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705091"
 ---
-# <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能の理解と使用
+# <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃面の縮小機能を理解して使用する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,66 +39,66 @@ ms.locfileid: "63682044"
 > [!TIP]
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-攻撃表面は、組織がサイバー脅威や攻撃に対して脆弱なすべての場所です。 Defender for Endpoint には、攻撃の表面を減らすのに役立ついくつかの機能が含まれています。 攻撃表面の縮小の詳細については、次のビデオをご覧ください。
+攻撃面は、組織がサイバー脅威や攻撃に対して脆弱なすべての場所です。 Defender for Endpoint には、攻撃面を減らすのに役立ついくつかの機能が含まれています。 攻撃面の縮小の詳細については、次のビデオをご覧ください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4woug]
 
 ## <a name="configure-attack-surface-reduction-capabilities"></a>攻撃面の減少機能を構成する
 
-環境で攻撃表面の縮小を構成するには、次の手順を実行します。
+環境で攻撃面の削減を構成するには、次の手順に従います。
 
-1. [ハードウェア ベースの分離を有効にMicrosoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)。
+1. [Microsoft Edgeのハードウェア ベースの分離を有効にします](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)。
 
-2. アプリケーション制御を有効にする。
+2. アプリケーション制御を有効にします。
 
-   1. [基本ポリシー] を [Windows] で確認します。 「 [基本ポリシーの例」を参照してください](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)。
-   2. 「アプリケーション コントロール[Windows Defenderガイド」を参照してください](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)。
-   3. 「アプリケーション[制御 (WDAC) Windows Defenderの展開」を参照してください](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
+   1. Windowsの基本ポリシーを確認します。 [基本ポリシーの例を](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)参照してください。
+   2. [Windows Defenderアプリケーション コントロールの設計ガイドを](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)参照してください。
+   3. [Windows Defenderアプリケーション制御 (WDAC) ポリシーのデプロイ](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)に関するページを参照してください。
 
-3. [フォルダー アクセスの制御を有効にする](enable-controlled-folders.md)。
+3. [フォルダー アクセスの制御を有効にします](enable-controlled-folders.md)。
 
-4. [[ネットワーク保護] をオンにする](enable-network-protection.md)。
+4. [ネットワーク保護を有効にします](enable-network-protection.md)。
 
-5. [エクスプロイト保護を有効にする](enable-exploit-protection.md)。
+5. [エクスプロイト保護を有効にします](enable-exploit-protection.md)。
 
-6. [攻撃表面の縮小ルールを展開します](attack-surface-reduction-rules-deployment.md)。
+6. [攻撃対象の縮小ルールをデプロイします](attack-surface-reduction-rules-deployment.md)。
 
 7. ネットワーク ファイアウォールを設定します。
 
-   1. 高度なセキュリティを備Windows Defender[ファイアウォールの概要を確認します](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
-   2. ファイアウォール ポリシー [Windows Defenderする](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide)方法を決定するには、「ファイアウォールの設計ガイド」を使用します。
-   3. 高度な[セキュリティWindows Defender組織](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)のファイアウォールをセットアップするには、「ファイアウォールの展開ガイド」を使用します。
+   1. [高度なセキュリティを備えたWindows Defenderファイアウォールの](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)概要を確認します。
+   2. [Windows Defender ファイアウォール設計ガイド](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide)を使用して、ファイアウォール ポリシーを設計する方法を決定します。
+   3. [Windows Defender ファイアウォールの展開ガイド](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)を使用して、高度なセキュリティで組織のファイアウォールを設定します。
 
 > [!TIP]
-> ほとんどの場合、攻撃表面の縮小機能を構成する場合、次の方法から選択できます。
+> ほとんどの場合、攻撃面の縮小機能を構成するときに、いくつかの方法から選択できます。
 >
-> - Microsoft エンドポイント マネージャー (現在は、Microsoft IntuneとMicrosoft Endpoint Configuration Manager)
+> - Microsoft エンドポイント マネージャー (Microsoft IntuneとMicrosoft Endpoint Configuration Managerが含まれるようになりました)
 > - グループ ポリシー
 > - PowerShell コマンドレット
 
-## <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender の攻撃表面の縮小をテストする
+## <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでの攻撃面の減少をテストする
 
-組織のセキュリティ チームの一部として、監査モードで実行する攻撃表面の縮小機能を構成して、その動作を確認できます。 監査モードでは、次の機能を有効にできます。
+組織のセキュリティ チームの一部として、監査モードで実行する攻撃面の縮小機能を構成して、それらがどのように機能するかを確認できます。 監査モードでは、次の ASR セキュリティ機能を有効にすることができます。
 
 - 攻撃面の減少ルール
 - エクスプロイト保護
 - ネットワーク保護
-- 監査モードでのフォルダー アクセスの制御
+- フォルダーへのアクセスの制御
 
-監査モードでは、機能を有効にした場合に何が起こったかの記録を確認できます。
+監査モードを使用すると、機能を有効にした場合 *に発生した* 結果のレコードを確認できます。
 
-機能の動作をテストするときに監査モードを有効にできます。 テスト専用の監査モードを有効にすると、監査モードが業務用アプリに影響を与えなくるのを防ぐのに役立ちます。 また、一定の期間に発生する疑わしいファイル変更の試行回数を確認できます。
+機能の動作をテストするときに監査モードを有効にすることができます。 テストに対してのみ監査モードを有効にすると、監査モードが基幹業務アプリに影響を与えるのを防ぐことができます。 また、特定の期間に発生する疑わしいファイル変更の試行回数を把握することもできます。
 
-この機能は、アプリ、スクリプト、またはファイルが変更されるのをブロックまたは防止できません。 ただし、イベント ログWindows機能が完全に有効になっている場合と同様にイベントが記録されます。 監査モードを使用すると、イベント ログを確認して、機能が有効になっている場合の影響を確認できます。
+この機能は、アプリ、スクリプト、またはファイルの変更をブロックまたは禁止しません。 ただし、Windows イベント ログは、機能が完全に有効になっているかのようにイベントを記録します。 監査モードでは、イベント ログを確認して、機能が有効になっている場合にどのような影響を与えたかを確認できます。
 
-監査されたエントリを見つけるには、「**Applications and Services** **Microsoft** \>  \>  \> Windows \> Windows Defender **してください**。
+監査対象のエントリを見つけるには、**アプリケーションとサービス** \> **Microsoft** \> **Windows Windows Defender** \>  \> Operational に移動 **します**。
 
-Defender for Endpoint を使用して、各イベントの詳細を取得します。 これらの詳細は、攻撃表面の縮小ルールを調査する場合に特に役立ちます。 Defender for Endpoint コンソールを使用すると、アラートタイムラインと調査シナリオの一部として問題 [を調査できます](investigate-alerts.md)。
+Defender for Endpoint を使用して、各イベントの詳細を取得します。 これらの詳細は、攻撃面の縮小ルールを調査する場合に特に役立ちます。 Defender for Endpoint コンソールを使用すると、 [アラート タイムラインと調査シナリオの一部として問題を調査できます](investigate-alerts.md)。
 
-グループ ポリシー、PowerShell、および構成サービス プロバイダー (CSP) を使用して監査モードを有効にできます。
+グループ ポリシー、PowerShell、および構成サービス プロバイダー (CSP) を使用して監査モードを有効にすることができます。
 
 > [!TIP]
-> また、テストグラウンドのWindows Defenderにアクセスして demo.wd.microsoft.com 機能を確認し[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)、機能の動作を確認できます。
+> demo.wd.microsoft.com のWindows Defender Testground Web [サイトにアクセス](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)して、機能が動作していることを確認し、動作を確認することもできます。
 
 > [!NOTE]
 > demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
@@ -106,63 +106,73 @@ Defender for Endpoint を使用して、各イベントの詳細を取得しま�
 | 監査オプション | 監査モードを有効にする方法 | イベントを表示する方法 |
 |---|---|---|
 | 監査はすべてのイベントに適用されます | [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md) | [フォルダー アクセスイベントの制御](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| 監査は個々のルールに適用されます | [手順 1: 監査を使用して ASR ルールをテストする](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [手順 2: [攻撃表面の縮小ルール] レポート ページについて](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| 監査は個々のルールに適用されます | [手順 1: 監査モードを使用して ASR ルールをテストする](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [手順 2: [攻撃対象の縮小ルール] レポート ページについて](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | 監査はすべてのイベントに適用されます | [ネットワーク保護を有効にする](enable-network-protection.md) | [ネットワーク保護イベント](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | 監査は個々の軽減策に適用されます | [エクスプロイト保護を有効にする](enable-exploit-protection.md) | [エクスプロイト保護イベント](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
+### <a name="attack-surface-reduction-asr-rules"></a>攻撃対象の縮小 (ASR) ルール
+
+攻撃面の縮小 (ASR) ルールは、一般的な既知の攻撃面を強化するために事前に定義されています。 攻撃表面の縮小ルールを実装するために使用できる方法はいくつかあります。 推奨される方法については、次の攻撃面縮小 (ASR) ルールの展開に関するトピックを参照してください。
+
+- [攻撃対象領域の削減 (ASR) ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
+- [攻撃面削減 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
+- [攻撃面の縮小 (ASR) ルールをテストする](attack-surface-reduction-rules-deployment-test.md)
+- [攻撃面の縮小 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md)
+- [攻撃面の縮小 (ASR) ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md)
+
 ## <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
-イベント ビューアーで攻撃表面の縮小イベントを確認し、動作しているルールや設定を監視します。 また、設定が "ノイズ" すぎるか、毎日のワークフローに影響を与えるかどうかを判断することもできます。
+イベント ビューアーの攻撃対象の縮小イベントを確認して、動作しているルールまたは設定を監視します。 また、設定が "ノイズ" すぎるか、日常のワークフローに影響を与えているかどうかを判断することもできます。
 
-イベントのレビューは、機能を評価するときに便利です。 機能または設定の監査モードを有効にし、完全に有効にした場合の動作を確認できます。
+機能を評価する場合は、イベントを確認すると便利です。 機能または設定の監査モードを有効にし、完全に有効にした場合に何が発生したかを確認できます。
 
-このセクションでは、すべてのイベント、関連する機能または設定を一覧表示し、特定のイベントにフィルター処理するカスタム ビューを作成する方法について説明します。
+このセクションでは、すべてのイベント、関連する機能または設定を一覧表示し、カスタム ビューを作成して特定のイベントにフィルター処理する方法について説明します。
 
-E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) を使用している場合は、Windows セキュリティ、イベント、ブロック、および警告に関する詳細なレポートを取得します。
+E5 サブスクリプションを持ち、[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)を使用している場合は、Windows セキュリティの一部として、イベント、ブロック、警告に関する詳細なレポートを取得します。
 
-### <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>カスタム ビューを使用して攻撃表面の縮小機能を確認する
+### <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>カスタム ビューを使用して攻撃面の縮小機能を確認する
 
-イベント ビューアーでカスタム ビュー Windows特定の機能と設定のイベントのみを表示します。 最も簡単な方法は、カスタム ビューを XML ファイルとしてインポートすることです。 このページから XML を直接コピーできます。
+Windows イベント ビューアーにカスタム ビューを作成して、特定の機能と設定のイベントのみを表示します。 最も簡単な方法は、カスタム ビューを XML ファイルとしてインポートすることです。 このページから XML を直接コピーできます。
 
 また、機能に対応するイベント領域に手動で移動することもできます。
 
 #### <a name="import-an-existing-xml-custom-view"></a>既存の XML カスタム ビューをインポートする
 
-1. 空の.txtファイルを作成し、使用するカスタム ビューの XML をそのファイルに.txtします。 使用するカスタム ビューごとにこれを行います。 ファイルの名前を次のように変更します (種類を次のように.txtに.xml。
+1. 空の.txt ファイルを作成し、使用するカスタム ビューの XML を.txt ファイルにコピーします。 これは、使用するカスタム ビューごとに行います。 ファイルの名前を次のように変更します (種類を.txtから.xmlに変更してください)。
     - フォルダー アクセス イベントのカスタム ビューの制御: *cfa-events.xml*
     - エクスプロイト保護イベントのカスタム ビュー: *ep-events.xml*
-    - 攻撃表面の縮小イベントのカスタム ビュー: *asr-events.xml*
+    - 攻撃対象の縮小イベントのカスタム ビュー: *asr-events.xml*
     - ネットワーク/保護イベントのカスタム ビュー: *np-events.xml*
 
-2. [**イベント ビューアー] と** 入力し、[スタート メニュー ビューアー **] を開きます**。
+2. スタート メニューに **イベント ビューアー** を入力し、**イベント ビューアー** を開きます。
 
-3. [アクション **のインポート** \> **] [カスタム ビュー...] を選択します。**
+3. **[アクション** \> **インポート カスタム ビュー]を選択します。..**
 
    > [!div class="mx-imgBorder"]
-   > ![[Even ビューアー] ウィンドウの左側にあるカスタム ビューのインポートを強調表示するアニメーション。](images/events-import.gif)
+   > ![[偶数] ビューアー ウィンドウの左側にある [カスタム ビューのインポート] を強調表示するアニメーション。](images/events-import.gif)
 
-4. 必要なカスタム ビューの XML ファイルを抽出した場所に移動し、選択します。
+4. 目的のカスタム ビューの XML ファイルを抽出した場所に移動し、選択します。
 
 5. [**開く**]を選択します。
 
-6. その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
+6. その機能に関連するイベントのみを表示するようにフィルター処理するカスタム ビューが作成されます。
 
 #### <a name="copy-the-xml-directly"></a>XML を直接コピーする
 
-1. [**イベント ビューアー]** と入力スタート メニュー、イベント ビューアー Windows **開きます**。
+1. スタート メニューに **イベント ビューアー** を入力し、Windows **イベント ビューアー** を開きます。
 
-2. 左側のパネルの [アクション] **で、[** カスタム ビュー **の作成]を選択します。**
+2. 左側のパネルの [**アクション]** で、[**カスタム ビューの作成**] を選択します。
 
    > [!div class="mx-imgBorder"]
    > ![イベント ビューアー ウィンドウでカスタム ビューの作成オプションを強調表示するアニメーション。](images/events-create.gif)
 
-3. [XML] タブに移動し、[クエリの手動編集 **] を選択します**。 XML オプションを使用すると、[フィルター] タブを使用してクエリを編集できないという警告が表示されます。 **[はい]** を選択します。
+3. [XML] タブに移動し、[ **クエリを手動で編集]** を選択します。 XML オプションを使用する場合、[ **フィルター** ] タブを使用してクエリを編集できないという警告が表示されます。 **[はい]** を選択します。
 
 4. イベントをフィルター処理する機能の XML コードを XML セクションに貼り付けます。
 
-5. **[OK]** を選択します。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
+5. **[OK]** をクリックします。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するようにフィルター処理するカスタム ビューが作成されます。
 
-#### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻撃表面の縮小ルール イベントの XML
+#### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻撃表面の縮小ルール イベント用の XML
 
 ```xml
 <QueryList>
@@ -173,7 +183,7 @@ E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint
 </QueryList>
 ```
 
-#### <a name="xml-for-controlled-folder-access-events"></a>フォルダー アクセスイベントを制御するための XML
+#### <a name="xml-for-controlled-folder-access-events"></a>制御されたフォルダー アクセス イベントの XML
 
 ```xml
 <QueryList>
@@ -184,7 +194,7 @@ E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint
 </QueryList>
 ```
 
-#### <a name="xml-for-exploit-protection-events"></a>エクスプロイト保護イベントの XML
+#### <a name="xml-for-exploit-protection-events"></a>エクスプロイト保護イベント用の XML
 
 ```xml
 <QueryList>
@@ -215,17 +225,17 @@ E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint
 </QueryList>
 ```
 
-### <a name="list-of-attack-surface-reduction-events"></a>攻撃表面の縮小イベントの一覧
+### <a name="list-of-attack-surface-reduction-events"></a>攻撃面の縮小イベントの一覧
 
-すべての攻撃表面の縮小イベントは、**Microsoft** > > Windows の [アプリケーションとサービス ログ] の下にあり、次の表に示すフォルダーまたはプロバイダーにあります。
+すべての攻撃対象軽減イベントは、次の表に示すように、Microsoft > Windowsとフォルダーまたはプロバイダー **>アプリケーションとサービス ログ** の下にあります。
 
-これらのイベントには、次のイベント ビューアー Windowsアクセスできます。
+これらのイベントには、Windowsイベント ビューアーでアクセスできます。
 
-1. [スタート] **メニューを** 開き、イベント **ビューアーと入力** し、イベント ビューアーの **結果を選択** します。
-2. [**アプリケーションとサービス ログ] > Microsoft** > Windows展開し、次の表の [プロバイダー **/** ソース] の下にあるフォルダーに移動します。
-3. サブアイテムをダブルクリックすると、イベントが表示されます。 イベントをスクロールして、探しているイベントを見つける。
+1. **[スタート]** メニューを開き、「**イベント ビューアー**」と入力し、**イベント ビューアー** 結果を選択します。
+2. **Microsoft > Windows>アプリケーションとサービス ログ** を展開し、次の表の [**プロバイダー/ソース]** の下にあるフォルダーに移動します。
+3. サブ項目をダブルクリックすると、イベントが表示されます。 イベントをスクロールして探しているイベントを見つけます。
 
-   ![イベント ビューアーを使用して表示されるアニメーション。](images/event-viewer.gif)
+   ![イベント ビューアーを使用して示すアニメーション。](images/event-viewer.gif)
 
 <br>
 
@@ -260,32 +270,38 @@ E5 サブスクリプションをお持ちで、[Microsoft Defender for Endpoint
 |エクスプロイト保護|WER-Diagnostics|5|CFG のブロック|
 |エクスプロイト保護|Win32K (運用)|260|信頼されていないフォント|
 |ネットワーク保護|Windows Defender (運用)|5007|設定が変更された場合のイベント|
-|ネットワーク保護|Windows Defender (運用)|1125|監査モードでネットワーク保護が発生した場合のイベント|
+|ネットワーク保護|Windows Defender (運用)|1125|ネットワーク保護が監査モードで起動した場合のイベント|
 |ネットワーク保護|Windows Defender (運用)|1126|ブロック モードでネットワーク保護が発生した場合のイベント|
 |コントロールされたフォルダー アクセス|Windows Defender (運用)|5007|設定が変更された場合のイベント|
-|コントロールされたフォルダー アクセス|Windows Defender (運用)|1124|監査された制御フォルダー アクセス イベント|
-|コントロールされたフォルダー アクセス|Windows Defender (運用)|1123|ブロックされたフォルダー アクセスイベントの制御|
-|コントロールされたフォルダー アクセス|Windows Defender (運用)|1127|ブロックされたフォルダー アクセスのセクター書き込みブロック イベント|
-|コントロールされたフォルダー アクセス|Windows Defender (運用)|1128|監査された制御フォルダー アクセス セクター書き込みブロック イベント|
+|コントロールされたフォルダー アクセス|Windows Defender (運用)|1124|監査されたフォルダー アクセスの制御イベント|
+|コントロールされたフォルダー アクセス|Windows Defender (運用)|1123|ブロックされたフォルダー アクセス イベント|
+|コントロールされたフォルダー アクセス|Windows Defender (運用)|1127|ブロックされたフォルダー アクセス セクター書き込みブロック イベント|
+|コントロールされたフォルダー アクセス|Windows Defender (運用)|1128|監査されたフォルダー アクセス セクター書き込みブロック イベント|
 |攻撃面の縮小|Windows Defender (運用)|5007|設定が変更された場合のイベント|
-|攻撃面の縮小|Windows Defender (運用)|1122|監査モードでルールが発生した場合のイベント|
-|攻撃面の縮小|Windows Defender (運用)|1121|ブロック モードでルールが発生した場合のイベント|
+|攻撃面の縮小|Windows Defender (運用)|1122|監査モードでルールが起動した場合のイベント|
+|攻撃面の縮小|Windows Defender (運用)|1121|ブロック モードでルールが起動した場合のイベント|
 
 >[!NOTE]
-> ユーザーの観点から見ると、ASR Warn モード通知は、攻撃表面の縮小ルールWindowsトースト通知として行います。
+> ユーザーの観点から見ると、ASR 警告モードの通知は、攻撃表面の縮小ルールのWindowsトースト通知として行われます。
 >
-> ASR では、ネットワーク保護は監査モードとブロック モードのみを提供します。
+> ASR では、Network Protection は監査モードとブロック モードのみを提供します。
 
-## <a name="resources-to-learn-more-about-attack-surface-reduction"></a>攻撃表面の縮小について詳しくは、リソースを参照してください。
+## <a name="resources-to-learn-more-about-attack-surface-reduction"></a>攻撃面の縮小の詳細を確認するためのリソース
 
-ビデオで説明したように、Defender for Endpoint には、いくつかの攻撃表面の縮小機能が含まれています。 詳細については、次のリソースを使用します。
+ビデオで説明したように、Defender for Endpoint には、いくつかの攻撃面縮小機能が含まれています。 詳細については、次のリソースを使用してください。
 
 | 記事 | 説明 |
 |:---|:---|
-| [ハードウェア ベースの分離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | システムの開始と実行中のシステムの整合性を保護し、維持します。 ローカル構成証明とリモート構成証明を使用してシステムの整合性を検証します。 悪意のある web サイトからMicrosoft Edgeを保護するために、コンテナーの分離を使用します。 |
+| [ハードウェア ベースの分離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | システムの起動時と実行中に、システムの整合性を保護および維持します。 ローカル構成証明とリモート構成証明を使用してシステムの整合性を検証します。 Microsoft Edgeにはコンテナーの分離を使用して、悪意のある Web サイトから保護します。 |
 | [アプリケーション制御](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | アプリケーション制御を使用して、アプリケーションを実行するために信頼を得る必要があります。 |
-| [制御されたフォルダー アクセス](controlled-folders.md) | 悪意のあるアプリや疑わしいアプリ (ファイル暗号化ランサムウェア マルウェアを含む) がキー システム フォルダー内のファイルに変更を加えるのを防ぐのに役立ちます (Microsoft Defender ウイルス対策) |
-| [ネットワーク保護](network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (必要なMicrosoft Defender ウイルス対策) |
-| [エクスプロイト保護](exploit-protection.md) | 組織が使用するオペレーティング システムとアプリが悪用されるのを保護するのに役立ちます。 エクスプロイト保護は、サードパーティのウイルス対策ソリューションでも機能します。 |
-| [攻撃面の減少ルール](attack-surface-reduction.md) | マルウェアの阻止に役立つインテリジェントなルールを使用して、アプリケーションの脆弱性 (攻撃面) を減らします。 (必要なMicrosoft Defender ウイルス対策)。 |
-| [デバイス コントロール](device-control-report.md) | 組織内のリムーバブル ストレージや USB ドライブなどのデバイスで使用されるメディアを監視および制御することにより、データ損失から保護します。 |
+| [制御されたフォルダー アクセス](controlled-folders.md) | 悪意のあるアプリまたは疑わしいアプリ (ファイル暗号化ランサムウェア マルウェアを含む) が、キー システム フォルダー内のファイルに変更を加えないようにするのに役立ちます (Microsoft Defender ウイルス対策必要) |
+| [ネットワーク保護](network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (Microsoft Defender ウイルス対策が必要) |
+| [エクスプロイト保護](exploit-protection.md) | 組織が使用するオペレーティング システムとアプリが悪用されないように保護します。 エクスプロイト保護は、サードパーティのウイルス対策ソリューションでも機能します。 |
+| [デバイス コントロール](device-control-report.md) | 組織内のリムーバブル ストレージや USB ドライブなどのデバイスで使用されるメディアを監視および制御することで、データ損失から保護します。 |
+| [攻撃面の縮小 (ASR) ルールの展開ガイド](attack-surface-reduction-rules-deployment.md) | 攻撃表面の縮小ルールを展開するための概要情報と前提条件について説明します |
+| [攻撃面削減 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md) | 攻撃表面縮小ルールの展開に推奨される手順の一覧を示します |
+| [攻撃面の縮小 (ASR) ルールをテストする](attack-surface-reduction-rules-deployment-test.md) | 監査モードを使用して、攻撃表面の縮小ルールをテストする手順について説明します。 |
+| [攻撃面の縮小 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md) | 攻撃表面の縮小ルールをテスト (監査) モードからアクティブな有効 (ブロック) モードに移行する手順を示します |
+| [攻撃面の縮小 (ASR) ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md) | 日常のレビューとメンテナンスアクティビティに関する情報を提供します。 |
+| [攻撃対象の縮小 (ASR) ルールリファレンス](attack-surface-reduction-rules-reference.md) | 各攻撃対象領域の縮小ルールの詳細を提供します。 |
+| [攻撃面の減少ルール](attack-surface-reduction.md) | マルウェアの阻止に役立つインテリジェントなルールを使用して、アプリケーションの脆弱性 (攻撃面) を減らします。 (Microsoft Defender ウイルス対策が必要)。 |

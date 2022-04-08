@@ -233,6 +233,8 @@
           href: get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md
         - name: カスタム ドメインから Microsoft 365 をパイロットする
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
+        - name: onmicrosoft.com ドメインを追加または置換する
+          href: setup/add-or-replace-your-onmicrosoftcom-domain.md
         - name: ドメインに関する FAQ
           href: setup/domains-faq.yml
         - name: DNS の手順

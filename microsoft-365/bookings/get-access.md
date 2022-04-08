@@ -1,5 +1,5 @@
 ---
-title: Microsoft Bookings へのアクセスを取得する
+title: Microsoft Bookingsへのアクセスを取得する
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,29 +8,34 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
-description: 詳細については、「Bookings」機能にアクセスする方法についてMicrosoft 365。
-ms.openlocfilehash: f77a2b63b9c8ce88b1f9f7236f748713656d688e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft 365のBookings機能にアクセスする方法について説明します。
+ms.openlocfilehash: e399540711cdf0f5e9556ac1ac8aeed32d00db52
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173945"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714265"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Microsoft Bookings へのアクセス
 
-このトピックでは、初めて Bookings にアクセスする方法について説明します。 また、組織で Bookings を有効またはオフにする方法も示します。 また、ユーザーが Bookings にアクセスして使用できるよう、ユーザーにライセンスを割り当てる方法について説明します。
+> [!NOTE]
+> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
 
-## <a name="access-bookings-for-the-first-time"></a>初めて予約にアクセスする
+このトピックでは、初めてBookingsにアクセスする方法について説明します。 また、組織内のBookingsを有効または無効にする方法についても説明します。 また、ユーザーがBookingsにアクセスして使用できるように、ライセンスをユーザーに割り当てる方法についても説明します。
 
-IT 管理者が予約へのアクセスを許可している場合は、オンラインからアプリOfficeできます。
+## <a name="access-bookings-for-the-first-time"></a>初めてBookingsにアクセスする
 
-予約を初めて [使用する場合](https://outlook.office.com/bookings/onboarding) は、予定表を作成し、ビジネスを設定します。
+IT 管理者からBookingsへのアクセスが許可されている場合は、オンラインOffice経由でアプリにアクセスできます。
 
-1. [ **今すぐ取得] を** 選択し、[予約 **カレンダーの追加] を選択します**。 このページが初めてではない場合は、別の予約カレンダーを選択するか、別の予約カレンダーを検索できます。
+初めて[Bookings](https://outlook.office.com/bookings/onboarding)を使用する場合は、予定表を作成し、ビジネスを設定します。
 
-2. ビジネス名とビジネス の種類を入力し、[続行] を **選択します**。
+1. **概要** を選択し、会社名とビジネスの種類を入力して、[**予定表の作成**] を選択します。
 
-これで、組織の予約を設定する準備ができました。 このリンクを使用して、[予約] ページ[](https://outlook.office.com/bookings/onboarding)にアクセスするには、アプリ起動ツールまたはアプリ 起動ツール office.com。 以下のトピックを使用して、引き続き Bookings 機能の設定を行います。
+1. このページで初めてではない場合は、別の予約予定表を選択するか、別の予約予定表を検索できます。
+
+2. 会社名と事業の種類を入力し、[ **続行**] を選択します。
+
+これで、組織のBookingsを設定する準備が整いました。 この[リンク](https://outlook.office.com/bookings/onboarding)を使用して、アプリ起動ツールまたは office.com からBookings ページにアクセスできます。 Bookings機能の設定を続行するには、次のトピックを使用します。
 
 - [勤務先情報を入力する](enter-business-information.md)
 - [Bookings にスタッフを追加する](add-staff.md)

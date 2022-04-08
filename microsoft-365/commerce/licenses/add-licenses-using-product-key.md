@@ -1,5 +1,5 @@
 ---
-title: プロダクト キーを使用して支払われたサブスクリプションにライセンスを追加または拡張する
+title: プロダクト キーを使用してライセンスを追加する
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -18,22 +18,22 @@ ms.custom:
 - TopSMBIssues
 - AdminSurgePortfolio
 search.appverid: MET150
-description: プロダクト キーを使用してサブスクリプションにライセンスを追加または拡張する方法について学習します。
+description: プロダクト キーを使用してサブスクリプションにライセンスを追加または拡張する方法について説明します。
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: 4d14f00115059cf28cff71ac126b1f0fdfbb3890
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: df2c4d65f80aedb79e08f6efcab2873256e88d2f
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311866"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64715299"
 ---
-# <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>プロダクト キーを使用して支払われたサブスクリプションにライセンスを追加または拡張する
+# <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>プロダクト キーの使用に対して支払われたサブスクリプションにライセンスを追加または延長する
 
-支払い済みのライセンスは、25 文字の英数字コードとして発行されます。 必要なライセンスの購入が完了すると、ライセンスをサブスクリプションに追加できます。 プロダクト キーを使用してサブスクリプションの有効期限を延長できます。
+支払い済みのライセンスは、25 文字の英数字コードとして発行されます。 必要なライセンスの購入が完了すると、ライセンスをサブスクリプションに追加できます。 プロダクト キーを使用して、サブスクリプションの有効期限を延長することもできます。
 
 > [!NOTE]
-> 新しいプロダクト キーを購入しない場合は、クレジット カードまたは銀行口座をサブスクリプションに追加して、より多くのライセンスを支払うか、サブスクリプションの有効期限を延長することができます。 詳細については、「サブスクリプションを更新 [する」を参照してください](../subscriptions/renew-your-subscription.md)。
+> 新しいプロダクト キーを購入したくない場合は、いつでもクレジット カードまたは銀行口座をサブスクリプションに追加して、より多くのライセンスの支払いを行うか、サブスクリプションの有効期限を延長するかを選択できます。 詳細については、「 [サブスクリプションの更新](../subscriptions/renew-your-subscription.md)」を参照してください。
   
 ## <a name="add-licenses-to-your-subscription"></a>サブスクリプションにライセンスを追加する
 
@@ -49,7 +49,7 @@ ms.locfileid: "63311866"
 
 2. **[製品]** タブで、ライセンスを追加するサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの **[ライセンス]** セクションで、**[ライセンスを追加する]** を選択します。
-4. [ライセンスの **追加] ウィンドウで、[** 新しいプロダクト キーと未使用のプロダクト キーを使用する] を **選択** し、[次へ] を選択 **します**。
+4. [ **ライセンスの追加] ウィンドウで**、[ **新しい未使用のプロダクト キーを使用** する] を選択し、[ **次へ**] を選択します。
 5. プロダクト キーを入力し、[**次へ**] を選択します。
     > [!NOTE]
     > 複数のプロダクト キーがある場合は、[**別のプロダクト キーを追加する**] を選択してキーを入力できます。

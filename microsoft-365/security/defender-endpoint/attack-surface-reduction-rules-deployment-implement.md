@@ -1,5 +1,5 @@
 ---
-title: 攻撃対象の縮小 (ASR) ルールの展開を実装する
+title: 攻撃面の縮小 (ASR) ルールを有効にする
 description: 攻撃表面縮小ルールの展開を実装するためのガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR 展開、ASR の有効化、ASR の構成、ホスト侵入防止システム、保護規則、悪用防止ルール、悪用防止ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、ASR 規則の構成
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 675d881c3737b67cfdc0207be85285f71455d65c
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 19e654c979428e25d1365cbab5b6f75b39adbdb3
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666968"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705518"
 ---
-# <a name="step-3-implement-asr-rules"></a>手順 3: ASR ルールを実装する
+# <a name="enable-attack-surface-reduction-asr-rules"></a>攻撃面の縮小 (ASR) ルールを有効にする
 
 攻撃表面縮小 (ASR) ルールを実装すると、最初のテスト リングが有効な機能状態に移行されます。
 
@@ -131,10 +131,12 @@ ms.locfileid: "64666968"
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>このデプロイ コレクションのその他のトピック
 
-[ASR ルールの展開の前提条件](attack-surface-reduction-rules-deployment.md)
+[攻撃対象領域の削減 (ASR) ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
 
-[手順 1: ASR ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
+[攻撃面削減 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
 
-[手順 2: ASR ルールをテストする](attack-surface-reduction-rules-deployment-test.md)
+[攻撃面の縮小 (ASR) ルールをテストする](attack-surface-reduction-rules-deployment-test.md)
 
-[手順 4: ASR ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md)
+[攻撃面の縮小 (ASR) ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md)
+
+[攻撃対象の縮小 (ASR) ルールリファレンス](attack-surface-reduction-rules-reference.md)

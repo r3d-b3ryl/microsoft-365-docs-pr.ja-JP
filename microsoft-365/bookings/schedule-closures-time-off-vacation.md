@@ -8,31 +8,36 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
-description: 指定された時間に従業員が予約に使用できないとマークされるように、予約カレンダーからオフィスの休業日と従業員の休み時間をスケジュールします。
-ms.openlocfilehash: ea0b9b9870d5331d58b8f0e9f7671853d0e3433b
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: オフィスの休業日や従業員の休暇のスケジュールは、Bookings の予定表から設定でき、その従業員は指定した時間帯は予約できなくなります。
+ms.openlocfilehash: 138079643c9fbc86918a071f935ebe96d7989e68
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807046"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714771"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>休業、休暇、休暇期間のスケジュール
 
-場合によっては、休日やチーム イベントのためにビジネスを終了したり、従業員が病気になったり、休暇中だったり、その他の理由で利用できない場合に休暇が必要になる場合があります。 Microsoft Bookings カレンダーから休み時間をスケジュールでき、従業員は指定された時間に予約を利用できません。 営業を再開したときや、従業員が仕事に戻ったときは、設定されている稼働時間に従って従業員が予約ページに表示されます。
+> [!NOTE]
+> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
 
-このビデオを見る、または以下の手順に従って、休業や従業員の休業をスケジュールします。
+場合によっては、休日やチーム イベントのためにビジネスを閉じたい場合や、従業員が病気、休暇中、または他の理由で利用できない場合に休暇が必要になる場合があります。 Microsoft Bookingsカレンダーから休暇をスケジュールすることができ、指定した時間に従業員は予約に使用できなくなります。 営業を再開したときや、従業員が仕事に戻ったときは、設定されている稼働時間に従って従業員が予約ページに表示されます。
+
+このビデオを見るか、以下の手順に従って、業務の終了または従業員の退職をスケジュールします。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TxDC]
 
 ## <a name="schedule-ad-hoc-business-closures"></a>臨時休業のスケジュール
 
-1. [Microsoft 365] でアプリ 起動ツールを選択し、[予約] を選択します。
+1. Microsoft 365で、アプリ起動ツールを選択し、**Bookings** を選択します。
 
-1. In the navigation pane, select **Calendar** \> **Time off**.
+1. 予定表を選択します。 
 
-   ![[予約] カレンダー ビューと [タイム オフ] ボタンのイメージ。](../media/bookings-calendar-timeoff.png)
+1. 上部のナビゲーション ウィンドウで、[ **時間の追加**] を選択します。
 
-1. タイトル、開始日、終了日時、場所、追加メモなど、詳細を入力します。
+   ![Bookings予定表ビューと休暇ボタンの画像。](../media/bookings-calendar-timeoff.png)
+
+1. タイトル、開始日、終了日時、場所、追加のメモなど、詳細を入力します。
 
 1. [ **終日イベント**] を選びます。
 
@@ -42,17 +47,19 @@ ms.locfileid: "62807046"
 
 休業日に顧客がサービスを予約しようとすると、予約ページにメッセージが表示されます。
 
-   ![お客様が休み中に予約しようとするときに表示されるメッセージの例のイメージ。](../media/bookings-timeoff-message.png)
+   ![休暇中に予約しようとしたときに顧客が表示するメッセージの例の画像。](../media/bookings-timeoff-message.png)
 
 ## <a name="schedule-employee-time-off"></a>従業員の休暇のスケジュール
 
-1. [Microsoft 365] でアプリ 起動ツールを選択し、[予約] **を選択します**。
+1. Microsoft 365で、アプリ起動ツールを選択し、**Bookings** を選択します。
 
-   ![アプリ起動ツールのイメージ。](../media/bookings-applauncher.png)
+   ![アプリ起動ツールの画像。](../media/bookings-applauncher.png)
 
-1. In the navigation pane, select **Calendar** \> **Time off**.
+1. 予定表を選択します。
 
-   ![[予約] カレンダー ビューと [タイム オフ] ボタンのイメージ。](../media/bookings-calendar-timeoff.png)
+1. 上部のナビゲーション ウィンドウで、[ **時間の追加**] を選択します。
+
+   ![Bookings予定表ビューと休暇ボタンの画像。](../media/bookings-calendar-timeoff.png)
 
 1. タイトル、開始日、終了日時、場所、その他のメモなど、詳細を入力します。 従業員が丸 1 日、または数日間休暇を取る場合、[ **終日イベント**] を選びます。
 
