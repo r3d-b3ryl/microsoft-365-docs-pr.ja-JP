@@ -1,5 +1,5 @@
 ---
-title: ボリューム ライセンス サービス センター (VLSC) 経由で購入したサブスクリプションにライセンスを追加する
+title: VLSC サブスクリプションにライセンスを追加する
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -18,18 +18,18 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: Microsoft が認識するサード パーティパートナー Microsoft 365サブスクリプションにライセンスを追加する方法について説明します。
+description: Microsoft が認識するサード パーティ パートナーを通じて購入したMicrosoft 365 サブスクリプションにライセンスを追加する方法について説明します。
 ms.date: 08/27/2021
-ms.openlocfilehash: 9d2b8881be15cdbed1354c5f70e1dc4f4cacc8c3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 56779a263a42ef385b1d6cf4df608b2243495e9a
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320173"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713825"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>ボリューム ライセンス サービス センター (VLSC) 経由で購入したサブスクリプションにライセンスを追加する
 
-ビジネス向けまたはビジネス向けMicrosoft 365購入したOffice 365 Enterpriseパートナーを通じてプランを作成した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。 サブスクリプションの購入元のパートナーが、Microsoft に知られているパートナーである場合は、以下の手順に従って、パートナーの連絡先を調べることができます。
+サード パーティパートナーを通じてビジネスまたはOffice 365 EnterpriseプランのMicrosoft 365を購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。 サブスクリプションの購入元のパートナーが、Microsoft に知られているパートナーである場合は、以下の手順に従って、パートナーの連絡先を調べることができます。
   
 ::: moniker range="o365-worldwide"
 
@@ -41,6 +41,6 @@ ms.locfileid: "63320173"
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 
-2. ライセンスを追加するサブスクリプションを選択し、ボリューム ライセンス サービス センター **(VLSC) リンクを選択** します。
+2. ライセンスを追加するサブスクリプションを選択し、 **ボリューム ライセンス サービス センター (VLSC) リンクを** 選択します。
 
 3. 購入を完了するには、VLSC で次の手順に従います。

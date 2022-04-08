@@ -1,5 +1,5 @@
 ---
-title: 組織向けサービスとしてのソフトウェア アプリの管理
+title: 組織の SAAS アプリを管理する
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 管理センターでサードパーティ製アプリをアクティブにして管理する方法について説明します。
 ms.date: 04/15/2021
-ms.openlocfilehash: 1a8593e967f899f748f4124567028177777851e4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c85a0c93ee7f17953f7877cc1fd97765e0e63afd
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319715"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713869"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織向けサードパーティ製アプリのサブスクリプションを管理する
 
