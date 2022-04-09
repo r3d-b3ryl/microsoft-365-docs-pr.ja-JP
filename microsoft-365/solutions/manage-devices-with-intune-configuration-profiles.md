@@ -1,5 +1,5 @@
 ---
-title: 手順 5.  Microsoft Intune にデバイス プロファイルを展開する
+title: 手順 5。Microsoft Intune でデバイス プロファイルを展開する
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: d44d70c50db5c086e24af575677d5d51e1b33357
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: dfdffc95c39d471e071db8f83e88b9ba67e143e8
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049253"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731551"
 ---
-# <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>手順 5.  Microsoft Intune にデバイス プロファイルを展開する
+# <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>手順 5。Microsoft Intune でデバイス プロファイルを展開する
 
 Microsoft Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は "構成プロファイル" に追加されます。 iOS/iPad OS、Android デバイス管理者、Android Enterprise、Windows など、さまざまなデバイスやプラットフォームのプロファイルを作成できます。 次に、Intune を使用して、プロファイルをデバイスに適用または「割り当て」ます。
 
@@ -48,7 +48,7 @@ Intune の Windows セキュリティ ベースラインを展開するには、
 
 後で、Microsoft Defender for Endpoint がセットアップされ、Intune に接続したら、Defender for Endpoint ベースラインを展開します。 このトピックについては、このシリーズの次の記事で説明します。[手順 6. デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する](manage-devices-with-intune-monitor-risk.md)。
 
-これらのセキュリティ ベースラインは CIS または NIST に準拠していませんが、推奨事項を厳密に反映していることを理解することが重要です。 詳細については、「[Intune セキュリティ ベースラインは CIS または NIST に準拠していますか](/mem/intune/protect/security-baselines)?」を参照してください。
+これらのセキュリティ ベースラインは CIS または NIST に準拠していませんが、推奨事項を厳密に反映していることを理解することが重要です。 詳細については、「[Intune セキュリティ ベースラインは CIS または NIST に準拠していますか?](/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)」 を参照してください。
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>組織の構成プロファイルをカスタマイズする
 

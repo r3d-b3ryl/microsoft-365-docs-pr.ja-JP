@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。ファイルは Microsoft 365 コンプライアンス ソリューションで表示されます '
-ms.openlocfilehash: 031d1d80dd6700939c9d73cc82350b7abc30c132
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+ms.openlocfilehash: f32e84434258ff4b4c5ea6af24f69c607952b56a
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520785"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714551"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
@@ -53,6 +53,16 @@ Microsoft Endpoint DLP を使用すると、ユーザーが物理的に Windows 
 |Bluetooth デバイスにコピーする|ユーザーがアイテムを許可されていない Bluetooth アプリにコピーしようとしたことを検出します (エンドポイント DLP 設定の許可されていない Bluetooth アプリのリストで定義されています)。|サポート対象|サポートなし| 監査可能/制限可能|
 |アイテムの作成|ユーザーがアイテムを作成した場合に検出します|サポート対象 | |監査可能|
 |アイテムの名前の変更|ユーザーがアイテムの名前を変更した場合に検出します|サポート対象 | |監査可能|
+
+## <a name="best-practice-for-endpoint-dlp-policies"></a>エンドポイント DLP ポリシーのベスト プラクティス
+
+たとえば、財務部門ユーザーのエンドポイントから、クレジットカード番号を含むすべての項目をブロックしたいとします。 次のようにお勧めします。
+
+- ポリシーを作成し、エンドポイントとそのユーザー グループにスコープを設定します。
+- 保護する情報の種類を検出するルールをポリシーに作成します。 この場合、**含まれるコンテンツ** を *　［機密情報の種類］** に設定し、**［クレジット カード］** を選択します。
+- 各アクティビティのアクションを **［ブロック］** に設定します。
+
+DLP ポリシーの設計に関する詳細なガイダンスについては、「[データ損失防止ポリシーの設計](dlp-policy-design.md)」 を参照してください。
 
 ## <a name="monitored-files"></a>監視対象ファイル
 

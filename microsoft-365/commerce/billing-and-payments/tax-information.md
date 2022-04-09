@@ -1,11 +1,11 @@
 ---
-title: 税務情報
+title: 税情報
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: tugu, jmueller
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,25 +14,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: 'さまざまな地域のビジネス サブスクリプションに対して請求される税金Microsoft 365確認します。 '
 ms.custom:
 - commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
+description: さまざまなリージョンのビジネス サブスクリプションに対してMicrosoft 365に対して課金される税金の額を確認します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 421abe7b69323be783831d9ce5de45c21ec98536
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 35442bc495b6179a844bdbe3a6b98a4f58556140
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313399"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731231"
 ---
 # <a name="tax-information"></a>税金情報
 
-Microsoft 365製品とサービスを購入する場合、支払う税金は、ビジネス アドレスと配送先住所の 2 つ (異なる場合) の 1 つによって決まります。 組織が米国にある場合は、連邦雇用者識別番号 (FEIN) を指定する必要があります。
+Microsoft 365製品とサービスを購入する場合、支払う税金は、ビジネス アドレスと配送先住所 (異なる場合) のいずれかによって決まります。 組織が米国内にある場合は、連邦雇用主識別番号 (FEIN) を指定する必要があります。
 
-次の国の企業は、VAT 番号または現地の同等の番号を提供できます。
+次の国の企業は、VAT 番号または同等の現地番号を提供できます。
 
 :::row:::
     :::column:::
@@ -95,34 +95,34 @@ Microsoft 365製品とサービスを購入する場合、支払う税金は、�
     :::column-end:::
 :::row-end:::
 
-*一覧に記載されているほとんどの国では、VAT 番号または現地同等の番号を指定するオプションがあります。 ブラジルとインドでは、税識別子番号が必要です。
+*一覧に記載されているほとんどの国では、VAT 番号または現地に相当する番号を指定することは省略可能です。 ブラジルとインドの場合は、税識別子番号が必要です。
 
 > [!Note]
-> サポートに連絡する必要がある場合は、FEIN、VAT 番号、または現地の同等の番号をサポート エージェントに提供する準備をしてください。
+> サポートに問い合わせる必要がある場合は、FEIN、VAT 番号、またはサポート エージェントに提供するローカル同等の準備をしてください。
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>ヨーロッパ、中東、アフリカ (EMEA)
 
-EMEA 地域Microsoft 365サービスを購入する場合、この購入は税 (VAT) のValue-Addedされる可能性があります。
+EMEA リージョンでMicrosoft 365サービスを購入する場合、この購入はValue-Added税 (VAT) の対象になる可能性があります。
   
-- EU 加盟国、アルメニア、ベラルーシ、ノルウェー、トルコ、またはアラブ首長国連邦に在住し、有効な現地 VAT ID を提供しない場合、Microsoft アイルランド Operations Ltd. は、アカウントが設定されている請求国に基づいて、現在の現地 VAT レートを適用します。
+- 欧州連合のメンバー国、アルメニア、ベラルーシ、ノルウェー、トルコ、アラブ首長国連邦に所在し、有効な VAT ID を指定していない場合、Microsoft Ireland Operations Ltd. は、アカウントが設定されている課金先の国に基づいて、現在の現地 VAT 料金を適用します。
 
-- リヒテンシュタイン、ロシア、セルビア、南アフリカ、スイスに住む場合は、VAT ID を提供するかどうかに関係ない VAT が適用されます。
+- リヒテンシュタイン、ロシア、セルビア、南アフリカ、スイスに所在する場合は、VAT ID を指定するかどうかにかかわらず、VAT が適用されます。
 
-- EU のお客様の場合、VAT ID を検証する前に、VAT 情報システム (VIES) で確認Exchange必要があります。 VAT ID を確認できない場合は、現地の税務当局にお問い合わせください。
+- EU のお客様の場合は、VAT ID を検証する前に、VAT 情報Exchange System (VIES) で確認できる必要があります。 VAT ID を確認できない場合は、現地の税務当局にお問い合わせください。
 
-次の場合は、VAT ゼロ評価の対象となる場合があります。
+次の場合、VAT ゼロレーティングの対象となる場合があります。
   
-- **アイルランド以外の欧州連合加盟国にいます。** 有効なローカル VAT ID を指定できます。 これにより、Microsoft アイルランド Operations Ltd. はトランザクションを VAT ゼロレートにできます。 ただし、現地の VAT 会計上の義務がある場合があります。 懸念がある場合は、税務顧問に確認してください。 手順については、「VAT [ID を追加する」を参照してください](#add-your-vat-id)。
+- **アイルランド以外の欧州連合 (EU) メンバーの州にいる場合:** 有効なローカル VAT ID を指定できます。 これにより、Microsoft Ireland Operations Ltd. はトランザクションの VAT ゼロレートを行うことができます。 ただし、ローカルの VAT 会計義務がある場合があります。 懸念がある場合は、税務アドバイザーに問い合わせてください。 手順については、「 [VAT ID を追加する](#add-your-vat-id)」を参照してください。
 
-- **アイルランドにいて、関連する有効な VAT 免除認定を受け取っています。** Microsoft Ireland Operations Ltd. は、トランザクションを VAT から除外する権利を有する場合があります。 そうしない場合は、VAT ID を指定したかどうかに関して、Microsoft Ireland Operations Ltd. が現在のアイルランド VAT レートを適用します。
+- **アイルランドにいて、関連する有効な VAT 免除認定を受けます。** Microsoft Ireland Operations Ltd. は、VAT からトランザクションを除外する権利を有する場合があります。 指定しない場合は、VAT ID を指定するかどうかに関係なく、Microsoft Ireland Operations Ltd. によって現在のアイルランドの VAT 料金が適用されます。
 
-- **アルメニア、ベラルーシ、ノルウェー、トルコ、またはアラブ首長国連邦の場合:** ローカル VAT ID を指定できます。 これにより、Microsoft Ireland Operations Ltd. に対し、トランザクションの VAT ゼロレートが適用されます。 ただし、現地の VAT 会計上の義務が適用される場合があります。懸念がある場合は、税務顧問にお問い合わせください。 手順については、「VAT [ID を追加する」を参照してください](#add-your-vat-id)。
+- **アルメニア、ベラルーシ、ノルウェー、トルコ、アラブ首長国連邦にいる場合:** ローカル VAT ID を指定できます。 これにより、Microsoft Ireland Operations Ltd. にトランザクションの VAT ゼロレートが付与されます。 ただし、現地の VAT 会計上の義務がある場合があるため、懸念がある場合は、税務アドバイザーにお問い合わせください。 手順については、「 [VAT ID を追加する](#add-your-vat-id)」を参照してください。
 
 ## <a name="asia-pacific-countries-apac"></a>アジア太平洋地域 (APAC)
 
-Microsoft 地域販売オフィスから請求される場合は、「Microsoft 地域販売 Pte。 Ltd. は請求書に表示され、該当する付加価値税、販売税、または類似の税金に対して請求される場合があります。
+Microsoft 地域販売オフィスから請求される場合は、「Microsoft Regional Sales Pte。 Ltd." が請求書に表示され、適用される付加価値税、売上税、または同様の税金に対して課金される場合があります。
   
-次のいずれかの場所から請求される場合は、現在の地方税が適用されます。 場所は請求書 [に含まれています](view-your-bill-or-invoice.md)。
+次のいずれかの場所から課金される場合は、現在の現地税が適用されます。 場所は [請求書に](view-your-bill-or-invoice.md)含まれています。
   
 - インド
 - 日本
@@ -134,15 +134,15 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 米国、カナダ、メキシコ、チリ、コロンビアでは、製品の性質と場所に応じてさまざまな税率が適用されます。
   
-請求が Microsoft Corporation によって行われた[場合 (請求書](view-your-bill-or-invoice.md)を参照し、米国、カナダ、プエルトリコ、チリ、コロンビア以外の Microsoft 365 にサインアップした場合、通常、税金は請求されません。
+Microsoft Corporation によって請求が行われた場合 ([請求書を参照し](view-your-bill-or-invoice.md)、米国、カナダ、プエルトリコ、チリ、コロンビア以外のMicrosoft 365にサインアップした場合、税金は一般に課金されません。
 
 ## <a name="add-your-vat-id"></a>VAT ID を追加する
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 2. **[製品]** タブで、更新するサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの **[サービスの利用先住所]** セクションで、**[サービスの利用先住所の編集]** を選択します。
-4. [サービス利用状況 **アドレスの編集** ] ウィンドウの **[VAT** 番号] ボックスに、プレフィックスを含む VAT ID を入力し、スペースを使用せずに入力します。
-5. **[保存]** を選択します。
+4. [ **サービス使用量アドレスの編集]** ウィンドウの [ **VAT 番号** ] ボックスに、プレフィックスを含め、スペースを使用せずに VAT ID を入力します。
+5. [**保存**] を選択します。
 
 ## <a name="how-taxes-are-calculated"></a>税金の計算方法
 
@@ -150,24 +150,24 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 例:
 
->*(単価 X 税率)X 数量 = 売上税の合計*
+>*(単価 X 税率)X 数量 = 総売上税*
 
 または
 
 >($1.29 X 0.095)X 100 = $12.25
 
-## <a name="apply-for-tax-exempt-status"></a>免税ステータスを申請する
+## <a name="apply-for-tax-exempt-status"></a>非課税状態を申請する
 
-市場で免税ステータスの対象となる場合は、サービス要求[](../../admin/get-help-support.md)を開始して、組織の免税ステータスを確立します。
+市場で非課税状態に該当する場合は、組織の非課税状態を確立するための [サービス要求を開始](../../admin/get-help-support.md) します。
 
 |国またはロケール | ドキュメント |
 |------------------|----------------|
-| カナダ | 除外証明書 (または同等の承認書) |
+| カナダ | 除外証明書 (または同等の承認状) |
 | チリ | IVA status/RUT (Registro Unico Tributario) |
 | コロンビア | IVA status/RUT (Registro Unico Tributario) |
-| 免税が適用される国際組織 | 地方税当局からの証明書/証明書の確認 |
+| 免税が適用される国際組織 | 地方自治体からの証明書/手紙の確認 |
 | アイルランド | 13B/56A 非課税証明書|
-| 米国 | 売上税の除外証明書 |
+| 米国 | Sales Tax Exemption Certificate |
 | プエルトリコ | Certificado de Compras Exentas |
   
 ## <a name="related-content"></a>関連コンテンツ

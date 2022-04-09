@@ -1,10 +1,10 @@
 ---
-title: 手順 2.  Intune を使用してデバイスを管理に登録する
+title: 手順 2。Intune を使用してデバイスを管理対象に登録する
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
 - enroll devices into management
-- enroll devices with Intune
+- enroll devices to Intune
 - Intune mobile device platforms
 manager: dougeby
 audience: ITPro
@@ -18,22 +18,22 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 177c21b46357ca890994751b9f4d7597a57c6b64
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: 98c98298b5bb6728a0f8526e0406fb1fe02654f0
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651281"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704716"
 ---
-# <a name="step-2-enroll-devices-to-intune"></a>手順 2。 デバイスをIntuneに登録する
+# <a name="step-2-enroll-devices-to-intune"></a>手順 2。 デバイスを Intune に登録する
 
-エンドポイントを保護する方法はいくつかあります。この用語は、デバイス、アプリ、ユーザー ID などの結合されたエンティティを指すためによく使用されます。 セキュリティ ポリシーは、アプリだけでなくデバイス自体にも一貫して確実に適用する必要があります。 デバイスをIntuneに登録し、Azure Active Directoryなどのクラウド ID プロバイダーに登録することは、すばらしいスタートです。
+エンドポイントを保護する方法はいくつかあります。この用語は、デバイス、アプリ、ユーザー ID などの結合されたエンティティを指すためによく使用されます。 セキュリティ ポリシーは、アプリだけでなくデバイス自体にも一貫して確実に適用する必要があります。 デバイスを Intune に登録し、Azure Active Directory などのクラウド ID プロバイダーに登録することは素晴らしいスタートです。
 
 デバイスが個人所有の BYOD デバイスでも、企業所有の完全に管理されたデバイスでも、組織のリソースにアクセスするエンドポイントを可視化し、正常で準拠したデバイスのみを許可するようにすることをお勧めします。 これには、エンドポイントで実行されるモバイル アプリとデスクトップ アプリの正常性と信頼性が含まれます。 これらのアプリが正常で準拠していること、および悪意のある意図や偶発的な手段によって企業データがコンシューマー アプリやサービスに漏洩するのを防ぐ必要があります。
 
 デバイス登録プロセスは、ユーザー、デバイス、および Microsoft Intune サービス間の関係を確立します。 Microsoft Intune をスタンドアロン サービスとして使用すると、単一の Web ベースの管理コンソールを使用して、Windows PC、macOS、および最も一般的なモバイル デバイス プラットフォームを管理できます。
 
-この記事では、デバイスをIntuneに登録する方法をお勧めします。 これらのメソッドと各メソッドの展開方法の詳細については、「[展開ガイダンス: Microsoft Intune にデバイスを登録する](/mem/intune/fundamentals/deployment-guide-enrollment)」を参照してください。
+この記事では、デバイスを Intune に登録する方法を推奨しています。これらのメソッドと各メソッドの展開方法の詳細については、「[展開ガイダンス: Microsoft Intune にデバイスを登録する](/mem/intune/fundamentals/deployment-guide-enrollment)」を参照してください。
 
 ![デバイスを管理するための手順](../media/devices/intune-mdm-steps-1.png#lightbox)
 
@@ -47,9 +47,9 @@ BYOD Windows デバイスの登録などの追加オプションについては�
 
 ## <a name="ios-and-ipados-enrollment"></a>iOS および iPadOS の登録
 
-ユーザー所有 (BYOD) デバイスの場合、次のいずれかの方法を使用して、ユーザーが個人用デバイスを Intune 管理に登録できるようにすることができます。
+ユーザー所有 (BYOD) デバイスの場合、次のいずれかの方法を使用して、ユーザーが個人用デバイスを Intune に登録できるようにすることができます。
 - デバイスの登録は、一般的な BYOD 登録と考えられます。 これにより、管理者は幅広い管理オプションを使用できるようになります。
-- ユーザー登録は、管理者にデバイス管理オプションのサブセットを提供する、より合理化された登録プロセスです。 この機能は現在プレビューの段階です。
+- ユーザー登録は、管理者にデバイス管理オプションのサブセットを提供する、より合理化された登録プロセスです。この機能は現在プレビューの段階です。
 
 ユーザー用にデバイスを購入する組織の場合、Intune は次の iOS / iPadOS 会社所有のデバイス登録方法をサポートしています。
 - Apple の自動デバイス登録 (ADE)
@@ -61,7 +61,7 @@ BYOD Windows デバイスの登録などの追加オプションについては�
 
 ## <a name="android-enrollment"></a>Android の登録 
 
-Androidの登録には、デバイスの種類、サポートする登録の種類、使用している Android のバージョン、さらにはメーカー (特に、Samsung) などに応じていくつかのオプションがあります。 ほとんどの組織は、特に BYOD シナリオで、エンド ユーザーに Android Work プロファイルを使用しています。 
+Android の登録には、デバイスの種類、サポートする登録の種類、使用している Android のバージョン、さらにはメーカー (特に、Samsung) などに応じていくつかのオプションがあります。ほとんどの組織は、特に BYOD シナリオで、エンド ユーザーに Android Work プロファイルを使用しています。 
 
 Android Work Profile を使用すると、エンドユーザーの情報は、データコンテナーと、仕事用と個人用の別々のアプリで明確に分離されます。 これは、ユーザーが自分のデータのプライバシーと企業データのセキュリティを維持しながら、デバイスを登録するための理想的な方法です。 
 

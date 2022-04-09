@@ -23,12 +23,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: 17a3a63dfb3faedb5ff213b24dd14abd57f55bb3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 08d28a5586c92d0e439170807f750150d9fbe17c
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316927"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704781"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 
@@ -97,14 +97,16 @@ Microsoft で正しい MX レコードが見つかった場合、ドメインは
 
 MX レコードの情報は、管理センターのドメイン セットアップ ウィザードから取得されます。
 
-ホスティング プロバイダーの Web サイトで、新しい MX レコードを追加します。
-フィールドが次の値に設定されていることを確認します。
+ホスティング プロバイダーの Web サイトで、新しい MX レコードを追加します。 フィールドが次の値に設定されていることを確認します。
 
 - Record Type: `MX`
 - Priority: 使用可能な最高の値を設定します。通常は `0` です。
 - Host Name: `@`
 - Points to address: 管理センターから値をコピーし、ここに貼り付けます。
-- TTL: `3600` (またはプロバイダーの既定値)
+- TTL: `3600`
+
+> [!NOTE]
+> Exchange Online は、6 時間 (21,600 秒) 未満の TTL 値のみをサポートします。
 
 レコードを保存して、他の MX レコードを削除します。
 

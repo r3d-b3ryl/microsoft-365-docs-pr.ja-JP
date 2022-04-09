@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 15b540f9993e8f2163f464379aca9496bec4cca7
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 70f75fd5986a5d837e33b3caf0b7cb23239ddce5
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665384"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731594"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Microsoft 365 Defenderを使用したインシデント対応
 
@@ -37,9 +37,6 @@ ms.locfileid: "64665384"
 
 **適用対象:**
 - Microsoft 365 Defender
-
-> Microsoft 365 Defender を体験しますか? [ラボ環境で評価](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)、または[運用でパイロット プロジェクトを実行](m365d-pilot.md?ocid=cx-evalpilot)することができます。
->
 
 Microsoft 365 Defenderのインシデントは、攻撃のストーリーを構成する相関アラートと関連データのコレクションです。
 

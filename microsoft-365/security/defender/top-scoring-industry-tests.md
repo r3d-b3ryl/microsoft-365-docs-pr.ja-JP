@@ -15,19 +15,16 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: c12a0dbb56e81c6b2c6d7953cff77e367f2e435d
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: a61590b614631b738198001a56e29096d4a7d957
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419334"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731309"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップ スコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-> Microsoft 365 Defender を体験しますか? [ラボ環境で評価](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)、または[運用でパイロット プロジェクトを実行](m365d-pilot.md?ocid=cx-evalpilot)することができます。
->
 
 [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) テクノロジは、個別のテストで一貫してハイ スコアを実現し、企業を脅威から保護する機能の強度を実証しています。 Microsoft は、これらのテスト スコアについて透明性を保つことを目指しています。 このページでは、結果の概要を示し、分析を提供します。
 

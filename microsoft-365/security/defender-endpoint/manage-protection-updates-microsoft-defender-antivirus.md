@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 69c211e02b5bea12431e17bf2256405f96977b53
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
-ms.translationtype: HT
+ms.openlocfilehash: 04cedfa951387274261c3a7a064cf11a4b97db62
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467425"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731463"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -42,7 +42,7 @@ ms.locfileid: "64467425"
 この記事では、更新プログラムのダウンロード元を指定する方法について説明します (これはフォールバック順序とも呼ばれます)。 更新プログラムのしくみの概要と、更新プログラムの他の側面を構成する方法 (更新のスケジュール設定など) については、「[Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する](manage-updates-baselines-microsoft-defender-antivirus.md)」を参照してください。
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日から、すべてのセキュリティ インテリジェンス更新プログラムは SHA-2 でのみ署名されます。 セキュリティ インテリジェンスを更新するには、SHA-2 をサポートするようにデバイスを更新する必要があります。 詳細については、「[Windows および WSUS の 2019 SHA-2 コード署名サポートの要件](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)」を参照してください。
+> Microsoft Defender ウイルス対策 セキュリティ インテリジェンスの更新プログラムとプラットフォーム更新プログラムは、Windows Updateを通じて配信され、2019 年 10 月 21 日 (月) 以降、すべてのセキュリティ インテリジェンス更新プログラムは SHA-2 のみ署名されます。 セキュリティ インテリジェンスを更新するには、SHA-2 をサポートするようにデバイスを更新する必要があります。 詳細については、「[Windows および WSUS の 2019 SHA-2 コード署名サポートの要件](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)」を参照してください。
 
 <a id="fallback-order"></a>
 
@@ -69,12 +69,17 @@ ms.locfileid: "64467425"
 
 (<a id="fn1">2</a>) ポリシーとレジストリでは、以前の名称である Microsoft マルウェア プロテクション センター (MMPC) のセキュリティ インテリジェンスとして表示される場合があります。
 
-Microsoft Update では、最大限の保護を確保するために、迅速なリリースが可能になります。つまり、ダウンロードの頻度が低くなります。 Windows Server Update Service、Microsoft Endpoint Configuration Manager、Microsoft セキュリティ インテリジェンス更新プログラムのソースでは、低い頻度で更新プログラムが配信されます。 したがって、デルタが大きくなり、ダウンロードが大きくなる可能性があります。
+Microsoft Update では、最大限の保護を確保するために、迅速なリリースが可能になります。つまり、ダウンロードの頻度が低くなります。 Windows Server Update Service、Microsoft Endpoint Configuration Manager、Microsoft セキュリティ インテリジェンスの更新プログラム、およびプラットフォーム更新プログラムのソースでは、更新の頻度が低くなります。 したがって、デルタが大きくなり、ダウンロードが大きくなる可能性があります。
+
+> [!NOTE]
+> セキュリティ インテリジェンス更新プログラムにはエンジンの更新プログラムが含まれており、月単位でリリースされます。
+セキュリティ インテリジェンスの更新プログラムも 1 日に複数回配信されますが、このパッケージにはエンジンは含まれていません。
+
 
 > [!IMPORTANT]
-> Windows Server Update Service または Microsoft Update の後にフォールバック ソースとして [Microsoft セキュリティ インテリジェンス ページ](https://www.microsoft.com/security/portal/definitions/adl.aspx)の更新プログラムを設定した場合、更新プログラムは現在の更新プログラムが最新でないと見なされた場合にのみ、セキュリティ インテリジェンス更新プログラムからダウンロードされます。 (既定では、Windows Server Update Service または Microsoft Update サービスから更新プログラムを適用できないのは、連続する 7 日間です)。
+> サーバー更新サービスまたは Microsoft Update の後に [Microsoft セキュリティ インテリジェンス ページ](https://www.microsoft.com/security/portal/definitions/adl.aspx)の更新プログラム Windowsをフォールバック ソースとして設定した場合、更新プログラムは、現在の更新プログラムが最新でないと見なされた場合にのみ、セキュリティ インテリジェンス更新プログラムとプラットフォーム更新プログラムからダウンロードされます。 (既定では、Windows Server Update Service または Microsoft Update サービスから更新プログラムを適用できないのは、連続する 7 日間です)。
 > ただし、[保護が最新でないとして報告されるまでの日数を設定](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)できます。<p>
-> 2019 年 10 月 21 日月曜日から、セキュリティ インテリジェンス更新プログラムは SHA-2 でのみ署名されます。 最新のセキュリティ インテリジェンス更新プログラムを取得するには、SHA-2 をサポートするようにデバイスを更新する必要があります。 詳細については、「[Windows および WSUS の 2019 SHA-2 コード署名サポートの要件](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)」を参照してください。
+> 2019 年 10 月 21 日 (月曜日) 以降、セキュリティ インテリジェンスの更新プログラムとプラットフォーム更新プログラムは SHA-2 のみ署名されます。 最新のセキュリティ インテリジェンス更新プログラムとプラットフォーム更新プログラムを取得するには、SHA-2 をサポートするようにデバイスを更新する必要があります。 詳細については、「[Windows および WSUS の 2019 SHA-2 コード署名サポートの要件](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)」を参照してください。
 
 各ソースには、次の表に示すように、更新プログラムを発行する頻度に加えて、ネットワークの構成方法に依存する一般的なシナリオがあります。
 
@@ -86,7 +91,7 @@ Microsoft Update では、最大限の保護を確保するために、迅速な
 |Microsoft Update|エンドポイントを Microsoft Update に直接接続する必要があります。 これは、エンタープライズ ネットワークに不定期に接続するエンドポイントや、Windows Server Update Service を使用して更新プログラムを管理しない場合に役立ちます。|
 |ファイル共有|インターネットに接続されていないデバイス (VM など) があります。 インターネットに接続された VM ホストを使用して、VM が更新プログラムを取得できるネットワーク共有に更新プログラムをダウンロードできます。 仮想デスクトップ インフラストラクチャ (VDI) 環境でファイル共有を使用する方法については、「[VDI 展開ガイド](deployment-vdi-microsoft-defender-antivirus.md)」を参照してください。|
 |Microsoft エンドポイント マネージャー|Microsoft エンドポイント マネージャーを使用してエンドポイントを更新しています。|
-|Microsoft Defender ウイルス対策とその他の Microsoft マルウェア対策 (旧称 MMPC) のセキュリティ インテリジェンス更新プログラム|[SHA-2 をサポートするようにデバイスが更新されている必要があります](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。 Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日から、セキュリティ インテリジェンス更新プログラムは SHA-2 でのみ署名されます。 <br/>最近の感染が原因で最新の保護更新プログラムをダウンロードするか、[VDI 展開](deployment-vdi-microsoft-defender-antivirus.md)の強力な基本イメージをプロビジョニングするのに役立ちます。 このオプションは通常、プライマリ ソースではなく、最終的なフォールバック ソースとしてのみ使用する必要があります。 これは、[指定された日数](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)の間、Windows Server Update Service または Microsoft Update から更新プログラムをダウンロードできない場合にのみ使用されます。|
+|Microsoft Defender ウイルス対策およびその他の Microsoft マルウェア対策 (旧称 MMPC) のセキュリティ インテリジェンス更新プログラムとプラットフォーム更新プログラム|[SHA-2 をサポートするようにデバイスが更新されている必要があります](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。 Microsoft Defender ウイルス対策セキュリティ インテリジェンスとプラットフォームの更新プログラムはWindows Update経由で配信され、2019 年 10 月 21 日月曜日以降、セキュリティ インテリジェンスの更新プログラムとプラットフォーム更新プログラムは SHA-2 のみに署名されます。 <br/>最近の感染が原因で最新の保護更新プログラムをダウンロードするか、[VDI 展開](deployment-vdi-microsoft-defender-antivirus.md)の強力な基本イメージをプロビジョニングするのに役立ちます。 このオプションは通常、プライマリ ソースではなく、最終的なフォールバック ソースとしてのみ使用する必要があります。 これは、[指定された日数](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)の間、Windows Server Update Service または Microsoft Update から更新プログラムをダウンロードできない場合にのみ使用されます。|
 
 更新プログラムのソースを使用する順序は、グループ ポリシー、Microsoft Endpoint Configuration Manager、PowerShell コマンドレット、WMI で管理できます。
 
@@ -170,9 +175,9 @@ MDM の構成に関する詳細については、「[ポリシー CSP - Defender
 
 <a id="unc-share"></a>
 
-## <a name="create-a-unc-share-for-security-intelligence-updates"></a>セキュリティ インテリジェンス更新プログラム用の UNC 共有を作成する
+## <a name="create-a-unc-share-for-security-intelligence-and-platform-updates"></a>セキュリティ インテリジェンスとプラットフォーム更新プログラム用の UNC 共有を作成する
 
-スケジュールされたタスクを使用して MMPC サイトからセキュリティ インテリジェンス更新プログラムをダウンロードするネットワーク ファイル共有 (UNC/マップされたドライブ) を設定します。
+スケジュールされたタスクを使用して MMPC サイトからセキュリティ インテリジェンスとプラットフォームの更新プログラムをダウンロードするネットワーク ファイル共有 (UNC/マップ ドライブ) を設定します。
 
 1. 共有をプロビジョニングして更新プログラムをダウンロードするシステムで、スクリプトを保存するフォルダーを作成します。
 

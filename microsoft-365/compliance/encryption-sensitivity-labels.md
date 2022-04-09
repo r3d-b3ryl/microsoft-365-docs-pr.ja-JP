@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac50568f9ce995f658e6b06c3a2b13b666211810
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 0ec60e573d5c05c4a30e74f235ffae5983de03dc
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512350"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705410"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -194,7 +194,7 @@ ms.locfileid: "63512350"
 
 - Azure AD で、特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([以前の Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))。 Microsoft 365 グループは、静的メンバーシップまたは[動的メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を持つことができます。 このグループの種類は Azure AD に同期されていないため、また、メールが有効になっていないセキュリティグループを使用できないため、[Exchange からの動的配布グループ](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) を使用することはできません。
     
-    このオプションでサポートされている指定されたグループ内では、Azure Information Protection サービスによって、暗号化されたコンテンツを開く前に、各[ユーザーは、個別に認証されます](/azure/information-protection/prepare#azure-information-protection-requirements-for-user-accounts)。
+    組織外の複数のユーザーにアクセスを許可する便利な方法として、メールの連絡先を含むグループを指定できますが、現在、この構成には既知の問題があります。 詳細については、「[グループ内のメール連絡先が暗号化されたコンテンツに断続的にアクセスする](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content)」を参照してください。
 
 - 任意のメール アドレスまたはドメイン。 この組織の任意のドメイン名を入力して、Azure AD を使用する別の組織のすべてのユーザーを指定するには、このオプションを使用します。 **gmail.com**、**hotmail.com**、**outlook.com** などのドメイン名を入力することにより、ソーシャル プロバイダーに対してこのオプションを使用することもできます。
 

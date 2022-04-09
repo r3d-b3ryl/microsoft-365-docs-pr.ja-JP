@@ -9,15 +9,20 @@ ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - LIL_Placement
-  - O365ITProTrain
-  - Ent_Office_Other
+- LIL_Placement
+- O365ITProTrain
+- Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Microsoft 365 テナントに接続するには、Microsoft 365 用 PowerShell を使用して、コマンド ラインから管理センターのタスクを実行します。
+ms.openlocfilehash: 4083ffdf240664947b1d35e726a400f292b6d3bf
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713495"
 ---
-
 # <a name="connect-to-microsoft-365-with-powershell"></a>PowerShell を使用して Microsoft 365 に接続する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
@@ -96,6 +101,12 @@ Are you sure you want to install the modules from 'PSGallery'?
 
 インストールを続行するには [**はい**] または [**すべてにはい**] をクリックします。
 
+3.  次のコマンドを実行して、モジュールをインポートします。
+    
+    ```powershell
+    Import-Module  AzureAD
+    ```
+    
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>手順 2: Microsoft 365 サブスクリプション用の Azure AD に接続する
 
 アカウント名とパスワードまたは多要素認証 (MFA) を使用して Microsoft 365 サブスクリプション用の Azure Active Directory (Azure AD) に接続するには、Windows PowerShell コマンド プロンプトから次のいずれかのコマンドを実行します (昇格する必要はありません)。

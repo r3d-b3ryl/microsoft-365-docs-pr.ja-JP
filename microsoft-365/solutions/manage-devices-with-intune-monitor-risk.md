@@ -20,38 +20,32 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: e64006873c3419b9c6d93d3b367a5753f5478738
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: b8f15212916566e169efa63556b897600f7092a3
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651413"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705248"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>手順 6.デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
 
 組織が Microsoft Defender for Endpoint を展開した後、MicrosoftI ntune を Defender for Endpoint と統合することで、デバイスの分析情報と保護を強化できます。 モバイル デバイスの場合、これにはアクセスの条件としてデバイスのリスクを監視する機能が含まれます。 Windows デバイスの場合、これらのデバイスのセキュリティ ベースラインへの準拠を監視できます。 
 
-注: Pertahanan Microsoft untuk Titik Akhirのデプロイには、オンボード エンドポイントが含まれます。 Microsoft 365 capabilties のデバイスのオンボードの詳細については、「[デバイスの登録とオンボードデバイス](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices)」を参照してください。  
+Microsoft Defender for Endpoint の展開には、エンドポイントのオンボーディングが含まれます。 Intune を使用してエンドポイントをオンボードした場合 (推奨)、Microsoft Intune を Defender for Endpoint に既に接続しています。 別の方法を使用してエンドポイントを Defender for Endpoint にオンボードした場合は、「[Intune で Microsoft Defender for Endpoint を構成する](/mem/intune/protect/advanced-threat-protection-configure)」を参照し、Intune と Microsoft Defender for Endpoint の間にサービス間接続が設定されていることを確認してください。 
+
 
 ![エンドポイントとMicrosoft Intuneの統合図のディフェンダー](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
 この図について:
 - Microsoft Defender for Endpoint は、デバイスの脅威保護の洗練度を大幅に向上させます。 
 - Microsoft Intune ではアプリ保護ポリシーの設定とデバイスの管理 (構成の変更を含む) が可能ですが、Defender for Endpoint はデバイスの脅威を継続的に監視し、自動化されたアクションを実行して攻撃を修正できます。 
-- Intune を使用して、デバイスを Defender for Endpoint にオンボードできます。 これを行うと、エンドポイント データ損失防止 (DLP) など、これらのデバイスがMicrosoft 365コンプライアンス機能を使用することもできます。
+- Microsoft Intune を Defender for Endpoint に接続して、デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視できます。
 
 この記事には、次の手順が含まれています。
-- Microsoft Intune を Defender for Endpoint に接続します
 - デバイスのリスクを監視する
 - セキュリティ ベースラインへのコンプライアンスを監視する
 
 Defender for Endpoint がまだ設定されていない場合は、脅威保護管理者と協力して、[評価環境とパイロット環境を設定します](../security/defender/eval-defender-endpoint-overview.md)。 パイロット グループと協力して、この記事の機能を試すことができます。
-
-## <a name="connect-microsoft-intune-to-defender-for-endpoint"></a>Microsoft Intune を Defender for Endpoint に接続します
-
-Microsoft Intune と Defender for Endpoint の統合の構成は簡単です。 この記事を使用してください: 「[Intune のエンドポイント用にMicrosoft Defender を構成する](/mem/intune/protect/advanced-threat-protection-configure)」。 
-
-![Intune をエンドポイントの Microsoft Defender に接続する](../media/devices/connect-intune-to-microsoft-defender.png#lightbox)
 
 ## <a name="monitor-device-risk-as-a-condition-for-access"></a>アクセスの条件としてデバイスのリスクを監視する
 
@@ -81,10 +75,10 @@ Defender for Endpoint を使用すると、これらのベースラインへの�
 |手順  |説明  |
 |---------|---------|
 |1     |重要な概念を確認し、Microsoft Defender for Endpoint と Windows Intune のセキュリティ ベースラインを比較します。 <br><br>推奨事項については、「[Microsoft Defender for Endpoint セキュリティ ベースラインへのコンプライアンスの向上](../security/defender-endpoint/configure-machines-security-baseline.md)」を参照してください。<br><br>使用可能なセキュリティ ベースラインのリストと競合を回避する方法を確認するには、「[セキュリティ ベースラインを使用して Intune で Windows デバイスを構成する](/mem/intune/protect/security-baselines)」を参照してください。         |
-|2     |  Intune の Windows セキュリティ ベースライン設定を展開します。 「[手順 5. 構成プロファイルを展開する](manage-devices-with-intune-configuration-profiles.md)」のガイダンスに従った場合、すでにこれを達成している可能性があります。        |
+|2     |  Intune の Windows セキュリティ ベースライン設定を展開します。「[手順 5. 構成プロファイルを展開する](manage-devices-with-intune-configuration-profiles.md)」のガイダンスに従った場合、すでにこれを達成している可能性があります。        |
 |3    |  Intune のDefender for Endpoint ベースライン設定を展開します。 プロファイルを作成してベースライン バージョンを選択するには、「[Microsoft Intune でのセキュリティ ベースライン プロファイルの管理](/mem/intune/protect/security-baselines-configure)」を参照してください。<br><br>こちらの手順に従うこともできます: 「[エンドポイント セキュリティ ベースライン用の Microsoft Defender を確認して割り当てる](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline)」     |
 |4     | Defender for Endpoint で、[デバイス構成管理のセキュリティ ベースラインカードを確認](../security/defender-endpoint/configure-machines.md)します。          |
-| | |
+
 
 ## <a name="next-steps"></a>次の手順
 [手順 7. エンドポイントに情報保護機能を使用して DLP を実装する](manage-devices-with-intune-dlp-mip.md)に移動します。
