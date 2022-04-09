@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpointで疑わしいファイルを送信する
+title: Microsoft Defender for Endpointでファイルを送信する
 description: Microsoft 365 Defenderの統合提出機能を使用して、疑わしい電子メール、URL、電子メールの添付ファイル、ファイルを Microsoft に送信してスキャンする方法について説明します。
 keywords: ウイルス対策, スパム, フィッシング, ファイル, アラート, Microsoft Defender for Endpoint, 偽陽性, 偽陰性, ブロックされたファイル, ブロックされた URL, 提出, 送信, レポート
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.custom: FPFN
-ms.openlocfilehash: eaf16c08711f6c91c5ca7f3301cf1afd07cd4b9a
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: da521c2c2deaa656c4d7c14211758e017554252e
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731787"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746186"
 ---
-# <a name="submit-suspicious-files-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointで疑わしいファイルを送信する
+# <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでファイルを送信する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -52,11 +52,11 @@ Microsoft Defender for Endpointでは、管理者は統合申請機能を使用�
 
 - スパム、フィッシング、URL、電子メールの添付ファイルを Microsoft に送信する方法の詳細については、「 [メッセージとファイルを Microsoft に報告する」を](../office-365-security/report-junk-email-messages-to-microsoft.md)参照してください。
 
-## <a name="report-suspicious-items-to-microsoft-from-the-portal"></a>ポータルから Microsoft に不審なアイテムを報告する
+## <a name="report-items-to-microsoft-from-the-portal"></a>ポータルから Microsoft にアイテムを報告する
 
-マルウェアの可能性がある、または正しく検出されていない可能性があるファイルがある場合は、Microsoft 365 Defender ポータルをhttps://security.microsoft.com/使用して分析のために Microsoft に送信できます。
+マルウェアである可能性がある、または誤って検出されている (誤検知) 可能性があるファイルがある場合は、Microsoft 365 Defender ポータルをhttps://security.microsoft.com/使用して分析のために Microsoft に送信できます。
 
-### <a name="submit-a-suspected-file-or-file-hash"></a>疑わしいファイルまたはファイル ハッシュを送信する
+### <a name="submit-a-file-or-file-hash"></a>ファイルまたはファイル ハッシュを送信する
 
 1. Microsoft 365 Defender<https://security.microsoft.com/>を開き、[**アクション&申請**] をクリックし、[**申請]** をクリックして [**ファイル**] タブに移動し、[**新しい申請の追加**] を選択します。 
 
@@ -80,7 +80,7 @@ Microsoft Defender for Endpointでは、管理者は統合申請機能を使用�
  
    申請の詳細を表示する場合は、[ **申請] の名前** の一覧から申請を選択して、[ **結果の詳細** ] ポップアップを開きます。
 
-## <a name="report-suspicious-items-to-microsoft-from-the-alerts-page"></a>[アラート] ページから Microsoft に不審なアイテムを報告する
+## <a name="report-items-to-microsoft-from-the-alerts-page"></a>[アラート] ページから Microsoft にアイテムを報告する
 
 [ **アラート]** ページのアラートの一覧から、ファイルハッシュまたはファイル ハッシュを直接送信することもできます。 
 

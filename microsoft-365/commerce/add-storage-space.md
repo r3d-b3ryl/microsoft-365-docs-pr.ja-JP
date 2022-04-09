@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 サブスクリプションにファイル ストレージを追加します。 追加のファイル ストレージを使用すると、SharePointにさらに多くのコンテンツを格納できます。
 ms.date: 04/02/2021
-ms.openlocfilehash: 687233ed91e358c3f48332a0b07aa3213734b71b
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: da66bac2bde52f5bcd899b73e5927008b40227dc
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731529"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737475"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>サブスクリプションにSharePointストレージを追加する
 
@@ -83,7 +83,7 @@ SharePoint サイトのストレージが不足し始めた場合は、プラン
 3. 製品の詳細ページの [アドオン] セクションで、[アドオン **の****管理**] を選択します。
 4. [**アドオンの管理**] ウィンドウの [**アドオン**] ボックスの一覧から、[**追加ファイル Storage Office 365** 選択します。
 5. [ **数量** ] テキスト ボックスに、サブスクリプションに必要なストレージ領域の GB の数を入力します。
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>私のプランは Office 365 Extra File Storage の対象ですか。
 
@@ -112,4 +112,4 @@ Office 365 Extra File Storage は、次のサブスクリプションでご利�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[サイト ストレージの制限を管理する](/sharepoint/manage-site-collection-storage-limits) (記事)
+[サイト ストレージの制限を管理する](/sharepoint/manage-site-collection-storage-limits) (記事)\

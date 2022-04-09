@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: cb85f5391a6ee6c25d4f82f6f6819132bb8d3b02
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 830149a1592aa2985b603d2e9f317250c7c2606a
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663052"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746538"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Microsoft Defender for Businessを取得する
 
@@ -115,27 +115,16 @@ Microsoft には、Microsoft 365 Business PremiumやMicrosoft Defender for Busin
 
 3. 初めてサインインすると、Microsoft 365 管理センター ([https://admin.microsoft.com/](https://admin.microsoft.com/)) に移動します。 [Microsoft 365 管理センターの概要に関するページを](../../admin/admin-overview/admin-center-overview.md)参照してください。
 
-4. 次のいずれかの手順を実行します。
+4. 次のいずれかの手順を実行します。<br/>
 
-   - Microsoft 365 サブスクリプションを初めて設定する場合は、[**ガイド付きセットアップに移動**] を選択し、次の手順を実行します。
-
-      a.  Office アプリを今すぐインストールするか、[**続行**] を選択してこの手順をスキップします。 (Office アプリは後でインストールできます)。
-
-      b. 会社にドメインがある場合は、今すぐ追加できます (このオプションをお勧めします)。 または、今のところ既定 `.onmicrosoft.com` のドメインを使用することもできます。
-
-      c. ユーザーを追加し、ライセンスを割り当てます。 一覧に表示された各ユーザーには、ライセンスが自動的に割り当てられます。 同時に [ユーザーを追加し、ライセンスを割り当てる方法に関するページを](../../admin/add-users/add-users.md)参照してください。
-
-   - 既存のMicrosoft 365 テナントに試用版を追加する場合は、次の手順に従って新しいライセンスをユーザーに割り当てます。
-
-      a.  Microsoft 365 管理センター ([https://admin.microsoft.com/](https://admin.microsoft.com/)) に移動し、サインインします。
-
-      b. ナビゲーション ウィンドウで、[**UsersActive ユーザー** > ] を選択 **します**。 ユーザーの一覧を確認します。 
-
-      c. ライセンスを割り当てるには、「 [ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md)」のガイダンスに従います。
+   | シナリオ | プロシージャ |
+   |:---|:---|
+   | 初めてMicrosoft 365 サブスクリプションを設定します。 | [ **ガイド付きセットアップに移動]** を選択し、次の手順を実行します。<br/><br/>1. Office アプリを今すぐインストールするか、[**続行**] を選択してこの手順をスキップします。 (Office アプリは後でインストールできます)。<br/><br/>2. 会社にドメインがある場合は、今すぐ追加できます (このオプションをお勧めします)。 または、今のところ既定 `.onmicrosoft.com` のドメインを使用することもできます。<br/><br/>3. ユーザーを追加し、ライセンスを割り当てます。 一覧に表示された各ユーザーには、ライセンスが自動的に割り当てられます。 同時に [ユーザーを追加し、ライセンスを割り当てる方法に関するページを](../../admin/add-users/add-users.md)参照してください。 |
+   | 既存のMicrosoft 365 テナントに試用版を追加します。 | 1. Microsoft 365 管理センター ([https://admin.microsoft.com/](https://admin.microsoft.com/)) に移動し、サインインします。<br/><br/>2. ナビゲーション ウィンドウで、[**UsersActive ユーザー** > ] を選択します。 ユーザーの一覧を確認します。 <br/><br/>3. ライセンスを割り当てるには、「ユーザーに [ライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md)」のガイダンスに従います。 |
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-- [Microsoft Defender for Businessを設定して構成します](mdb-setup-configuration.md)。
+1. [Microsoft Defender for Businessのセットアップ ウィザードを使用](mdb-use-wizard.md)するか[、Defender for Business のセットアップと構成プロセスを確認します](mdb-setup-configuration.md)。
 
-- [Microsoft Defender for Businessのヘルプとサポートを受ける方法を確認する](mdb-get-help.md)
+2. [Defender for Business のヘルプとサポートを受ける方法について説明](mdb-get-help.md) します (サポートが必要な場合に備えて)

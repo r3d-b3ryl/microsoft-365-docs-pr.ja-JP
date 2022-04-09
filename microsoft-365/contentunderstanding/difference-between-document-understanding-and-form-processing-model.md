@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
-ms.openlocfilehash: ee51b60b69bc2ec489f074a73555cbc6f1a17143
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a3f36adbf261ef290aada8efe1c0643ee1ce570f
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664637"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738403"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>ドキュメント理解モデルとフォーム処理モデルの違い 
 
@@ -85,6 +85,7 @@ Microsoft SharePoint Syntex でのコンテンツの理解により、SharePoint
 | トランザクション コスト | AI Builder クレジットを使用します。<br>クレジットは 1 M のバッチで購入できます。<br>300 以上の SharePoint Syntex ライセンスを購入すると、1 M のクレジットが含まれています。<br>1 M のクレジットで 2,000 ファイル ページの処理が可能になります。<br>| 該当なし |
 | 容量 | 既定の Power Platform 環境を使用します (Dataverse データベースをサポートするカスタム環境)。 | 容量制限はありません。|
 | サポートされている言語| 73 以上の [言語の言語](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support)サポート。 | モデルは、すべてのラテンアルファベット言語で動作します。 英語に加えて: ドイツ語、スウェーデン語、フランス語、スペイン語、イタリア語、およびポルトガル語。|
+
 
 ## <a name="see-also"></a>関連項目
 

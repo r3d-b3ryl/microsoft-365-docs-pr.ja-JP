@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: このページを使用して、スタッフリストを作成し、名前、電話番号、メール アドレスなどのスタッフ メンバーの詳細を管理します。
-ms.openlocfilehash: 2df48efe321a91c1eb2df712e954033eb28357aa
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ca938acf4bfb567d366c7ffd684e8bce8c9eea74
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713935"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746799"
 ---
 # <a name="add-staff-to-bookings"></a>Bookings にスタッフを追加する
 
@@ -58,7 +58,7 @@ BookingsはMicrosoft 365の機能ですが、すべてのスタッフメンバ�
 
     たとえば、スタッフ メンバーが水曜日の午後 3 時に予定されているチーム会議や個人的な予定がある場合、Bookingsそのスタッフ メンバーがそのタイム スロットで予約できないことが表示されます。 その時刻は、次の例に示すように、Bookings予定表ビューにビジー状態または仮の状態で表示されます。
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Bookings予定表のビュー。":::
+    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="Bookings予定表のビュー。":::
 
 > [!IMPORTANT]
 > ダブルブッキングを回避し、スタッフメンバーの可用性を最適化するために、この設定をオンのままにすることを非常に推奨します (既定ではオンになっています)。

@@ -19,19 +19,19 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: 1db0a3ac8dc67c2ad439972341d28460d0f0a6bb
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 95cc11956dfe597b70f18954723f914e057193a6
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731632"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746707"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365を試す
 
 > [!NOTE]
 > この記事で説明する機能はプレビュー版であり、一部の組織では使用できず、変更される可能性があります。
 
-Microsoft 365 Defender ポータルの統合 **試用版** ポータルでは、Microsoft Defender for Office 365に対する以前の個別の試用版と評価エクスペリエンスの 1 つのエントリ ポイントが提供されます。 目的は、完全にコミットする前に、Defender for Office 365 プラン 2 の機能を 30 日間試してみることです。 ただし、Microsoft 365組織の性質に基づいて、評価エクスペリエンスには違いがあります。
+Microsoft 365 Defender ポータルの統合 **試用版** ポータルでは、Microsoft Defender for Office 365に対する以前の個別の試用版と評価エクスペリエンスの 1 つのエントリ ポイントが提供されます。 目的は、完全にコミットする前に、Defender for Office 365 プラン 2 の機能を 90 日間試してみることです。 ただし、Microsoft 365組織の性質に基づいて、評価エクスペリエンスには違いがあります。
 
 - Microsoft 365メールボックスは既にありますが、現在、電子メール保護にサード パーティのサービスまたはデバイスを使用しています。 インターネットからのメールは、Microsoft 365組織に配信される前に保護サービスを経由します。 Microsoft 365保護は可能な限り低くなります (完全にオフになることはありません。マルウェア保護は常に適用されます)。
 

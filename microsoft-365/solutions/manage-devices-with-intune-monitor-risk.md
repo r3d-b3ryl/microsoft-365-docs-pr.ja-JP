@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: b8f15212916566e169efa63556b897600f7092a3
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 9000a56bb0bf4819f4fc2e9bf7553a19772efe66
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705248"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64730882"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>手順 6.デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
 
@@ -51,9 +51,9 @@ Defender for Endpoint がまだ設定されていない場合は、脅威保護�
 
 Microsoft Defender for Endpoint を展開すると、脅威のリスク信号を利用できます。 これにより、リスク スコアに基づいてデバイスへのアクセスをブロックできます。 マイクロソフトでは、リスク スコアが中以下のデバイスへのアクセスを許可することをお勧めします。
 
-Android および iOS / iPadOS の場合、脅威信号はアプリ保護ポリシー (APP) 内で使用できます。 これを構成する方法については、「[アプリ保護ポリシーを作成して割り当て、デバイスのリスク レベルを設定する](/mem/intune/protect/advanced-threat-protection-configure)」を参照してください。
+Android および iOS / iPadOS の場合、脅威信号はアプリ保護ポリシー (APP) 内で使用できます。 これを構成する方法については、「[アプリ保護ポリシーを作成して割り当て、デバイスのリスク レベルを設定する](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)」を参照してください。
 
-すべてのプラットフォームで、既存のデバイス コンプライアンス ポリシーにリス クレベルを設定できます。 「[コンプライアンス ポリシーを作成して割り当て、デバイスのリスクレベルを設定する](/mem/intune/protect/advanced-threat-protection-configure)」を参照してください。
+すべてのプラットフォームで、既存のデバイス コンプライアンス ポリシーにリス クレベルを設定できます。「[条件付きアクセス ポリシーを作成する](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy)」を参照してください。
 
 ## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>セキュリティ ベースラインを展開し、これらの設定へのコンプライアンスを監視する
 

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 21dbcdebbb640e15ef4023c0bf0cfdaf4739fdb7
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: d943f91685e3ee9d6bf12c3a47fbf68e5966dc9d
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64686991"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738492"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>高度な捜索で共有クエリを使用する
 
@@ -73,10 +73,11 @@ ms.locfileid: "64686991"
 ## <a name="access-community-queries-in-the-github-repo"></a>GitHub リポジトリのコミュニティ クエリにアクセスする  
 Microsoft のセキュリティ調査員は、[GitHub の指定された公開リポジトリ](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender)で高度な捜索クエリを定期的に共有しています。 このリポジトリへの投稿は、発行する前に確認されます。 投稿するには、[GitHub に無料で参加](https://github.com/)してください。
 
-これらのクエリは、**Communityクエリ** ドロップダウンでも簡単に見つけることができます。
+これらのクエリは、[**Community クエリ**] ドロップダウン メニューでも簡単に見つけることができます。
 
 :::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Microsoft 365 Defender ポータルに保存される新しいクエリ" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
+Communityクエリは、*キャンペーン*、*コレクション*、*防御回避* などのフォルダーにグループ化されます。 クエリに関する詳細情報は、クエリ自体のインライン コメントとして提供されます。 
 
 >[!tip]
 >また、Microsoft のセキュリティ調査員は高度な捜索クエリも提供しています。これを使用して、新たな脅威に関連するアクティビティやインジケータを特定できます。 これらのクエリは、Microsoft 365 Defenderの[脅威分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)レポートの一部として提供されます。

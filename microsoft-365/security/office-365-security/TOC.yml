@@ -96,6 +96,8 @@
           href: configure-global-settings-for-safe-links.md
         - name: 送信スパム フィルターを構成する
           href: configure-the-outbound-spam-policy.md
+        - name: 優先アカウントを構成して確認する
+          href: configure-review-priority-account.md
         - name: 受信拒否リストの作成
           href: Create-block-sender-lists-in-office-365.md
         - name: 信頼できる差出人リストの作成

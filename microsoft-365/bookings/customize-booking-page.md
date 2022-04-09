@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Microsoft Bookings アプリで、予約ページの色のテーマを変更します。
-ms.openlocfilehash: 4fd33d39c9fda4588d24b51a70d589965fece28f
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: bd6c3fc601800cdfca93e9e1a6adc494df1bd67e
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713891"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747172"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>予約ページをカスタマイズして公開する
 
@@ -37,7 +37,7 @@ Booking Page では、外部向け予約ページの外観を設定します。 
 
     内部の予約ページは次のようになります。
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="Bookings ページ。":::
+    :::image type="content" source="media/bookings-internal-page-1.png" alt-text="Bookings ページ。":::
 
 - **予約ページのアクセス制御: 組織のMicrosoft 365 アカウントに予約を要求する** このオプションを選択すると、組織内のユーザーのみがページを表示したり、サービスを予約したりできます。 このページへのアクセスは、訪問者がテナント内のアカウントに属していることを確認するために、資格情報チェックを介して承認されます。
 
@@ -55,7 +55,7 @@ Booking Page では、外部向け予約ページの外観を設定します。 
 
 予約ページを公開すると、予約ページが表示され、そこで予約を予約できます。 顧客向け予約ページは次のようになります。
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="顧客向け予約ページ。":::
+:::image type="content" source="media/bookings-self-service-2.png" alt-text="顧客向け予約ページ。":::
 
 ## <a name="publish-the-booking-page"></a>予約ページを公開する
 
@@ -75,4 +75,4 @@ Booking Page では、外部向け予約ページの外観を設定します。 
 
 ## <a name="unpublish-the-booking-page"></a>予約ページの公開を中止する
 
- - 予約ページの公開を解除するには、予約ページに移動し、[ **非公開**] を選択します。
+予約ページの公開を解除するには、予約ページに移動し、[ **非公開**] を選択します。

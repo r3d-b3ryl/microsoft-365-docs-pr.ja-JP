@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Microsoft Bookings で従業員の勤務時間と空き時間を設定します。
-ms.openlocfilehash: 533cf3075c01753061f153d6dcf16bdb02bfa5a3
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: f87a5f13ace9689cd838942e6558529659671238
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714793"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747272"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft Bookings での従業員の勤務時間
 
@@ -27,19 +27,19 @@ ms.locfileid: "64714793"
 
 スタッフ メンバーが休暇中に顧客が予約できないように、スタッフ メンバーの休暇を予約する手順については、「[休業、休暇、休暇期間のスケジュール](schedule-closures-time-off-vacation.md)」を参照してください。
 
-## <a name="customize-employee-working-hours"></a>従業員の勤務時間をカスタマイズする
+## <a name="watch-set-employee-working-hours"></a>ウォッチ: 従業員の勤務時間を設定する
 
 このビデオを見るか、以下の手順に従って従業員の勤務時間を設定します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
+## <a name="customize-employee-working-hours"></a>従業員の勤務時間をカスタマイズする
+
 1. Microsoft 365で、アプリ起動ツールを選択し、**Bookings** を選択します。
 
-1. 予定表を選択します。 
+1. 予定表を選択します。
 
 1. ナビゲーション ウィンドウで [ **スタッフ**] を選び、時間を設定するスタッフ メンバーを選びます。
-
-   ![名前が強調表示されたBookingsスタッフ画面の画像。](../media/bookings-staff-name-highlight.png)
 
 1. [稼働時間] で、[ **勤務時間を使用**] チェック ボックスをオフにします。
 

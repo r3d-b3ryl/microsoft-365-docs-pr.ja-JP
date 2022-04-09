@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 description: 2023 年 4 月 11 日にサポートが終了するため、Office 2013 クライアントとサーバーからのアップグレードを計画します。
-ms.openlocfilehash: 52bc9664831448f1583b8562bf8e8557f7f77739
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 3acce92a419382420b21dee64ce77c196eeb8a42
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731842"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737403"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2013-clients-and-servers"></a>Office 2013 クライアントとサーバーからのアップグレードに役立つリソース
 
@@ -32,7 +32,7 @@ Office 2013 クライアントとサーバーを使用している場合は、**
 
 |製品|リソースの計画|
 |---|---|
-|Office 2013 (デスクトップ アプリ)<br/>Project 2013<br/>Visio 2013|[以前のバージョンのOfficeからMicrosoft 365 Appsへのアップグレードを計画する](/deployoffice/endofsupport/plan-upgrade-older-versions-office)|
+|Office 2013 (デスクトップ アプリ)<br/>Project 2013<br/>Visio 2013|[以前のバージョンのOfficeからMicrosoft 365 Appsへのアップグレードを計画する](/deployoffice/endofsupport/plan-upgrade-older-versions-office.md)|
 |Exchange Server 2013|[Exchange 2013 サポートロードマップの終了](exchange-2013-end-of-support.md)|
 |SharePoint Server 2013 <br/> SharePoint Foundation 2013|[SharePoint 2013 からのアップグレード](upgrade-from-sharepoint-2013.md)|
 |Project Server 2013|[Project Server 2013 のサポート終了ロードマップ](project-server-2013-end-of-support.md)|

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Microsoft 365のBookings機能にアクセスする方法について説明します。
-ms.openlocfilehash: e399540711cdf0f5e9556ac1ac8aeed32d00db52
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: fd81b64916b1798982470ad8e6aa6e28b0a14fdf
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714265"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746747"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Microsoft Bookings へのアクセス
 
@@ -33,7 +33,7 @@ IT 管理者からBookingsへのアクセスが許可されている場合は、
 
 1. このページで初めてではない場合は、別の予約予定表を選択するか、別の予約予定表を検索できます。
 
-2. 会社名と事業の種類を入力し、[ **続行**] を選択します。
+1. 会社名と事業の種類を入力し、[ **続行**] を選択します。
 
 これで、組織のBookingsを設定する準備が整いました。 この[リンク](https://outlook.office.com/bookings/onboarding)を使用して、アプリ起動ツールまたは office.com からBookings ページにアクセスできます。 Bookings機能の設定を続行するには、次のトピックを使用します。
 

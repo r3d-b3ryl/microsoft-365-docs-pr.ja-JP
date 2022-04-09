@@ -1,13 +1,13 @@
 ---
-title: ウィザードを使用して Microsoft Defender for Business をセットアップする
-description: Defender for Business には、ウィザードのようなセットアップと構成プロセスが含まれます。 ウィザードを使用して時間と労力を節約します。
+title: Microsoft Defender for Businessでセットアップ ウィザードを使用する
+description: Defender for Business には、ウィザードに似たセットアップと構成プロセスが含まれています。 ウィザードを使用して、時間と労力を節約します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/15/2022
+ms.date: 04/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,69 +18,77 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 243630a43d75a4530024e246fbea57f26a51d06b
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: ad070273567d350973037f1ac5a0192036d22187
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525794"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746647"
 ---
-# <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>ウィザードを使用して Microsoft Defender for Business をセットアップする
+# <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでセットアップ ウィザードを使用する
 
 > [!IMPORTANT]
-> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。[](../../business-premium/index.md) スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
+> Microsoft Defender for Businessは、2022 年 3 月 1 日以降、[Microsoft 365 Business Premium](../../business-premium/index.md)のお客様に展開されます。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー段階にあり、 [ここにサインアップ](https://aka.ms/mdb-preview) して要求する顧客と IT パートナーに段階的にロールアウトされます。 プレビューには [シナリオの初期セット](mdb-tutorials.md#try-these-preview-scenarios)が含まれており、定期的に機能を追加します。
 > 
-> この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
+> この記事の一部の情報は、市販される前に大幅に変更される可能性があるプレリリースされた製品/サービスに関連しています。 Microsoft は、ここに記載されている情報に対して、明示的または黙示的な保証を行いません。 
 
-Microsoft Defender for Business は、初期セットアップと構成のためのウィザードのようなエクスペリエンスを使用して、中小企業の時間と労力を節約するように設計されています。 この記事では、ウィザードの手順と、Defender for Business を手動で設定および構成するためのオプションについて説明します。
+Microsoft Defender for Businessは、初期セットアップと構成のためのウィザードのようなエクスペリエンスを使用して、中小企業の時間と労力を節約するように設計されました。 セットアップ ウィザードでは、セキュリティ チームへのアクセス許可の付与、セキュリティ チームの電子メール通知の設定、会社のWindows デバイスのオンボードを行います。
 
-:::image type="content" source="media/mdb-wizard-start.png" alt-text="Defender for Business をセットアップするウィザードのホーム画面のスクリーンショット。":::
+:::image type="content" source="media/mdb-wizard-start.png" alt-text="Defender for Business を設定するためのウィザードのホーム画面のスクリーンショット。":::
 
 >
 > **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Businessに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
 
-## <a name="overview-of-the-wizard"></a>ウィザードの概要
+## <a name="overview-of-the-setup-wizard"></a>セットアップ ウィザードの概要
 
-ウィザードは、Defender for Business を迅速かつ効率的にセットアップおよび構成するのに役立つ設計です。 ウィザードでは、次の手順を実行します。
+> [!IMPORTANT]
+> 開始する前に、Microsoft 365 サブスクリプションにユーザーが既に追加されていることを確認します。 このタスクのヘルプについては、「ユーザーの [追加とライセンスの割り当てを同時に](../../admin/add-users/add-users.md)行う」を参照してください。
 
-1. **ユーザーのアクセス許可を割り当てる**。 この手順では、セキュリティ チームにポータル () へのアクセス権Microsoft 365 Defenderします[https://security.microsoft.com](https://security.microsoft.com)。 ポータル アクセスは、特定のアクセス許可を示す役割を通じて付与されます。 [役割とアクセス許可について詳しくは、次のページをご覧ください](mdb-roles-permissions.md)。
+このウィザードは、Defender for Business を迅速かつ効率的に設定および構成するのに役立ちます。 ウィザードでは、次の手順を実行します。
 
-   - グローバル管理者は、テナント全体のすべての設定を表示およびMicrosoft 365できます。 
-   - セキュリティ管理者は、セキュリティ設定を表示および編集できます。 
-   - セキュリティ リーダーは、レポート内の情報のみを表示できます。 
+1. **ユーザーのアクセス許可を割り当てます**。 この手順では、セキュリティ チームにMicrosoft 365 Defender ポータル ()[https://security.microsoft.com](https://security.microsoft.com) へのアクセス権を付与します。 このポータルでは、お客様とセキュリティ チームがセキュリティ機能を管理し、アラートを表示し、検出された脅威に対して必要なアクションを実行します。 ポータルへのアクセスは、特定のアクセス許可を意味するロールを通じて付与されます。
 
-2. **デバイスのオンボードと構成Windowsします**。 この手順では、会社のデバイスを Defender for Business Windowsすぐにオンボードできます。 デバイスのオンボードは、1 日目からデバイスを保護するのに役立ちます。 詳細については [、「オンボード デバイス to Microsoft Defender for Business」](mdb-onboard-devices.md) を参照してください。
-
-   - Microsoft Intune (Microsoft エンドポイント マネージャー の一部) を既に使用している場合に、会社に エンドポイント マネージャー に登録されているデバイスがある場合は、登録されている Windows デバイスの一部またはすべてに対して自動オンボーディング[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)を使用するかどうかを確認するメッセージが表示されます。 自動オンボーディングは、エンドポイント マネージャーと Defender for Business の間の接続をセットアップし、Windowsデバイスを Defender for Business にシームレスにオンボードします。
-
-   - エンドポイント マネージャー をまだ使用していない場合、または Windows 以外のデバイスが エンドポイント マネージャー に登録されている場合は、手動で Defender [for Business](mdb-onboard-devices.md#local-script-in-defender-for-business) にデバイスをオンボードできます。 
+   Defender for Business では、セキュリティ チームのメンバーに次の 3 つのロールのいずれかを割り当てることができます。<br/>
    
-3. **セキュリティ ポリシーを構成します**。 Defender for Business には、企業のデバイスに適用できる次世代保護とファイアウォール保護のための既定のセキュリティ ポリシーが含まれています。 これらの既定のポリシーは推奨設定を使用し、デバイスに強力な保護を提供するように設計されています。 
+      - **グローバル管理者**: グローバル管理者は、Microsoft 365 テナント全体のすべての設定を表示および編集できます。 グローバル管理者は、会社のMicrosoft 365 サブスクリプションの初期セットアップと構成を行います。 
+      - **セキュリティ管理者**: セキュリティ管理者は、セキュリティ設定を表示および編集し、脅威が検出されたときにアクションを実行できます。
+      - **セキュリティ リーダー**: セキュリティ リーダーはレポート内の情報を表示できますが、セキュリティ設定を変更することはできません。 
+      
+      [ロールとアクセス許可の詳細については、こちらを参照してください](mdb-roles-permissions.md)。 
 
-   必要に合わせ、独自のセキュリティ ポリシーを作成できます。 また、セキュリティ ポリシーを既に使用しているエンドポイント マネージャー、セキュリティ ポリシーの管理に引き続き使用できます。 
+2. **電子メール通知を設定します**。 この手順では、セキュリティ チームの電子メール通知を設定できます。 その後、アラートが生成されたとき、または新しい脆弱性が検出された場合、セキュリティ チームは、自分のデスクから離れている場合でも、そのアラートについて取り上げません。 
 
-   詳細については、「セキュリティ ポリシーと [設定の表示と編集」を参照してください](mdb-configure-security-settings.md)。
+   [電子メール通知の詳細については、こちらを参照してください](mdb-email-notifications.md)。 
 
-## <a name="what-happens-if-i-dont-use-the-wizard"></a>ウィザードを使用しない場合は、どうなるでしょうか。
+3. **Windowsデバイスをオンボードして構成します**。 この手順では、会社のWindows デバイスを Defender for Business にすばやくオンボードできます。 デバイスをすぐにオンボードすると、初日からデバイスを保護できます。 
 
-ウィザードを使用しない場合、またはセットアップ プロセスが完了する前にウィザードが閉じている場合は、セットアップと構成プロセスを独自に完了できます。 
+   - Microsoft エンドポイント マネージャー (Microsoft Intuneを含む) を **既に使用していて**、会社にデバイスがエンドポイント マネージャーに登録されている場合は、登録済みのWindows デバイスの一部または全部に [対して自動オンボードを](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)使用するかどうかを確認するメッセージが表示されます。 自動オンボードでは、エンドポイント マネージャーと Defender for Business の間の接続が設定され、Windowsデバイスが Defender for Business にシームレスにオンボードされます。 
+   - **エンドポイント マネージャーをまだ使用していない場合は**、[ローカル スクリプトを使用してデバイスを Defender for Business にオンボード](mdb-onboard-devices.md#local-script-in-defender-for-business)できます。 
+   
+   [Microsoft Defender for Businessへのデバイスのオンボードの詳細については、「」を参照してください](mdb-onboard-devices.md)。
+   
+4. **セキュリティ ポリシーを構成します**。 Defender for Business には、会社のデバイスに適用できる次世代の保護とファイアウォール保護の既定のセキュリティ ポリシーが含まれています。 これらの既定のポリシーでは、推奨される設定が使用され、デバイスに強力な保護を提供するように設計されています。 独自のセキュリティ ポリシーを作成することもできます。 また、既にエンドポイント マネージャーを使用している場合は、引き続きこれを使用してセキュリティ ポリシーを管理できます。
 
-「 [Microsoft Defender for Business をセットアップして構成して、次](mdb-setup-configuration.md) の手順を実行する」を参照してください。
+   詳細については、「 [セキュリティ ポリシーと設定の表示と編集](mdb-configure-security-settings.md)」を参照してください。 |
 
-1. [セキュリティ チームがポータル](mdb-roles-permissions.md) () にアクセスして使用できるよう、役割とアクセス許可Microsoft 365 Defender割り当てます[https://security.microsoft.com](https://security.microsoft.com)。
+## <a name="what-happens-if-i-dont-use-the-wizard"></a>ウィザードを使用しない場合はどうなりますか?
 
-2. [セキュリティ チームが新しいアラート](mdb-email-notifications.md) や脆弱性に関するループに入り込むので、電子メール通知を設定します。
+セットアップ ウィザードの使用は省略可能です。 ウィザードを使用しないことを選択した場合、またはセットアップ プロセスが完了する前にウィザードが閉じられる場合は、自分でセットアップと構成プロセスを完了できます。 これらの手順については、「[Microsoft Defender for Businessのセットアップと構成](mdb-setup-configuration.md)」を参照してください。
 
-3. [デバイスをオンボード](mdb-onboard-devices.md) して、Defender for Business によって保護されます。
+1. セキュリティ チームが Microsoft 365 Defender ポータル ()[https://security.microsoft.com](https://security.microsoft.com) にアクセスして使用できるように **[、ロールとアクセス許可を割り当てます](mdb-roles-permissions.md)**。
 
-4. [次世代の保護、ファイアウォール保護](mdb-configure-security-settings.md)、Web コンテンツ フィルターなど、セキュリティ ポリシーを管理します。
+2. 新しいアラートや脆弱性に関するループに入るように **[、セキュリティ チームの電子メール通知を設定](mdb-email-notifications.md)** します。
 
-## <a name="next-steps"></a>次の手順
+3. **[Defender](mdb-onboard-devices.md)** for Business によって保護されるようにデバイスをオンボードします。
+
+4. 次世代の保護、ファイアウォール保護、Web コンテンツ のフィルター処理など、**[セキュリティ ポリシーを管理](mdb-configure-security-settings.md)** します。
+
+## <a name="next-steps"></a>次のステップ
 
 - [セキュリティ チームの電子メール通知を設定する](mdb-email-notifications.md)
 
-- [ポータルの使用Microsoft 365 Defenderする](mdb-get-started.md)
+- [Microsoft 365 Defender ポータルを使用した概要](mdb-get-started.md)
 
-- [[脅威の管理] &のダッシュボードを使用する](mdb-view-tvm-dashboard.md)
+- [脅威&脆弱性管理ダッシュボードを使用する](mdb-view-tvm-dashboard.md)

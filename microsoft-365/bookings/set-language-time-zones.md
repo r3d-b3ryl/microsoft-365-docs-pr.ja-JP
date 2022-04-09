@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Microsoft Bookingsで言語とタイム ゾーンの設定を変更します。 間違った時刻に予約が作成された場合、間違ったタイム ゾーンにBookingsが設定されている可能性があります。
-ms.openlocfilehash: 1f319ae91b635bf7c45542d2872c92763d1426f7
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: cb6735640f85456568f0d0492a265046ab127e9c
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715365"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746973"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Microsoft Bookings で言語とタイム ゾーンを設定する
 
@@ -33,7 +33,7 @@ Bookingsには、2 つの言語とタイム ゾーンの設定があります。
 
 1. Microsoft 365にログインし、ランディング ページ (下のスクリーンショットに示すように) または Microsoft 365 アプリ 起動ツールでOutlook タイルを選択します。
 
-   ![ランディング ページのOutlookタイルMicrosoft 365画像。](../media/bookings-outlook-tile.png)
+   :::image type="content" source="../media/bookings-outlook-tile.png" alt-text="ランディング ページのタイルMicrosoft 365 Outlookします。":::
 
 1. Outlook開いたら、画面の右上隅にある **歯車アイコン** を選択して個人用とアカウントの設定を開き、**設定** パネル検索ボックスで "タイム ゾーン" を検索します。 このアカウントの現在の個人の言語とタイム ゾーンの設定が表示されます。 前に説明したように、この設定は、予約予定表の言語とタイム ゾーンも制御します。
 
@@ -49,6 +49,6 @@ Bookingsには、2 つの言語とタイム ゾーンの設定があります。
 
    ![スクリーンショット: 言語とタイム ゾーンの設定を変更するリンク。](../media/bookings-region-language-timezone-settings.png)
 
-1. 言語と現在のタイム ゾーンを選択し、[OK] を選択します。
+1. 言語と現在のタイム ゾーンを選択し、[OK] を選択 **します**。
 
-   ![スクリーンショット: 言語とタイム ゾーンの設定。](../media/bookings-region-timezone-settings.png)
+   :::image type="content" source="../media/bookings-region-timezone-settings-1.png" alt-text="言語とタイム ゾーンの設定。":::

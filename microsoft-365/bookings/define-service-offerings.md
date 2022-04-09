@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: サービス名、説明、場所、期間、価格など、サービスオファリング情報を入力する手順。 また、サービスを提供する資格がある従業員にタグを付けることもできます。
-ms.openlocfilehash: 7d4bd5d8e75610785176f8c527576b0609cf71a4
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 576babc8a1cc64734c3d11f761b3b848d3fb2639
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714397"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746677"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Bookingsでサービス オファリングを定義する
 
@@ -89,8 +89,6 @@ Microsoft Bookingsでサービスオファリングを定義する場合は、�
 
 4. [ **可用性オプション** ] ページには、スケジュール ポリシーとスタッフの空き時間に関する **予約ページ** から選択したオプションが表示されます。 詳細については、「 [スケジュール ポリシーを設定する](set-scheduling-policies.md)」を参照してください。
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Bookingsで最大出席者数を設定する例。":::
-
 5. **既定の価格**  これは、Self-Service ページに表示される価格です。 **[価格が設定されていない**] が選択されている場合、価格またはコストまたは価格への参照は表示されません。
 
 6. **ノート** このフィールドは、予約されたスタッフの予約イベントと、Bookings Web アプリの [予定表] タブに表示されるイベントに表示されます。
@@ -101,7 +99,7 @@ Microsoft Bookingsでサービスオファリングを定義する場合は、�
 
 8. [ **アラームと確認]** ページで、送信するアラームと通知を設定できます。 アラームと通知は、予定の前に指定された時刻に、顧客、スタッフメンバー、またはその両方に送信されます。 好みに応じて、予定ごとに複数のメッセージを作成できます。
 
-   :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Bookingsからの確認メール。":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Bookingsからの確認メール。":::
 
    スケジュール変更に関する情報や、予定に対する顧客の持ち込み情報など、ここに必要なその他のテキストを含めることができます。 [電子メールの確認の追加情報] フィールドに表示される、元の確認メールに追加されたカスタマイズされたテキスト **の例を** 次に示します。
 

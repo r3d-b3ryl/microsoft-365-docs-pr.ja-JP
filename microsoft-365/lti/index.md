@@ -1,5 +1,5 @@
 ---
-title: LTI アプリの概要
+title: Microsoft LTI アプリの概要
 ms.author: heidip
 author: MicrosoftHeidi
 manager: serdars
@@ -12,68 +12,82 @@ search.appverid: ''
 ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: ''
-description: M365 ラーニング ツール相互運用性 (LTI) Office アプリと、Office アプリを ラーニング 管理システム (LMS) に統合する際の教育者の支援方法について説明します。
-ms.openlocfilehash: d6fbce11bf583a168f6b0d71f9aa15f144179515
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+description: ラーニング ツール相互運用性 (LTI) Microsoft アプリと、Microsoft アプリをラーニング管理システム (LMS) に統合する際の教育者に役立つ方法について説明します。
+ms.openlocfilehash: 8140b89b4bfeb26f64e8949f6d7835ca59645cbe
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578069"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746763"
 ---
-# <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Microsoft 製品とサービス管理システム (LMS) ラーニング統合する
+# <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Microsoft 製品とラーニング管理システム (LMS) の統合
 
-- [OneDriveと LTI](#onedrive-lti-with-canvas)
-- [Teamsを使用した会議 LTI](#teams-meetings-lti-with-canvas)
-- [Teamsクラス LTI](#teams-classes-lti)
+Microsoft Education とサード パーティのパートナーは、教育と学習のフローが常にソリューションの境界を越えることについて理解しています。 私たちは、ツールを調整する必要なく、教育者や学習者が目標に集中し続け、よりシームレスなエクスペリエンスを提供することに取り組んでいます。 Microsoft 製品は、教育と学習が行われる場所であればどこでも統合されます。これには、ラーニング Management Systems (LMS) 内や他の製品も含まれます。
 
-Microsoft Education とサード パーティのパートナーは、教育と学習の流れがソリューションの境界を常に越えていると理解しています。 ツールをジャグルするのではなく、よりシームレスなエクスペリエンスの提供に取り組み、教育者と学習者は目標に集中しています。 Microsoft 製品は、教育や学習が行われる場合はどこでも、管理システム (LMS) のラーニング統合しています。 LMS パートナーと協力して、microsoft の最高の機能を LMS に直接取り込む[ラーニング Tools 相互運用性 (LTI)](https://www.imsglobal.org/activity/learning-tools-interoperability)標準を使用して一連のツールを作成しました。
+LMS パートナーと協力して、microsoft のベストを LMS に直接取り込む [ラーニング Tools 相互運用性 (LTI) 標準](https://www.imsglobal.org/activity/learning-tools-interoperability)を使用して一連のツールを作成しました。
 
-これらのツールには、新OneDrive LTI アプリ、Teams会議 LTI アプリ、および LTI アプリTeamsがあります。 これらの新しいツールは、安全性が高く、LTI 1.3 および LTI Advantage 標準と完全に互換性があります。 このOneDrive LTI アプリを使用すると、教育者と学生は、OneDrive クラウド ストレージと Office 365 ファイルを LMS 内の割り当ておよびコンテンツ作成ワークフローに直接取り込めます。 Teams会議 LTI アプリを使用すると、教育者と学生は、LMS 内の会議ハブ内から、Teams 会議を管理、スケジュール、およびアクセスできます。 Class Teams LTI アプリを使用すると、教師は、毎日の名簿更新を含む LMS コース名簿を使用して、LMS 内で自分のコースのチームを作成できます。 その後、学生は LMS 内からチームに直接アクセスできます。 お客様にこれらの新しいツールを提供し、フィードバックに従ってソリューションを改善し続けていきたいと考えています。
+これらのツールには、次のものが含まれます。
 
-## <a name="onedrive-lti-with-canvas"></a>OneDriveと LTI
+- [LTI のOneDrive](#onedrive-lti-apps)
+- [Teams 会議 LTI](#teams-meetings-lti)
+- [Teams クラス LTI](#teams-classes-lti)
 
-ユーザー管理システム (LMS) Microsoft OneDriveをラーニングする方法について説明します。
+Microsoft OneLTI ツールの管理の一般的な情報については、「 [Microsoft OneLTI for any LMS の管理」を](manage-microsoft-one-lti.md)参照してください。
 
-- **ワークフローにMicrosoft Office 365を直接取り込む**
+## <a name="onedrive-lti-apps"></a>LTI アプリのOneDrive
 
-LTI Microsoft OneDrive LTI アプリは、LMS と統合して、次のような最も重要Microsoft OneDriveワークフローにMicrosoft Office 365を直接取り込む必要があります。
+ラーニング管理システム (LMS) でMicrosoft OneDriveを使用する方法の詳細について説明します。
 
-- リソースの添付とコンテンツの整理。
-- 共同ドキュメントの開始。
-- 割り当ての作成と評価。
+- **Microsoft 365をワークフローに直接取り込みます**
 
-- **セキュリティで保護され、最新の LTI 標準に完全に準拠**
+Microsoft OneDrive LTI アプリは LMS と統合され、Microsoft OneDriveとMicrosoft 365を最も重要なワークフローに直接取り込みます。
 
-LTI Microsoft OneDrive LTI アプリは、LTI 1.3 および LTI Advantage と互換性があります。 この利点により、高度にセキュリティで保護され、緊密に統合されたユーザー エクスペリエンスが可能になります。
+- リソースのアタッチとコンテンツの整理。
+- 共同作業ドキュメントを開始する。
+- 課題の作成と採点。
 
-- **モダンでリッチなユーザー エクスペリエンス**
+- **セキュリティで保護され、最新の LTI 標準に完全に準拠している**
 
-LTI Microsoft OneDriveは、LMS エクスペリエンスに Microsoft の最高の機能を提供します。 新しく拡張された Microsoft OneDrive ファイル ピッカーと、Office ファイルの豊富な編集エクスペリエンスを備えた、よりモダンなユーザー エクスペリエンスを提供することで、LMS の既存の Office 365 統合を改善しています。 Microsoft は今後、LTI アプリMicrosoft OneDrive完全に所有します。つまり、Microsoft から自動的に最新で最高の情報を取得できます。
+Microsoft OneDrive LTI アプリは LTI 1.3 および LTI Advantage と互換性があり、安全で統合されたユーザー エクスペリエンスを実現します。
 
-LTI Microsoft OneDriveでは、次の機能を使用できます。
+- **モダンで豊富なユーザー エクスペリエンス**
 
-- リッチ Office 365から Word ドキュメント、プレゼンテーション、PowerPoint、Excelファイルを添付します。
-- クラウドOffice 365を配布します。
-- 個人用ファイルとコース ファイルを表示およびMicrosoft OneDriveします。
-- コースメンバーが共有ドキュメントでリアルタイムで共同作業できるコラボレーションを作成します。
-- 個人アカウントMicrosoft OneDrive学校アカウントを含む複数のアカウントにアクセスします。
-- コース モジュールOffice 365ファイルを統合します。
-- LMS でシングル サインオンを行う場合は、Microsoft アカウントを使用します。
+最新のユーザー エクスペリエンスを提供することで、LMS の既存のMicrosoft 365統合を改善しています。この機能は、拡張されたMicrosoft OneDriveファイル ピッカーと、Office ファイルの豊富な編集エクスペリエンスを備えています。
 
-構成手順については[、「LTI と Canvas Microsoft OneDrive統合する」を参照してください](onedrive-lti.md)。
+Microsoft は OneDrive LTI アプリを所有しています。つまり、Microsoft から常に最新の更新プログラムが自動的に取得されます。
 
-## <a name="teams-lti-apps"></a>Teams LTI アプリ
+Microsoft OneDrive LTI アプリを使用すると、次のことが可能になります。
 
-### <a name="teams-meetings-lti-with-canvas"></a>Teamsを使用した会議 LTI
+- リッチ コンテンツ エディターから、Word 文書、PowerPointプレゼンテーション、ExcelなどのMicrosoft 365 ファイルを添付します。
+- クラウドの割り当てをMicrosoft 365配布します。
+- 個人用ファイルとコース Microsoft OneDrive ファイルを表示および整理します。
+- コースメンバーが共有ドキュメントでリアルタイムで連携できるコラボレーションを作成します。
+- 個人アカウントや学校アカウントなど、複数のMicrosoft OneDrive アカウントにアクセスします。
+- Microsoft 365 ファイルをコース モジュールと統合します。
+- LMS でシングル サインオンするには、Microsoft アカウントを使用します。
 
-Microsoft Teams LTI アプリを使用すると、管理者は教育機関Teamsの LMS コースに会議を組み込むのに役立ちます。 教育者と学生は、過去および今後の会議を表示したり、個別または定期的な会議をスケジュールしたり、コースに関連するチーム会議に参加したりできます。すべての会議は、LMS 内から行えます。
+構成手順については、次を参照してください。
 
-構成手順については[、「Use Microsoft Teams Canvas 」を参照してください](teams-meetings-with-canvas.md)。
+- [キャンバスを使用して LTI をMicrosoft OneDrive](onedrive-lti.md)します。
+- [Blackboard で LTI をMicrosoft OneDrive](onedrive-lti-blackboard.md)します。
 
-### <a name="teams-classes-lti"></a>Teamsクラス LTI
+## <a name="teams-lti-apps"></a>LTI アプリのTeams
 
-LTI Microsoft Teamsクラスは、教育者と学生が LMS と学生の間を移動Teams。 ユーザーは、自分のコースに関連付けられているクラス チームに、自分の LMS 内から直接アクセスできます。 構成手順は以下のとおりです。
+### <a name="teams-meetings-lti"></a>Teams会議 LTI
 
-- **Teamsキャンバスを使用する LTI** クラス [Canvas Microsoft Teamsクラスを使用します](teams-classes-with-canvas.md)。
+Microsoft Teams会議 LTI アプリは、TEAMS会議を LMS コースに組み込みます。 教育者と学生は、LMS 内から、過去と今後の会議を表示したり、個別または定期的な会議をスケジュールしたり、コースに関連するチーム会議に参加したりできます。
 
-- **Teamsと Blackboard クラス LTI Blackboard** Learn Ultra Microsoft Teamsクラス [を使用する](teams-classes-with-blackboard.md)
+構成手順については、次を参照してください。
+
+- [キャンバスを使用して会議をMicrosoft Teams](teams-meetings-with-canvas.md)します。
+- [Moodle で会議をMicrosoft Teams](teams-classes-meetings-with-moodle.md)します。
+
+### <a name="teams-classes-lti"></a>Teams クラス LTI
+
+Microsoft Teams クラス LTI アプリは、教育者と学生が LMS とTeamsの間を移動するのに役立ちます。 ユーザーは、LMS 内のコースに関連付けられているクラス チームにアクセスできます。
+
+構成手順については、次を参照してください。
+
+- [Canvas を使用してクラス LTI をTeams](teams-classes-with-canvas.md)します。
+- [blackboard を使用して LTI クラスをTeams](teams-classes-with-blackboard.md)します。
+- [Teams クラス LTI と Moodle](teams-classes-meetings-with-moodle.md)。
