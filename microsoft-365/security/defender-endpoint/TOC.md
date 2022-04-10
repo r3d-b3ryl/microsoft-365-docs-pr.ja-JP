@@ -406,7 +406,7 @@
 ### [エンドポイントでの検出と対応]()
 #### [エンドポイントでの検出と対応の概要](overview-endpoint-detection-response.md)
 #### [セキュリティ運用ダッシュボード](security-operations-dashboard.md)
-#### [不審なファイルを送信する](admin-submissions-mde.md)
+#### [ファイルの送信](admin-submissions-mde.md)
 #### [インシデント キュー]()
 ##### [インシデント キューを表示および整理する](view-incidents-queue.md)
 ##### [インシデントの管理](manage-incidents.md)

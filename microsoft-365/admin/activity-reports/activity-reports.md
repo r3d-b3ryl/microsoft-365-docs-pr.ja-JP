@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: c9d79b12d4a33282540274cf9f0688e071261469
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 224ed6ffb0fa44280f1b83d3a0f440d1a8571557
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679336"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738324"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -53,7 +53,7 @@ ms.locfileid: "63679336"
 
 ::: moniker-end
 
-2. レポートの詳細ページを表示するには、サービス (メール、OneDrive など) の概要アクティビティ カードから [**その他を表示**] ボタンをクリックします。サービスに関するさまざまなレポートがタブに表示されます。
+2. レポートの詳細ページを表示するには、サービス (メール、OneDrive など) の概要アクティビティ カードから **[その他を表示]** ボタンをクリックします。サービスに関するさまざまなレポートがタブに表示されます。
 
    :::image type="content" alt-text="利用状況ダッシュボード。" source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
@@ -101,6 +101,7 @@ ms.locfileid: "63679336"
 |[SharePoint のアクティビティ](sharepoint-activity-ww.md)|はい|はい|はい|はい|はい|
 |[Microsoft Teams ユーザー アクティビティ](microsoft-teams-user-activity-preview.md)|はい|はい|はい|はい|該当なし [^2]|
 |[Microsoft Teams デバイスの利用状況](microsoft-teams-device-usage-preview.md)|はい|はい|はい|はい|該当なし [^2]|
+|[Microsoft Teams の利用状況](microsoft-teams-usage-activity.md)|はい|はい|該当なし|N/A|N/A|
 |[Yammer アクティビティ](yammer-activity-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
 |[Yammer デバイスの使用状況](yammer-device-usage-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
 |[Yammer のグループ アクティビティ レポート](yammer-groups-activity-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
@@ -110,8 +111,8 @@ ms.locfileid: "63679336"
 |[Skype for Business Online の電話会議開催者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
 |[Skype for Business Online の電話会議参加者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
 |[Skype for Business Online のピアツーピア アクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
-|[Viva ラーニング アクティビティ](viva-learning-activity.md)|はい|該当なし|該当なし|該当なし|該当なし|
-|[Viva インサイト アクティビティ](viva-insights-activity.md)|はい|はい|該当なし|該当なし|該当なし|
+|[Viva ラーニング アクティビティ](viva-learning-activity.md)|はい|該当なし|N/A|N/A|該当なし|
+|[Viva インサイト アクティビティ](viva-insights-activity.md)|はい|はい|該当なし|N/A|該当なし|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 [^2]: The service is not available in the environment so no plan to release the report.
@@ -151,7 +152,7 @@ ms.locfileid: "63679336"
   
 3. **[すべてのレポートで非表示のユーザー、グループ、およびサイト名を表示する]** ステートメントのチェックを外し、変更を保存します。  
   
-レポート ダッシュボードのレポートで変更が有効になるまで数分かかります。 この設定は、[Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) と [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) の Microsoft 365 使用状況レポート、および [Microsoft Teams 管理センターの使用状況レポート](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)にも適用されます。 特定可能なユーザー情報の表示は、Microsoft 365 コンプライアンス センター監査ログに記録されるイベントです。   
+レポート ダッシュボードのレポートで変更が有効になるまで数分かかります。 この設定は、[Microsoft Graph](/graph/api/resources/report) と [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) の Microsoft 365 使用状況レポート、および [Microsoft Teams 管理センターの使用状況レポート](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)にも適用されます。 特定可能なユーザー情報の表示は、Microsoft 365 コンプライアンス センター監査ログに記録されるイベントです。   
 
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>ユーザー アカウントが削除されたとき、使用状況データはどうなりますか?

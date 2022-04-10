@@ -218,6 +218,12 @@
           href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
     - name: 調査
       items:
+        - name: Defender for Office 365 セキュリティ操作ガイド
+          items:
+            - name: Defender for Office 365 セキュリティ操作ガイド
+              href: mdo-sec-ops-guide.md
+            - name: Microsoft 365 Defender で Defender for Office 365 からのインシデントとアラートを管理する
+              href: mdo-sec-ops-manage-incidents-and-alerts.md
         - name: 脅威エクスプローラー ビュー
           href: threat-explorer-views.md
         - name: キャンペーン ビュー
