@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.custom: FPFN
-ms.openlocfilehash: da521c2c2deaa656c4d7c14211758e017554252e
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 38c9547c93fec5028ad11262ce5c317773fc276c
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746186"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759685"
 ---
 # <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでファイルを送信する
 

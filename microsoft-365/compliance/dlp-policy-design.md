@@ -14,96 +14,95 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: データ損失防止 (DLP) ポリシーを設計する方法について学習する
-ms.openlocfilehash: 14e9fbb5efd20ddcf3d0a47da41a0cce89c88cee
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: データ損失防止 (DLP) ポリシーを設計する方法について説明します
+ms.openlocfilehash: af09197784607dd6c8f8d939f4d091b365d51799
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526320"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760605"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>データ損失防止ポリシーを設計する
 
-ポリシーを実装する前に、ポリシーを設計する時間を取って、意図しない問題を作成してから試行錯誤だけで調整するよりも、目的の結果を迅速かつ少なくすることができます。 ポリシー設計を文書化すると、コミュニケーション、ポリシー レビュー、トラブルシューティング、さらに調整に役立ちます。
+ポリシーを実装する前に時間を取って設計すると、目的の結果にすばやく到達し、意図しない問題が少なくなります。作成してから、試用版とエラーだけでチューニングするよりも少なくなります。 ポリシーデザインを文書化しておくと、通信、ポリシーレビュー、トラブルシューティング、およびさらなるチューニングにも役立ちます。
 
 <!--, but excessive tuning to get the intended results can be time consuming.
 
  if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
 
-DLP の使用をMicrosoft 365する場合は、ポリシーの設計を開始する前に、以下の記事を参照してください。
+DLP を初めてMicrosoft 365する場合は、ポリシーの設計を開始する前に、次の記事を実行すると便利です。
 
-- [データ損失防止の詳細](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) - この記事では、データ損失防止の規律と Microsoft による DLP の実装について説明します。
-- [データ損失防止 (DLP) を計画する](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - この記事で作業することで、次の作業を行います。
-    - [関係者を特定する](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-    - [保護する機密情報のカテゴリを説明する](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-    - [目標と戦略を設定する](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
-- [データ損失防止ポリシーリファレンス](dlp-policy-reference.md#data-loss-prevention-policy-reference) - この記事では、DLP ポリシーのすべてのコンポーネントと、各コンポーネントがポリシーの動作に与える影響について説明します。
+- [データ損失防止について学習](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) する - この記事では、データ損失防止規範と Microsoft による DLP の実装について説明します
+- [データ損失防止 (DLP) を計画](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) する - この記事に従って、次のことを行います。
+  - [利害関係者を特定する](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+  - [保護する機密情報のカテゴリについて説明する](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+  - [目標と戦略を設定する](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+- [データ損失防止ポリシー リファレンス](dlp-policy-reference.md#data-loss-prevention-policy-reference) - この記事では、DLP ポリシーのすべてのコンポーネントと、それぞれがポリシーの動作に与える影響について説明します
 
 ## <a name="policy-design-overview"></a>ポリシー設計の概要
 
-[ポリシーの設計は、](#policy-design-process)主にビジネス ニーズを[](#define-intent-for-the-policy)明確に定義し、ポリシーインテントステートメントで文書化し、それらのニーズをポリシー構成[にマッピングする方法です](#map-business-needs-to-policy-configuration)。 計画フェーズで行った決定を使用して、ポリシー設計の決定の一部を通知します。 
+[ポリシーの設計](#policy-design-process)は、主に[ビジネス ニーズを明確に定義し、ポリシー意図ステートメントで文書化し、](#define-intent-for-the-policy)[それらのニーズをポリシー構成にマッピングすることです](#map-business-needs-to-policy-configuration)。 計画フェーズで行った決定を使用して、ポリシー設計の決定の一部を通知します。
 
-### <a name="define-intent-for-the-policy"></a>ポリシーの意図を定義する 
+### <a name="define-intent-for-the-policy"></a>ポリシーの意図を定義する
 
-1 つのステートメントに含むすべてのポリシーのビジネス意図を要約できる必要があります。 このステートメントを開発すると、組織内での会話が進み、完全に肉付けされた場合、このステートメントはポリシーをビジネス目的に直接リンクし、ポリシー設計のロードマップを提供します。 「データ損失防止計画 [(DLP)」](dlp-overview-plan-for-dlp.md#overview-of-planning-process) の記事の手順は、ポリシーの意図に関するステートメントを開始するのに役立ちます。  
+1 つのステートメントで、持つすべてのポリシーのビジネス意図を要約できる必要があります。 このステートメントを開発すると、組織内の会話が促進され、完全に具体化されると、このステートメントはポリシーをビジネス目的に直接リンクし、ポリシー設計のロードマップを提供します。 [データ損失防止の計画 (DLP) に関する](dlp-overview-plan-for-dlp.md#overview-of-planning-process)記事の手順は、ポリシーの意図に関する声明を開始するのに役立ちます。
 
-DLP ポリシー構成 [の概要では、すべての](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) DLP ポリシーで次の操作が必要です。
+[DLP ポリシーの構成の概要](dlp-learn-about-dlp.md#dlp-policy-configuration-overview)から、すべての DLP ポリシーには次のものが必要です。
 
-- 監視する対象を選択する
+- 監視する内容を選択する
 - 監視する場所を選択する
 - アイテムに適用するポリシーに一致する必要がある条件を選択する
-- ポリシー条件が満たされた場合に実行するアクションを選択する 
+- ポリシー条件が満たされたときに実行するアクションを選択する
 
-たとえば、4 つの質問に対する回答を提供する、架空の最初の意図ステートメントの下書きを次に示します。 
+たとえば、4 つの質問すべてに対する回答を提供する意図ステートメントの架空の最初の草案を次に示します。
 
-*「弊社は米国に拠点を置く組織であり、OneDrive/SharePoint に保存されている HIPPA がカバーする機密性の高い医療情報を含む Office ドキュメントを検出し、Teams チャットメッセージやチャネル メッセージで共有される情報から保護し、すべてのユーザーが承認されていない第三者と共有するのを制限する必要があります。* 
+*"Microsoft は米国に拠点を置く組織であり、ONEDRIVE/SharePointに格納されている HIPPA の対象となる機密性の高い医療情報を含むOfficeドキュメントを検出し、Teamsチャットやチャネル メッセージで共有されている情報から保護し、すべてのユーザーが承認されていないサード パーティと共有できないように制限する必要があります。*
 
-ポリシー設計を開発する場合、ステートメントを変更して拡張する可能性があります。
+ポリシー設計を開発するときに、ステートメントを変更して拡張する可能性があります。
 
 ### <a name="map-business-needs-to-policy-configuration"></a>ビジネス ニーズをポリシー構成にマップする
 
-下書きステートメントの例を切り取り、DLP ポリシー構成ポイントにマップします。
+下書きステートメントの例を分解し、DLP ポリシー構成ポイントにマップしましょう。
 
-|Statement  |構成に関する質問の回答と構成マッピング  |
+|Statement  |構成に関する質問に回答し、構成マッピングを行う  |
 |---------|---------|
-| 「米国に拠点を置く組織であり、HIPPA がカバーするOfficeを含むドキュメントを検出する必要があります。  |- **監視対象: ドキュメント** Office、米国健康保険法 [(HIPAA) テンプレートを使用](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa)する </br>- **一** 致の条件: (事前構成済みですが編集可能) - アイテムには、米国 SSN および麻薬取締局 (DEA) 番号、国際疾病分類 (ICD-9-CM)、国際疾病分類 (ICD-10-CM) が含まれる場合、コンテンツは組織外のユーザーと共有されます。  </br> - 会話を駆動して、信頼度などの検出のトリガー[](sensitive-information-type-learn-about.md#more-on-confidence-levels)しきい値、およびインスタンス[数 (漏洩](dlp-policy-reference.md#content-contains)許容値と呼ばれる) を明確にします。|
-|...に保存され、OneDrive/SharePointメッセージで共有される情報Teams保護します。。 |- **監視する場所**: [チャット](dlp-policy-reference.md#locations)/チャネル アカウントまたは配布グループOneDrive、SharePointサイトTeamsを含む、または除外することで、場所のスコープを設定します。 |
-|...すべてのユーザーがこれらのアイテムを承認されていない第三者と共有するのを制限します。  | - **実行するアクション**: [アクセスの制限を](dlp-policy-reference.md#actions)*追加するか、ユーザーの場所でコンテンツMicrosoft 365します。* </br> - 共有制限などの保護アクション、通知やアラートなどの認識アクション、ブロックアクションのユーザーオーバーライドを許可するなどのユーザーエンパワーメントアクションなど、ポリシーがトリガーされた場合に実行するアクションに関する会話を推進します。 |
+| "Microsoft は米国に拠点を置く組織であり、HIPPA の対象となる機密性の高い医療情報を含むOfficeドキュメントを検出する必要があります。  |- **監視対象**: ドキュメントOffice、[米国医療保険法 (HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) テンプレートを使用する </br>- **一致条件**: (事前構成済みだが編集可能) - 項目には、米国 SSN および薬物執行機関 (DEA) 番号、国際分類の病気 (ICD-9-CM)、国際分類の病気 (ICD-10-CM) が含まれています。コンテンツは組織外のユーザーと共有されます  </br> - 会話を駆動して、 [信頼レベル](sensitive-information-type-learn-about.md#more-on-confidence-levels)や [インスタンス数](dlp-policy-reference.md#content-contains) (漏えい許容度と呼ばれる) などの検出のトリガーしきい値を明確にします。|
+|...は、OneDrive/SharePointに格納され、チャットやチャネル メッセージTeams共有されているその情報から保護されます。... |- **監視する場所**: OneDrive サイトとSharePoint サイト、Teamsチャット/チャネル アカウント、または配布グループを含めるか除外して [、場所のスコープ](dlp-policy-reference.md#locations)を設定します。 |
+|...すべてのユーザーがそれらのアイテムを承認されていないサード パーティと共有できないように制限します。  | - **実行するアクション**: アクセスの制限 [を追加](dlp-policy-reference.md#actions)*するか、Microsoft 365の場所でコンテンツを暗号化* します。 </br> - 共有制限、通知やアラートなどの認識アクション、ブロックアクションのユーザーオーバーライドを許可するなどのユーザーエンパワーメントアクションなど、ポリシーがトリガーされたときに実行するアクションに関する会話を促進します |
 
-この例では、DLP ポリシーのすべての構成ポイントをカバーしているので、展開する必要があります。 しかし、独自の DLP ポリシー意図ステートメントを開発する場合は、正しい方向に考える必要があります。
+この例では、DLP ポリシーのすべての構成ポイントを網羅しているわけではなく、展開する必要があります。 ただし、独自の DLP ポリシー意図ステートメントを開発するときに、正しい方向に考える必要があります。
 
 > [!IMPORTANT]
-> 選択した場所は、機密情報の種類、機密ラベル、保持ラベル、および使用可能なアクションを使用できるかどうかに影響を与えます。 「データ [損失防止ポリシーリファレンス」を参照してください](dlp-policy-reference.md#data-loss-prevention-policy-reference)。
+> 選択した場所は、機密情報の種類、秘密度ラベル、保持ラベル、および使用可能なアクションを使用できるかどうかに影響します。 [データ損失防止ポリシーリファレンスを参照してください](dlp-policy-reference.md#data-loss-prevention-policy-reference)。
 
 ## <a name="policy-design-process"></a>ポリシー設計プロセス
 
-1. 以下の手順を実行します。
-    1. [データ損失防止 (DLP) を計画する](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - この記事で作業することで、次の作業を行います。
-        1. [関係者を特定する](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-        1. [保護する機密情報のカテゴリを説明する](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-        1. [目標と戦略を設定する](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
-        1. [ポリシー展開計画の定義](dlp-overview-plan-for-dlp.md#policy-deployment)
+1. [データ損失防止の計画 (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) の手順を完了します。この記事では、次の作業を行います。
+   1. [関係者を特定する](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+   1. [保護する機密情報のカテゴリについて説明する](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+   1. [目標と戦略を設定する](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+   1. [ポリシー展開計画を定義する](dlp-overview-plan-for-dlp.md#policy-deployment)
 
-1. DLP ポリシーのすべての [コンポーネントと](dlp-policy-reference.md#data-loss-prevention-policy-reference) 、各コンポーネントがポリシーの動作に与える影響を理解するために、データ損失防止ポリシーリファレンスについて理解してください。
+2. DLP ポリシーのすべてのコンポーネントと、それぞれがポリシーの動作にどのような影響を与えるかを理解できるように、 [データ損失防止ポリシーリファレンス](dlp-policy-reference.md#data-loss-prevention-policy-reference) について理解します。
 
-1. DLP ポリシー テンプレートに [含まれるものについて理解してください](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include)。
+3. [DLP ポリシー テンプレートに含まれる内容について](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include)理解します。
 
-1. 主要な関係者と一緒にポリシーの意図に関するステートメントを開発します。 この記事の前の例を参照してください。
+4. 主要な利害関係者と共にポリシー意図ステートメントを開発します。 この記事の前の例を参照してください。
 
-1. このポリシーが DLP ポリシー戦略全体に適合する方法を決定します。
+5. このポリシーが DLP ポリシー戦略全体にどのように適合するかを決定します。
 
-> [!IMPORTANT]
-> ポリシーの作成後は、ポリシーの名前を変更できません。 ポリシーの名前を変更する必要がある場合は、目的の名前を持つ新しいポリシーを作成し、古い名前を削除する必要があります。 したがって、すべてのポリシーで今使用する名前付け構造を決定します。 
+   > [!IMPORTANT]
+   > ポリシーは、作成後に名前を変更することはできません。 ポリシーの名前を変更する必要がある場合は、目的の名前を持つ新しいポリシーを作成し、古い名前を削除する必要があります。 そのため、すべてのポリシーが現在使用する名前付け構造を決定します。
 
-6. ポリシー インテント ステートメント内のアイテムを構成オプションにマップします。
+6. ポリシー意図ステートメント内の項目を構成オプションにマップします。
 
-7. 開始するポリシー テンプレート、定義済みポリシー テンプレート、またはカスタム ポリシー テンプレートを決定します。
+7. 開始するポリシー テンプレート、定義済み、またはカスタムのポリシー テンプレートを決定します。
 
-8. ポリシーを作成する前に、テンプレートを参照し、必要なすべての情報を組み立てます。 ポリシーの意図に関するステートメントで説明されていない構成ポイントがいくつかある可能性があります。 いいですよ。 関係者に戻り、不足している構成ポイントの要件を取り上手に戻します。 
+8. ポリシーを作成する前に、テンプレートを確認し、必要なすべての情報を組み立てます。 ポリシー意図ステートメントで説明されていない構成ポイントがいくつか存在する可能性があります。 いいですよ。 不足している構成ポイントの要件を把握するために、関係者に戻るします。
 
-9. すべてのポリシー設定の構成を文書化し、関係者と確認します。 ポリシー インテント ステートメントのマッピングを構成ポイントに再使用できます。これで完全に肉付けされます。
+9. すべてのポリシー設定の構成を文書化し、関係者と確認します。 ポリシー意図ステートメントのマッピングを構成ポイントに再利用できます。これで完全に具体化されます。
 
-10. [下書き](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) ポリシーを作成し、ポリシー展開計画 [に戻](dlp-overview-plan-for-dlp.md#policy-deployment) します。
+10. ポリシーの下書き[を作成](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)し、[ポリシーの展開](dlp-overview-plan-for-dlp.md#policy-deployment)計画に戻ります。
 
 <!--## Policy design examples
 
@@ -134,11 +133,11 @@ DLP ポリシー構成 [の概要では、すべての](dlp-learn-about-dlp.md#d
 
 
 - whether the protective actions you need are supported throught the associated location or if you need to compromise to extend coverage
-    - also usefule for identifying the most restrictive actions available 
+    - also usefule for identifying the most restrictive actions available
     - (we shouldn't mention here that the "content contains" condition is the primary staple for a DLP policy and should be utilized as a starting point for policy creation. The other workload-specific conditions can be ustilized as an extended or granular control of company's DLP policy. Useful for when "too much" data is being restricted and known sensitive data typically falls under certain conditions.)
     - (We can mention here that their quantitative goal such as "protect X% of data across all locations while maintaining x productivity" can be monitored throught alerts or reports. If protection is too high of working against their established goals, they can come back to policy and tweak their conditions/actions)
-- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP. 
-- 
+- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP.
+-
 5. At this stage you should asses how you should start this policy. ***LINK OUT TO DEPLOYING A POLICY COVERED IN THE PLANNING TOPIC TOO***
     - Test: your company is very large, conservative or the actions established are pretty restrictive
     - Test w/ notifications: same as above, but you get to test out investigation cadence or volume
@@ -164,7 +163,6 @@ Here are some examples of more detailed policy intent statement to configuration
 |...and restrict everyone from sharing those items with unauthorized third parties."  | - **Actions to take**: [You add](dlp-policy-reference.md#actions) *Restrict access or encrypt the content in Microsoft 365 locations* </br> - drives conversation on what actions to take when a policy is triggered including protective actions like sharing restrictions, awareness actions like notifications and alerts, and user empowerment actions like allow user overrides of a blocking action |
 
 -->
-
 
 ## <a name="see-also"></a>関連項目
 

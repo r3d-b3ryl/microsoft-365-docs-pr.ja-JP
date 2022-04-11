@@ -1,5 +1,5 @@
 ---
-title: サービスの暗号化
+title: サービス暗号化
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,46 +13,46 @@ ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: '概要: データ復元の概要をMicrosoft Office 365。'
-ms.openlocfilehash: 54bae9fa0203d76c598c4dee337ee15f24a2fc24
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: '概要: Microsoft Office 365のデータ回復性について理解します。'
+ms.openlocfilehash: 9b569bc30a9d7d8485fe0004cf46ba39277c47ae
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317641"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760803"
 ---
-# <a name="service-encryption"></a>サービスの暗号化
+# <a name="service-encryption"></a>サービス暗号化
 
-ボリューム レベルの暗号化の使用に加えて、Exchange Online、Microsoft Teams、SharePoint Online、および OneDrive for Businessサービス暗号化を使用して顧客データを暗号化します。 サービスの暗号化では、次の 2 つのキー管理オプションを使用できます。
+ボリューム レベルの暗号化を使用するだけでなく、Exchange Online、Microsoft Teams、SharePoint Online、OneDrive for Businessもサービス暗号化を使用して顧客データを暗号化します。 サービス暗号化では、次の 2 つのキー管理オプションを使用できます。
 
 ## <a name="microsoft-managed-keys"></a>Microsoft が管理するキー
-Microsoft は、サービス暗号化のルート キーを含むすべての暗号化キーを管理します。 このオプションは現在、オンライン、オンライン、Exchange OnlineのSharePoint既定でOneDrive for Business。 Microsoft 管理キーは、顧客キーを使用してオンボードを決定しない限り、既定のサービス暗号化を提供します。 後日、データ削除パスに従わずに顧客キーの使用を停止する場合、データは Microsoft 管理キーを使用して暗号化されたままです。 データは、少なくともこの既定のレベルで常に暗号化されます。 
+Microsoft は、サービス暗号化のルート キーを含むすべての暗号化キーを管理します。 このオプションは現在、Exchange Online、SharePoint Online、OneDrive for Businessで既定で有効になっています。 Microsoft マネージド キーは、カスタマー キーを使用してオンボードすることにした場合を除き、既定のサービス暗号化を提供します。 後日、データ消去パスに従わずにカスタマー キーの使用を停止することにした場合、データは Microsoft マネージド キーを使用して暗号化されたままになります。 データは、少なくともこの既定のレベルで常に暗号化されます。 
 
 ## <a name="customer-key"></a>顧客キー
-サービス暗号化で使用されるルート キーを指定し、Azure Key Vault を使用してこれらのキーを管理します。 Microsoft は、他のすべてのキーを管理します。 このオプションは Customer Key と呼ばされ、現在、オンライン、Exchange Online、SharePoint、およびOneDrive for Business。 (以前は BYOK による高度な暗号化と呼ばば) 元[のお知らせについては](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)、「ユーザーの透明性とコントロールOffice 365強化する」を参照してください。
+サービス暗号化で使用されるルート キーを指定し、Azure Key Vaultを使用してこれらのキーを管理します。 Microsoft は他のすべてのキーを管理します。 このオプションは Customer Key と呼ばれ、現在、Exchange Online、SharePoint Online、およびOneDrive for Businessで使用できます。 (以前は BYOK を使用した高度な暗号化と呼ばれた。 「元のお知らせ[のOffice 365顧客の透明性と制御の強化](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)」を参照してください)。
 
-サービスの暗号化には、次の複数の利点があります。
+サービス暗号化には、次の複数の利点があります。
 
-- BitLocker の上に追加の保護層を提供します。
+- BitLocker の上に保護レイヤーを追加します。
 
-- オペレーティング システム管理者Windows、オペレーティング システムによって保存または処理されるアプリケーション データへのアクセスから分離します。
+- オペレーティング システム管理者Windows、オペレーティング システムによって格納または処理されたアプリケーション データへのアクセスから分離します。
 
-- テナントごとのキー管理を提供するマルチテナント サービスを有効にする顧客キー オプションが含まれています。
+- マルチテナント サービスがテナントごとのキー管理を提供できるようにする Customer Key オプションが含まれています。
 
-- 暗号化に関する特定のMicrosoft 365を持つお客様の要求を満たす機能を強化します。
+- 暗号化に関する特定のコンプライアンス要件を持つ顧客の要求を満たすMicrosoft 365の機能を強化します。
 
-顧客キーを使用すると、オンプレミスのハードウェア サービス モジュール (HSM) または Azure Key Vault (AKV) のいずれかを使用して、独自の暗号化キーを生成できます。 キーの生成方法に関係なく、AKV を使用して、ユーザーが使用する暗号化キーを制御および管理Office 365。 キーを AKV に格納すると、メールボックス データまたはファイルを暗号化するキーチェーンのルートとして使用できます。
+Customer Key を使用すると、オンプレミスのハードウェア サービス モジュール (HSM) または Azure Key Vault (AKV) を使用して、独自の暗号化キーを生成できます。 キーの生成方法に関係なく、AKV を使用して、Office 365によって使用される暗号化キーを制御および管理します。 キーが AKV に格納されたら、メールボックスデータまたはファイルを暗号化するキーチェーンのルートとして使用できます。
 
-顧客キーのもう 1 つの利点は、Microsoft がデータを処理する機能を制御することです。 microsoft でサービスを終了する場合や、クラウドに保存されているデータの一部を削除する場合など、Office 365 からデータを削除する場合は、テクニカル コントロールとしてカスタマー キーを使用できます。 データを削除すると、Microsoft を含む誰もデータにアクセスまたは処理できます。 顧客キーは、Microsoft 担当者によるデータへのアクセスを制御するために使用する顧客ロックボックスに加えて補完的です。
+カスタマー キーのもう 1 つの利点は、Microsoft がデータを処理する機能を制御できることです。 Microsoft でサービスを終了する場合や、クラウドに保存されているデータの一部を削除する場合など、Office 365からデータを削除する場合は、カスタマー キーを技術コントロールとして使用できます。 データを削除すると、Microsoft を含む誰もデータにアクセスまたは処理できなくなります。 顧客キーは、Microsoft の担当者によるデータへのアクセスを制御するために使用するカスタマー ロックボックスに加えて補完的です。
 
-Exchange Online、Microsoft Teams、SharePoint Online (チーム サイト、OneDrive for Business など) の Microsoft 365 のカスタマー キーを設定する方法については、次の記事を参照してください。
+チーム サイト、OneDrive for Businessなど、Exchange Online、Microsoft Teams、SharePoint Online のMicrosoft 365のカスタマー キーを設定する方法については、次の記事を参照してください。
 
 - [カスタマー キーによるサービスの暗号化](customer-key-overview.md)
 
-- [顧客キーの設定](customer-key-set-up.md)
+- [カスタマー キーを設定する](customer-key-set-up.md)
 
-- [顧客キーの管理](customer-key-manage.md)
+- [カスタマー キーを管理する](customer-key-manage.md)
 
 - [顧客キーまたは可用性キーをロールまたはローテーションする](customer-key-availability-key-roll.md)
 
-- [可用性キーについて](customer-key-availability-key-understand.md)
+- [可用性キーについて理解する](customer-key-availability-key-understand.md)

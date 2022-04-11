@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: d2562e52c307fcf251b0b3030219aca68dc96a0a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: HT
+ms.openlocfilehash: 8e5664149ef571a8fed3a1aee433fa97c9ed8ca4
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374582"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760429"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Office 365 および Office 365 GCC での TLS 1.2 の準備
 
@@ -39,7 +39,7 @@ TLS 1.2 にアップグレードした後、使用している暗号スイート
 Office 365 サービスへの接続を維持するために、すべてのクライアント/サーバーとブラウザー/サーバーの組み合わせで TLS 1.2 (またはそれ以降のバージョン) を使用することをお勧めします。場合によっては、特定のクライアント/サーバーとブラウザー/サーバーの組み合わせを更新する必要があります。
 
   > [!NOTE]
-  > SMTP 受信メール フローの場合、TLS 1.0 と 1.1 の廃止後、TLS 1.2 接続のみを受け入れます。 ただし、TLS なしで暗号化もされていない SMTP 接続は引き続き受け入れます。 しかし、暗号化なしで電子メール送信はお勧めしません。 
+  > SMTP 受信メール フローの場合、TLS 1.0 と 1.1 の廃止後、TLS 1.2 接続のみを受け入れます。 ただし、TLS なしで暗号化もされていない SMTP 接続は引き続き受け入れます。 しかし、暗号化なしで電子メール送信はお勧めしません。
 
 TLS 1.0 または TLS 1.1 経由で Microsoft 365 API を呼び出すアプリケーションを更新して、TLS 1.2 を使用する必要があります。 .NET 4.5 の既定値は TLS 1.1 になります。 .NET 構成を更新するには、「[クライアントでトランスポート層セキュリティ (TLS) 1.2 を有効にする方法](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)」を参照してください。
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: 組織内の重要なユーザーを識別し、優先度の高いアカウント タグを追加して、追加の保護を提供する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bf7a21c03764f7dd55b7a63af5b4173606a78188
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: d48b1ec6c3ee0ba5f73d99b097303a8c989d545e
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731822"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759541"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365で優先度アカウントを構成して確認する
 
@@ -62,7 +62,7 @@ Microsoft Defender for Office 365は、アラート、レポート、および�
 
 脅威の保護状態レポートは、悪意のあるコンテンツと、Microsoft Defender for Office 365によって検出およびブロックされた悪意のあるメールに関する情報をまとめた単一のビューです。 
 
-Microsoft 365 Defender ポータルでレポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **脅威の保護の状態**] を探し、[ **詳細の表示**] をクリックします。
+Microsoft 365 Defender ポータルでレポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **脅威の保護の状態**] を探し、[ **詳細の表示**] を選択します。 **[スパム] ビュー**、**[フィッシング] ビュー**、または **[マルウェア] ビュー** のいずれかに移動し、フィルター アイコンを使用して **[優先度アカウント保護**] を選択します。
 
 ### <a name="threat-explorer"></a>脅威エクスプローラー 
 

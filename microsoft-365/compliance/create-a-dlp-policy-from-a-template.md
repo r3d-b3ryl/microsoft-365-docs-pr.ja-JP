@@ -19,19 +19,19 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
-description: この記事では、データベースに含まれるテンプレートのいずれかを使用して DLP ポリシーを作成する方法についてOffice 365。
-ms.openlocfilehash: 965e5198887ec64072efffd35ffa7739c90af6a4
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+description: この記事では、Office 365に含まれるテンプレートのいずれかを使用して DLP ポリシーを作成する方法について説明します。
+ms.openlocfilehash: 3617e1f067f4b29470feedcf7381b41a400887f9
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355030"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759105"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
-DLP ポリシーを開始する最も簡単で最も一般的な方法は、コンプライアンス センターに含まれるテンプレートMicrosoft 365使用します。 これらのテンプレートのいずれかを使用するか、組織の特定のコンプライアンス要件を満たすためにルールをカスタマイズできます。
+DLP ポリシーを使用する最も簡単で一般的な方法は、Microsoft 365 コンプライアンス センターに含まれるテンプレートのいずれかを使用することです。 これらのテンプレートの 1 つをそのまま使用することも、組織の特定のコンプライアンス要件を満たすようにルールをカスタマイズすることもできます。
 
-Microsoft 365、さまざまな一般的な規制およびビジネス ポリシーのニーズを満たすのに役立つ 40 を超えるすぐに使用できるテンプレートが含まれています。 参照。 [完全なリスト](dlp-policy-reference.md#policy-templates) のポリシー テンプレート。 
+Microsoft 365には、さまざまな一般的な規制とビジネス ポリシーのニーズを満たすのに役立つ 40 を超えるすぐに使用できるテンプレートが含まれています。 参照してください。完全なリストの [ポリシー テンプレート](dlp-policy-reference.md#policy-templates) 。 
 
 テンプレートを微調整するには、既存のルールを変更するか、新しいルールを追加します。 たとえば、ルールに新しい種類の機密情報を追加したり、トリガーの難度を変更するためにルール内のカウントを変えたり、業務上の理由を提供することによってルールのアクションをユーザーが上書きできるようにしたり、通知とインシデント レポートの通知先を変更したりできます。 DLP ポリシー テンプレートは、多くの一般的なコンプライアンス シナリオの柔軟な開始点となります。
 
@@ -39,21 +39,21 @@ Microsoft 365、さまざまな一般的な規制およびビジネス ポリシ
 
 ## <a name="permissions"></a>アクセス許可
 
-DLP ポリシーを作成するコンプライアンス チームのメンバーは、コンプライアンス センターへのアクセス許可を持っている必要があります。 既定では、テナント管理者はコンプライアンス担当者や他のユーザーにアクセス権を付与できます。 次の手順を実行します。
+DLP ポリシーを作成するコンプライアンス チームのメンバーは、コンプライアンス センターへのアクセス許可を持っている必要があります。 既定では、テナント管理者は、コンプライアンス担当者や他のユーザーにアクセス権を付与できます。 次の手順を実行します。
   
 1. Microsoft 365 でグループを作成して、コンプライアンス責任者をグループに追加します。
     
 2. セキュリティ &amp; コンプライアンス センターの [**アクセス許可**] ページで役割グループを作成します。 
 
-3. 役割グループの作成中に、[役割の選択] セクションを使用して、役割グループに次の役割を追加 **します。DLP コンプライアンス管理**。
+3. 役割グループを作成するときに、[ロールの **選択** ] セクションを使用して、役割グループに次のロールを追加します。 **DLP コンプライアンス管理**。
     
 4. **メンバーの選択** セクションを使用して、以前に作成した Microsoft 365 グループを役割グループに追加します。
 
-[表示のみ **] DLP コンプライアンス管理** 役割を使用して、DLP ポリシーおよび DLP レポートに対する表示専用の権限を持つ役割グループを作成します。
+**表示専用 DLP コンプライアンス管理** ロールを使用して、DLP ポリシーと DLP レポートに対する表示専用特権を持つロール グループを作成します。
 
 詳細については、「[Give users access to the Office 365 Security & Compliance Center (Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する)](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
   
-ポリシーを適用しない DLP ポリシーを作成して適用するには、これらのアクセス許可が必要です。
+これらのアクセス許可は、ポリシーを適用しないように DLP ポリシーを作成して適用するために必要です。
 
 ### <a name="roles-and-role-groups-in-preview"></a>プレビュー段階の [役割と役割グループ]
 
@@ -76,9 +76,9 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
-1. アカウントにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>。
+1. Microsoft 365 コンプライアンス センターにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">します</a>。
 
-2. コンプライアンス センターの左側の\>ナビゲーション **ソリューション** \> データ\>**損失防止** \> **ポリシー** \> **+ ポリシーの作成**。
+2. コンプライアンス センター \> の左側のナビゲーション \> **ソリューション** \> **データ損失防止** \> **ポリシー** \> **+ ポリシーの作成**。
 
     ![ポリシー ボタンを作成します。](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
@@ -92,9 +92,9 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
     ![Page for choosing a DLP policy template.](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)-->
 
-5. DLP ポリシーで保護する場所を選択し、各場所の既定のスコープを受け入れるか、スコープをカスタマイズします。 「スコープ [オプションの](dlp-policy-reference.md#locations) 場所」を参照してください。
+5. DLP ポリシーで保護する場所を選択し、場所ごとに既定のスコープを受け入れるか、スコープをカスタマイズします。 スコープ オプションの [場所](dlp-policy-reference.md#locations) を参照してください。
 
-6. \> **[次へ]** を選択します。
+6. [\> **次へ**]を選択します。
  
 1. 次のいずれかの操作を行います。
 
@@ -109,21 +109,21 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
    この例では、すべての OneDrive for Business アカウントに保存されている機密情報を保護するために、**Exchange メール** と **SharePoint サイト** の両方の **[状態]** をオフにし、**OneDrive アカウント** の **[状態]** はそのままにします。
 
-7. [次 **へ] テンプレートから [既定の設定を確認してカスタマイズする] を選択** \> **します**。
+7. テンプレート \> [**次へ**] **から [校閲] を選択し、既定の設定をカスタマイズします**。
 
 8. DLP ポリシー テンプレートには、条件付きの定義済みルールと、特定の種類の機密情報を検出して適用するアクションが含まれています。既存のルールのいずれかを編集、削除、またはオフにするか、新しいルールを追加できます。完了したら、**[次へ]** をクリックします。
 
-    ![米国の PII ポリシー テンプレートで展開されたルール。](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
+    ![米国 PII ポリシー テンプレートで展開されたルール。](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
 
-9. 次の場所を選択した場合に、このコンテンツが組織内または組織外で共有される状況を検出します。
+9. 次のいずれかの場所を選択した場合、このコンテンツが組織内または組織外でいつ共有されているかを検出することを選択します。
     1. Exchange
     1. SharePoint
     1. OneDrive
-    1. Teamsおよびチャネル メッセージ 
+    1. チャット メッセージとチャネル メッセージをTeamsする 
 
-10. **次へ** を選択します。
+10. [**次へ**]を選択します。
 
-11. 必要に **応じて 、[保護の** アクション] ページで、ポリシー ヒントの通知と通知メールをカスタマイズできます。 [ **コンテンツがポリシー条件に一** 致する場合] を有効にし、ポリシー ヒントをユーザーに表示して電子メール通知を送信し、[ヒントと電子メールのカスタマイズ **] を選択します**。
+11. 必要に応じて、[ **保護アクション]** ページで、ポリシー ヒント通知と通知メールをカスタマイズできます。 **コンテンツがポリシー条件と一致する場合に有効にし、ポリシーのヒントをユーザーに表示し、電子メール通知を送信** してから、[**ヒントと電子メールのカスタマイズ**] を選択します。
 12. [ **次へ**] を選びます。
 
 
@@ -215,7 +215,7 @@ Here are the different statuses and what they mean.
 
 |Status|Explanation|
 |---|---|
-|**Turning on…**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
+|**Turning on...**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
 |**Testing, with notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are sent to the specified recipients.|
 |**Testing, without notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are not sent to the specified recipients.|
 |**On**|The policy is active and enforced. The policy was successfully deployed to all its content sources.|

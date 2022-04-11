@@ -18,13 +18,13 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: トレーニング可能な分類子は、ラベル付けまたはポリシー アプリケーション用にさまざまな種類のコンテンツを認識するために、正のサンプルと負のサンプルを表示できます。
-ms.openlocfilehash: 50d20c3a40b21696c06064b548d7766684fb12a0
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+description: トレーニング可能な分類子は、ラベル付けまたはポリシー アプリケーション用のさまざまな種類のコンテンツを認識できます。
+ms.openlocfilehash: 7da6c9ef6e26d25bb40cade4832abb7b73a4b095
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909641"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759879"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 
@@ -32,108 +32,115 @@ ms.locfileid: "62909641"
 
 ## <a name="manually"></a>手動
 
-手動による分類には、人間の判断と行動が必要です。 ユーザーと管理者は、遭遇したコンテンツをそれらに適用します。 既存のラベルと機密情報の種類を使用するか、カスタム作成されたラベルを使用できます。  その後、コンテンツを保護し、その処分を管理できます。
+手動による分類には、人間の判断とアクションが必要です。 ユーザーと管理者は、遭遇したコンテンツをそれらに適用します。 既存のラベルと機密情報の種類を使用するか、カスタムで作成されたものを使用できます。  その後、コンテンツを保護し、その処分を管理できます。
 
-## <a name="automated-pattern-matching"></a>自動パターンマッチング
+## <a name="automated-pattern-matching"></a>自動パターン マッチング
 
 この分類メカニズムのカテゴリには、次によるコンテンツの検索が含まれます。
 
 - キーワードまたはメタデータ値 (キーワード クエリ言語)。
-- 社会保障、クレジット カード、銀行口座番号 (機密情報の種類エンティティ定義) などの機密情報の以前に識別されたパターン [を使用する](sensitive-information-type-entity-definitions.md)。
-- テンプレートのバリエーション (ドキュメントフィンガー印刷) のため、アイテム [を認識する](document-fingerprinting.md)。
-- 正確な文字列の存在を使用して、 [完全なデータ一致](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
+- 社会保障、クレジット カード、銀行口座番号 [(機密情報の種類エンティティ定義)](sensitive-information-type-entity-definitions.md) などの機密情報の以前に識別されたパターンを使用する。
+- テンプレート [(ドキュメントフィンガー印刷)](document-fingerprinting.md) のバリエーションであるため、アイテムを認識します。
+- 正確な文字列の存在を使用して [、正確なデータ一致を行います](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
 
-その後、感度ラベルと保持ラベルを自動的に適用して、「データ損失防止の[](dlp-learn-about-dlp.md)詳細」および「保持ラベルのポリシーを自動適用する」でコンテンツを[使用できます](apply-retention-labels-automatically.md)。
+その後、機密ラベルと保持ラベルを自動的に適用して、 [データ損失防止の詳細に関する](dlp-learn-about-dlp.md) ページでコンテンツを使用できるようにし、 [保持ラベルのポリシーを自動適用](apply-retention-labels-automatically.md)できます。
 
-## <a name="classifiers"></a>分類子
+## <a name="classifiers"></a>クラシファイア
 
-この分類方法は、手動または自動のパターンマッチング方法では容易に識別できないコンテンツに適しています。 この分類方法は、分類子を使用して、アイテム内の要素 (パターンマッチング) ではなく、アイテムの種類に基づいてアイテムを識別する方法です。 分類子は、分類したいコンテンツの数百の例を見て、コンテンツのタイプを識別する方法を学びます。
+この分類方法は、手動または自動のパターンマッチング方法で簡単に識別できないコンテンツに適しています。 この分類方法は、分類子を使用して、アイテム内の要素 (パターン マッチング) ではなく、アイテムの内容に基づいてアイテムを識別する方法について詳しく説明します。 分類子は、分類したいコンテンツの数百の例を見て、コンテンツのタイプを識別する方法を学びます。
 
 > [!NOTE]
-> [プレビュー] - [フィルター] パネルで [トレーニング可能な分類子] を展開すると、コンテンツ エクスプローラーでトレーニング可能な分類子を表示できます。 トレーニング可能な分類子は、ラベル付けなしで、SharePoint、Teams、OneDrive で検出されたインシデントの数を自動的に表示します。
-> この機能を使用しない場合は、Microsoft サポートに要求を送信して、箱から出た分類を無効にする必要があります。 これにより、ラベル付けポリシーを作成する前に、機密性の高いラベル付きコンテンツのスキャンが無効にされます。
+> プレビュー - フィルター パネルで [トレーニング可能な分類子] を展開することで、コンテンツ エクスプローラーで **トレーニング可能な分類子** を表示できます。 トレーニング可能な分類子は、ラベル付けを必要とせずに、SharePoint、Teams、OneDriveで検出されたインシデントの数を自動的に表示します。
+> この機能を使用しない場合は、既定の分類を無効にするには、Microsoft サポートで要求を提出する必要があります。 これにより、ラベル付けポリシーを作成する前に、機密コンテンツとラベル付きコンテンツのスキャンが無効になります。
 
 ### <a name="where-you-can-use-classifiers"></a>分類子を使用できる場所
 
-分類子は、Office ラベルによる自動ラベル付け、[](apply-sensitivity-label-automatically.md)条件に基づく保持ラベル ポリシーの自動適用、および[](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)通信コンプライアンスの条件として[使用できます](communication-compliance.md)。 
+分類子は、秘密度ラベルを使用して[自動ラベルをOffice](apply-sensitivity-label-automatically.md)する条件として使用したり、[条件に基づいて保持ラベル ポリシーを自動適用](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)したり、[通信コンプライアンス](communication-compliance.md)に適用したりできます。 
 
-感度ラベルは、条件として分類子を使用できます。「コンテンツに自動的に感度ラベルを適用 [する」を参照してください](apply-sensitivity-label-automatically.md)。
+機密ラベルは条件として分類子を使用できます。「 [コンテンツに秘密度ラベルを自動的に適用する」を](apply-sensitivity-label-automatically.md)参照してください。
 
 > [!IMPORTANT]
-> 分類子は、暗号化されていないアイテムでのみ動作します。
+> 分類子は、暗号化されていない項目でのみ機能します。
 
 ## <a name="types-of-classifiers"></a>分類子のタイプ
 
-- **事前トレーニング済みの分類子** - Microsoft は、トレーニングなしで使用を開始できる複数の分類子を作成および事前トレーニングしました。 これらの分類子は、 の状態で表示されます `Ready to use`。
-- **カスタムトレーニング可能な** 分類子 - 事前トレーニング済みの分類子がカバーする範囲を超える分類ニーズがある場合は、独自の分類子を作成してトレーニングできます。
+- **事前トレーニング済みの分類子** - Microsoft では、トレーニングなしで使用を開始できる複数の分類子を作成し、事前にトレーニングしました。 これらの分類子は、状態 `Ready to use`が .
+- **カスタムトレーニング可能な分類子** - 事前トレーニング済みの分類子がカバーする範囲を超える分類ニーズがある場合は、独自の分類子を作成してトレーニングできます。
 
 ### <a name="pre-trained-classifiers"></a>事前トレーニング済みの分類子
 
-Microsoft 365には、複数の事前トレーニング済み分類子が付属しています。
+Microsoft 365には、事前にトレーニングされた複数の分類子が付属しています。
 
 > [!CAUTION]
-> 事前にトレーニングされた [**不快な言葉**] 分類子は、誤検知の数が多いため、廃止予定です。 使用しないでください。現在使用している場合は、ビジネス プロセスを移動する必要があります。 代わりに、**脅威、****冒と** く、ハラスメントの事前トレーニング済みの分類子を使用することをお勧めします。
+> 事前にトレーニングされた [**不快な言葉**] 分類子は、誤検知の数が多いため、廃止予定です。 使用しないでください。現在使用している場合は、ビジネス プロセスを移動する必要があります。 代わりに、 **Threat**、 **Profanity**、 **および Harassment** の事前トレーニング済み分類子を使用することをお勧めします。
 
-- **履歴書**: 申請者の個人、教育、専門的な資格、職歴、その他の個人識別情報のテキスト アカウントである docx、.pdf、.rtf、.txt アイテムを検出します。
-- ソース コード: GitHub actionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプトの上位 25 言語で記述された命令とステートメントのセットを検出します。 .msg、.as、.h、.c、.cs、.cc、.cpp、.hpp のコンテンツを検出します。 .cxx、.hh、.c++、.clj、.cljc、.cljs、.coffee、.litcoffee、.go、.hs、.lhs、.java、.jar、.js、.mjs、.lua、.m、.mm、.pl、.pm、.t、.xs、.xs、.php、.phar、.php4.pyc、R、.r、.rda、.RData、.rds、.rb、.scala、.sc、.sh、.swift ファイル。
+- **履歴書**: 申請者の個人、教育、職業資格、職務経験、その他の個人識別情報のテキスト アカウントである docx、.pdf、.rtf、.txt 項目を検出します。
+- **ソース コード**: ActionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプトの上位 25 個の使用済みコンピューター プログラミング GitHub言語で記述された一連の命令とステートメントを含む項目を検出します。 .msg、.as、.h、.c、.cs、.cc、.cpp、.hpp、 .cxx、.hh、.c++、.clj、.edn、.cljc、.cljs、.coffee、.litcoffee、.go、.hs、.lhs、.java、.jar、.js、.mjs、.lua、.m、.mm、.pl、.pm、.t、.xs、.pod、.php、.phar、.php4、.pyc、 .R、.r、.rda、.RData、.rds、.rb、.scala、.sc、.sh、.swift ファイル。
 
 > [!NOTE]
-> ソース コードは、テキストの大部分がソース コードである場合に検出するトレーニングを受けています。 プレーン テキストと相互に存在するソース コード テキストは検出されません。
+> ソース コードは、テキストの大部分がソース コードである場合を検出するようにトレーニングされます。 プレーンテキストが混在するソース コード テキストは検出されません。
 
-- **契約:** 非開示契約、作業明細書、ローンおよびリース契約、雇用契約、非競争契約などの法的契約に関連するコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml ファイルのコンテンツを検出します。
-- **判別**: 明示的な判別言語を検出し、他のコミュニティと比較すると、アフリカ系アメリカ人/黒人コミュニティに対する差別的な言語に敏感です。
-- **ファイナンス**: 企業の財務、会計、経済、銀行、投資カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
-- **ハラ** スメント: 人種、民族、宗教、出身国、性別、性的指向、年齢、障がいなどの特性に基づいて、1 人または複数の個人を対象とする攻撃的行為に関連する攻撃的な言語テキスト 項目の特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイルのコンテンツを検出します。
-- **ヘルスケア:** 医療サービス、診断、治療、クレームなどの医療および医療管理の側面のコンテンツを検出します。.docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
-- **人事**: 採用、面接、採用、トレーニング、評価、警告、終了の人事関連カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
-- **IP**: 営業秘密や類似の機密情報などの知的財産関連カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
-- **IT**: ネットワーク設定、情報セキュリティ、ハードウェア、ソフトウェアなどの情報テクノロジおよびサイバーセキュリティ カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf のコンテンツを検出します。 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam ファイル
-- **法務:** 訴訟、法的プロセス、法的義務、法律用語、法律、法律などの法務関連カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml ファイルのコンテンツを検出します。
-- **調達**: 入札、引用、購入、および商品やサービスの供給に対する支払いカテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、.xla ファイルのコンテンツを検出します。
-- **冒とく**: ほとんどの人を困らせる表現を含む不快な言語テキスト アイテムの特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイルのコンテンツを検出します。
-- **Tax**: Tax relation content (税計画、税務フォーム、税務申告、税規制など) を検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、のコンテンツを検出します。 .txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potm、.potm、.ppsx、.ppsm、.ppsm、.pps、.ppam、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam xlam ファイル。
-- **脅威**: 暴力を犯したり、人や財産に物理的な危害や損害を与える脅威に関連する攻撃的な言語テキスト アイテムの特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイルのコンテンツを検出します。
+- **契約**: 秘密保持契約、作業明細書、ローンおよびリース契約、雇用契約、非競争契約など、法的契約に関連するコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml ファイルのコンテンツを検出します。
+- **差別**: 明示的な差別言語を検出し、他のコミュニティと比較して、アフリカ系アメリカ人/ブラックコミュニティに対する差別的言語に依存します。
+- **Finance**: 企業財務、会計、経済、銀行、投資のカテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、 .txt、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.ppsm、.ppss、.pps、.xlsm、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、.xla ファイル。
+- **嫌がらせ**: 人種、民族、宗教、国籍、性別、性的指向、年齢、障疳という特徴に基づいて、1 人または複数の個人を対象とする攻撃的行為に関連する不快な言語テキスト項目の特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイル内のコンテンツを検出します。
+- **医療**: 医療サービス、診断、治療、クレームなどの医療および医療管理の側面でコンテンツを検出します。.docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、 .txt、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.ppsm、.ppss、.pps、.xlsm、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、.xla ファイル。
+- **人事**: 採用、面接、採用、トレーニング、評価、警告、終了の人事関連カテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、 .txt、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.ppsm、.ppss、.pps、.xlsm、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、.xla ファイル。
+- **IP**: 企業秘密や同様の機密情報など、知的財産関連のカテゴリ内のコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、 .txt、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.ppsm、.ppss、.pps、.xlsm、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、.xla ファイル。
+- **IT**: ネットワーク設定、情報セキュリティ、ハードウェア、ソフトウェアなどの情報技術とサイバーセキュリティのカテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、 .txt、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.ppsm、.ppss、.pps、.xlsm、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、.xla ファイル。
+- **法務**: 訴訟、法的手続き、法的義務、法律用語、法律、法律など、法務関連のカテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml ファイルのコンテンツを検出します。
+- **調達**: 商品やサービスの供給に対して、入札、見積もり、購入、支払いなどのカテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xltm、.xlt、.xlam、.xla ファイルでコンテンツを検出します。
+- **不適切な表現**: ほとんどの人を困らせる表現を含む、不快な言語テキスト項目の特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイル内のコンテンツを検出します。
+- **税**: 税計画、税務フォーム、税務書類、税規制などの税関係の内容を検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.ppsx、.ppsm、.ppsm、.ppss、.ppsm、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、xla ファイル。
+- **脅威**: 人や財産に対する暴行や身体的危害または損害を与える脅威に関連する、攻撃的な言語テキスト項目の特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイル内のコンテンツを検出します。
 
-これらは、Microsoft 365 コンプライアンス センター  > **Data 分類の** > 状態を持つトレーニング可能な分類子ビューに表示されます。`Ready to use`
+これらは **、Microsoft 365 コンプライアンス センター** >  **Data 分類** > **トレーニング可能な分類子** ビューに表示され、状態`Ready to use`は .
 
 ![分類子-事前トレーニング済み分類子。](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> 不快な言語、嫌がらせ、冒とく、差別、脅威分類子は検索可能なテキストでのみ機能し、これらの分野の用語や言語の完全なリストではありません。 さらに、言語と文化の基準は絶えず変化し、これらの現実に照らして、Microsoft は独自の裁量でこれらの分類子を更新する権利を留保します。 分類子は組織がこれらの領域を検出する場合に役立ちますが、分類子は、そのような言語の使用を検出または対処する組織の唯一の手段を提供することを目的としていない。 Microsoft または子会社ではなく、組織は、事前トレーニング済みの分類者によって識別されたコンテンツの監視、スキャン、ブロック、削除、保持に関連するすべての決定 (地域のプライバシーや他の適用される法律の遵守を含む) に対して引き続き責任を負います。 Microsoft では、展開と使用の前に法律顧問とのコンサルティングを推奨しています。
+> 不快な言葉、嫌がらせ、不適切な表現、差別、脅威の分類子は検索可能なテキストでのみ機能し、これらの分野全体の用語や言語の完全なリストではありません。 さらに、言語と文化の基準は絶えず変化し、これらの現実に照らして、Microsoft は独自の裁量でこれらの分類子を更新する権利を留保します。 分類子は組織がこれらの領域を検出するのに役立つ場合がありますが、分類子は、そのような言語の使用を検出または対処する組織の唯一の手段を提供することを意図していません。 Microsoft またはその子会社ではなく、組織は、事前トレーニング済みの分類子によって識別されたコンテンツの監視、スキャン、ブロック、削除、および保持に関連するすべての決定について責任を負います。これには、地域のプライバシーやその他の適用法への準拠が含まれます。 Microsoft では、展開と使用の前に法律相談者に相談することをお勧めします。
 
 事前トレーニング済みの分類子は、次の言語でコンテンツをスキャンできます。
 
-• 中国語 (簡体字) • 英語 • フランス語 • ドイツ語 • イタリア語 • 日本語 • ポルトガル語 • スペイン語
+- 簡体字中国語
+- 英語
+- フランス語
+- ドイツ語
+- イタリア語
+- 日本語
+- ポルトガル語
+- スペイン語
 
 ### <a name="custom-classifiers"></a>カスタム分類子
 
-事前トレーニング済みの分類子がニーズを満たしない場合は、独自の分類子を作成してトレーニングできます。 独自に作成するには、はるかに多くの作業が必要になりますが、組織のニーズに合わせてカスタマイズできます。
+事前トレーニング済みの分類子がニーズを満たしていない場合は、独自の分類子を作成してトレーニングできます。 独自に作成するには、はるかに多くの作業が必要になりますが、組織のニーズに合わせてカスタマイズできます。
 
-カスタムトレーニング可能な分類子の作成を開始するには、カテゴリに確実に含める例を指定します。 これらの例を処理したら、一致する例と一致しない例の両方を組み合わせ、テストします。 次に、分類子は、特定のアイテムが作成中のカテゴリに該当するかどうかを予測します。 次に、その結果を確認し、予測の精度を高めるのに役立つ、真の陽性、真の負、誤検知、および偽陰性を並べ替えて確認します。 
+カスタムトレーニング可能な分類子の作成を開始するには、間違いなくカテゴリに含まれる例を入力します。 これらの例を処理したら、一致する例と一致しない例の両方を組み合わせてテストします。 次に、分類子は、特定のアイテムが作成中のカテゴリに該当するかどうかを予測します。 その結果を確認し、真陽性、真陰性、偽陽性、および偽陰性を並べ替えて、予測の精度を高めます。 
 
-分類子を発行すると、SharePoint Online、Exchange、OneDrive のような場所のアイテムを並べ替え、コンテンツを分類します。 分類子を発行した後、最初のトレーニング プロセスと同様のフィードバック プロセスを使用して、分類子をトレーニングし続けできます。
+分類子を発行すると、SharePoint Online、Exchange、OneDriveなどの場所のアイテムを並べ替え、コンテンツを分類します。 分類子を発行した後は、最初のトレーニング プロセスに似たフィードバック プロセスを使用して、それをトレーニングし続けることができます。
 
 たとえば、次のトレーニング可能な分類子を作成できます。
 
-- 法的文書 - 弁護士クライアント特権、終了セット、作業明細書など
-- 戦略的ビジネス ドキュメント - プレスリリース、合併および買収、取引、ビジネスまたはマーケティング計画、知的財産、特許、デザイン ドキュメントなど
-- 価格情報 - 請求書、価格見積もり、作業オーダー、入札ドキュメントなど
-- 財務情報 - 組織の投資、四半期または年次の結果など
+- 法的ドキュメント - 弁護士クライアント特権、クロージング セット、作業明細書など
+- 戦略的ビジネス ドキュメント - プレス リリース、合併と買収、取引、ビジネスまたはマーケティング計画、知的財産、パテント、設計ドキュメントなど
+- 価格情報 - 請求書、価格見積もり、作業指示書、入札ドキュメントなど
+- 財務情報 ( 組織の投資、四半期または年間の結果など)
 
 #### <a name="process-flow-for-creating-custom-classifiers"></a>カスタム分類子を作成するためのプロセス フロー
 
-保持ポリシーや通信監督など、コンプライアンス ソリューションで使用する分類子の作成と発行は、このフローに従います。 カスタムトレーニング可能な分類子の作成の詳細については、「カスタム分類子の作成 [」を参照してください](classifier-get-started-with.md)。
+保持ポリシーや通信監督など、コンプライアンス ソリューションで使用する分類子を作成して公開すると、このフローに従います。 カスタムトレーニング可能な分類子の作成の詳細については、「 [カスタム分類子の作成」を](classifier-get-started-with.md)参照してください。
 
 ![プロセス フローのカスタム分類子。](../media/classifier-trainable-classifier-flow.png)
 
 ### <a name="retraining-classifiers"></a>分類子の再トレーニング
 
-すべてのカスタムトレーニング可能な分類子の精度を向上し、それらを実行する分類の精度に関するフィードバックを提供することで役立ちます。 これを再トレーニングと呼び、このワークフローに従います。
+トレーニング可能なすべての分類子の精度を向上させ、実行する分類の精度に関するフィードバックを提供することができます。 これは再トレーニングと呼ばれ、このワークフローに従います。
 
 > [!NOTE]
-> 事前トレーニング済みの分類子は再トレーニングできません。
+> 事前トレーニング済みの分類子を再トレーニングすることはできません。
 
-![分類子の再トレーニング ワークフロー。](../media/classifier-retraining-workflow.png)
+![分類子の再トレーニングワークフロー。](../media/classifier-retraining-workflow.png)
 
 ## <a name="see-also"></a>関連項目
 

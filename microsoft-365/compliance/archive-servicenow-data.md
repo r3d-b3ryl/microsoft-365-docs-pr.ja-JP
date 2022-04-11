@@ -1,5 +1,5 @@
 ---
-title: サーバーに ServiceNow データをアーカイブするコネクタをMicrosoft 365
+title: Microsoft 365で ServiceNow データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,82 +11,82 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理者は、ServiceNow データを Veritas からユーザーにインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 985fbdd173be020a00353452d4289fe214351976
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 管理者は、Veritas から Microsoft 365 に ServiceNow データをインポートおよびアーカイブするコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
+ms.openlocfilehash: e014d0b06098645ed535c126520bd5f8eb78fe46
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327379"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761111"
 ---
-# <a name="set-up-a-connector-to-archive-servicenow-data"></a>ServiceNow データをアーカイブするコネクタをセットアップする
+# <a name="set-up-a-connector-to-archive-servicenow-data"></a>ServiceNow データをアーカイブするコネクタを設定する
 
-サーバーの Veritas コネクタをMicrosoft 365 コンプライアンス センター、ServiceNow プラットフォームからユーザー メールボックスにデータをインポートしてアーカイブMicrosoft 365します。 Veritas には[、サードパーティのデータ](https://globanet.com/servicenow/) ソースからアイテムをキャプチャし、それらのアイテムを他のデータ ソースにインポートする ServiceNow コネクタMicrosoft 365。 コネクタは、ライブ メッセージ、添付ファイル、投稿などのコンテンツを ServiceNow から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、ServiceNow プラットフォームからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートする [ServiceNow](https://globanet.com/servicenow/) コネクタが用意されています。 コネクタは、ライブ メッセージ、添付ファイル、投稿などのコンテンツを ServiceNow から電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 
-ServiceNow データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルなどのコンプライアンス機能Microsoft 365を適用できます。 ServiceNow コネクタを使用してデータをインポートおよびアーカイブMicrosoft 365、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
+ServiceNow データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベルなどのMicrosoft 365コンプライアンス機能を適用できます。 ServiceNow コネクタを使用してMicrosoft 365のデータをインポートおよびアーカイブすると、組織が政府および規制ポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-servicenow-data"></a>ServiceNow データのアーカイブの概要
 
-次の概要では、コネクタを使用して ServiceNow データをアーカイブするプロセスについて説明Microsoft 365。
+次の概要では、コネクタを使用して ServiceNow データをMicrosoft 365にアーカイブするプロセスについて説明します。
 
 ![ServiceNow データのアーカイブ ワークフロー。](../media/ServiceNowConnectorWorkflow.png)
 
-1. 組織は ServiceNow と一緒に ServiceNow サイトをセットアップおよび構成します。
+1. 組織は ServiceNow と連携して、ServiceNow サイトを設定および構成します。
 
 2. 24 時間に 1 回、ServiceNow アイテムは Veritas Merge1 サイトにコピーされます。 また、コネクタは ServiceNow アイテムを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センター で作成する ServiceNow コネクタは、毎日 Veritas Merge1 サイトに接続し、ServiceNow コンテンツを Microsoft クラウド内の安全な Azure Storage 場所に転送します。
+3. Microsoft 365 コンプライアンス センターで作成した ServiceNow コネクタは、毎日 Veritas Merge1 サイトに接続し、ServiceNow コンテンツを Microsoft クラウド内の安全なAzure Storage場所に転送します。
 
-4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **ServiceNow** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用してアイテムをインポートするメールボックスを *決定* します。 すべての ServiceNow アイテムには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
+4. コネクタは、[手順 3](#step-3-map-users-and-complete-the-connector-setup). で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックスにインポートします。 **ServiceNow** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、そのフォルダーにアイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用して、アイテムをインポートするメールボックスを決定します。 すべての ServiceNow アイテムにはこのプロパティが含まれています。このプロパティには、アイテムのすべての参加者の電子メール アドレスが入力されます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Merge1 アカウントを作成します。 アカウントを作成するには、 [Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- Microsoft コネクタの Merge1 アカウントを作成します。 アカウントを作成するには、 [Veritas カスタマー サポート](https://www.veritas.com/content/support/)にお問い合わせください。 手順 1 でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
-- ServiceNow アカウントからデータをフェッチする ServiceNow アプリケーションを作成します。 アプリケーションの作成の手順については、「Merge1 サードパーティ コネクタ ユーザー ガイド」 [を参照してください](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)。
+- ServiceNow アカウントからデータをフェッチする ServiceNow アプリケーションを作成します。 アプリケーションの作成に関する詳細な手順については、「 [Merge1 サード パーティ コネクタ ユーザー ガイド」を](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)参照してください。
 
-- 手順 1 で ServiceNow コネクタを作成し (手順 3 で完了する) ユーザーには、データ コネクタ管理者の役割が割り当てられている必要があります。 この役割は、データ コネクタ ページの [データ  コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 この役割は、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ とコンプライアンス センターのアクセス許可」の「セキュリティとコンプライアンス センターの役割& [してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。 または、組織内の管理者がカスタム役割グループを作成し、データ コネクタ管理者の役割を割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、「アクセス許可」の「カスタム役割グループを作成する」[セクションを参照Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)。
+- 手順 1 で ServiceNow コネクタを作成し、手順 3 で完了したユーザーには、Data Connector 管理者ロールを割り当てる必要があります。 このロールは、Microsoft 365 コンプライアンス センターの **[データ コネクタ**] ページにコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この Veritas データ コネクタは、米国政府機関クラウドGCC環境Microsoft 365プレビュー中です。 サード パーティ製のアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にある、Microsoft 365 コンプライアンスおよびデータ保護のコミットメントの対象となされていないサードパーティ システムに対して、組織の顧客データを保存、送信、および処理する必要があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
+- この Veritas データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境でパブリック プレビュー段階にあります。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft 365コンプライアンスとデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
-## <a name="step-1-set-up-the-servicenow-connector"></a>手順 1: ServiceNow コネクタをセットアップする
+## <a name="step-1-set-up-the-servicenow-connector"></a>手順 1: ServiceNow コネクタを設定する
 
-最初の手順は、ページの [データ コネクタ] ページにアクセスしMicrosoft 365 コンプライアンス センター ServiceNow データのコネクタを作成することです。
+最初の手順では、Microsoft 365 コンプライアンス センターの **[データ コネクタ**] ページにアクセスし、ServiceNow データ用のコネクタを作成します。
 
-1. に移動し [https://compliance.microsoft.com](https://compliance.microsoft.com/) 、[ **データ コネクタ] [ServiceNow** > **] をクリックします**。
+1. **Data connectorsServiceNow** >  に [https://compliance.microsoft.com](https://compliance.microsoft.com/)移動してクリックします。
 
-2. [ **ServiceNow 製品の説明]** ページで、[コネクタの追加] **をクリックします**。
+2. **ServiceNow** 製品の説明ページで、[**コネクタの追加**] をクリックします。
 
-3. [サービス条件 **] ページで、[** 同意する] を **クリックします**。
+3. [利用規約] ページ **で** 、[ **同意** する] をクリックします。
 
-4. コネクタを識別する一意の名前を入力し、[次へ] を **クリックします**。
+4. コネクタを識別する一意の名前を入力し、[ **次へ**] をクリックします。
 
-5. コネクタを構成するには、Merge1 アカウントにサインインします。
+5. Merge1 アカウントにサインインしてコネクタを構成します。
 
 ## <a name="step-2-configure-the-servicenow-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトで ServiceNow を構成する
 
-2 番目の手順は、Veritas Merge1 サイトで ServiceNow コネクタを構成することです。 ServiceNow コネクタを構成する方法の詳細については、「Merge1 サード パーティ コネクタ ユーザー ガイド」 [を参照してください](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)。
+2 番目の手順では、Veritas Merge1 サイトで ServiceNow コネクタを構成します。 ServiceNow コネクタを構成する方法の詳細については、「 [Merge1 Third-Party Connectors ユーザー ガイド」を](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)参照してください。
 
-[ファイルの **保存と&完了]** をクリックすると、コネクタ ウィザードの [ユーザー マッピング] ページが表示Microsoft 365 コンプライアンス センターされます。
+[**保存&完了**] をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの **[ユーザー マッピング**] ページが表示されます。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
-ユーザーをマップし、コネクタのセットアップを完了するには、次Microsoft 365 コンプライアンス センター手順を実行します。
+ユーザーをマップし、Microsoft 365 コンプライアンス センターでコネクタの設定を完了するには、次の手順に従います。
 
-1. [**ServiceNow ユーザーをユーザーに割り当Microsoft 365する]** ページで、自動ユーザー マッピングを有効にします。 ServiceNow アイテムには、組織内のユーザーの電子メール アドレスを含む *Email* というプロパティが含まれます。 コネクタでこのアドレスをユーザーに関連付Microsoft 365、アイテムはユーザーのメールボックスにインポートされます。
+1. **[ServiceNow ユーザーをMicrosoft 365ユーザーにマップ** する] ページで、自動ユーザー マッピングを有効にします。 ServiceNow アイテム *には、組織内* のユーザーの電子メール アドレスを含む Email というプロパティが含まれています。 コネクタがこのアドレスをMicrosoft 365 ユーザーに関連付けることができる場合、アイテムはそのユーザーのメールボックスにインポートされます。
 
-2. [**次へ**] をクリックし、設定を確認し、[データ コネクタ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
+2. [ **次へ**] をクリックして設定を確認し、[ **データ コネクタ** ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
 ## <a name="step-4-monitor-the-servicenow-connector"></a>手順 4: ServiceNow コネクタを監視する
 
-ServiceNow コネクタを作成した後、コネクタの状態を [コネクタ] Microsoft 365 コンプライアンス センター。
+ServiceNow コネクタを作成した後、Microsoft 365 コンプライアンス センターでコネクタの状態を表示できます。
 
-1. 左側のナビゲーション [https://compliance.microsoft.com](https://compliance.microsoft.com/) で [ **データ コネクタ] に** 移動してクリックします。
+1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com/) ナビゲーションにある **[データ コネクタ** ] に移動してクリックします。
 
-2. [コネクタ **] タブをクリック** し、 **ServiceNow** コネクタを選択して、コネクタのプロパティと情報を含むフライアウト ページを表示します。
+2. [ **コネクタ** ] タブをクリックし、 **ServiceNow** コネクタを選択してポップアップ ページを表示します。このページには、コネクタに関するプロパティと情報が表示されます。
 
-3. [**ソースを含むコネクタの** 状態] で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータが含まれます。
+3. **[コネクタの状態とソース**] で、[**ログのダウンロード**] リンクをクリックして、コネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータが含まれています。
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 大きいアイテムのサポートは、後日利用できます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きなアイテムのサポートは、後日提供される予定です。

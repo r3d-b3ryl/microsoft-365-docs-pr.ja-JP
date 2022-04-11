@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d943f91685e3ee9d6bf12c3a47fbf68e5966dc9d
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 2e86d733304eeaa0e5e16f3ce1bfde87c21258d4
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738492"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761622"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>高度な捜索で共有クエリを使用する
 
@@ -39,7 +39,7 @@ ms.locfileid: "64738492"
 高度な検索の [クエリ] タブには、[**共有クエリ**]、[**マイ クエリ**]、[**Community クエリ**] のドロップダウン メニューがあります。 下向きの矢印を選択してメニューを展開できます。
 
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Microsoft 365 Defender ポータルの共有クエリ情報" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Microsoft 365 Defender ポータルでの共有クエリ、マイ クエリ、Community クエリ" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
 
 
 
@@ -63,7 +63,7 @@ ms.locfileid: "64738492"
 ## <a name="delete-or-rename-a-query"></a>クエリを削除または名前を変更する
 1. 名前を変更または削除するクエリの右側にある 3 つのドットを選択します。
 
-    :::image type="content" source="../../media/shared-query-3.png" alt-text="Microsoft 365 Defender ポータルの [高度な検索] ページの共有クエリのオプション" lightbox="../../media/shared-query-3.png":::
+    :::image type="content" source="../../media/advanced-hunting-del-save-query.png" alt-text="Microsoft 365 Defender ポータルの [高度な検索] ページでクエリの名前を変更または削除する" lightbox="../../media/advanced-hunting-del-save-query.png":::
 
 2. [**削除**] を選択して、削除を確認します。 または、[**名前の変更**] を選択して、クエリに新しい名前を入力ます。
 
@@ -75,7 +75,7 @@ Microsoft のセキュリティ調査員は、[GitHub の指定された公開�
 
 これらのクエリは、[**Community クエリ**] ドロップダウン メニューでも簡単に見つけることができます。
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Microsoft 365 Defender ポータルに保存される新しいクエリ" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Microsoft 365 Defender ポータルでフォルダー別に整理されたクエリをCommunityする" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
 Communityクエリは、*キャンペーン*、*コレクション*、*防御回避* などのフォルダーにグループ化されます。 クエリに関する詳細情報は、クエリ自体のインライン コメントとして提供されます。 
 

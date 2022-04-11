@@ -1,5 +1,5 @@
 ---
-title: コネクタをセットアップして、信号通信データをアーカイブMicrosoft 365
+title: Microsoft 365で Signal 通信データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,72 +11,72 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理者は、TeleMessage コネクタをセットアップして、シグナル通信データをインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティデータを管理できます。
-ms.openlocfilehash: 9e09be3a5084820a453ddd1b0204b3c0d87c693c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 管理者は、Microsoft 365で Signal 通信データをインポートおよびアーカイブする TeleMessage コネクタを設定できます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
+ms.openlocfilehash: f29d100a622bbe7d3d73e3e629a22b4768095a32
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326189"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760011"
 ---
-# <a name="set-up-a-connector-to-archive-signal-communications-data"></a>シグナル通信データをアーカイブするコネクタをセットアップする
+# <a name="set-up-a-connector-to-archive-signal-communications-data"></a>シグナル通信データをアーカイブするコネクタを設定する
 
-シグナル チャット、添付ファイル、ファイル、および削除されたメッセージMicrosoft 365 コンプライアンス センター呼び出しをインポートおよびアーカイブするには、次の手順で TeleMessage コネクタを使用します。 コネクタを設定して構成すると、そのコネクタは組織の TeleMessage アカウントに接続し、TeleMessage Signal Archiver を使用して従業員のモバイル通信を Microsoft 365 のメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの TeleMessage コネクタを使用して、Signal チャット、添付ファイル、ファイル、削除されたメッセージと通話をインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の TeleMessage アカウントに接続し、TeleMessage Signal Archiver を使用して従業員のモバイル通信をMicrosoft 365のメールボックスにインポートします。
 
-Signal Archiver コネクタ データをユーザー メールボックスに格納した後、訴訟ホールド、コンテンツ検索、Microsoft 365 保持ポリシーなどの Microsoft 365 コンプライアンス機能を Signal 通信データに適用できます。 たとえば、コンテンツ検索を使用してシグナル通信を検索したり、Signal Archiver コネクタ データを含むメールボックスを管理担当者に関連付Advanced eDiscoveryできます。 Signal Archiver コネクタを使用して、Microsoft 365のデータをインポートおよびアーカイブすると、組織がコーポレート ガバナンス規制や規制ポリシーに準拠しつ付けるのに役立ちます。
+Signal Archiver コネクタ データがユーザー メールボックスに格納された後、訴訟ホールド、コンテンツ検索、Microsoft 365保持ポリシーなどのMicrosoft 365コンプライアンス機能を Signal Communication データに適用できます。 たとえば、コンテンツ検索を使用してシグナル通信を検索したり、Signal Archiver コネクタ データを含むメールボックスをAdvanced eDiscoveryケースのカストディアンに関連付けることができます。 Signal Archiver コネクタを使用してMicrosoft 365のデータをインポートおよびアーカイブすると、組織が企業ガバナンスの規制や規制ポリシーに準拠し続けることができます。
 
-## <a name="overview-of-archiving-signal-communications-data"></a>アーカイブシグナル通信データの概要
+## <a name="overview-of-archiving-signal-communications-data"></a>シグナル通信データのアーカイブの概要
 
-次の概要では、コネクタを使用して信号通信データをアーカイブするプロセスについて説明Microsoft 365。
+次の概要では、コネクタを使用してMicrosoft 365のシグナル通信データをアーカイブするプロセスについて説明します。
 
 ![シグナル通信のアーカイブ ワークフロー。](../media/SignalConnectorWorkflow.png)
 
-1. 組織は TeleMessage と一緒にシグナル アーカイブ コネクタをセットアップします。 詳細については、「[TeleMessage Signal Archiver for the TeleMessage Signal Archiver for Microsoft 365」 を参照してください](https://www.telemessage.com/microsoft-365-activation-for-signal-archiver/)。
+1. 組織は TeleMessage と連携して Signal Archiver コネクタを設定します。 詳細については、「[Microsoft 365の TeleMessage Signal Archiver のアクティブ化」を](https://www.telemessage.com/microsoft-365-activation-for-signal-archiver/)参照してください。
 
 2. リアルタイムで、組織の Signal データが TeleMessage サイトにコピーされます。
 
-3. Microsoft 365 コンプライアンス センター で作成した Signal Archiver コネクタは、毎日 TeleMessage サイトに接続し、過去 24 時間の電子メール メッセージを Microsoft Cloud のセキュリティで保護された Azure Storage 領域に転送します。
+3. Microsoft 365 コンプライアンス センターで作成した Signal Archiver コネクタは、毎日 TeleMessage サイトに接続され、前の 24 時間のメール メッセージを Microsoft Cloud のセキュリティで保護されたAzure Storage領域に転送します。
 
-4. コネクタは、モバイル通信アイテムを特定のユーザーのメールボックスにインポートします。 Signal Archiver という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、User の [電子メール アドレス] プロパティの値を使用 *してマッピングを実行* します。 すべての電子メール メッセージには、このプロパティが含まれるので、電子メール メッセージのすべての参加者の電子メール アドレスが設定されます。
+4. コネクタは、モバイル通信アイテムを特定のユーザーのメールボックスにインポートします。 Signal Archiver という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *ユーザーの電子メール アドレス* プロパティの値を使用してマッピングを行います。 すべての電子メール メッセージには、このプロパティが含まれています。このプロパティには、電子メール メッセージのすべての参加者の電子メール アドレスが設定されます。
 
-   *User* の [電子メール アドレス] プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義できます。 このマッピング ファイルには、ユーザーのモバイル番号と、各ユーザー Microsoft 365対応するメールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にしてカスタム マッピングを提供する場合、すべての電子メール アイテムについて、コネクタは最初にカスタム マッピング ファイルを確認します。 ユーザーの携帯電話番号に対応する有効な Microsoft 365 ユーザーが見つからなかった場合、コネクタは電子メール アイテムのユーザーの電子メール アドレス プロパティを使用します。 コネクタがカスタム マッピング ファイルまたは電子メール アイテムのユーザーの電子メール アドレス プロパティに有効な Microsoft 365 ユーザーを見つからなかった場合、アイテムはインポートされません。
+   *ユーザーの電子メール アドレス* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義することもできます。 このマッピング ファイルには、ユーザーの携帯電話番号と、各ユーザーの対応するMicrosoft 365メールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にし、カスタム マッピングを指定する場合は、すべての電子メール アイテムについて、コネクタが最初にカスタム マッピング ファイルを確認します。 ユーザーの携帯電話番号に対応する有効なMicrosoft 365 ユーザーが見つからない場合、コネクタは電子メール アイテムのユーザーの電子メール アドレス プロパティを使用します。 コネクタで、カスタム マッピング ファイルまたは電子メール アイテムのユーザーの *電子メール アドレス* プロパティで有効なMicrosoft 365 ユーザーが見つからない場合、アイテムはインポートされません。
 
-## <a name="before-you-set-up-a-connector"></a>コネクタをセットアップする前に
+## <a name="before-you-set-up-a-connector"></a>コネクタを設定する前に
 
-- [TeleMessage から Signal Archiver サービスを注文し](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/)、組織の有効な管理アカウントを取得します。 コンプライアンス センターでコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- [TeleMessage から Signal Archiver サービス](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/)を注文し、組織の有効な管理アカウントを取得します。 コンプライアンス センターでコネクタを作成するときは、このアカウントにサインインする必要があります。
 
-- TeleMessage アカウントにシグナル アーカイブが必要なすべてのユーザーを登録します。 ユーザーを登録する場合は、ユーザーのアカウントに使用する電子メール アドレスと同じMicrosoft 365してください。
+- Signal アーカイブを必要とするすべてのユーザーを TeleMessage アカウントに登録します。 ユーザーを登録するときは、Microsoft 365 アカウントに使用するのと同じメール アドレスを必ず使用してください。
 
-- 従業員の携帯電話に Signal Archiver アプリをインストールし、アクティブ化します。 Signal Archiver アプリを使用すると、他の Signal ユーザーと通信してチャットできます。
+- Signal Archiver アプリを従業員の携帯電話にインストールし、アクティブ化します。 Signal Archiver アプリを使用すると、他の Signal ユーザーと通信したりチャットしたりできます。
 
-- 手順 3 で Signal Archiver コネクタを作成するユーザーには、データ コネクタ管理者の役割が割り当てられている必要があります。 この役割は、データ コネクタ ページの [データ  コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 この役割は、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ とコンプライアンス センターのアクセス許可」の「セキュリティとコンプライアンス センターの役割& [してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。 または、組織内の管理者がカスタム役割グループを作成し、データ コネクタ管理者の役割を割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、「アクセス許可」の「カスタム役割グループを作成する」[セクションを参照Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)。
+- 手順 3 で Signal Archiver コネクタを作成するユーザーには、データ コネクタ管理者ロールを割り当てる必要があります。 このロールは、Microsoft 365 コンプライアンス センターの **[データ コネクタ**] ページにコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この TeleMessage データ コネクタは、米国政府機関GCC環境Microsoft 365使用できます。 サード パーティ製のアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にある、Microsoft 365 コンプライアンスおよびデータ保護のコミットメントの対象となされていないサードパーティ システムに対して、組織の顧客データを保存、送信、および処理する必要があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
+- この TeleMessage データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft 365コンプライアンスとデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
-## <a name="create-a-signal-archiver-connector"></a>信号アーカイブ コネクタを作成する
+## <a name="create-a-signal-archiver-connector"></a>Signal Archiver コネクタを作成する
 
-前のセクションで説明した前提条件を完了したら、次のセクションで Signal Archiver コネクタを作成Microsoft 365 コンプライアンス センター。 コネクタは、指定した情報を使用して TeleMessage サイトに接続し、シグナル通信データを、ネットワーク内の対応するユーザー メールボックス ボックスに転送Microsoft 365。
+前のセクションで説明した前提条件を完了したら、Microsoft 365 コンプライアンス センターで Signal Archiver コネクタを作成できます。 コネクタは、指定した情報を使用して TeleMessage サイトに接続し、シグナル通信データをMicrosoft 365の対応するユーザー メールボックス ボックスに転送します。
 
-1. に移動し <https://compliance.microsoft.com> 、[ **データ コネクタ** > **Signal Archiver] をクリックします**。
+1. **Data connectorsSignal** >  **Archiver** に<https://compliance.microsoft.com>移動してクリックします。
 
-2. [Signal **Archiver 製品の説明]** ページで、[コネクタの追加] **をクリックします。**
+2. **Signal Archiver** 製品の説明ページで、[**コネクタの追加**] をクリックします。
 
-3. [サービス条件 **] ページで、[** 同意する] を **クリックします**。
+3. [利用規約] ページ **で** 、[ **同意** する] をクリックします。
 
-4. [ **TeleMessage へのログイン]** ページの [手順 3] で、次のボックスに必要な情報を入力し、[次へ] をクリック **します**。
+4. [ **TeleMessage へのログイン** ] ページの [手順 3] で、次のボックスに必要な情報を入力し、[ **次へ**] をクリックします。
 
-    - **ユーザー名:** TeleMessage ユーザー名。
+    - **名：** TeleMessage ユーザー名。
 
-    - **パスワード:** TeleMessage パスワード。
+    - **パスワード：** TeleMessage のパスワード。
 
-5. コネクタを作成したら、ポップアップ ウィンドウを閉じて次のページに移動できます。
+5. コネクタが作成されたら、ポップアップ ウィンドウを閉じて次のページに移動できます。
 
-6. [ユーザー マッピング **] ページで** 、自動ユーザー マッピングを有効にする。 カスタム マッピングを有効にするには、ユーザー マッピング情報を含む CSV ファイルをアップロードし、[次へ] をクリック **します**。
+6. [ **ユーザー マッピング** ] ページで、自動ユーザー マッピングを有効にします。 カスタム マッピングを有効にするには、ユーザー マッピング情報を含む CSV ファイルをアップロードし、[ **次へ**] をクリックします。
 
-7. 設定を確認し、[完了] を **クリックして** コネクタを作成します。
+7. 設定を確認し、[ **完了]** をクリックしてコネクタを作成します。
 
-8. [データ コネクタ] ページの [ **コネクタ] タブに移動** して、新しいコネクタのインポート プロセスの進行状況を確認します。
+8. **[データ コネクタ**] ページの [コネクタ] タブに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 大きいアイテムのサポートは、後日利用できます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きなアイテムのサポートは、後日提供される予定です。

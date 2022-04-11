@@ -17,12 +17,12 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 3084232f267a1180425d2daa3fcd2ba2fbcbd063
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: 519b2c025236be49f2f1c96e098c841f789c079b
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167104"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759669"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>Microsoft 365 の TLS 1.0 と 1.1 を無効にする
 
@@ -57,7 +57,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 KB の記事で説明されている **DefaultSecureProtocols** レジストリ キーの値によって、使用できるネットワーク プロトコルが決まります。
 
 |DefaultSecureProtocols 値|プロトコルが有効|
-|-|-|
+|---|---|
 |0x00000008|既定で SSL 2.0 を有効にします|
 |0x00000020|既定で SSL 3.0 を有効にします|
 |0x00000080|既定で TLS 1.0 を有効にします|
@@ -71,7 +71,7 @@ KB の記事で説明されている **DefaultSecureProtocols** レジストリ 
 次の表は、2018 年 10 月 31 日以降の Office 365 クライアントの適切なレジストリ キー値を示しています。
 
 |2018 年 10 月 31 日以降、Office 365 サービスのプロトコルが有効になりました|16 進値|
-|-|-|
+|---|---|
 |TLS 1.0 + 1.1 + 1.2|0x00000A80|
 |TLS 1.1 + 1.2|0x00000A00|
 |TLS 1.0 + 1.2|0x00000880|
@@ -86,7 +86,7 @@ Windows 7 更新プログラム ([KB 3140245](https://support.microsoft.com/help
 
 ## <a name="update-and-configure-the-net-framework-to-support-tls-12"></a>TLS 1.2 をサポートするように .NET Framework を更新および構成する
 
-TLS 1.0 または TLS 1.1 経由で Microsoft 365 API を呼び出すアプリケーションを更新して、TLS 1.2 を使用する必要があります。 .NET 4.5 の既定値は TLS 1.1 です。 .NET 構成を更新するには、「[クライアントでトランスポート層セキュリティ (TLS) 1.2 を有効にする方法](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)」 を参照してください。
+TLS 1.0 または TLS 1.1 経由で Microsoft 365 API を呼び出すアプリケーションを更新して、TLS 1.2 を使用する必要があります。 .NET 4.5 の既定値は TLS 1.1 になります。 .NET 構成を更新するには、「[クライアントでトランスポート層セキュリティ (TLS) 1.2 を有効にする方法](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)」 を参照してください。
 
 ## <a name="more-information"></a>詳細情報
 
@@ -99,11 +99,10 @@ TLS 1.0 または TLS 1.1 経由で Microsoft 365 API を呼び出すアプリ�
 - Office 365 に接続する Windows 7 クライアントの場合、TLS 1.2 が Windows の WinHTTP の既定の安全なプロトコルであることを確認してください。 詳細については、「[KB 3140245 - Windows の WinHTTP で TLS 1.1 と TLS 1.2 をデフォルトのセキュアプロトコルとして有効にするための更新](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in)」 を参照してください。
 - TLS 1.0 および 1.1 の依存関係を削除することで脆弱な TLS への対処を開始するには、「[Microsoft における TLS 1.2 のサポート](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)」 をご参照ください。
 - [IIS の新機能](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/)を使用すると、脆弱なセキュリティ プロトコルを使用してサービスに接続している [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) や [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) のクライアントを容易に確認できます。
-- 詳細については、「[TLS 1.0 の問題の解決](https://www.microsoft.com/download/details.aspx?id=55266)」 を参照してください。
+- TLS 1.0 の問題に関する詳細については、「[TLS 1.0 の問題の解決](https://www.microsoft.com/download/details.aspx?id=55266)」を参照してください。
 - セキュリティに対するマイクロソフトのアプローチについての公開情報をご覧になるには、[Office 365 セキュリティ センター](https://www.microsoft.com/trustcenter/cloudservices/office365)へアクセスしてください。
 - [TLS 1.0/1.1 の廃止の準備 - Office 365 Skype for Business](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Preparing-for-TLS-1-0-1-1-Deprecation-O365-Skype-for-Business/ba-p/222247)
 - [Exchange サーバー TLS ガイダンス、パート 1: TLS 1.2 の準備](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)
 - [Exchange サーバー TLS ガイダンス パート 2: TLS 1.2 を有効にして、クライアントがそれを使用していない特定](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761)
 - [Exchange サーバー TLS ガイダンス パート 3: TLS 1.0/1.1 をオフにする](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-3-turning-off-tls-1-0-1-1/ba-p/607898)
 - [Office Online Server での TLS 1.1 および TLS 1.2 のサポートの有効化](/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)
-

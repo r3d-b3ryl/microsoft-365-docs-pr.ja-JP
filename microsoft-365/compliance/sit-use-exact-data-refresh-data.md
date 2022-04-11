@@ -1,5 +1,5 @@
 ---
-title: 完全なデータ一致情報ソース テーブル ファイルを更新する
+title: 正確なデータ matchsensitive 情報ソース テーブル ファイルを更新する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,25 +17,25 @@ search.appverid:
 - MET150
 description: 機密情報ソース テーブル ファイルを更新します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 347ff88391a19cb3d8688b1142e524a163159b6f
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: fe72fac43d3cc9a568d8aa1c5d985d34f8477a4d
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525488"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760847"
 ---
-# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>機密情報ソース テーブル ファイルと完全一致するデータを更新する 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>正確なデータ一致の機密情報ソース テーブル ファイルを更新する 
 
-機密情報データベースは、24 時間ごとに最大 5 回更新できます。 機密情報のソース テーブルを再表示してアップロードする必要があります。
+機密情報データベースは、24 時間ごとに最大 5 回更新できます。 機密情報のソース テーブルを再ハッシュしてアップロードする必要があります。
 
-1. 機密データを Microsoft Excel などのアプリに再エクスポートし、.csv、.tsv 形式、またはパイプ (|) で区切られた形式でファイルを保存します。 以前にファイルをハッシュしてアップロードした場合と同じファイル名と場所を保持します。 機密データ [をエクスポートして](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) 正しい形式に取得する方法の詳細については、「完全なデータ一致ベースの機密情報の種類のソース データをエクスポートする」を参照してください。
+1. 機密データをMicrosoft Excelなどのアプリに再エクスポートし、ファイルを.csv、.tsv 形式、パイプ (|) 区切り形式で保存します。 以前にファイルをハッシュしてアップロードしたときに使用したものと同じファイル名と場所を保持します。 機密データをエクスポートして正しい形式に取得する方法の詳細については、「 [完全一致ベースの機密情報の種類のソース](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) データをエクスポートする」を参照してください。
 
       > [!NOTE]
-      > 機密情報ソース テーブル ファイルの構造 (フィールド名) に変更がない場合は、データを更新するときにデータベース スキーマ ファイルに変更を加える必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。 スキーマを編集 [または削除する](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) 手順については、「完全なデータ一致スキーマを管理する」を参照してください。 「EDM SIT/rule パッケージを編集または削除する手順については、「機密情報の種類 [/](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) ルール パッケージと完全に一致するデータを作成する」を参照してください。
+      > 機密情報ソース テーブル ファイルの構造 (フィールド名) に変更がない場合は、データを更新するときにデータベース スキーマ ファイルを変更する必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。 スキーマを編集または削除する手順については、 [完全なデータ一致スキーマを管理](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) します。 EDM SIT/rule パッケージを編集または削除する手順については、「 [厳密なデータ一致の機密情報の種類/規則](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) パッケージを作成する」を参照してください。
 
-2. [ハッシュ] の手順を [使用し、](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) 機密情報の種類と完全一致するデータの機密情報ソース テーブルをアップロードして、機密情報テーブルソース ファイルをアップロードします。
+2. ハッシュの手順を使用 [し、厳密なデータ一致の機密情報の種類の機密情報ソース テーブル](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) をアップロードして、機密情報テーブルのソース ファイルをアップロードします。
 
-2. タスク スケジューラを [使用すると](/windows/desktop/TaskSchd/task-scheduler-start-page) 、ハッシュを自動化し、機密情報の種類に完全に一致するデータの機密情報ソース テーブル [をアップロード](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) できます。 タスクのスケジュールを設定するにはいくつかの方法があります。
+3. [タスク スケジューラを](/windows/desktop/TaskSchd/task-scheduler-start-page)使用してハッシュを自動化[し、厳密なデータ一致の機密情報の種類のプロシージャの機密情報ソース テーブルをアップロード](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)できます。 タスクのスケジュールを設定するにはいくつかの方法があります。
 
    |メソッド|操作|
    |---|---|
@@ -82,7 +82,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>ハッシュをスケジュールし、別の手順でアップロードする
+#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>ハッシュをスケジュールし、別の手順としてアップロードする
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
