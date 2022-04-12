@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender ウイルス対策を評価する
-description: すべてのサイズの企業は、このガイドを使用して、ユーザーが提供する保護を評価し、テストMicrosoft Defender ウイルス対策をWindows。
-keywords: Microsoft Defender ウイルス対策、クラウド保護、クラウド、マルウェア対策、セキュリティ、防御者、評価、テスト、保護、比較、リアルタイム保護
+description: あらゆる規模の企業は、このガイドを使用して、WindowsのMicrosoft Defender ウイルス対策によって提供される保護を評価およびテストできます。
+keywords: Microsoft Defender ウイルス対策、クラウド保護、クラウド、マルウェア対策、セキュリティ、Defender、評価、テスト、保護、比較、リアルタイム保護
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4dd25a599f144a60bfd2ebeb3e9bb8b1876bd3c6
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8c7ced9c85ec7c6075b44970d25e34ba5594404e
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807418"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787637"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を評価する
 
@@ -28,39 +28,54 @@ ms.locfileid: "62807418"
 
 
 **適用対象:**
+
+- Microsoft Defender ウイルス対策
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-このガイドを使用して、ウイルス、マルウェアMicrosoft Defender ウイルス対策望ましくない可能性のあるアプリケーションからユーザーを保護する方法を判断します。
+**プラットフォーム**
+- Windows
+
+このガイドを使用して、Microsoft Defender ウイルス対策がウイルス、マルウェア、および望ましくない可能性のあるアプリケーションからユーザーをどの程度適切に保護しているかを判断します。
 
 > [!TIP]
->Microsoft Defender for Endpoint のデモ web サイトを demo.wd.microsoft.com、次 [の機能が](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 動作し、その動作を確認できます。
+>demo.wd.microsoft.com のMicrosoft Defender for Endpointデモ Web [サイトにアクセス](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)して、次の機能が動作していることを確認し、動作を確認することもできます。
 >
 > - クラウドによる保護
 > - 高速学習 (一目でブロックを含む)
 > - 望ましくない可能性があるアプリケーションのブロック
 
 > [!NOTE]
-> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
-小規模企業と大規模企業の両方で利用できる Microsoft Defender ウイルス対策の重要な次世代保護機能と、ネットワーク全体でマルウェアの検出と保護を強化する方法について説明します。
+小規模企業と大企業の両方で利用できるMicrosoft Defender ウイルス対策の重要な次世代保護機能と、ネットワーク全体でマルウェアの検出と保護を強化する方法について説明します。
 
-各設定を個別に構成して評価するか、一度にすべて構成するか選択できます。 一般的な評価シナリオに基づいて同様の設定をグループ化し、PowerShell を使用して設定を有効にする手順が含まれています。
+各設定を個別に構成して評価するか、一度にすべて評価するかを選択できます。 一般的な評価シナリオに基づいて同様の設定をグループ化し、PowerShell を使用して設定を有効にする手順も含まれています。
 
-このガイドは、オフラインで表示するために PDF 形式で提供されています。
+このガイドは、オフラインで表示するために PDF 形式で入手できます。
 
 - [ガイドを PDF 形式でダウンロードする](https://www.microsoft.com/download/details.aspx?id=54795)
 
-また、ガイドに記載されている設定を自動的に有効にする PowerShell をダウンロードすることもできます。 上記の PDF ダウンロードと共にスクリプトを取得するか、PowerShell ギャラリーから個別にスクリプトを取得できます。
+また、ガイドで説明されているすべての設定を自動的に有効にする PowerShell をダウンロードすることもできます。 上記の PDF ダウンロードと共に、またはPowerShell ギャラリーから個別にスクリプトを取得できます。
 
-- [PowerShell スクリプトをダウンロードして、設定を自動的に構成する](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings)
+- [PowerShell スクリプトをダウンロードして設定を自動的に構成する](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings)
 
 > [!IMPORTANT]
-> このガイドは現在、コンピューターの単一コンピューター評価を目的Microsoft Defender ウイルス対策。 このガイドのすべての設定を有効にすると、実際の展開に適していない場合があります。
+> このガイドは現在、Microsoft Defender ウイルス対策の単一マシン評価を目的としています。 このガイドのすべての設定を有効にすることは、実際の展開には適していない可能性があります。
 >
-> ネットワーク全体での実際の展開と監視に関する最新の推奨事項については、「deploy Microsoft Defender ウイルス対策」を[参照](deploy-manage-report-microsoft-defender-antivirus.md)Microsoft Defender ウイルス対策。
+> ネットワーク全体でのMicrosoft Defender ウイルス対策の実際の展開と監視に関する最新の推奨事項については、「[Microsoft Defender ウイルス対策のデプロイ」を](deploy-manage-report-microsoft-defender-antivirus.md)参照してください。
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
 
 ## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
-- [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策を展開する](deploy-manage-report-microsoft-defender-antivirus.md)

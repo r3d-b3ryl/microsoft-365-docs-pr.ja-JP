@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender ウイルス対策機能を構成する
-description: Intune、Microsoft Defender ウイルス対策、グループ ポリシー Microsoft Endpoint Configuration Manager PowerShell を使用して、これらの機能を構成できます。
-keywords: Microsoft Defender ウイルス対策、マルウェア対策、セキュリティ、防御者、構成、Microsoft Endpoint Configuration Manager、SCCM、Intune、MDM、モバイル デバイス管理、GP、グループ ポリシー、PowerShell
+description: Intune、Microsoft Endpoint Configuration Manager、グループ ポリシー、PowerShell を使用して、Microsoft Defender ウイルス対策機能を構成できます。
+keywords: Microsoft Defender ウイルス対策, マルウェア対策, セキュリティ, Defender, 構成, 構成, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, モバイル デバイス管理, GP, グループ ポリシー, PowerShell
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ ms.date: 10/14/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 183fedefbbb56411674ff80a9feedc507cff0530
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8a1aa78a153e11f1a36fe9f7dcbd85322e6f258d
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807526"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787954"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Microsoft Defender ウイルス対策機能を構成する
 
@@ -31,24 +31,38 @@ ms.locfileid: "62807526"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender ウイルス対策
 
-次のようなMicrosoft Defender ウイルス対策ツールを使用して、構成を構成できます。
+**プラットフォーム**
+- Windows
 
-- Microsoft エンドポイント マネージャー (これには、Microsoft IntuneとMicrosoft Endpoint Configuration Manager)
+次のようなさまざまなツールを使用してMicrosoft Defender ウイルス対策を構成できます。
+
+- Microsoft エンドポイント マネージャー (Microsoft IntuneとMicrosoft Endpoint Configuration Managerを含む)
 - グループ ポリシー
 - PowerShell コマンドレット
 - Windows Management Instrumentation (WMI)
 - [テナントのアタッチ](/mem/configmgr/tenant-attach/)
 
-次の広範なカテゴリの機能を構成できます。
+次の広範な機能カテゴリを構成できます。
 
-- クラウドによる保護。 「[Cloud-delivered protection and Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)
+- クラウド配信の保護。 [クラウド配信の保護とMicrosoft Defender ウイルス対策を](cloud-protection-microsoft-defender-antivirus.md)参照してください
 
-- 行動、ヒューリスティック、機械学習ベースの保護を含む、常時オンのリアルタイム保護。 「 [動作、ヒューリスティック、およびリアルタイムの保護を構成する」を参照してください](configure-protection-features-microsoft-defender-antivirus.md)。
+- 行動、ヒューリスティック、機械学習ベースの保護を含む、常時オンのリアルタイム保護。 [動作、ヒューリスティック、およびリアルタイム保護の構成に関する](configure-protection-features-microsoft-defender-antivirus.md)ページを参照してください。
 
-- エンド ユーザーが個々のエンドポイントでクライアントとやり取りする方法。 以下のリソースを参照してください。
-  - [ユーザーがユーザー インターフェイスを表示または操作Microsoft Defender ウイルス対策防止する](prevent-end-user-interaction-microsoft-defender-antivirus.md)
-  - [ユーザーがポリシー設定をローカルで変更Microsoft Defender ウイルス対策または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+- エンド ユーザーが個々のエンドポイントでクライアントと対話する方法。 以下のリソースを参照してください。
+  - [ユーザーがMicrosoft Defender ウイルス対策ユーザー インターフェイスを表示または操作できないようにする](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+  - [ユーザーがMicrosoft Defender ウイルス対策ポリシー設定をローカルで変更できないようにまたは許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> 管理 [ツールと構成ツールのリファレンス トピックを確認します](configuration-management-reference-microsoft-defender-antivirus.md)。
+> [管理ツールと構成ツールのリファレンス トピックを確認](configuration-management-reference-microsoft-defender-antivirus.md)します。
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)

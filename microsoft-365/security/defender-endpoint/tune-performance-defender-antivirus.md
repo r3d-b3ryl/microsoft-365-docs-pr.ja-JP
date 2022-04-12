@@ -14,18 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34bf757ee545d45f7faccdefaf1e8aa57e9cb961
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 73afd0751e34fbb020019e6f28056c9f2a935c07
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783449"
+ms.locfileid: "64788592"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のパフォーマンス アナライザー
 
 **適用対象**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender ウイルス対策
+
+**プラットフォーム**
+- Windows
 
 **パフォーマンス アナライザー Microsoft Defender ウイルス対策とは**
 
@@ -486,3 +490,12 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)

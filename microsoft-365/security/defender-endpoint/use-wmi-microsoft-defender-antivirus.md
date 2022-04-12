@@ -1,7 +1,7 @@
 ---
-title: WMI をMicrosoft Defender ウイルス対策構成する
-description: Wmi スクリプトを使用して Microsoft Defender for Endpoint Microsoft Defender ウイルス対策設定を取得、変更、および更新することで、アプリケーションの構成と管理を行う方法について説明します。
-keywords: wmi、スクリプト、Windows 管理インストルメンテーション、構成
+title: WMI を使用してMicrosoft Defender ウイルス対策を構成する
+description: WMI スクリプトを使用してMicrosoft Defender for Endpointの設定を取得、変更、更新することで、Microsoft Defender ウイルス対策を構成および管理する方法について説明します。
+keywords: wmi, スクリプト, Windows 管理インストルメンテーション, 構成
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,14 +17,14 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c8057a971576d5511440ac009acd6eab55b302e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a525deb526f61f8500f42cc918380fdfa9c52861
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168368"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787638"
 ---
-# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>[Windows管理インストルメンテーション (WMI) を使用して、デバイスを構成および管理Microsoft Defender ウイルス対策
+# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>Windows管理インストルメンテーション (WMI) を使用してMicrosoft Defender ウイルス対策を構成および管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,20 +32,34 @@ ms.locfileid: "61168368"
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- Microsoft Defender ウイルス対策
 
-Windows管理インストルメンテーション (WMI) は、設定を取得、変更、更新できるスクリプト インターフェイスです。
+**プラットフォーム**
+- Windows
 
-WMI の詳細については、「システム管理ライブラリ [Microsoft Developer Network」を参照してください](/windows/win32/wmisdk/wmi-start-page)。
+Windows Management Instrumentation (WMI) は、設定を取得、変更、更新できるスクリプト インターフェイスです。
 
-Microsoft Defender ウイルス対策には、グループ ポリシーや他の管理ツールと同じ機能のほとんどを実行するために使用できる、複数の特定の WMI クラスがあります。 多くのクラスは [、Defender for Cloud PowerShell コマンドレットに類似しています](use-powershell-cmdlets-microsoft-defender-antivirus.md)。
+WMI の詳細については、 [Microsoft Developer Network System Administration ライブラリ](/windows/win32/wmisdk/wmi-start-page)を参照してください。
 
-[MSDN Windows Defender WMIv2 Provider](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)参照ライブラリには、ユーザーに使用できる WMI クラスMicrosoft Defender ウイルス対策、サンプル スクリプトが含まれています。
+Microsoft Defender ウイルス対策には、グループ ポリシーや他の管理ツールと同じ機能のほとんどを実行するために使用できる特定の WMI クラスが多数用意されています。 クラスの多くは、[powerShell コマンドレットDefender for Cloud](use-powershell-cmdlets-microsoft-defender-antivirus.md)に似ています。
 
-WMI で行われた変更は、変更が展開または行われたエンドポイントのローカル設定に影響します。 つまり、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager、またはMicrosoft Intuneポリシーの展開は、WMI で行われた変更を上書きできます。 
+[MSDN Windows Defender WMIv2 プロバイダー参照ライブラリ](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)には、Microsoft Defender ウイルス対策で使用可能な WMI クラスが一覧表示され、スクリプトの例が含まれています。
 
-ローカル ポリシー [の上書きを使用してローカルで上書きできる設定を構成できます](configure-local-policy-overrides-microsoft-defender-antivirus.md)。
+WMI で行われた変更は、変更がデプロイまたは行われるエンドポイントのローカル設定に影響します。 つまり、グループ ポリシー、Microsoft Endpoint Configuration Manager、またはMicrosoft Intuneを使用してポリシーを展開すると、WMI で行われた変更が上書きされる可能性があります。 
 
-## <a name="related-topics"></a>関連トピック
+[ローカル ポリシーのオーバーライドを使用して、ローカルでオーバーライドできる設定を構成できます](configure-local-policy-overrides-microsoft-defender-antivirus.md)。
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+
+## <a name="related-topics"></a>関連項目
 
 - [管理および構成ツールのリファレンス トピック](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

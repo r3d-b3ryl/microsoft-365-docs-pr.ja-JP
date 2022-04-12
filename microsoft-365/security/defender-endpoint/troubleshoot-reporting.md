@@ -1,7 +1,7 @@
 ---
-title: レポート ツールに関する問題のトラブルシューティングを行Microsoft Defender ウイルス対策
-description: 更新コンプライアンスで保護状態を報告しようとするときに、一般的なMicrosoft Defender ウイルス対策を特定して解決する
-keywords: トラブルシューティング、エラー、修正、更新コンプライアンス、oms、監視、レポート、Microsoft Defender ウイルス対策
+title: Microsoft Defender ウイルス対策のレポート ツールに関する問題のトラブルシューティング
+description: Update Compliance でMicrosoft Defender ウイルス対策保護状態で報告しようとしたときに発生する一般的な問題を特定して解決する
+keywords: トラブルシューティング、エラー、修正、コンプライアンスの更新、oms、監視、レポート、Microsoft Defender ウイルス対策
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e17f50eb02fa6fbc3c34526ca064543b7afbdea2
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8059668e5ac13b506f91a91a7088ffc6ffc0e63d
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167672"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787558"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>更新プログラムのコンプライアンスでの Microsoft Defender ウイルス対策レポートのトラブルシューティング
 
@@ -30,52 +30,65 @@ ms.locfileid: "61167672"
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender ウイルス対策
+
+**プラットフォーム**
+- Windows
 
 > [!IMPORTANT]
-> 2020 年 3 月 31 日に、更新Microsoft Defender ウイルス対策レポート機能が削除されます。 セキュリティの機能と更新プログラムを細かく制御できる Microsoft エンドポイント マネージャー を使用して、引[き続き](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)セキュリティ コンプライアンス ポリシーを定義および確認できます。
+> 2020 年 3 月 31 日に、Update Compliance のMicrosoft Defender ウイルス対策レポート機能が削除されます。 [Microsoft エンドポイント マネージャー](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)を使用してセキュリティ コンプライアンス ポリシーを引き続き定義して確認できます。これにより、セキュリティ機能と更新プログラムを細かく制御できます。
 
-更新プログラムのコンプライアンスMicrosoft Defender ウイルス対策を使用できます。 E3、B、F1、VL、およびライセンスの状態Pro表示されます。 ただし、E5 ライセンスの場合は [、Microsoft Defender for Endpoint ポータルを使用する必要があります](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。 ライセンス オプションの詳細については、「製品[ライセンス オプションWindows 10を参照してください](https://www.microsoft.com/licensing/product-licensing/windows10.aspx)。
+Microsoft Defender ウイルス対策は、Update Compliance で使用できます。 E3、B、F1、VL、Proライセンスの状態が表示されます。 ただし、E5 ライセンスの場合は、[Microsoft Defender for Endpoint ポータル](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)を使用する必要があります。 ライセンス オプションの詳細については、「製品ライセンス オプション[Windows 10](https://www.microsoft.com/licensing/product-licensing/windows10.aspx)参照してください。
 
-[Windows Analytics Update Compliance](/windows/deployment/update/update-compliance-using#wdav-assessment)を使用して、Microsoft Defender ウイルス対策 を使用しているネットワーク内のデバイスまたはエンドポイントの保護状態に関するレポートを取得すると、問題や問題が発生する可能性があります。
+[Windows Analytics Update Compliance を使用して、Microsoft Defender ウイルス対策を使用しているネットワーク内のデバイスまたはエンドポイントの保護状態に関するレポートを取得](/windows/deployment/update/update-compliance-using#wdav-assessment)すると、問題や問題が発生する可能性があります。
 
-通常、問題の最も一般的なインジケーターは次のとおりです。
+通常、問題の最も一般的な指標は次のとおりです。
 
-- 表示を期待していたすべてのデバイスの数またはサブセットのみが表示されます。
-- デバイスが一切表示されない
-- 表示されるレポートと情報が古くなっている (数日以上前)
+- 表示される予定だったすべてのデバイスの少数またはサブセットのみが表示されます
+- デバイスがまったく表示されない
+- 表示されるレポートと情報が古くなっています (数日前より古い)
 
-更新コンプライアンスに関連しない Microsoft Defender ウイルス対策 サービスに関連する一般的なエラー コードとイベントの MICROSOFT DEFENDER ウイルス対策[を参照してください](troubleshoot-microsoft-defender-antivirus.md)。
+Update Compliance に関連しないMicrosoft Defender ウイルス対策 サービスに関連する一般的なエラー コードとイベント ID については、「[Microsoft Defender ウイルス対策 イベント](troubleshoot-microsoft-defender-antivirus.md)」を参照してください。
 
-これらの問題のトラブルシューティングには、次の 3 つの手順があります。
+これらの問題をトラブルシューティングするには、次の 3 つの手順があります。
 
-1. すべての前提条件を満たしていることを確認する
-2. クラウド ベースのサービスへの接続Windows Defender確認する
-3. サポート ログの送信
+1. すべての前提条件が満たされていることを確認する
+2. Windows Defenderクラウドベースのサービスへの接続を確認する
+3. サポート ログを送信する
 
 > [!IMPORTANT]
-> 通常、デバイスが更新コンプライアンスに表示され始めるには 3 日かかる。
+> 通常、デバイスが Update Compliance に表示されるまでに 3 日かかります。
 
-## <a name="confirm-prerequisites"></a>前提条件の確認
+## <a name="confirm-prerequisites"></a>前提条件を確認する
 
-デバイスが更新コンプライアンスに適切に表示するには、更新コンプライアンス サービスと更新プログラムの両方の前提条件を満たす必要Microsoft Defender ウイルス対策。
+デバイスが Update Compliance に正しく表示されるようにするには、Update Compliance サービスとMicrosoft Defender ウイルス対策の両方の特定の前提条件を満たす必要があります。
 
 >[!div class="checklist"]
 >
-> - エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender ウイルス対策](microsoft-defender-antivirus-compatibility.md)が無効にされ、エンドポイントは更新コンプライアンスで報告されません。
-> - [クラウド配信の保護が有効になっています](enable-cloud-protection-microsoft-defender-antivirus.md)。
-> - エンドポイントはクラウド[にMicrosoft Defender ウイルス対策できます](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
-> - エンドポイントがバージョン 1607 Windows 10前に実行されている場合、Windows 10データを拡張[レベルに設定する必要があります](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)。
-> - すべての要件が満たされたのは 3 日間です。
+> - エンドポイントは、唯一のウイルス対策保護アプリとしてMicrosoft Defender ウイルス対策を使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender ウイルス対策自体が無効](microsoft-defender-antivirus-compatibility.md)になり、エンドポイントは Update Compliance で報告されません。
+> - [クラウド配信保護が有効になっている](enable-cloud-protection-microsoft-defender-antivirus.md)。
+> - エンドポイントは[、Microsoft Defender ウイルス対策 クラウドに接続](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)できます
+> - エンドポイントがバージョン 1607 以前Windows 10実行されている場合は、[Windows 10診断データを拡張レベルに設定する必要があります](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)。
+> - すべての要件が満たされてから 3 日が経過しました
 
-"更新プログラムのコンプライアンスMicrosoft Defender ウイルス対策を使用できます。 E3、B、F1、VL、およびライセンスの状態Pro表示されます。 ただし、E5 ライセンスの場合は、Microsoft Defender for Endpoint ポータル (/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) を使用する必要があります。 ライセンス オプションの詳細については、「製品Windows 10」を参照してください。
+"更新プログラムコンプライアンスでMicrosoft Defender ウイルス対策を使用できます。 E3、B、F1、VL、Proライセンスの状態が表示されます。 ただし、E5 ライセンスの場合は、Microsoft Defender for Endpoint ポータル (/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) を使用する必要があります。 ライセンス オプションの詳細については、「Windows 10製品ライセンス オプション」を参照してください。
 
-上記の前提条件が満たされている場合は、次の手順に進み、診断情報を収集して送信する必要があります。
+上記の前提条件がすべて満たされている場合は、次の手順に進んで診断情報を収集し、Microsoft に送信する必要があります。
 
 > [!div class="nextstepaction"]
-> [更新コンプライアンスのトラブルシューティングの診断データを収集する](collect-diagnostic-data.md)
+> [Update Compliance トラブルシューティングの診断データを収集する](collect-diagnostic-data.md)
 
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
-- [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策を展開する](deploy-manage-report-microsoft-defender-antivirus.md)

@@ -1,6 +1,6 @@
 ---
-title: スキャンの除外をMicrosoft Defender ウイルス対策する
-description: ファイル (指定されたプロセスによって変更されたファイルを含む) とフォルダーを、ユーザーがスキャンMicrosoft Defender ウイルス対策。 PowerShell を使用して除外を検証します。
+title: Microsoft Defender ウイルス対策 スキャンの除外を設定する
+description: ファイル (指定されたプロセスによって変更されたファイルを含む) とフォルダーは、Microsoft Defender ウイルス対策によってスキャンされないように除外できます。 PowerShell を使用して除外を検証します。
 keywords: ''
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,48 +15,61 @@ ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6ef9cfcec1c54cf9754d7152c098d7ef5b67b456
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c9796f4e5154fd46d1479f0cbfa25f2afaf4e9bb
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330553"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787514"
 ---
-# <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>スキャンの除外を構成およびMicrosoft Defender ウイルス対策する
+# <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Microsoft Defender ウイルス対策 スキャンの除外を構成して検証する
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender ウイルス対策
 
+**プラットフォーム**
+- Windows
 
-特定のファイル、フォルダー、プロセス、およびプロセスで開いたファイルを、特定のスキャンMicrosoft Defender ウイルス対策できます。 このような除外は、スケジュールされたスキャン[、](scheduled-catch-up-scans-microsoft-defender-antivirus.md)[オンデマンド](run-scan-microsoft-defender-antivirus.md) スキャン、常時オンのリアルタイム保護と監視[に適用されます](configure-real-time-protection-microsoft-defender-antivirus.md)。 プロセスで開いたファイルの除外は、リアルタイム保護にのみ適用されます。
+Microsoft Defender ウイルス対策 スキャンから、特定のファイル、フォルダー、プロセス、およびプロセスで開かれたファイルを除外できます。 このような除外は、 [スケジュールされたスキャン](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、 [オンデマンド スキャン](run-scan-microsoft-defender-antivirus.md)、 [および常時オンのリアルタイムの保護と監視](configure-real-time-protection-microsoft-defender-antivirus.md)に適用されます。 プロセスで開かれたファイルの除外は、リアルタイム保護にのみ適用されます。
 
 ## <a name="configure-and-validate-exclusions"></a>除外を構成および検証する
 
-除外を構成および検証するには、次の項目を参照してください。
+除外を構成して検証するには、次を参照してください。
 
-- [ファイル名、拡張子、およびフォルダーの場所に基づいて除外を構成および検証します](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。 ファイル拡張子、ファイルMicrosoft Defender ウイルス対策場所に基づいて、ファイルをスキャンから除外できます。
+- [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成して検証します](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。 ファイル拡張子、ファイル名、または場所に基づいて、Microsoft Defender ウイルス対策 スキャンからファイルを除外できます。
 
-- [プロセスによって開いたファイルの除外を構成および検証します](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)。 特定のプロセスで開いたスキャンからファイルを除外できます。
+- [プロセスによって開かれたファイルの除外を構成して検証します](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)。 特定のプロセスによって開かれたスキャンからファイルを除外できます。
 
-## <a name="recommendations-for-defining-exclusions"></a>除外を定義するための推奨事項
+## <a name="recommendations-for-defining-exclusions"></a>除外を定義するためのおすすめ
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作と一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるファイルなど) に基づく多くの自動除外が含まれます。
+> Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるものなど) に基づく多くの自動除外が含まれます。
 >
-> 除外を定義すると、Microsoft Defender ウイルス対策によって提供される保護が低下します。 除外の実装に関連付けられているリスクは常に評価する必要があります。悪意がないと確信しているファイルのみを除外する必要があります。
+> 除外を定義すると、Microsoft Defender ウイルス対策によって提供される保護が低下します。 除外の実装に関連するリスクは常に評価する必要があります。また、悪意のないと確信しているファイルのみを除外する必要があります。
 
 除外を定義する場合は、次の点に注意してください。
 
-- 除外は技術的には保護のギャップです。 除外を定義する場合は、すべてのオプションを検討してください。 その他のオプションは、除外された場所に適切なアクセス制御リスト (ACL) を設定するか、最初はポリシーを監査モードに設定するのと同じほど簡単です。
+- 除外は技術的には保護のギャップです。 除外を定義するときは、すべてのオプションを検討してください。 その他のオプションは、除外された場所に適切なアクセス制御リスト (ACL) があることを確認するか、最初に監査モードにポリシーを設定するのと同じくらい簡単です。
 
-- 除外を定期的に確認します。 レビュー プロセスの一環として軽減策を再確認し、再適用します。
+- 除外を定期的に確認します。 レビュー プロセスの一環として、軽減策を再確認して再適用します。
 
-- 予防的に取り組む際に除外を定義しないようにするのが理想的です。 たとえば、将来問題になる可能性があるからといって、何かを除外しない。 除外は、除外が軽減する可能性のあるパフォーマンスやアプリケーションの互換性に関連する問題など、特定の問題にのみ使用します。
+- プロアクティブ化するために除外を定義することは避けるのが理想的です。 たとえば、将来問題になる可能性があるからといって、何かを除外しないでください。 除外は、パフォーマンスやアプリケーションの互換性に関連する問題など、除外によって軽減される可能性がある特定の問題に対してのみ使用します。
 
-- 除外リストに対する変更を確認および監査します。 セキュリティ チームは、後で混乱を避けるために、特定の除外が追加された理由に関するコンテキストを保持する必要があります。 セキュリティ チームは、除外が存在する理由に関する質問に対する具体的な回答を提供できる必要があります。
+- 除外リストの変更を確認して監査します。 セキュリティ チームは、後で混乱を避けるために、特定の除外が追加された理由に関するコンテキストを保持する必要があります。 セキュリティ チームは、除外が存在する理由に関する質問に対する具体的な回答を提供できる必要があります。
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Defender ウイルス対策の除外Windows Server 2016](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Windows Server 2016で除外をMicrosoft Defender ウイルス対策する](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [除外を定義する際に避ける必要のある一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)

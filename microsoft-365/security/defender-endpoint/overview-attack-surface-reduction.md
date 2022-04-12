@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 5b71134f9a7d33880e9762701e825c3fbf708f6b
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 5c3724989db1bd8e6389b8a70ba591ce4e109390
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705091"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787712"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃面の縮小機能を理解して使用する
 
@@ -35,6 +35,10 @@ ms.locfileid: "64705091"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender ウイルス対策
+
+**プラットフォーム**
+- Windows
 
 > [!TIP]
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -110,15 +114,15 @@ Defender for Endpoint を使用して、各イベントの詳細を取得しま�
 | 監査はすべてのイベントに適用されます | [ネットワーク保護を有効にする](enable-network-protection.md) | [ネットワーク保護イベント](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | 監査は個々の軽減策に適用されます | [エクスプロイト保護を有効にする](enable-exploit-protection.md) | [エクスプロイト保護イベント](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
-### <a name="attack-surface-reduction-asr-rules"></a>攻撃対象の縮小 (ASR) ルール
+### <a name="attack-surface-reduction-asr-rules"></a>攻撃面の減少 (ASR) ルール
 
 攻撃面の縮小 (ASR) ルールは、一般的な既知の攻撃面を強化するために事前に定義されています。 攻撃表面の縮小ルールを実装するために使用できる方法はいくつかあります。 推奨される方法については、次の攻撃面縮小 (ASR) ルールの展開に関するトピックを参照してください。
 
-- [攻撃対象領域の削減 (ASR) ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
-- [攻撃面削減 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
-- [攻撃面の縮小 (ASR) ルールをテストする](attack-surface-reduction-rules-deployment-test.md)
-- [攻撃面の縮小 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md)
-- [攻撃面の縮小 (ASR) ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md)
+- [攻撃面の縮小 (ASR) ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
+- [攻撃面の縮小 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
+- [攻撃面の減少 (ASR) ルールをテストする](attack-surface-reduction-rules-deployment-test.md)
+- [攻撃面の減少 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md)
+- [攻撃面の減少 (ASR) ルールの運用化](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
@@ -170,7 +174,7 @@ Windows イベント ビューアーにカスタム ビューを作成して、�
 
 4. イベントをフィルター処理する機能の XML コードを XML セクションに貼り付けます。
 
-5. **[OK]** をクリックします。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するようにフィルター処理するカスタム ビューが作成されます。
+5. [**OK**] を選択します。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するようにフィルター処理するカスタム ビューが作成されます。
 
 #### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻撃表面の縮小ルール イベント用の XML
 
@@ -294,14 +298,14 @@ Windows イベント ビューアーにカスタム ビューを作成して、�
 |:---|:---|
 | [ハードウェア ベースの分離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | システムの起動時と実行中に、システムの整合性を保護および維持します。 ローカル構成証明とリモート構成証明を使用してシステムの整合性を検証します。 Microsoft Edgeにはコンテナーの分離を使用して、悪意のある Web サイトから保護します。 |
 | [アプリケーション制御](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | アプリケーション制御を使用して、アプリケーションを実行するために信頼を得る必要があります。 |
-| [制御されたフォルダー アクセス](controlled-folders.md) | 悪意のあるアプリまたは疑わしいアプリ (ファイル暗号化ランサムウェア マルウェアを含む) が、キー システム フォルダー内のファイルに変更を加えないようにするのに役立ちます (Microsoft Defender ウイルス対策必要) |
-| [ネットワーク保護](network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (Microsoft Defender ウイルス対策が必要) |
+| [制御されたフォルダー アクセス](controlled-folders.md) | 悪意のあるアプリや疑わしいアプリ (ファイル暗号化ランサムウェア マルウェアを含む) が、キー システム フォルダー内のファイルに変更を加えないようにするのに役立ちます (Microsoft Defender ウイルス対策必要)。 |
+| [ネットワーク保護](network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (Microsoft Defender ウイルス対策が必要)。 |
 | [エクスプロイト保護](exploit-protection.md) | 組織が使用するオペレーティング システムとアプリが悪用されないように保護します。 エクスプロイト保護は、サードパーティのウイルス対策ソリューションでも機能します。 |
 | [デバイス コントロール](device-control-report.md) | 組織内のリムーバブル ストレージや USB ドライブなどのデバイスで使用されるメディアを監視および制御することで、データ損失から保護します。 |
-| [攻撃面の縮小 (ASR) ルールの展開ガイド](attack-surface-reduction-rules-deployment.md) | 攻撃表面の縮小ルールを展開するための概要情報と前提条件について説明します |
-| [攻撃面削減 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md) | 攻撃表面縮小ルールの展開に推奨される手順の一覧を示します |
-| [攻撃面の縮小 (ASR) ルールをテストする](attack-surface-reduction-rules-deployment-test.md) | 監査モードを使用して、攻撃表面の縮小ルールをテストする手順について説明します。 |
-| [攻撃面の縮小 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md) | 攻撃表面の縮小ルールをテスト (監査) モードからアクティブな有効 (ブロック) モードに移行する手順を示します |
-| [攻撃面の縮小 (ASR) ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md) | 日常のレビューとメンテナンスアクティビティに関する情報を提供します。 |
-| [攻撃対象の縮小 (ASR) ルールリファレンス](attack-surface-reduction-rules-reference.md) | 各攻撃対象領域の縮小ルールの詳細を提供します。 |
+| [攻撃面の縮小 (ASR) ルールの展開ガイド](attack-surface-reduction-rules-deployment.md) | 攻撃表面の縮小ルールを展開するための概要情報と前提条件について説明します。 |
+| [攻撃面の縮小 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md) | 攻撃表面縮小ルールの展開に推奨される手順を一覧表示します。 |
+| [攻撃面の減少 (ASR) ルールをテストする](attack-surface-reduction-rules-deployment-test.md) | 監査モードを使用して、攻撃表面の縮小ルールをテストする手順について説明します。 |
+| [攻撃面の減少 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md) | 攻撃表面縮小ルールをテスト (監査) モードからアクティブで有効な (ブロック) モードに移行する手順を示します。 |
+| [攻撃面の減少 (ASR) ルールの運用化](attack-surface-reduction-rules-deployment-operationalize.md) | 日常のレビューとメンテナンスアクティビティに関する情報を提供します。 |
+| [攻撃面の減少 (ASR) ルールの参照](attack-surface-reduction-rules-reference.md) | 各攻撃対象領域の縮小ルールの詳細を提供します。 |
 | [攻撃面の減少ルール](attack-surface-reduction.md) | マルウェアの阻止に役立つインテリジェントなルールを使用して、アプリケーションの脆弱性 (攻撃面) を減らします。 (Microsoft Defender ウイルス対策が必要)。 |

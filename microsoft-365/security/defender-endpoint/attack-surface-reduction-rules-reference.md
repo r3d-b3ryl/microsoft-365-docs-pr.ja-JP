@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 1eee7e482423e2292e9fe9db42333db481d44175
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 64162b83376facddbdeffd1c3079baa49f9d8924
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783759"
+ms.locfileid: "64788020"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃面の縮小ルールリファレンス
 
@@ -31,6 +31,10 @@ ms.locfileid: "64783759"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender ウイルス対策
+
+**プラットフォーム**
+- Windows
 
 この記事では、攻撃軽減ルールに関する情報を提供します。
 
