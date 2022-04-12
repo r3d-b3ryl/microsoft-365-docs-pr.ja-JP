@@ -1,7 +1,7 @@
 ---
-title: 制限された定期的なスキャン機能Microsoft Defender ウイルス対策有効にする
-description: 定期的なスキャンが制限されている場合は、インストールMicrosoft Defender ウイルス対策 AV プロバイダーに加えて、デバイスを使用できます。
-keywords: lps、制限付き、定期的、スキャン、スキャン、互換性、サードパーティ、その他の AV、無効化
+title: 限られた定期的なMicrosoft Defender ウイルス対策スキャン機能を有効にする
+description: 制限付き定期的スキャンを使用すると、インストールされている他の AV プロバイダーに加えてMicrosoft Defender ウイルス対策を使用できます
+keywords: lps, limited, periodic, scaning, scanning, compatibility, 3rd party, Other av, disable
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1ba846402bb2ee447ee5f38ff035c119bdc28fc1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5201366ee003efab1edd5a0a536c45db4ec7aabc
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467689"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788900"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する
 
@@ -31,28 +31,42 @@ ms.locfileid: "64467689"
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender ウイルス対策
 
-限定的な定期的なスキャンは、Windows 10 または 11 デバイスに別のウイルス対策製品をインストールした場合に有効Windows特別な種類の脅威の検出と修復です。
+**プラットフォーム**
+- Windows
 
-特定の状況でのみ有効にできます。 制限付き定期的なスキャンと他のウイルス対策Microsoft Defender ウイルス対策の動作の詳細については、「Microsoft Defender ウイルス対策[参照してください](microsoft-defender-antivirus-compatibility.md)。
+限られた定期的なスキャンは、Windows 10またはWindows 11デバイスに別のウイルス対策製品をインストールしたときに有効にできる、特別な種類の脅威の検出と修復です。
 
-**Microsoft では、この機能をエンタープライズ環境で使用することをお勧めしません。これは主にコンシューマー向け機能です。** この機能は、マルウェアを検出するためにMicrosoft Defender ウイルス対策機能の限られたサブセットのみを使用し、ほとんどのマルウェアや望ましくない可能性のあるソフトウェアを検出することは可能ではありません。 また、管理およびレポート機能は制限されます。 Microsoft では、企業がプライマリ ウイルス対策ソリューションを選択し、排他的に使用する方法をお勧めします。
+特定の状況でのみ有効にできます。 限られた定期的なスキャンと、Microsoft Defender ウイルス対策が他のウイルス対策製品とどのように連携するかの詳細については、[Microsoft Defender ウイルス対策互換性](microsoft-defender-antivirus-compatibility.md)に関するページを参照してください。
 
-## <a name="how-to-enable-limited-periodic-scanning"></a>制限付き定期的なスキャンを有効にする方法
+**Microsoft では、エンタープライズ環境でこの機能を使用することはお勧めしません。これは主にコンシューマー向けの機能です。** この機能では、Microsoft Defender ウイルス対策機能の一部のみを使用してマルウェアを検出し、ほとんどのマルウェアや望ましくない可能性のあるソフトウェアを検出することはできません。 また、管理機能とレポート機能は制限されます。 Microsoft では、企業がプライマリウイルス対策ソリューションを選択し、排他的に使用することをお勧めします。
 
-既定では、Microsoft Defender ウイルス対策 は、他のウイルス対策製品がインストールされていない場合、または他の製品が古い、期限切れになっている、または正しく動作していない場合、Windows 10 または Windows 11 デバイスで有効になります。
+## <a name="how-to-enable-limited-periodic-scanning"></a>限られた定期的なスキャンを有効にする方法
 
-このMicrosoft Defender ウイルス対策場合、通常のオプションが表示され、そのデバイスで構成されます。
+既定では、Microsoft Defender ウイルス対策は、他のウイルス対策製品がインストールされていない場合、または他の製品が古い場合、有効期限が切れている場合、または正しく動作していない場合は、Windows 10またはWindows 11 デバイスでそれ自体を有効にします。
 
-:::image type="content" source="images/vtp-wdav.png" alt-text="スキャンWindows セキュリティ設定、更新オプションなど、Microsoft Defender AV オプションを表示するアプリ" lightbox="images/vtp-wdav.png":::
+Microsoft Defender ウイルス対策が有効になっている場合は、そのデバイスで構成するための通常のオプションが表示されます。
 
-別のウイルス対策製品がインストールされ、正しく動作している場合は、Microsoft Defender ウイルス対策が無効になります。 アプリWindows セキュリティ[ウイルス対策&] セクションが変更され、AV 製品に関する状態が表示され、製品の構成オプションへのリンクが提供されます。
+:::image type="content" source="images/vtp-wdav.png" alt-text="スキャン オプション、設定、更新オプションなど、Microsoft Defender AV オプションを示すWindows セキュリティ アプリ" lightbox="images/vtp-wdav.png":::
 
-サードパーティの AV 製品の下に、新しいリンクが新しいMicrosoft Defender ウイルス対策 **されます**。 このリンクをクリックすると、制限付き定期的なスキャンを有効にするトグルが表示されます。 制限された定期的なオプションは、定期的なスキャンを有効または無効にするトグルです。 
+別のウイルス対策製品がインストールされ、正常に動作している場合は、Microsoft Defender ウイルス対策自体が無効になります。 Windows セキュリティ アプリは、[**ウイルス&脅威の保護**] セクションを変更して AV 製品に関する状態を表示し、製品の構成オプションへのリンクを提供します。
 
-スイッチを On に **スライドすると** 、サードパーティの AV 製品の下に標準の Microsoft Defender AV オプションが表示されます。 制限された定期的なスキャン オプションがページの下部に表示されます。
+サード パーティ製の AV 製品の下に、新しいリンクが **Microsoft Defender ウイルス対策オプション** として表示されます。 このリンクをクリックすると、制限付き定期的なスキャンを有効にするトグルが表示されます。 制限付き定期的なオプションは、定期的なスキャンを有効または無効にするトグルであることに注意してください。 
+
+スイッチを **[オン]** にスライドすると、サード パーティ製の AV 製品の下に標準の Microsoft Defender AV オプションが表示されます。 限られた定期的なスキャン オプションがページの下部に表示されます。
 
 ## <a name="related-articles"></a>関連記事
 
 - [行動、ヒューリスティック、リアルタイム保護を構成する](configure-protection-features-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)

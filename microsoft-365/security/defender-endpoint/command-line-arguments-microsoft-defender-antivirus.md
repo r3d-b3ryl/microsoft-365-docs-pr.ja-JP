@@ -15,18 +15,22 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f7ae9c9d0986463b6d6368edd0dac050600e3373
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
-ms.translationtype: HT
+ms.openlocfilehash: 97f818469f9da2616ca5ca2839ddf29ea227b85f
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220886"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789736"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>mpcmdrun.exe コマンドライン ツールを使用して Microsoft Defender Antivirus を構成および管理する
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender ウイルス対策 
+
+**プラットフォーム**
+- Windows
 
 専用のコマンドライン ツール **mpcmdrun.exe** を使用して、Microsoft Defender Antivirus でさまざまな機能を実行できます。 このユーティリティは、Microsoft Defender Antivirus タスクを自動化する場合に役立ちます。 ユーティリティは `%ProgramFiles%\Windows Defender\MpCmdRun.exe` で確認できます。 コマンド プロンプトから実行します。
 
@@ -82,6 +86,16 @@ MpCmdRun.exe -Scan -ScanType 2
 |**ValidateMapsConnection は MAPS への接続を確立できませんでした (hr=0x80508015**|ファイアウォールが接続をブロックしている、または SSL インスペクションを実行しています。|
 |**ValidateMapsConnection は MAPS への接続を確立できませんでした (hr=800722F0D**|ファイアウォールが接続をブロックしている、または SSL インスペクションを実行しています。|
 |**ValidateMapsConnection は MAPS への接続を確立できませんでした (hr=80072EE7 httpcode=451)**|ファイアウォールが接続をブロックしている、または SSL インスペクションを実行しています。|
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 

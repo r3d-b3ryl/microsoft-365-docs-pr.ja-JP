@@ -1,7 +1,7 @@
 ---
-title: ユーザー設定のローカルオーバーライドをMicrosoft Defender ウイルス対策する
+title: Microsoft Defender ウイルス対策設定のローカル オーバーライドを構成する
 description: Microsoft Defender AV でユーザーがローカルで変更する設定を有効または無効にします。
-keywords: ローカル オーバーライド, ローカル ポリシー, グループ ポリシー, gpo, lockdown,merge, lists
+keywords: ローカル オーバーライド, ローカル ポリシー, グループ ポリシー, GPO, lockdown,merge, lists
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -16,89 +16,103 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ec916b008ddb3e0669111efe2bd493c709327296
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ae90694bab8191c2ad83fa1de7563bc2ba7643e8
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168260"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789758"
 ---
-# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーがポリシー設定をローカルで変更Microsoft Defender ウイルス対策または許可する
+# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーがMicrosoft Defender ウイルス対策ポリシー設定をローカルで変更できないようにまたは許可する
 
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender ウイルス対策
 
-既定ではMicrosoft Defender ウイルス対策グループ ポリシー オブジェクトを介してネットワーク内のエンドポイントに展開される設定を使用すると、ユーザーはローカルで設定を変更できません。 これは、一部のインスタンスで変更できます。
+**プラットフォーム**
+- Windows
 
-たとえば、特定のユーザー グループ (セキュリティ研究者や脅威調査者など) が、使用するエンドポイントの個々の設定をさらに制御できる必要がある場合があります。
+既定では、グループ ポリシー オブジェクトを介してネットワーク内のエンドポイントに展開されるMicrosoft Defender ウイルス対策設定では、ユーザーがローカルで設定を変更できなくなります。 これは、いくつかのインスタンスで変更できます。
 
-## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>ユーザー設定のローカルオーバーライドをMicrosoft Defender ウイルス対策する
+たとえば、特定のユーザー グループ (セキュリティ研究者や脅威調査者など) が、使用するエンドポイントの個々の設定をさらに制御できるようにする必要がある場合があります。
 
-これらのポリシーの既定の設定は [無効] **です**。
+## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>Microsoft Defender ウイルス対策設定のローカル オーバーライドを構成する
 
-[有効] に設定 **されている** 場合、エンドポイントのユーザーは、Windows セキュリティ アプリ、ローカル グループ ポリシー設定、および [PowerShell](microsoft-defender-security-center-antivirus.md)コマンドレット (必要に応じて) に関連付けられた設定を変更できます。
+これらのポリシーの既定の設定は **無効です**。
 
-次の表に、各上書きポリシー設定と、関連する機能または設定の構成手順を示します。
+**[有効]** に設定されている場合、エンドポイントのユーザーは、Windows セキュリティ アプリ、ローカル [グループ ポリシー](microsoft-defender-security-center-antivirus.md)設定、および PowerShell コマンドレット (該当する場合) に関連付けられた設定を変更できます。
 
-これらの設定を構成するには、次の手順を実行します。
+次の表に、各オーバーライド ポリシー設定と、関連する機能または設定の構成手順を示します。
 
-1. グループ ポリシー管理コンピューターで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] をクリック **します**。
+これらの設定を構成するには、次の手順に従います。
 
-2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に **移動し、[** 管理用 **テンプレート] をクリックします**。
+1. グループ ポリシー管理コンピューターで、[グループ ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))を開き、構成するグループ ポリシーオブジェクトを右クリックし、[編集] をクリック **します**。
 
-3. ツリーを展開して **WindowsコンポーネントMicrosoft Defender ウイルス対策** し、次に設定の表  >  で **指定** した場所 (この記事) を展開します。
+2. **グループ ポリシー管理エディター** で **[コンピューターの構成**] に移動し、[**管理用テンプレート**] をクリックします。
 
-4. 下の表で指定 **したポリシー設定** をダブルクリックし、オプションを目的の構成に設定します。 **[OK] を** クリックし、他の設定を繰り返します。
+3. ツリーを展開して **コンポーネント** > をWindowsし **Microsoft Defender ウイルス対策** 設定のテーブルで指定した **場所** (この記事では) を展開します。
 
-5. グループ ポリシー オブジェクトを通常どおり展開します。
+4. 次の表に示すポリシー **設定** をダブルクリックし、目的の構成にオプションを設定します。 [ **OK] を** クリックし、その他の設定についても繰り返します。
+
+5. グループ ポリシー オブジェクトを通常どおりにデプロイします。
 
 ## <a name="table-of-settings"></a>設定の表
 
 <br/><br/>
 
-| 場所 | Setting | 記事 |
+| 場所 | 設定 | 記事 |
 |---|---|---|---|
-| MAPS |Microsoft MAPS へのレポート用にローカル設定の上書きを構成する|[クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md) |
-| 検疫する|検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する|[スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md) |
-| リアルタイム保護|コンピューター上のファイルとプログラムのアクティビティを監視するローカル設定の上書きを構成する|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| リアルタイム保護|受信および送信ファイルのアクティビティを監視するローカル設定の上書きを構成する | [常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| リアルタイム保護|ダウンロードしたファイルと添付ファイルをスキャンするローカル設定の上書きを構成する|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| リアルタイム保護|オンの動作監視用にローカル設定の上書きを構成する|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| リアルタイム保護|ローカル設定の上書きを構成してリアルタイム保護を有効にする|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| 修復|スケジュールされたフル スキャンを実行して修復を完了するために、時刻のローカル設定の上書きを構成する|[スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md) |
-| スキャン|CPU 使用率の最大割合に対するローカル設定の上書きを構成する|[スキャンの構成と実行](run-scan-microsoft-defender-antivirus.md) |
-| スキャン|スケジュール スキャン日のローカル設定の上書きを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| スキャン|スケジュールされたクイック スキャン時間のローカル設定の上書きを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| スキャン|スケジュールされたスキャン時間のローカル設定の上書きを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| スキャン|スケジュールされたスキャンに使用するスキャンの種類のローカル設定の上書きを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| マップ |Microsoft MAPS へのレポートのローカル設定のオーバーライドを構成する|[クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| 検疫する|検疫フォルダーからアイテムを削除するためのローカル設定のオーバーライドを構成する|[スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md) |
+| リアルタイム保護|コンピューター上のファイルとプログラムのアクティビティを監視するためのローカル設定のオーバーライドを構成する|[常時オンの保護と監視Microsoft Defender ウイルス対策有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| リアルタイム保護|受信および送信ファイル アクティビティを監視するためのローカル設定のオーバーライドを構成する | [常時オンの保護と監視Microsoft Defender ウイルス対策有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| リアルタイム保護|ダウンロードしたすべてのファイルと添付ファイルをスキャンするためのローカル設定のオーバーライドを構成する|[常時オンの保護と監視Microsoft Defender ウイルス対策有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| リアルタイム保護|動作の監視を有効にするためのローカル設定のオーバーライドを構成する|[常時オンの保護と監視Microsoft Defender ウイルス対策有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| リアルタイム保護|リアルタイム保護を有効にするローカル設定のオーバーライドを構成する|[常時オンの保護と監視Microsoft Defender ウイルス対策有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 修復|スケジュールされたフル スキャンを実行して修復を完了するように、時刻のローカル設定のオーバーライドを構成する|[スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md) |
+| スキャン|CPU 使用率の最大パーセンテージに対してローカル設定のオーバーライドを構成する|[スキャンを構成して実行する](run-scan-microsoft-defender-antivirus.md) |
+| スキャン|スケジュール スキャン日のローカル設定のオーバーライドを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| スキャン|スケジュールされたクイック スキャン時間のローカル設定のオーバーライドを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| スキャン|スケジュールされたスキャン時間のローカル設定のオーバーライドを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| スキャン|スケジュールされたスキャンに使用するスキャンの種類のローカル設定のオーバーライドを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 
 <a id="merge-lists"></a>
 
-## <a name="configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged"></a>ローカルおよびグローバルに定義された脅威の修復と除外リストの結合方法を構成する
+## <a name="configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged"></a>ローカルおよびグローバルに定義された脅威の修復リストと除外リストをマージする方法を構成する
 
-ローカルに定義されたリストをグローバルに定義されたリストと結合または結合する方法を構成することもできます。 この設定は、除外リスト[、指定された](configure-exclusions-microsoft-defender-antivirus.md)修復リスト、攻撃表面[](configure-remediation-microsoft-defender-antivirus.md)[の縮小に適用されます](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)。
+また、ローカルで定義されたリストをグローバルに定義されたリストと結合またはマージする方法を構成することもできます。 この設定は、 [除外リスト](configure-exclusions-microsoft-defender-antivirus.md)、 [指定された修復リスト](configure-remediation-microsoft-defender-antivirus.md)、攻撃 [面の縮小](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)に適用されます。
 
-既定では、ローカル グループ ポリシーと Windows セキュリティ アプリで構成されているリストは、ネットワークに展開した適切なグループ ポリシー オブジェクトによって定義されたリストと結合されます。 競合がある場合は、グローバルに定義されたリストが優先されます。
+既定では、ローカル グループ ポリシーとWindows セキュリティ アプリで構成されたリストは、ネットワークにデプロイした適切なグループ ポリシー オブジェクトによって定義されたリストとマージされます。 競合がある場合は、グローバルに定義されたリストが優先されます。
 
-この設定を無効にすると、グローバルに定義されたリスト (展開された GPO のリストなど) だけが使用されます。
+この設定を無効にすると、グローバルに定義されたリスト (デプロイされた GPO など) のみが使用されるようにすることができます。
 
 ### <a name="use-group-policy-to-disable-local-list-merging"></a>グループ ポリシーを使用してローカル リストのマージを無効にする
 
-1. グループ ポリシー管理コンピューターで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] をクリック **します**。
+1. グループ ポリシー管理コンピューターで、[グループ ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))を開き、構成するグループ ポリシーオブジェクトを右クリックし、[編集] をクリック **します**。
 
-2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に **移動し、[** 管理用 **テンプレート] をクリックします**。
+2. **グループ ポリシー管理エディター** で **[コンピューターの構成**] に移動し、[**管理用テンプレート**] をクリックします。
 
-3. ツリーを展開して **、Windowsコンポーネント> Microsoft Defender ウイルス対策。**
+3. ツリーを展開して **、> Microsoft Defender ウイルス対策コンポーネントをWindows** します。
 
-4. [リストのローカル **管理者の差し込み動作を構成** する] をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。
+4. **リストの [ローカル管理者のマージ動作の構成]** をダブルクリックし、オプションを **[無効]** に設定します。 **[OK]** をクリックします。
 
 > [!NOTE]
-> ローカル リストの結合を無効にすると、フォルダー アクセスの制御設定が上書きされます。 また、ローカル管理者が設定した保護されたフォルダーまたは許可されたアプリも上書きされます。 フォルダー アクセスの制御設定の詳細については、「アプリでブロック[されたアプリ](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security)を許可する」を参照Windows セキュリティ。
+> ローカル リストのマージを無効にすると、フォルダー アクセスの制御設定がオーバーライドされます。 また、保護されたフォルダーや、ローカル管理者によって設定された許可されたアプリもオーバーライドされます。 フォルダー アクセスの制御設定の詳細については、「[Windows セキュリティでブロックされたアプリを許可する](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security)」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
-- [ユーザーとのエンド ユーザー操作を構成Microsoft Defender ウイルス対策](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策を使用してエンド ユーザー操作を構成する](configure-end-user-interaction-microsoft-defender-antivirus.md)

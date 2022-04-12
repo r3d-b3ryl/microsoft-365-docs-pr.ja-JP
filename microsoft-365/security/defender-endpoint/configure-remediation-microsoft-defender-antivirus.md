@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender ウイルス対策検出の修復を構成する
-description: 脅威をMicrosoft Defender ウイルス対策するときに実行する必要がある操作と、検疫フォルダーに検疫されたファイルを保持する期間を構成する
+description: 脅威を検出したときに実行するMicrosoft Defender ウイルス対策と、検疫されたファイルを検疫フォルダーに保持する期間を構成する
 keywords: 修復、修正、削除、脅威、検疫、スキャン、復元
 ms.prod: m365-security
 ms.technology: mde
@@ -16,12 +16,12 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 182e0b39c1a9c7795fbdd716fc2e260d06d5c451
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 257a3bfc4fc9dcb6353bb158bc3cd4296891ae76
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217424"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790154"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Microsoft Defender ウイルス対策検出の修復を構成する
 
@@ -30,51 +30,65 @@ ms.locfileid: "61217424"
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender ウイルス対策
 
-スキャンMicrosoft Defender ウイルス対策、検出された脅威を修復または削除します。 特定の脅威Microsoft Defender ウイルス対策対処する方法、修復する前に復元ポイントを作成する必要があるかどうか、および脅威を削除する必要がある場合を構成できます。
+**プラットフォーム**
+- Windows
 
-この記事では、グループ ポリシーを使用してこれらの設定を構成する方法について説明しますが、グループ ポリシーとグループ ポリシー [Microsoft Endpoint Configuration Manager使用](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings)[Microsoft Intune。](/intune/device-restrictions-configure)
+Microsoft Defender ウイルス対策はスキャンを実行すると、検出された脅威の修復または削除を試みます。 特定の脅威に対処Microsoft Defender ウイルス対策方法、修復前に復元ポイントを作成する必要があるかどうか、脅威を削除するタイミングを構成できます。
 
-PowerShell コマンドレットまたは WMI クラス[ `Set-MpPreference` を使用して](/powershell/module/defender/set-mppreference)[ `MSFT_MpPreference` これらの](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)設定を構成することもできます。
+この記事では、グループ ポリシーを使用してこれらの設定を構成する方法について説明しますが、[Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings)と[Microsoft Intune](/intune/device-restrictions-configure)を使用することもできます。
 
-## <a name="configure-remediation-options"></a>修復オプションの構成
+PowerShell コマンドレットまたは [`MSFT_MpPreference` WMI クラス](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)を[`Set-MpPreference`](/powershell/module/defender/set-mppreference)使用して、これらの設定を構成することもできます。
 
-1. グループ ポリシー管理コンピューターで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] をクリック **します**。
+## <a name="configure-remediation-options"></a>修復オプションを構成する
 
-2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に **移動し、[** 管理用 **テンプレート] を選択します**。
+1. グループ ポリシー管理コンピューターで、[グループ ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))を開き、構成するグループ ポリシーオブジェクトを右クリックし、[編集] をクリック **します**。
 
-3. ツリーを展開して、Windows **コンポーネントMicrosoft Defender ウイルス対策。** \> 
+2. **グループ ポリシー管理エディター** で **[コンピューターの構成**] に移動し、[**管理用テンプレート**] を選択します。
+
+3. ツリーを展開して **、Microsoft Defender ウイルス対策コンポーネント** \> **をWindows** します。
 
 4. 次の表を使用して場所を選択し、必要に応じてポリシーを編集します。
 
-5. **[OK]** を選択します。
+5. [**OK**] を選択します。
 
 <br/><br/>
 
-|場所|Setting|説明|既定の設定 (構成されていない場合)|
+|場所|設定|説明|既定の設定 (構成されていない場合)|
 |---|---|---|---|
-|スキャン|システム復元ポイントの作成|クリーニングまたはスキャンが試行される前に、システムの復元ポイントが毎日作成されます|無効|
-|スキャン|スキャン履歴フォルダーからのアイテムの削除を有効にする|スキャン履歴に保持する日数を指定する|30 日間|
-|ルート|定期的な修復をオフにする|脅威を自動的に修復Microsoft Defender ウイルス対策するか、エンドポイント ユーザーに何を行うのかを確認するかどうかを指定できます。|無効 (脅威は自動的に修復されます)|
+|スキャン|システム復元ポイントを作成する|システム復元ポイントは、クリーニングまたはスキャンが試行される前に毎日作成されます|無効|
+|スキャン|スキャン履歴フォルダーからのアイテムの削除を有効にする|スキャン履歴にアイテムを保持する日数を指定する|30 日間|
+|ルート|定期的な修復を無効にする|脅威を自動的に修復Microsoft Defender ウイルス対策かどうか、またはエンドポイント ユーザーに何をすべきかを尋ねる必要があるかどうかを指定できます。|無効 (脅威は自動的に修復されます)|
 |検疫する|検疫フォルダーからのアイテムの削除を構成する|アイテムを削除する前に検疫に保持する日数を指定する|90 日間|
-|Threats|検出時に既定のアクションを実行しない脅威アラート レベルを指定する|ユーザーが検出した脅威Microsoft Defender ウイルス対策レベル (低、中、高、または重大) が割り当てられます。 この設定を使用して、脅威レベルごとにすべての脅威を修復する方法 (検疫、削除、または無視) を定義できます。|×|
-|Threats|検出時に既定のアクションを実行しない脅威を指定する|特定の脅威 (脅威 ID を使用) を修復する方法を指定します。 特定の脅威を検疫、削除、または無視するかどうかを指定できます。|×|
+|Threats|検出されたときに既定のアクションを実行しない脅威アラート レベルを指定する|Microsoft Defender ウイルス対策によって検出されるすべての脅威には、脅威レベル (低、中、高、または重大) が割り当てられます。 この設定を使用して、各脅威レベルのすべての脅威を修復する方法 (検疫、削除、または無視) を定義できます。|該当なし|
+|Threats|検出されたときに既定のアクションを実行しない脅威を指定する|(脅威 ID を使用して) 特定の脅威を修復する方法を指定します。 特定の脅威を検疫、削除、または無視するかどうかを指定できます。|該当なし|
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策多くの要因に基づいてファイルを検出し、修復します。 修復を完了するには再起動が必要な場合があります。 検出が後で誤検知と判断された場合でも、すべての追加の修復手順が完了した場合は、再起動を完了する必要があります。
+> Microsoft Defender ウイルス対策は、さまざまな要因に基づいてファイルを検出して修復します。 修復を完了するには再起動が必要な場合があります。 検出が後で誤検知と判断された場合でも、再起動を完了して、追加のすべての修復手順が完了していることを確認する必要があります。
 >
-> 誤検知に基Microsoft Defender ウイルス対策ファイルを検疫する必要がある場合は、デバイスの再起動後に検疫からファイルを復元できます。 「[検疫済みファイルを復元する」を参照Microsoft Defender ウイルス対策。](restore-quarantined-files-microsoft-defender-antivirus.md)
+> 誤検知に基づいてファイルを検疫Microsoft Defender ウイルス対策特定の場合は、デバイスの再起動後に検疫からファイルを復元できます。 [Microsoft Defender ウイルス対策での検疫済みファイルの復元に関するページを参照](restore-quarantined-files-microsoft-defender-antivirus.md)してください。
 >
-> この問題を今後回避するために、スキャンからファイルを除外できます。 詳細については[、「除外の構成と検証」を参照Microsoft Defender ウイルス対策してください](configure-exclusions-microsoft-defender-antivirus.md)。
+> 今後、この問題を回避するために、スキャンからファイルを除外できます。 「[Microsoft Defender ウイルス対策のスキャンの除外を構成および検証する](configure-exclusions-microsoft-defender-antivirus.md)」を参照してください。
 
-さらに、修復に[関連する設定については、「](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed)修復に必要なスケジュールされた完全Microsoft Defender ウイルス対策スキャンを構成する」も参照してください。
+さらに修復関連の設定については、「[修復に必要なスケジュールされた完全Microsoft Defender ウイルス対策 スキャンの構成](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed)」も参照してください。
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft Defender ウイルス対策スキャン オプションを構成する](configure-advanced-scan-types-microsoft-defender-antivirus.md)
-- [スケジュールされたスキャンMicrosoft Defender ウイルス対策構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [スケジュールされたMicrosoft Defender ウイルス対策 スキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [オンデマンドの Microsoft Defender ウイルス対策スキャンを構成して実行する](run-scan-microsoft-defender-antivirus.md)
 - [エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
-- [エンド ユーザー の操作をMicrosoft Defender ウイルス対策する](configure-end-user-interaction-microsoft-defender-antivirus.md)
-- [スキャンと修復の結果をカスタマイズ、開始Microsoft Defender ウイルス対策確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [エンド ユーザーのMicrosoft Defender ウイルス対策操作を構成する](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策スキャンと修復の結果をカスタマイズ、開始、および確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

@@ -1,7 +1,7 @@
 ---
-title: 保護の監視とMicrosoft Defender ウイルス対策する
-description: Configuration Manager またはセキュリティ情報とイベント管理 (SIEM) ツールを使用してレポートを使用し、PowerShell と WMI を使用して Microsoft Defender AV を監視します。
-keywords: siem, 監視, レポート, Microsoft Defender AV
+title: Microsoft Defender ウイルス対策保護の監視とレポート
+description: Configuration Managerまたはセキュリティ情報とイベント管理 (SIEM) ツールを使用してレポートを使用し、PowerShell と WMI を使用して Microsoft Defender AV を監視します。
+keywords: siem、モニター、レポート、Microsoft Defender AV
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,34 +16,48 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8d801daed1ae9884d10d6a4eec7059096333ec6f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b6593784b0df1109eb7729b3df91ef467d30c4bb
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167696"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788416"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のレポート
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender ウイルス対策
 
-Microsoft Defender ウイルス対策は、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022、および Windows Server 2016 に組み込Windows Server 2016。 Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の次世代保護です。 次世代の保護は、電子メール、アプリ、クラウド、Web 全体のウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威からデバイスを保護するのに役立ちます。
+**プラットフォーム**
+- Windows
 
-このMicrosoft Defender ウイルス対策、保護状態とアラートを確認するためのいくつかのオプションがあります。 メール通知を監視[Microsoft エンドポイント マネージャー、またはMicrosoft Defender ウイルス対策](/configmgr/protect/deploy-use/monitor-endpoint-protection)を[作成するために使用できます](/configmgr/protect/deploy-use/endpoint-configure-alerts)。 または、 を使用して保護を[監視Microsoft Intune。](/intune/introduction-intune)
+Microsoft Defender ウイルス対策は、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022、およびWindows Server 2016に組み込まれています。 Microsoft Defender ウイルス対策は、Microsoft Defender for Endpointにおける次世代の保護です。 次世代の保護は、電子メール、アプリ、クラウド、Web 全体のウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威からデバイスを保護するのに役立ちます。
 
-サードパーティのセキュリティ情報とイベント管理 (SIEM) サーバーがある場合は、クライアント イベントWindows Defender[使用することもできます](/windows/win32/events/windows-events)。
+Microsoft Defender ウイルス対策では、保護の状態とアラートを確認するためのいくつかのオプションがあります。 Microsoft エンドポイント マネージャーを使用して[、Microsoft Defender ウイルス対策を監視](/configmgr/protect/deploy-use/monitor-endpoint-protection)したり、[電子メール アラートを作成したりできます](/configmgr/protect/deploy-use/endpoint-configure-alerts)。 または、[Microsoft Intune](/intune/introduction-intune)を使用して保護を監視することもできます。
 
-Windowsイベントは、セキュリティ アカウント マネージャー (SAM) イベント[(Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)用に拡張されたイベント、セキュリティ監査トピックも[](/windows/device-security/auditing/security-auditing-overview)参照) および Windows Defender イベントなど、いくつかのセキュリティ[イベント ソースで構成されます](troubleshoot-microsoft-defender-antivirus.md)。
+サード パーティのセキュリティ情報とイベント管理 (SIEM) サーバーがある場合は、[クライアント イベントWindows Defender](/windows/win32/events/windows-events)使用することもできます。
 
-これらのイベントは、イベント コレクターを使用して一[Windowsできます](/windows/win32/wec/windows-event-collector)。 多くの場合、SIEM サーバーには、WINDOWSイベント用のコネクタが用意され、SIEM サーバー内のすべてのセキュリティ イベントを関連付けできます。
+Windows イベントは、Security Account Manager (SAM) イベント ([Windows 10用に強化され](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)、[セキュリティ監査](/windows/device-security/auditing/security-auditing-overview)のトピックも参照)、[Windows Defender イベント](troubleshoot-microsoft-defender-antivirus.md)など、いくつかのセキュリティ イベント ソースで構成されます。
 
-また、Log [Analytics のマルウェア評価ソリューションを使用してマルウェア イベントを監視することもできます](/azure/log-analytics/log-analytics-malware)。
+これらのイベントは、[Windows イベント コレクター](/windows/win32/wec/windows-event-collector)を使用して一元的に集計できます。 多くの場合、SIEM サーバーにはWindows イベント用のコネクタがあり、SIEM サーバー内のすべてのセキュリティ イベントを関連付けることができます。
 
-PowerShell、WMI、またはサーバーを使用して状態を監視または決定Microsoft Azure、(展開、管理、およびレポートオプションの表)[を参照してください](deploy-manage-report-microsoft-defender-antivirus.md#ref2)。
+[Log Analytics のマルウェア評価ソリューションを使用して、マルウェア イベントを監視](/azure/log-analytics/log-analytics-malware)することもできます。
+
+PowerShell、WMI、またはMicrosoft Azureを使用して状態を監視または決定する方法については、[(デプロイ、管理、およびレポートのオプションの表) を](deploy-manage-report-microsoft-defender-antivirus.md#ref2)参照してください。
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
-- [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策を展開する](deploy-manage-report-microsoft-defender-antivirus.md)

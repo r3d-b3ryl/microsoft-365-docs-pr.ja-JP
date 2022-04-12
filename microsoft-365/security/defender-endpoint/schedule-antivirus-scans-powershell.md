@@ -1,7 +1,7 @@
 ---
 title: PowerShell を使用してウイルス対策スキャンをスケジュールする
 description: PowerShell を使用してウイルス対策スキャンをスケジュールする
-keywords: クイック スキャン、フル スキャン、ウイルス対策、スケジュール、PowerShell
+keywords: クイック スキャン, フル スキャン, ウイルス対策, スケジュール, PowerShell
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,20 +16,24 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e1cbdd156306d7cc2ee41fd85baadb1fa51cf1ac
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8961428acee5d166b0cdad4982aa5f9ed48020af
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163040"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788834"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>PowerShell を使用してウイルス対策スキャンをスケジュールする
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- Microsoft Defender ウイルス対策
 
-この記事では、PowerShell コマンドレットを使用してスケジュールされたスキャンを構成する方法について説明します。 スキャンのスケジュール設定とスキャンの種類の詳細については、「スケジュールされたクイック スキャンまたはフル スキャンの構成[」をMicrosoft Defender ウイルス対策してください](schedule-antivirus-scans.md)。 
+**プラットフォーム**
+- Windows
+
+この記事では、PowerShell コマンドレットを使用してスケジュールされたスキャンを構成する方法について説明します。 スキャンのスケジュール設定とスキャンの種類の詳細については、「[スケジュールされたクイック スキャンまたはフル Microsoft Defender ウイルス対策 スキャンの構成](schedule-antivirus-scans.md)」を参照してください。 
 
 ## <a name="use-powershell-cmdlets-to-schedule-scans"></a>PowerShell コマンドレットを使用してスキャンをスケジュールする
 
@@ -43,9 +47,9 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 
 ```
 
-詳細については[、「PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して Microsoft Defender ウイルス対策 コマンドレットと Defender Microsoft Defender ウイルス対策[ウイルス](/powershell/module/defender/)対策コマンドレットを構成および実行する」を参照してください。
+詳細については、「[PowerShell コマンドレットを使用してMicrosoft Defender ウイルス対策コマンドレットと](use-powershell-cmdlets-microsoft-defender-antivirus.md) [Defender ウイルス対策コマンドレット](/powershell/module/defender/)を構成および実行する」を参照してください。Microsoft Defender ウイルス対策で PowerShell を使用する方法の詳細については、「」を参照してください。
 
-## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>エンドポイントが使用されていないときにスキャンをスケジュールする PowerShell コマンドレット
+## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>エンドポイントが使用されていない場合のスキャンをスケジュールするための PowerShell コマンドレット
 
 次のコマンドレットを使用します。
 
@@ -56,7 +60,7 @@ Set-MpPreference -ScanOnlyIfIdleEnabled
 詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender ウイルス対策 コマンドレット ](/powershell/module/defender/)」を参照してください。
 
 > [!NOTE]
-> エンドポイントが使用されていない時間のスキャンをスケジュールする場合、スキャンは CPU 調整構成を尊重し、可能な限り高速にスキャンを完了するために利用可能なリソースを活用します。
+> エンドポイントが使用されていない時間にスキャンをスケジュールすると、スキャンは CPU 調整構成を受け入れず、使用可能なリソースを最大限に活用して、できるだけ早くスキャンを完了します。
 
 ## <a name="powershell-cmdlets-for-scheduling-scans-to-complete-remediation"></a>修復を完了するためのスキャンをスケジュールするための PowerShell コマンドレット
 
@@ -67,9 +71,9 @@ Set-MpPreference -RemediationScheduleDay
 Set-MpPreference -RemediationScheduleTime
 ```
 
-PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender ウイルス](/powershell/module/defender/)対策コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
+[Microsoft Defender ウイルス対策で PowerShell を使用する](use-powershell-cmdlets-microsoft-defender-antivirus.md)方法の詳細については、「PowerShell コマンドレットを使用してMicrosoft Defender ウイルス対策および [Defender ウイルス対策コマンドレット](/powershell/module/defender/)を構成して実行する」を参照してください。
 
-## <a name="powershell-cmdlets-for-scheduling-daily-scans"></a>毎日のスキャンをスケジュールする PowerShell コマンドレット
+## <a name="powershell-cmdlets-for-scheduling-daily-scans"></a>毎日のスキャンをスケジュールするための PowerShell コマンドレット
 
 次のコマンドレットを使用します。
 
@@ -77,4 +81,14 @@ PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-a
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-PowerShell を Microsoft Defender ウイルス対策 と一緒に使用する方法の詳細については[、「Use PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して、Microsoft Defender ウイルス対策 Defender ウイルス対策コマンドレットを構成および実行する」を[参照してください](/powershell/module/defender/)。
+Microsoft Defender ウイルス対策で PowerShell を使用する方法の詳細については、「[PowerShell コマンドレットを使用して、Microsoft Defender ウイルス対策](use-powershell-cmdlets-microsoft-defender-antivirus.md)および [Defender ウイルス対策コマンドレット](/powershell/module/defender/)を構成して実行する」を参照してください。
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)

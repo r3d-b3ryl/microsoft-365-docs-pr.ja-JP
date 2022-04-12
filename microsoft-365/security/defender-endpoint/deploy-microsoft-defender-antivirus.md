@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender ウイルス対策を展開して有効にする
-description: ユーザー Microsoft Defender ウイルス対策、グループ ポリシー、PowerShell コマンドレット、または WMI をMicrosoft Intune、Microsoft Endpoint Configuration Managerエンドポイントを保護する方法を展開します。
-keywords: 展開、有効化、Microsoft Defender ウイルス対策
+description: Microsoft Intune、Microsoft Endpoint Configuration Manager、グループ ポリシー、PowerShell コマンドレット、または WMI を使用してエンドポイントを保護するためのMicrosoft Defender ウイルス対策をデプロイします。
+keywords: デプロイ、有効化、Microsoft Defender ウイルス対策
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9baa4fe5318bf21d73b3c79e719895fb9c492ea7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: fe84fa4df958ea42304531defc4810edf332b3a3
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164120"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790528"
 ---
 # <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を展開して有効にする
 
@@ -31,17 +31,31 @@ ms.locfileid: "61164120"
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender ウイルス対策
 
-使用している管理ツールによっては、保護を具体的に有効または構成する必要Microsoft Defender ウイルス対策があります。 
+**プラットフォーム**
+- Windows
 
-Microsoft Defender ウイルス対策、Microsoft Intune、Microsoft Endpoint Configuration Manager、グループ ポリシー、Active Directory で保護を有効にする方法については、「Microsoft Defender ウイルス対策 の展開、管理、およびレポート」の表を参照してください。 [](deploy-manage-report-microsoft-defender-antivirus.md#ref2)Microsoft Azure、PowerShell コマンドレット、および Windows管理命令 (WMI) を使用します。
+使用している管理ツールによっては、Microsoft Defender ウイルス対策保護を具体的に有効または構成する必要がある場合があります。 
 
-一部のシナリオでは、仮想デスクトップ インフラストラクチャ (VDI) 環境など、Microsoft Defender ウイルス対策保護を正常に展開または構成する方法に関するガイダンスが必要です。
+[Microsoft Intune、Microsoft Endpoint Configuration Manager、グループ ポリシー、](deploy-manage-report-microsoft-defender-antivirus.md#ref2)Active を使用して保護を有効にする方法については、「Microsoft Defender ウイルス対策のデプロイ、管理、レポート」の表を参照してください。ディレクトリ、Microsoft Azure、PowerShell コマンドレット、およびWindows管理命令 (WMI)。
 
-このセクションの残りの記事では、VDI またはリモート デスクトップ サービス[(RDS)](deployment-vdi-microsoft-defender-antivirus.md)環境で仮想マシン (VM) で Microsoft Defender ウイルス対策 をセットアップするためのエンド to エンドのアドバイスとベスト プラクティスについて説明します。
+一部のシナリオでは、Virtual Desktop Infrastructure (VDI) 環境など、Microsoft Defender ウイルス対策保護を正常にデプロイまたは構成する方法に関するより多くのガイダンスが必要です。
+
+このセクションの残りの記事では、[VDI またはリモート デスクトップ サービス (RDS) 環境で仮想マシン (VM) にMicrosoft Defender ウイルス対策を設定](deployment-vdi-microsoft-defender-antivirus.md)するためのエンド ツー エンドのアドバイスとベスト プラクティスについて説明します。
 
 ## <a name="related-articles"></a>関連記事
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
-- [更新プログラムの展開、管理、およびレポートの作成Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)
+- [更新プログラムのデプロイ、管理、Microsoft Defender ウイルス対策に関するレポート](deploy-manage-report-microsoft-defender-antivirus.md)
 - [仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド](deployment-vdi-microsoft-defender-antivirus.md)
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)

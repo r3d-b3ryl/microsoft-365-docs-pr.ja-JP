@@ -16,18 +16,22 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 96827430b8d2fe1b45b9839ffe87eb5aa5571b93
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: e7b854b2a4c9f4202296ed404d067182de8627bd
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326595"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790265"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>スケジュールされたクイックまたは完全な Microsoft Defender ウイルス スキャンを構成する
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- Microsoft Defender ウイルス対策
+
+**プラットフォーム**
+- Windows
 
 常時オン、リアルタイムの保護、[オンデマンドのウイルス対策](run-scan-microsoft-defender-antivirus.md)スキャンに加えて、定期的にスケジュールされたウイルス対策スキャンを設定できます。 スキャンの種類、スキャンが行われるタイミング、および [保護の更新](manage-protection-updates-microsoft-defender-antivirus.md)後にスキャンを実行するかどうか、またはエンドポイントが使用されていないときにスキャンを実行するかどうかを構成できます。 必要に応じて、修復アクションを完了するように特別なスキャンを設定することもできます。
 
@@ -80,3 +84,13 @@ ms.locfileid: "63326595"
 - フル スキャンでは、クイック スキャンなど、他のスキャンで検出されなかった悪意のあるファイルを検出できます。 ただし、フル スキャンには時間がかかり、重要なシステム リソースを使用して完了できます。
 
 - デバイスが長時間オフラインの場合、フル スキャンが完了するまでに時間がかかる場合があります。
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)

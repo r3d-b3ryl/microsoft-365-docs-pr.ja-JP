@@ -1,7 +1,7 @@
 ---
-title: クラウド保護とサンプル申請 (Microsoft Defender ウイルス対策
-description: クラウドによって提供される保護とセキュリティについてMicrosoft Defender ウイルス対策
-keywords: Microsoft Defender ウイルス対策、次世代テクノロジ、ウイルス対策サンプル申請、次世代 AV、機械学習、マルウェア対策、セキュリティ、防御、クラウド、クラウド配信の保護
+title: Microsoft Defender ウイルス対策でのクラウド保護とサンプルの送信
+description: クラウド配信の保護とMicrosoft Defender ウイルス対策について説明します
+keywords: Microsoft Defender ウイルス対策、次世代テクノロジ、ウイルス対策サンプル送信、次世代 AV、機械学習、マルウェア対策、セキュリティ、Defender、クラウド、クラウド配信保護
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,107 +15,110 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a647617de3706481c2e12f4e1772f5bc609db6fc
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9192ecae72156531b0c5dccc360b2e2ea7bd343a
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470683"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789054"
 ---
-# <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>クラウド保護とサンプル申請 (Microsoft Defender ウイルス対策
+# <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策でのクラウド保護とサンプルの送信
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender ウイルス対策
 
-Microsoft Defender ウイルス対策は、マルウェアを検出するために多くのインテリジェントなメカニズムを使用します。 最も強力な機能の 1 つは、クラウドの機能を適用してマルウェアを検出し、迅速な分析を実行する機能です。 クラウド保護と自動サンプル申請は、新しい脅威Microsoft Defender ウイルス対策を保護するために、クラウドと共に機能します。 
+**プラットフォーム**
+- Windows
 
-疑わしいファイルや悪意のあるファイルが検出されると、分析のためにサンプルがクラウド サービスに送信され、Microsoft Defender ウイルス対策ブロックされます。 迅速に実行される決定が行われたらすぐに、ファイルはリリースまたはブロックされます。Microsoft Defender ウイルス対策。 
+Microsoft Defender ウイルス対策では、マルウェアを検出するための多くのインテリジェントなメカニズムが使用されます。 最も強力な機能の 1 つは、クラウドの能力を適用してマルウェアを検出し、迅速な分析を実行する機能です。 クラウド保護と自動サンプル送信は、Microsoft Defender ウイルス対策と連携して、新しい脅威や新たな脅威から保護するのに役立ちます。 
 
-この記事では、クラウド保護と自動サンプル申請の概要をMicrosoft Defender ウイルス対策。 クラウド保護の詳細については、「クラウド保護[とクラウド保護」を参照Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)。
+疑わしいファイルまたは悪意のあるファイルが検出された場合は、分析のためにサンプルがクラウド サービスに送信され、ファイルMicrosoft Defender ウイルス対策ブロックされます。 決定が行われるとすぐに、ファイルはMicrosoft Defender ウイルス対策によって解放またはブロックされます。 
 
-## <a name="how-cloud-protection-and-sample-submission-work-together"></a>クラウド保護とサンプル申請の機能
+この記事では、クラウド保護の概要と、Microsoft Defender ウイルス対策での自動サンプル送信について説明します。 クラウド保護の詳細については、「[クラウド保護とMicrosoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)」を参照してください。
 
-クラウド保護とサンプル申請の機能を理解するには、Defender for Endpoint が脅威から保護する方法を理解すると役立ちます。 Microsoft インテリジェント セキュリティ Graph、センサーの膨大なネットワークから脅威データを監視します。 Microsoft は、クライアントからの信号とインテリジェント セキュリティ Graph のセンサーとデータの膨大なネットワークに基づいてファイルを評価できるクラウドベースの機械学習モデルをレイヤー化します。 この方法により、Defender for Endpoint は、前に見たことない多くの脅威をブロックできます。 
+## <a name="how-cloud-protection-and-sample-submission-work-together"></a>クラウド保護とサンプル送信の連携方法
 
-次の図は、クラウド保護とサンプル申請のフローを示Microsoft Defender ウイルス対策。
+クラウド保護とサンプル送信の連携方法を理解するには、Defender for Endpoint が脅威から保護する方法を理解しておくと役立ちます。 Microsoft Intelligent Security Graphは、センサーの膨大なネットワークからの脅威データを監視します。 Microsoft では、クライアントからの信号とインテリジェント セキュリティ Graph内のセンサーとデータの膨大なネットワークに基づいてファイルを評価できるクラウドベースの機械学習モデルをレイヤー化しています。 このアプローチにより、Defender for Endpoint は、これまでに見たことがない多くの脅威をブロックできます。 
+
+次の図は、Microsoft Defender ウイルス対策を使用したクラウド保護とサンプル送信のフローを示しています。
 
 :::image type="content" source="images/cloud-protection-flow.png" alt-text="クラウド配信の保護フロー" lightbox="images/cloud-protection-flow.png":::
 
-Microsoft Defender ウイルス対策クラウド保護は、次の方法を使用して、一目で見たことの少ないほとんどの新しい脅威を自動的にブロックします。
+Microsoft Defender ウイルス対策とクラウド保護は、次の方法を使用して、一目で見たことがない新しい脅威を自動的にブロックします。
 
-1. クライアント ベースの機械学習モデルを軽量にし、新しいマルウェアと未知のマルウェアをブロックします。
+1. クライアント ベースの機械学習モデルを軽量にし、新しいマルウェアと不明なマルウェアをブロックします。
 
-2. ローカルの動作分析、ファイル ベースの攻撃とファイルレス攻撃の停止。
+2. ローカルの動作分析。ファイルベースの攻撃とファイルレス攻撃を停止します。
 
-3. 汎用的でヒューリスティックな手法を使用して一般的なマルウェアを検出する、高精度のウイルス対策。
+3. 汎用的およびヒューリスティックな手法を使用して一般的なマルウェアを検出する、高精度のウイルス対策。
 
-4. 高度なクラウドベースの保護は、エンドポイントで実行Microsoft Defender ウイルス対策疑わしいファイルの意図を確認するために、より多くのインテリジェンスが必要な場合に提供されます。
+4. エンドポイントで実行されているMicrosoft Defender ウイルス対策が、疑わしいファイルの意図を検証するためにより多くのインテリジェンスを必要とする場合に、高度なクラウドベースの保護が提供されます。
 
-   1. データが明確Microsoft Defender ウイルス対策できない場合は、ファイル メタデータがクラウド保護サービスに送信されます。 多くの場合、数ミリ秒以内に、クラウド保護サービスは、ファイルが悪意のあるものか脅威ではないかについてのメタデータに基づいて判断できます。  
+   1. Microsoft Defender ウイルス対策明確な決定を行えない場合、ファイル メタデータはクラウド保護サービスに送信されます。 多くの場合、ミリ秒単位で、クラウド保護サービスは、ファイルが悪意のあるものかどうかに関するメタデータに基づいて判断できます。  
 
       - ファイル メタデータのクラウド クエリは、動作、Web のマーク、または明確な判定が決定されないその他の特性の結果である可能性があります。
-      - 小さなメタデータ ペイロードが送信され、マルウェアの評決に達するか、脅威ではないかという目的で送信されます。 メタデータには、個人を特定できる情報 (PII) は含められない。 ファイル名などの情報はハッシュ化されます。
-      - 同期または非同期を指定できます。 同期の場合、クラウドが評決をレンダリングするまでファイルは開かれません。 非同期の場合、クラウド保護が分析を実行している間にファイルが開きます。
-      - メタデータには、PE 属性、静的ファイル属性、動的属性、コンテキスト属性などがあります (「クラウド保護サービスに送信されるメタデータの例 [」を参照](#examples-of-metadata-sent-to-the-cloud-protection-service))。
+      - 小さなメタデータ ペイロードが送信され、脅威ではなくマルウェアの判定に達することを目標としています。 メタデータには、個人を特定できる情報 (PII) は含まれません。 ファイル名などの情報はハッシュされます。
+      - 同期または非同期を指定できます。 同期の場合、クラウドが判定をレンダリングするまで、ファイルは開かなくなります。 非同期の場合、クラウド保護によって分析が実行されている間、ファイルが開きます。
+      - メタデータには、PE 属性、静的ファイル属性、動的属性とコンテキスト属性などを含めることができます ( [クラウド保護サービスに送信されるメタデータの例を](#examples-of-metadata-sent-to-the-cloud-protection-service)参照)。
 
-   2. メタデータを調べた後Microsoft Defender ウイルス対策クラウド保護が決定的な評決に達できない場合は、ファイルのサンプルを要求して詳細な検査を行います。 この要求は、サンプル申請の設定構成を尊重します。
+   2. メタデータを調べた後、クラウド保護Microsoft Defender ウイルス対策決定的な判定に達できない場合は、さらなる検査のためにファイルのサンプルを要求できます。 この要求は、サンプル送信の設定構成に従います。
 
-      1. **安全なサンプルを自動的に送信** する (既定)
-         - セーフサンプルは、PII データが一般的に含まれていると見なされるサンプルです。.bat、.scr、.dll、.exe。
-         - ファイルに PII が含まれている可能性がある場合、ユーザーはファイル サンプルの申請を許可する要求を取得します。
-         - このオプションは、既定の Windows macOS、および Linux です。
+      1. **安全なサンプルを自動的に送信する** (既定)
+         - セーフサンプルは、.bat、.scr、.dll、.exeなどの PII データが一般的に含まれていないと見なされるサンプルです。
+         - ファイルに PII が含まれている可能性が高い場合、ユーザーはファイル サンプルの提出を許可する要求を受け取ります。
+         - このオプションは、Windows、macOS、Linux の既定値です。
 
       2. **常にプロンプトを表示する**
-         - 構成されている場合、ユーザーは常にファイル提出前に同意を求めるメッセージが表示されます
-         - この設定は macOS クラウド保護では使用できません
+         - 構成されている場合、ユーザーは常にファイルの送信前に同意を求められます
+         - この設定は、macOS クラウド保護では使用できません
 
       3. **すべてのサンプルを自動的に送信する**
          - 構成されている場合、すべてのサンプルが自動的に送信されます
-         - Word ドキュメントに埋め込まれたマクロを含めるサンプル申請を行う場合は、[すべてのサンプルを自動的に送信する] を選択する必要があります。
+         - サンプル提出に Word ドキュメントに埋め込まれたマクロを含める場合は、[すべてのサンプルを自動的に送信] を選択する必要があります。
          - この設定は、macOS クラウド保護では使用できません
 
       4. **送信しない**
-         - ファイル サンプル分析に基づいて "一目でブロックする" の防止
-         - "送信しない" は、macOS ポリシーの "Disabled" 設定と同じです。
-         - サンプル提出が無効になっている場合でも、検出用にメタデータが送信されます。
+         - ファイル サンプル分析に基づいて "一目でブロック" を防止する
+         - "送信しない" は、macOS ポリシーの "無効" 設定に相当します
+         - サンプル送信が無効になっている場合でも、検出のためにメタデータが送信されます
 
-   3. メタデータやファイルがクラウド保護に送信された後、サンプル、起用、またはビッグ データ分析の機械学習モデルを使用して、評決に達することができます。 クラウドによる保護をオフにした場合、分析は、ローカルの機械学習モデルや同様の機能を通じてクライアントが提供できる機能にのみ制限されます。
+   3. メタデータやファイルをクラウド保護に送信した後、 **サンプル**、 **爆発**、または **ビッグ データ分析** 機械学習モデルを使用して、判定に達することができます。 クラウド配信の保護を無効にすると、分析は、ローカルの機械学習モデルや同様の機能を通じてクライアントが提供できるもののみに制限されます。
 
 > [!IMPORTANT]
-> [一目でブロック (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) は、ファイルまたはプロセスが安全かどうかを判断する発発と分析を提供します。 BAFS は、評決に達するまで、ファイルの開き方を一瞬遅らせる可能性があります。 サンプル提出を無効にすると、BAFS も無効になり、ファイル分析はメタデータにのみ制限されます。 サンプル申請と BAFS を有効に保つことをお勧めします。 詳細については、「一目でブロック [する」を参照してください。](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
+> [一目でブロック (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) を使用すると、ファイルまたはプロセスが安全かどうかを判断するための爆発と分析が提供されます。 BAFS は、判定に達するまでファイルの開きを一時的に遅らせることができます。 サンプル送信を無効にすると、BAFS も無効になり、ファイル分析はメタデータのみに制限されます。 サンプル提出と BAFS を有効にしておくことをお勧めします。 詳細については、「[一目でブロックする」を](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)参照してください。
 
 ## <a name="cloud-protection-levels"></a>クラウド保護レベル
 
-クラウド保護は、既定では既定で有効Microsoft Defender ウイルス対策。 組織の保護レベルを構成することもできますが、クラウド保護を有効にすることをお勧めします。 「[クラウド配信の保護レベルを指定する」を参照Microsoft Defender ウイルス対策](specify-cloud-protection-level-microsoft-defender-antivirus.md)。
+クラウド保護は、既定でMicrosoft Defender ウイルス対策で有効になっています。 組織の保護レベルは構成できますが、クラウド保護を有効にしておくことをお勧めします。 [「Microsoft Defender ウイルス対策のクラウド配信保護レベルを指定する」を](specify-cloud-protection-level-microsoft-defender-antivirus.md)参照してください。
 
-## <a name="sample-submission-settings"></a>サンプル申請の設定
+## <a name="sample-submission-settings"></a>サンプル送信設定
 
-クラウド保護レベルの構成に加えて、サンプル提出設定を構成できます。 次のいくつかのオプションから選択できます。
+クラウド保護レベルの構成に加えて、サンプル送信設定を構成することもできます。 いくつかのオプションから選択できます。
 
 - **安全なサンプルを自動的に送信**  する (既定の動作)
 - **すべてのサンプルを自動的に送信する**  
 - **サンプルを送信しない**  
 
-Intune、Configuration Manager、GPO、または PowerShell を使用した構成オプションの詳細については、「クラウド保護を有効にする」を参照[Microsoft Defender ウイルス対策。](enable-cloud-protection-microsoft-defender-antivirus.md)
+Intune、Configuration Manager、GPO、または PowerShell を使用した構成オプションの詳細については、「[Microsoft Defender ウイルス対策でクラウド保護を有効にする」](enable-cloud-protection-microsoft-defender-antivirus.md)を参照してください。
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>クラウド保護サービスに送信されるメタデータの例
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="クラウド保護に送信されるメタデータの例 (Microsoft Defender ウイルス対策ポータル)" lightbox="images/cloud-protection-metadata-sample.png":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Microsoft Defender ウイルス対策 ポータルでクラウド保護に送信されるメタデータの例" lightbox="images/cloud-protection-metadata-sample.png":::
 
-次の表に、クラウド保護によって分析のために送信されるメタデータの例を示します。
+次の表に、クラウド保護によって分析のために送信されたメタデータの例を示します。
 
-| 種類 | 属性 |
+| 型 | 属性 |
 |:---|:---|
-| コンピューターの属性 | `OS version` <br/> `Processor` <br/> `Security settings` |
-| 動的属性とコンテキスト属性 | **プロセスとインストール** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**動作** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |
+| マシン属性 | `OS version` <br/> `Processor` <br/> `Security settings` |
+| 動的属性とコンテキスト属性 | **プロセスとインストール** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**行動** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |
 | 静的ファイル属性 | **部分ハッシュと完全ハッシュ** <br/> `ClusterHash` <br/> `Crc16` <br/> `Ctph` <br/> `ExtendedKcrcs` <br/> `ImpHash` <br/> `Kcrc3n` <br/> `Lshash` <br/> `LsHashs` <br/> `PartialCrc1` <br/> `PartialCrc2` <br/> `PartialCrc3` <br/> `Sha1` <br/> `Sha256` <br/><br/>**ファイルのプロパティ** <br/>`FileName` <br/> `FileSize` <br/><br/> **署名者情報** <br/> `AuthentiCodeHash` <br/> `Issuer` <br/> `IssuerHash` <br/> `Publisher` <br/> `Signer` <br/> `SignerHash` |
 
-## <a name="samples-are-treated-as-customer-data"></a>サンプルは顧客データとして扱われる
+## <a name="samples-are-treated-as-customer-data"></a>サンプルは顧客データとして扱われます
 
-サンプル提出で何が起こるか疑問に思う場合に備え、Defender for Endpoint は、すべてのファイル サンプルを顧客データとして扱います。 Microsoft は、Defender for Endpoint へのオンボーディング時に組織が選択した地理的およびデータ保持の両方の選択肢を尊重します。 
+サンプルの提出で何が起こるか気になる場合に備えて、Defender for Endpoint はすべてのファイル サンプルを顧客データとして扱います。 Microsoft は、Defender for Endpoint へのオンボード時に組織が選択した地理的およびデータ保持の選択肢の両方を尊重します。 
 
-さらに、Defender for Endpoint は複数のコンプライアンス認定を受け、高度なコンプライアンス制御セットへの継続的な遵守を実証しています。
+さらに、Defender for Endpoint は複数のコンプライアンス認定を受け、高度なコンプライアンス 管理セットへの継続的な準拠を示しています。
 
 - ISO 27001
 - ISO 27018
@@ -126,19 +129,29 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 
 - [Azure コンプライアンス オファリング](/azure/storage/common/storage-compliance-offerings) 
 - [Service Trust Portal](https://servicetrust.microsoft.com)
-- [Microsoft Defender for Endpoint データストレージとプライバシー](data-storage-privacy.md#data-storage-location)
+- [データストレージとプライバシーをMicrosoft Defender for Endpointする](data-storage-privacy.md#data-storage-location)
 
-## <a name="other-file-sample-submission-scenarios"></a>その他のファイルサンプル提出シナリオ
+## <a name="other-file-sample-submission-scenarios"></a>その他のファイル サンプル提出シナリオ
 
-Defender for Endpoint でクラウド保護に関連しないファイル サンプルを要求するシナリオは、さらに 2 Microsoft Defender ウイルス対策。 これらのシナリオについては、次の表で説明します。
+Defender for Endpoint が、Microsoft Defender ウイルス対策でのクラウド保護に関連しないファイル サンプルを要求するシナリオは、さらに 2 つあります。 これらのシナリオについては、次の表で説明します。
 
 | シナリオ | 説明 |
 |:---|:---|
-|ポータル内の手動ファイル サンプル コレクションMicrosoft 365 Defenderします。 | デバイスを Defender for Endpoint にオンボーディングする場合は、エンドポイントの検出と応答 [(EDR) の設定を構成できます](overview-endpoint-detection-response.md)。 たとえば、デバイスからのサンプル コレクションを有効にする設定があります。これは、この記事で説明するサンプル提出設定と簡単に混同できます。 <br/><br/>このEDR設定は、Microsoft 365 Defender ポータルから要求されたデバイスからのファイル サンプル コレクションを制御し、既に確立されている役割とアクセス許可の対象になります。 この設定では、エンドポイントからのファイルコレクションを許可またはブロックして、ポータルでの詳細な分析などの機能をMicrosoft 365 Defenderできます。 この設定が構成されていない場合、既定ではサンプル コレクションを有効にします。 <br/><br/>Defender for Endpoint 構成設定の詳細については、「Defender for Endpoint でのデバイスのオンボード [ツールとメソッドWindows 10」を参照してください。](configure-endpoints.md) |
-| 自動調査と応答のコンテンツ分析 | 自動 [調査が](automated-investigations.md) デバイスで実行されている場合 (アラートに応答して自動的に実行するか、手動で実行するように構成されている場合)、疑わしいと識別されたファイルをエンドポイントから収集して、詳細な検査を行うことができます。 必要に応じて、自動調査用のファイル コンテンツ分析機能を、Microsoft 365 Defenderできます。 <br/><br/> ファイル拡張子の名前を変更して、自動調査中に自動的に提出される他のファイルの種類の拡張子を追加または削除することもできます。 <br/><br/> 詳細については、「オートメーション ファイルの [アップロードを管理する」を参照してください](manage-automation-file-uploads.md)。 |
+|Microsoft 365 Defender ポータルでの手動ファイル サンプル コレクション | デバイスを Defender for Endpoint にオンボードするときに、[エンドポイントでの検出と対応 (EDR)](overview-endpoint-detection-response.md) の設定を構成できます。 たとえば、デバイスからのサンプル コレクションを有効にする設定があります。これは、この記事で説明するサンプル送信設定と簡単に混同される可能性があります。 <br/><br/>EDR設定は、Microsoft 365 Defender ポータルを介して要求されたときにデバイスからのファイル サンプル コレクションを制御し、既に確立されているロールとアクセス許可の対象となります。 この設定では、Microsoft 365 Defender ポータルでの詳細分析などの機能について、エンドポイントからのファイル収集を許可またはブロックできます。 この設定が構成されていない場合、既定ではサンプル コレクションを有効にします。 <br/><br/>Defender for Endpoint 構成設定の詳細については、「[Defender for Endpoint でのWindows 10 デバイスのオンボード ツールとメソッド」を参照してください](configure-endpoints.md)。 |
+| 自動調査と応答のコンテンツ分析 | [自動調査](automated-investigations.md)がデバイスで実行されている場合 (アラートに応答して自動的に実行するように構成されている場合、または手動で実行するように構成されている場合)、疑わしいと識別されたファイルをエンドポイントから収集して、詳細な検査を行うことができます。 必要に応じて、Microsoft 365 Defender ポータルで、自動調査用のファイル コンテンツ分析機能を無効にすることができます。 <br/><br/> ファイル拡張子の名前は、自動調査中に自動的に送信される他のファイルの種類の拡張子を追加または削除するように変更することもできます。 <br/><br/> 詳細については、「 [オートメーション ファイルのアップロードの管理](manage-automation-file-uploads.md)」を参照してください。 |
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 
 [次世代保護の概要](next-generation-protection.md)
 
-[ユーザー検出の修復Microsoft Defender ウイルス対策構成します。](configure-remediation-microsoft-defender-antivirus.md)
+[Microsoft Defender ウイルス対策検出の修復を構成します。](configure-remediation-microsoft-defender-antivirus.md)

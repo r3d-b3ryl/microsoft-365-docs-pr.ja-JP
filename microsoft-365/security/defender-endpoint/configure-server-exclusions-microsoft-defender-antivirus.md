@@ -1,9 +1,9 @@
 ---
-title: サーバー Microsoft Defender ウイルス対策の除外をWindowsする
+title: Windows サーバーでMicrosoft Defender ウイルス対策除外を構成する
 ms.reviewer: pahuijbr
 manager: dansimp
-description: Windowsサーバーには、サーバーの役割に基づく自動除外が含まれます。 カスタム除外を追加できます。
-keywords: 除外、サーバー、自動除外、自動、カスタム、スキャン、Microsoft Defender ウイルス対策
+description: Windows サーバーには、サーバーロールに基づく自動除外が含まれます。 カスタム除外を追加することもできます。
+keywords: 除外, サーバー, 自動除外, 自動, カスタム, スキャン, Microsoft Defender ウイルス対策
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -16,9 +16,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.date: 02/04/2022
 ms.collection: M365-security-compliance
+ms.openlocfilehash: 487c253adc422d69be5ce011ffef1fc1a014474b
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789780"
 ---
-
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策の除外をWindowsする
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Windows サーバーでMicrosoft Defender ウイルス対策除外を構成する
 
 
 **適用対象:**
@@ -26,25 +31,28 @@ ms.collection: M365-security-compliance
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender ウイルス対策
 
-Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016および Windowsサーバー 2019 では、指定したサーバーの役割で定義されている特定の除外に自動的に登録されます。 これらの除外は、アプリに表示される標準の除外リスト[にはWindows セキュリティされません](microsoft-defender-security-center-antivirus.md)。
+**プラットフォーム**
+- Windows
 
-サーバーの役割定義の自動除外に加えて、カスタム除外を追加または削除できます。 これを行うには、次の記事を参照してください。
+Windows Server 2016およびWindows Server 2019 のMicrosoft Defender ウイルス対策は、指定したサーバー ロールで定義されているように、特定の除外に自動的に登録されます。 これらの除外は、[Windows セキュリティ アプリ](microsoft-defender-security-center-antivirus.md)に表示される標準の除外リストには表示されません。
+
+サーバー ロール定義の自動除外に加えて、カスタム除外を追加または削除できます。 これを行うには、次の記事を参照してください。
 - [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [プロセスによって開いたファイルの除外を構成および検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+- [プロセスによって開かれたファイルの除外を構成して検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## <a name="a-few-points-to-keep-in-mind"></a>いくつかの点に気を付ける必要があります
+## <a name="a-few-points-to-keep-in-mind"></a>留意すべき点がいくつかあります
 
 次の重要な点に注意してください。
 
 - カスタム除外は、自動除外よりも優先されます。
-- 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 自動除外は、フル スキャン、クイック スキャン、またはオンデマンド スキャン中には適用されません。
-- カスタム除外と重複除外は、自動除外と競合しない。
-- Microsoft Defender ウイルス対策展開イメージのサービスと管理 (DISM) ツールを使用して、コンピューターにインストールされている役割を特定します。
-- Windows Server 2012 R2 にはインストールMicrosoft Defender ウイルス対策機能として使用できません。 これらのサーバーを Defender for Endpoint にオンボードすると、Windows Defender ウイルス対策がインストールされ、オペレーティング システム ファイルの既定の除外が適用されます。 ただし、サーバー の役割 (以下で指定) の除外は自動的には適用されません。これらの除外は必要に応じて構成する必要があります。 詳細については、「[Windows サーバーを Microsoft Defender for Endpoint にオンボードする](configure-server-endpoints.md)」を参照してください。
+- 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 自動除外は、完全スキャン、クイック スキャン、またはオンデマンド スキャンでは適用されません。
+- カスタム除外と重複除外は、自動除外と競合しません。
+- Microsoft Defender ウイルス対策は、展開イメージサービスと管理 (DISM) ツールを使用して、コンピューターにインストールされているロールを決定します。
+- Windows Server 2012 R2 には、インストール可能な機能としてMicrosoft Defender ウイルス対策がありません。 これらのサーバーを Defender for Endpoint にオンボードすると、Windows Defender ウイルス対策がインストールされ、オペレーティング システム ファイルの既定の除外が適用されます。 ただし、サーバー ロールの除外 (以下で指定) は自動的には適用されないため、必要に応じてこれらの除外を構成する必要があります。 詳細については、「[Windows サーバーを Microsoft Defender for Endpoint にオンボードする](configure-server-endpoints.md)」を参照してください。
 
-この記事では、このページ以降のMicrosoft Defender ウイルス対策のWindows Server 2016説明します。
+この記事では、Windows Server 2016 以降のMicrosoft Defender ウイルス対策の除外の概要について説明します。
 
-このMicrosoft Defender ウイルス対策は、Windows Server 2016以降に組み込むため、オペレーティング システム ファイルとサーバーの役割の除外が自動的に行われます。 ただし、カスタム除外を定義できます。 必要に応じて、自動除外をオプトアウトできます。
+Microsoft Defender ウイルス対策はWindows Server 2016以降に組み込まれているため、オペレーティング システム ファイルとサーバー ロールの除外は自動的に行われます。 ただし、カスタム除外を定義できます。 必要に応じて、自動除外をオプトアウトすることもできます。
 
 この記事に含まれるセクションは次のとおりです。
 
@@ -52,42 +60,42 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 
 |Section|説明|
 |---|---|
-|[ユーザーの自動除外Windows Server 2016以降](#automatic-exclusions-on-windows-server-2016-or-later)|2 つの主な種類の自動除外について説明し、自動除外の詳細な一覧を含む|
+|[Windows Server 2016以降の自動除外](#automatic-exclusions-on-windows-server-2016-or-later)|2 つの主な種類の自動除外について説明し、自動除外の詳細な一覧を含めます|
 |[自動除外のオプトアウト](#opting-out-of-automatic-exclusions)|自動除外をオプトアウトする方法を説明する重要な考慮事項と手順が含まれています|
-|[カスタム除外の定義](#defining-custom-exclusions)|カスタム除外の定義に関する情報へのリンクを提供します。|
+|[カスタム除外の定義](#defining-custom-exclusions)|カスタム除外を定義するためのハウツー情報へのリンクを提供します|
 
-## <a name="automatic-exclusions-on-windows-server-2016-or-later"></a>ユーザーの自動除外Windows Server 2016以降
+## <a name="automatic-exclusions-on-windows-server-2016-or-later"></a>Windows Server 2016以降の自動除外
 
-このWindows Server 2016以降は、次の除外を定義する必要があります。
+Windows Server 2016以降では、次の除外を定義する必要はありません。
 
 - オペレーティング システム ファイル
-- サーバーの役割と、サーバーの役割を介して追加されるファイル
+- サーバー ロールと、サーバー ロールを介して追加されるすべてのファイル
 
-このMicrosoft Defender ウイルス対策に組み込むため、そのファイルのオペレーティング システム ファイルに対する除外はWindows Server 2016必要ではありません。 さらに、Windows Server 2016 以降を実行して役割をインストールすると、Microsoft Defender ウイルス対策 には、サーバーの役割と、その役割のインストール中に追加されるファイルの自動除外が含まれます。
+Microsoft Defender ウイルス対策が組み込まれているため、Windows Server 2016 以降のオペレーティング システム ファイルの除外は必要ありません。 さらに、Windows Server 2016 以降を実行してロールをインストールすると、サーバー ロールの自動除外と、ロールのインストール中に追加されるすべてのファイルがMicrosoft Defender ウイルス対策に含まれます。
 
-オペレーティング システムの除外とサーバーの役割の除外は、アプリに表示される標準の除外[リストにはWindows セキュリティされません](microsoft-defender-security-center-antivirus.md)。
+オペレーティング システムの除外とサーバー ロールの除外は、[Windows セキュリティ アプリ](microsoft-defender-security-center-antivirus.md)に表示される標準の除外リストには表示されません。
 
 > [!NOTE]
-> サーバーの役割とオペレーティング システム ファイルの自動除外は、サーバー ロールおよびオペレーティング システム ファイルWindows Server 2012。 自動除外は、R2 を実行しているサーバー Windows Server 2012 Defender for Endpoint にオンボードされている場合に適用できます。 (「[オンボード Windows Microsoft Defender for Endpoint サービス」を参照](configure-server-endpoints.md)してください。
+> サーバー ロールとオペレーティング システム ファイルの自動除外は、Windows Server 2012には適用されません。 自動除外は、Windows Server 2012 R2 を実行しているサーバーが Defender for Endpoint にオンボードされている場合に適用できます。 ([「Windows サーバーをMicrosoft Defender for Endpoint サービスにオンボードする](configure-server-endpoints.md)」を参照してください)。
 
 
 ### <a name="the-list-of-automatic-exclusions"></a>自動除外の一覧
 
 次のセクションでは、自動除外ファイル パスとファイルの種類で配信される除外について説明します。
 
-#### <a name="default-exclusions-for-all-roles"></a>すべての役割の既定の除外
+#### <a name="default-exclusions-for-all-roles"></a>すべてのロールの既定の除外
 
-このセクションでは、サーバー 2019、Windows Server 2016 サーバー 2019、Windowsサーバー 2022 のすべての役割の既定Windows一覧を示します。
+このセクションでは、Windows Server 2016、Windows Server 2019、Windows Server 2022 のすべてのロールの既定の除外を一覧表示します。
 
 > [!NOTE]
-> 既定の場所は、この記事に記載されている場所とは異なる場合があります。
+> 既定の場所は、この記事に記載されているものとは異なる場合があります。
 
-##### <a name="windows-tempedb-files"></a>Windows "temp.edb" ファイル
+##### <a name="windows-tempedb-files"></a>"temp.edb" ファイルをWindowsする
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\windows.edb`
 
-##### <a name="windows-update-files-or-automatic-update-files"></a>Windowsファイルの更新または自動更新ファイル
+##### <a name="windows-update-files-or-automatic-update-files"></a>Windows Update ファイルまたは自動更新ファイル
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`
@@ -95,7 +103,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 - `%windir%\SoftwareDistribution\Datastore\*\Edb\*.jrs`
 - `%windir%\SoftwareDistribution\Datastore\*\Res\*.log`
 
-##### <a name="windows-security-files"></a>Windows セキュリティファイル
+##### <a name="windows-security-files"></a>Windows セキュリティ ファイル
 
 - `%windir%\Security\database\*.chk`
 - `%windir%\Security\database\*.edb`
@@ -125,7 +133,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
   - `%windir%\Ntfrs\jet\*\Ntfrs.jdb`
   - `%windir%\Ntfrs\jet\log\*\*.log`
 
-- FRS データベース ログ ファイル。 FRS データベース ログ ファイル フォルダーがレジストリ キーで指定されている `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ntfrs\Parameters\DB Log File Directory`
+- FRS データベースログ ファイル。 FRS データベース ログ ファイル フォルダーがレジストリ キーで指定されている `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ntfrs\Parameters\DB Log File Directory`
 
   - `%windir%\Ntfrs\*\Edb\*.log`
 
@@ -133,14 +141,14 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 
   - `%systemroot%\Sysvol\*\Ntfrs_cmp*\`
 
-- FRS プレインストール フォルダー。 このフォルダーは、フォルダーによって指定されます。 `Replica_root\DO_NOT_REMOVE_NtFrs_PreInstall_Directory`
+- FRS プレインストール フォルダー。 このフォルダーは、フォルダーによって指定されます `Replica_root\DO_NOT_REMOVE_NtFrs_PreInstall_Directory`
 
   - `%systemroot%\SYSVOL\domain\DO_NOT_REMOVE_NtFrs_PreInstall_Directory\*\Ntfrs*\`
 
-- 分散ファイル システム レプリケーション (DFSR) データベースと作業フォルダー。 これらのフォルダーは、レジストリ キーによって指定されます。 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
+- 分散ファイル システム レプリケーション (DFSR) データベースと作業フォルダー。 これらのフォルダーは、レジストリ キーによって指定されます `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
 
   > [!NOTE]
-  > カスタムの場所については、「 [自動除外をオプトアウトする」を参照してください](#opting-out-of-automatic-exclusions)。
+  > カスタムの場所については、「 [自動除外のオプトアウト](#opting-out-of-automatic-exclusions)」を参照してください。
 
   - `%systemdrive%\System Volume Information\DFSR\$db_normal$`
   - `%systemdrive%\System Volume Information\DFSR\FileIDTable_*`
@@ -162,7 +170,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 
 ##### <a name="hyper-v-exclusions"></a>Hyper-V の除外
 
-次の表に、Hyper-V の役割をインストールするときに自動的に配信されるファイルの種類の除外、フォルダーの除外、およびプロセスの除外の一覧を示します。
+次の表に、Hyper-V ロールをインストールするときに自動的に配信されるファイルの種類の除外、フォルダーの除外、およびプロセスの除外の一覧を示します。
 
 <br><br/>
 
@@ -187,16 +195,16 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 
 #### <a name="active-directory-exclusions"></a>Active Directory の除外
 
-ここでは、Active Directory ドメイン サービス (DS) のインストール時に自動的に配信される除外ADします。
+このセクションでは、Active Directory Domain Services (AD DS) をインストールするときに自動的に配信される除外の一覧を示します。
 
 ##### <a name="ntds-database-files"></a>NTDS データベース ファイル
 
-データベース ファイルはレジストリ キーで指定されます。 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Database File`
+データベース ファイルがレジストリ キーで指定されている `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Database File`
 
 - `%windir%\Ntds\ntds.dit`
 - `%windir%\Ntds\ntds.pat`
 
-##### <a name="the-ad-ds-transaction-log-files"></a>DS ADログ ファイル
+##### <a name="the-ad-ds-transaction-log-files"></a>AD DS トランザクション ログ ファイル
 
 トランザクション ログ ファイルはレジストリ キーで指定されます。 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path`
 
@@ -208,19 +216,19 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 
 ##### <a name="the-ntds-working-folder"></a>NTDS 作業フォルダー
 
-このフォルダーはレジストリ キーで指定されます。 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory`
+このフォルダーはレジストリ キーで指定されます `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory`
 
 - `%windir%\Ntds\Temp.edb`
 - `%windir%\Ntds\Edb.chk`
 
-##### <a name="process-exclusions-for-ad-ds-and-ad-ds-related-support-files"></a>DS および DS 関連のADファイルAD除外を処理する
+##### <a name="process-exclusions-for-ad-ds-and-ad-ds-related-support-files"></a>AD DS および AD DS 関連のサポート ファイルのプロセス除外
 
 - `%systemroot%\System32\ntfrs.exe`
 - `%systemroot%\System32\lsass.exe`
 
 #### <a name="dhcp-server-exclusions"></a>DHCP サーバーの除外
 
-このセクションでは、DHCP Server の役割をインストールするときに自動的に配信される除外の一覧を示します。 DHCP Server ファイルの場所は、レジストリ キーの *DatabasePath*、 *DhcpLogFilePath*、 *および BackupDatabasePath* パラメーターによって指定されます。 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
+このセクションでは、DHCP サーバーの役割をインストールするときに自動的に配信される除外の一覧を示します。 DHCP サーバー ファイルの場所は、レジストリ キーの *DatabasePath*、 *DhcpLogFilePath*、 *BackupDatabasePath* パラメーターによって指定されます。 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
 
 - `%systemroot%\System32\DHCP\*\*.mdb`
 - `%systemroot%\System32\DHCP\*\*.pat`
@@ -230,30 +238,30 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 
 #### <a name="dns-server-exclusions"></a>DNS サーバーの除外
 
-このセクションでは、DNS Server の役割をインストールするときに自動的に配信されるファイルとフォルダーの除外とプロセスの除外の一覧を示します。
+このセクションでは、DNS サーバーの役割をインストールするときに自動的に配信されるファイルとフォルダーの除外とプロセスの除外の一覧を示します。
 
-##### <a name="file-and-folder-exclusions-for-the-dns-server-role"></a>DNS Server の役割のファイルとフォルダーの除外
+##### <a name="file-and-folder-exclusions-for-the-dns-server-role"></a>DNS サーバー ロールのファイルとフォルダーの除外
 
 - `%systemroot%\System32\Dns\*\*.log`
 - `%systemroot%\System32\Dns\*\*.dns`
 - `%systemroot%\System32\Dns\*\*.scc`
 - `%systemroot%\System32\Dns\*\BOOT`
 
-##### <a name="process-exclusions-for-the-dns-server-role"></a>DNS Server の役割の除外を処理する
+##### <a name="process-exclusions-for-the-dns-server-role"></a>DNS サーバー ロールのプロセス除外
 
 - `%systemroot%\System32\dns.exe`
 
 #### <a name="file-and-storage-services-exclusions"></a>ファイルとStorageサービスの除外
 
-このセクションでは、File および Storage サービスの役割をインストールするときに自動的に配信されるファイルとフォルダーの除外の一覧を示します。 以下に示す除外には、クラスター化の役割の除外は含めされません。
+このセクションでは、File ロールと Storage Services ロールをインストールするときに自動的に配信されるファイルとフォルダーの除外の一覧を示します。 以下に示す除外には、クラスタリング ロールの除外は含まれません。
 
 - `%SystemDrive%\ClusterStorage`
 - `%clusterserviceaccount%\Local Settings\Temp`
 - `%SystemDrive%\mscs`
 
-#### <a name="print-server-exclusions"></a>サーバーの除外を印刷する
+#### <a name="print-server-exclusions"></a>印刷サーバーの除外
 
-このセクションでは、Print Server の役割をインストールするときに自動的に配信されるファイルの種類の除外、フォルダーの除外、およびプロセスの除外を一覧表示します。
+このセクションでは、印刷サーバー ロールをインストールするときに自動的に配信されるファイルの種類の除外、フォルダーの除外、およびプロセスの除外の一覧を示します。
 
 ##### <a name="file-type-exclusions"></a>ファイルの種類の除外
 
@@ -262,7 +270,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 
 ##### <a name="folder-exclusions"></a>フォルダーの除外
 
-このフォルダーはレジストリ キーで指定されます。 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\DefaultSpoolDirectory`
+このフォルダーはレジストリ キーで指定されます `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\DefaultSpoolDirectory`
 
 - `%system32%\spool\printers\*`
 
@@ -272,7 +280,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 
 #### <a name="web-server-exclusions"></a>Web サーバーの除外
 
-このセクションでは、Web Server の役割をインストールするときに自動的に配信されるフォルダーの除外とプロセスの除外の一覧を示します。
+このセクションでは、Web サーバー ロールをインストールするときに自動的に配信されるフォルダーの除外とプロセスの除外の一覧を示します。
 
 ##### <a name="folder-exclusions"></a>フォルダーの除外
 
@@ -288,14 +296,14 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 - `%SystemRoot%\SysWOW64\inetsrv\w3wp.exe`
 - `%SystemDrive%\PHP5433\php-cgi.exe`
 
-##### <a name="turning-off-scanning-of-files-in-the-sysvolsysvol-folder-or-the-sysvol_dfsrsysvol-folder"></a>Sysvol\Sysvol フォルダーまたは sysvol フォルダー内のファイルのスキャンをオフSYSVOL_DFSR\Sysvol フォルダー
+##### <a name="turning-off-scanning-of-files-in-the-sysvolsysvol-folder-or-the-sysvol_dfsrsysvol-folder"></a>Sysvol\Sysvol フォルダーまたは SYSVOL_DFSR\Sysvol フォルダー内のファイルのスキャンをオフにする
 
-or フォルダーとすべての`Sysvol\Sysvol``SYSVOL_DFSR\Sysvol`サブフォルダーの現在の場所は、レプリカ セット ルートのファイル システムの再解析ターゲットです。 フォルダー `Sysvol\Sysvol` は `SYSVOL_DFSR\Sysvol` 、既定で次の場所を使用します。
+フォルダーと`SYSVOL_DFSR\Sysvol`すべてのサブフォルダーの現在の`Sysvol\Sysvol`場所は、レプリカ セット ルートのファイル システムの再解析ターゲットです。 フォルダーでは `Sysvol\Sysvol` 、 `SYSVOL_DFSR\Sysvol` 既定で次の場所が使用されます。
 
 - `%systemroot%\Sysvol\Domain`
 - `%systemroot%\Sysvol_DFSR\Domain`
 
-現在アクティブなパス `SYSVOL` は NETLOGON 共有によって参照され、次のサブキーの SysVol 値名によって決定できます。 `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
+現在アクティブな `SYSVOL` パスは NETLOGON 共有によって参照され、次のサブキーの SysVol 値名によって決定できます。 `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
 
 このフォルダーとそのすべてのサブフォルダーから次のファイルを除外します。
 
@@ -312,7 +320,7 @@ or フォルダーとすべての`Sysvol\Sysvol``SYSVOL_DFSR\Sysvol`サブフォ
 
 #### <a name="windows-server-update-services-exclusions"></a>Windows Server Update Services除外
 
-このセクションでは、ユーザー (WSUS) の役割をインストールするときに自動的に配信されるフォルダー Windows Server Update Services一覧を示します。 WSUS フォルダーがレジストリ キーで指定されている `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
+このセクションでは、Windows Server Update Services (WSUS) ロールをインストールするときに自動的に配信されるフォルダーの除外の一覧を示します。 WSUS フォルダーがレジストリ キーで指定されている `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
 
 - `%systemroot%\WSUS\WSUSContent`
 - `%systemroot%\WSUS\UpdateServicesDBFiles`
@@ -321,26 +329,26 @@ or フォルダーとすべての`Sysvol\Sysvol``SYSVOL_DFSR\Sysvol`サブフォ
 
 ## <a name="opting-out-of-automatic-exclusions"></a>自動除外のオプトアウト
 
-セキュリティ Windows Server 2016以降では、セキュリティ インテリジェンス更新プログラムによって提供される定義済みの除外は、役割または機能の既定のパスのみを除外します。 カスタム パスに役割または機能をインストールした場合、または一連の除外を手動で制御する場合は、セキュリティ インテリジェンス更新プログラムで配信される自動除外をオプトアウトしてください。 ただし、自動的に配信される除外は、特定のユーザーおよび以降のユーザー Windows Server 2016念頭に置いておきます。 除外 [リストを定義する前に、「除外を](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) 定義するための推奨事項」を参照してください。
+Windows Server 2016 以降では、セキュリティ インテリジェンス更新プログラムによって提供される定義済みの除外は、ロールまたは機能の既定のパスのみを除外します。 カスタム パスにロールまたは機能をインストールした場合、または一連の除外を手動で制御する場合は、セキュリティ インテリジェンス更新プログラムで配信される自動除外をオプトアウトしてください。 ただし、自動的に配信される除外は、Windows Server 2016 以降向けに最適化されていることに注意してください。 [除外リストを定義する前に、除外を定義する](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)おすすめを参照してください。
 
 > [!WARNING]
-> 自動除外をオプトアウトすると、パフォーマンスに悪影響を及ぼすか、データが破損する可能性があります。 自動的に配信される除外は、Windows Server 2016、Windows Server 2019、およびサーバー 2022 の役割Windows最適化されます。
+> 自動除外をオプトアウトすると、パフォーマンスに悪影響を与えたり、データが破損したりする可能性があります。 自動的に配信される除外は、Windows Server 2016、Windows Server 2019、Windows Server 2022 ロール用に最適化されます。
 
-定義済みの除外は既定のパスのみを除外します。NTDS フォルダーと SYSVOL フォルダーを元のパスとは異なる別のドライブまたはパスに移動する場合は、手動で除外を追加する必要があります。 「 [フォルダー名またはファイル拡張子に基づいて除外の一覧を構成する」を参照してください](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)。
+定義済みの除外では **既定のパス** のみが除外されるため、NTDS フォルダーと SYSVOL フォルダーを元のパス *とは異なる別の* ドライブまたはパスに移動する場合は、除外を手動で追加する必要があります。 [フォルダー名またはファイル拡張子に基づいて除外の一覧を構成](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)する方法に関するページを参照してください。
 
-グループ ポリシー、PowerShell コマンドレット、および WMI を使用して、自動除外リストを無効にできます。
+グループ ポリシー、PowerShell コマンドレット、WMI を使用して、自動除外リストを無効にすることができます。
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022"></a>グループ ポリシーを使用して、Windows Server 2016、Windows Server 2019、および Windows Server 2022 で自動除外リストを無効にする
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022"></a>グループ ポリシーを使用して、Windows Server 2016、Windows Server 2019、Windows Server 2022 で自動除外リストを無効にする
 
 1. グループ ポリシー管理コンピューターで、[グループ ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))を開きます。 構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。
 
-2. グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動** し、[管理用テンプレート **] を選択します**。
+2. **グループ ポリシー管理エディター** で **[コンピューターの構成**] に移動し、[**管理用テンプレート**] を選択します。
 
-3. ツリーを展開して、[**除外WindowsコンポーネントMicrosoft Defender ウイルス対策** \>  \> **します**。
+3. ツリーを展開して **、除外Microsoft Defender ウイルス対策コンポーネント** \> **をWindows** \> **します**。
 
-4. [自動除外を **オフにする] をダブルクリック** し、オプションを [有効] に **設定します**。 次に [**OK**] を選びます。
+4. [ **自動除外を無効にする**] をダブルクリックし、オプションを **[有効]** に設定します。 次に [**OK**] を選びます。
 
-### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server"></a>PowerShell コマンドレットを使用して、サーバー上の自動除外リストWindowsする
+### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server"></a>PowerShell コマンドレットを使用して、Windows Server の自動除外リストを無効にする
 
 次のコマンドレットを使用します。
 
@@ -350,18 +358,18 @@ Set-MpPreference -DisableAutoExclusions $true
 
 詳細については、次のリソースを参照してください。
 
-- [PowerShell コマンドレットを使用して、サーバーの構成とMicrosoft Defender ウイルス対策](use-powershell-cmdlets-microsoft-defender-antivirus.md)。
-- [PowerShell と一緒にMicrosoft Defender ウイルス対策](/powershell/module/defender/)。
+- [PowerShell コマンドレットを使用して、Microsoft Defender ウイルス対策を構成して実行します](use-powershell-cmdlets-microsoft-defender-antivirus.md)。
+- [Microsoft Defender ウイルス対策で PowerShell を使用します](/powershell/module/defender/)。
 
-### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server"></a>[Windows管理命令 (WMI) を使用して、サーバー上の自動除外リストWindowsします。
+### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server"></a>Windows管理命令 (WMI) を使用して、Windows サーバーで自動除外リストを無効にする
 
-次の **プロパティ** に対して、 [MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) クラスの Set メソッドを使用します。
+次のプロパティには、[MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) クラスの **Set** メソッドを使用します。
 
 ```WMI
 DisableAutoExclusions
 ```
 
-詳細と許可されるパラメーターについては、以下を参照してください。
+詳細と許可されるパラメーターについては、次を参照してください。
 
 - [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
@@ -370,13 +378,23 @@ DisableAutoExclusions
 必要に応じて、カスタム除外を追加または削除できます。 これを行うには、次の記事を参照してください。
 
 - [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [プロセスによって開いたファイルの除外を構成および検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+- [プロセスによって開かれたファイルの除外を構成して検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 
-- [スキャンの除外を構成およびMicrosoft Defender ウイルス対策する](configure-exclusions-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策 スキャンの除外を構成して検証する](configure-exclusions-microsoft-defender-antivirus.md)
 - [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [プロセスによって開いたファイルの除外を構成および検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+- [プロセスによって開かれたファイルの除外を構成して検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [除外を定義する際に避ける必要のある一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [スキャンと修復の結果をカスタマイズ、開始Microsoft Defender ウイルス対策確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策スキャンと修復の結果をカスタマイズ、開始、および確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

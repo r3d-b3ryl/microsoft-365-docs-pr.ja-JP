@@ -1,7 +1,7 @@
 ---
-title: クラウド ブロックのMicrosoft Defender ウイルス対策期間を構成する
-description: クラウドの決定を待機Microsoft Defender ウイルス対策ファイルの実行をブロックする期間を構成できます。
-keywords: Microsoft Defender ウイルス対策、マルウェア対策、セキュリティ、ディフェンダー、クラウド、タイムアウト、ブロック、期間、秒
+title: Microsoft Defender ウイルス対策クラウド ブロックのタイムアウト期間を構成する
+description: クラウドの決定を待機している間、Microsoft Defender ウイルス対策がファイルの実行をブロックする時間を構成できます。
+keywords: Microsoft Defender ウイルス対策, マルウェア対策, セキュリティ, Defender, cloud, timeout, block, period, seconds
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,59 +16,71 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1acd1a95ddc3aa679f0e5f1295e14cf33b4f97a0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 9669bb17b8e970427fb9c35c5f24d35e247b720b
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168296"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790572"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>クラウド ブロックのタイムアウト期間の構成
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender ウイルス対策
 
-不審Microsoft Defender ウイルス対策検出すると、クラウド サービスのクエリ中にファイルが実行Microsoft Defender ウイルス対策[可能性があります](cloud-protection-microsoft-defender-antivirus.md)。
+**プラットフォーム**
+- Windows
 
-ファイルがブロックされる [既定の期間](configure-block-at-first-sight-microsoft-defender-antivirus.md) は 10 秒です。 セキュリティ管理者の場合は、ファイルの実行が許可される前に待機する時間を長く指定できます。 クラウド ブロックのタイムアウト期間を延長すると、クラウド サービスから適切な判断を受け取るのに十分な時間Microsoft Defender ウイルス対策できます。
+Microsoft Defender ウイルス対策が疑わしいファイルを見つけると、[Microsoft Defender ウイルス対策 クラウド サービス](cloud-protection-microsoft-defender-antivirus.md)に対するクエリ中にファイルが実行されるのを防ぐことができます。
+
+ファイルが [ブロック](configure-block-at-first-sight-microsoft-defender-antivirus.md) される既定の期間は 10 秒です。 セキュリティ管理者の場合は、ファイルの実行が許可されるまでの待機時間を長く指定できます。 クラウド ブロックのタイムアウト期間を延長すると、Microsoft Defender ウイルス対策 クラウド サービスから適切な決定を受け取るのに十分な時間があることを確認するのに役立ちます。
 
 ## <a name="prerequisites-to-use-the-extended-cloud-block-timeout"></a>拡張クラウド ブロック タイムアウトを使用するための前提条件
 
-[一目でブロック](configure-block-at-first-sight-microsoft-defender-antivirus.md) し、その前提条件を有効にしてから、延長タイムアウト期間を指定する必要があります。
+延長タイムアウト期間を指定する前に、[一目でブロック](configure-block-at-first-sight-microsoft-defender-antivirus.md)とその前提条件を有効にする必要があります。
 
-## <a name="specify-the-extended-timeout-period-using-microsoft-endpoint-manager"></a>データを使用して延長タイムアウト期間をMicrosoft エンドポイント マネージャー
+## <a name="specify-the-extended-timeout-period-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用して延長タイムアウト期間を指定する
 
-クラウド ブロックのタイムアウト期間は、エンドポイント セキュリティ ポリシーを使用して指定[Microsoft エンドポイント マネージャー。](/mem/intune/protect/endpoint-security-policy)
+[Microsoft エンドポイント マネージャーのエンドポイント セキュリティ ポリシー](/mem/intune/protect/endpoint-security-policy)を使用して、クラウド ブロックのタイムアウト期間を指定できます。
 
-1. 管理センター ( ) エンドポイント マネージャーに移動し [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/) 、サインインします。
+1. エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) に移動し、サインインします。
 
-2. [エンドポイント **セキュリティ] を** 選択し、[管理] で **[ウイルス** 対策] を **選択します**。
+2. **[エンドポイント セキュリティ**] を選択し、[**管理**] で [**ウイルス対策**] を選択します。
 
 3. ウイルス対策ポリシーを選択 (または作成) します。
 
-4. [構成設定 **] セクションで** 、[クラウド保護] **を展開します**。 次に、[Microsoft Defender ウイルス対策延長タイムアウト (秒) ボックスで、1 秒から 50 秒の時間を秒単位で指定します。 指定した値は、既定の 10 秒に追加されます。
+4. [ **構成設定]** セクションで、[ **クラウド保護**] を展開します。 次に、**Microsoft Defender ウイルス対策 [延長タイムアウト (秒**)] ボックスで、1 秒から 50 秒までの時間を秒単位で指定します。 指定したものは、既定の 10 秒に追加されます。
 
-5. (この手順は省略可能です)ウイルス対策ポリシーに他の変更を加えます。 (ヘルプが必要ですか? [「設定ポリシー Microsoft Defender ウイルス対策」を参照Microsoft Intune.)](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
+5. (この手順は省略可能です)ウイルス対策ポリシーに他の変更を加えます。 (ヘルプが必要ですか? [Microsoft IntuneのMicrosoft Defender ウイルス対策 ポリシーの設定](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)を参照してください)。
 
-6. [ **次へ]** を選択し、ポリシーの構成を完了します。
+6. **[次へ**] を選択し、ポリシーの構成を完了します。
 
 ## <a name="specify-the-extended-timeout-period-using-group-policy"></a>グループ ポリシーを使用して延長タイムアウト期間を指定する
 
 グループ ポリシーを使用して、クラウド チェックの延長タイムアウトを指定できます。
 
-1. グループ ポリシー管理コンピューターで、グループ ポリシー管理 [コンソールを開きます。](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
+1. グループ ポリシー管理コンピューターで、[グループ ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))を開きます
 
-2. 構成するグループ ポリシー オブジェクトを右クリックし、[編集] を **選択します**。
+2. 構成するグループ ポリシー オブジェクトを右クリックし、[**編集]** を選択します。
 
-3. グループ ポリシー **管理エディターで、[** コンピューターの構成] **に** 移動し、[管理用テンプレート] **を選択します**。
+3. **グループ ポリシー管理エディター** で、[**コンピューターの構成**] に移動し、[**管理用テンプレート**] を選択します。
 
-3. MpEngine のコンポーネント **Windowsツリー** \> **Microsoft Defender ウイルス対策** \> **展開します**。
+3. ツリーを展開して **、MpEngine** **Microsoft Defender ウイルス対策コンポーネント** \> **をWindows**\>します。
 
-4. [拡張クラウド チェック **の構成] をダブルクリックし** 、オプションが有効になっているか確認します。 
+4. [ **拡張クラウドの構成] チェック** をダブルクリックし、オプションが有効になっていることを確認します。 
 
-   クラウドの決定を待っている間にファイルが実行されるのを防ぐための余分な時間を指定します。 1 秒から 50 秒の余分な時間を秒で指定します。 指定した値は、既定の 10 秒に追加されます。
+   クラウドの決定を待機している間にファイルが実行されないようにする余分な時間を指定します。 1 秒から 50 秒までの余分な時間を秒単位で指定します。 指定したものは、既定の 10 秒に追加されます。
 
-5. **[OK]** を選択します。
+5. [**OK**] を選択します。
 
- 
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md) 

@@ -15,22 +15,25 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/07/2022
+ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 346f806129afc30ec5543c99bce3709af60cee73
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64730642"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788482"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する
 
 **適用対象:**
 - [Microsoft Defender for Endpoint プラン 1 と 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender ウイルス対策
+
+**プラットフォーム**
+- Windows
 
 Microsoft Defender ウイルス対策を最新の状態に保つことは、新しいマルウェアや攻撃手法から保護するために必要な最新のテクノロジと機能をデバイスに確実に提供するために不可欠です。 Microsoft Defender ウイルス対策が[パッシブ モード](microsoft-defender-antivirus-compatibility.md)で実行されている場合でも、ウイルス対策保護を更新してください。 Microsoft Defender ウイルス対策を最新の状態に保つことに関連する更新プログラムには、次の 2 種類があります。
 
@@ -88,7 +91,7 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 <summary>2022 年 3 月 (プラットフォーム: 4.18.2203.5 |エンジン: 1.1.19100.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.361.1449.0**<br/>
-&ensp;リリース日: **2022 年 3 月 7** 日<br/>
+&ensp;リリース日: **2022 年 4 月 7 日**<br/>
 &ensp;プラットフォーム: **4.18.2203.5**<br/>
 &ensp;エンジン: **1.1.19100.5**<br/>
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
@@ -987,3 +990,13 @@ Windows 10 (Enterprise、Pro、Home エディション)、Windows Server 2019、
 |[イベントベースの強制更新プログラムを管理する](manage-event-based-updates-microsoft-defender-antivirus.md) | 保護更新プログラムは、起動時または特定のクラウド配信保護イベントの後にダウンロードされるように設定できます。 |
 |[モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| バッテリー電源で更新を行う必要があるかどうかなど、モバイル デバイスや仮想マシンに特に役立つ設定を指定できます。 |
 | [EDR センサー用の Microsoft Defender for Endpoint 更新プログラム](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | 2021 年にリリースされた新しい Microsoft Defender for Endpoint 統合ソリューション パッケージに含まれている EDR センサー (MsSense.exe) を更新できます。   |
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
