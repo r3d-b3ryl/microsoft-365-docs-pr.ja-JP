@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Office 365 セキュリティ/コンプライアンス センターでキーワード ディクショナリを作成する基本的な手順について説明します。
-ms.openlocfilehash: ca88c57739c8734f9fcdb5d3356a44dc6a72faa5
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 64e431b5d2ef01e85eff55f39f4436786f45664b
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271780"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64758599"
 ---
 # <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
 
@@ -110,7 +110,7 @@ Remove-Item $rawFile
 
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>PowerShell を使用してファイルからキーワード ディクショナリを作成する
 
-大きなディクショナリを作成する必要がある場合、それは他のソースからエクスポートされたファイルやリストからのキーワードを使用するためであることが多いです。 この場合、外部メールの画面に対する不適切な言語のリストを含めて、キーワード ディクショナリを作成します。 まず、[セキュリティ/コンプライアンス センター PowerShell に接続](/powershell/exchange/connect-to-scc-powershell)します。
+大きなディクショナリを作成する必要がある場合はたいてい、ファイルからのキーワードや、その他のソースからエクスポートしたリストを使うことになります。その場合、外部電子メールでスクリーニングを行うための不適切な言語のリストを含むキーワード ディクショナリを作成します。まず[セキュリティ  コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)必要があります。
 
 1. キーワードをテキスト ファイルにコピーし、各キーワードが別個の行にあるかどうかを確認します。
 
@@ -191,11 +191,11 @@ Get-DlpKeywordDictionary -Name "Diseases"
 > 中国語/日本語/ 2 バイト文字に加えて、キーワード/フレーズのリストに中国語/日本語以外の単語も含まれている場合 (英語のみなど)、2 つの辞書/キーワード リストを作成することをお勧めします。 1 つは中国語/日本語/ 2 バイト文字を含むキーワード用で、もう1 つは英語のみ用です。
 >
 > - たとえば、"Highly confidential"、"機密性が高い"、"机密的document" の 3 つのフレーズを含むキーワード辞書/リストを作成する場合は、2 つのキーワード リストを作成する必要があります。
->     1. Highly confidential
->     2. 機密性が高い、机密的document、机密的 document
+>   1. Highly confidential
+>   2. 機密性が高い、机密的document、机密的 document
 >
 > 2 バイトのハイフンまたは 2 バイトのピリオドを使用して正規表現を作成するときは、正規表現のハイフンまたはピリオドをエスケープするように、必ず両方の文字をエスケープしてください。参考までに、サンプルの正規表現を次に示します。
 >
-> - `(?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}`
+> - `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >
 > キーワード リストでは、単語の一致ではなく文字列の一致を使用することをお勧めします。

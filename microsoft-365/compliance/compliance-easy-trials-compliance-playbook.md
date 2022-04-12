@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 コンプライアンス ソリューション試用版プレイブック。
-ms.openlocfilehash: e0d48ba9c4a5ca50869b64d6312fe845ef9bf50c
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8c5456344a97a0cfc4564c228eeba20067682070
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679898"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759172"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>試用版プレイブック: Microsoft 365 コンプライアンス ソリューション
 
@@ -93,6 +93,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 > 試用版のベスト プラクティス: 1 日目
 
 [すべてのコンプライアンス ユーザーをコミュニケーション コンプライアンス ロール グループに割り当てます](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。
+
 ### <a name="step-2-enable-the-audit-log"></a>手順 2: [監査ログを有効にする](communication-compliance-configure.md#step-2-required-enable-the-audit-log)
 
 > [!TIP]
@@ -395,8 +396,7 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 ### <a name="more-information-auto-apply-retention-labels--disposition-review"></a>詳細情報: 保持ラベルの自動適用および処理確認
 
-**ラベルを自動的に適用して、必要なコンテンツを保持します。**
-保持ラベルは、次の内容が含まれている場合にコンテンツに自動的に適用できます。
+**必要なものを保持するためにラベルを自動的に適用します。** アイテム保持ラベルは、次のものが含まれている場合に、コンテンツに自動的に適用できます。
 
 - [特定の種類の機密情報](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 - [作成したクエリに一致する特定のキーワードまたは検索可能なプロパティ](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
@@ -434,6 +434,6 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 **含まれるもの**: Microsoft 365 コンプライアンス ソリューションの完全な一覧と製品レベル別の機能については、「[機能一覧](https://go.microsoft.com/fwlink/?linkid=2139145)」をご覧ください。
 
-**Microsoft Security Technical Content ライブラリ**: このライブラリを探索して、ユーザーのニーズに関連する対話型ガイドやその他の学習コンテンツを見つけます。[ライブラリに行く](/security/content-library)。
+**Microsoft Security Technical Content ライブラリ**: このライブラリを探索して、ユーザーのニーズに関連する対話型ガイドやその他の学習コンテンツを見つけます。[ライブラリに行く](/security)。
 
 **Microsoft Security リソース**: マルウェア対策からゼロ トラストまで、組織のセキュリティ ニーズに関連するすべてのリソースを入手します。[リソースに行く](/security/business/resources)。
