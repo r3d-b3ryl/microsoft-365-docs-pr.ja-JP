@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint 展開の設定
-description: アプリケーションの展開をセットアップする方法についてMicrosoft Defender for Endpoint
-keywords: 展開、セットアップ、ライセンス検証、テナント構成、ネットワーク構成
+description: Microsoft Defender for Endpointのデプロイを設定する方法について説明します
+keywords: デプロイ、セットアップ、ライセンス検証、テナント構成、ネットワーク構成
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1fbfdaa71cc57a7797a2b95c96a56abba4fcc40
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: bae66223494d8de98737516cef1a2c407d7d1a6a
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64506991"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783537"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint 展開の設定
 
@@ -36,99 +36,99 @@ ms.locfileid: "64506991"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
+Defender for Endpoint のデプロイは、次の 3 フェーズのプロセスです。
 
-|[![展開フェーズ - 準備します。](images/phase-diagrams/prepare.png#lightbox)](prepare-deployment.md)<br>[フェーズ 1: 準備](prepare-deployment.md) | ![展開フェーズ - セットアップ](images/phase-diagrams/setup.png#lightbox)<br>フェーズ 2: セットアップ | [![展開フェーズ - オンボード](images/phase-diagrams/onboard.png#lightbox)](onboarding.md)<br>[フェーズ 3: オンボード](onboarding.md)|
+|[![デプロイ フェーズ - 準備します。](images/phase-diagrams/prepare.png#lightbox)](prepare-deployment.md)<br>[フェーズ 1: 準備](prepare-deployment.md) | ![デプロイ フェーズ - セットアップ](images/phase-diagrams/setup.png#lightbox)<br>フェーズ 2: セットアップ | [![デプロイ フェーズ - オンボード](images/phase-diagrams/onboard.png#lightbox)](onboarding.md)<br>[フェーズ 3: オンボード](onboarding.md)|
 |---|---|---|
-||*お前はここにいる!*||
+||*お客様はここにいます。*||
 
-現在、セットアップ フェーズに入っている。
+現在、セットアップ フェーズ中です。
 
-この展開シナリオでは、次の手順について説明します。
+このデプロイ シナリオでは、次の手順について説明します。
 
 - ライセンスの検証
-- テナント構成
-- ネットワーク構成
+- テナントの構成
+- ネットワークの構成
 
 > [!NOTE]
-> 一般的な展開を案内する目的で、このシナリオでは、このシナリオでは、ユーザーの使用のみをMicrosoft Endpoint Configuration Manager。 Defender for Endpoint は、他のオンボーディング ツールの使用をサポートしていますが、展開ガイドではこれらのシナリオについては説明しません。 詳細については、「オンボード デバイス[を使用してデバイスをMicrosoft Defender for Endpoint](onboard-configure.md)。
+> 一般的なデプロイを案内する目的で、このシナリオではMicrosoft Endpoint Configuration Managerの使用のみを対象とします。 Defender for Endpoint では、他のオンボード ツールの使用がサポートされていますが、展開ガイドではこれらのシナリオについては説明しません。 詳細については、「[デバイスをMicrosoft Defender for Endpointにオンボードする」を](onboard-configure.md)参照してください。
 
 ## <a name="check-license-state"></a>ライセンスの状態を確認する
 
-ライセンスの状態を確認し、適切にプロビジョニングされたかどうかは、管理センターまたはポータルから **Microsoft Azureできます**。
+ライセンスの状態と、適切にプロビジョニングされたかどうかを確認するには、管理センターまたは **Microsoft Azure ポータル** を使用します。
 
-1. ライセンスを表示するには、Microsoft Azureポータルに **移動** し、[Microsoft Azure [] セクションに移動します](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. ライセンスを表示するには、**Microsoft Azure ポータル** に移動し、[Microsoft Azure ポータルのライセンス セクション](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)に移動します。
 
    :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="[Azure ライセンス] ページ" lightbox="images/atp-licensing-azure-portal.png":::
 
-1. または、管理センターで [課金サブスクリプション] **に** \> **移動します**。
+1. または、管理センターで **[課金** \> **サブスクリプション]** に移動します。
 
-    画面には、すべてのプロビジョニング済みライセンスと現在の状態が表示 **されます**。
+    画面に、プロビジョニングされたすべてのライセンスとその現在の **状態** が表示されます。
 
     :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="[課金ライセンス] ページ" lightbox="images/atp-billing-subscriptions.png":::
 
 ## <a name="cloud-service-provider-validation"></a>クラウド サービス プロバイダーの検証
 
-会社にプロビジョニングされるライセンスにアクセスし、ライセンスの状態を確認するには、管理センターに移動します。
+会社にプロビジョニングされているライセンスにアクセスし、ライセンスの状態を確認するには、管理センターに移動します。
 
-1. パートナー ポータルで **、[サービス** の管理] **を選択> Office 365**。
+1. **パートナー ポータル** で、[**サービスの管理] > Office 365** を選択します。
 
-2. [パートナー ポータル] **リンクをクリック** すると、[代理として管理者] オプションが開き、顧客管理センターにアクセスできます。
+2. **パートナー ポータル** のリンクをクリックすると、[**代理管理者] オプションが** 開き、顧客管理センターにアクセスできるようになります。
 
-   :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="管理者Office 365ポータル" lightbox="images/atp-O365-admin-portal-customer.png":::
+   :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="Office 365管理ポータル" lightbox="images/atp-O365-admin-portal-customer.png":::
 
 ## <a name="tenant-configuration"></a>テナント構成
 
-オンボーディングはMicrosoft Defender for Endpoint簡単です。 ナビゲーション メニューから、[エンドポイント] セクションの下の任意のアイテムを選択するか、インシデント、ハンティング、アクション センター、脅威分析などの Microsoft 365 Defender 機能を選択してオンボーディング プロセスを開始します。
+Microsoft Defender for Endpointへのオンボードは簡単です。 ナビゲーション メニューから、[エンドポイント] セクションの下にある任意の項目、またはインシデント、ハンティング、アクション センター、脅威分析などのMicrosoft 365 Defender機能を選択して、オンボード プロセスを開始します。
 
-Web ブラウザーから、ポータルのMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">します</a>。
+Web ブラウザーから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">、Microsoft 365 Defender ポータル</a>に移動します。
 
 ## <a name="data-center-location"></a>データ センターの場所
-Microsoft Defender for Endpointは、ユーザーが使用する場所と同じ場所にデータを格納[して処理Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)。 まだMicrosoft 365 Defenderされていない場合は、Microsoft Defender for Endpoint へのオンボーディングも Microsoft 365 Defender有効にされ、アクティブなデータ センターの場所に基づいて新しいデータ センターの場所が自動的に選択Microsoft 365 セキュリティ サービス。 選択したデータ センターの場所が画面に表示されます。
+Microsoft Defender for Endpointは、[Microsoft 365 Defenderが使用するのと同じ場所](/microsoft-365/security/defender/m365d-enable)にデータを格納して処理します。 Microsoft 365 Defenderがまだオンになっていない場合は、Microsoft Defender for EndpointへのオンボードもMicrosoft 365 Defenderオンになり、アクティブなMicrosoft 365の場所に基づいて新しいデータ センターの場所が自動的に選択されます。 セキュリティ サービス。 選択したデータ センターの場所が画面に表示されます。
 
-## <a name="network-configuration"></a>ネットワーク構成
+## <a name="network-configuration"></a>ネットワークの構成
 
-組織がプロキシを使用してインターネットにアクセスするためにエンドポイントを必要としない場合は、このセクションをスキップします。
+組織がインターネットにアクセスするためにプロキシを使用するエンドポイントを必要としない場合は、このセクションをスキップします。
 
-Microsoft Defender ATP センサーでは、センサー データをレポートし、Microsoft Defender for Endpoint service サービスと通信するために、Microsoft Windows HTTP (WinHTTP) が必要になります。 埋め込みMicrosoft Defender for Endpointは、LocalSystem アカウントを使用してシステム コンテキストで実行されます。 センサーは Microsoft Windows HTTP サービス (WinHTTP) を使用して、Microsoft Defender for Endpoint クラウド サービスとの通信を有効にします。 WinHTTP 構成設定は、Windows インターネット (WinINet) のインターネット閲覧プロキシ設定とは独立し、次の検出方法を使用してのみプロキシ サーバーを検出できます。
+Microsoft Defender ATP センサーでは、センサー データをレポートし、Microsoft Defender for Endpoint service サービスと通信するために、Microsoft Windows HTTP (WinHTTP) が必要になります。 埋め込みMicrosoft Defender for Endpointセンサーは、LocalSystem アカウントを使用してシステム コンテキストで実行されます。 センサーは Microsoft Windows HTTP サービス (WinHTTP) を使用して、Microsoft Defender for Endpoint クラウド サービスとの通信を有効にします。 WinHTTP 構成設定は、Windows インターネット (WinINet) インターネット閲覧プロキシ設定とは無関係であり、次の検出方法を使用してのみプロキシ サーバーを検出できます。
 
 - **自動検出メソッド**:
   - 透過プロキシ
   - Web プロキシ自動発見プロトコル (WPAD)
 
-  透過プロキシまたは WPAD がネットワーク トポロジに実装されている場合、特別な構成設定は不要です。 プロキシ内の Microsoft Defender for Endpoint URL の除外の詳細については、このドキュメントの「デバイス プロキシとインターネット接続の設定を構成する」の「URL 許可リスト」または「Configure device proxy and Internet [connectivity](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) settings」の「Proxy [Service](production-deployment.md#proxy-service-urls) URL」セクションを参照してください。
+  透過プロキシまたは WPAD がネットワーク トポロジに実装されている場合、特別な構成設定は必要ありません。 プロキシでの URL の除外のMicrosoft Defender for Endpointの詳細については、このドキュメントの「[プロキシ サービス URL」](production-deployment.md#proxy-service-urls)セクションで、URL 許可の一覧または[デバイス プロキシとインターネット接続の設定の構成](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)に関するセクションを参照してください。
 
-- **静的プロキシの手動構成**:
+- **手動の静的プロキシ構成**:
   - レジストリ ベースの構成
   - netsh コマンドを使用して構成された WinHTTP
 
-    安定したトポロジ (たとえば、同じプロキシの背後にある企業ネットワーク内のデスクトップ) のデスクトップにのみ適しています。
+    安定したトポロジ内のデスクトップにのみ適しています (たとえば、同じプロキシの背後にある企業ネットワーク内のデスクトップ)。
 
 ### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>レジストリ ベースの静的プロキシを使用して、プロキシ サーバーを手動で構成します。
 
-コンピューターがインターネットへの接続を許可されていない場合、Microsoft Defender for Endpoint センサーだけが診断データを報告し、Microsoft Defender for Endpoint サービスと通信できるレジストリ ベースの静的プロキシを構成します。 静的プロキシは、グループ ポリシー (GP) を使用して構成できます。 グループ ポリシーは次の場所にあります。
+コンピューターがインターネットへの接続を許可されていない場合は、Microsoft Defender for Endpoint センサーのみが診断データを報告し、Microsoft Defender for Endpoint サービスと通信できるようにレジストリ ベースの静的プロキシを構成します。 静的プロキシは、グループ ポリシー (GP) を使用して構成できます。 グループ ポリシーは次の場所にあります。
 
-- 管理用テンプレート \> Windows コンポーネント \> \> データ収集とプレビュー ビルド接続ユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用を構成する
-- [有効] に **設定し、[** 認証された **プロキシの使用を無効にする] を選択します。**
+- コンポーネント \> データ収集とプレビュー ビルド\>Windows管理テンプレート\>接続ユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用を構成する
+- **[有効]** に設定し、[**認証されたプロキシの使用を無効にする**] を選択します。
 
 1. グループ ポリシー管理コンソールを開きます。
-2. 組織のプラクティスに基づいてポリシーを作成するか、既存のポリシーを編集します。
-3. サーバーをグループ ポリシー **\> \> \>** し、[管理用テンプレート] Windows コンポーネント のデータ収集とプレビュー ビルドに移動し、[接続されたユーザー エクスペリエンスとテレメトリ サービスの認証されたプロキシの使用状況を構成する] に移動します。
+2. 組織のプラクティスに基づいて、ポリシーを作成するか、既存のポリシーを編集します。
+3. グループ ポリシーを編集し、**コンポーネント \> データ収集とプレビュー ビルド\>Windows管理用テンプレート\>に移動して、接続ユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用を構成します**。
 
-   :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="使用状況ポリシーの構成に関連するオプション" lightbox="images/atp-gpo-proxy1.png":::
+   :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="使用ポリシーの構成に関連するオプション" lightbox="images/atp-gpo-proxy1.png":::
 
 4. **[有効]** を選択します。
-5. [認証 **されたプロキシの使用を無効にする] を選択します**。
-6. [管理 **用テンプレート] Windows \> コンポーネント \> データ\>** 収集とプレビュー ビルド 接続されたユーザー エクスペリエンスと利用統計情報を構成します。
+5. [ **認証されたプロキシの使用を無効にする]** を選択します。
+6. **[管理用テンプレート\>] Windowsコンポーネント \> データ収集とプレビュー ビルド\>に移動して、接続されたユーザー エクスペリエンスとテレメトリを構成します**。
 
-   :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="接続されたユーザー エクスペリエンスと利用統計情報の構成に関連するオプション" lightbox="images/atp-gpo-proxy2.png":::
+   :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="接続されたユーザー エクスペリエンスとテレメトリの構成に関連するオプション" lightbox="images/atp-gpo-proxy2.png":::
 
 7. **[有効]** を選択します。
-8. プロキシ サーバー **名を入力します**。
+8. **プロキシ サーバー名** を入力します。
 
 このポリシーは、レジストリ キー `HKLM\Software\Policies\Microsoft\Windows\DataCollection` の下に 2 つのレジストリ値 `TelemetryProxyServer` を REG_SZ として、`DisableEnterpriseAuthProxy` を REG_DWORD として設定します。
 
-レジストリ値は、次 `TelemetryProxyServer` の文字列形式を取ります。
+レジストリ値 `TelemetryProxyServer` は、次の文字列形式を取ります:
 
 ```text
 <server name or ip>:<port>
@@ -145,7 +145,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 > [!NOTE]
 >
 > - これは、既定のプロキシで WinHTTP を使用する Windows サービスを含むすべてのアプリケーションに影響します。
-> - トポロジを変更しているラップトップ (たとえば、オフィスから自宅) は netsh に誤動作します。 レジストリ ベースの静的プロキシの構成を使用します。
+> - トポロジを変更しているノート PC (たとえば、自宅からオフィスへ) は、netsh で誤動作します。 レジストリ ベースの静的プロキシの構成を使用します。
 
 1. 管理者特権でコマンド プロンプトを開きます。
     1. **[スタート]** をクリックし、「**cmd**」と入力します。
@@ -159,28 +159,28 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 
    例: netsh winhttp set proxy 10.0.0.6:8080
 
-### <a name="proxy-configuration-for-down-level-devices"></a>ダウンレベル デバイスのプロキシ構成
+### <a name="proxy-configuration-for-down-level-devices"></a>下位レベルのデバイスのプロキシ構成
 
-Down-Level には、Windows 7 SP1 および Windows 8.1 ワークステーション、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、および Windows Server 2016 のバージョンが含Windows サーバー CB 1803。 これらのオペレーティング システムでは、エンドポイントから Azure への通信を処理するために、Microsoft 管理エージェントの一部としてプロキシが構成されます。 これらのデバイスでのプロキシの構成方法については、「Microsoft Management Agent Fast Deployment Guide」を参照してください。
+Down-Level デバイスには、Windows 7 台の SP1 ワークステーションとWindows 8.1 ワークステーション、Windows Server 2008 R2、およびMicrosoft Monitoring Agentを使用して以前にオンボードされたその他のサーバー オペレーティング システムが含まれます。 これらのオペレーティング システムには、エンドポイントから Azure への通信を処理するために、Microsoft 管理エージェントの一部としてプロキシが構成されます。 これらのデバイスでプロキシを構成する方法については、Microsoft 管理エージェントの高速展開ガイドを参照してください。
 
 ### <a name="proxy-service-urls"></a>プロキシ サービスの URL
 
-v20 を含む URL は、Windows 10バージョン 1803 または Windows 11です。 たとえば、デバイス`us-v20.events.data.microsoft.com`がバージョン 1803 またはバージョン 1803 上Windows 10場合にのみWindows 11。
+v20 を含む URL は、Windows 10バージョン 1803 または Windows 11 デバイスがある場合にのみ必要です。 たとえば、`us-v20.events.data.microsoft.com`デバイスがWindows 10バージョン 1803 またはWindows 11の場合にのみ必要です。
 
-プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合Microsoft Defender for Endpointセンサーがシステム コンテキストから接続している場合は、リストされている URL で匿名トラフィックが許可されている必要があります。
+プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合は、Microsoft Defender for Endpoint センサーがシステム コンテキストから接続されているため、一覧の URL で匿名トラフィックが許可されていることを確認します。
 
-次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールの作成が必要な場合があります。
+次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスとその関連 URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター規則がないことを確認するか、それらに対して特別に *許可* 規則を作成する必要がある場合があります。
 
 <br>
 
 ****
 
 
-|ドメインリストのスプレッドシート| 説明|
+|ドメイン リストのスプレッドシート| 説明|
 |---|---|
-|Microsoft Defender for Endpointの URL リスト| 商用顧客向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender for Endpoint/Gov/GCC/DoD の URL リスト | Gov/GCC/DoD のお客様向けサービスの場所、地理的な場所、OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|商用顧客向けの Microsoft Defender for Endpoint の URL リスト| 商用顧客向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Gov/GCC/DoD 向けの Microsoft Defender for Endpoint の URL リスト | Gov/GCC/DoD のお客様向けのサービスの場所、地理的な場所、OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-[![**Phase 3: Onboard**.](images/onboard.png#lightbox)] <br> [フェーズ 3: オンボード](onboarding.md): サービスにデバイスをオンボードし、Microsoft Defender for Endpointからセンサー データを取得できます。
+[![**フェーズ 3: オンボード**.](images/onboard.png#lightbox)] <br> [フェーズ 3: オンボード:](onboarding.md) Microsoft Defender for Endpoint サービスがセンサー データを取得できるように、デバイスをサービスにオンボードします。

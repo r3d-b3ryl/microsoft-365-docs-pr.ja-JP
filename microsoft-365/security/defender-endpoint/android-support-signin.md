@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3103ab5332045da58609b048d637da30d287ed10
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 0a6f53b0723d7f3e9b4761aa83238e618d947e55
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666572"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783427"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -144,24 +144,25 @@ Microsoft Defender for Endpointオンボード画面に戻り、[**許可**] を
 
 ユーザーが上記のセクションでまだ対処されていない問題に直面している場合、または一覧表示されている手順を使用して解決できない場合、ユーザーは **診断データ** と共 **にアプリ内フィードバック** を提供できます。 その後、チームはログを調査して適切なソリューションを提供できます。 ユーザーは、次の手順に従って同じ操作を行うことができます。
 
-1.  デバイスで **MDE アプリケーション** を開き、左上隅にある **プロファイル アイコン** をクリックします。
+1. デバイスで **MDE アプリケーション** を開き、左上隅にある **プロファイル アイコン** をクリックします。
 
     :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="Microsoft Defender for Endpoint ポータルのプロファイル アイコン" lightbox="images/select-profile-icon-1.jpg":::
 
-2.  [フィードバックの&ヘルプ] を選択します。
+2. [フィードバックの&ヘルプ] を選択します。
 
     :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="Microsoft Defender for Endpoint ポータルで選択できるフィードバック オプション&ヘルプ" lightbox="images/selecthelpandfeedback2.png":::
 
-3.  [Microsoft にフィードバックを送信する] を選択します。
+3. [Microsoft にフィードバックを送信する] を選択します。
 
     :::image type="content" alt-text="Microsoft にフィードバックを送信するを選択する" source="images/send-feedback-to-microsoft-3.jpg":::
 
-4.  指定したオプションから選択します。 問題を報告するには、[問題を報告する] を選択します。
+4. 指定したオプションから選択します。 問題を報告するには、[問題を報告する] を選択します。
 
     :::image type="content" source="images/report-issue-4.jpg" alt-text="[問題を報告する] オプション" lightbox="images/report-issue-4.jpg":::
 
-5.  発生している問題の詳細を入力し、[診断データの送信] をオンにします。 チームがソリューションまたはフォローアップで連絡できるように、[メール アドレスを含める] をオンにすることをお勧めします。
+5. 発生している問題の詳細を入力し、[診断データの送信] をオンにします。 チームがソリューションまたはフォローアップで連絡できるように、[メール アドレスを含める] をオンにすることをお勧めします。
 
     :::image type="content" source="images/finalsubmit5.png" alt-text="詳細を追加して診断データを添付できるウィンドウ" lightbox="images/finalsubmit5.png":::
 
-6.  [送信] をクリックして、フィードバックを正常に送信します。
+6. [送信] をクリックして、フィードバックを正常に送信します。
+

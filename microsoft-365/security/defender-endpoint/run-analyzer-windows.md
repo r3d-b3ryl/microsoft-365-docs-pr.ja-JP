@@ -1,7 +1,7 @@
 ---
 title: Windows でクライアント アナライザーを実行する
-description: Microsoft Defender for Endpoint Client Analyzer を実行する方法については、Windows。
-keywords: クライアント アナライザー、センサー、アナライザー、mdeanalyzer、Windows のトラブルシューティング
+description: WindowsでMicrosoft Defender for Endpointクライアント アナライザーを実行する方法について説明します。
+keywords: クライアント アナライザー, センサーのトラブルシューティング, アナライザー, mdeanalyzer, windows
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5fa284f5c57214f356bb6b90e12ca60ae019d277
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5ac27241297b9943f1559653777b8e1668fe7f89
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467139"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783031"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Windows でクライアント アナライザーを実行する
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-1. [MDE クライアント アナライザー ツールを、](https://aka.ms/mdatpanalyzer)調査Windowsコンピューターにダウンロードします。
+1. 調査する必要があるWindows コンピューターに [MDE クライアント アナライザー ツール](https://aka.ms/mdatpanalyzer)をダウンロードします。
 
-2. コンピューター上のMDEClientAnalyzer.zipを抽出します。
+2. コンピューター上のMDEClientAnalyzer.zipの内容を抽出します。
 
 3. 管理者特権でコマンド プロンプトを開きます。
     1. **[スタート]** をクリックし、「**cmd**」と入力します。
@@ -44,52 +44,52 @@ ms.locfileid: "64467139"
    HardDrivePath\MDEClientAnalyzer.cmd
    ```
 
-   **HardDrivePath を、ツールが抽出されたパスに置き換える例を次に示します。**
+   **次のように、HardDrivePath をツールの抽出先のパスに置き換えます。**
 
    ```dos
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
-上記に加えて、ライブ応答を使用してアナライザー サポート ログ [を収集するオプションも用意されています](troubleshoot-collect-support-log.md)。
+上記に加えて、 [ライブ応答を使用してアナライザー サポート ログを収集](troubleshoot-collect-support-log.md)するオプションもあります。
 
 > [!NOTE]
-> Windows 10/11、Windows Server 2019/2022、または Windows Server 2012R2/2016 [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) `MDEClientAnalyzer.exe` では、最新の統合ソリューションがインストールされている場合、クライアント アナライザー スクリプトは、クラウド サービス URL への接続テストを実行するために呼び出される実行可能ファイルを呼び出します。
+> Windows 10/11 では、Windows Server 2019/2022、または[最新の統合ソリューション](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)がインストールされた Windows Server 2012R2/2016 では、クライアント アナライザー スクリプトは、クラウド サービス URL への接続テストを実行するために呼び出された実行可能ファイルを呼び出`MDEClientAnalyzer.exe`します。
 >
-> Windows 8.1、Windows Server 2016、または Microsoft Monitoring Agent (MMA) をオンボーディングに使用する以前の OS エディションでは、クライアント アナライザー スクリプトは、コマンドとコントロール (CnC) `MDEClientAnalyzerPreviousVersion.exe` URL の接続テストを実行するために呼び出される実行可能ファイルを呼び出し、同時に呼び出します。Microsoft Monitoring Agentデータ チャネル `TestCloudConnection.exe` URL の接続ツールを使用します。
+> Windows 8.1、Windows Server 2016、またはMicrosoft Monitoring Agent (MMA) がオンボードに使用されている以前の OS エディションでは、クライアント アナライザー スクリプトは実行可能ファイルを呼び出`MDEClientAnalyzerPreviousVersion.exe`して、Command and Control (CnC) URL の接続テストを実行すると同時に呼び出します。サイバー データ チャネル URL の接続ツール`TestCloudConnection.exe`をMicrosoft Monitoring Agentします。
 
 
-アナライザーに含まれるすべての PowerShell スクリプトとモジュールは Microsoft 署名済みです。
-ファイルが何か変更されている場合、アナライザーは次のエラーで終了する必要があります。
+アナライザーに含まれるすべての PowerShell スクリプトとモジュールは、Microsoft によって署名されています。
+ファイルが何らかの方法で変更された場合、アナライザーは次のエラーで終了する必要があります。
 
 :::image type="content" source="images/sigerror.png" alt-text="クライアント アナライザー エラー" lightbox="images/sigerror.png":::
 
 
-このエラーが表示された場合、issuerInfo.txt出力には、それが発生した理由と影響を受けたファイルに関する詳細情報が含まれる。
+このエラーが表示された場合、issuerInfo.txt出力には、それが発生した理由と影響を受けたファイルに関する詳細情報が含まれます。
 
-:::image type="content" source="images/issuerinfo.png" alt-text="発行者情報" lightbox="images/issuerinfo.png":::
+:::image type="content" source="images/issuerinfo.png" alt-text="発行者の情報" lightbox="images/issuerinfo.png":::
 
 
-変更後のコンテンツMDEClientAnalyzer.ps1例:
+MDEClientAnalyzer.ps1が変更された後の内容の例:
 
 :::image type="content" source="images/modified-ps1.png" alt-text="変更された ps1 ファイル" lightbox="images/modified-ps1.png":::
 
 
 
-## <a name="result-package-contents-on-windows"></a>結果パッケージのコンテンツ (Windows
+## <a name="result-package-contents-on-windows"></a>Windowsの結果パッケージの内容
 
 > [!NOTE]
 > キャプチャされる正確なファイルは、次のような要因によって変わる場合があります。
 >
-> - アナライザーが実行されるウィンドウのバージョン。
-> - コンピューター上のイベント ログ チャネルの可用性。
-> - センサーの開始状態EDR (コンピューターがまだオンボードされていない場合、センサーは停止されます)。
-> - アナライザー コマンドで高度なトラブルシューティング パラメーターが使用されている場合。
+> - アナライザーを実行するウィンドウのバージョン。
+> - コンピューターでのイベント ログ チャネルの可用性。
+> - EDR センサーの開始状態 (マシンがまだオンボードされていない場合は、センスは停止します)。
+> - アナライザー コマンドで高度なトラブルシューティング パラメーターが使用された場合。
 
-既定では、アンパックされたMDEClientAnalyzerResult.zipには、次の項目が含まれます。
+既定では、アンパックされたMDEClientAnalyzerResult.zip ファイルには次の項目が含まれます。
 
 - MDEClientAnalyzer.htm
 
-  これはメインの HTML 出力ファイルであり、コンピューター上でアナライザー スクリプトが実行できる結果とガイダンスが含まれる。
+  これはメインの HTML 出力ファイルです。このファイルには、コンピューターで実行されるアナライザー スクリプトが生成できる結果とガイダンスが含まれます。
 
 - SystemInfoLogs \[フォルダー\]
   - AddRemovePrograms.csv
@@ -102,19 +102,19 @@ ms.locfileid: "64467139"
 
     - CertValidate.log
 
-      説明: [CertUtil](/windows-server/administration/windows-commands/certutil) を呼び出して実行される証明書失効の詳細な結果。
+      説明: [CertUtil](/windows-server/administration/windows-commands/certutil) を呼び出すことによって実行された証明書失効の詳細な結果。
 
     - dsregcmd.txt
 
-      説明: [dsregcmd の実行からの出力](/azure/active-directory/devices/troubleshoot-device-dsregcmd)。 これにより、コンピューターの状態Azure AD詳細が表示されます。
+      説明: [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd) の実行からの出力。 これにより、コンピューターのAzure AD状態に関する詳細が表示されます。
 
     - IFEO.txt
 
-      説明: コンピューターで [構成されているイメージ ファイル実行オプション](/previous-versions/windows/desktop/xperf/image-file-execution-options) の出力
+      説明: コンピューターで構成された [イメージ ファイル実行オプション](/previous-versions/windows/desktop/xperf/image-file-execution-options) の出力
 
     - MDEClientAnalyzer.txt
 
-      説明: アナライザー スクリプトの実行の詳細を示す詳細なテキスト ファイルです。
+      説明: これは、アナライザー スクリプトの実行の詳細を示す詳細テキスト ファイルです。
 
     - MDEClientAnalyzer.xml
 
@@ -122,23 +122,23 @@ ms.locfileid: "64467139"
 
     - RegOnboardedInfoCurrent.Json
 
-      説明: レジストリから JSON 形式で収集されたオンボード コンピューター情報。
+      説明: レジストリから JSON 形式で収集されたオンボードコンピューター情報。
 
   - RegOnboardingInfoPolicy.Json
 
-    説明: レジストリから JSON 形式で収集されたオンボーディング ポリシー構成。
+    説明: オンボード ポリシー構成は、レジストリから JSON 形式で収集されます。
 
     - SCHANNEL.txt
 
-      説明: レジストリから [収集されたコンピューター](/windows-server/security/tls/manage-tls) に適用される SCHANNEL 構成の詳細。
+      説明: レジストリから収集されたコンピューターに適用される [SCHANNEL 構成](/windows-server/security/tls/manage-tls) の詳細。
 
     - SessionManager.txt
 
-      説明: セッション マネージャー固有の設定はレジストリから収集されます。
+      説明: Session Manager 固有の設定がレジストリから収集されます。
 
     - SSL_00010002.txt
 
-      説明: レジストリから [収集された](/windows-server/security/tls/manage-tls) コンピューターに適用される SSL 構成の詳細。
+      説明: レジストリから収集されたマシンに適用される [SSL 構成](/windows-server/security/tls/manage-tls) の詳細。
 
 - EventLogs [フォルダー]
 
@@ -156,7 +156,7 @@ ms.locfileid: "64467139"
 
   - OperationsManager.evtx
 
-    説明: イベント ログMicrosoft Monitoring Agentエクスポート
+    説明: Microsoft Monitoring Agent イベント ログのエクスポート
 
 
 

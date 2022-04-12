@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint をリングに展開する
-description: リングに Microsoft Defender for Endpoint を展開する方法について説明します。
-keywords: 展開、リング、評価、パイロット、インサイダーファースト、インサイダースロー、セットアップ、オンボード、フェーズ、展開、展開、導入、構成
+title: Microsoft Defender for Endpointをリングにデプロイする
+description: Microsoft Defender for Endpointをリングにデプロイする方法について説明します
+keywords: デプロイ, リング, 評価, パイロット, insider fast, insider slow, セットアップ, オンボード, フェーズ, デプロイ, デプロイ, 導入, 構成
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-endpointprotect
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 116960ed6e7d4a765479f0c76715e48ec8312e3b
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 41f47720582f715e6c5d28276ddd87777e9669d5
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472091"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783383"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Microsoft Defender for Endpoint をリングに展開する
+# <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Microsoft Defender for Endpointをリングにデプロイする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,22 +33,22 @@ ms.locfileid: "64472091"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Microsoft Defender for Endpoint の展開は、リング ベースの展開方法を使用して実行できます。
+Microsoft Defender for Endpointのデプロイは、リングベースのデプロイ アプローチを使用して行うことができます。
 
-展開リングは、次のシナリオで適用できます。
+デプロイ リングは、次のシナリオで適用できます。
 
-- [新しい展開](#new-deployments)
-- [既存の展開](#existing-deployments)
+- [新しいデプロイ](#new-deployments)
+- [既存のデプロイ](#existing-deployments)
 
-## <a name="new-deployments"></a>新しい展開
+## <a name="new-deployments"></a>新しいデプロイ
 
-:::image type="content" source="images/deployment-rings.png" alt-text="展開リング" lightbox="images/deployment-rings.png":::
+:::image type="content" source="images/deployment-rings.png" alt-text="デプロイ リング" lightbox="images/deployment-rings.png":::
 
-リング ベースのアプローチは、オンボードする一連のエンドポイントを識別し、より大きなデバイス セットにサービスを展開する前に特定の条件が満たされるのを確認する方法です。 各リングの終了条件を定義し、次のリングに進む前に満たされた条件を満たします。
+リングベースのアプローチは、オンボードする一連のエンドポイントを特定し、サービスを大規模な一連のデバイスにデプロイする前に特定の条件が満たされていることを確認する方法です。 各リングの終了条件を定義し、次のリングに移動する前にそれらが満たされていることを確認できます。
 
-リング ベースの展開を採用すると、サービスの展開中に発生する可能性のある潜在的な問題を減らすのに役立ちます。 最初に特定の数のデバイスをパイロットすることで、潜在的な問題を特定し、発生する可能性のあるリスクを軽減できます。
+リングベースのデプロイを採用すると、サービスのロールアウト中に発生する可能性がある潜在的な問題を減らすことができます。 最初に特定の数のデバイスをパイロットすることで、潜在的な問題を特定し、発生する可能性のある潜在的なリスクを軽減できます。
 
-表 1 に、使用できる展開リングの例を示します。
+表 1 に、使用する可能性のあるデプロイ リングの例を示します。
 
 **表 1**:
 
@@ -58,72 +58,72 @@ Microsoft Defender for Endpoint の展開は、リング ベースの展開方�
 
 |展開リング|説明|
 |---|---|
-|評価|リング 1: パイロット テスト用の 50 のシステムを特定する|
-|パイロット|リング 2: 実稼働環境の次の 50 ~ 100 エンドポイントを特定する|
-|完全な展開|リング 3: より大きな増分でサービスを残りの環境にロールアウトする|
+|評価|リング 1: パイロット テスト用の 50 システムを特定する|
+|パイロット|リング 2: 運用環境で次の 50 ~ 100 個のエンドポイントを特定する|
+|完全な展開|リング 3: サービスを他の環境に大きく段階的にロールアウトする|
 |
 
 ### <a name="exit-criteria"></a>終了条件
 
 これらのリングの終了条件のセットの例を次に示します。
 
-- デバイスがデバイス インベントリ リストに表示される
-- ダッシュボードにアラートが表示される
-- [検出テストを実行する](run-detection-test.md)
+- デバイス インベントリの一覧にデバイスが表示される
+- アラートがダッシュボードに表示される
+- [検出テストの実行](run-detection-test.md)
 - [デバイスに対してシミュレートされた攻撃を実行する](attack-simulations.md)
 
 ### <a name="evaluate"></a>評価
 
-サービスにオンボードする環境内のテスト マシンの数が少ない場合を特定します。 理想的には、これらのコンピューターは 50 未満のエンドポイントです。
+サービスにオンボードする環境内の少数のテスト マシンを特定します。 理想的には、これらのマシンのエンドポイントは 50 個未満です。
 
 ### <a name="pilot"></a>パイロット
 
-Microsoft Defender for Endpoint は、サービスにオンボードできるさまざまなエンドポイントをサポートしています。 このリングで、オンボードする複数のデバイスを特定し、定義した終了条件に基づいて、次の展開リングに進みます。
+Microsoft Defender for Endpointでは、サービスにオンボードできるさまざまなエンドポイントがサポートされています。 このリングで、オンボードする複数のデバイスを特定し、定義した終了条件に基づいて、次の展開リングに進みます。
 
-次の表に、サポートされているエンドポイントと、サービスにデバイスをオンボードするために使用できる対応するツールを示します。
+次の表は、サポートされているエンドポイントと、デバイスをサービスにオンボードするために使用できる対応するツールを示しています。
 
-| エンドポイント     | 展開ツール                       |
+| エンドポイント     | デプロイ ツール                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br> 注: 10 台を超えるデバイスを実稼働環境に展開する場合は、代わりに Group Policy メソッドを使用するか、以下に示す他のサポートされているツールを使用します。<br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Microsoft Defender for Cloudとの統合](configure-server-endpoints.md#integration-with-azure-defender)   |
+| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br> 注: 運用環境に 10 台を超えるデバイスをデプロイする場合は、代わりに グループ ポリシー メソッドを使用するか、以下に示す他のサポートされているツールを使用します。<br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Microsoft Defender for Cloudとの統合](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)   |
 | **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
-| **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+| **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [人形](linux-install-with-puppet.md) <br> [アンシブル](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft エンドポイント マネージャー](ios-install.md)                                |
 | **Android**  | [Microsoft エンドポイント マネージャー](android-intune.md)               |
 
 ### <a name="full-deployment"></a>完全な展開
 
-この段階では、展開 [の計画に](deployment-strategy.md) 役立つ展開の計画資料を使用できます。
+この段階では、デプロイ計画の資料を使用して [、デプロイ](deployment-strategy.md) の計画に役立ちます。
 
-次の資料を使用して、組織に最適な Microsoft Defender for Endpoint アーキテクチャを選択します。
+次の資料を使用して、組織に最適な適切なMicrosoft Defender for Endpointアーキテクチャを選択します。
 
-|**Item**|**説明**|
+|**アイテム**|**説明**|
 |:-----|:-----|
-|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Microsoft Defender for Endpoint 展開の戦略" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li></ul>
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Microsoft Defender for Endpointデプロイの戦略" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li></ul>
 
-## <a name="existing-deployments"></a>既存の展開
+## <a name="existing-deployments"></a>既存のデプロイ
 
-### <a name="windows-endpoints"></a>Windowsエンドポイント
+### <a name="windows-endpoints"></a>エンドポイントをWindowsする
 
-サーバー Windowsおよび/または Windowsサーバーの場合は、セキュリティ更新プログラム検証プログラム **(SUVP**) を使用して、(パッチ火曜日の前に) テストする複数のコンピューターを選択します。
+WindowsサーバーまたはWindows サーバーの場合は、**セキュリティ更新プログラム (SUVP**) を使用して、事前にテストするマシン (火曜日のパッチの前) を選択します。
 
 詳細については、以下を参照してください。
 
 - [セキュリティ更新プログラムの検証プログラムとは](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
-- [ソフトウェア更新プログラムの検証プログラムとMicrosoft マルウェア プロテクション センター設定 - TwC 対話型タイムライン パート 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
+- [ソフトウェア更新プログラムの検証プログラムとMicrosoft マルウェア プロテクション センターの確立 - TwC 対話型タイムライン パート 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
-### <a name="non-windows-endpoints"></a>非エンドポイントWindowsエンドポイント
+### <a name="non-windows-endpoints"></a>Windows以外のエンドポイント
 
-macOS と Linux を使用すると、いくつかのシステムを使用してベータ チャネルで実行できます。
+macOS と Linux では、いくつかのシステムを使用してベータ チャネルで実行できます。
 
 > [!NOTE]
-> ビルドが現在のチャネルに入る前に互換性、パフォーマンス、および信頼性の問題を見つけ出せそうとして、少なくとも 1 人のセキュリティ管理者と 1 人の開発者が理想的です。
+> ビルドで現在のチャネルに移行する前に互換性、パフォーマンス、信頼性の問題を見つけることができるように、少なくとも 1 人のセキュリティ管理者と 1 人の開発者が理想的です。
 
-チャネルの選択により、デバイスに提供される更新プログラムの種類と頻度が決まります。 ベータ版のデバイスは、更新プログラムと新機能を最初に受け取ったデバイスで、後でプレビュー、最後に現在のデバイスが続きます。
+チャネルの選択により、デバイスに提供される更新プログラムの種類と頻度が決まります。 ベータ版のデバイスは、更新プログラムと新機能を受け取る最初のデバイスであり、後でプレビュー、最後に Current が続きます。
 
 :::image type="content" source="images/insider-rings.png" alt-text="インサイダー リング" lightbox="images/insider-rings.png":::
 
 
-新機能をプレビューし、早期のフィードバックを提供するには、ベータ版またはプレビュー版を使用する一部のデバイスをエンタープライズで構成する必要があります。
+新機能をプレビューし、早期のフィードバックを提供するには、ベータ版またはプレビュー版を使用するように企業内の一部のデバイスを構成することをお勧めします。
 
 > [!WARNING]
 > 初期インストール後にチャネルを切り替えるには、製品を再インストールする必要があります。製品チャネルを切り替えるには: 既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。

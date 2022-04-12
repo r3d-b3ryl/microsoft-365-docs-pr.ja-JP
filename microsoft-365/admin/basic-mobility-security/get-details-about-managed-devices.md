@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Windows PowerShell を使用して、組織内の基本的なモビリティおよびセキュリティ デバイスの詳細を取得します。
-ms.openlocfilehash: 25c7f89dda32121306bfe2434620d17396f2e870
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4cac15e8377370e4bd2f8b359a39aaf830f13d10
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166062"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781075"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>基本的なモビリティとセキュリティの管理対象デバイスに関する詳細を取得する
 
@@ -31,15 +31,15 @@ ms.locfileid: "60166062"
 
 利用可能なデバイスの詳細の内訳は次のとおりです。
 
-|**詳細**|**PowerShell で検索する内容**|
-|:----------------|:------------------------------------------------------------------------------|
-|デバイスは基本的なモビリティとセキュリティに登録されています。 詳細については、「[基本的なモビリティとセキュリティを使用してモバイル デバイスを登録する](enroll-your-mobile-device.md)」を参照してください。| *isManaged*  パラメーターの値: <br/>**True** = デバイスは登録されています。<br/>**False** = デバイスは登録されていません。 |
-|デバイスはデバイス セキュリティ ポリシーに準拠しているかどうか 詳細については、「[デバイス セキュリティ ポリシーの作成](create-device-security-policies.md)」を参照してください。| *isCompliant*  パラメーターの値: <br/>**True**  = デバイスはポリシーに準拠しています。<br/>**False**  = デバイスはポリシーに準拠していません。|
+|詳細|PowerShell で検索する内容|
+|---|---|
+|デバイスは基本的なモビリティとセキュリティに登録されています。 詳細については、「[基本的なモビリティとセキュリティを使用してモバイル デバイスを登録する](enroll-your-mobile-device.md)」を参照してください。|*isManaged* パラメーターの値は次のとおりです。<br/>**True** = デバイスは登録されています。<br/>**False** = デバイスは登録されていません。|
+|デバイスは、デバイスのセキュリティ ポリシーに準拠しています。 詳細については、「[デバイス セキュリティ ポリシーの作成](create-device-security-policies.md)」を参照してください。|*isCompliant* パラメーターの値は次のとおりです。<br/>**True** = デバイスがポリシーに準拠しています。<br/>**False** = デバイスがポリシーに準拠していません。|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="基本的なモビリティとセキュリティの PowerShell パラメーター。":::
 
 > [!NOTE]
-> この記事のコマンドとスクリプトでは、 [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) で管理されるデバイスに関する詳細情報も返されます。
+> この記事のコマンドとスクリプトは、[Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)によって管理されているデバイスに関する詳細も返します。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -47,9 +47,9 @@ ms.locfileid: "60166062"
 
 ### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>手順 1: Windows PowerShell 用 Microsoft Azure Active Directory モジュールをダウンロードして、インストールする
 
-これらの手順の詳細については、「 [PowerShell を使用して Microsoft 365 に接続する](/office365/enterprise/powershell/connect-to-office-365-powershell)」を参照してください。
+これらの手順の詳細については、「[PowerShell でMicrosoft 365するConnect」を](/office365/enterprise/powershell/connect-to-office-365-powershell)参照してください。
 
-1.  [IT プロフェッショナル向け Microsoft Online Services サインイン アシスタント RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)  に移動し、 **Microsoft Online Services サインイン アシスタント用にダウンロード** を選択します。
+1. [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi) に移動し、[**Microsoft Online Services サインイン アシスタント用のダウンロード**] を選択します。
 
 2. 以下の手順に従って、Windows PowerShell の Microsoft Azure Active Directory モジュールをインストールします。
 
@@ -71,7 +71,7 @@ ms.locfileid: "60166062"
    $UserCredential = Get-Credential
    ```
 
-2. [Windows PowerShell 資格情報の要求] ダイアログ ボックスで、Microsoft 365 グローバル管理者アカウントのユーザー名とパスワードを入力してから、**[OK]** を選択します。
+2. [Windows PowerShell資格情報要求] ダイアログ ボックスで、Microsoft 365グローバル管理者アカウントのユーザー名とパスワードを入力し、[OK] を選択 **します**。
 
 3. 次のコマンドを実行します。
 
@@ -86,15 +86,15 @@ ms.locfileid: "60166062"
 
 Get-MsolUserDeviceComplianceStatus.ps1 スクリプトを実行するには、PowerShell スクリプトの実行を有効にする必要があります。
 
-1. Windows デスクトップから [ **スタート**] を選択し、「Windows PowerShell」と入力します。 [Windows PowerShell] を右クリックし、 **[管理者として実行]** を選択します。
+1. Windows デスクトップから **[スタート]** を選択し、「Windows PowerShell」と入力します。 Windows PowerShell右クリックし、[**管理者として実行**] を選択します。
 
 2. 次のコマンドを実行します。
 
    ```powershell
-   Set-ExecutionPolicy  RemoteSigned
+   Set-ExecutionPolicy RemoteSigned
    ```
 
-3. メッセージが表示されたら、「Y」を入力し、Enter キーを押します。
+3. プロンプトが表示されたら、「Y」と入力し、Enter キーを押します。
 
 #### <a name="run-the-get-msoldevice-cmdlet-to-display-details-for-all-devices-in-your-organization"></a>Get-MsolDevice コマンドレットを実行して組織内のすべてのデバイスの詳細情報を表示する
 
@@ -106,7 +106,7 @@ Get-MsolUserDeviceComplianceStatus.ps1 スクリプトを実行するには、Po
    Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}
    ```
 
-その他の例については、「 [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)」を参照してください。
+その他の例については、「[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)」を参照してください。
 
 ## <a name="run-a-script-to-get-device-details"></a>スクリプトを実行してデバイスの詳細情報を取得する
 
@@ -175,7 +175,7 @@ Get-MsolUserDeviceComplianceStatus.ps1 スクリプトを実行するには、Po
    }
    ```
 
-2. ファイル拡張子 .ps1 を使用して、WindowsPowerShell スクリプト ファイルとして保存します。 たとえば、Get-MsolUserDeviceComplianceStatus.ps1 です。
+2. Get-MsolUserDeviceComplianceStatus.ps1など、ファイル拡張子.ps1を使用して、Windows PowerShell スクリプト ファイルとして保存します。
 
 ## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>スクリプトを実行して、単一のユーザー アカウントのデバイス情報を取得する
 

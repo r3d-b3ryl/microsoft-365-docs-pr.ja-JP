@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 管理センタービバインサイトアクティビティ レポート
+title: Microsoft 365 管理センター Viva インサイト アクティビティ レポート
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -17,34 +17,34 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: '[レポート] ダッシュボードMicrosoft 365 Appsで、ビバ インサイトアクティビティの利用状況レポートのMicrosoft 365を取得する方法についてMicrosoft 365 管理センター。'
-ms.openlocfilehash: bb7f36c1db632fc1745c9dbe8f63f9e6f20909b4
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Microsoft 365 管理センターのMicrosoft 365 レポート ダッシュボードで、Viva インサイト アクティビティの使用状況レポートのMicrosoft 365 Appsを取得する方法について説明します。
+ms.openlocfilehash: c0b19871db61f37585384766d4e44ccb602a661b
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400673"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781317"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>Microsoft 365管理センターの [レポート] - [ビバ] インサイトアクティビティ
+# <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>管理センターでレポートをMicrosoft 365する - Viva インサイト アクティビティ
 
-管理者としてMicrosoft 365レポート ダッシュボードには、組織内のさまざまな製品のアクティビティの概要が表示されます。 これにより、各製品に固有のアクティビティについてより詳しく知ることができます。 [アクティビティ] の [アクティビティ レポート] をMicrosoft 365 管理センター。 
+Microsoft 365管理者として、レポート ダッシュボードには、組織内のさまざまな製品にわたるアクティビティの概要が表示されます。 これにより、各製品に固有のアクティビティについてより詳しく知ることができます。 Microsoft 365 管理センターのアクティビティ レポートを確認してください。 
 
-たとえば、アクティブなユーザーを見て、ビバ インサイトの採用を理解できます。 また、組織での導入をさらに促進する展開ガイドも参照できます。
+たとえば、アクティブなユーザーを見て、Viva インサイトの導入を理解できます。 さらに、組織での導入をさらに強化するためのデプロイ ガイドも用意されています。
 
-## <a name="how-do-i-get-to-the-to-the-viva-insights-activity-report"></a>アクティビティ レポートにアクセスするにはインサイト方法を示します。
+## <a name="how-do-i-get-to-the-to-the-viva-insights-activity-report"></a>Viva インサイト アクティビティ レポートにアクセス操作方法。
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
-2. **[ビバ] インサイトアクティビティを検索します**。
+2. **Viva インサイトアクティビティ** を検索します。
 
-## <a name="interpret-the-microsoft-365-apps-usage-report"></a>使用状況レポートMicrosoft 365 Apps解釈する 
+## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Microsoft 365 Apps使用状況レポートを解釈する 
 
-ユーザーのビバ のアクティビティを表示するには、インサイトグラフ **を参照します**。 アクティブなインサイトビバ グラフは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。  
+**アクティブ ユーザー グラフ** を見ると、ユーザーのViva インサイトアクティビティに関するビューを取得できます。 アクティブなユーザー グラフViva インサイト、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。  
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Appsビバ の使用状況レポートをインサイト。](../../media/viva-insights-chart.png)
+> ![Viva インサイトを使用して使用状況レポートをMicrosoft 365 Appsします。](../../media/viva-insights-chart.png)
 
-**アクティブ ユーザー** は、その日に少なくとも 1 つのビバ インサイトユーザーです。 これには、任意のV viva Insight メールに 20 秒間以上住む、インサイト のサーフィンでアクションをクリックまたは実行する、Teams、Outlook アドイン、または Web ダッシュボードでビバ インサイト アプリにアクセスする操作が含まれます。 
+**アクティブ なユーザー** は、その日に少なくとも 1 つのViva インサイト機能に関わっているユーザーです。 これには、Viva Insight の電子メールでの 20 秒以上の居住、インサイトの表示、Teams、Outlook アドイン、または Web ダッシュボードでのViva インサイト アプリへのアクセスに関するアクションのクリックまたは実行が含まれます。 
 
-## <a name="view-the-viva-insights-deployment-guide"></a>ビバ の展開ガイドインサイトする
-[ビバ の **導入を後押しする]** をインサイト [、ビバ の展開ガイドインサイト表示できます](/viva/insights/personal/setup/deployment-guide)。
+## <a name="view-the-viva-insights-deployment-guide"></a>Viva インサイトデプロイ ガイドを表示する
+**[Viva インサイトの導入を強化** する] をクリックすると、[Viva インサイトデプロイ ガイド](/viva/insights/personal/setup/deployment-guide)を表示できます。
 

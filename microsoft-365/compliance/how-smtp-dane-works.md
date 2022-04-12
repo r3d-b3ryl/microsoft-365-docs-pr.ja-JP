@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: SMTP DNS ベースの名前付きエンティティの認証 (DANE) が、メール サーバー間の電子メール通信をセキュリティで保護するためにどのように機能するかを説明します。
-ms.openlocfilehash: 2af2a166ff73bbe7888ed9265ec8733105eb2007
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: b5f9337457556dda53b5b2f982480a4c2501fcc9
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759437"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782855"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>名前付きエンティティの SMTP DNS ベースの認証 (DANE) のしくみ
 
@@ -196,8 +196,8 @@ TLS-RPT [https://datatracker.ietf.org/doc/html/rfc8460](https://datatracker.ietf
 
 これは通常、宛先メール サーバーに関する問題を示します。 リモート接続アナライザーが接続をテストしているメール サーバー。 一般に、このコードを生成するシナリオは 2 つあります。
 
-1.  宛先メール サーバーはセキュリティで保護された通信をまったくサポートしていないため、暗号化されていないプレーンな通信を使用する必要があります。
-2.  移行先サーバーが正しく構成されておらず、STARTTLS コマンドは無視されます。
+1. 宛先メール サーバーはセキュリティで保護された通信をまったくサポートしていないため、暗号化されていないプレーンな通信を使用する必要があります。
+2. 移行先サーバーが正しく構成されておらず、STARTTLS コマンドは無視されます。
 
 メッセージを受信した後:
 

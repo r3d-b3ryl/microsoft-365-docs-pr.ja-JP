@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: a9092ebb941806324646fffd86dd00b54fa87cc6
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ccf72b1f7e5625f3b3b9599a50d734a7316b8659
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714969"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780261"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -48,7 +48,8 @@ ms.locfileid: "64714969"
 - Windows Server 2012 R2
 
 > [!NOTE]
-> Windows Server 2012 R2 の改ざん保護は、最新の統合ソリューション パッケージを使用してMicrosoft Defender for Endpointにオンボードされているデバイスで使用できます。 詳細については、「[Windows Server 2012 R2 および 2016 Preview の最新の統合ソリューションの新機能](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)」を参照してください。
+> Windows Server 2012 R2 の改ざん保護は、最新の統合ソリューション パッケージを使用してオンボードされたデバイスで使用できます。 詳細については、「[Windows サーバーをMicrosoft Defender for Endpoint サービスにオンボードする](/microsoft-365/security/defender-endpoint/configure-server-endpoints)」を参照してください。
+
 
 ## <a name="overview"></a>概要
 
@@ -92,8 +93,8 @@ ms.locfileid: "64714969"
 
 | 改ざん防止を有効にする方法 | クラウド保護への依存 |
 |---|---|
-|Microsoft Intune|いいえ|
-|テナントアタッチを使用したMicrosoft Endpoint Configuration Manager|いいえ|
+|Microsoft Intune|不要|
+|テナントアタッチを使用したMicrosoft Endpoint Configuration Manager|不要|
 |Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))|はい|
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用して組織の改ざん防止を管理する
@@ -174,7 +175,7 @@ ms.locfileid: "64714969"
 [バージョン 2006 のConfiguration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)を使用している場合は、Windows 10、Windows 10 Enterpriseマルチセッション、Windows 11、Windows 11 Enterpriseマルチセッションで改ざん防止設定を管理できます。Windows Server 2012 R2、Windows Server 2016、Windows Server 2019、Windows Server 2022 は、*テナントアタッチ* と呼ばれるメソッドを使用します。 テナント接続を使用すると、オンプレミス専用のConfiguration Manager デバイスをMicrosoft エンドポイント マネージャー管理センターに同期し、エンドポイント セキュリティ構成ポリシーをオンプレミス コレクション&デバイスに配信できます。
 
 > [!NOTE]
-> この手順を使用すると、Windows 10、マルチセッション、Windows 10 Enterprise Windows 11、Windows 11 Enterpriseマルチセッション、Windows Server 2019、Windows Server 2022 を実行しているデバイスに改ざん防止を拡張できます。 この手順で説明されているリソースの前提条件とその他の情報を確認してください。
+> この手順を使用すると、Windows 10、マルチセッション、Windows 10 Enterprise Windows 11、Windows 11 Enterpriseマルチセッション、Windows Server 2019、Windows Server 2022 を実行しているデバイスに改ざん防止を拡張できます。 この手順で説明されているリソースの前提条件とその他の情報を確認してください。 最新の統合ソリューション [バージョン 2203 を実行する Windows Server 2012 R2 では、Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203)が必要です。
 
 1. テナントアタッチを設定します。 詳細については、「[概要: 管理センターからエンドポイント セキュリティ ポリシーを作成してデプロイする」を参照してください](/mem/configmgr/tenant-attach/endpoint-security-get-started)。
 
@@ -211,9 +212,9 @@ Windows セキュリティ アプリに表示される内容は次のとおり�
 
 3. **[改ざん防止****] を [オン] または [オフ] に** 設定 **します**。
 
-## <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>Windows Server 2016、Windows バージョン 1709、1803、または 1809 を使用していますか?
+## <a name="are-you-using-windows-server-2012-r2-2016-or-windows-version-1709-1803-or-1809"></a>Windows Server 2012 R2、2016、またはWindows バージョン 1709、1803、または 1809 を使用していますか?
 
-Windows Server 2016、Windows 10 バージョン 1709、1803、または [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) を使用している場合、Windows セキュリティ アプリに **改ざん防止** は表示されません。 代わりに、PowerShell を使用して、改ざん保護が有効になっているかどうかを判断できます。
+最新の統合ソリューション、Windows Server 2016、Windows 10 バージョン 1709、1803、または [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) を使用して Windows Server 2012 R2 を使用している場合、Windows セキュリティ アプリに **改ざん防止** は表示されません。 代わりに、PowerShell を使用して、改ざん保護が有効になっているかどうかを判断できます。
 
 Windows Server 2016では、改ざん防止が有効になっている場合、設定 アプリはリアルタイム保護の状態を正確に反映しません。
 
@@ -256,7 +257,7 @@ Windows Server 2016では、改ざん防止が有効になっている場合、�
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>改ざん防止は、Windows セキュリティ アプリでの Microsoft 以外のウイルス対策登録に影響しますか?
 
-いいえ。 Microsoft 以外のウイルス対策オファリングは、引き続きWindows セキュリティ アプリケーションに登録されます。
+ちがいます。 Microsoft 以外のウイルス対策オファリングは、引き続きWindows セキュリティ アプリケーションに登録されます。
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>デバイスでMicrosoft Defender ウイルス対策がアクティブでない場合はどうなりますか?
 
@@ -296,7 +297,7 @@ Intuneを使用して改ざん防止を柔軟に構成できます。 組織全�
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>私はエンタープライズ顧客です。 ローカル管理者は、デバイスの改ざん保護を変更できますか?
 
-いいえ。 ローカル管理者は、改ざん防止設定を変更または変更できません。
+ちがいます。 ローカル管理者は、改ざん防止設定を変更または変更できません。
 
 ### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>デバイスがMicrosoft Defender for Endpointでオンボードされ、オフボード状態になった場合はどうなりますか?
 

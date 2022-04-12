@@ -1,5 +1,5 @@
 ---
-title: 基本モビリティとセキュリティの概要 (Microsoft 365
+title: Microsoft 365の基本的なモビリティとセキュリティの概要
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,51 +18,51 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: 基本モビリティとセキュリティを使用して、デバイス のセキュリティ ポリシーとアクセス ルールを設定します。
-ms.openlocfilehash: 4fb1b8ca467d86259f2608af5140510a2a88b23a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Basic Mobility と Security を使用して、デバイス のセキュリティ ポリシーとアクセス規則を設定します。
+ms.openlocfilehash: b4752a6f1b71c453b3d1b89adeb25f337a65c255
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166002"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780855"
 ---
-# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>基本モビリティとセキュリティの概要 (Microsoft 365
+# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Microsoft 365の基本的なモビリティとセキュリティの概要
 
-モバイル デバイスが組織に接続されている場合は、Basic Mobility and Security をMicrosoft 365して、モバイル デバイスを管理および保護できます。 スマートフォンやタブレットなどのモバイル デバイスを使用して仕事の電子メール、予定表、連絡先、ドキュメントにアクセスすることは、社員が自分たちの仕事をいつでも、どこからでも確実に行ううえで大きな役割を果たします。 そのため、ユーザーがデバイスを使用するときに組織の情報を保護する際に役立つ必要があります。 Basic Mobility and Security を使用すると、デバイスのセキュリティ ポリシーとアクセス ルールを設定したり、モバイル デバイスが紛失したり盗まれたりした場合にモバイル デバイスをワイプできます。
+モバイル デバイスがMicrosoft 365組織に接続されている場合は、Basic Mobility and Security を使用して管理し、セキュリティで保護できます。 スマートフォンやタブレットなどのモバイル デバイスを使用して仕事の電子メール、予定表、連絡先、ドキュメントにアクセスすることは、社員が自分たちの仕事をいつでも、どこからでも確実に行ううえで大きな役割を果たします。 そのため、ユーザーがデバイスを使用するときに組織の情報を保護することが重要です。 Basic Mobility と Security を使用して、デバイスのセキュリティ ポリシーとアクセス規則を設定し、モバイル デバイスが紛失または盗難にあった場合はワイプすることができます。
 
 :::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="基本的なモビリティとセキュリティのセットアップ。":::
 
 ## <a name="what-types-of-devices-can-you-manage"></a>管理できるデバイスの種類
 
-Basic Mobility and Security を使用すると、さまざまな種類のモバイル デバイス (Windows Phone、Android、iPhone、iPad。 組織内のユーザーが使用するモバイル デバイスを管理するには、各ユーザーが該当する Microsoft 365 ライセンスを持っている必要があります。デバイスは Basic Mobility and Security に登録する必要があります。
+Basic Mobility and Security を使用すると、Windows Phone、Android、iPhone、iPadなどのさまざまな種類のモバイル デバイスを管理できます。 組織内のユーザーが使用するモバイル デバイスを管理するには、各ユーザーに適用可能なMicrosoft 365 ライセンスが必要であり、そのデバイスは Basic Mobility and Security に登録されている必要があります。
 
-デバイスの種類ごとにサポートされる基本モビリティとセキュリティについては、「基本モビリティとセキュリティの機能」 [を参照してください](capabilities.md)。
+デバイスの種類ごとに Basic Mobility と Security がサポートする内容については、「 [基本的なモビリティとセキュリティの機能」を](capabilities.md)参照してください。
 
-## <a name="setup-steps-for-basic-mobility-and-security"></a>基本モビリティとセキュリティのセットアップ手順
+## <a name="setup-steps-for-basic-mobility-and-security"></a>Basic Mobility and Security のセットアップ手順
 
-グローバルMicrosoft 365管理者は、Basic Mobility and Security をアクティブ化してセットアップするには、次の手順を実行する必要があります。 詳細な手順については、「基本モビリティとセキュリティのセットアップ [」のガイダンスに従います](set-up.md)。 
+Microsoft 365グローバル管理者は、基本的なモビリティとセキュリティをアクティブ化して設定するには、次の手順を完了する必要があります。 詳細な手順については、「 [基本的なモビリティとセキュリティのセットアップ」](set-up.md)のガイダンスに従ってください。 
 
 手順の概要は次のとおりです。
 
-**手順 1:** 基本モビリティとセキュリティのセットアップの手順に従って、基本モビリティとセキュリティ  [をアクティブ化します](set-up.md)。
+**手順 1:** 基本的なモビリティとセキュリティの設定の手順に従って [、基本的なモビリティとセキュリティを](set-up.md)アクティブ化します。
 
-**手順 2:** たとえば、IOS デバイスを管理するための ADN 証明書を作成し、ドメインのドメイン ネーム システム (DNS Windows) レコードを追加して電話をサポートするなどして、基本モビリティとセキュリティを設定します。
+**手順 2:** たとえば、iOS デバイスを管理する APN 証明書を作成し、ドメインのドメイン ネーム システム (DNS) レコードを追加して、Windows電話をサポートするなどして、基本的なモビリティとセキュリティを設定します。
 
-**手順 3:** デバイス ポリシーを作成し、ユーザーのグループに適用します。 この操作を行う場合、ユーザーは自分のデバイスで登録メッセージを受け取り、登録が完了すると、デバイスは設定したポリシーによって制限されます。 詳細については、「Basic [Mobility and Security を使用してモバイル デバイスを登録する」を参照してください](enroll-your-mobile-device.md)。 
+**手順 3:** デバイス ポリシーを作成し、ユーザーのグループに適用します。 これを行うと、ユーザーはデバイスに登録メッセージを受け取り、登録が完了すると、デバイスは設定したポリシーによって制限されます。 詳細については、「 [Basic Mobility and Security を使用してモバイル デバイスを登録する」](enroll-your-mobile-device.md)を参照してください。 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なセキュリティポリシーとモビリティ ポリシー設定。":::
+:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なセキュリティとモビリティのポリシー設定。":::
 
 ## <a name="device-management-tasks"></a>デバイス管理タスク
 
-Basic Mobility and Security がセットアップされ、ユーザーがデバイスを登録した後、必要に応じてデバイスの管理、アクセスのブロック、デバイスのワイプを行えます。 タスクを実行する場所など、一般的なデバイス管理タスクの詳細については、「モバイル デバイス管理に登録されているデバイスを管理する」を参照[Microsoft 365。](manage-enrolled-devices.md)
+Basic Mobility and Security を設定し、ユーザーがデバイスを登録したら、必要に応じてデバイスの管理、アクセスのブロック、デバイスのワイプを行うことができます。 タスクを完了する場所など、一般的なデバイス管理タスクの詳細については、「[モバイル デバイス管理に登録されているデバイスをMicrosoft 365用に管理する」を](manage-enrolled-devices.md)参照してください。
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>デバイスとアプリを管理するその他の方法
 
-モバイル アプリ管理 (MAM) が必要な場合(おそらく、ユーザーが自分のデバイスで作業プロジェクトを更新する場合)、Intune にはデバイスの登録と管理以外に別のオプションがあります。 Intune サブスクリプションを使用すると、ユーザーのデバイスが Intune に登録されていない場合でも、Azure ポータルを使用して MAM ポリシーを設定できます。 詳細については、「アプリ保護 [ポリシーの概要」を参照してください](/mem/intune/apps/app-protection-policy)。
+モバイル アプリ管理 (MAM) が必要な場合は、おそらく自分のデバイスで作業プロジェクトを更新するユーザーに対して、デバイスの登録と管理以外に別のオプションIntune用意されています。 Intune サブスクリプションを使用すると、ユーザーのデバイスがIntuneに登録されていない場合でも、Azure portalを使用して MAM ポリシーを設定できます。 詳細については、「[アプリ保護 ポリシーの概要](/mem/intune/apps/app-protection-policy)」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[基本モビリティとセキュリティのセットアップ](set-up.md) (記事)\
-[基本モビリティとセキュリティを使用してモバイル デバイスを登録](enroll-your-mobile-device.md) する (記事)\
-[モバイル デバイス管理に登録されているデバイスを管理する](manage-enrolled-devices.md)(Microsoft 365)\
-[Basic Mobility and Security が管理するデバイスの詳細を取得](get-details-about-managed-devices.md) する (記事)
+[基本的なモビリティとセキュリティの設定](set-up.md) (記事)\
+[Basic Mobility and Security を使用してモバイル デバイスを登録](enroll-your-mobile-device.md) する (記事)\
+[モバイル デバイス管理 for Microsoft 365に登録されているデバイスを管理する](manage-enrolled-devices.md) (記事)\
+[Basic Mobility and Security によって管理されているデバイスの詳細を取得](get-details-about-managed-devices.md) する (記事)

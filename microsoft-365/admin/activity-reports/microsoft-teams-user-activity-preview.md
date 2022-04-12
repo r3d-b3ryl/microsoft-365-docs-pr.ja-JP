@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams ユーザー アクティビティ レポートを取得し、組織内のTeams アクティビティに関する分析情報を取得する方法について説明します。
-ms.openlocfilehash: dd2a507276077a808fcd5e0881eb26dfcd0a91ef
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: a5261261a1a1cb7b2039b646c3dbbd92c5f43688
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738266"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781657"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理センターの Microsoft 365 レポート - Microsoft Teams ユーザー アクティビティ
 

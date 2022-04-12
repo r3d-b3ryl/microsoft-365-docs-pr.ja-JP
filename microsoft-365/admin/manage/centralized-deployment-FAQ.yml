@@ -20,49 +20,49 @@ metadata:
   - BCS160
   - MET150
   - MOE150
-  description: 中央集中展開に関するよくある質問に対する回答を、Microsoft 365 管理センター。
-  ms.openlocfilehash: 6ac70b49a563dad62b824df8933843adb9daeaeb
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  description: Microsoft 365 管理センターからの一元展開に関するよくある質問への回答を確認します。
+  ms.openlocfilehash: 1433b1d0c5eee508ed1908908d90c75e26b4aa76
+  ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63680052"
+  ms.lasthandoff: 04/12/2022
+  ms.locfileid: "64782437"
 title: 一元展開に関する FAQ
-summary: Office 365 管理者が組織内のユーザーとグループに Office アドイン (Word、Excel、PowerPoint、および Outlook) を展開する場合は、この記事で説明した集中展開を使用するためのすべての要件を満たしている場合に、集中展開が推奨されます。
+summary: 組織がこの記事で説明したように、一元展開を使用するためのすべての要件を満たしている場合、Office 365管理者は、組織内のユーザーとグループにOfficeアドイン (Word、Excel、PowerPoint、Outlook) を展開することをお勧めします。
 sections:
 - name: 無視
   questions:
   - question: >
-      組織が集中展開用に設定されているかどうかは、どのように確認できますか?
-    answer: "アドインの一元的な展開では、ユーザーが Microsoft 365 Apps for enterprise を使用し (組織のログイン資格情報を使用して Office にサインインしている) 必要があります。また、Exchange Online メールボックスを持っている必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリ内にあるか、またはフェデレーションされている必要Azure Active Directory。 \n \n集中展開は、オンライン メールボックスでのみサポートされます。 オンプレミスのメールボックスへの展開はExchangeされません。\n\n集中展開互換性 [チェックを使用](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) して、サブスクリプションが適格かどうかを判断できます。 \n  \n"
+      組織が一元展開用に設定されているかどうかを確認操作方法。
+    answer: "アドインを一元的に展開するには、ユーザーがMicrosoft 365 Apps for enterpriseを使用していて (組織のログイン資格情報を使用してOfficeにサインインしている)、Exchange Onlineメールボックスが必要です。 サブスクリプション ディレクトリは、Azure Active Directoryに存在するか、フェデレーションされている必要があります。 \n \n一元展開は、オンライン メールボックスでのみサポートされます。 オンプレミスのExchangeメールボックスへの展開はサポートされていません。\n\n[一元展開互換性チェッカー](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)を使用して、サブスクリプションが対象かどうかを判断できます。 \n  \n"
   - question: >
-      集中展開を使用してアドインのユーザー割り当てをターゲットに設定する方法
-    answer: "集中展開は、テナント内の個々のユーザー、グループ、およびすべてのユーザーへの割り当てをサポートします。 集中展開は、上位レベルのグループまたは親グループのないグループのユーザーには使用できますが、ネストされたグループまたは親グループを持つグループのユーザーには使用できません。 集中展開は、グループ、配布リスト、セキュリティ グループAzure Active Directory含むOffice 365グループの一部です。 \n\n管理を容易にするために、個々のユーザー割り当てではなくグループ割り当てを使用する方が良いです。\n \n詳細については、「ユーザーと [グループの割り当て」を参照してください](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)。\n \n"
-  - question: "アドインがすべてのユーザーに表示されるのにどれくらいの時間が必要ですか? \n"
-    answer: "アドインがすべてのユーザーに表示するには、最大 24 時間かかる場合があります。 アドインの更新、オンまたはオフからの変更、アドインの削除に同じ時間がかかる場合があります。 \n"
+      一元展開を使用してアドイン ユーザーの割り当てをターゲットにする方法
+    answer: "一元展開では、テナント内の個々のユーザー、グループ、および全員への割り当てがサポートされます。 一元展開は、最上位のグループまたは親グループのないグループのユーザーには使用できますが、入れ子になったグループまたは親グループを持つグループのユーザーには使用できません。 一元展開は、Office 365 グループ、配布リスト、セキュリティ グループなど、ほとんどのAzure Active Directory グループの一部でもあります。 \n\n管理を容易にするために、個々のユーザー割り当てではなく、グループの割り当てを使用することをお勧めします。\n \n詳細については、「 [ユーザーとグループの割り当て](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)」を参照してください。\n \n"
+  - question: "アドインがすべてのユーザーに表示されるまでにどれくらいの時間がかかりますか? \n"
+    answer: "アドインがすべてのユーザーに表示されるまでには、最大で 24 時間かかる場合があります。 アドインの更新、ターンオンまたはオフからの変更、またはアドインの削除に同じ時間がかかる場合があります。 \n"
   - question: >
-      管理者として、組織のアドインへのユーザー アクセスを管理する方法
+      管理者として、組織のアドインへのユーザー アクセスを管理するにはどうすればよいですか?
     answer: >
-      ユーザー、グループ、または組織全体にアドインを簡単に展開するには、管理者が集中展開を使用することをお勧めします。
+      ユーザー、グループ、または組織全体にアドインを簡単に展開するには、管理者が一元展開を使用することをお勧めします。
 
 
-      ユーザー アクセスの管理の詳細については、以下を参照してください。
-       - [すべてのクライアントで Office ストアをオフにしてアドインのダウンロードを防止する (Outlook を除く)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+      ユーザー アクセスの管理の詳細については、次を参照してください。
+       - [すべてのクライアントで Office ストアをオフにしてアドインのダウンロードを防止する (Outlookを除く)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
        - [Outlook 用のアドインをインストールおよび管理できる管理者とユーザーを指定する](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
-  - question: "一元展開では、管理者はアドインの展開方法を柔軟に選択Outlook提供されますか? \n"
-    answer: "はい。 一元展開では、管理者は、アドインの展開中に、Outlookアドインに対して 2 つの展開方法のいずれかを柔軟に選択できます。\n         \n**使用可能** ユーザーは、[ホーム] を選択して Outlookアドインをインストール>管理者が管理>**アドインをインストールできます**。\n \n**省略可能** アドインは割り当てられたユーザーに自動的に展開されますが、削除を選択できます。\n    \n"
-  - question: "管理者は、LINE-of-Business (LOB) アドインを更新できますか? \n"
-    answer: "はい。 管理者は、管理者が展開した LOB アドインのメタデータ変更をサポートするために、新しいマニフェスト ファイルをアップロードできます。アドインは、次にアプリケーションを起動Office更新します。 Web アプリケーションはいつでも変更できます。\n \n詳細については、「 [line-of-business アドイン」を参照してください](./manage-addins-in-the-admin-center.md)。  \n"
-  - question: "管理者はアドインをオフにできますか? \n"
+  - question: "一元展開では、アドインの展開方法を柔軟に選択Outlook管理者に提供されますか? \n"
+    answer: "はい。 一元配置により、管理者は、アドインの展開中にアドインをOutlookするための 2 つのデプロイ方法のいずれかを柔軟に選択できます。\n         \n**利用 可能** ユーザーは、[ホーム] > [その他のアドインの **取得] > [管理者管理] を選択して、アドインをOutlookに** インストールできます。\n \n**オプション** アドインは割り当てられたユーザーに自動的にデプロイされますが、削除することもできます。\n    \n"
+  - question: "管理者は基幹業務 (LOB) アドインを更新できますか? \n"
+    answer: "はい。 管理者は、新しいマニフェスト ファイルをアップロードして、管理者がデプロイした LOB アドインのメタデータ変更をサポートできます。アドインは、Office アプリケーションが次回起動すると更新されます。 Web アプリケーションはいつでも変更できます。\n \n詳細については、「 [基幹業務](./manage-addins-in-the-admin-center.md)アドイン」を参照してください。  \n"
+  - question: "管理者はアドインを無効にできますか? \n"
     answer: >
-      はい。 管理者は、Microsoft 管理センターからすべてのユーザーに展開するアドインをオンまたはオフにできます。
+      はい。 管理者は、Microsoft 管理センターからすべてのユーザーに展開するアドインを有効または無効にすることができます。
 
 
-      詳細については、「アドインの [状態」を参照してください](./manage-addins-in-the-admin-center.md#add-in-states)。
+      詳細については、「 [アドインの状態](./manage-addins-in-the-admin-center.md#add-in-states)」を参照してください。
   - question: >
       管理者はアドインを削除または削除できますか?
-    answer: "はい。 管理者は、Microsoft 管理センターからすべてのユーザーに展開したアドインを削除できます。\n\n詳細については、「Delete [an add-in」を参照してください](./manage-addins-in-the-admin-center.md#delete-an-add-in)。 \n  \n"
-  - question: "管理者は、集中展開を使用して、Officeストアから有料アドインを展開できますか? \n"
-    answer: "いいえ。 現時点では、集中展開を使用して、Officeストアから有料アドインを展開できます。 \n \nマニフェスト ファイルまたは URL を要求するには、有料アドインの ISV 開発者に手を差し伸べることです。 テナント管理者は、集中展開を使用して、アドインを LOB アドインとして展開できます。\n   \n"
-  - question: "組織のアドインを管理するために必要な管理者の役割は何ですか? \n"
-    answer: "グローバル管理者は、アドイン管理ライフサイクルへの完全なアクセス権を持つ推奨される役割です。 ビジネス サブスクリプションを購入したユーザー Microsoft 365、グローバル管理者です。\n\nサブスクリプションには、組織内の他のユーザーに割り当て可能な一連の管理者ロールが付属しています。 各管理者の役割は、一般的なビジネス機能にマップされ、組織内のユーザーに対して、組織内のユーザーが特定のタスクを実行するためのアクセス許可をMicrosoft 365 管理センター。  \n \n詳細については、「管理者ロールの割り [当て」を参照してください](../add-users/assign-admin-roles.md?view=o365-worldwide)。"
+    answer: "はい。 管理者は、Microsoft 管理センターからすべてのユーザーに展開したアドインを削除できます。\n\n詳細については、「 [アドインを削除する」を](./manage-addins-in-the-admin-center.md#delete-an-add-in)参照してください。 \n  \n"
+  - question: "管理者は、一元展開を使用してOffice ストアから有料アドインを展開できますか? \n"
+    answer: "ちがいます。 現時点では、一元展開を使用してOffice ストアから有料アドインをデプロイすることはできません。 \n \nマニフェスト ファイルまたは URL を要求するために、有料アドインの ISV 開発者に連絡することをお勧めします。 テナント管理者は、一元展開を使用して、アドインを LOB アドインとしてデプロイできます。\n   \n"
+  - question: "組織のアドインを管理するには、どの管理者ロールが必要ですか? \n"
+    answer: "グローバル管理者は、アドイン管理ライフサイクルに完全にアクセスできる、推奨されるロールです。 Microsoft 365 Business サブスクリプションを購入したユーザーは、グローバル管理者です。\n\nサブスクリプションには、組織内の他のユーザーに割り当てることができる一連の管理者ロールが付属しています。 各管理者ロールは、一般的なビジネス機能にマップされ、組織内のユーザーに、Microsoft 365 管理センターで特定のタスクを実行するためのアクセス許可を付与します。  \n \n詳細については、「 [管理者ロールの割り当て](../add-users/assign-admin-roles.md?view=o365-worldwide)」を参照してください。"

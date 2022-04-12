@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: f402df53c19da78435e22717577b351fc302d0f4
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 0a3b036a60d3ec24533056b38ff1e68be9875aa0
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679964"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761375"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -34,7 +34,7 @@ ms.locfileid: "63679964"
 
 ## <a name="prerequisites"></a>前提条件
 
-ライセンス要件については、「[Information Protection: データ分類分析: Over Content とアクティビティ エクスプローラー](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)」 を参照してください。
+ライセンス要件については、「[Information Protection: データ分類分析: 概要コンテンツとアクティビティ エクスプローラー](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)」 を参照してください。
 
 ### <a name="permissions"></a>アクセス許可
 
@@ -101,7 +101,7 @@ ms.locfileid: "63679964"
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-[機密ラベル](sensitivity-labels.md)は、組織に対するアイテムの価値を示すタグです。 手動で、または自動的に適用することができます。 適用すると、ドキュメントに埋め込まれ、ドキュメントがどこへ移動されても機密ラベルは保持されます。 機密ラベルによって、必須のウォーターマークや暗号化など、さまざまな保護機能が有効化されます。
+[機密ラベル](sensitivity-labels.md)は、組織に対するアイテムの価値を示すタグです。 手動で、または自動的に適用することができます。 適用すると、ラベルがドキュメントに埋め込まれ、ドキュメントがどこへ移動されてもラベルはドキュメントにしたがって移動します。 機密ラベルによって、必須のウォーターマークや暗号化など、さまざまな保護機能が有効化されます。
 
 SharePoint および OneDrive にあるファイルに対応するデータがデータ分類ページに表示されるようにするには、機密度ラベルを有効にする必要があります。 詳細については、「[SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)」を参照してください。
 

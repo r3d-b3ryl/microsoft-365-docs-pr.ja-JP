@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7d24fe9a20c54a24a9c3406c66c1c591790bafc5
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 34bf757ee545d45f7faccdefaf1e8aa57e9cb961
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667386"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783449"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のパフォーマンス アナライザー
 
@@ -56,14 +56,14 @@ ms.locfileid: "64667386"
 1. 次のコマンドを実行して記録を開始します。
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
- 
+
     ここで `-RecordTo` 、パラメーターはトレース ファイルを保存する完全なパスの場所を指定します。 コマンドレットの詳細については、「[Microsoft Defender ウイルス対策コマンドレット](/powershell/module/defender)」を参照してください。
 
 2. パフォーマンスに影響を与えると考えられるプロセスまたはサービスがある場合は、関連するタスクを実行して状況を再現します。
 
 3. **Enter キー** を押して記録を停止して保存するか、**Ctrl + C キーを押** して記録を取り消します。
 
-4. パフォーマンス アナライザーのパラメーターを使用して結果を `Get-MpPerformanceReport`分析します。 たとえば、コマンド `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`を実行すると、パフォーマンスに影響を与える上位 3 つのファイルに対する上位 10 個のスキャンの一覧がユーザーに提供されます。 
+4. パフォーマンス アナライザーのパラメーターを使用して結果を `Get-MpPerformanceReport`分析します。 たとえば、コマンド `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`を実行すると、パフォーマンスに影響を与える上位 3 つのファイルに対する上位 10 個のスキャンの一覧がユーザーに提供されます。
 
 コマンド ライン のパラメーターとオプションの詳細については、 [New-MpPerformanceRecording](#new-mpperformancerecording) と [Get-MpPerformanceReport](#get-mpperformancereport) を参照してください。
 
@@ -72,7 +72,7 @@ ms.locfileid: "64667386"
 
 ### <a name="performance-tuning-data-and-information"></a>パフォーマンスチューニングのデータと情報
 
-クエリに基づいて、ユーザーはスキャン数、期間 (合計/最小/平均/最大/中央値)、パス、プロセス、およびスキャンの理由のデータを表示できます。 次の図は、スキャンの影響を受けるための上位 10 ファイルの単純なクエリの出力例を示しています。 
+クエリに基づいて、ユーザーはスキャン数、期間 (合計/最小/平均/最大/中央値)、パス、プロセス、およびスキャンの理由のデータを表示できます。 次の図は、スキャンの影響を受けるための上位 10 ファイルの単純なクエリの出力例を示しています。
 
 :::image type="content" source="images/example-output.png" alt-text="基本的な TopFiles クエリの出力例" lightbox="images/example-output.png":::
 
@@ -92,6 +92,7 @@ ms.locfileid: "64667386"
 - **変換するには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
 ### <a name="requirements"></a>要件
+
 パフォーマンス アナライザー Microsoft Defender ウイルス対策次の前提条件があります。
 
 - サポートされているWindows バージョン: Windows 10、Windows 11、Windows Server 2016 以降
@@ -99,11 +100,11 @@ ms.locfileid: "64667386"
 - PowerShell バージョン: PowerShell バージョン 5.1、PowerShell ISE、リモート PowerShell (4.18.2201.10 以降)、PowerShell 7.x (4.18.2201.10 以降)
 
 ## <a name="powershell-reference"></a>PowerShell リファレンス
-Microsoft Defender ウイルス対策のパフォーマンスを調整するために使用される新しい PowerShell コマンドレットは 2 つあります。 
+
+Microsoft Defender ウイルス対策のパフォーマンスを調整するために使用される新しい PowerShell コマンドレットは 2 つあります。
 
 - [New-MpPerformanceRecording](#new-mpperformancerecording)
 - [Get-MpPerformanceReport](#get-mpperformancereport)
-
 
 ### <a name="new-mpperformancerecording"></a>New-MpPerformanceRecording
 
@@ -116,6 +117,7 @@ New-MpPerformanceRecording -RecordTo <String >
 ```
 
 #### <a name="description-new-mpperformancerecording"></a>説明: New-MpPerformanceRecording
+
 このコマンドレットは`New-MpPerformanceRecording`、Microsoft Defender ウイルス対策 スキャンのパフォーマンス記録を収集します。 これらのパフォーマンス記録には、Microsoft-Antimalware-Engine および NT カーネル プロセス イベントが含まれており、 [Get-MpPerformanceReport](#get-mpperformancereport) コマンドレットを使用してコレクション後に分析できます。
 
 この`New-MpPerformanceRecording`コマンドレットは、Microsoft Defender ウイルス対策のパフォーマンスの低下を引き起こす可能性のある問題のあるファイルに関する分析情報を提供します。 このツールは "AS IS" として提供され、除外に関する提案を提供することを目的としていません。 除外すると、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
@@ -125,7 +127,7 @@ New-MpPerformanceRecording -RecordTo <String >
 > [!IMPORTANT]
 > このコマンドレットには管理者特権が必要です。
 
-**サポートされている OS のバージョン**
+**サポートされている OS バージョン**:
 
 Windows バージョン 10 以降。
 
@@ -154,24 +156,26 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 #### <a name="parameters-new-mpperformancerecording"></a>パラメーター: New-MpPerformanceRecording
 
 ##### <a name="-recordto"></a>-RecordTo
+
 Microsoft Defender マルウェア対策のパフォーマンス記録を保存する場所を指定します。
 
 ```yaml
 Type: String
 Position: Named
 Default value: None
-Accept pipeline input: False 
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-##### <a name="-session"></a>-Session 
+##### <a name="-session"></a>-Session
+
 Microsoft Defender ウイルス対策パフォーマンス記録を作成して保存する PSSession オブジェクトを指定します。 このパラメーターを使用すると、RecordTo パラメーターはリモート コンピューター上のローカル パスを参照します。 Defender プラットフォーム バージョン 4.18.2201.10 で使用できます。
 
 ```yaml
 Type: PSSession[]
 Position: 0
 Default value: None
-Accept pipeline input: False 
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -186,10 +190,10 @@ Get-MpPerformanceReport    [-Path] <String>
 [-TopScans <Int32>]
 [-TopFiles  <Int32>
     [-TopScansPerFile <Int32>]
-    [-TopProcessesPerFile  <Int32>  
+    [-TopProcessesPerFile  <Int32>
         [-TopScansPerProcessPerFile <Int32>]
     ]
-] 
+]
 [-TopExtensions  <Int32>
     [-TopScansPerExtension <Int32>]
     [-TopProcessesPerExtension <Int32>
@@ -198,7 +202,7 @@ Get-MpPerformanceReport    [-Path] <String>
     [-TopFilesPerExtension  <Int32>
         [-TopScansPerFilePerExtension <Int32>]
         ]
-    ] 
+    ]
 ]
 [-TopProcesses  <Int32>
     [-TopScansPerProcess <Int32>]
@@ -213,13 +217,14 @@ Get-MpPerformanceReport    [-Path] <String>
 ```
 
 #### <a name="description-get-mpperformancereport"></a>説明: Get-MpPerformanceReport
+
 このコマンドレットは`Get-MpPerformanceReport`、以前に収集されたMicrosoft Defender ウイルス対策パフォーマンス記録 ([New-MpPerformanceRecording](#new-mpperformancerecording)) を分析し、Microsoft Defender ウイルス対策 スキャンに最も大きな影響を与えるファイル パス、ファイル拡張子、プロセスを報告します。
 
 パフォーマンス アナライザーは、Microsoft Defender ウイルス対策のパフォーマンスの低下を引き起こす可能性のある問題のあるファイルに関する分析情報を提供します。 このツールは "AS IS" として提供され、除外に関する提案を提供することを目的としていません。 除外すると、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
 
 パフォーマンス アナライザーの詳細については、[パフォーマンス アナライザードキュメントを](/windows-hardware/test/wpt/windows-performance-analyzer)参照してください。
 
-**サポートされている OS のバージョン**
+**サポートされている OS バージョン**:
 
 Windows バージョン 10 以降。
 
@@ -228,19 +233,19 @@ Windows バージョン 10 以降。
 
 #### <a name="examples-get-mpperformancereport"></a>例: Get-MpPerformanceReport
 
-##### <a name="example-1-single-query"></a>例 1: 単一クエリ 
+##### <a name="example-1-single-query"></a>例 1: 単一クエリ
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:20
 ```
 
-##### <a name="example-2-multiple-queries"></a>例 2: 複数のクエリ 
+##### <a name="example-2-multiple-queries"></a>例 2: 複数のクエリ
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10
 ```
 
-##### <a name="example-3-nested-queries"></a>例 3: 入れ子になったクエリ 
+##### <a name="example-3-nested-queries"></a>例 3: 入れ子になったクエリ
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensionsPerProcess:3 -TopScansPerExtensionPerProcess:3
@@ -255,17 +260,19 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:10
 #### <a name="parameters-get-mpperformancereport"></a>パラメーター: Get-MpPerformanceReport
 
 ##### <a name="-minduration"></a>-MinDuration
+
 レポートに含まれるファイル、拡張機能、およびプロセスのスキャンまたは合計スキャン期間の最小期間を指定します。は  **、0.1234567sec**、 **0.1234ms**、 **0.1us**、または有効な TimeSpan などの値を受け入れます。
 
 ```yaml
 Type: String
 Position: Named
 Default value: None
-Accept pipeline input: False 
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ##### <a name="-path"></a>-Path
+
 1 つ以上の場所へのパスを指定します。
 
 ```yaml
@@ -276,7 +283,8 @@ Accept pipeline input: True
 Accept wildcard characters: False
 ```
 
-### <a name="-topextensions"></a>-TopExtensions 
+### <a name="-topextensions"></a>-TopExtensions
+
 出力する上位の拡張機能の数を指定します。"Duration" で並べ替えられます。
 
 ```yaml
@@ -287,7 +295,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess 
+### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess
+
 "Duration" で並べ替えられた各上位プロセスの出力する上位拡張機能の数を指定します。
 
 ```yaml
@@ -299,8 +308,8 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfiles"></a>-TopFiles
-上位ファイル レポートを要求し、出力する上位ファイルの数を "Duration" で並べ替えて指定します。
 
+上位ファイル レポートを要求し、出力する上位ファイルの数を "Duration" で並べ替えて指定します。
 
 ```yaml
 Type: Int32
@@ -310,9 +319,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfilesperextension"></a>-TopFilesPerExtension 
-上部の拡張子ごとに出力する上位ファイルの数を指定します。"Duration" で並べ替えられます。
+### <a name="-topfilesperextension"></a>-TopFilesPerExtension
 
+上部の拡張子ごとに出力する上位ファイルの数を指定します。"Duration" で並べ替えられます。
 
 ```yaml
 Type: Int32
@@ -323,6 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
+
 "Duration" で並べ替えられた各トップ プロセスの出力する上位ファイルの数を指定します。
 
 ```yaml
@@ -334,6 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topprocesses"></a>-TopProcesses
+
 最上位プロセス レポートを要求し、出力する上位プロセスの数を "Duration" で並べ替えて指定します。
 
 ```yaml
@@ -344,9 +355,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension 
-上位拡張機能ごとに出力する上位プロセスの数を指定します。"Duration" で並べ替えられます。
+### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension
 
+上位拡張機能ごとに出力する上位プロセスの数を指定します。"Duration" で並べ替えられます。
 
 ```yaml
 Type: Int32
@@ -356,10 +367,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-
 ### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
-上位ファイルごとに出力する上位プロセスの数を指定し、"Duration" で並べ替えて指定します。
 
+上位ファイルごとに出力する上位プロセスの数を指定し、"Duration" で並べ替えて指定します。
 
 ```yaml
 Type: Int32
@@ -370,9 +380,9 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscans"></a>-TopScans
+
 トップ スキャン レポートを要求し、出力する上位スキャンの数を "期間" で並べ替えて指定します。
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -380,12 +390,11 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-
 
 ### <a name="-topscansperextension"></a>-TopScansPerExtension
+
 上位拡張機能ごとに出力するトップ スキャンの数を指定し、"Duration" で並べ替えます。
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -394,11 +403,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess
 
-### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess 
 上位プロセスごとに出力する上位スキャンの数を指定し、"Duration" で並べ替えます。
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -406,12 +414,11 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-
 
 ### <a name="-topscansperfile"></a>-TopScansPerFile
+
 "Duration" で並べ替えられた各トップ ファイルの出力するトップ スキャンの数を指定します。
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -420,10 +427,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension 
+### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension
+
 上位の拡張子ごとに出力する上位スキャンの数を指定し、"Duration" で並べ替えます。
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -432,11 +439,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess
 
-### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess 
 "Duration" で並べ替えられた、各トップ プロセスの上位ファイルごとの出力のトップ スキャンの数を指定します。
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -445,10 +451,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### <a name="-topscansperprocess"></a>-TopScansPerProcess
 
-### <a name="-topscansperprocess"></a>-TopScansPerProcess 
 上位プロセス レポートの上位プロセスごとに出力する上位スキャンの数を指定し、"期間" で並べ替えます。
-
 
 ```yaml
 Type: Int32
@@ -459,8 +464,8 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
-"Duration" で並べ替えられた各上位プロセスの出力のトップ スキャンの数を指定します。
 
+"Duration" で並べ替えられた各上位プロセスの出力のトップ スキャンの数を指定します。
 
 ```yaml
 Type: Int32
@@ -471,8 +476,8 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
-"Duration" で並べ替えられた各トップ ファイルの上位プロセスごとの出力のトップ スキャンの数を指定します。
 
+"Duration" で並べ替えられた各トップ ファイルの上位プロセスごとの出力のトップ スキャンの数を指定します。
 
 ```yaml
 Type: Int32

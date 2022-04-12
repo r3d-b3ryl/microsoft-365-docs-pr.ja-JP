@@ -14,80 +14,80 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-description: ビジネス向けリモートワークに関する最新情報、ヒント、リソース、ガイダンスをMicrosoft 365。
-ms.openlocfilehash: 5da67dd419668957d947c9568688774adc01e763
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Microsoft 365を使用する企業のリモート作業に関する最新のハウツー情報、ヒント、リソース、ガイダンスを確認します。
+ms.openlocfilehash: 1eb2e6a9b41c0bf290e2355eb424d2cf22d65492
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312713"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782063"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>リモート ワークで小規模ビジネスを強化する
 
-企業がリモートで作業し、顧客と仮想的に接続する必要性の高いニーズに合わせて、このサイトは、Microsoft 365 を使用する企業のリモート作業に関する最新の方法情報、ヒント、リソース、ガイダンスで更新されます。
+企業がリモートで仕事をし、顧客と仮想接続する必要性の高まりに適応するにつれて、このサイトは、Microsoft 365を使用する企業のリモート作業に関する最新のハウツー情報、ヒント、リソース、ガイダンスで更新されます。
 
 > [!TIP]
-> ファイルがMicrosoft_Teams? 無料で 6 かMicrosoft TeamsをOffice (1 年間サインアップする場合) を取得します。 この記事で説明するテクノロジを、オファーの一部として取得します。 詳細については、「 [Try 1 month free」を参照してください](https://aka.ms/SMBTeamsOffer)。
+> Microsoft_Teamsがありませんか? Officeで 6 か月間のMicrosoft Teamsを無料で入手する (1 年間サインアップする場合)。 この記事で説明されているテクノロジをオファーの一部として取得します。 詳細については、「 [1 か月無料で試す](https://aka.ms/SMBTeamsOffer)」を参照してください。
 
-## <a name="remote-work-for-your-small-business-video"></a>小規模ビジネス向けリモートワーク (ビデオ)
+## <a name="remote-work-for-your-small-business-video"></a>小規模ビジネス向けのリモート作業 (ビデオ)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tf7i?autoplay=false]
 
 ## <a name="transitioning-to-a-remote-workforce"></a>リモートワークフォースへの移行
 
-COVID-19 (Novel Coronavirus) の流行に照らして、多くのビジネスオーナーは完全にリモートワークスタッフを持っています。 リモート作業を安全、安全、生産性に移行するために実行できる操作を次に示します。
+COVID-19 (Novel Coronavirus) の発生に照らして、多くのビジネスオーナーは完全にリモートの作業スタッフで自分自身を見つけている。 リモートワークへの移行を安全、安全、生産性に移行するためにできることは次のとおりです。
 
-詳細については、「小規模ビジネスでのビジネス[のMicrosoft Teamsを参照してください](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)。
+詳細については、[小規模ビジネスのMicrosoft Teamsに関する概要を参照してください](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)。
 
-サブスクリプションは既に持っていますが、セットアップが必要ですか? 「小規模[Microsoft 365トレーニング」を参照してください](../../business-video/index.yml)。
+サブスクリプションは既にありますが、セットアップが必要ですか? [小規模ビジネス トレーニングMicrosoft 365](../../business-video/index.yml)参照してください。
 
-## <a name="connect-with-employees-and-customers"></a>Connect顧客との情報の提供
+## <a name="connect-with-employees-and-customers"></a>従業員と顧客とのConnect
 
-顔を合わせても、従業員、顧客、クライアント、パートナーと接続できます。 ビジネスMicrosoft Teams顧客との接続を続けるには、このツールを使用します。
+顔を合わせることができない場合でも、従業員、顧客、クライアント、パートナーとつながることができます。 Microsoft Teamsを使用して、引き続きビジネスを行い、顧客とつながる。
 
-### <a name="meet-up-in-teams"></a>お会いTeams
+### <a name="meet-up-in-teams"></a>Teamsで会う
 
-従業員、顧客、またはパートナーと音声、ビデオ、Web 会議をホストするには、Microsoft Teams。
+Microsoft Teamsを通じて、従業員、顧客、またはパートナーとオーディオ、ビデオ、Web 会議をホストします。
 
-詳細については、「Host [online Meetings and](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92) Chat with [employees and customers」を参照してください](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92)。
+詳細については、「 [オンライン会議をホスト](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92) し、 [従業員や顧客とチャットする](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92)」を参照してください。
 
 ### <a name="store-and-share-files"></a>ファイルの保存と共有
 
-ビジネス ドキュメントをクラウドに入れて、社内と外部の両方で安全に共有します。
+ビジネス ドキュメントをクラウドに配置し、内部と外部の両方で安全に共有します。
 
-詳細については、「ビジネス ファイルの共有[とファイルの](../../business-video/overview-file-sharing.md)共有と共有アップロード[概要」を参照してください](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)。
+詳細については、[ビジネス ファイルとアップロードファイルの共有と共有の概要](../../business-video/overview-file-sharing.md)に関するページを参照してください。[](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)
 
-### <a name="collaborate-with-customers"></a>顧客との共同作業
+### <a name="collaborate-with-customers"></a>顧客と共同作業する
 
-従業員と顧客をチームに招待して、チームと直接協力して、すべての調整と共同作業を 1 か所で行えます。
+従業員と顧客をチームに招待して、チームと直接連携して、すべてを 1 か所で調整し、共同作業できるようにします。
 
-詳細については、「チームを作成 [する」および「ゲスト アクセス](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f) を [有効にする」を参照してください](/MicrosoftTeams/guest-access)。
+詳細については、「 [チームの作成](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f) と [ゲスト アクセスの有効化」を](/MicrosoftTeams/guest-access)参照してください。
 
-## <a name="manage-and-secure-your-business-to-run-remotely"></a>リモートで実行するためのビジネスの管理とセキュリティ保護
+## <a name="manage-and-secure-your-business-to-run-remotely"></a>リモートで実行するビジネスを管理し、セキュリティで保護する
 
-ほんの数ステップで、リモートの従業員やゲスト ユーザーでもビジネスを安全に保つのに役立ちます。
+リモートの従業員やゲスト ユーザーでも、ビジネスを安全に保つのに役立つ手順はほんの一部です。
 
-### <a name="secure-your-users"></a>ユーザーのセキュリティ保護
+### <a name="secure-your-users"></a>ユーザーをセキュリティで保護する
 
-データとデバイスを保護するには、多要素認証を使用します。
+多要素認証を使用して、データとデバイスを保護します。
 
-詳細については、「多要素認証 [を有効にする」を参照してください](../security-and-compliance/set-up-multi-factor-authentication.md)。
+詳細については、「 [多要素認証を有効にする」](../security-and-compliance/set-up-multi-factor-authentication.md)を参照してください。
 
 ### <a name="secure-your-devices"></a>デバイスをセキュリティで保護する
 
-PC と電話をリモートで管理し、保護され、最新の情報を提供します。 ビジネスMicrosoft 365必要です。
+PC と電話をリモートで管理し、それらが保護され、最新であることを確認します。 ビジネスMicrosoft 365必要です。
 
-詳細については、「デバイスの管理 [」を参照してください](../../business-video/secure-win-10-pro-devices.md)。
+詳細については、「デバイスの [管理](../../business-video/secure-win-10-pro-devices.md)」を参照してください。
 
-### <a name="more-for-admins-and-partners"></a>管理者とパートナー向け詳細
+### <a name="more-for-admins-and-partners"></a>管理者とパートナー向けのその他
 
-ビジネス向けテクニカル ドキュメント ハブMicrosoft 365、新しいセキュリティで保護されたリモート作業ガイダンスで更新されます。
+Microsoft 365 Business の技術ドキュメント ハブは、新しいセキュリティで保護されたリモート作業ガイダンスで更新されます。
 
-詳細については、「ビジネス リソース[Microsoft 365参照してください](/microsoft-365/business)。
+詳細については、「[Microsoft 365 Business リソース」を](/microsoft-365/business)参照してください。
 
 ## <a name="need-to-ask-a-question"></a>質問する必要がありますか?
 
-[管理者] [フォーラムTeams管理者](https://answers.microsoft.com/msteams/forum)[フォーラムOfficeします](https://answers.microsoft.com)。
+[Teams フォーラム](https://answers.microsoft.com/msteams/forum)または[Office管理者フォーラム](https://answers.microsoft.com)で確認します。
 
 > [!NOTE]
-> この記事とビデオのほとんどのタスクは、Microsoft 365 Business Basic (以前は Office 365 Business Essentials) のサブスクリプションで実行できますが、一部のタスクではプレミアム サブスクリプションが必要です。
+> この記事とビデオのほとんどのタスクは、Microsoft 365 Business Basic (以前はOffice 365 Business Essentials) のサブスクリプションで実行できますが、一部のタスクではプレミアム サブスクリプションが必要です。

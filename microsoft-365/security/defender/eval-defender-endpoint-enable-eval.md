@@ -1,6 +1,6 @@
 ---
-title: エンドポイント評価用 Microsoft Defender を有効にする
-description: ライセンス状態Microsoft 365 Defenderオンボーディング エンドポイントなど、テスト ラボまたはパイロット環境を有効にする
+title: Microsoft Defender for Endpoint評価を有効にする
+description: ライセンス状態の確認やエンドポイントのオンボードなど、Microsoft 365 Defender試用版ラボまたはパイロット環境を有効にする
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,77 +21,77 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a12c81635f712dd0fac70101348d30bc1dc4f154
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 2acde87daaff88ec9ce7458218919342a9f1edd8
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754624"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782503"
 ---
-# <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>エンドポイント評価環境で Microsoft Defender を有効にする
+# <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Microsoft Defender for Endpoint評価環境を有効にする
 
 
-この記事では、実稼働デバイスを使用して Microsoft Defender for Endpoint の評価環境をセットアップする手順について説明します。 
+この記事では、運用デバイスを使用してMicrosoft Defender for Endpointの評価環境を設定する手順について説明します。 
 
 
 > [!TIP]
-> Microsoft Defender for Endpoint には、事前に構成されたデバイスを追加し、シミュレーションを実行してプラットフォームの機能を評価できる製品内評価ラボも付属しています。 このラボには、高度な狩猟や脅威分析などの多くの機能に関するガイダンスを含む、Microsoft Defender for Endpoint の価値をすばやく実証するのに役立つ、簡略化されたセットアップ エクスペリエンスが付属しています。 詳細については、「評価機能 [」を参照してください](../defender-endpoint/evaluation-lab.md)。 <br> この記事で提供されるガイダンスと評価ラボの主な違いは、評価環境が実稼働デバイスを使用するのに対し、評価ラボでは非実稼働デバイスを使用する点です。 
+> Microsoft Defender for Endpointには、事前構成済みのデバイスを追加し、シミュレーションを実行してプラットフォームの機能を評価できる製品内評価ラボも付属しています。 ラボには、高度なハンティングや脅威分析などの多くの機能のガイダンスを含め、Microsoft Defender for Endpointの価値を迅速に示すのに役立つ簡略化されたセットアップ エクスペリエンスが付属しています。 詳細については、「機能の [評価](../defender-endpoint/evaluation-lab.md)」を参照してください。 <br> この記事で説明するガイダンスと評価ラボの主な違いは、評価環境で運用デバイスが使用されるのに対し、評価ラボでは非運用デバイスが使用されていることです。 
 
-Microsoft Defender for Endpoint の評価を有効にするには、次の手順を使用します。
+次の手順を使用して、Microsoft Defender for Endpointの評価を有効にします。
 
-:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="Microsoft Defender 評価環境で Microsoft Defender for Endpoint を有効にする手順" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="Microsoft Defender 評価環境でMicrosoft Defender for Endpointを有効にする手順" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
 
 - [手順 1.ライセンスの状態を確認する](#step-1-check-license-state)
-- [手順 2.オンボード エンドポイント](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
+- [手順 2.エンドポイントをオンボードする](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
 
 
 ## <a name="step-1-check-license-state"></a>手順 1. ライセンスの状態を確認する
 
-まず、ライセンス状態を確認して、ライセンスが適切にプロビジョニングされていることを確認する必要があります。 これを行うには、管理センターまたはポータルから **Microsoft Azureできます**。
+まず、ライセンスの状態を確認して、適切にプロビジョニングされたことを確認する必要があります。 これを行うには、管理センターまたは **Microsoft Azure ポータル** を使用します。
 
 
-1. ライセンスを表示するには、Microsoft Azureポータルに **移動** し、[Microsoft Azure [] セクションに移動します](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. ライセンスを表示するには、**Microsoft Azure ポータル** に移動し、[Microsoft Azure ポータルのライセンス セクション](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)に移動します。
 
-   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="ポータルの [Azure ライセンス] ページMicrosoft 365 Defenderします。" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
+   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="Microsoft 365 Defender ポータルの [Azure ライセンス] ページ" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
-1. または、管理センターで [**BillingSubscriptions** > ] に移動します。
+1. または、管理センターで **BillingSubscriptions** >  に移動します。
 
-    画面には、すべてのプロビジョニング済みライセンスと現在の状態が表示 **されます**。
+    画面に、プロビジョニングされたすべてのライセンスとその現在の **状態** が表示されます。
 
-    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="[請求ライセンス] ページ (Microsoft Azure ポータル)" lightbox="../../media/defender/atp-billing-subscriptions.png":::
+    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="Microsoft Azure ポータルの [課金ライセンス] ページ" lightbox="../../media/defender/atp-billing-subscriptions.png":::
     
 
-## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2。 サポートされている管理ツールを使用したオンボード エンドポイント
+## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2. サポートされている管理ツールのいずれかを使用してエンドポイントをオンボードする
 
-ライセンス状態が適切にプロビジョニングされていることを確認した後、サービスへのデバイスのオンボーディングを開始できます。 
+ライセンス状態が適切にプロビジョニングされたことを確認したら、サービスへのデバイスのオンボードを開始できます。 
 
-Microsoft Defender for Endpoint の評価を行う目的で、評価を実行する 2 Windowsデバイスを選択することをお勧めします。
+Microsoft Defender for Endpointを評価するために、評価を実施するWindowsデバイスをいくつか選択することをお勧めします。
 
-サポートされている管理ツールを使用することもできますが、Intune は最適な統合を提供します。 詳細については、「Configure [Microsoft Defender for Endpoint in Microsoft Intune」を参照してください](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)。
+サポートされている管理ツールのいずれかを使用することもできますが、Intuneは最適な統合を提供します。 詳細については、「[Microsoft IntuneでのMicrosoft Defender for Endpointの構成](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)」を参照してください。
 
-「 [展開の計画」](../defender-endpoint/deployment-strategy.md) トピックでは、Defender for Endpoint の展開に必要な一般的な手順について説明します。  
+[「計画展開」](../defender-endpoint/deployment-strategy.md)トピックでは、Defender for Endpoint をデプロイするために必要な一般的な手順について説明します。  
 
-オンボーディング プロセスの概要と、使用可能なツールと方法について詳しくは、このビデオをご覧ください。
+このビデオでは、オンボード プロセスの概要と、使用可能なツールと方法について説明します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
-### <a name="onboarding-tool-options"></a>オンボーディング ツールのオプション
+### <a name="onboarding-tool-options"></a>オンボード ツールのオプション
 
-次の表に、オンボードする必要があるエンドポイントに基づいて使用可能なツールを示します。
+次の表に、オンボードする必要があるエンドポイントに基づいて使用可能なツールの一覧を示します。
 
 エンドポイント | ツール オプション
 :---|:---
-**Windows** | [ローカル スクリプト (最大 10 台のデバイス)](../defender-endpoint/configure-endpoints-script.md)、[](../defender-endpoint/configure-endpoints-gp.md)グループ ポリシー、[Microsoft エンドポイント マネージャー/](../defender-endpoint/configure-endpoints-mdm.md)モバイル デバイス マネージャー、[Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md)、[VDI スクリプト](../defender-endpoint/configure-endpoints-vdi.md)、[Microsoft Defender for Cloud との統合](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
+**Windows** | [ローカル スクリプト (最大 10 台のデバイス)](../defender-endpoint/configure-endpoints-script.md)、[グループ ポリシー](../defender-endpoint/configure-endpoints-gp.md)、[Microsoft エンドポイント マネージャー/モバイル デバイス マネージャー](../defender-endpoint/configure-endpoints-mdm.md)、[Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md)、[VDI スクリプト](../defender-endpoint/configure-endpoints-vdi.md)、[との統合Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
 **macOS** | [ローカル スクリプト](../defender-endpoint/mac-install-manually.md)、[Microsoft エンドポイント マネージャー](../defender-endpoint/mac-install-with-intune.md)、[JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)、[モバイル デバイス管理](../defender-endpoint/mac-install-with-other-mdm.md)
-**Linux Server** | [ローカル スクリプト](../defender-endpoint/linux-install-manually.md)、[Puppet](../defender-endpoint/linux-install-with-puppet.md)[、Ansible](../defender-endpoint/linux-install-with-ansible.md)
+**Linux Server** | [ローカル スクリプト](../defender-endpoint/linux-install-manually.md)、  [Puppet](../defender-endpoint/linux-install-with-puppet.md)、  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [アプリベース](../defender-endpoint/ios-install.md)
 **Android** | [Microsoft エンドポイント マネージャー](../defender-endpoint/android-intune.md)
 
 
 
-## <a name="next-step"></a>次の手順
-[Microsoft Defender for Endpoint のパイロットをセットアップする](eval-defender-endpoint-pilot.md)
+## <a name="next-step"></a>次のステップ
+[Microsoft Defender for Endpointのパイロットをセットアップする](eval-defender-endpoint-pilot.md)
  
-エンドポイントの Microsoft Defender の [評価の概要に戻る](eval-defender-endpoint-overview.md)
+[Microsoft Defender for Endpointの評価](eval-defender-endpoint-overview.md)の概要に戻る
 
-[評価とパイロット] [の概要に戻Microsoft 365 Defender](eval-overview.md)
+[評価とパイロットのMicrosoft 365 Defender](eval-overview.md)の概要に戻る

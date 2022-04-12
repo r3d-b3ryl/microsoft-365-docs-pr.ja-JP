@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 911deac49606116ca7aece9d37a9aa3d7164fe3f
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 51d5814d718c1422d493f5227b311a58f99f7a82
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665318"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783273"
 ---
 # <a name="microsoft-virus-initiative"></a>Microsoft ウイルス イニシアチブ
 
@@ -31,28 +31,28 @@ Microsoft Virus Initiative (MVI) は、組織がパフォーマンス、信頼�
 
 MVI プログラムの対象となるには、組織が次のすべての要件を満たしている必要があります。
 
-1)  セキュリティ ソリューションは、Microsoft Defender ウイルス対策を置き換えるか、または補完します。
+1. セキュリティ ソリューションは、Microsoft Defender ウイルス対策を置き換えるか、または補完します。
 
-2)  組織は、Windowsとの互換性に対処するエンド カスタマーにアプリ更新プログラムの開発と配布の両方を担当します。
+2. 組織は、Windowsとの互換性に対処するエンド カスタマーにアプリ更新プログラムの開発と配布の両方を担当します。
 
-3)  業界会議への参加や、AV-Comparatives、OPSWAT、Gartner などの業界標準のレポートでのレビューによって証明されているように、組織はマルウェア対策業界で活動し、肯定的な評判を持っている必要があります。
+3. 業界会議への参加や、AV-Comparatives、OPSWAT、Gartner などの業界標準のレポートでのレビューによって証明されているように、組織はマルウェア対策業界で活動し、肯定的な評判を持っている必要があります。
 
-4)  組織は、Microsoft と秘密保持契約 (NDA) に署名する必要があります。
+4. 組織は、Microsoft と秘密保持契約 (NDA) に署名する必要があります。
 
-5)  組織は、プログラムライセンス契約に署名する必要があります。 このライセンス契約を維持するには、マルウェア対策アプリのすべてのプログラム要件に従う必要があります。 これらの要件は、Windowsとの適切な相互作用を確保するために必要なマルウェア対策アプリの動作を定義します。
+5. 組織は、プログラムライセンス契約に署名する必要があります。 このライセンス契約を維持するには、マルウェア対策アプリのすべてのプログラム要件に従う必要があります。 これらの要件は、Windowsとの適切な相互作用を確保するために必要なマルウェア対策アプリの動作を定義します。
 
-6)  定期的なパフォーマンス テストと機能レビューのために、アプリを Microsoft に送信する必要があります。
+6. 定期的なパフォーマンス テストと機能レビューのために、アプリを Microsoft に送信する必要があります。
 
-7)  ソリューションは、少なくとも 1 つの業界標準組織による独立したテストを通じて認定される必要があり、毎年の認定を維持する必要があります。
+7. ソリューションは、少なくとも 1 つの業界標準組織による独立したテストを通じて認定される必要があり、毎年の認定を維持する必要があります。
 
-テスト プロバイダー | ラボ テストの種類 | 最小レベル/スコア
-------------- |---------------|----------------------
-AV-Comparatives | Real-World保護テスト </br> https://www.av-comparatives.org/testmethod/real-world-protection-tests/ |AV の比較から "承認済み" の評価
-AV-Test | Windowsのテストに合格する必要があります。 Mac と Linux の認定は受け付けられません </br> https://www.av-test.org/en/about-the-institute/certification/ | "AV-TEST 認定済み" (自宅ユーザー向け) または "AV-TEST 承認済み" (企業ユーザー向け) を達成する
-ICSA Labs | エンドポイントマルウェア対策検出 </br> https://www.icsalabs.com/technology-program/anti-virus/criteria |PASS/Certified
-SKD Labs | 認定要件製品: ウイルス対策またはマルウェア対策 </br> http://www.skdlabs.com/html/english/ </br> http://www.skdlabs.com/cert/ |SKD Labs Star Check Certification Requirements Pass >= 98.5% (オンデマンド、On Access、Total Detection テスト) 
-VB 100 |    VB100 認定テスト V1.1 </br> https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/ | VB100 認定
-West Coast Labs |   Checkmark Certified </br> http://www.checkmarkcertified.com/sme/  | 製品のセキュリティ パフォーマンスに関する "A" 評価
+|テスト プロバイダー|ラボ テストの種類|最小レベル/スコア|
+|-------------|---------------|----------------------|
+|AV-Comparatives|Real-World保護テスト </br> <https://www.av-comparatives.org/testmethod/real-world-protection-tests/>|AV の比較から "承認済み" の評価|
+|AV-Test|Windowsのテストに合格する必要があります。 Mac と Linux の認定は受け付けられません </br> <https://www.av-test.org/en/about-the-institute/certification/>|"AV-TEST 認定済み" (自宅ユーザー向け) または "AV-TEST 承認済み" (企業ユーザー向け) を達成する|
+|ICSA Labs|エンドポイントマルウェア対策検出 </br> <https://www.icsalabs.com/technology-program/anti-virus/criteria>|PASS/Certified|
+|SKD Labs|認定要件製品: ウイルス対策またはマルウェア対策 </br> <http://www.skdlabs.com/html/english/> </br> <http://www.skdlabs.com/cert/>|SKD Labs Star Check Certification Requirements Pass >= 98.5% (オンデマンド、On Access、Total Detection テスト)|
+|VB 100|VB100 認定テスト V1.1 </br> <https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/>|VB100 認定|
+|West Coast Labs|Checkmark Certified </br> <http://www.checkmarkcertified.com/sme/>|製品のセキュリティ パフォーマンスに関する "A" 評価|
 
 ## <a name="apply-now"></a>今すぐ適用する
 
