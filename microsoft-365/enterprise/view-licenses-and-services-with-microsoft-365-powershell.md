@@ -1,5 +1,5 @@
 ---
-title: PowerShell Microsoft 365ライセンスとサービスを表示する
+title: PowerShell を使用してMicrosoft 365ライセンスとサービスを表示する
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,32 +19,97 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: PowerShell を使用して、組織で利用可能なライセンス プラン、サービス、ライセンスに関する情報を表示するMicrosoft 365します。
-ms.openlocfilehash: 3b90596c68e3beadcc2b33ef59ff9c3503b84f8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: PowerShell を使用して、Microsoft 365組織で使用できるライセンスプラン、サービス、ライセンスに関する情報を表示する方法について説明します。
+ms.openlocfilehash: 8b5ff01f15e4dea7a44b423609b6533cc5729a5f
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195271"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823896"
 ---
-# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>PowerShell Microsoft 365ライセンスとサービスを表示する
+# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>PowerShell を使用してMicrosoft 365ライセンスとサービスを表示する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-サブスクリプションMicrosoft 365は、次の要素で構成されます。
+すべてのMicrosoft 365サブスクリプションは、次の要素で構成されます。
 
-- **ライセンス プラン** これらは、ライセンス プランまたはライセンス プランMicrosoft 365されます。 ライセンス プランは、ユーザーがMicrosoft 365サービスを定義します。 サブスクリプションMicrosoft 365複数のライセンス プランが含まれている場合があります。 ライセンス計画の例は、Microsoft 365 E3。
+- **ライセンス プラン** これらは、ライセンス プランまたはMicrosoft 365 プランとも呼ばれます。 ライセンス プランは、ユーザーが利用できるMicrosoft 365 サービスを定義します。 Microsoft 365 サブスクリプションには、複数のライセンス プランが含まれている場合があります。 ライセンス プランの例をMicrosoft 365 E3。
     
-- **サービス** これらはサービス プランとも呼ばれる。 サービスは、Microsoft 365 Exchange Online および Microsoft 365 Apps for enterprise (以前に名前が付けられた Office 365 ProPlus) など、各ライセンス プランで利用可能な Microsoft 365 製品、機能、および機能です。 ユーザーは、さまざまなサービスへのアクセスを許可するさまざまなライセンス プランから割り当てられた複数のライセンスを持つことができます。
+- **サービス** これらはサービス プランとも呼ばれます。 サービスは、Exchange OnlineやMicrosoft 365 Apps for enterprise (以前は名前が付けられたOffice 365 ProPlus) など、各ライセンス プランで使用できるMicrosoft 365製品、機能、および機能です。 ユーザーは、さまざまなサービスへのアクセスを許可するさまざまなライセンス プランから割り当てられた複数のライセンスを持つことができます。
     
-- **ライセンス** 各ライセンスプランには、購入したライセンスの数が含まれています。 ユーザーにライセンスを割り当て、ライセンス 計画Microsoft 365サービスを使用できます。 すべてのユーザー アカウントには、1 つのライセンス プランから少なくとも 1 つのライセンスが必要なので、ユーザーはサービスにログオンしてMicrosoft 365使用できます。
+- **ライセンス** 各ライセンス プランには、購入したライセンスの数が含まれています。 ライセンス プランで定義されているMicrosoft 365 サービスを使用できるように、ユーザーにライセンスを割り当てます。 すべてのユーザー アカウントには、Microsoft 365にログオンしてサービスを使用できるように、1 つのライセンス プランから少なくとも 1 つのライセンスが必要です。
     
-PowerShell を使用して、Microsoft 365組織で利用可能なライセンス プラン、ライセンス、サービスの詳細を表示Microsoft 365できます。 別の Office 365 サブスクリプションで利用可能な製品、機能、サービスについての詳細は、「[Office 365 プランのオプション](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)」を参照してください。
+PowerShell を使用して、Microsoft 365組織で使用可能なライセンス プラン、ライセンス、およびサービスの詳細 Microsoft 365を表示できます。 別の Office 365 サブスクリプションで利用可能な製品、機能、サービスについての詳細は、「[Office 365 プランのオプション](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)」を参照してください。
 
+
+## <a name="use-the-microsoft-graph-powershell-sdk"></a>Microsoft Graph PowerShell SDK を使用する
+
+まず、[Microsoft 365 テナントに接続します](/graph/powershell/get-started#authentication)。
+
+サブスクリプション ライセンス プランを読み取る場合は、Organization.Read.All アクセス許可スコープ、または[参照ページの [List subscribedSkus] Graph APIに一覧表示されている](/graph/api/subscribedsku-list)他のアクセス許可のいずれかが必要です。
+
+```powershell
+Connect-Graph -Scopes Organization.Read.All
+```
+
+現在のライセンス プランと各プランで使用可能なライセンスに関する概要情報を表示するには、次のコマンドを実行します。
+  
+```powershell
+Get-MgSubscribedSku | Select -Property Sku*, ConsumedUnits -ExpandProperty PrepaidUnits | Format-List
+```
+
+結果には次のものが含まれます。
+  
+- **SkuPartNumber:** 組織で使用可能なライセンス プランを表示します。 たとえば、 `ENTERPRISEPACK` Office 365 Enterprise E3 のライセンス プラン名です。
+    
+- **有効：** 特定のライセンス プランで購入したライセンスの数。
+    
+- **ConsumedUnits:** 特定のライセンス プランでユーザーに割り当てたライセンスの数。
+    
+すべてのライセンス プランで使用できるMicrosoft 365 サービスの詳細を表示するには、最初にライセンス プランの一覧を表示します。
+
+```powershell
+Get-MgSubscribedSku
+```
+
+次に、ライセンス プラン情報を変数に格納します。
+
+```powershell
+$licenses = Get-MgSubscribedSku
+```
+
+次に、特定のライセンス プランでサービスを表示します。
+
+```powershell
+$licenses[<index>].ServicePlans
+```
+
+\<index> は、コマンドの表示 `Get-MgSubscribedSku | Select SkuPartNumber` からライセンス プランの行番号を指定する整数で、1 を引いた値です。
+
+たとえば、コマンドの表示が次の `Get-MgSubscribedSku | Select SkuPartNumber` 場合です。
+
+```powershell
+SkuPartNumber
+-------------
+WIN10_VDA_E5
+EMSPREMIUM
+ENTERPRISEPREMIUM
+FLOW_FREE
+```
+
+次に、ENTERPRISEPREMIUM ライセンス プランのサービスを表示するコマンドは次のとおりです。
+
+```powershell
+$licenses[2].ServicePlans
+```
+
+ENTERPRISEPREMIUM は 3 番目の行です。 したがって、インデックス値は (3 から 1)、または 2 です。
+
+ライセンス プラン (製品名とも呼ばれます)、含まれるサービス プラン、および対応するフレンドリ名の完全な一覧については、 [ライセンスの製品名とサービス プラン識別子に関するページを](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)参照してください。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+まず、[Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 現在のライセンス プランと各プランで使用可能なライセンスに関する概要情報を表示するには、次のコマンドを実行します。
   
@@ -52,21 +117,21 @@ PowerShell を使用して、Microsoft 365組織で利用可能なライセン�
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
 ```
 
-結果には次の情報が含まれる。
+結果には次のものが含まれます。
   
-- **SkuPartNumber:** 組織で利用可能なライセンス プランを表示します。 たとえば `ENTERPRISEPACK` 、E3 のライセンス プランOffice 365 Enterpriseします。
+- **SkuPartNumber:** 組織で使用可能なライセンス プランを表示します。 たとえば、 `ENTERPRISEPACK` Office 365 Enterprise E3 のライセンス プラン名です。
     
-- **有効:** 特定のライセンス プランで購入したライセンスの数。
+- **有効：** 特定のライセンス プランで購入したライセンスの数。
     
 - **ConsumedUnits:** 特定のライセンス プランでユーザーに割り当てたライセンスの数。
     
-すべてのライセンス プランで利用可能Microsoft 365サービスの詳細を表示するには、まずライセンス プランの一覧を表示します。
+すべてのライセンス プランで使用できるMicrosoft 365 サービスの詳細を表示するには、最初にライセンス プランの一覧を表示します。
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-次に、ライセンス プランの情報を変数に格納します。
+次に、ライセンス プラン情報を変数に格納します。
 
 ```powershell
 $licenses = Get-AzureADSubscribedSku
@@ -78,9 +143,9 @@ $licenses = Get-AzureADSubscribedSku
 $licenses[<index>].ServicePlans
 ```
 
-\<index> は、コマンドの表示からライセンス プランの行番号を指定する整数で、1 を `Get-AzureADSubscribedSku | Select SkuPartNumber` 引いた値です。
+\<index> は、コマンドの表示 `Get-AzureADSubscribedSku | Select SkuPartNumber` からライセンス プランの行番号を指定する整数で、1 を引いた値です。
 
-たとえば、コマンドの表示が `Get-AzureADSubscribedSku | Select SkuPartNumber` 次の場合です。
+たとえば、コマンドの表示が次の `Get-AzureADSubscribedSku | Select SkuPartNumber` 場合です。
 
 ```powershell
 SkuPartNumber
@@ -91,22 +156,22 @@ ENTERPRISEPREMIUM
 FLOW_FREE
 ```
 
-次に、ENTERPRISEPREMIUM ライセンス プランのサービスを表示するコマンドは次のコマンドです。
+次に、ENTERPRISEPREMIUM ライセンス プランのサービスを表示するコマンドは次のとおりです。
 
 ```powershell
 $licenses[2].ServicePlans
 ```
 
-ENTERPRISEPREMIUM は 3 行目です。 したがって、インデックス値は (3 ~ 1)、または 2 です。
+ENTERPRISEPREMIUM は 3 番目の行です。 したがって、インデックス値は (3 から 1)、または 2 です。
 
-ライセンス プラン (製品名とも呼ばれる) の完全な一覧、付属のサービス プラン、対応する表示名については、「ライセンスの製品名とサービス プラン識別子」を [参照してください](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
+ライセンス プラン (製品名とも呼ばれます)、含まれるサービス プラン、および対応するフレンドリ名の完全な一覧については、 [ライセンスの製品名とサービス プラン識別子に関するページを](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)参照してください。
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+まず、[Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 >[!Note]
->このトピックで説明されている手順を自動化する PowerShell スクリプトが利用可能です。 具体的には、このスクリプトを使用すると、Sway を含む、Microsoft 365のサービスを表示および無効にできます。 詳細については [、「PowerShell を使用して Sway へのアクセスを無効にする」を参照してください](disable-access-to-sway-with-microsoft-365-powershell.md)。
+>このトピックで説明されている手順を自動化する PowerShell スクリプトが利用可能です。 具体的には、このスクリプトを使用すると、Swayを含む、Microsoft 365組織内のサービスを表示および無効にすることができます。 詳細については、「[PowerShell を使用してSwayへのアクセスを無効にする](disable-access-to-sway-with-microsoft-365-powershell.md)」を参照してください。
 >
     
 現在のライセンス プランと各プランで使用可能なライセンスに関する概要情報を表示するには、次のコマンドを実行します。
@@ -121,7 +186,7 @@ Get-MsolAccountSku
 
 結果には次の情報が含まれます。
   
-- **AccountSkuId:** 構文を使用して、組織で利用可能なライセンス プランを表示します `<CompanyName>:<LicensingPlan>` 。  _\<CompanyName>_ は、ユーザーが組織に登録するときに指定Microsoft 365、組織に固有の値です。 _\<LicensingPlan>_ の値は、すべてのユーザーに対して同じです。 たとえば、値 `litwareinc:ENTERPRISEPACK` では、会社名が `litwareinc`、ライセンス プラン名が  `ENTERPRISEPACK` で、これが Office 365 Enterprise E3 のシステム名になります。
+- **AccountSkuId:** 構文 `<CompanyName>:<LicensingPlan>`を使用して、組織で使用可能なライセンス プランを表示します。  _\<CompanyName>_ は、Microsoft 365に登録したときに指定した値であり、組織に対して一意です。 _\<LicensingPlan>_ の値は、すべてのユーザーに対して同じです。 たとえば、値 `litwareinc:ENTERPRISEPACK` では、会社名が `litwareinc`、ライセンス プラン名が  `ENTERPRISEPACK` で、これが Office 365 Enterprise E3 のシステム名になります。
     
 - **ActiveUnits:** 特定のライセンス プランで購入したライセンスの数。
     
@@ -129,13 +194,13 @@ Get-MsolAccountSku
     
 - **ConsumedUnits:** 特定のライセンス プランでユーザーに割り当てたライセンスの数。
     
-すべてのライセンス プランで使用可能Microsoft 365サービスの詳細を表示するには、次のコマンドを実行します。
+すべてのライセンス プランで使用できるMicrosoft 365 サービスの詳細を表示するには、次のコマンドを実行します。
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-次の表に、最も一Microsoft 365サービスプランの名前と、その親近名を示します。 実際のサービス プランの一覧とは、異なる場合があります。 
+次の表は、Microsoft 365サービス プランとその最も一般的なサービスのフレンドリ名を示しています。 実際のサービス プランの一覧とは、異なる場合があります。 
   
 |**サービス プラン**|**説明**|
 |:-----|:-----|
@@ -143,21 +208,21 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(以前に名前が付Office 365 ProPlus)*  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(以前の名前Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online プラン 2  <br/> |
    
-ライセンス プラン (製品名とも呼ばれる) の完全な一覧、付属のサービス プラン、対応する表示名については、「ライセンスの製品名とサービス プラン識別子」を [参照してください](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
+ライセンス プラン (製品名とも呼ばれます)、含まれるサービス プラン、および対応するフレンドリ名の完全な一覧については、 [ライセンスの製品名とサービス プラン識別子に関するページを](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)参照してください。
 
-特定のライセンス プランでMicrosoft 365サービスの詳細を表示するには、次の構文を使用します。
+特定のライセンス プランで使用できるMicrosoft 365 サービスの詳細を表示するには、次の構文を使用します。
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
-次の使用例は、litwareinc:ENTERPRISEPACK (Office 365 Enterprise E3) ライセンス プランで利用できるサービスを示しています。
+この例は、litwareinc:ENTERPRISEPACK (Office 365 Enterprise E3) ライセンス プランで利用できるサービスを示しています。
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus

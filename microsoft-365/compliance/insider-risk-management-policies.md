@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b515e50cf5ff22d77076017526f59ccd5f3779b7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 7f77ca2f53e05291533395d3de5a860e9444732c
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782107"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824028"
 ---
 # <a name="insider-risk-management-policies"></a>インサイダー リスクの管理。
 
@@ -104,9 +104,9 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 医療記録データを保護し、患者個人データの誤用を防ぐことは、医療業界の組織にとって大きな懸念事項です。 この誤用には、許可されていない人への機密データの漏えい、患者レコードの不正な変更、患者の医療記録の盗難が含まれる場合があります。 この患者データの誤用を防ぐことは、ユーザーによる認識の欠如、過失、または詐欺によっても、医療保険の可搬性と説明責任に関する法律 (HIPAA) と医療情報技術 (HITECH) 法の規制要件を満たす上で重要な要素でもあります。これらの両方の行為は、患者保護された健康情報 (PHI) を保護するための要件を確立します。
 
-このポリシー テンプレートを使用すると、既存の電子医療レコード (EMR) システムでホストされているレコードに関連する疑わしいアクティビティを検出する内部ユーザーのリスク スコアリングが可能になります。 検出では、患者データへの不正アクセス、表示、変更、およびエクスポートに重点を置きます。 コネクタ (お使いの EMR システムでのアクセス、流出、または難読化アクティビティの検出をサポートする [Microsoft Healthcare コネクタ](import-healthcare-data.md) または [エピック コネクタ](import-epic-data.md) ) を構成する必要があります。
+このポリシー テンプレートを使用すると、既存の電子医療レコード (EMR) システムでホストされているレコードに関連する疑わしいアクティビティを検出する内部ユーザーのリスク スコアリングが可能になります。 検出では、患者データへの不正アクセス、表示、変更、およびエクスポートに重点を置きます。 お使いの EMR システムでのアクセス、流出、または難読化アクティビティの検出をサポートするために、 [Microsoft Healthcare コネクタ](import-healthcare-data.md) または [エピック コネクタのコネクタ](import-epic-data.md) を構成する必要があります。
 
-このテンプレートを使用する場合は、組織内のユーザーの組織プロファイル データを定期的にインポートするように、Microsoft 365人事コネクタも構成する必要があります。 組織用の HR コネクタの段階的な構成手順については「Microsoft 365 HR コネクタでデータをインポートする」を参照してください。
+このテンプレートを使用する場合は、組織内のユーザーの組織プロファイル データを定期的にインポートするように、Microsoft 365人事コネクタも構成する必要があります。 組織の Microsoft 365 HR コネクタを構成するための詳細なガイダンスについては、[人事データをインポートするためのコネクタのセットアップ](/microsoft-365/compliance/import-hr-data)に関する記事を参照してください。
 
 ### <a name="security-policy-violations-by-departing-users-preview"></a>離職するユーザーによるセキュリティ ポリシー違反 (プレビュー)
 

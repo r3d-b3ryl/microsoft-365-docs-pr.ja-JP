@@ -11,13 +11,13 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-description: 削除、表示、編集、トラブルシューティングなど、Microsoft OneLTI の主要な管理タスクを実行する方法について説明します。
-ms.openlocfilehash: 2b623be8467b50d1682a7bdc63ce603a3ad9a859
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+description: Microsoft OneLTI 管理の主要なタスク (表示、削除、編集、トラブルシューティングなど) を実行する方法について説明します。
+ms.openlocfilehash: 8b788028a453969f13c31bbe72962c1b7df955a6
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747502"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823461"
 ---
 # <a name="manage-microsoft-onelti-for-any-lms"></a>任意の LMS の Microsoft OneLTI を管理する
 
@@ -25,11 +25,21 @@ Microsoft OneLTI は、Canvas、Blackboard、Moodle などの複数の LMS と�
 
 この記事では、IT 管理者が主要な OneLTI 管理タスクに関する手順を確認します。
 
-- [LTI 登録を削除します](#delete-an-lti-registration)。
 - [LTI 登録を表示します](#view-an-lti-registration)。
+- [LTI 登録を削除します](#delete-an-lti-registration)。
 - [LTI 登録を編集します](#edit-an-lti-registration)。
 - [OneLTI に関する問題のトラブルシューティングを行います](#troubleshoot-issues-with-onelti)。
 - [OneLTI に関する問題を報告します](#report-problems-with-onelti)。
+
+## <a name="view-an-lti-registration"></a>LTI 登録を表示する
+
+LTI 登録の詳細を表示する場合は、次の手順に従います。
+
+1. [Microsoft LTI Portal にアクセスします](https://lti.microsoft.com/)。
+2. Microsoft 365管理者アカウントでサインインします。
+3. 登録の一覧で、表示する LTI 登録を見つけます。
+4. リストの横にある **目のアイコン** を選択します。
+5. 登録の詳細パネルが開きます。
 
 ## <a name="delete-an-lti-registration"></a>LTI 登録を削除する
 
@@ -42,23 +52,13 @@ Microsoft OneLTI 登録を削除する場合は、次の手順に従います。
 5. 確認ダイアログ ボックスで、[ **削除** ] を選択して削除を確認します。
 6. 削除されると、成功メッセージが表示されます。
 
-## <a name="view-an-lti-registration"></a>LTI 登録を表示する
-
-LTI 登録の詳細を表示する場合は、次の手順に従います。
-
-1. [Microsoft LTI Portal にアクセスします](https://lti.microsoft.com/)。
-2. Microsoft 365管理者アカウントでサインインします。
-3. 登録の一覧で、表示する LTI 登録を見つけます。
-4. リストの横にある **目のアイコン** を選択します。
-5. 登録の詳細パネルが開きます。
-
 ## <a name="edit-an-lti-registration"></a>LTI 登録を編集する
 
 現時点では、追加後の既存の LTI 登録の編集はサポートされていません。
 
 LTI 登録を変更するには、次の手順を実行する必要があります。
 
-1. 既存の登録を削除します。
+1. [既存の登録を削除します](#delete-an-lti-registration)。
 2. 新しい登録を追加します。
 
 ## <a name="troubleshoot-issues-with-onelti"></a>OneLTI に関する問題のトラブルシューティング

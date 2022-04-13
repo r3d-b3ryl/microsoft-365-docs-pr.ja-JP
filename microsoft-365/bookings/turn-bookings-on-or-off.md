@@ -10,12 +10,12 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Microsoft 365でMicrosoft Bookingsにアクセスする方法について説明します。
-ms.openlocfilehash: a2ab25b3b187ba45dfe460991b91e77d70a2bb70
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 28398faba7c21b6d3cce84063934268dad11fd64
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715277"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823082"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Microsoft Bookings を有効または無効にする
 
@@ -33,7 +33,7 @@ Bookingsは、組織全体または特定のユーザーに対してオンまた
 
 1. グローバル管理者としてMicrosoft 365 管理センターにサインインします。
 
-2. 管理センターで、組織の設定  **設定** \>に移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**します**</a>。
+2. 管理センターで、[**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**組織の設定]**</a> に移動します。
 
 3. [**組織がBookingsを使用して組織のBookings** を有効または無効にすることを許可する] チェック ボックスをオンにします。
 

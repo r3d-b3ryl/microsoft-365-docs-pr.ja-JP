@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Microsoft 365 コンプライアンス センターの電子情報開示ケースに関連付けられた新しいホールドにメールボックス& OneDrive for Businessサイトを追加するスクリプトを実行する方法について説明します。
-ms.openlocfilehash: a678649ebd15a34bdfe5765449d41feae1b14901
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 10a605b422178e5006d8a027a697ca6745f82b98
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761243"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824490"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Core 電子情報開示ケースのホールドにユーザーを追加するスクリプトを使用する
 
@@ -47,7 +47,7 @@ Security & Compliance Center PowerShell には、電子情報開示ケースの�
 
 - 手順 3. でスクリプトを実行するには、Microsoft 365 コンプライアンス センターの電子情報開示マネージャーの役割グループのメンバーであり、SharePoint Online 管理者である必要があります。 詳細については、「[Office 365 セキュリティ & コンプライアンス センターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
 
-- Microsoft 365 コンプライアンス センターの電子情報開示ケースに関連付けられているホールドには、最大 1,000 個のメールボックスと 100 個のサイトを追加できます。 保留にするすべてのユーザーにOneDrive for Business サイトがあると仮定すると、この記事のスクリプトを使用して、ホールドに最大 100 人のユーザーを追加できます。
+- Microsoft 365 コンプライアンス センターの Core 電子情報開示ケースに関連付けられているホールドには、最大 1,000 個のメールボックスと 100 個のサイトを追加できます。 保留にするすべてのユーザーにOneDrive for Business サイトがあると仮定すると、この記事のスクリプトを使用して、ホールドに最大 100 人のユーザーを追加できます。
 
 - 手順 2 で作成したユーザーの一覧と手順 3 のスクリプトを同じフォルダーに保存してください。 そうすることで、スクリプトを簡単に実行できるようになります。
 

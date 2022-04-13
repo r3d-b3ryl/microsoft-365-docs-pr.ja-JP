@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6e1efe1a5c5f87e0a71c5e96b28498a6faf296c
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: f06ed934f1ba1a24ba16fe3919d37e10526a3a2f
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783735"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823852"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint にオンボードします
 
@@ -183,7 +183,7 @@ EDR センサー コンポーネントの定期的な製品改善と修正プロ
    > [!NOTE]
    > Windows Server 2012R2 では、Microsoft Defender ウイルス対策はインストール パッケージによってインストールされ、パッシブ モードに設定しない限りアクティブになります。 Windows Server 2016 では、まず Microsoft Defender ウイルス対策を機能としてインストールしなければならず (「[MDE に切り替える](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)」 を参照)、インストールを続行する前に完全に更新する必要があります。
    > 
-   > Microsoft 以外のマルウェア対策ソリューションを実行している場合は、インストール前にMicrosoft Defender ウイルス対策の除外を ([[Defender プロセス] タブの Microsoft Defender プロセスの一覧より](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)) Microsoft 以外のソリューションに追加してください。  Microsoft 以外のセキュリティ ソリューションを Defender ウイルス対策の除外リストに追加することもお勧めします。
+   > Microsoft 以外のマルウェア対策ソリューションを実行している場合は、インストール前にMicrosoft Defender ウイルス対策の除外を ([[Defender プロセス] タブの Microsoft Defender プロセスの一覧より](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) Microsoft 以外のソリューションに追加してください。  Microsoft 以外のセキュリティ ソリューションを Defender ウイルス対策の除外リストに追加することもお勧めします。
 
 
 **インストール パッケージ** には、Microsoft Defender for Endpoint エージェントをインストールする MSI ファイルが含まれています。

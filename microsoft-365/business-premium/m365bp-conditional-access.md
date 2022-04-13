@@ -1,5 +1,5 @@
 ---
-title: ユーザーのセキュリティの既定値を有効Microsoft 365 Business Premium
+title: Microsoft 365 Business Premiumのセキュリティの既定値を有効にする
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,57 +23,57 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: セキュリティの既定値が、ID 関連の攻撃から組織を保護するために、セキュリティ設定を事前に構成して提供する方法についてMicrosoft 365 Business Premium。
-ms.openlocfilehash: 9684dc2be113d6f511f1a84e8865ac04a6881ecc
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Microsoft 365 Business Premium用に構成済みのセキュリティ設定を提供することで、セキュリティの既定値が ID 関連の攻撃から組織を保護する方法について説明します。
+ms.openlocfilehash: 58477da3d44844c763dff95d35fc71753afc7ce2
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634671"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824512"
 ---
-# <a name="turn-on-security-defaults-for-microsoft-365-business-premium"></a>ユーザーのセキュリティの既定値を有効Microsoft 365 Business Premium
+# <a name="turn-on-security-defaults-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premiumのセキュリティの既定値を有効にする
 
-セキュリティの既定値は、Microsoft が組織の代わりに管理する構成済みのセキュリティ設定を提供することで、組織を ID 関連の攻撃から保護するのに役立ちます。 これらの設定には、すべての管理者およびユーザー アカウントに対して多要素認証 (MFA) を有効にする機能が含まれます。 ほとんどの組織では、セキュリティの既定値は、優れたレベルの追加サインイン セキュリティを提供します。
+セキュリティの既定値は、組織に代わって Microsoft が管理する事前構成済みのセキュリティ設定を提供することで、ID 関連の攻撃から組織を保護するのに役立ちます。 これらの設定には、すべての管理者とユーザー アカウントに対して多要素認証 (MFA) を有効にすることが含まれます。 ほとんどの組織では、セキュリティの既定値により、適切なレベルの追加のサインイン セキュリティが提供されます。
 
-セキュリティの既定値と適用するポリシーの詳細については、「セキュリティの既定値 [とは」を参照してください。](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+セキュリティの既定値と、それらが適用するポリシーの詳細については、「[セキュリティの既定値とは何か](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」を参照してください。
 
-2019&mdash; 年 10 月 22 日以降にサブスクリプションが作成された場合は、セキュリティの既定値が自動的に有効になっている可能性があります。設定を確認してください。
+サブスクリプションが 2019 年 10 月 22 日以降に作成された場合、セキュリティの既定値が自動的に有効&mdash;になっている可能性があります。設定を確認して確認する必要があります。
 
-セキュリティの既定を有効にするには、Azure Active Directory (Azure AD) を使用するか、既に有効になっているか確認します。
+Azure Active Directory (Azure AD) でセキュリティの既定値を有効にするか、既に有効になっているかどうかを確認するには:
 
-1. セキュリティ管理者、条件付き<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">アクセスMicrosoft 365 管理センター</a>グローバル管理者の資格情報を使用して、管理者にサインインします。
+1. セキュリティ管理者、条件付きアクセス管理者、またはグローバル管理者の資格情報を使用して、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>にサインインします。
 
-2. 左側のウィンドウで、[すべて表示] **を** 選択し、[管理センター] で [表示] **を** Azure Active Directory。
+2. 左側のウィンドウで [**すべて表示**] を選択し、[**管理センター**] で **[Azure Active Directory**] を選択します。
 
-3. 管理センターの左側のウィンドウ **で、[Azure Active Directory]** を **Azure Active Directory**。
+3. **Azure Active Directory管理センター** の左側のウィンドウで、**Azure Active Directory** を選択します。
 
-4. ダッシュボードの左側のメニューの [管理] セクション **で** 、[プロパティ] を **選択します**。
+4. ダッシュボードの左側のメニューの [ **管理** ] セクションで、[ **プロパティ**] を選択します。
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="[プロパティ] メニュー Azure Active Directory場所を示す管理センターのスクリーンショット。":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="[プロパティ] メニュー項目の場所を示すAzure Active Directory管理センターのスクリーンショット。":::
 
-5. [プロパティ] ページの下部 **にある [セキュリティ** の既定の **管理] を選択します**。
+5. **[プロパティ**] ページの下部にある [**セキュリティの既定値の管理**] を選択します。
 
-6. 右側のウィンドウに、[セキュリティの既定を有効 **にする] 設定が表示** されます。 [ **はい** ] が選択されている場合、セキュリティの既定値は既に有効になっているので、それ以上の操作は必要ありません。 セキュリティの既定値が現在有効になっていない場合は、[ **は** い] を選択して有効にし、[保存] を **選択します**。
+6. 右側のウィンドウに、[ **セキュリティの既定値を有効にする] 設定が表示されます** 。 **[はい]** が選択されている場合、セキュリティの既定値は既に有効になっており、それ以上のアクションは必要ありません。 セキュリティの既定値が現在有効になっていない場合は、[ **はい** ] を選択して有効にし、[ **保存**] を選択します。
 
 > [!NOTE]
-> 条件付きアクセス ポリシーを使用している場合は、セキュリティの既定値を使用する前に、ポリシーをオフにする必要があります。
+> 条件付きアクセス ポリシーを使用している場合は、セキュリティの既定値を使用する前に無効にする必要があります。
 >
-> セキュリティの既定値または条件付きアクセス ポリシーを使用できますが、両方を同時に使用することはできません。
+> セキュリティの既定値または条件付きアクセス ポリシーのいずれかを使用できますが、両方を同時に使用することはできません。
 
 ## <a name="consider-using-conditional-access"></a>条件付きアクセスの使用を検討する
 
-組織が複雑なセキュリティ要件を持つ場合や、セキュリティ ポリシーを細かく制御する必要がある場合は、セキュリティの既定値ではなく条件付きアクセスを使用して、同様またはより高いセキュリティ体制を実現する必要があります。 
+組織に複雑なセキュリティ要件がある場合、またはセキュリティ ポリシーをより細かく制御する必要がある場合は、セキュリティの既定値の代わりに条件付きアクセスを使用して、同様以上のセキュリティ体制を実現することを検討する必要があります。 
 
-条件付きアクセスを使用すると、ユーザーにアプリケーションまたはサービスへのアクセスを許可する前に、サインイン イベントに対応するポリシーを作成および定義し、追加のアクションを要求できます。 条件付きアクセス ポリシーは、細かく具体的な場合があります。ユーザーはいつでもどこでも生産性を高めることができますが、組織を保護することもできます。
+条件付きアクセスを使用すると、サインイン イベントに対応するポリシーを作成して定義し、ユーザーにアプリケーションまたはサービスへのアクセスを許可する前に追加のアクションを要求できます。 条件付きアクセス ポリシーは、きめ細かく具体的にすることができ、ユーザーはどこにいても、いつでも生産性を高め、組織を保護することができます。
 
-セキュリティの既定値は、すべてのお客様が使用できます。条件付きアクセスには、次のいずれかのプランのライセンスが必要です。
+セキュリティの既定値はすべてのお客様が使用できますが、条件付きアクセスには次のいずれかのプランのライセンスが必要です。
 
-- Azure Active Directory Premium P1 P2
+- Azure Active Directory Premium P1または P2
 - Microsoft 365 Business Premium
 - Microsoft 365 E3 または E5
-- Enterprise モビリティ & E3 または E5
+- Enterprise モビリティ & セキュリティ E3 または E5
 
-条件付きアクセスを使用して、セキュリティの既定値で有効になっているポリシーと同等のポリシーを構成する場合は、次の手順ガイドを参照してください。
+条件付きアクセスを使用して、セキュリティの既定値で有効になっているポリシーと同等のポリシーを構成する場合は、次のステップ バイ ステップ ガイドを参照してください。
 
 - [管理者に対して MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 
@@ -83,9 +83,9 @@ ms.locfileid: "64634671"
 
 - [すべてのユーザーに対して MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
 
-- [MFA Azure ADを要求](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)する - AZURE AD ID 保護が必要です。これは、AZURE ACTIVE DIRECTORY PREMIUM P2
+- [AZURE AD MFA 登録を要求](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)する - Azure Active Directory Premium P2の一部である Azure AD Identity Protection が必要です
 
-条件付きアクセスの詳細については、「条件付きアクセス [とは」を参照してください。](/azure/active-directory/conditional-access/overview) 条件付きアクセス ポリシーの作成の詳細については、「条件付きアクセス ポリシー [の作成」を参照してください](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。
+条件付きアクセスの詳細については、「[条件付きアクセスとは」](/azure/active-directory/conditional-access/overview)を参照してください。 条件付きアクセス ポリシーの作成の詳細については、「 [条件付きアクセス ポリシーの作成](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)」を参照してください。
 
 > [!NOTE]
-> 条件付きアクセスを提供するプランまたはライセンスを持っているが、条件付きアクセス ポリシーがまだ作成されていない場合は、セキュリティの既定値を使用してください。 ただし、条件付きアクセス ポリシーを使用するには、セキュリティの既定値をオフにする必要があります。
+> 条件付きアクセスを提供するプランまたはライセンスを持っていても、条件付きアクセス ポリシーをまだ作成していない場合は、セキュリティの既定値を使用できます。 ただし、条件付きアクセス ポリシーを使用するには、セキュリティの既定値を無効にする必要があります。

@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: 複数地域環境で検索を構成する方法について学習します。 複数地域環境で結果OneDrive返すクライアントは、一部のクライアントのみです。
-ms.openlocfilehash: d6d6895c6dc393bb1f28dff60dea996bf80aad5a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 複数地域環境で検索を構成する方法について説明します。 複数地域環境で結果を返すことができるのは、OneDriveなどの一部のクライアントのみです。
+ms.openlocfilehash: a6f152a3f226befa8bc060dadd0eed1c0952523c
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204181"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824928"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Office 365 Multi-Geo ために検索を構成する
 
@@ -66,7 +66,7 @@ Multi-Geo 環境では、従来の検索機能の一部の動作が異なりま�
 <thead>
 <tr class="header">
 <th align="left">機能</th>
-<th align="left">しくみ</th>
+<th align="left">メカニズム</th>
 <th align="left">回避策</th>
 </tr>
 </thead>
@@ -84,7 +84,7 @@ Multi-Geo 環境では、従来の検索機能の一部の動作が異なりま�
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Multi-Geo 検索では、数値の絞り込み条件の動的バケットはサポートされません。</td>
-<td align="left">数値絞 <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">り込み条件には"Discretize"</a> パラメーターを使用します。</td>
+<td align="left">数値絞り込み条件には <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" パラメーター</a> を使用します。</td>
 </tr>
 <tr class="even">
 <td align="left">ドキュメント ID</td>
@@ -122,7 +122,7 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 </tr>
 <tr class="even">
 <td align="left">ゲスト</td>
-<td align="left">ゲストは、検索する地域の場所からのみ結果を取得します。</td>
+<td align="left">ゲストは、検索元の地域の場所からのみ結果を取得します。</td>
 </tr>
 </tbody>
 </table>
@@ -131,7 +131,7 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 
 すべての検索クライアントは、既存の SharePoint 検索 REST API を使用して検索インデックスとやり取りします。
 
-![検索 REST API がSharePointインデックスとやり取りする方法を示す図。](../media/configure-search-for-multi-geo-image1-1.png)
+![検索 REST API SharePoint検索インデックスと対話する方法を示す図。](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. 検索クライアントは、クエリ プロパティ EnableMultiGeoSearch = true を設定して、検索 REST エンドポイントを呼び出します。
 2. クエリは、テナント内のすべての地域の場所に送信されます。
@@ -151,11 +151,11 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 
 3. 設定するバーティカルを選択し、右上の **[設定]** ギア アイコンをクリックして、**[ページの編集]** をクリックします。編集モードで、検索結果ページが開きます。
 
-   ![[ページ選択の編集] 設定。](../media/configure-search-for-multi-geo-image2.png)
+   ![設定でページの選択を編集します。](../media/configure-search-for-multi-geo-image2.png)
 
 4. 検索結果 Web パーツで、マウス ポインターを Web パーツの右上に移動させ、矢印をクリックし、メニューから [**Web パーツの編集**] をクリックします。 ページの右上のリボンの下に検索結果 Web パーツのツール ウィンドウが開きます。
 
-   ![[Web パーツの選択を編集] をクリックします。](../media/configure-search-for-multi-geo-image3.png)
+   ![Web パーツの選択を編集します。](../media/configure-search-for-multi-geo-image3.png)
 
 5. Web パーツ ツール ウィンドウの **[設定]** セクションで、**[結果コントロールの設定]** から **[複数地域の検索結果を表示する]** を選択して、検索結果 Web パーツに、すべての地域の場所からの結果が表示されるようにします。
 

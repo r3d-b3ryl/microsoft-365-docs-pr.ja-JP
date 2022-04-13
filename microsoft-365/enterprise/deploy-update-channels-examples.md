@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: パートナー組織がチャネルを使用してどのように展開および更新するか。
-ms.openlocfilehash: 4e4ebfef9c505f3a6ac27726da9b1f6e5ebb932a
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 4616d424c49a1348d374fa01d705e0483822eb90
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806878"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823984"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>展開および更新プログラム チャネルの構成例
 
@@ -28,31 +28,21 @@ Windows 10 および Microsoft 365 Apps で使用する更新チャネルの選�
 
 ## <a name="pre-release-channels"></a>プレリリースチャンネル
 
-<br>
-
-****
-
 |顧客/チャネルオファリング|Windows 10|Microsoft 365 Apps for Enterprise（Windows 10）|
-|:-------|:-------|:-----|
-|高度に技術的なユーザーと開発者を対象としています。 <p> 最新のコードを使用して、開発サイクルで最も早く最新のビルドに最初にアクセスします。 <p> ラフエッジといくつかの不安定性があります。|Dev|該当なし|
-|まだ開発中の信頼性の高いビルドを望む早期導入者と IT 担当者に適切です。 <p> 今後の予定を確認し、新機能の検証にご協力ください。|ベータチャンネル|ベータチャンネル|
-|今後のリリースへの早期アクセスを希望する方を対象としています。 <p> 企業が広範な展開の前に今後のリリースをプレビューして検証する場合。 <p> これらはサポートされています。|リリースプレビュー|最新機能提供チャネル (プレビュー) <p> 半期エンタープライズ チャネル (プレビュー)|
-|
+|---|---|---|
+|高度に技術的なユーザーと開発者を対象としています。 <br/><br/> 最新のコードを使用して、開発サイクルの最も早い段階で最新のビルドに最初にアクセスします。 <br/><br/> ラフエッジといくつかの不安定性があります。|Dev|該当なし|
+|開発中の信頼性の高いビルドを求める早期導入者や IT 担当者に適しています。 <br/><br/> 次に予定されている内容を確認し、新機能の検証に役立ちます。|ベータチャンネル|ベータチャンネル|
+|今後のリリースへの早期アクセスを希望する方を対象としています。 <br/><br/> 広範な展開の前に、企業が今後のリリースをプレビューして検証する場所。 <br/><br/> これらはサポートされています。|リリースプレビュー|最新機能提供チャネル (プレビュー) <br/><br/> 半期エンタープライズ チャネル (プレビュー)|
 
 ## <a name="production-channels-for-broad-deployment"></a>幅広い展開のための運用チャネル
 
 [**例**]列のリンクをクリックして、パートナー組織の展開段階とグループをステップスルーします。
 
-<br>
-
-****
-
 |顧客/チャネルオファリング|Windows 10|Microsoft 365 Apps for Enterprise（Windows 10）|例|
-|:-------|:-------|:-----|:-------|
-|準備が整い次第、最新のリリースを必要としているお客様に適切です。|半期チャネル|[最新機能提供チャネル](/deployoffice/overview-update-channels#current-channel-overview)|[最新リリース](deploy-update-channels-examples-rapid-deploy.md)|
-|より予測性の高い最新リリースが必要な企業に適切です。|半期チャネル|[月次エンタープライズ チャネル](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)||
+|---|---|---|---|
+|準備ができたらすぐに最新のリリースが必要な顧客に適しています。|半期チャネル|[最新機能提供チャネル](/deployoffice/overview-update-channels#current-channel-overview)|[最新リリース](deploy-update-channels-examples-rapid-deploy.md)|
+|より予測可能性の高い最新リリースが必要な企業に適しています。|半期チャネル|[月次エンタープライズ チャネル](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)||
 |各アップデートの前に広範なITテストが必要な企業を対象としています。|半期チャネル|[半期エンタープライズ チャネル](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview)||
-|
 
 ## <a name="see-also"></a>関連項目
 

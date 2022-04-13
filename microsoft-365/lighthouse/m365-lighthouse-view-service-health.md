@@ -1,5 +1,5 @@
 ---
-title: テナント サービスの正常性の表示
+title: テナント サービスの正常性を表示する
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,50 +15,51 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse
 search.appverid: MET150
-description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouse、テナント サービスの正常性を表示する方法について説明します。
-ms.openlocfilehash: 21315d0ea616fcd2865879d9d8aec66b17830208
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、テナント サービスの正常性を表示する方法について説明します。
+ms.openlocfilehash: 5c15e004108606ce00a90e0fa3d675d00806b430
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324607"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64822718"
 ---
-# <a name="view-tenant-service-health"></a>テナント サービスの正常性の表示
+# <a name="view-tenant-service-health"></a>テナント サービスの正常性を表示する
 
-管理するテナントのサービス正常性は、Microsoft 365 Lighthouse。 サービス正常性には、Microsoft Intune、Azure Active Directory (Azure AD) ID サービス、モバイル デバイス管理 (MDM) クラウド サービスなど、いくつかのサービスのインシデントとアドバイザリが含まれます。 また、インシデントの影響を受ける管理対象テナントの数も確認できます。 たとえば、テナントの 1 つで問題が発生している場合は、[サービスの正常性] ページを確認して、進行中の解決に関する既知の問題かどうか、または最近の変更が問題に影響を与えているかどうかを確認できます。 これにより、トラブルシューティングに時間を節約し、サポート呼び出しを削減できます。
+Microsoft 365 Lighthouseで管理するテナントのサービス正常性を表示できます。 サービス正常性には、Microsoft Intune、Azure Active Directory (Azure AD) ID サービス、モバイル デバイス管理 (MDM) クラウド サービスなど、いくつかのサービスのインシデントとアドバイザリが含まれます。 また、インシデントの影響を受けるマネージド テナントの数も確認できます。 たとえば、いずれかのテナントで問題が発生している場合は、サービス正常性 ページを確認して、進行中の解決策に関する既知の問題か、最近の変更が影響を与えている可能性があるかどうかを判断できます。 これにより、トラブルシューティングにかかる時間が短縮され、サポートの呼び出しが減る可能性があります。
 
-ライトハウスにサインインできない場合は、[Microsoft 365](https://status.office365.com/) サービスの正常性状態ページを使用して、パートナー テナントにログインできない既知の問題を確認できます。 また、サインアップして [Twitter の@MSFT365status](https://twitter.com/MSFT365Status) 特定のサービス インシデントに関する情報を確認します。
+Lighthouse にサインインできない場合は、[Microsoft 365 サービスの正常性状態ページ](https://status.office365.com/)を使用して、パートナー テナントにログインできない既知の問題を確認できます。 また、Twitter で [@MSFT365status](https://twitter.com/MSFT365Status) に従ってサインアップし、特定のサービス インシデントに関する情報を表示します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
-サービスの正常性を表示するには、**microsoft.office365.serviceHealth/allEntities/allTasks** というプロパティ セットを持つパートナー テナントの Azure AD ロールが必要です。 役割の一覧Azure AD組み込[Azure ADを参照してください](/azure/active-directory/roles/permissions-reference)。
+サービスの正常性を表示するには、**microsoft.office365.serviceHealth/allEntities/allTasks** というプロパティセットを持つパートナー テナントのAzure AD ロールが必要です。 Azure AD ロールの一覧については、[組み込みロールAzure AD](/azure/active-directory/roles/permissions-reference)参照してください。
 
-## <a name="view-service-health-status-for-all-tenants"></a>すべてのテナントのサービス正常性状態の表示
+## <a name="view-service-health-status-for-all-tenants"></a>すべてのテナントのサービス正常性状態を表示する
 
-1. ライトハウスの左側のナビゲーション ウィンドウで、[サービスの正常性] **を選択します**。
+1. Lighthouse の左側のナビゲーション ウィンドウで、**サービス正常性** を選択します。
 
-2. [サービス **正常性] ページで** 、次のサービス正常性状態を確認します。
+2. **サービス正常性** ページで、次のような現在のサービス正常性状態を確認します。
 
-   -   インシデントの総数
-   -   管理テナントに影響を与えるアドバイザリの総数
-   -   アクティブなインシデントを含むサービスの数。
+   - インシデントの合計数
+   - マネージド テナントに影響を与えるアドバイザリの合計数
+   - アクティブなインシデントを含むサービスの数。
 
-3. [すべての **サービス] タブ** で、サービス別に問題を確認します。
+3. [ **すべてのサービス** ] タブで、サービスごとの問題を確認します。
 
-4. [すべての **問題] タブで** 、現在のすべての問題を確認します。
+4. [ **すべての問題** ] タブで、現在のすべての問題を確認します。
 
 ## <a name="review-issue-details"></a>問題の詳細を確認する
 
-1. ライトハウスの左側のナビゲーション ウィンドウで、[サービスの正常性] **を選択します**。
+1. Lighthouse の左側のナビゲーション ウィンドウで、**サービス正常性** を選択します。
 
-2. [サービス **の正常性] ページ** で、[すべてのサービス **] または [すべての問題****] タブを選択** します。
+2. **[サービス正常性**] ページで、[**すべてのサービス**] または [**すべての問題**] タブを選択します。
 
-3. リストから問題を選択します。
+3. 一覧から問題を選択します。
 
-4. [問題の詳細] ウィンドウで、問題の種類、影響を受けるテナント、ユーザーへの影響、発行履歴などの詳細情報を確認します。
+4. 問題の詳細ウィンドウで、問題の種類、影響を受けたテナント、ユーザーの影響、問題の履歴など、詳細な情報を確認します。
 
-[影響 **を受** けるテナント] タブで、影響を受けるテナントの一覧をコンマ区切り値 (.csv) ファイルにエクスポートして、サポート チームと共有できます。
+[ **テナントの影響を受ける** ] タブで、影響を受けるテナントの一覧をコンマ区切り値 (.csv) ファイルにエクスポートして、サポート チームと共有できます。
 
 ## <a name="related-content"></a>関連コンテンツ
-[サービスの正常性をMicrosoft 365する方法](/microsoft-365/enterprise/view-service-health) (記事)\
-[ユーザーに関する既知Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (記事)
+
+[Microsoft 365サービスの正常性を確認する方法](/microsoft-365/enterprise/view-service-health) (記事)\
+[Microsoft 365 Lighthouseに関する既知の問題](m365-lighthouse-known-issues.md) (記事)

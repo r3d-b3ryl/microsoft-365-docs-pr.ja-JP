@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用してMicrosoft 365サービスへのアクセスを無効にする
+title: PowerShell を使用してMicrosoft 365 サービスへのアクセスを無効にする
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,33 +19,161 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: この記事では、PowerShell を使用してユーザーのサービスへのアクセスを無効にするMicrosoft 365説明します。
-ms.openlocfilehash: bce02c40bf6ca99d74b8747fb0c5eb5c0b485888
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: この記事では、PowerShell を使用して、ユーザーのMicrosoft 365 サービスへのアクセスを無効にする方法について説明します。
+ms.openlocfilehash: e0fc42f0c68b02824513f382228378bfd4ee2a8e
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173465"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824872"
 ---
-# <a name="disable-access-to-microsoft-365-services-with-powershell"></a>PowerShell を使用してMicrosoft 365サービスへのアクセスを無効にする
+# <a name="disable-access-to-microsoft-365-services-with-powershell"></a>PowerShell を使用してMicrosoft 365 サービスへのアクセスを無効にする
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-ライセンス プランMicrosoft 365アカウントにライセンスが割り当てられている場合、Microsoft 365サービスは、そのライセンスからユーザーが利用できます。 ただし、ユーザーがアクセスMicrosoft 365サービスを制御できます。 たとえば、ライセンスでオンライン サービスへのアクセスを許可SharePoint、そのサービスへのアクセスを無効にできます。 PowerShell を使用すると、次の特定のライセンス プランの任意の数のサービスへのアクセスを無効にできます。
+Microsoft 365 アカウントにライセンス プランからライセンスが割り当てられると、Microsoft 365 サービスはそのライセンスからユーザーが利用できるようになります。 ただし、ユーザーがアクセスできるMicrosoft 365 サービスを制御できます。 たとえば、ライセンスで SharePoint Online サービスへのアクセスが許可されている場合でも、そのアクセスを無効にすることができます。 PowerShell を使用すると、特定のライセンス プランの任意の数のサービスへのアクセスを無効にすることができます。
 
 - 個々のアカウント。
 - アカウントのグループ。
 - 組織内のすべてのアカウント。
 
 >[!Note]
->他のMicrosoft 365依存している場合に、指定したサービスを無効にできない可能性があるサービスの依存関係があります。
+>他のサービスが依存している場合に、指定したサービスを無効にできないMicrosoft 365サービスの依存関係があります。
 >
+
+## <a name="use-the-microsoft-graph-powershell-sdk"></a>Microsoft Graph PowerShell SDK を使用する
+
+まず、[Microsoft 365 テナントに接続します](/graph/powershell/get-started#authentication)。
+
+ユーザーのライセンスの割り当てと削除には、User.ReadWrite.All アクセス許可スコープまたは[「ライセンスの割り当て」Graph API参照ページ](/graph/api/user-assignlicense)に一覧表示されている他のアクセス許可のいずれかが必要です。
+
+テナントで使用可能なライセンスを読み取るには、Organization.Read.All アクセス許可スコープが必要です。
+
+```powershell
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
+
+次に、このコマンドを使用して、使用可能なライセンス プラン (SkuPartNumber とも呼ばれます) を表示します。
+
+```powershell
+Get-MgSubscribedSku | Select SkuId, SkuPartNumber, ServicePlans | Sort SkuPartNumber
+```
+
+詳細については、「 [PowerShell でライセンスとサービスを表示する](view-licenses-and-services-with-microsoft-365-powershell.md)」を参照してください。
+
+このトピックの手順の前後の結果については、「 [PowerShell を使用したアカウント ライセンスとサービスの詳細の表示](view-account-license-and-service-details-with-microsoft-365-powershell.md)」を参照してください。
+
+### <a name="disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan"></a>特定のライセンス プランの特定のユーザーに対して特定のMicrosoft 365 サービスを無効にする
+  
+特定のライセンス プランのユーザーに対して特定のMicrosoft 365 サービスのセットを無効にするには、次の手順を実行します。
+  
+#### <a name="step-1-identify-the-undesired-services-in-the-licensing-plan-by-using-the-following-syntax"></a>手順 1: 次の構文を使用して、ライセンス プラン内の望ましくないサービスを特定します。
+
+最初に、次のコマンドを使用して、テナントで使用可能なライセンス プランを一覧表示します。
+
+```powershell
+Get-MgSubscribedSku | Select SkuPartNumber
+
+SkuPartNumber
+-------------
+EMSPREMIUM
+SPE_E5
+RIGHTSMANAGEMENT_ADHOC
+
+$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesiredService1>", "<UndesiredService2>"...
+```
+
+次に、上記のコマンドから SkuPartNumber を使用し、特定のライセンス プラン (Sku) で使用できるサービス プランを一覧表示します。
+
+次の例では、**SPE_E5 (Microsoft 365 E5**) で使用できるすべてのサービス プランを一覧表示します。
+
+```powershell
+Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5' |  select -ExpandProperty ServicePlans
+```
+
+```text
+AppliesTo ProvisioningStatus ServicePlanId                        ServicePlanName
+--------- ------------------ -------------                        ---------------
+User      Success            b21a6b06-1988-436e-a07b-51ec6d9f52ad PROJECT_O365_P3
+User      Success            64bfac92-2b17-4482-b5e5-a0304429de3e MICROSOFTENDPOINTDLP
+User      Success            199a5c09-e0ca-4e37-8f7c-b05d533e1ea2 MICROSOFTBOOKINGS
+User      Success            6db1f1db-2b46-403f-be40-e39395f08dbb CUSTOMER_KEY
+User      Success            4a51bca5-1eff-43f5-878c-177680f191af WHITEBOARD_PLAN3
+User      Success            07699545-9485-468e-95b6-2fca3738be01 FLOW_O365_P3
+User      Success            9c0dab89-a30c-4117-86e7-97bda240acd2 POWERAPPS_O365_P3
+User      Success            e212cbc7-0961-4c40-9825-01117710dcb1 FORMS_PLAN_E5
+User      Success            57ff2da0-773e-42df-b2af-ffb7a2317929 TEAMS1
+User      Success            21b439ba-a0ca-424f-a6cc-52f954a5b111 WIN10_PRO_ENT_SUB
+User      Success            eec0eb4f-6444-4f95-aba0-50c24d67f998 AAD_PREMIUM_P2
+User      Success            c1ec4a95-1f05-45b3-a911-aa3fa01094f5 INTUNE_A
+User      Success            7547a3fe-08ee-4ccb-b430-5077c5041653 YAMMER_ENTERPRISE
+User      Success            a23b959c-7ce8-4e57-9140-b90eb88a9e97 SWAY
+User      Success            e95bec33-7c88-4a70-8e19-b10bd9d0c014 SHAREPOINTWAC
+User      Success            5dbe027f-2339-4123-9542-606e4d348a72 SHAREPOINTENTERPRISE
+User      Success            b737dad2-2f6c-4c65-90e3-ca563267e8b9 PROJECTWORKMANAGEMENT
+User      Success            43de0ff5-c92c-492b-9116-175376d08c38 OFFICESUBSCRIPTION
+User      Success            0feaeb32-d00e-4d66-bd5a-43b5b83db82c MCOSTANDARD
+User      Success            9f431833-0334-42de-a7dc-70aa40db46db LOCKBOX_ENTERPRISE
+User      Success            efb87545-963c-4e0d-99df-69c6916d9eb0 EXCHANGE_S_ENTERPRISE
+```
+
+ライセンス プラン (製品名とも呼ばれます)、含まれるサービス プラン、および対応するフレンドリ名の完全な一覧については、 [ライセンスの製品名とサービス プラン識別子に関するページを](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)参照してください。 (ServicePlanId を使用して、サービス プランの対応するフレンドリ名を検索します)。
+
+次の例 **では、****MICROSOFTBOOKINGS** (Microsoft Bookings) サービスとLOCKBOX_ENTERPRISE (Customer LockBox) サービスがオフになっている **SPE_E5 (Microsoft 365 E5**) を割り当てます。
+  
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$disabledPlans = $e5Sku.ServicePlans | `
+    Where ServicePlanName -in ("LOCKBOX_ENTERPRISE", "MICROSOFTBOOKINGS") | `
+    Select -ExpandProperty ServicePlanId
+
+$addLicenses = @(
+    @{
+        SkuId = $e5Sku.SkuId
+        DisabledPlans = $disabledPlans
+    }
+)
+
+Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
+```
+
+Set-MgUserLicenseの AddLicenses パラメーターの DisabledPlans プロパティは、ユーザーの既存の DisabledPlans 値を上書きします。 既存のサービス プランの状態を維持するには、ユーザーの現在のサービス プランの状態を、無効にする新しいプランとマージする必要があります。
+
+既存の DisabledPlans を含めなければ、ユーザーの以前に無効にしたプランが有効になります。
+
+次の例では **、SPE_E5** (Microsoft 365 E5) を使用してユーザーを更新し、ユーザーの既存の無効なプランを現在の状態のままにしたまま、Swayと Forms サービス プランをオフにします。
+  
+```powershell
+## Get the services that have already been disabled for the user.
+$userLicense = Get-MgUserLicenseDetail -UserId "belinda@fdoau.onmicrosoft.com"
+$userDisabledPlans = $userLicense.ServicePlans | `
+    Where ProvisioningStatus -eq "Disabled" | `
+    Select -ExpandProperty ServicePlanId
+
+## Get the new service plans that are going to be disabled
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$newDisabledPlans = $e5Sku.ServicePlans | `
+    Where ServicePlanName -in ("SWAY", "FORMS_PLAN_E5") | `
+    Select -ExpandProperty ServicePlanId
+
+## Merge the new plans that are to be disabled with the user's current state of disabled plans
+$disabledPlans = ($userDisabledPlans + $newDisabledPlans) | Select -Unique
+
+$addLicenses = @(
+    @{
+        SkuId = $e5Sku.SkuId
+        DisabledPlans = $disabledPlans
+    }
+)
+## Update user's license
+Set-MgUserLicense -UserId "belinda@litwareinc.onmicrosoft.com" -AddLicenses $addLicenses -RemoveLicenses @()
+```
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+まず、[Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-次に、次のコマンドを使用して、使用可能なライセンス プラン (AccountSkuIds とも呼ばれる) を表示します。
+次に、次のコマンドを使用して、使用可能なライセンス プラン (AccountSkuIds とも呼ばれます) を表示します。
 
 ```powershell
 Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
@@ -55,30 +183,30 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 >PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。 これらのコマンドレットを引き続き使用するには、Windows PowerShell から実行する必要があります。
 >
 
-詳細については [、「PowerShell でライセンスとサービスを表示する」を参照してください](view-licenses-and-services-with-microsoft-365-powershell.md)。
+詳細については、「 [PowerShell でライセンスとサービスを表示する](view-licenses-and-services-with-microsoft-365-powershell.md)」を参照してください。
     
-このトピックの手順の前と後の結果を確認するには、「PowerShell でアカウント ライセンスとサービスの詳細を [表示する」を参照してください](view-account-license-and-service-details-with-microsoft-365-powershell.md)。
+このトピックの手順の前後の結果については、「 [PowerShell を使用したアカウント ライセンスとサービスの詳細の表示](view-account-license-and-service-details-with-microsoft-365-powershell.md)」を参照してください。
     
-このトピックで説明されている手順を自動化する PowerShell スクリプトが利用可能です。 具体的には、このスクリプトを使用すると、Sway を含む、Microsoft 365のサービスを表示および無効にできます。 詳細については [、「PowerShell を使用して Sway へのアクセスを無効にする」を参照してください](disable-access-to-sway-with-microsoft-365-powershell.md)。
+このトピックで説明されている手順を自動化する PowerShell スクリプトが利用可能です。 具体的には、このスクリプトを使用すると、Swayを含む、Microsoft 365組織内のサービスを表示および無効にすることができます。 詳細については、「[PowerShell を使用してSwayへのアクセスを無効にする](disable-access-to-sway-with-microsoft-365-powershell.md)」を参照してください。
     
     
-### <a name="disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan"></a>特定のライセンスMicrosoft 365特定のユーザーの特定のサービスを無効にする
+### <a name="disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan"></a>特定のライセンス プランの特定のユーザーに対して特定のMicrosoft 365 サービスを無効にする
   
-特定のライセンス プランに対してユーザー Microsoft 365サービスの特定のセットを無効にするには、次の手順を実行します。
+特定のライセンス プランのユーザーに対して特定のMicrosoft 365 サービスのセットを無効にするには、次の手順を実行します。
   
-#### <a name="step-1-identify-the-undesired-services-in-the-licensing-plan-by-using-the-following-syntax"></a>手順 1: 次の構文を使用して、ライセンス 計画で望ましくないサービスを特定します。
+#### <a name="step-1-identify-the-undesired-services-in-the-licensing-plan-by-using-the-following-syntax"></a>手順 1: 次の構文を使用して、ライセンス プラン内の望ましくないサービスを特定します。
     
 ```powershell
 $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesiredService1>", "<UndesiredService2>"...
 ```
 
-次の使用例は、ライセンス プラン (Office E3) で Office および SharePoint Online サービスを無効にする **LicenseOptions** オブジェクトを `litwareinc:ENTERPRISEPACK` Office 365 Enterpriseします。
+次の例では、(E3 Office 365 Enterprise) という名前`litwareinc:ENTERPRISEPACK`のライセンス プランで、Office および SharePoint Online サービスを無効にする **LicenseOptions** オブジェクトを作成します。
     
 ```powershell
 $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
 ```
 
-#### <a name="step-2-use-the-licenseoptions-object-from-step-1-on-one-or-more-users"></a>手順 2: 1 つ以上のユーザーに対して、手順 1 の **LicenseOptions** オブジェクトを使用します。
+#### <a name="step-2-use-the-licenseoptions-object-from-step-1-on-one-or-more-users"></a>手順 2: 手順 1 の **LicenseOptions** オブジェクトを 1 人以上のユーザーに使用します。
     
 サービスが無効になっている新しいアカウントを作成するには、次の構文を使用します。
     
@@ -86,13 +214,13 @@ $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -Disabled
 New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
 ```
 
-次の例では、手順 1 で説明されているライセンスを割り当て、サービスを無効にする Allie Bellew の新しいアカウントを作成します。
+次の例では、ライセンスを割り当て、手順 1 で説明したサービスを無効にする Allie Bellew の新しいアカウントを作成します。
     
 ```powershell
 New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
 ```
 
-PowerShell for Microsoft 365でユーザー アカウントを作成する方法の詳細については[、「Create user accounts with PowerShell」を参照してください](create-user-accounts-with-microsoft-365-powershell.md)。
+PowerShell for Microsoft 365 でユーザー アカウントを作成する方法の詳細については、「[PowerShell でユーザー アカウントを作成する](create-user-accounts-with-microsoft-365-powershell.md)」を参照してください。
     
 ライセンスを付与された既存のユーザー用のサービスを無効にするには、次の構文を使用します。
     
@@ -106,7 +234,7 @@ Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
 ```
 
-手順 1 で説明されているサービスを既存のすべてのライセンス ユーザーに対して無効にするには **、Get-MsolAccountSku** コマンドレット **(litwareinc:ENTERPRISEPACK** など) の表示から Microsoft 365 プランの名前を指定し、次のコマンドを実行します。
+既存のライセンスを持つすべてのユーザーに対して手順 1 で説明したサービスを無効にするには、**Get-MsolAccountSku** コマンドレット (**litwareinc:ENTERPRISEPACK** など) の表示からMicrosoft 365プランの名前を指定し、次のコマンドを実行します。
     
 ```powershell
 $acctSKU="<AccountSkuId>"
@@ -114,7 +242,7 @@ $AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licens
 $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
 ```
 
- All パラメーターを使用 **せずに Get-MsolUser** コマンドレットを使用すると、最初の 500 ユーザー アカウントだけが返されます。
+ _All_ パラメーターを使用せずに **Get-MsolUser** コマンドレットを使用する場合は、最初の 500 個のユーザー アカウントのみが返されます。
 
 既存のユーザーのグループに対してサービスを無効にするには、次のいずれかの方法を使用して、ユーザーを特定します。
     
@@ -127,7 +255,7 @@ $x = Get-MsolUser -All <FilterableAttributes>
 $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
 ```
 
-次の使用例は、米国の Sales 部門のユーザーのサービスを無効にします。
+次の例では、米国の営業部門のユーザーに対してサービスを無効にします。
     
 ```powershell
 $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
@@ -146,7 +274,7 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
    kakers@contoso.com
    ```
 
-   この例では、テキスト ファイルは C: \\ My Documents \\Accounts.txt。
+   この例では、テキスト ファイルは C:\\My Documents\\Accounts.txtです。
     
 2. 次のコマンドを実行します。
     
@@ -154,12 +282,12 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
    Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
    ```
 
-複数のライセンス プランのサービスへのアクセスを無効にする場合は、ライセンス プランごとに上記の手順を繰り返し、次のことを確認します。
+複数のライセンス プランのサービスへのアクセスを無効にする場合は、ライセンス プランごとに上記の手順を繰り返して、次のことを確認します。
 
-- ユーザー アカウントにはライセンス プランが割り当て済みです。
-- 無効にするサービスは、ライセンス プランで利用できます。
+- ユーザー アカウントにライセンス プランが割り当てられています。
+- 無効にするサービスは、ライセンス プランで使用できます。
 
-ライセンス プランに割りMicrosoft 365しているユーザーのサービスを無効にするには、「ユーザー ライセンスの割り当て中にサービスへのアクセスを無効にする」[を参照してください](disable-access-to-services-while-assigning-user-licenses.md)。
+ユーザーをライセンス プランに割り当てる間にMicrosoft 365サービスを無効にするには、「[ユーザー ライセンスの割り当て中にサービスへのアクセスを無効にする](disable-access-to-services-while-assigning-user-licenses.md)」を参照してください。
 
 ### <a name="assign-all-services-in-a-licensing-plan-to-a-user-account"></a>ライセンス プラン内のすべてのサービスをユーザー アカウントに割り当てる
 

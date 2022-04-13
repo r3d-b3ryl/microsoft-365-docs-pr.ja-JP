@@ -1,7 +1,7 @@
 ---
-title: RBAC マシン グループ コレクション API の取得
-description: Get KB コレクション API を使用して、Microsoft Defender for Endpoint の RBAC デバイス グループのコレクションを取得する方法について説明します。
-keywords: apis, graph api, supported apis, get, RBAC, group
+title: RBAC マシン グループ コレクション API を取得する
+description: GET KB コレクション API を使用して、Microsoft Defender for Endpointで RBAC デバイス グループのコレクションを取得する方法について説明します。
+keywords: apis, graph api, サポートされている API, get, RBAC, group
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
 ms.custom: api
-ms.openlocfilehash: 699a7e2738f1e0c89977bd152832f45935a06387
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 528b80b3c40fd7df853190788abb347ed90a82e4
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167480"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825170"
 ---
-# <a name="get-kb-collection-api"></a>KB コレクション API の取得
+# <a name="get-kb-collection-api"></a>KB コレクション API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -48,7 +48,7 @@ RBAC デバイス グループのコレクションを取得します。
 ## <a name="http-request"></a>HTTP 要求
 
 ```http
-GET /testwdatppreview/machinegroups
+GET https://graph.microsoft.com/testwdatppreview/machinegroups
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -80,8 +80,8 @@ Content-type: application/json
 ### <a name="response-example"></a>応答の例
 
 以下は、応答の例です。
-フィールド ID には、デバイス グループ **ID とデバイス** 情報の **フィールド rbacGroupId** が含まれる。
-グループ **化されていないフィールドは** 、グループに割り当てられていないすべてのデバイスに対して 1 つのグループに対してだけ true です。 通常どおり、このグループの名前は "UnassignedGroup" です。
+フィールド ID にはデバイス グループ **ID が** 含まれ、デバイス情報のフィールド **rbacGroupId** と等しくなります。
+**グループ化されていない** フィールドは、どのグループにも割り当てられていないすべてのデバイスの 1 つのグループに対してのみ当てはまります。 通常どおり、このグループには "UnassignedGroup" という名前が付けられます。
 
 ```http
 HTTP/1.1 200 OK

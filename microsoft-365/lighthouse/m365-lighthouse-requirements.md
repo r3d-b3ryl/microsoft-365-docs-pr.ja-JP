@@ -1,5 +1,5 @@
 ---
-title: ユーザーの要件Microsoft 365 Lighthouse
+title: Microsoft 365 Lighthouseの要件
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,53 +15,54 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Managed Service Providers (MSP) の場合は、サービス プロバイダーで使用する要件の一覧Microsoft 365 Lighthouse。
-ms.openlocfilehash: 51dd2404f03dc58d5975a37c386ba9c8f1333763
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: マネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseを使用するための要件の一覧を取得します。
+ms.openlocfilehash: d5f04c39cbce9726fefa4b410be63cd5ee4e959d
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327253"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823676"
 ---
-# <a name="requirements-for-microsoft-365-lighthouse"></a>ユーザーの要件Microsoft 365 Lighthouse
+# <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの要件
 
-Microsoft 365 Lighthouseは、Managed Service Providers (MSP) が中小企業 (SMB) のお客様に対して大規模なデバイス、データ、およびユーザーのセキュリティ保護と管理を行うのに役立つ管理ポータルです。  
+Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (MSP) が小規模および中規模のビジネス (SMB) のお客様向けに大規模にデバイス、データ、ユーザーをセキュリティで保護および管理するのに役立つ管理ポータルです。
 
-MSP は、ライトハウスを使用クラウド ソリューション プロバイダー間接リセラーまたは直接請求パートナーとして、クラウド ソリューション プロバイダー (CSP) プログラムに登録する必要があります。  
+ライトハウスを使用するには、MSP を間接リセラーまたは直接請求パートナーとしてクラウド ソリューション プロバイダー (CSP) プログラムに登録する必要があります。
 
-さらに、各 MSP カスタマー テナントは、次の要件を満たして、ライトハウスの対象となる必要があります。 
- 
-- MSP の委任管理者特権 (DAP) または詳細な委任管理者特権 (GDAP) 
-- 少なくとも 1 つのMicrosoft 365 Business PremiumまたはMicrosoft 365 E3ライセンス 
-- ライセンスユーザー数が 1000 人未満  
+さらに、各 MSP カスタマー テナントは、次の要件を満たすことで Lighthouse の資格を得る必要があります。
 
-## <a name="requirements-for-enablingdevice-management"></a>デバイス管理を有効にする要件
+- カスタマー テナントを管理できるようにするには、マネージド サービス プロバイダー (MSP) に対して委任されたアクセスが設定されている必要があります*
+- 少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、またはWindows 365 Businessライセンスが必要です
+- ライセンスを持つユーザーが 1,000 人以下である必要があります
 
-デバイス管理ページで顧客テナント デバイスを表示するには、MSP が次の条件を実行する必要があります。
+*お客様を Lighthouse にオンボードするには、委任された管理特権 (DAP) が必要です。 また、より安全な委任アクセスを有効にするために、顧客と共に詳細な委任管理特権 (GDAP) を確立することをお勧めします。 DAP と GDAP は共存していますが、両方のモデルが配置されているお客様に対して GDAP が優先されます。 近いうちに、GDAP (DAP なし) を持つお客様は、Lighthouse にオンボードできるようになります。
 
-- すべての顧客デバイスをデバイス (MEM) Microsoft エンドポイント マネージャー登録します。詳細については、「デバイスをデバイスに[登録する」を参照Microsoft Intune](/mem/intune/enrollment/)。
-- コンプライアンス ポリシーをすべての顧客デバイスに割り当てる。詳細については、「コンプライアンス ポリシーを[作成する」](/mem/intune/protect/create-compliance-policy)を参照Microsoft Intune。 
+## <a name="requirements-for-enabling-device-management"></a>デバイス管理を有効にするための要件
 
-## <a name="requirements-for-enabling-usermanagement"></a>ユーザー管理を有効にするための要件 
+デバイス管理ページで顧客テナント デバイスを表示するには、MSP で次の手順を実行する必要があります。
 
-リスクの高いユーザー、多要素認証、パスワードのリセットなどのユーザー管理ページのレポートに顧客データを表示するには、顧客テナントが Azure Active Directory プレミアム P1 以降のライセンスを持っている必要があります。 Azure AD Premium P1は、Microsoft 365 Business PremiumとMicrosoft 365 E3。   
+- Microsoft エンドポイント マネージャー (MEM) 内のすべての顧客デバイスを登録します。 詳細については、「[Microsoft Intuneにデバイスを登録する](/mem/intune/enrollment/)」を参照してください。
+- コンプライアンス ポリシーをすべての顧客デバイスに割り当てます。 詳細については、「[Microsoft Intuneでのコンプライアンス ポリシーの作成](/mem/intune/protect/create-compliance-policy)」を参照してください。
 
-## <a name="requirements-for-enablingthreat-management"></a>脅威管理を有効にするための要件 
+## <a name="requirements-for-enabling-user-management"></a>ユーザー管理を有効にするための要件
 
-脅威管理ページで顧客テナント デバイスと脅威を表示するには、すべての顧客テナント デバイスを Microsoft エンドポイント マネージャー (MEM) に登録し、Microsoft Defender ウイルス対策 を実行してそれらを保護する必要があります。  
+リスクの高いユーザー、多要素認証、パスワード のリセットなど、ユーザー管理ページのレポートに顧客データを表示するには、顧客テナントにAzure Active Directory Premium P1以降のライセンスが必要です。 Azure AD Premium P1は、Microsoft 365 Business PremiumとMicrosoft 365 E3に含まれています。
 
-詳細については、「デバイスをデバイスに[登録する」を参照Microsoft Intune](/mem/intune/enrollment/)。  
+## <a name="requirements-for-enabling-threat-management"></a>脅威管理を有効にするための要件
 
-Microsoft Defender ウイルス対策は、オペレーティング システムWindowsの一部であり、デバイスが実行されているデバイスで既定でWindows 10。  
+脅威管理ページで顧客テナント デバイスと脅威を表示するには、すべての顧客テナント デバイスを Microsoft エンドポイント マネージャー (MEM) に登録し、Microsoft Defender ウイルス対策を実行して保護する必要があります。
 
-> [!NOTE] 
-> Microsoft 以外のウイルス対策ソリューションを使用している場合は、Microsoft Defender ウイルス対策自動的Microsoft Defender ウイルス対策無効になります。 Microsoft 以外のウイルス対策ソリューションをアンインストールすると、Microsoft Defender ウイルス対策デバイスを脅威から保護Windows自動的にアクティブ化されます。    
+詳細については、「[Microsoft Intuneにデバイスを登録する](/mem/intune/enrollment/)」を参照してください。
+
+Microsoft Defender ウイルス対策は、Windows オペレーティング システムの一部であり、Windows 10を実行しているデバイスでは既定で有効になっています。
+
+> [!NOTE]
+> microsoft 以外のウイルス対策ソリューションを使用していて、Microsoft Defender ウイルス対策していない場合、Microsoft Defender ウイルス対策は自動的に無効になります。 Microsoft 以外のウイルス対策ソリューションをアンインストールすると、Windows デバイスを脅威から保護するためにMicrosoft Defender ウイルス対策が自動的にアクティブ化されます。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ポータル Microsoft 365 Lighthouseの構成](m365-lighthouse-configure-portal-security.md) (記事)\
-[Microsoft 365 Lighthouse コンプライアンス ページの概要](m365-lighthouse-device-compliance-page-overview.md) (記事)\
+[ポータル セキュリティMicrosoft 365 Lighthouse構成](m365-lighthouse-configure-portal-security.md)する (記事)\
+[Microsoft 365 Lighthouse デバイス コンプライアンス ページの概要](m365-lighthouse-device-compliance-page-overview.md) (記事)\
 [Microsoft 365 Lighthouse ユーザー ページの概要](m365-lighthouse-users-page-overview.md) (記事)\
-[Microsoft 365 Lighthouse管理ページの概要](m365-lighthouse-threat-management-page-overview.md) (記事)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)
-
+[Microsoft 365 Lighthouse脅威管理ページの概要](m365-lighthouse-threat-management-page-overview.md) (記事)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)

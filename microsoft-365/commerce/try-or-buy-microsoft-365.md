@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: GEA150
 description: Microsoft 365 Business Standard、Microsoft 365 Business Premium、または Microsoft 365 Apps for business の 30 日間無料試用版にサインアップします。
 ms.date: 08/07/2020
-ms.openlocfilehash: d1a5c7bb96d93a195ee93893f59c71ff8080b6f6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: d7ead35ebef6431a5e207e7114936d9724948755
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317962"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824226"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>一般法人向け Microsoft 365 サブスクリプションを試用する/購入する
 

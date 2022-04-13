@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b193279f9891badc78e639776a57a366a0fa8109
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 67f23d31f50dc20e385f36d4ee4a941db14af7ef
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807082"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790682"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを検出してブロックする
 
@@ -29,6 +29,10 @@ ms.locfileid: "62807082"
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
+- Microsoft Defender ウイルス対策
+
+**プラットフォーム**
+- Windows
 
 望ましくない可能性のあるアプリケーション (PUA) は、マシンの実行速度が低下したり、予期しない広告が表示されたり、最悪の場合、予期しないまたは望ましくない可能性のある他のソフトウェアをインストールしたりする可能性のあるソフトウェアのカテゴリです。 PUA は、ウイルス、マルウェア、またはその他の種類の脅威とは見なされませんが、エンドポイントのパフォーマンスまたは使用に悪影響を与えるアクションをエンドポイントで実行する可能性があります。 *PUA* という用語は、特定の種類の望ましくない動作が原因で、Microsoft Defender for Endpoint によって評価された、評判の悪いアプリケーションを指す場合もあります。
 
@@ -202,6 +206,16 @@ DeviceEvents
 ファイルが PUA 保護によって誤ってブロックされたり、タスクを完了するために PUA の機能が必要になったりすることがあります。 このような場合、ファイルを除外リストに追加できます。
 
 詳細については、「[ファイル拡張子とフォルダーの場所に基づく除外の構成と検証](configure-extension-file-exclusions-microsoft-defender-antivirus.md)」を参照してください。
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 

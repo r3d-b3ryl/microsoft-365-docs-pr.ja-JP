@@ -19,12 +19,12 @@ ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 596616328a02182b39c67f58137d43ab626e1756
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788482"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823314"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する
 
@@ -75,7 +75,7 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 > - この記事では、広範なリリース チャネルに含まれる変更の一覧を示します。 [こちらで最新の広範なチャネルのリリースをご覧ください](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)。
 > - 段階的なロールアウト プロセスの詳細と次のリリースの詳細については、「[Microsoft Defender 更新プログラムの段階的なロールアウト プロセスを管理する](manage-gradual-rollout.md)」を参照してください。
 > - セキュリティ インテリジェンスの更新プログラムの詳細については、「[Microsoft Defender ウイルス対策とその他の Microsoft マルウェア対策のためのセキュリティ インテリジェンスの更新プログラム](https://www.microsoft.com/en-us/wdsi/defenderupdates)」を参照してください。
-> - Microsoft Defender プロセスの一覧を探している場合は、**[mde-urls ブックをダウンロードして](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)**、"**Microsoft Defender Processes**" シートを選択します。 mde-urls ブックには、「[プロキシ サーバーで Microsoft Defender for Endpoint サービス URL へのアクセスを有効にする](configure-proxy-internet.md)」で説明されているように、ネットワークで接続できる必要があるサービスと関連付けられた URL もリストされています。
+> - Microsoft Defender プロセスの一覧を探している場合は、**[mde-urls ブックをダウンロードして](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**、"**Microsoft Defender Processes**" シートを選択します。 mde-urls ブックには、「[プロキシ サーバーで Microsoft Defender for Endpoint サービス URL へのアクセスを有効にする](configure-proxy-internet.md)」で説明されているように、ネットワークで接続できる必要があるサービスと関連付けられた URL もリストされています。
 
 ## <a name="monthly-platform-and-engine-versions"></a>月次プラットフォームとエンジンのバージョン
 
@@ -993,10 +993,10 @@ Windows 10 (Enterprise、Pro、Home エディション)、Windows Server 2019、
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
