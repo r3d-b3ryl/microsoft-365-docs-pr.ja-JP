@@ -375,6 +375,8 @@
       items:
         - name: 準備する
           href: configure-services-and-applications.md
+        - name: 外部コラボレーション
+          href: external-guest-access.md
         - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint

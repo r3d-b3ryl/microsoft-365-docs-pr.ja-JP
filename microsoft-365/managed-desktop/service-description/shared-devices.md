@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ad9cb5e69585f0c014050b51b719e539111cf9fa
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 8c8d79313ee858ebcac8754b96046b517a3f614a
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687187"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835976"
 ---
 # <a name="shared-devices"></a>共有デバイス
 
@@ -31,7 +31,7 @@ Microsoft Managed Desktopでの登録時点で共有デバイス モードを使
 
 ## <a name="when-to-use-shared-device-mode"></a>共有デバイス モードを使用する場合
 
-ユーザーが頻繁にデバイスを変更する状況。
+ユーザーが頻繁にデバイスを変更する場合は、共有デバイス モードを使用します。
 
 たとえば、銀行の窓口担当者は、1 つの場所で入金を管理しているが、住宅ローンを持つ顧客を支援するためにバック オフィスに移動する場合があります。 これらの各場所では、デバイスは異なるアプリケーションを実行し、それらのタスク用に最適化されていますが、複数のユーザーが使用します。
 
@@ -41,13 +41,31 @@ Microsoft Managed Desktopでの登録時点で共有デバイス モードを使
 
 共有デバイス モードは、次の状況では適していません。
 
-- ユーザーのファイルをクラウドではなくローカルに格納する必要がある場合
-- デバイス上のユーザーごとにユーザー エクスペリエンスが異なる必要がある場合
-- 各ユーザーが必要とするアプリケーションのセットが大きく異なる場合
+- ユーザーのファイルをクラウドではなくローカルに格納する必要がある場合。
+- デバイス上のユーザーごとにユーザー エクスペリエンスが異なる必要がある場合。
+- アプリケーションのセットが必要な場合、各ユーザーが必要とするアプリケーションは大きく異なります。
 
-## <a name="register-new-devices-in-shared-device-mode"></a>共有デバイス モードで新しいデバイスを登録する
+## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile-in-microsoft-managed-desktop"></a>Microsoft Managed DesktopでWindows Autopilot 自己展開モード プロファイルを使用して新しいデバイスを登録する
 
-2203 以降では、デバイスの登録を処理するパートナーを問わず、[Microsoft Managed DesktopでWindows Autopilot 自己展開モード プロファイルを](/mem/autopilot/self-deploying)使用することを選択できます。
+自分またはパートナーがデバイス登録を処理しているかどうかに関係なく、[Microsoft Managed DesktopでWindows Autopilot 自己展開モード プロファイルを](/mem/autopilot/self-deploying)使用することを選択できます。
+
+### <a name="before-you-begin"></a>はじめに
+
+Autopilot の自己展開モードの要件Windows確認します。
+
+> [!IMPORTANT]
+> 自動展開モードでの初期デプロイ後、Autopilot を使用してデバイスを自動的に再登録することはできません。 代わりに、[Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)でデバイス レコードを削除します。 管理センターからデバイス レコードを削除するには、**DevicesAll デバイス** > を選択>削除するデバイスを選択>**削除します**。  詳細については、「[Windows Autopilot のサインインと展開エクスペリエンスの更新](https://techcommunity.microsoft.com/t5/intune-customer-success/updates-to-the-windows-autopilot-sign-in-and-deployment/ba-p/2848452)」を参照してください。
+
+#### <a name="trusted-platform-module"></a>トラステッド プラットフォーム モジュール
+
+自己展開モードでは、デバイスの TPM 2.0 ハードウェアを使用して、組織のAzure Active Directory テナントに対してデバイスを認証します。 したがって、TPM 2.0 のないデバイスでは、このモードを使用できません。 デバイスでは、TPM デバイス構成証明もサポートされている必要があります。 すべての新しいWindows デバイスは、これらの要件を満たす必要があります。 TPM 構成証明プロセスでは、TPM プロバイダーごとに一意の HTTPS URL のセットへのアクセスも必要です。 詳細については、 [ネットワーク要件](/mem/autopilot/self-deploying#requirements)での Autopilot 自己展開モードと Autopilot 事前プロビジョニングのエントリを参照してください。 Autopilot ソフトウェア要件Windows詳細については、「[Autopilot](/mem/autopilot/software-requirements) ソフトウェア要件Windows参照してください。
+
+> [!TIP]
+> TPM 2.0 がサポートされていないデバイス、または仮想マシン上のデバイスに自己展開モードをデプロイしようとすると、デバイスを検証するときにプロセスが失敗し、タイムアウト エラーが0x800705B4されます (Hyper-V 仮想 TPM はサポートされていません)。 また、Windows 10 バージョン 1903 以降は、Windows 10 バージョン 1809 での TPM デバイス構成証明の問題により、自己展開モードを使用する必要があることにも注意してください。 Windows 10 Enterprise 2019 LTSC はWindows 10 バージョン 1809 に基づいているため、Windows 10 Enterprise 2019 LTSC でも自己展開モードはサポートされていません。
+>
+> その他の既知の問題と解決策の詳細については、「[Autopilot の既知の問題Windows](/mem/autopilot/known-issues)と [Autopilot デバイスのインポートと登録のトラブルシューティング](/mem/autopilot/troubleshoot-device-enrollment)」を参照してください。
+
+### <a name="steps-to-register-devices-to-use-the-windows-autopilot-self-deploying-mode-profile"></a>Windows Autopilot 自己展開モード プロファイルを使用するようにデバイスを登録する手順
 
 デバイスを自分で登録する場合は、Windows Autopilot デバイス ブレードに新しいデバイスをインポートする必要があります。
 
@@ -76,7 +94,7 @@ Microsoft Managed Desktopでの登録時点で共有デバイス モードを使
 
 ### <a name="device-storage"></a>デバイス ストレージ
 
-共有デバイスのユーザーは、他のデバイスにデータを追跡できるように、データをクラウドにバックアップする必要があります。 共有デバイス モードでデバイスを登録したら、OneDriveの [Files On-Demand](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) および[既知のフォルダーリダイレクト](/onedrive/redirect-known-folders)機能を有効にしてください。 この方法により、各ユーザー プロファイルがデバイス ストレージに与える影響が最小限に抑えられます。 共有デバイス モードのデバイスでは、空きディスク領域が 25% を下回ると、ユーザー プロファイルが自動的に削除されます。 このアクティビティは、ストレージが大幅に制限されない限り、デバイスのローカル時刻の午前 0 時にスケジュールされます。
+共有デバイスのユーザーは、他のデバイスにデータを追跡できるように、データをクラウドにバックアップする必要があります。 共有デバイス モードでデバイスを登録したら、OneDriveの [Files On-Demand](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) および[既知のフォルダーリダイレクト](/onedrive/redirect-known-folders)機能を必ず有効にしてください。 この方法により、各ユーザー プロファイルがデバイス ストレージに与える影響が最小限に抑えられます。 共有デバイス モードのデバイスでは、空きディスク領域が 25% を下回ると、ユーザー プロファイルが自動的に削除されます。 このアクティビティは、ストレージが大幅に制限されない限り、デバイスのローカル時刻の午前 0 時にスケジュールされます。
 
 Microsoft Managed Desktopは [SharedPC](/mem/intune/configuration/shared-user-device-settings-windows) CSP を使用してこれらの操作を行うので、それらの CSP は自分で使用しないようにしてください。
 
