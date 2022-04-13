@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人間が操作するランサムウェア、人手によるランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: セキュリティ ベースラインを使用して、ランサムウェア攻撃から Microsoft 365 リソースを保護します。
-ms.openlocfilehash: 22092994765e9015421c21f2ee057c63463d594d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 925a64e1d7852aeed6f596e99b20dbff8b34d1be
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320187"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825104"
 ---
 # <a name="step-1-configure-security-baselines"></a>手順 1. セキュリティ 基準を構成する
 
@@ -53,14 +53,14 @@ ms.locfileid: "63320187"
 - Windows ローカル セキュリティ機関サブシステムからの資格情報の盗用 (lsass.exe)
 - PSExec コマンドと WMI コマンドから発生するプロセス作成
 
-## <a name="exchange-email-management-baseline"></a>Exchange メール管理基準 
+## <a name="exchange-email-management-baseline"></a>Exchange メール管理基準
 
 Exchange メール 基準設定を使用して、テナントに対して電子メール ベースの攻撃の最初のアクセスが起きないように支援します。
 
 - [Microsoft Defender ウイルス対策のメール スキャン](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus)を有効にします。
 - Microsoft Defender for Office 365 を使用して、新しい脅威や多型バリアントに対する [強化されたフィッシング保護](/microsoft-365/security/office-365-security/anti-phishing-protection)とカバレッジを提供します。
 - Office 365 メール フィルター の設定を確認して、スプーフィングされたメール、スパム、マルウェア付きのメールをブロックします。 Microsoft Defender for Office 365 を使用して、新しい脅威や多型バリアントに対する強化されたフィッシング保護とカバレッジを提供します。 Defender for Office 365 を構成して、リンクを [再確認して](/microsoft-365/security/office-365-security/atp-safe-links)をクリックして、配信されたメールの[削除を新しく取得した脅威インテリジェンスに](/microsoft-365/security/office-365-security/zero-hour-auto-purge)応じて行います。
-- EOP および Defender for Office 365 のセキュリティのための [推奨設定を確認し、最新版に更新します](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)。
+- [EOP および Defender for Office 365 のセキュリティのための推奨設定](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) を確認し、最新版に更新します。
 - Defender for Office 365 を構成して、リンクを [再確認して](/microsoft-365/security/office-365-security/set-up-safe-links-policies)をクリックして、新しく取得した脅威インテリジェンスに応じて、配信されたメールの削除を行います。
 
 ## <a name="additional-baselines"></a>追加の基準計画
@@ -82,7 +82,6 @@ Exchange メール 基準設定を使用して、テナントに対して電子�
 この手順の後の、テナントのランサムウェア保護を次に示します。
 
 ![手順 1 の後の、Microsoft 365 テナントのランサムウェア保護](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step1.png)
-
 
 ## <a name="next-step"></a>次の手順
 
