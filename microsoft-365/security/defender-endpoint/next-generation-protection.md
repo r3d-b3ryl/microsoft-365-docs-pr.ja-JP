@@ -15,18 +15,23 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 94f920d298c5b74eff39290ced4ccdc58031ac0f
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 71cfbfe44525d67362ad7acc2c9d063ef0bb9ffd
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807406"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790352"
 ---
 # <a name="next-generation-protection-overview"></a>次世代保護の概要
 
 **適用対象**
+
+- Microsoft Defender ウイルス対策
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+**プラットフォーム**
+- Windows
 
 Microsoft Defender for Endpoint には、ネットワークのセキュリティ境界を強化するための次世代保護が含まれています。 次世代保護は、あらゆる種類の新たな脅威を捕らえるように設計されました。 Microsoft Defender ウイルス対策に加えて、次世代保護サービスには以下の機能が含まれています。
 
@@ -53,4 +58,15 @@ Microsoft Defender for Endpoint には、ネットワークのセキュリティ
 次世代の保護サービスを構成する方法の詳細については、「[Microsoft Defender ウイルス対策機能を構成する](configure-microsoft-defender-antivirus-features.md)」を参照してください。
 
 > [!NOTE]
-> 構成と管理は、Windows Server と Windows クライアントでほぼ同じです。 ただし、いくつかの違いがあります。 
+> 構成と管理は、Windows Server と Windows クライアントでほぼ同じですが、いくつかの違いがあります。 
+
+> [!TIP]
+> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
+> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
+> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
+
