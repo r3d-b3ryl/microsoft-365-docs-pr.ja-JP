@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーと共有チャネルを使用する方法について説明します。
-ms.openlocfilehash: 9fa58be15eab0844fa92d408320902c23f36de93
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: e6ee2a6be6ec54c002898e301fbd53eed25a328f
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468883"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835828"
 ---
 # <a name="collaborate-with-external-participants-in-a-channel"></a>チャネルで外部の参加者と共同作業する
 
@@ -49,6 +49,12 @@ Teams で、共有チャネルは既定で有効になっています。 この�
     - チーム所有者が組織外のユーザーと共有チャネルを共有できるようにするには、**[共有チャネルを外部で共有する]** をオンにします。
     - ユーザーが他の組織の共有チャネルへの招待を受けることができるようにするには、**[外部の共有チャネルへの招待を受けることができる]** をオンにします。
 1. **[適用]** を選択します。
+
+外部チャネルの参加者が会議に参加するには、外部アクセスを有効にする必要があります。 これは、チャネルで外部参加者のプレゼンスを確認できるようにするためにも必要です。
+
+外部アクセスを有効にするには
+1. [Teams 管理センター](https://admin.teams.microsoft.com/) で、**［ユーザー］** を展開し、**［外部アクセス］** を選択します。
+1. **Teams および外部組織の Skype for Business ユーザー** で、共同作業を行う組織がブロックされていないことを確認します。
 
 ## <a name="configure-cross-tenant-access-settings-in-azure-ad"></a>Azure AD のクロス テナント アクセス設定を構成する
 

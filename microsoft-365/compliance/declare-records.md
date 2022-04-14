@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用してレコードを宣言する。
-ms.openlocfilehash: 93e51698109819f4743dd4b5b45f5a5177739a2a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 228ce06cbc646f60703443a00492693019dfa0b8
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324845"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836135"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>保持ラベルを使用してレコードを宣言する
 
@@ -55,11 +55,15 @@ ms.locfileid: "63324845"
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>保持ラベルを構成してレコードを宣言する
 
-Microsoft 365 コンプライアンス センターの **レコード管理** ソリューションから保持ラベルを作成する場合、アイテムをレコードとしてマークするオプションがあります。 前のセクションで実行した PowerShell コマンドを実行した場合、代わりに規制レコードとしてアイテムをマークすることができます。
+Microsoft 365 コンプライアンス センターの **レコード管理** ソリューションから保持ラベルを作成する場合、**アイテムをレコードとしてマークする** オプションを選択できます。 次に、現在プレビューでロールアウトされている追加のオプションとして、SharePoint と OneDrive の既定でレコードのロックを解除します。
+
+**［既定でこのレコードのロックを解除する］** の追加オプションを使用すると コンテンツの編集が完了したときにレコードがロックされるため、効果的にユーザー自身がレコードを宣言できます。 このサポートされているシナリオの詳細については、「[レコードのバージョン管理を使用して、SharePoint または OneDrive に格納されているレコードを更新する](record-versioning.md)」 を参照してください。
+
+前のセクションで実行した PowerShell コマンドを実行した場合、代わりに規制レコードとしてアイテムをマークすることができます。
 
 例:
 
-![保持ラベルを構成して、コンテンツをレコードまたは規制レコードとしてマークする。](../media/recordversioning6.png)
+![保持ラベルを構成して、コンテンツをレコードまたは規制レコードとしてマークする。](../media/declare-records.png)
 
 この保持ラベルを使用することで、ラベルを必要に応じて SharePoint や OneDrive のドキュメントまたは Exchange のメールに適用できるようになりました。
 

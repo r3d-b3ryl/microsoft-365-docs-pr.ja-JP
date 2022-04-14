@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 99ed659ceae21901deb1625c0b9e65a9a82ea1b4
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: abaca30b4de2638b0c1f7d0522b96fac469760a9
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704738"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841809"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
@@ -28,7 +28,7 @@ ms.locfileid: "64704738"
 
 新しい記事または変更されたアーティクル | 説明
 --- | ---
-| [共有デバイス](service-description/shared-devices.md) | 共有モードで新しいデバイスを登録するセクションを追加しました |
+| [共有デバイス](service-description/shared-devices.md) | Autopilot 自己展開モード プロファイルWindows使用して新しいデバイスを登録する機能を追加しました |
 | [Teams](get-started/teams.md) | [更新Microsoft Intune変更] セクション |
 
 ## <a name="march-2022"></a>2022 年 3 月
@@ -236,7 +236,7 @@ ms.locfileid: "64704738"
 [新しいデバイスをユーザー自身が登録する](get-started/manual-registration.md) | 更新された記事
 [既存のデバイスを自分で登録する](get-started/manual-registration-existing-devices .md) |更新された記事 [Microsoft Managed Desktop |の前提条件](get-ready/prerequisites.md)Microsoft Managed Desktop [|のセキュリティ操作に関](service-description/security-operations.md)する記事を更新しました新しい記事 [管理ポータル |にアクセスする](get-started/access-admin-portal.md)|[Microsoft 365 Apps for enterprise](get-started/m365-apps.md)記事を更新しました新しい記事 [プライバシーと個人データ](service-description/privacy-personal-data.md) |新しい記事
 
-## <a name="july-2020"></a>2020 年7 月
+## <a name="july-2020"></a>2020 年 7 月
 
 新しい記事または変更されたアーティクル | 説明
 --- | ---

@@ -171,6 +171,8 @@
               href: create-groups/restore-deleted-group.md
             - name: グループへのゲスト アクセスを管理する
               href: create-groups/manage-guest-access-in-groups.md
+            - name: 所有者なしのグループとチームを管理する
+              href: create-groups/ownerless-groups-teams.md
         - name: パスワード
           items:
             - name: パスワードをリセットする

@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 8c8d79313ee858ebcac8754b96046b517a3f614a
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 5cb1f14f8f9dc8c645621c1a12c651db8a790b71
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835976"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841926"
 ---
 # <a name="shared-devices"></a>共有デバイス
 
@@ -45,7 +45,7 @@ Microsoft Managed Desktopでの登録時点で共有デバイス モードを使
 - デバイス上のユーザーごとにユーザー エクスペリエンスが異なる必要がある場合。
 - アプリケーションのセットが必要な場合、各ユーザーが必要とするアプリケーションは大きく異なります。
 
-## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile-in-microsoft-managed-desktop"></a>Microsoft Managed DesktopでWindows Autopilot 自己展開モード プロファイルを使用して新しいデバイスを登録する
+## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile"></a>Windows Autopilot 自己展開モード プロファイルを使用して新しいデバイスを登録する
 
 自分またはパートナーがデバイス登録を処理しているかどうかに関係なく、[Microsoft Managed DesktopでWindows Autopilot 自己展開モード プロファイルを](/mem/autopilot/self-deploying)使用することを選択できます。
 

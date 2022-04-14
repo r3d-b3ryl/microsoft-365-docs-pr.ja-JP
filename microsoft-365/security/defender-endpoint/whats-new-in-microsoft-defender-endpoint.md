@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3294529a9b86fdc9bdb83de6a3296c9f0d6507d
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 6fb2b8c3e1466c52d707538f46643580c72a6fbf
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782833"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841892"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -60,7 +60,7 @@ ms.locfileid: "64782833"
 - [iOS 上の Defender for Endpoint の新機能](ios-whatsnew.md)
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
 
-## <a name="march-2022"></a>2022 年 3 月
+## <a name="april-2022"></a>2022 年 4 月
 - [Windows Server 2012 R2 とWindows Server 2016) のオンボードと機能パリティを更新しました](configure-server-endpoints.md)<br/> 新しい統合ソリューション パッケージが一般公開され、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になりました。 さらに、この統合ソリューション パッケージには、多くの新機能が追加されています。
 
 ## <a name="january-2022"></a>2022 年 1 月

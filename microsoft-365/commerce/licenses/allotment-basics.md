@@ -1,11 +1,11 @@
 ---
-title: Allotment の基本
+title: 割り当ての基本
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,41 +17,41 @@ ms.collection:
 ms.custom:
 - commerce_licensing
 search.appverid: MET150
-description: 新しいアロットメント機能について学習します。
+description: 新しい割り当て機能について説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: b41b3e27b7a3b05a9b80c3ac9590139adcee6fc6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 339533d4635e29bb277fe7f0344ba2da17f4ec7d
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325446"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841837"
 ---
-# <a name="allotment-basics"></a>Allotment の基本
+# <a name="allotment-basics"></a>割り当ての基本
 
-ライセンス割り当てでは、ライセンス制限を設定し、ライセンス割り当ての管理を選択した製品とライセンス制限にのみ委任できます。
+ライセンス割り当てでは、ライセンス制限を設定し、選択した製品とライセンス制限のみにライセンスの割り当ての管理を委任できます。
 
-Allotments は、グループ ベースのライセンスを使用して、ユーザーにライセンスを割り当てします。 ライセンス制限により、グループ内のユーザーに割り当てられるライセンスの数を制御できます。 したがって、グループ内のユーザー数が増えても、割り当てに設定したライセンス制限内にとどまる必要があります。
+割り当てでは、グループベースのライセンスを使用して、ユーザーにライセンスを割り当てます。 ライセンス制限により、グループ内のユーザーに割り当てられているライセンスの数を制御できます。 そのため、グループ内のユーザー数が増えても、割り当てに設定したライセンス制限内に収まるようにすることができます。
 
-また、アロットメントの管理を委任することもできます。 委任された割り当ての所有者は管理センターにアクセスできますが、所有する割り当て内のライセンスのみを表示および管理できます。 これにより、組織内のライセンス管理のより詳細な委任が提供されます。
+割り当ての管理を委任することもできます。 委任された割り当て所有者は管理センターにアクセスできますが、所有する割り当てのライセンスのみを表示および管理できます。 これにより、組織内のライセンス管理をより細かく委任できます。
 
 ## <a name="prerequisites"></a>前提条件
 
-グループ ベースのライセンスのライセンス要件 [を満たす必要があります](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)。
+[グループ ベース](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)のライセンスのライセンス要件を満たしている必要があります。
 
-ユーザーが使用できる任意の製品で割り当てを使用できます。
+割り当ては、ユーザーが使用できる任意の製品で使用できます。
 
-- Officeスイートとスタンドアロン製品
-- Enterpriseモビリティ製品
+- Office スイートとスタンドアロン製品
+- Enterpriseおよびモビリティ製品
 - Dynamics 365 製品
 
-次の製品は、アロットメントでは使用できません。
+次の製品を割り当てと共に使用することはできません。
 
-- Microsoft Storeアプリ
-- 永続的なソフトウェア、またはライセンスがない場合にユーザーに直接割り当てられるソフトウェア。
+- Microsoft Store アプリ
+- 永続的なソフトウェア、またはライセンスが含まれていない場合にユーザーに直接割り当てられるソフトウェア。
 - Azure リソース
 
-割り当ての開始には、グローバル管理者またはライセンス管理者である必要があります。
+割り当ての作業を開始するには、グローバル管理者またはライセンス管理者である必要があります。
 
 ## <a name="getting-started"></a>はじめに
 
-このアロットメント機能は、プライベート プレビューで使用できるユーザー数はわずかです。 参加する場合は、次のフォームに入力します [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。
+割り当て機能は、少数の顧客のみがプライベート プレビューで使用できます。 参加に関心がある場合は、次のフォームに入力します [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。

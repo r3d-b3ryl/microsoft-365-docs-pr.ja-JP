@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
-ms.localizationpriority: medium
+ms.localizationpriority: high
 search.appverid:
 - MET150
 - MOE150
@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 におけるセキュリティについて、EOP、Defender for Office 365 プラン 1 およびプラン 2、セキュリティの標準構成と厳格な構成の違いなどを説明します。お持ちのセキュリティ製品を理解し、組織のメールやファイルを保護する方法を学びます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ddf81e038b4c055134498ee0a26751b735d786a
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
-ms.translationtype: MT
+ms.openlocfilehash: a9f480575c712488a17dc7e9e91320edc11d0e50
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472179"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835911"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender for Office 365 セキュリティの概要
 
@@ -55,7 +55,7 @@ Office 365 セキュリティ は、EOP で提供される中心的な保護機�
 
 しかし、アーキテクチャの観点から見た場合、各コンポーネントをセキュリティの累積的な層と捉え、各層にはセキュリティに関する特定の強調点があると考えることが可能です。以下のように理解できます。
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP と Microsoft Defender Office 365メール認証に関するメモを含む、サービスの重点を置いてお客様との関係を説明します。" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP と Microsoft Defender for Office 365 およびこれらの間の関係とともにサービスの強調点が示され、メール認証に関するメモが含まれています" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
 
 これらのサービスのそれぞれでは保護、検出、調査、対応のいずれかを強調していますが、***すべて** のサービスは保護、検出、調査、および対応の *_いずれの_**目標も達成できます。
 

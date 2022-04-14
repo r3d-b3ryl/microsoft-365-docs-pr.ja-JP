@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイルプランでは、アイテム保持ラベルに高度な管理機能が提供されます。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 2e028bae676b949c662a86178bac5e8ccdc557bf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 40c395d609a9a02637b937cafae988578dc6e14f
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317711"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836174"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>ファイル計画を使用して保持ラベルを作成および管理する
 
@@ -80,6 +80,10 @@ Microsoft 365 コンプライアンスセンターで、もしも既に **情報
     - いいえ
     - はい
     - はい (法的)
+
+- **既定でロック解除されています** —現在ロールアウト中—は、ラベルが適用されたときにレコードとしてマークされたアイテムがロック解除されているかどうかを示します。 有効な値:
+    - 不要
+    - はい
 
 - **保持期間** は、保持期間を識別します。有効な値は以下の通りです。
     - 日数
@@ -212,7 +216,13 @@ A *.csv ファイルは既存の全ての保持ラベルを開く、を含みま
 |CitationJurisdiction|String|いいえ|このプロパティは、**規定/引用** ファイル計画記述子に表示される管理規則または機関を指定します (例: 「米国証券取引委員会 (SEC)」)。|
 |Regulatory|文字列|いいえ|このプロパティでは、ラベルがコンテンツをレコードより[制限された](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) Regulatory レコードとしてマークするかどうかを指定します。 このラベル構成を使用するには、[コンテンツを Regulatory レコードとしてマークするオプションを表示する](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)ようにテナントを構成する必要があり、そうでない場合はインポートの検証が失敗します。 有効な値は次のとおりです。 </br>**TRUE**: ラベルは、Regulatory レコードとしてアイテムをマークします。 また、**IsRecordLabel** プロパティを TRUE に設定する必要があります。</br>**FALSE**: このラベルは、コンテンツを Regulatory レコードとしてマークしません。これは既定値です。|
 |EventType|文字列|いいえ、**RetentionType** が **EventAgeInDays** ではない場合です|このプロパティは、[イベントベースの保持](event-driven-retention.md)に使用するイベントの種類を指定します。 **[レコード管理]**、 > **[イベント]**、 > **[イベントの種類の管理]** に表示されている既存のイベントの種類を指定します。 または、[Get-CompianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) コマンドレットを使用して、利用可能なイベントの種類を表示します。 **従業員活動** や **製品ライフタイム** など、いくつかの組み込みのイベントの種類がありますが、独自のイベントの種類を作成することもできます。 </br> </br> 独自のイベントの種類を指定する場合、インポート プロセスの一環として名前が検証されるため、そのイベントの種類がインポート前に存在している必要があります。|
-|||
+
+ラベルの設定は、現在インポートでサポートされていません。
+
+- 複数ステージの廃棄レビュー: テンプレートを使用して保持ラベルをインポートするときに、1 つの処理レビュー ステージの設定を構成できますが、追加のレビュー ステージを指定することはできません。 代わりに、インポートが成功した後、コンプライアンス センターでこれらを構成します。
+
+- 既定でこのレコードのロックを解除 (現在プレビュー段階): この設定は、インポートするテンプレートでは使用できず、インポートが成功した後にコンプライアンス センターでこの設定を選択することはできません。
+
 
 ## <a name="next-steps"></a>次の手順
 

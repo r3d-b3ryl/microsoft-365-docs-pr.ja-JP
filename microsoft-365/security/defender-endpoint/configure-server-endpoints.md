@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f06ed934f1ba1a24ba16fe3919d37e10526a3a2f
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 1709597d10b140124501fd0dc7349e8fc4342bb6
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823852"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841755"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint にオンボードします
 
@@ -102,7 +102,8 @@ MMA を使用して以前にサーバーをオンボードしたことがある�
 Windows Server 2012 R2 および 2016 の新しい統合ソリューション パッケージには、次の詳細が適用されます。
 
 - [［プロキシ サーバーの Microsoft Defender for Endpoint サービス URL へのアクセスを有効にする］](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) で指定されている接続要件が満たされていることを確認します。 これらは、Windows Server 2019 の場合と同じです。 
-- 静的な TelemetryProxyServer を使用している場合に、Windows Server 2012 R2 のクラウドへの接続において、SYSTEM アカウントのコンテキストから証明書失効リスト （CRL） の URL に到達できない問題を調査しています。 即時の軽減策は、このような接続を提供する代替プロキシ オプションを使用するか、SYSTEM アカウント コンテキストで WinInet 設定を使用して同じプロキシを構成することです。
+- 静的 TelemetryProxyServer **が使用され**、証明書失効リスト (CRL) URL が SYSTEM アカウント コンテキストから到達できない場合、クラウドへの R2 接続Windows Server 2012に関する問題が特定されました。 当面の軽減策は、このような接続を提供する代替プロキシ オプション ("システム全体" ) を使用するか、SYSTEM アカウント コンテキストの WinInet 設定を使用して同じプロキシを構成することです。
+または、 [切断されたマシン上の TelemetryProxyServer に関する既知の問題の回避策に関する回避策に](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) 記載されている手順を使用して、回避策として証明書をインストールします。
 - 以前は、Windows Server 2016 以下で Microsoft Monitoring Agent (MMA) を使用すると、OMS/Log Analytics ゲートウェイで Defender クラウド サービスへの接続を提供することができました。 Windows Server 2019、Windows Server 2022、Windows 10 上の Microsoft Defender for Endpoint などの新しいソリューションでは、このゲートウェイはサポートされていません。
 - Windows Server 2016 で、Microsoft Defender ウイルス対策がインストールされており、アクティブで最新であることを確認します。 Windows Update を使用して、最新のプラットフォーム バージョンをダウンロードしてインストールできます。 または、[Microsoft Update カタログ](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) もしくは [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64) から手動で更新プログラム パッケージをダウンロードします。  
 - Windows Server 2012 R2 では、Microsoft Defender ウイルス対策のユーザー インターフェイスはありません。 さらに、Windows Server 2016 のユーザー インターフェイスでは、基本的な操作のみが許可されます。 デバイスの操作をローカルで実行するには、「[PowerShell、WMI、MPCmdRun.exe を使用して Microsoft Defender for Endpoint を管理する](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools)」 を参照してください。 その結果、ユーザーが決定を下したり、特定のタスクを実行したりするように求められる場所など、ユーザーの操作に特に依存する機能が期待どおりに動作しない可能性があります。 保護機能に影響を与える可能性があるため、管理対象サーバーのユーザーインターフェイスを無効化または有効化しないでおくことをおすすめします。
@@ -116,9 +117,21 @@ Windows Server 2012 R2 および 2016 の新しい統合ソリューション �
   さらに、大量のネットワーク トラフィックを持つマシンでは、この機能を広範に有効にする前に、使用環境でのパフォーマンス テストを強くお勧めします。 追加のリソース消費を考慮する必要がある場合があります。
 - Windows Server 2012 R2 では、ネットワーク イベントがタイムラインに設定されない場合があります。 この問題には、「[2021年 10 月 12 日のマンスリー ロールアップ (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e)」 の一部としてリリースされた Windows Update が必要です。
 - オペレーティング システムのアップグレードはサポートされていません。 アップグレードする前にオフボードしてからアンインストールします。
-- Windows Server 2012 R2 では、*サーバー ロール* の自動除外はサポートされていません。ただし、オペレーティング システム ファイルのビルトイン除外はサポートされています。 除外の追加の詳細については「[現在サポートされているバージョンの Windows を実行しているエンタープライズ用コンピューターのウイルススキャンに関する推奨事項](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc)」 を参照してください。
-- 以前の MMA ベースのソリューションからアップグレードされたマシンとEDR センサーが 10.8047.22439.1056 より前の (プレビュー) バージョンである場合、MMA ベースのソリューションをアンインストールして元に戻す場合、クラッシュが発生する可能性があります。 
-- アラートと自動デプロイまたはアップグレードのためのMicrosoft Defender for Cloud/Microsoft Defender for servers との統合はまだ利用できません。 これらのコンピューターに新しいソリューションを手動でインストールできますが、Microsoft Defender for Cloud にアラートは表示されません。
+- Windows Server 2012 R2 では、**サーバー ロール** の自動除外はサポートされていません。ただし、オペレーティング システム ファイルのビルトイン除外はサポートされています。 除外の追加の詳細については「[現在サポートされているバージョンの Windows を実行しているエンタープライズ用コンピューターのウイルススキャンに関する推奨事項](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc)」 を参照してください。
+- 以前の MMA ベースのソリューションからアップグレードされたマシンとEDR センサーが 10.8047.22439.1056 より前の (プレビュー) バージョンである場合、MMA ベースのソリューションをアンインストールして元に戻す場合、クラッシュが発生する可能性があります。 このようなプレビュー バージョンの場合は、KB5005292 を使用して更新してください。
+- Microsoft エンドポイント マネージャーを使用して新しいソリューションをデプロイしてオンボードするには、現在パッケージを作成する必要があります。 Configuration Managerでプログラムとスクリプトを展開する方法の詳細については、「Configuration Manager[のパッケージとプログラム](/configmgr/apps/deploy-use/packages-and-programs)」を参照してください。 Endpoint Protection ノードを使用したポリシー構成管理をサポートするには、修正プログラムロールアップ以降の MECM 2107 が必要です。
+
+## <a name="workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines"></a>切断されたマシンでの TelemetryProxyServer に関する既知の問題の回避策
+
+問題の説明: TelemetryProxyServer 設定を使用して、Microsoft Defender for EndpointのEDR コンポーネントによって使用されるプロキシを指定する場合、証明書失効リスト (CRL) URL にアクセスする他の方法がないマシンでは、中間証明書が不足すると、EDR センサーがクラウド サービスに正常に接続されなくなります。
+
+影響を受けるシナリオ: -Microsoft Defender for Endpoint Sense バージョン番号 10.8048.22439.1065 以前のプレビュー バージョンが Windows Server 2012 R2 で実行されている -TelemetryProxyServer プロキシ構成を使用している場合、他の方法は影響を受けません
+
+回避 策：
+1. マシンが Sense バージョン 10.8048.22439.1065 以降を実行していることを確認するには、オンボード ページから入手できる最新のパッケージを使用してインストールするか、KB5005292 を適用します。
+2. 証明書をダウンロードして解凍します。 https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
+3. 証明書をローカル コンピューターの信頼できる "中間証明機関" ストアにインポートします。
+PowerShell コマンドを使用できます:Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
 
 ## <a name="integration-with-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloudとの統合
 
@@ -127,7 +140,7 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 詳細については、「[Microsoft Defender for Cloud での統合](azure-server-integration.md)」 を参照してください。
 
 > [!NOTE]
-> 最新の統合ソリューションを実行している Windows Server 2012 R2 と 2016 の場合、アラートと自動デプロイまたはアップグレードのためのサーバーのMicrosoft Defender for Cloud/Microsoft Defender との統合はまだ利用できません。 これらのコンピューターに新しいソリューションを手動でインストールできますが、Microsoft Defender for Cloud にアラートは表示されません。
+> 最新の統合ソリューションを実行している Windows Server 2012 R2 および 2016 では、自動展開またはアップグレードのためのMicrosoft Defender for Cloud/Microsoft Defender for servers との統合は、すべてのプランではまだ利用できません。 これらのコンピューターに新しいソリューションを手動でインストールすることも、Microsoft Defender for server P1 を使用して新しいソリューションをテストすることもできます。 [New Defender for servers プランの詳細については、以下を参照してください](/azure/defender-for-cloud/release-notes#new-defender-for-servers-plans)。
 
 > [!NOTE]
 > - Microsoft Defender for servers と Microsoft Defender for Endpoint の統合は、Windows Server 2022、[Windows Server 2019、および Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview) をサポートするように拡張されました。
@@ -148,20 +161,17 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 
 **Windows Server 2016 の前提条件** 
 
-2021 年 9 月 14 日以降のサービス スタック更新プログラム (SSU) をインストールする必要があります。  2018 年 9 月 20 日以降の最新の累積更新プログラム (LCU) をインストールする必要があります。  サーバーに最新の SSU と LCU をインストールすることをお勧めします。  
-
-Microsoft Defender ウイルス対策機能をインストールし、バージョン 4.18.2109.6 以降を実行する必要があります。  Windows Update を使用して、最新のプラットフォーム バージョンをダウンロードしてインストールできます。 または、[Microsoft Update カタログ](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) もしくは [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64) から手動で更新プログラム パッケージをダウンロードします。
+- 2021 年 9 月 14 日以降のサービス スタック更新プログラム (SSU) をインストールする必要があります。  
+- 2018 年 9 月 20 日以降の最新の累積更新プログラム (LCU) をインストールする必要があります。  サーバーに最新の SSU と LCU をインストールすることをお勧めします。  - Microsoft Defender ウイルス対策機能を有効/インストールし、最新の状態にする必要があります。 Windows Update を使用して、最新のプラットフォーム バージョンをダウンロードしてインストールできます。 または、[Microsoft Update カタログ](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) もしくは [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64) から手動で更新プログラム パッケージをダウンロードします。
 
 **サードパーティのセキュリティ ソリューションを使用して実行するための前提条件**
 
 サードパーティ製のマルウェア対策ソリューションを使用する場合は、パッシブ モードでMicrosoft Defender ウイルス対策を実行する必要があります。 インストールとオンボードのプロセス中は、必ずパッシブ モードに設定する必要があります。
 
-
-**Windows Server 2012 R2 および 2016 のMicrosoft Defender for Endpointのパッケージを更新する**
 > [!NOTE]
 > McAfee Endpoint Security (ENS) または VirusScan Enterprise (VSE) を使用してサーバーにMicrosoft Defender for Endpointをインストールする場合は、Microsoft Defender ウイルス対策が削除または無効にならないように、McAfee プラットフォームのバージョンを更新する必要がある場合があります。 必要な特定のバージョン番号を含む詳細については、 [McAfee ナレッジ センターの記事](https://kc.mcafee.com/corporate/index?page=content&id=KB88214)を参照してください。
 
-
+**Windows Server 2012 R2 および 2016 のMicrosoft Defender for Endpointのパッケージを更新する**
 
 EDR センサー コンポーネントの定期的な製品改善と修正プログラムを受け取るには、Windows Update [ KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) が適用または承認されていることを確認してください。 さらに、保護コンポーネントを最新の状態に保つには、「[Microsoft Defender ウイルス対策更新プログラムの管理とベースラインの適用](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)」 を参照してください。
 
@@ -170,7 +180,6 @@ EDR センサー コンポーネントの定期的な製品改善と修正プロ
 - 手順 1: [インストール パッケージとオンボード パッケージをダウンロードします](#step-1-download-installation-and-onboarding-packages)
 - 手順 2: [インストールとオンボード パッケージを適用します](#step-2-apply-the-installation-and-onboarding-package)
 - 手順 3: [オンボード手順を完了します](#step-3-complete-the-onboarding-steps) 
-
 
 ### <a name="step-1-download-installation-and-onboarding-packages"></a>手順 1: インストールとオンボード パッケージをダウンロードする
 
@@ -314,9 +323,7 @@ Defender for Endpoint によって収集されたデータは、プロビジョ�
 
 
 
-## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server 半期エンタープライズ チャネルと Windows Server 2019 および Windows Server 2022
-
-Windows Server 2019 および Windows Server 2022 から Microsoft エンドポイント マネージャー のオンボード パッケージには、現在スクリプトが付属しています。 構成マネージャーでスクリプトを展開する方法の詳細については、「[構成マネージャーのパッケージとプログラム](/configmgr/apps/deploy-use/packages-and-programs)」 を参照してください。
+## <a name="windows-server-semi-annual-enterprise-channel-sac-windows-server-2019-and-windows-server-2022"></a>Windows サーバー Semi-Annual Enterprise チャネル (SAC)、Windows Server 2019、Windows Server 2022
 
 ### <a name="download-package"></a>パッケージをダウンロード
 
