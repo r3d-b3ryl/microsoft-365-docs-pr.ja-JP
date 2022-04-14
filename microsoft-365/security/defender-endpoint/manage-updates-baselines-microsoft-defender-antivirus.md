@@ -6,7 +6,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+ms.localizationpriority: high
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 596616328a02182b39c67f58137d43ab626e1756
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
-ms.translationtype: MT
+ms.openlocfilehash: cc2032c547cbd9c75a73da2f47f7baed21e7438e
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823314"
+ms.locfileid: "64835933"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する
 
@@ -88,7 +88,7 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 - 統合の改善 (クラウド、[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>2022 年 3 月 (プラットフォーム: 4.18.2203.5 |エンジン: 1.1.19100.5)</summary>
+<summary>2022 年 3 月 (プラットフォーム: 4.18.2203.5 | エンジン: 1.1.19100.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.361.1449.0**<br/>
 &ensp;リリース日: **2022 年 4 月 7 日**<br/>
@@ -96,16 +96,16 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 &ensp;エンジン: **1.1.19100.5**<br/>
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
 
-エンジンバージョン: 1.1.19100.5 <br/>
+エンジンのバージョン: 1.1.19100.5 <br/>
 セキュリティ インテリジェンス更新プログラムのバージョン: 1.361.1449.0<br/>
 
 ### <a name="whats-new"></a>新機能
 
-- Outlook アドインをブロックした[攻撃面縮小ルール](attack-surface-reduction.md)の修正プログラムを追加しました 
-- 短いライブ プロセスに関連する [動作監視](configure-protection-features-microsoft-defender-antivirus.md) パフォーマンスの問題に関する修正プログラムを追加しました 
+- Outlook アドインをブロックした [attack surface reduction rule](attack-surface-reduction.md) の修正プログラムを追加しました 
+- [behavior monitoring](configure-protection-features-microsoft-defender-antivirus.md) の短いライブ プロセスに関連するパフォーマンスの問題の修正プログラムを追加しました 
 - [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal) 除外の修正プログラムを追加しました 
-- [改ざん保護機能](prevent-changes-to-security-settings-with-tamper-protection.md)の強化 
-- 構成の使用時`SharedSignaturesPath`に[リアルタイム保護](configure-protection-features-microsoft-defender-antivirus.md)が無効になる修正を追加しました (パラメーターの詳細`SharedSignaturesPath`については、[Set-MpPreference](/powershell/module/defender/set-mppreference) を参照してください)
+- 強化された [改ざん防止](prevent-changes-to-security-settings-with-tamper-protection.md) 機能 
+- [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) が `SharedSignaturesPath` config を使用している場合に無効になる修正プログラムを追加しました (`SharedSignaturesPath` パラメーターの詳細については、「[Set-MpPreference](/powershell/module/defender/set-mppreference)」 を参照してください)
 
 ### <a name="known-issues"></a>既知の問題
 
@@ -134,7 +134,7 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 - SmartScreen サービスに到達できない場合のトラフィック出力の改善 
 - 認証要件を持つプロキシを使用しているお客様の接続性の改善
 - ネットワーク FileShares の VDI デバイス更新のバグを修正しました 
-- ブロック モードの EDR では、新しい CSP を使用した詳細なデバイス ターゲット設定がサポートされるようになりました。 「[ブロック モードのエンドポイントでの検出と対応 (EDR)](edr-in-block-mode.md)」を参照してください。
+- ブロック モードの EDR では、新しい CSP を使用した きめ細かいデバイス ターゲット設定がサポートされるようになりました。 「[ブロック モードのエンドポイントでの検出と対応 (EDR)](edr-in-block-mode.md)」を参照してください。
 
 ### <a name="known-issues"></a>既知の問題
 
@@ -158,9 +158,9 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 - フィルター処理のパフォーマンスにおける動作監視の改善
 - TrustedInstaller のセキュリティ強化
 - 改ざん防止の改善
-- [Set-MpPreference](/powershell/module/defender/set-mppreference) の `ScanScheduleTime` を新しい `ScanScheduleOffest` コマンドレットに置き換えました。 このポリシーは、スケジュールされたスキャンを実行するための、午前 0 時以降の分数を構成します。
-- `-ServiceHealthReportInterval` 設定を [Set-MpPreference](/powershell/module/defender/set-mppreference) に追加しました。 このポリシーは、スケジュールされたスキャンを実行するための時間間隔 (分単位) を構成します。
-- `AllowSwitchToAsyncInspection` 設定を [Set-MpPreference](/powershell/module/defender/set-mppreference) に追加しました。 このポリシーを使用すると、同期的に検査されたネットワーク フローを、チェックと検証の完了後に非同期検査に切り替えられるようにパフォーマンスの最適化を図ることができます。
+- `ScanScheduleTime` を、[Set-MpPreference](/powershell/module/defender/set-mppreference) の新しい `ScanScheduleOffest` コマンドレットに置き換えました。このポリシーは、スケジュールされたスキャンを実行するために、午前 0 時以降の分数を構成します。
+- `-ServiceHealthReportInterval` の設定を [Set-MpPreference](/powershell/module/defender/set-mppreference) に追加しました。このポリシーは、スケジュールされたスキャンを実行する時間間隔 (分単位) を構成します。
+- `AllowSwitchToAsyncInspection` の設定を [Set-MpPreference](/powershell/module/defender/set-mppreference) に追加しました。このポリシーを使用すると、同期的に検査されたネットワーク フローを、チェックと検証の完了後に非同期検査に切り替えられるようにパフォーマンスの最適化を図ることができます。
 - Performance Analyzer v2 の更新プログラム: リモート PowerShell と PowerShell 7.x のサポートを追加しました。 「[Microsoft Defender ウイルス対策用のパフォーマンス アナライザー](tune-performance-defender-antivirus.md)」を参照してください。
 - Microsoft Defender ウイルス対策ネットワーク検査システム ドライバーの重複する可能性があるパケットバグを修正しました。
 
@@ -465,7 +465,7 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 - メモリ スキャンの動作監視の改善
 - マクロ ストリームのスキャンの改善
 - `AMRunningMode` を Get-MpComputerStatus PowerShell コマンドレットに追加しました
-- [DisableAntiSpyware ](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) は無視されます。 Microsoft Defender ウイルス対策は、別のウイルス対策プログラムを検出すると自動的にオフになります。
+- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) は無視されます。Microsoft Defender ウイルス対策は、別のウイルス対策プログラムを検出すると自動的にオフになります。
 
 
 ### <a name="known-issues"></a>既知の問題
@@ -691,7 +691,7 @@ Windows 10 リリース情報については、「[Windows ライフサイクル
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>展開イメージのサービスと管理 (DISM) の更新
 
-Windows 10 (Enterprise、Pro、Home エディション)、Windows Server 2019、Windows Server 2022、Windows Server 2016 OS のインストール イメージを、最新のウイルス対策およびマルウェア対策の更新プログラムを使用して更新することをお勧めします。 OS のインストール イメージを最新の状態に保つことは、保護のギャップを回避するのに役立ちます。
+最新のウイルス対策およびマルウェア対策の更新プログラムを使用して、Windows 10 (Enterprise、Pro、Home エディション)、Windows Server 2019、Windows Server 2022、および Windows Server 2016 OS のインストール イメージを更新することをお勧めします。OS インストール イメージを最新の状態に保つことは、保護の空白を回避するのに役立ちます。
 
 詳細については、「[Windows オペレーティング システムのインストール イメージ用の Microsoft Defender 更新プログラム](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)」を参照してください。
 
