@@ -19,12 +19,12 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: 95cc11956dfe597b70f18954723f914e057193a6
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: c65d5b9c73204de1ad537ce5bb1c05b09bc8df32
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746707"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847033"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365を試す
 
@@ -98,10 +98,12 @@ Defender for Office 365を評価すると、Microsoft 365の保護機能を制�
 3. [ **含めるユーザーの選択]** ダイアログで、次の設定を構成します。
 
    - **すべてのユーザー**: これが既定の推奨オプションです。
-   - **ユーザーの選択**: このオプションを選択した場合は、評価が適用されるユーザーを選択する必要があります。
-     - **ユーザー**: 組織内で指定された 1 つ以上のメールボックス、メール ユーザー、またはメール連絡先。
-     - **グループ**: 組織内で指定された配布グループ、メール対応セキュリティ グループ、または Microsoft 365 グループ。
-     - **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
+   - **ユーザーの選択**: このオプションを選択した場合は、評価が適用される内部受信者を選択する必要があります。
+     - **ユーザー**: 指定したメールボックス、メール ユーザー、またはメール連絡先。
+     - **グループ**:
+       - 指定した配布グループまたはメールが有効なセキュリティ グループのメンバー。
+       - 指定したMicrosoft 365 グループ。
+       - **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
 
      適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
@@ -167,9 +169,11 @@ Defender for Office 365を評価すると、Microsoft 365の保護機能を制�
 3. [ **含めるユーザーの選択]** ダイアログで、次の設定を構成します。
 
    - **すべてのユーザー**: これが既定の推奨オプションです。
-   - **ユーザーの選択**: このオプションを選択した場合は、評価が適用されるユーザーを選択する必要があります。
-     - **ユーザー**: 組織内で指定された 1 つ以上のメールボックス、メール ユーザー、またはメール連絡先。
-     - **グループ**: 組織内で指定された配布グループ、メール対応セキュリティ グループ、または Microsoft 365 グループ。
+   - **ユーザーの選択**: このオプションを選択した場合は、評価が適用される内部受信者を選択する必要があります。
+     - **ユーザー**: 指定したメールボックス、メール ユーザー、またはメール連絡先。
+     - **グループ**:
+       - 指定した配布グループまたはメールが有効なセキュリティ グループのメンバー。
+       - 指定したMicrosoft 365 グループ。
      - **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
 
      適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
@@ -229,23 +233,23 @@ Microsoft 365 Defender ポータルでのAzure ADアクセス許可の詳細に�
 |---|---|
 |AdminDisplayName|評価ポリシー|
 |AuthenticationFailAction|MoveToJmf|
-|Enabled|True|
-|EnableFirstContactSafetyTips|False|
-|EnableMailboxIntelligence|True|
-|EnableMailboxIntelligenceProtection|True|
-|EnableOrganizationDomainsProtection|False|
-|EnableSimilarDomainsSafetyTips|False|
-|EnableSimilarUsersSafetyTips|False|
-|EnableSpoofIntelligence|True|
-|EnableSuspiciousSafetyTip|False|
-|EnableTargetedDomainsProtection|False|
-|EnableTargetedUserProtection|False|
-|EnableUnauthenticatedSender|True|
-|EnableUnusualCharactersSafetyTips|False|
-|EnableViaTag|True|
+|Enabled|はい|
+|EnableFirstContactSafetyTips|いいえ|
+|EnableMailboxIntelligence|はい|
+|EnableMailboxIntelligenceProtection|はい|
+|EnableOrganizationDomainsProtection|いいえ|
+|EnableSimilarDomainsSafetyTips|いいえ|
+|EnableSimilarUsersSafetyTips|いいえ|
+|EnableSpoofIntelligence|はい|
+|EnableSuspiciousSafetyTip|いいえ|
+|EnableTargetedDomainsProtection|いいえ|
+|EnableTargetedUserProtection|いいえ|
+|EnableUnauthenticatedSender|はい|
+|EnableUnusualCharactersSafetyTips|いいえ|
+|EnableViaTag|はい|
 |Guid|GUID 値|
 |ImpersonationProtectionState|Manual|
-|IsDefault|False|
+|IsDefault|いいえ|
 |MailboxIntelligenceProtectionAction|NoAction|
 |MailboxIntelligenceProtectionActionRecipients|{}|
 |MailboxIntelligenceQuarantineTag|DefaultFullAccessPolicy|
@@ -264,11 +268,11 @@ Microsoft 365 Defender ポータルでのAzure ADアクセス許可の詳細に�
 |AntiSpoofEnforcementType|高|
 |AuthenticationSafetyTipText|空白|
 |AuthenticationSoftPassSafetyTipText|空白|
-|EnableAuthenticationSafetyTip|False|
-|EnableAuthenticationSoftPassSafetyTip|False|
+|EnableAuthenticationSafetyTip|いいえ|
+|EnableAuthenticationSoftPassSafetyTip|いいえ|
 |PolicyTag|空白|
 |SimilarUsersSafetyTipsCustomText|空白|
-|TreatSoftPassAsAuthenticated|True|
+|TreatSoftPassAsAuthenticated|はい|
 |UnusualCharactersSafetyTipsCustomText|空白|
 |||
 |ExcludedDomains|{}|
@@ -280,20 +284,20 @@ Microsoft 365 Defender ポータルでのAzure ADアクセス許可の詳細に�
 
 |設定|値|
 |---|---|
-|Action|許可|
-|ActionOnError|True|
+|アクション|許可|
+|ActionOnError|はい|
 |AdminDisplayName|評価ポリシー|
 |ConfidenceLevelThreshold|80|
-|有効にする|True|
-|EnableOrganizationBranding|False|
+|有効にする|はい|
+|EnableOrganizationBranding|いいえ|
 |Guid|GUID 値|
-|IsBuiltInProtection|False|
-|IsDefault|False|
+|IsBuiltInProtection|いいえ|
+|IsDefault|いいえ|
 |名前|評価ポリシー|
 |OperationMode|Delay|
 |QuarantineTag|AdminOnlyAccessPolicy|
 |RecommendedPolicyType|評価|
-|Redirect|False|
+|Redirect|いいえ|
 |RedirectAddress|{}|
 |ScanTimeout|30|
 
@@ -302,27 +306,27 @@ Microsoft 365 Defender ポータルでのAzure ADアクセス許可の詳細に�
 |設定|値|
 |---|---|
 |AdminDisplayName|評価ポリシー|
-|AllowClickThrough|False|
+|AllowClickThrough|いいえ|
 |CustomNotificationText|空白|
-|DeliverMessageAfterScan|True|
-|DisableUrlRewrite|True|
+|DeliverMessageAfterScan|はい|
+|DisableUrlRewrite|はい|
 |DoNotRewriteUrls|{}|
-|EnableForInternalSenders|False|
-|EnableOrganizationBranding|False|
-|EnableSafeLinksForTeams|True|
+|EnableForInternalSenders|いいえ|
+|EnableOrganizationBranding|いいえ|
+|EnableSafeLinksForTeams|はい|
 |Guid|GUID 値|
-|IsBuiltInProtection|False|
-|IsDefault|False|
-|IsEnabled|True|
+|IsBuiltInProtection|いいえ|
+|IsDefault|いいえ|
+|IsEnabled|はい|
 |LocalizedNotificationTextList|{}|
 |名前|"EvaluationPolicy"|
 |RecommendedPolicyType|評価|
-|ScanUrls|True|
-|TrackClicks|True|
+|ScanUrls|はい|
+|TrackClicks|はい|
 |||
 |DoNotAllowClickThrough|空白|
-|DoNotTrackUserClicks|False|
-|EnableSafeLinksForEmail|True|
-|EnableSafeLinksForOffice|True|
+|DoNotTrackUserClicks|いいえ|
+|EnableSafeLinksForEmail|はい|
+|EnableSafeLinksForOffice|はい|
 |ExcludedUrls|{}|
 |WhiteListedUrls|空白|

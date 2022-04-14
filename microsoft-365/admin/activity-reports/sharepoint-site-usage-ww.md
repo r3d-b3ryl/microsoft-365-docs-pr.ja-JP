@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: SharePoint サイトの使用状況レポートを取得して、ユーザーがSharePoint サイトに保存するファイルの数、アクティブに使用されているファイルの数、および消費された合計ストレージを把握します。
-ms.openlocfilehash: afcaa6cd087948c635604dbadeb9d56c6d48c1a9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a99884863db3ffc1f2577358abef6d287d01e2d1
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781503"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64846995"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>管理センターでレポートをMicrosoft 365する - サイトの使用状況をSharePointする
 
@@ -76,7 +76,7 @@ Microsoft 365管理者として、レポート ダッシュボードには、組
 |サイト所有者プリンシパル名  |サイトの所有者の電子メール アドレス。 |
 |最終アクティビティ日 (UTC)  | ファイル アクティビティが最後に検出された日付、またはサイトでページが表示された日付。  |
 |サイトの秘密度ラベル ID  | サイト上の秘密度ラベル。  |
-|外部共有  | サイト上の外部共有可能な設定。  |
+|外部共有  | サイトの外部共有設定の値。 この値は、サイトの秘密度ラベルによって行われた有効な設定の変更を反映していません。 秘密度ラベルを使用する場合は、 [データ アクセス ガバナンス レポート](/sharepoint/data-access-governance-reports) を使用して正しい値を取得します。|
 |アンマネージド デバイス ポリシー  | アンマネージド デバイスのサイト アクセス ポリシー。  |
 |地域の場所  | サイトの地理的な場所。  |
 |ファイル  |サイト上のファイルの数。 |

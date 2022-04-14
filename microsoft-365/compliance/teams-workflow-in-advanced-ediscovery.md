@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Advanced eDiscoveryのMicrosoft Teamsからコンテンツを保持、収集、確認、エクスポートする方法について説明します。
-ms.openlocfilehash: ecd114f9ea68cefb03e55453176a0c8b323620cc
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 90c3ece3f6e8218771da9dbbb88fe5c32d9d7d94
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758797"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847017"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>Microsoft Teams内のコンテンツのワークフローをAdvanced eDiscoveryする
 
@@ -298,6 +298,10 @@ Advanced eDiscoveryの新しいケース形式の会話スレッド機能は、�
 - コンテンツTeams確認に役立つ便利な列には、**カストディアン**、**受信者**、**ファイルの種類**、メッセージの **種類などがあります**。
 
 - Teams関連のプロパティの[フィルター](review-set-search.md)を使用して、Teamsコンテンツをすばやく表示します。 前のセクションで説明したほとんどのメタデータ プロパティにはフィルターがあります。
+
+## <a name="deleting-teams-chat-messages"></a>Teamsチャット メッセージを削除する
+
+Advanced eDiscoveryと Microsoft Graph エクスプローラーを使用して、機密情報や悪意のある情報を含むコンテンツがチャット メッセージを通じてリリースされた場合に、データ流出のインシデントに対応Teams。 組織内の管理者は、Microsoft Teamsでチャット メッセージを検索および削除できます。 これにより、チャット メッセージ内の機密情報や不適切なコンテンツTeams削除できます。 詳細については、「[Teamsでのチャット メッセージの検索と消去](search-and-delete-Teams-chat-messages.md)」を参照してください。
 
 ## <a name="reference-guide"></a>リファレンス ガイド
 

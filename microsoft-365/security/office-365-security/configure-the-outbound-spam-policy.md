@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) で送信スパム ポリシーを表示、作成、変更、削除する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 15dc850046e74c3b42477998fa24a608d0fd0af8
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 9ab8585a0671f9c62ec2015d91486539c84004db
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841719"
+ms.locfileid: "64847467"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP の送信スパム フィルターを構成する
 
@@ -101,9 +101,11 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
 
    完了したら、**[次へ]** をクリックします。
 
-4. 表示される [ **ユーザー、グループ、ドメイン** ] ページで、ポリシーが適用される内部送信者 (送信者の条件) を特定します。
-   - **ユーザー**: 組織内で指定された 1 つ以上のメールボックス、メール ユーザー、またはメール連絡先。
-   - **グループ**: 組織内で指定された配布グループ、メール対応セキュリティ グループ、または Microsoft 365 グループ。
+4. 表示される **[ユーザー、グループ、ドメイン** ] ページで、ポリシーが適用される内部送信者 (受信者の条件) を特定します。
+   - **ユーザー**: 指定したメールボックス、メール ユーザー、またはメール連絡先。
+   - **グループ**:
+     - 指定した配布グループまたはメールが有効なセキュリティ グループのメンバー。
+     - 指定したMicrosoft 365 グループ。
    - **ドメイン**: 組織内の指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) 内のすべての送信者。
 
    適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
