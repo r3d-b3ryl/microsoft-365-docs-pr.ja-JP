@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: アイテム保持ラベルをモデルに適用する方法については、SharePoint Syntex。
-ms.openlocfilehash: 112b48af5e07d09faab61bd656c5629b449d9a1c
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+description: SharePoint Syntexのモデルに保持ラベルを適用する方法について説明します。
+ms.openlocfilehash: 17bfc0121d18f30b03cc42585cb214b649597ff6
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241797"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882508"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>SharePoint Syntex のモデルに保持ラベルを適用する
 
@@ -36,13 +36,13 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/reten
 モデルのホーム ページのモデル設定を使用して、既存の保持ラベルをモデルに適用できます。 
 
 > [!Important]
-> ドキュメント理解モデルに適用できる保持ラベルを使用するには、そのラベルを作成および公開[](../compliance/file-plan-manager.md#create-retention-labels)する必要[](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels)Microsoft 365 コンプライアンス センター。
+> 保持ラベルをドキュメント理解モデルに適用できるようにするには、Microsoft 365 コンプライアンス センターで[作成](../compliance/file-plan-manager.md#create-retention-labels)して[発行](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels)する必要があります。
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>保持ラベルをドキュメント理解モデルに追加する
 
 1. モデルのホーム ページから、[**モデルの設定**]を選択します。</br>
 2. [**モデルの設定**] の [**セキュリティとコンプライアンス**] セクションで、[**保持ラベル**] メニューを選択して、モデルに適用できる保持ラベルのリストを表示します。</br>
- ![[保持ラベル] メニュー。](../media/content-understanding/retention-labels-menu.png)</br> 
+ ![[アイテム保持ラベル] メニュー。](../media/content-understanding/retention-labels-menu.png)</br> 
 3. モデルに適用する保持ラベルを選択し、[**保存**] を選択します。</br>
 
 モデルに保持ラベルを適用した後、次のものに適用できます。
@@ -55,7 +55,7 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/reten
 
 1. モデルホームページの [**このモデルのあるライブラリ**] セクションで、保持ラベルの更新を適用するドキュメントライブラリを選択します。 </br> 
 2. [**同期**] を選択します。 </br>
- ![同期モデル。](../media/content-understanding/sync-model.png)</br> 
+ ![モデルを同期します。](../media/content-understanding/sync-model.png)</br> 
 
 
 更新を適用してモデルに同期した後、次の手順を実行して、更新が適用されたことを確認できます。
@@ -74,7 +74,7 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/reten
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>保持ラベルをフォーム処理モデルに追加するには
 
 > [!Important]
-> 保持ラベルをフォーム処理モデルに適用するには、フォーム処理モデルで作成および発行する[](../compliance/file-plan-manager.md#create-retention-labels)必要Microsoft 365 コンプライアンス センター。 [](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels)
+> 保持ラベルをフォーム処理モデルに適用できるようにするには、そのラベルを[作成](../compliance/file-plan-manager.md#create-retention-labels)し、Microsoft 365 コンプライアンス センターで[発行](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels)する必要があります。
 
 モデルの作成時にフォーム処理モデルに保持ラベルを適用するか、既存のモデルに適用することができます。
 
@@ -114,7 +114,7 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/reten
 
 1. モデルが適用されている SharePoint ドキュメント ライブラリで、<b>[アクティブなモデルを表示する]</b> アイコンを選択し、<b>[アクティブなモデルを表示する]</b> を選択します。</b>
 
-   ![アクティブ なモデルを表示します。](../media/content-understanding/info-du.png)</br> 
+   ![アクティブなモデルを表示します。](../media/content-understanding/info-du.png)</br> 
 
 2. <b>[アクティブなモデル]</b> で、保持ラベルを適用するフォーム処理モデルを選択します。
 
@@ -128,6 +128,7 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/reten
 
 
 ## <a name="see-also"></a>関連項目
+
 [分類子を作成する](create-a-classifier.md)
 
 [エクストラクターを作成する](create-an-extractor.md)
