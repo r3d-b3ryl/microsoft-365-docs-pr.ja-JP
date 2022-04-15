@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Microsoft 365 コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: 9361f7dea0e1b12d50733b9b1d1e91ac15577ab9
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 8d283148b0a0cee0aed3d91a6332c96bd31111b4
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400994"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64846970"
 ---
 # <a name="search-for-and-delete-email-messages"></a>メール メッセージを検索して削除する
 
@@ -41,7 +41,7 @@ ms.locfileid: "63400994"
 
 ## <a name="before-you-begin"></a>始める前に
 
-- この記事で説明されている検索と消去のワークフローでは、Microsoft Teams からチャット メッセージやその他のコンテンツは削除されません。 手順 2 で作成したコンテンツ検索で Microsoft Teams からアイテムが返された場合、手順 3 でアイテムを消去しても、それらのアイテムは削除されません。
+- この記事で説明されている検索と消去のワークフローでは、Microsoft Teams からチャット メッセージやその他のコンテンツは削除されません。 手順 2 で作成したコンテンツ検索で Microsoft Teams からアイテムが返された場合、手順 3 でアイテムを消去しても、それらのアイテムは削除されません。 チャット メッセージを検索および削除するには、「[ Teams でのチャット メッセージの検索と消去](search-and-delete-Teams-chat-messages.md)」 を参照してください。
 
 - コンテンツ検索を作成して実行するには、**電子情報開示マネージャー** ロール グループのメンバーであるか、Microsoft 365 コンプライアンス センターの **コンプライアンス検索** ロールが割り当てられている必要があります。メッセージを削除するには、**組織の管理** 役割グループのメンバーであるか、Microsoft 365 コンプライアンス センターで **検索と消去** の役割が割り当てられている必要があります。ユーザーを役割グループに追加する方法の詳細については、「[電子情報開示権限を割り当てる](assign-ediscovery-permissions.md)」をご覧ください。
 

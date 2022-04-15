@@ -18,12 +18,12 @@ ms.custom: ''
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8550d55553b1c406fa21ce362e201a8bbe3d5aea
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 94d6ace6cd5d6fcfd87800053048e84e25d4c153
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681306"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847414"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -99,8 +99,10 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
    完了したら、**[次へ]** をクリックします。
 
 4. 表示される **ユーザー、グループ、およびドメイン** ページで、ポリシーを適用する内部の受信者を特定します (受信者条件)。
-   - **ユーザー**: 組織内で指定された 1 つ以上のメールボックス、メール ユーザー、またはメール連絡先。
-   - **グループ**: 組織内で指定された配布グループ、メール対応セキュリティ グループ、または Microsoft 365 グループ。
+   - **ユーザー**: 指定されたメールボックス、メール ユーザー、またはメール連絡先。
+   - **グループ**: 
+     - 指定された配布グループまたはメールが有効なセキュリティ グループのメンバー。
+     - 指定した Microsoft 365 グループ。
    - **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
 
    適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
