@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: edf5bfd91313c621707d1bdc35074bfe7fe9585c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 1a10bf738562f8fd9a263252d4a56eddf8acee9d
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759923"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841953"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -128,29 +128,7 @@ ms.locfileid: "64759923"
 
 - Azure Active Directory (Azure AD) は、Microsoft 365 のディレクトリ サービスです。統合監査ログには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>または Azure 管理ポータルで実行されたユーザー、グループ、アプリケーション、ドメイン、ディレクトリの各アクティビティが含まれます。Azure AD の完全な一覧については、「[Azure Active Directory 監査レポート イベント](/azure/active-directory/reports-monitoring/concept-audit-logs)」を参照してください。
 
-- イベントが発生してから対応する監査ログ レコードが監査ログ検索の結果に返されるまで最長 30 分または最長 24 時間かかる場合があります。次の表は、Microsoft 365 のさまざまなサービスで、この処理に要する時間を示しています。
-
-  |Microsoft 365 サービスまたは機能|30 分|24 時間|
-  |---|:---:|:---:|
-  |Defender for Microsoft 365 および脅威インテリジェンス|![チェック マーク。](../media/checkmark.png)||
-  |Azure Active Directory (ユーザー ログイン イベント)||![チェック マーク。](../media/checkmark.png)|
-  |Azure Active Directory (管理イベント)||![チェック マーク。](../media/checkmark.png)|
-  |データ損失防止|![チェック マーク。](../media/checkmark.png)||
-  |Dynamics 365 CRM||![チェック マーク。](../media/checkmark.png)|
-  |電子情報開示|![チェック マーク。](../media/checkmark.png)||
-  |Exchange Online|![チェック マーク。](../media/checkmark.png)||
-  |Microsoft Power Automate||![チェック マーク。](../media/checkmark.png)|
-  |Microsoft Stream|![チェック マーク。](../media/checkmark.png)||
-  |Microsoft Teams|![チェック マーク。](../media/checkmark.png)||
-  |Power アプリ||![チェック マーク。](../media/checkmark.png)|
-  |Power BI|![チェック マーク。](../media/checkmark.png)||
-  |Microsoft 365 コンプライアンス センター|![チェック マーク。](../media/checkmark.png)||
-  |機密ラベル||![チェック マーク。](../media/checkmark.png)|
-  |Sharepoint Online と OneDrive for Business|![チェック マーク。](../media/checkmark.png)||
-  |Workplace Analytics|![チェック マーク。](../media/checkmark.png)||
-  |Yammer||![チェック マーク。](../media/checkmark.png)|
-  |Microsoft Forms|![チェック マーク。](../media/checkmark.png)||
-  ||||
+- Microsoft は、イベント発生後に、対応する監査レコードが監査ログ検索の結果に返される時間を保証しません。 コア サービス (Exchange、SharePoint、OneDrive、Teams など) の場合、イベントの可用性は通常 60 分から 90 分です。 その他のサービスでは、監査レコードの可用性が長くなる可能性があります。 ただし、(サーバーの停止など) 避けられない問題の中には、監査レコードの可用性を遅延させる、監査サービスの外部で発生する避けられない問題もあります。 これらの理由により、Microsoft は時間を確約しておりません。
 
 - Power BI の監査ログは、既定で有効になりません。監査ログで Power BI アクティビティを検索するには、Power BI 管理ポータルで監査を有効にする必要があります。手順については、[Power BI 管理ポータル](/power-bi/service-admin-portal#audit-logs)の [監査ログ] セクションを参照してください。
 
@@ -169,7 +147,7 @@ ms.locfileid: "64759923"
 1. <https://compliance.microsoft.com> に移動し、サインインします。
 
     > [!TIP]
-    > 現在ログオンしている資格情報が使用されないようにするために、プライベート ブラウズ セッション (通常のセッションではありません) を使用して Microsoft 365 コンプライアンス センターにアクセスします。 Microsoft Edge で InPrivate ブラウズ セッションを開くか、Google Chrome のプライベート ブラウズ セッション (シークレット ウィンドウと呼ばれる) を開くには、**Ctrl + Shift + N キー** を押します。
+    > (通常のセッションではなく) プライベート ブラウズ セッションを使用して Microsoft 365 コンプライアンス センターにアクセスします。これにより、現在ログオンして、利用している資格情報が使用されなくなります。ー **Ctrl + Shift + N** キーを押して、Microsoft Edge で InPrivate ブラウズ セッションを開くか、Google Chrome のプライベート ブラウズ セッション (シークレット ウィンドウと呼ばれます) を開きます。
 
 2. Microsoft 365 コンプライアンス センターの左側のウィンドウで、**[監査]** をクリックします。
 
@@ -217,7 +195,7 @@ ms.locfileid: "64759923"
 
 - 現在の検索条件をクリアするには、[**クリア**] をクリックします。日付の範囲は、既定の過去 7 日間に戻ります。[**すべてをクリアしてすべてのアクティビティの結果を表示する**] をクリックして、選択したすべてのアクティビティを取り消すこともできます。
 
-- 50,000 件の結果が見つかった場合、検索条件に一致するイベントが 50,000 件を超えていると見なすことができます。 検索条件を絞り込み、返される結果が少なくなるように検索を再実行するか、[**結果のエクスポート**] \> [**すべての結果をダウンロード**] を選択して、すべての検索結果をエクスポートできます。
+- 50,000 件の結果が見つかった場合は、検索条件を満たすイベントが 50,000 件を超えていると考えることができます。検索条件を絞り込んで検索を再実行して結果を返す数を減らすか、**[結果のエクスポート]**\>**[すべての結果をダウンロード]** を選択して、すべての検索結果をエクスポートできます。
 
 ### <a name="step-2-view-the-search-results"></a>手順 2: 検索結果を表示する
 
