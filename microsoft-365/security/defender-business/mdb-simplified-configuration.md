@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,19 +17,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 02f970f7ad9981336ba54aaafcf936e952f1b726
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 68ebf170fa351d63e943a2c4c7a920d3e243ddbe
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663118"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862634"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessの簡略化された構成プロセス
 
-> [!IMPORTANT]
-> Microsoft Defender for Businessは、2022 年 3 月 1 日以降、[Microsoft 365 Business Premium](../../business-premium/index.md)のお客様に展開されます。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー段階にあり、 [ここにサインアップ](https://aka.ms/mdb-preview) して要求する顧客と IT パートナーに段階的にロールアウトされます。 プレビューには [シナリオの初期セット](mdb-tutorials.md#try-these-preview-scenarios)が含まれており、定期的に機能を追加します。
-> 
-> この記事の一部の情報は、市販される前に大幅に変更される可能性があるプレリリースされた製品/サービスに関連しています。 Microsoft は、ここに記載されている情報に対して、明示的または黙示的な保証を行いません。 
+> [!NOTE]
+> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Microsoft Defender for Businessは、特に中小企業向けに設計された簡略化された構成プロセスを備えています。 このエクスペリエンスでは、デバイスのオンボードと管理から推測が取り消されます。ウィザードのようなエクスペリエンスと既定のポリシーは、初日から会社のデバイスを保護するように設計されています。 **簡略化された構成プロセスを使用することをお勧めします。ただし、このオプションに限定されるわけではありません**。
 
@@ -49,13 +47,12 @@ Microsoft Defender for Businessは、特に中小企業向けに設計された�
 
 >
 > **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Businessに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
 
 ## <a name="review-your-setup-and-configuration-options"></a>セットアップオプションと構成オプションを確認する
 
 次の表では、各エクスペリエンスについて説明します。
-<br/><br/>
 
 | ポータル エクスペリエンス  | 説明  |
 |---------|---------|
@@ -73,5 +70,4 @@ Defender for Business は、セキュリティ設定の構成に要する時間�
 ## <a name="next-steps"></a>次の手順
 
 - [Microsoft Defender for Businessの設定と構成](mdb-setup-configuration.md)
-
 - [Microsoft Defender for Businessを使用した概要](mdb-get-started.md)

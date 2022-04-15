@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,33 +16,29 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a39a0a55592ba8f76403f9e8d9aaf7416cb35228
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: eee272798be5396ad9ad15177fcd29a0180bc448
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714243"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862722"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessで次世代の構成設定を理解する
 
-> [!IMPORTANT]
-> Microsoft Defender for Businessは、2022 年 3 月 1 日以降、[Microsoft 365 Business Premium](../../business-premium/index.md)のお客様に展開されます。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー段階にあり、 [ここにサインアップ](https://aka.ms/mdb-preview) して要求する顧客と IT パートナーに段階的にロールアウトされます。 プレビューには [シナリオの初期セット](mdb-tutorials.md#try-these-preview-scenarios)が含まれており、定期的に機能を追加します。
-> 
-> この記事の一部の情報は、市販される前に大幅に変更される可能性があるプレリリースされた製品/サービスに関連しています。 Microsoft は、ここに記載されている情報に対して、明示的または黙示的な保証を行いません。 
+> [!NOTE]
+> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Defender for Business の次世代保護には、堅牢なウイルス対策とマルウェア対策の保護が含まれています。 既定のポリシーは、生産性を妨げることなくデバイスとユーザーを保護するように設計されています。ただし、ビジネス ニーズに合わせてポリシーをカスタマイズすることもできます。 また、Microsoft エンドポイント マネージャーを使用している場合は、これを使用してセキュリティ ポリシーを管理できます。
 
 **この記事では、次について説明します**。
 
 - [次世代の保護の設定とオプション](#next-generation-protection-settings-and-options)
-
 - [Defender for Business のその他の事前構成済み設定](#other-preconfigured-settings-in-defender-for-business) 
-
 - [Defender for Business の既定の設定とMicrosoft エンドポイント マネージャー](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
 
 ## <a name="next-generation-protection-settings-and-options"></a>次世代の保護の設定とオプション
 
-次の表に、設定とオプションの一覧を示します。<br/><br/>
+次の表に、設定とオプションの一覧を示します。
 
 | 設定 | 説明 |
 |:---|:---|
@@ -69,17 +65,13 @@ Defender for Business の次世代保護には、堅牢なウイルス対策と�
 Defender for Business では、次のセキュリティ設定が事前構成されています。
 
 - リムーバブル ドライブのスキャンが有効になっている ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning))
-
 - 毎日のクイック スキャンに事前設定された時刻がない ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime))
-
 - ウイルス対策スキャンの実行前にセキュリティ インテリジェンス更新プログラムがチェックされます ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
-
 - セキュリティ インテリジェンスチェックは 4 時間ごとに行われます ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
 ## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>Defender for Business の既定の設定とMicrosoft エンドポイント マネージャー
 
 次の表では、Defender for Business 用に事前構成された設定と、それらの設定がMicrosoft エンドポイント マネージャー (またはMicrosoft Intune) に表示される内容にどのように対応するかについて説明します。 Defender for Business (プレビュー) [で簡略化された構成プロセス](mdb-simplified-configuration.md) を使用している場合は、これらの設定を編集する必要はありません。
-<br/><br/>
 
 | 設定  | 説明  |
 |---------|---------|
@@ -98,16 +90,12 @@ Defender for Business では、次のセキュリティ設定が事前構成さ�
 ## <a name="next-steps"></a>次の手順
 
 - [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)
-
 - [Microsoft Defender for Businessの脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
-
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)
 
 
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft 365 Defender ポータルにアクセスする](mdb-get-started.md)
-
 - [Microsoft Defender for Businessでファイアウォール設定を管理する](mdb-custom-rules-firewall.md)
-
 - [ポリシー CSP - Defender](/windows/client-management/mdm/policy-csp-defender)

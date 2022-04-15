@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex のドキュメント理解モデルで抽出子を作成するときに、用語ストアの分類法を使用します。
-ms.openlocfilehash: 909f26026ddf26163a12e1d14c1790f4af93a160
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d3f2acf32231558f9f56a62b18c6dd7ffbc4e20f
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328807"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861490"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の抽出子を作成するときに、用語ストアの分類法を活用します。
 
@@ -37,7 +37,7 @@ SharePoint Syntex を使用してドキュメント理解モデルで抽出子�
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>抽出子で管理されたメタデータ列を使用する
 
-用語セットは、管理センターの管理メタデータ サービス (MMS) <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">用語ストアSharePoint構成されます</a>。 以下の例では、*契約サービス* の [用語セット](/sharepoint/managed-metadata#term-set)は、*Creative* などを含む複数の用語を含むように構成されています。  詳細は、この用語に 3 つの同義語 (*Design*、*Graphics*、*Topography*) があり、これらの同義語を *Creative* に翻訳する必要があることを示しています。 
+用語セットは、<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint管理センター</a>の管理メタデータ サービス (MMS) 用語ストアで構成されます。 以下の例では、*契約サービス* の [用語セット](/sharepoint/managed-metadata#term-set)は、*Creative* などを含む複数の用語を含むように構成されています。  詳細は、この用語に 3 つの同義語 (*Design*、*Graphics*、*Topography*) があり、これらの同義語を *Creative* に翻訳する必要があることを示しています。 
 
    ![用語セット。](../media/content-understanding/term-store.png)</br>
 
@@ -51,6 +51,8 @@ SharePoint Syntex を使用してドキュメント理解モデルで抽出子�
 
    ![契約サービス列。](../media/content-understanding/creative.png)</br>
 
+> [!NOTE]
+> 用語セットが開いている場合、優先用語またはシノニム値と一致しない抽出された値は、用語セットのルートに新しい用語として追加されます。 これらの新しい用語は、用語セットが存在する用語ストアで、移動、マージ、またはシノニムを作成できます。
 
 ## <a name="see-also"></a>関連項目
 [管理されたメタデータの概要](/sharepoint/managed-metadata#terms)

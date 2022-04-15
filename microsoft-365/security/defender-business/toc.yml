@@ -3,7 +3,7 @@
   items:
     - name: 概要
       items:
-        - name: データのMicrosoft Defender for Business?
+        - name: Microsoft Defender for Businessとは
           href: mdb-overview.md
         - name: 簡略化された構成プロセス
           href: mdb-simplified-configuration.md
@@ -15,12 +15,12 @@
       items:
         - name: Defender for Business を取得する
           href: get-defender-business.md
+        - name: ユーザーを追加してライセンスを割り当てる
+          href: mdb-add-users.md
+        - name: Microsoft 365 Defender ポータルにアクセスする
+          href: mdb-get-started.md
         - name: セットアップ ウィザードを使用する
           href: mdb-use-wizard.md
-        - name: 概要を使用する方法
-          href: mdb-get-started.md
-        - name: ダッシュボードを脆弱性の管理する
-          href: mdb-view-tvm-dashboard.md
         - name: チュートリアルとシミュレーションを試す
           href: mdb-tutorials.md
     - name: Defender for Business のセットアップと構成
@@ -37,8 +37,10 @@
           href: mdb-onboard-devices.md
         - name: 手順 5 - セキュリティ ポリシーを構成する
           href: mdb-configure-security-settings.md
-    - name: 検出された脅威の表示と対応
+    - name: 検出された脅威を表示して対応する
       items:
+        - name: 脆弱性の管理 ダッシュボードを表示する
+          href: mdb-view-tvm-dashboard.md
         - name: インシデントの表示と管理
           href: mdb-view-manage-incidents.md
         - name: 脅威への対応と軽減
@@ -65,6 +67,8 @@
           href: mdb-manage-devices.md
         - name: デバイス グループを作成する
           href: mdb-create-edit-device-groups.md
+        - name: オフボード デバイス
+          href: mdb-offboard-devices.md
     - name: 参照情報
       items:
         - name: ヘルプを入手する方法またはサポートに問い合わせる方法

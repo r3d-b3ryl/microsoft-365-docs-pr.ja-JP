@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365のAdvanced eDiscovery ソリューションで有効なケースの制限、インデックス作成の制限、検索の制限について説明します。
-ms.openlocfilehash: 0f21a78a90eee6069618e2ab35bb011aa870b62c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 93f0a988cb5a5321c8a725a1d678079174eba923
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758577"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861314"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Advanced eDiscovery を制限する
 
@@ -49,9 +49,9 @@ ms.locfileid: "64758577"
 
 |制限の説明|極限|
 |---|---|
-|組織の保留ポリシーの最大数。 この制限には、Core 電子情報開示とAdvanced eDiscoveryケースのホールド ポリシーの合計が含まれます。|10,0003<sup></sup>|
-|1 つのケースホールド内のメールボックスの最大数。 この制限には、ユーザー メールボックスの合計と、Microsoft 365 グループ、Microsoft Teams、Yammer グループに関連付けられているメールボックスの合計が含まれます。|1,000|
-|1 つのケースホールド内のサイトの最大数。 この制限には、OneDrive for Business サイト、SharePoint サイト、Microsoft 365 グループ、Microsoft Teams、Yammer グループに関連付けられているサイトの合計が含まれます。|100|
+|組織の保留ポリシーの最大数。 この制限には、Core 電子情報開示とAdvanced eDiscoveryケースのホールド ポリシーの合計が含まれます。|10,000|
+|1 つのケースホールド内のメールボックスの最大数。 この制限には、ユーザー メールボックスの合計と、Microsoft 365 グループ、Microsoft Teams、Yammer グループに関連付けられているメールボックスの合計が含まれます。|1,0003<sup></sup>|
+|1 つのケースホールド内のサイトの最大数。 この制限には、OneDrive for Business サイト、SharePoint サイト、Microsoft 365 グループ、Microsoft Teams、Yammer グループに関連付けられているサイトの合計が含まれます。|1003<sup></sup>|
 
 ## <a name="indexing-limits"></a>インデックス作成の制限
 
@@ -121,7 +121,7 @@ Microsoft は、すべての組織が実行する検索のパフォーマンス�
 |---|---|
 |レビュー セットからダウンロードされたドキュメントの合計ファイル サイズまたは最大数。|3 MB または 50 ドキュメント<sup>7</sup>|
 
-## <a name="notes"></a>メモ
+## <a name="notes"></a>Notes
 
 > [!NOTE]
 > <sup>1</sup> これは、ケースで作成できるタグの最大数です。 この制限は、タグ付けできるドキュメントの数には関係ありません。

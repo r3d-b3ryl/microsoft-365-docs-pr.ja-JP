@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 98ead4a77c275e0e4aeeab90e87e0b468a9b7bb8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 42d7acb4512928a32ac99c486a231d7891102208
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665978"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861336"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessのチュートリアルとシミュレーション
 
@@ -34,18 +34,16 @@ Microsoft Defender for Businessの設定が完了したばかりの場合は、D
 
 >
 > **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Businessに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
 
 ## <a name="try-these-preview-scenarios"></a>これらのプレビュー シナリオを試す
 
-次の表は、Defender for Business を試すいくつかのシナリオをまとめたものです。 
-<br/><br/>
-
+次の表は、Defender for Business を試すいくつかのシナリオをまとめたものです。
 
 | シナリオ  | 説明  |
 |---------|---------|
-| ローカル スクリプトを使用したデバイスのオンボード <br/>(*運用環境のデプロイ用ではありません*)     | Defender for Business では、各デバイスでダウンロードして実行するスクリプトを使用して、最大 10 台のWindows 10 デバイスと 11 台のデバイスをオンボードできます。 Defender for Business が環境でどのように動作するかを評価するのに適したスクリプトは、Azure Active Directory (Azure AD) との信頼関係を作成し、デバイスをMicrosoft Intuneに登録します。 詳細については、「 [Defender for Business のローカル スクリプト」を](mdb-onboard-devices.md#local-script-in-defender-for-business)参照してください。         |
+| ローカル スクリプトを使用したデバイスのオンボード <br/>(*運用環境のデプロイ用ではありません*)     | Defender for Business では、各デバイスでダウンロードして実行するスクリプトを使用して、最大 10 台のWindows 10 デバイスと 11 台のデバイスをオンボードできます。 Defender for Business が環境でどのように動作するかを評価するのに適したスクリプトは、Azure Active Directory (Azure AD) との信頼関係を作成し、デバイスをMicrosoft Intuneに登録します。 詳細については、「[デバイスをMicrosoft Defender for Businessにオンボードする](mdb-onboard-devices.md)」を参照してください。         |
 | Microsoft Intuneを使用してデバイスをオンボードする     | Defender for Endpoint を取得する前にMicrosoft Intuneを既に使用していた場合は、引き続きMicrosoft Intuneを使用してデバイスをオンボードできます。 Microsoft Intuneを使用して macOS、iOS、Android デバイスをオンボードしてみてください。 詳細については、「[Microsoft Intuneでのデバイス登録](/mem/intune/enrollment/device-enrollment)」を参照してください。        |
 | セキュリティ ポリシーを編集する     | Defender for Business でセキュリティ ポリシーを管理している場合は、 **デバイス構成** ページを使用してポリシーを表示および編集します。 詳細については、「[Microsoft Defender for Businessでポリシーを表示または編集](mdb-view-edit-policies.md)する」を参照してください。        |
 | シミュレートされた攻撃を実行する   | Defender for Business では、いくつかのチュートリアルとシミュレーションを利用できます。 これらのチュートリアルとシミュレーションは、Defender for Business の脅威保護機能が会社でどのように機能するかを直接示すために設計されています。 1 つ以上のチュートリアルを試すには、「[Microsoft Defender for Businessに推奨されるチュートリアル」を](#recommended-tutorials-for-defender-for-business)参照してください。         |
@@ -55,8 +53,6 @@ Microsoft Defender for Businessの設定が完了したばかりの場合は、D
 ## <a name="recommended-tutorials-for-defender-for-business"></a>Defender for Business の推奨チュートリアル
 
 次の表では、Defender for Business のお客様に推奨されるチュートリアルについて説明します。
-<br/><br/>
-
 
 | チュートリアル  | 説明  |
 |---------|---------|
@@ -84,9 +80,6 @@ Microsoft Defender for Businessの設定が完了したばかりの場合は、D
 ## <a name="next-steps"></a>次の手順
 
 - [Microsoft Defender for Businessでデバイスを管理する](mdb-manage-devices.md)
-
 - [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)
-
 - [Microsoft Defender for Businessの脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
-
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)

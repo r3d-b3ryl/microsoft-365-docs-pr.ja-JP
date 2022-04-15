@@ -1,34 +1,32 @@
 ---
 title: セキュリティ チームの電子メール通知を設定する
-description: Microsoft Defender for Business を使用してアラートと脆弱性についてユーザーに通知する電子メール通知を設定する
+description: Microsoft Defender for Businessに関するアラートと脆弱性についてユーザーに伝える電子メール通知を設定する
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: bf11ed140d2e0609f2d12d1da3bcc448ff733235
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a65634a5827e60d710cec56ca10835c73053cb10
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683145"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862854"
 ---
 # <a name="set-up-email-notifications"></a>電子メール通知を設定する
 
-> [!IMPORTANT]
-> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。[](../../business-premium/index.md) スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
-> 
-> この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
+> [!NOTE]
+> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
-セキュリティ チームの電子メール通知を設定できます。 その後、アラートが生成されると、または新しい脆弱性が検出されると、セキュリティ チームのユーザーに自動的に通知されます。 
+セキュリティ チームの電子メール通知を設定できます。 その後、アラートが生成されるか、新しい脆弱性が検出されると、セキュリティ チームのユーザーに自動的に通知されます。 
 
 ## <a name="what-to-do"></a>操作
 
@@ -41,43 +39,43 @@ ms.locfileid: "63683145"
 
 >
 > **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
 
 ## <a name="types-of-email-notifications"></a>電子メール通知の種類
 
-電子メール通知を設定する場合は、次の表で説明するように、2 つの種類から選択できます。 <br/><br/>
+電子メール通知を設定するときは、次の表に示すように、2 つの種類から選択できます。
 
-| 通知の種類  | [説明]  |
+| 通知の種類  | 説明  |
 |---------|---------|
-| 脆弱性  | 新しい悪用や脆弱性イベントが検出されると、受信者は電子メールを受信します。 |
-| 脆弱性&警告  | デバイスで脅威が検出されたため、または新しい悪用や脆弱性イベントが検出された場合、受信者は電子メールを受信します。 |
+| 脆弱 性  | 新しい悪用や脆弱性イベントが検出されるたびに、受信者は電子メールを受け取ります。 |
+| アラート&脆弱性  | デバイスで脅威が検出されたためにアラートが生成された場合、または新しい悪用や脆弱性イベントが検出された場合、受信者は電子メールを受信します。 |
 
 > [!TIP]
-> **セキュリティ チームが新しいアラートや** 脆弱性について知る唯一の方法は、電子メール通知ではありません。
+> **セキュリティ チームが新しいアラートや脆弱性について知ることができる唯一の方法は、電子メール通知ではありません**。
 > 
-> メール通知は、セキュリティ チームにリアルタイムで情報を提供するのに役立つ便利な方法です。 しかし、他の人がいます! たとえば、セキュリティ チームが Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) にサインインすると、新しい脅威、アラート、および脆弱性が強調表示されたカードが表示されます。 Defender for Business は、セキュリティ チームがサインインするとすぐに気にする重要な情報を強調表示するように設計されています。
+> 電子メール通知は、セキュリティ チームにリアルタイムで情報を提供するのに役立つ便利な方法です。 しかし、他にも存在します。 たとえば、セキュリティ チームが Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) にサインインするたびに、新しい脅威、アラート、および脆弱性を強調するカードが表示されます。 Defender for Business は、セキュリティ チームがサインインするとすぐに気になる重要な情報を強調表示するように設計されています。
 > 
-> セキュリティ チームは、ナビゲーション ウィンドウで **[インシデント]** を選択して情報を表示することもできます。 詳細については、「 [Microsoft Defender for Business でのインシデントの表示と管理」を参照してください](mdb-view-manage-incidents.md)。
+> セキュリティ チームは、ナビゲーション ウィンドウで **[インシデント** ] を選択して情報を表示することもできます。 詳細については、「[Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)」を参照してください。
 
-## <a name="view-and-edit-email-notifications"></a>メール通知の表示と編集
+## <a name="view-and-edit-email-notifications"></a>電子メール通知を表示および編集する
 
-会社のメール通知設定を表示または編集するには、次の手順を実行します。
+会社の電子メール通知設定を表示または編集するには、次の手順に従います。
 
-1. ポータル () にMicrosoft 365 Defenderサインイン[https://security.microsoft.com](https://security.microsoft.com)します。
+1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-2. ナビゲーション ウィンドウで、[エンドポイント] を選択 **設定** し、[エンドポイント] **を選択します**。 次に、[全般] **で、[** 電子メール通知 **] を選択します**。 
+2. ナビゲーション ウィンドウで[**設定**]、[エンドポイント] の順 **に** 選択します。 次に、[ **全般**] で [ **電子メール通知**] を選択します。 
 
-3. [アラートと脆弱性] **タブの****情報を確認** します。
+3. **[アラート**] タブと [脆弱性] タブの情報 **を** 確認します。
 
-   - [アラート] タブに一覧にアイテムが表示されない場合は、アラートが生成された場合にユーザーに通知するルールを作成できます。 このタスクのヘルプについては、「アラート通知の [ルールを作成する」を参照してください](../defender-endpoint/configure-email-notifications.md)。
+   - [アラート] タブに項目が表示されない場合は、 **アラート** が生成されたときに通知を受け取るルールを作成できます。 このタスクのヘルプについては、「 [アラート通知のルールを作成する」を](../defender-endpoint/configure-email-notifications.md)参照してください。
 
-   - [脆弱性] タブに一覧にアイテムが表示されない場合は、新しい脆弱性が検出されるたびにユーザーに通知するルールを作成できます。 このタスクのヘルプについては、「脆弱性イベントの [ルールを作成する」を参照してください](../defender-endpoint/configure-vulnerability-email-notifications.md)。
+   - [ **脆弱性** ] タブに項目が表示されない場合は、新しい脆弱性が検出されるたびに通知を受け取るルールを作成できます。 このタスクのヘルプについては、「 [脆弱性イベントのルールを作成する」を](../defender-endpoint/configure-vulnerability-email-notifications.md)参照してください。
 
-   - ルールが作成されている場合は、ルールを選択して編集します。 ルールを削除できます。 
+   - ルールが作成されている場合は、ルールを選択して編集します。 ルールを削除することもできます。 
 
 ## <a name="next-steps"></a>次の手順
 
 次の手順に進みます。
 
-- [手順 4: Microsoft Defender for Business にデバイスをオンボードする](mdb-onboard-devices.md)
+- [手順 4: デバイスをMicrosoft Defender for Businessにオンボードする](mdb-onboard-devices.md)

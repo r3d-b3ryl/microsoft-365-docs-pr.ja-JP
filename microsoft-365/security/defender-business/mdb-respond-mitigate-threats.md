@@ -1,13 +1,13 @@
 ---
-title: Microsoft Defender for Business での脅威への対応と軽減
-description: 脅威が検出されると、これらの脅威に対応して軽減するためのアクションを実行できます。
+title: Microsoft Defender for Businessの脅威に対応し、軽減する
+description: 脅威が検出されると、それらの脅威に対応して軽減するためのアクションを実行できます。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,55 +17,51 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: f57774f993c0044878655713202d6835a2a69173
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 730dc448eb360528a0c45da70f6da6ce32ab5ef4
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525291"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862238"
 ---
-# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Microsoft Defender for Business での脅威への対応と軽減
+# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessの脅威に対応し、軽減する
 
-> [!IMPORTANT]
-> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。[](../../business-premium/index.md) スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
-> 
-> この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
+> [!NOTE]
+> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
-このMicrosoft 365 Defenderを使用すると、セキュリティ チームは検出された脅威に対応し、軽減できます。 この記事では、Defender for Business を使用する方法の例について説明します。
+Microsoft 365 Defender ポータルを使用すると、セキュリティ チームは検出された脅威に対応し、軽減できます。 この記事では、Defender for Business を使用する方法の例について説明します。
 
 >
 > **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
 
 ## <a name="view-detected-threats"></a>検出された脅威を表示する
 
-1. ポータル () にMicrosoft 365 Defenderサインイン[https://security.microsoft.com](https://security.microsoft.com)します。
+1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-2. [ホーム] ページのカードに注意してください。 カードは、検出された脅威の数と、影響を受けたユーザー アカウント、エンドポイント (デバイス)、その他のアセットの数を一目で示します。 次の図は、表示されるカードの例です。
+2. ホーム ページのカードに注目してください。 カードでは、検出された脅威の数と、影響を受けたユーザー アカウント、エンドポイント (デバイス)、その他の資産の数が一目でわかります。 次の図は、表示される可能性があるカードの例です。
 
-   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="ポータル内のカードMicrosoft 365 Defenderスクリーンショット":::
+   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Microsoft 365 Defender ポータルのカードのスクリーンショット":::
 
-3. カードのボタンまたはリンクを選択して、詳細を表示し、アクションを実行します。 たとえば、リスク カードに **[詳細の表示** ] ボタン **が含** まれています。 次の図に示すように、 **そのボタンを** 選択すると、[デバイス インベントリ] ページに移動します。
+3. カードのボタンまたはリンクを選択して、詳細情報を表示し、アクションを実行します。 たとえば、 **リスクのあるデバイス** カードには 、[ **詳細の表示]** ボタンが含まれています。 このボタンを選択すると、次の図に示すように、[ **デバイス インベントリ]** ページに移動します。
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="デバイス インベントリのスクリーンショット":::
 
-   [ **デバイス インベントリ] ページ** には、リスク レベルと露出レベルと共に、会社のデバイスが一覧表示されます。
+   **[デバイス インベントリ]** ページには、会社のデバイスとそのリスク レベルと露出レベルが一覧表示されます。
 
-4. デバイスなどのアイテムを選択します。 次の図に示すように、フライアウト ウィンドウが開き、そのアイテムに対して生成されたアラートとインシデントに関する詳細が表示されます。  
+4. デバイスなどの項目を選択します。 ポップアップ ウィンドウが開き、次の図に示すように、そのアイテムに対して生成されたアラートとインシデントに関する詳細情報が表示されます。  
 
-   :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout.png" alt-text="選択したデバイスのフライアウト ウィンドウのスクリーンショット":::
+   :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout.png" alt-text="選択したデバイスのポップアップ ウィンドウのスクリーンショット":::
 
-5. フライアウトで、表示される情報を表示します。 省略記号 (...)を選択して、次の図に示すように、使用可能なアクションを一覧表示するメニューを開きます。 
+5. ポップアップで、表示される情報を表示します。 省略記号 (...) を選択して、次の図に示すように、使用可能なアクションを一覧表示するメニューを開きます。 
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="選択したデバイスで使用可能なアクションのスクリーンショット":::
 
-6. 使用可能なアクションを選択します。 たとえば、[ウイルス対策スキャンの **実行**] を選択すると、デバイスMicrosoft Defender ウイルス対策スキャンが開始されます。 または、[自動調査の **開始] を選択** して、デバイスで自動調査をトリガーすることもできます。
+6. 使用可能なアクションを選択します。 たとえば、[**ウイルス対策スキャンの実行**] を選択すると、Microsoft Defender ウイルス対策デバイスでクイック スキャンが開始されます。 または、[ **自動調査の開始** ] を選択して、デバイスの自動調査をトリガーすることもできます。
 
 ## <a name="next-steps"></a>次の手順
 
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)
-
-- [Microsoft Defender for Business でデバイスを管理する](mdb-manage-devices.md)
-
-- [Microsoft Defender for Business でのインシデントの表示と管理](mdb-view-manage-incidents.md)
+- [Microsoft Defender for Businessでデバイスを管理する](mdb-manage-devices.md)
+- [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)

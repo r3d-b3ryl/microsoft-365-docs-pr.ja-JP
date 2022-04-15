@@ -1,13 +1,13 @@
 ---
-title: デバイスをオンボードMicrosoft Defender for Business
-description: デバイスオンボーディングオプションの詳細については、「Microsoft Defender for Business
+title: デバイスをMicrosoft Defender for Businessにオンボードする
+description: Microsoft Defender for Businessのデバイス オンボード オプションについて説明します
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/01/2022
+ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,143 +17,306 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 78a8eaa5a9472a32c9615dfb7c7f5b08afe548ff
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: ba816430521db2848273a4f7c6ca7d1a61703690
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634737"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862268"
 ---
-# <a name="onboard-devices-to-microsoft-defender-for-business"></a>デバイスをオンボードMicrosoft Defender for Business
+# <a name="onboard-devices-to-microsoft-defender-for-business"></a>デバイスをMicrosoft Defender for Businessにオンボードする
 
-> [!IMPORTANT]
-> Microsoft Defender for Business 2022 年 3 月 1 [日](../../business-premium/index.md)からMicrosoft 365 Business Premium顧客に展開しています。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
-> 
-> この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
+> [!NOTE]
+> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
-このMicrosoft Defender for Business、会社のデバイスをオンボーディングするためのオプションがいくつかあります。 この記事では、オプションについて説明し、オンボーディングのしくみの概要について説明します。
+Microsoft Defender for Businessを使用すると、会社のデバイスのオンボードから選択できるオプションがいくつかあります。 この記事では、オプションについて説明し、オンボードのしくみの概要について説明します。
 
 >
 > **少し時間ありますか?**
-> お問い合<a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">わせに関する短いMicrosoft Defender for Business</a>。 ご意見をお寄せください。
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
 
 ## <a name="what-to-do"></a>操作
 
-1. [オンボーディング デバイスのオプションを確認し](#device-onboarding-methods)、方法を選択します。 
+1. オペレーティング システムのタブを選択します。 
 
-   - [デバイスに既に登録されているデバイスWindows自動オンボーディングを使用Microsoft エンドポイント マネージャー](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
-   - [ローカル スクリプトを使用して、Windowsまたは macOS デバイスをオンボードする](#local-script-in-defender-for-business)
-   - [モバイル Microsoft エンドポイント マネージャー、macOS、Windowsデバイスのオンボードに使用する](#microsoft-endpoint-manager)
+   - Windows クライアント
+   - Windows サーバー (プレビュー)
+   - macOS コンピューター
+   - モバイル デバイス
 
-2. [新しくオンボードされたデバイス](#run-a-detection-test)で検出テストをWindowsします。
+2. オンボード オプションを表示し、選択したタブのガイダンスに従います。
 
-3. [次の手順を参照してください](#next-steps)。 
+3. 次の手順に進みます。
 
-この記事には、デバイスの [オフボードに関する情報も含まれています](#offboarding-a-device)。
+## <a name="windows-clients"></a>[**Windows クライアント**](#tab/WindowsClientDevices)
 
-## <a name="device-onboarding-methods"></a>デバイスオンボーディングの方法
+## <a name="windows-clients"></a>Windows クライアント
 
-Defender for Business では、既に Microsoft エンドポイント マネージャー を使用している場合でも、簡単なオンボーディング エクスペリエンスが必要な場合でも、デバイスをオンボーディングする方法がいくつか用意されています。 デバイスを Defender for Business にオンボードするために最も一般的に使用される方法は次のとおりです。
+次のいずれかのオプションを選択して、Windowsクライアント デバイスを Defender for Business にオンボードします。
 
-- **デバイスに既に** Windowsされているデバイスの自動オンボーディングMicrosoft エンドポイント マネージャー。 自動オンボーディングは、Defender for Business と Microsoft エンドポイント マネージャー間の接続をセットアップし、Windows Defender for Business にデバイスをオンボードします。 このオプションを使用するには、デバイスが既にデバイスに登録されている必要エンドポイント マネージャー。 詳細については、「自動オンボーディング [」を参照してください](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)。
+- [ローカル スクリプト](#local-script-for-windows-clients) (Microsoft 365 Defender ポータルで手動でデバイスをオンボードする場合)
+- [Microsoft エンドポイント マネージャー](#endpoint-manager-for-windows-clients) ([Microsoft 365 Business Premium](../../business-premium/index.md)に含まれています)
 
-- **ローカル スクリプトを使用** して、Windows macOS デバイスを Defender for Business に手動でオンボードします。 ローカル スクリプトを使用すると、一度に最大 10 台のデバイスをオンボードできます。 詳細については、「Defender [for Business のローカル スクリプト」を参照してください](#local-script-in-defender-for-business)。
 
-- **Microsoft Intune**、**macOS Microsoft エンドポイント マネージャー** モバイル デバイスWindowsオンボーディングを行います。 デバイスをデバイスに登録エンドポイント マネージャー、デバイスを Defender for Business にオンボードできます。 [Microsoft 365 Business Premium](../../business-premium/index.md)ユーザー[は既に](/mem/intune/fundamentals/what-is-intune)Microsoft Intuneし、Microsoft Intuneモバイル デバイス管理は現在、エンドポイント マネージャーの一部エンドポイント マネージャー[](/mem/intune/enrollment/device-enrollment)。 このメソッドを使用するには、「Microsoft エンドポイント マネージャー」 [を参照してください](#microsoft-endpoint-manager)。
+### <a name="local-script-for-windows-clients"></a>Windows クライアントのローカル スクリプト
 
-> [!IMPORTANT]
-> 問題が発生し、オンボーディング プロセスが失敗した場合は、「トラブルシューティング[Microsoft Defender for Business参照してください](mdb-troubleshooting.yml)。
-
-## <a name="automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager"></a>デバイスに登録Windowsデバイスの自動オンボーディングMicrosoft エンドポイント マネージャー
-
-自動オンボーディング オプションは、デバイスWindows適用されます。 自動オンボーディングは、次の条件が満たされている場合に使用できます。
-
-- Defender for Business をMicrosoft エンドポイント マネージャーする前Microsoft エンドポイント マネージャー、Microsoft Intune、またはモバイル デバイス管理 (MDM) をMicrosoft Intuneしている会社
-
-- 既に、Windowsに登録されているデバイスエンドポイント マネージャー
-
-Windowsデバイスが エンドポイント マネージャー に既に登録されている場合、Defender for Business は、Defender for Business のセットアップおよび構成中にそれらのデバイスを検出します。 すべてのデバイスまたは一部のデバイスに対して自動オンボーディングを使用Windowsされます。 すべてのデバイスを一度Windowsしたり、最初に特定のデバイスを選択したり、後でデバイスを追加したりできます。
+ローカル スクリプトを使用して、Windowsクライアント デバイスをオンボードできます。 デバイスでオンボード スクリプトを実行すると、Azure Active Directoryで信頼が作成され (その信頼がまだ存在しない場合)、デバイスがMicrosoft エンドポイント マネージャーに登録され (まだ登録されていない場合)、デバイスが Defender for Business にオンボードされます。 ローカル スクリプト メソッドは、現在エンドポイント マネージャー (またはMicrosoft Intune) がない場合でも機能します。 この方法を使用して、一度に最大 10 台のデバイスをオンボードすることをお勧めします。
 
 > [!TIP]
-> [すべてのデバイスが登録されている] オプションを選択することをお勧めします。 この方法で、Windowsデバイスが後で登録エンドポイント マネージャー、Defender for Business に自動的にオンボードされます。 また、エンドポイント マネージャー でセキュリティ ポリシーと設定を管理している場合は、Microsoft 365 Defender ポータルに切り替えてデバイス、ポリシー、設定を管理することをお勧めします。 詳細については、「セキュリティ ポリシーと [デバイスを管理する場所を選択する」を参照してください](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices)。
+> ローカル スクリプト メソッドを使用する場合は、一度に最大 10 台のデバイスをオンボードすることをお勧めします。
 
-自動オンボーディングの詳細については、「ウィザードを使用して自動オンボーディングをセットアップする」の手順 2 [を参照](mdb-use-wizard.md)Microsoft Defender for Business。
+1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動し、サインインします。
 
-## <a name="local-script-in-defender-for-business"></a>Defender for Business のローカル スクリプト
+2. ナビゲーション ウィンドウで **[設定** > **Endpoints**] を選択し、[**デバイス管理**] で [**オンボード**] を選択します。
 
-ローカル スクリプトを使用して、ローカル デバイスと Mac Windowsオンボードできます。 デバイスでオンボード スクリプトを実行すると、Azure Active Directory との信頼が作成されます (その信頼が存在しない場合)、Microsoft エンドポイント マネージャー にデバイスを登録し (まだ登録されていない場合)、デバイスを Defender for Business にオンボードします。 このメソッドは、Defender for Business のデバイスをオンボーディングする場合に便利です。 最大 10 台のデバイスを一度にオンボードできます。
+3. **Windows 10や 11** などのオペレーティング システムを選択し、[**展開方法]** セクションで [**ローカル スクリプト**] を選択します。 
 
-1. ポータル () にMicrosoft 365 Defenderし[https://security.microsoft.com](https://security.microsoft.com)、サインインします。
+4. **[オンボーディング パッケージをダウンロードする]** を選択します。 オンボード パッケージをリムーバブル ドライブに保存することをお勧めします。
 
-2. ナビゲーション ウィンドウで、[設定 **Endpoints**] **を** > 選択し、[デバイスの管理] で [**オンボーディング]** **を選択します**。
+5. Windows デバイスで、構成パッケージの内容をデスクトップ フォルダーなどの場所に展開します。 という名前 `WindowsDefenderATPLocalOnboardingScript.cmd`のファイルが必要です。 
 
-3. オペレーティング システム (Windows 10 **11** や **macOS** など) を選択し、[展開方法] セクションで [ローカル スクリプト]  **を選択します**。 
+6. 管理者としてコマンド プロンプトを開きます。
 
-4. **[オンボーディング パッケージをダウンロードする]** を選択します。 オンボーディング パッケージをリムーバブル ドライブに保存することをお勧めします。 (**macOS** を選択した場合は、[インストール  パッケージをダウンロードしてリムーバブル デバイスに保存する] も選択します)。
+7. スクリプト ファイルの場所を入力します。 たとえば、ファイルをデスクトップ フォルダーにコピーした場合は、次のように入力 `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`し、Enter キーを押します (または **[OK**] を選択します)。
 
-5. 次の表のガイダンスに従います。
+8. スクリプトの実行後、 [検出テストの実行](#running-a-detection-test-on-a-windows-client)に進みます。
 
-   | オペレーティング システム | プロシージャ |
-   |---|---|
-   | Windows | 1. デバイスWindows、構成パッケージの内容をデスクトップ フォルダーなどの場所に展開します。 という名前のファイルが必要です `WindowsDefenderATPLocalOnboardingScript.cmd`。 <br/><br/>2. 管理者としてコマンド プロンプトを開きます。<br/><br/>3. スクリプト ファイルの場所を入力します。 たとえば、ファイルをデスクトップ フォルダーにコピーした場合は、「: `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`」と入力し、Enter キーを押します (または **[OK] を選択します**)。<br/><br/>4. スクリプトの実行後、[検出テストの [実行] に進みます](#run-a-detection-test)。 |
-   | macOS | 1. Mac コンピューターで、インストール パッケージをローカル ディレクトリ `wdav.pkg` に保存します。 <br/><br/>2. オンボーディング パッケージをインストール パッケージ `WindowsDefenderATPOnboardingPackage.zip` に使用したのと同じディレクトリに保存します。 <br/><br/>3. Finder を使用して保存した `wdav.pkg` 場所に移動し、開きます。<br/><br/>4. [ **続行] を** 選択し、ライセンス条項に同意し、メッセージが表示されたらパスワードを入力します。<br/><br/>5. Microsoft のドライバーのインストールを許可するように求めるメッセージが表示されます ("System Extension Blocked" または "Installation is on hold"、または両方)。 ドライバーのインストールを許可する必要があります。 インストールを許可するには、[Open **Security Preferences**] または [**Open System PreferencesSecurity** >  &**プライバシー**] を選択し、[許可] を選択 **します**。<br/><br/>6. Bash で次の Python コマンドを使用してオンボーディング パッケージを実行します。 `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py` <br/><br/>7. デバイスが会社に関連付けられているか確認するには、Bash で次の Python コマンドを使用します。 `mdatp health --field org_id`<br/><br/>8. macOS 10.15 (Catalina) 以降を使用している場合は、デバイスを保護するために Defender for Business の同意を付与します。 「**System PreferencesSecurity** >  **&** **PrivacyFull** >  >  **Disk Access」に移動します**。  ロック アイコンを選択して変更を加えます (ダイアログ ボックスの下部) をクリックし、Microsoft Defender for Business (または Defender for Endpoint) を選択します(表示されている場合)。 <br/><br/>9. デバイスがオンボードされているのを確認するには、Bash で次のコマンドを使用します。 `mdatp health --field real_time_protection_enabled`    |
+### <a name="endpoint-manager-for-windows-clients"></a>Windows クライアントのエンドポイント マネージャー
 
-## <a name="microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャー
+サブスクリプションに[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)が含まれている場合は、Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) でWindowsクライアントやその他のデバイスをオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてエンドポイント マネージャーがあります。 エンドポイント マネージャーには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune)機能と[モバイル デバイス管理機能が含まれます](/mem/intune/fundamentals/what-is-device-management)。 
 
-Defender for Business を使用する前に エンドポイント マネージャー (Microsoft Intune とモバイル デバイス管理 を含む) を既に使用していた場合は、引き続き エンドポイント マネージャー を使用して会社のデバイスをオンボードできます。 このエンドポイント マネージャー、iOS デバイスや Android デバイスを含むコンピューター、タブレット、電話をオンボードできます。
+Intuneにデバイスを登録するには、いくつかの方法があります。 次のいずれかの方法から始めることをお勧めします。
 
-「[デバイスの登録」を参照Microsoft Intune](/mem/intune/enrollment/device-enrollment)。
+- 会社所有または会社が管理するデバイスの[自動登録Windows有効にする](/mem/intune/enrollment/windows-enroll)
+- [Intuneに自分のWindows 10/11 デバイスを登録するようにユーザーに依頼する](/mem/intune/user-help/enroll-windows-10-device)
 
-## <a name="run-a-detection-test"></a>検出テストの実行
+#### <a name="to-enable-automatic-enrollment-for-windows-devices"></a>Windows デバイスの自動登録を有効にするには
 
-Defender for Business に Windowsデバイスをオンボードした後、Windows デバイスで検出テストを実行して、すべてが正しく動作するようにすることができます。
+自動登録を設定すると、ユーザーは自分の職場アカウントをデバイスに追加します。 バックグラウンドでは、デバイスはAzure Active Directory (Azure AD) を登録して参加し、Intuneに登録されます。
 
-1. デバイスでWindowsフォルダーを作成します。 `C:\test-MDATP-test`
+1. Azure portal ([https://portal.azure.com/](https://portal.azure.com/)) に移動し、サインインします。 
+
+2. **Azure Active Directory** >  **Mobility (MDM と MAM)** > **Microsoft Intune** を選択します。
+
+3. MDM ユーザー スコープと MAM ユーザー スコープを構成します。
+
+   :::image type="content" source="media/mem-mam-scope-azure-ad.png" alt-text="Intuneで MDM ユーザー スコープと MAM ユーザー スコープを設定するスクリーンショット。":::
+
+   - MDM ユーザー スコープでは、すべてのユーザーがWindowsデバイスを自動的に登録できるように、[**すべて**] を選択することをお勧めします。
+   - MAM ユーザー スコープ セクションでは、URL に次の既定値を使用することをお勧めします。
+
+       - **MDM 使用条件 URL**
+       - **MDM 探索 URL**
+       - **MDM 準拠 URL**
+
+4. **[保存]** を選択します。
+
+5. デバイスがIntuneに登録されたら、デバイス グループに追加できます。 [Microsoft Defender for Businessのデバイス グループの詳細について説明](mdb-create-edit-device-groups.md)します。
+
+
+> [!TIP]
+> 自動登録の詳細については、「自動登録[Windows有効にする](/mem/intune/enrollment/windows-enroll)」を参照してください。
+
+#### <a name="to-have-users-enroll-their-own-windows-devices"></a>ユーザーに独自のWindows デバイスを登録させるには
+
+1. 登録のしくみについては、次のビデオをご覧ください。 <br/><br/>
+
+   > [!VIDEO https://www.youtube.com/embed/TKQxEckBHiE?rel=0]  
+
+2. この記事を組織内のユーザーと共有する:[Intuneに Windows 10/11 デバイスを登録します](/mem/intune/user-help/enroll-windows-10-device)。
+
+3. デバイスがIntuneに登録されたら、デバイス グループに追加できます。 [Microsoft Defender for Businessのデバイス グループの詳細について説明](mdb-create-edit-device-groups.md)します。
+
+### <a name="running-a-detection-test-on-a-windows-client"></a>Windows クライアントで検出テストを実行する
+
+Windowsデバイスを Defender for Business にオンボードしたら、Windows デバイスで検出テストを実行して、すべてが正しく動作していることを確認できます。
+
+1. Windows デバイスで、フォルダーを作成します`C:\test-MDATP-test`。
 
 2. 管理者としてコマンド プロンプトを開きます。
 
-3. [コマンド プロンプト] ウィンドウで、次の PowerShell コマンドを実行します。
+3. コマンド プロンプト ウィンドウで、次の PowerShell コマンドを実行します。
 
    ```powershell
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-コマンドを実行すると、[コマンド プロンプト] ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、新しくオンボードされたデバイスの新しいアラートが Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に約 10 分で表示されます。
+コマンドを実行すると、コマンド プロンプト ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、新しくオンボードされたデバイスのMicrosoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に約 10 分間で新しいアラートが表示されます。
 
-## <a name="gradual-device-onboarding"></a>段階的なデバイスオンボーディング
+## <a name="view-a-list-of-onboarded-devices"></a>オンボードされたデバイスの一覧を表示する
 
-会社のデバイスを段階的にオンボードできます。 *この段階的なデバイスオンボーディングを呼び出します*。 
-
-1. オンボードするデバイスのセットを識別します。
-
-2. ポータル () にMicrosoft 365 Defenderし[https://security.microsoft.com](https://security.microsoft.com)、サインインします。
-
-3. ナビゲーション ウィンドウで、[設定 **Endpoints**] **を** > 選択し、[デバイスの管理] で [**オンボーディング]** **を選択します**。
-
-4. オペレーティング システム (Windows 10 **11 など) を** 選択し、オンボーディング方法 (ローカル スクリプトなど) **を選択します**。 選択した方法のガイダンスに従います。
-
-5. オンボードするデバイスのセットごとにこのプロセスを繰り返します。 
-
-> [!TIP]
-> デバイスをオンボードする度に同じオンボーディング パッケージを使用する必要はない。 たとえば、ローカル スクリプトを使用して一部のデバイスをオンボードし、後で別の方法を選択して、より多くのデバイスをオンボードできます。
-
-## <a name="offboarding-a-device"></a>デバイスのオフボード
-
-デバイスをオフボードする場合は、次のいずれかの手順を使用します。
-
-| オペレーティング システム | プロシージャ |
-|---|---|
-| Windows | 1. ポータル () のMicrosoft 365 Defenderサインイン[https://security.microsoft.com](https://security.microsoft.com)します。<br/><br/>2. ナビゲーション ウィンドウで、[エンドポイント] を **設定し、[** エンドポイント] **を選択します**。<br/><br/>3. [デバイス **の管理] で、[****オフボード] を選択します**。<br/><br/>4. オペレーティング システム (**Windows 10 や 11** など) を選択し、[デバイスのオフボード] の [展開方法] セクションで、[ローカル スクリプト] を **選択します**。 <br/><br/>5. 確認画面で情報を確認し、[ダウンロード] を選択 **して続行します** 。<br/><br/>6. [オフ **ボード パッケージのダウンロード] を選択します**。 オフボード パッケージをリムーバブル ドライブに保存することをお勧めします。<br/><br/>7. オフボードする各デバイスでスクリプトを実行します。| 
-| macOS | 1. **FinderApplications** >  に移動します。 <br/><br/>2. [ごみ箱] を右Microsoft Defender for Businessし、[ごみ箱に移動] **を選択します**。 <br/><br/>--- または --- <br/><br/> 次のコマンドを使用します。 `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`|
-
-> [!IMPORTANT]
-> デバイスをオフボードすると、デバイスは Defender for Business へのデータの送信を停止します。 ただし、オフボード前に受信したデータは、最大 6 か月間保持されます。
+Defender for Business にオンボードされているデバイスの一覧を表示するには、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、ナビゲーション ウィンドウの [**エンドポイント**] で [**デバイスのインベトリ**] を選択します。
 
 ## <a name="next-steps"></a>次の手順
 
-次の手順に進みます。
+- オンボードする他のデバイスがある場合は、デバイス [(Windows クライアント、Windows サーバー、macOS、モバイル デバイス](#what-to-do)) のオペレーティング システムに対応するタブを選択し、そのタブのガイダンスに従います。
+- デバイスのオンボードが完了したら、「[手順 5: Microsoft Defender for Businessでセキュリティ設定とポリシーを構成する」に](mdb-configure-security-settings.md)進みます。
+- [Microsoft Defender for Businessを使用した概要を](mdb-get-started.md)参照してください。
 
-- [手順 5: セキュリティ設定とポリシーを構成する方法Microsoft Defender for Business](mdb-configure-security-settings.md)
+## <a name="windows-server"></a>[**Windows Server**](#tab/WindowsServerEndpoints)
 
-- [概要を使用Microsoft Defender for Business](mdb-get-started.md) 
+## <a name="windows-server-preview"></a>Windows サーバー (プレビュー)
+
+ローカル スクリプトを使用して、Windows Server デバイスをオンボードできます。 
+
+> [!IMPORTANT]
+> Windows サーバー エンドポイントをオンボードする機能は現在プレビュー段階です。
+
+1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動し、サインインします。
+
+2. ナビゲーション ウィンドウで **[設定** > **Endpoints**] を選択し、[**デバイス管理**] で [**オンボード**] を選択します。
+
+3. **Windows Server 1803、2019、2022** などのオペレーティング システムを選択し、[**展開方法]** セクションで [**ローカル スクリプト**] を選択します。 
+
+   **R2 と 2016 のWindows Server 2012** を選択した場合は、インストール パッケージとオンボード パッケージの 2 つのパッケージをダウンロードして実行できます。 インストール パッケージには、Microsoft Defender for Business エージェントをインストールする MSI ファイルが含まれています。 オンボード パッケージには、Windows サーバー エンドポイントを Defender for Business にオンボードするスクリプトが含まれています。 
+
+4. **[オンボーディング パッケージをダウンロードする]** を選択します。 オンボード パッケージをリムーバブル ドライブに保存することをお勧めします。
+
+   **R2 と 2016 Windows Server 2012** 選択した場合は、[**インストール パッケージのダウンロード**] も選択し、リムーバブル ドライブに保存します
+
+5. Windows サーバー エンドポイントで、インストール/オンボード パッケージの内容をデスクトップ フォルダーなどの場所に展開します。 という名前 `WindowsDefenderATPLocalOnboardingScript.cmd`のファイルが必要です。 
+
+   R2 またはWindows Server 2016 Windows Server 2012オンボードする場合は、最初にインストール パッケージを展開します。
+
+6. 管理者としてコマンド プロンプトを開きます。
+
+7. Server 2012R2 またはWindows Server 2016 Windowsオンボードする場合は、次のコマンドを実行します`Msiexec /i md4ws.msi /quiet`。 
+
+   Server 1803、2019、または 2022 Windowsオンボードする場合は、この手順をスキップして手順 8 に進みます。
+
+8. スクリプト ファイルの場所を入力します。 たとえば、ファイルをデスクトップ フォルダーにコピーした場合は、次のように入力 `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`し、Enter キーを押します (または **[OK**] を選択します)。
+
+9. [Windows サーバーで検出テストを実行](#running-a-detection-test-on-windows-server)する
+
+### <a name="running-a-detection-test-on-windows-server"></a>Windows サーバーで検出テストを実行する
+
+Windows サーバー エンドポイントを Defender for Business にオンボードしたら、検出テストを実行してすべてが正しく動作していることを確認できます。
+
+1. Windows サーバー デバイスで、フォルダーを作成します`C:\test-MDATP-test`。
+
+2. 管理者としてコマンド プロンプトを開きます。
+
+3. コマンド プロンプト ウィンドウで、次の PowerShell コマンドを実行します。
+
+   ```powershell
+   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
+   ```
+
+コマンドを実行すると、コマンド プロンプト ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、新しくオンボードされたデバイスのMicrosoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に約 10 分間で新しいアラートが表示されます。
+
+## <a name="view-a-list-of-onboarded-devices"></a>オンボードされたデバイスの一覧を表示する
+
+Defender for Business にオンボードされているデバイスの一覧を表示するには、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、ナビゲーション ウィンドウの [**エンドポイント**] で [**デバイスのインベトリ**] を選択します。
+
+## <a name="next-steps"></a>次の手順
+
+- オンボードする他のデバイスがある場合は、デバイス [(Windows クライアント、Windows サーバー、macOS、モバイル デバイス](#what-to-do)) のオペレーティング システムに対応するタブを選択し、そのタブのガイダンスに従います。
+- デバイスのオンボードが完了したら、「[手順 5: Microsoft Defender for Businessでセキュリティ設定とポリシーを構成する」に](mdb-configure-security-settings.md)進みます。
+- [Microsoft Defender for Businessを使用した概要を](mdb-get-started.md)参照してください。
+
+## <a name="macos"></a>[**macOS**](#tab/macOSdevices)
+
+## <a name="macos-computers"></a>macOS コンピューター
+
+> [!NOTE]
+> - ローカル スクリプトを使用して [macOS デバイスをオンボード](#local-script-for-macos)することをお勧めします。 [Intuneで macOS デバイスの登録を設定](/mem/intune/enrollment/macos-enroll)できますが、ローカル スクリプトは、MacOS デバイスを Defender for Business にオンボードするための最も簡単な方法です。 
+
+macOS デバイスをオンボードするには、次のいずれかのオプションを選択します。
+
+- [macOS 用のローカル スクリプト](#local-script-for-macos) (*推奨*)
+- [macOS のエンドポイント マネージャー](#endpoint-manager-for-macos)
+
+### <a name="local-script-for-macos"></a>macOS 用のローカル スクリプト
+
+macOS デバイスでローカル スクリプトを実行すると、Azure Active Directoryを使用して信頼が作成され (その信頼がまだ存在しない場合)、デバイスがMicrosoft エンドポイント マネージャーに登録され (まだ登録されていない場合)、デバイスが Defender for Business にオンボードされます。 ローカル スクリプト メソッドは、現在エンドポイント マネージャー (またはMicrosoft Intune) がない場合でも機能します。 この方法を使用して、一度に最大 10 台のデバイスをオンボードすることをお勧めします。
+
+1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動し、サインインします。
+
+2. ナビゲーション ウィンドウで **[設定** > **Endpoints**] を選択し、[**デバイス管理**] で [**オンボード**] を選択します。
+
+3. **macOS** を選択し、[**展開方法]** セクションで [**ローカル スクリプト**] を選択します。 
+
+4. [ **オンボード パッケージのダウンロード**] を選択し、リムーバブル ドライブに保存します。 [ **インストール パッケージのダウンロード**] も選択し、リムーバブル デバイスに保存します。
+
+5. macOS デバイスで、インストール パッケージ `wdav.pkg` をローカル ディレクトリに保存します。
+
+6. オンボード パッケージを、インストール パッケージ `WindowsDefenderATPOnboardingPackage.zip` に使用したのと同じディレクトリに保存します。
+
+7. Finder を使用して保存したファイルに `wdav.pkg` 移動し、開きます。
+
+8. [ **続行]** を選択し、ライセンス条項に同意し、入力を求められたらパスワードを入力します。
+
+9. Microsoft のドライバーのインストールを許可するように求めるメッセージが表示されます ("システム拡張機能がブロックされました" または "インストールは保留中"、またはその両方です)。 ドライバーのインストールを許可する必要があります。 インストールを許可するには、[**セキュリティ環境設定を開く]** または [**Open System PreferencesSecurity** >  **& Privacy**] を選択し、[**許可**] を選択します。
+
+10. Bash で次の Python コマンドを使用して、オンボード パッケージを実行します。 `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
+
+11. デバイスがIntuneに登録されたら、デバイス グループに追加できます。 [Microsoft Defender for Businessのデバイス グループの詳細について説明](mdb-create-edit-device-groups.md)します。
+
+### <a name="endpoint-manager-for-macos"></a>macOS のエンドポイント マネージャー
+
+サブスクリプションに[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)が含まれている場合は、Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) で macOS デバイスをオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてエンドポイント マネージャーがあります。 エンドポイント マネージャーには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune)機能と[モバイル デバイス管理機能が含まれます](/mem/intune/fundamentals/what-is-device-management)。 
+
+Intuneにデバイスを登録するには、いくつかの方法があります。 次のいずれかの方法から始めることをお勧めします。
+
+- [会社所有の macOS デバイスのオプションを選択する](#options-for-company-owned-macos-devices)
+- [ユーザーに自分の macOS デバイスをIntuneに登録するように依頼する](#ask-users-to-enroll-their-own-macos-devices-in-intune)
+
+#### <a name="options-for-company-owned-macos-devices"></a>会社所有の macOS デバイスのオプション
+
+次の表のいずれかのオプションを選択して、会社が管理する macOS デバイスをIntuneに登録します。
+
+| オプション  | 説明  |
+|---------|---------|
+| Apple 自動デバイス登録 |  この方法を使用して、Apple Business Manager または Apple School Manager を通じて購入したデバイスでの登録エクスペリエンスを自動化します。 自動デバイス登録では、登録プロファイルが OTA で登録されるため、デバイスに物理的にアクセスする必要はありません。 <br/><br/>[「Apple Business Manager または Apple School Manager で macOS デバイスを自動的に登録](/mem/intune/enrollment/device-enrollment-program-enroll-macos)する」を参照してください。 |
+| デバイス登録マネージャー (DEM)  |  大規模なデプロイや、組織内に登録のセットアップに役立つ複数のユーザーがいる場合は、この方法を使用します。 デバイス登録マネージャー (DEM) アカウントを使用して、1 つの Azure Active Directory アカウントで最大 1,000 台のデバイスを登録できます。 このメソッドは、ポータル サイトまたは Microsoft Intune を使用してデバイスを登録します。 自動デバイス登録を使用してデバイスを登録するには、DEM アカウントを使用できません。<br/><br/> デバイス[登録マネージャー アカウントを使用してデバイスをIntuneに登録する](/mem/intune/enrollment/device-enrollment-manager-enroll)方法に関する説明を参照してください。  |
+| 直接登録  | 直接登録では、ユーザー アフィニティのないデバイスが登録されるため、この方法は、1 人のユーザーに関連付けられていないデバイスに最適です。 このメソッドでは、登録する Mac に物理的にアクセスする必要があります。 <br/><br/>[macOS デバイスに直接登録を使用する方法に関する](/mem/intune/enrollment/device-enrollment-direct-enroll-macos)説明を参照してください。      |
+
+#### <a name="ask-users-to-enroll-their-own-macos-devices-in-intune"></a>ユーザーに自分の macOS デバイスをIntuneに登録するように依頼する
+
+ビジネスでユーザーに自分のデバイスをIntuneに登録させる場合は、次の手順に従うようにユーザーに依頼します。
+
+1. ポータル サイト Web サイト ([https://portal.manage.microsoft.com/](https://portal.manage.microsoft.com/)) に移動し、サインインします。
+
+2. ポータル サイト Web サイトの指示に従ってデバイスを追加します。
+
+3. ポータル サイト アプリをインストール[https://aka.ms/EnrollMyMac](https://aka.ms/EnrollMyMac)し、アプリの指示に従います。
+
+### <a name="confirm-that-a-macos-device-is-onboarded"></a>macOS デバイスがオンボードされていることを確認する
+
+1. デバイスが会社に関連付けられていることを確認するには、Bash で次の Python コマンドを使用します `mdatp health --field org_id`。
+
+2. macOS 10.15 (Catalina) 以降を使用している場合は、Defender for Business にデバイスを保護するための同意を付与します。 **System PreferencesSecurity** >  **&** **PrivacyPrivacyFull** >  >  **Disk Access に移動** します。 ロック アイコンを選択して変更を加え (ダイアログ ボックスの下部)、**Microsoft Defender for Business** (表示されている場合は **Defender for Endpoint**) を選択します。
+
+3. デバイスがオンボードされていることを確認するには、Bash で次のコマンドを使用します。 `mdatp health --field real_time_protection_enabled`
+
+4. デバイスがIntuneに登録されたら、デバイス グループに追加できます。 [Microsoft Defender for Businessのデバイス グループの詳細について説明](mdb-create-edit-device-groups.md)します。
+
+## <a name="view-a-list-of-onboarded-devices"></a>オンボードされたデバイスの一覧を表示する
+
+Defender for Business にオンボードされているデバイスの一覧を表示するには、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、ナビゲーション ウィンドウの [**エンドポイント**] で [**デバイス インベントリ**] を選択します。
+
+## <a name="next-steps"></a>次の手順
+
+- オンボードする他のデバイスがある場合は、デバイス ([Windows クライアント、Windows サーバー、macOS、モバイル デバイス](#what-to-do)) のオペレーティング システムに対応するタブを選択し、そのタブのガイダンスに従います。
+- デバイスのオンボードが完了したら、「[手順 5: Microsoft Defender for Businessでセキュリティ設定とポリシーを構成する」に](mdb-configure-security-settings.md)進みます。
+- [Microsoft Defender for Businessを使用した概要を](mdb-get-started.md)参照してください。
+
+## <a name="mobile-devices"></a>[**モバイル デバイス**](#tab/mobiles)
+
+## <a name="mobile-devices"></a>モバイル デバイス
+
+Android や iOS/iPadOS デバイスなどのモバイル デバイスをオンボードするには、Microsoft Intuneが必要です。 [Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてエンドポイント マネージャーがあります。 エンドポイント マネージャーには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune)機能と[モバイル デバイス管理機能が含まれます](/mem/intune/fundamentals/what-is-device-management)。 
+
+これらのデバイスをIntuneに登録する方法については、次のリソースを参照してください。
+
+- [Android デバイスを登録する](/mem/intune/enrollment/android-enroll)
+- [iOS または iPadOS デバイスを登録する](/mem/intune/enrollment/ios-enroll)
+
+デバイスがIntuneに登録されたら、デバイス グループに追加できます。 [Microsoft Defender for Businessのデバイス グループの詳細について説明](mdb-create-edit-device-groups.md)します。
+
+## <a name="next-steps"></a>次の手順
+
+- オンボードする他のデバイスがある場合は、デバイス ([Windows クライアント、Windows サーバー、macOS、モバイル デバイス](#what-to-do)) のオペレーティング システムに対応するタブを選択し、そのタブのガイダンスに従います。
+- デバイスのオンボードが完了したら、「[手順 5: Microsoft Defender for Businessでセキュリティ設定とポリシーを構成する」に](mdb-configure-security-settings.md)進みます。
+- [Microsoft Defender for Businessを使用した概要を](mdb-get-started.md)参照してください。

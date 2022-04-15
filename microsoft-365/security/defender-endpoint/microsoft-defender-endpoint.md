@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4308c203093d2170cc1a6316db824ee9935363f
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 3a67d73475301096df8be691f2c5e0dc6db23db8
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806230"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862194"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -77,9 +77,12 @@ EndPoint 向け Defender は、Windows 10 と Microsoft の堅牢なクラウド
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0]
 
 > [!TIP]
->
 > - EndPoint 向け Microsoft Defender の最新機能の詳細については、「[EndPoint 向け Microsoft Defender の新機能](whats-new-in-microsoft-defender-endpoint.md)」を参照してください。
 > - 最近の MITRE 評価において、Microsoft Defender for Endpoint の業界をリードする分析力と検出能力が示されました。詳しくは、「[MITRE ATT&CK ベース評価の分析](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)」を参照してください。
+
+
+>[!IMPORTANT]
+>Windows 以外のプラットフォームの機能は、Windows の機能とは異なる場合があります。 Windows 以外のプラットフォームで使用できる機能の詳細については、[「Microsoft Defender for Endpoint for non-Windows platforms 」](/security/defender-endpoint/non-windows)を参照してください。
 
 <a name="tvm"></a>
 

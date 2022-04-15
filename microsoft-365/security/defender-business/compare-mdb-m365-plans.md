@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/08/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: cf4c209fa274c106c56da59fce78c97ec39839f1
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b1dbe79aadea39bfc737ae9f5457715b669cc79b
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783801"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861820"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Microsoft Defender for BusinessをMicrosoft 365 Business Premiumと比較する
 
@@ -37,7 +37,7 @@ Microsoft Defender for Businessは、スタンドアロン オファリングと
 
 >
 > **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Businessに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
 
 **この記事を使用して、次の操作を行います**。
@@ -77,27 +77,35 @@ Defender for Business は、Defender for Endpoint のエンタープライズ �
 
 |機能/機能|[Defender for Business](mdb-overview.md)<br/>(スタンドアロン、現在プレビュー段階)|[Defender for Endpoint プラン 1](../defender-endpoint/defender-endpoint-plan-1.md)|[Defender for Endpoint プラン 2](../defender-endpoint/microsoft-defender-endpoint.md)|
 |---|---|---|---|
-|[一元管理](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup>|はい|はい|はい|
-|[クライアント構成の簡略化](mdb-simplified-configuration.md)|はい|不要|不要|
-|[脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|はい|不要|はい|
+|[集中管理](../defender-endpoint/manage-atp-post-migration.md) |はい <sup>[[1](#fn1)]</sup>|はい|はい|
+|[クライアント構成の簡略化](mdb-simplified-configuration.md)|はい|いいえ|いいえ|
+|[脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|はい|いいえ|はい|
 |[攻撃面の縮小機能](../defender-endpoint/overview-attack-surface-reduction.md)|はい|はい|はい|
 |[次世代の保護](../defender-endpoint/next-generation-protection.md)|はい|はい|はい|
-|[エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md)|はい <sup>[[2](#fn2)]</sup>|不要|はい|
-|[自動調査および対応](../defender-endpoint/automated-investigations.md)|はい <sup>[[2](#fn2)]</sup>|不要|はい|
-|[脅威の捜索](../defender-endpoint/advanced-hunting-overview.md) と 6 か月間のデータ保持 <sup>[[3](#fn3)]</sup>|不要|不要|はい|
-|[脅威分析](../defender-endpoint/threat-analytics.md)|はい <sup>[[2](#fn2)]</sup>|不要|はい|
-|[クロスプラットフォームサポート](../defender-endpoint/minimum-requirements.md) <br/>(Windows、macOS、iOS、Android OS)|はい <sup>[[4](#fn4)]</sup>|はい|はい|
-|[Microsoft 脅威エキスパート](../defender-endpoint/microsoft-threat-experts.md)|不要|不要|はい|
+|[エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md)|はい <sup>[[2](#fn2)]</sup>|いいえ|はい|
+|[自動調査および対応](../defender-endpoint/automated-investigations.md)|はい <sup>[[3](#fn3)]</sup>|いいえ|はい|
+|[脅威の捜索](../defender-endpoint/advanced-hunting-overview.md) と 6 か月間のデータ保持 |いいえ <sup>[[4](#fn4)]</sup>|いいえ|はい|
+|[脅威分析](../defender-endpoint/threat-analytics.md)|はい <sup>[[5](#fn5)]</sup>|いいえ|はい|
+|[クロスプラットフォームサポート](../defender-endpoint/minimum-requirements.md) <br/>(Windows、macOS、iOS、Android OS)|はい <sup>[[6](#fn6)]</sup>|はい|はい|
+|[Microsoft 脅威エキスパート](../defender-endpoint/microsoft-threat-experts.md)|いいえ|いいえ|はい|
 |パートナー API|はい|はい|はい|
-|[Microsoft 365 Lighthouse統合](../../lighthouse/m365-lighthouse-overview.md) <br/>(顧客テナント間のセキュリティ インシデントを表示する場合)|はい|不要|不要|
+|[Microsoft 365 Lighthouse統合](../../lighthouse/m365-lighthouse-overview.md) <br/>(顧客テナント間のセキュリティ インシデントを表示する場合)|はい|いいえ|いいえ|
 
-(<a id="fn1">1</a>) Microsoft 365 Defender ポータル () またはMicrosoft エンドポイント マネージャー ([https://security.microsoft.com](https://security.microsoft.com)) などの別のツールを使用して、デバイスを[https://endpoint.microsoft.com](https://endpoint.microsoft.com)オンボードおよび管理します。
+(<a id="fn1">1</a>) Microsoft 365 Defender ポータル () または Microsoft エンドポイント マネージャー ([https://security.microsoft.com](https://security.microsoft.com)[https://endpoint.microsoft.com](https://endpoint.microsoft.com)) でデバイスをオンボードおよび管理します。
 
-(<a id="fn2">2</a>) これらの機能は、中小企業向けに最適化されています。
+(<a id="fn2">2</a>) Defender for Business のエンドポイント検出と応答 (EDR) 機能には、動作ベースの検出と次の 4 種類の手動応答アクションが含まれます。 
+- ウイルス対策スキャンの実行
+- デバイスの分離
+- ファイルを停止して検疫する
+- ファイルをブロックまたは許可するインジケーターを追加する
 
-(<a id="fn3">3</a>) Defender for Business にはタイムライン タブがありません。
+(<a id="fn3">3</a>) Defender for Business では、テナント全体の自動調査と応答が既定で有効になります。 自動調査と対応を無効にすると、リアルタイムの保護に影響します。 [高度な機能の設定を確認するを](mdb-configure-security-settings.md#review-settings-for-advanced-features)参照してください。  
 
-(<a id="fn4">4</a>) プレビュー プログラム中は、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) でWindowsクライアント デバイスがサポートされます。
+(<a id="fn4">4</a>) Defender for Business にはタイムライン ビューがありません。
+
+(<a id="fn5">5</a>) Defender for Business では、脅威分析は中小企業向けに最適化されています。
+
+(<a id="fn6">6</a>) プレビュー プログラム中は、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) でWindowsクライアント デバイスのオンボードがサポートされます。 ローカル スクリプト メソッドを使用できます。 [「Microsoft Defender for Businessにデバイスをオンボードする」を](mdb-onboard-devices.md)参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

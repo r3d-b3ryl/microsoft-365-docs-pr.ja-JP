@@ -1,13 +1,13 @@
 ---
-title: Microsoft Defender for Business でのインシデントの表示と管理
-description: アラートの管理、脅威&デバイスの管理、修復アクションの確認を行う方法について説明します。
+title: Microsoft Defender for Businessでのインシデントの表示と管理
+description: アラートの管理、脅威への対応、デバイスの管理、修復アクションの確認&表示する方法について説明します
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,66 +17,60 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: a814aa4ad002672fa3451ef1bcc524d9b03d4eb5
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: ec1d85b72cfbe17e182d3aed573476e4fadfdef6
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63527072"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861446"
 ---
-# <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Microsoft Defender for Business でのインシデントの表示と管理
+# <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでのインシデントの表示と管理
 
-> [!IMPORTANT]
-> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。[](../../business-premium/index.md) スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
-> 
-> この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
+> [!NOTE]
+> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
-脅威が検出され、アラートがトリガーされると、インシデントが作成されます。 会社のセキュリティ チームは、ポータルでインシデントを表示およびMicrosoft 365 Defenderできます。
+脅威が検出され、アラートがトリガーされると、インシデントが作成されます。 会社のセキュリティ チームは、Microsoft 365 Defender ポータルでインシデントを表示および管理できます。
 
-**この記事には、次の内容が含まれます**。
+**この記事には次のものが含まれます**。
 
 - [インシデントとアラートを監視する方法](#monitor-your-incidents--alerts)
-
 - [アラートの重大度](#alert-severity)
-
 - [次の手順](#next-steps)
 
 >
 > **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
 
-## <a name="monitor-your-incidents--alerts"></a>インシデントとアラート&監視する
+## <a name="monitor-your-incidents--alerts"></a>アラート&インシデントを監視する
 
-1. ポータル (Microsoft 365 Defender) で [https://security.microsoft.com](https://security.microsoft.com)、ナビゲーション ウィンドウで [インシデント] **を選択します**。 作成されたインシデントは、ページに一覧表示されます。
+1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) のナビゲーション ウィンドウで、[**インシデント**] を選択します。 作成されたすべてのインシデントがページに表示されます。
 
-   :::image type="content" source="../../media/defender-business/mdb-incidents-list.png" alt-text="インシデント リストのスクリーンショット":::
+   :::image type="content" source="../../media/defender-business/mdb-incidents-list.png" alt-text="インシデントの一覧のスクリーンショット":::
 
-2. アラートを選択して、そのフライアウト ウィンドウを開き、アラートの詳細を確認できます。 
+2. アラートを選択してポップアップ ウィンドウを開き、アラートの詳細を確認できます。 
 
-   :::image type="content" source="../../media/defender-business/mdb-incident-flyout.png" alt-text="フライアウトが開いていると選択されたインシデントのスクリーンショット":::
+   :::image type="content" source="../../media/defender-business/mdb-incident-flyout.png" alt-text="ポップアップを開いた状態で選択されたインシデントのスクリーンショット":::
 
-3. フライアウト ウィンドウでは、アラート タイトルを表示したり、影響を受けたアセット (エンドポイントやユーザー アカウントなど) の一覧を表示したり、利用可能なアクションを実行したり、リンクを使用して詳細情報を表示したり、選択したアラートの詳細ページを開くなどの操作を行うことができます。 
+3. ポップアップ ウィンドウには、アラート のタイトルを表示したり、影響を受けた資産の一覧 (エンドポイントやユーザー アカウントなど) を表示したり、使用可能なアクションを実行したり、リンクを使用して詳細情報を表示したり、選択したアラートの詳細ページを開いたりすることもできます。 
 
 > [!TIP]
-> Microsoft Defender for Business は、推奨されるアクションを提供することで、検出された脅威に対処するために設計されています。 アラートを表示するときに、実行する推奨されるアクションを探します。 また、脅威の重大度だけでなく、会社のリスクレベルにも基づいて決定されるアラートの重大度に注意してください。 
+> Microsoft Defender for Businessは、推奨されるアクションを提供することで、検出された脅威に対処できるように設計されています。 アラートを表示するときは、推奨されるアクションを探します。 また、アラートの重大度もメモします。これは、脅威の重大度だけでなく、会社に対するリスクのレベルにも基づいて決定されます。 
 
 ## <a name="alert-severity"></a>アラートの重大度
 
-検出Microsoft Defender ウイルス対策 (マルウェア) の絶対重大度と、個々のエンドポイントに潜在的なリスク (感染した場合) に基づいてアラートの重大度を割り当てる場合。
-Microsoft Defender for Business は、検出された動作の重大度、実際のリスクをエンドポイント (デバイス) に割り当て、さらに重要なことに、企業に潜在的なリスクを割り当てします。 次の表に、いくつかの例を示します。 <br/><br/>
+検出された脅威 (マルウェア) の絶対重大度と個々のエンドポイント (感染した場合) に潜在的なリスクに基づいてアラートの重大度を割り当てるMicrosoft Defender ウイルス対策。
+Microsoft Defender for Businessは、検出された動作の重大度、エンドポイント (デバイス) への実際のリスク、さらに重要なのは、潜在的なリスクに基づいて、アラートの重大度を会社に割り当てます。 次の表に、いくつかの例を示します。
 
 | シナリオ | アラートの重大度 | 理由 |
 |:---|:---|:---|
-| Microsoft Defender ウイルス対策脅威を検出して停止してから、損害を与える可能性があります。 | 情報 | 脅威は、損害が発生する前に停止されました。 |
-| Microsoft Defender ウイルス対策、会社内で実行していたマルウェアを検出します。 マルウェアが停止して修復されます。 | 低 | 個々のエンドポイントに対して一部の損害が発生した可能性があるが、マルウェアが企業に脅威を与える可能性はありません。 |
-| 実行中のマルウェアは、Microsoft Defender for Business によって検出されます。 マルウェアはほぼ即座にブロックされます。 | 中または高 | マルウェアは、個々のエンドポイントと企業に脅威を与える。 |
-| 疑わしい動作は検出されますが、修復アクションはまだ実行されません。 | 低、中、高 | 重大度は、動作が企業に脅威を与える度合いによって異なります。 |
+| Microsoft Defender ウイルス対策は、脅威が何らかの損害を与える前に、脅威を検出して停止します。 | 情報 | 脅威は、被害が発生する前に停止されました。 |
+| Microsoft Defender ウイルス対策社内で実行されていたマルウェアを検出します。 マルウェアが停止され、修復されます。 | 低 | 個々のエンドポイントに対して一部の被害が発生した可能性がありますが、マルウェアは会社に脅威を与える必要はありません。 |
+| 実行中のマルウェアは、Microsoft Defender for Businessによって検出されます。 マルウェアはほぼ即座にブロックされます。 | 中または高 | マルウェアは、個々のエンドポイントと会社に脅威を与えています。 |
+| 疑わしい動作は検出されますが、修復アクションはまだ実行されません。 | 低、中、または高 | 重大度は、その動作が会社に脅威を与える度合いによって異なります。 |
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Business での脅威への対応と軽減](mdb-respond-mitigate-threats.md)
-
+- [Microsoft Defender for Businessの脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)
-
-- [Microsoft Defender for Business でデバイス ポリシーを表示または編集する](mdb-view-edit-policies.md)
+- [Microsoft Defender for Businessでデバイス ポリシーを表示または編集する](mdb-view-edit-policies.md)

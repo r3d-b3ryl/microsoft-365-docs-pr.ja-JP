@@ -14,16 +14,16 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 03/16/2022
+ms.date: 04/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d7e2acf9c0935dcabcace974db009f3c13c6e2ed
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 4f579d3d22b553b764149c8b13538ceae1da44d8
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789362"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862898"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -149,22 +149,31 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 > [!IMPORTANT]
 > 表は情報提供だけを目的としています。 パッシブ モードでMicrosoft Defender ウイルス対策を使用している場合、または [ブロック モードで EDR](edr-in-block-mode.md) を使用している場合は、リアルタイム保護、クラウドによる保護、制限付き定期的なスキャンなどの **機能をオフにしないでください**。これは、侵害後に検出された悪意のある成果物を検出して修復するためにバックグラウンドで動作します。
 
- | 保護 | Microsoft Defender ウイルス対策 <br/>(*アクティブ モード*) | Microsoft Defender ウイルス対策 <br/>(*パッシブ モード*) | Microsoft Defender ウイルス対策 <br/>(*無効またはアンインストール済み*) | [ブロック モードの EDR](edr-in-block-mode.md) | 
- |:---|:---|:---|:---|:---| 
- | [リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md): | はい | メモ <sup>[[4](#fn4)]</sup> を参照してください | いいえ | 不要 | 
- | [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) | はい | 不要  | 不要 | 不要 | 
- | [ネットワーク保護](network-protection.md)  | はい | 不要 | 不要 | 不要 | 
- | [攻撃面の減少ルール](attack-surface-reduction.md)  | はい | 不要 | 不要  | いいえ | 
- | [限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | いいえ | 不要 | はい | 不要 | 
- | [スキャン中ファイルと検出情報](review-scan-results-microsoft-defender-antivirus.md) | はい | はい<sup>[[5](#fn5)]</sup> | 不要 | はい | 
- | [脅威の修復](configure-remediation-microsoft-defender-antivirus.md) | はい | メモ <sup>[[6](#fn6)]</sup>を参照してください | 不要 | はい | 
- | [セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md) | はい | はい | 不要 | はい | 
+| 保護 | Microsoft Defender ウイルス対策 <br/>(*アクティブ モード*) | Microsoft Defender ウイルス対策 <br/>(*パッシブ モード*) | Microsoft Defender ウイルス対策 <br/>(*無効またはアンインストール済み*) | [ブロック モードの EDR](edr-in-block-mode.md) | 
+|:---|:---|:---|:---|:---| 
+| [リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md): | はい | メモ <sup>[[4](#fn4)]</sup> を参照してください | いいえ | 不要 | 
+| [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) | はい | いいえ  | いいえ | 不要 | 
+| [ネットワーク保護](network-protection.md)  | はい | いいえ | いいえ | 不要 | 
+| [攻撃面の減少ルール](attack-surface-reduction.md)  | はい | いいえ | いいえ  | いいえ | 
+| [限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | いいえ | いいえ | はい | 不要 | 
+| [スキャン中ファイルと検出情報](review-scan-results-microsoft-defender-antivirus.md) | はい | はい<sup>[[5](#fn5)]</sup> | 不要 | はい | 
+| [脅威の修復](configure-remediation-microsoft-defender-antivirus.md) | はい | メモ <sup>[[6](#fn6)]</sup>を参照してください | 不要 | はい | 
+| [セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md) | はい | はい <sup>[[7](#fn7)]</sup> | いいえ | はい <sup>[[7](#fn7)]</sup> | 
+| [データ損失防止](../../compliance/endpoint-dlp-learn-about.md) | はい | はい | いいえ | いいえ |
+| [制御されたフォルダー アクセス](controlled-folders.md) | はい |いいえ | いいえ | いいえ |
+| [Web コンテンツ フィルタリング](web-content-filtering.md) | はい | <sup>メモ [[8](#fn8)]</sup> を参照してください | いいえ | いいえ |
+| [デバイス コントロール](device-control-report.md) | はい | はい | いいえ | いいえ |
+| [PUA 保護](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | はい | いいえ | いいえ | いいえ |
 
 (<a id="fn4">4</a>) 一般に、Microsoft Defender ウイルス対策がパッシブ モードの場合、リアルタイム保護では、有効でパッシブ モードであっても、ブロックや強制は提供されません。
 
 (<a id="fn5">5</a>) Microsoft Defender ウイルス対策モードの場合、スキャンはスケジュールされません。
 
 (<a id="fn6">6</a>) Microsoft Defender ウイルス対策モードの場合、脅威を修復しません。 ただし、[ブロック モードでエンドポイントの検出と応答 (EDR)](edr-in-block-mode.md) によって脅威を修復できます。 この場合、Microsoft Defender ウイルス対策がパッシブ モードの場合でも、ソースとして Microsoft Defender ウイルス対策を示すアラートが表示される場合があります。
+
+(<a id="fn7">7</a>) セキュリティ インテリジェンス更新プログラムの周期は、Windows Update設定によってのみ制御されます。 Defender 固有の更新スケジューラ (特定の時刻に毎日/毎週、間隔ベース) の設定は、Microsoft Defender ウイルス対策がアクティブ モードの場合にのみ機能します。 パッシブ モードでは無視されます。
+
+(<a id="fn8">8</a>) Microsoft Defender ウイルス対策がパッシブ モードの場合、Web コンテンツ フィルターはMicrosoft Edge ブラウザーでのみ機能します。 
 
 > [!NOTE]
 > [Microsoft 365 Endpoint データ損失防止](/microsoft-365/compliance/endpoint-dlp-learn-about) 保護は、Microsoft Defender ウイルス対策がアクティブ モードであってもパッシブ モードであっても、正常に動作し続けます。
@@ -199,13 +208,13 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 

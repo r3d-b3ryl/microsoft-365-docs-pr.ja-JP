@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,35 +17,30 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6f8ad1bd1f77bd3e53a1686674984155a7dc8525
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ba7f6846809009b8bb9df258b8ac18536a910b6d
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665098"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862128"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでポリシーを表示または編集する
 
-> [!IMPORTANT]
-> Microsoft Defender for Businessは、2022 年 3 月 1 日以降、[Microsoft 365 Business Premium](../../business-premium/index.md)のお客様に展開されます。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー段階にあり、 [ここにサインアップ](https://aka.ms/mdb-preview) して要求する顧客と IT パートナーに段階的にロールアウトされます。 プレビューには [シナリオの初期セット](mdb-tutorials.md#try-these-preview-scenarios)が含まれており、定期的に機能を追加します。
-> 
-> この記事の一部の情報は、市販される前に大幅に変更される可能性があるプレリリースされた製品/サービスに関連しています。 Microsoft は、ここに記載されている情報に対して、明示的または黙示的な保証を行いません。 
+> [!NOTE]
+> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Microsoft Defender for Businessでは、デバイスに適用されるポリシーを使用してセキュリティ設定が構成されます。 Defender for Business には、セットアップと構成のエクスペリエンスを簡素化するために、会社のデバイスがオンボードされるとすぐに保護できるように、事前に構成されたポリシーが含まれています。 既定のポリシーを使用したり、ポリシーを編集したり、独自のポリシーを作成したりできます。
 
 **この記事では、次の方法について説明します**。
 
 - [既定のポリシーの概要を確認する](#default-policies-in-defender-for-business)
-
 - [既存のポリシーを表示する](#view-your-existing-policies)
-
 - [既存のポリシーを編集する](#edit-an-existing-policy)
-
 - [新しいポリシーの作成](#create-a-new-policy)
 
 >
 > **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Businessに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
 
 ## <a name="default-policies-in-defender-for-business"></a>Defender for Business の既定のポリシー
@@ -53,7 +48,6 @@ Microsoft Defender for Businessでは、デバイスに適用されるポリシ�
 Defender for Business には、会社のデバイスを保護するためのポリシーの主な種類が 2 つあります。
 
 - **Microsoft Defender ウイルス対策** やその他の脅威保護機能の構成方法を決定する次世代の保護ポリシー
-
 - **ファイアウォール ポリシー**。会社のデバイスとの間のフローが許可されているネットワーク トラフィックを決定する
 
 
@@ -138,11 +132,7 @@ Defender for Business には、会社のデバイスを保護するためのポ�
 次のタスクのうち 1 つ以上を選択します。
 
 - [デバイスの管理](mdb-manage-devices.md)
-
 - [Microsoft Defender for Businessで新しいポリシーを作成する](mdb-create-new-policy.md)
-
 - [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)
-
 - [Microsoft Defender for Businessの脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
-
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)

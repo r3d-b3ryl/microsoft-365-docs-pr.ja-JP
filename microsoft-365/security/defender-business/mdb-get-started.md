@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender ポータルを使用した概要
+title: Microsoft 365 Defender ポータルにアクセスする
 description: Microsoft 365 Defender ポータルの使用を開始する方法について説明します。 ポータルを移動し、現在のセキュリティ状態と推奨事項を表示する方法について説明します
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,42 +18,29 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: c5a940676eab6ae3a07c526ecb1bd910ed8751fe
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 4af2986a3c1c726e9bf963752d53fe6ef098c19e
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667144"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861468"
 ---
-# <a name="get-started-using-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用した概要
+# <a name="visit-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルにアクセスする
 
-> [!IMPORTANT]
-> Microsoft Defender for Businessは、2022 年 3 月 1 日以降、[Microsoft 365 Business Premium](../../business-premium/index.md)のお客様に展開されます。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー段階にあり、 [ここにサインアップ](https://aka.ms/mdb-preview) して要求する顧客と IT パートナーに段階的にロールアウトされます。 プレビューには [シナリオの初期セット](mdb-tutorials.md#try-these-preview-scenarios)が含まれており、定期的に機能を追加します。
-> 
-> この記事の一部の情報は、市販される前に大幅に変更される可能性があるプレリリースされた製品/サービスに関連しています。 Microsoft は、ここに記載されている情報に対して、明示的または黙示的な保証を行いません。 
+> [!NOTE]
+> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
-Microsoft Defender for Businessにサインアップしたら、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) について知りたいと思います。 この記事に含まれるセクションは次のとおりです。
-
-- [Microsoft 365 Defender ポータルを移動する方法](#navigate-the-microsoft-365-defender-portal)
-
-- [インシデントと対応アクションに関するラーニング モジュール](#complete-a-learning-module-about-incidents-and-response-actions) 
-
-- [次の手順](#next-steps)
-
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Businessに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
-
-## <a name="navigate-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを移動する
-
-Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) は、Microsoft Defender for Businessを使用および管理するためのワンストップ ショップです。 開始に役立つウェルカム バナーと吹き出し、関連情報を表示するカード、さまざまな機能に簡単にアクセスできるナビゲーション バーが含まれています。
- 
-Microsoft 365 Defender ポータルについて少しお知りください。
+Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) は、Microsoft Defender for Businessを使用および管理するためのワンストップ ショップです。 開始に役立つウェルカム バナーと吹き出し、関連情報を表示するカード、さまざまな機能に簡単にアクセスできるナビゲーション バーが含まれています。 
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender ポータル":::
 
-### <a name="use-the-navigation-bar"></a>ナビゲーション バーを使用する
+ 
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
+>
+
+## <a name="the-navigation-bar"></a>ナビゲーション バー
 
 画面の左側にあるナビゲーション バーを使用して、インシデントにアクセスし、レポートを表示し、セキュリティ ポリシーを管理します。 次の表では、ナビゲーション バーに表示される項目について説明します。
 
@@ -76,25 +63,7 @@ Microsoft 365 Defender ポータルについて少しお知りください。
 | **設定** | Microsoft 365 Defender ポータルとMicrosoft Defender for Businessの設定を編集できます。 たとえば、オンボード (またはオフボード) と会社のデバイス (エンドポイントとも呼ばれます) を使用できます。 アラート抑制ルールなどのルールを定義し、特定のファイルまたはプロセスをブロックまたは許可するインジケーターを設定することもできます。  |
 | **その他のリソース** | Azure Active Directoryなど、他のポータルに移動します。 Microsoft 365 Defender ポータルは、他のポータルに移動しなくてもニーズを満たす必要があることに注意してください。 |
 
-## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>インシデントと対応アクションに関する学習モジュールを完了する
-
-インシデントと対応アクションの概要については、ラーニング モジュール「 [セキュリティの問題を検出して対応](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)する」を参照してください。 実行できるインシデント キュー、アラート、および応答アクションについて説明します。 このコースは、Defender for Business でのインシデントの操作を開始するのに役立ちます。
-
-> [!NOTE]
-> ラーニング モジュール ([セキュリティの問題の検出と対応](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)) は実際にはMicrosoft Defender for Endpoint向けですが、基本的な概念と全体的なフローは、Defender for Business に表示される内容と似ています。
-
 ## <a name="next-steps"></a>次の手順
 
-Defender for Business の概要を確認できたので、次のタスクの 1 つ以上を試します。
-
-- [Microsoft Defender for Businessでチュートリアルとシミュレーションを試す](mdb-tutorials.md)
-
-- [Microsoft Defender for Businessでデバイスを管理する](mdb-manage-devices.md)
-
-- [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)
-
-- [Microsoft Defender for Businessの脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
-
-- [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)
-
-- [Microsoft Defender for Businessでポリシーを表示または編集する](mdb-view-edit-policies.md)
+- [Microsoft Defender for Businessでセットアップ ウィザードを使用する](mdb-use-wizard.md)
+- [セットアップと構成プロセスを確認する](mdb-setup-configuration.md)

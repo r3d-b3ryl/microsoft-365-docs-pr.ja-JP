@@ -1,13 +1,13 @@
 ---
-title: Microsoft Defender for Business で&脆弱性管理ダッシュボードを表示する
-description: 脅威に関する&脅威&の&管理ダッシュボードを使用して、対処する重要なアイテムを確認します。
+title: Microsoft Defender for Businessで脅威&脆弱性管理ダッシュボードを表示する
+description: 脅威&脅威&脅威&脆弱性管理ダッシュボードを使用して、対処すべき重要な項目を確認します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,43 +17,37 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 1ffd1378a3b2117cddabfcaf5dd43d2372818f0c
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 430815f57a409ba00447c052643af7960d8a9d27
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526250"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862524"
 ---
-# <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Microsoft Defender for Business で&の脆弱性管理ダッシュボードを使用する
+# <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessで脅威&脆弱性管理ダッシュボードを使用する
 
-> [!IMPORTANT]
-> Microsoft Defender for Business は、2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。[](../../business-premium/index.md) スタンドアロン サブスクリプションとしての Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐 [々にロールアウト](https://aka.ms/mdb-preview) されます。 プレビューには最初 [の一連のシナリオが含まれています](mdb-tutorials.md#try-these-preview-scenarios)。定期的に機能を追加します。
-> 
-> この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 
+> [!NOTE]
+> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
-Microsoft Defender for Business には、セキュリティ チーム&時間と労力を節約するように設計された脅威の脆弱性管理ダッシュボードが含まれています。 露出スコアの提供に加えて、公開されたデバイスとセキュリティに関する推奨事項に関する情報も表示できます。 [脅威の管理] ダッシュボード&使用して、次のコマンドを実行できます。
+Microsoft Defender for Businessには、セキュリティ チームの時間と労力を節約するために設計された脅威&脆弱性管理ダッシュボードが含まれています。 公開スコアを提供するだけでなく、公開されたデバイスとセキュリティに関する推奨事項に関する情報を表示することもできます。 脅威&脆弱性管理ダッシュボードを使用すると、次のことができます。
 
 - 会社のデバイスに関連付けられている露出スコアを表示する
+- デバイスとの通信の障害への対処、ファイアウォール保護のオン、Microsoft Defender ウイルス対策定義の更新など、セキュリティに関する推奨事項を確認する
+- 検疫に送信されたファイルや、デバイスで見つかった脆弱性など、修復アクティビティを表示する
 
-- デバイスとの通信障害への対処、ファイアウォール保護の有効化、定義の更新など、セキュリティに関するMicrosoft Defender ウイルス対策表示する
-
-- 検疫に送信されたファイルやデバイスで見つかった脆弱性など、修復アクティビティを表示する
-
-どのように動作するのかを確認したいですか? このビデオでは、Microsoft Defender for Endpoint の脅威&脆弱性管理 [について説明します](../defender-endpoint/microsoft-defender-endpoint.md)。
+動作を確認しますか? このビデオでは、[Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)の脅威&脆弱性管理について説明します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r1nv]
 
-脅威の脆弱性管理の詳細& Microsoft Defender for Endpoint の「Threat [and 脆弱性の管理」を参照してください](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)。
+脅威&脆弱性管理の詳細については、「Microsoft Defender for Endpoint[の脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)」を参照してください。
 
 >
 > **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Business のチュートリアルとシミュレーション](mdb-tutorials.md)
-
-- [Microsoft Defender for Business にデバイスをオンボードする](mdb-onboard-devices.md)
-
-- [Microsoft Defender for Business でポリシーを表示または編集する](mdb-view-edit-create-policies.md)
+- [Microsoft Defender for Businessのチュートリアルとシミュレーション](mdb-tutorials.md)
+- [デバイスをMicrosoft Defender for Businessにオンボードする](mdb-onboard-devices.md)
+- [Microsoft Defender for Businessでポリシーを表示または編集する](mdb-view-edit-create-policies.md)

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,19 +16,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: fb506a1d2cc28329f9d6ef9975a10b0661379bb9
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 77c2042ace89a133b9be8995ef817c1fe3766a07
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664614"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861404"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessのファイアウォール
 
-> [!IMPORTANT]
-> Microsoft Defender for Businessは、2022 年 3 月 1 日以降、[Microsoft 365 Business Premium](../../business-premium/index.md)のお客様に展開されます。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー段階にあり、 [ここにサインアップ](https://aka.ms/mdb-preview) して要求する顧客と IT パートナーに段階的にロールアウトされます。 プレビューには [シナリオの初期セット](mdb-tutorials.md#try-these-preview-scenarios)が含まれており、定期的に機能を追加します。
-> 
-> この記事の一部の情報は、市販される前に大幅に変更される可能性があるプレリリースされた製品/サービスに関連しています。 Microsoft は、ここに記載されている情報に対して、明示的または黙示的な保証を行いません。 
+> [!NOTE]
+> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Microsoft Defender for Businessには、[Windows Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)を使用したファイアウォール機能が含まれています。 ファイアウォール保護は、デバイスへの入り込みまたはデバイスからのフローが許可されているネットワーク トラフィックを決定するルールを使用してデバイスをセキュリティで保護するのに役立ちます。 
 
@@ -37,12 +35,11 @@ Microsoft Defender for Businessには、[Windows Defender ファイアウォー�
 **この記事では、次について説明します**。
 
 - [Defender for Business の既定のファイアウォール設定](#default-firewall-settings-in-defender-for-business)
-
 - [Defender for Business で構成できるファイアウォール設定](#firewall-settings-you-can-configure-in-defender-for-business)
 
 >
 > **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Businessに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
 
 ## <a name="default-firewall-settings-in-defender-for-business"></a>Defender for Business の既定のファイアウォール設定
@@ -57,7 +54,7 @@ Microsoft Defender for Businessでは、受信接続をブロックまたは許�
 
 ## <a name="firewall-settings-you-can-configure-in-defender-for-business"></a>Defender for Business で構成できるファイアウォール設定
 
-Microsoft Defender for Businessには、Windows Defender ファイアウォールによるファイアウォール保護が含まれます。 次の表に、Microsoft Defender for Businessのファイアウォール保護用に構成できる設定を示します。 <br/><br/>
+Microsoft Defender for Businessには、Windows Defender ファイアウォールによるファイアウォール保護が含まれます。 次の表に、Microsoft Defender for Businessのファイアウォール保護用に構成できる設定を示します。
 
 | 設定 | 説明 |
 |--|--|
@@ -69,11 +66,7 @@ Microsoft Defender for Businessには、Windows Defender ファイアウォー�
 ## <a name="next-steps"></a>次の手順
 
 - [Microsoft Defender for Businessでファイアウォール設定を管理する](mdb-custom-rules-firewall.md)
-
 - [ファイアウォールWindows Defender詳細を確認する](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
-
 - [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)
-
 - [Microsoft Defender for Businessの脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
-
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)
