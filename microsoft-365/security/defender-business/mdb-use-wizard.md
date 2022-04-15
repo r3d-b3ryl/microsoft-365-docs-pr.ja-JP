@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
+ms.date: 04/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 1f128a48e8ee2939b4bfcc270c110e0ec63d6ebe
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 697dfc567eb2719a6e81a7b57df321ba2af40911
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862590"
+ms.locfileid: "64882310"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでセットアップ ウィザードを使用する
 
@@ -36,6 +36,11 @@ Microsoft Defender for Businessは、中小企業の時間と労力を節約す�
 > **少し時間ありますか?**
 > <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
+
+> [!TIP]
+> セットアップ ウィザードの使用は省略可能です。 セットアップと構成プロセスを手動で実行することもできます。 詳細については、次を参照してください。
+> - [ウィザードを使用しない場合はどうなりますか?](#what-happens-if-i-dont-use-the-wizard)
+> - [Microsoft Defender for Businessを設定して構成する方法](mdb-setup-configuration.md)
 
 ## <a name="how-to-start-the-setup-wizard"></a>セットアップ ウィザードを開始する方法
 
@@ -64,7 +69,7 @@ Microsoft Defender for Businessは、中小企業の時間と労力を節約す�
 
    [ロールとアクセス許可の詳細については、こちらを参照してください](mdb-roles-permissions.md)。 
 
-2. **電子メール通知を設定します**。 この手順では、セキュリティ チームの電子メール通知を設定できます。 その後、アラートが生成されたとき、または新しい脆弱性が検出された場合、セキュリティ チームは、自分のデスクから離れている場合でも、そのアラートについて取り上げません。 [電子メール通知の詳細については、こちらを参照してください](mdb-email-notifications.md)。 
+2. **電子メール通知を設定します**。 この手順では、セキュリティ チームの電子メール通知を設定できます。 その後、アラートが生成されたとき、または新しい脆弱性が検出された場合、セキュリティ チームは、自分のデスクから離れている場合でも、その問題を把握しません。 [電子メール通知の詳細については、こちらを参照してください](mdb-email-notifications.md)。 
 
 3. **Windowsデバイスをオンボードして構成します**。 この手順では、会社のWindows デバイスを Defender for Business にすばやくオンボードできます。 デバイスをすぐにオンボードすると、初日からデバイスを保護できます。 
 

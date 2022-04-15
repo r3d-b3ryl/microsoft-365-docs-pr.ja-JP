@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams ユーザー アクティビティ レポートを取得し、組織内のTeams アクティビティに関する分析情報を取得する方法について説明します。
-ms.openlocfilehash: a5261261a1a1cb7b2039b646c3dbbd92c5f43688
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: cbd9bdb73dc69da5e36e0fb9c3ff2ff15b5269a4
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781657"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882266"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理センターの Microsoft 365 レポート - Microsoft Teams ユーザー アクティビティ
 
@@ -71,7 +71,7 @@ Microsoft 365 の [レポート] ダッシュボードには、組織内での�
 |会議に参加したスケジュールされた定期的な会議  <br/> |指定した期間中にユーザーが参加した定期的な会議の数。  <br/> |
 |ライセンスが付与されている  <br/> |ユーザーがTeamsを使用するライセンスを持つ場合に選択します。 <br/>|
 |その他のアクティビティ  <br/>|ユーザーはアクティブですが、レポートで提供される公開されたアクションの種類以外のアクティビティを実行しています (チャネル メッセージとチャット メッセージの送信または返信、1 対 1 の通話と会議のスケジュール設定または参加)。 アクションの例は、ユーザーがTeams状態またはTeams状態メッセージを変更したり、チャネル メッセージの投稿を開いたりしても応答しない場合です。  <br/>|
-|未分類の会議 <br/>|スケジュールまたは定期的またはアドホックとして分類できないもの。 これらは数値が短く、改ざんされたテレメトリ情報のためにほとんど識別できません。 |
+
 
 ## <a name="make-the-user-specific-data-anonymous"></a>ユーザー固有のデータを匿名にする
 

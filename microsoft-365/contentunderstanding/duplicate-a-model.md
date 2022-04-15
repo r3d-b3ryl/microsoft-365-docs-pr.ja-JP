@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex でドキュメント理解モデルを複製する方法とSharePoint Syntex。
-ms.openlocfilehash: 979d5b2cddfa7c565abade7ac66c06e3053bbe4d
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+description: Microsoft SharePoint Syntexでドキュメント理解モデルを複製する方法と理由について説明します。
+ms.openlocfilehash: 56e05389cad4ad9010324a3efd48bf679700be76
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419045"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882244"
 ---
 # <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でモデルを複製する
 
@@ -53,6 +53,7 @@ ms.locfileid: "63419045"
 5. [**複製する**] を選択します。
 
 ## <a name="see-also"></a>関連項目
+
 [分類子を作成する](create-a-classifier.md)
 
 [モデルの名前を変更する](rename-a-model.md)

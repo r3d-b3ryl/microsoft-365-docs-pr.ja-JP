@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex で分類子を作成する方法について説明します。
-ms.openlocfilehash: 5e9be6065e0328a412e73680a0200ea7929c8011
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6c47d2fe2f7f2b67533587f0956281c2b577dbe0
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324873"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882376"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexで分類子を作成する
 
@@ -62,7 +62,7 @@ ms.locfileid: "63324873"
 
 モデルを作成するときに、新しいサイトコンテンツタイプも作成します。 コンテンツタイプは、共通の特徴を持つドキュメントのカテゴリを表し、特定のコンテンツの列またはメタデータプロパティのコレクションを共有します。 SharePoint コンテンツの種類は、[[コンテンツの種類ギャラリー]](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f) で管理されます。 この例では、モデルを作成するときに、新しい *契約更新* コンテンツタイプを作成します。
 
-スキーマ **を使用するために**、このモデルを [コンテンツ タイプ] ギャラリーの既存 <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">のエンタープライズ コンテンツ</a> タイプSharePointする場合は、[詳細設定] を選択します。 エンタープライズコンテンツタイプは、SharePoint 管理センターのコンテンツタイプハブに格納され、テナントのすべてのサイトにシンジケートされます。 ただし、既存のコンテンツタイプを使用して、スキーマを利用し、特定および分類を行うことができますが、特定のファイルから情報を抽出するためにモデルをトレーニングする必要があります。</br>
+スキーマを使用するために、このモデルを SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">コンテンツ タイプ ギャラリー</a>の既存のエンタープライズ コンテンツ タイプにマップする場合は、[**詳細設定]** を選択します。 エンタープライズコンテンツタイプは、SharePoint 管理センターのコンテンツタイプハブに格納され、テナントのすべてのサイトにシンジケートされます。 ただし、既存のコンテンツタイプを使用して、スキーマを利用し、特定および分類を行うことができますが、特定のファイルから情報を抽出するためにモデルをトレーニングする必要があります。</br>
 
 ![詳細設定。](../media/content-understanding/advanced-settings.png)
 
@@ -147,6 +147,7 @@ ms.locfileid: "63324873"
     ![ラベルなしファイルのテスト。](../media/content-understanding/test-on-files.png) 
 
 ## <a name="see-also"></a>関連項目
+
 [エクストラクターを作成する](create-an-extractor.md)
 
 [ドキュメント理解の概要](document-understanding-overview.md)

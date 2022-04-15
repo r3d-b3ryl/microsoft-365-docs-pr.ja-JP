@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
-ms.openlocfilehash: a3f36adbf261ef290aada8efe1c0643ee1ce570f
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: f6fe6e821e41b47bcce6ef157d971245fdd072b8
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738403"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882288"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>ドキュメント理解モデルとフォーム処理モデルの違い 
 
