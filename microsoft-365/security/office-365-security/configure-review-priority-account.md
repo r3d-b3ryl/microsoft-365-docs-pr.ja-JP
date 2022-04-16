@@ -17,12 +17,12 @@ ms.custom: ''
 description: 組織内の重要なユーザーを識別し、優先度の高いアカウント タグを追加して、追加の保護を提供する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d48b1ec6c3ee0ba5f73d99b097303a8c989d545e
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: fc37f1efa5eb633bc3b1b711302f9393d655a339
+ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759541"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "64891843"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365で優先度アカウントを構成して確認する
 
@@ -40,15 +40,15 @@ ms.locfileid: "64759541"
 
 優先度アカウント保護は、事前に特定された重要なユーザーに対して既定で有効になっています。 ただし、組織のセキュリティ管理者は、次の手順に従って、優先度の高いアカウント保護を有効にすることもできます。
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>**[設定** **電子メール &** \> コラボレーション\>**の優先度アカウント保護**] に移動します。 
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>**[設定** **電子メール &** \> コラボレーション\>**の優先度アカウント保護**] に移動します。 **[優先度アカウント保護**] ページに直接移動するには、 <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
 
-2. **優先度アカウント保護** を有効にします。 
+2. [ **優先度アカウント保護** ] ページで、[ **優先度アカウント保護**] をオンにします。
 
     > [!div class="mx-imgBorder"]
     > ![優先度アカウント保護を有効にします。](../../media/mdo-priority-account-protection.png)
 
 > [!NOTE]
-> 優先度の高いアカウント保護を無効または無効にすることはお勧めしません。  
+> 優先度の高いアカウント保護を無効または無効にすることはお勧めしません。
 
 ### <a name="enable-the-priority-account-tag"></a>優先度アカウント タグを有効にする
 
@@ -56,30 +56,53 @@ Microsoft Defender for Office 365は、アラート、レポート、および�
 
 詳細については、「[Microsoft Defender for Office 365のユーザー タグ](user-tags.md)」を参照してください。
 
-## <a name="review-differentiated-protection-in-threat-protection-status-report-threat-explorer-and-email-entity-page"></a>脅威の保護状態レポート、脅威エクスプローラー、および電子メール エンティティ ページで区別された保護を確認する
+## <a name="review-differentiated-protection-from-priority-account-protection"></a>優先度の高いアカウント保護から区別された保護を確認する
+
+優先度アカウント保護の影響は、次の機能に表示されます。
+
+- [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)。
+- [脅威エクスプローラー](threat-explorer.md)
+- [[電子メール エンティティ] ページ](mdo-email-entity-page.md)
 
 ### <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
-脅威の保護状態レポートは、悪意のあるコンテンツと、Microsoft Defender for Office 365によって検出およびブロックされた悪意のあるメールに関する情報をまとめた単一のビューです。 
+**脅威の保護状態** レポートは、悪意のあるコンテンツと、Microsoft Defender for Office 365によって検出およびブロックされた悪意のある電子メールに関する情報をまとめた 1 つのビューです。
 
-Microsoft 365 Defender ポータルでレポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **脅威の保護の状態**] を探し、[ **詳細の表示**] を選択します。 **[スパム] ビュー**、**[フィッシング] ビュー**、または **[マルウェア] ビュー** のいずれかに移動し、フィルター アイコンを使用して **[優先度アカウント保護**] を選択します。
+レポートを表示するには、次の手順に従います。
 
-### <a name="threat-explorer"></a>脅威エクスプローラー 
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**レポート** \> **メール] &コラボレーションメール&コラボレーション** \> **レポート**\>に移動し、[**脅威の保護の状態**] を見つけて、[**詳細の表示**] をクリックします。 レポートに直接移動するには、 <https://security.microsoft.com/reports/TPSAggregateReportATP>.
 
-脅威エクスプローラー内のコンテキスト フィルターは、優先度アカウント保護がメッセージの検出に関与していた電子メールを検索するのに役立ちます。 これにより、セキュリティ運用チームは、この保護によって提供される値を確認できます。 引き続き、優先度アカウント タグでメッセージをフィルター処理して、特定のユーザー セットのすべてのメッセージを検索できます。 
+2. 既定のビューは、[ **概要別のデータの表示] です**。 この値をクリックして、次のいずれかの値を選択してビューを変更します。
+   - **メール \> フィッシングでデータを表示する**
+   - **電子メール \> マルウェアでデータを表示する**
+   - **電子メール \> スパムでデータを表示する**
 
-追加の保護を表示するには、Microsoft 365 Defender ポータルで[**電子メール & コラボレーション** \> **エクスプローラー**] に移動し、ドロップダウンから **[コンテキスト**] を選択し、[**優先度アカウント保護**] の横にあるチェック ボックスをオンにします。 
+3. [フィルター] アイコンをクリック ![します。](../../media/m365-cc-sc-filter-icon.png) **フィルター。**
+
+4. 開いた **[フィルター** ] ポップアップの [ **優先度アカウント** ] セクションで、[ **はい**]、[ **いいえ** ]、または両方の値を選択します。
+
+   ![脅威の保護状態レポートの優先度アカウント保護フィルター。](../../media/priority-account-protection-tps-report.png)
+
+### <a name="threat-explorer"></a>脅威エクスプローラー
+
+脅威エクスプローラー内のコンテキスト フィルターは、優先度アカウント保護がメッセージの検出に関与していた電子メールを検索するのに役立ちます。 これにより、セキュリティ運用チームは、この保護によって提供される値を確認できます。 引き続き、優先度アカウント タグでメッセージをフィルター処理して、特定のユーザー セットのすべてのメッセージを検索できます。
+
+脅威エクスプローラーで追加の保護を表示するには、次の手順に従います。
+
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**電子メール & コラボレーション** \> エクスプローラー] に移動 **します**。 **脅威エクスプローラー** ページに直接移動するには、<https://security.microsoft.com/threatexplorer>.
+
+2. ドロップダウンから **[コンテキスト** ] を選択し、[ **優先度アカウント保護**] の横にあるチェック ボックスをオンにします。
 
 > [!div class="mx-imgBorder"]
 > ![脅威エクスプローラー内のコンテキスト フィルター。](../../media/threat-explorer-context-filter.png)
 
 ### <a name="email-entity-page"></a>[メール エンティティ] ページ
 
-電子メール エンティティ ページは、電子 **メール & コラボレーション** \> **エクスプローラー** のMicrosoft 365 Defender ポータルで<https://security.microsoft.com>利用できます。 **エクスプローラーで**、調査しているメールの件名を選択します。 そのメールの電子メール ポップアップの上部にゴールド バーが表示されます。 選択すると、新しいページが表示されます。
+電子メール エンティティ ページは **、脅威エクスプローラー** で使用できます。 調査するメールの件名を選択します。 そのメールの電子メール ポップアップの上部にゴールド バーが表示されます。 選択すると、新しいページが表示されます。
 
-エンティティ ページの上部にあるタブを使用すると、電子メールを効率的に調査できます。 [ **分析** ] タブをクリックします。[脅威 **の検出の詳細**] に[優先度のアカウント保護]が表示されるようになりました。 
+エンティティ ページの上部にあるタブを使用すると、電子メールを効率的に調査できます。 [ **分析** ] タブをクリックします。[脅威 **の検出の詳細**] に[優先度のアカウント保護]が表示されるようになりました。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - [Microsoft Defender for Office 365のユーザー タグ](user-tags.md)
 - [優先アカウントを管理および監視する](../../admin/setup/priority-accounts.md)

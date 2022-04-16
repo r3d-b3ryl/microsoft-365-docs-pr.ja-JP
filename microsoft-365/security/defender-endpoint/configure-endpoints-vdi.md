@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 02/14/2022
+ms.date: 04/15/2022
 ms.technology: mde
-ms.openlocfilehash: fe86b09588f08a05183de146092b50b5cb530d0e
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 78d22772ccc9713b968347de5dee4c3a9699fe26
+ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825016"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "64891868"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Microsoft 365 Defenderで非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスをオンボードする
 
@@ -146,10 +146,10 @@ VDI 環境では、VDI インスタンスの有効期間が短い場合があり
 
 VDI で実行されている VM に更新プログラムを簡単にデプロイする機能を使用して、このガイドを短縮し、コンピューターで迅速かつ簡単に更新プログラムを入手する方法に焦点を当てています。 更新プログラムがホスト サーバー上のコンポーネント ビットに展開され、オンになると VM に直接ダウンロードされるため、ゴールデン イメージを定期的に作成してシールする必要はなくなりました。
 
-詳細については、「[仮想デスクトップ インフラストラクチャ (VDI) 環境でのMicrosoft Defender ウイルス対策のデプロイ ガイド」のガイダンスに](/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)従ってください。
+詳細については、「[Virtual Desktop Infrastructure (VDI) 環境でのMicrosoft Defender ウイルス対策のデプロイ ガイド」のガイダンスに](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)従ってください。
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 - [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
