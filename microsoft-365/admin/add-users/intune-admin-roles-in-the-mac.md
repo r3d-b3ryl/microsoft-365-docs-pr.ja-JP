@@ -17,12 +17,12 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 650a46c20acaf207f757ebbbe8f8b7179c29158f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6ee5c8410b64bffe66ee69e5c4468a9eda601cd8
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161800"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882200"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターにおける Intune 管理者の役割
 
@@ -55,7 +55,7 @@ Microsoft パートナーと連携している場合、パートナーに管理�
 
 - ヘルプデスク管理者と同等の特権を持つ制限付き管理。
 
-パートナーがこれらの役割をユーザーに割り当てる前に、パートナーを代理管理者としてアカウントに追加する必要があります。 このプロセスは認定パートナーによって開始されます。 パートナーは管理者に電子メールを送信し、代理管理者となる権限を割り当てるかどうか質問します。手順については、「[パートナー リレーションシップの承認または削除](../misc/add-partner.md)」を参照してください。
+パートナーがこれらの役割をユーザーに割り当てる前に、使用しているアカウントにパートナーを代理管理者として追加する必要があります。このプロセスは認定パートナーによって開始されます。パートナーは管理者にメールを送信し、代理管理者となる権限を割り当てるかどうか質問します。手順については、「[パートナー関係を承認または削除する](../misc/add-partner.md)」を参照してください。
   
 ## <a name="related-content"></a>関連コンテンツ
 
