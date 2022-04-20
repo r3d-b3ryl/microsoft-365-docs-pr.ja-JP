@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange の保持のしくみについて説明します。
-ms.openlocfilehash: f92df4bd25ddeff44472865c9ae221014050afaa
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 66b7ad888e62ff84b6a2de49714bbbdf96268312
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242025"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911426"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Exchange の保持の詳細
 
@@ -101,5 +101,5 @@ Microsoft 365 で初めてアイテム保持を構成する場合は、「[情�
 
 Exchange のアイテム保持ポリシーまたは保持ラベルを構成する準備ができたら、以下の手順をご覧ください。
 - [アイテム保持ポリシーを作成して構成する](create-retention-policies.md)
-- [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
+- [アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)
 - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)

@@ -1,5 +1,5 @@
 ---
-title: レビュー セットを管理Advanced eDiscovery
+title: 電子情報開示でレビュー セットを管理する (プレミアム)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: レビュー セットを管理して、データを分析、クエリ、表示、タグ付け、およびエクスポートする方法についてAdvanced eDiscoveryします。
+description: 電子情報開示 (プレミアム) ケースでデータを分析、クエリ、表示、タグ付け、エクスポートできるように、レビュー セットを管理する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a3aa836782dd464be2e62ca729efd85484c8aebf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 60e43d4d4983dd5171ed38f26096fba979c0f98c
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315611"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935590"
 ---
-# <a name="manage-review-sets-in-advanced-ediscovery"></a>レビュー セットを管理Advanced eDiscovery
+# <a name="manage-review-sets-in-ediscovery-premium"></a>電子情報開示でレビュー セットを管理する (プレミアム)
 
-レビュー セットは、ケースのデータを分析、クエリ、表示、確認、タグ付け、エクスポートできるドキュメントの静的セットです。 これらのタスクの実行の詳細については、以下を参照してください。
+レビュー セットは、ケースのデータを分析、クエリ、表示、確認、タグ付け、エクスポートできるドキュメントの静的セットです。 これらのタスクの実行の詳細については、次を参照してください。
 
 - [レビュー セット内のデータを分析する](analyzing-data-in-review-set.md)
 
@@ -40,15 +40,15 @@ ms.locfileid: "63315611"
 
 ## <a name="create-a-review-set"></a>レビュー セットを作成する
 
-[レビュー セット] タブで [+ レビュー セットの追加] をクリックすると、レビュー **セットを作成できます**。
+[レビュー セットの追加] をクリックすると、[ **校閲セット** ] タブで **レビュー セットを** 作成できます。
 
 ![レビュー セットを追加します。](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-[レビュー **セットの追加] フライ** アウト ページで、レビュー セットの名前を入力し、[保存] をクリック **します**。 新しいレビュー セットが [レビュー セット] タブの一 **覧に表示** されます。
+[ **レビュー セットの追加]** ポップアップ ページで、レビュー セットの名前を入力し、[ **保存**] をクリックします。 新しいレビュー セットは、[レビュー **セット] タブ** の一覧に表示されます。
 
-![[レビュー セット] タブに表示される新しいレビュー セット。](../media/AeDnewreviewset.png)
+![[校閲セット] タブに新しいレビュー セットが一覧表示されます。](../media/AeDnewreviewset.png)
 
-1 つのケースでレビュー セットにデータを追加するには、3 Advanced eDiscoveryがあります。
+電子情報開示 (プレミアム) ケースでレビュー セットにデータを追加する方法は 3 つあります。
 
 ![レビュー セットに追加する 3 つの方法。](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
@@ -59,4 +59,4 @@ ms.locfileid: "63315611"
 3. [別のレビュー セットからレビュー セットにデータを追加](add-data-to-review-set-from-another-review-set.md)
 
 > [!NOTE]
-> レビュー セットからアイテムを削除したり、ケースからレビュー セットを削除したりできない。 レビュー セットを削除 (およびその中のデータを削除する) には、レビュー セットがAdvanced eDiscovery場合は、そのレビュー セットを削除する必要があります。 詳細については、「[Close or delete an Advanced eDiscovery case (Advanced eDiscovery ケースを閉じるか、または削除する)](close-or-delete-case.md)」を参照してください。
+> レビュー セットからアイテムを削除することはできません。また、ケースからレビュー セットを削除することはできません。 レビュー セットを削除し、その中のデータを削除するには、レビュー セットが配置されている電子情報開示 (プレミアム) ケースを削除する必要があります。 詳細については、「[電子情報開示 (プレミアム) ケースを閉じるか削除する](close-or-delete-case.md)」を参照してください。

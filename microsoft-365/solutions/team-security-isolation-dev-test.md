@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkSPO
 description: 従業員がいつでもどこからでもリモートで作業できるようにするセキュリティとインフラストラクチャを構成します。
-ms.openlocfilehash: 8ea359f2c0de98ac35b90a379e5a60c4578e66cf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0e54d3840e9207fd7e8b5c50415ad2ca60751059
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323417"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934249"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>開発/テスト環境でセキュリティの分離を使用してチームを構成する
 
@@ -141,7 +141,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 次の手順を実行します。
 
-1. Microsoft 365 コンプライアンス センター開き、**ソリューション** の下の、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**情報保護**</a>を選択します。
+1. Microsoft Purview コンプライアンス ポータルを開き、**［ソリューション］** で、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**［Information protection］**</a> を選択します。
 1. **[ラベルの作成]** をクリックします。
 1. ラベル名に **会社戦略** と入力します。
 1. ツール ヒントに **シニア リーダーシップの会社戦略文書** と入力し、[**次へ**] をクリックします。
@@ -158,7 +158,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 次に、新しいラベルを次の手順で発行します。
 
-1. Microsoft 365 コンプライアンス センターの、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>で、**ラベル ポリシー** タブを選択します。
+1. Microsoft Purview コンプライアンス ポータルの、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**［Information Protection］**</a>で、**［ラベル ポリシー］** タブを選択します。
 2. **[ラベルの発行]** をクリックします。
 3. **[発行する秘密度ラベルの選択]** ページで、**[発行する秘密度ラベルの選択]** をクリックします。
 4. **会社戦略** を選択し、[**追加**] をクリックします。

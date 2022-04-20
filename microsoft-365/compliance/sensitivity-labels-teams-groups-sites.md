@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 759f7a6403eb41a6a853ed1f9b844ebd1ef679cc
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 0c8462333a3b3fd0c062c72fce0f673977c54b9b
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500015"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916251"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -37,6 +37,7 @@ ms.locfileid: "64500015"
 - 非管理対象デバイスからのアクセス
 - 認証コンテキスト (プレビュー段階)
 - SharePoint サイトの既定共有リンク (PowerShell のみの構成)
+- プレビュー中: サイト共有設定 (PowerShell 専用構成)
 
 > [!IMPORTANT]
 > 非管理対象デバイスと認証コンテキストの設定は、Azure Active Directory の条件付きアクセスと連動しています。 これらの設定に秘密度ラベルを使用したい場合は、この依存機能を設定する必要があります。 追加情報については、以下の手順を参照してください。
@@ -183,6 +184,31 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
 コンプライアンスセンターから構成できるサイトおよびグループのラベル設定に加えて、サイトの既定の共有依存タイプを構成することもできます。 ドキュメントの秘密度ラベルは、既定の共有依存タイプに対して構成することもできます。 ユーザーが Office アプリで **[共有]** ボタンを選択すると、過剰な共有を防ぐのに役立つこれらの設定が自動的に選択されます。 
 
 詳細と手順については、「[秘密度ラベルを使用して、SharePoint と OneDrive のサイトとドキュメントの既定の共有依存タイプを構成する](sensitivity-labels-default-sharing-link.md)」を参照してください。
+
+### <a name="configure-site-sharing-permissions-by-using-powershell-advanced-settings"></a>PowerShell の詳細設定を使用したサイト共有アクセス許可の構成
+
+> [!NOTE]
+> このラベル設定は現在プレビューの段階です。
+
+SharePoint サイトに適用する秘密度ラベルに構成できる別の PowerShell 詳細設定は、**MembersCanShare** です。 この設定は、SharePoint 管理センター > **[サイト アクセス許可]**、 > **[サイト共有]**、 > **[メンバーの共有方法を変更する]**、 > **[共有アクセス許可]** で設定できる設定と同等のものです。 
+
+次の 3 つのオプションが、PowerShell 詳細設定 **MembersCanShare** と同等の値で一覧表示されます。
+
+|SharePoint 管理センターのオプション |MembersCanShare と等しい PowerShell の値。 |
+|----------------------------------------|------------------------------------------------|
+|**サイトの所有者とメンバーは、ファイル、フォルダー、サイトを共有できます。編集権限を持つユーザーは、ファイルとフォルダーを共有できます**。| MemberShareAll|
+|**サイトの所有者とメンバー、および編集アクセス許可を持つユーザーは、ファイルとフォルダーを共有できますが、サイトの所有者のみがサイトを共有できます。**|MemberShareFileAndFolder|
+|**サイト所有者のみが、ファイル、フォルダー、およびサイトを共有できます**。|MemberShareNone|
+
+これらの構成オプションの詳細については、SharePoint コミュニティ ドキュメントで、「[メンバーを共有する方法を変更する](/microsoft-365/community/sharepoint-security-a-team-effort#change-how-members-can-share)」を参照してください。
+
+例、秘密度ラベル GUID は **8faca7b8-8d20-48a3-8ea2-0f96310a848e** です:
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{MembersCanShare="MemberShareNone"}
+````
+
+PowerShell の詳細設定の指定に関する詳細については、「[PowerShell の詳細設定の指定に関するヒント](sensitivity-labels-default-sharing-link.md#powershell-tips-for-specifying-the-advanced-settings)」を参照してください。
 
 ## <a name="sensitivity-label-management"></a>機密ラベルの管理
 

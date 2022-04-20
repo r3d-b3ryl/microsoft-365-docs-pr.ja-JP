@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ba816430521db2848273a4f7c6ca7d1a61703690
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 77eb8c0aa4d0ebd78788e9701e4933788af2e46c
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862268"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915909"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>デバイスをMicrosoft Defender for Businessにオンボードする
 
@@ -41,7 +41,6 @@ Microsoft Defender for Businessを使用すると、会社のデバイスのオ�
 1. オペレーティング システムのタブを選択します。 
 
    - Windows クライアント
-   - Windows サーバー (プレビュー)
    - macOS コンピューター
    - モバイル デバイス
 
@@ -56,6 +55,7 @@ Microsoft Defender for Businessを使用すると、会社のデバイスのオ�
 次のいずれかのオプションを選択して、Windowsクライアント デバイスを Defender for Business にオンボードします。
 
 - [ローカル スクリプト](#local-script-for-windows-clients) (Microsoft 365 Defender ポータルで手動でデバイスをオンボードする場合)
+- [グループ ポリシー](#group-policy-for-windows-clients)
 - [Microsoft エンドポイント マネージャー](#endpoint-manager-for-windows-clients) ([Microsoft 365 Business Premium](../../business-premium/index.md)に含まれています)
 
 
@@ -81,6 +81,10 @@ Microsoft Defender for Businessを使用すると、会社のデバイスのオ�
 7. スクリプト ファイルの場所を入力します。 たとえば、ファイルをデスクトップ フォルダーにコピーした場合は、次のように入力 `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`し、Enter キーを押します (または **[OK**] を選択します)。
 
 8. スクリプトの実行後、 [検出テストの実行](#running-a-detection-test-on-a-windows-client)に進みます。
+
+### <a name="group-policy-for-windows-clients"></a>Windows クライアントのグループ ポリシー
+
+グループ ポリシーを使用してWindows クライアントをオンボードする場合は、「グループ ポリシーを[使用したデバイスのオンボードWindows](../defender-endpoint/configure-endpoints-gp.md)」のガイダンスに従います。 この記事では、Microsoft Defender for Endpointにオンボードする手順について説明しますが、Defender for Business にオンボードする手順は似ています。
 
 ### <a name="endpoint-manager-for-windows-clients"></a>Windows クライアントのエンドポイント マネージャー
 
@@ -133,67 +137,6 @@ Intuneにデバイスを登録するには、いくつかの方法がありま�
 Windowsデバイスを Defender for Business にオンボードしたら、Windows デバイスで検出テストを実行して、すべてが正しく動作していることを確認できます。
 
 1. Windows デバイスで、フォルダーを作成します`C:\test-MDATP-test`。
-
-2. 管理者としてコマンド プロンプトを開きます。
-
-3. コマンド プロンプト ウィンドウで、次の PowerShell コマンドを実行します。
-
-   ```powershell
-   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
-   ```
-
-コマンドを実行すると、コマンド プロンプト ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、新しくオンボードされたデバイスのMicrosoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に約 10 分間で新しいアラートが表示されます。
-
-## <a name="view-a-list-of-onboarded-devices"></a>オンボードされたデバイスの一覧を表示する
-
-Defender for Business にオンボードされているデバイスの一覧を表示するには、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、ナビゲーション ウィンドウの [**エンドポイント**] で [**デバイスのインベトリ**] を選択します。
-
-## <a name="next-steps"></a>次の手順
-
-- オンボードする他のデバイスがある場合は、デバイス [(Windows クライアント、Windows サーバー、macOS、モバイル デバイス](#what-to-do)) のオペレーティング システムに対応するタブを選択し、そのタブのガイダンスに従います。
-- デバイスのオンボードが完了したら、「[手順 5: Microsoft Defender for Businessでセキュリティ設定とポリシーを構成する」に](mdb-configure-security-settings.md)進みます。
-- [Microsoft Defender for Businessを使用した概要を](mdb-get-started.md)参照してください。
-
-## <a name="windows-server"></a>[**Windows Server**](#tab/WindowsServerEndpoints)
-
-## <a name="windows-server-preview"></a>Windows サーバー (プレビュー)
-
-ローカル スクリプトを使用して、Windows Server デバイスをオンボードできます。 
-
-> [!IMPORTANT]
-> Windows サーバー エンドポイントをオンボードする機能は現在プレビュー段階です。
-
-1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動し、サインインします。
-
-2. ナビゲーション ウィンドウで **[設定** > **Endpoints**] を選択し、[**デバイス管理**] で [**オンボード**] を選択します。
-
-3. **Windows Server 1803、2019、2022** などのオペレーティング システムを選択し、[**展開方法]** セクションで [**ローカル スクリプト**] を選択します。 
-
-   **R2 と 2016 のWindows Server 2012** を選択した場合は、インストール パッケージとオンボード パッケージの 2 つのパッケージをダウンロードして実行できます。 インストール パッケージには、Microsoft Defender for Business エージェントをインストールする MSI ファイルが含まれています。 オンボード パッケージには、Windows サーバー エンドポイントを Defender for Business にオンボードするスクリプトが含まれています。 
-
-4. **[オンボーディング パッケージをダウンロードする]** を選択します。 オンボード パッケージをリムーバブル ドライブに保存することをお勧めします。
-
-   **R2 と 2016 Windows Server 2012** 選択した場合は、[**インストール パッケージのダウンロード**] も選択し、リムーバブル ドライブに保存します
-
-5. Windows サーバー エンドポイントで、インストール/オンボード パッケージの内容をデスクトップ フォルダーなどの場所に展開します。 という名前 `WindowsDefenderATPLocalOnboardingScript.cmd`のファイルが必要です。 
-
-   R2 またはWindows Server 2016 Windows Server 2012オンボードする場合は、最初にインストール パッケージを展開します。
-
-6. 管理者としてコマンド プロンプトを開きます。
-
-7. Server 2012R2 またはWindows Server 2016 Windowsオンボードする場合は、次のコマンドを実行します`Msiexec /i md4ws.msi /quiet`。 
-
-   Server 1803、2019、または 2022 Windowsオンボードする場合は、この手順をスキップして手順 8 に進みます。
-
-8. スクリプト ファイルの場所を入力します。 たとえば、ファイルをデスクトップ フォルダーにコピーした場合は、次のように入力 `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`し、Enter キーを押します (または **[OK**] を選択します)。
-
-9. [Windows サーバーで検出テストを実行](#running-a-detection-test-on-windows-server)する
-
-### <a name="running-a-detection-test-on-windows-server"></a>Windows サーバーで検出テストを実行する
-
-Windows サーバー エンドポイントを Defender for Business にオンボードしたら、検出テストを実行してすべてが正しく動作していることを確認できます。
-
-1. Windows サーバー デバイスで、フォルダーを作成します`C:\test-MDATP-test`。
 
 2. 管理者としてコマンド プロンプトを開きます。
 

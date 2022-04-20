@@ -15,12 +15,12 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex の設定
-ms.openlocfilehash: 244038e4c49801cad59bd9cf8939c47291c5270f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0d7cbe0f99747629bcac581bd080d88af27e8a06
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326945"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935371"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -45,7 +45,9 @@ ms.locfileid: "63326945"
 
 管理者は、セットアップ後、および <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>のコンテンツの解釈管理設定全体を通じて、選択した設定に変更を加えることもできます。
 
-カスタム Power Platform 環境を使用する場合は、フォーム処理モデルを作成する前に、[この環境で *プロジェクト Cortex の AI ビルダー* アプリをインストールし、](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view)そのアプリに [AI ビルダー クレジットを割り当てる](/power-platform/admin/capacity-add-on)必要があります。
+カスタム Power Platform 環境を使用する場合は、フォーム処理モデルを作成する前に、[この環境で *プロジェクト Cortex の AI ビルダー* アプリをインストールし、](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view)そのアプリに [AI ビルダー クレジットを割り当てる](/power-platform/admin/capacity-add-on)必要があります。 カスタム環境を使用する場合、モデル作成者には環境メーカーのセキュリティ ロールを割り当て、モデル ユーザーには基本ユーザーのセキュリティ ロールを割り当てる必要があります。 詳細については、「[ユーザーへのセキュリティ ロールの割り当て](/power-platform/admin/assign-security-roles)」を参照してください。
+
+[コンテンツ センター サイト](/microsoft-365/contentunderstanding/create-a-content-center)でモデルを作成するユーザーは、サイト メンバーである必要があります。 コンテンツ センターの外部でローカルにモデルを作成するユーザーは、それらのサイトのサイト所有者である必要があります。
 
 ### <a name="licensing"></a>ライセンス
 
@@ -93,7 +95,7 @@ SharePoint Syntex ライセンスの詳細については、「[SharePoint Synte
 
     [**次へ**] をクリックします。
 
-5. **コンテンツセンターの作成** ページで、ユーザーがドキュメント理解モデルを作成して管理することができるように、SharePoint コンテンツセンターサイトを作成できます。 以前に SharePoint 管理センターからコンテンツ センターを作成した場合は、その情報がここに表示されるので、**[次へ]** を選択するだけです。
+5. [**コンテンツセンターの作成**] ページで、ユーザーがドキュメント理解モデルを作成して管理することができるように、SharePoint コンテンツセンターサイトを作成できます。 以前に SharePoint 管理センターからコンテンツ センターを作成した場合は、その情報がここに表示されるので、**[次へ]** を選択するだけです。
 
     1. [**サイト名**] に、コンテンツ センター サイトの名前を入力します。
     

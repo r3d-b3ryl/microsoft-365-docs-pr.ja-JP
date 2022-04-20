@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: b1dbe79aadea39bfc737ae9f5457715b669cc79b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: e32018f52f3a45624fcf07ae03e44c662a594297
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861820"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916317"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Microsoft Defender for BusinessをMicrosoft 365 Business Premiumと比較する
 
@@ -73,9 +73,9 @@ Microsoft Defender for Businessは、スタンドアロン オファリングと
 
 Defender for Business は、Defender for Endpoint のエンタープライズ レベルの機能を中小企業に提供します。
 
-次の表では、Defender for Business のセキュリティ機能と、Microsoft Defender for Endpoint プラン 1 と 2 を比較します。
+次の表では、Defender for Business のセキュリティ機能と、企業向けサービス (Microsoft Defender for Endpoint プラン 1 および 2) を比較します。
 
-|機能/機能|[Defender for Business](mdb-overview.md)<br/>(スタンドアロン、現在プレビュー段階)|[Defender for Endpoint プラン 1](../defender-endpoint/defender-endpoint-plan-1.md)|[Defender for Endpoint プラン 2](../defender-endpoint/microsoft-defender-endpoint.md)|
+|機能/機能|[Defender for Business](mdb-overview.md)<br/>(スタンドアロン、現在プレビュー段階)|[Defender for Endpoint プラン 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(エンタープライズのお客様向け) |[Defender for Endpoint プラン 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(エンタープライズのお客様向け) |
 |---|---|---|---|
 |[集中管理](../defender-endpoint/manage-atp-post-migration.md) |はい <sup>[[1](#fn1)]</sup>|はい|はい|
 |[クライアント構成の簡略化](mdb-simplified-configuration.md)|はい|いいえ|いいえ|

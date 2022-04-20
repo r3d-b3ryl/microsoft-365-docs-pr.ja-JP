@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Microsoft 365 コンプライアンス センターのコンテンツ検索またはコア電子情報開示検索によって返される結果サンプルをプレビューします。
-ms.openlocfilehash: af0811d0c442d6f064fd336d4261d1f7b2337dc8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft Purview コンプライアンス ポータルで、コンテンツ検索または電子情報開示 (標準) 検索によって返される結果のサンプルをプレビューします。
+ms.openlocfilehash: 83779ad333d6944b65b92b2032d46b3eaa016479
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189347"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934711"
 ---
 # <a name="preview-ediscovery-search-results"></a>電子情報開示検索結果をプレビューする
 
-コンテンツ検索、またはコア電子情報開示ケースに関連付けられている検索を実行すると、検索によって返される結果サンプルをプレビューできます。 検索クエリによって返されたアイテムをプレビューすると、検索が所望の結果を返しているかどうか、検索クエリを変更して検索を再実行する必要があるのかどうかを把握することができます。
+コンテンツ検索、またはMicrosoft Purview 電子情報開示 (標準) ケースに関連付けられている検索を実行すると、検索によって返される結果サンプルをプレビューできます。 検索クエリによって返されたアイテムをプレビューすると、検索が所望の結果を返しているかどうか、検索クエリを変更して検索を再実行する必要があるのかどうかを把握することができます。
 
 検索によって返される結果サンプルをプレビューするには、次の方法があります。
 
-1. Microsoft 365 コンプライアンス センターで、コンテンツ検索ページまたはコア電子情報開示ケースに移動します。
+1. Microsoft Purview コンプライアンス ポータルで、コンテンツ検索ページまたは電子情報開示 (標準) ケースに移動します。
 
 2. 検索を選択して、ポップアップ ページを表示します。
 

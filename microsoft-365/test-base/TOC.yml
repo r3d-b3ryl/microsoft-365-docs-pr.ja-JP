@@ -1,4 +1,4 @@
-- name: テストベースのドキュメント
+- name: Test Base のドキュメント
   href: index.yml
 - name: 概要
   items:
@@ -6,13 +6,21 @@
       href: overview.md
 - name: クイックスタート
   items:
-    - name: テストベース アカウントの作成
+    - name: テスト ベース アカウントの作成
       href: createAccount.md
-    - name: パッケージのビルド
+    - name: Test Base でアプリケーションをテストする
+      items:
+        - name: 概要
+          href: testoverview.md
+        - name: テスト ベースでのテスト バイナリ パッケージ
+          href: testapplication.md
+        - name: Test Base でIntune アプリをテストする
+          href: testintuneapplication.md
+        - name: テスト ベース パッケージをアップロードする (Zip)
+          href: uploadApplication.md
+    - name: パッケージをビルドする
       href: buildpackage.md
-    - name: パッケージのアップロード
-      href: uploadApplication.md
-    - name: アップロードバイナリ&依存関係
+    - name: アップロード バイナリ&依存関係
       href: binaries.md
     - name: テスト タスクの設定
       href: testtask.md
@@ -22,7 +30,7 @@
       href: review.md
     - name: パッケージ ガイドライン
       href: contentguideline.md
-    - name: アプリケーション/テスト ルール
+    - name: アプリケーション/テストルール
       href: rules.md
 - name: 使い方ガイド
   items:
@@ -38,7 +46,7 @@
       href: cpu.md
     - name: SDK & API
       href: sdkapi.md
-- name: 関連情報
+- name: 参照
   items:
     - name: よく寄せられる質問
       href: faq.md

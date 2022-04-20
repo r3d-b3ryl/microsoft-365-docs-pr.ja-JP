@@ -19,51 +19,51 @@ search.appverid:
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
-description: メールボックスをOffice 365した後、非アクティブなメールボックスに割り当てられている保持ポリシーまたは保持ポリシー Office 365期間を変更します。
-ms.openlocfilehash: bf1131aa0d14222bec7ab1c94983925cfe39e673
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+description: Office 365 メールボックスが非アクティブになった後、非アクティブなメールボックスに割り当てられている保持またはOffice 365アイテム保持ポリシーの期間を変更します。
+ms.openlocfilehash: d959195731ee0bf4de9b533f85fa2e2356259c12
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241613"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911370"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>非アクティブなメールボックスの保持期間を変更する
 
-非 [アクティブなメールボックス](inactive-mailboxes-in-office-365.md) とは、元従業員の電子メールが組織を離れた後に保持するために使用されるメールボックスの状態です。 メールボックスは、ユーザー オブジェクトが削除される前に、該当する保持が適用Microsoft 365非アクティブになります。  次の種類の保留リストは、ユーザー アカウントの削除時に非アクティブなメールボックスの作成を開始します。
+[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)は、元従業員が組織を離れた後にメールを保持するために使用されるメールボックスの状態です。 Microsoft 365 ユーザー オブジェクトが削除される前に、該当するホールドが適用されると、メールボックスは非アクティブになります。  次の種類の保留は、ユーザー アカウントの削除時に非アクティブなメールボックスの作成を開始します。
 
-- [Microsoft 365保持ポリシーとラベルの保持または](retention.md)保持と削除の設定
+- 保持または保持と削除の設定を使用して[アイテム保持ポリシーとラベルをMicrosoft 365](retention.md)する
 
-- 電子情報開示ケースに[関連付けられた保留](ediscovery.md)
+- [電子情報開示](ediscovery.md)ケースに関連付けられた保留リスト
 
 - [訴訟ホールド](create-a-litigation-hold.md)
 
-- 既存の保留In-Placeします。
+- 既存のIn-Place保留。
 
 > [!IMPORTANT]
-> 上記の保持は、Microsoft 365 ユーザー アカウントの削除時にメールボックスが強制的に非アクティブになりますが、非アクティブなメールボックスの使用を積極的に計画する場合は、Microsoft 365 保持を使用強く推奨します。
+> 上記のいずれかの保留は、ユーザー アカウントの削除時にメールボックスを強制的に非アクティブにMicrosoft 365しますが、アクティブでないメールボックスを事前に使用する計画を立てる場合は、Microsoft 365リテンション期間を使用することを強くお勧めします。
 >
-> - 電子情報開示ホールドは、法的な問題に関連する特定の時間制限付きケースを対象とします。 ある時点で、法的ケースはおそらく終了し、ケースに関連付けられている保留リストは削除され、電子情報開示ケースは閉じ (または削除) されます。 非アクティブなメールボックスに配置された保留リストが電子情報開示ケースに関連付けられている場合、保留が解放された場合、または電子情報開示ケースが閉じたり削除された場合、非アクティブなメールボックスは完全に削除されます。
+> - 電子情報開示保留は、法的な問題に関連する特定の期限付きケースを対象としています。 ある時点で、訴訟はおそらく終了し、ケースに関連付けられている保留が削除され、電子情報開示ケースは終了 (または削除) されます。 非アクティブなメールボックスに配置された保留が電子情報開示ケースに関連付けられている場合、および保留が解放されるか、電子情報開示ケースが閉じられるか削除された場合、非アクティブなメールボックスは完全に削除されます。
 >
-> - In-Place管理センターの保留Exchangeが廃止されました。 2020 年 7 月 1 日の現在、In-Placeで新しい保留リストを作成Exchange Online。 2020 年 10 月 1 日現在、インプレイスホールドの保持期間を変更できなくなりました。 保持が適用されている非アクティブなIn-Placeは、保留リストを削除することによってのみIn-Placeできます。 保持中の既存の非アクティブIn-Place保持は、保留が削除されるまで保持されます。 保留リストの削除のIn-Placeについては、「従来の電子情報開示ツールの使用を取り除 [く」を参照してください](legacy-ediscovery-retirement.md)。
+> - Exchange管理センターのIn-Place保留は廃止されました。 2020 年 7 月 1 日の時点で、Exchange Onlineで新しいIn-Place保留を作成できませんでした。 2020 年 10 月 1 日以降、インプレース ホールドの保留期間は変更できませんでした。 In-Place保留が適用されている非アクティブなメールボックスは、In-Place保留を削除することによってのみ削除できます。 In-Place保留になっている既存の非アクティブなメールボックスは、保留が削除されるまで引き続き保持されます。 In-Place保留の詳細については、「 [従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)」を参照してください。
 >
-> - [訴訟ホールド](create-a-litigation-hold.md) は、メールボックス内のコンテンツを保持し、ユーザー アカウントが削除された後に非アクティブにする代替方法として引き続きサポートされます。 ただし、古いテクノロジでは、代わりに、Microsoft 365使用することをお勧めします。
+> - [訴訟ホールド](create-a-litigation-hold.md) は、メールボックス内のコンテンツを保持し、ユーザー アカウントが削除された後に非アクティブにする代替方法として引き続きサポートされます。 ただし、古いテクノロジとして、代わりにMicrosoft 365リテンション期間を使用することをお勧めします。
 
-非アクティブになった後、回復可能なアイテム フォルダー[](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)を含むメールボックスの内容は、非アクティブになる前にメールボックスに配置された保留が適用されなくなるまで保持されます。  
+非アクティブになると、 [回復可能なアイテム フォルダー](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) を含むメールボックスの内容は、非アクティブ化される前にメールボックスに配置された保留が適用されなくなるまで保持されます。  
 
-無期限の保持専用の Microsoft 365 保持ポリシーまたはラベル、電子情報開示ケース、訴訟ホールド (構成されていない) に関連付けられた保留など、該当するホールドが時間ベースではない場合、メールボックスコンテンツは保持が削除されるまで無期限に保持されます。 ```LitigationHoldDuration```  
+適用される保留が時間ベースでない場合 (無期限保持のみのMicrosoft 365アイテム保持ポリシーまたはラベルに関連付けられている保留、電子情報開示ケースまたは訴訟ホールド (構成されていない```LitigationHoldDuration```場合) など)、メールボックスのコンテンツは、保持が削除されるまで無期限に保持されます。  
 
-ただし、保持が時間ベースの場合、メールボックスのコンテンツは保持期間が経過するまで保持され、その時点で回復可能なアイテム フォルダー内のアイテムは非アクティブなメールボックスから完全に削除 (パージ) されます。
+ただし、ホールドが時間ベースの場合、メールボックスの内容は保持期間の有効期限が切れるまで保持されます。この時点で、回復可能なアイテム フォルダー内のすべてのアイテムは非アクティブなメールボックスから完全に削除 (削除) されます。
 
 > [!NOTE]
-> 非アクティブなメールボックスの場合は、保持ポリシーまたはラベルの保持と削除Microsoft 365使用することをお勧めします。  保持のみ設定を選択すると、回復可能なアイテム フォルダーは保持期間の最後に削除されます。ただし、削除されていない他のアイテムは、非アクティブなメールボックス内に無期限に保持されます。
+> 非アクティブなメールボックスの場合は、Microsoft 365アイテム保持ポリシーまたはラベルの保持と削除の設定を使用することをお勧めします。  保持のみの設定を選択した場合、回復可能なアイテム フォルダーは保留期間の最後に消去されますが、削除されていない他のアイテムは非アクティブなメールボックス内に無期限に残ります。
 
-規制とポリシーが進化するにつれて、非アクティブなメールボックスに割り当てられた保留期間を変更する必要がある場合があります。  次の手順では、これを行う方法について説明します。
+規制とポリシーが進化するにつれて、非アクティブなメールボックスに割り当てられているホールドの期間を変更する必要がある状況が生じることがあります。  次の手順では、これを行う方法の概要を示します。
 
-## <a name="connect-to-powershell"></a>Connect PowerShell へのアクセス
+## <a name="connect-to-powershell"></a>PowerShell へのConnect
 
-前述したように、さまざまな種類の保留リストが非アクティブなメールボックスの作成をトリガーする可能性があります。  このため、非アクティブなメールボックスに適用される保持期間を変更するには、まず、そのメールボックスに影響を与えるホールドの種類を特定する必要があります。  これを行うには、Exchange Online PowerShell を使用して保留の種類を特定し、非アクティブなメールボックスが Microsoft 365 保持ポリシーまたはラベルの影響を受ける場合は、セキュリティとコンプライアンス センター PowerShell を使用して特定のポリシーを識別する必要があります。
+前述のように、さまざまな種類の保留が非アクティブなメールボックスの作成をトリガーする可能性があります。  このため、非アクティブなメールボックスに適用される保留期間を変更するには、まず、そのメールボックスに影響を与える保留の種類を特定する必要があります。  これを行うには、Exchange Online PowerShell を使用して保留の種類を識別する必要があります。非アクティブなメールボックスがMicrosoft 365アイテム保持ポリシーまたはラベルの影響を受ける場合は、Security and Compliance Center PowerShell を使用して特定のポリシーを識別する必要もあります。
 
-- コンプライアンス センター powerShell Exchange Onlineセキュリティ &接続するには、次のいずれかのトピックを参照してください。
+- Exchange Online PowerShell または Security & Compliance Center PowerShell に接続するには、次のいずれかのトピックを参照してください。
 
   - [Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)
 
@@ -71,24 +71,24 @@ ms.locfileid: "62241613"
 
 ## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>手順 1: 非アクティブなメールボックスに設定されているホールドを特定する
 
-異なる種類の保留リストまたは 1 つ以上の Microsoft 365 保持ポリシーが非アクティブなメールボックスに配置される可能性があるため、最初の手順は非アクティブなメールボックスの保留リストを識別します。
+さまざまな種類の保留または 1 つ以上のMicrosoft 365アイテム保持ポリシーが非アクティブなメールボックスに配置される可能性があるため、最初の手順は非アクティブなメールボックスの保留を識別することです。
   
-PowerShell で次Exchange Onlineコマンドを実行して、組織内の特定の非アクティブなメールボックスの保留情報を表示します。
+Exchange Online PowerShell で次のコマンドを実行して、組織内の特定の非アクティブなメールボックスの保留情報を表示します。
   
 ```powershell
 Get-Mailbox -Identity <identity of inactive mailbox> -InactiveMailboxOnly | FL DisplayName,Name,DistinguishedName,ExchangeGuid,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,LitigationHoldDate,LitigationHoldOwner,InPlaceHolds,ComplianceTagHoldApplied
 ```
 
-複数の非アクティブなメールボックスの保留の種類を特定する必要がある場合、組織に多数のメールボックスがある場合は、PowerShell を使用して表示できない場合があります。 この場合、次のコマンドを使用して該当する情報を CSV ファイルにエクスポートし、必要に応じて環境に合 ```Path``` って変更できます。
+複数の非アクティブなメールボックスの保留の種類を特定する必要があり、組織に多数のメールボックスがある場合は、PowerShell を使用して表示することが管理できなくなる可能性があります。 この場合、次のコマンドを使用して、該当するすべての情報を CSV ファイルにエクスポートし、必要に応じて環境に ```Path``` 合わせて変更できます。
 
 ```powershell
 Get-Mailbox -InactiveMailboxOnly -ResultSize Unlimited | Select DisplayName,Name,DistinguishedName,ExchangeGuid,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,LitigationHoldDate,LitigationHoldOwner,InPlaceHolds,ComplianceTagHoldApplied | Export-Csv -NoTypeInformation -Path "C:\Temp\InactiveMailboxHoldTypes.csv"
 ```
 
-この例では、次の目的で、異なるホールド タイプを持つ 6 つの非アクティブなメールボックスの結果を示します。
+この例では、次に示す 6 つの非アクティブなメールボックスの結果を示しています。保留の種類は異なります。
 
 > [!NOTE]
-> 複数の種類のホールドを含む複数のホールドは、1 つの非アクティブなメールボックスに適用できます。
+> 複数の種類の保留を含む複数の保留は、1 つの非アクティブなメールボックスに適用できます。
   
 ```text
 DisplayName              : Ann Beebe
@@ -176,84 +176,84 @@ InPlaceHolds             : {c0ba3ce811b6432a8751430937152491}
 ComplianceTagHoldApplied : False
 ```
 
-次の表は、上記の例から各メールボックスを非アクティブにするために使用された 6 つの異なる保留の種類を示しています。
+次の表は、上の例から各メールボックスを非アクティブにするために使用された 6 種類のホールドの種類を示しています。
   
 |**非アクティブなメールボックス**|**ホールドの種類**|**非アクティブなメールボックスのホールドを識別する方法**|
 |:-----|:-----|:-----|
-|Ann Beebe  <br/> |訴訟ホールド  <br/> | この  `LitigationHoldEnabled`  プロパティは、メールボックスが  `True` 訴訟ホールド中であることを示す設定です。 <br/><br/> さらに、メールボックス アイテムが作成日 (送信/受信) から 365 日後に訴訟ホールドの対象とならなくなることを示す設定 `LitigationHoldDuration` `365.00:00:00` が設定されています。  <br/><br/> 訴訟 `LitigationHoldDate` ホールドが有効にされた日付を示し、訴訟ホールドを開始 `LitigationHoldOwner` した人物を識別します。 <br/> |
-|Carol Olson  <br/> |Microsoft 365メールボックスに適用されるMicrosoft 365 コンプライアンス センターアイテム保持ポリシー  <br/> |この `InPlaceHolds` プロパティには、非アクティブなMicrosoft 365適用されるアイテム保持ポリシーの GUID が含まれる。 GUID はプレフィックスで始まり、またはで終わるので、これは特定のメールボックスに適用される保持ポリシー `mbx` です `:2` `:3` 。 <br/><br/> 詳細については、「保持ポリシー [の InPlaceHolds 値の形式について」を参照してください](identify-a-hold-on-an-exchange-online-mailbox.md#understanding-the-format-of-the-inplaceholds-value-for-retention-policies)。  <br/> |
-|Megan Bowen <br/> | Microsoft 365保持または削除アクションを持つアイテム保持ラベルは、メールボックス内の少なくとも 1 つのアイテムに適用されます。  <br/> |プロパティ `ComplianceTagHoldApplied` は、アイテムに保持ラベルまたは保持ラベルと削除ラベルが付 `True` いたラベルを示しています。  <br/><br/> さらに、このプロパティには、非アクティブなメールボックスにMicrosoft 365保持ラベル ポリシーの GUID `InPlaceHolds` が含まれる。  <br/><br/> 詳細については、「保持ラベルがフォルダーまたはアイテムに適用されたため、保持中のメールボックスを識別する」 [を参照してください。](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) <br/>  |
-|Mario Necaise  <br/> |組織全体のMicrosoft 365アイテム保持ポリシー Microsoft 365 コンプライアンス センター  <br/> |プロパティ  `InPlaceHolds`  は空で `LitigationHoldEnabled` 、is `False` および is `ComplianceTagHoldApplied` `False` です。 これは、非アクティブなメールボックスが継承Exchange組織Microsoft 365保持ポリシーの 1 つ以上の場所が含まれるかどうかを示します。 <br/><br/> 詳細については、「組織全体のアイテム保持ポリシーがメールボックスに適用されるのを確認する [方法」を参照してください。](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox) <br/> |
-|Abraham McMahon  <br/> |電子情報開示ケースの保持Microsoft 365 コンプライアンス センター  <br/> |このプロパティには、非アクティブなメールボックスに配置された電子情報開示ケースホールド  `InPlaceHolds`  の GUID が含まれる。 GUID が  `UniH` プレフィックスで始まっているため、これは電子情報開示ケース ホールドであることがわかります。  <br/><br/> 詳細については、「電子情報開示ホールド [」を参照してください](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds)。 <br/> |
-|Pilar Pinilla  <br/> |インプレース ホールド  <br/> |プロパティ  `InPlaceHolds`  には、非アクティブなメールボックスIn-Place保留リストの GUID が含まれる。 GUID はプレフィックスで始In-Place、これは保留の一部です。  <br/><br/> **注**: 2020 年 10 月 1 日現在、インプレイスホールドの保持期間は変更できません。 非アクティブなメールボックスの削除In-Place保持するユーザーのみを削除できます。 <br/><br/> 詳細については、「従来の電子 [情報開示ツールの削除」を参照してください](legacy-ediscovery-retirement.md)。 <br/> |
+|Ann Beebe  <br/> |訴訟ホールド  <br/> | このプロパティは  `LitigationHoldEnabled`  、メールボックスが訴訟ホールドであることを示すために設定  `True` されます。 <br/><br/> さらに、 `LitigationHoldDuration` メールボックス アイテムが作成日 (送信/受信) の 365 日後に訴訟ホールドの対象にならなくなったことを示す設定 `365.00:00:00` になっています。  <br/><br/> これは `LitigationHoldDate` 、LitigationHold が有効になった日付を示し、 `LitigationHoldOwner` 訴訟ホールドを開始したユーザーを識別します。 <br/> |
+|Carol Olson  <br/> |特定のメールボックスに適用されるQendra e pajtimit e Microsoft 365からアイテム保持ポリシーをMicrosoft 365する  <br/> |プロパティ`InPlaceHolds`には、非アクティブなメールボックスに適用されるMicrosoft 365アイテム保持ポリシーの GUID が含まれています。 これは、GUID がプレフィックスで始まり、末尾が a または `:3`1 で終わる`:2`ため、特定の`mbx`メールボックスに適用されるアイテム保持ポリシーであることを確認できます。 <br/><br/> 詳細については、「 [アイテム保持ポリシーの InPlaceHolds 値の形式について」を](identify-a-hold-on-an-exchange-online-mailbox.md#understanding-the-format-of-the-inplaceholds-value-for-retention-policies)参照してください。  <br/> |
+|Megan Bowen <br/> | 保持または保持と削除のアクションを含む保持ラベルMicrosoft 365、メールボックス内の少なくとも 1 つのアイテムに適用されます  <br/> |この `ComplianceTagHoldApplied` プロパティは、 `True` アイテムに保持ラベルまたは保持ラベルと削除ラベルが付けられているかどうかを示します。  <br/><br/> さらに、プロパティには、`InPlaceHolds`非アクティブなメールボックスに適用されるMicrosoft 365アイテム保持ラベル ポリシーの GUID が含まれています。  <br/><br/> 詳細については、「[保持ラベルがフォルダーまたはアイテムに適用されているため、保留中のメールボックスを識別する」を](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)参照してください。 <br/>  |
+|Mario Necaise  <br/> |Qendra e pajtimit e Microsoft 365からの組織全体のMicrosoft 365アイテム保持ポリシー  <br/> |プロパティは  `InPlaceHolds`  空であり、 `LitigationHoldEnabled` `False` `ComplianceTagHoldApplied` 次の値です `False`。 これは、非アクティブなメールボックスが継承している組織に適用されるアイテム保持ポリシー Microsoft 365 1 つまたは複数の (Exchange) 場所全体を示します。 <br/><br/> 詳細については、「[組織全体のアイテム保持ポリシーがメールボックスに適用されていることを確認する方法」を](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox)参照してください。 <br/> |
+|Abraham McMahon  <br/> |Qendra e pajtimit e Microsoft 365の電子情報開示ケースホールド  <br/> |この  `InPlaceHolds`  プロパティには、非アクティブなメールボックスに配置される電子情報開示ケースホールドの GUID が含まれています。 GUID が  `UniH` プレフィックスで始まっているため、これは電子情報開示ケース ホールドであることがわかります。  <br/><br/> 詳細については、「 [電子情報開示保留](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds)」を参照してください。 <br/> |
+|Pilar Pinilla  <br/> |インプレース ホールド  <br/> |この  `InPlaceHolds`  プロパティには、非アクティブなメールボックスに配置されるIn-Placeホールドの GUID が含まれています。 GUID がプレフィックスで始まらないので、これはIn-Placeホールドであることを確認できます。  <br/><br/> **注**: 2020 年 10 月 1 日以降、インプレース ホールドの保留期間は変更できなくなります。 In-Placeホールドのみを削除すると、非アクティブなメールボックスが削除されます。 <br/><br/> 詳細については、「 [従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)」を参照してください。 <br/> |
 
 ## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>手順 2: 非アクティブなメールボックスの保持期間を変更する
 
 非アクティブなメールボックスに設定されているホールドの種類 (および複数のホールドがあるかどうか) を特定したら、次は、保持期間を変更します。  プロセスは、適用される保留の種類によって異なります。
 
-- [アイテム保持ポリシーの期間Microsoft 365変更する](#change-the-duration-for-a-microsoft-365-retention-policy)
+- [Microsoft 365アイテム保持ポリシーの期間を変更する](#change-the-duration-for-a-microsoft-365-retention-policy)
 
-- [アイテム保持ラベルの期間Microsoft 365変更する](#change-the-duration-for-a-microsoft-365-retention-label)
+- [Microsoft 365保持ラベルの期間を変更する](#change-the-duration-for-a-microsoft-365-retention-label)
 
 - [電子情報開示ホールドの期間を変更する](#change-the-duration-for-an-ediscovery-hold)
 
 - [訴訟ホールドの期間を変更する](#change-the-duration-for-a-litigation-hold)
 
-- [保留の期間をIn-Placeする](#change-the-duration-for-an-in-place-hold)
+- [In-Placeホールドの期間を変更する](#change-the-duration-for-an-in-place-hold)
 
-### <a name="change-the-duration-for-a-microsoft-365-retention-policy"></a>アイテム保持ポリシーの期間Microsoft 365変更する
+### <a name="change-the-duration-for-a-microsoft-365-retention-policy"></a>Microsoft 365アイテム保持ポリシーの期間を変更する
 
-Microsoft 365 アイテム保持ポリシーの保持期間を変更するには、セキュリティとコンプライアンス センター PowerShell のメールボックスのプロパティから関連付けられた GUID を使用して実行して、非アクティブなメールボックスに影響を与えるポリシーを最初に特定する必要があります。 `Get-RetentionCompliancePolicy` `InPlaceHolds`
+Microsoft 365アイテム保持ポリシーの保持期間を変更するには、まず、Security and Compliance Center PowerShell のメールボックスのプロパティから`InPlaceHolds`関連付けられた GUID を使用して実行`Get-RetentionCompliancePolicy`することで、非アクティブなメールボックスに影響を与えるポリシーを特定する必要があります。
 
-このコマンドを実行する場合は、必ず GUID からプレフィックスとサフィックスを削除してください。  たとえば、上記のサンプル情報を使用すると、その値を取得して削除し、ポリシー `InPlaceHolds` `mbxcdbbb86ce60342489bff371876e7f224:3` GUID `mbx` `:3` を取得します `cdbbb86ce60342489bff371876e7f224` 。  この例では、次のコマンドを実行します。
+このコマンドを実行するときは、必ず GUID からプレフィックスとサフィックスを削除してください。  たとえば、上記のサンプル情報を使用すると、値を`InPlaceHolds``mbxcdbbb86ce60342489bff371876e7f224:3`取得してから削除`mbx`し`:3`、ポリシー GUID として `cdbbb86ce60342489bff371876e7f224`.  この例では、次を実行します。
 
 ```powershell
 Get-RetentionCompliancePolicy cdbbb86ce60342489bff371876e7f224 | FL Name
 ```
 
-ポリシーの名前が分かったら、コンプライアンス センターで保持ポリシーをMicrosoft 365できます。  通常、アイテム保持ポリシーは複数の場所に適用されるので、ポリシーを変更すると、非アクティブとアクティブの両方の適用場所 (Exchange 以外の場所も含まれる場合があります) に影響を与える点に注意してください。  詳細については、「アイテム保持ポリシーの [作成と構成」を参照してください](create-retention-policies.md)。  
+ポリシーの名前がわかったら、Microsoft 365 コンプライアンス センターでアイテム保持ポリシーを変更するだけです。  通常、アイテム保持ポリシーは複数の場所に適用されるため、ポリシーを変更すると、適用されているすべての場所 (非アクティブとアクティブの両方) に影響します。これには、Exchange以外の場所も含まれる場合があります。  詳細については、「 [アイテム保持ポリシーの作成と構成](create-retention-policies.md)」を参照してください。  
 
 > [!IMPORTANT]
-> 保持ロックが有効 [になっているアイテム](retention-preservation-lock.md) 保持ポリシーでは、保持期間が延長されますが、減少または削除は行えなく場合があります。
+> [保持ロック](retention-preservation-lock.md)が有効になっているアイテム保持ポリシーは、保持期間を延長できますが、減少または削除することはできません。
 
-非アクティブなメールボックス、または特定の非アクティブなメールボックスの保持期間のみを変更する場合は、Azure AD 属性と Exchange[](retention.md#adaptive-or-static-policy-scopes-for-retention)属性とプロパティを使用して、特定のメールボックス (非アクティブ メールボックスなど) を個別にターゲットに設定できるアダプティブ ポリシー スコープを展開する場合があります。
+非アクティブなメールボックス、または特定の非アクティブなメールボックスのみの保持期間を変更する場合は、アダプティブ ポリシー スコープを展開することを検討できます。これは、特定のメールボックス (または非アクティブなメールボックスなど) を個別にターゲット設定するために使用できる[アダプティブ ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)を、Azure ADおよびExchange属性とプロパティを使用して行うことができます。
 
-### <a name="change-the-duration-for-a-microsoft-365-retention-label"></a>アイテム保持ラベルの期間Microsoft 365変更する
+### <a name="change-the-duration-for-a-microsoft-365-retention-label"></a>Microsoft 365保持ラベルの期間を変更する
 
-保持ポリシーと同様に、Microsoft 365 保持ラベルの保持期間を変更する場合は、セキュリティとコンプライアンス センター PowerShell のメールボックスのプロパティから関連付けられた GUID を使用して実行することにより、非アクティブなメールボックス内のコンテンツに影響を与えるラベルを発行するポリシーを最初に特定する必要があります。 `Get-RetentionCompliancePolicy` `InPlaceHolds`
+アイテム保持ポリシーと同様に、Microsoft 365アイテム保持ラベルの保持期間を変更する場合は、まず、Security and Compliance Center PowerShell のメールボックスのプロパティから`InPlaceHolds`関連付けられた GUID を使用して実行`Get-RetentionCompliancePolicy`することで、非アクティブなメールボックス内のコンテンツに影響を与えるラベルを公開するポリシーを特定する必要があります。
 
-このコマンドを実行する場合は、必ず GUID からプレフィックスとサフィックスを削除してください。  たとえば、上記のサンプル情報を使用すると、その値を取得して削除し、ポリシー `InPlaceHolds` `mbx6fe063689d404a5bb9940eed0f0bf5d2:1` GUID `mbx` `:1` を取得します `6fe063689d404a5bb9940eed0f0bf5d2` 。  この例では、次のコマンドを実行します。
+このコマンドを実行するときは、必ず GUID からプレフィックスとサフィックスを削除してください。  たとえば、上記のサンプル情報を使用すると、値を`InPlaceHolds``mbx6fe063689d404a5bb9940eed0f0bf5d2:1`取得してから削除`mbx`し`:1`、ポリシー GUID として `6fe063689d404a5bb9940eed0f0bf5d2`.  この例では、次を実行します。
 
 ```powershell
 Get-RetentionCompliancePolicy 6fe063689d404a5bb9940eed0f0bf5d2 | FL Name
 ```
 
-ポリシーを特定したら、発行済みラベルとその設定を知る必要があります。  ラベルは個々のアイテムに適用されます。ポリシーで発行されたラベルの数と設定によっては、コンテンツに影響を与えるラベルを直接識別できない場合があります。  
+ポリシーを特定すると、発行されたラベルとその設定がわかります。  ラベルは個々のアイテムに適用されるため、ポリシーとその設定で発行されたラベルの数によっては、コンテンツに影響を与えているラベルを直接特定できない場合があります。  
 
-各ラベルが適用するコンテンツを識別するために使用できる方法の 1 つは、コンテンツ検索 [を使用する方法です](content-search.md)。  たとえば、上記のサンプル情報を使用して、ポリシーが複数のラベルを発行するとします。そのうちの 1 つは "HR-Content" という名前です。  正しい [アクセス](microsoft-365-compliance-center-permissions.md)許可を使用すると [、New-ComplianceSearch PowerShell](/powershell/module/exchange/new-compliancesearch)コマンドを使用してコンテンツ検索を実行し、非アクティブなメールボックスのプライマリ SMTP アドレスを指定し、事前にピリオド ( ) を付け、検証をスキップするパラメーターを指定 `.` `-AllowNotFoundExchangeLocationsEnabled $true` できます。
+各ラベルが適用されるコンテンツを識別するために使用できる方法の 1 つは、 [Content Search](content-search.md) を使用することです。  たとえば、上記のサンプル情報を使用して、ポリシーが複数のラベルを発行するとします。そのうちの 1 つは "HR-Content" という名前です。  [適切なアクセス許可](microsoft-365-compliance-center-permissions.md)を使用すると、[New-ComplianceSearch PowerShell コマンド](/powershell/module/exchange/new-compliancesearch)を使用してコンテンツ検索を実行し、非アクティブなメールボックスのプライマリ SMTP アドレス (ピリオド (`.`) を事前に指定し、検証を`-AllowNotFoundExchangeLocationsEnabled $true`スキップするパラメーターを指定できます。
 
 ```powershell
 New-ComplianceSearch -Name "MeganB Inactive Mailbox HR-Content Label Search" -ExchangeLocation .meganb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true -ContentMatchQuery "compliancetag=HR-Content"
 ```
 
-検索が作成されると、次のコマンドを使用して検索を開始します。
+検索が作成されたら、次のコマンドを使用して検索を開始します。
 
 ```powershell
 Start-ComplianceSearch "MeganB Inactive Mailbox HR-Content Label Search"
 ```
 
-この方法を使用すると、非アクティブなメールボックス内のコンテンツに適用される識別されたラベル ポリシーのラベルを特定して、保持期間を変更できます。 通常、保持ラベルは複数の場所に適用されるので、ラベルを変更すると、適用された場所とラベル付きコンテンツすべてが影響を受け、Exchange 以外の場所やコンテンツも含まれる場合があります。 詳細については、「アイテム保持ラベルを [作成してアプリに適用する」を参照してください](create-apply-retention-labels.md)。
+この方法を使用すると、識別されたラベル ポリシーのどのラベルが非アクティブなメールボックス内のコンテンツに適用され、保持期間を変更できるかを特定できます。 保持ラベルは通常、複数の場所に適用されるため、ラベルを変更すると、適用されたすべての場所とラベル付けされたコンテンツに影響します。これには、Exchange以外の場所やコンテンツも含まれる場合があります。 詳細については、「 [アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)」を参照してください。
 
 > [!NOTE]
-> すべての種類の保持ラベルを変更できるではありません。  一部のラベルでは、保持時間を増やしたり、保持期間を変更したりできない場合があります。
+> すべての種類の保持ラベルを変更できるわけではありません。  一部のラベルでは、リテンション期間を長くすることしかできない場合もあれば、保持期間をまったく変更できない場合もあります。
 
 ### <a name="change-the-duration-for-an-ediscovery-hold"></a>電子情報開示ホールドの期間を変更する
 
-電子情報開示ケースに関連付けられた保留は無期限の保留です。つまり、変更できる保持期間はありません。 アイテムは永遠に保持されます。またはホールドが [削除されるまで](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold) 、またはケースが閉じられます。
+電子情報開示ケースに関連付けられている保留は無期限の保留であり、変更できる保留期間がないことを意味します。 アイテムは無期限に保持されるか、 [保持が削除されるか](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold) 、ケースが閉じられるまで保持されます。
   
 ### <a name="change-the-duration-for-a-litigation-hold"></a>訴訟ホールドの期間を変更する
 
-非アクティブなメールボックスExchange Online訴訟ホールドの保持期間を変更するには、PowerShell を使用する必要があります。 EAC を使用することはできません。 保持期間を変更するには、次のコマンドを実行します。 この例では、保持期間は無制限の期間に変更されます。
+Exchange Online PowerShell を使用して、非アクティブなメールボックスに配置される訴訟ホールドのホールド期間を変更する必要があります。 EAC を使用することはできません。 保持期間を変更するには、次のコマンドを実行します。 この例では、保留期間は無制限の期間に変更されます。
   
 ```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldDuration unlimited
@@ -266,27 +266,27 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 ### <a name="change-the-duration-for-an-in-place-hold"></a>インプレース ホールドの期間を変更する
 
-In-Place保留は廃止され、変更できなくなりました。 非アクティブなメールボックスにIn-Place保持が適用されている場合は、保持期間を変更できません。 削除できるのは、非アクティブなIn-Place削除される保留リストの保持のみです。 詳細については、「非アクティブな [メールボックスを削除する」を参照してください](delete-an-inactive-mailbox.md#remove-in-place-holds)。
+In-Place保留は廃止され、変更できなくなります。 非アクティブなメールボックスにIn-Place保留が適用されている場合、保留期間を変更することはできません。 In-Placeホールドのみを削除すると、非アクティブなメールボックスが削除されます。 詳細については、「 [非アクティブなメールボックスを削除する」を](delete-an-inactive-mailbox.md#remove-in-place-holds)参照してください。
   
 ## <a name="more-information"></a>詳細情報
 
 - **非アクティブなメールボックス内のアイテムの保持期間はどのように計算されますか。** 保持期間は、メールボックス アイテムを受信または作成した最初の日付から計算されます。
     
-- **保持期間を過ぎるとどうなりますか。** [回復可能なアイテム] フォルダー内のアイテムの保持期間を過ぎると、アイテムは非アクティブなメールボックスから完全に削除 (消去) されます。 非アクティブなメールボックスに保持期間が指定されていない場合、回復可能なアイテム フォルダー内のアイテムは削除されません (非アクティブなメールボックスの保持期間が変更されていない限り)。 
+- **保持期間を過ぎるとどうなりますか。** [回復可能なアイテム] フォルダー内のアイテムの保持期間を過ぎると、アイテムは非アクティブなメールボックスから完全に削除 (消去) されます。 非アクティブなメールボックスに保持期間が指定されていない場合、回復可能なアイテム フォルダー内のアイテムは削除されません (非アクティブなメールボックスの保留期間が変更されない限り)。 
     
-- **非アクティブなメールボックスExchange MRM ポリシーは引き続き処理されますか?**  MRM アイテム保持ポリシーが非アクティブになる前にメールボックスに適用された場合、削除ポリシー (削除アクションで構成されたMRM 保持タグ) は、非アクティブなメールボックスで引き続き処理されます。 つまり、MRM 削除ポリシーでタグ付けされたアイテムは、保持期間が経過すると回復可能なアイテム フォルダーに移動されます。 それらのアイテムは保持期間を過ぎると非アクティブなメールボックスから消去されます。 非アクティブなメールボックスの保持期間が指定されていない場合、[回復可能なアイテム] フォルダー内のアイテムは無期限に保持されます。
+- **EXCHANGE MRM ポリシーは、非アクティブなメールボックスで引き続き処理されますか?**  MRM アイテム保持ポリシーが非アクティブになる前にメールボックスに適用された場合、削除ポリシー ( **削除** アクションで構成された MRM アイテム保持タグ) は、非アクティブなメールボックスで引き続き処理されます。 つまり、MRM 削除ポリシーでタグ付けされたアイテムは、保持期間の有効期限が切れると、回復可能なアイテム フォルダーに移動されます。 それらのアイテムは保持期間を過ぎると非アクティブなメールボックスから消去されます。 非アクティブなメールボックスの保持期間が指定されていない場合、[回復可能なアイテム] フォルダー内のアイテムは無期限に保持されます。
 
-    逆に、非アクティブなメールボックスに割り当てられた MRM 保持ポリシーに含まれるアーカイブ ポリシー **(MoveToArchive** アクションで構成された MRM 保持タグ) は無視されます。 つまり、非アクティブなメールボックス内のアーカイブ ポリシーのタグが付けられたアイテムは、保持期間を過ぎてもプライマリ メールボックスに残ります。 それらのアイテムは、アーカイブ メールボックスやアーカイブ メールボックス内の [回復可能なアイテム] フォルダーに移動されません。 無期限に保持されます。
+    逆に、非アクティブなメールボックスに割り当てられている MRM アイテム保持ポリシーに含まれるアーカイブ ポリシー ( **MoveToArchive** アクションで構成された MRM リテンション タグ) は無視されます。 つまり、非アクティブなメールボックス内のアーカイブ ポリシーのタグが付けられたアイテムは、保持期間を過ぎてもプライマリ メールボックスに残ります。 それらのアイテムは、アーカイブ メールボックスやアーカイブ メールボックス内の [回復可能なアイテム] フォルダーに移動されません。 無期限に保持されます。
     > [!NOTE]
-    > ユーザー アカウントExchange削除しても、ユーザー 保持ポリシー (Exchange Online のメッセージング レコード管理 (MRM) 機能) を適用しても、非アクティブなメールボックスは作成されません。
+    > Exchangeアイテム保持ポリシー (Exchange Onlineのメッセージング レコード管理または MRM 機能) を適用しても、ユーザー アカウントが削除されたときに非アクティブなメールボックスは作成されません。
 
-- **通常のメールボックスと同様に、管理フォルダー アシスタント (MFA) は非アクティブなメールボックスも処理します。** このExchange Online MFA は約 7 日に 1 回メールボックスを処理します。 非アクティブなメールボックスの保持期間を変更したなら、 **Start-ManagedFolderAssistant** コマンドレットを使用して、非アクティブなメールボックスの新しい保持期間の処理を直ちに開始します。 次のコマンドを実行します。 
+- **通常のメールボックスと同様に、マネージド フォルダー アシスタント (MFA) も非アクティブなメールボックスを処理します。** Exchange Onlineでは、MFA はメールボックスを約 7 日に 1 回処理します。 非アクティブなメールボックスの保持期間を変更したなら、 **Start-ManagedFolderAssistant** コマンドレットを使用して、非アクティブなメールボックスの新しい保持期間の処理を直ちに開始します。 次のコマンドを実行します。 
 
     ```powershell
     Start-ManagedFolderAssistant -InactiveMailbox <identity of inactive mailbox>
     ```
    
-- **多くの `InPlaceHolds` ユーザーが非アクティブなメールボックスに配置されている場合、すべての保留 GUID が表示されるのではありません。** 次のコマンドを実行して、非アクティブなメールボックスに配置されているすべての GUID `InPlaceHolds` を表示できます。
+- **多数 `InPlaceHolds` が非アクティブなメールボックスに配置されている場合、すべての保留 GUID が表示されるわけではありません。** 次のコマンドを実行して、非アクティブなメールボックスに配置されているすべての `InPlaceHolds` GUID を表示できます。
     
     ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds

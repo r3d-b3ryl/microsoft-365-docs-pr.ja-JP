@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティと管理に役立ちます。
-ms.openlocfilehash: fbd8df7bff6ffa24d2a951d86a85d699e0b1699f
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: aa5c6bb757604763e9ba7348d1d4f952a6555865
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781031"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935261"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Basic Mobility and Security でデバイス アクセス設定を管理する
 
@@ -38,7 +38,7 @@ Basic Mobility と Security を使用している場合は、Basic Mobility と 
     > [!IMPORTANT]
     > 初めて Basic Mobility and Security for Microsoft 365 Business Standardを使用する場合は、次の手順でアクティブ化します。[Basic Security and Mobility をアクティブ化](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)します。 アクティブ化したら、[Office 365 セキュリティ & コンプライアンス](https://protection.office.com/)を使用してデバイスを管理します。
 
-3. **デバイス管理** > **デバイス ポリシー**>データ損失防止に移動し、[**組織全体のデバイス アクセス設定の管理**] を選択します。
+3.  **データ損失防止** > **Device managementDevice** >  **ポリシー** に移動し、 **組織全体のデバイス アクセス設定を** 選択します。
 
 4. **[ブロック]** を選択します。 
 

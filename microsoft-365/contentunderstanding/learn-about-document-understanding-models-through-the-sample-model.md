@@ -1,5 +1,5 @@
 ---
-title: Microsoft ドキュメントのサンプル ドキュメント理解モデルをインポートSharePoint Syntex
+title: Microsoft SharePoint Syntex のサンプル ドキュメント理解モデルをインポートする
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: サンプル モデルを使用したドキュメント理解モデルについて説明します。
-ms.openlocfilehash: 6e7c680bcb136b52e0b3c9821471d922d43b614b
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 210d5865a6e3208faff16fe1ce14748ee66d63c8
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281172"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916207"
 ---
-# <a name="import-a-sample-document-understanding-model-for-microsoft-sharepoint-syntex"></a>Microsoft ドキュメントのサンプル ドキュメント理解モデルをインポートSharePoint Syntex
+# <a name="import-a-sample-document-understanding-model-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のサンプル ドキュメント理解モデルをインポートする
 
-SharePoint Syntexを確認するために使用できるサンプル モデルを提供し、独自のモデルを作成する方法をよりよく理解できます。 サンプルモデルでは、分類子、抽出子、説明などのモデル コンポーネントを調べることもできます。 サンプル ファイルを使用して、モデルをトレーニングすることもできます。
+SharePoint Syntexでは、調査に使用できるサンプル モデルが提供され、独自のモデルを作成する方法について理解を深めることができます。 サンプルモデルでは、分類子、抽出子、説明などのモデル コンポーネントを調べることもできます。 サンプル ファイルを使用して、モデルをトレーニングすることもできます。
 
 ## <a name="import-the-sample-model"></a>サンプルモ デルをインポートする
 
@@ -43,9 +43,9 @@ SharePoint Syntexを確認するために使用できるサンプル モデル�
 - 別の抽出子を追加します。 たとえば、*割引料金* を抽出するものを追加します。
 - モデルをドキュメント ライブラリに適用し、トレーニング ファイルの一部をアップロードして、モデルがファイルを分類し、ファイルからデータを抽出する方法を確認します。
 
-## <a name="get-sample-models"></a>サンプル モデルの取得
+## <a name="get-sample-models"></a>サンプル モデルを取得する
 
-ドキュメント理解モデルの[異SharePoint Syntex](https://github.com/pnp/syntex-samples)使用パターンを示すコミュニティ サンプルを含むサンプル リポジトリにアクセスできます。 このリポジトリのサンプルには、ドキュメント理解モデル ファイルと、モデルのトレーニングに使用されるファイルの両方が含まれています。 インポートしたら、これらのモデルを使用してファイルを処理し、分類子と抽出器を表示および編集できます。
+ドキュメント理解モデルのさまざまな使用パターンを示すコミュニティ サンプルを含む、[SharePoint Syntex サンプル リポジトリ](https://github.com/pnp/syntex-samples)にアクセスできます。 このリポジトリのサンプルには、ドキュメント理解モデル ファイルと、モデルのトレーニングに使用されるファイルの両方が含まれています。 インポートしたら、これらのモデルを使用してファイルを処理し、分類子と抽出器を表示および編集できます。
 
 ## <a name="see-also"></a>関連項目
 [分類子を作成する](create-a-classifier.md)

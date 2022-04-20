@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 監査ログの保持ポリシーは、Microsoft 365 の新しい高度な監査機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
-ms.openlocfilehash: f8c269aa4541c438942c69831857ed531681b742
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 監査ログの保持ポリシーは、新しい Microsoft Purview 監査 (プレミアム) 機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
+ms.openlocfilehash: 7f745baa78ebf61c0d32d39c49e3158b2418553f
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198747"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934869"
 ---
 # <a name="manage-audit-log-retention-policies"></a>監査ログの保持ポリシーを管理する
 
-Microsoft 365 コンプライアンス センターで監査ログの保持ポリシーを作成および管理できます。 監査ログの保持ポリシーは、Microsoft 365 の新しい高度な監査機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。 監査ログは、最大 10 年間保持できます。 次の条件を基にしてポリシーを作成できます。
+Microsoft Purview コンプライアンス ポータルで監査ログの保持ポリシーを作成および管理できます。 監査ログの保持ポリシーは、新しい Microsoft Purview 監査 (プレミアム) 機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。 監査ログは、最大 10 年間保持できます。 次の条件を基にしてポリシーを作成できます。
 
 - 1 つまたは複数の Microsoft 365 サービスのすべてのアクティビティ
 - すべてのユーザーまたは特定のユーザーによって実行された (Microsoft 365 サービス内の) 特定のアクティビティ
@@ -34,26 +34,26 @@ Microsoft 365 コンプライアンス センターで監査ログの保持ポ�
 
 ## <a name="default-audit-log-retention-policy"></a>既定の監査ログの保持ポリシー
 
-Microsoft 365 の高度な監査には、すべての組織の既定の監査ログの保持ポリシーが用意されています。 このポリシーは、Exchange Online、SharePoint Online、OneDrive for Business、および Azure Active Directory のすべての監査レコードを 1 年間保持します。 この既定のポリシーは、**Workload** プロパティ (アクティビティが発生したサービス) の **Exchange**、**SharePoint**、**OneDrive**、**AzureActiveDirectory** の値を含む監査レコードを保持します。 既定のポリシーは変更できません。 既定のポリシーに含まれている各ワークロードのレコード種類の一覧については、この記事の「[詳細情報](#more-information)」を参照してください。
+Microsoft 365 の監査 (プレミアム) には、すべての組織の既定の監査ログの保持ポリシーが用意されています。 このポリシーは、Exchange Online、SharePoint Online、OneDrive for Business、および Azure Active Directory のすべての監査レコードを 1 年間保持します。 この既定のポリシーは、**Workload** プロパティ (アクティビティが発生したサービス) の **Exchange**、**SharePoint**、**OneDrive**、**AzureActiveDirectory** の値を含む監査レコードを保持します。 既定のポリシーは変更できません。 既定のポリシーに含まれている各ワークロードのレコード種類の一覧については、この記事の「[詳細情報](#more-information)」を参照してください。
 
 > [!NOTE]
 > 既定の監査ログの保持ポリシーは、Office 365 または Microsoft 365 E5 ライセンスが割り当てられているユーザー、または Microsoft 365 E5 コンプライアンスまたは Microsoft 365 E5 eDiscovery and Audit アドオン ライセンスを持つユーザーが実行したアクティビティの監査レコードにのみ適用されます。 組織に E5 以外のユーザーまたはゲスト ユーザーがいる場合、こうしたユーザーに対応する監査レコードは 90 日間保持されます。
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>監査ログの保持ポリシーを作成する前に
 
-- 監査保持ポリシーを作成または変更するには、Microsoft 365 コンプライアンス センターの組織構成の役割を割り当てる必要があります。
+- 監査保持ポリシーを作成または変更するには、コンプライアンス ポータルの組織構成の役割を割り当てる必要があります。
 
 - 組織では、最大 50 個の監査ログの保持ポリシーを設定できます。
 
 - 監査ログを 90 日以上 (最大 1 年) 保持するには、(監査されるアクティビティの実行により) 監査ログを生成したユーザーに Office 365 E5 または Microsoft 365 E5 ライセンスを割り当てるか、または Microsoft 365 E5 Compliance または E5 eDiscovery および監査アドオン ライセンスが必要です。 監査ログを 10 年間保持するには、監査ログを生成するユーザーに対して、E5 ライセンスに加えて、10 年間の監査ログ保持のアドオン ライセンスも割り当てられる必要があります。
 
-- 組織によって作成されるすべてのカスタム監査ログの保持ポリシーは、既定の保持ポリシーよりも優先されます。 たとえば、保持期間が 1 年未満の Exchange メールボックス アクティビティに対して監査ログの保持ポリシーを作成すると、Exchange メールボックス アクティビティの監査レコードは、カスタム ポリシーで指定されている短い期間保持されます。
+- 組織によって作成されるすべてのカスタム監査ログの保持ポリシーは、既定の保持ポリシーよりも優先されます。たとえば、保持期間が 1 年未満の Exchange メールボックス アクティビティに対して監査ログの保持ポリシーを作成すると、Exchange メールボックス アクティビティの監査レコードは、カスタム ポリシーで指定されている短い期間保持されます。
 
 ## <a name="create-an-audit-log-retention-policy"></a>監査ログの保持ポリシーを作成する
 
-1. <https://compliance.microsoft.com> に移動し、Microsoft 365 コンプライアンス センターの [アクセス許可] ページで組織構成の役割が割り当てられているユーザー アカウントでサインインします。
+1. <https://compliance.microsoft.com> に移動し、コンプライアンス ポータルの [アクセス許可] ページで組織構成の役割が割り当てられているユーザー アカウントでサインインします。
 
-2. Microsoft 365 コンプライアンス センターの左側のウィンドウで、**[監査]** をクリックします。
+2. コンプライアンス ポータルの左側のウィンドウで、**[監査]** をクリックします。
 
 3. **[監査保持ポリシー]** タブをクリックします。
 
@@ -79,7 +79,7 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
 新しいポリシーは、**[監査保持ポリシー]** タブの一覧に表示されます。
 
-## <a name="manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センターで監査ログの保持ポリシーを管理する
+## <a name="manage-audit-log-retention-policies-in-the-compliance-portal"></a>コンプライアンス ポータルで監査ログの保持ポリシーを管理する
 
 監査ログの保持ポリシーは、**[監査保持ポリシー]** タブ (*ダッシュボード* とも呼ばれる) に一覧表示されます。 ダッシュボードを使用して、監査保持ポリシーを表示、編集、および削除できます。
 

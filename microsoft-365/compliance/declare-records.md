@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用してレコードを宣言する。
-ms.openlocfilehash: 228ce06cbc646f60703443a00492693019dfa0b8
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 23dd6c61d9da787eecd2e1fa825fe338d961d1d1
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836135"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911457"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>保持ラベルを使用してレコードを宣言する
 
@@ -69,7 +69,7 @@ Microsoft 365 コンプライアンス センターの **レコード管理** �
 
 詳細な手順については、以下を参照してください。
 
-- [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
+- [アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)
 
 - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md) (規制レコードはサポート対象外です)
 

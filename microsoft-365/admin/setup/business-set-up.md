@@ -29,32 +29,32 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: ドメインとユーザーの追加Microsoft 365 Business Premiumセキュリティ ポリシーの設定など、ユーザーのセットアップ手順について説明します。
-ms.openlocfilehash: b4d12d34e535a58c952a752fca63af6f67e30a61
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: ドメインとユーザーの追加、セキュリティ ポリシーの設定など、Microsoft 365 Business Premiumのセットアップ手順について説明します。
+ms.openlocfilehash: 69d158d7193a2f07c6b4c23557474f1458e2fb51
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312391"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935897"
 ---
-# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>セットアップ ウィザードMicrosoft 365 Business Premiumの設定
+# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>セットアップ ウィザードでMicrosoft 365 Business Premiumを設定する
 
-## <a name="watch-overview-of-microsoft-365-setup"></a>ウォッチ: ユーザー設定Microsoft 365概要
+## <a name="watch-overview-of-microsoft-365-setup"></a>ウォッチ: Microsoft 365セットアップの概要
 
-このビデオでは、セットアップの概要をMicrosoft 365 Business Premiumしてください。<br><br>
+Microsoft 365 Business Premiumセットアップの概要については、このビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-## <a name="watch-set-up-microsoft-365-business-premium"></a>ウォッチ: 設定Microsoft 365 Business Premium
+## <a name="watch-set-up-microsoft-365-business-premium"></a>ウォッチ: Microsoft 365 Business Premiumを設定する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
 
-1. [セットアップに <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">移動] Microsoft 365 管理センター</a>にサインインし、[**セットアップに移動] を選択します**。 セットアップ ウィザードが起動します。
-1. セットアップが完了したら、Microsoft 管理センターに戻します。 管理センターでは、[セットアップ] ページで、Windows 10、DLP などの機能を **引き続き設定** できます。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>にサインインし、[**セットアップに移動**] を選択します。 セットアップ ウィザードが起動します。
+1. セットアップが完了したら、Microsoft 管理センターに戻ります。 管理センターでは、[**セットアップ]** ページで、Windows 10 ポリシー、DLP などの機能の設定を続行できます。
 
-## <a name="add-your-domain-users-and-set-up-policies"></a>ドメイン、ユーザー、およびポリシーの設定を追加する
+## <a name="add-your-domain-users-and-set-up-policies"></a>ドメイン、ユーザー、ポリシーの設定を追加する
 
-アカウントを購入Microsoft 365 Business Premium、所有するドメインを使用するか、サインアップ中に購入[するかのオプションがあります](../admin-overview/sign-up-for-office-365.md)。
+Microsoft 365 Business Premiumを購入する場合は、自分が所有するドメインを使用するか、[サインアップ](../admin-overview/sign-up-for-office-365.md)中にドメインを購入するかのオプションがあります。
 
 - サインアップ時に新しいドメインを購入した場合、お客様のドメインはすべてセットアップされており、[[ユーザーを追加してライセンスを割り当てる](#add-users-and-assign-licenses)] に移動することができます。
 
@@ -76,7 +76,7 @@ ms.locfileid: "63312391"
     ![[サインインのカスタマイズ] ページのスクリーンショット。](../../media/adddomain.png)
 
     
-4. ウィザードの手順に従って、ドメインを所有Microsoft 365 DNS ホスティング プロバイダーで [DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) レコードを作成します。 ドメイン ホストがわかっている場合は、「[Microsoft 365 にドメインを追加する](/microsoft-365/admin/setup/add-domain)」も参照してください。
+4. ウィザードの手順に従って、ドメインを所有していることを確認する[Microsoft 365の DNS ホスティング プロバイダーで DNS レコードを作成](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)します。 ドメイン ホストがわかっている場合は、「[Microsoft 365 にドメインを追加する](/microsoft-365/admin/setup/add-domain)」も参照してください。
 
     ご利用のホスティング プロバイダーが GoDaddy または [Domain Connect](/office365/admin/get-help-with-domains/domain-connect) を有効にした別のホストである場合、プロセスは簡単です。サインインし、お客様に代わって Microsoft が認証するよう自動的に求められます。
 
@@ -88,11 +88,11 @@ ms.locfileid: "63312391"
 
 #### <a name="add-users-in-the-wizard"></a>ウィザードでユーザーを追加する
 
-ウィザードで追加したユーザーには、自動的にライセンスが割りMicrosoft 365 Business Premiumされます。
+ウィザードに追加するすべてのユーザーには、Microsoft 365 Business Premium ライセンスが自動的に割り当てられます。
 
 ![ウィザードの [新しいユーザーの追加] ページのスクリーンショット。](../../media/addnewuserspage.png)
 
-1. サブスクリプションにMicrosoft 365 Business Premium既存のユーザーが含まれています (たとえば、Azure AD Connect を使用した場合)、ライセンスを今すぐ割り当てるオプションが表示されます。 続行して、これらのユーザーにもライセンスを追加します。
+1. Microsoft 365 Business Premium サブスクリプションに既存のユーザーが存在する場合 (たとえば、Azure AD Connectを使用した場合)、ライセンスを割り当てるオプションが表示されます。 続行して、これらのユーザーにもライセンスを追加します。
 
 2. ユーザーを追加した後、資格証明書をそれらの新規ユーザーに共有するオプションが提供されます。それらをプリントアウトや電子メールで通知、またはダウンロードすることができます。
 
@@ -103,7 +103,7 @@ ms.locfileid: "63312391"
   
 サービスを設定するには、DNS ホストまたはドメイン レジストラーにあるレコードを更新する必要があります。
   
-1. セットアップ ウィザードでは通常、ユーザーのレジストラーが検出され、レジストラーの Web サイトで NS レコードを更新するための詳しい操作手順へのリンクが表示されます。 設定しない場合は、ネームサーバーを変更して、ドメイン [レジストラー Microsoft 365設定します](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。 
+1. セットアップ ウィザードでは通常、ユーザーのレジストラーが検出され、レジストラーの Web サイトで NS レコードを更新するための詳しい操作手順へのリンクが表示されます。 そうでない場合は、[ドメイン レジストラーでMicrosoft 365を設定するようにネームサーバーを変更します](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。 
 
     - 既存の DNS レコード (たとえば、既存の Web サイト) を持っているのに、DNS ホストが [Domain Connect](/office365/admin/get-help-with-domains/domain-connect) に対して有効になっている場合には、[**レコードを追加してもらう**] を選択します。 [**オンライン サービスの選択**] ページで、すべて規定値のまま [**次へ**] を選択し、DNS ホストのページで [**承認**] を選択します。
     - 他の DNS ホストとの間に既存の DNS レコードがある場合 (Domain Connect では有効になっていません)、既存のサービスが接続されたままになっていることを確認するために、自分の DNS レコードを管理したいと思うかもしれません。詳しくは [ドメインの基礎](/office365/admin/get-help-with-domains/dns-basics) を参照してください。
@@ -114,31 +114,31 @@ ms.locfileid: "63312391"
 
 ### <a name="protect-your-organization"></a>組織を保護する 
 
-ウィザードで設定したポリシーは、[すべてのユーザー] というセキュリティ [グループ](/office365/admin/create-groups/compare-groups#security-groups) に自動的 *に適用されます*。 管理センターでポリシーを割り当てる追加のグループを作成することもできます。
+ウィザードで設定したポリシーは、*すべてのユーザー* という [セキュリティ グループ](/office365/admin/create-groups/compare-groups#security-groups)に自動的に適用されます。 管理センターでポリシーを割り当てる追加のグループを作成することもできます。
 
-1. 高度な **サイバー脅威からの** 保護を強化する場合は、既定を受け入れて、Office 365 [Advanced Threat Protection](../../security/office-365-security/defender-for-office-365.md) がアプリ内のファイルとリンクをスキャンOffice勧めします。
+1. **高度なサイバー脅威からの保護を強化** する場合は、既定を受け入れて、[Office 365 Advance Threat Protection がOffice](../../security/office-365-security/defender-for-office-365.md) アプリ内のファイルとリンクをスキャンできるようにすることをお勧めします。
 
     ![[保護の強化] ページのスクリーンショット。](../../media/increasetreatprotection.png)
 
 
-2. [機密データの漏洩を防止する] ページで、Office 365 データ損失防止 (DLP) を有効にし、Office アプリ内の機密データを追跡し、組織外でこれらのデータを誤って共有しないようにするには、既定値を受け入れる必要があります。
+2. [**機密データの漏えいを防ぐ**] ページで、既定の設定をそのまま使用して、Microsoft Purview データ損失防止を有効にして、Office アプリで機密データを追跡し、組織外でこれらのデータが誤って共有されないようにします。
 
-3. [モバイル **用データの保護Office**] ページで、モバイル アプリの管理をオンのままにし、設定を展開して確認し、[モバイル アプリ管理ポリシーの作成] **を選択します**。
+3. [**モバイル向けのOfficeのデータの保護**] ページで、モバイル アプリの管理をオンのままにし、設定を展開して確認してから、[**モバイル アプリ管理ポリシーの作成**] を選択します。
 
-    ![モバイル ページでデータを保護Officeスクリーンショット。](../../media/protectdatainmobile.png)
+    ![モバイル ページのOfficeのデータを保護するのスクリーンショット。](../../media/protectdatainmobile.png)
 
 
 ## <a name="secure-windows-10-pcs"></a>Windows 10 PC をセキュリティで保護する
 
-左側のナビゲーションで、[**セットアップ] を** 選択し、[サインインとセキュリティ] の下の [コンピューターのセキュリティ保護] **Windows 10します**。 [表示 **] を** 選択して開始します。 詳細な[手順については、「Windows 10コンピューターを](secure-win-10-pcs.md)セキュリティで保護する」を参照してください。
+左側のナビゲーションで **[セットアップ]** を選択し、[**サインインとセキュリティ] で** [**Windows 10 コンピューターのセキュリティ保護**] を選択します。 [ **表示]** を選択して作業を開始します。 詳細な手順については、「[Windows 10 コンピューターをセキュリティで保護](secure-win-10-pcs.md)する」を参照してください。
 
-## <a name="deploy-office-365-client-apps"></a>クライアント Office 365を展開する
+## <a name="deploy-office-365-client-apps"></a>クライアント アプリOffice 365展開する
 
-セットアップ中に Office アプリを自動的にインストールすることを選択した場合、ユーザーが作業資格情報を使用して Windows デバイスから Azure AD にサインインすると、アプリは Windows 10 デバイスにインストールされます。
+セットアップ中にOffice アプリを自動的にインストールすることを選択した場合、ユーザーがWindows デバイスからAzure ADにサインインすると、アプリはWindows 10 デバイスにインストールされます。アプリは、作業資格情報を使用します。
 
-モバイル iOS Office Android デバイスにインストールするには、「モバイル デバイスをユーザーに設定する」[をMicrosoft 365 Business Premiumしてください](set-up-mobile-devices.md)。
+モバイル iOS または Android デバイスにOfficeをインストールするには、「[Microsoft 365 Business Premium ユーザー向けのモバイル デバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。
 
-また、個別にOfficeインストールできます。 手順[については、「pc Office Mac にインストールする](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)」を参照してください。
+Officeを個別にインストールすることもできます。 手順については、「[PC または Mac にOfficeをインストール](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)する」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 

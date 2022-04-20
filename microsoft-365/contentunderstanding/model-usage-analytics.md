@@ -1,5 +1,5 @@
 ---
-title: Microsoft Web サイトでのモデルの使い方をSharePoint Syntex
+title: Microsoft SharePoint Syntexでのモデルの使用方法を分析する
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: ドキュメントの理解とフォーム処理モデルの実行方法に関する詳細を確認する方法について学習します。
-ms.openlocfilehash: ddd4d602deae0fb871989e4739470a19b97b0238
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+description: ドキュメントの理解とフォーム処理モデルのパフォーマンスに関する詳細を確認する方法について説明します。
+ms.openlocfilehash: e9586bbbd8510611747b81424f1fbe494f212cc5
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450522"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916185"
 ---
-# <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Microsoft Web サイトでのモデルの使い方をSharePoint Syntex
+# <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexでのモデルの使用方法を分析する
 
 </br>
 

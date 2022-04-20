@@ -1,5 +1,5 @@
 ---
-title: エラーの処理を処理Advanced eDiscovery
+title: 電子情報開示で処理エラーを処理する (プレミアム)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,23 +17,23 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: さまざまな形式のデータを処理する方法の概要をAdvanced eDiscovery。
-ms.openlocfilehash: 9f44593983256079150ad48954c5f1883f836083
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 電子情報開示 (プレミアム) でさまざまな形式のデータを処理する方法の概要。
+ms.openlocfilehash: 043e1b2b023fdd4e379116109069674515153524
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179033"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936315"
 ---
-# <a name="work-with-processing-errors-in-advanced-ediscovery"></a>エラーの処理を処理Advanced eDiscovery
+# <a name="work-with-processing-errors-in-ediscovery-premium"></a>電子情報開示で処理エラーを処理する (プレミアム)
 
-*処理* とは、ファイルの識別、埋め込みドキュメントと添付ファイルの拡張、テキスト抽出、画像ファイルの光学式文字認識 (OCR)、その後のコンテンツのインデックス作成のプロセスです。  
+*処理* は、ファイル識別、埋め込みドキュメントと添付ファイルの拡張、テキスト抽出、および画像ファイルの光学式文字認識 (OCR) とそのコンテンツの後続のインデックス作成のプロセスです。  
 
-保管担当者と保管担当者以外のデータ ソースを [ソース] タブのケースに追加すると、Microsoft 365 のすべての部分的にインデックス付けされたアイテムが処理され、完全に検索可能になります。 同様に、コンテンツがレビュー セットに追加される場合は、Microsoft 365データ ソースと非 Microsoft 365 データ ソースの両方から、このコンテンツも処理されます。
+[**ソース**] タブのケースにカストディアンデータ ソースと非カストディアン データ ソースを追加すると、Microsoft 365から部分的にインデックスが作成されたすべてのアイテムが処理され、完全に検索できるようになります。 同様に、Microsoft 365データ ソースと非Microsoft 365 データ ソースの両方からレビュー セットにコンテンツが追加されると、このコンテンツも処理されます。
 
-Advanced eDiscovery の [**処理**] タブでは、さまざまな処理シナリオの高度なインデックスの状態を把握できます。
+電子情報開示 (プレミアム) の [**処理**] タブには、さまざまな処理シナリオの高度なインデックス作成の状態に関する分析情報が表示されます。
 
-詳細については、次の資料を参照してください。
+詳細については、次の記事を参照してください。
 
 - [カストディアン データの詳細なインデックス処理](indexing-custodian-data.md)
 

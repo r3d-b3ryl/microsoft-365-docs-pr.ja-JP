@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet によって運用されるOffice 365用の Azure Information Protection (AIP) と、中国のお客様向けに Azure Information Protection (AIP) を構成する方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3b4906844c76293a1163d17d77b009528ef32f12
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 0f495139a807d4a0eeb3181626717c6d5061fc38
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782899"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935217"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet によって運用されるOffice 365の Azure Information Protection サポート
 
@@ -62,7 +62,7 @@ ms.locfileid: "64782899"
 中国のお客様向けに AIP を構成するには:
 1. [テナントの Rights Management を有効にします](#step-1-enable-rights-management-for-the-tenant)。
 
-1. [Microsoft Information Protection Sync Service サービス プリンシパルを追加します](#step-2-add-the-microsoft-information-protection-sync-service-service-principal)。
+1. [Microsoft Purview Information Protection Sync Service サービス プリンシパルを追加します](#step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal)。
 
 1. [DNS 暗号化を構成します](#step-3-configure-dns-encryption)。
 
@@ -86,9 +86,9 @@ ms.locfileid: "64782899"
 
 2. 機能状態が次の場合は `Disabled`、実行します `Enable-AipService`。
 
-### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>手順 2: Microsoft Information Protection Sync Service サービス プリンシパルを追加する
+### <a name="step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal"></a>手順 2: Microsoft Purview Information Protection Sync Service サービス プリンシパルを追加する
 
-**Microsoft Information Protection Sync Service サービス** プリンシパルは、既定では Azure China テナントでは使用できず、Azure Information Protectionに必要です。 Azure Az PowerShell モジュールを使用して、このサービス プリンシパルを手動で作成します。
+**Microsoft Purview Information Protection Sync Service サービス** プリンシパルは、既定では Azure China テナントでは使用できず、Azure Information Protectionに必要です。 Azure Az PowerShell モジュールを使用して、このサービス プリンシパルを手動で作成します。
 
 1. Azure Az モジュールがインストールされていない場合は、Azure Az モジュールをインストールするか、Azure Cloud Shellなどの Azure Az モジュールがプレインストールされているリソース[を使用します](/azure/cloud-shell/overview)。 詳細については、「 [Azure Az PowerShell モジュールのインストール](/powershell/azure/install-az-ps)」を参照してください。
 
@@ -98,7 +98,7 @@ ms.locfileid: "64782899"
     Connect-azaccount -environmentname azurechinacloud
     ```
 
-1. [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) コマンドレットと `870c4f2e-85b6-4d43-bdda-6ed9a579b725` **Microsoft Information Protection Sync Service** のアプリケーション ID を使用して、Microsoft Information Protection Sync Service サービス プリンシパルを手動で作成します。
+1. [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) コマンドレットと `870c4f2e-85b6-4d43-bdda-6ed9a579b725` **Microsoft Purview Information Protection Sync Service** のアプリケーション ID を使用して、Microsoft Purview Information Protection Sync Service サービス プリンシパルを手動で作成します。
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725

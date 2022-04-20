@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Microsoft 365 コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: 8d283148b0a0cee0aed3d91a6332c96bd31111b4
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+description: Microsoft Purview コンプライアンス ポータルの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
+ms.openlocfilehash: 23eeff8078dbd7ab65b0bddb9684aa81d65aab94
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64846970"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936249"
 ---
 # <a name="search-for-and-delete-email-messages"></a>メール メッセージを検索して削除する
 
@@ -43,10 +43,10 @@ ms.locfileid: "64846970"
 
 - この記事で説明されている検索と消去のワークフローでは、Microsoft Teams からチャット メッセージやその他のコンテンツは削除されません。 手順 2 で作成したコンテンツ検索で Microsoft Teams からアイテムが返された場合、手順 3 でアイテムを消去しても、それらのアイテムは削除されません。 チャット メッセージを検索および削除するには、「[ Teams でのチャット メッセージの検索と消去](search-and-delete-Teams-chat-messages.md)」 を参照してください。
 
-- コンテンツ検索を作成して実行するには、**電子情報開示マネージャー** ロール グループのメンバーであるか、Microsoft 365 コンプライアンス センターの **コンプライアンス検索** ロールが割り当てられている必要があります。メッセージを削除するには、**組織の管理** 役割グループのメンバーであるか、Microsoft 365 コンプライアンス センターで **検索と消去** の役割が割り当てられている必要があります。ユーザーを役割グループに追加する方法の詳細については、「[電子情報開示権限を割り当てる](assign-ediscovery-permissions.md)」をご覧ください。
+- コンテンツ検索を作成して実行するには、**電子情報開示マネージャー** ロール グループのメンバーであるか、Microsoft Purview コンプライアンス ポータルの **コンプライアンス検索** ロールが割り当てられている必要があります。メッセージを削除するには、**組織の管理** 役割グループのメンバーであるか、Microsoft 365 コンプライアンス センターで **検索と消去** の役割が割り当てられている必要があります。ユーザーを役割グループに追加する方法の詳細については、「[電子情報開示権限を割り当てる](assign-ediscovery-permissions.md)」をご覧ください。
 
   > [!NOTE]
-  > **組織の管理** ロール グループは、Exchange Online と Microsoft 365 コンプライアンス センターの両方にあります。 これらは、異なる権限を持つ個別の役割グループです。 Exchange Online で **組織の管理** のメンバーであっても、メール メッセージを削除するために必要なアクセス許可は付与されません。 Microsoft 365 コンプライアンス センターで **検索と消去** の役割が (直接、または **組織の管理** などの役割グループを通じて) 割り当てられていない場合、手順 3 で **New-ComplianceSearchAction** コマンドレットを実行し、"パラメーター名 'Purge' と一致するパラメーターが見つかりません" というエラー メッセージが表示されます。
+  > **組織の管理** の役割グループは、Exchange Online とコンプライアンス ポータルの両方にあります。 これらは、異なる権限を持つ個別の役割グループです。 Exchange Online で **組織の管理** のメンバーであっても、メール メッセージを削除するために必要なアクセス許可は付与されません。 Microsoft 365 コンプライアンス センターで **検索と消去** の役割が (直接、または **組織の管理** などの役割グループを通じて) 割り当てられていない場合、手順 3 で **New-ComplianceSearchAction** コマンドレットを実行し、"パラメーター名 'Purge' と一致するパラメーターが見つかりません" というエラー メッセージが表示されます。
 
 - メッセージを削除するには、セキュリティ/コンプライアンス センターの PowerShell を使用する必要があります。 接続方法については、[手順 1](#step-1-connect-to-security--compliance-center-powershell) を参照してください。
 
@@ -56,7 +56,7 @@ ms.locfileid: "64846970"
 
 - この記事の手順は、Exchange Online のメールボックスとパブリック フォルダーにあるアイテムを削除する場合にのみ使用できます。 SharePoint や OneDrive for Business のサイトからコンテンツを削除する場合には使用できません。
 
-- Advanced eDiscovery ケースのレビュー セット内のメール アイテムは、この記事の手順で削除することはできません。 これは、レビュー セット内のアイテムはライブ サービスではなく、Azure ストレージの場所に保存されるからです。 これは、手順 1 で作成したコンテンツ検索では返されないことを意味します。 レビュー セット内のアイテムを削除するには、レビュー セットが含まれている Advanced eDiscovery ケースを削除する必要があります。 詳細については、「[Close or delete an Advanced eDiscovery case (Advanced eDiscovery ケースを閉じるか、または削除する)](close-or-delete-case.md)」を参照してください。
+- 電子情報開示 (プレミアム) ケースのレビュー セット内のメール アイテムは、この記事の手順で削除することはできません。 これは、レビュー セット内のアイテムはライブ サービスではなく、Azure ストレージの場所に保存されるからです。 これは、手順 1 で作成したコンテンツ検索では返されないことを意味します。 レビュー セット内のアイテムを削除するには、レビュー セットが含まれている電子情報開示 (プレミアム) ケースを削除する必要があります。 詳細については、「[Close or delete an eDiscovery (Premium) case (電子情報開示 (プレミアム) ケースを閉じるか、または削除する)](close-or-delete-case.md)」を参照してください。
 
 ## <a name="step-1-connect-to-security--compliance-center-powershell"></a>手順 1: セキュリティ/コンプライアンス センターの PowerShell に接続する
 
@@ -64,7 +64,7 @@ ms.locfileid: "64846970"
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>手順 2: コンテンツ検索を作成して、削除するメッセージを探す
 
-2 番目の手順は、組織のメールボックスから削除するメッセージを見つけるコンテンツ検索を作成し、実行することです。Microsoft 365 コンプライアンス センターを使用するか、セキュリティ/コンプライアンス PowerShell の **New-ComplianceSearch** コマンドレットと **Start-ComplianceSearch** コマンドレットを実行すると、検索を作成できます。[手順 3](#step-3-delete-the-message) で **New-ComplianceSearchAction** コマンドを実行すると、この検索のクエリに一致するメッセージは削除されます。コンテンツ検索を作成し、検索クエリを構成する方法については、次のトピックを参照してください。
+2 番目の手順は、組織のメールボックスから削除するメッセージを見つけるコンテンツ検索を作成し、実行することです。コンプライアンス ポータルを使用するか、セキュリティ/コンプライアンス PowerShell の **New-ComplianceSearch** コマンドレットと **Start-ComplianceSearch** コマンドレットを実行すると、検索を作成できます。[手順 3](#step-3-delete-the-message) で **New-ComplianceSearchAction** コマンドを実行すると、この検索のクエリに一致するメッセージは削除されます。コンテンツ検索を作成し、検索クエリを構成する方法については、次のトピックを参照してください。
 
 - [Office 365 のコンテンツ検索](content-search.md)
 
@@ -89,7 +89,7 @@ ms.locfileid: "64846970"
 
 - 検索結果をプレビューして、検索が、削除を希望するメッセージだけを返したことを確認します。
 
-- 検索見積もりの統計情報 (Microsoft 365 コンプライアンス センターの検索の詳細ウィンドウや、[Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) コマンドレットを使用して表示される情報) を使用して、結果の合計数のカウントを取得します。
+- 検索見積もりの統計情報 (コンプライアンス ポータルの検索の詳細ウィンドウや、[Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) コマンドレットを使用して表示される情報) を使用して、結果の合計数のカウントを取得します。
 
 不審な電子メール メッセージを検索するクエリの 2 つの例を次に示します。
 

@@ -21,12 +21,12 @@ search.appverid:
 description: IT 部分をケアするサブスクリプション サービス、Microsoft 365 Business Premium について説明します。
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: bee91aeb09fa2b2baff34c8f7d7193db6085b2a1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 48644f2b823c441ce6db8b10eac6213699792b9c
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765818"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934183"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -46,7 +46,7 @@ Microsoft 365 Business Premium にサインアップすると、Microsoft 365 Bu
 | 脅威から保護する | Microsoft 365 Business Premium は、高度な脅威保護機能を使用して脅威から保護するのに役立ちます。 これらの機能には、安全な添付ファイルと安全なリンク保護が含まれます。 <br/><br/>追加の セキュリティおよび脅威保護機能については、「[Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) (preview!)の概要」を参照してください。 |
 | セキュリティで保護されたビジネス データ | 個人用データは PIN アクセス、制限付きコピーや保存によって個人のデバイスで保護されます。 情報保護を追加して、認証されたユーザーのみが機密情報にアクセスできるようにすることもできます。 |
 | デバイスをセキュリティで保護する | コピーや貼り付けなどのモバイルアクセスを制限することで、デバイス上の作業ファイルを保護することができます。 登録されているモバイル デバイスの紛失または盗難があった場合は、ビジネス データを選択的にデバイスからワイプすることもできます。 |
-| その他のセキュリティ機能 | Microsoft 365 Business Premium の高度な機能を使用すると、サイバー アタックからビジネスを保護し、機密情報を保護できます。 この機能には、Microsoft Defender for Office 365 プラン 1、データ損失防止ポリシー (DLP)、Exchange Online アーカイブ、Azure Information Protection、および Intune が含まれます。 |
+| その他のセキュリティ機能 | Microsoft 365 Business Premium の高度な機能を使用すると、サイバー アタックからビジネスを保護し、機密情報を保護できます。 この機能には、Microsoft Defender for Office 365 プラン 1、Microsoft Purview データ損失防止ポリシー (DLP)、Exchange Online アーカイブ、Azure Information Protection、Intune が含まれます。 |
 
 Microsoft Business Premium を使用している場合、以下のライブラリのガイダンスに従うと、最も手早くセキュリティ設定を行い安全に共同作業ができるでしょう: [中小企業向け Microsoft 365 およびキャンペーン ](../../business-premium/index.md)。 このガイダンスは、Microsoft Defending Democracy チームと協力して開発され、高度なハッカーによるサイバー攻撃から中小企業のユーザーを保護します。 
 

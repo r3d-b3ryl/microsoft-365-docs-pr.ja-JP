@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Lighthouse のアクセス許可の要件について詳しく説明します。
-ms.openlocfilehash: 1ab22fa48bb04673beb8f2b91cbbbaba2cd97804
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 62796df9e5bd5b437d06fe0c8ab6206e070c201b
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822756"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916123"
 ---
 # <a name="overview-of-permissions-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseのアクセス許可の概要
 
@@ -46,7 +46,7 @@ ms.locfileid: "64822756"
 
 | [Lighthouse] ページ | アカウント マネージャーで許可されているアクション| Service Desk の技術者が許可するアクション |システム管理者が許可するアクション | エスカレーション エンジニアが許可するアクション|
 |---|---|---|---|---|
-| Home  | <ul><li>すべてのデータを表示する</li></ul> | <ul><li>すべてのデータを表示する</li></ul> | <ul><li>すべてのデータを表示する</li></ul> | <ul><li>すべてのデータを表示する</li></ul> | 
+| ホーム  | <ul><li>すべてのデータを表示する</li></ul> | <ul><li>すべてのデータを表示する</li></ul> | <ul><li>すべてのデータを表示する</li></ul> | <ul><li>すべてのデータを表示する</li></ul> | 
 | テナント     | <ul><li>テナントの一覧を表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画を表示する</li></ul>  | <ul><li>テナントの一覧を表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画を表示する</li></ul>   |  <ul><li>テナントの一覧を表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画を表示する</li><li>Microsoft 365 サービスの使用状況を表示する</li></ul> | <ul><li>テナントの一覧を表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画を表示する</li><li>Microsoft 365 サービスの使用状況を表示する</li></ul>  |
 | ユーザー   | <ul><li>テナント レベル (ユーザー固有ではない) データを表示する</li><li>テナント間でユーザー アカウントを検索する</li><li>管理者以外のユーザーのパスワードをリセットする*</li></ul>  | <ul><li>すべてのユーザー固有のデータを表示する</li><li>テナント間でユーザー アカウントを検索する</li><li>管理者以外のユーザーのパスワードをリセットする*</li></ul>|  <ul><li>すべてのユーザー固有のデータを表示する</li><li>テナント間でユーザー アカウントを検索する</li><li>管理者以外のユーザーのパスワードをリセットする*</i><li>サインインをブロックする</li></ul>  | <ul><li>すべてのユーザー固有のデータを表示する</li><li>テナント間でユーザー アカウントを検索する</li><li>管理者以外のユーザーのパスワードをリセットする*</li><li>サインインをブロックする</li><li>侵害されたユーザーを確認する</li><li>ユーザーのリスクを無視する</li></ul> |
 | デバイス    | <ul><li>すべてのデータを表示する</li></ul> | <ul><li>すべてのデータを表示する</li></ul> | <ul><li>すべてのデータを表示する</li></ul> | <ul><li>すべてのデータを表示する</li><li>同期デバイス</li><li>デバイスの再起動</li><li>診断の収集</li></ul>|
@@ -79,7 +79,7 @@ Lighthouse の特定のアクションでは、パートナー テナントで�
 
 | パートナー テナント ロール | アクセス許可 |
 |--|--|
-| パートナー テナントのグローバル管理者 | <ul><li>Microsoft 365 管理センターで Lighthouse にサインアップします。</li><li>初回のエクスペリエンスでパートナー契約の変更を受け入れます。</li><li>テナントをアクティブ化して非アクティブ化します。</li><li>タグを作成、更新、削除します。</li><li>顧客テナントにタグを割り当てて削除します。</li></ul> |
+| パートナー テナントのグローバル管理者 | <ul><li>Microsoft 365 管理センターで Lighthouse にサインアップします。</li><li>初回のエクスペリエンスでパートナー契約の変更を受け入れます。</li><li>テナントをアクティブ化して非アクティブ化します。</li><li>タグを作成、更新、削除します。</li><li>顧客テナントにタグを割り当てて削除します。</li><li>監査ログを確認する</li></ul> |
 | 次のプロパティ セットで割り当てられた少なくとも 1 つのAzure AD ロールを持つパートナー テナント メンバー。<br>**microsoft.office365.supportTickets/allEntities/allTasks**<br>(Azure AD ロールの完全な一覧については、[組み込みロールAzure AD](/azure/active-directory/roles/permissions-reference)参照してください)。 | Lighthouse サービス要求を作成します。 |
 | 次の *要件の両方* を満たすパートナー テナント メンバー。 <ul><li>次のプロパティ セットで少なくとも 1 つのAzure ADロールが割り当てられています。<br>**microsoft.office365.serviceHealth/allEntities/allTasks**<br>(Azure AD ロールの完全な一覧については、[組み込みロールAzure AD](/azure/active-directory/roles/permissions-reference)参照してください)。</li><li>少なくとも 1 つの DAP 委任されたロールが割り当てられている (管理者エージェントまたはヘルプデスク エージェント)</li></ul> | サービスの正常性情報を表示します。 |
 

@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: トレーニング済みモデルを他のユーザーが利用できる方法と、Microsoft SharePoint Syntex で他のトレーニング済みモデルを適用する方法について説明します。
-ms.openlocfilehash: 9645b669c6fd419e8866d415cb5d2b0da56ab0e2
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+description: トレーニング済みモデルを他のユーザーが使用できるようにする方法と、Microsoft SharePoint Syntexで他のトレーニング済みモデルを適用する方法について説明します。
+ms.openlocfilehash: 758f6886af6606c57c50c5c4c88e35f7aeeaefe4
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072439"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916273"
 ---
 # <a name="publish-and-discover-models-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でのモデルの公開と検出
 
@@ -39,7 +39,7 @@ ms.locfileid: "61072439"
 
 3. この時点で、「**このモデルが利用可能なサイトを選択してください**」パネルは、ユーザーが管理者かどうかによって異なります。 
 
-    管理者の場合SharePointこのビューが表示されます。
+    SharePoint管理者の場合は、このビューが表示されます。
 
     ![他のユーザーに利用可能なモデルを使用する場所のオプションを示す [このモデルが利用可能なサイトを選択してください] パネルのスクリーンショット。](../media/content-understanding/select-sites.png)
 
@@ -47,7 +47,7 @@ ms.locfileid: "61072439"
     - **すべてのサイト** – このモデルは、他のユーザーが使用できるコンテンツ タイプ ギャラリーで使用できます。
     - **選択されたサイトのみ** – モデルを利用できるサイトを選択できます。 テキスト ボックスでクリックし、モデルを適用するサイトを検索して選択します。 ユーザーがアクセスできるサイトだけが表示されます。
 
-    管理者ではない *場合SharePoint* このビューが表示されます。
+    SharePoint管理者 *でない* 場合は、このビューが表示されます。
 
     ![利用可能なサイトが限られているエンドユーザー向けのオプションを示す [このモデルが利用可能なサイトを選択してください] パネルのスクリーンショット。](../media/content-understanding/select-site-user.png)
 

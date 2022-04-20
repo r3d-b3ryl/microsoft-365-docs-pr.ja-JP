@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツを管理する、Microsoft 365 向けのレコード管理ソリューションが必要であるのに、どこから開始すればいいかわからなくなっていませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: ba23aed20cbef05272bc33306df5fc1eebc6cb3f
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 02c16f9d1a9d42f59cf8bc27bdee38bcc2d10d73
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241181"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911392"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
 
@@ -41,7 +41,7 @@ Microsoft 365 のレコード管理ソリューションを使用して、組織
 
 4. **保持ラベルを発行して適用** します。保持ラベルは複数のポリシーで使用できる再利用可能な文書パーツで、ユーザーのワークフローに組み込むことができます。
 
-    - [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
+    - [アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)
     - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
 
 これらの手順とは別に、**コネクタを使用してソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームなどのサードパーティ データ** を、インポートしてアーカイブします。 このデータをオンライン メールボックスにインポートすると、Microsoft 365 コンプライアンスの記録管理だけでなく、コミュニケーション コンプライアンス、インサイダー リスクの管理、電子情報開示などの他のコンプライアンス ソリューションもサポートします。 詳細については、「[サードパーティ データのコネクタの詳細](archiving-third-party-data.md)」を参照してください。
@@ -73,10 +73,10 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 |----------------|---------------|
 |レコードを宣言する |[保持ラベルを使用してレコードを宣言する](declare-records.md)|
 |レコードを更新する |[SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する](record-versioning.md)|
-|管理者とユーザーが、以下でドキュメントと電子メールの保持および削除アクションを手動で適用できるようにする <br />-  SharePoint <br />- OneDrive <br />- Outlook および Outlook on the web|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
-|サイト管理者が、SharePoint ライブラリ、フォルダー、またはドキュメントセット内のすべてのコンテンツの既定の保持および削除アクションを設定できるようにする|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
-|Outlook のルールを使用して、ユーザーが電子メールの保持および削除アクションを自動的に適用できるようにする|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
-|管理者が保持アクションと削除アクションをドキュメント理解モデルに適用できるようにして、SharePoint ライブラリで識別されたドキュメントにこれらが自動的に適用されるようにします。|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
+|管理者とユーザーが、以下でドキュメントと電子メールの保持および削除アクションを手動で適用できるようにする <br />-  SharePoint <br />- OneDrive <br />- Outlook および Outlook on the web|[アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)|
+|サイト管理者が、SharePoint ライブラリ、フォルダー、またはドキュメントセット内のすべてのコンテンツの既定の保持および削除アクションを設定できるようにする|[アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)|
+|Outlook のルールを使用して、ユーザーが電子メールの保持および削除アクションを自動的に適用できるようにする|[アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)|
+|管理者が保持アクションと削除アクションをドキュメント理解モデルに適用できるようにして、SharePoint ライブラリで識別されたドキュメントにこれらが自動的に適用されるようにします。|[アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)|
 |ドキュメントと電子メールに保持および削除アクションを自動的に適用する |[保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)|
 |次のようなイベントが発生したときに保持期間を開始する  <br />- 従業員が退職する <br />- 契約満了 <br />- 製品の有効期間の終了| [イベントの発生時に保持を開始する](event-driven-retention.md)|
 |ポリシーの変更を制限して規制要件を満たす、または不正な管理者から保護する| [保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する](retention-preservation-lock.md)

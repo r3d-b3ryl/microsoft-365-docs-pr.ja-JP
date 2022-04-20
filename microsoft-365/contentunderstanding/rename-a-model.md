@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex でドキュメント理解モデルの名前を変更する方法とSharePoint Syntex。
-ms.openlocfilehash: b1ced765d7a69fdf8b9fe9eb44d6716a840bf8a0
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+description: Microsoft SharePoint Syntexでドキュメント理解モデルの名前を変更する方法と理由について説明します。
+ms.openlocfilehash: 0044b237705e6a716efb6133db392c68b82c7a25
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450298"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916141"
 ---
 # <a name="rename-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の文書理解モデルの名前を変更する
 

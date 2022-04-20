@@ -16,12 +16,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) とMicrosoft Defender for Office 365の保護機能全体に Standard および Strict ポリシー設定を適用する方法を学習できます
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2a74fce0242f0206218d6f7f2f13e61d9f0a3b6f
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 01fd969461b47b0208dcfd20ff608e829b6a3336
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847117"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915975"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー
 
@@ -57,10 +57,10 @@ ms.locfileid: "64847117"
 
   使用可能な条件と例外は次のとおりです。
 
-  - **ユーザー**: 指定したメールボックス、メール ユーザー、またはメール連絡先。
-  - **グループ**:
-    - 指定した配布グループまたはメールが有効なセキュリティ グループのメンバー。
-    - 指定したMicrosoft 365 グループ。
+  - **ユーザー**: 指定されたメールボックス、メール ユーザー、またはメール連絡先。
+  - **グループ**: 
+    - 指定された配布グループまたはメールが有効なセキュリティ グループのメンバー。
+    - 指定した Microsoft 365 グループ。
   - **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
 
   各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
@@ -80,6 +80,9 @@ ms.locfileid: "64847117"
   - 標準プリセット セキュリティ ポリシーと Strict **Preset Security Policy** という名前 **の**[スパム対策](configure-your-spam-filter-policies.md)ポリシー。
   - Standard Preset Security Policy と Strict **Preset Security Policy** という名前の [マルウェア対策](configure-anti-malware-policies.md)**ポリシー**。
   - **Standard Preset Security Policy と Strict Preset Security Policy** (スプーフィング設定) という名前の [EOP フィッシング対策](set-up-anti-phishing-policies.md#spoof-settings)**ポリシー**。
+
+  > [!NOTE]
+  > 送信スパム ポリシーは、事前設定されたセキュリティ ポリシーの一部ではありません。 既定の送信スパム ポリシーは、事前設定されたセキュリティ ポリシーのメンバーを自動的に保護します。 または、カスタム送信スパム ポリシーを作成して、事前設定されたセキュリティ ポリシーのメンバーの保護をカスタマイズすることもできます。 詳細については、「 [EOP で送信スパム フィルターを構成する](configure-the-outbound-spam-policy.md)」を参照してください。
 
 - **Microsoft Defender for Office 365 ポリシー**: これには、Microsoft 365 E5またはDefender for Office 365アドオン サブスクリプションを持つ組織が含まれます。
   - **Standard Preset Security Policy と Strict Preset Security Policy** という名前のMicrosoft Defender for Office 365のフィッシング対策 **ポリシー**。次のものが含まれます。

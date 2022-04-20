@@ -17,34 +17,34 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Microsoft サポート ケースの電子情報開示診断情報を収集する方法について説明します。
-ms.openlocfilehash: cab21c71168119b27a478b99a19ad5693ffb678e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 13d3967adc6eddb6f0fc5a5b57119eb6c47114de
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871709"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64932202"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>電子情報開示の診断情報を収集する
 
-場合によっては、Microsoft サポート エンジニアは、Core eDiscovery または電子情報開示に関連するサポート ケースを開く際に、問題に関する特定の情報をAdvanced eDiscovery。 この記事では、サポート エンジニアが問題を調査および解決するために診断情報を収集する方法に関するガイダンスを提供します。 通常、Microsoft サポート エンジニアからこの情報の収集を求めるまで、この情報を収集する必要があります。
+Microsoft Purview 電子情報開示 (Standard) または Microsoft Purview 電子情報開示 (プレミアム) に関連するサポート ケースを開くときに、Microsoft サポートエンジニアが問題に関する特定の情報を必要とする場合があります。 この記事では、エンジニアが問題を調査して解決するのに役立つ診断情報を収集する方法に関するガイダンスを提供します。 通常、Microsoft サポート エンジニアから要求されるまで、この情報を収集する必要はありません。
 
 > [!IMPORTANT]
-> この記事で説明するコマンドレットと診断情報からの出力には、組織内の訴訟や内部調査に関する機密情報が含まれる場合があります。 生の診断情報を Microsoft サポートに送信する前に、情報を確認し、機密情報 (訴訟や調査の関係者に関する名前や他の情報など) を置き換えてやり直す必要があります `XXXXXXX` 。 このメソッドを使用すると、Microsoft サポート エンジニアに情報が再編集されたというメッセージも表示されます。
+> この記事で説明するコマンドレットと診断情報からの出力には、組織内の訴訟または内部調査に関する機密情報が含まれる場合があります。 未加工の診断情報をMicrosoft サポートに送信する前に、情報を確認し、機密情報 (訴訟または調査の当事者に関する名前やその他の情報など) を編集`XXXXXXX`する必要があります。 このメソッドを使用すると、Microsoft サポート エンジニアにも情報が編集されたことを示します。
 
-## <a name="collect-diagnostic-information-for-core-ediscovery"></a>Core eDiscovery の診断情報を収集する
+## <a name="collect-diagnostic-information-for-ediscovery-standard"></a>電子情報開示の診断情報を収集する (Standard)
 
-Core eDiscovery の診断情報の収集はコマンドレットベースなので、コンプライアンス センター PowerShell でセキュリティ &使用する必要があります。 次の PowerShell の例では、コマンドレットを実行し、指定したテキスト ファイルに出力を保存します。 ほとんどのサポートケースでは、これらのコマンドのいずれかを実行する必要があります。
+電子情報開示 (Standard) の診断情報の収集はコマンドレットベースであるため、Security & Compliance Center PowerShell を使用する必要があります。 次の PowerShell の例では、コマンドレットを実行し、指定したテキスト ファイルに出力を保存します。 ほとんどのサポート ケースでは、これらのコマンドの 1 つだけを実行する必要があります。
 
-次のコマンドレットを実行するには、コンプライアンス センター [PowerShell &に接続します </span> ](/powershell/exchange/connect-to-scc-powershell)。 接続が終わると、次の 1 つ以上のコマンドを実行し、プレースホルダーを実際のオブジェクト名に置き換える必要があります。
+次のコマンドレットを実行するには、 [Security & Compliance Center PowerShell に接続します</span>](/powershell/exchange/connect-to-scc-powershell)。 接続したら、次のコマンドのうち 1 つ以上を実行し、プレースホルダーを実際のオブジェクト名に置き換えてください。
 
-生成されたテキスト ファイルを確認し、機密情報を編集した後、ケースに取り組む Microsoft サポート エンジニアに送信します。
+生成されたテキスト ファイルを確認し、機密情報を編集した後、ケースで作業しているMicrosoft サポート エンジニアに送信します。
 
 > [!NOTE]
-> また、このセクションのコマンドを実行して、検索とエクスポートの診断情報を収集し、このセクションの[コンテンツ検索] ページに一覧表示Microsoft 365 コンプライアンス センター。
+> このセクションのコマンドを実行して、Microsoft Purview コンプライアンス ポータルの **コンテンツ検索** ページに一覧表示されている検索とエクスポートの診断情報を収集することもできます。
 
 ### <a name="collect-information-about-searches"></a>検索に関する情報を収集する
 
-次のコマンドは、コンテンツ検索またはコア電子情報開示ケースに関連付けられた検索に関する問題を調査するときに役立つ情報を収集します。
+次のコマンドは、コンテンツ検索または電子情報開示 (Standard) ケースに関連する検索に関する問題を調査するときに役立つ情報を収集します。
 
 ```powershell
 Get-ComplianceSearch "<Search name>" | FL > "ComplianceSearch.txt"
@@ -52,15 +52,15 @@ Get-ComplianceSearch "<Search name>" | FL > "ComplianceSearch.txt"
 
 ### <a name="collect-information-about-search-actions"></a>検索アクションに関する情報を収集する
 
-次のコマンドは、コンテンツ検索または Core 電子情報開示ケースに関連付けられた検索の結果をプレビュー、エクスポート、または削除する際の問題を調査するために情報を収集します。 [エクスポート] タブに表示されているエクスポートをクリックすると、検索アクションの名前 **を識別** できます。プレビューアクションと削除アクションの名前を識別するには **、Get-ComplianceSearchAction** コマンドレットを実行して、すべてのアクションの一覧を表示できます。 検索アクション名の形式は、対応する検索の名前に 、を追加 `_Preview` `_Export` `_Purge` して作成されます。
+次のコマンドは、コンテンツ検索または電子情報開示 (Standard) ケースに関連付けられた検索の結果のプレビュー、エクスポート、または削除に関する問題を調査するための情報を収集します。 [ **エクスポート** ] タブに一覧表示されているエクスポートをクリックすると、検索アクションの名前を識別できます。プレビューアクションと消去アクションの名前を識別するには、 **Get-ComplianceSearchAction** コマンドレットを実行して、すべてのアクションの一覧を表示します。 検索アクション名の形式は、対応する検索の名前に追加するか、`_Export`または`_Purge`追加`_Preview`することによって作成されます。
 
 ```powershell
 Get-ComplianceSearchAction "<Search action name>" | FL > "ComplianceSearchAction.txt"
 ```
 
-### <a name="collect-information-about-ediscovery-holds"></a>電子情報開示ホールドに関する情報を収集する
+### <a name="collect-information-about-ediscovery-holds"></a>電子情報開示保留に関する情報を収集する
 
-Core 電子情報開示ケースに関連付けられている電子情報開示ホールドが期待通り機能しない場合は、次のコマンドを実行して、電子情報開示ホールドのケースホールド ポリシーと関連付けられたケースホールド ルールに関する情報を収集します。 次 *のコマンドのケース* 保持ポリシー名は、電子情報開示ホールドの名前と同じです。 この名前は、コア電子 **情報開示ケースの [** 保留] タブで識別できます。
+電子情報開示 (Standard) ケースに関連付けられている電子情報開示ホールドが期待どおりに機能しない場合は、次のコマンドを実行して、ケースホールド ポリシーと電子情報開示ホールドに関連するケースホールド ルールに関する情報を収集します。 次のコマンドの *ケース ホールド ポリシー名* は、電子情報開示ホールドの名前と同じです。 この名前は、電子情報開示 (Standard) ケースの **[保留]** タブで識別できます。
 
 ```powershell
 Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--CaseHoldRule--";Get-CaseHoldRule -Policy $_.Name | FL} > "eDiscoveryCaseHold.txt"
@@ -68,26 +68,26 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>すべてのケース情報を収集する
 
-Microsoft サポートが問題を調査するために必要な情報が明らかではない場合があります。 この状況では、コア電子情報開示ケースのすべての診断情報を収集できます。 次 *のコマンドのコア* 電子情報開示ケース名は、次のコマンドの [コア電子情報開示] ページに表示されるケースの名前と同Microsoft 365 コンプライアンス センター。
+場合によっては、問題を調査するためにMicrosoft サポートが必要とする情報が明らかでない場合があります。 このような場合は、電子情報開示 (Standard) ケースのすべての診断情報を収集できます。 次のコマンドの *電子情報開示 (Standard) ケース名* は、コンプライアンス ポータルの **電子情報開示 (Standard)** ページに表示されるケースの名前と同じです。
 
 ```powershell
-Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
+Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
-## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>ユーザーの診断情報をAdvanced eDiscovery
+## <a name="collect-diagnostic-information-for-ediscovery-premium"></a>電子情報開示の診断情報を収集する (プレミアム)
 
-ケース **設定** の [Advanced eDiscovery] タブを使用すると、ケースの診断情報をすばやくコピーできます。 診断情報はクリップボードに保存され、テキスト ファイルに貼り付け、Microsoft サポートに送信できます。
+電子情報開示 (**プレミアム**) ケースの [設定] タブでは、ケースの診断情報をすばやくコピーできます。 診断情報はクリップボードに保存されるため、テキスト ファイルに貼り付けてMicrosoft サポートに送信できます。
 
-1. [電子情報開示] Microsoft 365 コンプライアンス センターに移動し、[**電子情報開示の詳細設定] を**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**選択します**</a>。
+1. コンプライアンス ポータルに移動し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**eDiscoveryAdvanced**</a> >  を選択します。
 
-2. ケースを選択し、[追加] タブ **設定** します。
+2. ケースを選択し、[**設定**] タブをクリックします。
 
-3. [ケース **情報] で、[** 選択] **をクリックします**。
+3. [ **ケース情報**] の [選択] をクリック **します**。
 
-4. [フライアウト] ページで、[**アクション**  >  **] [サポート情報の** コピー] をクリックして、情報をクリップボードにコピーします。
+4. ポップアップ ページで[**ActionsCopy のサポート情報****]** > をクリックして、情報をクリップボードにコピーします。
 
-5. テキスト ファイル (メモ帳) を開き、テキスト ファイルに情報を貼り付けます。
+5. テキスト ファイル (メモ帳 で) を開き、テキスト ファイルに情報を貼り付けます。
 
-6. テキスト ファイルを保存し、名前を付けます `AeD Diagnostic Info YYYY.MM.DD` (たとえば `AeD Diagnostic Info 2020.11.03` )。
+6. テキスト ファイルを保存し、次のような`AeD Diagnostic Info YYYY.MM.DD`名前を付けます (たとえば)。 `AeD Diagnostic Info 2020.11.03`
 
-ファイルを確認して機密情報を編集した後、ケースに取り組む Microsoft サポート エンジニアに送信します。
+ファイルを確認し、機密情報を編集した後、ケースに取り組んでいるMicrosoft サポート エンジニアに送信します。

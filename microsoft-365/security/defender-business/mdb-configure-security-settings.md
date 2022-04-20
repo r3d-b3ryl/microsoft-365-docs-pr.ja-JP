@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ff24d246172337923b145a8dbd64db58a671aa9e
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 22c2de998f4d4cfadb0262ccedf04decc01ce226
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861798"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916295"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでセキュリティ ポリシーと設定を表示および編集する
 
@@ -31,7 +31,12 @@ ms.locfileid: "64861798"
 
 ## <a name="overview"></a>概要
 
-会社のデバイスをMicrosoft Defender for Businessにオンボードしたら、次の手順ではセキュリティ ポリシーと設定を表示し、必要に応じて編集します。 構成するセキュリティ ポリシーは次のとおりです。
+会社のデバイスをMicrosoft Defender for Businessにオンボードしたら、次の手順ではセキュリティ ポリシーを確認します。 必要に応じて、セキュリティ ポリシーと設定を編集できます。 
+
+> [!TIP]
+> Defender for Business には、推奨設定を使用する事前構成済みのセキュリティ ポリシーが含まれています。 ただし、ビジネス ニーズに合わせて設定を編集できます。
+
+確認および構成するセキュリティ ポリシーは次のとおりです。
 
 - 会社のデバイスのウイルス対策とマルウェア対策の保護を決定する **[次世代保護ポリシー](#view-or-edit-your-next-generation-protection-policies)**
 - **[ファイアウォールの保護とルール](#view-or-edit-your-firewall-policies-and-custom-rules)**。会社のデバイスとの間で送受信できるネットワーク トラフィックを決定します
@@ -73,7 +78,7 @@ Defender for Business は、セットアップと構成プロセスを効率化�
 
 | オプション | 説明 |
 |:---|:---|
-| **Microsoft 365 Defender ポータルを使用** する (*推奨*) | Microsoft 365 Defender ポータル ([https://security.microsoft.com/](https://security.microsoft.com/)) は、会社のデバイス、セキュリティ ポリシー、およびセキュリティ設定を管理するためのワンストップ ショップです。 セキュリティ ポリシーと設定にアクセスし、 [脅威&脆弱性管理ダッシュボード](mdb-view-tvm-dashboard.md)を使用し、インシデントをすべて 1 か所で [表示および管理](mdb-view-manage-incidents.md) できます。 <br/><br/>Microsoft エンドポイント マネージャーを使用している場合は、Defender for Business にオンボードしたデバイスとセキュリティ ポリシーがエンドポイント マネージャーに表示されます。 詳細については、次の記事を参照してください。<br/><br/>- [Defender for Business の既定の設定とMicrosoft エンドポイント マネージャー](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Microsoft Defender for Businessのファイアウォール](mdb-firewall.md)   |
+| **Microsoft 365 Defender ポータルを使用** する (*推奨*) | Microsoft 365 Defender ポータル ([https://security.microsoft.com/](https://security.microsoft.com/)) は、会社のデバイス、セキュリティ ポリシー、およびセキュリティ設定を管理するためのワンストップ ショップです。 セキュリティ ポリシーと設定にアクセスし、 [脅威&脆弱性管理ダッシュボード](mdb-view-tvm-dashboard.md)を使用し、インシデントをすべて 1 か所で [表示および管理](mdb-view-manage-incidents.md) できます。 <br/><br/>Microsoft エンドポイント マネージャーを使用している場合は、Defender for Business にオンボードしたデバイスとセキュリティ ポリシーがエンドポイント マネージャーに表示されます。 詳細については、次の記事を参照してください。<br/>- [Defender for Business の既定の設定とMicrosoft エンドポイント マネージャー](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/>- [Microsoft Defender for Businessのファイアウォール](mdb-firewall.md)   |
 | **Microsoft エンドポイント マネージャーを使用する** | 会社が既に エンドポイント マネージャー (Microsoft Intuneを含む) を使用してセキュリティ ポリシーを管理している場合は、エンドポイント マネージャーを使用してデバイスとセキュリティ ポリシーを管理し続けることができます。 詳細については、「Microsoft Intuneの[エンドポイント セキュリティ ポリシーを使用したデバイス セキュリティの管理](/mem/intune/protect/endpoint-security-policy)」を参照してください。 <br/><br/>[Defender for Business で簡略化された構成プロセス](mdb-simplified-configuration.md)に切り替える場合は、後でポリシーの[競合](mdb-troubleshooting.yml)を回避するために、エンドポイント マネージャー内の既存のセキュリティ ポリシーをすべて削除するように求められます。 |
 
 > [!IMPORTANT]
@@ -138,16 +143,16 @@ Defender for Business には、次世代の保護、ファイアウォール、W
 
 次の表では、高度な機能の設定について説明します。
 
-| 設定 | 説明 |
+| Setting | 説明 |
 |:---|:---|
 | 自動調査 <br/>(既定でオンになっています) | アラートが生成されると、自動調査が発生する可能性があります。 各自動調査では、検出された脅威にアクションが必要かどうかを判断し、修復アクション (ファイルの検疫への送信、プロセスの停止、デバイスの分離、URL のブロックなど) を実行 (または推奨) します。 調査の実行中にその他の関連する警告が発生した場合は、それらの警告は調査が完了するまで調査に追加され続けます。 影響を受けるエンティティが他の場所で見られる場合、自動調査はそのエンティティを含むようにその範囲を拡大し、調査プロセスが繰り返されます。<br/><br/>[ **インシデント]** ページで調査を表示できます。 インシデントを選択し、[調査] タブ **を** 選択します。<br/><br/>[自動調査の詳細については、こちらを参照してください](../defender-endpoint/automated-investigations.md)。   |
-| ライブ応答 <br/>(既定でオンになっています) | Defender for Business には、次の種類の手動応答アクションが含まれています。 <br/>- ウイルス対策スキャンを実行する<br/>- デバイスを分離する<br/>- ファイルを停止して検疫する<br/>- ファイルをブロックまたは許可するインジケーターを追加する <br/><br/>[応答アクションの詳細については、こちらを参照してください](../defender-endpoint/respond-machine-alerts.md)。 |
+| ライブ応答  | Defender for Business には、次の種類の手動応答アクションが含まれています。 <br/>- ウイルス対策スキャンを実行する<br/>- デバイスを分離する<br/>- ファイルを停止して検疫する<br/>- ファイルをブロックまたは許可するインジケーターを追加する <br/><br/>[応答アクションの詳細については、こちらを参照してください](../defender-endpoint/respond-machine-alerts.md)。 |
 | サーバーのライブ応答 | (この設定は現在 Defender for Business では使用できません)   |
 | Live Response unsigned スクリプトの実行 | (この設定は現在 Defender for Business では使用できません)  | 
 | ブロック モードでEDRを有効にする<br/>(既定でオンになっています) | Microsoft Defender ウイルス対策がプライマリウイルス対策製品ではなく、デバイス上でパッシブ モードで実行されている場合に、悪意のあるアーティファクトからの保護を強化します。 ブロック モードのEDRは、EDR機能によって検出された悪意のあるアーティファクトを修復するためにバックグラウンドで機能します。 このような成果物は、Microsoft 以外のプライマリウイルス対策製品によって見逃されている可能性があります。 Microsoft Defender ウイルス対策をプライマリ ウイルス対策として実行しているデバイスの場合、ブロック モードのEDRは、違反後の動作EDR検出に対してMicrosoft Defender ウイルス対策が自動アクションを実行できるようにすることで、防御の追加レイヤーを提供します。<br/><br/>[ブロック モードでのEDRの詳細については、こちらを参照してください](../defender-endpoint/edr-in-block-mode.md)。 |
 | ファイルを許可またはブロックする <br/>(既定でオンになっています) | インジケーターを使用してファイルを許可またはブロック [できるようにします](../defender-endpoint/indicator-file.md)。 この機能を有効にするには、Microsoft Defender ウイルス対策がアクティブ モードで、[クラウド保護](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)を有効にする必要があります。<br/><br/>ファイルをブロックすると、組織内のデバイスで読み取り、書き込み、または実行できなくなります。 <br/><br/>[ファイルのインジケーターの詳細について説明します](../defender-endpoint/indicator-file.md)。  |
 | カスタム ネットワーク インジケーター<br/>(既定でオンになっています) | [ネットワーク インジケーター](../defender-endpoint/indicator-ip-domain.md)を使用して、IP アドレス、URL、またはドメインを許可またはブロックできるようにします。 この機能を有効にするには、Microsoft Defender ウイルス対策がアクティブ モードで[、ネットワーク保護](../defender-endpoint/enable-network-protection.md)を有効にする必要があります。<br/><br/>独自の脅威インテリジェンスに基づいて、IP、URL、またはドメインを許可またはブロックできます。 危険なアプリを開く場合は、プロンプトでユーザーに警告することもできます。 プロンプトではアプリの使用を停止しませんが、ユーザーに警告を提供できます。<br/><br/>[ネットワーク保護の詳細については、こちらを参照してください](../defender-endpoint/network-protection.md)。 |
-| 改ざん防止<br/>(この設定をオンにすることをお勧めします) | 改ざん防止は、悪意のあるアプリが次のようなアクションを実行するのを防ぎます。<br/>- ウイルスと脅威の保護を無効にする<br/>- リアルタイム保護を無効にする<br/>- 動作の監視をオフにする<br/>- クラウド保護を無効にする<br/>- セキュリティ インテリジェンス更新プログラムの削除<br/>- 検出された脅威に対する自動アクションを無効にする<br/><br/>改ざん防止は、基本的にMicrosoft Defender ウイルス対策をセキュリティで保護された既定値にロックし、アプリや承認されていない方法によってセキュリティ設定が変更されないようにします。 <br/><br/>[改ざん防止について詳しく説明します](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md)。  |
+| 改ざん防止<br/>(この設定をオンにすることをお勧めします) | 改ざん防止は、悪意のあるアプリが次のようなアクションを実行するのを防ぎます。<br/>- ウイルスと脅威の保護を無効にする<br/>- リアルタイム保護を無効にする<br/>- 動作の監視をオフにする<br/>- クラウド保護を無効にする<br/>- セキュリティ インテリジェンス更新プログラムの削除<br/>- 検出された脅威に対する自動アクションを無効にする<br/><br/>改ざん防止は、基本的にMicrosoft Defender ウイルス対策をセキュリティで保護された既定値にロックし、アプリや承認されていない方法によってセキュリティ設定が変更されないようにします。 <br/><br/>[改ざん防止の詳細については、こちらを参照してください](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md)。  |
 | ユーザーの詳細を表示する<br/>(既定でオンになっています) | 組織内のユーザーが、従業員の画像、名前、役職、部署などの詳細を表示できるようにします。 これらの詳細は、Azure Active Directory (Azure AD) に格納されます。<br/><br/>[Azure ADのユーザー プロファイルの詳細については、こちらを参照してください](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。  |
 | Skype for Business 統合<br/>(既定でオンになっています) | Skype for Businessは 2021 年 7 月に廃止されました。 Microsoft Teamsにまだ移行していない場合は、「[小規模ビジネスでMicrosoft Teamsを設定](/microsoftteams/deploy-small-business)する」を参照してください。 <br/><br/>Microsoft Teams (または以前のSkype for Business) と統合すると、ビジネス内のユーザー間のワンクリック通信が可能になります。   |
 | Web コンテンツ フィルタリング<br/>(既定でオンになっています) | 不要なコンテンツを含む Web サイトへのアクセスをブロックし、すべてのドメインで Web アクティビティを追跡します。 [Web コンテンツ フィルターの設定に関するページを](#set-up-web-content-filtering)参照してください。 |
@@ -167,12 +172,12 @@ Defender for Business には、次世代の保護、ファイアウォール、W
 
 次の表では、Defender for Business で表示 (および必要に応じて編集) する設定について説明します。
 
-| カテゴリ | 設定 | 説明 |
+| カテゴリ | Setting | 説明 |
 |:---|:---|:---|
 | **セキュリティ センター** | **タイム ゾーン** | インシデント、検出された脅威、および自動調査&修復に表示される日付と時刻に使用するタイム ゾーンを選択します。 UTC またはローカル タイム ゾーンを使用できます (*推奨*)。  |
 | **Microsoft 365 Defender** | **Account** | データの格納場所、テナント ID、組織 (組織) ID など、詳細を表示します。 |
 | **Microsoft 365 Defender**  | **プレビュー機能**  | プレビュー機能を有効にして、今後の機能と新機能を試します。 最初に新機能をプレビューし、フィードバックを提供することができます。 |
-| **エンドポイント**  | **メール通知** | 電子メール通知ルールを設定または編集します。 脆弱性が検出された場合、またはアラートが作成されると、電子メール通知ルールで指定された受信者に電子メールが送信されます。 [電子メール通知の詳細については、こちらを参照してください](mdb-email-notifications.md)。 |
+| **エンドポイント**  | **電子メール通知** | 電子メール通知ルールを設定または編集します。 脆弱性が検出された場合、またはアラートが作成されると、電子メール通知ルールで指定された受信者に電子メールが送信されます。 [電子メール通知の詳細については、こちらを参照してください](mdb-email-notifications.md)。 |
 | **エンドポイント**   | **デバイス管理** > **オンボーディング** | ダウンロード可能なスクリプトを使用して、デバイスを Defender for Business にオンボードします。 詳細については、「[デバイスをMicrosoft Defender for Businessにオンボードする](mdb-onboard-devices.md)」を参照してください。   |  
 | **エンドポイント**  |  **デバイス管理** > **オフボード** | Defender for Business からデバイスをオフボード (削除) します。 デバイスをオフボードすると、Defender for Business にデータが送信されなくなりますが、オフボードの前に受信したデータは保持されます。 詳細については、「デバイスの [オフボード](mdb-offboard-devices.md)」を参照してください。  |
 

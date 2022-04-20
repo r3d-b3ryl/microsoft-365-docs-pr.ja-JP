@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 224ed6ffb0fa44280f1b83d3a0f440d1a8571557
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 63684384f8f9d496767ef66ee6628653945ad8c9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738324"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935941"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -152,7 +152,7 @@ ms.locfileid: "64738324"
   
 3. **[すべてのレポートで非表示のユーザー、グループ、およびサイト名を表示する]** ステートメントのチェックを外し、変更を保存します。  
   
-レポート ダッシュボードのレポートで変更が有効になるまで数分かかります。 この設定は、[Microsoft Graph](/graph/api/resources/report) と [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) の Microsoft 365 使用状況レポート、および [Microsoft Teams 管理センターの使用状況レポート](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)にも適用されます。 特定可能なユーザー情報の表示は、Microsoft 365 コンプライアンス センター監査ログに記録されるイベントです。   
+レポート ダッシュボードのレポートで変更が有効になるまで数分かかります。 この設定は、[Microsoft Graph](/graph/api/resources/report) と [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) の Microsoft 365 使用状況レポート、および [Microsoft Teams 管理センターの使用状況レポート](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)にも適用されます。 特定可能なユーザー情報の表示は、Microsoft Purview コンプライアンス ポータル監査ログに記録されるイベントです。   
 
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>ユーザー アカウントが削除されたとき、使用状況データはどうなりますか?

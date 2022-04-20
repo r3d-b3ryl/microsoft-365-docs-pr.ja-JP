@@ -19,12 +19,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: PowerShell を使用して、ユーザーに割り当てられているMicrosoft 365 サービスを決定する方法について説明します。
-ms.openlocfilehash: 2789026e2e22bbae3e84e91ada7ad21af2252f03
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 7e5724acbff571825f1496db5d59e04e11ba3a67
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823962"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915997"
 ---
 # <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>PowerShell を使用Microsoft 365アカウント ライセンスとサービスの詳細を表示する
 
@@ -41,7 +41,7 @@ Microsoft 365では、ライセンス プラン (SKU または Microsoft 365 プ
 ライセンスの詳細を含むユーザー プロパティを読み取るには、User.Read.All アクセス許可スコープまたは[参照ページの [ユーザーの取得] Graph API](/graph/api/user-get)に一覧表示されている他のアクセス許可のいずれかが必要です。
 
 ```powershell
-Connect-Graph -Scopes User.Read.All
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
 次に、このコマンドを使用して、テナントのライセンス プランを一覧表示します。
@@ -68,7 +68,7 @@ $allSKUs | ForEach-Object {
 Get-MgUserLicenseDetail -UserId "<user sign-in name (UPN)>"
 ```
 
-例:
+次に例を示します。
 
 ```powershell
 Get-MgUserLicenseDetail -UserId "belindan@litwareinc.com"
