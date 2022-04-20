@@ -22,14 +22,16 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365の電子情報開示検索ツールを使用して検索できる電子メールとドキュメントのプロパティについて説明します。
-ms.openlocfilehash: 09c939f7d92bf06a9eab89d8ac45fec78bd424a8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f00d257a558d252ca0176166d42d02cd72dad0aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936645"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995384"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>電子情報開示のキーワード クエリと検索条件
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、Exchange Onlineの電子メール アイテムやMicrosoft Teamsチャット会話で検索できる電子メールとドキュメントのプロパティ、および Microsoft Purview コンプライアンス ポータルの電子情報開示検索ツールを使用してSharePointサイトとOneDrive for Business サイトに保存されているドキュメントについて説明します。 これには、コンテンツ検索、Microsoft Purview 電子情報開示 (Standard)、Microsoft Purview 電子情報開示 (プレミアム) が含まれます (電子情報開示での電子情報開示検索 (プレミアム) は *コレクション* と呼ばれます)。 また、セキュリティ/コンプライアンス センター PowerShell の **\*-ComplianceSearch** コマンドレットを使用してこれらのプロパティを検索することもできます。 この記事では、次についても説明します。
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: CellTrust SL2 データ コネクタを設定して使用して、モバイル通信データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 286546950c29732e1d33738ffbe7a74f2f6dcca2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a4cbfc9dccd2541de0a9dca1a3791d5f213aa73d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940689"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996396"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>CellTrust SL2 からMicrosoft 365にデータをアーカイブする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 CellTrust SL2 は、モバイル通信データをキャプチャし、主要なアーカイブ テクノロジと統合して、FINRA、HIPAA、FOIA、TCPA などの規制に関する電子探索要件を満たします。 SL2 Data Connector は、モバイル通信アイテムをMicrosoft 365にインポートします。 この記事では、アーカイブに CellTrust SL2 Data Connector を使用して、SL2 と Microsoft 365を統合するプロセスについて説明します。 このプロセスを完了するには、CellTrust SL2 サービスをサブスクライブしており、SL2 アーキテクチャに精通していることを前提としています。 CellTrust SL2 の詳細については、次を参照してください <https://www.celltrust.com>。
 

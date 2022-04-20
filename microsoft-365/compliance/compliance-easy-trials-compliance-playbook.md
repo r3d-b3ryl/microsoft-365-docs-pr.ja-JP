@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ソリューション試用版プレイブック。
-ms.openlocfilehash: 5136ceb33f4fb09345ee942b8d411d14952befc5
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 4544e07baa5b8d2b89991d9a31c84a2d7cefb7f8
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952778"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973775"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>試用版プレイブック: Microsoft Purview ソリューション
 
@@ -225,9 +225,9 @@ DLP ポリシーの構成は柔軟に行うことができます。 Teams やデ
 > [!TIP]
 > 試用版のベスト プラクティス: 1 日目
 
-Advanced eDiscovery にアクセスしたり、Advanced eDiscovery ケースのメンバーとして追加するには、ユーザーに適切なアクセス許可を割り当てる必要があります。
+電子情報開示 (プレミアム) にアクセスしたり、電子情報開示 (プレミアム) のケースのメンバーとして追加するには、ユーザーに適切なアクセス許可を割り当てる必要があります。
 
-1. [Advanced eDiscovery の設定 – 電子情報開示のアクセス許可を割り当てる](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
+1. [電子情報開示 (プレミアム) の設定 – 電子情報開示のアクセス許可を割り当てる](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
 1. [ケースでメンバーを追加または削除する](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 ### <a name="step-2-required-create-a-case"></a>手順 2 (必須): ケースの作成
@@ -235,9 +235,9 @@ Advanced eDiscovery にアクセスしたり、Advanced eDiscovery ケースの�
 > [!TIP]
 > 試用版のベスト プラクティス: 最初の 30 日以内に作成する
 
-より多くの企業が、重要な電子情報開示プロセスに Microsoft 365 の Advanced eDiscovery ソリューションを使用しています。 これには、規制の要求、調査、訴訟への対応などがあります。
+より多くの企業が、重要な電子情報開示プロセスに Microsoft 365 の電子情報開示 (プレミアム) ソリューションを使用しています。 これには、規制の要求、調査、訴訟への対応などがあります。
 
-1. Advanced eDiscovery を管理する - [Advanced eDiscovery の構成、セキュリティ/コンプライアンス センターを使用したケースの管理、Advanced eDiscovery でのワークフローの管理、Advanced eDiscovery の検索結果の分析などの方法を説明します](/learn/modules/manage-advanced-ediscovery)。
+1. 電子情報開示 (プレミアム) を管理する - [電子情報開示 (プレミアム) の構成、セキュリティ/コンプライアンス センターを使用したケースの管理、電子情報開示 (プレミアム) でのワークフローの管理、電子情報開示 (プレミアム) の検索結果の分析などの方法を説明します](/learn/modules/manage-advanced-ediscovery)。
 1. [Advanced eDiscovery の新しいケース形式を使用して電子情報開示ケースを作成する](advanced-ediscovery-new-case-format.md)
 1. [ケースを閉じるまたは削除します](close-or-delete-case.md) - 訴訟ケースまたは調査が完了したら、終了または削除できます。また、閉じたケースを再度開くこともできます。
 
@@ -245,9 +245,9 @@ Advanced eDiscovery にアクセスしたり、Advanced eDiscovery ケースの�
 
 組織内のユーザーがケースの作成と使用を開始するには、組織内のすべてのケースに適用されるグローバル設定を構成する必要があります。 現時点では、唯一のグローバル設定は、**弁護士/依頼人特権の検出** です (今後、より多くのグローバル設定が利用可能になります)。
 
-1. [Advanced eDiscovery の設定 – グローバル 設定](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
+1. [電子情報開示 (プレミアム) を設定する – グローバル設定](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [検索と分析の設定を構成する](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
-1. [Advanced eDiscovery でジョブを管理する](managing-jobs-ediscovery20.md)
+1. [電子情報開示 (プレミアム) でジョブを管理する](managing-jobs-ediscovery20.md)
 
 ### <a name="step-4-optional-compliance-boundaries"></a>手順 4 (省略可能): [コンプライアンスの境界](set-up-compliance-boundaries.md)
 
@@ -266,7 +266,7 @@ Advanced eDiscovery にアクセスしたり、Advanced eDiscovery ケースの�
 
 Microsoft Purview コンプライアンス ポータルのコンテンツ検索ツールを使用して、Exchange メールボックスのメール、SharePoint サイトおよび OneDrive ロケーションのドキュメント、Skype for Business のインスタント メッセージングの会話をすばやく検索できます。 コンテンツ検索ツールは、Microsoft Teams や Microsoft 365 グループなどのコラボレーション ツール内のメール、ドキュメント、インスタント メッセージングの会話を検索するために使用できます。
 
-- [Advanced eDiscovery 検索に関する詳細情報](search-for-content.md#search-for-content)
+- [電子情報開示 (プレミアム) の検索に関する詳細情報](search-for-content.md#search-for-content)
 
 ## <a name="information-protection"></a>情報保護
 

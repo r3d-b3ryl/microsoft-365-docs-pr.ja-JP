@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: 検疫済みメッセージに関するよく寄せられる質問
+  title: 検疫済みメッセージに関する FAQ
   f1.keywords:
   - NOCSH
   ms.author: chrisda
@@ -16,17 +16,17 @@ metadata:
   ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-  description: 管理者は、検疫済みメッセージに関するよく寄せられる質問と回答を、Exchange Online Protection (EOP) で表示できます。
+  description: 管理者は、Exchange Online Protection (EOP) で検疫済みメッセージに関してよく寄せられる質問と回答を表示できます。
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: ff5b1e7367491e307df0468b49ba8891558275e9
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: ee026c7d4f66ae1fea9cae51027f1a143de43597
+  ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63680932"
-title: 検疫済みメッセージに関するよく寄せられる質問
+  ms.lasthandoff: 04/20/2022
+  ms.locfileid: "64972433"
+title: 検疫済みメッセージに関する FAQ
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -40,85 +40,85 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  このトピックでは、Exchange Online のメールボックスを持つ Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織の検疫済み電子メール メッセージに関するよく寄せられる質問と回答を提供します。
+  このトピックでは、Exchange Online内のメールボックスを持つMicrosoft 365組織、またはExchange Onlineメールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織の検疫済み電子メール メッセージに関してよく寄せられる質問と回答を提供します。
 
 
-  スパム対策保護に関する質問と回答については、「スパム対策の [保護に関するよく寄せられる質問」を参照してください](anti-spam-protection-faq.yml)。
+  スパム対策の保護に関する質問と回答については、「 [スパム対策に関する FAQ」を](anti-spam-protection-faq.yml)参照してください。
 
 
-  マルウェア対策保護に関する質問と回答については、「マルウェア対策の [保護に関するよく寄せられる質問」を参照してください](anti-malware-protection-faq-eop.yml)。
+  マルウェア対策の保護に関する質問と回答については、「マルウェア [対策の保護に関する FAQ](anti-malware-protection-faq-eop.yml)」を参照してください。
 
 
-  スプーフィング対策保護に関する質問と回答については、「スプーフィング対策の保護に [関するよく寄せられる質問」を参照してください](anti-spoofing-protection-faq.yml)。
+  スプーフィング対策保護に関する質問と回答については、「 [スプーフィング対策保護に関する FAQ」を参照してください](anti-spoofing-protection-faq.yml)。
 sections:
 - name: 無視
   questions:
   - question: >
-      マルウェアに対して検疫されたメッセージを管理する方法
+      マルウェアに対して検疫されたメッセージを管理操作方法?
     answer: >
-      既定では、マルウェアに対して検疫されたメッセージを管理できるのは管理者のみです。 詳細については、「検疫済み [メッセージとファイルを管理者として管理する」を参照してください](manage-quarantined-messages-and-files.md)。
+      既定では、管理者のみがマルウェアに対して検疫されたメッセージを管理できます。 詳細については、「 [管理者として検疫されたメッセージとファイルを管理する」を参照してください](manage-quarantined-messages-and-files.md)。
 
 
-      ただし、管理者は検疫ポリシーを作成し、ユーザーに対してより多くの機能を定義するマルウェア対策ポリシーに適用できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+      ただし、管理者は、ユーザーに対してより多くの機能を定義するマルウェア対策ポリシーに _検疫ポリシー_ を作成して適用できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
   - question: >
-      スパムを検疫する方法
+      検疫スパム操作方法?
     answer: >
-      既定では、スパム フィルターによってスパムまたはバルク メールとして分類されたメッセージは、ユーザーのメールボックスに配信され、迷惑メール フォルダーに移動されます。 ただし、スパム対策ポリシーを構成して、スパムメッセージまたはバルク メール メッセージを検疫することもできます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+      既定では、スパムフィルター処理によってスパムまたは一括メールとして分類されたメッセージは、ユーザーのメールボックスに配信され、迷惑メール フォルダーに移動されます。 ただし、スパム対策ポリシーを構成して、代わりにスパムまたは一括メール メッセージを検疫することができます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
   - question: >
-      検疫へのアクセス権をユーザーに与える方法
+      操作方法ユーザーに検疫へのアクセス権を付与しますか?
     answer: >
-      検疫で自分のメッセージにアクセスするには、有効なアカウントが必要です。 スタンドアロン EOP では、ユーザーが EOP でメール ユーザーとして表される必要があります (手動で作成またはディレクトリ同期によって作成されます)。 スタンドアロン EOP 環境でのユーザーの管理の詳細については、「スタンドアロン EOP でメール ユーザーを管理する [」を参照してください](/exchange/standalone-eop/manage-mail-users-in-eop)。
+      ユーザーは、検疫内の自分のメッセージにアクセスするための有効なアカウントを持っている必要があります。 スタンドアロン EOP では、ユーザーが EOP 内のメール ユーザーとして表される必要があります (ディレクトリ同期を使用して手動で作成または作成)。 スタンドアロン EOP 環境でのユーザーの管理の詳細については、「スタンドアロン EOP [でのメール ユーザーの管理](/exchange/standalone-eop/manage-mail-users-in-eop)」を参照してください。
   - question: >
-      検疫でエンド ユーザーがアクセスできるメッセージ
+      エンド ユーザーが検疫でアクセスできるメッセージは何ですか?
     answer: >
-      検疫ポリシーは、メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、ユーザーが検疫されたメッセージにアクセスできるかどうか [を定義します](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+      検疫ポリシーは、メッセージが検疫された理由 ( [サポートされている機能](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)の場合) に基づいて、ユーザーが検疫済みメッセージにアクセスできるかどうかを定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
 
-      既定では、ユーザーは受信者である検疫済みメッセージの次の種類にアクセスできます。
+      既定では、ユーザーは受信者である次の種類の検疫済みメッセージにアクセスできます。
 
 
-      - **スパム対策ポリシー: スパム**、バルク メール、フィッシング メッセージ (信頼性の高いフィッシング メッセージではありません)。
+      - **スパム対策ポリシー**: スパム、一括メール、フィッシング メッセージ (信頼度の高いフィッシング メッセージではありません)。
 
-      - フィッシング対策 **ポリシー**: スプーフィングされた送信者、ユーザー偽装保護 (Office 365 用 Defender)、ドメイン偽装保護 (Office 365 用 Defender)、およびメールボックス インテリジェンス保護 (Defender for Office 365)。
+      - **フィッシング対策ポリシー**: スプーフィングされた送信者、ユーザー偽装保護 (Defender for Office 365)、ドメイン偽装保護 (Defender for Office 365)、メールボックス インテリジェンス保護 (Defender for Office 365)。
 
 
-      詳細については、「検疫済み [メッセージをユーザーとして検索して解放する」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
+      詳細については、「 [検疫されたメッセージをユーザーとして検索して解放する」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
 
 
       既定では、エンド ユーザーは受信者である次の種類の検疫済みメッセージにアクセスできません。
 
 
-      - **スパム対策ポリシー**: 信頼性の高いフィッシング。
+      - **スパム対策ポリシー**: 高信頼フィッシング。
 
       - **マルウェア対策ポリシー**
 
-      - **セーフ 添付ファイル (defender for Office 365)**: セーフ 添付ファイル ポリシーからの電子メール メッセージと、SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルからのファイル。
+      - **セーフ添付ファイル (Defender for Office 365)**: SharePoint、OneDrive、およびMicrosoft Teamsのセーフ添付ファイルのセーフ添付ファイル ポリシーとファイルからの電子メール メッセージ。
 
-      - **メール フロー ルール (トランスポート ルール)**: メール フロー ルールでホストされた検疫アクションにメッセージを配信するために検疫されたメッセージ。
+      - **メール フロー ルール (トランスポート ルール)**: メール フロー ルールの **ホストされた検疫アクションにメッセージを配信するために検疫されたメッセージ** 。
 
 
-      詳細については、「検疫済み [メッセージとファイルを管理者として管理する」を参照してください](manage-quarantined-messages-and-files.md)。
+      詳細については、「 [管理者として検疫されたメッセージとファイルを管理する」を参照してください](manage-quarantined-messages-and-files.md)。
   - question: >
-      検疫に保持されるメッセージの期間
+      メッセージを検疫に保持する期間はどれくらいですか?
     answer: >
       メッセージが検疫された理由によって異なります。 詳細については、[EOP と Defender for Office 365 内の検疫済みメッセージ](quarantine-email-messages.md)に関する記事をご覧ください。
   - question: >
       一度に複数の検疫メッセージを解放または報告できますか。
     answer: >
-      このポータルMicrosoft 365 Defender、一度に最大 100 件のメッセージを選択して解放できます。
+      Microsoft 365 Defender ポータルでは、一度に最大 100 件のメッセージを選択してリリースできます。
 
 
-      管理者は、Exchange Online PowerShell またはスタンドアロン EOP PowerShell の [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) コマンドレットと [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) コマンドレットを使用して、検疫済みメッセージを一括で検索および解放し、誤検知を一括して報告できます。
+      管理者は、Exchange Online PowerShell またはスタンドアロン EOP PowerShell の [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) コマンドレットと [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) コマンドレットを使用して、検疫済みメッセージを一括で検索して解放し、誤検知を一括で報告できます。
   - question: >
       隔離されたメッセージを検索する場合にワイルドカードはサポートされますか。 特定のドメインの隔離されたメッセージを検索できますか。
     answer: >-
-      ワイルドカードは、ポータルではMicrosoft 365 Defenderされません。 たとえば、送信者を検索する場合は、完全な電子メール アドレスを指定する必要があります。 ただし、PowerShell またはスタンドアロン EOP PowerShell ではExchange Onlineワイルドカードを使用できます。
+      ワイルドカードは、Microsoft 365 Defender ポータルではサポートされていません。 たとえば、送信者を検索する場合は、完全な電子メール アドレスを指定する必要があります。 ただし、Exchange Online PowerShell またはスタンドアロンの EOP PowerShell ではワイルドカードを使用できます。
 
 
-      たとえば、次の PowerShell コードを NotePad にコピーし、ファイルを簡単に見つけることができる場所 (たとえば、.ps1) に .ps1 として保存C:\Data\QuarantineRelease.ps1。
+      たとえば、次の PowerShell コードを NotePad にコピーし、見つけやすい場所 (C:\Data\QuarantineRelease.ps1 など) にファイルを.ps1として保存します。
 
 
-      次に、[PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) または [PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) Exchange Onlineに接続Exchange Online Protection、次のコマンドを実行してスクリプトを実行します。
+      次に、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) または [Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) に接続した後、次のコマンドを実行してスクリプトを実行します。
 
 
       ```powershell
@@ -131,7 +131,7 @@ sections:
       スクリプトは、次のアクションを実行します。
 
 
-      - fabrikam ドメイン内のすべての送信者からスパムとして検疫された未発表のメッセージを検索します。 結果の最大数は 50,000 (1000 結果の 50 ページ) です。
+      - fabrikam ドメイン内のすべての送信者からスパムとして検疫された未リリースのメッセージを検索します。 結果の最大数は 50,000 (1000 件の結果の 50 ページ) です。
 
       - 結果を CSV ファイルに保存します。
 
@@ -174,4 +174,4 @@ sections:
       ```
 
 
-      メッセージをリリースした後は、もう一度メッセージをリリースし直す必要はありません。
+      メッセージをリリースした後は、もう一度メッセージをリリースすることはできません。

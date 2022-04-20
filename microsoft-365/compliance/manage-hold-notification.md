@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) の通信ワークフローを使用して、訴訟ホールド通知の状態を追跡し、必要に応じて更新して再送信します。
-ms.openlocfilehash: 3e0ab93b469d2ae80d9416137425b7f2876442c1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 83e5331aaea59893f06cfa0629d627e500cfe1b1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946135"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996176"
 ---
 # <a name="manage-hold-notifications"></a>保留通知を管理する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 訴訟ホールド通知ワークフローを開始したら、Microsoft Purview 電子情報開示 (プレミアム) の通信ワークフローを使用して、通信の状態を追跡できます。 [通信] タブには、電子情報開示 (プレミアム) ケース内のすべての通知の一覧が表示されます。 割り当てられたか、通知を確認したカストディアンの数などの詳細を確認できます。
 

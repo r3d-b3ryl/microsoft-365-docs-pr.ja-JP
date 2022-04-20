@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 電子情報開示 (プレミアム) のコレクションを使用して、ケースまたは調査に関連するコンテンツを検索および収集します。
-ms.openlocfilehash: 8831508260d48dc270a5e4b7a15cecf894656ff6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f57748d54bc177812fd89eca13252311d4ab269f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940271"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996242"
 ---
 # <a name="learn-about-collections-in-ediscovery-premium"></a>電子情報開示のコレクションについて学習する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 組織は、調査や潜在的な訴訟に関連する可能性のあるコミュニケーションやコンテンツの収集に直面すると、最良の状況で大きな課題に直面します。 現在の現代の職場では、コンテンツの量、多様性、速度によってイノベーションとリモートワークが可能になり、同時に電子情報開示調査用のコレクションを管理するための要件とプロセスも拡張されています。
 

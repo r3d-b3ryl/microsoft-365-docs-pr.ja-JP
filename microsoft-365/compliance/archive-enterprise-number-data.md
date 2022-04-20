@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage Enterprise Number Archiver から SMS および MMS データをインポートおよびアーカイブするためのコネクタを設定できます。 これにより、Microsoft Purview のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: f1353e0140e1411d2cac79fc4d59043046df302d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b3f429af6caa4d650688b27f5157a212e348ffe8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944109"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995054"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Enterprise番号データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの TeleMessage コネクタを使用して、ショート メッセージング サービス (SMS) とマルチメディア メッセージング サービス (MMS) メッセージ、チャット メッセージ、音声通話録音、および音声通話ログをEnterprise Number Archiver からインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の TeleMessage アカウントに毎日 1 回接続され、TeleMessage Enterprise Number Archiver を使用して従業員のモバイル通信データがMicrosoft 365のメールボックスにインポートされます。
 

@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Microsoft Purview コンプライアンス ポータルでコネクタ&使用して、&アーカイブ データを Facebook Business ページからMicrosoft 365にインポートするように設定する方法について説明します。
-ms.openlocfilehash: 6db2bd474cd2920b4b067563377bbe85084aeeaf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 58d1f0efd26d892a4bf206c71dc5ee55c653abfb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947233"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994944"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Facebook データをアーカイブするコネクタを設定する (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルのコネクタを使用して、Facebook Business ページからMicrosoft 365にデータをインポートおよびアーカイブします。 コネクタを設定して構成すると、Facebook Business ページ (スケジュールに基づいて) に接続され、Facebook アイテムのコンテンツが電子メール メッセージ形式に変換され、そのアイテムがMicrosoft 365のメールボックスにインポートされます。
 

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Microsoft 365では、既定でメールボックス監査ログが有効になります ("既定のメールボックス監査" または "既定のメールボックス監査" とも呼ばれます)。 この構成は、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションがメールボックス監査ログに自動的に記録され、メールボックスで実行されたアクティビティを検索できることを意味します。
-ms.openlocfilehash: bb8170b603bc72459e3bbd55fa256df188f42f65
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: d5d966cf4d5b7c58c15df4ce8d4039331ebca8c4
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952888"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972631"
 ---
 # <a name="manage-mailbox-auditing"></a>メールボックスの監査を管理する
 
@@ -83,7 +83,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 - **管理者**:
   - メールボックスは、次のいずれかの Microsoft 電子情報開示ツールで検索されます。
     - コンプライアンス センターのコンテンツ検索。
-    - コンプライアンス センターの電子情報開示またはAdvanced eDiscovery。
+    - コンプライアンス センターの電子情報開示または電子情報開示 (プレミアム)。
     - Exchange Onlineで電子情報開示をIn-Placeします。
   - メールボックスには、Microsoft Exchange Server MAPI エディターを使用してアクセスします。
 
@@ -300,7 +300,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 現時点では、既定によるメールボックス監査の有効化が組織でオンになっている場合は、特定のメールボックスでメールボックス監査を無効にできません。 たとえば、 *AuditEnabled* メールボックス プロパティを **False** に設定することは無視されます。
 
-ただし、Exchange Online PowerShell で **Set-MailboxAuditBypassAssociation** コマンドレットを使用して、アクションが発生した場所に関係なく、指定したユーザーによる *メールボックス操作の* ログ記録を防ぐことができます。 例:
+ただし、Exchange Online PowerShell で **Set-MailboxAuditBypassAssociation** コマンドレットを使用して、アクションが発生した場所に関係なく、指定したユーザーによる *メールボックス操作の* ログ記録を防ぐことができます。 次に例を示します。
 
 - バイパスされたユーザーによって実行されたメールボックス所有者アクションはログに記録されません。
 - バイパスされたユーザーが他のユーザーのメールボックス (共有メールボックスを含む) で実行した委任アクションはログに記録されません。

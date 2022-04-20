@@ -1,5 +1,5 @@
 ---
-title: メール フロー ダッシュボードの配信不可レポート
+title: メール フロー ダッシュボードの配信不能レポート
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで配信不可の詳細レポートを使用して、組織内の送信者からの配信不可レポート (NDRs またはバウンス メッセージとも呼ばれる) で最も頻繁に発生するエラー コードを監視する方法について説明します。
+description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで配信不能の詳細レポートを使用して、組織内の送信者からの配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) で最も頻繁に発生するエラー コードを監視する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc408f6bb28b11e77c49755b888c44e0ea4d9f57
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 663e145bcf9d6dc95f0f71b3b0b50a78419ed989
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473741"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973511"
 ---
-# <a name="non-delivery-report-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの配信&レポート
+# <a name="non-delivery-report-in-the-security--compliance-center"></a>セキュリティ & コンプライアンス センターの配信不能レポート
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -31,43 +31,42 @@ ms.locfileid: "64473741"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[セキュリティ &](https://protection.office.com) コンプライアンス センターのメール フロー [](mail-flow-insights-v2.md) ダッシュボードの配信不可レポートには、組織内のユーザーの配信不可レポート (NDRs またはバウンス メッセージとも呼ばれる) で最も発生したエラー コードが表示されます。 このレポートには、メール配信の問題をトラブルシューティングするための、NDRs の詳細が表示されます。
+[セキュリティ & コンプライアンス センター](https://protection.office.com)の [メール フロー ダッシュボード](mail-flow-insights-v2.md)の **配信不能レポート** には、組織内のユーザーの配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) で最も検出されたエラー コードが表示されます。 このレポートには NDR の詳細が表示されるので、電子メール配信の問題のトラブルシューティングを行うことができます。
 
-:::image type="content" source="../../media/mfi-non-delivery-report-widget.png" alt-text="セキュリティ 管理コンプライアンス センターのメール フロー ダッシュボードの配信&ウィジェット" lightbox="../../media/mfi-non-delivery-report-widget.png":::
+:::image type="content" source="../../media/mfi-non-delivery-report-widget.png" alt-text="セキュリティ & コンプライアンス センターのメール フロー ダッシュボードの配信不能レポート ウィジェット" lightbox="../../media/mfi-non-delivery-report-widget.png":::
 
-## <a name="report-view-for-the-non-delivery-report"></a>配信不可レポートのレポート ビュー
+## <a name="report-view-for-the-non-delivery-report"></a>配信不能レポートのレポート ビュー
 
-[配信不可レポート **] ウィジェットをクリック** すると、配信不可レポート **が表示されます**。
+**配信不能レポート** ウィジェットをクリックすると、**配信不能レポート** が表示されます。
 
-既定では、すべてのエラー コードのアクティビティが表示されます。 [データの表示 **] をクリックすると**、ドロップダウンから特定のエラー コードを選択できます。
+既定では、すべてのエラー コードのアクティビティが表示されます。 [ **データの表示]** をクリックすると、ドロップダウンから特定のエラー コードを選択できます。
 
-グラフ内の特定の日に特定の色 (エラー コード) にカーソルを合わせると、エラーのメッセージの総数が表示されます。
+グラフ内の特定の日の特定の色 (エラー コード) にマウス ポインターを合わせると、エラーのメッセージの合計数が表示されます。
 
-:::image type="content" source="../../media/mfi-non-delivery-report-overview-view.png" alt-text="[非承諾ドメイン] レポートの [レポート] ビュー" lightbox="../../media/mfi-non-delivery-report-overview-view.png":::
+:::image type="content" source="../../media/mfi-non-delivery-report-overview-view.png" alt-text="承認されていないドメイン レポートのレポート ビュー" lightbox="../../media/mfi-non-delivery-report-overview-view.png":::
 
-## <a name="details-table-view-for-the-non-delivery-report"></a>配信不可レポートの詳細テーブル ビュー
+## <a name="details-table-view-for-the-non-delivery-report"></a>配信不能レポートの詳細テーブル ビュー
 
-レポート ビューで **[詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
-
-- **Date**
-- **配信不可レポート コード**
-- **Count**
-- **サンプル メッセージ**: 影響を受けるメッセージのサンプルのメッセージの ID です。
-
-詳細テーブル ビューで **[フィルター** ] をクリックすると、[開始日] と [終了日] で日付 **範囲** を **指定できます**。
-
-特定の日付範囲のレポートを 1 人または複数の受信者に電子メールで送信するには、[ダウンロードの要求] **をクリックします**。
-
-テーブル内の行を選択すると、次の情報を含むフライアウトが表示されます。
+レポート ビューで [ **詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
 
 - **Date**
-- **配信不可レポート コード**: リンクをクリックすると、特定のエラー コードの原因と解決策の詳細を確認できます。
+- **配信不能レポート コード**
 - **Count**
-- **サンプル メッセージ**: [サンプル メッセージの **表示] を** クリックすると [](message-trace-scc.md)、影響を受けるメッセージのサンプルのメッセージ トレース結果を確認できます。
+- **サンプル メッセージ**: 影響を受けるメッセージのサンプルのメッセージ ID。
 
+詳細テーブル ビューで [**フィルター]** をクリックすると、開始日と **終了日** で **日付** 範囲を指定できます。
 
-:::image type="content" source="../../media/mfi-non-delivery-report-details-flyout.png" alt-text="[配信不可] レポートの [詳細] テーブル ビューで行を選択した後の詳細フライアウト" lightbox="../../media/mfi-non-delivery-report-details-flyout.png":::
+特定の日付範囲のレポートを 1 人以上の受信者に電子メールで送信するには、[ **ダウンロードの要求**] をクリックします。
+
+テーブル内の行を選択すると、ポップアップが表示され、次の情報が表示されます。
+
+- **Date**
+- **配信不能レポート コード**: リンクをクリックすると、特定のエラー コードの原因と解決策の詳細を確認できます。
+- **Count**
+- **サンプル メッセージ**: [ **サンプル メッセージの表示** ] をクリックすると、影響を受けるメッセージのサンプルの [メッセージ トレース](message-trace-scc.md) 結果を確認できます。
+
+:::image type="content" source="../../media/mfi-non-delivery-report-details-flyout.png" alt-text="配信不能レポートの [詳細] テーブル ビューで行を選択した後の [詳細] ポップアップ" lightbox="../../media/mfi-non-delivery-report-details-flyout.png":::
 
 ## <a name="related-topics"></a>関連項目
 
-メール フロー ダッシュボードの他の分析情報については、「Security [& コンプライアンス センター」を参照してください](mail-flow-insights-v2.md)。
+メール フロー ダッシュボードのその他の分析情報については、 [セキュリティ & コンプライアンス センターのメール フロー分析情報に関する](mail-flow-insights-v2.md)ページを参照してください。

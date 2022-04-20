@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: レビュー セットには Microsoft Purview 電子情報開示 (プレミアム) ダッシュボードを使用してコーパスをすばやく分析し、レビュー戦略の策定に役立つ傾向や主要な統計情報を特定します。
-ms.openlocfilehash: 8814bbf645686529aec43f710519c1bd4891c1b3
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1412df381fff228c37052a6d75113c3a4c4cfcba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943109"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995890"
 ---
 # <a name="ediscovery-premium-dashboard-for-review-sets"></a>レビュー セット用の電子情報開示 (プレミアム) ダッシュボード
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) では、大量のドキュメントと電子メール メッセージを確認する必要がある場合があります。 レビュー プロセスを開始する前に、コーパスをすばやく分析して、レビュー戦略の策定に役立つ傾向や主要な統計情報を特定することができます。 これを行うには、電子情報開示 (プレミアム) ダッシュボードを使用して、レビュー セットを使用してコーパスをすばやく分析できます。
 

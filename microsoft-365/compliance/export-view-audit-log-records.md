@@ -18,14 +18,16 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: この記事では、監査ログ レコードをエクスポート、構成、および表示Microsoft 365方法について説明します。
-ms.openlocfilehash: ed9844ac7a5b7dc62b4d0ba8eb7311f76d28aace
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9403ead4c7fd6bd27bcc3848d367749e00beed3c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948751"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994394"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 監査ログを検索して検索結果を CSV ファイルにダウンロードすると、ファイルには **AuditData** という名前の列が含まれ、各イベントに関する追加情報が含まれます。 この列のデータは JSON オブジェクトとして書式設定されます。これには、プロパティとして構成された複数のプロパティが含まれます *。値* のペアはコンマで区切られます。 ExcelのPower Query エディターの JSON 変換機能を使用して **、AuditData** 列の JSON オブジェクト内の各プロパティを複数の列に分割して、各プロパティに独自の列を含めることができます。 これにより、これらのプロパティの 1 つ以上を並べ替えてフィルター処理できます。これにより、探している特定の監査データをすばやく見つけることができます。
 

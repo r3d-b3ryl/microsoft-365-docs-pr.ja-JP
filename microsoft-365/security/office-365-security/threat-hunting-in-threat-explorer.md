@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bcbacc886c57257e5c4b067b278c7736ae403390
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d8515ce2bccb90478f11fa4a1813c7cb4ab7fb7d
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945519"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973841"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365用の脅威エクスプローラーでの脅威の検出
 
@@ -35,7 +35,6 @@ ms.locfileid: "64945519"
 
 > [!NOTE]
 > これは、**脅威エクスプローラー (エクスプローラー)**、**電子メール セキュリティ**、**エクスプローラーとリアルタイム検出** (ツール間の違い、操作に必要なアクセス許可など) に関する **3 記事シリーズ** の一部です。 このシリーズの他の 2 つの記事は、[脅威エクスプローラーと脅威エクスプローラーを使用した電子メール セキュリティ](email-security-in-microsoft-defender.md)[とリアルタイム検出です](real-time-detections.md)。
-
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
@@ -69,7 +68,6 @@ Defender for Office 365プラン 1 ではリアルタイム *検出* が使用�
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/sender-drop-down.png" alt-text="脅威エクスプローラーの [送信者] ボタン" lightbox="../../media/sender-drop-down.png":::
-
 
 エクスプローラーでのフォーカスの絞り込み、またはリアルタイム検出はレイヤーで考えることができます。 1 つ目は **View です**。 2 つ目は、 *フィルター処理されたフォーカス* と考えることができます。 たとえば、次のような決定を記録することで、脅威を見つける際に実行した手順を追跡できます。エクスプローラーで問題を見つけるには、[ **受信者] フィルターフォーカスの [マルウェア ビュー] を選択しました**。 これにより、手順のトレースが簡単になります。
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview の新機能
+title: Microsoft Purview の最新情報
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合でも、フィードバックに基づいて既存の機能を更新する場合でも、更新されたドキュメントを展開する場合でも、Microsoft 365は絶えず変化するコンプライアンス環境を把握するのに役立ちます。 今月までの内容を確認してください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5c1e48f1cd9d4a73e703e4d5d93d6d1354d57366
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: b5f231abfbfe943f0b2ab0cf33a14267f0940820
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953719"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972477"
 ---
-# <a name="whats-new-in-microsoft-purview"></a>Microsoft Purview の新機能
+# <a name="whats-new-in-microsoft-purview"></a>Microsoft Purview の最新情報
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "64953719"
 
 | **以前の名前** | **New Name/新しい名前** | **説明** |
 |:----------------|:-------------|:----------------|
-| 高度な監査のMicrosoft 365 | Microsoft Purview 監査 (プレミアム) | 監査ソリューションは、組織がセキュリティ イベント、フォレンジック調査、内部調査、コンプライアンス義務に効果的に対応するのに役立つ統合ソリューションを提供します。 詳細については、「[Microsoft Purview Advanced Audit (プレミアム)](advanced-audit.md)」を参照してください。 |
+| 高度な監査のMicrosoft 365 <br><br> Microsoft 365基本監査 | Microsoft Purview 監査 (プレミアム) <br><br> Microsoft Purview 監査 (Standard)| 監査ソリューションは、組織がセキュリティ イベント、フォレンジック調査、内部調査、コンプライアンス義務に効果的に対応するのに役立つ統合ソリューションを提供します。 詳細については、「[Microsoft Purview Advanced Audit (プレミアム)](advanced-audit.md)」と[「Microsoft Purview Advanced Audit (Standard)」](set-up-basic-audit.md)を参照してください。 |
 | Microsoft 365コミュニケーション コンプライアンス | Microsoft Purview Communication Compliance | コミュニケーション コンプライアンスは、会社のコミュニケーション チャネルとポリシー違反の迅速な検出、キャプチャ、修復アクションの実行を支援することで、リスクを最小限に抑えるのに役立ちます。 詳細については、「 [Microsoft Purview Communication Compliance](communication-compliance-solution-overview.md)」を参照してください。 |
 | Microsoft コンプライアンス マネージャー | Microsoft Purview コンプライアンス マネージャー | コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。 詳細については、 [Microsoft Purview コンプライアンス マネージャーに関する](compliance-manager.md)ページを参照してください。 |
 | 顧客キーのMicrosoft 365 | Microsoft Purview カスタマー キー | カスタマー キーは、承認されていないシステムまたは担当者によるデータの表示に対する保護を強化し、Microsoft データ センターでの BitLocker ディスク暗号化を補完します。 詳細については、 [Microsoft Purview カスタマー キーに関するページを](customer-key-overview.md)参照してください。 |
@@ -62,18 +62,18 @@ ms.locfileid: "64953719"
 | Microsoft Information Protection | Microsoft Purview Information Protection | 情報保護は、機密情報がどこに存在するか、移動する場所を問わず、検出、分類、および保護するのに役立ちます。 詳細については、「[Microsoft Purview Information Protection](information-protection.md)」を参照してください。 |
 | Microsoft 情報ガバナンス | Microsoft Purview データ ライフサイクル管理 | データ ライフサイクル管理では、保持および削除する必要があるコンテンツを保持するためのツールと機能が提供されます。 詳細については、「 [Microsoft Purview データ ライフサイクル管理](data-lifecycle-management.md)」を参照してください。 |
 | Microsoft 365 インサイダー リスク管理 | Microsoft Purview Insider リスク管理 | インサイダー リスク管理では、幅広いサービスとサードパーティの指標を使用して、リスクの高いユーザー アクティビティをすばやく特定、トリアージ、および対処するのに役立ちます。 詳細については、「 [Microsoft Purview Insider Risk Management](insider-risk-management.md)」を参照してください。 |
-| Office 365 Message Encryption | Microsoft Purview メッセージ暗号化 | Message Encryption を使用すると、組織は組織内外のユーザー間で暗号化された電子メール メッセージを送受信できます。 詳細については、「 [Microsoft Purview メッセージ暗号化](ome.md)」を参照してください。 |
+| Office 365 Message Encryption | Microsoft Purview のメッセージの暗号化 | Message Encryption を使用すると、組織は組織内外のユーザー間で暗号化された電子メール メッセージを送受信できます。 詳細については、「 [Microsoft Purview メッセージ暗号化](ome.md)」を参照してください。 |
 | Microsoft 365の特権アクセス管理 | Microsoft Purview Privileged Access Management | Privileged Access Management は、組織を侵害から保護し、機密データへの永続的なアクセスや重要な構成設定へのアクセスを制限することで、コンプライアンスのベスト プラクティスを満たすのに役立ちます。 詳細については、「 [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md)」を参照してください。 |
 | Microsoft データ コネクタ | Microsoft Purview データ コネクタ | Microsoft 365管理者は、データ コネクタを使用して、Microsoft 以外のサード パーティのデータをソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームから、Microsoft 365組織内のメールボックスにインポートおよびアーカイブできます。 詳細については、 [Microsoft Purview データ コネクタに関するページを](compliance-extensibility.md)参照してください。 |
-| Microsoft 365 Advanced eDiscovery | Microsoft Purview 電子情報開示プレミアム | 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 詳細については、「[Microsoft Purview 電子情報開示プレミアム](overview-ediscovery-20.md)」を参照してください。 |
+| Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core 電子情報開示 | Microsoft Purview 電子情報開示 (プレミアム) <br><br> Microsoft Purview 電子情報開示 (Standard) | 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 詳細については、「[Microsoft Purview 電子情報開示 (プレミアム)](overview-ediscovery-20.md)」と[「Microsoft Purview 電子情報開示 (Standard)」](get-started-core-ediscovery.md)を参照してください。 |
 | Microsoft 365 コンプライアンス センター | Microsoft Purview コンプライアンス ポータル | Microsoft 365 E5 Compliance スイート内のソリューションとソリューション カタログにアクセスするための管理ポータル。 詳細については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center.md)を参照してください。 |
 
 ## <a name="february-2022"></a>2022 年 2 月
 
 ### <a name="ediscovery"></a>電子情報開示
 
-- [Advanced eDiscoveryでカストディアン通信テンプレートを管理](advanced-ediscovery-communications-library.md)する - 電子情報開示マネージャーは、組織内の任意のAdvanced eDiscoveryケースで使用できるカストディアン通信テンプレートを作成できるようになりました。
-- [Advanced eDiscoveryで発行担当者を管理](advanced-ediscovery-issuing-officers.md)する - 電子情報開示マネージャーは、組織内の任意のAdvanced eDiscoveryケースでカストディアン通信に割り当てることができる発行担当者の一覧を追加できます。
+- [電子情報開示 (プレミアム) でカストディアン通信テンプレートを管理](advanced-ediscovery-communications-library.md)する - 電子情報開示マネージャーは、組織内の任意の電子情報開示 (プレミアム) ケースで使用できるカストディアン通信テンプレートを作成できるようになりました。
+- [電子情報開示 (プレミアム) で発行担当者を管理](advanced-ediscovery-issuing-officers.md)する - 電子情報開示マネージャーは、組織内の任意の電子情報開示 (プレミアム) ケースでカストディアン通信に割り当てることができる発行担当者の一覧を追加できます。
 
 ### <a name="data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理
 
@@ -120,7 +120,7 @@ ms.locfileid: "64953719"
 
 ### <a name="ediscovery"></a>電子情報開示
 
-- [Microsoft TeamsのコンテンツのAdvanced eDiscoveryワークフロー - Advanced eDiscovery](teams-workflow-in-advanced-ediscovery.md#reference-guide)でコンテンツを管理するための新しいダウンロード可能なクイック リファレンス ガイドで更新Teams
+- [Microsoft Teamsのコンテンツの電子情報開示 (プレミアム) ワークフロー](teams-workflow-in-advanced-ediscovery.md#reference-guide) - 電子情報開示 (プレミアム) でTeamsコンテンツを管理するための新しいダウンロード可能なクイック リファレンス ガイドで更新されました
 
 ### <a name="data-lifecycle-management"></a>データ ライフサイクル管理
 
@@ -159,7 +159,7 @@ ms.locfileid: "64953719"
 
 ### <a name="ediscovery"></a>電子情報開示
 
-- [新しいケース形式Advanced eDiscovery](advanced-ediscovery-new-case-format.md)一般公開にリリースされ、"大きなケース形式" から名前が変更された新しいケース形式を使用する
+- [電子情報開示で新しいケース形式を使用する (プレミアム)](advanced-ediscovery-new-case-format.md) 新しいケース形式が一般公開にリリースされ、"大きなケース形式" から名前が変更されました
 
 ### <a name="retention-and-records-management"></a>保持とレコードの管理
 - ロールアウト: SharePointおよびOneDrive内のラベル付きアイテムをユーザーが削除できるかどうかを制御する新しいレコード管理設定。 以前は、コンテンツを保持するように構成され、アイテムをレコードとしてマークしなかった保持ラベルでは、OneDriveでこのアクションが許可されたときに、ユーザーがSharePointでラベル付けされたコンテンツを削除できませんでした。 詳細については、「[SharePointとOneDriveのリテンション期間](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)のしくみ」を参照してください。
@@ -213,8 +213,8 @@ ms.locfileid: "64953719"
 
 ### <a name="ediscovery"></a>電子情報開示
 
-- [クラウド添付ファイルの](advanced-ediscovery-cloud-attachments.md)最新バージョンを収集するだけでなく、Advanced eDiscoveryでクラウド添付ファイルを収集したり、メール メッセージやチャット会話で共有されたバージョンを収集Teamsできます。共有バージョンの収集は、クラウド添付ファイルに保持ラベルを自動的に適用する新機能によって可能になります。
-- [検索のためにSharePoint](advanced-ediscovery-historical-versions.md) サイトに格納されているすべてのバージョンのドキュメントにインデックスを付ける新しい機能Advanced eDiscovery履歴バージョンを設定します。つまり、コレクション クエリに一致するコンテンツを含むドキュメント バージョンが検索結果に返されます。
+- [電子情報開示 (プレミアム) でクラウド添付ファイル](advanced-ediscovery-cloud-attachments.md)を収集するだけでなく、クラウド添付ファイルの最新バージョンを収集するだけでなく、メール メッセージまたはチャット会話で共有されたバージョンを収集Teamsできます。共有バージョンの収集は、クラウド添付ファイルに保持ラベルを自動的に適用する新機能によって可能になります。
+- 検索のためにSharePoint サイトに格納されているすべてのバージョンのドキュメントにインデックスを付ける[電子情報開示 (プレミアム) 新機能で履歴バージョンを設定](advanced-ediscovery-historical-versions.md)します。つまり、コレクション クエリに一致するコンテンツを含むドキュメント バージョンが検索結果に返されます。
 
 ### <a name="encryption"></a>暗号化
 
@@ -275,7 +275,7 @@ ms.locfileid: "64953719"
 
 ### <a name="ediscovery"></a>電子情報開示
 
-- [KQL エディターを使用して](ediscovery-kql-editor.md)、コンテンツ検索、Core 電子情報開示、Advanced eDiscoveryで検索クエリを作成する新しい方法の検索クエリパブリック プレビューを作成します。KQL エディターは、サポートされている検索可能なプロパティと条件のオートコンプリートを提供し、標準プロパティと条件でサポートされている値の一覧を表示します。KQL エディターでは、検索クエリで発生する可能性のあるエラーの修正に対するエラー検出と提案も提供されます
+- [KQL エディターを使用して](ediscovery-kql-editor.md)、コンテンツ検索、電子情報開示 (Standard)、および電子情報開示 (プレミアム) で検索クエリを作成する新しい方法の検索クエリパブリック プレビューを作成します。KQL エディターは、サポートされている検索可能なプロパティと条件のオートコンプリートを提供し、標準プロパティと条件でサポートされている値の一覧を表示します。KQL エディターでは、検索クエリで発生する可能性のあるエラーの修正に対するエラー検出と提案も提供されます
 
 ### <a name="information-barriers"></a>情報バリア
 

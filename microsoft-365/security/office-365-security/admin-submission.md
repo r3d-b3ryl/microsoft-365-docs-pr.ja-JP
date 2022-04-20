@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
-description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
+description: 管理者は、Microsoft 365 Defender ポータルの提出ポータルを使用して、疑わしいメール、フィッシング詐欺の疑いのあるメール、スパム、その他有害な可能性のあるメッセージ、URL、電子メールの添付ファイルを再スキャン用に Microsoft に送信する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0d699c3344cc16f3e15996139f1d2d8b608ba50
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: a21c9e6655c01e2d2229e957f79b2342895ac4e4
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477151"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971971"
 ---
-# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
+# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>送信ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -32,75 +32,74 @@ ms.locfileid: "64477151"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
+Exchange Online メールボックスを持つ組織Microsoft 365管理者は、Microsoft 365 Defender ポータルの申請ポータルを使用して、電子メール メッセージ、URL、添付ファイルをスキャン用に Microsoft に送信できます。
 
-Microsoft 365 メールボックスExchange Online組織では、管理者は Microsoft 365 Defender ポータルの申請ポータルを使用して、電子メール メッセージ、URL、添付ファイルを Microsoft に送信してスキャンできます。
+分析のために電子メール メッセージを送信すると、次の情報が表示されます。
 
-分析用に電子メール メッセージを送信すると、次の情報が表示されます。
-
-- **電子メール認証チェック**: 電子メール認証が配信された際に合格または失敗したかどうかの詳細。
-- **ポリシーヒット**: テナントへの受信メールを許可またはブロックした可能性があるポリシーに関する情報で、サービス フィルターの評決を上書きします。
-- **ペイロード評価/デトレーション**: メッセージ内の URL と添付ファイルの最新の検査。
-- **Grader 分析**: メッセージが悪意のあるかどうかを確認するために、人間の採点者が行ったレビュー。
+- **電子メール認証チェック**: 電子メール認証が配信されたときに成功したか失敗したかの詳細。
+- **ポリシー ヒット**: テナントへの受信メールを許可またはブロックした可能性があるポリシーに関する情報。サービス フィルターの判定をオーバーライドします。
+- **ペイロードの評価/起爆**: メッセージ内の URL と添付ファイルを最新の状態で確認します。
+- **グレーデラー分析**: メッセージが悪意のあるかどうかを確認するために、人間の採点者によって行われたレビュー。
 
 > [!IMPORTANT]
-> ペイロード評価/デトナレーションおよび採点者分析は、すべてのテナントで行われるという問題ではありません。 データがコンプライアンスの目的でテナント境界から離れるはずではない場合、情報は組織外に出るのをブロックされます。
+> ペイロードの評価/デトネーションとグレーデラーの分析は、すべてのテナントで行われるわけではありません。 データがコンプライアンスのためにテナント境界から離れることが想定されていない場合、情報が組織外に出ないようにブロックされます。
 
-電子メール メッセージ、URL、添付ファイルを Microsoft に送信するその他の方法については、「メッセージとファイルを Microsoft に報告する」 [を参照してください](report-junk-email-messages-to-microsoft.md)。
+電子メール メッセージ、URL、添付ファイルを Microsoft に送信するその他の方法については、「 [メッセージとファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com/> で Microsoft 365 Defender ポータルを開きます。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission>。
+- <https://security.microsoft.com/> で Microsoft 365 Defender ポータルを開きます。 **[申請]** ページに直接移動するには、 <https://security.microsoft.com/reportsubmission>.
 
-- メッセージとファイルを Microsoft に送信するには、次のいずれかの役割を持っている必要があります。
-  - **ポータルの****セキュリティ** 管理者 [またはセキュリティ リーダー Microsoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
-  
-    この記事で後述するように、カスタム メールボックスへの[](#view-user-submissions-to-microsoft)ユーザー申請を表示するには、これらの役割の 1 つが必要です。
+- Microsoft にメッセージとファイルを送信するには、次のいずれかのロールが必要です。
+  - [Microsoft 365 Defender ポータル](permissions-microsoft-365-security-center.md)の **セキュリティ管理者** または **セキュリティ 閲覧者**。
 
-- 管理者は、メールボックスで引き続き使用できるメッセージであり、ユーザーまたは別の管理者によって削除されない場合は、30 日間の古いメッセージを送信できます。
+    この記事の後半で説明するように [、カスタム メールボックスへのユーザー提出を表示するには、](#view-user-submissions-to-microsoft) これらのロールの 1 つが必要であることに注意してください。
 
-- 管理者の申請は、次の速度で調整されます。
-  - 15 分間の最大提出数: 150 件
-  - 24 時間の同じ申請: 3 つの申請
-  - 15 分間の同じ提出: 1 提出
-  
-- ユーザーが Microsoft にメッセージとファイルを送信する方法の詳細については、「メッセージとファイルを Microsoft に報告する」 [を参照してください](report-junk-email-messages-to-microsoft.md)。
+- 管理者は、メールボックスで引き続き使用でき、ユーザーまたは別の管理者によって削除されない場合、30 日の古いメッセージを送信できます。
+
+- 管理者の提出は、次のレートで調整されます。
+  - 15 分間の最大送信数: 150 件
+  - 24 時間の同じ申請: 3 件の提出
+  - 15 分間の同じ申請: 1 件の提出
+
+- ユーザーが Microsoft にメッセージとファイルを送信する方法の詳細については、「メッセージ [とファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="report-suspicious-content-to-microsoft"></a>疑わしいコンテンツを Microsoft に報告する
 
-1. [申請Microsoft 365 Defender] の [<https://security.microsoft.com>アクション] の [提出]  **ページ**\>に移動&**送信します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission>。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[アクション] & **[申請**] の [**申請]** ページ **に**\>移動します。 **[申請]** ページに直接移動するには、 <https://security.microsoft.com/reportsubmission>.
 
-2. [**申請] ページ** で、レポートするコンテンツの種類に基づいて [電子メールまたは電子メールの添付ファイルまたは **URL**![] タブが選択されているのを確認し、[分析用に Microsoft に送信] をクリックします。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に提出します**。
+2. [ **送信]** ページで、レポートするコンテンツの種類に基づいて [ **電子メール** ] タブまたは [ **電子メールの添付ファイル** または **URL**  ] タブが選択されていることを確認し、[分析用に Microsoft に送信] をクリックします ![。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に送信します**。
 
-3. 次の **セクションで説明するように** 、それぞれの種類のコンテンツ (電子メール、URL、または電子メールの添付ファイル) を送信するために表示される分析用に Microsoft に送信するフライアウトを使用します。
+3. 次のセクションで説明するように、それぞれの種類のコンテンツ (電子メール、URL、または電子メールの添付ファイル) を送信するように表示される分析ポップアップに **対して Microsoft に送信** を使用します。
 
    > [!NOTE]
-   > ファイルと URL の申請は、データが環境から離れるのを許可しないクラウドでは使用できません。 [ファイル] または [URL] を選択する機能は灰色で表示されます。
+   > ファイルと URL の送信は、データが環境から離れることを許可しないクラウドでは使用できません。 [ファイル] または [URL] を選択する機能は淡色表示されます。
 
 ### <a name="notify-users-from-within-the-portal"></a>ポータル内からユーザーに通知する
 
-1. [電子メール Microsoft 365 Defender] <https://security.microsoft.com>ポータルの [投稿] ページに移動し、&**を** \> **送信します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission>。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**Email & collaboration** \> **Submissions]** の [**申請]** ページに移動します。 **[申請]** ページに直接移動するには、 <https://security.microsoft.com/reportsubmission>.
 
-2. [申請 **] ページで** 、[ **ユーザーが報告** したメッセージ] タブを選択し、マークして通知するメッセージを選択します。
+2. [ **申請] ページで** 、[ **ユーザーが報告したメッセージ** ] タブを選択し、マークして通知するメッセージを選択します。
 
-3. [マークを **付け、通知** する] ドロップダウンを選択し、[フィッシングまたは迷惑メールが検出 **された**\>脅威がない **] を****選択します**。
+3. [ **マークを付けて通知** ] ドロップダウンを選択し、[ **脅威が見つかりません** \> **フィッシング]** または [ **迷惑メール**] を選択します。
 
    :::image type="content" source="../../media/unified-submission-user-reported-message.png" alt-text="[申請] ページ" lightbox="../../media/unified-submission-user-reported-message.png":::
 
-報告されたメッセージは、誤検知または偽陰性としてマークされます。 メール通知は、ポータル内からメッセージを報告したユーザーに自動的に送信されます。
+報告されたメッセージは、偽陽性または偽陰性としてマークされます。 メッセージを報告したユーザーには、ポータル内から電子メール通知が自動的に送信されます。
 
-### <a name="submit-a-questionable-email-to-microsoft"></a>疑いがある電子メールを Microsoft に送信する
+### <a name="submit-a-questionable-email-to-microsoft"></a>Microsoft に質問のあるメールを送信する
 
-1. [申請 **の種類の選択] ボックス** で、ドロップダウン リスト **で [メール** ] が選択されているのを確認します。
+1. [ **送信の種類の選択** ] ボックスで、ドロップダウン リストで **[電子メール** ] が選択されていることを確認します。
 
-2. [ネットワーク **メッセージ ID の追加または電子メール** ファイルのアップロード] セクションで、次のいずれかのオプションを使用します。
-   - 電子メール ネットワーク メッセージ **ID** を追加します。これは、メッセージの **X-MS-Exchange-Organization-Network-Message-Id** ヘッダー、または検疫済みメッセージの **X-MS-Office365-Filtering-Correlation-Id** ヘッダーで使用できる GUID 値です。
-   - **アップロードファイル (.msg または .eml)** をクリックします。[ファイルの参照] **をクリックします**。 開いたダイアログで、.eml または .msg ファイルを見つけて選択し、[開く] をクリック **します**。
+2. [ **ネットワーク メッセージ ID の追加または電子メール ファイルのアップロード** ] セクションで、次のいずれかのオプションを使用します。
+   - **電子メール ネットワーク メッセージ ID を追加します**。これは、メッセージ内の **X-MS-Exchange-Organization-Network-Message-Id** ヘッダーまたは検疫済みメッセージの **X-MS-Office365-Filtering-Correlation-Id** ヘッダーで使用できる GUID 値です。
+   - **電子メール ファイル (.msg または .eml) をアップロード**: [ファイルの **参照**] をクリックします。 開いたダイアログで、.eml または .msg ファイルを見つけて選択し、[ **開く**] をクリックします。
 
-3. [問題 **が発生した受信者の選択** ] ボックスで、ポリシー チェックを実行する受信者を指定します。 ポリシー チェックは、ユーザーまたは組織のポリシーが原因で電子メールがスキャンをバイパスしたかどうかを判断します。
+3. [ **問題のある受信者を選択** する] ボックスで、ポリシー チェックを実行する受信者を指定します。 ポリシー チェックでは、ユーザーまたは組織のポリシーが原因で、電子メールがスキャンをバイパスしたかどうかが決定されます。
 
-4. [Microsoft **に提出する理由の選択] セクション** で、次のいずれかのオプションを選択します。
-   - **ブロックされていない必要があります (誤検知)**
-   - **ブロックされている必要があります (False 負の値):** 電子メールが表示されるセクションとして分類されている必要があります。次のいずれかの値を選択します (不明な場合は、最善の判断を使用してください)。
+4. [ **Microsoft に送信する理由の選択]** セクションで、次のいずれかのオプションを選択します。
+   - **ブロックされていない必要があります (False positive)**
+   - **ブロックされている必要があります (False negative)**: 電子 **メールが表示されるセクションとして分類されている必要があります** 。次のいずれかの値を選択します (不明な場合は、最善の判断をしてください)。
      - **フィッシング**
      - **マルウェア**
      - **スパム**
@@ -108,66 +107,66 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
 5. 完了したら、**[送信]** をクリックします。
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="新しい URL 申請プロセス" lightbox="../../media/submission-flyout-email.png":::
+    > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="新しい URL 送信プロセス" lightbox="../../media/submission-flyout-email.png":::
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>疑わしい URL を Microsoft に送信する
 
-1. [申請 **の種類の選択] ボックス** で、ドロップダウン **リストから [URL** ] を選択します。
+1. [ **送信の種類の選択** ] ボックスで、ドロップダウン リストから **[URL] を** 選択します。
 
-2. 表示される **URL** ボックスに、完全な URL (たとえば) を入力します `https://www.fabrikam.com/marketing.html`。
+2. 表示される **[URL** ] ボックスに、完全な URL (たとえば) `https://www.fabrikam.com/marketing.html`を入力します。
 
-3. [Microsoft **に提出する理由の選択] セクション** で、次のいずれかのオプションを選択します。
-   - **ブロックされていない必要があります (誤検知)**
-   - **ブロックされている必要があります (False 負の値):** [この **URL** は表示されるセクションとして分類されている必要があります]で、次のいずれかの値を選択します (不明な場合は、最善の判断を使用してください)。
+3. [ **Microsoft に送信する理由の選択]** セクションで、次のいずれかのオプションを選択します。
+   - **ブロックされていない必要があります (False positive)**
+   - **ブロックされている必要があります (False negative)**: **[この URL は表示されるセクションとして分類されている必要があります** ] で、次のいずれかの値を選択します (わからない場合は、最善の判断をしてください)。
      - **フィッシング**
      - **マルウェア**
 
 4. 完了したら、**[送信]** をクリックします。
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="新しいメール送信プロセス" lightbox="../../media/submission-url-flyout.png":::
+    > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="新しい電子メール送信プロセス" lightbox="../../media/submission-url-flyout.png":::
 
-### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>疑わしいメール添付ファイルを Microsoft に送信する
+### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>疑わしい電子メールの添付ファイルを Microsoft に送信する
 
-1. [申請 **の種類の選択] ボックス** で、ドロップダウン リスト **から [メールの** 添付ファイル] を選択します。
+1. [ **送信の種類の選択** ] ボックスで、ドロップダウン リストから [ **電子メールの添付ファイル** ] を選択します。
 
-2. 表示される **[ファイル]** セクションで、[ファイルの参照] **をクリックします**。 開いたダイアログで、ファイルを見つけて選択し、[開く] をクリック **します**。
+2. 表示される [ **ファイル** ] セクションで、[ **ファイルの参照**] をクリックします。 開いたダイアログで、ファイルを見つけて選択し、[ **開く**] をクリックします。
 
-3. [Microsoft **に提出する理由の選択] セクション** で、次のいずれかのオプションを選択します。
-   - **ブロックされていない必要があります (誤検知)**
-   - ブロックされている必要 **があります (** False 負の値): [このファイルは表示されるセクションとして分類されている必要があります]で、次のいずれかの値を選択します (不明な場合は、最善の判断を使用してください)。
+3. [ **Microsoft に送信する理由の選択]** セクションで、次のいずれかのオプションを選択します。
+   - **ブロックされていない必要があります (False positive)**
+   - **ブロックされている必要があります (False negative)**: **[このファイルは表示されるセクションとして分類されている必要があります** ] で、次のいずれかの値を選択します (不明な場合は、最善の判断をしてください)。
      - **フィッシング**
      - **マルウェア**
 
 4. 完了したら、**[送信]** をクリックします。
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="新しい添付ファイルの申請プロセス" lightbox="../../media/submission-file-flyout.png":::
+    > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="新しい添付ファイルの送信プロセス" lightbox="../../media/submission-file-flyout.png":::
 
 > [!NOTE]
-> マルウェア フィルターによってメッセージ添付ファイルが Malware Alert Text.txt ファイルに置き換えられた場合は、元の添付ファイルを含む検疫から元のメッセージを送信する必要があります。 検疫の詳細とマルウェアの誤検知を含むメッセージを解放する方法については、「検疫済みメッセージとファイルを管理者として管理する」 [を参照してください](manage-quarantined-messages-and-files.md)。
+> マルウェア フィルターによってメッセージの添付ファイルがマルウェア アラート Text.txt ファイルに置き換えられた場合は、元の添付ファイルを含む検疫から元のメッセージを送信する必要があります。 検疫の詳細と、マルウェアの誤検知を含むメッセージを解放する方法については、「 [管理者としての検疫済みメッセージとファイルの管理](manage-quarantined-messages-and-files.md)」を参照してください。
 
-## <a name="view-admin-submissions-to-microsoft"></a>Microsoft への管理者申請の表示
+## <a name="view-admin-submissions-to-microsoft"></a>Microsoft に対する管理者の提出を表示する
 
-1. [申請Microsoft 365 Defender] の [<https://security.microsoft.com>アクション] の [提出]  **ページ**\>に移動&**送信します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission>。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[アクション] & **[申請**] の [**申請]** ページ **に**\>移動します。 **[申請]** ページに直接移動するには、 <https://security.microsoft.com/reportsubmission>.
 
-2. [申請 **] ページで**、[メール、**URL**、または電子メールの添付ファイル] タブが **選択されている必要** があります。
+2. [ **送信]** ページで、[ **電子メール**、 **URL**、または **電子メールの添付ファイル** ] タブが選択されていることを確認します。
 
-   - 使用可能な列ヘッダーをクリックすると、エントリを並べ替えできます。 [列 **のカスタマイズ] を** クリックして、最大 7 列を表示します。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
+   - 使用可能な列ヘッダーをクリックすると、エントリを並べ替えることができます。 [ **列のカスタマイズ** ] をクリックすると、最大 7 つの列が表示されます。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
      - **申請名**<sup>\*</sup>
      - **[送信者]**<sup>\*</sup>
      - **[受信者]**
-     - **提出日**<sup>\*</sup>
-     - **提出の理由**<sup>\*</sup>
-     - **状態**<sup>\*</sup>
+     - **送信日**<sup>\*</sup>
+     - **送信の理由**<sup>\*</sup>
+     - **ステータス**<sup>\*</sup>
      - **結果**<sup>\*</sup>
-     - **フィルターの評決**
+     - **フィルターの判定**
      - **配信/ブロックの理由**
      - **申請 ID**
      - **ネットワーク メッセージ ID/オブジェクト ID**
      - **方向**
      - [**Sender IP (送信者の IP)**]
-     - **バルク準拠レベル (BCL)**
+     - **一括準拠レベル (BCL)**
      - **宛先**
      - **ポリシー アクション**
      - **提出者**
@@ -180,53 +179,53 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
      > [!div class="mx-imgBorder"]
      > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="管理者申請の [新しいカスタマイズ] 列オプション" lightbox="../../media/admin-submission-customize-columns.png":::
 
-   - エントリをフィルター処理するには、[フィルター] を **クリックします**。 使用できるフィルターは次のとおりです。
-     - **提出日**: **開始日と****終了日**。
-     - **申請 ID**: すべての申請に割り当てられている GUID 値。
+   - エントリをフィルター処理するには、[フィルター] をクリック **します**。 使用できるフィルターは次のとおりです。
+     - **送信日**: **開始日** と **終了日**。
+     - **申請 ID**: すべての申請に割り当てられる GUID 値。
      - **ネットワーク メッセージ ID**
      - **Sender**
      - **[受信者]**
      - **名前**
      - **提出者**
-     - **提出の理由**
+     - **送信の理由**
      - **状態**
      - **Tags**
 
      完了したら、**[適用]** をクリックします。
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="管理者申請の新しいフィルター オプション" lightbox="../../media/admin-submission-filters.png":::
+     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="管理者申請の [新しいフィルター] オプション" lightbox="../../media/admin-submission-filters.png":::
 
-   - エントリをグループ化するには、[グループ] を **クリック** し、ドロップダウン リストから次のいずれかの値を選択します。
+   - エントリをグループ化するには、[ **グループ化** ] をクリックし、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
-     - **型**
+     - **Type**
      - **理由**
      - **状態**
      - **結果**
      - **Tags**
 
-   - エントリをエクスポートするには、[エクスポート] を **クリックします**。 表示されるダイアログで、ファイルを保存.csvします。
+   - エントリをエクスポートするには、[ **エクスポート**] をクリックします。 表示されるダイアログで、.csv ファイルを保存します。
 
-### <a name="admin-submission-result-details"></a>管理者申請の結果の詳細
+### <a name="admin-submission-result-details"></a>管理者提出結果の詳細
 
-管理者の申請で送信されたメッセージは確認され、提出の詳細フライアウトに結果が表示されます。
+管理者の提出で送信されたメッセージが確認され、申請の詳細ポップアップに結果が表示されます。
 
 - 配信時に送信者のメール認証に失敗した場合。
 - メッセージのセキュリティ判定に影響を与える、または上書きされる可能性があるポリシー ヒットに関する情報。
 - 現在の爆発的な結果により、メッセージに含まれる URL またはファイルが悪意のあるものかが確認されます。
-- 成績者からのフィードバック。
+- 採点者からのフィードバック。
 
-オーバーライドが見つかった場合は、数分で結果を使用できます。 メール認証や配信に問題が発生しない場合は、上書きによって影響を受けなかった場合、採点者からのフィードバックは最大で 1 日かかる可能性があります。
+オーバーライドが見つかった場合、結果は数分で使用可能になります。 電子メール認証に問題がない場合、または配信がオーバーライドの影響を受けなかった場合、採点者からのフィードバックには最大 1 日かかる可能性があります。
 
-## <a name="view-user-submissions-to-microsoft"></a>Microsoft へのユーザー申請の表示
+## <a name="view-user-submissions-to-microsoft"></a>Microsoft へのユーザー申請を表示する
 
-レポート メッセージ アドイン、レポート フィッシング アドイン [](enable-the-report-message-add-in.md)、または [ユーザーが Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) の組 [](enable-the-report-phish-add-in.md)み込みレポートを使用している場合は、[ユーザーレポートメッセージ] タブでユーザーが報告している情報を **確認** できます。
+[レポート メッセージ アドイン](enable-the-report-message-add-in.md)、[レポート フィッシング アドイン](enable-the-report-phish-add-in.md)、またはユーザーが組 [み込みのレポートをOutlook on the webで使用している](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)場合は、[**ユーザー報告メッセージ**] タブでレポートしているユーザーを確認できます。
 
-1. [申請Microsoft 365 Defender] の [<https://security.microsoft.com>アクション] の [提出]  **ページ**\>に移動&**送信します**。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission>。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[アクション] & **[申請**] の [**申請]** ページ **に**\>移動します。 **[申請]** ページに直接移動するには、 <https://security.microsoft.com/reportsubmission>.
 
-2. [申請 **] ページで** 、[ユーザーが報告した **メッセージ] タブを選択** します。
+2. [ **申請] ページで** 、[ **ユーザーが報告したメッセージ** ] タブを選択します。
 
-   - 使用可能な列ヘッダーをクリックすると、エントリを並べ替えできます。 [列 **のカスタマイズ] を** クリックしてオプションを表示します。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
+   - 使用可能な列ヘッダーをクリックすると、エントリを並べ替えることができます。 [ **列のカスタマイズ** ] をクリックしてオプションを表示します。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
 
      - **メールの件名**<sup>\*</sup>
      - **報告者**<sup>\*</sup>
@@ -234,68 +233,68 @@ Microsoft 365 メールボックスExchange Online組織では、管理者は Mi
      - **[送信者]**<sup>\*</sup>
      - **報告された理由**<sup>\*</sup>
      - **結果**<sup>\*</sup>
-     - **メッセージの報告 ID**
+     - **メッセージ報告 ID**
      - **ネットワーク メッセージ ID**
      - [**Sender IP (送信者の IP)**]
-     - **から報告**
+     - **レポート元**
      - **フィッシング シミュレーション**
-     - **管理者申請に変換**
+     - **管理者申請に変換済み**
      - **タグ**<sup>\*</sup>
-     - **としてマーク**<sup>\*</sup>
+     - **マーク済み**<sup>\*</sup>
      - **マーク付き**
      - **マークされた日付**
 
      完了したら、**[適用]** をクリックします。
 
-   - エントリをフィルター処理するには、[フィルター] を **クリックします**。 使用できるフィルターは次のとおりです。
-     - **報告された日付**: **開始日** と **終了日**。
+   - エントリをフィルター処理するには、[フィルター] をクリック **します**。 使用できるフィルターは次のとおりです。
+     - **報告日**: **開始日** と **終了日**。
      - [**レポート作成者**]
      - **メールの件名**
-     - **メッセージの報告 ID**
+     - **メッセージ報告 ID**
      - **ネットワーク メッセージ ID**
      - **Sender**
-     - **報告された理由**: **迷惑メール、****フィッシング、スパム****ではない**
-     - **報告先**: **Microsoft アドイン** または **サード パーティ製アドイン**
-     - **フィッシング シミュレーション**: **はいまたは****いいえ**
-     - **管理者申請に変換**: **はいまたは****いいえ**
+     - **報告された理由**: **迷惑メール**、**フィッシング**、**スパム** ではない
+     - **報告元**: **Microsoft アドイン** または **サード パーティアドイン**
+     - **フィッシング シミュレーション**: **はい** または **いいえ**
+     - **管理者申請に変換**: **はい** または **いいえ**
      - **Tags**
 
      完了したら、**[適用]** をクリックします。
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="ユーザー申請の新しいフィルター オプション" lightbox="../../media/admin-submission-reported-messages.png":::
+     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="ユーザー申請の [新しいフィルター] オプション" lightbox="../../media/admin-submission-reported-messages.png":::
 
-   - エントリをグループ化するには、[グループ] を **クリック** し、ドロップダウン リストから次のいずれかの値を選択します。
+   - エントリをグループ化するには、[ **グループ化** ] をクリックし、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
      - **理由**
      - **Sender**
      - [**レポート作成者**]
      - **結果**
-     - **から報告**
+     - **レポート元**
      - **フィッシング シミュレーション**
-     - **管理者申請に変換**
+     - **管理者申請に変換済み**
      - **Tags**
-   
-   - エントリをエクスポートするには、[エクスポート] を **クリックします**。 表示されるダイアログで、ファイルを保存.csvします。
+
+   - エントリをエクスポートするには、[ **エクスポート**] をクリックします。 表示されるダイアログで、.csv ファイルを保存します。
 
 > [!NOTE]
-> 組織がユーザー報告メッセージをカスタム メールボックスにのみ送信するように構成されている場合、報告されたメッセージは再スキャンのために送信されません。ユーザーレポートメッセージの結果は常に空になります。
+> 組織がユーザー報告メッセージをカスタム メールボックスのみに送信するように構成されている場合、報告されたメッセージは再スキャン用に送信されず、 **ユーザーが報告したメッセージ** の結果は常に空になります。
 
-### <a name="undo-user-submissions"></a>ユーザー申請の元に戻す
+### <a name="undo-user-submissions"></a>ユーザーの申請を元に戻す
 
-ユーザーが不審なメールをカスタム メールボックスに送信すると、ユーザーと管理者は申請を元に戻すオプションを使用できません。 ユーザーが電子メールを回復する場合は、削除済みアイテムまたは迷惑メール フォルダーで回復できます。
+ユーザーがカスタム メールボックスに不審な電子メールを送信すると、ユーザーと管理者は送信を元に戻すオプションを持っていません。 ユーザーが電子メールを回復する場合は、[削除済みアイテム] フォルダーまたは [迷惑メール] フォルダーで回復できます。
 
-### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>ユーザーが報告したメッセージをカスタム メールボックスから管理者申請に変換する 
+### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>ユーザーが報告したメッセージをカスタム メールボックスから管理者の提出に変換する
 
-Microsoft にメッセージを送信せずにユーザーが報告したメッセージを傍受するようにカスタム メールボックスを構成している場合は、特定のメッセージを見つけて分析のために Microsoft に送信できます。
+Microsoft にメッセージを送信せずにユーザーから報告されたメッセージをインターセプトするようにカスタム メールボックスを構成した場合は、分析のために特定のメッセージを見つけて Microsoft に送信できます。
 
-[ユーザー **報告メッセージ** ] タブで、一覧でメッセージを選択し、[分析のために **Microsoft** に送信] をクリックし、ドロップダウン リストから次のいずれかの値を選択します。
+[ **ユーザーから報告されたメッセージ** ] タブで、一覧でメッセージを選択し、[ **分析のために Microsoft に送信**] をクリックし、ドロップダウン リストから次のいずれかの値を選択します。
 
-- **クリーンレポート**
-- **フィッシングの報告**
-- **マルウェアの報告**
+- **クリーンなレポート**
+- **フィッシングを報告する**
+- **マルウェアを報告する**
 - **スパムを報告する**
 - **トリガー調査**
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="[アクション] ボタンの [新しいオプション]" lightbox="../../media/admin-submission-main-action-button.png":::
+> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="[アクション] ボタンの [新規] オプション" lightbox="../../media/admin-submission-main-action-button.png":::

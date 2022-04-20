@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 一括エラー修復プロセスに従わなくても、電子情報開示 (プレミアム) のレビュー セット内のドキュメントの処理エラーを修正できます。
-ms.openlocfilehash: fa4a595a967935241e67b9a88ed158c789075102
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d3b90f0f2d396b6304bb85b46bc5b018802101eb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935656"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993998"
 ---
 # <a name="single-item-error-remediation-in-ediscovery-premium"></a>電子情報開示の単一アイテム エラー修復 (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 エラー修復により、Microsoft Purview 電子情報開示 (プレミアム) ユーザーは、電子情報開示 (プレミアム) がコンテンツを適切に処理できないようにするデータの問題を修正できます。 たとえば、パスワードで保護されたファイルは、それらのファイルがロックまたは暗号化されているため、処理できません。 以前は、 [このワークフロー](error-remediation-when-processing-data-in-advanced-ediscovery.md)を使用して一括してエラーを修復する必要があります。 ただし、調査中のケースに対してこれらのファイルのいずれかが応答しているかどうかが不明な場合は、複数のファイルのエラーを修復しても意味がない場合があります。 また、応答性に関する事前の決定に役立つファイル メタデータ (ファイルの場所やアクセス権を持ったユーザーなど) を確認する前に、エラーを修復しても意味がない場合があります。 *単一項目エラー修復* と呼ばれる新機能により、電子情報開示マネージャーは、処理エラーのあるファイルのメタデータを表示し、必要に応じてレビュー セット内のエラーを直接修復できます。 この記事では、レビュー セット内の処理エラーがあるファイルを識別、無視、修復する方法について説明します。
 

@@ -18,12 +18,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) で受信メッセージを許可するための利用可能なオプションと推奨されるオプションについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0370b72ccf29469bd88679d589d715d8897c921f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 898f04826f89e3a33c0cfcca01b717523e7c6122
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681680"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974215"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP で安全な差出人のリストを作成する
 
@@ -47,13 +47,13 @@ Exchange Online のメールボックスを持つMicrosoft 365 のお客様、�
 
 > [!IMPORTANT]
 >
-> - マルウェアまたは信頼度の高いフィッシングとして識別されたメッセージは、お使いの [信頼できる送信者リスト] オプションに関係なく、常に検疫されます。 詳細については、「Secure [by default in Office 365」を参照してください](secure-by-default.md)。
+> - マルウェアまたは信頼度の高いフィッシングとして識別されたメッセージは、お使いの [信頼できる送信者リスト] オプションに関係なく、常に検疫されます。 詳細については、[Office 365の「既定でセキュリティで保護](secure-by-default.md)する」を参照してください。
 >
 > - 信頼できる差出人リストを使用してスパム フィルター処理を行う _すべて_ の例外を注意深く監視してください。
 >
 > - 信頼できる差出人リストを使用して誤検知 (不良とマークされた適切なメール) を救済できますが、可能であれば、信頼できる差出人リストの使用を、回避する必要がある一時的な解決策として検討する必要があります。 スパム フィルター処理の例外により、組織がスプーフィングやその他のセキュリティ攻撃を受ける可能性があるため、信頼できる差出人リストを使用して誤検知を管理することはお勧めしません。 信頼できる差出人リストを使用して誤検知を管理することを強く求める場合は、警戒を怠らず、トピック[報告メッセージとファイルを Microsoft に対して](report-junk-email-messages-to-microsoft.md)常に準備しておく必要があります。
 >
-> - ドメインが認証されていない電子メールを送信する (スプーフィング防止保護をバイパスする) が、スパム対策などの保護をバイパスしない場合は、スプーフィン[](learn-about-spoof-intelligence.md)グ インテリジェンスインサイトとテナント許可/禁止一覧を[使用](tenant-allow-block-list.md)できます。
+> - ドメインが認証されていない電子メールを送信できるようにする (スプーフィング対策保護をバイパスする) が、スパム対策やその他の保護をバイパスしないようにするには、 [スプーフィング インテリジェンス 分析情報](learn-about-spoof-intelligence.md) と [テナント許可/ブロック リスト](tenant-allow-block-list.md)を使用できます。
 >
 > - EOP と Outlook は、さまざまなメッセージ プロパティを調べて、メッセージの送信者を特定します。 詳細については、この記事で後述する「[バルク メールの考慮事項](#considerations-for-bulk-email)」セクションを参照してください。
 >
@@ -101,7 +101,7 @@ Exchange Online およびスタンドアロン EOP のメール フロー ルー
 
       メール フロー ルールが原因でメッセージがスパム フィルター処理をスキップすると、値 `SFV:SKN`値が **X-Forefront-Antispam-Report** ヘッダーにスタンプされます。 メッセージが IP 許可一覧にあるソースからのメッセージの場合、値 `IPV:CAL`も追加されます。 これらの値は、トラブルシューティングに役立ちます。
 
-![スパム フィルターをバイパスするための EAC のメール フロー ルール設定。](../../media/1-AllowList-SkipFilteringFromContoso.png)
+      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="スパム フィルター処理をバイパスするための EAC のメール フロー ルール設定" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
 
 ## <a name="use-outlook-safe-senders"></a>Outlook の信頼できる差出人を使用する
 

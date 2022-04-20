@@ -14,18 +14,20 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9ee299c0972ed4e286e5a660f5082dd5632167e4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cd0d463e234c439d8b57576375fd6a91e512f753
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934271"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995283"
 ---
 # <a name="upload-your-test-base-package-zip"></a>テスト ベース パッケージをアップロードする (Zip) 
 
-[テスト ベース ポータル] ページで、次に示すように、左側のナビゲーション バーの **アップロード新しいパッケージ** オプションに移動します。
+Test Base ポータル ページで、左側のナビゲーション バーの **[新しいパッケージ** ] オプションに移動し、[ **レガシ アップロード エクスペリエンス** ] をクリックして、次に示すように Zip アップロード エクスペリエンスを有効にします。
 
-:::image type="content" alt-text="新しいパッケージをアップロードします。" source="Media/Upload-New-Package.png" lightbox="Media/Upload-New-Package.png":::
+:::image type="content" alt-text="新しいパッケージをアップロードします。" source="Media/testapplication01.png" lightbox="Media/testapplication01.png":::
+
+:::image type="content" alt-text="操作を適用します。" source="Media/testapplication21.png" lightbox="Media/testapplication21.png":::
 
 次の手順に従って、新しいパッケージをアップロードします。
 

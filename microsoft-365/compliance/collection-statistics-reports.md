@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview 電子情報開示 (プレミアム) のレビュー セットにコミットされている下書きコレクションとコレクションの統計とレポートにアクセスして使用する方法について説明します。
-ms.openlocfilehash: 12152e0b81df6c61732fda068c593a91578861ee
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 140a6aa2ac0a0ebbff7cf2ab2ee8618cd45cdf07
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940315"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995758"
 ---
 # <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Microsoft Purview 電子情報開示のコレクションの統計情報とレポート (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 下書きコレクションを作成した後は、検索条件に一致した最も多くのアイテムを含むコンテンツの場所や、検索クエリによって返されたアイテムの数など、取得されたアイテムに関する統計情報を表示できます。 結果のサブセットをプレビューすることもできます。
 

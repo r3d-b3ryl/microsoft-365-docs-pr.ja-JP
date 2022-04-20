@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Office 365 の新機能
-description: Microsoft Defender for microsoft Defender for Office 365 で利用できる新機能について説明します。
-keywords: Microsoft Defender for Office 365, ga, generally available, capabilitis, available, new
+description: 最新リリースのMicrosoft Defender for Office 365で利用できる新機能について説明します。
+keywords: Microsoft Defender for Office 365、ga、一般公開、機能、利用可能、新規の新機能
 search.appverid: met150
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5ae288b2d7dbaec9f66a501f7177741a5df48d0c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c5b1d501f0d33e5b837abcd81f7b228cdc74d943
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323949"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973027"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -37,91 +37,88 @@ ms.locfileid: "63323949"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-この記事では、Microsoft Defender for microsoft Defender for Office一覧を示します。 現在プレビュー中の機能は (プレビュー) **で示されます**。
+この記事では、Microsoft Defender for Office 365の最新リリースの新機能の一覧を示します。 現在プレビュー中の機能は **、(プレビュー)** と表示されます。
 
 [このビデオ](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3)を見て詳細をご確認ください。
 
 > [!TIP]
-> Microsoft Defender for Office 365 はありませんか? [試用版を開始する場合は、営業にお問い合わせください](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)。
+> まだMicrosoft Defender for Office 365がありませんか? [試用版を開始するには、営業にお問い合わせください](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)。
 
-他の Microsoft Defender セキュリティ製品の新機能の詳細については、以下を参照してください。
+他の Microsoft Defender セキュリティ製品の新機能の詳細については、次を参照してください。
 
 - [Microsoft 365 Defender の新機能](../defender/whats-new.md)
 - [Microsoft Defender for Endpoint の新機能](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
-- [Microsoft Defender for Identity の新機能](/defender-for-identity/whats-new)
-- [Microsoft Cloud App Security の新機能](/cloud-app-security/release-notes)
+- [Microsoft Defender for Identityの新機能](/defender-for-identity/whats-new)
+- [Microsoft Cloud App Securityの新機能](/cloud-app-security/release-notes)
 
 ## <a name="march-2022"></a>2022 年 3 月
 
-- [Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): 新しい統合された合理化された申請プロセスを導入して、エクスペリエンスを簡単にしました。
-
+- [Microsoft Defender for Office 365での提出エクスペリエンスの効率化](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): 新しい統合された合理化された提出プロセスを紹介し、エクスペリエンスをシンプルにします。
 
 ## <a name="january-2022"></a>2022 年 1 月
 
-- [Office 365 用 Microsoft Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015) のハンティングと調査エクスペリエンスの更新: Office 365 の Defender でのエクスペリエンスのメール概要パネルと、脅威エクスプローラーとリアルタイム検出のエクスペリエンス更新プログラムを紹介します。
-
+- [Microsoft Defender for Office 365のハンティングと調査のエクスペリエンスの更新](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015): Defender for Office 365のエクスペリエンスに関する電子メール の概要パネルと、脅威エクスプローラーとリアルタイム検出のエクスペリエンス更新プログラムを紹介します。
 
 ## <a name="october-2021"></a>2021 年 10 月
 
 - [高度な配信 DKIM の強化](configure-advanced-delivery.md): サード パーティのフィッシング シミュレーション構成の一環として、DKIM ドメイン エントリのサポートが追加されました。
-- [既定でセキュリティ保護](secure-by-default.md): Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) の既定のセキュリティで保護された拡張。
+- [既定でセキュリティ保護](secure-by-default.md): Exchangeメール フロー ルール (トランスポート ルールとも呼ばれます) に対して、既定でセキュリティ保護を強化します。
 
 ## <a name="september-2021"></a>2021 年 9 月
 
-- [Defender for Office 365 でのレポートエクスペリエンスの向上](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/improving-the-reporting-experience-in-microsoft-defender-for/ba-p/2760898)
+- [Defender for Office 365でのレポート エクスペリエンスの向上](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/improving-the-reporting-experience-in-microsoft-defender-for/ba-p/2760898)
 - [検疫ポリシー](quarantine-policies.md): 管理者は、検疫されたメッセージへの受信者アクセスの詳細な制御を構成し、エンドユーザーのスパム通知をカスタマイズできます。
   - [管理者エクスペリエンスのビデオ](https://youtu.be/vnar4HowfpY)
   - [エンド ユーザー エクスペリエンスのビデオ](https://youtu.be/s-vozLO43rI)
-  - 検疫エクスペリエンスに追加されるその他の新機能については、このブログ記事「検疫エクスペリエンスの簡素化 [」で説明します](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388)。
-- 既定では、ポータルのリダイレクトが開始し、ユーザーをセキュリティ コンプライアンス & Microsoft 365 Defender にリダイレクトします <https://security.microsoft.com>。 詳細については、「Microsoft [365 Defender への Office 365](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) セキュリティ とコンプライアンス センターからのアカウントのリダイレクト」を参照してください。
+  - 検疫エクスペリエンスに関するその他の新機能については、このブログ記事「 [検疫エクスペリエンスの簡略化](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388)」で説明しています。
+- ポータルのリダイレクトは既定で開始され、セキュリティ & コンプライアンスから Microsoft 365 Defender <https://security.microsoft.com>にユーザーがリダイレクトされます。 詳細については、「Office 365 [セキュリティとコンプライアンス センターからMicrosoft 365 Defenderへのアカウントのリダイレクト」を](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)参照してください。
 
 ## <a name="august-2021"></a>2021 年 8 月
 
-- [報告されたメッセージの管理者レビュー](admin-review-reported-message.md): 管理者は、報告されたメッセージを確認した後、テンプレートメッセージをエンド ユーザーに送り返す機能を持つ。 テンプレートは、組織に合わせてカスタマイズし、管理者の評決にも基づいてカスタマイズできます。
-- [[テナントの許可/](manage-tenant-allows.md)ブロック一覧で許可を追加する]: ブロックされたメッセージが管理者申請プロセスの一部として送信された場合に、許可エントリをテナント許可/ブロック一覧に追加できます。 ブロックの性質に応じて、送信された URL、ファイル、送信者の許可がテナント許可/ブロック一覧に追加されます。 ほとんどの場合、許可はシステムに時間を与え、保証されている場合は自然に許可するために追加されます。 場合によっては、Microsoft が許可を管理します。
+- [報告されたメッセージの管理者レビュー](admin-review-reported-message.md): 管理者は、報告されたメッセージを確認した後、テンプレート化されたメッセージをエンド ユーザーに返送できるようになりました。 テンプレートは、組織に合わせてカスタマイズでき、管理者の評決にも基づいてカスタマイズできます。
+- [テナント許可/ブロック リストに許可を](manage-tenant-allows.md)追加する: ブロックされたメッセージが管理者申請プロセスの一部として送信された場合に、許可エントリをテナント許可/ブロック リストに追加できるようになりました。 ブロックの性質に応じて、送信された URL、ファイル、送信者の許可がテナント許可/ブロック リストに追加されます。 ほとんどの場合、許可が追加され、システムに時間が与え、保証されていれば自然に許可されます。 場合によっては、Microsoft によって許可が管理されます。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
-- [自動調査における電子メール分析の改善](email-analysis-investigations.md)
-- [高度な](configure-advanced-delivery.md)配信: ユーザーへのサード パーティのフィッシング シミュレーションの配信とセキュリティ操作メールボックスへのフィルター処理されていないメッセージの配信を構成するための新しい機能を導入します。
-- [Microsoft Teams の安全なリンク](safe-links.md#safe-links-settings-for-microsoft-teams)
-- 次のシナリオの新しいアラート ポリシー: 侵害されたメールボックス、フォームフィッシング、上書きおよび ZAP の切り上がりにより配信される悪意のあるメール
+- [自動調査の電子メール分析の機能強化](email-analysis-investigations.md)
+- [高度な配信](configure-advanced-delivery.md): サード パーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージをセキュリティ操作メールボックスに配信するための新しい機能を導入しました。
+- [Microsoft Teamsのリンクをセーフする](safe-links.md#safe-links-settings-for-microsoft-teams)
+- 次のシナリオの新しいアラート ポリシー: 侵害されたメールボックス、フォームフィッシング、オーバーライドが原因で配信された悪意のあるメール、ZAP の丸め
   - 疑わしいメール転送アクティビティ
   - フォームの共有と応答の収集について制限されたユーザー
   - フィッシング詐欺の可能性が原因でブロックされたフォーム
   - フラグが設定され、フィッシングが確認されたフォーム
   - [ZAP の新しいアラート ポリシー](../../compliance/new-defender-alert-policies.md)
-- Microsoft Defender for Office 365 アラートが [Microsoft 365 Defender - Microsoft 365 Defender Unified Alerts Queue および Unified Alerts Queue に統合されました](../defender/investigate-alerts.md)
-- [](user-tags.md)ユーザー タグは、Office 365 セキュリティ & コンプライアンスのアラート キューと詳細、ユーザー タグへのカスタム アラート ポリシーのスコープ設定など、Office 365 アラート エクスペリエンス向け Microsoft Defender に統合され、対象となるアラート ポリシーを作成できます。
-  - タグは、Microsoft 365 Defender ポータルの統合アラート キューでも使用できます (Microsoft Defender for Office 365 プラン 2)
+- Microsoft Defender for Office 365アラートがMicrosoft 365 Defenderに統合されるようになりました - [統合アラート キューと統合アラート キュー Microsoft 365 Defender](../defender/investigate-alerts.md)
+- [ユーザー タグ](user-tags.md)は、Microsoft Defender for Office 365アラート エクスペリエンス (Office 365 Security & Compliance のアラート キューと詳細、ユーザー タグへのカスタム アラート ポリシーのスコープ設定など) に統合され、対象のアラート ポリシーが作成されるようになりました。
+  - タグは、Microsoft 365 Defender ポータルの統合アラート キューでも使用できます (プラン 2 Microsoft Defender for Office 365)
 
 ## <a name="june-2021"></a>2021 年 6 月
 
-- フィッシング対策ポリシー内の新しい最初の連絡先の安全ヒントの設定。 この安全上のヒントは、受信者が最初に送信者から電子メールを受信するか、送信者からメールを受信しない場合に表示されます。 この設定と構成方法の詳細については、次の記事を参照してください。
-  - [最初の連絡先の安全に関するヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- フィッシング対策ポリシー内の新しい最初の連絡先安全性のヒント設定。 この安全性のヒントは、受信者が最初に送信者から電子メールを受信したとき、または送信者から電子メールを受信しない場合に表示されます。 この設定とその構成方法の詳細については、次の記事を参照してください。
+  - [最初の連絡先安全性のヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)
   - [EOP でのスパム対策ポリシーの構成](configure-anti-phishing-policies-eop.md)
-  - [Microsoft Defender でフィッシング対策ポリシーを構成する (Office 365)](configure-mdo-anti-phishing-policies.md)
+  - [Microsoft Defender for Office 365でフィッシング対策ポリシーを構成する](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>2021 年 4 月/5 月
 
-- [[電子メール](mdo-email-entity-page.md) エンティティ] ページ: 脅威、認証と検出、発発の詳細、および新しいメール プレビュー エクスペリエンスに関する情報が充実した電子メールの統合された 360 度のビュー。
-- [Office 365 管理 API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): EmailEvents (RecordType 28) を更新して、配信アクション、元の配信場所と最新の配信場所、および更新された検出の詳細を追加します。
-- [Office 365 用 Defender の Threat Analytics](/microsoft-365/security/defender/threat-analytics): アクティブな脅威アクター、一般的な手法、攻撃表面を表示し、進行中のキャンペーンに関する Microsoft の研究者からの広範な報告を表示します。
+- [電子メール エンティティ ページ](mdo-email-entity-page.md): 脅威、認証と検出、起爆の詳細、およびまったく新しいメール プレビュー エクスペリエンスに関する情報を含む、電子メールの 360 度の統合ビュー。
+- [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): EmailEvents (RecordType 28) を更新して、配信アクション、元の配信場所と最新の配信場所、および更新された検出の詳細を追加します。
+- [Defender for Office 365用の Threat Analytics](/microsoft-365/security/defender/threat-analytics): アクティブな脅威アクター、一般的な手法、攻撃面を表示し、進行中のキャンペーンに関する Microsoft の研究者からの広範なレポートを表示します。
 
 ## <a name="februarymarch-2021"></a>2021 年 2 月/3 月
 
-- 検索エクスペリエンスでのアラート ID の統合 (アラート ID とAlert-Explorerナビゲーションを使用[した検索](threat-explorer.md))
-- 狩猟エクスペリエンスでのレコードのエクスポートの制限を 9990 から 200,000 に [増やす](threat-explorer.md)
-- 試用版テナントのエクスプローラー (およびリアルタイム検出) データの保持と検索の制限を 7 (前の制限) から 30 日間のハンティング エクスペリエンス [に拡張する](threat-explorer.md)
-- 保護されたユーザーまたはドメインに対する偽装攻撃を検索するための、エクスプローラー内の偽装ドメインと偽装ユーザー (およびリアルタイムの検出) と呼ばれる新しい検索ピボット。 詳細については、「詳細」を [参照してください](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。 (Microsoft Defender for Office 365 プラン 1 またはプラン 2)
-
+- [ハンティング エクスペリエンス](threat-explorer.md)でのアラート ID の統合 (アラート ID とAlert-Explorer ナビゲーションを使用した検索)
+- [ハンティング エクスペリエンス](threat-explorer.md)でレコードのエクスポートの制限を 9990 から 200,000 に増やす
+- エクスプローラー (およびリアルタイム検出) のデータリテンション期間と試用版テナントの検索制限を 7 日 (以前の制限) から 30 日間の[ハンティング エクスペリエンス](threat-explorer.md)に拡張する
+- エクスプローラー内の **偽装されたドメイン** と **偽装されたユーザー** (およびリアルタイム検出) と呼ばれる新しいハンティング ピボット。保護されたユーザーまたはドメインに対する偽装攻撃を検索します。 詳細については、詳細を参照 [してください](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。 (Microsoft Defender for Office 365 プラン 1 またはプラン 2)
 
 ## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 プラン 1 およびプラン 2
 
-Microsoft Defender for Office 365 は 2 つのプランで利用できます。 [各プランに含まれる内容の詳細について説明します](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
+Microsoft Defender for Office 365が 2 つのプランで利用できることをご存じですか? [各プランに含まれる内容の詳細については、こちらを参照してください](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
+[Microsoft 365ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Microsoft Defender for Office 365 サービスの説明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

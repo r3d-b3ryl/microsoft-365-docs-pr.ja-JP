@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: レビュー セット内のドキュメントをAzure Storage アカウントにエクスポートし、Azure Storage Explorerを使用してローカル コンピューターにダウンロードします。
-ms.openlocfilehash: babac7d0289eee2384c12acfe05223bfceba1ce1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c8709fe1540393164e00222b728b10d5f809012
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934843"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994900"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>レビュー セット内のドキュメントをAzure Storage アカウントにエクスポートする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示 (プレミアム) ケースのレビュー セットからドキュメントをエクスポートする場合は、組織で管理されているAzure Storage アカウントにエクスポートできます。 このオプションを使用すると、ドキュメントはAzure Storageの場所にアップロードされます。 エクスポート後は、Azure Storage Explorerを使用してドキュメントにアクセス (およびローカル コンピューターまたはその他の場所にダウンロード) できます。 この記事では、ドキュメントをAzure Storage アカウントにエクスポートする方法と、Azure Storage Explorerを使用してAzure Storageの場所に接続してエクスポートされたドキュメントをダウンロードする方法について説明します。 Azure Storage Explorerの詳細については、「[Azure Storage Explorerを使用する](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)」を参照してください。
 

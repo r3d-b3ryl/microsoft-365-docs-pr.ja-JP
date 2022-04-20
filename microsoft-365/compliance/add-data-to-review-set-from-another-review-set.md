@@ -19,14 +19,16 @@ description: 1 つのレビュー セットからドキュメントを選択し�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: deb0389a4f4bd9bafedd3b2a8dd6c367c6e78fbb
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b87c9278b5009f6873414f8fc53d434c458c62ad
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941173"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995846"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>別のレビュー セットからレビュー セットにデータを追加
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 場合によっては、1 つのレビュー セットからドキュメントを選択し、別のレビュー セットで個別に操作することが必要になる場合があります。 これは、レビューセットのコンテンツを選別して、データのサブセットに対して 分析を実行する場合に、特に役立ちます。
 

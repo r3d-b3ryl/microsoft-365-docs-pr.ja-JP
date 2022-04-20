@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: 管理者は、PST ファイルをハード ドライブにコピーしてから Microsoft に配布することで、PST ファイルをメールボックスMicrosoft 365に一括インポートする方法について説明します。
-ms.openlocfilehash: 53022477b034c0620177b00c0c171c8d6c36e250
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d2255a01c49e3837365735e1c3300b7f6b34c42c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934645"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996000"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>ドライブ配布を使用して組織の PST ファイルをインポートする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事は管理者向けです。PST ファイルを自分のメールボックスにインポートしようとしていますか?[Outlook .pst ファイルから電子メール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)方法に関するページを参照してください。**
    

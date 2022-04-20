@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Microsoft 365の O2 モバイル ネットワークから SMS および MMS データをインポートおよびアーカイブする TeleMessage コネクタを設定できます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 5e802aab643fc795191344f22512f073bd1785fc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eb8bec7aa81963d9bdd1617f022a9352378d8f08
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944087"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994614"
 ---
 # <a name="set-up-a-connector-to-archive-o2-network-data"></a>O2 ネットワーク データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの TeleMessage コネクタを使用して、O2 モバイル ネットワークからのショート メッセージング サービス (SMS) メッセージと音声通話をインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の O2 ネットワークに毎日 1 回接続され、MICROSOFT 365内のメールボックスに SMS と音声通話がインポートされます。
 

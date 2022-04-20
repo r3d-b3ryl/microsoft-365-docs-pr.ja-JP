@@ -318,7 +318,7 @@
               href: sit-learn-about-exact-data-match-based-sits.md
             - name: ドキュメント フィンガープリンティング
               href: document-fingerprinting.md
-            - name: 名前付きエンティティの詳細 (プレビュー)
+            - name: 名前付きエンティティの詳細
               href: named-entities-learn.md
         - name: 機密情報の種類を使用開始
           items:
@@ -362,7 +362,7 @@
               href: sit-use-exact-data-manage-schema.md
             - name: 機密情報のソース テーブル ファイルを更新する
               href: sit-use-exact-data-refresh-data.md
-            - name: データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
+            - name: データ損失防止ポリシーで名前付きエンティティを使用する
               href: named-entities-use.md
             - name: 機密情報の種類の一般的な使用シナリオ
               href: sit-common-scenarios.md

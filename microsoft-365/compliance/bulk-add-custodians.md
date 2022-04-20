@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 一括インポート ツールを使用して、Microsoft Purview 電子情報開示 (プレミアム) のケースに複数のカストディアンとその関連データ ソースをすばやく追加します。
-ms.openlocfilehash: 7913c8674dc5560539196f34e323f05955a6850e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a6ad413c65b3b8afaa0cbf10df1a595730914405
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950359"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994526"
 ---
 # <a name="import-custodians-to-an-ediscovery-premium-case"></a>電子情報開示 (プレミアム) ケースにカストディアンをインポートする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 多くのカストディアンを含む Microsoft Purview 電子情報開示 (プレミアム) ケースの場合は、ケースに追加するために必要な情報を含む CSV ファイルを使用して、複数のカストディアンを一度にインポートできます。 インポート カストディアン ツールでは、インポート ジョブが作成される前に CSV ファイルも検証されます。 つまり、インポート ジョブが完了するまで待たなくても、カストディアンがケースに追加されないようにするエラーがあることを学習する前に、CSV ファイル内のエラーを修正できます。
 

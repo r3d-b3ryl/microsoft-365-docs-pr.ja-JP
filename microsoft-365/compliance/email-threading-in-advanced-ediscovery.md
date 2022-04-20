@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: 電子情報開示 (プレミアム) 分析を実行する場合、電子メール スレッドは電子メール会話を解析し、各メッセージを異なるカテゴリに分割します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 51cc9ce09f1f2c9c95c3ab5a7f2175516c9ed199
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f2cdd3a10250a256179ce3fe959a88e0cbef01ba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948707"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995494"
 ---
 # <a name="email-threading-in-ediscovery-premium"></a>電子情報開示での電子メール スレッド (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 しばらく続いている電子メールの会話を検討してください。 ほとんどの場合、電子メール スレッドの最後のメッセージには、前のすべてのメッセージの内容が含まれます。 したがって、最後のメッセージを確認すると、スレッドで発生した会話の完全なコンテキストが提供されます。 電子メール スレッドは、レビュー担当者がコンテキストを失うことなく、収集されたドキュメントの一部を確認できるように、このようなメッセージを識別します。
 

@@ -19,17 +19,16 @@ search.appverid:
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4024640173d6cbbf6817d3fa2b1c24cb7264833c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 13b8aa5699c3d4031a364ceaf62b70e6b7236fda
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470859"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972996"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 個人データの使用と転送を監視するために使用できるツールは数多くあります。このトピックでは、効果的な 3 つのツールについて説明します。
 
@@ -37,7 +36,7 @@ ms.locfileid: "64470859"
 
 この図について:
 
-- まず、SharePoint Online、OneDrive for Business、転送中のメールの個人データを監視するための Microsoft 365 データ損失防止レポートから開始します。これらのレポートは、個人データを監視するための最も詳細なレベルの内容を提供します。ただし、このレポートには Office 365 のすべてのサービスが含まれているわけではありません。
+- まず、SharePoint Online、OneDrive for Business、転送中のメールの個人データを監視するための Microsoft Purview データ損失防止レポートから開始します。これらのレポートは、個人データを監視するための最も詳細なレベルの内容を提供します。ただし、このレポートには Office 365 のすべてのサービスが含まれているわけではありません。
 
 - 次に、アラート ポリシーと監査ログを使用して、サービス全体のアクティビティを監視します。進行中の監視を設定するか、監査ログを検索してインシデントを調査します。監査ログは、Sway、Power BI、電子情報開示、Dynamics 365、Power Automate、Microsoft Teams、管理アクティビティ、OneDrive for Business、SharePoint Online、転送中のメール、保管中のメールボックスなどのサービス全体で機能します。Skype の会話は保管中のメールボックスに含まれます。
 
@@ -58,7 +57,7 @@ DLP レポートを使用すると、以下のことを行えます。
 
 さらに、テスト モードで実行するときに、DLP レポートを使用して DLP ポリシーを微調整することができます。
 
-DLP レポートは、Microsoft 365 コンプライアンス センターにあります。**[レポート]** \> **[組織データ]** セクションに移動して、**DLP ポリシーの一致**、**DLP インシデント**、および **DLP の誤検知と上書き** のレポートを検索します。
+DLP レポートは、Microsoft Purview コンプライアンス センターにあります。**[レポート]** \> **[組織データ]** セクションに移動して、**"DLP ポリシーの一致"**、**"DLP インシデント"**、および **"DLP の誤検知と上書き"** レポートを検索します。
 
 詳細については、「[データ損失防止のレポートの表示](../../compliance/view-the-dlp-reports.md)」を参照してください。
 
@@ -68,9 +67,9 @@ DLP レポートは、Microsoft 365 コンプライアンス センターにあ�
 
 監査ログには、Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Power BI、Sway などの サービスからのイベントが含まれます。
 
-Microsoft 365 Defender ポータルと Microsoft 365 コンプライアンス センターでは、監査ログを監視およびレポートする 2 つの方法を提供しています。
+Microsoft 365 Defender ポータルと Microsoft Purview コンプライアンス ポータルでは、監査ログを監視およびレポートする 2 つの方法を提供しています:
 
-- アラート ポリシーの設定、アラートの表示、トレンドの監視には、Microsoft 365 Defender ポータルまたは Microsoft 365 コンプライアンス センターのいずれかにあるアラート ポリシーやアラート ダッシュボード ツールを使用します。
+- アラート ポリシーの設定、アラートの表示、トレンドの監視するには、Microsoft 365 Defender ポータルまたは Microsoft Purview コンプライアンス ポータルのいずれかにあるアラート ポリシーやアラート ダッシュボード ツールを使用します。
 - 監査ログを直接検索するには、指定した日付の範囲ですべてのイベントを検索します。また、操作を実行したユーザー、操作、または対象オブジェクトなど、特定の条件に基づいて結果をフィルター処理することもできます。
 
 情報コンプライアンスおよびセキュリティ チームは、これらのツールを使用して、エンド ユーザーと管理者の両方がサービスで実行したアクティビティを予防的に確認することができます。特定のアクティビティが特定のサイト コレクションで発生した場合に (たとえば、GDPR 関連情報が含まれていることがわかっているサイトからコンテンツを共有する場合など)、メール通知を送信するように自動アラートを設定できます。これによってチームは、ユーザーをフォローアップして、企業のセキュリティ ポリシーの遵守の徹底、追加のトレーニング提供などを行うことができます。

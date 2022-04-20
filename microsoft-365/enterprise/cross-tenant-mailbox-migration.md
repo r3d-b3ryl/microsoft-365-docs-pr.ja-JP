@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: c66c0c60002b67642a2cf8eb8e1a66dc5db140ff
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: 00ded796cb0fc8878b3eee3f656afac426cd0f35
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651435"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973995"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックス移行 (プレビュー)
 
@@ -542,9 +542,9 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 クロステナント移行ではラベルはエクスポートされず、テナント間でラベルを共有する方法がないため、これを実現できるのは、宛先テナント内のラベルを再作成することだけです。
 
-**Microsoft 365 组の移動はサポートされていますか?**
+**Microsoft 365 グループの移動はサポートされていますか?**
 
-現在、テナント間メールボックス移行機能では、Microsoft 365 组の移行はサポートされていません。
+現在、テナント間メールボックス移行機能では、Microsoft 365 グループの移行はサポートされていません。
 
 **メールボックスが新しいテナントまたはターゲット テナントに移行された後、ソース テナント管理者はメールボックスに対して電子情報開示検索を実行できますか?**
 
@@ -642,9 +642,9 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
       Exchange Onlineを含む現在のサービス プランの完全なセットを次に示します。
 
-      | 名前                                             |
+      | 氏名                                             |
       | ------------------------------------------------ |
-      | Advanced eDiscovery Storage (500 GB)             |
+      | 電子情報開示 (プレミアム) Storage (500 GB)             |
       | 顧客ロックボックス                                 |
       | データ損失防止                             |
       | Exchange Enterprise CAL サービス (EOP、DLP)      |
@@ -669,8 +669,8 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
       | Microsoft Bookings                               |
       | Microsoft Business Center                        |
       | Microsoft MyAnalytics (フル機能)                     |
-      | Office 365 Advanced eDiscovery                   |
-      | Pertahanan Microsoft untuk Office 365 (プラン 1)       |
+      | Office 365電子情報開示 (プレミアム)                   |
+      | Microsoft Defender for Office 365 (プラン 1)       |
       | Microsoft Defender for Office 365 (プラン 2)       |
       | Office 365 Privileged Access Management          |
       | Office 365での暗号化のプレミアム                 |

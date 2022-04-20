@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Microsoft 365で Veritas から XSLT/XML データをインポートおよびアーカイブするコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: e1537bce351c2dd98286f82e134cb5779742b1f2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 92932e3e18c8f43c46cf71e43ec02306d78a2f60
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936887"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995736"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>XSLT/XML データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、Web ページ ソースからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には [XSLT/XML コネクタ](https://globanet.com/xslt-xml)が用意されています。XSLT (拡張可能スタイル シート言語変換) を使用して作成されたファイルを迅速に開発し、XML ファイルを他のファイル形式 (HTML やテキストなど) に変換し、Microsoft 365にインポートできます。 コネクタは、XSLT/XML ソースからアイテムのコンテンツを電子メール メッセージ形式に変換し、変換されたアイテムをMicrosoft 365メールボックスにインポートします。
 

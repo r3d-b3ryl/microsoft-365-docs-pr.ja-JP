@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Microsoft Purview コンプライアンス ポータルで、ユーザーが電子情報開示アクセス許可を割り当ててコンテンツ検索、電子情報開示 (Standard)、電子情報開示 (プレミアム) タスクを実行したときに記録されるイベントについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 519347ed8f074fc15c8618f6ceb84159314c5915
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1e21fcff71d050e09a60a6708678d46f2b894bdc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941833"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995868"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>監査ログで電子情報開示アクティビティを検索する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルまたは対応する PowerShell コマンドレットを実行して実行されるコンテンツ検索および電子情報開示関連のアクティビティ (Microsoft Purview 電子情報開示 (Standard) と Microsoft Purview 電子情報開示 (プレミアム)) は、監査ログに記録されます。 イベントは、管理者または電子情報開示マネージャー (または電子情報開示アクセス許可が割り当てられたユーザー) がコンプライアンス ポータルで次のコンテンツ検索および電子情報開示 (Standard) タスクを実行すると記録されます。
   

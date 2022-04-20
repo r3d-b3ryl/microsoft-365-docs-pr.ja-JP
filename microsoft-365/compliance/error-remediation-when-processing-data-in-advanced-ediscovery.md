@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: エラー修復を使用して、コンテンツの適切な処理を妨げる可能性がある電子情報開示 (プレミアム) のデータの問題を修正する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d1331e595f661e1e69f114058579ab9163074b41
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1f56ad34cb295103178c5f244ccd78d7ad3757b0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932180"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994548"
 ---
 # <a name="error-remediation-when-processing-data"></a>データ処理中のエラー修復
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 エラー修復により、電子情報開示管理者は、Microsoft Purview 電子情報開示 (プレミアム) がコンテンツを適切に処理できないデータの問題を修正できます。 たとえば、パスワードで保護されたファイルは、ファイルがロックまたは暗号化されているため、処理できません。 電子情報開示管理者は、エラー修復を使用して、このようなエラーが発生したファイルをダウンロードし、パスワード保護を削除してから、修復されたファイルをアップロードできます。
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: データプライバシー規制、関連するシナリオ、準備状況、およびMicrosoft 365環境内の機密情報の種類を決定します。
-ms.openlocfilehash: 967c64dee2d99f41b3c2a1b6a193730dcd75811a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e2d87599315e7bb43b289d74b5f192b29aecd965
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947519"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973476"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>データプライバシーリスクを評価し、Microsoft 365を使用して機密アイテムを特定する
 
@@ -190,7 +190,7 @@ GDPR 評価は、次のセクションで構成されます。
 
 この手順では、特定の規制規制の対象となる特定の機密情報の種類と、Microsoft 365環境で発生する機密情報の特定が含まれます。
 
-個人を含む環境内のコンテンツを検索することは、以前はコンプライアンス検索、電子情報開示、Advanced eDiscovery、DLP、監査の組み合わせを含む、手ごわい作業になる可能性があります。
+個人を含む環境内のコンテンツを検索することは、以前はコンプライアンス検索、電子情報開示、電子情報開示 (プレミアム)、DLP、監査を使用する組み合わせを含む、手ごわいタスクになる可能性があります。
 
 Microsoft Purview コンプライアンス ポータルの新しい **データ分類** ソリューションでは、個人データに関連するものを含め、組み込みまたはカスタムの機密情報の種類で動作する [Content Explorer](../compliance/data-classification-content-explorer.md) 機能により、これがはるかに簡単になりました。
 

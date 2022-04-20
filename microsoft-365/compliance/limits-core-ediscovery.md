@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、Microsoft 365の電子情報開示 (Standard) ケースの制限について説明します。
-ms.openlocfilehash: 4eb43687e92d90179ff24d69827c3c2889d82b47
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 29d1ef4d017ebf26a0c5ed1cc03fcf4361266e94
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971532"
+ms.locfileid: "64994108"
 ---
 # <a name="limits-in-ediscovery-standard"></a>電子情報開示の制限 (Standard)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 次の表に、電子情報開示 (Standard) ケースの制限と、電子情報開示 (Standard) ケースに関連付けられている保留の一覧を示します。 Microsoft Purview 電子情報開示 (Standard) の詳細については、「 [電子情報開示の概要 (Standard)](./get-started-core-ediscovery.md)」を参照してください。
     

@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: 管理者は、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用してスプーフィング、フィッシング、およびスパムを防ぐ方法を確認できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0e7bc2ddd620b454979418735fb6982b71501c3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5368be5bbecde45d341a737a283a7461a2302dc4
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934035"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973379"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 
@@ -34,7 +34,6 @@ ms.locfileid: "61934035"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 
 メール認証 (メール検証とも呼ばれます) は、スプーフィング (偽造された差出人からのメール メッセージ) を阻止しようとする標準のグループです。 すべての Microsoft 365 組織では、EOP は次の基準を使用して受信メールを検証します。
 
@@ -87,7 +86,7 @@ Authentication-Results:
 
 複合認証は、メール認証チェックに失敗するメッセージをパスさせることで、これらの制限に対処できます。
 
-簡単にするために、次の例では、メール認証の結果に焦点を置いています。 他のバックエンド インテリジェンス要因は、メール認証にパスするメッセージをなりすましメールとして識別したり、メール認証に失敗したメッセージを正当なメールとして識別したりします。
+説明を簡単にするために、次の例では、メール認証の結果に焦点を置いています。他のバックエンド インテリジェンス要因は、メール認証にパスするメッセージをなりすましとして識別したり、メール認証に失敗したメッセージを正当として識別したりする可能性があります。
 
 たとえば、fabrikam.com ドメインには、SPF、DKIM、または DMARC レコードがありません。 fabrikam.com ドメインの送信者からのメッセージは、複合認証に失敗する可能性があります (`compauth` の値と理由に注意してください)。
 

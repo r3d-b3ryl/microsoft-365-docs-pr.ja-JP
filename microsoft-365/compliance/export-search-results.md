@@ -22,14 +22,16 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Microsoft Purview コンプライアンス ポータルのコンテンツ検索からローカル コンピューターに検索結果をエクスポートします。 電子メールの結果は PST ファイルとしてエクスポートされます。 SharePoint サイトとOneDrive for Business サイトのコンテンツは、ネイティブ Office ドキュメントとしてエクスポートされます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cdd80829e76bce37bc55b5375597729df947b61b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 38faaf29087e67aef161e46a1fbc6c338d9c33e4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934821"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995472"
 ---
 # <a name="export-content-search-results"></a>コンテンツの検索結果をエクスポートする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 コンテンツ検索が正常に実行されたら、検索結果をローカル コンピューターにエクスポートできます。 電子メールの結果をエクスポートする場合は、PST ファイルとしてコンピューターにダウンロードされます。 SharePoint サイトとOneDrive for Business サイトからコンテンツをエクスポートすると、ネイティブ Office ドキュメントのコピーがエクスポートされます。 エクスポートされた検索結果には、他のドキュメントとレポートが含まれています。
   

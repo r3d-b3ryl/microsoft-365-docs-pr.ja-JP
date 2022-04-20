@@ -1,5 +1,5 @@
 ---
-title: Microsoft Compliance Manager で評価を構築および管理する
+title: Microsoft Purview コンプライアンス マネージャーで評価を構築および管理する
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,15 +16,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager で評価を構築し、組織にとって重要な規制と認定の要件を満たすのに役立ちます。
-ms.openlocfilehash: 9fbea59eae103e2ce9715fda6c7b7a97d38eb855
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Microsoft Purview コンプライアンス マネージャーで評価を構築し、組織にとって重要な規制や認定の要件を満たすのに役立ちます。
+ms.openlocfilehash: 841d48951eebf0d04bf5c97a708a250218b44c65
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759017"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972565"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>コンプライアンス マネージャーで評価を構築および管理する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事では、次の操作を行います。** 評価を作成して管理することで、組織のコンプライアンス マネージャーをカスタマイズする方法について説明 **します**。 この記事では、評価を作成する方法、 **それらをグループ** に整理する方法、 **コントロール** を操作する方法、 **更新プログラム** を受け入れる方法、評価レポートをエクスポートする方法について説明 **します**。
 
@@ -35,7 +37,7 @@ ms.locfileid: "64759017"
 すべての評価は、コンプライアンス マネージャーの [評価] タブに一覧表示されます。 [評価のビューをフィルター処理し、状態の状態を解釈する方法](compliance-manager-setup.md#assessments-page)について説明します。
 
 > [!IMPORTANT]
-> 評価を構築するために組織で使用できるテンプレートは、ライセンス契約によって異なります。 [ライセンスの詳細を確認します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+> 評価を構築するために組織で使用できるテンプレートは、ライセンス契約によって異なります。 [ライセンスの詳細を確認します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager)。
 
 ## <a name="data-protection-baseline-default-assessment"></a>データ保護ベースラインの既定の評価
 

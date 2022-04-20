@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: 電子情報開示のテーマ (プレミアム) を使用して、各ドキュメントの主要なテーマを見つけてレビュー セットを整理します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e019c103114630411a7d13ae619827a2e83a890c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8067048c1dedeb6c70a887ec1fb41094bad35666
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991756"
+ms.locfileid: "64970385"
 ---
 # <a name="themes-in-ediscovery-premium"></a>電子情報開示のテーマ (プレミアム)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 人はドキュメントをどのように書くのですか? 一般に、ドキュメントで伝えたい 1 つ以上のアイデアから始め、アイデアに合った単語を使用して作成します。 アイデアが一般的であるほど、そのアイデアに関連する単語の頻度が高くなります。 これにより、ユーザーがドキュメントを使用する方法も通知されます。 ドキュメントを読んで理解する重要な点は、ドキュメントが伝えようとしているアイデア、アイデアがどこに表示され、アイデア間の関係が何であるかです。
 

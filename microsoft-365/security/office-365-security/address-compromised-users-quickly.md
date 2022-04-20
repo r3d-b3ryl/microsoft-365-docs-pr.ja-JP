@@ -1,6 +1,6 @@
 ---
-title: 調査と対応を自動化して、侵害されたユーザー アカウントに対処する
-keywords: AIR、autoIR、Microsoft Defender for Endpoint、自動化、調査、対応、修復、脅威、高度、脅威、保護、侵害
+title: 自動調査と応答を使用して侵害されたユーザー アカウントに対処する
+keywords: AIR, autoIR, Microsoft Defender for Endpoint, 自動, 調査, 対応, 修復, 脅威, 高度, 脅威, 保護, 侵害されました
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,91 +13,90 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: ''
 ms.date: 06/10/2021
-description: Microsoft Defender for Office 365 プラン 2 の自動調査および対応機能を使用して、侵害されたユーザー アカウントを検出して対処するプロセスを高速化する方法について説明します。
+description: Microsoft Defender for Office 365プラン 2 の自動調査と対応機能を使用して、侵害されたユーザー アカウントを検出して対処するプロセスを高速化する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1488598eb3a198a70997e755fe77a8a0c97e1c0
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3fdbb88d38b94ac48b2bbd2a447c76ee7d79d24a
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474364"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974171"
 ---
-# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>調査と対応を自動化して、侵害されたユーザー アカウントに対処する
+# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>自動調査と応答を使用して侵害されたユーザー アカウントに対処する
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-
-[Microsoft Defender for Office 365プラン 2 には](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)、強力な自動調査と[応答 (AIR](office-365-air.md)) 機能が含まれています。 このような機能により、セキュリティ運用チームが脅威に対処するために多くの時間と労力を節約できます。 Microsoft は引き続きセキュリティ機能を強化しています。 最近、AIR の機能が強化され、セキュリティが侵害されたユーザー セキュリティ プレイブック (現在プレビュー中) が含まれます。 侵害されたユーザー セキュリティ プレイブックの詳細については、この記事を参照してください。 また、詳細については、「[Microsoft Defender](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) を使用してユーザーの侵害を検出して対応する時間をOffice 365を参照してください。
+[Microsoft Defender for Office 365プラン 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) には、強力な[自動調査と対応](office-365-air.md) (AIR) 機能が含まれています。 このような機能により、セキュリティ運用チームが脅威に対処する時間と労力を大幅に節約できます。 Microsoft は、セキュリティ機能を引き続き向上させます。 最近、侵害されたユーザー セキュリティ プレイブック (現在プレビュー段階) を含む AIR 機能が強化されました。 侵害されたユーザー セキュリティ プレイブックの詳細については、この記事を参照してください。 さらに詳しくは、ブログ投稿の[「時間を短縮してユーザーの侵害を検出して対応し、Microsoft Defender for Office 365を使用して侵害範囲を制限](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)する」をご覧ください。
 
 ![侵害されたユーザーの自動調査。](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
-侵害されたユーザー セキュリティ プレイブックを使用すると、組織のセキュリティ チームは次の操作を実行できます。
+侵害されたユーザー セキュリティ プレイブックを使用すると、組織のセキュリティ チームは次のことが可能になります。
 
-- 侵害されたユーザー アカウントの検出を高速化します。
-- アカウントが侵害された場合に侵害の範囲を制限する。そして
+- 侵害されたユーザー アカウントの検出を高速化する。
+- アカウントが侵害された場合の侵害の範囲を制限する。そして
 - 侵害されたユーザーに対して、より効果的かつ効率的に対応します。
 
-## <a name="compromised-user-alerts"></a>侵害されたユーザー通知
+## <a name="compromised-user-alerts"></a>侵害されたユーザー アラート
 
-ユーザー アカウントが侵害された場合、異常または異常な動作が発生します。 たとえば、フィッシングメッセージとスパム メッセージは、信頼できるユーザー アカウントから内部的に送信される場合があります。 Defender for Office 365は、メール パターンやグループ内での共同作業のアクティビティでこのような異常をOffice 365。 この場合、アラートがトリガーされ、脅威の軽減プロセスが開始されます。
+ユーザー アカウントが侵害されると、非定型または異常な動作が発生します。 たとえば、フィッシングやスパム メッセージは、信頼されたユーザー アカウントから内部的に送信される場合があります。 Defender for Office 365は、Office 365内の電子メール パターンやコラボレーション アクティビティでこのような異常を検出できます。 これが発生すると、アラートがトリガーされ、脅威軽減プロセスが開始されます。
 
-たとえば、疑わしいメール送信のためにトリガーされたアラートを次に示します。
+たとえば、疑わしいメール送信が原因でトリガーされたアラートを次に示します。
 
-![不審な電子メール送信のためにトリガーされたアラート。](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
+![疑わしいメール送信が原因でアラートがトリガーされます。](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
 
-次に、ユーザーの送信制限に達した際にトリガーされたアラートの例を示します。
+また、ユーザーの送信制限に達したときにトリガーされたアラートの例を次に示します。
 
-![送信制限に達した場合にトリガーされるアラート。](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
+![上限に達した送信によってトリガーされるアラート。](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
 
 ## <a name="investigate-and-respond-to-a-compromised-user"></a>侵害されたユーザーを調査して対応する
 
-ユーザー アカウントが侵害されると、アラートがトリガーされます。 場合によっては、組織のセキュリティ運用チームによって問題が解決されるまで、そのユーザー アカウントがブロックされ、それ以上の電子メール メッセージの送信がブロックされ、防止されます。 それ以外の場合は、自動調査が開始され、セキュリティ チームが推奨するアクションが実行される可能性があります。
+ユーザー アカウントが侵害されると、アラートがトリガーされます。 また、場合によっては、組織のセキュリティ運用チームによって問題が解決されるまで、そのユーザー アカウントがブロックされ、それ以降の電子メール メッセージの送信が妨げられます。 他のケースでは、自動調査が開始され、セキュリティ チームが実行する必要がある推奨されるアクションが発生する可能性があります。
 
 - [制限付きユーザーの表示と調査](#view-and-investigate-restricted-users)
 
-- [自動調査の詳細を表示する](#view-details-about-automated-investigations)
+- [自動調査に関する詳細を表示する](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> 次のタスクを実行するには、適切なアクセス許可が必要です。 「 [AIR 機能を使用するために必要なアクセス許可」を参照してください](office-365-air.md#required-permissions-to-use-air-capabilities)。
+> 次のタスクを実行するには、適切なアクセス許可が必要です。 [AIR 機能を使用するために必要なアクセス許可に関するページを](office-365-air.md#required-permissions-to-use-air-capabilities)参照してください。
 
 ### <a name="view-and-investigate-restricted-users"></a>制限付きユーザーの表示と調査
 
-制限付きユーザーの一覧に移動するためのいくつかのオプションがあります。 たとえば、ポータルの [Microsoft 365 Defender] に移動して、[メール] & **[**\>制限付きユーザー **] を** \> **確認できます**。 次の手順では、アラート ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性があるさまざまな種類のアラートを確認するための良い方法です。
+制限付きユーザーの一覧に移動するには、いくつかのオプションがあります。 たとえば、Microsoft 365 Defender ポータルで、[**電子メール] &コラボレーション** の [**制限付き**\>ユーザー **の確認**\>] に移動できます。 次の手順では、 **アラート** ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性のあるさまざまな種類のアラートを表示するのに適した方法です。
 
-1. [インシデントMicrosoft 365 Defender] ポータルを開<https://security.microsoft.com>き、[インシデント] &**に移動** \> **します**。 または、**[アラート]** ページに直接移動するには、<https://security.microsoft.com/alerts> を使用します。
+1. Microsoft 365 Defender ポータルを<https://security.microsoft.com>開き、**インシデント&アラート** \> アラートに移動 **します**。 または、**[アラート]** ページに直接移動するには、<https://security.microsoft.com/alerts> を使用します。
 
-2. [アラート **] ページ** で、期間別に結果をフィルター処理し、ユーザーが電子メールの送信を制限するという名前 **のポリシーをフィルター処理します**。
+2. [ **アラート]** ページで、期間と **ユーザーが電子メールの送信を制限** したという名前のポリシーで結果をフィルター処理します。
 
-   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="制限付きユーザーに対してフィルター処理Microsoft 365 Defenderポータルの [アラート] ページ" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
+   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="制限付きユーザーに対してフィルター処理されたMicrosoft 365 Defender ポータルの [アラート] ページ" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
 
-3. 名前をクリックしてエントリを選択すると、メールの送信を制限されたユーザー ページが開き、詳細を確認できます。 [アラートの管理 **] ボタンの横** にある [その他のオプション] ![アイコンをクリックできます。](../../media/m365-cc-sc-more-actions-icon.png) **その他の** オプションを選択し、[制限付きユーザーの詳細を表示する] を選択して [制限付きユーザー] ページに移動し、制限付きユーザー [を解放できます](removing-user-from-restricted-users-portal-after-spam.md)。
+3. 名前をクリックしてエントリを選択すると、 **メールの送信が制限されたユーザー** ページが開き、確認するための追加の詳細が表示されます。 **[アラートの管理**] ボタンの横にある [その他のオプション] アイコンをクリック![できます。](../../media/m365-cc-sc-more-actions-icon.png) **その他のオプション** を選択し、[ **制限付きユーザーの詳細の表示** ] を選択して **[制限付きユーザー** ] ページに移動し、 [制限付きユーザーを解放](removing-user-from-restricted-users-portal-after-spam.md)できます。
 
-  :::image type="content" source="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png" alt-text="[メールの送信を制限するユーザー] ページ" lightbox="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png":::
+  :::image type="content" source="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png" alt-text="電子メールの送信が制限されているユーザー ページ" lightbox="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png":::
 
-### <a name="view-details-about-automated-investigations"></a>自動調査の詳細を表示する
+### <a name="view-details-about-automated-investigations"></a>自動調査に関する詳細を表示する
 
-自動調査が開始すると、その詳細と結果をセキュリティ コンプライアンス センター&確認できます。 [脅威管理 **の調査]** \> **に移動** し、調査を選択して詳細を表示します。
+自動調査が開始されると、セキュリティ & コンプライアンス センターでその詳細と結果を確認できます。 **脅威管理** \> **の調査** に移動し、調査を選択して詳細を表示します。
 
-詳細については、「調査の [詳細を表示する」を参照してください](air-view-investigation-results.md)。
+詳細については、「 [調査の詳細を表示する](air-view-investigation-results.md)」を参照してください。
 
 ## <a name="keep-the-following-points-in-mind"></a>以下の点にご注意ください。
 
-- **アラートの上に残る**。 ご存知のように、妥協点が検出されなくなるほど、組織、顧客、パートナーに対する広範な影響とコストの可能性が大きくなります。 脅威を軽減するために、特にユーザーのアカウントが侵害された場合は、早期の検出と適切な対応が重要です。
+- **アラートを常に確認します**。 ご存知のように、侵害が検出されない時間が長いほど、組織、顧客、およびパートナーに広範な影響とコストが発生する可能性が高くなります。 脅威を軽減するには、特にユーザーのアカウントが侵害された場合に、早期検出とタイムリーな対応が不可欠です。
 
-- **オートメーションは、セキュリティ運用チームを支援しますが、代わるものではありません**。 調査と対応の自動化機能は、侵害されたユーザーを早期に検出できますが、セキュリティ運用チームは調査と修復を行う必要があります。 これにはいくつかのヘルプが必要ですか? 「アクション [の確認と承認」を参照してください](air-review-approve-pending-completed-actions.md)。
+- **オートメーションは、セキュリティ運用チームを支援しますが、置き換えることはありません**。 自動調査と対応機能により、侵害されたユーザーを早期に検出できますが、セキュリティ運用チームは調査と修復を行う必要があります。 これに関するヘルプが必要ですか? [「アクションの確認と承認」を](air-review-approve-pending-completed-actions.md)参照してください。
 
-- **疑わしいログインアラートを唯一のインジケーターとして使用しない**。 ユーザー アカウントが侵害されると、疑わしいログイン 通知がトリガーされる場合と、トリガーされない場合があります。 アカウントが侵害された後に発生する一連のアクティビティがアラートをトリガーする場合があります。 アラートについて詳しくは、お知りください。 「 [アラート ポリシー」を参照してください](../../compliance/alert-policies.md)。
+- **唯一のインジケーターとして疑わしいログイン アラートに依存しないでください**。 ユーザー アカウントが侵害されると、不審なログイン アラートがトリガーされる場合もあれば、トリガーされない場合もあります。 場合によっては、アラートをトリガーするアカウントが侵害された後に発生する一連のアクティビティです。 アラートの詳細を知りたいですか? [アラート ポリシーを](../../compliance/alert-policies.md)参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
 - [AIR 機能を使用するために必要なアクセス許可を確認する](office-365-air.md#required-permissions-to-use-air-capabilities)
 
-- [悪意のあるメールを検索して調査Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Office 365で悪意のあるメールを検索して調査する](investigate-malicious-email-that-was-delivered.md)
 
-- [エンドポイント向け Microsoft Defender の AIR について説明します。](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Microsoft Defender for Endpointの AIR について学習する](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 - [Microsoft 365 ロードマップにアクセスして、近日公開予定の機能を確認する](https://www.microsoft.com/microsoft-365/roadmap?filters=)

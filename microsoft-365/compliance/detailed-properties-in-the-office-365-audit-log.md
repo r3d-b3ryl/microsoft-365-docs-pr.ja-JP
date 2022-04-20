@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: この記事では、Office 365監査ログ レコードの結果をエクスポートするときに含まれる追加のプロパティについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e65b5e27f8c6821b12c7f0b7f03e4ecb472c0a9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2342a64deaa2787e534a09b3d874ed3795d82ea8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948949"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996220"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>監査ログの詳細なプロパティ
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルから監査ログ検索の結果をエクスポートする場合は、検索条件を満たすすべての結果をダウンロードできます。 このエクスポートを行うには、[**監査ログの検索**] ページで、[**結果のエクスポート**] \> [**テスト結果のダウンロード**] の順に選択します。 詳細については、「[監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
   

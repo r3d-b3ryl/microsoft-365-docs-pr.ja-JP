@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Zoom DataParser コネクタを設定して使用して、Microsoft 365で Zoom データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: f03ec1e9c23f8fefbe7e6ecb478565034f197d3c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b03afa1271b15a27a025c16b05174c14466f65f1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938799"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996374"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-data"></a>Zoom データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 17a-4 LLC の [Zoom DataParser](https://www.17a-4.com/dataparser/) を使用して、Zoom プラットフォームからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された Zoom コネクタが含まれています。 Zoom DataParser コネクタは、Zoom データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

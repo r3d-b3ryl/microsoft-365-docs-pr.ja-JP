@@ -18,14 +18,16 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Microsoft 365の電子情報開示 (Standard) ケースからコンテンツをエクスポートおよびダウンロードする方法について説明します。
-ms.openlocfilehash: a0ea33d599ed609c24cf63f1df4c68b882364b1b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2a63d22c8b4cb20e2c0f1317a8496e1cf517b2da
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937963"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995450"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>電子情報開示 (Standard) ケースからコンテンツをエクスポートする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (Standard) ケースに関連付けられた検索が正常に実行されたら、検索結果をエクスポートできます。 検索結果をエクスポートすると、PST ファイルまたは個々のメッセージとしてメールボックス アイテムがダウンロードされます。 SharePoint サイトやOneDrive for Business サイトからコンテンツをエクスポートすると、ネイティブ Office ドキュメントやその他のドキュメントのコピーがエクスポートされます。 エクスポートされたすべてのアイテムに関する情報を含むResults.csv ファイルと、すべての検索結果に関する情報を含むマニフェスト ファイル (XML 形式) もエクスポートされます。
   

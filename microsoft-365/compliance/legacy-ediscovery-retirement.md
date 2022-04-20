@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Exchange OnlineのIn-Place電子情報開示とIn-Placeホールド (および対応する PowerShell コマンドレット) は、2020 年前半に廃止されます。 Search-Mailbox コマンドレットと Microsoft Purview 電子情報開示 (プレミアム) v1.0 も同じ期間内に廃止されます。
-ms.openlocfilehash: 228827ec405165bf8308d89fba350eb2192f6723
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0a5a5c5a22aefbb0ad5abe6846915e1da653ee6b
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936601"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973269"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -102,7 +102,7 @@ ms.locfileid: "64936601"
 <tr class="odd">
 <td>法的目的で検索、エクスポート、保持する</td>
 <td>コンプライアンス ポータルでの電子情報開示 (Standard) ケース </td>
-<td><p>コア電子情報開示ケースの機能を使用すると、電子情報開示とIn-Place保留をIn-Placeする機能パリティが提供されます。 エクスポートできるものには、次のようなものがあります。</p>
+<td><p>電子情報開示 (Standard) ケースの機能を使用すると、電子情報開示とIn-Place保留をIn-Placeする機能パリティが提供されます。 エクスポートできるものには、次のようなものがあります。</p>
 <ul>
 <li>
 <p>検索は数百万の場所にスケーリングされます</p>
@@ -208,9 +208,9 @@ Exchange管理センターで 2017 年 7 月 1 日に発表された当初の通
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>ComplianceSearch コマンドレットと ComplianceSearchAction コマンドレットは連携して、コンテンツの検索とエクスポートに役立ちます。 New、<strong>Get-</strong>、<strong>Start-ComplianceSearch</strong> コマンドレットを使用して、<strong></strong>新しい検索を作成し、検索の見積もりを表示できます。 次に、 <strong>New-ComplianceSearchAction</strong> コマンドレットを使用して検索結果をエクスポートできます。 コンプライアンス ポータルのコア電子情報開示ツールを使用して、それらの検索結果をローカル コンピューターにダウンロードする必要があります。</p>
+<td><p>ComplianceSearch コマンドレットと ComplianceSearchAction コマンドレットは連携して、コンテンツの検索とエクスポートに役立ちます。 New、<strong>Get-</strong>、<strong>Start-ComplianceSearch</strong> コマンドレットを使用して、<strong></strong>新しい検索を作成し、検索の見積もりを表示できます。 次に、 <strong>New-ComplianceSearchAction</strong> コマンドレットを使用して検索結果をエクスポートできます。 コンプライアンス ポータルで電子情報開示 (Standard) ツールを使用して、それらの検索結果をローカル コンピューターにダウンロードする必要があります。</p>
 <p>
-<p><strong>メモ：</strong> これらのコマンドレットを使用して、コア電子情報開示ケースに関連付けられていない検索を作成する場合、これらの検索はコンプライアンス ポータルの <strong>[コンテンツ検索</strong> ] ページにあります。</p></td>
+<p><strong>メモ：</strong> これらのコマンドレットを使用して電子情報開示 (Standard) ケースに関連付けられていない検索を作成する場合、これらの検索はコンプライアンス ポータルの <strong>[コンテンツ検索</strong> ] ページにあります。</p></td>
 </tr>
 <tr class="even">
 <td>メールボックス内のコンテンツを保持する</td>
@@ -286,7 +286,7 @@ Exchange Online PowerShell の **Search-Mailbox** コマンドレットは、201
 <td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>ComplianceSearch コマンドレットと ComplianceSearchAction コマンドレットは連携して、コンテンツの検索とエクスポートに役立ちます。 New、<strong>Get-</strong>、<strong>Start-ComplianceSearch</strong> コマンドレットを使用して、<strong></strong>新しい検索を作成し、検索の見積もりを表示できます。 次に、 <strong>New-ComplianceSearchAction -Export</strong> コマンドを使用して検索結果をエクスポートできます。 コンプライアンス ポータルのコア電子情報開示ツールを使用して、それらの検索結果をローカル コンピューターにダウンロードする必要があります。</p></p>
+<td><p>ComplianceSearch コマンドレットと ComplianceSearchAction コマンドレットは連携して、コンテンツの検索とエクスポートに役立ちます。 New、<strong>Get-</strong>、<strong>Start-ComplianceSearch</strong> コマンドレットを使用して、<strong></strong>新しい検索を作成し、検索の見積もりを表示できます。 次に、 <strong>New-ComplianceSearchAction -Export</strong> コマンドを使用して検索結果をエクスポートできます。 コンプライアンス ポータルで電子情報開示 (Standard) ツールを使用して、それらの検索結果をローカル コンピューターにダウンロードする必要があります。</p></p>
 </td>
 </tr>
 <tr class="even">
@@ -342,7 +342,7 @@ Exchange Web Services API のこれらの操作は、Exchange管理センター�
 
 ## <a name="ediscovery-premium-v10"></a>電子情報開示 (プレミアム) v1.0
 
-電子情報開示 (プレミアム) v1.0 は、電子情報開示に切り替える (プレミアム) をクリックして、コア電子情報開示ケースで使用できる **電子情報開示 (プレミアム**) のバージョンは廃止されます。 その機能は、コンプライアンス ポータルの新しい[電子情報開示 (プレミアム) ソリューション](./ediscovery.md)に置き換えられました。
+電子情報開示 (プレミアム) v1.0 は、電子情報開示に切り替える (プレミアム) をクリックして電子情報開示 (Standard) ケースで使用できる **電子情報開示 (プレミアム**) のバージョンです。 その機能は、コンプライアンス ポータルの新しい[電子情報開示 (プレミアム) ソリューション](./ediscovery.md)に置き換えられました。
 
 組織が電子情報開示 (プレミアム) v1.0 を使用しているかどうかを確認するには、
 

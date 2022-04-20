@@ -16,16 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 電子情報開示 (プレミアム) で新しいケース形式を使用して、アイテムを追加してセットを確認し、その他の増加した制限や新機能を利用できるようにします。
-ms.openlocfilehash: 6c3e9f86cac5424ae9d9610a9c715c2f86563f64
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 55a5fdc2493fe046ebb8952fcbcb382750f511a5
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993559"
+ms.locfileid: "64973423"
 ---
 # <a name="use-the-new-case-format-in-ediscovery-premium"></a>電子情報開示で新しいケース形式を使用する (プレミアム)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 より多くの組織が、重要な電子情報開示プロセスに Microsoft Purview の電子情報開示 (プレミアム) ソリューションを使用しています。 これには、規制の要求、調査、訴訟への対応などがあります。 電子情報開示 (プレミアム) の使用が増えるにつれて、顧客の一般的な要件は、1 つの電子情報開示 (プレミアム) ケースで管理できるコンテンツの総量を拡大することです。 ケース サイズの大幅な増加に対応するために、データの合計量とアイテムの合計数の両方について、電子情報開示 (プレミアム) ケースを作成するときに新しいケース形式を選択できるようになりました。  
 

@@ -17,14 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Salesforce Chatter、Yahoo Messenger、Yammerなどのデータ ソースからサード パーティのデータをインポートするようにカスタム コネクタを設定する方法について説明します。
-ms.openlocfilehash: 72159d88cdeb8c573f1a71342ca7cbd015099568
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eb557f43b97f343c45a7eaf21268ac6218d2e1c0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944505"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995318"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>パートナーと共同作業して、サード パーティのデータをアーカイブする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft パートナーと協力して、サード パーティのデータ ソースからMicrosoft 365にデータをインポートおよびアーカイブできます。 パートナーは、(定期的に) サード パーティのデータ ソースからアイテムを抽出し、それらの項目をインポートするように構成されたカスタム コネクタを提供できます。 パートナー コネクタは、アイテムのコンテンツをデータ ソースから電子メール メッセージ形式に変換し、アイテムをメールボックスに格納します。 サード パーティのデータがインポートされたら、訴訟ホールド、電子情報開示、In-Placeアーカイブ、監査、Microsoft 365保持ポリシーなどの Microsoft Purview 機能をこのデータに適用できます。
 
@@ -569,7 +571,7 @@ Microsoft 365にデータをインポートするためのサード パーティ
     |**件名** <br/> |いいえ  <br/> |ソース アイテムの件名。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
     |**DATE** <br/> |はい  <br/> |顧客データ ソースでアイテムが最初に作成または投稿された日付。 たとえば、Twitter メッセージがツイートされた日付です。  <br/> | `01 NOV 2015` <br/> |
     |**体** <br/> |いいえ  <br/> |メッセージまたは投稿のコンテンツ。 一部のデータ ソースでは、このプロパティのコンテンツは **SUBJECT** プロパティのコンテンツと同じになります。 インポート プロセス中、パートナー コネクタはコンテンツ ソースからの完全な忠実性を可能な限り維持しようとします。 可能な場合には、ソース アイテムの本文からのファイル、グラフィック、またはその他のコンテンツが、このプロパティに含まれます。 それ以外の場合、ソース アイテムからのコンテンツは **ATTACHMENT** プロパティに含まれます。 このプロパティの内容は、パートナー コネクタとソース プラットフォームの機能によって異なります。  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
-    |**添付 ファイル** <br/> |いいえ  <br/> |データ ソース内のアイテム (Twitter のツイートやインスタント メッセージング会話など) に添付ファイルがある場合、または画像を含める場合、パートナーの接続は最初に **BODY** プロパティに添付ファイルを含めようとします。 それが不可能な場合は、** ATTACHMENT ** プロパティに追加されます。 添付ファイルの例として、他にも Facebook の「いいね」、コンテンツ ソースからのメタデータ、およびメッセージまたは投稿への返信などがあります。  <br/> | `image.gif` <br/> |
+    |**添付 ファイル** <br/> |不要  <br/> |データ ソース内のアイテム (Twitter のツイートやインスタント メッセージング会話など) に添付ファイルがある場合、または画像を含める場合、パートナーの接続は最初に **BODY** プロパティに添付ファイルを含めようとします。 それが不可能な場合は、** ATTACHMENT ** プロパティに追加されます。 添付ファイルの例として、他にも Facebook の「いいね」、コンテンツ ソースからのメタデータ、およびメッセージまたは投稿への返信などがあります。  <br/> | `image.gif` <br/> |
     |**MESSAGECLASS** <br/> |はい  <br/> | これは、パートナー コネクタによって作成および設定される複数値プロパティです。 このプロパティの形式は  `IPM.NOTE.Source.Event`. (このプロパティは、 で始まる  `IPM.NOTE`必要があります。 この形式は、メッセージ クラスの形式に  `IPM.NOTE.X` 似ています)。このプロパティには、次の情報が含まれます。  <br/><br/>`Source`: サード パーティのデータ ソースを示します。たとえば、Twitter、Facebook、BlackBerry などです。  <br/> <br/>  `Event`: 項目を生成したサード パーティのデータ ソースで実行されたアクティビティの種類を示します。たとえば、Twitter のツイートや Facebook の投稿などです。 イベントはデータ ソースに固有です。  <br/> <br/>  このプロパティの目的の 1 つは、アイテムが発生したデータ ソースに基づいて、またはイベントの種類に基づいて特定の項目をフィルター処理することです。 たとえば、電子情報開示検索では、特定のユーザーによって投稿されたすべてのツイートを検索する検索クエリを作成できます。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
 
 - アイテムがMicrosoft 365のメールボックスに正常にインポートされると、HTTP 応答の一部として一意の識別子が呼び出し元に返されます。 この識別子 (呼び出し)  `x-IngestionCorrelationID`は、アイテムのエンド ツー エンドの追跡にパートナーが後続のトラブルシューティングを行うために使用できます。 パートナーがこの情報をキャプチャし、パートナーの側で記録することをお勧めします。 この識別子を示す HTTP 応答の例を以下に示します。

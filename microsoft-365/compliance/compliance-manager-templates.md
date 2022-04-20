@@ -1,5 +1,5 @@
 ---
-title: Microsoft Compliance Manager での評価テンプレートの操作
+title: Microsoft Purview コンプライアンス マネージャーでの評価テンプレートの操作
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,20 +17,22 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager で評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定されたExcel ファイルを使用してテンプレートを作成および変更します。
-ms.openlocfilehash: 0dc28eb3058e3b929da47d947b29c7ba7be41111
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Microsoft Purview コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定されたExcel ファイルを使用してテンプレートを作成および変更します。
+ms.openlocfilehash: 009b2d742ab135abcde7c3ab73f9ec15c05c8f29
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758995"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972785"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーの評価テンプレートについて学習する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事では、次の操作を行います。****テンプレートのしくみ** と、評価テンプレート ページから **テンプレートを管理する方法** について説明します。 新しいテンプレートの **作成**、既存のテンプレート **の拡張** と **変更**、**Excelを使用したテンプレート データの書式設定**、テンプレート レポートのエクスポートの手順を説明 **します**。
 
 > [!IMPORTANT]
-> 組織で使用できる評価テンプレートは、ライセンス契約によって異なります。 [詳細を確認します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+> 組織で使用できる評価テンプレートは、ライセンス契約によって異なります。 [詳細を確認します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager)。
 
 ## <a name="templates-overview"></a>テンプレートの概要
 
@@ -78,7 +80,7 @@ GCC High アカウントと DOD アカウントは、[ボリューム ライセ�
 
 購入する前に Premium テンプレートを試すには、ライセンスの試用版を入手することもできます。 試用版ライセンスは、90 日間、最大 25 個のテンプレートに適しています。 試用版ライセンスを取得すると、48 時間以内にテナントでテンプレートを使用できるようになります。
 
-組織にコンプライアンス マネージャーの商用ライセンスがある場合は、「 [Microsoft Compliance Manager Premium Assessments の無料試用版について](compliance-easy-trials-compliance-manager-assessments.md)」で試用版を開始する方法について説明します。
+組織にコンプライアンス マネージャーの商用ライセンスがある場合は、「 [Microsoft Purview Compliance Manager Premium Assessments の無料試用版について](compliance-easy-trials-compliance-manager-assessments.md)」で試用版を開始する方法について説明します。
 
 組織がGCCまたは DOD ライセンスの下にある場合は、組織に適した試用版のリンクを選択します。
 

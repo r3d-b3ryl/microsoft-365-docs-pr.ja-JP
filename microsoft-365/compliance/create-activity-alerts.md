@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft Purview コンプライアンス ポータルでアクティビティ アラートを追加および管理し、ユーザーが特定のアクティビティを実行したときにMicrosoft 365から電子メール通知が送信されるようにする
-ms.openlocfilehash: 7826a09bff1dd17febc3f621b50ed32129e21a37
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 43991eaf0f80957b0d72a2f16a2021f24194f2d6
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946487"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995032"
 ---
 # <a name="create-activity-alerts"></a>アクティビティ アラートを作成する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ユーザーがOffice 365で特定のアクティビティを実行したときに電子メール通知を送信するアクティビティ アラートを作成できます。 アクティビティ アラートは、監査ログ内のイベントの検索に似ていますが、アラートを作成したアクティビティのイベントが発生したときに電子メール メッセージが送信されることを除きます。
 

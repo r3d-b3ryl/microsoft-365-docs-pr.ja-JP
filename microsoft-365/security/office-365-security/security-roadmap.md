@@ -19,17 +19,16 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: Microsoft 365環境を保護するためのセキュリティ機能を実装するための Microsoft のサイバーセキュリティ チームからの最高の推奨事項。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e6174da5a9cbac779c147fb0ea091080bf4338a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3b39edc8adbe16d7f085ca9fec9f30d45f484838
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945431"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974259"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 この記事には、Microsoft 365環境を保護するためのセキュリティ機能を実装するための Microsoft のサイバーセキュリティ チームからの最高の推奨事項が含まれています。 この記事は、Microsoft Ignite セッション ([サイバーセキュリティ担当者のようなセキュリティで保護されたMicrosoft 365: 最初の 30 日間、90 日間、およびそれ以降の最優先事項](https://www.youtube.com/watch?v=luignzNyR-o)) から調整されています。 このセッションは、Mark Simos と Matt Kemelhar (Enterprise Cybersecurity Architects) によって開発され、発表されました。
 

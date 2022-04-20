@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Red tail Speak データを Veritas からMicrosoft 365にインポートおよびアーカイブするコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
-ms.openlocfilehash: af568495cd7ee8b1bf003da71a4582462fbd5c4c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 46b9646fee78fa0589a9af41db35cf79a71e508f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950635"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994570"
 ---
 # <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Redtail Speak データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルで Veritas コネクタを使用して、Redtail Speak からデータをインポートし、Microsoft 365組織内のユーザー メールボックスにアーカイブします。 Veritas には、Redtail からアイテムを受信する組織の SFTP サーバーからアイテムをキャプチャするように構成された [Redtail Speak](https://globanet.com/redtail/) コネクタが用意されています。 コネクタは、Redtail Speak から電子メール メッセージ形式にコンテンツを変換し、それらのアイテムをMicrosoft 365のユーザーのメールボックスにインポートします。
 

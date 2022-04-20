@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 電子情報開示 (プレミアム) の予測コーディング モジュールの使用を開始する方法について説明します。 この記事では、予測コーディングを使用して、調査に最も関連するレビュー セット内のコンテンツを識別するエンドツーエンドのプロセスについて説明します。
-ms.openlocfilehash: 449ef5446ee5a4da87081774037c9b5e2a8d440d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dc4edcb6affa7ccfd6a915839ef84b0d453fcfca
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942317"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996154"
 ---
 # <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>クイック スタート: 電子情報開示での予測コーディング (プレミアム) (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、Microsoft Purview 電子情報開示 (プレミアム) で予測コーディングを使用するためのクイック スタートについて説明します。 予測コーディング モジュールは、インテリジェントな機械学習機能を使用して、調査に関連しない大量のケース コンテンツをカリングするのに役立ちます。 これは、レビューに最も関連する項目の優先順位を付けるのに役立つ独自の予測コーディング モデルを作成してトレーニングすることで実現されます。
 

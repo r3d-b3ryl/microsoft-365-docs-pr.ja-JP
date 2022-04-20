@@ -1,5 +1,5 @@
 ---
-title: Office 365セキュリティの概要、 Microsoft Defender for Office 365 EOP、MSDO
+title: Office 365 セキュリティの概要、Microsoft Defender for Office 365、EOP、MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -13,23 +13,21 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Office 365 におけるセキュリティについて、EOP、Defender for Office 365 プラン 1 およびプラン 2、セキュリティの標準構成と厳格な構成の違いなどを説明します。 持っている情報を理解し、プロパティをセキュリティで保護する方法について説明します。
+description: Office 365 におけるセキュリティについて、EOP、Defender for Office 365 プラン 1 およびプラン 2、セキュリティの標準構成と厳格な構成の違いなどを説明します。 持っているものを理解し、プロパティをセキュリティで保護する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d75ed9a3b01a7a16e283ce007f7c4a5b50cdab09
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 1b8ee510eae2dca34dd037e3d747204c6ad7b21d
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467491"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973885"
 ---
 # <a name="office-365-security"></a>Office 365 セキュリティ
-
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
-
 
 この記事では、クラウドで利用可能な新しいセキュリティ プロパティについて紹介します。 この記事は、セキュリティ運用センターのメンバーや初めてセキュリティ管理者となったユーザーに役立つ内容となっており、セキュリティ機能を復習する目的でも利用できます。
 
@@ -59,7 +57,7 @@ Office 365 セキュリティ は、EOP で提供される中心的な保護機�
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic.":::-->
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP と Microsoft Defender Office 365、電子メール認証に関するメモを含む、サービスを重視して、お客様との関係について説明します。" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP とMicrosoft Defender for Office 365、およびサービス重視の相互関係 (電子メール認証に関するメモを含む)" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
 
 これらのサービスのそれぞれでは保護、検出、調査、対応のいずれかを強調していますが、***すべて** のサービスは保護、検出、調査、および対応の *_いずれの_**目標も達成できます。
 
@@ -116,7 +114,7 @@ Microsoft Defender for Office 365 P1 では、調査機能として **リアル�
 
 このように、Microsoft Defender for Office 365 P2 では、***検出/対応*** 面の機能が強化され、新しい追求の強みを追加します。オートメーション。
 
-Microsoft Defender for Office 365 P2 のメインの追及ツールは、リアルタイム検出ではなく **脅威エクスプローラー** と呼ばれるツールです。 Defender for Cloud に移動すると、脅威エクスプローラーが表示される場合は、Microsoft Defender Office 365されます。
+Microsoft Defender for Office 365 P2 のメインの追及ツールは、リアルタイム検出ではなく **脅威エクスプローラー** と呼ばれるツールです。 Defender for Cloudに移動したときに脅威エクスプローラーが表示される場合は、P2 Microsoft Defender for Office 365。
 
 Microsoft Defender for Office 365 P1 および P2 の詳細については、**[こちらの記事をご覧ください](defender-for-office-365.md)**。
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: 最新のハードウェア ベースの分離を取得します。 悪用や悪意のあるリンクなどの現在および新しい攻撃が従業員の生産性とエンタープライズ セキュリティを中断するのを防ぎます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8e24b61b7f800b7c27a57bcec5c127adb032bf5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 98d23a814ac2af8d9dedc4f163923e67c9ca7dc2
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939259"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973247"
 ---
 # <a name="application-guard-for-office-for-admins"></a>管理者向け Application Guard for Office
 
@@ -39,7 +39,7 @@ OfficeのMicrosoft Defender Application Guard (application Guard for Office) は
 
 ### <a name="minimum-software-requirements"></a>最小ソフトウェア要件
 
-* **Windows**: Windows 10 Enterprise エディション、クライアント ビルド バージョン 2004 (20H1) ビルド 19041 以降。 すべてのバージョンのWindows 11がサポートされています。 
+* **Windows**: Windows 10 Enterprise エディション、クライアント ビルド バージョン 2004 (20H1) ビルド 19041 以降。 すべてのバージョンのWindows 11がサポートされています。
 * **Office**: Office Current Channel and Monthly Enterprise Channel, Build version 2011 16.0.13530.10000 以降。 Office Semi-Annual Enterprise チャネル、ビルド バージョン 2108 以降。 32 ビットバージョンと 64 ビット バージョンの両方のOfficeがサポートされています。
 * **更新プログラム パッケージ**: 累積的な毎月のセキュリティ更新プログラム [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) Windows 10
 
@@ -124,7 +124,6 @@ Application Guard for Officeが有効になっていることを確認するに�
 
 Officeでは、application Guard for Officeの機能を構成できるように、次のポリシーがサポートされています。 これらのポリシーは、グループ ポリシーまたは[Officeクラウド ポリシー サービス](/DeployOffice/overview-office-cloud-policy-service)を使用して構成できます。
 
-
 > [!NOTE]
 > これらのポリシーを構成すると、Application Guard for Officeで開かれたファイルの一部の機能を無効にすることができます。
 
@@ -198,7 +197,7 @@ Defender for Endpoint を使用するようにMicrosoft Defender for Office 365�
 
 ## <a name="limitations-and-considerations"></a>制限事項と考慮事項
 
-* Application Guard for Officeは、信頼されていないドキュメントを分離して、信頼された企業リソース、イントラネット、ユーザーの ID、およびコンピューター上の任意のファイルにアクセスできないようにする保護モードです。 その結果、ユーザーがディスク上のローカル ファイルから画像を挿入するなど、そのようなアクセスに依存する機能にアクセスしようとすると、アクセスが失敗し、次の例のようなプロンプトが生成されます。 信頼されていないドキュメントが信頼できるリソースにアクセスできるようにするには、ユーザーはドキュメントから Application Guard 保護を削除する必要があります。 
+* Application Guard for Officeは、信頼されていないドキュメントを分離して、信頼された企業リソース、イントラネット、ユーザーの ID、およびコンピューター上の任意のファイルにアクセスできないようにする保護モードです。 その結果、ユーザーがディスク上のローカル ファイルから画像を挿入するなど、そのようなアクセスに依存する機能にアクセスしようとすると、アクセスが失敗し、次の例のようなプロンプトが生成されます。 信頼されていないドキュメントが信頼できるリソースにアクセスできるようにするには、ユーザーはドキュメントから Application Guard 保護を削除する必要があります。
 
   :::image type="content" source="../../media/ag09-confirm.png" alt-text="安全メッセージと機能の状態を示すダイアログ ボックス" lightbox="../../media/ag09-confirm.png":::
 
@@ -206,7 +205,7 @@ Defender for Endpoint を使用するようにMicrosoft Defender for Office 365�
   > ユーザーが保護を削除するのは、ファイルとそのソースを信頼している場合、またはどこから来たのかをユーザーに知らしてください。
 
 * 信頼されていないドキュメントが信頼できる場所に格納されている場合、その場所からの信頼はドキュメントによって継承されます。 通常、組織のクラウド ストレージは信頼できる場所として識別されます。
-  
+
 * マクロやActiveX コントロールなどのドキュメント内のアクティブなコンテンツは、Application Guard for Officeでは無効になっています。 ユーザーは、アクティブなコンテンツを有効にするために Application Guard 保護を削除する必要があります。
 
 * ネットワーク共有からの信頼されていないファイル、または別の組織の OneDrive、OneDrive for Business、またはSharePoint Online から共有されたファイルは、Application Guard で読み取り専用として開きます。 ユーザーは、このようなファイルのローカル コピーを保存してコンテナー内で作業を続けるか、元のファイルを直接操作するための保護を削除できます。
@@ -242,4 +241,4 @@ Application Guard では、予想されるファイルの開き方をユーザ�
 * 現時点では、CSV ファイルと HTML ファイルはサポートされていません。
 * 現在、Office用の Application Guard は NTFS 圧縮ボリュームでは機能しません。 "ERROR_VIRTUAL_DISK_LIMITATION" というエラーが表示される場合は、ボリュームの圧縮解除を試してください。
 * .NET を更新すると、Application Guard でファイルを開けなくなります。 回避策として、ユーザーは、このエラーが発生したときにデバイスを再起動できます。 [Windows Defender Application GuardまたはWindows サンドボックスを開くときにエラー メッセージが表示される場合の](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)問題の詳細を確認します。
-* 詳細については、「[よく寄せられる質問 - Microsoft Defender Application Guard」を参照してください。](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 
+* 詳細については、「[よく寄せられる質問 - Microsoft Defender Application Guard」を参照してください。](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard)

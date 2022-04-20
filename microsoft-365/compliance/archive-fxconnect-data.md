@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Microsoft 365の Veritas FX Connectからデータをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 79d4dca6c71f6654db7294d55761275d8b758727
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 286d8894627e00b93f3e898bd28b9bb0d2593c17
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946728"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996305"
 ---
 # <a name="set-up-a-connector-to-archive-fx-connect-data"></a>FX Connect データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、FX Connect コラボレーション プラットフォームからMicrosoft 365組織内のユーザー メールボックスにデータをインポートしてアーカイブします。 Veritas には[、FX Connect](https://globanet.com/fx-connect/)アイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された FX Connect コネクタが用意されています。 コネクタは、FX Connectのコンテンツ (取引、メッセージ、組織の FX Connect アカウントからのその他の詳細など) を電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザーのメールボックスにインポートします。
 

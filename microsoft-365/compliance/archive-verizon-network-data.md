@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は TeleMessage コネクタを設定して、Microsoft 365の Verizon Network から SMS および MMS データをインポートおよびアーカイブできます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 5df1adad87c9995caeed4e090a7db0e7fbdf7566
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: efa310c17441db67eed31d729daa28dd34755538
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936975"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994966"
 ---
 # <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Verizon Network データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの TeleMessage コネクタを使用して、Verizon Network からショート メッセージング サービス (SMS) とマルチメディア メッセージング サービス (MMS) のデータをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の Verizon Network に毎日 1 回接続され、SMS と MMS のデータがMicrosoft 365のメールボックスにインポートされます。
 

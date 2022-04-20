@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Microsoft 365で電子情報開示 (プレミアム) を使用してデータを検索する場合は、キーワードと条件を使用して検索範囲を絞り込みます。
-ms.openlocfilehash: 7a3c3747e38667eca40032511209af964ffb165a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cceac6974bacb066201120ac4972393f2323353c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950337"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995010"
 ---
 # <a name="build-search-queries-for-collections-in-ediscovery-premium"></a>電子情報開示でコレクションの検索クエリを作成する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示 (プレミアム) ケースで[コレクション](collections-overview.md)を作成するときに検索クエリを構成するときに、キーワードを使用して特定のコンテンツと条件を検索し、検索範囲を絞り込んで法的調査に最も関連するアイテムを返すことができます。
 

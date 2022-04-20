@@ -1,6 +1,6 @@
 ---
-title: テスト ベースでのテスト バイナリ パッケージ
-description: Test Base でバイナリ パッケージをテストする方法
+title: テスト ベースでバイナリ ファイルをテストする
+description: テスト ベースでバイナリ ファイルをテストする方法
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -14,14 +14,14 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 808adad8a661d163014dd89c7e587fea3a02e9a2
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 8474631edfe580dfc269b2d02c1a113351c6ba6d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953701"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995300"
 ---
-# <a name="test-binaries-package-on-test-base"></a>テスト ベースでのテスト バイナリ パッケージ
+# <a name="test-your-binary-files-on-test-base"></a>テスト ベースでバイナリ ファイルをテストする
 
 > [!NOTE]
 > このガイドでは、新しいテスト ベース パッケージを最初から作成する方法について説明します。 テスト ベース パッケージ (.zip) が既にある場合は、従来のアップロード エクスペリエンス[をテスト ベース パッケージ (Zip) アップロード](uploadApplication.md)使用するように切り替えることができます。

@@ -17,14 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Microsoft サポート ケースの電子情報開示診断情報を収集する方法について説明します。
-ms.openlocfilehash: 13d3967adc6eddb6f0fc5a5b57119eb6c47114de
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6077df8f0a014b9e3356d8f520ddbaf0b2378983
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932202"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994449"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>電子情報開示の診断情報を収集する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (Standard) または Microsoft Purview 電子情報開示 (プレミアム) に関連するサポート ケースを開くときに、Microsoft サポートエンジニアが問題に関する特定の情報を必要とする場合があります。 この記事では、エンジニアが問題を調査して解決するのに役立つ診断情報を収集する方法に関するガイダンスを提供します。 通常、Microsoft サポート エンジニアから要求されるまで、この情報を収集する必要はありません。
 

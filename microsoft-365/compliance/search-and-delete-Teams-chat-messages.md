@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Advanced eDiscoveryと Microsoft Graph エクスプローラーを使用して、Microsoft Teamsでチャット メッセージを検索および消去し、Teamsのデータ流出インシデントに対応します。
-ms.openlocfilehash: 79f04c513733151099f5b45192a84738065e42aa
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: 電子情報開示 (プレミアム) と Microsoft Graph エクスプローラーを使用して、Microsoft Teamsでチャット メッセージを検索および消去し、Teamsのデータ流出インシデントに対応します。
+ms.openlocfilehash: b76f235fdfaee6f6836eb3d21385181a74aee904
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949373"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971800"
 ---
 # <a name="search-and-purge-chat-messages-in-teams"></a>Teamsでチャット メッセージを検索および消去する
 
-Advanced eDiscoveryと Microsoft Graph エクスプローラーを使用して、Microsoft Teamsでチャット メッセージを検索および削除できます。 これは、機密情報や不適切なコンテンツを見つけて削除するのに役立ちます。 この検索と消去のワークフローは、機密情報や悪意のある情報を含むコンテンツがTeamsチャット メッセージを通じてリリースされたときに、データ流出インシデントに対応するのにも役立ちます。
+電子情報開示 (プレミアム) と Microsoft Graph エクスプローラーを使用して、Microsoft Teamsでチャット メッセージを検索および削除できます。 これは、機密情報や不適切なコンテンツを見つけて削除するのに役立ちます。 この検索と消去のワークフローは、機密情報や悪意のある情報を含むコンテンツがTeamsチャット メッセージを通じてリリースされたときに、データ流出インシデントに対応するのにも役立ちます。
 
 > [!NOTE]
 > この記事は、Microsoft 365 Enterprise組織に適用されます。 米国政府機関向けクラウド (GCC、GCC High、DoD を含む) のサポートは近日公開予定です。
 
 ## <a name="before-you-search-and-purge-chat-messages"></a>チャット メッセージを検索して消去する前に
 
-- Advanced eDiscoveryケースを作成し、コレクションを使用してチャット メッセージを検索するには、Microsoft Purview コンプライアンス ポータルで **電子情報開示マネージャー** ロール グループのメンバーである必要があります。 チャット メッセージを削除するには、 **検索ロールと消去** ロールが割り当てられている必要があります。 このロールは、既定でデータ調査担当者と組織管理の役割グループに割り当てられます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
+- 電子情報開示 (プレミアム) ケースを作成し、コレクションを使用してチャット メッセージを検索するには、Microsoft Purview コンプライアンス ポータルで **電子情報開示マネージャー** の役割グループのメンバーである必要があります。 チャット メッセージを削除するには、 **検索ロールと消去** ロールが割り当てられている必要があります。 このロールは、既定でデータ調査担当者と組織管理の役割グループに割り当てられます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
 - テナント内の会話では、検索と消去がサポートされています。 Teams Connect チャット (外部アクセスまたはフェデレーション) の会話のサポートは、インターフェイスで有効になっている場合がありますが、意図したとおりに機能しない場合があります。
 - メールボックスごとに最大 10 個のアイテムを一度に削除できます。 チャット メッセージを検索および削除する機能はインシデント対応ツールであるため、この制限はチャット メッセージを迅速に削除するのに役立ちます。
 
@@ -42,15 +42,15 @@ Advanced eDiscoveryと Microsoft Graph エクスプローラーを使用して�
 
 ![チャット メッセージを検索および消去Teamsワークフロー。](../media/TeamsSearchAndPurgeWorkflow.png)
 
-## <a name="step-1-create-a-case-in-advanced-ediscovery"></a>手順 1: Advanced eDiscoveryでケースを作成する
+## <a name="step-1-create-a-case-in-ediscovery-premium"></a>手順 1: 電子情報開示でケースを作成する (プレミアム)
 
-最初の手順は、検索と消去プロセスを管理するケースをAdvanced eDiscoveryに作成することです。 ケースの作成の詳細については、「 [新しいケース形式を使用する」を](advanced-ediscovery-new-case-format.md)参照してください。 
+最初の手順は、電子情報開示 (プレミアム) でケースを作成して、検索と消去プロセスを管理することです。 ケースの作成の詳細については、「 [新しいケース形式を使用する」を](advanced-ediscovery-new-case-format.md)参照してください。 
 
 ## <a name="step-2-create-a-draft-collection"></a>手順 2: 下書きコレクションを作成する
 
 ケースを作成した後、次の手順では、消去するTeamsチャット メッセージを検索する下書きコレクションを作成します。 実行する消去プロセスは、手順 5 では、下書きコレクションに含まれるすべての項目を消去します。
 
-Advanced eDiscoveryでは、*コレクション* は、消去するチャット メッセージを含むTeamsコンテンツの場所の電子情報開示検索です。 前の手順で作成した場合に、下書きコレクションを作成します。 詳細については、「 [下書きコレクションを作成する](create-draft-collection.md)」を参照してください。
+電子情報開示 (プレミアム) では、*コレクション* は、消去するチャット メッセージを含むTeamsコンテンツの場所の電子情報開示検索です。 前の手順で作成した場合に、下書きコレクションを作成します。 詳細については、「 [下書きコレクションを作成する](create-draft-collection.md)」を参照してください。
 
 ### <a name="data-sources-for-chat-messages"></a>チャット メッセージのデータ ソース
 
@@ -94,7 +94,7 @@ Teams チャット会話の最も包括的なコレクション (1 対 1 とグ�
 
 これで、チャット メッセージを実際にTeamsから消去する準備ができました。 Microsoft Graph エクスプローラーを使用して、次の 3 つのタスクを実行します。
 
-1. 手順 1 で作成したAdvanced eDiscoveryケースの ID を取得します。 これは、手順 2 で作成したコレクションを含む場合です。
+1. 手順 1 で作成した電子情報開示 (プレミアム) ケースの ID を取得します。 これは、手順 2 で作成したコレクションを含む場合です。
 
 2. 手順 2 で作成したコレクションの ID を取得し、手順 3 で検索結果を確認します。 このコレクション内の検索クエリは、削除されるチャット メッセージを返します。
 
@@ -109,13 +109,13 @@ Graph エクスプローラーの使用については、「[Graph エクスプ�
 
 1. <https://developer.microsoft.com/graph/graph-explorer> Microsoft Purview コンプライアンス ポータルで検索ロールと消去ロールが割り当てられているアカウントを使用して、Graph エクスプローラーに移動 **して** サインインします。
 
-2. 次の GET 要求を実行して、Advanced eDiscovery ケースの ID を取得します。 要求クエリのアドレス バーの値 `https://graph.microsoft.com/beta/compliance/ediscovery/cases` を使用します。 API バージョンのドロップダウン リストで **v1.0** を選択してください。
+2. 次の GET 要求を実行して、電子情報開示 (プレミアム) ケースの ID を取得します。 要求クエリのアドレス バーの値 `https://graph.microsoft.com/beta/compliance/ediscovery/cases` を使用します。 API バージョンのドロップダウン リストで **v1.0** を選択してください。
 
    ![ケース ID の GET 要求。](..\media\GraphGetRequestForCaseId.png)
 
    この要求は、[ **応答プレビュー** ] タブで組織内のすべてのケースに関する情報を返します。
 
-3. 応答をスクロールして、Advanced eDiscoveryケースを見つけます。 **displayName** プロパティを使用してケースを識別します。
+3. 応答をスクロールして、電子情報開示 (プレミアム) ケースを見つけます。 **displayName** プロパティを使用してケースを識別します。
 
    ![ケース ID を含む応答。](..\media\GraphResponseForCaseId.png)
 
