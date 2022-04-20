@@ -15,21 +15,23 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 5de25b0b1385e709a818b1ff797910ec4ee4ddfc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 28f110c6b236721debdb5585263dd835f2a5a658
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949633"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993142"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>従来の電子情報開示の検索と保留をコンプライアンス ポータルに移行する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルでは、電子情報開示の使用に関するエクスペリエンスが向上します。これには、信頼性の向上、パフォーマンスの向上、電子情報開示ワークフローに合わせた多くの機能が用意されています。これには、コンテンツを問題別に整理するためのケース、コンテンツと分析をレビューするためのレビュー セットが含まれており、ほぼ重複するグループ化、電子メール スレッド、テーマ分析、予測コーディングなどのデータをカリングするのに役立ちます。
 
 この記事では、お客様が新機能と改善された機能を利用できるように、Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>からコンプライアンス ポータルに電子情報開示の検索と保留In-Place移行する方法に関する基本的なガイダンスを提供します。
 
 > [!NOTE]
-> さまざまなシナリオがあるため、この記事では、コンプライアンス ポータルで検索と保留をコア電子情報開示ケースに移行するための一般的なガイダンスを提供します。 電子情報開示ケースの使用は必ずしも必要ではありませんが、組織内の電子情報開示ケースにアクセスできるユーザーを制御するためのアクセス許可を割り当てることで、セキュリティのレイヤーが追加されます。
+> さまざまなシナリオがあるため、この記事では、コンプライアンス ポータルで検索と保留を電子情報開示 (Standard) ケースに移行するための一般的なガイダンスを提供します。 電子情報開示ケースの使用は必ずしも必要ではありませんが、組織内の電子情報開示ケースにアクセスできるユーザーを制御するためのアクセス許可を割り当てることで、セキュリティのレイヤーが追加されます。
 
 ## <a name="before-you-begin"></a>はじめに
 

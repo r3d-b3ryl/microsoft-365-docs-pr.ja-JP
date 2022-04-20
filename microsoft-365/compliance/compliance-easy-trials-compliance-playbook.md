@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 コンプライアンス ソリューション試用版プレイブック
+title: Microsoft Purview ソリューション試用版プレイブック
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -14,26 +14,28 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 コンプライアンス ソリューション試用版プレイブック。
-ms.openlocfilehash: 8c5456344a97a0cfc4564c228eeba20067682070
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Microsoft Purview ソリューション試用版プレイブック。
+ms.openlocfilehash: 5136ceb33f4fb09345ee942b8d411d14952befc5
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759172"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952778"
 ---
-# <a name="trial-playbook-microsoft-365-compliance-solutions"></a>試用版プレイブック: Microsoft 365 コンプライアンス ソリューション
+# <a name="trial-playbook-microsoft-purview-solutions"></a>試用版プレイブック: Microsoft Purview ソリューション
 
-Microsoft 365 コンプライアンス ソリューション試用版プレイブックへようこそ。このプレイブックは、Microsoft 365 コンプライアンスおよびセキュリティ製品の堅牢で包括的な機能を見つけ出すのに役立ち、90 日間の無料試用版を最大限に活用するのに役立ちます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview ソリューション試用版プレイブックへようこそ。このプレイブックは、Microsoft Purview およびセキュリティ製品の堅牢で包括的な機能を見つけ出すのに役立ち、90 日間の無料試用版を最大限に活用するのに役立ちます。
 
 それぞれのソリューションを試すことで、組織のコンプライアンスのニーズを満たすための十分な情報に基づいた決断に役立ちます。
 
 機能: 
 
-- [高度な監査](#advanced-audit)
+- [監査 (プレミアム)](#audit-premium)
 - [コミュニケーション コンプライアンス](#communication-compliance)
 - [コンプライアンス マネージャー](#compliance-manager)
-- [データ損失防止](#data-loss-prevention)
+- [Microsoft Purview データ損失防止](#data-loss-prevention)
 - [電子情報開示](#ediscovery)
 - [情報保護](#information-protection)
 - [インサイダー リスクの管理](#insider-risk-management)
@@ -44,48 +46,48 @@ Microsoft 365 コンプライアンス ソリューション試用版プレイ�
 - [コンプライアンス マネージャー プレミアム評価](#compliance-manager-premium-assessments)
 - [Microsoft Priva プライバシー リスク管理と Microsoft Priva 主体の権利要求](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
 
-## <a name="compliance-actions-with-microsoft-365"></a>コンプライアンス アクションと Microsoft 365
+## <a name="compliance-actions-with-microsoft-purview"></a>Microsoft Purview を使用したコンプライアンス アクション
 
 組織のメタデータを変更することなく、Microsoft のコンプライアンス ソリューションを簡単かつ迅速に試すことができます。 お客様の優先順位に応じて、これらのソリューション分野のいずれかを開始することで、すぐに価値を見出すことができます。 以下に、お客様から寄せられた 5 つの組織的な懸念事項と、それを解決するためのお勧めの方法をご紹介します。
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="コンプライアンス アクションと Microsoft 365":::
 
-## <a name="advanced-audit"></a>高度な監査
+## <a name="audit-premium"></a>監査 (プレミアム)
 
 **調査の実施**
 
-高度な監査は、侵害の範囲の決定に役立つ重要なイベントへのアクセスを提供し、Office 365 管理アクティビティ API への迅速なアクセスを提供することで、調査の実施に必要な監査ログの保持を高め、組織によるフォレンジック調査やコンプライアンス調査の実施をサポートします。
+Microsoft Purview の監査 (プレミアム) は、侵害の範囲の決定に役立つ重要なイベントへのアクセスを提供し、Office 365 管理アクティビティ API への迅速なアクセスを提供することで、調査の実施に必要な監査ログの保持を高め、組織によるフォレンジック調査やコンプライアンス調査の実施をサポートします。
 
-### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>手順 1: [E5 イベントを生成する各ユーザーに E5 ライセンスを適用する](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users)
+### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>手順 1: [E5 イベントを生成する各ユーザーに E5 ライセンスを適用する](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
 
 > [!TIP]
 > 試用版のベスト プラクティス: 1 日目
 
-MailItemsAccessed や Send などの重要なイベントをログに記録する機能などの高度な監査機能を使用するには、ユーザーに適切な E5 ライセンスが割り当てられている必要があります。 さらに、それらのユーザーに対して高度な監査アプリ/サービス プランを有効にする必要があります。
+MailItemsAccessed や Send などの重要なイベントをログに記録する機能などの監査 (プレミアム) 機能を使用するには、ユーザーに適切な E5 ライセンスが割り当てられている必要があります。 さらに、それらのユーザーに対して高度な監査アプリ/サービス プランを有効にする必要があります。
 
-ユーザーの高度な監査のセットアップを行う - 高度な監査アプリがユーザーに割り当てられていることを確認するには、[ユーザーごとに次の手順を実行します](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users)。
+ユーザーの監査 (プレミアム) のセットアップを行う - 高度な監査アプリがユーザーに割り当てられていることを確認するには、[ユーザーごとに次の手順を実行します](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)。
 
-1. 高度な監査イベントを有効にする - [SearchQueryInitiatedExchange および SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) を、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) でユーザーごとに監査できるようにします。
+1. 監査 (プレミアム) イベントを有効にする - [SearchQueryInitiatedExchange および SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) を、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) でユーザーごとに監査できるようにします。
 1. 監査保持ポリシーの設定 - 組織のセキュリティ運用、IT、コンプライアンス チームの要件に合わせて、[追加の監査ログ保持ポリシー](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies)を作成します。
-1. 高度な監査イベントの検索 - フォレンジック調査を行う場合に[重要な高度な監査イベントやそのほかのアクィビティを検索](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events)します。
+1. 監査 (プレミアム) イベントの検索 - フォレンジック調査を行う場合に[重要な監査 (プレミアム) イベントの検索](set-up-advanced-audit.md#step-4-search-for-audit-premium-events)やその他のアクィビティの検索を実行します。
 
 ### <a name="step-2-create-new-audit-log-policies-to-specify-how-long-to-retain-audit-logs-in-your-org-for-activities-performed-by-users-and-define-priority-levels-for-your-policies"></a>手順 2: [新しい監査ログ ポリシーを作成して、ユーザーが実行したアクティビティの監査ログを組織内で保持する期間を指定し、ポリシーの優先度を定義します](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)。
 
 > [!TIP]
 > 試用版のベスト プラクティス: 最初の 30 日以内に作成する
 
-監査ログの保持ポリシーは、Microsoft 365 の新しい高度な監査機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
+監査ログの保持ポリシーは、Microsoft 365 の新しい監査 (プレミアム) 機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
 
 1. 監査ログ保持ポリシーの作成前 - ポリシーを作成する前に[知っておきたい主なポイント](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)。
 1. [PowerShell で監査ログの保持ポリシーを作成する](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Microsoft 365 コンプライアンス センターの監査ログ保持ポリシーの管理](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - 監査ログの保持ポリシーは、[監査の保持ポリシー] タブ (ダッシュボードとも呼ばれます) に一覧表示されます。ダッシュボードを使用して、監査アイテム保持ポリシーを表示、編集、および削除できます。
+1. [Microsoft Purview コンプライアンス ポータルの監査ログ保持ポリシーの管理](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - 監査ログの保持ポリシーは、[監査の保持ポリシー] タブ (ダッシュボードとも呼ばれます) に一覧表示されます。ダッシュボードを使用して、監査アイテム保持ポリシーを表示、編集、および削除できます。
 1. PowerShell で監査ログ保持ポリシーを作成して管理する - セキュリティ/コンプライアンス センター PowerShellを使用して、[監査ログ保持ポリシーの作成および管理](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell)を行うこともできます。 PowerShell を使用する理由の 1 つは、UI で使用できないレコードの種類またはアクティビティのポリシーを作成することです。
 
 ## <a name="communication-compliance"></a>通信コンプライアンス
 
 **行動規範ポリシー違反を特定し、対処する**
 
-コミュニケーション コンプライアンスでは、不適切なメッセージの検出、ポリシー違反の可能性の調査、修正に向けた改善のための処置など、コンプライアンスと健全な職場環境をサポートするために、コミュニケーション違反をインテリジェントに特定するのに役立ちます。
+Microsoft Purview コミュニケーション コンプライアンスでは、不適切なメッセージの検出、ポリシー違反の可能性の調査、修正に向けた改善のための処置など、コンプライアンスと健全な職場環境をサポートするために、コミュニケーション違反をインテリジェントに特定するのに役立ちます。
 
 ### <a name="step-1-enable-permissions-for-communication-compliance"></a>手順 1: [通信コンプライアンスのためのアクセス許可を有効にする](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
@@ -113,7 +115,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 
 **組織のコンプライアンスを簡単に管理する**
 
-コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。
+Microsoft Purview コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。
 
 ### <a name="step-1-get-to-know-compliance-manager"></a>手順 1: [コンプライアンス マネージャーについて理解する](compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
 
@@ -171,7 +173,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 
 **機密データの保護**
 
-ビジネスの標準や業界の規制に準拠するために、組織は機密情報を保護し、不注意による情報漏えいを防ぐ必要があります。 データ損失防止 (DLP) ポリシーを設定して、Microsoft 365 全体で機密情報を特定、監視、および自動的に保護します。
+ビジネスの標準や業界の規制に準拠するために、組織は機密情報を保護し、不注意による情報漏えいを防ぐ必要があります。 Microsoft Purview データ損失防止ポリシーを設定して、Microsoft 365 全体で機密情報を特定、監視、および自動的に保護します。
 
 ### <a name="step-1-protect-data-loss-on-teams-locations"></a>手順 1:[Teams の場所でのデータ損失を保護する](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
 
@@ -192,7 +194,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 Microsoft Endpoint DLP は、Windows 10 デバイスを監視し、機密性の高いアイテムが使用および共有されていることを検出します。
 
 1. エンドポイントの準備 - [これらの要件を満たす](endpoint-dlp-getting-started.md)ために、エンドポイント DLP の導入を計画している Windows 10 デバイスを確認してください
-1. [デバイス管理にデバイスをオンボードする](endpoint-dlp-getting-started.md) - デバイス上の機密アイテムを監視および保護する前に、デバイスの監視を有効にし、エンドポイントをオンボードしなければなりません。 これらのアクションはどちらも Microsoft 365 コンプライアンスポータルで行われます。
+1. [デバイス管理にデバイスをオンボードする](endpoint-dlp-getting-started.md) - デバイス上の機密アイテムを監視および保護する前に、デバイスの監視を有効にし、エンドポイントをオンボードしなければなりません。 これらのアクションはどちらも Microsoft Purview コンプライアンスポータルで行われます。
    - シナリオ 1 – まだオンボードされていない[オンボーディング デバイス](endpoint-dlp-getting-started.md)。
    - シナリオ 2 - [Microsoft Defender for Endpoint は既に導入されており、レポートするエンドポイントがあります](endpoint-dlp-getting-started.md)。 これらすべてのエンドポイントが管理対象デバイスのリストに表示されます。
 1. [デバイス用の既定の DLP ポリシーの構成](mip-easy-trials.md#dlp-for-devices)または[デバイス用の新しい DLP ポリシーの定義](endpoint-dlp-learn-about.md)。
@@ -210,7 +212,7 @@ DLP ポリシーの構成は柔軟に行うことができます。 Teams やデ
       - [機密文書への外部アクセスを防止する](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
       - [ユーザーの教育に役立つポリシー ヒントと、ポリシー ヒントをカスタマイズする手順を入手する](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - デバイス: 監査のみからブロックに切り替える
-1. [データ損失防止ポリシーのアラートを構成および表示する - Microsoft 365 コンプライアンス | Microsoft Docs](dlp-configure-view-alerts-policies.md)
+1. [データ損失防止ポリシーのアラートを構成および表示する - Microsoft Purview | Microsoft Docs](dlp-configure-view-alerts-policies.md)
 
 ## <a name="ediscovery"></a>電子情報開示
 
@@ -243,7 +245,7 @@ Advanced eDiscovery にアクセスしたり、Advanced eDiscovery ケースの�
 
 組織内のユーザーがケースの作成と使用を開始するには、組織内のすべてのケースに適用されるグローバル設定を構成する必要があります。 現時点では、唯一のグローバル設定は、**弁護士/依頼人特権の検出** です (今後、より多くのグローバル設定が利用可能になります)。
 
-1. [Advanced eDiscovery の設定 – グローバル 設定](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-advanced-ediscovery)
+1. [Advanced eDiscovery の設定 – グローバル 設定](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [検索と分析の設定を構成する](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
 1. [Advanced eDiscovery でジョブを管理する](managing-jobs-ediscovery20.md)
 
@@ -262,7 +264,7 @@ Advanced eDiscovery にアクセスしたり、Advanced eDiscovery ケースの�
 
 ### <a name="step-5-optional-learn-about-content-search-tool"></a>手順 5 (省略可能): [コンテンツ検索ツールに関する詳細情報](search-for-content.md)
 
-Microsoft 365 コンプライアンス センターのコンテンツ検索ツールを使用して、Exchange メールボックスのメール、SharePoint サイトおよび OneDrive ロケーションのドキュメント、Skype for Business のインスタント メッセージングの会話をすばやく検索できます。 コンテンツ検索ツールは、Microsoft Teams や Microsoft 365 グループなどのコラボレーション ツール内のメール、ドキュメント、インスタント メッセージングの会話を検索するために使用できます。
+Microsoft Purview コンプライアンス ポータルのコンテンツ検索ツールを使用して、Exchange メールボックスのメール、SharePoint サイトおよび OneDrive ロケーションのドキュメント、Skype for Business のインスタント メッセージングの会話をすばやく検索できます。 コンテンツ検索ツールは、Microsoft Teams や Microsoft 365 グループなどのコラボレーション ツール内のメール、ドキュメント、インスタント メッセージングの会話を検索するために使用できます。
 
 - [Advanced eDiscovery 検索に関する詳細情報](search-for-content.md#search-for-content)
 
@@ -270,14 +272,14 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索ツ�
 
 **機密情報を検出し、分類して保護する**
 
-Microsoft の情報保護ラベルと機密ラベルを実装して、ユーザーがどこに住んでいても、どこを移動中でも、機密コンテンツを発見、分類、保護できるようにします。
+Microsoft Purview の情報保護ラベルと機密ラベルを実装して、ユーザーがどこに住んでいても、どこを移動中でも、機密コンテンツを発見、分類、保護できるようにします。
 
 ### <a name="step-1-start-your-information-protection-trial"></a>手順 1: [情報保護の試用版の使用を開始する](mip-easy-trials.md)
 
 > [!TIP]
 > 試用版のベスト プラクティス: 1 日目
 
-対象となるお客様は、Microsoft Information Protection の既定のラベルとポリシーをアクティブ化できます。試用版で既定の構成を有効にすると、テナントのすべてのポリシーを構成するのに約 2 分かかります。これらの既定のポリシーの結果を表示するには、最大 24 時間かかります。
+対象となるお客様は、Microsoft Purview の情報保護の既定のラベルとポリシーをアクティブ化できます。試用版で既定の構成を有効にすると、テナントのすべてのポリシーを構成するのに約 2 分かかります。これらの既定のポリシーの結果を表示するには、最大 24 時間かかります。
 
 既定の構成を選択すると、1 クリックで次の設定が自動的に構成されます。
 
@@ -356,7 +358,7 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 **ビジネス クリティカルな記録の保持スケジュールを自動化する**
 
-統合レコード管理機能を使用して、組織の規制、法律、およびビジネスに不可欠なレコードの保持スケジュールを自動化します。 作成から共同作業、レコード宣言、保持、廃棄に至るまで、コンテンツのライフサイクル全体のサポートを取得します。
+統合された Microsoft Purview のレコード管理機能を使用して、組織の規制、法律、およびビジネスに不可欠なレコードの保持スケジュールを自動化します。 作成から共同作業、レコード宣言、保持、廃棄に至るまで、コンテンツのライフサイクル全体のサポートを取得します。
 
 ### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>手順 1: アダプティブ ポリシー スコープを使用してアイテム保持ポリシーを動的に対象化する
 
@@ -418,7 +420,7 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 [コンプライアンス マネージャー プレミアム評価の試用版に関する詳細情報](compliance-easy-trials-compliance-manager-assessments.md)。
 
-[試用版プレイブック: Microsoft コンプライアンス マネージャー プレミアム アセスメント](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[試用版プレイブック: Microsoft Purview コンプライアンス マネージャー プレミアム アセスメント](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Microsoft Priva プライバシー リスク管理と Microsoft Priva 主体の権利要求
 
@@ -432,7 +434,7 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 ## <a name="additional-resources"></a>その他のリソース
 
-**含まれるもの**: Microsoft 365 コンプライアンス ソリューションの完全な一覧と製品レベル別の機能については、「[機能一覧](https://go.microsoft.com/fwlink/?linkid=2139145)」をご覧ください。
+**含まれるもの**: Microsoft Purview ソリューションの完全な一覧と製品レベル別の機能については、「[機能一覧](https://go.microsoft.com/fwlink/?linkid=2139145)」をご覧ください。
 
 **Microsoft Security Technical Content ライブラリ**: このライブラリを探索して、ユーザーのニーズに関連する対話型ガイドやその他の学習コンテンツを見つけます。[ライブラリに行く](/security)。
 

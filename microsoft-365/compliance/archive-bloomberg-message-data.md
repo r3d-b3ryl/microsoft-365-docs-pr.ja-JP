@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Microsoft 365の Bloomberg Message 電子メール ツールからデータをインポートおよびアーカイブするためのデータ コネクタを設定できます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 497e0e5e3f99c5776d872ef522107cb29ba0fd33
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 781378ba30ccb7db44191764e050277fa4a239aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938755"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992824"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Bloomberg Message データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルのデータ コネクタを使用して、 [Bloomberg Message](https://www.bloomberg.com/professional/product/collaboration/) コラボレーション ツールから金融サービスの電子メール データをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の Bloomberg Secure FTP (SFTP) サイトに毎日 1 回接続され、Microsoft 365のメールボックスに電子メール アイテムがインポートされます。
 

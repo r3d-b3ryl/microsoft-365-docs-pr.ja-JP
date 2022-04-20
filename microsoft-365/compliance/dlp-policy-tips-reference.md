@@ -17,63 +17,65 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 recommendations: false
-description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加する方法について、DLP ポリシーと競合するコンテンツを操作しているユーザーに通知する方法について学習します。
+description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作していることをユーザーに通知する方法について説明します。
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 52bb2fba47c5588dc6a44eb5f8e1d7b745e69e70
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f9702916831839ac384cd262854fd0a88f90a8ea
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319379"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953663"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>データ損失防止ポリシーヒントのリファレンス
 
-Outlook Web Access の DLP ポリシー ヒントは、以下を除き、DLP ポリシー内の Exchange ワークロードに適用可能なすべての条件、例外、およびアクションでサポートされます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-**条件:**
+Outlook Web Access の DLP ポリシーヒントは、DLP ポリシーのExchangeワークロードに適用されるすべての条件、例外、およびアクションに対してサポートされています。次を除きます。
+
+**条件：**
 
 - 受信者が次のメンバーの場合
-- ヘッダーには、単語または語句が含まれています
+- ヘッダーに単語または語句が含まれている
 - ヘッダーがパターンと一致している
-- メッセージの種類は次の値です。
+- メッセージの種類は次の形式です。
 - コンテンツ文字セットに単語が含まれている
-- 送信者がポリシー ヒントを上書きしました
-- メッセージ サイズが等しいか、またはより大きい
-- Sender AD属性に単語または語句が含まれている
-- Sender AD属性がパターンと一致する
-- 送信者の IP 範囲
-- 受信者AD属性には、単語または語句が含まれる
-- 受信者AD属性がパターンと一致する
-- ドキュメント名には、単語または語句が含まれる
+- 送信者がポリシー ヒントをオーバーライドしました
+- メッセージ サイズが等しいか、またはそれより大きい
+- Sender AD 属性に単語または語句が含まれている
+- Sender AD 属性がパターンと一致する
+- 送信者 IP 範囲
+- Recipient AD 属性に単語または語句が含まれている
+- 受信者 AD 属性がパターンと一致する
+- ドキュメント名に単語または語句が含まれている
 - ドキュメント名がパターンと一致する
-- ドキュメントコンテンツには、単語または語句が含まれる
+- ドキュメント コンテンツに単語または語句が含まれている
 - ドキュメント コンテンツがパターンと一致する
 
-**アクション:**
+**アクション：**
 
-- 承認のためにメッセージを送信者のマネージャーに転送する
-- 承認のメッセージを特定の承認者に転送する
-- メッセージを特定のユーザーにリダイレクトする
+- 送信者のマネージャーに承認メッセージを転送する
+- 承認メッセージを特定の承認者に転送する
+- 特定のユーザーにメッセージをリダイレクトする
 - 宛先ボックスに受信者を追加する
 - Cc ボックスに受信者を追加する
-- Bcc ボックスに受信者を追加する
+- Bcc Box に受信者を追加する
 - 送信者のマネージャーを受信者として追加する
-- HTML 免責事項の追加
-- 電子メールの件名の先頭に追加する
-- O365 メッセージの暗号化と権限の保護を削除する
+- HTML 免責事項を追加する
+- メール件名の先頭に追加する
+- O365 メッセージの暗号化と権利保護を削除する
 
-## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Outlook 2013 以降では、一部の条件と例外に関するポリシー ヒントの表示がサポートされています
+## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Outlook 2013 以降では、一部の条件と例外についてのみポリシーヒントを表示できます
 
-現在、Outlook 2013 以降では、以下の条件と対応する例外以外の条件や例外を含むポリシーに関するポリシー ヒントの表示がサポートされています。
+現在、Outlook 2013 以降では、以下の条件と対応する例外を除き、条件や例外を含まないポリシーのポリシー ヒントの表示がサポートされています。
 
-- コンテンツが含まれる (機密情報の種類に対してのみ機能します)。 感度ラベルはサポートされていません)
+- コンテンツに含まれるもの (機密情報の種類に対してのみ機能します。 秘密度ラベルはサポートされていません)
 - コンテンツが共有されている
 
-Outlook クライアント アプリで作成された電子メールでは、コンテンツと一致し、コンテンツに対して保護アクションを適用する場合、すべての条件が機能します。 ただし、ユーザーにポリシー ヒントを表示する方法は、上記の条件とは別に使用される条件ではサポートされていません。
+すべての条件は、Outlook クライアント アプリで作成された電子メールに対して機能し、コンテンツと一致し、コンテンツに対して保護アクションが適用されることに注意してください。 ただし、上記以外の条件では、ユーザーにポリシーヒントを表示することはサポートされていません。
 
-## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 以降およびデスクトップOfficeアプリでは、一部の機密情報の種類についてのみポリシー ヒントを表示できます
+## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 以降およびデスクトップ上のOffice アプリでは、一部の機密情報の種類についてのみポリシーヒントを示すサポート
 
-デスクトップ上の Outlook on Desktop (2013 以降) および Office アプリ (Word、Excel、PowerPoint) で DLP ポリシー ヒントを表示するために検出される、既定の機密情報の種類の一覧は次のとおりです。
+Desktop (2013 以降) のOutlookとデスクトップ上のOffice アプリ (Word、Excel、PowerPoint) で DLP ポリシーのヒントを表示するために検出される、既定の機密情報の種類の一覧は次のとおりです。
 
 - ABA ルーティング番号
 - アルゼンチンの国民識別 (DNI) 番号
@@ -81,15 +83,15 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - オーストラリアの医療口座番号
 - オーストラリアのパスポート番号
 - オーストラリアの納税者番号
-- Azure DocumentDB Auth Key  
-- Azure IAAS データベース接続文字列と Azure SQL接続文字列  
-- Azure IoT 接続文字列  
-- Azure 発行設定パスワード  
-- Azure Redis キャッシュ接続文字列  
+- Azure DocumentDB 認証キー  
+- Azure IAAS データベース接続文字列とAzure SQL接続文字列  
+- Azure IoT接続文字列  
+- Azure Publish Setting Password  
+- Azure Redis Cache 接続文字列  
 - Azure SAS  
-- Azure Service Bus 接続文字列  
-- Azure ストレージ アカウント キー  
-- Azure ストレージ アカウント キー (汎用)  
+- Azure Service Bus接続文字列  
+- Azure Storage アカウント キー  
+- Azure Storage アカウント キー (汎用)  
 - ベルギーの国民番号
 - ブラジルの CPF 番号
 - Brazil Legal Entity Number (CNPJ)
@@ -113,7 +115,7 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - EU の国民識別番号  
 - EU パスポート番号  
 - EU 社会保障番号 (SSN) または同等の ID  
-- EU 税 ID 番号 (TIN)  
+- EU 税識別番号 (TIN)  
 - フィンランドの国民 ID
 - フィンランドのパスポート番号
 - フランスの運転免許証番号
@@ -130,7 +132,7 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - インドネシアの身分証明書 (KTP) 番号
 - 国際銀行口座番号 (IBAN)
 - 国際分類の病気 (ICD-10-CM)  
-- 国際疾病分類 (ICD-9-CM)  
+- 国際分類の病気 (ICD-9-CM)  
 - IP アドレス
 - アイルランドの個人公共サービス (PPS) 番号 
 - イスラエルの銀行口座番号
@@ -141,8 +143,8 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - 日本のパスポート番号
 - 日本の住民登録番号
 - 日本の社会保険番号 (SIN)
-- 日本の在留カード番号
-- マレーシアの ID カード番号
+- 日本の居住カード番号
+- マレーシア ID カード番号
 - オランダの市民サービス (BSN) 番号  
 - ニュージーランドの保健省番号
 - ノルウェーの識別番号  
@@ -164,7 +166,7 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - 	台湾のパスポート番号
 - 台湾居住者証明書 (ARC/TARC)
 - タイの人口識別コード
-- トルコの国民識別番号
+- トルコ国民識別番号
 - 英国の運転免許証番号
 - 英国の選挙登録番号
 - 英国の国民健康保険番号
@@ -175,11 +177,11 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - 米国の個人納税者識別番号 (ITIN)
 - 米国の社会保障番号 (SSN)
 
-カスタムの機密情報の種類は、上記の機密情報の種類に加えて、DLP ポリシー のヒントにもサポートされています。
+カスタムの機密情報の種類は、上記のすぐに使用できる機密情報の種類に加えて、DLP ポリシーのヒントでもサポートされることに注意してください。
 
-## <a name="data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types"></a>エンドポイント デバイスのデータ損失防止は、一部の機密情報の種類についてのみポリシー ヒントをサポートします
+## <a name="data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types"></a>エンドポイント デバイスのデータ損失防止では、一部の機密情報の種類についてのみポリシー ヒントがサポートされます
 
-エンドポイント デバイスに存在するドキュメントで検出される、既定の機密情報の種類の一覧は次のとおりです。
+エンドポイント デバイスに存在するドキュメントで検出される、すぐに使用できる機密情報の種類の一覧は次のとおりです。
 
 - ABA ルーティング番号 
 - アルゼンチンの国民識別 (DNI) 番号 
@@ -190,24 +192,24 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - オーストラリアのビジネス番号 
 - オーストラリアの会社番号 
 - オーストリアの運転免許証番号 
-- オーストリアの ID カード 
+- オーストリア ID カード 
 - オーストリアのパスポート番号 
-- オーストリアの社会保障番号 
-- オーストリアの納税者番号 
+- オーストリア社会保障番号 
+- オーストリアの税識別番号 
 - オーストリア付加価値税 (VAT) 番号 
-- Azure DocumentDB Auth Key 
-- Azure IAAS データベース接続文字列と Azure SQL接続文字列 
-- Azure IoT 接続文字列 
-- Azure 発行設定パスワード 
-- Azure Redis キャッシュ接続文字列 
+- Azure DocumentDB 認証キー 
+- Azure IAAS データベース接続文字列とAzure SQL接続文字列 
+- Azure IoT接続文字列 
+- Azure Publish Setting Password 
+- Azure Redis Cache 接続文字列 
 - Azure SAS 
-- Azure Service Bus 接続文字列 
-- Azure ストレージ アカウント キー 
-- Azure ストレージ アカウント キー (汎用) 
+- Azure Service Bus接続文字列 
+- Azure Storage アカウント キー 
+- Azure Storage アカウント キー (汎用) 
 - ベルギーの運転免許証番号 
 - ベルギーの国民番号 
 - ベルギーのパスポート番号 
-- ベルギーの付加価値税番号 
+- ベルギー付加価値税番号 
 - ブラジルの CPF 番号 
 - Brazil Legal Entity Number (CNPJ) 
 - 	ブラジルの国民識別カード (RG) 
@@ -223,17 +225,17 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - 	チリの身分証明書番号 
 - 	中国の居民身分証明書 (PRC) 番号 
 - クレジットカード番号 
-- クロアチア の運転免許証番号 
+- クロアチアの運転免許証番号 
 - クロアチアの身分証明書番号 
-- クロアチアの国民 ID カード番号 
+- クロアチア国民 ID カード番号 
 - クロアチアのパスポート番号 
 - クロアチアの個人識別 (OIB) 番号 
-- CSCAN-AZURE0060 Azure Storage Account Shared Access Signature 
-- CSCAN-GENERAL0140 一般対称キー 
-- キプロス の運転免許証番号 
-- キプロスの ID カード 
-- キプロスのパスポート番号 
-- キプロスの納税者番号 
+- CSCAN-AZURE0060 Azure Storage アカウント共有アクセス署名 
+- CSCAN-GENERAL0140 General Symmetric Key 
+- キプロスの運転免許証番号 
+- キプロス ID カード 
+- キプロスパスポート番号 
+- キプロス税識別番号 
 - チェコの運転免許証番号 
 - チェコの個人 ID 番号 
 - チェコ共和国のパスポート番号 
@@ -241,7 +243,7 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - デンマークのパスポート番号 
 - デンマークの個人識別番号 
 - 麻薬取締局 (DEA) 番号 
-- エストニア の運転免許証番号 
+- エストニアの運転免許証番号 
 - エストニアのパスポート番号 
 - エストニアの個人識別コード 
 - 欧州連合のデビット カード番号 
@@ -249,9 +251,9 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - EU の国民識別番号 
 - EU パスポート番号 
 - EU 社会保障番号 (SSN) または同等の ID 
-- EU 税 ID 番号 (TIN) 
-- フィンランド の運転免許証番号 
-- フィンランド のヨーロッパの健康保険番号 
+- EU 税識別番号 (TIN) 
+- フィンランドの運転免許証番号 
+- フィンランド - ヨーロッパの医療保険番号 
 - フィンランドの国民 ID 
 - フィンランドのパスポート番号 
 - フランスの運転免許証番号 
@@ -259,31 +261,31 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - フランスの国民識別カード (CNI) 
 - フランスのパスポート番号 
 - フランスの社会保障番号 (INSEE) 
-- フランスの納税者番号 (numéro SPI.) 
-- フランスの付加価値税番号 
+- フランス税識別番号 (numéro SPI.) 
+- フランス付加価値税番号 
 - ドイツの運転免許証番号 
 - ドイツのパスポート番号 
 - ドイツの身分証明書番号 
-- ドイツの納税者番号 
-- ドイツの付加価値税番号 
-- ギリシャの運転免許証番号 
+- ドイツの税識別番号 
+- ドイツ付加価値税番号 
+- ギリシャ の運転免許証番号 
 - ギリシャの国民識別カード 
-- ギリシャのパスポート番号 
-- ギリシャの社会保障番号 (AMKA) 
-- ギリシャ語の税の識別番号 
+- ギリシャパスポート番号 
+- ギリシャ社会保障番号 (AMKA) 
+- ギリシャ語税識別番号 
 - 香港の ID カード (HKID) 番号 
-- ハンガリーの社会保障番号 (TAJ) 
-- ハンガリーの付加価値税番号 
-- ハンガリー の運転免許証番号 
+- ハンガリー社会保障番号 (TAJ) 
+- ハンガリー語の付加価値税番号 
+- ハンガリーの運転免許証番号 
 - ハンガリーのパスポート番号 
 - ハンガリーの個人識別番号 
-- ハンガリー 税の識別番号 
+- ハンガリー税識別番号 
 - インドの永久口座番号 (PAN) 
 - インドの固有識別 (Aadhaar) 番号 
 - インドネシアの身分証明書 (KTP) 番号 
 - 国際銀行口座番号 (IBAN) 
 - 国際分類の病気 (ICD-10-CM) 
-- 国際疾病分類 (ICD-9-CM) 
+- 国際分類の病気 (ICD-9-CM) 
 - IP アドレス 
 - アイルランドの運転免許証番号 
 - アイルランドのパスポート番号 
@@ -291,45 +293,45 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - イスラエルの銀行口座番号 
 - イスラエルの国民 ID 
 - イタリアの運転免許証番号 
-- イタリアの会計コード 
-- イタリアのパスポート番号 
-- イタリアの付加価値税番号 
+- イタリア会計コード 
+- イタリア のパスポート番号 
+- イタリア 付加価値税番号 
 - 日本の銀行口座番号 
 - 日本の運転免許証番号 
 - 日本のパスポート番号 
 - 日本の住民登録番号 
 - 日本の社会保険番号 (SIN) 
-- 日本語 My Number Corporate 
-- 日本語の個人用番号 
-- 日本の在留カード番号 
-- ラトビア の運転免許証番号 
-- ラトビアのパスポート番号 
+- 日本語マイナンバー企業 
+- 日本語 My Number Personal 
+- 日本の居住カード番号 
+- ラトビアの運転免許証番号 
+- ラトビアパスポート番号 
 - ラトビアの個人コード 
-- リトアニア の運転免許証番号 
-- リトアニアのパスポート番号 
-- リトアニア の個人用コード 
-- ルクセンブルク 運転免許証番号 
-- ルクセンブルク国民識別番号 (自然人) 
-- ルクセンブルク国民識別番号 (非自然人) 
-- ルクセンブルク パスポート番号 
-- マレーシアの ID カード番号 
-- マルタの運転免許証番号 
-- マルタの ID カード番号 
-- マルタのパスポート番号 
+- リトアニアの運転免許証番号 
+- リトアニアパスポート番号 
+- リトアニアの個人コード 
+- Luxemburg ドライバーのライセンス番号 
+- Luxemburg 国民識別番号 (自然人) 
+- Luxemburg 国民識別番号 (非自然人) 
+- Luxemburg Passport Number 
+- マレーシア ID カード番号 
+- マルタ運転免許証番号 
+- マルタ ID カード番号 
+- マルタパスポート番号 
 - マルタ税 ID 番号 
 - オランダの市民サービス (BSN) 番号 
 - オランダの運転免許証番号 
 - オランダのパスポート番号 
-- オランダの納税者番号 
-- オランダの付加価値税番号 
+- オランダの税識別番号 
+- オランダ付加価値税番号 
 - ニュージーランドの銀行口座番号 
 - ニュージーランドの運転免許証番号 
-- ニュージーランド 内陸の収益番号 
+- ニュージーランド内陸部収益番号 
 - ニュージーランドの保健省番号 
-- ニュージーランドのソーシャル 福利厚生番号 
+- ニュージーランド社会保障番号 
 - ノルウェーの識別番号 
 - フィリピンの汎用多目的 ID 番号 
-- ポーランド の運転免許証番号 
+- ポーランドの運転免許証番号 
 - ポーランドの ID カード 
 - ポーランドの国民 ID (PESEL) 
 - ポーランドのパスポート 
@@ -337,22 +339,22 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - ポーランド語 REGON 番号 
 - ポルトガルの市民カード番号 
 - ポルトガルの運転免許証番号 
-- ポルトガルのパスポート番号 
-- ポルトガルの納税者番号 
+- ポルトガルパスポート番号 
+- ポルトガルの税識別番号 
 - ルーマニアの運転免許証番号 
-- ルーマニアのパスポート番号 
-- ルーマニア の個人数値コード (CNP) 
-- ロシアのパスポート番号 (国内) 
-- ロシアのパスポート番号 (国際) 
+- ルーマニアパスポート番号 
+- ルーマニア個人用数値コード (CNP) 
+- ロシアパスポート番号 (国内) 
+- ロシアパスポート番号 (国際) 
 - サウジアラビアの国民 ID 
 - シンガポールの国民登録 ID カード (NRIC) 番号 
 - スロバキアの運転免許証番号 
-- スロバキアのパスポート番号 
+- スロバキアパスポート番号 
 - スロバキアの個人番号 
-- スロベニア の運転免許証番号 
+- スロベニアの運転免許証番号 
 - スロベニアのパスポート番号 
 - スロベニアの納税者番号 
-- スロベニアの一意のマスター市民番号 
+- スロベニア 固有のマスター 市民番号 
 - 南アフリカの識別番号 
 - 韓国の住民登録番号 
 - スペイン DNI 
@@ -364,44 +366,44 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - スウェーデンの運転免許証番号 
 - スウェーデンの国民 ID 
 - スウェーデンのパスポート番号 
-- スウェーデンの納税者番号 
+- スウェーデンの税識別番号 
 - SWIFT コード 
-- スイスの社会保障番号 AHV 
+- スイス社会保障番号 AHV 
 - 台湾の国民 ID 
 - 	台湾のパスポート番号 
 - 台湾居住者証明書 (ARC/TARC) 
 - タイの人口識別コード 
-- トルコの国民識別番号 
+- トルコ国民識別番号 
 - 英国の運転免許証番号 
 - 英国の選挙登録番号 
 - 英国の国民健康保険番号 
 - 英国の国民保険番号 (NINO) 
-- 英国 一意の納税者参照番号 
+- 英国。 一意の納税者番号 
 - 米国/英国のパスポート番号 
 - 米国の銀行口座番号 
 - 米国の運転免許証番号 
 - 米国の個人納税者識別番号 (ITIN) 
 - 米国の社会保障番号 (SSN) 
-- ウクライナのパスポート番号 (国内) 
-- ウクライナのパスポート番号 (国際) 
+- ウクライナパスポート番号 (国内) 
+- ウクライナパスポート番号 (国際) 
  
-上記の機密情報の種類に加えて、カスタムの機密情報の種類も検出されます。
+上記の機密情報の種類に加えて、カスタムの機密情報の種類も検出されることに注意してください
 
-## <a name="support-matrix-for-dlp-policy-tips-across-microsoft-apps"></a>Microsoft アプリ全体の DLP ポリシー ヒントのサポート マトリックス
+## <a name="support-matrix-for-dlp-policy-tips-across-microsoft-apps"></a>Microsoft アプリ全体の DLP ポリシーヒントのサポート マトリックス
 
-|**アプリとプラットフォーム**|**DLP ポリシー ヒントのサポート**|**サポートされる機密情報の種類**|**サポートされる述語とアクション**|**コメント**|
+|**アプリとプラットフォーム**|**DLP ポリシー ヒントのサポート**|**サポートされている機密情報の種類**|**サポートされている述語とアクション**|**コメント**|
 |:--|:--|:--|:--|:--|
 |**Outlook On the Web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべての|サブセット||
-|**Outlook Win32 (ver. 2105 ビルド 14026.20000 および半期チャネル ver. 2102 ビルド 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|サブセット|サブセット|Outlook で DLP ポリシー ヒントを表示するためにサポートされる機密情報の種類と DLP の条件とアクションのサポートの詳細については、「[Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) 以降では、一部の条件と例外に関するポリシー ヒントの表示と Outlook [2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) 以降およびデスクトップ上の Office アプリのサポート」を参照してください。 Win32。|
-|**Outlook (iOS、Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP ポリシー のヒントは、モバイルではOutlookされません|
-|**SharePoint/OneDrive for Business Web クライアント**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべての|DLP のすべての SPO/ODB 述語とアクション||
-|**SharePoint Win32/ OneDrive for Business Win32 クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP ポリシー のヒントは、デスクトップ クライアント アプリSharePointまたはOneDriveサポートされていません|
-|**Word、Excel、PowerPoint Web クライアント**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべての|DLP のすべての SPO/ODB 述語とアクション|DLP ポリシー ヒントは、ドキュメントが SPO または ODB Web アプリでホストされ、DLP ポリシーが既にスタンプされている場合にサポートされます。|
-|**Word、Excel、PowerPoint Mobile クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP ポリシー のヒントは、モバイル アプリではサポートされていません。Office。|
-|**Teams Web/ Teams デスクトップ/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべての|DLP ポリシー Teams述語のすべて|ポリシー ヒントは、メッセージに "このメッセージのフラグが設定されています" というフラグが付けらた場合に表示されます。 何が可能ですか? リンクをクリックすると、ユーザーは検出された機密情報の種類を確認し、管理者が許可した場合に問題を上書きまたは報告できます。ファイルに関するポリシー ヒントは表示されません。 受信者がドキュメントにアクセスしようとすると、許可されていない場合にアクセスが拒否される可能性があります。|
-|**Win32 Endpoint Devices**|:::image type="icon" source="../media/rightmrk.png" border="false":::|サブセット|DLP ポリシーのすべてのエンドポイント DLP 述語とアクション|「 [エンドポイントのデータ損失防止は、一部の機密情報の種類についてのみポリシー ヒントをサポートしています」を参照してください。](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
-|**macOS デバイス (プレビュー)**|既定のヒントのみ|すべての|サブセット|データ損失防止ポリシーは、macOS デバイスで強制可能です。 カスタム ポリシー ヒントはサポートされていません。|
-|**サードパーティのクラウド アプリ**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|データ損失防止ポリシーのヒントは、サードパーティのクラウド アプリではサポートされていません|
+|**Outlook Win32 (ver. 2105 build 14026.20000 および半期チャネル ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|サブセット|サブセット|[Outlook 2013 以降では、一部の条件と例外についてのみポリシー ヒントを表示](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions)できます。[また、2013 以降のOutlook 2013 以降 Officeのアプリと、機密情報の種類のサポートの詳細については、一部の機密情報の種類についてのみポリシー ヒント](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)と、Outlookに対する DLP ポリシーのヒントを表示するためにサポートされるアクションを示すポリシー ヒントがサポートされています。 Win32。|
+|**Outlook Mobile (iOS、Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP ポリシーのヒントは、Outlook モバイルではサポートされていません|
+|**SharePoint Online/OneDrive for Business Web クライアント**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべての|DLP のすべての SPO/ODB 述語とアクション||
+|**SharePoint Win32/ OneDrive for Business Win32 クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP ポリシーのヒントは、デスクトップ クライアント アプリSharePointまたはOneDriveではサポートされていません|
+|**Word、Excel、PowerPoint Web クライアント**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべての|DLP のすべての SPO/ODB 述語とアクション|ドキュメントが SPO または ODB Web アプリでホストされていて、DLP ポリシーが既にスタンプされている場合は、DLP ポリシー ヒントがサポートされます。|
+|**Word、Excel、PowerPoint Mobile クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Office用のモバイル アプリでは、DLP ポリシーのヒントはサポートされていません。|
+|**Teams Web/Teams Desktop/Teams Mobile/Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべての|DLP ポリシーのすべてのTeams述語|ポリシーヒントは、メッセージに "このメッセージにフラグが設定されました。 何ができますか? リンクをクリックすると、ユーザーは検出された機密情報の種類を確認し、管理者が許可した場合に問題をオーバーライドまたは報告できます。ファイルに対するポリシー ヒントは表示されません。 受信者がドキュメントにアクセスしようとすると、許可されていない場合はアクセスが拒否される可能性があります。|
+|**Win32 エンドポイント デバイス**|:::image type="icon" source="../media/rightmrk.png" border="false":::|サブセット|DLP ポリシー内のすべてのエンドポイント DLP 述語とアクション|[エンドポイントでのデータ損失防止で、一部の機密情報の種類についてのみポリシー ヒントをサポートする方法に関する説明を](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)参照してください|
+|**macOS デバイス**|既定のヒントのみ|すべての|サブセット|データ損失防止ポリシーは、macOS デバイスで適用できます。 カスタム ポリシーのヒントはサポートされていません。|
+|**サード パーティのクラウド アプリ**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|データ損失防止ポリシーのヒントは、サード パーティのクラウド アプリではサポートされていません|
 |**On-prem**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none||
-|**Word、Excel、PowerPoint Win32 クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|サブセット|サブセット|サポートされる機密情報Outlook一覧に関する一部の機密情報の種類についてのみ、ポリシー ヒントを示すデスクトップ 上の Office アプリとデスクトップ 上の Office アプリの詳細については、「[2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) 以降」を参照してください。</br></br>WXP クライアント アプリのポリシー ヒントは、SHAREPOINT Online または OneDrive for Business サイトに保存されているドキュメントで、以下の条件またはアクションのサブセットを完全に含むすべての DLP ポリシーで機能します。</br> <ul><li>コンテンツには機密情報の種類が含まれる</li><li>Access Scope (コンテンツは内部/外部で共有されます)</li><li>ユーザーに通知する (ポリシー ヒント/ユーザー通知)</li><li>すべてのユーザーをブロックする</li><li>インシデント レポート</li></ul></br> その他の条件またはアクションが存在する場合、そのポリシーの DLP ポリシー ヒントは、Word、Excel、または PowerPoint のデスクトップ アプリには表示されません。</br>詳細 [については、「Excel、PowerPoint、および Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) のポリシー ヒント」を参照してください。|
+|**Word、Excel、PowerPoint Win32 クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|サブセット|サブセット|[2013 以降Outlookを参照してください。デスクトップ のアプリのサポートOffice、サポートされている機密情報の種類の一覧の機密情報の種類についてのみポリシーヒントを示してください](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)</br></br>WXP クライアント アプリのポリシー ヒントは、DLP ポリシー内の条件またはアクションの正確な下またはサブセットを持つすべての DLP ポリシーの SharePoint Online または OneDrive for Business サイトに保存されているドキュメントに対して機能します。</br> <ul><li>コンテンツには機密情報の種類が含まれています</li><li>アクセス スコープ (コンテンツは内部または外部で共有されます)</li><li>ユーザーに通知する (ポリシーヒント/ユーザー通知)</li><li>すべてのユーザーをブロックする</li><li>インシデント レポート</li></ul></br> その他の条件またはアクションが存在する場合、そのポリシーの DLP ポリシー ヒントは、Word、Excel、またはPowerPointのデスクトップ アプリには表示されません。</br>詳細については、「[Excel、PowerPoint、Word のポリシーのヒント](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)」を参照してください。|
 ||||||

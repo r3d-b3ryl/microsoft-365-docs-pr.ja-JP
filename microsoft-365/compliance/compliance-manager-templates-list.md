@@ -1,5 +1,5 @@
 ---
-title: Microsoft Compliance Manager テンプレートの一覧
+title: Microsoft Purview Compliance Manager テンプレートの一覧
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,24 +16,26 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager には、国内、地域、および業界の規制、標準、および法律に準拠した評価を構築するためのテンプレートが用意されています。
-ms.openlocfilehash: 484363636906bbf599a18b3cf6d3484d53177e75
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Microsoft Purview コンプライアンス マネージャーには、国内、地域、および業界の規制、標準、および法律に適合する評価を構築するためのテンプレートが用意されています。
+ms.openlocfilehash: cc07d7aa6fc385fc1066f35c8d20bbe7e2152b93
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761003"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971497"
 ---
 # <a name="compliance-manager-templates-list"></a>コンプライアンスマネージャーテンプレートの一覧
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事では、次の操作を行います。** コンプライアンス マネージャーで評価を作成するために使用できる **テンプレート** の包括的な一覧を表示します。
 
 > [!IMPORTANT]
-> 組織で使用できる評価テンプレートは、ライセンス契約によって異なります。 [詳細を確認します](compliance-manager-templates.md#template-availability-and-licensing)。
+> 組織で使用できる評価テンプレートは、ライセンス契約によって異なります。 [詳細を確認します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager)。
 
 ## <a name="overview"></a>概要
 
-[Microsoft Compliance Manager](compliance-manager.md) には、評価を作成するための包括的なテンプレート セットが用意されています。 これらのテンプレートは、組織がデータの収集と使用に関する国内、地域、そして業界固有の要件に準拠して管理することに役立ちます。
+[Microsoft Purview コンプライアンス マネージャー](compliance-manager.md) には、評価を作成するための包括的なテンプレート セットが用意されています。 これらのテンプレートは、組織がデータの収集と使用に関する国内、地域、そして業界固有の要件に準拠して管理することに役立ちます。
 
 新しい法律や規制が適用されると、テンプレートがコンプライアンス マネージャーに追加されます。 また、コンプライアンス マネージャーは、基になる法律や規制が変更されたときにテンプレートを更新します。 [更新プログラムを確認して同意](compliance-manager-assessments.md#accept-updates-to-assessments)する方法について詳しくは、こちらを参照してください。
 

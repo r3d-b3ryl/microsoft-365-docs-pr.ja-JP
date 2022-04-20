@@ -1,5 +1,5 @@
 ---
-title: JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+title: JAMF Proを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,32 +13,34 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: JAMF Pro (プレビュー) を使用して macOS デバイスをMicrosoft 365コンプライアンス ソリューションにオンボードおよびオフボードする方法について説明します
-ms.openlocfilehash: 44e57e482c08b486563200010671b5c79329f7b2
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: JAMF Proを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする方法について説明します
+ms.openlocfilehash: bf15868b865afa80146df2b16199caf360a55ce2
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783823"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953429"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>JAMF Proを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする
 
-JAMF Proを使用して、macOS デバイスをエンドポイントデータ損失防止などのMicrosoft 365コンプライアンス ソリューションにオンボードできます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+JAMF Proを使用して、エンドポイントのデータ損失防止などの Microsoft Purview ソリューションに macOS デバイスをオンボードできます。
 
 > [!IMPORTANT]
 > macOS デバイスにMicrosoft Defender for Endpoint (MDE) が展開 ***されていない*** 場合は、次の手順を使用します。
 
 **適用対象:**
 
-- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [エンドポイントのデータ損失防止](./endpoint-dlp-learn-about.md)
+- [インサイダー リスク管理](insider-risk-management.md)
 
 ## <a name="before-you-begin"></a>はじめに
 
 - [macOS デバイスが JAMF pro を介して管理され、JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) ConnectまたはIntuneを介して ID (Azure AD参加している UPN) に関連付けられていることを確認します。
 - macOS デバイスに v95+ Edge ブラウザーをインストールする
 
-## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>JAMF Proを使用してデバイスをMicrosoft 365コンプライアンス ソリューションにオンボードする
+## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>JAMF Proを使用してデバイスを Microsoft Purview ソリューションにオンボードする
 
 1. この手順では、これらのファイルが必要です。
 

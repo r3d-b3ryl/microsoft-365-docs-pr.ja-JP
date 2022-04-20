@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Teamsのゲスト コラボレーションと共有チャネルの違いと、使用するチャネルを選択する方法について説明します。
-ms.openlocfilehash: 85eac4fb8315947e2bb8e088d31bb25a2cdeef5e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c1cf57aa2125638d9155c209d85360a5154b3606
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945259"
+ms.locfileid: "64953367"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>チャネル会話、ファイル コラボレーション、共有アプリを使用して外部コラボレーションを計画する
 
@@ -51,7 +51,7 @@ Microsoft 365には、組織外のユーザーと共同作業するためのい�
 
 組織外のユーザーとチームで共同作業する場合、それらのユーザーが共有するリソースにアクセスする方法には 2 つのオプションがあります。
 
-**ゲスト共有**
+### <a name="guest-sharing"></a>ゲスト共有
 
 ゲスト共有では、Azure AD B2B コラボレーションを使用して、各ユーザーのAzure ADにゲスト アカウントを追加することで、組織外のユーザーとの共有とコラボレーションを許可します。 ゲスト アカウントは、次の目的で使用できます。
 
@@ -60,7 +60,7 @@ Microsoft 365には、組織外のユーザーと共同作業するためのい�
 
 チームのゲストは、通常のチーム メンバーと同様の機能を持っています。
 
-**共有チャネルの外部参加者**
+### <a name="external-participants-in-shared-channels"></a>共有チャネルの外部参加者
 
 外部参加者は、独自のAzure ADまたはMicrosoft 365 ID を使用して組織内の共有リソースにアクセスします。 これは、Azure AD B2B 直接接続によって、両方の組織によって構成された組織関係を介して有効になります。 このリレーションシップでは、ゲスト アカウントは使用されません。
 
@@ -81,14 +81,15 @@ Microsoft 365には、組織外のユーザーと共同作業するためのい�
 |プライベート チャネルを使用する|Y|Y|N|
 |ディレクトリ内のアカウント|Y|Y|N|
 |アクセス レビュー|Y|Y|Y|
-            
+
 ## <a name="planning-considerations"></a>計画に関する考慮事項
 
-ほとんどの組織では、外部参加者とゲスト共有チャネルと共有チャネルの両方を使用します。 
+ほとんどの組織では、外部参加者とゲスト共有チャネルと共有チャネルの両方を使用します。
 
 ゲスト共有は、Azure ADとMicrosoft 365 (Teams、Microsoft 365 グループ、SharePoint) で既定で有効になっています。 これにより、ユーザーはチームやサイトにゲストを招待し、IT 部門からサポートを要求することなくファイルを共有できます。
 
 次の場合は、ゲスト共有を使用する必要があります。
+
 - 個々のチャネルではなく、組織外のユーザーをチームに招待する必要がある
 - チャネル内のファイルまたはフォルダーを、チャネルに含まれていない組織外のユーザーと共有する
 - 職場または学校アカウントを持っていない組織外のユーザーと共同作業する必要があります。
@@ -104,49 +105,48 @@ Teamsでは共有チャネルが既定でオンになっていますが、共有
 
 共有チャネルは、Microsoft Purview 機能と統合されています。
 
-##### <a name="communications-compliance"></a>通信コンプライアンス
+### <a name="communications-compliance"></a>通信コンプライアンス
 
 管理者は、チャネル内のすべてのユーザーのコンテンツを監視するポリシーを設定できます。 チャネル内のすべてのメッセージ コンテンツ (共有チャネルを含む) は、 [通信コンプライアンス ポリシー](/microsoft-365/compliance/communication-compliance)でカバーされます。 共有チャネルは、ホスト組織のポリシーを継承します。
 
-##### <a name="conditional-access"></a>条件付きアクセス
+### <a name="conditional-access"></a>条件付きアクセス
 
 ホスト組織の [条件付きアクセス ポリシー](/azure/active-directory/conditional-access/overview) は、B2B 直接接続ユーザーを含む外部参加者に適用されます。 外部組織のポリシーは使用されません。 共有チャネルでは、次の種類の条件付きアクセス ポリシーがサポートされています。
 
 - すべてのゲスト、外部参加者、SharePoint Online クラウド アプリに対してスコープが設定されているポリシー。
-- MFA、準拠デバイス、またはハイブリッド Azure AD参加しているデバイスを必要とするアクセス制御を付与します。 
+- MFA、準拠デバイス、またはハイブリッド Azure AD参加しているデバイスを必要とするアクセス制御を付与します。
 
 IP ベースのポリシーは、SharePoint ファイル レベルでサポートされます。 そのため、外部参加者は制限された場所から共有チャネルにアクセスできますが、ファイルを開こうとするとブロックされます。
 
-##### <a name="data-loss-prevention-dlp"></a>データ損失防止 (DLP)
+### <a name="data-loss-prevention-dlp"></a>データ損失防止 (DLP)
 
 管理者は、共有チャネルを含むすべてのチャネルがポリシーを継承するチームに [Microsoft Purview DLP ポリシー](/microsoft-365/compliance/dlp-policy-design) を適用できます。 共有チャネルは、ホスト組織のポリシーを継承します。
 
-##### <a name="retention-policy"></a>アイテム保持ポリシー
+### <a name="retention-policy"></a>アイテム保持ポリシー
 
 管理者は、共有チャネルを含むすべてのチャネルが [アイテム保持ポリシー](/microsoft-365/compliance/retention) を継承するチームにアイテム保持ポリシーを適用できます。 共有チャネルは、親チームのポリシーを継承します。
 
-##### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>秘密度ラベル
 
 ホスト組織で使用できる[秘密度ラベル](/microsoft-365/compliance/sensitivity-labels)は、共有チャネル サイトのドキュメントに適用できる唯一のラベルです。 秘密度ラベルによって暗号化されたファイルは、外部参加者が開くことはできません。 自動ラベル付けは使用されません。
 
 共有チャネルとそれに関連付けられているSharePoint サイトは、親チームからラベルを継承します。
 
-##### <a name="information-barriers"></a>情報バリア
+### <a name="information-barriers"></a>情報バリア
 
 [情報バリア](/microsoftteams/information-barriers-in-teams) ポリシーごとに通信を許可されていないユーザーは、共有チャネルに参加できません。 情報バリア ポリシーは、ホスト組織内のユーザーにのみ有効です。 ユーザーが別の組織の共有チャネルの外部参加者である場合、情報バリア ポリシーは適用されません。
 
-##### <a name="ediscovery"></a>電子情報開示
+### <a name="ediscovery"></a>電子情報開示
 
 管理者は、チャネル内のすべてのユーザーに対して検索を実行できます。 共有チャネルを含むすべてのチャネルは検出可能です。 だれがデータを追加したかに関係なく、チャネル内のすべてのメッセージ データは、コンプライアンス管理者が検出できます。
 
-##### <a name="legal-hold"></a>訴訟ホールド
+### <a name="legal-hold"></a>訴訟ホールド
 
 管理者は、ホスト組織のチャネルのみのメンバーを、チームの一部ではないメンバーを保留にすることができます。 [チーム全体を保留に](/MicrosoftTeams/legal-hold)することもできます。 管理者は、外部参加者を保留にすることはできません。
 
-##### <a name="audit-logs"></a>監査ログ
+### <a name="audit-logs"></a>監査ログ
 
 [既存の監査イベント](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)に対して実行されたすべてのアクションは、共有チャネルで監査されます。
-
 
 ## <a name="related-topics"></a>関連項目
 

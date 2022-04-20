@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Microsoft Purview コンプライアンス ポータルでコンテンツ検索を使用して、特定のメールボックスまたはサイト フォルダー内のアイテムを検索する対象のコレクションを実行します。
-ms.openlocfilehash: b01197ebc942b13f1b3806d2ad3b5a564b609098
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9638a0870f1d97d2bcea73215509d269576c4ecd
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947057"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991778"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>対象のコレクションにコンテンツ検索を使用する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルのコンテンツ検索ツールでは、EXCHANGE メールボックスまたはSharePoint サイトやOneDrive for Business サイト内の特定のフォルダーを検索するための直接の方法が UI に用意されていません。 ただし、実際の検索クエリ構文でサイトの電子メールまたはパス (DocumentLink) プロパティのフォルダー ID プロパティを指定することで、特定のフォルダー ( *ターゲット コレクション* と呼ばれる) を検索できます。 コンテンツ検索を使用して対象のコレクションを実行すると、ケースアイテムや特権アイテムに対応するアイテムが特定のメールボックスまたはサイト フォルダーに配置されていると確信できる場合に便利です。 この記事のスクリプトを使用して、メールボックス フォルダーのフォルダー ID、またはSharePointおよびOneDrive for Business サイト上のフォルダーのパス (DocumentLink) を取得できます。 次に、検索クエリのフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返すことができます。
 

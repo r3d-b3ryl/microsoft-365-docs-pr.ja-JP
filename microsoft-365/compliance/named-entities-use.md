@@ -1,5 +1,5 @@
 ---
-title: データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
+title: DLP ポリシーで名前付きエンティティを使用する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,30 +16,22 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: データ損失防止ポリシーで名前付きエンティティを利用するには、次の手順を使用します。
-ms.openlocfilehash: 9b3a8899ef4b64c682289e29df19648a00d4f048
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 108b21e7c5a6708a01a712dcd44788f489df0e73
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665164"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971585"
 ---
-# <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
+# <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>データ損失防止ポリシーで名前付きエンティティを使用する
 
-> [!IMPORTANT]
-> 名前付きエンティティ機能がロールアウトされ、テナントが使用可能になるとテナントに表示されます。 コンテンツ エクスプローラーとデータ損失防止 (DLP) ポリシー作成フローで確認します。 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-[名前付きエンティティの使用を開始する前に、名前付きエンティティ (プレビュー) について学習](named-entities-learn.md)してください。
+名前付きエンティティの使用を開始する前に、 [名前付きエンティティの詳細](named-entities-learn.md) を確認してください。
 
 ## <a name="before-you-begin"></a>はじめに
 
 ### <a name="skusubscriptions-licensing"></a>SKU /サブスクリプションライセンス
-
-これらのサブスクリプションのいずれかを持っている必要があります
-
-- Information Protectionとガバナンス
-- Microsoft 365 E5 Compliance 
-- Office 365 E5
-- Microsoft 365 E5
 
 完全なライセンスの詳細については、 [サービスの説明を](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)参照してください。
 
@@ -55,10 +47,10 @@ ms.locfileid: "64665164"
 - SharePoint サイト
 - OneDrive アカウント
 - Teams チャットおよびチャネル メッセージ
-- デバイス (Windows 10 エンドポイント デバイス)
+- デバイス (Windows 10、11 個のエンドポイント デバイス)
+- Exchange メールボックス
 
 名前付きエンティティの SIT と強化されたポリシーは、次ではサポートされていません。
-
 
 - オンプレミスのリポジトリ
 - Power BI
@@ -69,41 +61,42 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 
 ## <a name="workloads-and-services-that-support-named-entities"></a>名前付きエンティティをサポートするワークロードとサービス
 
-
-- **Microsoft 3655 電子情報開示** では、Entity サービスでの名前付きエンティティの使用がサポートされています。
-- **Microsoft Defender for Cloud Appsでは、** Defender for Cloud Apps ポリシーでの名前付きエンティティの使用がサポートされます。
+- **Microsoft 365電子情報開示** では、Entity サービスでの名前付きエンティティの使用がサポートされます。
+- **Microsoft Defender for Cloud Appsでは、** Defender for Cloud アプリ ポータルの Defender for Cloud Apps ポリシーでの名前付きエンティティの使用がサポートされます。
 - **Insider Risk Management** では、Entity サービスでの名前付きエンティティの使用がサポートされています。
+- **レコード管理** では、名前付きエンティティの使用がサポートされます。
+- **厳密なデータ一致の機密情報の種類** では、名前付きエンティティの使用がサポートされます。
 <!--- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
 - **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
  
 ### <a name="unified-dlp"></a>統合 DLP
 
-|ワークロード/サービス  |名前付きエンティティのパブリック プレビューのサポート  |
+|ワークロード/サービス  |名前付きエンティティのサポート  |
 |---------|---------|
-|Office Win32 クライアント ポリシー ヒント    |サポートなし  |
-|Office WAC クライアント ポリシー ヒント    |されていません         |
-|OWA ポリシーのヒント     |サポートなし         |
-|Outlook ポリシーヒント     |サポートなし |
-|エンドポイント (Windows 10 デバイス)     |されていません  |
-|Exchange トランスポート ルール     |サポートなし |
-|保存データをOneDrive for Businessする     |されていません         |
-|SharePoint Online data-at-rest     |されていません         |
-|保存データをTeamsする     |されていません         |
-|電子メール メッセージの保存時データ     |サポートなし         |
-|Microsoft Defender for Cloud Apps     |されていません         |
+|Office Win32 クライアント ポリシー ヒント    |サポート対象外  |
+|Office WAC クライアント ポリシー ヒント    |サポート         |
+|OWA ポリシーのヒント     |サポート対象外         |
+|Outlook ポリシーヒント     |サポート対象外 |
+|エンドポイント (Windows 10、11 台のデバイス)     |サポート  |
+|Exchange トランスポート ルール     |サポート |
+|保存データをOneDrive for Businessする     |サポート         |
+|SharePoint Online data-at-rest     |サポート         |
+|保存データをTeamsする     |サポート         |
+|電子メール メッセージの保存時データ     |プライバシー サービス プランを使用するテナントでサポートされている         |
+|Microsoft Defender for Cloud Apps     |サポートされる         |
 
 ### <a name="autolabeling"></a>自動ラベル付け
 
-|ワークロード/サービス |名前付きエンティティのパブリック プレビューのサポート  |
+|ワークロード/サービス |名前付きエンティティのサポート  |
 |---------|---------|
-|Office Win32 クライアントをオフラインにする   |サポートされている場合、ユーザーはラベルを選択し、手動で適用する必要があります |
+|Office Win32 クライアントをオフラインにする   |サポートされている、ユーザーはラベルを選択し、手動で適用する必要があります |
 |オンライン Office Win32 クライアントオンライン|以前の信頼スキームでサポートされている |
 |オンラインでOutlookする   |以前の信頼スキームでサポートされている  |
-|WAC クライアントOffice     |されていません |
-|OWA     |サポート対象 |
-|Exchangeトランスポート     |サポートなし |
-|保存データをOneDrive for Businessする     |されていません |
-|SharePoint Online data-at-rest|されていません|
+|WAC クライアントOffice     |サポートされている |
+|OWA     |サポートされている |
+|Exchangeトランスポート     |サポートされている |
+|保存データをOneDrive for Businessする     |サポート |
+|SharePoint Online data-at-rest|サポート|
 |Azure Information Protection (AIP) スキャナー|サポートなし|
 
 ## <a name="known-issues"></a>既知の問題
@@ -113,11 +106,31 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 |DLP ポリシーのヒント (OWA、Outlook、Office Win32 クライアント)     |   エンティティの条件を含むポリシー ヒントは、"一致しない" 結果になります      |
 | 人名のアジア言語サポート (中国語、日本語、韓国語)    | 人物名のラテン語ベースの文字セットでのみサポートされている名前付きエンティティ (つまり、漢字はサポートされていません)        |
 |オンプレミスのリポジトリ    | ワークロードとしてサポートされていません|
+|Power BI (プレビュー) | サポート対象外
 
 <!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
 
+## <a name="best-practices-for-using-named-entity-sits"></a>名前付きエンティティ SIT を使用するためのベスト プラクティス
+
+名前付きエンティティ SIT を使用するポリシーを作成または編集するときに使用できるいくつかのプラクティスを次に示します。
+
+- スプレッドシート内のデータを探すときに低いインスタンス数 (3 から 5) を使用し、そのデータに SIT で必要なキーワードは列ヘッダーにのみ含まれます。 たとえば、米国社会保障番号を探していて、キーワード `Social Security Number` は列ヘッダーでのみ発生するとします。 値 (裏付けとなる証拠) は下のセルにあるため、最初の少数のインスタンスのみが検出されるキーワードに十分近い可能性があります。  
+
+- 名前付きエンティティ SIT (All Full Names など) を使用して米国社会保障番号を見つけるのに役立つ場合は、10 や 50 などのより大きなインスタンス数を使用します。 その後、人物名と SAN の両方が一緒に検出されると、真の陽性が得られる可能性が高くなります。
+
+- [自動ラベル付けシミュレーションを](apply-sensitivity-label-automatically.md#learn-about-simulation-mode)使用して、名前付きエンティティ SIT の精度をテストできます。 名前付きエンティティ SIT を使用してシミュレーションを実行し、ポリシーに一致する項目を確認します。 この情報を使用すると、カスタム ポリシーまたは強化されたテンプレート条件でインスタンス数と信頼レベルを調整することで、精度を微調整できます。 運用環境で名前付きエンティティを含む DLP ポリシーまたは自動ラベル付けポリシーをデプロイする前に、シミュレーションを精度が目的の場所になるまで反復処理できます。 フローの概要を次に示します。
+
+1. シミュレーション モードでテストする SIT または SIT の組み合わせを特定します (カスタムまたは複製、編集)。
+1. 自動ラベル付けポリシーで、Exchange、SharePoint サイト、またはOneDrive アカウントで一致するものが見つかると、適用する秘密度ラベルを特定または作成します。
+1. 手順 1 の SIT を使用し、DLP ポリシーで使用されるのと同じ条件と例外を使用する秘密度自動ラベル付けポリシーを作成する
+1. ポリシー シミュレーションを実行する
+1. 結果を表示する
+1. 偽陽性を減らすには、SIT またはポリシーとインスタンス数と信頼レベルを調整します。
+1. 目的の精度の結果が得られるまで繰り返します。
+
+
 ## <a name="for-further-information"></a>詳細については、次の情報を参照してください。
-<!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->
-- [名前付きエンティティ (プレビュー) について説明](named-entities-learn.md)します。
+- [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
+- [名前付きエンティティについて説明します](named-entities-learn.md)。
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [テンプレートからの DLP ポリシーの作成](create-a-dlp-policy-from-a-template.md)

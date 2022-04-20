@@ -8,11 +8,11 @@
   items:
     - name: テスト ベース アカウントの作成
       href: createAccount.md
-    - name: Test Base でアプリケーションをテストする
+    - name: テスト ベースでアプリケーションをテストする
       items:
         - name: 概要
           href: testoverview.md
-        - name: テスト ベースでのテスト バイナリ パッケージ
+        - name: テスト ベースでバイナリ ファイルをテストする
           href: testapplication.md
         - name: Test Base でIntune アプリをテストする
           href: testintuneapplication.md

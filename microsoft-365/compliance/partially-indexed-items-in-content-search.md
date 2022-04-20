@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Microsoft Purview コンプライアンス ポータルで実行する電子情報開示検索に含めることができるExchangeとSharePointのインデックスのない項目について説明します。
-ms.openlocfilehash: 3e4f9521151755f97f3ad4b824c763f3ab5d807f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b88e7d0f6651ecaa31849343db066295af1f5e84
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932047"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993098"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックスが作成されたアイテム
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルから実行する Microsoft Purview 電子情報開示検索では、検索を実行すると、推定検索結果に部分的にインデックスが付けられたアイテムが自動的に含まれます。 部分的にインデックスが作成されたアイテムは、SharePoint サイトとOneDrive for Business サイト上のメールボックス アイテムとドキュメントExchangeであり、何らかの理由で検索用に完全にインデックスが作成されませんでした。 Exchangeでは、通常、部分的にインデックスが作成されたアイテムには、電子メール メッセージに添付されているファイル (インデックスを作成できないファイルの種類) が含まれます。 電子情報開示検索を実行すると、アイテムにインデックスを作成できず、部分的にインデックスが作成されたアイテムとして返されるその他の理由を次に示します。
   

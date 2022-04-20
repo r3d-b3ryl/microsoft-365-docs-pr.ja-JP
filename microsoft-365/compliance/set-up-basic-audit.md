@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、組織内のユーザーと管理者が実行する監査アクティビティの検索を開始できるように、監査 (Standard) を設定する方法について説明します。
-ms.openlocfilehash: 93245abfc4f57b22d6db715103f93428487a648d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 15e72d1b2899799f432cdc717352cf53a0a370e4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936051"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993734"
 ---
 # <a name="set-up-microsoft-purview-audit-standard"></a>Microsoft Purview 監査を設定する (Standard)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365の Microsoft Purview Audit (Standard) を使用すると、ユーザーと管理者がさまざまなMicrosoft 365 サービスで実行されたアクティビティの監査レコードを検索できます。 監査 (Standard) は、ほとんどのMicrosoft 365およびOffice 365組織で既定で有効になっているため、組織内の他のユーザーが監査ログを検索する前に行う必要があるのはごくわずかです。
 

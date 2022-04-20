@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 予測スコア フィルターを使用して、予測コーディング モデルが関連性として予測された項目または関連性のない項目を表示します。
-ms.openlocfilehash: 261c77031eb0831db11878c2ce0c573eb3b9db6e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ab97c91196456b69f7f420ccd317747f638b4ee5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942295"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993076"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>レビュー セットに予測スコア フィルターを適用する (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) で予測コーディング モデルを作成し、それが安定しているポイントまでトレーニングした後、予測スコア フィルターを適用して、モデルが関連すると判断したレビュー セットアイテム (または関連なし) を表示できます。 モデルを作成すると、対応する予測スコア フィルターも作成されます。 このフィルターを使用すると、指定した範囲内で予測スコアが割り当てられた項目を表示できます。 一般に、 **0** から **.5** の間の予測スコアは、モデルが予測した項目に割り当てられます。 **.5** から **1.0** の間で予測スコアが割り当てられた項目は、モデルが予測した項目が関連します。
 

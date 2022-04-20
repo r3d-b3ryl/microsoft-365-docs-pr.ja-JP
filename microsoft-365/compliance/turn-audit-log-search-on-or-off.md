@@ -20,14 +20,16 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Microsoft Purview コンプライアンス ポータルで監査ログ検索機能をオンまたはオフにして、管理者が監査ログを検索する機能を有効または無効にする方法。
-ms.openlocfilehash: 587c7f98cd04eef618508e096f290d1d299ec096
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e74effad1803b9a55167d1cd3bb5725bd042616a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944527"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991822"
 ---
 # <a name="turn-auditing-on-or-off"></a>監査のオンとオフを切り替える
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 監査ログは、Microsoft 365およびOffice 365エンタープライズ組織に対して既定で有効になります。 ただし、新しいMicrosoft 365またはOffice 365組織を設定する場合は、組織の監査状態を確認する必要があります。 手順については、この記事の「 [組織の監査状態を確認する](#verify-the-auditing-status-for-your-organization) 」セクションを参照してください。 
 

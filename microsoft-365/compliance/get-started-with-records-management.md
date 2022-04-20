@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツを管理する、Microsoft 365 向けのレコード管理ソリューションが必要であるのに、どこから開始すればいいかわからなくなっていませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 02c16f9d1a9d42f59cf8bc27bdee38bcc2d10d73
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: e73cb1a118235082978ee93efcdb77f5e5135f8c
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911392"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971475"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
@@ -44,21 +46,19 @@ Microsoft 365 のレコード管理ソリューションを使用して、組織
     - [アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)
     - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
 
-これらの手順とは別に、**コネクタを使用してソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームなどのサードパーティ データ** を、インポートしてアーカイブします。 このデータをオンライン メールボックスにインポートすると、Microsoft 365 コンプライアンスの記録管理だけでなく、コミュニケーション コンプライアンス、インサイダー リスクの管理、電子情報開示などの他のコンプライアンス ソリューションもサポートします。 詳細については、「[サードパーティ データのコネクタの詳細](archiving-third-party-data.md)」を参照してください。
-
 ## <a name="subscription-and-licensing-requirements"></a>サブスクリプションとライセンス要件
 
 レコード管理はさまざまな異なるサブスクリプションに対応しており、ユーザーのライセンス要件は使用する機能によって異なります。
 
-Microsoft 365 コンプライアンス機能のメリットを得られるようにユーザーにライセンスを付与するためのオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。 レコード管理については、「[レコード管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)」セクション、および機能レベルのライセンス要件に関する PDF ダウンロード ファイルを参照してください。
+Microsoft Purview 機能のメリットを得られるようにユーザーにライセンスを付与するためのオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。 レコード管理については、「[Microsoft Purview のレコード管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management)」セクション、および機能レベルのライセンス要件に関する PDF ダウンロード ファイルを参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
-レコード管理を担当するコンプライアンス チームのメンバーには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>へのアクセス許可が必要です。既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、テナント管理者のすべてのアクセス許可を与えることなく、コンプライアンス責任者やその他のユーザーにアクセス権を付与できます。この制限された管理用にアクセス権を付与するには、[処理確認と検証](disposition.md)など、レコード管理に関するすべての機能に対するアクセス許可を付与する **[レコード管理]** の管理者役割グループにユーザーを追加することをお勧めします。
+レコード管理を担当するコンプライアンス チームのメンバーには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>へのアクセス許可が必要です。 既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、テナント管理者のすべてのアクセス許可を与えることなく、コンプライアンス責任者やその他のユーザーにアクセス権を付与できます。この制限された管理用にアクセス権を付与するには、[処理確認と検証](disposition.md)など、レコード管理に関するすべての機能に対するアクセス許可を付与する **[レコード管理]** の管理者役割グループにユーザーを追加することをお勧めします。
 
 読み取り専用の役割の場合は、新しい役割グループを作成し、このグループに **閲覧限定レコード管理** の役割を追加することができます。
 
-ユーザーを既定の役割に追加する手順、または独自の役割グループを作成する手順については、「[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
+ユーザーを既定の役割に追加する手順、または独自の役割グループを作成する手順については、「[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
 
 これらの権限は、レコードを宣言し、処理を管理する保持ラベルを作成、構成、適用するためにのみ必要です。 保持ラベルを構成するユーザーは、コンテンツへのアクセスを必要としません。
 
@@ -67,7 +67,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 次の表は、レコード管理でサポートされているシナリオにビジネス要件をマッピングするのに役立ちます。
 
 > [!TIP]
-> 特定の業界規制に準拠する必要がある場合 規制に特化したガイダンスについては、「[情報ガバナンスおよびレコード管理の規制要件を満たすために役立つリソース](retention-regulatory-requirements.md)」を確認してください。
+> 特定の業界規制に準拠する必要がある場合 規制に特化したガイダンスについては、「[データ ライフサイクル管理およびレコード管理の規制要件](retention-regulatory-requirements.md)」を確認してください。
 
 |必要な作業...|ドキュメント|
 |----------------|---------------|

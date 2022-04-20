@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 電子情報開示 (プレミアム) でMicrosoft Teamsからコンテンツを保持、収集、確認、エクスポートする方法について説明します。
-ms.openlocfilehash: 21f6149d8a1c1114ab0d2d293af710690f74c6e5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4dc516037e1ccad41c7ed93f280d698ca6bd164c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948399"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991910"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Microsoft Teams内のコンテンツの電子情報開示 (プレミアム) ワークフロー
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、Microsoft Purview 電子情報開示 (プレミアム) を使用して、Microsoft Teamsからコンテンツを保持、収集、確認、エクスポートするための包括的な手順、ガイドライン、ベスト プラクティスについて説明します。 この記事の目的は、Teams コンテンツの電子情報開示ワークフローを最適化することです。
 
@@ -301,7 +303,7 @@ Teamsチャット会話のコンテンツがレビュー セットに追加さ�
 
 ## <a name="deleting-teams-chat-messages"></a>Teamsチャット メッセージを削除する
 
-Advanced eDiscoveryと Microsoft Graph エクスプローラーを使用して、機密情報や悪意のある情報を含むコンテンツがチャット メッセージを通じてリリースされた場合に、データ流出のインシデントに対応Teams。 組織内の管理者は、Microsoft Teamsでチャット メッセージを検索および削除できます。 これにより、チャット メッセージ内の機密情報や不適切なコンテンツTeams削除できます。 詳細については、「[Teamsでのチャット メッセージの検索と消去](search-and-delete-Teams-chat-messages.md)」を参照してください。
+電子情報開示 (プレミアム) と Microsoft Graph エクスプローラーを使用して、機密情報や悪意のある情報を含むコンテンツがチャット メッセージを通じてリリースされたときに、データ流出インシデントに対応Teams。 組織内の管理者は、Microsoft Teamsでチャット メッセージを検索および削除できます。 これにより、チャット メッセージ内の機密情報や不適切なコンテンツTeams削除できます。 詳細については、「[Teamsでのチャット メッセージの検索と消去](search-and-delete-Teams-chat-messages.md)」を参照してください。
 
 ## <a name="reference-guide"></a>リファレンス ガイド
 

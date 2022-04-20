@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は TeleMessage コネクタを設定して、ベル ネットワークから SMS と MMS のデータをインポートおよびアーカイブできます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: ad1426d6e0aa52a23719d024e4cad649baad3db4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dc23e3788958270712bab493cd0364a80a0377f9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937259"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992790"
 ---
 # <a name="set-up-a-connector-to-archive-bell-network-data"></a>ベル ネットワーク データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの TeleMessage コネクタを使用して、ベル ネットワークからショート メッセージング サービス (SMS) メッセージとマルチメディア メッセージング サービス (MMS) メッセージをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織のベル ネットワークに毎日 1 回接続され、SMS メッセージと MMS メッセージがMicrosoft 365のメールボックスにインポートされます。
 

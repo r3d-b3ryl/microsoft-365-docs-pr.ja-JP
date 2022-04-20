@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 保管担当者が電子情報開示 (プレミアム) ケースに追加されると、部分的にインデックスが作成されたと見なされたすべてのコンテンツが再処理され、完全に検索可能になります。
-ms.openlocfilehash: 3c6f0079f87dbc4711fed7d776204c287d5b5865
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8b7dbbb13b9a667a7b5a50a5535634414c0caec5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931987"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993624"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>カストディアン データの詳細なインデックス処理
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 カストディアンが電子情報開示 (プレミアム) ケースに追加されると、部分的にインデックスが作成された、またはインデックス作成エラーが発生したと見なされたコンテンツは、インデックスが再作成されます。 このインデックス再作成プロセスは *、高度なインデックス作成* と呼ばれます。 コンテンツが部分的にインデックス付けされているか、インデックス作成エラーが発生する理由は多数あります。 これには、イメージ ファイル、ファイル内のイメージの存在、サポートされていないファイルの種類、ファイル サイズのインデックス作成の制限が含まれます。 SharePoint ファイルの場合、項目に対してのみ実行される高度なインデックス作成は、部分的にインデックス付けされているか、インデックス作成エラーがある項目としてマークされます。 Exchangeでは、画像の添付ファイルを含む電子メール メッセージは、部分的にインデックス付けまたはインデックス作成エラーとしてマークされません。 つまり、これらのファイルは高度なインデックス作成プロセスによってインデックスが再作成されません。
 

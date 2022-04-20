@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas のシンフォニーからMicrosoft 365にデータをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
-ms.openlocfilehash: 119d5b34d32cd193d4ab5e89d6e435c3fc24a574
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dbff83ca244ca24fdd1a42f0929ec3e43f84b4d1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938557"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992350"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>コネクタを設定して、シンフォニー データをアーカイブする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、Microsoft 365組織内のユーザー メールボックスに対して、シンフォニー データをインポートしてアーカイブします。 シンフォニーは、金融サービス業界で使用されるメッセージングおよびコラボレーション プラットフォームです。 Veritas はコンプライアンス ポータルに、(定期的に) サード パーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをユーザー メールボックスにインポートするように構成できる [、シンフォニー](https://globanet.com/symphony) データ コネクタを提供します。 コネクタは、アイテムのコンテンツをシンフォニー アカウントから電子メール メッセージ形式に変換し、アイテムをMicrosoft 365のメールボックスにインポートします。
 

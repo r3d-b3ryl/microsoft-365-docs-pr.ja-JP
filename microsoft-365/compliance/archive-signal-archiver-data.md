@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Microsoft 365で Signal 通信データをインポートおよびアーカイブする TeleMessage コネクタを設定できます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 3dc2e2cd194f7aa82acc42f806605a682465a684
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5e075b643cf4e9ba339f1f30f968f935336c07c3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943999"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992636"
 ---
 # <a name="set-up-a-connector-to-archive-signal-communications-data"></a>シグナル通信データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの TeleMessage コネクタを使用して、Signal チャット、添付ファイル、ファイル、削除されたメッセージと通話をインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の TeleMessage アカウントに接続し、TeleMessage Signal Archiver を使用して従業員のモバイル通信をMicrosoft 365のメールボックスにインポートします。
 

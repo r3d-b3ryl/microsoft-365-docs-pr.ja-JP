@@ -19,19 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Office 365の電子情報開示ツールを使用して実行される検索で、推定検索結果と実際の検索結果が異なる可能性がある理由を理解します。
-ms.openlocfilehash: b1e4ba4938e418d8364dfb06b24b6f7a58d6a463
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a71b246b71e7b3cca3ef361510042b6292c36c8b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938161"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993954"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>推定電子情報開示検索結果と実際の電子情報開示検索結果の違い
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事は、次のMicrosoft 365電子情報開示ツールのいずれかを使用して実行できる検索に適用されます。 
 
 - コンテンツ検索
-- 電子情報開示 (Standard)
+- 電子情報開示 (標準)
 
 電子情報開示検索を実行すると、使用しているツールによって、検索条件に一致するアイテムの数 (およびその合計サイズ) の見積もりが返されます。 たとえば、Microsoft Purview コンプライアンス ポータルで検索を実行すると、選択した検索のポップアップ ページに推定検索結果が表示されます。
   

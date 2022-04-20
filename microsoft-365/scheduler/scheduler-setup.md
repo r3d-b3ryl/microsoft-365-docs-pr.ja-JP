@@ -1,5 +1,5 @@
 ---
-title: スケジューラの設定 Microsoft 365。
+title: Microsoft 365用の Scheduler を設定します。
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -7,48 +7,49 @@ audience: Admin
 ms.topic: article
 ms.service: scheduler
 ms.localizationpriority: medium
-description: スケジューラの設定 Microsoft 365。
-ms.openlocfilehash: 3315c362a6e6ae1eb4fa9bf54d388a89dd667136
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft 365用の Scheduler を設定します。
+ms.openlocfilehash: ef377393134e4d8028ab0e6e40ddcc3647f60695
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208039"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953850"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Scheduler for Microsoft 365 を設定する
 
-テナント管理者は、スケジューラ アシスタント メールボックスをセットアップし、会議開催者のスケジューラ ライセンスを取得して、スケジューラ for Microsoft 365必要があります。 
+テナント管理者は、スケジューラ アシスタント メールボックスを設定し、会議開催者の Scheduler ライセンスを取得して、Microsoft 365 サービスの Scheduler を有効にする必要があります。 
 
 ## <a name="licensing"></a>ライセンス
 
-詳細:[ライセンスのスケジューラMicrosoft 365する](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing)
+詳細情報: [Microsoft 365 ライセンス用スケジューラ](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing)
 
-> [!Note]
-> 会議の出席者は、スケジューラ ライセンスまたは会議出席許可Microsoft 365必要ではありません。 <br>スケジューラ アシスタント メールボックスには、スケジューラ ライセンスまたはスケジューラ Microsoft 365は必要とされません。
+> [!NOTE]
+> 会議の出席者には、スケジューラまたはMicrosoft 365ライセンスは必要ありません。
+>
+> Scheduler アシスタント メールボックスには、Microsoft 365または Scheduler ライセンスは必要ありません。
 
 ## <a name="prerequisites"></a>前提条件
 
-| 前提条件 | 説明 |
-|-------------------|-------------|
-|テナントのスケジューラ アシスタント メールボックス |テナントExchangeを送受信するスケジューラ アシスタント メールボックスとして機能する、デバイスタイプのリソース メールボックスCortana。 ユーザーに送信Cortanaメールは、保持ポリシーに基づいてCortanaのメールボックスに保持されます。 スケジューラ アシスタント メールボックスは、通常、アシスタントからのすべての電子メールに署名Cortana または "Cortana スケジューラ" という名前が付Cortana。<ul><li>リソース メールボックスの備品Exchange作成する</li><li>メールボックスの表示名とプライマリ SMTP アドレスの名前を `Cortana <cortana@yourdomain.com>` 指定します `Cortana Scheduler <cortana.scheduler@yourdomain.com>` 。</li></ul>**注:** スケジューラ アシスタント メールボックスには、スケジューラ ライセンスまたはスケジューラ Microsoft 365は必要とされません。|
-|Exchange Online メールボックス |会議の開催者は、通常、Exchange Onlineライセンスの一部として、メールボックスと予定表をMicrosoft 365必要があります。 さらに、会議の開催者はスケジューラ ライセンスを持っている必要があります。 スケジューラ ライセンスを使用すると、スケジューラ アシスタントは会議開催者のメールボックスと予定表を使用して会議をスケジュールできます。<br/><br/> ライセンスと価格情報についてはMicrosoft 365スケジューラを参照してください。  <br/><br/>**注:** 会議の出席者は、スケジューラ ライセンスまたは会議出席許可Microsoft 365必要ではありません。 会議の出席者は、テナントの内部または外部にできます。 会議の出席者は、電子メール アドレスへのアクセスのみを必要とします。|
+|前提条件|説明|
+|---|---|
+|テナントのスケジューラ アシスタント メールボックス |Cortanaとの間で電子メールを送受信するテナントのスケジューラ アシスタント メールボックスとして機能する、Exchange機器の種類のリソース メールボックス。 Cortanaに送信されたすべてのメールは、アイテム保持ポリシーに基づいてテナントのCortanaメールボックスに保持されます。 スケジューラ アシスタント メールボックスは通常、"Cortana" または "Cortana Scheduler" という名前になります。これは、アシスタントからのすべての電子メールがCortana署名されるためです。 <ul><li>リソース メールボックスExchange機器の種類を作成する</li><li>メールボックスの表示名とプライマリ SMTP アドレス`Cortana <cortana@yourdomain.com>`に名前を付けるか、 .`Cortana Scheduler <cortana.scheduler@yourdomain.com>`</li></ul> <br/> **メモ：** Scheduler アシスタント メールボックスには、Microsoft 365または Scheduler ライセンスは必要ありません。|
+|Exchange Online メールボックス |会議の開催者は、通常、Microsoft 365 ライセンスの一部としてExchange Onlineメールボックスと予定表を持っている必要があります。 さらに、会議の開催者には Scheduler ライセンスが必要です。 Scheduler ライセンスを使用すると、スケジューラ アシスタントは会議の開催者のメールボックスと予定表を使用して会議をスケジュールできます。 <br/><br/> ライセンスと価格に関する情報については、Microsoft 365のスケジューラに関するページを参照してください。 <br/><br/> **メモ：** 会議の出席者には、スケジューラまたはMicrosoft 365ライセンスは必要ありません。 会議の出席者は、テナントの内部または外部にすることができます。 会議出席者は、電子メール アドレスへのアクセスのみを必要とします。|
 
+## <a name="setting-up-the-scheduler-assistant-mailbox"></a>スケジューラ アシスタント メールボックスを設定する
 
-## <a name="setting-up-the-scheduler-assistant-mailbox"></a>スケジューラ アシスタント メールボックスのセットアップ
+スケジューラ アシスタント メールボックスは、追加のMicrosoft 365または Scheduler ライセンスを必要としないExchange機器の種類のメールボックスです。 スケジューラ アシスタントからのメールはすべてCortana署名されるため、メールボックスの表示名とプライマリ SMTP アドレスにはCortanaが含まれている必要があります (つまり)。 `Cortana <cortana@yourdomain.com>` `Cortana Scheduler <cortana.scheduler@yourdomain.com>` スケジューラ アシスタント メールボックスが作成されたら、そのメールボックスをスケジューラ アシスタント メールボックスとして指定する必要があります。 Scheduler アシスタント メールボックスを指定すると、ユーザーに代わって会議をスケジュールできるCortanaが表示されます。
 
-スケジューラ アシスタント メールボックスは、Exchangeまたはスケジューラ ライセンスを必要としない、Microsoft 365種類のメールボックスです。 スケジューラ アシスタントからのすべての電子メールは Cortana (つまり、または) に署名されますので、メールボックスの表示名とプライマリ SMTP アドレスに Cortana が含まれている必要 `Cortana <cortana@yourdomain.com>` があります `Cortana Scheduler <cortana.scheduler@yourdomain.com>` 。 スケジューラ アシスタント メールボックスを作成したら、そのメールボックスをスケジューラ アシスタント メールボックスとして指定する必要があります。 スケジューラ アシスタント メールボックスを指定すると、Cortanaに代わって会議をスケジュールすることができます。
+- Microsoft 365 管理センターを使用して、ユーザー メールボックスを作成します。 30 日間のアイテム保持ポリシーをお勧めします。 
+- メールボックスのプライマリ SMTP アドレスにCortana名前を使用します。 `Cortana@yourdomain.com`などの名前をお`CortanaScheduler@contoso.com``Cortana.Scheduler@yourdomain.com`勧めします。
 
-- ユーザー メールボックスをMicrosoft 365 管理センターするには、ユーザー メールボックスを使用します。 30 日間の保持ポリシーをお勧めします。 
-- メールボックスのプライマリ SMTP Cortanaの名前を使用します。 などの名前 `Cortana@yourdomain.com` `CortanaScheduler@contoso.com` 、、または `Cortana.Scheduler@yourdomain.com` 推奨される名前。
+## <a name="designate-the-mailbox-as-the-scheduler-assistant"></a>スケジューラ アシスタントとしてメールボックスを指定する
 
-## <a name="designate-the-mailbox-as-the-scheduler-assistant"></a>メールボックスをスケジューラ アシスタントとして指定する
+Cortana Scheduler の一意のメールボックスが作成されたら、正式にMicrosoft 365するメールボックスを指定する必要があります。 Cortana Scheduler メールボックスを指定すると、ユーザーに代わって会議をスケジュールできます。
 
-スケジューラの一意のメールボックスCortanaした後、メールボックスを正式に作成Microsoft 365必要があります。 スケジューラ メールボックスを指定Cortana、ユーザーに代わって会議をスケジュールできます。
+### <a name="connect-to-powershell"></a>PowerShell へのConnect
 
-#### <a name="connect-to-powershell"></a>Connect PowerShell へのアクセス
-
-ユーザー メールボックスをMicrosoft 365 管理センターするには、ユーザー メールボックスを使用します。 30 日間の保持ポリシーをお勧めします。
-メールボックスのプライマリ SMTP Cortanaの名前を使用します。 などの名前 `Cortana@yourdomain.com` `CortanaScheduler@contoso.com` 、、または `Cortana.Scheduler@yourdomain.com` 推奨される名前。
+Microsoft 365 管理センターを使用して、ユーザー メールボックスを作成します。 30 日間のアイテム保持ポリシーをお勧めします。
+メールボックスのプライマリ SMTP アドレスにCortana名前を使用します。 `Cortana@yourdomain.com`などの名前をお`CortanaScheduler@contoso.com``Cortana.Scheduler@yourdomain.com`勧めします。
 
 ```PowerShell
 $domain="yourdomain.com"
@@ -57,27 +58,27 @@ Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $tenantAdmin
 ```
 
-#### <a name="create-the-scheduler-assistant-mailbox"></a>スケジューラ アシスタント メールボックスの作成
+### <a name="create-the-scheduler-assistant-mailbox"></a>スケジューラ アシスタント メールボックスを作成する
 
 ```PowerShell
 New-Mailbox -Name Cortana -Organization $domain -DisplayName "Cortana Scheduler" -Equipment 
 Set-CalendarProcessing Cortana@$domain -DeleteNonCalendarItems $false 
 ```
-    
-#### <a name="designate-the-scheduler-assistant-mailbox"></a>スケジューラ アシスタント メールボックスの指定
+
+### <a name="designate-the-scheduler-assistant-mailbox"></a>スケジューラ アシスタント メールボックスを指定する
 
 ```PowerShell
 Set-mailbox cortana@$domain -SchedulerAssistant:$true
 ```
 
-Cortana スケジューラ アシスタント メールボックスでこの "set" コマンドを実行すると、このメールボックスが "SchedulerAssistant" である点に注意する新しい "PersistedCapability" がメールボックスに設定されます。
+Cortana Scheduler アシスタント メールボックスでこの "set" コマンドを実行した後、メールボックスに新しい "PersistedCapability" が設定され、このメールボックスが "SchedulerAssistant" であることに注意してください。
 
-> [!Note]
-> 組織を PowerShell に接続する方法については、「PowerShell を使用して組織[Connect Microsoft 365」を参照してください。](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
+> [!NOTE]
+> 組織を PowerShell に接続する方法については、「PowerShell で[Microsoft 365するConnect](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)」を参照してください。
 
-### <a name="verifying-the-scheduler-assistant-mailbox"></a>スケジューラ アシスタント メールボックスの確認
+### <a name="verifying-the-scheduler-assistant-mailbox"></a>Scheduler アシスタント メールボックスの確認
 
-スケジューラ アシスタント メールボックスが作成されたを確認するには
+Scheduler アシスタント メールボックスが作成されたことを確認するには
 
 ```PowerShell
 Get-CalendarProcessing cortana@$domain | fl DeleteNonCalendarItems
@@ -85,47 +86,43 @@ Get-CalendarProcessing cortana@$domain | fl DeleteNonCalendarItems
 
 結果は "false" である必要があります。
 
-<br>
-
 ```PowerShell
 Get-Mailbox -Identity cortana@$domain | fl *type*
 ```
 
-結果は次の値になります。
-- ResourceType: 機器
-- リモート RecipientType: なし
+結果は次のようになります。
+
+- ResourceType: Equipment
+- Remote RecipientType: None
 - RecipientType: UserMailbox
 - RecipientTypeDetails: EquipmentMailbox
 
-<br/>
-
-### <a name="to-discover-which-mailbox-is-the-scheduler-assistant-mailbox"></a>スケジューラ アシスタント メールボックスがどのメールボックスか確認するには
+### <a name="to-discover-which-mailbox-is-the-scheduler-assistant-mailbox"></a>スケジューラ アシスタント メールボックスであるメールボックスを検出するには
 
 ```PowerShell
 Get-Mailbox -ResultSize Unlimited | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 ```
 
-> [!Important]
-> スケジューラ アシスタント メールボックスが完全なプロビジョニングを完了して SchedulerAssistant 機能を設定するには、数時間かかる場合があります。
-
+> [!IMPORTANT]
+> SchedulerAssistant 機能を設定するには、Scheduler アシスタント メールボックスが完全なプロビジョニングを完了するまでに数時間かかる場合があります。
 
 ## <a name="exchange-online-mailbox"></a>Exchange Online メールボックス
 
-スケジューラ ライセンスは、会議の開催者が会議のスケジュール タスクをスケジューラ アシスタントに委任できる、Microsoft 365のアドオンです。 会議開催者には、スケジューラ アシスタント メールボックスとしてメールボックスを指定する以外に、スケジューラ ライセンスと Exchange Online メールボックスと予定表が必要です。通常はスケジューラの Microsoft 365 ライセンスを使用して動作します。 会議の出席者には、スケジューラ ライセンスまたはユーザー ライセンスはMicrosoft 365ではありません。
+スケジューラ ライセンスは、会議の開催者が自分のスケジューラ アシスタントに会議のスケジュール タスクを委任できる、Microsoft 365のアドオンです。 会議の開催者は、スケジューラ アシスタント メールボックスとしてメールボックスを指定するだけでなく、スケジューラ のライセンスとExchange Onlineメールボックスと予定表 (通常は Scheduler が機能するためのMicrosoft 365 ライセンス) も必要になります。 会議出席者には、Scheduler ライセンスやMicrosoft 365 ライセンスは必要ありません。
 
-スケジューラ アドオンを購入するには、次のいずれかのライセンスが必要です。
+Scheduler アドオンを購入するには、次のいずれかのライセンスが必要です。
 
 - Microsoft 365 E3、A3、E5、A5
-- Business Basic, Business, Business Standard, Business プレミアム
+- Business Basic、Business、Business Standard、Business プレミアム
 - Office 365 E1、A1、E3、A3、E5、A5
-- Business Essentials, Business プレミアム
-- Exchange Onlineプラン 1 またはプラン 2 ライセンス。 
+- Business Essentials、Business プレミアム
+- プラン 1 またはプラン 2 のライセンスをExchange Onlineします。
 
-> [!Note]
-> ユーザーのMicrosoft 365は、英語でのみ世界中のマルチテナント環境で利用できます。 **次のMicrosoft 365** ユーザーが利用できない場合は、次のスケジューラを使用できます。
-> 
-> - Microsoft 365 21Vianet が運営する中国
-> - Microsoft 365トラスティ German Telekom を使用するドイツのクラウドを使用する場合
-> - 政府機関向けクラウド (GCC、コンシューマー、GCC、DoD など)
-> 
-> スケジューラーは、データの場所がドイツのデータセンターではないドイツのユーザーをサポートします。
+> [!NOTE]
+> Microsoft 365用スケジューラは、英語でのみ世界中のマルチテナント環境で使用できます。 **次のユーザーは、Microsoft 365用スケジューラ** を使用できません。
+>
+> - Microsoft 365中国の 21Vianet によって運用されている
+> - データ トラスティ German Telekom を使用するドイツのクラウドを使用するMicrosoft 365
+> - GCC、コンシューマー、GCC High、DoD などの政府機関向けクラウド
+>
+> Scheduler は、データの場所がドイツのデータセンターではないドイツのユーザーをサポートします。

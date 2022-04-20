@@ -1,24 +1,24 @@
-- name: Microsoft 365 コンプライアンス
+- name: Microsoft Purview
   href: index.yml
-- name: Microsoft 365 コンプライアンス センターの新機能
+- name: Microsoft Purview の最新情報
   href: whats-new.md
 - name: コンプライアンス試用版
   items:
-    - name: Microsoft 365 コンプライアンスの無料試用版について
+    - name: Microsoft Purview の無料試用について
       href: compliance-easy-trials.md
-    - name: Microsoft コンプライアンス マネージャー プレミアム評価の無料試用版について
+    - name: Microsoft Purview コンプライアンス マネージャー プレミアム評価の無料試用版について
       href: compliance-easy-trials-compliance-manager-assessments.md
-- name: 概要
+- name: 作業の開始
   items:
-    - name: コンプライアンスを開始するためのクイック タスク
+    - name: Microsoft Purview を開始するためのクイック タスク
       href: compliance-quick-tasks.md
-    - name: Microsoft 365 ソリューション カタログ
+    - name: Microsoft Purview ソリューション カタログ
       href: microsoft-365-solution-catalog.md
-    - name: Microsoft 365 コンプライアンス センター
+    - name: Microsoft Purview コンプライアンス ポータル
       href: microsoft-365-compliance-center.md
-    - name: Microsoft 365 コンプライアンス センターでのアクセス許可
+    - name: Microsoft Purview コンプライアンス ポータルのアクセス許可
       href: microsoft-365-compliance-center-permissions.md
-    - name: Microsoft 365 コンプライアンス センターにユーザーをリダイレクトする
+    - name: Microsoft Purview コンプライアンス ポータルへのユーザーのリダイレクト
       href: microsoft-365-compliance-center-redirection.md
     - name: 無料の Azure Active Directory Domain Services サブスクリプションを使用する
       href: use-your-free-azure-ad-subscription-in-office-365.md
@@ -44,15 +44,15 @@
           href: device-onboarding-vdi.md
     - name: macOS デバイスのオンボード (プレビュー)
       items:
-        - name: Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)
+        - name: Microsoft 365 への macOS デバイスのオンボードに関する概要
           href: device-onboarding-macos-overview.md
-        - name: Microsoft Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+        - name: Microsoft Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
           href: device-onboarding-offboarding-macos-intune.md
-        - name: Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+        - name: Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
           href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+        - name: JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
           href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+        - name: Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: サード パーティのデータ用のコネクタを管理する
   items:
@@ -216,7 +216,7 @@
       href: use-content-search-to-search-third-party-data-that-was-imported.md
 - name: インサイダー リスクを管理する
   items:
-    - name: Microsoft 365 インサイダー リスク ソリューション
+    - name: Microsoft Purview インサイダー リスク ソリューション
       href: insider-risk-solution-overview.md
     - name: コミュニケーション コンプライアンス
       items:
@@ -304,9 +304,9 @@
   items:
     - name: データの把握、データの保護、データ損失の防止
       href: information-protection.md
-    - name: MIP ソリューションをデプロイする
+    - name: 情報保護ソリューションの展開
       href: information-protection-solution.md
-    - name: Microsoft Information Protection の既定のラベルとポリシー
+    - name: データを保護するための既定のラベルとポリシー
       href: mip-easy-trials.md
     - name: 機密情報の種類
       items:
@@ -396,7 +396,7 @@
       items:
         - name: 秘密度ラベルの詳細
           href: sensitivity-labels.md
-        - name: Office アプリの MIP 組み込みラベル付けを選択する理由
+        - name: Office アプリの組み込みラベル付けを選択する理由
           href: sensitivity-labels-aip.md
         - name: 秘密度ラベルの概要
           href: get-started-with-sensitivity-labels.md
@@ -428,7 +428,7 @@
           href: office-365-service-encryption.md
         - name: 顧客キー
           items:
-            - name: Microsoft 365 のカスタマー キー
+            - name: Microsoft Purview カスタマー キーを使用したサービスの暗号化
               href: customer-key-overview.md
             - name: Microsoft 365 のカスタマー キーを設定する
               href: customer-key-set-up.md
@@ -441,27 +441,27 @@
         - name: メールの暗号化
           href: email-encryption.md
           items:
-            - name: Office 365 Message Encryption (OME)
+            - name: メッセージの暗号化
               href: ome.md
-            - name: 新しい Office 365 Message Encryption 機能を設定する
+            - name: Microsoft Purview のメッセージの暗号化を設定する
               href: set-up-new-message-encryption-capabilities.md
-            - name: Office 365 でメール メッセージを暗号化するためにメール フロー ルールを定義する
+            - name: メール メッセージを暗号化するためのメール フロー ルールを定義
               href: define-mail-flow-rules-to-encrypt-email.md
             - name: 暗号化されたメッセージに組織のブランドを追加する
               href: add-your-organization-brand-to-encrypted-messages.md
-            - name: Office 365 Message Encryption 機能を使用して、機密情報の種類のポリシーを作成する
+            - name: Microsoft Purview のメッセージの暗号化を使って機密情報の種類のポリシーを作成する
               href: ome-sensitive-info-types.md
-            - name: Office 365 Message Encryption
+            - name: メッセージの暗号化を管理する
               href: manage-office-365-message-encryption.md
-            - name: Office 365 Advanced Message Encryption
+            - name: 高度なメッセージの暗号化
               href: ome-advanced-message-encryption.md
-            - name: Office 365 Advanced Message Encryption 機能を使って暗号化されたメールの有効期限を設定する
+            - name: Microsoft Purview の高度なメッセージの暗号化を使って暗号化されたメールの有効期限を設定する
               href: ome-advanced-expiration.md
-            - name: Office 365 Advanced Message Encryption 機能を使って暗号化されたメールを無効にする
+            - name: Microsoft Purview の高度なメッセージの暗号化を使って暗号化されたメールを取り消す
               href: revoke-ome-encrypted-mail.md
-            - name: OME のバージョンを比較する
+            - name: メッセージの暗号化のバージョンを比較する
               href: ome-version-comparison.md
-            - name: Office 365 Message Encryption に関する FAQ
+            - name: メッセージの暗号化についてよく寄せられる質問
               href: ome-faq.yml
             - name: Exchange Online がメールの機密情報をセキュリティで保護する方法
               href: exchange-online-secures-email-secrets.md
@@ -501,9 +501,9 @@
               href: endpoint-dlp-learn-about.md
             - name: Microsoft Teams の既定のデータ損失防止ポリシーについて学ぶ (プレビュー)
               href: dlp-teams-default-policy.md
-            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーについての詳細情報
+            - name: データ損失防止のオンプレミス スキャナーの詳細
               href: dlp-on-premises-scanner-learn.md
-            - name: Microsoft Compliance Extension の詳細情報
+            - name: Microsoft Purview Extension の詳細
               href: dlp-chrome-learn-about.md
             - name: データ損失防止の警告ダッシュボードについて
               href: dlp-alerts-dashboard-learn.md
@@ -525,13 +525,13 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: DLP ポリシーの作成、テスト、調整
               href: create-test-tune-dlp-policy.md
-            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーの使用を開始する
+            - name: データ損失防止のオンプレミス スキャナーの使用を開始する
               href: dlp-on-premises-scanner-get-started.md
             - name: エンドポイント データ損失防止を開始する
               href: endpoint-dlp-getting-started.md
             - name: 情報保護のためにデバイス プロキシとインターネット接続の設定を構成する
               href: device-onboarding-configure-proxy.md
-            - name: Microsoft Compliance Extension を開始する
+            - name: Microsoft Purview Extension の使用を開始する
               href: dlp-chrome-get-started.md
             - name: データ損失防止の警告ダッシュボードを開始する
               href: dlp-alerts-dashboard-get-started.md
@@ -543,7 +543,7 @@
               href: dlp-microsoft-teams.md
             - name: エンドポイント データ損失防止の使用
               href: endpoint-dlp-using.md
-            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを使用する
+            - name: データ損失防止のオンプレミス スキャナーを使用する
               href: dlp-on-premises-scanner-use.md
             - name: DLP ポリシーで通知とポリシー ヒントを使用する
               href: use-notifications-and-policy-tips.md
@@ -569,10 +569,10 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: データ損失防止ポリシーヒントのリファレンス
               href: dlp-policy-tips-reference.md
-- name: 情報ガバナンスと記録を管理する
+- name: データ のライフサイクルとレコードの管理
   items:
     - name: データを統制する
-      href: manage-information-governance.md
+      href: manage-data-governance.md
     - name: 保持と削除について
       items:
         - name: 保持ポリシーと保持ラベルの詳細
@@ -593,16 +593,16 @@
           href: retention-settings.md
         - name: 保持と削除の制限
           href: retention-limits.md
-    - name: 情報ガバナンス
+    - name: データ ライフサイクル管理
       items:
-        - name: 情報ガバナンスの詳細
-          href: information-governance.md
-        - name: 情報ガバナンスを開始する
-          href: get-started-with-information-governance.md
+        - name: データ ライフサイクル管理の詳細
+          href: data-lifecycle-management.md
+        - name: データ ライフサイクル管理の使用を開始する
+          href: get-started-with-data-lifecycle-management.md
         - name: アイテム保持ポリシーを作成する
           href: create-retention-policies.md
         - name: 例外に保持ラベルを使用する
-          href: create-retention-labels-information-governance.md
+          href: create-retention-labels-data-lifecycle-management.md
         - name: アーカイブ メールボックスのデータ
           items:
             - name: アーカイブ メールボックスの詳細
@@ -673,7 +673,7 @@
           href: disposition.md
 - name: eDiscovery の管理
   items:
-    - name: Microsoft 365 eDiscovery ソリューション
+    - name: Microsoft Purview の電子情報開示ソリューション
       href: ediscovery.md
     - name: コンテンツ検索
       items:
@@ -742,9 +742,9 @@
               href: create-report-on-and-delete-multiple-content-searches.md
             - name: 検索を複製する
               href: clone-a-content-search.md
-    - name: コア電子情報開示
+    - name: 電子情報開示 (標準)
       items:
-        - name: コア電子情報開示を開始する
+        - name: 電子情報開示 (標準) の使用を開始する
           href: get-started-core-ediscovery.md
         - name: 電子情報開示の保留リストを作成する
           href: create-ediscovery-holds.md
@@ -754,7 +754,7 @@
           href: export-content-in-core-ediscovery.md
         - name: ケースを閉じ、もう一度開き、削除する
           href: close-reopen-delete-core-ediscovery-cases.md
-        - name: コア電子情報開示 の参照
+        - name: 電子情報開示 (標準) のリファレンス
           items:
             - name: 電子情報開示の検索制限
               href: limits-for-content-search.md
@@ -800,19 +800,19 @@
               href: configure-edge-to-export-search-results.md
             - name: 監査ログで電子情報開示アクティビティを検索する
               href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Advanced eDiscovery
+    - name: 電子情報開示 (プレミアム)
       items:
         - name: 概要
           href: overview-ediscovery-20.md
-        - name: Advanced eDiscovery を設定する
+        - name: 電子情報開示 (プレミアム) を設定する
           href: get-started-with-advanced-ediscovery.md
-        - name: Advanced eDiscovery ケースを作成する
+        - name: 電子情報開示 (プレミアム) ケースの作成
           items:
             - name: ケースの作成と管理
               href: create-and-manage-advanced-ediscoveryv2-case.md
             - name: 新しいケース形式を使用する
               href: advanced-ediscovery-new-case-format.md
-        - name: Teams コンテンツの Advanced eDiscovery ワークフロー
+        - name: Teams コンテンツの電子情報開示 (プレミアム) のワークフロー
           href: teams-workflow-in-advanced-ediscovery.md
         - name: カストディアンおよび非カストディアンのデータ ソースを使用する
           href: managing-custodians.md
@@ -933,9 +933,9 @@
               href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
             - name: 検索と分析の設定を構成する
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
-        - name: Advanced eDiscovery の参照
+        - name: 電子情報開示 (プレミアム) のリファレンス
           items:
-            - name: Advanced eDiscovery の制限
+            - name: 電子情報開示 (プレミアム) の制限
               href: limits-ediscovery20.md
             - name: サポートされているファイルの種類
               href: supported-filetypes-ediscovery20.md
@@ -985,11 +985,11 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 監査と通知ポリシーを管理する
   items:
-    - name: Microsoft 365 監査ソリューション
+    - name: Microsoft Purview 監査ソリューション
       href: auditing-solutions-overview.md
-    - name: 基本的な監査
+    - name: 監査 (標準)
       items:
-        - name: 基本的な監査の設定
+        - name: 監査の設定 (標準)
           href: set-up-basic-audit.md
         - name: 監査ログの検索
           href: search-the-audit-log-in-security-and-compliance.md
@@ -1013,15 +1013,15 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 マネージメント アクティビティ API の FAQ とトラブルシューティング
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: 高度な監査
+    - name: 監査 (プレミアム)
       items:
-        - name: 高度な監査の概要
+        - name: 監査の概要 (プレミアム)
           href: advanced-audit.md
-        - name: 高度な監査の設定
+        - name: 監査の設定 (プレミアム)
           href: set-up-advanced-audit.md
         - name: 監査ログの保持ポリシーを管理する
           href: audit-log-retention-policies.md
-        - name: 高度な監査を使用して、侵害されたアカウントを調査する
+        - name: 監査 (プレミアム) を使用して、侵害されたアカウントを調査する
           href: mailitemsaccessed-forensics-investigations.md
     - name: メールボックスの監査
       href: enable-mailbox-auditing.md

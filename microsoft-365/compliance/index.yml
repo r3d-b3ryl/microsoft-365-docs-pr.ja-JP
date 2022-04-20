@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft 365 コンプライアンスのドキュメント
-summary: お客様の組織で、法律や規制の基準に準拠する必要がある場合は、こちらから Microsoft 365 のコンプライアンスについてご確認ください。
+title: Microsoft Purview のドキュメント
+summary: お客様の組織で、法律や規制の基準に準拠する必要がある場合は、こちらから Microsoft Purview のコンプライアンスについてご確認ください。
 metadata:
-  title: Microsoft 365 コンプライアンスのドキュメント
-  description: このページには、Microsoft 365 のコンプライアンス機能に関するいくつかの重要なトピックへのリンクが含まれています。 Microsoft 365 のコンプライアンスについては、こちらを参照してください。
+  title: Microsoft Purview のドキュメント
+  description: このページには、Microsoft Purview の機能に関するいくつかの重要なトピックへのリンクが含まれています。 Microsoft 365 のコンプライアンスについては、こちらを参照してください。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -14,12 +14,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   ms.localizationpriority: high
-  ms.openlocfilehash: 2e29c9e97a266fdf2ea4b6c712c400143971f447
-  ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+  ms.openlocfilehash: 3b86087d8f8fea8e9b3b143f7e38997d07fca3ec
+  ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/03/2022
-  ms.locfileid: "61660144"
+  ms.lasthandoff: 04/19/2022
+  ms.locfileid: "64953351"
 landingContent:
 - title: 情報保護とガバナンスを管理する
   linkLists:
@@ -32,20 +32,20 @@ landingContent:
     - text: データの損失を防止する
       url: information-protection.md#prevent-data-loss
     - text: データを統制する
-      url: manage-information-governance.md
+      url: manage-data-governance.md
     - text: 'ラニング パス: 情報保護とガバナンスを管理する'
       url: /learn/paths/m365-compliance-information
 - title: インサイダー リスクを管理する
   linkLists:
   - linkListType: overview
     links:
-    - text: インサイダー リスクの管理
+    - text: Microsoft Purview インサイダー リスク管理
       url: insider-risk-management.md
-    - text: 通信コンプライアンス
+    - text: Microsoft Purview でのコミュニケーション コンプライアンス
       url: communication-compliance.md
-    - text: 情報バリア
+    - text: Microsoft Purview 情報バリア
       url: information-barriers.md
-    - text: 特権アクセス管理
+    - text: Microsoft Purview Privileged Access Management
       url: privileged-access-management-overview.md
     - text: 顧客ロックボックス
       url: customer-lockbox-requests.md
@@ -53,14 +53,14 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 高度な電子情報開示
+    - text: Microsoft Purview 電子情報開示 (プレミアム)
       url: overview-ediscovery-20.md
-    - text: コア電子情報開示
+    - text: Microsoft Purview 電子情報開示 (標準)
       url: ./get-started-core-ediscovery.md
     - text: コンテンツ検索
       url: search-for-content.md
-    - text: 監査
-      url: search-the-audit-log-in-security-and-compliance.md
+    - text: Microsoft Purview 監査ソリューション
+      url: auditing-solutions-overview.md
 - title: 規制コンプライアンスの概要
   linkLists:
   - linkListType: get-started
@@ -79,7 +79,7 @@ landingContent:
     links:
     - text: ゼロ トラストでデータを保護する
       url: /security/zero-trust/data
-    - text: MIP ソリューションをデプロイする
+    - text: Microsoft Purview の情報保護ソリューションを展開する
       url: information-protection-solution.md
     - text: データ プライバシー規制用の情報保護を展開する
       url: ../solutions/information-protection-deploy.md

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas Slack 電子情報開示からMicrosoft 365にデータをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
-ms.openlocfilehash: b6c5f398e1f8966b11a3f9cd4c0e4732fc4b5eff
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f8a8f785c61bd1ddfea6c0c0cf69c5719b4f9aaf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940623"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992284"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Slack 電子情報開示データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、ソーシャル メディア、インスタント メッセージング、ドキュメント コラボレーション プラットフォームからMicrosoft 365組織内のメールボックスにサード パーティのデータをインポートおよびアーカイブします。 Veritas には、サード パーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらの項目をMicrosoft 365にインポートするように構成された [Slack](https://globanet.com/slack/) コネクタが用意されています。 Slack は、Slack API からメッセージとファイルをプルし、メール メッセージ形式に変換して、アイテムをユーザー メールボックスにインポートします。
 

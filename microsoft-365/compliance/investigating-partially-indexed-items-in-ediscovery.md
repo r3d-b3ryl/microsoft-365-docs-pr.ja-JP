@@ -18,14 +18,16 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 組織内のExchange、SharePoint、OneDrive for Businessから部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれます) を管理する方法について説明します。
-ms.openlocfilehash: 8dd5235027a4563ad868d8ebe28c8dab50fb6376
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0cab31f56576cac9cbe7b51ea2cdceb49aff6db9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944769"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993120"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックスが付けられたアイテムの調査
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルから実行する電子情報開示検索では、検索を実行すると、推定検索結果に部分的にインデックスが付けられたアイテムが自動的に含まれます。 部分的にインデックスが作成されたアイテムは、SharePoint サイトとOneDrive for Business サイト上のメールボックス アイテムとドキュメントExchangeであり、何らかの理由で検索用に完全にインデックスが作成されませんでした。 ほとんどの電子メール メッセージとサイト ドキュメントは、 [電子メール メッセージのインデックス作成の制限](limits-for-content-search.md#indexing-limits-for-email-messages)内にあるため、正常にインデックスが作成されます。 ただし、一部の項目はこれらのインデックス作成制限を超える可能性があり、部分的にインデックスが作成されます。 電子情報開示検索を実行すると、アイテムにインデックスを作成できず、部分的にインデックスが作成されたアイテムとして返されるその他の理由を次に示します。
   
@@ -164,7 +166,7 @@ Microsoft Purview コンプライアンス ポータルから実行する電子�
      }
    ```
 
-2. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/exchange-online-powershell)。
+2. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/exchange-online-powershell)。
 
 3. Security & Compliance Center PowerShell で、手順 1. でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 

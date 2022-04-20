@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、医療システムからMicrosoft 365に電子医療レコード (EHR) データをインポートするデータ コネクタを設定できます。 これにより、インサイダー リスク管理ポリシーで EHR データを使用して、従業員による患者データへの不正アクセスアクティビティを検出できます。
-ms.openlocfilehash: dfb02e5f6fb8625d31554c6dbc11179b1dddb6c2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b1745d8f91253132748fe08d724386d2e6633a4c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949721"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993164"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>医療 EHR 監査データをインポートするコネクタを設定する (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルでデータ コネクタを設定し、組織の電子医療レコード (EHR) システムでユーザー アクティビティの監査データをインポートできます。 医療 EHR システムからの監査データには、患者の健康記録へのアクセスに関連するイベントのデータが含まれます。 医療 EHR 監査データは、Microsoft 365[インサイダー リスク管理ソリューション](insider-risk-management.md)で使用して、患者情報への不正アクセスから組織を保護するのに役立ちます。
 
@@ -66,7 +68,7 @@ Azure ADでアプリを作成する手順については、「Microsoft ID プ�
 
 次の表に、インサイダー リスク管理シナリオを有効にするために必要なフィールドを示します。 これらのフィールドのサブセットは必須です。 これらのフィールドはアスタリスク (*)で強調表示されます。 テキスト ファイルに必須フィールドがない場合、ファイルは検証されません。ファイル内のデータはインポートされません。
 
-|Field|カテゴリ|
+|フィールド|カテゴリ|
 |:----|:----------|
 | Creation *TimeEvent<br/> Name*<br/>ワークステーション ID<br/>[イベント] セクション<br/>分類 |これらのフィールドは、医療 EHR システム内のアクセス アクティビティ イベントを識別するために使用されます。|
 | 患者 Reg ID<br/>Patient First *NamePatient<br/> ミドル ネーム <br/>Patient Last Name* <br/>患者アドレス行 1* <br/>患者アドレス行 2<br/>Patient City* <br/>患者郵便番号*  <br/>患者の状態 <br/>患者の国 <br/>患者部              | これらのフィールドは、患者プロファイル情報を識別するために使用されます。|

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft Purview コンプライアンス ポータルでコネクタを設定して使用して、Oracle 上の Cisco Jabber からMicrosoft 365にデータをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 7668defd3ef7157da185de7e51ef97e3127e67a4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 33714412db56066b25a1bda03fb4a92c6c64f917
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946684"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992658"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Oracle データに Cisco Jabber をアーカイブするためのコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、Oracle プラットフォーム上の Cisco Jabber から、Microsoft 365 組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas は、サードパーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらの項目をMicrosoft 365にインポートするように構成された、Oracle コネクタ上の [Cisco Jabber](https://www.veritas.com/insights/merge1/jabber) を提供します。 コネクタは、ファイルやファイル操作、コメント、共有コンテンツなどのコンテンツを Oracle の Cisco Jabber から電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザーのメールボックスにインポートします。
 

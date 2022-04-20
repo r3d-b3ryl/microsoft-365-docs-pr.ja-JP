@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示 (プレミアム) でカストディアン管理ツールを使用して訴訟のデータを管理する方法について説明します。
-ms.openlocfilehash: 75655b48cf0061879edf5ea559712daa29ce4893
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0c529b339c79789072cf160916db8c21acff7d86
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948443"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992196"
 ---
 # <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>電子情報開示 (プレミアム) で保管担当者と非保管データ ソースを操作する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 組織が法的調査に対応する場合、潜在的に関連するコンテンツの特定、保持、収集に関するワークフローは、関連するデータのカストディアンである組織内のユーザーに基づきます。 電子情報開示では、これらの個人は *データカストディアン* (または単なる *カストディアン*) と呼ばれ、"ドキュメントまたは電子ファイルの管理制御を持つユーザー" として定義されます。 たとえば、電子メールメッセージのカストディアンは、関連メッセージを含むメールボックスの所有者でもあります。
 

@@ -19,14 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: adc939d44715bcfaeb97cdbfa530f55a5aeecd4e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3f163c19cfd6e627887f0e34b81bc99d2e86cb6c
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322087"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971046"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
@@ -45,7 +47,7 @@ ms.locfileid: "63322087"
 3. **ラベルを発行する。** 秘密度ラベルの構成が完了したら、ラベル ポリシーを使用してラベルを公開します。 ラベルを使用する必要があるユーザーとグループおよび使用するポリシー設定を決定します。 1 つのラベルは再利用できます。 一度定義したラベルは、異なるユーザーに割り当てる複数のラベル ポリシーに含めることができます。 たとえば、ラベル ポリシーをごく少数のユーザーに対して適用して、秘密度ラベルを試験運用することができます。 組織全体に対してラベルを展開する準備ができたら、ラベルの新しいラベル ポリシーを作成し、今回はすべてのユーザーを指定することができます。
 
 
-> 既定のラベルの自動作成と、手順 1 - 3 の管理を行う既定のラベル ポリシーの対象となる場合があります。 詳細については、「[Microsoft Information Protection の既定のラベルとポリシー](mip-easy-trials.md)」を参照してください。
+> 既定のラベルの自動作成と、手順 1 - 3 の管理を行う既定のラベル ポリシーの対象となる場合があります。 詳細については、「[Microsoft Purview Information Protection の既定のラベルとポリシー](mip-easy-trials.md)」を参照してください。
 
 秘密度ラベルを展開して適用するための基本的な流れ:
 
@@ -55,11 +57,11 @@ ms.locfileid: "63322087"
 
 秘密度ラベルはさまざまな異なるサブスクリプションに対応しており、ユーザーのライセンス要件は使用する機能によって異なります。
 
-Microsoft 365 コンプライアンス機能のメリットを得られるようにユーザーにライセンスを付与するためのオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。 秘密度ラベルについては、「[情報保護: 秘密度ラベルセクション](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-sensitivity-labeling)」および機能レベルのライセンス要件に関する [PDF ダウンロード](https://go.microsoft.com/fwlink/?linkid=2139145) ファイルを参照してください。
+Microsoft Purview 機能のメリットを得られるようにユーザーにライセンスを付与するためのオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。 秘密度ラベルについては、「[Microsoft Purview Information Protection: 秘密度ラベル付け](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-information-protection-sensitivity-labeling)」のセクションおよび機能レベルのライセンス要件に関する [PDF ダウンロード](https://go.microsoft.com/fwlink/?linkid=2139145) ファイルを参照してください。
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>機密ラベルの作成と管理に必要なアクセス許可
 
-機密ラベルを作成するコンプライアンス チームのメンバーには、Microsoft 365 コンプライアンス センターへのアクセス許可が必要です。
+秘密度ラベルを作成するコンプライアンス チームのメンバーには、Microsoft Purview コンプライアンス ポータルへのアクセス許可が必要です。
 
 既定では、テナントのグローバル管理者はこの管理センターへのアクセス権を所有し、コンプライアンス責任者や他のユーザーにアクセス権を付与できます (テナント管理者が持つすべての権限を付与する必要はありません)。この委任された制限付き管理者アクセス許可については、ユーザーを **[コンプライアンス データ管理者]**、**[コンプライアンス管理者]**、または **[セキュリティ管理者]** 役割グループに追加します。 
 
@@ -73,9 +75,9 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 > - **Information Protection 調査担当者**
 > - **Information Protection 閲覧者**
 >
-> それぞれの役割とその役割に含まれる新しい役割の説明については、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a> > **[アクセス許可と役割]** > **[コンプライアンス センター]** > **[役割]** で役割グループを選択し、次にポップアップ ウィンドウで説明を確認します。または、「[セキュリティ/コンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+> それぞれの役割とその役割に含まれる新しい役割の説明については、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">[Microsoft Purview コンプライアンス ポータル]</a> > **[アクセス許可と役割]** > **[コンプライアンス センター]** > **[役割]** で役割グループを選択し、次にポップアップ ウィンドウで説明を確認します。または、「[セキュリティ/コンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
 
-ユーザーを既定の役割グループに追加する手順、または独自の役割グループを作成する手順については、「[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
+ユーザーを既定のロール、グループ、役割に追加する手順、または独自の役割グループを作成する手順については、「[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
 
 これらのアクセス許可は、機密ラベルとそのラベル ポリシーの作成と構成を行う場合にのみ必要です。 アプリまたはサービスでラベルを適用するためには必要はありません。 秘密度ラベルに関連する特定の構成に追加のアクセス許可が必要な場合、それらのアクセス許可はそれぞれのドキュメントの説明に記載されています。
 
@@ -83,8 +85,6 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 組織の秘密度ラベルの展開戦略を成功させるには、ビジネス要件と技術要件、概念実証テスト、内部チェックポイントと承認、運用環境の最終的な展開を特定し管理する作業仮想チームを作成します。
 
 次のセクションの表を使用して、最も影響力のあるビジネス要件にマッピングされる上位 1 つまたは 2 つのシナリオを特定することをお勧めします。 これらのシナリオが展開されたら、リストに戻り、次に展開する優先順位の 1 つまたは 2 つを特定します。
-
-[Customer Acceleration Team (CAT)](https://microsoft.github.io/ComplianceCxE/) サイトのリソースの 1 つである、「[Microsoft の情報保護およびデータ損失防止の導入加速ガイド](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/)」に、追加の一般的な展開ガイダンスとベスト プラクティスがあります。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>秘密度ラベルの一般的なシナリオ
 
@@ -108,8 +108,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 |Power BI でラベルの適用と表示をし、サービスの外部に保存されたデータを保護する|[Power BI の秘密度ラベル](/power-bi/admin/service-security-sensitivity-label-overview)|
 |組織で秘密度ラベルがどのように使用されているかを監視し、理解する|[データ分類の説明](data-classification-overview.md)|
 |秘密度ラベルの適用をサード パーティ製アプリやサービスに拡大する|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Azure Blob Storage、Azure Files、Azure Data Lake Storage、マルチクラウド データ ソースなど、Azure Purview アセットのコンテンツ全体に秘密度ラベルを拡張する|[Azure Purview でのラベル付け](/azure/purview/create-sensitivity-label) |
-
+|Azure Blob Storage、Azure Files、Azure Data Lake Storage、マルチクラウド データ ソースなど、Microsoft Purview データ マップ アセットのコンテンツ全体に秘密度ラベルを拡張する|[Microsoft Purview データ マップでのラベル付け](/azure/purview/create-sensitivity-label) |
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>機密度ラベルのエンド ユーザー向けのドキュメント
 

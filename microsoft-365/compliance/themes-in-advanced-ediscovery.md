@@ -1,5 +1,5 @@
 ---
-title: Advanced eDiscoveryのテーマ
+title: 電子情報開示のテーマ (プレミアム)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 電子情報開示のテーマ (プレミアム) を使用して、各ドキュメントの主要なテーマを見つけてレビュー セットを整理します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 49605d2d7fb3103c672fd5ae4d2249956d52b6a0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e019c103114630411a7d13ae619827a2e83a890c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934517"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991756"
 ---
 # <a name="themes-in-ediscovery-premium"></a>電子情報開示のテーマ (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 人はドキュメントをどのように書くのですか? 一般に、ドキュメントで伝えたい 1 つ以上のアイデアから始め、アイデアに合った単語を使用して作成します。 アイデアが一般的であるほど、そのアイデアに関連する単語の頻度が高くなります。 これにより、ユーザーがドキュメントを使用する方法も通知されます。 ドキュメントを読んで理解する重要な点は、ドキュメントが伝えようとしているアイデア、アイデアがどこに表示され、アイデア間の関係が何であるかです。
 

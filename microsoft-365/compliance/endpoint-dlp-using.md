@@ -1,5 +1,5 @@
 ---
-title: エンドポイント データ損失防止の使用
+title: エンドポイント DLP の使用
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -17,22 +17,24 @@ ms.collection:
 - SPO_Content
 search.appverid:
 - MET150
-description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: aeb85b883738e94f2d7161cb2bc3434edbb16428
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: エンドポイント データ損失防止の場所を使用するためのデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
+ms.openlocfilehash: 5ca57dfad74dea26e16fa415eead8a0a85eb9673
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680030"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952800"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]  
 
 エンドポイント DLP 機能、および DLP ポリシーで表示される方法を把握するために、いくつかのシナリオをまとめてましたので、確認してください。
 
 > [!IMPORTANT]
 > これらのエンドポイント DLP シナリオは、DLP ポリシーの作成と調整に関する公式な手順ではありません。 一般的な状況で DLP ポリシーを使用する必要がある場合は、次のトピックを参照してください。
 >
->- [データ損失防止について](dlp-learn-about-dlp.md)
+>- [Microsoft Purview データ損失防止についての説明](dlp-learn-about-dlp.md)
 >- [DLP の既定ポリシーの概要](get-started-with-the-default-dlp-policy.md)
 >- [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
 >- [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
@@ -257,7 +259,7 @@ Endpoint DLP と Edge Web ブラウザを使用すると、許可されていな
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする概要](/microsoft-365/compliance/device-onboarding-overview)
+- [Windows 10 デバイスと Windows 11 デバイスを Microsoft Purview にオンボードする](/microsoft-365/compliance/device-onboarding-overview)
 - [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) が参加しました](/azure/active-directory/devices/concept-azure-ad-join)
 - [Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 DefenderのDefender for Office 365からインシデントとアラートを管理する
+title: Microsoft 365 Defender で Defender for Office 365 からのインシデントとアラートを管理する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,12 +18,12 @@ ms.custom: ''
 description: SecOps 担当者は、Microsoft 365 Defenderのインシデント キューを使用してMicrosoft Defender for Office 365のインシデントを管理する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 97e3235a0b5d03961f87ba3110f71031f60824d3
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 04a65591e96e11f2e949ce161fd592d313af2a66
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747462"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970765"
 ---
 # <a name="manage-incidents-and-alerts-from-microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft 365 DefenderのMicrosoft Defender for Office 365からインシデントとアラートを管理する
 

@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365の Microsoft Purview 電子情報開示 (プレミアム) で、2 バイト文字セットを使用する中国語、日本語、韓国語 (CJK) 言語をサポートする方法について説明します。
-ms.openlocfilehash: 70081341499f348f1bb8e226b4d3b5e9c0bab031
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e6221d37a3ebb07414f87f349b020365c80990e3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934799"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992218"
 ---
 # <a name="cjk-language-support-for-ediscovery-premium"></a>電子情報開示の CJK 言語サポート (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) は、レビュー セットの次の高度なシナリオに対して、2 バイト文字セット言語 (簡体字中国語、繁体字中国語、日本語、韓国語など)をサポートしています。これらは、まとめて *CJK* 言語と呼ばれます)。
 

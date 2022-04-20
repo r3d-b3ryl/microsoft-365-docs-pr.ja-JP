@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: ケース内のすべてのレビュー セットに適用される Microsoft Purview 電子情報開示 (プレミアム) 設定を構成します。 これには、分析と光学式文字認識の設定が含まれます。
-ms.openlocfilehash: f6cae054f111aa3aa4f8c7d4ab3c3323ce0498ff
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c5b542f224e35a6505dca9cbfacb5f1095fa2dbe
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949677"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992306"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>電子情報開示で検索と分析の設定を構成する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) ケースごとに設定を構成して、次の機能を制御できます。
 

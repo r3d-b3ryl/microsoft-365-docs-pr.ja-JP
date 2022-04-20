@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+title: Microsoft Defender for Endpoint顧客向けの JAMF Proを使用して、macOS デバイスをコンプライアンス ソリューションにオンボードおよびオフボードする
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,36 +13,38 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: MICROSOFT Defender for Endpoint のお客様向け JAMF Microsoft 365を使用して、macOS デバイスをオンボードおよびオフボードProコンプライアンス ソリューションに接続する方法について説明します (プレビュー)
-ms.openlocfilehash: f260d901f8f02c2c02007b2cc0d49ab9ee57dafd
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: Microsoft Defender for Endpoint顧客向けの JAMF Proを使用して、macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする方法について説明します
+ms.openlocfilehash: ba2ff7723e54451ace46823fafb5323dcb35069e
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716323"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953385"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers"></a>Microsoft Defender for Endpoint顧客向けの JAMF Proを使用して、macOS デバイスをコンプライアンス ソリューションにオンボードおよびオフボードする
 
-JAMF デバイスを使用Pro、コンプライアンス ソリューションに macOS Microsoft 365オンボードできます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+JAMF Proを使用して、macOS デバイスを Microsoft Purview ソリューションにオンボードできます。
 
 > [!IMPORTANT]
-> Microsoft Defender for  Endpoint (MDE) を macOS デバイスに展開している場合は、次の手順を実行します。
+> macOS デバイスに Microsoft Defender for Endpoint (MDE) を展開している ***場合は***、次の手順を使用します。
 
 **適用対象:**
 
-- MDE を macOS デバイスに展開しているお客様。
-- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- MACOS デバイスに MDE を展開しているお客様。
+- [エンドポイントのデータ損失防止](./endpoint-dlp-learn-about.md)
+- [インサイダー リスク管理](insider-risk-management.md)
 
 
 ## <a name="before-you-begin"></a>はじめに
 
-- macOS デバイス[が JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) pro を介して管理され、JAMF Connect または Intune を介して ID (Azure AD参加 UPN) に関連付けられているConnect確認します。
+- [macOS デバイスが JAMF pro を介して管理され、JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) ConnectまたはIntuneを介して ID (Azure AD参加している UPN) に関連付けられていることを確認します。
 - macOS デバイスに v95+ Edge ブラウザーをインストールする
 
-## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>JAMF を使用してMicrosoft 365コンプライアンス ソリューションにデバイスをオンボードPro
+## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>JAMF Proを使用してデバイスを Microsoft Purview ソリューションにオンボードする
 
-コンプライアンス ソリューションへの macOS デバイスのオンボードは、複数フェーズのプロセスです。
+macOS デバイスをコンプライアンス ソリューションにオンボードすることは、多段階プロセスです。
 
 ### <a name="download-the-configuration-files"></a>構成ファイルをダウンロードする
 
@@ -50,72 +52,72 @@ JAMF デバイスを使用Pro、コンプライアンス ソリューション�
 
 |に必要なファイル |source |
 |---------|---------|
-|アクセシビリティ |[アクセシビリティ.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
+|アクセシビリティ |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 フル ディスク アクセス     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |MDE の基本設定 |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json)
 
 > [!TIP]
-> *.mobileconfig ファイルは*、個別にダウンロードするか、以下を含 [む単一の結合ファイル](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)でダウンロードできます。
-> - アクセシビリティ.mobileconfig
+> *.mobileconfig* ファイルは、個別にダウンロードすることも、次を含む [単一の結合ファイル](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)でダウンロードすることもできます。
+> - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 >
->これらの個々のファイルが更新された場合は、結合されたファイルを再度ダウンロードするか、単一の更新されたファイルを個別にダウンロードする必要があります。
+>これらの個々のファイルのいずれかが更新された場合は、結合されたファイルを再度ダウンロードするか、1 つの更新されたファイルを個別にダウンロードする必要があります。
 
-### <a name="update-the-existing-mde-preference-domain-profile-using-the-jamf-pro-console"></a>JAMF PRO コンソールを使用して既存の MDE Preference ドメイン プロファイルを更新する
+### <a name="update-the-existing-mde-preference-domain-profile-using-the-jamf-pro-console"></a>JAMF PRO コンソールを使用して既存の MDE 基本設定ドメイン プロファイルを更新する
 
-1. ダウンロードしたschema.xml **schema.json ファイルを使用して、ユーザー プロファイル** を更新します。
+1. ダウンロードした **schema.json** ファイルを使用して、schema.xml プロファイルを更新します。
 
-1. **[MDE 基本設定ドメインのプロパティ] で、** 次の設定を選択します。
+1. **[MDE 基本設定ドメインのプロパティ] で** これらの設定を選択します
     - 機能 
-        - システム拡張機能の使用: `enabled` - Catalina のネットワーク拡張機能に必要
-        - データ損失防止の使用: `enabled`
+        - システム拡張機能を使用する: `enabled` - Catalina のネットワーク拡張機能に必要です
+        - データ損失防止を使用する: `enabled`
 
-1. [スコープ] **タブを選択** します。
+1. [ **スコープ** ] タブを選択します。
 
-1. この構成プロファイルを展開するグループを選択します。
+1. この構成プロファイルをデプロイするグループを選択します。
 
 1. **[保存]** を選択します。 
 
-### <a name="update-the-configuration-profile-for-grant-full-disk-access"></a>[ディスクへのフル アクセスを許可する] の構成プロファイルを更新する
+### <a name="update-the-configuration-profile-for-grant-full-disk-access"></a>フル ディスク アクセスを許可する構成プロファイルを更新する
 
 1. **fulldisk.mobileconfig** ファイルを使用して、既存のフル ディスク アクセス プロファイルを更新します。
 
-1. アップロード **disk.mobileconfig ファイルを** JAMF に移動します。 「[JAMF を使用したカスタム構成プロファイルの展開」を参照Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)。
+1. **fulldisk.mobileconfig** ファイルを JAMF にアップロードします。 [JAMF Proを使用したカスタム構成プロファイルのデプロイ](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)に関する説明を参照してください。
 
-### <a name="grant-accessibility-access-to-dlp"></a>DLP へのアクセシビリティ アクセスを許可する
+### <a name="grant-accessibility-access-to-dlp"></a>DLP へのアクセシビリティ アクセスを付与する
 
-1. 以前にダウンロードしたアクセシビリティ.mobileconfig ファイルを使用します。
+1. 以前にダウンロードした accessibility.mobileconfig ファイルを使用します。
 
-1. アップロード Jamf を使用したカスタム構成プロファイルの展開」の説明に従って [JAMF にPro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
+1. [Jamf Proを使用したカスタム構成プロファイルのデプロイ](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)に関する説明に従って JAMF にアップロードします。
 
 ### <a name="check-the-macos-device"></a>macOS デバイスを確認する 
 
 1. macOS デバイスを再起動します。
 
-1. [ **System PreferencesProfiles** > **] を開きます**。
+1. **System PreferencesProfiles** >  を開 **きます**。
 
 1. 次の情報が表示されます。
-    - アクセシブル
+    - アクセシビリティ
     - フル ディスク アクセス
     - カーネル拡張機能プロファイル
-    - MAU
-    - MDATP オンボーディング
-    - MDE の基本設定
+    - マウ
+    - MDATP オンボード
+    - MDE 環境設定
     - 管理プロファイル
     - ネットワーク フィルター
     - 通知
-    - システム拡張プロファイル
+    - システム拡張機能プロファイル
 
-## <a name="offboard-macos-devices-using-jamf-pro"></a>JAMF デバイスを使用するオフボード macOS Pro
+## <a name="offboard-macos-devices-using-jamf-pro"></a>JAMF Proを使用したオフボード macOS デバイス
 
 > [!IMPORTANT]
-> Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。
+> オフボーディングにより、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (発生したアラートへの参照を含む) は、最大 6 か月間保持されます。
 
-macOS デバイスをオフボードするには、次の手順を実行します。
+macOS デバイスをオフボードするには、次の手順に従います。
 
- 1. **[MDE 基本設定ドメインのプロパティ] で**、これらの設定の値を削除します。
+ 1. **[MDE 基本設定ドメインのプロパティ] で**、これらの設定の値を削除します
     - 機能 
-        - システム拡張機能の使用
-        - データ損失防止の使用
+        - システム拡張機能を使用する
+        - データ損失防止を使用する
 
 1. [**保存**] を選択します。

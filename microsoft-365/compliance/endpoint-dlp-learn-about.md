@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のエンドポイントのデータ損失防止について説明する
+title: エンドポイント データ損失防止について
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,31 +18,33 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。ファイルは Microsoft 365 コンプライアンス ソリューションで表示されます '
-ms.openlocfilehash: f32e84434258ff4b4c5ea6af24f69c607952b56a
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+description: 'エンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。コンプライアンス ソリューションでファイルが表示されます '
+ms.openlocfilehash: e84d2de72e05991a7d8374a2e5214df90fb939d9
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714551"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953307"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
+# <a name="learn-about-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止について
 
-Microsoft 365 のデータ損失防止 (DLP) を使用すると、機密があると判断されたアイテムに対して、発生しているアクションを監視し、それらのアイテムの意図しない共有を防ぐことができます。DLPの詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-**エンドポイント データ損失防止** (Endpoint DLP) は、DLP のアクティビティ監視および保護能力を、Windows 10、Windows 11、および macOS (Catalina 10.15 以上) デバイスに物理的に保存される機密アイテムに拡張します。 デバイスが、 Microsoft 365 コンプライアンス ソリューションに オンボードすると、機密アイテムを使用してユーザーが行っていることに関する情報が[Activity Explorer](data-classification-activity-explorer.md)に表示され、[DLPポリシー](create-test-tune-dlp-policy.md)を通して、それらのアイテムに保護アクションを適用できます。
+Microsoft Purview のデータ損失防止 (DLP) を使用すると、機密があると判断されたアイテムに対して、発生しているアクションを監視し、それらのアイテムの意図しない共有を防ぐことができます。DLPの詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。
+
+**エンドポイント データ損失防止** (Endpoint DLP) は、DLP のアクティビティ監視および保護能力を、Windows 10、Windows 11、および macOS (Catalina 10.15 以上) デバイスに物理的に保存される機密アイテムに拡張します。 デバイスが、Microsoft Purview ソリューションに オンボードすると、機密アイテムを使用してユーザーが行っていることに関する情報が[アクティビティ エクスプローラー](data-classification-activity-explorer.md)に表示され、[DLP ポリシー](create-test-tune-dlp-policy.md)を通して、それらのアイテムに保護アクションを適用できます。
 
 > [!TIP]
 > リムーバブル記憶域のデバイス コントロールを探している場合は、「[Microsoft Defender for Endpoint Device Control のリムーバブル記憶域アクセス制御](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control)」 を参照してください。
 
 > [!NOTE]
-> Microsoft 365 コンプライアンスでは、機密項目の DLP ポリシー評価が一元的に行われるため、ポリシーとポリシー更新が個々のデバイスに配布されるまでのタイム ラグはありません。 コンプライアンス センターでポリシーが更新されると、それらの更新がサービス全体で同期されるまでに通常約 1 時間かかります。 ポリシーの更新が同期されると、対象のデバイス上のアイテムは、次回アクセスまたは変更されたときに自動的に再評価されます。
+> Microsoft Purview では、機密項目の DLP ポリシー評価が一元的に行われるため、ポリシーとポリシー更新が個々のデバイスに配布されるまでのタイム ラグはありません。 コンプライアンス センターでポリシーが更新されると、それらの更新がサービス全体で同期されるまでに通常約 1 時間かかります。 ポリシーの更新が同期されると、対象のデバイス上のアイテムは、次回アクセスまたは変更されたときに自動的に再評価されます。
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>監視と対処が必要なエンドポイントのアクティビティ
 
-Microsoft Endpoint DLP を使用すると、ユーザーが物理的に Windows 10、Windows 11、または macOS デバイスに保存されている機密アイテムに対して行う次の種類のアクティビティを監査および管理できます。
+エンドポイント DLP を使用すると、ユーザーが物理的に Windows 10、Windows 11、または macOS デバイスに保存されている機密アイテムに対して行う次の種類のアクティビティを監査および管理できます。
 
-|最新情報 |説明  |Windows 10、1809 以降、Windows 11| macOS Catalina 10.15 (プレビュー) | 監査可能/制限可能|
+|最新情報 |説明  |Windows 10、1809 以降、Windows 11| macOS Catalina 10.15| 監査可能/制限可能|
 |---------|---------|---------|---------|---------|
 |クラウド サービスへのアップロード、または許可されていないブラウザーによるアクセス    | ユーザーが制限されたサービス ドメインにアイテムをアップロードしようとした場合、またはブラウザーを介してアイテムにアクセスしようとした場合に検出します。  DLP に許可されていないブラウザーとしてリストされているブラウザーを使用している場合、アップロード アクティビティがブロックされ、ユーザーは Microsoft Edge を使用するようにリダイレクトされます。 その後、Microsoft Edge は、DLP ポリシー構成に基づいて、アップロードまたはアクセスを許可またはブロックします         |サポートされる | サポートされる|監査可能/制限可能|
 |他のアプリへのコピー    |ユーザーが保護されたアイテムから情報をコピーし、他のアプリ、プロセス、またはアイテムに貼り付けようとした場合に検出します。 同一のアプリ、プロセス、またはアイテム内での情報のコピーと貼り付けは、このアクティビティでは検出されません。|サポートされる|サポートされる         | 監査可能/制限可能|
@@ -56,7 +58,7 @@ Microsoft Endpoint DLP を使用すると、ユーザーが物理的に Windows 
 
 ## <a name="best-practice-for-endpoint-dlp-policies"></a>エンドポイント DLP ポリシーのベスト プラクティス
 
-たとえば、財務部門ユーザーのエンドポイントから、クレジットカード番号を含むすべての項目をブロックしたいとします。 次のようにお勧めします。
+たとえば、財務部門ユーザーのエンドポイントから、クレジットカード番号を含むすべての項目をブロックしたいとします。次の方法をお勧めします。
 
 - ポリシーを作成し、エンドポイントとそのユーザー グループにスコープを設定します。
 - 保護する情報の種類を検出するルールをポリシーに作成します。 この場合、**含まれるコンテンツ** を *　［機密情報の種類］** に設定し、**［クレジット カード］** を選択します。
@@ -125,7 +127,7 @@ DLP ポリシーの設計に関する詳細なガイダンスについては、�
 
 ### <a name="enabling-device-management"></a>デバイス管理を有効にする
 
-デバイス管理は、デバイスからテレメトリを収集できる機能です。これは、エンドポイント DLP や [インサイダー リスク管理](insider-risk-management.md)などの 365 Microsoft のコンプライアンスソリューションに導入する機能です。 DLP ポリシーの場所として使用するすべてのデバイスをオンボードする必要があります。
+デバイス管理は、デバイスからテレメトリを収集できる機能です。これは、エンドポイント DLP や[インサイダー リスク管理](insider-risk-management.md)などの Microsoft Purview ソリューションに導入する機能です。 DLP ポリシーの場所として使用するすべてのデバイスをオンボードする必要があります。
 
 > [!div class="mx-imgBorder"]
 > ![デバイス管理を有効にする。](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -201,10 +203,10 @@ DLP ポリシーの設計に関する詳細なガイダンスについては、�
 
 ここまでエンドポイント DLP について学びましたので、次のステップの手順は以下になります：
 
-1. [Windows 10 または Windows 11 デバイスを Microsoft 365 にオンボードする概要](device-onboarding-overview.md)
-1. [Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)](device-onboarding-macos-overview.md)
+1. [Windows 10 デバイスまたは Windows 11 デバイスを Microsoft Purview にオンボードする概要](device-onboarding-overview.md)
+1. [macOS デバイスを Microsoft Purview にオンボードする概要](device-onboarding-macos-overview.md)
 1. [エンドポイント データ損失防止の設定を構成する](dlp-configure-endpoint-settings.md)
-1. [Microsoft エンドポイント データ損失防止を使用する](endpoint-dlp-using.md)
+1. [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>関連項目
 

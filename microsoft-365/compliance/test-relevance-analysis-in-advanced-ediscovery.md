@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: 電子情報開示 (プレミアム) の Batch 計算後に [テスト] タブを使用して、処理の全体的な品質をテスト、比較、検証する方法について説明します。
-ms.openlocfilehash: 7e4541aa2309b6209537931160bf351d22ee8eb7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e568552501a07c74e7500a1041e69f4994668cd2
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935502"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991866"
 ---
 # <a name="test-relevance-analysis-in-ediscovery-premium"></a>電子情報開示での関連性分析のテスト (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Microsoft Purview 電子情報開示 (プレミアム) の [テスト] タブでは、処理の全体的な品質をテスト、比較、検証できます。 これらのテストは、Batch 計算後に実行されます。 コレクション内のファイルにタグを付けることで、専門家は、タグ付けされた各ファイルがケースに関連しているかどうかを最終的に判断します。
   

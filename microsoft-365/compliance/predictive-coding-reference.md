@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 2f70039d3e55c429bf175d850db907eb7dc5b598
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2dd5b5ce984a131031101e6606b8e758864ece30
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942163"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992856"
 ---
 # <a name="predictive-coding-reference-preview"></a>予測コーディングリファレンス (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、Microsoft Purview 電子情報開示 (プレミアム) の予測コーディング ツールの主要な概念とメトリックについて説明します。 記事のセクションはアルファベット順に一覧表示されます。
 

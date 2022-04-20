@@ -19,14 +19,16 @@ description: 電子情報開示 (プレミアム) カストディアン管理ツ
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 35b622e00caeeca78c85849f03b3a21f8a28b443
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e2de6209e08d6e8dd6f853724f26d026aec1c33f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943515"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993712"
 ---
 # <a name="view-custodian-audit-activity"></a>カストディアンの監査アクティビティを表示する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 Microsoft Purview 電子情報開示 (プレミアム) が、Microsoft Purview コンプライアンス ポータルの既存の監査ログ検索ツールと統合されるようになりました。 この埋め込みエクスペリエンスを使用すると、電子情報開示 (プレミアム) カストディアン管理ツールを使用して、ケース内のカストディアンのアクティビティに簡単にアクセスして検索することで、調査を容易にすることができます。
 

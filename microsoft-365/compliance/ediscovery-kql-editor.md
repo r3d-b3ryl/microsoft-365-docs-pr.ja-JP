@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: KQL エディターを使用すると、コンテンツ検索、電子情報開示 (Standard)、電子情報開示 (プレミアム) で電子情報開示検索クエリを構成できます。
-ms.openlocfilehash: f1339b064c736d19bb428f812429cf0620cb3f53
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cbd7adb02c926477fd81568ed950ebd16110c79b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949963"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993800"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries"></a>KQL エディターを使用して検索クエリを作成する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365電子情報開示ツール検索の新しいKQL クエリ エクスペリエンスでは、コンテンツ検索、Microsoft Purview 電子情報開示 (Standard)、および電子情報開示 (プレミアム) で検索クエリを作成するときのフィードバックとガイダンスが提供されます。 エディターでクエリを入力すると、サポートされている検索可能なプロパティと条件のオートコンプリートが提供され、標準のプロパティと条件でサポートされている値の一覧が提供されます。 たとえば、クエリで電子メール プロパティを `kind` 指定した場合、エディターには、選択できるサポートされている値の一覧が表示されます。 KQL エディターには、検索を実行する前に修正できる潜在的なクエリ エラーもリアルタイムで表示されます。 何より、標準条件ビルダーのキーワードと条件カードを使用してクエリを手動で作成しなくても、複雑なクエリをエディターに直接貼り付けることができます。
   

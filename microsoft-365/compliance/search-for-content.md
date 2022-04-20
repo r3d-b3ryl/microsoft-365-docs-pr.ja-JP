@@ -11,16 +11,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Microsoft Purview コンプライアンス ポータルのコンテンツ検索電子情報開示ツールを使用すると、Exchange メールボックス内の電子メール、SharePoint サイトやOneDriveの場所のドキュメント、Skype for Businessのインスタント メッセージング会話をすばやく見つけることができます。
-ms.openlocfilehash: b339d2f4ebe738407c42eda86f18a5167af03921
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4efe2f4b4735005c10fd59e618bb6ecc8be51ec0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941943"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993653"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索する
 
-Microsoft Purview コンプライアンス ポータルのコンテンツ検索ツールを使用すると、Exchange メールボックス内のメール、SharePoint サイトやOneDriveの場所のドキュメント、Skype for Businessのインスタント メッセージング会話をすばやく見つけることができます。 コンテンツ検索ツールは、Microsoft Teams や Microsoft 365 グループなどのコラボレーション ツール内のメール、ドキュメント、インスタント メッセージングの会話を検索するために使用できます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview コンプライアンス ポータルのコンテンツ検索ツールを使用して、Exchange メールボックスのメール、SharePoint サイトおよび OneDrive ロケーションのドキュメント、Skype for Business のインスタント メッセージングの会話をすばやく検索できます。 コンテンツ検索ツールは、Microsoft Teams や Microsoft 365 グループなどのコラボレーション ツール内のメール、ドキュメント、インスタント メッセージングの会話を検索するために使用できます。
   
 ## <a name="search-for-content"></a>コンテンツを検索する
 

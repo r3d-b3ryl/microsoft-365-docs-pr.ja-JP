@@ -20,14 +20,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: サード パーティのデータ コネクタと Microsoft Graph API を使用して Microsoft Purview ソリューションを拡張する方法について説明します。
-ms.openlocfilehash: e61cd2dfa8121a0925cc89fd5373569d9697936a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9d2c3235a29e2d25e24656a4ff94216cde925b6c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942757"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992262"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Microsoft Purview と Microsoft Priva の拡張性
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview ソリューションは、組織がコンプライアンス リスクをインテリジェントに評価し、機密データを管理および保護し、規制要件に効果的に対応するのに役立ちます。 Microsoft Purview は拡張性の高いシナリオが豊富で、組織はコンプライアンス ソリューションの適応、拡張、統合、高速化、サポートを行うことができます。
 

@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft Purview 電子情報開示 (プレミアム) ケースでより効率的にレビューできるようにコンテンツを整理するために、レビュー セットでクエリを作成して実行する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ead066428d5c2404da5bf863ad428784b3c3a30c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: aad8cd7461c795f8ecba03edab76e81e8384430d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936293"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991932"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>レビュー セット内のコンテンツのクエリとフィルター
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ほとんどの場合、レビュー セット内のコンテンツを詳しく調べ、より効率的なレビューを容易にするために整理すると便利です。 レビュー セットでフィルターとクエリを使用すると、レビューの条件を満たすドキュメントのサブセットに焦点を当てるのに役立ちます。
 

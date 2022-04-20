@@ -13,21 +13,23 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft コンプライアンス マネージャーがリスクへの対処と、コンプライアンスに対する方針の改善のために実行するアクションに基づいて個人用スコアを計算する方法について説明します。
+description: Microsoft Purview コンプライアンス マネージャーが、リスクに対処し、コンプライアンス体制を改善するために実行されたアクションに基づいて、パーソナライズされたスコアを計算する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9c6667ad9be6164639e65e23fb136de1bc196f60
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 07a168bd32e73502380260db748fd145648c69ae
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320033"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971178"
 ---
 # <a name="compliance-score-calculation"></a>コンプライアンス スコアの計算
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事の内容:** コンプライアンス マネージャーが組織のコンプライアンス スコアを計算する方法について説明します。 この記事では、**スコアの解釈方法**、**データ保護のベースラインの評価** に含まれる内容、**継続的な監視**、**さまざまなアクションを管理およびスコアリングする方法** について説明します。
 
 > [!IMPORTANT]
-> コンプライアンス マネージャーの推奨事項は、コンプライアンスの保証と捉えることはできません。 お客様の規制環境ごとにお客様独自のコントロールの有効性を評価および検証するかどうかは、お客様の判断に委ねられています。 これらのサービスには、[オンライン サービスの条件](https://go.microsoft.com/fwlink/?linkid=2108910)の利用規約が適用されます。 「[Microsoft 365 コンプライアンスに関するライセンスとガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」も参照してください。
+> コンプライアンス マネージャーの推奨事項は、コンプライアンスの保証と捉えることはできません。 お客様の規制環境ごとにお客様独自のコントロールの有効性を評価および検証するかどうかは、お客様の判断に委ねられています。 これらのサービスは、 [製品](https://go.microsoft.com/fwlink/?linkid=2108910)条項の使用条件の対象となります。 「[Microsoft 365 コンプライアンスに関するライセンスとガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager)」も参照してください。
 
 ## <a name="how-to-read-your-compliance-score"></a>コンプライアンス スコアの読み方
 
@@ -55,9 +57,9 @@ ms.locfileid: "63320033"
 
 ## <a name="how-compliance-manager-continuously-assesses-controls"></a>コンプライアンス マネージャーがコントロールを継続的に評価する方法
 
-コンプライアンス マネージャーは、特定の構成が改善アクションの実装要件を満たすMicrosoft 365を判断するのに役立つ、環境内の設定を自動的に識別します。 コンプライアンス マネージャーは、情報ガバナンス、情報保護、通信コンプライアンス、インサイダー リスク管理など、展開した可能性のある他のコンプライアンス ソリューションからのシグナルを検出し、補完的な改善アクションの Microsoft Secure Score 監視も活用します。
+コンプライアンス マネージャーは、特定の構成が改善アクションの実装要件を満たすタイミングを決定するのに役立つ、Microsoft 365環境の設定を自動的に識別します。 コンプライアンス マネージャーは、データ ライフサイクル管理、情報保護、通信コンプライアンス、インサイダー リスク管理など、展開した可能性のある他のコンプライアンス ソリューションからのシグナルを検出し、補完的な改善アクションの Microsoft Secure Score 監視も活用します。
 
-変更後 24 時間以内にダッシュボードでアクションの状態が更新されます。 推奨事項に従ってコントロールを実装すると、通常、コントロールの状態は翌日更新されます。
+アクションの状態は、変更が加えられた後 24 時間以内にダッシュボードで更新されます。 推奨事項に従ってコントロールを実装すると、通常、コントロールの状態は翌日更新されます。
 
 たとえば、Azure AD ポータルで多要素認証 (MFA) をオンにすると、コンプライアンス マネージャーはその設定を検出し、コントロール アクセス ソリューションの詳細に反映します。 一方、MFA をオンにしなかった場合、コンプライアンス マネージャーが推奨アクションとしてこれにフラグを付けます。
 
@@ -119,4 +121,4 @@ ms.locfileid: "63320033"
 | 修正および必須 | 3 |
 | 修正および任意 | 1 |
   
-![コンプライアンス マネージャーのアクション ポイントの値。](../media/compliance-score-action-scoring.png "コンプライアンス マネージャー アクションのポイント値")
+![Compliance Manager アクション ポイントの値。](../media/compliance-score-action-scoring.png "コンプライアンス マネージャー アクションのポイント値")

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44d09eefb065ee204dd90980dfe710d6b3ddb88e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d97442fc2c3767a30c1ea98dc4a1ee7a38e56b45
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666792"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971003"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで電子メール セキュリティ レポートを表示する
 
@@ -110,7 +110,6 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 > [!NOTE]
 > **Exchangeトランスポート ルール レポート** が EAC で使用できるようになりました。 詳細については、[新しい EAC のトランスポート ルール レポートExchangeを参照してください](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report)。
 
-
 ### <a name="chart-breakdown-by-direction"></a>方向別のグラフの内訳
 
 :::image type="content" source="../../media/transport-rule-report-etr-direction-view.png" alt-text="Exchange トランスポート ルール レポートの Exchange トランスポート ルールの方向ビュー" lightbox="../../media/transport-rule-report-etr-direction-view.png":::
@@ -156,7 +155,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 - **Date**
 - **DLP ポリシー** (**DLP Exchange トランスポート ルールのみでデータを表示**)
 - **トランスポート ルール**
-- **件名**
+- **[件名]**
 - **[送信者のアドレス]**
 - **受信者の住所**
 - **重大度**
@@ -216,7 +215,7 @@ Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポー�
 - **型**:
   - **良いメール**
   - **マルウェア**
-  - **[スパム]**
+  - **スパム**
   - **エッジ保護**
   - **ルール メッセージ**
   - **フィッシング詐欺メール**
@@ -248,7 +247,7 @@ Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポー�
 - **型**:
   - **良いメール**
   - **マルウェア**
-  - **[スパム]**
+  - **スパム**
   - **エッジ保護**
   - **ルール メッセージ**
   - **フィッシング詐欺メール**
@@ -411,13 +410,13 @@ Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポー�
 - **申請 ID**
 - **ネットワーク メッセージ ID**
 - **Sender**
-- **[名前]**
+- **名前**
 - **提出者**
 - **送信の理由**:
   - **迷惑ではない**
   - **フィッシング**
   - **マルウェア**
-  - **[スパム]**
+  - **スパム**
 - **再スキャン状態**:
   - **Pending**
   - **Completed**
@@ -519,7 +518,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **[件名]**
+- **件名**
 - **送信者**
 - **受信者**
 - **検出テクノロジ**
@@ -749,7 +748,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **[件名]**
+- **件名**
 - **送信者**
 - **受信者**
 - **検出テクノロジ**
@@ -1021,7 +1020,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 - **報告された理由**
   - **迷惑ではない**
   - **フィッシング**
-  - **[スパム]**
+  - **スパム**
 - **フィッシング シミュレーション**: **はい** または **いいえ**
 
 フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
@@ -1063,8 +1062,8 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 
 - **組織の管理**
 - **セキュリティ管理者**
-- **セキュリティ閲覧者**
-- **グローバル閲覧者**
+- **セキュリティ リーダー**
+- **グローバル リーダー**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
@@ -1156,7 +1155,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 
 2. **[ダウンロード用のレポート]** ページに、使用可能なレポートごとに次の情報が表示されます。
    - **開始日**
-   - **[名前]**
+   - **名前**
    - **レポートの種類**
    - **最後に送信された**
    - **方向**

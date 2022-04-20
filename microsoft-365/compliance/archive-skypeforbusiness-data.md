@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft Purview コンプライアンス ポータルでコネクタを設定して使用して、Skype for BusinessからMicrosoft 365にデータをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 406c8db8a28303657b6c475bf826ee501c9e7620
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 510eea94519b6f2278b9319da8c37b683639680c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937193"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992416"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Skype for Business データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、Skype for Business プラットフォームからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には[、](https://www.veritas.com/en/au/insights/merge1/skype-for-business)サード パーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらの項目をMicrosoft 365にインポートするように構成されたSkype for Business コネクタが用意されています。 コネクタは、ユーザー間のメッセージ、常設チャット、会議メッセージなどのコンテンツをSkype for Businessから電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザーのメールボックスにインポートします。
 

@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がネイティブ コネクタを設定して使用して Twitter データをMicrosoft 365にインポートする方法について説明します。
-ms.openlocfilehash: d025de04060184a6bd39fcef5ab68acdde65bc01
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 95a6a3abd9bed908172ea41b33e4fd60376bea01
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940557"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993515"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Twitter データをアーカイブする Microsoft コネクタを設定する (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルのコネクタを使用して、Twitter からMicrosoft 365にデータをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の Twitter アカウント (スケジュールされたベース) に接続され、アイテムのコンテンツが電子メール メッセージ形式に変換され、そのアイテムがMicrosoft 365のメールボックスにインポートされます。
 

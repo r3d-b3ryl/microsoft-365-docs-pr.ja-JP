@@ -16,16 +16,18 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: この記事では、機密情報の種類の概要と、機密性の高いアイテムを識別するために社会保障、クレジット カード、銀行口座番号などの機密情報を検出する方法について説明します。
-ms.openlocfilehash: aef78c5ab3348b7a0b00a649f94fa5e50a99a397
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0e154e0ee578b9a182cb7cd5b43cafba466f9bcd
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760319"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971353"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
-組織の管理下にある機密アイテムを識別して分類することは、[Information Protection規範](./information-protection.md)の最初のステップです。  Microsoft 365には、分類できるようにアイテムを識別する 3 つの方法があります。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+組織の管理下にある機密アイテムを識別して分類することは、[Information Protection規範](./information-protection.md)の最初のステップです。  Microsoft Purview では、アイテムを分類できるように、次の 3 つの方法でアイテムを識別できます。
 
 - ユーザーが手動で
 - 機密情報の種類など、自動パターン認識
@@ -37,7 +39,7 @@ Microsoft では、多数の事前構成済み SIT を提供するか、独自�
 
 ## <a name="sensitive-information-types-are-used-in"></a>機密情報の種類は、
 
-- [データ損失防止ポリシー](dlp-learn-about-dlp.md)
+- [Microsoft Purview データ損失防止ポリシー](dlp-learn-about-dlp.md)
 - [機密ラベル](sensitivity-labels.md)
 - [保持ラベル](retention.md)
 - [インサイダー リスク管理](insider-risk-management.md)
@@ -53,7 +55,7 @@ Microsoft では、多数の事前構成済み SIT を提供するか、独自�
 
 ### <a name="named-entity-sensitive-information-types"></a>名前付きエンティティの機密情報の種類
 
-既定では、名前付きエンティティの SID もコンプライアンス コンソールに表示されます。 ユーザー名、物理アドレス、医療条件を検出します。 編集またはコピーすることはできません。 詳細については、「 [名前付きエンティティ (プレビュー)](named-entities-learn.md#learn-about-named-entities-preview) 」を参照してください。 名前付きエンティティ SIT には、次の 2 種類があります。
+既定では、名前付きエンティティの SID もコンプライアンス コンソールに表示されます。 ユーザー名、物理アドレス、医療条件を検出します。 編集またはコピーすることはできません。 詳細については、 [名前付きエンティティに関する ](named-entities-learn.md#learn-about-named-entities) ページを参照してください。 名前付きエンティティ SIT には、次の 2 種類があります。
 
 **バンドルされていない**
 
@@ -172,9 +174,8 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 - **PowerShell を使用する - PowerShell** を使用して、カスタムの機密情報の種類を設定できます。 この方法は、UI を使用する場合よりも複雑ですが、より多くの構成オプションがあります。 詳細については、「[セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。
 
 > [!NOTE]
-> Microsoft 365 サービスのデータ損失防止、Microsoft 365 サービスのMicrosoft Information Protection、コミュニケーション コンプライアンス、情報ガバナンス、およびレコード管理で、信頼性レベルの向上をすぐに使用できます。
-> Microsoft 365 Information Protectionでは、次の 2 バイト文字セット言語がサポートされるようになりました。
->
+> Microsoft Purview データ損失防止サービス、情報保護、通信コンプライアンス、データ ライフサイクル管理、およびレコード管理内ですぐに使用するために、信頼レベルの向上を利用できます。
+> Information Protectionでは、次の 2 バイト文字セット言語がサポートされるようになりました。
 > - 中国語 (簡体字)
 > - 中国語 (繁体字)
 > - 韓国語

@@ -13,15 +13,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧でエントリを変更および削除する方法について学習できます。
+description: 管理者は、セキュリティ ポータルのテナント許可/ブロックリストでエントリを変更および削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f1ab3f815cc64af6d1383df228ef7961c3afdcec
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7da986c42421c797f2d01b1e61d50c06933e373f
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330189"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970923"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストのエントリを変更および削除する
 
@@ -32,109 +32,108 @@ ms.locfileid: "63330189"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-ポータルまたは PowerShell Microsoft 365 Defenderを使用して、テナント許可/ブロック一覧のエントリを変更および削除できます。
+Microsoft 365 Defender ポータルまたは PowerShell を使用して、テナント許可/ブロック リストのエントリを変更および削除できます。
 
 ## <a name="use-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用する
 
-### <a name="modify-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧のエントリを変更する
+### <a name="modify-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック リストのエントリを変更する
 
-1. ポータルで、[Microsoft 365 Defenderルールのポリシー]  \>  \>  \> &[テナントの許可/ブロックリスト] **セクションに移動します**。
+1. Microsoft 365 Defender ポータルで、[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。
 
 2. 変更するエントリの種類を含むタブを選択します。
    - [**Senders (送信者)**]
    - 「**スプーフィング**」
-   - **URL**
+   - **Url**
    - **Files**
 
-
-3. 変更するエントリを選択し、[編集] アイコンを ![クリックします。](../../media/m365-cc-sc-edit-icon.png) **編集**。 表示されるフライアウトで変更できる値は、前の手順で選択したタブによって異なっています。
+3. 変更するエントリを選択し、[編集] アイコンをクリックします ![。](../../media/m365-cc-sc-edit-icon.png) **編集**。 ポップアップで変更できる値は、前の手順で選択したタブによって異なります。
    - [**Senders (送信者)**]
-     - **有効期限や有効期限** はありません。
+     - **期限切れ** や有効期限を設定しないでください。
      - **省略可能なメモ**
    - 「**スプーフィング**」
-     - **アクション**: 値を [許可] または [ブロック **] に** 変更 **できます**。
-   - **URL**
-     - **有効期限や有効期限** はありません。
+     - **アクション**: 値を **[許可** ] または [ **ブロック**] に変更できます。
+   - **Url**
+     - **期限切れ** や有効期限を設定しないでください。
      - **省略可能なメモ**
    - **Files**
-     - **有効期限や有効期限** はありません。
+     - **期限切れ** や有効期限を設定しないでください。
      - **省略可能なメモ**
 
 4. 完了したら、**[保存]** をクリックします。
 
 > [!NOTE]
-> 拡張できるのは、作成日から最大 30 日後です。 ブロックは最大 90 日間延長できますが、許可とは異なり、[有効期限が切れることはありません] に設定できます。
+> 延長できるのは、作成日から最大で 30 日間です。 ブロックは最大 90 日間延長できますが、許可とは異なり、[期限切れなし] に設定することもできます。
 
-### <a name="remove-entries-from-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧からエントリを削除する
+### <a name="remove-entries-from-the-tenant-allowblock-list"></a>テナント許可/ブロック リストからエントリを削除する
 
-1. ポータルで、[Microsoft 365 Defenderルールのポリシー]  \>  \>  \> &[テナントの許可/ブロックリスト] **セクションに移動します**。
+1. Microsoft 365 Defender ポータルで、[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。
 
 2. 削除するエントリの種類を含むタブを選択します。
    - [**Senders (送信者)**]
    - 「**スプーフィング**」
-   - **URL**
+   - **Url**
    - **Files**
- 
-3. 削除するエントリを選択し、[削除] アイコンを ![クリックします。](../../media/m365-cc-sc-delete-icon.png) **Delete**
 
-4. 表示される警告ダイアログで、[削除] を **クリックします**。
+3. 削除するエントリを選択し、[削除] アイコンをクリックします ![。](../../media/m365-cc-sc-delete-icon.png) **Delete**
+
+4. 表示される警告ダイアログで、[削除] をクリック **します**。
 
 ## <a name="use-powershell"></a>PowerShell を使う
 
-### <a name="modify-allow-or-block-sender-file-and-url-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧の送信者、ファイル、および URL エントリの許可またはブロックを変更する
+### <a name="modify-allow-or-block-sender-file-and-url-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧の送信者、ファイル、および URL エントリを変更またはブロックする
 
-テナント許可/ブロック一覧の送信者、ファイル、および URL エントリを許可またはブロックするには、次の構文を使用します。
+テナント許可/ブロックリストの送信者、ファイル、URL のエントリを変更またはブロックするには、次の構文を使用します。
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
 ```
 
-次の使用例は、指定したブロック URL エントリの有効期限を変更します。
+この例では、指定したブロック URL エントリの有効期限を変更します。
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate "5/30/2020"
 ```
 
-構文とパラメーターの詳細については、「 [Set-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/set-tenantallowblocklistitems)。
+構文とパラメーターの詳細については、「 [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems)」を参照してください。
 
-### <a name="remove-allow-or-block-sender-url-or-file-entries-from-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧から送信者、URL、またはファイルエントリを許可またはブロックする
+### <a name="remove-allow-or-block-sender-url-or-file-entries-from-the-tenant-allowblock-list"></a>テナント許可/ブロックリストから送信者、URL、またはファイルエントリを削除する
 
-テナント許可/ブロック一覧から送信者、ファイル、および URL エントリを許可またはブロックするには、次の構文を使用します。
+テナント許可/ブロック一覧から送信者、ファイル、URL の許可またはブロックのエントリを削除するには、次の構文を使用します。
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
-次の使用例は、指定したブロック URL エントリをテナント許可/ブロック一覧から削除します。
+次の使用例は、指定したブロック URL エントリをテナント許可/ブロック リストから削除します。
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
 ```
 
-構文とパラメーターの詳細については、「 [Remove-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/remove-tenantallowblocklistitems)。
+構文とパラメーターの詳細については、「 [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems)」を参照してください。
 
-### <a name="modify-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧からのスプーフィングされた送信者エントリの変更許可またはブロック
+### <a name="modify-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>テナント許可/ブロックリストからスプーフィングされた送信者エントリを変更またはブロックする
 
-テナント許可/ブロック一覧でスプーフィングされた送信者エントリの許可またはブロックを変更するには、次の構文を使用します。
+テナント許可/ブロックリストのスプーフィングされた送信者エントリを変更またはブロックするには、次の構文を使用します。
 
 ```powershell
 Set-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN"> -Action <Allow | Block>
 ```
 
-次の使用例は、スプーフィングされた送信者エントリを許可からブロックに変更します。
+この例では、スプーフィングされた送信者エントリを許可からブロックに変更します。
 
 ```powershell
 Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -Action Block
 ```
 
-構文とパラメーターの詳細については、「 [Set-TenantAllowBlockListSpoofItems」を参照してください](/powershell/module/exchange/set-tenantallowblocklistspoofitems)。
+構文とパラメーターの詳細については、「 [Set-TenantAllowBlockListSpoofItems」を参照](/powershell/module/exchange/set-tenantallowblocklistspoofitems)してください。
 
-### <a name="remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧からスプーフィングされた送信者エントリを許可またはブロックする
- 
-テナント許可/ブロック一覧からスプーフィング送信者エントリを許可またはブロックするには、次の構文を使用します。
+### <a name="remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>テナント許可/ブロックリストからスプーフィングされた送信者エントリを削除またはブロックする
+
+テナント許可/ブロックリストからスプーフィング送信者の許可エントリまたはブロックスプーフィング エントリを削除するには、次の構文を使用します。
 
 ```powershell
 Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
 ```
 
-構文とパラメーターの詳細については、「 [Remove-TenantAllowBlockListSpoofItems」を参照してください](/powershell/module/exchange/remove-tenantallowblocklistspoofitems)。
+構文とパラメーターの詳細については、「 [Remove-TenantAllowBlockListSpoofItems](/powershell/module/exchange/remove-tenantallowblocklistspoofitems)」を参照してください。

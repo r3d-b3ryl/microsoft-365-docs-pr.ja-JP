@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、電子情報開示 (Standard) ケースを管理する方法について説明します。 これには、ケースの終了、クローズされたケースの再び開き、ケースの削除が含まれます。
-ms.openlocfilehash: 3ceb23f3ec215f3e9a7e5db036e71e5fe2842191
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ee18a169ace43f03a0407b87c8ae70705af2f43c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940359"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992372"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>電子情報開示 (Standard) ケースを閉じる、再度開く、削除する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、Microsoft 365の Microsoft Purview 電子情報開示 (Standard) ケースを閉じ、再度開き、削除する方法について説明します。
 

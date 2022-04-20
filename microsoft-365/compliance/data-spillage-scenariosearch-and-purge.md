@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 電子情報開示ツールと検索ツールを使用して、組織内のデータ流出インシデントを管理して対応します。
-ms.openlocfilehash: e9e81ae81c344bfc8773174c8650a1808faddd5e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 875c63f264e750603c4ad8a0b5bf1df2b6e45217
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948069"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993230"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューション シリーズ: データ流出シナリオ - 検索と消去
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  **データの流出とは何か、なぜ気にする必要がありますか?** データの流出は、機密ドキュメントが信頼されていない環境にリリースされたときです。 データ流出インシデントが検出された場合は、流出のサイズと場所をすばやく評価し、その周囲のユーザー アクティビティを調べてから、流出したデータをシステムから完全に消去することが重要です。
   
@@ -183,7 +185,7 @@ ms.locfileid: "64948069"
 - メールボックスごとに最大 10 個のアイテムを一度に削除できます。メッセージを検索および削除する機能はインシデント対応ツールとして作られているので、この制限によってメールボックスからメッセージをすばやく削除できます。これは、ユーザーのメールボックスをクリーン アップするための機能ではありません。
 
 > [!IMPORTANT]
-> 電子情報開示 (プレミアム) ケースのレビュー セット内のメール アイテムは、この記事の手順を使用して削除することはできません。 これは、レビュー セット内のアイテムが、ライブ サービス内のアイテムのコピーであり、Azure Storageの場所にコピーおよび保存されるためです。 つまり、手順 3. で作成したコンテンツ検索では返されません。 レビュー セット内のアイテムを削除するには、レビュー セットを含む電子情報開示 (プレミアム) ケースを削除する必要があります。 詳細については、「[電子情報開示 (プレミアム) ケースを閉じるか削除する](close-or-delete-case.md)」を参照してください。
+> 電子情報開示 (プレミアム) ケースのレビュー セット内のメール アイテムは、この記事の手順で削除することはできません。 これは、レビュー セット内のアイテムが、ライブ サービス内のアイテムのコピーであり、Azure Storageの場所にコピーおよび保存されるためです。 つまり、手順 3. で作成したコンテンツ検索では返されません。 レビュー セット内のアイテムを削除するには、レビュー セットが含まれている電子情報開示 (プレミアム) ケースを削除する必要があります。 詳細については、「[Close or delete an eDiscovery (Premium) case (電子情報開示 (プレミアム) ケースを閉じるか、または削除する)](close-or-delete-case.md)」を参照してください。
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>手順 8: 削除の証明を確認し、提出し、監査する
 

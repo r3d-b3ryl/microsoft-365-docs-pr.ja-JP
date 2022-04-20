@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 description: テキスト、注釈、変換、ネイティブ ビューなど、電子情報開示 (プレミアム) でコンテンツを表示する方法を選択します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 775804bd8e69e11bdacd1fee141234b07462dbef
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8248eaa1fd8bce5c34bb8c936b9fecc0dd29deba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945805"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992827"
 ---
 # <a name="view-documents-in-a-review-set-in-ediscovery-premium"></a>電子情報開示でレビュー セット内のドキュメントを表示する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示 (プレミアム) は、目的が異なる複数のビューアーを介してコンテンツを表示します。 さまざまなビューアーを使用するには、レビュー セット内の任意のドキュメントをクリックします。 現在提供されているビューアーは次のとおりです。
 

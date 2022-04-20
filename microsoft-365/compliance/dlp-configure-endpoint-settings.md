@@ -1,5 +1,5 @@
 ---
-title: エンドポイント データ損失防止の設定を構成する
+title: エンドポイント DLP 設定を構成する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,14 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: エンドポイント データ損失防止 (DLP) の中央設定を構成する方法について説明します。
-ms.openlocfilehash: ebe995512769275999e7ec4837e16542ffce7100
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: f76f6ec18464229fa50ad54a06fc7969abb3dd23
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680316"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952822"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>エンドポイント データ損失防止の設定を構成する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 エンドポイント データ損失防止 (DLP) の動作の多くの側面は、一元的に構成された設定によって制御されます。 設定は、デバイスのすべての DLP ポリシーに適用されます。
 
@@ -46,7 +48,7 @@ ms.locfileid: "63680316"
 
 ### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>エンドポイント DLP Windows 10/11 および macOS 設定
 
-|Setting |Windows 10、1809 以降、Windows 11  |macOS Catalina 10.15 以降 (プレビュー)  |メモ  |
+|Setting |Windows 10、1809 以降、Windows 11  |macOS Catalina 10.15 以降 |メモ  |
 |---------|---------|---------|---------|
 |ファイルパスの除外     |サポート         |サポート         |macOS には、既定でオンになっている除外の推奨リストが含まれています          |
 |制限されたアプリ     |サポート         |サポート         |         |
@@ -61,9 +63,9 @@ ms.locfileid: "63680316"
 
 ### <a name="advanced-classification-scanning-and-protection"></a>高度な分類のスキャンと保護
 
-高度な分類のスキャンと保護により、クラウド ベースのMicrosoft 365サービスを使用して、アイテムをスキャンし、分類し、結果をローカル コンピューターに返す高度なデータ分類サービスを利用できます。 つまり、DLP ポリシーで[厳密なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)分類、[名前付きエンティティ (プレビュー)](named-entities-learn.md#learn-about-named-entities-preview)、[トレーニング可能な分類子](classifier-learn-about.md#learn-about-trainable-classifiers)などの分類手法を利用できるということです。
+高度な分類のスキャンと保護によって、より高度な Microsoft Purview クラウドベースのデータ分類サービスを使用して、項目をスキャンし、分類し、結果をローカル コンピューターに返すことができます。 つまり、DLP ポリシーで[厳密なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)分類、[名前付きエンティティ](named-entities-learn.md)、[トレーニング可能な分類子](classifier-learn-about.md)などの分類手法を利用できるということです。
 
-高度な分類を有効にすると、コンテンツはスキャンと分類のためにローカル デバイスからクラウド サービスに送信されます。 帯域幅の使用率が懸念される場合は、24 時間のローリングで使用できる量に関して制限を設定できます。 制限はエンドポイント DLP 設定で構成され、デバイスごとに適用されます。 帯域幅使用率の制限を設定し、それを超えた場合、DLP はユーザー コンテンツのクラウドへの送信を停止します。 この時点では、データ分類はデバイス上でローカルに続行されますが、厳密なデータ一致、名前付きエンティティ (プレビュー)、トレーニング可能な分類子を使用した分類は使用できません。 累積帯域幅使用率が 24 時間のローリング制限を下回ると、クラウド サービスとの通信が再開されます。
+高度な分類を有効にすると、コンテンツはスキャンと分類のためにローカル デバイスからクラウド サービスに送信されます。 帯域幅の使用率が懸念される場合は、24 時間のローリングで使用できる量に関して制限を設定できます。 制限はエンドポイント DLP 設定で構成され、デバイスごとに適用されます。 帯域幅使用率の制限を設定し、それを超えた場合、DLP はユーザー コンテンツのクラウドへの送信を停止します。 この時点で、データ分類はデバイス上でローカルに続行されますが、完全なデータ一致、名前付きエンティティ、トレーニング可能な分類子を使用した分類は使用できません。 累積帯域幅使用率が 24 時間のローリング制限を下回ると、クラウド サービスとの通信が再開されます。
 
 帯域幅の使用率が問題でない場合は、**[制限なし]** を選択して無制限の帯域幅使用率を許可します。
 
@@ -81,7 +83,7 @@ ms.locfileid: "63680316"
 
 ### <a name="file-path-exclusions"></a>ファイルパスの除外
 
-[コンプライアンス センター](https://compliance.microsoft.com) > **データ損失防止** > **エンドポイント DLP 設定** > **ファイル パスの除外** を開きます。
+[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com) > **データ損失防止** > **Endpoint DLP 設定** >  **ファイルパスの除外** を開きます。
 
 DLP があまりにもうるさい、または関心のあるファイルが含まれないなどの理由で、デバイス上のDLP 監視、DLP 警告、および DLP ポリシー適用から特定のパスを除外したくなることがあります。 これらの場所にあるファイルは監査されず、その場所で作成または変更されたファイルは、DLP ポリシー適応の対象になりません。 DLP 設定では、パスを除外するように構成できます。
 
@@ -103,7 +105,7 @@ DLP があまりにもうるさい、または関心のあるファイルが含�
 
 - 上記のすべての組み合わせ。 <br/>例: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
-#### <a name="macos-devices-preview"></a>macOS デバイス (プレビュー)
+#### <a name="macos-devices"></a>macOS デバイス
 
 Windows 10 デバイスと同様に、macOS デバイスに独自の除外を追加できます。
 
@@ -127,7 +129,7 @@ Windows 10 デバイスと同様に、macOS デバイスに独自の除外を追
 
 #### <a name="restricted-apps"></a>制限されたアプリ
 
-**制限付きアプリ** (以前は **許可されていないアプリ** と呼ばれていた) は、作成するアプリケーションのリストです。 ユーザーがリスト上のアプリを使用してデバイス上の DLP 保護ファイルに **_アクセス_** するアクションを構成します。 これは、Windows 10 および macOS デバイス で使用できます (プレビュー)。
+**制限付きアプリ** (以前は **許可されていないアプリ** と呼ばれていた) は、作成するアプリケーションのリストです。 ユーザーがリスト上のアプリを使用してデバイス上の DLP 保護ファイルに **_アクセス_** するアクションを構成します。 これは、Windows 10 および macOS デバイス で使用できます。
 
 **制限付きアプリによるアクセス** がポリシーで選択されていて、ユーザーが制限付きアプリのリストにあるアプリを使用して保護されたファイルにアクセスする場合、アクティビティは構成方法に応じて `audited`、 `blocked`、または `blocked with override` になります。 これは、同じアプリが **制限付きアプリ グループ** のメンバーでない限り、 **制限付きアプリ グループ** 内のアクティビティ用に構成されたアクションは、**制限付きアプリ** のリストのアクセス アクティビティ用に構成されたアクションをオーバーライドします。 すべてのアクティビティが監査され、アクティビティエクスプローラーで確認できます。
 
@@ -185,7 +187,7 @@ Notepad.exe が **制限付きアプリ** に追加されていて、**すべて
 
 アプリが **制限されたアプリ グループ (プレビュー)** のアプリのファイル アクティビティでない場合、**制限されたアプリ アクティビティ** のリストに含まれていない場合、アクションが `Audit only` の **制限付きアプリ アクティビティ** のリストにあるか、'オーバーライドでブロック'されている場合、**すべてのアプリのファイル アクティビティ** で定義されているすべての制限は同じルールに適用されます。  
 
-#### <a name="macos-devices-preview"></a>macOS デバイス (プレビュー)
+#### <a name="macos-devices"></a>macOS デバイス
 
 Windows デバイスと同様に、macOS アプリが機密データにアクセスできないようにするには、**制限付きアプリ アクティビティ** のリストで定義します。 
 
@@ -236,7 +238,7 @@ macOS デバイスの場合は、完全なファイル パスを追加する必�
 #### <a name="service-domains"></a>サービスドメイン
 
 > [!NOTE]
-> **サービス ドメイン** 設定は、[Microsoft コンプライアンス拡張機能](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension)がインストールされた Microsoft Edge または Google Chrome を使用してアップロードされたファイルにのみ適用されます。
+> **サービス ドメイン** 設定は、[Microsoft Purview Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension)がインストールされた Microsoft Edge または Google Chrome を使用してアップロードされたファイルにのみ適用されます。
 
 ポリシーによって保護されている機密ファイルを Microsoft Edge の特定のサービス ドメインにアップロードできるかどうかを制御できます。
 
@@ -292,7 +294,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする概要](/microsoft-365/compliance/device-onboarding-overview)
+- [Windows 10 デバイスと Windows 11 デバイスを Microsoft Purview にオンボードする](/microsoft-365/compliance/device-onboarding-overview)
 - [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) が参加しました](/azure/active-directory/devices/concept-azure-ad-join)
 - [Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は TeleMessage コネクタを設定して、AT&T Mobile Network から SMS および MMS データをインポートおよびアーカイブできます。 これにより、Microsoft Purview のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 8c038769ef7330788badfaa8a0a40a00c0730a13
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 87b933117fae134572ccf4a152a83ec4165b1caf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950723"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992768"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>AT&T SMS/MMS データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルで TeleMessage コネクタを使用して、AT&T Mobile Network から SMS および MMS データをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の AT&T Network に毎日 1 回接続され、SMS と MMS のデータが Microsoft Purview のメールボックスにインポートされます。
 

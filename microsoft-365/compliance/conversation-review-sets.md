@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft Purview 電子情報開示 (プレミアム) (会話スレッドと呼ばれる) の会話再構築機能について説明します。この機能を使用して、Microsoft Teams グループとYammer グループでチャット会話を再構築、確認、エクスポートします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9bfd87de95449ab30b8a33c9f7f96db458e809d1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c3cd05ab340775a7a923b9e4a0f66c3abaf559cb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950271"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993274"
 ---
 # <a name="conversation-threading-in-ediscovery-premium"></a>電子情報開示でのスレッド処理 (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 インスタント メッセージングは、質問をしたり、アイデアを共有したり、大規模な対象ユーザー間で迅速にコミュニケーションを取ったりするのに便利な方法です。 Microsoft TeamsやYammer グループなどのインスタント メッセージング プラットフォームがエンタープライズ コラボレーションの中核となるので、組織は、電子情報開示ワークフローがこれらの新しい形式のコミュニケーションとコラボレーションにどのように対処するかを評価する必要があります。
 

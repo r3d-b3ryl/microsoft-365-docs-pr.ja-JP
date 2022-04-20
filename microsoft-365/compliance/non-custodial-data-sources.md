@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 非保管データ ソースを電子情報開示 (プレミアム) ケースに追加し、データ ソースを保留にすることができます。 非保管データ ソースはインデックスが再作成されるため、部分的にインデックスが作成されたとしてマークされたすべてのコンテンツは、完全かつ迅速に検索できるように再処理されます。
-ms.openlocfilehash: cc093b60de055fe8b762f6c141921cd274233af2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2f5825f514dfc8f99fc7a6006d1fd30028515c7b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945915"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991888"
 ---
 # <a name="add-non-custodial-data-sources-to-an-ediscovery-premium-case"></a>非保管データ ソースを電子情報開示 (プレミアム) ケースに追加する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) の場合、Microsoft 365 データ ソースをケース内のカストディアンに関連付ける必要があるわけではありません。 ただし、そのデータを検索し、レビュー セットに追加し、分析して確認できるように、そのデータをケースに関連付ける必要がある場合があります。 電子情報開示 (プレミアム) の機能は非 *保管データ ソース* と呼ばれ、カストディアンに関連付けなくてもケースにデータを追加できます。 また、カストディアンに関連付けられているデータで使用できる非保管データにも、同じ電子情報開示 (プレミアム) 機能が適用されます。 非カストディアル データに適用できる最も便利な点の 2 つは、それを保留にして [、高度なインデックス作成](indexing-custodian-data.md)を使用して処理することです。
 

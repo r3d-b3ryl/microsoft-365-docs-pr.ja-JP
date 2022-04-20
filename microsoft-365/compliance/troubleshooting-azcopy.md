@@ -19,14 +19,16 @@ description: 電子情報開示 (プレミアム) でエラー修復のために
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: ed9910df4da310034320ea030c8b5da1c5918e52
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ff8f69e6efeab3e0f0e9d8ee2f739caaa40d7c85
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943493"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991800"
 ---
 # <a name="troubleshoot-azcopy-in-ediscovery-premium"></a>電子情報開示での AzCopy のトラブルシューティング (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) でエラー修復のためにMicrosoft 365以外のデータまたはドキュメントを読み込む場合、ユーザー インターフェイスには、アップロードするファイルの保存場所とファイルのアップロード先となる Azure ストレージの場所を含むパラメーターを含む Azure AzCopy コマンドが用意されています。 ドキュメントをアップロードするには、このコマンドをコピーし、ローカル コンピューターのコマンド プロンプトで実行します。  次のスクリーンショットは、AzCopy コマンドの例を示しています。
 

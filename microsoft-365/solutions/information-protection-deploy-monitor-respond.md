@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 監査ポリシーとアラート ポリシーとデータ主体の要求を使用して、個人データ インシデントを監視し、対応します。
-ms.openlocfilehash: 5f4dd6a59ae361cbef042bfc3587203b34620746
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 730eb42fdf6aed66f5beac69621981848ffa6510
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945343"
+ms.locfileid: "64953329"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>組織内のデータ プライバシー インシデントを監視して対応する
 
@@ -67,7 +67,7 @@ Microsoft 365機能は、関連する機能を運用する際に組織内のデ�
 
 - [統合監査](../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [メールボックスの監査](../compliance/enable-mailbox-auditing.md)
-- [高度な監査](../compliance/advanced-audit.md)
+- [監査 (プレミアム)](../compliance/advanced-audit.md)
 - [通知ポリシー](../compliance/alert-policies.md)
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR と CCPA のデータ主体要求
