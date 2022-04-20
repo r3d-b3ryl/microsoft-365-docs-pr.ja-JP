@@ -1,5 +1,5 @@
 ---
-title: TeleMessage ファイルからデータをアーカイブするコネクタをセットアップEnterprise Number Archiver
+title: TeleMessage Enterprise Number Archiver からデータをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,70 +11,70 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理者は、TeleMessage および Number Archiver から SMS および MMS データをインポートおよびアーカイブするコネクタEnterpriseできます。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティデータを管理できます。
-ms.openlocfilehash: 58450875c418c0ea2327d78c7dcadd3c4992fb77
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 管理者は、TeleMessage Enterprise Number Archiver から SMS および MMS データをインポートおよびアーカイブするためのコネクタを設定できます。 これにより、Microsoft Purview のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: f1353e0140e1411d2cac79fc4d59043046df302d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322157"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944109"
 ---
-# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Number データをアーカイブするコネクタEnterprise設定する
+# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Enterprise番号データをアーカイブするコネクタを設定する
 
-Microsoft 365 コンプライアンス センター の TeleMessage コネクタを使用して、Enterprise Number Archiver からショート メッセージング サービス (SMS) メッセージ、マルチメディア メッセージング サービス (MMS) メッセージ、チャット メッセージ、音声通話録音、音声通話ログをインポートおよびアーカイブします。 コネクタをセットアップして構成した後、組織の TeleMessage アカウントに毎日 1 回接続し、TeleMessage Enterprise Number Archiver を使用して従業員のモバイル通信データを Microsoft 365 のメールボックスにインポートします。
+Microsoft Purview コンプライアンス ポータルの TeleMessage コネクタを使用して、ショート メッセージング サービス (SMS) とマルチメディア メッセージング サービス (MMS) メッセージ、チャット メッセージ、音声通話録音、および音声通話ログをEnterprise Number Archiver からインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の TeleMessage アカウントに毎日 1 回接続され、TeleMessage Enterprise Number Archiver を使用して従業員のモバイル通信データがMicrosoft 365のメールボックスにインポートされます。
 
-TeleMessage Enterprise Number Archiver コネクタ データをユーザー メールボックスに格納した後、訴訟ホールド、コンテンツ検索、In-Place アーカイブ、監査、通信コンプライアンス、Microsoft 365 保持ポリシーなどの Microsoft 365 コンプライアンス機能を Enterprise Number Archiver データに適用できます。 たとえば、コンテンツ検索を使用して TeleMessage Enterprise Number Archiver SMS、MMS、および Voice Call を検索したり、Enterprise Number Archiver コネクタ データを含むメールボックスを Advanced eDiscovery ケースの保管担当者に関連付けできます。 番号アーカイブ Enterpriseを使用して、組織が政府機関および規制Microsoft 365に準拠し、データをインポートおよびアーカイブできます。
+TeleMessage Enterprise Number Archiver コネクタ データがユーザー メールボックスに格納されたら、訴訟ホールド、コンテンツ検索、In-Placeアーカイブ、監査、通信コンプライアンス、Microsoft 365アイテム保持ポリシーなどの Microsoft Purview 機能を Number Archiver データのEnterpriseに適用できます。 たとえば、コンテンツ検索を使用して TeleMessage Enterprise Number Archiver SMS、MMS、音声通話を検索したり、Enterprise Number Archiver コネクタ データを含むメールボックスを電子情報開示 (プレミアム) ケースの保管担当者に関連付けることができます。 Enterprise Number Archiver コネクタを使用してMicrosoft 365でデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けるのに役立ちます。
 
-## <a name="overview-of-archiving-enterprise-number-data"></a>数値データEnterpriseアーカイブの概要
+## <a name="overview-of-archiving-enterprise-number-data"></a>Enterprise番号データのアーカイブの概要
 
-次の概要では、コネクタを使用してネットワーク データをアーカイブするプロセスEnterprise説明Microsoft 365。
+次の概要では、コネクタを使用してMicrosoft 365のネットワーク データEnterpriseアーカイブするプロセスについて説明します。
 
-![Enterpriseのアーカイブ ワークフロー。](../media/EnterpriseNumberConnectorWorkflow.png)
+![Enterprise番号のアーカイブ ワークフロー。](../media/EnterpriseNumberConnectorWorkflow.png)
 
-1. 組織は TeleMessage を使用して、番号アーカイブ Enterpriseを設定します。 詳細については、こちらを参照 [してください](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/)。
+1. 組織は TeleMessage と連携して、Enterprise Number Archiver コネクタを設定します。 詳細については、 [こちらを](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/)参照してください。
 
-2. Microsoft 365 コンプライアンス センター で作成した Enterprise Number Archiver コネクタは、毎日 TeleMessage サイトに接続し、過去 24 時間の電子メール メッセージを Microsoft Cloud の安全な Azure Storage 領域に転送します。
+2. コンプライアンス ポータルで作成するEnterprise番号アーカイブ コネクタは、TeleMessage サイトに毎日接続され、前の 24 時間のメール メッセージを Microsoft Cloud のセキュリティで保護されたAzure Storage領域に転送します。
 
-3. コネクタは、モバイル通信アイテムを特定のユーザーのメールボックスにインポートします。 Number Archiver という名前Enterprise新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがそのメールボックスにインポートされます。 コネクタは、User の [電子メール アドレス] プロパティの値を使用 *してマッピングを行* います。 すべての電子メール メッセージには、このプロパティが含まれるので、電子メール メッセージのすべての参加者の電子メール アドレスが設定されます。 *User* の [電子メール アドレス] プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義できます。 このマッピング ファイルには、ユーザーのモバイル番号と、各ユーザー Microsoft 365対応するメールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にしてカスタム マッピングを提供する場合、すべての電子メール アイテムについて、コネクタは最初にカスタム マッピング ファイルを確認します。 ユーザーの携帯電話番号に対応する有効な Microsoft 365 ユーザーが見つからなかった場合、コネクタは電子メール アイテムのユーザーの電子メール アドレス プロパティを使用します。 コネクタがカスタム マッピング ファイルまたは電子メール アイテムのユーザーの電子メール アドレス プロパティに有効な Microsoft 365 ユーザーを見つからなかった場合、アイテムはインポートされません。
+3. コネクタは、モバイル通信アイテムを特定のユーザーのメールボックスにインポートします。 Enterprise Number Archiver という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *ユーザーの電子メール アドレス* プロパティの値を使用してマッピングを行います。 すべての電子メール メッセージには、このプロパティが含まれています。このプロパティには、電子メール メッセージのすべての参加者の電子メール アドレスが設定されます。 *ユーザーの電子メール アドレス* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義することもできます。 このマッピング ファイルには、ユーザーの携帯電話番号と、各ユーザーの対応するMicrosoft 365メールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にし、カスタム マッピングを指定する場合は、すべての電子メール アイテムについて、コネクタが最初にカスタム マッピング ファイルを確認します。 ユーザーの携帯電話番号に対応する有効なMicrosoft 365 ユーザーが見つからない場合、コネクタは電子メール アイテムのユーザーの電子メール アドレス プロパティを使用します。 コネクタで、カスタム マッピング ファイルまたは電子メール アイテムのユーザーの *電子メール アドレス* プロパティで有効なMicrosoft 365 ユーザーが見つからない場合、アイテムはインポートされません。
 
-## <a name="before-you-set-up-a-connector"></a>コネクタをセットアップする前に
+## <a name="before-you-set-up-a-connector"></a>コネクタを設定する前に
 
-Enterprise Number Archiver データをアーカイブするために必要な実装手順の一部は Microsoft 365 の外部であり、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
+Number Archiver データEnterpriseアーカイブするために必要な実装手順の一部はMicrosoft 365外部であり、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
 
-- [TeleMessage から Enterprise番号アーカイブ](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) サービスを注文し、組織の有効な管理アカウントを取得します。 コンプライアンス センターでコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- [TeleMessage から Enterprise Number Archiver サービス](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365)を注文し、組織の有効な管理アカウントを取得します。 コンプライアンス センターでコネクタを作成するときは、このアカウントにサインインする必要があります。
 
-- 電話番号 SMS/MMS ネットワークアーカイブEnterprise必要なすべてのユーザーを TeleMessage アカウントに登録します。 ユーザーを登録する場合は、ユーザーのアカウントに使用する電子メール アドレスと同じMicrosoft 365してください。
+- TeleMessage アカウントで Enterprise Number SMS/MMS Network アーカイブを必要とするすべてのユーザーを登録します。 ユーザーを登録するときは、Microsoft 365 アカウントに使用するのと同じメール アドレスを必ず使用してください。
 
 - 従業員の携帯電話に TeleMessage Enterprise Number Archiver アプリをインストールしてアクティブ化します。
 
-- Number Archiver コネクタを作成するEnterpriseには、データ コネクタ管理者の役割が割り当てられている必要があります。 この役割は、データ コネクタ ページの [データ  コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 この役割は、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ とコンプライアンス センターのアクセス許可」の「セキュリティとコンプライアンス センターの役割& [してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。 または、組織内の管理者がカスタム役割グループを作成し、データ コネクタ管理者の役割を割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、「アクセス許可」の「カスタム役割グループを作成する」[セクションを参照Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)。
+- Enterprise Number Archiver コネクタを作成するユーザーには、データ コネクタ管理者ロールが割り当てられている必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この TeleMessage データ コネクタは、米国政府機関GCC環境Microsoft 365使用できます。 サード パーティ製のアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にある、Microsoft 365 コンプライアンスおよびデータ保護のコミットメントの対象となされていないサードパーティ システムに対して、組織の顧客データを保存、送信、および処理する必要があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
+- この TeleMessage データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purview およびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
-## <a name="create-an-enterprise-number-archiver-connector"></a>番号アーカイブ Enterpriseを作成する
+## <a name="create-an-enterprise-number-archiver-connector"></a>Enterprise Number Archiver コネクタを作成する
 
-前のセクションで説明した前提条件を完了したら、Enterpriseに番号アーカイブ Microsoft 365 コンプライアンス センター。 コネクタは、指定した情報を使用して TeleMessage サイトに接続し、SMS、MMS、および音声通話メッセージを、Microsoft 365 の対応するユーザー メールボックス ボックスに転送します。
+前のセクションで説明した前提条件を完了したら、コンプライアンス ポータルで Enterprise Number Archiver コネクタを作成できます。 コネクタは、指定した情報を使用して TeleMessage サイトに接続し、SMS、MMS、音声通話メッセージをMicrosoft 365の対応するユーザー メールボックス ボックスに転送します。
 
-1. [データ コネクタ [https://compliance.microsoft.com](https://compliance.microsoft.com/)] に移動\>し、[数値アーカイブ **Enterprise] をクリックします**。
+1. **Number Archiver** Enterprise [https://compliance.microsoft.com](https://compliance.microsoft.com/) **データ コネクタ**\>に移動してクリックします。
 
-2. [番号アーカイブ **Enterprise] ページ** で、[コネクタの追加] **をクリックします。**
+2. **[Enterprise Number Archiver** 製品の説明] ページで、[コネクタの **追加**] をクリックします。
 
-3. [サービス条件 **] ページで、[** 同意する] を **クリックします**。
+3. [利用規約] ページ **で** 、[ **同意** する] をクリックします。
 
-4. [ **TeleMessage へのログイン]** ページの [手順 3] で、次のボックスに必要な情報を入力し、[次へ] をクリック **します**。
+4. [ **TeleMessage へのログイン** ] ページの [手順 3] で、次のボックスに必要な情報を入力し、[ **次へ**] をクリックします。
 
-   - **ユーザー名:** TeleMessage ユーザー名。
+   - **名：** TeleMessage ユーザー名。
 
-   - **パスワード:** TeleMessage パスワード。
+   - **パスワード：** TeleMessage のパスワード。
 
-5. コネクタを作成したら、ポップアップ ウィンドウを閉じて次のページに移動できます。
+5. コネクタが作成されたら、ポップアップ ウィンドウを閉じて次のページに移動できます。
 
-6. [ユーザー マッピング **] ページで** 、自動ユーザー マッピングを有効にする。 カスタム マッピングを有効にするには、ユーザー マッピング情報を含む CSV ファイルをアップロードし、[次へ] をクリック **します**。
+6. [ **ユーザー マッピング** ] ページで、自動ユーザー マッピングを有効にします。 カスタム マッピングを有効にするには、ユーザー マッピング情報を含む CSV ファイルをアップロードし、[ **次へ**] をクリックします。
 
-7. 設定を確認し、[完了] を **クリックして** コネクタを作成します。
+7. 設定を確認し、[ **完了]** をクリックしてコネクタを作成します。
 
-8. [データ コネクタ] ページの [ **コネクタ] タブに移動** して、新しいコネクタのインポート プロセスの進行状況を確認します。
+8. **[データ コネクタ**] ページの [コネクタ] タブに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 大きいアイテムのサポートは、後日利用できます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きなアイテムのサポートは、後日提供される予定です。

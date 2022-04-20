@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Cisco Jabber DataParser コネクタを設定して使用して、Microsoft 365に Cisco Jabber データをインポートしてアーカイブする方法について説明します。
-ms.openlocfilehash: eff37542d65d57dccf4bf0e2d53a87a77c182a3a
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 104d56b819f594e88aa478e6df817bf3c8f008a9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762213"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64940953"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>Cisco Jabber データをアーカイブするコネクタを設定する
 
 17a-4 LLC の [Cisco Jabber DataParser を](https://www.17a-4.com/jabber-dataparser/)使用して、Cisco Jabber からMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サード パーティのデータ ソースから項目をキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された Cisco Jabber コネクタが含まれています。 Cisco Jabber DataParser コネクタは、Cisco Jabber データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 
-Cisco Jabber データをユーザー メールボックスに格納した後は、訴訟ホールド、電子情報開示、アイテム保持ポリシーと保持ラベル、通信コンプライアンスなどのMicrosoft 365コンプライアンス機能を適用できます。 Cisco Jabber コネクタを使用してMicrosoft 365にデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けるのに役立ちます。
+Cisco Jabber データをユーザー メールボックスに格納した後は、訴訟ホールド、電子情報開示、アイテム保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft Purview 機能を適用できます。 Cisco Jabber コネクタを使用してMicrosoft 365にデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けるのに役立ちます。
 
 ## <a name="overview-of-archiving-cisco-jabber-data"></a>Cisco Jabber データのアーカイブの概要
 
@@ -35,7 +35,7 @@ Cisco Jabber データをユーザー メールボックスに格納した後は
 
 2. 定期的に、Cisco Jabber アイテムは DataParser によって収集されます。 DataParser では、メッセージの内容も電子メール メッセージ形式に変換されます。
 
-3. Microsoft 365 コンプライアンス センターで作成する Cisco Jabber DataParser コネクタは DataParser に接続し、メッセージを Microsoft クラウド内の安全なAzure Storageの場所に転送します。
+3. Microsoft Purview コンプライアンス ポータルで作成する Cisco Jabber DataParser コネクタは、DataParser に接続し、メッセージを Microsoft クラウド内の安全なAzure Storageの場所に転送します。
 
 4. **Cisco Jabber DataParser** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、Cisco Jabber アイテムがそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用して、アイテムをインポートするメールボックスを決定します。 すべての Cisco Jabber アイテムには、すべての参加者の電子メール アドレスが設定されたこのプロパティが含まれています。
 
@@ -43,13 +43,13 @@ Cisco Jabber データをユーザー メールボックスに格納した後は
 
 - Microsoft コネクタの DataParser アカウントを作成します。 これを行うには、 [17a-4 LLC](https://www.17a-4.com/contact/) にお問い合わせください。 手順 1 でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
-- 手順 1 で Cisco Jabber DataParser コネクタを作成し、手順 3 で完了したユーザーには、データ コネクタ管理者ロールを割り当てる必要があります。 このロールは、Microsoft 365 コンプライアンス センターの **[データ コネクタ**] ページにコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
+- 手順 1 で Cisco Jabber DataParser コネクタを作成し、手順 3 で完了したユーザーには、データ コネクタ管理者ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この 17a-4 データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft 365コンプライアンスとデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
+- この 17a-4 データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purview およびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
 ## <a name="step-1-set-up-a-cisco-jabber-dataparser-connector"></a>手順 1: Cisco Jabber DataParser コネクタを設定する
 
-最初の手順では、Microsoft 365 コンプライアンス センターの [データ コネクタ] ページにアクセスし、Cisco Jabber データ用の 17a-4 コネクタを作成します。
+最初の手順では、コンプライアンス ポータルの [データ コネクタ] ページにアクセスし、Cisco Jabber データ用の 17a-4 コネクタを作成します。
 
 1. **Data connectorsCisco** >  **Jabber DataParser** に<https://compliance.microsoft.com>移動してクリックします。
 
@@ -71,7 +71,7 @@ Cisco Jabber DataParser コネクタは、Microsoft 365にデータをインポ�
 
 ## <a name="step-4-monitor-the-cisco-jabber-dataparser-connector"></a>手順 4: Cisco Jabber DataParser コネクタを監視する
 
-Cisco Jabber DataParser コネクタを作成した後、Microsoft 365 コンプライアンス センターでコネクタの状態を表示できます。
+Cisco Jabber DataParser コネクタを作成した後、コンプライアンス ポータルでコネクタの状態を表示できます。
 
 1. 左側の <https://compliance.microsoft.com> ナビゲーションにある **[データ コネクタ** ] に移動してクリックします。
 

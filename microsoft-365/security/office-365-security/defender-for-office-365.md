@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b8041962ca1a696146f9a5828c66b1a6800c4b01
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a181f8ef6bb7ca018fb9ddf0f0adc4fe565b73e1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683737"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941547"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -147,7 +147,7 @@ Microsoft Defender for Office 365 の機能にアクセスするには、適切�
 |グローバル管理者 (組織管理)|このロールは、Azure Active Directory または Microsoft 365 Defender ポータルで割り当てることができます。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。|
 |セキュリティ管理者|このロールは、Azure Active Directory または Microsoft 365 Defender ポータルで割り当てることができます。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。|
 |Exchange Online の組織の管理|[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online の PowerShell](/powershell/exchange/exchange-online-powershell)|
-|検索と消去|このロールは、Microsoft 365 Defender ポータルまたはMicrosoft 365 コンプライアンス センターでのみ使用できます。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」および「[Microsoft 365 コンプライアンス センターのアクセス許可](../../compliance/microsoft-365-compliance-center-permissions.md)」を参照してください。|
+|検索と消去|このロールは、Microsoft 365 Defender ポータルまたはMicrosoft Purview コンプライアンス ポータルでのみ使用できます。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」 および 「[Microsoft Purview コンプライアンス ポータルのアクセス許可](../../compliance/microsoft-365-compliance-center-permissions.md)」 を参照してください。|
 |||
 
 ## <a name="get-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 を取得する

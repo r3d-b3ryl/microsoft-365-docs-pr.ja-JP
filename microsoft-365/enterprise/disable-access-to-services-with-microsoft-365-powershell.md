@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: この記事では、PowerShell を使用して、ユーザーのMicrosoft 365 サービスへのアクセスを無効にする方法について説明します。
-ms.openlocfilehash: eeb3c8dc0057318550a956d0d0f4f916f4515fd4
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: d6754cc2de6208b9dc4bce03ef6477939f8d530a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915865"
+ms.locfileid: "64939435"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>PowerShell を使用してMicrosoft 365 サービスへのアクセスを無効にする
 
@@ -118,7 +118,7 @@ User      Success            efb87545-963c-4e0d-99df-69c6916d9eb0 EXCHANGE_S_ENT
 
 ライセンス プラン (製品名とも呼ばれます)、含まれるサービス プラン、および対応するフレンドリ名の完全な一覧については、 [ライセンスの製品名とサービス プラン識別子に関するページを](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)参照してください。 (ServicePlanId を使用して、サービス プランの対応するフレンドリ名を検索します)。
 
-次の例 **では、****MICROSOFTBOOKINGS** (Microsoft Bookings) サービスとLOCKBOX_ENTERPRISE (Customer LockBox) サービスがオフになっている **SPE_E5 (Microsoft 365 E5**) を割り当てます。
+次の例 **では、****MICROSOFTBOOKINGS** (Microsoft Bookings) サービスとLOCKBOX_ENTERPRISE (Customer Lockbox) サービスがオフになっている **SPE_E5 (Microsoft 365 E5**) を割り当てます。
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'

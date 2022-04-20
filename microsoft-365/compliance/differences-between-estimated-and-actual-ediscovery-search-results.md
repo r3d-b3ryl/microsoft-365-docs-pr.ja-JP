@@ -1,5 +1,5 @@
 ---
-title: 推定電子情報開示検索結果と実際の電子情報開示検索結果の違い
+title: 推定および実際の電子情報開示検索結果
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Office 365の電子情報開示ツールを使用して実行される検索で、推定検索結果と実際の検索結果が異なる可能性がある理由を理解します。
-ms.openlocfilehash: 5ec234ed698e621a629aecf7adf34fb675b29034
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b1e4ba4938e418d8364dfb06b24b6f7a58d6a463
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783845"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938161"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>推定電子情報開示検索結果と実際の電子情報開示検索結果の違い
 
 この記事は、次のMicrosoft 365電子情報開示ツールのいずれかを使用して実行できる検索に適用されます。 
 
 - コンテンツ検索
-- コア電子情報開示
+- 電子情報開示 (Standard)
 
-電子情報開示検索を実行すると、使用しているツールによって、検索条件に一致するアイテムの数 (およびその合計サイズ) の見積もりが返されます。 たとえば、Microsoft 365 コンプライアンス センターで検索を実行すると、選択した検索のポップアップ ページに推定検索結果が表示されます。
+電子情報開示検索を実行すると、使用しているツールによって、検索条件に一致するアイテムの数 (およびその合計サイズ) の見積もりが返されます。 たとえば、Microsoft Purview コンプライアンス ポータルで検索を実行すると、選択した検索のポップアップ ページに推定検索結果が表示されます。
   
 ![検索ポップアップ ページに表示される結果の見積もり。](../media/EstimatedSearchResults1.png)
   

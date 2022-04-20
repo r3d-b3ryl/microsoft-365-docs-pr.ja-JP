@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: SharePoint Syntexのモデルに保持ラベルを適用する方法について説明します。
-ms.openlocfilehash: 17bfc0121d18f30b03cc42585cb214b649597ff6
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 281ff940377f033690f1ed1e7146c8aefe645bf1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882508"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941811"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>SharePoint Syntex のモデルに保持ラベルを適用する
 
@@ -36,7 +36,7 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/reten
 モデルのホーム ページのモデル設定を使用して、既存の保持ラベルをモデルに適用できます。 
 
 > [!Important]
-> 保持ラベルをドキュメント理解モデルに適用できるようにするには、Microsoft 365 コンプライアンス センターで[作成](../compliance/file-plan-manager.md#create-retention-labels)して[発行](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels)する必要があります。
+> 保持ラベルをドキュメント理解モデルに適用できるようにするには、Microsoft Purview コンプライアンス ポータルで [作成](../compliance/file-plan-manager.md#create-retention-labels) して [発行](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) する必要があります。
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>保持ラベルをドキュメント理解モデルに追加する
 
@@ -74,7 +74,7 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/reten
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>保持ラベルをフォーム処理モデルに追加するには
 
 > [!Important]
-> 保持ラベルをフォーム処理モデルに適用できるようにするには、そのラベルを[作成](../compliance/file-plan-manager.md#create-retention-labels)し、Microsoft 365 コンプライアンス センターで[発行](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels)する必要があります。
+> 保持ラベルをフォーム処理モデルに適用できるようにするには、Microsoft Purview コンプライアンス ポータルで [作成](../compliance/file-plan-manager.md#create-retention-labels) して [発行](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) する必要があります。
 
 モデルの作成時にフォーム処理モデルに保持ラベルを適用するか、既存のモデルに適用することができます。
 

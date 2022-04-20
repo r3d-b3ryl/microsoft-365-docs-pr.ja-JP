@@ -22,20 +22,20 @@ search.appverid:
 - GEU150
 - GEA150
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
-description: 21Vianet が運用する Office 365 について詳しくは、中国の安全で信頼性が高くスケーラブルなクラウド サービスのニーズを満たすように設計されています。
+description: 21Vianet によって運用されるOffice 365について詳しくは、中国の安全で信頼性が高くスケーラブルなクラウド サービスのニーズを満たすように設計されています。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7608be301accfb99e03683240108be5eaa7529a6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 16b40c0cb03d14915ccb89f7d34be5110b4c0849
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782635"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938930"
 ---
 # <a name="office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365
 
-21Vianet によって運用される Office 365 は、中国の安全で信頼性が高くスケーラブルなクラウド サービスのニーズを満たすように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。
+21Vianet によって運用されるOffice 365は、中国の安全で信頼性が高くスケーラブルなクラウド サービスのニーズを満たすように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。
 
-Microsoft はサービス自体を運用しません。 21Vianet により、サービスの運用、提供、および配信の管理が行われます。 21Vianet は、ホスティング、マネージド ネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データ センター サービス プロバイダーです。 Microsoft テクノロジのライセンスを付与することで、21Vianet はローカルの Office 365 データセンターを運用し、Office 365 サービスを使用しながらデータを中国内に保持する機能を提供します。 21Vianet では、サブスクリプションサービスと課金サービス、およびサポートも提供されます。
+Microsoft はサービス自体を運用しません。 21Vianet により、サービスの運用、提供、および配信の管理が行われます。 21Vianet は、ホスティング、マネージド ネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データ センター サービス プロバイダーです。 Microsoft テクノロジのライセンスを取得することで、21Vianet はローカル Office 365 データセンターを運用し、Office 365 サービスを中国内でデータを保持する機能を提供します。 21Vianet では、サブスクリプションサービスと課金サービス、およびサポートも提供されます。
 
 > [!NOTE]
 > これらのサービスは中国の法律に従います。
@@ -46,28 +46,28 @@ Microsoft はサービス自体を運用しません。 21Vianet により、サ
 
 ![この QR コードをスキャンして、WeChat でフォローしてください。](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
 
- **21Vianet が運営する Office 365 のサービスについて**
+ **21Vianet が運営するOffice 365のサービスについて**
 
-以下のセクションでは、各サービスの相違点に焦点を当てます。 最終的には、グローバル サービスとのパリティを実現することが目標です。 ただし、中国内のデータセンターのパートナーが運営する中国サービスの固有の性質により、まだ有効になっていない機能がいくつかあります。 お客様は、段階的にサービスの完全な機能をご利用いただけるようになります。 21Vianet によって運用されている各 Office 365 プランで利用可能なサービスの詳細については、 [Office 365 サービスの説明](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)を参照してください。
+以下のセクションでは、各サービスの相違点に焦点を当てます。 最終的には、グローバル サービスとのパリティを実現することが目標です。 ただし、中国内のデータセンターのパートナーが運営する中国サービスの固有の性質により、まだ有効になっていない機能がいくつかあります。 お客様は、段階的にサービスの完全な機能をご利用いただけるようになります。 21Vianet によって運用されている各Office 365プランで利用できるサービスの詳細については、[Office 365サービスの説明](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)を参照してください。
 
-一般的な Office 365 サービスの使用を開始する方法については、「 [作業の開始](../admin-overview/get-started-with-office-365.md)」を参照してください。
+一般的なOffice 365 サービスの使用を開始する方法については、「[概要](../admin-overview/get-started-with-office-365.md)」を参照してください。
 
 ## <a name="office-365-suite"></a>Office 365 スイート
 
 |職務|可用性|
 |---|---|
 |カスタム ドメイン|管理者は、中国固有のドメイン プロバイダーを通じて登録されたカスタム ドメインを作成または使用できます。 カスタム ドメインがない場合は、ドメイン名レジストラーから [ドメイン名を購入する方法](../get-help-with-domains/buy-a-domain-name.md) を選択できます。 既にある場合は、 [ドメイン レジストラーまたは DNS ホスティング プロバイダーを探します](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> さらに、Office 365 SharePoint Online サービスを使用してパブリック Web サイトを作成する場合、中国のインターネット コンプライアンス ポリシーでは、インターネット コンテンツ プロバイダー (ICP) 番号を取得する必要があります。  **メモ：** カスタム ドメイン名内の許可されていない単語の自動検証は使用できません。|
-|サブスクリプション、課金、技術サポート|21Vianet によって提供されます。 サポートに問い合わせる方法については、「 [Office 365 for business サポートにお問い合わせください](../../business-video/get-help-support.md)。|
-|セルフサービスによるパスワードのリセット|管理者のみが使用できます。 詳細については、「 [21Vianet が運用する Office 365 でパスワードを変更またはリセットする」を参照してください](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。|
+|サブスクリプション、課金、技術サポート|21Vianet によって提供されます。 サポートに問い合わせる方法については、「[ビジネス サポートのOffice 365にお問い合わせください](../../business-video/get-help-support.md)。|
+|セルフサービスによるパスワードのリセット|管理者のみが使用できます。 詳細については、「[21Vianet によって操作されるOffice 365でパスワードを変更またはリセットする」を参照してください](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。|
 |セキュリティ、プライバシー、コンプライアンス、およびサポート レベルの詳細|21Vianet によって提供されます。|
-|Office Desktop のセットアップ|Office デスクトップのセットアップは、Office 2010 および Office 2007 では使用できません。 ただし、管理者は [、Office 365 で動作するように現在の Office デスクトップ アプリケーションを構成](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)できます。|
-|モバイルとデバイスのサポート\*|近日公開予定のモバイル機能は次のとおりです。  <br/>  モバイル デバイス管理 (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) は利用できませんが、Exchange ActiveSync デバイスまたは Research in Motion (RIM、BlackBerry ワイヤレス 電子メール ソリューション) のオファリングを使用して、Blackberry Enterprise Server (BES) を実行できます。  <br/>  モバイル サポートの詳細については、「 [ユーザーのモバイル アクセスの設定と管理」を参照してください](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)。|
+|デスクトップセットアップのOffice|Office 2010 および Office 2007 では、デスクトップのセットアップOffice使用できません。 ただし、管理者は[、Office 365で動作するように現在のOffice デスクトップ アプリケーションを構成](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)できます。|
+|モバイルとデバイスのサポート\*|近日公開予定のモバイル機能は次のとおりです。  <br/>  モバイル デバイス管理 (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) は利用できませんが、Exchange ActiveSync デバイスまたは Research in Motion (RIM、BlackBerry ワイヤレス 電子メール ソリューション) からのオファリングを使用して、Blackberry Enterprise Server (BES) を実行できます。  <br/>  モバイル サポートの詳細については、「 [ユーザーのモバイル アクセスの設定と管理」を参照してください](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)。|
 |Office Lens|使用できません。|
 |Microsoft Planner|もうすぐです。|
 |Microsoft Teams|注意事項なし。|
 |Sway|もうすぐです。|
 |複数の言語のヘルプ|ヘルプは簡体字中国語と英語でのみ提供されています。|
-|コミュニティ提供のヘルプ|コミュニティが提供するヘルプはまだ利用できませんが、[ヘルプ] ボタン ( **?** ) をクリックすると、ヘルプ記事が表示されます。|
+|Community提供のヘルプ|Community提供のヘルプはまだ利用できませんが、[ヘルプ] ボタン ( **?** ) をクリックすると、ヘルプ記事が表示されます。|
 
 \*Microsoft によって直接提供され、Microsoft の利用規約とプライバシーに関する声明の対象となるオプション サービス。
 
@@ -75,18 +75,18 @@ Microsoft はサービス自体を運用しません。 21Vianet により、サ
 
 |職務|可用性|
 |---|---|
-|ドキュメント、ライブラリ、またはサイトをメールで組織外のユーザーと共有する|この機能は使用できますが、既定ではオフになっています。この機能を使用すると、ファイルを国外で共有できるようになります。 Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. 組織外のユーザーと共有しようとすると、警告も表示されます。 詳細については、「 [Office 365 の SharePoint ファイルまたはフォルダー](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)」を参照してください。|
-|Access Services|Access 2013 はサポートされていますが、この機能は Office 365 および SharePoint Online から廃止されるため、新しい Access アプリを追加できない場合があります。 Office 365 および SharePoint Online での新しい Access ベースの Web アプリと Access Web データベースの作成は、2017 年 6 月に開始され、残りの Web アプリと Web データベースは 2018 年 4 月までに停止されます。 さらに、Access 2010 機能はサポートされておらず、Access 2010 データベースを使用しようとするとエラーが発生し、データが失われる可能性があります。|
-|Microsoft Power Apps|Microsoft Power Apps と Microsoft Power Automate は、中国のテーブルと取引を行い、現地のデータ所在地を必要とする規制対象の業界や商業組織のお客様が利用できるようになりました。|
-|Information Rights Management (IRM)|IRM 機能を組織の SharePoint に設定する機能は近日公開予定です。|
+|ドキュメント、ライブラリ、またはサイトをメールで組織外のユーザーと共有する|この機能は使用できますが、既定ではオフになっています。この機能を使用すると、ファイルを国外で共有できるようになります。 Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. 組織外のユーザーと共有しようとすると、警告も表示されます。 詳細については、「[Office 365でSharePointファイルまたはフォルダーを共有する](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)」を参照してください。|
+|Access Services|Access 2013 はサポートされていますが、この機能は Office 365 および SharePoint Online から廃止されるため、新しい Access アプリを追加できない場合があります。 Office 365およびSharePoint Online での新しい Access ベースの Web アプリと Access Web データベースの作成は、2017 年 6 月に開始され、残りの Web アプリと Web データベースは 2018 年 4 月までに停止されます。 さらに、Access 2010 機能はサポートされておらず、Access 2010 データベースを使用しようとするとエラーが発生し、データが失われる可能性があります。|
+|Microsoft Power Apps|Microsoft Power Appsと Microsoft Power Automateは、中国でテーブルを扱い、現地のデータ所在地を必要とする規制対象の業界や商業組織のお客様が利用できるようになりました。|
+|Information Rights Management (IRM)|IRM 機能を組織のSharePointに設定する機能は近日公開予定です。|
 |テキストまたはページを翻訳する機能|使用可能ですが、既定ではオフです。 テナント管理者はこの機能を有効にできますが、翻訳クラウド サービスは国の外に配置されている可能性があります。 ユーザーが翻訳クラウド サービスにコンテンツを送信したくない場合は、これらの機能を無効にしたままにできます。|
 |パブリック Web サイトの ICP 登録|中国のインターネット コンプライアンス ポリシーでは、パブリック Web サイトのインターネット コンテンツ プロバイダー (ICP) 番号を取得する必要があります。|
-|パブリック Web サイトの機能|パブリック Web サイトは、2015 年 3 月 9 日より前に Office 365 を購入した場合にのみ利用できます。 ただし、Bing マップ、外部共有、コメントは、これらの機能が国の外部にデータを送信する可能性があるため、パブリック Web サイトでは使用できません。|
-|Newsfeed と Yammer (エンタープライズ ソーシャル ネットワーク)|ニュースフィード (フォローしているユーザー、ドキュメント、サイト、タグからの更新が表示されるソーシャル ハブ) を利用できます。 Yammer は使用できません。|
-|自動的にホストされるアプリ|SharePoint と SQL Azure を使用するプロバイダーホスト型アプリをデプロイできます。 詳細については、「 [SharePoint 用の基本的なプロバイダーホスト型アプリを作成する」を](/sharepoint/dev/sp-add-ins/get-started-creating-provider-hosted-sharepoint-add-ins)参照してください。 近日公開予定の開発者は、自動ホスト型 Web サイトを使用するアプリをデプロイできます。|
+|パブリック Web サイトの機能|パブリック Web サイトは、2015 年 3 月 9 日より前にOffice 365を購入した場合にのみ利用できます。 ただし、Bing マップ、外部共有、コメントは、これらの機能が国の外部にデータを送信する可能性があるため、パブリック Web サイトでは使用できません。|
+|ニュースフィードとYammer (エンタープライズ ソーシャル ネットワーク)|ニュースフィード (フォローしているユーザー、ドキュメント、サイト、タグからの更新が表示されるソーシャル ハブ) を利用できます。 Yammerは使用できません。|
+|自動的にホストされるアプリ|SharePointとSQL Azureを使用するプロバイダーホスト型アプリをデプロイできます。 詳細については、「[SharePoint用の基本的なプロバイダーホスト型アプリを作成する」を](/sharepoint/dev/sp-add-ins/get-started-creating-provider-hosted-sharepoint-add-ins)参照してください。 近日公開予定の開発者は、自動ホスト型 Web サイトを使用するアプリをデプロイできます。|
 |InfoPath|使用できません。|
 |SharePoint ストア|Office アプリ ストアと SharePoint アプリ ストアは、Microsoft Corporation または Microsoft の世界中の施設の関連会社によって運営されるオプションのサービスです。 ストアで入手できるアプリは、さまざまなアプリ発行者から提供されており、アプリ発行者の使用条件とプライバシーに関する声明の対象となります。 これらのアプリを使用すると、アプリ発行者、関連会社、またはサービス プロバイダーが施設を保持している国で、データの転送、保存、または処理が行われる場合があります。 そのようなアプリをダウンロードして使用する前に、アプリ発行元の使用条件とプライバシーに関する声明をよく確認してください。|
-|Office 365 開発者サイト: 販売者ダッシュボードを使用して SharePoint ストアに発行する\*|21Vianet によって運用されているOffice 365のユーザーに配布するために、[SharePoint用のアプリを送信するための要件](/office/dev/store/submit-sharepoint-add-ins-for-office-365-operated-by-21vianet-in-china)について説明します。|
+|Office 365開発者サイト: 販売者ダッシュボードを使用してSharePoint ストアに発行する\*|21Vianet によって運用されているOffice 365のユーザーに配布するために、[SharePoint用のアプリを送信するための要件](/office/dev/store/submit-sharepoint-add-ins-for-office-365-operated-by-21vianet-in-china)について説明します。|
 
 \*Microsoft によって直接提供され、Microsoft の利用規約とプライバシーに関する声明の対象となるオプション サービス。
 
@@ -129,11 +129,11 @@ Microsoft はサービス自体を運用しません。 21Vianet により、サ
 |2013 SP1|2013 SP1|はい|すべて|
 |Mixed 2013 SP1/2010 SP3|2013 CU5|はい|インプレース電子情報開示/アーカイブ、OWA アクセスを除くすべて (下の表を参照)|
 |Mixed 2013 SP1/2010 SP3|2013 SP1|はい|手動で構成された空き時間情報のみ|
-|2010 SP3|2010 SP3|不要|なし|
+|2010 SP3|2010 SP3|いいえ|なし|
 |2007|2013 CU5|はい|空き時間のみ|
 |2007|2013 SP1 または 2010 SP3No|N/A|サポートされていません|
 |2003|2013 SP1/CU5|N/A|サポートされていません|
-|2003|2010 SP3|不要|なし|
+|2003|2010 SP3|いいえ|なし|
 
 > [!IMPORTANT]
 > ユーザーまたは一連のユーザーに別のユーザーの予定表へのアクセス権が提供されている場合、予定表アクセスを委任する方法は、21Vianet によってホストされているOffice 365 テナントを使用したハイブリッド展開ではサポートされません。
@@ -174,9 +174,9 @@ Microsoft はサービス自体を運用しません。 21Vianet により、サ
 |予定表の共有|Exchange 2013 SP1 以降では、他のオンプレミスのExchangeまたはExchange Online組織とのインターネット 予定表共有を手動で構成できます。 この機能を手動で構成する方法の詳細については、「 [インターネット 予定表の発行を有効にする」を](/exchange/enable-internet-calendar-publishing-exchange-2013-help)参照してください。|
 Apple モバイル デバイス上の連絡先データExchange Apple iCloud に共有する。|この設定/機能は既定で有効になっています。 管理者は、ユーザーが組織外でExchangeデータを共有できないようにするために、この機能をオフにする必要があります。|
 |ホストされた電子メールの暗号化Exchange|注意事項なし。|
-|Office 365 Message Encryption|もうすぐです。|
+|Microsoft Purview メッセージ暗号化|もうすぐです。|
 
-## <a name="office"></a>Office
+## <a name="office"></a>事業所
 
 |職務|可用性|
 |---|---|

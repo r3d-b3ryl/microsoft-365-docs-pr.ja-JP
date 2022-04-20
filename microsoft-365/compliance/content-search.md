@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 コンプライアンス センターでコンテンツ検索を作成して実行する
+title: Microsoft Purview コンプライアンス ポータルでコンテンツ検索を作成して実行する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,16 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Microsoft コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用すると、さまざまな Microsoft 365 サービスでコンテンツを検索できます。
-ms.openlocfilehash: 68270466625cc5f9b76359ae7697536956c727aa
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 374a9ce119c0e4563c14ae4eda15ce562dc8643d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643386"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938381"
 ---
 # <a name="create-a-content-search"></a>コンテンツ検索の作成
 
-Microsoft 365 コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用して、組織の電子メール、文書、インスタント メッセージングの会話などのインプレースのコンテンツを検索できます。このツールを使用すると、以下のクラウドベースの Microsoft 365 データ ソース内のコンテンツを検索できます。
+Microsoft Purview コンプライアンス ポータルのコンテンツ検索電子情報開示ツールを使用して、組織の電子メール、文書、インスタント メッセージングの会話などの内部コンテンツを検索できます。このツールを使用すると、以下のクラウドベースの Microsoft 365 データ ソース内のコンテンツを検索できます。
   
 - Exchange Online メールボックス
 
@@ -46,7 +46,7 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索電�
 
 ## <a name="before-you-run-a-search"></a>検索を実行する前に、以下の作業を行います。
 
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>のコンテンツ検索ツールに (検索を実行して結果をプレビューし、結果をエクスポートするために) アクセスするには、管理者、コンプライアンス責任者、または電子情報開示マネージャーが、Microsoft 365 コンプライアンス センターの電子情報開示マネージャーの役割グループのメンバーである必要があります。詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">コンプライアンス ポータル</a>のコンテンツ検索ツールに (検索を実行して結果をプレビューし、結果をエクスポートするために) アクセスするには、管理者、コンプライアンス責任者、または電子情報開示マネージャーが、コンプライアンス ポータルの電子情報開示マネージャーの役割グループのメンバーである必要があります。詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
 
 - Exchange ハイブリッド展開では、コンテンツ検索ツールを使用してオンプレミスのメールボックスを検索することはできません。 このツールは、クラウドベースのメールボックスの検索にのみ使用できます。
 
@@ -54,7 +54,7 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索電�
   
 1. <https://compliance.microsoft.com> に移り、適切な許可が割り当てられているアカウントの証明書を使ってサインインします。
 
-2. Microsoft 365 コンプライアンス センターの左側のナビゲーション ウィンドウで [**コンテンツ検索**] をクリックします。
+2. コンプライアンス ポータルの左側のナビゲーション ウィンドウで **[コンテンツ検索]** をクリックします。
 
 3. [**コンテンツ検索**] ページで、[**新しい検索**] をクリックします。
 

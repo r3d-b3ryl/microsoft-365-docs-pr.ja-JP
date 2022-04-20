@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: この記事では、PowerShell を使用してライセンスのないユーザーにMicrosoft 365ライセンスを割り当てる方法について説明します。
-ms.openlocfilehash: 72ad30cb3c8a36a78b3f95699c775b96d959b542
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 3c92b3baaa0b8d67a5d5a626951b296be2516436
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823038"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941701"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>PowerShell を使用してMicrosoft 365 ライセンスをユーザー アカウントに割り当てる
 
@@ -119,7 +119,7 @@ $addLicenses = @(
 Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
-この例 **では、****MICROSOFTBOOKINGS** (Microsoft Bookings) サービスとLOCKBOX_ENTERPRISE (Customer LockBox) サービスがオフになっている **SPE_E5 (Microsoft 365 E5**) を割り当てます。
+この例 **では、****MICROSOFTBOOKINGS** (Microsoft Bookings) サービスとLOCKBOX_ENTERPRISE (Customer Lockbox) サービスがオフになっている **SPE_E5 (Microsoft 365 E5**) を割り当てます。
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'

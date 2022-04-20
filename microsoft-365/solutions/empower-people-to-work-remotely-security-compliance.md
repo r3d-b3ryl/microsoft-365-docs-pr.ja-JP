@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 のセキュリティ センターとコンプライアンスのサービスを使用して、ハイブリッド ワーカー向けにご使用のアプリケーション、データ、およびデバイスを保護します。
-ms.openlocfilehash: 5ae369ffa41444e0cd2d3c6d28be470ede170b01
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 08771de0f9e833405da308fb645b5fb5c906c543
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314057"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937787"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>手順 3: ハイブリッド ワーカーのためのセキュリティとコンプライアンスの展開
 
@@ -72,14 +72,14 @@ Microsoft 365 のこれらのコンプライアンス機能を使用して、内
 |データ損失防止 (DLP)|内部や外部での個人情報を含むデータの共有などの危険な共有、偶発的な共有、不適切な共有を検出し、警告し、ブロックします。|Microsoft 365 E3 または E5|
 |アプリの条件付きアクセスを制御する|機密データがユーザーの個人用デバイスでダウンロードされるのを防止します。|Microsoft 365 E3 または E5|
 |データの保持ラベルとポリシー|データの保持期間や、顧客の個人データの保管についての要件などの情報ガバナンスの制御を展開し、組織のポリシーやデータ規制に準拠します。|Microsoft 365 E3 または E5|
-|Office のメッセージの暗号化 (OME)|組織内外のユーザーとの間で、顧客の個人情報などの規制されたデータを含む暗号化されたメール メッセージを送受信します。|Microsoft 365 E3 または E5|
+|Microsoft Purview のメッセージの暗号化|組織内外のユーザーとの間で、顧客の個人情報などの規制されたデータを含む暗号化されたメール メッセージを送受信します。|Microsoft 365 E3 または E5|
 |コンプライアンス マネージャー|Microsoft Service Trust Portal のワークフローベースのリスク評価ツールを使用して、Microsoft のクラウド サービスに関連する組織の規制準拠の取り組みを管理します。|Microsoft 365 E3 または E5|
-|コンプライアンス マネージャー|Microsoft 365 コンプライアンス センターで、現在のコンプライアンス構成の全体のスコアと改善のための推奨事項を確認しましょう。|Microsoft 365 E3 または E5|
+|コンプライアンス マネージャー|Microsoft Purview コンプライアンス ポータルで、現在のコンプライアンス構成の全体のスコアと改善のための推奨事項を確認しましょう。|Microsoft 365 E3 または E5|
 |通信コンプライアンス|組織内で不適切なメッセージを検出し、取り込んで、修復処理を実行します。|コンプライアンスまたは Insider のリスク管理アドオンを備えた Microsoft 365 E5 または Microsoft 365 E3 |
 |インサイダー リスク管理|組織内の悪意のある不測の活動を検出および調査し、対処します。 Microsoft 365 は、ワーカーが管理されていないデバイスを使用している場合でも、これらの種類のリスクを検出できます。|コンプライアンスまたは Insider のリスク管理アドオンを備えた Microsoft 365 E5 または Microsoft 365 E3 |
 ||||
 
-詳細については、「[Microsoft 365 コンプライアンスを開始するためのクイック タスク](../compliance/compliance-quick-tasks.md)」を参照してください。
+詳細については、「[Microsoft Purview を開始するためのクイック タスク](../compliance/compliance-quick-tasks.md)」 を参照してください。
 
 ## <a name="results-of-step-3"></a>手順 3 の結果
 

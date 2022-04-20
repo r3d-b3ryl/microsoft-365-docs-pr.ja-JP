@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: CellTrust SL2 データ コネクタを設定して使用して、モバイル通信データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: e5e07e4138445e46cdd21edc0cfb01d871dd3b6e
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 286546950c29732e1d33738ffbe7a74f2f6dcca2
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761155"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64940689"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>CellTrust SL2 からMicrosoft 365にデータをアーカイブする
 
 CellTrust SL2 は、モバイル通信データをキャプチャし、主要なアーカイブ テクノロジと統合して、FINRA、HIPAA、FOIA、TCPA などの規制に関する電子探索要件を満たします。 SL2 Data Connector は、モバイル通信アイテムをMicrosoft 365にインポートします。 この記事では、アーカイブに CellTrust SL2 Data Connector を使用して、SL2 と Microsoft 365を統合するプロセスについて説明します。 このプロセスを完了するには、CellTrust SL2 サービスをサブスクライブしており、SL2 アーキテクチャに精通していることを前提としています。 CellTrust SL2 の詳細については、次を参照してください <https://www.celltrust.com>。
 
-Microsoft 365のユーザー メールボックスにデータをインポートした後、訴訟ホールド、電子情報開示、Microsoft 365アイテム保持ポリシー、通信コンプライアンスなどのMicrosoft 365コンプライアンス機能を適用できます。 CellTrust SL2 Data Connector を使用してMicrosoft 365でデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
+Microsoft 365のユーザー メールボックスにデータをインポートした後、訴訟ホールド、電子情報開示、Microsoft 365アイテム保持ポリシー、通信コンプライアンスなどの Microsoft Purview 機能を適用できます。 CellTrust SL2 Data Connector を使用してMicrosoft 365でデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-with-the-celltrust-sl2-data-connector"></a>CellTrust SL2 データ コネクタを使用したアーカイブの概要
 
@@ -45,13 +45,13 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
 - SL2 ドメインの管理者アカウントにアクセスするための資格情報を取得します。
 
-- 手順 1 で CellTrust SL2 データ コネクタを作成し、手順 3 で完了したユーザーには、データ コネクタ管理者ロールを割り当てる必要があります。 このロールは、Microsoft 365 コンプライアンス センターの **[データ コネクタ**] ページにコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
+- 手順 1 で CellTrust SL2 データ コネクタを作成し、手順 3 で完了したユーザーには、データ コネクタ管理者ロールを割り当てる必要があります。 このロールは、Microsoft Purview コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この CellTrust データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft 365コンプライアンスとデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
+- この CellTrust データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purview およびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
 ## <a name="step-1-create-a-celltrust-sl2-connector"></a>手順 1: CellTrust SL2 コネクタを作成する
 
-最初の手順は、Microsoft 365 コンプライアンス センターにデータ コネクタを作成することです。
+最初の手順は、コンプライアンス ポータルでデータ コネクタを作成することです。
 
 1. 左側のナビゲーション ウィンドウで <https://compliance.microsoft.com> [ **データ コネクタ** ] に移動してクリックします。
 
@@ -85,11 +85,11 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
    ![OU をアーカイブできるようにします。](../media/EnableCellTrustOUs.png)
 
-4. 選択が完了したら、ブラウザー ウィンドウを閉じて、Microsoft 365 コンプライアンス センターのウィザード ページに戻ります。 数秒後、ウィザードは自動的にユーザーのマッピングの次の手順に進みます。
+4. 選択が完了したら、ブラウザー ウィンドウを閉じて、コンプライアンス ポータルのウィザード ページに戻ります。 数秒後、ウィザードは自動的にユーザーのマッピングの次の手順に進みます。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
-最後の手順では、ユーザーをマップし、Microsoft 365 コンプライアンス センターでコネクタのセットアップを完了します。
+最後の手順は、ユーザーをマップし、コンプライアンス ポータルでコネクタの設定を完了することです。
 
 1. **[ユーザー マッピング**] ページで、ユーザーのメール アドレスが SL2 とMicrosoft 365の両方で同じ場合は、[**自動ユーザー マッピングを有効にする**] を選択します。 それ以外の場合は、ユーザーの SL2 アドレスをMicrosoft 365 アドレスにマップする CSV ファイルをアップロードして、電子メール アドレスを手動でユーザーにする必要があります。
 
@@ -101,7 +101,7 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
 CellTrust SL2 データ コネクタの設定に関するヘルプについては、CellTrust への問い合わせの詳細については、CellTrust [カスタマー サポート ページ](https://www.celltrust.com/contact-us/#support) を参照してください。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - ドメイン管理者は、ドメインまたはそのドメイン内の任意の OU のコネクタを設定できます。 OU 管理者アカウントを使用する場合は、その特定の OU のコネクタのみを設定できます。
 

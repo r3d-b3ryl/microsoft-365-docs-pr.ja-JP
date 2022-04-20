@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft Defender に移行して、Office 365フェーズ 3: オンボード'
+title: 'Microsoft Defender for Office 365 フェーズ 3: オンボードに移行する'
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,52 +16,52 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: migrationguides
-description: サード パーティ製の保護サービスまたはデバイスから Microsoft Defender に移行する手順を実行して、保護Office 365します。
+description: サード パーティの保護サービスまたはデバイスからMicrosoft Defender for Office 365保護に移行する手順を完了します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9160a6fc79ba94e4cb86fb0f96f46e565c0f613c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: a2b70cdd53797a4985cc76f777401fa33f3e1163
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467513"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939215"
 ---
-# <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Microsoft Defender に移行して、Office 365 - フェーズ 3: オンボード
+# <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Microsoft Defender for Office 365に移行する - フェーズ 3: オンボード
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
 <br>
 
-|[![フェーズ 1: 準備します。](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [フェーズ 1: 準備](migrate-to-defender-for-office-365-prepare.md)|[![フェーズ 2: セットアップ。](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [フェーズ 2: 設定](migrate-to-defender-for-office-365-setup.md)|![フェーズ 3: オンボード。](../../media/phase-diagrams/onboard.png) <br> フェーズ 3: オンボード|
+|[![フェーズ 1: 準備します。](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [フェーズ 1: 準備](migrate-to-defender-for-office-365-prepare.md)|[![フェーズ 2: セットアップします。](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [フェーズ 2: 設定](migrate-to-defender-for-office-365-setup.md)|![フェーズ 3: オンボード。](../../media/phase-diagrams/onboard.png) <br> フェーズ 3: オンボード|
 |---|---|---|
-|||*お前はここにいる!*|
+|||*お客様はここにいます。*|
 
-フェーズ **3 へようこそ: Microsoft** **[Defender](migrate-to-defender-for-office-365.md#the-migration-process)** への移行にOffice 365! この移行フェーズには、次の手順が含まれます。
+**フェーズ 3 へようこそ:****[Microsoft Defender for Office 365への移行](migrate-to-defender-for-office-365.md#the-migration-process)** をオンボードします。 この移行フェーズには、次の手順が含まれます。
 
-1. [セキュリティ ポリシーのオンボーディングをTeams](#step-1-begin-onboarding-security-teams)
-2. [(省略可能)パイロット ユーザーが既存の保護サービスによるフィルター処理を除外する](#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)
-3. [スプーフィング インテリジェンスの調整](#step-3-tune-spoof-intelligence)
-4. [偽装保護とメールボックス インテリジェンスの調整](#step-4-tune-impersonation-protection-and-mailbox-intelligence)
-5. [ユーザー申請のデータを使用して測定と調整を行う](#step-5-use-data-from-user-submissions-to-measure-and-adjust)
+1. [セキュリティ Teamsのオンボードを開始する](#step-1-begin-onboarding-security-teams)
+2. [(省略可能)既存の保護サービスによるフィルター処理からパイロット ユーザーを除外する](#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)
+3. [スプーフィング インテリジェンスを調整する](#step-3-tune-spoof-intelligence)
+4. [偽装保護とメールボックス インテリジェンスを調整する](#step-4-tune-impersonation-protection-and-mailbox-intelligence)
+5. [ユーザー提出のデータを使用して測定と調整を行う](#step-5-use-data-from-user-submissions-to-measure-and-adjust)
 6. [(省略可能)パイロットにユーザーを追加して反復処理する](#step-6-optional-add-more-users-to-your-pilot-and-iterate)
-7. [すべてのMicrosoft 365保護を拡張し、SCL=-1 メール フロー ルールをオフにする](#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)
+7. [Microsoft 365保護をすべてのユーザーに拡張し、SCL=-1 メール フロー ルールを無効にする](#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)
 8. [MX レコードを切り替える](#step-8-switch-your-mx-records)
 
-## <a name="step-1-begin-onboarding-security-teams"></a>手順 1: セキュリティ ポリシーのオンボーディングを開始Teams
+## <a name="step-1-begin-onboarding-security-teams"></a>手順 1: セキュリティ Teamsのオンボードを開始する
 
-組織にセキュリティ対応チームがある場合は、チケットシステムを含む、Office 365に Microsoft Defender の統合を開始します。 これは、それ自体に関するトピック全体ですが、見落とされがちです。 セキュリティ対応チームを早期に参加することで、MX レコードを切り替える際に組織が脅威に対処する準備ができていることを確認できます。 インシデント対応は、次のタスクを処理するために十分な設備が必要です。
+組織にセキュリティ対応チームがある場合は、チケット発行システムを含む応答プロセスへのMicrosoft Defender for Office 365の統合を開始します。 これはトピック全体ですが、見落とされることがあります。 セキュリティ対応チームを早期に取得することで、MX レコードを切り替える際に組織が脅威に対処する準備が整います。 次のタスクを処理するには、インシデント対応を十分に備える必要があります。
 
-- 新しいツールを学習し、既存のフローに統合します。 次に例を示します。
-  - 検疫済みメッセージの管理は重要です。 手順については、「検疫済み [メッセージとファイルを管理者として管理する」を参照してください](manage-quarantined-messages-and-files.md)。
-  - メッセージ トレースを使用すると、メッセージの入力時または退出時にメッセージに何が起こったMicrosoft 365。 詳細については、「最新の管理センターのメッセージ トレース」をExchange[を参照Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)。
-- 組織に入れ込む可能性のあるリスクを特定します。
-- 組織プロセスの [アラートを調整](../../compliance/alert-policies.md) およびカスタマイズします。
+- 新しいツールを学習し、それらを既存のフローに統合します。 例:
+  - 検疫されたメッセージの管理者管理は重要です。 手順については、「 [管理者として検疫されたメッセージとファイルを管理する」を参照してください](manage-quarantined-messages-and-files.md)。
+  - メッセージ トレースを使用すると、メッセージがMicrosoft 365に出入りするときに、メッセージに何が発生したかを確認できます。 詳細については、[Exchange Onlineの最新のExchange管理センターのメッセージ トレースに関するExchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)を参照してください。
+- 組織に任せられている可能性のあるリスクを特定します。
+- 組織のプロセスの [アラート](../../compliance/alert-policies.md) を調整してカスタマイズします。
 - インシデント キューを管理し、潜在的なリスクを修復します。
 
-組織が microsoft Defender for Office 365 Plan 2 を購入している場合は、脅威エクスプローラー、高度な狩猟、インシデントなどの機能について理解し、使用する必要があります。 関連するトレーニングについては、を参照してください <https://aka.ms/mdoninja>。
+組織がプラン 2 Microsoft Defender for Office 365購入した場合は、Threat Explorer、Advanced Hunting、Incidents などの機能について理解し、使用し始める必要があります。 関連するトレーニングについては、以下を参照してください <https://aka.ms/mdoninja>。
 
-セキュリティ応答チームがフィルター処理されていないメッセージを収集して分析する場合は、これらのフィルター処理されていないメッセージを受信する SecOps メールボックスを構成できます。 手順については、「高度な配信 [ポリシーで SecOps メールボックスを構成する」を参照してください](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)。
+セキュリティ応答チームがフィルター処理されていないメッセージを収集して分析する場合は、これらのフィルター処理されていないメッセージを受信するように SecOps メールボックスを構成できます。 手順については、「 [高度な配信ポリシーで SecOps メールボックスを構成する](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)」を参照してください。
 
 ### <a name="siemsoar"></a>SIEM/SOAR
 
@@ -72,161 +72,161 @@ SIEM/SOAR との統合の詳細については、次の記事を参照してく�
 - [高度な追求 API](/microsoft-365/security/defender/api-advanced-hunting)
 - [インシデント API](/microsoft-365/security/defender/api-incident)
 
-組織にセキュリティ対応チームや既存のプロセス フローが存在しない場合は、この時間を使用して、Defender for Office 365 の基本的なハンティングおよび応答機能について理解することができます。 詳細については、「脅威の調査 [と対応」を参照してください](office-365-ti.md)。
+組織にセキュリティ対応チームまたは既存のプロセス フローがない場合は、この時間を使用して、Defender for Office 365の基本的なハンティング機能と応答機能について理解することができます。 詳細については、「 [脅威の調査と対応](office-365-ti.md)」を参照してください。
 
 ### <a name="rbac-roles"></a>RBAC ロール
 
-Defender for Office 365のアクセス許可は、役割ベースのアクセス制御 (RBAC) に基づいており、このポータルの [アクセス許可] [でMicrosoft 365 Defenderされています](permissions-microsoft-365-security-center.md)。 以下に注意する重要な点を示します。
+Defender for Office 365のアクセス許可はロールベースのアクセス制御 (RBAC) に基づいており、[Microsoft 365 Defender ポータル](permissions-microsoft-365-security-center.md)のアクセス許可で説明されています。 次の点に留意する必要があります。
 
-- Azure ADロールは、すべてのワークロードにアクセス許可を付与Microsoft 365。 たとえば、Azure portal のセキュリティ管理者にユーザーを追加すると、すべての場所にセキュリティ管理者のアクセス許可が付与されます。
-- & ポータルMicrosoft 365 Defenderの共同作業の役割をメールで送信すると、Microsoft 365 Defender ポータル、Microsoft 365 コンプライアンス センター、および以前のセキュリティ & コンプライアンス センターにアクセス許可が付与されます。 たとえば、Microsoft 365 Defender ポータルでセキュリティ管理者にユーザーを追加すると、Microsoft 365 Defender ポータル、Microsoft 365 コンプライアンス センター、およびセキュリティ & コンプライアンス センターでのみセキュリティ管理者アクセス権が与わります。
-- Microsoft 365 Defender ポータルの多くの機能は Exchange Online PowerShell コマンドレットに基づくため、Exchange Online の対応する役割 (技術的には役割グループ) の役割グループ メンバーシップが必要です (特に、対応するサーバーへのアクセスExchange Online PowerShell コマンドレット)。
-- Azure AD Microsoft 365 Defender ポータルには、& ロールと同等の役割を持つ電子メール & コラボレーション ロールが含まれます。セキュリティ操作には重要です (たとえば、プレビュー ロールと検索と削除の役割)。
+- Azure AD ロールは、Microsoft 365 **のすべての** ワークロードにアクセス許可を付与します。 たとえば、Azure portalのセキュリティ管理者にユーザーを追加すると、すべての場所でセキュリティ管理者のアクセス許可が付与されます。
+- Microsoft 365 Defender ポータルの電子メール & コラボレーション ロールは、Microsoft 365 Defender ポータル、Microsoft Purview コンプライアンス ポータル、および以前のセキュリティ & コンプライアンス センターにアクセス許可を付与します。 たとえば、Microsoft 365 Defender ポータルでセキュリティ管理者にユーザーを追加した場合、セキュリティ管理者は、Microsoft 365 Defender ポータル、Microsoft Purview コンプライアンス ポータル、およびセキュリティ & コンプライアンス センター **でのみ** セキュリティ管理者にアクセスできます。
+- Microsoft 365 Defender ポータルの多くの機能は、Exchange Online PowerShell コマンドレットに基づいているため、Exchange Onlineの対応するロール (技術的には、役割グループ) のロール グループ メンバーシップが必要です (特に、対応するExchange Online PowerShell コマンドレット)。
+- Microsoft 365 Defender ポータルには、Azure AD ロールに相当しない電子メール & コラボレーション ロールがあり、セキュリティ操作 (プレビュー ロールや検索ロールや消去ロールなど) に重要です。
 
-通常、セキュリティ担当者のサブセットのみが、ユーザー メールボックスから直接メッセージをダウンロードする追加の権限を必要とします。 これには、セキュリティ リーダーに既定で付与されていない追加のアクセス許可が必要です。
+通常、セキュリティ担当者のサブセットのみが、ユーザー メールボックスから直接メッセージをダウンロードするための追加の権限を必要とします。 これには、Security Reader に既定で付与されていない追加のアクセス許可が必要です。
 
-## <a name="step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service"></a>手順 2: (オプション) パイロット ユーザーが既存の保護サービスによるフィルター処理を除外する
+## <a name="step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service"></a>手順 2: (省略可能) パイロット ユーザーが既存の保護サービスによるフィルター処理を除外する
 
-この手順は必須ではありませんが、既存の保護サービスによるフィルター処理をバイパスするパイロット ユーザーの構成を検討する必要があります。 このアクションにより、Defender for Office 365パイロット ユーザー **のすべてのフィルター処理** と保護の義務を処理できます。 パイロット ユーザーを既存の保護サービスから除外しない場合、Defender for Office 365 は他のサービスからのミス (既にフィルター処理されたメッセージのフィルター処理) でのみ効果的に動作します。
+この手順は必要ありませんが、既存の保護サービスによるフィルター処理をバイパスするようにパイロット ユーザーを構成することを検討する必要があります。 このアクションにより、Defender for Office 365はパイロット ユーザー **のすべての** フィルター処理と保護の職務を処理できます。 パイロット ユーザーを既存の保護サービスから除外しない場合、Defender for Office 365他のサービスからのミス (既にフィルター処理されているメッセージのフィルター処理) でのみ効果的に動作します。
 
 > [!NOTE]
-> 現在の保護サービスでリンク の折り返しを提供しているが、リンク機能を試用する場合は、この手順セーフ必要です。 リンクの二重折り返しはサポートされていません。
+> この手順は、現在の保護サービスがリンク ラッピングを提供しているが、リンク機能セーフパイロットする場合に明示的に必要です。 リンクの二重折り返しはサポートされていません。
 
 ## <a name="step-3-tune-spoof-intelligence"></a>手順 3: スプーフィング インテリジェンスを調整する
 
-スプー [フィング インテリジェンス](learn-about-spoof-intelligence.md) の分析情報を確認して、スプーフィングとして許可またはブロックされている情報を確認し、スプーフィングのシステムの評決を上書きする必要があるかどうかを判断します。 ビジネスクリティカルな電子メールの一部のソースでは、DNS (SPF、DKIM、DMARC) で電子メール認証レコードが正しく構成されていない可能性があります。また、既存の保護サービスで上書きを使用してドメインの問題をマスクしている可能性があります。
+[スプーフィング インテリジェンス分析情報](learn-about-spoof-intelligence.md)を確認して、スプーフィングとして許可またはブロックされているものを確認し、スプーフィングのシステム判定をオーバーライドする必要があるかどうかを判断します。 ビジネスクリティカルな電子メールの一部のソースで、DNS (SPF、DKIM、DMARC) で電子メール認証レコードが正しく構成されておらず、既存の保護サービスでオーバーライドを使用してドメインの問題をマスクしている可能性があります。
 
-スプーフィング インテリジェンスは、DNS の適切な電子メール認証レコードなしでドメインから電子メールを救出できますが、この機能では、適切なスプーフィングと悪いスプーフィングを区別するための支援が必要な場合があります。 次の種類のメッセージ ソースに注目します。
+スプーフィング インテリジェンスは、DNS で適切な電子メール認証レコードを使用せずにドメインから電子メールを救済できますが、この機能では、スプーフィングと不適切なスプーフィングを区別するための支援が必要な場合があります。 次の種類のメッセージ ソースに焦点を当てます。
 
-- 「拡張コネクタのフィルター処理」で定義されている IP アドレス範囲 [の外部にあるメッセージ ソース](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+- [コネクタの拡張フィルター処理](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)で定義されている IP アドレス範囲外のメッセージ ソース。
 - メッセージの数が最も多いメッセージ ソース。
 - 組織に最も大きな影響を与えるメッセージ ソース。
 
-スプーフィング インテリジェンスは、ユーザーの申請を構成した後に最終的に調整されます。そのため、完璧な機能を必要としません。
+スプーフィング インテリジェンスは、最終的にユーザーの送信を構成した後に自身を調整するため、完璧な操作を行う必要はありません。
 
 ## <a name="step-4-tune-impersonation-protection-and-mailbox-intelligence"></a>手順 4: 偽装保護とメールボックス インテリジェンスを調整する
 
-[アクション モードを適用しない] で偽装保護の結果を確認するのに十分な時間が取られたら、フィッシング対策ポリシーで偽装保護アクションを個別に有効にできます。
+アクション モードを **適用しない** で偽装保護の結果を確認するのに十分な時間が経過したら、フィッシング対策ポリシーで各偽装保護アクションを個別に有効にすることができます。
 
-- ユーザー偽装保護: Standard **と** Strict の両方のメッセージを検疫します。
-- ドメイン偽装保護: Standard **と** Strict の両方のメッセージを検疫します。
-- メールボックス インテリジェンス保護: **メッセージを受信者の** 標準の迷惑メール フォルダーに移動します。 **[厳密] のメッセージを** 検疫します。
+- ユーザー権限借用保護: Standard と Strict **の両方のメッセージを検疫** します。
+- ドメイン偽装保護: Standard と Strict **の両方のメッセージを検疫** します。
+- メールボックス インテリジェンス保護: **Standard の受信者の迷惑メール フォルダーにメッセージを移動** します。 **Strict のメッセージを検疫** します。
 
-偽装保護の結果をメッセージに対して処理せずに監視する時間が長くなると、必要になる可能性のある許可またはブロックを特定する必要があるデータが多くなります。 観察と調整を可能にするのに十分な大きな各保護をオンにする間の遅延を使用してください。
+メッセージに作用せずに偽装保護の結果を監視する時間が長いほど、必要な可能性がある許可またはブロックを特定する必要があるデータが増えます。 観察と調整を可能にするために十分に重要な各保護をオンにするまでの遅延を使用することを検討してください。
 
 > [!NOTE]
-> これらの保護の頻繁で継続的な監視と調整が重要です。 誤検知が疑われる場合は、原因を調査し、必要に応じて上書きのみを使用し、必要な検出機能のみを使用します。
+> これらの保護の頻繁かつ継続的な監視とチューニングが重要です。 誤検知が疑われる場合は、原因を調査し、必要な場合にのみオーバーライドを使用し、それを必要とする検出機能に対してのみ使用します。
 
-### <a name="tune-mailbox-intelligence"></a>メールボックス インテリジェンスの調整
+### <a name="tune-mailbox-intelligence"></a>メールボックス インテリジェンスを調整する
 
-メールボックス インテリジェンスは、偽装の試行と判断されたメッセージに対して[](impersonation-insight.md)何もアクションを実行するように構成されていませんが、パイロット ユーザーの電子メールの送受信パターンをオンにし、学習しています。 外部ユーザーがパイロット ユーザーの 1 人と接触している場合、その外部ユーザーからのメッセージは、メールボックス インテリジェンスによる偽装の試みとして識別されません (したがって、誤検知が減少します)。
+メールボックス インテリジェンスは [、偽装試行と判断](impersonation-insight.md)されたメッセージに対してアクションを実行するように構成されていますが、パイロット ユーザーの電子メール送受信パターンがオンになっていると学習されています。 外部ユーザーがパイロット ユーザーと連絡を取っている場合、その外部ユーザーからのメッセージは、メールボックス インテリジェンスによる偽装の試行として識別されません (したがって、誤検知が減ります)。
 
-準備ができたら、次の手順を実行して、偽装の試行として検出されたメッセージに対してメールボックス インテリジェンスが機能します。
+準備ができたら、次の手順を実行して、偽装試行として検出されたメッセージに対してメールボックス インテリジェンスが動作できるようにします。
 
-- 標準保護設定のフィッシング対策ポリシーで、[メールボックス インテリジェンスが偽装ユーザーを検出した場合] の値を変更して、受信者の迷惑メール フォルダーにメッセージを **移動します**。
+- Standard Protection 設定のフィッシング対策ポリシーで、偽装 **されたユーザーがメールボックス インテリジェンスによって検出された場合** の値を変更して、メッセージを **受信者の迷惑メール フォルダーに移動します**。
 
-- [厳密な保護] 設定のフィッシング対策ポリシーで、[メールボックス インテリジェンスが検出され、偽装されたユーザーが検出された場合] の値を [メッセージの検疫 **] に変更します**。
+- Strict Protection 設定のフィッシング対策ポリシーで、[ **メールボックス インテリジェンスが検出して偽装されたユーザーの場合** ] の値を **[メッセージの検疫]** に変更します。
 
-ポリシーを変更するには、「[Defender で](configure-mdo-anti-phishing-policies.md)フィッシング対策ポリシーを構成する」を参照Office 365。
+ポリシーを変更するには、「[Defender for Office 365でフィッシング対策ポリシーを構成する](configure-mdo-anti-phishing-policies.md)」を参照してください。
 
-結果を確認し、調整を行った後、次のセクションに進み、ユーザー偽装によって検出されたメッセージを検疫します。
+結果を観察して調整を行った後は、次のセクションに進み、ユーザーの偽装によって検出されたメッセージを検疫します。
 
-### <a name="tune-user-impersonation-protection"></a>ユーザー偽装保護の調整
+### <a name="tune-user-impersonation-protection"></a>ユーザー権限借用保護を調整する
 
-Standard と Strict の設定に基づくフィッシング対策ポリシーの両方で、[メッセージが偽装されたユーザーとして検出された場合] の値を [メッセージの検疫 **] に変更します**。
+Standard と Strict の設定に基づくフィッシング対策ポリシーの両方で、 **偽装されたユーザーとしてメッセージが検出された場合** の値を [ **メッセージを検疫する]** に変更します。
 
-偽装の [分析情報を](impersonation-insight.md) 確認して、ユーザー偽装の試みとしてブロックされている情報を確認します。
+[偽装の分析情報](impersonation-insight.md)を確認して、ユーザー偽装の試行時にブロックされている内容を確認します。
 
-ポリシーを変更するには、「[Defender で](configure-mdo-anti-phishing-policies.md)フィッシング対策ポリシーを構成する」を参照Office 365。
+ポリシーを変更するには、「[Defender for Office 365でフィッシング対策ポリシーを構成する](configure-mdo-anti-phishing-policies.md)」を参照してください。
 
-結果を確認し、調整を行った後、次のセクションに進み、ドメイン偽装によって検出されたメッセージを検疫します。
+結果を観察して調整を行った後は、次のセクションに進み、ドメイン偽装によって検出されたメッセージを検疫します。
 
-### <a name="tune-domain-impersonation-protection"></a>ドメイン偽装保護の調整
+### <a name="tune-domain-impersonation-protection"></a>ドメイン偽装保護を調整する
 
-Standard と Strict の設定に基づくフィッシング対策ポリシーの両方で、[メッセージが偽装されたドメインとして検出された場合] の値を [メッセージの検疫 **] に変更します**。
+Standard と Strict の設定に基づくフィッシング対策ポリシーの両方で、 **偽装されたドメインとしてメッセージが検出された場合** の値を [ **メッセージの検疫]** に変更します。
 
-偽装の [分析情報を確認](impersonation-insight.md) して、ドメイン偽装の試みとしてブロックされている情報を確認します。
+[偽装の分析情報](impersonation-insight.md)を確認して、ドメイン偽装の試行としてブロックされている内容を確認します。
 
-ポリシーを変更するには、「[Defender で](configure-mdo-anti-phishing-policies.md)フィッシング対策ポリシーを構成する」を参照Office 365。
+ポリシーを変更するには、「[Defender for Office 365でフィッシング対策ポリシーを構成する](configure-mdo-anti-phishing-policies.md)」を参照してください。
 
 結果を確認し、必要に応じて調整を行います。
 
-## <a name="step-5-use-data-from-user-submissions-to-measure-and-adjust"></a>手順 5: ユーザー申請のデータを使用して測定および調整する
+## <a name="step-5-use-data-from-user-submissions-to-measure-and-adjust"></a>手順 5: ユーザー提出のデータを使用して測定および調整する
 
-パイロット ユーザーが誤検知と誤検知を報告すると、メッセージはポータルの [申請] [ページにMicrosoft 365 Defenderされます](admin-submission.md)。 誤認されたメッセージを分析のために Microsoft に報告し、情報を使用してパイロット ポリシーの設定と例外を必要に応じて調整できます。
+パイロット ユーザーが誤検知と偽陰性を報告すると、Microsoft 365 Defender [ポータルの [提出] ページにメッセージが](admin-submission.md)表示されます。 誤認されたメッセージを分析のために Microsoft に報告し、必要に応じてパイロット ポリシーの設定と例外を調整する情報を使用できます。
 
-Defender の保護設定を監視および反復処理するには、次の機能を使用Office 365。
+Defender for Office 365の保護設定を監視および反復処理するには、次の機能を使用します。
 
 - [検疫](manage-quarantined-messages-and-files.md)
 - [脅威エクスプローラー](email-security-in-microsoft-defender.md)
 - [電子メール セキュリティ レポート](view-email-security-reports.md)
-- [レポートのOffice 365ディフェンダー](view-reports-for-mdo.md)
+- [レポートのDefender for Office 365](view-reports-for-mdo.md)
 - [メール フローの分析情報](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [メール フロー レポート](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
-組織がユーザー レポートにサードパーティ サービスを使用している場合は、そのデータをフィードバック ループに統合できます。
+組織がユーザー レポートにサード パーティのサービスを使用している場合は、そのデータをフィードバック ループに統合できます。
 
-## <a name="step-6-optional-add-more-users-to-your-pilot-and-iterate"></a>手順 6: (オプション) パイロットにユーザーを追加して反復処理する
+## <a name="step-6-optional-add-more-users-to-your-pilot-and-iterate"></a>手順 6: (省略可能) パイロットにユーザーを追加し、反復処理する
 
-問題を見つけて修正すると、パイロット グループにユーザーを追加できます (それに対応して、新しいパイロット ユーザーが既存の保護サービスによるスキャンを適切に除外します)。 テストを行う度に、後で対処する必要があるユーザーの問題が少なめになります。 この "ウォーターフォール" アプローチでは、組織の大部分に対して調整を行い、セキュリティ チームが新しいツールとプロセスに合わせて調整する時間を与えます。
+問題を見つけて修正すると、パイロット グループにユーザーを追加できます (また、新しいパイロット ユーザーが既存の保護サービスによるスキャンを適宜除外することもできます)。 テストを行うほど、後で対処する必要があるユーザーの問題は少なくなります。 この "ウォーターフォール" アプローチにより、組織の大部分に対するチューニングが可能になり、セキュリティ チームは新しいツールやプロセスに調整する時間を与えます。
 
-- Microsoft 365ポリシーによって信頼度の高いフィッシング メッセージが許可されている場合にアラートを生成します。 これらのメッセージを識別するには、次のオプションがあります。
-  - 脅威保護の状態 [レポートで上書きします](view-email-security-reports.md#threat-protection-status-report)。
-  - 脅威エクスプローラーでフィルターを実行して、メッセージを識別します。
-  - 高度な検索でフィルター処理して、メッセージを識別します。
+- Microsoft 365は、組織のポリシーで信頼度の高いフィッシング メッセージが許可されている場合にアラートを生成します。 これらのメッセージを識別するには、次のオプションがあります。
+  - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)のオーバーライド。
+  - 脅威エクスプローラーでフィルター処理してメッセージを識別します。
+  - Advanced Hunting でフィルター処理してメッセージを識別します。
 
-  管理者の申請を通じて、可能な限り早期に誤検知を Microsoft に報告し、テナント許可 [/](tenant-allow-block-list.md) ブロック一覧機能を使用して、それらの誤検知に対する安全な上書きを構成します。
+  管理者の提出を通じてできるだけ早く Microsoft に誤検知を報告し、 [テナント許可/ブロック リスト](tenant-allow-block-list.md) 機能を使用して、これらの誤検知の安全な上書きを構成します。
 
-- また、不要な上書きを調べるのも良い考えです。 つまり、メッセージで提供されるMicrosoft 365を確認します。 Microsoft365 が正しい評決をレンダリングした場合、オーバーライドの必要性は大幅に減少または排除されます。
+- また、不要なオーバーライドを調べることもお勧めします。 言い換えると、メッセージに対してMicrosoft 365が指定した判定を確認します。 Microsoft365 が正しい判定を下した場合、オーバーライドの必要性は大幅に減少または排除されます。
 
-## <a name="step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule"></a>手順 7: すべてのMicrosoft 365保護を拡張し、SCL=-1 メール フロー ルールをオフにする
+## <a name="step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule"></a>手順 7: Microsoft 365保護をすべてのユーザーに拡張し、SCL=-1 メール フロー ルールを無効にする
 
-MX レコードを切り替えてレコードをポイントする準備ができたら、このセクションの手順を実行Microsoft 365。
+MX レコードをMicrosoft 365を指すように切り替える準備ができたら、このセクションの手順を実行します。
 
-1. パイロット ポリシーを組織全体に拡張します。 基本的に、これを行う方法は異なります。
-   - 事前 [に設定されたセキュリティ](preset-security-policies.md) ポリシーを使用し、標準保護プロファイルと厳密な保護プロファイルの間でユーザーを分割します (すべてのユーザーが対象に設定されている必要があります)。 事前設定されたセキュリティ ポリシーは、作成したカスタム ポリシーまたは既定のポリシーの前に適用されます。 個々のパイロット ポリシーを削除せずにオフにできます。
+1. パイロット ポリシーを組織全体に拡張します。 基本的に、これを行うにはさまざまな方法があります。
+   - [事前設定されたセキュリティ](preset-security-policies.md) ポリシーを使用し、Standard 保護プロファイルと Strict 保護プロファイルの間でユーザーを分割します (全員が対象になっていることを確認してください)。 事前設定されたセキュリティ ポリシーは、作成したカスタム ポリシーまたは既定のポリシーの前に適用されます。 個々のパイロット ポリシーを削除せずに無効にすることができます。
 
-     セキュリティ ポリシーを事前に設定する欠点は、重要な設定の多くを作成した後で変更できない点です。
+     事前設定されたセキュリティ ポリシーの欠点は、重要な設定の多くを作成した後で変更できないことです。
 
-   - パイロット中に作成および調整したポリシーの範囲を変更して、すべてのユーザー (すべてのドメイン内のすべての受信者など) を含める。 同じ種類の複数のポリシー (フィッシング対策ポリシーなど) が同じユーザー (個別、グループ メンバーシップ、または電子メール ドメイン) に適用される場合は、優先度が最も高いポリシーの設定 (優先度が最も低い番号) だけが適用され、その種類のポリシーの処理が停止します。
+   - パイロット中に作成および調整したポリシーのスコープを、すべてのユーザー (すべてのドメイン内のすべての受信者など) を含めるために変更します。 同じ種類の複数のポリシー (フィッシング対策ポリシーなど) が同じユーザー (グループ メンバーシップ、または電子メール ドメインによって個別に) に適用される場合は、優先度が最も高いポリシーの設定 (優先度が最も低い番号) のみが適用され、その種類のポリシーの処理が停止します。
 
-2. SCL=-1 メール フロー ルールをオフにします (削除せずにオフにできます)。
+2. SCL=-1 メール フロー ルールをオフにします (削除せずに無効にすることができます)。
 
-3. 以前の変更が有効にされ、すべてのユーザーに対して Defender for Office 365が正しく有効になっているか確認します。 この時点で、Office 365 用 Defender のすべての保護機能は、すべての受信者のメールに対して処理が許可されますが、そのメールは既存の保護サービスによって既にスキャンされています。
+3. 前の変更が有効になっており、Defender for Office 365がすべてのユーザーに対して適切に有効になっていることを確認します。 この時点で、Defender for Office 365のすべての保護機能は、すべての受信者のメールに対して動作できるようになりましたが、そのメールは既存の保護サービスによって既にスキャンされています。
 
-この段階で一時停止して、より大規模なデータの記録とチューニングを行います。
+この段階で一時停止すると、より大規模なデータの記録とチューニングを行うことができます。
 
 ## <a name="step-8-switch-your-mx-records"></a>手順 8: MX レコードを切り替える
 
 > [!NOTE]
 >
-> - ドメインの MX レコードを切り替える場合、変更がインターネット全体に反映されるのに最大 48 時間かかることがあります。
+> - ドメインの MX レコードを切り替えると、変更がインターネット全体に反映されるまでに最大で 48 時間かかる場合があります。
 >
-> - DNS レコードの TTL 値を下げて、応答の高速化とロールバックを可能にすることをお勧めします (必要な場合)。 切り替えが完了して検証された後は、元の TTL 値に戻す必要があります。
+> - 応答の高速化とロールバック (必要な場合) を有効にするために、DNS レコードの TTL 値を下げることをお勧めします。 切り替えが完了して検証された後、元の TTL 値に戻すことができます。
 >
-> - 使用頻度の低いドメインの変更から始める必要があります。 大きなドメインに移動する前に、一時停止して監視できます。 ただし、この場合でも、セカンダリ SMTP ドメインはポリシー アプリケーションの前にプライマリ ドメインに解決されるので、すべてのユーザーとドメインがポリシーでカバーされている必要があります。
+> - 使用頻度の低いドメインの変更から始めることをお勧めします。 大規模なドメインに移行する前に、一時停止と監視を行うことができます。 ただし、これを行う場合でも、セカンダリ SMTP ドメインはポリシー アプリケーションの前にプライマリ ドメインに解決されるため、すべてのユーザーとドメインがポリシーでカバーされていることを確認する必要があります。
 >   
-> - 1 つのドメインの複数の MX レコードが技術的に機能し、この記事のすべてのガイダンスに従っている場合は、分割ルーティングが可能です。 具体的には、「セットアップ 手順 [3: SCL=-1](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule) メール フロー ルールを維持または作成する」の説明に従って、ポリシーがすべてのユーザーに適用され、SCL=-1 メール フロー ルールが既存の保護サービスを通過するメールにのみ適用される必要があります。 ただし、この構成ではトラブルシューティングが非常に困難になる動作が導入されるため、通常は、特に長時間は推奨しません。
+> - 1 つのドメインに対して複数の MX レコードが技術的に機能するため、この記事のすべてのガイダンスに従っている場合は、分割ルーティングを行うことができます。 具体的には、「セットアップ 手順 3: SCL=-1 メール フロー ルールを維持または作成する」の説明に従って、既存の保護サービスを通過するメールにのみ [SCL=-1 メール フロー ルール](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule)が適用されるように、すべてのユーザーにポリシーが適用されていることを確認する必要があります。 ただし、この構成ではトラブルシューティングをはるかに困難にする動作が導入されるため、通常は推奨されません。特に長時間の場合は推奨されません。
 >
-> - MX レコードを切り替える前に、保護サービスから受信コネクタで次の設定が有効になっていないMicrosoft 365。 通常、コネクタには次の 1 つ以上の設定が構成されます。
+> - MX レコードを切り替える前に、保護サービスからMicrosoft 365への受信コネクタで次の設定が有効になっていないことを確認します。 通常、コネクタには次の 1 つ以上の設定が構成されます。
 >
->   - **パートナーが認証に使用** する証明書のサブジェクト名が、このドメインOffice 365一致する必要があります (*RestrictDomainsToCertificate*)
->   - **この IP アドレス範囲内から送信されない** 電子メール メッセージを拒否する (*RestrictDomainsToIPAddresses*)
+>   - **パートナーがOffice 365で認証するために使用する証明書のサブジェクト名がこのドメイン名と一致することを要求** します (*RestrictDomainsToCertificate*)
+>   - **この IP アドレス範囲内から送信されない電子メール メッセージを拒否** する (*RestrictDomainsToIPAddresses*)
 >
->   コネクタの種類が **Partner** で、これらの設定のいずれかをオンにすると、MX レコードを切り替えても、ドメインへのメール配信はすべて失敗します。 続行する前に、これらの設定を無効にする必要があります。 コネクタがハイブリッドに使用されるオンプレミス コネクタの場合は、オンプレミス コネクタを変更する必要があります。 ただし、パートナー コネクタの有無を **確認** できます。
+>   コネクタの種類が **パートナー** であり、これらの設定のいずれかがオンになっている場合、MX レコードを切り替えた後、ドメインへのすべてのメール配信が失敗します。 続行する前に、これらの設定を無効にする必要があります。 コネクタがハイブリッドに使用されるオンプレミス コネクタの場合は、オンプレミス コネクタを変更する必要はありません。 ただし、 **パートナー** コネクタの存在を確認することはできます。
 >   
-> - 現在のメール ゲートウェイで受信者の検証も提供している場合は、ドメインが権限のあるドメインとして構成されていることを[](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)確認Microsoft 365。 これにより、不要なバウンス メッセージを防止できます。
+> - 現在のメール ゲートウェイで受信者の検証も提供されている場合は、ドメインが [Microsoft 365で[権限あり]](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) として構成されていることを確認することをお勧めします。 これにより、不要なバウンス メッセージを防ぐことができます。
 
-準備ができたら、ドメインの MX レコードを切り替えます。 すべてのドメインを一度に移行できます。 または、使用頻度の低いドメインを最初に移行し、残りのドメインを後で移行することもできます。
+準備ができたら、ドメインの MX レコードを切り替えます。 すべてのドメインを一度に移行できます。 または、使用頻度の低いドメインを最初に移行してから、後で残りのドメインを移行することもできます。
 
-いつでもここで一時停止して評価してください。 ただし、SCL=-1 メール フロー ルールをオフにした場合、ユーザーは誤検知をチェックする 2 つの異なるエクスペリエンスを持つ可能性があります。 1 つの一貫性のあるエクスペリエンスを提供できると、ユーザーとヘルプ デスク チームは、不足しているメッセージのトラブルシューティングを行う必要がある場合に、より幸せになります。
+任意の時点で、ここで自由に一時停止して評価してください。 ただし、SCL=-1 メール フロー ルールをオフにすると、ユーザーは誤検知をチェックするための 2 つの異なるエクスペリエンスを持つ可能性があることに注意してください。 1 つの一貫性のあるエクスペリエンスをすぐに提供できる限り、ユーザーとヘルプ デスク チームは、不足しているメッセージのトラブルシューティングを行う必要があるとき、より幸せになります。
 
 ## <a name="next-steps"></a>次の手順
 
-おめでとうございます! Microsoft Defender への移行が完了[しました。Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! この移行ガイドの手順に従ったので、メールが直接メールで配信される最初の数日間は、Microsoft 365よりスムーズになる必要があります。
+おめでとうございます! [Microsoft Defender for Office 365への移行](migrate-to-defender-for-office-365.md#the-migration-process)が完了しました。 この移行ガイドの手順に従ったので、メールが直接Microsoft 365に配信される最初の数日間は、はるかにスムーズである必要があります。
 
-次に、Defender の通常の操作とメンテナンスを開始し、Office 365。 パイロットの間に経験した問題に似ているが、より大規模な問題を監視し、監視します。 ス [プーフィング インテリジェンスの分析](learn-about-spoof-intelligence.md) 情報と [偽装の分析情報](impersonation-insight.md) が最も役立ちますが、次のアクティビティを定期的に実行する方法を検討してください。
+次に、Defender for Office 365の通常の操作とメンテナンスを開始します。 パイロットの間に発生した問題と似ていますが、大規模な問題を監視して監視します。 [スプーフィング インテリジェンス分析情報](learn-about-spoof-intelligence.md)と[偽装分析情報](impersonation-insight.md)が最も役立ちますが、次のアクティビティを定期的に発生することを検討してください。
 
-- ユーザーの申請、特にユーザー [が報告したフィッシング メッセージを確認する](automated-investigation-response-office.md)
-- 脅威保護の状態レポート [で上書きを確認します](view-email-security-reports.md#threat-protection-status-report)。
-- 高度 [なハンティング クエリ](/microsoft-365/security/defender/advanced-hunting-example) を使用して、調整の機会と危険なメッセージを探します。
+- ユーザーの提出、特に [ユーザーから報告されたフィッシング メッセージを確認する](automated-investigation-response-office.md)
+- [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)で上書きを確認します。
+- [高度なハンティング](/microsoft-365/security/defender/advanced-hunting-example) クエリを使用して、チューニングの機会と危険なメッセージを探します。

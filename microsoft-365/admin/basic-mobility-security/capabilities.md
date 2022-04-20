@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティと管理に役立ちます。
-ms.openlocfilehash: 78cfa4582aa2e25a3b47a12d2e067082e8b41d07
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b0e303af27d731cf3dba3af13019b3b993e52bfe
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781229"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937765"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
@@ -98,8 +98,8 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
 |パスワードを要求|はい|はい|はい|
-|シンプルなパスワードを禁止|はい|不要|不要|
-|英数字のパスワードを要求|はい|不要|不要|
+|シンプルなパスワードを禁止|はい|いいえ|いいえ|
+|英数字のパスワードを要求|はい|いいえ|いいえ|
 |パスワードの最小文字数|はい|はい|はい|
 |デバイスがワイプされるまでのサインイン失敗回数|はい|はい|はい|
 |デバイスがロックされるまでのアイドル時間 (分)|はい|はい|はい|
@@ -110,7 +110,7 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|デバイスでデータ暗号化を要求<sup>する1</sup>|不要|はい|はい|
+|デバイスでデータ暗号化を要求<sup>する1</sup>|いいえ|はい|はい|
 
 <sup>1</sup>Samsung Knox では、ストレージ カードで暗号化を要求することもできます。
 
@@ -126,16 +126,16 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|電子メール プロファイルが管理されている|はい|不要|不要|
+|電子メール プロファイルが管理されている|はい|いいえ|いいえ|
 
 ## <a name="cloud-settings"></a>クラウドの設定
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|暗号化されたバックアップを要求|はい|不要|不要|
-|クラウド バックアップの禁止|はい|不要|不要|
-|ドキュメントの同期の禁止|はい|不要|不要|
-|写真の同期の禁止|はい|不要|不要|
+|暗号化されたバックアップを要求|はい|いいえ|いいえ|
+|クラウド バックアップの禁止|はい|いいえ|いいえ|
+|ドキュメントの同期の禁止|はい|いいえ|いいえ|
+|写真の同期の禁止|はい|いいえ|いいえ|
 |Google のバックアップを許可する|該当なし|いいえ|はい|
 |Google アカウントの自動同期を許可する|該当なし|いいえ|はい|
 
@@ -143,23 +143,23 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|画面キャプチャの禁止|はい|不要|はい|
-|デバイスからの診断データ送信の禁止|はい|不要|はい|
+|画面キャプチャの禁止|はい|いいえ|はい|
+|デバイスからの診断データ送信の禁止|はい|いいえ|はい|
 
 ## <a name="application-settings"></a>アプリケーションの設定
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|デバイスでのビデオ会議をブロックする|はい|不要|不要|
-|アプリケーション ストアへのアクセスをブロックする|はい|不要|はい|
-|アプリケーション ストアへアクセスする際にパスワードを要求する|不要|はい|はい|
+|デバイスでのビデオ会議をブロックする|はい|いいえ|いいえ|
+|アプリケーション ストアへのアクセスをブロックする|はい|いいえ|はい|
+|アプリケーション ストアへアクセスする際にパスワードを要求する|いいえ|はい|はい|
 
 ## <a name="device-capabilities-settings"></a>デバイスの機能の設定
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|リムーバブル記憶域との接続の禁止|はい|はい|不要|
-|Bluetooth 接続の禁止|はい|はい|不要|
+|リムーバブル記憶域との接続の禁止|はい|はい|いいえ|
+|Bluetooth 接続の禁止|はい|はい|いいえ|
 
 ## <a name="additional-settings"></a>その他の設定
 
@@ -168,18 +168,18 @@ Security & Compliance Center PowerShell コマンドレットを使用して、�
 |設定名|iOS|Android|
 |---|---|---|
 |CameraEnabled|はい|はい|
-|RegionRatings|はい|不要|
-|MoviesRatings|はい|不要|
-|TVShowsRating|はい|不要|
-|AppsRatings|はい|不要|
-|AllowVoiceDialing|はい|不要|
-|AllowVoiceAssistant|はい|不要|
-|AllowAssistantWhileLocked|はい|不要|
-|AllowPassbookWhileLocked|はい|不要|
-|MaxPasswordGracePeriod|はい|不要|
-|PasswordQuality|不要|はい|
-|SystemSecurityTLS|はい|不要|
-|WLANEnabled|不要|不要|
+|RegionRatings|はい|いいえ|
+|MoviesRatings|はい|いいえ|
+|TVShowsRating|はい|いいえ|
+|AppsRatings|はい|いいえ|
+|AllowVoiceDialing|はい|いいえ|
+|AllowVoiceAssistant|はい|いいえ|
+|AllowAssistantWhileLocked|はい|いいえ|
+|AllowPassbookWhileLocked|はい|いいえ|
+|MaxPasswordGracePeriod|はい|いいえ|
+|PasswordQuality|いいえ|はい|
+|SystemSecurityTLS|はい|いいえ|
+|WLANEnabled|いいえ|いいえ|
 
 ## <a name="settings-supported-by-windows"></a>Windowsでサポートされている設定
 
@@ -230,7 +230,7 @@ PowerShell コマンドレットを使用して、次の追加のポリシー設
 
 ## <a name="remotely-wipe-a-mobile-device"></a>モバイル デバイスをリモートからワイプする
 
-デバイスが紛失または盗難にあった場合は、機密組織のデータを削除し、セキュリティ & コンプライアンス センター>**データ損失防止** > **デバイス管理** からのワイプを実行することで、Microsoft 365組織のリソースへのアクセスを防ぐことができます。 個別のワイプで組織のデータのみを削除することも、全体のワイプでデバイスからすべての情報を削除して出荷時の設定に戻すこともできます。
+デバイスが紛失または盗難にあった場合は、機密性の高い組織データを削除し、**Microsoft Purview コンプライアンス ポータル** > **データ損失防止** > **デバイス管理** からのワイプを実行して、Microsoft 365組織のリソースへのアクセスを防ぐことができます。 個別のワイプで組織のデータのみを削除することも、全体のワイプでデバイスからすべての情報を削除して出荷時の設定に戻すこともできます。
 
 詳細については、「 [基本的なモビリティとセキュリティでモバイル デバイスをワイプする」を参照してください](wipe-mobile-device.md)。
 

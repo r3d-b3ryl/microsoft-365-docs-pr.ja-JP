@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: 2ca2e6320ddd119c4dcb20db2f816c9e9a4453ae
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cfea35dccd09e0eea361e56f1914700660b7fdd4
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324397"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943131"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 
@@ -111,7 +111,7 @@ ms.locfileid: "63324397"
 
 秘密度ラベルを作成する
 
-1. Microsoft 365 コンプライアンス センター開き、**[ソリューション]** の下の、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**[情報保護]**</a> を選択します。
+1. Microsoft Purview コンプライアンス ポータルを開き、**［ソリューション］** で、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**［Information protection］**</a> を選択します。
 1. **[ラベルの作成]** をクリックします。
 1. ラベルに名前を付けます。使用するチームにちなんで名前を付けることをお勧めします。
 1. 表示名と説明を追加し、**[次へ]** をクリックします。
@@ -143,7 +143,7 @@ ms.locfileid: "63324397"
 
 感度ラベルを発行するには、次の方法を使用します:
 
-1. Microsoft 365 コンプライアンス センターの、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**情報保護** ページ</a>で、**[ラベル ポリシー]** タブを選択します。
+1. Microsoft Purview コンプライアンス ポータルの、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**［Information protection］** ページ</a> で、**［ラベル ポリシー］** タブを選択します。
 2. **[ラベルの発行]** をクリックします。
 3. **[発行する秘密度ラベルの選択]** ページで、**[発行する秘密度ラベルの選択]** をクリックします。
 4. 作成したラベルを選択し、**[追加]** をクリックします。

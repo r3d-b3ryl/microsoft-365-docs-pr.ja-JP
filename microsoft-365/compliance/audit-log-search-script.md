@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: PowerShell スクリプトを使用して、Exchange Online で Search-UnifiedAuditLog コマンドレットを実行し、監査ログを検索します。 このスクリプトは、実行するたびに大規模なセットの監査レコードを返すように最適化されています。 これらのレコードはスクリプトによって CSV ファイルにエクスポートされ、ユーザーは Excel の Power Query を使用して表示および変換することができます。
-ms.openlocfilehash: 60f78f5a5eebeaa90f01b4b251d917f178c06ae9
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: fc7f2e8626fd5b510dca08504d91dd0faadd78b6
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421356"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943845"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>PowerShell スクリプトを使用して監査ログを検索する
 
@@ -32,11 +32,11 @@ ms.locfileid: "61421356"
 
 - [Office 365 マネージメント アクティビティ API](/office/office-365-management-api/office-365-management-activity-api-reference)
 
-- Microsoft 365 コンプライアンス センターの[監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)
+- Microsoft Purview コンプライアンス ポータルの[監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)
 
 - Exchange Online PowerShell の [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) コマンドレット
 
-監査ログを定期的に取得する必要がある場合は、Office 365 マネージメント アクティビティ API を使用するソリューションを検討する必要があります。これは、その API が大規模な組織に対して、継続的に数百万の監査レコードを取得するためのスケーラビリティとパフォーマンスを提供できるためです。 Microsoft 365 コンプライアンス センターの監査ログ検索ツールを使用すると、より短い時間範囲で発生する特定の操作の監査レコードをすばやく見つけることができます。 特に大規模な組織の場合、監査ログ検索ツールでより長い時間範囲を使用すると、返されるレコードが多すぎて簡単に管理またはエクスポートできない場合があります。
+監査ログを定期的に取得する必要がある場合は、Office 365 マネージメント アクティビティ API を使用するソリューションを検討する必要があります。これは、その API が大規模な組織に対して、継続的に数百万の監査レコードを取得するためのスケーラビリティとパフォーマンスを提供できるためです。 コンプライアンス ポータルの監査ログ検索ツールを使用すると、より短い時間範囲で発生する特定の操作の監査レコードをすばやく見つけることができます。 特に大規模な組織の場合、監査ログ検索ツールでより長い時間範囲を使用すると、返されるレコードが多すぎて簡単に管理またはエクスポートできない場合があります。
 
 特定の調査またはインシデントの監査データを手動で取得する必要がある場合、特に大規模な組織で日付範囲が長い場合は、**Search-UnifiedAuditLog** コマンドレットを使用するのが最適なオプションです。 この記事には、(コマンドレットを実行するたびに、) そのコマンドレットを使用して最大 50,000 件の監査レコードを取得でき、それらを CSV ファイルにエクスポートする PowerShell スクリプトが含まれています。その CSV ファイルは、Excel の Power Query を使用して書式設定して、レビューに役立てることができます。 この記事のスクリプトを使用すると、大規模な監査ログ検索がそのサービスでタイムアウトになる可能性を最小限に抑えることもできます。
 

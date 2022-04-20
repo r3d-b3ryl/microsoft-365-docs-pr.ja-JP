@@ -306,13 +306,13 @@
           href: /onedrive/plan-onedrive-enterprise
     - name: コンプライアンス
       items:
-        - name: Microsoft 365 のインサイダー リスク ソリューション
+        - name: Microsoft Purview のインサイダー リスク ソリューション
           href: ../compliance/insider-risk-solution-overview.md
         - name: 監査ソリューション
           href: ../compliance/auditing-solutions-overview.md
         - name: Microsoft 365 の電子情報開示ソリューション
           href: ../compliance/ediscovery.md
-        - name: Microsoft 365 Advanced eDiscovery
+        - name: Microsoft Purview 電子情報開示 (プレミアム)
           href: ../compliance/overview-ediscovery-20.md
         - name: 法令遵守アクション プラン
           items:

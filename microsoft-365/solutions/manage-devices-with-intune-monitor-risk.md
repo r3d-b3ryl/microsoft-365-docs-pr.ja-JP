@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: af165f3565e3601ac4e8118535af3913c2cb2af8
-ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
+ms.openlocfilehash: 68ce5f263f24d4ab3271425815834870c71f2a4a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64737434"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938974"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>手順 6.デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
 
@@ -39,7 +39,7 @@ Microsoft Defender for Endpoint の展開には、エンドポイントのオン
 この図について:
 - Microsoft Defender for Endpoint は、デバイスの脅威保護の洗練度を大幅に向上させます。 
 - Microsoft Intune ではアプリ保護ポリシーの設定とデバイスの管理 (構成の変更を含む) が可能ですが、Defender for Endpoint はデバイスの脅威を継続的に監視し、自動化されたアクションを実行して攻撃を修正できます。 
-- Microsoft Intune を Defender for Endpoint に接続して、デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視できます。
+- Intune を使用して、デバイスを Defender for Endpoint にオンボードできます。 これを行う場合は、これらのデバイスも Microsoft Purview エンドポイントのデータ損失防止 (エンドポイント DLP) 機能とともに動作する様に有効化します。
 
 この記事には、次の手順が含まれています。
 - デバイスのリスクを監視する
@@ -51,9 +51,9 @@ Defender for Endpoint がまだ設定されていない場合は、脅威保護�
 
 Microsoft Defender for Endpoint を展開すると、脅威のリスク信号を利用できます。 これにより、リスク スコアに基づいてデバイスへのアクセスをブロックできます。 マイクロソフトでは、リスク スコアが中以下のデバイスへのアクセスを許可することをお勧めします。
 
-Android および iOS / iPadOS の場合、脅威信号はアプリ保護ポリシー (APP) 内で使用できます。 これを構成する方法については、「[アプリ保護ポリシーを作成して割り当て、デバイスのリスク レベルを設定する](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)」を参照してください。
+Android および iOS / iPadOS の場合、脅威信号はアプリ保護ポリシー (APP) 内で使用できます。 これを構成する方法については、「[アプリ保護ポリシーを作成して割り当て、デバイスのリスク レベルを設定する](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)」を参照してください。
 
-すべてのプラットフォームで、既存のデバイス コンプライアンス ポリシーにリスク レベルを設定できます。「[条件付きアクセス ポリシーを作成する](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy)」を参照してください。 
+すべてのプラットフォームで、既存のデバイス コンプライアンス ポリシーにリスク レベルを設定できます。「[条件付きアクセス ポリシーを作成する](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy)」を参照してください。
 
 ## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>セキュリティ ベースラインを展開し、これらの設定へのコンプライアンスを監視する
 

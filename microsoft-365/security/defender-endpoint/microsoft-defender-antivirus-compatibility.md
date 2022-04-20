@@ -14,16 +14,16 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 04/14/2022
+ms.date: 04/19/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6d0e9b00e7044145f7ca03d492a5bd32e726c38d
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: 08f9f3e127246b361cd76000967ae22991335338
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911470"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943449"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -176,7 +176,7 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 (<a id="fn8">8</a>) Microsoft Defender ウイルス対策がパッシブ モードの場合、Web コンテンツ フィルターはMicrosoft Edge ブラウザーでのみ機能します。 
 
 > [!NOTE]
-> [Microsoft 365 Endpoint データ損失防止](/microsoft-365/compliance/endpoint-dlp-learn-about) 保護は、Microsoft Defender ウイルス対策がアクティブ モードであってもパッシブ モードであっても、正常に動作し続けます。
+> [エンドポイント データ損失防止](/microsoft-365/compliance/endpoint-dlp-learn-about)保護は、Microsoft Defender ウイルス対策がアクティブモードまたはパッシブ モードの場合も引き続き正常に動作します。
 
 ## <a name="important-notes"></a>重要事項
 
@@ -194,7 +194,6 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
  | タスク マネージャー |  1. Windows デバイスで、タスク マネージャー アプリを開きます。<br/>2. [**詳細**] タブを選択します。<br/>3. リストで **MsMpEng.exe** を探します。 | 
  | Windows PowerShell <br/> (Microsoft Defender ウイルス対策が実行されていることを確認するには) |  1. Windows デバイスで、Windows PowerShell を開きます。 <br/>2. 次の PowerShell コマンドレットを実行します: `Get-Process`。<br/>3. 結果を確認します。 Microsoft Defender ウイルス対策が有効になっている場合 **MsMpEng.exe** が表示されます。 | 
  | Windows PowerShell <br/>(ウイルス対策保護が実行されているのを確認するには) |  [Get-MpComputerStatus PowerShell コマンドレット](/powershell/module/defender/get-mpcomputerstatus)を使用できます。<br/>1. Windows デバイスで、Windows PowerShell を開きます。<br/>2. 次の PowerShell コマンドレットを実行します:<br/> Get-MpComputerStatus \| AMRunningMode の選択 <br/>3. 結果を確認します。 エンドポイントでMicrosoft Defender ウイルス対策が有効になっている場合は、**標準** モード、**パッシブ** モード、またはEDR **ブロック モード** のいずれかが表示されます。  | 
- | コマンド プロンプト |  1. Windows デバイスで、コマンド プロンプトを開きます。<br/>2. 「`sc query windefend`」と入力し、Enter キーを押します。<br/>3. 結果を確認して、Microsoft Defender ウイルス対策がパッシブ モードで実行されていることを確認します。  | 
 
 ## <a name="more-details-about-microsoft-defender-antivirus-states"></a>Microsoft Defender ウイルス対策状態の詳細
 
@@ -221,4 +220,4 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 - [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
 - [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)
 - [ブロック モードの EDR](edr-in-block-mode.md)
-- [Microsoft 365 のエンドポイントのデータ損失防止についての詳細情報](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [エンドポイント データ損失防止について](/microsoft-365/compliance/endpoint-dlp-learn-about)

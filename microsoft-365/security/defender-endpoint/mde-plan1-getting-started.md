@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: 68315c6cf7947c2d42e58e34b4496e0ef790c8b0
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d332cbf32f5423fb16abb158f9a30a18c2391a22
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665494"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939347"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint プラン 1 を使用した概要
 
@@ -81,7 +81,7 @@ Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://se
 | **健康** > **メッセージ センター** | Microsoft 365 管理センターのメッセージ センターに移動します。 メッセージ センターでは、計画的な変更に関する情報を提供します。 各メッセージには、今後の予定、ユーザーへの影響、変更の管理方法が説明されています。 |  
 | **ロール&アクセス許可** | Microsoft 365 Defender ポータルを使用するためのアクセス許可を付与できます。 アクセス許可は、Azure Active Directory (Azure AD) のロールを通じて付与されます。 ロールを選択すると、ポップアップ ウィンドウが表示されます。 ポップアップには、ロール グループ内のメンバーを追加または削除できるAzure ADへのリンクが含まれています。 <br/><br/> 詳細については、「 [ロールベースのアクセス制御を使用したポータル アクセスの管理](rbac.md)」を参照してください。  |
 | **設定** | Microsoft 365 Defender ポータルの全般設定 (**セキュリティ センター** として一覧表示) と Defender for Endpoint (エンドポイントとして一覧表示) **に** 移動します。 <br/><br/> 詳細については、「[設定](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)」を参照してください。 |
-| **その他のリソース** | Azure Active DirectoryやMicrosoft 365 コンプライアンス センターなど、その他のポータルとセンターの一覧を表示します。 <br/><br/> 詳細については、 [Microsoft セキュリティ ポータルと管理センターに関するページを](../defender/portals.md)参照してください。 |
+| **その他のリソース** | Azure Active Directoryや Microsoft Purview コンプライアンス ポータルなど、その他のポータルとセンターの一覧を表示します。 <br/><br/> 詳細については、 [Microsoft セキュリティ ポータルと管理センターに関するページを](../defender/portals.md)参照してください。 |
 
 > [!TIP]
 > 詳細については、[Microsoft 365 Defender ポータルの概要](../defender/microsoft-365-security-center-mde.md)を参照してください。

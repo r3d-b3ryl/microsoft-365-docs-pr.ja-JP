@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 879cbe33393158ee9e24107bbe042adc2f727ac6
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3b943569485ffaa96b33208c1c4bf0a491c23a95
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667210"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939479"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 ゼロ トラスト展開プラン
 
@@ -115,18 +115,18 @@ Microsoft 365 Defender コンポーネントの [**_パイロットと_**](defen
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>手順 5.  機密データの保護と管理
 
-Microsoft Information Protection (MIP) を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報の検出、分類、保護が可能になります。
+Microsoft Purview Information Protectionを実装して、機密情報がどこに存在するか、移動する場所を問わず、検出、分類、および保護できるようにします。
 
-MIP 機能は Microsoft 365 コンプライアンスに含まれており、データを把握し、データを保護し、データの損失を防止するためのツールを提供しています。
+Microsoft Purview Information Protection機能は Microsoft Purview に含まれており、データを把握し、データを保護し、データの損失を防ぐためのツールを提供します。
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="ポリシーの適用を通じてデータを保護する情報保護機能" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 
 この作業は、この記事の前に説明したデプロイ スタックの先頭に表示されますが、この作業はいつでも開始できます。
 
-Microsoft Information Protectionは、特定のビジネス目標を達成するために使用できるフレームワーク、プロセス、および機能を提供します。
+Microsoft Purview Information Protectionには、特定のビジネス目標を達成するために使用できるフレームワーク、プロセス、および機能が用意されています。
 
-:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="Microsoft Information Protection (MIP) フレームワーク" lightbox="../media/zero-trust/mip-solution-overview.png":::
+![Microsoft Purview Information Protection](../media/zero-trust/mip-solution-overview.png)
 
-情報保護を計画およびデプロイする方法の詳細については、「[**_Microsoft Information Protection ソリューションのデプロイ_**](../compliance/information-protection-solution.md)」を参照してください。
+情報保護を計画および展開する方法の詳細については、「[**_Microsoft Purview Information Protection ソリューションのデプロイ_**](../compliance/information-protection-solution.md)」を参照してください。 
 
 データ プライバシー規制の情報保護を展開する場合、このソリューション ガイドでは、プロセス全体に推奨されるフレームワークとして、Microsoft 365を使用して [**_データプライバシー規制の情報保護を展開_**](../solutions/information-protection-deploy.md)します。

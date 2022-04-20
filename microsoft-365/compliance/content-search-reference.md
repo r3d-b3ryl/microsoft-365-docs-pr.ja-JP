@@ -20,13 +20,13 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: この記事には、Microsoft 365 コンプライアンス センターのコンテンツ検索電子情報開示ツールに関する参照情報が含まれており、コンテンツ検索に関する多くの詳細情報を知ることができます。
-ms.openlocfilehash: 3f2918c378d94fd65d4a89afed50957a2da40a7d
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: この記事には、Microsoft Purview コンプライアンス ポータルのコンテンツ検索電子情報開示ツールに関するリファレンス情報が含まれていて、コンテンツ検索に関する多くの詳細情報を知ることができます。
+ms.openlocfilehash: 1e1b64583769bbfc815f6b8635e5334936a3b3b7
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716378"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938447"
 ---
 # <a name="feature-reference-for-content-search"></a>コンテンツ検索の機能のリファレンス
 
@@ -233,7 +233,7 @@ Exchange Online ライセンス (または Microsoft 365 ライセンス全体) 
 2. 電子情報開示マネージャーが検索する必要がある各サテライトの地理的位置 (および対応するユーザー アカウント) 用に、検索のアクセス許可フィルターを作成します。 それぞれの検索のアクセス許可フィルターにより、特定の場所と関連付けられているユーザー アカウントに電子情報開示マネージャーがサインインした際に、コンテンツ検索の対象がその地理的位置に限定されます。
 
 > [!TIP]
-> [Advanced eDiscovery](overview-ediscovery-20.md) の検索ツールを使用する場合はこの方法を使用する必要はありません。 これは、Advanced eDiscovery で SharePoint サイトと OneDrive アカウントを検索すると、すべてのデータセンターが検索されるためです。 地域限定のユーザー アカウントと検索のアクセス許可フィルターを使用するこの方法を使用する必要があるのは、コンテンツ検索ツールを使用して[電子情報開示のケース](./get-started-core-ediscovery.md)と関連付けられている検索を実行する場合のみです。
+> [ eDiscovery(Premium)](overview-ediscovery-20.md) の検索ツールを使用する場合は、この方法を使用する必要はありません。 これは、Microsoft Purview eDiscovery (Premium) で SharePoint サイトと OneDrive アカウントを検索すると、すべてのデータセンターが検索されるためです。 地域限定のユーザー アカウントと検索のアクセス許可フィルターを使用するこの方法を使用する必要があるのは、コンテンツ検索ツールを使用して[電子情報開示のケース](./get-started-core-ediscovery.md)と関連付けられている検索を実行する場合のみです。
 
 たとえば、電子情報開示マネージャーが、北米、ヨーロッパ、アジア太平洋のサテライトの場所で SharePoint と OneDrive のコンテンツを検索する必要があるとします。 最初の手順では、1 つの場所で 1 つずつ、ユーザー アカウントを 3 つ作成します。 次の手順では、1 つの場所で 1 つずつ、*かつ* それぞれの場所のユーザー アカウント用に、検索のアクセス許可フィルターを 3 つ作成します。 このシナリオでの 3 つの検索のアクセス許可フィルターの例を示します。 それぞれの例では、**Region** によりその地域の SharePoint データセンターの場所が指定され、**Users** パラメーターにより対応するユーザー アカウントが指定されています。
 

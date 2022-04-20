@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c97338121d38650116540564441f3b37051bf05f
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 99549ba8077d966c4d5649e144fa0259f9178629
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731187"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944351"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -176,7 +176,7 @@ Microsoft 365 Defender は、Microsoft Defender for Office 365 および Microso
 
 :::image type="content" source="../../media/converged-roles-5.png" alt-text="[アクセス許可&ロール] ページに表示されるエンドポイント ロール&グループ" lightbox="../../media/converged-roles-5.png":::
 
-Microsoft 365 Defender へのアクセスは、Azure AD グローバル ロールまたはカスタム ロールを使用して構成されます。 Defender for Endpoint については、「[Microsoft 365 Defender ポータルにユーザー アクセスを割り当てる](/microsoft-365/security/defender-endpoint/assign-portal-access)」を参照してください。 Defender for Office 365 については、「[Microsoft 365 コンプライアンス センターと Microsoft 365 Defender のアクセス許可](../office-365-security/permissions-microsoft-365-compliance-security.md)」をご覧ください。
+Microsoft 365 Defender へのアクセスは、Azure AD グローバル ロールまたはカスタム ロールを使用して構成されます。 Defender for Endpoint については、「[Microsoft 365 Defender ポータルにユーザー アクセスを割り当てる](/microsoft-365/security/defender-endpoint/assign-portal-access)」を参照してください。 Defender for Office 365については、[Microsoft Purview コンプライアンス ポータルとMicrosoft 365 Defenderのアクセス許可に関](../office-365-security/permissions-microsoft-365-compliance-security.md)するページを参照してください。
 
 - [Microsoft 365 Defender へのアクセスを管理する](m365d-permissions.md)方法の詳細
 - Microsoft 365 Defender で[カスタム ロールを作成](custom-roles.md)する方法の詳細

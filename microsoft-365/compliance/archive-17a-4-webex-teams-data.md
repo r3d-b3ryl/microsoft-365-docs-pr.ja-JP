@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Cisco Webex DataParser コネクタを設定して使用して、Microsoft 365で Cisco Webex データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 8476ce4e6a5c87c02b3dc6dd5d682038256ad8bb
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 57a991f4a6d808dbcd22cb1d3466f10417e8d8e9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762125"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944131"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>Cisco Webex データをアーカイブするコネクタを設定する
 
 17a-4 LLC の [Cisco Webex DataParser](https://www.17a-4.com/webex-dataparser/) を使用して、Cisco Cisco Webex プラットフォームからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サードパーティのデータ ソースから項目をキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された Cisco Webex コネクタが含まれています。 Cisco Webex DataParser コネクタは、Cisco Webex データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 
-Cisco Webex データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、アイテム保持ポリシーと保持ラベル、通信コンプライアンスなどのMicrosoft 365コンプライアンス機能を適用できます。 Cisco Webex コネクタを使用してMicrosoft 365にデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けるのに役立ちます。
+Cisco Webex データがユーザー メールボックスに格納された後、訴訟ホールド、電子情報開示、アイテム保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft Purview 機能を適用できます。 Cisco Webex コネクタを使用してMicrosoft 365にデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けるのに役立ちます。
 
 ## <a name="overview-of-archiving-cisco-webex-data"></a>Cisco Webex データのアーカイブの概要
 
@@ -35,7 +35,7 @@ Cisco Webex データをユーザー メールボックスに格納した後、�
 
 2. 定期的に、Cisco Webex アイテムは DataParser によって収集されます。 DataParser では、メッセージの内容も電子メール メッセージ形式に変換されます。
 
-3. Microsoft 365 コンプライアンス センターで作成した Cisco Webex DataParser コネクタは DataParser に接続し、メッセージを Microsoft クラウド内の安全なAzure Storageの場所に転送します。
+3. Microsoft Purview コンプライアンス ポータルで作成する Cisco Webex DataParser コネクタは、DataParser に接続し、メッセージを Microsoft クラウド内の安全なAzure Storageの場所に転送します。
 
 4. **Cisco Webex DataParser** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、Cisco Webex アイテムがそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用して、アイテムをインポートするメールボックスを決定します。 すべての Cisco Webex アイテムにはこのプロパティが含まれています。このプロパティには、すべての参加者のメール アドレスが入力されます。
 
@@ -43,13 +43,13 @@ Cisco Webex データをユーザー メールボックスに格納した後、�
 
 - Microsoft コネクタの DataParser アカウントを作成します。 これを行うには、 [17a-4 LLC](https://www.17a-4.com/contact/) にお問い合わせください。 手順 1 でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
-- 手順 1 で Cisco Webex DataParser コネクタを作成し、手順 3 で完了したユーザーには、Data Connector 管理者ロールを割り当てる必要があります。 このロールは、Microsoft 365 コンプライアンス センターの **[データ コネクタ**] ページにコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
+- 手順 1 で Cisco Webex DataParser コネクタを作成し、手順 3 で完了したユーザーには、Data Connector 管理者ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この 17a-4 データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft 365コンプライアンスとデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
+- この 17a-4 データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purview およびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
 ## <a name="step-1-set-up-a-cisco-webex-dataparser-connector"></a>手順 1: Cisco Webex DataParser コネクタを設定する
 
-最初の手順では、Microsoft 365 コンプライアンス センターの [データ コネクタ] ページにアクセスし、Cisco Webex データ用の 17a-4 コネクタを作成します。
+最初の手順では、コンプライアンス ポータルの [データ コネクタ] ページにアクセスし、Cisco Webex データ用の 17a-4 コネクタを作成します。
 
 1. **Data connectorsCisco** >  **Webex DataParser** に<https://compliance.microsoft.com>移動してクリックします。
 
@@ -71,7 +71,7 @@ Cisco Webex DataParser コネクタは、Microsoft 365にデータをインポ�
 
 ## <a name="step-4-monitor-the-cisco-webex-dataparser-connector"></a>手順 4: Cisco Webex DataParser コネクタを監視する
 
-Cisco Webex DataParser コネクタを作成した後、Microsoft 365 コンプライアンス センターでコネクタの状態を表示できます。
+Cisco Webex DataParser コネクタを作成した後、コンプライアンス ポータルでコネクタの状態を表示できます。
 
 1. 左側の <https://compliance.microsoft.com> ナビゲーションにある **[データ コネクタ** ] に移動してクリックします。
 
