@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタを設定して、Microsoft 365に Telegram 通信データをインポートおよびアーカイブできます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: e44eaa160bc78015191d2ceaca99bebbd31462fc
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: b18d05fa697f3d23e57444d5757d14dff7acfc23
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762081"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947123"
 ---
 # <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>Telegram 通信データをアーカイブするコネクタを設定する
 
-Microsoft 365 コンプライアンス センターの TeleMessage コネクタを使用して、Telegram チャット、添付ファイル、ファイル、削除されたメッセージと通話をインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の TeleMessage アカウントに接続し、Telegram Archiver を使用して従業員のモバイル通信をMicrosoft 365のメールボックスにインポートします。
+Microsoft Purview コンプライアンス ポータルの TeleMessage コネクタを使用して、Telegram チャット、添付ファイル、ファイル、削除されたメッセージと通話をインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の TeleMessage アカウントに接続し、Telegram Archiver を使用して従業員のモバイル通信をMicrosoft 365のメールボックスにインポートします。
 
-Telegram Archiver コネクタ データをユーザー メールボックスに格納した後、訴訟ホールド、コンテンツ検索、Microsoft 365アイテム保持ポリシーなどのコンプライアンス機能Microsoft 365を Telegram 通信データに適用できます。 たとえば、コンテンツ検索を使用して Telegram 通信を検索したり、Telegram Archiver コネクタ データを含むメールボックスをAdvanced eDiscoveryケースのカストディアンに関連付けることができます。 Telegram Archiver コネクタを使用してMicrosoft 365のデータをインポートおよびアーカイブすると、組織が企業ガバナンスの規制や規制ポリシーに準拠し続けることができます。
+Telegram Archiver コネクタ データがユーザー メールボックスに格納された後、訴訟ホールド、コンテンツ検索、Microsoft 365保持ポリシーなどの Microsoft Purview 機能を Telegram 通信データに適用できます。 たとえば、コンテンツ検索を使用して Telegram 通信を検索したり、Telegram Archiver コネクタ データを含むメールボックスを電子情報開示 (プレミアム) ケースのカストディアンに関連付けることができます。 Telegram Archiver コネクタを使用してMicrosoft 365のデータをインポートおよびアーカイブすると、組織が企業ガバナンスの規制や規制ポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-telegram-communications-data"></a>Telegram 通信データのアーカイブの概要
 
@@ -35,7 +35,7 @@ Telegram Archiver コネクタ データをユーザー メールボックスに
 
 2. リアルタイムで、組織の Telegram データが TeleMessage サイトにコピーされます。
 
-3. Microsoft 365 コンプライアンス センターで作成した Telegram Archiver コネクタは、毎日 TeleMessage サイトに接続され、前の 24 時間のメール メッセージを Microsoft Cloud のセキュリティで保護されたAzure Storage領域に転送します。
+3. コンプライアンス ポータルで作成した Telegram Archiver コネクタは、毎日 TeleMessage サイトに接続され、前の 24 時間のメール メッセージを Microsoft Cloud のセキュリティで保護されたAzure Storage領域に転送します。
 
 4. コネクタは、モバイル通信アイテムを特定のユーザーのメールボックスにインポートします。 Telegram Archiver という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *ユーザーの電子メール アドレス* プロパティの値を使用してこのマッピングを行います。 すべての電子メール メッセージには、このプロパティが含まれています。このプロパティには、電子メール メッセージのすべての参加者の電子メール アドレスが設定されます。
 
@@ -49,13 +49,13 @@ Telegram Archiver コネクタ データをユーザー メールボックスに
 
 - 従業員の携帯電話に Telegram Archiver アプリをインストールし、アクティブ化します。 Telegram Archiver アプリを使用すると、他の Telegram ユーザーと通信したりチャットしたりできます。
 
-- 手順 3 で Telegram Archiver コネクタを作成するユーザーには、データ コネクタ管理者ロールを割り当てる必要があります。 このロールは、Microsoft 365 コンプライアンス センターの **[データ コネクタ**] ページにコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
+- 手順 3 で Telegram Archiver コネクタを作成するユーザーには、データ コネクタ管理者ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この TeleMessage データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft 365コンプライアンスとデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
+- この TeleMessage データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purview およびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
 ## <a name="create-a-telegram-archiver-connector"></a>Telegram Archiver コネクタを作成する
 
-前のセクションで説明した前提条件を完了したら、Microsoft 365 コンプライアンス センターで Telegram Archiver コネクタを作成できます。 コネクタは、指定した情報を使用して TeleMessage サイトに接続し、Telegram 通信データをMicrosoft 365の対応するユーザー メールボックス ボックスに転送します。
+前のセクションで説明した前提条件を完了したら、コンプライアンス ポータルで Telegram Archiver コネクタを作成できます。 コネクタは、指定した情報を使用して TeleMessage サイトに接続し、Telegram 通信データをMicrosoft 365の対応するユーザー メールボックス ボックスに転送します。
 
 1. <https://compliance.microsoft.com>**Telegram Archiver** >**データ コネクタ** に移動してクリックします。
 

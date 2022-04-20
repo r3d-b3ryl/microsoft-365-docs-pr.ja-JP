@@ -1,7 +1,7 @@
 ---
-title: デバイスのオンボーディング ツールWindows方法
-description: デバイスWindows、センサー データを Microsoft Defender for Endpoint センサーに送信できるようオンボードする
-keywords: オンボード Windows、グループ ポリシー、エンドポイント構成マネージャー、モバイル デバイス管理、ローカル スクリプト、gp、sccm、mdm、intune
+title: Windows デバイスのオンボード ツールと方法
+description: Microsoft Defender for Endpoint センサーにセンサー データを送信できるように、Windows デバイスをオンボードする
+keywords: Windows デバイスのオンボード, グループ ポリシー, エンドポイント構成マネージャー, モバイル デバイス管理, ローカル スクリプト, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 035a47f904029e839e3fe19393e4b152515aa808
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: fbc5a0981a6318d767252e968e45874d889aee85
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64471900"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949103"
 ---
-# <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Defender for Endpoint のデバイスWindowsオンボーディング ツールとメソッド
+# <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Defender for Endpoint でデバイスをWindowsするためのツールとメソッドのオンボード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,31 +33,31 @@ ms.locfileid: "64471900"
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [Microsoft 365インサイダーリスク管理](/microsoft-365/compliance/insider-risk-management)
+- [エンドポイントのデータ損失防止](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [インサイダー リスク管理](/microsoft-365/compliance/insider-risk-management)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender for Endpoint サービスがセンサー データを取得できるよう、組織内のデバイスを構成する必要があります。 組織内のデバイスを構成するために使用できるさまざまな方法と展開ツールがあります。
+Defender for Endpoint サービスがセンサー データを取得できるように、組織内のデバイスを構成する必要があります。 組織内のデバイスを構成するために使用できるさまざまな方法と展開ツールがあります。
 
-一般に、オンボーディングWindowsデバイスを特定し、デバイスまたは環境に適した対応するツールに従います。
+一般に、オンボードするWindowsデバイスを特定し、デバイスまたは環境に適した対応するツールに従います。
 
-:::image type="content" source="images/onboarding-config-tools.png" alt-text="オンボーディング ツールとメソッド" lightbox="images/onboarding-config-tools.png":::
+:::image type="content" source="images/onboarding-config-tools.png" alt-text="オンボード ツールと方法" lightbox="images/onboarding-config-tools.png":::
 
 ## <a name="endpoint-onboarding-tools"></a>エンドポイントオンボーディング ツール
 
-オンボードするエンドポイントWindowsに応じて、次の表に示す対応するツールまたはメソッドを使用します。
+オンボードするWindows エンドポイントに応じて、次の表に示す対応するツールまたは方法を使用します。
 
-Windowsデバイス | オンボーディング ツールまたはメソッド
+デバイスWindows | オンボード ツールまたは方法
 :---|:---
-|<ul><li> Windows 10</li> <li>Windows Server 1803 および 2019、および 2022</li> <li>Windows Server 2012 R2 および 2016<sup>[[1](#fn1)]<sup></li></ul>  |   [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md)<br>   [グループ ポリシー](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft エンドポイント マネージャー/ モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md)<br>    [VDI スクリプト](configure-endpoints-vdi.md) <br><br> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境の展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。
-|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[以前のバージョンの](onboard-downlevel.md) Windows[または Microsoft Defender for Cloud のオンボード](/azure/security-center/security-center-wdatp) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については、「 [Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  
-|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8.1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については、「 [Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。
+|<ul><li> Windows 10</li> <li>Windows Server 1803 と 2019、および 2022</li> <li>Windows Server 2012 R2 と 2016<sup>[[1](#fn1)]<sup></li></ul>  |   [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md)<br>   [グループ ポリシー](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft エンドポイント マネージャー/ モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md)<br>    [VDI スクリプト](configure-endpoints-vdi.md) <br><br> **注**: ローカル スクリプトは概念実証に適していますが、運用環境のデプロイには使用しないでください。 運用環境のデプロイでは、グループ ポリシー、Microsoft Endpoint Configuration Manager、またはIntuneを使用することをお勧めします。
+|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[以前のバージョンのWindowsまたはMicrosoft Defender for Cloudをオンボード](onboard-downlevel.md)する[](/azure/security-center/security-center-wdatp) <br><br> **注**: Microsoft Monitoring Agentは Azure Log Analytics エージェントになりました。 詳細については、 [Log Analytics エージェントの概要に関する](/azure/azure-monitor/platform/log-analytics-agent)ページを参照してください。  
+|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8.1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **注**: Microsoft Monitoring Agentは Azure Log Analytics エージェントになりました。 詳細については、 [Log Analytics エージェントの概要に関する](/azure/azure-monitor/platform/log-analytics-agent)ページを参照してください。
 
-(<a id="fn1">1</a>) Windows Server 2016および Windows Server 2012 R2 は、オンボード サーバーの指示に従ってオンボード[Windowsがあります](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
+(<a id="fn1">1</a>) Windows Server 2016およびWindows Server 2012 R2 は、オンボード Windows サーバーの手順に従[ってオンボード](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)する必要があります。
 
 >[!IMPORTANT]
->Microsoft Defender for Endpoint Server SKU を購入する資格を得るには、Windows E5/A5、Microsoft 365 E5/A5、または Microsoft 365 E5 Security サブスクリプション ライセンスの組み合わせ最小数を既に購入している必要があります。  ライセンスの詳細については、「製品条項」 [を参照してください](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all)。  
+>Microsoft Defender for Endpoint Server SKU を購入するためには、以下のいずれか、Windows E5/A5、Microsoft 365 E5/A5、Microsoft 365 E5 Security のサブスクリプションライセンスを組み合わせて購入しておくことが必要です。  ライセンスの詳細については、「[製品使用条件](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all)」 を参照してください。  
 
 トピック|説明
 :---|:---
@@ -69,4 +69,4 @@ Windowsデバイス | オンボーディング ツールまたはメソッド
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpoints-belowfoldlink)
 
-デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボード [された Microsoft Defender for Endpoint デバイスで検出テストを実行する」を参照してください](run-detection-test.md)。
+デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「[新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)」 を参照してください。

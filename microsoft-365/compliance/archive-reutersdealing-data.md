@@ -1,5 +1,5 @@
 ---
-title: ロイターをアーカイブするコネクタをセットアップする データを処理する方法をMicrosoft 365
+title: Microsoft 365で Reuters Dealing データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,82 +11,82 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理者は、Reuters のデータを Veritas から他のユーザーにインポートしてアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 7e978af3c0916b277fcf97d9fe58c9b7cea08d43
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 管理者は、Veritas から Microsoft 365 に Reuters Dealing データをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
+ms.openlocfilehash: 75b44a6ed76908a566edf8cb39c27f25788ce2c1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314616"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950701"
 ---
-# <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>ロイターの取引データをアーカイブするコネクタをセットアップする
+# <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>コネクタを設定して、Reuters Dealing データをアーカイブする
 
-Reuters Dealing プラットフォームからデータをインポートおよびアーカイブするには、Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、組織のユーザー メールボックスMicrosoft 365します。 Veritas は、サードパーティの[](https://globanet.com/reuters-dealing/)データ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成されたロイター取引コネクタを提供します。 コネクタは、Reuters Dealing アカウントからの通信を電子メール メッセージ形式に変換し、それらのアイテムをユーザーのメールボックスにインポートMicrosoft 365。
+Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、Reuters Dealing プラットフォームからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には、サードパーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらの項目をMicrosoft 365にインポートするように構成された[、Reuters Dealing](https://globanet.com/reuters-dealing/) コネクタが用意されています。 コネクタは、Reuters Dealing アカウントからの通信を電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザーのメールボックスにインポートします。
 
-ロイター 取引データがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 ロイターの取引コネクタを使用して、Microsoft 365のデータをインポートおよびアーカイブすると、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
+ユーザー メールボックスにデータを取り扱うロイターが格納された後、訴訟ホールド、電子情報開示、アイテム保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft Purview 機能を適用できます。 Microsoft 365でデータをインポートおよびアーカイブするために、Reuters Dealing コネクタを使用すると、組織が政府および規制のポリシーに準拠し続けることができます。
 
-## <a name="overview-of-archiving-reuters-dealing-data"></a>アーカイブの概要 ロイター データの処理
+## <a name="overview-of-archiving-reuters-dealing-data"></a>[Reuters Dealing data] のアーカイブの概要
 
-次の概要では、コネクタを使用してロイターの取引データをアーカイブするプロセスについて説明Microsoft 365。
+次の概要では、コネクタを使用して、Microsoft 365の Reuters Dealing データをアーカイブするプロセスについて説明します。
 
-![ロイターのデータを扱うアーカイブ ワークフロー。](../media/ReuetersDealingConnectorWorkflow.png)
+![Reuters Dealing データのアーカイブ ワークフロー。](../media/ReuetersDealingConnectorWorkflow.png)
 
-1. 組織はロイターの取引と一緒にロイター取引サイトを設定および構成します。
+1. 組織は、Reuters Dealing と連携して、Reuters Dealing サイトを設定および構成します。
 
-2. 24 時間に 1 回、ロイター のアイテムは Veritas Merge1 サイトにコピーされます。 コネクタは、アイテムを電子メール メッセージ形式に変換します。
+2. 24 時間に 1 回、Reuters Dealing アイテムは Veritas Merge1 サイトにコピーされます。 また、コネクタはアイテムを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センター で作成したロイターの取引コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内のセキュリティで保護された Azure Storage 場所にコンテンツを転送します。
+3. コンプライアンス ポータルで作成した Reuters Dealing コネクタは、毎日 Veritas Merge1 サイトに接続され、Microsoft クラウド内の安全なAzure Storageの場所にコンテンツを転送します。
 
-4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、特定のユーザーのメールボックスにアイテム [をインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **Reuters Dealing** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用してアイテムをインポートするメールボックスを *決定* します。 すべてのロイターの [取引] アイテムには、アイテムのすべての参加者の電子メール アドレスが設定されたこのプロパティが含まれる。
+4. コネクタは、[手順 3](#step-3-map-users-and-complete-the-connector-setup). の説明に従って、自動ユーザー マッピングの *Email* プロパティの値を使用して、特定のユーザーのメールボックスにアイテムをインポートします。 ユーザーメールボックスに **[Reuters Dealing]\(Reuters Dealing** \)という名前の受信トレイ フォルダー内のサブフォルダーが作成され、そのフォルダーにアイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用して、アイテムをインポートするメールボックスを決定します。 すべての Reuters Dealing アイテムには、アイテムのすべての参加者の電子メール アドレスが設定されたこのプロパティが含まれています。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 アカウントを作成するには、 [Veritas カスタマー サポートにお問い合わせください](https://globanet.com/contact-us)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- Microsoft コネクタの Veritas Merge1 アカウントを作成します。 アカウントを作成するには、 [Veritas カスタマー サポート](https://globanet.com/contact-us)にお問い合わせください。 手順 1 でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
-- 手順 1 でロイター取引コネクタを作成し (および手順 3 で完了する) ユーザーには、データ コネクタ管理者の役割が割り当てられている必要があります。 この役割は、データ コネクタ ページの [データ  コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 この役割は、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ とコンプライアンス センターのアクセス許可」の「セキュリティとコンプライアンス センターの役割& [してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。 または、組織内の管理者がカスタム役割グループを作成し、データ コネクタ管理者の役割を割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、「アクセス許可」の「カスタム役割グループを作成する」[セクションを参照Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)。
+- 手順 1 で [Reuters Dealing] コネクタを作成し、手順 3 で完了したユーザーには、Data Connector 管理者ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この Veritas データ コネクタは、米国政府機関クラウドGCC環境Microsoft 365プレビュー中です。 サード パーティ製のアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にある、Microsoft 365 コンプライアンスおよびデータ保護のコミットメントの対象となされていないサードパーティ システムに対して、組織の顧客データを保存、送信、および処理する必要があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
+- この Veritas データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境でパブリック プレビュー段階にあります。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purview およびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
-## <a name="step-1-set-up-the-reuters-dealing-connector"></a>手順 1: ロイターの対応コネクタをセットアップする
+## <a name="step-1-set-up-the-reuters-dealing-connector"></a>手順 1: Reuters Dealing コネクタを設定する
 
-最初の手順は、 [データ コネクタ] ページにアクセスし、Microsoft 365データのコネクタを作成することです。
+最初の手順は、Microsoft 365の **[データ コネクタ**] ページにアクセスし、Reuters Dealing データ用のコネクタを作成することです。
 
-1. [データ コネクタ [https://compliance.microsoft.com](https://compliance.microsoft.com/)] に移動 **し、[ロイ** > ター **の処理] をクリックします**。
+1. **Data connectorsReuters** >  **Dealing** に [https://compliance.microsoft.com](https://compliance.microsoft.com/)移動してクリックします。
 
-2. [ロイター **取引製品の説明] ページ** で、[コネクタの追加] **をクリックします**。
+2. [ **Reuters Dealing product description] (Reuters Dealing** product description) ページで、[ **コネクタの追加**] をクリックします。
 
-3. [サービス条件 **] ページで、[** 同意する] を **クリックします**。
+3. [利用規約] ページ **で** 、[ **同意** する] をクリックします。
 
-4. コネクタを識別する一意の名前を入力し、[次へ] を **クリックします**。
+4. コネクタを識別する一意の名前を入力し、[ **次へ**] をクリックします。
 
-5. コネクタを構成するには、Merge1 アカウントに署名します。
+5. Merge1 アカウントにサインインしてコネクタを構成します。
 
-## <a name="step-2-configure-the-reuters-dealing-connector-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトでロイター取引コネクタを構成する
+## <a name="step-2-configure-the-reuters-dealing-connector-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトで Reuters Dealing コネクタを構成する
 
-2 番目の手順は、Merge1 サイトの Veritas でロイター取引コネクタを構成することです。 ロイター対応コネクタの構成の詳細については、「Merge1 サード パーティ コネクタ ユーザー ガイド」 [を参照してください](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Dealing%20User%20Guide%20.pdf)。
+2 番目の手順では、マージ 1 サイトの Veritas で Reuters Dealing コネクタを構成します。 Reuters Dealing コネクタの構成の詳細については、「 [Merge1 Third-Party Connectors ユーザー ガイド」を](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Dealing%20User%20Guide%20.pdf)参照してください。
 
-[ファイルの **保存と&完了**] をクリックすると、コネクタ ウィザードの [ユーザー マッピング] ページが表示Microsoft 365 コンプライアンス センターされます。
+[ **保存&完了**] をクリックすると、コンプライアンス ポータルのコネクタ ウィザードの **[ユーザー マッピング** ] ページが表示されます。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
-ユーザーをマップし、コネクタのセットアップを完了するには、次Microsoft 365 コンプライアンス センター手順を実行します。
+ユーザーをマップし、コンプライアンス ポータルでコネクタのセットアップを完了するには、次の手順に従います。
 
-1. [ユーザー **をユーザーに割り当てMicrosoft 365する]** ページで、ユーザーの自動マッピングを有効にします。
+1. [ユーザーをMicrosoft 365 **するユーザーを処理するマップ]** ページで、自動ユーザー マッピングを有効にします。
 
-   ロイター 取引アイテムには、組織内のユーザーの電子メール アドレスを含む *Email* というプロパティが含まれます。 コネクタでこのアドレスをユーザーに関連付Microsoft 365、アイテムはユーザーのメールボックスにインポートされます。
+   Reuters Dealing アイテム *には、組織内* のユーザーの電子メール アドレスを含む Email というプロパティが含まれています。 コネクタがこのアドレスをMicrosoft 365 ユーザーに関連付けることができる場合、アイテムはそのユーザーのメールボックスにインポートされます。
 
-2. [**次へ**] をクリックし、設定を確認し、[データ コネクタ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
+2. [ **次へ**] をクリックして設定を確認し、[ **データ コネクタ** ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
-## <a name="step-4-monitor-the-reuters-dealing-connector"></a>手順 4: ロイターの対応コネクタを監視する
+## <a name="step-4-monitor-the-reuters-dealing-connector"></a>手順 4: [Reuters Dealing] コネクタを監視する
 
-ロイター取引コネクタを作成した後、コネクタの状態を [コネクタ] Microsoft 365 コンプライアンス センター。
+Reuters Dealing コネクタを作成した後、コンプライアンス ポータルでコネクタの状態を表示できます。
 
-1. 左側のナビゲーション [https://compliance.microsoft.com](https://compliance.microsoft.com/) で [ **データ コネクタ] に** 移動してクリックします。
+1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com/) ナビゲーションにある **[データ コネクタ** ] に移動してクリックします。
 
-2. [コネクタ **] タブをクリック** し、[ロイターの対応] コネクタを選択して、コネクタのプロパティと情報を含むフライアウト ページを表示します。
+2. [ **コネクタ** ] タブをクリックし、[ **Reuters Dealing** ] コネクタを選択して、コネクタに関するプロパティと情報を含むポップアップ ページを表示します。
 
-3. [**ソースを含むコネクタの** 状態] で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータが含まれます。
+3. **[コネクタの状態とソース**] で、[**ログのダウンロード**] リンクをクリックして、コネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータが含まれています。
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 大きいアイテムのサポートは、後日利用できます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きなアイテムのサポートは、後日提供される予定です。

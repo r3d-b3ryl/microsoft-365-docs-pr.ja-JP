@@ -1,5 +1,5 @@
 ---
-title: コンテンツ検索を使用& OneDrive for Businessのメールボックス を検索する
+title: メールボックス & OneDrive for Business サイト上のユーザーの一覧にコンテンツ検索を使用する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,65 +17,65 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
-description: コンテンツ検索とこの記事のスクリプトを使用して、メールボックスを検索し、OneDrive for Businessのサイトを検索します。
+description: コンテンツ検索とこの記事のスクリプトを使用して、メールボックスとOneDrive for Businessサイトでユーザー グループを検索します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2fdf749511cc859c0aec2ea947c3a53cb800cf8c
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 14c518c4450b01e387f84b4211da8d0eb346fe7a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170431"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949269"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーのリストを探す
 
-セキュリティ & コンプライアンス センター PowerShell には、時間のかかる電子情報開示関連のタスクを自動化できる多数のコマンドレットがあります。 現在、多数の保管担当者コンテンツの場所Microsoft 365 コンプライアンス センターするコンテンツ検索を作成するには、時間と準備が必要です。 検索を作成する前に、各サイトの URL をOneDrive for Businessし、各メールボックスとサイトOneDrive for Businessを検索に追加する必要があります。 今後のリリースでは、この操作は簡単に行えるMicrosoft 365 コンプライアンス センター。 それまでは、この記事のスクリプトを使用して、このプロセスを自動化できます。 このスクリプトでは、組織の MySite ドメインの名前 (URL の **contoso** など)、ユーザーの電子メール アドレスの一覧、新しいコンテンツ検索の名前、および使用する検索クエリを求めるメッセージが表示されます。 `https://contoso-my.sharepoint.com` スクリプトは、リスト内の各ユーザーの OneDrive for Business URL を取得し、指定した検索クエリを使用して、リスト内の各ユーザーのメールボックスと OneDrive for Business サイトを検索するコンテンツ検索を作成して開始します。
+Security & Compliance Center PowerShell には、時間のかかる電子情報開示関連のタスクを自動化できるコマンドレットが多数用意されています。 現在、Microsoft Purview コンプライアンス ポータルでコンテンツ検索を作成して多数のカストディアン コンテンツの場所を検索するには、時間と準備が必要です。 検索を作成する前に、各OneDrive for Business サイトの URL を収集し、各メールボックスとOneDrive for Business サイトを検索に追加する必要があります。 今後のリリースでは、コンプライアンス ポータルで行う方が簡単になります。 それまでは、この記事のスクリプトを使用して、このプロセスを自動化できます。 このスクリプトでは、組織の MySite ドメインの名前 (URL `https://contoso-my.sharepoint.com`内の **contoso** など)、ユーザーの電子メール アドレスの一覧、新しいコンテンツ検索の名前、使用する検索クエリの入力を求めるメッセージが表示されます。 スクリプトは、リスト内の各ユーザーのOneDrive for Business URL を取得し、指定した検索クエリを使用して、メールボックスとOneDrive for Business サイトを検索するコンテンツ検索を作成して開始します。
   
 ## <a name="permissions-and-script-information"></a>アクセス許可とスクリプト情報
 
-- 手順 3 でスクリプトを実行するには、Microsoft 365 コンプライアンス センター および SharePoint Online グローバル管理者の電子情報開示マネージャー役割グループのメンバーである必要があります。
+- 手順 3 でスクリプトを実行するには、コンプライアンス ポータルの電子情報開示マネージャーロール グループのメンバーであり、SharePoint Online グローバル管理者である必要があります。
 
-- 手順 2 で作成したユーザーの一覧と、手順 3 のスクリプトを同じフォルダーに保存してください。 そうすると、スクリプトの実行が容易になります。
+- 手順 2 で作成したユーザーの一覧と手順 3 のスクリプトを同じフォルダーに保存してください。 そうすることで、スクリプトを簡単に実行できるようになります。
 
-- スクリプトには、最小限のエラー処理が含まれています。 その主な目的は、各ユーザーのメールボックスとサイトOneDrive for Business簡単に検索することです。
+- このスクリプトには、最小限のエラー処理が含まれています。 その主な目的は、各ユーザーのメールボックスとOneDrive for Business サイトをすばやく簡単に検索することです。
 
 - このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>手順 1: SharePoint Online 管理シェルをインストールする
 
-最初の手順は、オンライン管理シェルSharePointインストールします。 この手順ではシェルを使用する必要はありません。ただし、手順 3 で実行するスクリプトに必要な前提条件が含まれているため、インストールする必要があります。 これらの前提条件により、スクリプトは SharePoint Online と通信して、サイトの URL をOneDrive for Businessできます。
+最初の手順では、SharePoint Online Management Shell をインストールします。 この手順ではシェルを使用する必要はありませんが、手順 3 で実行するスクリプトに必要な前提条件が含まれているため、シェルをインストールする必要があります。 これらの前提条件により、スクリプトは SharePoint Online と通信して、OneDrive for Business サイトの URL を取得できます。
   
-[オンライン[管理シェル](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)のセットアップ] SharePointに移動しWindows PowerShell手順 1 と手順 2 を実行して、オンライン管理シェルSharePointインストールします。
+[SharePoint Online Management Shell Windows PowerShell環境のセットアップ](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)に移動し、手順 1 と手順 2 を実行して、SharePoint Online Management Shell をインストールします。
   
 ## <a name="step-2-generate-a-list-of-users"></a>手順 2: ユーザーの一覧を生成する
 
-手順 3 のスクリプトでは、コンテンツ検索を作成して、メールボックスを検索し、ユーザーのOneDriveアカウントを検索します。 テキスト ファイルに電子メール アドレスを入力するか、Windows PowerShell でコマンドを実行して電子メール アドレスの一覧を取得し、ファイルに保存できます (手順 3 でスクリプトを保存するフォルダーと同じフォルダーにあります)。
+手順 3 のスクリプトでは、メールボックスを検索するコンテンツ検索を作成し、ユーザーの一覧をOneDriveアカウントを作成します。 テキスト ファイルに電子メール アドレスを入力するか、Windows PowerShellでコマンドを実行して電子メール アドレスの一覧を取得し、ファイルに保存することができます (手順 3 でスクリプトを保存するのと同じフォルダーにあります)。
   
-組織内のすべてのユーザー Exchange Onlineの電子メール アドレスの一覧を取得し、それをという名前のテキスト ファイルに保存するために実行できる[PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)コマンドを次に示します `Users.txt` 。 
+組織内のすべてのユーザーの電子メール アドレスの一覧を取得し、それをという名前`Users.txt`のテキスト ファイルに保存するために実行できる [powerShell](/powershell/exchange/connect-to-exchange-online-powershell) のExchange Onlineコマンドを次に示します。 
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
-このコマンドを実行した後、必ずファイルを開き、プロパティ名を含むヘッダーを削除します  `PrimarySmtpAddress` 。 テキスト ファイルには、メール アドレスの一覧が含まれているだけで、それ以外は含めずにしてください。 電子メール アドレスの一覧の前または後に空白行が表示されません。
+このコマンドを実行した後、ファイルを開き、プロパティ名  `PrimarySmtpAddress`を含むヘッダーを削除してください。 テキスト ファイルには、電子メール アドレスの一覧のみを含める必要があります。それ以外のアドレスは含まれません。 電子メール アドレスの一覧の前後に空白行がないことを確認します。
   
 ## <a name="step-3-run-the-script-to-create-and-start-the-search"></a>手順 3: スクリプトを実行して検索を作成して開始する
 
-この手順でスクリプトを実行すると、次の情報を求めるメッセージが表示されます。 スクリプトを実行する前に、この情報を準備してください。
+この手順でスクリプトを実行すると、次の情報を求めるメッセージが表示されます。 スクリプトを実行する前に、必ずこの情報を準備しておいてください。
   
-- **ユーザー資格情報**- スクリプトは資格情報を使用して SharePoint Online にアクセスして OneDrive for Business URL を取得し、セキュリティ & コンプライアンス センター PowerShell に接続します。 
+- **ユーザー資格情報** - このスクリプトでは、資格情報を使用してSharePoint Online にアクセスし、OneDrive for Business URL を取得し、Security & Compliance Center PowerShell に接続します。 
     
-- **MySite ドメインの名前**- MySite ドメインは、組織内のすべてのサイトOneDrive for Business含むドメインです。 たとえば、MySite ドメインの URL が次の場合は、MySite ドメインの名前を求めるメッセージがスクリプトに表示されたら **https://contoso-my.sharepoint.com**  `contoso` 入力します。 
+- **MySite ドメインの名前** - MySite ドメインは、組織内のすべてのOneDrive for Business サイトを含むドメインです。 たとえば、MySite ドメインの URL が [MySite] ドメインの場合、 **https://contoso-my.sharepoint.com** スクリプトから MySite ドメインの名前の入力を求められたときに入力  `contoso` します。 
     
-- **手順 2 のテキスト ファイル** のパス名 - 手順 2 で作成したテキスト ファイルのパス名。 テキスト ファイルとスクリプトが同じフォルダーにある場合は、テキスト ファイルの名前を入力します。 それ以外の場合は、テキスト ファイルの完全なパス名を入力します。 
+- **手順 2 のテキスト ファイルのパス名 - 手順 2** で作成したテキスト ファイルのパス名。 テキスト ファイルとスクリプトが同じフォルダーにある場合は、テキスト ファイルの名前を入力します。 それ以外の場合は、テキスト ファイルの完全なパス名を入力します。 
     
 - **コンテンツ検索の名前** - スクリプトによって作成されるコンテンツ検索の名前。 
     
-- **検索クエリ** - コンテンツ検索で使用される検索クエリが作成され、実行されます。 検索クエリの詳細については、「電子情報開示のキーワード クエリと [検索条件」を参照してください](keyword-queries-and-search-conditions.md)。
+- **検索クエリ** - コンテンツ検索で使用される検索クエリが作成され、実行されます。 検索クエリの詳細については、「 [電子情報開示のキーワード クエリと検索条件」を](keyword-queries-and-search-conditions.md)参照してください。
 
 
 **このスクリプトを実行するには、以下の手順を実行します。**
     
-1. 次のテキストを、Windows PowerShell のファイル名のサフィックスを使用して、.ps1 スクリプト ファイルに保存します `SearchEXOOD4B.ps1` 。 手順 2 でユーザーの一覧を保存したのと同じフォルダーにファイルを保存します。
+1. 次のテキストをWindows PowerShell スクリプト ファイルに保存するには、.ps1 のファイル名サフィックスを使用します。たとえば、 `SearchEXOOD4B.ps1`. 手順 2 でユーザーの一覧を保存したのと同じフォルダーにファイルを保存します。
     
   ```powershell
   # This PowerShell script will prompt you for the following information:
@@ -163,7 +163,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   
   ```
 
-2. [Windows PowerShellを開き、手順 2 からスクリプトとユーザーの一覧を保存したフォルダーに移動します。
+2. Windows PowerShell開き、手順 2. のスクリプトとユーザーの一覧を保存したフォルダーに移動します。
     
 3. スクリプトを開始します。例えば：
     
@@ -171,16 +171,16 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     .\SearchEXOOD4B.ps1
     ```
 
-4. 資格情報の入力を求めるメッセージが表示されたら、メール アドレスとパスワードを入力し **、[OK] をクリックします**。 
+4. 資格情報の入力を求められたら、メール アドレスとパスワードを入力し、[OK] をクリック **します**。 
     
-5. スクリプトの指示に従って、次の情報を入力します。 各情報を入力し、Enter キーを **押します**。
+5. スクリプトの入力を求められたら、次の情報を入力します。 各情報を入力し、Enter キーを押 **します**。
     
     - MySite ドメインの名前。 
     
-    - ユーザーのリストを含むテキスト ファイルのパス名。
+    - ユーザーの一覧を含むテキスト ファイルのパス名。
     
     - コンテンツ検索の名前。
     
-    - 検索クエリ (コンテンツの場所のすべてのアイテムを返す場合は、この空白のままにします)。
+    - 検索クエリ (コンテンツの場所内のすべてのアイテムを返すには、この空白のままにします)。
     
-    スクリプトは、各サイトの URL をOneDrive for Businessし、検索を作成して開始します。 セキュリティ & コンプライアンス センター PowerShell で **Get-ComplianceSearch** コマンドレットを実行して検索の統計情報と結果を表示するか、Microsoft 365 コンプライアンス センター の[コンテンツ検索] ページに移動して検索に関する情報を表示できます。
+    このスクリプトは、各OneDrive for Business サイトの URL を取得し、検索を作成して開始します。 Security & Compliance Center PowerShell で **Get-ComplianceSearch** コマンドレットを実行して検索の統計情報と結果を表示するか、コンプライアンス ポータルの **コンテンツ検索** ページに移動して検索に関する情報を表示できます。

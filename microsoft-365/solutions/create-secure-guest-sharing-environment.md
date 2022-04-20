@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたゲスト共有環境を Microsoft 365 で作成するための使用可能なオプションについては、こちらを参照してください。ゲスト アクセスによって共同作業を改善します。
-ms.openlocfilehash: 13190f2dba0f2cb1f4817a1a831b8d78359e1b81
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 5b6f27bd81a47a92926cebeef89de11ed78fcd3d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63715143"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948355"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -208,13 +208,13 @@ SharePoint 管理センターのこの設定では、Azure AD の条件付きア
 
 ## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>極秘プロジェクト向けの機密情報の種類を作成する
 
-機密情報の種類は、コンプライアンス要件を適用するためにポリシー ワークフローで使用できる定義済みの文字列です。 Microsoft 365 コンプライアンス センターには、運転免許証番号、クレジット カード番号、銀行口座番号など、100 を超える機密情報の種類が用意されています。
+機密情報の種類は、コンプライアンス要件を適用するためにポリシー ワークフローで使用できる定義済みの文字列です。 Microsoft Purview コンプライアンス ポータルには、運転免許証番号、クレジット カード番号、銀行口座番号など、100 を超える機密情報の種類が付属しています。
 
 カスタムの機密情報の種類を作成して、お客様の組織に固有のコンテンツを管理するために利用することもできます。 この例では、機密プロジェクト向けにカスタムの機密情報の種類を作成します。 そのようにすると、この機密情報の種類を使用して、機密ラベルを自動的に適用できるようになります。
 
 機密情報の種類を作成するには
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)の左側のナビゲーションで、**[分類]** を展開し、**[機密情報の種類]** をクリックします。
+1. [Microsoft Purview コンプライアンス センター](https://compliance.microsoft.com)の左側のナビゲーションで、**[分類]** を展開し、**[機密情報の種類]** をクリックします。
 2. **[作成]** をクリックします。
 3. **[名前]** と **[説明]** に「**Project Saturn**」と入力し、**[次へ]** をクリックします。
 4. **[要素の追加]** をクリックします。
@@ -232,7 +232,7 @@ SharePoint 管理センターのこの設定では、Azure AD の条件付きア
 
 新しい自動ラベル付けポリシーを作成するには:
 
-1. [Microsoft 365 コンプライアンス管理センター](https://compliance.microsoft.com)を開きます。
+1. [Microsoft Purview 管理センター](https://compliance.microsoft.com)を開きます。
 2. 左側のナビゲーションで、[ **情報の保護**] をクリックします。
 3. [**オートラベル**] タブで、[**自動ラベル付けポリシーの作成** をクリックします。
 4. [ **[このラベルを適用する情報を選択** ] ページで、[ **カスタム** ] を選び、 **次へ** をクリックします。
@@ -258,11 +258,11 @@ SharePoint 管理センターのこの設定では、Azure AD の条件付きア
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>高度な機密ファイルへのゲスト アクセスを削除するDLPポリシーを作成する
 
-[データ損失防止 (DLP)](../compliance/dlp-learn-about-dlp.md) を使用して、機密コンテンツの不要なゲスト共有を防ぐことができます。 データ損失防止は、ファイルの機密情報ラベルに基づき、ゲストアクセスを削除することができます。
+[Microsoft Purview データ損失防止 (DLP)](../compliance/dlp-learn-about-dlp.md) を使用して、機密コンテンツの不要なゲスト共有を防ぐことができます。 データ損失防止は、ファイルの機密情報ラベルに基づき、ゲストアクセスを削除することができます。
 
 DLP ルールを作成するには
 
-1. Microsoft 365 コンプライアンス管理センターで、[[データ損失防止] ページ](https://compliance.microsoft.com/datalossprevention)に移動します。
+1. Microsoft Purview コンプライアンス管理センターで、[[データ損失防止]](https://compliance.microsoft.com/datalossprevention) ページに移動します。
 2. **[ポリシーの作成]** をクリックします。
 3. **[カスタム]** を選択し、**[次へ]** をクリックします。
 4. ポリシーの名前を入力し、**[次へ]** をクリックします。

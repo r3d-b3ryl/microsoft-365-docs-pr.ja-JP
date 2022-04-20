@@ -16,13 +16,13 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
-description: 管理者は、複数地域の環境でSharePointサービスOneDrive管理する方法について学習できます。
-ms.openlocfilehash: 126b5de915fba7168b3895bbb05ccef6dcad749b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 管理者は、複数地域の環境でSharePointサービスとOneDrive サービスを管理する方法について学習できます。
+ms.openlocfilehash: 155eea030cfa700a009805fb66aeb74eaae617d3
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312055"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949081"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
@@ -30,14 +30,14 @@ ms.locfileid: "63312055"
 
 ## <a name="administrator-experience"></a>管理者エクスペリエンス
 
-管理SharePointの左側のナビゲーションには [地域<a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank"></a>の場所] タブがあります。このタブには、地域の場所を表示および管理できる地理的位置マップがあります。 テナントの地理的な場所を追加または削除するには、このページを使用します。
+SharePoint管理センターの左側のナビゲーションには <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">、[**地域の場所**] タブ</a>があり、地域の場所を表示および管理できる地域の場所マップが表示されます。 このページを使用して、テナントの地理的な場所を追加または削除します。
 
 ## <a name="audit-log-search"></a>監査ログ検索
 
 すべてのサテライト地域に対して統合された[監査ログ](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)は、Microsoft 365 監査ログの検索ページから利用できます。 すべての地域からの監査ログのエントリを参照できます。たとえば、NAM ユーザーと EUR ユーザーのアクティビティが、1 つの組織ビューに表示され、既存のフィルターを適用することで特定のユーザーのアクティビティを確認できます。
 
 > [!NOTE]
-> Exchange監査イベントは、既定の場所でのみ使用できます。
+> Exchange管理者監査イベントは、既定の場所でのみ使用できます。
 
 ## <a name="bcs-secure-store-apps"></a>BCS、Secure Store、Apps
 
@@ -45,7 +45,7 @@ BCS、Secure Store、およびすべての App は、各サテライトの場所
 
 ## <a name="compliance-admin-center"></a>コンプライアンス管理センター
 
-複数地域テナントには、コンプライアンス管理センター Microsoft 365[センターがあります](https://compliance.microsoft.com/)。
+複数地域テナントの中央コンプライアンス センターが 1 つあります。 [Microsoft Purview 管理センター](https://compliance.microsoft.com/)です。
 
 ## <a name="ediscovery"></a>電子情報開示
 
@@ -55,21 +55,21 @@ BCS、Secure Store、およびすべての App は、各サテライトの場所
 
 ユーザーの PDL が変更された場合、Exchange メールボックスが自動的に移動します。 新しいメールボックスが作成されたとき、ユーザーの PDL の値が設定されていない場合は、ユーザーの PDL または中心地にメールボックスがプロビジョニングされます。
 
-## <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>情報保護 (IP) データ損失防止 (DLP) ポリシー
+## <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>Information Protection (IP) データ損失防止 (DLP) ポリシー
 
 必要に応じて、テナント全体または該当するユーザーにポリシーの範囲を指定するセキュリティ & コンプライアンス センターで、OneDrive for Business、SharePoint、Exchange の IP DLP ポリシーを設定できます。 例: サテライト地域にいるユーザーのポリシーを選択する場合は、そのポリシーを特定の OneDrive に適用し、ユーザーの OneDrive URL を入力するように選択します。 DLP ポリシーを作成する際の一般的なガイダンスについては、[データ損失防止ポリシーの概要](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)を参照してください。
 
 DLP ポリシーは、そのポリシーの適用性に基づいて各地域の場所に自動的に同期されます。
 
-地域の場所のすべてのユーザーに対する Information Protection ポリシーとデータ損失防止ポリシーの実装は、UI で使用可能なオプションではありません。その代わりに、ポリシーの適用が可能なアカウントを選択するか、すべてのアカウントにグローバルにポリシーを適用する必要があります。
+地理的な場所のすべてのユーザーにInformation Protectionポリシーと Microsoft Purview データ損失防止ポリシーを実装することは、UI で使用できるオプションではありません。代わりに、ポリシーに適用されるアカウントを選択するか、ポリシーをすべてのアカウントにグローバルに適用する必要があります。
 
 ## <a name="microsoft-power-apps"></a>Microsoft Power Apps
 
-Power Apps作成されたデータは、テナントの中央の場所にある端点を使用します。 Microsoft Power Appsは、複数地域サービスではありません。 
+サテライトの場所に対して作成されたPower Appsは、テナントの中央の場所にあるエンドポイントを使用します。 Microsoft Power Appsは Multi-Geo サービスではありません。 
 
 ## <a name="power-automate"></a>Power Automate
 
-サテライト地域に作成された Flow は、テナントのデフォルトの地域にあるエンドポイントを使用します。  Power Automateは、複数地域サービスではありません。 
+サテライト地域に作成された Flow は、テナントのデフォルトの地域にあるエンドポイントを使用します。  Power Automateは Multi-Geo サービスではありません。 
 
 ## <a name="sharepoint-storage-quota"></a>SharePoint のストレージ クォータ
 
@@ -77,15 +77,15 @@ Power Apps作成されたデータは、テナントの中央の場所にある�
 
 ## <a name="sharing"></a>共有
 
-管理者は、各地域のポリシーの共有を設定し管理できます。 各地域OneDriveのSharePointサイトとサイトは、対応する地域固有の共有設定のみを受け入れる必要があります。 (たとえば、中心地への[外部共有](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)は許可できますが、サテライト地域またはその逆にはできません) 共有設定は地域間の共有制限を構成できませんので注意してください。
+管理者は、各地域のポリシーの共有を設定し管理できます。 各地域の場所のOneDriveサイトとSharePoint サイトは、対応する地域固有の共有設定のみを受け入れられます。 (たとえば、中心地への[外部共有](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)は許可できますが、サテライト地域またはその逆にはできません) 共有設定は地域間の共有制限を構成できませんので注意してください。
 
-## <a name="stream"></a>ストリーム
+## <a name="stream"></a>Stream
 
-1:1 チャットで Stream にアップロードされたビデオは、アップロードOneDriveに保存されます。 会議の記録は、会議を記録OneDrive各出席者のグループに保存されます。
+1:1 チャットで Stream にアップロードされたビデオは、アップロードするユーザーのOneDriveに保存されます。 会議の記録は、会議を記録する各出席者のOneDriveに格納されます。
 
 ## <a name="taxonomy"></a>分類
 
-エンタープライズで管理されるメタデータ[](/sharepoint/managed-metadata)の統合分類は、地理的な場所全体でサポートされ、マスターは会社の一元的な場所でホストされます。 中心地からグローバル分類を管理し、サテライト地域の分類に地域固有の用語を追加することをお勧めします。 グローバル分類の用語は、サテライト地域に同期されます。
+Microsoft では、企業が管理するメタデータを地理的な場所全体で統一した [分類を](/sharepoint/managed-metadata) サポートし、マスターは会社の中央の場所でホストされます。 中心地からグローバル分類を管理し、サテライト地域の分類に地域固有の用語を追加することをお勧めします。 グローバル分類の用語は、サテライト地域に同期されます。
 
 詳細と開発者向けガイダンスについては、[複数地域テナントにおけるメタデータの管理](/sharepoint/dev/solution-guidance/multigeo-managedmetadata)を参照してください。
 
@@ -99,4 +99,4 @@ Power Apps作成されたデータは、テナントの中央の場所にある�
 
 ## <a name="yammer"></a>Yammer
 
-Yammerは、複数地域のワークロードではありません。 Yammerに格納されているYammerは、テナントの中央の場所に配置されます。 Yammerは、ファイル ストレージの変更を展開しています。この変更により、Yammerファイルが格納SharePoint。 Yammerに格納されているSharePointは、SharePointグループにYammerされます。 SharePointグループ サイトは、「サイトとグループ」で説明されている PDL ロジック[SharePoint基づいて作成されます](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)。
+Yammerは複数地域のワークロードではありません。 Yammerに格納されているYammerスレッドは、テナントの中央の場所に配置されます。 Yammerは、SharePoint内にYammerファイルを格納するファイル ストレージの変更を展開しています。 SharePointに格納されているYammer ファイルは、Yammer グループに関連付けられているSharePoint サイトに配置されます。 SharePoint グループ サイトは、「[SharePoint サイトとグループ](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)」で説明されているように、PDL ロジックに基づいています。

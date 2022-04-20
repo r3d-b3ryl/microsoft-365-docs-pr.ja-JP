@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 02b74d6f2a2e168f07a095207dcdc1bb6785aa8f
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: b104828f5437b9389e83379984a40edf33340f33
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63715215"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947563"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -69,7 +69,7 @@ ms.locfileid: "63715215"
 Teams の秘密度ラベルを有効にしたら、次の手順ではラベルを作成します。
 
 秘密度ラベルを作成する
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)を開きます。
+1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com) を開きます。
 2. **[ソリューション]** で、**[情報保護]** をクリックします。
 3. **[ラベルの作成]** をクリックします。
 4. ラベルに名前を付けます。**[Highly sensitive]** をお勧めしますが、それが既に使用されている場合は別の名前を選択することもできます。
@@ -93,7 +93,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 22. **[Auto-labeling for database columns]** (データベースの列の自動ラベル付け) ページで、**[次へ]** をクリックします。
 23. **[ラベルの作成]** をクリックし、**[完了]** をクリックします。
 
-ラベルを作成したら、それを使用するユーザーに発行する必要があります。 機密保護のために、すべてのユーザーがラベルを使用できるようにします。 **[情報保護]** ページの [**ラベルポリシー**] タブで、ラベルを Microsoft 365 コンプライアンス センターに発行します。 すべてのユーザーに適用する既存のポリシーがある場合は、そのポリシーにこのラベルを追加します。 新しいポリシーを作成する必要がある場合は、「[ラベル ポリシーを作成して秘密度ラベルを発行する](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)」をご覧ください。
+ラベルを作成したら、それを使用するユーザーに発行する必要があります。 機密保護のために、すべてのユーザーがラベルを使用できるようにします。 **[Information protection]** ページの **[ラベルポリシー]** タブで、ラベルを Microsoft Purview コンプライアンス ポリシーに発行します。 すべてのユーザーに適用する既存のポリシーがある場合は、そのポリシーにこのラベルを追加します。 新しいポリシーを作成する必要がある場合は、「[ラベル ポリシーを作成して秘密度ラベルを発行する](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)」をご覧ください。
 
 ## <a name="create-a-team"></a>チームを作成する
 
@@ -121,7 +121,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 
 ## <a name="shared-channel-settings"></a>共有チャネルの設定
 
-[共有チャネル](/MicrosoftTeams/shared-channels)には、チーム レベルの設定はありません。 Teams 管理センターと Azure AD で構成した共有チャネル設定は、秘密度に関係なくすべてのチームで利用できるようになります。
+[共有チャネル](/MicrosoftTeams/shared-channels) にはチーム レベルの設定がありません。Teams 管理センターと Azure AD で構成した共有チャネル設定は、秘密度に関係なくすべてのチームで使用できます。
 
 ## <a name="sharepoint-settings"></a>SharePoint の設定
 

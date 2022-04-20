@@ -14,87 +14,87 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: ケース内の分析用にMicrosoft 365データをレビュー セットにインポートする方法についてAdvanced eDiscoveryします。
+description: 電子情報開示 (プレミアム) ケースで分析用のレビュー セットにMicrosoft 365以外のデータをインポートする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39f91846e42bb2403c2b1faf7fd98ff3e7759182
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: b9d27e2d1e306c189aa28a2c331a60c5b4d0c5dc
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187427"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944747"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>レビューセットにMicrosoft 365 以外のデータを読み込む
 
-ドキュメント内で分析する必要があるすべてのAdvanced eDiscoveryは、Microsoft 365。 Advanced eDiscovery の Microsoft 365 以外のデータインポート機能を使用すると、Microsoft 365 にないドキュメントをレビューセットにアップロードできます。 この記事では、非ドキュメントを分析Microsoft 365にAdvanced eDiscovery示します。
+Microsoft Purview 電子情報開示 (プレミアム) で分析する必要があるすべてのドキュメントがMicrosoft 365にあるわけではありません。 電子情報開示 (プレミアム) のMicrosoft 365以外のデータ インポート機能を使用すると、Microsoft 365にないドキュメントをレビュー セットにアップロードできます。 この記事では、分析のためにMicrosoft 365以外のドキュメントを電子情報開示 (プレミアム) に取り込む方法について説明します。
 
-## <a name="requirements-to-upload-non-office-365-content"></a>コンテンツ以外のコンテンツをアップロードOffice 365要件
+## <a name="requirements-to-upload-non-office-365-content"></a>Office 365以外のコンテンツをアップロードするための要件
 
-この記事で説明するアップロードMicrosoft 365機能を使用するには、次の情報が必要です。
+この記事で説明するMicrosoft 365以外のアップロード機能を使用するには、次のものが必要です。
 
-- ユーザー以外のコンテンツを関連付けるすべての保管担当者Microsoft 365適切なライセンスが割り当てられている必要があります。 詳細については、「Get [started with Advanced eDiscovery」 を参照してください](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)。
+- Microsoft 365以外のコンテンツを関連付けるすべてのカストディアンには、適切なライセンスを割り当てる必要があります。 詳細については、「[電子情報開示の概要 (プレミアム)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)」を参照してください。
 
-- 既存のケースAdvanced eDiscoveryします。
+- 既存の電子情報開示 (プレミアム) ケース。
 
-- 管理者以外のデータをアップロードして関連付ける前に、保管担当者をケースにMicrosoft 365する必要があります。
+- 非Microsoft 365 データをアップロードして関連付けるには、ケースにカストディアンを追加する必要があります。
 
-- Microsoft 以外の365データは、Advanced eDiscovery でサポートされているファイルの種類である必要があります。 詳細については、[Advanced eDiscovery でサポートされているファイルの種類](supported-filetypes-ediscovery20.md) を参照してください。
+- Microsoft 365以外のデータは、電子情報開示 (プレミアム) でサポートされているファイルの種類である必要があります。 詳細については、「[電子情報開示でサポートされているファイルの種類 (プレミアム)](supported-filetypes-ediscovery20.md)」を参照してください。
 
-- レビュー セットにアップロードされたすべてのファイルは、フォルダーにある必要があります。各フォルダーは、特定のカストディアンに関連付けられています。 これらのフォルダーの名前には、*alias@domainname* のような名前付け形式を使用する必要があります。 alias@domainname は、ユーザーの Microsoft 365 エイリアスとドメインにする必要があります。 ルート フォルダー内のすべてのalias@domainnameを収集できます。 ルート フォルダーには、ルート フォルダー alias@domainnameできます。 ルート フォルダー内の緩いファイルはサポートされていません。
+- レビュー セットにアップロードされたすべてのファイルは、フォルダーにある必要があります。各フォルダーは、特定のカストディアンに関連付けられています。 これらのフォルダーの名前には、*alias@domainname* のような名前付け形式を使用する必要があります。 alias@domainname は、ユーザーの Microsoft 365 エイリアスとドメインにする必要があります。 ルート フォルダー内のすべてのalias@domainname フォルダーを収集できます。 ルート フォルダーには、alias@domainname フォルダーのみを含めることができます。 ルート フォルダー内のルース ファイルはサポートされていません。
 
-   アップロードするデータMicrosoft 365のフォルダー構造は、次の例のようになります。
+   アップロードするMicrosoft 365以外のデータのフォルダー構造は、次の例のようになります。
 
    - c:\nonO365\abraham.mcmahon@contoso.com
    - c:\nonO365\jewell.gordon@contoso.com
    - c:\nonO365\staci.gonzalez@contoso.com
 
-   ここで abraham.mcmahon@contoso.com、jewell.gordon@contoso.com、staci.gonzalez@contoso.com は、ケース内の保管担当者の SMTP アドレスです。
+   ここで、abraham.mcmahon@contoso.com、jewell.gordon@contoso.com、および staci.gonzalez@contoso.com は、ケース内のカストディアンの SMTP アドレスです。
 
-   ![データのアップロードMicrosoft 365構造以外のデータ。](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+   ![Microsoft 365以外のデータ アップロード フォルダー構造。](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
-- 電子情報開示マネージャーの役割グループに割り当てられているアカウント (および電子情報開示管理者として追加)。
+- 電子情報開示マネージャーの役割グループに割り当てられている (電子情報開示管理者として追加された) アカウント。
 
-- コンピューターにインストールされている AzCopy v8.1 ツールで、コンテンツ フォルダー構造以外Microsoft 365アクセスできます。 AzCopy をインストールするには[、「AzCopy v8.1](/previous-versions/azure/storage/storage-use-azcopy)を使用してデータを転送する」を参照Windows。 既定の場所に **、%ProgramFiles(x86)%\Microsoft SDK\Azure\AzCopy** である AzCopy をインストールしてください。 AzCopy v8.1 を使用する必要があります。 他のバージョンの AzCopy は、アプリケーション内のデータを読み込Microsoft 365機能しない場合Advanced eDiscovery。
+- Microsoft 365以外のコンテンツ フォルダー構造にアクセスできるコンピューターにインストールされた AzCopy v8.1 ツール。 AzCopy をインストールするには、[Windowsの AzCopy v8.1 を使用したデータの転送に関するページを参照](/previous-versions/azure/storage/storage-use-azcopy)してください。 既定の場所 ( **%ProgramFiles(x86)%\Microsoft SDK\Azure\AzCopy**) に AzCopy をインストールしてください。 AzCopy v8.1 を使用する必要があります。 他のバージョンの AzCopy は、電子情報開示 (プレミアム) でMicrosoft 365以外のデータを読み込むと機能しない場合があります。
 
 
-## <a name="upload-non-microsoft-365-content-into-advanced-ediscovery"></a>アップロードコンテンツをMicrosoft 365にAdvanced eDiscovery
+## <a name="upload-non-microsoft-365-content-into-ediscovery-premium"></a>Microsoft 365以外のコンテンツを電子情報開示にアップロードする (プレミアム)
 
-1. 電子情報開示マネージャーまたは電子情報開示管理者として、Advanced eDiscoveryを開き、非電子情報開示データがアップロードMicrosoft 365ケースに移動します。  
+1. 電子情報開示マネージャーまたは電子情報開示管理者として、電子情報開示 (プレミアム) を開き、Microsoft 365以外のデータがアップロードされるケースに移動します。  
 
-2. [**レビュー セット] を** クリックし、レビュー セットを選択して、ユーザー以外のデータMicrosoft 365アップロードします。  レビュー セットを持ってない場合は、1 つを作成できます。 
+2. [**校閲セット**] をクリックし、レビュー セットを選択して、Microsoft 365以外のデータをアップロードします。  レビュー セットがない場合は、作成できます。 
  
-3. レビュー セットをクリックするか、選択して [レビュー セットを開く] をクリックして、レビュー **セットを開きます**。
+3. レビュー セットをクリックするか、選択して [レビュー セットを開く] をクリックして **、レビュー セットを開きます**。
 
-4. レビュー セットで、[レビュー **セットの** 管理] ([操作]オプションの直後の下向き矢印) をクリックし、[データOffice 365 **クリック** します。
+4. レビュー セットで、[**レビュー セットの管理**] (**[アクション]** オプションの直後の下向き矢印) をクリックし、[**非Office 365 データ**] オプションをクリックします。
 
 5. **ファイルのアップロード** をクリックして、データ インポート ウィザードを開始します。
 
-   ![アップロードファイル。](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+   ![アップロード ファイル。](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
    ウィザードの最初の手順で準備するセキュリティで保護された Microsoft 提供の Azure Storage に、ファイルをにアップロードします。  準備が完了したら、**次: ファイルのアップロード** ボタンがアクティブになります。
 
-   ![非インポート: Microsoft 365準備します。](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![Microsoft 365以外のインポート: 準備します。](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 5. **次: ファイルのアップロード** をクリックします。
 
-6. [ファイルの **アップロード] ページ** で、次の操作を行います。
+6. **[アップロード ファイル**] ページで、次の操作を行います。
 
-   ![[非インポートMicrosoft 365: アップロードファイル。](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   ![非Microsoft 365 インポート: アップロード ファイル。](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   a. [ファイル **の場所への** パス] ボックスで、アップロードするデータ以外のデータを保存したルート フォルダーの場所Microsoft 365入力します。 たとえば、[開始する前に] セクションに示されているサンプルファイルの場所については **、「%USERPROFILE\Downloads」と入力し、onO365**\n入力します。 正しい場所を指定すると、パスの下のボックスに表示される AzCopy コマンドが正しく更新されます。
+   a.  [**ファイルの場所へのパス**] ボックスに、アップロードするMicrosoft 365以外のデータが格納されているルート フォルダーの場所を確認または入力します。 たとえば、「 **開始する前** に」セクションに示されているサンプル ファイルの場所については、「 **%USERPROFILE\Downloads\nonO365」と入力します**。 正しい場所を指定すると、パスの下のボックスに表示される AzCopy コマンドが適切に更新されます。
 
-   b. [ **クリップボードにコピー] を** クリックして、ボックスに表示されるコマンドをコピーします。
+   b. [ **クリップボードにコピー** ] をクリックして、ボックスに表示されるコマンドをコピーします。
 
-7. コマンド プロンプトWindowsを開始し、前の手順でコピーしたコマンドを貼り付け **、Enter** キーを押して AzCopy コマンドを開始します。  コマンドを開始すると、手順 4 でMicrosoft 365した場所Azure Storageファイルがアップロードされます。
+7. Windowsコマンド プロンプトを起動し、前の手順でコピーしたコマンドを貼り付けてから **Enter キーを** 押して AzCopy コマンドを開始します。  コマンドを開始すると、Microsoft 365以外のファイルは、手順 4 で準備したAzure Storageの場所にアップロードされます。
 
-   ![非インポートMicrosoft 365: AzCopy。](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   ![非Microsoft 365 インポート: AzCopy。](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > 前に述べたように、AzCopy v8.1 を使用して、[ファイルファイル] ページで提供されているコマンドを正常に使用アップロード **必要** があります。 指定された AzCopy コマンドが失敗した場合は、「トラブルシューティング[AzCopy in Advanced eDiscovery」 を参照してください](troubleshooting-azcopy.md)。
+   > 前述のように、AzCopy v8.1 を使用して、**アップロード ファイル** ページで提供されているコマンドを正常に使用する必要があります。 指定された AzCopy コマンドが失敗した場合は、「[電子情報開示での AzCopy のトラブルシューティング (プレミアム)](troubleshooting-azcopy.md)」を参照してください。
 
-8. ウィザードに戻り、[次 **Microsoft 365 コンプライアンス センター: ウィザードでファイルを処理する**] をクリックします。  これにより、Azure Storage の場所にアップロードされた Microsoft 365 以外のファイルの処理、テキスト抽出、インデックス作成が開始されます。  
+8. Microsoft Purview コンプライアンス ポータルに戻るし、ウィザードで [**次へ: ファイルの処理**] をクリックします。  これにより、Azure Storage の場所にアップロードされた Microsoft 365 以外のファイルの処理、テキスト抽出、インデックス作成が開始されます。  
 
-9. [ファイルの処理] ページまたは[ジョブ] タブでファイルの処理の進行状況を追跡するには、レビュー セットに非ユーザー データMicrosoft 365を追加するという名前のジョブを **表示します**。  ジョブが完了すると、新しいファイルがレビュー セットで使用できます。
+9. [**プロセス ファイル**] ページまたは [**ジョブ**] タブで、**Microsoft 365以外のデータをレビュー セットに追加** するという名前のジョブを表示して、ファイルの処理の進行状況を追跡します。  ジョブが完了すると、新しいファイルがレビュー セットで使用できるようになります。
 
-   ![[非インポートMicrosoft 365: ファイルを処理します。](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+   ![Microsoft 365以外のインポート: ファイルを処理します。](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 
 10. 処理が完了したら、ウィザードを閉じることができます。

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
-ms.openlocfilehash: f6fe6e821e41b47bcce6ef157d971245fdd072b8
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 571516a7112e3f145d9e3ca392ad3488a33b4887
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882288"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947827"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>ドキュメント理解モデルとフォーム処理モデルの違い 
 
@@ -79,8 +79,8 @@ Microsoft SharePoint Syntex でのコンテンツの理解により、SharePoint
 | 分類の種類| 抽出するデータに関する手がかりをシステムに与える設定可能な分類子。| 機械教育を使用して、抽出するデータのドキュメントの場所を割り当てる、オプションの抽出子を備えたトレーニング可能な分類子。|
 | 場所 | 単一のドキュメント ライブラリ用にトレーニングされています。| 複数のライブラリに適用できます。|
 | サポートされているファイルの種類| PDF、JPG、PNG 形式、合計 50 MB および 500 ページでトレーニングします。| 否定的な例を含め、5 - 10 個の PDF、Office、またはメール ファイルでトレーニングします。<br>Office ファイルは 64k 文字で切り捨てられます。 OCR でスキャンされるファイルは 20 ページに制限されています。|
-| マネージド メタデータと統合する | いいえ | はい。設定された管理対象メタデータ フィールドを参照するエンティティ抽出子のトレーニングを行います。|
-| Microsoft Information Protection が有効になっている場合のコンプライアンス機能の統合 | 発行された保持ラベルを設定します。<br>秘密度ラベルを設定します。 | 発行された保持ラベルを設定します。<br>発行された秘密度ラベルを設定します。 |
+| 管理されたメタデータと統合する | いいえ | はい。設定された管理対象メタデータ フィールドを参照するエンティティ抽出子のトレーニングを行います。|
+| Microsoft Purview Information Protectionとのコンプライアンス機能の統合 | 発行済みの保持ラベルを設定します。<br>秘密度ラベルを設定する予定です。 | 発行済みの保持ラベルを設定します。<br>公開された秘密度ラベルを設定します。 |
 | サポートされる地域| フォーム処理は Power Platform に依存しています。 Power Platform と AI Builder のグローバルな可用性については、「[Power Platform の可用性](https://dynamics.microsoft.com/geographic-availability/)」を参照してください。 | すべての地域で利用可能です。|
 | トランザクション コスト | AI Builder クレジットを使用します。<br>クレジットは 1 M のバッチで購入できます。<br>300 以上の SharePoint Syntex ライセンスを購入すると、1 M のクレジットが含まれています。<br>1 M のクレジットで 2,000 ファイル ページの処理が可能になります。<br>| 該当なし |
 | 容量 | 既定の Power Platform 環境を使用します (Dataverse データベースをサポートするカスタム環境)。 | 容量制限はありません。|

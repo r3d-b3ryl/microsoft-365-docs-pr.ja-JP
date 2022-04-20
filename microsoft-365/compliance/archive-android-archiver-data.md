@@ -1,5 +1,5 @@
 ---
-title: Android モバイル データをアーカイブするコネクタをセットアップする
+title: Android モバイル データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,72 +11,72 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理者は、Android 携帯電話から SMS、MMS、音声通話をインポートおよびアーカイブする TeleMessage コネクタをセットアップできます。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティデータを管理できます。
-ms.openlocfilehash: 78eb94bb23b5b6f1b0801bcbfad4a6fc43022398
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 管理者は、Android 携帯電話から SMS、MMS、音声通話をインポートおよびアーカイブするための TeleMessage コネクタを設定できます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
+ms.openlocfilehash: 5edf3766b31d5d9171ff726f2c720aba36d88cae
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325391"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946794"
 ---
-# <a name="set-up-a-connector-to-archive-android-mobile-data"></a>Android モバイル データをアーカイブするコネクタをセットアップする
+# <a name="set-up-a-connector-to-archive-android-mobile-data"></a>Android モバイル データをアーカイブするコネクタを設定する
 
-Android 携帯電話から SMS、MMS、音声通話Microsoft 365 コンプライアンス センター通話ログをインポートおよびアーカイブするには、このデバイスの TeleMessage コネクタを使用します。 コネクタをセットアップして構成した後、組織の TeleMessage アカウントに毎日 1 回接続し、TeleMessage Android Archiver を使用する従業員のモバイル通信を Microsoft 365 のメールボックスにインポートします。
+Microsoft Purview コンプライアンス ポータルの TeleMessage コネクタを使用して、Android 携帯電話から SMS、MMS、音声通話、通話ログをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の TeleMessage アカウントに毎日 1 回接続され、TeleMessage Android Archiver を使用して従業員のモバイル通信をMicrosoft 365のメールボックスにインポートします。
 
-Android 携帯電話のデータをユーザー メールボックスに保存した後、訴訟ホールド、コンテンツ検索、Microsoft 365 保持ポリシーなどの Microsoft 365 コンプライアンス機能を Android Archiver データに適用できます。 たとえば、コンテンツ検索を使用して Android Archiver モバイル通信を検索したり、Android Archiver コネクタ データを含むメールボックスを管理者に関連付Advanced eDiscoveryできます。 Android Archiver コネクタを使用してデータをインポートおよびアーカイブMicrosoft 365、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
+Android 携帯電話のデータがユーザー メールボックスに格納されたら、訴訟ホールド、コンテンツ検索、Microsoft 365アイテム保持ポリシーなどの Microsoft Purview 機能を Android Archiver データに適用できます。 たとえば、コンテンツ検索を使用して Android Archiver モバイル通信を検索したり、Android Archiver コネクタ データを含むメールボックスを電子情報開示 (プレミアム) ケースのカストディアンに関連付けることができます。 Android Archiver コネクタを使用してMicrosoft 365にデータをインポートおよびアーカイブすると、組織が政府および規制ポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-android-mobile-data"></a>Android モバイル データのアーカイブの概要
 
-次の概要では、コネクタを使用して Android モバイル データをアーカイブするプロセスについて説明Microsoft 365。
+次の概要では、コネクタを使用して Android モバイル データをMicrosoft 365にアーカイブするプロセスについて説明します。
 
-![Android Archiver コネクタのワークフロー。](../media/AndroidArchiverConnectorWorkflow.png)
+![Android Archiver コネクタワークフロー。](../media/AndroidArchiverConnectorWorkflow.png)
 
-1. 組織は、TeleMessage を使用して Android アーカイブ コネクタをセットアップします。 詳細については、「 [Android Archiver」を参照してください](https://www.telemessage.com/office365-activation-for-android-archiver/)。
+1. 組織は TeleMessage と連携して Android Archiver コネクタを設定します。 詳細については、「 [Android Archiver](https://www.telemessage.com/office365-activation-for-android-archiver/)」を参照してください。
 
-2. リアルタイムで、組織の Android 携帯電話からの SMS、MMS、音声通話、通話ログが TeleMessage サイトにコピーされます。
+2. リアルタイムでは、組織の Android 携帯電話からの SMS、MMS、音声通話、通話ログが TeleMessage サイトにコピーされます。
 
-3. Microsoft 365 コンプライアンス センター で作成した Android アーカイブ コネクタは、毎日 TeleMessage サイトに接続し、Android データを過去 24 時間から Microsoft クラウドの安全な Azure Storage 場所に転送します。 コネクタは、Android データを電子メール メッセージ形式に変換します。
+3. コンプライアンス ポータルで作成した Android Archiver コネクタは、毎日 TeleMessage サイトに接続し、過去 24 時間の Android データを Microsoft クラウド内の安全なAzure Storageの場所に転送します。 コネクタでは、Android データも電子メール メッセージ形式に変換されます。
 
-4. コネクタは、モバイル通信アイテムを特定のユーザーのメールボックスにインポートします。 Android Archiver という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、User の [電子メール アドレス] プロパティの値を使用 *してマッピングを行* います。 すべての電子メール メッセージには、このプロパティが含まれるので、電子メール メッセージのすべての参加者の電子メール アドレスが設定されます。 *User* の [電子メール アドレス] プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義できます。 このマッピング ファイルには、各ユーザーのモバイル番号と対応するMicrosoft 365メールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にしてカスタム マッピングを提供する場合、すべての電子メール アイテムについて、コネクタは最初にカスタム マッピング ファイルを確認します。 ユーザーの携帯電話番号に対応する有効な Microsoft 365 ユーザーが見つからなかった場合、コネクタは電子メール アイテムのユーザーの電子メール アドレス プロパティを使用します。 コネクタがカスタム マッピング ファイルまたは電子メール アイテムの *User* の電子メール アドレス プロパティに有効な Microsoft 365 ユーザーを見つからなかった場合、アイテムはインポートされません。
+4. コネクタは、モバイル通信アイテムを特定のユーザーのメールボックスにインポートします。 Android Archiver という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *ユーザーの電子メール アドレス* プロパティの値を使用してマッピングを行います。 すべての電子メール メッセージには、このプロパティが含まれています。このプロパティには、電子メール メッセージのすべての参加者の電子メール アドレスが設定されます。 *ユーザーの電子メール アドレス* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義することもできます。 このマッピング ファイルには、各ユーザーの携帯電話番号と対応するMicrosoft 365メールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にし、カスタム マッピングを指定する場合は、すべての電子メール アイテムについて、コネクタが最初にカスタム マッピング ファイルを確認します。 ユーザーの携帯電話番号に対応する有効なMicrosoft 365 ユーザーが見つからない場合、コネクタは電子メール アイテムのユーザーの電子メール アドレス プロパティを使用します。 コネクタで、カスタム マッピング ファイルまたは電子メール アイテムの *ユーザーの電子メール アドレス* プロパティで有効なMicrosoft 365 ユーザーが見つからない場合、アイテムはインポートされません。
 
-## <a name="before-you-set-up-a-connector"></a>コネクタをセットアップする前に
+## <a name="before-you-set-up-a-connector"></a>コネクタを設定する前に
 
-Android 通信データのアーカイブに必要な実装手順の一部は、Microsoft 365 の外部であり、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
+Android 通信データをアーカイブするために必要な実装手順の一部はMicrosoft 365外部にあり、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
 
-- [TeleMessage から Android Archiver サービスを注文し](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365)、組織の有効な管理アカウントを取得します。 コネクタを作成するときに、このアカウントにサインインする必要があります。
+- [TeleMessage から Android Archiver サービス](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365)を注文し、組織の有効な管理アカウントを取得します。 コネクタを作成するときに、このアカウントにサインインする必要があります。
 
-- テレメッセージ アカウントに Android Archiver サービスが必要なすべてのユーザーを登録します。 ユーザーを登録する場合は、ユーザーのアカウントに使用する電子メール アドレスと同じMicrosoft 365してください。
+- Android Archiver サービスを必要とするすべてのユーザーを TeleMessage アカウントに登録します。 ユーザーを登録するときは、Microsoft 365 アカウントに使用するのと同じメール アドレスを必ず使用してください。
 
 - 従業員の携帯電話に TeleMessage Android Archiver アプリをインストールしてアクティブ化します。
 
-- Android Archiver コネクタを作成するユーザーには、データ コネクタ管理者の役割が割り当てられている必要があります。 この役割は、データ コネクタ ページの [データ  コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 この役割は、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ とコンプライアンス センターのアクセス許可」の「セキュリティとコンプライアンス センターの役割& [してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。 または、組織内の管理者がカスタム役割グループを作成し、データ コネクタ管理者の役割を割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、「アクセス許可」の「カスタム役割グループを作成する」[セクションを参照Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)。
+- Android Archiver コネクタを作成するユーザーには、データ コネクタ管理者ロールが割り当てられている必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この TeleMessage データ コネクタは、米国政府機関GCC環境Microsoft 365使用できます。 サード パーティ製のアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にある、Microsoft 365 コンプライアンスおよびデータ保護のコミットメントの対象となされていないサードパーティ システムに対して、組織の顧客データを保存、送信、および処理する必要があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
+- この TeleMessage データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purview およびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
-## <a name="create-an-android-archiver-connector"></a>Android Archiver コネクタの作成
+## <a name="create-an-android-archiver-connector"></a>Android Archiver コネクタを作成する
 
-最後の手順は、Android Archiver コネクタを作成する手順Microsoft 365 コンプライアンス センター。 コネクタは、指定した情報を使用して、TeleMessage サイトに接続し、Android 通信をネットワーク内の対応するユーザー メールボックス ボックスにMicrosoft 365。
+最後の手順は、コンプライアンス ポータルで Android Archiver コネクタを作成することです。 コネクタは、指定した情報を使用して TeleMessage サイトに接続し、Android 通信をMicrosoft 365の対応するユーザー メールボックス ボックスに転送します。
 
-1. [データ コネクタ [https://compliance.microsoft.com](https://compliance.microsoft.com)Android **アーカイブ]** >  に **移動してクリックします**。
+1. **Data connectorsAndroid** >  **Archiver** に [https://compliance.microsoft.com](https://compliance.microsoft.com)移動してクリックします。
 
-2. **[Android Archiver 製品の説明]** ページで、[コネクタの追加] **をクリックします**。
+2. **Android Archiver** 製品の説明ページで、[**コネクタの追加**] をクリックします。
 
-3. [サービス条件 **] ページで、[** 同意する] を **クリックします**。
+3. [利用規約] ページ **で** 、[ **同意** する] をクリックします。
 
-4. [ **TeleMessage へのログイン]** ページの [手順 3] で、次のボックスに必要な情報を入力し、[次へ] をクリック **します**。
+4. [ **TeleMessage へのログイン** ] ページの [手順 3] で、次のボックスに必要な情報を入力し、[ **次へ**] をクリックします。
 
-   - **ユーザー名:** TeleMessage ユーザー名。
+   - **名：** TeleMessage ユーザー名。
 
-   - **パスワード:** TeleMessage パスワード。
+   - **パスワード：** TeleMessage のパスワード。
 
-5. コネクタを作成したら、ポップアップ ウィンドウを閉じ、[次へ] を **クリックします**。
+5. コネクタが作成されたら、ポップアップ ウィンドウを閉じて、[ **次へ**] をクリックします。
 
-6. [ユーザー マッピング **] ページで** 、自動ユーザー マッピングを有効にして、[次へ] を **クリックします**。 カスタム マッピングが必要な場合は、CSV ファイルをアップロードし、[次へ] を **クリックします**。
+6. [ **ユーザー マッピング** ] ページで、自動ユーザー マッピングを有効にして、[ **次へ**] をクリックします。 カスタム マッピングで CSV ファイルをアップロードする必要がある場合は、[ **次へ**] をクリックします。
 
-7. 設定を確認し、[完了] を **クリックして** コネクタを作成します。
+7. 設定を確認し、[ **完了]** をクリックしてコネクタを作成します。
 
-8. [データ コネクタ] ページの [ **コネクタ] タブに移動** して、新しいコネクタのインポート プロセスの進行状況を確認します。
+8. **[データ コネクタ**] ページの [コネクタ] タブに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 大きいアイテムのサポートは、後日利用できます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きなアイテムのサポートは、後日提供される予定です。

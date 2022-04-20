@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: Microsoft 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: 4280b6859358580547302ccf9497e8cd1e7ed752
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: HT
+ms.openlocfilehash: 992f5c62654f23f90f910f62dc3bb78199b949b0
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939407"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946926"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを管理する
 
@@ -44,7 +44,7 @@ ms.locfileid: "61939407"
 - Power BI (クラシック)
 - Web 用 Project / ロードマップ
 
-この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 Office 365 のグローバル管理者は、Microsoft 365 管理センター、Planner、Exchange、SharePoint Online でグループを作成できます。 他の役割は、以下のような制限付きの方法でグループを作成できます。
+この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 グローバル管理者Microsoft 365、Microsoft 365 管理センター、Planner、Exchange、SharePointを使用してグループを作成できますが、Teamsなどの他の場所を使用することはできません。 他のロールは、次に示す限られた手段でMicrosoft 365 グループを作成できます。
 
 - Exchange 管理者: Exchange 管理センター、Azure AD
 - パートナー レベル 1 のサポート: Microsoft 365 管理センター、Exchange 管理センター、Azure AD
@@ -58,7 +58,7 @@ ms.locfileid: "61939407"
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
-グループを作成するユーザーを管理するには、以下のユーザーが Azure AD Premium ライセンスが割り当てられている必要があります。
+グループを作成するユーザーを管理するには、次のユーザーにAzure AD Premiumライセンスまたは基本 EDU ライセンスAzure AD割り当てる必要があります。
 
 - これらのグループ作成の設定を管理している管理者
 - グループの作成が許可されているグループのメンバー
@@ -66,13 +66,13 @@ ms.locfileid: "61939407"
 > [!NOTE]
 > Azure ライセンスを割り当てる方法の詳細については、「[Azure Active Directory ポータルでライセンスを割り当てる、または削除する](/azure/active-directory/fundamentals/license-users-groups)」を参照してください。
 
-以下のユーザーは Azure AD Premium ライセンスが割り当てられている必要はありません。
+以下のユーザーは Azure AD Premium ライセンスまたは Azure AD Basic EDU のライセンスが割り当てられている必要はありません。
 
 - Microsoft 365 グループのメンバーであり、他のグループを作成できないユーザー。
 
 ## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>手順 1: Microsoft 365 グループを作成する必要があるユーザーのグループを作成する
 
-グループを作成できるユーザーを制御するために使用できる組織内のグループは 1 つです。 ただし、このグループのメンバーとして、他のグループをネストすることができます。
+組織内の 1 つのグループのみを使用して、Microsoft 365 グループを作成できるユーザーを制御できます。 ただし、このグループのメンバーとして、他のグループをネストすることができます。
 
 上記の役割の管理者は、このグループのメンバーである必要はなく、グループを作成することができます。
 
@@ -82,7 +82,7 @@ ms.locfileid: "61939407"
 
 3. 目的のグループの種類を選びます。 グループの名前は覚えておいてください。 後で必要になります。
 
-4. グループの設定を完了し、組織内でのグループの作成を許可するユーザーまたは他のグループを追加します。
+4. グループの設定を完了し、グループをメンバー (所有者ではなく) として作成できるようにするユーザーや他のグループを追加します。
 
 詳細については、「[Microsoft 365 管理センターでのセキュリティ グループの作成、編集、または削除](../admin/email/create-edit-or-delete-a-security-group.md)」を参照してください。
 

@@ -13,23 +13,23 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 秘密度ラベルを SharePoint Syntex のモデルに適用する方法について説明します。
-ms.openlocfilehash: a7e6ea878fd7fceb6b7496dbcfb90a50f3e8ce1e
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 4ab530fbd4a187f03617b01b6b9661332ad1a7d9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635089"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945607"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のモデルに秘密度ラベルを適用する
 
 Microsoft SharePoint Syntex のドキュメント理解モデルに[秘密度ラベル](../compliance/sensitivity-labels.md)を簡単に適用できます。 この機能は、フォーム処理モデルではまだ利用できません。
 
-感度ラベルを使用すると、モデルが識別するドキュメントに暗号化を適用できます。 たとえば、モデルで、ドキュメント ライブラリにアップロードされた銀行口座番号またはクレジット カード番号を含む財務ドキュメントを特定するだけでなく、暗号化設定で構成された感度ラベルを適用して、そのコンテンツにアクセスできるユーザーと、その使用方法を制限します。 SharePoint Syntex モデルは[ラベルの順序](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label)規則を尊重し、ユーザーがファイルに手動で適用した既存のラベルを上書きしません。 
+秘密度ラベルを使用すると、モデルが識別するドキュメントに暗号化を適用できます。 たとえば、モデルで、ドキュメント ライブラリにアップロードされる銀行口座番号またはクレジット カード番号を含む財務ドキュメントを識別するだけでなく、暗号化設定で構成された秘密ラベルを適用して、そのコンテンツにアクセスできるユーザーとその使用方法を制限する必要があります。 SharePoint Syntex モデルは[ラベルの順序](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label)規則を尊重し、ユーザーがファイルに手動で適用した既存のラベルを上書きしません。 
 
-モデルのホーム ページのモデル設定を使用して、既存の秘密度ラベルをモデルに適用できます。 モデル設定から選択できるようにするには、ラベルがすでに公開されている必要があります。 ラベルは、Word (Office)、.docx、PowerPoint (.pptx)、Excel (.xlsx) のExcel適用されます。 
+モデルのホーム ページのモデル設定を使用して、既存の秘密度ラベルをモデルに適用できます。 モデル設定から選択できるようにするには、ラベルがすでに公開されている必要があります。 ラベルは、Word (.docx)、PowerPoint (.pptx)、Excel (.xlsx) のOffice ファイルに適用されます。 
 
 > [!Important]
-> ドキュメント理解モデルに適用する感度ラベルを使用するには、ドキュメント理解モデルを作成し、コンプライアンス センターで公開Microsoft 365[必要があります](../compliance/microsoft-365-compliance-center.md)。
+> 機密ラベルをドキュメント理解モデルに適用できるようにするには、 [Microsoft Purview コンプライアンス ポータルで作成して発行する](../admin/security-and-compliance/set-up-compliance.md)必要があります。
 
 ## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>秘密度ラベルをドキュメント理解モデルに追加する
 
@@ -76,7 +76,7 @@ Microsoft SharePoint Syntex のドキュメント理解モデルに[秘密度ラ
 ## Add a sensitivity label to a form processing model
 
 > [!Important]
-> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../business-premium/m365bp-set-up-compliance.md).
+> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).
 
 You can either apply a sensitivity label to a form processing model when you are creating a model, or apply it to an existing model.
 

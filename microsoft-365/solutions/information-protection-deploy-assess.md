@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: データプライバシー規制、関連するシナリオ、準備状況、およびMicrosoft 365環境内の機密情報の種類を決定します。
-ms.openlocfilehash: ea151577f31ad8ea9454addf171c1079f334d377
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 967c64dee2d99f41b3c2a1b6a193730dcd75811a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822696"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947519"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>データプライバシーリスクを評価し、Microsoft 365を使用して機密アイテムを特定する
 
@@ -192,11 +192,11 @@ GDPR 評価は、次のセクションで構成されます。
 
 個人を含む環境内のコンテンツを検索することは、以前はコンプライアンス検索、電子情報開示、Advanced eDiscovery、DLP、監査の組み合わせを含む、手ごわい作業になる可能性があります。
 
-Microsoft コンプライアンス管理センターの新しい **データ分類** ソリューションでは、個人データに関連するものも含め、組み込みまたはカスタムの機密情報の種類で動作する [Content Explorer](../compliance/data-classification-content-explorer.md) 機能により、これがはるかに簡単になりました。
+Microsoft Purview コンプライアンス ポータルの新しい **データ分類** ソリューションでは、個人データに関連するものを含め、組み込みまたはカスタムの機密情報の種類で動作する [Content Explorer](../compliance/data-classification-content-explorer.md) 機能により、これがはるかに簡単になりました。
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
-Microsoft コンプライアンス管理センターには、100 を超える機密情報の種類が事前に読み込まれています。そのほとんどは、個人データの識別と検索に関連します。 これらの組み込みの機密情報の種類は、正規表現 (正規表現) または関数によって定義されるパターンに基づいて、クレジット カード番号、銀行口座番号、パスポート番号などを識別して保護するのに役立ちます。 詳細については、「[機密情報の種類で検索される情報](../compliance/sensitive-information-type-entity-definitions.md)」を参照してください。
+Microsoft Purview コンプライアンス ポータルには、100 を超える機密情報の種類が事前に読み込まれています。そのほとんどは、個人データの識別と検索に関連します。 これらの組み込みの機密情報の種類は、正規表現 (正規表現) または関数によって定義されるパターンに基づいて、クレジット カード番号、銀行口座番号、パスポート番号などを識別して保護するのに役立ちます。 詳細については、「[機密情報の種類で検索される情報](../compliance/sensitive-information-type-entity-definitions.md)」を参照してください。
 
 従業員 ID のカスタム形式や、組み込みの機密情報の種類でまだカバーされていないその他の個人情報など、組織固有または地域の種類の機密項目を識別して保護する必要がある場合は、次の方法でカスタムの機密情報の種類を作成できます。
 
@@ -216,7 +216,7 @@ Microsoft コンプライアンス管理センターには、100 を超える機
 
 ### <a name="content-explorer"></a>コンテンツ エクスプローラー
 
-環境内の機密アイテムの発生を決定するための重要なツールは、Microsoft 365 コンプライアンス管理センターの新しい[コンテンツ エクスプローラー](../compliance/data-classification-content-explorer.md)です。 これは、機密情報の種類の発生と結果の表示のために、Microsoft 365 サブスクリプション全体の初期スキャンと継続的スキャンを行うための自動化されたツールです。
+環境内の機密アイテムの発生を決定するための重要なツールは、Microsoft Purview 管理センターの新しい [コンテンツ エクスプローラー](../compliance/data-classification-content-explorer.md) です。 これは、機密情報の種類の発生と結果の表示のために、Microsoft 365 サブスクリプション全体の初期スキャンと継続的スキャンを行うための自動化されたツールです。
 
 新しいコンテンツ エクスプローラー ツールを使用すると、組み込みの機密情報の種類またはカスタムのものを使用して、環境内の機密アイテムの場所をすばやく識別できます。 これには、プロセスを確立し、機密アイテムの存在と場所を定期的に調査する責任が割り当てられる場合があります。
 

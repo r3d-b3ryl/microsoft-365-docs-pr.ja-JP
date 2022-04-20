@@ -16,13 +16,13 @@ ms.collection:
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、脅迫攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
-description: 制御されたフォルダー アクセス、MIP、DLP、および Microsoft Defender for Cloud Apps を使用して、Microsoft 365 の機密データを保護します。
-ms.openlocfilehash: 0011a3c9fc0d24815818b67906b8f404a191563e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: フォルダー アクセスの制御、Microsoft Purview Information Protection、DLP、Microsoft Defender for Cloud Apps を使用して、Microsoft 365 の機密データを保護します。
+ms.openlocfilehash: e32c214688adb60fa39fc3c392512f46ec94aecf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325097"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945133"
 ---
 # <a name="step-5-protect-information"></a>手順 5. 情報を保護する
 
@@ -88,9 +88,9 @@ Microsoft 365 テナント内での厳密なアクセス許可の実装は、位
 
 - [制御されたフォルダー アクセス](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders)を使用して、許可されていないアプリケーションが制御されたフォルダー内のデータを変更することをより困難にします。
 
-- [Microsoft Information Protection](/microsoft-365/compliance/information-protection) と秘密度ラベルを使用して、機密情報に適用します。 秘密度ラベルは、定義されたユーザー アカウントと許可されたアクションを使用して、追加の暗号化とアクセス許可を構成できます。 テナントから流出したこの種類の秘密度ラベルでラベル付けされたファイルは、ラベルで定義されたユーザー アカウントでのみ使用できます。
+- [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) と秘密度ラベルを使用して、機密情報に適用します。 秘密度ラベルは、定義されたユーザー アカウントと許可されたアクションを使用して、追加の暗号化とアクセス許可を構成できます。 テナントから流出したこの種類の秘密度ラベルでラベル付けされたファイルは、ラベルで定義されたユーザー アカウントでのみ使用できます。
 
-- Microsoft 365 [データ損失防止 (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) を使用して、秘密度ラベルに基づく個人情報または機密情報を含むデータの危険な、不注意な、または不適切な共有を内部および外部で検出、警告、およびブロックします。
+- Microsoft Purview [データ損失防止 (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) を使用して、秘密度ラベルに基づく個人情報または機密情報を含むデータの危険な、不注意な、または不適切な共有を内部および外部で検出、警告、およびブロックします。
 
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) を使用して、ファイルなどの機密情報のダウンロードをブロックします。 [Defender for Cloud Apps の異常検出ポリシー](/cloud-app-security/anomaly-detection-policy#ransomware-activity)を使用して、高率のファイル アップロードまたはファイル削除アクティビティを検出することもできます。
 

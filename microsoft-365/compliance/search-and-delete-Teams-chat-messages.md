@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Advanced eDiscoveryと Microsoft Graph エクスプローラーを使用して、Microsoft Teamsでチャット メッセージを検索および消去し、Teamsのデータ流出インシデントに対応します。
-ms.openlocfilehash: e0a95007c96bd60b655d455d432a774f6ace0817
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 79f04c513733151099f5b45192a84738065e42aa
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847572"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949373"
 ---
 # <a name="search-and-purge-chat-messages-in-teams"></a>Teamsでチャット メッセージを検索および消去する
 
@@ -32,7 +32,7 @@ Advanced eDiscoveryと Microsoft Graph エクスプローラーを使用して�
 
 ## <a name="before-you-search-and-purge-chat-messages"></a>チャット メッセージを検索して消去する前に
 
-- Advanced eDiscoveryケースを作成し、コレクションを使用してチャット メッセージを検索するには、Microsoft 365 コンプライアンス センターの **電子情報開示マネージャー** ロール グループのメンバーである必要があります。 チャット メッセージを削除するには、 **検索ロールと消去** ロールが割り当てられている必要があります。 このロールは、既定でデータ調査担当者と組織管理の役割グループに割り当てられます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
+- Advanced eDiscoveryケースを作成し、コレクションを使用してチャット メッセージを検索するには、Microsoft Purview コンプライアンス ポータルで **電子情報開示マネージャー** ロール グループのメンバーである必要があります。 チャット メッセージを削除するには、 **検索ロールと消去** ロールが割り当てられている必要があります。 このロールは、既定でデータ調査担当者と組織管理の役割グループに割り当てられます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
 - テナント内の会話では、検索と消去がサポートされています。 Teams Connect チャット (外部アクセスまたはフェデレーション) の会話のサポートは、インターフェイスで有効になっている場合がありますが、意図したとおりに機能しない場合があります。
 - メールボックスごとに最大 10 個のアイテムを一度に削除できます。 チャット メッセージを検索および削除する機能はインシデント対応ツールであるため、この制限はチャット メッセージを迅速に削除するのに役立ちます。
 
@@ -107,7 +107,7 @@ Graph エクスプローラーの使用については、「[Graph エクスプ�
 
 ### <a name="get-the-case-id"></a>ケース ID を取得する
 
-1. <https://developer.microsoft.com/graph/graph-explorer> Microsoft 365 コンプライアンス センターで Search and Purge ロールが割り当てられているアカウントを使用して、Graph エクスプローラーに移動 **して** サインインします。
+1. <https://developer.microsoft.com/graph/graph-explorer> Microsoft Purview コンプライアンス ポータルで検索ロールと消去ロールが割り当てられているアカウントを使用して、Graph エクスプローラーに移動 **して** サインインします。
 
 2. 次の GET 要求を実行して、Advanced eDiscovery ケースの ID を取得します。 要求クエリのアドレス バーの値 `https://graph.microsoft.com/beta/compliance/ediscovery/cases` を使用します。 API バージョンのドロップダウン リストで **v1.0** を選択してください。
 
@@ -122,7 +122,7 @@ Graph エクスプローラーの使用については、「[Graph エクスプ�
 4. 対応する ID をコピーします (または、テキスト ファイルにコピーして貼り付けます)。 次のタスクでこの ID を使用して、コレクション ID を取得します。
 
 > [!TIP]
-> 前の手順を使用してケース ID を取得する代わりに、Microsoft 365 コンプライアンス センターでケースを開き、URL からケース ID をコピーできます。
+> 前の手順を使用してケース ID を取得する代わりに、Microsoft Purview コンプライアンス ポータルでケースを開き、URL からケース ID をコピーできます。
 
 ### <a name="get-the-collection-id"></a>コレクション ID を取得する
 

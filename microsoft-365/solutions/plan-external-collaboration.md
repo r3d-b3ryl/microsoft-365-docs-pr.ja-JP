@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Teamsのゲスト コラボレーションと共有チャネルの違いと、使用するチャネルを選択する方法について説明します。
-ms.openlocfilehash: fd658de9df03071ecbe3de92834f8c48b8873bdb
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: 85eac4fb8315947e2bb8e088d31bb25a2cdeef5e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911408"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945259"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>チャネル会話、ファイル コラボレーション、共有アプリを使用して外部コラボレーションを計画する
 
@@ -102,7 +102,7 @@ Teamsでは共有チャネルが既定でオンになっていますが、共有
 
 ## <a name="compliance-in-shared-channels"></a>共有チャネルでのコンプライアンス
 
-共有チャネルは、Microsoft 365コンプライアンス機能と統合されています。
+共有チャネルは、Microsoft Purview 機能と統合されています。
 
 ##### <a name="communications-compliance"></a>通信コンプライアンス
 
@@ -119,7 +119,7 @@ IP ベースのポリシーは、SharePoint ファイル レベルでサポー�
 
 ##### <a name="data-loss-prevention-dlp"></a>データ損失防止 (DLP)
 
-管理者は、共有チャネルを含むすべてのチャネルがポリシーを継承するチームに [DLP ポリシー](/microsoft-365/compliance/dlp-policy-design) を適用できます。 共有チャネルは、ホスト組織のポリシーを継承します。
+管理者は、共有チャネルを含むすべてのチャネルがポリシーを継承するチームに [Microsoft Purview DLP ポリシー](/microsoft-365/compliance/dlp-policy-design) を適用できます。 共有チャネルは、ホスト組織のポリシーを継承します。
 
 ##### <a name="retention-policy"></a>アイテム保持ポリシー
 

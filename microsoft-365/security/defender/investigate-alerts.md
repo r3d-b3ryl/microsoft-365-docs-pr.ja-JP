@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 20ae5bd77b9a4a962093db1e3d92d8f765a9a9a3
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: fd043ae1ebabcb8162ed96b973c9392bae5fd2a1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664702"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944439"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを調査する
 
@@ -37,7 +37,7 @@ ms.locfileid: "64664702"
 - Microsoft 365 Defender
 
 >[!Note]
->この記事では、Microsoft 365 Defenderのセキュリティ アラートについて説明します。 ただし、アクティビティ アラートを使用すると、ユーザーがMicrosoft 365で特定のアクティビティを実行したときに、自分や他の管理者に電子メール通知を送信できます。 詳細については、「[アクティビティ アラートの作成 - コンプライアンス |Microsoft 365」を参照してください。Microsoft Docs](../../compliance/create-activity-alerts.md)。
+>この記事では、Microsoft 365 Defenderのセキュリティ アラートについて説明します。 ただし、アクティビティ アラートを使用すると、ユーザーがMicrosoft 365で特定のアクティビティを実行したときに、自分や他の管理者に電子メール通知を送信できます。 詳細については、「[アクティビティ アラートの作成 - Microsoft Purview |」を参照してください。Microsoft Docs](../../compliance/create-activity-alerts.md)。
 
 アラートは、すべてのインシデントの基礎であり、環境内で悪意のあるイベントまたは疑わしいイベントが発生したことを示します。 通常、アラートは広範な攻撃の一部であり、インシデントに関する手がかりを提供します。
 
@@ -83,7 +83,7 @@ Microsoft Defender for Office 365アラートにアクセスするには、次�
 
    - コンプライアンス管理者
 
-   - 組織管理 
+   - 組織の管理 
 
 - [カスタム ロール](custom-roles.md)
 
@@ -136,7 +136,7 @@ Microsoft 365 Defenderアラートは、Microsoft Defender for Endpoint、Micros
 
 目的のエンティティを選択すると、詳細ページが変更され、選択したエンティティの種類に関する情報、使用可能な場合の履歴情報、アラート ページから直接このエンティティに対してアクションを実行するオプションが表示されます。
 
-## <a name="manage-alerts"></a>アラートを管理する
+## <a name="manage-alerts"></a>アラートの管理
 
 アラートを管理するには、アラート ページの概要の詳細セクションで [アラートの **管理** ] を選択します。 1 つのアラートの場合は、[ **アラートの管理** ] ウィンドウの例を次に示します。
 

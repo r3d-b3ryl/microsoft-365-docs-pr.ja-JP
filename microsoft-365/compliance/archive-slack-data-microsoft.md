@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft が提供する Slack 電子情報開示データ コネクタを設定して使用して、インスタント メッセージング データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 7ff8140ee75c146f79f14fbd474ab4e6780156ad
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 902a42e78dc92424c2143ffce548a9c8791609ea
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760891"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950679"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Slack 電子情報開示データをアーカイブするコネクタを設定する (プレビュー)
 
-Microsoft が提供する Slack 電子情報開示データ コネクタは、組織の Slack ワークスペースからMicrosoft 365にインスタント メッセージング データ (メッセージ、添付ファイル、リンク、リビジョンなど) をインポートおよびアーカイブするのに役立ちます。 データ コネクタは Slack API からデータをプルし、それを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。 Slack データがインポートされたら、訴訟ホールド、Advanced eDiscovery、通信コンプライアンス、保持設定などのコンプライアンス ソリューションを Slack コンテンツに適用できます。 Slack 電子情報開示データ コネクタを使用してMicrosoft 365にデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
+Microsoft が提供する Slack 電子情報開示データ コネクタは、組織の Slack ワークスペースからMicrosoft 365にインスタント メッセージング データ (メッセージ、添付ファイル、リンク、リビジョンなど) をインポートおよびアーカイブするのに役立ちます。 データ コネクタは Slack API からデータをプルし、それを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。 Slack データがインポートされたら、訴訟ホールド、Microsoft Purview 電子情報開示 (プレミアム)、通信コンプライアンス、保持設定などのコンプライアンス ソリューションを Slack コンテンツに適用できます。 Slack 電子情報開示データ コネクタを使用してMicrosoft 365にデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>Slack 電子情報開示データのアーカイブの概要
 
@@ -43,7 +43,7 @@ Microsoft が提供する Slack 電子情報開示データ コネクタは、�
 
 - 組織の Slack エンタープライズ アカウントのユーザー名とパスワードを取得します。 これらの資格情報を使用して、データ コネクタを作成するときにこのアカウントにサインインします。 また、シングル サインオン (SSO) を使用するように構成された Slack 組織内の自動ユーザー プロビジョニングを行うことをお勧めします。 [セキュリティ & コンプライアンス センターのロール](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Slack 電子情報開示コネクタを作成するユーザーには、データ コネクタ管理者ロールが割り当てられている必要があります。 このロールは、Microsoft 365 コンプライアンス センターの **[データ コネクタ**] ページにコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
+- Slack 電子情報開示コネクタを作成するユーザーには、データ コネクタ管理者ロールが割り当てられている必要があります。 このロールは、Microsoft Purview コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>手順 1: Slack 電子情報開示コネクタを作成する
 
@@ -113,7 +113,7 @@ Microsoft が提供する Slack 電子情報開示データ コネクタは、�
 
 ## <a name="step-5-monitor-the-slack-ediscovery-connector"></a>手順 5: Slack 電子情報開示コネクタを監視する
 
-Slack 電子情報開示コネクタを作成した後、Microsoft 365 コンプライアンス センターでコネクタの状態を表示できます。
+Slack 電子情報開示コネクタを作成した後、コンプライアンス ポータルでコネクタの状態を表示できます。
 
 1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com/) ナビゲーションにある **[データ コネクタ** ] に移動してクリックします。
 

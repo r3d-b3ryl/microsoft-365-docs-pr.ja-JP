@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、Microsoft 365のコア電子情報開示ケースの制限について説明します。
-ms.openlocfilehash: 2d920fbe5973d07b7da656d6247038ab785bbe5c
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 67f15bb39ed75f40a8ef42747c0d4e2dfcb1297d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822652"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949611"
 ---
-# <a name="limits-in-core-ediscovery"></a>Core 電子情報開示の制限
+# <a name="limits-in-ediscovery-standard"></a>電子情報開示の制限 (Standard)
 
-次の表に、コア電子情報開示ケースの制限と、コア電子情報開示ケースに関連付けられている保留リストを示します。 Core 電子情報開示の詳細については、「 [Core 電子情報開示の概要](./get-started-core-ediscovery.md)」を参照してください。
+次の表に、コア電子情報開示ケースの制限と、コア電子情報開示ケースに関連付けられている保留リストを示します。 Microsoft Purview 電子情報開示 (Standard) の詳細については、「 [電子情報開示の概要 (Standard)](./get-started-core-ediscovery.md)」を参照してください。
     
   | 制限の説明 | 極限 |
   |:-----|:-----|
@@ -44,4 +44,4 @@ ms.locfileid: "64822652"
    > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
    > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
-Core 電子情報開示ケースに関連付けられた検索とエクスポートに関連する制限の詳細については、「 [コンテンツ検索とコア電子情報開示の制限](limits-for-content-search.md)」を参照してください。
+電子情報開示 (Standard) ケースに関連付けられた検索とエクスポートに関連する制限の詳細については、「 [コンテンツ検索と電子情報開示 (Standard) の制限」](limits-for-content-search.md)を参照してください。

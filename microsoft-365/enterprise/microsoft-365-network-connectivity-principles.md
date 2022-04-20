@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、Microsoft 365 ネットワーク接続を安全に最適化するための最新のガイドについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cea07745295f945f472dfeaa7042d3b027eea85
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e92f30c356ae782ba7d4d3bb779b744bccebf320
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111677"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944483"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 ネットワーク接続の原則
 
@@ -143,7 +143,7 @@ Microsoft 365 の管理者は、ユーザーのコンピューターに WPAD ま
 #### <a name="microsoft-365-security-features"></a>Microsoft 365 セキュリティ機能
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft は、データセンターのセキュリティ、運用上のセキュリティ、Microsoft 365 サーバーとそれが示すネットワーク エンドポイントに関するリスクの低減について、透明性を確保しています。 Microsoft 365 の組み込みのセキュリティ機能を使用すると、データ損失防止、ウイルス対策、多要素認証、顧客ロックボックス、Defender for Office 365、Microsoft 365 脅威インテリジェンス、Microsoft 365 セキュアスコア、Exchange Online Protection、ネットワーク DDOS セキュリティなどのネットワーク セキュリティ リスクを軽減できます。
+Microsoft は、データセンターのセキュリティ、運用上のセキュリティ、Microsoft 365 サーバーとそれが示すネットワーク エンドポイントに関するリスクの低減について、透明性を確保しています。 Microsoft 365 の組み込みのセキュリティ機能を使用すると、Microsoft Purview データ損失防止、ウイルス対策、多要素認証、顧客ロックボックス、Defender for Office 365、Microsoft 365 脅威インテリジェンス、Microsoft 365 セキュアスコア、Exchange Online Protection、ネットワーク DDOS セキュリティなどのネットワーク セキュリティ リスクを軽減できます。
   
 Microsoft データセンターとグローバル ネットワークのセキュリティの詳細については、「[Microsoft トラスト センター](https://www.microsoft.com/trustcenter/security)」をご覧ください。
   
@@ -206,7 +206,7 @@ Microsoft では、幅広い Microsoft 365 のセキュリティ機能を用意�
   
 - **多要素認証 (MFA) の使用** MFA では強力なパスワード戦略に保護レイヤーを追加して、パスワードを正しく入力した後、スマートフォンで電話、テキスト メッセージ、またはアプリ通知を確認するようユーザーに要求します。
 
-- **Microsoft Defender for Cloud Appsの使用** 変則的な活動を追跡し、それに対処するためのポリシーを構成します。 管理者が、変則的またはリスクのあるユーザーの活動 (たとえば、大量のデータのダウンロード、複数回のサインイン試行の失敗、不明または危険な IP アドレスからの接続) を確認できるように、Microsoft Defender for Cloud Apps で通知を設定します。
+- **Microsoft Defender for Cloud App の使用** 異常な活動を追跡し、それに対処するためのポリシーを構成します。管理者が、異常なまたはリスクのあるユーザーの活動を確認できるように Microsoft Defender for Cloud App で通知を設定します。たとえば、大量のデータのダウンロード、複数回のサインイン試行の失敗、不明または危険な IP アドレスからの接続などを確認します。
 
 - **データ損失防止 (DLP) の構成** DLP を使用すると、機密データを特定し、ユーザーが誤ってまたは意図的にデータを共有することを回避するためのポリシーを作成できます。 DLP は、Exchange Online、SharePoint Online、OneDrive を含む Microsoft 365 で動作するので、ユーザーはワークフローを中断させずに準拠を維持できます。
 
@@ -228,7 +228,7 @@ Microsoft では、幅広い Microsoft 365 のセキュリティ機能を用意�
   - Microsoft 365 のトラフィックをローカルに送信する
 - 「[増分最適化](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt)」のセクションで説明されているように、改善には段階的に対処できます。一部の最適化手法では、使用しているネットワーク アーキテクチャによっては、より優れたコスト/利益率を提供する場合があるので、組織にとって最も意味のある最適化を選択する必要があります。
 
-Microsoft 365 のセキュリティとコンプライアンスの詳細については、「[Microsoft 365 セキュリティ](../security/index.yml)」と「[Microsoft 365 コンプライアンス](../compliance/index.yml)」の記事を参照してください。
+Microsoft 365 のセキュリティとコンプライアンスの詳細については、「[Microsoft 365 セキュリティ](../security/index.yml)」と「[Microsoft Purview](../compliance/index.yml)」の記事を参照してください。
   
 ## <a name="incremental-optimization"></a>増分の最適化
 <a name="BKMK_IncOpt"> </a>

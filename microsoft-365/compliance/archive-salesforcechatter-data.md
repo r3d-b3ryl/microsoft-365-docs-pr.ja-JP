@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas から Microsoft 365 に Salesforce Chatter データをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
-ms.openlocfilehash: 8d86b4fcddcdf4a0f9b169b32df152873e8211c7
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 695702d33817fce96cd54e7abf646e1687834f0d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758621"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950613"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Salesforce Chatter データをアーカイブするコネクタを設定する
 
-Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、Salesforce Chatter プラットフォームからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には、サード パーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをMicrosoft 365にインポートする [Salesforce Chatter](http://globanet.com/chatter/) コネクタが用意されています。 コネクタは、チャット、添付ファイル、投稿などのコンテンツを Salesforce Chatter から電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザーのメールボックスにインポートします。
+Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、Salesforce Chatter プラットフォームからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には、サード パーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをMicrosoft 365にインポートする [Salesforce Chatter](http://globanet.com/chatter/) コネクタが用意されています。 コネクタは、チャット、添付ファイル、投稿などのコンテンツを Salesforce Chatter から電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザーのメールボックスにインポートします。
 
-Salesforce Chatter データをユーザーメールボックスに格納した後、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベルなどのMicrosoft 365コンプライアンス機能を適用できます。 Salesforce Chatter コネクタを使用してMicrosoft 365にデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
+Salesforce Chatter データがユーザー メールボックスに格納された後、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベルなどの Microsoft Purview 機能を適用できます。 Salesforce Chatter コネクタを使用してMicrosoft 365にデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-salesforce-chatter-data"></a>Salesforce Chatter データのアーカイブの概要
 
@@ -35,7 +35,7 @@ Salesforce Chatter データをユーザーメールボックスに格納した�
 
 2. 24 時間に 1 回、Salesforce Chatter アイテムが Veritas Merge1 サイトにコピーされます。 コネクタでは、Salesforce Chatter アイテムも電子メール メッセージ形式に変換されます。
 
-3. Microsoft 365 コンプライアンス センターで作成する Salesforce Chatter コネクタは、毎日 Veritas Merge1 サイトに接続し、Chatter コンテンツを Microsoft クラウド内の安全なAzure Storageの場所に転送します。
+3. コンプライアンス ポータルで作成した Salesforce Chatter コネクタは、毎日 Veritas Merge1 サイトに接続し、Chatter コンテンツを Microsoft クラウド内の安全なAzure Storageの場所に転送します。
 
 4. コネクタは、[手順 3](#step-3-map-users-and-complete-the-connector-setup). で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックスにインポートします。 **Salesforce Chatter** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用して、アイテムをインポートするメールボックスを決定します。 すべての Chatter アイテムにはこのプロパティが含まれています。このプロパティには、アイテムのすべての参加者のメール アドレスが設定されます。
 
@@ -45,13 +45,13 @@ Salesforce Chatter データをユーザーメールボックスに格納した�
 
 - Salesforce アプリケーションを作成し、次の時点で [https://salesforce.com](https://salesforce.com)トークンを取得します。 管理者として Salesforce アカウントにログインし、ユーザー個人トークンを取得してデータをインポートする必要があります。 また、更新、削除、および編集をキャプチャするには、トリガーを Chatter サイトに発行する必要があります。 これらのトリガーはチャネルに投稿を作成し、Merge1 はチャネルからの情報をキャプチャします。 アプリケーションを作成してトークンを取得する方法の詳細な手順については、「 [Merge1 サード パーティ コネクタ ユーザー ガイド」を](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf)参照してください。
 
-- 手順 1 で Salesforce Chatter コネクタを作成し、手順 3 で完了したユーザーには、データ コネクタ管理者ロールを割り当てる必要があります。 このロールは、Microsoft 365 コンプライアンス センターの **[データ コネクタ**] ページにコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
+- 手順 1 で Salesforce Chatter コネクタを作成し、手順 3 で完了したユーザーには、データ コネクタ管理者ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この Veritas データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境でパブリック プレビュー段階にあります。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft 365コンプライアンスとデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
+- この Veritas データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境でパブリック プレビュー段階にあります。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purview およびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
 ## <a name="step-1-set-up-the-salesforce-chatter-connector"></a>手順 1: Salesforce Chatter コネクタを設定する
 
-最初の手順では、Microsoft 365 コンプライアンス センターの **[データ コネクタ**] ページにアクセスし、Chatter データ用のコネクタを作成します。
+最初の手順では、コンプライアンス ポータルの **[データ コネクタ** ] ページにアクセスし、Chatter データ用のコネクタを作成します。
 
 1. **Data connectorsSalesforce** >  **Chatter** に [https://compliance.microsoft.com](https://compliance.microsoft.com/)移動してクリックします。
 
@@ -67,11 +67,11 @@ Salesforce Chatter データをユーザーメールボックスに格納した�
 
 2 番目の手順は、Veritas Merge1 サイトで Salesforce Chatter コネクタを構成することです。 Salesforce Chatter コネクタを構成する方法については、「 [Merge1 サード パーティ コネクタ ユーザー ガイド」を](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf)参照してください。
 
-[**保存&完了**] をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの **[ユーザー マッピング**] ページが表示されます。
+[ **保存&完了** ] をクリックすると、コンプライアンス ポータルのコネクタ ウィザードの **[ユーザー マッピング** ] ページが表示されます。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
-ユーザーをマップし、Microsoft 365 コンプライアンス センターでコネクタの設定を完了するには、次の手順に従います。
+ユーザーをマップし、コンプライアンス ポータルでコネクタのセットアップを完了するには、次の手順に従います。
 
 1. **[Salesforce Chatter ユーザーをMicrosoft 365ユーザーにマップ** する] ページで、自動ユーザー マッピングを有効にします。 Salesforce Chatter アイテム *には、組織内* のユーザーのメール アドレスを含む Email というプロパティが含まれています。 コネクタがこのアドレスをMicrosoft 365 ユーザーに関連付けることができる場合、アイテムはそのユーザーのメールボックスにインポートされます。
 
@@ -79,7 +79,7 @@ Salesforce Chatter データをユーザーメールボックスに格納した�
 
 ## <a name="step-4-monitor-the-salesforce-chatter-connector"></a>手順 4: Salesforce Chatter コネクタを監視する
 
-Salesforce Chatter コネクタを作成した後、Microsoft 365 コンプライアンス センターでコネクタの状態を表示できます。
+Salesforce Chatter コネクタを作成した後、コンプライアンス ポータルでコネクタの状態を表示できます。
 
 1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com/) ナビゲーションにある **[データ コネクタ** ] に移動してクリックします。
 

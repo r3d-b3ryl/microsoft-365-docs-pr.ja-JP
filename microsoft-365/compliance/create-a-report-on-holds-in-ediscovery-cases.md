@@ -19,25 +19,25 @@ search.appverid:
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
-description: 電子情報開示ケースに関連付けられているすべてのホールドに関する情報を含むレポートを生成する方法について説明します。
-ms.openlocfilehash: 568d4fa351879d271004d0f0749881f3de4b4a49
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 電子情報開示ケースに関連付けられているすべての保留に関する情報を含むレポートを生成する方法について説明します。
+ms.openlocfilehash: b0460b725359e2953c0a27b517a362327ae504f5
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319477"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946465"
 ---
-# <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>スクリプトを使用して電子情報開示ケースの保留リストレポートを作成する
+# <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースで保留に関するレポートを作成するスクリプトを使用する
 
-この記事のスクリプトを使用すると、電子情報開示管理者と電子情報開示管理者は、Microsoft 365 コンプライアンス センター のコア ケースおよび Advanced eDiscovery ケースに関連付けられているすべてのホールドに関する情報を含むレポートを生成できます。 レポートには、保留リストに関連付けられているケースの名前、保留にされるコンテンツの場所、保留リストがクエリ ベースかどうかなどの情報が含まれる。 保持がないケースがある場合、スクリプトは保留のないケースの一覧を含む追加のレポートを作成します。
+この記事のスクリプトを使用すると、電子情報開示管理者と電子情報開示マネージャーは、Microsoft Purview コンプライアンス ポータルで、Core ケースと電子情報開示 (プレミアム) ケースに関連付けられているすべての保留に関する情報を含むレポートを生成できます。 レポートには、保留が関連付けられているケースの名前、保留に配置されるコンテンツの場所、ホールドがクエリ ベースかどうかなどの情報が含まれています。 保留がない場合は、保留のないケースの一覧を含む追加のレポートがスクリプトによって作成されます。
 
-レポートに [含まれる情報の](#more-information) 詳細については、「詳細」セクションを参照してください。
+レポートに含まれる情報の詳細については、「 [詳細情報](#more-information) 」セクションを参照してください。
 
 ## <a name="admin-requirements-and-script-information"></a>管理者の要件とスクリプト情報
 
-- 組織内のすべての電子情報開示ケースに関するレポートを生成するには、組織内の電子情報開示管理者である必要があります。 電子情報開示マネージャーの場合、レポートにはアクセスできるケースに関する情報だけが含まれます。 電子情報開示のアクセス許可の詳細については、「Assign [eDiscovery permissions」を参照してください](assign-ediscovery-permissions.md)。
+- 組織内のすべての電子情報開示ケースに関するレポートを生成するには、組織内の電子情報開示管理者である必要があります。 電子情報開示マネージャーの場合、レポートには、アクセスできるケースに関する情報のみが含まれます。 電子情報開示のアクセス許可の詳細については、「電子情報開示アクセス [許可の割り当て](assign-ediscovery-permissions.md)」を参照してください。
 
-- この記事のスクリプトのエラー処理は最小限です。 主な目的は、組織内の電子情報開示ケースに関連付けられている保留リストに関するレポートをすばやく作成します。
+- この記事のスクリプトでは、エラー処理が最小限に抑えられています。 主な目的は、組織内の電子情報開示ケースに関連付けられている保留に関するレポートをすばやく作成することです。
 
 - このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。
 
@@ -45,11 +45,11 @@ ms.locfileid: "63319477"
 
 最初の手順は、組織のセキュリティ/コンプライアンス センターの PowerShell に接続することです。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
 
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>手順 2: スクリプトを実行して、電子情報開示ケースに関連付けられた保留を報告する
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>手順 2: 電子情報開示ケースに関連付けられている保留をレポートするスクリプトを実行する
 
-セキュリティ & コンプライアンス センター PowerShell に接続した後、次の手順では、組織内の電子情報開示ケースに関する情報を収集するスクリプトを作成して実行します。
+Security & Compliance Center PowerShell に接続したら、次の手順では、組織内の電子情報開示ケースに関する情報を収集するスクリプトを作成して実行します。
 
-1. 次のテキストを、Windows PowerShell ファイル名のサフィックスを使用して、.ps1 スクリプト ファイルに保存CaseHoldsReport.ps1。
+1. .ps1 のファイル名サフィックスを使用して、次のテキストをWindows PowerShell スクリプト ファイルに保存します。たとえば、CaseHoldsReport.ps1。
 
    ```powershell
    #script begin
@@ -105,7 +105,7 @@ ms.locfileid: "63319477"
    }
    #get information on the cases and pass values to the case report function
    " "
-   write-host "Gathering a list of Core eDiscovery cases and holds..."
+   write-host "Gathering a list of eDiscovery (Standard) cases and holds..."
    " "
    $edc =Get-ComplianceCase -ErrorAction SilentlyContinue
    foreach($cc in $edc)
@@ -136,7 +136,7 @@ ms.locfileid: "63319477"
    }
    #get information on the cases and pass values to the case report function
    " "
-   write-host "Gathering a list of Advanced eDiscovery cases and holds..."
+   write-host "Gathering a list of eDiscovery (Premium) cases and holds..."
    " "
    $edc =Get-ComplianceCase -CaseType Advanced -ErrorAction SilentlyContinue
    foreach($cc in $edc)
@@ -172,7 +172,7 @@ ms.locfileid: "63319477"
    #script end
    ```
 
-2. 手順 1 Windows PowerShell開いたセッションで、スクリプトを保存したフォルダーに移動します。
+2. 手順 1 で開いたWindows PowerShell セッションで、スクリプトを保存したフォルダーに移動します。
 
 3. スクリプトを実行します。例えば：
 
@@ -180,43 +180,43 @@ ms.locfileid: "63319477"
    .\CaseHoldsReport.ps1
    ```
 
-   スクリプトは、レポートを保存するターゲット フォルダーの入力を求めるメッセージを表示します。
+   スクリプトによって、レポートを保存するターゲット フォルダーを求めるメッセージが表示されます。
 
 4. レポートを保存するフォルダーの完全なパス名を入力し、Enter キーを押 **します**。
 
    > [!TIP]
-   > スクリプトが保存されているのと同じフォルダーにレポートを保存するには、ターゲット フォルダーの入力を求めるメッセージが表示されたら、ピリオド (".") を入力します。 スクリプトがあるフォルダー内のサブフォルダーにレポートを保存するには、サブフォルダーの名前を入力します。
+   > スクリプトが配置されているのと同じフォルダーにレポートを保存するには、ターゲット フォルダーの入力を求められたらピリオド (".".") を入力します。 スクリプトがあるフォルダー内のサブフォルダーにレポートを保存するには、サブフォルダーの名前を入力するだけです。
 
-   スクリプトは、組織内のすべての電子情報開示ケースに関する情報の収集を開始します。 スクリプトの実行中にレポート ファイルにアクセスしない。 スクリプトが完了すると、確認メッセージがセッションのWindows PowerShellされます。 このメッセージが表示された後、手順 4 で指定したフォルダー内のレポートにアクセスできます。 レポートのファイル名はです `CaseHoldsReport<DateTimeStamp>.csv`。
+   このスクリプトは、組織内のすべての電子情報開示ケースに関する情報の収集を開始します。 スクリプトの実行中は、レポート ファイルにアクセスしないでください。 スクリプトが完了すると、Windows PowerShell セッションに確認メッセージが表示されます。 このメッセージが表示されたら、手順 4. で指定したフォルダー内のレポートにアクセスできます。 レポートのファイル名は `CaseHoldsReport<DateTimeStamp>.csv`.
 
-   さらに、このスクリプトでは、保留リストを持つケースの一覧を含むレポートも作成されます。 このレポートのファイル名はです `CaseswithNoHolds<DateTimeStamp>.csv`。
+   さらに、このスクリプトでは、保留がないケースの一覧を含むレポートも作成されます。 このレポートのファイル名は `CaseswithNoHolds<DateTimeStamp>.csv`.
 
-   次に、スクリプトを実行する例CaseHoldsReport.ps1示します。
+   CaseHoldsReport.ps1 スクリプトを実行する例を次に示します。
 
-   ![スクリプトを実行した後のCaseHoldsReport.ps1。](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+   ![CaseHoldsReport.ps1 スクリプトを実行した後の出力。](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
-このケースには、この記事のスクリプトを実行するときに作成されたレポートが保持されます。各保留に関する次の情報が含まれます。 前に説明したように、組織内のすべての保留に関する情報を返す電子情報開示管理者である必要があります。 ケースホールドの詳細については、「電子情報開示ケース [」を参照してください](./get-started-core-ediscovery.md)。
+この記事のスクリプトを実行するときに作成されたケースには、各保留に関する次の情報が含まれています。 前述のように、組織内のすべての保留の情報を返すには、電子情報開示管理者である必要があります。 ケースホールドの詳細については、「 [電子情報開示ケース](./get-started-core-ediscovery.md)」を参照してください。
 
 - 保留リストの名前と、保留リストが関連付けられている電子情報開示ケースの名前。
 
-- 保留が Core ケースと関連付けられているか、またはケースAdvanced eDiscoveryかどうか。
+- 保留が Core ケースまたは電子情報開示 (プレミアム) ケースに関連付けられているかどうか。
 
-- 電子情報開示ケースがアクティブか閉じているか。
+- 電子情報開示ケースがアクティブかクローズか。
 
 - 保留が有効か無効かを指定します。
 
-- 保留リストが関連付けられている電子情報開示ケースのメンバー。 ケース メンバーは、割り当てられた電子情報開示のアクセス許可に応じて、ケースを表示または管理できます。
+- 保留リストが関連付けられている電子情報開示ケースのメンバー。 ケース メンバーは、割り当てられている電子情報開示のアクセス許可に応じて、ケースを表示または管理できます。
 
 - ケースが作成された日時。
 
-- ケースが閉じている場合、そのケースを閉じたユーザーと、そのケースを閉じた日時。
+- ケースが閉じられている場合は、そのケースを閉じたユーザーと、そのケースが閉じられた時刻と日付です。
 
-- 保留ExchangeメールボックスとSharePointサイトの場所を指定します。
+- 保留されているExchangeメールボックスとSharePoint サイトの場所。
 
-- 保留リストがクエリ ベースの場合、クエリ構文。
+- 保留がクエリ ベースの場合は、クエリ構文です。
 
-- 保留が作成された日時と、保持を作成したユーザー。
+- 保留が作成された日時と、それを作成したユーザー。
 
-- 保留が最後に変更された日時と、その保持を変更したユーザー。
+- 保留が最後に変更された日時と、それを変更したユーザー。

@@ -46,7 +46,7 @@
       href: ../enterprise/index.yml
     - name: Microsoft 365 for business
       href: ./index.yml
-    - name: Microsoft 365 コンプライアンス
+    - name: Microsoft Purview
       href: ../compliance/index.yml
     - name: Office ドキュメントでアクティブなコンテンツを管理する
       href: active-content-in-trusted-docs.md
