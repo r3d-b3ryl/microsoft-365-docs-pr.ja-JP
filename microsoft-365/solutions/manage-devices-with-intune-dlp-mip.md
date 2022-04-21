@@ -21,19 +21,19 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: 情報保護とガバナンス チームと協力して組織の DLP ポリシーを作成することで、エンドポイント DLP を実装します。
-ms.openlocfilehash: ab0be14f0a20f35044489e7f3ad0ba3f60180bcd
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 3670dd7e204562d2974ae815babe541c608bfacf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705195"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943219"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>手順 7.情報保護機能を使用してデータ損失防止 (DLP) を実装する
 
 
-組織で Microsoft 365 情報保護を使用していて、データの理解、データ機密性スキーマの開発、およびスキーマの適用に時間を費やしている場合は、データ損失防止 (DLP) ポリシーを使用して、このスキーマの要素をエンドポイントに拡張する準備ができている可能性があります。 
+組織がすでにデータの理解、データ機密性スキーマの開発、およびスキーマの適用に時間を費やしている場合は、Microsoft Purview データ損失防止 (DLP) ポリシーを使用して、このスキーマの要素をエンドポイントに拡張する準備ができている可能性があります。 
 
-Microsoft Endpoint データ損失防止 (Endpoint DLP) は現在、次の対象に適用されます。
+エンドポイントのデータ損失防止 (Endpoint DLP) は現在、次の対象に適用されます。
 - Windows 10、Windows 11
 - macOS
 
@@ -53,6 +53,6 @@ DLP ポリシーは、Exchange メールや SharePoint サイトなど、ポリ�
 
 |手順  |説明  |
 |---------|---------|
-|1     |  [Microsoft 365 のエンドポイントのデータ損失防止について説明する](../compliance/endpoint-dlp-learn-about.md)。        |
-|2     | エンドポイント DLP のデバイスをオンボードします。 デバイスを Microsoft Defender for Endpoint にオンボーディングした場合、デバイスは、Endpoint DLP を含む Microsoft 365 コンプライアンスに既にオンボーディングされています。 デバイスが Defender for Endpoint にオンボードされていない場合の手順については、「[エンドポイントのデータ損失防止の開始](../compliance/endpoint-dlp-getting-started.md)」を参照してください。 オンボーディングのしくみの詳細については、「[デバイスの登録とデバイスのオンボーディング](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices)」を参照してください|
+|1     |  [エンドポイントのデータ損失防止について](../compliance/endpoint-dlp-learn-about.md)。        |
+|2     | エンドポイント DLP のデバイスを有効にします。 デバイスを Microsoft Defender for Endpoint にオンボードした場合、デバイスはエンドポイント DLP に対して既に有効になっています。 デバイスが Defender for Endpoint にオンボードされていない場合の手順については、「[エンドポイントのデータ損失防止の開始](../compliance/endpoint-dlp-getting-started.md)」を参照してください。|
 |3     |   情報保護とガバナンス チームと一緒に、ポリシーの定義、テスト、調整を行います。 これには、結果の監視が含まれます。 次のリソースを参照してください。<br>- [エンドポイントデータ損失防止の使用](../compliance/endpoint-dlp-using.md)<br>- [データ損失防止のレポートを表示する](../compliance/view-the-dlp-reports.md)      |

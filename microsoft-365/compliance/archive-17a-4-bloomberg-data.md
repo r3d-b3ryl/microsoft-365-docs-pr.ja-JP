@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Bloomberg DataParser コネクタを設定して使用して、Microsoft 365で Bloomberg データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 59fa3d24fd8493dfa6f564d5acd721421d124114
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7160d55a7870f636b7d45f6d87e0254507dd58e9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940997"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998410"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-data"></a>Bloomberg データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 17a-4 LLC の [Bloomberg DataParser を](https://www.17a-4.com/Bloomberg-dataparser/)使用して、Bloomberg からMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された Bloomberg コネクタが含まれています。 Bloomberg DataParser コネクタは、Bloomberg データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

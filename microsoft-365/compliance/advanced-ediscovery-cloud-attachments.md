@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview 電子情報開示 (プレミアム) のコレクションを使用して、調査またはケースでレビューするクラウド添付ファイルを収集します。
-ms.openlocfilehash: 0a0d3dab3942dbdfcfa896d8e2f59fd2e2dca813
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1dd48f343f9df43edf8553e73395d756eb6713a4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935722"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000710"
 ---
 # <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium-preview"></a>Microsoft Purview 電子情報開示 (プレミアム) でクラウド添付ファイルを収集する (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 クラウド添付ファイルは、通常、SharePoint サイトとOneDriveに格納されるドキュメントへのリンクです。 そのため、電子メール メッセージまたはTeamsチャット会話にドキュメントの実際のコピーを添付する代わりに、ファイルへのリンクを共有することもできます。 クラウド添付ファイルは、ドキュメントを共有し、組織内の他のユーザーと共同作業する効果的な方法です。 ただし、クラウド添付ファイルは電子情報開示ワークフロー中に課題を提示します。これは、共有ドキュメント内の実際のコンテンツではなく、クラウド添付ファイルリンクのみが電子情報開示検索で返されるためです。 この課題に対処するために、電子情報開示 (プレミアム) には、クラウド添付ファイルを収集するための 2 つのソリューションが用意されています。  
 

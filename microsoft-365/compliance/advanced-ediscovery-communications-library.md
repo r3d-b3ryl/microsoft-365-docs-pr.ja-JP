@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) でカストディアン通信テンプレート (保留通知用のテンプレートなど) を追加して、組織内の任意のケースで使用できるようにします。
-ms.openlocfilehash: be8311a9687eb4edb9cc44e15264808a2a05a69a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9ac944a3d845a770e35a84adcdc2f1f1dbefd172
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945155"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000600"
 ---
 # <a name="manage-custodian-communications-templates-in-ediscovery-premium"></a>電子情報開示でカストディアン通信テンプレートを管理する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ユーザーまたは他のユーザーが保留通知またはその他の種類のカストディアン通信を作成する場合は、電子情報開示 (プレミアム) ケースの [通信] タブの通信エディターを使用して **、** 通信ドキュメントを最初から作成する必要がありました。 これで、組織内の任意のケースで通信を作成するために使用できる通信テンプレートを作成できる新しい機能がリリースされました。 通信テンプレートを作成した後は、ケースで使用できます。 つまり、paralegals やカストディアン通信を作成する他のユーザーは、通知を作成するために最初から開始する必要はありません。 代わりに、テンプレートを選択して、カストディアンに送信される通知を作成できます。
 

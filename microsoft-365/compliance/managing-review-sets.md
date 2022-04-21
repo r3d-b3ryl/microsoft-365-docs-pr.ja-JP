@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) ケースでデータを分析、クエリ、表示、タグ付け、エクスポートできるように、レビュー セットを管理する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 60e43d4d4983dd5171ed38f26096fba979c0f98c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 64970cb3302c47dbab394b974bf1df8358ad3755
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935590"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999051"
 ---
 # <a name="manage-review-sets-in-ediscovery-premium"></a>電子情報開示でレビュー セットを管理する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 レビュー セットは、ケースのデータを分析、クエリ、表示、確認、タグ付け、エクスポートできるドキュメントの静的セットです。 これらのタスクの実行の詳細については、次を参照してください。
 
@@ -59,4 +61,4 @@ ms.locfileid: "64935590"
 3. [別のレビュー セットからレビュー セットにデータを追加](add-data-to-review-set-from-another-review-set.md)
 
 > [!NOTE]
-> レビュー セットからアイテムを削除することはできません。また、ケースからレビュー セットを削除することはできません。 レビュー セットを削除し、その中のデータを削除するには、レビュー セットが配置されている電子情報開示 (プレミアム) ケースを削除する必要があります。 詳細については、「[電子情報開示 (プレミアム) ケースを閉じるか削除する](close-or-delete-case.md)」を参照してください。
+> レビュー セットからアイテムを削除することはできません。また、ケースからレビュー セットを削除することはできません。 レビュー セットを削除し、その中のデータを削除するには、レビュー セットが配置されている電子情報開示 (プレミアム) ケースを削除する必要があります。 詳細については、「[Close or delete an eDiscovery (Premium) case (電子情報開示 (プレミアム) ケースを閉じるか、または削除する)](close-or-delete-case.md)」を参照してください。

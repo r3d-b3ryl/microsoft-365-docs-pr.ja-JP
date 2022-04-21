@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365でクラウドベースのアプリによって生成されたコンテンツは、ユーザーのExchange Onlineメールボックスに格納または関連付けられます。 このコンテンツは、Microsoft 電子情報開示ツールを使用して検索できます。
-ms.openlocfilehash: b37295783883d689acc34dbff88e5a94186eb4a6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b5e8434f5345cda8ef4f637b3dff2d3cf704f748
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947849"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000798"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>電子情報開示のExchange Onlineメールボックスに格納されているコンテンツ
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Exchange Onlineのメールボックスは、主に、メッセージ、予定表アイテム、タスク、メモなどの電子メール関連アイテムを格納するために使用されます。 しかし、クラウド ベースのアプリがユーザーのメールボックスにデータを格納するにつれて、これは変化しています。 メールボックスにデータを格納する利点の 1 つは、コンテンツ検索、Microsoft Purview 電子情報開示 (Standard)、および Microsoft Purview 電子情報開示 (プレミアム) で検索ツールを使用して、これらのクラウドベースのアプリからデータを検索、表示、エクスポートできることです。 これらのアプリの一部のデータは、メールボックス内の非対人メッセージ (非 IPM) サブツリーにある非表示フォルダーに格納されます。 他のクラウドベースのアプリのデータはメールボックス _に_ 格納されていない可能性がありますが、メールボックス _に関連付けられている_ ため、検索で返されます (そのデータが検索クエリと一致する場合)。 クラウドベースのデータがユーザー メールボックスに格納されているか、ユーザー メールボックスに関連付けられているかに関係なく、通常、ユーザーがメールボックスを開いたときに、そのデータは電子メール クライアントに表示されません。
 

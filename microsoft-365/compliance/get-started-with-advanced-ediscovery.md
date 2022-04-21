@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、ケースの作成と管理を開始できるように電子情報開示 (プレミアム) を設定する方法について説明します。 また、必要な Microsoft サブスクリプションとライセンスについても説明します。 いくつかの簡単な手順を完了すると、電子情報開示 (プレミアム) ツールを使用できるようになります。
-ms.openlocfilehash: 29805066c2db26aca6992dc34ad8bf8c0966ceb7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dff99ab432ce5f2380a6fd5a81e855c946146c8c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939919"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997716"
 ---
 # <a name="set-up-microsoft-purview-ediscovery-premium"></a>Microsoft Purview 電子情報開示を設定する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) は、組織の内部および外部の調査に対応するデータを保持、収集、レビュー、分析、エクスポートするためのエンドツーエンドのワークフローを提供します。 電子情報開示 (プレミアム) を展開するには何も必要ありませんが、組織が電子情報開示 (プレミアム) ケースを作成して使用し、調査を管理する前に、IT 管理者と電子情報開示マネージャーが完了する必要がある前提条件がいくつかあります。
 

@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Microsoft コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用すると、さまざまな Microsoft 365 サービスでコンテンツを検索できます。
-ms.openlocfilehash: 374a9ce119c0e4563c14ae4eda15ce562dc8643d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f5d8a398f36c1ab3c0f83234718346e8dd20434e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938381"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994508"
 ---
 # <a name="create-a-content-search"></a>コンテンツ検索の作成
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルのコンテンツ検索電子情報開示ツールを使用して、組織の電子メール、文書、インスタント メッセージングの会話などの内部コンテンツを検索できます。このツールを使用すると、以下のクラウドベースの Microsoft 365 データ ソース内のコンテンツを検索できます。
   

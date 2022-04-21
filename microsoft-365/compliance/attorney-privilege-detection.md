@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft Purview 電子情報開示 (プレミアム) ケースのコンテンツを確認するときに、特権コンテンツの機械学習ベースの検出を使用するには、弁護士クライアント特権検出モデルを使用します。
-ms.openlocfilehash: ce5cabad4a5487f6e18c1054f5c4d143bac4325e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 477b741cf617179ffd9eb1a4c38230faf5a0fce0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947167"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997298"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>電子情報開示 (プレミアム) で弁護士とクライアントの特権の検出を設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示プロセスのレビュー フェーズの主でコストのかかる側面は、特権コンテンツのドキュメントを確認することです。 Microsoft Purview 電子情報開示 (プレミアム) は、このプロセスをより効率的にするために、特権コンテンツの機械学習ベースの検出を提供します。 この機能は、 *弁護士とクライアントの特権の検出* と呼ばれます。
 

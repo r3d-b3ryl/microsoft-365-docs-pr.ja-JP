@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a5029ad6de3de33eacdf814729ed2eafcd2cf89
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6992af4483bedfe418610b752d2195a8d22f30d3
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941679"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974325"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -51,7 +51,6 @@ ms.locfileid: "64941679"
 - [悪意のあるメールなどを調査する](#more-ways-to-use-explorer-and-real-time-detections)
 
 ## <a name="improvements-to-threat-hunting-experience"></a>脅威ハンティング エクスペリエンスの改善
-
 
 ### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>エクスプローラー/リアルタイム検出内でのDefender for Office 365アラートのアラート ID の概要
 
@@ -206,7 +205,7 @@ URL のクリックポップアップにもタグ情報が表示されます。 
 
 - URL ポップアップの **[クリック** ] セクションに、完全にクリックされた URL (URL の一部であるクエリ パラメーターを含む) を表示します。 現在、URL ドメインとパスはタイトル バーに表示されます。 その情報を拡張して、完全な URL を表示します。
 
-- URL フィルター間の修正 (*URL* と *URL ドメインと URL ドメイン**とパス*): 更新プログラムは、URL/クリックの判定を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートを有効にしたので、URL を使用 `http`せずに検索できます。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 例:
+- URL フィルター間の修正 (*URL* と *URL ドメインと URL ドメイン**とパス*): 更新プログラムは、URL/クリックの判定を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートを有効にしたので、URL を使用 `http`せずに検索できます。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 次に例を示します。
   - **URL**、**URL ドメイン**、URL **ドメイン、およびパス** フィルター フィールドでプレフィックスの有無にかかわらず`http://`検索します。 検索には同じ結果が表示されます。
   - URL でプレフィックスを `https://` 検索 **します**。 値が指定されていない場合、 `http://` プレフィックスが想定されます。
   - `/` は、 **URL パス**、 **URL ドメイン、URL ドメイン**、パス フィールドの先頭 **と** 末尾で無視されます。 `/`**URL** フィールドの末尾では無視されます。

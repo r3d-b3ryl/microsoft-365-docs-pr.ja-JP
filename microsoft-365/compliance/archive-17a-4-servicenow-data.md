@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 ServiceNow DataParser コネクタを設定して使用して、Microsoft 365で ServiceNow データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 4120b54225bc8af6542f4936a9af3bcc4b982e02
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: de899dff29f91002259701b79b3ae6119fa1df66
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937739"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997562"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>ServiceNow からデータをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [ServiceNow DataParser](https://www.17a-4.com/dataparser/) を 17a-4 LLC から使用して、ServiceNow からMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された ServiceNow コネクタが含まれています。 ServiceNow DataParser コネクタは、ServiceNow データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

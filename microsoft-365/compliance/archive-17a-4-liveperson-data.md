@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 LivePerson Conversational Cloud DataParser コネクタを設定して使用して、Microsoft 365に LivePerson Conversational Cloud データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: a2d439f581be5f08ff5695dd25962d010537aaaf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 215818fec6dc186e20e19fcf247193a0616676eb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945045"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998096"
 ---
 # <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data"></a>LivePerson Conversational Cloud データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 17a-4 LLC の [LivePerson Conversational Cloud DataParser を](https://www.17a-4.com/liveperson-dataparser/)使用して、LivePerson Conversational Cloud からMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された LivePerson Conversational Cloud コネクタが含まれています。 LivePerson Conversational Cloud DataParser コネクタは、データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

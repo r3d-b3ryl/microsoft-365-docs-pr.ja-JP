@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) ケースでカストディアンの一覧を表示、編集、一括編集する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 905773ac500a394b4a2394eb221e23a51a5c197e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2ab30e1343acd4718f80f816abc6ef850acf7215
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942493"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996836"
 ---
 # <a name="manage-custodians-in-an-ediscovery-premium-case"></a>電子情報開示 (プレミアム) ケースでカストディアンを管理する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) ケースの [**データ ソース**] タブの [**カストディアン**] ページには、ケースに追加されたすべてのカストディアンの一覧が含まれています。 ケースにカストディアンを追加すると、各カストディアンに関する詳細が自動的にAzure Active Directoryから収集され、電子情報開示 (プレミアム) で表示されます。
 

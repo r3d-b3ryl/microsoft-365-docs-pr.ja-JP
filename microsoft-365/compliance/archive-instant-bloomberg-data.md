@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がデータ コネクタを設定して使用して、Instant Bloomberg チャット ツールからMicrosoft 365にデータをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 3729c36df27e6def709dc5d2c976885c3db5a518
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 22b581c332e8accad567bb7eb8b29e57ec981044
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938667"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998134"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルのネイティブ コネクタを使用して、 [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) コラボレーション ツールから金融サービス チャット データをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の Bloomberg セキュリティで保護された FTP サイト (SFTP) に毎日 1 回接続され、チャット メッセージのコンテンツが電子メール メッセージ形式に変換され、それらのアイテムがMicrosoft 365のメールボックスにインポートされます。
 

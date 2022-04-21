@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview で電子情報開示 (Standard) の使用を開始する方法について説明します。 電子情報開示のアクセス許可を割り当ててケースを作成したら、メンバーを追加し、電子情報開示保留を作成し、調査に関連するコンテンツを検索してエクスポートできます。
-ms.openlocfilehash: bf49ebd886a85005166f07b1a3d6c97e10412e20
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 90470d0128fd15bf295b1c8fa2cd15ef6d5cc384
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934733"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994152"
 ---
 # <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Microsoft Purview での電子情報開示 (Standard) を使用した概要
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview の Microsoft Purview 電子情報開示 (Standard) は、組織がMicrosoft 365およびOffice 365でコンテンツを検索およびエクスポートするために使用できる基本的な電子情報開示ツールを提供します。 電子情報開示 (Standard) を使用して、Exchange メールボックス、SharePoint サイト、OneDrive アカウント、Microsoft Teamsなどのコンテンツの場所に電子情報開示ホールドを配置することもできます。 電子情報開示 (Standard) を展開するには何も必要ありませんが、組織が電子情報開示 (Standard) を使用してコンテンツの検索、エクスポート、および保持を開始する前に、IT 管理者と電子情報開示マネージャーが完了する必要がある前提条件がいくつかあります。
 
@@ -142,7 +144,7 @@ Microsoft Purview の Microsoft Purview 電子情報開示 (Standard) は、組�
 
 ## <a name="explore-the-ediscovery-standard-workflow"></a>電子情報開示 (Standard) ワークフローを調べる
 
-コア電子情報開示の使用を開始するには、関心のあるユーザー向けの電子情報開示ホールドを作成し、調査に関連するコンテンツを検索し、そのデータをエクスポートして詳細を確認する簡単なワークフローを次に示します。 これらの各手順では、探索できる拡張電子情報開示 (Standard) 機能についても説明します。
+電子情報開示 (Standard) の使用を開始するには、関心のあるユーザーの電子情報開示ホールドを作成し、調査に関連するコンテンツを検索し、そのデータをエクスポートしてそのデータをエクスポートして詳細を確認する簡単なワークフローを次に示します。 これらの各手順では、探索できる拡張電子情報開示 (Standard) 機能についても説明します。
 
 ![電子情報開示 (Standard) ワークフロー。](../media/CoreEdiscoveryWorkflow.png)
 

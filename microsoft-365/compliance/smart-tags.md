@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: スマート タグを使用すると、電子情報開示 (プレミアム) ケースでコンテンツを確認するときに機械学習機能を適用できます。 スマート タグ グループを使用して、弁護士とクライアントの特権モデルなどの機械学習検出モデルの結果を表示します。
-ms.openlocfilehash: 9fd4a53df00bcb096a885ed311e4fb4ed365725e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1adea2404192b9e715ad021f70ba07f7e64a89d5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934623"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999742"
 ---
 # <a name="set-up-smart-tags-in-ediscovery-premium"></a>電子情報開示でスマート タグを設定する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) の機械学習 (ML) 機能は、レビュー セット内のケース ドキュメントをレビューするときに、意思決定プロセスの効率を高めるのに役立ちます。 スマート タグは、ML機能を、レビュー中にドキュメントにタグを付ける場合に、決定が記録される場所に移動する方法です。 スマート タグ グループを作成すると、スマート タグ グループに関連付けたML モデルの結果である決定事項が、タグ グループ内のタグとインラインで表示されます。 これにより、特定のドキュメントを確認するときにML結果情報がインラインで表示されます。
 

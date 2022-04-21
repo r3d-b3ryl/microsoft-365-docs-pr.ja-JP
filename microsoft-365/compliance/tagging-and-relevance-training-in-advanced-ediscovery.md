@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: 電子情報開示 (プレミアム) の関連性トレーニング ステージで、40 個のファイルのトレーニング サンプルにタグを付けて操作する手順について説明します。
-ms.openlocfilehash: 9744fd06548b4a0956db63cf200bc0a443deed9e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9078bf36e1434cad0362c4584b5c61fd49e86c14
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935568"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996682"
 ---
 # <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>電子情報開示でのタグ付けと関連性のトレーニング (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 この記事では、Microsoft Purview 電子情報開示 (プレミアム) の関連性トレーニング モジュールを操作する手順について説明します。
   

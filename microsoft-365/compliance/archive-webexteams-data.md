@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Microsoft 365で Veritas の Webex Teams コネクタからデータをインポートおよびアーカイブするコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 1aa1a0ddd94aa2308c4884921138b12b0c152bab
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6b879e62d2c94d9b61c47674be364927ea9dc1cc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942867"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999324"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Webex Teams データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、Webex TeamsからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には[、Webex Teams](https://globanet.com/webex-teams/)通信項目をキャプチャしてMicrosoft 365にインポートするように構成された Webex Teams コネクタが用意されています。 コネクタは、Webex Teamsからのコンテンツ (1 対 1 チャット、グループ会話、チャネル会話、組織の Webex Teams アカウントからの添付ファイルなど) をメール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザーのメールボックスにインポートします。
 

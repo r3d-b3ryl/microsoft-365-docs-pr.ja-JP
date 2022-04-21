@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、MS SQL Databaseからデータをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
-ms.openlocfilehash: d1c33a57fbbf9fba5a097b0affbb7e5fcea21a55
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0da93ade15c8cf5ddf758f16da89b46553fb3c83
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937215"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997508"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>MS SQL Databaseからデータをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、MS SQL DatabaseからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には、XML 構成ファイルを使用してデータベースから項目をキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された MS SQL Database Importer コネクタが用意されています。 コネクタは、MS SQL Databaseから電子メール メッセージ形式にコンテンツを変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

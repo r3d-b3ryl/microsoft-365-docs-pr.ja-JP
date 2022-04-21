@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: コンテンツ検索とこの記事のスクリプトを使用して、メールボックスとOneDrive for Businessサイトでユーザー グループを検索します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14c518c4450b01e387f84b4211da8d0eb346fe7a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1bbfc26c2193c1bf31e081b8ded9e2e2baf56743
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949269"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998818"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーのリストを探す
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Security & Compliance Center PowerShell には、時間のかかる電子情報開示関連のタスクを自動化できるコマンドレットが多数用意されています。 現在、Microsoft Purview コンプライアンス ポータルでコンテンツ検索を作成して多数のカストディアン コンテンツの場所を検索するには、時間と準備が必要です。 検索を作成する前に、各OneDrive for Business サイトの URL を収集し、各メールボックスとOneDrive for Business サイトを検索に追加する必要があります。 今後のリリースでは、コンプライアンス ポータルで行う方が簡単になります。 それまでは、この記事のスクリプトを使用して、このプロセスを自動化できます。 このスクリプトでは、組織の MySite ドメインの名前 (URL `https://contoso-my.sharepoint.com`内の **contoso** など)、ユーザーの電子メール アドレスの一覧、新しいコンテンツ検索の名前、使用する検索クエリの入力を求めるメッセージが表示されます。 スクリプトは、リスト内の各ユーザーのOneDrive for Business URL を取得し、指定した検索クエリを使用して、メールボックスとOneDrive for Business サイトを検索するコンテンツ検索を作成して開始します。
   

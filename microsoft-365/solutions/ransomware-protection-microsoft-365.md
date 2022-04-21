@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: ランサムウェア攻撃から Microsoft 365 リソースを保護する手順を説明します。
-ms.openlocfilehash: c356a0e3fac83c77a7e1eb1eda6e169405f43863
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fde24132341512d76467284cb2f9c9b11b7d88cc
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324411"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943241"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Microsoft 365 テナントにランサムウェア保護を展開する
 
@@ -107,7 +107,7 @@ OneDrive のファイルと SharePoint のファイルについては、大量�
 
 次の方法で、ランサムウェア攻撃者がテナント外でファイルをコピーするのを防ぐことが可能です。
 
-- [データ損失防止 (DLP) ](/microsoft-365/compliance/dlp-learn-about-dlp)ポリシー
+- [Microsoft Purview データ損失防止 (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) ポリシー
 
     データの危険な共有、偶発的な共有、不適切な共有を検出し、警告し、ブロックします。
 
@@ -206,7 +206,7 @@ Windows 11 または 10 デバイス用:
 | 機能 | 説明 | 役立ちます... | ライセンス |
 |:-------|:-----|:-------|:-------|
 | コントロールされたフォルダー アクセス | 既知の信頼できるアプリの一覧に対してアプリをチェックしてデータを保護します。 | ファイルがランサムウェアによって変更または暗号化されないようにします。 | Microsoft 365 E3 または Microsoft 365 E5 |
-| Microsoft Information Protection | 身代金要求の対象となっている情報に対して、秘密度ラベルの適用が可能 | 流出した情報の使用を防ぎます。 | Microsoft 365 E3 または Microsoft 365 E5 |
+| Microsoft Purview Information Protection | 身代金要求の対象となっている情報に対して、秘密度ラベルの適用が可能 | 流出した情報の使用を防ぎます。 | Microsoft 365 E3 または Microsoft 365 E5 |
 | データ損失防止 (DLP) | 機密データを保護し、ユーザーによる不適切な共有を防止することでリスクを軽減します。 | データ流出を防止する | Microsoft 365 E3 または Microsoft 365 E5 |
 | Defender for Cloud Apps | 検出、調査、ガバナンスのためのクラウド アクセス セキュリティ ブローカー。 | 横方向の動きを検出し、データ流出を防ぎます。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
 |

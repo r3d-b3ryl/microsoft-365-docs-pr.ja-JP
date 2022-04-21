@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: PST ファイルをMicrosoft 365にインポートするときに、Microsoft 365 インポート サービスのインテリジェント インポート機能を使用してデータをフィルター処理する方法について説明します。
-ms.openlocfilehash: 2b948352a3aff64dc06486a8380b9c81f7f5c020
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dc60baf45be97e438875e0b045d9e8f3b6208d3f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948597"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997914"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>PST ファイルをインポートするときに、データをフィルター処理する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 インポート サービスの新しいインテリジェント インポート機能を使用して、ターゲット メールボックスに実際にインポートされる PST ファイル内のアイテムをフィルター処理します。 次に、動作のしくみを示します。
   
@@ -115,7 +117,7 @@ PST インポート ジョブを作成したら、次の手順に従ってデー
   
     ![データ分析情報は、フィルター設定に基づいて更新されます。](../media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. **[次へ]** をクリックします。
+    d. [**次へ**] をクリックします。
   
     フィルター設定を示す状態ページが表示されます。 ここでも、任意のフィルター設定を編集できます。
   

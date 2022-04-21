@@ -21,14 +21,16 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからMicrosoft 365メールボックスにサード パーティのデータをインポートしてアーカイブする方法について説明します。
-ms.openlocfilehash: 0588ab242f2d198c486b7ce0318939e204076421
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 820c4e2fb92720940a8b4f207d43aea649ef16e7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934953"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997254"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>サード パーティ データのコネクタの詳細
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365管理者は、データ コネクタを使用して、Microsoft 以外のサード パーティのデータをソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームから、Microsoft 365組織内のメールボックスにインポートおよびアーカイブできます。 データ コネクタを使用してMicrosoft 365でサード パーティのデータをインポートおよびアーカイブする主な利点の 1 つは、インポート後にさまざまな Microsoft Purview ソリューションをデータに適用できる点です。 これにより、組織の Microsoft 以外のデータが、組織に影響を与える規制と標準に準拠していることを確認できます。
 
@@ -271,35 +273,35 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|CellTrust| はい | いいえ | いいえ |
-|MS SQL 上の Cisco Jabber| はい | いいえ | いいえ |
-|Oracle 上の Cisco Jabber| はい | いいえ | いいえ |
-|PostgreSQL 上の Cisco Jabber| はい | いいえ | いいえ |
-|EML| はい | いいえ | いいえ |
-|FX 接続| はい | いいえ | いいえ |
-|Jive| はい | いいえ | いいえ |
-|MS SQL Database| はい | いいえ | いいえ |
-|ピボット| はい | いいえ | いいえ |
-|Redtail Speak| はい | いいえ | いいえ |
-|Reuters Dealing| はい | いいえ | いいえ |
-|Reuters Eikon| はい | いいえ | いいえ |
-|Reuters FX| はい | いいえ | いいえ |
-|RingCentral| はい | いいえ | いいえ |
-|Salesforce Chatter| はい | いいえ | いいえ |
-|ServiceNow| はい | いいえ | いいえ |
-|Skype for Business| はい | いいえ | いいえ |
-|Slack eDiscovery| はい | いいえ | いいえ |
-|Symphony| はい | いいえ | いいえ |
-|区切られたテキスト| はい | いいえ | いいえ |
-|Twitter| はい | いいえ | いいえ |
-|Webex チーム| はい | いいえ | いいえ |
-|Web ページ| はい | いいえ | いいえ |
-|Facebookからの職場| はい | いいえ | いいえ |
-|XIP| はい | いいえ | いいえ |
-|XSLT/XML| はい | いいえ | いいえ |
-|Yieldbroker| はい | いいえ | いいえ |
-|YouTube| いいえ | いいえ | いいえ |
-|Zoom会議| はい | いいえ | いいえ |
+|CellTrust| はい | 不要 | 不要 |
+|MS SQL 上の Cisco Jabber| はい | 不要 | 不要 |
+|Oracle 上の Cisco Jabber| はい | 不要 | 不要 |
+|PostgreSQL 上の Cisco Jabber| はい | 不要 | 不要 |
+|EML| はい | 不要 | 不要 |
+|FX 接続| はい | 不要 | 不要 |
+|Jive| はい | 不要 | 不要 |
+|MS SQL Database| はい | 不要 | 不要 |
+|ピボット| はい | 不要 | いいえ |
+|Redtail Speak| はい | 不要 | いいえ |
+|Reuters Dealing| はい | 不要 | いいえ |
+|Reuters Eikon| はい | 不要 | 不要 |
+|Reuters FX| はい | 不要 | 不要 |
+|RingCentral| はい | 不要 | 不要 |
+|Salesforce Chatter| はい | 不要 | 不要 |
+|ServiceNow| はい | 不要 | いいえ |
+|Skype for Business| はい | 不要 | いいえ |
+|Slack eDiscovery| はい | 不要 | いいえ |
+|Symphony| はい | 不要 | いいえ |
+|区切られたテキスト| はい | 不要 | 不要 |
+|Twitter| はい | 不要 | いいえ |
+|Webex チーム| はい | 不要 | いいえ |
+|Web ページ| はい | 不要 | いいえ |
+|Facebookからの職場| はい | 不要 | いいえ |
+|XIP| はい | 不要 | いいえ |
+|XSLT/XML| はい | 不要 | いいえ |
+|Yieldbroker| はい | 不要 | いいえ |
+|YouTube| 不要 | いいえ | いいえ |
+|Zoom会議| はい | 不要 | 不要 |
 |||||
 
 ### <a name="telemessage-data-connectors-in-the-us-government-cloud"></a>米国政府クラウドの TeleMessage データ コネクタ
@@ -311,44 +313,44 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
 |Enterprise Number Archiver | はい | いいえ | いいえ |
 |O2 SMS および Voice Network Archiver | はい         | いいえ | いいえ |
-|Rogers Network Archiver | はい         | いいえ | いいえ |
-|Signal Archiver | はい | いいえ | いいえ |
-|Telegram Archiver | はい | いいえ | いいえ |
-|TELUS SMS Network Archiver | はい | いいえ | いいえ |
-|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|WeChat Archiver | はい | いいえ | いいえ |
-|WhatsApp Archiver | はい | いいえ | いいえ |
+|Rogers Network Archiver | はい         | いいえ | 不要 |
+|Signal Archiver | はい | 不要 | 不要 |
+|Telegram Archiver | はい | 不要 | 不要 |
+|TELUS SMS Network Archiver | はい | 不要 | 不要 |
+|Verizon SMS/MMS Network Archiver | はい | 不要 | 不要 |
+|WeChat Archiver | はい | 不要 | いいえ |
+|WhatsApp Archiver | はい | 不要 | いいえ |
 |||||
 
 ### <a name="17a-4-data-connectors-in-the-us-government-cloud"></a>米国政府機関クラウドの 17a-4 データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|BlackBerry DataParser | はい | いいえ | いいえ |
-|Bloomberg DataParser  | はい | いいえ | いいえ |
-|Cisco Jabber DataParser  | はい | いいえ | いいえ |
-|Cisco Webex DataParser  | はい | いいえ | いいえ |
-|FactSet DataParser  | はい | いいえ | いいえ |
-|Fuze DataParser  | はい | いいえ | いいえ |
-|FX Connect DataParser  | はい | いいえ | いいえ |
-|ICE DataParser  | はい | いいえ | いいえ |
-|InvestEdge DataParser  | はい | いいえ | いいえ |
-|LivePerson Conversational Cloud DataParser  | はい | いいえ | いいえ |
-|Quip DataParser  | はい | いいえ | いいえ |
-|Refinitiv Eikon Messenger DataParser  | はい | いいえ | いいえ |
+|BlackBerry DataParser | はい | 不要 | いいえ |
+|Bloomberg DataParser  | はい | 不要 | いいえ |
+|Cisco Jabber DataParser  | はい | 不要 | 不要 |
+|Cisco Webex DataParser  | はい | 不要 | いいえ |
+|FactSet DataParser  | はい | 不要 | いいえ |
+|Fuze DataParser  | はい | 不要 | いいえ |
+|FX Connect DataParser  | はい | 不要 | いいえ |
+|ICE DataParser  | はい | 不要 | いいえ |
+|InvestEdge DataParser  | はい | 不要 | いいえ |
+|LivePerson Conversational Cloud DataParser  | はい | 不要 | いいえ |
+|Quip DataParser  | はい | 不要 | いいえ |
+|Refinitiv Eikon Messenger DataParser  | はい | 不要 | いいえ |
 |ServiceNow DataParser  | はい | いいえ | いいえ |
 |Skype for Business Server DataParser | はい | いいえ | いいえ |
 |Slack DataParser | はい | いいえ | いいえ |
 |SQL DataParser  | はい | いいえ | いいえ |
 |Symphony DataParser | はい | いいえ | いいえ |
-|Zoom DataParser | はい | いいえ | いいえ |
+|Zoom DataParser | はい | 不要 | 不要 |
 |||||
 
 ### <a name="celltrust-data-connectors-in-the-us-government-cloud"></a>米国政府クラウドの CellTrust データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|CellTrust SL2 | はい | いいえ | いいえ |
+|CellTrust SL2 | はい | 不要 | 不要 |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと協力してサード パーティのデータをアーカイブする

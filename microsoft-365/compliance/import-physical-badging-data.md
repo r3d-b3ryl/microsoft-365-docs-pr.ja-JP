@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: 管理者は、組織の物理的な不正使用システムからMicrosoft 365にデータをインポートするデータ コネクタを設定できます。 これにより、内部リスク管理ポリシーでこのデータを使用して、組織に対する内部脅威の可能性を示す可能性がある特定のユーザーによる物理的な建物へのアクセスを検出するのに役立ちます。
-ms.openlocfilehash: 7b6161cfc8f712082303641f9da7345edf5e24df
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a55874b9f920919c16a094d32c4edcde394600d4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937941"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994878"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>物理的な不正なデータをインポートするようにコネクタを設定する (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルでデータ コネクタを設定して、従業員の生の物理アクセス イベントや、組織の不正プログラム システムによって生成された物理アクセス アラームなどの物理的な不正なデータをインポートできます。 物理的なアクセス ポイントの例として、建物への入り口、サーバー ルームまたはデータ センターへのエントリなどがあります。 物理的な不正使用データは、Microsoft 365[インサイダー リスク管理ソリューション](insider-risk-management.md)によって使用され、組織内の悪意のあるアクティビティやデータ盗難から組織を保護するのに役立ちます。
 

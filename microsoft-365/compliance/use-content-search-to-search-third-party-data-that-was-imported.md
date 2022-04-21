@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: コンテンツ検索電子情報開示ツールを使用して、クエリを作成してサード パーティのデータ ソースからMicrosoft 365内のメールボックスにインポートされたアイテムを検索します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29c033f7d31aca14b527aa6b7fd83d533a5875e7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9a6a7bcdf0cbd7f14e20cc8400e5d834dc7da0a1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939457"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000908"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>コンテンツ検索を使用して、カスタム パートナー コネクタによってインポートされたサード パーティのデータを検索する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの[コンテンツ検索電子情報開示ツール](content-search.md)を使用して、サード パーティのデータ ソースからMicrosoft 365のメールボックスにインポートされたアイテムを検索できます。 インポートされたすべてのサード パーティのデータ項目を検索するクエリを作成することも、特定のサード パーティのデータ項目を検索するクエリを作成することもできます。 また、クエリ ベースのアイテム保持ポリシーまたはクエリ ベースの電子情報開示ホールドを作成して、サード パーティのデータを保持することもできます。
   

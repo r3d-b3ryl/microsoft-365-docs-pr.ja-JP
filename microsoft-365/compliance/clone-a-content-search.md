@@ -18,14 +18,16 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: この記事の PowerShell スクリプトを使用して、Office 365またはMicrosoft 365のコンプライアンス センターで既存のコンテンツ検索をすばやく複製します。
-ms.openlocfilehash: 782620d3693f4659c135d2a52aa7062a490a7cd0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 82994bcc87b76efe21bb1c68877b2bb8a5926424
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940491"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998664"
 ---
 # <a name="clone-a-content-search"></a>コンテンツ検索をコピーする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 多くのメールボックスやSharePoint、OneDrive for Business サイトを検索するOffice 365またはMicrosoft 365のコンプライアンス センターでのコンテンツ検索の作成には時間がかかる場合があります。 URL を誤って入力すると、検索するサイトを指定すると、エラーが発生する可能性もあります。 これらの問題を回避するには、この記事のWindows PowerShell スクリプトを使用して、既存のコンテンツ検索をすばやく複製できます。 検索を複製すると、元の検索と同じプロパティ (コンテンツの場所や検索クエリなど) を含む新しい検索 (別の名前) が作成されます。 その後、キーワード クエリまたは日付範囲を変更して新しい検索を編集し、実行できます。
   

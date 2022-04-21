@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: cf6a74bbde2e32ae047f97a7198b7f263e91b048
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 75c3df32bb3103ad818524da0972567d3fd11cc8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862700"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000688"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Microsoft Defender for Business要件
 
@@ -53,7 +53,7 @@ ms.locfileid: "64862700"
 | ユーザー アカウント | ユーザー アカウントはMicrosoft 365 管理センターで作成されます ([https://admin.microsoft.com](https://admin.microsoft.com))<br/><br/>Microsoft 365 管理センターでライセンスが割り当てられているMicrosoft Defender for Business<br/><br/>このタスクのヘルプについては、「ユーザーの [追加とライセンスの割り当て](mdb-add-users.md)」を参照してください。 |
 | アクセス許可  | Microsoft Defender for Businessにサインアップするには、グローバル管理者である必要があります。<br/><br/>Microsoft 365 Defender ポータルにアクセスするには、Azure ADで次のいずれかの[ロール](mdb-roles-permissions.md)が割り当てられている必要があります。 <br/>- セキュリティ リーダー<br/>- セキュリティ管理者<br/>- グローバル管理者<br/><br/>詳細については、「[Microsoft Defender for Businessのロールとアクセス許可](mdb-roles-permissions.md)」を参照してください。 |
 | ブラウザー要件 | Microsoft Edgeまたは Google Chrome |
-| オペレーティング システム | Microsoft Defender for Business内のデバイスを管理するには、デバイスが次のいずれかのオペレーティング システムを実行している必要があります。 <br/>- Windows 10 Business 以降 <br/>- Windows 10 Professional 以降 <br/>- Windows 10 Enterprise 以降 <br/><br/>[KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) がインストールされていることを確認します。 <br/><br/>Microsoft Intune (またはMicrosoft エンドポイント マネージャー) でデバイスを既に管理している場合は、それらのデバイスを Defender for Business にオンボードできます。<br/><br/>Windows Server 2012 R2 以降を実行しているエンドポイントをオンボードする機能は、現在プレビュー段階です。 |
+| オペレーティング システム | Microsoft Defender for Business内のデバイスを管理するには、デバイスが次のいずれかのオペレーティング システムを実行している必要があります。 <br/>- Windows 10 Business 以降 <br/>- Windows 10 Professional 以降 <br/>- Windows 10 Enterprise 以降 <br/>- macOS (最新の 3 つのリリースがサポートされています)<br/><br/>[KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) がインストールされていることを確認します。 <br/><br/>Microsoft Intune (またはMicrosoft エンドポイント マネージャー) でデバイスを既に管理している場合は、それらのデバイスを Defender for Business にオンボードできます。 |
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) は、ユーザーのアクセス許可とデバイス グループを管理するために使用されます。 Azure ADは Defender for Business サブスクリプションに含まれています。 

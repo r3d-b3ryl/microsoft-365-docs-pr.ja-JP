@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 電子情報開示 (プレミアム) で予測コーディング モデルを作成する方法について説明します。 これは、電子情報開示 (プレミアム) で機械学習機能を使用して、レビュー セット内の関連するコンテンツと関連性のないコンテンツを特定するのに役立つ最初の手順です。
-ms.openlocfilehash: 86fc72ae73faf25184c5b137a0e433af8125eb54
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f5636defbd4bc004a4732ff1d956f8b879daea2d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942273"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994042"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>予測コーディング モデルを作成する (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示 (プレミアム) で予測コーディングの機械学習機能を使用する最初の手順は、予測コーディング モデルを作成することです。 モデルを作成した後、レビュー セット内の関連するコンテンツと非関連コンテンツを識別するトレーニングを行うことができます。
 

@@ -18,14 +18,16 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: 評価ステージの概要と、Microsoft Purview 電子情報開示 (プレミアム) での関連性トレーニング中の問題の豊富さを決定する役割について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29376b8c71947b1f09bd86de90facef6f73e0fdd
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0fd7a4f23aa2f69dfa598faaa0c75df533356efc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943955"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001326"
 ---
 # <a name="assessment-in-the-relevance-module-in-ediscovery-premium"></a>電子情報開示の関連度モジュールの評価 (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Microsoft Purview 電子情報開示 (プレミアム) では、定義された問題やケースにインポートされたデータなどについて、早期評価が可能になります。 電子情報開示 (プレミアム) を使用すると、専門家は採用されたアプローチに関する決定を行い、これらの決定をドキュメント レビュー プロジェクトに適用できます。
   

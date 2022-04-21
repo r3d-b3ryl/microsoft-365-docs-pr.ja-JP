@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) の履歴バージョンを使用して、SharePointおよびOneDriveに格納されているすべてのバージョンのドキュメントからコンテンツを収集します。
-ms.openlocfilehash: e73429744958698f275d33b52cc50805c274ef13
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ebd706aa122da2f875adb0c210db8cb3a0c8ab10
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943087"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000622"
 ---
 # <a name="set-up-historical-versions-in-ediscovery-premium-preview"></a>電子情報開示で履歴バージョンを設定する (プレミアム) (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示 (プレミアム) の履歴バージョン機能を使用すると、組織内の電子情報開示マネージャーは、SharePoint Online およびOneDrive for Businessに格納されているすべてのバージョンのドキュメントのコンテンツを検索および収集できます。 その後、そのコンテンツを分析およびレビュー用のレビュー セットに追加できます。 これにより、同じドキュメントの最新バージョンに関連情報が含まれていない場合でも、ケースや調査に関連する可能性がある特定のバージョンのドキュメントのコンテンツを見つけて確認できます。
 

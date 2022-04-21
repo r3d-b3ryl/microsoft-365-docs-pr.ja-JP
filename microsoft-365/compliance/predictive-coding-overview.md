@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 電子情報開示 (プレミアム) の新しい予測コーディング モジュールでは、機械学習を使用してレビュー セット内の項目を分析し、ケースまたは調査に関連する項目を予測します。
-ms.openlocfilehash: 2cf8541e3ca3928b1206eb824c21e21e49c4caa9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7d45c995fafe5b802713e101ad36a362ab77fa37
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936557"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998994"
 ---
 # <a name="learn-about-predictive-coding-in-ediscovery-premium-preview"></a>電子情報開示 (プレミアム) での予測コーディングについて学習する (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示 (プレミアム) の予測コーディング モジュールでは、インテリジェントな機械学習機能を使用して、確認するコンテンツの量を減らすことができます。 予測コーディングは、大量のケース コンテンツを、レビューのために優先順位を付けることができる関連する項目セットに削減し、カリングするのに役立ちます。 これは、レビュー セット内の最も関連性の高い項目のレビューに優先順位を付けるのに役立つ独自の予測コーディング モデルを作成してトレーニングすることで実現されます。
 

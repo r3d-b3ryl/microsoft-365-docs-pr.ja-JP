@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、監査 (プレミアム) を設定して、ユーザー アカウントが侵害されたときにフォレンジック調査を実行したり、他のセキュリティ関連のインシデントを調査したりする方法について説明します。
-ms.openlocfilehash: 9e758ce6a830569b007ee024e17abdddbce01f13
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6f4f9953c88b1d994d4f033629cc89a6529fb9de
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945849"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998840"
 ---
 # <a name="set-up-microsoft-purview-audit-premium"></a>Microsoft Purview 監査を設定する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 組織に監査 (プレミアム) をサポートするサブスクリプションとエンド ユーザー ライセンスがある場合は、次の手順を実行して、監査 (プレミアム) の追加機能を設定して使用します。
 
@@ -35,7 +37,7 @@ ms.locfileid: "64945849"
 
 ## <a name="step-1-set-up-audit-premium-for-users"></a>手順 1: ユーザーの監査 (プレミアム) を設定する
 
-MailItemsAccessed や Send などの重要なイベントをログに記録する機能などの監査 (プレミアム) 機能には、ユーザーに適切な E5 ライセンスが割り当てられている必要があります。 さらに、それらのユーザーに対して高度な監査アプリ/サービス プランを有効にする必要があります。 高度な監査アプリがユーザーに割り当てられていることを確認するには、ユーザーごとに次の手順を実行します。
+MailItemsAccessed や Send などの重要なイベントをログに記録する機能などの監査 (プレミアム) 機能を使用するには、ユーザーに適切な E5 ライセンスが割り当てられている必要があります。 さらに、それらのユーザーに対して高度な監査アプリ/サービス プランを有効にする必要があります。 高度な監査アプリがユーザーに割り当てられていることを確認するには、ユーザーごとに次の手順を実行します。
 
 1. Microsoft 365 管理センターで <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UsersActive ユーザー**</a> > に移動し、ユーザーを選択します。
 

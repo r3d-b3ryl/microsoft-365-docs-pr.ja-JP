@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: 管理者は、組織の人事システムからMicrosoft 365に従業員データをインポートするデータ コネクタを設定できます。 これにより、内部リスク管理ポリシーの人事データを使用して、組織に内部の脅威を与える可能性のある特定のユーザーによるアクティビティの検出に役立ちます。
-ms.openlocfilehash: e1539661c987de8642639df777602fbcf05bdcc4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 81ee1ae3841c4b30f7159d344a195d924d49030c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944813"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999962"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>コネクタをセットアップして人事データをインポートする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルでデータ コネクタを設定して、ユーザーの辞任やユーザーのジョブ レベルの変更などのイベントに関連する人事 (HR) データをインポートできます。 その後、人事データを [インサイダー リスク管理ソリューション](insider-risk-management.md) で使用して、組織内のユーザーによる悪意のあるアクティビティやデータ盗難の可能性を特定するのに役立つリスク インジケーターを生成できます。
 

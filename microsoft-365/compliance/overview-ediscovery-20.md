@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 description: Microsoft Purview の電子情報開示 (プレミアム) ソリューションについて説明します。 この記事では、Microsoft Purview の電子情報開示 (プレミアム) の概要について説明します。これは、内部および外部の調査を管理するのに役立つツールです。 また、電子情報開示 (プレミアム) を使用して法的調査を管理するビジネス上の理由も取り上げられます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7283adbf179f2d3dd04f45e2be808043e86ff88f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1a26d1abe9965ad71383a6d07e277999d85e31ef
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932069"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999082"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Microsoft Purview 電子情報開示の概要 (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) ソリューションは、既存の Microsoft 電子情報開示と分析機能に基づいています。 電子情報開示 (プレミアム) は、組織の内部および外部の調査に対応するコンテンツを保持、収集、分析、レビュー、エクスポートするためのエンドツーエンドのワークフローを提供します。 また、訴訟チームが法的情報保留通知ワークフロー全体を管理して、ケースに関係するカストディアンとコミュニケーションを取ることができます。
 
@@ -134,7 +136,7 @@ Microsoft 365の電子情報開示 (プレミアム) の組み込みのワーク
 
 |手順  |説明  |
 |:---------|:---------|
-|[電子情報開示の設定 (プレミアム)](get-started-with-advanced-ediscovery.md)| サブスクリプションとライセンスの要件を確認したら、アクセス許可を割り当て、組織全体の設定を構成して電子情報開示 (プレミアム) の使用を開始できます。|
+|[電子情報開示 (プレミアム) を設定する](get-started-with-advanced-ediscovery.md)| サブスクリプションとライセンスの要件を確認したら、アクセス許可を割り当て、組織全体の設定を構成して電子情報開示 (プレミアム) の使用を開始できます。|
 |[ケースの作成と管理](create-and-manage-advanced-ediscoveryv2-case.md) | 組織内のすべての法的および他の種類の調査に対して電子情報開示 (プレミアム) ワークフローを管理するケースを作成します。|
 |||
 

@@ -14,14 +14,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Exchange OnlineのIn-Place電子情報開示とIn-Placeホールド (および対応する PowerShell コマンドレット) は、2020 年前半に廃止されます。 Search-Mailbox コマンドレットと Microsoft Purview 電子情報開示 (プレミアム) v1.0 も同じ期間内に廃止されます。
-ms.openlocfilehash: 0a5a5c5a22aefbb0ad5abe6846915e1da653ee6b
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 19809b96574bf8d703264e0bedaada10f177ef31
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973269"
+ms.locfileid: "64999199"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > この記事で説明する従来の電子情報開示ツールの機能は、Microsoft 365 サービスから削除されたか、引き続き使用できますが、サポートされなくなりました。 引き続き使用可能な機能は、予告なしに削除される可能性があります。 これらのレガシ ツールのいずれかを引き続き使用している場合は、Microsoft Purview コンプライアンス ポータルまたはこの記事で説明する代替ツールの 1 つで電子情報開示ツールに移行することを検討してください。

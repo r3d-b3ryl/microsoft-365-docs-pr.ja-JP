@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Security & Compliance Center PowerShell を使用して、検索の作成やレポートの実行などのコンテンツ検索タスクを自動化する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06ea7655348851cbd457b527a3ee36f72d78e562
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c6e84641fef819503349803cdd54d5aaa860fc50
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936865"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000226"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  探索検索を迅速に作成およびレポートすることは、多くの場合、基になるデータと検索の豊富さと品質について学習しようとしている場合に、電子情報開示と調査の重要なステップです。 これを支援するために、Security & Compliance Center PowerShell には、時間のかかるコンテンツ検索タスクを自動化するための一連のコマンドレットが用意されています。 これらのスクリプトを使用すると、多数の検索を迅速かつ簡単に作成し、推定検索結果のレポートを実行して、問題のデータの量を判断するのに役立ちます。 スクリプトを使用して、異なるバージョンの検索を作成して、それぞれが生成する結果を比較することもできます。 これらのスクリプトは、データを迅速かつ効率的に識別してカリングするのに役立ちます。
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 の高度な監査
+title: Microsoft Purview 監査 (プレミアム)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,31 +17,31 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: 4a378071a59d2462cff1af5b87f9ab99d1e1337f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Microsoft Purview 監査 (プレミアム) では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
+ms.openlocfilehash: 51add6560c12994470f5a6ad96fce5c3f293f4f7
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939155"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972829"
 ---
-# <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
+# <a name="microsoft-purview-audit-premium"></a>Microsoft Purview 監査 (プレミアム)
 
-Microsoft 365 の[監査機能](search-the-audit-log-in-security-and-compliance.md)を使用すると、組織は Microsoft 365 のさまざまなサービスにわたって、さまざまな種類の監査済みアクティビティを可視化できます。 高度な監査は、調査の実施に必要な監査ログの保持力を拡大することで、組織によるフォレンジックおよびコンプライアンスの調査を支援します。これにより、(Microsoft 365 コンプライアンス センターと Office 365 マネージメント アクティビティ API の監査ログの検索を使用することにより) 侵害の範囲の特定に役立つ重要なイベントへのアクセスおよび Office 365 マネージメント アクティビティ API への迅速なアクセスが提供されます。
+Microsoft Purview の[監査機能](search-the-audit-log-in-security-and-compliance.md)を使用すると、組織は Microsoft 365 のさまざまなサービスにわたって、さまざまな種類の監査済みアクティビティを可視化できます。 Microsoft Purview 監査 (プレミアム) は、調査の実施に必要な監査ログの保持力を拡大することで、組織によるフォレンジックおよびコンプライアンスの調査を支援します。これにより、(Microsoft Purview コンプライアンス ポータルと Office 365 マネージメント アクティビティ API の監査ログの検索を使用することにより) 侵害の範囲の特定に役立つ重要なイベントへのアクセスおよび Office 365 マネージメント アクティビティ API への迅速なアクセスが提供されます。
 
 > [!NOTE]
-> 高度な監査は、Office 365 E5/A5/G5 または Microsoft 365 Enterprise E5/A5/G5 サブスクリプションを契約している組織に提供されます。 Microsoft 365 E5/A5/G5 コンプライアンスまたは E5/A5/G5 電子情報開示および監査アドオン ライセンスは、監査ログの長期保持や、調査を目的とした高度な監査イベント生成などの高度な監査機能のために、ユーザーに割り当てることができます。 ライセンスの詳細については、次をご覧ください。<br/>- [高度な監査のライセンスの必要条件](auditing-solutions-overview.md#licensing-requirements)<br/>- [セキュリティとコンプライアンスのための Microsoft 365 ライセンスの要件](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
+> 監査 (プレミアム) は、Office 365 E5/A5/G5 または Microsoft 365 Enterprise E5/A5/G5 サブスクリプションを契約している組織に提供されます。 Microsoft 365 E5/A5/G5 コンプライアンスまたは E5/A5/G5 電子情報開示および監査アドオン ライセンスは、監査ログの長期保持や、調査を目的とした監査 (プレミアム) イベント生成などの監査 (プレミアム) 機能のために、ユーザーに割り当てることができます。 ライセンスの詳細については、次をご覧ください。<br/>- [監査 (プレミアム) のライセンスの必要条件](auditing-solutions-overview.md#licensing-requirements)<br/>- [セキュリティとコンプライアンスのための Microsoft 365 ライセンスの要件](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
 
-この記事では、高度な監査機能の概要を説明し、高度な監査用にユーザーを設定する方法を示します。
+この記事では、監査 (プレミアム) 機能の概要を説明し、監査 (プレミアム) 用にユーザーを設定する方法を示します。
 
 ## <a name="long-term-retention-of-audit-logs"></a>監査ログの長期保持
 
-高度な監査では、Exchange、SharePoint、および Azure Active Directory の監査レコードが 1 年間保持されます。 これは、アクティビティが発生したサービスを示す **ワークロード** プロパティの **Exchange**、**SharePoint**、または **AzureActiveDirectory** の値を含む任意の監査レコードを 1 年間保持する既定の監査ログの保持ポリシーによって実現されます。 監査レコードの長期間にわたる保持は、継続的なフォレンジック調査やコンプライアンス調査に役立ちます。 詳細については、「[監査ログの保持ポリシーの管理](audit-log-retention-policies.md#default-audit-log-retention-policy)」の「既定の監査ログの保持ポリシー」セクションを参照してください。
+監査 (プレミアム) では、Exchange、SharePoint、および Azure Active Directory の監査レコードが 1 年間保持されます。 これは、アクティビティが発生したサービスを示す **ワークロード** プロパティの **Exchange**、**SharePoint**、または **AzureActiveDirectory** の値を含む任意の監査レコードを 1 年間保持する既定の監査ログの保持ポリシーによって実現されます。 監査レコードの長期間にわたる保持は、継続的なフォレンジック調査やコンプライアンス調査に役立ちます。 詳細については、「[監査ログの保持ポリシーの管理](audit-log-retention-policies.md#default-audit-log-retention-policy)」の「既定の監査ログの保持ポリシー」セクションを参照してください。
 
-高度な監査の 1 年間の保持機能に加えて、監査ログを 10 年間保持する機能もリリースしました。 監査ログを 10 年間保持することで、長期間にわたる調査や、規制上、法律上、および組織内の義務への対応をサポートします。
+監査 (プレミアム) の 1 年間の保持機能に加えて、監査ログを 10 年間保持する機能もリリースしました。 監査ログを 10 年間保持することで、長期間にわたる調査や、規制上、法律上、および組織内の義務への対応をサポートします。
 
 > [!NOTE]
-> 監査ログを 10 年間保持するには、ユーザー毎の追加のアドオン ライセンスが必要です。 このライセンスがユーザーに割り当てられ、適切な 10 年間の監査ログ保持ポリシーがそのユーザーに対して設定されると、そのポリシーの対象の監査ログは以降 10 年間保持されるようになります。このライセンスがユーザーに割り当てられ、適切に 10 年間の監査ログ保持ポリシーが設定されると、そのポリシーが担保する監査ログは以降 10 年間保持されるようになります。 このポリシーは遡及的ではなく、10 年間の監査ログ保持ポリシーが作成される前に生成された監査ログを保持することはできません。 詳細については、この記事の「[高度な監査についてよく寄せられる質問](#faqs-for-advanced-audit)」セクションを参照してください。
+> 監査ログを 10 年間保持するには、ユーザー毎の追加のアドオン ライセンスが必要です。 このライセンスがユーザーに割り当てられ、適切な 10 年間の監査ログ保持ポリシーがそのユーザーに対して設定されると、そのポリシーの対象の監査ログは以降 10 年間保持されるようになります。このライセンスがユーザーに割り当てられ、適切に 10 年間の監査ログ保持ポリシーが設定されると、そのポリシーが担保する監査ログは以降 10 年間保持されるようになります。 このポリシーは遡及的ではなく、10 年間の監査ログ保持ポリシーが作成される前に生成された監査ログを保持することはできません。 詳細については、この記事の「[監査 (プレミアム) についてよく寄せられる質問](#faqs-for-audit-premium)」セクションを参照してください。
 
 ### <a name="audit-log-retention-policies"></a>監査ログの保持ポリシー
 
@@ -55,11 +55,11 @@ Microsoft 365 の[監査機能](search-the-audit-log-in-security-and-compliance.
 
 特定のポリシーが他のポリシーよりも優先されるように、ポリシーおよび優先度のレベルに一致する監査レコードを保持する期間を指定することもできます。 また、組織の一部またはすべてのユーザーに対して Exchange、SharePoint、Azure Active Directory 監査レコードを 1 年未満 (または 10 年間) で保持する必要がある場合は、カスタム監査ログの保持ポリシーが既定の監査保持ポリシーよりも優先されます。 詳細については、「[監査ログ保持ポリシーを管理する](audit-log-retention-policies.md)」を参照してください。
 
-## <a name="advanced-audit-events"></a>高度な監査イベント
+## <a name="audit-premium-events"></a>監査 (プレミアム) イベント
 
-高度な監査は、いつメール項目がアクセスされたか、いつメール項目が返信されたか、または転送されたか、ユーザーがいつ何を Exchange Online や SharePoint Online で検索したかなどの重要なイベントへのアクセスを提供することで、組織によるフォレンジック調査やコンプライアンス調査の実施をサポートします。 これらのイベントは、起こりうる侵害を調査し、侵害の範囲を決定するのに役立ちます。 これらの Exchange と SharePoint のイベントに加えて、その他の Microsoft 365 サービスにも重要なイベントとみなされるイベントがあり、ユーザーが[適切な高度な監査ライセンス](auditing-solutions-overview.md#licensing-requirements)に割り当てられることが必要です。 ユーザーがこれらのイベントを実行する場合に監査ログが生成されるために、ユーザーに高度な監査ライセンスを割り当てる必要があります。
+監査 (プレミアム) は、いつメール項目がアクセスされたか、いつメール項目が返信されたか、または転送されたか、ユーザーがいつ何を Exchange Online や SharePoint Online で検索したかなどの重要なイベントへのアクセスを提供することで、組織によるフォレンジック調査やコンプライアンス調査の実施をサポートします。 これらのイベントは、起こりうる侵害を調査し、侵害の範囲を決定するのに役立ちます。 これらの Exchange と SharePoint のイベントに加えて、その他の Microsoft 365 サービスにも重要なイベントとみなされるイベントがあり、ユーザーが[適切な監査 (プレミアム) ライセンス](auditing-solutions-overview.md#licensing-requirements)に割り当てられることが必要です。 ユーザーがこれらのイベントを実行する場合に監査ログが生成されるために、ユーザーに監査 (プレミアム) ライセンスを割り当てる必要があります。
 
-高度な監査は、次のイベントを提供します。
+監査 (プレミアム) は、次のイベントを提供します。
 
 - [MailItemsAccessed](#mailitemsaccessed)
 
@@ -69,7 +69,7 @@ Microsoft 365 の[監査機能](search-the-audit-log-in-security-and-compliance.
 
 - [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
 
-- [Microsoft 365 のその他の高度な監査イベント](#other-advanced-audit-events-in-microsoft-365)
+- [Microsoft 365 のその他の監査 (プレミアム) イベント](#other-audit-premium-events-in-microsoft-365)
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 
@@ -77,15 +77,15 @@ MailItemsAccessed イベントは、メールボックス監査アクション�
 
 MailItemsAccessed イベントは、Exchange Online のメールボックスの監査ログの MessageBind を置き換え、次の改善点を提供します。
 
-- MessageBind は、AuditAdmin ユーザー ログインの種類に対してのみ構成でき、委任または所有者のアクションには適用されません。 MailItemsAccessed は、すべてのログインの種類に適用されます。
+- MessageBind は、AuditAdmin ユーザーのログインの種類に対してのみ構成でき、委任または所有者のアクションには適用されませんでした。MailItemsAccessed は、すべてのログインの種類に適用されます。
 
 - MessageBind は、メール クライアントによるアクセスのみを対象としています。 同期アクティビティには適用されませんでした。 MailItemsAccessed イベントは、バインド アクセスの種類と同期アクセスの種類の両方によってトリガーされます。
 
 - MessageBind アクションによって、同じメール メッセージにアクセスしたときに複数の監査レコードが作成され、「ノイズ」が監査されます。一方、MailItemsAccessed イベントは、少数の監査レコードに集約されます。
 
-MailItemsAccessed アクティビティの監査レコードの詳細については、「[高度な監査を使用して、侵害されたアカウントを調査する](mailitemsaccessed-forensics-investigations.md)」を参照してください。
+MailItemsAccessed アクティビティの監査レコードの詳細については、「[監査 (プレミアム) を使用して、侵害されたアカウントを調査する](mailitemsaccessed-forensics-investigations.md)」を参照してください。
 
-MailItemsAccessed 監査レコードを検索するには、Microsoft 365 コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **Exchange メールボックス アクティビティ** ドロップダウン リストで **メールボックス アイテムへのアクセス** アクティビティを検索できます。
+MailItemsAccessed 監査レコードを検索するには、コンプライアンス ポータル内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **Exchange メールボックス アクティビティ** ドロップダウン リストで **メールボックス アイテムへのアクセス** アクティビティを検索できます。
 
 ![監査ログ検索ツールで MailItemsAccessed アクションを検索する。](../media/AdvAudit_MailItemsAccessed.png)
 
@@ -103,7 +103,7 @@ Send イベントもメールボックス監査アクションであり、ユー
 
 調査担当者は Send イベントを使用して、侵害されたアカウントから送信されたメールを特定することができます。 Send イベントの監査レコードには、メッセージが送信された日時、InternetMessage ID、件名、メッセージに添付ファイルが含まれているかどうかなどのメッセージに関連する情報が含まれています。 この監査情報は、調査担当者が侵害されたアカウントから送信された、または攻撃者によって送信されたメール メッセージに関連する情報を特定するのに役立ちます。 さらに、調査担当者は Microsoft 365 の電子情報開示ツールを使用して (件名やメッセージ ID を使用して) メッセージを検索し、メッセージの送信先である受信者と送信されたメッセージの実際の内容を特定することができます。
 
-Send 監査レコードを検索するには、Microsoft 365 コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **Exchange メールボックス アクティビティ** ドロップダウン リストで **送信済みメッセージ** アクティビティを検索できます。
+Send 監査レコードを検索するには、コンプライアンス ポータル内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **Exchange メールボックス アクティビティ** ドロップダウン リストで **送信済みメッセージ** アクティビティを検索できます。
 
 ![監査ログ検索ツールでの送信済みメッセージ アクションの検索。](../media/AdvAudit_SentMessage.png)
 
@@ -132,7 +132,7 @@ SearchQueryInitiatedExchange 監査レコードを検索するには、コンプ
 また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
 > [!NOTE]
-> 監査ログでこのイベントを検索するには、SearchQueryInitiatedExchange を有効にして記録する必要があります。手順については、「[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-advanced-audit-events)」を参照してください。
+> 監査ログでこのイベントを検索するには、SearchQueryInitiatedExchange がログに記録されるようにする必要があります。手順については、「[監査 (プレミアム) の設定](set-up-advanced-audit.md#step-2-enable-audit-premium-events)」を参照してください。
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -155,11 +155,11 @@ SearchQueryInitiatedSharePoint 監査レコードを検索するには、コン�
 また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
 > [!NOTE]
-> 監査ログでこのイベントを検索するには、SearchQueryInitiatedSharePoint を有効にして記録する必要があります。手順については、「[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-advanced-audit-events)」を参照してください。
+> 監査ログでこのイベントを検索するには、SearchQueryInitiatedSharePoint がログに記録されるようにする必要があります。手順については、「[監査 (プレミアム) の設定](set-up-advanced-audit.md#step-2-enable-audit-premium-events)」を参照してください。
 
-### <a name="other-advanced-audit-events-in-microsoft-365"></a>Microsoft 365 のその他の高度な監査イベント
+### <a name="other-audit-premium-events-in-microsoft-365"></a>Microsoft 365 のその他の監査 (プレミアム) イベント
 
-Exchange Online と SharePoint Online のイベントに加えて、その他の Microsoft 365 サービスにもイベントとみなされるイベントがあり、ユーザーに適切な高度な監査ライセンスが割り当てられている場合は、ログに記録されます。 次の Microsoft 365 サービスでは、高度な監査イベントを提供します。 対応するリンクを選択して、これらのイベントを特定し説明する記事に移動します。
+Exchange Online と SharePoint Online のイベントに加えて、その他の Microsoft 365 サービスにもイベントとみなされるイベントがあり、ユーザーに適切な監査 (プレミアム) ライセンスが割り当てられている場合は、ログに記録されます。 次の Microsoft 365 サービスでは、監査 (プレミアム) イベントを提供します。 対応するリンクを選択して、これらのイベントを特定し説明する記事に移動します。
 
 - [Microsoft Forms](search-the-audit-log-in-security-and-compliance.md#microsoft-forms-activities)
 
@@ -173,23 +173,23 @@ Exchange Online と SharePoint Online のイベントに加えて、その他の
 
 Office 365 管理アクティビティ API を使用して監査ログにアクセスする組織は、発行者レベルの調整制限により制限されていました。 つまり、発行者が複数のお客様に代わってデータをプルする場合、制限はそれらすべてのお客様で共有されていました。
 
-高度な監査のリリースにより、発行者レベルの制限からテナント レベルの制限に移行します。 その結果、各組織は、監査データにアクセスするために独自に完全に割り当てられた帯域幅を取得します。 帯域幅は静的な定義済みの制限ではありませんが、組織内のシート数などの要因の組み合わせでモデル化され、E5/A5/G5 組織は E5/A5/G5 以外よりも多くの帯域幅を利用できます。
+監査 (プレミアム) のリリースにより、発行者レベルの制限からテナント レベルの制限に移行します。 その結果、各組織は、監査データにアクセスするために独自に完全に割り当てられた帯域幅を取得します。 帯域幅は静的な定義済みの制限ではありませんが、組織内のシート数などの要因の組み合わせでモデル化され、E5/A5/G5 組織は E5/A5/G5 以外よりも多くの帯域幅を利用できます。
 
 すべての組織には、最初に 1 分あたり 2,000 件の要求のベースラインが割り当てられます。 この制限は、組織のシート数とライセンス サブスクリプションに応じて動的に増加します。 E5/A5/G5 組織は、E5/A5/G5 以外の組織の約 2 倍の帯域幅を利用できます。 また、サービスの正常性を保護するために、最大帯域幅の上限も設定されます。
 
 詳細については、「[Office 365 管理アクティビティ API リファレンス](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)」の「API 調整」のセクションを参照してください。
 
-## <a name="faqs-for-advanced-audit"></a>高度な監査についてよく寄せられる質問
+## <a name="faqs-for-audit-premium"></a>監査 (プレミアム) の FAQ
 
-**高度な監査を利用するには、すべてのユーザーに E5/A5/G5 ライセンスが必要ですか ?**
+**監査 (プレミアム) を利用するには、すべてのユーザーに E5/A5/G5 ライセンスが必要ですか ?**
 
-ユーザー レベルの高度な監査機能を利用するには、ユーザーに E5/A5/G5 ライセンスを割り当てる必要があります。 適切なライセンスをチェックして、ユーザーに機能を公開するための機能がいくつかあります。 たとえば、90 日を超えて適切なライセンスが割り当てられていないユーザーの監査レコードを保持しようとすると、システムはエラー メッセージを返します。
+ユーザー レベルの監査 (プレミアム) 機能を利用するには、ユーザーに E5/A5/G5 ライセンスを割り当てる必要があります。 適切なライセンスをチェックして、ユーザーに機能を公開するための機能がいくつかあります。 たとえば、90 日を超えて適切なライセンスが割り当てられていないユーザーの監査レコードを保持しようとすると、システムはエラー メッセージを返します。
 
-**組織が E5/A5/G5 サブスクリプションを持っている場合、高度な監査ベントの監査レコードにアクセスするために何かをする必要はありますか?**
+**組織が E5/A5/G5 サブスクリプションを持っている場合、監査 (プレミアム) イベントの監査レコードにアクセスするために何かをする必要はありますか?**
 
-適切な E5/A5/G5 ライセンスの割り当てを受けた対象のお客様とユーザーの場合、(この記事で前述したとおり) SearchQueryInitiatedExchange および SearchQueryInitiatedSharePoint のイベントを有効にすることを除き、高度な監査イベントにアクセスするために必要な操作はありません。 高度な監査イベントは、E5/A5/G5 ライセンスを持つユーザーに対して、これらのライセンスが割り当てられた後にのみ生成されます。
+適切な E5/A5/G5 ライセンスの割り当てを受けた対象のお客様とユーザーの場合、(この記事で前述したとおり) SearchQueryInitiatedExchange および SearchQueryInitiatedSharePoint のイベントを有効にすることを除き、監査 (プレミアム) イベントにアクセスするために必要な操作はありません。 監査 (プレミアム) イベントは、E5/A5/G5 ライセンスを持つユーザーに対して、これらのライセンスが割り当てられた後にのみ生成されます。
 
-**高度な監査の新しいイベントは、Office 365 マネージメント アクティビティ API で利用できますか ?**
+**監査 (プレミアム) の新しいイベントは、Office 365 マネージメント アクティビティ API で利用できますか?**
 
 はい。適切なライセンスを持つユーザーの監査レコードが生成されている限り、Office 365 マネージメント アクティビティ API を介してこれらのレコードにアクセスできます。
 

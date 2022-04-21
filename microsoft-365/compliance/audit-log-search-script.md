@@ -19,14 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: PowerShell スクリプトを使用して、Exchange Online で Search-UnifiedAuditLog コマンドレットを実行し、監査ログを検索します。 このスクリプトは、実行するたびに大規模なセットの監査レコードを返すように最適化されています。 これらのレコードはスクリプトによって CSV ファイルにエクスポートされ、ユーザーは Excel の Power Query を使用して表示および変換することができます。
-ms.openlocfilehash: fc7f2e8626fd5b510dca08504d91dd0faadd78b6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 00edbeb18bc882cf9113e80321b29d84ed43114c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943845"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000248"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>PowerShell スクリプトを使用して監査ログを検索する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 今日の世界では、セキュリティ、コンプライアンス、および監査は、IT 管理者にとって最優先事項になっています。 Microsoft 365 には、組織がセキュリティ、コンプライアンス、および監査を管理するのに役立ついくつかの組み込みの機能があります。 特に、統合監査ログは、セキュリティ インシデントとコンプライアンスの問題を調査するのに役立ちます。 次の方法を使用して、監査ログを取得できます。
 

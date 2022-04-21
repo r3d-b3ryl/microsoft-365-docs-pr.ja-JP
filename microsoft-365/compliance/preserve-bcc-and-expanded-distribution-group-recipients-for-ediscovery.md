@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Placeホールド、訴訟ホールド、Microsoft 365アイテム保持ポリシーを使用すると、規制コンプライアンスと電子情報開示の要件を満たすためにメールボックス コンテンツを保持できます。
-ms.openlocfilehash: a088407277f7ebced3aa69ee9ff807913f9b0c85
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4c3c7b7be98959011473eeafc85f40b19be82fdc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942119"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998503"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>電子情報開示のために Bcc および展開された配布グループの受信者を保持する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 訴訟ホールド、電子情報開示ホールド、[Microsoft 365保持ポリシー](./retention.md) (Microsoft Purview コンプライアンス ポータルで作成) を使用すると、規制コンプライアンスと電子情報開示の要件を満たすためにメールボックス コンテンツを保持できます。 メッセージの [宛先] フィールドと [Cc] フィールドで直接アドレス指定された受信者に関する情報は、既定ですべてのメッセージに含まれます。 ただし、組織では、メッセージのすべての受信者に関する詳細を検索して再現する機能が必要になる場合があります。 これには、次の内容が含まれます。
   

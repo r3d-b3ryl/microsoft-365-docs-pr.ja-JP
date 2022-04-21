@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: Microsoft Purview コンプライアンス ポータルで、検索統計機能を使用して、電子情報開示 (Standard) ケースに関連付けられたコンテンツ検索と検索の統計情報を表示する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e057a6e4997240dbaa4b9b7975274c5f3eab7589
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5d35616823988562b3b075e7a513c8a98a4e3281
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947101"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000820"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>電子情報開示検索結果の統計情報を表示する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (Standard) ケースに関連付けられたコンテンツ検索または検索を作成して実行すると、推定検索結果に関する統計情報を表示できます。 これには、検索結果の概要 (検索ポップアップ ページに表示される推定検索結果の概要と同様)、検索クエリに一致するアイテムを含むコンテンツの場所の数、最も一致するアイテムを含むコンテンツの場所の ID などのクエリ統計情報が含まれます。
   

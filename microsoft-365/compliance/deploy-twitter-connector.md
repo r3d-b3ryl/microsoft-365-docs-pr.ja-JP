@@ -16,14 +16,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Twitter データをインポートしてMicrosoft 365にアーカイブするネイティブ コネクタを設定できます。 このデータをMicrosoft 365にインポートした後は、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
-ms.openlocfilehash: e1ae371d59ef21955612c89b9e0bffc5c24d5950
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6bf801d7c3443385ee0a2656753dcf069ac6aebc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950205"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997144"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Twitter データをアーカイブするためのコネクタのデプロイ
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事には、Office 365 Import サービスを使用して組織の Twitter アカウントからMicrosoft 365にデータをインポートするコネクタをデプロイするためのステップ バイ ステップ プロセスが含まれています。 このプロセスの概要と、Twitter コネクタをデプロイするために必要な前提条件の一覧については、「Twitter [データをアーカイブするためのコネクタの設定 ](archive-twitter-data-with-sample-connector.md)」を参照してください。
 

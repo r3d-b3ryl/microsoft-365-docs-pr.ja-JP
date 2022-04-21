@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 検索結果またはそれらの検索結果のサンプルを電子情報開示 (プレミアム) ケース レビュー セットに追加する方法について説明します。
-ms.openlocfilehash: 7b754aa09390d041de44cd2e82ed9d1f93eede7e
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: d41697f18360b277b060dd537020f9e04ef341ec
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973753"
+ms.locfileid: "64997738"
 ---
 # <a name="add-search-results-to-a-review-set"></a>検索結果をレビュー セットに追加する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 検索結果に問題がなく、それらの検索結果を確認して分析する準備ができたら、ケース内のレビュー セットに追加できます。 元のデータをレビュー セットにコピーすると、テーマの検出、重複に近い検出、電子メール スレッド識別などの高度な分析ツールを提供することで、レビューと分析プロセスも容易になります。 Microsoft 365以外のデータ ソースからレビュー セットにデータを追加して、Microsoft 365から収集したデータに加えて、そのデータを確認することもできます。
 

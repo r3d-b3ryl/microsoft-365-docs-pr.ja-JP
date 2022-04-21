@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) を使用すると、訴訟調査のカストディアンへの通知に関する訴訟ホールド通知ワークフローを簡単に管理できます。
-ms.openlocfilehash: 9ee915cc9955b343d76ae1314c27a86421d37332
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bf47522809b61e377abffd742b9a4d84f7b650aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944659"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998554"
 ---
 # <a name="work-with-communications-in-ediscovery-premium"></a>電子情報開示での通信の操作 (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) を使用すると、法務部門は、訴訟ホールド通知の追跡と配布に関するプロセスを簡略化できます。 カストディアン通信ツールを使用すると、法務部門は、最初の通知からリマインダー、エスカレーションまで、訴訟ホールド プロセス全体を 1 か所で管理および自動化できます。
 

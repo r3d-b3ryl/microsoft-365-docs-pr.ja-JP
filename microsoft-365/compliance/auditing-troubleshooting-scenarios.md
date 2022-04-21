@@ -19,14 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Microsoft 365監査ログ検索ツールを使用して、電子メール アカウントの一般的なサポートの問題のトラブルシューティングに役立つ方法について説明します。
-ms.openlocfilehash: add354058a9e6e3d114c97a2932ff0302a27e272
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd82c735411592a3cfa7cb79ae4d1ce6f97798b4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946553"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998002"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>監査ログを検索して、一般的なサポートの問題を調査する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、監査ログ検索ツールを使用して、一般的なサポートの問題を調査する方法について説明します。 これには、監査ログを使用して次の操作が含まれます。
 

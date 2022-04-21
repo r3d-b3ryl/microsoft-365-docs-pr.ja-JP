@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Microsoft Purview コンプライアンス ポータルのコンテンツ検索と電子情報開示 (Standard) 機能に対して有効な制限について説明します。
-ms.openlocfilehash: 53ecc3ceb879bc72040c5525e6bacc8d9802c5c9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8cba04c7ed3257d5a168d7754b2964eb4aa97b0d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944725"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999052"
 ---
 # <a name="limits-for-ediscovery-search"></a>電子情報開示検索の制限
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの電子情報開示検索ツールには、さまざまな制限が適用されます。 これには、 **コンテンツ検索** ページで実行される検索と、 **電子情報開示 (Standard)** ページの電子情報開示ケースに関連付けられている検索が含まれます。 これらの制限は、組織に提供されるサービスの正常性と品質を維持するのに役立ちます。 また、検索のExchange Onlineでの電子メール メッセージのインデックス作成に関連する制限もあります。 電子情報開示検索または電子メール インデックス作成の制限を変更することはできませんが、電子情報開示検索の計画、実行、トラブルシューティングを行う際に、これらの制限を考慮に入れることができるように注意する必要があります。
 

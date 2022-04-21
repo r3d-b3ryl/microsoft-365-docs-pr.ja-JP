@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: レビュー セット内のドキュメントにタグを付けると、不要なコンテンツを削除し、電子情報開示 (プレミアム) ケース内の関連するコンテンツを特定するのに役立ちます。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c1d30cdefe0ae93fe7c87a1c5ecc9712d80bc3fb
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6130a50c966fe23b1218c98efde381dc64fcb009
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931607"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996707"
 ---
 # <a name="tag-documents-in-a-review-set-in-ediscovery-premium"></a>電子情報開示のレビュー セット内のドキュメントにタグを付けます (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示プロセスのさまざまなワークフローを完了するには、レビュー セット内のコンテンツを整理することが重要です。 これには、次の内容が含まれます。
 

@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 電子情報開示 (プレミアム) と Microsoft Graph エクスプローラーを使用して、Microsoft Teamsでチャット メッセージを検索および消去し、Teamsのデータ流出インシデントに対応します。
-ms.openlocfilehash: b76f235fdfaee6f6836eb3d21385181a74aee904
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a692af67b486b4bb353df8ce8be1653d17f26be8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971800"
+ms.locfileid: "64998470"
 ---
 # <a name="search-and-purge-chat-messages-in-teams"></a>Teamsでチャット メッセージを検索および消去する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示 (プレミアム) と Microsoft Graph エクスプローラーを使用して、Microsoft Teamsでチャット メッセージを検索および削除できます。 これは、機密情報や不適切なコンテンツを見つけて削除するのに役立ちます。 この検索と消去のワークフローは、機密情報や悪意のある情報を含むコンテンツがTeamsチャット メッセージを通じてリリースされたときに、データ流出インシデントに対応するのにも役立ちます。
 

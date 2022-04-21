@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 下書きコレクションを作成して反復処理した後、それをレビュー セットにコミットできます。 下書きコレクションをコミットすると、収集されたアイテムがケース内のレビュー セットに追加されます。 収集されたアイテムがレビュー セットに含まれると、それらを分析、確認、エクスポートできます。
-ms.openlocfilehash: 5637d97020d7fb086914a6debdaffc8050772828
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f908d17d804487cd5e7e93085e418f9a94915c8e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940293"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997936"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>電子情報開示のレビュー セットに下書きコレクションをコミットする (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 下書きコレクションで収集したアイテムに満足し、それらを分析、タグ付け、レビューする準備ができたら、ケース内のレビュー セットにコレクションを追加できます。 下書きコレクションをレビュー セットにコミットすると、収集されたアイテムは、Microsoft 365の元のコンテンツの場所からレビュー セットにコピーされます。 レビュー セットは、Microsoft クラウド内のセキュリティで保護された Microsoft 提供のAzure Storage場所です。
 

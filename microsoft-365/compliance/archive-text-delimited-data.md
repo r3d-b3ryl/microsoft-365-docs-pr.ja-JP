@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas からMicrosoft 365にテキスト区切りデータをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
-ms.openlocfilehash: b7772143bef1f6b00d17f05c4bff76ba8692d7ee
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b2039c3b850f7d266425d464235b62d0ce4a78ad
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942977"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997229"
 ---
 # <a name="set-up-a-connector-to-archive-text-delimited-data"></a>テキスト区切りデータをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、テキスト区切りのデータをインポートし、Microsoft 365組織内のユーザー メールボックスにアーカイブします。 Veritas には、サード パーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらの項目をMicrosoft 365にインポートするように構成[されたテキスト区切りコネクタ](https://globanet.com/text-delimited)が用意されています。 コネクタは、テキスト区切りのデータ ソースから電子メール メッセージ形式にコンテンツを変換し、それらのアイテムをMicrosoft 365のユーザーのメールボックスにインポートします。
 

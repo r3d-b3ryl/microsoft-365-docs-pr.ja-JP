@@ -20,14 +20,16 @@ description: 管理者が、Exchange Online メールボックスのユーザー
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 29519b61d4a32b03772cfddba9183d3568afc209
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b421be087980c7878b79e3dbc03759ec45c546d8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950249"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001194"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>保留中のクラウド ベースのメールボックスの 回復可能なアイテム フォルダーのアイテムを削除する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Exchange Online メールボックスの回復可能なアイテム フォルダーは、偶発的または悪意のある削除から保護するために存在します。 また、保留検索や電子情報開示検索など、コンプライアンス機能によって保持およびアクセスされるアイテムを格納するためにも使用されます。 ただし、組織によっては、削除する必要がある回復可能なアイテム フォルダーに意図せずに保持されたデータが含まれている場合があります。 たとえば、ビジネスに重大な影響を与える可能性のある機密情報や情報を含む電子メール メッセージを、ユーザーが知らず知らずのうちに送信または転送する場合があります。 メッセージが完全に削除された場合でも、メールボックスに訴訟ホールドが置かれているため、無期限に保持される可能性があります。 このシナリオは、データが意図せずにOffice 365に *流出* したため、データ *の流出* と呼ばれます。 このような場合は、Exchange Online メールボックスのユーザーの回復可能なアイテム フォルダー内のアイテムを削除できます。そのメールボックスが、Office 365の別の保留機能の 1 つで保留にされている場合でも、削除できます。 このような種類の保留には、訴訟ホールド、In-Place保留、電子情報開示保留、およびOffice 365またはMicrosoft 365のセキュリティおよびコンプライアンス センターで作成された保持ポリシーが含まれます。
 

@@ -21,14 +21,16 @@ description: 電子情報開示 (プレミアム) ケースに関連するコン
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: 16a4932993a652d8d7d71be78fd23a238fc90759
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6ec8e31fddba430a7a148eea5c8b07eb35872641
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939655"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996770"
 ---
 # <a name="manage-holds-in-ediscovery-premium"></a>電子情報開示で保留を管理する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) ケースを使用して保留を作成し、ケースに関連する可能性のあるコンテンツを保持できます。 電子情報開示 (プレミアム) 保留機能を使用すると、保管担当者とそのデータ ソースに保留を配置できます。 また、メールボックスとOneDrive for Business サイトに非親権ホールドを配置することもできます。 Microsoft 365 グループのグループ メールボックス、SharePoint サイト、OneDrive for Business サイトにホールドを配置することもできます。 同様に、Microsoft Teamsに関連付けられているメールボックスとサイトにホールドを配置することもできます。 コンテンツの場所を保留にすると、保管担当者を解放するか、特定のデータの場所を削除するか、ホールド ポリシーを完全に削除するまで、コンテンツは保持されます。
 

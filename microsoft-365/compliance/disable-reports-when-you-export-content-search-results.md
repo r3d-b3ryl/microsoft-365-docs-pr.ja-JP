@@ -17,14 +17,16 @@ ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Purview コンプライアンス ポータルからコンテンツ検索の結果をエクスポートするときに、ローカル コンピューターの Windows レジストリを編集してレポートを無効にします。
-ms.openlocfilehash: d1b305f1d6ce0aba835d21695e59a4166ec96b7a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5cd6816807af1b6da4fc8c41e7cdde7bc7f07d66
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936821"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000094"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>コンテンツ検索の結果をエクスポートするときにレポートを無効にする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示エクスポート ツールを使用して Microsoft Purview コンプライアンス ポータルでコンテンツ検索の結果をエクスポートすると、エクスポートされたコンテンツに関する追加情報を含む 2 つのレポートが自動的に作成およびエクスポートされます。 これらのレポートは、Results.csv ファイルとManifest.xml ファイルです (これらのレポートの詳細については、このトピックの [「エクスポート レポートの無効化に関するよく寄せられる質問](#frequently-asked-questions-about-disabling-export-reports) 」セクションを参照してください)。 これらのファイルは非常に大きくなる可能性があるため、これらのファイルがエクスポートされないようにすることで、ダウンロード時間を短縮し、ディスク領域を節約できます。 これを行うには、検索結果のエクスポートに使用するコンピューターの Windows レジストリを変更します。 後でレポートを含める場合は、レジストリ設定を編集できます。 
   

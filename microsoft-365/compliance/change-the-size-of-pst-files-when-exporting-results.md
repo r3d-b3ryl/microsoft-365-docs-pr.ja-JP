@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 電子情報開示検索結果をエクスポートするときに、コンピューターにダウンロードされる PST ファイルの既定のサイズを変更できます。
-ms.openlocfilehash: 7ba11dbb24af46c72321f2f0f514aa4a40616e4b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c7c78bc23599f55529898b4677d7833d567741f5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950293"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000160"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>電子情報開示検索結果をエクスポートするときに PST ファイルのサイズを変更する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示エクスポート ツールを使用して、さまざまな Microsoft 電子情報開示ツールから電子情報開示検索の電子メール結果をエクスポートする場合、エクスポートできる PST ファイルの既定のサイズは 10 GB です。 この既定のサイズを変更する場合は、検索結果のエクスポートに使用するコンピューターでWindows レジストリを編集できます。 これを行う理由の 1 つは、PST ファイルがリムーバブル メディア (DVD、コンパクト ディスク、USB ドライブなど) に収まるようにするためです。 
   

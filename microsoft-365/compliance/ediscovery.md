@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview 電子情報開示ソリューション
+title: Microsoft Purview の電子情報開示ソリューション
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview には、Exchange メールボックス、SharePoint サイト、OneDrive for Business サイト、Microsoft 365 グループ、Microsoft Teamsなど、さまざまな場所にあるコンテンツの検索とエクスポートに使用できる 3 つの電子情報開示ツールが用意されています。会話をSkype for Businessします。 電子情報開示 (Standard) と電子情報開示 (プレミアム) には、調査の管理に役立つ多くの追加機能が用意されています。
-ms.openlocfilehash: efa7f12ec20377713598edc54f032e7c2a27d706
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4c146e2eea1c0c462491444102365cb5c611e78d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932224"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001150"
 ---
-# <a name="microsoft-purview-ediscovery-solutions"></a>Microsoft Purview 電子情報開示ソリューション
+# <a name="microsoft-purview-ediscovery-solutions"></a>Microsoft Purview の電子情報開示ソリューション
+
+> [!TIP]
+> *9 つの Microsoft Purview ソリューションの Premium バージョンを無料で試すことができることをご存じですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べます。 Microsoft 365 E3およびOffice 365 E3のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 Microsoft Purview の電子情報開示ツールを使用して、Exchange Online、OneDrive for Business、SharePoint Online、Microsoft Teams、Microsoft 365 グループ、Yammer チームでコンテンツを検索できます。 同じ電子情報開示検索でメールボックスとサイトを検索し、検索結果をエクスポートできます。 Microsoft Purview 電子情報開示 (Standard) ケースを使用して、メールボックスとサイトにあるコンテンツを識別、保持、およびエクスポートできます。 組織にOffice 365 E5またはMicrosoft 365 E5サブスクリプション (または関連する E5 アドオン サブスクリプション) がある場合は、Microsoft 365の機能豊富な Microsoft Purview 電子情報開示 (プレミアム) ソリューションを使用して、カストディアンをさらに管理し、コンテンツを分析できます。
 
@@ -47,7 +52,7 @@ Microsoft Purview には、コンテンツ検索、電子情報開示 (Standard)
 
 次の表では、コンテンツ検索、電子情報開示 (Standard)、電子情報開示 (プレミアム) で使用できる主な機能を比較します。
 
-|機能|コンテンツ検索|電子情報開示 (Standard)|電子情報開示 (プレミアム)|
+|機能|コンテンツ検索|電子情報開示 (標準)|電子情報開示 (プレミアム)|
 |:------|:-------------|:-------------|:-------------|
 |コンテンツを検索する|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
 |キーワード クエリと検索条件|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
@@ -138,7 +143,7 @@ Microsoft Purview には、コンテンツ検索、電子情報開示 (Standard)
 - サブスクリプションをOffice 365 E1する
 
 
-### <a name="ediscovery-standard"></a>電子情報開示 (Standard)
+### <a name="ediscovery-standard"></a>電子情報開示 (標準)
 
 - サブスクリプションをMicrosoft 365 E3する
 - サブスクリプションをMicrosoft 365 G3する
@@ -168,15 +173,15 @@ Microsoft Purview には、コンテンツ検索、電子情報開示 (Standard)
 
 - [検索を作成する](content-search.md)
 
-### <a name="ediscovery-standard"></a>電子情報開示 (Standard)
+### <a name="ediscovery-standard"></a>電子情報開示 (標準)
 
-- [電子情報開示を使用した概要 (Standard)](get-started-core-ediscovery.md)
+- [電子情報開示 (標準) の使用を開始する](get-started-core-ediscovery.md)
 
 ### <a name="ediscovery-premium"></a>電子情報開示 (プレミアム)
 
 - [電子情報開示の概要 (プレミアム)](overview-ediscovery-20.md)
 
-- [電子情報開示の設定 (プレミアム)](get-started-with-advanced-ediscovery.md)
+- [電子情報開示 (プレミアム) を設定する](get-started-with-advanced-ediscovery.md)
 
 - [電子情報開示 (プレミアム) ケースの作成と管理](create-and-manage-advanced-ediscoveryv2-case.md)
 

@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft Purview 電子情報開示 (プレミアム) ケースを分析するときにドキュメント セットを整理するために使用できるツールについて説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c12b71d4bc2ddbf39df4e9414689cafeb4f4f785
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 72be5cf0cd6e4d52200f1167b525aa354192672e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935700"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998708"
 ---
 # <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>電子情報開示のレビュー セット内のデータを分析する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 収集されたドキュメントの数が多い場合、それらをすべて確認することは困難な場合があります。 Microsoft Purview 電子情報開示 (プレミアム) には、ドキュメントを分析して、情報を失うことなく確認するドキュメントの量を減らし、ドキュメントを一貫した方法で整理するのに役立つツールが多数用意されています。 これらの機能の詳細については、次を参照してください。
 

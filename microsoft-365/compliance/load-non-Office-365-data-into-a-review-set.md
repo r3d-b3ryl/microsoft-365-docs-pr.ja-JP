@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: 電子情報開示 (プレミアム) ケースで分析用のレビュー セットにMicrosoft 365以外のデータをインポートする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9d27e2d1e306c189aa28a2c331a60c5b4d0c5dc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d7167f85760d0c1cc05e130413dbcdae9e0e3973
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944747"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996858"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>レビューセットにMicrosoft 365 以外のデータを読み込む
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) で分析する必要があるすべてのドキュメントがMicrosoft 365にあるわけではありません。 電子情報開示 (プレミアム) のMicrosoft 365以外のデータ インポート機能を使用すると、Microsoft 365にないドキュメントをレビュー セットにアップロードできます。 この記事では、分析のためにMicrosoft 365以外のドキュメントを電子情報開示 (プレミアム) に取り込む方法について説明します。
 

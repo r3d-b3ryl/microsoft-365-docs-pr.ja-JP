@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Cisco Webex DataParser コネクタを設定して使用して、Microsoft 365で Cisco Webex データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 57a991f4a6d808dbcd22cb1d3466f10417e8d8e9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 67cd7007d19ba37b20da4ea961e3ec16e3b63840
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944131"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996594"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>Cisco Webex データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 17a-4 LLC の [Cisco Webex DataParser](https://www.17a-4.com/webex-dataparser/) を使用して、Cisco Cisco Webex プラットフォームからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サードパーティのデータ ソースから項目をキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された Cisco Webex コネクタが含まれています。 Cisco Webex DataParser コネクタは、Cisco Webex データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

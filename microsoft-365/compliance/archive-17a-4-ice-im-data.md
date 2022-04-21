@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 ICE Connect Chat DataParser コネクタを設定して使用して、MICROSOFT 365で ICE Connect Chat データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 372e833eb138150e10f81c7975647bc70af048d8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: fcc700546a15c6dad39b9ebcaeb7385194727016
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940733"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998097"
 ---
 # <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>ICE Connect Chat データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 17a-4 LLC の [ICE DataParser](https://www.17a-4.com/ice-dataparser/) を使用して、ICE Connect Chat からMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された ICE チャット コネクタが含まれています。 ICE DataParser コネクタは、ICE Connect Chat データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

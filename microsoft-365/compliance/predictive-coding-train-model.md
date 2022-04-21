@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 37c0ae081223f321c87cafa18d0acbbbc6adb511
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3335e437a659eab984943adda31abdb344908c1c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942141"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997650"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>予測コーディング モデルをトレーニングする (プレビュー)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (プレミアム) で予測コーディング モデルを作成した後、次の手順では、最初のトレーニング ラウンドを実行して、レビュー セット内の関連性と関連性のないコンテンツに関するモデルをトレーニングします。 トレーニングの最初のラウンドを完了したら、後続のトレーニング ラウンドを実行して、関連するコンテンツと関連性のないコンテンツを予測するモデルの能力を向上させることができます。
 

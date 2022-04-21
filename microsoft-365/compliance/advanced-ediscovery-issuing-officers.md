@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 組織全体の発行担当者を電子情報開示 (プレミアム) に追加して、組織内の任意のケースで任意の親権通信に追加できます。
-ms.openlocfilehash: 076e6ea8b8dbef18c6c34221937a039fc43fad75
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f82d5359a90e21203c2ff882ceb831cc1630e008
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942999"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000556"
 ---
 # <a name="manage-issuing-officers-in-ediscovery-premium"></a>電子情報開示で発行担当者を管理する (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 自分または他のユーザーが、ケースで保管担当者であるユーザーに送信される保留通知またはその他の種類の通信を作成する場合は、発行元の担当者を指定する必要があります。 通知は、指定された発行元の担当者に代わってカストディアンに送信されます。 たとえば、組織内の paralegal が、ケース内で保管担当者に保留通知を作成して送信する役割を担う場合があります。 このシナリオでは、paralegal は組織内の弁護士を発行責任者として指定できます。 Whoは発行元の担当者として指定できますか? カストディアン通信の発行元担当者として選択できるユーザーには、次の 2 種類があります。
 

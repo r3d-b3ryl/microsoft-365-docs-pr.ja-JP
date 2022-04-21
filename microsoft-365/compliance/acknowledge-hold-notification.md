@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示 (プレミアム) を使用して、電子メールを通じて訴訟ホールド通知を送信およびフォローアップし、義務の状態を監視する方法について説明します。
-ms.openlocfilehash: 4be0781a273f842c043276a19688f36b96cfdb28
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: db13ed4a148238dbb677ece55999fd3fb907a1a1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947409"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999588"
 ---
 # <a name="acknowledge-a-hold-notification"></a>保留通知を確認する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 規制の要求または調査に対応する場合、電子保存情報 (ESI) を保持する義務と、アクティブまたは差し迫った法的問題に関連する可能性のある資料を保管担当者に通知することが必要になる場合があります。 送信後、法務チームは、各カストディアンが与えられた指示に従うことを受け取り、読み、理解し、同意したことを知る必要があります。
 

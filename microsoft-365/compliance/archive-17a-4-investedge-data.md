@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 InvestEdge DataParser コネクタを設定して使用して、Microsoft 365に InvestEdge データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 08c89ede8e16a4635c56d0d4bcb50cb0dce69860
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cc10c5a798e9e85da7f95769926df8446187434c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945111"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998092"
 ---
 # <a name="set-up-a-connector-to-archive-investedge-data"></a>InvestEdge データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 17a-4 LLC の [InvestEdge DataParser を](https://www.17a-4.com/investedge-dataparser/)使用して、InvestEdge からMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された InvestEdge コネクタが含まれています。 InvestEdge DataParser コネクタは、InvestEdge データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

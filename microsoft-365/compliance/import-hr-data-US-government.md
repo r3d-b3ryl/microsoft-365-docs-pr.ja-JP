@@ -16,14 +16,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: 米国政府クラウドの管理者は、組織の人事 (人事) システムからMicrosoft 365に従業員データをインポートするデータ コネクタを設定できます。 これにより、内部リスク管理ポリシーの人事データを使用して、組織に内部の脅威を与える可能性のある特定のユーザーによるアクティビティの検出に役立ちます。
-ms.openlocfilehash: 76de79cd856c9f114d219ffefbc45cf5e7692d40
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3f3873830caea109cf09987a21791bb299a4bdaf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934755"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000028"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>米国政府で人事データをインポートするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルでデータ コネクタを設定して、人事 (HR) データを米国政府機関にインポートできます。 人事関連のデータには、従業員が退職を提出した日付と従業員の最終日の日付が含まれます。 この人事データは、 [インサイダー リスク管理](insider-risk-management.md)ソリューションなどの Microsoft 情報保護ソリューションによって使用され、組織内の悪意のあるアクティビティやデータ盗難から組織を保護するのに役立ちます。 HR コネクタの設定は、コネクタによる認証に使用されるAzure Active Directoryでアプリを作成し、人事データを含む CSV マッピング ファイルを作成し、コンプライアンス センターでデータ コネクタを作成し、CSV ファイルの人事データを Microsoft クラウドに取り込むスクリプト (スケジュールベース) を実行することで構成されます。 その後、データ コネクタはインサイダー リスク管理ツールによって使用され、Microsoft 365米国政府機関にインポートされた人事データにアクセスします。
 

@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ツールMicrosoft 365電子メール メッセージに添付され、SharePoint Online およびOneDrive for Businessに格納されている暗号化されたドキュメントを処理する方法について説明します。
-ms.openlocfilehash: 91eef14c1cb4dc91657a1d9a26ab00b1eb6f6d92
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e010ef1ff169467b442e137bc31d3640aa5a8cb4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948773"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994454"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365電子情報開示ツールでの復号化
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 暗号化は、ファイル保護と情報保護戦略の重要な部分です。 あらゆる種類の組織では、暗号化テクノロジを使用して組織内の機密コンテンツを保護し、適切なユーザーのみがそのコンテンツにアクセスできるようにします。
 
@@ -44,14 +46,14 @@ Microsoft 電子情報開示ツールでは、Microsoft 暗号化テクノロジ
 
 次の表は、電子メール メッセージに添付された暗号化されたファイルと、SharePointおよびOneDriveの暗号化されたドキュメントに対して、Microsoft 365電子情報開示ツールで実行できるサポートされているタスクを示しています。 これらのサポートされているタスクは、検索の条件に一致する暗号化されたファイルに対して実行できます。 値は `N/A` 、対応する電子情報開示ツールで機能が使用できないことを示します。
 
-|電子情報開示タスク  |コンテンツ検索  |電子情報開示 (Standard)  |電子情報開示 (プレミアム)  |
+|電子情報開示タスク  |コンテンツ検索  |電子情報開示 (標準)  |電子情報開示 (プレミアム)  |
 |:---------|:---------|:---------|:---------|
-|サイトと電子メールの添付ファイル内の暗号化されたファイル内のコンテンツを検索<sup>する1</sup>     |いいえ      |いいえ      |はい      |
+|サイトと電子メールの添付ファイル内の暗号化されたファイル内のコンテンツを検索<sup>する1</sup>     |不要      |不要      |はい      |
 |電子メールに添付された暗号化されたファイルをプレビューする     |はい      |はい     |はい       |
-|SharePointとOneDriveで暗号化されたドキュメントをプレビューする|いいえ      |いいえ    |はい       |
+|SharePointとOneDriveで暗号化されたドキュメントをプレビューする|不要      |不要    |はい       |
 |レビュー セット内の暗号化されたファイルを確認する    |N/A      |該当なし        | はい        |
 |電子メールに添付された暗号化されたファイルをエクスポートする    |はい       |はい  |はい    |
-|SharePointおよびOneDriveで暗号化されたドキュメントをエクスポートする    |いいえ       |いいえ  |はい    |
+|SharePointおよびOneDriveで暗号化されたドキュメントをエクスポートする    |不要       |いいえ  |はい    |
 |||||
 
 > [!NOTE]

@@ -17,14 +17,16 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Purview コンプライアンス ポータルで電子情報開示ケースを使用して、組織の法的調査を管理します。
-ms.openlocfilehash: d218c7d624da837e685929d95e515687f54897ef
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 28dead35cce2102cfd826fa1505cdd620e4a1b25
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931999"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999786"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Microsoft 365 で法的調査を管理する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 組織には、組織内の特定の幹部や他の従業員が関与する訴訟に対応する多くの理由があります。 これには、電子メール、ドキュメント、インスタント メッセージングの会話、および日常の作業タスクでユーザーが使用するその他のコンテンツの場所で、調査固有の詳細情報をすばやく見つけて保持することが含まれる場合があります。 セキュリティとコンプライアンス センターの電子情報開示ケース ツールを使用して、これらおよび他の多くの同様のアクティビティを実行できます。
   

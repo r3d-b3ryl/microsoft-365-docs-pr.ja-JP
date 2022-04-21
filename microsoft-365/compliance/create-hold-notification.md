@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) ケースの通信ツールを使用して、訴訟ホールド通知を送信、収集、追跡します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f82e61b618c351f4dac05ce2559eab047f0e70a7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ca5c895ca98aafb67fd728e137f0d69dd8b98f8f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945067"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997958"
 ---
 # <a name="create-a-legal-hold-notice"></a>訴訟ホールド通知を作成する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 組織は、電子情報開示 (プレミアム) カストディアン通信を使用して、カストディアンとの通信に関するワークフローを管理できます。 コミュニケーション ツールを使用すると、訴訟チームは訴訟ホールド通知を体系的に送信、収集、追跡できます。 柔軟な作成プロセスにより、チームは保留通知ワークフローと、カストディアンに送信された通知内のコンテンツをカスタマイズすることもできます。
 
@@ -50,7 +52,7 @@ ms.locfileid: "64945067"
 
     - **[通信テンプレートの選択**]: ドロップダウン リストには、電子情報開示 (プレミアム) 設定ページの通信ライブラリのテンプレートが表示されます。 テンプレートを選択すると、作成中の通知のテキストの開始点として **、ポータル コンテンツの定義** に表示されます。 テンプレートを選択しない場合は、自分で最初から通知を作成する必要があります。 通信テンプレートの詳細については、 [カストディアン通信テンプレートの管理に関するページを](advanced-ediscovery-communications-library.md)参照してください。
 
-4. **[次へ]** をクリックします。
+4. [**次へ**] をクリックします。
 
 ## <a name="step-2-define-the-portal-content"></a>手順 2: ポータル コンテンツを定義する
 
@@ -64,7 +66,7 @@ ms.locfileid: "64945067"
 
 2. 通知にマージ変数を挿入して通知をカスタマイズし、カストディアン コンプライアンス ポータルを共有します。
 
-3. **[次へ]** をクリックします。
+3. [**次へ**] をクリックします。
 
   > [!TIP]
   > ポータル コンテンツのコンテンツと形式をカスタマイズする方法の詳細については、「 [通信エディターを使用する」を](using-communications-editor.md)参照してください。

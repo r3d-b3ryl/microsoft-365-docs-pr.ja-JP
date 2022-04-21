@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Skype for Business Server DataParser コネクタを設定して使用して、Microsoft 365でSkype for Business Serverデータをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 7b004068e255d5972a978d4e9650e9207a2da117
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8a7c8e7b2d59aeabc2f21207d5b3ce2eb3d524e9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937699"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997540"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>Skype for Business Server データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 17a-4 LLC の [Skype Server DataParser](https://www.17a-4.com/skype-server-dataparser/) を使用して、Skype for Business ServerからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成されたSkype for Business コネクタが含まれています。 Skype for Business Server DataParser コネクタは、Skype for Business Serverデータを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Refinitiv Eikon Messenger DataParser コネクタを設定して使用して、このデータをインポートしてMicrosoft 365にアーカイブする方法について説明します。
-ms.openlocfilehash: 090d658e5b18f639848a4ce3c2635865207a8833
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 444c31df6a247d40855235b3d0de4c98b76c6d30
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940711"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997628"
 ---
 # <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>Refinitiv Eikon Messenger データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 17a-4 LLC の [Refinitiv Eikon Messenger DataParser を](https://www.17a-4.com/refinitiv-messenger-dataparser/)使用して、Refinitiv Eikon Messenger からMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サードパーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された Refinitiv Eikon Messenger コネクタが含まれています。 Refinitiv Eikon Messenger DataParser コネクタは、Refinitiv Eikon Messenger データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

@@ -22,14 +22,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Microsoft Purview コンプライアンス ポータルで、電子情報開示ケースに関連付けられた新しいホールドにメールボックス& OneDrive for Businessサイトを追加するスクリプトを実行する方法について説明します。
-ms.openlocfilehash: 8835e853825786668ba1b7617078d899c0773779
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 70ec2481e8fa352be47544cd2fe6a772c2fbb325
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934531"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000889"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>電子情報開示 (Standard) ケースでユーザーをホールドに追加するスクリプトを使用する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Security & Compliance Center PowerShell には、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できるコマンドレットが用意されています。 現在、Microsoft Purview コンプライアンス ポータルで Microsoft Purview 電子情報開示 (Standard) ケースを使用して、多数のカストディアン コンテンツの場所を保持するには、時間と準備が必要です。 たとえば、保留リストを作成する前に、保留にするOneDrive for Businessサイトごとに URL を収集する必要があります。 次に、保留にするユーザーごとに、メールボックスとそのOneDrive for Business サイトを保留に追加する必要があります。 この記事のスクリプトを使用して、このプロセスを自動化できます。
   

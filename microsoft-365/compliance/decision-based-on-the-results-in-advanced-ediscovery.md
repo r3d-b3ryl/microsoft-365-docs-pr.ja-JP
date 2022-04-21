@@ -17,14 +17,16 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 電子情報開示 (プレミアム) の [決定] タブで、ケース ファイルのレビュー セットの正しいサイズを決定するのに役立つデータを提供する方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c8759db2445b8d98c47cc1103deda058d2f3508
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8acd1cbd6efa821266acc3f5110a83a238841cf8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932422"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000182"
 ---
 # <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>電子情報開示の関連性の結果に基づく決定 (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 電子情報開示 (プレミアム) の [関連性] モジュールの [決定] タブには、ケース ファイルのレビュー セットのサイズを決定するための意思決定サポート統計を表示および使用するための追加情報が表示されます。
   

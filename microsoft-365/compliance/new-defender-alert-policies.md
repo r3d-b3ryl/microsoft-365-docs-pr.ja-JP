@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Microsoft Defender for Office 365 の新しいアラート ポリシーをリリースします。 また、新しいものに置き換えられた 2 つの既存のアラート ポリシーを廃止します。
-ms.openlocfilehash: afdc547fc658b40c2eee7a92ef2043326e159b32
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 339d16f7cd4e481d408a13d2e738cdef9fc991bf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759481"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939633"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新しいアラート ポリシー
 
@@ -97,7 +97,7 @@ Microsoft Defender for Office 365 のゼロ時間自動パージ (ZAP) が受信
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>これらの変更に備えるために必要なこと
 
-組織がこれらのアラートをどのように利用するかによって、準備に必要な作業が決まります。アラートを操作可能にし、API、アラート メール通知、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>または <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>のいずれかを介してアラートを使用または消費している場合は、ワークフローを変更する必要があります。
+組織がこれらのアラートをどのように利用するかによって、準備に必要な作業が決まります。アラートを操作可能にし、API、アラート メール通知、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>または <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>のいずれかを介してアラートを使用または消費している場合は、ワークフローを変更する必要があります。
 
 **これらのアラートを運用していない場合は、次のいずれかを実行できます。**
 

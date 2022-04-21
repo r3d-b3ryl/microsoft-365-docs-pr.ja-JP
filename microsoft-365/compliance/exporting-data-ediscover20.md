@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) ケースのプレゼンテーションまたは外部レビュー用のレビュー セットからコンテンツをエクスポートまたはダウンロードする方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f94062bee378a408e1a04240b09c5ae05f53c5f8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 322b2c97d554ef917034afc261652a8150d23fbc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948641"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994130"
 ---
 # <a name="export-case-data-in-ediscovery-premium"></a>電子情報開示でケース データをエクスポートする (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 レビュー セットからデータをエクスポートするには、次の 3 つの方法があります。
 

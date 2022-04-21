@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: データ損失防止ポリシーで名前付きエンティティを利用するには、次の手順を使用します。
-ms.openlocfilehash: 108b21e7c5a6708a01a712dcd44788f489df0e73
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 6b00c45b95436e2425aedadd57a178fcb01ab50e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971585"
+ms.locfileid: "65000996"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>データ損失防止ポリシーで名前付きエンティティを使用する
 
@@ -83,7 +83,7 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 |SharePoint Online data-at-rest     |サポート         |
 |保存データをTeamsする     |サポート         |
 |電子メール メッセージの保存時データ     |プライバシー サービス プランを使用するテナントでサポートされている         |
-|Microsoft Defender for Cloud Apps     |サポートされる         |
+<!--|Microsoft Defender for Cloud Apps     |サポート対象         |-->
 
 ### <a name="autolabeling"></a>自動ラベル付け
 
@@ -92,11 +92,11 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 |Office Win32 クライアントをオフラインにする   |サポートされている、ユーザーはラベルを選択し、手動で適用する必要があります |
 |オンライン Office Win32 クライアントオンライン|以前の信頼スキームでサポートされている |
 |オンラインでOutlookする   |以前の信頼スキームでサポートされている  |
-|WAC クライアントOffice     |サポートされている |
-|OWA     |サポートされている |
-|Exchangeトランスポート     |サポートされている |
+|WAC クライアントOffice     |サポート |
+|OWA     |サポート |
+|Exchangeトランスポート     |サポート |
 |保存データをOneDrive for Businessする     |サポート |
-|SharePoint Online data-at-rest|サポート|
+|SharePoint Online data-at-rest|サポートされている|
 |Azure Information Protection (AIP) スキャナー|サポートなし|
 
 ## <a name="known-issues"></a>既知の問題

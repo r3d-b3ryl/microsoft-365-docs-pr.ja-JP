@@ -21,14 +21,16 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 管理者は、Microsoft 365監査ログで共有監査を使用して、組織外のユーザーと共有されているリソースを識別する方法を学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7643dfae2e7e9fa871976cfe92bdf7028e756d3e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 785fdd2628a1e0bea9fd0361e7843939bf7b84a3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934491"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999676"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>監査ログで共有監査を使用する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 共有は、SharePoint Online とOneDrive for Businessの重要なアクティビティであり、組織で広く使用されています。 管理者は、監査ログの共有監査を使用して、組織内での共有の使用方法を決定できます。 
   

@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365の Microsoft Purview 電子情報開示 (プレミアム) のケースで、レビュー セット内のドキュメントのメタデータ フィールドを定義します。
-ms.openlocfilehash: bd52107a2cbefedcf30c47e897ff12e5ce0c8bd7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4e1efbf48cf4313682095b69eb97f52d00b9ceaf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938095"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001106"
 ---
 # <a name="document-metadata-fields-in-ediscovery-premium"></a>電子情報開示のドキュメント メタデータ フィールド (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 次の表に、Microsoft Purview 電子情報開示 (プレミアム) のケースのレビュー セット内のドキュメントのメタデータ フィールドを示します。 次の表に、次の情報を示します。
 

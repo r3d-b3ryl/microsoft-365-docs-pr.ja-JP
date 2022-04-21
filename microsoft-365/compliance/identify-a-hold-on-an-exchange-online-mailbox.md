@@ -18,14 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Microsoft 365のExchange Online メールボックスに配置できるさまざまな種類の保留リストを特定する方法について説明します。
-ms.openlocfilehash: 27b6b616bfa3fac01ae93c3ee8270855bed559d3
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2e62d8f6fd0dc6352b4bf6fc5766b9cd33f8ffb4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949743"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994174"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、Microsoft 365のExchange Onlineメールボックスに配置されている保留を識別する方法について説明します。
 

@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365の電子情報開示 (プレミアム) ソリューションで有効なケースの制限、インデックス作成の制限、検索制限について説明します。
-ms.openlocfilehash: 599f57ab863ab6d82140fa473624916bd2f26ac1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 07977b80ba0ce55c6d0e6b179955cfa959eaa5c8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942515"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999764"
 ---
 # <a name="limits-in-ediscovery-premium"></a>電子情報開示の制限 (プレミアム)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、Microsoft 365の Microsoft Purview 電子情報開示 (プレミアム) ソリューションの制限について説明します。
 

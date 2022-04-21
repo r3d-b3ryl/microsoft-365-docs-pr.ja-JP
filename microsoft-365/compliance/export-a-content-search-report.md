@@ -22,14 +22,16 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Microsoft Purview コンプライアンス ポータルでコンテンツ検索の実際の結果をエクスポートする代わりに、検索結果レポートをエクスポートできます。 レポートには、検索結果の概要と、エクスポートされる各項目に関する詳細情報を含むドキュメントが含まれています。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ac46944ab454271358168c95a7df94d606e0ec5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f8fc881ed57831aadb035d0ec1168b4f334ec085
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944835"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001128"
 ---
 # <a name="export-a-content-search-report"></a>コンテンツ検索のレポートをエクスポートする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータル (または Microsoft Purview 電子情報開示 (Standard) ケースに関連付けられている検索) でコンテンツ検索から検索結果の完全なセットをエクスポートする代わりに、実際の検索結果をエクスポートするときに生成されるのと同じレポートをエクスポートできます。
   

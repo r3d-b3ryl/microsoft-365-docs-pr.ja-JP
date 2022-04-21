@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365で電子情報開示 (Standard) ケースに関連付けられているホールドを作成して、調査または訴訟に関連するコンテンツを保持できます。
-ms.openlocfilehash: 4448c9b8a55466c0cf626deff6e69acd247a5814
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 87a75923ccc270e7b9802ae5d366dd2930a84d82
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938271"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001238"
 ---
 # <a name="create-an-ediscovery-hold"></a>電子情報開示保留リストを作成する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 電子情報開示 (Standard) ケースを使用して、ケースに関連する可能性のあるコンテンツを保持する保留を作成できます。 ケースで調査しているユーザーのExchangeメールボックスとOneDrive for Business アカウントに保留を配置できます。 また、Microsoft Teams、Office 365 グループ、およびYammer グループに関連付けられているメールボックスとサイトに保留を配置することもできます。 コンテンツの場所を保留にすると、コンテンツの場所を保留から削除するまで、または保留を削除するまで、コンテンツは保持されます。
 
