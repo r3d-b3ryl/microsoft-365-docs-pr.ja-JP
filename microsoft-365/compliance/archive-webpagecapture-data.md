@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Microsoft 365で Veritas から Web ページ キャプチャ データをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 549af03a794c132bc11901618a60185722f24907
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4ba343d8c1a06f8c1eaf88189cae5e013a76414
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935041"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001524"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Web ページ データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルで Veritas コネクタを使用して、Web ページからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には、特定 [の Web サイト](https://globanet.com/webpage-capture) またはドメイン全体の特定の Web ページ (およびそれらのページ上のリンク) をキャプチャする Web ページ キャプチャ コネクタが用意されています。 コネクタは Web ページコンテンツを PDF、PNG、またはカスタム ファイル形式に変換し、変換されたファイルを電子メール メッセージに添付し、Microsoft 365のユーザー メールボックスにそれらの電子メール アイテムをインポートします。
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams ユーザー アクティビティ レポートを取得し、組織内のTeams アクティビティに関する分析情報を取得する方法について説明します。
-ms.openlocfilehash: cbd9bdb73dc69da5e36e0fb9c3ff2ff15b5269a4
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: ad2701e10e6b71f6fdb6a7d9ccf4a6b795a38b94
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882266"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65015004"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理センターの Microsoft 365 レポート - Microsoft Teams ユーザー アクティビティ
 
@@ -33,6 +33,7 @@ Microsoft 365 の [レポート] ダッシュボードには、組織内での�
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Microsoft Teams ユーザー アクティビティ レポートを取得する手順
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
+
 2. ダッシュボードのホームページで、Microsoft Teamsアクティビティ カードの **[その他の表示**] ボタンをクリックします。
 
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Microsoft Teams ユーザー アクティビティ レポートを解釈する
@@ -53,7 +54,7 @@ Microsoft 365 の [レポート] ダッシュボードには、組織内での�
 |ユーザー名  <br/> |ユーザーの電子メール アドレス。 実際のメール アドレスを表示することも、このフィールドを匿名にすることもできます。   <br/> |
 |テナント名  <br/> |ユーザーが属する内部テナントまたは外部テナントの名前。   <br/> <br/> ユーザーが外部テナントに属している場合、対応するデータ メトリック (メッセージの投稿、応答メッセージなど) は、管理者のテナントの共有チャネルでの対話に基づいて計算されます。 (特定のテナントの共有チャネルの外部で) 自分のテナントでユーザーが行った対話は、特定のテナントの管理者使用状況レポートには考慮されません。  |
 |共有チャネル テナント名   <br/> |ユーザーが参加した共有チャネルの内部テナントまたは外部テナントの名前。   <br/> |
-|チャネル メッセージ   <br/> |指定した期間中にユーザーがチーム チャットに投稿した一意のメッセージの数。  <br/> |
+|チャネル メッセージ   <br/> |指定した期間中にユーザーがチーム チャットに投稿した一意のメッセージの数。   <br/> |
 |Posts   <br/> |指定した期間内のすべてのチャネル内の投稿メッセージの数 <br/> |
 |Replies   <br/> |指定した期間中に、すべてのチャネルで返信されたメッセージの数。 <br/> |
 |緊急メッセージ    <br/> |指定された期間中の緊急メッセージの数。 <br/> |

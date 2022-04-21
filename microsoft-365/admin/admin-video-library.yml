@@ -11,12 +11,12 @@ metadata:
   ms.author: efrene
   ms.date: 03/31/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 9d9a9515cf9bda34d49cd927e0b59e90fa0c79ed
-  ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+  ms.openlocfilehash: 036a15099420afbc356b1ae795e0f60cf5a81a7d
+  ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/04/2022
-  ms.locfileid: "64633197"
+  ms.lasthandoff: 04/21/2022
+  ms.locfileid: "65014938"
 landingContent:
 - title: 作業の開始
   linkLists:
@@ -102,7 +102,7 @@ landingContent:
       url: add-users/change-a-user-name-and-email-address.md
     - text: ユーザーを別のサブスクリプションに移動する
       url: ../commerce/try-or-buy-microsoft-365.md
-- title: ライセンスと課金の管理
+- title: ライセンスと課金を管理する
   linkLists:
   - linkListType: video
     links:
@@ -158,13 +158,13 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: Google ワークスペースのMicrosoft 365の設定
-      url: /moveto-microsoft-365/set-up-microsoft-365-forgoogle
+    - text: Google ワークスペース移行のMicrosoft 365を設定する
+      url: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
     - text: Google Workspace ドメインを Microsoft 365 に追加します
-      url: /moveto-microsoft-365/add-google-domain
-    - text: Google ワークスペースからビジネス メールと予定表を移行する
-      url: /moveto-microsoft-365/migrate-email
-    - text: Connectをビジネス向Microsoft 365に設定する
-      url: /moveto-microsoft-365/connect-domain-tom365
-    - text: 移行マネージャーを使用して、Microsoft 365に Google ファイルを移行する
-      url: /moveto-microsoft-365/migrate-files-migration-manager
+      url: moveto-microsoft-365/add-google-domain.md
+    - text: Google ワークスペースからビジネス用メールと予定表を移行する
+      url: moveto-microsoft-365/migrate-email.md
+    - text: ドメインをビジネス向けのMicrosoft 365にConnectする
+      url: moveto-microsoft-365/connect-domain-tom365.md
+    - text: Migration Manager を使用して Google ファイルをビジネス向けのMicrosoft 365に移行する
+      url: moveto-microsoft-365/migrate-files-migration-manager.md

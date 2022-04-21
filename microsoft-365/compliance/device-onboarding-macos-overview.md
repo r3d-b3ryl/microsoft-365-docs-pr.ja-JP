@@ -1,5 +1,5 @@
 ---
-title: macOS デバイスをMicrosoft 365の概要にオンボードする
+title: Microsoft 365 への macOS デバイスのオンボードに関する概要
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: macOS デバイスをコンプライアンス ソリューションにオンボードする方法について説明します
-ms.openlocfilehash: 6cc3323a94ee609c3c6674c12eb99fad3f18f3b4
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 09a35e47a237639a722047b11c24f9b2d09cf51d
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952726"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65014982"
 ---
-# <a name="onboard-macos-devices-into-microsoft-365-overview"></a>macOS デバイスをMicrosoft 365の概要にオンボードする
+# <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Microsoft 365 への macOS デバイスのオンボードに関する概要
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -54,7 +54,16 @@ macOS デバイスは、Intuneまたは JAMF Proを使用して既に管理さ�
  
 - Intuneにオンボードするには、「[展開ガイド: Microsoft Intuneで macOS デバイスを管理](/mem/intune/fundamentals/deployment-guide-platform-macos)する」と「[Intune ポータル サイトで Mac を登録する」を参照してください](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
 - JAMF Proにオンボードするには、[JAMF Pro管理者ガイド](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)と [JAMF Pro Mac 用インストールと構成ガイド](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)を参照してください。
-- macOS デバイスに v95+ Edge ブラウザーをインストールする 
+<!--- Install the v95+ Edge browser on your macOS devices--> 
+
+### <a name="supported-browsers"></a>サポートされるブラウザー
+
+エンドポイント DLP では、macOS Catalina 10.15 以降で次のブラウザーがサポートされます。
+
+- Microsoft Edge (最新バージョン)
+- Safari (最新バージョン、macOS のみ)
+- Chrome (最新バージョン)
+- Firefox (最新バージョン)
 
 ## <a name="licensing-guidance"></a>ライセンスに関するガイダンス
 
@@ -78,7 +87,7 @@ macOS デバイスが Microsoft Purview ソリューションにオンボード�
 
 ## <a name="onboarding-devices-into-device-management"></a>デバイス管理へのデバイスのオンボーディング
 
-デバイス上の機密アイテムを監視および保護する前に、デバイスの監視を有効にし、エンドポイントをオンボードしなければなりません。 これらのアクションはどちらも、Microsoft Purview コンプライアンス ポータルで実行されます。
+デバイス上の機密アイテムを監視および保護する前に、デバイスの監視を有効にし、エンドポイントをオンボードしなければなりません。 これらのアクションはどちらも Microsoft Purview コンプライアンスポータルで行われます。
 
 まだオンボーディングされていないデバイスをオンボーディングする場合は、適切なスクリプトをダウンロードして、それらのデバイスに導入します。 <!--Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).-->
 
@@ -98,9 +107,9 @@ DLP センサー テレメトリを受信し、データ損失防止ポリシー
 トピック | 説明
 :---|:---
 |[Intuneを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする](device-onboarding-offboarding-macos-intune.md)|Intune を通じて管理される macOS デバイスの場合
-|[Microsoft Defender for Endpoint顧客向けのIntuneを使用して、macOS デバイスをコンプライアンス ソリューションにオンボードおよびオフボードする](device-onboarding-offboarding-macos-intune-mde.md) |Intune を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
+|[Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-intune-mde.md) |Intune を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
 |[JAMF Proを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする](device-onboarding-offboarding-macos-jamfpro.md) | JAMF Pro を通じて管理される macOS デバイスの場合
-|[Microsoft Defender for Endpoint顧客向けの JAMF Proを使用して、macOS デバイスをコンプライアンス ソリューションにオンボードおよびオフボードする](device-onboarding-offboarding-macos-jamfpro-mde.md)|JAMF Pro を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
+|[Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-jamfpro-mde.md)|JAMF Pro を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
 
 
 ## <a name="related-topics"></a>関連項目

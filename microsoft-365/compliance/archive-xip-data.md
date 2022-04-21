@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas から Microsoft 365 に XIP ソース データをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
-ms.openlocfilehash: ffce448dfa6e768a89a6b34fabef1abd2446504f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 06309397db05034e3df3263efa30a5cca5a78682
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936953"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001502"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>XIP ソース データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、XIP ソース プラットフォームからMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には[、XIP](https://globanet.com/xip/) ファイルを使用してアイテムをMicrosoft 365にインポートできる XIP コネクタが用意されています。 XIP ファイルは ZIP ファイルに似ていますが、デジタル署名を使用できます。 デジタル署名は、XIP ソース ファイルが抽出される前に Veritas Merge 1 によって検証されます。 コネクタは、XIP ソース ファイルから電子メール メッセージ形式にコンテンツを変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

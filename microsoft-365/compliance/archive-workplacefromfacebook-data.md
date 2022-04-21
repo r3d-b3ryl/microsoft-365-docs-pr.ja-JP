@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Facebook から Workplace からデータをインポートしてアーカイブするコネクタを設定できます。これは、Veritas の Merge1 サイトにアーカイブされ、Microsoft 365に保存されます。 コネクタを設定するには、Veritas を使用する必要がありますこのコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 888697c6b5e340ebe82cd9466a260dc046622ee1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0dbd1bfaeea6a42db03793941b1fea894ee391b5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943933"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001458"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Facebook データから Workplace をアーカイブするためのコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、Workplace から Facebook からMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には、サード パーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムをMicrosoft 365にインポートするように構成された [Workplace from Facebook](https://globanet.com/workplace/) コネクタが用意されています。 コネクタは、チャット、添付ファイル、投稿、ビデオなどのコンテンツを Workplace から電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 

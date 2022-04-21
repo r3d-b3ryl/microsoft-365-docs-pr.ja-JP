@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、ICE チャット ツールからMicrosoft 365にデータをインポートおよびアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 51c79127894f506f2f0f59a9c883f1b4c4bb5f24
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 55af0567fc5cb8dbdeb571209fb7d9f863561900
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937325"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001700"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>ICE チャット データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]V
 
 Microsoft Purview コンプライアンス ポータルのネイティブ コネクタを使用して、ICE チャット コラボレーション ツールから金融サービス チャット データをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の ICE Chat セキュリティで保護された FTP (SFTP) サイトに毎日 1 回接続し、チャット メッセージのコンテンツを電子メール メッセージ形式に変換してから、それらのアイテムをMicrosoft 365のメールボックスにインポートします。
 

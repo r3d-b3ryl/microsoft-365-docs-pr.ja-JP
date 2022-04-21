@@ -20,14 +20,16 @@ description: Microsoft Purview コンプライアンス ポータルを使用し
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 1f19c43e65993652628703f002b9537c71066013
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3fef13fe96297b426dda4d72231846a99fb03179
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946531"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001370"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>コンプライアンス ポータルで電子情報開示アクセス許可を割り当てる
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルで [電子情報開示関連のツール](ediscovery.md) のいずれかをユーザーに使用させる場合は、適切なアクセス許可を割り当てる必要があります。 これを行う最も簡単な方法は、コンプライアンス センターの **[アクセス許可]** ページで適切な役割グループをユーザーに追加することです。 このトピックでは、電子情報開示タスクを実行するために必要なアクセス許可について説明します。
   
@@ -81,7 +83,7 @@ Microsoft Purview コンプライアンス ポータルで [電子情報開示�
 
 次の表に、コンプライアンス ポータルの電子情報開示関連の RBAC ロールの一覧と、各ロールが既定で割り当てられている組み込みのロール グループを示します。
   
-| Role | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織の管理 | レビュー担当者 |
+| 役割 | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織の管理 | レビュー担当者 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |ケース管理 <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
 |コミュニケーション <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -103,7 +105,7 @@ Microsoft Purview コンプライアンス ポータルで [電子情報開示�
 
 詳細については、以下を参照してください。
 
-- [電子情報開示を使用した概要 (Standard)](get-started-core-ediscovery.md)
+- [電子情報開示 (標準) の使用を開始する](get-started-core-ediscovery.md)
 
 - [電子情報開示を使用した概要 (プレミアム)](get-started-with-advanced-ediscovery.md)
 
@@ -165,7 +167,7 @@ Microsoft Purview コンプライアンス ポータルで [電子情報開示�
 
 役割グループを電子情報開示 (Standard) ケースと電子情報開示 (プレミアム) ケースのメンバーとして追加して、役割グループのメンバーが割り当てられたケースでタスクにアクセスして実行できるようにします。 役割グループに割り当てられているロールは、役割グループのメンバーが実行できる操作を定義します。 次に、ロール グループをケースのメンバーとして追加すると、メンバーは特定のケースでこれらのタスクにアクセスして実行できます。 ケースのメンバーとしてロール グループを追加する方法の詳細については、次を参照してください。
 
-- [電子情報開示を使用した概要 (Standard)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
+- [電子情報開示 (標準) の使用を開始する](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
 - [電子情報開示 (プレミアム) ケースのメンバーを追加または削除する](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 

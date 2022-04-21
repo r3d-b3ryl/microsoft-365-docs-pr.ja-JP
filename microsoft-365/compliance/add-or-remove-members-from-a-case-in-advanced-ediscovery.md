@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) ケースを管理するときにケースにアクセスできるメンバーを追加または削除する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9586fd0f606c3f95cda19ca9d6ae036bc23763dc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ae0404199506d5da18fb1579fbe6a125350afcde
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943197"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001678"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>ケースからメンバーを追加または削除する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 メンバーを追加または削除して、ケースにアクセスできるユーザーを管理できます。 ただし、メンバーが電子情報開示 (プレミアム) ケースにアクセスし、ケース内のタスクを実行する前に、Microsoft Purview コンプライアンス ポータルの **[アクセス許可**] ページで電子情報開示マネージャーの役割グループにユーザーを追加する必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](./assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
 

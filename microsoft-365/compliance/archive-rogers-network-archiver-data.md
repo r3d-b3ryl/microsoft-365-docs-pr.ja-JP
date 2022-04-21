@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Microsoft 365で Rogers Network データをインポートおよびアーカイブする TeleMessage コネクタを設定できます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 790a41ce3d505e6381bb9d02ed9014132fe8f9f0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 966810ba4cedb782fb860ebff72b4fc7b4e7248c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944021"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001546"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data"></a>Rogers Network データをアーカイブするコネクタを設定する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの TeleMessage コネクタを使用して、Sms と MMS のデータを Rogers モバイル ネットワークにインポートしてアーカイブします。 [Rogers Network Archiver コネクタ](https://www.telemessage.com/mobile-archiver/network-archiver/rogers/)を設定して構成すると、組織の Rogers モバイル ネットワークに接続され、SMS および MMS データがMicrosoft 365のメールボックスにインポートされます。
 

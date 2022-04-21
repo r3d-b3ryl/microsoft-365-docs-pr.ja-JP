@@ -26,17 +26,17 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 共有メールボックスを作成すると、社内の複数のユーザーが 1 つのメール アドレスに送付されたメールを閲覧したり、回答したりできます。
-ms.openlocfilehash: f8a7f725e029021626bf408a3797ac6bfbb16215
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 38e7e1c1371c83fd5b55105bbd91485e2b6c26a3
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765638"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915953"
 ---
 # <a name="create-a-shared-mailbox"></a>共有メールボックスを作成する 
 
 > [!NOTE]
-> 組織でハイブリッド Exchange 環境を使用する場合は、オンプレミスの <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>を使用して、共有メールボックスを作成および管理する必要があります。 「[Exchange 管理センターで共有メールボックスを作成する](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)」を参照してください。
+> 組織でハイブリッド Exchange 環境を使用する場合は、オンプレミスの <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>を使用して、共有メールボックスを作成して管理する必要があります。「[Exchange 管理センターで共有メールボックスを作成する](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)」を参照してください。
 >
 > 共有メールボックスと Outlook 用 Microsoft 365 グループのどちらを作成すればよいかわからない場合は、「[グループを比較する](../create-groups/compare-groups.md)」のガイダンスを参照してください。 現在、共有メールボックスを Microsoft 365 グループに移行することはできません。 この機能をご希望の場合は、[こちらから投票](https://go.microsoft.com/fwlink/?linkid=871518)してお知らせください。
 
@@ -91,13 +91,13 @@ ms.locfileid: "62765638"
 
 - **[メールボックス所有者として送信する]**: [メールボックス所有者として送信する] アクセス許可を使用すれば、メールの送信時に共有メールボックスを代理で処理できます。たとえば、Katerina がマーケティング部門の共有メールボックスにログインして、メールを送信する場合、そのメールはマーケティング部門が送信したように見えます。
 
-- **[代理人として送信する]**: [代理人として送信する] アクセス許可を使用すれば、共有メールボックスの代わりにメールを送信できます。 たとえば、John が共有メールボックス Reception Building 32 にログインしてメールを送信すると、メールが「Reception Building 32 の代わりに John」によって送信されたように見えます。 EAC を使って [代理人として送信する] アクセス許可を付与することはできません。_GrantSendonBehalf_ パラメーターと共に **Set-Mailbox** コマンドレットを使用する必要があります。
+- **[代理人として送信する]**: [代理人として送信する] アクセス許可を使用すれば、共有メールボックスの代わりに電子メールを送信できます。たとえば、John が共有メールボックス Reception Building 32 にログインして電子メールを送信すると、メールが「Reception Building 32 の代わりに John」によって送信されたように見えます。EAC では [代理人として送信する] アクセス許可を付与できないため、 **Set-Mailbox** コマンドレットを _GrantSendonBehalf_ パラメーターと一緒に使用する必要があります。
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>EAC を使用して共有メールボックスの委任を編集する
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>で、**[受信者]**、\>**[共有]** に移動します。 共有メールボックスを選択し、**[編集]** ![[編集] アイコン](../../media/ITPro-EAC-EditIcon.png) を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>で、**[受信者]**\>**[メールボックス]** の順に移動します。 共有メールボックスを選択し、**[編集]** ![[編集] アイコン](../../media/ITPro-EAC-EditIcon.png) を選択します。
 
-2. **[メールボックスの委任]** を選択します。
+2. **[メールボックスのアクセス許可]** で、**[メールボックス委任の管理]** を選択します。
 
 3. [フル アクセス] および [メールボックス所有者として送信する] アクセス許可を付与または削除するには、**[追加]** ![[追加] アイコン](../../media/ITPro-EAC-AddIcon.png)または **[削除]** ![[削除] アイコン](../../media/ITPro-EAC-RemoveIcon.gif)を選択して、アクセス許可を付与するユーザーを選択します。
 
@@ -121,7 +121,7 @@ ms.locfileid: "62765638"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 ::: moniker-end
 
 2. ユーザー アカウントの一覧から、共有メールボックスのアカウントを探します (例: フィルターを **[ライセンス未付与のユーザー]** に変更する)。
