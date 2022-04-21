@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: この記事では、認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: ca6b75ba036aac826d657c8c907b512fe9d1f87a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 43db59e0380f99a2312fd803970a73013445504a
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948377"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65015048"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 
@@ -47,6 +47,8 @@ ms.locfileid: "64948377"
 1. **[[すべてのユーザー] リンクの有効期限とアクセス許可のオプションを選択する]** で、**[これらのリンクは、次の日数以内に期限切れにする必要があります]** チェック ボックスをオンにします。</br>
    ![SharePoint における組織レベルの [すべてのユーザー] リンクの有効期限設定のスクリーンショット。](../media/sharepoint-organization-anyone-link-expiration.png)
 1. このボックスに日数を入力し、**[保存]** をクリックします。
+
+有効期限を変更すると、既存のリンクは、新しい設定が長い場合は現在の有効期限を保持し、新しい設定が短い場合は新しい設定に更新されます。
 
 特定のサイトで [すべてのユーザー] リンクの有効期限を設定するには
 
@@ -101,10 +103,10 @@ ms.locfileid: "64948377"
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>機密コンテンツの認証されていない共有を防止する
 
-[Microsoft Purview データ損失防止 (DLP)](../compliance/dlp-learn-about-dlp.md)を使用して、機密コンテンツの認証されていない共有を防ぐことができます。 データ損失防止は、ファイルの秘密度ラベル、保持ラベル、ファイル自体に含まれている機密情報に基づいてアクションを実行することができます。
+[Microsoft Purview データ損失防止 (DLP)](../compliance/dlp-learn-about-dlp.md) を使用して、機密コンテンツの認証されていない共有を防ぐことができます。 データ損失防止は、ファイルの秘密度ラベル、保持ラベル、ファイル自体に含まれている機密情報に基づいてアクションを実行することができます。
 
 DLP ルールを作成するには
-1. Microsoft Purview 管理センターで、[ [データ損失防止 ](https://compliance.microsoft.com/datalossprevention) ] ページに移動します。
+1. Microsoft Purview コンプライアンス管理センターで、[[データ損失防止]](https://compliance.microsoft.com/datalossprevention) ページに移動します。
 2. **[ポリシーの作成]** をクリックします。
 3. **[カスタム]** を選択し、**[次へ]** をクリックします。
 4. ポリシーの名前を入力し、**[次へ]** をクリックします。

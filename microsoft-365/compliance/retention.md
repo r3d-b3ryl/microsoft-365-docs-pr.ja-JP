@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 61bd82e3b4012e7e191971faf768cf8d7cbba4f2
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 5c9a88b27814b89077a013b03d25b4d53ef3f125
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758643"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972088"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
@@ -60,7 +62,7 @@ ms.locfileid: "64758643"
 
 これらの保持設定は所定の場所にあるコンテンツに作用し、コンプライアンス上の理由でコンテンツを保持する必要がある場合でも、追加のストレージを作成して構成するための追加のオーバーヘッドを節約できます。 また、このデータをコピーして同期するために、カスタマイズしたプロセスを実装する必要もありません。
 
-次のセクションを使用して、アイテム保持ポリシーとアイテム保持ラベルの機能、使用する時期、さらに相互補足する方法についての詳細情報を参照します。 ただし、一部の一般的なシナリオの保持設定を開始して展開する準備が出来ている場合は、「[情報ガバナンスを開始する](get-started-with-information-governance.md)」を参照してください。
+次のセクションを使用して、アイテム保持ポリシーとアイテム保持ラベルの機能、使用する時期、さらに相互補足する方法についての詳細情報を参照します。 ただし、一部の一般的なシナリオの保持設定を開始して展開する準備が出来ている場合は、「[データ ライフサイクル管理の使用を開始する](get-started-with-data-lifecycle-management.md)」を参照してください。
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>保持設定が所定の場所にあるコンテンツに作用するしくみ
 
@@ -172,7 +174,7 @@ ms.locfileid: "64758643"
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>DLP ポリシーで保持ラベルを条件として使用する
 
-SharePoint のドキュメントのデータ損失防止 (DLP) ポリシーの条件として、保持ラベルを指定することができます。 たとえば、指定された保持ラベルがドキュメントに適用されている場合はそのドキュメントが組織外に共有されないように、DLP ポリシーを構成できます。
+SharePoint のドキュメントの Microsoft Purview データ損失防止 (DLP) ポリシーの条件として、保持ラベルを指定することができます。 たとえば、指定された保持ラベルがドキュメントに適用されている場合はそのドキュメントが組織外に共有されないように、DLP ポリシーを構成できます。
 
 詳細については、「[DLP ポリシーでの条件としての保持ラベルの使用](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)」を参照してください。
 
@@ -227,7 +229,7 @@ Exchange パブリックフォルダー、Skype、Teams、Yammer メッセージ
 
 #### <a name="monitoring-retention-labels"></a>保持ラベルの監視
 
-Microsoft 365 コンプライアンス センターから、[**データの分類**] と [**概要**] ページを選択して、テナントでの保持ラベルの使用方法を監視し、ラベル付けされたアイテムの場所を特定します。重要な前提条件を含む詳細については、「[データ分類に関する詳細](data-classification-overview.md)」を参照してください。
+Microsoft Purview コンプライアンス ポータルから、[**データの分類**] と [**概要**] ページを選択して、テナントでの保持ラベルの使用方法を監視し、ラベル付けされたアイテムの場所を特定します。重要な前提条件を含む詳細については、「[データ分類に関する詳細](data-classification-overview.md)」を参照してください。
 
 詳細については、[コンテンツ エクスプローラー](data-classification-content-explorer.md) と [アクティビティ エクスプローラー](data-classification-activity-explorer.md) を使用します。
 
@@ -249,7 +251,7 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 |機能|アイテム保持ポリシー |保持ラベル|
 |:-----|:-----|:-----|:-----|
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
-|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> 必要 <br /> いいえ <br /> いいえ <br /> いいえ |
+|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
 |保持の自動適用 | はい | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリとキーワード、トレーニング可能な分類子、クラウド添付ファイル| いいえ | はい |
 |保持の手動適用 | いいえ | はい |
@@ -358,11 +360,13 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 
 ## <a name="policy-lookup"></a>ポリシー検索
 
-Microsoft 365 の場所に対して複数の保持ポリシーと、発行または自動適用する複数の保持ラベル ポリシーを構成できます。 特定のユーザー、サイト、および Microsoft 365 グループに割り当てられている保持のポリシーを検索するには、Microsoft 365 コンプライアンス センターの **[情報ガバナンス]** から **[ポリシー検索]** を使用します:
+Microsoft 365 の場所に対して複数の保持ポリシーと、発行または自動適用する複数の保持ラベル ポリシーを構成できます。 特定のユーザー、サイト、および Microsoft 365 グループに割り当てられている保持のポリシーを検索するには、Microsoft Purview コンプライアンス ポータルの [**データ ライフサイクル管理**] または [**レコード管理**] ソリューションの **[ポリシー検索]** を使用します。
+
+次に例を示します。
 
 ![特定のユーザー、サイト、および Microsoft 365 グループに割り当てられている保持のポリシーを見つけ出すポリシー検索 ](../media/policy-lookup.png)
 
-ユーザーの正確な電子メール アドレス、サイトの正確な URL、または Microsoft 365 グループの正確な電子メール アドレスを指定する必要があります。
+ユーザーの正確な電子メール アドレス、サイトの正確な URL、または Microsoft 365 グループの正確な電子メール アドレスを指定する必要があります。たとえば、ワイルドカードや部分一致は使用できません。
 
 サイトのオプションには、OneDrive アカウントが含まれます。ユーザーの OneDrive アカウントの URL を指定する方法については、「[組織内のすべてのユーザー OneDrive URL の一覧を取得する](/onedrive/list-onedrive-urls)」を参照してください。
 
@@ -502,7 +506,7 @@ Microsoft 365 の場所に対して複数の保持ポリシーと、発行また
 
   - 保持ポリシーがメール ボックスに暗黙的に適用され、構成された保持アクションが保持される場合、保持ポリシーは引き続き適用され、非アクティブなメール ボックスが自動削除の対象になることはありません。 保持期間が終了したために保持アクションが適用されなくなった場合、Exchange 管理者は[非アクティブなメール ボックスを手動で削除](delete-an-inactive-mailbox.md)できるようになりました
 
-        An implicit retention policy requires a static policy scope with the **All recipients** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
+    暗黙的な保持ポリシーには、**すべての受信者** {Exchange メールの場合) または **すべてのグループ** (Microsoft 365 グループの場合) 構成の静的ポリシー スコープが必要です。
 
     保持ポリシーが適用されている非アクティブなメール ボックスの詳細については、「[非アクティブなメール ボックスと Microsoft 365 のデータ保持ポリシー](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention)」を参照してください。
 
@@ -537,7 +541,7 @@ Microsoft 365 の場所に対して複数の保持ポリシーと、発行また
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの PowerShell コマンドレット
 
-保持コマンドレットを使用するには、最初に [ Office 365 セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/connect-to-scc-powershell)に接続する必要があります。次に、次のいずれかのコマンドレットを使用します。
+保持コマンドレットを使用するには、最初に [Office 365 セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/connect-to-scc-powershell) に接続する必要があります。次に、次のいずれかのコマンドレットを使用します。
 
 - [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 
@@ -575,9 +579,9 @@ Microsoft 365 の場所に対して複数の保持ポリシーと、発行また
 
 保持の設定と[電子情報開示ケースを使用して作成した保留](create-ediscovery-holds.md)は、両方ともデータが完全に削除されるのを防ぐことができますが、さまざまなシナリオに対応できるように設計されています。 違いを理解し、どちらを使用するかを決定するために、以下のガイダンスをご利用ください。
 
-- アイテム保持ポリシーや保持ラベルで指定する保持の設定は、コンプライアンス要件に合わせてデータを保持または削除する長期的な情報ガバナンス戦略のために設計されています。 その範囲は通常、個々のユーザーよりも場所やコンテンツに焦点を合わせた幅広いものとなっています。 保持期間の開始日と終了日は構成可能で、追加の管理者が介入することなくコンテンツを自動的に削除できるオプションがあります。
+- アイテム保持ポリシーや保持ラベルで指定する保持の設定は、コンプライアンス要件に合わせてデータを保持または削除する長期的なデータ ライフサイクル管理戦略のために設計されています。 その範囲は通常、個々のユーザーよりも場所やコンテンツに焦点を合わせた幅広いものとなっています。 保持期間の開始日と終了日は構成可能で、追加の管理者が介入することなくコンテンツを自動的に削除できるオプションがあります。
 
-- 電子情報開示 (コア電子情報開示または Advanced eDiscovery ケース) のための保留は、法的な調査のためにデータを保存する限られた期間のために設計されています。 範囲については、特定のユーザーが所有するコンテンツに限定されます。 保持期間の開始日と終了日は構成できませんが、個々の管理者の操作に依存し、保留が解除されたときにコンテンツを自動的に削除するオプションはありません。
+- 電子情報開示 (電子情報開示 （標準） または 電子情報開示 (プレミアム) ケース) のための保留は、法的な調査のためにデータを保存する限られた期間のために設計されています。 範囲については、特定のユーザーが所有するコンテンツに限定されます。 保持期間の開始日と終了日は構成できませんが、個々の管理者の操作に依存し、保留が解除されたときにコンテンツを自動的に削除するオプションはありません。
 
 保持と保留を比較するための概要
 
@@ -590,7 +594,7 @@ Microsoft 365 の場所に対して複数の保持ポリシーと、発行また
 |コンテンツの削除 |はい (オプション) |いいえ |
 |管理費: |低い |高い |
 
-コンテンツが保持の設定と電子情報開示の保留の両方の対象になっている場合、電子情報開示の保留のためのコンテンツの保存が常に優先されます。 このように、管理者が手動で保留を解除するまでデータは保持されるため、[保持の原則](#the-principles-of-retention-or-what-takes-precedence)は電子情報開示の保留にまで拡張されます。 ただし、このような優先順位があるにもかかわらず、長期的な情報ガバナンスのために電子情報開示の保留を使用することはできません。 データの自動削除について心配がある場合は、アイテムを無期限に保持するように保持の設定を構成したり、保持ラベルを用いて[処理確認](disposition.md#disposition-reviews)を使用したりすることができます。
+コンテンツが保持の設定と電子情報開示の保留の両方の対象になっている場合、電子情報開示の保留のためのコンテンツの保存が常に優先されます。 このように、管理者が手動で保留を解除するまでデータは保持されるため、[保持の原則](#the-principles-of-retention-or-what-takes-precedence)は電子情報開示の保留にまで拡張されます。 ただし、このような優先順位があるにもかかわらず、長期的なデータ ライフサイクル管理のために電子情報開示の保留を使用することはできません。 データの自動削除について心配がある場合は、アイテムを無期限に保持するように保持の設定を構成したり、保持ラベルを用いて[処理確認](disposition.md#disposition-reviews)を使用したりすることができます。
 
 古い電子情報開示ツールを使用してデータを保存している場合は、以下のリソースを参照してください。
 
@@ -605,7 +609,7 @@ Microsoft 365 の場所に対して複数の保持ポリシーと、発行また
 
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>以前の機能の代わりにアイテム保持ポリシーと保持ラベルを使用する
 
-情報ガバナンスを目的として、Microsoft 365 のコンテンツをプロアクティブに保持または削除する必要がある場合は、次に示す以前の機能の代わりにアイテム保持ポリシーと保持ラベルを使用することをお勧めします。
+データ ライフサイクル管理を目的として、Microsoft 365 のコンテンツをプロアクティブに保持または削除する必要がある場合は、次に示す以前の機能の代わりにアイテム保持ポリシーと保持ラベルを使用することをお勧めします。
 
 これらの以前の機能を現在使用している場合、それらも Microsoft 365 のアイテム保持ポリシーおよび保持ラベルと並行して機能し続けます。 ただし、今後は、Microsoft 365 のアイテム保持ポリシーと保持ラベルを使用して、Microsoft 365 の複数のワークロードにわたるコンテンツの保持と削除の両方を管理する単一のソリューションを活用することをお勧めします。
 
@@ -638,9 +642,9 @@ Microsoft 365 の場所に対して複数の保持ポリシーと、発行また
 ## <a name="related-information"></a>関連情報
 
 - [SharePoint Online の制限](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Microsoft Teams の制限事項と仕様](/microsoftteams/limits-specifications-teams)
-- [情報ガバナンスおよびレコード管理の規制要件を満たすために役立つリソース](retention-regulatory-requirements.md)
+- [Microsoft Teams の制限事項と仕様](/microsoftteams/limits-specifications-teams) 
+- [データ ライフサイクル管理およびレコード管理の規制要件を満たすために役立つリソース](retention-regulatory-requirements.md)
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
-「[アイテム保持ポリシーおよび保持ラベルの概要](get-started-with-information-governance.md)」をご参照ください。この記事では、サブスクリプション、アクセス許可を説明し、保持シナリオのエンド ツー エンド構成ガイダンスへのリンクを提供しています。
+「[データ ライフサイクル管理の使用を開始する](get-started-with-data-lifecycle-management.md)」をご参照ください。この記事では、サブスクリプション、アクセス許可を説明し、保持シナリオのエンド ツー エンド構成ガイダンスへのリンクを提供しています。

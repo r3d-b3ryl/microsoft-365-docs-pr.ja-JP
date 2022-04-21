@@ -18,14 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview 監査 (プレミアム) では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: 51add6560c12994470f5a6ad96fce5c3f293f4f7
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 4f936977c71a933dd05e5c0b2e0d2111b03bc8f7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972829"
+ms.locfileid: "64999500"
 ---
 # <a name="microsoft-purview-audit-premium"></a>Microsoft Purview 監査 (プレミアム)
+
+> [!TIP]
+> *9 つの Microsoft Purview ソリューションすべてのプレミアム バージョンを無料で試すことができることをご存知ですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べてください。 Microsoft 365 E3 および Office 365 E3 のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)からいますぐ開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview の[監査機能](search-the-audit-log-in-security-and-compliance.md)を使用すると、組織は Microsoft 365 のさまざまなサービスにわたって、さまざまな種類の監査済みアクティビティを可視化できます。 Microsoft Purview 監査 (プレミアム) は、調査の実施に必要な監査ログの保持力を拡大することで、組織によるフォレンジックおよびコンプライアンスの調査を支援します。これにより、(Microsoft Purview コンプライアンス ポータルと Office 365 マネージメント アクティビティ API の監査ログの検索を使用することにより) 侵害の範囲の特定に役立つ重要なイベントへのアクセスおよび Office 365 マネージメント アクティビティ API への迅速なアクセスが提供されます。
 

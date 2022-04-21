@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 監査ソリューション
+title: Microsoft Purview 監査ソリューション
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,20 +19,20 @@ search.appverid:
 - MET150
 description: Microsoft 365 組織内のユーザーや管理者のアクティビティを監査する方法をご紹介します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ab97dc632aeaf13109380fb9a5586594c63ebaa
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c7c6461868ee212e6b332181b9dea1560ce49558
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949059"
+ms.locfileid: "64953741"
 ---
-# <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 での監査ソリューション
+# <a name="auditing-solutions-in-microsoft-purview"></a>Microsoft Purview での監査ソリューション
 
-Microsoft 365 監査ソリューションは、セキュリティ イベント、フォレンジック調査、内部調査、コンプライアンス義務に組織が効果的に対応するための統合ソリューションが用意されています。 何十もの Microsoft 365 サービスやソリューションで実行された何千ものユーザーや管理者の操作は、組織の統一された監査ログにキャプチャされ、記録されて保持されます。 これらのイベントの監査記録は、組織内のセキュリティ オペレーション、IT 管理者、インサイダー リスク チーム、コンプライアンスや法務調査担当者が検索できます。 この機能により、Microsoft 365 の組織全体で行われているアクティビティを可視化することができます。
+Microsoft Purview 監査ソリューションは、セキュリティ イベント、フォレンジック調査、内部調査、コンプライアンス義務に組織が効果的に対応するための統合ソリューションが用意されています。 何十もの Microsoft 365 サービスやソリューションで実行された何千ものユーザーや管理者の操作は、組織の統一された監査ログにキャプチャされ、記録されて保持されます。 これらのイベントの監査記録は、組織内のセキュリティ オペレーション、IT 管理者、インサイダー リスク チーム、コンプライアンスや法務調査担当者が検索できます。 この機能により、Microsoft 365 の組織全体で行われているアクティビティを可視化することができます。
 
-## <a name="microsoft-365-auditing-solutions"></a>Microsoft 365 監査ソリューション
+## <a name="microsoft-purview-auditing-solutions"></a>Microsoft Purview 監査ソリューション
 
-Microsoft Purview は、監査 (標準) と監査 (プレミアム) の 2 つの監査ソリューションを提供します。
+Microsoft Purview では、監査 (標準) と監査 (プレミアム) の 2 つの監査ソリューションが用意されています。
 
 ![監査 (標準) および監査 (プレミアム) の主な機能。](..\media\AuditingSolutionsComparison.png)
 
@@ -94,7 +94,7 @@ Microsoft Purview 監査 (標準) では、監査されたアクティビティ�
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
-以下のセクションでは、監査 (標準) と監査 (プレミアム) のライセンス要件を特定します。 監査 (標準) 機能は高度な監査に含まれています。
+以下のセクションでは、監査 (標準) と監査 (プレミアム) のライセンス要件を特定します。 監査 (標準) 機能は、監査 (プレミアム) に付属しています。
 
 ### <a name="audit-standard"></a>監査 (標準)
 
@@ -126,11 +126,11 @@ Microsoft Purview 監査 (標準) では、監査されたアクティビティ�
 - Office 365 Enterprise E5 サブスクリプション
 - Office 365 Education A5 サブスクリプション
 
-## <a name="set-up-microsoft-365-auditing-solutions"></a>Microsoft 365 監査ソリューションの設定
+## <a name="set-up-microsoft-purview-auditing-solutions"></a>Microsoft Purview 監査ソリューションの設定
 
-Microsoft 365 の監査ソリューションの使用を開始するには、以下のセットアップ ガイダンスを参照してください。
+Microsoft Purview の監査ソリューションの使用を開始するには、以下のセットアップ ガイダンスを参照してください。
 
-### <a name="set-up-audit-standard"></a>監査の設定 (標準)
+### <a name="set-up-audit-standard"></a>監査 (標準) の設定
 
 最初の手順は、監査 (標準) を設定し、監査ログ検索を開始します。
 
@@ -144,7 +144,7 @@ Microsoft 365 の監査ソリューションの使用を開始するには、以
 
 詳しい説明は、「[監査 (標準) の設定](set-up-basic-audit.md)」をご覧ください。
 
-### <a name="set-up-audit-premium"></a>監査の設定 (プレミアム)
+### <a name="set-up-audit-premium"></a>監査 (プレミアム) の設定
 
 監査 (プレミアム) をサポートするサブスクリプションがある場合は、以下の手順で監査 (プレミアム) の追加機能を設定し、使用することができます。
 
@@ -152,7 +152,7 @@ Microsoft 365 の監査ソリューションの使用を開始するには、以
 
 1. ユーザーの監査 (プレミアム) を設定します。 この手順は、次のタスクで構成されています。
 
-   - ユーザーに監査 (プレミアム) の適切なライセンスまたはアドオン・ライセンスが割り当てられていることを確認します。
+   - ユーザーに監査 (プレミアム) の適切なライセンスまたはアドオン ライセンスが割り当てられていることを確認します。
   
    - それらのユーザーに対して監査 (プレミアム) アプリ/サービス プランを有効にします。
   
