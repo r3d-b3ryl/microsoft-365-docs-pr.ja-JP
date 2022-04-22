@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のレコードの管理
+title: Microsoft Purview レコード管理の詳細
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,21 +20,26 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: Microsoft 365 のレコード管理を使用すると、保持スケジュールをファイル計画に適用し、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: ce00fdfc6db90b9c65051a31e8768d6cd661072d
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+description: Microsoft Purview レコード管理が、ビジネス、法律、または規制の記録管理要件に対応する高価値のアイテムをどのようにサポートしているかをご覧ください。
+ms.openlocfilehash: dd554b4369a1f721d306bc301519ce3ef59e4569
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755672"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998532"
 ---
-# <a name="learn-about-records-management-in-microsoft-365"></a>Microsoft 365 でのレコード管理について説明します。
+# <a name="learn-about-records-management"></a>レコード管理の詳細
+
+> [!TIP]
+> *9 つの Microsoft Purview ソリューションすべてのプレミアム バージョンを無料で試すことができることをご存知ですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べてください。 Microsoft 365 E3 および Office 365 E3 のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から今すぐ開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-規制や法律上、および事業運営上重要な記録を企業データ全体で管理するためのレコード管理ソリューションはあらゆる組織で必要です。Microsoft 365 のレコード管理は、組織が法的な義務行為を管理できるようにし、規制を遵守できる機能を提供します。これにより、事業運営上、保持する必要がなくなった、価値がなくなった、または不要になったアイテムを定期的に処分することができ、効率向上につながります。
+規制や法律上、および事業運営上重要な記録を企業データ全体で管理するためのレコード管理ソリューションはあらゆる組織で必要です。Microsoft Purview のレコード管理は、組織が法的な義務行為を管理できるようにし、規制を遵守できる機能を提供します。これにより、事業運営上、保持する必要がなくなった、価値がなくなった、または不要になったアイテムを定期的に処分することができ、効率向上につながります。
 
-Microsoft 365 のレコード管理ソリューションをサポートするには、次の機能を使用します。
+Microsoft 365 サービスおよびアプリのレコード管理ソリューションをサポートするには、次の機能を使用します。
 
 - **コンテンツをレコードとして分類する**。コンテンツを [レコード](#records)としてマークする保持ラベルを作成および構成します。レコードは、ユーザーが適用することも、機密情報、キーワード、またはコンテンツ タイプを識別することにより自動的に適用することもできます。
 
@@ -92,9 +97,9 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 
 脚注:
 
-<sup>1</sup> ロックされたレコードのプロパティの編集は既定で許可されますが、[[Microsoft 365 コンプライアンス センター]](https://compliance.microsoft.com/) > **[レコード管理]** > **[レコード管理設定]** > **[保持ラベル]** > **[レコードのプロパティの編集を許可する]** のテナント設定によりブロックできます。
+<sup>1</sup> ロックされたレコードのプロパティの編集は既定で許可されますが、[[Microsoft Purview コンプライアンス ポータル]](https://compliance.microsoft.com/) > **[レコード管理]** > **[レコード管理設定]** > **[保持ラベル]** > **[レコードのプロパティの編集を許可する]** のテナント設定によりブロックできます。
 
-<sup>2</sup> SharePoint および OneDrive のラベル付きアイテムの削除は、[[Microsoft 365 コンプライアンス センター]](https://compliance.microsoft.com/) > **[レコード管理]** > **[レコード管理設定]** > **[保持ラベル]** > **[アイテムの削除]** で、テナント設定としてブロックできます。
+<sup>2</sup> SharePoint および OneDrive のラベル付きアイテムの削除は、[[Microsoft Purview コンプライアンス ポータル]](https://compliance.microsoft.com/) > **[レコード管理]** > **[レコード管理設定]** > **[保持ラベル]** > **[アイテムの削除]** で、テナント設定としてブロックできます。
 
 ドキュメントが添付されているリスト アイテムに保持ラベルを適用する場合、そのドキュメントは保持設定を継承せず、リスト アイテムから削除されます。 対照的に、そのリスト アイテムが保持ラベル付きのレコードとして宣言された場合、ドキュメントの添付ファイルは保持設定を継承し、削除されません。
 

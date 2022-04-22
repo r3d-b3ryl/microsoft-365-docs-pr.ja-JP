@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: MailItemsAccessed メールボックス監査アクションを使用して、侵害されたユーザー アカウントのフォレンシック調査を実行します。
-ms.openlocfilehash: 658a4b079bd7909f8436867efd86d3ac04d61aa2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2256e331075074348e2a72d6528bed1944567b94
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946201"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996198"
 ---
 # <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>Microsoft Purview 監査 (プレミアム) を使用して、侵害されたアカウントを調査する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 侵害されたユーザー アカウント (*アカウントの乗っ取り* とも呼ばれます) は、攻撃者がユーザー アカウントへのアクセス権を取得し、ユーザーとして操作する場合の攻撃の種類です。 これらのタイプの攻撃は、攻撃者が意図していたよりも多くの損害を引き起こすことがあります。 侵害されたメール アカウントを調査する場合、攻撃者の実際の存在を追跡する中で示されるよりも多くのメール データが侵害されたと想定する必要があります。 メール メッセージのデータの種類によっては、機密情報が漏えいしていないことを証明できない限り、機密情報が侵害されたと見なすか、または規制当局の罰金に直面する必要があります。 たとえば、HIPAA の規制対象となる組織は、患者の健康情報 (PHI) が漏えいした証拠がある場合、多額の罰金に直面します。 これらの場合、攻撃者が PHI に関心を持つことはほとんどありませんが、組織は、別の方法で証明できない限りはデータ侵害を報告する必要があります。
 
