@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 description: Microsoft 365 組織内のユーザーや管理者のアクティビティを監査する方法をご紹介します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7c6461868ee212e6b332181b9dea1560ce49558
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: ee11ee5e02ee4342921776124813b71cf4468ad7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953741"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001414"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Microsoft Purview での監査ソリューション
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 監査ソリューションは、セキュリティ イベント、フォレンジック調査、内部調査、コンプライアンス義務に組織が効果的に対応するための統合ソリューションが用意されています。 何十もの Microsoft 365 サービスやソリューションで実行された何千ものユーザーや管理者の操作は、組織の統一された監査ログにキャプチャされ、記録されて保持されます。 これらのイベントの監査記録は、組織内のセキュリティ オペレーション、IT 管理者、インサイダー リスク チーム、コンプライアンスや法務調査担当者が検索できます。 この機能により、Microsoft 365 の組織全体で行われているアクティビティを可視化することができます。
 
@@ -130,7 +132,7 @@ Microsoft Purview 監査 (標準) では、監査されたアクティビティ�
 
 Microsoft Purview の監査ソリューションの使用を開始するには、以下のセットアップ ガイダンスを参照してください。
 
-### <a name="set-up-audit-standard"></a>監査 (標準) の設定
+### <a name="set-up-audit-standard"></a>監査の設定 (標準)
 
 最初の手順は、監査 (標準) を設定し、監査ログ検索を開始します。
 
@@ -144,7 +146,7 @@ Microsoft Purview の監査ソリューションの使用を開始するには�
 
 詳しい説明は、「[監査 (標準) の設定](set-up-basic-audit.md)」をご覧ください。
 
-### <a name="set-up-audit-premium"></a>監査 (プレミアム) の設定
+### <a name="set-up-audit-premium"></a>監査の設定 (プレミアム)
 
 監査 (プレミアム) をサポートするサブスクリプションがある場合は、以下の手順で監査 (プレミアム) の追加機能を設定し、使用することができます。
 

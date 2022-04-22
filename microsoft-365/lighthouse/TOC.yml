@@ -1,54 +1,54 @@
 - name: Microsoft 365 Lighthouse
   items:
-    - name: 概要 Microsoft 365 Lighthouse
+    - name: Microsoft 365 Lighthouseの概要
       href: m365-lighthouse-overview.md
-    - name: ユーザーの要件Microsoft 365 Lighthouse
+    - name: Microsoft 365 Lighthouseの要件
       href: m365-lighthouse-requirements.md
 - name: 作業の開始
   items:
     - name: サインアップ
       href: m365-lighthouse-sign-up.md
-- name: セキュリティで保護Microsoft 365 Lighthouse
+- name: セキュリティで保護されたMicrosoft 365 Lighthouse
   items:
     - name: ポータル のセキュリティを構成する
       href: m365-lighthouse-configure-portal-security.md
     - name: アクセス許可の概要
       href: m365-lighthouse-overview-of-permissions.md
-    - name: 監査ログの確認
+    - name: 監査ログを確認する
       href: m365-lighthouse-review-audit-logs.md
 - name: ベースラインを使用して顧客を保護する
   items:
-    - name: 基準計画を使用した標準テナント構成の展開の概要
+    - name: ベースラインを使用した標準テナント構成のデプロイの概要
       href: m365-lighthouse-deploy-standard-tenant-configurations-overview.md
-    - name: ベースラインの展開
+    - name: ベースラインをデプロイする
       href: m365-lighthouse-deploy-baselines.md
-- name: テナントの管理
+- name: テナントを管理する
   items:
-    - name: テナント ページの概要
+    - name: '[テナント] ページの概要'
       href: m365-lighthouse-tenants-page-overview.md
-    - name: テナントリストの管理
+    - name: テナント リストを管理する
       href: m365-lighthouse-manage-tenant-list.md
-    - name: テナント サービスの正常性の表示
+    - name: テナント サービスの正常性を表示する
       href: m365-lighthouse-view-service-health.md
 - name: テナント内のユーザーを管理する
   items:
     - name: '[ユーザー] ページの概要'
       href: m365-lighthouse-users-page-overview.md
-    - name: ユーザーのサインインをブロックする
+    - name: ユーザー サインインをブロックする
       href: m365-lighthouse-block-user-signin.md
     - name: 多要素認証の管理
       href: m365-lighthouse-manage-mfa.md
-    - name: セルフサービスパスワードのリセットを管理する
+    - name: セルフサービスのパスワード リセットを管理する
       href: m365-lighthouse-manage-sspr.md
-    - name: ユーザー パスワードのリセット
+    - name: ユーザー パスワードをリセットする
       href: m365-lighthouse-reset-user-password.md
-    - name: ユーザーの検索
+    - name: ユーザーを検索する
       href: m365-lighthouse-search-for-users.md
-    - name: リスクの高いユーザーの表示と管理
+    - name: 危険なユーザーを表示および管理する
       href: m365-lighthouse-view-manage-risky-users.md
 - name: デバイスの管理
   items:
-    - name: デバイス コンプライアンス ページの概要
+    - name: '[デバイス コンプライアンス] ページの概要'
       href: m365-lighthouse-device-compliance-page-overview.md
     - name: デバイス コンプライアンス ポリシーの設定を比較する
       href: m365-lighthouse-compare-compliance-policies.md
@@ -58,7 +58,7 @@
   items:
     - name: 脅威管理ページの概要
       href: m365-lighthouse-threat-management-page-overview.md
-    - name: 脅威を軽減するには、Microsoft Defender ウイルス対策
+    - name: Microsoft Defender ウイルス対策を使用して脅威を軽減する
       href: m365-lighthouse-mitigate-threats.md
 - name: ヘルプとサポートを利用する
   items:
@@ -66,7 +66,7 @@
       href: m365-lighthouse-get-help-and-support.md
     - name: 既知の問題
       href: m365-lighthouse-known-issues.md
-    - name: 問題とエラー メッセージのトラブルシューティングと解決
+    - name: エラー メッセージと問題のトラブルシューティング
       href: m365-lighthouse-troubleshoot.md
     - name: よく寄せられる質問 (FAQ)
       href: m365-lighthouse-faq.yml

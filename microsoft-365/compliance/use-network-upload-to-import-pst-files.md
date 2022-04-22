@@ -19,17 +19,19 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8d63b83f8052fdd3ce973bba15df72ee4c7d6989
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 10a0b2e076c3a8d4fc6910e16ba89c3ce75d2d2d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935437"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999808"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!NOTE]
-> この記事は管理者向けです。自分のメールボックスに PST ファイルをインポートする場合は、「[Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。
+> この記事は管理者向けです。 自分のメールボックスに PST ファイルをインポートしようとしていますか? 「[Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。
   
 ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のメールボックスに一括インポートするために必要なステップ バイ ステップによる手順を以下に示します。 ネットワーク アップロードを使用した Microsoft 365 メールボックスへの PST ファイルの一括インポートについてよく寄せられる質問については、「[ネットワーク アップロードを使用して PST ファイルをインポートすることについてよく寄せられる質問](./faqimporting-pst-files-to-office-365.yml#using-network-upload-to-import-pst-files)」を参照してください。
   
@@ -138,7 +140,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
 
     次の表は、azcopy.exe のフィールドとそれに必要な値を説明したものです。前の手順で取得した情報は、これらのフィールドの値に使用されます。
 
-    | Field | 説明 |
+    | フィールド | 説明 |
     |:-----|:-----|
     | ソース |最初のフィールドは、Microsoft 365 にアップロードされる PST ファイルを含む組織内のソース ディレクトリを指定します。 または、アップロードする PST ファイルのソースの場所として、Azure Storage の場所を指定することもできます。 <br/> このフィールドの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> <br/>**例**: <br/>`"\\FILESERVER01\PSTs"` <br/> または  <br/>`"https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx"`|  
     | Destination (転送先) |手順 1 で取得した SAS URL を指定します。  <br/> このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。<br/><br/>**注:** スクリプトまたはバッチ ファイルで SAS URL を使用している場合は、エスケープする必要がある特定の文字に注意する必要があります。たとえば、`%` を `%%` に変更し、`&` を `^&` に変更してください。<br/><br/>**ヒント:** (省略可能) PST ファイルをアップロードする Azure Storage の場所にサブフォルダーを指定できます。 SAS URL で ("ingestiondata" の後に) サブフォルダーの場所を追加してこの操作を行います。 最初の例では、サブフォルダーを指定しません。 つまり、PST は、Azure Storage の場所の (*ingestiondata* という名前の) ルートにアップロードされます。 2 つ目の例では、PST ファイルを Azure Storage の場所のルートにある (*PSTFiles* という名前の) サブフォルダーにアップロードします。  <br/><br/>**例**: <br/> `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> または  <br/>  `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |

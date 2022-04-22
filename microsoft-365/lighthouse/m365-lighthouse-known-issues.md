@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) については、機能領域別の Lighthouse の既知の問題の一覧を参照してください。
-ms.openlocfilehash: 3be71d225f1aa9974bb73e3b2e9d421ea81e16fa
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: aa3b5980b60e966b4edfbac4a6e8d706c399e943
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824358"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022780"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseに関する既知の問題
 
@@ -91,5 +91,5 @@ ms.locfileid: "64824358"
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)\
-[Microsoft 365 Lighthouseの問題とエラー メッセージのトラブルシューティングと解決](m365-lighthouse-troubleshoot.md) (記事)\
+[Microsoft 365 Lighthouseのエラー メッセージと問題のトラブルシューティング](m365-lighthouse-troubleshoot.md) (記事)\
 [Microsoft 365 Lighthouseのヘルプとサポートを受ける](m365-lighthouse-get-help-and-support.md) (記事)

@@ -18,14 +18,16 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 管理者は、Microsoft 365 の電子情報開示ツールを使用して、Exchange ハイブリッド展開のオンプレミス ユーザーの Teams チャット データを検索してエクスポートできます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b77a5178237e7ae25f710c8cc9574449f67a4f2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e1f15922e84a68538e20ccb3ad0030bd5c2bd5f1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945871"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995362"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>オンプレミス ユーザーの Teams チャット データを検索する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 組織に Exchange ハイブリッド展開がある場合 (または、組織がオンプレミス Exchange 組織を Office 365 と同期している場合)、Microsoft Teams を有効にしている場合、オンプレミス ユーザーは Teams チャット アプリケーションを使用してインスタント メッセージングを利用できます。 クラウドベースのユーザーの場合、Teams チャット データ (*1x1 または 1xN チャット* とも呼ばれます) は、プライマリ クラウドベースのメールボックスに保存されます。 オンプレミス ユーザーが Teams チャット アプリケーションを使用する場合、そのチャット メッセージはオンプレミスにあるプライマリ メールボックスに保存できません。 この制限を回避するために、Microsoft は、クラウドベースのストレージ領域を作成する新機能をリリースしました。これにより、電子情報開示ツールを使用して、オンプレミス ユーザーの Teams チャット データを検索およびエクスポートできます。
   

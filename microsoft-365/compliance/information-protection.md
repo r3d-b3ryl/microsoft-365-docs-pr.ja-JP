@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 の Microsoft Information Protection
+title: Microsoft Purview Information Protection
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,27 +17,32 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 recommendations: false
-description: Microsoft Information Protection (MIP) 機能を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
-ms.openlocfilehash: 2fccdafa662bfdf8390a53ac535c571f52f673de
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+description: Microsoft Purview Information Protection 機能を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
+ms.openlocfilehash: ac6627d620169aca962f85f30c98d830b4a34a9f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187331"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999874"
 ---
-# <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 の Microsoft Information Protection
+# <a name="protect-your-sensitive-data-with-microsoft-purview"></a>Microsoft Purview を使用して機密データを保護する
+
+> [!TIP]
+> *9 つの Microsoft Purview ソリューションすべてのプレミアム バージョンを無料で試すことができることをご存知ですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べてください。   Microsoft 365 E3 および Office 365 E3 のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)からいますぐ開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 セキュリティとコンプライアンスのライセンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Microsoft Information Protection (MIP) の機能を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報の検出、分類、保護が可能になります。
+**Microsoft Purview Information Protection** (以前の Microsoft Information Protection) の機能を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報の検出、分類、保護が可能になります。
 
-MIP 機能は Microsoft 365 コンプライアンスに含まれており、[データを把握](#know-your-data)し、[データを保護](#protect-your-data)し、[データの損失を防止する](#prevent-data-loss)ためのツールを提供しています。
+これらの情報保護機能は、[データを把握](#know-your-data)し、[データを保護](#protect-your-data)し、[データの損失を防止する](#prevent-data-loss)ためのツールを提供しています。
 
-![MIP が機密性の高いデータの検出、分類、保護にどのように役立つかについての画像。](../media/powered-by-intelligent-platform.png)
+![Microsoft Purview Information Protection が機密データの検出、分類、および保護にどのように役立つかを示す画像。](../media/powered-by-intelligent-platform.png)
 
-組織に MIP ソリューションを展開するための規範的なガイダンスについては、「[Microsoft の情報保護ソリューションの展開](information-protection-solution.md)」を参照してください。
+組織に Microsoft Purview 情報保護ソリューションを展開するための規範的なガイダンスについては、「[Microsoft Purview の情報保護ソリューションを展開する](information-protection-solution.md)」を参照してください。
 
-データの管理については、「[Microsoft 365 の Microsoft 情報ガバナンス](manage-Information-governance.md)」を参照してください。
+データの管理については、「[Microsoft Purview を使用してデータを管理する](manage-Information-governance.md)」を参照してください。
 
 ## <a name="know-your-data"></a>データを把握する
 
@@ -64,7 +69,7 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 [Rights Management コネクタ](/azure/information-protection/deploy-rms-connector) |Exchange や SharePoint Server を使用する既存のオンプレミスの展開か、または Windows Server とファイル分類インフラストラクチャ (FCI) を実行するファイル サーバーを保護する場合に限ります。 | [RMS コネクタを展開する手順](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure Information Protection 統合ラベル付けスキャナー](/azure/information-protection/deploy-aip-scanner)| オンプレミスのデータ ストア内にある機密情報の検出、ラベル付け、保護を行います。 | [Azure Information Protection 統合ラベル付けスキャナーの構成とインストール](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| クラウド上のデータ ストア内にある機密情報の検出、ラベル付け、保護を行います。 | [クラウドに保存されている規制対象データや機密データを検出し、分類し、ラベル付けし、保護する](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|[Azure Purview](/azure/purview/overview) |機密データを識別し、Azure Purview アセットのコンテンツに自動ラベル付けを適用します。 これには、Azure Data Lake や Azure Files などのストレージ内のファイル、および Azure SQL DB や Cosmos DB の列などのスキーマ化されたデータが含まれます。 |[Azure Purview でのラベル付け](/azure/purview/create-sensitivity-label) |
+|[Microsoft Purview データ マップ](/azure/purview/overview) |機密データを識別し、Microsoft Purview データ マップ アセットのコンテンツに自動ラベル付けを適用します。 これには、Azure Data Lake や Azure Files などのストレージ内のファイル、および Azure SQL DB や Cosmos DB の列などのスキーマ化されたデータが含まれます。 |[Microsoft Purview データ マップでのラベル付け](/azure/purview/create-sensitivity-label) |
 |[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|秘密度ラベルの適用をサードパーティ製アプリやサービスに拡大します。 <br /><br />  サンプル シナリオ: [秘密度ラベルの設定と取得 (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK の設定と構成](/information-protection/develop/setup-configure-mip)|
 
 
@@ -75,12 +80,12 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 
 |機能|解決される問題|作業の開始|
 |:------|:------------|:---------------------|
-|[データ損失防止](dlp-learn-about-dlp.md)| 機密アイテムの意図しない共有の防止をサポートします。 | [既定の DLP ポリシーの使用を開始する](get-started-with-the-default-dlp-policy.md)|
+|[Microsoft Purview データ損失防止](dlp-learn-about-dlp.md)| 機密アイテムの意図しない共有の防止をサポートします。 | [既定の DLP ポリシーの使用を開始する](get-started-with-the-default-dlp-policy.md)|
 |[エンドポイントのデータ損失防止](endpoint-dlp-learn-about.md)| Windows 10 コンピューターで使用され共有されるアイテムに DLP 機能を拡張します。 | [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md)|
 |[Microsoft Compliance Extension](dlp-chrome-learn-about.md) | Chrome ブラウザーに DLP 機能を拡張します | [Microsoft Compliance Extension を開始する](dlp-chrome-get-started.md)|
-|[Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー)](dlp-on-premises-scanner-learn.md)|ファイル アクティビティの DLP 監視とそれらのファイルの保護アクションを、オンプレミスのファイル共有と SharePoint フォルダーおよびドキュメント ライブラリに拡張します。|[Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) の使用を開始する](dlp-on-premises-scanner-get-started.md)|
+|[Microsoft Purview のデータ損失防止のオンプレミス スキャナー (プレビュー)](dlp-on-premises-scanner-learn.md)|ファイル アクティビティの DLP 監視とそれらのファイルの保護アクションを、オンプレミスのファイル共有と SharePoint フォルダーおよびドキュメント ライブラリに拡張します。|[Microsoft Purview のデータ損失防止のオンプレミス スキャナー (プレビュー) の使用を開始する](dlp-on-premises-scanner-get-started.md)|
 |[Microsoft Teams のチャットやチャネル メッセージでの機密情報の保護](dlp-microsoft-teams.md) | 一部の DLP 機能を Teams のチャットおよびチャネル メッセージに拡張します | [Microsoft Teams の既定のデータ損失防止ポリシーについての詳細情報 (プレビュー)](dlp-teams-default-policy.md)|
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
-MIP のライセンス要件は、このページにリストされている各機能のライセンス要件を設定するのではなく、使用するシナリオと機能によって異なります。 MIP のライセンス要件とオプションを理解するには、[セキュリティとコンプライアンスに関するMicrosoft 365ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)の **情報保護** セクションと、機能レベルのライセンス要件に関す[PDF ダウンロード](https://go.microsoft.com/fwlink/?linkid=2139145)を参照してください。
+Microsoft Purview Information Protection のライセンス要件は、このページにリストされている各機能のライセンス要件を設定するのではなく、使用するシナリオと機能によって異なります。 Microsoft Purview Information Protection のライセンス要件とオプションを理解するには、[セキュリティとコンプライアンスに関するMicrosoft 365ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)の **情報保護** セクションと、機能レベルのライセンス要件に関す [PDF ダウンロード](https://go.microsoft.com/fwlink/?linkid=2139145)を参照してください。

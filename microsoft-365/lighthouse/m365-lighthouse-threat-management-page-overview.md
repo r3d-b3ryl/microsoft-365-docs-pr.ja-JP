@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Lighthouse脅威管理ページの概要
+title: Microsoft 365 Lighthouseの [脅威管理] ページの概要
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) については、脅威管理ページを参照してください。
-ms.openlocfilehash: 94e71d648dac3a285ecef81b4dae29305cf7e98c
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: fea297845446bd8cbb14c81851afb5d51ce33717
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823170"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023351"
 ---
-# <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse脅威管理ページの概要 
+# <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの [脅威管理] ページの概要 
 
 **適用対象:**
 

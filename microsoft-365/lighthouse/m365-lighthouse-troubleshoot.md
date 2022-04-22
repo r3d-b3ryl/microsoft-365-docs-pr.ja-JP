@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Lighthouseの問題とエラー メッセージのトラブルシューティングと解決
+title: Microsoft 365 Lighthouseのエラー メッセージと問題のトラブルシューティング
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,15 +15,15 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、エラー メッセージと問題のトラブルシューティングと解決に関するヘルプを参照してください。
-ms.openlocfilehash: 1126db76129a0f3cf6b65921a6e731f02d7311d3
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、エラー メッセージと問題のトラブルシューティングに関するヘルプを参照してください。
+ms.openlocfilehash: 3da40291742ae85ef897aeceae0def27aca8abe2
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824072"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023219"
 ---
-# <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの問題とエラー メッセージのトラブルシューティングと解決
+# <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseのエラー メッセージと問題のトラブルシューティング
 
 この記事では、Microsoft 365 Lighthouseの使用中に発生する可能性のあるエラー メッセージと問題について説明し、それらを解決するために実行できるトラブルシューティング手順について説明します。
 

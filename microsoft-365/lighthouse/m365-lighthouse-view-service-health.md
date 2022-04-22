@@ -1,5 +1,5 @@
 ---
-title: テナント サービスの正常性を表示する
+title: Microsoft 365 Lighthouseでテナント サービスの正常性を表示する
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、テナント サービスの正常性を表示する方法について説明します。
-ms.openlocfilehash: 5c15e004108606ce00a90e0fa3d675d00806b430
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: c5cfed4449fbdbb6cb63bc80dfd8e23ca4d5c4bb
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822718"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023615"
 ---
-# <a name="view-tenant-service-health"></a>テナント サービスの正常性を表示する
+# <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでテナント サービスの正常性を表示する
 
 Microsoft 365 Lighthouseで管理するテナントのサービス正常性を表示できます。 サービス正常性には、Microsoft Intune、Azure Active Directory (Azure AD) ID サービス、モバイル デバイス管理 (MDM) クラウド サービスなど、いくつかのサービスのインシデントとアドバイザリが含まれます。 また、インシデントの影響を受けるマネージド テナントの数も確認できます。 たとえば、いずれかのテナントで問題が発生している場合は、サービス正常性 ページを確認して、進行中の解決策に関する既知の問題か、最近の変更が影響を与えている可能性があるかどうかを判断できます。 これにより、トラブルシューティングにかかる時間が短縮され、サポートの呼び出しが減る可能性があります。
 

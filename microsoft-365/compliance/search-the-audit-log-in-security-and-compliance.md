@@ -21,14 +21,16 @@ description: Microsoft Purview コンプライアンス ポータルを使用し
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: f35bfbbe299495e912d018bd00615964f883031e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c0f26bbda2ba28b98fc80b80ce4a520d9fb39c3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936271"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998906"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 その場合は、Microsoft Purview コンプライアンス ポータルで監査ログ検索を使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 何十もの Microsoft 365 サービスやソリューションで実行された何千ものユーザーや管理者の操作は、組織の統一された監査ログにキャプチャされ、記録されて保持されます。 組織内のユーザーは、監査ログ検索ツールを使用して、これらの操作の監査レコードを検索、表示、(CSV ファイルに) エクスポートできます。
 
@@ -120,7 +122,7 @@ ms.locfileid: "64936271"
 
   詳細については、「[監査ログの検索を無効にする](turn-audit-log-search-on-or-off.md)」を参照してください。
 
-- 前述のように、監査ログの検索に使用される基礎となるコマンドレットは Exchange Online コマンドレットの **Search-UnifiedAuditLog** です。 つまり、コンプライアンス ポータルの **[監査]** ページにある検索ツールを使う代わりに、このコマンドレットを使用して監査ログを検索できます。 このコマンドレットは、Exchange Online PowerShell で実行する必要があります。 詳細については、「[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)」を参照してください。
+- 前述のように、監査ログの検索に使用される基になるコマンドレットは Exchange Online コマンドレットであり、これは **Search-UnifiedAuditLog** です。つまり、コンプライアンス ポータルの **[監査]** ページにある検索ツールを使用する代わりに、このコマンドレットを使用して監査ログを検索できます。 このコマンドレットは、Exchange Online PowerShell で実行する必要があります。 詳細については、[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) を参照してください。
 
   **Search-UnifiedAuditLog** コマンドレットによって返された検索結果を CSV ファイルにエクスポートする方法の詳細については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)」の「監査ログをエクスポート、表示するためのヒント」のセクションを参照してください。
 
@@ -428,7 +430,7 @@ ms.locfileid: "64936271"
 |(なし)|FileModifiedExtended|これは、"ファイルの変更" (FileModified) アクティビティに関連しています。同じユーザーが長時間 (最大 3 時間) にわたって、ファイルの変更を継続的に行うと、FileModifiedExtended イベントがログに記録されます。 <br/><br/> FileModifiedExtended イベントをログに記録する目的は、ファイルの変更が継続的に行われたときにログに記録される FileModified イベントの数を減らすことにあります。これにより、本質的に同じユーザーのアクティビティであるファイル変更に対する無意味な複数の FileModified レコードを減り、初期 (のより重要な) FileModified イベントに注目できます。|
 |ファイルの移動|FileMoved|ユーザーがドキュメントをサイトの現在の場所から新しい場所に移動しました。|
 |(なし)|FilePreviewed|ユーザーが SharePoint または OneDrive for Business サイトにあるファイルをプレビューします。 通常、これらのイベントは、イメージ ギャラリーの表示などの 1 つのアクティビティに基づいて、大きいボリュームで発生します。|
-|実行された検索クエリ|SearchQueryPerformed|ユーザーまたはシステム アカウントが SharePoint または OneDrive for Business で検索を実行します。 サービス アカウントにより検索クエリが実行される一般的なシナリオとして、電子開示情報の保留またはアイテム保持ポリシーがサイトおよび OneDrive アカウントに適用される場合や、保持ラベルまたは機密ラベルがサイト コンテンツに自動適用される場合があります。|
+|実行された検索クエリ|SearchQueryPerformed|ユーザーまたはシステム アカウントが SharePoint または OneDrive for Business で検索を実行します。サービス アカウントにより検索クエリが実行される一般的なシナリオとして、電子開示情報の保留またはアイテム保持ポリシーがサイトおよび OneDrive アカウントに適用される場合や、保持ラベルまたは機密ラベルがサイト コンテンツに自動適用される場合があります。|
 |リサイクルされたファイル | FileRecycled | ユーザーはファイルを SharePoint のごみ箱に移動しました。 |
 |リサイクルされたフォルダー | FolderRecycled | ユーザーはフォルダーを SharePoint のごみ箱に移動しました。 |
 |リサイクルされたファイルのすべてのマイナー バージョン|FileVersionsAllMinorsRecycled|ユーザーが、ファイルのバージョン履歴からすべてのマイナー バージョンを削除しました。削除されたバージョンは、サイトのごみ箱に移動されます。|
@@ -871,7 +873,7 @@ Shifts アプリのアクティビティの説明については、「[Microsoft
 
 ### <a name="microsoft-power-automate-activities"></a>Microsoft Power Automate のアクティビティ
 
-Power Automate (旧称: Microsoft Flow) では、監査ログを検索できます。 これらのアクティビティには、フローの作成、編集、および削除と、フローのアクセス許可の変更があります。 Power Automate アクティビティの監査の詳細については、ブログ「[コンプライアンス ポータルで利用可能になった Power Automate 監査イベント](https://flow.microsoft.com/blog/security-and-compliance-center)」を参照してください。
+Power Automate (旧称: Microsoft Flow) では、監査ログを検索できます。これらのアクティビティには、フローの作成、編集、および削除と、フローのアクセス許可の変更があります。Power Automate アクティビティの監査の詳細については、ブログ「[コンプライアンス ポータルで利用可能になった Power Automate 監査イベント](https://flow.microsoft.com/blog/security-and-compliance-center)」を参照してください。
 
 ### <a name="microsoft-power-apps-activities"></a>Microsoft Power Apps アクティビティ
 

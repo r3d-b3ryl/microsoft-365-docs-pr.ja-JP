@@ -1,5 +1,5 @@
 ---
-title: 危険なユーザーを表示および管理する
+title: Microsoft 365 Lighthouseでリスクの高いユーザーを表示および管理する
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、危険なユーザーを表示および管理する方法について説明します。
-ms.openlocfilehash: 0b7567404b909927a80b69184299baae131f8eb7
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: dad86fedeb27f13752bcd1c07efd0d51aa33cf2a
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824270"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022935"
 ---
-# <a name="view-and-manage-risky-users"></a>危険なユーザーを表示および管理する
+# <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでリスクの高いユーザーを表示および管理する
 
 Microsoft では、毎日何兆ものユーザー サインインシグナルを収集し、分析しています。 これらのシグナルは、適切なユーザー サインイン動作パターンを構築し、潜在的な危険なサインイン試行を特定するために使用されます。 Azure Active Directory (Azure AD) Identity Protection では、これらのシグナルを使用してユーザーのサインイン試行を確認し、疑わしいアクティビティがある場合はアクションを実行します。
 
@@ -44,7 +44,7 @@ Azure AD Identity Protection は、次のようなさまざまな種類のリス
 
 - 顧客テナントには、ユーザーごとに Azure AD Premium ライセンスが必要です。 Identity Protection Azure ADサポートするライセンスの詳細については、「Identity Protection とは[」を](/azure/active-directory/identity-protection/overview-identity-protection)参照してください。
 
-- 顧客テナントは Microsoft 365 Lighthouse 内でアクティブである必要があります。 テナントがアクティブかどうかを確認するには、「[テナントの概要Microsoft 365 Lighthouse」ページを](m365-lighthouse-tenant-list-overview.md)参照してください。
+- 顧客テナントは Microsoft 365 Lighthouse 内でアクティブである必要があります。 テナントがアクティブかどうかを確認するには、[Microsoft 365 LighthouseのWindows 365 (クラウド PC) ページの概要に関するページを](m365-lighthouse-tenant-list-overview.md)参照してください。
 
 ## <a name="review-detected-risks-and-take-action"></a>検出されたリスクを確認し、アクションを実行する
 

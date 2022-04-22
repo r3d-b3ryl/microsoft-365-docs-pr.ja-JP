@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Lighthouse テナント ページの概要
+title: Microsoft 365 Lighthouseの [テナント] ページの概要
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、「テナント」ページを参照してください。
-ms.openlocfilehash: 44111d62a9b8df9bf3b05ddbaa9cb4f3937159a4
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 7b8e26ddbe68059a9c5ecf4d5e396fd11c49be71
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823523"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023285"
 ---
-# <a name="microsoft-365-lighthouse-tenants-page-overview"></a>Microsoft 365 Lighthouse テナント ページの概要
+# <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの [テナント] ページの概要
 
 Microsoft 365 Lighthouseでは、左側のナビゲーション ウィンドウで **[テナント**] を選択して [テナント] ページを開くことで、テナント アカウントを管理できます。 [テナント] ページには、すべてのテナントの一覧が含まれています。 テナントを選択すると、連絡先の詳細やデプロイの状態などの詳細情報を表示できます。
 
@@ -70,7 +70,7 @@ Microsoft 365 Lighthouseでは、左側のナビゲーション ウィンドウ�
 
 ## <a name="tenant-tags"></a>テナント タグ
 
-テナントを整理し、既存のビューを簡単にフィルター処理できるように、テナントにタグを作成して割り当てることができます。 詳細については、「 [テナント一覧の管理」を参照してください](m365-lighthouse-manage-tenant-list.md)。
+テナントを整理し、既存のビューを簡単にフィルター処理できるように、テナントにタグを作成して割り当てることができます。 詳細については、「[Microsoft 365 Lighthouseでテナントリストを管理する](m365-lighthouse-manage-tenant-list.md)」を参照してください。
 
 > [!NOTE]
 > すべてのテナントに最大 30 個のタグを作成できます。
@@ -135,6 +135,6 @@ Microsoft 365使用法カードには、次の 2 つのセクションがあり�
 
 [Microsoft 365 Lighthouseの要件](m365-lighthouse-requirements.md) (記事)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)\
-[テナント リストの管理](m365-lighthouse-manage-tenant-list.md) (記事)\
-[ベースラインを使用して標準テナント構成をデプロイする概要](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (記事)\
+Microsoft 365 Lighthouse (記事)\ [でテナント リストを管理する](m365-lighthouse-manage-tenant-list.md)
+[Microsoft 365 Lighthouseベースラインを使用して標準テナント構成をデプロイする概要](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (記事)\
 [Microsoft 365 Lighthouseベースラインをデプロイする](m365-lighthouse-deploy-baselines.md) (記事)

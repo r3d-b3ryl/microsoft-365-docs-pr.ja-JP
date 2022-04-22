@@ -1,5 +1,5 @@
 ---
-title: Microsoft Bookings での従業員の勤務時間
+title: 従業員の勤務時間 - Microsoft Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Microsoft Bookings で従業員の勤務時間と空き時間を設定します。
-ms.openlocfilehash: f87a5f13ace9689cd838942e6558529659671238
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: ce248e964552b8e1258dbad999f865874ef898e2
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747272"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023329"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft Bookings での従業員の勤務時間
 

@@ -42,7 +42,7 @@
           href: device-onboarding-script.md
         - name: 非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
           href: device-onboarding-vdi.md
-    - name: macOS デバイスのオンボード (プレビュー)
+    - name: macOS デバイスをオンボードする
       items:
         - name: Microsoft 365 への macOS デバイスのオンボードに関する概要
           href: device-onboarding-macos-overview.md

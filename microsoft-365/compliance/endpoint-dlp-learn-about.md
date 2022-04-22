@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'エンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。コンプライアンス ソリューションでファイルが表示されます '
-ms.openlocfilehash: e84d2de72e05991a7d8374a2e5214df90fb939d9
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 76649559b1110c02f29584afdfb7e48f57a41f1e
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953307"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023373"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止について
 
@@ -95,7 +95,7 @@ DLP ポリシーの設計に関する詳細なガイダンスについては、�
 
 エンドポイント DLP は MIME の種類に基づいてアクティビティを監視するため、ファイルの拡張子が変更されてもアクティビティはキャプチャされます。
 
-### <a name="file-types-preview"></a>ファイルの種類 (プレビュー)
+### <a name="file-types"></a>ファイルの種類
 
 ファイルの種類は、特定のワークフローまたはビジネス領域を保護するために使用されるファイル形式のグループです。 DLP ポリシーでは、1 つ以上のファイルの種類を条件として使用できます。
 
@@ -107,7 +107,7 @@ DLP ポリシーの設計に関する詳細なガイダンスについては、�
 |アーカイブ  |ファイル アーカイブおよび圧縮ツール | .zip、.zipx、.dll、.7z、.tar、.gz        |
 |メール    |Outlook |.pst、.ost、.msg         |
 
-### <a name="file-extensions-preview"></a>ファイル拡張子 (プレビュー)
+### <a name="file-extensions"></a>ファイル拡張子
 
 ファイルの種類が、ポリシーの条件として一覧表示する必要があるファイル拡張子をカバーしていない場合は、代わりにコンマで区切られたファイル拡張子を使用できます。
 

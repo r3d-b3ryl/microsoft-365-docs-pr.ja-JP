@@ -1,5 +1,5 @@
 ---
-title: 多要素認証の管理
+title: Microsoft 365 Lighthouseで多要素認証を管理する
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse を使用するマネージド サービス プロバイダー (MSP) 向けに、多要素認証を管理する方法を説明します。
-ms.openlocfilehash: 5ab430e464fb2d20f9a911818f9fd6cb077d849e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 53f1b0fa9a477ae74b48c96f76f9b2523fe45c10
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326133"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023197"
 ---
-# <a name="manage-multifactor-authentication"></a>多要素認証の管理
+# <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseで多要素認証を管理する
 
 Azure Active Directory (Azure AD) 多要素認証 (MFA) は、データとアプリケーションへのアクセスを保護するのに役立ち、2 つ目の形式の認証を使用して別のセキュリティ層を提供します。 [多要素認証] タブには、テナント全体での MFA 有効化の状態に関する詳細情報が表示されます。 一覧から任意のテナントを選択すると、そのテナントの詳細が表示されます。これには、MFA を必要とする条件付きアクセス ポリシーが既に構成されているものと、MFA にまだ登録していないユーザーが含まれます。
 
@@ -69,7 +69,7 @@ Lighthouse によって既定のメール クライアントが開き、MFA に�
 
 ## <a name="next-steps"></a>次の手順
 
-MFA が有効になったら、Azure Active Directory (Azure AD) のセルフサービス パスワード リセットを有効にすることができます。 この機能を使用すると、管理者やヘルプ デスクの関与なしにパスワードを変更またはリセットできます。 詳細については、「[セルフサービスでパスワード リセットを管理する](m365-lighthouse-manage-sspr.md)」を参照してください。
+MFA が有効になったら、Azure Active Directory (Azure AD) のセルフサービス パスワード リセットを有効にすることができます。 この機能を使用すると、管理者やヘルプ デスクの関与なしにパスワードを変更またはリセットできます。 詳細については、「[Microsoft 365 Lighthouseでのセルフサービス パスワード リセットの管理](m365-lighthouse-manage-sspr.md)」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 

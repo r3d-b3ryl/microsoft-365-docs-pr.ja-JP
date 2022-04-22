@@ -1,5 +1,5 @@
 ---
-title: テナント リストを管理する
+title: Microsoft 365 Lighthouseでテナント リストを管理する
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、テナント リストを管理する方法について説明します。
-ms.openlocfilehash: 2f9d38bad24d20c53a1bafe44b1b831369957b71
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: b4bffcfd5b8962253e68938a956949ca8470f818
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824380"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022429"
 ---
-# <a name="manage-your-tenant-list"></a>テナント リストを管理する
+# <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでテナント リストを管理する
 
 Microsoft 365 Lighthouseでテナント リストを管理するために、カスタム タグをテナントに適用できます。 これらのタグは、テナントを整理するために使用でき、関連するテナント セットで使用可能な既存のビューと分析情報をフィルター処理するのにも役立ちます。 タグは、[テナント] ページから管理できます。 作成して割り当てると、タグに基づいてテナント、ユーザー、デバイス、脅威管理、およびWindows 365 ページ内のデータをフィルター処理できます。
 
@@ -106,4 +106,4 @@ Microsoft 365 Lighthouseでテナント リストを管理するために、カ�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 Lighthouseにサインアップする](m365-lighthouse-sign-up.md) (記事) [Microsoft 365 Lighthouse デバイス コンプライアンス ページの概要](m365-lighthouse-device-compliance-page-overview.md) (記事) [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)
+[Microsoft 365 Lighthouseにサインアップする](m365-lighthouse-sign-up.md) (記事) [Microsoft 365 Lighthouseの [デバイス コンプライアンス] ページの概要](m365-lighthouse-device-compliance-page-overview.md) (記事) [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)

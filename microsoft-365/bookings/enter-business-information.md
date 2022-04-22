@@ -1,5 +1,5 @@
 ---
-title: 勤務先情報を入力する
+title: Bookingsビジネス情報を入力する
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: 以下の手順に従って、会社名、住所、電話番号、Web サイトの URL、ロゴ、Microsoft Bookingsの営業時間など、About Us ページを作成します。
-ms.openlocfilehash: 5d0505b0b23515bef0bdcc94206d8f3b856479c4
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 5dc8fa157d6ce53231ece9d8d70eb772218ac5dd
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746892"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022517"
 ---
 # <a name="enter-your-business-information"></a>勤務先情報を入力する
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ウイルス対策を使用して脅威を軽減する
+title: Microsoft Defender ウイルス対策を使用してMicrosoft 365 Lighthouseの脅威を軽減する
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Microsoft Defender ウイルス対策による脅威の軽減について説明します。
-ms.openlocfilehash: 428370ce5e49bba0bc9489143864f9b88b2e8c3f
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: da8a10b1ffc1932a6b4f84447028d2fa9b865e64
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824343"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023659"
 ---
-# <a name="mitigate-threats-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を使用して脅威を軽減する
+# <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を使用してMicrosoft 365 Lighthouseの脅威を軽減する
 
 Microsoft 365 Lighthouseでは、パートナーは、すべてのテナントにわたる脅威を調査し、軽減できます。 また、デバイスでウイルス対策スキャンを開始したり、デバイスがMicrosoft Defender ウイルス対策の最新の更新プログラムを取得していることを確認したり、ウイルス対策スキャン後に保留中のアクションを確認したりできます。 Lighthouse では、Windows 10 以降を実行しているデバイスのみがサポートされます。
 
@@ -130,7 +130,7 @@ Lighthouse には、デバイスで検出されたすべての脅威が表示さ
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365 Lighthouseの要件](m365-lighthouse-requirements.md) (記事)\
-[脅威管理ページの概要](m365-lighthouse-threat-management-page-overview.md) (記事)\
+[Microsoft 365 Lighthouseの脅威管理ページの概要](m365-lighthouse-threat-management-page-overview.md) (記事)\
 [Microsoft Intuneでコンプライアンス ポリシーを作成する](/mem/intune/protect/create-compliance-policy) (記事)\
 [Microsoft Defender ウイルス対策を有効にする](/mem/intune/user-help/turn-on-defender-windows) (記事)\
 [Microsoft セキュリティ インテリジェンス](https://www.microsoft.com/wdsi/threats) (Web ページ)

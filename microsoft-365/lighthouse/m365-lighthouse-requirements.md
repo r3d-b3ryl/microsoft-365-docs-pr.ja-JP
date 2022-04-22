@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: マネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseを使用するための要件の一覧を取得します。
-ms.openlocfilehash: d5f04c39cbce9726fefa4b410be63cd5ee4e959d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 06d5c5bb0de76ecc8ba9fc28677f480f5f4d5561
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823676"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023263"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの要件
 
@@ -62,7 +62,7 @@ Microsoft Defender ウイルス対策は、Windows オペレーティング シ�
 ## <a name="related-content"></a>関連コンテンツ
 
 [ポータル セキュリティMicrosoft 365 Lighthouse構成](m365-lighthouse-configure-portal-security.md)する (記事)\
-[Microsoft 365 Lighthouse デバイス コンプライアンス ページの概要](m365-lighthouse-device-compliance-page-overview.md) (記事)\
-[Microsoft 365 Lighthouse ユーザー ページの概要](m365-lighthouse-users-page-overview.md) (記事)\
-[Microsoft 365 Lighthouse脅威管理ページの概要](m365-lighthouse-threat-management-page-overview.md) (記事)\
+[Microsoft 365 Lighthouseの [デバイス コンプライアンス] ページの概要](m365-lighthouse-device-compliance-page-overview.md) (記事)\
+[Microsoft 365 Lighthouseの [ユーザー] ページの概要](m365-lighthouse-users-page-overview.md) (記事)\
+[Microsoft 365 Lighthouseの脅威管理ページの概要](m365-lighthouse-threat-management-page-overview.md) (記事)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)
