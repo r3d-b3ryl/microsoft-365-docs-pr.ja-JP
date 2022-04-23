@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ソリューション試用版の詳細とサインアップ方法について説明します。
-ms.openlocfilehash: a019ac3a2e16dfd6ae83ba1564f0031f77757b62
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ed7848a12483062c2873f4735ecb2188cad373a1
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971993"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023681"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Microsoft Purview ソリューション試用版について
 
@@ -35,7 +35,7 @@ Microsoft Purview 試用版の[使用条件](terms-conditions.md)をご覧くだ
 
 ## <a name="eligibility"></a>対象
 
-Microsoft E5 ライセンス パッケージをまだお持ちでない Microsoft 365 E3 および Office 365 E3 のお客様は、Purview ソリューション試用版の対象となります。 試用版は、政府機関向け Microsoft 365 のお客様は使用できません。
+Microsoft E5 ライセンス パッケージをまだお持ちでない Microsoft 365 E3 および Office 365 E3 のお客様は、Purview ソリューション試用版の対象となります。試用版は、政府機関向け Microsoft 365 のお客様は使用できません。
 
 ## <a name="licensing"></a>ライセンス
 
@@ -70,7 +70,7 @@ Microsoft Purview コンプライアンス ポータルに表示された時点�
 
 #### <a name="finding-support"></a>サポートの検索
 
-テナントに少なくとも 150 個のライセンスがある場合、組織は試用版展開のサポートに FastTrack を使用できます。 [FastTrack の詳細](https://docs.microsoft.com/fasttrack/introduction)を確認します。
+テナントに少なくとも 150 個のライセンスがある場合、組織は試用版展開のサポートに FastTrack を使用できます。[FastTrack の詳細](/fasttrack/introduction)を確認します。
 
 #### <a name="extending-the-trial"></a>試用版の延長
 
@@ -98,6 +98,10 @@ E5 レベルのソリューションアップグレードしないことを決�
 
   Microsoft Purview コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。[コンプライアンス マネージャーに関する詳細情報](compliance-manager.md)
 
+- **データ ライフサイクル管理**
+
+  アダプティブ ポリシー スコープを使用して保持の対象範囲を自動化します。 この機能を使用すると、保持するポリシーを特定のユーザー、グループ、またはサイトに動的にターゲット設定できます。 これらのポリシーは、組織で変更が発生すると自動的に更新されます。 さらに、アダプティブ スコープを使用するポリシーは、場所の制限の対象になりません。 [アダプティブ ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)の詳細。
+
 - **データ損失防止**
 
   Microsoft Purview データ損失防止 (DLP) は、デバイス、アプリ、およびサービスでの機密情報の共有と使用を制御するのに役立ちます。 試用版を使用すると、DLP ポリシーの範囲を Teams やデバイスに拡張し、トレーニング可能な分類子と正確なデータ一致 (EDM) を使用して、より機密性の高いコンテンツを保護し、推奨される DLP ポリシーを使用して迅速に開始できます。  [データ損失防止に関する詳細情報](dlp-learn-about-dlp.md)
@@ -106,10 +110,6 @@ E5 レベルのソリューションアップグレードしないことを決�
 
   - 既存のポリシーは、オフにしない限りオンのままになります。
   - 試用版の終了後に Teams またはデバイスの場所を含む DLP ポリシーを編集すると、それらの場所がポリシーから削除されます。
-
-- **データ ライフサイクル管理**
-
-  アダプティブ ポリシー スコープを使用して保持の対象範囲を自動化します。 この機能を使用すると、保持するポリシーを特定のユーザー、グループ、またはサイトに動的にターゲット設定できます。 これらのポリシーは、組織で変更が発生すると自動的に更新されます。 さらに、アダプティブ スコープを使用するポリシーは、場所の制限の対象になりません。 [アダプティブ ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)の詳細。
 
 - **電子情報開示**
 
@@ -144,6 +144,7 @@ E5 レベルのソリューションアップグレードしないことを決�
 - **レコード管理**
 
   Microsoft Purview 統合レコード管理機能を使用して、次の処理を行います。
+
   - 規制、法律、または組織のポリシーで必要とされる場合、ユーザーが編集できないようにコンテンツを記録として分類する
   - 自動適用ラベル ポリシーを使用して、指定した条件に合致するコンテンツに自動的に保持ラベルを適用する
   - アダプティブ スコープ ポリシーを使用して、含まれる場所の数の制限なく保持ラベル ポリシーを動的に場所に適用する
