@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 754537d11a4c183cd1057b94d583a31543d9e4a5
 ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64467359"
@@ -153,7 +153,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
    サービスが有効になっている場合、結果は次のスクリーンショットのようになります。
 
-   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="diagtrack の sc クエリ コマンドの結果" lightbox="images/windefatp-sc-qc-diagtrack.png":::
+   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="diagtrack の sc クエリ コマンドの結果。" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
 **START_TYPE** が **AUTO_START** に設定されていない場合は、サービスを自動的に開始するように設定する必要があります。
 
@@ -169,7 +169,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
     sc config diagtrack start=auto
     ```
 
-3. 成功のメッセージが表示されます。 次のコマンドを入力して変更を確認し、**Enter キー** を押します。
+3. 成功メッセージが表示されます。次のコマンドを入力して変更を確認し、**Enterキー** を押します。
 
     ```console
     sc qc diagtrack
@@ -204,7 +204,7 @@ Microsoft Defender ウイルス対策が組織のアクティブなマルウェ�
 
 デバイスでプライマリ マルウェア対策製品として Microsoft Defender ウイルス対策を実行している場合、Defender for Endpoint エージェントは正常にオンボードされます。
 
-サードパーティのマルウェア対策クライアントを実行していて、Mobile デバイス管理 ソリューションまたは Microsoft エンドポイント マネージャー (現在のブランチ) を使用している場合は、Microsoft Defender ウイルス対策 ELAM ドライバーが有効になっていることを確認する必要があります。 詳細については、「[ポリシーによって Microsoft Defender ウイルス対策が無効にされていないか確認する](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)」を参照してください。
+サード パーティ製のマルウェア対策クライアントを実行していて、Mobile デバイス管理 ソリューションまたは Microsoft エンドポイント マネージャー (Current Branch) を使用している場合は、Microsoft Defender ウイルス対策 ELAM ドライバーが有効になっていることを確認する必要があります。詳細については、「 [ポリシーでMicrosoft Defender ウイルス対策が無効になっていないことを確認する](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 
