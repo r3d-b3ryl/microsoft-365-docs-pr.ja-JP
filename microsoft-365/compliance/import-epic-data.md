@@ -2,8 +2,8 @@
 title: エピック EHR データをインポートするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、組織のエピック システムからMicrosoft 365に電子医療レコード (EHR) データをインポートするデータ コネクタを設定できます。 これにより、インサイダー リスク管理ポリシーでエピック EHR データを使用して、従業員による患者データへの不正アクセス アクティビティを検出できます。
-ms.openlocfilehash: 1dfcedbc6242f16ce476dddd642567bef69c966f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 55f33358af7b53dc6042fce94b1ddc92e9f130fa
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000138"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078021"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>エピック EHR 監査データをインポートするコネクタを設定する (プレビュー)
 
@@ -68,7 +68,7 @@ Azure ADでアプリを作成する手順については、「Microsoft ID プ�
 
 次の表に、インサイダー リスク管理シナリオを有効にするために必要なフィールドを示します。 これらのフィールドのサブセットは必須です。 これらのフィールドはアスタリスク (*)で強調表示されます。 テキスト ファイルに必須フィールドがない場合、ファイルは検証されません。ファイル内のデータはインポートされません。
 
-|フィールド|カテゴリ|
+|Field|カテゴリ|
 |:----|:----------|
 | ACCESS_LOG。*<br/>ACCESS_TIME ACCESS_LOG_METRIC。METRIC_NAME*<br/>ACCESS_LOG。WORKSTATION_ID<br/>ZCMETRIC\_\_ GROUP.NAME<br/>ZCACCESS\_\_ ACTION.NAME |これらのフィールドは、エピック EHR システム内のアクセス アクティビティ イベントを識別するために使用されます。|
 | 患者。PAT_MRN_ID<br/>患者。PAT_FIRST_NAME* <br/>患者。PAT_MIDDLE_NAME <br/>患者。PAT_LAST_NAME* <br/>患者。ADD_LINE_1* <br/>患者。ADD_LINE_2  <br/>患者。CITY* <br/>PATIENT.ZIP*  <br/>ZC_STATE.NAME <br/>ZC_COUNTRY.NAME <br/>CLARITY_DEP。DEPARTMENT_NAME              | これらのフィールドは、患者プロファイル情報を識別するために使用されます。|

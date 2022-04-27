@@ -2,8 +2,8 @@
 title: Microsoft 365で Zoom データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Zoom DataParser コネクタを設定して使用して、Microsoft 365で Zoom データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: b03afa1271b15a27a025c16b05174c14466f65f1
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 89e6a68615e5471568df6a2c7197d75bec3e7982
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996374"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090607"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-data"></a>Zoom データをアーカイブするコネクタを設定する
 

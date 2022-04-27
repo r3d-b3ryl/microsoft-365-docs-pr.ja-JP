@@ -2,7 +2,7 @@
 title: Microsoft Azure での SharePoint Server 2013 の障害復旧
 ms.author: bcarter
 author: brendacarter
-manager: laurawi
+manager: scotv
 ms.date: 04/17/2018
 audience: ITPro
 ms.topic: article
@@ -17,13 +17,13 @@ ms.custom:
 - Ent_Deployment
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: この記事では、Azure を使用してオンプレミスのファームの障害復旧環境をSharePointします。
-ms.openlocfilehash: 873d0c9ccfdc8c6a978b89416a7492a2141c825d
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: この記事では、Azure を使用してオンプレミスのSharePoint ファームのディザスター リカバリー環境を作成する方法について説明します。
+ms.openlocfilehash: 1b1951e70cfbecc0f6586e68d7142bc26fb6252f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569138"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077408"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
@@ -36,7 +36,7 @@ ms.locfileid: "64569138"
 
 この記事では、ソリューション モデル「 **Microsoft Azure における SharePoint 障害復旧** 」を使用します。
 
-[![SharePoint復旧プロセスを Azure に追加します。](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
+[![ディザスター リカバリー プロセスを Azure にSharePointします。](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
 
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) | [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
 
@@ -82,7 +82,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
 
 **図: Azure におけるウォーム スタンバイ ソリューションの要素**
 
-![Azure のウォーム スタンバイ SharePointの要素。](../media/AZarch-AZWarmStndby.png)
+![Azure のSharePointウォーム スタンバイ ソリューションの要素。](../media/AZarch-AZWarmStndby.png)
 
 分散ファイル システム レプリケーション (DFSR) を使用した SQL Server ログ配布により、データベース バックアップとトランザクション ログを Azure 内の復旧ファームにコピーします。
 
@@ -156,7 +156,7 @@ Azure の環境は、運用ファームよりも小規模にできます。フ�
 
 **図: 運用ファームとウォーム スタンバイ復旧ファームのトポロジと主な要素**
 
-![サーバー ファームとウォーム SharePoint回復ファームのトポロジ。](../media/AZarch-AZWarmStndby.png)
+![SharePoint ファームとウォーム スタンバイ復旧ファームのトポロジ。](../media/AZarch-AZWarmStndby.png)
 
 この図では次のようになっています。
 
@@ -186,7 +186,7 @@ Azure の環境は、運用ファームよりも小規模にできます。フ�
 
 **図: 稼働中の仮想マシンが含まれるコールド スタンバイ復旧ファーム**
 
-![Azure のコールド スタンバイ SharePointの要素。](../media/AZarch-AZColdStndby.png)
+![Azure のSharePointコールド スタンバイ ソリューションの要素。](../media/AZarch-AZColdStndby.png)
 
 コールド スタンバイ環境にフェールオーバーした後、すべての仮想マシンが始動されます。SQL Server AlwaysOn 可用性グループなど、データベース サーバーの高可用性を実現するための方式が構成されていなければなりません。
 
@@ -232,7 +232,7 @@ Windows PowerShell の他にも、SQL Server、SharePoint Server、Azure 用の 
 
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>フェーズ 1: 障害復旧環境の設計
 
-「[SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)」に記されているガイダンスに従って、SharePoint 復旧ファームを含む、障害復旧環境を設計します。 Azure の障害復旧ソリューションのSharePoint [](https://go.microsoft.com/fwlink/p/?LinkId=392554) を使用して、Visioプロセスを開始できます。 環境全体を設計してから、Azure 環境で作業を開始することをお勧めします。
+「[SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)」に記されているガイダンスに従って、SharePoint 復旧ファームを含む、障害復旧環境を設計します。 [Azure Visio ファイルのSharePointディザスター リカバリー ソリューションの](https://go.microsoft.com/fwlink/p/?LinkId=392554)グラフィックスを使用して、設計プロセスを開始できます。 環境全体を設計してから、Azure 環境で作業を開始することをお勧めします。
 
 「[SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)」に記されている仮想ネットワーク、VPN 接続、Active Directory、および SharePoint ファームを設計するためのガイダンスに加え、Azure 環境にファイル共有ロールを追加してください。
 
@@ -273,7 +273,7 @@ Windows PowerShell の他にも、SQL Server、SharePoint Server、Azure 用の 
 
 **図: Active Directory ドメインのハイブリッド構成**
 
-![Azure 仮想ネットワークに展開された 2 つの仮想マシンとファーム SharePointは、レプリカ ドメイン コントローラーと DNS サーバーです。](../media/AZarch-HyADdomainConfig.png)
+![Azure 仮想ネットワークと SharePoint ファーム サブネットにデプロイされた 2 つの仮想マシンは、レプリカ ドメイン コントローラーと DNS サーバーです。](../media/AZarch-HyADdomainConfig.png)
 
 この図には、同じサブネットに対して 2 つの仮想マシンが展開されています。これらの仮想マシンは、Active Directory と DNS という 2 つのロールをそれぞれホストしています。
 
@@ -450,7 +450,7 @@ Search Service を復元するには、各コンテンツ ソースのフル ク
 
 通常、ネットワーク負荷分散を設定する場合、クラスターが単一の IP アドレスに割り当てられます。その後、そのクラスターを指すネットワーク用に、DNS プロバイダーで DNS ホスト レコードを作成します (このプロジェクトでは、オンプレミス データセンターで障害が発生した場合の回復性を確保するために Azure に DNS サーバーを配置しています)。たとえば、負荷分散クラスターの IP アドレスを指す  `https://sharepoint.contoso.com` という DNS レコードを、Active Directory の DNS マネージャーで作成できます。
 
-SharePoint ファームへの外部アクセスでは、ファイアウォール内の外部 IP アドレスをポイントするクライアントがイントラネットで使用するのと同じ URL を`https://sharepoint.contoso.com`持つホスト レコードを外部 DNS サーバーに作成できます。 (この例を使用するベスト プラクティスは、内部 DNS `contoso.com` サーバーが権限を持ち、外部 DNS サーバーに DNS 要求をルーティングするのではなく、SharePoint ファーム クラスターに直接要求をルーティングする分割 DNS をセットアップする方法です。その後、外部 IP アドレスをオンプレミス クラスターの内部 IP アドレスにマップして、クライアントが探しているリソースを見つけ出します。
+SharePoint ファームへの外部アクセスの場合は、クライアントがイントラネット (たとえば`https://sharepoint.contoso.com`) で使用する URL と同じ URL を使用して、ファイアウォール内の外部 IP アドレスを指すホスト レコードを外部 DNS サーバーに作成できます。 (この例を使用するベスト プラクティスは、内部 DNS サーバーが権限を持`contoso.com`ち、DNS 要求を外部 DNS サーバーにルーティングするのではなく、SharePoint ファーム クラスターに直接ルーティングするように分割 DNS を設定することです)。その後、クライアントが探しているリソースを見つけられるように、外部 IP アドレスをオンプレミス クラスターの内部 IP アドレスにマップできます。
 
 以下に、考えられるいくつかの異なる障害復旧シナリオを記します。
 
@@ -458,7 +458,7 @@ SharePoint ファームへの外部アクセスでは、ファイアウォール
 
  **シナリオ例: オンプレミス データセンターが完全に消失しました。** このシナリオは、火災や洪水などの自然災害によって生じる恐れがあります。その場合、企業であれば、別の地域にセカンダリ データセンターがあったり、独自のディレクトリ サービスと DNS を持つ Azure サブネットがあったりする可能性があります。前述の障害シナリオと同様、内部と外部の DNS レコードを、Azure SharePoint ファームを指すようにリダイレクトできます。この場合も、DNS レコードの伝達には若干時間がかかる可能性があります。
 
-ホスト名付きサイト コレクションのアーキテクチャと展開 [(SharePoint 2013)](/SharePoint/administration/host-named-site-collection-architecture-and-deployment) で推奨されるホスト名付きサイト コレクションを使用している場合は、SharePoint ファームで同じ Web アプリケーションによってホストされる複数のサイト コレクションが、一意の DNS 名 ( `https://sales.contoso.com` `https://marketing.contoso.com`たとえば、およびなど) を持つ場合があります。 その場合、使用しているクラスター IP アドレスを指すサイト コレクションごとに、DNS レコードを作成できます。 SharePoint Web フロントエンド サーバーに要求が到着すると、適切なサイト コレクションにそれぞれの要求がルーティングされます。
+ホスト名付きサイト コレクション[のアーキテクチャと展開 (SharePoint 2013)](/SharePoint/administration/host-named-site-collection-architecture-and-deployment) で推奨されているように、ホスト名付きサイト コレクションを使用している場合は、SharePoint ファーム内の同じ Web アプリケーションによってホストされるサイト コレクションがいくつか存在する可能性があります。一意の DNS 名 (たとえば)。 `https://sales.contoso.com` `https://marketing.contoso.com`。 その場合、使用しているクラスター IP アドレスを指すサイト コレクションごとに、DNS レコードを作成できます。 SharePoint Web フロントエンド サーバーに要求が到着すると、適切なサイト コレクションにそれぞれの要求がルーティングされます。
 
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft の概念実証環境
 
@@ -481,7 +481,7 @@ SharePoint ファームへの外部アクセスでは、ファイアウォール
 
 **表: オンプレミス テストのフロントエンド Web サーバーおよびアプリケーション サーバー用の仮想マシンのドライブ要件**
 
-|ドライブ文字|Size|ディレクトリ名|Path|
+|ドライブ文字|Size|ディレクトリ名|パス|
 |---|---|---|---|
 |C|80|システム ドライブ|\<DriveLetter\>:\\Program Files\\Microsoft SQL Server\\|
 |E|80|ログ ドライブ (40 GB)|\<DriveLetter\>:\\Program Files\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATA|
@@ -491,7 +491,7 @@ SharePoint ファームへの外部アクセスでは、ファイアウォール
 
 **表: オンプレミス テスト用データベース サーバーの仮想マシンのドライブ要件**
 
-|ドライブ文字|Size|ディレクトリ名|Path|
+|ドライブ文字|Size|ディレクトリ名|パス|
 |---|---|---|---|
 |C|80|データのルート ディレクトリ|\<DriveLetter\>:\\Program Files\\Microsoft SQL Server\\|
 |E|500|ユーザーのデータベース ディレクトリ|\<DriveLetter\>:\\Program Files\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATA|
@@ -627,7 +627,7 @@ SQL Server エージェントが、既定の資格情報ではなく、ネット
 
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Managed Metadata Service (または他の SharePoint サービス) がインストール後に自動的に開始されない
 
-サービスは、SharePoint Server のパフォーマンスとその時点における負荷によっては開始するまでに数分かかる場合があります。 **[開始]** をクリックしてサービスを手動で開始し、[サーバーのサービス] 画面をときどき更新して状態を監視しながら、サービスが開始されるまで適切な時間を取ります。 サービスが依然として停止状態の場合には、SharePoint 診断ログを有効にしてからサービスの開始をもう一度試みて、ログでエラーを確認します。 詳細については、「Configure [diagnostic logging in SharePoint 2013](/sharepoint/administration/configure-diagnostic-logging)」を参照してください。
+サービスは、SharePoint Server のパフォーマンスとその時点における負荷によっては開始するまでに数分かかる場合があります。 **[開始]** をクリックしてサービスを手動で開始し、[サーバーのサービス] 画面をときどき更新して状態を監視しながら、サービスが開始されるまで適切な時間を取ります。 サービスが依然として停止状態の場合には、SharePoint 診断ログを有効にしてからサービスの開始をもう一度試みて、ログでエラーを確認します。 詳細については、「[SharePoint 2013 での診断ログの構成](/sharepoint/administration/configure-diagnostic-logging)」を参照してください。
 
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>DNS を Azure フェールオーバー環境に変更した後も、SharePoint サイトに関して従来の IP アドレスをクライアント ブラウザーが使用し続ける
 

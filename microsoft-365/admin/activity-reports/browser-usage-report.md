@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - GEA150
 description: Microsoft 365 管理センターの [Microsoft 365 レポート] ダッシュボードを使用して Microsoft ブラウザー使用状況レポートを取得する方法について説明します。
-ms.openlocfilehash: 29b4161b9bb6cbc509d6541e13fa9222628534b4
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 5515c00b5c7fc64a6f0295bdce724e5b798fb018
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782019"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078311"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>管理センターでレポートをMicrosoft 365する - Microsoft ブラウザーの使用状況
 
-Microsoft 365 レポート ダッシュボードには、組織内の製品全体のアクティビティの概要が表示されます。 これにより、個々の製品レベルのレポートをドリルダウンして、各製品内のアクティビティに関するより詳細な分析情報を得ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft ブラウザーの使用状況レポートでは、Internet Explorer、Microsoft Edge 従来版、および新しいMicrosoft Edge使用状況に関する分析情報を取得できます。 使用状況レポートは、Microsoft ブラウザーを使用してアクセスされるMicrosoft 365 オンライン サービスに基づいています。
+Microsoft 365 レポート ダッシュボードには、組織内の製品全体のアクティビティの概要が表示されます。 これにより、個々の製品レベルのレポートをドリルダウンして、各製品内のアクティビティに関するより詳細な分析情報を得ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft ブラウザーの使用状況レポートでは、Internet Explorer、Microsoft Edge 従来版、および新しいMicrosoft Edge使用状況に関する分析情報を取得できます。 使用状況レポートは、Microsoft 365 アカウントを使用するすべてのデバイスで Microsoft ブラウザーを使用してアクセスされるMicrosoft 365 オンライン サービスに基づいています。
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Microsoft ブラウザーの使用状況レポートにアクセスする方法
 

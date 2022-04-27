@@ -12,14 +12,19 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Teams クラスと会議を作成および管理するには、Microsoft OneDrive ラーニング ツールの相互運用性 for Moodle を使用します。
-ms.openlocfilehash: ff715720fc699e035a9adceae6c89e64ce907a7d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 5370f83171ae742711869bfddb91ddd4897f5221
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761667"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091067"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-moodle"></a>Moodle 内Microsoft Teamsクラスと会議を統合する
+
+> [!NOTE]
+> 現在、Moodle と Microsoft Teams LTI の統合はプライベート プレビューでのみ使用できます。
+>
+>プライベート プレビュー プログラムに参加する場合は、 [こちらにサインアップしてください](https://m365crmedu.powerappsportals.com/LMSSignup/)。
 
 このガイドでは、Teams クラスと Teams Meetings LTI アプリの両方を Moodle に登録するための IT 管理者の手順について説明します。
 

@@ -2,8 +2,8 @@
 title: ドラフト コレクションをレビュー セットにコミットする
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 下書きコレクションを作成して反復処理した後、それをレビュー セットにコミットできます。 下書きコレクションをコミットすると、収集されたアイテムがケース内のレビュー セットに追加されます。 収集されたアイテムがレビュー セットに含まれると、それらを分析、確認、エクスポートできます。
-ms.openlocfilehash: f908d17d804487cd5e7e93085e418f9a94915c8e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c798981d485b6128e76ea3f0c0fbf189b4f9634a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997936"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090475"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>電子情報開示のレビュー セットに下書きコレクションをコミットする (プレミアム)
 

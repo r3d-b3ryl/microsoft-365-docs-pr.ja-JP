@@ -20,14 +20,6 @@
           href: uploadApplication.md
     - name: パッケージをビルドする
       href: buildpackage.md
-    - name: アップロード バイナリ&依存関係
-      href: binaries.md
-    - name: テスト タスクの設定
-      href: testtask.md
-    - name: テスト オプションの設定
-      href: testoptions.md
-    - name: レビュー
-      href: review.md
     - name: パッケージ ガイドライン
       href: contentguideline.md
     - name: アプリケーション/テストルール
@@ -46,7 +38,7 @@
       href: cpu.md
     - name: SDK & API
       href: sdkapi.md
-- name: 参照
+- name: 関連情報
   items:
     - name: よく寄せられる質問
       href: faq.md

@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 recommendations: false
 description: DLP ポリシーの条件と例外について学習する
-ms.openlocfilehash: f4a3521d0e5aab73cc16d97e0aea9c5830d9ddec
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: cd252002f2fcef3e3935dd44b1333e801bcba46d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762059"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090453"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP ポリシーの条件、例外、およびアクション
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 DLP ポリシーの条件と例外は、ポリシーが適用される機密項目を識別します。 アクションは、例外が満たされた条件の結果として何が起こるかを定義します。
 
@@ -42,7 +44,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密項�
 - [[Senders (送信者)](#senders)]
 - [受信者](#recipients)
 - [メッセージの件名または本文](#message-subject-or-body)
-- [Attachments](#attachments)
+- [添付ファイル](#attachments)
 - [メッセージ ヘッダー](#message-headers)
 - [メッセージのプロパティ](#message-properties)
 
@@ -66,7 +68,7 @@ DLP ルール レベルで送信者アドレスの場所を構成するには、
 
 - **ヘッダーまたは封筒** (`HeaderOrEnvelope`) メッセージ ヘッダーとメッセージ エンベロープ内の送信者を調べます。
 
-|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|description|
+|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|説明|
 |---|---|---|---|
 |送信者が|条件: *From* <br/><br/> 例外: *ExceptIfFrom*|住所|組織内の指定されたメールボックス、メール ユーザー、メール連絡先、またはMicrosoft 365 グループによって送信されるメッセージ。|
 |送信者が次のメンバーの場合 |*FromMemberOf* <br/><br/> *ExceptIfFromMemberOf*|住所|指定した配布グループ、メールが有効なセキュリティ グループ、またはMicrosoft 365 グループのメンバーによって送信されるメッセージ。|
@@ -80,7 +82,7 @@ DLP ルール レベルで送信者アドレスの場所を構成するには、
 
 ### <a name="recipients"></a>受信者
 
-|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|description|
+|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|説明|
 |---|---|---|---|
 |受信者が|条件: *SentTo* <br/><br/> 例外: *ExceptIfSentTo*|住所|受信者の 1 人が組織内の指定されたメールボックス、メール ユーザー、メール連絡先であるメッセージです。受信者はメッセージの **To**、**Cc**、**Bcc** のフィールドにいることが可能です。|
 |受信者ドメインが|condition: *RecipientDomainIs* <br/><br/> exception: *ExceptIfRecipientDomainIs*|Domainname|受信者の電子メール アドレスのドメインが指定した値と一致するメッセージ。|
@@ -92,17 +94,18 @@ DLP ルール レベルで送信者アドレスの場所を構成するには、
 
 ### <a name="message-subject-or-body"></a>メッセージの件名または本文
 
-|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|description|
+|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|説明|
 |---|---|---|---|
-|件名に単語または語句が含まれている|condition: *SubjectContainsWords* <br/><br/> 例外: *ExceptIf SubjectContainsWords*|Words|Subject フィールドに特定の単語を持つメッセージです。|
-|件名がパターンと一致している|condition: *SubjectMatchesPatterns* <br/><br/> 例外: *ExceptIf SubjectMatchesPatterns*|パターン|件名フィールドに、指定した正規表現と一致するテキスト パターンが含まれるメッセージ。|
-|コンテンツが含まれている|condition: *ContentContainsSensitiveInformation* <br/><br/> *exception ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|データ損失防止 (DLP) ポリシーで定義されている機密情報を含むメッセージまたはドキュメント。|
-|件名または本文の一致パターン|condition: *SubjectOrBodyMatchesPatterns* <br/><br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*|パターン|件名フィールドまたはメッセージ本文に、指定した正規表現に一致するテキスト パターンが含まれるメッセージ。|
-|件名または本文に単語が含まれている|condition: *SubjectOrBodyContainsWords* <br/><br/> exception: *ExceptIfSubjectOrBodyContainsWords*|Words|件名フィールドまたはメッセージ本文に指定された単語を含むメッセージ|
+|件名に単語または語句が含まれている|condition: *SubjectContainsWords* <br/> 例外: *ExceptIf SubjectContainsWords*|Words|Subject フィールドに特定の単語を持つメッセージです。|
+|件名がパターンと一致している|condition: *SubjectMatchesPatterns* <br/> 例外: *ExceptIf SubjectMatchesPatterns*|パターン|件名フィールドに、指定した正規表現と一致するテキスト パターンが含まれるメッセージ。|
+|コンテンツが含まれている|condition: *ContentContainsSensitiveInformation* <br/> *exception ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Microsoft Purview データ損失防止 (DLP) ポリシーで定義されている機密情報を含むメッセージまたはドキュメント。|
+|件名または本文の一致パターン|condition: *SubjectOrBodyMatchesPatterns* <br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*|パターン|件名フィールドまたはメッセージ本文に、指定した正規表現に一致するテキスト パターンが含まれるメッセージ。|
+|件名または本文に単語が含まれている|condition: *SubjectOrBodyContainsWords* <br/> exception: *ExceptIfSubjectOrBodyContainsWords*|Words|件名フィールドまたはメッセージ本文に指定された単語を含むメッセージ|
+|
 
 ### <a name="attachments"></a>添付ファイル
 
-|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|description|
+|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|説明|
 |---|---|---|---|
 |添付ファイルがパスワードで保護されている|condition: *DocumentIsPasswordProtected* <br/><br/> exception: *ExceptIfDocumentIsPasswordProtected*|none|添付ファイルがパスワードで保護された (ゆえにスキャンすることができない) メッセージです。 パスワード検出は、Office ドキュメント、.zip ファイル、および .7z ファイルでのみ機能します。|
 |添付ファイルの拡張子が|条件: *ContentExtensionMatchesWords* <br/><br/> exception: *ExceptIfContentExtensionMatchesWords*|Words|添付ファイルの拡張子が、以下の指定の単語と一致するメッセージです。|
@@ -117,14 +120,14 @@ DLP ルール レベルで送信者アドレスの場所を構成するには、
 
 ### <a name="message-headers"></a>メッセージ  ヘッダー
 
-|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|description|
+|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|説明|
 |---|---|---|---|
 |ヘッダーに単語または語句が含まれている|condition: *HeaderContainsWords* <br/><br/> 例外: *ExceptIfHeaderContainsWords*|ハッシュ テーブル|指定したヘッダー フィールドを含むメッセージであり、そのヘッダー フィールドの値には指定した単語が含まれています。|
 |ヘッダーがパターンと一致している|condition: *HeaderMatchesPatterns* <br/><br/> 例外: *ExceptIfHeaderMatchesPatterns*|ハッシュ テーブル|指定したヘッダー フィールドを含むメッセージであり、そのヘッダー フィールドの値には指定した正規表現が含まれています。|
 
 ### <a name="message-properties"></a>メッセージのプロパティ
 
-|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|description|
+|DLP の条件または例外|Microsoft 365 PowerShell の condition/exception パラメーター|プロパティの種類|説明|
 |---|---|---|---|
 |重要度を持つ|condition: *WithImportance* <br/><br/> exception: *ExceptIfWithImportance*|Importance|指定された重要度レベルでマークされたメッセージ。|
 |コンテンツ文字セットに単語が含まれている|condition: *ContentCharacterSetContainsWords* <br/><br/> *ExceptIfContentCharacterSetContainsWords*|CharacterSets|指定した文字セット名のいずれかを含むメッセージです。|
@@ -136,7 +139,7 @@ DLP ルール レベルで送信者アドレスの場所を構成するには、
 
 次の表では、DLP で使用できるアクションについて説明します。
 
-|DLP でのアクション|Microsoft 365 PowerShell のアクション パラメーター|プロパティの種類|description|
+|DLP でのアクション|Microsoft 365 PowerShell のアクション パラメーター|プロパティの種類|説明|
 |---|---|---|---|
 |ヘッダーを設定する|SetHeader|First プロパティ: *ヘッダー名* <br/><br/> 2 番目のプロパティ: *ヘッダー値*|SetHeader パラメーターは、メッセージ ヘッダーのヘッダー フィールドと値を追加または変更する DLP ルールのアクションを指定します。 このパラメーターでは、構文 "HeaderName:HeaderValue" を使用します。 複数のヘッダー名と値のペアをコンマで区切って指定できます|
 |ヘッダーを削除する|RemoveHeader|最初のプロパティ: *MessageHeaderField*<br/><br/> 2 番目のプロパティ: *String*|RemoveHeader パラメーターは、メッセージ ヘッダーからヘッダー フィールドを削除する DLP ルールのアクションを指定します。 このパラメーターは、構文 "HeaderName" または "HeaderName:HeaderValue" を使用します。複数のヘッダー名またはヘッダー名と値のペアをコンマで区切って指定できます|
@@ -147,7 +150,6 @@ DLP ルール レベルで送信者アドレスの場所を構成するには、
 |送信者のマネージャーを受信者として追加する|AddRecipients|First プロパティ: *AddedManagerAction*<br/><br/>2 番目のプロパティ: *Field*|送信者の上司を指定の受信者タイプ (To、Cc、Bcc) としてメッセージに追加したり、送信者や受信者に通知することなくメッセージを送信者の上司にリダイレクトします。 このアクションは、送信者の Manager 属性が Active Directory で定義されている場合のみ有効です。 このパラメーターは、@{AddManagerAsRecipientType = "\<To \| Cc \| Bcc\>"} という構文を使用します。|
 件名の先頭に追加する|PrependSubject|String|メッセージの Subject フィールドの冒頭に指定のテキストを追加します。元の件名のテキストを区別するために、指定されたテキストの最後の文字としてスペースまたはコロン (:) を使用してください。  <br/><br/>件名に既にテキストが含まれているメッセージ (返信など) に同じ文字列が追加されないようにするには、ルールに "件名に単語が含まれている" (ExceptIfSubjectContainsWords) 例外を追加します。|
 |HTML 免責事項を適用する|ApplyHtmlDisclaimer|First プロパティ: *Text*<br/><br/>2 番目のプロパティ: *場所*<br/><br/>3 番目のプロパティ: *フォールバック アクション*|指定した HTML 免責事項をメッセージの必要な場所に適用します。<br/><br/>このパラメーターは、次の構文を使用します @{ Text = " " 。場所 = \<Append \| Prepend\>;FallbackAction = \<Wrap \| Ignore \| Reject\> }|
-|Office 365メッセージの暗号化と権利保護を削除する|RemoveRMSTemplate|該当なし|電子メールに適用Office 365暗号化を削除します|
+|メッセージの暗号化と権利保護を削除する|RemoveRMSTemplate|該当なし|電子メールに適用されたメッセージ暗号化を削除します|
 |ホストされた検疫にメッセージを配信する |*Quarantine*|該当なし| このアクションは現在 **パブリック プレビュー段階です**。 このフェーズでは、DLP ポリシーによって検疫された電子メールには、ポリシーの種類が ExchangeTransportRule として表示されます。<br/><br/> EOP の検疫にメッセージを配信します。 詳細については、「 [EOP で検疫された電子メール メッセージ](/microsoft-365/security/office-365-security/quarantine-email-messages)」を参照してください。|
-
-<!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: <br/><br/>- **Replace** all matches in the subject with the replacement text <br/><br/>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. <br/><br/>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->
+|件名を変更する|ModifySubject|PswsHashTable | 特定のパターンに一致する件名行からテキストを削除し、別のテキストに置き換えます。 以下の例を参照してください。 次の操作を行うことができます: <br/><br/>- 件名内のすべての一致を置換テキストに置き換 **える** <br/><br/>- **件名** 内のすべての一致を削除するために追加し、件名の末尾に置換テキストを挿入します。 <br/><br/>- すべての一致を削除する **前** に、件名の先頭に置換テキストを挿入します。 ModifySubject パラメーター in、/powershell/module/exchange/new-dlpcompliancerule を参照してください|

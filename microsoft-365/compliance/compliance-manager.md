@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview コンプライアンス マネージャーは、組織がリスク評価を簡素化および自動化するのに役立ち、リスクに対処するために推奨されるアクションを提案します。
-ms.openlocfilehash: 1d5f036b8bc97da431ed6e41017d59e01db749a4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: deb3c3755a8afbab0071b8f829da620676f926ff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997100"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078233"
 ---
 # <a name="microsoft-purview-compliance-manager"></a>Microsoft Purview コンプライアンス マネージャー
 
 > [!TIP]
-> *9 つの Microsoft Purview ソリューションの Premium バージョンを無料で試すことができることをご存じですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べます。 Microsoft 365 E3およびOffice 365 E3のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
+> *9 つの Microsoft Purview ソリューションすべてのプレミアム バージョンを無料で試すことができることをご存知ですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べてください。 Microsoft 365 E3 および Office 365 E3 のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から今すぐ開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -41,17 +41,17 @@ ms.locfileid: "64997100"
 コンプライアンス マネージャーが組織でコンプライアンスを管理する方法を簡略化する方法については、次のビデオをご覧ください。
 <br>
 <br>
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VdoO]
 
-コンプライアンス マネージャーは、次の情報を提供することで、コンプライアンスを簡素化し、リスクを軽減するのに役立ちます。
+コンプライアンス マネージャーは、以下の機能を提供することにより、コンプライアンスの簡素化とリスクの軽減を支援します。
 
 - 一般的な業界および地域の標準と規制に対する事前に構築された評価、または独自のコンプライアンス ニーズを満たすカスタム評価 (利用可能な評価は、ライセンス契約によって異なります)。 [詳細については、こちらを参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance))。
 
 - 単一のツールを使用してリスク評価を効率的に完了させるためのワークフロー。
 
-- 組織に最も関連する標準と規制に準拠するのに役立つ、改善の推奨アクションに関する詳細なステップ バイ ステップ ガイダンス。 Microsoft によって管理されるアクションの場合は、実装の詳細と監査結果が表示されます。
+- 組織に最も関連性の高い基準や規制の準拠を支援する、おすすめの改善のための処置について、手順を追って詳しく説明します。 Microsoft によって管理される処置については、実装の詳細と監査結果をご紹介します。
 
-- 改善アクションの完了の進行状況を測定することで、コンプライアンス体制を理解するのに役立つリスクベースのコンプライアンス スコア。
+- 改善のための処置を実行する際の進行状況を測定することで、コンプライアンス体制を理解するのに役立つ、リスクベースのコンプライアンス スコア。
 
 コンプライアンス マネージャー ダッシュボードには、現在のコンプライアンス スコアが表示され、注意が必要なものを確認し、主要な改善アクションを案内します。 コンプライアンス マネージャー ダッシュボードの例を次に示します。
 

@@ -2,8 +2,8 @@
 title: Microsoft 365でSkype for Businessデータをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft Purview コンプライアンス ポータルでコネクタを設定して使用して、Skype for BusinessからMicrosoft 365にデータをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 510eea94519b6f2278b9319da8c37b683639680c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5fa8b0ddaa46a181fca4d2539a3ff4778e47c632
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992416"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078268"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Skype for Business データをアーカイブするコネクタを設定する
 

@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可を構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad2a55d19f60bf310b62ac13dfbe2563709673d2
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ad2ef693848b664be6ec9b48cc4fc320a8b4b9c2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970929"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090146"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの許可リストを追加する
 
@@ -117,7 +117,7 @@ Microsoft 365 Defenderの **[提出]** ページでファイルを許可しま�
    - **スプーフィングの種類**: 次のいずれかの値を選択します。
      - **内部**: スプーフィングされた送信者は、組織に属するドメイン ( [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) にあります。
      - **外部**: スプーフィングされた送信者は外部ドメインにあります。
-   - **アクション**: **[許可]** または [ブロック] を選択 **します**。
+   - **アクション**: **[許可**] を選択します。
 
 4. 完了したら、**[追加]** をクリックします。
 

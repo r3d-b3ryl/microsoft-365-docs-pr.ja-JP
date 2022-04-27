@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 63684384f8f9d496767ef66ee6628653945ad8c9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: aa1cdf4b8fa6c1d558b005eb80031a20be4872af
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935941"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65088848"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -37,7 +37,7 @@ ms.locfileid: "64935941"
   
 ## <a name="watch-act-on-a-usage-report-in-office-365"></a>動画: Office 365 の使用状況レポートでの操作
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
   
 ## <a name="how-to-get-to-the-reports-dashboard"></a>レポート ダッシュボードに移動する方法
 
@@ -101,7 +101,7 @@ ms.locfileid: "64935941"
 |[SharePoint のアクティビティ](sharepoint-activity-ww.md)|はい|はい|はい|はい|はい|
 |[Microsoft Teams ユーザー アクティビティ](microsoft-teams-user-activity-preview.md)|はい|はい|はい|はい|該当なし [^2]|
 |[Microsoft Teams デバイスの利用状況](microsoft-teams-device-usage-preview.md)|はい|はい|はい|はい|該当なし [^2]|
-|[Microsoft Teams の利用状況](microsoft-teams-usage-activity.md)|はい|はい|該当なし|N/A|N/A|
+|[Microsoft Teams の利用状況](microsoft-teams-usage-activity.md)|はい|はい|該当なし|該当なし|N/A|
 |[Yammer アクティビティ](yammer-activity-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
 |[Yammer デバイスの使用状況](yammer-device-usage-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
 |[Yammer のグループ アクティビティ レポート](yammer-groups-activity-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
@@ -111,8 +111,8 @@ ms.locfileid: "64935941"
 |[Skype for Business Online の電話会議開催者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
 |[Skype for Business Online の電話会議参加者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
 |[Skype for Business Online のピアツーピア アクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
-|[Viva ラーニング アクティビティ](viva-learning-activity.md)|はい|該当なし|N/A|N/A|該当なし|
-|[Viva インサイト アクティビティ](viva-insights-activity.md)|はい|はい|該当なし|N/A|該当なし|
+|[Viva ラーニング アクティビティ](viva-learning-activity.md)|はい|該当なし|該当なし|該当なし|該当なし|
+|[Viva インサイト アクティビティ](viva-insights-activity.md)|はい|はい|該当なし|該当なし|該当なし|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 [^2]: The service is not available in the environment so no plan to release the report.

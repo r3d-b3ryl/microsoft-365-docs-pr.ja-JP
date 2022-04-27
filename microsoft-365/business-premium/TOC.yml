@@ -2,81 +2,113 @@
   items:
     - name: 概要
       href: index.md
+    - name: Microsoft 365がビジネスにどのように役立つのか
+      href: m365bp-secure-users.md
     - name: Microsoft 365 Business Premium を取得する
       href: get-microsoft-365-business-premium.md
-    - name: キャンペーンMicrosoft 365を取得する
+    - name: キャンペーンのMicrosoft 365を取得する
       href: get-microsoft-365-campaigns.md
-    - name: 組織Microsoft 365保護する方法
-      href: m365bp-secure-users.md
-- name: セットアップとサインイン
+- name: 環境を強化する
   items:
-    - name: Microsoft 365 Business Premium のセットアップ
-      href: m365bp-setup.md
-    - name: キャンペーンのMicrosoft 365設定
+    - name: サインインして設定する
       items:
         - name: 概要
-          href: microsoft-365-campaigns-setup-overview.md
-        - name: サインアップ
-          href: m365-campaigns-sign-up.md
-        - name: サインイン
-          href: m365-campaigns-sign-in.md
-        - name: サインイン ページをカスタマイズする
-          href: m365-customize-sign-in.md
-- name: セキュリティの保護を強化する
+          href: m365bp-setup-overview.md
+        - name: Microsoft 365 Business Premium のセットアップ
+          href: m365bp-setup.md
+        - name: キャンペーンのMicrosoft 365を設定する
+          items:
+            - name: サインアップ
+              href: m365-campaigns-sign-up.md
+            - name: サインイン
+              href: m365-campaigns-sign-in.md
+            - name: サインイン ページをカスタマイズする
+              href: m365-customize-sign-in.md
+    - name: セキュリティの保護を強化する
+      items:
+        - name: 概要
+          href: m365bp-security-overview.md
+        - name: 管理者アカウントを保護する
+          href: m365bp-protect-admin-accounts.md
+        - name: セキュリティの既定値を有効にする
+          href: m365bp-conditional-access.md
+        - name: マルウェアやその他の脅威から保護する
+          href: m365bp-increase-protection.md
+- name: チームをトレーニングする
   items:
-    - name: 管理者アカウントを保護する
-      href: m365bp-protect-admin-accounts.md
-    - name: セキュリティの既定値を有効にする
-      href: m365bp-conditional-access.md
-    - name: マルウェアやその他の脅威から保護する
-      href: m365bp-increase-protection.md
-- name: デバイスをセットアップする
+    - name: アンマネージド (BYOD) デバイスを設定する
+      items:
+        - name: 概要
+          href: m365bp-devices-overview.md
+        - name: 多要素認証を設定する
+          href: m365bp-multifactor-authentication.md
+        - name: デバイスにOffice アプリをインストールする
+          href: m365bp-install-office-apps.md
+        - name: 管理されていないデバイスを保護する
+          href: m365bp-protect-pcs-macs.md
+    - name: メールを安全に使用する
+      items:
+        - name: 概要
+          href: m365bp-protect-email-overview.md
+        - name: フィッシング詐欺やその他の攻撃から保護する
+          href: avoid-phishing-and-attacks.md
+        - name: 暗号化された電子メールを送信する
+          href: send-encrypted-email.md
+    - name: セキュイティで保護された共同作業および共有を行う
+      items:
+        - name: 概要
+          href: m365bp-collaborate-share-securely.md
+        - name: 共同作業のためのチームを作成する
+          href: create-teams-for-collaboration.md
+        - name: 会議をセットアップする
+          href: set-up-meetings.md
+        - name: ファイルやビデオを共有する
+          href: share-files-and-videos.md
+        - name: 組織のコミュニケーション サイトを作成する
+          href: create-communications-site.md
+- name: 管理対象デバイスを保護する
   items:
-    - name: 多要素認証を設定する
-      href: m365bp-multifactor-authentication.md
-    - name: 管理された Windows デバイスをセットアップする
-      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: モバイル デバイスをセットアップする
-      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: 管理されていない PC と Mac を保護する
-      href: m365bp-protect-pcs-macs.md
-- name: 電子メールを保護する
+    - name: マネージド デバイスを設定してセキュリティで保護する
+      items:
+        - name: 概要
+          href: m365bp-protect-devices.md
+        - name: 管理されたデバイスをセットアップする
+          href: m365bp-managed-devices-setup.md
+        - name: 登録済みデバイスをオンボードし、ポリシーを適用する
+          href: m365bp-onboard-devices-mdb.md
+        - name: デバイス ポリシーを確認および編集する
+          href: m365bp-view-edit-create-mdb-policies.md
+        - name: デバイス グループを管理する
+          href: m365bp-device-groups-mdb.md
+- name: セキュリティ インシデントの管理
   items:
-    - name: フィッシング詐欺やその他の攻撃から保護する
-      href: m365-campaigns-phishing-and-attacks.md
-    - name: 暗号化された電子メールを送信する
-      href: send-encrypted-email.md
-- name: セキュイティで保護された共同作業および共有を行う
+    - name: 概要
+      href: m365bp-security-incident-management.md
+    - name: セキュリティに関する推奨事項を確認する
+      href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: デバイス上の修復アクションを確認する
+      href: m365bp-review-remediation-actions-devices.md
+    - name: 侵害された電子メール アカウントへ対応する
+      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: 環境を維持する
   items:
-    - name: 共同作業のためのチームを作成する
-      href: create-teams-for-collaboration.md
-    - name: 会議をセットアップする
-      href: set-up-meetings.md
-    - name: ファイルやビデオを共有する
-      href: share-files-and-videos.md
-    - name: 組織のコミュニケーション サイトを作成する
-      href: create-communications-site.md
-- name: Defender for Business でデバイスを保護する
-  items:
-    - name: Microsoft Defender for Business にデバイスをオンボードする
-      href: m365bp-onboard-devices-mdb.md
-    - name: デバイス ポリシーの確認と編集
-      href: m365bp-view-edit-create-mdb-policies.md
-    - name: デバイス グループの管理
-      href: m365bp-device-groups-mdb.md
-- name: デバイスからデータをリセットまたは削除する
-  items:
+    - name: 概要
+      href: m365bp-maintain-environment.md
+    - name: ユーザーの削除
+      href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: デバイスからデータを削除する
       href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: デバイスを工場出荷時の設定にリセットする
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: セキュリティ インシデントの管理
+- name: 関連情報
   items:
-    - name: デバイスの修復アクションを確認する
-      href: m365bp-review-remediation-actions-devices.md
-    - name: 侵害された電子メール アカウントへ対応する
-      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: Reference
-  items:
+    - name: 用語の用語集
+      href: m365bp-glossary.md
+    - name: Microsoft 365管理者コンテンツ
+      href: /microsoft-365/admin/
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
+    - name: Microsoft Defender for Office 365
+      href: ../security/office-365-security/overview.md
+    - name: Microsoft 365 Lighthouse
+      href: ../lighthouse/m365-lighthouse-overview.md

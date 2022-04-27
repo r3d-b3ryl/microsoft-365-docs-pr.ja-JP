@@ -2,8 +2,8 @@
 title: Microsoft 365で Refinitiv Eikon Messenger データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Refinitiv Eikon Messenger DataParser コネクタを設定して使用して、このデータをインポートしてMicrosoft 365にアーカイブする方法について説明します。
-ms.openlocfilehash: 444c31df6a247d40855235b3d0de4c98b76c6d30
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2cba39d30bf83646023b457866605f37352eb478
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997628"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077515"
 ---
 # <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>Refinitiv Eikon Messenger データをアーカイブするコネクタを設定する
 
