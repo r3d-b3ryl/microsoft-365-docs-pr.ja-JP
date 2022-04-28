@@ -2,8 +2,8 @@
 title: 電子情報開示で発行担当者を管理する (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 組織全体の発行担当者を電子情報開示 (プレミアム) に追加して、組織内の任意のケースで任意の親権通信に追加できます。
-ms.openlocfilehash: f82d5359a90e21203c2ff882ceb831cc1630e008
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 894da37088599d1c8b0f9d473bf64311a09cc566
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000556"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093638"
 ---
 # <a name="manage-issuing-officers-in-ediscovery-premium"></a>電子情報開示で発行担当者を管理する (プレミアム)
 

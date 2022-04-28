@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、エラー メッセージと問題のトラブルシューティングに関するヘルプを参照してください。
-ms.openlocfilehash: 3da40291742ae85ef897aeceae0def27aca8abe2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: a150213c2e202c96afeae14843708daa58ab4f92
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023219"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093286"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseのエラー メッセージと問題のトラブルシューティング
 
@@ -65,7 +65,7 @@ ms.locfileid: "65023219"
 |--|--|--|
 | 非 アクティブ | テナントは MSP の要求でオフボードされ、ライトハウスで管理されなくなりました。 | テナントを再アクティブ化する必要があります。 [ **テナント** ] ページで、再アクティブ化するテナントの横にある 3 つのドット (その他のアクション) を選択し、[ **テナントのアクティブ化**] を選択します。 最初の顧客データが Lighthouse に表示されるまでに 24 ~ 48 時間かかる場合があります。 |
 | 不適格 - DAP または GDAP が設定されていません | テナントで設定された DAP または GDAP 管理者特権はありません。これは Lighthouse で必要です。 | Microsoft パートナー センターで DAP または GDAP 管理者特権を設定します。 |
-| 不適格 - 必要なライセンスがありません | テナントに必要なライセンスがありません。 少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、またはWindows 365 Businessライセンスが必要です。 | テナントに少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、またはWindows 365 Businessライセンスが割り当てられていることを確認します。 |
+| 不適格 - 必要なライセンスがありません | テナントに必要なライセンスがありません。 少なくとも 1 つのMicrosoft 365 Business PremiumまたはMicrosoft 365 E3ライセンスが必要です。 | テナントに少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、またはWindows 365 Businessライセンスが割り当てられていることを確認します。 |
 | 不適格 - ユーザー数が超過しました | テナントには、Lighthouse で許可されているライセンスユーザーの最大数が 1,000 人を超えています。 | テナントにライセンスを持つユーザーが 1000 人を超えていないことを確認します。 |
 | 不適格 - geo チェックに失敗しました | ユーザーと顧客は、Lighthouse で必要とされる同じ地理的リージョンに存在しません。 | 顧客が地理的リージョンに存在することを確認します。 そうでない場合は、Lighthouse でテナントを管理することはできません。 |
 | 処理中 | Lighthouse はテナントを検出しましたが、まだオンボード中です。 | Lighthouse がテナントのオンボードを完了するまでに 48 時間かかります。 |

@@ -1,5 +1,5 @@
 ---
-title: サブスクリプションをキャンセルする
+title: 一般法人向けサブスクリプションをキャンセルします。
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,20 +20,22 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Microsoft 365 管理センターで、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 の試用版または有料サブスクリプションをキャンセルする方法について説明します。
-ms.date: 03/31/2022
-ms.openlocfilehash: d6b6c078c5f0d1b44143f3a9cc2d336a0a80fe03
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.date: 04/22/2022
+ms.openlocfilehash: 5dbf455b2c90a51aadd5d2e93b0739f93d138841
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595282"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092571"
 ---
-# <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
-
-サブスクリプションをキャンセルする場合は、[継続請求をオフにする](renew-your-subscription.md)のが最も簡単な方法です。 継続請求をオフにした場合、サブスクリプション期間の最後に有効期限が切れるまで、サブスクリプションを引き続き使用できます。 直ちにキャンセルする場合は、この記事の情報と手順を使用します。
+# <a name="cancel-your-business-subscription"></a>一般法人向けサブスクリプションをキャンセルします。
 
 > [!IMPORTANT]
-> この記事は、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 サブスクリプションにのみ適用されます。 Microsoft 365 Family または Personal をお持ちの場合は、「[Microsoft 365 サブスクリプションのキャンセル](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link)」を参照してください。
+> - この記事は、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 サブスクリプションにのみ適用されます。 Microsoft 365 Family または Personal をお持ちの場合は、「[Microsoft 365 サブスクリプションのキャンセル](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link)」を参照してください。
+> - Microsoft の担当者またはリセラー パートナーを通じてサブスクリプションを購入した場合、日割り計算による払い戻しを取り消すための 7 日間があります。 サブスクリプションをキャンセルするには、販売者またはパートナーにお問い合わせください。 [パートナーについての詳細情報](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school)をご覧ください。
+> - 組織がチリに所在し、チリのパートナーを通じてサブスクリプションを購入した場合、日割り計算による払い戻しを取り消すための 10 日間があります。
+
+サブスクリプションをキャンセルする場合は、[継続請求をオフにする](renew-your-subscription.md)のが最も簡単な方法です。 継続請求をオフにした場合、サブスクリプション期間の最後に有効期限が切れるまで、サブスクリプションを引き続き使用できます。 直ちにキャンセルする場合は、この記事の情報と手順を使用します。
 
 ## <a name="before-you-begin"></a>開始する前に
 

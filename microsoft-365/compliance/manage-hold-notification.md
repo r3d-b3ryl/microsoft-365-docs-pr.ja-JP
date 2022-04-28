@@ -2,8 +2,8 @@
 title: 保留通知を管理する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) の通信ワークフローを使用して、訴訟ホールド通知の状態を追跡し、必要に応じて更新して再送信します。
-ms.openlocfilehash: 83e5331aaea59893f06cfa0629d627e500cfe1b1
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 95417d54f7a84439b0321e31f0d6c0f2236af047
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996176"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093967"
 ---
 # <a name="manage-hold-notifications"></a>保留通知を管理する
 
@@ -82,7 +82,7 @@ ms.locfileid: "64996176"
 
 発行、リリース、再発行、リマインダー、エスカレーション通知の内容または設定を更新すると、これらの変更は、ワークフローによって生成されるすべての今後の通信に適用されます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - [ケースにカストディアンを追加する](add-custodians-to-case.md)
 

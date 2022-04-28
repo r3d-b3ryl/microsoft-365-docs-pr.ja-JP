@@ -1,79 +1,84 @@
 ---
-title: Microsoft 365環境との統合
+title: オンプレミス環境とのMicrosoft 365統合
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - Adm_O365
-  - seo-marvel-apr2020
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
-  - Ent_O365
+- Ent_O365
 search.appverid:
-  - MET150
-  - LYN150
-  - SPS150
-  - MOE150
-  - MED150
+- MET150
+- LYN150
+- SPS150
+- MOE150
+- MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
-description: この記事では、既存のディレクトリ サービスMicrosoft 365オンプレミス環境と統合する方法について学習します。
+description: この記事では、Microsoft 365を既存のディレクトリ サービスやオンプレミス環境と統合する方法について説明します。
+ms.openlocfilehash: a3ba75fd2f2b69e71d5b14b14e17827ed96e4dd4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093901"
 ---
-
-# <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365環境との統合
+# <a name="microsoft-365-integration-with-on-premises-environments"></a>オンプレミス環境とのMicrosoft 365統合
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 を既存のオンプレミス Active Directory ドメイン サービス (AD DS) と、Exchange Server、Skype for Business Server 2015、または SharePoint Server のオンプレミス インストールと統合できます。
+Microsoft 365を既存の オンプレミスの Active Directory Domain Services (AD DS) と統合し、Exchange Server、Skype for Business Server 2015、または SharePoint Server のオンプレミス インストールと統合できます。
   
- - DS を統合AD、両方の環境のユーザー アカウントを同期および管理できます。 また、パスワード ハッシュ同期 (PHS) またはシングル サインオン (SSO) を追加して、ユーザーがオンプレミスの資格情報を使用して両方の環境にログオンすることもできます。
- - オンプレミスのサーバー製品と統合する場合は、ハイブリッド環境を作成します。 ハイブリッド環境は、ユーザーまたは情報を Microsoft 365 に移行する場合や、一部のユーザーまたは一部の情報をオンプレミスとクラウドに引き続き持つ場合に役立ちます。 ハイブリッド環境の詳細については、「ハイブリッド クラウド [」を参照してください](../solutions/cloud-architecture-models.md#hybrid)。
+ - AD DS を統合すると、両方の環境のユーザー アカウントを同期および管理できます。 ユーザーがオンプレミスの資格情報を使用して両方の環境にログオンできるように、パスワード ハッシュ同期 (PHS) またはシングル サインオン (SSO) を追加することもできます。
+ - オンプレミスサーバー製品と統合すると、ハイブリッド環境が作成されます。 ハイブリッド環境は、ユーザーや情報をMicrosoft 365に移行する際に役立つ場合もあれば、一部のユーザーまたは一部の情報をオンプレミスとクラウドに引き続き含めることができます。 ハイブリッド環境の詳細については、 [ハイブリッド クラウド](../solutions/cloud-architecture-models.md#hybrid)に関するページを参照してください。
 
-また、Azure Active Directory (Azure AD) アドバイザーを使用して、Microsoft 365 管理センター のカスタマイズされたセットアップ ガイダンスをMicrosoft 365。
+Microsoft 365 管理センターのカスタマイズされたセットアップ ガイダンスには、Azure Active Directory (Azure AD) アドバイザーを使用することもできます (Microsoft 365にサインインする必要があります)。
 
 - [Azure ADセットアップ ガイド](https://aka.ms/aadpguidance)
 - [組織のディレクトリからユーザーを同期する](https://aka.ms/aadconnectpwsync)
-- [Active Directory フェデレーション サービス (AD FS) 展開アドバイザー](https://aka.ms/adfsguidance)
+- [Active Directory フェデレーション サービス (AD FS) (AD FS) デプロイ アドバイザー](https://aka.ms/adfsguidance)
    
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
-ネットワーク環境とオンプレミスMicrosoft 365統合する前に、ネットワーク計画とパフォーマンス[調整も行う必要があります](network-planning-and-performance.md)。 また、利用可能な ID モデルを [理解する必要もあります](deploy-identity-solution-identity-model.md)。 
+Microsoft 365とオンプレミス環境を統合する前に、[ネットワーク計画とパフォーマンスチューニング](network-planning-and-performance.md)も行う必要があります。 また、使用可能な [ID モデル](deploy-identity-solution-identity-model.md)についても理解する必要があります。 
 
-ユーザー [アカウントMicrosoft 365管理](manage-microsoft-365-accounts.md)するために使用できるツールの一覧については、「管理アカウントMicrosoft 365」を参照してください。 
+[Microsoft 365 ユーザー アカウントの管理](manage-microsoft-365-accounts.md)に使用できるツールの一覧については、Microsoft 365 アカウントの管理に関するページを参照してください。 
   
-## <a name="integrate-microsoft-365-with-ad-ds"></a>DS とのMicrosoft 365統合ADする
+## <a name="integrate-microsoft-365-with-ad-ds"></a>MICROSOFT 365と AD DS を統合する
 
-AD DS に既存のユーザー アカウントがある場合は、Microsoft 365 のすべてのアカウントを再作成し、環境間の違いやエラーが発生するリスクはありません。 ディレクトリ同期は、オンプレミス環境とオンライン環境の間でこれらのアカウントをミラーリングするのに役立ちます。 ディレクトリ同期を使用すると、ユーザーは環境ごとに新しい情報を記憶する必要が生じ、アカウントを 2 回作成または更新する必要はありません。 ディレクトリ同期のために [オンプレミス ディレクトリを準備](prepare-for-directory-synchronization.md) する必要があります。
+AD DS に既存のユーザー アカウントがある場合は、これらのアカウントをすべてMicrosoft 365に再作成する必要がなく、環境間に違いやエラーが発生するリスクがあります。 ディレクトリ同期は、オンプレミス環境とオンライン環境の間でこれらのアカウントをミラーリングするのに役立ちます。 ディレクトリ同期を使用すると、ユーザーは環境ごとに新しい情報を覚える必要がなく、アカウントを 2 回作成または更新する必要はありません。 ディレクトリ同期のために [オンプレミス ディレクトリを準備する](prepare-for-directory-synchronization.md) 必要があります。
   
 ![ディレクトリ同期を使用して、オンプレミスとオンラインのユーザー アカウント情報を同期します。](../media/microsoft-365-integration/directory-synchronization.png)
   
-ユーザーがオンプレミスの資格情報を使用してMicrosoft 365にログオンする場合は、SSO を構成できます。 SSO を使用Microsoft 365、ユーザー認証のためにオンプレミス環境を信頼するように構成されます。
+ユーザーがオンプレミスの資格情報を使用してMicrosoft 365にログオンできるようにするには、SSO を構成することもできます。 SSO を使用すると、ユーザー認証のためにオンプレミス環境を信頼するようにMicrosoft 365が構成されます。
   
 ![シングル サインオンでは、オンプレミス環境とオンライン環境の両方で同じアカウントを使用できます。](../media/microsoft-365-integration/single-sign-on.png)
 
-### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication-pta"></a>パスワード ハッシュ同期またはパススルー認証 (PTA) の使用とディレクトリの同期
+### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication-pta"></a>パスワード ハッシュ同期またはパススルー認証 (PTA) の有無にかかわらずディレクトリ同期
 
-ユーザーは、自分のユーザー アカウント (domain\username) を使用してオンプレミス環境にログオンします。 ユーザーがアカウントに移動Microsoft 365、仕事または学校のアカウント (user@domain.com) を使用して再度ログオンする必要があります。 ユーザー名は、両方の環境で同じです。 PHS または PTA を追加すると、ユーザーは両方の環境で同じパスワードを持ちますが、Microsoft 365 にログオンするときにそれらの資格情報を再度指定する必要があります。 PHS とのディレクトリ同期は、最も一般的に使用されるディレクトリ同期です。
+ユーザー は、ユーザー アカウント (domain\username) を使用してオンプレミス環境にログオンします。 Microsoft 365に移動するときは、職場または学校のアカウント (user@domain.com) で再度ログオンする必要があります。 ユーザー名は両方の環境で同じです。 PHS または PTA を追加すると、ユーザーは両方の環境で同じパスワードを持ちますが、Microsoft 365にログオンするときに資格情報をもう一度指定する必要があります。 PHS とのディレクトリ同期は、最も一般的に使用されるディレクトリ同期です。
 
-ディレクトリ同期を設定するには、ディレクトリ同期Azure AD Connect。 手順については、「高速設定を[使用して](set-up-directory-synchronization.md)ディレクトリ同期Microsoft 365設定Azure AD Connect[」を参照してください](/azure/active-directory/hybrid/how-to-connect-install-express)。
+ディレクトリ同期を設定するには、Azure AD Connectを使用します。 手順については、「高速設定を使用してMicrosoft 365とAzure AD Connect[のディレクトリ同期](set-up-directory-synchronization.md)[を設定する」を参照](/azure/active-directory/hybrid/how-to-connect-install-express)してください。
 
-ディレクトリ同期の[準備について詳しくは、Microsoft 365](prepare-for-directory-synchronization.md)。
+[Microsoft 365へのディレクトリ同期の準備](prepare-for-directory-synchronization.md)について詳しくは、こちらを参照してください。
 
-### <a name="directory-synchronization-with-sso"></a>SSO とのディレクトリ同期
+### <a name="directory-synchronization-with-sso"></a>SSO を使用したディレクトリ同期
 
-ユーザーは、自分のユーザー アカウントを使用してオンプレミス環境にログオンします。 ユーザーが Microsoft 365に移動すると、自動的にログオンするか、オンプレミス環境 (domain\username) で使用するのと同じ資格情報を使用してログオンします。
+ユーザーは、自分のユーザー アカウントを使用してオンプレミス環境にログオンします。 Microsoft 365に移動すると、自動的にログオンするか、オンプレミス環境で使用するのと同じ資格情報 (domain\username) を使用してログオンします。
 
-SSO を設定するには、SSO をAzure AD Connect。 手順については、「Custom [installation of Azure AD Connect」を参照してください](/azure/active-directory/hybrid/how-to-connect-install-custom)。
+SSO を設定するには、Azure AD Connectも使用します。 手順については、「[Azure AD Connectのカスタム インストール](/azure/active-directory/hybrid/how-to-connect-install-custom)」を参照してください。
 
-詳細については、「シングル サインオン [」を参照してください](/azure/active-directory/manage-apps/what-is-single-sign-on)。
+詳細については、「 [シングル サインオン](/azure/active-directory/manage-apps/what-is-single-sign-on)」を参照してください。
 
 ## <a name="azure-ad-connect"></a>Azure AD Connect
 
-Azure AD Connect、DirSync や id などの以前のバージョンの ID 統合ツールを置き換Azure AD Sync。[同期] から [同期] から [Azure Active Directory] Azure AD Connectアップグレード手順[を参照してください](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started)。 
+Azure AD Connectでは、DirSync やAzure AD Syncなどの古いバージョンの ID 統合ツールが置き換えられます。Azure Active Directory同期からAzure AD Connectに更新する場合は、[アップグレード手順を](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started)参照してください。 
 
 ## <a name="see-also"></a>関連項目
 

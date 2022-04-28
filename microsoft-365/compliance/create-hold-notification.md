@@ -2,8 +2,8 @@
 title: 訴訟ホールド通知を作成する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) ケースの通信ツールを使用して、訴訟ホールド通知を送信、収集、追跡します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ca5c895ca98aafb67fd728e137f0d69dd8b98f8f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 21090274f385d6a3354852134764a1f53a311f10
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997958"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094992"
 ---
 # <a name="create-a-legal-hold-notice"></a>訴訟ホールド通知を作成する
 

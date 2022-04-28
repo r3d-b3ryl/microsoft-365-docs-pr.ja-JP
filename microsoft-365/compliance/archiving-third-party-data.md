@@ -2,8 +2,8 @@
 title: データ コネクタを使用して、Microsoft 365でサード パーティのデータをインポートおよびアーカイブする
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからMicrosoft 365メールボックスにサード パーティのデータをインポートしてアーカイブする方法について説明します。
-ms.openlocfilehash: 820c4e2fb92720940a8b4f207d43aea649ef16e7
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 75a1136c38c0b893babd1cd349dbe34aa9bbf8cd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997254"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093572"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>サード パーティ データのコネクタの詳細
 
@@ -273,35 +273,35 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|CellTrust| はい | 不要 | 不要 |
-|MS SQL 上の Cisco Jabber| はい | 不要 | 不要 |
-|Oracle 上の Cisco Jabber| はい | 不要 | 不要 |
-|PostgreSQL 上の Cisco Jabber| はい | 不要 | 不要 |
-|EML| はい | 不要 | 不要 |
-|FX 接続| はい | 不要 | 不要 |
-|Jive| はい | 不要 | 不要 |
-|MS SQL Database| はい | 不要 | 不要 |
-|ピボット| はい | 不要 | いいえ |
-|Redtail Speak| はい | 不要 | いいえ |
-|Reuters Dealing| はい | 不要 | いいえ |
-|Reuters Eikon| はい | 不要 | 不要 |
-|Reuters FX| はい | 不要 | 不要 |
-|RingCentral| はい | 不要 | 不要 |
-|Salesforce Chatter| はい | 不要 | 不要 |
-|ServiceNow| はい | 不要 | いいえ |
-|Skype for Business| はい | 不要 | いいえ |
-|Slack eDiscovery| はい | 不要 | いいえ |
-|Symphony| はい | 不要 | いいえ |
-|区切られたテキスト| はい | 不要 | 不要 |
-|Twitter| はい | 不要 | いいえ |
-|Webex チーム| はい | 不要 | いいえ |
-|Web ページ| はい | 不要 | いいえ |
-|Facebookからの職場| はい | 不要 | いいえ |
-|XIP| はい | 不要 | いいえ |
-|XSLT/XML| はい | 不要 | いいえ |
-|Yieldbroker| はい | 不要 | いいえ |
-|YouTube| 不要 | いいえ | いいえ |
-|Zoom会議| はい | 不要 | 不要 |
+|CellTrust| はい | いいえ | いいえ |
+|MS SQL 上の Cisco Jabber| はい | いいえ | なし |
+|Oracle 上の Cisco Jabber| はい | いいえ | なし |
+|PostgreSQL 上の Cisco Jabber| はい | いいえ | なし |
+|EML| はい | いいえ | いいえ |
+|FX 接続| はい | いいえ | なし |
+|Jive| はい | いいえ | いいえ |
+|MS SQL Database| はい | いいえ | なし |
+|ピボット| はい | いいえ | なし |
+|Redtail Speak| はい | いいえ | いいえ |
+|Reuters Dealing| はい | いいえ | なし |
+|Reuters Eikon| はい | いいえ | いいえ |
+|Reuters FX| はい | いいえ | なし |
+|RingCentral| はい | いいえ | なし |
+|Salesforce Chatter| はい | いいえ | いいえ |
+|ServiceNow| はい | いいえ | なし |
+|Skype for Business| はい | いいえ | いいえ |
+|Slack eDiscovery| はい | いいえ | なし |
+|Symphony| はい | いいえ | いいえ |
+|区切られたテキスト| はい | いいえ | なし |
+|Twitter| はい | いいえ | いいえ |
+|Webex チーム| はい | いいえ | いいえ |
+|Web ページ| はい | いいえ | いいえ |
+|Facebookからの職場| はい | いいえ | いいえ |
+|XIP| はい | いいえ | いいえ |
+|XSLT/XML| はい | いいえ | いいえ |
+|Yieldbroker| はい | いいえ | なし |
+|YouTube| いいえ | いいえ | いいえ |
+|Zoom会議| はい | いいえ | いいえ |
 |||||
 
 ### <a name="telemessage-data-connectors-in-the-us-government-cloud"></a>米国政府クラウドの TeleMessage データ コネクタ
@@ -310,47 +310,47 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |:---------|:---------|:---------|:---------|
 |Android Archiver | はい | いいえ | いいえ |
 |AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Enterprise Number Archiver | はい | いいえ | いいえ |
-|O2 SMS および Voice Network Archiver | はい         | いいえ | いいえ |
-|Rogers Network Archiver | はい         | いいえ | 不要 |
-|Signal Archiver | はい | 不要 | 不要 |
-|Telegram Archiver | はい | 不要 | 不要 |
-|TELUS SMS Network Archiver | はい | 不要 | 不要 |
-|Verizon SMS/MMS Network Archiver | はい | 不要 | 不要 |
-|WeChat Archiver | はい | 不要 | いいえ |
-|WhatsApp Archiver | はい | 不要 | いいえ |
+|Bell SMS/MMS Network Archiver | はい | いいえ | なし |
+|Enterprise Number Archiver | はい | いいえ | なし |
+|O2 SMS および Voice Network Archiver | はい         | いいえ | なし |
+|Rogers Network Archiver | はい         | いいえ | いいえ |
+|Signal Archiver | はい | いいえ | いいえ |
+|Telegram Archiver | はい | いいえ | なし |
+|TELUS SMS Network Archiver | はい | いいえ | なし |
+|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|WeChat Archiver | はい | いいえ | なし |
+|WhatsApp Archiver | はい | いいえ | なし |
 |||||
 
 ### <a name="17a-4-data-connectors-in-the-us-government-cloud"></a>米国政府機関クラウドの 17a-4 データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|BlackBerry DataParser | はい | 不要 | いいえ |
-|Bloomberg DataParser  | はい | 不要 | いいえ |
-|Cisco Jabber DataParser  | はい | 不要 | 不要 |
-|Cisco Webex DataParser  | はい | 不要 | いいえ |
-|FactSet DataParser  | はい | 不要 | いいえ |
-|Fuze DataParser  | はい | 不要 | いいえ |
-|FX Connect DataParser  | はい | 不要 | いいえ |
-|ICE DataParser  | はい | 不要 | いいえ |
-|InvestEdge DataParser  | はい | 不要 | いいえ |
-|LivePerson Conversational Cloud DataParser  | はい | 不要 | いいえ |
-|Quip DataParser  | はい | 不要 | いいえ |
-|Refinitiv Eikon Messenger DataParser  | はい | 不要 | いいえ |
+|BlackBerry DataParser | はい | いいえ | なし |
+|Bloomberg DataParser  | はい | いいえ | なし |
+|Cisco Jabber DataParser  | はい | いいえ | なし |
+|Cisco Webex DataParser  | はい | いいえ | なし |
+|FactSet DataParser  | はい | いいえ | なし |
+|Fuze DataParser  | はい | いいえ | なし |
+|FX Connect DataParser  | はい | いいえ | いいえ |
+|ICE DataParser  | はい | いいえ | いいえ |
+|InvestEdge DataParser  | はい | いいえ | いいえ |
+|LivePerson Conversational Cloud DataParser  | はい | いいえ | いいえ |
+|Quip DataParser  | はい | いいえ | いいえ |
+|Refinitiv Eikon Messenger DataParser  | はい | いいえ | いいえ |
 |ServiceNow DataParser  | はい | いいえ | いいえ |
 |Skype for Business Server DataParser | はい | いいえ | いいえ |
-|Slack DataParser | はい | いいえ | いいえ |
+|Slack DataParser | はい | いいえ | なし |
 |SQL DataParser  | はい | いいえ | いいえ |
 |Symphony DataParser | はい | いいえ | いいえ |
-|Zoom DataParser | はい | 不要 | 不要 |
+|Zoom DataParser | はい | いいえ | なし |
 |||||
 
 ### <a name="celltrust-data-connectors-in-the-us-government-cloud"></a>米国政府クラウドの CellTrust データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|CellTrust SL2 | はい | 不要 | 不要 |
+|CellTrust SL2 | はい | いいえ | なし |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと協力してサード パーティのデータをアーカイブする

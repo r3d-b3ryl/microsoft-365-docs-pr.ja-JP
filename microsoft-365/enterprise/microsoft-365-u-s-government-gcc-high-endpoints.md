@@ -2,7 +2,7 @@
 title: Office 365 米国政府機関の高 GCC エンドポイント
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 02/28/2022
 audience: ITPro
 ms.topic: conceptual
@@ -20,12 +20,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: この記事では、Office 365米国政府機関GCC High プランを使用しているお客様に到達可能なエンドポイントについて説明します。
 hideEdit: true
-ms.openlocfilehash: 0b54d9da850c3ac12a6dcf8d1547025fd21bc33f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a3bd1040ee264db5b389aea302c3a6acacbd4f1f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974149"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094706"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 米国政府機関の高 GCC エンドポイント
 

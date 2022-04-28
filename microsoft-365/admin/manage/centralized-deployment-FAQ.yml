@@ -21,14 +21,14 @@ metadata:
   - MET150
   - MOE150
   description: Microsoft 365 管理センターからの一元展開に関するよくある質問への回答を確認します。
-  ms.openlocfilehash: 870e59a96f1dee5e56b130f7750faa0addd593c9
-  ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+  ms.openlocfilehash: 63ccddde4a55b4842f38fb801c31fe3108e8743f
+  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/20/2022
-  ms.locfileid: "64971081"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65094308"
 title: 一元展開に関する FAQ
-summary: 組織がこの記事で説明したように、一元展開を使用するためのすべての要件を満たしている場合、Office 365管理者は、組織内のユーザーとグループにOfficeアドイン (Word、Excel、PowerPoint、Outlook) を展開することをお勧めします。
+summary: 組織がこの記事で説明するように一元展開を使用するためのすべての要件を満たしている場合、Office 365管理者は、組織内のユーザーとグループにOfficeアドイン (Word、Excel、PowerPoint、Outlook) を展開することをお勧めします。
 sections:
 - name: 無視
   questions:
@@ -65,6 +65,6 @@ sections:
       管理者はアドインを削除または削除できますか?
     answer: "はい。 管理者は、Microsoft 管理センターからすべてのユーザーに展開したアドインを削除できます。\n\n詳細については、「 [アドインを削除する」を](./manage-addins-in-the-admin-center.md#delete-an-add-in)参照してください。 \n  \n"
   - question: "管理者は、一元展開を使用してOffice ストアから有料アドインを展開できますか? \n"
-    answer: "いいえ。 現時点では、一元展開を使用してOffice ストアから有料アドインをデプロイすることはできません。 \n \nマニフェスト ファイルまたは URL を要求するために、有料アドインの ISV 開発者に連絡することをお勧めします。 テナント管理者は、一元展開を使用して、アドインを LOB アドインとしてデプロイできます。\n   \n"
+    answer: "その必要はありません。 現時点では、一元展開を使用してOffice ストアから有料アドインをデプロイすることはできません。 \n \nマニフェスト ファイルまたは URL を要求するために、有料アドインの ISV 開発者に連絡することをお勧めします。 テナント管理者は、一元展開を使用して、アドインを LOB アドインとしてデプロイできます。\n   \n"
   - question: "組織のアドインを管理するには、どの管理者ロールが必要ですか? \n"
     answer: "グローバル管理者は、アドイン管理ライフサイクルに完全にアクセスできる、推奨されるロールです。 Microsoft 365 Business サブスクリプションを購入したユーザーは、グローバル管理者です。\n\nサブスクリプションには、組織内の他のユーザーに割り当てることができる一連の管理者ロールが付属しています。 各管理者ロールは、一般的なビジネス機能にマップされ、組織内のユーザーに、Microsoft 365 管理センターで特定のタスクを実行するためのアクセス許可を付与します。  \n \n詳細については、「 [管理者ロールの割り当て](../add-users/assign-admin-roles.md?view=o365-worldwide)」を参照してください。"

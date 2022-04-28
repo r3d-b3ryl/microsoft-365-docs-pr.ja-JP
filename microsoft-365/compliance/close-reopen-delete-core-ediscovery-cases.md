@@ -2,8 +2,8 @@
 title: 電子情報開示 (Standard) ケースを閉じる、再度開く、削除する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、電子情報開示 (Standard) ケースを管理する方法について説明します。 これには、ケースの終了、クローズされたケースの再び開き、ケースの削除が含まれます。
-ms.openlocfilehash: ee18a169ace43f03a0407b87c8ae70705af2f43c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 27dc46fcfe65b6a39c3a217fd72fcc97037ccb99
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992372"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094011"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>電子情報開示 (Standard) ケースを閉じる、再度開く、削除する
 

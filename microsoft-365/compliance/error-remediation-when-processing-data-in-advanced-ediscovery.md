@@ -2,8 +2,8 @@
 title: データ処理中のエラー修復
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: エラー修復を使用して、コンテンツの適切な処理を妨げる可能性がある電子情報開示 (プレミアム) のデータの問題を修正する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1f56ad34cb295103178c5f244ccd78d7ad3757b0
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e119458281a81ab41f8034ce76e65a5946536204
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994548"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093111"
 ---
 # <a name="error-remediation-when-processing-data"></a>データ処理中のエラー修復
 

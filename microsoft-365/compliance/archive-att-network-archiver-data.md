@@ -2,8 +2,8 @@
 title: AT&T SMS/MMS ネットワーク データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は TeleMessage コネクタを設定して、AT&T Mobile Network から SMS および MMS データをインポートおよびアーカイブできます。 これにより、Microsoft Purview のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 87b933117fae134572ccf4a152a83ec4165b1caf
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 7d73e6a5e5a5190609cd50bd055af8b7aec969b7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992768"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093177"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>AT&T SMS/MMS データをアーカイブするコネクタを設定する
 
@@ -43,7 +43,7 @@ SMS および MMS メッセージをユーザー メールボックスに格納�
  
    *ユーザーの電子メール アドレス* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義することもできます。 このマッピング ファイルには、組織内のユーザーの携帯電話番号と対応するMicrosoft 365電子メール アドレスが含まれています。 自動ユーザー マッピングとカスタム マッピングの両方を有効にした場合、すべての電子メール アイテムについて、コネクタは最初にカスタム マッピング ファイルを参照します。 携帯電話番号に対応する有効なMicrosoft 365 ユーザーが見つからない場合、コネクタはインポートしようとしているアイテムのメール アドレス プロパティの値を使用します。 コネクタが、カスタム マッピング ファイルまたは電子メール アイテムのメール アドレス プロパティで有効なMicrosoft 365 ユーザーを見つけられない場合、アイテムはインポートされません。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 AT&T Network データをアーカイブするために必要な実装手順の一部はMicrosoft 365外部であり、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
 

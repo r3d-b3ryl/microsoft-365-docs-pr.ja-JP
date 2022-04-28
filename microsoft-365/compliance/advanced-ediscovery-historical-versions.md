@@ -2,8 +2,8 @@
 title: 電子情報開示で履歴バージョンを設定する (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) の履歴バージョンを使用して、SharePointおよびOneDriveに格納されているすべてのバージョンのドキュメントからコンテンツを収集します。
-ms.openlocfilehash: ebd706aa122da2f875adb0c210db8cb3a0c8ab10
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2b71d79fae15b5bc8bafbf32fc189dad9b314d40
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000622"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092549"
 ---
 # <a name="set-up-historical-versions-in-ediscovery-premium-preview"></a>電子情報開示で履歴バージョンを設定する (プレミアム) (プレビュー)
 
@@ -95,7 +95,7 @@ ms.locfileid: "65000622"
 
 **サイトに対して履歴バージョンが有効になっている場合、サイトのパフォーマンスに影響しますか?**
 
-いいえ。 サイトの履歴バージョンが有効になると、サイトのパフォーマンスは、サイトが有効になる前のパフォーマンスと同じになります。 サイトが有効になった後に実行されるクロールおよびインデックス作成プロセスは、低速で発生し、ピーク時外に実行されます。 サイトの履歴バージョンを有効にすると、バックフィル プロセスが開始され、サイト上のすべてのバージョンのドキュメントが検索され、そのバージョンがインデックスに送信されます。 サイトのドキュメント バージョンの数によっては、このバックフィル プロセスがサービスの正常性に影響を与える可能性があります。 この潜在的な影響を次の方法で軽減しました。
+その必要はありません。 サイトの履歴バージョンが有効になると、サイトのパフォーマンスは、サイトが有効になる前のパフォーマンスと同じになります。 サイトが有効になった後に実行されるクロールおよびインデックス作成プロセスは、低速で発生し、ピーク時外に実行されます。 サイトの履歴バージョンを有効にすると、バックフィル プロセスが開始され、サイト上のすべてのバージョンのドキュメントが検索され、そのバージョンがインデックスに送信されます。 サイトのドキュメント バージョンの数によっては、このバックフィル プロセスがサービスの正常性に影響を与える可能性があります。 この潜在的な影響を次の方法で軽減しました。
 
 - これらのバージョンは、ピーク時以外の時間帯に処理するよう最善を尽くしています。
 

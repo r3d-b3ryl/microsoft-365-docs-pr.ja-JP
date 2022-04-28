@@ -2,8 +2,8 @@
 title: 電子情報開示 (プレミアム) ケースにカストディアンを追加する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft Purview 電子情報開示 (プレミアム) の組み込みのカストディアン管理ツールを使用して、ワークフローを調整し、ケース内の関連データ ソースを特定する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46277524f616e91e89e9bccce1fdd3c3109b3d86
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3810880ca414efaaa3471c65d2c8c7b8d2956120
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999478"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093220"
 ---
 # <a name="add-custodians-to-an-ediscovery-premium-case"></a>電子情報開示 (プレミアム) ケースにカストディアンを追加する
 

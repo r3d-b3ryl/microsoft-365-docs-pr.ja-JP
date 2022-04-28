@@ -2,8 +2,8 @@
 title: コンテンツの検索結果をエクスポートする
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Microsoft Purview コンプライアンス ポータルのコンテンツ検索からローカル コンピューターに検索結果をエクスポートします。 電子メールの結果は PST ファイルとしてエクスポートされます。 SharePoint サイトとOneDrive for Business サイトのコンテンツは、ネイティブ Office ドキュメントとしてエクスポートされます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 38faaf29087e67aef161e46a1fbc6c338d9c33e4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5550bb8ebe7f90bbcbb87df8ca04ff4d83e76c2c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995472"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094528"
 ---
 # <a name="export-content-search-results"></a>コンテンツの検索結果をエクスポートする
 
@@ -177,7 +177,7 @@ ms.locfileid: "64995472"
   
     **電子情報開示エクスポート ツール** には、ダウンロードする残りのアイテムの数とサイズの見積もりなど、エクスポート プロセスの状態に関する情報が表示されます。 エクスポート処理が完了したら、ダウンロードした場所のファイルにアクセスできます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 検索結果のエクスポートの詳細については、次をご覧ください。
   

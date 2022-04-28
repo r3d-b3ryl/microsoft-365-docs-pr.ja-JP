@@ -2,8 +2,8 @@
 title: 外部連絡先をExchange Onlineに一括インポートする
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 6/29/2018
 audience: End User
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
 description: 管理者が powerShell と CSV ファイルExchange Online使用して、外部連絡先をグローバル アドレス一覧に一括インポートする方法について説明します。
-ms.openlocfilehash: a85d24a4b20798df057250d9114f97563a6a8e2d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5e80453326159010aaae81a8b810396f5a7294cf
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999302"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093550"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>外部連絡先をExchange Onlineに一括インポートする
 

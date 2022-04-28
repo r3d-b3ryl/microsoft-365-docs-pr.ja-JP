@@ -2,8 +2,8 @@
 title: 推定および実際の電子情報開示検索結果
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Office 365の電子情報開示ツールを使用して実行される検索で、推定検索結果と実際の検索結果が異なる可能性がある理由を理解します。
-ms.openlocfilehash: a71b246b71e7b3cca3ef361510042b6292c36c8b
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 694d850d568aee4965530317f9bbc9f95727338c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993954"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092781"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>推定電子情報開示検索結果と実際の電子情報開示検索結果の違い
 

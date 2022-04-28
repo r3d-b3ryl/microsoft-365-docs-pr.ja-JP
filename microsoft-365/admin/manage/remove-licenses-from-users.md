@@ -22,13 +22,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: 製品ライセンスの割り当てを解除する方法は、特定のユーザーから割り当て解除するのか、それとも特定の製品から割り当てを解除するのかによって異なります。
-ms.date: 09/16/2021
-ms.openlocfilehash: 8d0fd6f89802111bdb2afbc2586392251d393e4e
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.date: 04/22/2022
+ms.openlocfilehash: b5294bd6234c36e6040ff8cc7433c3e66b7d34b6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971082"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093704"
 ---
 # <a name="unassign-licenses-from-users"></a>ユーザーからライセンスの割り当てを解除する
 

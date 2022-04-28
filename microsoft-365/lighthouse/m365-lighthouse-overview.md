@@ -17,25 +17,23 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: マネージド サービス プロバイダー (MSP) の場合、Microsoft 365 Lighthouseが顧客テナントを 1 か所でセキュリティで保護および管理するのに役立つ方法について説明します。
-ms.openlocfilehash: 96ae7647107a1be89d9fe4d800374ce8a8970cb8
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 9a75cd43ac09d63c4524495a3146bf0b860627a4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023637"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094684"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの概要
 
-Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (MSP) が、Microsoft 365 Business Premium、Microsoft 365 E3、またはを使用している中小規模ビジネス (SMB) のお客様に対して大規模にデバイス、データ、ユーザーをセキュリティで保護および管理するのに役立つ管理ポータルです。Windows 365 Business。 
+Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (MSP) が、Microsoft 365 Business PremiumまたはMicrosoft 365 E3を使用している小規模および中規模のビジネス (SMB) のお客様向けに大規模にデバイス、データ、ユーザーをセキュリティで保護および管理するのに役立つ管理ポータルです。
 
-Lighthouse は、SMB のお客様に合わせたセキュリティ構成ベースラインを推奨し、すべての顧客環境でマルチテナント ビューを提供することで、Microsoft 365 Business Premium、Microsoft 365 E3、およびWindows 365 Businessテナントのオンボードを簡素化します。 Lighthouse を使用すると、MSP は顧客の管理をスケーリングし、最も重要な点に焦点を当て、リスクをすばやく見つけて調査し、顧客を健全で安全な状態にするためのアクションを実行できます。
+Lighthouse は、SMB のお客様に合わせたセキュリティ構成ベースラインを推奨し、すべての顧客環境でマルチテナント ビューを提供することで、顧客テナントのオンボードを簡素化します。 Lighthouse を使用すると、MSP は顧客の管理をスケーリングし、最も重要な点に焦点を当て、リスクをすばやく見つけて調査し、顧客を健全で安全な状態にするためのアクションを実行できます。
 
-Lighthouse を使用してMicrosoft 365サービスと接続されたデバイスを管理する場合、追加のコストは発生しません。 Lighthouse は、クラウド ソリューション プロバイダー (CSP) プログラムに登録され、Microsoft 365 Business Premium、Microsoft 365 E3、またはWindows 365 Businessサブスクリプションを使用して SMB のお客様にサービスを提供する MSP が利用できます。
-
-Microsoft 365 Business Premium、Microsoft 365 E3、またはWindows 365 Businessを使用するお客様がいる Microsoft CSP チャネル パートナーによる Lighthouse の使用がサポートされています。 これには、Microsoft と直接取引する CSP パートナーと、間接プロバイダー (ディストリビューター) を介して取引する CSP パートナーが含まれます。 
+Lighthouse を使用してMicrosoft 365サービスと接続されたデバイスを管理する場合、追加のコストは発生しません。 Lighthouse は、SMB のお客様にサービスを提供する クラウド ソリューション プロバイダー (CSP) プログラムに登録されている MSP が利用できます。 これには、Microsoft と直接取引する CSP パートナーと、間接プロバイダー (ディストリビューター) を介して取引する CSP パートナーが含まれます。
 
 > [!IMPORTANT] 
-> Lighthouse を使用するには、MSP とその顧客テナントが、Microsoft 365 Lighthouse要件に記載されている[要件を](m365-lighthouse-requirements.md)満たしている必要があります。     
+> Lighthouse を使用するには、MSP とその顧客テナントが、Microsoft 365 Lighthouse要件に記載されている[要件を](m365-lighthouse-requirements.md)満たしている必要があります。
 
 CSP プログラムの詳細については、[クラウド ソリューション プロバイダー プログラムの概要](/partner-center/csp-overview)を参照してください。
 

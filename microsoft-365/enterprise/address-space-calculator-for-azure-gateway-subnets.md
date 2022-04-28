@@ -1,8 +1,8 @@
 ---
-title: Azure ゲートウェイ サブネットのアドレス空間計算
+title: Azure ゲートウェイ サブネットのアドレス空間計算ツール
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 01/07/2021
 audience: ITPro
 ms.topic: landing-page
@@ -16,27 +16,27 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 description: '概要: C3、Python、または PowerShell を使用して Azure ゲートウェイ サブネットのアドレス空間を計算します。'
-ms.openlocfilehash: 129c64e4484110517edf3640861636324e59de57
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a19233b6ec68c92dbf65ecb6a73fc1a0a16e6d31
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681790"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094882"
 ---
-# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Azure ゲートウェイ サブネットのアドレス空間計算
+# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Azure ゲートウェイ サブネットのアドレス空間計算ツール
 
 他のネットワークに接続されている Azure インフラストラクチャ サービスの仮想ネットワーク (VNet) には、ゲートウェイ サブネットが必要です。 ゲートウェイ サブネットを定義するためのベスト プラクティスは次のとおりです。
 
-- ゲートウェイ サブネットのプレフィックスの長さは最大で 29 (10.119.255.248/29 など) ですが、現在の推奨事項は、プレフィックスの長さが 27 (10.119.255.224/27 など) を使用する方法です。
-- ゲートウェイ サブネットのアドレス空間を定義する場合は、VNet アドレス空間の最後の部分を使用します。
+- ゲートウェイ サブネットのプレフィックスの長さは最大 29 (たとえば、10.119.255.248/29) ですが、現在の推奨事項はプレフィックスの長さが 27 (10.119.255.224/27 など) を使用することです。
+- ゲートウェイ サブネットのアドレス空間を定義するときは、VNet アドレス空間の最後の部分を使用します。
 
-2 番目の推奨事項では、ゲートウェイ サブネットに使用するビットを 0 に設定し、VNet アドレス空間の残りのビットを 1 に設定して、ゲートウェイ サブネットのアドレス空間を決定できます。 バイナリに変換して 10 進数に戻さずにゲートウェイ サブネット アドレス空間をすばやく計算するには、C# または Python または PowerShell コマンド ブロックで記述されたコンソール アプリケーションを使用できます。
+2 番目の推奨事項では、ゲートウェイ サブネットに使用されるビットを 0 に設定し、VNet アドレス空間の残りのビットを 1 に設定することで、ゲートウェイ サブネットのアドレス空間を決定できます。 バイナリに変換して 10 進数に戻さずにゲートウェイ サブネットのアドレス空間をすばやく計算するには、C# または Python または PowerShell コマンド ブロックで記述されたコンソール アプリケーションを使用できます。
 
-この記事では、vNet アドレス プレフィックスの w.x.y.z/n の値とゲートウェイ サブネットプレフィックスの長さに基づいてゲートウェイ サブネット アドレス空間を計算する C#、Python、および PowerShell のコード ブロックについて説明します。
+この記事には、VNet アドレス プレフィックスとゲートウェイ サブネット プレフィックスの長さの w.x.y.z/n の値に基づいてゲートウェイ サブネットアドレス空間を計算する C#、Python、および PowerShell コード ブロックが含まれています。
 
 ## <a name="c-code-block"></a>C# コード ブロック
 
-このコード ブロックを使用して、コンソール アプリを作成C#。
+このコード ブロックを使用して、C# でコンソール アプリを作成します。
 
 ```c#
 using System; 
@@ -110,7 +110,7 @@ namespace ConsoleApplication1
 
 ## <a name="python-code-block"></a>Python コード ブロック
 
-Python でコンソール アプリを作成するには、このコード ブロックを使用します。
+このコード ブロックを使用して、Python でコンソール アプリを作成します。
 
 ```python
 import math 

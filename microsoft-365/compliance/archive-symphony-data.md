@@ -2,8 +2,8 @@
 title: Microsoft 365でシンフォニー データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas のシンフォニーからMicrosoft 365にデータをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
-ms.openlocfilehash: dbff83ca244ca24fdd1a42f0929ec3e43f84b4d1
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b1a368fc7bce9e7b66021d7351139a78e6e6ac97
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992350"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093616"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>コネクタを設定して、シンフォニー データをアーカイブする
 
@@ -41,7 +41,7 @@ Microsoft Purview コンプライアンス ポータルの Veritas コネクタ�
 
 4. コネクタは、手順 3. の説明に従って、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたメッセージ アイテムを特定のユーザーのメールボックスにインポートします。 ユーザーメールボックスに **、シンフォニー** という名前の受信トレイ フォルダー内の新しいサブフォルダーが作成され、そのフォルダーにメッセージ アイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用して、アイテムをインポートするメールボックスを決定します。 すべてのチャット メッセージにはこのプロパティが含まれています。このプロパティには、すべての参加者のメール アドレスが入力されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Microsoft コネクタの Veritas Merge1 アカウントを作成します。 アカウントを作成するには、 [Veritas カスタマー サポート](https://globanet.com/ms-connectors-contact)にお問い合わせください。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 

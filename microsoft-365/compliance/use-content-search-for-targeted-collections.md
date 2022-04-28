@@ -2,8 +2,8 @@
 title: 対象のコレクションにコンテンツ検索を使用する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Microsoft Purview コンプライアンス ポータルでコンテンツ検索を使用して、特定のメールボックスまたはサイト フォルダー内のアイテムを検索する対象のコレクションを実行します。
-ms.openlocfilehash: 9638a0870f1d97d2bcea73215509d269576c4ecd
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 396c42183667e59e738779f618ca077d909db419
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991778"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094926"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>対象のコレクションにコンテンツ検索を使用する
 
@@ -272,7 +272,7 @@ SharePointサイトまたはOneDrive for Business サイトから **documentlink
   documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 この記事のスクリプトを使用してターゲット コレクションを実行する場合は、次の点に注意してください。
 

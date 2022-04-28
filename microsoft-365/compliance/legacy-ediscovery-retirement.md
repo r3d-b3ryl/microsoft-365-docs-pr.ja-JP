@@ -2,8 +2,8 @@
 title: 従来の電子情報開示ツールが廃止されました
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Exchange OnlineのIn-Place電子情報開示とIn-Placeホールド (および対応する PowerShell コマンドレット) は、2020 年前半に廃止されます。 Search-Mailbox コマンドレットと Microsoft Purview 電子情報開示 (プレミアム) v1.0 も同じ期間内に廃止されます。
-ms.openlocfilehash: 19809b96574bf8d703264e0bedaada10f177ef31
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 367b020a5804ac120f226962ea48a49b73dd70e6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999199"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094484"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -225,7 +225,7 @@ Exchange管理センターで 2017 年 7 月 1 日に発表された当初の通
 </tr>
 <tr class="odd">
 <td>検索結果を探索メールボックスにコピーする</td>
-<td>なし</td>
+<td>None</td>
 <td>この機能は、すべてのMicrosoft 365 サービスにアクセスできるわけではないため、直接置き換える必要はありません。 代替ソリューションについては、以下の FAQ を参照してください。</td>
 </tr>
   <tr class=even>

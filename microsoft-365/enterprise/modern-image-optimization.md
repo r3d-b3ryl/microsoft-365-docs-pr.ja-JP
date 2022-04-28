@@ -2,7 +2,7 @@
 title: SharePoint Online のモダン サイト ページで画像を最適化する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: SharePoint Online に含まれるツールを使用して、SharePointモダン サイト ページの画像を最適化する方法について学習します。
-ms.openlocfilehash: 85280dfc903c56c89308c50fa94979fd98b2003c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: SharePoint Online に含まれるツールを使用して、SharePoint Online モダン サイト ページで画像を最適化する方法について説明します。
+ms.openlocfilehash: 102555e25e48af19432a26e6e2a0cb17c78044b3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168508"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093835"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページで画像を最適化する
 
@@ -66,7 +66,7 @@ SharePoint のモダン サイトを SharePoint 用ページ診断ツールを�
 >[!NOTE]
 >ページ読み込み時間は、ネットワーク負荷、時間帯、その他の一時的な状態など、さまざまな要素によって異なります。 結果を平均化するために、変更の前後に数回に渡ってページ読み込み時間をテストする必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
 

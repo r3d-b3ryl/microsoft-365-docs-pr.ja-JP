@@ -2,8 +2,8 @@
 title: 電子情報開示での関連性分析の追跡 (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: 電子情報開示 (プレミアム) のケースの問題に関する関連性トレーニングの状態と結果を表示して解釈する方法について説明します。
-ms.openlocfilehash: 72e12fe54b30c3d766f7a198e5e3417ff9d48a22
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: dd2eecbcd347125b1728851d873068b37f82aced
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000952"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093989"
 ---
 # <a name="track-relevance-analysis-in-ediscovery-premium"></a>電子情報開示での関連性分析の追跡 (プレミアム)
 

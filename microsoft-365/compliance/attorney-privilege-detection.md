@@ -2,8 +2,8 @@
 title: 電子情報開示 (プレミアム) で弁護士とクライアントの特権の検出を設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft Purview 電子情報開示 (プレミアム) ケースのコンテンツを確認するときに、特権コンテンツの機械学習ベースの検出を使用するには、弁護士クライアント特権検出モデルを使用します。
-ms.openlocfilehash: 477b741cf617179ffd9eb1a4c38230faf5a0fce0
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 359dccc041a0655ade291a37e511038a50148f7b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997298"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094033"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>電子情報開示 (プレミアム) で弁護士とクライアントの特権の検出を設定する
 

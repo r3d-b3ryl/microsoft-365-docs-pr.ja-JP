@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 管理センターの統合アプリ ポータルから、組織内のユーザーとグループの Microsoft および Microsoft パートナー アプリを検索、テスト、デプロイします。
-ms.openlocfilehash: 2baf6aea136736b1239df9a4da7b7e6a5b456ea6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 491315b36a7698399bcd22c60173db8cec482148
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782393"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094662"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>統合アプリ ポータルでパートナーによるMicrosoft 365 Appsのテストとデプロイ
 
@@ -107,7 +107,7 @@ Microsoft 365 管理センターでは、単一のストア アプリ、カス�
 
 ## <a name="prepare-to-deploy-add-ins-in-integrated-apps"></a>統合アプリでアドインをデプロイする準備をする
 
-Office アドインは、ドキュメントをカスタマイズしたり、Web 上の情報にアクセスする方法を効率化したりする際に役立ちます (「Office アドインの使用を開始する」を参照)。 
+Office アドインは、ドキュメントをカスタマイズし、Web 上の情報にアクセスする方法を合理化するのに役立ちます (「Office アドインの使用を開始する」を参照)。 
 
 アドインには、次の利点があります。 
 
@@ -121,7 +121,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
 
 現在、Exchange管理者とグローバル管理者の両方が、統合アプリからアドインをデプロイできます。   
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>開始する前に
 
 アドインの展開では、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、またはMicrosoft 365 Enterprise ライセンス (E3/E5/F3) を使用している必要があります。 また、ユーザーは組織 ID を使用してOfficeにサインインする必要があります)、Exchange OnlineメールボックスとアクティブなExchange Online メールボックスが必要です。 サブスクリプション ディレクトリが存在するか、Azure Active Directoryにフェデレーションされている必要があります。 
 
@@ -179,7 +179,7 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
 
 Azure Active Directory Graph APIを使用してクエリを実行し、グループ内のグループの一覧を検索できることに注意してください。 詳細については、「[Operations on groups | Graph API reference (グループに対する操作 | Graph API リファレンス)](/previous-versions/azure/ad/graph/api/groups-operations)」を参照してください。 
 
-## <a name="recommended-approach-for-deploying-office-add-ins"></a>Office アドインを展開する際に推奨される方法 
+## <a name="recommended-approach-for-deploying-office-add-ins"></a>Office アドインの展開に推奨されるアプローチ 
 段階的なアプローチを使用してアドインをロールアウトするには、次のことをお勧めします。 
 1. ビジネス内での利害関係者の小グループや IT 部門のメンバーを対象に、アドインをロールアウトします。 フラグをオンにすることができます **。これはテスト デプロイです**。 デプロイが成功した場合は、手順 2 に進みます。 
 
@@ -189,7 +189,7 @@ Azure Active Directory Graph APIを使用してクエリを実行し、グルー
 
 対象ユーザーのサイズに応じて、ロールアウト手順を追加または削除できます。  
 
-## <a name="deploy-an-office-add-in-using-the-admin-center"></a>管理センターを使用して Office アドインを展開する 
+## <a name="deploy-an-office-add-in-using-the-admin-center"></a>管理センターを使用してOffice アドインをデプロイする 
 
 1. 管理センターで **[設定**]、[**統合アプリ**] の順に選択します。 
 
@@ -225,12 +225,12 @@ Azure Active Directory Graph APIを使用してクエリを実行し、グルー
 組織に適したオプションは、構成によって異なります。 ただし、グループを使用して割り当てを行うことをお勧めします。 管理者は、毎回個々のユーザーを割り当てるのではなく、グループを使用してそれらのグループのメンバーシップを制御することで、アドインを管理する方が簡単な場合があります。 場合によっては、ユーザーを手動で割り当てることで特定のユーザーに割り当てることで、少数のユーザー セットへのアクセスを制限することができます。 
 
 ### <a name="more-about-office-add-ins-security"></a>Office アドインのセキュリティの詳細 
-Office アドインに結合されている XML マニフェスト ファイルは、アドインに関する一部のメタデータを含んでいますが、最も重要なのは、すべてのコードとロジックを含む Web アプリケーションを参照していることです。アドインにはさまざまな機能があります。たとえば、アドインでは次のことができます。
+Office アドインは、アドインに関するいくつかのメタデータを含む XML マニフェスト ファイルを結合しますが、最も重要なのは、すべてのコードとロジックを含む Web アプリケーションを指します。 アドインにはさまざまな機能があります。 たとえば、アドインでは次のことができます。
 - データを表示する。 
 - ユーザーのドキュメントを読み取ってコンテキスト サービスを提供する。 
 - ユーザーのドキュメントのデータを読み書きして、そのユーザーに価値を提供する。  
 
-Office アドインの種類と機能の詳細については、「[Office アドイン プラットフォームの概要](/office/dev/add-ins/overview/office-add-ins)」をご覧ください (特に「Office アドインの構造」セクション)。 
+Office アドインの種類と機能の詳細については、アドイン [プラットフォームの概要Office](/office/dev/add-ins/overview/office-add-ins)特に「Office アドインの構造」を参照してください。 
 
 ユーザーのドキュメントを操作するため、アドインはマニフェストで必要なアクセス許可を宣言する必要があります。5 レベルの JavaScript API アクセス許可モデルが、タスク ウィンドウ アドインのユーザーにプライバシーとセキュリティの基礎を提供します。Office ストア 内のアドインの多くは ReadWriteDocument レベルで、ほとんどすべてのアドインは少なくとも ReadDocument レベルをサポートします。アクセス許可レベルの詳細については、「[コンテンツとタスク ウィンドウ アドインでの API 使用のアクセス許可の要求](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)」をご覧ください。 
 
@@ -314,8 +314,8 @@ Exchange管理者がアドインをデプロイできないケースは 2 つあ
 
 ### <a name="is-integrated-apps-available-in-sovereign-cloud"></a>統合アプリはソブリン クラウドで利用できますか?
 
-ちがいます。 統合アプリは、ソブリン クラウドのお客様には使用できません。
+その必要はありません。 統合アプリは、ソブリン クラウドのお客様には使用できません。
 
 ### <a name="is-integrated-apps-available-in-government-clouds"></a>統合アプリは政府機関のクラウドで利用できますか?
 
-ちがいます。 統合アプリは、政府機関のクラウドのお客様には利用できません。
+その必要はありません。 統合アプリは、政府機関のクラウドのお客様には利用できません。

@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 未成年者の個人データを管理する一般データ保護規則 (GDPR) 規制について説明します。
-ms.openlocfilehash: 15b35798ba03132b35285dc16ce57b139e4d7222
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 9b348ce47b5deef8f012428a402a4a83eaa6dcf1
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782371"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094242"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>未成年者とストアからのアドインの取得
 
 一般データ保護規則 (GDPR) は、2018 年 5 月 25 日に発効する欧州連合規則です。 これにより、ユーザーは自分のデータに対する権限と保護を行えます。 GDPR の側面の 1 つは、未成年者が親または保護者が承認していない当事者に個人データを送信できないことです。 未成年者として定義されている特定の年齢は、個人が配置されているリージョンによって異なります。
 
-保護者の同意に関する法的規制がある地域には、米国、韓国、英国、欧州連合が含まれます。 これらのリージョンの場合、マイナーは (Azure Active Directory経由で) ストアから新しいOfficeアドインを取得し、以前に取得したアドインを実行できないようにブロックされます。 法的規制のない国の場合、ダウンロードの制限はありません。
+保護者の同意に関する法的規制がある地域には、米国、韓国、英国、欧州連合が含まれます。 これらのリージョンの場合、マイナーは (Azure Active Directory経由で) ストアから新しいOffice アドインを取得し、以前に取得したアドインを実行できないようにブロックされます。 法的規制のない国の場合、ダウンロードの制限はありません。
 
 ユーザーは、Azure Active Directoryで指定されたデータに基づいてマイナーであると判断されます。 組織管理者は、法的年齢グループと、そのユーザーの保護者の同意を宣言する責任があります。
 
@@ -59,7 +59,7 @@ ms.locfileid: "64782371"
 |Office 2016 for Mac|16.0.9318.1000|
 |iOS 用モバイルのOutlook|2.75.0|
 |Android 用モバイルOutlook|2.2.145|
-|Outlook.com|N/A|
+|Outlook.com|該当なし|
 
  **Office 2013 要件**
 

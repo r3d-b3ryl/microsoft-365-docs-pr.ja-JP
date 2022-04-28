@@ -2,8 +2,8 @@
 title: 電子情報開示でクラウドの添付ファイルを収集する (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 04/05/2022
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview 電子情報開示 (プレミアム) のコレクションを使用して、調査またはケースでレビューするクラウド添付ファイルを収集します。
-ms.openlocfilehash: 1dd48f343f9df43edf8553e73395d756eb6713a4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4a9db59f8e8b997cdd04934c9dac161369964229
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000710"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094121"
 ---
 # <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium-preview"></a>Microsoft Purview 電子情報開示 (プレミアム) でクラウド添付ファイルを収集する (プレビュー)
 
