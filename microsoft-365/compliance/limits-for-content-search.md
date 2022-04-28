@@ -2,8 +2,8 @@
 title: コンプライアンス センターでのコンテンツ検索と電子情報開示 (Standard) の制限
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Microsoft Purview コンプライアンス ポータルのコンテンツ検索と電子情報開示 (Standard) 機能に対して有効な制限について説明します。
-ms.openlocfilehash: 8cba04c7ed3257d5a168d7754b2964eb4aa97b0d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 030e4dd16e2b24504632947a336b244a945813ff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999052"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091723"
 ---
 # <a name="limits-for-ediscovery-search"></a>電子情報開示検索の制限
 
@@ -126,7 +126,7 @@ Microsoft は、すべての組織が実行する検索のパフォーマンス�
 |本文内の最大一意トークン|100 万|前述のように、トークンは、コンテンツからテキストを抽出し、句読点とスペースを削除し、インデックスに格納されている単語 (トークンと呼ばれる) に分割した結果です。 たとえば、この語句 `"cat, mouse, bird, dog, dog"` には 5 つのトークンが含まれています。 ただし、一意のトークンは 4 つだけです。 電子メール メッセージごとに 100 万個の一意のトークンが制限されているため、ランダム トークンでインデックスが大きくなりすぎないようにすることができます。|
 |||
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 コンテンツのインデックス作成など、コンテンツの検索のさまざまな側面に関連する追加の制限があります。 これらの制限の詳細については、次のトピックを参照してください。
 

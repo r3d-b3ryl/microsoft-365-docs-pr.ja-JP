@@ -1,10 +1,10 @@
 ---
-title: エンタープライズ テスト環境向けライセンスとグループ Microsoft 365を自動化する
+title: エンタープライズ テスト環境のMicrosoft 365のライセンスとグループ メンバーシップを自動化する
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
@@ -12,82 +12,87 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom:
-  - TLG
-  - Ent_TLGs
-description: エンタープライズ テスト環境用に、グループ ベースのライセンスと動的Microsoft 365メンバーシップを構成します。
+- TLG
+- Ent_TLGs
+description: エンタープライズ テスト環境のMicrosoft 365でグループ ベースのライセンスと動的グループ メンバーシップを構成します。
+ms.openlocfilehash: 1d471076ac07acb023cdf785233ea2222690b596
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097538"
 ---
+# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境のMicrosoft 365のライセンスとグループ メンバーシップを自動化する
 
-# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向けライセンスとグループ Microsoft 365を自動化する
+*このテスト ラボ ガイドは、エンタープライズ テスト環境のMicrosoft 365にのみ使用できます。*
 
-*このテスト ラボ ガイドは、エンタープライズ テスト環境Microsoft 365にのみ使用できます。*
+グループ ベースのライセンスは、グループ メンバーシップに基づいて、ユーザー アカウントのライセンスを自動的に割り当てるか削除します。 動的グループ メンバーシップは、 **部門** や国などのユーザー アカウントのプロパティに基づいて、グループにメンバーを追加または削除 **します**。 この記事では、エンタープライズ テスト環境のMicrosoft 365でグループ メンバーを追加および削除するデモについて説明します。
 
-グループ ベースのライセンスでは、グループ メンバーシップに基づいて、ユーザー アカウントのライセンスが自動的に割り当てまたは削除されます。 動的グループ メンバーシップは、部署や国などのユーザー アカウントのプロパティに基づいて、グループにメンバー **を追加または** 削除 **します**。 この記事では、エンタープライズ テスト環境でグループ メンバーを追加および削除するMicrosoft 365手順を説明します。
+エンタープライズ テスト環境のMicrosoft 365で自動ライセンスと動的グループ メンバーシップを設定するには、次の 2 つのフェーズが必要です。
 
-エンタープライズ テスト環境用に自動ライセンスと動的グループ メンバーシップをMicrosoft 365には、次の 2 つのフェーズがあります。
-
-- [フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [フェーズ 2: 動的グループ メンバーシップと自動ライセンスの構成とテスト](#phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing)
+- [フェーズ 1: エンタープライズ テスト環境のMicrosoft 365を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [フェーズ 2: 動的グループ メンバーシップと自動ライセンスを構成してテストする](#phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing)
 
 ![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> エンタープライズ テスト ラボ ガイド スタックの Microsoft 365内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> エンタープライズ テスト ラボ ガイド スタックのMicrosoft 365のすべての記事へのビジュアル マップについては、エンタープライズ テスト ラボ ガイド [スタックのMicrosoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)に関するページを参照してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境のMicrosoft 365を構築する
 
-最小限の要件で、自動ライセンスとグループ メンバーシップのみを軽量な方法でテストする場合は、「Lightweight 基本構成」の手順 [に従います](lightweight-base-configuration-microsoft-365-enterprise.md)。
+最小要件を満たす軽量な方法で自動ライセンスとグループ メンバーシップのみをテストする場合は、 [Lightweight 基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)の手順に従います。
   
-シミュレートされたエンタープライズで自動ライセンスとグループ メンバーシップをテストする場合は、「パススルー認証」 [の手順に従います](pass-through-auth-m365-ent-test-environment.md)。
+シミュレートされたエンタープライズで自動ライセンスとグループ メンバーシップをテストする場合は、 [パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従います。
   
 > [!NOTE]
-> ライセンスとグループ の自動メンバーシップをテストするには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメイン サービス (AD DS) フォレストのディレクトリ同期を含む、シミュレートされたエンタープライズ テスト環境は必要とされません。 ここではオプションとして提供され、一般的な組織を表す環境で、自動ライセンスとグループ メンバーシップをテストして実験できます。
+> 自動ライセンスとグループ メンバーシップのテストでは、シミュレートされたエンタープライズ テスト環境は必要ありません。これには、インターネットに接続されたシミュレートされたイントラネットと、Active Directory Domain Services (AD DS) フォレストのディレクトリ同期が含まれます。 ここでは、自動化されたライセンスとグループ メンバーシップをテストし、一般的な組織を表す環境で実験できるように、オプションとして提供されています。
   
-## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>フェーズ 2: 動的グループ メンバーシップと自動ライセンスの構成とテスト
+## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>フェーズ 2: 動的グループ メンバーシップと自動ライセンスを構成してテストする
 
-まず、Sales という名前の新しいグループを作成し、部署が Sales に設定されているユーザー アカウントが自動的に **Sales** グループに参加する動的グループ メンバーシップ ルールを追加します。
+まず、Sales という名前の新しいグループを作成し、 **部門** が Sales に設定されているユーザー アカウントが **自動的に Sales** グループに参加するように、動的グループ メンバーシップ 規則を追加します。
 
-1. インターネット ブラウザーのプライベート インスタンスで、テスト ラボ [サブスクリプション](https://admin.microsoft.com)Microsoft 365 管理センター管理者アカウントを使用して、Microsoft 365 E5にサインインします。
-2. ブラウザーの別のタブで、Azure portal に移動します [https://portal.azure.com](https://portal.azure.com)。
-3. Azure portal で、検索ボックスに **グループ** を入力し、[グループ] を選択 **します**。
-4. [すべてのグループ **] ウィンドウで** 、[新しいグループ] **を選択します**。
-5. [**グループの種類] で**、[グループの種類 **] Microsoft 365**。
-6. [ **グループ名] に「** Sales」と **入力します**。
-7. [ **メンバーシップの種類] で**、[動的ユーザー **] を選択します**。
-8. [動的 **ユーザー メンバー] を選択します**。
-9. [動的メンバーシップ **ルール] ウィンドウで、次の操作を** 行います。 
-   - 部門プロパティ **を選択** します。
-   - [等号 **] 演算子を選択** します。
-   - [値] **ボックスに** 「Sales」と **入力します**。
+1. インターネット ブラウザーのプライベート インスタンスで、[Microsoft 365 E5](https://admin.microsoft.com)テスト ラボ サブスクリプションのグローバル管理者アカウントを使用してMicrosoft 365 管理センターにサインインします。
+2. ブラウザーの別のタブで、次のAzure portalに[https://portal.azure.com](https://portal.azure.com)移動します。
+3. Azure portalで、検索ボックスに **グループ** を入力し、[**グループ**] を選択します。
+4. **[すべてのグループ**] ウィンドウで、[**新しいグループ**] を選択します。
+5. **[グループの種類**] で、[**Microsoft 365**] を選択します。
+6. **グループ名** に「Sales」と入力 **します**。
+7. **[メンバーシップの種類]** で、[**動的ユーザー**] を選択します。
+8. **[動的ユーザー メンバー**] を選択します。
+9. **[動的メンバーシップ規則**] ウィンドウで、次の操作を行います。 
+   - **department** プロパティを選択します。
+   - **Equals 演算子を** 選択します。
+   - [ **値** ] ボックスに「 **Sales**」と入力します。
 10. **[保存]** を選択します。
 11. **[作成]** を選択します。
 
-次に、メンバーにライセンスが自動的に割り当てMicrosoft 365 E5構成します。
+次に、Microsoft 365 E5 ライセンスがメンバーに自動的に割り当てられるように、Sales グループを構成します。
 
-1. [販売] **グループを選択** し、[ライセンス] を **選択します**。
-2. [ライセンスの **割り当ての更新] ウィンドウ** で、[ライセンスの割 **り当Microsoft 365 E5** 選択し、[保存] を **選択します**。
-3. ブラウザーで、[Azure ポータル] タブを閉じます。
+1. **[Sales**] グループを選択し、[**ライセンス**] を選択します。
+2. [**ライセンスの割り当ての更新**] ウィンドウで **Microsoft 365 E5を選択** し、[保存] を選択 **します**。
+3. ブラウザーで、[Azure portal] タブを閉じます。
 
-次に、User 4 アカウントで動的グループ メンバーシップと自動ライセンスをテストします。
+次に、ユーザー 4 アカウントで動的グループ メンバーシップと自動ライセンスをテストします。
 
-1. ブラウザーの **[Microsoft Office] タブ** で、[管理者] を選択 **します**。
-2. [ユーザー] **タブMicrosoft 365 管理センター**[アクティブ ユーザー] **を選択します**。
-3. [アクティブ な **ユーザー] ページ** で、[ **ユーザー 4] アカウントを選択** します。
-4. [ユーザー **4] ウィンドウで** 、[製品ライセンス **の編集** ] **を選択します**。
-5. [製品ライセンス **] ウィンドウ** で、**ライセンスを無効** Microsoft 365 E5し、[**SaveClose] を** > **選択します**。
-6. User 4 アカウントのプロパティで、製品ライセンスが割り当てられていないか、グループ メンバーシップが割り当てられていないか確認します。
-7. [ **連絡先情報] で、[** 編集] を **選択します**。
-8. [連絡先情報 **の編集] ウィンドウで** 、[連絡先情報] **を選択します**。
-9. [部署] **ボックスに**「**Sales」と入力** し、[**SaveClose**] **を** > 選択します。
-10. 数分待ち、ユーザー 4 アカウント ウィンドウの右上にある  [更新] アイコンを定期的に選択します。
+1. ブラウザーの **[Microsoft Office ホーム**] タブで、[管理者] を選択 **します**。
+2. **[Microsoft 365 管理センター**] タブで、[**アクティブなユーザー**] を選択します。
+3. [ **アクティブなユーザー** ] ページで、 **ユーザー 4** アカウントを選択します。
+4. **[ユーザー 4**] ウィンドウで、[**製品ライセンス** の **編集]** を選択します。
+5. [**製品ライセンス**] ウィンドウで、**Microsoft 365 E5** ライセンスを無効にし、[**SaveClose** > ] を選択 **します**。
+6. ユーザー 4 アカウントのプロパティで、製品ライセンスが割り当てられていないか、グループ メンバーシップがないことを確認します。
+7. 連絡先情報の場合 **は**、[ **編集**] を選択します。
+8. [ **連絡先情報の編集]** ウィンドウで、[ **連絡先情報**] を選択します。
+9. [**部署**] ボックスに「**Sales**」と入力し、**SaveClose** >  を選択します。
+10. 数分待ってから、ユーザー 4 アカウント ウィンドウの右上にある **[更新** ] アイコンを定期的に選択します。
 
 時間内に、次の情報が表示されます。
 
-- **Sales グループで** 更新されたグループ メンバーシップ **プロパティ** 。
-- **製品ライセンス** プロパティは、ライセンスライセンス **Microsoft 365 E5** 更新されます。
+- **Sales** **グループで更新されたグループ メンバーシップ** プロパティ。
+- **Microsoft 365 E5 ライセンス** で更新された製品ライセンス プロパティ。
 
-動的グループ メンバーシップと自動ライセンスを実稼働環境に展開するには、次の記事を参照してください。
+運用環境で動的グループ メンバーシップと自動ライセンスをデプロイするには、次の記事を参照してください。
 
-- [グループ ベースのライセンス Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+- [Azure Active Directoryでのグループ ベースのライセンス](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
 - [Azure Active Directory の動的グループ](/azure/active-directory/users-groups-roles/groups-create-rule)
 
 ## <a name="next-step"></a>次の手順
@@ -96,7 +101,7 @@ description: エンタープライズ テスト環境用に、グループ ベ�
 
 ## <a name="see-also"></a>関連項目
 
-[ID の展開](deploy-identity-solution-overview.md)
+[ID をデプロイする](deploy-identity-solution-overview.md)
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 

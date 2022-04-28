@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: d36d05a4abe36ffe63e53eb8e164e248755de0ec
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 104bc9f10838be782ea70e3efe567ddee714d0a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665912"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100217"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac でのMicrosoft Defender for Endpointの新機能
 
@@ -31,6 +31,13 @@ ms.locfileid: "64665912"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1016415-20122032164150"></a>101.64.15 (20.122032.16415.0)
+
+- バージョン 101.61.69 で導入された回帰を修正しました。エンド ユーザーからの操作は必要ありませんでしたが、ステータス メニュー アイコンにエラー アイコンが表示される場合がありました
+- フィールド`mdatp health`を`conflicting_applications`改善し、最新の 10 個のプロセスのみを表示し、プロセス名を含める必要があります。 これにより、Mac のMicrosoft Defender for Endpointと競合する可能性があるプロセスを簡単に特定できます。
+- ベンダー ID と製品 ID が 16 進数ではなく 10 進数として表示されるバグ `mdatp device-control removable-media policy list` を修正しました
+- その他のバグ修正&パフォーマンスの向上
 
 ## <a name="1016169-20122022161690"></a>101.61.69 (20.122022.16169.0)
 

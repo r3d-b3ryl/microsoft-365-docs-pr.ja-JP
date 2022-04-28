@@ -2,8 +2,8 @@
 title: 電子情報開示での電子メール スレッド (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 電子情報開示 (プレミアム) 分析を実行する場合、電子メール スレッドは電子メール会話を解析し、各メッセージを異なるカテゴリに分割します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f2cdd3a10250a256179ce3fe959a88e0cbef01ba
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e35ffa901bb1b90b0ac5d572b6a7ee05cce31d89
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995494"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65086811"
 ---
 # <a name="email-threading-in-ediscovery-premium"></a>電子情報開示での電子メール スレッド (プレミアム)
 

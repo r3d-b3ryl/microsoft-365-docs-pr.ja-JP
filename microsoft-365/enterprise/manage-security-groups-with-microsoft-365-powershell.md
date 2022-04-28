@@ -2,7 +2,7 @@
 title: PowerShell を使用してセキュリティ グループを管理する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,32 +17,32 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: PowerShell を使用してセキュリティ グループを管理する方法について説明します。
-ms.openlocfilehash: d07296b88e626e854c57152a079cc96e1e23e8d3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c1ae74e60eb00e74efe5ad881e9ce3c0ebb3cf12
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202885"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099413"
 ---
 # <a name="manage-security-groups-with-powershell"></a>PowerShell を使用してセキュリティ グループを管理する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-PowerShell を使用して、Microsoft 365グループを管理する代わりに、Microsoft 365 管理センターを使用できます。 
+セキュリティ グループを管理するMicrosoft 365 管理センターの代わりに、PowerShell をMicrosoft 365に使用できます。 
 
-この記事では、設定の一覧、作成、変更、およびセキュリティ グループの削除について説明します。 
+この記事では、セキュリティ グループの一覧表示、作成、設定の変更、および削除について説明します。 
 
 この記事のコマンド ブロックで変数値を指定する必要がある場合は、次の手順を使用します。
 
-1. コマンド ブロックをクリップボードにコピーし、コマンド ブロックメモ帳 PowerShell 統合スクリプト環境 (ISE) に貼り付けます。
+1. コマンド ブロックをクリップボードにコピーし、メモ帳または PowerShell 統合スクリプト環境 (ISE) に貼り付けます。
 2. 変数の値を入力し、"<" 文字と ">" 文字を削除します。
 3. PowerShell ウィンドウまたは PowerShell ISE でコマンドを実行します。
 
-「セキュリティ [グループ メンバーシップを維持して PowerShell](maintain-group-membership-with-microsoft-365-powershell.md) でグループ メンバーシップを管理する」を参照してください。
+PowerShell を使用してグループ メンバーシップを管理するための [セキュリティ グループ](maintain-group-membership-with-microsoft-365-powershell.md) メンバーシップの管理に関するページを参照してください。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+まず、[Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 ### <a name="list-your-groups"></a>グループを一覧表示する
 
@@ -51,7 +51,7 @@ PowerShell を使用して、Microsoft 365グループを管理する代わり�
 ```powershell
 Get-AzureADGroup
 ```
-特定のグループの設定を表示名で表示するには、次のコマンドを使用します。
+これらのコマンドを使用して、特定のグループの設定を表示名で表示します。
 
 ```powershell
 $groupName="<display name of the group>"
@@ -60,7 +60,7 @@ Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }
 
 ### <a name="create-a-new-group"></a>新しいグループを作成する
 
-新しいセキュリティ グループを作成するには、このコマンドを使用します。
+このコマンドを使用して、新しいセキュリティ グループを作成します。
 
 ```powershell
 New-AzureADGroup -Description "<group purpose>" -DisplayName "<name>" -MailEnabled $false -SecurityEnabled $true -MailNickName "<email name>"
@@ -68,18 +68,18 @@ New-AzureADGroup -Description "<group purpose>" -DisplayName "<name>" -MailEnabl
 
 ### <a name="change-the-settings-on-a-group"></a>グループの設定を変更する
 
-これらのコマンドを使用して、グループの設定を表示します。
+これらのコマンドを使用してグループの設定を表示します。
 
 ```powershell
 $groupName="<display name of the group>"
 Get-AzureADGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-次に [、Set-AzureADGroup の記事を使用](/powershell/module/azuread/set-azureadgroup) して、設定を変更する方法を決定します。
+次に、 [Set-AzureADGroup](/powershell/module/azuread/set-azureadgroup) の記事を使用して、設定を変更する方法を決定します。
 
 ### <a name="remove-a-security-group"></a>セキュリティ グループを削除する
 
-セキュリティ グループを削除するには、次のコマンドを使用します。
+これらのコマンドを使用して、セキュリティ グループを削除します。
 
 ```powershell
 $groupName="<display name of the group>"
@@ -88,27 +88,27 @@ Remove-AzureADGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $gr
 
 ### <a name="manage-the-owners-of-a-security-group"></a>セキュリティ グループの所有者を管理する
 
-セキュリティ グループの現在の所有者を表示するには、次のコマンドを使用します。
+これらのコマンドを使用して、セキュリティ グループの現在の所有者を表示します。
 
 ```powershell
 $groupName="<display name of the group>"
 Get-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId
 ```
-次のコマンドを使用して、セキュリティ グループの現在の所有者にユーザー プリンシパル名 **(UPN)** でユーザー アカウントを追加します。
+これらのコマンドを使用して、ユーザー **プリンシパル名 (UPN) でユーザー** アカウントをセキュリティ グループの現在の所有者に追加します。
 
 ```powershell
 $userUPN="<UPN of the user account to add>"
 $groupName="<display name of the group>"
 Add-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectId
 ```
-これらのコマンドを使用して、ユーザー アカウントを表示名でセキュリティ **グループの** 現在の所有者に追加します。
+これらのコマンドを使用して、 **表示名** でユーザー アカウントをセキュリティ グループの現在の所有者に追加します。
 
 ```powershell
 $userName="<Display name of the user account to add>"
 $groupName="<display name of the group>"
 Add-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectId
 ```
-これらのコマンドを使用して **、UPN** によってセキュリティ グループの現在の所有者に対してユーザー アカウントを削除します。
+次のコマンドを使用して、 **UPN** によってユーザー アカウントをセキュリティ グループの現在の所有者に削除します。
 
 ```powershell
 $userUPN="<UPN of the user account to remove>"
@@ -116,7 +116,7 @@ $groupName="<display name of the group>"
 Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -OwnerId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectId
 ```
 
-次のコマンドを使用して、セキュリティ グループの現在の所有者に **表示名で** ユーザー アカウントを削除します。
+これらのコマンドを使用して、 **表示名** でユーザー アカウントをセキュリティ グループの現在の所有者に削除します。
 
 ```powershell
 $userName="<Display name of the user account to remove>"
@@ -126,7 +126,7 @@ Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -e
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+まず、[Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 ### <a name="list-your-groups"></a>グループを一覧表示する
 
@@ -135,7 +135,7 @@ Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -e
 ```powershell
 Get-MsolGroup
 ```
-特定のグループの設定を表示名で表示するには、次のコマンドを使用します。
+これらのコマンドを使用して、特定のグループの設定を表示名で表示します。
 
 ```powershell
 $groupName="<display name of the group>"
@@ -144,7 +144,7 @@ Get-MsolGroup | Where { $_.DisplayName -eq $groupName }
 
 ### <a name="create-a-new-group"></a>新しいグループを作成する
 
-新しいセキュリティ グループを作成するには、このコマンドを使用します。
+このコマンドを使用して、新しいセキュリティ グループを作成します。
 
 ```powershell
 New-MsolGroup -Description "<group purpose>" -DisplayName "<name>"
@@ -152,18 +152,18 @@ New-MsolGroup -Description "<group purpose>" -DisplayName "<name>"
 
 ### <a name="change-the-settings-on-a-group"></a>グループの設定を変更する
 
-これらのコマンドを使用して、グループの設定を表示します。
+これらのコマンドを使用してグループの設定を表示します。
 
 ```powershell
 $groupName="<display name of the group>"
 Get-MsolGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-次に [、Set-MsolGroup の記事を使用](/powershell/module/msonline/set-msolgroup) して、設定を変更する方法を決定します。
+次に、 [Set-MsolGroup](/powershell/module/msonline/set-msolgroup) の記事を使用して、設定を変更する方法を決定します。
 
 ### <a name="remove-a-security-group"></a>セキュリティ グループを削除する
 
-セキュリティ グループを削除するには、次のコマンドを使用します。
+これらのコマンドを使用して、セキュリティ グループを削除します。
 
 ```powershell
 $groupName="<display name of the group>"

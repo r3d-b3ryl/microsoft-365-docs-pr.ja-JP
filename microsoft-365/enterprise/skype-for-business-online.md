@@ -2,7 +2,7 @@
 title: Office 365 の Skype for Business Online - 管理ヘルプ
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: landing-page
@@ -21,19 +21,19 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: 管理者は、ネットワーク、会議、IM、ユーザーの外部アクセスなど、Skype for Business Online の一部をセットアップするためのヘルプを見つける。
-ms.openlocfilehash: 3be6eaaf5d39ebb62dcc4a7cc090633147681301
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: 管理者は、ネットワーク、会議、IM、ユーザーの外部アクセスなど、Skype for Business Online の一部を設定するためのヘルプを見つけます。
+ms.openlocfilehash: d9c290cbf756cb0ec7a8a6f042409498d7a379b4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682132"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092075"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365 の Skype for Business Online - 管理ヘルプ
 
 ## <a name="were-here-to-help"></a>ご不明な点はお問い合わせください。
 
-一般法人向け Office 365 の管理者として、知識の豊富なサポート担当者に無料で問い合わせることができます。 この Web サイトで必要な情報が見つからなかった場合は、ビジネス 製品のサポートに問 **[い合わせ - 管理者ヘルプ](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+一般法人向け Office 365 の管理者として、知識の豊富なサポート担当者に無料で問い合わせることができます。 この Web サイトで必要な情報が見つからない場合は、 **[ビジネス製品のサポートにお問い合わせください - 管理者ヘルプ](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>組織のユーザーが外部の Skype ユーザーまたは Skype for Business ユーザーと連絡できるようにする
 
@@ -65,13 +65,13 @@ Skype for Business を使用しているユーザーが、組織外部のユー�
     
 ## <a name="fix-problems-for-your-users"></a>ユーザーの問題を解決する
 
-- [[個人用オプションの設定] Skype for Business](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
+- [Skype for Businessで個人用オプションを設定する](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
     
-- [ヘルプが必要な場合は、Skype for Business?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
+- [Skype for Businessへのサインインに関するヘルプが必要ですか?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [ビデオ: サインインとサインインのSkype for Business](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [ビデオ: Skype for Businessのサインインとサインアウト](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
-- [[オーディオ デバイス] オプションを [オーディオ デバイス] でSkype for Business](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
+- [Skype for Businessでオーディオ デバイス のオプションを設定する](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
 - [Skype for Business 会議に参加する](https://support.office.com/article/3862be6d-758a-4064-a016-67c0febf3cd5)
     
@@ -89,6 +89,6 @@ Skype for Business を使用しているユーザーが、組織外部のユー�
     
 - [Skype for Business 電話会議を開始する](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **ユーザー向けその他の記事については、「ヘルプ [」をSkype for Businessしてください](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)。**
+ **ユーザー向けのその他の記事については、[Skype for Businessヘルプ](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)を参照してください。**
   
 

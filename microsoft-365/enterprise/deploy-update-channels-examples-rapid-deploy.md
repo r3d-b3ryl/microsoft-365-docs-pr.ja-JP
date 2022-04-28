@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 最新リリースを導入している組織での、Windows 10 アプリ、 Microsoft 365 アプリのチャネルの使用方法。
-ms.openlocfilehash: 6b0226a226742a89dc65ca0d32792db03c77e465
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6f52bc8fc55fe94361961585aacae1f48c4fbce5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193089"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092141"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>最新リリースの幅広い展開例
 
@@ -103,12 +103,12 @@ Microsoft 365 アプリの展開方法と戦略の詳細については、[Micro
 
 この組織例で使用されている製品、チャネル、展開グループを次に示します。 
 
-![最新リリースの広範な展開のための展開グループ。](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
+![最新リリースの広範なデプロイ用のデプロイ グループ。](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
 ## <a name="see-also"></a>関連項目
 
 [展開および更新プログラム チャネルの構成例](deploy-update-channels-examples.md)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

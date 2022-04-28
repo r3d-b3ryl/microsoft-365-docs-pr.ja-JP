@@ -2,8 +2,8 @@
 title: 電子情報開示での AzCopy のトラブルシューティング (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ description: 電子情報開示 (プレミアム) でエラー修復のために
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: ff8f69e6efeab3e0f0e9d8ee2f739caaa40d7c85
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 85d51e7ecb59f8423f0a509725c6a1c1defd3adf
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991800"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092329"
 ---
 # <a name="troubleshoot-azcopy-in-ediscovery-premium"></a>電子情報開示での AzCopy のトラブルシューティング (プレミアム)
 

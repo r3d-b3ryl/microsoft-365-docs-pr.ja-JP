@@ -2,8 +2,8 @@
 title: 電子情報開示のレビュー セット内のデータを分析する (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft Purview 電子情報開示 (プレミアム) ケースを分析するときにドキュメント セットを整理するために使用できるツールについて説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 72be5cf0cd6e4d52200f1167b525aa354192672e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: af34a790881cad2af5d278cf187b963f0aa58146
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998708"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099831"
 ---
 # <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>電子情報開示のレビュー セット内のデータを分析する (プレミアム)
 

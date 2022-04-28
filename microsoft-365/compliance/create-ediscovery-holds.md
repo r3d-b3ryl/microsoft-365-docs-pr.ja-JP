@@ -2,8 +2,8 @@
 title: 電子情報開示 (Standard) ケースで電子情報開示保留を作成する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365で電子情報開示 (Standard) ケースに関連付けられているホールドを作成して、調査または訴訟に関連するコンテンツを保持できます。
-ms.openlocfilehash: 87a75923ccc270e7b9802ae5d366dd2930a84d82
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e91e67b39a160de99856d73af8da6ab17d1d6fba
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001238"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095014"
 ---
 # <a name="create-an-ediscovery-hold"></a>電子情報開示保留リストを作成する
 

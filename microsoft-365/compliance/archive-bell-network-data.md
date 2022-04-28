@@ -2,8 +2,8 @@
 title: ベル SMS/MMS ネットワーク データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は TeleMessage コネクタを設定して、ベル ネットワークから SMS と MMS のデータをインポートおよびアーカイブできます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: dc23e3788958270712bab493cd0364a80a0377f9
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5d1b44df9a343020419d684c9a91a982a0f0df57
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992790"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095080"
 ---
 # <a name="set-up-a-connector-to-archive-bell-network-data"></a>ベル ネットワーク データをアーカイブするコネクタを設定する
 

@@ -1,5 +1,5 @@
 ---
-title: ユーザーの脅威保護を強化Microsoft 365 Business Premium
+title: Microsoft 365 Business Premium の脅威に対する保護を強化する
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,321 +24,192 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: ユーザーの保護のレベルを上Microsoft 365 Business Premium
-ms.openlocfilehash: c6533b966587235b8f29c1ce53bd9d5579b23b9c
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
-ms.translationtype: MT
+description: Microsoft 365 Business Premium での保護レベルの向上に関するヘルプを表示する
+ms.openlocfilehash: c653e4f84ad3f4dd537ab82382e8a57da7d2876e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403811"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099909"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>ユーザーの脅威保護を強化Microsoft 365 Business Premium
+# <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の脅威に対する保護を強化する
 
-この目的では、脅威の保護を強化し、Microsoft 365 Business Premium。 組織をフィッシング、マルウェア、その他の脅威から保護する必要があります。 これらの推奨事項は、セキュリティの必要性が高い政治キャンペーン、法律事務所、医療クリニックに特に適しています。
+この目的では、Microsoft 365 Business Premium を使用して脅威に対する保護を強化します。 フィッシング、マルウェア、その他の脅威からビジネスを保護することが重要です。 この目標には、次に関する情報が含まれます:
 
-## <a name="start-with-secure-score"></a>セキュリティで保護されたスコアから始める
-
-Microsoft Secure Score は、通常のアクティビティとセキュリティ設定に基づいて組織のセキュリティを分析し、スコアを割り当てる。 現在のスコアに注意し、この記事で推奨されるアクションを実行してスコアを上げろ。 目標は、常に注意してスコアを向上させる方法です。
-
-詳細については、「 [Microsoft Secure Score」を参照してください](../security/defender/microsoft-secure-score.md)。
+- セットアップと構成に多くの時間を節約できる[事前設定済みのセキュリティ ポリシー](#review-and-apply-preset-security-policies)
+- ビジネス ニーズに合わせて定義できる[カスタム セキュリティ ポリシー](#create-custom-security-policies)
+- [SharePoint と OneDrive ファイルとフォルダーの共有設定を調整する方法](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
+- 特定のファイルとその使用方法を監視する[アラート ポリシー](#review-your-alert-policies)。 
 
 ## <a name="review-and-apply-preset-security-policies"></a>事前設定されたセキュリティ ポリシーを確認して適用する
 
-サブスクリプションには、 [スパム対策、](../security/office-365-security/preset-security-policies.md) マルウェア対策、フィッシング対策保護に推奨設定を使用する事前設定のセキュリティ ポリシーが含まれています。 既定では、組み込みの保護が有効になっています。セキュリティを強化する場合は、標準保護または厳密な保護の適用を検討してください。 
+サブスクリプションには、スパム対策、マルウェア対策、フィッシング対策の保護のためのおすすめの設定を使用する[事前設定されたセキュリティ ポリシー](../security/office-365-security/preset-security-policies.md)が含まれています。 既定では、組み込みの保護が有効になっています。ただし、セキュリティを強化するために標準または厳格な保護を適用することを検討してください。 
 
-事前設定されたセキュリティ ポリシーは、次の要素で構成されます。
+:::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="事前設定されたセキュリティ ポリシーを示すスクリーンショット。":::
 
-- 保護のレベルを決定するプロファイル
-- ポリシー (スパム対策、マルウェア対策、フィッシング対策、セーフ添付ファイル、セーフ リンクなど)
-- ポリシー設定 (グループ、ユーザー、ドメインなど、ポリシーと例外を受信する)
+> [!NOTE]
+> 事前設定されたセキュリティ ポリシーは、[セキュリティの既定値](m365bp-conditional-access.md#security-defaults)と同じではありません。 通常は、最初にセキュリティの既定値 *または*[条件付きアクセス](m365bp-conditional-access.md#conditional-access)*のいずれかを* 使用し、次にセキュリティ ポリシーを追加します。 [事前設定されたセキュリティ ポリシー](#what-are-preset-security-policies)により、セキュリティ ポリシーを追加するプロセスが簡略化されます。 [独自の返信フォームを追加](#create-custom-security-policies)することもできます。 
 
-次の表に、保護のレベルと事前設定されたポリシーの種類を示します。
+### <a name="what-are-preset-security-policies"></a>事前設定されたセキュリティ ポリシーとは?
 
-| 保護のレベル | 説明 |
+事前設定されたセキュリティ ポリシーにより、メールとコラボレーション コンテンツが保護されます。 これらのポリシーは、次の要素で構成されます:
+
+- 保護のレベルを決定する *プロファイル*
+- *ポリシー* (スパム対策、マルウェア対策、フィッシング詐欺対策、スプーフィング設定、偽装、安全な添付ファイル、安全なリンクなど)
+- *ポリシー設定* (ポリシーや例外を受け取るグループ、ユーザー、ドメインなど)
+
+次の表は、保護と事前設定されたポリシーの種類のレベルをまとめたものです。
+
+| 保護レベル | 説明 |
 |:---|:---|
-| **標準保護** <br/>(*ほとんどの企業に推奨*) | 標準保護では、ほとんどのユーザーに適したベースライン プロファイルを使用します。 <br/><br/>これには、スパム対策、マルウェア対策、フィッシング対策、スプーフィング設定、偽装設定、セーフ リンク、セーフ添付ファイル ポリシーが含まれます。  |
-| **厳密な保護**  | 厳密な保護には、標準保護と同じ種類のポリシーが含まれますが、より厳しい設定が含まれます。 ビジネスが追加のセキュリティ要件や規制を満たす必要がある場合は、優先度の高いユーザーまたは価値の高いターゲットに厳密な保護を適用してください。 |
-| **組み込みの保護** | 電子メール内の悪意のあるリンクや添付ファイルから保護します。 既定では、すべてのユーザーに対して有効および適用されます。  |
+| **標準の保護** <br/>(*ほとんどの企業に推奨*) | 標準の保護では、ほとんどのユーザーに適したベースライン保護プロファイルが使用されます。 標準の保護には、スパム対策、マルウェア対策、フィッシング詐欺対策、スプーフィング設定、偽装設定、安全なリンク、安全な添付ファイル ポリシーが含まれます。  |
+| **厳密な保護**  | 厳密な保護には、標準保護と同じ種類のポリシーが含まれていますが、より厳しい設定が含まれています。 ビジネスで追加のセキュリティ要件または規制を満たす必要がある場合は、少なくとも優先度の高いユーザーまたは高い価値のターゲットに厳格な保護を適用することを検討してください。 |
+| **組み込みの保護** | メール内の悪意のあるリンクや添付ファイルから保護します。 既定では、組み込みの保護が有効になり、すべてのユーザーに適用されます。  |
 
-ユーザー、グループ、およびドメインを指定して、事前設定されたポリシーを受け取り、特定の例外を定義できますが、事前設定されたポリシー自体を変更することはできません。
+> [!TIP]
+> ユーザー、グループ、ドメインを指定して事前設定ポリシーを受け取ることができます。また、特定の例外を定義することはできますが、事前設定ポリシー自体を変更することはできません。 セキュリティ ポリシーに異なる設定を使用する場合は、会社のニーズに合わせて独自のカスタム ポリシーを作成できます。
 
-また、会社のニーズに合わせてカスタム設定用の独自のセキュリティ ポリシーを作成することもできます。
+### <a name="policy-order-of-priority"></a>優先度のポリシーの順序
 
+ユーザーに複数のポリシーが割り当てられている場合は、優先度の順序を使用してポリシーを適用します。 優先度の順序は次のように機能します。
 
+1. **厳密な保護** には、最も高い優先度があり、他のすべてのポリシーをオーバーライドします。
 
+2. **標準の保護** 
 
-<!--https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide
+3. **カスタム セキュリティ ポリシー**
 
+4. **組み込みの保護** には最も低い優先度が与えられ、厳格な保護、標準保護、およびカスタム ポリシーによってオーバーライドされます。
 
-## Raise the level of protection against malware in mail
+厳密な保護は他のすべてのポリシーをオーバーライドし、組み込みの保護は他のポリシーによってオーバーライドされます。 
 
-Your Office 365 or Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email:
+事前設定されたセキュリティ ポリシーの詳細については、「[事前設定されたセキュリティ ポリシーの構成内容](../security/office-365-security/preset-security-policies.md#what-preset-security-policies-are-made-of)」を参照してください。
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account credentials.
+### <a name="how-do-i-assign-preset-security-policies-to-users"></a>事前設定されたセキュリティ ポリシーをユーザーに割り当てる操作方法
 
-2. In the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
+> [!IMPORTANT]
+> 開始する前に、次のロールのうちのいずれかが Exchange Online に割り当てられていることを確認します (サブスクリプションに含まれています)。
+> 
+> - グローバル管理者
+> - 組織の管理
+> - セキュリティ管理者
+> 
+> 詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」と「[役割グループの管理](../admin/add-users/about-admin-roles.md)」を参照してください。
 
-3. Double-click the default policy to edit this company-wide policy.
+事前設定されたセキュリティ ポリシーを割り当てるには、次の手順に従います:
 
-4. Click **Settings**.
+1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-5. Under **Common Attachment Types Filter**, select **On**. The file types that are blocked are listed in the window directly below this control. Make sure you add these filetypes:
+2. **[テンプレート ポリシー]** セクションで、**[メールとコラボレーション]** \> **[ポリシーとルール]** \> **[脅威に対するポリシー]** \> **[DKIM]** に移動します。 (**[事前設定セキュリティ ポリシー]** ページに直接移動するには、<https://security.microsoft.com/presetSecurityPolicies> を使用します。)
 
-   `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`
+2. **[事前設定セキュリティ ポリシー**] ページの [**標準保護**] セクションまたは [**厳格な保護**] セクションで、トグルを **[無効]** から **[有効]** に変更し、[**管理**] を選択します。
 
-   You can add or delete file types later, if needed.
+3. **[標準保護の適用]** または **[厳格な保護の適用]** ウィザードはポップアップで開始されます。 **[EOP 保護の適用先**] ページで、ポリシーが適用される内部受信者 (受信者の条件) を特定します。
+   - **Users**
+   - **グループ**
+   - **ドメイン**
 
-6. Click **Save.**
+   適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、値の横にあるアイコンの **[削除]** をクリックします。
 
-For more information, see [Anti-malware protection in EOP](../security/office-365-security/anti-malware-protection.md).
+   ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) だけを入力すると、使用可能なすべての値が表示されます。
 
-## Protect against ransomware
+   除外を指定するには、**[これらのユーザー、グループ、ドメインを除外]** チェック ボックスをオンにし、除外するユーザー、グループ、またはドメインを指定します。
 
-Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in the form of cryptocurrencies like Bitcoin, in exchange for access to data.
+   完了したら、**[次へ]** を選択します。
 
-You can protect against ransomware by creating one or more mail flow rules to block file extensions that are commonly used for ransomware (these were added in the [raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail) step), or to warn users who receive these attachments in email.
+4. **[Defender for Office 365 保護の適用先]** ページで、ポリシーが適用される内部受信者 (受信者の条件) を特定します。 前の手順で行ったのと同じように、ユーザー、グループ、ドメインを指定します。
 
-In addition to the files that you blocked in the previous step, it's also good practice to create a rule to warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so warn users to not open these files from people they don't know.
+   完了したら、**[次へ]** をクリックします。
 
-To create a mail transport rule:
+5. **[変更の確認と確認]** ページで、選択内容を確認し、**[確認]** を選択します。
 
-1. Go to the admin center at <https://admin.microsoft.com> and choose **Admin centers** \> **Exchange**.
+> [!TIP]
+> 事前設定されたセキュリティ ポリシーの割り当ての詳細については、次の記事を参照してください:
+> - [事前設定されたセキュリティ ポリシーをユーザーに割り当てる](../security/office-365-security/preset-security-policies.md#assign-preset-security-policies-to-users)
+> - [メールおよびコラボレーション コンテンツの推奨設定](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (Exchange Online Protection、Microsoft Defender for Office 365 プラン 1 を含む Microsoft 365 Business Premium)
 
-2. In the **mail flow** category, click **rules**.
+## <a name="create-custom-security-policies"></a>カスタム セキュリティ ポリシーの作成
 
-3. Click **+**, and then click **Create a new rule**.
+この記事で前述した [事前設定済みのセキュリティ ポリシー](#what-are-preset-security-policies)は、ほとんどの企業に強力な保護を提供します。 ただし、事前設定されたセキュリティ ポリシーのみの使用に限定されません。 会社のニーズに合わせて独自のカスタム セキュリティ ポリシーを定義できます。 
 
-4. Click **More options** at the bottom of the dialog box to see the full set of options.
+クイック スタート ガイド「[脅威ｎ対する保護](../security/office-365-security/protect-against-threats.md)」を使用して、独自のカスタム ポリシーの作成を開始します。 このガイダンスでは、独自のセキュリティ ポリシーを設定する方法だけでなく、次の開始点として使用する推奨設定も提供されます。
 
-5. Apply the settings in the following table for the rule. Leave the rest of the settings at the default, unless you want to change them.
+- [マルウェア対策保護](../security/office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [高度なフィッシング対策保護](../security/office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
+- [スパム対策保護](../security/office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
+- [安全なリンク、安全な添付ファイル](../security/office-365-security/protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
-6. Click **Save**.
+## <a name="set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>SharePoint ファイルと OneDrive ファイルとフォルダーの共有設定を設定する
 
-|Setting|Warn users before opening attachments of Office files|
-|---|---|
-|Name|Anti-ransomware rule: warn users|
-|Apply this rule if . . .|Any attachment . . . file extension matches . . .|
-|Specify words or phrases|Add these file types: <br/> `dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm`|
-|Do the following . . .|Notify the recipient with a message|
-|Provide message text|Do not open these types of files from people you do not know because they might contain macros with malicious code.|
+既定では、共有レベルは、SharePoint と OneDrive の両方で最も許容されるレベルに設定されます。 ビジネスをより適切に保護するために、既定の設定を変更することをお勧めします。
 
-For more information, see:
+1. <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">SharePoint 管理センターの **[共有]**</a> に移動し、[組織の管理者権限](/sharepoint/sharepoint-admin-role)を持つアカウントでサインインします。
+ 
+2. **[外部共有]** で、共有のレベルを指定します。 (外部共有を防ぐために **[最小許容]** を使用することをお勧めします)。
 
-- [Ransomware: how to reduce risk](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
+3. **[ファイルとフォルダーのリンク]** で、オプション ( **[特定のユーザー**] など) を選択します。 次に、共有リンクに対して既定で表示または編集のアクセス許可を付与するかどうかを選択します (**ビュー** など)。
 
-- [Restore your OneDrive](https://support.microsoft.com//office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
+4. **[その他の設定]** で、使用するオプションを選択します。
 
-## Stop auto-forwarding for email
+5. 次に、**[保存]** を選択します。
 
-Hackers who gain access to a user's mailbox can steal your mail by setting the mailbox to automatically forward email. This can happen even without the user's awareness. You can prevent this from happening by configuring a mail flow rule.
+> [!TIP]
+> 詳細については、「[共有設定を管理する](/sharepoint/turn-external-sharing-on-or-off)」を参照してください。
 
-To create a mail transport rule, either watch [this short video](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) or follow these steps:
+## <a name="review-your-alert-policies"></a>アラート ポリシーを確認する
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, click **Admin centers** \> **Exchange**.
+アラート ポリシーは、ユーザーと管理者のアクティビティ、潜在的なマルウェアの脅威、ビジネスにおけるデータ損失インシデントを追跡するために役立ちます。 サブスクリプションには一連の既定のポリシーが含まれていますが、カスタム ポリシーを作成することもできます。 たとえば、他のユーザーに外部共用させたくない重要なファイルを SharePoint に保存する場合は、他のユーザーが共有した場合にアラートを表示する通知を作成できます。
 
-2. In the **mail flow** category, click **rules**.
+次の図は、Microsoft 365 Business Premium に含まれる既定のポリシーの一部を示しています。
 
-3. Click **+**, and then click **Create a new rule**.
+![Microsoft 365 に含まれる既定のアラート ポリシー。](../media/alertpolicies.png)
 
-4. Click **More options** at the bottom of the dialog box to see the full set of options.
+### <a name="view-your-alert-policies"></a>アラート ポリシーを表示する
 
-5. Apply the settings in the following table. Leave the rest of the settings at the default, unless you want to change them.
+1. [https://compliance.microsoft.com](https://compliance.microsoft.com) で Microsoft 365 コンプライアンス センターに移動して、サインインします。
 
-6. Click **Save**.
+2. ナビゲーション ウィンドウで **[ポリシー]** を選択し、**[アラート ポリシー]** を選択します。
 
-|Setting|Warn users before opening attachments of Office files|
-|---|---|
-|Name|Prevent auto forwarding of email to external domains|
-|Apply this rule if ...|The sender . . . is external/internal . . . Inside the organization|
-|Add condition|The message properties . . . include the message type . . . Auto-forward|
-|Do the following ...|Block the message . . . reject the message and include an explanation.|
-|Provide message text|Auto-forwarding email outside this organization is prevented for security reasons.|
+3. 個々のポリシーを選択して詳細を表示するか、ポリシーを編集します。 次の図は、1 つのポリシーが選択されたアラート ポリシーの一覧を示しています。
 
-## Protect your email from phishing attacks
+   :::image type="content" source="media/selected-alert-policy.png" lightbox="media/selected-alert-policy.png" alt-text="選択したアラート ポリシーを示すスクリーンショット。":::
 
-If you've configured one or more custom domains for your Office 365 or Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection, part of Microsoft Defender for Office 365, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you don't need to do this.
+> [!TIP]
+> 詳細については、「[アラート ポリシー](../compliance/alert-policies.md)」を参照してください。
 
-We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain.
+### <a name="how-to-view-alerts"></a>アラートを表示する方法
 
-To create an anti-phishing policy in Defender for Office 365, watch [this short training video](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
+特定のアラートに応じて、Microsoft 365 Defender ポータルまたは Microsoft 365 コンプライアンス センターでアラートを表示できます。
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a>.
+| アラートの種類。  | 操作  |
+|---------|---------|
+| ユーザーが悪意のあるリンクをクリックしたとき、電子メールがマルウェアまたはフィッシングとして報告されたとき、またはデバイスがマルウェアが含まれていると検出された場合などのセキュリティ アラート     | <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、**[メールと共同作業]** で **[ポリシーとルール]** > **[アラート ポリシー]** の順に選択します。または、<https://security.microsoft.com/alertpolicies> に直接移動することもできます。 |
+| ユーザーが機密情報を共有する場合 (データ損失防止アラート) や、異常な量の外部ファイル共有がある場合などのコンプライアンス アラート (情報ガバナンス アラート)    | <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>に移動し、**[ポリシー]** > **[アラート]** > **[アラート ポリシー]** の順に選択します。  |
 
-2. In the left navigation pane, under **Threat management**, choose **Policy**.
+詳細については、「[アラートの表示](../compliance/alert-policies.md#view-alerts)」を参照してください。
 
-3. On the **Policy** page, choose **Anti-phishing**.
+## <a name="disable-or-manage-calendar-sharing"></a>予定表共有を無効または管理する
 
-4. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
+組織内のユーザーが予定表を共有できないようにすることができます。 また、共有できる詳細レベルを管理することもできます。 たとえば、空き時間情報の共有のみに制限することができます。
 
-5. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/office-365-security/set-up-anti-phishing-policies.md).
+1. [Microsoft 365 管理センターで [組織の設定]](https://go.microsoft.com/fwlink/p/?linkid=2053743) に移動し、サインインします。
 
-6. After you've reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
+2. **[Outlook カレンダー]** を選択し、組織内のユーザーが、Office 365 または Exchange を持つ外部のユーザーと予定表を共有できるか、またはすべてのユーザーと予定表を共有できるかを選択します。
 
-|Setting or option|Recommended setting|
-|---|---|
-|Name|Domain and most valuable staff|
-|Description|Ensure most important staff and our domain are not being impersonated.|
-|Add users to protect|Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the business owners, partners, or candidate, managers, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.|
-|Add domains to protect|Select **+ Add a condition, The recipient domain is**. Enter the custom domain associated with your Microsoft 365 subscription, if you defined one. You can enter more than one domain.|
-|Choose actions|If email is sent by an impersonated user: Choose **Redirect message to another email address**, and then type the email address of the security administrator; for example, *Alice<span><span>@contoso.com*. <br/> If email is sent by an impersonated domain: Choose **Quarantine message**.|
-|Mailbox intelligence|By default, mailbox intelligence is selected when you create a new anti-phishing policy. Leave this setting **On** for best results.|
-|Add trusted senders and domains|Here you can add your own domain, or any other trusted domains.|
-|Applied to|Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, *contoso.<span><span>com*, in the list, and then select **Add**. Select **Done**.|
+   **[外部共有]** オプションをオフにすることをお勧めします。
 
-For more information, see [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
+   [すべてのユーザーと共有] オプションを選択した場合は、空き時間情報のみを共有させることもできます。
 
-## Protect against malicious attachments, files, and links with Defender for Office 365
+3. ページの下部にある **[変更の保存]** を選択します。
 
-![Banner that point to https://aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)
+   次の図は、予定表の共有が許可されない状態を示しています。
 
-First, make sure, in the admin center at <https://admin.microsoft.com> that you have the new admin center preview turned on. Turn on the toggle next to the text **The new admin center**.
+   ![予定表の外部共有不許可を示すスクリーンショット。](../media/nocalendarsharing.png)
 
-   ![The new admin center preview on.](../media/previewon.png)
+   次の図は、空き時間情報のみを含むメール リンクで予定表共有が許可されている場合の設定を示しています。
 
-If you don't see the **Setup** page with cards in your tenant yet, see how to complete these steps in Security & Compliance Center. See [Set up Safe Attachments in the Security & Compliance Center](#set-up-safe-attachments-in-the-security--compliance-center) and [Set up Safe Links in the Security & Compliance Center](#set-up-safe-links-in-the-security--compliance-center).
+   ![予定表の空き時間情報をすべてのユーザーと共有する設定を示すスクリーンショット。](../media/sharefreebusy.png)
 
-1. In the left nav, choose **Setup**.
-2. On the **Setup** page, choose **View** on the **Increase protection from advanced threats** card.
+ユーザーが予定表の共有を許可されている場合は、Outlook on the web から共有する方法について、[次の手順](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5)を参照してください。
 
-   ![Choose View on the Increase protection from advanced threats.](../media/startatp.png)
-
-3. On the **Increase protection from advanced threats** page, choose **Get started**.
-4. On the pane that opens, select the check boxes next to **Links and attachments in email**, **Scan files in SharePoint, OneDrive, and Teams**, and **Scan links in Office desktop and Office Online apps** under **Scan items for malicious content**.
-    
-   Under **Links and attachments in email**, Type in All Users, or the specific users whose email you want scanned.
-
-   ![Select all check boxes in Increase protection from advanced threats.](../media/setatp.png)
-
-5. Choose **Create policies** to turn on Safe Attachments and Safe Links.
-
-### Set up Safe Attachments in the Security & Compliance Center
-
-People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
-
-To create a Safe Attachment policy, either watch [this short video](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), or complete the following steps:
-
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account.
-
-2. In the left navigation pane, under **Threat management**, choose **Policy**.
-
-3. On the Policy page, choose **Safe Attachments**.
-
-4. On the Safe attachments page, apply this protection broadly by selecting the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** check box.
-
-5. Select **+** to create a new policy.
-
-6. Apply the settings in the following table.
-
-7. After you review your settings, choose **Create this policy** or **Save**, as appropriate.
-
-|Setting or option|Recommended setting|
-|---|---|
-|Name|Block current and future emails with detected malware.|
-|Description|Block current and future emails and attachments with detected malware.|
-|Save attachments unknown malware response|Select **Block - Block the current and future emails and attachments with detected malware**.|
-|Redirect attachment on detection|Enable redirection (select this box) <br/> Enter the admin account or a mailbox setup for quarantine. <br/> Apply the above selection if malware scanning for attachments times out or error occurs (select this box).|
-|Applied to|The recipient domain is . . . select your domain.|
-
-For more information, see [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
-
-### Set up Safe Links in the Security & Compliance Center
-
-Hackers sometimes hide malicious websites in links in email or other files. Safe Links, part of Microsoft Defender for Office 365, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through Safe Links policies.
-
-We recommend that you do the following:
-
-- Modify the default policy to increase protection.
-
-- Add a new policy targeted to all recipients in your domain.
-
-To set up Safe Links, watch [this short training video](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), or complete the following steps:
-
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account.
-
-2. In the left navigation pane, under **Threat management**, choose **Policy**.
-
-3. On the Policy page, choose **Safe Links**.
-
-To modify the default policy:
-
-1. On the Safe links page, under **Policies that apply to the entire organization**, select the **Default** policy.
-
-2. Under **Settings that apply to content except email**, select **Microsoft 365 Apps for enterprise, Office for iOS and Android**.
-
-3. Click **Save**.
-
-To create a new policy targeted to all recipients in your domain:
-
-1. On the Safe links page, under **Policies that apply to the entire organization**, click **+** to create a new policy.
-
-2. Apply the settings listed in the following table.
-
-3. Click **Save**.
-
-|Setting or option|Recommended setting|
-|---|---|
-|Name|Safe links policy for all recipients in the domain|
-|Select the action for unknown potentially malicious URLs in messages|Select **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.|
-|Use Safe Attachments to scan downloadable content|Select this box.|
-|Applied to|The recipient domain is . . . select your domain.|
-
-For more information, see [Safe Links in Defender for Office 365](../security/office-365-security/safe-links.md).
-
--->
-
-## <a name="turn-on-the-unified-audit-log"></a>統合監査ログを有効にする
-
-セキュリティ & コンプライアンス センターで監査ログ検索を有効にした後、管理者と他のユーザー アクティビティをログに保持して検索できます。
-
-監査ログの検索を有効またはExchange Onlineするには、監査ログの役割をMicrosoft 365があります。 既定では、この役割は、管理センターの [アクセス許可] ページの [コンプライアンス管理] および [組織の管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange割り当てられます</a>。 既定では、Microsoft 365のグローバル管理者は、このグループのメンバーです。
-
-1. 監査ログ検索を有効にする場合は、<https://admin.microsoft.com>管理センターに移動し、左側のナビゲーションの [管理センター] で [セキュリティ **]** を選択します。
-2. [セキュリティの **Microsoft 365]** ページで、[その他のリソース] を選択し、[コンプライアンス センター] Office 365 **[&]** カードで開きます。
-
-    ![コンプライアンス 車のセキュリティ とセキュリティ &を選択します。](../media/gotosecandcomp.png)
-3. [セキュリティとコンプライアンス] ページで、[検索] を選択 **し** 、[ログ検索 **の監査] を選択します**。
-4. [監査ログ検索] ページ **の上部にある [** 監査 **を有効にする] を選択します**。
-
-機能を有効にすると、ファイル、フォルダー、および多くのアクティビティを検索できます。 詳細については、「監査ログ [を検索する」を参照してください](../compliance/search-the-audit-log-in-security-and-compliance.md)。
-
-## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>ファイルとフォルダーの共有と管理SharePoint匿名OneDrive設定を調整する
-
-(既定の匿名リンクの有効期限を 14 日間に変更し、既定の共有の種類を "特定のユーザー" に変更する)ユーザーとユーザーの共有設定をOneDriveするにはSharePoint。
-
-1. [管理センター] に移動<https://admin.microsoft.com>し、左側のナビゲーション **SharePoint** **[管理センター**] で [管理センター] を選択します。
-2. 管理センター SharePoint[ポリシーの共有 **] に移動** \> <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**します**</a>。
-3. [共有] ページの [ファイルとフォルダーのリンク] で、[特定のユーザー] を選択し、[すべてのユーザー **]** リンクの [詳細設定] で、[これらのリンクは、この数日以内に期限切れになる必要があります] を選択し、14 (またはリンクの有効期間を制限する別の日数) を入力します。
-
-   ![[特定のユーザー] を選択し、リンクの有効期限を 14 日間に設定します。](../media/anyonelinks.png)
-
-
-## <a name="activity-alerts"></a>アクティビティ通知
-
-アクティビティ通知を使用して、管理者とユーザーのアクティビティを追跡し、組織内のマルウェアやデータ損失防止インシデントを検出できます。 サブスクリプションには一連の既定のポリシーが含まれていますが、カスタム ポリシーを作成できます。 詳細については、「アラート ポリシー [」を参照してください](../compliance/alert-policies.md)。 たとえば、誰も外部で共有したくない重要なファイルを SharePoint に保存する場合は、他のユーザーが共有した場合に通知する通知を作成できます。
-
-次の図は、このポリシーに含まれる既定のMicrosoft 365。
-
-![既定のアラート ポリシーは、Microsoft 365。](../media/alertpolicies.png)
-
-## <a name="disable-or-manage-calendar-sharing"></a>予定表の共有を無効または管理する
-
-組織内のユーザーが予定表を共有したり、共有できるコンテンツを管理したりすることもできます。 たとえば、共有を空き時間に制限できます。
-
-1. 管理センターに移動し、[<https://admin.microsoft.com>組織] **設定** \> **サービス設定** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**します**</a>。
-
-1. [**予定表]** を選択し、組織内のユーザーが自分の予定表を外部のユーザーと共有できるかどうかOffice 365、Exchangeを選択します。
-
-   [すべてのユーザーと共有] オプションを選択した場合は、空き時間情報のみを共有することもできます。
-
-3. ページの **下部にある** [変更の保存] を選択します。
-
-   次の図は、予定表の共有が許可されていないを示しています。
-
-   ![外部予定表の共有を許可しないとして表示するスクリーンショット。](../media/nocalendarsharing.png)
-
-   次の図は、空き時間情報のみを含むメール リンクで予定表の共有が許可されている場合の設定を示しています。
-
-   ![予定表の空き時間情報を誰とでも共有するスクリーンショット。](../media/sharefreebusy.png)
-
-ユーザーが予定表の共有を許可されている場合は、[ユーザーが予定表](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5)から共有する方法については、次の手順をOutlook on the web。
-
+それでは、 [**BYOD デバイスを設定**](m365bp-devices-overview.md)するミッションを開始します。

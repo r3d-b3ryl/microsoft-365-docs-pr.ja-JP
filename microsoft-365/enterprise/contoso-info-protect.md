@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso がエンタープライズ向けにMicrosoft 365の情報保護機能を使用して、クラウドでデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 70d5a0a6fba7204177771256d9a508c76a010d6d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eda36fab658a8352289a6245c565e54758fdd87a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931585"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092185"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -41,7 +41,7 @@ Contoso はデータの分析を実行し、次の分類レベルを決定しま
 次の表に、Contoso 情報ポリシーの一覧を示します。
 
 
-| Value | Access | データ保存期間 | 情報保護 |
+| 値 | Access | データ保存期間 | 情報保護 |
 |:-------|:-----|:-----|:-----|
 | 低いビジネス価値 (レベル 1: ベースライン) | All へのアクセスを許可します。  | 6 か月 | 暗号化を使用します。 |
 | 中程度のビジネス価値 (レベル 2: 機密) | Contoso の従業員、下請け業者、パートナーへのアクセスを許可します。 <BR><BR> MFA、トランスポート層セキュリティ (TLS)、およびモバイル アプリケーション管理 (MAM) を使用します。 | 2 年  | データ整合性のためにハッシュ値を使用します。  |

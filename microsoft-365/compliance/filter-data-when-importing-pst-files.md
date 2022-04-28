@@ -2,8 +2,8 @@
 title: PST ファイルをインポートするときに、データをフィルター処理する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: PST ファイルをMicrosoft 365にインポートするときに、Microsoft 365 インポート サービスのインテリジェント インポート機能を使用してデータをフィルター処理する方法について説明します。
-ms.openlocfilehash: dc60baf45be97e438875e0b045d9e8f3b6208d3f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5ff78126f9e2d02181635433d7a94ede0e191c8d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997914"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099743"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>PST ファイルをインポートするときに、データをフィルター処理する
 
@@ -70,7 +70,7 @@ PST インポート ジョブを作成したら、次の手順に従ってデー
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>に移動し、組織内の管理者アカウントの資格情報を使用してサインインします。
     
-2. コンプライアンス ポータルの左側のウィンドウで、[**情報ガバナンス**\>の **インポート**] をクリックします。
+2. コンプライアンス ポータルの左側のウィンドウで、[ **データ ライフサイクル管理** \> **のインポート**] をクリックします。
     
     組織のインポート ジョブが [**インポート**] タブに一覧表示されます。**[状態]** 列の [**分析の完了**] 値は、Microsoft 365によって分析され、インポートする準備ができているインポート ジョブを示します。
     
@@ -133,7 +133,7 @@ PST インポート ジョブを作成したら、次の手順に従ってデー
   
 7. インポート ジョブをクリックすると、各 PST ファイルの状態や、構成したフィルター設定など、より詳細な情報が表示されます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - 年齢フィルターの増分Microsoft 365どのように決定しますか? Microsoft 365 PST ファイルを分析すると、各項目の送信または受信したタイムスタンプが表示されます (アイテムに送信タイムスタンプと受信タイムスタンプの両方がある場合は、最も古い日付が選択されます)。 次にMicrosoft 365、そのタイムスタンプの年の値を調べ、それを現在の日付と比較してアイテムの年齢を決定します。 これらの年齢は、 **Age** フィルターのドロップダウン リストの値として使用されます。 たとえば、PST ファイルに 2016 年、2015 年、2014 年のメッセージがある場合、 **年齢** フィルターの値は **1 年**、 **2 年**、 **3 年** になります。
   

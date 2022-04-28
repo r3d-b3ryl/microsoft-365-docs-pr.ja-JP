@@ -2,8 +2,8 @@
 title: 従来の電子情報開示の検索と保留を Microsoft Purview コンプライアンス ポータルに移行する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,14 +15,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 07740a6569f67b04db22351f4b4e1214ccfbc787
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 416baed923884d9cbabbd6ee7607a48b0a19ab62
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973709"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092379"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>従来の電子情報開示の検索と保留をコンプライアンス ポータルに移行する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルでは、電子情報開示の使用に関するエクスペリエンスが向上します。これには、信頼性の向上、パフォーマンスの向上、電子情報開示ワークフローに合わせた多くの機能が用意されています。これには、コンテンツを問題別に整理するためのケース、コンテンツと分析をレビューするためのレビュー セットが含まれており、ほぼ重複するグループ化、電子メール スレッド、テーマ分析、予測コーディングなどのデータをカリングするのに役立ちます。
 
@@ -31,7 +33,7 @@ Microsoft Purview コンプライアンス ポータルでは、電子情報開�
 > [!NOTE]
 > さまざまなシナリオがあるため、この記事では、コンプライアンス ポータルで検索と保留を電子情報開示 (Standard) ケースに移行するための一般的なガイダンスを提供します。 電子情報開示ケースの使用は必ずしも必要ではありませんが、組織内の電子情報開示ケースにアクセスできるユーザーを制御するためのアクセス許可を割り当てることで、セキュリティのレイヤーが追加されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - この記事で説明する PowerShell コマンドを実行するには、コンプライアンス ポータルの電子情報開示マネージャー役割グループのメンバーである必要があります。 また、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>の探索管理役割グループのメンバーである必要もあります。
 
@@ -147,7 +149,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 In-Place電子情報開示検索を移行しても電子情報開示ケースに関連付けない場合は、コンプライアンス ポータルの [コンテンツ検索] ページに一覧表示されます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>での電子情報開示&保留のIn-Placeの詳細については、次を参照してください。
   

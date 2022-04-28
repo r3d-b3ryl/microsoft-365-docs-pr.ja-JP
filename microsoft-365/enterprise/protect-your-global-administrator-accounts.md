@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 グローバル管理者アカウントを保護する
+title: 手順 2.  Microsoft 365特権アカウントを保護する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
@@ -20,118 +20,84 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: この記事では、Microsoft 365 サブスクリプションへのグローバル管理者アクセスの保護に関する情報を提供します。
+description: この記事では、Microsoft 365 テナントへの特権アクセスの保護に関する情報を提供します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9693a8321643539e21ff10f3c624a0558916eb29
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: 34e4665067640ec625501b15c12c1c2e80d5ffb4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198351"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095600"
 ---
-# <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Microsoft 365 グローバル管理者アカウントを保護する
+# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>手順 2. Microsoft 365特権アカウントを保護する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-情報収集やフィッシング攻撃など、Microsoft 365 サブスクリプションのセキュリティ違反は通常、Microsoft 365 グローバル管理者アカウントの資格情報の侵害により発生します。 クラウドのセキュリティは、お客様と Microsoft 間のパートナーシップに基づくものです。
+通常、情報の収集やフィッシング攻撃など、Microsoft 365 テナントのセキュリティ侵害は、Microsoft 365特権アカウントの資格情報を侵害することによって行われます。 クラウドのセキュリティは、お客様と Microsoft 間のパートナーシップに基づくものです。
   
 - Microsoft クラウド サービスは信頼とセキュリティの基盤の上に構築されます。 Microsoft が提供するセキュリティ制御と機能は、お客様のデータとアプリケーションの保護に役立ちます。
     
 - お客様はご自分のデータと ID を所有しており、それらとオンプレミス リソースのセキュリティ、およびご自分が制御しているクラウド コンポーネントのセキュリティを保護する責任を担っています。
     
-Microsoft は、組織を保護するための機能を提供していますが、それらの機能を使用する場合にのみ有効です。 使用しないと、攻撃に対して脆弱になる可能性があります。 グローバル管理者アカウントを保護するために、Microsoft は次の詳細な手順を支援します。
+Microsoft は、組織を保護するための機能を提供していますが、それらの機能を使用する場合にのみ有効です。 使用しないと、攻撃に対して脆弱になる可能性があります。 特権アカウントを保護するために、Microsoft は以下の詳細な手順を支援します。
   
-1. 専用の Microsoft 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用します。
+1. 専用の特権を持つクラウドベースのアカウントを作成し、必要な場合にのみ使用します。
     
-2. 専用の Microsoft 365 グローバル管理者アカウントに対して多要素認証を構成し、最も強力な形式の第 2 認証を使用します。
-    
-> [!Note]
-> この記事は、グローバル管理者アカウントに重点を置いていますが、サブスクリプションのデータへの広範なアクセス権限を持つ追加のアカウント (電子情報開示管理者アカウント、セキュリティ アカウント、コンプライアンス アカウントなど) も同じように保護する必要があるかどうかを検討する必要があります。 <br > グローバル管理者アカウントは、ライセンスを追加せずに作成できます。
-  
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1. 専用の Microsoft 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用します
+2. 専用のMicrosoft 365特権アカウントに対して多要素認証 (MFA) を構成し、最も強力な形式のセカンダリ認証を使用します。
 
-グローバル管理者特権を必要とする、ユーザー アカウントへのロールの割り当てなどの管理タスクは比較的少数です。 そのため、グローバル管理者ロールが割り当てられている一般的なユーザー アカウントを使用するのではなく、次の手順を実行してください。
-  
-1. グローバル管理者ロールが割り当てられているユーザー アカウント セットを判別します。 これは、Microsoft 365 管理センターで、または次のAzure Active (Azure AD) Directory PowerShell for Graph コマンドを使用して実行できます。
-  
-  ```powershell
-  Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
-  ```
+3. ゼロ トラスト ID とデバイス アクセスに関する推奨事項を使用して特権アカウントを保護します。
 
-2. グローバル管理者ロールが割り当てられているユーザー アカウントを使用して、Microsoft 365 サブスクリプションにサインインします。
-    
-3. 最大 4 つの専用グローバル管理者ユーザー アカウントを作成します。 **長さが 12 文字以上の強力なパスワードを使用します。** 詳細については、「[強力なパスワードを作成する](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password)」を参照してください。 新しいアカウントのパスワードを安全な場所に保存します。 
-    
-4. 新しい専用のグローバル管理者ユーザー アカウントごとにグローバル管理者ロールを割り当てます。
-    
-5. Microsoft 365 からサインアウトします。
-    
-6. 新しい専用のグローバル管理者ユーザー アカウントのいずれかでサインインします。
-    
-7. 手順 1 で判別した、グローバル管理者ロールが割り当てられている既存のユーザー アカウントごとに、次の操作を実行します。
-    
-  - グローバル管理者ロールを削除します。
-    
-  - そのユーザーの職務と職責に適したアカウントに管理者ロールを割り当てます。 Microsoft 365 のさまざまな管理者ロールの詳細については、「[管理者ロールについて](/office365/admin/add-users/about-admin-roles)」を参照してください。
-    
-8. Microsoft 365 からサインアウトします。
-    
-次のような結果が表示されます。
-  
-- グローバル管理者ロールを持つ、サブスクリプションのユーザー アカウントのみが、新しい専用のグローバル管理者アカウント セットとなります。 次の PowerShell コマンドでこれを確認します。
-    
-  ```powershell
-  Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
-  ```
+## <a name="1-create-dedicated-privileged-cloud-based-user-accounts-and-use-them-only-when-necessary"></a>1. 専用の特権を持つクラウドベースのユーザー アカウントを作成し、必要な場合にのみ使用する
 
-- サブスクリプションを管理するその他の通常のユーザー アカウントには、各自の職務に関連する管理ロールが割り当てられています。
-    
-これ以降は、グローバル管理者特権を必要とするタスクの場合にのみ、専用のグローバル管理者アカウントでサインインすることになります。 他のすべての Microsoft 365 の管理は、他の管理ロールをユーザー アカウントに割り当てて行う必要があります。
+管理者ロールが割り当てられている日常的なユーザー アカウントを使用する代わりに、Azure ADに管理者ロールを持つ専用のユーザー アカウントを作成します。 
+
+この時点から、管理者特権を必要とするタスクに対してのみ、専用の特権アカウントでサインインします。 他のすべての Microsoft 365 の管理は、他の管理ロールをユーザー アカウントに割り当てて行う必要があります。
   
 > [!NOTE]
-> これには、日常のユーザー アカウントとしてサインアウトし、専用のグローバル管理者アカウントでサインインするための追加の手順が必要です。 ただし、これはグローバル管理者の操作でときどき実行する必要があります。 グローバル管理者アカウントが侵害された場合、Microsoft 365 サブスクリプションの復元にさらに多くの手順が必要になることを重視してください。
-  
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>手順 2.  専用の Microsoft 365 グローバル管理者アカウントの多要素認証を構成する
+> これには、日常のユーザー アカウントとしてサインアウトし、専用の管理者アカウントでサインインするための追加の手順が必要です。 ただし、これは管理者の操作に対してのみ行う必要があります。 管理者アカウントの侵害後にMicrosoft 365サブスクリプションを回復するには、さらに多くの手順が必要であると考えてください。
+
+また、[緊急アクセス アカウント](/azure/active-directory/roles/security-emergency-access)を作成して、誤ってAzure ADからロックアウトされないようにする必要もあります。
+
+管理者ロールのオンデマンドの Just-In-Time 割り当てのために、Azure AD Privileged Identity Management (PIM) を使用して特権アカウントをさらに保護できます。 
+ 
+## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. 専用のMicrosoft 365特権アカウントの多要素認証を構成する
 
 多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Microsoft 365 は、次の追加の検証方法をサポートしています。
   
 - Microsoft Authenticator アプリ
-
 - 電話
-    
 - テキスト メッセージを介して送信されるランダムに生成された確認コード
-    
-- スマート カード (仮想または物理)
-    
+- スマート カード (仮想または物理) (フェデレーション認証が必要)
 - 生体認証デバイス
+- Oauth トークン
+- 
     
 >[!Note]
 >アメリカ国立標準技術研究所 (NIST) の標準に準拠する必要がある組織では、電話またはテキスト メッセージベースの追加の検証方法の使用が制限されています。 詳細については、[ここ](https://pages.nist.gov/800-63-FAQ/#q-b01)をクリックしてください。
 >
 
-クラウドにのみ保存されているユーザーアカウント (クラウドのみの ID モデル) を使用している中小企業の場合は、専用のグローバル管理者アカウントごとにスマートフォンに送信される電話またはテキスト メッセージ確認コードを使用して MFA を構成するように [MFA を設定](/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
+クラウドにのみ格納されているユーザー アカウント (クラウド専用 ID モデル) を使用している小規模企業の場合は、専用の特権アカウントごとにスマートフォンに送信された電話またはテキスト メッセージ検証コードを使用して MFA を構成するように [MFA を設定](/office365/admin/security-and-compliance/set-up-multi-factor-authentication) します。
     
-Microsoft 365 ハイブリッド ID モデルを使用している大規模な組織の場合は、より多くの検証オプションがあります。 より強力な二次認証方法のためのセキュリティ インフラストラクチャがすでに整っている場合は、[MFA を設定](../admin/security-and-compliance/set-up-multi-factor-authentication.md)し、適切な検証方法のために各専用グローバル管理者アカウントを構成します。
+Microsoft 365 ハイブリッド ID モデルを使用している大規模な組織の場合は、より多くの検証オプションがあります。 より強力なセカンダリ認証方法用にセキュリティ インフラストラクチャが既に用意されている場合は、 [MFA を設定](../admin/security-and-compliance/set-up-multi-factor-authentication.md) し、適切な検証方法に対して専用の特権アカウントを構成します。
   
-必要なより強力な検証方法のセキュリティ インフラストラクチャが整っておらず、Microsoft 365 MFA で機能していない場合は、Microsoft Authenticator アプリ、電話、または送信されたテキスト メッセージ検証コードを使用して、MFA で専用のグローバル管理者アカウントを構成することを強くお勧めします。 暫定的なセキュリティ対策として、グローバル管理者アカウント用のスマートフォンに接続します。 MFA で保護が強化されていない専用のグローバル管理者アカウントをそのまま使用しないでください。
+必要な強力な検証方法のセキュリティ インフラストラクチャが、Microsoft 365 MFA に対して機能していない場合は、中間セキュリティ対策として、Microsoft Authenticator アプリ、電話、またはテキスト メッセージ検証コードをスマート フォンに送信するテキスト メッセージ検証コードを使用して、MFA を使用して専用の特権アカウントを構成することを強くお勧めします。 MFA によって提供される追加の保護なしで、専用の特権アカウントを残さないでください。
   
 詳細については、「[Microsoft 365 の MFA](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)」を参照してください。
   
-MFA と PowerShell を使用して Microsoft 365 サービスに接続する場合は、こちらの記事を参照してください。
+## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. ゼロ トラスト ID とデバイス アクセスに関する推奨事項を使用して管理者アカウントを保護する
 
-- [ユーザーアカウント、グループ、およびライセンス用の PowerShell for Microsoft 365](connect-to-microsoft-365-powershell.md)
-- [Microsoft Teams](/microsoftteams/teams-powershell-install)
-- [Exchange Online](/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
-- [SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
-- [Skype for Business Online](manage-skype-for-business-online-with-microsoft-365-powershell.md#connect-using-an-admin-account-with-multi-factor-authentication)
+セキュリティで保護された生産性の高い従業員を確保するために、Microsoft は [ID とデバイスへのアクセス](../security/office-365-security/microsoft-365-policies-configurations.md)に関する一連の推奨事項を提供します。 ID については、次の記事の推奨事項と設定を使用します。
+
+- [前提条件](../security/office-365-security/identity-access-prerequisites.md)
+- [共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>企業組織のための追加の保護
 
-以下の追加の方法を使用して、グローバル管理者のアカウントと、このアカウントを使用して実行する構成とが可能な限りセキュリティで保護されるようにします。
+これらの追加の方法を使用して、特権アカウントと、それを使用して実行する構成が可能な限り安全であることを確認します。
   
 ### <a name="privileged-access-workstation"></a>特権アクセス ワークステーション (PAW)
 
-高い権限を持つタスクの実行が、可能な限りセキュリティで保護されるようにするには、特権アクセス ワークステーション (PAW) を使用します。 PAW とは、グローバル管理者アカウントが必要とされる Microsoft 365 の構成など、機密性の高い構成タスクでのみ使用される専用のコンピューターです。 このコンピューターではインターネットの閲覧やメールを日常行わないので、インターネットの攻撃や脅威から適切に保護されます。
+高い権限を持つタスクの実行が、可能な限りセキュリティで保護されるようにするには、特権アクセス ワークステーション (PAW) を使用します。 PAW は、特権アカウントを必要とするMicrosoft 365構成など、機密性の高い構成タスクにのみ使用される専用コンピューターです。 このコンピューターではインターネットの閲覧やメールを日常行わないので、インターネットの攻撃や脅威から適切に保護されます。
   
 PAWの設定方法については、[https://aka.ms/cyberpaw](/security/compass/privileged-access-devices)を参照してください。
 
@@ -141,15 +107,18 @@ Azure AD テナントと管理者アカウントに対して Azure PIM を有効
 
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
-グローバル管理者アカウントにグローバル管理者の役割を永続的に割り当てるのではなく、Azure AD Privileged Identity Management (PIM) を使用して、必要なときに、オンデマンドのジャストインタイム割り当てを有効にすることができます。
+特権アカウントに管理者ロールを永続的に割り当てるのではなく、Azure AD PIM を使用して、必要に応じて管理者ロールのオンデマンドの Just-In-Time 割り当てを有効にすることができます。
   
-グローバル管理者アカウントは、永続的な管理者ではなく適格な管理者になります。 グローバル管理者ロールは、誰かが必要とするまで非アクティブとなります。 ライセンス認証プロセスを実行すると、事前に設定された期間、グローバル管理者ロールがグローバル管理者アカウントに追加されます。 期限を過ぎると、PIM によってグローバル管理者アカウントからグローバル管理者ロールが削除されます。
+管理者アカウントは、永続的な管理者から適格な管理者に移動します。 管理者ロールは、誰かが必要とするまで非アクティブとなります。 次に、アクティブ化プロセスを完了して、事前に決められた時間、特権アカウントに管理者ロールを追加します。 期限が切れると、PIM は特権アカウントから管理者ロールを削除します。
   
-PIM と、このプロセスを使用することにより、グローバル管理者アカウントが、悪意のあるユーザーによる攻撃と使用に対して脆弱になる時間が大幅に短くなります。
+PIM とこのプロセスを使用すると、特権アカウントが悪意のあるユーザーによる攻撃や使用に対して脆弱になる時間が大幅に短縮されます。
 
 PIM は、Microsoft 365 E5 に含まれている Azure Active Directory Premium P2 で使用できます。 または、管理者アカウントの Azure Active Directory Premium P2 ライセンスを個別に購入できます。
   
-詳細については、「[Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)」を参照してください。
+詳細については、以下を参照してください。
+
+- [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)。
+- [Azure AD でのハイブリッドおよびクラウド デプロイ用の特権アクセスをセキュリティで保護する](/azure/active-directory/roles/security-planning)
   
 
 ### <a name="privileged-access-management"></a>特権アクセス管理
@@ -174,12 +143,6 @@ PIM は、Microsoft 365 E5 に含まれている Azure Active Directory Premium 
 
 ## <a name="next-step"></a>次の手順
 
-Microsoft 365 サブスクリプションの ID を設定する場合は、以下を参照してください。
+[![Microsoft 365 ユーザー アカウントを保護する](../media/deploy-identity-solution-overview/microsoft-365-secure-sign-in.png)](microsoft-365-secure-sign-in.md)
 
-- クラウド専用の ID を使用している場合は、「[クラウド専用の ID](cloud-only-identities.md)」
-- ハイブリッドIDを使用している場合は、「[ディレクトリ同期を準備する](prepare-for-directory-synchronization.md)」
-
-  
-## <a name="see-also"></a>関連項目
-
-[Microsoft 365 セキュリティ センター ロードマップ](/office365/securitycompliance/security-roadmap)
+[手順 3](microsoft-365-secure-sign-in.md) に進み、ユーザー アカウントをセキュリティで保護します。

@@ -2,8 +2,8 @@
 title: 単一アイテムのエラーの修復
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 一括エラー修復プロセスに従わなくても、電子情報開示 (プレミアム) のレビュー セット内のドキュメントの処理エラーを修正できます。
-ms.openlocfilehash: d3b90f0f2d396b6304bb85b46bc5b018802101eb
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e8ace66eefadf5ce959bc01150ba21e232429131
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993998"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092351"
 ---
 # <a name="single-item-error-remediation-in-ediscovery-premium"></a>電子情報開示の単一アイテム エラー修復 (プレミアム)
 

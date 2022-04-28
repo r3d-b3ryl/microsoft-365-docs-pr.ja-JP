@@ -2,8 +2,8 @@
 title: 電子情報開示での関連性分析のテスト (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: 電子情報開示 (プレミアム) の Batch 計算後に [テスト] タブを使用して、処理の全体的な品質をテスト、比較、検証する方法について説明します。
-ms.openlocfilehash: e568552501a07c74e7500a1041e69f4994668cd2
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 0b3d6c70bdfef4dec8e8a5d08d4e72f80d6fec77
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991866"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095468"
 ---
 # <a name="test-relevance-analysis-in-ediscovery-premium"></a>電子情報開示での関連性分析のテスト (プレミアム)
 

@@ -2,8 +2,8 @@
 title: 電子情報開示でスマート タグを設定する (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: スマート タグを使用すると、電子情報開示 (プレミアム) ケースでコンテンツを確認するときに機械学習機能を適用できます。 スマート タグ グループを使用して、弁護士とクライアントの特権モデルなどの機械学習検出モデルの結果を表示します。
-ms.openlocfilehash: 1adea2404192b9e715ad021f70ba07f7e64a89d5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e9b791d632ea6a1a84472ac5ad00b4a45fea294d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999742"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095512"
 ---
 # <a name="set-up-smart-tags-in-ediscovery-premium"></a>電子情報開示でスマート タグを設定する (プレミアム)
 

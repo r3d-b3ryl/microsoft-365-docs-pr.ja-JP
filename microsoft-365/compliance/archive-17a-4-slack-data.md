@@ -2,8 +2,8 @@
 title: Microsoft 365で Slack データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Slack DataParser コネクタを設定して使用して、Microsoft 365で Slack データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 9157db405f37b53b8637c466e9d6d8050c5a325b
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d36fe8214202ff8ca25cfb995d51f93e3429eae5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996646"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092505"
 ---
 # <a name="set-up-a-connector-to-archive-slack-data"></a>Slack データをアーカイブするコネクタを設定する
 

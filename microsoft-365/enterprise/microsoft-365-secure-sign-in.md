@@ -1,23 +1,28 @@
 ---
 title: '手順 3: あなたの Microsoft 365 ユーザー アカウントを保護する'
 f1.keywords:
-  - NOCSH
+- NOCSH
 author: kelleyvice-msft
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - Strat_O365_Enterprise
-  - m365initiative-coredeploy
-ms.custom: null
+- M365-security-compliance
+- Strat_O365_Enterprise
+- m365initiative-coredeploy
+ms.custom: ''
 description: ユーザーが多要素認証（MFA）およびその他の機能を使用して安全にサインインすることを要求します。
+ms.openlocfilehash: 4566b2c8c73ce258899e1de6ef621715092e50a5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090277"
 ---
-
 # <a name="step-3-protect-your-microsoft-365-user-accounts"></a>手順 3: あなたの Microsoft 365 ユーザー アカウントを保護する
 
 ユーザー サインインのセキュリティを強化するには：
@@ -115,7 +120,7 @@ ID とデバイスのアクセス ポリシーは、3つの層で使用するよ
 
 これらの層とそれに対応する構成は、データ、ID、およびデバイス全体で一貫したレベルの保護を提供します。
 
-Microsoft では、組織で Microsoft Teams、Exchange Online、および SharePoint の設定を含むゼロ トラスト ID とデバイス アクセス ポリシーの構成および展開を強くお勧めします。 詳細については、「[ゼロ トラスト ID とデバイス アクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)」を参照してください。
+Microsoft では、組織での Microsoft Teams、Exchange Online、および SharePoint の具体的な設定を含むゼロ トラスト ID とデバイス アクセス ポリシーの構成および展開を強くお勧めします。詳細については、「[ゼロ トラスト ID とデバイス アクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)」を参照してください。
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 

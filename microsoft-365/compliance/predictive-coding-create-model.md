@@ -2,8 +2,8 @@
 title: 電子情報開示で予測コーディング モデルを作成する (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 電子情報開示 (プレミアム) で予測コーディング モデルを作成する方法について説明します。 これは、電子情報開示 (プレミアム) で機械学習機能を使用して、レビュー セット内の関連するコンテンツと関連性のないコンテンツを特定するのに役立つ最初の手順です。
-ms.openlocfilehash: f5636defbd4bc004a4732ff1d956f8b879daea2d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4542ffbf8be3c7a5c0193f3c0372e3c19e91f02e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994042"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099655"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>予測コーディング モデルを作成する (プレビュー)
 

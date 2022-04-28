@@ -2,8 +2,8 @@
 title: 回復可能なアイテム フォルダー内のアイテムを削除する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ description: 管理者が、Exchange Online メールボックスのユーザー
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: b421be087980c7878b79e3dbc03759ec45c546d8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 808bc02eb711ff72ec8bd329b1367145d2d991a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001194"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091745"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>保留中のクラウド ベースのメールボックスの 回復可能なアイテム フォルダーのアイテムを削除する
 
@@ -214,7 +214,7 @@ In-Place保留を特定したら、<a href="https://go.microsoft.com/fwlink/p/?l
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-アイテム保持ポリシーを特定したら、コンプライアンス ポータルの **[Information** **governanceRetention** > ] ページに移動し、前の手順で特定したアイテム保持ポリシーを編集し、アイテム保持ポリシーに含まれる受信者の一覧からメールボックスを削除します。
+アイテム保持ポリシーを特定したら、コンプライアンス ポータルの **[データ ライフサイクル管理** > **の保持** ] ページに移動し、前の手順で特定したアイテム保持ポリシーを編集し、アイテム保持ポリシーに含まれる受信者の一覧からメールボックスを削除します。
   
 ### <a name="organization-wide-retention-policies"></a>組織全体に対するアイテム保持ポリシー
   
@@ -224,7 +224,7 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-組織全体のアイテム保持ポリシーを特定したら、コンプライアンス ポータルの **[Information** **governanceRetention** > ] ページに移動し、前の手順で特定した組織全体のアイテム保持ポリシーを編集し、除外された受信者の一覧にメールボックスを追加します。 これを行うと、アイテム保持ポリシーからユーザーのメールボックスが削除されます。
+組織全体のアイテム保持ポリシーを特定したら、コンプライアンス ポータルの **[データ ライフサイクル管理** > **の復元** ] ページに移動し、前の手順で特定した組織全体のアイテム保持ポリシーを編集し、除外された受信者の一覧にメールボックスを追加します。 これを行うと、アイテム保持ポリシーからユーザーのメールボックスが削除されます。
 
 > [!IMPORTANT]
 > 組織全体のアイテム保持ポリシーからメールボックスを除外すると、この変更を同期し、ポリシーからメールボックスを削除するのに最大で 24 時間かかる場合があります。
@@ -399,11 +399,11 @@ PowerShell で次の手順 (指定された順序で) Exchange Online実行し�
 
     **特定のメールボックスに適用されるアイテム保持ポリシー**
 
-    コンプライアンス ポータルを使用して、メールボックスをアイテム保持ポリシーに追加します。 コンプライアンス センターの **[Information** **governanceRetention** > ] ページに移動し、アイテム保持ポリシーを編集し、アイテム保持ポリシーが適用されている受信者の一覧にメールボックスを追加します。
+    コンプライアンス ポータルを使用して、メールボックスをアイテム保持ポリシーに追加します。 コンプライアンス センターの **データ ライフサイクル管理** > **Retention** ページに移動し、アイテム保持ポリシーを編集し、アイテム保持ポリシーが適用されている受信者の一覧にメールボックスを追加します。
 
     **組織全体に対するアイテム保持ポリシー**
 
-    組織全体またはExchange全体のアイテム保持ポリシーをポリシーから除外して削除した場合は、コンプライアンス ポータルを使用して、除外されたユーザーの一覧からメールボックスを削除します。 コンプライアンス センターの **[Information** **governanceRetention** > ] ページに移動し、組織全体のアイテム保持ポリシーを編集し、除外された受信者の一覧からメールボックスを削除します。 これを行うと、アイテム保持ポリシーがユーザーのメールボックスに再適用されます。
+    組織全体またはExchange全体のアイテム保持ポリシーをポリシーから除外して削除した場合は、コンプライアンス ポータルを使用して、除外されたユーザーの一覧からメールボックスを削除します。 コンプライアンス センターの **データ ライフサイクル管理** > **Retention** ページに移動し、組織全体のアイテム保持ポリシーを編集し、除外された受信者の一覧からメールボックスを削除します。 これを行うと、アイテム保持ポリシーがユーザーのメールボックスに再適用されます。
 
     **電子情報開示ケースホールド**
 
@@ -425,7 +425,7 @@ PowerShell で次の手順 (指定された順序で) Exchange Online実行し�
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 **Get-Mailbox** コマンドレットまたは **Get-OrganizationConfig** コマンドレットを実行するときに *、InPlaceHolds* プロパティの値に基づいてさまざまな種類の保留を識別する方法を示す表を次に示します。 詳細については、「[Exchange Online メールボックスに配置された保留の種類を特定する方法](identify-a-hold-on-an-exchange-online-mailbox.md)」を参照してください。
 

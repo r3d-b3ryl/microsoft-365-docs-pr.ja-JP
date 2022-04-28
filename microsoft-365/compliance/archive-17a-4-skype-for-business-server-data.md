@@ -2,8 +2,8 @@
 title: Microsoft 365でSkype for Business Serverデータをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Skype for Business Server DataParser コネクタを設定して使用して、Microsoft 365でSkype for Business Serverデータをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 8a7c8e7b2d59aeabc2f21207d5b3ce2eb3d524e9
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d1daedd7be239fa29746d51b625a633952461d09
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997540"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092527"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>Skype for Business Server データをアーカイブするコネクタを設定する
 

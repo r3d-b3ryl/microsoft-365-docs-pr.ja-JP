@@ -2,8 +2,8 @@
 title: Exchange Online メールボックスに格納されているコンテンツ
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365でクラウドベースのアプリによって生成されたコンテンツは、ユーザーのExchange Onlineメールボックスに格納または関連付けられます。 このコンテンツは、Microsoft 電子情報開示ツールを使用して検索できます。
-ms.openlocfilehash: b5e8434f5345cda8ef4f637b3dff2d3cf704f748
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 113cbb9c386dab2339fa1b265b3443efe1ba91fd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000798"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091679"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>電子情報開示のExchange Onlineメールボックスに格納されているコンテンツ
 

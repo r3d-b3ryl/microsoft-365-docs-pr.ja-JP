@@ -2,8 +2,8 @@
 title: Microsoft 365でSQL データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 SQL DataParser コネクタを設定して使用して、Microsoft 365でSQLデータをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 5583b47276a6f8c5e48add47f3743c4792abd83c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 021f7882862933c6b7cf3c437788b63d722c804a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996657"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092483"
 ---
 # <a name="set-up-a-connector-to-archive-sql-data"></a>SQL データをアーカイブするコネクタを設定する
 

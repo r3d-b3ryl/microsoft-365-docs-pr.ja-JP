@@ -2,8 +2,8 @@
 title: コンテンツを検索する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -11,14 +11,14 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Microsoft Purview コンプライアンス ポータルのコンテンツ検索電子情報開示ツールを使用すると、Exchange メールボックス内の電子メール、SharePoint サイトやOneDriveの場所のドキュメント、Skype for Businessのインスタント メッセージング会話をすばやく見つけることができます。
-ms.openlocfilehash: 4efe2f4b4735005c10fd59e618bb6ecc8be51ec0
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 30398f91a0ab7807ea3438e6bfdde3606e918a4d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993653"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092251"
 ---
-# <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索する
+# <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索します
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 

@@ -2,8 +2,8 @@
 title: Microsoft 365で Cisco Webex データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Cisco Webex DataParser コネクタを設定して使用して、Microsoft 365で Cisco Webex データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 67cd7007d19ba37b20da4ea961e3ec16e3b63840
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d95a89dab5a85c7d5d41ab119fd360c3092f18ca
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996594"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095102"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>Cisco Webex データをアーカイブするコネクタを設定する
 
