@@ -28,7 +28,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 99549ba8077d966c4d5649e144fa0259f9178629
 ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/19/2022
 ms.locfileid: "64944351"
@@ -43,7 +43,7 @@ ms.locfileid: "64944351"
 
 Microsoft 365 Defender は、エンドポイント、ID、メール、およびアプリケーション全体での検出、防止、調査、応答をネイティブに調整し、高度な攻撃に対する統合された保護を提供する、侵害の前後に対応した統合エンタープライズ防御スイートです。
 
-統合された Microsoft 365 Defender ソリューションを使用すると、セキュリティ担当者は、これらの各製品が受け取る脅威シグナルを結合し、脅威の完全な範囲と影響 (環境に入った方法、影響を受ける内容、現在組織に与える影響) を判断できます。 Microsoft 365 Defender は、攻撃を防止または停止し、影響を受けるメールボックス、エンドポイント、およびユーザー ID を自己修復する自動アクションを実行します。
+統合された Microsoft 365 Defender ソリューションを使用すると、セキュリティ担当者は、これらの各製品が受け取る脅威シグナルを結び付け、完全な驚異のスコープと影響を判断できます; 環境に侵入した方法、侵害を与えた内容、現在組織に与えている影響についてなどです。Microsoft 365 Defender は、攻撃を防御または停止し、侵害を受けたメールボックス、エンドポイント、およびユーザー ID を自己修復する自動アクションを実行します。
 
 <center><h2>Microsoft 365 Defender サービス</center></h2>
 <table><tr><td><center><b><a href="/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"><b>Microsoft Defender for Endpoint</b></center></a></td>
@@ -66,7 +66,7 @@ Microsoft 365 Defender サービスは次の保護を行います。
 
 - **Defender for Endpoint を使用するエンドポイント** - Defender for Endpointは、予防的保護、違反後の検出、自動調査、および対応のための統合エンドポイント プラットフォームです。
 - **電子メールと Defender for Office 365 との協働** - Defender for Office 365 は、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによって引き起こされる悪意のある脅威から組織を保護します。
-- **Defender for Identity と Azure Active Directory (Azure AD) Identity Protection との同一性** - Defender for Identity は、オンプレミスの Active Directory ドメイン サービス (AD DS) のシグナルを使用して、組織に対する高度な脅威、セキュリティの低下した ID、内部関係者の不正な行動を特定し、検出し、調査します。 Azure AD Identity Protection は、クラウドベースのAzure ADにおける ID ベースのリスクの検出と修復を自動化します。
+- **Defender for Identity and Azure Active Directory (Azure AD) Identity Protection を使用した ID** - Defender for Identity は、オンプレミスの Active Directory Domain Services (AD DS) シグナルを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のある組織内部のアクションを識別、検出、調査します。Azure AD Identity Protection は、クラウドベースの Azure AD における ID ベースのリスクの検出と修復を自動化します。
 - **Microsoft Defender for Cloud Apps を搭載したアプリケーション** - Microsoft Defender for Cloud Apps は、高度な可視性、強力なデータ制御、強化された脅威からの保護をクラウドアプリに提供する包括的なクロス SaaS ソリューションです。
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww]
@@ -84,11 +84,11 @@ Microsoft 365 Defender ポータルが、製品間で関連するすべてのア
 
 インシデントに関連するアラートの一覧の例を次に示します。
 
-:::image type="content" source="../../media/incident-list.png" alt-text="インシデントのアラートの一覧" lightbox="../../media/incident-list.png":::
+:::image type="content" source="../../media/incident-list.png" alt-text="インシデントのアラートのリストの例" lightbox="../../media/incident-list.png":::
 
 電子メールとエンドポイントの生データに基づくクエリベースのハンティングの例を次に示します。
 
-:::image type="content" source="../../media/advanced-hunting.png" alt-text=" クエリの詳細を含む [高度なハンティング] ページ" lightbox="../../media/advanced-hunting.png":::
+:::image type="content" source="../../media/advanced-hunting.png" alt-text="クエリの詳細を含む高度なハンティングページ" lightbox="../../media/advanced-hunting.png":::
 
 Microsoft 365 Defender クロスプロダクト機能には、次のようなものがあります。
 
@@ -96,7 +96,7 @@ Microsoft 365 Defender クロスプロダクト機能には、次のようなも
 - **複合インシデント キュー** - セキュリティ担当者が、攻撃範囲全体、影響を受ける資産、自動修復アクションをグループ化し、適切なタイミングで表示できるようにすることで、重要な情報に集中できるようにします。 
 - **脅威への自動対応** - Microsoft 365 Defender 製品間で重要な脅威情報がリアルタイムで共有され、攻撃の進行を阻止できます。 
 
-   たとえば、Defender for Endpoint によって保護されているエンドポイントで悪意のあるファイルが検出された場合、Defender for Office 365 は、すべての電子メール メッセージからファイルをスキャンして削除するように指示します。 ファイルは、Microsoft 365 セキュリティ スイート全体によってブロックされます。
+   たとえば、Defender for Endpoint によって保護されているエンドポイントで悪意のあるファイルが検出された場合、Defender for Office 365 は、すべての電子メール メッセージからファイルをスキャンして削除するように指示します。ファイルは、Microsoft 365 セキュリティ スイート全体によって発見され次第ブロックされます。
 
 - **侵害されたデバイス、ユーザー ID、メールボックス** の自己復旧 - Microsoft 365 Defender では、AI を利用した自動アクションとプレイブックを使用して、影響を受けた資産をセキュリティで保護された状態に修復します。 Microsoft 365 Defender では、スイート製品の自動修復機能を利用して、インシデントに関連するすべての影響を受ける資産が可能な限り自動的に修復されるようにします。
 - **製品間脅威ハンティング** - セキュリティ チームは、組織的知識を活用して、さまざまな保護製品によって収集された生データに対して独自のカスタム クエリを作成することで、侵害の兆候を探し出すことができます。 Microsoft 365 Defender は、エンドポイントと Defender for Office 365 データ全体で 30 日間の履歴の生信号とアラート データへのクエリ ベースのアクセスを提供します。
@@ -116,7 +116,7 @@ Microsoft 365 Defender クロスプロダクト機能には、次のようなも
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 は、メールと Office 365 リソースを保護するための一連の防止、検出、調査、およびハンティング機能を使用して、組織が企業を保護するのに役立ちます。
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** は、組織内のデバイスに対して、予防的な保護、侵害後の検出、自動調査、および対応を提供します。
-- **[Microsoft 365 Defender](microsoft-365-defender.md)** は、Microsoft 365セキュリティ ポートフォリオを利用してドメイン間の脅威データを自動的に分析し、1 つのダッシュボードで攻撃の画像を作成する Microsoft *の拡張検出および応答* (XDR) ソリューションの一部です。
+- **[Microsoft 365 Defender](microsoft-365-defender.md)** は、Microsoft 365 セキュリティ ポートフォリオを活用してドメイン間の脅威データを自動的に分析し、1 つのダッシュボード上で攻撃状況を示す俯瞰図を作成する、Microsoft の *拡張検出および応答* (XDR) ソリューションの一部です。
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** は、包括的なクロス SaaS および PaaS ソリューションであり、クラウド アプリに対する詳細な可視性、強力なデータ制御、強化された脅威保護を実現します。
 
 Office 365 セキュリティ/コンプライアンス センターまたは Microsoft 365 Defender ポータルからの変更点に関する情報が必要な場合は、以下を参照してください。
@@ -152,11 +152,11 @@ Microsoft 365 Defender は、Microsoft Defender for Office 365 および Microso
 
 セキュリティ情報を一元化すると、Microsoft 365 全体でセキュリティ インシデントを調査するための単一の場所が作成されます。 主な例は、Microsoft 365 Defender のクイック起動時の **インシデントとアラート** の下の **インシデント** です。
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Microsoft 365 Defender ポータルの [インシデント] ページ" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Microsoft 365 Defender ポータルのインシデント ページ" lightbox="../../media/converged-incidents-2.png.png":::
 
 インシデント名を選択すると、セキュリティ情報の一元化の価値を示すページが表示されます。
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Microsoft 365 Defender ポータルのインシデントの [概要] ページ" lightbox="../../media/converged-incident-info-3.png":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Microsoft 365 Defender のインシデントの概要ページの例" lightbox="../../media/converged-incident-info-3.png":::
 
 インシデントのページの上部に、**[概要]**、**[アラート]**、**[デバイス]**、**[ユーザー]**、**[メールボックス]**、**[調査]**、**[証拠と応答]**、および **[グラフ]** タブが表示されます。 詳細については、これらのタブを選択してください。 たとえば、**[ユーザー]** タブには、集中型ワークロード (Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Cloud Apps) のユーザーと、オンプレミスの Active Directory Domain Services (AD DS)、Azure AD、サードパーティの ID プロバイダーなどのさまざまなソースの情報が表示されます。 詳細については、「[ユーザーを調査する](investigate-users.md)」を参照してください。
 
@@ -170,13 +170,13 @@ Microsoft 365 Defender は、Microsoft Defender for Office 365 および Microso
 
 #### <a name="unified-settings"></a>統一された設定
 
-:::image type="content" source="../../media/converged-add-role-9.png" alt-text="Microsoft 365 Defender ポータルの [設定] ページ" lightbox="../../media/converged-add-role-9.png":::
+:::image type="content" source="../../media/converged-add-role-9.png" alt-text="Microsoft 365 Defender ポータルの設定ページ" lightbox="../../media/converged-add-role-9.png":::
 
 #### <a name="permissions--roles"></a>アクセス許可と役割
 
-:::image type="content" source="../../media/converged-roles-5.png" alt-text="[アクセス許可&ロール] ページに表示されるエンドポイント ロール&グループ" lightbox="../../media/converged-roles-5.png":::
+:::image type="content" source="../../media/converged-roles-5.png" alt-text="アクセス許可 & ロール ページに表示されるエンドポイント ロール & グループ" lightbox="../../media/converged-roles-5.png":::
 
-Microsoft 365 Defender へのアクセスは、Azure AD グローバル ロールまたはカスタム ロールを使用して構成されます。 Defender for Endpoint については、「[Microsoft 365 Defender ポータルにユーザー アクセスを割り当てる](/microsoft-365/security/defender-endpoint/assign-portal-access)」を参照してください。 Defender for Office 365については、[Microsoft Purview コンプライアンス ポータルとMicrosoft 365 Defenderのアクセス許可に関](../office-365-security/permissions-microsoft-365-compliance-security.md)するページを参照してください。
+Microsoft 365 Defender へのアクセスは、Azure AD グローバル ロールまたはカスタム ロールを使用して構成されます。 Defender for Endpoint については、「[Microsoft 365 Defender ポータルにユーザー アクセスを割り当てる](/microsoft-365/security/defender-endpoint/assign-portal-access)」を参照してください。 Defender for Office 365 については、「[Microsoft Purview コンプライアンス ポータルと Microsoft 365 Defender のアクセス許可](../office-365-security/permissions-microsoft-365-compliance-security.md)」をご覧ください。
 
 - [Microsoft 365 Defender へのアクセスを管理する](m365d-permissions.md)方法の詳細
 - Microsoft 365 Defender で[カスタム ロールを作成](custom-roles.md)する方法の詳細
@@ -210,12 +210,12 @@ Microsoft 365 Defender へのアクセスは、Azure AD グローバル ロー�
 
 Defender for Endpoint と Defender for Identity では、次のエンティティを検索できます。 
 
-- **デバイス** - Defender for Endpoint と Defender for Identity の両方でサポートされます。 検索演算子の使用をサポートします。 
+- **デバイス** - Defender for Endpoint と Defender for Identity の両方でサポートされます。検索演算子の使用をサポートします。 
 - **ユーザー** - Defender for Endpoint、Defender for Identity、Defender for Cloud Apps でサポートされています。 
 - **ファイル、IP、URL** - Defender for Endpoint と同じ機能。
 
     >[!NOTE]
-    >IP 検索と URL 検索は完全に一致し、検索結果ページには表示されません。エンティティ ページに直接移動します。 
+    >IP と URL の検索は完全に一致し、検索結果ページには表示されません – これらは、エンティティ ページに直接誘導されます。 
 
 - **TVM** - Defender for Endpoint と同じ機能 (脆弱性、ソフトウェア、推奨事項)。 
 
@@ -241,7 +241,7 @@ Defender for Endpoint と Defender for Identity では、次のエンティテ�
 
 ラーニング ハブ内では、メールとコラボレーション (Microsoft Defender for Office 365) のガイダンスが、Endpoint (Microsoft Defender for Endpoint) および Microsoft 365 Defender ラーニング リソースと並んでいます。
 
-ラーニング ハブは、「Microsoft 365 Defenderを使用して調査する方法」などのトピックを中心に整理されたラーニング パスで開きます。 と "Microsoft Defender for Office 365ベスト プラクティス"。 このセクションは現在、Microsoft 内のセキュリティ製品グループによってキュレーションされています。 各ラーニング パスは、概念を理解するのにかかると予想される時間を反映しています。 たとえば、「Microsoft Defender for Office 365 ユーザー アカウントが侵害された場合の手順」は 8 分かかると予想されており、その場で学ぶ価値があります。
+ラーニング ハブが開き、"Microsoft 365 Defender を使用してどのように調査しますか?" などのトピックを中心に整理されたラーニング パスが表示されます。 および "Microsoft Defender for Office 365 のベスト プラクティス"。 このセクションは現在、Microsoft 内のセキュリティ製品グループによってキュレーションされています。 各ラーニング パスは、概念を理解するのにかかると予想される時間を反映しています。 たとえば、「Microsoft Defender for Office 365 ユーザー アカウントが侵害された場合の手順」は 8 分かかると予想されており、その場で学ぶ価値があります。
 
 コンテンツをクリックした後、このサイトをブックマークして、ブックマークを 'セキュリティ' または 'クリティカル' フォルダーに整理すると便利な場合があります。 すべてのラーニング パスを表示するには、メイン パネルの [すべて表示] リンクをクリックします。
 
@@ -255,7 +255,7 @@ Defender for Endpoint と Defender for Identity では、次のエンティテ�
 
 ### <a name="send-us-your-feedback"></a>フィードバックの送信
 
-フィードバックをお寄せください。 私たちは常に改善を目指しているので、ご希望の内容がある場合は、[このビデオを視聴して、なぜ私たちが本当にフィードバックを読んでいると分かるのか](https://www.microsoft.com/videoplayer/embed/RE4K5Ci)をご確認ください。
+あなたのフィードバックが必要です。私たちは常に改善を求めているため、視聴を希望する対象がある場合は、[このビデオを視聴して、私達が皆様のフィードバックを読むことが、皆様から私達への信頼を築く方法であることをご確認ください](https://www.microsoft.com/videoplayer/embed/RE4K5Ci)。
 
 この記事からフィードバックを残すこともできます。[フィードバックの送信と表示] の下の最後にある [フィードバック] セクションのオプションは、*[この製品]*、または *[このページ]* です。
 

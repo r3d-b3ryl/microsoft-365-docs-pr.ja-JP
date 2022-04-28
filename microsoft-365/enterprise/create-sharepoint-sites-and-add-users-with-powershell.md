@@ -2,7 +2,7 @@
 title: PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: landing-page
 ms.service: o365-administration
@@ -18,34 +18,34 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: '概要: PowerShell を使用して、オンライン サイトSharePoint新しいサイトを作成し、それらのサイトにユーザーとグループを追加します。'
-ms.openlocfilehash: 95bd3fb5647a5c6680fd9a07ebdf45e106acb095
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: '概要: PowerShell を使用して新しい SharePoint Online サイトを作成し、それらのサイトにユーザーとグループを追加します。'
+ms.openlocfilehash: 9d99f98825d88e2d2e63f106a7b5704c773c8be1
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681372"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101339"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-powerShell を Microsoft 365 で使用して SharePoint Online サイトを作成し、ユーザーを追加すると、Microsoft 365 管理センター で実行できるよりもはるかに高速で繰り返しタスクを実行できます。 また、アプリケーションで実行できないタスクを実行Microsoft 365 管理センター。
+PowerShell for Microsoft 365を使用してSharePoint Online サイトを作成し、ユーザーを追加する場合、Microsoft 365 管理センターで実行できるよりもはるかに高速にタスクをすばやく繰り返し実行できます。 Microsoft 365 管理センターでは実行できないタスクを実行することもできます。
 
 ## <a name="connect-to-sharepoint-online"></a>SharePoint Online に接続する
 
-このトピックの手順では、オンラインに接続するSharePoint必要があります。 手順については、「オンライン [PowerShell のConnect SharePoint」を参照してください。](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+このトピックの手順では、SharePoint Online に接続する必要があります。 手順については、「[オンライン PowerShell をSharePointするConnect」を](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)参照してください。
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>手順 1: PowerShell を使用して新しいサイト コレクションを作成する
 
-PowerShell を使用して複数のサイトを作成し、.csvコードを使用して作成するファイルを作成メモ帳。 この手順では、角かっこで示されているプレースホルダー情報を、独自のサイトおよびテナント固有の情報に置き換える必要があります。 このプロセスでは、1 つのファイルを作成し、そのファイルを使用する 1 つの PowerShell コマンドを実行できます。 これにより、繰り返し可能な操作と移植可能な操作の両方が実行され、長いコマンドを SharePoint Online 管理シェルに入力した場合に発生するエラーの多くが排除されます。 この手順には 2 つの部分があります。 最初に、.csv ファイルを作成し、その .csv ファイルを PowerShell を使用して参照し、その内容を使用してサイトを作成します。
+PowerShell を使用して複数のサイトを作成し、メモ帳サンプル コードを使用して作成する.csv ファイルを作成します。 この手順では、角かっこで囲まれたプレースホルダー情報を、独自のサイトおよびテナント固有の情報に置き換えます。 このプロセスでは、1 つのファイルを作成し、そのファイルを使用する 1 つの PowerShell コマンドを実行できます。 これにより、繰り返し可能な操作と移植可能な操作の両方が実行され、すべてではないにしても、SharePoint Online Management Shell に長いコマンドを入力することで発生する可能性のある多くのエラーが解消されます。 この手順には 2 つの部分があります。 最初に.csv ファイルを作成し、PowerShell を使用してその.csv ファイルを参照します。このファイルは、その内容を使用してサイトを作成します。
 
-PowerShell コマンドレットは、.csv ファイルをインポートし、ファイルの最初の行を列ヘッダーとして読み取る中かっこ内のループにパイプ処理します。 PowerShell コマンドレットは、残りのレコードを反復処理し、レコードごとに新しいサイト コレクションを作成し、列ヘッダーに従ってサイト コレクションのプロパティを割り当てします。
+PowerShell コマンドレットは、.csv ファイルをインポートし、ファイルの最初の行を列ヘッダーとして読み取る中かっこ内のループにパイプします。 その後、PowerShell コマンドレットは残りのレコードを反復処理し、レコードごとに新しいサイト コレクションを作成し、列ヘッダーに従ってサイト コレクションのプロパティを割り当てます。
 
 ### <a name="create-a-csv-file"></a>.csv ファイルの作成
 
 > [!NOTE]
-> リソース クォータ パラメーターは、従来のサイトでのみ機能します。 モダン サイトでこのパラメーターを使用すると、廃止されたという警告メッセージが表示されることがあります。
+> リソース クォータ パラメーターは、クラシック サイトでのみ機能します。 モダン サイトでこのパラメーターを使用すると、非推奨になったという警告メッセージが表示される場合があります。
 
 1. メモ帳を開き、次のテキスト ブロックを貼り付けます。
 
@@ -57,24 +57,24 @@ PowerShell コマンドレットは、.csv ファイルをインポートし、�
    owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
    ```
 
-   テナント *は* テナントの名前であり、所有者はプライマリ  サイト コレクション管理者の役割を付与するテナントのユーザーのユーザー名です。
+   *テナントはテナント* の名前であり、*所有者* はプライマリ サイト コレクション管理者のロールを付与するテナント上のユーザーのユーザー名です。
 
-   (Ctrl キーを押しながら H キーを押すと、メモ帳を一括置換できます)。
+   (メモ帳を使用して一括置換を高速化する場合は、Ctrl + H キーを押すことができます)。
 
-2. デスクトップにファイルを [ファイル名] として **SiteCollections.csv**。
+2. デスクトップにファイルを **SiteCollections.csv** として保存します。
 
 > [!TIP]
-> このスクリプト ファイルまたは他の .csv または Windows PowerShell スクリプト ファイルを使用する前に、余分な文字や印刷されていない文字が含まれるのを確認してください。 Word でファイルを開き、リボンで [段落] アイコンをクリックすると、印刷されない文字が表示されます。 印刷されない余分の文字がないようにしてください。 たとえば、ファイルの末尾の最後の文字の後ろに段落記号があってはなりません。
+> このスクリプト ファイルまたはその他の.csvまたはWindows PowerShell スクリプト ファイルを使用する前に、余分な文字や非印刷文字がないことを確認することをお勧めします。 Word でファイルを開き、リボンで [段落] アイコンをクリックすると、印刷されない文字が表示されます。 印刷されない余分の文字がないようにしてください。 たとえば、ファイルの末尾の最後の文字の後ろに段落記号があってはなりません。
 
 ### <a name="run-the-windows-powershell-command"></a>Windows PowerShell コマンドの実行
 
-1. プロンプトにWindows PowerShell、次のコマンドを入力またはコピーして貼り付け、Enter キーを押します。
+1. Windows PowerShell プロンプトで、次のコマンドを入力またはコピーして貼り付け、Enter キーを押します。
 
    ```powershell
    Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
    ```
 
-   *MyAlias がユーザー* エイリアスと等しい場合。
+   *ここで、MyAlias は* ユーザーエイリアスと等しくなります。
 
 2. WindowsPowerShell プロンプトが再度表示されるまで待機します。これには 1 - 2 分かかる場合があります。
 
@@ -84,15 +84,15 @@ PowerShell コマンドレットは、.csv ファイルをインポートし、�
    Get-SPOSite -Detailed | Format-Table -AutoSize
    ```
 
-4. リスト内の新しいサイト コレクションに注意してください。 サンプル CSV ファイルを使用すると、 **TeamSite01、Blog01**、 **Project01**、 **Community01** のサイト コレクション **が表示されます。**
+4. 一覧の新しいサイト コレクションに注目してください。 この CSV ファイルの例を使用すると、**TeamSite01、Blog01**、**Project01**、**Community01** というサイト コレクションが表示されます。
 
-これで完了です。 作成したファイルファイルと 1 つの .csvコマンドを使用して、複数のサイト コレクションWindows PowerShellしました。 これで、ユーザーを作成してこれらのサイトに割り当てる準備ができました。
+これで完了です。 作成した.csv ファイルと 1 つのWindows PowerShell コマンドを使用して、複数のサイト コレクションを作成しました。 これで、ユーザーを作成してこれらのサイトに割り当てる準備ができました。
 
 ## <a name="step-2-add-users-and-groups"></a>手順 2:ユーザーおよびグループの追加
 
 ここでは、ユーザーを作成し、サイト コレクションのグループに追加します。次に、.csv ファイルを使用して、新しいグループとユーザーを一括アップロードします。
 
-次の手順では、例のサイト TeamSite01、Blog01、Project01、および Community01 を引き続き使用します。
+次の手順では、TeamSite01、Blog01、Project01、Community01 のサンプル サイトを引き続き使用します。
 
 ### <a name="create-csv-and-ps1-files"></a>.csv ファイルおよび .ps1 ファイルの作成
 
@@ -110,9 +110,9 @@ PowerShell コマンドレットは、.csv ファイルをインポートし、�
    https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
    ```
 
-   テナント *がテナント* 名と等しい場所。
+   *テナントがテナント* 名と等しい場合。
 
-2. ファイルをデスクトップに保存します **GroupsAndPermissions.csv**。
+2. ファイルをデスクトップに **GroupsAndPermissions.csv** として保存します。
 
 3. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。
 
@@ -128,9 +128,9 @@ PowerShell コマンドレットは、.csv ファイルをインポートし、�
    Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
    ```
 
-   テナント *がテナント* 名と等しく、ユーザー *名が* 既存のユーザーのユーザー名と等しい場合。
+   *テナントがテナント* 名と等しく、*ユーザー名* が既存のユーザーのユーザー名と等しい場合。
 
-4. ファイルをデスクトップに保存します **Users.csv**。
+4. ファイルをデスクトップに **Users.csv** として保存します。
 
 5. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。
 
@@ -139,9 +139,9 @@ PowerShell コマンドレットは、.csv ファイルをインポートし、�
    Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
    ```
 
-   ここで、MyAlias は現在ログオンしているユーザーのユーザー名と等しくなります。
+   ここで、MyAlias は、現在ログオンしているユーザーのユーザー名と等しくなります。
 
-6. ファイルをデスクトップに保存します **UsersAndGroups.ps1**。 これは、単純な Windows PowerShell スクリプトです。
+6. ファイルをデスクトップに **UsersAndGroups.ps1** として保存します。 これは、単純な Windows PowerShell スクリプトです。
 
 これで、UsersAndGroup.ps1 スクリプトを実行して複数のサイト コレクションにユーザーとグループを追加する準備ができました。
 
@@ -155,7 +155,7 @@ PowerShell コマンドレットは、.csv ファイルをインポートし、�
    Set-ExecutionPolicy Bypass
    ```
 
-3. 確認プロンプトで、 **Y キーを押します**。
+3. 確認プロンプトで Y キーを押 **します**。
 
 4. Windows PowerShell プロンプトで、次のコマンドを入力するか、コピーして貼り付け、Enter キーを押します。
 
@@ -163,7 +163,7 @@ PowerShell コマンドレットは、.csv ファイルをインポートし、�
    c:\users\MyAlias\desktop\UsersAndGroups.ps1
    ```
 
-   *MyAlias がユーザー* 名と等しい場所。
+   ここで *、MyAlias は* ユーザー名と等しくなります。
 
 5. プロンプトが戻るまで待機してから、次に進みます。最初に、作成したとおりにグループが表示されます。次に、ユーザーを追加するたびに、グループの一覧が繰り返し表示されます。
 

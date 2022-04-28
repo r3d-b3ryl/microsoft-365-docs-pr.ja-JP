@@ -1,10 +1,10 @@
 ---
-title: エンタープライズ テストMicrosoft 365のセキュリティMicrosoft 365強化
+title: エンタープライズ テスト環境のMicrosoft 365のMicrosoft 365セキュリティの強化
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
@@ -17,62 +17,62 @@ ms.custom:
 - admindeeplinkDEFENDER
 - admindeeplinkSPO
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境Microsoft 365セキュリティ設定Microsoft 365追加のセキュリティ設定を有効にします。
-ms.openlocfilehash: bf64bb23192eb4a4d2b3700a2b0c4390efc1f53e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境でMicrosoft 365追加のMicrosoft 365セキュリティ設定を有効にします。
+ms.openlocfilehash: 4c69fadd3fb3e6744fad850e76282ea2339f48ee
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327911"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100723"
 ---
-# <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テストMicrosoft 365のセキュリティMicrosoft 365強化
+# <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境のMicrosoft 365のMicrosoft 365セキュリティの強化
 
-*このテスト ラボ ガイドは、エンタープライズ テスト環境Microsoft 365にのみ使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ テスト環境のMicrosoft 365にのみ使用できます。*
 
-この記事の手順では、エンタープライズ テスト環境Microsoft 365セキュリティを強化するために、Microsoft 365設定を構成します。
+この記事の手順では、エンタープライズ テスト環境のMicrosoft 365のセキュリティを向上させるために、追加のMicrosoft 365設定を構成します。
 
 ![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > [ここ](../downloads/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事へのビジュアル マップを確認してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境のMicrosoft 365を構築する
 
-最小限の要件で、Microsoft 365セキュリティを軽量な方法で構成する場合は、「Lightweight 基本構成」の手順[に従います](lightweight-base-configuration-microsoft-365-enterprise.md)。
+最小限の要件で軽量な方法でMicrosoft 365セキュリティの強化を構成する場合は、「[Lightweight 基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従います。
   
-シミュレートされたエンタープライズでセキュリティMicrosoft 365を構成する場合は、「パススルー認証」[の手順に従います](pass-through-auth-m365-ent-test-environment.md)。
+シミュレートされたエンタープライズでセキュリティの強化Microsoft 365を構成する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従います。
   
 > [!NOTE]
-> セキュリティのMicrosoft 365テストでは、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメイン サービス (AD DS) フォレストのディレクトリ同期を含む、シミュレートされたエンタープライズ テスト環境は必要とされません。 これはオプションとして提供され、一般的な組織を表す環境で、自動ライセンスとグループ メンバーシップをテストして実験できます。 
+> セキュリティの強化Microsoft 365テストでは、シミュレートされたエンタープライズ テスト環境は必要ありません。これには、インターネットに接続されたシミュレートされたイントラネットと、Active Directory Domain Services (AD DS) フォレストのディレクトリ同期が含まれます。 ここでは、自動化されたライセンスとグループ メンバーシップをテストし、一般的な組織を表す環境で実験できるように、オプションとして提供されています。 
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>フェーズ 2: セキュリティの強化Microsoft 365構成する
 
-このフェーズでは、エンタープライズ テスト環境Microsoft 365セキュリティMicrosoft 365強化できます。 詳細と設定については、「セキュリティを強化 [するテナントを構成する」を参照してください](/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
+このフェーズでは、エンタープライズ テスト環境のMicrosoft 365のMicrosoft 365セキュリティを強化します。 その他の詳細と設定については、「 [セキュリティを強化するためにテナントを構成する」を参照してください](/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
 
-### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>最新SharePointをサポートしないアプリをブロックする Web サイトを構成する
+### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>最新の認証をサポートしていないアプリをブロックするようにオンラインSharePoint構成する
 
-最新の認証をサポートしないアプリには、[](../security/office-365-security/microsoft-365-policies-configurations.md)ID とデバイス アクセス構成を適用できません。これは、Microsoft 365 サブスクリプションとそのデジタル資産をセキュリティ保護する重要な要素です。 
+先進認証をサポートしていないアプリには[、ID とデバイス アクセスの構成](../security/office-365-security/microsoft-365-policies-configurations.md)を適用することはできません。これは、Microsoft 365 サブスクリプションとそのデジタル資産をセキュリティで保護する重要な要素です。 
 
-1. [管理者] に<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>し、グローバル管理者アカウントMicrosoft 365テスト ラボ サブスクリプションにサインインします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に移動し、グローバル管理者アカウントを使用してMicrosoft 365テスト ラボ サブスクリプションにサインインします。
     
-  - 軽量のテスト環境を使用しているMicrosoft 365ローカル コンピューターからサインインします。
+  - 軽量Microsoft 365テスト環境を使用している場合は、ローカル コンピューターからサインインします。
     
-  - テスト環境でシミュレートされたエンタープライズ Microsoft 365を使用している場合は、[Azure portal](https://portal.azure.com) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。
+  - シミュレートされたエンタープライズ Microsoft 365 テスト環境を使用している場合は、[Azure portal](https://portal.azure.com)を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。
  
-2. 新 **しい [Microsoft 365 管理センター**] タブの左側のナビゲーション  ウィンドウの [管理センター] で、[管理センター] をクリック **SharePoint。**
-3. [管理センター] **タブSharePointで**、[**PoliciesAccess コントロール] を** > <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**選択します**</a>。
-4. [ **最新の認証をサポートしないアプリ] を** 選択し、[アクセスをブロックする] **を** 選択し、[保存] を **選択します**。
+2. 新しい **[Microsoft 365 管理センター**] タブの左側のナビゲーション ウィンドウの [**管理センター**] で、[**SharePoint**] をクリックします。
+3. 新しい **SharePoint管理センター** タブで、**PoliciesAccess コントロールを** > 選択します。<a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank"></a>
+4. **[先進認証をサポートしていないアプリ**] を選択し、[**アクセスのブロック**] を選択して、[保存] を選択 **します**。
 
 
-### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>[Defender for Office 365] SharePoint、OneDrive for Business、およびMicrosoft Teams
+### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>SharePoint、OneDrive for Business、Microsoft TeamsのDefender for Office 365を有効にする
 
-悪意のあるファイルOffice 365共有SharePoint、OneDrive、Microsoft Teamsを保護します。
+SharePoint、OneDrive、Microsoft TeamsのDefender for Office 365は、悪意のあるファイルを誤って共有しないように組織を保護します。
 
-1. コンプライアンス センターの <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">セキュリティ &に移動し</a> 、グローバル管理者アカウントでサインインします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">セキュリティ & コンプライアンス センター</a>に移動し、グローバル管理者アカウントでサインインします。
 
-2. 左側のナビゲーション ウィンドウの [脅威の管理] **で、[** ポリシー] をクリックし、[添付ファイル] **セーフクリックします**。 
+2. 左側のナビゲーション ウィンドウの [**脅威の管理**] で[**ポリシー**]、[**添付ファイルのセーフ**] の順にクリックします。 
 
-3. [**ファイルの保護] SharePoint、OneDrive、およびMicrosoft Teams**。 [**ATP を有効にする] をSharePoint、OneDrive、およびMicrosoft Teams**。
+3. [**SharePoint、OneDrive、およびMicrosoft Teams内のファイルを保護** する] の下にあります。 **[SharePoint、OneDrive、Microsoft Teamsの ATP を有効にする**] を選択します。
 
 4. **[保存]** をクリックします。
 
@@ -81,45 +81,45 @@ ms.locfileid: "63327911"
 
 マルウェアは、ウイルスとスパイウェアから構成されます。 ウイルスは、他のプログラムやデータに感染し、感染できるプログラムを探してコンピューター全体に蔓延します。 スパイウェアは、サインイン情報および個人データなどの個人情報を収集して作成者に送り返すマルウェアです。 
 
-Microsoft 365には、悪意のあるソフトウェアから受信メッセージと送信メッセージを保護し、スパムから保護するのに役立つ組み込みのマルウェアおよびスパム フィルター機能があります。 詳細については、「 [Anti-spam &マルウェア対策」を参照してください](../security/office-365-security/anti-spam-and-anti-malware-protection.md)。
+Microsoft 365には、悪意のあるソフトウェアから受信メッセージと送信メッセージを保護し、スパムから保護するのに役立つマルウェアとスパムフィルター機能が組み込まれています。 詳細については、「 [スパム対策&マルウェア対策の保護](../security/office-365-security/anti-spam-and-anti-malware-protection.md)」を参照してください。
 
-一般的な添付ファイルの種類を持つファイルに対してマルウェア対策処理が実行されるのを確認するには、次の手順を実行します。
+一般的な添付ファイルの種類を持つファイルに対してマルウェア対策処理が確実に実行されるようにするには、次の手順を実行します。
 
-1. ブラウザーの [戻る] ボタンをクリックして、[ポリシー] ページに **戻** ります。
-2. [マルウェア **対策] をクリックします**。
-3. Default という名前のポリシーを **ダブルクリックします**。
-4. [マルウェア対策 **ポリシー] ウィンドウで、[** マルウェア対策] **設定**。
-4. [共通 **の添付ファイルの種類] フィルターで**、[ **オン] を選択** し、[保存] を **クリックします**。
+1. ブラウザーの [戻る] ボタンをクリックして、[ **ポリシー** ] ページに戻ります。
+2. [ **マルウェア対策**] をクリックします。
+3. 既定という名前のポリシーをダブルクリック **します**。
+4. [**マルウェア対策ポリシー**] ウィンドウで、[**設定**] をクリックします。
+4. **[一般的な添付ファイルの種類] フィルター** で [**オン**] を選択し、[**保存**] をクリックします。
 
 
 ## <a name="phase-3-examine-the-security-dashboard"></a>フェーズ 3: セキュリティ ダッシュボードを調べる
 
-Microsoft 365 の脅威管理は、組織のデータへのモバイル デバイス アクセスを制御および管理し、データ損失から組織を保護し、悪意のあるソフトウェアやスパムから受信および送信メッセージを保護するのに役立ちます。 また、脅威管理を使用して、ドメインの評判を保護し、送信者がドメインからアカウントを悪意を持ってスプーフィングするかどうかを判断します。 
+Microsoft 365の脅威管理は、組織のデータへのモバイル デバイス アクセスを制御および管理し、データ損失から組織を保護し、悪意のあるソフトウェアやスパムから受信メッセージと送信メッセージを保護するのに役立ちます。 また、脅威管理を使用して、ドメインの評判を保護し、送信者がドメインのアカウントを悪意を持ってスプーフィングしているかどうかを判断します。 
 
-セキュリティ ダッシュボードを表示するには、次の方法を実行します。
+セキュリティ ダッシュボードを表示するには:
 
-1. 必要に応じて、コンプライアンス センターのセキュリティ <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">&に移動</a> し、グローバル管理者アカウントでサインインします。
+1. 必要に応じて、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">セキュリティ & コンプライアンス センター</a> に移動し、グローバル管理者アカウントでサインインします。
 
-2. 左側のナビゲーション ウィンドウの [脅威の管理] **で、[ダッシュボード**] を **クリックします**。
+2. 左側のナビゲーション ウィンドウの [ **脅威の管理**] で、[ **ダッシュボード**] をクリックします。
 
-ダッシュボードのすべてのカードを詳しくは、提供された情報を理解してください。
+ダッシュボード上のすべてのカードをよく見て、提供された情報を理解してください。
 
-詳細については、「セキュリティ ダッシュボード [」を参照してください](../security/office-365-security/security-dashboard.md)。
+詳細については、「 [セキュリティ ダッシュボード](../security/office-365-security/security-dashboard.md)」を参照してください。
 
 
-## <a name="phase-4-examine-microsoft-secure-score"></a>フェーズ 4: Microsoft Secure Score を調べる
+## <a name="phase-4-examine-microsoft-secure-score"></a>フェーズ 4: Microsoft セキュリティ スコアを調べる
 
-Microsoft Secure Score は、サブスクリプションで利用可能な機能に対する現在のレベルを示す、セキュリティの姿勢を数値で示します。 また、スコアを向上させるために実行できる改善アクションの一覧も表示されます。
+Microsoft Secure Score では、セキュリティ体制が数値として表示されます。これは、サブスクリプションで使用可能な機能に対する現在のレベルを示します。 また、スコアを向上させるために実行できる改善アクションの一覧も表示されます。
 
-1. ブラウザーで新しいタブを作成し、ポータルの [セキュリティで保護Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">]</a> を **クリックします**。
-2. [概要 **] タブ**  で、現在の Secure Score と、それがグローバル平均とサブスクリプションと同じ数のライセンスと比較する方法をメモします。
-3. [改善アクション **] タブ** で、スコアを上げするために実行できるアクションの一覧を確認します。
+1. ブラウザーで新しいタブを作成し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動して、[**セキュリティで保護されたスコア**] をクリックします。
+2. [ **概要**  ] タブで、現在のセキュア スコアと、それがグローバル平均と比較される方法と、同様の数のライセンスを持つサブスクリプションに注目します。
+3. [ **改善アクション** ] タブで、スコアを上げるために実行できるアクションの一覧を確認します。
 
-詳細については、「 [Microsoft Secure Score」を参照してください](../security/defender/microsoft-secure-score.md)。
+詳細については、 [Microsoft セキュリティ スコア](../security/defender/microsoft-secure-score.md)に関するページを参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
-テスト環境 [の追加情報保護](m365-enterprise-test-lab-guides.md#information-protection) 機能と機能について説明します。
+テスト環境の [追加情報保護機能](m365-enterprise-test-lab-guides.md#information-protection) と機能について説明します。
 
 ## <a name="see-also"></a>関連項目
 

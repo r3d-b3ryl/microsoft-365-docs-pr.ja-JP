@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso オンプレミス IT インフラストラクチャの基本構造と、大企業向け Microsoft 365 が企業のビジネス ニーズをどのように満たすかを理解します。
-ms.openlocfilehash: 94118a66f7bb1468a8f27816151a3b4d087b5703
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
-ms.translationtype: HT
+ms.openlocfilehash: 5dc47898aa0499bc4b62d22d37689d872116a9e7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111665"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101361"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso の IT インフラストラクチャおよびビジネス ニーズ
 

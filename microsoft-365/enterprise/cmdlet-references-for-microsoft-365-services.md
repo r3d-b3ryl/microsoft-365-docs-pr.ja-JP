@@ -2,7 +2,7 @@
 title: Microsoft 365 サービスのコマンドレットリファレンス
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/16/2020
 audience: ITPro
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Azure AD、Exchange Online、SharePoint Online、Skype for Business Online の Microsoft 365 PowerShell コマンドレット リファレンスに関するトピックをご覧ください。
-ms.openlocfilehash: ab1452ffafd3d5a095063903fab6a9423705c08d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 96c03bed9275d3e48164ac5ac5ba57d78b36c634
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204169"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101383"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 サービスのコマンドレットリファレンス
 

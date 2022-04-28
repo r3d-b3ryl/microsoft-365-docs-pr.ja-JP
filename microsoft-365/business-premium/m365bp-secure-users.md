@@ -1,14 +1,14 @@
 ---
-title: セキュリティに関する推奨事項がユーザーに与える影響
+title: Microsoft 365 Business Premium がビジネスにどのように役立つか
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,63 +23,70 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 Business Premium のセキュリティ推奨事項がユーザーに与える影響とデータの保護について説明します。
-ms.openlocfilehash: 5704e4c6b0675e8d69ffb2a81b8b6d7bf57bb0b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
+description: Microsoft 365 Business Premium の生産性とセキュリティを活用してビジネスを支援する方法について説明します。
+ms.openlocfilehash: f9501ce8a478af45d8d1b79db1411575636eda36
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331043"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098134"
 ---
-# <a name="how-security-recommendations-affect-your-users"></a>セキュリティに関する推奨事項がユーザーに与える影響
+# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Microsoft 365 Business Premium がビジネスにどのように役立つか
 
-このソリューションの Microsoft 365 のセキュリティに関する推奨事項により、ハッカーが環境にアクセスするのがはるかに困難になります。 トレードオフは、ユーザーが、このより安全な環境で作業する方法を認識する必要があるという点です。 少し余分な忍耐が必要な場合は理解していますが、組織を保護する価値があります。
+Microsoft 365 Business Premium は、中小企業が以前よりも効率的かつ安全に作業できるようにする、コスト効率の高いソリューションです。 この記事では、Microsoft 365 Business Premium がビジネスにどのように役立つかについて説明しており、次のようなセクションがあります:
 
-:::image type="content" source="media/m365-democracy-users.png" alt-text="デバイスの重要なポイントを要約した図。":::
+- [ビデオ: Microsoft 365 Business Premium の 5 つの主な利点。](#video-top-5-benefits-of-microsoft-365-business-premium)
+- [生産性と高度なセキュリティ機能](#productivity-and-security)を使用すると、デバイス間で、またどこからでもビジネスをより安全に実行できます
+- より安全な環境を維持しながら生産的に作業する方法を[チームとスタッフ全員にトレーニングを提供するリソース](#resources-to-train-your-users)
+- さまざまな種類の脅威と、日常的な作業で脅威から保護する方法について説明する[ダウンロード可能なデジタル脅威ガイド](#download-the-digital-threats-guide)
+- [次の手順](#next-steps)
 
-## <a name="use-secure-email-practices"></a>セキュリティで保護された電子メールのプラクティスを使用する
+## <a name="video-top-5-benefits-of-microsoft-365-business-premium"></a>ビデオ: Microsoft 365 Business Premium の 5 つの主な利点。
 
-すべてのユーザーは、電子メールを安全に保つために、次の電子メールプラクティスを認識して使用する必要があります。
+次のビデオを見て、Microsoft 365 Business Premium を使用してビジネスの生産性とセキュリティを強化する方法を確認してください。 <p>
 
-- 認証アプリで多要素認証を使用するメールを設定します。
-- 正規のメールを確認し、365 Protection 用 Defender の高度なフィッシングOffice探します。
-- 安全なリンクと安全な添付ファイルによって確認された安全なリンクと添付ファイルのみを開きます。
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
-多要素認証 [とフィッシングなどの](m365bp-multifactor-authentication.md) 攻撃 [について詳しくは、次のページをご覧ください](m365-campaigns-phishing-and-attacks.md)。
+> [!TIP]
+> 詳細については、「[Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab)」を参照してください。
 
-自分と [チームの](m365-campaigns-protect-campaign-infographic.md) メンバーのためのヒントを含むインフォグラフィックをダウンロードします。
+## <a name="productivity-and-security"></a>生産性とセキュリティ
 
-## <a name="set-up-iphones-and-android-devices"></a>iPhone と Android デバイスのセットアップ
+Microsoft 365 Business Premium には、お気に入りの Office 生産性アプリ、Microsoft Teams などのコラボレーション ツール、エンタープライズ レベルのセキュリティ、ID、デバイス管理ソリューションが含まれています。 Microsoft 365 Business Premium を使用すると、ビジネスをより安全に、デバイス間で、どこからでも実行できます。 Microsoft 365 Business Premium には以下が含まれます:
 
-環境に追加するユーザーはすべて、 [iPhone と Android](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) デバイスをセットアップして安全に動作するために数分かかる必要があります。
+- 御社の Windows デバイスに対する **Windows 10 と 11 Pro** のアップグレード
+- コンピューター (Windows と Mac) およびモバイル デバイス (Windows、iOS、Android) にインストールできる **Office アプリ**。 また、Windows デバイスの Publisher と Access も入手できます。
+- メール、予定表、会議、共同作業のための **Microsoft Teams、Outlook、Exchange**
+- ビジネス ファイルを保存および管理するための **SharePoint と OneDrive**
+- フィッシング、マルウェア、ランサムウェア保護などの **脅威からの高度な保護**
+- お客様とお客様の機密情報へのアクセスを保護および制御するための **コンプライアンス機能とプライバシー機能**
+- セキュリティ チームがコンピューター、タブレット、電話を最新の状態に保ち、セキュリティで保護できるようにする **デバイス管理機能**
 
-- 認証アプリで多要素認証を使用するデバイスを設定します。
-- アプリ ストアから Outlook Mobile、Word、OneDrive、その他の Microsoft アプリを含む Microsoft モバイル アプリを使用します。 iPhone および Android デバイスに含まれるネイティブ メール アプリはサポートされていません。 
-- ユーザーがデバイスのロックを解除するには、PIN が必要です。
+> [!TIP]
+> Microsoft 365 Business Premium に含まれる内容の詳細については、「[中小規模ビジネス向け Microsoft 365 ユーザー サブスクリプション スイート](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM)」を参照してください。
 
-これらの設定が完了すると、メールを含むこれらのデバイス上の組織データにアクセスするときに、認証アプリの使用を求めるメッセージがユーザーに表示されます。
+## <a name="resources-to-train-your-users"></a>ユーザーをトレーニングするためのリソース
 
-## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>BYOD Mac と Windows 10 PC を最新の状態に保つ
+このライブラリで提供されているセキュリティに関するおすすめ候補により、サイバー攻撃者が環境にアクセスすることがはるかに困難になります。 しかし、セキュリティ戦略の重要な要素として、社内でシステムを定期的に使用するユーザー&mdash;へのトレーニングがあります。 ユーザーは、防御の最前線になるのに役立ちます。 誰もが、より安全な環境を維持しながら、生産的に作業する方法を知る必要があります。 
 
-また、ユーザーが主な作業デバイスを最新の状態に保つ必要があります。
+組織内のすべてのユーザーが次の作業を行うのに役立つリソースを利用できます:
 
-- デスクトップ アプリの最新バージョンをインストールOffice、プロンプトが表示されたら、更新プログラムを最新の状態に保つ必要があります。
-- Windows の更新プログラムなど、オペレーティング システムの更新プログラムの上に残る。
+- [デバイスを保護する](m365bp-devices-overview.md)
+- [メールをより安全に使用する](m365bp-protect-email-overview.md)
+- [共同作業をし、情報をより安全に共有する](m365bp-collaborate-share-securely.md)
 
-管理 [されていない Windows 10 および Mac](m365bp-protect-pcs-macs.md) デバイスの場合、ユーザーは基本的なセキュリティ機能が有効になっているか確認する責任があります。
+このライブラリのおすすめ候補を使用して、ユーザーの生産性と作業の安全性を高めることができます。
 
-**BYOD Windows 10 および Mac デバイスで基本的なセキュリティ機能を有効にする**
+## <a name="download-the-digital-threats-guide"></a>デジタル脅威ガイドをダウンロードする
 
-|**Windows 10**|**Mac**|
-|:-----|:------|
-|BitLocker デバイス保護を有効にする<p><p> [Windows Defenderを維持する] <p>Windows ファイアウォールを有効にする| FileVault を使用して Mac ディスクを暗号化する <p><p>信頼性の高いウイルス対策ソフトウェアを使用する <p>ファイアウォール保護を有効にする|
+デジタル脅威ガイドでは、さまざまな種類の脅威と、これらの脅威から保護するためにユーザーとスタッフができることについて説明します。 このビジュアル ガイドを自分とチームにダウンロードします。
 
-これらの推奨事項の詳細については、「アカウントとデバイスをハッカーやマルウェアから保護 [する」を参照してください](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)。
+[:::image type="content" source="media/m365bp-whatuserscandotosecure.png" alt-text="ダウンロード可能なサムネイル。":::](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf)
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Microsoft Teams、OneDrive、SharePoint Online、その他のツールを使用した共同作業
+[PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
 
-ユーザーは、組織のファイルを Microsoft 365 以外の場所で共有して保存する場合があります。 Microsoft 365 を使用すると、可能な限り簡単に共同作業を行い、安全に共有できます。 ファイルと [ビデオは](share-files-and-videos.md) 、Microsoft Teams、OneDrive、Stream、およびファイル内から直接共有できます。 これらのツール内からの共有は、データの漏洩を防ごうのに役立ちます。 機密データに追加の保護を追加して、組織外での共有を防止できます。
+## <a name="next-steps"></a>次の手順
 
-## <a name="set-up-managed-windows-10-devices"></a>管理 Windows 10 デバイスのセットアップ
+1. [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) または [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md)。
 
-最も重要なスタッフ メンバーは、管理する新しく取得した Windows 10 デバイスを使用することをお勧めします。 これらのデバイスを管理およびセキュリティ保護 [する方法を示します](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)。 これにより、ハッカーにとって最も価値の高いターゲットであるスタッフメンバーが最も多くの保護を受け取る。
+2. [セットアップ プロセスを再開してください](m365bp-setup-overview.md)。

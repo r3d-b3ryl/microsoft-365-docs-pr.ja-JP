@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73afd0751e34fbb020019e6f28056c9f2a935c07
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 3c517d9adcdc2181b43c430a92be3de9ac889dd6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788592"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101119"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のパフォーマンス アナライザー
 
@@ -31,7 +31,7 @@ ms.locfileid: "64788592"
 **プラットフォーム**
 - Windows
 
-**パフォーマンス アナライザー Microsoft Defender ウイルス対策とは**
+## <a name="what-is-microsoft-defender-antivirus-performance-analyzer"></a>パフォーマンス アナライザー Microsoft Defender ウイルス対策とは
 
 場合によっては、特定のファイルやフォルダーをスキャンするときに、Microsoft Defender ウイルス対策のパフォーマンスを調整する必要がある場合があります。 パフォーマンス アナライザーは、個々のエンドポイントでパフォーマンスの問題を引き起こしている可能性があるファイル、ファイル拡張子、およびプロセスを特定するのに役立つ PowerShell コマンド ライン ツールです。 この情報は、パフォーマンスの問題をより適切に評価し、修復アクションを適用するために使用できます。
 
@@ -74,28 +74,30 @@ ms.locfileid: "64788592"
 > [!NOTE]
 > 記録を実行しているときに、"パフォーマンス レコーダーが既に記録されているため、パフォーマンス記録 Windowsを開始できません" というエラーが表示された場合は、次のコマンドを実行して、新しいコマンドを使用して既存のトレースを停止します:**wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
-### <a name="performance-tuning-data-and-information"></a>パフォーマンスチューニングのデータと情報
+## <a name="performance-tuning-data-and-information"></a>パフォーマンスチューニングのデータと情報
 
 クエリに基づいて、ユーザーはスキャン数、期間 (合計/最小/平均/最大/中央値)、パス、プロセス、およびスキャンの理由のデータを表示できます。 次の図は、スキャンの影響を受けるための上位 10 ファイルの単純なクエリの出力例を示しています。
 
 :::image type="content" source="images/example-output.png" alt-text="基本的な TopFiles クエリの出力例" lightbox="images/example-output.png":::
 
-### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>その他の機能: CSV と JSON へのエクスポートと変換
+## <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>その他の機能: CSV と JSON へのエクスポートと変換
 
 パフォーマンス アナライザーの結果をエクスポートして、CSV または JSON ファイルに変換することもできます。
 サンプル コードを使用して "エクスポート" と "変換" のプロセスを記述する例については、以下を参照してください。
 
-#### <a name="for-csv"></a>CSV の場合
+### <a name="for-csv"></a>CSV の場合
 
 - **エクスポートするには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
 
 - **変換するには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
-#### <a name="for-json"></a>JSON の場合
+### <a name="for-json"></a>JSON の場合
 
 - **変換するには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>要件
+他のデータ処理システムでエクスポートするためのマシン読み取り可能な出力を確保するには、Get-MpPerformanceReport に -Raw パラメーターを使用することをお勧めします。 詳細については、以下を参照してください
+
+## <a name="requirements"></a>要件
 
 パフォーマンス アナライザー Microsoft Defender ウイルス対策次の前提条件があります。
 
@@ -157,6 +159,12 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 
 上記のコマンドは、Server02 でパフォーマンス記録を収集し (パラメーター セッションの引数$sで指定)、指定されたパス **(Server02 の C:\LocalPathOnServer02\trace.etl** ) に保存します。
 
+##### <a name="example-3-collect-a-performance-recording-in-non-interactive-mode"></a>例 3: 非対話型モードでパフォーマンス記録を収集する
+```powershell
+New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
+```
+上記のコマンドは、パラメーター -Seconds で指定された期間のパフォーマンス記録を秒単位で収集します。 これは、対話やプロンプトを必要としないバッチ コレクションを実行するユーザーに推奨されます。
+
 #### <a name="parameters-new-mpperformancerecording"></a>パラメーター: New-MpPerformanceRecording
 
 ##### <a name="-recordto"></a>-RecordTo
@@ -179,6 +187,17 @@ Microsoft Defender ウイルス対策パフォーマンス記録を作成して�
 Type: PSSession[]
 Position: 0
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+##### <a name="-seconds"></a>-Seconds
+パフォーマンス記録の継続時間を秒単位で指定します。 これは、対話やプロンプトを必要としないバッチ コレクションを実行するユーザーに推奨されます。
+
+```yaml
+Type: Int32
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -218,6 +237,7 @@ Get-MpPerformanceReport    [-Path] <String>
     [-TopScansPerFilePerProcess <Int32>]
 ]
 [-MinDuration <String>]
+[-Raw]
 ```
 
 #### <a name="description-get-mpperformancereport"></a>説明: Get-MpPerformanceReport
@@ -260,6 +280,12 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensio
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
 ```
+##### <a name="example-5-using--raw-parameter"></a>例 5: -Raw パラメーターの使用
+
+```powershell
+Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
+```
+上記のコマンドで -Raw を使用すると、出力をコンピューターで読み取り可能にし、JSON などのシリアル化形式に簡単に変換できます。
 
 #### <a name="parameters-get-mpperformancereport"></a>パラメーター: Get-MpPerformanceReport
 
@@ -286,8 +312,19 @@ Default value: None
 Accept pipeline input: True
 Accept wildcard characters: False
 ```
+##### <a name="-raw"></a>-Raw
 
-### <a name="-topextensions"></a>-TopExtensions
+パフォーマンス記録の出力をコンピューターで読み取り可能にし、JSON などのシリアル化形式に容易に変換できるようにする必要があることを指定します (たとえば、Convert-to-JSON コマンドを使用)。 これは、他のデータ処理システムでのバッチ処理に関心があるユーザーに推奨されます。 
+
+```yaml
+Type: <SwitchParameter>
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+##### <a name="-topextensions"></a>-TopExtensions
 
 出力する上位の拡張機能の数を指定します。"Duration" で並べ替えられます。
 
@@ -299,7 +336,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess
+##### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess
 
 "Duration" で並べ替えられた各上位プロセスの出力する上位拡張機能の数を指定します。
 
@@ -311,7 +348,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfiles"></a>-TopFiles
+##### <a name="-topfiles"></a>-TopFiles
 
 上位ファイル レポートを要求し、出力する上位ファイルの数を "Duration" で並べ替えて指定します。
 
@@ -323,7 +360,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfilesperextension"></a>-TopFilesPerExtension
+##### <a name="-topfilesperextension"></a>-TopFilesPerExtension
 
 上部の拡張子ごとに出力する上位ファイルの数を指定します。"Duration" で並べ替えられます。
 
@@ -335,7 +372,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
+##### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
 
 "Duration" で並べ替えられた各トップ プロセスの出力する上位ファイルの数を指定します。
 
@@ -347,7 +384,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocesses"></a>-TopProcesses
+##### <a name="-topprocesses"></a>-TopProcesses
 
 最上位プロセス レポートを要求し、出力する上位プロセスの数を "Duration" で並べ替えて指定します。
 
@@ -359,7 +396,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension
+##### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension
 
 上位拡張機能ごとに出力する上位プロセスの数を指定します。"Duration" で並べ替えられます。
 
@@ -371,7 +408,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
+##### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
 
 上位ファイルごとに出力する上位プロセスの数を指定し、"Duration" で並べ替えて指定します。
 
@@ -383,7 +420,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscans"></a>-TopScans
+##### <a name="-topscans"></a>-TopScans
 
 トップ スキャン レポートを要求し、出力する上位スキャンの数を "期間" で並べ替えて指定します。
 
@@ -395,7 +432,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperextension"></a>-TopScansPerExtension
+##### <a name="-topscansperextension"></a>-TopScansPerExtension
 
 上位拡張機能ごとに出力するトップ スキャンの数を指定し、"Duration" で並べ替えます。
 
@@ -407,7 +444,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess
+##### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess
 
 上位プロセスごとに出力する上位スキャンの数を指定し、"Duration" で並べ替えます。
 
@@ -419,7 +456,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfile"></a>-TopScansPerFile
+##### <a name="-topscansperfile"></a>-TopScansPerFile
 
 "Duration" で並べ替えられた各トップ ファイルの出力するトップ スキャンの数を指定します。
 
@@ -431,7 +468,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension
+##### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension
 
 上位の拡張子ごとに出力する上位スキャンの数を指定し、"Duration" で並べ替えます。
 
@@ -443,7 +480,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess
+##### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess
 
 "Duration" で並べ替えられた、各トップ プロセスの上位ファイルごとの出力のトップ スキャンの数を指定します。
 
@@ -455,7 +492,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocess"></a>-TopScansPerProcess
+##### <a name="-topscansperprocess"></a>-TopScansPerProcess
 
 上位プロセス レポートの上位プロセスごとに出力する上位スキャンの数を指定し、"期間" で並べ替えます。
 
@@ -467,7 +504,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
+##### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
 
 "Duration" で並べ替えられた各上位プロセスの出力のトップ スキャンの数を指定します。
 
@@ -479,7 +516,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
+##### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
 
 "Duration" で並べ替えられた各トップ ファイルの上位プロセスごとの出力のトップ スキャンの数を指定します。
 
@@ -490,12 +527,14 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-> [!TIP]
-> 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
-> - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
-> - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+
+## <a name="additional-resources"></a>その他のリソース
+
+他のプラットフォームのウイルス対策に関連する情報を探している場合は、次を参照してください。
+
+- [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
+- [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+- [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
+- [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+- [Android の機能で Defender for Endpoint を構成する](android-configure.md)- [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)

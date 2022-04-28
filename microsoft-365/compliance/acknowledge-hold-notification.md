@@ -2,8 +2,8 @@
 title: 保留通知を確認する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/05/2022
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示 (プレミアム) を使用して、電子メールを通じて訴訟ホールド通知を送信およびフォローアップし、義務の状態を監視する方法について説明します。
-ms.openlocfilehash: db13ed4a148238dbb677ece55999fd3fb907a1a1
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 21f02f25518fe2ff1c2e4bf80e43de476d381595
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999588"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100613"
 ---
 # <a name="acknowledge-a-hold-notification"></a>保留通知を確認する
 

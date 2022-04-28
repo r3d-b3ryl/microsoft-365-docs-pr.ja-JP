@@ -3,7 +3,7 @@ title: テナント間でのメールボックスの移行
 description: Microsoft 365テナントまたはOffice 365 テナント間でメールボックスを移動する方法。
 ms.author: kvice
 author: kelleyvice-msft
-manager: Laurawi
+manager: scotv
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 00ded796cb0fc8878b3eee3f656afac426cd0f35
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 8cbaee1e4f0cd3bae519c939f2f619343bf996bd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973995"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101075"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックス移行 (プレビュー)
 
@@ -510,7 +510,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 **ソース テナントとターゲット テナントで同じドメイン名を使用できますか?**
 
-いいえ。 ソーステナントとターゲットテナントのドメイン名は一意である必要があります。 たとえば、contoso.com のソース ドメインと、fourthcoffee.com のターゲット ドメインなどです。
+その必要はありません。 ソーステナントとターゲットテナントのドメイン名は一意である必要があります。 たとえば、contoso.com のソース ドメインと、fourthcoffee.com のターゲット ドメインなどです。
 
 **共有メールボックスは移動し、引き続き機能しますか?**
 
@@ -642,7 +642,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
       Exchange Onlineを含む現在のサービス プランの完全なセットを次に示します。
 
-      | 氏名                                             |
+      | 名前                                             |
       | ------------------------------------------------ |
       | 電子情報開示 (プレミアム) Storage (500 GB)             |
       | 顧客ロックボックス                                 |

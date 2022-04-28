@@ -2,8 +2,8 @@
 title: ServiceNow 17a-4 DataParser データをMicrosoft 365にアーカイブするためのコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 ServiceNow DataParser コネクタを設定して使用して、Microsoft 365で ServiceNow データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: de899dff29f91002259701b79b3ae6119fa1df66
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 418fae03d57042f816c397bd08c6f2a0d753e57a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997562"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100921"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>ServiceNow からデータをアーカイブするコネクタを設定する
 

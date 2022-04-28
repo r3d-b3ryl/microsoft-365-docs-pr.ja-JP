@@ -2,7 +2,7 @@
 title: Office 365 サービスに接続するネットワーク デバイスの計画
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/29/2016
 audience: ITPro
 ms.topic: conceptual
@@ -17,59 +17,59 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
-description: '概要: ネットワーク容量、WAN アクセラレータ、およびデバイスへの接続に使用される負荷分散デバイスに関する考慮事項についてOffice 365。'
-ms.openlocfilehash: 38df9a64610c4b4d44014a142bf7d255aa0a0f46
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: '概要: Office 365への接続に使用されるネットワーク容量、WAN アクセラレータ、および負荷分散デバイスに関する考慮事項について説明します。'
+ms.openlocfilehash: 58c4225d9d381dabedfa86d81ced7f5922932058
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166780"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100327"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 サービスに接続するネットワーク デバイスの計画
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
   
-一部のネットワーク ハードウェアでは、サポートされている同時セッションの数に制限がある場合があります。 2,000 人を超えるユーザーを持つ組織では、ネットワーク デバイスを監視して、追加のサービス トラフィックを処理Office 365することをお勧めします。 簡易ネットワーク管理プロトコル (SNMP) 監視ソフトウェアは、これを行うのに役立ちます。
+一部のネットワーク ハードウェアでは、サポートされている同時セッションの数に制限がある場合があります。 ユーザーが 2,000 人を超える組織の場合は、ネットワーク デバイスを監視して、追加のOffice 365 サービス トラフィックを処理できることを確認することをお勧めします。 簡易ネットワーク管理プロトコル (SNMP) 監視ソフトウェアは、これを行うのに役立ちます。
 
-この記事は、ネットワークの計画と[パフォーマンスの調整](./network-planning-and-performance.md)の一部Office 365。
+この記事は、[Office 365のネットワーク計画とパフォーマンスのチューニングの](./network-planning-and-performance.md)一部です。
 
-オンプレミスの送信インターネット プロキシ設定は、クライアント アプリケーションのOffice 365接続にも影響します。 また、Microsoft クラウド サービスの URL とアプリケーションへの接続を許可するネットワーク プロキシ デバイスを構成する必要があります。 すべての組織が異なります。 Microsoft がこのプロセスを管理する方法と、プロビジョニングする帯域幅の量を確認するには、ケース [スタディを参照してください](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)。
+オンプレミスの発信インターネット プロキシ設定は、クライアント アプリケーションのOffice 365 サービスへの接続にも影響します。 また、Microsoft クラウド サービスの URL とアプリケーションの接続を許可するようにネットワーク プロキシ デバイスを構成する必要もあります。 すべての組織が異なります。 Microsoft がこのプロセスを管理する方法と、プロビジョニングする帯域幅の量を把握するには、 [ケース スタディを参照](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)してください。
   
-次のヘルプSkype for Businessの設定に関する詳細Skype for Business示します。
+Skype for Business設定の詳細については、次のSkype for Businessヘルプ記事を参照してください。
   
-- [管理者Skype for Businessオンライン サインイン エラーのトラブルシューティング](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
+- [管理者向けのオンライン サインイン エラー Skype for Businessトラブルシューティング](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
-- [オンプレミスファイアウォールが接続Skype for Business、または特定の機能が機能しない場合は、接続をブロックします。](https://go.microsoft.com/fwlink/p/?LinkID=243625)
+- [オンプレミスファイアウォールによって接続がブロックされるため、Skype for Businessに接続できない、または特定の機能が機能しない](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
 > [!NOTE]
-> これらの設定の多くはSkype for Business固有ですが、ネットワーク構成に関する一般的なガイダンスは、すべてのサービスOffice 365です。
+> これらの設定の多くはSkype for Business固有ですが、ネットワーク構成に関する一般的なガイダンスは、すべてのOffice 365 サービスに役立ちます。
   
 ## <a name="determining-network-capacity"></a>ネットワーク容量の決定
 
-接続に存在するネットワーク デバイスには、容量制限があります。 これらのデバイスには、クライアントとサーバーのネットワーク アダプター、ルーター、スイッチ、およびそれらを相互接続するハブが含まれます。 適切なネットワーク容量は、どのネットワーク容量も飽和状態でいなかっているという意味です。 ネットワーク アクティビティの監視は、すべてのネットワーク デバイスの実際の負荷が最大容量より小さい状態を確保するために不可欠です。 ネットワーク容量は、プロキシ デバイスのパフォーマンスに影響します。
+接続に存在するすべてのネットワーク デバイスには、その容量制限があります。 これらのデバイスには、クライアントとサーバーのネットワーク アダプター、ルーター、スイッチ、およびそれらを相互接続するハブが含まれます。 適切なネットワーク容量は、飽和状態のネットワーク容量が存在しないという意味です。 ネットワーク アクティビティを監視することは、すべてのネットワーク デバイスの実際の負荷が最大容量を下回っていることを確認するために不可欠です。 ネットワーク容量は、プロキシ デバイスのパフォーマンスに影響します。
   
-ほとんどの場合、インターネット接続帯域幅はトラフィック量の制限を設定します。 トラフィックのピーク時のパフォーマンスが低下する原因は、インターネット リンクが過剰に使用されている可能性があります。 この状況は、ブランチ オフィス のプロキシ サーバー コンピューターが低速のワイド エリア ネットワーク (WAN) リンクを使用してブランチの本社のプロキシ デバイスに接続されるブランチ オフィスのシナリオにも適用されます。
+ほとんどの場合、インターネット接続帯域幅はトラフィック量の制限を設定します。 ピーク 時のパフォーマンスの低下は、インターネット リンクの過度な使用が原因と考えられます。 この状況は、ブランチ オフィス プロキシ サーバー コンピューターが低速のワイド エリア ネットワーク (WAN) リンク経由でブランチの本社のプロキシ デバイスに接続されているブランチ オフィスのシナリオにも適用されます。
   
-ネットワーク容量をテストするには、プロキシ ネットワーク インターフェイスでネットワーク アクティビティを監視します。 ネットワーク インターフェイスの最大帯域幅の 75% を超える場合は、不十分なネットワーク インフラストラクチャの帯域幅を増やしてください。 または、HTTP 圧縮などの高度な機能の使用を検討してください。
+ネットワーク容量をテストするには、プロキシ ネットワーク インターフェイスでネットワーク アクティビティを監視します。 ネットワーク インターフェイスの最大帯域幅の 75% を超える場合は、不十分なネットワーク インフラストラクチャの帯域幅を増やすことを検討してください。 または、HTTP 圧縮などの高度な機能の使用を検討してください。
   
 ## <a name="wan-accelerators"></a>WAN アクセラレータ
 
-組織でワイド エリア ネットワーク (WAN) アクセラレーション プロキシ アプライアンスを使用している場合は、ネットワーク サービスにアクセスするときに問題Office 365があります。 ネットワーク デバイスまたはデバイスを最適化して、ユーザーがネットワーク デバイスにアクセスするときに一貫性のあるエクスペリエンスをOffice 365。 たとえば、サービスOffice 365コンテンツと TCP ヘッダー Office 365暗号化します。 デバイスでこの種類のトラフィックを処理できない場合があります。
+組織でワイド エリア ネットワーク (WAN) アクセラレーション プロキシ アプライアンスを使用している場合は、Office 365 サービスにアクセスするときに問題が発生する可能性があります。 ネットワーク デバイスまたはデバイスを最適化して、ユーザーがOffice 365にアクセスするときに一貫したエクスペリエンスを確保する必要がある場合があります。 たとえば、Office 365 サービスは、一部のOffice 365コンテンツと TCP ヘッダーを暗号化します。 デバイスでは、この種のトラフィックを処理できない場合があります。
   
-WAN 最適化コントローラーまたはトラフィック[/](https://support.microsoft.com/kb/2690045)検査デバイスを使用する方法に関するサポート ステートメントを参照Office 365。
+[Office 365での WAN 最適化コントローラーまたは Traffic/Inspection デバイスの使用](https://support.microsoft.com/kb/2690045)に関するサポート ステートメントを参照してください。
   
 ## <a name="hardware-and-software-load-balancing-devices"></a>ハードウェアおよびソフトウェア負荷分散デバイス
 
-組織では、ハードウェア ロード バランサー (HLB) またはネットワーク負荷分散 (NLB) ソリューションを使用して、Active Directory フェデレーション サービス (AD FS) サーバーや Exchange ハイブリッド サーバーに要求を配布する必要があります。 負荷分散デバイスは、オンプレミス サーバーへのネットワーク トラフィックを制御します。 これらのサーバーは、シングル サインオンとハイブリッド展開の可用性を確保Exchange重要です。
+組織では、ハードウェア ロード バランサー (HLB) またはネットワーク負荷分散 (NLB) ソリューションを使用して、Active Directory フェデレーション サービス (AD FS) (AD FS) サーバーやExchangeハイブリッド サーバーに要求を配布する必要があります。 負荷分散デバイスは、オンプレミス サーバーへのネットワーク トラフィックを制御します。 これらのサーバーは、シングル サインオンとExchangeハイブリッド展開の可用性を確保するうえで非常に重要です。
   
-ソフトウェア ベースの NLB ソリューションは、サーバーに組み込Windows提供します。 Office 365 は、このソリューションをサポートすることによって負荷分散を実現します。
+Windows Server に組み込まれているソフトウェア ベースの NLB ソリューションを提供します。 Office 365 は、このソリューションをサポートすることによって負荷分散を実現します。
   
 ## <a name="firewalls-and-proxies"></a>ファイアウォールとプロキシ
 
-Office 365 に接続するためのファイアウォールとプロキシの構成の詳細については、「Office 365 エンドポイントの管理」、Office 365 ネットワーク接続の評価、および[](assessing-network-connectivity.md)Office 365 エンドポイントに関する[FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)を参照して、デバイスと回線の選択の詳細について説明します。 [](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+Office 365に接続するためのファイアウォールとプロキシの構成の詳細については、「[Office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)」、「[Office 365ネットワーク接続の評価](assessing-network-connectivity.md)」、「[Office 365 エンドポイントに関する FAQ」](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)を参照して、デバイスと回線の選択の詳細を確認してください。
   
 ## <a name="see-also"></a>関連項目
 
-[サービスのセットアップ Office 365ガイド](setup-guides-for-microsoft-365.md)
+[Office 365 サービスのセットアップ ガイド](setup-guides-for-microsoft-365.md)
 
 [Microsoft 365 Enterprise の概要](microsoft-365-overview.md)

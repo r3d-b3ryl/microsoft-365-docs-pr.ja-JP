@@ -2,7 +2,7 @@
 title: PowerShell を使用して SharePoint Online のユーザーとグループを管理する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: landing-page
@@ -19,21 +19,21 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: この記事では、PowerShell を使用してオンライン ユーザー Microsoft 365サイトSharePoint管理する方法について説明します。
-ms.openlocfilehash: e2166753b1be56c19011a1fc7e20d1584a5d3004
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: この記事では、PowerShell for Microsoft 365を使用して、SharePoint Online ユーザー、グループ、およびサイトを管理する方法について説明します。
+ms.openlocfilehash: 78c829e476c63e435d9543b3a4175cdbbccb76e8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681196"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100679"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>PowerShell を使用して SharePoint Online のユーザーとグループを管理する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-ユーザー アカウントまたはグループの大規模なリストSharePointを操作し、管理する簡単な方法を必要としている SharePoint Online 管理者の場合は、PowerShell を使用して管理Microsoft 365。
+SharePoint Online 管理者で、ユーザー アカウントまたはグループの大規模な一覧を操作し、それらを管理する簡単な方法が必要な場合は、PowerShell を使用してMicrosoft 365できます。
 
-開始する前に、この記事の手順では、オンラインからオンラインに接続SharePointがあります。 手順については、「オンライン [PowerShell のConnect SharePoint」を参照してください。](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+開始する前に、この記事の手順でSharePoint Online に接続する必要があります。 手順については、「[オンライン PowerShell をSharePointするConnect」を](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)参照してください。
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>サイト、グループ、ユーザーの一覧を取得する
 
@@ -59,7 +59,7 @@ Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 
 ## <a name="add-a-user-to-the-site-collection-administrators-group"></a>サイト コレクション管理者グループにユーザーを追加する
 
-コマンドレットを使用して `Set-SPOUser` 、サイト コレクションのサイト コレクション管理者の一覧にユーザーを追加します。
+このコマンドレットを `Set-SPOUser` 使用して、サイト コレクションのサイト コレクション管理者の一覧にユーザーを追加します。
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -68,9 +68,9 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
-これらのコマンドを使用するには、引用符内の文字を含む<、>を正しい名前に置き換える必要があります。
+これらのコマンドを使用するには、引用符内のすべての文字列 (<文字や>文字など) を正しい名前に置き換えます。
 
-たとえば、この一連のコマンドは、Contoso テナントの ContosoTest サイト コレクションのサイト コレクション管理者のリストに、Opal Castillo (ユーザー名 opalc) を追加します。
+たとえば、この一連のコマンドは、Contoso テナントの ContosoTest サイト コレクションのサイト コレクション管理者の一覧に Opal Castillo (ユーザー名 opalc) を追加します。
 
 ```powershell
 $tenant = "contoso"
@@ -79,11 +79,11 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
 ```
 
-これらのコマンドを メモ帳 にコピーして貼り付け、$tenant、$site、$user の変数値を環境の実際の値に変更してから、これを SharePoint Online 管理シェル ウィンドウに貼り付け、実行できます。
+これらのコマンドをコピーしてメモ帳に貼り付け、$tenant、$site、および$userの変数値を環境の実際の値に変更し、これを SharePoint Online Management Shell ウィンドウに貼り付けて実行できます。
 
-## <a name="add-a-user-to-other-site-collection-groups"></a>ユーザーを他のサイト コレクション グループに追加する
+## <a name="add-a-user-to-other-site-collection-groups"></a>他のサイト コレクション グループにユーザーを追加する
 
-このタスクでは、コマンドレットを使用`Add-SPOUser`して、サイト コレクション上のユーザーグループSharePoint追加します。
+このタスクでは、コマンドレットを`Add-SPOUser`使用して、サイト コレクションのSharePoint グループにユーザーを追加します。
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -94,7 +94,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ```
 
-たとえば、Contoso テナントの ContosoTest サイト コレクションの Auditors グループに、Glen Rife (ユーザー名 glenr) を追加します。
+たとえば、Contoso テナントの ContosoTest サイト コレクションの Auditors グループに、Glen Rife (ユーザー名のgler) を追加します。
 
 ```powershell
 $tenant = "contoso"
@@ -106,7 +106,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ## <a name="create-a-site-collection-group"></a>サイト コレクション グループを作成する
 
-コマンドレットを使用して`New-SPOSiteGroup`新しいグループを作成SharePointサイト コレクションに追加します。
+このコマンドレットを`New-SPOSiteGroup`使用して、新しいSharePoint グループを作成し、それをサイト コレクションに追加します。
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -116,9 +116,9 @@ $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
 
-アクセス許可レベルなどのグループ プロパティは、コマンドレットを使用して後で更新 `Set-SPOSiteGroup` できます。
+アクセス許可レベルなどのグループ プロパティは、後でコマンドレットを使用 `Set-SPOSiteGroup` して更新できます。
 
-たとえば、Contoso テナントの contosotest サイト コレクションに View Only アクセス許可を持つ Auditors グループを追加します。
+たとえば、表示のみアクセス許可を持つ Auditors グループを contoso テナントの contosotest サイト コレクションに追加します。
 
 ```powershell
 $tenant = "contoso"
@@ -130,11 +130,11 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 ## <a name="remove-users-from-a-group"></a>グループからユーザーを削除する
 
-場合によっては、あるサイトまたはすべてのサイトからユーザーを削除する必要があります。 たとえば、従業員がある部署から別の部署に異動した場合や、退職した場合などが該当します。 UI で 1 人の従業員に対してこれを簡単に行うことができますが、あるサイトから別のサイトに完全な部門を移動する必要がある場合、これは簡単には行いません。
+場合によっては、あるサイトまたはすべてのサイトからユーザーを削除する必要があります。 たとえば、従業員がある部署から別の部署に異動した場合や、退職した場合などが該当します。 これは、UI で簡単に 1 人の従業員に対して行うことができますが、サイト間で完全な部門を移動する必要がある場合は、簡単には実行できません。
 
-ただし、オンライン管理シェルSharePoint CSV ファイルを使用すると、高速かつ簡単に実行できます。 このタスクでは、まず、Windows PowerShell を使用して、サイト コレクションのセキュリティ グループから 1 人のユーザーを削除します。 次に、CSV ファイルを使用して、複数の異なるサイトから多数のユーザーを削除します。
+ただし、SharePoint Online Management Shell ファイルと CSV ファイルを使用すると、高速かつ簡単に実行できます。 このタスクでは、まず、Windows PowerShell を使用して、サイト コレクションのセキュリティ グループから 1 人のユーザーを削除します。 次に、CSV ファイルを使用して、複数の異なるサイトから多数のユーザーを削除します。
 
-'Remove-SPOUser' コマンドレットを使用して、サイト コレクション グループから 1 人の Microsoft 365 ユーザーを削除して、コマンド構文を確認します。 構文の外観は次のとおりです。
+コマンド構文を確認できるように、'Remove-SPOUser' コマンドレットを使用して 1 人のMicrosoft 365 ユーザーをサイト コレクション グループから削除します。 構文の外観は次のとおりです。
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -144,7 +144,7 @@ $group = "<group name name, such as Auditors>"
 Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
 
-たとえば、contoso テナントの contosotest サイト コレクション内のサイト コレクション Auditors グループから Bobby Overby を削除します。
+たとえば、contoso テナントの contosotest サイト コレクションのサイト コレクション監査グループから Bobby Overby を削除しましょう。
 
 ```powershell
 $tenant = "contoso"
@@ -154,7 +154,7 @@ $group = "Auditors"
 Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
 
-現在のグループからボビーを削除したいとします。 これを行う方法を次に示します。
+現在のグループから Bobby を削除したかったとします。 これを行う方法を次に示します。
 
 ```powershell
 $tenant = "contoso"
@@ -167,21 +167,21 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>ユーザーおよびグループの大規模なリストの管理を自動化する
 
-多数のアカウントを SharePoint サイトに追加し、アクセス許可を付与するには、Microsoft 365 管理センター、個々の PowerShell コマンド、または PowerShell と CSV ファイルを使用できます。 これらの選択肢の中では、CSV ファイルがこのタスクを自動化する最も簡単な方法になります。
+SharePoint サイトに多数のアカウントを追加し、アクセス許可を付与するには、Microsoft 365 管理センター、個々の PowerShell コマンド、または PowerShell と CSV ファイルを使用できます。 これらの選択肢の中では、CSV ファイルがこのタスクを自動化する最も簡単な方法になります。
 
-基本的なプロセスは、CSV を作成し、ヘッダー (列) を Windows PowerShell スクリプトに必要なパラメーターに対応させることです。 このようなリストは、ファイル内で簡単に作成Excel CSV ファイルとしてエクスポートできます。 次に、CSV ファイルWindows PowerShellを反復処理するスクリプトを使用して、ユーザーをグループに追加し、グループをサイトに追加します。
+基本的なプロセスは、CSV を作成し、ヘッダー (列) を Windows PowerShell スクリプトに必要なパラメーターに対応させることです。 このようなリストは、Excelで簡単に作成し、CSV ファイルとしてエクスポートできます。 次に、Windows PowerShell スクリプトを使用して CSV ファイル内のレコード (行) を反復処理し、ユーザーをグループに追加し、グループをサイトに追加します。
 
-たとえば、サイト コレクション、グループ、およびアクセス許可のグループを定義する CSV ファイルを作成します。 次に、グループにユーザーを設定する CSV ファイルを作成します。 最後に、グループを作成して設定するWindows PowerShellスクリプトを作成して実行します。
+たとえば、サイト コレクション、グループ、およびアクセス許可のグループを定義する CSV ファイルを作成しましょう。 次に、グループにユーザーを設定する CSV ファイルを作成します。 最後に、グループを作成して設定するWindows PowerShell スクリプトを作成して実行します。
 
 最初の CSV ファイルは、1 つ以上のグループを 1 つ以上のサイト コレクションに追加します。このファイルの構造は以下のとおりです。
 
-ヘッダー:
+ヘッダー：
 
 ```powershell
 Site,Group,PermissionLevels
 ```
 
-アイテム:
+項目：
 
 ```powershell
 https://tenant.sharepoint.com/sites/site,group,level
@@ -203,13 +203,13 @@ https://contoso.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Cont
 
 2 番目の CSV ファイルは、1 つ以上のユーザーを 1 つ以上のグループに追加します。このファイルの構造は以下のとおりです。
 
-ヘッダー:
+ヘッダー：
 
 ```powershell
 Group,LoginName,Site
 ```
 
-アイテム:
+項目：
 
 ```powershell
 group,login,https://tenant.sharepoint.com/sites/site
@@ -229,16 +229,16 @@ Contoso Blog Editors,opalc@contoso.com,https://contoso.sharepoint.com/sites/Blog
 Project Alpha Approvers,robinc@contoso.com,https://contoso.sharepoint.com/sites/Project01
 ```
 
-次の手順では、2 つの CSV ファイルをドライブに保存する必要があります。 CSV ファイルとアクセス許可とグループ メンバーシップの両方を使用するコマンドの例を次に示します。
+次の手順では、2 つの CSV ファイルをドライブに保存する必要があります。 CSV ファイルの両方を使用し、アクセス許可とグループ メンバーシップを追加するコマンドの例を次に示します。
 
 ```powershell
 Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
 
-スクリプトは CSV ファイルの内容をインポートし、列の値を使用して **New-SPOSiteGroup** コマンドと **Add-SPOUser** コマンドのパラメーターを設定します。 この例では、このファイルをドライブ C の O365Admin フォルダーに保存していますが、必要な場所に保存できます。
+スクリプトは CSV ファイルの内容をインポートし、列の値を使用して **New-SPOSiteGroup および Add-SPOUser** コマンドのパラメーター **を** 設定します。 この例では、このファイルをドライブ C の O365Admin フォルダーに保存していますが、任意の場所に保存できます。
 
-次に、同じ CSV ファイルを使用して、さまざまなサイトの複数のグループのユーザーを削除します。 コマンドの例を次に示します。
+次に、同じ CSV ファイルを使用して、異なるサイト内の複数のグループの一連のユーザーを削除しましょう。 コマンドの例を次に示します。
 
 ```powershell
 Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}
@@ -246,7 +246,7 @@ Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginN
 
 ## <a name="generate-user-reports"></a>ユーザー レポートを生成する
 
-いくつかのサイトのレポートを取得し、それらのサイト、アクセス許可レベル、その他のプロパティのユーザーを表示することができます。 以下に、構文の一例を示します。
+いくつかのサイトのレポートを取得し、それらのサイトのユーザー、アクセス許可レベル、およびその他のプロパティを表示することができます。 以下に、構文の一例を示します。
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -268,7 +268,7 @@ $site = "Project01"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-変数の値のみを変更 **$site** でした。 変数 **$tenant** は、コマンドの 3 つの実行すべてで値を保持します。
+**$site** 変数のみを変更する必要がありました。 **$tenant** 変数は、コマンドの 3 つの実行すべてを通じてその値を保持します。
 
 一方、この操作をすべてのサイトに対して行うとしたら、どうなるでしょうか。以下のコードを使用すれば、すべての Web サイトを入力することなく、このコマンドを使用できます。
 
@@ -276,7 +276,7 @@ Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wra
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-このレポートはかなり単純ですが、コードを追加すれば、より具体的なレポートや、その他の詳細情報が含まれるレポートを作成できます。 ただし、これにより、オンライン管理シェルを使用してオンライン環境SharePointユーザーを管理する方法SharePointがあります。
+このレポートはかなり単純ですが、コードを追加すれば、より具体的なレポートや、その他の詳細情報が含まれるレポートを作成できます。 しかし、これにより、SharePoint Online Management Shell を使用して、SharePoint Online 環境でユーザーを管理する方法について説明する必要があります。
 
 ## <a name="see-also"></a>関連項目
 

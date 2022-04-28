@@ -1,8 +1,8 @@
 ---
-title: 計画を立Microsoft 365 Enterprise
+title: Microsoft 365 Enterpriseの計画
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
@@ -21,44 +21,44 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
-description: この記事では、展開を計画するためのチェックリストと他のリソースMicrosoft 365 Enterpriseします。
-ms.openlocfilehash: 7cec2c8eebb35d215bb46370de5a2019118d6310
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: この記事では、Microsoft 365 Enterpriseデプロイを計画するためのチェックリストとその他のリソースについて説明します。
+ms.openlocfilehash: 9c9ae59e1a54935d62c014d435e34984f0c24415
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201687"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100987"
 ---
-# <a name="plan-for-microsoft-365-enterprise"></a>計画を立Microsoft 365 Enterprise
+# <a name="plan-for-microsoft-365-enterprise"></a>Microsoft 365 Enterpriseの計画
 
-エンタープライズ組織を組織を組織に移行Microsoft 365、IT 展開とユーザー導入を合理化する重要な設計上の決定を計画し、決定することが重要です。 
+エンタープライズ組織をMicrosoft 365に移行する場合は、IT の展開とユーザー導入を効率化する重要な設計上の決定を事前に計画し、行う必要があります。 
 
-## <a name="planning-with-microsoft-365-fasttrack"></a>計画とMicrosoft 365 FastTrack
+## <a name="planning-with-microsoft-365-fasttrack"></a>Microsoft 365 FastTrackを使用した計画
 
-[FastTrackのMicrosoft 365](https://www.microsoft.com/fasttrack/microsoft-365)展開を計画するための Microsoft からのヘルプを取得するための最良のMicrosoft 365です。 FastTrack設計上の最も一般的な考慮事項を説明し、途中で質問に答えるのに役立ちます。 
+[Microsoft 365のFastTrack](https://www.microsoft.com/fasttrack/microsoft-365)は、Microsoft 365展開を計画するための Microsoft からの支援を得るための最良の方法です。 FastTrackは、最も一般的な設計上の考慮事項に役立ち、その過程で質問に答えることができます。 
 
 >[!Note]
->Microsoft パートナーからヘルプを [受け取る方法も確認できます](https://www.microsoft.com/solution-providers/home)。
+>[Microsoft パートナー](https://www.microsoft.com/solution-providers/home)からヘルプを受けることもできます。
 >
 
-## <a name="do-it-yourself-planning-for-microsoft-365"></a>Do-it-yourself planning for Microsoft 365
+## <a name="do-it-yourself-planning-for-microsoft-365"></a>Microsoft 365の do-it-yourself planning
 
-自分でMicrosoft 365計画するには、次の分野の計画と設計の決定をステップ実行します。
+Microsoft 365を自分で計画するには、次の領域の計画と設計の決定をステップ実行します。
 
 - Microsoft 365 テナント
 
-  インターネットへのネットワーク接続の計画、Microsoft 365 ID、アプリ、オンプレミス、Azure、その他の要素との統合が含まれます。 詳細については [、「サブスクリプション、ライセンス、アカウント、および Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) のクラウド 製品のテナント」を参照してください。
+  インターネットへのネットワーク接続の計画、Microsoft 365 ID、アプリ、オンプレミス、Azure などの要素との統合が含まれます。 詳細については [、Microsoft のクラウド オファリングのサブスクリプション、ライセンス、アカウント、テナント](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) に移動します。
 
 - クライアントのサポート
 
-  証明書ベースの認証、モバイル デバイス管理、認証オプション、テナント間のコラボレーションが含まれます。 詳細については [、「証明書ベースの認証」](microsoft-365-client-support-certificate-based-authentication.md) を参照してください。
+  証明書ベースの認証、モバイル デバイス管理、認証オプション、テナント間コラボレーションが含まれます。 詳細については、「 [証明書ベースの認証](microsoft-365-client-support-certificate-based-authentication.md) 」を参照してください。
 
-- ハイブリッドモダン認証のサポート
+- ハイブリッド先進認証のサポート
 
-  主要な生産性アプリのハイブリッド構成を使用する場合のモダン認証Microsoft 365含まれます。 詳細については [、「ハイブリッドモダン認証の概要と前提条件](hybrid-modern-auth-overview.md) 」を参照してください。
+  主要なMicrosoft 365生産性アプリのハイブリッド構成を使用する場合の先進認証の計画が含まれます。 詳細については、 [ハイブリッド先進認証の概要と前提条件](hybrid-modern-auth-overview.md) に関するページを参照してください。
 
-- 古いOfficeクライアントとサーバー
+- 古いOffice クライアントとサーバー
 
-  2007 および 2010 Officeおよび 2010 Office製品の移行情報が含まれています。 詳細については、「 [アップグレードの計画」](plan-upgrade-previous-versions-office.md) を参照してください。
+  Office 2007 および Office 2010 クライアントおよびサーバー製品の移行情報が含まれます。 詳細については、「 [アップグレードの計画](plan-upgrade-previous-versions-office.md) 」を参照してください。
 
-また、サブスクリプションにサインインし、Microsoft 365サービスのセットアップ ガイドMicrosoft 365[使用Office 365できます](setup-guides-for-microsoft-365.md)。
+Microsoft 365 サブスクリプションにサインインし、[Microsoft 365 サービスとOffice 365 サービスのセットアップ ガイドを](setup-guides-for-microsoft-365.md)使用することもできます。

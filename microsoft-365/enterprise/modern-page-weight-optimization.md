@@ -2,7 +2,7 @@
 title: SharePoint Online の最新のサイト ページでページのウエイトを最適化する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: ページ診断ツールを使用して、オンラインモダン サイト ページでページの重SharePointする方法について説明します。
-ms.openlocfilehash: 2c7221befc89fd0385b3e96a31fc7721f012628d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: ページ診断ツールを使用して、SharePoint Online モダン サイト ページでページの太さを最適化する方法について説明します。
+ms.openlocfilehash: 01a1976972983cccf3e93006e395f789d5882eff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210283"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101207"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>SharePoint Online の最新のサイト ページでページのウエイトを最適化する
 
@@ -77,7 +77,7 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 >[!NOTE]
 >ページ読み込み時間は、ネットワーク負荷、時間帯、その他の一時的な状態など、さまざまな要素によって異なります。 結果を平均化するために、変更の前後に数回に渡ってページ読み込み時間をテストする必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
 

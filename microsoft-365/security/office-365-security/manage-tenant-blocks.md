@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧でブロックを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ea87a29d93c43b89bcfb482d185bd4b397dcc5b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 60038a2b82ea452ed921d16042cb81d4f0e023a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862458"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100657"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの禁止リストを追加する
 
@@ -115,9 +115,11 @@ ms.locfileid: "64862458"
    - **スプーフィングの種類**: 次のいずれかの値を選択します。
      - **内部**: スプーフィングされた送信者は、組織に属するドメイン ( [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) にあります。
      - **外部**: スプーフィングされた送信者は外部ドメインにあります。
-   - **アクション**: **[許可]** または [ブロック] を選択 **します**。
+   - **アクション**: **[ブロック**] を選択します。
 
 4. 完了したら、**[追加]** をクリックします。
+> [!NOTE]
+> これらの送信者からのメールは *フィッシング* としてブロックされます。 
 
 ## <a name="use-powershell"></a>PowerShell を使う
 

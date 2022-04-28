@@ -1,33 +1,38 @@
 ---
-title: 手順 1. クラウド ID モデルの決定
+title: 手順 1. クラウド ID モデルを決定する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.date: 09/30/2020
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
-  - Ent_O365
-  - M365-identity-device-management
-  - M365-security-compliance
+- Ent_O365
+- M365-identity-device-management
+- M365-security-compliance
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - Adm_O365
-  - seo-marvel-mar2020
+- Adm_O365
+- seo-marvel-mar2020
 search.appverid:
-  - MET150
-  - MOE150
-  - BCS160
+- MET150
+- MOE150
+- BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 手順 1. Microsoft クラウド ID モデルを決定する
+ms.openlocfilehash: 41604ebb08104f802e33023763e9771d2b6acfda
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101273"
 ---
+# <a name="step-1-determine-your-cloud-identity-model"></a>手順 1. クラウド ID モデルを決定する
 
-# <a name="step-1-determine-your-cloud-identity-model"></a>手順 1. クラウド ID モデルの決定
-
-Microsoft 365は、Azure Active Directory サブスクリプションに含まれるクラウドベースのユーザー ID および認証サービスである Azure Active Directory (Microsoft 365 Azure AD) を使用して、Microsoft 365 の ID と認証を管理します。 ID インフラストラクチャを正しく構成することは、組織のユーザー アクセスMicrosoft 365アクセス許可を管理する上で重要です。
+Microsoft 365では、Microsoft 365 サブスクリプションに含まれるクラウドベースのユーザー ID と認証サービスであるAzure Active Directory (Azure AD) を使用して、Microsoft 365の ID と認証を管理します。 組織のユーザー アクセスとアクセス許可Microsoft 365管理するには、ID インフラストラクチャを正しく構成することが不可欠です。
 
 開始する前に、Microsoft 365 の ID モデルと認証の概要についてこのビデオをご覧ください。
 
@@ -39,54 +44,54 @@ Microsoft 365は、Azure Active Directory サブスクリプションに含ま�
 
 ## <a name="microsoft-cloud-identity-models"></a>Microsoft クラウド ID モデル
 
-ユーザー アカウントを計画するには、まず、ユーザー アカウントの 2 つの ID モデルをMicrosoft 365。 組織の ID はクラウドでのみ維持するか、オンプレミスの Active Directory ドメイン サービス (AD DS) ID を維持し、ユーザーが Microsoft 365 クラウド サービスにアクセスするときに認証に使用できます。
+ユーザー アカウントを計画するには、まず、Microsoft 365の 2 つの ID モデルを理解する必要があります。 組織の ID はクラウド内でのみ管理することも、オンプレミスの Active Directory Domain Services (AD DS) ID を維持して、ユーザーがクラウド サービスにアクセスするときに認証に使用Microsoft 365することもできます。
 
-ID の 2 種類と、最適なフィット感と利点を次に示します。
+2 種類の ID と、その最適さと利点を次に示します。
 
 | 属性 | クラウド専用 ID | ハイブリッド ID |
 |:-------|:-----|:-----|
-| **定義** | ユーザー アカウントは、ユーザー サブスクリプションAzure ADテナントにのみMicrosoft 365されます。 | ユーザー アカウントは DS AD存在し、コピーはサブスクリプションの Azure ADテナントMicrosoft 365です。 ユーザー アカウントには、Azure AD DS ユーザー アカウント のパスワードにハッシュ化されたバージョンAD含まれる場合があります。 |
-| **ユーザー Microsoft 365認証方法** | サブスクリプションAzure ADテナントMicrosoft 365、クラウド ID アカウントを使用して認証を実行します。 | サブスクリプションAzure ADテナントMicrosoft 365認証プロセスを処理するか、ユーザーを別の ID プロバイダーにリダイレクトします。 |
-| **最適シナリオ** | DS を使用するオンプレミスの組織または必要AD組織。 | DS または別AD ID プロバイダーを使用している組織。 |
-| **最大のメリット** | 使いやすい。 追加のディレクトリ ツールやサーバーは必要ありません。 | ユーザーは、オンプレミスまたはクラウドベースのリソースにアクセスするときに同じ資格情報を使用できます。 |
+| **定義** | ユーザー アカウントは、Microsoft 365 サブスクリプションのAzure AD テナントにのみ存在します。 | ユーザー アカウントは AD DS に存在し、コピーはMicrosoft 365 サブスクリプションのAzure AD テナントにも存在します。 Azure ADのユーザー アカウントには、既にハッシュされた AD DS ユーザー アカウントパスワードのハッシュバージョンも含まれる場合があります。 |
+| **ユーザー資格情報Microsoft 365認証する方法** | Microsoft 365 サブスクリプションのAzure AD テナントは、クラウド ID アカウントを使用して認証を実行します。 | Microsoft 365 サブスクリプションのAzure AD テナントは、認証プロセスを処理するか、ユーザーを別の ID プロバイダーにリダイレクトします。 |
+| **最適シナリオ** | オンプレミスの AD DS を持っていない、または必要ない組織。 | AD DS または別の ID プロバイダーを使用している組織。 |
+| **最大の利点** | 使いやすいです。 追加のディレクトリ ツールやサーバーは必要ありません。 | ユーザーは、オンプレミスまたはクラウドベースのリソースにアクセスするときに同じ資格情報を使用できます。 |
 ||||
 
 ## <a name="cloud-only-identity"></a>クラウド専用 ID
 
-クラウドのみの ID は、Azure AD にのみ存在するユーザー アカウントを使用します。 クラウド専用 ID は、通常、オンプレミス のサーバーを持たない、またはローカル ID を管理するために AD DS を使用しない小規模な組織で使用されます。
+クラウドのみの ID は、Azure AD にのみ存在するユーザー アカウントを使用します。 クラウドのみの ID は、通常、オンプレミス サーバーを持たない小規模な組織、または AD DS を使用してローカル ID を管理しない小規模な組織で使用されます。
 
-クラウド専用 ID の基本的なコンポーネントを次に示します。
+クラウドのみの ID の基本的なコンポーネントを次に示します。
 
-![クラウド専用 ID の基本的なコンポーネント。](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![クラウドのみの ID の基本的なコンポーネント。](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-オンプレミスとリモート (オンライン) の両方のユーザーは、ユーザー アカウントAzure ADパスワードを使用して、クラウド Microsoft 365アクセスします。 Azure AD は、保存されたユーザー アカウントとパスワードに基づいて、ユーザー資格情報を認証します。
+オンプレミスとリモート (オンライン) の両方のユーザーは、Azure ADユーザー アカウントとパスワードを使用して、クラウド サービスMicrosoft 365アクセスします。 Azure AD は、保存されたユーザー アカウントとパスワードに基づいて、ユーザー資格情報を認証します。
 
 ### <a name="administration"></a>管理
-ユーザー アカウントはユーザー アカウントにのみ格納Azure AD、クラウド ID を管理するツール (Microsoft 365 管理センター、[Windows PowerShell。](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)[](/admin)
+ユーザー アカウントはAzure ADにのみ格納されるため、[Microsoft 365 管理センター](/admin)や[Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)などのツールを使用してクラウド ID を管理します。
 
 ## <a name="hybrid-identity"></a>ハイブリッド ID
 
-ハイブリッド ID は、オンプレミスの DS で発生し、AD サブスクリプションの Azure AD テナントにコピー Microsoft 365します。 ほとんどの変更は、特定のアカウント属性を [除き、](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)1 つの方法でのみフローします。 DS ユーザー アカウントに対して行AD変更は、DS ユーザー アカウントのコピーと同期Azure AD。
+ハイブリッド ID は、オンプレミスの AD DS で作成されたアカウントを使用し、Microsoft 365 サブスクリプションのAzure AD テナントにコピーを持ちます。 ほとんどの変更は、 [特定のアカウント属性](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)を除き、一方向にのみフローします。 AD DS ユーザー アカウントに加えた変更は、Azure AD内のコピーに同期されます。
 
-Azure AD Connectは、継続的なアカウント同期を提供します。 これは、オンプレミス サーバー上で実行され、DS の変更をADし、それらの変更をサーバーに転送Azure AD。 Azure AD Connectは、同期するアカウントと、ハッシュ化されたバージョンのユーザー パスワード (パスワード ハッシュ同期 (PHS) と呼ばれる) を同期するかどうかをフィルター処理する機能を提供します。
+Azure AD Connectは、継続的なアカウント同期を提供します。 オンプレミス サーバー上で実行され、AD DS の変更が確認され、それらの変更がAzure ADに転送されます。 Azure AD Connectでは、同期されるアカウントと、パスワード ハッシュ同期 (PHS) と呼ばれるハッシュバージョンのユーザー パスワードを同期するかどうかをフィルター処理する機能が提供されます。
 
-ハイブリッド ID を導入した場合、オンプレミスの AD DS がアカウント情報の信頼できるソースとなります。 つまり、管理タスクは主にオンプレミスで実行され、そのタスクはオンプレミスに同期Azure AD。
+ハイブリッド ID を導入した場合、オンプレミスの AD DS がアカウント情報の信頼できるソースとなります。 つまり、主にオンプレミスで管理タスクを実行し、その後、Azure ADに同期されます。
 
 ハイブリッド ID のコンポーネントを次に示します。
 
 ![ハイブリッド ID のコンポーネント。](../media/about-microsoft-365-identity/hybrid-identity.png)
 
-テナントAzure AD DS アカウントのコピー ADがあります。 この構成では、クラウド サービスにアクセスするオンプレミスユーザーとリモート ユーザーの両方Microsoft 365に対して認証Azure AD。
+Azure AD テナントには、AD DS アカウントのコピーがあります。 この構成では、クラウド サービスにアクセスするオンプレミスユーザーとリモート ユーザーの両方がAzure ADに対して認証Microsoft 365。
 
 > [!NOTE]
-> ハイブリッド ID のユーザー アカウントを同期Azure AD Connect常にユーザー アカウントを使用する必要があります。 ライセンスの割り当てとグループAzure AD、アクセス許可の構成、およびユーザー アカウントを含むその他の管理タスクを実行するには、同期されたユーザー アカウントが必要です。
+> ハイブリッド ID のユーザー アカウントを同期するには、常にAzure AD Connectを使用する必要があります。 ライセンスの割り当てとグループ管理の実行、アクセス許可の構成、およびユーザー アカウントを含むその他の管理タスクを実行するには、Azure ADに同期されたユーザー アカウントが必要です。
 
-### <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>ハイブリッド ID とディレクトリ同期によるMicrosoft 365
+### <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Microsoft 365のハイブリッド ID とディレクトリの同期
 
-ビジネス ニーズと技術的要件に応じて、ハイブリッド ID モデルとディレクトリ同期は、ハイブリッド ID モデルとディレクトリ同期を採用している企業のお客様にとって最も一般的な選択肢Microsoft 365。 ディレクトリ同期を使用すると、Active Directory ドメイン サービス (AD DS) の ID を管理し、ユーザー アカウント、グループ、および連絡先に対する更新はすべて、Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントに同期されます。
+ビジネス ニーズと技術的要件に応じて、ハイブリッド ID モデルとディレクトリ同期は、Microsoft 365を採用しているエンタープライズ顧客にとって最も一般的な選択肢です。 ディレクトリ同期を使用すると、Active Directory Domain Services (AD DS) 内の ID を管理し、ユーザー アカウント、グループ、および連絡先に対するすべての更新が、Microsoft 365 サブスクリプションのAzure Active Directory (Azure AD) テナントに同期されます。
 
 >[!Note]
->DS ADアカウントが初めて同期された場合、ds ユーザー アカウントには Microsoft 365 ライセンスが自動的に割り当てられるのではなく、電子メールなどの Microsoft 365 サービスにアクセスできません。 最初に使用場所を割り当てる必要があります。 次に、グループ メンバーシップを使用して、個別または動的にこれらのユーザー アカウントにライセンスを割り当てる。
+>AD DS ユーザー アカウントが初めて同期されると、自動的にMicrosoft 365 ライセンスが割り当てられず、メールなどのMicrosoft 365サービスにアクセスできません。 最初に、使用場所を割り当てる必要があります。 次に、グループ メンバーシップを使用して、これらのユーザー アカウントに個別または動的にライセンスを割り当てます。
 >
 
 #### <a name="authentication-for-hybrid-identity"></a>ハイブリッド ID の認証
@@ -95,67 +100,67 @@ Azure AD Connectは、継続的なアカウント同期を提供します。 こ
 
 - 管理された認証
 
-  Azure ADは、ローカルに保存されたハッシュ バージョンのパスワードを使用して認証プロセスを処理するか、オンプレミスのソフトウェア エージェントに資格情報を送信して、オンプレミスの AD DS によって認証されます。
+  Azure ADは、ローカルに格納されたハッシュバージョンのパスワードを使用して認証プロセスを処理するか、オンプレミスの AD DS によって認証されるオンプレミスのソフトウェア エージェントに資格情報を送信します。
 
 - フェデレーション認証
 
-  Azure AD認証を要求するクライアント コンピューターを別の ID プロバイダーにリダイレクトします。
+  Azure AD認証を要求しているクライアント コンピューターを別の ID プロバイダーにリダイレクトします。
 
 #### <a name="managed-authentication"></a>管理された認証
 
-管理認証には、次の 2 種類があります。
+マネージド認証には、次の 2 種類があります。
 
 - パスワード ハッシュ同期 (PHS)
 
-  Azure AD認証自体を実行します。
+  Azure ADは認証自体を実行します。
 
 - パススルー認証 (PTA)
 
-  Azure AD DS がADを実行している場合。
+  AD DS に認証を実行Azure AD。
 
 
 ##### <a name="password-hash-synchronization-phs"></a>パスワード ハッシュ同期 (PHS)
 
-PHS を使用すると、DS ユーザー ADと同期し、Microsoft 365をオンプレミスで管理できます。 ユーザー パスワードのハッシュは、AD DS から Azure ADに同期され、ユーザーがオンプレミスとクラウドで同じパスワードを使用します。 これは、ユーザーの DS ID に対する認証を有効AD最も簡単な方法Azure AD。 
+PHS では、AD DS ユーザー アカウントをMicrosoft 365と同期し、オンプレミスでユーザーを管理します。 ユーザーパスワードのハッシュは、ユーザーがオンプレミスとクラウドで同じパスワードを持つよう、AD DS からAzure ADに同期されます。 これは、Azure ADで AD DS ID の認証を有効にする最も簡単な方法です。 
 
 ![パスワード ハッシュ同期 (PHS)。](../media/plan-for-directory-synchronization/phs-authentication.png)
 
-パスワードをオンプレミスで変更またはリセットすると、新しいパスワード ハッシュが Azure AD に同期され、ユーザーはクラウド リソースとオンプレミス リソースに対して常に同じパスワードを使用できます。 ユーザー のパスワードは、ユーザーに送信Azure AD、クリア テキストAzure ADに保存されません。 Id Protection など、Azure ADの一部のプレミアム機能では、どの認証方法が選択されているに関係なく PHS が必要です。
+パスワードがオンプレミスで変更またはリセットされると、新しいパスワード ハッシュがAzure ADに同期されるため、ユーザーはクラウド リソースとオンプレミス リソースに対して常に同じパスワードを使用できます。 ユーザー パスワードは、Azure ADに送信されたり、クリア テキストでAzure ADに保存されたりすることはありません。 Identity Protection など、Azure ADの一部のプレミアム機能では、選択されている認証方法に関係なく PHS が必要です。
   
-詳細 [については、「適切な認証方法の選択](/azure/active-directory/hybrid/choose-ad-authn) 」を参照してください。
+詳細については [、適切な認証方法の選択](/azure/active-directory/hybrid/choose-ad-authn) に関するページを参照してください。
   
 ##### <a name="pass-through-authentication-pta"></a>パススルー認証 (PTA)
 
-PTA は、1 つ以上のオンプレミス サーバーで実行されているソフトウェア エージェントを使用して、Azure AD 認証サービスに対する簡単なパスワード検証を提供し、ユーザーを AD DS で直接検証します。 PTA を使用すると、DS ADアカウントとMicrosoft 365を同期し、オンプレミスのユーザーを管理します。 
+PTA では、1 つ以上のオンプレミス サーバーで実行されているソフトウェア エージェントを使用してAzure AD認証サービスに対して簡単なパスワード検証を提供し、AD DS でユーザーを直接検証します。 PTA では、AD DS ユーザー アカウントをMicrosoft 365と同期し、オンプレミスでユーザーを管理します。 
 
 ![パススルー認証 (PTA)。](../media/plan-for-directory-synchronization/pta-authentication.png)
 
-PTA を使用すると、ユーザーはオンプレミスのアカウントとパスワードを使用して、Microsoft 365とアプリケーションの両方にサインインできます。 この構成は、ユーザーのパスワード ハッシュをユーザーに保存せずに、AD DS に対してユーザーのパスワードを直接検証Azure AD。 
+PTA を使用すると、ユーザーはオンプレミスのアカウントとパスワードを使用して、オンプレミスとMicrosoft 365の両方のリソースとアプリケーションにサインインできます。 この構成では、パスワード ハッシュをAzure ADに格納せずに、ユーザーのパスワードをオンプレミスの AD DS に対して直接検証します。 
 
-PTA は、セキュリティ要件を持つ組織でも、オンプレミスのユーザー アカウントの状態、パスワード ポリシー、ログオン時間を直ちに適用します。 
+PTA は、セキュリティ要件を持つ組織が、オンプレミスのユーザー アカウントの状態、パスワード ポリシー、およびログオン時間を直ちに適用する場合でもあります。 
   
-詳細 [については、「適切な認証方法の選択](/azure/active-directory/hybrid/choose-ad-authn) 」を参照してください。
+詳細については [、適切な認証方法の選択](/azure/active-directory/hybrid/choose-ad-authn) に関するページを参照してください。
   
 ##### <a name="federated-authentication"></a>フェデレーション認証
 
-フェデレーション認証は、主に、より複雑な認証要件を持つ大規模なエンタープライズ組織向けです。 AD DS ID は、Microsoft 365と同期され、ユーザー アカウントはオンプレミスで管理されます。 フェデレーション認証を使用すると、ユーザーはオンプレミスとクラウドで同じパスワードを持ち、ユーザーはパスワードを使用するために再びサインインする必要Microsoft 365。 
+フェデレーション認証は、主に、より複雑な認証要件を持つ大企業の組織向けです。 AD DS ID はMicrosoft 365と同期され、ユーザー アカウントはオンプレミスで管理されます。 フェデレーション認証では、ユーザーはオンプレミスとクラウドで同じパスワードを持ち、Microsoft 365を使用するためにもう一度サインインする必要はありません。 
 
-フェデレーション認証は、スマートカードベース認証やサードパーティの多要素認証などの追加の認証要件をサポートできます。通常、組織が Azure AD でネイティブにサポートされていない認証要件を持っている場合に必要です。
+フェデレーション認証は、スマートカード ベースの認証やサード パーティの多要素認証などの追加の認証要件をサポートできます。通常、組織でネイティブにサポートされていない認証要件がAzure ADでサポートされている場合に必要です。
  
-詳細 [については、「適切な認証方法の選択](/azure/active-directory/hybrid/choose-ad-authn) 」を参照してください。
+詳細については [、適切な認証方法の選択](/azure/active-directory/hybrid/choose-ad-authn) に関するページを参照してください。
   
-サード パーティ認証および ID プロバイダーの場合、オンプレミスのディレクトリ オブジェクトは、主にサード パーティ ID プロバイダー (IdP) によって管理される Microsoft 365 およびクラウド リソース アクセスに同期できます。 組織でサード パーティのフェデレーション ソリューションを使用している場合は、サード パーティフェデレーション ソリューションが Azure AD と互換性がある場合は、Microsoft 365 用にそのソリューションを使用してサインオンを構成できます。
+サード パーティの認証および ID プロバイダーの場合、オンプレミスのディレクトリ オブジェクトは、主にサード パーティ ID プロバイダー (IdP) によって管理されるMicrosoft 365およびクラウド リソース アクセスに同期される場合があります。 組織でサード パーティのフェデレーション ソリューションを使用している場合は、サード パーティのフェデレーション ソリューションがAzure ADと互換性がある場合に備えて、Microsoft 365用にそのソリューションでサインオンを構成できます。
   
-詳細については[Azure ADフェデレーション互換性リスト](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)を参照してください。
+詳細については、[Azure ADフェデレーション互換性の一覧](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)を参照してください。
   
 ### <a name="administration"></a>管理
 
-元のユーザー アカウントと権限のあるユーザー アカウントはオンプレミスの AD DS に格納されますので、AD DS を管理するのと同じツールを使用して id を管理します。
+元の権限のあるユーザー アカウントはオンプレミスの AD DS に格納されるため、AD DS を管理するのと同じツールを使用して ID を管理します。
 
-同期されたユーザー アカウントを管理Microsoft 365 管理センター、Microsoft 365または PowerShell を使用Azure AD。
+Microsoft 365にMicrosoft 365 管理センターまたは PowerShell を使用して、Azure ADで同期されたユーザー アカウントを管理することはありません。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
-[![特権アカウントMicrosoft 365保護する](../media/deploy-identity-solution-overview/protect-your-global-administrator-accounts.png)](protect-your-global-administrator-accounts.md)
+[![Microsoft 365特権アカウントを保護する](../media/deploy-identity-solution-overview/protect-your-global-administrator-accounts.png)](protect-your-global-administrator-accounts.md)
 
-手順 [2 に進み](protect-your-global-administrator-accounts.md) 、グローバル管理者アカウントをセキュリティで保護します。
+[手順 2 に](protect-your-global-administrator-accounts.md)進み、グローバル管理者アカウントをセキュリティで保護します。

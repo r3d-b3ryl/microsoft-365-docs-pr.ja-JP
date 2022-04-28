@@ -2,8 +2,8 @@
 title: CellTrust SL2 プラットフォームからMicrosoft 365にデータをアーカイブする
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: CellTrust SL2 データ コネクタを設定して使用して、モバイル通信データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: a4cbfc9dccd2541de0a9dca1a3791d5f213aa73d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 0ac1137c8b6ee2d2267421c80adbbf65eaf9e5b7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996396"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100899"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>CellTrust SL2 からMicrosoft 365にデータをアーカイブする
 
@@ -103,7 +103,7 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
 CellTrust SL2 データ コネクタの設定に関するヘルプについては、CellTrust への問い合わせの詳細については、CellTrust [カスタマー サポート ページ](https://www.celltrust.com/contact-us/#support) を参照してください。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - ドメイン管理者は、ドメインまたはそのドメイン内の任意の OU のコネクタを設定できます。 OU 管理者アカウントを使用する場合は、その特定の OU のコネクタのみを設定できます。
 

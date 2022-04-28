@@ -2,8 +2,8 @@
 title: 電子情報開示の予測コーディング (プレミアム) - クイック スタート
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 電子情報開示 (プレミアム) の予測コーディング モジュールの使用を開始する方法について説明します。 この記事では、予測コーディングを使用して、調査に最も関連するレビュー セット内のコンテンツを識別するエンドツーエンドのプロセスについて説明します。
-ms.openlocfilehash: dc4edcb6affa7ccfd6a915839ef84b0d453fcfca
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: ac8e31540fbe817b83b5fd0bdae2fadea7040b1a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996154"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100793"
 ---
 # <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>クイック スタート: 電子情報開示での予測コーディング (プレミアム) (プレビュー)
 
