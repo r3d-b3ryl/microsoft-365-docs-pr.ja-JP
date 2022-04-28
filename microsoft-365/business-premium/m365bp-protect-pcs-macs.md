@@ -1,14 +1,14 @@
 ---
-title: 管理されていないWindows 10 PC と Mac を保護Microsoft 365 Business Premium
+title: Microsoft 365 Business Premium でアンマネージド Windows 10 PC と Mac を保護する
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,58 +23,54 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 管理されていないデバイスまたは持ち込み専用デバイス (BYOD) を保護するには、Microsoft 365 Business Premium。
-ms.openlocfilehash: b3d783ba498337af7ff867fe749366abe1734da5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
+description: Microsoft 365 Business Premium を使用して、管理されていないデバイスまたは持ち込みデバイス (BYOD) をサイバー攻撃から保護します。 Windows PC と Mac のサイバーセキュリティを設定する方法。
+ms.openlocfilehash: a8b0fb278e4fb005d6e31d92521791134395b811
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331051"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094165"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>管理されていないWindows 10 PC と Mac を保護Microsoft 365 Business Premium
+# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium でアンマネージド Windows 10 PC と Mac を保護する
 
-Microsoft Intune に登録することで、Windows 10 PC と Mac を管理できます。これにより、環境内のデータにアクセスする前に、正常で安全な状態を確保できます。 ただし、多くのキャンペーンや小規模企業には、組織によって管理されない独自のデバイス (BYOD) を持ち込むスタッフが含まれます。 これらの管理されていない PC および Mac については、この記事を使用して、最小限のセキュリティ機能が構成されていることを確認します。
+目標として、Microsoft Intune に登録されていないアンマネージド Windows 10 PC および Mac の保護を作成することに重点を置いて説明します。 中小企業やキャンペーンには、各自のデバイス (BYOD) を持ち込むスタッフがいる可能性があり、これらのデバイスは管理されていない可能性があります。 BYOD には、個人所有の電話、タブレット、PC が含まれます。 
 
-<!--A Windows 10 PC is considered managed after you have completed the following two steps:
+>[!NOTE]
+>BYOD ユーザーは、これらのデバイスを登録し、会社のリソースへのアクセスを受け取るには、それぞれポータル サイト アプリをインストールして実行する必要があります。
 
-1. You (or the admin) set up device and data protection policies in the [setup  wizard](../business/set-up.md).
-
-2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 username and password to sign in.
-3. --> 
-
-## <a name="protect-a-computer-running-windows-10-or-a-mac"></a>コンピューターまたは Mac で実行Windows 10を保護する
-
-<!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365, or a Mac, the Microsoft 365 protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
--->
-PC または mac Windows 10が組織によって管理されていない場合は、必ずこれらのセキュリティ機能を構成してください。
+すべての BYOD デバイスで最小限のセキュリティ機能が構成されるように、現場のユーザーがこれらのガイドラインに従っていることを確認することが重要です。
 
 ## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
 
 **デバイスの暗号化を有効にする**<p>
+デバイスの暗号化は、さまざまな Windows デバイスで使用でき、暗号化によってデータを保護するのに役立ちます。 デバイスの暗号化を有効にすると、承認された個人のみがデバイスとデータにアクセスできるようになります。 手順については、「[デバイス暗号化をオンする](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)」をご覧ください。
 
-デバイスの暗号化は、さまざまなデバイスで利用Windows、データを暗号化することでデータを保護するのに役立ちます。 デバイスの暗号化を有効にした場合、承認された個人のみがデバイスとデータにアクセスできます。 手順 [については、「デバイスの暗号化を有効](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) にする」を参照してください。
+ デバイスでデバイスの暗号化を使用できない場合は、代わりに標準の [BitLocker 暗号化](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)を有効にできます。 (BitLocker は、Windows 10 Home エディションでは使用できません)。 
 
- デバイスでデバイスの暗号化を利用できない場合は、代わりに標準 [の BitLocker 暗号化を](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 有効にできます。 (BitLocker は、このエディションではWindows 10 Homeできません)。 
-
-**デバイスを保護するには、Windows セキュリティ**<p>
-インストールされている場合Windows 10、最新のウイルス対策保護が提供Windows セキュリティ。 Windows 10 を初めて起動すると、Windows セキュリティ がオンで、マルウェア (悪意のあるソフトウェア)、ウイルス、セキュリティの脅威をスキャンして PC を保護するために積極的に支援します。 Windows セキュリティリアルタイム保護を使用して、PC でダウンロードまたは実行するすべてをスキャンします。
+**デバイスを Windows セキュリティで保護する**<p>
+Windows 10 をお使いの場合は、Windows セキュリティを使用した最新のウイルス対策保護を利用できます。 Windows 10 を初めて立ち上げるときは、Windows セキュリティが有効になっており、マルウェア (悪意のあるソフトウェア)、ウイルス、およびセキュリティの脅威を積極的にスキャンして PC を保護します。 Windows セキュリティは、リアルタイム保護を使用して、ダウンロードされたアイテム、または PC で実行されるアイテムをすべてスキャンします。
 
 Windows Update では、自動的に Windows セキュリティの更新プログラムをダウンロードして、PC の安全を確保し、脅威から保護します。
 
-以前のバージョンの Windows を使用している場合Microsoft Security Essentialsに移動するとWindows セキュリティ。 詳細については、「デバイスを保護[する」](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)を参照Windows セキュリティ。
+以前のバージョンの Windows を使用していて、Microsoft Security Essentials を使用している場合は、Windows セキュリティに移行することをお勧めします。 詳細については、「[Windows セキュリティでデバイスを保護する](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)」を参照してください。
 
 **Windows ファイアウォールを有効にする**<p>
-別のファイアウォールを有効Windows場合でも、常にファイアウォールを実行する必要があります。 ファイアウォールをWindowsすると、デバイス (およびネットワークがある場合) が、承認されていないアクセスに対してより脆弱になる可能性があります。 手順[については、「Windowsファイアウォールを有効または無効にする](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)」を参照してください。
+別のファイアウォールが有効な場合でも、Windows ファイアウォールを常に実行する必要があります。 Windows ファイアウォールをオフにすると、デバイス (およびお持ちの場合はネットワーク) が攻撃を受けやすくなります。 手順については、「[Windows ファイアウォールをオン/オフにする](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)」を参照してください。
+
+ミッションが完了しました。 では、[フィッシングやその他の攻撃に対するメール システムをセキュリティで保護する方法](m365bp-protect-email-overview.md)について説明します。
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 
-**FileVault を使用して Mac ディスクを暗号化する**<p>
-ディスク暗号化は、デバイスが紛失または盗難に遭った場合にデータを保護します。 FileVault のフル ディスク暗号化は、起動ディスク上の情報への不正アクセスを防ぐのに役立ちます。 手順 [については、「FileVault を使用して Mac 上の起動ディスクを暗号化する」](https://support.apple.com/HT204837) を参照してください。
+**FileVault を使用して、Mac のディスクを暗号化する**<p>
+ディスクを暗号化すると、デバイスの紛失時または盗難時にデータが保護されます。 FileVault のディスク全体の暗号化を行うと、スタートアップ ディスクの情報に対する不正アクセスを防止するのに役立ちます。 手順については、「[FileVault を使用して Mac のスタートアップ ディスクを暗号化する](https://support.apple.com/HT204837)」を参照してください。
 
-**マルウェアから Mac を保護する**<p>
-Microsoft では、Mac に信頼性の高いウイルス対策ソフトウェアをインストールして使用する必要があります。 選択肢の一覧については、次の記事を参照してください。[ベスト Mac ウイルス対策 2019。](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)
+**Mac をマルウェアから保護する**<p>
+Microsoft は、信頼性の高いウイルス対策ソフトウェアを Mac にインストールして使用することをお勧めします。 選択肢の一覧については、「[Best Mac ウイルス対策 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)」をご覧ください。
 
-また、信頼できるソースからのみソフトウェアを使用することで、マルウェアのリスクを軽減できます。 [セキュリティとプライバシー] &設定を使用すると、Mac にインストールされているソフトウェアのソースを指定できます。 詳細については、「マルウェアから [Mac を保護する」を参照してください](https://support.apple.com/kb/PH25087)。
+信頼できる発行元のみのソフトウェアを使用することにより、マルウェアの危険性を削減できます。 セキュリティとプライバシーの設定では、Mac にインストールされるソフトウェアの発行元を指定できます。 詳細については、「[マルウェアから Mac を保護する](https://support.apple.com/kb/PH25087)」を参照してください。
 
-**ファイアウォール保護を有効にする**<p>
-ファイアウォールの設定を使用して、インターネットやネットワークに接続するときに他のコンピューターによって開始された不要な連絡先から Mac を保護します。 この保護がない場合、Mac は不正アクセスに対してより脆弱になる可能性があります。 手順 [については、アプリケーション ファイアウォール](https://support.apple.com/HT201642) に関するページを参照してください。
+**ファイアウォールの保護を有効にする**<p>
+インターネットやネットワークに接続している場合は、ファイアウォールの設定を使用して、別のコンピューターが開始した不要な連絡先から Mac を保護します。 この保護がない場合は、お使いの Mac が攻撃に対してより脆弱になる可能性があります。 手順については、「[アプリケーション ファイアウォールについて](https://support.apple.com/HT201642)」を参照してください。
+
+ミッションが完了しました。 では、[フィッシングやその他の攻撃に対するメール システムをセキュリティで保護する方法](m365bp-protect-email-overview.md)について説明します。
+
