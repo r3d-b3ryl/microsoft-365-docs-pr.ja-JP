@@ -2,8 +2,8 @@
 title: 組織の PST ファイルのインポートに関する詳細
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,19 +21,19 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Microsoft Purview コンプライアンス ポータルのインポート サービスを使用して、メール データ (PSTファイル) をユーザーのメールボックスに一括でインポートする方法について説明します。
-ms.openlocfilehash: a1720b51a57569d676aeac37933f1dce3075e7ed
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c1a7cd9a2c2c0a3ee564710461796c690c7391b5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001018"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092759"
 ---
 # <a name="learn-about-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートに関する詳細
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
-> この記事は管理者向けです。 自分のメールボックスに PST ファイルをインポートしようとしていますか? 「[Outlook.pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。
+> この記事は管理者向けです。自分のメールボックスに PST ファイルをインポートする場合は、「[Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>のインポート サービスを使用して、PST ファイルを組織の Exchange Online メールボックスにすばやく一括でインポートできます。PST ファイルを Microsoft 365 にインポートするには 2 つの方法があります:
 

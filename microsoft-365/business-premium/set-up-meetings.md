@@ -4,11 +4,11 @@ f1.keywords:
 - NOCSH
 ms.author: twerner
 author: twerner
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,28 +24,30 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft Teamsを使用してオンライン会議を設定します。
-ms.openlocfilehash: d945d5526e3cdd06bc0a7c7a80ef7cff0160d07d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
-ms.translationtype: MT
+description: Microsoft Teams でオンライン会議を設定します。
+ms.openlocfilehash: 9ed624d8fe607f460d36eb391d801066b69f7141
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823104"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095146"
 ---
 # <a name="set-up-meetings"></a>会議をセットアップする
 
-Microsoft Teamsの会議には、オーディオ、ビデオ、共有が含まれます。 また、オンラインになっているため、スタッフが地理的に分散している場合やリモートで作業している場合でも、会議スペースは常に (部屋やプロジェクターを必要とせずに! Microsoft Teams会議は、組織内外のスタッフと一緒に行うのに最適な方法です。 組織のメンバーである必要はありません。また、会議に参加するためのアカウントも必要ありません。 Microsoft Teamsを使用して、オンライン会議をスケジュールして実行できます。 会議中は、画面の共有、ファイルの共有、タスクの割り当てなどを行うことができます。 組織外のスタッフ、ボランティア、ゲストを会議に含めることができます。 小規模な企業やプラクティスは、スタッフと会ったり、Microsoft Teamsを介してクライアントやパートナーと会ったりすることができます。
+組織のメンバーがすべての会議で Microsoft Teams を使用していることを確認してください。 Teams 会議のファイルには、オーディオ、ビデオ、および共有が含まれます。これらはオンラインであるため、常に会議スペースがあり、プロジェクターのある部屋は必要ありません。 Microsoft Teams 会議は、組織の内外の両方でスタッフと一緒に集まるための優れた方法です。 
 
-[![会議の 2 人のユーザーの図。](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+Teams を使用すると、組織のメンバーである必要はなく、会議に参加するためのアカウントを持っている必要もありません。 画面の共有、ファイルの共有、タスクの割り当てなどを行うことができるオンライン会議をスケジュールして実行できます。 政治キャンペーンには、組織外のスタッフ、ボランティア、またはゲストを含めることができます。 安全で心配のない環境で、Microsoft Teams を介してクライアント、スタッフ、またはパートナーと簡単に会うことができます。
 
-[PDF](https://go.microsoft.com/fwlink/?linkid=2078712) またはPowerPointのインフォグラフィックをダウンロードして、[Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=2079515)を使用してオンライン会議に参加またはホストする方法の概要を簡単に確認できます。
+[![会議中の 2 人のユーザーの図。](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2078712) または [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) のインフォグラフィックをダウンロードして、Microsoft Teams とのオンライン会議に参加またはホストする方法の概要を確認してください。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
-オンライン会議のベスト プラクティスに従ってください。
+オンライン会議では、次のベスト プラクティスに従います。
 
-- Microsoft Teamsでオンライン会議のスケジュールを設定します。 チームとチャネルを選択すると、そのチームまたはチャネルの参加者が自動的に招待Teams。
-- 即席会議が必要ですか? 1 対 1 のチャットを行っている場合は、[ **今すぐ会議** ] を選択して、チャット相手とビデオ通話または音声通話を開始します。
+- Microsoft Teams でオンライン会議をスケジュールします。 チームとチャネルを選択すると、Teams はそのチームまたはチャネルの参加者を自動的に招待します。
+- 即席の会議が必要ですか? 1 対 1 のチャットをしている場合は、**[今すぐ会議]** を選択して、チャットしている相手とのビデオ通話または音声通話を開始します。
 
 ## <a name="schedule-a-meeting"></a>会議の予約
 
@@ -55,6 +57,12 @@ Microsoft Teamsの会議には、オーディオ、ビデオ、共有が含ま�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn]
 
-Microsoft Teamsでの会議の詳細については、以下をご覧ください。
+Microsoft Teams での会議についてご確認ください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]
+
+## <a name="next-objective"></a>次の目的
+
+このミッションの目的が達成されたら、[ファイルとビデオを安全に共有する](share-files-and-videos.md)方法について説明します
+
+

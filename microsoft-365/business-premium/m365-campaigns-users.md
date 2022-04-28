@@ -1,14 +1,14 @@
 ---
-title: これらのセキュリティ推奨事項がユーザーに与える影響
+title: これらのセキュリティに関する推奨事項がユーザーに与える影響
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,68 +23,68 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: ユーザーに対するこれらのセキュリティに関する推奨事項Microsoft 365 Business Premium、データを保護する方法について学習します。
-ms.openlocfilehash: f1c327badefcd7f5d7f1728489a8388e7e7925e8
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Microsoft 365 Business Premium に関するこれらのセキュリティの推奨事項がユーザーにどのように影響し、データを保護するかについて説明します。
+ms.openlocfilehash: 202df778e74fb0f14a92b572df977088f8319595
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635155"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099963"
 ---
-# <a name="how-these-security-recommendations-affect-your-users"></a>これらのセキュリティ推奨事項がユーザーに与える影響
+# <a name="how-these-security-recommendations-affect-your-users"></a>これらのセキュリティに関する推奨事項がユーザーに与える影響
 
-このソリューションのセキュリティMicrosoft 365、ハッカーが環境にアクセスするのがはるかに困難になります。 トレードオフは、ユーザーが、このより安全な環境で作業する方法を認識する必要があるという点です。 少し余分な忍耐が必要な場合は理解していますが、組織を保護する価値があります。
+このソリューションでの Microsoft 365 のセキュリティに関する推奨事項により、ハッカーが環境にアクセスするのがはるかに困難になります。 トレードオフは、ユーザーがこのより安全な環境内で作業する方法を知っている必要があるということです。 少し余分な忍耐が必要であることは理解していますが、組織を保護することは価値があります。
 
-![iPhone、Android デバイス、Mac、mac、Windows 10、主要なスタッフの重要なポイントを以下から要約した図。](../media/M365-democracy-Users_900px.png)
+![iPhone、Android デバイス、Mac、Windows 10、共有、および主要なスタッフの重要なポイントを下からまとめた図。](../media/M365-democracy-Users_900px.png)
 
-## <a name="use-secure-email-practices"></a>セキュリティで保護された電子メールのプラクティスを使用する
+## <a name="use-secure-email-practices"></a>安全なメール設定を使用する
 
-すべてのユーザーは、電子メールを安全に保つために、次の電子メールプラクティスを認識して使用する必要があります。
+すべてのユーザーは、次のメール設定を認識して使用し、メールを安全に保つのに役立てる必要があります。
 
-- 認証アプリで多要素認証を使用するメールを設定します。
+- 認証アプリで多要素認証を使用するようにメールを設定します。
 
-- 正当なメールを確認し、高度なフィッシング保護 (Defender for Office 365) から安全に関するヒントを探します。
+- 正当なメールを確認し、高度なフィッシング保護 (Defender for Office 365) からの安全上のヒントを探します。
 
-- [リンクと添付ファイル] で確認された安全なリンクセーフ開セーフします。
+- 安全なリンクと安全な添付ファイルによって確認されたように、安全なリンクと添付ファイルのみを開きます。
 
-多要素認証 [とフィッシングなどの](m365bp-multifactor-authentication.md) 攻撃 [について詳しくは、次のページをご覧ください](m365-campaigns-phishing-and-attacks.md)。
+[多要素認証](m365bp-multifactor-authentication.md)、および[フィッシングとその他の攻撃](avoid-phishing-and-attacks.md)の詳細をご覧ください。
 
-自分と [チームの](m365-campaigns-protect-campaign-infographic.md) メンバーのためのヒントを含むインフォグラフィックをダウンロードします。
+自分とチームのメンバーのためのヒントを含む[インフォグラフィック](m365-campaigns-protect-campaign-infographic.md)をダウンロードします。
 
-## <a name="set-up-iphones-and-android-devices"></a>iPhone と Android デバイスのセットアップ
+## <a name="set-up-iphones-and-android-devices"></a>iPhone および Android デバイスを設定する
 
-環境に追加するユーザーはすべて、 [iPhone と Android](../business/set-up-mobile-devices.md) デバイスをセットアップして安全に動作するために数分かかる必要があります。
+環境に追加するすべてのユーザーは、[iPhone および Android デバイスが安全に動作するようにセットアップする](../business/set-up-mobile-devices.md)のに数分必要とします。
 
-- 認証アプリで多要素認証を使用するデバイスを設定します。
+- 認証アプリで多要素認証を使用するようにデバイスを設定します。
 
-- アプリ ストアからモバイル、Word、Outlook、その他の Microsoft OneDriveなどの Microsoft モバイル アプリを使用します。 iPhone および Android デバイスに含まれるネイティブ メール アプリはサポートされていません。 
+- Outlook Mobile、Word、OneDrive、およびアプリ ストアの他の Microsoft アプリを含む、Microsoft モバイル アプリを使用します。 iPhone および Android デバイスに含まれているネイティブ メール アプリはサポートされていません。 
 
 - ユーザーがデバイスのロックを解除するには、PIN が必要です。
 
-これらの設定が完了すると、メールを含むこれらのデバイス上の組織データにアクセスするときに、認証アプリの使用を求めるメッセージがユーザーに表示されます。
+これらを設定すると、ユーザーは、これらのデバイス上の組織データ (メールなど) にアクセスするときに、認証アプリを使用するように求められます。
 
-## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>BYOD Mac と PC のWindows 10を維持する
+## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>BYOD Mac と Windows 10 PC を最新の状態に保つ
 
-また、ユーザーが主な作業デバイスを最新の状態に保つ必要があります。
+また、ユーザーがプライマリ作業デバイスを最新の状態に保つことも重要です。
 
-- デスクトップ アプリの最新バージョンをインストールOffice、プロンプトが表示されたら、更新プログラムを最新の状態に保つ必要があります。
+- 最新バージョンの Office デスクトップ アプリをインストールし、プロンプトが表示されたら、これらを更新して最新の状態に保ちます。
 
-- 最新の更新プログラムなどのオペレーティング システムの更新プログラムをWindowsしてください。
+- Windows Update などのオペレーティング システムの更新を常に把握してください。
 
-管理[されていないWindows 10 Mac デバイスの](m365bp-protect-pcs-macs.md)場合、ユーザーは基本的なセキュリティ機能が有効になっているか確認する責任があります。
+[管理されていない Windows 10 および Mac デバイス](m365bp-protect-pcs-macs.md)の場合、ユーザーは基本的なセキュリティ機能が有効になっていることを確認する責任があります。
 
-**BYOD Windows 10 Mac デバイスで基本的なセキュリティ機能を有効にする**
+**BYOD Windows 10 および Mac デバイスで基本的なセキュリティ機能を有効にする**
 
 |**Windows 10**|**Mac**|
 |:-----|:------|
-|BitLocker デバイス保護を有効にする<p><p> オンWindows Defender確認する <p>Windows ファイアウォールを有効にする| FileVault を使用して Mac ディスクを暗号化する <p><p>信頼性の高いウイルス対策ソフトウェアを使用する <p>ファイアウォール保護を有効にする|
+|BitLocker のデバイス保護を有効にします。<p><p> Windows Defender がオンのままであることを確認する <p>Windows ファイアウォールを有効にする| FileVault を使用して Mac ディスクを暗号化する <p><p>信頼性の高いウイルス対策ソフトウェアを使用する <p>ファイアウォールの保護を有効にする|
 
-これらの推奨事項の詳細については、「アカウントとデバイスをハッカーやマルウェアから保護 [する」を参照してください](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)。
+これらの推奨事項の詳細については、「[アカウントとデバイスをハッカーやマルウェアから保護する](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)」を参照してください。
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>オンライン、Microsoft Teams、OneDrive、SharePointツールを使用して共同作業する
+## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Microsoft Teams、OneDrive、SharePoint Online、およびその他のツールを使用して共同作業する
 
-ユーザーは、組織のファイルを他の場所で共有して保存Microsoft 365。 Microsoft 365な共同作業と共有を可能な限り簡単に行います。 ファイルや[ビデオは、](share-files-and-videos.md)Microsoft Teams、OneDrive、ストリーム、ファイル内から直接共有できます。 これらのツール内からの共有は、データの漏洩を防ごうのに役立ちます。 機密データに追加の保護を追加して、組織外での共有を防止できます。
+ユーザーは、組織のファイルを Microsoft 365 以外の場所で共有および保存したくなる場合があります。 Microsoft 365 を使用すると、共同作業と安全な共有が可能な限り簡単になります。 [ファイルやビデオ](share-files-and-videos.md)は、Microsoft Teams、OneDrive、Stream から直接、さらにはファイル内からでも共有できます。 これらのツール内から共有することで、データの漏洩を防ぐことができます。 機密データに保護を追加して、組織外での共有を防ぐことができます。
 
-## <a name="set-up-managed-windows-10-devices"></a>管理対象デバイスをWindows 10する
+## <a name="set-up-managed-windows-10-devices"></a>管理された Windows 10 デバイスを設定する
 
-最も重要なスタッフ メンバーは、新しく取得したデバイスを管理Windows 10使用することをお勧めします。 これらのデバイスを管理およびセキュリティ保護 [する方法を示します](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)。 これにより、ハッカーにとって最も価値の高いターゲットであるスタッフメンバーが最も多くの保護を受け取る。
+最も重要なスタッフ メンバーは、管理している新しく取得した Windows 10 デバイスを使用することをお勧めします。 [これらのデバイスを管理および保護する](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)方法を紹介します。 これにより、ハッカーにとって最も価値の高いターゲットであるスタッフ メンバーが最大限の保護を受けることができます。
