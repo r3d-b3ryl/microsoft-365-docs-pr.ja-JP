@@ -2,8 +2,8 @@
 title: 電子情報開示調査のコンプライアンス境界を設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンス境界を使用して、電子情報開示マネージャーがMicrosoft 365で検索できるユーザー コンテンツの場所を制御する論理境界を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: adfdc0284983c6efb91f076be1a203734deb038e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 36a7f1e679f404a77b61c30b8efef7875558fee9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993976"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099193"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>電子情報開示調査のコンプライアンス境界を設定する
 
@@ -292,7 +292,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 検索アクセス許可のフィルターは、Exchange のパブリックフォルダーには適用されません。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - メールボックスのライセンス解除または論理的な削除が行われると、ユーザーはコンプライアンス境界内では考慮されなくなります。 削除時にメールボックスに保留が配置された場合でも、メールボックスに保持されているコンテンツは、コンプライアンス境界または検索アクセス許可フィルターの対象となります。
 

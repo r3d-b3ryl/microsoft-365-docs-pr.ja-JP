@@ -1,7 +1,7 @@
 ---
-title: 高度な検索クエリの結果に対してアクションを実行Microsoft 365 Defender
-description: 高度な検索クエリ結果の脅威と影響を受けるアセットにすばやく対処する
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、アクションの実行
+title: Microsoft 365 Defenderで高度なハンティング クエリの結果に対してアクションを実行する
+description: 高度なハンティング クエリの結果で脅威と影響を受ける資産に迅速に対処する
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, アクションを実行する
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb881611ad4b983eb80d028dfe3dee20c3ed6216
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: b7fbe659902bf89023e994f4e1304f25f3934db8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754671"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097613"
 ---
-# <a name="take-action-on-advanced-hunting-query-results"></a>高度な検索クエリの結果に対してアクションを実行する
+# <a name="take-action-on-advanced-hunting-query-results"></a>高度なハンティング クエリの結果に対してアクションを実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,50 +38,69 @@ ms.locfileid: "63754671"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-強力で包括的なアクション オプションを使用して、高度な狩猟[](advanced-hunting-overview.md)で見つけた脅威を迅速に含め、または侵害された資産に対処できます。 これらのオプションを使用すると、次の機能を使用できます。
+強力で包括的なアクション オプションを使用して、 [高度な捜索](advanced-hunting-overview.md) で見つけた脅威をすばやく含めたり、侵害された資産に対処したりできます。 これらのオプションを使用すると、次のことができます。
 
 - デバイスでさまざまなアクションを実行する
 - 検疫ファイル
 
 ## <a name="required-permissions"></a>必要なアクセス許可
-高度な検索を通じてアクションを実行するには、デバイスに修復アクションを送信するためのアクセス許可を持つ Microsoft Defender for Endpoint の [役割が必要です](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)。 アクションを実行できない場合は、次のアクセス許可を取得する方法について、グローバル管理者に問い合わせてください。
+高度な捜索を通じてデバイスに対してアクションを実行するには、[デバイスに修復アクションを送信するためのアクセス許可](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)を持つMicrosoft Defender for Endpointのロールが必要です。 アクションを実行できない場合は、次のアクセス許可の取得についてグローバル管理者に問い合わせてください。
 
-*脅威と脅威の>アクティブな修復アクション - 修復脆弱性の管理処理*
+*脅威と脆弱性の管理>アクティブな修復アクション - 修復処理*
+
+高度な捜索を通じて電子メールに対してアクションを実行するには、[メールを検索および消去](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)するためのMicrosoft Defender for Office 365のロールが必要です。
 
 ## <a name="take-various-actions-on-devices"></a>デバイスでさまざまなアクションを実行する
-クエリ結果の列で識別 `DeviceId` されるデバイスに対して、次のアクションを実行できます。
+クエリ結果の列で識別されたデバイスでは、次の `DeviceId` アクションを実行できます。
 
-- 影響を受けるデバイスを分離して、感染を含むか、攻撃が横方向に移動しなかっ
-- 調査パッケージを収集して、より多くの調査情報を取得する
-- ウイルス対策スキャンを実行して、最新のセキュリティ インテリジェンス更新プログラムを使用して脅威を検索および削除する
-- 自動調査を開始して、デバイスおよび他の影響を受ける可能性のあるデバイス上の脅威を確認および修復する
-- アプリの実行を Microsoft が署名した実行可能ファイルにのみ制限し、マルウェアや他の信頼されていない実行可能ファイルによる後続の脅威アクティビティを防止する
+- 影響を受けるデバイスを隔離して感染を封じ込めるか、攻撃が横方向に移動するのを防ぐ
+- 調査パッケージを収集して、より多くのフォレンジック情報を取得する
+- ウイルス対策スキャンを実行して、最新のセキュリティ インテリジェンス更新プログラムを使用して脅威を見つけて削除する
+- 自動調査を開始して、デバイスや影響を受けるその他のデバイス上の脅威を確認して修復する
+- アプリの実行を Microsoft 署名された実行可能ファイルのみに制限し、マルウェアやその他の信頼されていない実行可能ファイルによる後続の脅威アクティビティを防止する
 
-Microsoft Defender for Endpoint を通じてこれらの応答アクションがどのように実行されるのかについて詳しくは、デバイス [での応答アクションに関するページをご覧ください](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)。
+これらの応答アクションがMicrosoft Defender for Endpointを介して実行される方法の詳細については、[デバイスでの応答アクションに関する記事を参照してください](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)。
    
-## <a name="quarantine-files"></a>検疫ファイル
-ファイルに検疫アクション *を* 展開すると、ファイルが検出された場合に自動的に検疫されます。 このアクションを選択すると、次の列から選択して、検疫するクエリ結果内のファイルを識別できます。
+### <a name="quarantine-files"></a>検疫ファイル
+*ファイルに検疫* アクションを展開して、検出されたときに自動的に検疫されるようにすることができます。 このアクションを選択するときは、次の列から選択して、検疫するクエリ結果のファイルを特定できます。
 
-- `SHA1`: 最も高度な検索テーブルでは、この列は、記録されたアクションの影響を受けたファイルの SHA-1 を参照します。 たとえば、ファイルがコピーされた場合、この影響を受けるファイルはコピーされたファイルです。
-- `InitiatingProcessSHA1`: 最も高度な検索テーブルでは、この列は、記録されたアクションの開始を担当するファイルを参照します。 たとえば、子プロセスが起動された場合、この開始ファイルは親プロセスの一部になります。 
-- `SHA256`: この列は、列で識別されるファイルに相当する SHA-256 `SHA1` です。
-- `InitiatingProcessSHA256`: この列は、列で識別されるファイルに相当する SHA-256 `InitiatingProcessSHA1` です。
+- `SHA1`: ほとんどの高度なハンティング テーブルでは、この列は、記録されたアクションの影響を受けたファイルの SHA-1 を参照します。 たとえば、ファイルがコピーされた場合、この影響を受けるファイルはコピーされたファイルになります。
+- `InitiatingProcessSHA1`: ほとんどの高度なハンティング テーブルでは、この列は記録されたアクションの開始を担当するファイルを参照します。 たとえば、子プロセスが起動された場合、このイニシエーター ファイルは親プロセスの一部になります。 
+- `SHA256`: この列は、列によって `SHA1` 識別されるファイルに相当する SHA-256 です。
+- `InitiatingProcessSHA256`: この列は、列によって `InitiatingProcessSHA1` 識別されるファイルに相当する SHA-256 です。
 
-検疫アクションの実行方法とファイルの復元方法の詳細については、「ファイルに対する応答アクション [」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts)。
+検疫アクションの実行方法とファイルの復元方法の詳細については、 [ファイルに対する応答アクションに関するページを参照](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts)してください。
 
 >[!NOTE]
->ファイルを検索して検疫するには、クエリ結果 `DeviceId` に値をデバイス識別子として含める必要があります。  
+>ファイルを見つけて検疫するには、クエリ結果にデバイス識別子として値も含める `DeviceId` 必要があります。  
 
-## <a name="take-action"></a>アクションを行う
-説明されているアクションのいずれかを実行するには、クエリ結果で 1 つ以上のレコードを選択し、[アクションの実行] **を選択します**。 ウィザードを使用すると、優先するアクションを選択して送信するプロセスを案内します。
+説明されているアクションのいずれかを実行するには、クエリ結果で 1 つ以上のレコードを選択し、[ **アクションの実行**] を選択します。 ウィザードでは、優先するアクションを選択して送信するプロセスについて説明します。
 
-:::image type="content" source="../../media/take-action-multiple.png" alt-text="[アクションの実行] オプション (Microsoft 365 Defender ポータル)" lightbox="../../media/take-action-multiple.png":::
+:::image type="content" source="../../media/take-action-multiple.png" alt-text="Microsoft 365 Defender ポータルの [アクションの実行] オプション" lightbox="../../media/take-action-multiple.png":::
+
+
+## <a name="take-various-actions-on-emails"></a>メールに対してさまざまなアクションを実行する
+デバイスに重点を置いた修復手順とは別に、クエリ結果から電子メールに対していくつかのアクションを実行することもできます。 アクションを実行するレコードを選択し、[アクションの **実行**] を選択し、[ **アクションの選択]** で次の中から選択します。
+- `Move to mailbox folder` - 電子メール メッセージを [迷惑メール]、[受信トレイ]、または [削除済みアイテム] フォルダーに移動するには、これを選択します
+
+   :::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="Microsoft 365 Defender ポータルの [アクションの実行] オプション" lightbox="../../media/advanced-hunting-take-actions-email.png":::
+
+- `Delete email` - これを選択して、電子メール メッセージを [削除済みアイテム] フォルダーに移動するか (**論理的に削除**) するか、完全に削除します (**ハード削除**)
+
+   :::image type="content" source="../../media/advanced-hunting-take-actions-email-del.png" alt-text="Microsoft 365 Defender ポータルの [アクションの実行] オプション" lightbox="../../media/advanced-hunting-take-actions-email-del.png":::
+
+修復名と、アクション センターの履歴で簡単に追跡するために実行されるアクションの簡単な説明を指定することもできます。 承認 ID を使用して、アクション センターでこれらのアクションをフィルター処理することもできます。 この ID は、ウィザードの最後に提供されます。
+
+:::image type="content" source="../../media/choose-email-actions-entities.png" alt-text="エンティティの選択アクションを示すアクションの実行ウィザード" lightbox="../../media/choose-email-actions-entities.png":::
+
+これらの電子メール アクションは、 [カスタム検出](custom-detections-overview.md) にも適用されます。
+
 
 ## <a name="review-actions-taken"></a>実行されたアクションを確認する
-各アクションは、Action **centerHistory**  >  (security.microsoft.com/action-center/history) のアクション センター [に個別に記録されます](https://security.microsoft.com/action-center/history)。[](m365d-action-center.md) アクション センターに移動して、各アクションの状態を確認します。
+各アクションは、Action **centerHistory** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)) のアクション **センター** > に個別に記録されます。[](m365d-action-center.md) アクション センターに移動して、各アクションの状態を確認します。
  
 >[!NOTE]
->この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「[Advanced Hunting queries を Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md) から移行する」の手順に従います。
+>この記事の一部のテーブルは、Microsoft Defender for Endpointでは使用できない場合があります。 [Microsoft 365 Defenderを有効にして](m365d-enable.md)、より多くのデータ ソースを使用して脅威を検出します。 高度なハンティング クエリをMicrosoft Defender for Endpointから移行するの手順に従って、[高度なハンティング ワークフローをMicrosoft Defender for EndpointからMicrosoft 365 Defender](advanced-hunting-migrate-from-mde.md)に移動できます。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)

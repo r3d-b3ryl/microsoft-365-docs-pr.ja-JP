@@ -2,7 +2,7 @@
 title: SharePoint Online のパフォーマンスをチューニングする
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 10/2/2019
 audience: Admin
 ms.topic: troubleshooting
@@ -18,25 +18,25 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
-description: オンラインのページダウンロード時間のパフォーマンスを向上させる方法を示す他の記事へのSharePointされています。
-ms.openlocfilehash: 4dc8ac31361261320fa806b18a0721951f0b2244
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: SharePoint Online のページダウンロード時間のパフォーマンスを向上させる方法を説明する他の記事へのリンクが含まれています。
+ms.openlocfilehash: 196dbb502c813ec0f877069008d4c90494170665
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211599"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099127"
 ---
 # <a name="tune-sharepoint-online-performance"></a>SharePoint Online のパフォーマンスをチューニングする
 
-この記事には、オンラインのページダウンロード時間のパフォーマンスを向上させる方法を示す他のSharePointがあります。 この記事は、プロジェクトのネットワーク[計画とパフォーマンスの調整Office 365](./network-planning-and-performance.md)です。
+この記事には、SharePoint Online のページダウンロード時間のパフォーマンスを向上させる方法を説明する他の記事へのリンクが含まれています。 この記事は、Office 365 プロジェクトの[ネットワーク計画とパフォーマンスのチューニングの](./network-planning-and-performance.md)一部です。
 
-## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>オンライン パフォーマンスの微調整SharePoint記事
+## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>オンライン パフォーマンスSharePoint微調整に関する記事
 
-これらの記事を使用して、オンライン パフォーマンスSharePoint調整します。
+これらの記事を使用して、オンライン パフォーマンスSharePoint微調整します。
   
 - [SharePoint Online のパフォーマンスのチューニングの概要](introduction-to-performance-tuning-for-sharepoint-online.md)
 
-- [オンラインのページ診断ツールを使用SharePointする](page-diagnostics-for-spo.md)
+- [SharePoint Online のページ診断ツールを使用する](page-diagnostics-for-spo.md)
 
 - [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
 
@@ -50,22 +50,22 @@ ms.locfileid: "60211599"
 
 - [SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用](use-microsoft-365-cdn-with-spo.md)
 
-- [コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用してオンラインでのパフォーマンスSharePointする](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用して、SharePoint Online のパフォーマンスを向上させる](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
 
 - [SharePoint Online のキャパシティ プランニングとロード テスト](capacity-planning-and-load-testing-sharepoint-online.md)
 
 - [SharePoint Online のパフォーマンスの問題の診断](diagnosing-performance-issues-with-sharepoint-online.md)
 
-- [Online でオブジェクト キャッシュをSharePointする](using-the-object-cache-with-sharepoint-online.md)
+- [SharePoint Online でのオブジェクト キャッシュの使用](using-the-object-cache-with-sharepoint-online.md)
 
 - [方法:SharePoint Online で調整またはブロックを回避する](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 
-- [オンラインモダン ポータル ページSharePoint iFrames を最適化する](modern-iframe-optimization.md)
+- [SharePoint Online モダン ポータル ページで iFrame を最適化する](modern-iframe-optimization.md)
 
-- [オンラインモダン ポータル ページSharePoint Web パーツのパフォーマンスを最適化する](modern-web-part-optimization.md)
+- [SharePoint Online モダン ポータル ページで Web パーツのパフォーマンスを最適化する](modern-web-part-optimization.md)
 
-- [オンラインモダン ポータル ページSharePointページ呼び出しを最適化する](modern-page-call-optimization.md)
+- [SharePoint Online モダン ポータル ページでページ呼び出しを最適化する](modern-page-call-optimization.md)
 
-- [オンラインモダン ポータル ページSharePointページの重みを最適化する](modern-page-weight-optimization.md)
+- [SharePoint Online モダン ポータル ページでページの太さを最適化する](modern-page-weight-optimization.md)
 
-- [オンラインモダン ポータル ページSharePoint画像を最適化する](modern-image-optimization.md)
+- [SharePoint Online モダン ポータル ページで画像を最適化する](modern-image-optimization.md)

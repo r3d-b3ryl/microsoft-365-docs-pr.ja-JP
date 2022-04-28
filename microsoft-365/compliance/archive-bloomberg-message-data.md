@@ -2,8 +2,8 @@
 title: Bloomberg Message データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Microsoft 365の Bloomberg Message 電子メール ツールからデータをインポートおよびアーカイブするためのデータ コネクタを設定できます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 781378ba30ccb7db44191764e050277fa4a239aa
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: f13fcad1586776711cfc726ab633c411f2eaa383
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992824"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078369"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Bloomberg Message データをアーカイブするコネクタを設定する
 

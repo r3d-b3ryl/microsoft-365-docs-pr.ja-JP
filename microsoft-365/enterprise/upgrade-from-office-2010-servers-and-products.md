@@ -2,7 +2,7 @@
 title: Office 2010 サーバー/クライアントからのアップグレードに役立つリソース
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,36 +21,36 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: サポートが間もなく終了し、カスタム サポート契約が利用できないので、Office 2010 サーバーとクライアント アプリケーションからアップグレードの計画を開始します。
+description: Office 2010 サーバーとクライアント アプリケーションからのアップグレードの計画を開始します。サポートは間もなく終了し、カスタム サポート契約は利用できません。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2211df824335e0c9172f21e8ac02c45b72e19c51
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9a27787a3b00f9a77e563c65a9d5bf68ce188b35
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209551"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099105"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバー/クライアントからのアップグレードに役立つリソース
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Office 2010 年Exchange 2010 年 10 月 **13** 日にサポートが終了しました。
+2010 年と 2010 年Exchange Office、**2020 年 10 月 13** 日にサポートが終了しました。
 
 SharePoint 2010 および Project Server 2010 は、**2021年4月13日** にサポートが終了します。
 
-アップグレードを計画する際は、アップグレードへの移行を検討Microsoft 365。
+アップグレードを計画している間は、Microsoft 365に移行することを検討してください。
 
-- Microsoft 365には、Exchange Server サーバーや SharePoint サーバーなどの Office サーバー製品用のクラウドベースのサービスと、Teams や OneDrive for Business などのサービスがあります。
+- Microsoft 365には、Exchange Server、SharePoint Server などのOffice 2010 サーバー製品用のクラウドベースのサービスと、TeamsやOneDrive for Businessなどのサービスがあります。
 
-- Microsoft 365 Apps for enterprise (以前に *Office 365 ProPlus* という名前) (Microsoft 365 E3 と E5 に含まれている) は、ローカル デバイスにインストールする Office クライアント アプリのセットです。 Microsoft クラウドから定期的に新しい生産性とセキュリティ機能が更新されています。
+- Microsoft 365 E3と E5 に含まれる Microsoft 365 Apps for enterprise (以前 *の名前付* きOffice 365 ProPlus) は、ローカル デバイスにインストールするOffice クライアント アプリのセットです。 Microsoft クラウドから定期的に新しい生産性とセキュリティ機能が更新されます。
 
-Office 2010 クライアントおよびサーバーおよび Windows 7 のアップグレード、移行、およびクラウドへの移行オプションの視覚的な概要については、サポート ポスターの末尾を[参照してください](../downloads/Office2010Windows7EndOfSupport.pdf)。
+Office 2010 クライアントとサーバーおよびWindows 7 のアップグレード、移行、およびクラウドへの移行のオプションの視覚的な概要については、[サポート ポスターの最後](../downloads/Office2010Windows7EndOfSupport.pdf)を参照してください。
 
-[![2010 年のクライアントOfficeサーバーと 7 ポスターのWindows終了します。](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 クライアントとサーバー、Windows 7 ポスターのサポート終了。](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-この 1 ページのポスターは、Office 2010 クライアントおよびサーバー製品、および Windows 7 のサポート終了までを処理するために使用できるさまざまなパスを要約しています。 優先パスとオプションのサポートは、Microsoft 365 Enterprise強調表示されます。
+この 1 ページのポスターは、2010 年のクライアントおよびサーバー製品Office処理するためのさまざまなパスと、サポート終了までのWindows 7 をまとめたものです。 Microsoft 365 Enterpriseでの優先パスとオプションのサポートが強調表示されています。
 
-また、この [ポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) をダウンロードして、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
+また、このポスターを [ダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) し、レター、リーガル、または Tabloid (11 x 17) 形式で印刷することもできます。
 
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Office 2010 サーバー/クライアントのアップグレード計画
 
@@ -64,7 +64,7 @@ Office 2010 クライアントおよびサーバーおよび Windows 7 のアッ
 
 ## <a name="im-a-home-user-what-do-i-do"></a>私はホーム ユーザーです。 どうしたらよいでしょうか。
 
-2010 Officeアプリケーションを自宅で使用する場合は、この情報を[参照してください](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
+Office 2010 製品とアプリケーションを自宅で使用する場合は、[この情報](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 

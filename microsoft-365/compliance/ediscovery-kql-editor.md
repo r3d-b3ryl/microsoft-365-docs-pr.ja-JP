@@ -2,8 +2,8 @@
 title: KQL エディターを使用して検索クエリを作成する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: KQL エディターを使用すると、コンテンツ検索、電子情報開示 (Standard)、電子情報開示 (プレミアム) で電子情報開示検索クエリを構成できます。
-ms.openlocfilehash: cbd7adb02c926477fd81568ed950ebd16110c79b
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d97beb6cf8df95aa5112537c75caf4f548f7658d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993800"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098584"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries"></a>KQL エディターを使用して検索クエリを作成する
 
@@ -85,7 +85,7 @@ KQL エディターは、検索クエリの潜在的なエラーを検出し、�
 
 この場合、潜在的なエラー ヒントを使用して、クエリのトラブルシューティングと修正を行うことができます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - 条件ビルダーとKQL エディターを切り替えることができます。 たとえば、条件ビルダーを使用して [キーワード] ボックスと複数の条件カードを使用してクエリを構成する場合、結果のクエリをKQL エディターに表示できます。 ただし、KQL エディターで複雑なクエリ (キーワードと条件を含む) を作成した場合、結果のクエリは、条件ビルダーで表示する場合にのみ [キーワード] ボックスに表示されます。
 

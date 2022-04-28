@@ -1,8 +1,8 @@
 ---
-title: ユーザー Microsoft 365を管理する
+title: Microsoft 365 ユーザー アカウントを管理する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
@@ -22,59 +22,59 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: ユーザー アカウントを管理するMicrosoft 365を確認します。
-ms.openlocfilehash: 7f75c74984ce58a8b403f01948075b185047f260
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft 365ユーザー アカウントを管理する方法について説明します。
+ms.openlocfilehash: dbd1c0a3c1c6fdb10d157299552e83a77f495e3c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150776"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098342"
 ---
-# <a name="manage-microsoft-365-user-accounts"></a>ユーザー Microsoft 365を管理する
+# <a name="manage-microsoft-365-user-accounts"></a>Microsoft 365 ユーザー アカウントを管理する
 
-構成に応Microsoft 365、さまざまな方法でユーザー アカウントを管理できます。 ユーザー アカウントは[、Microsoft 365 管理センター](/admin) [、PowerShell、Active](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)Directory ドメイン サービス (AD DS)、または Azure Active Directory (Azure AD) 管理ポータルで管理できます。 
+Microsoft 365ユーザー アカウントは、構成に応じていくつかの方法で管理できます。 ユーザー アカウントは、[Microsoft 365 管理センター](/admin)、[PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)、Active Directory Domain Services (AD DS)、またはAzure Active Directory (Azure AD) 管理ポータルで管理できます。 
 
-アカウントを購入すると<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365、Microsoft 365 管理センター</a> PowerShell を使用してアカウントを管理できます。 クラウド ID を管理する場合、組織内のすべてのユーザーには、個別のユーザー アカウント名とパスワードがあります。 オンプレミスインフラストラクチャと統合し、Microsoft 365 とユーザー アカウントを同期する場合は、Azure AD Connect を使用してシングル サインオン (SSO) 機能の ID とパスワードの同期を提供できます。
+Microsoft 365を購入するとすぐに、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>と PowerShell を使用してアカウントを管理できます。 クラウド ID を管理する場合、組織内のすべてのユーザーに個別のユーザー アカウント名とパスワードが設定されます。 オンプレミス インフラストラクチャと統合し、ユーザー アカウントをMicrosoft 365と同期させる場合は、Azure AD Connectを使用して、シングル サインオン (SSO) 機能の ID とパスワードの同期を提供できます。
   
-## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>ユーザー アカウントの管理場所と管理方法を計画する
+## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>ユーザー アカウントを管理する場所と方法を計画する
 
-ユーザー アカウントを管理する場所と方法は、ユーザー アカウントに使用する id モデルによってMicrosoft 365。 2 つの全体的なモデルは、クラウド専用とハイブリッドです。
+ユーザー アカウントをどこでどのように管理できるかは、Microsoft 365に使用する ID モデルによって異なります。 2 つの全体的なモデルは、クラウド専用とハイブリッドです。
   
 ### <a name="cloud-only"></a>クラウド専用
 
-ユーザーを作成および管理するには<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">、Microsoft 365 管理センター。</a> PowerShell または Azure の管理センター AD使用できます。 
+Microsoft 365 管理センターでユーザーを作成および管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">します</a>。 PowerShell またはAzure AD管理センターを使用することもできます。 
     
 ### <a name="hybrid"></a>ハイブリッド
 
-ユーザー アカウントは DS からMicrosoft 365 ADされます。そのため、ユーザー アカウントを管理するには、オンプレミスの DS ADを使用する必要があります。 
+ユーザー アカウントは AD DS のMicrosoft 365と同期されるため、オンプレミスの AD DS ツールを使用してユーザー アカウントを管理する必要があります。 
     
 ## <a name="managing-accounts"></a>アカウントの管理
 
 組織でアカウントを作成および管理する方法を決定する場合は、次の要件を考慮してください。
   
-- ディレクトリ同期ソフトウェアは、オンプレミス環境内のサーバーにインストールして、MICROSOFT 365 DS と ADする必要があります。
+- Microsoft 365と AD DS の間で ID を接続するには、オンプレミス環境内のサーバーにディレクトリ同期ソフトウェアをインストールする必要があります。
     
-- SSO オプションを含む任意のディレクトリ同期オプションでは、DS 属性がADを満たす必要があります。 ディレクトリで使用する属性と、必要なクリーンアップ (存在する場合) の詳細については、「ディレクトリ同期の準備からディレクトリへの同期の準備」[をMicrosoft 365。](prepare-for-directory-synchronization.md) 
+- SSO オプションを含むすべてのディレクトリ同期オプションでは、AD DS 属性が標準を満たしている必要があります。 ディレクトリで使用される属性と、必要なクリーンアップ (存在する場合) の詳細については、「[Microsoft 365へのディレクトリ同期の準備](prepare-for-directory-synchronization.md)」を参照してください。 
     
-- アカウントの作成方法を計画Microsoft 365します。
+- Microsoft 365 アカウントを作成する方法を計画します。
     
-次の表に、さまざまなアカウント管理ツールの一覧を示します。
+次の表に、さまざまなアカウント管理ツールを示します。
     
 |ツール|メモ|
 |:-----|:-----|
-|Microsoft 365 管理センター  <br/> |[ユーザーを個別または一括で追加する](../admin/add-users/add-users.md) <br/>  ユーザー アカウントを追加および変更する簡単な Web インターフェイスを提供します。  <br/>  ディレクトリ同期が有効になっている場合は、ユーザーを変更することはできません (場所とライセンスの割り当てを設定できます)。  <br/>  SSO オプションでは使用できません。  <br/> |
-|Windows PowerShell  <br/> |[管理Microsoft 365を使用Windows PowerShell](./manage-microsoft-365-with-microsoft-365-powershell.md) <br/>  カスタム スクリプトを使用して、一括ユーザーにユーザーをWindows PowerShellできます。  <br/>  アカウントの作成方法に関係なく、場所とライセンスをアカウントに割り当てる場合に使用できます。  <br/> |
-|一括インポート  <br/> |[同時に複数のユーザーを追加する](add-several-users-at-the-same-time.md) <br/>  CSV ファイルをインポートして、ユーザーのグループをユーザーグループに追加Microsoft 365。  <br/>  SSO オプションでは使用できません。  <br/> |
-|Azure AD  <br/> |サブスクリプションを使用して Azure AD無料版Microsoft 365取得します。 無料版を使用すると、クラウド ユーザーのセルフサービス パスワードのリセット、サインイン ページとアクセス パネル ページのカスタマイズなど、機能を実行できます。 拡張機能を取得するには、基本エディション、Azure AD Premium P1、またはAzure AD Premium P2。 サポート [されている機能のADについては、「Azure](/azure/active-directory/fundamentals/active-directory-whatis) AD エディション」を参照してください。  <br/> |
-|ディレクトリ同期  <br/> |[オンプレミス ID と Azure id の統合AD](/azure/active-directory/hybrid/whatis-hybrid-identity) <br/>  パスワード同期を使用するかしないディレクトリ同期の場合は、[高速AD Connect Azure AD Connectを使用します](/azure/active-directory/hybrid/how-to-connect-install-express)。  <br/>  複数のフォレストと SSO オプションの場合は[、Azure サーバーの](/azure/active-directory/hybrid/how-to-connect-install-custom)カスタム インストールを使用AD Connect。  <br/>  SSO を有効にするために必要なインフラストラクチャを提供します。  <br/>  ステージ移行やハイブリッド 移行など、多くのハイブリッド シナリオで必要Exchange  <br/>  セキュリティとメールが有効なグループを DS から同期ADします。  <br/> |
+|Microsoft 365 管理センター  <br/> |[ユーザーを個別または一括で追加する](../admin/add-users/add-users.md) <br/>  ユーザー アカウントを追加および変更するための簡単な Web インターフェイスを提供します。  <br/>  ディレクトリ同期が有効になっている場合は、ユーザーを変更するために使用できません (場所とライセンスの割り当てを設定できます)。  <br/>  SSO オプションでは使用できません。  <br/> |
+|Windows PowerShell  <br/> |[Windows PowerShellを使用してMicrosoft 365を管理する](./manage-microsoft-365-with-microsoft-365-powershell.md) <br/>  Windows PowerShell スクリプトを使用して、ユーザーを一括ユーザーに追加できます。  <br/>  アカウントの作成方法に関係なく、場所とライセンスをアカウントに割り当てるために使用できます。  <br/> |
+|一括インポート  <br/> |[同時に複数のユーザーを追加する](add-several-users-at-the-same-time.md) <br/>  CSV ファイルをインポートして、ユーザーのグループをMicrosoft 365に追加できます。  <br/>  SSO オプションでは使用できません。  <br/> |
+|Azure AD  <br/> |Microsoft 365 サブスクリプションでAzure ADの無料版を入手できます。 無料版を使用して、クラウド ユーザーのセルフサービス パスワード リセット、サインイン ページとアクセス パネル ページのカスタマイズなどの機能を実行できます。 強化された機能を利用するには、基本エディション、Azure AD Premium P1、またはAzure AD Premium P2にアップグレードします。 サポートされている機能の一覧については、[Azure AD エディション](/azure/active-directory/fundamentals/active-directory-whatis)を参照してください。  <br/> |
+|ディレクトリ同期  <br/> |[オンプレミス ID とAzure ADの統合](/azure/active-directory/hybrid/whatis-hybrid-identity) <br/>  パスワード同期の有無にかかわらずディレクトリ同期を行う場合は、[高速設定でAzure AD Connectを使用します](/azure/active-directory/hybrid/how-to-connect-install-express)。  <br/>  複数のフォレストと SSO オプションの場合は、[Azure AD Connectのカスタム インストール](/azure/active-directory/hybrid/how-to-connect-install-custom)を使用します。  <br/>  SSO を有効にするために必要なインフラストラクチャを提供します。  <br/>  段階的な移行やハイブリッド Exchangeなど、多くのハイブリッド シナリオに必要です  <br/>  AD DS からセキュリティとメールが有効なグループを同期します。  <br/> |
 |||
    
-- Microsoft 365 にユーザー アカウントを追加する方法に関係なく、ライセンスの割り当て、場所の指定など、いくつかのアカウント機能を管理する必要があります。 これらの機能は、サーバーから長期的に管理Microsoft 365 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a> PowerShell を使用してユーザー[アカウントを作成することもできます](./create-user-accounts-with-microsoft-365-powershell.md)。
+- ユーザー アカウントをMicrosoft 365に追加する方法に関係なく、ライセンスの割り当て、場所の指定など、いくつかのアカウント機能を管理する必要があります。 これらの機能は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>から長期的に管理することも、[PowerShell でユーザー アカウントを作成](./create-user-accounts-with-microsoft-365-powershell.md)することもできます。
     
-    管理センターを通じてすべてのユーザーを追加および管理する場合は、場所を指定し、ユーザー アカウントの作成と同時にライセンスを割りMicrosoft 365します。 その結果、あまり計画が必要ありません。
+    管理センターですべてのユーザーを追加および管理することを選択した場合は、場所を指定し、Microsoft 365 アカウントの作成と同時にライセンスを割り当てます。 その結果、あまり計画は必要ありません。
     
     > [!IMPORTANT]
-    > Microsoft 365 でライセンスを割り当てずに (SharePoint Online に) アカウントを作成すると、アカウント所有者は Microsoft 365 センターを表示できますが、会社のサブスクリプション内のサービスにはアクセスできません。 場所とライセンスを割り当てた後、アカウントは割り当てたサービスまたはサービスにレプリケートされます。 ユーザーは自分のアカウントにサインインし、割り当てたサービスを使用できます。 
+    > ライセンスを割り当てずにMicrosoft 365でアカウントを作成する (たとえば、SharePoint Online) とは、アカウント所有者がMicrosoft 365 センターを表示できますが、会社のサブスクリプション内のサービスにはアクセスできないことを意味します。 場所とライセンスを割り当てると、アカウントは割り当てたサービスにレプリケートされます。 ユーザーは自分のアカウントにサインインし、割り当てたサービスを使用できます。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -2,8 +2,8 @@
 title: 電子情報開示のドキュメント メタデータ フィールド (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365の Microsoft Purview 電子情報開示 (プレミアム) のケースで、レビュー セット内のドキュメントのメタデータ フィールドを定義します。
-ms.openlocfilehash: 4e1efbf48cf4313682095b69eb97f52d00b9ceaf
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d0e188d227e3000ba6811204c74cf746b00bc0e2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001106"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097780"
 ---
 # <a name="document-metadata-fields-in-ediscovery-premium"></a>電子情報開示のドキュメント メタデータ フィールド (プレミアム)
 

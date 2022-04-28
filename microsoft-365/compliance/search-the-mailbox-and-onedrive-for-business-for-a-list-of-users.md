@@ -2,8 +2,8 @@
 title: メールボックス & OneDrive for Business サイト上のユーザーの一覧にコンテンツ検索を使用する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: コンテンツ検索とこの記事のスクリプトを使用して、メールボックスとOneDrive for Businessサイトでユーザー グループを検索します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1bbfc26c2193c1bf31e081b8ded9e2e2baf56743
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: a75296bd17a1f4b77c22298f6c9a294ec06bd182
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998818"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098452"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーのリストを探す
 

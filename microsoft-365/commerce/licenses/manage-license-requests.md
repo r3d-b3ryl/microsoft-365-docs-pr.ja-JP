@@ -19,13 +19,13 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid: MET150
 description: ビジネス サブスクリプションのMicrosoft 365に対するユーザーからのライセンス要求を確認および承認または拒否する方法について説明します。
-ms.date: 06/07/2021
-ms.openlocfilehash: cc1d03717cbdf0ce8768c630044990363feded8a
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.date: 04/22/2022
+ms.openlocfilehash: 802b84445c83c2831e5fd88598cc00fb8b0ab867
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841802"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098694"
 ---
 # <a name="manage-license-requests"></a>ライセンス要求を管理する
 
@@ -39,7 +39,7 @@ ms.locfileid: "64841802"
 
 管理者は、ライセンス要求を表示および管理するために、[ライセンス] ページ **の [要求** ] タブ **を** 使用します。 一覧には、要求された製品の名前、ライセンスを要求するユーザーの名前、要求された日付、要求の状態が表示されます。 管理者は、一覧をフィルター処理して、保留中または完了している要求を表示できます。 要求は 30 日間保持されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 この記事のタスクを実行するには、グローバル管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 

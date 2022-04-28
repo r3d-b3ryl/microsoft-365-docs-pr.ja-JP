@@ -2,8 +2,8 @@
 title: Microsoft Purview の拡張性
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: サード パーティのデータ コネクタと Microsoft Graph API を使用して Microsoft Purview ソリューションを拡張する方法について説明します。
-ms.openlocfilehash: 9d2c3235a29e2d25e24656a4ff94216cde925b6c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1be4ae739681e9c694c6f30097c62de3f5627d06
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992262"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098848"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Microsoft Purview と Microsoft Priva の拡張性
 
@@ -41,7 +41,7 @@ Microsoft Purview ソリューションは、組織がコンプライアンス �
 
 ## <a name="data-connectors"></a>データ コネクタ
 
-Microsoft は、Microsoft Purview コンプライアンス ポータルで構成できるサードパーティのデータ コネクタを提供します。 Microsoft から提供されるデータ コネクタの一覧については、 [サード パーティのデータ コネクタ](archiving-third-party-data.md#third-party-data-connectors) の表を参照してください。 サード パーティのデータ コネクタの表には、Microsoft 365でデータをインポートおよびアーカイブした後にサード パーティのデータに適用できるコンプライアンス ソリューションと、各コネクタの詳細な手順へのリンクもまとめられています。
+Microsoft は、Microsoft Purview コンプライアンス ポータルで構成できるサード パーティのデータ コネクタを提供します。 Microsoft が提供するデータ コネクタの一覧については、「[サードパーティのデータ コネクタ](archiving-third-party-data.md#third-party-data-connectors)」の表を参照してください。 サード パーティのデータ コネクタの表には、Microsoft 365でデータをインポートおよびアーカイブした後にサード パーティのデータに適用できるコンプライアンス ソリューションと、各コネクタの詳細な手順へのリンクもまとめられています。
 
 Microsoft 365 データ コネクタの詳細については、「[サード パーティのデータのアーカイブ](archiving-third-party-data.md)」を参照してください。 コンプライアンス ポータルで使用できるデータ コネクタでサード パーティのデータ型がサポートされていない場合は、カスタム コネクタを提供できるパートナーと連携できます。 操作できるパートナーの一覧と、この方法のステップ バイ ステップ プロセスについては、「 [パートナーと連携してサード パーティのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)」を参照してください。
 

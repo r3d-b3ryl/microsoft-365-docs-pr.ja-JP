@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
@@ -17,20 +17,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: '概要: Microsoft 365 テスト環境として、シミュレートされたクロスプレミスの仮想ネットワークを Microsoft Azure に作成します。'
-ms.openlocfilehash: 0d0e22b5c9a12f4757a6dff5892ef72a757d2bda
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a3bc5c130ad03d1896abcf98ba9fc26d9ff2f422
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202849"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099171"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 テスト環境でのシミュレートされたクロスプレミスの仮想ネットワーク
 
-*このテスト ラボ ガイドは、エンタープライズ環境とテスト環境Microsoft 365両方Office 365 Enterprise使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ環境とOffice 365 Enterpriseテスト環境の両方のMicrosoft 365に使用できます。*
 
 この記事では、2 つの Azure 仮想ネットワークを使用した、Microsoft Azure でのシミュレートされたハイブリッド クラウド環境の作成について順を追って説明します。最終的な構成は、次のようになります。 
   
-![XPrem VNet の DC2 仮想マシンを使用して、シミュレートされたクロスプレム仮想ネットワーク テスト環境のフェーズ 3。](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![XPrem VNet 内の DC2 仮想マシンを使用した、シミュレートされたクロスプレミス仮想ネットワーク テスト環境のフェーズ 3。](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 これは Azure IaaS ハイブリッド クラウド運用環境をシミュレートするもので、次のもので構成されます。
   
@@ -59,12 +59,12 @@ ms.locfileid: "60202849"
 > [!NOTE]
 > この構成では、有料版の Azure サブスクリプションが必要です。 
 
-結果の環境を使用して、追加のテスト ラボ ガイド[を](https://www.microsoft.com/microsoft-365/enterprise)使用して、Microsoft 365の機能を[](m365-enterprise-test-lab-guides.md)テストできます。
+結果の環境を使用して、追加の[テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)または独自のテスト ラボ ガイドを使用して[、エンタープライズ向けのMicrosoft 365](https://www.microsoft.com/microsoft-365/enterprise)の機能をテストできます。
 
 ![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> エンタープライズ テスト[Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)ガイド スタックに移動し、エンタープライズ テスト ラボ ガイド スタックの Microsoft 365記事のビジュアル マップを表示します。
+> [エンタープライズ テスト ラボ ガイド スタックのMicrosoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)のすべての記事へのビジュアル マップについては、エンタープライズ テスト ラボ ガイド スタックのMicrosoft 365に移動します。
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>フェーズ 1: TestLab 仮想ネットワークを構成する
 
@@ -72,7 +72,7 @@ ms.locfileid: "60202849"
   
 こちらが現在の構成です。 
   
-![Azure のシミュレートされたエンタープライズ ベース構成。](../media/simulated-cross-premises-microsoft-365-enterprise/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Azure でのシミュレートされたエンタープライズ ベースの構成。](../media/simulated-cross-premises-microsoft-365-enterprise/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 ## <a name="phase-2-create-the-xprem-virtual-network"></a>フェーズ 2: XPrem 仮想ネットワークを作成する
 
@@ -129,7 +129,7 @@ Add-AzVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVi
 
 こちらが現在の構成です。 
   
-![XPrem VNet と VNet ピアリング関係を持つ、シミュレートされたクロスプレム仮想ネットワーク テスト環境のフェーズ 2。](../media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
+![XPrem VNet と VNet ピアリング関係を持つ、シミュレートされたクロスプレミス仮想ネットワーク テスト環境のフェーズ 2。](../media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
 ## <a name="phase-3-configure-dc2"></a>フェーズ 3: DC2 を構成する
 
@@ -201,11 +201,11 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 こちらが現在の構成です。 
   
-![XPrem VNet の DC2 仮想マシンを使用して、シミュレートされたクロスプレム仮想ネットワーク テスト環境のフェーズ 3。](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![XPrem VNet 内の DC2 仮想マシンを使用した、シミュレートされたクロスプレミス仮想ネットワーク テスト環境のフェーズ 3。](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 シミュレートされた Azure ハイブリッド クラウド環境をテストする準備ができました。
   
-これで、エンタープライズ向けアプリケーションの追加機能をMicrosoft 365[準備ができました](https://www.microsoft.com/microsoft-365/enterprise)。
+[これで、エンタープライズ向けのMicrosoft 365](https://www.microsoft.com/microsoft-365/enterprise)の追加機能を試す準備ができました。
   
 ## <a name="next-steps"></a>次の手順
 
@@ -219,6 +219,6 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

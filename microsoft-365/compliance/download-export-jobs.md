@@ -2,8 +2,8 @@
 title: 組織のAzure Storage アカウントにドキュメントをエクスポートする
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: レビュー セット内のドキュメントをAzure Storage アカウントにエクスポートし、Azure Storage Explorerを使用してローカル コンピューターにダウンロードします。
-ms.openlocfilehash: 6c8709fe1540393164e00222b728b10d5f809012
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e0dfe3eb37ea440c93dc7753c7c4206d8d33c1f3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994900"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098628"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>レビュー セット内のドキュメントをAzure Storage アカウントにエクスポートする
 
@@ -117,7 +117,7 @@ ms.locfileid: "64994900"
 > [!NOTE]
 > Azure Storage Explorerでエクスポート ジョブ全体をダウンロードする代わりに、特定のアイテムを選択してダウンロードして表示できます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - エクスポート ジョブ フォルダーには、次の項目が含まれています。 エクスポート フォルダー内の実際の項目は、エクスポート ジョブの作成時に構成されたエクスポート オプションによって決まります。 これらのオプションの詳細については、「 [レビュー セットからドキュメントをエクスポートする](export-documents-from-review-set.md)」を参照してください。
 

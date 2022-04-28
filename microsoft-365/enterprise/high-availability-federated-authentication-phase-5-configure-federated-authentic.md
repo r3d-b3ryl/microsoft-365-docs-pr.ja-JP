@@ -1,8 +1,8 @@
 ---
-title: 高可用性フェデレーション認証 フェーズ 5 サーバーのフェデレーション認証を構成Microsoft 365
+title: 高可用性フェデレーション認証フェーズ 5 Microsoft 365のフェデレーション認証を構成する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
@@ -13,19 +13,19 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: '概要: Azure AD Connectサーバーの高可用性フェデレーション認証用にMicrosoft 365構成Microsoft Azure。'
-ms.openlocfilehash: e5a11c1b94f9a0297ccfa0a18e1963fae9898f65
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: '概要: Microsoft AzureのMicrosoft 365の高可用性フェデレーション認証のAzure AD Connectを構成します。'
+ms.openlocfilehash: 9eff7f815ff5f7508da1f0e1230079a1b1802fed
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152708"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091261"
 ---
-# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>高可用性フェデレーション認証 フェーズ 5: サーバーのフェデレーション認証を構成Microsoft 365
+# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>高可用性フェデレーション認証フェーズ 5: Microsoft 365のフェデレーション認証を構成する
 
-Azure インフラストラクチャ サービスに Microsoft 365 の高可用性フェデレーション認証を展開するこの最終フェーズでは、パブリック証明機関によって発行された証明書を取得してインストールし、構成を確認してから、ディレクトリ同期サーバーに Azure AD Connect をインストールして実行します。 Azure AD Connectは、フェデレーション認証Microsoft 365 Active Directory フェデレーション サービス (AD FS) と Web アプリケーション プロキシ サーバーを構成します。
+Azure インフラストラクチャ サービスにMicrosoft 365用の高可用性フェデレーション認証をデプロイするこの最終フェーズでは、パブリック証明機関によって発行された証明書を取得してインストールし、構成を確認してから、ディレクトリ同期サーバーにAzure AD Connectをインストールして実行します。 Azure AD Connectフェデレーション認証のために、Microsoft 365 サブスクリプションとActive Directory フェデレーション サービス (AD FS) (AD FS) と Web アプリケーション プロキシ サーバーを構成します。
   
-すべての[フェーズについては、「高可用性フェデレーション認証を Azure Microsoft 365展開](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)する」を参照してください。
+すべてのフェーズについては、「[Azure でMicrosoft 365用の高可用性フェデレーション認証をデプロイ](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)する」を参照してください。
   
 ## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>パブリック証明書を取得し、ディレクトリ同期サーバーにコピーする
 
@@ -41,15 +41,15 @@ Azure インフラストラクチャ サービスに Microsoft 365 の高可用�
   
 フェデレーション認証の証明書要件に関する詳細については、「[フェデレーションのインストールと構成の前提条件](/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration)」を参照してください。
   
-証明書を受け取った場合は、ディレクトリ同期サーバーの C: ドライブ上のフォルダーにコピーします。 たとえば、ファイルに SSL.pfx という名前を付け、ディレクトリ同期サーバーの C: \\ Certs フォルダーに保存します。
+証明書を受け取ったら、ディレクトリ同期サーバーの C: ドライブ上のフォルダーにコピーします。 たとえば、ファイル SSL.pfx に名前を付けて、ディレクトリ同期サーバーの C:\\Certs フォルダーに格納します。
   
 ## <a name="verify-your-configuration"></a>構成を確認する
 
-これで、Azure 認証とフェデレーション認証AD Connect構成する準備が整Microsoft 365。 確認用のチェックリストを以下に示します。
+これで、Microsoft 365のAzure AD Connect認証とフェデレーション認証を構成する準備が整いました。 確認用のチェックリストを以下に示します。
   
-- 組織のパブリック ドメインがサブスクリプションにMicrosoft 365されます。
+- 組織のパブリック ドメインがMicrosoft 365 サブスクリプションに追加されます。
     
-- 組織のユーザー アカウントMicrosoft 365組織のパブリック ドメイン名に構成され、正常にサインインできます。
+- 組織のMicrosoft 365ユーザー アカウントは、組織のパブリック ドメイン名に構成され、正常にサインインできます。
     
 - フェデレーション サービス FQDN をパブリック ドメイン名に基づいて決定している。
     
@@ -57,7 +57,7 @@ Azure インフラストラクチャ サービスに Microsoft 365 の高可用�
     
 - フェデレーション サービス FQDN のプライベート DNS A レコードが、AD FS サーバー用の内部の Azure ロード バランサーのプライベート IP アドレスを指している。
     
-- SAN をフェデレーション サービス FQDN に設定した SSL 接続に適した公的証明機関-isssued デジタル証明書は、ディレクトリ同期サーバーに保存されている PFX ファイルです。
+- フェデレーション サービス FQDN に設定された SAN との SSL 接続に適した公開証明機関の isssued デジタル証明書は、ディレクトリ同期サーバーに格納されている PFX ファイルです。
     
 - 公的証明機関のルート証明書が、コンピューターとデバイスの信頼されたルート証明機関ストアにインストールされている。
     
@@ -65,15 +65,15 @@ Contoso 組織の例を、以下に示します。
   
 **Azure での高可用性フェデレーション認証インフラストラクチャの構成例**
 
-![Azure のフェデレーション認証インフラストラクチャMicrosoft 365の構成例。](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Azure での高可用性Microsoft 365フェデレーション認証インフラストラクチャの構成例。](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Azure AD Connect を実行してフェデレーション認証を構成する
 
-Azure AD Connect ツールは、FS AD、Web アプリケーション プロキシ サーバー、およびフェデレーション認証のMicrosoft 365を次の手順で構成します。
+Azure AD Connect ツールは、次の手順でフェデレーション認証用に AD FS サーバー、Web アプリケーション プロキシ サーバー、およびMicrosoft 365を構成します。
   
 1. ローカル管理者特権を持つドメイン アカウントを使用して、ディレクトリ同期サーバーへのリモート デスクトップ接続を作成します。
     
-2. ディレクトリ同期サーバーのデスクトップから、ディレクトリを開Internet Explorerに移動します [https://aka.ms/aadconnect](https://aka.ms/aadconnect) 。
+2. ディレクトリ同期サーバーのデスクトップから Internet Explorer を開き [https://aka.ms/aadconnect](https://aka.ms/aadconnect)、 .
     
 3. **[Microsoft Azure Active Directory Connect]** ページで、 **[ダウンロード]** をクリックしてから **[実行]** をクリックします。
     
@@ -85,9 +85,9 @@ Azure AD Connect ツールは、FS AD、Web アプリケーション プロキ�
     
 7. **[ユーザー サインイン]** ページで、**[AD FS とのフェデレーション]** をクリックしてから、**[次へ]** をクリックします。
     
-8. **[Azure Connect AD]** ページで **、Azure AD DC** 管理者の名前とパスワード、または Microsoft 365 サブスクリプションのグローバル管理者アカウントを入力し、[次へ] をクリック **します**。
+8. **[Azure ADへのConnect**] ページで、**Azure AD DC 管理者** の名前とパスワード、またはMicrosoft 365 サブスクリプションの **グローバル管理者** アカウントを入力し、[**次へ**] をクリックします。
     
-9. [ディレクトリConnect] ページで、フォレストでオンプレミスの Active Directory ドメイン サービス (AD DS) フォレストが選択されていないことを確認し、ドメイン管理者アカウントの名前とパスワードを入力し、[ディレクトリの追加] をクリックし、[次へ] をクリックします。 
+9. **[ディレクトリのConnect**] ページで、オンプレミスの Active Directory Domain Services (AD DS) フォレストが **フォレスト** で選択されていることを確認し、ドメイン管理者アカウントの名前とパスワードを入力して、[**ディレクトリの追加**] をクリックし、[**次へ**] をクリックします。
     
 10. **[Azure AD サインインの構成]** ページで、 **[次へ]** をクリックします。
     
@@ -135,16 +135,16 @@ Azure AD Connect ツールは、FS AD、Web アプリケーション プロキ�
   
 **フェーズ 5:Azure での高可用性フェデレーション認証インフラストラクチャの最終構成**
 
-![Azure のフェデレーション認証インフラストラクチャMicrosoft 365の最終的な構成。](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![高可用性の最後の構成Microsoft 365 Azure のフェデレーション認証インフラストラクチャです。](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
-Azure 内のユーザーの高可用性フェデレーションMicrosoft 365インフラストラクチャが完了しました。
+Azure でのMicrosoft 365用の高可用性フェデレーション認証インフラストラクチャが完了しました。
   
 ## <a name="see-also"></a>関連項目
 
 [Azure に Microsoft 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[開発/テスト環境Microsoft 365フェデレーション ID](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Microsoft 365開発/テスト環境のフェデレーション ID](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/index.yml)
 
-[ユーザーのフェデレーション id Microsoft 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[Microsoft 365のフェデレーション ID](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)

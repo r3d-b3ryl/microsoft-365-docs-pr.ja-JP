@@ -2,8 +2,8 @@
 title: 電子情報開示 (プレミアム) ケースでカストディアンを管理する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) ケースでカストディアンの一覧を表示、編集、一括編集する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ab30e1343acd4718f80f816abc6ef850acf7215
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 6ea05e2f0b19c23b236f7b64eb3a425fdb29cc39
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996836"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077937"
 ---
 # <a name="manage-custodians-in-an-ediscovery-premium-case"></a>電子情報開示 (プレミアム) ケースでカストディアンを管理する
 

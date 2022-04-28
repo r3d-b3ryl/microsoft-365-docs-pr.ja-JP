@@ -2,8 +2,8 @@
 title: コンテンツ検索で部分的にインデックスが作成されたアイテム
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Microsoft Purview コンプライアンス ポータルで実行する電子情報開示検索に含めることができるExchangeとSharePointのインデックスのない項目について説明します。
-ms.openlocfilehash: b88e7d0f6651ecaa31849343db066295af1f5e84
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: ff21f04456d6886e7849a8d9a0770640897a62ac
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993098"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091503"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックスが作成されたアイテム
 

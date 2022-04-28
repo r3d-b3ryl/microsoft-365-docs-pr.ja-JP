@@ -2,8 +2,8 @@
 title: 監査 (プレミアム) を使用して、侵害されたアカウントを調査する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: MailItemsAccessed メールボックス監査アクションを使用して、侵害されたユーザー アカウントのフォレンシック調査を実行します。
-ms.openlocfilehash: 2256e331075074348e2a72d6528bed1944567b94
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5ff3c078dfd29b5b44bfac5f04b329bf014507ea
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996198"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090941"
 ---
 # <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>Microsoft Purview 監査 (プレミアム) を使用して、侵害されたアカウントを調査する
 

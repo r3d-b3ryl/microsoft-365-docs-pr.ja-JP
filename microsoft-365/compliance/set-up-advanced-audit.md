@@ -2,8 +2,8 @@
 title: Microsoft 365で監査 (プレミアム) を設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、監査 (プレミアム) を設定して、ユーザー アカウントが侵害されたときにフォレンジック調査を実行したり、他のセキュリティ関連のインシデントを調査したりする方法について説明します。
-ms.openlocfilehash: 6f4f9953c88b1d994d4f033629cc89a6529fb9de
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: f1c858964ee3cb5e6cdfcdb7416468318393ebba
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998840"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097956"
 ---
 # <a name="set-up-microsoft-purview-audit-premium"></a>Microsoft Purview 監査を設定する (プレミアム)
 
@@ -33,7 +33,7 @@ ms.locfileid: "64998840"
 
 組織に監査 (プレミアム) をサポートするサブスクリプションとエンド ユーザー ライセンスがある場合は、次の手順を実行して、監査 (プレミアム) の追加機能を設定して使用します。
 
-![監査を設定するワークフロー (プレミアム)。](../media/AdvancedAuditWorkflow.png)
+![監査 (プレミアム) を設定するためのワークフロー。](../media/AdvancedAuditWorkflow.png)
 
 ## <a name="step-1-set-up-audit-premium-for-users"></a>手順 1: ユーザーの監査 (プレミアム) を設定する
 

@@ -2,8 +2,8 @@
 title: Microsoft Defender for Office 365 の新しいアラート ポリシー
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: reference
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Microsoft Defender for Office 365 の新しいアラート ポリシーをリリースします。 また、新しいものに置き換えられた 2 つの既存のアラート ポリシーを廃止します。
-ms.openlocfilehash: 78f359e273054b7b103fc61bbee9b1555ad843da
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c883a352bad5af918d605bd8fa95112a7df07bd3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991954"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098000"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新しいアラート ポリシー
 

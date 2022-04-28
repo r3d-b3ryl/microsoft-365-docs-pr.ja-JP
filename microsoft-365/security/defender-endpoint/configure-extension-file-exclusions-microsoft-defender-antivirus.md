@@ -13,14 +13,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e8c2b464b7a4559ba316826400cfd0ad308d8786
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 4db7b8f13f1f4860d8cd88f6dec0ff588a89ab41
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790220"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098914"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -42,7 +41,7 @@ ms.locfileid: "64790220"
 > Microsoft Defender ウイルス対策除外は、エンドポイントでの検出と対応 [(EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)、[攻撃表面縮小 (ASR) ルール](/microsoft-365/security/defender-endpoint/attack-surface-reduction)、[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders)など、他のMicrosoft Defender for Endpoint機能には適用されません。 この記事で説明する方法を使用して除外したファイルは、引き続きEDRアラートやその他の検出をトリガーできます。
 > ファイルを広範に除外するには、それらをMicrosoft Defender for Endpoint[カスタム インジケーター](/microsoft-365/security/defender-endpoint/manage-indicators)に追加します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 [除外リストを定義する前に、除外を定義する](configure-exclusions-microsoft-defender-antivirus.md)おすすめを参照してください。
 
@@ -107,7 +106,7 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
 
 2. **グループ ポリシー管理エディター** で **[コンピューターの構成**] に移動し、[**管理用テンプレート**] を選択します。
 
-3. ツリーを展開して **、除外Microsoft Defender ウイルス対策コンポーネント** \> **をWindows** \> **します**。
+3. ツリーを展開して **、除外Windows Defender ウイルス対策コンポーネント** \> **をWindows** \> **します**。
 
 4. 編集用の **[パスの除外]** 設定を開き、除外を追加します。
     1. オプションを **[有効]** に設定します。
@@ -381,13 +380,13 @@ $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt"
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 

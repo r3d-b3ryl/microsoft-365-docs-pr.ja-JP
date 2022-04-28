@@ -2,8 +2,8 @@
 title: 電子情報開示での復号化
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ツールMicrosoft 365電子メール メッセージに添付され、SharePoint Online およびOneDrive for Businessに格納されている暗号化されたドキュメントを処理する方法について説明します。
-ms.openlocfilehash: e010ef1ff169467b442e137bc31d3640aa5a8cb4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e3697efb05ac1f1f9f4b6c9da6789d4230579a68
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994454"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098562"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365電子情報開示ツールでの復号化
 
@@ -48,12 +48,12 @@ Microsoft 電子情報開示ツールでは、Microsoft 暗号化テクノロジ
 
 |電子情報開示タスク  |コンテンツ検索  |電子情報開示 (標準)  |電子情報開示 (プレミアム)  |
 |:---------|:---------|:---------|:---------|
-|サイトと電子メールの添付ファイル内の暗号化されたファイル内のコンテンツを検索<sup>する1</sup>     |不要      |不要      |はい      |
+|サイトと電子メールの添付ファイル内の暗号化されたファイル内のコンテンツを検索<sup>する1</sup>     |いいえ      |いいえ      |はい      |
 |電子メールに添付された暗号化されたファイルをプレビューする     |はい      |はい     |はい       |
-|SharePointとOneDriveで暗号化されたドキュメントをプレビューする|不要      |不要    |はい       |
-|レビュー セット内の暗号化されたファイルを確認する    |N/A      |該当なし        | はい        |
+|SharePointとOneDriveで暗号化されたドキュメントをプレビューする|いいえ      |いいえ    |はい       |
+|レビュー セット内の暗号化されたファイルを確認する    |該当なし      |該当なし        | はい        |
 |電子メールに添付された暗号化されたファイルをエクスポートする    |はい       |はい  |はい    |
-|SharePointおよびOneDriveで暗号化されたドキュメントをエクスポートする    |不要       |いいえ  |はい    |
+|SharePointおよびOneDriveで暗号化されたドキュメントをエクスポートする    |いいえ       |いいえ  |はい    |
 |||||
 
 > [!NOTE]

@@ -1,8 +1,8 @@
 ---
-title: コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用してオンラインでのパフォーマンスSharePointする
+title: コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用して、SharePoint Online のパフォーマンスを向上させる
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 4/20/2015
 audience: Admin
 ms.topic: article
@@ -20,58 +20,58 @@ search.appverid:
 - MET150
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
-description: コンテンツ クエリ Web パーツを SharePoint Server 2013 および SharePoint Online のコンテンツ検索 Web パーツに置き換えてパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: d41983a5771e42d357ae4d2adb5864e2a74fdd57
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: コンテンツ クエリ Web パーツを SharePoint Server 2013 および SharePoint Online のコンテンツ検索 Web パーツに置き換えることで、パフォーマンスを向上させる方法について説明します。
+ms.openlocfilehash: 77c2c6e48beb05b6d371734f0eeeb48881339156
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210235"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098166"
 ---
-# <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用してオンラインでのパフォーマンスSharePointする
+# <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用して、SharePoint Online のパフォーマンスを向上させる
 
-この記事では、コンテンツ クエリ Web パーツを SharePoint Server 2013 および SharePoint Online のコンテンツ検索 Web パーツに置き換えてパフォーマンスを向上させる方法について説明します。
+この記事では、コンテンツ クエリ Web パーツを SharePoint Server 2013 および SharePoint Online のコンテンツ検索 Web パーツに置き換えることで、パフォーマンスを向上させる方法について説明します。
   
-SharePoint Server 2013 および SharePoint の最も強力な新機能の 1 つは、コンテンツ検索 Web パーツ (CSWP) です。 この Web パーツは、検索インデックスを使用して、ユーザーに表示される結果をすばやく取得します。 ユーザーのパフォーマンスを向上させるために、ページ内のコンテンツ クエリ Web パーツ (CQWP) の代わりにコンテンツ検索 Web パーツを使用します。
+SharePoint Server 2013 および SharePoint Online の最も強力な新機能の 1 つは、コンテンツ検索 Web パーツ (CSWP) です。 この Web パーツでは、検索インデックスを使用して、ユーザーに表示される結果をすばやく取得します。 ページ内のコンテンツ クエリ Web パーツ (CQWP) の代わりにコンテンツ検索 Web パーツを使用して、ユーザーのパフォーマンスを向上させます。
   
-コンテンツ クエリ Web パーツに対してコンテンツ検索 Web パーツを使用すると、ほとんどの場合、オンラインでのページ読み込みパフォーマンスがSharePointになります。 適切なクエリを取得するために少し追加の構成がありますが、報酬はパフォーマンスが向上し、ユーザーが幸せです。
+コンテンツ クエリ Web パーツでコンテンツ検索 Web パーツを使用すると、ほとんどの場合、SharePoint Online でのページ読み込みパフォーマンスが大幅に向上します。 適切なクエリを取得するための追加の構成が少しありますが、報酬はパフォーマンスが向上し、ユーザーの満足度が向上します。
   
 ## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用して得られるパフォーマンスの向上を比較する
 
-次の例は、コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用するときに受け取る可能性がある相対的なパフォーマンス向上を示しています。 複雑なサイト構造と非常に広範なコンテンツ クエリにより、効果が明らかになります。
+次の例は、コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用するときに得る相対的なパフォーマンス向上を示しています。 複雑なサイト構造と非常に広範なコンテンツ クエリでは、効果がより明確になります。
   
-このサイトの例には、次の特性があります。
+このサンプル サイトには、次の特性があります。
   
 - 8 レベルのサブサイト。
     
-- カスタムの "フルーツ" コンテンツ タイプを使用するリスト。
+- カスタム "果樹" コンテンツ タイプを使用するリスト。
     
-- Web パーツでは、コンテンツ クエリは広範で、コンテンツ タイプが "fruit" のすべてのアイテムを返します。
+- Web パーツでは、コンテンツ クエリは広範であり、コンテンツ タイプが "fruit" のすべての項目を返します。
     
-- この例では、8 つのサイト全体で 50 アイテムのみを使用します。 コンテンツが多いサイトでは、さらに効果が顕著に表示されます。
+- この例では、8 つのサイト全体で 50 個のアイテムのみを使用します。 コンテンツが多いサイトでは、効果がさらに顕著になります。
     
 コンテンツ クエリ Web パーツの結果のスクリーン ショットを次に示します。
   
 ![Web パーツのコンテンツ クエリを示すグラフィック。](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
   
-このInternet Explorer、F12開発者ツールの [ネットワーク] タブを使用して、応答ヘッダーの詳細を確認します。 次のスクリーン ショットでは、このページ読み込み時の **SPRequestDuration** の値は 924 ミリ秒です。 
+Internet Explorer で、F12 開発者ツールの [ **ネットワーク** ] タブを使用して、応答ヘッダーの詳細を確認します。 次のスクリーン ショットでは、このページ読み込みの **SPRequestDuration** の値は 924 ミリ秒です。 
   
-![924 の要求期間を示すスクリーンショット。](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
+![要求期間 924 を示すスクリーンショット。](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
- **SPRequestDuration は** 、ページを準備するためにサーバーで実行される作業量を示します。 クエリによってコンテンツを切りWeb パーツ検索でコンテンツを切りWeb パーツ、ページのレンダリングにかかる時間が大幅に短縮されます。 対照的に、同等のコンテンツ検索 Web パーツを持つページで、同じ数の結果を返す場合、このスクリーン ショットに示すように **SPRequestDuration** 値は 106 ミリ秒です。 
+ **SPRequestDuration** は、ページを準備するためにサーバーで実行される作業量を示します。 Content by Search Web パーツを使用してクエリ Web パーツでコンテンツを切り替えると、ページのレンダリングにかかる時間が大幅に短縮されます。 これに対し、同じ数の結果を返すコンテンツ検索 Web パーツを持つページでは、このスクリーン ショットに示すように **SPRequestDuration** の値は 106 ミリ秒です。 
   
 ![要求期間 106 を示すスクリーン ショット。](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
-## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>オンラインでのコンテンツ検索 Web パーツSharePointする
+## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>SharePoint Online でのコンテンツ検索 Web パーツの追加
 
-コンテンツ検索 Web パーツの追加は、通常のコンテンツ クエリ Web パーツと非常に似ています。 「コンテンツ検索 *Web パーツを構成する*」のセクション「コンテンツ検索 [Web](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)パーツの追加」を参照SharePoint。
+コンテンツ検索 Web パーツの追加は、通常のコンテンツ クエリ Web パーツとよく似ています。 *「SharePointでコンテンツ検索 Web パーツを* 構成する」の「[コンテンツ検索 Web パーツの](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)追加」セクションを参照してください。
   
 ## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>コンテンツ検索 Web パーツの適切な検索クエリを作成する
 
-コンテンツ検索 Web パーツを追加したら、検索を絞り込んで、必要なアイテムを返します。 これを行う方法の詳細については、「SharePoint でコンテンツ検索 Webパーツを構成する」のセクション「コンテンツ検索 Web パーツで高度なクエリを構成してコンテンツを表示する[」を参照してください](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)。
+コンテンツ検索 Web パーツを追加したら、検索を絞り込んで目的のアイテムを返すことができます。 これを行う方法の詳細については、「*SharePointでコンテンツ検索 Web パーツを構成する」の「コンテンツ検索 Web パーツで高度なクエリを構成して*[コンテンツを](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)表示する」セクションを参照してください。
   
-## <a name="query-building-and-testing-tool"></a>クエリの作成とテスト ツール
+## <a name="query-building-and-testing-tool"></a>クエリのビルドとテスト ツール
 
-複雑なクエリをビルドしてテストするツールについては、「Codeplex の [検索クエリ ツール」](https://sp2013searchtool.codeplex.com/) を参照してください。 
+複雑なクエリをビルドしてテストするツールについては、Codeplex の [検索クエリ ツール](https://sp2013searchtool.codeplex.com/) を参照してください。 
   
 

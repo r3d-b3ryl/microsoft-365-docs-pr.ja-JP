@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Compliance Manager ユーザーのアクセス許可とロールを設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: e691aefdeaf3c2e1c1398bf71b74006aff4d1f6f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c7920a9eac06128f3cf9bfb54645a83296ca7e53
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973643"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091029"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -137,7 +137,7 @@ Microsoft Purview コンプライアンス ポータルのコンプライアン�
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
-3. 左にあるナビゲーションから **自動化されたテスト** を選択します。
+3. 左側のナビゲーションから [ **テスト ソース** ] を選択します。
 
 4. 該当するボタンを選択すると、すべての改善のための処置で自動化されたテストをオンにしたり、すべてのアクションでオフにしたり、個別アクションでオンにしたりすることができます。
 

@@ -2,8 +2,8 @@
 title: Microsoft 365で Telegram 通信データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタを設定して、Microsoft 365に Telegram 通信データをインポートおよびアーカイブできます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 6bee4eb9be5cf8c0d2719f391d89e268c5041b7f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3c207edd3d7243396668c73f936a05531438f970
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997452"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098044"
 ---
 # <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>Telegram 通信データをアーカイブするコネクタを設定する
 

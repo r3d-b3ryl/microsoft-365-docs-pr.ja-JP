@@ -1,8 +1,8 @@
 ---
-title: PowerShell を使用してユーザー Skype for Businessオンライン ポリシーを割り当Microsoft 365
+title: PowerShell for Microsoft 365 でユーザーごとのSkype for Business オンライン ポリシーを割り当てる
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/16/2020
 audience: ITPro
 ms.topic: article
@@ -13,21 +13,21 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: '概要: PowerShell を使用Microsoft 365オンライン ポリシーでユーザー単位の通信設定を割りSkype for Businessします。'
-ms.openlocfilehash: c49d465ffe0a6f1379681be0ae4faaf9982b6ef0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: '概要: PowerShell for Microsoft 365を使用して、Skype for Business Online ポリシーを使用してユーザーごとの通信設定を割り当てます。'
+ms.openlocfilehash: 70120f6d296f958f44906a3526a7dcaa36b7eb04
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178949"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091393"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>PowerShell を使用してユーザー Skype for Businessオンライン ポリシーを割り当Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>PowerShell for Microsoft 365 でユーザーごとのSkype for Business オンライン ポリシーを割り当てる
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-PowerShell を使用Microsoft 365オンライン ポリシーを使用してユーザー単位の通信設定を割り当てるSkype for Businessです。
+Microsoft 365に PowerShell を使用すると、Skype for Business Online ポリシーを使用してユーザーごとの通信設定を割り当てる効率的な方法です。
   
-## <a name="prepare-to-run-the-powershell-commands"></a>PowerShell コマンドの実行の準備
+## <a name="prepare-to-run-the-powershell-commands"></a>PowerShell コマンドの実行を準備する
 
 次の手順にしたがってコマンドを実行するためのセットアップを行います (すでに終わっている場合はこれらの手順は省略可能です)。
   
@@ -53,13 +53,13 @@ PowerShell を使用Microsoft 365オンライン ポリシーを使用してユ�
     
 2. その外部アクセス ポリシーを Alex に割り当てる。
     
-Alex を割り当てる外部アクセス ポリシーを決定する方法 次のコマンドは、EnableFederationAccess が True に設定され、EnablePublicCloudAccess が False に設定されたすべての外部アクセス ポリシーを返します。
+Alex を割り当てる外部アクセス ポリシーを決定するにはどうすればよいですか? 次のコマンドは、EnableFederationAccess が True に設定され、EnablePublicCloudAccess が False に設定されたすべての外部アクセス ポリシーを返します。
   
 ```powershell
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-ExternalAccessPolicy のカスタム インスタンスを作成しない限り、そのコマンドは条件 (FederationOnly) を満たす 1 つのポリシーを返します。 次に例を示します：
+ExternalAccessPolicy のカスタム インスタンスを作成していない限り、そのコマンドは条件を満たす 1 つのポリシーを返します (FederationOnly)。 次に例を示します：
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -105,7 +105,7 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 ## <a name="managing-large-numbers-of-users"></a>多数のユーザーを管理する
 
-多数のユーザー (1000 以上) を管理するには、Invoke-Command コマンドレットを使用してスクリプト ブロックを介してコマンドを [バッチ処理する必要](/powershell/module/microsoft.powershell.core/invoke-command) があります。  前の例では、コマンドレットを実行する度に、呼び出しをセットアップし、結果を待って戻す必要があります。  スクリプト ブロックを使用すると、コマンドレットをリモートで実行し、完了したらデータを送り返すことができます。
+多数のユーザー (1,000 人以上) を管理するには、 [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command) コマンドレットを使用してスクリプト ブロックを使用してコマンドをバッチ処理する必要があります。  前の例では、コマンドレットが実行されるたびに、呼び出しを設定し、結果を待機してから送信する必要があります。  スクリプト ブロックを使用する場合は、コマンドレットをリモートで実行し、完了したらデータを送信し直すことができます。
 
 ```powershell
 $s = Get-PSSession | Where-Object { ($.ComputerName -like '*.online.lync.com' -or $.Computername -eq 'api.interfaces.records.teams.microsoft.com') -and $.State -eq 'Opened' -and $.Availability -eq 'Available' }
@@ -134,7 +134,7 @@ $count = 0
 }
 ```
 
-これにより、一度に 500 人のユーザーがクライアント ポリシーを持たないユーザーを検索します。 クライアント ポリシー "ClientPolicyNoIMURL" と外部アクセス ポリシー "FederationAndPicDefault" を付与します。 結果は 50 のグループにバッチ処理され、50 の各バッチはリモート コンピューターに送信されます。
+これにより、一度に 500 人のユーザーがクライアント ポリシーを持っていないことがわかります。 クライアント ポリシー "ClientPolicyNoIMURL" と外部アクセス ポリシー "FederationAndPicDefault" が付与されます。 結果は 50 のグループにバッチ処理され、50 の各バッチはリモート コンピューターに送信されます。
   
 ## <a name="see-also"></a>関連項目
 

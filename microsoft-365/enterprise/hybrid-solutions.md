@@ -2,7 +2,7 @@
 title: ハイブリッド ソリューション
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: landing-page
@@ -17,23 +17,23 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: サーバー ワークロードの展開に役立つ情報へのリンクOffice示Microsoft Azure。
-ms.openlocfilehash: e4f4ddf41174a9bd1a3b4cef9e43087825ee4bbc
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Office Server ワークロードをMicrosoft Azureにデプロイするのに役立つ情報へのリンクの一覧を提供します。
+ms.openlocfilehash: 9acb67db92e47951bf8d85cdcf6ad35c718c231b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681592"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091239"
 ---
 # <a name="hybrid-solutions"></a>ハイブリッド ソリューション
 
-このMicrosoft Azure、Azure インフラストラクチャ サービスOfficeオンプレミスで展開された一部のサーバー ワークロードを展開できます。
+Microsoft Azureを使用すると、通常は Azure インフラストラクチャ サービスにオンプレミスでデプロイされたOffice Server ワークロードをデプロイできます。
   
-Azure Microsoft 365 ID インフラストラクチャの場合:
+Azure のMicrosoft 365 ID インフラストラクチャの場合:
 
 - [Azure AD for SharePoint サーバー認証の使用](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 
-- [ディレクトリMicrosoft 365にディレクトリ同期を展開Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Microsoft Azureでディレクトリ同期Microsoft 365展開する](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     

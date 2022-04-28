@@ -2,8 +2,8 @@
 title: 電子情報開示検索結果での重複排除
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 12/21/2016
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: 電子メール メッセージのコピーが 1 つだけエクスポートされるように、重複する電子情報開示検索結果を削除する方法について説明します。
-ms.openlocfilehash: 1632f0179479d7a2e283f0ebcf3fdab06751cdc7
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4456ecfb4684562d8ddf7da21c463859f2d9bec2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992240"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091007"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子情報開示検索結果での重複排除
 
@@ -70,7 +70,7 @@ ms.locfileid: "64992240"
 > [!IMPORTANT]
 > 重複除去アルゴリズムの制限が検索結果の品質に影響する可能性がある場合は、アイテムをエクスポートするときに重複除去を有効にしないでください。 このセクションで説明する状況が検索結果の要因になる可能性が低く、重複する可能性が最も高いアイテムの数を減らす場合は、重複除去を有効にすることを検討する必要があります。 
   
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - この記事の情報は、次のいずれかの電子情報開示ツールを使用して検索結果をエクスポートする場合に適用されます。
 

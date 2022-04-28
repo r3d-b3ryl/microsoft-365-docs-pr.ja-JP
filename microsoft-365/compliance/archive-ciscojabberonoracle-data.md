@@ -2,8 +2,8 @@
 title: Microsoft 365の Oracle データに Cisco Jabber をアーカイブするためのコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft Purview コンプライアンス ポータルでコネクタを設定して使用して、Oracle 上の Cisco Jabber からMicrosoft 365にデータをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 33714412db56066b25a1bda03fb4a92c6c64f917
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b006f30300c6f2af8e5da6386997a4259c2dc98c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992658"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090585"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Oracle データに Cisco Jabber をアーカイブするためのコネクタを設定する
 
@@ -41,7 +41,7 @@ Oracle データの Cisco Jabber がユーザー メールボックスに格納�
 
 4. コネクタは、[手順 3](#step-3-map-users-and-complete-the-connector-setup). で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックスにインポートします。 Oracle 上の **Cisco Jabber** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを行います。 すべての Jabber アイテムにはこのプロパティが含まれています。このプロパティには、アイテムのすべての参加者の電子メール アドレスが入力されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Microsoft コネクタの Merge1 アカウントを作成します。 これを行うには、 [Veritas カスタマー サポート](https://www.veritas.com/content/support/en_US)にお問い合わせください。 手順 1 でコネクタを作成するときに、このアカウントにサインインする必要があります。
 

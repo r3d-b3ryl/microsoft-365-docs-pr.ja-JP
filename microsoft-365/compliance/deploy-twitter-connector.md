@@ -2,8 +2,8 @@
 title: Twitter データをアーカイブするためのコネクタのデプロイ
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Twitter データをインポートしてMicrosoft 365にアーカイブするネイティブ コネクタを設定できます。 このデータをMicrosoft 365にインポートした後は、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
-ms.openlocfilehash: 6bf801d7c3443385ee0a2656753dcf069ac6aebc
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: a928e24c73fcbb290bde2caa0f508610fc18728d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997144"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090963"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Twitter データをアーカイブするためのコネクタのデプロイ
 

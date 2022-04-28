@@ -2,8 +2,8 @@
 title: 電子情報開示で部分的にインデックスが付けられたアイテムの調査
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 組織内のExchange、SharePoint、OneDrive for Businessから部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれます) を管理する方法について説明します。
-ms.openlocfilehash: 0cab31f56576cac9cbe7b51ea2cdceb49aff6db9
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 03d68a02765a85066e41ba2b4dee54441d971190
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993120"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077924"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックスが付けられたアイテムの調査
 

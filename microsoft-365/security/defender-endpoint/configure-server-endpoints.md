@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1709597d10b140124501fd0dc7349e8fc4342bb6
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 14ec731eebe21f6b399e03d445fef248b8675026
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841755"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098760"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint にオンボードします
 
@@ -174,6 +174,11 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 **Windows Server 2012 R2 および 2016 のMicrosoft Defender for Endpointのパッケージを更新する**
 
 EDR センサー コンポーネントの定期的な製品改善と修正プログラムを受け取るには、Windows Update [ KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) が適用または承認されていることを確認してください。 さらに、保護コンポーネントを最新の状態に保つには、「[Microsoft Defender ウイルス対策更新プログラムの管理とベースラインの適用](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)」 を参照してください。
+
+
+Windows Server Update Services (WSUS) やMicrosoft Endpoint Configuration Managerを使用している場合は、この新しい "EDR センサーのMicrosoft Defender for Endpoint更新プログラム" が次のセクションで使用できます。カテゴリ "Microsoft Defender for Endpoint"
+
+
 
 ### <a name="onboarding-steps-summary"></a>オンボード手順の概要
 

@@ -2,8 +2,8 @@
 title: 非保管データ ソースを電子情報開示 (プレミアム) ケースに追加する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 非保管データ ソースを電子情報開示 (プレミアム) ケースに追加し、データ ソースを保留にすることができます。 非保管データ ソースはインデックスが再作成されるため、部分的にインデックスが作成されたとしてマークされたすべてのコンテンツは、完全かつ迅速に検索できるように再処理されます。
-ms.openlocfilehash: 2f5825f514dfc8f99fc7a6006d1fd30028515c7b
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 86011a0f19dcb8f46041f4c0aa7c91d89e4e2198
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991888"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097978"
 ---
 # <a name="add-non-custodial-data-sources-to-an-ediscovery-premium-case"></a>非保管データ ソースを電子情報開示 (プレミアム) ケースに追加する
 

@@ -1,8 +1,8 @@
 ---
-title: Office 365スコアのベンチマークと比較
+title: ネットワーク スコアのベンチマークと比較をOffice 365する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 10/22/2019
 audience: Admin
 ms.topic: conceptual
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365スコアのベンチマークと比較
-ms.openlocfilehash: 008e3a1d8106f0e28072f7b80e6a9cbe46cdf83b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: ネットワーク スコアのベンチマークと比較をOffice 365する
+ms.openlocfilehash: 408e34eb0617614aa268ef479aef1e3b04ea9373
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199935"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090233"
 ---
-# <a name="office-365-network-score-benchmarks-and-comparisons"></a>Office 365スコアのベンチマークと比較
+# <a name="office-365-network-score-benchmarks-and-comparisons"></a>ネットワーク スコアのベンチマークと比較をOffice 365する

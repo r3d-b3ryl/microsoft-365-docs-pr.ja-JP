@@ -2,7 +2,7 @@
 title: PowerShell で Microsoft 365 ユーザー アカウントを表示する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: PowerShell を使用して、さまざまな方法で Microsoft 365 ユーザー アカウントを閲覧、一覧表示、表示する方法について説明します。
-ms.openlocfilehash: 5c434825da95fd7d90594b2424cab287305f7d26
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
-ms.translationtype: HT
+ms.openlocfilehash: cbbb188c50e4d163d5ef4226a83968c64e8a260c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667508"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090731"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell で Microsoft 365 ユーザー アカウントを表示する
 

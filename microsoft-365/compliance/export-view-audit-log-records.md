@@ -2,8 +2,8 @@
 title: 監査ログ レコードをエクスポート、構成、表示する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: この記事では、監査ログ レコードをエクスポート、構成、および表示Microsoft 365方法について説明します。
-ms.openlocfilehash: 9403ead4c7fd6bd27bcc3848d367749e00beed3c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 73771e41c785bbf74c843821400b65a7049b902a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994394"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098088"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
 

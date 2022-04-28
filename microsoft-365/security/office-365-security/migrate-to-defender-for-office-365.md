@@ -19,19 +19,19 @@ ms.custom: ''
 description: サードパーティの保護サービスや Google Postini、Barracuda Spam and Virus Firewall、Cisco IronPort などのデバイスから保護をMicrosoft Defender for Office 365に移行する正しい方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b00051effd6ee77fd29ba0a5a07ee27c9113a439
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 2f67135e2b8a3700a2fb6a6e24fc4f66696db2e3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704825"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098716"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>サード パーティの保護サービスまたはデバイスからMicrosoft Defender for Office 365に移行する
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
-Microsoft 365の前に存在する既存のサードパーティの保護サービスまたはデバイスが既にある場合は、このガイドを使用して保護をMicrosoft Defender for Office 365に移行し、統合管理エクスペリエンスの利点、コストの削減 (既に支払っている製品を使用)、および統合セキュリティを備えた成熟した製品を得ることができます。 保護。 詳細については、「[Microsoft Defender for Office」を](https://www.microsoft.com/security/business/threat-protection/office-365-defender)参照してください。
+Microsoft 365の前に存在する既存のサードパーティの保護サービスまたはデバイスが既にある場合は、このガイドを使用して保護をMicrosoft Defender for Office 365に移行し、統合管理エクスペリエンスの利点、コストの削減 (既に支払っている製品を使用)、および統合セキュリティを備えた成熟した製品を得ることができます。 保護。 詳細については、「[Microsoft Defender for Office 365](https://www.microsoft.com/security/business/threat-protection/office-365-defender)」を参照してください。
 
 このガイドでは、移行に関する具体的で実用的な手順について説明し、次の事実を前提としています。
 
@@ -55,10 +55,10 @@ Defender for Office 365を優先して既存の保護サービスを排除する
 
 ## <a name="why-use-the-steps-in-this-guide"></a>このガイドの手順を使用する理由
 
-IT 業界では、驚きは一般的に悪い。 事前の思慮深いテストを行わずに MX レコードをMicrosoft 365を指すように反転するだけで、多くの驚きが生じます。 例:
+IT 業界では、驚きは一般的に悪い。 事前の思慮深いテストを行わずに MX レコードをMicrosoft 365を指すように反転するだけで、多くの驚きが生じます。 次に例を示します。
 
 - ユーザーまたは先行ユーザーは、既存の保護サービスをカスタマイズして最適なメール配信を行うために多くの時間と労力を費やしている可能性があります (つまり、ブロックする必要があるものをブロックし、許可する必要がある内容を許可します)。 Defender for Office 365では、現在の保護サービスのすべてのカスタマイズが必要であるとは言えないことがほぼ確実です。 また、Defender for Office 365では、現在の保護サービスで発生しなかった、または必要とされなかった新しい問題 (許可またはブロック) が導入される可能性も非常に高くなります。
-- ヘルプ デスクとセキュリティ担当者は、Defender for Office 365で何をすべきかを知る必要があります。 たとえば、ユーザーが不足しているメッセージについて不平を言った場合、ヘルプ デスクは、そのメッセージの場所や検索方法を知っていますか? 既存の保護サービスのツールに精通していることを確認している可能性がありますが、Defender for Office 365のツールについてはどうでしょうか。
+- ヘルプ デスクとセキュリティ担当者は、Defender for Office 365で何をすべきかを知る必要があります。 たとえば、ユーザーが不足しているメッセージについて不平を言った場合、ヘルプ デスクは、そのメッセージの場所や検索方法を知っていますか? 既存の保護サービスのツールに精通している可能性がありますが、Defender for Office 365のツールについてはどうでしょうか?
 
 これに対し、この移行ガイドの手順に従うと、移行に関して次の具体的な利点が得られます。
 
@@ -82,6 +82,6 @@ Defender for Office 365が組織にどのような影響を与えるかを理解
 |[Defender for Office 365を設定する](migrate-to-defender-for-office-365-setup.md)|<ol><li>[パイロット ユーザーの配布グループを作成する](migrate-to-defender-for-office-365-setup.md#step-1-create-distribution-groups-for-pilot-users)</li><li>[ユーザー メッセージ レポートのユーザー送信を構成する](migrate-to-defender-for-office-365-setup.md#step-2-configure-user-submission-for-user-message-reporting)</li><li>[SCL=-1 メール フロー ルールを維持または作成する](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule)</li><li>[コネクタの拡張フィルター処理を構成する](migrate-to-defender-for-office-365-setup.md#step-4-configure-enhanced-filtering-for-connectors)</li><li>[パイロット保護ポリシーを作成する](migrate-to-defender-for-office-365-setup.md#step-5-create-pilot-protection-policies)</li></ol>|
 |[Defender for Office 365にオンボードする](migrate-to-defender-for-office-365-onboard.md)|<ol><li>[セキュリティ Teamsのオンボードを開始する](migrate-to-defender-for-office-365-onboard.md#step-1-begin-onboarding-security-teams)</li><li>[(省略可能)既存の保護サービスによるフィルター処理からパイロット ユーザーを除外する](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)</li><li>[スプーフィング インテリジェンスを調整する](migrate-to-defender-for-office-365-onboard.md#step-3-tune-spoof-intelligence)</li><li>[偽装保護とメールボックス インテリジェンスを調整する](migrate-to-defender-for-office-365-onboard.md#step-4-tune-impersonation-protection-and-mailbox-intelligence)</li><li>[ユーザー提出のデータを使用して測定と調整を行う](migrate-to-defender-for-office-365-onboard.md#step-5-use-data-from-user-submissions-to-measure-and-adjust)</li><li>[(省略可能)パイロットにユーザーを追加して反復処理する](migrate-to-defender-for-office-365-onboard.md#step-6-optional-add-more-users-to-your-pilot-and-iterate)</li><li>[Microsoft 365保護をすべてのユーザーに拡張し、SCL=-1 メール フロー ルールを無効にする](migrate-to-defender-for-office-365-onboard.md#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)</li><li>[MX レコードを切り替える](migrate-to-defender-for-office-365-onboard.md#step-8-switch-your-mx-records)</li></ol>|
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 - [フェーズ 1: 準備](migrate-to-defender-for-office-365-prepare.md)に進みます。

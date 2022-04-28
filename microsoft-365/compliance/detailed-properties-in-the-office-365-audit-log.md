@@ -2,8 +2,8 @@
 title: 監査ログの詳細なプロパティ
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: この記事では、Office 365監査ログ レコードの結果をエクスポートするときに含まれる追加のプロパティについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2342a64deaa2787e534a09b3d874ed3795d82ea8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 82fd42fc44d5738c47ec022de2bb1b5f53396ae2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996220"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098826"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>監査ログの詳細なプロパティ
 

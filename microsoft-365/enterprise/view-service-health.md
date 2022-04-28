@@ -2,7 +2,7 @@
 title: Microsoft 365 サービス正常性を確認する方法
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: アクティブ サービスが中断していないかどうかを確認するため、サポートに連絡する前に、Microsoft 365 サービスの正常性状態を表示します。
-ms.openlocfilehash: 4a72132872c890f755cb537e06c42412aa17fb9f
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 3155d9a26fd2b34eb4f5bc820e906d35f1f7fdff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468776"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090211"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Microsoft 365 サービス正常性を確認する方法
 

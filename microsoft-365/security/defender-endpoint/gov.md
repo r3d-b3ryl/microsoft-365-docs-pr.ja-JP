@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32baee17e01aa4223124e21b7d20c219c0dc4b7f
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 51f9c373a68e34ffafa5c3763b8efe77fa2c6146
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841863"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098738"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府のお客様向けの Microsoft Defender for Endpoint
 
@@ -78,7 +78,7 @@ Azure US Government 環境に組み込まれている米国政府機関のお客
 |---|---|
 |GCC|<https://security.microsoft.com>|
 |GCC High|<https://security.microsoft.us>|
-|DoD|<https://security.microsoft.us>|
+|DoD|<https://security.apps.mil>|
 |
 > [!NOTE]
 > GCC顧客であり、Microsoft Defender for EndpointコマーシャルからGCCに移行する過程にある場合は、Microsoft Defender for Endpoint商用データにアクセスするために使用https://transition.security.microsoft.comします。
@@ -103,8 +103,8 @@ Windows 10バージョン 1909 ([KB4586819](https://support.microsoft.com/help/4
 Windows 10バージョン 1903 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows 10 Version 1809 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows 10バージョン 1803 ([KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Windows 10バージョン 1709|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![[KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> ではい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
-Windows 10バージョン 1703 以前|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
+Windows 10バージョン 1709|![その必要はありません。](images/svg/check-no.svg) <br /> 注: サポートされません|![[KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> ではい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください|![なし](images/svg/check-no.svg) <br /> 注: サポートされません
+Windows 10バージョン 1703 以前|![その必要はありません。](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
 Windows Server 2022|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows Server 2019 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows Server 2016 (モダン) <sup>2</sup>|![はい。](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー
@@ -191,9 +191,9 @@ Windows Server 2008 R2 SP1|![はい。](images/svg/check-yes.svg)|![はい](imag
 
 |フィーチャー名|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|ネットワーク評価|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
+|ネットワーク評価|![なし](images/svg/check-no.svg) 開発中|![なし](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
 |ネットワーク検出|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
-|レポート: デバイス制御、デバイスの正常性、ファイアウォール|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
+|レポート: デバイス制御、デバイスの正常性、ファイアウォール|![いいえ](images/svg/check-no.svg) 開発中|![なし](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
 |Web コンテンツ フィルタリング|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
   
 
@@ -206,7 +206,7 @@ Windows Server 2008 R2 SP1|![はい。](images/svg/check-yes.svg)|![はい](imag
 |フィーチャー名|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |Web Protection (フィッシング対策とカスタム インジケーター)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
-|Malware Protection (Android のみ)|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
+|Malware Protection (Android のみ)|![なし](images/svg/check-no.svg) 開発中|![なし](images/svg/check-no.svg) 開発中|![なし](images/svg/check-no.svg) 開発中|
 |脱獄検出 (iOS のみ)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |条件付きアクセス/条件付き起動|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |MAM のサポート|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|

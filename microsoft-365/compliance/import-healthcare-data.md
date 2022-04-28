@@ -2,8 +2,8 @@
 title: 一般的な医療監査データをインポートするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、医療システムからMicrosoft 365に電子医療レコード (EHR) データをインポートするデータ コネクタを設定できます。 これにより、インサイダー リスク管理ポリシーで EHR データを使用して、従業員による患者データへの不正アクセスアクティビティを検出できます。
-ms.openlocfilehash: b1745d8f91253132748fe08d724386d2e6633a4c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 90f50628e255267baeff7d39c776f9a6bf8cc426
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993164"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077893"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>医療 EHR 監査データをインポートするコネクタを設定する (プレビュー)
 
@@ -68,7 +68,7 @@ Azure ADでアプリを作成する手順については、「Microsoft ID プ�
 
 次の表に、インサイダー リスク管理シナリオを有効にするために必要なフィールドを示します。 これらのフィールドのサブセットは必須です。 これらのフィールドはアスタリスク (*)で強調表示されます。 テキスト ファイルに必須フィールドがない場合、ファイルは検証されません。ファイル内のデータはインポートされません。
 
-|フィールド|カテゴリ|
+|Field|カテゴリ|
 |:----|:----------|
 | Creation *TimeEvent<br/> Name*<br/>ワークステーション ID<br/>[イベント] セクション<br/>分類 |これらのフィールドは、医療 EHR システム内のアクセス アクティビティ イベントを識別するために使用されます。|
 | 患者 Reg ID<br/>Patient First *NamePatient<br/> ミドル ネーム <br/>Patient Last Name* <br/>患者アドレス行 1* <br/>患者アドレス行 2<br/>Patient City* <br/>患者郵便番号*  <br/>患者の状態 <br/>患者の国 <br/>患者部              | これらのフィールドは、患者プロファイル情報を識別するために使用されます。|

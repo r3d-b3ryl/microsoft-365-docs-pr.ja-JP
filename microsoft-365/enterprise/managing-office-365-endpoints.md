@@ -2,7 +2,7 @@
 title: Office 365 エンドポイントを管理する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ組織のネットワーク アーキテクチャで動作するように Office 365 エンドポイントを管理する方法について説明します。
-ms.openlocfilehash: 5d5e51b789ef0336a2e7aaa6a923ca2957ea6edf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: 6743ab1c3241b84b0eb1dd3e9f5e67e100e18b40
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314533"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090343"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 

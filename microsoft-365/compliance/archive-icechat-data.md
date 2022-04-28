@@ -2,8 +2,8 @@
 title: ICE チャット データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、ICE チャット ツールからMicrosoft 365にデータをインポートおよびアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: 55af0567fc5cb8dbdeb571209fb7d9f863561900
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1704795d28062bf6259129e2548e797b2f6bc7e9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001700"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090563"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>ICE チャット データをアーカイブするコネクタを設定する
 

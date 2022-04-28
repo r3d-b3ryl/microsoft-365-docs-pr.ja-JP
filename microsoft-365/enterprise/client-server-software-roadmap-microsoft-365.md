@@ -1,10 +1,10 @@
 ---
-title: クライアントおよびサーバー ソフトウェアのロードマップ (Microsoft 365
+title: Microsoft 365のクライアントとサーバーソフトウェアのロードマップ
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
@@ -12,167 +12,167 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: このロードマップを使用して、クライアントソフトウェアとサーバー ソフトウェアをセットアップMicrosoft 365。
-ms.openlocfilehash: 1522cf706be06656427412f76d6fa3b5455ac7d9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: このロードマップを使用して、Microsoft 365用のクライアント ソフトウェアとサーバー ソフトウェアを設定します。
+ms.openlocfilehash: c42f02f20c9f16dd19f60d051c7f4a4aa5316bf2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174929"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090841"
 ---
-# <a name="client-and-server-software-roadmap-for-microsoft-365"></a>クライアントおよびサーバー ソフトウェアのロードマップ (Microsoft 365
+# <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365のクライアントとサーバーソフトウェアのロードマップ
 
-ほとんどのエンタープライズ組織には、オペレーティング システム、クライアント ソフトウェア、およびサーバー ソフトウェアの複数のリリースを含む異種環境があります。 Microsoft 365のEnterpriseには、IT インフラストラクチャの主要なコンポーネントの最も安全なバージョンが含まれています。 また、クラウド テクノロジを活用するように設計された生産性機能も含まれています。
+ほとんどのエンタープライズ組織には、オペレーティング システム、クライアント ソフトウェア、サーバー ソフトウェアの複数のリリースを含む異種環境があります。 EnterpriseのMicrosoft 365には、IT インフラストラクチャの主要コンポーネントの最も安全なバージョンが含まれます。 また、クラウド テクノロジを利用するように設計された生産性機能も含まれています。
 
-統合された製品スイートのMicrosoft 365のEnterpriseを最大化するには、次のリリースを移行するための戦略の計画と実装を開始します。
+統合された製品スイートのMicrosoft 365のビジネス価値Enterprise最大化するために、次のリリースを移行する戦略の計画と実装を開始します。
 
-- コンピューター Officeインストールされているクライアントを使用して、Microsoft 365 Apps for enterprise。
-- サーバー Officeインストールされているサーバーと、サーバー内の同等のサービスMicrosoft 365。
-- Windows 7 とWindows 8.1をデバイス上でWindows 10 Enterprise。
+- Microsoft 365 Apps for enterpriseするコンピューターにインストールされているOffice クライアント。
+- サーバーにインストールされているOffice サーバーは、Microsoft 365の同等のサービスにインストールされます。
+- Windows 7 とデバイス上のWindows 8.1をWindows 10 Enterpriseします。
 
 >[!Note]
->2020 Windows 7 のサポートは *2020 年 1 月 14 日に終了しました*。 詳細については、「サポート終了の [詳細」を参照してください](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
+>Windows 7 のサポートは *、2020 年 1 月 14* 日に終了しました。 詳細については、 [サポート終了の詳細を参照してください](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
 >
 
-これらの移行を時間の間に完了すると、組織は現代の職場のビジョンに [近づいています](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)。 この安全で統合された環境は、組織のチームワークと創造性のロックを解除するのに役立ちます。 Microsoft 365のEnterprise、すべてのユーザーを有効にし、権限を与える必要があります。
+これらの移行を時間の経過と共に達成すると、組織は [現代の職場](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)のビジョンに近づきます。 この安全で統合された環境は、組織内のチームワークと創造性のロックを解除するのに役立ちます。 EnterpriseのMicrosoft 365を使用すると、すべてのユーザーを有効にし、支援することができます。
 
-## <a name="migration-for-office-client-products"></a>クライアント製品Office移行
+## <a name="migration-for-office-client-products"></a>Office クライアント製品の移行
 
-多くの場合、大小の組織では、Word、Office、およびアプリケーションなどの古いバージョンのクライアント製品を組み合わせてExcel使用PowerPoint。 これらの古いバージョン:
+組織は、多くの場合、Word、Excel、PowerPointなどの古いバージョンのOfficeクライアント製品を組み合わせて使用します。 これらの古いバージョン:
 
-- 最新の [セキュリティ更新プログラム](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) とサポート修正プログラムで更新できます。 ただし、このプロセスは手動であり、組織全体で拡張できない場合があります。
-- ビジネスのデジタル変換に役立つ Microsoft クラウド テクノロジを使用するために最適化されていない。
-- 最新の機能を提供しない。
+- 最新のセキュリティ更新プログラムとサポート修正プログラムを使用して [更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) できます。 ただし、プロセスは手動であり、組織全体でスケーリングされない場合があります。
+- ビジネスのデジタル変革に役立つ Microsoft クラウド テクノロジを使用するように最適化されていません。
+- 最新の機能を提供しないでください。
 
-Microsoft 365にはEnterpriseがMicrosoft 365 Apps for enterprise。 このバージョンのクライアントOfficeは、ライセンスのMicrosoft 365でEnterpriseできます。 Microsoft クラウドからインストールおよび更新されます。 Microsoft 365 Apps for enterprise には、セキュリティ更新プログラムおよび最新機能が含まれます。 詳細については、「概要[」 を参照Microsoft 365 Apps for enterprise。](/deployoffice/about-microsoft-365-apps)
+EnterpriseのMicrosoft 365には、Microsoft 365 Apps for enterpriseが含まれます。 このバージョンのOffice クライアント製品は、Enterprise ライセンスのMicrosoft 365で使用できます。 Microsoft クラウドからインストールおよび更新されます。 Microsoft 365 Apps for enterprise には、セキュリティ更新プログラムおよび最新機能が含まれます。 詳細については、「[Microsoft 365 Apps for enterpriseについて](/deployoffice/about-microsoft-365-apps)」を参照してください。
 
 ### <a name="office-2007"></a>Office 2007
 
-2007 OfficeリリースOfficeバージョンについては、サポートの終了が既に経過しています。 詳細については、「Office [2007 のサポート終了ロードマップ」を参照してください](/deployoffice/office-2007-end-support-roadmap)。
+Office 2007 リリースのバージョンのOfficeについては、サポートの終了は既に終了しています。 詳細については、[Office 2007 のサポート終了ロードマップ](/deployoffice/office-2007-end-support-roadmap)に関するページを参照してください。
 
-Office 2007 を実行しているコンピューターを Office 2010、Office 2013、または Office 2016 にアップグレードするのではなく、次の手順を実行してください。
+2007 Office 2010、Office Office 2013、または Office 2016 に実行するコンピューターをアップグレードするのではなく、次の手順を実行することを検討してください。
 
-1. ユーザーのライセンスを取得Microsoft 365割り当てる。
-2. コンピューター Office 2007 をアンインストールします。
-3. 個別Microsoft 365 Apps for enterpriseまたは IT ロールアウト中に、このファイルをインストールします。 詳細については、「[Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
+1. ユーザーのMicrosoft 365 ライセンスを取得して割り当てます。
+2. コンピューターで 2007 Officeアンインストールします。
+3. Microsoft 365 Apps for enterpriseを個別にインストールするか、IT ロールアウト中にインストールします。 詳細については、「[Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
 
-Microsoft 365 Apps for enterprise更新プログラムが自動的にインストールされます。 クラウドベースのサービスを利用して、セキュリティと生産性を向上させることができます。
+Microsoft 365 Apps for enterprise更新プログラムを自動的にインストールします。 クラウド ベースのサービスを利用して、セキュリティと生産性を向上させることができます。
 
 ### <a name="office-2010"></a>Office 2010
 
-2010 OfficeリリースOfficeバージョンの場合、サポートは *2020 年 10 月 13* 日に終了しました。 詳細については、「Office [2010 のサポート終了ロードマップ」を参照してください](/deployoffice/office-2010-end-support-roadmap)。
+Office 2010 リリースのOfficeのバージョンについては、サポートは *2020 年 10 月 13* 日に終了しました。 詳細については、[Office 2010 のサポート終了ロードマップに関するページを](/deployoffice/office-2010-end-support-roadmap)参照してください。
 
-2010 年から 2010 年Office 2013 年または 2016 年Office実行するOfficeがあります。 ただし、両方のバージョンを手動で更新する必要があります。 そのため、代わりに次の手順を実行してください。
+2010 Office 2013 または Office 2016 にOfficeコンピューターをアップグレードすることを検討する場合があります。 ただし、これらの両方のバージョンを手動で更新する必要があります。 そのため、代わりに次の手順を実行することを検討してください。
 
-1. ユーザーのライセンスを取得Microsoft 365割り当てる。
-2. コンピューター Office 2010 をアンインストールします。
-3. 個別Microsoft 365 Apps for enterpriseまたは IT ロールアウト中に、このファイルをインストールします。 詳細については、「[Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
+1. ユーザーのMicrosoft 365 ライセンスを取得して割り当てます。
+2. コンピューターで 2010 Officeアンインストールします。
+3. Microsoft 365 Apps for enterpriseを個別にインストールするか、IT ロールアウト中にインストールします。 詳細については、「[Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
 
-Microsoft 365 Apps for enterprise更新プログラムと新しい機能更新プログラムの両方が自動的にインストールされます。 クラウド ベースのサービスを利用して、セキュリティMicrosoft 365生産性を向上させることができます。
+Microsoft 365 Apps for enterpriseセキュリティ更新プログラムと新機能更新プログラムの両方が自動的にインストールされます。 セキュリティと生産性を強化するために、Microsoft 365でクラウドベースのサービスを利用できます。
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 および Office 2016
 
-[2013 年のサポート終了ロードマップをOfficeしてください](/lifecycle/products/microsoft-office-2013)。 2016 Officeのサポートの終了はまだ決定されていません。 これらのバージョンでは、2010 Officeと同様に、セキュリティ更新プログラム[をインストールする必要があります](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)。 組織のサイズによっては、このタスクがうまく拡張されない場合があります。
+[Office 2013 のサポート終了ロードマップを](/lifecycle/products/microsoft-office-2013)参照してください。 Office 2016 のサポートの終了はまだ決定されていません。 これらのバージョン (Office 2010 など) でも、[セキュリティ更新プログラムをインストールする](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)必要があります。 組織の規模によっては、このタスクは適切にスケーリングされない可能性があります。
 
-Office 2013 または Office 2016 の最新のセキュリティ更新プログラムを使用してコンピューターを最新の状態に保つか、Office 2013 から Office 2016 にコンピューターを更新するのではなく、次の手順を実行してください。
+Office 2013 または Office 2016 の最新のセキュリティ更新プログラムを使用してコンピューターを最新の状態に保つのではなく、コンピューターを 2013 Officeから 2016 Officeに更新する代わりに、次の手順を実行することを検討してください。
 
-1. ユーザーのライセンスを取得Microsoft 365割り当てる。
+1. ユーザーのMicrosoft 365 ライセンスを取得して割り当てます。
 2. コンピューター Office 2013 または Office 2016 をアンインストールします。
-3. 個別Microsoft 365 Apps for enterpriseまたは IT ロールアウト中に、このファイルをインストールします。 詳細については、「[Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
+3. Microsoft 365 Apps for enterpriseを個別にインストールするか、IT ロールアウト中にインストールします。 詳細については、「[Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
 
-Microsoft 365 Apps for enterprise、セキュリティ更新プログラムと新機能更新プログラムの両方が自動的にインストールされます。 クラウド ベースのサービスを利用して、セキュリティMicrosoft 365生産性を向上させることができます。
+Microsoft 365 Apps for enterpriseセキュリティ更新プログラムと新機能更新プログラムの両方が自動的にインストールされます。 セキュリティと生産性を強化するために、Microsoft 365でクラウドベースのサービスを利用できます。
 
-## <a name="migration-for-office-server-products"></a>サーバー製品Office移行
+## <a name="migration-for-office-server-products"></a>Office サーバー製品の移行
 
-大規模な組織と小規模組織の両方で、Office サーバー製品 (Exchange Server および SharePoint など) を使用します。 これらの古いバージョン:
+多くの場合、大小両方の組織で、Exchange ServerやSharePoint サーバーなどの古いバージョンのOffice サーバー製品を組み合わせて使用します。 これらの古いバージョン:
 
 - 最新のセキュリティ更新プログラムとサポート修正プログラムで更新する必要があります。場合によっては、これらの更新プログラムは毎月リリースされます。
-- ビジネスのデジタル変換に役立つ Microsoft クラウド テクノロジを使用するために最適化されていない。
-- 新しい生産性アプリケーション (例: Microsoft Teams) は含Microsoft Teams。
-- 最新のセキュリティ機能を含めExchange Defender for Office 365。
+- ビジネスのデジタル変革に役立つ Microsoft クラウド テクノロジを使用するように最適化されていません。
+- Microsoft Teamsなどの新しい生産性アプリケーションは含めないでください。
+- ExchangeやDefender for Office 365などの最新のセキュリティ機能は含めないでください。
 
-Microsoft 365 Enterprise には、web ブラウザーや Outlook クライアントなど、オンプレミスバージョンの Office サーバー ソフトウェアと同じツールの一部を使用するクラウドベースのバージョンの Office サーバー サービスが含まれています。 これらのサービスは、セキュリティのために自動的に更新されます。 そのため、IT 担当者は、オンプレミス サーバーの保守と更新に要する時間を節約できます。 また、これらのサービスは、サーバー ソフトウェアにはない新機能Office提供します。
+EnterpriseのMicrosoft 365には、Web ブラウザーやOutlook クライアントなどのオンプレミス バージョンのOffice サーバー ソフトウェアと同じツールの一部を使用する、クラウドベースのバージョンのOffice サーバー サービスが含まれます。 これらのサービスは、セキュリティのために自動的に更新されます。 そのため、IT 担当者は、オンプレミス サーバーの保守と更新にかかる時間を節約できます。 これらのサービスでは、Office サーバー ソフトウェアにはない新しい機能拡張も提供されます。
 
-特定のワークロードのユーザーとデータを移行する方法については、次Microsoft 365してください。
+特定のMicrosoft 365 ワークロードのユーザーとデータの移行に関する情報については、次のリソースを使用します。
 
-- [メールボックスをオンプレミスのメールボックスからExchange ServerにExchange Online](/exchange/hybrid-deployment/move-mailboxes)
-- [サーバー SharePointからオンラインにSharePointデータをSharePointする](/sharepointmigration/migrate-to-sharepoint-online)
-- [オンラインSkype for Businessに移行Microsoft Teams](/microsoftteams/migration-interop-guidance-for-teams-with-skype)
+- [オンプレミスのExchange ServerからExchange Onlineにメールボックスを移動する](/exchange/hybrid-deployment/move-mailboxes)
+- [SharePoint サーバーから SharePoint Online にSharePoint データを移行する](/sharepointmigration/migrate-to-sharepoint-online)
+- [Skype for Business Online をMicrosoft Teamsに移行する](/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
 ### <a name="office-2007-server-products"></a>Office 2007 サーバー製品
 
-2007 年 2007 Officeのサーバー製品の場合、サポートの終了は既に経過しています。 詳細については、次の記事を参照してください。
+Office 2007 リリースのサーバー製品の場合、サポートの終了は既に終了しています。 詳細については、次の記事を参照してください。
 
 - [Exchange 2007 のサポート終了ロードマップ](exchange-2007-end-of-support.md)
-- [SharePointServer 2007 のサポート終了ロードマップ](sharepoint-2007-end-of-support.md)
-- [ProjectServer 2007 のサポート終了ロードマップ](project-server-2007-end-of-support.md)
-- [OfficeCommunications Server のサポート終了ロードマップ](/skypeforbusiness/plan-your-deployment/upgrade)
+- [SharePoint Server 2007 のサポート終了ロードマップ](sharepoint-2007-end-of-support.md)
+- [Project Server 2007 のサポート終了ロードマップ](project-server-2007-end-of-support.md)
+- [Office Communications Server のサポート終了ロードマップ](/skypeforbusiness/plan-your-deployment/upgrade)
 - [PerformancePoint Server 2007 のサポート終了ロードマップ](pps-2007-end-of-support.md)
 
-Office 2010、Office 2013、または Office 2016 のリリースでは、Office 2007 リリースでサーバー製品をアップグレードするのではなく、次の手順を実行してください。
+Office 2010、Office 2013、または Office 2016 のリリースのサーバー製品を使用して、Office 2007 リリースのサーバー製品をアップグレードするのではなく、次の手順を実行することを検討してください。
 
-1. 2007 年 2007 Officeにデータを移行Microsoft 365。 詳細またはヘルプについては、Microsoft パートナーを採用してください。
+1. Office 2007 サーバー上のデータをMicrosoft 365に移行します。 詳細またはヘルプについては、Microsoft パートナーを採用してください。
 2. 新しい機能と作業プロセスをユーザーにロールアウトします。
-3. 2007 サーバー製品を実行しているオンプレミス サーバー Office場合は、使用を停止します。
+3. 2007 サーバー製品Office実行しているオンプレミス サーバーが不要になったら、使用停止にします。
 
 ### <a name="office-2010-server-products"></a>Office 2010 サーバー製品
 
-[2010 Exchange Serverサポートは 2020](exchange-2010-end-of-support.md)年 *10 月 13 日に終了しました*。
+[Exchange Server 2010](exchange-2010-end-of-support.md) のサポートは *、2020 年 10 月 13* 日に終了しました。
 
 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) のサポートは、*2021 年 4 月 13 日* に終了します。
 
-Office 2013 または Office 2016 のリリースのサーバー製品を使用して、Office 2010 リリースでこれらのサーバー製品をアップグレードするのではなく、次の手順を実行してください。
+Office 2010 リリースのこれらのサーバー製品を、Office 2013 または Office 2016 のリリースのサーバー製品でアップグレードするのではなく、次の手順を実行することを検討してください。
 
-1. 2010 年 2010 年Officeにデータを移行Microsoft 365。 詳細については、「Microsoft パートナーの[FastTrack Microsoft 365」](https://fasttrack.microsoft.com/microsoft365)を参照してください。
+1. Office 2010 サーバー上のデータをMicrosoft 365に移行します。 詳細については、Microsoft 365または Microsoft パートナー[の採用に関するFastTrack](https://fasttrack.microsoft.com/microsoft365)を参照してください。
 2. 新しい機能と作業プロセスをユーザーにロールアウトします。
-3. 2010 サーバー製品を実行しているオンプレミス サーバー Office場合は、使用を停止します。
+3. Office 2010 サーバー製品を実行しているオンプレミス サーバーが不要になったら、使用停止にします。
 
 ### <a name="office-2013-server-products"></a>Office 2013 サーバー製品
 
-2013 Officeリリースのサーバー製品では、サポートの終了は決定されていません。 Office 2016 リリースのサーバー製品を使用して Office 2013 リリースでサーバー製品をアップグレードするのではなく、次の手順を実行してください。
+Office 2013 リリースのサーバー製品の場合、サポートの終了は決定されていません。 Office 2016 リリースのサーバー製品を使用して、Office 2013 リリースのサーバー製品をアップグレードするのではなく、次の手順を実行することを検討してください。
 
-1. 2013 年 2013 年Officeにデータを移行Microsoft 365。 詳細については、「Microsoft パートナーの[FastTrack Microsoft 365」](https://fasttrack.microsoft.com/microsoft365)を参照してください。
+1. Office 2013 サーバー上のデータをMicrosoft 365に移行します。 詳細については、Microsoft 365または Microsoft パートナー[の採用に関するFastTrack](https://fasttrack.microsoft.com/microsoft365)を参照してください。
 2. 新しい機能と作業プロセスをユーザーにロールアウトします。
-3. 2013 サーバー製品を実行しているオンプレミス サーバー Office場合は、使用を停止します。
+3. Office 2013 サーバー製品を実行しているオンプレミス サーバーが不要になったら、使用停止にします。
 
 ### <a name="office-2016-server-products"></a>Office 2016 サーバー製品
 
-2016 年Officeリリースのサーバー製品では、サポートの終了は決定されていません。 クラウド ベースのサービスと拡張機能を活用してビジネスをデジタル変換するには、次の手順を検討してください。
+Office 2016 リリースのサーバー製品の場合、サポートの終了は決定されていません。 クラウドベースのサービスと機能強化を活用してビジネスをデジタル変革するには、次の手順を実行することを検討してください。
 
-1. 2016 年 2016 年Officeサーバー上のデータを移行して、Microsoft 365。 詳細については、「Microsoft パートナーの[FastTrack Microsoft 365」](https://fasttrack.microsoft.com/microsoft365)を参照してください。
+1. Office 2016 サーバー上のデータをMicrosoft 365に移行します。 詳細については、Microsoft 365または Microsoft パートナー[の採用に関するFastTrack](https://fasttrack.microsoft.com/microsoft365)を参照してください。
 2. 新しい機能と作業プロセスをユーザーにロールアウトします。
-3. 2016 サーバー製品を実行しているオンプレミス サーバーが不要になった場合Office使用を停止します。
+3. Office 2016 サーバー製品を実行しているオンプレミス サーバーが不要になったら、使用停止にします。
 
-## <a name="migration-for-windows-7-and-81"></a>7 および 8.1 Windows移行
+## <a name="migration-for-windows-7-and-81"></a>Windows 7 および 8.1 の移行
 
-*2020* 年 1 月 14 Windows 7 日にサポートが終了しました。 7 または 7 を実行するWindowsを移行Windows 8.1、インプレイス アップグレードを実行できます。
+サポートは、*2020 年 1 月 14* 日に Windows 7 で終了しました。 Windows 7 または Windows 8.1 を実行するデバイスを移行するには、インプレース アップグレードを実行します。
 
 その他の方法については、「[Windows 10 展開シナリオ](/windows/deployment/windows-10-deployment-scenarios)」を参照してください。[Windows 10 の展開を計画](/windows/deployment/planning/)することもできます。
 
-## <a name="office-2010-clients-and-servers-and-windows-7"></a>Office 2010 のクライアントとサーバー、および Windows 7
+## <a name="office-2010-clients-and-servers-and-windows-7"></a>Office 2010 クライアントとサーバー、Windows 7
 
-2010 年 2010 年のクライアントとサーバーと 7 のアップグレード、移行、およびクラウドへの移行の各オプションのOffice概要をWindowsします。
+Office 2010 クライアントとサーバー、Windows 7 のアップグレード、移行、およびクラウドへの移行のオプションの視覚的な概要を次に示します。
 
-[![2010 年のクライアントとサーバー、および 7 のOfficeのサポート終了のオプションWindowsします。](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 クライアントとサーバー、Windows 7 のサポート終了のオプションを示す画像。](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-この 1 ページのポスターは、Office 2010 クライアントおよびサーバー製品および Windows 7 のサポートの終了を管理するためのパスを簡単に理解するための方法です。 優先パスは、ユーザーのMicrosoft 365でEnterprise。
+この 1 ページのポスターは、Office 2010 クライアントおよびサーバー製品と Windows 7 のサポート終了を管理するために使用できるパスを簡単に理解する方法です。 優先パスは、EnterpriseのMicrosoft 365でサポートされています。
 
-このポスター [をダウンロードして](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) 、レター サイズ、法的サイズ、またはタブロイド (11 x 17) サイズで印刷できます。
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf)し、文字サイズ、法的サイズ、またはタブル文字 (11 x 17) サイズで印刷できます。
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 
-組織全体を組織内の製品とサービスに移動する方法の詳細を確認するには、Microsoft 365のEnterpriseをダウンロードします。
+EnterpriseのMicrosoft 365の製品やサービスに組織全体を移行する方法の全体像を把握するには、次の切り替えポスターをダウンロードしてください。
 
-[![ポスターへの移行を示Microsoft 365画像。](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![Microsoft 365ポスターへの切り替えを示す画像。](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
-この2ページのポスターをご覧になると、既存のインフラストラクチャを簡単にインベントリできます。 このツールを使用して、製品またはサービスへの移行に関するガイダンスを受け取り、Microsoft 365をEnterprise。 デバイス管理Windows脅威Office情報とコンプライアンス保護など、製品、その他のインフラストラクチャおよびセキュリティ要素に関する情報とセキュリティ要素を表示します。
+この2ページのポスターをご覧になると、既存のインフラストラクチャを簡単にインベントリできます。 これを使用して、EnterpriseのMicrosoft 365で製品またはサービスに移行するためのガイダンスを取得します。 WindowsとOffice製品、デバイス管理、ID と脅威の保護、情報とコンプライアンス保護などのその他のインフラストラクチャとセキュリティ要素を示します。
 
-## <a name="how-microsoft-migrated-to-microsoft-365-for-enterprise"></a>Microsoft がユーザー向けMicrosoft 365移行Enterprise
+## <a name="how-microsoft-migrated-to-microsoft-365-for-enterprise"></a>Microsoft がEnterpriseのMicrosoft 365に移行した方法
 
-Microsoft の IT 専門家が会社を移行して、次のMicrosoft 365移行Enterprise。
+Microsoft の IT エキスパートが、Enterpriseのために会社をMicrosoft 365に移行した方法について説明します。
 
-- [アプリケーションの展開と更新Microsoft 365 Apps for enterprise](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
+- [Microsoft 365 Apps for enterpriseのデプロイと更新](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft では 150,000 のメールボックスを Exchange Online に移行](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint からクラウドへ: Microsoft が実施した移行方法](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Microsoft における、Windows 10 のインプレース アップグレードとしての展開方法](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [Windows 10展開: microsoft IT ヒントの詳細とコツ](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT)(ビデオ)
+- [Windows 10展開: Microsoft IT からのヒントとテクニック](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (ビデオ)
