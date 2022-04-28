@@ -2,8 +2,8 @@
 title: スクリプトを使用して電子情報開示保留レポートを作成する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 9/11/2017
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ケースに関連付けられているすべての保留に関する情報を含むレポートを生成する方法について説明します。
-ms.openlocfilehash: 98cdad3d125fbeab9afd9d7d99b572e5f0bf7386
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1b36b134b8de490e5ca7d9e61044a3c7cac4904f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993208"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097032"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースで保留に関するレポートを作成するスクリプトを使用する
 
@@ -197,7 +197,7 @@ Security & Compliance Center PowerShell に接続したら、次の手順では�
 
    ![CaseHoldsReport.ps1 スクリプトを実行した後の出力。](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 この記事のスクリプトを実行するときに作成されたケースには、各保留に関する次の情報が含まれています。 前述のように、組織内のすべての保留の情報を返すには、電子情報開示管理者である必要があります。 ケースホールドの詳細については、「 [電子情報開示ケース](./get-started-core-ediscovery.md)」を参照してください。
 

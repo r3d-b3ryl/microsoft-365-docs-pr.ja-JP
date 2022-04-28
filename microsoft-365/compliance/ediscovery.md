@@ -2,8 +2,8 @@
 title: Microsoft Purview の電子情報開示ソリューション
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview には、Exchange メールボックス、SharePoint サイト、OneDrive for Business サイト、Microsoft 365 グループ、Microsoft Teamsなど、さまざまな場所にあるコンテンツの検索とエクスポートに使用できる 3 つの電子情報開示ツールが用意されています。会話をSkype for Businessします。 電子情報開示 (Standard) と電子情報開示 (プレミアム) には、調査の管理に役立つ多くの追加機能が用意されています。
-ms.openlocfilehash: 4c146e2eea1c0c462491444102365cb5c611e78d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: f5660b8a31cad45b110e6e32450dc03b75d5f533
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001150"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095864"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Microsoft Purview の電子情報開示ソリューション
 
 > [!TIP]
-> *9 つの Microsoft Purview ソリューションの Premium バージョンを無料で試すことができることをご存じですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べます。 Microsoft 365 E3およびOffice 365 E3のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
+> *9 つの Microsoft Purview ソリューションすべてのプレミアム バージョンを無料で試すことができることをご存知ですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べてください。 Microsoft 365 E3 および Office 365 E3 のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から今すぐ開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -63,20 +63,20 @@ Microsoft Purview には、コンテンツ検索、電子情報開示 (Standard)
 |コンテンツの場所を訴訟ホールドに配置する||![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
 |保管担当者管理|||![サポートされています。](../media/check-mark.png)|
 |訴訟ホールド通知|||![サポートされています。](../media/check-mark.png)|
-|高度なインデックス作成|||![サポートされています。](../media/check-mark.png)|
+|高度なインデックス作成|||![サポート対象です。](../media/check-mark.png)|
 |エラー修復|||![サポートされています。](../media/check-mark.png)|
-|セットを確認する|||![サポートされています。](../media/check-mark.png)|
-|クラウド添付ファイルとSharePoint バージョンのサポート|||![サポートされています。](../media/check-mark.png)|
-|光学式文字認識|||![サポートされています。](../media/check-mark.png)|
-|会話スレッド|||![サポートされています。](../media/check-mark.png)|
-|コレクションの統計とレポート|||![サポートされています。](../media/check-mark.png)|
-|セットのフィルター処理を確認する|||![サポートされています。](../media/check-mark.png)|
-|タグ付け|||![サポートされています。](../media/check-mark.png)|
-|分析|||![サポートされています。](../media/check-mark.png)|
-|予測コーディング モデル|||![サポートされています。](../media/check-mark.png)|
-|計算されたドキュメント メタデータ|||![サポートされています。](../media/check-mark.png)|
-|実行時間の長いジョブの透過性|||![サポートされています。](../media/check-mark.png)|
-|顧客所有のAzure Storageの場所にエクスポートする|||![サポートされています。](../media/check-mark.png)|
+|セットを確認する|||![サポート対象です。](../media/check-mark.png)|
+|クラウド添付ファイルとSharePoint バージョンのサポート|||![サポート対象です。](../media/check-mark.png)|
+|光学式文字認識|||![サポート対象です。](../media/check-mark.png)|
+|会話スレッド|||![サポート対象です。](../media/check-mark.png)|
+|コレクションの統計とレポート|||![サポート対象です。](../media/check-mark.png)|
+|セットのフィルター処理を確認する|||![サポート対象です。](../media/check-mark.png)|
+|タグ付け|||![サポート対象です。](../media/check-mark.png)|
+|分析|||![サポート対象です。](../media/check-mark.png)|
+|予測コーディング モデル|||![サポート対象です。](../media/check-mark.png)|
+|計算されたドキュメント メタデータ|||![サポート対象です。](../media/check-mark.png)|
+|実行時間の長いジョブの透過性|||![サポート対象です。](../media/check-mark.png)|
+|顧客所有のAzure Storageの場所にエクスポートする|||![サポート対象です。](../media/check-mark.png)|
 |||||
 
 各電子情報開示機能の説明を次に示します。

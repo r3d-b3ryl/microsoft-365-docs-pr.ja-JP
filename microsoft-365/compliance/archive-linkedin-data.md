@@ -2,8 +2,8 @@
 title: コネクタをセットアップして LinkedIn データをアーカイブする
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/06/2022
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がネイティブ コネクタ&使用して LinkedIn Company Page からMicrosoft 365にデータをインポートする方法について説明します。
-ms.openlocfilehash: f4def1c8946c8b09f1ba543762026572ceb229b6
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 352e33ed4c78dd57533312e3f7c37bb3357216f3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998046"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095974"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>コネクタをセットアップして LinkedIn データをアーカイブする
 
@@ -68,6 +68,6 @@ LinkedIn Company ページ のデータがメールボックスに格納され�
 
 詳細を表示するには、[ **データ** コネクタ] ページの一覧でコネクタを選択してポップアップ ページを表示します。 **[状態]** に表示される日付範囲は、コネクタの作成時に選択された年齢フィルターを示します。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 LinkedIn アイテムは、Microsoft 365のストレージ メールボックスの受信トレイの LinkedIn サブフォルダーにインポートされます。 これらは電子メール メッセージとして表示されます。

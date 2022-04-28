@@ -2,8 +2,8 @@
 title: Microsoft Purview コンプライアンス ポータルでコンテンツ検索を作成して実行する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Microsoft コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用すると、さまざまな Microsoft 365 サービスでコンテンツを検索できます。
-ms.openlocfilehash: f5d8a398f36c1ab3c0f83234718346e8dd20434e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 418bdffd71e83aea548c21589c6b8c08ae2419e8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994508"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097098"
 ---
 # <a name="create-a-content-search"></a>コンテンツ検索の作成
 

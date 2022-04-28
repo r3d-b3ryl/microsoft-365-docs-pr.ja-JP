@@ -2,7 +2,7 @@
 title: SharePoint 2013 用の Microsoft Azure アーキテクチャ
 ms.author: bcarter
 author: brendacarter
-manager: laurawi
+manager: scotv
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: conceptual
@@ -15,17 +15,17 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: 2013 SharePoint 2013 ソリューションの種類を、Microsoft Azure仮想マシンでホストできる方法、および Azure をホストするように設定する方法について説明します。
-ms.openlocfilehash: 8bbaeb7a20b467625d57800cdf95f42e5b11f434
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft Azure仮想マシンでホストできる SharePoint 2013 ソリューションの種類と、1 つをホストするように Azure を設定する方法について説明します。
+ms.openlocfilehash: 7761eb9b62000c03b2983bc5ed56a62e20981db7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168556"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097406"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 用の Microsoft Azure アーキテクチャ
 
-Azure は SharePoint Server 2013 ソリューションをホストするための優れた環境です。 ほとんどの場合、Azure でホストMicrosoft 365サーバー ファームSharePoint特定のソリューションに使用することをお勧めします。 この記事では、SharePoint ソリューションが Azure プラットフォームに適合するように設計する方法について説明します。 次の 2 つのソリューションが例として使用されています。
+Azure は SharePoint Server 2013 ソリューションをホストするための優れた環境です。 ほとんどの場合、Microsoft 365をお勧めしますが、Azure でホストされているSharePoint サーバー ファームは、特定のソリューションに適したオプションです。 この記事では、SharePoint ソリューションが Azure プラットフォームに適合するように設計する方法について説明します。 次の 2 つのソリューションが例として使用されています。
   
 - [Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -39,14 +39,14 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
 |:-----|:-----|
 |開発環境とテスト環境  <br/> |これらの環境を簡単に作成して管理できます。  <br/> |
 |Azure に対するオンプレミス SharePoint ファームの障害復旧  <br/> |**ホストされているセカンダリ データセンター** 別の地域にあるセカンダリ データセンターに投資するのではなく、Azure を使用します。 <br/> **低コストの障害復旧環境** オンプレミスの障害復旧環境よりも維持するリソースが少なく、費用も低く抑えられます。リソースの数は、コールド スタンバイ、ウォーム スタンバイ、ホット スタンバイのどの障害復旧環境を選択するかに応じて異なります。<br/> **より柔軟なプラットフォーム** 障害時には、負荷要件を満たすためにご使用の復旧 SharePoint ファームを簡単にスケールアウトできます。それらのリソースが不要になった場合にはスケールインします。<br/> 「[Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)」をご覧ください。  <br/> |
-|機能を使用し、スケールを使用するインターネット向けサイトは、Microsoft 365  <br/> |**作業の重点** インフラストラクチャの構築ではなく、魅力的なサイトの構築のほうに集中できます。 <br/> **Azure でのサイズの柔軟性を活用** 必要に応じて新しいサーバーを追加してファームのサイズを変更し、必要なリソースに対してのみ支払いを行います。動的なマシンの割り当てはサポートされていません (自動スケール)。<br/> **Azure Active Directory (AD) の使用** ユーザー アカウントに関して Azure AD を活用します。 <br/> **[SharePointで使用できない機能を追加Microsoft 365** 詳細なレポートと Web 分析を追加します。 <br/> 「[SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)」をご覧ください。  <br/> |
-|アプリ ファームで、Microsoft 365オンプレミス環境をサポートする  <br/> |**アプリのビルド、テスト、ホスト** Azure で、オンプレミス環境とクラウド環境の両方をサポートできます。 <br/> **このロールのホスト** オンプレミス環境用の新しいハードウェアを購入する代わりに、Azure で行います。 <br/> |
+|Microsoft 365では利用できない機能とスケールを使用するインターネットに接続するサイト  <br/> |**作業の重点** インフラストラクチャの構築ではなく、魅力的なサイトの構築のほうに集中できます。 <br/> **Azure でのサイズの柔軟性を活用** 必要に応じて新しいサーバーを追加してファームのサイズを変更し、必要なリソースに対してのみ支払いを行います。動的なマシンの割り当てはサポートされていません (自動スケール)。<br/> **Azure Active Directory (AD) の使用** ユーザー アカウントに関して Azure AD を活用します。 <br/> 詳細レポートと Web 分析 **の追加Microsoft 365では使用できないSharePoint機能を追加** します。 <br/> 「[SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)」をご覧ください。  <br/> |
+|Microsoft 365環境またはオンプレミス環境をサポートするアプリ ファーム  <br/> |**アプリのビルド、テスト、ホスト** Azure で、オンプレミス環境とクラウド環境の両方をサポートできます。 <br/> **このロールのホスト** オンプレミス環境用の新しいハードウェアを購入する代わりに、Azure で行います。 <br/> |
    
 イントラネットとコラボレーションのソリューション、およびワークロードに関しては、以下の選択肢を考慮してください。
   
-- ビジネス要件Microsoft 365、またはソリューションの一部とすることができるかどうかを判断します。 Microsoft 365は、常に最新の豊富な機能セットを提供します。
+- Microsoft 365がビジネス要件を満たしているか、ソリューションに含めることができるかを判断します。 Microsoft 365には、常に最新の豊富な機能セットが用意されています。
     
-- すべてのMicrosoft 365要件を満たしていない場合は、Microsoft Consulting Services (MCS) からオンプレミスの SharePoint 2013 の標準実装を検討してください。 標準のアーキテクチャは、カスタマイズされたアーキテクチャよりもソリューションの実装が迅速かつ安価で、なおかつ簡単です。 
+- Microsoft 365すべてのビジネス要件を満たしていない場合は、Microsoft Consulting Services (MCS) からオンプレミスで SharePoint 2013 の標準実装を検討してください。 標準のアーキテクチャは、カスタマイズされたアーキテクチャよりもソリューションの実装が迅速かつ安価で、なおかつ簡単です。 
     
 - 標準実装がビジネス要件を満たさない場合には、カスタマイズされたオンプレミスのソリューションを考慮します。
     
@@ -95,7 +95,7 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
   
 **図 2:オンプレミス環境と Azure 間でサイト間接続を提供するための Azure ゲートウェイとオンプレミス ゲートウェイ デバイスの使用**
 
-![クロスオンプレミス接続によって Azure 仮想ネットワークに接続されるオンプレミス環境 (サイト間 VPN 接続または ExpressRoute)。](../media/AZarch-VPNgtwyconnct.png)
+![オンプレミス環境は、クロスプレミス接続によって Azure 仮想ネットワークに接続され、サイト間 VPN 接続または ExpressRoute を使用できます。](../media/AZarch-VPNgtwyconnct.png)
   
 この図では次のようになっています。
   
@@ -107,13 +107,13 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
     
 クロスプレミス仮想ネットワークの計画と作成に関する詳細については、「[オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)」をご参照ください。
   
-## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Active Directory ドメイン サービス (DS) AD DNS の追加
+## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Active Directory Domain Services (AD DS) と DNS を追加する
 
 Azure における障害復旧の場合、Windows Server AD と DNS をハイブリッド シナリオで展開します。このとき、Windows Server AD は、オンプレミスと Azure 仮想マシンの両方に展開されます。
   
 **図 3: Active Directory ドメインのハイブリッド構成**
 
-![STwo 仮想マシンは Azure 仮想ネットワークに展開され、ファーム SharePointはレプリカ ドメイン コントローラーと DNS サーバーです。](../media/AZarch-HyADdomainConfig.png)
+![Azure 仮想ネットワークとSharePoint ファーム サブネットにデプロイされた STwo 仮想マシンは、レプリカ ドメイン コントローラーと DNS サーバーです。](../media/AZarch-HyADdomainConfig.png)
   
 この図は前の図に基づいて作成されていて、Windows Server AD と DNS のサブネットには 2 つの仮想マシンが追加されています。これらの仮想マシンは、レプリカのドメイン コントローラーと DNS サーバーです。これらは、オンプレミス Windows Server AD 環境の拡張となります。 
   
@@ -137,7 +137,7 @@ Azure における障害復旧の場合、Windows Server AD と DNS をハイブ
   
 **図 4: SharePoint 仮想マシンの配置**
 
-![データベース サーバーとSharePointファーム サブネット内の Azure 仮想ネットワークに追加されたサーバー SharePoint役割。](../media/AZarch-SPVMsinCloudSer.png)
+![SharePoint ファーム サブネット内の Azure 仮想ネットワークに追加されたデータベース サーバーとSharePoint サーバーロール。](../media/AZarch-SPVMsinCloudSer.png)
   
 この図は前の図に基づいて作成されていて、それぞれの層で SharePoint ファーム サーバー ロールが追加されています。
   
@@ -153,7 +153,7 @@ SharePoint ファーム用に Azure アーキテクチャを設計する場合�
   
 **図 5: SharePoint ファーム層の高可用性を確保するための Azure 可用性セットの使用**
 
-![2013 年 2013 年の Azure インフラストラクチャでの可用性セットSharePoint構成します。](../media/AZenv-WinAzureAvailSetsHA.png)
+![SharePoint 2013 ソリューションの Azure インフラストラクチャでの可用性セットの構成。](../media/AZenv-WinAzureAvailSetsHA.png)
   
 この図は、Azure インフラストラクチャ内の可用性セットの構成を示しています。次の各ロールが、それぞれの可用性セットで共有されています。
   
@@ -173,7 +173,7 @@ SharePoint ファームを Azure プラットフォームで調整しなけれ�
   
 **図 6: 3 層ファームにおけるキャパシティとパフォーマンスの目標に関する計画例**
 
-![2013 SharePoint 2013 年の標準アーキテクチャで、特定の容量とパフォーマンスの目標を満たすコンポーネント割り当て。](../media/AZarch-CapPerfexmpArch.png)
+![Standard SharePoint 2013 Internet Sites アーキテクチャと、特定の容量とパフォーマンスの目標を満たすコンポーネント割り当て。](../media/AZarch-CapPerfexmpArch.png)
   
 この図では次のようになっています。
   
@@ -189,7 +189,7 @@ SharePoint ファームを Azure プラットフォームで調整しなけれ�
   
 **図 7: 調整前のアプリケーション サーバー層**
 
-![可用性セットSharePoint調整する前に、Server 2013 アプリケーション サーバー層Microsoft Azure例を示します。](../media/AZarch-AppServtierBefore.png)
+![Microsoft Azure可用性セットをチューニングする前に、サーバー 2013 アプリケーション サーバー層をSharePoint例。](../media/AZarch-AppServtierBefore.png)
   
 この図では次のようになっています。
   
@@ -205,7 +205,7 @@ SharePoint ファームを Azure プラットフォームで調整しなけれ�
   
 **図 8: 調整後のアプリケーション サーバー層**
 
-![可用性SharePointチューニング後の Server 2013 アプリケーション サーバー層Microsoft Azure例。](../media/AZarch-AppServtierAfter.png)
+![Microsoft Azure可用性セットのチューニング後のサーバー 2013 アプリケーション サーバー層SharePoint例。](../media/AZarch-AppServtierAfter.png)
   
 この図は、同じ 4 つのコンポーネントを含み、同一に構成されている 3 つのアプリケーション サーバーすべてを示しています。
   
@@ -213,7 +213,7 @@ SharePoint ファームの各層に可用性セットを追加すると、実装
   
 **図 9:Azure インフラストラクチャ サービスに実装された SharePoint ファーム**
 
-![仮想SharePoint、クロスオンプレミス接続、サブネット、VM、可用性セットを使用した Azure インフラストラクチャ サービスの 2013 ファームの例を示します。](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
+![仮想ネットワーク、クロスプレミス接続、サブネット、VM、可用性セットを備えた Azure インフラストラクチャ サービスの 2013 ファームSharePoint例。](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 この図は、Azure インフラストラクチャ サービスに実装された、各層内のサーバー用の障害ドメインを提供する可用性セットを備えた SharePoint ファームを示しています。
   

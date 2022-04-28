@@ -1,8 +1,8 @@
 ---
-title: 組織のデータを組織のデータに移行Microsoft 365 Enterprise
+title: 組織データをMicrosoft 365 Enterpriseに移行する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,30 +16,30 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: この記事では、組織のデータを組織のデータをユーザーに移行するのに役立つMicrosoft 365。
-ms.openlocfilehash: 800b4ad97508c447b747bd6cba48b08b12d6f4b5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: この記事では、組織のデータをMicrosoft 365に移行するのに役立つリソースについて説明します。
+ms.openlocfilehash: d0cf1aa5e744dc545f5a037b63f7cc1981f0e23c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166948"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096416"
 ---
-# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>組織のデータを組織のデータに移行Microsoft 365 Enterprise
+# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>組織データをMicrosoft 365 Enterpriseに移行する
 
-## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>データをデータに移行するMicrosoft 365?
+## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>データをMicrosoft 365に移行する準備はできましたか?
 
-基本的[なセットアップ手順は](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)、すべてのユーザーが、可能な限り短時間でMicrosoft 365サービスとアプリケーションを使用するのに役立ちます。 これにより、ハイブリッド シナリオと、ハイブリッド シナリオに移行するより高度なMicrosoft 365。 
+基本的[なセットアップ手順は、](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)Microsoft 365サービスとアプリケーションを可能な限り短時間で使用できるように支援します。 これにより、ハイブリッド シナリオと、Microsoft 365に移行するためのより高度な方法がスキップされます。 
   
-Microsoft 365 のセットアップに関するヘルプが必要な場合は[、FastTrack](https://fasttrack.microsoft.com/office)が Microsoft 365 を展開する最も簡単な方法です。Microsoft 365 サービスのセットアップ ガイドにサインインして[使用できます](setup-guides-for-microsoft-365.md)。
+Microsoft 365セットアップに関するヘルプが必要な場合は、[Microsoft 365](https://fasttrack.microsoft.com/office)を展開する最も簡単な方法FastTrack、サインインして[、Microsoft 365 サービスのセットアップ ガイドを](setup-guides-for-microsoft-365.md)使用することもできます。
 
-## <a name="migrate-email-to-microsoft-365"></a>メールをメールに移行Microsoft 365
+## <a name="migrate-email-to-microsoft-365"></a>メールをMicrosoft 365に移行する
 - [Exchange 展開アシスタントを使って Exchange ハイブリッド](https://technet.microsoft.com/exdeploy2013)の移行をする。(管理者)
-- 電子メールを移行するさまざまな[方法について詳しくは、Microsoft 365。](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)
+- [メールをMicrosoft 365に移行するさまざまな方法](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)について説明します。
 - [組織内のユーザーが自分のメール、連絡先、および予定表を移行する](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e)ための別の方法を見ます。
 
 ## <a name="migrate-files-and-folders"></a>ファイルとフォルダーを移行する
-- [[オンラインとSharePointに移行OneDrive。](/sharepointmigration/migrate-to-sharepoint-online) (管理者)
-- [SharePoint サーバー ハイブリッド構成のロードマップ](/SharePoint/hybrid/configuration-roadmaps)。 (管理者)
+- [SharePoint Online およびOneDriveに移行](/sharepointmigration/migrate-to-sharepoint-online)します。 (管理者)
+- [SharePoint サーバー ハイブリッド構成ロードマップ](/SharePoint/hybrid/configuration-roadmaps)。 (管理者)
 
 ## <a name="migrate-skype-for-business-users"></a>Skype for Business ユーザーを移行する
 - [Skype for Business Online に移行](/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)します。(管理者)

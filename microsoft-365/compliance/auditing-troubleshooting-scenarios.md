@@ -2,8 +2,8 @@
 title: 監査ログを検索して一般的なシナリオのトラブルシューティングを行う
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Microsoft 365監査ログ検索ツールを使用して、電子メール アカウントの一般的なサポートの問題のトラブルシューティングに役立つ方法について説明します。
-ms.openlocfilehash: dd82c735411592a3cfa7cb79ae4d1ce6f97798b4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 57d8cfd1cbb07300b7cd69fb78ff6a0b33b302f5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998002"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097186"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>監査ログを検索して、一般的なサポートの問題を調査する
 

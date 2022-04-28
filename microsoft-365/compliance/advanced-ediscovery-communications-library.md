@@ -2,8 +2,8 @@
 title: 電子情報開示のコミュニケーション ライブラリでカストディアン通信テンプレートを管理する (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 電子情報開示 (プレミアム) でカストディアン通信テンプレート (保留通知用のテンプレートなど) を追加して、組織内の任意のケースで使用できるようにします。
-ms.openlocfilehash: 9ac944a3d845a770e35a84adcdc2f1f1dbefd172
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: faf4ea91ae6f160b2ba7388a7cfea8ad6cb9797b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000600"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097274"
 ---
 # <a name="manage-custodian-communications-templates-in-ediscovery-premium"></a>電子情報開示でカストディアン通信テンプレートを管理する (プレミアム)
 

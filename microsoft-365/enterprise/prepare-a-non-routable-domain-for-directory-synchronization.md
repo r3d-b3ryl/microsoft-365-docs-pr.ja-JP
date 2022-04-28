@@ -2,7 +2,7 @@
 title: ディレクトリ同期のために非ルーティング ドメインの準備を整える
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: オンプレミスのユーザー アカウントに非ルーティング ドメインが関連付けられている場合、Microsoft 365 テナントとの同期前に実行する手順について説明します。
-ms.openlocfilehash: bea80123c1a2db11baa07cd3344f65303cdd1084
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 7c0fd93f327305477908fba0cfb495fa73205ebe
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806602"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096372"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
 
@@ -43,13 +43,13 @@ Azure AD Connect では、ユーザーがオンプレミスで使用している
   
 ### <a name="change-your-primary-domain"></a>プライマリ ドメインを変更する
 
-プライマリ ドメインを、ドメイン内で確認したドメイン (たとえば、Microsoft 365に変更 contoso.com。 その後、ドメイン contoso.local を持つすべてのユーザーが、contoso.com。 ただし、これは関連するプロセスであり、より簡単なソリューションについては、次のセクションで説明します。
+プライマリ ドメインを、Microsoft 365で確認したドメイン (contoso.com など) に変更します。 ドメイン contoso.local を持つすべてのユーザーは、contoso.com に更新されます。 ただし、これは関連するプロセスであり、次のセクションではより簡単な解決策について説明します。
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>UPN サフィックスを追加してユーザーをそのサフィックスに更新する
 
 Microsoft 365 で確認したドメイン (複数の場合あり) と一致するように、AD DS で新しい UPN サフィックス (複数の場合あり) を登録すると、".local" の問題を解決できます。新しいサフィックスを登録した後、ユーザーの UPN を更新して、".local" を新しいドメイン名で置き換えます。その結果、ユーザー アカウントは billa@contoso.com のようになります。
   
-確認済みドメインを使用するために UPN を更新した後、オンプレミスの DS と ADを同期Microsoft 365。
+確認済みドメインを使用するように UPN を更新したら、オンプレミスの AD DS をMicrosoft 365と同期する準備が整います。
   
 #### <a name="step-1-add-the-new-upn-suffix"></a>手順 1: 新しい UPN サフィックスを追加する**
   

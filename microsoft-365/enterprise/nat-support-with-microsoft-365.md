@@ -2,7 +2,7 @@
 title: Office 365 の NAT サポート
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 1/24/2017
 audience: Admin
 ms.topic: overview
@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
-description: この記事では、NAT を使用して組織内の IP アドレスごとに使用できるクライアント数を概算する方法の詳細を示します。
-ms.openlocfilehash: 5335ac87bb579b6cb00e1387da97dd5a1d4f6c7f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: この記事では、NAT を使用して組織内の IP アドレスごとに使用できるクライアントの数を概算する方法について詳しく説明します。
+ms.openlocfilehash: 71c9d54ddf88d9b69c890609fea7ece8cac0de33
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177113"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097384"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 の NAT サポート
 
@@ -42,7 +42,7 @@ NAT の使用により、企業ネットワークの何千人ものユーザー�
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Office 365 に対して多数の接続を同時に開く必要があるのはなぜですか。
 
-Outlook 8 つ以上の接続を開く場合があります (アドイン、共有予定表、メールボックスなどがある場合)。 Windows ベースの NAT デバイスで使用できるポートは最大 64,000 個なので、ポートが使い果たされる前に、IP アドレスの背後に最大 8,000 人のユーザーが必要になる場合があります。 お客様が NAT に対して非 Windows OS ベースのデバイスを使用している場合、使用可能なポートの合計は、使用されている NAT デバイスまたはソフトウェアによって異なります。 このシナリオでは、ポートの最大数は 64,000 未満になる可能性があります。 ポートの可用性は、Windows が独自に使用するために 4,000 ポートを制限するなどの他の要因によっても影響を受け、使用可能なポートの総数は 60,000 に減少します。 他のアプリケーション (Internet Explorerなど) が同時に接続される場合があります。追加のポートが必要になる場合があります。
+Outlookは、8 つ以上の接続を開くことがあります (アドイン、共有予定表、メールボックスなどがある場合)。 Windows ベースの NAT デバイスで使用できるポートは最大 64,000 個であるため、ポートが使い果たされる前に IP アドレスの背後に最大 8,000 人のユーザーが存在する可能性があります。 お客様が NAT に対して非Windows OS ベースのデバイスを使用している場合、使用可能なポートの合計数は、使用されている NAT デバイスまたはソフトウェアによって異なります。 このシナリオでは、ポートの最大数が 64,000 未満になる可能性があります。 ポートの可用性は、Windows独自の使用のために 4,000 ポートを制限するなど、他の要因の影響を受け、使用可能なポートの合計数を 60,000 に減らします。 Internet Explorer などの他のアプリケーションが同時に接続され、追加のポートが必要になる場合があります。
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Office 365 で単一のパブリック IP アドレスにサポートされるデバイスの最大数の計算
 

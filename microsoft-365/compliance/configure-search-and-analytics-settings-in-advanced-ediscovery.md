@@ -2,8 +2,8 @@
 title: 検索と分析の設定を構成する - 電子情報開示 (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: ケース内のすべてのレビュー セットに適用される Microsoft Purview 電子情報開示 (プレミアム) 設定を構成します。 これには、分析と光学式文字認識の設定が含まれます。
-ms.openlocfilehash: c5b542f224e35a6505dca9cbfacb5f1095fa2dbe
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 0ef76833d18b44a2a1c39db41f7d6fa31f99293e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992306"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097142"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>電子情報開示で検索と分析の設定を構成する (プレミアム)
 

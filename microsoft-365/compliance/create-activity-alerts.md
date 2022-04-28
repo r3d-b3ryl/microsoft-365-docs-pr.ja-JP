@@ -2,8 +2,8 @@
 title: アクティビティ アラートを作成する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 11/7/2017
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft Purview コンプライアンス ポータルでアクティビティ アラートを追加および管理し、ユーザーが特定のアクティビティを実行したときにMicrosoft 365から電子メール通知が送信されるようにする
-ms.openlocfilehash: 43991eaf0f80957b0d72a2f16a2021f24194f2d6
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 99cbbe4a03047b5cf8ef366a228fc78fe9dfbda1
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995032"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097010"
 ---
 # <a name="create-activity-alerts"></a>アクティビティ アラートを作成する
 
@@ -100,7 +100,7 @@ ms.locfileid: "64995032"
 
 アクティビティ アラートを再度有効にするには、次の手順を繰り返し、[ **オフ]** トグル スイッチをクリックして状態を **[オン]** に変更します。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - コンプライアンス ポータルの [このアラートの送信先] フィールド (および [**アクティビティ アラート**] ページの [**受信者]** の下に表示) で指定されたユーザーに送信される電子メール通知の例を次に示します。
 

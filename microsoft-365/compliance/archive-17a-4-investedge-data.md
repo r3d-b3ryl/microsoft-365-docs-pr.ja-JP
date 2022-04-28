@@ -2,8 +2,8 @@
 title: Microsoft 365に InvestEdge データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 InvestEdge DataParser コネクタを設定して使用して、Microsoft 365に InvestEdge データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: cc10c5a798e9e85da7f95769926df8446187434c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 434363cfb2cc66003fa3c900ec58d3ba38b71a0e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998092"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097208"
 ---
 # <a name="set-up-a-connector-to-archive-investedge-data"></a>InvestEdge データをアーカイブするコネクタを設定する
 

@@ -9,33 +9,32 @@ metadata:
   ms.service: bookings
   ms.localizationpriority: medium
   description: よく寄せられる質問Microsoft Bookings。
-  ms.openlocfilehash: c904a60fafd980de7bc8559e5025538957fdd7b4
-  ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+  ms.openlocfilehash: 6a61179849e01f60e46a53f12f1ad5c125987527
+  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/13/2022
-  ms.locfileid: "64822818"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65096030"
 title: よく寄せられる質問のMicrosoft Bookings
 summary: ''
 sections:
-- name: 全般
+- name: 一般
   questions:
   - question: >
       Microsoft Bookings とは
     answer: >
       Microsoft Bookingsは、予定のスケジュール設定と管理を容易にするMicrosoft 365 アプリです。 Bookingsには Web ベースの予約カレンダーが含まれており、Outlookと統合してスタッフの予定表を最適化し、顧客にとって最適な時間を予約する柔軟性を提供します。 自動通知電子メールは、ノーショーを減らし、組織は繰り返しスケジュールタスクを減らして時間を節約します。 Bookingsは、SkypeまたはMicrosoft Teamsを介して仮想予定を簡単に実行するのに役立ち、TeamsのBookings アプリを使用して毎日のスケジュールを管理するのに役立ちます。 カスタマイズ機能が組み込まれているBookingsは、組織の複数の部分のニーズを満たすように設計されています。
   - question: >
+      サブスクリプションBookings使用できますか?
+    answer: "Bookingsは、次のサブスクリプションで使用できます。 \n- Office 365: A3、A5、E1、E3、E5、F1、F3、Office 365 21Vianet によって操作されます。\n- Microsoft 365: A3、A5、E3、E5、F1、F3、Business Basic、Business Standard、Business プレミアム。 iOS および Android コンパニオン アプリでBookingsを使用できます。 Bookingsはスタンドアロン アプリとして使用できません。 Outlook内にデータを格納するため、Bookingsを使用するには、Outlook Web AppまたはOutlook on the webを有効にする必要があります。\n\nBookings ライセンスは、予定表の作成と管理を含む完全な機能を提供します。 ユーザーは、管理者ロールまたはビューアー ロールにスタッフとして追加された場合に、既存の予定表を表示および編集できます。\n"
+  - question: >
       Microsoft Bookingsを使用操作方法?
     answer: >
       Bookingsはオンライン サービスであるため、何もダウンロードする必要はありません。 Microsoft 365 Web エクスペリエンス内のアプリ 選択ツールに移動するだけです。 管理者は、Bookingsコンパニオン アプリを使用して、顧客とその予定に関する最新情報を最新の状態に保つこともできます。
   - question: >
-      Microsoft BookingsにアクセスできるWho
-    answer: >
-      Bookingsは、世界中のMicrosoft 365 Business Premium、Microsoft 365 Business Standard、F1、F3、A3、A5、E3、E5 の顧客に対して既定で使用でき、アクティブになっています。 Bookingsは、21Vianet によって運用されているOffice 365でも利用できます。
-  - question: >
       お客様に個人用またはビジネス用の予定表が表示されますか?
     answer: >
-      顧客には、登録を選択したサービス、時間、スタッフに対してオンラインで公開したBookingsカレンダーのみが表示されます。
+      顧客には、選択したサービス、時間、スタッフに対してオンラインで公開したBookingsカレンダーのみが表示されます。
   - question: >
       [スタッフの管理] で予約可能な属性を変更操作方法?
     answer: >
@@ -43,7 +42,7 @@ sections:
   - question: >
       エンド ユーザーはBookings アプリにどのようにアクセスしますか?
     answer: >
-      Microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、E5、F1、F3 に対してライセンスを付与されている場合、または管理者ロールまたはビューアー ロールにスタッフ メンバーとして追加されたユーザーは、Microsoft 365内のアプリ選択ツールのBookingsにアクセスできます。 Web エクスペリエンス。 iOS と Android 用のコンパニオン アプリもあります。
+      サポートされているサブスクリプションのライセンスを取得しているユーザー、または管理者ロールまたはビューアー ロールのスタッフ メンバーとして追加されたユーザーは、Microsoft 365 Web エクスペリエンス内のアプリ選択ツールのBookingsにアクセスできます。 iOS と Android 用のコンパニオン アプリもあります。
   - question: >
       自分の Web サイトでBookingsを使用できますか?
     answer: >
@@ -55,7 +54,7 @@ sections:
   - question: >
       IT 部門は、エンド ユーザーがBookingsにアクセスできるかどうかを制御できますか?
     answer: >
-      Bookingsは既定でMicrosoft 365 Business Premium、Microsoft 365 Business Standard、M365 A3/A5、E3/E5 テナントで使用できますが、管理者は選択した場合はMicrosoft 365 管理センターで無効にすることができます。 これを行うには、 [次の手順に従います](turn-bookings-on-or-off.md)。
+      管理者は、選択した場合、Microsoft 365 管理センターでBookingsをオフにすることができます。 これを行うには、 [次の手順に従います](turn-bookings-on-or-off.md)。
 
 
       顧客がテナント内の特定の適格なライセンスのBookingsへのアクセスを無効にする場合は、グループ ポリシーを使用してライセンスを制限するか、新しいBookings予定表を作成できるユーザーを制限する OWA メールボックス ポリシーを実装できます。
@@ -118,11 +117,8 @@ sections:
           - テクニカル サポート
           - 法的レビュー
           - 設備
-- name: 価格とライセンス
+- name: アカウント情報
   questions:
-  - question: >
-      Microsoft Bookings操作方法入手できますか?
-    answer: "Bookingsは、次のサブスクリプションで使用できます。 \n- Office 365: A3、A5、E3、E5、F1、F3\n- Microsoft 365: A3、A5、E3、E5、F1、F3、Business Standard、Business プレミアム。 iOS および Android コンパニオン アプリでBookingsを使用できます。 Bookingsはスタンドアロン アプリとして使用できません。 Outlook内にデータを格納するため、Bookingsを使用するには、Outlook Web AppまたはOutlook on the webを有効にする必要があります。\n\nBookings ライセンスは、予定表の作成や管理など、製品に完全な機能を提供します。 また、ユーザーが管理者ロールまたはビューアー ロールにスタッフとして追加されたときに、既存の予定表を表示および編集することもできます。\n"
   - question: >
       メール アカウントを現在のプロバイダーからMicrosoft 365に移行する必要がありますか?
     answer: >
@@ -285,7 +281,7 @@ sections:
   questions:
   - question: >
       このスタッフ メンバーの予定表を同期できません
-    answer: "\"このスタッフ メンバーの予定表を同期できません\"というエラーが表示された場合、このセクションには、エラーの解決に役立ついくつかのトラブルシューティング手順が含まれています。\n\n> [!NOTE]\n> Bookingsは、Microsoft 365 Business Standard、Microsoft 365 A3、またはMicrosoft 365 A5サブスクリプションをお持ちのお客様に対して既定で有効になっています。 Bookingsは、Office 365 Enterprise E3 および Office 365 Enterprise E5 をお持ちのお客様も利用できますが、既定ではオフになっています。 作業を開始するには、「[Microsoft Bookingsへのアクセスを取得する」を](get-access.md)参照してください。 Bookingsのオンとオフを切り替えるには、「[組織のBookingsを有効または無効にする」を参照してください](turn-bookings-on-or-off.md)。\n\nスタッフの予定表の同期に関する情報を探している場合は、「[Bookingsにスタッフを追加する」を](add-staff.md)参照してください。 **[スタッフの詳細**] ページで、[**予定表のイベントが可用性に影響を与える**] がオンになっていることを確認します。\n"
+    answer: "\"このスタッフ メンバーの予定表を同期できません\"というエラーが表示された場合、このセクションには、エラーの解決に役立ついくつかのトラブルシューティング手順が含まれています。\n\nスタッフの予定表の同期に関する情報を探している場合は、「[Bookingsにスタッフを追加する」を](add-staff.md)参照してください。 **[スタッフの詳細**] ページで、[**予定表のイベントが可用性に影響を与える**] がオンになっていることを確認します。\n"
   - question: >
       スタッフメンバーは、予定表のアクセス許可を変更する必要があります
     answer: >

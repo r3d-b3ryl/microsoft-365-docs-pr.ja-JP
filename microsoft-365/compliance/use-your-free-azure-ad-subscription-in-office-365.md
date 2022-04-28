@@ -2,8 +2,8 @@
 title: 無料の Azure Active Directory Domain Services サブスクリプションを使用する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ description: 組織の有料サブスクリプションに含まれる、Azure A
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: aef6aa77e8889f8dc386558db77feef093b4e240
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cc0863184aa00fdc26532267a56936b2ed93270b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994834"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078825"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>無料の Azure Active Directory Domain Services サブスクリプションを使用する
 

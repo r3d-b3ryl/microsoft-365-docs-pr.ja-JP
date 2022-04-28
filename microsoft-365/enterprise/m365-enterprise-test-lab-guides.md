@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/20/2019
 audience: ITPro
 ms.topic: landing-page
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 以下のテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 向けのデモ、概念実証、または開発/テスト環境を設定します。
-ms.openlocfilehash: 18b243a0fea9cb4864a0375740c4ebadcc44d6c3
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8c4444b599682ad40ebba88b37d83125fccd99f0
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681658"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097428"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 Enterprise のテスト ラボ ガイド
 
@@ -31,23 +31,23 @@ ms.locfileid: "63681658"
 
 テスト ラボ ガイド (TLG) を活用すれば、Microsoft 製品の概要をいち早く把握することができます。テスト ラボ ガイドは、簡単ではあるものの代表的なテスト環境を構成する方法を説明しています。これらの環境は、試用期間または有料サブスクリプションの期間内に、デモ、カスタマイズ、概念の複合的な証拠の作成に使用できます。
 
-TLG はモジュール式に設計されています。 これらの構成は、学習またはテスト構成のニーズにより密接に一致する複数の構成を作成するために、互いに構築されます。 「自分で構築し、動作します」という実践的なエクスペリエンスは、新しい製品またはシナリオの展開要件を理解し、実稼働環境でのホスティングをよりよく計画するのに役立ちます。
+TLG はモジュール式になるように設計されています。 これらは相互に構築され、学習またはテストの構成のニーズにより密接に一致する複数の構成を作成します。 "自分でビルドして動作する" ハンズオン エクスペリエンスは、新しい製品またはシナリオのデプロイ要件を理解するのに役立ち、運用環境でのホスティングをより適切に計画できます。
 
-また、TLG を使用して代表的な環境を作成して、開発/テスト環境とも呼ばれるアプリケーションを開発およびテストすることもできます。
+TLG を使用して代表的な環境を作成し、開発/テスト環境とも呼ばれるアプリケーションを開発およびテストすることもできます。
   
 ![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Microsoft 365 for enterprise Test Lab Guide スタック内のすべての記事を視覚的にマップするには、次の図を展開するか、エンタープライズ テスト ラボ ガイド スタックの [Microsoft 365 に移動します](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+エンタープライズ テスト ラボ ガイド スタックのMicrosoft 365のすべての記事に視覚的にマップするには、次の図を展開するか、[エンタープライズ テスト ラボ ガイド スタックのMicrosoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)に移動します。
 
-[![エンタープライズ テスト Microsoft 365ガイド スタックの一覧です。](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+[![エンタープライズ テスト ラボ ガイド スタックのMicrosoft 365。](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>基本構成
 
-まず、エンタープライズ向けテスト環境Microsoft 365[作成します](/microsoft-365-enterprise/)。 次の 2 種類の基本構成を作成できます。
+まず、[エンタープライズ向けのMicrosoft 365用の](/microsoft-365-enterprise/)テスト環境を作成します。 2 種類の基本構成を作成できます。
 
-- [軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md) - クラウド専用環境でエンタープライズ機能と機能の Microsoft 365 を構成およびデモンストレーションする場合に使用します。これには、オンプレミス コンポーネントは含めではありません。
+- [軽量ベース構成](lightweight-base-configuration-microsoft-365-enterprise.md) - これは、オンプレミス コンポーネントを含まないクラウド専用環境で、エンタープライズ機能と機能のMicrosoft 365を構成してデモンストレーションする場合に使用します。
 
-- [シミュレート](simulated-ent-base-configuration-microsoft-365-enterprise.md)されたエンタープライズ ベース構成 - Active Directory ドメイン サービス (AD DS) ドメインなどのオンプレミス コンポーネントを使用するハイブリッド クラウド環境でエンタープライズ機能の Microsoft 365 を構成およびデモンストレーションする場合に使用します。
+- [シミュレートされたエンタープライズ ベースの構成](simulated-ent-base-configuration-microsoft-365-enterprise.md) - これは、Active Directory Domain Services (AD DS) ドメインなどのオンプレミス コンポーネントを使用するハイブリッド クラウド環境で、エンタープライズ機能と機能のMicrosoft 365を構成してデモンストレーションする場合に使用します。
 
 試用版または運用テスト環境に Microsoft 365 E5 ライセンスを追加することなく、Office 365 E5 のテスト環境を作成することもできます。
     
@@ -69,7 +69,7 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
 - [Azure AD シームレス シングル サインオン](single-sign-on-m365-ent-test-environment.md)
   
-   DS ドメイン コントローラー Azure ADシームレス シングル サインオン (シームレス SSO) を有効ADテストします。
+   AD DS ドメイン コントローラー Azure ADシームレス シングル サインオン (シームレス SSO) を有効にしてテストします。
 
 - [多要素認証](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -85,7 +85,7 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
 - [パスワードのリセット](password-reset-m365-ent-test-environment.md)
 
-   セルフサービスのパスワードリセットを使用してパスワードをリセットします。
+   セルフサービスのパスワード リセットを使用して、パスワードをリセットします。
 
 - [ライセンスとグループ メンバーシップの自動管理](automate-licenses-group-membership-microsoft-365-test-environment.md)
 

@@ -2,8 +2,8 @@
 title: ケースを閉じるか、ケースを削除する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft Purview 電子情報開示 (プレミアム) ケースでサポートされている調査または訴訟が終了または削除された場合の動作について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 45bf34450b430d7d33316fe0e6c6a21d12be2937
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: f6428360c76862a0c4ff0c81b1cb83fb8760d789
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993252"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096080"
 ---
 # <a name="close-or-delete-an-ediscovery-premium-case"></a>電子情報開示 (プレミアム) ケースを閉じるまたは削除する
 
@@ -46,7 +46,7 @@ Microsoft Purview 電子情報開示 (プレミアム) ケースでサポート�
 
 1. **[電子情報開示 (プレミアム)]** ページで、閉じるケースを選択します。
 
-2. [**設定**] タブの [**ケース情報**] で、[**選択**] をクリックします。
+2. [**設定**] タブの [**ケース情報**] の下で、[**選択**] をクリックします。
 
    ![電子情報開示 (プレミアム) ケースのケース情報ポップアップ ページにアクセスします。](..\media\AeDSelectCaseInformation.png) 
 
@@ -89,7 +89,7 @@ Microsoft Purview 電子情報開示 (プレミアム) ケースでサポート�
 
 1. **[電子情報開示 (プレミアム)]** ページで、削除するケースを選択します。
 
-2. [**設定**] タブの [**ケース情報**] で、[**選択**] をクリックします。
+2. [**設定**] タブの [**ケース情報**] の下で、[**選択**] をクリックします。
 
 3. [ **ケース情報** ] ポップアップ ページの下部にある [ **アクション]** をクリックし、[ **ケースの削除**] をクリックします。
 

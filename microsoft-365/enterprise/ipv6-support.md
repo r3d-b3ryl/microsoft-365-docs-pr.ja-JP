@@ -2,7 +2,7 @@
 title: Microsoft 365 サービスの IPv6 サポート
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/03/2021
 audience: ITPro
 ms.topic: conceptual
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '概要: Microsoft 365 コンポーネントと Microsoft 365 政府機関向けサービスでの IPv6 サポートについて説明します。'
-ms.openlocfilehash: a6a2e11ff2e312c02f10d152fe580bdead5fa7c9
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
-ms.translationtype: HT
+ms.openlocfilehash: 6cd53b71c6e15346d4940c539eea4aff0e5a613e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301956"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096482"
 ---
 # <a name="ipv6-support-in-microsoft-365-services"></a>Microsoft 365 サービスの IPv6 サポート
 

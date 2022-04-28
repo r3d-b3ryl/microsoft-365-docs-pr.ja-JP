@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 053326cacaeb2b4110f71edaa290ed10454aa720
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 56e22e0525324c59d2d62adaf2325edc3317ccd6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731650"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096052"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -46,10 +46,13 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 メッセージ [センター](https://admin.microsoft.com/Adminportal/Home#/MessageCenter)を通じて、製品の更新と重要な通知を受け取ることもできます。 
 
 
+## <a name="april-2022"></a>2022 年 4 月
+- (プレビュー)これで、検索クエリの結果から直接電子メール メッセージに [対してアクション](advanced-hunting-take-action.md) を実行できるようになりました。 電子メールは、他のフォルダーに移動したり、完全に削除したりできます。 
 
 ## <a name="march-2022"></a>2022 年 3 月
 
 - (プレビュー)インシデント キューは、調査に役立ついくつかの機能で強化されています。 機能強化には、ID または名前でインシデントを検索する機能、カスタム時間範囲を指定する機能などがあります。
+
 
 ## <a name="december-2021"></a>2021 年 12 月
 

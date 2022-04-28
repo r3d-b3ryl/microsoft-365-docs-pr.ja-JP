@@ -1,10 +1,10 @@
 ---
-title: PowerShell のロードマップ (Microsoft 365
+title: Microsoft 365の PowerShell ロードマップ
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
@@ -12,17 +12,17 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: PowerShell を使用するロードマップをMicrosoft 365。
-ms.openlocfilehash: 08f28bd4ecbaabe6485a2f95dcb3f1e88e9c8daf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: PowerShell をMicrosoft 365に使用するためのロードマップ。
+ms.openlocfilehash: 20a21c1b4930f6b9a2d54558d2541d38967fabf7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199851"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096394"
 ---
-# <a name="powershell-roadmap-for-microsoft-365"></a>PowerShell のロードマップ (Microsoft 365
+# <a name="powershell-roadmap-for-microsoft-365"></a>Microsoft 365の PowerShell ロードマップ
 
-PowerShell ロードマップ のコンテンツ
+PowerShell ロードマップのコンテンツ
 
 ## <a name="next-step"></a>次の手順
 

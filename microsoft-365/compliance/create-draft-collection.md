@@ -2,8 +2,8 @@
 title: ドラフト コレクションを作成する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ドラフト コレクションは、コレクションの検索クエリと一致する検索見積もりを返す、電子情報開示 (プレミアム) ケース内の保管データ ソースと非保管データ ソースの電子情報開示検索です。 検索結果をレビュー セットにコミットする前に、検索統計の確認、項目のサンプリングのプレビュー、コレクションの修正と再実行を行うことができます。
-ms.openlocfilehash: 2178e836809a24edec6d3d184ef8b699bec87bb5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 50fb63658541c07a312a502dbbe7d68a26467d14
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997078"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096096"
 ---
 # <a name="create-a-draft-collection-in-ediscovery-premium"></a>電子情報開示で下書きコレクションを作成する (プレミアム)
 

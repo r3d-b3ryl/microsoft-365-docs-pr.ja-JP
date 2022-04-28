@@ -2,8 +2,8 @@
 title: 電子情報開示で会話を確認する (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft Purview 電子情報開示 (プレミアム) (会話スレッドと呼ばれる) の会話再構築機能について説明します。この機能を使用して、Microsoft Teams グループとYammer グループでチャット会話を再構築、確認、エクスポートします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c3cd05ab340775a7a923b9e4a0f66c3abaf559cb
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 075424bc6db144e86406b10ce9a4f4d28c1b937f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993274"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097076"
 ---
 # <a name="conversation-threading-in-ediscovery-premium"></a>電子情報開示でのスレッド処理 (プレミアム)
 
@@ -108,7 +108,7 @@ Microsoft Purview 電子情報開示 (プレミアム) の会話再構築機能�
 
 具体的には、チャット会話全体を 1 つの PDF ファイルにエクスポートすることも、会話内の各チャット メッセージを個別のファイルとしてエクスポートすることもできます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 電子情報開示 (プレミアム) でケース データを確認する方法の詳細については、次の記事を参照してください。
 

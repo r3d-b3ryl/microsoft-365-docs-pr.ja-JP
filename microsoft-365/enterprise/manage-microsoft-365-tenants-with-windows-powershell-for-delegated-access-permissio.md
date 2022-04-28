@@ -1,8 +1,8 @@
 ---
-title: DAP Microsoft 365を使用してWindows PowerShellテナントを管理する
+title: DAP パートナー向けのWindows PowerShellを使用してMicrosoft 365 テナントを管理する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,24 +16,24 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: この記事では、PowerShell を使用して顧客のテナンシー Microsoft 365管理する方法について説明します。
-ms.openlocfilehash: ff74cc0ec710996c66a659034f4fb4a49ee57ab1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: この記事では、PowerShell for Microsoft 365を使用して顧客テナンシーを管理する方法について説明します。
+ms.openlocfilehash: 11869157a5ed106d1aea0a4ce0e21716be1cc78f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150620"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096790"
 ---
-# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任Microsoft 365アクセス許可 (DAP) パートナー Windows PowerShellを使用してテナントを管理する
+# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナーのWindows PowerShellを使用してMicrosoft 365テナントを管理する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Windows PowerShell、Syndication および クラウド ソリューション プロバイダー (CSP) パートナーは、顧客のテナント設定を管理し、レポートを簡単に行うことができます。この設定は、Microsoft 365 管理センター。 パートナー管理者アカウントが顧客テナンシーに接続するためには、「代理で管理」(AOBO) のアクセス許可が必要であることに注意してください。
+Windows PowerShellにより、Syndication および クラウド ソリューション プロバイダー (CSP) パートナーは、Microsoft 365 管理センターでは使用できない顧客テナント設定を簡単に管理およびレポートできます。 パートナー管理者アカウントが顧客テナンシーに接続するためには、「代理で管理」(AOBO) のアクセス許可が必要であることに注意してください。
 
-委任アクセス許可 (DAP) パートナー とは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。 他の会社のネットワーク プロバイダーまたは通信プロバイダーであることもよくあります。 ユーザーは、Microsoft 365サービスサービスにサブスクリプションをバンドルします。 Microsoft 365 サブスクリプションを販売すると、顧客テナンシーに対する管理 (AOBO) アクセス許可が自動的に付与され、顧客テナンシーの管理と報告が可能になります。
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+委任アクセス許可 (DAP) パートナー とは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。 他の会社のネットワーク プロバイダーまたは通信プロバイダーであることもよくあります。 Microsoft 365サブスクリプションを顧客に対するサービス オファリングにバンドルします。 Microsoft 365 サブスクリプションを販売すると、顧客テナンシーを管理およびレポートできるように、顧客テナンシーに対する代理管理 (AOBO) アクセス許可が自動的に付与されます。
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-このトピックの手順では、PowerShell を使用してConnect[にMicrosoft 365する必要があります](connect-to-microsoft-365-powershell.md)。
+このトピックの手順では、[PowerShell を使用してMicrosoft 365にConnectに接続する](connect-to-microsoft-365-powershell.md)必要があります。
 
 また、パートナーのテナント管理者の資格情報も必要です。
 
@@ -76,7 +76,7 @@ Get-MsolDomain -TenantId <customer TenantId value>
 
 ### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>すべてのテナントと登録済みドメインのマッピングを取得する
 
-Microsoft 365 コマンドの前の PowerShell では、テナント ID またはドメインを取得する方法が示されましたが、両方を同時に取得する方法は示していません。また、両者の間に明確なマッピングはありません。 このコマンドは、すべての顧客テナント ID とそのドメインの一覧を生成します。
+前の PowerShell for Microsoft 365 コマンドでは、テナント ID またはドメインを取得する方法が示されましたが、両方を同時に取得する方法と、それらの間に明確なマッピングがまったくない方法が示されています。 このコマンドは、すべての顧客テナント ID とそのドメインの一覧を生成します。
 
 ```powershell
 $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.TenantId; Get-MsolDomain -TenantId $Domains | fl @{Label="TenantId";Expression={$Domains}},name}
@@ -100,7 +100,7 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 
 ### <a name="add-users-set-options-and-assign-licenses"></a>ユーザーの追加、オプションの設定、およびライセンスの割り当てを行う
 
-ユーザーの一括作成、構成、およびライセンスは、Microsoft 365に PowerShell を使用することで特にMicrosoft 365。 この 2 段階のプロセスでは、最初にコンマ区切り値 (CSV) ファイルに追加するすべてのユーザーのエントリを作成し、次に powerShell for Microsoft 365 を使用してそのファイルをインポートします。
+Microsoft 365 ユーザーの一括作成、構成、ライセンスは、Microsoft 365に PowerShell を使用することで特に効率的です。 この 2 段階のプロセスでは、最初にコンマ区切り値 (CSV) ファイルに追加するすべてのユーザーのエントリを作成してから、PowerShell を使用してファイルをインポートMicrosoft 365。
 
 #### <a name="create-a-csv-file"></a>CSV ファイルを作成する
 

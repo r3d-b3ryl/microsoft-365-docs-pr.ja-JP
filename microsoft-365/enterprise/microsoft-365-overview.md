@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.custom:
 - it-pro
 - intro-overview
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: 358b160dcad5a1b0a4ed961febd9c6bfb63abe36
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: ccbc91dbaf49b8470f90ca8ea732c6a9580058bf
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645766"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096746"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 

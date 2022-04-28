@@ -2,8 +2,8 @@
 title: 予測スコア フィルターをレビュー セットに適用する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 予測スコア フィルターを使用して、予測コーディング モデルが関連性として予測された項目または関連性のない項目を表示します。
-ms.openlocfilehash: ab97c91196456b69f7f420ccd317747f638b4ee5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 64abac8b9f53baa9afb869d77296089544919fea
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993076"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096614"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>レビュー セットに予測スコア フィルターを適用する (プレビュー)
 
@@ -68,6 +68,6 @@ Microsoft Purview 電子情報開示 (プレミアム) で予測コーディン�
   > [!TIP]
   > ドキュメントに割り当てられている実際の予測スコアを表示するには、閲覧ウィンドウで [ **メタデータ** ] タブをクリックします。 レビュー セット内のすべてのモデルの予測スコアは、 **RelevanceScores** メタデータ プロパティに表示されます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - フィルターの使用の詳細については、「 [レビュー セット内のコンテンツのクエリとフィルター処理](review-set-search.md)」を参照してください。

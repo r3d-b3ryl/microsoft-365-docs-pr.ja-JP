@@ -2,8 +2,8 @@
 title: 電子情報開示でのカストディアンの操作 (プレミアム)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示 (プレミアム) でカストディアン管理ツールを使用して訴訟のデータを管理する方法について説明します。
-ms.openlocfilehash: 0c529b339c79789072cf160916db8c21acff7d86
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 360e66c3244b614624b6817f7fe95d9204c34bef
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992196"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096658"
 ---
 # <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>電子情報開示 (プレミアム) で保管担当者と非保管データ ソースを操作する
 

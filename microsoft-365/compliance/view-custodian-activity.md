@@ -2,8 +2,8 @@
 title: カストディアンの監査アクティビティを表示する
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ description: 電子情報開示 (プレミアム) カストディアン管理ツ
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: e2de6209e08d6e8dd6f853724f26d026aec1c33f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 6f55ad389fe24e87e693e6523c7008713c6bc54b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993712"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096570"
 ---
 # <a name="view-custodian-audit-activity"></a>カストディアンの監査アクティビティを表示する
 
@@ -37,7 +37,7 @@ ms.locfileid: "64993712"
 監査ログを検索するには、Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらのロールは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>の [アクセス許可] ページのコンプライアンス管理および組織管理の役割グループに割り当てられます。 最小限の特権レベルで電子情報開示 (プレミアム) 監査ログを検索する機能をユーザーに付与するには、Exchange Onlineにカスタム ロール グループを作成し、View-Only監査ログまたは監査ログ ロールを追加してから、ユーザーを新しい役割グループのメンバーとして追加します。 詳細については、「Exchange Online で役割グループを管理する」を参照してください。
 
 > [!IMPORTANT]
-> コンプライアンス ポータルの [アクセス許可] ページでView-Only監査ログまたは監査ログロールをユーザーに割り当てると、監査ログを検索できなくなります。 Exchange Online でアクセス許可を割り当てる必要があります。 これは、監査ログの検索に使用される基本のコマンドレットが ExchangeOnline コマンドレットだからです。
+> コンプライアンス ポータルの [アクセス許可] ページでユーザーに View-Only Audit Logs (閲覧限定の監査ログ) または Audit Logs (監査ログ) の役割を割り当てると、監査ログを検索できなくなります。Exchange Online でアクセス許可を割り当てる必要があります。これは、監査ログの検索に使用される基本のコマンドレットが ExchangeOnline コマンドレットだからです。
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>手順 1: カストディアンによって実行されたアクティビティについて監査ログを検索する
 
