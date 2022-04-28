@@ -1,14 +1,14 @@
 ---
-title: 'Infographic: キャンペーンの保護に役立つ'
+title: 'インフォグラフィック: キャンペーンの保護に役立ちます'
 f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,18 +23,18 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: デジタル攻撃からキャンペーンを保護するために実行できる操作。
-ms.openlocfilehash: 531dd980054d407f10ab0bc8d8e24dc6a7fdd9f9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
-ms.translationtype: MT
+description: デジタル攻撃からキャンペーンを保護するためにできること。
+ms.openlocfilehash: 508387313ebe0cb7255073f73d7b646f2fa12a2f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767891"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099985"
 ---
-# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infographic: デジタル脅威から自分自身とキャンペーンを保護する
+# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>インフォグラフィック: デジタルの脅威から自分とキャンペーンを保護するのに役立ちます
 
-次に示す PowerPoint PDF のリンクは、タブロイド形式 (台帳、11 x 17、または A3 とも呼ばれる) でダウンロードおよび印刷できます。
+次の PowerPoint および PDF 用リンクは、タブロイド形式 (台帳、11 x 17、または A3 とも呼ばれます) でダウンロードして印刷できます。
 
-[![キャンペーン情報グラフィックを保護するための画像。](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[![キャンペーン情報グラフィックを保護するためのセキュリティで保護された画像。](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)

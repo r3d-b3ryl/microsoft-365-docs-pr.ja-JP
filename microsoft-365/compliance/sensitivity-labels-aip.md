@@ -1,5 +1,5 @@
 ---
-title: Azure Information Protection (AIP) アドイン経由で Office アプリの Microsoft Information Protection (MIP) 組み込みラベル付けを選択する
+title: Azure Information Protection (AIP) アドイン経由で Office アプリの Microsoft Purview Information Protection 組み込みラベル付けを選択する
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -17,22 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) 統合ラベル付けクライアントを使用するとき、AIP アドインではなく Office アプリの組み込みラベル付けを使用する利点を理解してください。
-ms.openlocfilehash: 38aee57720f38793f4f61cc871a9bee556e28690
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 99710520b1b687fe6fc2469badb3ad18e6070371
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498607"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093506"
 ---
-# <a name="why-choose-mip-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office アプリの AIP アドインに対して MIP 組み込みラベル付けを選択する理由
+# <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office アプリの AIP アドインに対して組み込みラベル付けを選択する理由
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 Windows コンピューターの Microsoft 365 Apps で[秘密度ラベル](sensitivity-labels.md)を使用する場合、Office アプリに組み込まれているラベル付けを使用するか、[Azure Information Protection (AIP) 統合のラベル付クライアント](/azure/information-protection/rms-client/aip-clientv2)からのアドインを使用するかを選択できます。 
 
-組み込みラベル付けは、[Microsoft Information Protection (MIP)](information-protection-solution.md) 展開の基礎となります。このラベル付けテクノロジは、プラットフォーム (Windows、macOS、iOS、Android、および Web) だけでなく、Microsoft のアプリやサービスを超えて拡張されます。 組み込みラベル付けは、データ分類やデータ損失防止 (DLP) などの他の MIP 機能と動作するようにも設計されています。
+組み込みラベル付けは、[Microsoft Purview Information Protection 展開](information-protection-solution.md)の基礎となります。このラベル付けテクノロジは、プラットフォーム (Windows、macOS、iOS、Android、および Web) だけでなく、Microsoft のアプリやサービスを超えて拡張されます。 組み込みラベル付けは、データ分類や Microsoft Purview データ損失防止 (DLP) などの他の Microsoft Purview 機能と動作するようにも設計されています。
 
-組み込みラベルは Office アドインを使用しないため、安定性とパフォーマンスの向上という利点があります。 また、高度な分類子などの最新の MIP 機能もサポートしています。
+組み込みラベルは Office アドインを使用しないため、安定性とパフォーマンスの向上という利点があります。 また、高度な分類子などの最新の Microsoft Purview 機能もサポートしています。
 
 既定では、AIP クライアントがインストールされている場合、組み込みラベル付け機能は Windows 版 Office アプリでオフになっています。 この既定の動作を変更するには、次のセクションの「[AIP アドインを無効にして Office アプリに組み込みラベル付けを使用する方法](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps)」の手順に従います。
 
@@ -84,7 +86,7 @@ Windows Office アプリの AIP アドインは、既にユーザーに展開済
 
 ![クレジット カード番号がユーザーに対して機密コンテンツとして識別され、削除するオプションを提供している。](../media/detect-sensitive-content.png)
 
-組み込みラベル付けで新しいラベル付け機能が入手可能になったときに通知を受信するには、「[Microsoft 365 コンプライアンスの新機能](whats-new.md)」および「**秘密度ラベル**」セクションを参照してください。
+組み込みラベル付けで新しいラベル付け機能が入手可能になったときに通知を受信するには、「[Microsoft Purview の新機能](whats-new.md)」および「**秘密度ラベル**」セクションを参照してください。
 
 ## <a name="how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps"></a>AIP アドインを無効にして、Office アプリに組み込みラベル付けを使用する方法
 
@@ -105,7 +107,7 @@ Office アプリ以外のラベル付けを拡張するために AIP クライ�
 > [!IMPORTANT]
 > グループ ポリシー設定 **[Office の秘密度機能を使用して、秘密度ラベルを適用し表示する]** を使用して、これを **1** に設定する場合、AIP アドインが Office アプリに読み込まれる可能性があります。アドインが各アプリで読み込まれるのをブロックすると、このような問題が防止されます。
 
-二者択一的に、Word、Excel、PowerPoint、Outlook から office **Microsoft Azure Information Protection** を対話的に無効にしたり、削除したりすることもできます。 このメソッドは、単一のコンピューターおよびアドホック テストに適しています。 手順については、「[Office プログラムでアドインを表示、管理、インストールする](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)」を参照してください。
+二者択一的に、Word、Excel、PowerPoint、Outlook から **Microsoft Azure Information Protection** Office アドインを対話的に無効にしたり、削除したりすることもできます。 このメソッドは、単一のコンピューターおよびアドホック テストに適しています。 手順については、「[Office プログラムでアドインを表示、管理、インストールする](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)」を参照してください。
 
 どちらの方法を選択した場合でも、変更は Office アプリの再起動時に有効になります。
 
@@ -127,7 +129,7 @@ AIP アドインでサポートされているラベル付け機能の多くは�
 |**カテゴリ: 全般** ||
 |集中レポートと監査|![サポート対象です。](../media/yes-icon.png) <br>[詳細情報](sensitivity-labels-office-apps.md#auditing-labeling-activities) |
 |政府機関向けクラウド|![サポートされています。](../media/yes-icon.png)|
-|管理者はラベル付けを無効にできます <br> - すべてのアプリ|  ![サポート対象です。](../media/yes-icon.png) <br>[詳細情報](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions)|
+|管理者はラベル付けを無効にできます <br> - すべてのアプリ|  ![サポート対象です。](../media/yes-icon.png) <br>[詳細情報](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
 |管理者はラベル付けを無効にできます <br> - アプリごと|  計画または開発中|
 |**カテゴリ: ユーザー エクスペリエンス** ||
 |リボンの [ラベル付け] ボタン|![サポートされています。](../media/yes-icon.png)|
@@ -157,7 +159,7 @@ AIP アドインでサポートされているラベル付け機能の多くは�
 
 AIP クライアントは、[PowerShell の詳細設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell)を使用して多くのカスタマイズをサポートします。 これらの詳細設定の一部は、[New-Label](/powershell/module/exchange/new-label) または [Set-Label](/powershell/module/exchange/set-label)、[New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) または [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) に記載されているように、組み込みラベル付けでサポートされるようになりました。
 
-ただし、サポートされている設定は Microsoft 365 コンプライアンス センターの標準構成に含まれているため、構成に PowerShell を使用する必要がない場合があります。 たとえば、Outlook の必須のラベル付けをオフにし、別の既定のラベルを設定する機能です。
+ただし、サポートされている設定は Microsoft Purview コンプライアンス ポータルの標準構成に含まれているため、構成に PowerShell を使用する必要がない場合があります。 たとえば、Outlook の必須のラベル付けをオフにし、別の既定のラベルを設定する機能です。
 
 AIP アドインの次の構成は、組み込みラベル付けではまだサポートされていません。
 
@@ -180,4 +182,4 @@ AIP アドインの次の構成は、組み込みラベル付けではまだサ�
 これらのラベル付け機能を作成および構成する手順については、「[秘密度ラベルとそのポリシーを作成して構成する](create-sensitivity-labels.md)」を参照してください。
 
 > [!TIP]
-> Microsoft 365 コンプライアンス センターに秘密度ラベルが既に存在する場合は、既定ラベルの自動作成の対象にはなりません。 ただし、「[既定の秘密度ラベル](mip-easy-trials.md#default-sensitivity-labels)」で構成を参照すると役立つ場合があります。 
+> Microsoft Purview コンプライアンス ポータルに秘密度ラベルが既に存在する場合は、既定ラベルの自動作成の対象にはなりません。 ただし、「[既定の秘密度ラベル](mip-easy-trials.md#default-sensitivity-labels)」で構成を参照すると役立つ場合があります。 

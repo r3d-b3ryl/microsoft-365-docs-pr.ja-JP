@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -23,38 +23,38 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: デバイス ポリシーとアクションを表示するには、ビジネス向け Microsoft 365サインインします。
-ms.openlocfilehash: 7e120ba64c8fb1518d5ff08ed807144bd5e9cd75
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Microsoft 365 for business にサインインして、デバイスのポリシーとアクションを表示します。
+ms.openlocfilehash: 87b3b1d466b6b75a18772c1099e71954b6c766ea
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635382"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094610"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>ポリシーとデバイスの表示と管理
 
-この記事は、ユーザーにMicrosoft 365 Business Premium。
+この記事は Microsoft 365 Business Premium に適用されます。
 
 > [!NOTE]
-> Microsoft Defender for Business 2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 この機能は、デバイスに追加のセキュリティ機能を提供します。 [Defender for Business の詳細については、「Defender for Business」を参照してください](../security/defender-business/mdb-overview.md)。
+> Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細については、こちらをご覧ください](../security/defender-business/mdb-overview.md)。
 
 ## <a name="view-and-edit-device-policies"></a>デバイス ポリシーの表示と編集
 
 1.  <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
-2. 左側のナビゲーションで、[デバイス ポリシー **] を** \> **選択します**。
+2. 左側のナビゲーションで、**[デバイス]** \> **[ポリシー]** を選択します。
 
-    このページでは、ターゲット グループを作成、編集、変更、またはポリシーを削除できます。
+    このページでは、ターゲット グループの作成、編集、変更、ポリシーの削除ができます。
 
     ![[ポリシー] ページのスクリーンショット。](../media/devicepolicies.png)
   
 ## <a name="view-and-manage-devices"></a>デバイスの表示と管理
 
-1. 左側のナビゲーションで、[デバイスの管理 **] を** \> **選択します**。 
+1. 左側のナビゲーションで、**[デバイス]** \> **[管理]** を選択します。 
     
-    このページでは、1 つ以上のデバイスを選択し、会社のデータを削除できます。 デバイスの保護設定を設定した Windows 10 デバイスの場合、デバイスを出荷時の設定にリセットすることもできます。
+    このページでは、1 つ以上のデバイスを選び、会社データを削除できます。デバイスの保護設定を設定した Windows 10 デバイスの場合、デバイスを出荷時の設定にリセットすることもできます。
   
    ![[デバイスの管理] ページ。](../media/devicesmanage.png)
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
+[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
