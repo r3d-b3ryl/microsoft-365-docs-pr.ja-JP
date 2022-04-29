@@ -1,14 +1,14 @@
 ---
-title: 小規模ビジネスやキャンペーンMicrosoft Teams共同作業を行うチームを作成する
+title: コラボレーションのために Microsoft Teams を使用する
 f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -22,88 +22,94 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 小規模ビジネスやキャンペーンで共同作業を行Microsoft Teamsチームを作成する理由と方法について学習します。
-ms.openlocfilehash: 6c218b24b335dc01aa0b426eb4e95bccef3d20d7
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: 小規模ビジネスやキャンペーンで共同作業できるように、Microsoft Teams でチームを作成する理由と方法について説明します。
+ms.openlocfilehash: ef9c435cbaa7a862164c39244bdb2a865845fa58
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634077"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100161"
 ---
-# <a name="create-a-team-in-microsoft-teams-so-your-small-business-or-campaign-can-collaborate"></a>小規模ビジネスやキャンペーンMicrosoft Teams共同作業を行うチームを作成する
+# <a name="use-microsoft-teams-for-collaboration"></a>コラボレーションのために Microsoft Teams を使用する
 
-Microsoft Teamsは、どのデバイスからでも、スタッフが組織化され、会話を行う際に役立つコラボレーション アプリです。 ユーザーは、Microsoft Teamsを使用して、組織外のスタッフまたはゲストのメンバーとインスタント会話を行います。 電話、会議の開催、ファイルの共有も可能です。
+Microsoft Teams は、チームの組織化を助け、全てのデバイスから会話が可能なコラボレーション アプリです。 Microsoft Teams を使用すると、組織外のスタッフやゲストのメンバーと、簡単に会話できます。 また電話をかける、会議をホストする、ファイルを共有することもできます。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
-1. 機密情報のプライベート チームを作成します。
+1. 機密情報のためにプライベートな Teams を作成します。
 
-2. 組織全体の全員とコミュニケーションを取る組織全体のチームを作成します。
+2. 組織の全域で全員とコミュニケーションを取るために、組織向け Teams を作成します。
 
-3. 特定のプロジェクトのチームを作成し、含める必要があるユーザーに基づいて適切な保護を適用します。
+3. 特定のプロジェクト向けの Teams を作成し、参加させる必要があるユーザーについて適切な範囲についての保護を適用します。
 
-4. 外部パートナーと通信するために特定のチームを作成し、ビジネスに対して機密性の高いチームとは別のチームを作成します。
+4. 外部パートナーとのコミュニケーションのための Teams を作成し、あなたのビジネスにとって機微な情報から隔離します。
 
-たとえば、企業、法務会社、または医療プラクティスでは、次のチームを作成できます。
+たとえば、ビジネス、法律事務所、保険情報については、以下の Teams が作成される場合があります:
 
-1. **ビジネス、企業、またはプラクティス全体のチーム:** これは、すべてのユーザーが毎日のコミュニケーションに使用し、ビジネス全体で作業する場合に使用します。 このチームを使用して、お知らせを投稿したり、会社全体または実践に関する関心のある情報を共有することができます。
+1. **ビジネス、企業、または実践域内のチーム:** これは、すべてのユーザーが日々のコミュニケーションに使用し、ビジネスの全域で仕事をするためのものです。 この Teams を使用して、お知らせを投稿したり、会社または取り組みの全域に渡って関心のある情報を共有できます。
 
-2. **個々のチーム:** 小規模なグループ向けチームをセットアップして、毎日の作業に関する共同作業を行います。
+2. **個々の Teams :** 小規模なグループの Teams をセットアップして、日々の業務について共同作業します。
 
-3. **外部コミュニケーション チームまたはチーム:** ベンダー、パートナー、またはクライアントを機密にすることなく、ベンダー、パートナー、またはクライアントと調整します。 特定のグループに異なるチャネルを設定します。
+3. **外部コミュニケーション チームと Teams :** ベンダー、パートナー、またはクライアントと調整を行い、機微な情報は許可しません。 特定のグループに対して異なるチャンネルを設定します。
 
-![3 つの独立Microsoft Teamsを備え、ビジネス内での安全なコミュニケーションとコラボレーションを可能にするための、1 つのウィンドウの図。](../media/m365-democracy-teams-business-collab.png)
+![ビジネス内の安全なコミュニケーションとコラボレーションを可能にする 3 つの独立した Teams を持つ Microsoft Teams ウィンドウの図。](../media/m365-democracy-teams-business-collab.png)
 
-また、キャンペーンは、次のチームを作成して、安全にコミュニケーションと共同作業を行う可能性があります。
+また、キャンペーンでは、次の Teams を作成して、安全にコミュニケーションと共同作業を行うことができます。
 
-1. **キャンペーンリード チーム:** これをプライベート チームとして設定して、主要なキャンペーン メンバーだけがアクセスし、潜在的に機密性の高い懸念事項について話し合う。
+1. **キャンペーン リード チーム:** これは、主要なキャンペーン メンバーのみがアクセスし、潜在的に機微な懸念事項について話し合うことができるように、プライベートな Teams として設定します。
 
-2. **一般的なキャンペーン チーム:** これは、誰もが毎日のコミュニケーションと作業に使用します。 個人、グループ、または委員会は、自分の作業を行うチャネルをこのチームに設定できます。 たとえば、イベント計画のユーザーは、キャンペーン イベントのチャットとロジスティクスの調整を行うチャネルを設定できます。
+2. **一般的なキャンペーン チーム:** これは、すべてのユーザーが日々のコミュニケーションと仕事のために使用します。 個人、グループ、また委員会は、この Teams で自分の作業を行うためのチャンネルを設定できます。 たとえば、イベント計画担当者はキャンペーン イベントの運送について会話し調整するためのチャンネルを設定できます。
 
-3. **パートナー チーム:** ベンダー、パートナー、またはボランティアと調整し、機密性の高い情報に組み込む必要はありません。
+3. **パートナー チーム:** ベンダー、パートナー、またはボランティアと連携し、機微な情報の持ち込みを許可しません。
 
-![3 つの独立したMicrosoft Teamsを使用して、キャンペーン内の安全なコミュニケーションとコラボレーションを可能にするための、1 つのウィンドウの図。](../media/m365-democracy-teams-collab.png)
+![キャンペーン内での安全なコミュニケーションとコラボレーションを可能にする 3 つの独立した Teams を含む Microsoft Teams ウィンドウの図。](../media/m365-democracy-teams-collab.png)
 
-チームを作成すると、他に作成される情報を次に示します。
+Teams を作成すると、次の項目が作成されることになります:
 
-- 新しい[Microsoft 365グループ](/MicrosoftTeams/office-365-groups)
+- 新規の [Microsoft 365 グループ](/MicrosoftTeams/office-365-groups)
 
-- チーム [SharePointを格納](/MicrosoftTeams/sharepoint-onedrive-interact)するオンライン サイトとドキュメント ライブラリ
+- チームのファイルを保存するための [SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact) サイトとドキュメント ライブラリ
 
-- 共有[Exchange Online](/MicrosoftTeams/exchange-teams-interact)予定表
+- [Exchange Online](/MicrosoftTeams/exchange-teams-interact) の共有メールボックスとカレンダー
 
 - OneNote ノートブック
 
-- Planner や Office 365などの他のアプリと連携Power BI
+- Planner や Power BI など、その他の Office 365 アプリとの連携
 
-このMicrosoft Teamsには、次の情報があります。
+Microsoft Teams 内では、次の情報を確認できます:
 
-1. **Teams: 所属** するチャネルを検索するか、独自のチャネルを作成します。 チャネル内では、その場で会議を開催し、会話を行い、ファイルを共有できます。
+1. **Teams:** 所属するチャンネルを検索したり、独自に作成します。 チャンネル内では、その場で会議を開催したり、会話を行ったり、ファイルを共有することができます。
 
-2. **会議:** 日または週の並べられたものすべてを確認します。 または、会議をスケジュールします。 この予定表は、ユーザーの予定表Outlook同期します。
+2. **会議:** その日または 1 週間に予定されているすべての項目を表示します。 または、会議を計画します。 このカレンダーは Outlook カレンダーと同期します。
 
-3. **呼び出し:** 場合によっては、組織で設定されている場合、ユーザーが組織を使用していない場合でも、Microsoft Teams からだれでも呼び出Microsoft Teams。
+3. **通話:** 場合によっては、組織でセットアップされている場合は、Microsoft Teams を使用していない場合でも、Microsoft Teams から誰でも通話できます。
 
-4. **アクティビティ:** 未読のメッセージ、メッセージ、返信@mentionsを確認します。
+4. **アクティビティ:** 未読メッセージ、@mentions、返信、その他を確認できます。
 
-上部のコマンド ボックスを使用して、特定のアイテムやユーザーを検索し、クイック アクションを実行し、アプリを起動します。
+上部にあるコマンド ボックスを使用して、特定のアイテムやユーザーを検索し、クイック アクションを実行し、アプリを起動します。
 
 ## <a name="set-it-up"></a>設定する
 
-このようなビジネスの所有者と管理者、またはキャンペーン マネージャーと候補者だけのプライベート チームを作成します。
+ビジネスオーナーとマネージャー、または選挙マネージャーと候補者だけのプライベート チームを、このように作成します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
 
-ビジネスまたはキャンペーンのすべてのユーザーがファイルの通信と共有に使用できる組織全体のチームを作成します。
+ビジネスまたは選挙のすべてのユーザーがコミュニケーションとファイルの共有に使用できる、組織域内向けのチームを作成します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
 
-広告や財務など、組織外のゲストと共有するチームを作成します。
+広告や財務などの組織外のゲストと共有するチームを作成します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-詳細については、Microsoft TeamsのMicrosoft Teams[を参照してください。](/microsoftteams/microsoft-teams)
+Microsoft Teams の詳細については、[Microsoft Teams テクニカル ドキュメント](/microsoftteams/microsoft-teams)を参照してください
 
 ## <a name="admin-settings"></a>管理設定
 
-組織全体のチームを作成するには、管理者である必要があります。 詳細については、「管理者とは[」を参照Microsoft 365。](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)
+> [!Note]
+> 組織域内でチームを作成するには、管理者である必要があります。 詳細については、「[Microsoft 365 の管理者とは?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)」を参照してください。
+
+## <a name="next-objective"></a>次の目標
+
+この目標を完了したら、安全に[会議を設定する](set-up-meetings.md)必要があります。
+
