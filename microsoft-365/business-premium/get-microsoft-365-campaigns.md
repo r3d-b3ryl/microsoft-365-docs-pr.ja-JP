@@ -1,14 +1,14 @@
 ---
-title: キャンペーンMicrosoft 365を取得する
+title: Microsoft 365 for Campaigns を取得する方法
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,60 +23,58 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: キャンペーンMicrosoft 365メール、データ、通信に対するサイバーセキュリティの脅威からキャンペーンを保護できます。
-ms.openlocfilehash: f612fa2d47e8085fa79773bbea139d6b67f45130
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Microsoft 365 for Campaigns を取得することで、サイバー セキュリティの脅威からメール、データ、通信まで、あなたの公職選挙を保護できます。
+ms.openlocfilehash: 945948b378bc67bf52f04740fb00220b4606b294
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634275"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100117"
 ---
-# <a name="get-microsoft-365-for-campaigns"></a>キャンペーンMicrosoft 365を取得する
+# <a name="how-to-get-microsoft-365-for-campaigns"></a>Microsoft 365 for Campaigns を取得する方法
 
-電子メールと共同作業Microsoft 365 Business Premiumセキュリティを構成するには、このガイダンスを使用できます。 ただし、米国のキャンペーンや政党は、米国のキャンペーンの特別価格Microsoft 365。 現在、この特別価格は次の場合に利用できます。
+米国における公職選挙や政党は、Microsoft 365 Business Premium の特別価格の対象となります。 現在、この特別価格は次を対象に利用できます:
 
-- カナダ、カナダ、ニュージーランドの米国レベルの政党
+- 米国、カナダ、ニュージーランドの国家レベルの政党
+- 米国とニュージーランドにおける国家または連邦政府の公職選挙
+- 米国州政府レベルの政党
+- 米国の州全体での公職選挙 (例: 知事、州議会、または司法長官の公募と選挙など)
 
-- 米国およびニュージーランドの国内または連邦米国キャンペーン
+   > [!IMPORTANT]
+   > 地域の規制により、現時点では CO、DE、IL、OK、WI & WY に Microsoft 365 Campaigns を提供できません。 これらの州の選挙では、[Microsoft 365 for Business](https://www.office.com/business) で追加のご提案を探索することをお勧めします。
 
-- 米国全体の政治キャンペーン (例: ガバナー、州議会、または司法長官の職を求めるキャンペーン)*
+キャンペーンまたは政党が資格を持つ場合、Microsoft 365 for Campaigns は、Microsoft で利用できる費用の最も少ないプランです。 「[Microsoft 365 for Campaigns にサインアップ](m365-campaigns-sign-up.md)」を参照してください。  
 
-    *現地の規制により、現時点では、CO、DE、IL、OK、WI Microsoft 365 WY の各州でキャンペーンの&できません。 これらの州のキャンペーンでは、ビジネス向けサービスの追加Microsoft 365[勧めしています](https://www.office.com/business)。
+> [!TIP]
+> 特別価格の対象でない場合でも、Microsoft 365 Business Premium は協働環境における包括的なセキュリティを得る最もコスト効果の高い方法です。 「[Microsoft 365 Business Premium を入手する方法](get-microsoft-365-business-premium.md)」を参照してください。
 
-- 政府の国家レベルの政党米国
+## <a name="what-does-microsoft-365-for-campaigns-include"></a>Microsoft 365 for Campaigns には何が含まれますか?
 
-キャンペーンまたは政党が資格を得る場合は、Microsoft 365で利用できる最もコストの少ないプランです。 「[キャンペーンにサインアップするMicrosoft 365」を参照してください](m365-campaigns-sign-up.md)。  
+Microsoft 365 for Campaigns には、自分とスタッフがセキュリティを担保しながら協働するために役立つ誠実な管理機能が含まれています:
 
-特別な価格設定の対象ではない場合でも、Microsoft 365 Business Premium環境の包括的なセキュリティを得る最もコスト効率の高い方法です。 「[Set up Microsoft 365 Business Premium](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json)」を参照し、このライブラリを使用して追加のセキュリティを構成し、チームが安全に共同作業を行うのに役立ちます。
+- **ユーザー ID の保護**: ユーザーが電子メールの送信またはファイルへのアクセスのためにサインインするときに、ユーザーは、ユーザーが本人自身であることを確かめます (多要素認証)。
+- **機密情報の保護**: 機密情報を保護して、組織外で共有される情報を監視します (データ損失防止)。
+- **モバイル デバイスの保護**: モバイル デバイス上のデータを保護する (モバイル アプリ保護ポリシー)。
+- **悪意のあるコンテンツに対する保護**: メールの添付ファイルをスキャンして、悪意のあるコンテンツへのアクセスを防止します (Defender for Office 365)。
+- **パスワードの保護**: パスワードを無期限に設定します。パスワードは、より安全で、作業の停止を防ぐのに役立ちます (パスワード ポリシー)。
+- **AccountGuard Program Access**: Microsoft AccountGuardは、追加コストなしで提供されるセキュリティ サービスです。このサービスは、行政関係の顧客に対して追加料金なしで提供されます。 このサービスは、これらハイレベルに対象として絞り込まれた顧客が、組織および個人の Microsoft メール アカウントの全体に渡ってサイバーセキュリティの脅威から身を守る手段として設計されています。 詳細については、[Microsoft AccountGuard](https://www.microsoftaccountguard.com/) を参照してください。
 
-## <a name="what-does-microsoft-365-for-campaigns-include"></a>キャンペーンのMicrosoft 365には何が含まれますか?
+## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>何がコストですか、誰が必要としていますか、コミットメントは何ですか?
 
-この構成には、Microsoft 365 Business Premiumとスタッフが安全に作業するのに役立つ簡単なコントロールが含まれています。
+公職選挙が特別価格の対象である場合、Microsoft 365 for Campaigns は、1 か月あたり 1 人 5 ドルのコストがかかります。
 
-- **ユーザー ID の保護**: 電子メールの送信またはファイルへのアクセス (多要素認証) にサインインするときに、ユーザーが自分と言うユーザーである必要があります。
+選挙を保護するために、候補者、選挙管理者、選挙または政党の一部であるすべての上級スタッフ、そして通常の常勤スタッフのためのライセンス取得をお勧めします。 特定のボランティア従業員にもライセンスが必要な場合があります。 一般的に、保護された電子メールとデバイスが必要な選挙管理に携わるすべてのユーザーにライセンスを割り当てます。
 
-- **機密情報を保護** する: 機密情報を保護して、組織外で共有される情報を監視します (データ損失防止)。
+Microsoft 365 for Campaigns にサインアップしても、最短利用期間のコミットメントはありません。 必要なライセンスに対して毎月支払いを行い、いつでもサービスの使用を停止できます。
 
-- **モバイル デバイスを保護** する: モバイル デバイス上のデータを保護する (モバイル アプリ保護ポリシー)。
+## <a name="how-do-i-qualify-for-special-pricing"></a>わたしが特別価格の対象となるには、どのように資格を得れば良いですか?
 
-- **悪意のあるコンテンツに対する保護**: 電子メールの添付ファイルをスキャンして悪意のあるコンテンツにアクセスDefender for Office 365。
+1. [aka.ms/m365forcampaigns](https://aka.ms/m365forcampaigns/) に移動し、あなたの組織に関するいくつかの詳細情報を入力します。 お客様から提供された詳細情報は、お客様が米国内の国家レベルの公職選挙または政党を代表していることを確認するために役立ちます。 このフォームを完了しても、コミットメントはありません。
 
-- **パスワードを保護** する: パスワードを有効期限が切れなく設定すると、セキュリティが高まり、作業の停止を防ぐのに役立ちます (パスワード ポリシー)。
+2. フォームを完了すると、情報の確認に数日かかります。
 
-- **AccountGuard アクセス**: Microsoft AccountGuardは、政治的な空間で顧客に追加料金を支払って提供されるセキュリティ サービスです。 このサービスは、高度にターゲットを絞った顧客に対して、組織および個人の Microsoft 電子メール アカウント全体でサイバーセキュリティの脅威から身を守る情報を提供し、支援するように設計されています。 詳細については、「Microsoft AccountGuard」[を参照してください](https://www.microsoftaccountguard.com/)。
+3. お客様が国家レベルの公職選挙または政党を代表していることを確認した後、Microsoft から電子メールの招待を受け取ります。 招待には、組織に固有のサインアップ リンクが含まれています。
 
-## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>コストは何か、誰が必要とするのか、コミットメントは何ですか?
+## <a name="next-steps"></a>次の手順
 
-キャンペーンで特別価格が適用される場合Microsoft 365キャンペーンの料金は 1 ユーザーあたり 1 か月あたり 5 ドルです。
-キャンペーンを保護するには、候補者、キャンペーン マネージャー、キャンペーンまたはパーティーに参加しているすべての上級スタッフ、通常はフルタイムのスタッフのライセンスをお勧めします。 一部のボランティア従業員にもライセンスが必要な場合があります。 一般に、保護されたメールとデバイスが必要なキャンペーンのすべてのユーザーにライセンスを割り当てる必要があります。
-キャンペーンにサインアップする際に、最小のMicrosoft 365はありません。 必要なライセンスに対して毎月支払い、いつでもサービスの使用を停止できます。
-
-## <a name="how-do-i-qualify-for-special-pricing"></a>操作方法価格の対象となりますか?
-
-1. [ [組織 aka.ms/m365forcampaigns](https://aka.ms/m365forcampaigns/) に移動し、組織に関する詳細情報を提供します。 お客様が提供する詳細は、お客様が国内レベルの政治キャンペーンまたは政党を表すのを確認するのに役立米国。 このフォームに入力した場合、コミットメントはありません。
-
-2. フォームが完成したら、情報の確認に数日かかります。
-
-3. 国レベルの政治キャンペーンまたはパーティーを代表するユーザーが確認された後、Microsoft から電子メールの招待状を受け取ります。 招待には、組織固有のサインアップ リンクが含まれます。
-
-招待を受け取った場合は、[キャンペーン[にMicrosoft 365サインアップします](m365-campaigns-sign-up.md)。
+招待を受け取ったら、[Microsoft 365 for Campaigns にサインアップします](m365-campaigns-sign-up.md)。
