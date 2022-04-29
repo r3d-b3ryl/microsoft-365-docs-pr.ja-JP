@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ソリューション試用版プレイブック。
-ms.openlocfilehash: 4544e07baa5b8d2b89991d9a31c84a2d7cefb7f8
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 3ff103a2e6ebc260f5f00964ae09c6b6bbc1fd69
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973775"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098892"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>試用版プレイブック: Microsoft Purview ソリューション
 
@@ -35,6 +35,7 @@ Microsoft Purview ソリューション試用版プレイブックへようこ�
 - [監査 (プレミアム)](#audit-premium)
 - [コミュニケーション コンプライアンス](#communication-compliance)
 - [コンプライアンス マネージャー](#compliance-manager)
+- [データ ライフサイクル管理](#data-lifecycle-management)
 - [Microsoft Purview データ損失防止](#data-loss-prevention)
 - [電子情報開示](#ediscovery)
 - [情報保護](#information-protection)
@@ -168,6 +169,31 @@ Microsoft Purview コンプライアンス マネージャーは、データ保�
 1. [既存のテンプレートを変更してコントロールとアクションを追加または削除する](compliance-manager-templates-modify.md)
 1. [改善のための処置の自動テストを設定する](compliance-manager-setup.md#set-up-automated-testing)
 1. [改善のための処置を別のユーザーに再び割り当てる](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
+
+## <a name="data-lifecycle-management"></a>データ ライフサイクル管理
+
+**オートメーションを使用して大規模に管理する**
+
+自動的に更新されるポリシー スコープを使用して、組織の変更に適応する能力を向上させます。 コンテンツのラベル付けを自動化して、手作業を減らし、コンプライアンス体制を改善します。
+
+### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>手順 1: アダプティブ ポリシー スコープを使用してアイテム保持ポリシーを動的に対象化する
+> [!TIP]
+> 試用版のベスト プラクティス: 1 日目
+
+アダプティブ ポリシー スコープを使用すると、AD の属性に基づいて、特定のユーザー、グループ、またはサイトにポリシーを動的に適用することができます。  スコープの属性は、一覧から選択するか、詳細なクエリ ビルダーを使用してカスタマイズすることができます。
+
+アダプティブ ポリシー スコープを使用するポリシーは、新しい従業員の入社や退職など、組織の変化に合わせて常に最新の状態に維持されます。 また、ポリシーに含まれていた 100/1,000 の場所の従来の制限の対象にもなりません。
+
+- アダプティブ ポリシー スコープを作成し、アイテム保持ポリシーと併用する
+
+### <a name="step-2-automate-labeling-to-apply-a-label-to-all-items-by-default"></a>手順 2: 既定ですべての項目にラベルを適用するラベル付けを自動化する
+
+> [!TIP]
+> 試用版のベスト プラクティス: 最初の 30 日以内に設定する
+
+既定のラベルを使用すると、SharePoint 内の指定したライブラリ、フォルダー、またはドキュメント セット内のすべてのアイテムに保持ラベルを自動的に適用できます。
+
+- ラベルを発行し、SharePoint で既定として適用する
 
 ## <a name="data-loss-prevention"></a>データ損失防止
 
@@ -356,59 +382,38 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 ## <a name="records-management"></a>レコード管理
 
-**ビジネス クリティカルな記録の保持スケジュールを自動化する**
+**ビジネス、法律、または規制の記録管理要件のために価値の高いアイテムを管理します。**
 
-統合された Microsoft Purview のレコード管理機能を使用して、組織の規制、法律、およびビジネスに不可欠なレコードの保持スケジュールを自動化します。 作成から共同作業、レコード宣言、保持、廃棄に至るまで、コンテンツのライフサイクル全体のサポートを取得します。
+Microsoft Purview のレコード管理機能を使用して、組織の規制、法律、およびビジネスに不可欠なレコードの保持スケジュールを自動化します。 作成からコラボレーションまでの自動化機能を活用して、レコードを宣言し、コンテンツを保持し、最後にそれらを破棄します。
 
-### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>手順 1: アダプティブ ポリシー スコープを使用してアイテム保持ポリシーを動的に対象化する
+### <a name="step-1-mark-contents-as-records"></a>手順 1: コンテンツをレコードとしてマークする  
 
 > [!TIP]
 > 試用版のベスト プラクティス: 1 日目
 
-アダプティブ ポリシー スコープを使用すると、AD の属性に基づいて、特定のユーザー、グループ、またはサイトにポリシーを動的に適用することができます。
+コンテンツがレコードとして宣言されると、どのようなアクションが許可されるか、またはブロックされるかという点でアイテムに制限が加えられ、アイテムに関する追加のアクティビティが記録され、保持期間の終わりにアイテムが削除された場合には、廃棄の証明が得られます。
 
-スコープの属性は、一覧から選択するか、詳細なクエリ ビルダーを使用してカスタマイズすることができます。
+- コンテンツをレコードまたは規制レコードとして宣言する保持ラベルを作成する
 
-アダプティブ ポリシー スコープを使用するポリシーは、新しい従業員の入社や退職など、組織の変化に合わせて常に最新の状態に維持されます。 また、ポリシーに含まれていた 100/1,000 の場所の従来の制限の対象にもなりません。
+### <a name="step-2-review-content-to-approve-before-its-permanently-deleted"></a>手順 2: コンテンツを完全に削除する前に、承認するコンテンツを確認する
 
-- [アダプティブ ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)を作成し、アイテム保持ポリシーと併用する
+> [!TIP]
+> 試用版のベスト プラクティス: 1 日目
 
-### <a name="step-2-automate-labeling-of-sensitive-information-with-the-ability-to-review-before-disposal"></a>手順 2: 廃棄前に確認する機能を備えた機密情報のラベル付けを自動化する
+保持期間の終了時には、指定したユーザー ("レビュー担当者") に通知して、コンテンツを確認し、完全に廃棄する処置の承認を得ることができます。 これは、コンテンツに別の保有期間を割り当てたり、監査の削除を中断したりするなど、削除以外のアクションの方が適切な場合にサポートされます。
+
+- 廃棄レビューを使用する保持ラベルを作成する
+
+### <a name="step-3-apply-labels-automatically-to-content-that-matches-specific-conditions"></a>手順 3: 特定の条件に一致するコンテンツにラベルを自動的に適用する
 
 > [!TIP]
 > 試用版のベスト プラクティス: 最初の 30 日以内に設定する
 
-保持ラベルは、クレジット カード番号などの機密情報を検出した場合にコンテンツに自動的に適用されるように設定できます。 これにより、ユーザーがラベル付けアクティビティを手動で実行する必要がなくなります。
+ラベルを自動適用すると、ユーザーが手動でラベル付けアクティビティを実行する必要がなくなります。コンテンツに保持ラベルがまだ適用されておらず、コンテンツに機密情報、キーワード、検索可能なプロパティ、またはトレーニング可能な分類子のマッチが含まれている場合、保持ラベルをコンテンツに自動的に適用できます。
 
-保持期間の終了時には、指定したユーザー ("レビュー担当者") に通知して、コンテンツを確認し、完全に廃棄する処置の承認を得ます。 そうすることにより、長期間保存する必要がある場合にそれが可能になります。
-
-ラベル申請アクティビティと廃棄レビュー アクティビティのいずれも、[レコード管理の概要] 画面で表示できます。
-
-1. [保持ラベルを機密情報を含むコンテンツに自動的に適用する](retention.md#retention-labels)
-1. 保持期間の終了時に[廃棄レビュー](disposition.md#disposition-reviews)を含む保持ラベルを作成して適用する
-
-### <a name="step-3-label-content-as-records-automatically-using-trainable-classifiers"></a>手順 3: トレーニング可能な分類子を使用してコンテンツを記録として自動的にラベル付けする
-
-コンテンツがレコードとして宣言されると、どのようなアクションが許可されるか、またはブロックされるかという点でアイテムに制限が加えられ、アイテムに関する追加のアクティビティが記録され、保持期間の終わりにアイテムが削除された場合には、廃棄の証明が得られます。
-
-トレーニング可能な分類子は、与えられたサンプルに基づいて、さまざまな種類のコンテンツを認識するツールです。 さまざまな組み込みオプションから選択するか、特定のニーズに合わせてカスタム分類子を設定します。
-
-1. [コンテンツをレコードまたは規制レコードとして宣言する](records-management.md#records)保持ラベルを作成する
-1. [トレーニング可能な分類子を使用して、保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
-
-### <a name="more-information-auto-apply-retention-labels--disposition-review"></a>詳細情報: 保持ラベルの自動適用および処理確認
-
-**必要なものを保持するためにラベルを自動的に適用します。** アイテム保持ラベルは、次のものが含まれている場合に、コンテンツに自動的に適用できます。
-
-- [特定の種類の機密情報](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
-- [作成したクエリに一致する特定のキーワードまたは検索可能なプロパティ](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
-- [トレーニング可能な分類子の一致](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
-
-**...最後に、安全に処理します。**
-
-保持期間の終わりに処理確認がトリガーされると、選択したレビュー担当者は、レビューするコンテンツがあるというメール通知を受け取ります。
-
-処理確認を待っているコンテンツは、処理確認の最終ステージで確認担当者がコンテンツの恒久的な削除を選択しない限り削除されません。
+- 特定の種類の機密情報によるコンテンツへの保持ラベルの自動適用
+- トレーニング可能な分類子を使用して、保持ラベルをコンテンツに自動的に適用する
+- キーワードまたは検索可能なプロパティを使用して保持ラベルを自動適用する
 
 ## <a name="additional-trials-and-add-ons"></a>追加の試用版とアドオン
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、「テナント」ページを参照してください。
-ms.openlocfilehash: 7b8e26ddbe68059a9c5ecf4d5e396fd11c49be71
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0f25f8bb02c6957598b2b328bc7832c429ca1e7a
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023285"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128376"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの [テナント] ページの概要
 
@@ -52,13 +52,15 @@ Microsoft 365 Lighthouseでは、左側のナビゲーション ウィンドウ�
 
 テナントを非アクティブ化するか、タグを表示および管理するには、テナント名の横にある 3 つのドット (その他のアクション) を選択します。 個々のテナントを表示するには、テナント名を選択するか、テナントに割り当てられているタグのいずれかを選択します。
 
+テナントを追加する方法については、「 [パートナー センター アカウントで複数のテナントを追加および管理する](/partner-center/multi-tenant-account)」を参照してください。
+
 ## <a name="tenant-status"></a>テナントの状態
 
-次の表は、さまざまな状態とその意味を示しています。<br><br>
+次の表は、さまざまな状態とその意味を示しています。 カスタマー テナントの状態をトラブルシューティングする方法については、「[Microsoft 365 Lighthouseのエラー メッセージと問題のトラブルシューティング: カスタマー テナントのオンボード](m365-lighthouse-troubleshoot.md#customer-tenant-onboarding)」を参照してください。<br><br>
 
 | 状態                                   | 説明                                                                                             |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Active                                   | テナントのオンボードとデータ フローが開始されました。                                                           |
+| アクティブ                                   | テナントのオンボードとデータ フローが開始されました。                                                           |
 | 非 アクティブ                                 | テナントは MSP の要求でオフボードされ、Lighthouse で管理されなくなりました。           |
 | 処理中                               | テナントが検出されましたが、完全にオンボードされていません。                                                              |
 | 不適格 - DAP または GDAP が設定されていない    | パートナーは、テナントでセットアップされた委任 (DAP) または詳細な委任 (GDAP) 管理特権を持っている必要があります。 |

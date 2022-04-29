@@ -18,12 +18,12 @@ description: Office 365でOutlookルールとカスタム フォームインジ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c15046d43a1f2a48cf9f4ef4ccc79c060d18b156
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 10cbb57018cb0e7c30282ca2c89b6a8dab812e24
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972807"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131110"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlookルールとカスタム フォームインジェクション攻撃の検出と修復
 

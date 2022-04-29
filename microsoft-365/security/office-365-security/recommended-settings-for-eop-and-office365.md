@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) とDefender for Office 365セキュリティ設定のベスト プラクティスは何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳しくしたい場合は、何を使用する必要がありますか? また、Defender for Office 365も使用すると、どのような追加機能が得られますか?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a5e18547a26d688238f5d4be94520d4e68c9ff4
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 72d4f64ca00defe26ddaff7fe27d641cb65f13be
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916339"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130519"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -43,10 +43,16 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 
 この記事では、既定の設定と、ユーザーを保護するために推奨される Standard と Strict の設定についても説明します。 テーブルには、Microsoft 365 Defender ポータルと PowerShell (Exchange Online メールボックスのない組織の PowerShell またはスタンドアロン Exchange Online Protection PowerShell Exchange Online) の設定が含まれています。
 
-> [!TIP]
-> Microsoft 365 Defender ポータルでは、推奨される Standard と Strict の設定を変更することはできません。 **[ユーザーの保護を有効にする]** などの推奨値を変更するには、[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)使用する必要があります。
->
+> [!NOTE]
 > PowerShell 用の Office 365 Advanced Threat Protection 推奨構成アナライザー (ORCA) モジュールは、(管理者) これらの設定の現在の値を見つけるのに役立ちます。 具体的には、 **Get-ORCAReport** コマンドレットは、スパム対策、フィッシング詐欺対策、およびその他のメッセージの検疫設定の評価を生成します。 ORCA モジュールは 、次の場所で <https://www.powershellgallery.com/packages/ORCA/>ダウンロードできます。
+>
+> Microsoft 365組織では、迷惑メール フィルターを [自動フィルターなし] に設定Outlook、EOP からのスパム **フィルター** の判定で不要な競合 (正と負の両方) を防ぐことをお勧めします。 詳細については、次の記事を参照してください。
+>
+> - [Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)
+> - [Outlookの迷惑メール設定について](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
+> - [迷惑メール フィルターで保護レベルを変更する](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+> - [EOP で安全な差出人のリストを作成する](create-safe-sender-lists-in-office-365.md)
+> - [EOP で受信拒否送信者の一覧を作成する](create-block-sender-lists-in-office-365.md)
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>EOP でのスパム対策、マルウェア対策、フィッシング詐欺対策の保護
 
@@ -114,7 +120,7 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 > [!NOTE]
 > 送信スパム ポリシーは、Standard または Strict の事前設定済みセキュリティ ポリシーの一部ではありません。 **Standard** と **Strict** の値は、作成する既定の送信スパム ポリシーまたはカスタム送信スパム ポリシーで **推奨** される値を示します。
 
-|セキュリティ機能名|既定値|推奨<br/>Standard|推奨<br/>Strict|コメント|
+|セキュリティ機能名|既定値|推奨<br/>標準|推奨<br/>Strict|コメント|
 |---|:---:|:---:|:---:|---|
 |**外部メッセージの制限を設定する** <br/><br/> _RecipientLimitExternalPerHour_|0|500|400|既定値 0 は、サービスの既定値を使用します。|
 |**内部メッセージの制限を設定する** <br/><br/> _RecipientLimitInternalPerHour_|0|1000|800|既定値 0 は、サービスの既定値を使用します。|
@@ -175,7 +181,7 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 >
 > - Microsoft Defender for Office 365の既定のフィッシング対策ポリシーは、すべての受信者に[スプーフィング保護](set-up-anti-phishing-policies.md#spoof-settings)とメールボックス インテリジェンスを提供します。 ただし、使用可能なその他の [偽装保護機能](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) と [詳細設定](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) は、既定のポリシーでは構成または有効になっていません。 すべての保護機能を有効にするには、既定のフィッシング対策ポリシーを変更するか、追加のフィッシング対策ポリシーを作成します。
 >
-> - 既定のセーフ添付ファイル ポリシーまたは セーフ リンク ポリシーはありませんが、**組み込みの保護** プリセット セキュリティ ポリシーでは、すべての受信者 (カスタム セーフ添付ファイル ポリシーまたはセーフ リンク ポリシーで定義されていないユーザー) にセーフ添付ファイル保護とセーフ リンク保護が提供されます。 詳細については、「[EOP とMicrosoft Defender for Office 365の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
+> - 既定のセーフ添付ファイル ポリシーまたは セーフ リンク ポリシーはありませんが、**組み込みの保護** プリセット セキュリティ ポリシーでは、すべての受信者 (カスタム セーフ添付ファイル ポリシーまたはセーフ リンク ポリシーで定義されていないユーザー) にセーフ添付ファイル保護とセーフ リンク保護が提供されます。 詳しくは、「[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
 >
 > - [SharePoint、OneDrive、およびMicrosoft Teamsの保護とセーフ](mdo-for-spo-odb-and-teams.md)ドキュメント保護の[添付ファイルセーフ](safe-docs.md)、セーフ リンク ポリシーには依存しません。
 
@@ -235,7 +241,7 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 
 Microsoft Defender for Office 365の添付ファイルセーフには、セーフの添付ファイル ポリシーとは関係のないグローバル設定と、各セーフリンク ポリシーに固有の設定が含まれます。 詳細については、「[Defender for Office 365の添付ファイルのセーフ](safe-attachments.md)」を参照してください。
 
-既定のセーフ添付ファイル ポリシーはありませんが、**組み込みの保護** プリセット セキュリティ ポリシーでは、すべての受信者 (カスタム セーフ添付ファイル ポリシーで定義されていないユーザー) にセーフ添付ファイル保護が提供されます。 詳細については、「[EOP とMicrosoft Defender for Office 365の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
+既定のセーフ添付ファイル ポリシーはありませんが、**組み込みの保護** プリセット セキュリティ ポリシーでは、すべての受信者 (カスタム セーフ添付ファイル ポリシーで定義されていないユーザー) にセーフ添付ファイル保護が提供されます。 詳しくは、「[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
 
 #### <a name="global-settings-for-safe-attachments"></a>セーフ添付ファイルのグローバル設定
 
@@ -276,7 +282,7 @@ PowerShell では、これらの設定に [New-SafeAttachmentPolicy](/powershell
 
 Defender for Office 365のセーフ リンクには、アクティブなセーフ リンク ポリシーに含まれるすべてのユーザーに適用されるグローバル設定と、各セーフ リンク ポリシーに固有の設定が含まれます。 詳細については、「[Defender for Office 365のリンクのセーフ](safe-links.md)」を参照してください。
 
-既定のセーフ リンク ポリシーはありませんが、**組み込みの保護** プリセット セキュリティ ポリシーでは、すべての受信者 (カスタム セーフ リンク ポリシーで定義されていないユーザー) に対してセーフリンク保護が提供されます。 詳細については、「[EOP とMicrosoft Defender for Office 365の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
+既定のセーフ リンク ポリシーはありませんが、**組み込みの保護** プリセット セキュリティ ポリシーでは、すべての受信者 (カスタム セーフ リンク ポリシーで定義されていないユーザー) に対してセーフリンク保護が提供されます。 詳しくは、「[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
 
 #### <a name="global-settings-for-safe-links"></a>セーフ リンクのグローバル設定
 
@@ -313,7 +319,7 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](/powershell/modu
 |**電子メール内の潜在的に悪意のある URL に対するアクション**||||||
 |**オン: セーフ リンクは、ユーザーが電子メール内のリンクをクリックしたときに既知の悪意のあるリンクの一覧をチェックします** <br/><br/> _EnableSafeLinksForEmail_|未選択 <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
 |**組織内で送信された電子メール メッセージに セーフ リンクを適用する** <br/><br/> _EnableForInternalSenders_|未選択 <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
-|**ファイルを指す不審なリンクとリンクのリアルタイム URL スキャンを適用する** <br/><br/> _ScanUrls_|未選択 <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
+|**不審なリンクや、ファイルを指しているリンクに対してリアルタイム URL スキャンを適用します** <br/><br/> _ScanUrls_|未選択 <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
 |**URL スキャンが完了するまで待ち、その後でメッセージを配信します。** <br/><br/> _DeliverMessageAfterScan_|未選択 <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
 |**URL を書き換えないでください。セーフ リンク API でのみチェックを行います** <br/><br/> _DisableURLRewrite_|未選択 <br/><br/> `$false`|選択済み <br/><br/> `$true`|未選択 <br/><br/> `$false`|未選択 <br/><br/> `$false`||
 |**電子メールで次の URL を書き換えないでください** <br/><br/> _DoNotRewriteUrls_|未選択 <br/><br/> 空白|未選択 <br/><br/> 空白|未選択 <br/><br/> 空白|未選択 <br/><br/> 空白|この設定に関する具体的な推奨事項はありません。 詳細については、[セーフ リンク ポリシーの「次の URL を書き換えない」の一覧](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)を参照してください。|

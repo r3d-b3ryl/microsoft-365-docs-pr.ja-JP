@@ -12,16 +12,21 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Moodle プラグインを設定して構成することで、Moodle とMicrosoft Teamsを統合する準備を整えます。
-ms.openlocfilehash: efe1ebdb92cbb3367e54e99df89b75c853c48357
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 5ab68a96eae8c4d0669fbde52bd547dae0b2c1b7
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747536"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131258"
 ---
 # <a name="set-up-and-configure-the-moodle-plugin"></a>Moodle プラグインを設定して構成する
 
 この記事では、Moodle のエクスペリエンスにMicrosoft Teamsを組み込むために、Moodle LMS プラグインをインストールして構成する方法について説明します。
+
+> [!NOTE]
+> 現在、Moodle と Microsoft Teams LTI の統合はプライベート プレビューでのみ使用できます。
+>
+>プライベート プレビュー プログラムに参加する場合は、 [ここでサインアップしてください](https://m365crmedu.powerappsportals.com/LMSSignup)
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -119,8 +124,8 @@ PowerShell スクリプトを使用して、Azure ADで Moodle をアプリケ�
 
 1. PowerShell スクリプトを実行します。
 
-    1. 「.」と入力 `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`します。
-    1. 「.」と入力 `./Moodle-AzureAD-Script.ps1`します。
+    1. `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` を入力します。
+    1. `./Moodle-AzureAD-Script.ps1` を入力します。
     1. ポップアップ ウィンドウでMicrosoft 365管理者アカウントにサインインします。
     1. Azure AD アプリケーションの名前 (Moodle プラグインや Moodle プラグインなど) を入力します。
     1. Moodle サーバーの URL を入力します。

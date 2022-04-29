@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: DLP ポリシーで使用できる機密情報の種類は多数あります。 この記事では、これらの機密情報の種類をすべて一覧表示し、DLP ポリシーが各種類を検出したときにどのような情報漏えい対策ポリシーを検索するかについて説明します。
-ms.openlocfilehash: 6074082812853469e0513d67ec68519eb2a89563
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: af2cbd03de426aa34b9db82691a22684c4c1df0b
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970661"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130804"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -116,7 +116,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ。
+その必要はありません。
 
 ### <a name="description"></a>説明
 
@@ -214,7 +214,7 @@ Dictionary
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="description"></a>説明
 
@@ -457,7 +457,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -850,7 +850,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -1501,7 +1501,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -1885,7 +1885,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -1944,7 +1944,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -2804,7 +2804,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -4034,7 +4034,7 @@ cód. segurança
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -7049,7 +7049,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -7236,7 +7236,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 - 13 桁の数字の後にスペースを続け、その後に 2 桁の数字を続けます
 
-  or
+  または
 
 - 15 桁の連続する数字
 
@@ -8205,7 +8205,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -9380,7 +9380,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -9579,7 +9579,7 @@ Dictionary
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -9607,9 +9607,9 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="keywords"></a>キーワード
 
-国際 [分類の病気、10 番目の改訂、臨床変更 (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604)に基づく、Dictionary_icd_10_updatedキーワード 辞書の任意の用語。 この種類は、保険コードではなく、用語のみを検索します。
+国際 [分類の病気、10 番目の改訂、臨床変更 (ICD-10-CM)](https://icd10cmtool.cdc.gov/)に基づく、Dictionary_icd_10_updatedキーワード 辞書の任意の用語。 この種類は、保険コードではなく、用語のみを検索します。
 
-国際 [分類の病気、10 番目の改訂、臨床変更 (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604)に基づく、Dictionary_icd_10_codesキーワード 辞書の用語。 この種類は、説明ではなく、保険コードのみを検索します。
+国際 [分類の病気、10 番目の改訂、臨床変更 (ICD-10-CM)](https://icd10cmtool.cdc.gov/)に基づく、Dictionary_icd_10_codesキーワード 辞書の用語。 この種類は、説明ではなく、保険コードのみを検索します。
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>病気の国際分類 (ICD-9-CM)
 
@@ -9623,7 +9623,7 @@ Dictionary
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -10194,7 +10194,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -11403,7 +11403,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -13087,7 +13087,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -15450,7 +15450,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -15614,7 +15614,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 
@@ -18754,7 +18754,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+なし
 
 ### <a name="definition"></a>定義
 

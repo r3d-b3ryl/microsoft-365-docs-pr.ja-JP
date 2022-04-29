@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、メールを受信トレイに送信する際の問題に関するトラブルシューティング情報を、Microsoft 365 &顧客に一括郵送するためのベスト プラクティスMicrosoft 365提供します。
+description: この記事では、Microsoft 365のお客様への一括メール送信に関するベスト プラクティスMicrosoft 365 &、受信トレイに電子メールを送信する際の問題に関するトラブルシューティング情報を提供します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f5fe128989b66f110899e6af08180e830319b739
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 37703ccb0ffb37163033bb2fdca24566a33bb275
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121401"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128436"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Microsoft 365 に送信されるメールのトラブルシューティング
 
@@ -34,11 +34,11 @@ ms.locfileid: "61121401"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
-この記事では、Microsoft 365 で受信トレイに電子メールを送信しようとするときに問題が発生している送信者のトラブルシューティング情報と、顧客へのバルク メール送信のベスト プラクティスについて説明します。
+この記事では、Microsoft 365の受信トレイに電子メールを送信しようとしたときに問題が発生している送信者のトラブルシューティング情報と、顧客への一括メール送信のベスト プラクティスについて説明します。
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>IP およびドメインの評価の管理者ですか
 
-EOP フィルター テクノロジは、スパム対策保護を提供するように設計Microsoft 365、その他の Microsoft 製品 (Exchange Server)。 また、SPF、DKIM、DMARC も使用します。スプーフィングとフィッシングの問題に対処するために役立つ電子メール認証テクノロジ。 EOP フィルターは、送信 IP、ドメイン、認証、リストの精度、苦情率、コンテンツなど、多くの要因によって影響を受ける。 このうち、送信者の評判を下げ、電子メールを配信する能力を向上する主な要因の 1 つは、迷惑メールの苦情率です。
+EOP フィルタリング テクノロジは、Microsoft 365やその他の Microsoft 製品 (Exchange Serverなど) にスパム対策保護を提供するように設計されています。 また、SPF、DKIM、DMARC も使用しています。電子メールを送信するドメインが許可されていることを確認することで、スプーフィングとフィッシングの問題に対処するのに役立つ電子メール認証テクノロジ。 EOP フィルター処理は、送信 IP、ドメイン、認証、リストの精度、苦情率、コンテンツなどに関連する多くの要因の影響を受けます。 そのうち、送信者の評判を下げる主な要因の 1 つであり、メールを配信する能力は迷惑メールの苦情率です。
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>新しい IP アドレスから電子メールを送信していますか
 
@@ -62,17 +62,17 @@ DNS 逆引き参照を行えない送信者からの電子メールは受け付�
 
 一部の配信の問題の原因は、Microsoft によって送信者の IP アドレスがブロックされていることや、ユーザーのアカウントが以前の迷惑メール処理によって禁止された送信者として識別されていることにあります。エラーがあって NDR を受信したと分かっている場合には、まず、NDR メッセージに記載されている指示に従って問題を解決してください。
 
-受信したエラーの詳細については、「メール配信不可レポート」の「エラー コードの一覧」を[参照](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)Exchange Online。
+受信したエラーの詳細については、[Exchange Onlineの電子メール配信不能レポート](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)のエラー コードの一覧を参照してください。
 
- たとえば、次の NDR を受け取った場合、送信 IP アドレスが Microsoft によってブロックされたと示されます。
+ たとえば、次の NDR を受け取った場合、送信 IP アドレスが Microsoft によってブロックされたことを示します。
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-このリストからの削除を要求するには、リストから削除するポータルを使用して、ブロックされた送信者リストから自分自身 [を削除できます](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+この一覧からの削除を要求するには、 [リスト削除ポータルを使用して、ブロックされている送信者リストから自分を削除します](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
-## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>受信者の迷惑メール フォルダーにメールが届く
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>受信者の迷惑メール フォルダーにメールが届いた
 
-EOP によってメッセージがスパムとして誤って識別された場合は、受信者と一緒にこの誤検知メッセージを Microsoft Spam Analysis Team に送信し、メッセージを評価および分析できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+EOP によってメッセージが誤ってスパムとして識別された場合は、受信者と協力して、メッセージを評価して分析する Microsoft Spam Analysis Team にこの誤検知メッセージを送信できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>自分の IP アドレスからのトラフィックが EOP によって調整される
 
@@ -82,21 +82,21 @@ IP アドレスが EOP によって調整されたことを示す NDR を EOP �
 
 不審な動作が対象の IP アドレスで検出され、さらに詳しく評価される間、一時的に制限されているために NDR を受信しました。評価によって疑いが晴れると、この制限はすぐ解除されます。
 
-## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>ユーザーの送信者からメールを受信Microsoft 365
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Microsoft 365の送信者から電子メールを受信できない
 
- Microsoft ユーザーからのメッセージを受信するには、ご使用のネットワークが Microsoft データセンター内で EOP が使用している IP アドレスからの接続を許可していることを確認してください。 詳細については、「IP アドレスExchange Online Protection[参照してください](../../enterprise/urls-and-ip-address-ranges.md)。
+ Microsoft ユーザーからのメッセージを受信するには、ご使用のネットワークが Microsoft データセンター内で EOP が使用している IP アドレスからの接続を許可していることを確認してください。 詳細については、「[Exchange Online Protection IP アドレス](../../enterprise/urls-and-ip-address-ranges.md)」を参照してください。
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>ユーザーへの一括メール送信Microsoft 365方法
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Microsoft 365 ユーザーへの一括メール送信のベスト プラクティス
 
-多くの場合、Microsoft 365 ユーザーに対して一括メール キャンペーンを実施し、メールが安全かつ適切な方法で届く必要がある場合は、このセクションのヒントに従ってください。
+多くの場合、ユーザーに Microsoft 365対して一括メール キャンペーンを行い、メールが安全かつタイムリーに届くようお考えの場合は、このセクションのヒントに従ってください。
 
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>From 名にメッセージの送信者が反映されている必要があります。
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>From 名にメッセージを送信するユーザーが反映されていることを確認する
 
 [件名] はメッセージの内容に関する要約で、メッセージ本文には、オファリング、サービス、製品について明瞭かつ簡潔に記されている必要があります。 例：
 
 正しい:
 
-> From: marketing@shoppershandbag.com <br> 件名: クリスマスシーズンのカタログを更新しました!
+> From: marketing@shoppershandbag.com <br> 件名: クリスマスシーズンのカタログを更新しました。
 
 正しくない:
 
@@ -120,7 +120,7 @@ IP アドレスが EOP によって調整されたことを示す NDR を EOP �
 
 登録プロセスで、「はい、ニュースレターを送信してください」、「はい、特別なオファーを送信してください」などのチェックボックスが既定で選択されていると、不注意なユーザーが、受信の必要のないマーケティング電子メールやニュースレターに意図せずにサインアップする可能性があります。
 
- 代わりに、Microsoft はダブル オプトイン オプションを推奨しています。つまり、マーケティング メールまたはニュースレターのチェック ボックスは既定でオフになっています。 さらに、登録フォームが送信されると、マーケティング メールを受信する決定を確認できる URL を含む検証メールがユーザーに送信されます。
+ 代わりに、ダブル オプトイン オプションをお勧めします。つまり、マーケティングメールやニュースレターのチェック ボックスは既定でオフになっています。 さらに、登録フォームが送信されると、マーケティングメールを受け取る決定を確認できる URL を持つ確認メールがユーザーに送信されます。
 
  これにより、マーケティング電子メールを本当に受信する意志があるユーザーだけが電子メールにサインアップするようになり、以降は、問題のあるマーケティング電子メール手法を送信元の会社から排除できます。
 
@@ -132,7 +132,7 @@ IP アドレスが EOP によって調整されたことを示す NDR を EOP �
 
 - メッセージ本文に含まれるリダイレクトは、類似性と一貫性があるべきで、多種多様であってはなりません。このコンテキストのリダイレクトとは、リンクやドキュメントなど、メッセージから離れた任意の対象のことです。広告や登録解除リンク、またはプロファイルの更新リンクがたくさんある場合には、すべてが同じドメインを指していなければなりません。例：
 
-  正しい (すべてのドメインは同じです)。
+  正しい (すべてのドメインが同じ)。
 
   `unsubscribe.bulkmailer.com`
 

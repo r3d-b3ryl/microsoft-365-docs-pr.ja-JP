@@ -16,24 +16,24 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseベースラインをデプロイする方法について説明します。
-ms.openlocfilehash: 2649094f36903e5607fee28862fa0af683d0986e
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 550ded1383cb402da0943bdfeb6707cbd12b02d1
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022869"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131132"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Microsoft 365 Lighthouseベースラインをデプロイする
 
 Microsoft 365 Lighthouseでは、標準のマネージド テナント構成をデプロイして、顧客テナント内のユーザー、デバイス、データをセキュリティで保護できます。 Lighthouse には 7 つの [既定のベースライン構成](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) があります。 Lighthouse 展開計画機能を使用すると、すべてのテナントにセキュリティ構成を表示、テスト、デプロイできます。 展開計画は、アクティブなテナントでのみ使用できます。 テナントがオンボードされたら、顧客の現在の構成を既定のベースライン構成と比較し、適切なアクションを実行できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 お客様とテナントが、「[Microsoft 365 Lighthouseの要件」](m365-lighthouse-requirements.md)に記載されている要件を満たしていることを確認します。
 
 ## <a name="view-a-deployment-plan"></a>展開計画を表示する
 
-1. 左側のナビゲーション ページで、[テナント] を選択 **します**。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[ **テナント**] を選択します。
 
 2. テナントの一覧から、表示するテナントを選択します。
 
@@ -184,7 +184,7 @@ Lighthouse を使用して自動化できるデプロイ プロセスごとに�
 
     | オプション  | 説明 |
     |-----------|-------------------------------------------------------------------------|
-    | Copy  | デプロイ ステップへのリンクをクリップボードにコピーします。                                     |
+    | コピー  | デプロイ ステップへのリンクをクリップボードにコピーします。                                     |
     | メール | ローカル コンピューターで新しい電子メール メッセージを開き、展開手順へのリンクを挿入します。 |
 
     このリンクを使用すると、組織内のアクセス許可を持つすべてのユーザーがテナントの展開計画を表示できるようになります。

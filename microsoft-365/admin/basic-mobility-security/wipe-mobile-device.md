@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 組み込みの Basic Mobility と Security を使用して、登録済みデバイスから情報を削除します。
-ms.openlocfilehash: 932380b735e3fea2543832417e7911e9216f70fc
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 959e785958dd6d447713507ee9c48763b814db78
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780789"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129092"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Basic Mobility and Security でモバイル デバイスをワイプする
 
 組み込みの Basic Mobility and Security for Microsoft 365を使用すると、組織の情報のみを削除したり、出荷時のリセットを実行してモバイル デバイスからすべての情報を削除し、出荷時設定に復元したりできます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 モバイル デバイスは、組織の機密情報を格納し、組織のMicrosoft 365 リソースへのアクセスを提供できます。 組織の情報を保護するために、会社のデータをファクトリ リセットまたは削除できます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "64780789"
 
 ## <a name="wipe-a-mobile-device"></a>モバイル デバイスをワイプする
 
-1. [Microsoft 365 管理センター](../../admin/admin-overview/about-the-admin-center.md)に戻ります。
+1. [Microsoft 365 管理センター](../../admin/admin-overview/admin-center-overview.md)に戻ります。
 
 2. 検索フィールドに「モバイル デバイス管理」と入力し、結果の一覧から **[モバイル デバイス管理**] を選択します。
 

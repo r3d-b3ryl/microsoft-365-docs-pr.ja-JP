@@ -1,7 +1,7 @@
 ---
 title: 高度な捜索スキーマの EmailUrlInfo テーブル
 description: 高度な捜索スキーマの EmailUrlInfo テーブルで URL またはリンクの情報について学習する
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、EmailUrlInfo、ネットワーク メッセージ ID、URL、リンク
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, EmailUrlInfo, ネットワーク メッセージ ID, URL, リンク
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d0c9a8f1456aaeedbc8d296a1f738d0b2c57a156
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 9453a5a7ddb48ff09ca217aa23c5e557d57d00e5
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531545"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130957"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -32,15 +32,16 @@ ms.locfileid: "61531545"
 
 **適用対象:**
 - Microsoft 365 Defender
+- Microsoft Defender for Office 365
 
-高度 `EmailUrlInfo` な検索スキーマの[表](advanced-hunting-overview.md)には、Microsoft Defender によって処理された電子メールと添付ファイルの URL に関する情報が含Office 365。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。 
+`EmailUrlInfo` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、Microsoft Defender for Office 365によって処理された電子メールと添付ファイルの URL に関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。 
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | `string` | ユーザーが生成する電子メールの一意Microsoft 365 |
+| `NetworkMessageId` | `string` | Microsoft 365によって生成された電子メールの一意の識別子 |
 | `Url` | `string` | メールの件名、本文、または添付ファイル内の完全な URL |
 | `UrlDomain` | `string` | URL のドメイン名またはホスト名 |
 | `ReportId` | `long` | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 56e22e0525324c59d2d62adaf2325edc3317ccd6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0cbcc198f31497996595a9f17df9cf689c435b58
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096052"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130541"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -48,6 +48,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="april-2022"></a>2022 年 4 月
 - (プレビュー)これで、検索クエリの結果から直接電子メール メッセージに [対してアクション](advanced-hunting-take-action.md) を実行できるようになりました。 電子メールは、他のフォルダーに移動したり、完全に削除したりできます。 
+- (プレビュー)高度な捜索の新しい[`UrlClickEvents`テーブル](advanced-hunting-urlclickevents-table.md)を使用すると、メール メッセージ、Microsoft Teams、Office 365 アプリのセーフ リンククリックからの情報に基づいて、フィッシング キャンペーンや不審なリンクなどの脅威を検出できます。
 
 ## <a name="march-2022"></a>2022 年 3 月
 

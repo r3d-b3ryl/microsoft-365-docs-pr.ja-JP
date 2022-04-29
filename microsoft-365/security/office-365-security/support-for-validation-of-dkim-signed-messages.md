@@ -13,15 +13,15 @@ search.appverid:
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
 - M365-security-compliance
-description: DKIM 署名済みメッセージの検証について、Exchange Online ProtectionおよびExchange Online
+description: Exchange Online ProtectionとExchange Onlineでの DKIM 署名済みメッセージの検証について説明します
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a5ea98add5ebe860f756d645909366a1f5502832
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dcdd251ba1266033671ac524426d1ac3d2f56a10
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203853"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130716"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>DKIM 署名付きメッセージの検証をサポートする
 
@@ -32,15 +32,15 @@ ms.locfileid: "60203853"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online Protection (EOP) Exchange Onlineは、ドメイン キー識別メール ([DKIM](https://www.rfc-editor.org/rfc/rfc6376.txt)) メッセージの受信検証をサポートします。
+Exchange Online Protection (EOP) とExchange Onlineはどちらも、ドメイン キー識別メール ([DKIM](https://www.rfc-editor.org/rfc/rfc6376.txt)) メッセージの受信検証をサポートします。
 
-DKIM は、電子メール メッセージが他のユーザーによってスプーフィングされ、それが送信されたと言うドメインから送信されたと検証します。 電子メール メッセージを送信した組織に結び付きます。 DKIM 検証は、IPv6 で送信されるすべてのメッセージに対して自動的に使用されます。 Microsoft 365 IPv4 を使用してメールが送信される場合にも DKIM がサポートされます。 (IPv6 サポートの詳細については [、「IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md)を使用した匿名受信メール メッセージのサポート」を参照してください。
+DKIM は、電子メール メッセージが他のユーザーによって *スプーフィング* されておらず、それが送信されたドメインから送信されたことを検証します。 電子メール メッセージを送信した組織に関連付けます。 DKIM 検証は、IPv6 で送信されたすべてのメッセージに対して自動的に使用されます。 Microsoft 365は、IPv4 経由でメールが送信されるときにも DKIM をサポートします。 (IPv6 サポートの詳細については、「 [IPv6 経由の匿名受信電子メール メッセージのサポート」を](support-for-anonymous-inbound-email-messages-over-ipv6.md)参照してください)。
 
-DKIM は、メッセージ ヘッダーの DKIM-Signatureに表示されるデジタル署名されたメッセージを検証します。 検証の結果はDKIM-SignatureヘッダーにAuthentication-Resultsされます。 メッセージ ヘッダー テキストは次のように表示されます (contoso.com が送信者です)。
+DKIM は、メッセージ ヘッダーのDKIM-Signatureヘッダーに表示されるデジタル署名されたメッセージを検証します。 DKIM-Signature検証の結果は、Authentication-Results ヘッダーにスタンプされます。 メッセージ ヘッダー テキストは次のように表示されます (contoso.com が送信者です)。
 
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
 
 > [!NOTE]
-> ヘッダーの詳細については、「Authentication-Results RFC 7001 ( メッセージ認証の状態を示すメッセージ ヘッダー フィールド」[を参照してください](https://www.rfc-editor.org/rfc/rfc7001.txt)。 Microsoft の DKIM 実装は、この RFC に準拠しています。
+> Authentication-Results ヘッダーの詳細については、「RFC 7001 ([メッセージ認証状態を示すメッセージ ヘッダー フィールド](https://www.rfc-editor.org/rfc/rfc7001.txt)」を参照してください。 Microsoft の DKIM 実装は、この RFC に準拠しています。
 
-管理者は、Exchange[の結果](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)にメール フロー ルール (トランスポート ルールとも呼ばれる) を作成できます。 これらのメール フロー ルールを使用すると、管理者は必要に応じてメッセージをフィルター処理またはルーティングできます。
+管理者は、DKIM 検証の結果にExchange[メール フロー ルール](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (トランスポート ルールとも呼ばれます) を作成できます。 これらのメール フロー ルールを使用すると、管理者は必要に応じてメッセージをフィルター処理またはルーティングできます。

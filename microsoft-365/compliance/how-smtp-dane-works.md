@@ -1,5 +1,5 @@
 ---
-title: 電子メール通信をセキュリティで保護するために SMTP DNS ベースの名前付きエンティティの認証 (DANE) のしくみ
+title: SMTP DNS ベースの名前付きエンティティの認証 (DANE) が電子メール通信をセキュリティで保護する方法
 f1.keywords:
 - NOCSH
 ms.author: v-mathavale
@@ -14,16 +14,20 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: SMTP DNS ベースの名前付きエンティティの認証 (DANE) が、メール サーバー間の電子メール通信をセキュリティで保護するためにどのように機能するかを説明します。
-ms.openlocfilehash: b5f9337457556dda53b5b2f982480a4c2501fcc9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: fa982671aebb7c857c1c55af027d10437091e0dd
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782855"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131022"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>名前付きエンティティの SMTP DNS ベースの認証 (DANE) のしくみ
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 SMTP プロトコルは、メール サーバー間でメッセージを転送するために使用されるメイン プロトコルであり、既定ではセキュリティで保護されていません。 トランスポート層セキュリティ (TLS) プロトコルは、SMTP 経由でのメッセージの暗号化された送信をサポートするために数年前に導入されました。 これは一般的に要件としてではなく日和見的に使用され、多くの電子メール トラフィックをクリア テキストに残し、悪意のあるアクターによる傍受に対して脆弱です。 さらに、SMTP は、スプーフィングや中間者攻撃 (MITM) の影響を受けやすいパブリック DNS インフラストラクチャを介して宛先サーバーの IP アドレスを決定します。 これにより、電子メールの送受信のセキュリティを高めるために多くの新しい標準が作成されました。そのうちの 1 つは、DNS ベースの名前付きエンティティの認証 (DANE) です。
+  
+DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) では、ドメインの DNS レコード セットにトランスポート層セキュリティ認証 (TLSA) レコードが存在することを使用して、ドメインとそのメール サーバーが DANE をサポートすることを通知します。 TLSA レコードが存在しない場合、メール フローの DNS 解決は通常どおりに機能し、DANE チェックは試行されません。 TLSA レコードは、TLS のサポートを安全に通知し、ドメインの DANE ポリシーを発行します。 そのため、メール サーバーを送信すると、SMTP DANE を使用して正当な受信メール サーバーを正常に認証できます。 これにより、ダウングレードと MITM 攻撃に対する耐性が高くなります。 DANE は DNSSEC に直接依存しています。これは、公開キー暗号化を使用して DNS 参照のレコードにデジタル署名することで機能します。 DNSSEC チェックは、クライアントの DNS クエリを行う DNS サーバーである再帰 DNS リゾルバーで行われます。 DNSSEC を使用すると、DNS レコードが改ざんされず、信頼性が高いことが保証されます。  
 
 DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) では、ドメインの DNS レコード セットにトランスポート層セキュリティ認証 (TLSA) レコードが存在することを使用して、ドメインとそのメール サーバーが DANE をサポートすることを通知します。 TLSA レコードが存在しない場合、メール フローの DNS 解決は通常どおりに機能し、DANE チェックは試行されません。 TLSA レコードは、TLS のサポートを安全に通知し、ドメインの DANE ポリシーを発行します。 そのため、メール サーバーを送信すると、SMTP DANE を使用して正当な受信メール サーバーを正常に認証できます。 これにより、ダウングレードと MITM 攻撃に対する耐性が高くなります。 DANE は DNSSEC に直接依存しています。これは、公開キー暗号化を使用して DNS 参照のレコードにデジタル署名することで機能します。 DNSSEC チェックは、クライアントの DNS クエリを行う DNS サーバーである再帰 DNS リゾルバーで行われます。 DNSSEC を使用すると、DNS レコードが改ざんされず、信頼性が高いことが保証されます。
 
@@ -127,6 +131,13 @@ SMTP DANE エラーによって電子メールがブロックされるシナリ�
 |5.7.323|tlsa-invalid: ドメインが DANE 検証に失敗しました。|
 |5.7.324|dnssec-invalid: 宛先ドメインが無効な DNSSEC レコードを返しました。|
 
+> [!NOTE]
+> 現在、ドメインが DNSSEC をサポートしていることを通知しても DNSSEC チェックが失敗した場合、Exchange Onlineは 4/5.7.324 dnssec 無効エラーを生成しません。 一般的な DNS エラーが生成されます。
+> 
+> `4/5.4.312 DNS query failed`
+> 
+> この既知の制限を解決するために積極的に取り組んでいます。 このエラー ステートメントが表示された場合は、Microsoft Remote Connectivity Analyzer に移動し、4/5.4.312 エラーを生成したドメインに対して DANE 検証テストを実行します。 結果には、DNSSEC の問題か、別の DNS の問題かが表示されます。
+
 ### <a name="troubleshooting-57321-starttls-not-supported"></a>トラブルシューティング 5.7.321 starttls-not-supported
 
 これは通常、宛先メール サーバーに関する問題を示します。 メッセージを受信した後:
@@ -188,6 +199,13 @@ TLS-RPT [https://datatracker.ietf.org/doc/html/rfc8460](https://datatracker.ietf
 |4/5.7.322|certificate-expired: 宛先メール サーバーの証明書の有効期限が切れています。|
 |4/5.7.323|tlsa-invalid: ドメインが DANE 検証に失敗しました。|
 |4/5.7.324|dnssec-invalid: 宛先ドメインが無効な DNSSEC レコードを返しました。|
+
+> [!NOTE]
+> 現在、ドメインが DNSSEC をサポートしていることを通知しても DNSSEC チェックが失敗した場合、Exchange Onlineは 4/5.7.324 dnssec 無効エラーを生成しません。 一般的な DNS エラーが生成されます。
+> 
+> `4/5.4.312 DNS query failed`
+> 
+> この既知の制限を解決するために積極的に取り組んでいます。 このエラー ステートメントが表示された場合は、Microsoft Remote Connectivity Analyzer に移動し、4/5.4.312 エラーを生成したドメインに対して DANE 検証テストを実行します。 結果には、DNSSEC の問題か、別の DNS の問題かが表示されます。
 
 ### <a name="troubleshooting-57321-starttls-not-supported"></a>トラブルシューティング 5.7.321 starttls-not-supported
 

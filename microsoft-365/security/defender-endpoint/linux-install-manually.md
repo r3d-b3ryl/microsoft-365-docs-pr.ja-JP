@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a0f499a08288735d5f0d75e7111ec0b6360908a8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: b467d87f16900375ca2db2f8478bf001780c9059
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664526"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130343"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux 用 Microsoft Defender for Endpoint を手動で展開する
 
@@ -323,12 +323,12 @@ Microsoft 365 Defender ポータルからオンボード パッケージをダ�
 
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
 
 ## <a name="client-configuration"></a>クライアントの構成
 
-1. MicrosoftDefenderATPOnboardingLinuxServer.py をターゲット デバイスにコピーします。
+1. MicrosoftDefenderATPOnboardingLinuxServer.sh をターゲット デバイスにコピーします。
 
     > [!NOTE]
     > 最初は、クライアント デバイスが組織に関連付けられていないので、 *orgId* 属性は空白です。
@@ -337,21 +337,10 @@ Microsoft 365 Defender ポータルからオンボード パッケージをダ�
     mdatp health --field org_id
     ```
 
-2. MicrosoftDefenderATPOnboardingLinuxServer.py を実行します。
-
-    > [!NOTE]
-    > このコマンドを実行するには、disto とバージョンに応じてデバイスにインストールされているか`python3`、インストールされている必要があります`python`。 必要に応じて、 [Linux に Python をインストールするための詳細な手順に関するページを](https://opensource.com/article/20/4/install-python-linux)参照してください。
-    
-    RHEL 8.x または Ubuntu 20.04 以降を実行している場合は `python3`、.
+2. MicrosoftDefenderATPOnboardingLinuxServer.sh を実行します。
 
     ```bash
-    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
-
-    ディストリビューションとバージョンの残りの部分については、 `python`.
-    
-    ```bash
-    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
+    sudo bash MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
     
 3. デバイスが組織に関連付けられていることを確認し、有効な組織 ID を報告します。

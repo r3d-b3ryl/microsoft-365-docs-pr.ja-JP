@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、組織のモバイル デバイスのセキュリティと管理に役立ちます。
-ms.openlocfilehash: f2da9a20c496d5229d62e477fcf4cc0024436788
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cb724a4f7d5b4118bb50b0aeaf1138a4a1aebfb6
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935239"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129136"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Microsoft 365のモバイル デバイス管理に登録されているデバイスを管理する
 
@@ -36,7 +36,7 @@ Microsoft 365用の組み込みのモバイル デバイス管理は、iPhone、
 
 デバイス管理パネルにアクセスするには、次の手順に従います。
 
-1. [Microsoft 365 管理センター](../../admin/admin-overview/about-the-admin-center.md)に戻ります。
+1. [Microsoft 365 管理センター](../../admin/admin-overview/admin-center-overview.md)に戻ります。
 
 2. 検索フィールドに「モバイル デバイス管理」と入力し、結果の一覧から **[モバイル デバイス管理**] を選択します。
 

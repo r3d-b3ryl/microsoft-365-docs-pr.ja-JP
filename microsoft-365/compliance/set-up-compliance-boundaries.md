@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンス境界を使用して、電子情報開示マネージャーがMicrosoft 365で検索できるユーザー コンテンツの場所を制御する論理境界を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36a7f1e679f404a77b61c30b8efef7875558fee9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 52f4a66ffbab37109e7503181548b1de4ffac87a
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099193"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128785"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>電子情報開示調査のコンプライアンス境界を設定する
 
@@ -286,13 +286,11 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - コンプライアンスの境界は、電子情報開示ケースの保留には適用されません。 つまり、ある機関の電子情報開示マネージャーが、保留中の別の機関にユーザーを配置することができます。 ただし、電子情報開示マネージャーが保留にされているユーザーのコンテンツの場所を検索する場合は、コンプライアンスの境界が適用されます。 つまり、電子情報開示マネージャーは、ユーザーを保留にすることはできても、ユーザーのコンテンツの場所を検索することはできません。
 
-    また、保留リストは、機関のコンテンツの場所にのみ適用されます。
-
 - 検索アクセス許可フィルター (メールボックスまたはサイト フィルター) が割り当てられ、組織内のすべてのSharePoint サイトを含む検索のインデックスのないアイテムをエクスポートしようとすると、次のエラー メッセージが表示`Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied`されます。 検索アクセス許可フィルターが割り当てられ、インデックスのないアイテムをSharePointからエクスポートする場合は、検索を再実行し、検索する特定のSharePoint サイトを含める必要があります。 それ以外の場合は、すべてのSharePointサイトを含む検索からインデックス付きアイテムのみをエクスポートできます。 検索結果をエクスポートするときのオプションの詳細については、「コンテンツ検索結果の [エクスポート](export-search-results.md#step-1-prepare-search-results-for-export)」を参照してください。
 
 - 検索アクセス許可のフィルターは、Exchange のパブリックフォルダーには適用されません。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - メールボックスのライセンス解除または論理的な削除が行われると、ユーザーはコンプライアンス境界内では考慮されなくなります。 削除時にメールボックスに保留が配置された場合でも、メールボックスに保持されているコンテンツは、コンプライアンス境界または検索アクセス許可フィルターの対象となります。
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Microsoft 365 管理センターで新しい製品と機能の更新プログラムのリリース オプションを設定する方法について説明します。
-ms.openlocfilehash: 67c6fe3f08549424c725589a50c647a876c151af
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 176558448f31fadea0b0cf865bca5d1156e3eefe
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022451"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129422"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Standard または Targeted リリース オプションを設定する
 
@@ -47,7 +47,7 @@ Microsoft 365では、数年ごとにコストのかかる更新プログラム�
 重要な更新プログラムの場合、お客様は最初に[Microsoft 365ロードマップ](https://products.office.com/business/office-365-roadmap)から通知を受け取ります。 更新プログラムがロールアウトに近づくにつれて、[Microsoft 365 メッセージ センター](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)を通じて通信されます。
 
 > [!NOTE]
-> [管理センター](/office365/admin/admin-overview/about-the-admin-center)からメッセージ センターにアクセスするには、Microsoft 365またはAzure ADアカウントが必要です。 Microsoft 365ホーム プランのユーザーには管理センターがありません。
+> [管理センター](/office365/admin/admin-overview/admin-center-overview)からメッセージ センターにアクセスするには、Microsoft 365またはAzure ADアカウントが必要です。 Microsoft 365ホーム プランのユーザーには管理センターがありません。
 
 ## <a name="standard-release"></a>標準リリース
 

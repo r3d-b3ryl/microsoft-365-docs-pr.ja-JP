@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e787f79b5af90f45dd2823f53402830c7fc287db
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: b99daf9fa7597e44dc7ea20b517c2f7ed5aaa354
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664042"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130563"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -32,6 +32,7 @@ ms.locfileid: "64664042"
 **適用対象:**
 
 - Microsoft 365 Defender
+- Microsoft Defender for Office 365
 
 `EmailAttachmentInfo` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、Microsoft Defender for Office 365によって処理された電子メールの添付ファイルに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 

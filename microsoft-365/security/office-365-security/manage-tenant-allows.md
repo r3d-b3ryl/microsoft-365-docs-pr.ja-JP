@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可を構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad2ef693848b664be6ec9b48cc4fc320a8b4b9c2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 413209bdecef19c4d101162f0e23f24ff1a2903e
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090146"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129246"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの許可リストを追加する
 
@@ -57,6 +57,13 @@ Microsoft 365 Defenderの **[送信]** ページで送信者 (またはドメイ
 
 > ![分析の例として、Microsoft にマルウェアを送信します。](../../media/admin-submission-allow-messages.png)
 
+
+> [!NOTE]
+>
+> - メールが悪意のあると判断したフィルターに基づいて、メールフロー中に許可が追加されます。 たとえば、フィルターで送信者と URL の両方が正しくないと検出された場合、それぞれに許可が追加されます。 
+> - そのエンティティ (送信者、ドメイン、URL、ファイル) が再び検出されると、そのエンティティに関連付けられているすべてのフィルターはスキップされます。
+> - そのため、(このエンティティを含む) 電子メールの場合、メールフロー中に、残りのフィルターでクリーンなメールが見つかると、電子メールが配信されます。
+
 ## <a name="add-url-allows-using-the-submissions-portal"></a>URL の追加では、申請ポータルを使用できます
 
 Microsoft 365 Defenderの [**申請]** ページで URL を許可します。
@@ -78,6 +85,13 @@ Microsoft 365 Defenderの [**申請]** ページで URL を許可します。
 > [!div class="mx-imgBorder"]
 > ![分析用の URL を送信します。](../../media/submit-url-for-analysis.png)
 
+
+> [!NOTE]
+>
+> -  URL が再び検出されると、起爆または評価チェックのために URL が送信されず、他のすべての URL ベースのフィルターはスキップされます。
+> -  そのため、メール (この URL を含む) の場合は、メールフロー中に、残りのフィルターでメールがクリーンであることが検出された場合は、電子メールが配信されます。
+
+
 ## <a name="add-file-allows-using-the-submissions-portal"></a>ファイルの追加では、申請ポータルを使用できます
 
 Microsoft 365 Defenderの **[提出]** ページでファイルを許可します。
@@ -98,6 +112,12 @@ Microsoft 365 Defenderの **[提出]** ページでファイルを許可しま�
 
 > [!div class="mx-imgBorder"]
 > ![分析のために電子メールを送信します。](../../media/submit-email-for-analysis.png)
+
+
+> [!NOTE]
+>
+> - ファイルが再び検出されると、デトネーションまたは評判チェックのために送信されず、他のすべてのファイル ベースのフィルターはスキップされます。
+> - そのため、メールフロー中に (このファイルを含む) 電子メールの場合、残りのフィルターでメールがクリーンであることが検出された場合、電子メールが配信されます。 
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>Microsoft 365 Defenderを使用してスプーフィングされた送信者許可エントリを作成する
 

@@ -2,8 +2,8 @@
 title: ネットワーク アップロードを使用して PST ファイルをインポートする
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,19 +19,19 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10a0b2e076c3a8d4fc6910e16ba89c3ce75d2d2d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cd025adb7100e6dff0d8cb97c195e851414afd81
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999808"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095424"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
-> この記事は管理者向けです。 自分のメールボックスに PST ファイルをインポートしようとしていますか? 「[Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。
+> この記事は管理者向けです。自分のメールボックスに PST ファイルをインポートする場合は、「[Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。
   
 ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のメールボックスに一括インポートするために必要なステップ バイ ステップによる手順を以下に示します。 ネットワーク アップロードを使用した Microsoft 365 メールボックスへの PST ファイルの一括インポートについてよく寄せられる質問については、「[ネットワーク アップロードを使用して PST ファイルをインポートすることについてよく寄せられる質問](./faqimporting-pst-files-to-office-365.yml#using-network-upload-to-import-pst-files)」を参照してください。
   
@@ -92,7 +92,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
   
 1. <https://compliance.microsoft.com> に移動し、組織の管理者アカウントの資格情報を使用してサインインします。
 
-2. コンプライアンス ポータルの左側のウィンドウで、**[情報ガバナンス]** \> **[インポート]** の順にクリックします。
+2. コンプライアンス ポータルの左側のウィンドウで、**[データ ライフサイクル管理]** \> **[インポート]** の順にクリックします。
 
     > [!NOTE]
     > コンプライアンス ポータルの **[インポート]** ページにアクセスするには、適切なアクセス許可が割り当てられている必要があります。詳細については、「**開始する前に**」のセクションを参照してください。 
@@ -260,7 +260,7 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
   
 1. <https://compliance.microsoft.com> に移動し、組織の管理者アカウントの資格情報を使用してサインインします。
 
-2. コンプライアンス ポータルの左側のウィンドウで、[**情報ガバナンス] > [インポート**] の順にクリックします。
+2. コンプライアンス ポータルの左側のウィンドウで、**[データ ライフサイクル管理] [インポート]** の順にクリックします。
 
 3. [**インポート**] タブで、[![追加アイコン](../media/ITPro-EAC-AddIcon.gif)] > [**新規インポート ジョブ**] の順にクリックします。
 
