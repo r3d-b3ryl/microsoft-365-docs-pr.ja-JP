@@ -17,7 +17,7 @@ ms.technology: mde
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 6a9b346d4e423d46244eeedbb8136b91a165473a
 ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/12/2022
 ms.locfileid: "64788570"
@@ -430,9 +430,7 @@ UAC</dt>
 <td>
 説明:
 </td>
-<td >
-Microsoft Defender ウイルス対策、マルウェアや望ましくない可能性のある他のソフトウェアからこのコンピューターを保護するための措置を取っています。 詳細については、次のトピックを参照してください。
-<dl>
+<td >Microsoft Defender ウイルス対策、マルウェアや望ましくない可能性のある他のソフトウェアからこのコンピューターを保護するための措置を取っています。詳細は次をご覧ください。<dl>
 <dt>User: &lt;ドメイン&gt;\&lt;ユーザー&gt;</dt>
 <dt>Name: &lt;脅威名&gt;</dt>
 <dt>ID: &lt;脅威 ID&gt;</dt>
@@ -579,9 +577,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しまし�
 <td>
 説明:
 </td>
-<td >
-Microsoft Defender ウイルス対策アイテムを検疫から復元しようとしてエラーが発生しました。 詳細については、次のトピックを参照してください。
-<dl>
+<td >Microsoft Defender ウイルス対策で検疫からアイテムを復元しようとしてエラーが発生しました。詳細については、次を参照してください。<dl>
 <dt>Name: &lt;脅威名&gt;</dt> 
 <dt>ID: &lt;脅威 ID&gt;</dt>
 <dt>Severity: &lt;重大度:&gt;、例:<ul>
@@ -665,10 +661,7 @@ Microsoft Defender ウイルス対策が検疫から項目を削除しました�
 <td>
 説明:
 </td>
-<td >
-Microsoft Defender ウイルス対策検疫からアイテムを削除しようとしてエラーが発生しました。
-詳細については、次のトピックを参照してください。
-<dl>
+<td >Microsoft Defender ウイルス対策検疫からアイテムを削除しようとしてエラーが発生しました。詳細については、次を参照してください。<dl>
 <dt>Name: &lt;脅威名&gt;</dt> 
 <dt>ID: &lt;脅威 ID&gt;</dt>
 <dt>Severity: &lt;重大度:&gt;、例:<ul>
@@ -1552,10 +1545,7 @@ Microsoft Defender ウイルス対策が署名更新でエラーが発生しま�
 <td>
 ユーザー操作:
 </td>
-<td >
-このエラーは、定義の更新に問題がある場合に発生します。
-このイベントをトラブルシューティングするには:
-<ol>
+<td >このエラーは、定義の更新中に問題が発生した場合に発生します。このイベントのトラブルシューティングを行うには:<ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">定義を更新し</a>、エンドポイントで直接再スキャンを強制します。</li>
 <li>このエラーの詳細については、%Windir%\WindowsUpdate.log ファイルのエントリを確認します。</li>
 <li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
@@ -1693,9 +1683,7 @@ Microsoft Defender ウイルス対策 クライアントが最新の定義ファ
 このイベントをトラブルシューティングするには:
 <ol>
 <li>コンピューターを再起動して、もう一度やり直してください。</li>
-<li><a href="https://aka.ms/wdsi">Microsoft セキュリティ インテリジェンス サイト</a>から最新の定義をダウンロードします。
-注: サイトからダウンロードした定義ファイルのサイズは 60 MB を超える可能性があるため、定義を更新するための長期的なソリューションとして使用しないでください。
-</li>
+<li><a href="https://aka.ms/wdsi">Microsoft セキュリティ インテリジェンス サイト</a> から最新の定義をダウンロードします。注: サイトからダウンロードした定義ファイルのサイズは 60 MB を超える可能性があるため、定義を更新するための長期的なソリューションとして使用しないでください。</li>
 <li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
 </ol>
@@ -2157,9 +2145,7 @@ Microsoft Defender ウイルス対策がウイルス対策をダウンロード�
 <td>
 説明:
 </td>
-<td >
-お客様のオペレーティング システムのサポートはまもなく期限切れになります。 サポート対象外のオペレーティング システムで Microsoft Defender ウイルス対策を実行することは、脅威からの保護に適切なソリューションではありません。
-</td>
+<td >お使いのオペレーティング システムのサポートは間もなく期限切れになります。サポート対象外のオペレーティング システムでMicrosoft Defender ウイルス対策を実行することは、脅威から保護するための適切なソリューションではありません。</td>
 </tr>
 <tr>
 <th colspan="2">イベント ID : 2041</th>
@@ -2183,9 +2169,7 @@ Microsoft Defender ウイルス対策がウイルス対策をダウンロード�
 <td>
 説明:
 </td>
-<td >
-オペレーティング システムのサポートが期限切れです。 サポート対象外のオペレーティング システムで Microsoft Defender ウイルス対策を実行することは、脅威からの保護に適切なソリューションではありません。
-</td>
+<td >お使いのオペレーティング システムのサポートが期限切れになりました。サポート対象外のオペレーティング システムでMicrosoft Defender ウイルス対策を実行することは、脅威から保護するための適切なソリューションではありません。</td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 2042</th>
@@ -2209,9 +2193,7 @@ Microsoft Defender ウイルス対策がウイルス対策をダウンロード�
 <td>
 説明:
 </td>
-<td >
-オペレーティング システムのサポートが期限切れです。 Microsoft Defender ウイルス対策は、お客様のオペレーティング システムではサポートされなくなり、機能を停止しました。マルウェアの脅威から保護されていません。
-</td>
+<td >お使いのオペレーティング システムのサポートが期限切れになりました。Microsoft Defender ウイルス対策はオペレーティング システムでサポートされなくなり、機能しなくなり、マルウェアの脅威から保護されていません。</td>
 </tr>
 <tr>
 <th colspan="2">イベント ID: 3002</th>
@@ -2284,9 +2266,7 @@ Microsoft Defender ウイルス対策クライアントのリアルタイム保�
 <td>
 説明:
 </td>
-<td >
-Microsoft Defender ウイルス対策のリアルタイム保護機能により機能が再起動されました。 このエージェントがダウンしている間に失われた可能性のあるアイテムを検出するためにフル システム スキャンを実行することをおすすめします。
-<dl>
+<td >リアルタイム保護機能が再開されました。システムのフル スキャンを実行して、このエージェントの停止中に失われた可能性のある項目を検出することをお勧めします。<dl>
 <dt>Feature: &lt;機能&gt;、例:
 <ul>
 <li>アクセス時</li>
@@ -2418,9 +2398,7 @@ Microsoft Defender ウイルス対策のリアルタイム保護機能の構成�
 <td>
 説明:
 </td>
-<td >
-Microsoft Defender ウイルス対策の構成が変更されました。 これが予期しないイベントの場合は、マルウェアの結果である可能性があるので、設定を確認する必要があります。
-<dl>
+<td >Microsoft Defender ウイルス対策構成が変更されました。これが予期しないイベントである場合は、マルウェアの結果である可能性があるため、設定を確認する必要があります。<dl>
 <dt>Old value: &lt;古い値の番号&gt; 古いウイルス対策構成の値。</dt>
 <dt>New value: &lt;新しい値の番号&gt; 新しいウイルス対策構成の値。</dt>
 </dl>
@@ -2477,10 +2455,7 @@ Microsoft Defender ウイルス対策エラーが原因でエンジンが終了�
 <td>
 ユーザー操作:
 </td>
-<td >
-予期しないエラーが発生したため、Microsoft Defender ウイルス対策のクライアント エンジンが停止しました。
-このイベントをトラブルシューティングするには:
-<ol>
+<td >予期しないエラーが発生したため、Microsoft Defender ウイルス対策のクライアント エンジンが停止しました。このイベントのトラブルシューティングを行うには:<ol>
 <li>スキャンを再度実行します。</li>
 <li>同じ方法で失敗した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポートサイト</a>に移動し、[<b>検索</b>] ボックスにエラー番号を入力してエラー コードを探します。</li>
 <li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
@@ -2616,7 +2591,7 @@ Microsoft Defender ウイルス対策スキャンが無効になっています�
 説明:
 </td>
 <td >
-改ざん防止が有効になっている場合、ブロックされている場合は Defender の設定を変更しようとすると、イベント ID 5013 が生成され、どの設定変更がブロックされたかが示されます。
+改ざん防止が有効になっている場合、Defender の設定を変更しようとするとブロックされ、イベント ID 5013 が生成され、どの設定の変更がブロックされたかが示されます。
 </td>
 </tr>
 <tr>
@@ -2733,9 +2708,7 @@ Microsoft Defender ウイルス対策の猶予期間の有効期限が切れて�
 <li>定義を更新します。 次のいずれかを行います:<ol>
 <li>Microsoft Defender ウイルス対策の [<b>更新</b>] タブの [<b>定義の更新</b>]ボタンをクリックします。 <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>または、
 </li>
-<li><a href="https://aka.ms/wdsi">Microsoft セキュリティ インテリジェンス サイト</a>から最新の定義をダウンロードします。
-注: サイトからダウンロードした定義ファイルのサイズは 60 MB を超える可能性があるため、定義を更新するための長期的なソリューションとして使用しないでください。
-</li>
+<li><a href="https://aka.ms/wdsi">Microsoft セキュリティ インテリジェンス サイト</a> から最新の定義をダウンロードします。注: サイトからダウンロードした定義ファイルのサイズは 60 MB を超える可能性があるため、定義を更新するための長期的なソリューションとして使用しないでください。</li>
 </ol>
 </li>
 <li>フル スキャンを実行します。
@@ -2821,9 +2794,7 @@ Microsoft Defender ウイルス対策の猶予期間の有効期限が切れて�
 </td></tr><tr><td>考えられる理由</td>
 <td>
 このエラーは、コンテナーの種類内の削除がサポートされていない可能性があることを示します。
-</td></tr><tr><td>解決方法</td><td>
-Microsoft Defender ウイルス対策は、アーカイブ内で検出された脅威を修復できません。 検出されたリソースを手動で削除する方法を検討してください。
-</td>
+</td></tr><tr><td>解決方法</td><td>Microsoft Defender ウイルス対策は、アーカイブ内で検出された脅威を修復できません。検出されたリソースを手動で削除することを検討してください。</td>
 </tr>
 <tr>
 <th colspan="2">エラー コード: 0x80508027
@@ -2857,9 +2828,7 @@ Microsoft Defender ウイルス対策は、アーカイブ内で検出された�
 </td></tr><tr><td>考えられる理由</td>
 <td>
 このエラーは、オフライン スキャンが必要であることを示します。
-</td></tr><tr><td>解決方法</td><td>
-Microsoft Defender ウイルス対策をオフラインで実行します。 これを行う方法については、<a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">オフラインの Microsoft Defender ウイルス対策の記事</a>を参照してください。
-</td>
+</td></tr><tr><td>解決方法</td><td>オフライン Microsoft Defender ウイルス対策を実行します。これを行う方法については、「<a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">オフラインの Microsoft Defender ウイルス対策の記事</a>」 を参照してください。</td>
 </tr>
 <tr>
 <th colspan="2">エラー コード: 0x80508031
@@ -3203,13 +3172,13 @@ Windows 10 と Windows 11 でのみ Microsoft Defender ウイルス対策を使�
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 
 ## <a name="related-topics"></a>関連項目
