@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -24,38 +24,38 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: ユーザーが自分のデバイスMicrosoft 365 PC に持っている会社のデータを削除するために、ビジネスで Windowsする方法を確認します。
-ms.openlocfilehash: 673026b0fdadcf4b7d6b3bac71904cd1afc1d60d
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Microsoft 365 for Business を使用して、ユーザーがデバイスまたは Windows PC に持っている会社のデータを削除する方法をご覧ください。
+ms.openlocfilehash: cda772b3d14b80f3836ef22c4fa941c1636ee0a2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635300"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094181"
 ---
 # <a name="remove-company-data-from-devices"></a>デバイスから会社のデータを削除する
 
-この記事は、ユーザーにMicrosoft 365 Business Premium。
+この記事は Microsoft 365 Business Premium に適用されます。
 
 > [!NOTE]
-> Microsoft Defender for Business 2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 この機能は、デバイスに追加のセキュリティ機能を提供します。 [Defender for Business の詳細については、「Defender for Business」を参照してください](../security/defender-business/mdb-overview.md)。
+> Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細については、こちらをご覧ください](../security/defender-business/mdb-overview.md)。
 
 ## <a name="remove-company-data"></a>会社データを削除する
 
-ビジネス向けMicrosoft 365を使用して、ユーザーがデバイス上に持っている会社のデータや[](m365bp-app-protection-settings-for-android-and-ios.md)、Windows[](m365bp-protection-settings-for-windows-10-devices.md)によって保護されている pc を削除Microsoft 365。 **デバイスから会社データを削除すると、後でデータを復元することはできません** 。 
+Microsoft 365 for Business を使って、ユーザーが Microsoft 365 で保護されている自分の [デバイス](m365bp-app-protection-settings-for-android-and-ios.md)または [Windows PC](m365bp-protection-settings-for-windows-10-devices.md) にある会社データを削除できます。**デバイスから会社データを削除すると、後でデータを復元することはできません**。 
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
     
-2. 左側のナビゲーションで、[デバイスの管理 **] を**\>**選択します**。  
+2. 左側のナビゲーションで、**[デバイス]** \> **[管理]** を選択します。
   
-3. [管理 **] ページ** で、削除するデータを持つユーザーを選択または検索し、名前を選択します。 
+3. **[管理]** ページで、データを削除するユーザーを選択または検索し、名前を選択します。 
     
-4. 次のウィンドウで、[デバイス] リストからデバイスまたはデバイス **を選択** します。 開くデバイス ウィンドウで、デバイスの種類に応じて、デバイスを工場出荷時の設定にリセットするか、会社のデータを削除することができます。 
+4. 次のウィンドウで、**[デバイス]** リストから 1 つまたは複数のデバイスを選択します。 開いたデバイス ウィンドウで、デバイスの種類に応じて、デバイスを工場出荷時の設定にリセットするか、会社のデータを削除するかを選択できます。 
     
-    ![[会社データの削除] ウィンドウで、データを削除するデバイスを選択します。](./../media/resetorremove.png)
+    ![会社データの削除ウィンドウで、データを削除するデバイスを選択します。](./../media/resetorremove.png)
   
-5. 確認ウィンドウで、[閉じる] **を選択** \> **します**。
+5. 確認ウィンドウで、**[確認]** \> **[閉じる]** を選択します。
     
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
+[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)

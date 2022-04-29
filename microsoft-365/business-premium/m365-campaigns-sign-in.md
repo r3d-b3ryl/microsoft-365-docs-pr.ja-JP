@@ -1,14 +1,14 @@
 ---
-title: サインインしてMicrosoft 365
+title: Microsoft 365 にサインインする
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -22,32 +22,43 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: サインインして、Microsoft 365。 電子メール、データ、コミュニケーションに対するサイバーセキュリティの脅威から、ビジネス、プラクティス、またはキャンペーンを保護します。
-ms.openlocfilehash: da371abd17906ea53242c8679cf1d3c4f9b69861
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Microsoft 365 にサインインします。 メール、データ、および通信に対する、サイバーセキュリティの脅威から、ビジネス、実践、またはキャンペーンを保護します。
+ms.openlocfilehash: 4203abe638c15978ac4acd753fdeb6a83ba5920d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634055"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099853"
 ---
-# <a name="sign-in-to-microsoft-365-business-premium"></a>サインインしてMicrosoft 365 Business Premium
+# <a name="sign-in-to-microsoft-365-business-premium"></a>Microsoft 365 Business Premium にサインインする
 
-## <a name="for-business-or-campaign-admins"></a>ビジネス管理者またはキャンペーン管理者向け
+## <a name="for-business-or-campaign-admins"></a>ビジネスまたはキャンペーン管理者向け
 
-アカウントにサインアップしたMicrosoft 365は、管理者Microsoft 365です。サインインする方法を次に示します。
+Microsoft 365 for Campaigns (または Microsoft 365 Business Premium) にサインアップした場合は、Microsoft 365 管理者 (グローバル管理者とも呼ばれます) です。 サインインする方法は次のとおりです。
 
-1. サインアップする手順 2 の手順 2 で、メール アドレスに送信したユーザー名とパスワード [を確認します](m365-campaigns-sign-up.md#steps-to-sign-up)。
+1. [Microsoft 365 for Campaigns にサインアップ](m365-campaigns-sign-up.md)したときに使用したメール アドレスに送信されたユーザー名とパスワードを見つけます。
 
-2. ブラウザーで、次のページにMicrosoft 365 管理センターします<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。
+2. ブラウザーで、<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> の Microsoft 365 管理センターに移動します。
 
 3. ユーザー名とパスワードを入力します。 [**サインイン**] を選びます。
 
-4. ページの上部にある [プレビュー] コントロール **を探** します。 [ **プレビューオン] を** 選択すると、「バンプアップ保護」で説明されている [すべてのコントロールをキャンペーンに使用できます](m365-campaigns-security-overview.md)。
+4. ページの右上で、コントロールの [**プレビュー**] を見つけます。 [[キャンペーンのバンプアップ保護](m365-campaigns-security-overview.md)] で説明されているすべてのコントロールを使用できるように、[**プレビュー**] を選択します。
 
 ## <a name="for-staff"></a>スタッフ向け
 
-「ユーザーの追加」の説明に従ってスタッフ [を設定する](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json)
+Microsoft 365 for Campaigns (または Microsoft 365 Business Premium) サブスクリプションに追加されたユーザーは、次の手順に従ってサインインできます。
 
-[ユーザーの追加] ページでパスワードをリセットして **再送信** することもできます。
+1. <a href="https://office.com" target="_blank">https://Office.com</a> に移動します。
 
-すべてのスタッフがでサインインできます <a href="https://office.com" target="_blank">https://Office.com</a>。
+2. アカウントのユーザー名とパスワードを使用してサインインします。 ユーザーは、ユーザーとして追加されたときに受信するはずのメールにこの情報が含まれています。 メールが見つからない場合は、「[招待メールを共有しましたが、ユーザーがメールを受信しませんでした](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email)」を参照してください。
+
+> [!TIP]
+> [従業員クイック セットアップ ガイド](../admin/setup/employee-quick-setup.md)へのリンクをスタッフに提供します。 このガイドでは、サインイン、Office アプリの取得、ファイルの保存、コピー、共有について説明します。
+
+## <a name="next-steps"></a>次の手順
+
+1. [プライバシーと同意の通知を使用してサインイン ページをカスタマイズする](m365-customize-sign-in.md)
+
+2. [基本セットアップのためのガイド付き手順を使用する](m365bp-setup.md#use-the-guided-process-for-basic-setup)
+
+3. [セキュリティ機能を設定します](m365bp-security-overview.md)。

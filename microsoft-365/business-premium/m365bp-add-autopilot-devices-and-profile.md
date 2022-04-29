@@ -12,7 +12,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - Adm_TOC
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -26,81 +26,78 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: AutoPilot Windowsを使用して、従業員が使用できる状態Windows 10新しいデバイスをセットアップする方法について学習します。
-ms.openlocfilehash: a50fb8276ad8edd0106cbc123d05fd720808de81
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Windows AutoPilot を使用して、ビジネス用に新し いWindows 10 デバイスをセットアップし、従業員が使用できるようにする方法を学びます。
+ms.openlocfilehash: 6bedb478d0ef8f961c7b75eb7013b2b5e51ce2c9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635413"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092609"
 ---
-# <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
+# <a name="use-this-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
 
 > [!NOTE]
-> Microsoft Defender for Business 2022 年 3 月 1 日からMicrosoft 365 Business Premium顧客に展開しています。 この機能は、デバイスに追加のセキュリティ機能を提供します。 [データのMicrosoft Defender for Business](../security/defender-business/mdb-overview.md)。
+> Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Microsoft Defender for Business の概要](../security/defender-business/mdb-overview.md)。
 
-AutoPilot Windowsを使用して、ビジネス用の新しい  Windows 10 デバイスをセットアップして、従業員に提供するときに使用できる状態にできます。
+Windows AutoPilot を使用して、ビジネス用に **新しい** Windows 10 デバイスをセットアップし、従業員に提供するときにすぐに使用できるようにすることができます。
   
 ## <a name="device-requirements"></a>デバイスの要件
 
-デバイスは、次の要件を満たす必要があります。
+デバイスは次の要件を満たしている必要があります。
   
-- Windows 10バージョン 1703 以降
-    
-- 最新のエクスペリエンスをWindowsした新しいデバイス
-    
-## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>セットアップ ガイドを使用して、デバイスとプロファイルを作成する
+- Windows 10 バージョン 1703 以降
 
-デバイス グループまたはプロファイルをまだ作成していない場合は、ステップ バイ ステップ ガイドを使用して開始してください。 ガイドを使用[せずに、AutoPilot デバイス](m365bp-create-and-edit-autopilot-devices.md)を追加してプロファイルを割り当てすることもできます。[](../admin/devices/create-and-edit-autopilot-profiles.md) 
+- Windows out-of-box experience を行っていない新しいデバイス
+
+## <a name="use-the-setup-guide-to-add-devices-and-profiles"></a>セットアップ ガイドを使用して、デバイスとプロファイルを作成する
+
+まだデバイス グループまたはプロファイルが作成されていない場合は、ステップ バイ ステップ ガイドを使用して開始するのが最適な方法ですが、ガイドを使用せずに、[デバイスを追加](m365bp-create-and-edit-autopilot-devices.md)して[プロファイルを割り当てる](../admin/devices/create-and-edit-autopilot-profiles.md)こともできます。
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
 
-2. 左側のナビゲーション ウィンドウで、[デバイスの **自動操縦]** \> **を選択します**。
+1. 左側のナビゲーション ウィンドウで **[デバイス]** \> **[AutoPilot]** の順に選びます。 
 
-    ![管理センターで、[デバイス] を選択し、[自動パイロット] を選択します。](../media/AutoPilot.png)
+    ![管理センターでデバイスを選択し、AutoPilot を選択します。](../media/AutoPilot.png)
   
-2. [自動 **パイロット] ページで** 、[スタート ガイド] をクリックまたは **タップします**。
-    
+1. **[AutoPilot]** ページで、**[スタート ガイド]** をクリックまたはタップします。
+
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. [デバイスの **アップロード .csv** を含むファイル] ページで、準備されたファイルがある場所を参照.CSV、[次へ] を **開** \> **きます**。 ファイルには 3 つのヘッダーが必要です。
-    
+1. **[デバイスの一覧を含む .csv ファイルのアップロード]** ページで、準備した .CSV ファイルがある場所を参照して、**[開く]** \> **[次へ]** の順に選択します。ファイルには次の 3 つのヘッダーがあります。 
+
     - 列 A:デバイスのシリアル番号
-    
     - 列 B:Windows 製品 ID
-    
     - 列 C:ハードウェア ハッシュ
-    
-    この情報は、ハードウェア ベンダーから取得するか、 [Get-WindowsAutoPilotInfo PowerShell](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) スクリプトを使用して CSV ファイルを生成できます。 
-    
-    詳細については、[デバイスの一覧の CSV ファイル](../admin/misc/device-list.md)を参照してください。また、[ **デバイスの一覧を含む .csv ファイルのアップロード**] ページでサンプル ファイルをダウンロードすることもできます。 
-    
+
+この情報は、ハードウェアの製造元から、または CSV ファイルを生成する [Get-WindowsAutoPilotInfo PowerShell スクリプト](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) を使って、入手できます。
+
+詳細については、[デバイスの一覧の CSV ファイル](../admin/misc/device-list.md)を参照してください。また、[ **デバイスの一覧を含む .csv ファイルのアップロード**] ページでサンプル ファイルをダウンロードすることもできます。
+
 > [!NOTE]
-> このスクリプトでは、WMI を使用して、ユーザーがデバイスを自動パイロットに登録するために必要Windowsします。 デバイスの登録には必須ではなく、出力 CSV で PKID が NULL である場合は完全に問題ありませんので、結果の CSV ファイルが Windows 製品 ID (PKID) 値を収集しないのは正常です。 シリアル番号とハードウェア ハッシュだけが設定されます。
-    
-4. [プロファイルの **割り当て] ページ** で、既存のプロファイルを選択するか、新しいプロファイルを作成できます。 まだ作成していない場合は、作成を求めるメッセージが表示されます。 
-    
+> このスクリプトは、WMIを 使用して、顧客がデバイスを Windows Autopilot に登録するために必要なプロパティを取得します。 結果の CSV ファイルが Windows 製品 ID (PKID) 値を収集しないのは通常のことです。これは、デバイスを登録するために必要ではなく、出力 CSV で PKID が NULL であってもまったく問題がないためです。 シリアル番号とハードウェア ハッシュのみが設定されます。
+
+4. **[プロファイルの割り当て]** ページで、既存のプロファイルを選択するか、新しいプロファイルを作成します。まだプロファイルがない場合は、作成するように求めるメッセージが表示されます。
+
     プロファイルは、1 つのデバイスまたはデバイスのグループに適用できる設定のコレクションです。
-    
-    既定の機能は必須であり、自動的に設定されます。 既定の機能は次のとおりです。
-    
-    - [Cortana、OneDrive OEM 登録をスキップします。
-    
+
+    既定の機能は必須であり、自動的に設定されます。既定の機能は次のとおりです。
+
+    - Cortana、OneDrive、OEM の登録のスキップ。
+
     - 会社のブランドを含む、サインイン エクスペリエンスを作成します。
-    
-    - ConnectをアカウントにAzure Active Directoryし、デバイスによって管理されるアカウントを自動的に登録Microsoft 365 Business Premium。
-    
-    詳細については、「 [概要 - AutoPilot Profile settings」を参照してください](m365bp-autopilot-profile-settings.md)。 
-    
-5. 他の設定には、[ **プライバシーの設定をスキップする**] や [ **ユーザーがローカルの管理者になることを許可しない**] があります。既定では、両方が [ **オフ**] に設定されます。 
-    
+
+    - デバイスを Azure Active Directory アカウントに接続し、Microsoft 365 Business Premium によって管理されるようにデバイスを自動的に登録します。
+
+    詳細については、「 [AutoPilot プロファイルの設定について](m365bp-autopilot-profile-settings.md)」を参照してください。
+
+5. 他の設定には、[ **プライバシーの設定をスキップする**] や [ **ユーザーがローカルの管理者になることを許可しない**] があります。既定では、両方が [ **オフ**] に設定されます。
+
     [ **次へ**] を選びます。
-    
-6. **完了すると、** 作成した (または選択した) プロファイルが、デバイスの一覧をアップロードして作成したデバイス グループに適用されます。 設定は、デバイス ユーザーが次にサインインするときに有効になります。 **[閉じる]** を選択します。
+
+6. **[完了しました]** では、作成 (または選択) したプロファイルが、デバイスの一覧をアップロードして作成したデバイス グループに適用されることを示しています。デバイスのユーザーが次にサインインすると、これらの設定が有効になります。**[閉じる]** を選びます。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-- [概要 - AutoPilot プロファイルの設定](../business-premium/m365bp-autopilot-profile-settings.md) (記事)\
-
+- [AutoPilot プロファイルの設定について](../business-premium/m365bp-autopilot-profile-settings.md)
 - [デバイスとアプリ データを保護するためのオプション](../admin/devices/choose-device-security.md) (記事)
-- [ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
+- [ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)

@@ -15,18 +15,20 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: cc2032c547cbd9c75a73da2f47f7baed21e7438e
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 6822f736cae73d7d4654f8b4310e0e397cffa677
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835933"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077485"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する
+
+> [!IMPORTANT]
+> 2022 年 3 月の Microsoft Defender エンジン更新プログラム (**1.1.19100.5**) を適用したお客様は、高いリソース使用率 (CPU またはメモリ) が発生した可能性があります。 Microsoft は、以前のバージョンで導入されたバグを解決する更新プログラム (**1.1.19200.5**) をリリースしました。 お客様は、ウイルス対策エンジン (**1.1.19200.5**) のこの新しいエンジン ビルドに更新することをお勧めします。 パフォーマンスの問題が完全に修正されるようにするには、更新プログラムを適用した後にマシンを再起動することをお勧めします。 [月次プラットフォームとエンジンのバージョン](#monthly-platform-and-engine-versions) (この記事の内容) を参照してください。
 
 **適用対象:**
 - [Microsoft Defender for Endpoint プラン 1 と 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -37,8 +39,8 @@ ms.locfileid: "64835933"
 
 Microsoft Defender ウイルス対策を最新の状態に保つことは、新しいマルウェアや攻撃手法から保護するために必要な最新のテクノロジと機能をデバイスに確実に提供するために不可欠です。 Microsoft Defender ウイルス対策が[パッシブ モード](microsoft-defender-antivirus-compatibility.md)で実行されている場合でも、ウイルス対策保護を更新してください。 Microsoft Defender ウイルス対策を最新の状態に保つことに関連する更新プログラムには、次の 2 種類があります。
 
-- セキュリティ インテリジェンスの更新プログラム
-- 製品の更新プログラム
+- [セキュリティ インテリジェンスの更新プログラム](#security-intelligence-updates)
+- [製品の更新プログラム](#product-updates)
 
 > [!TIP]
 > 最新のエンジン、プラットフォーム、署名の日付を確認するには、「[Microsoft Defender ウイルス対策とその他の Microsoft マルウェア対策のためのセキュリティ インテリジェンスの更新プログラム](https://www.microsoft.com/en-us/wdsi/defenderupdates)」にアクセスしてください
@@ -88,6 +90,29 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 - 統合の改善 (クラウド、[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>2022 年 3 月 *更新プログラム* (プラットフォーム: 4.18.2203.5 | エンジン: 1.1.19200.5)</summary>
+
+*2022 年 3 月の Microsoft Defender エンジン更新プログラム (**1.1.19100.5**) を適用したお客様は、高いリソース使用率 (CPU またはメモリ) が発生した可能性があります。Microsoft は、以前のバージョンで導入されたバグを解決する更新プログラム (**1.1.19200.5**) をリリースしました。お客様は、ウイルス対策エンジン (**1.1.19200.5**) のこの新しいエンジン ビルドに更新することをお勧めします。パフォーマンスの問題が完全に修正されるようにするには、更新プログラムを適用した後にマシンを再起動することをお勧めします。*
+
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.363.817.0**<br/>
+&ensp;リリース日: **2022 年 4 月 22 日**<br/>
+&ensp;プラットフォーム: **4.18.2203.5**<br/>
+&ensp;エンジン: **1.1.19200.5**<br/>
+&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
+
+エンジン バージョン: 1.1.19200.5 <br/>
+セキュリティ インテリジェンス更新プログラムのバージョン: 1.363.817.0<br/>
+
+### <a name="whats-new"></a>新機能
+
+- 2022 年 3 月以前の Microsoft Defender エンジン更新プログラム (1.1.19100.5) に関連する高いリソース使用率 (CPU またはメモリ) に関する問題を解決します
+
+### <a name="known-issues"></a>既知の問題
+
+既知の問題はありません
+
+<br/><br/>
+</details><details>
 <summary>2022 年 3 月 (プラットフォーム: 4.18.2203.5 | エンジン: 1.1.19100.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.361.1449.0**<br/>
