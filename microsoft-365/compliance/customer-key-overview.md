@@ -1,5 +1,5 @@
 ---
-title: カスタマー キーによるサービスの暗号化
+title: Microsoft Purview カスタマー キーを使用したサービスの暗号化
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,15 +14,17 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: この記事では、Microsoft 365の Customer Key でのサービス暗号化のしくみについて説明します。
-ms.openlocfilehash: 65098994a6883fdadd3106b74b25a2251239fb3a
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: この記事では、Microsoft Purview カスタマー キーでのサービス暗号化のしくみについて説明します。
+ms.openlocfilehash: efb82a38c2f3a2e07d695425f36a17eebdbdf5ec
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761089"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145214"
 ---
-# <a name="service-encryption-with-customer-key"></a>カスタマー キーによるサービスの暗号化
+# <a name="service-encryption-with-microsoft-purview-customer-key"></a>Microsoft Purview カスタマー キーを使用したサービスの暗号化
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365では、BitLocker と分散キー マネージャー (DKM) を使用して、ベースラインのボリューム レベルの暗号化が有効になります。 Microsoft 365では、コンテンツの暗号化レイヤーが追加されます。 このコンテンツには、Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、Microsoft Teamsからのデータが含まれます。
 
@@ -40,7 +42,7 @@ Customer Key では、クラウド内の保存データのみが暗号化され�
 
 ## <a name="about-data-encryption-policies"></a>データ暗号化ポリシーについて
 
-データ暗号化ポリシー (DEP) は、暗号化階層を定義します。 この階層は、管理する各キーと Microsoft によって保護されている可用性キーを使用してデータを暗号化するためにサービスによって使用されます。 PowerShell コマンドレットを使用して DEP を作成し、それらの DEP を割り当ててアプリケーション データを暗号化します。 Microsoft 365 Customer Key でサポートされている DEP には 3 種類あり、ポリシーの種類ごとに異なるコマンドレットが使用され、異なる種類のデータに対するカバレッジが提供されます。 定義できる DEP は次のとおりです。
+データ暗号化ポリシー (DEP) は、暗号化階層を定義します。 この階層は、管理する各キーと Microsoft によって保護されている可用性キーを使用してデータを暗号化するためにサービスによって使用されます。 PowerShell コマンドレットを使用して DEP を作成し、それらの DEP を割り当ててアプリケーション データを暗号化します。 カスタマー キーでサポートされている DEP には 3 種類あり、ポリシーの種類ごとに異なるコマンドレットが使用され、異なる種類のデータに対するカバレッジが提供されます。 定義できる DEP は次のとおりです。
 
 **複数のMicrosoft 365 ワークロードの DEP** これらの DEP は、テナント内のすべてのユーザーに対して複数の M365 ワークロード間でデータを暗号化します。 これらのワークロードには、次のものが含まれます。
 
@@ -52,7 +54,8 @@ Customer Key では、クラウド内の保存データのみが暗号化され�
 - 状態メッセージをTeamsする
 - Exchange Onlineのユーザーとシグナルの情報
 - メールボックス DEP によってまだ暗号化されていないメールボックスをExchange Onlineする
-- Microsoft Information Protection:
+- 統合監査ログ ストレージ
+- Microsoft Purview Information Protection:
 
   - データ ファイル スキーマ、ルール パッケージ、機密データのハッシュに使用される塩分を含む、完全なデータ一致 (EDM) データ。 EDM とMicrosoft Teamsの場合、マルチワークロード DEP は、DEP をテナントに割り当てた時点から新しいデータを暗号化します。 Exchange Onlineの場合、Customer Key は既存のデータと新しいデータをすべて暗号化します。
 

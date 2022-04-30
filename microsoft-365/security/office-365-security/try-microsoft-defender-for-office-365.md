@@ -19,17 +19,14 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: c65d5b9c73204de1ad537ce5bb1c05b09bc8df32
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 716a3a0255074a1180d01bbe0e3ef5067e7a31cf
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847033"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145230"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365を試す
-
-> [!NOTE]
-> この記事で説明する機能はプレビュー版であり、一部の組織では使用できず、変更される可能性があります。
 
 Microsoft 365 Defender ポータルの統合 **試用版** ポータルでは、Microsoft Defender for Office 365に対する以前の個別の試用版と評価エクスペリエンスの 1 つのエントリ ポイントが提供されます。 目的は、完全にコミットする前に、Defender for Office 365 プラン 2 の機能を 90 日間試してみることです。 ただし、Microsoft 365組織の性質に基づいて、評価エクスペリエンスには違いがあります。
 
@@ -48,6 +45,8 @@ Microsoft 365 Defender ポータルの統合 **試用版** ポータルでは、
 Microsoft 365 Defender ポータル<https://security.microsoft.com>のさまざまなDefender for Office 365機能の場所で試用版を開始するよう招待されます。 試用版を開始するための一元的な場所は、[ **試用版** ] ページの [ <https://security.microsoft.com/atpEvaluation>.
 
 この記事の残りの部分では、監査モードのブロック モード、評価の構成方法、およびその他の詳細の違いについて説明します。
+
+試用版の使用方法に関するコンパニオン ガイドについては、「[試用版プレイブック: Microsoft Defender for Office 365](trial-playbook-defender-for-office-365.md)」を参照してください。
 
 ## <a name="overview-of-defender-for-office-365"></a>Defender for Office 365の概要
 
@@ -99,10 +98,10 @@ Defender for Office 365を評価すると、Microsoft 365の保護機能を制�
 
    - **すべてのユーザー**: これが既定の推奨オプションです。
    - **ユーザーの選択**: このオプションを選択した場合は、評価が適用される内部受信者を選択する必要があります。
-     - **ユーザー**: 指定したメールボックス、メール ユーザー、またはメール連絡先。
-     - **グループ**:
-       - 指定した配布グループまたはメールが有効なセキュリティ グループのメンバー。
-       - 指定したMicrosoft 365 グループ。
+     - **ユーザー**: 指定されたメールボックス、メール ユーザー、またはメール連絡先。
+     - **グループ**: 
+       - 指定された配布グループまたはメールが有効なセキュリティ グループのメンバー。
+       - 指定した Microsoft 365 グループ。
        - **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
 
      適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
@@ -170,10 +169,10 @@ Defender for Office 365を評価すると、Microsoft 365の保護機能を制�
 
    - **すべてのユーザー**: これが既定の推奨オプションです。
    - **ユーザーの選択**: このオプションを選択した場合は、評価が適用される内部受信者を選択する必要があります。
-     - **ユーザー**: 指定したメールボックス、メール ユーザー、またはメール連絡先。
-     - **グループ**:
-       - 指定した配布グループまたはメールが有効なセキュリティ グループのメンバー。
-       - 指定したMicrosoft 365 グループ。
+     - **ユーザー**: 指定されたメールボックス、メール ユーザー、またはメール連絡先。
+     - **グループ**: 
+       - 指定された配布グループまたはメールが有効なセキュリティ グループのメンバー。
+       - 指定した Microsoft 365 グループ。
      - **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
 
      適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
@@ -284,7 +283,7 @@ Microsoft 365 Defender ポータルでのAzure ADアクセス許可の詳細に�
 
 |設定|値|
 |---|---|
-|アクション|許可|
+|Action|許可|
 |ActionOnError|はい|
 |AdminDisplayName|評価ポリシー|
 |ConfidenceLevelThreshold|80|
