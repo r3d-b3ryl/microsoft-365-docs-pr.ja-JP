@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: この記事では、認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: 43db59e0380f99a2312fd803970a73013445504a
-ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+ms.openlocfilehash: bd153d34e6e9ddc4a4b627a79df90286661353d3
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65015048"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128590"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 
@@ -61,7 +61,11 @@ ms.locfileid: "65015048"
 
 *[すべてのユーザー]* リンクの有効期限が切れても、新しい *[すべてのユーザー]* リンクを使用してファイルやフォルダーを再共有できることにご注意ください。
 
-[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) を使用して、特定の OneDrive での *[すべてのユーザー]* リンクの有効期限を設定できます。
+[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) を使用して、特定のサイトでの *[すべてのユーザー]* リンクの有効期限を設定できます。 
+
+```powershell
+Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTenantAnonymousLinkExpirationPolicy $true -AnonymousLinkExpirationInDays 15
+```
 
 ## <a name="set-link-permissions"></a>リンクのアクセス許可を設定する
 
@@ -165,4 +169,4 @@ Microsoft Purview 管理センターで秘密度ラベルを使用する場合�
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](share-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
+[セキュリティで保護されたゲスト共有の環境を作成する](create-secure-guest-sharing-environment.md)

@@ -29,6 +29,8 @@
               href: ../admin/setup/setup-business-standard.md
             - name: Microsoft 365 Business Standard にユーザーを招待する
               href: ../admin/simplified-signup/admin-invite-business-standard.md
+            - name: Microsoft 365 for business とは
+              href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
             - name: Microsoft 365 Business Standard への招待メールを承諾する
               href: ../admin/simplified-signup/user-invite-business-standard.md
             - name: Outlook、Yahoo、Gmail、またはその他のアカウントを使用して、Microsoft 365 Business Standard サブスクリプション組織への招待メールを承諾する

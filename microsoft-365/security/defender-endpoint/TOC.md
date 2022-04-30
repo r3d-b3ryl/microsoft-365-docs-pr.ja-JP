@@ -251,7 +251,8 @@
 ##### [イベントのタイムライン](threat-and-vuln-mgt-event-timeline.md)
 ##### [脆弱なデバイスのレポート](tvm-vulnerable-devices-report.md)
 ##### [露出したデバイスの追求](tvm-hunt-exposed-devices.md)
-
+#### [アクティブな脅威とキャンペーンの開始ガイダンス]()
+##### [Log4Shell の脆弱性を管理する](tvm-manage-log4shell-guidance.md)
 ### [デバイス検出]()
 #### [デバイス検出の概要](device-discovery.md)
 #### [デバイス検出の構成](configure-device-discovery.md)

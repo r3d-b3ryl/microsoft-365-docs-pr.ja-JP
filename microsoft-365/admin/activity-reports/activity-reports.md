@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: aa1cdf4b8fa6c1d558b005eb80031a20be4872af
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4757cf72653ffad2caeba45c99d3aabe61517ee4
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65088848"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144643"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -87,35 +87,35 @@ ms.locfileid: "65088848"
 
 |**Report**|**Public**|**GCC**|**GCC-High**|**DoD**|**21Vianet が運用している Office 365**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|[Microsoft ブラウザーの使用法](browser-usage-report.md)|はい|いいえ [^1]|いいえ [^1]|いいえ [^1]|いいえ [^1]|
+|[Microsoft ブラウザーの使用法](browser-usage-report.md)|はい|いいえ<sup>1</sup>|いいえ<sup>1</sup>|いいえ<sup>1</sup>|いいえ<sup>1</sup>|
 |[メール アクティビティ](email-activity-ww.md)|はい|はい|はい|はい|はい|
 |[メール アプリの利用状況](email-apps-usage-ww.md)|はい|はい|はい|はい|はい|
 |[メールボックス使用状況](mailbox-usage.md)|はい|はい|はい|はい|はい|
 |[Office ライセンス認証数](microsoft-office-activations-ww.md)|はい|はい|はい|はい|はい|
 |[アクティブなユーザー](active-users-ww.md)|はい|はい|はい|はい|はい|
 |[Microsoft 365 グループ](office-365-groups-ww.md)|はい|はい|はい|はい|はい|
-|[Microsoft 365 Apps の使用法](microsoft365-apps-usage-ww.md)|はい|はい|いいえ [^1]|いいえ [^1]|はい
+|[Microsoft 365 Apps の使用法](microsoft365-apps-usage-ww.md)|はい|はい|いいえ<sup>1</sup>|いいえ<sup>1</sup>|はい
 |[OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity-ww.md)|はい|はい|はい|はい|はい|
 |[OneDrive for Business の利用状況](onedrive-for-business-usage-ww.md)|はい|はい|はい|はい|はい|
 |[SharePoint サイトの利用状況](sharepoint-site-usage-ww.md)|はい|はい|はい|はい|はい|
 |[SharePoint のアクティビティ](sharepoint-activity-ww.md)|はい|はい|はい|はい|はい|
-|[Microsoft Teams ユーザー アクティビティ](microsoft-teams-user-activity-preview.md)|はい|はい|はい|はい|該当なし [^2]|
-|[Microsoft Teams デバイスの利用状況](microsoft-teams-device-usage-preview.md)|はい|はい|はい|はい|該当なし [^2]|
-|[Microsoft Teams の利用状況](microsoft-teams-usage-activity.md)|はい|はい|該当なし|該当なし|N/A|
-|[Yammer アクティビティ](yammer-activity-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
-|[Yammer デバイスの使用状況](yammer-device-usage-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
-|[Yammer のグループ アクティビティ レポート](yammer-groups-activity-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
-|[フォームのアクティビティ](forms-activity-ww.md)|はい|はい|いいえ [^1]|いいえ [^1]|いいえ [^1]|
-|[Dynamics 365 顧客音声アクティビティ](forms-pro-activity-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
-|[Skype for Business Online のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
-|[Skype for Business Online の電話会議開催者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
-|[Skype for Business Online の電話会議参加者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
-|[Skype for Business Online のピアツーピア アクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
+|[Microsoft Teams ユーザー アクティビティ](microsoft-teams-user-activity-preview.md)|はい|はい|はい|はい|該当なし <sup>2</sup>|
+|[Microsoft Teams デバイスの利用状況](microsoft-teams-device-usage-preview.md)|はい|はい|はい|はい|該当なし <sup>2</sup>|
+|[Microsoft Teams の利用状況](microsoft-teams-usage-activity.md)|はい|はい|はい|はい|該当なし <sup>2</sup>|
+|[Yammer アクティビティ](yammer-activity-report-ww.md)|はい|はい|該当なし <sup>2</sup>|該当なし <sup>2</sup>|該当なし <sup>2</sup>|
+|[Yammer デバイスの使用状況](yammer-device-usage-report-ww.md)|はい|はい|該当なし <sup>2</sup>|該当なし <sup>2</sup>|該当なし <sup>2</sup>|
+|[Yammer のグループ アクティビティ レポート](yammer-groups-activity-report-ww.md)|はい|はい|該当なし <sup>2</sup>|該当なし <sup>2</sup>|該当なし <sup>2</sup>|
+|[フォームのアクティビティ](forms-activity-ww.md)|はい|はい|いいえ<sup>1</sup>|いいえ<sup>1</sup>|いいえ<sup>1</sup>|
+|[Dynamics 365 顧客音声アクティビティ](forms-pro-activity-ww.md)|はい|はい|該当なし <sup>2</sup>|該当なし <sup>2</sup>|該当なし <sup>2</sup>|
+|[Skype for Business Online のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|はい|はい|いいえ<sup>1</sup>|いいえ<sup>1</sup>|はい|
+|[Skype for Business Online の電話会議開催者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|はい|はい|いいえ<sup>1</sup>|いいえ<sup>1</sup>|はい|
+|[Skype for Business Online の電話会議参加者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|はい|はい|いいえ<sup>1</sup>|いいえ<sup>1</sup>|はい|
+|[Skype for Business Online のピアツーピア アクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|はい|はい|いいえ<sup>1</sup>|いいえ<sup>1</sup>|はい|
 |[Viva ラーニング アクティビティ](viva-learning-activity.md)|はい|該当なし|該当なし|該当なし|該当なし|
 |[Viva インサイト アクティビティ](viva-insights-activity.md)|はい|はい|該当なし|該当なし|該当なし|
 
-[^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
-[^2]: The service is not available in the environment so no plan to release the report.
+該当なし <sup>1</sup>: レポートは将来リリースされる予定です。 <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 ロードマップ</a> はリリース前に更新されます。
+該当なし <sup>2</sup>: このサービスは環境内で使用できないため、レポートをリリースする予定はありません。
 
 ## <a name="how-to-view-licensing-information"></a>ライセンス情報を表示する方法
 

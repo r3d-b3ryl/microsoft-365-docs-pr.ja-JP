@@ -453,6 +453,8 @@
               href: ome-sensitive-info-types.md
             - name: メッセージの暗号化を管理する
               href: manage-office-365-message-encryption.md
+            - name: 暗号化されたメッセージ ポータル アクティビティ ログ
+              href: ome-message-access-logs.md
             - name: 高度なメッセージの暗号化
               href: ome-advanced-message-encryption.md
             - name: Microsoft Purview の高度なメッセージの暗号化を使って暗号化されたメールの有効期限を設定する
@@ -467,6 +469,8 @@
               href: exchange-online-secures-email-secrets.md
             - name: Office 365 でメール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
               href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: MTA-STS を使用したメール フローの強化
+              href: enhancing-mail-flow-with-mta-sts.md
             - name: SMTP DANE のしくみ
               href: how-smtp-dane-works.md
             - name: BitLocker と Distributed Key Manager (DKM) による暗号化

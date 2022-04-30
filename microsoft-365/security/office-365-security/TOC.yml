@@ -308,6 +308,14 @@
           href: remediate-malicious-email-delivered-office-365.md
         - name: 侵害された Office 365 電子メール アカウントへの対応
           href: responding-to-a-compromised-email-account.md
+        - name: 侵害されたコネクタに対応する
+          href: respond-compromised-connector.md
+        - name: ブロックされたエンティティを削除する
+          items:
+            - name: ブロックされたユーザーを削除する
+              href: removing-user-from-restricted-users-portal-after-spam.md
+            - name: ブロックされたコネクタを削除する
+              href: remove-blocked-connectors.md
         - name: 保留中のアクションを確認して承認 (または拒否) する
           href: air-review-approve-pending-completed-actions.md
         - name: フィッシング対策保護を調整する
@@ -320,8 +328,6 @@
           href: quarantine-policies.md
         - name: 共有メールボックスから検疫済みメッセージを解放する
           href: view-and-release-quarantined-messages-from-shared-mailboxes.md
-        - name: 制限されたユーザー ポータルからブロックされたユーザーを削除する
-          href: removing-user-from-restricted-users-portal-after-spam.md
         - name: 無効化ポータルを使って、受信拒否リストから自分自身を削除する
           href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
     - name: FAQ
