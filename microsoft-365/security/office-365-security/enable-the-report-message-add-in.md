@@ -17,12 +17,12 @@ ms.collection:
 description: OutlookとOutlook on the web、個々のユーザー、または組織全体に対して、レポート メッセージまたはレポート フィッシング アドインを有効にする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14d59cbe6f3f98aabc231da88e4f0919a3974c97
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a4166b36888c96b12a8aa410848c392c2afdaeb5
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973225"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144841"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>メッセージのレポートまたはフィッシング アドインのレポートを有効にする
 
@@ -61,7 +61,7 @@ Microsoft はこれらの提出を使用して、電子メール保護テクノ�
 
 - 両方のアドインは、共有メールボックスでは使用できません。
 
-- どちらのアドインも、オンプレミスのExchangeメールボックスでは使用できません。 
+- どちらのアドインも、オンプレミスのExchangeメールボックスでは使用できません。
 
 - 既存の Web ブラウザーは、レポート メッセージ アドインとレポート フィッシング アドインの両方で動作する必要があります。ただし、アドインが使用できない、または期待どおりに動作していない場合は、別のブラウザーを試してください。
 
@@ -81,7 +81,7 @@ Microsoft はこれらの提出を使用して、電子メール保護テクノ�
 
 2. [ **今すぐ入手]** をクリックします。
 
-   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="Get It Now レポート メッセージ" lightbox="../../media/ReportMessageGETITNOW.png":::
+   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="Get It Now レポート メッセージ。" lightbox="../../media/ReportMessageGETITNOW.png":::
 
 3. 表示されるダイアログで、使用条件とプライバシー ポリシーを確認し、[ **続行**] をクリックします。
 
@@ -92,7 +92,7 @@ Microsoft はこれらの提出を使用して、電子メール保護テクノ�
 - Outlookでは、アイコンは次のようになります。
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="Outlookのレポート メッセージ アドイン アイコン" lightbox="../../media/OutlookReportMessageIcon.png":::
+    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="Outlookのレポート メッセージ アドイン アイコン。" lightbox="../../media/OutlookReportMessageIcon.png":::
 
 - Outlook on the webでは、アイコンは次のようになります。
 
@@ -107,21 +107,21 @@ Microsoft はこれらの提出を使用して、電子メール保護テクノ�
 1. [Microsoft 365 管理センター](https://admin.microsoft.com/AdminPortal/Home?#/homepage)で、**統合アプリ****の設定**\>に移動します。 [ **アプリの取得**] をクリックします。
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Microsoft 365 管理センター統合アプリ" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Microsoft 365 管理センター統合アプリ。" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-2. 表示 **された [Microsoft 365 Apps**] ページで、[**検索**] ボックスをクリックし、「**レポート メッセージ」** と入力して、[**検索**![] アイコンをクリックします](../../media/search-icon.png)。 結果の一覧で、 **レポート メッセージ** を見つけて選択します。 
+2. 表示 **された [Microsoft 365 Apps**] ページで、[**検索**] ボックスをクリックし、「**レポート メッセージ」** と入力して、[**検索**![] アイコンをクリックします](../../media/search-icon.png)。 結果の一覧で、 **レポート メッセージ** を見つけて選択します。
 
-3. アプリの詳細ページが開きます。 [ **今すぐ取得]** を選択します。 
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="レポート メッセージ アドイン" lightbox="../../media/microsoft-365-admin-center-report-message.png":::
-
-4. 基本的なプロファイル情報を入力し、[ **続行**] をクリックします。 
+3. アプリの詳細ページが開きます。 [ **今すぐ取得]** を選択します。
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="レポート メッセージ アドイン プロファイルの設定" lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="レポート メッセージ アドイン。" lightbox="../../media/microsoft-365-admin-center-report-message.png":::
 
-5. **[新しいアプリのデプロイ]** ポップアップが開きます。 次の設定を構成します。 [ **次へ** ] をクリックして次のページに移動し、セットアップを完了します。 
+4. 基本的なプロファイル情報を入力し、[ **続行**] をクリックします。
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="レポート メッセージ アドイン プロファイルの設定。" lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
+
+5. **[新しいアプリのデプロイ]** ポップアップが開きます。 次の設定を構成します。 [ **次へ** ] をクリックして次のページに移動し、セットアップを完了します。
 
    - **ユーザーを追加** する: 次のいずれかの値を選択します。
      - **私だけです**
@@ -132,13 +132,13 @@ Microsoft はこれらの提出を使用して、電子メール保護テクノ�
      - **アクセス許可要求を受け入れる**: 次のページに進む前に、アプリのアクセス許可と機能を注意深く読み取ります。
 
         > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="[アクセス許可要求の承諾] ページ" lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="[アクセス許可要求を受け入れる] ページ。" lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
 
-     - **デプロイを完了する**: アドインのデプロイを確認して完了します。 
-     - **デプロイが完了しました**: [ **完了]** を選択してセットアップを完了します。 
+     - **デプロイを完了する**: アドインのデプロイを確認して完了します。
+     - **デプロイが完了しました**: [ **完了]** を選択してセットアップを完了します。
 
         > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="デプロイが完了したという通知メッセージ" lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="デプロイが完了したという通知メッセージ。" lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
 
 ## <a name="edit-settings-for-the-report-message-add-in"></a>レポート メッセージ アドインの設定を編集する
 
@@ -147,9 +147,9 @@ Microsoft はこれらの提出を使用して、電子メール保護テクノ�
 2. 表示されるポップアップで、[ **ユーザーの編集]** を選択してユーザー設定を編集します。
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="レポート メッセージポップアップ" lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="レポート メッセージポップアップ。" lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
 
-3. アドインを削除するには、同じポップアップの **[アクション]** で [**アプリの削除**] を選択します。 
+3. アドインを削除するには、同じポップアップの **[アクション]** で [**アプリの削除**] を選択します。
 
 ## <a name="get-the-report-phishing-add-in"></a>レポート フィッシング アドインを取得する
 
@@ -182,15 +182,15 @@ Microsoft はこれらの提出を使用して、電子メール保護テクノ�
 1. [Microsoft 365 管理センター](https://admin.microsoft.com/AdminPortal/Home?#/homepage)で、**統合アプリ****の設定**\>に移動します。 [ **アプリの取得**] をクリックします。
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Microsoft 365 管理センター統合アプリ" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Microsoft 365 管理センター統合アプリ。" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-2. 表示された **[Microsoft 365 Apps**] ページで、[**検索**] ボックスをクリックし、「**フィッシング詐欺の報告」** と入力して、[**検索]** ![アイコンをクリックします](../../media/search-icon.png)。 結果の一覧で、 **フィッシングの報告** を見つけて選択します。 
- 
+2. 表示された **[Microsoft 365 Apps**] ページで、[**検索**] ボックスをクリックし、「**フィッシング詐欺の報告」** と入力して、[**検索]** ![アイコンをクリックします](../../media/search-icon.png)。 結果の一覧で、 **フィッシングの報告** を見つけて選択します。
+
 3. アプリの詳細ページが開きます。 [ **今すぐ取得]** を選択します。
 
 4. 基本的なプロファイル情報を入力し、[ **続行**] をクリックします。
 
-5. **[新しいアプリのデプロイ]** ポップアップが開きます。 セットアップを完了するには、 [上記](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) の手順に従います。 
+5. **[新しいアプリのデプロイ]** ポップアップが開きます。 セットアップを完了するには、 [上記](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) の手順に従います。
 
 ## <a name="edit-settings-for-the-report-phishing-add-in"></a>レポート フィッシング アドインの設定を編集する
 
@@ -199,6 +199,6 @@ Microsoft はこれらの提出を使用して、電子メール保護テクノ�
 2. 表示されるポップアップで、[ **ユーザーの編集]** を選択してユーザー設定を編集します。
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="レポート フィッシングのポップアップ" lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="レポート フィッシングポップアップ。" lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
-3. アドインを削除するには、同じポップアップの **[アクション]** で [**アプリの削除**] を選択します。 
+3. アドインを削除するには、同じポップアップの **[アクション]** で [**アプリの削除**] を選択します。

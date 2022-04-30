@@ -18,12 +18,12 @@ ms.custom: ''
 description: 管理者は、ユーザーによって報告されたスパムやフィッシングメールを収集するようにメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2e57c5dbfb8738eb9e554a3207679bfd48c6f60
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 8b73144b678140cd30917b4fd687663ff0a455a3
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970905"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144797"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーが報告したメッセージ設定
 
@@ -95,7 +95,7 @@ Microsoft Defender for Office 365がある場合は、高度なフィルター�
           > [!IMPORTANT]
           > 米国政府機関 (GCC、GCC High、DoD) は、**自分の組織のメールボックス** のみを構成できます。 他の 2 つのオプションは無効になっています。
           >
-          > 組織がカスタム メールボックスのみに送信するように構成されている場合、報告されたメッセージは再スキャン用に送信されず、ユーザー報告メッセージ ポータルの結果は常に空になります。
+          > 組織がユーザーから報告されたメッセージをカスタム メールボックスにのみ送信するように構成されている場合、報告されたメッセージは **ユーザー報告メッセージ** に表示されますが、結果は常に空になります (再スキャンされなかったため)。
 
        **[報告されたメッセージの送信**] で選択した値に関係なく、次の設定を使用できます。
 

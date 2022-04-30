@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: 管理者は、Microsoft 365 Defender ポータルの提出ポータルを使用して、疑わしいメール、フィッシング詐欺の疑いのあるメール、スパム、その他有害な可能性のあるメッセージ、URL、電子メールの添付ファイルを再スキャン用に Microsoft に送信する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a21c9e6655c01e2d2229e957f79b2342895ac4e4
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 5d16cae309a90b8ffe10c90fea8ca3a359ece33b
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971971"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144819"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>送信ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信する
 
@@ -185,7 +185,7 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
      - **ネットワーク メッセージ ID**
      - **Sender**
      - **[受信者]**
-     - **名前**
+     - **[名前]**
      - **提出者**
      - **送信の理由**
      - **状態**
@@ -278,7 +278,7 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
    - エントリをエクスポートするには、[ **エクスポート**] をクリックします。 表示されるダイアログで、.csv ファイルを保存します。
 
 > [!NOTE]
-> 組織がユーザー報告メッセージをカスタム メールボックスのみに送信するように構成されている場合、報告されたメッセージは再スキャン用に送信されず、 **ユーザーが報告したメッセージ** の結果は常に空になります。
+> 組織がユーザーから報告されたメッセージをカスタム メールボックスにのみ送信するように構成されている場合、報告されたメッセージは **ユーザー報告メッセージ** に表示されますが、結果は常に空になります (再スキャンされなかったため)。
 
 ### <a name="undo-user-submissions"></a>ユーザーの申請を元に戻す
 

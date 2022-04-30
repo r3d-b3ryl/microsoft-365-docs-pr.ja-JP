@@ -1,14 +1,14 @@
 ---
-title: プライバシーと同意通知を使用してサインイン ページをカスタマイズする
+title: プライバシーと同意に関する通知を使用してサインイン ページをカスタマイズする
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -21,32 +21,35 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: ユーザーのプライバシーと同意通知を使用してサインイン ページをカスタマイズMicrosoft 365。
-ms.openlocfilehash: 8beff76721ce622d5e1943aea1c16fda90b052f1
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Microsoft 365 のプライバシーと同意に関する通知を使用してサインイン ページをカスタマイズします。
+ms.openlocfilehash: 84c7a488d8a6ba854e3ac8b09067fd350c9ae4fc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634693"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097890"
 ---
-# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>プライバシーと同意通知を使用してサインイン ページをカスタマイズする
+# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>プライバシーと同意の通知を使用してサインイン ページをカスタマイズする
 
-ビジネスやキャンペーンを使用すると、サインイン ページにプライバシーと同意通知を追加することで、法執行機関がオンライン犯罪者に対して法的告発を容易にすることができます。
+ビジネスやキャンペーンは、サインイン ページにプライバシーと同意の通知を追加することにより、法執行機関がオンラインの犯罪者に対して法的請求を行うことを容易にすることができます。
 
-ブランド化を使用してサインイン ページをカスタマイズできます。 ユーザーがサインインしたり、リソースにアクセスするための法的要件や制限を指摘したりするために、テキストをMicrosoft 365できます。
+サインイン ページは、ブランドに合わせてカスタマイズできます。 また、ユーザーがサインインするのに役立つテキストを追加したり、Microsoft 365 リソースにアクセスするための法的要件や制限を指摘したりすることもできます。
 
-## <a name="design-customization-the-text-on-your-sign-in-page"></a>サインイン ページのテキストをカスタマイズする
+## <a name="design-customization-the-text-on-your-sign-in-page"></a>サインイン ページでテキストをカスタマイズする
 
-サインイン ページでカスタマイズ可能な要素を更新するには、グローバル管理者である必要があります。具体的な手順については、「Add [company branding article」を参照](/azure/active-directory/fundamentals/customize-branding) してください。
+サインイン ページのカスタマイズ可能な要素を更新するには、グローバル管理者である必要があります。 具体的な手順については、[会社のブランディングの追加](/azure/active-directory/fundamentals/customize-branding)に関する記事を参照してください。
 
 更新できる要素は次のとおりです。
 
-- **サインイン ページのテキスト** プライバシーと同意に関する声明を簡単に追加できます。
-
+- サインイン ページ テキスト (プライバシーと同意に関する声明を簡単に追加できる場所)
 - サインイン ページの背景画像
-
 - バナー ロゴ
+- ユーザー名ヒント フィールド
 
-- ユーザー名のヒント
+プライバシーと同意に関する通知の例については、「[コンピューターの検索と押収、および犯罪捜査における電子証拠の取得](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)」の付録 A を参照してください。
 
-プライバシーと同意に関する通知の例については、「コンピューターの検索と押収」および「犯罪捜査における電子証拠の取得」の付録 A [を参照してください](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)。
+## <a name="next-steps"></a>次の手順
+
+1. [基本的なセットアップに関するガイド付き手順を確認する](m365bp-setup.md#use-the-guided-process-for-basic-setup)。
+
+2. [セキュリティ機能を設定する](m365bp-security-overview.md)。

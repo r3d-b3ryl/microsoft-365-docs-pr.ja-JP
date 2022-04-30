@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) でスプーフィング インテリジェンスの分析情報について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30a9a7a9714ed5e071c53a6b1641204fd8c4fafe
-ms.sourcegitcommit: 363bdc517bd2564c6420cf21f352e97079f950e0
+ms.openlocfilehash: c147396ff47f924d7dd4b2ebd3a0cac106de94b2
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2022
-ms.locfileid: "65031834"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144731"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>詳細については、「EOP のスプーフィング インテリジェンス分析」を参照してください。
 
@@ -35,9 +35,6 @@ ms.locfileid: "65031834"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
-> この記事で説明する機能はプレビュー版であり、変更される可能性があり、一部の組織では使用できません。 組織にこの記事で説明されている機能がない場合は、 [EOP のスプーフィング インテリジェンス ポリシーとスプーフィング インテリジェンス 分析情報を使用したスプーフィング送信者の管理に関する以前のスプーフィング](walkthrough-spoof-intelligence-insight.md)管理エクスペリエンスを参照してください。
 
 Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含むMicrosoft 365組織では、Exchange Onlineメールボックスがない場合、受信電子メール メッセージはスプーフィングから自動的に保護されます。 EOP では、フィッシングに対する組織全体の防御の一環として **、スプーフィング インテリジェンス** が使用されます。 詳細については、「 [EOP でのスプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。
 

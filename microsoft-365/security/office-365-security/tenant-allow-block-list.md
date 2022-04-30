@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で、許可とブロックを管理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0ed23cf7bfe8db25ed216859c434e86f14710db8
-ms.sourcegitcommit: 363bdc517bd2564c6420cf21f352e97079f950e0
+ms.openlocfilehash: 62116022c14af67b4589e4ee8479d294755fcc80
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2022
-ms.locfileid: "65031843"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144711"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -32,12 +32,6 @@ ms.locfileid: "65031843"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
->
-> この記事で説明する機能の一部はプレビュー版であり、変更される可能性があり、一部の組織では使用できません。
->
-> この記事で説明されているように、組織にスプーフィング機能がない場合は、 [EOP のスプーフィング インテリジェンス ポリシーとスプーフィング インテリジェンス 分析情報を使用したスプーフィング送信者の管理に関する以前のスプーフィング](walkthrough-spoof-intelligence-insight.md)管理エクスペリエンスを参照してください。
 
 Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスが含まれているMicrosoft 365組織では、Exchange Onlineメールボックスがない場合は、EOP フィルターの判定に同意しない可能性があります。 たとえば、適切なメッセージが無効 (誤検知) としてマークされたり、不適切なメッセージが許可されたり (偽陰性) されたりすることがあります。
 
@@ -81,10 +75,10 @@ Microsoft 365 Defender ポータルのテナント許可/ブロック リスト�
 
 - この記事の手順を実行するには、Microsoft 365 Defender ポータルでアクセス許可を割り当てる必要があります。
   - **送信者、URL、ファイル**:
-    - テナント許可/ブロック リストの値を追加および削除するには、次のメンバーである必要があります。 
-      -   **組織の管理** または **セキュリティ管理者** の役割グループ (**セキュリティ管理者ロール**)
-      -    **Security Operator** ロール グループ (**テナント AllowBlockList Manager**)。
-    - テナント許可/ブロック リストへの読み取り専用アクセスの場合は、次のメンバーである必要があります。 
+    - テナント許可/ブロック リストの値を追加および削除するには、次のメンバーである必要があります。
+      - **組織の管理** または **セキュリティ管理者** の役割グループ (**セキュリティ管理者ロール**)
+      - **Security Operator** ロール グループ (**テナント AllowBlockList Manager**)。
+    - テナント許可/ブロック リストへの読み取り専用アクセスの場合は、次のメンバーである必要があります。
       - **グローバル リーダー**  の役割グループ
       - **セキュリティ 閲覧者** の役割グループ
   - **スプーフィング**: 次のいずれかの組み合わせ。
@@ -95,7 +89,7 @@ Microsoft 365 Defender ポータルのテナント許可/ブロック リスト�
 
   > [!NOTE]
   >
-  > - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 *および* Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
@@ -182,7 +176,7 @@ Microsoft 365 Defender ポータルの [ルール **] セクションの** <http
 
    完了したら、**[適用]** をクリックします。 既存のフィルターをクリアするには、[ **フィルター**] をクリックし、表示される **[フィルター** ] ポップアップで [ **フィルターのクリア**] をクリックします。
 
-4. 完了したら、**[追加]** をクリックします。
+3. 完了したら、**[追加]** をクリックします。
 
 ## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧で送信者、ファイル、または URL エントリを表示する
 
@@ -490,7 +484,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 スプーフィングされた送信者エントリの最大数は 1000 です。
 
-ドメイン ペアを追加すると、スプーフィングされたユーザー *と* 送信インフラストラクチャの *組み合わせ* のみが許可またはブロックされます。 スプーフィングされたユーザーからの任意のソースからのメールは許可されず、スプーフィングされたユーザーの送信インフラストラクチャ ソースからの電子メールも許可されません。 
+ドメイン ペアを追加すると、スプーフィングされたユーザー *と* 送信インフラストラクチャの *組み合わせ* のみが許可またはブロックされます。 スプーフィングされたユーザーからの任意のソースからのメールは許可されず、スプーフィングされたユーザーの送信インフラストラクチャ ソースからの電子メールも許可されません。
 
 たとえば、次のドメイン ペアの許可エントリを追加します。
 
