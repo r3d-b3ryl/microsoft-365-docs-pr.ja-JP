@@ -21,12 +21,12 @@ description: Microsoft Purview コンプライアンス ポータルを使用し
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: fa397ec1ce7dea253367dfb917166a9a43655896
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e6754601aca5dda74ee59ed2c6c52b3f8b1eb2a3
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098474"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128502"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -1107,6 +1107,21 @@ Exchange Online 組織で管理者 (または管理者のアクセス許可を�
   - [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)
 
    Exchange 管理者監査ログと監査ログの両方に同じ Exchange 管理者アクティビティが記録される点に注意してください。
+
+### <a name="encrypted-message-portal-activities"></a>暗号化されたメッセージ ポータル アクティビティ
+
+アクセス ログは、暗号化されたメッセージ ポータルを介して暗号化されたメッセージに対して使用できます。これにより、組織は、メッセージがいつ読み取られ、外部の受信者によって転送されたかを判断できます。 暗号化されたメッセージ ポータルアクティビティ ログの有効化と使用の詳細については、「[暗号化されたメッセージ ポータル アクティビティ ログ](ome-message-access-logs.md)」を参照してください。
+
+追跡対象メッセージの各監査エントリには、次のフィールドが含まれます。
+
+- MessageID - 追跡対象のメッセージの ID が含まれます。 これは、システムを介してメッセージを追跡するために使用されるキー識別子です。
+- 受信者 - すべての受信者の電子メール アドレスのリスト。
+- 差出人 - 送信元の電子メール アドレス。
+- AuthenticationMethod - OTP、Yahoo、Gmail、Microsoft など、メッセージにアクセスするための認証メソッドについて説明します。
+- AuthenticationStatus - 認証が成功したか失敗したことを示す値が含まれます。
+- OperationStatus - 指定された操作が成功したか失敗したかを示します。
+- AttachmentName - 添付ファイルの名前。
+- OperationProperties - オプションのプロパティのリスト (送信された OTP パスコードの数、メールの件名など)。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
