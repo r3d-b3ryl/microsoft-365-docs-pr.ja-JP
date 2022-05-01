@@ -18,18 +18,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して、機密性の高いコンテンツを分類して保護します。
+description: Microsoft Purview Information Protection の秘密度ラベルを使用して、機密性の高いコンテンツを分類して保護します。
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1c7ec0f9411d767e588e391eb7eb94ec95a219fb
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7bac33f19b51e2a5c6d6f234ba5e692cedd62c2b
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312209"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128458"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
@@ -40,7 +42,7 @@ ms.locfileid: "63312209"
 
 組織の従業員は、業務を行うために組織内外の関係者と共同作業を行います。このためコンテンツはファイアウォールの内側だけでなく、さまざまなデバイス、アプリ、サービスを越えて存在することになります。この場合、組織のビジネス ポリシーとコンプライアンス ポリシーを満たす安全な方法でコンテンツを保護することが必要です。
 
-Microsoft Information Protection ソリューションの秘密度ラベルを使用すると、組織のデータを分類および保護しながら、ユーザーの生産性と共同作業を行う能力が損なわれないようにすることができます。
+Microsoft Purview Information Protection の秘密度ラベルを使用すると、組織のデータを分類および保護しながら、ユーザーの生産性と共同作業を行う能力が損なわれないようにすることができます。
 
 リボンの **[ホーム]** タブから、Excel で利用可能な秘密度ラベルを表示する例。 この例では、適用されたラベルがステータス バーに表示されます。
 
@@ -65,7 +67,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **Power BI に感度ラベルを拡張する**: この機能を有効にすると、Power BI にラベルを適用して表示したり、サービスの外部に保存するときにデータを保護したりすることができます。
 
-- **Azure Purview の資産に秘密度ラベルを拡張する**: 現在プレビュー中のこの機能をオンにすると、Azure Purview のファイルやスキーマ化されたデータ アセットに秘密度ラベルを適用することができます。 スキーマ化されたデータ資産には、SQL、Azure SQL、Azure Synapse、Azure Cosoms、AWS RDS が含まれます。
+- **Microsoft Purview Data Map の資産に秘密度ラベルを拡張する**: 現在プレビュー中のこの機能をオンにすると、Microsoft Purview Data Map のファイルやスキーマ化されたデータ アセットに秘密度ラベルを適用することができます。 スキーマ化されたデータ資産には、SQL、Azure SQL、Azure Synapse、Azure Cosmos、AWS RDS が含まれます。
 
 - **秘密度ラベルをサードパーティ製アプリやサービスに拡張します。** Microsoft Information Protection SDK を使用すると、サード パーティ製アプリで秘密度ラベルの読み取りと保護設定の適用を行えるようになります。
 
@@ -108,7 +110,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
     
     コンテンツ マーキングがいつ適用されるかを確認する必要がありますか？ 「[Office アプリがコンテンツ マーキングと暗号化を適用した場合](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption)」を参照してください。
     
-    特定のドキュメントに基づくテンプレートまたはワークフローがある場合は、ユーザーがラベルを使用できるようにする前に、選択したコンテンツ マーキングを使用してそれらのドキュメントをテストします。 認識しておくべき文字列の長さの制限がいくつかあります。
+    特定のドキュメントに基づくテンプレートまたはワークフローがある場合は、ユーザーがラベルを使用できるようにする前に、選択したコンテンツ マーキングを使用してそれらのドキュメントをテストします。認識しておくべき文字列の長さの制限がいくつかあります。
     
     透かしの文字数は 255 文字までに制限されています。 Excel を除き、ヘッダーとフッターの文字数は 1,024 文字までに制限されています。 Excel では、ヘッダーとフッターの合計が 255 文字に制限されています。ただし、この制限には、書式設定コードなど、表示されない文字も含まれます。 この制限に達すると、入力した文字列が Excel で表示されなくなります。
 
@@ -120,7 +122,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
     
     ![必要なラベルを割り当てるかを確認するダイアログ。](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    機密ラベルを作成または編集するときの **ファイルとメールの自動ラベル** の設定の詳細については、「Office アプリの [コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」および「[Azure Purview でラベルを付ける](/azure/purview/create-sensitivity-label)」を参照してください。
+    機密ラベルを作成または編集するときの **ファイルとメールの自動ラベル** の設定の詳細については、「Office アプリの [コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」および「[Microsoft Purview Data Map でラベルを付ける](/azure/purview/create-sensitivity-label)」を参照してください。
 
 - SharePoint サイトと個々のドキュメントの **既定の共有リンクの種類** を設定します。 ユーザーの過剰な公開を防ぐため、ユーザーが SharePoint および OneDrive からドキュメントを共有する際の[既定のスコープとアクセス許可](sensitivity-labels-default-sharing-link.md)を設定します。
 
@@ -130,7 +132,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 - そのラベルに構成できるラベル設定
 - ラベルがユーザーに表示される場所
 
-このスコープ構成により、ドキュメントとメール専用で、コンテナー用に選択できない秘密度ラベルを作成できます。 同様に、コンテナー専用で、ドキュメントやメールには選択できない秘密度ラベル。 Azure Purview 資産のスコープを選択することもできます。
+このスコープ構成により、ドキュメントとメール専用で、コンテナー用に選択できない秘密度ラベルを作成できます。 同様に、コンテナー専用で、ドキュメントやメールには選択できない秘密度ラベル。 Microsoft Purview Data Mapアセットのスコープを選択することもできます。
 
 ![秘密度ラベルの範囲オプション。](../media/sensitivity-labels-scopes.png)
 
@@ -138,7 +140,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **グループとサイト**: [コンテナーの秘密度ラベルを有効化してラベルを同期する](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **スキーマ化されたデータ アセット**: [Azure Purview のコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)
+- **スキーマ化されたデータ アセット**: [Microsoft Purview Data Map のコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)
 
 すべての範囲が選択されないように既定値を変更すると、選択していない範囲の構成設定の最初のページが表示されますが、設定を構成することはできません。 たとえば、ファイルとメールのスコープが選択されていない場合、次のページでオプションを選択することはできません。
 
@@ -243,7 +245,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 Windows、macOS、iOS、Android の Microsoft 365 Apps に組み込まれている秘密度ラベルは、ユーザーに一貫したラベル付けエクスペリエンスを提供するため、これらのデバイスすべてにおける外観と動作が非常に似ています。 ただし、Windows コンピューターでは、[Azure Information Protection (AIP) クライアント](/azure/information-protection/rms-client/aip-clientv2)を使用することもできます。 このクライアントは、現在[メンテナンス モード](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613)です。
 
-AIP クライアントを使用している場合は、「[Office アプリの AIP アドインに対して MIP 組み込みラベル付けを選択する理由](sensitivity-labels-aip.md)」を参照して、Windows コンピューターのラベル付けのオプションを確認してください。
+AIP クライアントを使用している場合は、「[Office アプリの AIP アドインに対して組み込みラベル付けを選択する理由](sensitivity-labels-aip.md)」を参照して、Windows コンピューターのラベル付けのオプションを確認してください。
 
 ### <a name="azure-information-protection-labels"></a>Azure Information Protection のラベル
 
@@ -256,7 +258,7 @@ AIP クライアントを使用している場合は、「[Office アプリの A
 
 秘密度ラベルはドキュメントのメタデータに保存されるため、サードパーティ製のアプリおよびサービスはこのラベル付けメタデータを読み書きして、ラベル付けの展開を補完できます。 さらに、ソフトウェア開発者は [Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk) を使用して、複数のプラットフォームにわたってラベル付けおよび暗号化機能を完全にサポートできます。 詳細については、[Tech Community ブログでの一般提供のお知らせ](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144) を参照してください。 
 
-[Microsoft Information Protection に統合されているパートナー ソリューション](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657)についての説明もご覧いただけます。
+[Microsoft Purview Information Protection に統合されているパートナー ソリューション](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657)についての説明もご覧いただけます。
 
 ## <a name="deployment-guidance"></a>展開ガイダンス
 
