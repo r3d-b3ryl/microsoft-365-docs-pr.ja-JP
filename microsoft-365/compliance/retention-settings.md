@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 729c31935ee3ded04a12f7822a17082ef1b52c26
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: c0214476494e024247b76911475df88bdfbfa4ff
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911514"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129224"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
@@ -83,13 +85,13 @@ ms.locfileid: "64911514"
 
 特に SharePoint サイトの場合、[カスタム サイト プロパティ](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970)を使用する場合は、追加の SharePoint 構成が必要になることがあります。
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
+1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
     
     - レコード管理ソリューションを使用している場合:
         - **[ソリューション]** > **「レコード管理]** > **[アダプティブ スコープ]** タブ > + **「スコープの作成]**
         
-    - Information Governance ソリューションを使用している場合:
-       - **[ソリューション]** > **[情報ガバナンス]** > **[アダプティブ スコープ]** タブ > + **「スコープの作成]**
+    - データ ライフサイクル管理ソリューションを使用している場合:
+       - [**ソリューション**]  >  [**データ ライフサイクル管理**]  >  [**アダプティブ スコープ**] タブ > + [**スコープの作成**]
     
     ナビゲーション ウィンドウにすぐに解決方法が表示されない場合は、まず、**[すべて表示]** を選択します。 
 
@@ -368,7 +370,7 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>コンテンツを特定の期間保持する
 
-コンテンツを保持する保持ラベルまたはポリシーを構成する場合は、アイテムを特定の日数、月数、年数の間保持することを選択します。 または、アイテムを永久に保持します。 保持期間は、ポリシーが割り当てられた時点からではなく、指定した保持期間の開始に従って計算されます。
+コンテンツを保持する保持ラベルまたはポリシーを構成する場合は、アイテムを特定の日数、月数 (1 か月は 30 日と想定)、年数の間保持することを選択します。 または、アイテムを永久に保持します。 保持期間は、ポリシーが割り当てられた時点からではなく、指定した保持期間の開始に従って計算されます。
 
 保持期間の開始については、コンテンツがいつ作成されたか、またはコンテンツが最後に変更されたときの SharePoint、OneDrive、Microsoft 365 グループのファイルのみサポートされるかを選択できます。 保持ラベルについては、コンテンツにラベルが付けられたときとイベントが発生したときから保持期間を開始できます。
 
@@ -426,7 +428,7 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
 
 アイテム保持ポリシーを編集し、アイテムが既にアイテム保持ポリシーの元の設定の対象となっている場合、更新された設定は、新しく特定されたアイテムに加えて、このアイテムに自動的に適用されます。
 
-通常、この更新はかなり迅速ですが、数日かかる場合があります。Microsoft 365 の場所間でのポリシーの複製が完了すると、Microsoft 365 コンプライアンス センターのアイテム保持ポリシーの状態が [**オン (保留中)**] から [**オン (成功)**] に変わります。
+通常、この更新はかなり迅速ですが、数日かかる場合もあります。Microsoft 365 の場所間でのポリシーの複製が完了すると、Microsoft Purview コンプライアンス ポータルのアイテム保持ポリシーの状態が [**オン (保留中)**] から [**オン (成功)**] に変わります。
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>変更を防止するためにポリシーをロックする
 

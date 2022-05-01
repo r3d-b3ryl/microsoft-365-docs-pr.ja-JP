@@ -17,19 +17,21 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: 5c80147c18cff8c27f8c205ab1ed600e892f7335
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+description: 'すべての Microsoft Purview Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
+ms.openlocfilehash: 036835e77ca1e1d7c15435050d4577f5352f0ebd
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499575"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131276"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-すべての Microsoft Information Protection ソリューション (MIP と略されることもあります) は、[秘密度ラベル](sensitivity-labels.md)を使用して実装されます。 それらのラベルを作成して発行するには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>に移動します。
+すべての Microsoft Purview Information Protection ソリューションは、[秘密度ラベル](sensitivity-labels.md)を使って実装されます。 それらのラベルを作成して発行するには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>に移動します。
 
 まず、アプリやその他のサービスで使用する秘密度ラベルを作成し、構成します。 たとえば、ユーザーに表示して Office アプリから適用するラベルです。
 
@@ -41,14 +43,12 @@ ms.locfileid: "64499575"
 
 ## <a name="create-and-configure-sensitivity-labels"></a>秘密度ラベルを作成して構成する
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[ソリューション]** > **[Information Protection]** を選択します。
+1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)から [**ソリューション**]  >  [**Information protection**] を選択します。
     
     このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。
 
 2. [**ラベル**] ページで、[**+ ラベルの作成**] を選択して、[新しい秘密度ラベル] 構成を起動します。 
-
-    たとえば、Microsoft 365 コンプライアンス センターでは、次のようになります。
-
+    
     ![秘密度ラベルを作成する。](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
@@ -62,7 +62,7 @@ ms.locfileid: "64499575"
 
     - **[グループとサイト]** が選択されている場合、Microsoft 365 グループ、および Teams と SharePoint のサイトに適用される設定を構成できます。 このオプションが選択されていない場合、これらの設定の最初のページを表示しても、それらを構成することはできず、ユーザーがグループおよびサイト用にラベルを選択することはできません。
 
-    **スキーマ化されたデータ アセット** スコープの詳細については、「[Azure Purview のコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)」を参照 してください。
+    **スキーマ化されたデータ アセット** スコープの詳細情報は、「[Microsoft Purview データ マップにラベルを付ける](/azure/purview/create-sensitivity-label)」を参照してください。
 
 4. ラベルの設定には、構成の指示に従います。
 
@@ -128,16 +128,14 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>ラベル ポリシーを作成して秘密度ラベルを発行する
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[ソリューション]** > **[Information Protection]** を選択します。
+1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)から [**ソリューション**]  >  [**Information protection**] を選択します。
     
     このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。
 
 2. [**ラベル ポリシー**] タブ、[**ラベルの発行**] の順に選択して、[**ポリシーの作成**] 構成を開始してください。
-
-    たとえば、Microsoft 365 コンプライアンス センターでは、次のようになります。
-
+    
     ![ラベルを発行。](../media/publish-sensitivity-labels-full.png)
-
+    
     > [!NOTE]
     > 既定では、テナントにはラベル ポリシーはありません。作成する必要があります。 
 
@@ -154,7 +152,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     これらの設定の詳細については、概要情報の「[ラベル ポリシーでできること](sensitivity-labels.md#what-label-policies-can-do)」を参照してください。また、個々の設定については、UI のヘルプを参照してください。
 
-    **Azure Purview assets (プレビュー) に構成されているラベルの場合**: これらのラベルには関連付けられたポリシー設定はありません。
+    **Microsoft Purview データ マップ アセット (プレビュー) に構成されているラベルの場合**: これらのラベルには関連付けられたポリシー設定はありません。
 
 6. 異なるユーザーやスコープに対して、異なるポリシー設定が必要な場合は、次の手順を繰り返します。 たとえば、ユーザーのグループにラベルを追加したり、ユーザーのサブセットに別の既定のラベルを作成したりできます。 または、異なるスコープを持つようにラベルを構成した場合です。
 

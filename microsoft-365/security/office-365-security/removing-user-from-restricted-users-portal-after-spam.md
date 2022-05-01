@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c375d77c3aa64d996a8d8d2f8dce538829eaa3b2
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 229dfbb7a0441f4a6cb6632432c0032f4ce4308e
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568316"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130738"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Microsoft 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
 
@@ -44,6 +44,16 @@ ms.locfileid: "64568316"
 > 「有効な送信者として認識されなかったため、メッセージを配信できませんでした。」 この最も一般的な理由は、メールアドレスがスパムを送信している疑いがあり、メールを送信することを許可されていないことです。  詳細については、メールアドレスの管理者に問い合わせてください。 リモートサーバーが 「550 5.1.8 アクセスが拒否されました。アウトバウンド送信者が正しくありません」を返す
 
 管理者は、Microsoft 365 Defender または Exchange Online PowerShell の **制限されたユーザー** ページからユーザーを削除することができます。
+
+## <a name="learn-more-on-restricted-entities"></a>制限付きエンティティの詳細情報
+
+制限付きエンティティとは、侵害された可能性があるか、送信制限を超えたために電子メールの送信がブロックされているエンティティです。
+
+制限付きエンティティには次の 2 種類があります: 
+
+- **制限付きユーザー**: ユーザーを制限できる理由と、制限されたユーザーを処理する方法について説明します (この記事)。  
+
+- **制限付きコネクター**: コネクタを制限できる理由と制限されたコネクタを処理する方法の詳細については、「[制限付きエンティティ ポータルからブロックされたコネクタを削除する](remove-blocked-connectors.md)」を参照してください。 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -93,7 +103,7 @@ ms.locfileid: "64568316"
 > [!IMPORTANT]
 > アラートを機能させるには、監査ログ検索をオンにする必要があります。 詳細については、「[監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」をご覧ください。
 
-1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[メールと共同作業]** \> **[ポリシーとルール]** \> **[通知ポリシー]** に移動します。 **[通知ポリシー]** ページに直接移動するには、<https://security.microsoft.com/alertpolicies> を使用します。
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**アラート ポリシー**] に移動します。[**アラート ポリシー**] ページに直接移動するには、<https://security.microsoft.com/alertpolicies> を使用します。
 
 2. **[通知ポリシー]** ページで、「**メール送信を制限されたユーザー**」という名前の通知を見つけて選択します。 ポリシーを名前で並べ替えたり、**[検索]** ボックスを使用してポリシーを検索することができます。
 

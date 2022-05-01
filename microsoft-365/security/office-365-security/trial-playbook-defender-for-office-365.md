@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Defender for Office 365 ソリューション試用版のプレイブック。
-ms.openlocfilehash: 1e943cc36d7a8787a41e16d61b15fe9e2eea129c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f23c45d117735997c219278621be7f314602cd8f
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474885"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130694"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>試用版プレイブック: Microsoft Defender for Office 365
 
 Microsoft Defender for Office 365 試用版のプレイブックへようこそ。 このプレイブックでは、Defender for Office 365 を使用して組織を保護する方法を説明し、90 日間の無料試用版を最大限に活用するサポートを行います。 Microsoft 推奨事項を使用して、Defender for Office 365 が、保護ポリシーの定義、組織への脅威の分析、攻撃への対応にどのように役立つ方法を説明します。
 
-:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="Microsoft Defender for Office 365 のすべてのコンポーネントのグラフィカル表示" lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="Microsoft Defender for Office 365 のすべてのコンポーネントのグラフィカル表示。" lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
 
 これらのアクションは、90 日間の試用版で利用できる主要な機能に関する Microsoft Defender チームの推奨事項です。
 
@@ -39,7 +39,8 @@ Microsoft Defender for Office 365 試用版のプレイブックへようこそ�
 お使いの環境に[事前設定されたセキュリティ ポリシー](preset-security-policies.md)を自動的に構成しました。 これらのポリシーは、ほとんどのユーザーに適したベースライン保護プロファイルを表します。 標準的な保護は以下のとおりです。
 
 - 安全なリンク、安全な添付ファイル、フィッシング対策の各ポリシーは、テナント全体、または試用版のセットアップ プロセス時に選択したユーザーのサブセットに適用されます。
-- SharePoint、OneDrive、Office アプリ、Microsoft Teams の保護。
+- SharePoint、OneDrive、Microsoft Teams の安全な添付ファイル保護。
+- サポートされている Office 365 アプリの安全なリンク保護。
 
 詳細については、以下のビデオをご覧ください。[Microsoft Defender for Office 365 の安全なリンクで悪意のあるリンクから保護する - YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9)。
 
@@ -61,7 +62,7 @@ Defender for Office 365 のレポート機能を使用して、環境の詳細�
 - [メールフロー進捗レポート](view-email-security-reports.md#mailflow-status-report)を使用して、脅威がブロックされている場所を確認します。
 - ユーザーが表示した、またはシステムがブロックした[リンクを確認します](view-reports-for-mdo.md#url-protection-report)。
 
-:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="Microsoft 365 Defender ポータルのメールと共同作業のレポート" lightbox="../../media/mdo-trial-playbook-reporting.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="Microsoft 365 Defender ポータルのメールとコラボレーションのレポート" lightbox="../../media/mdo-trial-playbook-reporting.png":::
 
 ## <a name="step-2-intermediate-steps"></a>手順 2: 中間ステップ
 
@@ -84,13 +85,13 @@ Defender for Office 365 の「優先アカウント保護」を使用して、�
 - [侵害されたユーザーの警告](address-compromised-users-quickly.md#compromised-user-alerts)を確認します。
 - 侵害されたユーザーへの[脅威の調査と対応](address-compromised-users-quickly.md)。
 
-:::image type="content" source="../../media/mdo-trial-playbook-investigation.png" alt-text="侵害されたユーザーの調査" lightbox="../../media/mdo-trial-playbook-investigation.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-investigation.png" alt-text="侵害されたユーザーの調査。" lightbox="../../media/mdo-trial-playbook-investigation.png":::
 
 詳細については、以下のビデオをご覧ください。[Microsoft Defender for Office 365 での侵害の検出と対応 - YouTube](https://www.youtube.com/watch?v=Pc7y3a-wdR0&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=5)。
 
 ### <a name="use-threat-explorer-to-investigate-malicious-email"></a>脅威エクスプローラーを使用して悪質なメールを調査する
 
-Defender for Office 365 を使用すると、組織内のユーザーを危険にさらすアクティビティを調査し、組織を保護するためのアクションを実行できます。これは、[Threat Explorer または (リアルタイム検出)](threat-explorer.md)を使用して行うことができます。
+Defender for Office 365 を使用すると、組織内のユーザーを危険にさらすアクティビティを調査し、組織を保護するためのアクションを実行できます。これは、[脅威エクスプローラー](threat-explorer.md)を使用して行うことができます。
 
 - [配信された疑わしいメールの検索](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): メッセージを見つけて削除したり、悪意のあるメール送信者の IP アドレスを特定したり、さらなる調査のためにインシデントを開始したりすることができます。
 - [配信アクションと場所のチェック](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): このチェックにより、問題のあるメール メッセージの場所を把握することができます。
@@ -104,7 +105,7 @@ Defender for Office 365 のキャンペーン ビューを使用して、組織�
 - 攻撃の[範囲を可視化します](campaigns.md#campaign-views-in-the-microsoft-365-defender-portal)。
 - これらのメッセージを使用して[ユーザーの操作を追跡します](campaigns.md#campaign-details)。
 
-  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="Microsoft 365 Defender ポータルでの攻撃活動の詳細" lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
+  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="Microsoft 365 Defender ポータルでの攻撃活動の詳細。" lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
 
 詳細については、以下のビデオをご覧ください。[Microsoft Defender for Office 365 でのキャンペーン ビュー - YouTube](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14)。
 
@@ -116,7 +117,7 @@ Defender for Office 365 のキャンペーン ビューを使用して、組織�
 - 調査の[詳細と結果を表示します](email-analysis-investigations.md)。
 - [修復処理を承認する](air-remediation-actions.md)ことで、脅威を排除します。
 
-:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="調査結果" lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="調査結果。" lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
 
 ## <a name="step-3-advanced-content"></a>手順 3: 高度なコンテンツ
 
