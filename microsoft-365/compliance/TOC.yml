@@ -1005,6 +1005,8 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: 監査のオンとオフを切り替える
           href: turn-audit-log-search-on-or-off.md
+        - name: 顧客キーを使用して監査レコードを暗号化する
+          href: auditing-cmk-encryption.md
         - name: 監査ログを使用して一般的な問題を調査する
           href: auditing-troubleshooting-scenarios.md
         - name: 監査ログで共有監査を使用する
