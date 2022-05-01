@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 組織内のユーザーや管理者のアクティビティを監査する方法をご紹介します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cc70060872c9f416120e859673ad9a3799322048
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4dd26229e5ca29344524238903dd2e972ac09ad7
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100877"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145357"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Microsoft Purview での監査ソリューション
 
@@ -53,7 +53,7 @@ Microsoft Purview 監査 (標準) では、監査されたアクティビティ�
   - [Search-UnifiedAuditLog コマンドレットのリファレンス](/powershell/module/exchange/search-unifiedauditlog)
   - [PowerShell スクリプトを使用して監査ログを検索する](audit-log-search-script.md)
 
-- **監査記録を CSV ファイルにエクスポートします**。 コンプライアンス センターで監査ログ検索ツールを実行した後、検索で返された監査記録を CSV ファイルにエクスポートすることができます。 これにより、Microsoft Excel を使用して、異なる監査レコードのプロパティで並べ替えやフィルター処理を行うことができます。 また、Excel Power Query の変換機能を使って、AuditData JSON オブジェクトの各プロパティを個別の列に分割することもできます。 これにより、異なるイベントの類似データを効果的に表示し、比較することができます。 詳細については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。
+- **監査記録を CSV ファイルにエクスポートします**。 コンプライアンス ポータルで監査ログ検索ツールを実行した後、検索で返された監査記録を CSV ファイルにエクスポートすることができます。 これにより、Microsoft Excel を使用して、異なる監査レコードのプロパティで並べ替えやフィルター処理を行うことができます。 また、Excel Power Query の変換機能を使って、AuditData JSON オブジェクトの各プロパティを個別の列に分割することもできます。 これにより、異なるイベントの類似データを効果的に表示し、比較することができます。 詳細については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。
 
 - **Office 365 マネージメント アクティビティ API を介した監査ログにアクセスします**。 監査記録にアクセスして取得する 3 つ目の方法は、Office 365 マネージメント アクティビティ API を使用することです。 これにより、企業は監査データを既定の 90 日よりも長い期間保持し、監査データを SIEM ソリューションにインポートすることができます。 詳細については、「[Office 365 管理アクティビティ API のリファレンス](/office/office-365-management-api/office-365-management-activity-api-reference)」を参照してください。
 
@@ -90,7 +90,7 @@ Microsoft Purview 監査 (標準) では、監査されたアクティビティ�
 |10 年間の監査ログの保持 <sup>2</sup>||![サポート](../media/check-mark.png)|
 |監査ログの保持ポリシー||![サポート](../media/check-mark.png)|
 |価値の高い、重要なイベント||![サポート](../media/check-mark.png)|
-||||
+
 > [!NOTE]
 > <sup>1</sup> 監査 (プレミアム) には、Office 365 マネージメント アクティビティ API へのより高い帯域幅のアクセスが含まれており、監査データへのアクセスが高速化されます。<br/><sup>2</sup> 監査 (プレミアム) に必要なライセンス (次のセクションで説明) に加えて、監査記録を 10 年間保持するためには、ユーザーはライセンスに 10 年監査ログ保持を割り当てる必要があります。
 
@@ -100,14 +100,14 @@ Microsoft Purview 監査 (標準) では、監査されたアクティビティ�
 
 ### <a name="audit-standard"></a>監査 (標準)
 
-- Microsoft 365 Business Basic サブスクリプション
-- Microsoft 365 Apps for Business サブスクリプション
-- Microsoft 365 Enterprise E3 サブスクリプション
-- Microsoft 365 Business Premium
-- Microsoft 365 Education A3 サブスクリプション
-- Microsoft 365 Government G3 サブスクリプション
-- Microsoft 365 Government G1 サブスクリプション
-- Microsoft 365 Frontline F1 または F3 サブスクリプション、または F5 セキュリティ アドオン
+- Microsoft Purview Business Basic サブスクリプション
+- Microsoft Purview Apps for Business サブスクリプション
+- Microsoft Purview Enterprise E3 サブスクリプション
+- Microsoft Purview Business Premium
+- Microsoft Purview Education A3 サブスクリプション
+- Microsoft Purview Government G3 サブスクリプション
+- Microsoft Purview Government G1 サブスクリプション
+- Microsoft Purview Frontline F1 または F3 サブスクリプション、または F5 セキュリティ アドオン
 - Office 365 Enterprise E3 サブスクリプション
 - Office 365 Enterprise E1 サブスクリプション
 - Office 365 Education A1 サブスクリプション
@@ -158,7 +158,7 @@ Microsoft Purview の監査ソリューションの使用を開始するには�
   
    - それらのユーザーに対して監査 (プレミアム) アプリ/サービス プランを有効にします。
   
-   - 重要なイベントの監査を有効にして、そのユーザーに高度な監査アプリやサービス プランをオンにします。
+   - 重要なイベントの監査を有効にして、そのユーザーに高度な監査 (Premium) アプリやサービス プランをオンにします。
 
 2. ユーザーが Exchange Online や SharePoint Online で検索を行った場合に、監査 (プレミアム) イベントをログに記録することができます。
 
@@ -168,6 +168,15 @@ Microsoft Purview の監査ソリューションの使用を開始するには�
 
 詳しい説明は、「[監査 (プレミアム) の設定](set-up-advanced-audit.md)」をご覧ください。
 
+## <a name="encrypt-audit-records-using-customer-key"></a>カスタマー キーを使用して監査レコードを暗号化する
+
+監査レコードのカスタマー キー暗号化を有効にすることができます。 監査は、[カスタマー キーを使ったサービス暗号化](customer-key-overview.md)に基づいて構築され、組織の監査データ内の機密情報を暗号化します。 カスタマー キーを実装すると、承認されていないシステムや Microsoft データ センターの担当者が監査パイプラインや保存中に監査データを表示するのを防ぐことで、追加の保護が提供されます。 カスタマー キーを使用して監査データを暗号化すると、組織が暗号化キーを提供および制御するため、規制またはコンプライアンスの義務を満たすのにも役立ちます。
+
+監査用にカスタマー キーを実装するには、暗号化階層を定義するマルチワークロード データ暗号化ポリシー (DEP) を作成する必要があります。 詳細な手順については、「[カスタマー キーの設定](customer-key-set-up.md)」を参照してください。
+
+> [!NOTE]
+> 組織内のすべての監査レコードが暗号化されているわけではありません。 そのサービス内のアクティビティの特定の監査レコードを生成する Microsoft Purview サービスは、監査レコードが暗号化されているかどうかを定義します。
+
 ## <a name="training"></a>トレーニング
 
-セキュリティ運用チーム、IT 管理者、コンプライアンス調査チームに監査 (標準) と監査 (プレミアム) の基礎についてトレーニングを行うことで、組織がより迅速に監査を利用して調査に役立てることができます。 Microsoft 365 は、組織内のこれらのユーザーが監査を始めるのに役立つ以下のリソースを提供します: [Microsoft 365 の電子情報開示と監査機能を説明する](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)。
+セキュリティ運用チーム、IT 管理者、コンプライアンス調査チームに監査 (標準) と監査 (プレミアム) の基礎についてトレーニングを行うことで、組織がより迅速に監査を利用して調査に役立てることができます。 Microsoft Purview は、組織内のこれらのユーザーが監査を始めるのに役立つ以下のリソースを提供します: [Microsoft Purview の電子情報開示と監査機能を説明する](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)。

@@ -1,5 +1,5 @@
 ---
-title: コンテンツを自動的に保持または削除するアイテム保持ポリシーを作成して構成する
+title: アイテム保持ポリシーを使用してコンテンツを自動的に保持または削除する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 5a57093ed4ecd5b87a62701e3c055888ed16a5ca
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 22373fddf6a4ccac718f9fede9d1bbc40b92681d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595325"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "65145319"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
@@ -40,7 +42,7 @@ ms.locfileid: "64595325"
 
 ## <a name="before-you-begin"></a>はじめに
 
-組織のグローバル管理者には、アイテム保持ポリシーを作成および編集できる完全な権限があります。 グローバル管理者としてサインインしていない場合は、「[Information Governance のアクセス許可情報](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels)」を参照してください。
+組織のグローバル管理者には、アイテム保持ポリシーを作成および編集できる完全な権限があります。 グローバル管理者としてサインインしていない場合は、「[Information Governance のアクセス許可情報](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels)」を参照してください。
 
 保持ラベル ポリシーを作成する前に、**アダプティブ** にするか、**静的** にするかどうかを決定します。 詳細については、「[保持用のアダプティブ ポリシー スコープまたは静的ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)」を参照してください。 アダプティブ ポリシーの使用を決定する場合は、保持ポリシーの作成前に 1 つ以上のアダプティブ スコープを作成し、保持ラベル ポリシーの作成プロセス中に選択します。 手順については、「[アダプティブ スコープの構成情報](retention-settings.md#configuration-information-for-adaptive-scopes)」を参照してください。
 
@@ -76,7 +78,7 @@ ms.locfileid: "64595325"
 > [!NOTE]
 > アイテム保持ポリシーは、現在プレビュー段階の [共有チャネル](/MicrosoftTeams/shared-channels)をサポートするようになりました。**Teams チャネル メッセージ** の場所に対するデータ保持設定を構成すると、チームに共有チャネルがある場合、それらはデータ保持設定を親チームから継承します。
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[情報ガバナンス]** > **[保持ポリシー]** を選択します。
+1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)から、[**データ ライフサイクル管理**]  >  [**アイテム保持ポリシー**] を選択します。
 
 2. [**新しいアイテム保持ポリシー**] を選択して、**アイテム保持ポリシー** 構成の作成を開始し、新しいアイテム保持ポリシーに名前を付けます。
 
@@ -132,7 +134,7 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
 >
 > この機能を使用するには、ご利用の Yammer ネットワークがハイブリッド モードではなく、[ネイティブ モード](/yammer/configure-your-yammer-network/overview-native-mode)になっている必要があります。
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[情報ガバナンス]** > **[保持ポリシー]** を選択します。
+1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)から、[**データ ライフサイクル管理**]  >  [**アイテム保持ポリシー**] を選択します。
 
 2. 新しいアイテム保持ポリシーを作成するには、[**新しいアイテム保持ポリシー**] を選択します。
 
@@ -180,7 +182,7 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
 - Microsoft 365 グループ
 - Skype for Business
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[情報ガバナンス]** > **[保持ポリシー]** を選択します。
+1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)から、[**データ ライフサイクル管理**]  >  [**アイテム保持ポリシー**] を選択します。
 
 2. [**新しいアイテム保持ポリシー**] を選択して、**アイテム保持ポリシー** 構成の作成を開始し、新しいアイテム保持ポリシーに名前を付けます。
 
@@ -210,7 +212,7 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
   
 ![アイテム保持ポリシーが有効になるタイミングの図。](../media/retention-policy-timings.png)
 
-まず、アイテム保持ポリシーを選択した場所に配布し、コンテンツに適用する必要があります。 保持ポリシーの配布状態は、コンプライアンス センターの **Retention ポリシー** ページから選択することでいつでも確認できます。 ポップアウト ウィンドウで、状態に **(エラー)** が表示され、場所の詳細に、ポリシーの展開またはポリシーの再展開に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) または [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください。
+まず、アイテム保持ポリシーを選択した場所に配布し、コンテンツに適用する必要があります。 アイテム保持ポリシーの配布状態は、Microsoft Purview コンプライアンス ポリシーの [**アイテム保持ポリシー**] ページから選択することでいつでも確認できます。 ポップアウト ウィンドウで、状態に **(エラー)** が表示され、場所の詳細に、ポリシーの展開またはポリシーの再展開に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) または [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください。
 
 1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)。
 
@@ -236,6 +238,6 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
 
 ## <a name="next-steps"></a>次の手順
 
-Exchange、SharePoint、OneDrive、またはMicrosoft 365 グループの一部のアイテムで、構成したアイテム保持ポリシー設定とは異なる保持設定が必要な場合は、[これらの例外の保持ラベルを作成](create-retention-labels-information-governance.md)します。
+Exchange、SharePoint、OneDrive、またはMicrosoft 365 グループの一部のアイテムで、構成したアイテム保持ポリシー設定とは異なる保持設定が必要な場合は、[これらの例外の保持ラベルを作成](create-retention-labels-data-lifecycle-management.md)します。
 
 ただし、ビジネス、法的、または規制上の記録保持要件の高価値アイテムのライフサイクル管理を探している場合は、[保持ラベルの作成と管理にファイル計画を使用](file-plan-manager.md)します。

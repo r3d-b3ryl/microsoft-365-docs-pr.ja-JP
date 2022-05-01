@@ -20,13 +20,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Microsoft 365 管理センターで、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 の試用版または有料サブスクリプションをキャンセルする方法について説明します。
-ms.date: 04/22/2022
-ms.openlocfilehash: 5dbf455b2c90a51aadd5d2e93b0739f93d138841
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.date: 04/29/2022
+ms.openlocfilehash: 4f01946c00a7497f23d086422ffa90718df78a9f
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092571"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145192"
 ---
 # <a name="cancel-your-business-subscription"></a>一般法人向けサブスクリプションをキャンセルします。
 
@@ -55,7 +55,7 @@ ms.locfileid: "65092571"
 
 サブスクリプションの開始または更新後 7 日以内にキャンセルする必要がある場合は、この記事で後述する「[サブスクリプションをキャンセルする手順](#steps-to-cancel-your-subscription)」を参照してください。
 
-7 日以上経過した場合は、[継続請求を無効にします](renew-your-subscription.md)。これにより、サブスクリプションに対してもう一度課金されるのを防ぎ、サブスクリプションの残りの期間、製品とサービスへのアクセスを維持できます。
+7 日以上経過した場合は、[継続請求をオフにします](renew-your-subscription.md)。 これにより、期間の終了時にサブスクリプションを更新できなくなります。  サブスクリプションの残りの部分については、製品とサービスに引き続きアクセスできます。 年間サブスクリプションをお持ちで、月額料金を支払っている場合は、サブスクリプション期間の残りの期間に対して毎月課金されます。
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>請求プロファイルがない場合
 
