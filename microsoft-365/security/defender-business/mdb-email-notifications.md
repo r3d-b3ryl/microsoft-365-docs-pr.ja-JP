@@ -1,39 +1,33 @@
 ---
 title: セキュリティ チームの電子メール通知を設定する
-description: Microsoft Defender for Businessに関するアラートと脆弱性についてユーザーに伝える電子メール通知を設定する
+description: Defender for Business のアラートと脆弱性についてセキュリティ チームに通知するように電子メール通知を設定します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a65634a5827e60d710cec56ca10835c73053cb10
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: b6381f5bfa8ebe4f7c23a16d9a214cadb4e511e6
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862854"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174479"
 ---
 # <a name="set-up-email-notifications"></a>電子メール通知を設定する
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 セキュリティ チームの電子メール通知を設定できます。 その後、アラートが生成されるか、新しい脆弱性が検出されると、セキュリティ チームのユーザーに自動的に通知されます。 
 
 ## <a name="what-to-do"></a>操作
 
 1. [電子メール通知の種類について説明します](#types-of-email-notifications)。
-
 2. [電子メール通知の設定を表示および編集します](#view-and-edit-email-notifications)。
-
 3. [次の手順に進みます](#next-steps)。
 
 

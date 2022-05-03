@@ -1,8 +1,8 @@
 ---
 title: Python API ガイドを使用した高度なハンティング
 ms.reviewer: ''
-description: 例を使用して、Python を使用して Microsoft Defender for Endpoint API を使用してクエリを実行する方法について説明します。
-keywords: apis、サポートされている API、高度な検索、クエリ
+description: 例を使用して、Microsoft Defender for Endpoint API を使用して Python を使用してクエリを実行する方法について説明します。
+keywords: apis, サポートされている API, 高度な捜索, クエリ
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 73be2b3c2aa40bb88ac6ccff60eec5cb7f55338c
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 99fc848088725f7b28d91eebc78327c688059de8
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300779"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174770"
 ---
 # <a name="advanced-hunting-using-python"></a>Python を使用した高度な追求
 
@@ -36,13 +36,13 @@ ms.locfileid: "61300779"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Python を使用して高度なクエリを実行するには [、「Advanced Hunting API」を参照してください](run-advanced-query-api.md)。
+Python を使用して高度なクエリを実行する方法については、「 [Advanced Hunting API](run-advanced-query-api.md)」を参照してください。
 
 このセクションでは、Python サンプルを共有してトークンを取得し、それを使用してクエリを実行します。
 
-> **前提条件**: 最初にアプリを [作成する必要があります](apis-intro.md)。
+> **前提条件**: 最初に [アプリを作成する必要があります](apis-intro.md)。
 
-## <a name="get-token"></a>トークンの取得
+## <a name="get-token"></a>トークンを取得する
 
 - 以下のコマンドを実行します。
 
@@ -76,16 +76,16 @@ aadToken = jsonResponse["access_token"]
 
 どこ
 
-- tenantId: クエリを実行するテナントの ID (つまり、このテナントのデータに対してクエリが実行されます)
-- appId: アプリの ID (Azure AD Microsoft Defender for Endpoint に対する 「高度なクエリの実行」 アクセス許可がアプリに必要です)
-- appSecret: アプリのAzure AD秘密
+- tenantId: クエリを実行するテナントの ID (つまり、このテナントのデータでクエリが実行されます)
+- appId: Azure AD アプリの ID (アプリには、Microsoft Defender for Endpointに対する "高度なクエリの実行" アクセス許可が必要です)
+- appSecret: Azure AD アプリのシークレット
 
-## <a name="run-query"></a>クエリの実行
+## <a name="run-query"></a>クエリを実行する
 
  次のクエリを実行します。
 
 ```python
-query = 'RegistryEvents | limit 10' # Paste your own query here
+query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 headers = { 
@@ -103,12 +103,12 @@ schema = jsonResponse["Schema"]
 results = jsonResponse["Results"]
 ```
 
-- schema には、クエリの結果のスキーマが含まれている
-- 結果にはクエリの結果が含まれる
+- schema には、クエリの結果のスキーマが含まれています
+- 結果にはクエリの結果が含まれます
 
 ### <a name="complex-queries"></a>複雑なクエリ
 
-複雑なクエリ (または複数行クエリ) を実行する場合は、クエリをファイルに保存し、上記のサンプルの最初の行ではなく、次のコマンドを実行します。
+複雑なクエリ (または複数行のクエリ) を実行する場合は、クエリをファイルに保存し、上記のサンプルの最初の行の代わりに、次のコマンドを実行します。
 
 ```python
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file
@@ -118,9 +118,9 @@ queryFile.close()
 
 ## <a name="work-with-query-results"></a>クエリ結果を操作する
 
-これで、クエリ結果を使用できます。
+これで、クエリ結果を使用できるようになりました。
 
-結果を反復処理するには、次の操作を実行します。
+結果を反復処理するには、次の操作を行います。
 
 ```python
 for result in results:
@@ -128,7 +128,7 @@ for result in results:
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
 ```
 
-クエリの結果を CSV 形式でファイル形式で出力するにはfile1.csvを実行します。
+クエリの結果を CSV 形式でファイルに出力するにはfile1.csv次の手順に従います。
 
 ```python
 import csv
@@ -142,7 +142,7 @@ for result in results:
 outputFile.close()
 ```
 
-file1.json で JSON 形式でクエリの結果を出力するには、次の操作を行います。
+ファイル file1.json で JSON 形式でクエリの結果を出力するには、次の手順を実行します。
 
 ```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
@@ -152,6 +152,6 @@ outputFile.close()
 
 ## <a name="related-topic"></a>関連トピック
 
-- [エンドポイント API 用 Microsoft Defender](apis-intro.md)
+- [Microsoft Defender for Endpoint API](apis-intro.md)
 - [高度な追求 API](run-advanced-query-api.md)
 - [PowerShell を使用した高度な追求](run-advanced-query-sample-powershell.md)

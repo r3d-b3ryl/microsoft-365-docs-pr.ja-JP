@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: マネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseを使用するための要件の一覧を取得します。
-ms.openlocfilehash: 06d5c5bb0de76ecc8ba9fc28677f480f5f4d5561
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: ca5a736c6b14b77f433b07480eba718b4f0e55c2
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023263"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174021"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの要件
 
@@ -32,7 +32,7 @@ Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (M
 さらに、各 MSP カスタマー テナントは、次の要件を満たすことで Lighthouse の資格を得る必要があります。
 
 - カスタマー テナントを管理できるようにするには、マネージド サービス プロバイダー (MSP) に対して委任されたアクセスが設定されている必要があります*
-- 少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、またはWindows 365 Businessライセンスが必要です
+- 少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、Windows 365 Business、またはMicrosoft Defender for Businessライセンスが必要です
 - ライセンスを持つユーザーが 1,000 人以下である必要があります
 
 *お客様を Lighthouse にオンボードするには、委任された管理特権 (DAP) が必要です。 また、より安全な委任アクセスを有効にするために、顧客と共に詳細な委任管理特権 (GDAP) を確立することをお勧めします。 DAP と GDAP は共存していますが、両方のモデルが配置されているお客様に対して GDAP が優先されます。 近いうちに、GDAP (DAP なし) を持つお客様は、Lighthouse にオンボードできるようになります。

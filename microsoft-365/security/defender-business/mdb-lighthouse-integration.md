@@ -1,40 +1,39 @@
 ---
 title: Microsoft 365 LighthouseとMicrosoft Defender for Business
-description: Microsoft Defender for BusinessとMicrosoft 365 Lighthouseの統合方法について説明します
+description: Microsoft Defender for Businessが Microsoft パートナー向けのセキュリティ ソリューションであるMicrosoft 365 Lighthouseとどのように統合されるかを確認します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 7068d74cf1ca91e0c6584552f833f4704eab8173
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 6dcc0ad7d03031ed0cc41aadeba901eff666943b
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862810"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174200"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 LighthouseとMicrosoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
-
 ## <a name="microsoft-defender-for-business-integrates-with-microsoft-365-lighthouse"></a>Microsoft Defender for BusinessとMicrosoft 365 Lighthouseの統合
 
-Microsoft クラウド ソリューション プロバイダー (CSP) で[Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)がある場合は、顧客 (中小企業) のセキュリティを管理できます。 Microsoft Defender for Businessは、Microsoft 365 Lighthouseと統合するように設計されています。 これらの機能が使用可能になると、Microsoft 365 Lighthouse ポータル ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)) でテナント間のセキュリティ インシデントを表示できます。 
+Microsoft クラウド ソリューション プロバイダー (CSP) で[Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)がある場合は、顧客 (中小企業) のセキュリティを管理できます。 Microsoft Defender for Businessは、Microsoft 365 Lighthouse ポータル ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)) でテナント間のセキュリティ インシデントを表示できるように、Microsoft 365 Lighthouseと統合するように設計されています。 
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="Microsoft 365 Lighthouseのインシデントリストのスクリーンショット":::
 
 インシデントの一覧にアクセスするには、Microsoft 365 Lighthouseのホーム ページで[**セキュリティ インシデント**] カードを探し、[**すべてのインシデントの表示**] を選択します。
+
+> [!IMPORTANT]
+> 機能は引き続きロールアウトされています。これらの機能がまだない場合は、すぐに使用する必要があります。
 
 ## <a name="learn-more-about-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの詳細を確認する
 

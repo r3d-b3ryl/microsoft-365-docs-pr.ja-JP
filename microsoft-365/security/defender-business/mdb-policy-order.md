@@ -1,32 +1,28 @@
 ---
 title: Microsoft Defender for Businessでポリシーの順序を理解する
-description: Microsoft Defender for Businessのポリシーを使用した優先度の順序について説明します
+description: Defender for Business を使用して会社のデバイスを保護するためのサイバーセキュリティ ポリシーの優先順位について説明します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 56b7bbcb95bc00c8647fb4cc39e0d1e0611596ab
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 4003585c82c835c21218fd1200b3468140c8370b
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862172"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174095"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでポリシーの順序を理解する
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 ## <a name="policy-order-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでのポリシーの順序
 

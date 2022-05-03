@@ -1,33 +1,29 @@
 ---
 title: Microsoft Defender for Businessでデバイスを管理する
-description: Microsoft Defender for Businessでデバイスを管理する方法について説明します
+description: Defender for Business でデバイスを追加、削除、管理する方法、中小企業向けのエンドポイント保護について説明します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 453cce2c52902116bc3eaa71f5e6c998ab4164a1
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: e08c53dd949858a1fcc9af9c8553c5d0eed07cef
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862832"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173087"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでデバイスを管理する
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Microsoft Defender for Businessでは、次のようにデバイスを管理できます。
 
@@ -69,7 +65,7 @@ Microsoft Defender for Businessでは、次のようにデバイスを管理で�
 
 [「Microsoft Defender for Businessにデバイスをオンボードする」を](mdb-onboard-devices.md)参照してください。
 
-## <a name="offboard-a-device"></a>デバイスをオフボードにする
+## <a name="offboard-a-device"></a>デバイスのオフボード
 
 [デバイスのオフボードを参照してください](mdb-offboard-devices.md)。
 

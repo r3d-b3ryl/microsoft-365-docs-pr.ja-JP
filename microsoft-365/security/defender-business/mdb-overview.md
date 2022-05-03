@@ -1,34 +1,30 @@
 ---
-title: Microsoft Defender for Business の概要
-description: セットアップ、作業の開始、サービスの使用方法など、Microsoft Defender for Businessについて説明します
+title: Microsoft Defender for Businessとは
+description: Microsoft Defender for Businessは、中小企業向けのサイバーセキュリティ ソリューションです。 Defender for Business は、デバイス全体の脅威から保護します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 8e382e8cf1c4863ffa67bc7687f549d6ae0a4f81
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3589b6a0a0cc7af9e2bcfcb11541309042871591
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101471"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173287"
 ---
-# <a name="overview-of-microsoft-defender-for-business"></a>Microsoft Defender for Business の概要
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
+# <a name="what-is-microsoft-defender-for-business"></a>Microsoft Defender for Businessとは
 
 Microsoft Defender for Businessは、特に中小規模のビジネス (最大 300 人の従業員) 向けに設計された新しいエンドポイント セキュリティ ソリューションです。 このエンドポイント セキュリティ ソリューションを使用すると、ランサムウェア、マルウェア、フィッシング、その他の脅威から会社のデバイスをより適切に保護できます。 
 
@@ -65,16 +61,17 @@ Defender for Business を使用すると、ビジネスで使用するデバイ�
    - [Microsoft Defender for Businessを取得する方法を確認する](get-defender-business.md)
 
 - **脅威保護機能の設定と構成について説明します** 
+   - [試用版プレイブックを使用する: Microsoft Defender for Business](trial-playbook-defender-business.md)
+   - [簡略化された構成プロセスについて説明します](mdb-simplified-configuration.md)
    - [Defender for Business を設定して構成する方法を確認する](mdb-setup-configuration.md)
 
 - Microsoft 365 Defender ポータルから始めて、**Defender for Business の使用を開始するのに役立ちます** 
    - [Microsoft 365 Defender ポータルを移動する](mdb-get-started.md)
-   - [プレビュー のシナリオ、チュートリアル、シミュレーションを試す](mdb-tutorials.md)
+   - [シナリオ、チュートリアル、シミュレーションを試す](mdb-tutorials.md)
 
 - **デバイスとセキュリティ ポリシーの管理に関するガイダンスを提供する**
-   - [デバイスの管理](mdb-manage-devices.md)
+   - [デバイスを監視または管理する](mdb-manage-devices.md)
    - [セキュリティ ポリシーを表示または編集する](mdb-view-edit-policies.md)
-   - [ファイアウォール ポリシーのカスタム ルールを管理する](mdb-custom-rules-firewall.md)  
 
 ## <a name="next-steps"></a>次の手順
 

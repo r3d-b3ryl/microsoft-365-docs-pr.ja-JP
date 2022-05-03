@@ -1,13 +1,12 @@
 ---
 title: Microsoft Defender for Businessで脅威&脆弱性管理ダッシュボードを表示する
-description: 脅威&脅威&脅威&脆弱性管理ダッシュボードを使用して、対処すべき重要な項目を確認します。
+description: 脅威&脅威&脅威&脆弱性管理ダッシュボードを使用して、Defender for Business で対処する重要な項目を確認します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: b7761d7ad35f00ec9637c117e9a84b6258ad1904
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 25085dc22fd2f939e10833c98bc4fb599dd5a11f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101427"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172630"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessで脅威&脆弱性管理ダッシュボードを使用する
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Microsoft Defender for Businessには、セキュリティ チームの時間と労力を節約するために設計された脅威&脆弱性管理ダッシュボードが含まれています。 公開スコアを提供するだけでなく、公開されたデバイスとセキュリティに関する推奨事項に関する情報を表示することもできます。 脅威&脆弱性管理ダッシュボードを使用すると、次のことができます。
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e5d2b2bd47ba30aaf152171605947bb9a627480
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1f387696797d52805495777be0850ebe135fd38a
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666352"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173107"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -165,7 +165,7 @@ ms.locfileid: "64666352"
 | connections  | すべてのアクティブな接続を表示します。  | Y  | N  | N  |
 | dir  | ディレクトリ内のファイルとサブディレクトリの一覧を表示します。  | Y  | Y  | Y  |
 | drivers  | デバイスにインストールされているすべてのドライバーが表示されます。  | Y  | N  | N  |
-| fg `<command ID>`  | 指定したジョブをフォアグラウンドのフォアグラウンドに配置し、現在のジョブにします。  注: pid ではなくジョブから使用可能な 'コマンド ID' を取得します。  | Y  | Y  | Y  |
+| fg `<command ID>`  | 指定したジョブをフォアグラウンドに配置し、現在のジョブにします。  注: pid ではなくジョブから使用可能な 'コマンド ID' を取得します。  | Y  | Y  | Y  |
 | fileinfo  | ファイルに関する情報を取得します。  | Y  | Y  | Y  |
 | findfile  | デバイス上の特定の名前でファイルを検索します。  | Y  | Y  | Y  |
 | Getfile <file_path>  | ファイルをダウンロードします。  | Y  | Y  | Y  |
@@ -346,7 +346,7 @@ processes > output.txt
 - デバイスは一度に 1 つのセッションにのみ存在できます。
 - 次のファイル サイズ制限が適用されます。
   - `getfile` 制限: 3 GB
-  - `fileinfo` 制限: 10 GB
+  - `fileinfo` 制限: 30 GB
   - `library` 制限: 250 MB
 
 ## <a name="related-article"></a>関連記事

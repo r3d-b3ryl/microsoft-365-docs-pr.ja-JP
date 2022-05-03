@@ -1,37 +1,33 @@
 ---
 title: Microsoft Defender for Businessのデバイス グループ
-description: Microsoft Defender for Businessのデバイス グループについて学習する
+description: セキュリティ ポリシーは、Defender for Business のデバイス グループを介してデバイスに適用されます。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6c02a92132f7f5249f2ba67ca2841902b889d52b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: abb1c694f98ace7595f1389e3270ca3479d0c745
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861737"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172211"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessのデバイス グループ
 
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
-
 Microsoft Defender for Businessでは、デバイス グループと呼ばれる特定のコレクションを通じてデバイスにポリシーが適用されます。 
 
-**この記事では、次について説明します**。  
+**この記事では、以下について説明します。**  
 
 - [デバイス グループとは](#what-is-a-device-group)   
 - [Defender for Business でデバイス グループを作成する方法](#create-a-new-device-group)
@@ -62,29 +58,29 @@ Defender for Business には、使用できる既定のデバイス グループ
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-2. ナビゲーション ウィンドウで、[ **デバイスの構成**] を選択します。 
+2. ナビゲーション ウィンドウで、**[デバイスの構成]** を選択します。 
 
-3. 次のいずれかのアクションを実行します。
+3. 次のどちらかの手順を実行します。
 
-    1. 既存のポリシーを選択し、[ **編集]** を選択します。
+    1. 既存のポリシーを選択し、**[編集]** を選択します。
     2. **[+ 追加]** を選択して新しいポリシーを作成します。
 
     > [!TIP]
-    > ポリシーの作成または編集に関するヘルプについては、「[Microsoft Defender for Businessでポリシーを表示または編集する](mdb-view-edit-policies.md)」を参照してください。
+    > ポリシーの作成または編集に関するヘルプについては、「[Microsoft Defender for Business でポリシーを表示または編集する](mdb-view-edit-policies.md)」を参照してください。
 
-4. [全般情報] ステップで **、情報** を確認し、必要に応じて編集し、[ **次へ**] を選択します。
+4. **[一般情報]** ステップで 、情報を確認し、必要に応じて編集し、**[次へ]** を選択します。
 
-5. [ **+ 新しいグループの作成**] を選択します。 
+5. **[+ 新しいグループの作成]** を選択します。 
 
-6. デバイス グループの名前と説明を指定し、[ **次へ**] を選択します。
+6. デバイス グループの名前と説明を指定し、**[次へ]** を選択します。
 
-7. グループに含めるデバイスを選択し、[ **グループの作成**] を選択します。
+7. グループに含めるデバイスを選択し、**[グループの作成]** を選択します。
 
-8. [ **デバイス グループ** ] ステップで、ポリシーのデバイス グループの一覧を確認します。 必要に応じて、リストからグループを削除します。 **[次へ]** を選択します。
+8. **[デバイス グループ]** ステップで、ポリシーのデバイス グループのリストを確認します。 必要に応じて、リストからグループを削除します。 **[次へ]** を選択します。
 
-9. [ **構成設定** ] ページで、必要に応じて設定を確認および編集し、[ **次へ**] を選択します。 これらの設定の詳細については、「 [構成設定」を](mdb-next-gen-configuration-settings.md)参照してください。
+9. **[構成設定]** ページで、必要に応じて設定を確認および編集し、**[次へ]** を選択します。 これらの設定の詳細については、「 [構成設定」を](mdb-next-gen-configuration-settings.md)参照してください。
 
-10. [ **ポリシーの確認** ] ステップで、すべての設定を確認し、必要な編集を行い、[ **ポリシーの作成** ] または [ **ポリシーの更新]** を選択します。
+10. **[ポリシーの確認]** ステップで、すべての設定を確認し、必要な編集を行ってから、**[ポリシーの作成]** または **[ポリシーの更新]** を選択します。
 
 ## <a name="view-an-existing-device-group"></a>既存のデバイス グループを表示する
 
@@ -92,17 +88,17 @@ Defender for Business には、使用できる既定のデバイス グループ
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-2. ナビゲーション ウィンドウで、[ **デバイスの構成**] を選択します。 
+2. ナビゲーション ウィンドウで、**[デバイスの構成]** を選択します。 
 
-3. 次のいずれかのアクションを実行します。
+3. 次のどちらかの手順を実行します。
 
-    1. 既存のポリシーを選択し、[ **編集]** を選択します。
+    1. 既存のポリシーを選択し、**[編集]** を選択します。
     2. **[+ 追加]** を選択して新しいポリシーを作成します。
 
     > [!TIP]
-    > ポリシーの作成または編集に関するヘルプについては、「[Microsoft Defender for Businessでポリシーを表示または編集する](mdb-view-edit-policies.md)」を参照してください。
+    > ポリシーの作成または編集に関するヘルプについては、「[Microsoft Defender for Business でポリシーを表示または編集する](mdb-view-edit-policies.md)」を参照してください。
 
-4. [全般情報] ステップで **、情報** を確認し、必要に応じて編集し、[ **次へ**] を選択します。
+4. **[一般情報]** ステップで 、情報を確認し、必要に応じて編集し、**[次へ]** を選択します。
 
 5. [ **既存のグループを使用する**] を選択します。 ポップアップが開き、デバイス グループが表示されます。 デバイス グループがまだない場合は、新しいデバイス グループの作成を求めるメッセージが表示されます。
 
@@ -112,7 +108,7 @@ Defender for Business には、使用できる既定のデバイス グループ
 
 :::image type="content" source="media/add-all-devices-option.png" alt-text="[すべてのデバイスの追加] オプションのスクリーンショット。":::
 
-このオプションを選択すると、Microsoft エンドポイント マネージャーに登録されているすべてのデバイス (Microsoft Intuneを含む) は、既定で作成または編集しているポリシーを受け取ります。 
+このオプションを選択すると、Microsoft Intuneに登録されているすべてのデバイスは、既定で作成または編集しているポリシーを受け取ります。 
 
 ## <a name="next-steps"></a>次の手順
 

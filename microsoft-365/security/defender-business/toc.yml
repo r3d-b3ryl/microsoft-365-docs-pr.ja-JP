@@ -5,8 +5,10 @@
       items:
         - name: Microsoft Defender for Businessとは
           href: mdb-overview.md
-        - name: 簡略化された構成プロセス
+        - name: 簡略化された構成
           href: mdb-simplified-configuration.md
+        - name: 試用版プレイブック - Defender for Business
+          href: trial-playbook-defender-business.md
         - name: 中小規模のビジネスのプランを比較する
           href: compare-mdb-m365-plans.md
         - name: Microsoft 365 Lighthouse との統合
@@ -49,7 +51,7 @@
           href: mdb-review-remediation-actions.md
         - name: レポートの表示と使用
           href: mdb-reports.md
-    - name: セキュリティ ポリシーの管理
+    - name: セキュリティ ポリシーを表示または編集する
       items:
         - name: ポリシーの表示、編集、作成
           href: mdb-view-edit-create-policies.md
@@ -61,7 +63,7 @@
           href: mdb-firewall.md
         - name: ファイアウォール ポリシーのルールを管理する
           href: mdb-custom-rules-firewall.md
-    - name: デバイスを管理する
+    - name: デバイスを監視または管理する
       items:
         - name: デバイスの表示と管理
           href: mdb-manage-devices.md
@@ -71,6 +73,8 @@
           href: mdb-offboard-devices.md
     - name: 参照情報
       items:
+        - name: API リファレンス情報
+          href: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
         - name: ヘルプを入手する方法またはサポートに問い合わせる方法
           href: mdb-get-help.md
         - name: よく寄せられる質問

@@ -1,13 +1,12 @@
 ---
 title: Microsoft Defender for Businessでロールとアクセス許可を割り当てる
-description: Microsoft Defender for Businessでロールとアクセス許可を割り当てる方法について説明します
+description: サイバーセキュリティ チームにロールを割り当てます。 Defender for Business のこれらのロールとアクセス許可について説明します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,26 +15,21 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e4a3be91ff46626654f0c0f7b027557958429b33
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 03295989e1ee44ab43fe0cc53e4029a6c4307ea8
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862678"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172647"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでロールとアクセス許可を割り当てる
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Microsoft Defender for Businessの構成、レポートの表示、検出された脅威に対する応答アクションの実行など、Microsoft 365 Defender ポータルでタスクを実行するには、セキュリティ チームに適切なアクセス許可を割り当てる必要があります。 アクセス許可は、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) または[Azure Active Directory](/azure/active-directory/roles/manage-roles-portal)で割り当てられているロールを通じて付与されます。 
 
 ## <a name="what-to-do"></a>操作
 
 1. [Defender for Business のロールについて説明します](#roles-in-defender-for-business)。
-
 2. [セキュリティ チームのロールの割り当てを表示または編集](#view-or-edit-role-assignments)します。
-
 3. [次の手順に進みます](#next-steps)。
 
 >

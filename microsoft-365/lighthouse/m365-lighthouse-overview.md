@@ -17,16 +17,16 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: マネージド サービス プロバイダー (MSP) の場合、Microsoft 365 Lighthouseが顧客テナントを 1 か所でセキュリティで保護および管理するのに役立つ方法について説明します。
-ms.openlocfilehash: 9a75cd43ac09d63c4524495a3146bf0b860627a4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 218442ee6714ece4c984fbf13478e5c4f3982101
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094684"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173967"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの概要
 
-Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (MSP) が、Microsoft 365 Business PremiumまたはMicrosoft 365 E3を使用している小規模および中規模のビジネス (SMB) のお客様向けに大規模にデバイス、データ、ユーザーをセキュリティで保護および管理するのに役立つ管理ポータルです。
+Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (MSP) が小規模および中規模のビジネス (SMB) のお客様向けに大規模にデバイス、データ、ユーザーをセキュリティで保護および管理するのに役立つ管理ポータルです。
 
 Lighthouse は、SMB のお客様に合わせたセキュリティ構成ベースラインを推奨し、すべての顧客環境でマルチテナント ビューを提供することで、顧客テナントのオンボードを簡素化します。 Lighthouse を使用すると、MSP は顧客の管理をスケーリングし、最も重要な点に焦点を当て、リスクをすばやく見つけて調査し、顧客を健全で安全な状態にするためのアクションを実行できます。
 

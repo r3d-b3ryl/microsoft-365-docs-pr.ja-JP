@@ -1,33 +1,29 @@
 ---
 title: デバイスをMicrosoft Defender for Businessにオンボードする
-description: Microsoft Defender for Businessのデバイス オンボード オプションについて説明します
+description: デバイスを Defender for Business にオンボードし、初日からデバイスを保護する方法について説明します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 77eb8c0aa4d0ebd78788e9701e4933788af2e46c
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: ce3c458013a96f845da528104997b63360879c56
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915909"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174060"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>デバイスをMicrosoft Defender for Businessにオンボードする
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Microsoft Defender for Businessを使用すると、会社のデバイスのオンボードから選択できるオプションがいくつかあります。 この記事では、オプションについて説明し、オンボードのしくみの概要について説明します。
 
@@ -38,14 +34,8 @@ Microsoft Defender for Businessを使用すると、会社のデバイスのオ�
 
 ## <a name="what-to-do"></a>操作
 
-1. オペレーティング システムのタブを選択します。 
-
-   - Windows クライアント
-   - macOS コンピューター
-   - モバイル デバイス
-
+1. オペレーティング システムのタブ (**Windows クライアント**、**macOS コンピューター**、**モバイル デバイス**) を選択します。
 2. オンボード オプションを表示し、選択したタブのガイダンスに従います。
-
 3. 次の手順に進みます。
 
 ## <a name="windows-clients"></a>[**Windows クライアント**](#tab/WindowsClientDevices)
@@ -55,20 +45,20 @@ Microsoft Defender for Businessを使用すると、会社のデバイスのオ�
 次のいずれかのオプションを選択して、Windowsクライアント デバイスを Defender for Business にオンボードします。
 
 - [ローカル スクリプト](#local-script-for-windows-clients) (Microsoft 365 Defender ポータルで手動でデバイスをオンボードする場合)
-- [グループ ポリシー](#group-policy-for-windows-clients)
-- [Microsoft エンドポイント マネージャー](#endpoint-manager-for-windows-clients) ([Microsoft 365 Business Premium](../../business-premium/index.md)に含まれています)
+- [グループ ポリシー](#group-policy-for-windows-clients) (組織内でグループ ポリシーを既に使用している場合)
+- [Microsoft Intune](#microsoft-intune-for-windows-clients) ([Microsoft 365 Business Premium](../../business-premium/index.md)に含まれています)
 
 
 ### <a name="local-script-for-windows-clients"></a>Windows クライアントのローカル スクリプト
 
-ローカル スクリプトを使用して、Windowsクライアント デバイスをオンボードできます。 デバイスでオンボード スクリプトを実行すると、Azure Active Directoryで信頼が作成され (その信頼がまだ存在しない場合)、デバイスがMicrosoft エンドポイント マネージャーに登録され (まだ登録されていない場合)、デバイスが Defender for Business にオンボードされます。 ローカル スクリプト メソッドは、現在エンドポイント マネージャー (またはMicrosoft Intune) がない場合でも機能します。 この方法を使用して、一度に最大 10 台のデバイスをオンボードすることをお勧めします。
+ローカル スクリプトを使用して、Windowsクライアント デバイスをオンボードできます。 デバイスでオンボード スクリプトを実行すると、Azure Active Directoryを使用して信頼が作成され (その信頼がまだ存在しない場合)、デバイスがMicrosoft Intuneに登録され (まだ登録されていない場合)、デバイスが Defender for Business にオンボードされます。 ローカル スクリプト メソッドは、現在Intuneがない場合でも機能します。 この方法を使用して、一度に最大 10 台のデバイスをオンボードすることをお勧めします。
 
 > [!TIP]
 > ローカル スクリプト メソッドを使用する場合は、一度に最大 10 台のデバイスをオンボードすることをお勧めします。
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動し、サインインします。
 
-2. ナビゲーション ウィンドウで **[設定** > **Endpoints**] を選択し、[**デバイス管理**] で [**オンボード**] を選択します。
+2. ナビゲーション ウィンドウで [**設定**]  >  [**エンドポイント**] を選択し、[**デバイス管理**] で [**オンボード**] を選択します。
 
 3. **Windows 10や 11** などのオペレーティング システムを選択し、[**展開方法]** セクションで [**ローカル スクリプト**] を選択します。 
 
@@ -76,7 +66,7 @@ Microsoft Defender for Businessを使用すると、会社のデバイスのオ�
 
 5. Windows デバイスで、構成パッケージの内容をデスクトップ フォルダーなどの場所に展開します。 という名前 `WindowsDefenderATPLocalOnboardingScript.cmd`のファイルが必要です。 
 
-6. 管理者としてコマンド プロンプトを開きます。
+6. 管理者としてコマンド プロンプト ウィンドウを開きます。
 
 7. スクリプト ファイルの場所を入力します。 たとえば、ファイルをデスクトップ フォルダーにコピーした場合は、次のように入力 `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`し、Enter キーを押します (または **[OK**] を選択します)。
 
@@ -86,9 +76,9 @@ Microsoft Defender for Businessを使用すると、会社のデバイスのオ�
 
 グループ ポリシーを使用してWindows クライアントをオンボードする場合は、「グループ ポリシーを[使用したデバイスのオンボードWindows](../defender-endpoint/configure-endpoints-gp.md)」のガイダンスに従います。 この記事では、Microsoft Defender for Endpointにオンボードする手順について説明しますが、Defender for Business にオンボードする手順は似ています。
 
-### <a name="endpoint-manager-for-windows-clients"></a>Windows クライアントのエンドポイント マネージャー
+### <a name="microsoft-intune-for-windows-clients"></a>Windows クライアントのMicrosoft Intune
 
-サブスクリプションに[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)が含まれている場合は、Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) でWindowsクライアントやその他のデバイスをオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてエンドポイント マネージャーがあります。 エンドポイント マネージャーには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune)機能と[モバイル デバイス管理機能が含まれます](/mem/intune/fundamentals/what-is-device-management)。 
+サブスクリプションにIntuneが含まれている場合は、Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) でWindowsクライアントとその他のデバイスをオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてIntuneがあります。  
 
 Intuneにデバイスを登録するには、いくつかの方法があります。 次のいずれかの方法から始めることをお勧めします。
 
@@ -103,7 +93,7 @@ Intuneにデバイスを登録するには、いくつかの方法がありま�
 
 2. **Azure Active Directory** >  **Mobility (MDM と MAM)** > **Microsoft Intune** を選択します。
 
-3. MDM ユーザー スコープと MAM ユーザー スコープを構成します。
+3. **MDM ユーザー スコープ** と **MAM ユーザー スコープ** を構成します。
 
    :::image type="content" source="media/mem-mam-scope-azure-ad.png" alt-text="Intuneで MDM ユーザー スコープと MAM ユーザー スコープを設定するスクリーンショット。":::
 
@@ -136,11 +126,11 @@ Intuneにデバイスを登録するには、いくつかの方法がありま�
 
 Windowsデバイスを Defender for Business にオンボードしたら、Windows デバイスで検出テストを実行して、すべてが正しく動作していることを確認できます。
 
-1. Windows デバイスで、フォルダーを作成します`C:\test-MDATP-test`。
+1. Windows デバイスで、フォルダーを作成します: `C:\test-MDATP-test`。
 
-2. 管理者としてコマンド プロンプトを開きます。
+2. 管理者としてコマンド プロンプト ウィンドウを開きます。
 
-3. コマンド プロンプト ウィンドウで、次の PowerShell コマンドを実行します。
+3. コマンド プロンプト ウィンドウで、次の PowerShell コマンドを実行します:
 
    ```powershell
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
@@ -150,7 +140,7 @@ Windowsデバイスを Defender for Business にオンボードしたら、Windo
 
 ## <a name="view-a-list-of-onboarded-devices"></a>オンボードされたデバイスの一覧を表示する
 
-Defender for Business にオンボードされているデバイスの一覧を表示するには、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、ナビゲーション ウィンドウの [**エンドポイント**] で [**デバイスのインベトリ**] を選択します。
+Defender for Business にオンボードされているデバイスの一覧を表示するには、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、ナビゲーション ウィンドウの [**エンドポイント**] で [**デバイス インベントリ**] を選択します。
 
 ## <a name="next-steps"></a>次の手順
 
@@ -168,15 +158,15 @@ Defender for Business にオンボードされているデバイスの一覧を�
 macOS デバイスをオンボードするには、次のいずれかのオプションを選択します。
 
 - [macOS 用のローカル スクリプト](#local-script-for-macos) (*推奨*)
-- [macOS のエンドポイント マネージャー](#endpoint-manager-for-macos)
+- [macOS のIntune](#microsoft-intune-for-macos)
 
 ### <a name="local-script-for-macos"></a>macOS 用のローカル スクリプト
 
-macOS デバイスでローカル スクリプトを実行すると、Azure Active Directoryを使用して信頼が作成され (その信頼がまだ存在しない場合)、デバイスがMicrosoft エンドポイント マネージャーに登録され (まだ登録されていない場合)、デバイスが Defender for Business にオンボードされます。 ローカル スクリプト メソッドは、現在エンドポイント マネージャー (またはMicrosoft Intune) がない場合でも機能します。 この方法を使用して、一度に最大 10 台のデバイスをオンボードすることをお勧めします。
+macOS デバイスでローカル スクリプトを実行すると、Azure Active Directoryを使用して信頼が作成され (その信頼がまだ存在しない場合)、Microsoft Intuneにデバイスが登録され (まだ登録されていない場合)、デバイスが Defender for Business にオンボードされます。 ローカル スクリプト メソッドは、現在Intuneがない場合でも機能します。 この方法を使用して、一度に最大 10 台のデバイスをオンボードすることをお勧めします。
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動し、サインインします。
 
-2. ナビゲーション ウィンドウで **[設定** > **Endpoints**] を選択し、[**デバイス管理**] で [**オンボード**] を選択します。
+2. ナビゲーション ウィンドウで [**設定**]  >  [**エンドポイント**] を選択し、[**デバイス管理**] で [**オンボード**] を選択します。
 
 3. **macOS** を選択し、[**展開方法]** セクションで [**ローカル スクリプト**] を選択します。 
 
@@ -196,9 +186,9 @@ macOS デバイスでローカル スクリプトを実行すると、Azure Acti
 
 11. デバイスがIntuneに登録されたら、デバイス グループに追加できます。 [Microsoft Defender for Businessのデバイス グループの詳細について説明](mdb-create-edit-device-groups.md)します。
 
-### <a name="endpoint-manager-for-macos"></a>macOS のエンドポイント マネージャー
+### <a name="microsoft-intune-for-macos"></a>macOS のMicrosoft Intune
 
-サブスクリプションに[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)が含まれている場合は、Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) で macOS デバイスをオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてエンドポイント マネージャーがあります。 エンドポイント マネージャーには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune)機能と[モバイル デバイス管理機能が含まれます](/mem/intune/fundamentals/what-is-device-management)。 
+サブスクリプションにMicrosoft Intuneが含まれている場合は、Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) で macOS デバイスをオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてIntuneがあります。  
 
 Intuneにデバイスを登録するには、いくつかの方法があります。 次のいずれかの方法から始めることをお勧めします。
 
@@ -249,7 +239,7 @@ Defender for Business にオンボードされているデバイスの一覧を�
 
 ## <a name="mobile-devices"></a>モバイル デバイス
 
-Android や iOS/iPadOS デバイスなどのモバイル デバイスをオンボードするには、Microsoft Intuneが必要です。 [Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてエンドポイント マネージャーがあります。 エンドポイント マネージャーには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune)機能と[モバイル デバイス管理機能が含まれます](/mem/intune/fundamentals/what-is-device-management)。 
+Android や iOS/iPadOS デバイスなどのモバイル デバイスをオンボードするには、Microsoft Intuneが必要です。 [Microsoft 365 Business Premium](../../business/index.yml)がある場合は、Intune。 
 
 これらのデバイスをIntuneに登録する方法については、次のリソースを参照してください。
 

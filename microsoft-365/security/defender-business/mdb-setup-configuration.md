@@ -1,33 +1,29 @@
 ---
 title: Microsoft Defender for Businessの設定と構成
-description: Microsoft Defender for Businessのセットアップと構成プロセスの概要を確認する
+description: Defender for Business のサイバーセキュリティ ソリューションを設定する方法について説明します。 デバイスをオンボードし、ポリシーを確認し、必要に応じて設定を編集します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: e832a06a27d479bcd9ffecaf00e07b20f55d1042
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 5dd056640101d3feb97d9f502e4dcc8661454115
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862656"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173249"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Microsoft Defender for Businessの設定と構成
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Microsoft Defender for Businessは、特に中小企業向けに設計された、合理化されたセットアップと構成エクスペリエンスを提供します。 この記事は、プロセス全体のガイドとして使用します。
 
@@ -54,7 +50,7 @@ Microsoft Defender for Businessは、特に中小企業向けに設計された�
 | 2 | [ロールとアクセス許可を割り当てる](mdb-roles-permissions.md)     | セキュリティ チームのユーザーには、検出された脅威&修復アクションの確認、ポリシーの編集&表示、デバイスのオンボード、レポートの使用などのタスクを実行するためのアクセス許可が必要です。 これらのアクセス許可は、特定のロールを通じて付与できます。 [ロールとアクセス許可の割り当てに関するページを](mdb-roles-permissions.md)参照してください。        |
 | 3 | [電子メール通知を設定する](mdb-email-notifications.md) | アラートがトリガーされるか、新しい脆弱性が検出されたときに、電子メール通知を受け取るユーザーを指定できます。 [メール通知を設定するを](mdb-email-notifications.md)参照してください。| 
 | 4 | [デバイスのオンボード](mdb-onboard-devices.md)     | Microsoft Defender for Businessは、会社のデバイスをオンボードするためのいくつかのオプションから選択できるように設定されています。 [「Microsoft Defender for Businessにデバイスをオンボードする」を](mdb-onboard-devices.md)参照してください。         |
-| 5 | [セキュリティ設定とポリシーを構成する](mdb-configure-security-settings.md) | 簡略化された構成プロセスやMicrosoft エンドポイント マネージャーなど、セキュリティ設定とポリシーを構成するためのいくつかのオプションから選択できます。 [セキュリティ設定とポリシーの構成に関](mdb-configure-security-settings.md)するページを参照してください。 |
+| 5 | [セキュリティ設定とポリシーを構成する](mdb-configure-security-settings.md) | Defender for Business の簡略化された構成プロセスを含む、またはMicrosoft エンドポイント マネージャー管理センターを使用して、セキュリティ設定とポリシーを構成するためのいくつかのオプションから選択できます。 [セキュリティ設定とポリシーの構成に関](mdb-configure-security-settings.md)するページを参照してください。 |
 
 ## <a name="next-steps"></a>次の手順
 

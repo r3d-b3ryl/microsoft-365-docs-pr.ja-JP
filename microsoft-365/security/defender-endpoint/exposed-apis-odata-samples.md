@@ -1,8 +1,8 @@
 ---
-title: エンドポイント用 Microsoft Defender を使用した OData クエリ
+title: Microsoft Defender for Endpointを使用した OData クエリ
 ms.reviewer: ''
-description: 次の Open Data Protocol (OData) クエリの例を使用して、Microsoft Defender for Endpoint のデータ アクセス プロトコルを支援します。
-keywords: apis、サポートされている api、odata、クエリ
+description: 次の Open Data Protocol (OData) クエリの例を使用して、Microsoft Defender for Endpointのデータ アクセス プロトコルに役立ちます。
+keywords: apis, サポートされている apis, odata, query
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +16,24 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6ee47a1c624020ffa40848910866738072044d27
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 808ff3e6cc0dc69d748dabed102c478a27593790
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301476"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172296"
 ---
-# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender を使用した OData クエリ
+# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointを使用した OData クエリ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/index.yml)
+
+> [!IMPORTANT]
+> 高度なハンティング機能は Defender for Business には含まれません。 [Microsoft Defender for Endpoint プラン 1 とMicrosoft Defender for Businessを比較する方法 2 を](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2)参照してください。
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -37,20 +41,20 @@ ms.locfileid: "61301476"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-OData クエリについて理解していない場合は [、「OData V4 クエリ」を参照してください。](https://www.odata.org/documentation/)
+OData クエリに慣れていない場合は、「[OData V4 クエリ](https://www.odata.org/documentation/)」を参照してください。
 
-一部のプロパティがフィルター可能である必要があります。
+すべてのプロパティがフィルター可能なわけではありません。
 
-## <a name="properties-that-support-filter"></a>このプロパティをサポート$filter
+## <a name="properties-that-support-filter"></a>$filterをサポートするプロパティ
 
-- [Alert](alerts.md): `alertCreationTime` , , , , , , , and `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
-- [Machine](machine.md): `ComputerDnsName` , , , , , , and `LastSeen` `HealthStatus` `OsPlatform` `onboardingStatus` `RiskScore` `RbacGroupId` .
-- [MachineAction](machineaction.md): `Status` , , , , and `MachineId` `Type` `Requestor` `CreationDateTimeUtc` .
-- [インジケーター](ti-indicator.md): `indicatorValue` , , , , , and `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
+- [アラート](alerts.md): `alertCreationTime`、、`lastUpdateTime`、`incidentId`、`InvestigationId`、、`status``severity`および `category`.
+- [コンピューター](machine.md): `ComputerDnsName`、、`LastSeen`、`HealthStatus`、`OsPlatform`、 `RiskScore``onboardingStatus``RbacGroupId`.
+- [MachineAction](machineaction.md): `Status`、、 `MachineId`、 `Type`、 `Requestor`および `CreationDateTimeUtc`.
+- [インジケーター](ti-indicator.md): `indicatorValue`, , `indicatorType`, `createdBy``creationTimeDateTimeUtc`, `severity`および `action`.
 
 ### <a name="example-1"></a>例 1
 
-関連する証拠を使用して最新のアラートを 10 件取得します。
+関連する証拠を含む 10 個の最新のアラートを取得します。
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
@@ -195,7 +199,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 
 ### <a name="example-2"></a>例 2
 
-2019-11-22 00:00:00 以降に最後に更新されたアラートを取得します。
+2019-11-22 00:00:00 以降に最後に更新されたすべてのアラートを取得します。
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
@@ -257,7 +261,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdate
 
 ### <a name="example-3"></a>例 3
 
-'High' 'RiskScore' を使用してすべてのデバイスを取得します。
+'High' 'RiskScore' を持つすべてのデバイスを取得します。
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
@@ -310,7 +314,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
 
 ### <a name="example-4"></a>例 4
 
-'HealthStatus' が 'Active' と等しくない上位 100 台のデバイスを取得します。
+'HealthStatus' が 'Active' に等しくない上位 100 個のデバイスを取得します。
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
@@ -363,7 +367,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthSt
 
 ### <a name="example-5"></a>例 5
 
-2018-10-20 以降に最後に表示されたデバイスを取得します。
+2018-10-20 以降に最後に表示されたすべてのデバイスを取得します。
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
@@ -416,7 +420,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen
 
 ### <a name="example-6"></a>例 6
 
-Microsoft Defender for Endpoint を使用してユーザーが作成 Analyst@examples.onmicrosoft.com ウイルス対策スキャンを取得します。
+ユーザーがMicrosoft Defender for Endpointを使用して作成したすべてのウイルス対策スキャン Analyst@examples.onmicrosoft.com 取得します。
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
@@ -462,7 +466,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa4
 
 ### <a name="example-8"></a>例 8
 
-'mymachine'で始まる 'computerDnsName' を使用してすべてのデバイスを取得します。
+'mymachine' で始まる 'computerDnsName' を持つすべてのデバイスを取得します。
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')
@@ -515,4 +519,4 @@ json{
 
 ## <a name="see-also"></a>関連項目
 
-[エンドポイント API 用 Microsoft Defender](apis-intro.md)
+[Microsoft Defender for Endpoint API](apis-intro.md)

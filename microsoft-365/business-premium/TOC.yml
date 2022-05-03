@@ -6,7 +6,7 @@
       href: m365bp-secure-users.md
     - name: Microsoft 365 Business Premium を取得する
       href: get-microsoft-365-business-premium.md
-    - name: キャンペーンのMicrosoft 365を取得する
+    - name: Microsoft 365 for Campaigns を入手する
       href: get-microsoft-365-campaigns.md
 - name: 環境を強化する
   items:
@@ -16,7 +16,7 @@
           href: m365bp-setup-overview.md
         - name: Microsoft 365 Business Premium のセットアップ
           href: m365bp-setup.md
-        - name: キャンペーンのMicrosoft 365を設定する
+        - name: キャンペーン用に Microsoft 365 を設定する
           items:
             - name: サインアップ
               href: m365-campaigns-sign-up.md
@@ -36,7 +36,7 @@
           href: m365bp-increase-protection.md
 - name: チームをトレーニングする
   items:
-    - name: アンマネージド (BYOD) デバイスを設定する
+    - name: 非管理対象 (BYOD) デバイスを設定する
       items:
         - name: 概要
           href: m365bp-devices-overview.md
@@ -100,10 +100,12 @@
       href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: デバイスを工場出荷時の設定にリセットする
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: 関連情報
+- name: リファレンス
   items:
-    - name: 用語の用語集
+    - name: 用語集
       href: m365bp-glossary.md
+    - name: Microsoft 365 Business Premium に関するよく寄せられる質問
+      href: microsoft-365-business-faqs.yml
     - name: Microsoft 365管理者コンテンツ
       href: /microsoft-365/admin/
     - name: Microsoft Defender for Business

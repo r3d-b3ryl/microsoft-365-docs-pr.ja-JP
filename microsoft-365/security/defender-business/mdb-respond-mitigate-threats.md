@@ -1,13 +1,12 @@
 ---
 title: Microsoft Defender for Businessの脅威に対応し、軽減する
-description: 脅威が検出されると、それらの脅威に対応して軽減するためのアクションを実行できます。
+description: Defender for Business で脅威が検出されると、それらの脅威に対応するアクションを実行できます。 デバイス インベントリ ビューを使用する方法について説明します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: b6d85d5032b9eb5837482649d4164e68b7c08275
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0481ffdf51b60a40de854ec2e4eb9b9d38d4344a
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098782"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174854"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessの脅威に対応し、軽減する
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Microsoft 365 Defender ポータルを使用すると、セキュリティ チームは検出された脅威に対応し、軽減できます。 この記事では、Defender for Business を使用する方法の例について説明します。
 

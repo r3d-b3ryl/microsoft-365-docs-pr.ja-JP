@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f6046576fcea2fe961e73e88168c6254a2d95a40
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 7b76fff060b46cbe13c11eb90f521af61e8900f5
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665054"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172937"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -114,21 +114,45 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="セキュリティに関する推奨事項ダッシュボード" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
 
-## <a name="use-advanced-hunting-on-discovered-devices"></a>検出されたデバイスで Advanced Hunting を使用する
+## <a name="use-advanced-hunting-on-discovered-devices"></a>検出されたデバイスで高度なハンティングを使用する
 
-高度なハンティング クエリを使用して、検出されたデバイスの可視性を得ることができます。
-検出されたエンドポイントの詳細は DeviceInfo テーブルで確認するか、DeviceNetworkInfo テーブルでそれらのデバイスに関するネットワーク関連情報を確認します。
+高度なハンティング クエリを使用して、検出されたデバイスの可視性を得ることができます。 検出されたデバイスの詳細は DeviceInfo テーブルで確認するか、DeviceNetworkInfo テーブルでそれらのデバイスに関するネットワーク関連情報を確認します。
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="クエリを使用できる高度なハンティング ページ" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
-デバイス検出では、オンボードされたデバイスMicrosoft Defender for Endpointをネットワーク データ ソースとして利用し、アクティビティを非オンボード デバイスに属性付けします。 つまり、Microsoft Defender for Endpointオンボードデバイスが非オンボードデバイスと通信する場合、非オンボードデバイスのアクティビティはタイムラインと Advanced hunting DeviceNetworkEvents テーブルで確認できます。
+### <a name="query-discovered-devices-details"></a>検出されたデバイスの詳細を照会する
 
-新しいイベントは、伝送制御プロトコル (TCP) 接続ベースであり、現在の DeviceNetworkEvents スキームに適合します。 非Microsoft Defender for Endpointが有効になっているMicrosoft Defender for Endpoint対応デバイスへの TCP イングレス。
+次のクエリを DeviceInfo テーブルで実行して、検出されたすべてのデバイスと、各デバイスの詳細までを返します。
 
-次のアクションの種類も追加されています。
+```query
+DeviceInfo
+| summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
+| where isempty(MergedToDeviceId) // Remove invalidated/merged devices
+| where OnboardingStatus != "Onboarded" 
+```
+
+**SeenBy** 関数を呼び出すと、高度なハンティング クエリで、検出されたデバイスがどのオンボードデバイスによって検出されたかの詳細を取得できます。この情報は、検出された各デバイスのネットワークの場所を特定するのに役立ち、その後、ネットワーク内のデバイスを識別するのに役立ちます。  
+
+```query
+DeviceInfo
+| where OnboardingStatus != "Onboarded" 
+| summarize arg_max(Timestamp, *) by DeviceId  
+| where isempty(MergedToDeviceId)  
+| limit 100 
+| invoke SeenBy() 
+| project DeviceId, DeviceName, DeviceType, SeenBy  
+```
+
+詳細については、 [SeenBy()](/microsoft-365/security/defender/advanced-hunting-seenby-function) 関数を参照してください。
+
+### <a name="query-network-related-information"></a>クエリ ネットワーク関連情報
+
+デバイス検出では、オンボードされたデバイスMicrosoft Defender for Endpointをネットワーク データ ソースとして利用し、アクティビティを非オンボード デバイスに属性付けします。 Microsoft Defender for Endpointオンボードデバイスのネットワーク センサーは、次の 2 つの新しい接続の種類を識別します。
 
 - ConnectionAttempt - TCP 接続を確立する試み (syn)
 - ConnectionAcknowledged - TCP 接続が受け入れられたことを確認する (syn\ack)
+
+つまり、オンボードされていないデバイスがオンボードされたMicrosoft Defender for Endpoint デバイスと通信しようとすると、その試行によって DeviceNetworkEvent が生成され、オンボードされたデバイスタイムラインと高度なハンティング DeviceNetworkEvents テーブルで非オンボードデバイス アクティビティを確認できます。
 
 次のクエリ例を試すことができます。
 

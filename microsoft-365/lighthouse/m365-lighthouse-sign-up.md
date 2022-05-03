@@ -1,5 +1,5 @@
 ---
-title: アカウントにサインアップMicrosoft 365 Lighthouse
+title: Microsoft 365 Lighthouseにサインアップする
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -16,56 +16,56 @@ ms.custom:
 - M365-Lighthouse
 - intro-get-started
 search.appverid: MET150
-description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
-ms.openlocfilehash: 25ad88edc63d53e3c9110062a64285bbb759a775
-ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
+description: マネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseにサインアップする方法について説明します。
+ms.openlocfilehash: 8d845ed454a672b1480ca0b6fe6f471cc30a37a6
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64645182"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172192"
 ---
-# <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
+# <a name="sign-up-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseにサインアップする
 
-この記事では、ユーザーにサインアップする方法について説明Microsoft 365 Lighthouse。 Microsoft 365 Lighthouse は、管理サービス プロバイダー (MSP) が、Microsoft 365 Business Premium、Microsoft 365 E3、またはを使用している中小企業 (SMB) のお客様向けデバイス、データ、およびユーザーのセキュリティ保護と管理に役立つ管理ポータルです。Windows 365 Business。 
+この記事では、Microsoft 365 Lighthouseにサインアップする方法について説明します。 Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (MSP) が小規模および中規模のビジネス (SMB) のお客様向けに大規模にデバイス、データ、ユーザーをセキュリティで保護および管理するのに役立つ管理ポータルです。 
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-- &mdash;Microsoft 365 Lighthouseパートナー テナントにのみ展開されますが、ユーザーと顧客テナントが Microsoft 365 Lighthouse 要件に記載されている要件[を満たしていることを確認](m365-lighthouse-requirements.md)します。
+- Microsoft 365 Lighthouseは、顧客テナント内だけでなく、パートナー テナントにのみ&mdash;デプロイされますが、お客様と顧客テナントが[、Microsoft 365 Lighthouse要件](m365-lighthouse-requirements.md)に記載されている要件を満たしていることを確認してください。
 
-- サインインするパートナー テナントのグローバル管理者である必要があります。
+- サインイン先のパートナー テナントのグローバル管理者である必要があります。
 
-## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップするMicrosoft 365 Lighthouse
+## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseにサインアップする手順
 
-1. パートナーテナントのMicrosoft 365 管理センターを使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>してサインインします。 
+1. Microsoft 365 管理センターに<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>移動し、パートナー テナントの資格情報を使用してサインインします。 
 
-1. [**BillingPurchase** >  **Services] [その他のサービス** > **] に移動します**。
+1. **BillingPurchase** >  **ServicesOther Services** >  に移動します。
 
-    サービスMicrosoft 365 Lighthouse一覧に表示されない場合は、[その他のすべてのサービス **製品を表示する] を選択します**。
+    Microsoft 365 Lighthouseがサービスの一覧にない場合は、[**他のすべてのサービス製品を表示する**] を選択します。
 
-    [サービスの購入] エラー ページが表示された場合は、ページの下部 **にある** [製品の表示] を選択します。
+    [サービスの購入] エラー ページが表示された場合は、ページの下部にある [ **製品の表示** ] を選択します。
 
-1. [詳細 **Microsoft 365 Lighthouse**] を **選択します**。 
+1. **[Microsoft 365 Lighthouse**] で [詳細] を選択 **します**。 
 
-1. [購入] **を選択します**。
-
-    > [!NOTE]
-    > ライトハウスには、パートナー テナントのライセンスが 1 つ必要です。 パートナーに追加のユーザーごとのライセンスは必要ありません。また、どの顧客テナントでもライトハウス ライセンスは必要ありません。 
-
-    ライトハウスがテナントに正常に追加されたことを確認するには、Microsoft 365 Lighthouseの [製品の請求 **>] で** Microsoft 365 管理センター。
-
-1. ライトハウス ポータルにリダイレクトされない場合は、 に移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>。
-
-1. [同意 **する] &をクリックして** 、パートナー契約の修正を完了します。
+1. [ **購入**] を選択します。
 
     > [!NOTE]
-    > サインアップが完了すると、顧客データがライトハウスに表示されるのに最大 48 時間かかる場合があります。
+    > Lighthouse には、パートナー テナントに対してのみ 1 つのライセンスが必要です。 パートナーに追加のユーザーごとのライセンスは必要ありません。また、顧客テナントには Lighthouse ライセンスは必要ありません。 
+
+    Lighthouse がテナントに正常に追加されたことを確認するには、Microsoft 365 管理センターの [**Billing > Your Products**] でMicrosoft 365 Lighthouseを探します。
+
+1. Lighthouse ポータルにリダイレクトされない場合は、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
+
+1. [ **同意&続行** ] を選択して、パートナー契約の修正を完了します。
+
+    > [!NOTE]
+    > サインアップが完了すると、顧客データが Lighthouse に表示されるまでに最大で 48 時間かかる場合があります。
 
 ## <a name="next-steps"></a>次の手順
 
-[ポータル Microsoft 365 Lighthouseの構成](m365-lighthouse-configure-portal-security.md) 
+[ポータル セキュリティMicrosoft 365 Lighthouse構成する](m365-lighthouse-configure-portal-security.md) 
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[データのMicrosoft 365 Lighthouse](m365-lighthouse-overview.md) (記事)   
+[Microsoft 365 Lighthouseの概要](m365-lighthouse-overview.md) (記事)   
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)   
-[Microsoft 365 LighthouseとMicrosoft Defender für Unternehmen](../security/defender-business/mdb-lighthouse-integration.md) (記事)
+[Microsoft 365 LighthouseとMicrosoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md) (記事)

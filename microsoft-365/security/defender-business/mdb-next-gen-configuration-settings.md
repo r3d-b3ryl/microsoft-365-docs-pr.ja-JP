@@ -1,46 +1,42 @@
 ---
 title: Microsoft Defender for Businessの次世代の保護構成設定を理解する
-description: Microsoft Defender for Businessでの次世代保護の構成設定について理解する
+description: Defender for Business のウイルス対策と次世代の保護設定、中小企業のエンドポイント セキュリティについて説明します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: eee272798be5396ad9ad15177fcd29a0180bc448
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 34cbd422cafe5c171f47e8e6470c4b12f9e1700d
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862722"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174460"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessで次世代の構成設定を理解する
 
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
+Defender for Business の次世代保護には、堅牢なウイルス対策とマルウェア対策の保護が含まれています。 既定のポリシーは、生産性を妨げることなくデバイスとユーザーを保護するように設計されています。ただし、ビジネス ニーズに合わせてポリシーをカスタマイズすることもできます。 また、Microsoft Intuneを使用している場合は、Microsoft エンドポイント マネージャー管理センターを使用してセキュリティ ポリシーを管理できます。
 
-Defender for Business の次世代保護には、堅牢なウイルス対策とマルウェア対策の保護が含まれています。 既定のポリシーは、生産性を妨げることなくデバイスとユーザーを保護するように設計されています。ただし、ビジネス ニーズに合わせてポリシーをカスタマイズすることもできます。 また、Microsoft エンドポイント マネージャーを使用している場合は、これを使用してセキュリティ ポリシーを管理できます。
-
-**この記事では、次について説明します**。
+**この記事では、以下について説明します。**
 
 - [次世代の保護の設定とオプション](#next-generation-protection-settings-and-options)
 - [Defender for Business のその他の事前構成済み設定](#other-preconfigured-settings-in-defender-for-business) 
-- [Defender for Business の既定の設定とMicrosoft エンドポイント マネージャー](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
+- [Defender for Business の既定の設定とMicrosoft Intune](#defender-for-business-default-settings-and-microsoft-intune)
 
 ## <a name="next-generation-protection-settings-and-options"></a>次世代の保護の設定とオプション
 
 次の表に、設定とオプションの一覧を示します。
 
-| 設定 | 説明 |
+| Setting | 説明 |
 |:---|:---|
 | **リアルタイム保護**:  |  |
 | **リアルタイム保護を有効にする** | 既定で有効にすると、リアルタイム保護によって、マルウェアがデバイスで実行されるのを見つけて停止します。 *リアルタイム保護を有効にしておくことをお勧めします。*<br/><br/>リアルタイム保護を有効にすると、次の設定が構成されます。<br/>- 動作の監視が有効になっている ([AllowBehaviorMonitoring](/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring))<br/>- ダウンロードしたすべてのファイルと添付ファイルがスキャンされます ([AllowIOAVProtection](/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection))<br/>- Microsoft ブラウザーで使用されるスクリプトがスキャンされます ([AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning))   |
@@ -69,11 +65,11 @@ Defender for Business では、次のセキュリティ設定が事前構成さ�
 - ウイルス対策スキャンの実行前にセキュリティ インテリジェンス更新プログラムがチェックされます ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
 - セキュリティ インテリジェンスチェックは 4 時間ごとに行われます ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
-## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>Defender for Business の既定の設定とMicrosoft エンドポイント マネージャー
+## <a name="defender-for-business-default-settings-and-microsoft-intune"></a>Defender for Business の既定の設定とMicrosoft Intune
 
-次の表では、Defender for Business 用に事前構成された設定と、それらの設定がMicrosoft エンドポイント マネージャー (またはMicrosoft Intune) に表示される内容にどのように対応するかについて説明します。 Defender for Business (プレビュー) [で簡略化された構成プロセス](mdb-simplified-configuration.md) を使用している場合は、これらの設定を編集する必要はありません。
+次の表では、Defender for Business 用に事前構成された設定と、それらの設定が Intune (Microsoft エンドポイント マネージャー 管理センターで管理されている) に表示される内容にどのように対応するかを示します。 [Defender for Business で簡略化された構成プロセス](mdb-simplified-configuration.md)を使用している場合は、これらの設定を編集する必要はありません。
 
-| 設定  | 説明  |
+| Setting  | 説明  |
 |---------|---------|
 | [クラウド保護](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | クラウド配信保護または Microsoft Advanced Protection Service (MAPS) とも呼ばれることもあります。クラウド保護は、Microsoft Defender ウイルス対策と Microsoft クラウドと連携して、新しい脅威を特定します。場合によっては、1 台のデバイスが影響を受ける前であってもです。 既定では、 [AllowCloudProtection](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) がオンになっています。 <br/><br/>[クラウド保護の詳細については、こちらを参照してください](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)。         |
 | [受信ファイルと送信ファイルの監視](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)     | 受信ファイルと送信ファイルを監視するために、 [RealTimeScanDirection](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection) はすべてのファイルを監視するように設定されています。         |

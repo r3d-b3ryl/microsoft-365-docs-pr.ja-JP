@@ -1,38 +1,34 @@
 ---
 title: Microsoft Defender for Businessのファイアウォール
-description: 構成設定など、Microsoft Defender for BusinessのファイアウォールWindows Defenderについて説明します
+description: Defender for Business のファイアウォール設定Windows Defenderについて説明します。 ファイアウォールは、不要なネットワーク トラフィックが会社のデバイスに流れるのを防ぐのに役立ちます。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 77c2042ace89a133b9be8995ef817c1fe3766a07
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 9a22af2e1ef047de0deaf98c6eea37cda15dcc5f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861404"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172664"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessのファイアウォール
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Microsoft Defender for Businessには、[Windows Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)を使用したファイアウォール機能が含まれています。 ファイアウォール保護は、デバイスへの入り込みまたはデバイスからのフローが許可されているネットワーク トラフィックを決定するルールを使用してデバイスをセキュリティで保護するのに役立ちます。 
 
 ファイアウォール保護を使用して、さまざまな場所のデバイスでの接続を許可するかブロックするかを指定できます。 たとえば、ファイアウォール設定では、会社の内部ネットワークに接続されているデバイスで受信接続を許可できますが、デバイスが信頼されていないデバイスを持つネットワーク上にある場合は、それらの接続を防ぐことができます。
 
-**この記事では、次について説明します**。
+**この記事では、以下について説明します。**
 
 - [Defender for Business の既定のファイアウォール設定](#default-firewall-settings-in-defender-for-business)
 - [Defender for Business で構成できるファイアウォール設定](#firewall-settings-you-can-configure-in-defender-for-business)
@@ -56,7 +52,7 @@ Microsoft Defender for Businessでは、受信接続をブロックまたは許�
 
 Microsoft Defender for Businessには、Windows Defender ファイアウォールによるファイアウォール保護が含まれます。 次の表に、Microsoft Defender for Businessのファイアウォール保護用に構成できる設定を示します。
 
-| 設定 | 説明 |
+| Setting | 説明 |
 |--|--|
 | **ドメイン ネットワーク** | ドメイン ネットワーク プロファイルは、会社のネットワークに適用されます。 ドメイン ネットワークのファイアウォール設定は、同じネットワーク上にある他のデバイスで開始される受信接続に適用されます。 既定では、受信接続は **[すべてブロック]** に設定されます。  |
 | **パブリック ネットワーク** | パブリック ネットワーク プロファイルは、コーヒー ショップや空港などのパブリックな場所で使用できるネットワークに適用されます。 パブリック ネットワークのファイアウォール設定は、同じネットワーク上にある他のデバイスで開始される受信接続に適用されます。 パブリック ネットワークには、知らないデバイスや信頼できないデバイスを含めることができるため、受信接続は既定で **[すべてブロック]** に設定されます。  |

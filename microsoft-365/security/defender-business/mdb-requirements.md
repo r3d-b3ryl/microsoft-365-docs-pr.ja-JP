@@ -7,7 +7,6 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,24 +16,20 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 32d0c7d762dd142fcf6cf14faf3f739422c6a3f9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 01abbfe2a6190da21836c9493868c5d1b136f104
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095490"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173209"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Microsoft Defender for Business要件
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 この記事では、Microsoft Defender for Businessの要件について説明します。
 
 ## <a name="what-to-do"></a>操作
 
 1. [要件を確認し、要件を満たしていることを確認します](#review-the-requirements)。
-
 2. [次の手順に進みます](#next-steps)。
 
 >
@@ -48,18 +43,18 @@ ms.locfileid: "65095490"
 
 | 要件 | 説明 |
 |:---|:---|
-| サブスクリプション | Microsoft 365 Business Premium <br/>--- または ---<br/>Microsoft Defender for Business (スタンドアロン、現在プレビュー段階)。 <br/><br/> [Microsoft Defender for Businessを取得する方法に関する](get-defender-business.md)説明を参照してください。<br/><br/>複数のサブスクリプションがある場合は、最も高いサブスクリプションが優先されることに注意してください。 たとえば、プラン 2 Microsoft Defender for Endpoint (購入または試用版サブスクリプション) があり、Microsoft Defender for Businessを取得した場合、Defender for Endpoint プラン 2 が優先されます。 この場合、Defender for Business エクスペリエンスは表示されません。  |
+| サブスクリプション | Microsoft 365 Business PremiumまたはMicrosoft Defender for Business (スタンドアロン)。 [Microsoft Defender for Businessを取得する方法に関する](get-defender-business.md)説明を参照してください。<br/><br/>複数のサブスクリプションがある場合は、最も高いサブスクリプションが優先されることに注意してください。 たとえば、プラン 2 Microsoft Defender for Endpoint (購入または試用版サブスクリプション) があり、Microsoft Defender for Businessを取得した場合、Defender for Endpoint プラン 2 が優先されます。 この場合、Defender for Business エクスペリエンスは表示されません。  |
 | Datacenter | 次のいずれかのデータセンターの場所。 <br/>- 欧州連合 <br/>- イギリス <br/>- 米国 |
-| ユーザー アカウント | ユーザー アカウントはMicrosoft 365 管理センターで作成されます ([https://admin.microsoft.com](https://admin.microsoft.com))<br/><br/>Microsoft 365 管理センターでライセンスが割り当てられているMicrosoft Defender for Business<br/><br/>このタスクのヘルプについては、「ユーザーの [追加とライセンスの割り当て](mdb-add-users.md)」を参照してください。 |
+| ユーザー アカウント | - ユーザー アカウントはMicrosoft 365 管理センターで作成されます ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>- Microsoft 365 管理センターでライセンスが割り当てられているMicrosoft Defender for Business<br/><br/>このタスクのヘルプについては、「ユーザーの [追加とライセンスの割り当て](mdb-add-users.md)」を参照してください。 |
 | アクセス許可  | Microsoft Defender for Businessにサインアップするには、グローバル管理者である必要があります。<br/><br/>Microsoft 365 Defender ポータルにアクセスするには、Azure ADで次のいずれかの[ロール](mdb-roles-permissions.md)が割り当てられている必要があります。 <br/>- セキュリティ リーダー<br/>- セキュリティ管理者<br/>- グローバル管理者<br/><br/>詳細については、「[Microsoft Defender for Businessのロールとアクセス許可](mdb-roles-permissions.md)」を参照してください。 |
 | ブラウザー要件 | Microsoft Edgeまたは Google Chrome |
-| オペレーティング システム | Microsoft Defender for Business内のデバイスを管理するには、デバイスが次のいずれかのオペレーティング システムを実行している必要があります。 <br/>- Windows 10 Business 以降 <br/>- Windows 10 Professional 以降 <br/>- Windows 10 Enterprise 以降 <br/>- macOS (最新の 3 つのリリースがサポートされています)<br/><br/>[KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) がインストールされていることを確認します。 <br/><br/>Microsoft Intune (またはMicrosoft エンドポイント マネージャー) でデバイスを既に管理している場合は、それらのデバイスを Defender for Business にオンボードできます。 |
+| オペレーティング システム | Microsoft 365 Defender ポータルでデバイスを管理するには、デバイスが次のいずれかのオペレーティング システムを実行している必要があります。 <br/>- Windows 10 Business 以降 <br/>- Windows 10 Professional 以降 <br/>- Windows 10 Enterprise 以降 <br/>- macOS (最新の 3 つのリリースがサポートされています)<br/><br/>WINDOWS デバイスに [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) がインストールされていることを確認します。 <br/><br/>Microsoft Intuneでデバイスを既に管理している場合は、Microsoft エンドポイント マネージャー管理センターを引き続き使用できます。 |
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) は、ユーザーのアクセス許可とデバイス グループを管理するために使用されます。 Azure ADは Defender for Business サブスクリプションに含まれています。 
 > - 試用版を開始する前にMicrosoft 365 サブスクリプションがない場合は、アクティブ化プロセス中にAzure ADがプロビジョニングされます。 
 > - Defender for Business 試用版を開始するときに別のMicrosoft 365 サブスクリプションがある場合は、既存のAzure AD サービスを使用できます。 
-> - Defender for Business 試用版を開始するときに[Microsoft 365 Business Premium](../../business/index.yml)を使用している場合は、Microsoft Intuneでデバイスを管理するオプションがあります。 
+> - Defender for Business 試用版を開始するときに[Microsoft 365 Business Premium](../../business/index.yml)を使用している場合は、Intuneを使用してデバイスを管理できます。 
 
 ## <a name="next-steps"></a>次の手順
 

@@ -1,34 +1,30 @@
 ---
 title: Microsoft Defender for Businessでセットアップ ウィザードを使用する
-description: Defender for Business には、ウィザードに似たセットアップと構成プロセスが含まれています。 ウィザードを使用して、時間と労力を節約します。
+description: Defender for Business を使用すると、Defender for Business を初めて使用するときに実行されるウィザードを使用して簡単にセットアップできます。 セットアップ ウィザードの動作を確認します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 697dfc567eb2719a6e81a7b57df321ba2af40911
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 042f20cce0e0d30195ed241b376bf304abeaa2aa
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882310"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172775"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでセットアップ ウィザードを使用する
-
-> [!NOTE]
-> Microsoft Defender for Businessが[Microsoft 365 Business Premium](../../business-premium/index.md)に含まれるようになりました。 
 
 Microsoft Defender for Businessは、中小企業の時間と労力を節約するように設計されました。 たとえば、セットアップ ウィザードを使用して初期セットアップと構成を行うことができます。 セットアップ ウィザードでは、セキュリティ チームへのアクセス許可の付与、セキュリティ チームの電子メール通知の設定、会社のWindows デバイスのオンボードを行います。
 
@@ -69,30 +65,30 @@ Microsoft Defender for Businessは、中小企業の時間と労力を節約す�
 
    [ロールとアクセス許可の詳細については、こちらを参照してください](mdb-roles-permissions.md)。 
 
-2. **電子メール通知を設定します**。 この手順では、セキュリティ チームの電子メール通知を設定できます。 その後、アラートが生成されたとき、または新しい脆弱性が検出された場合、セキュリティ チームは、自分のデスクから離れている場合でも、その問題を把握しません。 [電子メール通知の詳細については、こちらを参照してください](mdb-email-notifications.md)。 
+2. **電子メール通知を設定します**。 この手順では、セキュリティ チームの電子メール通知を設定できます。 その後、アラートが生成されたとき、または新しい脆弱性が検出された場合、セキュリティ チームは、自分のデスクから離れていても、それを見逃すことはありません。 [電子メール通知の詳細については、こちらを参照してください](mdb-email-notifications.md)。 
 
 3. **Windowsデバイスをオンボードして構成します**。 この手順では、会社のWindows デバイスを Defender for Business にすばやくオンボードできます。 デバイスをすぐにオンボードすると、初日からデバイスを保護できます。 
 
-   - Microsoft エンドポイント マネージャー (Microsoft Intuneを含む) を **既に使用していて**、会社にデバイスがエンドポイント マネージャーに登録されている場合は、登録済みのWindows デバイスの一部または全部に [対して自動オンボードを](#what-is-automatic-onboarding)使用するかどうかを確認するメッセージが表示されます。 自動オンボードでは、エンドポイント マネージャーと Defender for Business の間の接続が設定され、Windowsデバイスが Defender for Business にシームレスにオンボードされます。 
-   - **エンドポイント マネージャーをまだ使用していない場合** は、[デバイスを Defender for Business にオンボード](mdb-onboard-devices.md)できます。 
+   - **Microsoft Intuneを既に使用していて**、会社にデバイスがIntuneに登録されている場合は、登録済みのWindows デバイスの一部または全部に [対して自動オンボードを](#what-is-automatic-onboarding)使用するかどうかを確認するメッセージが表示されます。 自動オンボードでは、Intuneと Defender for Business の間の接続が設定され、Windowsデバイスが Defender for Business にシームレスにオンボードされます。 
+   - **Intuneをまだ使用していない場合** は、[デバイスを Defender for Business にオンボード](mdb-onboard-devices.md)できます。 
    
    [Microsoft Defender for Businessへのデバイスのオンボードの詳細については、こちらを参照してください](mdb-onboard-devices.md)。
    
-4. **セキュリティ ポリシーを構成します**。 Defender for Business には、会社のデバイスに適用できる次世代の保護とファイアウォール保護の既定のセキュリティ ポリシーが含まれています。 これらの既定のポリシーでは、推奨される設定が使用され、デバイスに強力な保護を提供するように設計されています。 独自のセキュリティ ポリシーを作成することもできます。 また、既にエンドポイント マネージャーを使用している場合は、引き続きこれを使用してセキュリティ ポリシーを管理できます。
+4. **セキュリティ ポリシーを構成します**。 Defender for Business には、会社のデバイスに適用できる次世代の保護とファイアウォール保護の既定のセキュリティ ポリシーが含まれています。 これらの既定のポリシーでは、推奨される設定が使用され、デバイスに強力な保護を提供するように設計されています。 独自のセキュリティ ポリシーを作成することもできます。 また、既にIntuneを使用している場合は、Microsoft エンドポイント マネージャー管理センターを引き続き使用してセキュリティ ポリシーを管理できます。
 
    [セキュリティ ポリシーと設定を表示および編集します](mdb-configure-security-settings.md)。
 
 ## <a name="what-is-automatic-onboarding"></a>自動オンボードとは何ですか?
 
-自動オンボードは、Windows デバイスを Defender for Business にオンボードする簡単な方法です。 自動オンボードは、Microsoft エンドポイント マネージャー (またはMicrosoft Intune) に既に登録されているWindows デバイスでのみ使用できます。 
+自動オンボードは、Windows デバイスを Defender for Business にオンボードする簡単な方法です。 自動オンボードは、Microsoft Intuneに既に登録されているWindows デバイスでのみ使用できます。 
 
-セットアップ ウィザードを使用しているときに、Windows デバイスが既にエンドポイント マネージャーに登録されているかどうかをシステムが検出します。 これらのデバイスのすべてまたは一部に対して自動オンボードを使用するかどうかを確認するメッセージが表示されます。 すべてのWindows デバイスを一度にオンボードすることも、最初に特定のデバイスを選択してから、後でデバイスを追加することもできます。 
+セットアップ ウィザードを使用しているときに、Windows デバイスが既にIntuneに登録されているかどうかをシステムが検出します。 これらのデバイスのすべてまたは一部に対して自動オンボードを使用するかどうかを確認するメッセージが表示されます。 すべての Windows デバイスを一度にオンボードすることも、最初に特定のデバイスを選択してから、後でデバイスを追加することもできます。 
 
 他のデバイスをオンボードするには、「[デバイスをMicrosoft Defender for Businessにオンボードする」を](mdb-onboard-devices.md)参照してください。
 
 > [!TIP]
-> - [すべてのデバイスが登録済み] オプションを選択することをお勧めします。 そうすれば、後でWindowsデバイスがエンドポイント マネージャーに登録されると、自動的に Defender for Business にオンボードされます。 
-> - エンドポイント マネージャーでセキュリティ ポリシーと設定を管理している場合は、Microsoft 365 Defender ポータルに切り替えて、デバイス、ポリシー、および設定を管理することをお勧めします。 詳細については、「 [セキュリティ ポリシーとデバイスを管理する場所の選択](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices)」を参照してください。
+> - [すべてのデバイスを登録] オプションを選択することをお勧めします。 そうすれば、後でWindowsデバイスがIntuneに登録されると、自動的に Defender for Business にオンボードされます。 
+> - エンドポイント マネージャー管理センターでセキュリティ ポリシーと設定を管理している場合は、Microsoft 365 Defender ポータルに切り替えて、デバイス、ポリシー、および設定を管理することをお勧めします。 詳細については、「 [セキュリティ ポリシーとデバイスを管理する場所の選択](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices)」を参照してください。
 
 ## <a name="what-happens-if-i-dont-use-the-wizard"></a>ウィザードを使用しない場合はどうなりますか?
 

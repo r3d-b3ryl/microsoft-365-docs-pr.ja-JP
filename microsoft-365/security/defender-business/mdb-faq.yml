@@ -1,32 +1,32 @@
 ### YamlMime:FAQ
 metadata:
   title: よく寄せられる質問Microsoft Defender for Business
-  description: Microsoft Defender for Businessに関する質問への回答を取得する
+  description: 中小企業向けのサイバーセキュリティ ソリューションである Defender for Business に関する質問に対する回答を取得します。
   search.appverid: MET150
   author: denisebmsft
   ms.author: deniseb
   manager: dansimp
   audience: Admin
   ms.topic: faq
-  ms.date: 04/12/2022
   ms.prod: m365-security
   ms.technology: mdb
   ms.localizationpriority: medium
-  ms.reviewer: inbadian, shlomiakirav
+  ms.reviewer: shlomiakirav
   f1.keywords: NOCSH
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 482c2fa4d4ef0ee06c88ee85715c7a70eefc52c3
-  ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+  ms.openlocfilehash: 3fb8d76b702a66756d17d8464d68442a079be729
+  ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/15/2022
-  ms.locfileid: "64861358"
+  ms.lasthandoff: 05/03/2022
+  ms.locfileid: "65172695"
 title: Microsoft Defender for Business - よく寄せられる質問と回答
-summary: "Microsoft Defender for Businessは、2022 年 3 月 1 日以降、Microsoft 365 Business Premiumのお客様に展開されます。 スタンドアロン サブスクリプションとしての Defender for Business はプレビュー段階にあり、 [ここでサインアップ](https://aka.ms/mdb-preview) して要求する顧客と IT パートナーに段階的にロールアウトされます。 プレビューには [シナリオの初期セット](mdb-tutorials.md#try-these-preview-scenarios)が含まれており、定期的に機能を追加します。\n\nこの記事の一部の情報は、市販される前に大幅に変更される可能性があるプレリリースされた製品/サービスに関連しています。 Microsoft は、ここに記載されている情報に対して、明示的または黙示的な保証を行いません。 \n\nこの記事を使用して、Defender for Business に関する質問に対する回答を取得します。\n"
+summary: >
+  この記事を使用して、Defender for Business に関する質問に対する回答を取得します。
 sections:
-- name: 一般
+- name: 全般
   questions:
   - question: 別の Microsoft Cloud サブスクリプションを持っています。 ポータルにMicrosoft Defender for Businessが表示されないのはなぜですか?
     answer: >
@@ -38,57 +38,52 @@ sections:
 
       - 例 2: [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (購入または試用版サブスクリプション) があり、Defender for Business を取得した場合は、Defender for Cloudが優先されます。 この場合、Defender for Business エクスペリエンスは表示されません。
   - question: Defender for Business と Defender for Endpoint Plans 1 と Defender for Endpoint Plans 1 と 2 の違いは何ですか?
-    answer: "Defender for Business は、中小企業 (最大 300 人の従業員) 向けに設計されました。 [簡単な構成プロセス](mdb-simplified-configuration.md)と[デバイスオンボード オプションにより](mdb-onboard-devices.md)、Defender for Business では、必ずしもセキュリティの背景を持たないお客様が Defender for Business を設定、構成、および使用できるようになります。  \n\nDefender for Business と Defender for Endpoint の両方が、会社のエンドポイントに強力な脅威保護機能を提供します。 相違点の詳細については、「[Microsoft Defender for BusinessとMicrosoft 365 Business Premiumの比較](compare-mdb-m365-plans.md)」を参照してください。\n"
-  - question: Defender for Business のプレビューにサインアップ操作方法?
+    answer: "Defender for Business と Defender for Endpoint の両方が、会社のエンドポイントに強力な脅威保護機能を提供します。 Defender for Business は、中小企業 (最大 300 人の従業員) 向けに設計されました。 [簡単な構成プロセス](mdb-simplified-configuration.md)と[デバイスオンボード オプションにより](mdb-onboard-devices.md)、Defender for Business では、必ずしもセキュリティの背景を持たないお客様が Defender for Business を設定、構成、および使用して会社のデバイスを保護できます。  \n\n相違点の詳細については、「[Microsoft Defender for BusinessとMicrosoft 365 Business Premiumの比較](compare-mdb-m365-plans.md)」を参照してください。\n"
+  - question: Defender for Business 操作方法試すか、購入しますか?
     answer: >
-      Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premiumの一部として展開されています。 Microsoft 365 Business Premiumがある場合は、すぐに Defender for Business 機能が自動的に提供されます。
+      [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) Web ページに移動し、Defender for Business を試すか購入するオプションを選択します。
 
 
-      Defender for Business のスタンドアロン バージョンはまだプレビュー段階です。 プレビュー プログラムの申請にアクセス [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) します。 詳細については、「[Microsoft Defender for Businessを取得する方法](get-defender-business.md)」を参照してください。
-  - question: Defender for Business プレビューの前提条件はありますか?
+      詳細については、「[Microsoft Defender for Businessを取得する](get-defender-business.md)」を参照してください。
+  - question: Defender for Business のライセンスを付与できるユーザーの数に制限はありますか?
     answer: >
-      会社は次のいずれかである必要があります。
-
-
-      - 中小企業に IT サービスを提供するパートナー
-
-
-      - 最大 300 人の従業員を持つ中小企業
-
-
-      別のMicrosoft 365 サブスクリプションをまだ持っている必要はありません。 詳細については、[Microsoft Defender for Business要件](mdb-requirements.md)に関するページを参照してください。
-  - question: GA でのライセンス モデルは何ですか?
+      Defender for Business は、最大 300 人のユーザーを持つ中小企業向けに設計されています。 ユーザーが 300 人を超える場合は、 [Defender for Endpoint を検討してください](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)。
+  - question: Defender for Business を使用してオンボードしてセキュリティで保護できるデバイスの数を教えてください。
     answer: >
-      2022 年 3 月 1 日以降、Defender for Business はMicrosoft 365 Business Premiumの一部として展開されています。 Defender for Business は現在、Microsoft 365 Business Premiumのお客様向けに一般提供 (GA) に達しています。
-
-
-      Microsoft 365 Business Premiumをお持ちでないお客様の場合、Defender for Business はスタンドアロン プランとしてのオプションです。 Defender for Business のスタンドアロン バージョンはまだプレビュー段階であり、今年後半に GA に到達する予定です。
+      オンボードして、ユーザー ライセンスあたり最大 5 台のデバイスをセキュリティで保護できます。
+  - question: Defender for Business はサーバーをサポートしていますか?
+    answer: "サーバーのサポートは間もなく開始されます。 この新しいサーバー オファリングには、Microsoft 365 Business PremiumまたはMicrosoft Defender for Business (スタンドアロン) のライセンス前提条件があります。  \n"
+  - question: Defender for Business は macOS、Android、および iOS/iPadOS クライアント デバイスを保護しますか?
+    answer: "はい。 Defender for Business では、現在、macOS、Android、および iOS/iPadOS デバイスの保護がサポートされています。 \n\nMicrosoft 365 Defender ポータルでローカル スクリプトを使用して macOS デバイスをオンボードできます。 Android および iOS/iPadOS デバイスのオンボードには[、Microsoft Intune](/mem/intune/)のライセンスが必要です。 「 [デバイスのオンボード」](mdb-onboard-devices.md)を参照してください。\n\nIntuneはMicrosoft 365 Business Premiumに含まれており、Defender for Business (スタンドアロン) で購入できます。\n\nmacOS、iOS/iPadOS、Android デバイスの追加の簡略化はロードマップにあります。 \n"
+  - question: Defender for Business のプレビュー プログラムが終了した場合は、延長できますか?
+    answer: >
+      Defender for Business のプレビューが終了したら、Defender for Business を購入できます。 [「Microsoft Defender for Businessを取得する」を](get-defender-business.md)参照してください。
   - question: Microsoft 365 Business Premiumを既に使用している場合、Defender for Business が必要なのはなぜですか?
     answer: >
-      Microsoft 365 Business Premium現在、デバイス管理機能、Defender for Office 365プラン 1、Microsoft Defender ウイルス対策、Windows デバイスの次世代保護が含まれています。 Defender for Business は、会社のデバイスのセキュリティを強化することで、これらの機能を拡張します。 詳細については、次の記事を参照してください。
+      Microsoft 365 Business Premiumがある場合は、Defender for Business がサブスクリプションに含まれます。 詳細については、次の記事を参照してください。
 
 
       - [Defender for Business の概要](mdb-overview.md)
 
 
-      - [Microsoft Defender for BusinessとMicrosoft 365 Business Premiumの比較](compare-mdb-m365-plans.md
-  - question: Defender for Business が一般提供 (GA) に達する前にプレビュー試用版プランの有効期限が切れた場合、Defender for Business のプレビューはどうなりますか?
-    answer: >
-      Microsoft パートナーは、プレビュー試用版ライセンスを GA の時点まで延長できます。 GA が完了すると、プレビュー試用版は延長されません。
+      - [Microsoft Defender for BusinessをMicrosoft 365 Business Premiumと比較する](compare-mdb-m365-plans.md)
+
+
+      Defender for Business は、会社のデバイスのエンドポイント保護を使用してMicrosoft 365 Business Premiumのセキュリティ機能を拡張します。
   - question: 顧客にサブスクリプションが混在しているユーザーが 20 人の場合はどうなりますか? たとえば、10 人のユーザーが Defender for Business ライセンスを割り当て、10 人のユーザーに Defender for Endpoint Plan 2 ライセンスが割り当てられているとします。
-    answer: "混合ライセンスは現在サポートされていません。現在、混在ライセンスはサポートされていません。 最も機能の高いライセンスは、テナントのエクスペリエンスを設定します。 この例を使用すると、テナント エクスペリエンスは Defender for Endpoint Plan 2 になり、20 個の Defender for Endpoint Plan 2 ライセンスが必要になります。 \n"
+    answer: "混合ライセンスは現在サポートされていません。 最も機能の高いライセンスは、テナントのエクスペリエンスを設定します。 この例を使用すると、テナント エクスペリエンスは Defender for Endpoint Plan 2 になり、20 個の Defender for Endpoint Plan 2 ライセンスが必要になります。 \n"
   - question: Defender for Business で複数の Web コンテンツ フィルター ポリシーを構成できますか?
     answer: "現在、Defender for Business では、Defender for Business テナントごとに 1 つの統一 Web フィルター ポリシーのみがサポートされています。 \n"
   - question: Defender for Business でカスタム レポートを実行するにはどうすればよいですか?
     answer: >
-      Defender for Business には、堅牢なカスタム レポートをサポートするための一連の API と、Power BI コネクタが含まれています。 POWERShell スクリプトをスケジュールして、HTML 形式のエグゼクティブ サマリーを生成し、それらの概要を電子メールで送信できます。
+      Defender for Business には、堅牢なカスタム レポートをサポートするための一連の API と、Power BI コネクタが含まれています。 POWERShell スクリプトをスケジュールして、HTML 形式のエグゼクティブ サマリーを生成し、それらの概要を電子メールで送信できます。 [API リファレンス情報を参照](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners)してください。
   - question: Microsoft パートナーです。 1 つのコントロール パネルから複数のテナントを管理できますか、それとも各テナントに個別にサインインする必要がありますか?
-    answer: >
-      Defender for Business は、単一のコンソールでマルチテナントサポートのMicrosoft 365 Lighthouseで有効になっています。 現在、マルチテナント インシデント キューには、注意が必要なインシデントのテナント間ビューが用意されています。ただし、構成とオンボードは、パートナー資格情報を使用して顧客のテナントで行われます。 より多くの統合シナリオが計画されています。
+    answer: "Defender for Business は、単一のコンソール ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)) でマルチテナントサポートのためにMicrosoft 365 Lighthouseで有効になっています。 \n\n現在、マルチテナント インシデント キューには、注意が必要なインシデントのテナント間ビューが用意されています。ただし、構成とオンボードは、パートナー資格情報を使用して顧客のテナントで行われます。 より多くの統合シナリオが計画されています。\n\n詳細については、「[Microsoft 365 Lighthouseの概要](/microsoft-365/lighthouse/m365-lighthouse-overview)」を参照してください。\n"
   - question: Defender for Business で攻撃面の縮小ルールと機能を構成操作方法?
-    answer: "Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) の Defender for Business を使用した攻撃表面の縮小ルールと機能の簡略化された構成はまだサポートされていません。 Microsoft エンドポイント マネージャーがある場合は、エンドポイント マネージャーを使用して、攻撃表面の縮小ポリシーを構成できます。 \n"
-  - question: 現在Microsoft エンドポイント マネージャーがない場合は、Defender for Business と エンドポイント マネージャーの両方に含まれる機能を使用するための追加のライセンスが必要ですか?
-    answer: "スタンドアロン サブスクリプションとして Defender for Business をお持ちで、Microsoft Intune (エンドポイント マネージャーの一部) がない場合は、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) を使用して Defender for Business でWindowsデバイスを管理できます。 また、[構成エクスペリエンスを簡素化](mdb-simplified-configuration.md)して、Microsoft 365 Defender ポータルで次世代の保護ポリシーとファイアウォール保護ポリシーを管理することもできます。 攻撃表面の縮小ポリシーなどの他の設定を管理したり、一部のデバイス (Android デバイスなど) をオンボードしたりするには、エンドポイント マネージャー必要があります。  \n"
+    answer: >
+      Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) の Defender for Business を使用した攻撃表面の縮小ルールと機能の簡略化された構成はまだサポートされていません。 Microsoft Intuneがある場合は、Microsoft エンドポイント マネージャー管理センターを使用して、攻撃面の縮小ポリシーを構成できます。 [Intuneのエンドポイント セキュリティに関する攻撃面の縮小ポリシーに関する](/mem/intune/protect/endpoint-security-asr-policy)説明を参照してください。
+  - question: 現在Microsoft Intuneがない場合は、Defender for Business と Intuneの両方に含まれる機能を使用するための追加のライセンスが必要ですか?
+    answer: "スタンドアロン サブスクリプションとして Defender for Business をお持ちで、Intuneがない場合は、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) でWindowsデバイスと macOS デバイスをオンボードしてセキュリティで保護できます。 \n\nまた、[構成エクスペリエンスを簡素化](mdb-simplified-configuration.md)して、Microsoft 365 Defender ポータルで次世代の保護ポリシーとファイアウォール保護ポリシーを管理することもできます。 \n\n攻撃表面の縮小ポリシーなどの他の設定を管理したり、Android や iOS/iPadOS デバイスなどの他のデバイスをオンボードしたりするには、Intune必要があります。 IntuneはMicrosoft 365 Business Premiumに含まれており、Defender for Business (スタンドアロン) サブスクリプションで購入できます。 \n"
 additionalContent: >-
   ## <a name="see-also"></a>関連項目
 
@@ -96,7 +91,7 @@ additionalContent: >-
   - [Microsoft 365 Business Premium の概要](/microsoft-365/business-premium/)
 
 
-  - [Microsoft Defender for Business の概要](mdb-overview.md)
+  - [Microsoft Defender for Businessの概要](mdb-overview.md)
 
 
   - [Microsoft Defender for BusinessをMicrosoft 365 Business Premiumと比較する](compare-mdb-m365-plans.md)
