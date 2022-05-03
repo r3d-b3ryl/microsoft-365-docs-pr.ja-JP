@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロックリストでエントリを変更および削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7da986c42421c797f2d01b1e61d50c06933e373f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ac612b51cab9069e50c4eec05948b3aa840b9cc9
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970923"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182697"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストのエントリを変更および削除する
 
@@ -38,13 +38,13 @@ Microsoft 365 Defender ポータルまたは PowerShell を使用して、テナ
 
 ### <a name="modify-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック リストのエントリを変更する
 
-1. Microsoft 365 Defender ポータルで、[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。 または、 **テナント許可/ブロック リスト** ページに直接移動するには、 <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. 変更するエントリの種類を含むタブを選択します。
    - [**Senders (送信者)**]
    - 「**スプーフィング**」
    - **Url**
-   - **Files**
+   - **ファイル**
 
 3. 変更するエントリを選択し、[編集] アイコンをクリックします ![。](../../media/m365-cc-sc-edit-icon.png) **編集**。 ポップアップで変更できる値は、前の手順で選択したタブによって異なります。
    - [**Senders (送信者)**]
@@ -55,7 +55,7 @@ Microsoft 365 Defender ポータルまたは PowerShell を使用して、テナ
    - **Url**
      - **期限切れ** や有効期限を設定しないでください。
      - **省略可能なメモ**
-   - **Files**
+   - **ファイル**
      - **期限切れ** や有効期限を設定しないでください。
      - **省略可能なメモ**
 
@@ -66,13 +66,13 @@ Microsoft 365 Defender ポータルまたは PowerShell を使用して、テナ
 
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>テナント許可/ブロック リストからエントリを削除する
 
-1. Microsoft 365 Defender ポータルで、[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。 または、 **テナント許可/ブロック リスト** ページに直接移動するには、 <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. 削除するエントリの種類を含むタブを選択します。
    - [**Senders (送信者)**]
    - 「**スプーフィング**」
    - **Url**
-   - **Files**
+   - **ファイル**
 
 3. 削除するエントリを選択し、[削除] アイコンをクリックします ![。](../../media/m365-cc-sc-delete-icon.png) **Delete**
 

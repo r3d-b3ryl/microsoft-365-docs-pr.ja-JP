@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧でブロックを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 60038a2b82ea452ed921d16042cb81d4f0e023a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 03c56e5e7e540766bb4a6048fba15b494c46d815
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100657"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182719"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの禁止リストを追加する
 
@@ -32,11 +32,11 @@ ms.locfileid: "65100657"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-## <a name="use-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用する 
+## <a name="use-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用する
 
 ### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック リストにブロック送信者エントリを作成する
 
-1. Microsoft 365 Defender ポータルで、[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。 または、 **テナント許可/ブロック リスト** ページに直接移動するには、 <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. [ **テナントの許可/ブロック一覧** ] ページで、[ **送信者** ] タブが選択されていることを確認し、[ブロック] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **ブロック**。
 
@@ -45,7 +45,7 @@ ms.locfileid: "65100657"
    - **期限切れになることはありません**: 次のいずれかの手順を実行します。
      - 設定がオフになっていることを確認します (![オフに](../../media/scc-toggle-off.png)切り替えます)。[ **削除オン** ] ボックスを使用して、エントリの有効期限を指定します。
 
-       or
+       または
 
      - 切り替えを右に移動して、期限切れにならないようにエントリを構成します。 ![オンに切り替えます。](../../media/scc-toggle-on.png).
    - **省略可能な注**: エントリの説明テキストを入力します。
@@ -53,11 +53,11 @@ ms.locfileid: "65100657"
 4. 完了したら、**[追加]** をクリックします。
 
 > [!NOTE]
-> これらの送信者からのメールは、 *高信頼スパム (SCL = 9)* としてブロックされます。 
+> これらの送信者からのメールは、 _信頼度の高いスパム_ としてブロックされます (SCL = 9)。
 
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック リストにブロック URL エントリを作成する
 
-1. Microsoft 365 Defender ポータルで、[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。 または、 **テナント許可/ブロック リスト** ページに直接移動するには、 <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. [ **テナントの許可/ブロック一覧** ] ページで、[ **URL** ] タブが選択されていることを確認し、[ブロック] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **ブロック**。
 
@@ -66,7 +66,7 @@ ms.locfileid: "65100657"
    - **期限切れになることはありません**: 次のいずれかの手順を実行します。
      - 設定がオフになっていることを確認します (![オフに](../../media/scc-toggle-off.png)切り替えます)。[ **削除オン** ] ボックスを使用して、エントリの有効期限を指定します。
 
-       or
+       または
 
      - 切り替えを右に移動して、期限切れにならないようにエントリを構成します。 ![オンに切り替えます。](../../media/scc-toggle-on.png).
    - **省略可能な注**: エントリの説明テキストを入力します。
@@ -74,11 +74,11 @@ ms.locfileid: "65100657"
 4. 完了したら、**[追加]** をクリックします。
 
 > [!NOTE]
-> これらの URL を含むメールは *、フィッシング* としてブロックされます。 
+> これらの URL を含むメールは _、フィッシング_ としてブロックされます。
 
 ### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック リストにブロック ファイル エントリを作成する
 
-1. Microsoft 365 Defender ポータルで、[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。 または、 **テナント許可/ブロック リスト** ページに直接移動するには、 <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. [ **テナントの許可/ブロック一覧** ] ページで、[ **ファイル** ] タブを選択し、[ブロック] アイコンをクリック ![します。](../../media/m365-cc-sc-create-icon.png) **ブロック**。
 
@@ -87,7 +87,7 @@ ms.locfileid: "65100657"
    - **期限切れになることはありません**: 次のいずれかの手順を実行します。
      - 設定がオフになっていることを確認します (![オフに](../../media/scc-toggle-off.png)切り替えます)。[ **削除オン** ] ボックスを使用して、エントリの有効期限を指定します。
 
-     or
+     または
 
      - 切り替えを右に移動して、期限切れにならないようにエントリを構成します。 ![オンに切り替えます。](../../media/scc-toggle-on.png).
    - **省略可能な注**: エントリの説明テキストを入力します。
@@ -95,7 +95,7 @@ ms.locfileid: "65100657"
 4. 完了したら、**[追加]** をクリックします。
 
 > [!NOTE]
-> これらのファイルを含む電子メールは *、マルウェア* としてブロックされます。 
+> これらのファイルを含む電子メールは _、マルウェア_ としてブロックされます。
 
 ### <a name="create-spoofed-sender-block-entries"></a>スプーフィングされた送信者ブロック エントリを作成する
 
@@ -118,8 +118,9 @@ ms.locfileid: "65100657"
    - **アクション**: **[ブロック**] を選択します。
 
 4. 完了したら、**[追加]** をクリックします。
+
 > [!NOTE]
-> これらの送信者からのメールは *フィッシング* としてブロックされます。 
+> これらの送信者からのメールは _フィッシング_ としてブロックされます。
 
 ## <a name="use-powershell"></a>PowerShell を使う
 
@@ -151,7 +152,7 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 構文とパラメーターの詳細については、「 [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems)」を参照してください。
 
-### <a name="add-spoofed-sender-block-entries"></a>スプーフィングされた送信者ブロック エントリを追加する 
+### <a name="add-spoofed-sender-block-entries"></a>スプーフィングされた送信者ブロック エントリを追加する
 
 テナント許可/ブロック リストにスプーフィングされた送信者エントリを追加するには、次の構文を使用します。
 
