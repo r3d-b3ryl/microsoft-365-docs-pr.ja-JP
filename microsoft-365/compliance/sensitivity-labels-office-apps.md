@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0f24e707bef05b541f301a41596737c17b4ed587
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 792b87c8d045002ebec27dc5de38177cec0ae647
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098430"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172320"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -31,7 +31,7 @@ ms.locfileid: "65098430"
 
 Microsoft Purview コンプライアンス ポータルから秘密度ラベルを[公開](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)すると、Office アプリに表示され始め、ユーザーはデータの作成または編集時にデータを分類および保護できます。
 
-この記事の情報を使用して、Office アプリの秘密度ラベルを正常に管理するのに役立ててください。 たとえば、組み込みのラベル付けに固有の機能をサポートするために必要なアプリの最小バージョン、これらの機能の追加の構成情報を特定し、Azure Information Protection 統合ラベル付けクライアントやその他のアプリやサービスとの相互作用を理解します。
+この記事の情報を使用して、Office アプリの秘密度ラベルを正常に管理するのに役立ててください。たとえば、組み込みのラベル付けに固有の機能をサポートするために必要なアプリの最小バージョン、これらの機能の追加の構成情報を特定し、Azure Information Protection 統合ラベル付けクライアントやその他のアプリやサービスとの相互作用を理解します。
 
 ## <a name="labeling-client-for-desktop-apps"></a>デスクトップ アプリのラベル付けクライアント
 
@@ -115,8 +115,7 @@ Office for iOS および Office for Android: 秘密度ラベルは [Office ア�
 > [!NOTE]
 > Office更新チャネルでサポートされている最小バージョンを確認しているにもかかわらず、Windows コンピューターで必要なラベル付け機能が表示されない場合は、[AIP アドインを無効にする](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps)必要がある可能性があります。
 
-AIP クライアントでのラベル付けの詳細については、「[Office アプリの AIP アドインに対して MIP 組み込みラベル付けを選択する理由](sensitivity-labels-aip.md)」を参照してください。
-
+AIP クライアントを使用したラベル付けのサポート、および Office アプリでこのクライアントを無効にする方法の詳細については、「[Office アプリの AIP アドインに対して MIP 組み込みラベル付けを選択する理由](sensitivity-labels-aip.md)」を参照してください。
 
 ## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>Windows 上の Office アプリで組み込みのラベル付けを無効にする必要がある場合
 
@@ -135,12 +134,6 @@ Office 組み込みのラベル付けクライアントを使用するには、M
 グループ ポリシーを使用するか、[Office クラウド ポリシー サービス](/DeployOffice/overview-office-cloud-policy-service)を使用して、この設定を展開します。 この設定は、Office アプリが再起動したときに有効になります。 
 
 この設定は Windows Office アプリに固有であるため、秘密度ラベル (Power BI など) や他のプラットフォーム (macOS、モバイル デバイス、Office for the web など) をサポートする Windows 上の他のアプリには影響しません。 一部またはすべてのユーザーにすべてのアプリ (すべてのプラットフォーム) で秘密度ラベルを表示して使用したくない場合は、それらのユーザーに秘密度ラベル ポリシーを割り当てないでください。
-
-### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 組み込みのラベル付けクライアントと Azure Information Protection クライアント
-
-ユーザーが [Azure Information Protection (API) クライアント](/azure/information-protection/rms-client/aip-clientv2)を Windows コンピューターにインストールしている場合、既定では、組み込みのラベル付けクライアントは[サポートする Windows Office アプリ](#labeling-client-for-desktop-apps)でオフになっています。 組み込みラベルは、AIP クライアントで使用される Office アドインを使用しないため、安定性とパフォーマンスの向上という利点があります。 また、高度な分類子などの最新の機能もサポートしています。
-
-AIP クライアントでのラベル付けの選択肢の詳細については、「[Office アプリの AIP アドインに対して組み込みラベル付けを選択する理由](sensitivity-labels-aip.md)」を参照してください。
 
 ## <a name="office-file-types-supported"></a>サポートされる Office ファイルの種類
 

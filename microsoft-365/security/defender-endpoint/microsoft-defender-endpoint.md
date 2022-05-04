@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77766c153582f519aa0ba9853d18c216092747bc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9211597ec8a0e25130b010a6049832ac151840fc
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092307"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173690"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -37,7 +37,7 @@ ms.locfileid: "65092307"
 EndPoint 向け Microsoft Defender は、エンタープライズネットワークによる高度な脅威の防止、検出、調査、および応答を支援するために設計されたエンタープライズエンドポイントセキュリティプラットフォームです。
 
 > [!TIP]
-> まもなく、Microsoft Defender for Endpoint は 2 つのプランで利用できます。 この記事では、Microsoft Defender for Endpoint プラン 2 に含まれる機能について説明します。 [Microsoft Defender for Endpoint プラン 1 とプラン 2 についての詳細](defender-endpoint-plan-1-2.md)。
+> Microsoft Defender for Endpoint は、Defender for Endpoint プラン 1 とプラン 2 の 2 つのプランで利用できます。 この記事では、それぞれのプランに含まれる機能について説明します。 [Microsoft Defender for Endpoint プラン 1 とプラン 2 についての詳細](defender-endpoint-plan-1-2.md)。
 > 
 
 <p><p>

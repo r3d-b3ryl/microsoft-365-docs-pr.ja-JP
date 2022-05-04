@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Defender for Business
-summary: 2022 年 3 月 1 日以降、Microsoft Defender for Business は Microsoft 365 Business Premium に含まれています。 スタンドアロン サブスクリプションとしての Defender for Business は現在プレビュー段階であり、https://aka.ms/mdb-preview にサインアップするお客様と IT パートナーに段階的にロールアウトされます。
+summary: ビジネスを保護するのに役立つシンプルで包括的なエンドポイント  セキュリティにより、重要な点に集中できます。 Microsoft Defender for Business はスタンドアロン サブスクリプションとして使用でき、Microsoft 365 Business Premium に含まれています。
 metadata:
   title: Microsoft Defender for Business のドキュメント
-  description: Microsoft Defender for Business の概要とセットアップ情報を取得する
+  description: Microsoft Defender for Business は、中小企業 (最大 300 人の従業員) 向けに設計された新しいエンドポイント セキュリティ ソリューションです。 エンタープライズ レベルのセキュリティを備えたデバイスを低コストで保護します。
   ms.prod: m365-security
   ms.technology: mdb
   ms.topic: landing-page
@@ -14,13 +14,12 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 04/04/2022
-  ms.openlocfilehash: b0a500df395dca03949d9e40905bc0b048875bcd
-  ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+  ms.openlocfilehash: f63ef5a232f5cce828d827198beabe84443bc4c9
+  ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/15/2022
-  ms.locfileid: "64861776"
+  ms.lasthandoff: 05/03/2022
+  ms.locfileid: "65172367"
 landingContent:
 - title: 概要
   linkLists:
@@ -34,25 +33,53 @@ landingContent:
       url: compare-mdb-m365-plans.md
     - text: Microsoft 365 Lighthouse との統合
       url: mdb-lighthouse-integration.md
+  - linkListType: how-to-guide
+    links:
+    - text: Defender for Business 試用版を最大限に活用する
+      url: trial-playbook-defender-business.md
 - title: 作業の開始
   linkLists:
   - linkListType: get-started
     links:
     - text: Defender for Business を取得する
       url: get-defender-business.md
+    - text: 試用版プレイブックを使用する
+      url: trial-playbook-defender-business.md
     - text: ユーザーを追加してライセンスを割り当てる
       url: mdb-add-users.md
     - text: Microsoft 365 Defender ポータルにアクセスする
       url: mdb-get-started.md
     - text: セットアップ ウィザードを使用する
       url: mdb-use-wizard.md
+  - linkListType: tutorial
+    links:
     - text: チュートリアルとシミュレーションを試す
       url: mdb-tutorials.md
+- title: ヘルプとその他のリソース
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ヘルプを入手する方法またはサポートに問い合わせる方法
+      url: mdb-get-help.md
+    - text: よく寄せられる質問
+      url: mdb-faq.yml
+    - text: トラブルシューティング
+      url: mdb-troubleshooting.yml
+  - linkListType: reference
+    links:
+    - text: 用語集
+      url: /microsoft-365/business-premium/m365bp-glossary
+    - text: API リファレンス情報
+      url: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
+    - text: Microsoft 365 Business Premium
+      url: /microsoft-365/business-premium/
+    - text: Microsoft 365 Lighthouse
+      url: /microsoft-365/lighthouse/m365-lighthouse-overview
 - title: 設定と構成
   linkLists:
   - linkListType: deploy
     links:
-    - text: セットアップの概要
+    - text: セットアップ プロセスを確認する
       url: mdb-setup-configuration.md
     - text: 手順 1 - 要件をレビューする
       url: mdb-requirements.md
@@ -62,13 +89,13 @@ landingContent:
       url: mdb-email-notifications.md
     - text: 手順 4 - デバイスのオンボード
       url: mdb-onboard-devices.md
-    - text: 手順 5 - セキュリティ ポリシーを構成する
+    - text: 手順 5 - セキュリティ ポリシーをレビューする
       url: mdb-view-edit-policies.md
 - title: 脅威の表示と対応
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 脅威および脆弱性の管理ダッシュボード
+    - text: 脅威ダッシュボードを表示する
       url: mdb-view-tvm-dashboard.md
     - text: インシデントの表示と管理
       url: mdb-view-manage-incidents.md
@@ -78,7 +105,7 @@ landingContent:
       url: mdb-review-remediation-actions.md
     - text: レポートの表示と使用
       url: mdb-reports.md
-- title: セキュリティ ポリシーの管理
+- title: セキュリティ ポリシーを表示または編集する
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -94,11 +121,11 @@ landingContent:
       url: mdb-next-gen-configuration-settings.md
     - text: ファイアウォールの設定
       url: mdb-firewall.md
-- title: デバイスを管理する
+- title: デバイスを監視または管理する
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: デバイスの表示と管理
+    - text: デバイスの表示と監視
       url: mdb-manage-devices.md
     - text: デバイス グループを作成する
       url: mdb-create-edit-device-groups.md
@@ -106,17 +133,3 @@ landingContent:
       url: mdb-onboard-devices.md
     - text: デバイスの削除
       url: mdb-offboard-devices.md
-- title: ヘルプとサポート
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: ヘルプを入手する方法またはサポートに問い合わせる方法
-      url: mdb-get-help.md
-    - text: よく寄せられる質問
-      url: mdb-faq.yml
-    - text: トラブルシューティング
-      url: mdb-troubleshooting.yml
-    - text: Microsoft 365 Business Premium
-      url: /microsoft-365/business-premium/
-    - text: Microsoft 365 Lighthouse
-      url: /microsoft-365/lighthouse/m365-lighthouse-overview

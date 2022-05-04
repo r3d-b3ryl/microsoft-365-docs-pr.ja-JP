@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Microsoft 365 テナントに接続するには、Microsoft 365 用 PowerShell を使用して、コマンド ラインから管理センターのタスクを実行します。
-ms.openlocfilehash: a7f493bd0073762d995a232918d732e999a85777
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a69fa6885e254e0c15cd65833a4f8368ec239c4f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093923"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174807"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>PowerShell を使用して Microsoft 365 に接続する
 
@@ -204,6 +204,13 @@ Microsoft 365 管理センターから Azure Cloud Shell に接続して使用�
 Microsoft 365 サブスクリプションに関連付けられた、組織のアクティブな Azure サブスクリプションが必要です。 まだお持ちでない場合は、作成できます。 Azure サブスクリプションを取得すると、PowerShell ウィンドウが開き、PowerShell のコマンドやスクリプトを実行することができます。
 
 詳細については、「[Azure Cloud Shell](/azure/cloud-shell/overview)」を参照してください。
+
+
+## <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Microsoft Graph PowerShell SDK の概要
+
+Microsoft Graph PowerShell SDK を使用して、すべての Microsoft Graph API にアクセスできます。
+
+詳細については、「[Microsoft Graph PowerShell SDK の使用を開始する](/powershell/microsoftgraph/get-started?view=graph-powershell-beta)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

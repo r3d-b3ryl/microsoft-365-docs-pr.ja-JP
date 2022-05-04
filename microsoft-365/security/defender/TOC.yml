@@ -308,6 +308,8 @@
                   href: advanced-hunting-devicefromip-function.md
                 - name: FileProfile()
                   href: advanced-hunting-fileprofile-function.md
+                - name: SeenBy()
+                  href: advanced-hunting-seenby-function.md
             - name: カスタム検出
               items:
                 - name: カスタム検出の概要
