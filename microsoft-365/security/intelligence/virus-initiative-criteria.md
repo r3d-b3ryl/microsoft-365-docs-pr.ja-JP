@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51d5814d718c1422d493f5227b311a58f99f7a82
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 7b7586a75c95202e2737bab857ab1ffebd04d6c4
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783273"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187736"
 ---
 # <a name="microsoft-virus-initiative"></a>Microsoft ウイルス イニシアチブ
 
@@ -53,6 +53,7 @@ MVI プログラムの対象となるには、組織が次のすべての要件�
 |SKD Labs|認定要件製品: ウイルス対策またはマルウェア対策 </br> <http://www.skdlabs.com/html/english/> </br> <http://www.skdlabs.com/cert/>|SKD Labs Star Check Certification Requirements Pass >= 98.5% (オンデマンド、On Access、Total Detection テスト)|
 |VB 100|VB100 認定テスト V1.1 </br> <https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/>|VB100 認定|
 |West Coast Labs|Checkmark Certified </br> <http://www.checkmarkcertified.com/sme/>|製品のセキュリティ パフォーマンスに関する "A" 評価|
+|Standard Edition ラボ|保護、小規模ビジネス、またはEnterprise EP 保護テスト  </br> <https://selabs.uk/en/reports/consumers/>|Protection A rating or Small Business EP A rating or Enterprise EP Protection A rating |
 
 ## <a name="apply-now"></a>今すぐ適用する
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、テナント サービスの正常性を表示する方法について説明します。
-ms.openlocfilehash: c5cfed4449fbdbb6cb63bc80dfd8e23ca4d5c4bb
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 8ad96c77f14148fefd6d00cd51af093cd081d857
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023615"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187824"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでテナント サービスの正常性を表示する
 
@@ -62,4 +62,5 @@ Lighthouse にサインインできない場合は、[Microsoft 365 サービス
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365サービスの正常性を確認する方法](/microsoft-365/enterprise/view-service-health) (記事)\
-[Microsoft 365 Lighthouseに関する既知の問題](m365-lighthouse-known-issues.md) (記事)
+[Microsoft 365 Lighthouseに関する既知の問題](m365-lighthouse-known-issues.md) (記事)\
+[Microsoft 365 LighthouseでAzure Active Directory ロールを表示する](m365-lighthouse-view-your-roles.md) (記事)

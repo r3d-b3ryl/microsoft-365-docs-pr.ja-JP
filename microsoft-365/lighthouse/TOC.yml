@@ -4,7 +4,7 @@
       href: m365-lighthouse-overview.md
     - name: Microsoft 365 Lighthouseの要件
       href: m365-lighthouse-requirements.md
-- name: 作業の開始
+- name: 概要
   items:
     - name: サインアップ
       href: m365-lighthouse-sign-up.md
@@ -26,6 +26,8 @@
   items:
     - name: '[テナント] ページの概要'
       href: m365-lighthouse-tenants-page-overview.md
+    - name: テナント間でAzure ADロールを表示する
+      href: m365-lighthouse-view-your-roles.md
     - name: テナント リストを管理する
       href: m365-lighthouse-manage-tenant-list.md
     - name: テナント サービスの正常性を表示する
@@ -46,7 +48,7 @@
       href: m365-lighthouse-search-for-users.md
     - name: 危険なユーザーを表示および管理する
       href: m365-lighthouse-view-manage-risky-users.md
-- name: デバイスの管理
+- name: デバイスを管理する
   items:
     - name: '[デバイス コンプライアンス] ページの概要'
       href: m365-lighthouse-device-compliance-page-overview.md

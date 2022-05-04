@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、ポータル セキュリティを構成する方法について説明します。
-ms.openlocfilehash: de93ebfff03241500bb1788fc282c4b2bb747ea2
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 60e0d2f1ba61e5def3979358f338da0846914543
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823567"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188682"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>ポータル セキュリティMicrosoft 365 Lighthouse構成する
 
@@ -72,6 +72,8 @@ MSP は、リスクベースの条件付きアクセスを使用して、MFA を
 ## <a name="related-content"></a>関連コンテンツ
 
 [パスワード リセットのアクセス許可](/azure/active-directory/roles/permissions-reference#password-reset-permissions) (記事)\
+[Microsoft 365 Lighthouseのアクセス許可の概要](m365-lighthouse-overview-of-permissions.md) (記事)\
+Microsoft 365 Lighthouse (記事)\ [でAzure Active Directoryロールを表示する](m365-lighthouse-view-your-roles.md)
 [Microsoft 365 Lighthouseの要件](m365-lighthouse-requirements.md) (記事)\
 [Microsoft 365 Lighthouseの概要](m365-lighthouse-overview.md) (記事)\
 [Microsoft 365 Lighthouseにサインアップ](m365-lighthouse-sign-up.md)する (記事)\

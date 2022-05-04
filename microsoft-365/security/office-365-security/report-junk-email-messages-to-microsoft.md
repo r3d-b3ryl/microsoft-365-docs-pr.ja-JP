@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、分析のために良いメッセージと悪いメッセージとファイルを Microsoft に報告するさまざまな方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2ddd9c0d96355af1ccdbb40cdd5c7542d9852c1
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: 56ef5cd5a376f4d10af1ad8c592dad02dbc8ef0a
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144721"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188440"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>メッセージとファイルを Microsoft に報告する
 
@@ -46,4 +46,4 @@ Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) �
 > [!NOTE]
 > Microsoft に電子メール エンティティを報告すると、電子メールに関連付けられているすべてのコピーが作成され、継続的なアルゴリズム レビューに含められます。 このコピーには、電子メール の内容、電子メール ヘッダー、および電子メール ルーティングに関する関連データが含まれます。 メッセージ内の添付ファイルも含まれます。
 >
-> Microsoft は、前述したすべての情報を分析し、メッセージの検疫アルゴリズムの微調整に取り組むお客様の組織のアクセス許可として、お客様のフィードバックを処理します。 Microsoft は、お客様から提出された提出を削除してから 30 日以内に削除されるまで、米国のセキュリティで保護された監査対象データセンターにお客様のメッセージを保持します。 Microsoft の担当者は、送信されたメッセージと添付ファイルを読み取ることができます。通常、Office 365のメールでは許可されません。 ただし、お客様のメールは、お客様と Microsoft の間では機密として扱われます。また、このレビュー プロセスの電子メールまたはその添付ファイルを読み取るために、お客様の提出を他のユーザーに提供します。
+> Microsoft は、前述したすべての情報を分析し、メッセージの検疫アルゴリズムの微調整に取り組むお客様の組織のアクセス許可として、お客様のフィードバックを処理します。 Microsoft は、お客様から提出された提出を削除してから 30 日以内に削除されるまで、米国のセキュリティで保護された監査対象データセンターにお客様のメッセージを保持します。 Microsoft の担当者は、送信されたメッセージと添付ファイルを読み取ることができます。通常、Office 365のメールでは許可されません。 ただし、お客様の電子メールは、お客様と Microsoft の間で機密として扱われます。また、このレビュー プロセスの電子メールまたはその添付ファイルを読み取るために他のユーザーに提出を提供することはありません。

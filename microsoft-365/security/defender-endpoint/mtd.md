@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender for Endpoint - Mobile Threat Defense
 ms.reviewer: ''
-description: Microsoft Defender for Endpoint でのモバイル脅威防御の概要
-keywords: モバイル, Defender, Microsoft Defender for Endpoint, ios, mtd, android, security
+description: Microsoft Defender for Endpointでの Mobile Threat Defense の概要
+keywords: mobile, defender, Microsoft Defender for Endpoint, ios, mtd, android, security
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07cd42d1ab1c6b945525b1e9ed4b463ee76376e1
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 83da2034a04da85849383700204174110ceffa57
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468936"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188528"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender for Endpoint - Mobile Threat Defense
 
@@ -35,31 +35,31 @@ ms.locfileid: "63468936"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Defender for Endpoint on Android and iOS は、モバイル **脅威防御ソリューション (MTD) です**。 通常、会社は PC を脆弱性や攻撃から保護することには積極的ですが、一方で、モバイル デバイスは多くの場合、監視や保護のない状態が続きます。 モバイル プラットフォームにアプリの分離や消費者向けアプリ ストアなどの組み込みの保護が組み込みされている場合、これらのプラットフォームは Web ベースまたは他の高度な攻撃に対して脆弱なままです。 従業員が仕事用にデバイスを使用し、機密情報にアクセスする場合、企業は MTD ソリューションを展開して、デバイスとリソースをモバイルでのますます高度な攻撃から保護する必要があります。
+Android と iOS のMicrosoft Defender for Endpointは、**モバイル脅威防御ソリューション (MTD) です**。 通常、会社は PC を脆弱性や攻撃から保護することには積極的ですが、一方で、モバイル デバイスは多くの場合、監視や保護のない状態が続きます。 モバイル プラットフォームにアプリの分離や消費者向けアプリ ストアの審査などの保護が組み込まれている場合、これらのプラットフォームは Web ベースやその他の高度な攻撃に対して脆弱なままです。 より多くの従業員が仕事のためにデバイスを使用し、機密情報にアクセスするにつれて、企業は、モバイルに対するますます高度な攻撃からデバイスとリソースを保護するための MTD ソリューションを展開することが不可欠です。
 
 ## <a name="key-capabilities"></a>主な機能
 
-Android および iOS のエンドポイント向け Microsoft Defender には、以下の主要な機能が提供されています。最新の機能と利点については、お知らせをご [覧ください](https://aka.ms/mdeblog)。
+Android と iOS のMicrosoft Defender for Endpointには、次の主な機能が用意されています。最新の機能と利点については、お[知らせをお読みください](https://aka.ms/mdeblog)。
 
 <br>
 
 |機能|説明|
 |---|---|
-|Web 保護|フィッシング対策、安全でないネットワーク接続のブロック、カスタム インジケーターのサポート。|
-|マルウェア保護 (Android のみ)|悪意のあるアプリのスキャン。|
-|脱獄検出 (iOS 専用)|脱獄されたデバイスの検出。|
-|脅威と脆弱性の管理 (TVM) |オンボードモバイル デバイスの脆弱性評価。 Microsoft Defender for [Endpoint 脅威と脆弱性の管理詳細](next-gen-threat-and-vuln-mgt.md)については、このページをご覧ください。 *iOS では、このプレビューでは OS の脆弱性だけがサポートされています。*|
-|統合アラート|統合 M365 セキュリティ コンソールのすべてのプラットフォームからのアラート|
-|条件付きアクセス、条件付き起動|リスクの高いデバイスによる企業リソースへのアクセスをブロックする。 エンドポイントリスク信号の Defender をアプリ保護ポリシー (MAM) に追加することもできます。|
-|プライバシーコントロール。 プレビューで (以下のメモを参照)|Microsoft Defender for Endpoint から送信されるデータを制御して、脅威レポートのプライバシーを構成します。 *プライバシーコントロールは現在、登録済みデバイスでのみ使用できます。登録されていないデバイスのコントロールは後で追加されます*|
-|アプリケーションとのMicrosoft Tunnel|VPN ゲートウェイ Microsoft Tunnelと統合して、1 つのアプリでセキュリティと接続を有効にできます。 現在 Android でのみ利用可能|
+|Web Protection|フィッシング対策、安全でないネットワーク接続のブロック、カスタム インジケーターのサポート。|
+|Malware Protection (Android のみ)|悪意のあるアプリのスキャン。|
+|脱獄検出 (iOS のみ)|脱獄されたデバイスの検出。|
+|脅威と脆弱性の管理 (TVM) |オンボードされたモバイル デバイスの脆弱性評価。 Microsoft Defender for Endpointの脅威と脆弱性の管理の詳細については、この[ページ](next-gen-threat-and-vuln-mgt.md)を参照してください。 *iOS では、このプレビューでは OS の脆弱性のみがサポートされることに注意してください。*|
+|統合アラート|統合された M365 セキュリティ コンソール内のすべてのプラットフォームからのアラート|
+|条件付きアクセス、条件付き起動|リスクの高いデバイスが企業リソースにアクセスするのをブロックする。 Defender for Endpoint リスクシグナルをアプリ保護ポリシー (MAM) に追加することもできます|
+|プライバシーコントロール。 プレビュー段階 (以下の注を参照)|Microsoft Defender for Endpointから送信されたデータを制御して、脅威レポートのプライバシーを構成します。 *プライバシー制御は現在、登録済みデバイスでのみ使用できます。登録されていないデバイスのコントロールは後で追加されます*|
+|Microsoft Tunnelとの統合|1 つのアプリでセキュリティと接続を有効にする VPN ゲートウェイ ソリューションである Microsoft Tunnel と統合できます。 Android で使用できるようになり、iOS でも一般公開されるようになりました。|
 
-これらすべての機能は、Microsoft Defender for Endpoint ライセンスホルダーで使用できます。 詳細については、「ライセンス要件 [」を参照してください](minimum-requirements.md#licensing-requirements)。
+これらの機能はすべて、Microsoft Defender for Endpointライセンス所有者が利用できます。 詳細については、「 [ライセンス要件」を](minimum-requirements.md#licensing-requirements)参照してください。
 
 
-## <a name="overview-and-deploy"></a>概要と展開
+## <a name="overview-and-deploy"></a>概要とデプロイ
 
-モバイルでの Microsoft Defender for Endpoint の展開は、MEM (Microsoft エンドポイント マネージャーを使用して行います。 MTD の機能と展開の概要については、次のビデオをご覧ください。
+モバイルでのMicrosoft Defender for Endpointのデプロイは、Microsoft エンドポイント マネージャー (MEM) を使用して行うことができます。 MTD の機能とデプロイの概要については、次のビデオをご覧ください。
 
 <br/>
 
@@ -67,31 +67,31 @@ Android および iOS のエンドポイント向け Microsoft Defender には�
 
 ### <a name="deploy"></a>展開
 
-次の表に、Android と iOS に Microsoft Defender for Endpoint を展開する方法を示します。 詳細なドキュメントについては、次を参照してください。 
-- [Android 上のエンドポイント用 Microsoft Defender の概要](microsoft-defender-endpoint-android.md)、および
+次の表は、Android と iOS にMicrosoft Defender for Endpointをデプロイする方法をまとめたものです。 詳細なドキュメントについては、次を参照してください。 
+- [Android でのMicrosoft Defender for Endpointの概要](microsoft-defender-endpoint-android.md)、および
 - [iOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-ios.md)
 
 **Android**
 
 |登録の種類     |詳細      |
 |--------------------|-------------|
-|Android Enterprise Intune Unified エンドポイント マネージャー (Microsoft エンドポイント マネージャー)|[登録済みデバイスEnterprise Android に展開する](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
-|Intune Unified エンドポイント マネージャー デバイスMicrosoft エンドポイント マネージャー)|[デバイス管理者が登録したデバイスに展開する](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
-|他の統合エンドポイント マネージャーによって管理される管理されていない BYOD またはデバイス / セットアップ アプリ保護ポリシー (MAM)|[アプリ保護ポリシー (MAM) で Defender リスクシグナルを構成する](android-configure-mam.md)|
+|Intune統合エンドポイント マネージャーを使用した Android Enterprise (Microsoft エンドポイント マネージャー)|[Android Enterprise登録済みデバイスにデプロイする](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
+|Intune統合エンドポイント マネージャーを持つデバイス管理者 (Microsoft エンドポイント マネージャー)|[デバイス管理者が登録したデバイスに展開する](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
+|管理されていない BYOD または他の統合エンドポイント マネージャーによって管理されているデバイス / アプリ保護ポリシー (MAM) のセットアップ|[アプリ保護ポリシー (MAM) で Defender リスクシグナルを構成する](android-configure-mam.md)|
 
 **iOS**
 
 |登録の種類     |詳細      |
 |--------------------|-------------|
-|Intune Unified エンドポイント マネージャー (Microsoft エンドポイント マネージャー) の監視対象デバイス|1. [iOS ストア アプリとして展開する](ios-install.md)<br/>2. [監視対象の iOS デバイス用に VPN を使用せずに Web 保護をセットアップする](ios-install.md#complete-deployment-for-supervised-devices)|
-|Intune UEM に登録されている未割り当て (BYOD) デバイス (Microsoft エンドポイント マネージャー)|[iOS ストア アプリとして展開する](ios-install.md)|
-|他の UEM によって管理される管理されていない BYOD またはデバイス / セットアップ アプリ保護ポリシー (MAM)|[アプリ保護ポリシー (MAM) で Defender リスクシグナルを構成する](ios-install-unmanaged.md)|
+|Intune統合エンドポイント マネージャー (Microsoft エンドポイント マネージャー) を使用した監視対象デバイス|1. [iOS ストア アプリとしてデプロイ](ios-install.md)する<br/>2. [監視対象の iOS デバイス用に VPN を使用せずに Web Protection を設定](ios-install.md#complete-deployment-for-supervised-devices)する|
+|INTUNE UEM (Microsoft エンドポイント マネージャー) に登録されている教師なし (BYOD) デバイス|[iOS ストア アプリとしてデプロイする](ios-install.md)|
+|他の UEM によって管理されているアンマネージド BYOD またはデバイス / アプリ保護ポリシー (MAM) のセットアップ|[アプリ保護ポリシー (MAM) で Defender リスクシグナルを構成する](ios-install-unmanaged.md)|
 
-### <a name="end-user-onboarding"></a>エンド ユーザーのオンボーディング
+### <a name="end-user-onboarding"></a>エンド ユーザーオンボーディング
 
-- [iOS](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) 登録済みデバイス用にゼロタッチオンボードを構成する: 管理者は、ユーザーにアプリを開かなくても、登録された iOS デバイスで Microsoft Defender for Endpoint をサイレント オンボードするゼロタッチ インストールを構成できます。 
+- [iOS 登録済みデバイスのゼロタッチ オンボードを構成](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)する: 管理者は、ユーザーがアプリを開く必要なく、登録済みの iOS デバイスでMicrosoft Defender for Endpointをサイレント オンボードするようにゼロタッチ インストールを構成できます。 
 
-- [条件付きアクセスを](android-configure.md#conditional-access-with-defender-for-endpoint-on-android)構成してユーザーオンボーディングを強制する: これは、展開後にエンド ユーザーが Microsoft Defender for Endpoint アプリにオンボードされるのを確認するために適用できます。 Defender for Endpoint リスクシグナルを使用した条件付きアクセスの構成に関する簡単なデモについては、このビデオをご覧ください。 
+- [条件付きアクセスを構成してユーザーのオンボードを強制](android-configure.md#conditional-access-with-defender-for-endpoint-on-android)する: これは、展開後にエンド ユーザーがMicrosoft Defender for Endpoint アプリにオンボードされるように適用できます。 Defender for Endpoint リスクシグナルを使用した条件付きアクセスの構成に関する簡単なデモについては、このビデオをご覧ください。 
 
   <br/>
 
@@ -99,33 +99,33 @@ Android および iOS のエンドポイント向け Microsoft Defender には�
 
 ### <a name="simplify-onboarding"></a>オンボードを簡略化する
 
-- [iOS - Zero-Touchオンボード](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview)
-- [Android Enterprise - セットアップ Always-on VPN](android-intune.md#auto-setup-of-always-on-vpn)。
+- [iOS - オンボードZero-Touch](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)
+- [Android Enterprise - Always-on VPN を設定します](android-intune.md#auto-setup-of-always-on-vpn)。
 - [iOS - VPN プロファイルの自動セットアップ](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)
 
 ## <a name="pilot-evaluation"></a>パイロット評価
 
-Microsoft Defender for Endpoint を使用してモバイル脅威防御を評価する場合は、サービスを大規模なデバイスセットに展開する前に、特定の条件が満たされたと確認できます。 広く展開する前に、終了条件を定義し、満たされた条件を確認できます。
+Microsoft Defender for Endpointを使用してモバイル脅威の防御を評価するときに、サービスを大規模なデバイスセットにデプロイする前に、特定の条件が満たされていることを確認できます。 広くデプロイする前に、終了条件を定義し、それらが満たされていることを確認できます。
 
-これにより、サービスの展開中に発生する可能性のある潜在的な問題を減らすのに役立ちます。 役立つ可能性があるテストと終了条件を次に示します。
+これにより、サービスのロールアウト中に発生する可能性がある潜在的な問題を減らすことができます。 役立つ可能性のあるいくつかのテストと終了条件を次に示します。
 
-- デバイスがデバイス インベントリ リストに表示されます。モバイル デバイス上の Defender for Endpoint のオンボーディングが正常に完了したら、セキュリティ コンソールのデバイス インベントリにデバイスが一覧表示されたことを [確認します](https://security.microsoft.com)。
+- デバイスインベントリの一覧にデバイスが表示されます。モバイル デバイスで Defender for Endpoint のオンボードに成功した後、 [デバイスがセキュリティ コンソール](https://security.microsoft.com)のデバイス インベントリに一覧表示されていることを確認します。
 
-- Android デバイスでマルウェア検出テストを実行する: Google play ストアからテスト ウイルス アプリをインストールし、Microsoft Defender for Endpoint によって検出されるのを確認します。 このテストで使用できるアプリの例を次に示します。ウイルス [のテスト](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus)です。 Android の場合、Enterpriseプロファイルだけがサポートされます。
+- Android デバイスでマルウェア検出テストを実行する:Google Play ストアからテスト ウイルス アプリをインストールし、Microsoft Defender for Endpointによって検出されることを確認します。 このテストに使用できるアプリの例を次に示します。 [ウイルスのテスト](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus)です。 Android Enterpriseで仕事用プロファイルのみがサポートされていることに注意してください。
 
-- フィッシング テストを実行する: Microsoft https://smartscreentestratings2.net Defender for Endpoint によってブロックされるのを参照して確認します。 Android の場合、Enterpriseプロファイルだけがサポートされます。
+- フィッシング テストを実行する:Microsoft Defender for Endpointによってブロックされることを参照https://smartscreentestratings2.netして確認します。 Android Enterpriseで仕事用プロファイルのみがサポートされていることに注意してください。
 
-- ダッシュボードにアラートが表示される: 上記の検出テストのアラートがセキュリティ コンソールに [表示されるのを確認します](https://security.microsoft.com)。
+- ダッシュボードにアラートが表示されます:上記の検出テストのアラートが [セキュリティ コンソール](https://security.microsoft.com)に表示されることを確認します。
 
-## <a name="configure"></a>Configure
+## <a name="configure"></a>構成
 
-- [Android の機能を構成する](android-configure.md)
+- [Android 機能を構成する](android-configure.md)
 - [iOS 機能の構成](ios-configure-features.md)
-- [監視対象の iOS デバイス用に VPN なしで Web 保護を構成する](ios-install.md#complete-deployment-for-supervised-devices)
+- [監視対象の iOS デバイス用に VPN を使用せずに Web Protection を構成する](ios-install.md#complete-deployment-for-supervised-devices)
 
 ## <a name="resources"></a>リソース
 
 - [Android 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md)
 - [iOS 用 Microsoft Defender for Endpoint API](microsoft-defender-endpoint-ios.md)
-- 今後のリリースについては、お知らせをご [覧ください](https://aka.ms/mdeblog)。
+- 今後のリリースについては、お [知らせ](https://aka.ms/mdeblog)をご覧ください。
 

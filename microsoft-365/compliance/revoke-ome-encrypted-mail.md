@@ -9,27 +9,31 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 03/04/2022
+ms.date: 05/02/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 管理者およびメッセージ送信者として、Office 365 Advanced Message Encryptionで暗号化された特定のメールを取り消すことができます。
-ms.openlocfilehash: 313cbe990e322285fc81465329fa5e19b52e2701
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: 管理者およびメッセージ送信者として、Microsoft Purview Advanced Message Encryption で暗号化された特定のメールを取り消すことができます。
+ms.openlocfilehash: 79d09c13755c0c73e4d68598e83ac41344b9281a
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759393"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187945"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>高度なメッセージ暗号化によって暗号化された電子メールを取り消す
 
-電子メール失効は、Office 365 Advanced Message Encryptionの一部として提供されます。 Office 365 Advanced Message Encryptionは[、Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 E5 (非営利団体スタッフ価格)、Office 365 Enterpriseに含まれています E5 (非営利団体スタッフの価格)、および A5 Office 365 Education。 組織にOffice 365 Advanced Message Encryptionが含まれていないサブスクリプションがある場合は、Microsoft 365 E3用のMicrosoft 365 E5 Compliance SKU アドオンで購入できますMicrosoft 365 E3 (非営利団体スタッフの価格)、またはMicrosoft 365 E3、Microsoft 365 E3 (非営利団体スタッフの価格)、またはOffice 365 SKU のOffice 365 Advanced Compliance SKU アドオン。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+電子メール失効は、Microsoft Purview Advanced Message Encryption の一部として提供されます。 Microsoft Purview Advanced Message Encryption は[、Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 E5 (非営利団体スタッフ価格)、Office 365 Enterprise E5 (非営利団体スタッフ価格)、およびOffice 365 Education A5。 Advanced Message Encryption の失効と有効期限の機能を使用するには、E5 ライセンス **の Office 365 オプションでプレミアム暗号化** を有効にします。
+
+組織に Microsoft Purview Advanced Message Encryption を含まないサブスクリプションがある場合は、Microsoft 365 E3、Microsoft 365 E3 (非営利団体スタッフ価格)、またはMicrosoft 365 E5 Compliance SKU アドオンで購入できます。Microsoft 365 E3、Microsoft 365 E3 (非営利団体スタッフの価格)、またはOffice 365 SKU 用の SKU アドオンをOffice 365 Advanced Complianceします。
 
 この記事は、[Office 365 メッセージ](ome.md)暗号化に関する大規模な一連の記事の一部です。
 
-Office 365 Advanced Message Encryptionを使用してメッセージが暗号化され、Microsoft 365管理者であるか、メッセージの送信者である場合は、特定の条件下でメッセージを取り消すことができます。 管理者は PowerShell を使用してメッセージを取り消します。 送信者は、Outlook on the webから直接送信したメッセージを取り消します。 この記事では、失効が可能な状況とその方法について説明します。
+Microsoft Purview Advanced Message Encryption を使用してメッセージが暗号化され、Microsoft 365管理者であるか、メッセージの送信者である場合は、特定の条件下でメッセージを取り消すことができます。 管理者は PowerShell を使用してメッセージを取り消します。 送信者は、Outlook on the webから直接送信したメッセージを取り消します。 この記事では、失効が可能な状況とその方法について説明します。
 
 > [!NOTE]
 > OME メッセージを追跡および取り消すことができることを保証するには、カスタム ブランド テンプレートを追加する必要があります。 [暗号化されたメッセージに組織のブランドを追加するを](add-your-organization-brand-to-encrypted-messages.md)参照してください
@@ -92,7 +96,7 @@ Microsoft 365管理者は、次の一般的な手順に従って、対象とな�
 
 2. メールが見つかったら、それを選択して [ **メッセージ トレースの詳細** ] ウィンドウを表示します。 **[詳細情報]** を展開して、メッセージ ID を見つけます。
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>セキュリティ &amp; コンプライアンス センターでメッセージ暗号化レポートOffice使用して取り消す電子メールのメッセージ ID を識別するには
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-encryption-reports-in-the-security-amp-compliance-center"></a>セキュリティ &amp; コンプライアンス センターのメッセージ暗号化レポートを使用して取り消す電子メールのメッセージ ID を識別するには
 
 1. セキュリティ &amp; コンプライアンス センターで、 **メッセージ暗号化レポート** に移動します。 このレポートの詳細については、「 [セキュリティ &amp; コンプライアンス センターで電子メール セキュリティ レポートを表示する](../security/office-365-security/view-email-security-reports.md)」を参照してください。
 
@@ -100,7 +104,7 @@ Microsoft 365管理者は、次の一般的な手順に従って、対象とな�
 
 3. メッセージをダブルクリックすると、メッセージ ID を含む詳細が表示されます。
 
-### <a name="step-2-verify-that-the-mail-is-revocable"></a>手順 2. メールが取り消し可能であることを確認する
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>手順 2。 メールが取り消し可能であることを確認する
 
 メッセージを取り消すことができるかどうかを確認するには、セキュリティ &amp; コンプライアンス センターの **[詳細**] テーブルの [暗号化] レポートに [失効状態] フィールドが表示されているかどうかを確認します。
 
@@ -154,10 +158,10 @@ Windows PowerShellを使用して電子メールを取り消すには、Set-OMEM
      Revoked: True
      ```
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>Office 365 Advanced Message Encryptionの詳細
+## <a name="more-information-about-microsoft-purview-advanced-message-encryption"></a>Microsoft Purview Advanced Message Encryption の詳細
 
-- [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md)
+- [Microsoft Purview Advanced Message Encryption](ome-advanced-message-encryption.md)
 
-- [Office 365 Advanced Message Encryption - 電子メールの有効期限](ome-advanced-expiration.md)
+- [Microsoft Purview Advanced Message Encryption - 電子メールの有効期限](ome-advanced-expiration.md)
 
 - [メッセージ ポリシーとコンプライアンス サービスの説明](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.prod: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、エラー メッセージと問題のトラブルシューティングに関するヘルプを参照してください。
-ms.openlocfilehash: 939b81344d2957dc005b71d91e27c09a8bca3c96
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 3ee2190732fdd7c9022edaa172bd45909807225c
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174245"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188880"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseのエラー メッセージと問題のトラブルシューティング
 

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスで機能を計画、移行、実装するためのステップ バイ ステップ ツールを入手します。 サービスまたは実行する必要があるアプリを設定するためのガイドを見つけます。
-ms.openlocfilehash: 6018a490cf77498b1767e7e269b17937f11ae011
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 61eccec443a939591e563daa5135239bf0e23a74
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097362"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188726"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -181,13 +181,13 @@ Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアか�
 * コミュニケーション コンプライアンス ソリューションを使用すると、職場での暴力、インサイダー取引、嫌がらせ、行動規範、規制コンプライアンス違反などの項目に対するコミュニケーション リスクを特定して対処できます。
 * インサイダー リスク管理ソリューションは、知的財産の盗難、機密データ漏えい、セキュリティ違反、データ流出、機密性違反のリスクを特定、調査、および実行するのに役立ちます。
 
-### <a name="information-protection-setup-guide"></a>情報保護のセットアップ ガイド
+### <a name="microsoft-purview-information-protection-setup-guide"></a>Microsoft Purview Information Protection セットアップ ガイド
 
-機密情報が確実に保護されるように、情報保護戦略に適用できる機能の概要を確認します。 機密情報を発見、分類、保護、および監視する 4 段階のライフサイクル アプローチを使用します。 [Microsoft の情報保護のセットアップ ガイド](https://aka.ms/mipsetupguide) には、これらの各段階を完了するためのガイダンスが記載されています。
+機密情報が確実に保護されるように、情報保護戦略に適用できる機能の概要を確認します。 機密情報を発見、分類、保護、および監視する 4 段階のライフサイクル アプローチを使用します。 [Microsoft Purview Information Protection セットアップ ガイド](https://aka.ms/microsoftpurviewinformationprotectionsetupguide)では、これらの各ステージを完了するためのガイダンスを提供します。
 
-### <a name="data-lifecycle-management-setup-guide"></a>データ ライフサイクル管理のセットアップ ガイド
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Microsoft Purview データ ライフサイクル管理のセットアップ ガイド
 
-[Microsoft 情報ガバナンスのセットアップ ガイド](https://aka.ms/migsetupguide)では、組織のガバナンス戦略を設定および管理するために必要な情報を提供し、設定した特定のライフサイクル ガイドラインに従ってデータが確実に分類および管理されるようにします。 このガイドでは、組織の再利用可能なコンテンツおよびコンプライアンス レコードに適用されるラベル、ラベル ポリシー、アイテム保持ポリシーを作成、自動適用、公開する方法について説明します。 また、一括処理のシナリオ、または個々のドキュメントに手動で適用するために、ファイル計画を使用した CSV ファイルのインポートに関する情報を入手できます。
+[Microsoft Purview Data ライフサイクル管理セットアップ ガイド](https://aka.ms/migsetupguide)では、組織のガバナンス戦略を設定および管理するために必要な情報を提供し、設定した特定のライフサイクル ガイドラインに従ってデータが確実に分類および管理されるようにします。 このガイドでは、組織のコンテンツとコンプライアンス レコードに適用される保持ラベル、アイテム保持ラベル ポリシー、およびアイテム保持ポリシーを作成、自動適用、または公開する方法について説明します。 また、一括処理のシナリオ、または個々のドキュメントに手動で適用するために、ファイル計画を使用した CSV ファイルのインポートに関する情報を入手できます。
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>Microsoft Defender for Cloud Appsセットアップ ガイド
 

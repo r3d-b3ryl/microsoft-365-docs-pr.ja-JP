@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、テナント リストを管理する方法について説明します。
-ms.openlocfilehash: b4bffcfd5b8962253e68938a956949ca8470f818
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: bdd92f066f0b94c545b102b96eedb7e08c10ed96
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022429"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188330"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでテナント リストを管理する
 
@@ -106,4 +106,6 @@ Microsoft 365 Lighthouseでテナント リストを管理するために、カ�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 Lighthouseにサインアップする](m365-lighthouse-sign-up.md) (記事) [Microsoft 365 Lighthouseの [デバイス コンプライアンス] ページの概要](m365-lighthouse-device-compliance-page-overview.md) (記事) [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)
+[Microsoft 365 Lighthouseにサインアップ](m365-lighthouse-sign-up.md)する (記事)\
+[Microsoft 365 Lighthouseの [デバイス コンプライアンス] ページの概要](m365-lighthouse-device-compliance-page-overview.md) (記事)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)

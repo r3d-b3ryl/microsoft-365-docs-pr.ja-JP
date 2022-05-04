@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、監査ログを確認する方法について説明します。
-ms.openlocfilehash: ca4d1e9941e0c15fee169def7be0c2d801f522c2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 59e45f33b1c6708b4743605bda6ac4c93499bf59
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022847"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188770"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseで監査ログを確認する
 
@@ -96,8 +96,9 @@ ms.locfileid: "65022847"
 
 ## <a name="next-steps"></a>次の手順
 
-詳細が必要な場合は、Microsoft Graph APIを使用して、より多くの監査イベントにアクセスします。 詳細については、「[Microsoft 365 Lighthouse API を使用したマルチテナント管理の概要](/graph/managedtenants-concept-overview)」を参照してください。
+必要に応じて、Microsoft Graph APIを使用して、より多くの監査イベントにアクセスします。 詳細については、「[Microsoft 365 Lighthouse API を使用したマルチテナント管理の概要](/graph/managedtenants-concept-overview)」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)\
+[Microsoft 365 LighthouseでAzure Active Directory ロールを表示する](m365-lighthouse-view-your-roles.md) (記事)

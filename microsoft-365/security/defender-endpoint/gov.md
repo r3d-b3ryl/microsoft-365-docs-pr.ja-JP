@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 51f9c373a68e34ffafa5c3763b8efe77fa2c6146
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a27cb75a9bace821e20a914bc3c63b571079f9db
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098738"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188418"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府のお客様向けの Microsoft Defender for Endpoint
 
@@ -103,8 +103,8 @@ Windows 10バージョン 1909 ([KB4586819](https://support.microsoft.com/help/4
 Windows 10バージョン 1903 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows 10 Version 1809 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows 10バージョン 1803 ([KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Windows 10バージョン 1709|![その必要はありません。](images/svg/check-no.svg) <br /> 注: サポートされません|![[KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> ではい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください|![なし](images/svg/check-no.svg) <br /> 注: サポートされません
-Windows 10バージョン 1703 以前|![その必要はありません。](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
+Windows 10バージョン 1709|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![[KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> ではい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
+Windows 10バージョン 1703 以前|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
 Windows Server 2022|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows Server 2019 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows Server 2016 (モダン) <sup>2</sup>|![はい。](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー
@@ -191,9 +191,9 @@ Windows Server 2008 R2 SP1|![はい。](images/svg/check-yes.svg)|![はい](imag
 
 |フィーチャー名|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|ネットワーク評価|![なし](images/svg/check-no.svg) 開発中|![なし](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
+|ネットワーク評価|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
 |ネットワーク検出|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
-|レポート: デバイス制御、デバイスの正常性、ファイアウォール|![いいえ](images/svg/check-no.svg) 開発中|![なし](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
+|レポート: デバイス制御、デバイスの正常性、ファイアウォール|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
 |Web コンテンツ フィルタリング|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
   
 
@@ -206,11 +206,11 @@ Windows Server 2008 R2 SP1|![はい。](images/svg/check-yes.svg)|![はい](imag
 |フィーチャー名|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |Web Protection (フィッシング対策とカスタム インジケーター)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
-|Malware Protection (Android のみ)|![なし](images/svg/check-no.svg) 開発中|![なし](images/svg/check-no.svg) 開発中|![なし](images/svg/check-no.svg) 開発中|
+|Malware Protection (Android のみ)|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
 |脱獄検出 (iOS のみ)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |条件付きアクセス/条件付き起動|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |MAM のサポート|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |プライバシー コントロール|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
-|脅威と脆弱性の管理 (TVM)|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
+|脅威と脆弱性の管理 (TVM)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
   
 
