@@ -27,6 +27,8 @@
           href: add-questions.md
         - name: バッファー時間を設定する
           href: set-buffer-time.md
+        - name: Bookings でグループ出席者を管理する
+          href: manage-attendees-bookings.md
         - name: 指標およびアクティビティの進捗管理
           href: metrics-and-activity-tracking.md
         - name: 言語とタイム ゾーンを設定する

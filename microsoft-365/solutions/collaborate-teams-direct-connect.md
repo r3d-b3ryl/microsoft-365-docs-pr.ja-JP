@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーとのコラボレーションのために、Microsoft Teams で共有チャネルを有効にする方法について説明します。
-ms.openlocfilehash: 2d439bc3056555daf9bfa9b07131d521e4ee3b4e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fe9ad8673b381206149abb4d8e6fb14a5a563dd0
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098148"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182625"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>共有チャネルで外部の参加者と共同作業する
 
@@ -108,7 +108,7 @@ Azure AD B2B 直接接続は既定で無効になっています。 共有チャ
 1. **[外部アプリケーション]** タブで、**[アクセスを許可]** と **[外部アプリケーションの選択]** を選択します。
 1. **[アプリケーションの追加]** を選択します。
 1. **Office 365** アプリケーションを選択して、**[選択]** を選択します。
-1. **[保存]** を選択し、**[送信アクセス設定]** ブレードを閉じます。
+1. **[保存]** を選択し、**[はい]** を選択して確認し、**[送信アクセス設定]** ブレードを閉じます。
 
 ## <a name="see-also"></a>関連項目
 
