@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
 ms.technology: mde
-ms.openlocfilehash: 78d22772ccc9713b968347de5dee4c3a9699fe26
-ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
+ms.openlocfilehash: b3f27f0fc5b4b6d0a8d23c7fac112597fed381ad
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64891868"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217444"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Microsoft 365 Defenderで非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスをオンボードする
 
@@ -148,8 +148,23 @@ VDI で実行されている VM に更新プログラムを簡単にデプロイ
 
 詳細については、「[Virtual Desktop Infrastructure (VDI) 環境でのMicrosoft Defender ウイルス対策のデプロイ ガイド」のガイダンスに](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)従ってください。
 
+   > [!NOTE]
+   > 非永続的 VDI 環境のマスター イメージをオンボードした (SENSE サービスが実行されている) 場合は、イメージを運用環境に戻す前に、一部のデータをオフにしてクリアする必要があります。
+   > 1. CMD ウィンドウで次のコマンドを実行して、センサーが停止していることを確認します。
+   >  ```console
+   >  sc query sense
+   >  ```
+   > 2. PsExec.exeを使用して次のコマンドを実行します (次のコマンドからダウンロードできます)。 https://download.sysinternals.com/files/PSTools.zip)
+   >
+   >  ```console
+   >  PsExec.exe -s cmd.exe
+   >  cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
+   >  del *.* /f /s /q
+   >  REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+   >  exit
+   >  ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 - [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)

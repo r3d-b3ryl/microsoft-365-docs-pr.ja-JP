@@ -3,7 +3,7 @@ title: 21Vianet が運営する Office 365の URL と IP アドレス範囲
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/31/2022
+ms.date: 04/28/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,14 +19,14 @@ ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 ms.custom: seo-marvel-apr2020
 f1.keywords:
 - NOCSH
-description: この記事では、中国で 21Vianet がOffice 365の URL と IP アドレスの範囲を示します。
+description: この記事では、21Vianet が中国で運用する場合のOffice 365の URL と IP アドレス範囲を一覧表示します。
 hideEdit: true
-ms.openlocfilehash: 8250fcddbc9b23317a0a3760b59c5f7776b98378
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 4c91505c0a83408e435879e718901d949e5eba26
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62294812"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217522"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet が運営する Office 365の URL と IP アドレス範囲
 
@@ -34,9 +34,9 @@ ms.locfileid: "62294812"
 
 **概要**: 次のエンドポイント (FQDN、ポート、URL、IPv4、および IPv6 プレフィックス) は 21Vianet が運営する Office 365 に適用され、これらのプランだけを活用して生産性サービスを組織へ提供できるように設計されています。
   
- **Office 365 エンドポイント:** *21 Vianet* |  が運営するワールドワイド [(GCC Office 365)](urls-and-ip-address-ranges.md)  | Office 365 米国政府機関 [DoD](microsoft-365-u-s-government-dod-endpoints.md) |  Office 365 米国政府機関 GCC [High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
+ **Office 365 エンドポイント:** [世界 (GCCを含む)](urls-and-ip-address-ranges.md)  | *Office 365 21 Vianet* |  [Office 365 米国政府機関 DoD](microsoft-365-u-s-government-dod-endpoints.md) |  [Office 365 米国政府機関GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) によって運用されています |
   
-**最終更新日:** 2021 年 9 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**最終更新日:** 2021 年 4 月 28 日 - ![RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログのサブスクリプション](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。
 

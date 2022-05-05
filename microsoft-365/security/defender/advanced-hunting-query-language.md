@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5e474505eecca0c42aa919b42364a1ad54c27e17
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9bca10cf946a7e812064f07cc3be6fa658edf39
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094759"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217400"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -175,14 +175,14 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ワークスペースの効率を高めるために、同じハンティング ページで複数のタブを使用することもできます。 [ **新しいクエリ** ] を選択して、新しいクエリのタブを開きます。
 
-:::image type="content" source="../../media/multitab.png" alt-text="Microsoft 365 Defender ポータルの **[新しいクエリ] ページで複数のクエリを実行する例" lightbox="../../media/multitab.png":::
+:::image type="content" source="../../media/multitab.png" alt-text="Microsoft 365 Defender ポータルで [高度な検索で新規作成] を選択して新しいタブを開く" lightbox="../../media/multitab.png":::
 
 その後、新しいブラウザー タブを開かずに、さまざまなクエリを実行できます。 
 
-:::image type="content" source="../../media/multitab-examples.png" alt-text="Microsoft 365 Defender ポータルの **[新しいクエリ] ページで複数のクエリを実行する例" lightbox="../../media/multitab-examples.png":::
+:::image type="content" source="../../media/multitab-examples.png" alt-text="Microsoft 365 Defender ポータルの高度なハンティング ページから離れることなく、さまざまなクエリを実行する" lightbox="../../media/multitab-examples.png":::
 
 >[!NOTE] 
-> 新しいクエリの新しいブラウザー タブを開くと、保存されていないクエリが失われます。
+> 高度な検索で複数のブラウザー タブを使用すると、保存されていないクエリが失われる可能性があります。 これを防ぐには、ブラウザーの個別のタブではなく、高度なハンティング内でタブ機能を使用します。
 
 ## <a name="use-sample-queries"></a>サンプル クエリを使用する
 

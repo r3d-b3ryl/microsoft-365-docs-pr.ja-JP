@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5b1d501f0d33e5b837abcd81f7b228cdc74d943
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 557b81db3c211b294166af8e5f8aaa783fc563a6
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973027"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65215795"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -50,7 +50,10 @@ ms.locfileid: "64973027"
 - [Microsoft Defender for Endpoint の新機能](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Microsoft Defender for Identityの新機能](/defender-for-identity/whats-new)
 - [Microsoft Cloud App Securityの新機能](/cloud-app-security/release-notes)
+## <a name="april-2022"></a>2022 年 4 月
 
+- [手動による電子メール修復の機能強化](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): 新しいアクションに焦点を当てた調査を使用して、Microsoft Defender for Office 365で実行された手動の電子メール消去アクションを、Microsoft 365 Defender (M365D) 統合アクション センターに取り込みます。
+ 
 ## <a name="march-2022"></a>2022 年 3 月
 
 - [Microsoft Defender for Office 365での提出エクスペリエンスの効率化](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): 新しい統合された合理化された提出プロセスを紹介し、エクスペリエンスをシンプルにします。
