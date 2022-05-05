@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ソリューション試用版の詳細とサインアップ方法について説明します。
-ms.openlocfilehash: ed7848a12483062c2873f4735ecb2188cad373a1
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 653c80e7c8b412ac1d9c14a021519ca80baab6e9
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023681"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188836"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Microsoft Purview ソリューション試用版について
 
@@ -31,7 +31,7 @@ Microsoft Purview ソリューション試用版は、Microsoft Purview ソリ�
 
 ## <a name="terms-and-conditions"></a>使用条件
 
-Microsoft Purview 試用版の[使用条件](terms-conditions.md)をご覧ください。
+Microsoft 365 試用版の[使用条件](/legal/microsoft-365/microsoft-365-trial)をご覧ください。
 
 ## <a name="eligibility"></a>対象
 

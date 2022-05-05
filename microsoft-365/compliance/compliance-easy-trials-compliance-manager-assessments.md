@@ -1,5 +1,5 @@
 ---
-title: Microsoft コンプライアンス マネージャー プレミアム評価試用版について
+title: Microsoft Purview コンプライアンス マネージャー プレミアム評価試用版について
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,15 +13,17 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft コンプライアンス マネージャー プレミアム評価試用版について。
-ms.openlocfilehash: b7eaa963a3978a38db8511f30aa663670e7168c7
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+description: Microsoft Purview コンプライアンス マネージャー プレミアム評価試用版について。
+ms.openlocfilehash: b5d653626eadbfcc6e58d2be36a7ed8899c02eeb
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62465173"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187758"
 ---
-# <a name="about-the-free-trial-for-microsoft-compliance-manager-premium-assessments"></a>Microsoft コンプライアンス マネージャー プレミアム評価の無料試用版について
+# <a name="about-the-free-trial-for-microsoft-purview-compliance-manager-premium-assessments"></a>Microsoft Purview コンプライアンス マネージャー プレミアム評価の無料試用版について
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 コンプライアンス マネージャーは、組織のコンプライアンス要件を管理し、コンプライアンス スコアを評価して改善するのに役立ちます。 作成する評価は、世界中の政府の規制と業界標準に対応するテンプレートに基づいています。  
 
@@ -29,15 +31,15 @@ ms.locfileid: "62465173"
 
 ## <a name="terms-and-conditions"></a>使用条件
 
-Microsoft 365 コンプライアンス試用版の[使用条件](terms-conditions.md)をご覧ください。
+Microsoft 365 試用版の[使用条件](/legal/microsoft-365/microsoft-365-trial)をご覧ください。
 
 ## <a name="set-up-a-premium-assessment-trial"></a>プレミアム評価試用版を設定する
 
-Microsoft 365 コンプライアンス センターでは、左のナビゲーション ウィンドウにある **[使用版]** リンクを使用して試用版のサインアップができます。 [**コンプライアンス マネージャー プレミアム評価試用版**] を選択して、プレミアム評価テンプレートの試用版を開始します。
+Microsoft Purview コンプライアンス センターでは、左のナビゲーション ウィンドウにある **[試用版]** リンクを使用して試用版のサインアップができます。 [**コンプライアンス マネージャー プレミアム評価試用版**] を選択して、プレミアム評価テンプレートの試用版を開始します。
 
 このプレミアム評価試用版は、商用ライセンスの下でコンプライアンス マネージャーを使用している組織が利用できます。 GCC と DOD の情報と試用版のオプションについては、「[コンプライアンス マネージャー テンプレートの使用](compliance-manager-templates.md)」 を参照してください。
 
-コンプライアンス マネージャー機能へのフル アクセスは、コンプライアンス マネージャーのライセンス契約によって異なる場合があります。 コンプライアンス マネージャーを含む無料のコンプライアンス試用版の詳細については、「[Microsoft 365 コンプライアンスの無料試用版について](compliance-easy-trials.md)」 を参照してください。
+コンプライアンス マネージャー機能へのフル アクセスは、コンプライアンス マネージャーのライセンス契約によって異なる場合があります。 コンプライアンス マネージャーを含む無料のコンプライアンス試用版の詳細については、「[Microsoft Purview の無料試用版について](compliance-easy-trials.md)」 を参照してください。
 
 > [!NOTE]
 > 試用版への登録を容易にするために、Microsoft 365 管理センターの設定を確認します。 Microsoft 365 管理センターで、[**設定] > [組織の設定] > [サービス]** ページに移動し、[**ユーザー所有のアプリとサービス**]を選択します。 次に、ユーザーが組織の代わりに試用版を開始できるようにするチェック ボックスをオンにします。 セットアップが約 2 分後に完了したら、戻ってチェック ボックスをオフにして、この設定を無効にすることができます。 組織の設定を調整せずに試用版を開始することもできます。そのためには、[ **課金>サービスの購入** ] ページに移動し、Compliance Manager Premium 評価試用版を検索します。
@@ -56,7 +58,7 @@ Microsoft 365 コンプライアンス センターでは、左のナビゲー�
 
 ## <a name="during-your-trial"></a>試用期間中
 
-試用版全体で、コンプライアンス マネージャーの [**概要**] ページの [**試用版サマリー**] セクションを確認して、作成した評価の数、実行した改善アクションの数、それがコンプライアンス スコアにどのように貢献したか、および試用版に残っている時間を確認できます。  ここから、利用可能なテンプレートの一覧を確認し、継続的な使用のためにそれらを購入する方法の詳細を確認することもできます。
+試用版全体で、コンプライアンス マネージャーの [**概要**] ページの [**試用版サマリー**] セクションを確認して、作成した評価の数、実行した改善アクションの数、それがコンプライアンス スコアにどのように貢献したか、および試用版に残っている時間を確認できます。 ここから、利用可能なテンプレートのリストを確認し、継続的に使用するためにそれらを購入する方法について詳しく知ることもできます。
 
 ## <a name="after-the-trial"></a>試用後
 
@@ -64,6 +66,6 @@ Microsoft 365 コンプライアンス センターでは、左のナビゲー�
 
 ## <a name="learn-more-about-compliance"></a>コンプライアンスに関する詳細情報
 
-コンプライアンス マネージャーの機能と、組織がコンプライアンスと規制の要件を満たすのにどのように役立つかの詳細については、「[Microsoft コンプライアンス マネージャー](compliance-manager.md)」 を参照してください。  
+コンプライアンス マネージャーの機能と、組織がコンプライアンスと規制の要件を満たすのにどのように役立つかの詳細については、「[Microsoft Purview コンプライアンス マネージャー](compliance-manager.md)」 を参照してください。  
 
-他の Microsoft コンプライアンス ソリューションと無料試用版の開始方法については、「[Microsoft 365 コンプライアンスの無料試用版について](compliance-easy-trials.md)」 をご参照ください。
+他の Microsoft コンプライアンス ソリューションと無料試用版の開始方法については、「[Microsoft Purview の無料試用版について](compliance-easy-trials.md)」 をご参照ください。

@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange の保持のしくみについて説明します。
-ms.openlocfilehash: 66b7ad888e62ff84b6a2de49714bbbdf96268312
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: d5c961c733dd757c1f2b8179793b43991e71b4d8
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911426"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188748"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Exchange の保持の詳細
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事の情報は[保持の詳細](retention.md)に関する記事を補足するもので、Exchange に固有の情報が含まれています。その他のワークロードについては、以下を参照してください。
 
@@ -41,6 +43,8 @@ ms.locfileid: "64911426"
 連絡先、および終了日が設定されていないタスクおよび予定表アイテムはサポートされません。
 
 Skype や Teams メッセージなど、メールボックスに保存されているその他のアイテムは、Exchange のアイテム保持ポリシーやラベルには含まれません。これらのアイテムには独自のアイテム保持ポリシーがあります。
+
+メールボックスには、保持設定が適用される前に少なくとも10 MBのデータが必要であり、保持ラベルをメールボックスに公開できます。
 
 ## <a name="how-retention-works-for-exchange"></a>Exchange の保持のしくみ
 
@@ -97,7 +101,7 @@ Exchange のアイテム保持ポリシーは、他のMicrosoft 365 ワークロ
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
-Microsoft 365 で初めてアイテム保持を構成する場合は、「[情報ガバナンスを開始する](get-started-with-information-governance.md)」を参照してください。
+Microsoft 365 で初めてアイテム保持を構成する場合は、「[情報ガバナンスを開始する](get-started-with-data-lifecycle-management.md)」を参照してください。
 
 Exchange のアイテム保持ポリシーまたは保持ラベルを構成する準備ができたら、以下の手順をご覧ください。
 - [アイテム保持ポリシーを作成して構成する](create-retention-policies.md)

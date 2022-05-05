@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: c0214476494e024247b76911475df88bdfbfa4ff
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: ab3adee8275f6c64dd7ad3b21547e8205b00ff7d
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129224"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187780"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -240,6 +240,8 @@ Skype for Business を除き、既定では、選択した場所のすべての�
 
 ### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Exchange メールと Exchange パブリック フォルダーの構成情報
 
+**[Exchange メール]** の場所と **[Exchange パブリック フォルダー]** の場所の両方で、保持設定が適用される前にメールボックスに少なくとも 10 MB のデータが必要です。 
+
 **Exchange メール** の場所は、メールボックスのレベルで保持設定を適用することにより、ユーザーのメール、予定表、およびその他のメールボックス アイテムの保持をサポートします。共有メールボックスもサポートされています。
 
 リソース メールボックス、連絡先、および Microsoft 365 グループ メールボックスは、Exchange メールではサポートされていません。 Microsoft 365 グループ メールボックスの場合は、代わりに **Microsoft 365 グループ** の場所を選択します。 Exchange の場所では、最初は静的スコープに対してグループ メールボックスを選択できますが、アイテム保持ポリシーを保存しようとすると、"RemoteGroupMailbox" はこの場所の有効な選択ではないというエラーが表示されます。
@@ -294,6 +296,8 @@ SharePoint サイトまたは OneDrive アカウントの場所を指定する�
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 グループの構成情報
 
 Microsoft 365 グループ (以前の Office 365 グループ) のコンテンツを保持または削除するには、**Microsoft 365 グループ** の場所を使用する必要があります。 アイテム保持ポリシーの場合、この場所にはグループ メールボックスと SharePoint チーム サイトが含まれます。 保持ラベルの場合、この場所には SharePoint チーム サイトのみが含まれます。
+
+このポリシーの場所を対象とするメールボックスには、保持設定が適用される前に少なくとも 10 MB のデータが必要です。
 
 > [!NOTE]
 > Microsoft 365 グループには Exchange メールボックスがありますが、**Exchange メール** の場所が含まれるアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。

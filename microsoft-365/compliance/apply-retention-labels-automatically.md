@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除するのにアイテム保持ポリシーを自動的に適用できるよう、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 2c1ea20f9b663ca8cee59043bbe6399f5bae66f1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1895669c20d06bdae13ed2d25183dff92862d44f
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145275"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188858"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 

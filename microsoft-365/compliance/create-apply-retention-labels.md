@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順。
-ms.openlocfilehash: c2088afd895b47945bea056c940e564b4dd770fb
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd20de86b17460d5b150b5bb576ae811e40eed32
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145385"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187802"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>アイテム保持ラベルを発行してアプリに適用する
 
@@ -88,7 +88,7 @@ ms.locfileid: "65145385"
 
 SharePoint または OneDrive に対して保持ラベルを発行する場合、これらのラベルは、通常 1 日以内にユーザーが選択できるように表示されます。ただし、最大 7 日かかります。 
 
-Exchange にラベルを発行する場合、ユーザーにこれら保持ラベルが表示されるまで最大 7 日かかり、少なくとも 10 MB のデータをメールボックスで格納できる必要があります。
+Exchange にラベルを発行する場合、ユーザーにこれら保持ラベルが表示されるまで最大 7 日かかります。 Exchange のすべての保持設定と同様に、メールボックスには少なくとも 10 MB のデータが含まれている必要があります。
 
 ![発行されたラベルが有効になるタイミングの図。](../media/retention-labels-published-timings.png)
 
