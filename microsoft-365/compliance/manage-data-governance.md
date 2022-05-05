@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Microsoft Purview Data ライフサイクル管理と Microsoft Purview レコード管理の機能を実装し、コンプライアンスや規制要件に対応してデータを統制します。
-ms.openlocfilehash: d79396b9489bc21f899eaa6ab1ef89b175831095
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0b507fad6b4455755a3a0036bff15a7973b906ee
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973364"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217632"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>Microsoft Purview を使用してデータを統制する
 
@@ -29,6 +29,9 @@ ms.locfileid: "64973364"
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 **Microsoft Purview データ ライフサイクル管理** (以前の Microsoft Information Governance) と **Microsoft Purview レコード管理** の機能を使用し、コンプライアンスや規制要件に対応してデータを統制します。
+
+> [!TIP]
+> マルチクラウド、サービスとしてのソフトウェア (SaaS) など、データ資産全体でデータをマップおよび管理する場合 [Microsoft Purview Data Map、Microsoft Purview Data Catalog、Microsoft Purview Data Estate Insights](/azure/purview/overview) を使用します。
 
 [ライセンスの観点](#licensing-requirements)から見ると、データ ライフサイクル管理とレコード管理の間にはかなりの重複がある可能性があります。 どちらのソリューションも、Microsoft 365 アプリとサービスのデータの保持と削除をサポートしています。
 

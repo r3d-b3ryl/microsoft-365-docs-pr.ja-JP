@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Purview データ損失防止ポリシーとツールを使用して機密情報を保護し、DLP ライフサイクルをツアーする方法について説明します。
-ms.openlocfilehash: 755593830b489b268c81e722bd35a5984f2d1d93
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: aa32eba1111f4a119652ba88b59062581bb6cc4b
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953407"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231787"
 ---
 # <a name="learn-about-data-loss-prevention"></a>データ損失防止について
 
@@ -183,7 +183,7 @@ All DLP policies are created and maintained in the Microsoft Purview center. See
 
 ## <a name="viewing-policy-application-results"></a>ポリシー アプリケーションの結果の表示
 
-DLP は、監視、ポリシーの一致とアクション、ユーザー アクティビティから Microsoft Purview に膨大な量の情報を報告します。 機密性の高いアイテムに対して実行されたポリシーとトリアージ アクションを調整するには、その情報を使用して操作する必要があります。 テレメトリは [、Microsoft Purview コンプライアンス ポータルの監査ログ](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) に最初に入り、処理され、さまざまなレポート ツールに移動します。 レポート ツールごとに目的が異なります。
+DLP は、監視、ポリシーの一致とアクション、ユーザー アクティビティから Microsoft Purview に膨大な量の情報を報告します。 機密性の高いアイテムに対して実行されたポリシーとトリアージ アクションを調整するには、その情報を使用して操作する必要があります。 テレメトリは [、Microsoft Purview コンプライアンス ポータルの監査ログ](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) に最初に入り、処理され、さまざまなレポート ツールに移動します。 レポート ツールごとに目的が異なります。
 
 ### <a name="dlp-alerts-dashboard"></a>DLP アラート ダッシュボード
 
@@ -217,7 +217,7 @@ Microsoft Purview DLP の詳細については、次を参照してください�
 
 - [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)
 - [Microsoft Teams の既定のデータ損失防止ポリシーについての詳細情報 (プレビュー)](dlp-teams-default-policy.md)
-- [データ損失防止のオンプレミス スキャナーについて学習する](dlp-on-premises-scanner-learn.md)
+- [データ損失防止のオンプレミス スキャナーの詳細](dlp-on-premises-scanner-learn.md)
 - [Microsoft Compliance Extension の詳細情報](dlp-chrome-learn-about.md)
 - [データ損失防止の警告ダッシュボードについて](dlp-alerts-dashboard-learn.md)
 

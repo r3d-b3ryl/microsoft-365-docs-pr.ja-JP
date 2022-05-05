@@ -1,5 +1,5 @@
 ---
-title: 暗号化されたメッセージ ポータルのアクティビティ ログ
+title: 暗号化されたメッセージ ポータル アクティビティ ログ
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -9,23 +9,23 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 04/21/2022
+ms.date: 05/04/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: アクセス ログは、暗号化されたメッセージ ポータルから取得された暗号化されたメッセージに対して使用できます。
-ms.openlocfilehash: 0eb7225401b0e33a43d0ee535aba13539d1c020d
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 778d4a72c505f9a5be453b740a2fab13d2674249
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131464"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231677"
 ---
 # <a name="encrypted-message-portal-activity-log-preview"></a>暗号化されたメッセージ ポータルアクティビティ ログ (プレビュー)
 
-アクセス ログは、暗号化されたメッセージ ポータルを使用して暗号化されたメッセージに使用できます。これにより、組織は、メッセージが読み取られ、外部受信者によって転送されるタイミングを決定できます。 外部受信者がログを使用できるようにするには、ポータル エクスペリエンスを適用する外部受信者に組織から送信された保護された電子メールにカスタム ブランド テンプレートを適用する必要があります。 「[暗号化されたメッセージに組織のブランドを追加する](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。
+アクセス ログは、暗号化されたメッセージ ポータルを介して暗号化されたメッセージに対して使用できます。これにより、組織は、メッセージがいつ読み取られ、外部の受信者によって転送されたかを判断できます。 外部受信者がログを使用できるようにするには、ポータル エクスペリエンスを適用する外部受信者に組織から送信された保護された電子メールにカスタム ブランド テンプレートを適用する必要があります。 「[暗号化されたメッセージに組織のブランドを追加する](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。
 
 ## <a name="enabling-message-access-audit-logs-in-powershell"></a>PowerShell でメッセージ アクセス監査ログを有効にする
 
@@ -46,6 +46,8 @@ PowerShell を使用してアクセス ログExchange Online有効にするこ�
 - 外部ユーザーがメッセージまたは添付ファイルを読み取る
 - 添付ファイルのダウンロード
 - メールの返信と転送
+
+メッセージ アクセス ログ スキーマの詳細については、「 [コンプライアンス ポータルで監査ログを検索する」を参照してください](search-the-audit-log-in-security-and-compliance.md#encrypted-message-portal-activities)。
 
 ## <a name="search-for-events-in-the-message-access-logs"></a>メッセージ アクセス ログ内のイベントを検索する
 

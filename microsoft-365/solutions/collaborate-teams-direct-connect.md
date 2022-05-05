@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーとのコラボレーションのために、Microsoft Teams で共有チャネルを有効にする方法について説明します。
-ms.openlocfilehash: fe9ad8673b381206149abb4d8e6fb14a5a563dd0
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: 392b2326e3166b5f813f96edc2a21c360919cfa6
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182625"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217482"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>共有チャネルで外部の参加者と共同作業する
 
