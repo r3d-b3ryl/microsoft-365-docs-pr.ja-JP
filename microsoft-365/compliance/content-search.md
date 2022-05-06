@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Microsoft コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用すると、さまざまな Microsoft 365 サービスでコンテンツを検索できます。
-ms.openlocfilehash: 418bdffd71e83aea548c21589c6b8c08ae2419e8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 90b1ce142b5d629be86ba058071af906485e765f
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097098"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231717"
 ---
 # <a name="create-a-content-search"></a>コンテンツ検索の作成
 
@@ -51,6 +51,8 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">コンプライアンス ポータル</a>のコンテンツ検索ツールに (検索を実行して結果をプレビューし、結果をエクスポートするために) アクセスするには、管理者、コンプライアンス責任者、または電子情報開示マネージャーが、コンプライアンス ポータルの電子情報開示マネージャーの役割グループのメンバーである必要があります。詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
 
 - Exchange ハイブリッド展開では、コンテンツ検索ツールを使用してオンプレミスのメールボックスを検索することはできません。 このツールは、クラウドベースのメールボックスの検索にのみ使用できます。
+
+- Exchange ハイブリッド展開では、オンプレミスのメールボックスで Teams チャット データを検索できます。 詳細については、「[オンプレミス ユーザーの Teams チャット データ](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users?view=o365-worldwide)」を参照してください。
 
 ## <a name="create-and-run-a-search"></a>検索の作成と実行
   
