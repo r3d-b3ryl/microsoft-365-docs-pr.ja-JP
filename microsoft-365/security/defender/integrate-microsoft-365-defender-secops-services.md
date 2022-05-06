@@ -1,7 +1,7 @@
 ---
-title: 手順 3. サービスの SOC Microsoft 365 Defenderとの統合を計画する
-description: サービスのセキュリティ操作カタログMicrosoft 365 Defender統合の基本。
-keywords: インシデント、アラート、調査、相関関係、攻撃、デバイス、ユーザー、ID、ID、メールボックス、メール、365、microsoft、m365、インシデント対応、サイバー攻撃、secops、セキュリティ操作、soc
+title: 手順 3. MICROSOFT 365 DEFENDERサービスの SOC カタログとの統合を計画する
+description: Microsoft 365 Defenderをサービスのセキュリティ操作カタログに統合する基本。
+keywords: インシデント, アラート, 調査, 相関関係, 攻撃, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365, インシデント対応, サイバー攻撃, secops, セキュリティ操作, soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -29,47 +29,47 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63323963"
 ---
-# <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>手順 3. サービスの SOC Microsoft 365 Defenderとの統合を計画する
+# <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>手順 3. MICROSOFT 365 DEFENDERサービスの SOC カタログとの統合を計画する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-確立されたセキュリティ 運用センター (SOC) には、次のようなサービスのカタログが含まれる必要があります。
+確立されたセキュリティ オペレーション センター (SOC) には、次を含む可能性のあるサービスのカタログが必要です。
 
 - 侵入&マルウェア分析
-- 属性&リバース エンジニアリング
+- リバース エンジニアリング&属性
 - 脅威インテリジェンス
 - 分析
-- 狩猟調査
+- ハンティング調査
 - フォレンジクス
 - インシデント対応 
 - コンピューター セキュリティ インシデント対応チーム (CSIRT) (SOC から分離される可能性があります) 
 - コンプライアンス テスト
-- インサイダーの脅威&監視
-- セキュリティ インシデント&監視 
+- インサイダー脅威&不正監視
+- セキュリティ インシデント&イベント監視 
 - 脆弱性スキャン
-- 拡張検出と応答 (XDR)/セキュリティ オーケストレーション、オートメーション、および応答 (SOAR)
+- 拡張検出と応答 (XDR)/セキュリティ オーケストレーション、自動化、応答 (SOAR)
 - フィッシング詐欺
 - データ損失防止
 - ブランドの監視
 
-Microsoft 365 Defenderテクノロジはさまざまな機能にまたがっていますので、SOC チームは、Microsoft 365 Defender の各コンポーネントを管理し、サービス機能に合わせて調整するために最適な役割と責任を決定する必要があります。
+Microsoft 365 Defenderテクノロジはさまざまな機能に及ぶため、SOC チームは、Microsoft 365 Defenderの各コンポーネントを管理し、サービス機能に合わせるのに最適なロールと責任を特定する必要があります。
 
-次に示すMicrosoft 365 Defenderコンポーネントを示します。
+Microsoft 365 Defenderのコンポーネントは次のとおりです。
 
-- **Microsoft Defender for Identity** (旧 Azure Advanced Threat Protection( Azure ATP とも呼ばれる) は、Active Directory ドメイン サービス (AD DS) シグナルを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダーアクションを特定、検出、調査するクラウドベースのセキュリティ ソリューションです。
+- **Microsoft Defender for Identity** (旧称 Azure Advanced Threat Protection、別名 Azure ATP) は、Active Directory Domain Services (AD DS) シグナルを使用して高度な脅威、侵害された ID、悪意のあるインサイダー アクションを特定、検出、調査するクラウドベースのセキュリティ ソリューションです。組織。
 
-- **Microsoft Defender for Endpoint** は、リスクベースの 脆弱性の管理 と評価、攻撃表面の縮小、行動ベースおよびクラウドベースの次世代保護、エンドポイントの検出と応答 (EDR)、自動調査と修復、管理された狩猟サービス、豊富な API、統合セキュリティ管理を含むデバイス向け包括的なクラウド提供エンドポイント セキュリティ ソリューションです。
+- **Microsoft Defender for Endpoint** は、リスクベースの脆弱性の管理と評価、攻撃面の削減、行動ベースとクラウドを利用した次世代保護、エンドポイントでの検出と対応 (EDRを含むデバイス向けの包括的なクラウド配信エンドポイント セキュリティ ソリューションです。)、自動調査と修復、マネージド ハンティング サービス、豊富な API、統合セキュリティ管理。
 
- - **Microsoft Defender for Office 365** は、堅牢なゼロデイ保護を提供することで、不明なマルウェアやウイルスから組織を保護し、組織を有害なリンクからリアルタイムで保護する機能を備えるクラウドベースの電子メール フィルター サービスです。 また、調査と狩猟、対応と修復、認識とトレーニング、安全な姿勢機能の包括的なスレートも提供します。
+ - **Microsoft Defender for Office 365** は、組織を未知のマルウェアやウイルスから保護するのに役立つクラウドベースの電子メール フィルター サービスです。堅牢なゼロデイ保護を提供し、組織を有害なリンクからリアルタイムで保護する機能が含まれています。 また、調査と捜索、対応と修復、認識とトレーニング、およびセキュリティで保護された姿勢機能の包括的なスレートも提供されます。
 
-- **Microsoft Defender for Cloud Apps** は、ログ 収集、API コネクタ、リバース プロキシなど、さまざまな展開モードをサポートするクラウド アクセス セキュリティ ブローカー (CASB) です。 豊富な可視性、データ移動の制御、高度な分析を提供し、Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定し、対処します。
+- **Microsoft Defender for Cloud Apps** は、ログ収集、API コネクタ、リバース プロキシなど、さまざまなデプロイ モードをサポートするクラウド アクセス セキュリティ ブローカー (CASB) です。 これにより、Microsoft およびサード パーティのすべてのクラウド サービス全体でサイバー脅威を特定して対処するための、豊富な可視性、データ移動の制御、高度な分析が提供されます。
 
-Microsoft 365 Defenderコンポーネントとテクノロジはさまざまな機能にまたがっていますので、SOC チームは、Microsoft 365 Defender の各コンポーネントを管理し、サービス機能に合わせて調整するために最適な役割と責任を決定する必要があります。
+Microsoft 365 Defenderコンポーネントとテクノロジはさまざまな機能に及ぶため、SOC チームは、Microsoft 365 Defenderの各コンポーネントを管理し、サービス機能に合わせるのに最適なロールと責任を判断する必要があります。
 
-システムの機能を統合するにはMicrosoft 365 Defender SOC サービスを絞り込む必要があります。 この機能の詳細については、次Microsoft 365 Defenderを参照してください。
+Microsoft 365 Defenderの機能を統合するには、SOC サービスを調整する必要があります。 Microsoft 365 Defenderの機能の詳細については、次の記事を参照してください。
 
 - [Microsoft Defender for Endpoint とは](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [Microsoft Defender for Identity とは?](/defender-for-identity/what-is)
@@ -78,4 +78,4 @@ Microsoft 365 Defenderコンポーネントとテクノロジはさまざまな�
 
 ## <a name="next-step"></a>次の手順
 
-[手順 4.役割Microsoft 365 Defender監督を定義する](integrate-microsoft-365-defender-secops-roles.md)
+[手順 4.Microsoft 365 Defenderロール、責任、監視を定義する](integrate-microsoft-365-defender-secops-roles.md)

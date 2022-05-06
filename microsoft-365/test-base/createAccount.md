@@ -1,6 +1,6 @@
 ---
-title: 新しいテストベース アカウントを作成する
-description: テスト ベースで新しいアカウントを作成する方法の詳細
+title: 新しい Test Base アカウントを作成する
+description: Test Base で新しいアカウントを作成する方法の詳細
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -21,21 +21,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2022
 ms.locfileid: "62345977"
 ---
-# <a name="step-1-create-a-test-base-account"></a>手順 1: テストベース アカウントを作成する
+# <a name="step-1-create-a-test-base-account"></a>手順 1: Test Base アカウントを作成する
 
 Azure サブスクリプションをお持ちでない場合は、開始する前に [無料アカウント](https://azure.microsoft.com/free/) を作成してください。
 
-## <a name="enter-details-for-test-base-account"></a>テストベース アカウントの詳細を入力する
+## <a name="enter-details-for-test-base-account"></a>テスト基本アカウントの詳細を入力する
  
-1. Azure portal **で 'Test Base'** を検索します。
+1. Azure portalで **'Test Base' を** 検索します。
 
-![テストベース アカウント検索イメージを作成します。](Media/CreateTestAccount1.png)
+![Test Base Account 検索イメージを作成します。](Media/CreateTestAccount1.png)
 
-2. [ **作成] をクリックして** テストベース アカウントを作成します。
+2. **[作成] を** クリックして、Test Base アカウントを作成します。
 
 ![[追加] をクリックしてアカウントを作成します。](Media/CreateTestAccount2.png)
 
-3.  チェック ボックスをオン ```Terms of Use``` にして、満足度を確認します ```Terms of Use```。
+3.  チェック ボックスを ```Terms of Use``` オンにして ```Terms of Use```、.
 
 ![使用条件を確認します。](Media/CreateTestAccount3.png)
 
@@ -43,17 +43,17 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
     -   サブスクリプション: リソース グループ
     -   インスタンスの詳細: 名前。
 
-**現在、テスト ベースは標準価格レベルのみをサポートしています。**
+**現在、テスト ベースでは Standard 価格レベルのみがサポートされています。**
 
 ![サブスクリプション、リソース グループを選択し、詳細を入力します。](Media/CreateTestAccount4.png)
 
-5.  最後に、[オン] を ```Review + Create``` クリックして、新しく作成したアカウントを検証して有効にします。
+5.  最後に、クリックして ```Review + Create``` 、新しく作成したアカウントを検証して有効にします。
 
 ## <a name="next-steps"></a>次の手順
 
-次の記事に進み、「手順 2: パッケージをアップロードする **方法」を参照してください。**
+次の記事に進み、手順 2: **パッケージのアップロード方法について説明します。**
 > [!div class="nextstepaction"]
-> [次のステップ](uploadApplication.md)
+> [次の手順](uploadApplication.md)
 
 <!---
 Add button for next page

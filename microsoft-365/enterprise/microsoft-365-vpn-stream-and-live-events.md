@@ -27,74 +27,74 @@ ms.locfileid: "63331192"
 # <a name="special-considerations-for-stream-and-live-events-in-vpn-environments"></a>VPN 環境での Stream イベントとライブ イベントに関する特別な考慮事項
 
 >[!NOTE]
->この記事は、リモート ユーザーの最適化に関するMicrosoft 365の一部です。
+>この記事は、リモート ユーザーの最適化Microsoft 365対処する一連の記事の一部です。
 
->- VPN スプリット トンネリングを使用してリモート ユーザー Microsoft 365接続を最適化する方法の概要については、「[Overview: VPN split tunneling for remoteing for remote」を参照](microsoft-365-vpn-split-tunnel.md)Microsoft 365。
->- VPN スプリット トンネリングの実装に関する詳細なガイダンスについては、「VPN スプリット トンネリングの実装」を参照[Microsoft 365。](microsoft-365-vpn-implement-split-tunnel.md)
->- VPN スプリット トンネリングのシナリオの詳細な一覧については、「VPN スプリット トンネリングの一般的なシナリオ」を参照[Microsoft 365。](microsoft-365-vpn-common-scenarios.md)
->- VPN スプリット トンネリング環境でのTeamsメディア トラフィックのセキュリティ保護に関するガイダンスについては、「VPN スプリット トンネリングTeamsメディア トラフィックのセキュリティ[保護」を参照してください](microsoft-365-vpn-securing-teams.md)。
->- 中国のユーザーに対するMicrosoft 365のパフォーマンスの最適化の詳細については、「中国のユーザー Microsoft 365[パフォーマンスの最適化」を参照してください](microsoft-365-networking-china.md)。
+>- VPN 分割トンネリングを使用してリモート ユーザーのMicrosoft 365接続を最適化する方法の概要については、「[概要: Microsoft 365の VPN 分割トンネリング」を](microsoft-365-vpn-split-tunnel.md)参照してください。
+>- VPN 分割トンネリングの実装に関する詳細なガイダンスについては、「[Microsoft 365用の VPN 分割トンネリングの実装」を](microsoft-365-vpn-implement-split-tunnel.md)参照してください。
+>- VPN 分割トンネリングのシナリオの詳細な一覧については、「[Microsoft 365の一般的な VPN 分割トンネリング シナリオ」を](microsoft-365-vpn-common-scenarios.md)参照してください。
+>- VPN 分割トンネリング環境でのTeamsメディア トラフィックのセキュリティ保護に関するガイダンスについては、「VPN 分割トンネリング[のメディア トラフィックTeamsセキュリティ保護](microsoft-365-vpn-securing-teams.md)する」を参照してください。
+>- 中国のユーザーに対Microsoft 365世界規模のテナント パフォーマンスを最適化する方法については、「中国ユーザー[のパフォーマンスの最適化Microsoft 365」を参照してください](microsoft-365-networking-china.md)。
 
-Microsoft 365 ライブ イベント トラフィック (これには、Teams が生成されたライブ イベントへの出席者、および Teams、Stream、または Yammer 経由で外部エンコーダーで生成されたイベントが含まれます)、オンデマンド ストリーム トラフィックは現在、サービスの [URL/IP](urls-and-ip-address-ranges.md) リストの Default とオプティマイズに分類されています。 これらのエンドポイントは、他のサービスでも使用される可能性がある CDN 上でホストされているので、Default に分類されます。 お客様は一般に、この種類のトラフィックをプロキシし、このようなエンドポイントで通常行われるセキュリティ要素を適用することを好む。
+Microsoft 365ライブ イベント トラフィック (これには、Teams生成されたライブ イベントへの出席者と、Teams、ストリーム、またはYammerを介して外部エンコーダーで生成されたものが含まれます)、オンデマンド ストリーム トラフィックは現在、[サービスの URL/IP リスト](urls-and-ip-address-ranges.md)で **既定** と **最適化** に分類されています。 これらのエンドポイントは、他のサービスでも使用できる CDN でホストされているため、 **既定** として分類されます。 お客様は一般に、この種類のトラフィックをプロキシし、このようなエンドポイントで通常行われるセキュリティ要素を適用することを好みます。
 
-多くのお客様は、VPN インフラストラクチャを介して大ボリュームおよび待機時間に敏感なトラフィックをルーティングするのではなく、ローカル インターネット接続から直接ユーザーを Stream/Live イベントに接続するために必要な URL/IP データを要求しています。 通常、これは、専用の名前空間とエンドポイントの正確な IP 情報の両方なしでは使用できません。これは、既定として分類された Microsoft 365 エンドポイントには提供 **されません**。
+多くのお客様は、VPN インフラストラクチャ経由で大量の待機時間に依存するトラフィックをルーティングするのではなく、ユーザーをローカル インターネット接続から直接 Stream/Live イベントに接続するために必要な URL/IP データを要求しています。 通常、これは、専用の名前空間とエンドポイントの正確な IP 情報の両方を使用しないと不可能です。これは、**既定** として分類されたMicrosoft 365 エンドポイントには提供されません。
 
-強制トンネル VPN を使用するクライアントからの Stream/Live イベント サービスの直接接続を有効にするには、次の手順を使用します。 このソリューションは、在宅作業のシナリオのためにネットワーク トラフィックが多い一方で、VPN を使用して Live Events トラフィックをルーティングしないようにするオプションを顧客に提供することを目的とします。 可能であれば、検査プロキシを介してサービスにアクセスする必要があります。
+次の手順を使用して、強制トンネル VPN を使用してクライアントから Stream/Live Events サービスの直接接続を有効にします。 このソリューションは、自宅からの作業シナリオによりネットワーク トラフィックが多いときに、VPN 経由でライブ イベント トラフィックをルーティングしないようにするオプションを顧客に提供することを目的としています。 可能であれば、検査中のプロキシを介してサービスにアクセスすることをお勧めします。
 
 >[!NOTE]
->このソリューションを使用すると、提供された IP アドレスに解決されないサービス要素が VPN を通過する場合がありますが、ストリーミング データのような大量トラフィックの大部分は必要です。 このオフロードによってキャッチされる Live Events/Stream のスコープ外には他の要素が含まれる場合がありますが、直接行く前に _FQDN と_ IP 一致の両方を満たす必要がある場合は、これらを制限する必要があります。
+>このソリューションを使用すると、提供された IP アドレスに解決されず、VPN を通過するサービス要素が存在する場合がありますが、ストリーミング データなどの大量のトラフィックの大部分が必要です。 このオフロードによってキャッチされるライブ イベント/ストリームの範囲外に他の要素がある場合がありますが、直接移動する前に FQDN _と_ IP の両方を満たす必要があるため、制限する必要があります。
 
 >[!IMPORTANT]
->お客様は、ライブ イベントのパフォーマンス向上を超え、VPN をバイパスするトラフィックを多く送信するリスクを量り取る必要があります。
+>お客様は、ライブ イベントのパフォーマンス向上よりも VPN をバイパスするトラフィックが増えるリスクを比較検討することをお勧めします。
 
-ライブ イベントとストリームの強制トンネルTeams実装するには、次の手順を適用する必要があります。
+Teamsライブ イベントとストリームの強制トンネル例外を実装するには、次の手順を適用する必要があります。
 
 ## <a name="1-configure-external-dns-resolution"></a>1. 外部 DNS 解決を構成する
 
-クライアントは、次のホスト名を IP アドレスに解決するために、外部の再帰的な DNS 解決を利用できる必要があります。
+クライアントでは、次のホスト名を IP アドレスに解決できるように、外部の再帰的 DNS 解決を使用できる必要があります。
 
 - \*.azureedge.net
 - \*.media.azure.net
 - \*.bmc.cdn.office.net
 
-**\*.azureedge.net** は Stream イベントに使用されます (Microsoft Stream でのライブ ストリーミング用にエンコーダーを構成 [する - Microsoft Stream |Microsoft Docs](/stream/live-encoder-setup))。
+**\*.azureedge.net** は Stream イベントに使用されます ([Microsoft Streamでライブ ストリーミング用のエンコーダーを構成する - Microsoft Stream |Microsoft Docs](/stream/live-encoder-setup))。
 
-**\*.media.azure.net** **\*と .bmc.cdn.office.net** は、Teams が生成するライブ イベント (クイック スタート イベント、RTMP-In でサポートされているイベント [ロードマップ ID 84960]) に使用され、Teams クライアントからスケジュールされます。
+**\*.media.azure.net** と **\*.bmc.cdn.office.net** は、Teams クライアントからスケジュールされたTeams生成されたライブ イベント (クイック スタート イベント、RTMP-Inサポートされているイベント [ロードマップ ID 84960]) に使用されます。
 
- これらのエンドポイントの一部は、Stream/Live イベント以外の他の要素と共有されています。VPN ソリューションで技術的に可能な場合でも、これらの FQDN を使用して VPN オフロードを構成する必要があります (たとえば、IP ではなく FQDN で動作する場合)。
+ これらのエンドポイントの中には、Stream/Live イベント以外の他の要素と共有されているものがあります。VPN ソリューションで技術的に可能な場合でも、これらの FQDN を使用して VPN オフロードを構成することはお勧めしません (たとえば、IP ではなく FQDN で動作する場合)。
 
-FQDN は VPN 構成では必要ありません。これらは純粋に関連するトラフィックを直接送信するために、AP と組み合わせて PAC ファイルで使用するために使用されます。
+FQDN は VPN 構成では必要ありません。これは、IP と組み合わせて PAC ファイルで使用して、関連するトラフィックを直接送信するためです。
 
 ## <a name="2-implement-pac-file-changes-where-required"></a>2. PAC ファイルの変更を実装する (必要な場合)
 
-VPN の実行中に PAC ファイルを使用してプロキシ経由でトラフィックをルーティングする組織の場合、これは通常、FQDN を使用して実現されます。 ただし、Stream/Live イベント **\*** では、提供されるホスト名には .azureedge.net などのワイルドカードが含まれています。また、完全な IP リストを提供できない他の要素も含まれます。 したがって、DNS ワイルドカードの一致に基づいて要求が直接送信される場合、この記事の後半の手順 [3](#3-configure-routing-on-the-vpn-to-enable-direct-egress) で直接パスを経由するルートが無い場合、これらのエンドポイントへのトラフィックはブロックされます。
+VPN 上で PAC ファイルを使用してプロキシ経由でトラフィックをルーティングする組織の場合、これは通常 FQDN を使用して実現されます。 ただし、Stream/Live イベントでは、指定されたホスト名に **.azureedge.net などの\*** ワイルドカードが含まれています。これには、完全な IP リストを提供できない他の要素も含まれます。 したがって、DNS ワイルドカード一致のみに基づいて要求が直接送信された場合、この記事の [後半の手順 3](#3-configure-routing-on-the-vpn-to-enable-direct-egress) . で直接パス経由のルートがないため、これらのエンドポイントへのトラフィックはブロックされます。
 
-これを解決するために、次の IP を提供し、手順 1 で説明した例の PAC ファイルのホスト名と組み合わせて [使用します](#1-configure-external-dns-resolution)。 PAC ファイルは、URL が Stream/Live イベントで使用される URL と一致する場合、その URL が一致する場合は、DNS 参照から返された IP がサービスに提供された IP と一致する場合も確認します。 両方 _が一_ 致する場合、トラフィックは直接ルーティングされます。 いずれかの要素 (FQDN/IP) が一致しない場合、トラフィックはプロキシに送信されます。 その結果、IP 名前空間と定義済み名前空間の両方のスコープ外の IP に解決される何でも、通常通り VPN 経由でプロキシを通過できます。
+これを解決するために、次の IP を提供し、 [手順 1](#1-configure-external-dns-resolution) で説明したように PAC ファイルの例のホスト名と組み合わせて使用できます。 PAC ファイルは、URL が Stream/Live イベントに使用されているものと一致するかどうかを確認し、その URL が使用されている場合は、DNS ルックアップから返された IP がサービスに対して指定されたものと一致するかどうかを確認します。 _両方_ が一致する場合、トラフィックは直接ルーティングされます。 いずれかの要素 (FQDN/IP) が一致しない場合、トラフィックはプロキシに送信されます。 その結果、構成により、IP 名前空間と定義済み名前空間の両方の範囲外の IP に解決されるものはすべて、通常どおり VPN 経由でプロキシを通過するようになります。
 
-### <a name="gathering-the-current-lists-of-cdn-endpoints"></a>エンドポイントの現在のリストCDNする
+### <a name="gathering-the-current-lists-of-cdn-endpoints"></a>CDN エンドポイントの現在のリストの収集
 
-ライブ イベントでは、複数のCDNプロバイダーを使用して顧客にストリーミングし、最適なカバレッジ、品質、復元性を提供します。 現在、Microsoft と verizon Azure CDNの両方が使用されています。 時間がたつ間に、地域の可用性などの状況により変更される可能性があります。 この記事は、IP 範囲を最新の状態に保つソースです。
+ライブ イベントでは、複数のCDN プロバイダーを使用して顧客にストリーミングし、最適なカバレッジ、品質、回復性を提供します。 現在、Microsoft と Verizon の両方のAzure CDNが使用されています。 時間の経過と共に、リージョンの可用性などの状況により、これが変更される可能性があります。 この記事は、IP 範囲を最新の状態に保つためのソースです。
 
-Microsoft Azure CDNの場合は、公式 Microsoft ダウンロード センターから [Azure IP](https://www.microsoft.com/download/details.aspx?id=56519) 範囲とサービス タグをダウンロード - パブリック クラウドからリストをダウンロードできます。JSON の *サービス タグ AzureFrontdoor.Frontend* を特に探す必要があります。*addressPrefixes は* IPv4/IPv6 サブネットを表示します。 時間がたつ間に、AP は変更できますが、サービス タグリストは常に更新され、使用されます。
+Microsoft からAzure CDNの場合は、[Azure IP 範囲とサービス タグのダウンロード - パブリック クラウドから公式の Microsoft ダウンロード センターから](https://www.microsoft.com/download/details.aspx?id=56519)一覧をダウンロードできます。JSON の *AzureFrontdoor.Frontend* サービス タグを特に探す必要があります。*addressPrefixes* には、IPv4/IPv6 サブネットが表示されます。 時間の経過と共に IP は変更できますが、サービス タグリストは常に更新されてから使用されます。
 
-Verizon (Edgecast) [https://docs.microsoft.com/rest/api/cdn/edge-nodes/list](/rest/api/cdn/edge-nodes/list) のAzure CDNには、([試す] をクリック) を使用して網羅的なリストを見つける必要があります。特に プレミアム **Verizon セクションを\_** 検索する必要があります。 この API には、すべての Edgecast IPs (origin と Anycast) が表示されます。 現在、API がオリジンと Anycast を区別するメカニズムは提供されていない。
+Verizon (Edgecast) からのAzure CDNの場合は、(**[試してみる**] をクリック) を使用して [https://docs.microsoft.com/rest/api/cdn/edge-nodes/list](/rest/api/cdn/edge-nodes/list)完全な一覧を見つけることができます。**プレミアム\_Verizon** セクションを特に探す必要があります。 この API では、すべての Edgecast IP (配信元と Anycast) が表示されることに注意してください。 現在、API が配信元と Anycast を区別するメカニズムはありません。
 
-これを PAC ファイルに実装するには、次の例を使用して、FQDN を介して Microsoft 365 Optimize トラフィック ダイレクト (推奨されるベスト プラクティス) を送信し、FQDN と返される IP アドレスの組み合わせを介して重要な Stream/Live Events トラフィックを直接送信します。 Contoso の _プレースホルダー名_ は、contoso がユーザーの名前である特定のテナントの名前に編集する contoso.onmicrosoft.com
+これを PAC ファイルに実装するには、次の例を使用します。この例では、FQDN を介してトラフィックを最適化Microsoft 365ダイレクト (推奨されるベスト プラクティス) を送信し、FQDN と返された IP アドレスの組み合わせを介して重要な Stream/Live イベント トラフィックを直接送信できます。 Contoso のプレースホルダー名は、 _contoso_ _が contoso.onmicrosoft.com_ から取得した特定のテナントの名前に編集する必要があります。
 
 #### <a name="example-pac-file"></a>PAC ファイルの例
 
 PAC ファイルを生成する方法の例を次に示します。
 
-1. 以下のスクリプトをローカル のハード ディスク _に保存します_ Get-TLEPacFile.ps1。
-1. [Verizon URL に移動し](/rest/api/cdn/edge-nodes/list#code-try-0)、結果の JSON をダウンロードします (cdnedgenodes.json のようなファイルにコピー貼り付け)
-1. スクリプトと同じフォルダーにファイルを置きます。
-1. PowerShell ウィンドウで、次のコマンドを実行します。 SPO URL が必要な場合は、別のテナント名を変更します。 これはタイプ 2 なので、 **オプティマイズ** と **許可** (Type 1 はオプティマイズのみ) です。
+1. 次のスクリプトを _Get-TLEPacFile.ps1としてローカル_ ハード ディスクに保存します。
+1. [Verizon URL](/rest/api/cdn/edge-nodes/list#code-try-0) に移動し、結果の JSON をダウンロードします (cdnedgenodes.json などのファイルに貼り付けます)。
+1. スクリプトと同じフォルダーにファイルを配置します。
+1. PowerShell ウィンドウで、次のコマンドを実行します。 SPO URL が必要な場合は、別のテナント名を変更します。 これはタイプ 2 なので、 **最適化** と **許可** (種類 1 は最適化のみ)。
 
    ```powershell
    .\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName <contoso> -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac
    ```
 
-5. TLE.pac ファイルには、すべての名前空間と IPs (IPv4/IPv6) が含まれる。
+5. TLE.pac ファイルには、すべての名前空間と IP (IPv4/IPv6) が含まれます。
 
 ##### <a name="get-tlepacfileps1"></a>Get-TLEPacFile.ps1
 
@@ -500,73 +500,73 @@ else
 }
 ```
 
-スクリプトは **AzureFrontDoor.Frontend** のダウンロード [URL](https://www.microsoft.com/download/details.aspx?id=56519) とキーオフに基づいて Azure リストを自動的に解析します。そのため、手動で取得する必要はありません。
+スクリプトは、**AzureFrontDoor.Frontend** の [ダウンロード URL](https://www.microsoft.com/download/details.aspx?id=56519) とキーに基づいて Azure リストを自動的に解析するため、手動で取得する必要はありません。
 
-繰り返しますが、FQDN を使用して VPN オフロードを実行する必要はありません。関数内 **の** FQDN と IP アドレスの両方を利用すると、このオフロードの使用を、Live イベント/ストリームを含む制限されたエンドポイントセットに範囲を設定するのに役立ちます。 関数の構造化方法により、クライアントによって直接一覧表示される FQDN に対して DNS 参照が実行されます。つまり、残りの名前空間の DNS 解決は変更されません。
+ここでも、FQDN のみを使用して VPN オフロードを実行することはお勧めしません。関数内の FQDN と IP アドレスの **両方** を利用することで、このオフロードをライブ イベント/ストリームを含む一連のエンドポイントに適用できます。 関数の構造化方法により、FQDN に対して DNS 参照が実行され、クライアントによって直接一覧表示されたものと一致します。つまり、残りの名前空間の DNS 解決は変更されません。
 
-Live Events および Stream **\*** に関連しないエンドポイントをオフロードするリスクを制限する場合は、このリスクの大部分が Azure CDN のお客様に使用される共有ドメインである構成から .azureedge.net ドメインを削除できます。 この欠点は、外部エンコーダーを使用するイベントは最適化されませんが、外部エンコーダー内で生成またはTeamsです。
+ライブ イベントとストリームに関連しないエンドポイントをオフロードするリスクを制限する場合は、.azureedge.net ドメインを構成から削除 **\*** できます。このドメインの大部分は、すべてのAzure CDN顧客に使用される共有ドメインであるためです。 この欠点は、外部エンコーダーを使用するイベントは最適化されませんが、Teams内で生成/整理されるイベントは最適化されないことです。
 
-## <a name="3-configure-routing-on-the-vpn-to-enable-direct-egress"></a>3. 直接出力を有効にするために VPN のルーティングを構成する
+## <a name="3-configure-routing-on-the-vpn-to-enable-direct-egress"></a>3. 直接エグレスを有効にする VPN でのルーティングを構成する
 
-最後の手順では、「**CDN Endpoints** の現在のリストを VPN 構成に収集する」で説明されている Live イベントの直接ルートを追加し、トラフィックが強制的なトンネルを介して VPN に送信されなかることを確認します。 Microsoft 365 オプティマイズ エンドポイントに対してこれを行う方法の詳細については、「VPN スプリット トンネリング[](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling)を実装する」の「[VPN](microsoft-365-vpn-implement-split-tunnel.md) スプリット トンネリングの実装」セクションMicrosoft 365。 このプロセスは、このドキュメントに記載されている Stream/Live イベントの AP でまったく同じです。
+最後の手順では、VPN 構成に **CDN エンドポイントの現在のリストの収集** に関するページで説明されているライブ イベント IP のダイレクト ルートを追加して、強制トンネル経由で VPN にトラフィックが送信されないようにします。 Microsoft 365最適化エンドポイントに対してこれを行う方法の詳細については、「Microsoft 365用[の VPN 分割トンネリングを実装する](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling)」の「[VPN 分割トンネリングの実装」セクションを参照](microsoft-365-vpn-implement-split-tunnel.md)してください。 このプロセスは、このドキュメントに記載されている Stream/Live イベント IP の場合とまったく同じです。
 
-VPN 構成には、エンドポイントの現在のリストを収集する [](#gathering-the-current-lists-of-cdn-endpoints) (FQDN ではなく) CDNに注意してください。
+VPN 構成には、[CDN エンドポイントの現在のリストの収集](#gathering-the-current-lists-of-cdn-endpoints)から IP (FQDN ではない) のみを使用する必要があることに注意してください。
 
 ## <a name="faq"></a>よくあるご質問 (FAQ)
 
 ### <a name="will-this-send-all-my-traffic-to-the-service-direct"></a>これにより、すべてのトラフィックがサービスに直接送信されますか?
 
-いいえ、これにより Live イベントまたはストリーム ビデオダイレクトの遅延に敏感なストリーミング トラフィックが送信されます。公開された AP に解決されない場合、他のトラフィックは引き続き VPN トンネルを使用します。
+いいえ。これはライブ イベントまたは Stream ビデオ ダイレクトの待機時間に依存するストリーミング トラフィックを送信します。公開された IP に解決されない場合、他のトラフィックは VPN トンネルを引き続き使用します。
 
 ### <a name="do-i-need-to-use-the-ipv6-addresses"></a>IPv6 アドレスを使用する必要がありますか?
 
-いいえ、接続は必要な場合にのみ IPv4 にできます。
+いいえ。接続は必要な場合にのみ IPv4 にできます。
 
-### <a name="why-are-these-ips-not-published-in-the-microsoft-365-urlip-service"></a>これらの IP が URL/IP サービスのMicrosoft 365されない理由
+### <a name="why-are-these-ips-not-published-in-the-microsoft-365-urlip-service"></a>これらの IP が Microsoft 365 URL/IP サービスで公開されないのはなぜですか?
 
-Microsoft では、サービス内の情報の形式と種類に関する厳密な管理を行い、お客様が情報を確実に使用して、エンドポイント カテゴリに基づいて安全で最適なルーティングを実装できます。
+Microsoft は、サービス内の情報の形式と種類を厳密に制御し、お客様がエンドポイント カテゴリに基づいてセキュリティで保護された最適なルーティングを実装するために情報を確実に使用できるようにします。
 
-[ **既定の** エンドポイント] カテゴリには、さまざまな理由で IP 情報が提供されません (既定のエンドポイントは Microsoft の制御の外部にある場合や、頻繁に変更される可能性がある、または他の要素と共有されるブロックに含まれます)。 このため、既定のエンドポイントは、通常の Web トラフィックのように、FQDN を介して検査プロキシに送信するように設計されています。
+**既定の** エンドポイント カテゴリには、さまざまな理由で IP 情報が提供されません (既定のエンドポイントは、Microsoft の制御の範囲外である可能性があります。変更頻度が高すぎる場合や、他の要素と共有されているブロックになっている可能性があります)。 このため、既定のエンドポイントは、通常の Web トラフィックのように、FQDN 経由で検査プロキシに送信されるように設計されています。
 
-この場合、上記のエンドポイントは、Live イベントまたは Stream 以外の Microsoft 以外の制御要素によって使用される可能性のある CDN であり、トラフィックダイレクトを送信すると、これらの ID に解決されるその他の意味もクライアントから直接送信されます。 現在のグローバル危機の固有の性質と、お客様の短期的なニーズを満たすために、Microsoft は、お客様が適した状態で使用するために上記の情報を提供しました。
+この場合、上記のエンドポイントは、ライブ イベントや Stream 以外の Microsoft 以外の制御要素によって使用される可能性のある CDN であるため、トラフィックを直接送信すると、これらの IP に解決される他の要素もクライアントから直接送信されます。 現在のグローバル危機の固有の性質と、お客様の短期的なニーズを満たすために、Microsoft は、お客様が適切に使用できるように、上記の情報を提供しています。
 
-Microsoft は、今後の Allow/Optimize エンドポイント カテゴリに含まれるライブ イベント エンドポイントを再構成する作業を行っています。
+Microsoft は、今後、ライブ イベント エンドポイントを Allow/Optimize エンドポイント カテゴリに含めることができるように、エンドポイントの再構成に取り組んでいます。
 
-### <a name="do-i-only-need-to-allow-access-to-these-ips"></a>これらの AP へのアクセスのみを許可する必要がありますか?
+### <a name="do-i-only-need-to-allow-access-to-these-ips"></a>これらの IP へのアクセスのみを許可する必要がありますか?
 
-いいえ、サービスを運用するには、[URL/IP](urls-and-ip-address-ranges.md) サービス内のすべての必須マーク付きエンドポイントへのアクセスが不可欠です。 さらに、Stream (ID 41-45) のマークが付いている任意のオプション エンドポイントが必要です。
+いいえ。[URL/IP サービス](urls-and-ip-address-ranges.md)内のすべての **必須** マークされたエンドポイントへのアクセスは、サービスが動作するために不可欠です。 さらに、Stream (ID 41- 45) にマークされた任意のエンドポイントが必要です。
 
-### <a name="what-scenarios-will-this-advice-cover"></a>このアドバイスでカバーされるシナリオは何ですか?
+### <a name="what-scenarios-will-this-advice-cover"></a>このアドバイスはどのようなシナリオに対応しますか?
 
-1. アプリ内で生成されるライブ Teamsイベント
-2. ストリームホスト型コンテンツの表示
-3. 外部デバイス (エンコーダー) によって生成されるイベント
+1. Teams アプリ内で生成されたライブ イベント
+2. Stream ホステッド コンテンツの表示
+3. 外部デバイス (エンコーダー) によって生成されたイベント
 
-### <a name="does-this-advice-cover-presenter-traffic"></a>このアドバイスは発表者のトラフィックをカバーしていますか?
+### <a name="does-this-advice-cover-presenter-traffic"></a>このアドバイスは発表者のトラフィックに関する情報ですか?
 
-そうではありません。上記のアドバイスは、サービスを利用する人のためのものです。 Teams 内から提示すると、発表者のトラフィックが URL/IP サービス行 11 に記載されているオプティマイズ マークされた UDP エンドポイントに流れ、[Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md) の VPN スプリット トンネリングの実装の「[VPN](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) スプリット トンネリングの実装」セクションで説明されている詳細な VPN オフロードアドバイスが表示されます。
+上記のアドバイスは、サービスを使用しているユーザーに対して行われるものではありません。 Teams内からプレゼンテーションを行うと、発表者のトラフィックが URL/IP サービス行 11 のオプティマイズ マークされた UDP エンドポイントに流れ、VPN オフロードに関する詳細なアドバイスについては、「[Microsoft 365用 VPN 分割トンネリングの実装](microsoft-365-vpn-implement-split-tunnel.md)」の「[VPN 分割トンネリングの実装](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling)」セクションで説明されています。
 
-### <a name="does-this-configuration-risk-traffic-other-than-live-events-amp-stream-being-sent-direct"></a>この構成では、ライブ イベント ストリーム以外のトラフィック &amp; が直接送信されるリスクがありますか?
+### <a name="does-this-configuration-risk-traffic-other-than-live-events-amp-stream-being-sent-direct"></a>この構成では、ライブ イベント &amp; ストリーム以外のトラフィックが直接送信されるリスクがありますか?
 
-はい、サービスの一部の要素で使用される共有 FQDN のため、これは避けできません。 通常、このトラフィックは、検査を適用できる企業プロキシ経由で送信されます。 VPN 分割トンネルのシナリオでは、FQDN と IPs の両方を使用すると、このリスクを最小限に抑えますが、それでも存在します。 お客様は、オフロード構成から .azureedge.net ドメインを削除し、このリスクを最小限に抑えますが、これにより、ストリームでサポートされるライブ イベント (Teams スケジュールされた外部エンコーダー イベント、Teams、Yammer スケジュールされた外部エンコーダー イベント、ストリームスケジュールされたイベントまたはストリームストリームからのオンデマンド表示で生成される Yammer イベント) のオフロードが削除されます。**\*** イベントがスケジュールされ、Teams影響を受けません。
+はい。サービスの一部の要素に使用される共有 FQDN のため、これは避けられません。 このトラフィックは通常、検査を適用できる企業プロキシを介して送信されます。 VPN 分割トンネルのシナリオでは、FQDN と IP の両方を使用して、このリスクの範囲を最小限に抑えますが、引き続き存在します。 お客様は **、.azureedge.net ドメインを\*** オフロード構成から削除し、このリスクを最小限に抑えることができますが、これにより、Stream でサポートされるライブ イベント (Teamsスケジュールされた外部エンコーダー イベント、Teamsで生成されたYammerイベント、Yammerスケジュールされた外部エンコーダー イベント、Stream スケジュールされたイベント、または Stream からのオンデマンド表示) のオフロードが削除されます。 Teamsでスケジュールおよび生成されたイベントは影響を受けません。
 
 ## <a name="related-articles"></a>関連記事
 
-[概要: VPN スプリット トンネリング (Microsoft 365](microsoft-365-vpn-split-tunnel.md)
+[概要: Microsoft 365の VPN 分割トンネリング](microsoft-365-vpn-split-tunnel.md)
 
-[VPN スプリット トンネリングを実装するMicrosoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+[Microsoft 365用の VPN 分割トンネリングの実装](microsoft-365-vpn-implement-split-tunnel.md)
 
-[VPN スプリット トンネリングの一般的なシナリオ (Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+[Microsoft 365の一般的な VPN 分割トンネリング シナリオ](microsoft-365-vpn-common-scenarios.md)
 
-[VPN スプリット トンTeamsメディア トラフィックのセキュリティ保護](microsoft-365-vpn-securing-teams.md)
+[VPN 分割トンネリングのための Teams メディア トラフィックのセキュリティ保護](microsoft-365-vpn-securing-teams.md)
 
-[Microsoft 365のパフォーマンスの最適化](microsoft-365-networking-china.md)
+[中国ユーザーのMicrosoft 365パフォーマンスの最適化](microsoft-365-networking-china.md)
 
 [Microsoft 365 ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)
 
 [Microsoft 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
-[Microsoft 365とパフォーマンスの調整](network-planning-and-performance.md)
+[Microsoft 365ネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
 
 [セキュリティ専門家と IT による、現代のユニークなリモート ワーク シナリオで最新のセキュリティ管理を実現するための代替的な方法 (Microsoft セキュリティ チーム ブログ)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 

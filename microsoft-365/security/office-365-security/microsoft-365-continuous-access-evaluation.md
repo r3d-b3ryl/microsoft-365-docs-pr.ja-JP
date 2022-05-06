@@ -1,6 +1,6 @@
 ---
-title: エンタープライズ向け Microsoft 365のMicrosoft 365評価
-description: Microsoft 365および Azure ADの条件付きアクセス評価がアクティブ なユーザー セッションを積極的に終了し、ほぼリアルタイムでテナント ポリシーの変更を適用する方法について説明します。
+title: Microsoft 365の継続的なアクセス評価 - エンタープライズ向けのMicrosoft 365
+description: Microsoft 365とAzure ADの条件付きアクセスの評価によって、アクティブなユーザー セッションを事前に終了し、テナント ポリシーの変更をほぼリアルタイムで強制する方法について説明します。
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -18,94 +18,94 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: e265fd09fa7442b24868ad7f001701ef567e32bd
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 22927fbf85d9dab424c8b546b7e837bf035d8a2f
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681570"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775348"
 ---
-# <a name="continuous-access-evaluation-for-microsoft-365"></a>ユーザーの継続的なアクセスMicrosoft 365
+# <a name="continuous-access-evaluation-for-microsoft-365"></a>Microsoft 365の継続的アクセス評価
 
-認証に OAuth 2.0 を使用する最新のクラウド サービスは、従来、ユーザー アカウントのアクセスを取り消すアクセス トークンの有効期限に依存しています。 実際には、管理者がユーザー アカウントのアクセスを取り消した場合でも、ユーザーはアクセス トークンの有効期限が切れるまでアクセス権を持ち続け、既定では Microsoft 365 では、最初の失効イベントが発生した後、最大 1 時間が経過します。
+認証に OAuth 2.0 を使用する最新のクラウド サービスは、従来、アクセス トークンの有効期限に依存してユーザー アカウントのアクセスを取り消しています。 実際には、これは、管理者がユーザー アカウントのアクセスを取り消した場合でも、アクセス トークンの有効期限が切れるまで、ユーザーは引き続きアクセス権を持ちます。既定では、Microsoft 365では、最初の失効イベントが発生してから最大 1 時間です。
 
-Microsoft 365 および Azure Active Directory (Azure AD) の条件付きアクセス評価は、アクティブなユーザー セッションを積極的に終了し、アクセス トークンの有効期限に依存するのではなく、ほぼリアルタイムでテナント ポリシーの変更を適用します。 Azure ADは、ユーザー アカウントまたはテナントがユーザー アカウントの認証状態の再評価を必要とする方法で変更された場合に、継続的アクセス評価が有効な Microsoft 365 サービス (SharePoint、Teams、Exchange など) に通知します。
+Microsoft 365とAzure Active Directory (Azure AD) の条件付きアクセス評価では、アクセス トークンの有効期限に依存する代わりに、アクティブなユーザー セッションを事前に終了し、テナント ポリシーの変更をほぼリアルタイムで強制します。 Azure ADは、ユーザー アカウントまたはテナントがユーザー アカウントの認証状態の再評価を必要とする方法で変更されたときに、継続的アクセス評価が有効なMicrosoft 365 サービス (SharePoint、Teams、Exchangeなど) に通知します。
 
-Outlook などの継続的なアクセス評価が有効なクライアントが既存のアクセス トークンを使用して Exchange にアクセスしようとすると、トークンはサービスによって拒否され、新しい Azure AD 認証を求めるメッセージが表示されます。 その結果、ユーザー アカウントとポリシーの変更がほぼリアルタイムで適用されます。
+Outlookなどの継続的アクセス評価が有効なクライアントが既存のアクセス トークンを使用してExchangeにアクセスしようとすると、トークンはサービスによって拒否され、新しいAzure AD認証が求められます。 その結果、ユーザー アカウントとポリシーの変更がほぼリアルタイムで適用されます。
 
 その他の利点を次に示します。
 
-- 組織外で有効なアクセス トークンをコピーしてエクスポートする悪意のあるインサイダーの場合、継続的なアクセス評価によって、IP アドレスの場所ポリシーを使用してこのトークンAzure AD使用を防止します。 継続的なアクセス評価により、Azure AD はポリシーをサポートされている Microsoft 365 サービスに同期するため、アクセス トークンがポリシーの IP アドレス範囲外からサービスにアクセスしようとすると、サービスはトークンを拒否します。
+- 組織の外部で有効なアクセス トークンをコピーしてエクスポートする悪意のあるインサイダーの場合、継続的なアクセス評価により、Azure AD IP アドレスの場所ポリシーを通じてこのトークンの使用が防止されます。 継続的アクセス評価では、Azure ADはポリシーをサポートされているMicrosoft 365 サービスに同期するため、アクセス トークンがポリシー内の IP アドレス範囲外からサービスにアクセスしようとすると、サービスはトークンを拒否します。
 
-- 継続的なアクセス評価により、トークンの更新を少なくする必要が生じ、復元性が向上します。 サポート サービスは、再認証の要求に関する事前通知を受け取るので、Azure ADは、たとえば 1 時間を超えて、より長い期間のトークンを発行できます。 有効期限が長いトークンでは、クライアントはトークンの更新を要求する必要がAzure AD、ユーザー エクスペリエンスの回復性が向上します。
+- 継続的なアクセス評価では、トークンの更新が少なくて済み、回復性が向上します。 サポート サービスは再認証の要求に関するプロアクティブな通知を受け取るため、Azure ADは有効期間の長いトークン (たとえば、1 時間以上) を発行できます。 有効期間が長いトークンでは、クライアントは頻繁にAzure ADからトークンの更新を要求する必要がないため、ユーザー エクスペリエンスの回復性が向上します。
 
 継続的なアクセス評価によってユーザー アクセス制御のセキュリティが向上する状況の例を次に示します。
 
-- ユーザー アカウントのパスワードが侵害されたので、管理者は既存のすべてのセッションを無効にし、管理者からパスワードをリセットMicrosoft 365 管理センター。 ほぼリアルタイムで、すべての既存のユーザー セッションとサービスMicrosoft 365無効になります。
+- ユーザー アカウントのパスワードが侵害されたため、管理者は既存のすべてのセッションを無効にし、Microsoft 365 管理センターからパスワードをリセットします。 ほぼリアルタイムで、Microsoft 365 サービスを使用するすべての既存のユーザー セッションが無効になります。
 
-- Word でドキュメントを操作しているユーザーは、タブレットを管理者定義の承認済み IP アドレス範囲に含めないパブリック コーヒーショップに持ち込む。 コーヒーショップでは、ユーザーのドキュメントへのアクセスが直ちにブロックされます。
+- Word でドキュメントを操作しているユーザーは、管理者が定義した承認済みの IP アドレス範囲にないパブリック コーヒー ショップにタブレットを移動します。 コーヒー ショップでは、ドキュメントへのユーザーのアクセスはすぐにブロックされます。
 
-このMicrosoft 365、継続的なアクセス評価は現在、次の項目でサポートされています。
+Microsoft 365では、継続的アクセス評価は現在、次の方法でサポートされています。
 
-- Exchange、SharePoint、およびTeamsサービス。
-- Outlook、Teams、Office、OneDrive Win32、iOS、Android、および Mac クライアントの場合。
+- Exchange、SharePoint、およびTeams サービス。
+- Web ブラウザーと Win32、iOS、Android、Mac クライアントのOutlook、Teams、Office、およびOneDrive。
 
-Microsoft は、継続的なアクセス評価をサポートMicrosoft 365サービスとクライアントに追加のサービスを提供しています。
+Microsoft は、継続的なアクセス評価をサポートするために、追加のMicrosoft 365 サービスとクライアントに取り組んでいます。
 
-継続的なアクセス評価は、すべてのバージョンのサーバーとOffice 365に含Microsoft 365。 条件付きアクセス ポリシーを構成するには、Azure AD Premium P1すべてのバージョンに含まれるMicrosoft 365必要があります。
+継続的アクセス評価は、Office 365とMicrosoft 365のすべてのバージョンに含まれます。 条件付きアクセス ポリシーを構成するには、すべてのMicrosoft 365 バージョンに含まれるAzure AD Premium P1が必要です。
 
 > [!NOTE]
-> 継続的 [アクセス評価の](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations) 制限事項については、この記事を参照してください。
+> 継続的アクセス評価の制限事項については、 [この記事](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations) を参照してください。
 
-## <a name="scenarios-supported-by-microsoft-365"></a>ユーザーがサポートするシナリオMicrosoft 365
+## <a name="scenarios-supported-by-microsoft-365"></a>Microsoft 365でサポートされるシナリオ
 
 継続的アクセス評価では、次の 2 種類のイベントがサポートされます。
 
 - 重要なイベントは、ユーザーがアクセスを失う必要があるイベントです。
-- 条件付きアクセス ポリシーの評価は、ユーザーが管理者定義のポリシーに基づいてリソースへのアクセスを失う必要がある場合に発生します。
+- 条件付きアクセス ポリシーの評価は、ユーザーが管理者が定義したポリシーに基づいてリソースへのアクセスを失う必要がある場合に発生します。
 
 重要なイベントは次のとおりです。
 
 - ユーザー アカウントが無効になっている
-- パスワードが変更される
+- パスワードが変更されました
 - ユーザー セッションが取り消される
 - ユーザーに対して多要素認証が有効になっている
-- Id Protection からのアクセスの評価に基づいてアカウント[リスクAzure AD増加](/azure/active-directory/identity-protection/overview-identity-protection)
+- アカウント リスクは、[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) からのアクセスの評価に基づいて増加しました
 
-条件付きアクセス ポリシーの評価は、ユーザー アカウントが信頼できるネットワークから接続しなくなったときに発生します。
+条件付きアクセス ポリシーの評価は、ユーザー アカウントが信頼されたネットワークから接続されなくなったときに発生します。
 
-現在、次Microsoft 365サービスは、ユーザーからのイベントをリッスンして継続的なアクセス評価をAzure AD。
+現在、次のMicrosoft 365 サービスは、Azure ADからのイベントをリッスンすることで継続的なアクセス評価をサポートしています。
 
 |適用の種類|Exchange|SharePoint|Teams|
 |---|---|---|---|
 |**重要なイベント:**||||
-|ユーザーの失効|サポート|サポート|サポート|
-|ユーザーのリスク|サポート|サポート対象外|サポート対象外|
+|ユーザー失効|サポート|サポート|サポート|
+|ユーザーのリスク|サポート|非サポート|非サポート|
 |**条件付きアクセス ポリシーの評価:**||||
 |IP アドレスの場所ポリシー|サポート|サポート\*|サポート|
 
-\*SharePoint Office Web ブラウザー アクセスは、厳密モードを有効にすることで、インスタント IP ポリシーの適用をサポートします。 厳密なモードを使用しない場合、アクセス トークンの有効期間は 1 時間です。
+\*SharePoint Office Web ブラウザー アクセスでは、厳格なモードを有効にすることで、インスタント IP ポリシーの適用がサポートされます。 strict モードを使用しない場合、アクセス トークンの有効期間は 1 時間です。
 
-条件付きアクセス ポリシーを設定する方法の詳細については、この記事を [参照してください](/azure/active-directory/conditional-access/overview)。
+条件付きアクセス ポリシーを設定する方法の詳細については、 [この記事](/azure/active-directory/conditional-access/overview)を参照してください。
 
-## <a name="microsoft-365-clients-supporting-continuous-access-evaluation"></a>Microsoft 365評価をサポートするクライアント
+## <a name="microsoft-365-clients-supporting-continuous-access-evaluation"></a>継続的なアクセス評価をサポートするクライアントをMicrosoft 365する
 
-Microsoft 365 の継続的アクセス評価が有効なクライアントは、キャッシュされたユーザー トークンが継続的アクセス評価対応 Microsoft 365 サービスによって拒否された場合に、再認証のためにユーザー セッションを Azure AD にリダイレクトするクレームチャレンジをサポートします。
+Microsoft 365の継続的アクセス評価が有効なクライアントは、要求チャレンジをサポートします。これは、キャッシュされたユーザー トークンが継続的アクセス評価が有効なMicrosoft 365 サービスによって拒否された場合に、再認証のためにユーザー セッションをAzure ADにリダイレクトすることです。
 
-次のクライアントは、Web、Win32、iOS、Android、および Mac での継続的なアクセス評価をサポートしています。
+次のクライアントは、Web、Win32、iOS、Android、Mac での継続的なアクセス評価をサポートしています。
 
 - Outlook
 - Teams
-- 事業所\*
+- Office\*
 - SharePoint
 - OneDrive
 
-\*クレームチャレンジは、web のOfficeサポートされていません。
+\*要求チャレンジは、web のOfficeではサポートされていません。
 
-継続的なアクセス評価をサポートしないクライアントの場合、アクセス トークンの有効期間は既定Microsoft 365 1 時間のままです。
+継続的なアクセス評価をサポートしていないクライアントの場合、Microsoft 365へのアクセス トークンの有効期間は既定で 1 時間のままです。
 
 ## <a name="see-also"></a>関連項目
 
 - [継続的アクセス評価](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
-- [条件付きアクセスのドキュメント](/azure/active-directory/conditional-access/overview)
-- [Azure AD Id Protection のドキュメント](/azure/active-directory/identity-protection/overview-identity-protection)
+- [条件付きアクセスに関するドキュメント](/azure/active-directory/conditional-access/overview)
+- [Azure AD Identity Protection のドキュメント](/azure/active-directory/identity-protection/overview-identity-protection)

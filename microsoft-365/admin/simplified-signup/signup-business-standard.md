@@ -1,5 +1,5 @@
 ---
-title: アカウントにサインアップMicrosoft 365 Business Standard
+title: Microsoft 365 Business Standardにサインアップする
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,146 +13,144 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-description: 組織Microsoft 365 Business Standardを購入してセットアップします。
-ms.openlocfilehash: b72a0b2c1024690813ea697978c23b07d9a801d4
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+description: Microsoft 365 Business Standardを購入し、組織を設定します。
+ms.openlocfilehash: 2f4f282f204926c37271a6720abe23fa60053a98
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64638051"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651391"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 Business Standard サブスクリプションにサインアップする
 
-サブスクリプションにサインアップMicrosoft 365 Business Standardしますか?
+Microsoft 365 Business Standard サブスクリプションにサインアップしますか?
 
-開始するには、次の 2 つの方法があります。
+作業を開始するには、いくつかの方法があります。
 
-- **[ユーザー Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/?linkid=2109654)を購入し、独自のセットアップを完了します**。 アプリを購入Microsoft 365 Business Standard、[以下の手順に従います](#sign-up-steps)。
-- **Microsoft パートナーの場合**: パートナーの場合は、「[Get Microsoft 365ビジネス」を参照してください](../../business/get-microsoft-365-business.md)。
+- **Microsoft 365 Business Standard [購入](https://go.microsoft.com/fwlink/?linkid=2109654)し、独自のセットアップを完了します**。 Microsoft 365 Business Standardを購入するには、[次の手順に従います](#sign-up-steps)。
+- **Microsoft パートナーの** 場合: パートナーの場合は、「[ビジネスのMicrosoft 365を取得する」を](../../business/get-microsoft-365-business.md)参照してください。
 
-**何か違う必要がありますか?** 次の操作を行うことができます:
-
-- [ビジネスで購入しない場合は、](https://go.microsoft.com/fwlink/?linkid=2109398) ホームプランまたはファミリー プランにサインアップします。
-
-> [!IMPORTANT]
-> Microsoft 365 Business Standardサブスクリプションは商用用であり、ビジネスおよびエンタープライズのお客様を対象とします。
-
-## <a name="sign-up-for-microsoft-365-for-business"></a>ビジネス向けMicrosoft 365サインアップする
+## <a name="sign-up-for-microsoft-365-for-business"></a>ビジネス向けのMicrosoft 365にサインアップする
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
+
+> [!IMPORTANT]
+> Microsoft 365 Business Standard サブスクリプションは商用使用用であり、ビジネスおよびエンタープライズのお客様を対象としています。
+
+
 ## <a name="sign-up-steps"></a>サインアップ手順
 
-アカウントにサインアップして購入するにはMicrosoft 365 Business Standard手順を実行します。
+Microsoft 365 Business Standardにサインアップして購入するには、次の手順を実行します。
 
 > [!IMPORTANT]
 > Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「[管理者ロールを割り当てる](../add-users/assign-admin-roles.md)」 をご覧ください。
 
-1. [ビジネスの [Microsoft 365] ページで、[](https://go.microsoft.com/fwlink/?linkid=2109654)プランと価格 **を&します**。
-2. 次のページで、月次コストを確認し、ページを下にスクロールして、そのページに含まれる情報の詳細を確認Microsoft 365。 [購入Microsoft 365 Business Standard] で、[今すぐ **購入] を選択します**。
-3. [新 **しい情報を選択してMicrosoft 365 Business Standard** ありがとうございます] ページで、情報を入力して開始します。 **[次へ]** を選択します。
-4. 既に使用しているメール アドレスを入力します。 これは、セットアップ中に Microsoft がユーザーと通信するために使用する任意のアドレスを指定できます。 また、請求書と更新に関する情報を送信する住所です。 次に、[アカウント **の設定] を選択します**。
-5. 名前、会社の電話番号、ビジネス サイズ、会社名、および場所を入力します。 **[次へ]** を選択します。
+1. [[ビジネス向けのMicrosoft 365] ページ](https://go.microsoft.com/fwlink/?linkid=2109654)で、[**プラン&価格の表示**] を選択します。
+2. 次のページで、毎月のコストを確認し、ページを下にスクロールして、Microsoft 365に含まれる内容の詳細を確認します。 Microsoft 365 Business Standardで、[**今すぐ購入**] を選択します。
+3. [**Microsoft 365 Business Standardを選択していただきありがとうございます**] ページで、情報を入力して作業を開始します。 **[次へ]** を選択します。
+4. 既に使用しているメール アドレスを入力します。 これは、セットアップ中に Microsoft がユーザーと通信するために使用する任意のアドレスを指定できます。 また、請求書と更新に関する情報をお送りする住所でもあります。 次に、[ **アカウントの設定**] を選択します。
+5. 名前、勤務先の電話番号、ビジネス サイズ、会社名、場所を入力します。 **[次へ]** を選択します。
 
    > [!NOTE]
-   > 管理センターに会社名を表示します。 ユーザー、ライセンス、その他Microsoft 365サービスを管理する場所です。 また、すべての内部サイト URL SharePoint含まれます。
+   > 管理センターに会社名が表示されます。 ここでは、Microsoft 365ユーザー、ライセンス、その他の機能やサービスを管理します。 また、内部SharePointサイト URL にも含まれています。
 
-6. これがあなたか確認してください。 お客様にアクセスするために使用できる番号を入力し、[検証コードの送信 **] を選択します**。 テキストが表示されます。 コードを入力し、[確認] を **選択します**。
+6. これがお客様であることを確認してください。 連絡に使用できる番号を入力し、[ **確認コードの送信**] を選択します。 テキストが表示されます。 コードを入力し、[ **確認**] を選択します。
 
-7. サインインしてサインインする方法を決定Microsoft 365。 新しい [ビジネス メール アカウントを作成するには、ドメインを追加](#option-2-create-a-new-business-email-account-and-attach-a-domain) するか、現在の個人用 [メールでサインインします](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account)。
+7. Microsoft 365にサインインする方法を決定します。 [ドメインを追加するか、現在の個人用メールでサインインすることで、新しいビジネス](#option-2-create-a-new-business-email-account-and-attach-a-domain)[用メール アカウントを](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account)作成できます。
 
 ## <a name="choosing-the-right-business-subscription"></a>適切なビジネス サブスクリプションの選択
 
-アカウントにサインアップするMicrosoft 365 Business Standard、開始方法に関する 2 つのオプションがあります。 3 つの重要な要素を評価して、ニーズに最適な要素を選択します。
+Microsoft 365 Business Standardにサインアップする場合は、2 つの方法で作業を開始できます。 次の 3 つの重要な要素を評価して、ニーズに最も適した要素を選択します。
 
-- どのアプリとサービスをすぐに使用しますか?
+- すぐに使用するアプリとサービスはどれですか?
 
-- 技術的なスキルはどれくらいですか?
+- どのくらいの技術スキルがありますか?
 
 - Microsoft がデータのプロセッサとして機能する必要がありますか?
 
-次の表に、各選択肢の概要を示します。
+次の表では、各選択肢の概要を示します。
 
-|&nbsp;|**オプション 1** – Outlook、Hotmail、Gmail、その他のメール アカウントでサインイン [する (](#terms-of-service-update-for-simplified-sign-up-mode)簡易サインアップ)|**オプション 2** – ビジネス ドメインを追加し、新しいビジネス メール アカウントを作成する |
+|&nbsp;|**オプション 1** – Outlook、Hotmail、Yahoo、Gmail、またはその他のメール アカウント [でサインインする (簡易サインアップ)](#terms-of-service-update-for-simplified-sign-up-mode)|**オプション 2** – ビジネス ドメインを追加し、新しいビジネス メール アカウントを作成する |
 |---|---|---|
-|利用可能なアプリとサービス|Word、Excel、PowerPoint、OneDrive、Teams、Access を使用します。 この一連のアプリは、すぐにブランド化されたメールを必要としない、または既に別のプロバイダーからのブランド化されたメールを使用し、Microsoft Exchange を使用するために切り替えるつもりはない非常に小規模な企業に最適です。 既存のメール アカウントOutlook使用します (メール アカウント、outlook.com、Yahoo、Gmail、その他Hotmailなど)。|Word、Excel、PowerPoint、OneDrive、Teams、Access を使用します。 Microsoft 365 Business Standard 2 を使用すると、Outlook の新しいブランド化されたビジネス メール アカウント、ビジネス内の共有予定表、Bookings 予定のスケジュール設定、会議の記録など、さまざまな追加サービスにアクセスできます。 共有ドキュメントのストレージとSharePointサイト、Microsoft Planner、Microsoft Lists、Microsoft 365 Business Standard、Microsoft 365 Apps for business提供オプション 2 のサービス。 ビジネス内でのドキュメント共有の容易化、業界のコンプライアンスニーズのサポート、従業員によるサービスの使用のアクセスと制御、および Teams および Office 内で動作する Microsoft 以外のアプリ (Salesforce、Adobe など) の幅広い統合。|
-|必要な知識|技術的な知り合いなしで始めましょう。|ドメインを購入するか、ドメインを所有する必要があります。 ドメインの所有権を証明するには、技術的な知識が必要な場合があります。|
-|データの処理|[Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) Services 契約の補足の下で利用可能で、リモート作業およびコラボレーション ツールが必要で、Microsoft プライバシーステートメントに基いてデータの管理者として機能する Microsoft に最適な企業に[最適](https://go.microsoft.com/fwlink/?LinkId=521839)です。 このオプションを使用するサービスのサブスクライバーは、ドメインが接続されるまで、個人のユーザー コンテンツまたはデータにアクセスできます。 サブスクライバーは、ニーズに基づいてデータの所有権と知的財産権に関する考慮事項を評価する必要があります。 たとえば、自分のアカウントに保存されているドキュメント上の他のユーザーと共同で作業している場合、それらのドキュメントにアクセスできないようにすることができます。 そのため、データの所有権と知的財産権に関する考慮事項を評価する必要があります。 個別に、ユーザーは、招待した後でも、簡略化された Sign-Up アカウント内のドキュメントをドメイン アカウントサブスクリプションに転送しない場合があります。 つまり、後でドメイン アカウントを追加しても、ドキュメントにアクセスできない可能性があります。|[Microsoft Online サブスクリプション](https://go.microsoft.com/fwlink/p/?linkid=2180430)契約の下で利用可能で、Microsoft が Microsoft のデータ保護アドオンの下でデータのプロセッサとして機能し、リモート[](https://go.microsoft.com/fwlink/p/?linkid=2180314)作業とコラボレーション ツールの完全なスイートを必要とする企業に最適です。 規制業界に参加している、または従業員によるサービスの使用と、Microsoft による関連データの処理の両方を制御するサブスクライバーは、オプション 2 を選択し、ドメインを接続し、ドメイン アカウントのエンタープライズ レベル契約に基いてサインアップする必要があります。|
+|使用可能なアプリとサービス|Word、Excel、PowerPoint、OneDrive、Teams、Access を使用します。 この一連のアプリは、ブランド化されたメールをすぐに必要としない、または既に別のプロバイダーからのブランド化されたメールを使用していて、Microsoft Exchangeの使用を切り替える予定がない小規模企業に最適です。 既存のメール アカウント (outlook.com、Hotmail、Yahoo、Gmail など) でOutlookを使用します。|Word、Excel、PowerPoint、OneDrive、Teams、Access を使用します。 オプション 2 のMicrosoft 365 Business Standardでは、Outlookを含む新しいブランド化されたビジネスメール アカウント、ビジネス内の共有予定表、Bookings予定のスケジュール設定、会議の記録など、さまざまな追加サービスにアクセスすることもできます。 共有ドキュメントストレージとSharePointサイト、Microsoft PlannerとMicrosoft Lists、Microsoft 365 Business StandardとMicrosoft 365 Apps for businessは追加機能を提供しますオプション 2 を使用したサービス。 ビジネス内でのドキュメント共有の容易化、業界のコンプライアンス ニーズのサポート、従業員によるサービスの使用に対するアクセスと制御、およびTeamsおよびOffice内で動作する Microsoft 以外のアプリ (Salesforce、Adobe など) の幅広い統合をサポートします。|
+|必要な知識|技術的な知識を持たずに作業を開始しましょう。|ドメインを購入するか、ドメインを所有する必要があります。 ドメインの所有権を証明するために技術的な知識が必要な場合があります。|
+|データの処理|[Microsoft サービス契約](https://go.microsoft.com/fwlink/p/?linkid=2180702)の補足条項に基づき入手でき、一部のリモート作業ツールとコラボレーション ツールを必要とし、Microsoft [のプライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)に基づいてデータのコントローラーとして機能することに慣れている企業に最適です。 このオプションを使用するサービスのサブスクライバーは、ドメインがアタッチされるまで、個人のユーザー コンテンツまたはデータにアクセスできません。 サブスクライバーは、ニーズに基づいてデータの所有権と知的財産権に関する考慮事項を評価する必要があります。 たとえば、自分のアカウントに保存されているドキュメント上の他のユーザーと共同で作業している場合、それらのドキュメントにアクセスできないようにすることができます。 そのため、それに応じて、データの所有権と知的財産権に関する考慮事項を評価する必要があります。 これとは別に、簡略化されたSign-Up アカウント内のドキュメントをドメイン アカウント サブスクリプションに転送しないことを選択できます。ユーザーが招待した後でも、そのドキュメントをドメイン アカウント サブスクリプションに転送することはできません。 つまり、後でドメイン アカウントを追加した場合でも、ドキュメントにアクセスできない可能性があります。|[Microsoft Online サブスクリプション契約](https://go.microsoft.com/fwlink/p/?linkid=2180430)で利用可能であり、Microsoft の [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) の下で Microsoft がデータのプロセッサとして機能する必要があり、リモート作業およびコラボレーション ツールの完全なスイートが必要な企業に最適です。 規制対象業界にいるサブスクライバー、または従業員によるサービスの使用と Microsoft による関連データの処理の両方について、より詳細な制御を求めるサブスクライバーは、オプション 2 を選択し、ドメインをアタッチし、ドメイン アカウント企業レベルの契約にサインアップする必要があります。|
 
-これらの 3 つの要素を使用して、ビジネス ニーズに最適な 2 つのオプションを決定します。
+次の 3 つの要素を使用して、ビジネス ニーズに最適な 2 つのオプションを決定します。
 
-### <a name="option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account"></a>オプション 1: 自分のメール アカウント、Outlook、yahoo Hotmail Gmail、その他のメール アカウントでサインインする
+### <a name="option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account"></a>オプション 1: Outlook、Hotmail、Yahoo、Gmail、またはその他のメール アカウントでサインインする
 
-このメール アドレスを使用してMicrosoft 365サインインします。 たとえば、alliebellew@hotmail.com。
+このメール アドレスを使用してMicrosoft 365にサインインします。 たとえば、alliebellew@hotmail.com。
 
 :::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="スクリーンショット: 個人用メールでサインインします。":::
 
-1. 次のページでパスワードを作成し、[アカウントの作成] **を選択して** 続行します。 次のページで、データの処理方法について説明し、Microsoft パートナーから連絡を受け取るかどうかを選択します。 **[次へ]** を選択します。
+1. 次のページでパスワードを作成し、[ **アカウントの作成** ] を選択して続行します。 次のページで、データの処理方法について説明し、Microsoft パートナーに連絡するかどうかを選択します。 **[次へ]** を選択します。
 
-2. 組織に必要Microsoft 365 Business Standardライセンスの数を選択し、[支払い方法の追加] を選択し、[注文の注文] にチェックアウトを **続行します**。
+2. 組織に必要なMicrosoft 365 Business Standard ライセンスの数を選択し、[**支払い方法の追加**] を選択して、注文へのチェックアウトを続行 **します**。
 
-3. [確認 **の詳細] ページ** で、サブスクリプションに関する詳細情報を提供します。 これで、ユーザーの追加、Microsoft 365 管理センターアプリのインストール、Officeの使用をチームにMicrosoft 365できます。 また、メールで設定した手順をメールで送信Microsoft 365 Business Standard。
+3. **[確認の詳細**] ページで、サブスクリプションに関する詳細情報が表示されます。 これで、Microsoft 365 管理センターに移動して、ユーザーの追加、Officeアプリのインストール、Microsoft 365などを使用するようにチームを招待できます。 また、Microsoft 365 Business Standardの設定手順を記載したメールも送信されます。
 
-このオプションでは、ブランド化された電子メール、他のユーザーによるサービスの使用に対する管理制御、業界固有のコンプライアンス サポートは提供されません。 サブスクライバーは、このオプションで他のユーザー (従業員) の使用状況やドキュメントに対するアクセスや制御を行う必要はありません。ユーザーは、OneDrive/Teams などのストレージで作成されたデータをアップグレードされたエンタープライズ レベルのドメイン アカウントに転送しない場合があります。オプション 2 を直ちに選択しない必要があります。
+このオプションでは、ブランド化された電子メール、他のユーザーによるサービスの使用に対する管理者の制御、業界固有のコンプライアンス サポートは提供されないことに注意してください。 サブスクライバーは、このオプションで他のユーザー (従業員) の使用状況やドキュメントにアクセスしたり制御したりすることはできません。ユーザーは、アップグレードされたエンタープライズ レベルのドメイン アカウントにOneDrive/Teamsなどのストレージに作成されたデータをすぐに転送しないことを選択できます。
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
-### <a name="option-2-create-a-new-business-email-account-and-attach-a-domain"></a>オプション 2: 新しいビジネス メール アカウントを作成し、ドメインを接続する
+### <a name="option-2-create-a-new-business-email-account-and-attach-a-domain"></a>オプション 2: 新しいビジネス 用メール アカウントを作成し、ドメインをアタッチする
 
-このオプションを使用すると、ブランド化されたプロフェッショナルなMicrosoft 365 Exchangeメール プロバイダーとして使用できます。 すべてのユーザーに共有ドメインの電子メール アドレスが割り当てされます。 たとえば、ユーザー名の後に @contoso.com。 ユーザーとユーザーは、この新しいMicrosoft 365を使用してサインインします。 このプロセスに従って (ドメインを追加し、新しいビジネス メール アカウントを作成する) と、ドメインに含まれるすべての機能にアクセスMicrosoft 365 Business Standard。 ドメインを購入または追加する方法の手順については、「ドメインのセットアップ[」を参照Microsoft 365 Business Standard](../setup/setup-business-standard.md)。
+このオプションを使用すると、プロのブランド化された電子メール プロバイダーとしてMicrosoft 365 Exchangeを使用できます。 すべてのユーザーは、共有ドメインの電子メール アドレスを持っています。 たとえば、ユーザー名の後に @contoso.com が続きます。 ユーザーは、この新しい電子メール アドレスを使用してMicrosoft 365にサインインします。 このプロセスに従うと (ドメインを追加して新しいビジネス用メール アカウントを作成)、Microsoft 365 Business Standardで提供されているすべての機能にアクセスできます。 ドメインを購入または追加する方法については、「[Microsoft 365 Business Standardのセットアップ](../setup/setup-business-standard.md)」を参照してください。
 
-:::image type="content" source="../../media/ssu-create-biz-email.png" alt-text="スクリーンショット: 新しいビジネスメールでサインインします。":::
+:::image type="content" source="../../media/ssu-create-biz-email.png" alt-text="スクリーンショット: 新しいビジネス用メールでサインインします。":::
 
-このオプションを使用すると、Microsoft 365 Business サブスクリプションの機能の完全なスイートにすぐにアクセスできますが、前もって技術的な手順を完了する必要があります。
+このオプションを使用すると、Microsoft 365 Business サブスクリプションの機能の完全なスイートにすぐにアクセスできますが、技術的な手順を事前に完了する必要がある場合があります。
 
-ドメインを追加してビジネス メール アカウントを作成する場合は、以下の記事の手順に従います。
+ドメインを追加してビジネス用メール アカウントを作成する場合は、以下の記事の手順に従うことができます。
 
 - [Microsoft 365 にドメインを追加する](../setup/add-domain.md)
 - [セットアップを完了する](../setup/setup-business-standard.md#finish-setting-up)
 
-## <a name="terms-of-service-update-for-simplified-sign-up-mode"></a>簡易サインアップ モードのサービス条件の更新
+## <a name="terms-of-service-update-for-simplified-sign-up-mode"></a>簡易サインアップ モードのサービス利用規約の更新
 
-**適用対象: 簡易** サインアップ モードを使用Microsoft 365 Business Standard以前に購入したユーザーの既存のサブスクライバー。
+**適用対象: 簡易サインアップ モードを使用して以前に購入したMicrosoft 365 Business Standardの既存のサブスクライバー**。
 
-ビジネス ドメインを追加せずに 2021 年 10 月より前に簡易サインアップ モードを使用してビジネス サブスクリプションを購入した場合は、中断のないサービスと Microsoft Office アプリの使用に関する新しい利用規約に同意する必要があります。 メールが送信される場合や、管理者センターにサインインするとアプリ内Microsoft 365表示されます。
+ビジネス ドメインを追加せずに 2021 年 10 月より前にビジネス サブスクリプションを購入するために、以前に簡易サインアップ モードを使用していた場合は、中断のないサービスとMicrosoft Office アプリの使用に関する新しい利用規約に同意する必要がある場合があります。 メールが送信される場合や、Microsoft 365管理センターにサインインすると、アプリ内のプロンプトが表示される場合があります。
 
-簡易サインアップの使用条件が最近更新され、特に複数ユーザーのビジネス サブスクリプションのライセンスとデータの所有権が明確化されています。 ビジネス サブスクリプションの継続的なサービスについては、[Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) 管理センターにアクセスし、簡易サインアップを使用 **し続ける** か (Microsoft Services 契約補足を使用することに同意します)、[Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) 管理センターにアクセスしてビジネス ドメインを **追加します (** Microsoft Online Services 契約を使用します)。 これらの 2 つのモードの中でニーズに最も適したモードを選択するには、この記事の上部にある表を参照してください。
+簡易サインアップの使用条件は最近更新され、特にマルチユーザー ビジネス サブスクリプションのライセンスとデータ所有権が明確になっています。 ビジネス サブスクリプションの継続的なサービスについては、[Microsoft 365管理センター](https://go.microsoft.com/fwlink/?linkid=2024339)にアクセスし、**簡易サインアップ** を使用し続けるか (Microsoft Services 契約補足を使用することに同意します)、[またはMicrosoft 365管理センター](https://go.microsoft.com/fwlink/?linkid=2024339)にアクセスして **ビジネス ドメイン** を追加します (Microsoft Online Services 契約を使用します)。 この 2 つのモードのうち、ニーズに最も適したモードを選択するには、この記事の上部にある表を参照してください。
 
-簡易サインアップの更新された条項に同意しないか、ビジネス ドメインを追加する場合、サブスクリプションは自動的に更新されません。現在のサブスクリプション契約の最後に、Office アプリへのアクセスが失われます。 データOneDriveコピーを作成するために 90 日間保持され、削除されます。
+簡易サインアップの更新された条項に同意しない場合、またはビジネス ドメインを追加した場合、サブスクリプションは自動的に更新されず、現在のサブスクリプション 契約の終了時に、Office アプリへのアクセスが失われます。 OneDrive データは、コピーを作成するために 90 日間保持され、削除されます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>ビジネス用メールとは何か、また、ビジネス メールを設定する利点は何ですか?
+### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>ビジネス用メールとは何ですか。また、メールを設定する利点は何ですか?
 
-ビジネス 用メールは、独自のドメイン名を使用する電子メールです。 たとえば、ドメイン名を所有 `contoso.com`している場合は、URL `www.contoso.com`を使用して Web サイトを作成できますが、web サイトなどのカスタム メール アドレスを yourname@contoso.com。 これは、メールにプロフェッショナルな外観を与えるブランド化されたビジネス メールと呼ばれます。
+ビジネス 用メールとは、独自のドメイン名を使用する電子メールです。 たとえば、ドメイン名 `contoso.com`を所有している場合は、URL を `www.contoso.com`使用して Web サイトを構築できますが、yourname@contoso.com などのカスタム電子メール アドレスを作成することもできます。 これは、電子メールにプロフェッショナルな外観を与えるブランドビジネス メールと呼ばれます。
 
-### <a name="how-do-i-get-a-new-business-email-address"></a>操作方法ビジネス用の電子メール アドレスを取得しますか?
+### <a name="how-do-i-get-a-new-business-email-address"></a>新しいビジネス用電子メール アドレスを取得操作方法。
 
-ビジネスメールを取得するには、3 つのオプションがあります。
+ビジネス用メールを取得するには、3 つのオプションがあります。
 
-- 推奨されるドメインを無料で onmicrosoft.com 使用できます (someone@mybusiness.onmicrosoft.com)。
-- 新しいドメインを購入して、よりコンパクトな電子メール アドレス (mybusinessname@contoso.com)。
+- 推奨される onmicrosoft.com ドメインを無料で使用できます (someone@mybusiness.onmicrosoft.com)。
+- 新しいドメインを購入して、よりコンパクトな電子メール アドレス (mybusinessname@contoso.com) を作成できます。
 - 既に所有しているドメイン名を使用します。
 
-### <a name="why-might-i-need-to-verify-my-domain-to-create-a-business-email"></a>ビジネス メールを作成するためにドメインを確認する必要がある理由
+### <a name="why-might-i-need-to-verify-my-domain-to-create-a-business-email"></a>ビジネス用メールを作成するためにドメインを確認する必要があるのはなぜですか?
 
-既に所有しているドメインを使用する場合は、ユーザーが所有しているメール アドレスに使用Microsoft 365。 サインアップ プロセスの一環として、ドメインを確認して、ドメイン経由でメールを送信Microsoft 365。 これにより、その ID を含むメールを送信しているドメインの所有者が確認され、セキュリティが強化され、不正行為が防止されます。
+既に所有しているドメインを使用する場合は、Microsoft 365でメール アドレスに使用できます。 サインアップ プロセスの一環として、Microsoft 365経由で電子メールを送信できるようにドメインを確認するように求められます。 これにより、その ID で電子メールを送信しているドメインの所有者であることが確認されます。これにより、セキュリティが強化され、不正なアクティビティが防止されます。
 
-### <a name="is-there-a-benefit-to-paying-monthly-vs-annually"></a>毎月と年次の支払いにはメリットがありますか?
+### <a name="is-there-a-benefit-to-paying-monthly-vs-annually"></a>月払いと年払いを行うメリットはありますか?
 
-顧客に最大限の柔軟性を提供するために、さまざまな支払いオプションを利用できます。
+お客様に最大限の柔軟性を提供するために、さまざまな支払いオプションを利用できます。
 
-- Microsoft 365 Business Basic、Apps for business、Business Standard、および Business プレミアムプランは、毎月のコミットメント支払いまたは年次コミットメント支払いで利用できます。
-- 毎月のコミットメント支払い: 月別に支払いを行い、いつでもキャンセルできます。
-- 年次コミットメント支払い: 1 年間のサブスクリプションにサインアップしますが、サインアップ時に月払いまたは 1 年間の支払いを選択できます。 この支払いオプションを使用すると割引が適用されます。
+- Microsoft 365 Business Basic、ビジネス向けアプリ、Business Standard、および Business プレミアム プランは、毎月のコミットメント支払いまたは年間コミットメント支払いに使用できます。
+- 毎月のコミットメント支払い: 月単位で支払い、いつでもキャンセルできます。
+- 年間コミットメントの支払い: 1 年間のサブスクリプションにサインアップしますが、月ごとに支払うか、サインアップ時に 1 年間の支払いを選択できます。 この支払いオプションを使用するための割引があります。
 
-### <a name="how-does-recurring-billing-work"></a>定期的な請求の動作
+### <a name="how-does-recurring-billing-work"></a>定期的な課金のしくみ
 
-継続請求がオンの場合は、毎年登録日にサブスクリプションに対する課金が行われます。 サブスクリプションがアクティブな場合は、管理センターでオフにしたりもう一度オンにしたりできます。 詳細については、「定期的 [な請求をオフまたはオンにする」をご覧ください](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。
+継続請求がオンの場合は、毎年登録日にサブスクリプションに対する課金が行われます。 サブスクリプションがアクティブな場合は、管理センターでオフにしたりもう一度オンにしたりできます。 詳細については、「 [定期的な課金を無効または有効にする」を参照](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)してください。
 
-### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>ビジネス名を変更する場合は、どうしますか?
+### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>会社名を変更する場合はどうすればよいですか?
 
-ビジネス名の変更に役立つ小規模ビジネス サポートの専門家にお問い合わせください。 詳細については、「サポートを [受け取る」を参照してください](../get-help-support.md)。
+ビジネス名の変更に役立つ小規模ビジネス サポートエキスパートにお問い合わせください。 詳細については、「 [サポートを受ける」を参照](../get-help-support.md)してください。
 
 ## <a name="related-articles"></a>関連記事
 

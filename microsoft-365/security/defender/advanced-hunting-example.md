@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for microsoft Defender for Office 365
-description: 高度な検索を使用して電子メールの脅威の検索を開始する
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto
+title: Microsoft Defender for Office 365の高度なハンティングの例
+description: 高度な捜索を使用して電子メールの脅威を検索する概要
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, カスタム検出, スキーマ, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/30/2021
 ms.locfileid: "61221186"
 ---
-# <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for microsoft Defender for Office 365
+# <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365の高度なハンティングの例
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,23 +39,23 @@ ms.locfileid: "61221186"
 
 [Microsoft Defender for Office 365の記事](/microsoft-365/security/office-365-security/defender-for-office-365)の「[使用を開始する](/microsoft-365/security/office-365-security/defender-for-office-365#getting-started)」セクションには、次のような論理的な早期構成用の単位があります。
 
-1. 名前に 'Anti' を含むすべてを構成します。
+1. 名前に "Anti" を含むすべてを構成します。
    - マルウェア対策
    - フィッシング詐欺対策
    - スパム対策
 2. 名前に 'セーフ' を含むすべてを設定します。
    - 安全なリンク
    - 安全な添付ファイル
-3. ワークロードを保護する (例: SharePoint、オンライン、OneDrive、およびTeams)。
-4. 0 時間自動削除で保護します。
+3. ワークロードを保護する (例: SharePoint Online、OneDrive、およびTeams)。
+4. ゼロ時間の自動消去で保護します。
 
 [リンク](../office-365-security/protect-against-threats.md)をクリックすると、一気にジャンプして、第 1 日目から使用できる構成を入手できます。
 
 **開始** の最後の手順は、**ゼロアワー自動消去**(ZAP) によるユーザー保護です。 ZAP で不審なメールや悪意のあるメール、配信後のメールの自動消去が成功したどうかを知るのはとても重要です。
 
-問題を探し出す場合に、Kusto クエリ言語にすばやく移動できることは、2 つのセキュリティ センターを集約する利点です。 セキュリティ チームは、次の手順を実行して、ZAP ミスを監視 [](https://security.microsoft.com/advanced-hunting) \> **できます**。
+問題を探し出す場合に、Kusto クエリ言語にすばやく移動できることは、2 つのセキュリティ センターを集約する利点です。 セキュリティ チームは、**ハンティング****高度なハンティング**\>の下で、[ここで](https://security.microsoft.com/advanced-hunting)次の手順を実行することで ZAP ミスを監視できます。
 
-1. [高度な検索] ページで、[クエリ] を **クリックします**。
+1. [高度な検索] ページで、[クエリ] をクリック **します**。
 1. 次のクエリを[クエリ] ウィンドウにコピーします。
 1. **[クエリの実行]** を選択します。
 
@@ -73,10 +73,10 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/ah-query-example-new.png" alt-text="クエリ パネルの上部で [クエリ] を選択し、過去 7 日間の ZAP アクションをキャプチャするために Kusto クエリを実行した [高度な検索] ページ ([ハンティング] の下)。" lightbox="../../media/ah-query-example-new.png":::
+:::image type="content" source="../../media/ah-query-example-new.png" alt-text="クエリ パネルの上部にある [高度な検索] ページ ([ハンティング] の下) でクエリを選択し、Kusto クエリを実行して、過去 7 日間の ZAP アクションをキャプチャします。" lightbox="../../media/ah-query-example-new.png":::
 
 このクエリのデータは、クエリ自体の下の結果パネルに表示されます。 結果には、カスタマイズ可能な結果セットに 'DeviceName', 'AccountDisplayName'、および 'ZapTime' が含まれています。 ユーザーの記録用に、結果をエクスポートすることもできます。 クエリがもう一度必要な場合は、**[保存する]** > **[以下の名前で保存する]** の順に選択し、クエリ、共有クエリ、またはコミュニティ クエリの一覧にそのクエリを追加します。
 
 ## <a name="related-information"></a>関連情報
-- [高度な狩猟のベスト プラクティス](advanced-hunting-best-practices.md)
-- [概要 - 高度な検索](advanced-hunting-overview.md)
+- [高度なハンティングのベスト プラクティス](advanced-hunting-best-practices.md)
+- [概要 - 高度なハンティング](advanced-hunting-overview.md)

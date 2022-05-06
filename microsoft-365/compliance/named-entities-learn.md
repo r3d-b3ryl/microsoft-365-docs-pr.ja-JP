@@ -1,5 +1,5 @@
 ---
-title: 名前付きエンティティについて学習する
+title: 名前付きエンティティの詳細
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2022
 ms.locfileid: "64973203"
 ---
-# <a name="learn-about-named-entities"></a>名前付きエンティティについて学習する
+# <a name="learn-about-named-entities"></a>名前付きエンティティの詳細
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "64973203"
 
 
 - [Microsoft Purview データ損失防止ポリシー (DLP)](dlp-learn-about-dlp.md) 
-- [機密ラベル](sensitivity-labels.md)
+- [秘密度ラベル](sensitivity-labels.md)
 - [インサイダー リスク管理](insider-risk-management-solution-overview.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Purview Information Protection](apply-sensitivity-label-automatically.md)

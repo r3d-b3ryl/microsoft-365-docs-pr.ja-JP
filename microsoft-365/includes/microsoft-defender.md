@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender重要なガイダンス
-description: 重要なガイダンスに関Microsoft 365 Defenderメモ。
+description: 重要なMicrosoft 365 Defenderガイダンスに関するメモ。
 ms.date: 09/21/2020
 ms.reviewer: ''
 manager: dansimp

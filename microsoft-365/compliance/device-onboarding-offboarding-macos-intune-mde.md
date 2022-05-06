@@ -21,7 +21,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/19/2022
 ms.locfileid: "64952844"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>Microsoft Defender for Endpoint顧客向けのIntuneを使用して、macOS デバイスをコンプライアンス ソリューションにオンボードおよびオフボードする
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -74,7 +74,7 @@ MDE が既に展開されている場合は、次の手順に従って macOS デ
 
 1. [**作成**] を選択する
 
-1. この例の *AccessibilityformacOS* のように、プロファイルの名前を選択します。 [**次へ**]を選択します。
+1. この例の *AccessibilityformacOS* のように、プロファイルの名前を選択します。 **[次へ]** を選択します。
 
 1. 手順 1 でダウンロードした **accessibility.mobileconfig** ファイルを構成プロファイル ファイルとして選択します。
 

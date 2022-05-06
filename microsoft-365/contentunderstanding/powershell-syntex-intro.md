@@ -23,24 +23,24 @@ ms.locfileid: "63525682"
 # <a name="manage-sharepoint-syntex-with-powershell"></a>PowerShell を使用して SharePoint Syntex を管理する
 
 > [!IMPORTANT]
-> PowerShell SharePoint Syntexおよび他のすべての PnP コンポーネントは、サポートを提供するアクティブ なコミュニティによってサポートされるオープンソース ツールです。 公式の Microsoft サポート チャネルのオープン ソース ツールのサポート用 SLA ではありません。
+> SharePoint Syntex PowerShell コマンドレットとその他のすべての PnP コンポーネントは、アクティブなコミュニティによってサポートされるオープン ソース ツールです。 公式の Microsoft サポート チャネルのオープン ソース ツールのサポート用 SLA ではありません。
 
-これらのシナリオでは、PnP PowerShell モジュールSharePoint Syntexのコマンドレットを使用して、モデルと説明を操作できます。 このモジュールをインストールする方法の詳細については、「 [PnP PowerShell の概要」を参照してください](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets)。
+これらのシナリオでは、PnP PowerShell モジュールのSharePoint Syntexコマンドレットを使用して、モデルと説明を操作できます。 このモジュールのインストール方法の詳細については、 [PnP PowerShell の概要に関する](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets)ページを参照してください。
 
-PowerShell を使用して管理する方法については、次のシナリオから選択SharePoint Syntex。
+PowerShell を使用してSharePoint Syntexを管理する方法については、次のシナリオから選択してください。
 
 - [**モデルのインポートとエクスポート**](powershell-syntex-import-export.md)
 
-    コンテンツ センターからドキュメント理解モデルをエクスポートし、別のコンテンツ センターまたはテナントにインポートする方法について学習する場合は、ここから開始します。
+    コンテンツ センターからドキュメント理解モデルをエクスポートし、別のコンテンツ センターまたはテナントにインポートする方法について説明する場合は、ここから始めます。
 
 - [**発行**](powershell-syntex-publishing.md)
 
-    PowerShell を使用してドキュメント理解モデルをドキュメント ライブラリに発行する方法について説明する場合は、ここから開始します。
+    PowerShell を使用してドキュメント理解モデルをドキュメント ライブラリに発行する方法について説明する場合は、ここから始めます。
 
-- [**処理**](powershell-syntex-processing.md)
+- [**Processing**](powershell-syntex-processing.md)
 
-    PowerShell を使用してドキュメント ライブラリでのドキュメント理解処理をトリガーする方法について説明する場合は、ここから開始します。
+    PowerShell を使用してドキュメント ライブラリのドキュメント理解処理をトリガーする方法について説明する場合は、ここから始めます。
 
 - [**説明**](powershell-syntex-explanations.md)
 
-    PowerShell を使用してカスタムドキュメント理解の説明テンプレートを作成する方法を学ぶには、ここから開始します。
+    PowerShell を使用してカスタム ドキュメント理解の説明テンプレートを作成する方法については、ここから始めます。

@@ -24,7 +24,7 @@ ms.locfileid: "65145424"
 ---
 # <a name="use-customer-key-to-encrypt-audit-records"></a>顧客キーを使用して監査レコードを暗号化する
 
-これで、監査レコードに対して Microsoft Purview カスタマー キー暗号化を有効にできるようになりました。 監査は、 [Microsoft Purview カスタマー キーを使用したサービス暗号化](customer-key-overview.md) に基づいて構築され、組織の監査データを暗号化します。 カスタマー キーを実装すると、承認されていないシステムまたは Microsoft データ センターの担当者が監査パイプラインと保存時に監査データを表示できないようにすることで、保護が強化されます。 顧客キーを使用して監査データを暗号化すると、組織が暗号化キーを提供および制御するため、規制またはコンプライアンスの義務を満たすのにも役立ちます。
+これで、監査レコードに対して Microsoft Purview カスタマー キー暗号化を有効にできるようになりました。 監査は、 [Microsoft Purview カスタマー キーを使用したサービス暗号化](customer-key-overview.md) に基づいて構築され、組織の監査データを暗号化します。 カスタマー キーを実装すると、承認されていないシステムや Microsoft データ センターの担当者が監査パイプラインや保存中に監査データを表示するのを防ぐことで、追加の保護が提供されます。 カスタマー キーを使用して監査データを暗号化すると、組織が暗号化キーを提供および制御するため、規制またはコンプライアンスの義務を満たすのにも役立ちます。
 
 カスタマー キーには、Microsoft 365 E5 サブスクリプションが必要です。 詳細については、[セキュリティ&コンプライアンスに関するMicrosoft 365ガイダンスを](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-customer-key-for-microsoft-365)参照してください。
 
@@ -32,9 +32,9 @@ ms.locfileid: "65145424"
 
 ## <a name="implement-customer-key-for-auditing"></a>監査用のカスタマー キーを実装する
 
-監査用のカスタマー キーを実装するには、暗号化階層を定義するマルチワークロード データ暗号化ポリシー (DEP) を作成する必要があります。 この階層は、管理する 2 つのルート キーと、Microsoft によって自動生成および保護されている可用性キーを使用して、監査データを暗号化するためにサービスによって使用されます。
+監査用にカスタマー キーを実装するには、暗号化階層を定義するマルチワークロード データ暗号化ポリシー (DEP) を作成する必要があります。 この階層は、管理する 2 つのルート キーと、Microsoft によって自動生成および保護されている可用性キーを使用して、監査データを暗号化するためにサービスによって使用されます。
 
-詳細な手順については、「 [顧客キーの設定](customer-key-set-up.md)」を参照してください。
+詳細な手順については、「[カスタマー キーの設定](customer-key-set-up.md)」を参照してください。
 
 セットアップが完了したら、作成したマルチワークロード DEP で識別されたキーを使用して、監査レコードを含む組織内のすべてのデータを暗号化Microsoft 365。
 
@@ -72,7 +72,7 @@ The customer would proceed with the Tenant Deprovisioning process in order to fu
 - Ideally since customer is exiting the eco-system, no more audit events would be generated for the customer. However in case there are new audit events for the customer, then they will NOT be encrypted using CMK as customer has offboarded / revoked key access.
 -->
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - 組織の監査レコードを暗号化するための実装手順を完了すると、最大で 24 時間かかります。
 - 組織で他のワークロード (ExchangeやSharePointなど) に対する MDEPS サポートが既にある場合は、複数のワークロードに対してのみ有効にする必要があります。

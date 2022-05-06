@@ -106,10 +106,10 @@ DLP センサー テレメトリを受信し、データ損失防止ポリシー
 
 トピック | 説明
 :---|:---
-|[Intuneを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする](device-onboarding-offboarding-macos-intune.md)|Intune を通じて管理される macOS デバイスの場合
+|[Intune を使用した Microsoft Purview ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-intune.md)|Intune を通じて管理される macOS デバイスの場合
 |[Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-intune-mde.md) |Intune を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
 |[JAMF Proを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする](device-onboarding-offboarding-macos-jamfpro.md) | JAMF Pro を通じて管理される macOS デバイスの場合
-|[Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-jamfpro-mde.md)|JAMF Pro を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
+|[Microsoft Defender for Endpoint顧客向けの JAMF Proを使用して、macOS デバイスをコンプライアンス ソリューションにオンボードおよびオフボードする](device-onboarding-offboarding-macos-jamfpro-mde.md)|JAMF Pro を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
 
 
 ## <a name="related-topics"></a>関連項目

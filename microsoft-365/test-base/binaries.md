@@ -1,6 +1,6 @@
 ---
-title: アップロードアプリケーション バイナリ
-description: M365 のテスト ベースの使用を開始する方法
+title: アップロード アプリケーション バイナリ
+description: M365 の Test Base の使用を開始する方法
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -21,32 +21,32 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60180641"
 ---
-# <a name="step-3-upload-your-binaries-dependencies-and-scripts"></a>手順 3: アップロード、依存関係、およびスクリプトを削除する
+# <a name="step-3-upload-your-binaries-dependencies-and-scripts"></a>手順 3: バイナリ、依存関係、スクリプトをアップロードする
 
-このタブでは、テスト スイートの実行に使用するバイナリ、依存関係、スクリプトを含む単一の zip パッケージをアップロードします。
+このタブでは、テスト スイートの実行に使用されるバイナリ、依存関係、スクリプトを含む 1 つの zip パッケージをアップロードします。
 
 > [!NOTE]
-> zip パッケージのサイズは、最小 10 MB から最大 2 GB の間である必要があります。
+> zip パッケージのサイズは、最小 10 MB から最大 2 GB の間にする必要があります。
 
-## <a name="upload-package-zip-file"></a>アップロード zip ファイル
+## <a name="upload-package-zip-file"></a>アップロード パッケージ zip ファイル
 
-:::image type="content" alt-text="アップロードバイナリを作成します。" source="Media/AddBinaries.png":::
+:::image type="content" alt-text="バイナリをアップロードします。" source="Media/AddBinaries.png":::
 
-  - アップロードされた依存関係には、テスト フレームワーク、スクリプト エンジン、またはアプリケーションまたはテスト ケースを実行するためにアクセスされるデータが含まれます。 たとえば、ブラウザー ベースのテストの実行に役立つ Selenium と Web ドライバー インストーラーをアップロードできます。
-  - スクリプトアクティビティがモジュール形式で保持されるのがベスト プラクティスです。 
-    - スクリプト `Install` はインストール操作のみを実行します。
-    - スクリプト `Launch` はアプリケーションのみを起動します。
-    - スクリプト `Close` はアプリケーションのみを閉じます。
-    - オプションの `Uninstall` スクリプトは、アプリケーションのみをアンインストールします。
+  - アップロードされた依存関係には、アプリケーションまたはテスト ケースを実行するためにアクセスされるテスト フレームワーク、スクリプト エンジン、またはデータを含めることができます。 たとえば、Selenium と Web ドライバー インストーラーをアップロードして、ブラウザー ベースのテストを実行できます。
+  - スクリプト アクティビティがモジュール化された状態に保たれるようにすることをお勧めします。 
+    - このスクリプトでは `Install` 、インストール操作のみが実行されます。
+    - このスクリプトでは `Launch` 、アプリケーションのみが起動されます。
+    - スクリプトは `Close` アプリケーションのみを閉じます。
+    - 省略可能な `Uninstall` スクリプトでは、アプリケーションのみがアンインストールされます。
 
-**現在、ポータルは PowerShell スクリプトのみをサポートしています。**
+**現時点では、ポータルでは PowerShell スクリプトのみがサポートされています。**
 
 
 ## <a name="next-steps"></a>次の手順 
 
-次の記事に進み、「手順 4: テスト タスクを設定 **する」に進みます**。
+次の記事に進み、手順 4: **テスト タスクを設定する** に進みます。
 > [!div class="nextstepaction"]
-> [戻ってください](uploadApplication.md)
+> [戻る](uploadApplication.md)
 > [!div class="nextstepaction"]
 > [次の手順](testtask.md)
 

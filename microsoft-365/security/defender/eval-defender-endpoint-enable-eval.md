@@ -61,7 +61,7 @@ ms.locfileid: "64782503"
     :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="Microsoft Azure ポータルの [課金ライセンス] ページ" lightbox="../../media/defender/atp-billing-subscriptions.png":::
     
 
-## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2. サポートされている管理ツールのいずれかを使用してエンドポイントをオンボードする
+## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2。 サポートされている管理ツールのいずれかを使用してエンドポイントをオンボードする
 
 ライセンス状態が適切にプロビジョニングされたことを確認したら、サービスへのデバイスのオンボードを開始できます。 
 
@@ -89,7 +89,7 @@ Microsoft Defender for Endpointを評価するために、評価を実施するW
 
 
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 [Microsoft Defender for Endpointのパイロットをセットアップする](eval-defender-endpoint-pilot.md)
  
 [Microsoft Defender for Endpointの評価](eval-defender-endpoint-overview.md)の概要に戻る

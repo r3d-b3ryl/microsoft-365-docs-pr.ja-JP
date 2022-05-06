@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint で Microsoft Defender for IoT 統合を有効にする
-description: Microsoft Defender for IoT 統合を有効にして、MDE が展開されていないネットワーク領域の IoT/OT デバイスに焦点を当てた可視性を得る
-keywords: SIEM コネクタ、SIEM、コネクタ、セキュリティ情報、イベントを有効にする
+title: Microsoft Defender for Endpointで Microsoft Defender for IoT 統合を有効にする
+description: Microsoft Defender for IoT 統合を有効にして、MDE がデプロイされていないネットワークの領域で IoT/OT デバイスに焦点を当てた可視性を得る
+keywords: siem コネクタ、siem、コネクタ、セキュリティ情報、イベントを有効にする
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -36,36 +36,36 @@ ms.locfileid: "64470529"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Microsoft Defender for Endpoint は、Microsoft Defender for IoT と統合できます。 この統合により、Microsoft Defender for IoT が提供するエージェントレス監視機能を使用して、デバイスの検出機能が拡張されます。 これにより、音声インターネット プロトコル (VoIP) デバイス、プリンター、カメラなどの IT ネットワークに接続されているエンタープライズ IoT デバイスをセキュリティで保護できます。 これにより、組織は、すべての IoT および運用テクノロジ (OT) インフラストラクチャをセキュリティで保護する単一の統合ソリューションを利用できます。 詳細については、「[IoT ネットワークEnterprise」を参照してください](/azure/defender-for-iot/organizations/overview-eiot)。
+Microsoft Defender for Endpointが Microsoft Defender for IoT と統合できるようになりました。 この統合により、Microsoft Defender for IoT によって提供されるエージェントレス監視機能を使用して、デバイス検出機能が拡張されます。 これにより、Voice over Internet Protocol (VoIP) デバイス、プリンター、カメラなど、IT ネットワークに接続されたエンタープライズ IoT デバイスのセキュリティ保護に役立ちます。 これにより、組織は、すべての IoT と運用テクノロジ (OT) インフラストラクチャをセキュリティで保護する 1 つの統合ソリューションを利用できます。 詳細については、「[Enterprise IoT ネットワーク保護](/azure/defender-for-iot/organizations/overview-eiot)」を参照してください。
 
-この統合が有効になると、Microsoft Defender for Endpoint は可視性を高め、ネットワーク内の IoT デバイスを見つけ、特定し、セキュリティ保護できます。 Microsoft Defender for IoT または Microsoft Defender for Endpoint によって検出された IoT デバイスは、両方のポータル間で自動的に同期されます。 これにより、他の IT デバイス (ワークステーション、サーバー、モバイル) と共に、完全な OT/IoT インベントリの単一の統合ビューが提供されます。
+この統合を有効にすると、Microsoft Defender for Endpointネットワーク内の IoT デバイスの特定、識別、セキュリティ保護に役立つ可視性が向上します。 Microsoft Defender for IoT によって検出された IoT デバイス、またはMicrosoft Defender for Endpointは両方のポータルで自動的に同期されます。 これにより、IT デバイスの残りの部分 (ワークステーション、サーバー、モバイル) と共に、完全な OT/IoT インベントリの 1 つの統合ビューが提供されます。
 
-Microsoft Defender for IoT には、追加のデータ ソースを提供する展開可能なネットワーク センサーも含まれています。 統合の一環としてネットワーク センサーをセットアップすると、IoT デバイスと OT デバイス、特に Microsoft Defender for Endpoint センサーが存在しないネットワーク セグメント、および従業員がリモートで情報にアクセスしている場合に、最も完全なビューを提供します。
+Microsoft Defender for IoT には、追加のデータ ソースを提供するデプロイ可能なネットワーク センサーも含まれています。 統合の一環としてネットワーク センサーを設定すると、IoT デバイスと OT デバイスの最も完全なビューが提供されます。特に、Microsoft Defender for Endpoint センサーが存在しないネットワーク セグメントや、従業員がリモートで情報にアクセスしている場合などです。
 
 ## <a name="prerequisites"></a>前提条件
 
-Microsoft Defender for IoT を有効にするには、ユーザーに次の役割が必要です。
+Microsoft Defender for IoT を有効にするには、ユーザーに次のロールが必要です。
 
-- テナント グローバル管理者 (Azure Active Directory
+- Azure Active Directoryのテナント グローバル管理者
 - Microsoft Defender for IoT 統合に使用される Azure サブスクリプションのセキュリティ管理者
 
 ## <a name="enabling-the-microsoft-defender-for-iot-integration"></a>Microsoft Defender for IoT 統合の有効化
 
-1. ポータルのナビゲーション ウィンドウで、[[https://security.microsoft.com](https://security.microsoft.com/)  \>  \>デバイス検出設定 **Microsoft Defender for IoT] を選択します**。
+1. ポータルの [https://security.microsoft.com](https://security.microsoft.com/)ナビゲーション ウィンドウで、**設定** \> **デバイス検出** \> **Microsoft Defender for IoT** を選択します。
 
-   :::image type="content" source="images/enable-defender-for-iot.png" alt-text="IoT 統合セットアップ" lightbox="images/enable-defender-for-iot.png":::
+   :::image type="content" source="images/enable-defender-for-iot.png" alt-text="IoT 統合のセットアップ" lightbox="images/enable-defender-for-iot.png":::
 
-2. **テナント内の利用可能な** サブスクリプションのドロップダウン リストから Azure サブスクリプションを選択し、[保存Azure Active Directory選択 **します**。
+2. **Azure Active Directory** テナントで使用可能なサブスクリプションのドロップダウン リストから Azure サブスクリプションを選択し、[保存] を選択 **します**。
 
-## <a name="set-up-a-network-sensor"></a>ネットワーク センサーのセットアップ
+## <a name="set-up-a-network-sensor"></a>ネットワーク センサーを設定する
 
 Azure サブスクリプションを選択すると、ネットワーク センサーを追加できます。
 
-ネットワーク センサーを追加するには、[ネットワーク センサーの **セットアップ** ] で **[Microsoft Defender for IoT] リンクを選択** します。 これにより、Azure portal のオンボード センサーセットアップ プロセスにアクセスできます。 詳細については、「 [Azure portal で Defender for IoT を使用してセンサーを管理する」を参照してください](/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud)。
+ネットワーク センサーを追加するには、[ **ネットワーク センサーのセットアップ** ] で **Microsoft Defender for IoT** リンクを選択します。 これにより、Azure portalのオンボード センサーのセットアップ プロセスが表示されます。 詳細については、[Azure portalの Defender for IoT を使用したセンサーの管理に関するページを参照](/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud)してください。
 
-## <a name="turn-off-subscription-integration"></a>サブスクリプションの統合をオフにする
+## <a name="turn-off-subscription-integration"></a>サブスクリプション統合を無効にする
 
-Azure サブスクリプションの統合は、ポータルの Microsoft Defender for IoT 設定ページからオフ [https://security.microsoft.com](https://security.microsoft.com/) にできます。 サブスクリプションをオフにした後、Microsoft Defender for Endpoint デバイス インベントリに Microsoft Defender for IoT によって検出された IoT デバイスが表示されなくなりました。
+Azure サブスクリプションの統合は、ポータルの Microsoft Defender for IoT 設定ページから [https://security.microsoft.com](https://security.microsoft.com/) 無効にすることができます。 サブスクリプションをオフにすると、Microsoft Defender for IoT によって検出された IoT デバイスがMicrosoft Defender for Endpointデバイス インベントリに表示されなくなります。
 
 ## <a name="see-also"></a>関連項目
 

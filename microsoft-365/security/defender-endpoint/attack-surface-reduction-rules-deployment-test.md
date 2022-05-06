@@ -1,5 +1,5 @@
 ---
-title: 攻撃面の縮小 (ASR) ルールをテストする
+title: 攻撃面の減少 (ASR) ルールをテストする
 description: 攻撃面削減 (ASR) ルールのデプロイをテストするためのガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR 展開、ASR の有効化、ASR の構成、ホスト侵入防止システム、保護規則、悪用防止ルール、悪用防止ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、ASR 規則の構成
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/07/2022
 ms.locfileid: "64705277"
 ---
-# <a name="test-attack-surface-reduction-asr-rules"></a>攻撃面の縮小 (ASR) ルールをテストする
+# <a name="test-attack-surface-reduction-asr-rules"></a>攻撃面の減少 (ASR) ルールをテストする
 
 攻撃表面縮小 (ASR) ルールのテストは、ルールがルールを有効にする前に基幹業務を妨げるかどうかを判断するのに役立ちます。 小規模で制御されたグループから始めることで、組織全体に展開を拡大するときに、潜在的な作業中断を制限できます。
 
@@ -204,12 +204,12 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>このデプロイ コレクションのその他のトピック
 
-[攻撃対象領域の削減 (ASR) ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
+[攻撃面の縮小 (ASR) ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
 
-[攻撃面削減 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
+[攻撃面の縮小 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
 
-[攻撃面の縮小 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md)
+[攻撃面の減少 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md)
 
-[攻撃面の縮小 (ASR) ルールを運用化する](attack-surface-reduction-rules-deployment-operationalize.md)
+[攻撃面の減少 (ASR) ルールの運用化](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[攻撃対象の縮小 (ASR) ルールリファレンス](attack-surface-reduction-rules-reference.md)
+[攻撃面の減少 (ASR) ルールの参照](attack-surface-reduction-rules-reference.md)

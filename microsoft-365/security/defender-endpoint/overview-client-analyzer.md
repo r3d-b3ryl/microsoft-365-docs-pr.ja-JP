@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint Client Analyzer を使用したセンサーの正常性のトラブルシューティング
-description: デバイスのセンサーの正常性をトラブルシューティングし、センサー のデータまたは機能に影響を与える潜在的な構成、環境、接続、または利用統計情報の問題を特定します。
-keywords: センサー、センサーの正常性、構成ミス、非アクティブ、センサー データなし、センサー データ、通信障害、通信障害
+title: Microsoft Defender for Endpoint クライアント アナライザーを使用したセンサーの正常性のトラブルシューティング
+description: デバイスのセンサーの正常性をトラブルシューティングして、センサー データまたは機能に影響を与える潜在的な構成、環境、接続、またはテレメトリの問題を特定します。
+keywords: センサー, センサーの正常性, 不適切な構成, 非アクティブ, センサー データなし, センサー データ, 通信障害, 通信
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,39 +23,39 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63323501"
 ---
-# <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint Client Analyzer を使用したセンサーの正常性のトラブルシューティング
+# <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint クライアント アナライザーを使用したセンサーの正常性のトラブルシューティング
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint Client Analyzer (MDECA) は、Windows、Linux、または macOS を実行しているオンボード デバイスで[](/microsoft-365/security/defender-endpoint/onboard-configure)センサーの正常性または信頼性の問題を診断する場合に役立ちます。 たとえば、セキュリティ ポータルに表示されるセンサーの正常性 [状態 (非](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) アクティブ、センサー データなし、または通信障害) に従って、異常と思われるコンピューターでアナライザーを実行できます。
+Microsoft Defender for Endpoint クライアント アナライザー (MDECA) は、Windows、Linux、または macOS を実行している[オンボード デバイス](/microsoft-365/security/defender-endpoint/onboard-configure)でセンサーの正常性または信頼性の問題を診断するときに役立ちます。 たとえば、セキュリティ ポータルで表示される [センサーの正常性状態](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) (非アクティブ、センサー データなし、または通信障害) に従って異常と思われるコンピューターでアナライザーを実行できます。
 
-明らかなセンサーの正常性の問題に加え、MDECA は、次のような複雑なシナリオをトラブルシューティングするための他のトレース、ログ、および診断情報を収集できます。
+明らかなセンサーの正常性の問題に加えて、MDECA は、次のような複雑なシナリオのトラブルシューティングのために、他のトレース、ログ、診断情報を収集できます。
 
 - アプリケーションの互換性 (AppCompat)、パフォーマンス、ネットワーク接続、または
-- エンドポイントデータ損失防止に [関連する予期しない動作](/microsoft-365/compliance/endpoint-dlp-learn-about)。
+- [エンドポイントデータ損失防止](/microsoft-365/compliance/endpoint-dlp-learn-about)に関連する予期しない動作。
 
 ## <a name="privacy-notice"></a>プライバシーに関する声明
 
-- Microsoft Defender for Endpoint Client Analyzer ツールは、Microsoft Defender for Endpoint で発生する可能性のある問題のトラブルシューティングに役立つ情報を収集するために、Microsoft カスタマー サポート サービス (CSS) によって定期的に使用されます。
+- Microsoft Defender for Endpoint クライアント アナライザー ツールは、Microsoft カスタマー サポート サービス (CSS) によって定期的に使用され、Microsoft Defender for Endpointで発生する可能性がある問題のトラブルシューティングに役立つ情報を収集します。
 
-- 収集されたデータには、IP アドレス、PC 名、ユーザー名など、個人を特定できる情報 (PII) や機密データ (ただしこれらに限定されません) が含まれる場合があります。
+- 収集されたデータには、IP アドレス、PC 名、ユーザー名などの個人識別情報 (PII) や機密データ (ただしこれらに限定されない) が含まれる場合があります。
 
-- データ収集が完了すると、ツールはサブフォルダーと圧縮された zip ファイル内のコンピューターにデータをローカルに保存します。
+- データ収集が完了すると、ツールは、サブフォルダーと圧縮された zip ファイル内のコンピューター上のデータをローカルに保存します。
 
-- データは自動的に Microsoft に送信されません。 サポートの問題で共同作業中にツールを使用している場合は、問題の調査を容易にするために、Secure File Exchange を使用して圧縮データを Microsoft CSS に送信する必要があります。
+- データは自動的に Microsoft に送信されません。 サポートの問題に関する共同作業中にツールを使用している場合は、セキュリティで保護されたファイルExchangeを使用して圧縮されたデータを Microsoft CSS に送信し、問題の調査を容易にするよう求められる場合があります。
 
-Secure File Exchangeの詳細については、「Secure File Exchangeを使用して Microsoft サポートとファイルExchange交換する方法」[を参照してください](/troubleshoot/azure/general/secure-file-exchange-transfer-files)。
+Secure File Exchangeの詳細については、「[Secure File Exchangeを使用してファイルをMicrosoft サポートと交換する方法」を参照](/troubleshoot/azure/general/secure-file-exchange-transfer-files)してください。
 
-プライバシーに関する声明の詳細については、「 [Microsoft Privacy Statement」を参照してください](https://privacy.microsoft.com/privacystatement)。
+プライバシーに関する声明の詳細については、 [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)を参照してください。
 
 ## <a name="requirements"></a>要件
 
-- アナライザーを実行する前に、プロキシまたはファイアウォールの構成で [Microsoft Defender for Endpoint サービス URL へのアクセスを許可することを確認することをお勧めします](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
+- アナライザーを実行する前に、プロキシまたはファイアウォールの構成で[Microsoft Defender for Endpointサービス URL](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) へのアクセスを許可することを確認することをお勧めします。
 
-- アナライザーは、Microsoft Defender for Endpoint へのオンボーディング[](minimum-requirements.md#supported-windows-versions)の前に、Windows、[Linux](microsoft-defender-endpoint-linux.md#system-requirements)、[または macOS](microsoft-defender-endpoint-mac.md#system-requirements) のサポートされているエディションで実行できます。
+- アナライザーは、[Microsoft Defender for Endpoint](minimum-requirements.md#supported-windows-versions)にオンボードした後、Windows、[Linux](microsoft-defender-endpoint-linux.md#system-requirements)、または [macOS](microsoft-defender-endpoint-mac.md#system-requirements) のサポートされているエディションで実行できます。
 
-- Windowsデバイスの場合、Live [Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log) を介してリモートではなく、特定のコンピューターでアナライザーを直接実行している場合は、SysInternals [PsExec.exe](/sysinternals/downloads/psexec) の実行を (少なくとも一時的に) 許可する必要があります。 アナライザーは、クラウド接続PsExec.exeローカル システムとして実行し、SENSE サービスの動作をエミュレートするために、このツールを呼び出します。
+- Windows デバイスの場合、[Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log) を介してリモートではなく特定のマシンでアナライザーを直接実行している場合は、SysInternals [PsExec.exe](/sysinternals/downloads/psexec)を (少なくとも一時的に) 実行できるようにする必要があります。 アナライザーは、PsExec.exe ツールを呼び出して、クラウド接続チェックをローカル システムとして実行し、SENSE サービスの動作をエミュレートします。
 
     > [!NOTE]
-    > Windows デバイスで、攻撃表面縮小 (ASR) ルール [PSExec および WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands) コマンドから発生するプロセス作成をブロックする場合は、一時的にルールを無効にするか、[ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) ルールの除外を構成して、アナライザーが期待した通りクラウドに接続チェックを実行できます。
+    > Windows デバイスで、[PSExec および WMI コマンドから発生する](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)攻撃表面削減 (ASR) 規則ブロック プロセスの作成を使用する場合は、ルールを一時的に無効にするか、またはアナライザーが予想どおりにクラウドへの接続チェックを実行できるように [ASR 規則の除外を構成](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)する必要があります。

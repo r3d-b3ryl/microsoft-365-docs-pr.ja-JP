@@ -1,6 +1,6 @@
 ---
-title: テスト オプションの選択
-description: テスト オプションの選択
+title: テスト オプションを選択する
+description: テスト オプションを選択する
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -23,11 +23,11 @@ ms.locfileid: "60206363"
 ---
 # <a name="step-5-choose-your-test-options"></a>手順 5: テスト オプションを選択します。 
 
-このタブは、機能テストを実行するユーザー向けで、Windows Update パッチを機能テスト スクリプトの実行順序で適用する必要がある場合 ```Test Options``` に示します。
+この```Test Options```タブは、機能テスト スクリプトを実行する順序でWindows Updateパッチを適用するタイミングを示す機能テストを実行するユーザー向けです。
 
-![テスト オプションのイメージ。 アウトオブボックステストまたは機能テスト。](Media/testoptions.png)
+![テスト オプションの画像。 既定または機能テスト。](Media/testoptions.png)
 
-[ _**確認] を**_ 選択して次のタブに移動し、選択したテスト オプションを確認します。
+[ _**確認**_ ] を選択して次のタブに移動し、選択したテスト オプションを確認します。
 
 ## <a name="next-steps"></a>次の手順
 

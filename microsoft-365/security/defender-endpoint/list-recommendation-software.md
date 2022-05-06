@@ -1,7 +1,7 @@
 ---
-title: 推奨されるソフトウェアを一覧表示する
-description: 特定のソフトウェアに関連するセキュリティ推奨事項を取得します。
-keywords: apis、graph api、サポートされている api、get、セキュリティ推奨事項、ソフトウェアのセキュリティ推奨事項、脅威と脆弱性の管理、脅威と脆弱性の管理 API
+title: 推奨事項でソフトウェアを一覧表示する
+description: 特定のソフトウェアに関連するセキュリティに関する推奨事項を取得します。
+keywords: apis, graph api, サポートされている API, get, security recommendation, security recommendation for software, 脅威と脆弱性の管理, 脅威と脆弱性の管理 api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61302400"
 ---
-# <a name="list-software-by-recommendation"></a>推奨されるソフトウェアを一覧表示する
+# <a name="list-software-by-recommendation"></a>推奨事項でソフトウェアを一覧表示する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,15 +38,15 @@ ms.locfileid: "61302400"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-特定のソフトウェアに関連するセキュリティ推奨事項を取得します。
+特定のソフトウェアに関連するセキュリティに関する推奨事項を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェアの情報の読み取り'
 委任 (職場または学校のアカウント)|SecurityRecommendation.Read|'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
@@ -57,7 +57,7 @@ GET /api/recommendations/{id}/software
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -67,7 +67,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、本文のセキュリティ推奨事項に関連付けられたソフトウェアで 200 OK を返します。
+成功した場合、このメソッドは本文のセキュリティに関する推奨事項に関連付けられたソフトウェアで 200 OK を返します。
 
 ## <a name="example"></a>例
 
@@ -97,7 +97,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-- [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&脆弱性のセキュリティに関する推奨事項](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

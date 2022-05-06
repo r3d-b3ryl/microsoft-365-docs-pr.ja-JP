@@ -1,5 +1,5 @@
 ---
-title: PowerShell でのドキュメント理解モデルの説明を使用する
+title: PowerShell でドキュメント理解モデルの説明を操作する
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
@@ -12,7 +12,7 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: PowerShell でのドキュメント理解モデルSharePoint Syntex作業について説明します。
+description: PowerShell でのSharePoint Syntexドキュメント理解モデルの説明に関する作業について説明します。
 ms.openlocfilehash: 12bdb4c7019b34ee7d2c1f4315673d78cbfb7ba1
 ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
@@ -20,16 +20,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/17/2022
 ms.locfileid: "63525696"
 ---
-# <a name="work-with-document-understanding-model-explanations-in-powershell"></a>PowerShell でのドキュメント理解モデルの説明を使用する
+# <a name="work-with-document-understanding-model-explanations-in-powershell"></a>PowerShell でドキュメント理解モデルの説明を操作する
 
 > [!IMPORTANT]
-> PowerShell SharePoint Syntexおよび他のすべての PnP コンポーネントは、サポートを提供するアクティブ なコミュニティによってサポートされるオープンソース ツールです。 公式の Microsoft サポート チャネルのオープン ソース ツールのサポート用 SLA ではありません。
+> SharePoint Syntex PowerShell コマンドレットとその他のすべての PnP コンポーネントは、アクティブなコミュニティによってサポートされるオープン ソース ツールです。 公式の Microsoft サポート チャネルのオープン ソース ツールのサポート用 SLA ではありません。
 
-カスタム説明テンプレートは、コンテンツ センター内のリストに格納されます。 これらの説明はリスト アイテムとして格納されますので、PowerShell を使用してそれらの操作を行えます。
+カスタム説明テンプレートは、コンテンツ センター内のリストに格納されます。 これらの説明はリスト アイテムとして格納されるため、PowerShell を使用して操作できます。
 
-## <a name="list-saved-explanations"></a>保存された説明の一覧
+## <a name="list-saved-explanations"></a>保存された説明を一覧表示する
 
-次の使用例は、特定のコンテンツ センターに保存されているすべてのカスタム説明テンプレートを表示する方法を示しています。
+この例では、特定のコンテンツ センターに保存されているすべてのカスタム説明テンプレートを表示する方法を示します。
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -69,7 +69,7 @@ $explanationOutput
 
 ## <a name="create-a-phrase-list-explanation"></a>フレーズ リストの説明を作成する
 
-次の使用例は、カスタム フレーズ リストの説明テンプレートを作成する方法を示しています。
+この例では、カスタム フレーズ リストの説明テンプレートを作成する方法を示します。
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -106,7 +106,7 @@ Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationN
 
 ## <a name="create-a-regular-expression-explanation"></a>正規表現の説明を作成する
 
-次の使用例は、カスタム正規表現の説明テンプレートを作成する方法を示しています。
+この例では、カスタム正規表現の説明テンプレートを作成する方法を示します。
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -131,9 +131,9 @@ $explanationContent = "{`"id`":`"$guid`",`"kind`":`"regexFeature`",`"name`":`"$e
 Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationName; "ExplanationName" = $explanationName; "ExplanationDescription" = $explanationDescription; "ExplanationContent" = $explanationContent}
 ```
 
-## <a name="create-a-phrase-list-explanation-based-on-a-term-set"></a>用語セットに基づいて語句リストの説明を作成する
+## <a name="create-a-phrase-list-explanation-based-on-a-term-set"></a>用語セットに基づいてフレーズ リストの説明を作成する
 
-次の使用例は、用語セットから値を取得して、カスタム フレーズ リストの説明テンプレートを作成する方法を示しています。 これには、優先する用語名と類義語が含まれます。
+この例では、用語セットから値を取得して、カスタム フレーズ リストの説明テンプレートを作成する方法を示します。 これには、優先用語名とシノニムが含まれます。
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"

@@ -42,9 +42,9 @@ ms.locfileid: "65131465"
 
 ## <a name="learn-more-on-restricted-entities"></a>制限付きエンティティの詳細を確認する
 
-制限付きエンティティは、侵害された可能性があるか、送信制限を超えたため、電子メールの送信がブロックされているエンティティです。
+制限付きエンティティとは、侵害された可能性があるか、送信制限を超えたために電子メールの送信がブロックされているエンティティです。
 
-制限付きエンティティには次の 2 種類があります。 
+制限付きエンティティには次の 2 種類があります: 
 
 - **制限付きユーザー**: ユーザーを制限できる理由と制限付きユーザーを処理する方法の詳細については、「制限 [付きエンティティ ポータルからブロックされたユーザーを削除](removing-user-from-restricted-users-portal-after-spam.md)する」を参照してください。 
 
@@ -66,7 +66,7 @@ ms.locfileid: "65131465"
   >
   > - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 制限付きエンティティ ポータルからコネクタを削除する前に、コネクタの制御を回復するために必要な手順に従ってください。 詳細については、「 [侵害されたコネクタに対応する」を](respond-compromised-connector.md)参照してください。
 
@@ -127,7 +127,7 @@ Get-BlockedConnector -ConnectorId <connectorId>
 Remove-BlockedConnector -ConnectorId <connectorId>
 ```
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - [侵害されたコネクタに対応する](respond-compromised-connector.md)
 - [ブロックされたユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)

@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用したドキュメント理解モデルのエクスポートとインポート
+title: PowerShell を使用してドキュメント理解モデルをエクスポートおよびインポートする
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
@@ -12,7 +12,7 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: PowerShell を使用してドキュメント理解モデルをエクスポートおよびインポートする方法については、SharePoint Syntex。
+description: SharePoint Syntexで PowerShell を使用してドキュメント理解モデルをエクスポートおよびインポートする方法について説明します。
 ms.openlocfilehash: dc35d298ebd79752684c91ce944333277fcef621
 ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
@@ -20,16 +20,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/17/2022
 ms.locfileid: "63527006"
 ---
-# <a name="export-and-import-document-understanding-models-with-powershell"></a>PowerShell を使用したドキュメント理解モデルのエクスポートとインポート
+# <a name="export-and-import-document-understanding-models-with-powershell"></a>PowerShell を使用してドキュメント理解モデルをエクスポートおよびインポートする
 
 > [!IMPORTANT]
-> PowerShell SharePoint Syntexおよび他のすべての PnP コンポーネントは、サポートを提供するアクティブ なコミュニティによってサポートされるオープンソース ツールです。 公式の Microsoft サポート チャネルのオープン ソース ツールのサポート用 SLA ではありません。
+> SharePoint Syntex PowerShell コマンドレットとその他のすべての PnP コンポーネントは、アクティブなコミュニティによってサポートされるオープン ソース ツールです。 公式の Microsoft サポート チャネルのオープン ソース ツールのサポート用 SLA ではありません。
 
-SharePoint Syntexは PnP テンプレートとしてエクスポートし、コンテンツ センターまたはテナント間で再利用できます。
+SharePoint Syntex モデルは PnP テンプレートとしてエクスポートできるため、コンテンツ センターやテナント間で再利用できます。
 
-## <a name="export-all-models-in-a-content-center"></a>コンテンツ センターのすべてのモデルをエクスポートする
+## <a name="export-all-models-in-a-content-center"></a>コンテンツ センター内のすべてのモデルをエクスポートする
 
-コンテンツ センター内のすべてのモデルを単一の PnP テンプレートにエクスポートするには、次の [PnP PowerShell コマンドレット](https://pnp.github.io/powershell/) を使用します。
+コンテンツ センター内のすべてのモデルを 1 つの PnP テンプレートにエクスポートするには、次の [PnP PowerShell](https://pnp.github.io/powershell/) コマンドレットを使用します。
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -39,7 +39,7 @@ Get-PnPSiteTemplate -Out MyModels.pnp -Handlers SyntexModels
 
 ## <a name="export-specific-models"></a>特定のモデルをエクスポートする
 
-コンテンツ センターから PnP テンプレートに特定のモデルをエクスポートするには、次の [PnP PowerShell コマンドレットを](https://pnp.github.io/powershell/) 使用します。
+コンテンツ センターから PnP テンプレートに特定のモデルをエクスポートするには、次の [PnP PowerShell](https://pnp.github.io/powershell/) コマンドレットを使用します。
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -47,7 +47,7 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
 Get-PnPSiteTemplate -Out MyModels.pnp -Configuration .\extract.json
 ```
 
-extract.json は、エクスポートするモデルを定義し、名前または ID でモデルを指定し、必要に応じてトレーニング データを抽出しなく構成できます。
+extract.json では、エクスポートするモデルを定義し、名前または ID でモデルを指定し、必要に応じてトレーニング データを抽出しないように構成できます。
 
 ### <a name="example---specify-model-by-name"></a>例 - 名前でモデルを指定する
 
@@ -88,13 +88,13 @@ extract.json は、エクスポートするモデルを定義し、名前また�
 }
 ```
 
-"includeTrainingData" プロパティを含めない場合、既定の動作は含まれます。
+プロパティ "includeTrainingData" を含まない場合、既定の動作は含まれます。
 
 > [!NOTE]
-> トレーニング データは、コピー先のコンテンツ センターにインポートするときにモデルを編集可能にするために必要です。
+> ターゲット コンテンツ センターにインポートするときにモデルを編集可能にするには、トレーニング データが必要です。
 
-## <a name="import-models-to-a-content-center"></a>モデルをコンテンツ センターにインポートする
-PnP テンプレートにエクスポートされたドキュメント理解モデルは、任意のテナントのコンテンツ センターにインポートできます。 エクスポートにトレーニング データが含まれている場合は、インポート後にモデルを編集できます。
+## <a name="import-models-to-a-content-center"></a>コンテンツ センターにモデルをインポートする
+PnP テンプレートにエクスポートされたドキュメント理解モデルは、任意のテナントのコンテンツ センターにインポートできます。 エクスポートにトレーニング データが含まれている場合、モデルはインポート後に編集可能になります。
 
 モデルをインポートするには、次のコマンドを使用します。
 

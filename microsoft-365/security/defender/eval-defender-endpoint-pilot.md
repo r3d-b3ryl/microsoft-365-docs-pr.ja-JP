@@ -1,6 +1,6 @@
 ---
-title: エンドポイント向け Microsoft Defender のパイロット
-description: パイロット グループの確認や機能の試用など、Microsoft Defender for Endpoint(MDE) のパイロットを実行する方法について説明します。
+title: パイロット Microsoft Defender for Endpoint
+description: パイロット グループの検証や機能の試用など、Microsoft Defender for Endpoint (MDE) のパイロットを実行する方法について説明します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,64 +28,64 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2022
 ms.locfileid: "63755461"
 ---
-# <a name="pilot-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender のパイロット
+# <a name="pilot-microsoft-defender-for-endpoint"></a>パイロット Microsoft Defender for Endpoint
 
-この記事では、Microsoft Defender for Endpoint のパイロットを実行するプロセスについて説明します。 
+この記事では、Microsoft Defender for Endpointのパイロットを実行するプロセスについて説明します。 
 
-次の手順を使用して、Microsoft Defender for Endpoint のパイロットをセットアップおよび構成します。 
+次の手順に従って、Microsoft Defender for Endpointのパイロットをセットアップして構成します。 
 
-:::image type="content" source="../../media/defender/m365-defender-endpoint-pilot-steps.png" alt-text="Microsoft Defender for Identity を Microsoft Defender 評価環境に追加する手順" lightbox="../../media/defender/m365-defender-endpoint-pilot-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-endpoint-pilot-steps.png" alt-text="Microsoft Defender 評価環境にMicrosoft Defender for Identityを追加する手順" lightbox="../../media/defender/m365-defender-endpoint-pilot-steps.png":::
 
-- 手順 1. パイロット グループの確認
+- 手順 1. パイロット グループを確認する
 - 手順 2。 機能を試す
 
-Microsoft Defender for Endpoint をパイロットする場合は、組織全体をオンボーディングする前に、いくつかのデバイスをサービスにオンボードできます。  
+Microsoft Defender for Endpointをパイロットする場合は、組織全体をオンボードする前に、いくつかのデバイスをサービスにオンボードすることもできます。  
 
-その後、攻撃シミュレーションの実行、Defender for Endpoint による悪意のあるアクティビティの表面化、効率的な応答の実行など、利用可能な機能を試し直します。 
+その後、攻撃シミュレーションの実行、Defender for Endpoint による悪意のあるアクティビティの表示方法、効率的な対応を可能にする方法など、使用可能な機能を試すことができます。 
 
-## <a name="step-1-verify-pilot-group"></a>手順 1. パイロット グループの確認
-[評価を有効にする] セクションで説明されているオン[](eval-defender-endpoint-enable-eval.md)ボーディング手順を完了すると、デバイスインベントリリストにデバイスが約 1 時間後に表示されます。 
+## <a name="step-1-verify-pilot-group"></a>手順 1. パイロット グループを確認する
+[[評価を有効にする]](eval-defender-endpoint-enable-eval.md) セクションで説明されているオンボード手順を完了すると、約 1 時間後にデバイス インベントリの一覧にデバイスが表示されます。 
 
-オンボードデバイスが表示された場合は、機能の試しに進みます。 
+オンボードされたデバイスが表示されたら、機能の試用に進むことができます。 
 
 ## <a name="step-2-try-out-capabilities"></a>手順 2。 機能を試す
-一部のデバイスのオンボーディングが完了し、サービスに報告されているのを確認したら、使用可能な強力な機能を試して、製品について理解してください。
+一部のデバイスのオンボードが完了し、サービスに報告されていることを確認したので、すぐに使用できる強力な機能を試して、製品に慣れ親しみます。
 
-パイロットの間は、複雑な構成手順を実行せずに、いくつかの機能を試して製品を実際に確認できます。
+パイロットの間は、複雑な構成手順を実行せずに、一部の機能を簡単に試して製品の動作を確認できます。
 
-まず、ダッシュボードをチェックアウトします。
+ダッシュボードを確認することから始めましょう。
 
-### <a name="view-the-device-inventory"></a>デバイス インベントリの表示
-デバイス インベントリは、ネットワーク内のエンドポイント、ネットワーク デバイス、および IoT デバイスの一覧を表示する場所です。 ネットワーク内のデバイスのビューを提供するだけでなく、ドメイン、リスク レベル、OS プラットフォームなどの詳細な情報を提供し、最も危険にさらされているデバイスを簡単に識別できます。
+### <a name="view-the-device-inventory"></a>デバイス インベントリを表示する
+デバイス インベントリには、ネットワーク内のエンドポイント、ネットワーク デバイス、IoT デバイスの一覧が表示されます。 ネットワーク内のデバイスのビューが提供されるだけでなく、ドメイン、リスク レベル、OS プラットフォームなどの詳細な情報も提供され、最も危険にさらされているデバイスを簡単に識別できます。
 
-### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>脅威と脅威のダッシュボード脆弱性の管理する 
-脅威と脆弱性の管理は、組織にとって最も緊急かつ最もリスクの高い弱点に焦点を当てるのに役立ちます。 ダッシュボードから、組織の露出スコア、Microsoft Secure Score for Devices、デバイスの露出分布、トップ セキュリティ推奨事項、脆弱なソフトウェアの上位、トップ修復アクティビティ、および公開されているトップ デバイス データの高レベルのビューを取得します。 
+### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>脅威と脆弱性の管理ダッシュボードを表示する 
+脅威と脆弱性の管理は、組織にとって最も緊急かつリスクの高い弱点に焦点を当てるのに役立ちます。 ダッシュボードから、組織の公開スコア、Microsoft Secure Score for Devices、デバイスの公開分布、セキュリティに関する推奨事項、脆弱なソフトウェアの上位、修復アクティビティの上位、および公開された上位デバイス データの概要を確認します。 
 
-### <a name="run-a-simulation"></a>シミュレーションの実行
-Microsoft Defender for Endpoint には、パイロット デバイスで実行できる " [Do It Yourself"](https://securitycenter.windows.com/tutorials) 攻撃シナリオが付属しています。  各ドキュメントには、OS とアプリケーションの要件、および攻撃シナリオに固有の詳細な手順が含まれています。 これらのスクリプトは安全で文書化され、使いやすいです。 これらのシナリオは、Defender for Endpoint の機能を反映し、調査のエクスペリエンスについて説明します。
+### <a name="run-a-simulation"></a>シミュレーションを実行する
+Microsoft Defender for Endpointには、パイロット デバイスで実行できる ["Do It Yourself" 攻撃シナリオ](https://securitycenter.windows.com/tutorials)が付属しています。  各ドキュメントには、OS とアプリケーションの要件、および攻撃シナリオに固有の詳細な手順が含まれています。 これらのスクリプトは、安全で文書化されており、使いやすいです。 これらのシナリオでは、Defender for Endpoint 機能が反映され、調査エクスペリエンスについて説明します。
 
-提供されているシミュレーションのいずれかを実行するには、オンボードデバイスが少なくとも [1 つ必要です](../defender-endpoint/onboard-configure.md)。
+指定されたシミュレーションのいずれかを実行するには、少なくとも [1 台のオンボードデバイスが必要です](../defender-endpoint/onboard-configure.md)。
 
-1. **HelpSimulations** >  **&チュートリアルで**、シミュレートする利用可能な攻撃シナリオを選択します。
+1. **HelpSimulations** >  **&チュートリアル** で、シミュレートする使用可能な攻撃シナリオを選択します。
 
-   - **シナリオ 1: ドキュメントドロップバックドア** - ソーシャルエンジニアリングされたルアー ドキュメントの配信をシミュレートします。 このドキュメントは、攻撃者に制御を与える特別に細工されたバックドアを起動します。
+   - **シナリオ 1: ドキュメントがバックドアを削除** する - ソーシャルに設計されたルアー ドキュメントの配信をシミュレートします。 このドキュメントは、攻撃者に制御を与える特別に作成されたバックドアを起動します。
 
-   - **シナリオ 2: ファイル** レス攻撃の PowerShell スクリプト - PowerShell に依存するファイルレス攻撃をシミュレートし、攻撃表面の縮小と悪意のあるメモリ アクティビティのデバイス学習検出を示します。
+   - **シナリオ 2: ファイルレス攻撃の PowerShell スクリプト - PowerShell** に依存するファイルレス攻撃をシミュレートし、攻撃面の削減と悪意のあるメモリ アクティビティのデバイスラーニング検出を示します。
 
-   - **シナリオ 3: インシデント** 対応の自動化 - 自動調査がトリガーされ、侵害アーティファクトを自動的にハントして修復してインシデント対応の容量を拡張します。
+   - **シナリオ 3: 自動インシデント対応** - 自動調査がトリガーされます。これにより、侵害アーティファクトを自動的に検出および修復して、インシデント対応能力をスケーリングします。
 
-2. 選択したシナリオで提供される対応するチュートリアル ドキュメントをダウンロードして読み取る。
+2. 選択したシナリオで提供されている対応するチュートリアル ドキュメントをダウンロードして読み取ります。
 
-3. シミュレーション ファイルをダウンロードするか、チュートリアルの **HelpSimulations** >  に移動してシミュレーション スクリプト&します。 テスト デバイスでファイルまたはスクリプトをダウンロードすることもできますが、必須ではありません。
+3. **シミュレーション** ファイルをダウンロードするか、**HelpSimulations** >  &チュートリアルに移動してシミュレーション スクリプトをコピーします。 テスト デバイスでファイルまたはスクリプトをダウンロードすることもできますが、必須ではありません。
 
 4. チュートリアル ドキュメントの指示に従って、テスト デバイスでシミュレーション ファイルまたはスクリプトを実行します。
 
 > [!NOTE]
-> シミュレーション ファイルまたはスクリプトは攻撃アクティビティを模倣しますが、実際には良性であり、テスト デバイスに害を及ぼしたり、危険にさらしたりしません。
+> シミュレーション ファイルまたはスクリプトは攻撃アクティビティを模倣しますが、実際には無害であり、テスト デバイスに害を与えたり侵害したりすることはありません。
 
 ## <a name="next-steps"></a>次の手順
-[Microsoft Defender for Cloud Apps の評価](eval-defender-mcas-overview.md)
+[Microsoft Defender for Cloud Appsを評価する](eval-defender-mcas-overview.md)
 
-エンドポイントの Microsoft Defender の [評価の概要に戻る](eval-defender-endpoint-overview.md)
+[Microsoft Defender for Endpointの評価](eval-defender-endpoint-overview.md)の概要に戻る
 
-[評価とパイロット] [の概要に戻Microsoft 365 Defender](eval-overview.md)
+[評価とパイロットのMicrosoft 365 Defender](eval-overview.md)の概要に戻る

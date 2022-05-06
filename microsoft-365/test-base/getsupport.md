@@ -1,6 +1,6 @@
 ---
 title: その他のサポート
-description: テスト ベース チームにアクセスする方法の詳細
+description: テスト ベース チームに連絡する方法の詳細
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -23,4 +23,4 @@ ms.locfileid: "60180521"
 ---
 # <a name="additional-support"></a>その他のサポート
 
-### <a name="for-additional-support-please-reach-out-to-the-test-base-team-at-testbasepreviewmicrosoftcom"></a>その他のサポートについては、テスト ベース チームに問い合 TestBasePreview@microsoft.com
+### <a name="for-additional-support-please-reach-out-to-the-test-base-team-at-testbasepreviewmicrosoftcom"></a>その他のサポートについては、TestBasePreview@microsoft.com のテスト ベース チームにお問い合わせください

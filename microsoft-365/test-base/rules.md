@@ -1,5 +1,5 @@
 ---
-title: アプリケーション/テスト ルール
+title: アプリケーション/テストルール
 description: アプリケーション/テストのアップロード時に従うルール
 search.appverid: MET150
 author: andreicsibi-msft
@@ -11,15 +11,21 @@ ms.date: 02/04/2022
 ms.service: virtual-desktop
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
-ms.custom: null
+ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
+ms.openlocfilehash: cebf888d7a17d6d589888d529cea1731b666f562
+ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/06/2022
+ms.locfileid: "62429023"
 ---
-# <a name="applicationtest-rules"></a>アプリケーション/テスト ルール
+# <a name="applicationtest-rules"></a>アプリケーション/テストルール
 
-Test Base のすべてのアプリケーションまたはテストは、次のルールに従う必要があります。
+Test Base のすべてのアプリケーションまたはテストは、次の規則に従う必要があります。
 
-## <a name="test-base-folders"></a>基本フォルダーのテスト 
+## <a name="test-base-folders"></a>基本フォルダーをテストする 
 
 Test Base インフラストラクチャでは、次のフォルダーが使用されます。
 * %SYSTEMDRIVE%\USL
@@ -36,12 +42,12 @@ Test Base インフラストラクチャでは、次のフォルダーが使用�
 * %SYSTEMDRIVE%\WULogs
 
 > [!IMPORTANT]
-> **次の問題を回避します**。
-> * これらのフォルダーから任意のプロセスの実行をブロックします。 アプリケーションがマルウェア対策ソフトウェアの場合は、これらのフォルダーからのすべてのプロセスの実行を許可するアプリ のインストールを構成します。
+> **次の手順は避けてください**。
+> * これらのフォルダーから任意のプロセスの実行をブロックします。 アプリケーションがマルウェア対策ソフトウェアの場合は、これらのフォルダーからのすべてのプロセスを妨げない実行を許可するようにアプリのインストールを構成します。
 > * これらのフォルダーの改ざん。
 
-## <a name="test-base-registry-keys"></a>Test Base レジストリ キー
+## <a name="test-base-registry-keys"></a>基本レジストリ キーをテストする
 
-アプリケーション/テストは、次に関連するレジストリ キーを削除したり変更したりしな
+アプリケーション/テストでは、次に関連するレジストリ キーを削除または変更しないでください。
 * Windowsテレメトリ レベル
 * TLS 1.2 の削除

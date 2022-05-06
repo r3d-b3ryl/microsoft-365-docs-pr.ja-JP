@@ -57,7 +57,7 @@ ms.locfileid: "64788042"
 
 ## <a name="group-policy-settings-for-scheduling-scans"></a>スキャンのスケジュール設定をグループ ポリシーする
 
-| 場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 | スキャン | スケジュールされたスキャンに使用するスキャンの種類を指定する | クイック スキャン |
 | スキャン | スケジュールされたスキャンを実行する曜日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
@@ -66,7 +66,7 @@ ms.locfileid: "64788042"
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>エンドポイントが使用されていない場合のスキャンのスケジュール設定をグループ ポリシーする
 
-| 場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 | スキャン | コンピューターがオンになっていて使用中でない場合にのみ、スケジュールされたスキャンを開始する | コンピューターがオンになっているが使用中でない場合を除き、スケジュールされたスキャンは実行されません | Enabled |
 
@@ -75,30 +75,30 @@ ms.locfileid: "64788042"
 
 ## <a name="group-policy-settings-for-scheduling-remediation-required-scans"></a>修復に必要なスキャンをスケジュールするためのグループ ポリシー設定
 
-| 場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |---|---|---|---|
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了する曜日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する | 午前 0 時以降の分数を指定します (たとえば、午前 1 時に **60** と入力します)。 | 午前 2 時 |
 
 ## <a name="group-policy-settings-for-scheduling-daily-scans"></a>毎日のスキャンをスケジュールするためのグループ ポリシー設定
 
-| 場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 | スキャン | 1 日あたりのクイック スキャンを実行する間隔を指定する | 次のクイック スキャンの前に経過する時間を指定します。 たとえば、2 時間ごとに実行するには **、「2**」と入力し、1 日に 1 回は **「24**」と入力します。 毎日のクイック スキャンを実行しない場合は **、0** と入力します。 | Never |
 | スキャン | 1 日のクイック スキャンの時間を指定する | 午前 0 時以降の分数を指定します (たとえば、午前 1 時に **60** と入力します)。 | 午前 2 時 |
 
 ## <a name="group-policy-settings-for-scheduling-scans-after-protection-updates"></a>保護の更新後にスキャンをスケジュールするためのグループ ポリシー設定
 
-| 場所 | 設定 | 説明 | 既定の設定 (構成されていない場合)|
+| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合)|
 |:---|:---|:---|:---|
 | 署名の更新 | セキュリティ インテリジェンスの更新後にスキャンを有効にする | 新しい保護更新プログラムがダウンロードされた直後にスキャンが行われます | Enabled |
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)

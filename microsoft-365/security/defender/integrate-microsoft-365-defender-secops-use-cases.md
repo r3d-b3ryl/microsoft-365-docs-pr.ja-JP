@@ -143,6 +143,6 @@ NIST の 4 段階のインシデント対応プロセスには、次の 4 つの
 - コンテインメント、根絶、および回復
 - インシデント後のアクティビティ
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [手順 6.SOC メンテナンス タスクを特定する](integrate-microsoft-365-defender-secops-tasks.md)

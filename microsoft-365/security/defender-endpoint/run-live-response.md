@@ -49,17 +49,17 @@ ms.locfileid: "63323515"
 
 1. この API のレート制限は、1 分あたり 10 回の呼び出しです (追加の要求は HTTP 429 で応答されます)。
 
-2. 25 の同時実行セッション (調整制限を超える要求は"429 - 要求が多すぎます" という応答を受け取ります)。
+2. 25 個の同時実行セッション (調整制限を超える要求は、"429 - 要求が多すぎます" 応答を受け取ります)。
 
-3. コンピューターが使用できない場合、セッションは最大 3 日間キューに入れられます。
+3. マシンを使用できない場合、セッションは最大 3 日間キューに登録されます。
 
 4. RunScript コマンドは 10 分後にタイムアウトします。
 
-5. ライブ応答コマンドをキューに入れ、一度に 1 つしか実行できません。
+5. ライブ応答コマンドはキューに登録できず、一度に 1 つだけ実行できます。
 
-6. この API 呼び出しを実行しようとしているコンピューターが、自動修復レベルが割り当てられていない RBAC デバイス グループ内にある場合は、少なくとも特定のデバイス グループの最小修復レベルを有効にする必要があります。
+6. この API 呼び出しを実行しようとしているマシンが、自動修復レベルが割り当てられていない RBAC デバイス グループ内にある場合は、少なくとも特定のデバイス グループの最小修復レベルを有効にする必要があります。
 
-7. 1 つの API 呼び出しで複数のライブ応答コマンドを実行できます。 ただし、ライブ応答コマンドが失敗した場合、後続のすべてのアクションは実行されません。
+7. 1 つの API 呼び出しで複数のライブ応答コマンドを実行できます。 ただし、ライブ応答コマンドが失敗すると、後続のすべてのアクションは実行されません。
 
 ## <a name="minimum-requirements"></a>最小要件
 
@@ -86,12 +86,12 @@ ms.locfileid: "63323515"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
-|アプリケーション|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
-|委任 (職場または学校のアカウント)|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
+|アプリケーション|Machine.LiveResponse|特定のマシンでライブ応答を実行する|
+|委任 (職場または学校のアカウント)|Machine.LiveResponse|特定のマシンでライブ応答を実行する|
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -101,14 +101,14 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|型|説明|
+|名前|種類|説明|
 |---|---|---|
-|Authorization|String|ベアラー\<token>\. 必須です。|
+|Authorization|String|無記名\<token>\. 必須です。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|型|説明|
+|パラメーター|種類|説明|
 |---|---|---|
 |コメント|文字列|アクションに関連付けるコメント。|
 |コマンド|配列|実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。|
@@ -125,7 +125,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 - 成功した場合、このメソッドは 201 Created を返します。
 
-  アクション エンティティ。 指定した ID を持つコンピューターが見つからない場合 - 404 Not Found。
+  アクション エンティティ。 指定した ID を持つマシンが見つからなかった場合は 、404 が見つかりません。
 
 ## <a name="example"></a>例
 
@@ -175,7 +175,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 HTTP/1.1 200 Ok
 ```
 
-コンテンツタイプ: application/json
+コンテンツ タイプ: application/json
 
 ```JSON
 {
@@ -229,6 +229,6 @@ HTTP/1.1 200 Ok
 
 ## <a name="related-topics"></a>関連項目
 
-- [コンピューター アクション API の取得](get-machineaction-object.md)
+- [マシン アクション API を取得する](get-machineaction-object.md)
 - [ライブ応答結果の取得](get-live-response-result.md)
 - [マシン アクションのキャンセル](cancel-machine-action.md)

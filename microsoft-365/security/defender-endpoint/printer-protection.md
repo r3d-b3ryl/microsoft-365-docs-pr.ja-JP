@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint Device Control Printer Protection
-description: Microsoft Defender for Endpoint Device Control Printer Protection は、企業以外のプリンターまたは承認されていない USB プリンターを介してユーザーが印刷をブロックします。
+title: Microsoft Defender for Endpoint デバイス コントロール プリンター保護
+description: Microsoft Defender for Endpoint Device Control Printer Protection は、企業以外のプリンターまたは承認されていない USB プリンターを使用して印刷できないようにします。
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -28,24 +28,24 @@ ms.locfileid: "64466677"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint Device Control Printer Protection は、企業以外のプリンターまたは承認されていない USB プリンターを介してユーザーが印刷をブロックします。
+Microsoft Defender for Endpoint Device Control Printer Protection は、企業以外のプリンターまたは承認されていない USB プリンターを使用して印刷できないようにします。
 
 ## <a name="licensing"></a>ライセンス
 
-Printer Protection の使用を開始する前に、サブスクリプション[の内容を確認Microsoft 365必要があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 Printer Protection にアクセスして使用するには、次の情報が必要です。
+Printer Protection の使用を開始する前に、[Microsoft 365 サブスクリプションを確認する](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)必要があります。 Printer Protection にアクセスして使用するには、次のものが必要です。
 
-- Microsoft 365 E3/ポリシーの展開に関する情報
-- Microsoft 365 E5レポートの詳細
+- 機能/ポリシーの展開のMicrosoft 365 E3
+- レポートのMicrosoft 365 E5
 
 ## <a name="permission"></a>アクセス許可
 
-Intune でのポリシー展開では、OMA-URI を使用してポリシーを展開するには、デバイス構成プロファイルを作成、編集、更新、または削除するためのアクセス許可がアカウントに必要です。 カスタム ロールを作成するか、次のアクセス許可を持つ組み込みロールを使用できます。
+Intuneでのポリシーの展開では、OMA-URI を使用してポリシーを展開するには、アカウントにデバイス構成プロファイルを作成、編集、更新、または削除するためのアクセス許可が必要です。 カスタム ロールを作成するか、次のアクセス許可を持つ組み込みロールのいずれかを使用できます。
 
-- ポリシーとプロファイル マネージャーの役割。
-- または、デバイス構成プロファイルでレポートの作成/編集/更新/読み取り/削除/表示権限を有効にしたカスタム ロール
+- ポリシーとプロファイル マネージャーのロール。
+- または、デバイス構成プロファイルの作成/編集/更新/読み取り/削除/レポートの表示アクセス許可が有効になっているカスタム ロール
 - またはグローバル管理者
 
-デバイス構成レポートを表示するには、アカウントにレポートの表示権限が必要です。 カスタム ロールを作成するか、次のアクセス許可を持つ組み込みの役割を使用できます。
+デバイス構成レポートを表示するには、アカウントにレポートの表示アクセス許可が必要です。 カスタム ロールを作成するか、次のアクセス許可を持つ組み込みロールを使用できます。
 
 - グローバル セキュリティ管理者
 - セキュリティ管理者
@@ -53,36 +53,36 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
-これらの要件を満Windows 10プリンター Windows展開する予定のデバイスが 11 デバイスにインストールされている必要があります。
+これらの要件を満たすために、Printer Protection の展開を計画しているデバイスをWindows 10またはWindows 11していることを確認します。
 
 1. 次の Windows Update がインストールされています。
-    - 1809 Windows: 更新プログラム [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46) Windowsインストールする
-    - 1909 Windows: 更新プログラム [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1) Windowsインストールする
-    - 2004 Windows以降の場合
+    - Windows 1809 の場合: [WINDOWS UPDATE KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46) をインストールする
+    - Windows 1909 の場合: [WINDOWS UPDATE KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1) をインストールする
+    - Windows 2004 以降の場合
 
-2. グループ ポリシーを使用してポリシーを展開する予定の場合、デバイスは Microsoft Defender for Endpoint に参加している必要があります。ポリシーを展開する予定の場合は、Microsoft エンドポイント マネージャーを使用してデバイスを参加Microsoft Intune。
+2. グループ ポリシー経由でポリシーを展開する予定の場合は、デバイスを参加Microsoft Defender for Endpointオンボードする必要があります。Microsoft エンドポイント マネージャー経由でポリシーを展開する場合は、Microsoft Intuneを使用してデバイスを参加させる必要があります。
 
-## <a name="deploy-device-control-printer-protection-policy"></a>デバイスコントロールプリンター保護ポリシーの展開
+## <a name="deploy-device-control-printer-protection-policy"></a>デバイス制御プリンター保護ポリシーを展開する
 
-グループ ポリシーまたは Intune を使用してポリシーを展開できます。
+グループ ポリシーまたはIntuneを使用してポリシーをデプロイできます。
 
 <br>
 
 ****
 
-|Title|説明|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
+|Title|説明|CSP サポート | GPO のサポート | ユーザー ベースのサポート | マシンベースのサポート |
 |---|---|:---:|:---:|:---:|:---:|
 |**デバイスコントロールの印刷制限を有効にする**|企業以外のプリンターを使用してユーザーの印刷をブロックする|はい|はい|はい|はい|
 |**承認済みの USB 接続印刷デバイスの一覧**\*|特定の USB プリンターを許可する|はい|はい|はい|はい|
 |
 
-\* このポリシーは、[デバイス制御印刷の制限を **有効にする] と共に使用する必要があります**。
+\* このポリシーは、 **デバイスコントロールの印刷制限を有効にする** と共に使用する必要があります。
 
-## <a name="deploy-policy-via-intune"></a>Intune 経由でポリシーを展開する
+## <a name="deploy-policy-via-intune"></a>Intuneを使用してポリシーをデプロイする
 
-Intune では、現在デバイスコントロール プリンター保護は OMA-URI のみをサポートしています。
+Intuneの場合、現在、Device Control Printer Protection では OMA-URI のみがサポートされています。
 
-### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-intune"></a>シナリオ 1: Intune を使用して企業以外のプリンターを使用してユーザーの印刷をブロックする
+### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-intune"></a>シナリオ 1: Intuneを使用して、企業以外のプリンターを使用して印刷できないようにする
 
 - コンピューターにポリシーを適用する:
 
@@ -92,11 +92,11 @@ Intune では、現在デバイスコントロール プリンター保護は OM
 
   `./Vendor/MSFT/Policy/Config/Printers/EnableDeviceControlUser`
 
-CSP は、次の文字列をサポートします `<enabled/>`。
+CSP では、次の文字列が `<enabled/>`サポートされます。
 
 :::image type="content" source="../../media/customeditrow.png" alt-text="[カスタム] ページ" lightbox="../../media/customeditrow.png":::
 
-### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>シナリオ 2: Intune を使用して特定の承認済み USB プリンターを許可する
+### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>シナリオ 2: Intuneを使用して特定の承認済み USB プリンターを許可する
 
 - コンピューターにポリシーを適用する:
 
@@ -106,23 +106,23 @@ CSP は、次の文字列をサポートします `<enabled/>`。
 
   `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
-CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認された USB プリンターを使用して文字列をサポートします。次の例を示します `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`。
+CSP では、"ApprovedUsbPrintDevices" プロパティを使用して承認された USB プリンターを含む文字列がサポートされます。例:`<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`
 
 :::image type="content" source="../../media/editrow.png" alt-text="[行の編集] ウィンドウ" lightbox="../../media/editrow.png":::
 
-## <a name="deploy-policy-via-group-policy"></a>グループ ポリシーを使用してポリシーを展開する
+## <a name="deploy-policy-via-group-policy"></a>グループ ポリシーを使用してポリシーをデプロイする
 
-デバイスが Intune に参加しない場合は、グループ ポリシーを使用してポリシーを展開することもできます。
+デバイスが参加していないIntune場合は、グループ ポリシー経由でポリシーを展開することもできます。
 
-### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-group-policy"></a>シナリオ 1: グループ ポリシーを使用して、企業以外のプリンター経由でユーザーの印刷をブロックする
+### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-group-policy"></a>シナリオ 1: グループ ポリシーを使用して、企業以外のプリンターを使用して印刷できないようにする
 
 - コンピューターにポリシーを適用する:
 
-  コンピューター構成管理 \> 用テンプレート \> プリンター: デバイスコントロールの印刷制限を有効にする
+  コンピューター構成 \> 管理用テンプレート \> プリンター: デバイス制御印刷の制限を有効にする
 
 - ユーザーにポリシーを適用する:
 
-  ユーザー構成 \> 管理用テンプレート \> コントロール パネル \> プリンター: デバイス コントロールの印刷制限を有効にする
+  プリンターコントロール パネル\>ユーザー構成\>管理テンプレート\>: デバイス制御印刷の制限を有効にする
 
 :::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="[デバイスコントロール印刷の制限を有効にする] ウィンドウ" lightbox="../../media/enable-device-ctrl-printing-restrictions.png":::
 
@@ -130,17 +130,17 @@ CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認され�
 
 - コンピューターにポリシーを適用する:
 
-  コンピューター構成 \> 管理用テンプレート \> プリンター: 承認済み USB 接続印刷デバイスの一覧
+  コンピューター構成 \> 管理用テンプレート \> プリンター: 承認済みの USB 接続印刷デバイスの一覧
 
 - ユーザーにポリシーを適用する:
 
-  ユーザー構成 \> 管理用テンプレート \> コントロール パネル \> プリンター: 承認済み USB 接続印刷デバイスの一覧
+  プリンターコントロール パネル\>ユーザー構成\>管理用テンプレート\>: 承認済みの USB 接続印刷デバイスの一覧
 
 :::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="承認済みの USB 接続印刷デバイスの一覧" lightbox="../../media/list-of-approved-connected-print-devices.png":::
 
-## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Microsoft Defender for Endpoint ポータルでデバイスコントロールプリンター保護データを表示する
+## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>ポータルで Device Control Printer Protection データMicrosoft Defender for Endpoint表示する
 
-この<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderは、</a>上記の Device Control Printer Protection ポリシーによってブロックされた印刷を示しています。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>には、上記の Device Control Printer Protection ポリシーによってブロックされた印刷が表示されます。
 
 ```kusto
 DeviceEvents
@@ -154,9 +154,9 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高度な狩猟" lightbox="../../media/device-control-advanced-hunting.png":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高度なハンティング" lightbox="../../media/device-control-advanced-hunting.png":::
 
- PnP イベントを使用して、組織で使用されている USB プリンターを検索できます。
+ PnP イベントを使用して、組織内で使用されている USB プリンターを見つけることができます。
 
 ```kusto
 //find the USB Printer VID/PID
@@ -175,4 +175,4 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="[高度な検索] ページ" lightbox="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png":::
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="[高度なハンティング] ページ" lightbox="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png":::

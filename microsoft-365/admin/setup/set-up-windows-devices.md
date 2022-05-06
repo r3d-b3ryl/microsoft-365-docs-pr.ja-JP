@@ -39,7 +39,7 @@ ms.locfileid: "65096228"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 Business Premium ユーザーのWindows デバイスを設定する
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 Microsoft 365 Business Premium ユーザー用にWindows デバイスを設定する前に、すべてのWindows デバイスがWindows 10 Proバージョン 1703 (Creators Update) またはWindows 11 Proを実行していることを確認します。 
 

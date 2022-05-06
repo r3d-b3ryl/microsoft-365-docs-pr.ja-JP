@@ -1,6 +1,6 @@
 ---
-title: 手順 2.  Id 評価Microsoft 365 Defenderの概要
-description: XDR Microsoft 365 Defenderで ID のMicrosoft 365 Defenderを使用します。 要件、eval の有効化Microsoft 365 Defenderアクティブ化、パイロットまたはテストのセットアップを含む ID の評価手順。
+title: 手順 2.  ID 評価のMicrosoft 365 Defenderの概要
+description: Microsoft 365 Defender XDR ソリューションで id にMicrosoft 365 Defenderを使用します。 要件、eval の有効化またはアクティブ化、パイロットまたはテストの設定など、ID のMicrosoft 365 Defenderを評価するための手順。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -29,26 +29,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2022
 ms.locfileid: "63755417"
 ---
-# <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>手順 2。 Microsoft Defender for Identity の概要を評価する
+# <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>手順 2。 Microsoft Defender for Identityの評価の概要
 
 
 **適用対象:**
 - Microsoft 365 Defender
 
 > [!NOTE]
-> この記事は、この概要Microsoft 365 Defender説明する XDR ソリューションの一部[です](eval-overview.md)。
+> この記事は、この[概要](eval-overview.md)で説明するMicrosoft 365 Defender XDR ソリューションの一部でもあります。
 
- Microsoft Defender for Identity を有効にしパイロットするプロセスを開始する前に、*Microsoft 365 Defender を eXtended Detection and Response (XDR* [Microsoft 365 Defender](eval-overview.md)) ソリューションとして評価する場合は、最初からプロセスを確認してください。[Microsoft 365 Defender評価環境。](eval-create-eval-environment.md)
+ Microsoft Defender for Identityを有効にしてパイロットするプロセスを開始する前に、*Microsoft 365 Defenderを eXtended Detection and Response (XDR) ソリューションとして* 評価する場合は、最初からプロセスを確認していることを確認 [してください。Microsoft 365 Defender](eval-overview.md)[評価環境の作成を](eval-create-eval-environment.md)含むMicrosoft 365 Defender。
 <br>
 
-以下の手順を使用して、Microsoft Defender for Identity を有効にしてパイロットします。
+次の手順に従って、Microsoft Defender for Identityを有効にしてパイロットします。
 
-:::image type="content" source="../../media/defender/m365-defender-identity-eval-steps.png" alt-text="Microsoft Defender for Identity を Microsoft Defender 評価環境に追加する手順" lightbox="../../media/defender/m365-defender-identity-eval-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-steps.png" alt-text="Microsoft Defender 評価環境にMicrosoft Defender for Identityを追加する手順" lightbox="../../media/defender/m365-defender-identity-eval-steps.png":::
 
-次の表に、図の手順を示します。
+この表では、図の手順について説明します。
 
 | シリアル番号|手順  |説明  |
 |---------|---------|---------|
-|1|[アーキテクチャ要件と主な概念を確認する](eval-defender-identity-architecture.md)    | Defender for Identity アーキテクチャを理解し、環境がアーキテクチャの前提条件を満たしていることを確認します。       |
-|2|[評価環境を有効にする](eval-defender-identity-enable-eval.md)     |   評価環境をセットアップするには、手順に従います。      |
-|3|[パイロットのセットアップ](eval-defender-identity-pilot.md)     |   ID 環境のベンチマーク設定について説明し、Defender for Identity のチュートリアルを試してみてください。     |
+|1|[アーキテクチャの要件と主要な概念を確認する](eval-defender-identity-architecture.md)    | Defender for Identity アーキテクチャを理解し、環境がアーキテクチャの前提条件を満たしていることを確認します。       |
+|2|[評価環境を有効にする](eval-defender-identity-enable-eval.md)     |   手順に従って評価環境を設定します。      |
+|3|[パイロットを設定する](eval-defender-identity-pilot.md)     |   ID 環境のベンチマーク設定について説明し、Defender for Identity のチュートリアルを試してください。     |

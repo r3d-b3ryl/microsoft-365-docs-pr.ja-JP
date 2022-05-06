@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint アーキテクチャの要件と主な概念を確認する
-description: Microsoft Defender for Endpoint in Microsoft 365 Defenderの技術図は、Microsoft 365またはパイロット環境を構築する前に、ユーザーの ID を理解するのに役立ちます。
+title: Microsoft Defender for Endpointアーキテクチャの要件と主要な概念を確認する
+description: Microsoft 365 DefenderのMicrosoft Defender for Endpointの技術図は、試用版ラボまたはパイロット環境を構築する前に、Microsoft 365の ID を理解するのに役立ちます。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,59 +28,59 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2022
 ms.locfileid: "63755028"
 ---
-# <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Microsoft Defender for Endpoint アーキテクチャの要件と主な概念を確認する
+# <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Microsoft Defender for Endpointアーキテクチャの要件と主要な概念を確認する
 
-**適用対象: Microsoft 365 Defender**
+**適用対象:** Microsoft 365 Defender
 
-この記事では、Microsoft Defender for Endpoint 環境の評価をセットアップするプロセスについて説明します。
+この記事では、Microsoft Defender for Endpoint環境の評価を設定するプロセスについて説明します。
 
-このプロセスの詳細については、概要の記事を [参照してください](eval-defender-endpoint-overview.md)。
+このプロセスの詳細については、 [概要に](eval-defender-endpoint-overview.md)関する記事を参照してください。
 
-Microsoft Defender for Endpoint を有効にする前に、アーキテクチャを理解し、要件を満たしていることを確認してください。
+Microsoft Defender for Endpointを有効にする前に、アーキテクチャを理解し、要件を満たすことができることを確認してください。
 
 ## <a name="understand-the-architecture"></a>アーキテクチャを理解する
 
-次の図は、Microsoft Defender for Endpoint アーキテクチャと統合を示しています。 
+次の図は、Microsoft Defender for Endpointアーキテクチャと統合を示しています。 
 
-:::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="Defender 評価環境に Microsoft Defender を追加Office手順" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
+:::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="Microsoft Defender for Officeを Defender 評価環境に追加する手順" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
 
 次の表で、図について説明します。
 
 コールアウト | 説明
 :---|:---|
-1 | デバイスは、サポートされている管理ツールのいずれかを介してオンボードされます。 
-2 | ボード上のデバイスは、Microsoft Defender for Endpoint シグナル データを提供して応答します。
-3 | 管理対象デバイスは、デバイスに参加または登録Azure Active Directory。
-4 | ドメインに参加しているWindowsデバイスは、ドメイン を使用してAzure Active DirectoryにAzure Active Directory Connect。
-5 | Microsoft Defender for Endpoint のアラート、調査、および応答は、Microsoft 365 Defender。
+1 | デバイスは、サポートされている管理ツールの 1 つを介してオンボードされます。 
+2 | オンボードデバイスは、Microsoft Defender for Endpoint信号データを提供し、応答します。
+3 | マネージド デバイスは、Azure Active Directoryに参加または登録されます。
+4 | ドメインに参加しているWindows デバイスは、Azure Active Directory Connectを使用してAzure Active Directoryに同期されます。
+5 | Microsoft Defender for Endpointアラート、調査、および応答は、Microsoft 365 Defenderで管理されます。
 
 ## <a name="understand-key-concepts"></a>主要な概念を理解する
 
-次の表に、Microsoft Defender for Endpoint の評価、構成、展開を行う際に重要な重要な概念を示します。 
+次の表は、Microsoft Defender for Endpointを評価、構成、デプロイするときに理解するために重要な重要な概念を示しています。 
 
 概念 | 説明 | 詳細情報
 :---|:---|:---|
-管理ポータル | Microsoft 365 Defender、高度な永続的な脅威アクティビティやデータ侵害の可能性に関するアラートの監視と対応を支援するポータルを提供します。 | [Microsoft Defender for Endpoint ポータルの概要](/microsoft-365/security/defender-endpoint/portal-overview)
-攻撃表面の縮小 | 組織がサイバー脅威や攻撃に対して脆弱な場所を最小限に抑えることによって、攻撃の表面を減らすのに役立ちます。 | [攻撃面の減少の概要](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
-エンドポイントの検出と応答 | エンドポイントの検出および応答機能は、ほぼリアルタイムでアクション可能な高度な攻撃検出を提供します。 | [エンドポイントの検出および応答機能の概要](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
-動作のブロックと格納 | 動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作とプロセス ツリーに基づいて、脅威を特定して停止するのに役立ちます。 | [動作ブロックと封じ込め](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
-自動調査と対応 | 自動調査では、セキュリティ アナリストが使用するプロセスに基づいてさまざまな検査アルゴリズムを使用し、アラートを調べ、侵害を解決するために直ちに対応するように設計されています。 | [自動調査を使用して脅威を調査および修復する](/microsoft-365/security/defender-endpoint/automated-investigations)
-高度なハンティング | 高度な検索はクエリベースの脅威ハンティング ツールで、最大 30 日間の生データを調査して、ネットワーク内のイベントを積極的に検査して脅威インジケーターとエンティティを特定できます。 | [高度な検索の概要](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
-脅威の分析 | 脅威分析は、最も関連性の高い脅威をカバーする Microsoft の専門家のセキュリティ研究者からの一連のレポートです。 | [新しい脅威を追跡して対応する](/microsoft-365/security/defender-endpoint/threat-analytics)
+管理ポータル | Microsoft 365 Defenderポータルを使用して、潜在的な高度な永続的な脅威アクティビティまたはデータ侵害のアラートを監視し、対応を支援します。 | [Microsoft Defender for Endpoint ポータルの概要](/microsoft-365/security/defender-endpoint/portal-overview)
+攻撃面の縮小 | 組織がサイバー脅威や攻撃に対して脆弱な場所を最小限に抑えることで、攻撃面を減らすことができます。 | [攻撃面の減少の概要](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
+エンドポイントの検出と応答 | エンドポイントの検出と応答機能により、ほぼリアルタイムで実行可能な高度な攻撃検出が提供されます。 | [エンドポイントでの検出と対応機能の概要](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+ビヘイビアー ブロックとコンテインメント | 動作ブロック機能とコンテインメント機能は、脅威が実行を開始した場合でも、その動作とプロセス ツリーに基づいて、脅威を特定して停止するのに役立ちます。 | [動作ブロックと封じ込め](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
+自動調査と対応 | 自動調査では、セキュリティ アナリストが使用するプロセスに基づいてさまざまな検査アルゴリズムを使用し、アラートを調べ、侵害を解決するための直ちにアクションを実行するように設計されています。 | [自動調査を使用して脅威を調査および修復する](/microsoft-365/security/defender-endpoint/automated-investigations)
+高度なハンティング | 高度なハンティングは、最大 30 日間の未加工データを探索できるクエリベースの脅威検出ツールです。これにより、ネットワーク内のイベントを事前に検査して脅威のインジケーターとエンティティを見つけることができます。 | [高度なハンティングの概要](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
+脅威の分析 | 脅威分析は、最も関連性の高い脅威をカバーする、Microsoft の専門家のセキュリティ研究者からの一連のレポートです。 | [新しい脅威を追跡して対応する](/microsoft-365/security/defender-endpoint/threat-analytics)
 
 
-Microsoft Defender for Endpoint に含まれる機能の詳細については、「What [is Microsoft Defender for Endpoint」を参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)。
+Microsoft Defender for Endpointに含まれる機能の詳細については、「[Microsoft Defender for Endpointとは」](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)を参照してください。
 
 ## <a name="siem-integration"></a>SIEM 統合
 
-Microsoft Defender for Endpoint と Microsoft Sentinel を統合して、組織全体のセキュリティ イベントをより包括的に分析し、プレイブックを構築して効果的かつ迅速な対応を行います。 
+Microsoft Defender for Endpointを Microsoft Sentinel と統合して、組織全体のセキュリティ イベントをより包括的に分析し、効果的かつ迅速な対応のためにプレイブックを構築できます。 
 
-Microsoft Defender for Endpoint は、他のセキュリティ情報およびイベント管理 (SIEM) ソリューションにも統合できます。 詳細については、「 [Enable SIEM integration in Microsoft Defender for Endpoint」を参照してください](/microsoft-365/security/defender-endpoint/enable-siem-integration)。
+Microsoft Defender for Endpointは、他のセキュリティ情報およびイベント管理 (SIEM) ソリューションにも統合できます。 詳細については、「[Microsoft Defender for Endpointでの SIEM 統合の有効化](/microsoft-365/security/defender-endpoint/enable-siem-integration)」を参照してください。
 
 
 ## <a name="next-steps"></a>次の手順
 [評価を有効にする](eval-defender-endpoint-enable-eval.md)
 
-エンドポイントの Microsoft Defender の [評価の概要に戻る](eval-defender-endpoint-overview.md)
+[Microsoft Defender for Endpointの評価](eval-defender-endpoint-overview.md)の概要に戻る
 
-[評価とパイロット] [の概要に戻Microsoft 365 Defender](eval-overview.md)
+[評価とパイロットのMicrosoft 365 Defender](eval-overview.md)の概要に戻る

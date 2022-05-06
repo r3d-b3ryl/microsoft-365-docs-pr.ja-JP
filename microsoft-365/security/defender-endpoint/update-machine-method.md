@@ -1,7 +1,7 @@
 ---
-title: コンピューター エンティティ API の更新
-description: この API を使用してコンピューター タグを更新する方法について説明します。 タグと devicevalue プロパティを更新できます。
-keywords: apis, graph api, supported apis, get, alert, information, id
+title: マシン エンティティ API を更新する
+description: この API を使用してマシン タグを更新する方法について説明します。 タグと devicevalue プロパティを更新できます。
+keywords: apis, graph api, サポートされている API, get, alert, information, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -39,29 +39,29 @@ ms.locfileid: "61301116"
 
 ## <a name="api-description"></a>API の説明
 
-既存の Machine のプロパティを更新 [します](machine.md)。
+既存のコンピューターのプロパティを更新 [します](machine.md)。
 
-更新可能なプロパティは次 `machineTags` のとおりです `deviceValue` 。
+更新可能なプロパティは次のとおりです`machineTags`。`deviceValue`
 
 ## <a name="limitations"></a>制限事項
 
-1. API で使用できるコンピューターを更新できます。 
-2. コンピューターを更新すると、タグ コレクションにタグが追加されます。 タグが存在する場合は、本文の tags コレクションにタグを含める必要があります。
+1. API で使用可能なマシンを更新できます。 
+2. コンピューターを更新すると、タグ コレクションにタグのみが追加されます。 タグが存在する場合は、本文の tags コレクションに含まれている必要があります。
 3. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Machine.ReadWrite.All|'すべてのコンピューターのコンピューター情報の読み取りおよび書き込み'
-委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+アプリケーション|Machine.ReadWrite.All|'すべてのマシンのマシン情報の読み取りと書き込み'
+委任 (職場または学校のアカウント)|Machine.ReadWrite|'マシン情報の読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
-> - ユーザーには、少なくとも次の役割のアクセス許可が必要です。"アラートの調査" です。 詳細については、「役割の作成 [と管理」を参照してください](user-roles.md)。
-> - ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスできる必要があります。 詳細については、「デバイス グループの作成 [と管理」を参照してください](machine-groups.md)。
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です。"アラート調査"。 詳細については、「 [ロールの作成と管理](user-roles.md)」を参照してください。
+> - ユーザーは、デバイス グループの設定に基づいて、アラートに関連付けられているデバイスにアクセスできる必要があります。 詳細については、「 [デバイス グループの作成と管理](machine-groups.md)」を参照してください。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -71,7 +71,7 @@ PATCH /api/machines/{machineId}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|文字列|application/json. **必須**。
@@ -82,20 +82,20 @@ Content-Type|文字列|application/json. **必須**。
 
 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。
 
-最適なパフォーマンスを得る場合は、変更していない既存の値を含めてはならない。
+パフォーマンスを最大限に高めるには、変更されていない既存の値を含めてはなりません。
 
-プロパティ|型|説明
+プロパティ|種類|説明
 :---|:---|:---
-machineTags|String collection|コンピューター タグ [の](machine.md) セット。
-deviceValue|Null 許容列挙|デバイス [の値](tvm-assign-device-value.md)です。 指定できる値は、'Normal'、'Low'、および 'High' です。
+machineTags|String collection|[マシン](machine.md) タグのセット。
+deviceValue|Null 許容列挙型|[デバイスの値](tvm-assign-device-value.md)。 指定できる値は、"Normal"、"Low"、"High" です。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK[](machine.md)を返し、更新されたプロパティを持つ応答本文の machine エンティティを返します。
+成功した場合、このメソッドは 200 OK を返し、応答本文の [コンピューター](machine.md) エンティティは更新されたプロパティを持ちます。
 
-本文の machine tags コレクションに既存のコンピューター タグが含まれている場合は、すべてのタグが要求本文で指定されたタグに置き換わります。
+本文の machine tags コレクションに既存のマシン タグが含まれていない場合は、すべてのタグを要求本文で指定されたタグに置き換えます。
 
-指定した ID を持つコンピューターが見つからない場合 - 404 Not Found。
+指定した ID を持つマシンが見つからなかった場合は 、404 が見つかりません。
 
 ## <a name="example"></a>例
 

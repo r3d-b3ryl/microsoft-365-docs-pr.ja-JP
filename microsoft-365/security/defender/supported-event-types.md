@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender API でサポートされるストリーミング イベントの種類の一覧
-description: ストリーミング API でサポートされているストリーミング イベントの種類 (テーブル) について説明します。
-keywords: raw data export, Streaming API, API, Event hubs, Azure storage, storage account, Hunting, raw data sharing
+title: Event Streaming API でサポートされているストリーミング イベントの種類をMicrosoft 365 Defenderする
+description: ストリーミング API でサポートされているストリーミング イベントの種類 (テーブル) について説明します
+keywords: 生データのエクスポート, ストリーミング API, API, Event Hubs, Azure Storage, ストレージ アカウント, ハンティング, 生データ共有
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/15/2021
 ms.locfileid: "60364798"
 ---
-# <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>イベント ストリーミング API Microsoft 365 Defenderストリーミング イベントの種類のサポート
+# <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>イベント ストリーミング API でサポートされているMicrosoft 365 Defenderストリーミング イベントの種類
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,12 +33,12 @@ ms.locfileid: "60364798"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 
-イベント ストリーミング API は、より多くのイベントの種類をサポートするために絶えず拡張されています。 一般に使用できるハンティング テーブル、現在パブリック プレビュー中、またはまだサポートされていないハンティング テーブルについて学習します。 
-**New - 電子メール イベントの種類/テーブルが GA に変更**
+Event Streaming API は、より多くのイベントの種類をサポートするために絶えず拡張されています。 現在パブリック プレビュー中、またはまだサポートされていない、一般公開されているハンティング テーブルについて説明します。 
+**新規 - 電子メール イベントの種類/テーブルが GA になりました**
 
 ## <a name="hunting-tables-support-status-in-event-streaming-api"></a>イベント ストリーミング API でのハンティング テーブルのサポート状態
 
-次の表には、ストリーミング API でサポートされているテーブルの一覧だけが含まれていますが、すべての AH スキーマが含まれるとは言えな。 API の完全な一覧については、「 [スキーマ テーブルについて」を参照してください](advanced-hunting-schema-tables.md#learn-the-schema-tables)。
+次の表には、ストリーミング API でサポートされているテーブルの一覧のみが含まれており、すべての AH スキーマを含むわけではありません。 API の完全な一覧については、「 [スキーマ テーブルについて」を](advanced-hunting-schema-tables.md#learn-the-schema-tables)参照してください。
 
 
 | テーブル名 | 状態 |

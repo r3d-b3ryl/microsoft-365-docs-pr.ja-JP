@@ -34,7 +34,7 @@ ms.locfileid: "65095248"
 ---
 # <a name="secure-windows-10-computers"></a>Windows 10 コンピューターをセキュリティで保護する
 
-この記事はMicrosoft 365 Business Premiumに適用されます。
+この記事は Microsoft 365 Business Premium に適用されます。
 
 Microsoft 365 Business Premium[を設定](business-set-up.md)したら、組織内のWindows 10 コンピューターを盗難から保護し、ウイルスやマルウェアなどの悪意のある脅威から保護します。
 

@@ -66,18 +66,18 @@ Defender for Business は、Defender for Endpoint のエンタープライズ �
 |機能/機能|[Defender for Business](mdb-overview.md)<br/>(スタンドアロン)|[Defender for Endpoint プラン 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(エンタープライズのお客様向け) |[Defender for Endpoint プラン 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(エンタープライズのお客様向け) |
 |---|---|---|---|
 |[集中管理](../defender-endpoint/manage-atp-post-migration.md) |はい <sup>[[1](#fn1)]</sup>|はい|はい|
-|[クライアント構成の簡略化](mdb-simplified-configuration.md)|はい|不要|不要|
-|[脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|はい|不要|はい|
+|[クライアント構成の簡略化](mdb-simplified-configuration.md)|はい|いいえ|いいえ|
+|[脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|はい|いいえ|はい|
 |[攻撃面の減少機能](../defender-endpoint/overview-attack-surface-reduction.md)|はい|はい|はい|
 |[次世代の保護](../defender-endpoint/next-generation-protection.md)|はい|はい|はい|
-|[エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md)|はい <sup>[[2](#fn2)]</sup>|不要|はい|
-|[自動調査および対応](../defender-endpoint/automated-investigations.md)|はい <sup>[[3](#fn3)]</sup>|不要|はい|
-|[脅威の捜索](../defender-endpoint/advanced-hunting-overview.md) と 6 か月間のデータ保持 |いいえ <sup>[[4](#fn4)]</sup>|不要|はい|
-|[脅威の分析](../defender-endpoint/threat-analytics.md)|はい <sup>[[5](#fn5)]</sup>|不要|はい|
+|[エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md)|はい <sup>[[2](#fn2)]</sup>|いいえ|はい|
+|[自動調査および対応](../defender-endpoint/automated-investigations.md)|はい <sup>[[3](#fn3)]</sup>|いいえ|はい|
+|[脅威の捜索](../defender-endpoint/advanced-hunting-overview.md) と 6 か月間のデータ保持 |いいえ <sup>[[4](#fn4)]</sup>|いいえ|はい|
+|[脅威の分析](../defender-endpoint/threat-analytics.md)|はい <sup>[[5](#fn5)]</sup>|いいえ|はい|
 |[クロスプラットフォームサポート](../defender-endpoint/minimum-requirements.md) <br/>(Windows、macOS、iOS、Android OS)|はい <sup>[[6](#fn6)]</sup>|はい|はい|
-|[Microsoft 脅威エキスパート](../defender-endpoint/microsoft-threat-experts.md)|不要|不要|はい|
+|[Microsoft 脅威エキスパート](../defender-endpoint/microsoft-threat-experts.md)|いいえ|いいえ|はい|
 |パートナー API|はい|はい|はい|
-|[Microsoft 365 Lighthouse統合](../../lighthouse/m365-lighthouse-overview.md) <br/>(顧客テナント間のセキュリティ インシデントを表示する場合)|はい|不要|不要|
+|[Microsoft 365 Lighthouse統合](../../lighthouse/m365-lighthouse-overview.md) <br/>(顧客テナント間のセキュリティ インシデントを表示する場合)|はい|いいえ|いいえ|
 
 (<a id="fn1">1</a>) Microsoft 365 Defender ポータル () または Microsoft エンドポイント マネージャー 管理センター[https://endpoint.microsoft.com](https://endpoint.microsoft.com) ([https://security.microsoft.com](https://security.microsoft.com)) で管理されるMicrosoft Intuneを使用して、デバイスのオンボードと管理を行います。
 

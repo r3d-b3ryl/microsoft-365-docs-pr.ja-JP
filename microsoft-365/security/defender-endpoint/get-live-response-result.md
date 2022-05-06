@@ -73,13 +73,13 @@ ms.locfileid: "63314407"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
-アプリケーション|Machine.Read.All|''すべてのコンピューター プロファイルを読み取る'
-アプリケーション|"Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-|委任 (職場または学校のアカウント)|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
+アプリケーション|Machine.Read.All|''すべてのマシン プロファイルを読み取る''
+アプリケーション|"Machine.ReadWrite.All|'すべてのマシン情報の読み取りと書き込み'
+|委任 (職場または学校のアカウント)|Machine.LiveResponse|特定のマシンでライブ応答を実行する|
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -90,7 +90,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|型|説明|
+|名前|種類|説明|
 |---|---|---|
 |Authorization|String|ベアラー {token}。必須。|
 
@@ -100,16 +100,16 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、コマンドへのリンクを保持するオブジェクトを含む 200 Ok 応答コードを *value プロパティに返* します。 このリンクは 30 分間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。 有効期限が切れたリンクは、別の呼び出しによって再作成できます。また、ライブ応答を再度実行する必要はありません。
+成功した場合、このメソッドは 200 を返します。コマンドへのリンクを保持するオブジェクトを含む Ok 応答コードは *value* プロパティになります。 このリンクは 30 分間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。 有効期限が切れたリンクは別の呼び出しによって再作成でき、ライブ応答を再度実行する必要はありません。
 
-*Runscript トランスクリプト プロパティ:*
+*Runscript トランスクリプトのプロパティ:*
 
 |プロパティ|説明|
 |---|---|
 |script_name|実行されたスクリプト名|
-|exit_code|実行されたスクリプトの終了コード|
-|script_output|実行されたスクリプトの標準出力|
-|script_errors|実行されたスクリプトの標準エラー出力|
+|exit_code|実行されたスクリプト終了コード|
+|script_output|実行されたスクリプト標準出力|
+|script_errors|実行されたスクリプト標準エラー出力|
 
 ## <a name="example"></a>例
 
@@ -127,7 +127,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b
 
 HTTP/1.1 200 Ok
 
-コンテンツタイプ: application/json
+コンテンツ タイプ: application/json
 
 ```JSON
 {
@@ -150,6 +150,6 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 
 ## <a name="related-topics"></a>関連項目
 
-- [コンピューター アクション API の取得](get-machineaction-object.md)
+- [マシン アクション API を取得する](get-machineaction-object.md)
 - [マシン アクションのキャンセル](cancel-machine-action.md)
 - [ライブ応答を実行する](run-live-response.md) 

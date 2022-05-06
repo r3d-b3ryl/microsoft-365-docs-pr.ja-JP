@@ -21,7 +21,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/19/2022
 ms.locfileid: "64952976"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-intune"></a>Intuneを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-intune"></a>Intune を使用した Microsoft Purview ソリューションへの macOS デバイスのオンボードとオフボード
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -153,7 +153,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 1. [**作成**] を選択する
 
-1. この例の *AccessibilityformacOS* のように、プロファイルの名前を選択します。 [**次へ**]を選択します。
+1. この例の *AccessibilityformacOS* のように、プロファイルの名前を選択します。 **[次へ]** を選択します。
 
 1. 手順 1 でダウンロードした **accessibility.mobileconfig** ファイルを構成プロファイル ファイルとして選択します。
 
@@ -197,7 +197,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 1. [**作成**] を選択する
 
-1. この例の *OnboardingPackage* のように、プロファイルの名前を選択します。 [**次へ**]を選択します。
+1. この例の *OnboardingPackage* のように、プロファイルの名前を選択します。 **[次へ]** を選択します。
 
 1. 構成プロファイル ファイルとして *DeviceComplianceOnboarding.xml* ファイルを選択します。
 

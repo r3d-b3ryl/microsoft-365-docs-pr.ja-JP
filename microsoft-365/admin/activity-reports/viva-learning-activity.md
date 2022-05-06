@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 管理センタービバラーニングアクティビティ レポート
+title: Microsoft 365 管理センター Viva ラーニング アクティビティ レポート
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: '[レポート] ダッシュボードの [Microsoft 365] ラーニングを使用して、ビバ Microsoft 365アクティビティ レポートを取得する方法についてMicrosoft 365 管理センター。'
+description: Microsoft 365 管理センターの [Microsoft 365 レポート] ダッシュボードを使用して、Microsoft 365 Viva ラーニング アクティビティ レポートを取得する方法について説明します。
 ms.openlocfilehash: 382513700f6008aa2b89f32f23f31b19cce63cab
 ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
@@ -25,23 +25,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/09/2022
 ms.locfileid: "63400393"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>Microsoft 365管理センターのレポート - ビバ ラーニング アクティビティ
+# <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>管理センターでレポートをMicrosoft 365する - Viva ラーニング アクティビティ
 
-管理者としてMicrosoft 365レポート ダッシュボードには、組織内のさまざまな製品のアクティビティの概要が表示されます。 これにより、各製品に固有のアクティビティについてより詳しく知ることができます。 [アクティビティ] の [アクティビティ レポート] をMicrosoft 365 管理センター。 
+Microsoft 365管理者として、レポート ダッシュボードには、組織内のさまざまな製品にわたるアクティビティの概要が表示されます。 これにより、各製品に固有のアクティビティについてより詳しく知ることができます。 Microsoft 365 管理センターのアクティビティ レポートを確認してください。 
 
-たとえば、ライセンスを受け取ったビバ ユーザーの操作をラーニング、ユーザーの操作を確認できます。 また、アプリ内で使用されている機能の種類をラーニングします。
+たとえば、ライセンスを持つViva ラーニングユーザーの操作を確認することで、ユーザーのアクティビティを把握できます。 また、ラーニング アプリ内で使用されている機能の種類を理解するのにも役立ちます。
 
-## <a name="how-do-i-get-to-the-to-the-viva-learning-activity-report"></a>アクティビティ レポートにアクセスするにはラーニング方法を示します。  
+## <a name="how-do-i-get-to-the-to-the-viva-learning-activity-report"></a>Viva ラーニング アクティビティ レポートにアクセス操作方法?  
 
 1. 管理センターで、**レポート** > **使用状況** ページの順に移動します。 
-2. ダッシュボードのホームページで、[ビバ] **カードの [** その他の表示] ラーニングします。 
+2. ダッシュボードのホームページで、Viva ラーニング カードの **[その他の表示**] ボタンを選択します。 
 
-## <a name="interpret-the-microsoft-365-apps-usage-report"></a>使用状況レポートMicrosoft 365 Apps解釈する
+## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Microsoft 365 Apps使用状況レポートを解釈する
 
-アクティブ ユーザーとユーザー アクティビティ のグラフを見ラーニング、ユーザーのビバ アクティビティのビュー **を取得** できます。
+**アクティブ** なユーザーとユーザー アクティビティのグラフを見ると、ユーザーのViva ラーニング **アクティビティ** を確認できます。
 
-![Microsoft 365 Appsレポート。](../../media/viva-learning-charts.png)
+![使用状況レポートをMicrosoft 365 Appsします。](../../media/viva-learning-charts.png)
 
-- アクティブ ユーザー – 時間の間にアクティブなユーザーの数を表示します。 たとえば、過去 30 日間の特定の日に組織内のアクティブ ユーザーの数を検索するために使用できます。
-- ユーザー アクティビティ – すべてのプラットフォームでのユーザー アクティビティの数を表示します。 たとえば、このツールを使用して、過去 30 日間にコースをブックマークした組織内のユーザー数を確認できます。
+- アクティブなユーザー – 時間の経過と共にアクティブなユーザーの数を表示します。 たとえば、それを使用して、過去 30 日間の特定の日に組織内のアクティブなユーザーの数を検索できます。
+- ユーザー アクティビティ – すべてのプラットフォームに対するユーザー アクティビティの数を示します。 たとえば、それを使用して、組織内の過去 30 日間にコースをブックマークしたユーザーの数を検索できます。
  

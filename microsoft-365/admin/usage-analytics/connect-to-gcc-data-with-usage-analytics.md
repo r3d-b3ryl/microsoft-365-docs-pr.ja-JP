@@ -1,5 +1,5 @@
 ---
-title: Connect分析でMicrosoft 365 Government Community Cloud (GCC) データを取得する方法
+title: Usage Analytics を使用してデータをMicrosoft 365 Government Community Cloud (GCC) するConnect
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
-description: Microsoft 365 Government Community Cloud (GCC) テナントの Microsoft 365 Usage Analytics テンプレート アプリを使用してデータに接続するPower BI。
+description: Power BIの Microsoft 365 Usage Analytics テンプレート アプリを使用して、Microsoft 365 Government Community Cloud (GCC) テナントのデータに接続する方法について説明します。
 ms.openlocfilehash: 3930ffe82c998797aade84e92145adac5fa2ea98
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
@@ -29,62 +29,62 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60179807"
 ---
-# <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Connect分析でMicrosoft 365 Government Community Cloud (GCC) データを取得する方法
+# <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Usage Analytics を使用してデータをMicrosoft 365 Government Community Cloud (GCC) するConnect
 
-次の手順を使用して、Microsoft 365 Microsoft 365 Government Community Cloud (GCC) テナントの利用状況分析レポートを使用してデータに接続します。 
+次の手順に従って、Microsoft 365 Government Community Cloud (GCC) テナントのMicrosoft 365利用状況分析レポートを使用してデータに接続します。 
 
 > [!NOTE]
-> これらの手順は、特にテナントMicrosoft 365 GCCです。 
+> これらの手順は、Microsoft 365 GCC テナント専用です。 
 
 ## <a name="before-you-begin"></a>はじめに
 
-最初に Usage Analytics Microsoft 365構成するには、次の手順を実行します。 
+Microsoft 365 Usage Analytics を最初に構成するには: 
 
-- データ収集を有効にするには、Microsoft 365管理者である必要があります。 
-- テンプレート ファイルを[使用Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)アプリケーションが必要です。 
-- レポートを発行[Power BI Pro プレミアム表示するには、Power BI Pro](https://go.microsoft.com/fwlink/p/?linkid=845347)ライセンスまたはライセンス容量が必要です。 
+- データ収集を有効にするには、Microsoft 365 グローバル管理者である必要があります。 
+- テンプレート ファイルを使用するには[、Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) アプリケーションが必要です。 
+- レポートを発行して表示するには[、Power BI Pro ライセンス](https://go.microsoft.com/fwlink/p/?linkid=845347)またはプレミアム容量が必要です。 
 
-## <a name="step-1-make-you-organizations-data-available-for-the-microsoft-365-usage-analytics-report"></a>手順 1: 組織のデータを利用状況分析レポートでMicrosoft 365する
+## <a name="step-1-make-you-organizations-data-available-for-the-microsoft-365-usage-analytics-report"></a>手順 1: 組織のデータを Microsoft 365 Usage Analytics レポートで使用できるようにする
 
-1. [レポート] Microsoft 365 管理センターナビゲーション メニューを展開し、[レポート] を **選択し**、[使用状況] を **選択します**。 
-2. [利用状況 **レポート] ページ** の [使用状況分析Microsoft 365] セクションで、[はじめに]**を選択します**。 
-3. [**使用状況分析Power BIを有効** にする] で、[組織の利用状況データを Microsoft 利用状況分析で使用Power BI] を **選択し、[** 保存] を **選択します**。
+1. Microsoft 365 管理センターでナビゲーション メニューを展開し、[**レポート**] を選択し、[**利用状況**] を選択します。 
+2. [**利用状況レポート**] ページの [Microsoft 365 Usage Analytics] セクションで、**はじめに** を選択します。 
+3. [**利用状況分析のPower BIを有効にする**] の [**Microsoft 利用状況分析で組織の使用状況データをPower BIに使用できるようにする**] を選択し、[**保存**] を選択します。
 
-    ![テナント データを使用可能にします。](../../media/usage-analytics/make-data-available.png) 
+    ![テナント データを使用できるようにします。](../../media/usage-analytics/make-data-available.png) 
 
 
 
-    これにより、組織のデータをこのレポートでアクセス可能にするプロセスが開始され、使用状況分析の準備が整っているというメッセージが表示Microsoft 365 **されます。** このプロセスの完了には 24 時間かかる場合があります。 
+    これにより、組織のデータにこのレポートにアクセスできるようにするプロセスが開始され、**使用状況分析をMicrosoft 365する準備** が整っていることを示すメッセージが表示されます。 このプロセスの完了には 24 時間かかる場合があることに注意してください。 
 
-4. 組織のデータの準備ができたら、ページを更新すると、データが利用可能であることを示すメッセージが表示され、テナント ID 番号 **も提供** されます。 テナント データに接続しようとすると、後の手順でテナント ID を使用する必要があります。 
+4. 組織のデータの準備ができたら、ページを更新すると、データが使用可能になったことを示すメッセージが表示され、 **テナント ID** 番号も提供されます。 テナント データへの接続を試みる場合は、後の手順でテナント ID を使用する必要があります。 
  
     ![テナント ID。](../../media/usage-analytics/tenant-id-gcc.png) 
  
     > [!IMPORTANT]
-    > データが使用可能な場合は、[移動] を選択 **Power BIし、** この場合は[マーケット プレース] Power BI表示されます。  テナントに必要なこのレポートGCCアプリは、Power BI Marketplace では使用できません。  
+    > データを利用できる場合は、[**Power BIに移動**] を選択しないと、Power BI Marketplace に移動します。  GCC テナントに必要なこのレポートのテンプレート アプリは、Power BI Marketplace では使用できません。  
 
 
-## <a name="step-2-download-the-power-bi-template-connect-to-your-data-and-publish-the-report"></a>手順 2: Power BIテンプレートをダウンロードし、データに接続し、レポートを発行する
+## <a name="step-2-download-the-power-bi-template-connect-to-your-data-and-publish-the-report"></a>手順 2: Power BI テンプレートをダウンロードし、データに接続し、レポートを発行する
 
-Microsoft 365 GCCユーザーは、利用状況分析レポート テンプレート Microsoft 365をダウンロードして使用して、データに接続できます。 テンプレート ファイルを開Power BI Desktop使用するには、次の情報が必要です。 
+Microsoft 365 GCCユーザーは、Microsoft 365 Usage Analytics レポート テンプレート ファイルをダウンロードして使用してデータに接続できます。 テンプレート ファイルを開いて使用するには、Power BI Desktopが必要です。 
 
  > [!NOTE]
- > 現在、Microsoft 365 Usage Analytics レポートのテンプレート アプリは、GCC Marketplace のPower BIできません。  
+ > 現在、Microsoft 365 Usage Analytics レポートのテンプレート アプリは、Power BI Marketplace のGCC テナントでは使用できません。  
 
-1. テンプレートをダウンロード[したらPower BIを](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)使用して開Power BI Desktop。 
-2. TenantID の入力を **求めるメッセージが表示** されたら、手順 1 でこのレポートの組織のデータを準備するときに受け取ったテナント ID を入力します。 次に、[読み込 **み] を選択します**。 データの読み込みには数分かかります。 
+1. [Power BI テンプレート](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)をダウンロードしたら、Power BI Desktopを使用して開きます。 
+2. **TenantID** の入力を求められたら、手順 1. でこのレポートの組織のデータを準備したときに受け取ったテナント ID を入力します。 次に、[ **読み込み**] を選択します。 データの読み込みには数分かかります。 
 
     ![テナント ID を入力します。](../../media/usage-analytics/add-tenant-id.png) 
 
 
 
-3. 読み込みが完了すると、レポートが表示され、データのエグゼクティブ サマリーが表示されます。 
+3. 読み込みが完了すると、レポートが表示され、データの概要が表示されます。 
 
-    ![エグゼクティブの概要。](../../media/usage-analytics/exec-summary.png) 
+    ![エグゼクティブサマリー。](../../media/usage-analytics/exec-summary.png) 
  
 
 4. 変更をレポートに保存します。 
-5. [**レポート]** メニューの [Power BI Desktop] を選択して、レポートを表示できる Power BIオンライン サービスに発行します。 これには、ライセンスまたはPower BI Pro容量Power BI Premiumがあります。 発行プロセスの一[環として](/power-bi/create-reports/desktop-upload-desktop-files#to-publish-a-power-bi-desktop-dataset-and-reports)、オンライン サービスで利用可能なワークスペースに発行するPower BI必要があります。
+5. Power BI Desktop メニューで **[発行**] を選択して、レポートを表示できる Power BI Online サービスに発行します。 これには、Power BI Pro ライセンスまたはPower BI Premium容量のいずれかが必要です。 [発行プロセス](/power-bi/create-reports/desktop-upload-desktop-files#to-publish-a-power-bi-desktop-dataset-and-reports)の一環として、Power BI Online Service で使用可能なワークスペースに発行するコピー先を選択する必要があります。
 
 ## <a name="related-content"></a>関連コンテンツ
 

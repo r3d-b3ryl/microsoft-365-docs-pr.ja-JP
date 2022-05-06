@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint Client Analyzer ツールに関するフィードバックを提供する
+title: Microsoft Defender for Endpoint クライアント アナライザー ツールに関するフィードバックを提供する
 description: Microsoft Defender for Endpoint クライアント アナライザー ツールに関するフィードバックを提供する
-keywords: センサー、センサーの正常性、構成ミス、非アクティブ、センサー データなし、センサー データ、通信障害、通信障害
+keywords: センサー, センサーの正常性, 不適切な構成, 非アクティブ, センサー データなし, センサー データ, 通信障害, 通信
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -30,7 +30,7 @@ ms.locfileid: "64466281"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-Microsoft Defender for Endpoint クライアント アナライザーの改善に役立つフィードバックや提案がある場合は、次のいずれかのオプションを使用してフィードバックを送信します。
+Microsoft Defender for Endpointクライアント アナライザーの改善に役立つフィードバックや提案がある場合は、次のいずれかのオプションを使用してフィードバックを送信します。
 
 1. Microsoft 365 Defender ポータル (security.microsoft.com):
 
@@ -38,4 +38,4 @@ Microsoft Defender for Endpoint クライアント アナライザーの改善�
 
 2. Microsoft 365 Defender ポータル (security.microsoft.com):
 
-:::image type="content" source="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png" alt-text="[フィードバックの送信] ボタン" lightbox="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png":::
+:::image type="content" source="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png" alt-text="[フィードバックの提供] ボタン" lightbox="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png":::

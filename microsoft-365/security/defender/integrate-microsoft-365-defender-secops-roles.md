@@ -38,7 +38,7 @@ ms.locfileid: "64664064"
 
 組織は、運用ロールを定義する前に、初期タスクとして、Microsoft 365 Defender ライセンス、構成、および管理の所有権と説明責任を確立する必要があります。 通常、ライセンスの所有権、サブスクリプション コスト、Microsoft 365および Enterprise Security + Mobility (EMS) サービス (Microsoft 365 Defenderを含む) の管理は、Security Operations Center (SOC) チームの外部にあります。 SOC チームは、これらの個人と協力して、Microsoft 365 Defenderを適切に監視する必要があります。 
 
-多くの最新 SOC では、スキルセットと機能に基づいてチーム メンバーをカテゴリに割り当てます。 例:
+多くの最新 SOC では、スキルセットと機能に基づいてチーム メンバーをカテゴリに割り当てます。 次に、例を示します。
 
 - 脅威と分析機能のライフサイクル管理に関連するタスクに割り当てられた脅威インテリジェンス チーム。
 - ログ、アラート、イベント、監視機能の管理を担当する SOC アナリストで構成される監視チーム。
@@ -58,6 +58,6 @@ MICROSOFT 365 DEFENDERに対する SOC チームの役割と責任は、これ�
 ||||
 
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [手順 5.ユース ケースの開発とテスト](integrate-microsoft-365-defender-secops-use-cases.md)

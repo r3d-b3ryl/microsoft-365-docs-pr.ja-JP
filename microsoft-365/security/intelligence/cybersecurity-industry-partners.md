@@ -1,8 +1,8 @@
 ---
-title: 業界のコラボレーション プログラム
+title: 業界コラボレーション プログラム
 ms.reviewer: ''
-description: Microsoft 業界全体のマルウェア対策 (VIA)、Microsoft Virus Initiative (MVI)、および協調マルウェア根絶 (CME) に関するさまざまな共同作業プログラムがあります。
-keywords: セキュリティ、マルウェア、ウイルス対策業界、マルウェア対策業界、コラボレーション プログラム、アライアンス、ウイルス情報アライアンス、Microsoft ウイルス イニシアチブ、協調マルウェア根絶、WDSI、MMPC、Microsoft マルウェア プロテクション センター、パートナーシップ
+description: Microsoft 業界全体のマルウェア対策に関して、さまざまな共同作業プログラムがあります - ウイルス情報アライアンス (VIA)、Microsoft Virus Initiative (MVI)、および調整されたマルウェアの根絶 (CME)
+keywords: セキュリティ, マルウェア, ウイルス対策業界, マルウェア対策業界, コラボレーション プログラム, 提携, ウイルス情報アライアンス, Microsoft Virus Initiative, Coordinated Malware Awarenession, WDSI, MMPC, Microsoft マルウェア プロテクション センター, パートナーシップ
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -21,30 +21,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/20/2022
 ms.locfileid: "63683559"
 ---
-# <a name="industry-collaboration-programs"></a>業界のコラボレーション プログラム
+# <a name="industry-collaboration-programs"></a>業界コラボレーション プログラム
 
-Microsoft が提供するさまざまな目的と要件を備え、業界全体のさまざまなコラボレーション プログラムがあります。 適切なプログラムに登録すると、顧客を保護したり、現在の脅威の状況に関するより多くの洞察を得ることができます。また、マルウェア エコシステムを混乱させるのに役立ちます。
+Microsoft によって提供される、さまざまな目的と要件を持つさまざまな業界全体のコラボレーション プログラムがあります。 適切なプログラムに登録すると、顧客を保護したり、現在の脅威の状況に関する洞察を深めたり、マルウェア エコシステムを混乱させたりするのに役立ちます。
 
 ## <a name="virus-information-alliance-via"></a>ウイルス情報アライアンス (VIA)
 
-VIA プログラムは、Microsoft のお客様の保護の向上に役立つ情報へのアクセスをメンバーに提供します。 マルウェアの利用統計情報とサンプルをセキュリティ チームに提供して、保護のギャップを特定したり、新しい脅威範囲に優先順位を付ける、または脅威に対する対応を改善したりすることができます。
+VIA プログラムは、Microsoft のお客様の保護を向上させるために役立つ情報へのアクセスをメンバーに提供します。 マルウェアテレメトリとサンプルは、セキュリティ チームに提供して、保護のギャップの特定、新しい脅威カバレッジの優先順位付け、脅威への対応の改善に役立ちます。
 
-**他のプログラムへのメンバーシップを申請する場合は、VIA のメンバーである必要があります。**
+**他のプログラムにメンバーシップを申請する場合は、VIA のメンバーである必要があります。**
 
-詳細については、 [VIA プログラム ページ](virus-information-alliance-criteria.md) を参照してください。
+詳細については、[ [VIA プログラム] ページ](virus-information-alliance-criteria.md) に移動します。
 
-## <a name="microsoft-virus-initiative-mvi"></a>Microsoft ウイルス イニシアチブ (MVI)
+## <a name="microsoft-virus-initiative-mvi"></a>Microsoft Virus Initiative (MVI)
 
-MVI は、独自の設計のリアルタイム保護 (RTP) マルウェア対策製品、またはサードパーティのウイルス対策 SDK を使用して開発された製品を構築および所有している組織に対して開きます。
+MVI は、独自の設計のリアルタイム保護 (RTP) マルウェア対策製品を構築して所有している組織、またはサードパーティのウイルス対策 SDK を使用して開発された組織に開放されています。
 
-メンバーは、Microsoft Defender セキュリティ センター、IOAV、AMSI、およびクラウド ファイルの Microsoft クライアント API にアクセスし、正常性データや他のテレメトリを使用して、お客様が保護された状態を守るために役立ちます。 マルウェア対策製品は、パフォーマンス テストのために定期的に Microsoft に送信されます。
+メンバーは、Microsoft Defender セキュリティ センター、IOAV、AMSI、Cloud Files の Microsoft クライアント API にアクセスし、正常性データやその他のテレメトリにアクセスして、顧客の保護を維持できるようにします。 マルウェア対策製品は、パフォーマンス テストのために Microsoft に定期的に送信されます。
 
-詳細については [、「MVI プログラム」ページ](virus-initiative-criteria.md) を参照してください。
+詳細については、 [MVI プログラム ページ](virus-initiative-criteria.md) に移動します。
 
-## <a name="coordinated-malware-eradication-cme"></a>協調マルウェアの根絶 (CME)
+## <a name="coordinated-malware-eradication-cme"></a>調整されたマルウェアの根絶 (CME)
 
-CME は、サイバーセキュリティやマルウェア対策に関わっている組織、またはサイバー犯罪との戦いに関心を持つ組織に公開されています。
+CME は、サイバーセキュリティとマルウェア対策に関与しているか、サイバー犯罪との戦いに関心を持つ組織に開放されています。
 
-このプログラムは、サイバーセキュリティや他の業界の組織を集め、ツール、情報、およびアクションをプールし、マルウェアに対する協調キャンペーンを実行します。 最終的な目標は、効率的で長期的な結果を作成し、コミュニティ、顧客、および企業の保護を強化します。
+このプログラムは、サイバーセキュリティやその他の業界の組織を集め、マルウェアに対する調整されたキャンペーンを推進するためのツール、情報、およびアクションをプールすることを目的としています。 最終的な目標は、コミュニティ、顧客、企業の保護を強化するために、効率的で長期的な結果を作成することです。
 
-詳細については [、CME プログラム ページ](coordinated-malware-eradication.md) に移動します。
+詳細については、 [CME プログラム ページ](coordinated-malware-eradication.md) に移動します。

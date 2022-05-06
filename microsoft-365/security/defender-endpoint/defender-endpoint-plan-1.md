@@ -169,7 +169,7 @@ Defender for Endpoint Plan 1 には、Microsoft 365 Defender ポータルが含�
 
 詳細については、「 [ロールベースのアクセス制御を使用したポータル アクセスの管理](rbac.md)」を参照してください。
 
-### <a name="reporting"></a>Reporting
+### <a name="reporting"></a>レポート
 
 Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) では、検出された脅威に関する情報と、それらの脅威に対処するためのアクションに簡単にアクセスできます。 
 

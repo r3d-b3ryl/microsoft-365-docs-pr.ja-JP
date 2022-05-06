@@ -1,7 +1,7 @@
 ---
-title: インシデント API の取得
-description: '[インシデントの取得] API を使用して、インシデントを 1 つのインシデントにMicrosoft 365 Defender。'
-keywords: apis, graph api, supported apis, get, file, hash
+title: インシデント API を取得する
+description: インシデントの取得 API を使用して、Microsoft 365 Defenderで 1 つのインシデントを取得する方法について説明します。
+keywords: apis, graph api, サポートされている API, get, file, hash
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60159056"
 ---
-# <a name="get-incident-information-api"></a>インシデント情報 API の取得
+# <a name="get-incident-information-api"></a>インシデント情報 API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "60159056"
 
 ## <a name="api-description"></a>API の説明
 
-ID によって特定のインシデントを取得します。
+ID で特定のインシデントを取得します。
 
 ## <a name="limitations"></a>制限事項
 
@@ -59,8 +59,8 @@ ID によって特定のインシデントを取得します。
 >
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示'
-> - 応答には、ユーザーが公開されているインシデントだけが含まれます。
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です。"データの表示"
+> - 応答には、ユーザーが公開されているインシデントのみが含まれます。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -70,7 +70,7 @@ GET .../api/incidents/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 ---|---|---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -81,7 +81,7 @@ Empty
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは 200 OK を返し、応答本文のインシデント エンティティを返します。
-指定した ID を持つインシデントが見つからなかった場合 - 404 Not Found。
+指定した ID を持つインシデントが見つからなかった場合は 、404 が見つかりません。
 
 ## <a name="example"></a>例
 

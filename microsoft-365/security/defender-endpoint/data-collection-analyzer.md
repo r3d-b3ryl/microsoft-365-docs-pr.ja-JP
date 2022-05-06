@@ -1,7 +1,7 @@
 ---
 title: Windows で高度なトラブルシューティングを行うためのデータ収集
-description: 複雑なトラブルシューティング シナリオでクライアント アナライザーを使用してデータを収集する方法について説明します。
-keywords: analzyer,データ収集,mdeclientanalyzerのトラブルシューティング,高度なトラブルシューティング
+description: クライアント アナライザーを使用して、複雑なトラブルシューティング シナリオのデータを収集する方法について説明します
+keywords: analzyer, データの収集, mdeclientanalyzer のトラブルシューティング, 高度なトラブルシューティング
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -29,56 +29,56 @@ ms.locfileid: "64469891"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft サポート 担当者と共同作業する場合は、クライアント アナライザーを使用して、より複雑なシナリオのトラブルシューティングのためにデータを収集する必要があります。 アナライザー スクリプトは、その目的のために他のパラメーターをサポートし、調査が必要な観察された現象に基づいて特定のログ セットを収集できます。
+Microsoft サポート担当者と協力する場合は、クライアント アナライザーを使用して、より複雑なシナリオのトラブルシューティングのためにデータを収集するように求められる場合があります。 アナライザー スクリプトは、その目的で他のパラメーターをサポートし、調査する必要がある観察された現象に基づいて特定のログ セットを収集できます。
 
-'**MDEClientAnalyzer.cmd /?' を実行** します。 をクリックして、使用可能なパラメーターとその説明の一覧を表示します。
+'**MDEClientAnalyzer.cmd /?**' を実行する 使用可能なパラメーターとその説明の一覧を表示するには:
 
 :::image type="content" source="images/d89a1c04cf8441e4df72005879871bd0.png" alt-text="MDEClientAnalyzer.cmd のパラメーター" lightbox="images/d89a1c04cf8441e4df72005879871bd0.png":::
 
 > [!NOTE]
-> 高度なトラブルシューティング パラメーターを使用すると、アナライザーは関連するサポート ログ[MpCmdRun.exe収集Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus)呼び出します。
+> 高度なトラブルシューティング パラメーターを使用すると、アナライザーは[MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus)を呼び出して、関連するサポート ログMicrosoft Defender ウイルス対策収集します。
 
-**-h** - [標準ログ セット](/windows-hardware/test/wpt/wpr-command-line-options)Windows詳細な一般的なパフォーマンス トレースを収集するために、パフォーマンス レコーダーを呼び出します。
+**-h** - [Windows パフォーマンス レコーダー](/windows-hardware/test/wpt/wpr-command-line-options)を呼び出して、標準ログ セットに加えて詳細な一般的なパフォーマンス トレースを収集します。
 
-**-l** - 組み込みのパフォーマンス モニター Windows [呼](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters)び出して、軽量の perfmon トレースを収集します。 これは、時間の間に発生するパフォーマンス低下の問題を診断する場合に役立ちますが、オンデマンドで再現するのは難しい場合があります。
+**-l** - 組み込みの [Windows パフォーマンス モニター](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters)を呼び出して、軽量の perfmon トレースを収集します。 これは、時間の経過と共に発生するパフォーマンス低下の問題を診断するが、オンデマンドで再現するのが難しい場合に役立つ場合があります。
 
-**-c** - リアルタイム ファイル [システム、](/sysinternals/downloads/procmon) レジストリ、およびプロセス/スレッド アクティビティの高度な監視を行うプロセス モニターへの呼び出し。 これは、さまざまなアプリケーション互換性シナリオのトラブルシューティングに特に役立ちます。
+**-c** - [プロセス モニター](/sysinternals/downloads/procmon) を呼び出して、リアルタイム のファイル システム、レジストリ、およびプロセス/スレッド アクティビティを高度に監視します。 これは、さまざまなアプリケーション互換性シナリオのトラブルシューティングに特に役立ちます。
 
-**-i** - 組み込みの [netsh.exeコマンドを](/windows/win32/winsock/netsh-exe) 呼び出して、さまざまなネットワーク関連の問題のトラブルシューティングに役立つネットワークおよび Windows ファイアウォール トレースを開始します。
+**-i** - 組み込みの [netsh.exe](/windows/win32/winsock/netsh-exe) コマンドを呼び出して、ネットワーク関連のさまざまな問題のトラブルシューティングに役立つネットワークと Windows ファイアウォール トレースを開始します。
 
-**-b** - '-c' と同じですが、プロセス モニター トレースは次の起動時に開始され、-b が再び使用された場合にのみ停止されます。
+**-b** - '-c' と同じですが、プロセス モニター トレースは次回の起動時に開始され、-b が再度使用された場合にのみ停止します。
 
-**-a** - ウイルス対策プロセス [(](/windows-hardware/test/wpt/wpr-command-line-options)Windows) に関連する CPU の高い問題の分析に固有の詳細なパフォーマンス トレースを収集するために、パフォーマンス レコーダーを呼び出MsMpEng.exe。
+**-a** - [Windows パフォーマンス レコーダー](/windows-hardware/test/wpt/wpr-command-line-options)を呼び出して、ウイルス対策プロセス (MsMpEng.exe) に関連する CPU の高い問題の分析に固有の詳細なパフォーマンス トレースを収集します。
 
-**-v** - ほとんどの詳細な [ -trace フラグMpCmdRun.exeコマンド ライン引数に](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) 対してウイルス対策を使用します。
+**-v** - ウイルス対策 [MpCmdRun.exeコマンド ライン引数](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) を使用し、最も詳細な -trace フラグを使用します。
 
-**-t** - エンドポイント DLP に関連するすべてのクライアント側コンポーネントの詳細なトレースを開始します。 これは、ファイルに対して [DLP](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) アクションが想定通り実行されないシナリオで役立ちます。
+**-t** - エンドポイント DLP に関連するすべてのクライアント側コンポーネントの詳細トレースを開始します。 これは、ファイルに対して [DLP アクション](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) が想定どおりに実行されないシナリオに便利です。
 
-**-q** - エンドポイント DLP DLPDiagnose.ps1構成と要件を検証するアナライザー 'Tools' ディレクトリからスクリプトを呼び出します。
+**-q** - Endpoint DLP の基本的な構成と要件を検証するアナライザー 'Tools' ディレクトリから、DLPDiagnose.ps1 スクリプトを呼び出します。
 
-**-d** - **MsSenseS** ファイルのメモリ ダンプ (.exeまたは古い OS のセンサー プロセス) とWindows Server 2016プロセスを収集します。
+**-d** - **MsSenseS**.exe (Windows Server 2016 以前の OS 上のセンサー プロセス) および関連するプロセスのメモリ ダンプを収集します。
 
 - \* このフラグは、上記のフラグと組み合わせて使用できます。
-- \*\*PPL で保護されたプロセス[](/windows-hardware/drivers/install/early-launch-antimalware)のメモリ ダンプ (MsSense.exe や MsMpEng.exe など) のキャプチャは、現時点ではアナライザーではサポートされていません。
+- \*\* MsSense.exeやMsMpEng.exeなどの [PPL で保護されたプロセス](/windows-hardware/drivers/install/early-launch-antimalware) のメモリ ダンプのキャプチャは、現時点ではアナライザーではサポートされていません。
 
-**-z** - [CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard) を介してマシンの完全なメモリ ダンプ コレクション用に準備するために、コンピューター上のレジストリ キーを構成します。 これは、コンピューターのフリーズの問題を分析する場合に役立ちます。
+**-z** - [CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard) を使用してマシン上のレジストリ キーを構成し、完全なマシン メモリ ダンプ コレクションを準備します。 これは、コンピューターの凍結の問題の分析に役立ちます。
 
-\* 右端の Ctrl キーを押したまま、SCROLL LOCK キーを 2 回押します。
+\* 右端の Ctrl キーを押しながら、SCROLL LOCK キーを 2 回押します。
 
-**-k** - [NotMyFault ツールを使用](/sysinternals/downloads/notmyfault) して、システムを強制的にクラッシュし、マシン メモリ ダンプを生成します。 これは、さまざまな OS の安定性の問題を分析する場合に役立ちます。
+**-k** - [NotMyFault](/sysinternals/downloads/notmyfault) ツールを使用して、システムを強制的にクラッシュさせ、マシン メモリ ダンプを生成します。 これは、さまざまな OS の安定性の問題の分析に役立ちます。
 
-アナライザーと上記のすべてのシナリオ フラグは、"RemoteMDEClientAnalyzer.cmd' を実行することでリモートから開始できます。これはアナライザー ツールセットにもバンドルされています。
+アナライザーと上記のすべてのシナリオ フラグは、アナライザー ツールセットにバンドルされている 'RemoteMDEClientAnalyzer.cmd' を実行してリモートで開始できます。
 
 :::image type="content" source="images/57cab9d82d08f672a92bf9e748ac9572.png" alt-text="RemoteMDEClientAnalyzer.cmd のパラメーター" lightbox="images/57cab9d82d08f672a92bf9e748ac9572.png":::
 
 > [!NOTE]
 >
-> - RemoteMDEClientAnalyzer.cmd を使用する場合は、psexec を呼び出して、構成されたファイル共有からツールをダウンロードし、そのツールをローカルで実行PsExec.exe。
-    CMD スクリプトは '-r' フラグを使用して、SYSTEM コンテキスト内でリモートで実行するように指定します。そのため、ユーザーに対するプロンプトは表示されません。
-> - この同じフラグを MDEClientAnalyzer.cmd と一緒に使用すると、データ収集の分数の指定を要求するユーザーに対するプロンプトを回避できます。 次に例を示します。
+> - RemoteMDEClientAnalyzer.cmd を使用する場合、psexec を呼び出して構成されたファイル共有からツールをダウンロードし、PsExec.exe経由でローカルで実行します。
+    CMD スクリプトでは、'-r' フラグを使用して、SYSTEM コンテキスト内でリモートで実行されているため、ユーザーに対するプロンプトは表示されません。
+> - 同じフラグを MDEClientAnalyzer.cmd と共に使用すると、データ収集の分数の指定を要求するユーザーへのプロンプトを回避できます。 次に、例を示します。
 >
 >    **MDEClientAnalyzer.cmd -r -i -m 5**
 >
->   - **-r** - ツールがリモート (または非対話型コンテキスト) から実行されているかどうかを示します。
->   - **-i** - 他の関連ログと共にネットワーク トレースを収集するシナリオ フラグ
+>   - **-r** - ツールがリモート (または非対話型コンテキスト) から実行されていることを示します
+>   - **-i** - 他の関連ログと共にネットワーク トレースを収集するためのシナリオ フラグ
 >   - **-m** \# - 実行する分数 (上記の例では 5 分)

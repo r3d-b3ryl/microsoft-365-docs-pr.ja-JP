@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: ファイルを別のファイルに移動するOneDrive。
+description: ファイルをOneDriveに移動する方法について説明します。
 ms.openlocfilehash: 595e7443c0a3e4fb96fb149172a881c0362955be
 ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
@@ -27,25 +27,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61375476"
 ---
-# <a name="move-files-to-onedrive"></a>ファイルをファイルに移動OneDrive
+# <a name="move-files-to-onedrive"></a>OneDriveにファイルを移動する
 
-## <a name="watch-move-your-files-to-onedrive-for-business"></a>ウォッチ: ファイルをファイルに移動OneDrive for Business
+## <a name="watch-move-your-files-to-onedrive-for-business"></a>ウォッチ: ファイルをOneDrive for Businessに移動する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 
-アカウントにサインアップしたMicrosoft 365 Business Premium、&#39;作業ファイルを既存の作業ファイルにコピー OneDrive for Business。 OneDriveは、アクセスを制御する個人用の作業ファイルや機密性の高いビジネス ファイルを格納する場合に便利です。
+Microsoft 365 Business Premiumにサインアップすると、既存の作業ファイルをOneDrive for Businessにコピー&#39;。 OneDriveは、アクセスを制御する個人用の仕事用ファイルや機密ビジネス ファイルを格納するのに適しています。
 
 ## <a name="try-it"></a>お試しください!
 
-1. [Windowsスタート] ボタン **を選択** します。
-2. ユーザーを検索OneDrive選択します。
-3. 仕事用メール アドレスを入力します。
-4. [  **サインイン] を選択** し、[次へ] を  **選択します**。
-5. 短いチュートリアルを実行し、[自分のフォルダーを開く **] をOneDriveします**。 個人用バージョンのファイルも使用しているOneDrive、&#39;表示されます。
+1. Windowsから、[**スタート]** ボタンを選択します。
+2. OneDriveを検索して選択します。
+3. 職場のメール アドレスを入力します。
+4. [  **サインイン** ] を選択し、[  **次へ**] を選択します。
+5. 短いチュートリアルに進み、[**OneDrive フォルダーを開く**] を選択します。 個人用バージョンのOneDriveも使用している場合は、ここに表示&#39;。
 6. エクスプローラーで、コピーするファイルに移動します。
-7. ファイルを選択し、ファイルをフォルダーにドラッグ アンド ドロップOneDriveします。 ファイルの横にある青い円形の矢印は、&#39;同期が可能なことを意味します。 同期が&#39;完了すると、緑色のチェック マークが表示されます。
+7. ファイルを選択し、OneDrive フォルダーにドラッグ アンド ドロップします。 ファイルの横にある青い円形の矢印は、クラウドに再同期&#39;意味します。 同期&#39;完了すると、緑色のチェック マークが表示されます。
 
-ローカルでファイルを操作OneDrive、Web ブラウザーからアクセスできます。
+OneDrive ファイルをローカルで操作するだけでなく、Web ブラウザーからアクセスすることもできます。
 
-1. Web ブラウザーで、仕事用メール office.com サインインします。
-2. [OneDrive]**を選択します**。 すべてのファイルが一覧表示され、任意のコンピューターからブラウザーで作業できます。
+1. Web ブラウザーで、職場のメールで office.com にサインインします。
+2. OneDriveを選択 **します**。 すべてのファイルが一覧表示され、任意のコンピューターからブラウザーで作業できます。

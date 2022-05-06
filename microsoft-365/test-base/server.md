@@ -1,6 +1,6 @@
 ---
-title: Windowsサーバー アプリケーションのテスト
-description: Windows サーバー アプリケーションのテストで検証する方法
+title: Windows サーバー アプリケーションのテスト
+description: Windows サーバー アプリケーションのテストを使用して検証する方法
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -21,28 +21,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60211755"
 ---
-# <a name="windows-server-application-testing"></a>Windowsサーバー アプリケーションのテスト
+# <a name="windows-server-application-testing"></a>Windows サーバー アプリケーションテスト
 
-テスト ベースを使用Microsoft 365、Server Core を含む、Windows Server 2016および 2019 に対してアプリケーションを検証できます。
+Microsoft 365用のテスト ベースを使用すると、Server Core を含む、Windows Server 2016と 2019 に対してアプリケーションを検証できるようになりました。
 
-Microsoft 365 のテスト ベースの Windows Server 2016 および 2019 オペレーティング システムのプレリリース更新プログラムに対してアップロードしたアプリケーションの検証を開始するには、次の手順に従ってください。
+Microsoft 365の Test Base 上のWindows Server 2016および 2019 オペレーティング システムのプレリリース更新プログラムに対するアップロード済みアプリケーションの検証を開始するには、次の手順に従ってください。
 
-1. セルフサービス オンボーディング ポータルにログオンします。 左側のナビゲーション メニューで、[テストの詳細] の下を選択して `Upload new package` `Package catalogue` 入力します。
+1. セルフサービスオンボード ポータルにログオンします。 左側のナビゲーション メニューで、テストの詳細の下を`Package catalogue`選択`Upload new package`して入力します。
 
-2. `Security updates`OS 更新プログラムの種類として選択します。
+2. OS 更新プログラムの種類として選択 `Security updates` します。
 
-   ![[セキュリティ更新プログラム] を選択します。](Media/selecting-security-updates.png)
+   ![セキュリティ更新プログラムを選択します。](Media/selecting-security-updates.png)
 
-3. [テストする OS のバージョン] で、該当する OS バージョンを選択します。 サーバー OS のWindowsまたはサーバーとクライアントの OS バージョンの組み合わせを選択できます。
+3. テストする OS バージョンで、該当する OS バージョンを選択します。 Windowsサーバー OS のバージョン、またはサーバーとクライアントの OS バージョンの組み合わせを選択できます。
 
-   ![[OS のバージョン] を選択します。](Media/selecting-OS-versions.png)
+   ![OS バージョンを選択します。](Media/selecting-OS-versions.png)
 
-4. その他の必要な情報を提供し、提供された詳細を確認し、アプリケーション パッケージをアップロードします。 アップロード後、[パッケージの管理] メニュー タブでパッケージの状態を表示できます。
+4. その他の必要な情報を入力し、提供された詳細を確認し、アプリケーション パッケージをアップロードします。 アップロード後、[パッケージの管理] メニュー タブでパッケージの状態を表示できます。
 
-5. Windows Server 2016 および 2019 のプレリリース セキュリティ更新プログラムに対するアプリケーションの検証のテスト結果と分析情報を表示するには、[テストの概要] ページまたは [セキュリティ更新プログラムの結果] ページに移動します。
+5. Windows Server 2016および 2019 のプレリリース セキュリティ更新プログラムに対するアプリケーションの検証からテスト結果と分析情報を表示するには、テストの概要ページまたはセキュリティ更新プログラムの結果ページに移動します。
 
    ![テスト結果を表示します。](Media/access-test-results.png)
 
-機能テストを開始する次の記事 **に進む**
+次の記事に進み、 **機能テストを開始する**
 > [!div class="nextstepaction"]
 > [次の手順](functional.md)

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint API URI for US Government
-description: Microsoft Defender for Endpoint API URI for US Government
-keywords: defender, endpoint, api, Government, gov
+title: Microsoft Defender for Endpoint米国政府向け API URI
+description: Microsoft Defender for Endpoint米国政府向け API URI
+keywords: defender, endpoint, api, government, gov
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -22,4 +22,4 @@ ms.lasthandoff: 08/05/2021
 ms.locfileid: "53792961"
 ---
 >[!NOTE]
->米国政府機関のお客様の場合は、Microsoft Defender for Endpoint for US Government のお客様に記載されている URI [を使用してください](/microsoft-365/security/defender-endpoint/gov#api)。
+>米国政府機関のお客様の場合は、Microsoft Defender for Endpointに記載されている URI を[米国政府機関のお客様に使用](/microsoft-365/security/defender-endpoint/gov#api)してください。

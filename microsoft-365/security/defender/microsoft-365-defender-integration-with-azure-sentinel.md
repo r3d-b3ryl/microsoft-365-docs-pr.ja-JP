@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender と Microsoft Sentinel の統合
-description: Microsoft Sentinel を SIEM として使用して、Microsoft 365 Defenderイベントに使用します。
-keywords: インシデント、アラート、調査、調査、分析、応答、相関関係、攻撃、コンピューター、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365
+description: インシデントとイベントをMicrosoft 365 Defenderする SIEM として Microsoft Sentinel を使用します。
+keywords: インシデント, アラート, 調査, 分析, 応答, 相関関係, 攻撃, マシン, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -35,13 +35,13 @@ ms.locfileid: "64499465"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft Sentinel (プレビュー) の Microsoft 365 Defender コネクタは、Microsoft Sentinel にすべての Microsoft 365 Defender インシデントと通知情報を送信し、インシデントの同期を維持します。 
+Microsoft Sentinel のMicrosoft 365 Defender コネクタ (プレビュー) は、すべてのMicrosoft 365 Defenderインシデントとアラート情報を Microsoft Sentinel に送信し、インシデントを同期し続けます。 
 
-コネクタを追加すると、Microsoft 365 Defender&mdash; インシデントが含まれます。Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps&mdash; から受信するすべての関連アラート、エンティティ、および関連情報が含まれます。は、セキュリティ情報およびイベント管理 (SIEM) データとして Microsoft Sentinel にストリーミングされ、Microsoft Sentinel でトリアージおよびインシデント対応を実行するためのコンテキストを提供します。 
+コネクタを追加すると、Microsoft 365 Defenderインシデント&mdash;に関連するすべてのアラート、エンティティ、およびMicrosoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Office 365とMicrosoft Defender for Cloud Apps&mdash;セキュリティ情報とイベント管理 (SIEM) データとして Microsoft Sentinel にストリーミングされ、Microsoft Sentinel でトリアージとインシデント対応を実行するためのコンテキストが提供されます。 
 
-Microsoft Sentinel では、インシデントは Microsoft 365 Defender と双方向に同期されたままであり、インシデントの調査と対応のために Azure ポータルの Microsoft 365 Defender ポータルと Microsoft Sentinel の両方の利点を活用できます。
+Microsoft Sentinel では、インシデントはMicrosoft 365 Defenderと双方向に同期され続け、インシデントの調査と対応のためにAzure portalのMicrosoft 365 Defender ポータルと Microsoft Sentinel の両方の利点を利用できます。
 
-Microsoft Sentinel と Microsoft Sentinel の統合の概要 (Microsoft 365 Defender 4 分) をご覧ください。
+Microsoft Sentinel と Microsoft 365 Defender (4 分) の統合の概要をご覧ください。
 
 <br>
 
@@ -50,14 +50,14 @@ Microsoft Sentinel と Microsoft Sentinel の統合の概要 (Microsoft 365 Defe
 
 動作方法を次に示します。
 
-:::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="ネットワーク ポータルと Microsoft Sentinel ポータルのインシデント Microsoft 365 Defenderのフローと共有" lightbox="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png":::
+:::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="Microsoft 365 Defenderポータルと Microsoft Sentinel ポータルのインシデント データのフローと共有" lightbox="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png":::
 
 ## <a name="next-steps"></a>次の手順
 
-1. [Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration) との統合Microsoft 365 Defender理解を深める。
-2. [Connectから Microsoft Sentinel Microsoft 365 Defenderデータを取得します](/azure/sentinel/connect-microsoft-365-defender)。
+1. [Microsoft Sentinel とのMicrosoft 365 Defender統合](/azure/sentinel/microsoft-365-defender-sentinel-integration)について詳しく理解します。
+2. [Microsoft 365 Defenderから Microsoft Sentinel にデータをConnect](/azure/sentinel/connect-microsoft-365-defender)します。
 
 ## <a name="see-also"></a>関連項目
 
-- [グループ内のインシデントのMicrosoft 365 Defender](incidents-overview.md)
+- [Microsoft 365 Defenderのインシデントの概要](incidents-overview.md)
 - [Microsoft Sentinel でインシデントを調査する](/azure/sentinel/tutorial-investigate-cases)

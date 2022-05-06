@@ -1,6 +1,6 @@
 ---
-title: Microsoft バグ バウンティ プログラムについて
-description: セキュリティ研究者の場合は、Microsoft 製品、サービス、またはデバイスの脆弱性を報告する報酬を受け取る可能性があります。
+title: Microsoft バグ 報奨金プログラムについて
+description: セキュリティ研究者の場合は、Microsoft 製品、サービス、またはデバイスの脆弱性を報告した場合に報奨金を受け取ることができます。
 ms.prod: m365-security
 audience: ITPro
 author: dansimp
@@ -18,10 +18,10 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/20/2022
 ms.locfileid: "63683467"
 ---
-# <a name="about-the-microsoft-bug-bounty-program"></a>Microsoft バグ バウンティ プログラムについて
+# <a name="about-the-microsoft-bug-bounty-program"></a>Microsoft バグ 報奨金プログラムについて
 
-セキュリティ研究者ですか? Microsoft 製品、サービス、またはデバイスに脆弱性が見つからなかったか。 その場合は、お客様から連絡を受け取る必要があります。
+セキュリティ研究者ですか? Microsoft 製品、サービス、またはデバイスに脆弱性が見つかりませんでしたか? その場合は、お客様からのご意見をお寄せください。
 
-脆弱性レポートが、以下のいずれかのバウンティ プログラムの範囲内にある製品またはサービスに影響を与える場合は、プログラムの説明に従ってバウンティ賞を受け取ることができます。
+脆弱性レポートが、以下のいずれかの報奨金プログラムの範囲内にある製品またはサービスに影響を与える場合は、プログラムの説明に従って報奨金を受け取ることができます。
 
-詳細については [、Microsoft Bug Bounty Program サイト](https://www.microsoft.com/en-us/msrc/bounty?rtc=1) をご覧ください。
+詳細については、 [Microsoft バグ 報奨金プログラムのサイト](https://www.microsoft.com/en-us/msrc/bounty?rtc=1) を参照してください。

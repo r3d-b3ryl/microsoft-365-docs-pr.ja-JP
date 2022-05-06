@@ -62,7 +62,7 @@ Test Base アカウント。 お持ちでない場合は、 [Test Base アカウ
    > [!div class="mx-imgBorder"]
    > ![次の手順](Media/testapplication05.png)
 
-### <a name="step-2-configure-test"></a>手順 2. テストを構成する
+### <a name="step-2-configure-test"></a>手順 2。 テストを構成する
 
 1. テストの **種類** を選択します。 サポートされているテストの種類は 2 つあります。
    - **Out of Box (OOB) テスト** では、パッケージのインストール、起動、閉じ、アンインストールが実行されます。 インストール後、1 回のアンインストールが実行される前に、起動終了ルーチンが 30 回繰り返されます。 OOB テストでは、パッケージで標準化されたテレメトリを提供し、Windows ビルド間で比較できます。

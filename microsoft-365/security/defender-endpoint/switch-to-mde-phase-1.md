@@ -64,7 +64,7 @@ ms.locfileid: "64782921"
 
 組織のデバイスの更新に関するヘルプが必要ですか? 以下のリソースを参照してください。
 
-|OS|リソース|
+|OS|関連情報|
 |---|---|
 |Windows|[Microsoft Update](https://www.update.microsoft.com)|
 |macOS|[Mac でソフトウェアを更新する方法](https://support.apple.com/HT201541)|
@@ -124,7 +124,7 @@ Microsoft 365 Defender ポータルへのアクセス許可は、基本的なア
 
 *Windows Server 2012 R2 と 2016 用の最新の統合ソリューションをインストールする必要があります。 詳細については、「[Windows サーバーをMicrosoft Defender for Endpoint サービスにオンボードする](/microsoft-365/security/defender-endpoint/configure-server-endpoints)」を参照してください。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 **おめでとうございます**。 [Defender for Endpoint に切り替える](switch-to-mde-overview.md#the-migration-process)**準備** フェーズが完了しました。
 

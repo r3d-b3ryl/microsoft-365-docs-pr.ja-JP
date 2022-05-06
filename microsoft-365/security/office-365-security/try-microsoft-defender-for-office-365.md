@@ -283,7 +283,7 @@ Microsoft 365 Defender ポータルでのAzure ADアクセス許可の詳細に�
 
 |設定|値|
 |---|---|
-|Action|許可|
+|アクション|許可|
 |ActionOnError|はい|
 |AdminDisplayName|評価ポリシー|
 |ConfidenceLevelThreshold|80|

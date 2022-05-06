@@ -68,7 +68,7 @@ Azure ADでアプリを作成する手順については、「Microsoft ID プ�
 
 次の表に、インサイダー リスク管理シナリオを有効にするために必要なフィールドを示します。 これらのフィールドのサブセットは必須です。 これらのフィールドはアスタリスク (*)で強調表示されます。 テキスト ファイルに必須フィールドがない場合、ファイルは検証されません。ファイル内のデータはインポートされません。
 
-|Field|カテゴリ|
+|フィールド|カテゴリ|
 |:----|:----------|
 | ACCESS_LOG。*<br/>ACCESS_TIME ACCESS_LOG_METRIC。METRIC_NAME*<br/>ACCESS_LOG。WORKSTATION_ID<br/>ZCMETRIC\_\_ GROUP.NAME<br/>ZCACCESS\_\_ ACTION.NAME |これらのフィールドは、エピック EHR システム内のアクセス アクティビティ イベントを識別するために使用されます。|
 | 患者。PAT_MRN_ID<br/>患者。PAT_FIRST_NAME* <br/>患者。PAT_MIDDLE_NAME <br/>患者。PAT_LAST_NAME* <br/>患者。ADD_LINE_1* <br/>患者。ADD_LINE_2  <br/>患者。CITY* <br/>PATIENT.ZIP*  <br/>ZC_STATE.NAME <br/>ZC_COUNTRY.NAME <br/>CLARITY_DEP。DEPARTMENT_NAME              | これらのフィールドは、患者プロファイル情報を識別するために使用されます。|

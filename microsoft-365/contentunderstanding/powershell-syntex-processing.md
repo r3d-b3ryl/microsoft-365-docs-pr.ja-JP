@@ -12,7 +12,7 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: PowerShell を使用して、ドキュメント理解モデルで処理SharePoint Syntexする方法について説明します。
+description: PowerShell を使用して、SharePoint Syntex ドキュメント理解モデルによる処理を要求する方法について説明します。
 ms.openlocfilehash: 8f66a0cc5e59ad2ccb6b92d98cfaee8ce84470f2
 ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
@@ -23,13 +23,13 @@ ms.locfileid: "63526444"
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>PowerShell を使用してドキュメント理解モデルによる処理を要求する
 
 > [!IMPORTANT]
-> PowerShell SharePoint Syntexおよび他のすべての PnP コンポーネントは、サポートを提供するアクティブ なコミュニティによってサポートされるオープンソース ツールです。 公式の Microsoft サポート チャネルのオープン ソース ツールのサポート用 SLA ではありません。
+> SharePoint Syntex PowerShell コマンドレットとその他のすべての PnP コンポーネントは、アクティブなコミュニティによってサポートされるオープン ソース ツールです。 公式の Microsoft サポート チャネルのオープン ソース ツールのサポート用 SLA ではありません。
 
-ドキュメント理解モデルは、新しくアップロードされたファイルをライブラリに処理します。 UI で手動で処理を要求することもできます。 ただし、PowerShell を使用して処理をトリガーする方が効率的なシナリオがある場合があります。
+ドキュメント理解モデルは、新しくアップロードされたファイルをライブラリに処理します。 UI で手動で処理を要求することもできます。 ただし、PowerShell を使用して処理をトリガーする方が効率的なシナリオが考えられます。
 
 ## <a name="request-processing-of-all-items-that-have-not-been-previously-classified"></a>以前に分類されていないすべてのアイテムの処理を要求する
 
-次のコマンドを使用して、以前に分類されていないライブラリ内のすべてのアイテムの処理を要求できます。
+このコマンドを使用して、以前に分類されていないライブラリ内のすべての項目の処理を要求できます。
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -38,11 +38,11 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -List "Documents"
 ```
 
-優先度の低い処理では、テナントがある営業時間外に処理するファイルをキューに入れる -OffPeak パラメーターの使用も検討できます。 詳細 [については、「Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) 」を参照してください。
+優先度の低い処理では、テナントが配置されている営業時間外の処理用にファイルをキューに入れる -OffPeak パラメーターの使用も検討できます。 詳細については、「 [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) 」を参照してください。
 
-## <a name="request-processing-of-all-items-in-a-library"></a>ライブラリ内のすべてのアイテムの処理を要求する
+## <a name="request-processing-of-all-items-in-a-library"></a>ライブラリ内のすべての項目の処理を要求する
 
-以前に分類されている場合でも、ライブラリ内のすべてのファイルの処理を要求できます。 これは、モデルを更新した場合や、別のモデルをライブラリに追加した場合に役立ちます。
+ライブラリ内のすべてのファイルの処理は、以前に分類されている場合でも要求できます。 これは、モデルを更新した場合や、ライブラリに別のモデルを追加した場合に便利な場合があります。
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -52,11 +52,11 @@ Request-PnPSyntexClassifyAndExtract -List "Documents" -Force
 ```
 
 > [!NOTE]
-> 5000 を超えるアイテムで -Force オプションを使用すると、ピーク処理が自動的に有効になります。
+> 5,000 を超える項目で -Force オプションを使用すると、ピーク時の処理が自動的に無効になります。
 
-## <a name="request-processing-of-all-items-based-on-a-property"></a>プロパティに基づいてすべてのアイテムの処理を要求する
+## <a name="request-processing-of-all-items-based-on-a-property"></a>プロパティに基づいてすべての項目の処理を要求する
 
-ライブラリ内のアイテムの特定のサブセットに処理を制限する場合は、スクリプトを使用して特定のファイル グループを選択できます。 次の例では、スクリプトを使用してフィールドを選択し、フィールド値をフィルター処理できます。 [Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html) を使用すると、より複雑なクエリを実行できます。
+ライブラリ内の項目の特定のサブセットに処理を制限する場合は、スクリプトを使用して特定のファイル のグループを選択できます。 次の例では、スクリプトを使用してフィールドを選択し、フィールド値をフィルター処理できます。 [Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html) を使用して、より複雑なクエリを完了できます。
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -93,7 +93,7 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -FileUrl "/sites/finance/documents/contoso contract.docx"
 ```
 
-ファイル モデル別のファイルは、バッチ処理もサポートしています。
+ファイル ごとのファイル モデルでは、バッチ処理もサポートされています。
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process

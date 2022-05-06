@@ -1,6 +1,6 @@
 ---
-title: アップロードをライブ応答ライブラリに保存する
-description: ライブ応答ライブラリにファイルをアップロードする方法について学習します。
+title: ライブ応答ライブラリにファイルをアップロードする
+description: ライブ応答ライブラリにファイルをアップロードする方法について説明します。
 keywords: apis、graph api、サポートされている API、ライブラリへのアップロード
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/17/2022
 ms.locfileid: "63527060"
 ---
-#  <a name="upload-files-to-the-live-response-library"></a>アップロードをライブ応答ライブラリに保存する  
+#  <a name="upload-files-to-the-live-response-library"></a>ライブ応答ライブラリにファイルをアップロードする  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "63527060"
 
 ## <a name="api-description"></a>API の説明
 
-アップロードをライブ応答ライブラリに保存します。
+ファイルをライブ応答ライブラリにアップロードします。
 
 ## <a name="limitations"></a>制限事項
 
@@ -54,13 +54,13 @@ ms.locfileid: "63527060"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
 
 
 | アクセス許可の種類                    | アクセス許可     | アクセス許可の表示名        |
 |------------------------------------|----------------|--------------------------------|
-| アプリケーション                        | Library.Manage | ライブ応答ライブラリの管理 |
-| 委任 (職場または学校のアカウント) | Library.Manage | ライブ応答ライブラリの管理 |
+| アプリケーション                        | Library.Manage | ライブ応答ライブラリを管理する |
+| 委任 (職場または学校のアカウント) | Library.Manage | ライブ応答ライブラリを管理する |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -72,21 +72,21 @@ POST https://api.securitycenter.microsoft.com/api/libraryfiles
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|  名前   |    型    |       説明                         |
+|  名前   |    種類    |       説明                         |
 |-----------------|--------|--------------------------------|
-| Authorization   | 文字列 | ベアラー\<token>。 必須です。      |
+| Authorization   | String | ベアラー\<token>。 必須です。      |
 | Content-Type    | string | multipart/form-data。 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、フォーム データ オブジェクトに次のパラメーターを指定します。
+要求本文で、次のパラメーターを含むフォーム データ オブジェクトを指定します。
 
-| パラメーター         |     型         |       説明                                        |
+| パラメーター         |     種類         |       説明                                        |
 |-----------------------|--------------|------------------------------------------------------------|
-| ファイル                  | ファイル コンテンツ | ライブ応答ライブラリにアップロードするファイル。必須 |
-| 説明           | 文字列       | ファイルの説明。                                  |
-| ParametersDescription | 文字列       | (省略可能)スクリプトを実行するために必要なパラメーター。 既定値は空の文字列です。                |
-| OverrideIfExists      | Boolean      | (省略可能)ファイルが既に存在する場合に上書きするかどうかを指定します。 既定値は空の文字列です。          |
+| ファイル                  | ファイルの内容 | ライブ応答ライブラリにアップロードするファイル。必須 |
+| 説明           | String       | ファイルの説明。                                  |
+| ParametersDescription | String       | (省略可能)スクリプトを実行するために必要なパラメーター。 既定値は空の文字列です。                |
+| OverrideIfExists      | ブール値      | (省略可能)ファイルが既に存在する場合は、ファイルをオーバーライドするかどうかを指定します。 既定値は空の文字列です。          |
 
 
 
@@ -94,8 +94,8 @@ POST https://api.securitycenter.microsoft.com/api/libraryfiles
 
 -   成功した場合、このメソッドは 200 - OK 応答コードと、応答本文にアップロードされたライブ応答ライブラリ エンティティを返します。
 
--   成功しない場合: このメソッドは 400 - Bad Request を返します。  
-    通常、不適切な要求は、不適切な本文を示します。
+-   成功しない場合:このメソッドは 400 - 無効な要求を返します。  
+    通常、不適切な要求は本文が正しくないためです。
 
 ## <a name="example"></a>例
 

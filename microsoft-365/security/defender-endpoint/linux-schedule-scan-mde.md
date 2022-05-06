@@ -141,7 +141,7 @@ Puppet を使用した自動化: Cron ジョブとスケジュールされたタ
 
 詳細については、「[https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/)」を参照してください。
 
-## <a name="additional-information"></a>ページの先頭へ
+## <a name="additional-information"></a>その他の情報
 
 ### <a name="to-get-help-with-crontab"></a>crontab に関するヘルプを表示するには
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint クライアント アナライザーをダウンロードする
-description: Microsoft Defender for Endpoint Client Analyzer を Windows macOS、または Linux でダウンロードする方法について説明します。
-keywords: ダウンロード、クライアント アナライザー、センサー、アナライザー、mdeanalyzer のトラブルシューティング
+description: Windows、macOS、または Linux でMicrosoft Defender for Endpointクライアント アナライザーをダウンロードする方法について説明します。
+keywords: ダウンロード, クライアント アナライザー, センサーのトラブルシューティング, アナライザー, mdeanalyzer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -28,15 +28,15 @@ ms.locfileid: "63316017"
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint クライアント アナライザーをサポートされているコンピューター、macOS、および Linux オペレーティング システムWindowsダウンロードする方法について説明します。
+サポートされているWindows、macOS、Linux オペレーティング システムでMicrosoft Defender for Endpointクライアント アナライザーをダウンロードする方法について説明します。
 
-## <a name="download-client-analyzer-for-windows-os"></a>OS 用のクライアント アナライザー Windowsダウンロード
+## <a name="download-client-analyzer-for-windows-os"></a>Windows OS 用のクライアント アナライザーをダウンロードする
 
 1. 最新の安定版は、次の URL からダウンロードできます。 <https://aka.ms/MDEAnalyzer>
 2. 最新のプレビュー エディションは、次の URL からダウンロードできます。 <https://aka.ms/BetaMDEAnalyzer>
 
 ## <a name="download-client-analyzer-for-macos-or-linux"></a>macOS または Linux 用のクライアント アナライザーをダウンロードする
 
-1. 最新の安定版は、MDE for Endpoint エージェントに統合されます。 [macOS](mac-whatsnew.md) または Linux の最新エディションを実行している必要[があります](linux-whatsnew.md)。
+1. 最新の安定版は、MDE for Endpoint エージェントに統合されます。 [macOS](mac-whatsnew.md) または Linux のいずれかの最新エディションを実行していることを確認[します](linux-whatsnew.md)。
 
 2. 最新のプレビュー エディションは、次の URL から直接ダウンロードできます。 <https://aka.ms/XMDEClientAnalyzer>

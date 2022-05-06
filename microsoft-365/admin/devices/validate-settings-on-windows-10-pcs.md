@@ -37,7 +37,7 @@ ms.locfileid: "65090665"
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Windows 10 PC のデバイス保護設定を検証する
 
 > [!NOTE]
-> Microsoft Defender for Businessは、2022 年 3 月 1 日以降、Microsoft 365 Business Premiumのお客様に展開されます。 このオファリングでは、デバイスの追加のセキュリティ機能が提供されます。 [Defender for Business の詳細については、こちらを参照してください](../../security/defender-business/mdb-overview.md)。
+> Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細については、こちらをご覧ください](../../security/defender-business/mdb-overview.md)。
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Windows 10 デバイス ポリシーが設定されていることを確認する
 

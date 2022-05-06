@@ -34,7 +34,7 @@ ms.locfileid: "65090687"
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Android または iOS デバイスでアプリ保護設定を検証する
 
 > [!NOTE]
-> Microsoft Defender for Businessは、2022 年 3 月 1 日以降、Microsoft 365 Business Premiumのお客様に展開されます。 このオファリングでは、デバイスの追加のセキュリティ機能が提供されます。 [Defender for Business の詳細を確認する](../../security/defender-business/mdb-overview.md)
+> Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細を確認する](../../security/defender-business/mdb-overview.md)
 
 Android または iOS デバイスでアプリ保護設定を検証するには、次のセクションの手順に従います。
   
@@ -208,4 +208,4 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プランのMicrosoft 365をセキュリティで保護する上位 10 の方法](../security-and-compliance/secure-your-business-data.md)
+[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../security-and-compliance/secure-your-business-data.md)

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender と SIEM ツールの統合
 description: REST API を使用し、サポートされているセキュリティ情報とイベント管理ツールを構成して検出を受信およびプルする方法について説明します。
-keywords: siem、セキュリティ情報とイベント管理ツール、splunk、arcsight、カスタム インジケーター、rest API、アラート定義、侵害の指標を構成する
+keywords: siem、セキュリティ情報とイベント管理ツール、splunk、arcsight、カスタム インジケーター、rest API、アラート定義、侵害のインジケーターを構成する
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -31,76 +31,76 @@ ms.locfileid: "61110429"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-## <a name="pull-microsoft-365-defender-incidents-and-streaming-event-data-using-security-information-and-events-management-siem-tools"></a>セキュリティMicrosoft 365 Defenderイベント管理 (SIEM) ツールを使用して、インシデントとストリーミング イベント データをプルする
+## <a name="pull-microsoft-365-defender-incidents-and-streaming-event-data-using-security-information-and-events-management-siem-tools"></a>セキュリティ情報とイベント管理 (SIEM) ツールを使用して、Microsoft 365 Defenderインシデントとストリーミング イベント データをプルする
 
 > [!NOTE]
 >
-> - [Microsoft 365 Defenderインシデントは](incident-queue.md)、相関アラートとその証拠のコレクションで構成されます。
-> - [Microsoft 365 Defender API は](streaming-api.md)、イベント データMicrosoft 365 Defenderハブまたは Azure ストレージ アカウントにストリーミングします。
+> - [Microsoft 365 Defenderインシデントは、](incident-queue.md)関連付けられたアラートとその証拠のコレクションで構成されます。
+> - [ストリーミング API Microsoft 365 Defender](streaming-api.md)、イベント データをMicrosoft 365 Defenderからイベント ハブまたは Azure ストレージ アカウントにストリーミングします。
 
-Microsoft 365 Defenderは、Azure Active Directory (AAD) のエンタープライズ テナントから特定の SIEM ソリューションまたはコネクタを表す登録済み AAD アプリケーションの OAuth 2.0 認証プロトコルを使用して情報を取り込むセキュリティ情報とイベント管理 (SIEM) ツールをサポートします。環境。 
+Microsoft 365 Defenderでは、登録されたAAD アプリケーションの OAuth 2.0 認証プロトコルを使用して、Azure Active Directory (AAD) のエンタープライズ テナントから情報を取り込むセキュリティ情報とイベント管理 (SIEM) ツールがサポートされています。これは、お使いの企業にインストールされている特定の SIEM ソリューションまたはコネクタを表します。環境。 
 
 詳細については、以下を参照してください。
 
 - [Microsoft 365 Defender API のライセンスと使用条件](api-terms.md)
-- [API にMicrosoft 365 Defenderする](api-access.md)
+- [Microsoft 365 Defender API にアクセスする](api-access.md)
 - [Hello World の例](api-hello-world.md)
 - [アプリケーション コンテキストでアクセスする](api-create-app-web.md)
 
-セキュリティ情報を取り込む 2 つの主要なモデルがあります。 
+セキュリティ情報を取り込むには、次の 2 つの主要なモデルがあります。 
 
-1.  Azure Microsoft 365 Defenderの REST API から、インシデントとその含まれているアラートを取り込む。 
+1.  Azure の REST API からMicrosoft 365 Defenderインシデントとその包含アラートを取り込む。 
 
-2.  Azure Event Hubs またはアカウントを介してストリーミング イベント データをAzure Storageします。 
+2.  Azure Event HubsアカウントまたはAzure Storage アカウントを介してストリーミング イベント データを取り込む。 
 
 Microsoft 365 Defenderは現在、次の SIEM ソリューション統合をサポートしています。 
 
 - [インシデント REST API からのインシデントの取り込み](#ingesting-incidents-from-the-incidents-rest-api)
-- [イベント ハブ経由でのストリーミング イベント データの取り込み](#ingesting-streaming-event-data-via-event-hubs)
+- [Event Hub を使用したストリーミング イベント データの取り込み](#ingesting-streaming-event-data-via-event-hubs)
 
 ## <a name="ingesting-incidents-from-the-incidents-rest-api"></a>インシデント REST API からのインシデントの取り込み
 
 ### <a name="incident-schema"></a>インシデント スキーマ
-含まれているアラートエンティティと証拠エンティティMicrosoft 365 Defender含むインシデント プロパティの詳細については、「スキーマ マッピング」[を参照してください](../defender/api-list-incidents.md#schema-mapping)。
+包含アラートエンティティと証拠エンティティメタデータを含むMicrosoft 365 Defenderインシデント プロパティの詳細については、「[スキーマ マッピング」を](../defender/api-list-incidents.md#schema-mapping)参照してください。
 
 ### <a name="splunk"></a>Splunk
 
-以下をMicrosoft 365 Defender Splunk 用のアドオンを使用します。
+サポートする Splunk 用のMicrosoft 365 Defender アドオンの使用:
 
-- Splunk の共通情報モデル (CIM) にマップされている次の製品からのアラートを含むインシデントを取り込む。
+- Splunk の Common Information Model (CIM) にマップされる、次の製品からのアラートを含むインシデントの取り込み:
 
   - Microsoft 365 Defender
   - Microsoft Defender for Endpoint
-  - Microsoft Defender for Identity and Azure Active Directory ID Protection
+  - id Protection のMicrosoft Defender for IdentityとAzure Active Directory
   - Microsoft Defender for Cloud Apps
 
-- Splunk 内からMicrosoft 365 Defenderインシデントを更新する
+- Splunk 内からMicrosoft 365 Defenderのインシデントを更新する
 
-- エンドポイントの Defender アラート (エンドポイントの Azure エンドポイントの Defender から) を取り込み、これらのアラートを更新する
+- Defender for Endpoint アラート (Defender for Endpoint の Azure エンドポイントから) を取り込み、これらのアラートを更新する
 
-Splunk 用のMicrosoft 365 Defender詳細については[、「splunkbase」を参照してください](https://splunkbase.splunk.com/app/4959/)。
+Splunk 用のMicrosoft 365 Defender アドオンの詳細については、「[splunkbase](https://splunkbase.splunk.com/app/4959/)」を参照してください。
 
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 
-新しい SmartConnector for Microsoft 365 Defenderインシデントを ArcSight に取り込み、これらを Common Event Framework (CEF) にマップします。
+Microsoft 365 Defender用の新しい SmartConnector は、ArcSight にインシデントを取り込み、これらを Common Event Framework (CEF) にマップします。
 
-新しい ArcSight SmartConnector for Microsoft 365 Defenderについては[、「ArcSight 製品ドキュメント」を参照してください](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender)。
+新しい ArcSight SmartConnector for Microsoft 365 Defenderの詳細については、[ArcSight 製品ドキュメントを参照してください](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender)。
 
-SmartConnector は、Microsoft Defender for Endpoint の以前の FlexConnector を置き換える。
+SmartConnector は、以前の FlexConnector をMicrosoft Defender for Endpointに置き換えます。
   
 
-## <a name="ingesting-streaming-event-data-via-event-hubs"></a>イベント ハブ経由でのストリーミング イベント データの取り込み
+## <a name="ingesting-streaming-event-data-via-event-hubs"></a>Event Hubs を使用したストリーミング イベント データの取り込み
 
-まず、テナントからイベント ハブまたは AAD アカウントにイベントをストリームAzure Storageがあります。 詳細については、「ストリーミング [API」を参照してください](../defender/streaming-api.md)。
+まず、AAD テナントから Event Hubs または Azure Storage アカウントにイベントをストリーミングする必要があります。 詳細については、「 [ストリーミング API](../defender/streaming-api.md)」を参照してください。
 
-ストリーミング API でサポートされるイベントの種類の詳細については、「サポートされるストリーミング イベントの [種類」を参照してください](../defender/supported-event-types.md)。
+Streaming API でサポートされているイベントの種類の詳細については、「 [サポートされているストリーミング イベントの種類](../defender/supported-event-types.md)」を参照してください。
 
 ### <a name="splunk"></a>Splunk
-Azure Event Hubs からイベントを取り込むには、Microsoft Cloud Services 用 Splunk アドオンを使用します。  
+Microsoft Cloud Services 用 Splunk アドオンを使用して、Azure Event Hubsからイベントを取り込みます。  
 
 
-Microsoft Cloud Services 用 Splunk アドオンの詳細については [、「splunkbase」を参照してください](https://splunkbase.splunk.com/app/3110/)。
+Microsoft Cloud Services 用 Splunk アドオンの詳細については、「[splunkbase](https://splunkbase.splunk.com/app/3110/)」を参照してください。
   
 
 ### <a name="ibm-qradar"></a>IBM QRadar
->[Microsoft 365 Defender](streaming-api.md)ストリーミング API を呼び出す新しい IBM QRadar Microsoft 365 Defender デバイス サポート モジュール (DSM) を使用して、Microsoft 365 Defender 製品からストリーミング イベント データを取り込む。 サポートされているイベントの種類の詳細については、「サポートされている [イベントの種類」を参照してください](supported-event-types.md)。
+>Microsoft 365 Defender製品からストリーミング イベント データを取り込む[Microsoft 365 Defender ストリーミング API を](streaming-api.md)呼び出す新しい IBM QRadar Microsoft 365 Defender デバイス サポート モジュール (DSM) を使用します。 サポートされているイベントの種類の詳細については、「 [サポートされているイベントの種類](supported-event-types.md)」を参照してください。

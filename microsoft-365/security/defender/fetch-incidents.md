@@ -1,6 +1,6 @@
 ---
-title: インシデントMicrosoft 365 Defenderフェッチ
-description: 顧客テナントからインシデントMicrosoft 365 Defender取得する方法について学習する
+title: Microsoft 365 Defender インシデントの取り込み
+description: 顧客テナントからMicrosoft 365 Defenderインシデントをフェッチする方法について説明します
 keywords: マネージド セキュリティ サービス プロバイダー、mssp、構成、統合
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,7 +24,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/06/2021
 ms.locfileid: "60805029"
 ---
-# <a name="fetch-microsoft-365-defender-incidents"></a>インシデントMicrosoft 365 Defenderフェッチ 
+# <a name="fetch-microsoft-365-defender-incidents"></a>Microsoft 365 Defender インシデントの取り込み 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "60805029"
 
 
 > [!NOTE]
-> このアクションは MSSP によって実行されます。
+> このアクションは、MSSP によって実行されます。
 
-アラートを取得するには、次の 2 つの方法があります。
+アラートをフェッチするには、次の 2 つの方法があります。
 
 - SIEM メソッドの使用
 - API の使用
@@ -46,55 +46,55 @@ ms.locfileid: "60805029"
 SIEM システムにインシデントをフェッチするには、次の手順を実行する必要があります。
 
 - 手順 1: サード パーティ製アプリケーションを作成する
-- 手順 2: 顧客のテナントからアクセストークンと更新トークンを取得する
-- 手順 3: アプリケーションのインストールを許可Microsoft 365 Defender
+- 手順 2: 顧客のテナントからトークンにアクセスして更新する
+- 手順 3: アプリケーションをMicrosoft 365 Defenderで許可する
 
-### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>手順 1: アプリケーションを作成する (Azure Active Directory) (Azure AD)
+### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>手順 1: Azure Active Directoryでアプリケーションを作成する (Azure AD)
 
-アプリケーションを作成し、顧客のテナントからアラートを取得するためのアクセス許可を付与Microsoft 365 Defenderがあります。
+アプリケーションを作成し、顧客のMicrosoft 365 Defenderテナントからアラートをフェッチするアクセス許可を付与する必要があります。
 
-1. ポータルにサインイン[Azure ADします](https://aad.portal.azure.com/)。
+1. [Azure AD ポータル](https://aad.portal.azure.com/)にサインインします。
 
-2. [アプリ \> **Azure Active Directory] を選択します**。
+2. **アプリの登録Azure Active Directory**\>選択 **します。**
 
-3. [新規 **登録] をクリックします**。
+3. [ **新規登録**] をクリックします。
 
 4. 次の値を指定します。
 
-    - 名前: \<Tenant_name\> SIEM MSSP コネクタ (Tenant_name表示名に置き換える)
+    - 名前: \<Tenant_name\> SIEM MSSP コネクタ (Tenant_nameをテナント表示名に置き換えます)
 
-    - サポートされているアカウントの種類: この組織ディレクトリのアカウントのみ
-    - リダイレクト URI: [Web] を選択して入力 `https://<domain_name>/SiemMsspConnector` します (<domain_name>テナント名に置き換えてください)
+    - サポートされているアカウントの種類: この組織のディレクトリ内のアカウントのみ
+    - リダイレクト URI: [Web] を選択して入力します `https://<domain_name>/SiemMsspConnector`(<domain_name>をテナント名に置き換えます)
 
-5. **[登録]** をクリックします。 アプリケーションは、所有するアプリケーションの一覧に表示されます。
+5. **[登録]** をクリックします。 アプリケーションは、所有しているアプリケーションの一覧に表示されます。
 
-6. アプリケーションを選択し、[概要] を **クリックします**。
+6. アプリケーションを選択し、[ **概要**] をクリックします。
 
-7. [アプリケーション (クライアント **) ID]** フィールドの値を安全な場所にコピーすると、次の手順でこの値が必要になります。
+7. **[アプリケーション (クライアント) ID**] フィールドの値を安全な場所にコピーします。次の手順で必要になります。
 
-8. 新 **しいアプリケーション パネル& [** 証明書の秘密] を選択します。
+8. 新しいアプリケーション パネルで [ **証明書&シークレット** ] を選択します。
 
-9. [新 **しいクライアント シークレット] をクリックします**。
+9. [ **新しいクライアント シークレット**] をクリックします。
 
     - 説明: キーの説明を入力します。
-    - 有効期限: **[1 年間] を選択します。**
+    - 有効期限: **[1 年間]** を選択する
 
-10. [ **追加]** をクリックし、クライアント シークレットの値を安全な場所にコピーします。次の手順でこれを行う必要があります。
+10. [ **追加]** をクリックし、クライアント シークレットの値を安全な場所にコピーします。次の手順で必要になります。
 
-### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>手順 2: 顧客のテナントからアクセストークンと更新トークンを取得する
+### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>手順 2: 顧客のテナントからトークンにアクセスして更新する
 
-このセクションでは、PowerShell スクリプトを使用して顧客のテナントからトークンを取得する方法について説明します。 このスクリプトでは、前の手順のアプリケーションを使用して、OAuth 認証コード を使用してアクセス トークンと更新トークンを取得Flow。
+このセクションでは、PowerShell スクリプトを使用して顧客のテナントからトークンを取得する方法について説明します。 このスクリプトでは、前の手順のアプリケーションを使用して、OAuth 承認コード Flowを使用してアクセス トークンと更新トークンを取得します。
 
-資格情報を指定した後、アプリケーションが顧客のテナントにプロビジョニングされるので、アプリケーションに同意を与える必要があります。
+資格情報を指定した後、アプリケーションが顧客のテナントにプロビジョニングされるように、アプリケーションに同意を付与する必要があります。
 
-1. 新しいフォルダーを作成し、名前を付きます `MsspTokensAcquisition` 。
+1. 新しいフォルダーを作成し、名前を付けます。 `MsspTokensAcquisition`
 
-2. [LoginBrowser.psm1 モジュールをダウンロードし](https://github.com/shawntabrizi/Microsoft-Authentication-with-PowerShell-and-MSAL/blob/master/Authorization%20Code%20Grant%20Flow/LoginBrowser.psm1)、フォルダーに保存 `MsspTokensAcquisition` します。
+2. [LoginBrowser.psm1 モジュールを](https://github.com/shawntabrizi/Microsoft-Authentication-with-PowerShell-and-MSAL/blob/master/Authorization%20Code%20Grant%20Flow/LoginBrowser.psm1)ダウンロードし、フォルダーに`MsspTokensAcquisition`保存します。
 
     > [!NOTE]
-    > 30 行目で、 に置き `authorzationUrl` 換える `authorizationUrl` 。
+    > 30 行目で、 `authorzationUrl` `authorizationUrl`.
 
-3. 次の内容のファイルを作成し、フォルダーに名前 `MsspTokensAcquisition.ps1` を付けて保存します。
+3. 次のコンテンツを含むファイルを作成し、フォルダーに名前 `MsspTokensAcquisition.ps1` を付けて保存します。
 
     ```powershell
     param (
@@ -142,41 +142,41 @@ SIEM システムにインシデントをフェッチするには、次の手順
     Write-Host " ----------------------------------- REFRESH TOKEN ---------------------------------- "
     Write-Host $refreshToken
     ```
-4. フォルダーで管理者特権の PowerShell コマンド プロンプトを開 `MsspTokensAcquisition` きます。
+4. フォルダーで管理者特権の PowerShell コマンド プロンプトを `MsspTokensAcquisition` 開きます。
 
 5. 次のコマンドを実行します。`Set-ExecutionPolicy -ExecutionPolicy Bypass`
 
 6. 次のコマンドを入力します。 `.\MsspTokensAcquisition.ps1 -clientId <client_id> -secret <app_key> -tenantId <customer_tenant_id>`
 
-    - 前 \<client_id\> の手順 **で取得したアプリケーション (クライアント) ID** に置き換えてください。
-    - 前 \<app_key\> の手順 **で作成した** クライアント シークレットに置き換える。
-    - 顧客 \<customer_tenant_id\> のテナント ID **に置き換える**。
+    - 前の手順で取得した **アプリケーション (クライアント) ID に** 置き換えます\<client_id\>。
+    - 前の手順で作成した **クライアント シークレット** に置き換えます\<app_key\>。
+    - 顧客の **テナント ID に** 置き換えます\<customer_tenant_id\>。
 
-7. 資格情報と同意を入力する必要があります。 ページ リダイレクトを無視します。
+7. 資格情報と同意を入力するように求められます。 ページ リダイレクトを無視します。
 
-8. PowerShell ウィンドウで、アクセス トークンと更新トークンを受け取ります。 SIEM コネクタを構成するには、更新トークンを保存します。
+8. PowerShell ウィンドウには、アクセス トークンと更新トークンが表示されます。 更新トークンを保存して SIEM コネクタを構成します。
 
-### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>手順 3: アプリケーションのインストールを許可Microsoft 365 Defender
+### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>手順 3: アプリケーションをMicrosoft 365 Defenderで許可する
 
-アプリで作成したアプリケーションを許可するMicrosoft 365 Defender。
+Microsoft 365 Defenderで作成したアプリケーションを許可する必要があります。
 
-アプリケーションを許可するには、ポータル システム設定の **管理** 権限が必要です。 それ以外の場合は、アプリケーションを許可する顧客を要求する必要があります。
+アプリケーションを許可するには、 **ポータル システム設定の管理** アクセス許可が必要です。 それ以外の場合は、アプリケーションを許可するように顧客に要求する必要があります。
 
-1. に移動 `https://security.microsoft.com?tid=<customer_tenant_id>` します ( \<customer_tenant_id\> 顧客のテナント ID に置き換えてください。
+1. に移動します `https://security.microsoft.com?tid=<customer_tenant_id>` (顧客のテナント ID に置き換えます \<customer_tenant_id\> 。
 
-2. [**エンドポイント 設定** \>  \> **SIEM] を** \> **クリックします**。
+2. [**設定** \> **エンドポイント** \> **API SIEM] を**\>クリックします。
 
-3. **[MSSP] タブを選択** します。
+3. **[MSSP**] タブを選択します。
 
-4. 最初の **手順とテナント ID** からアプリケーション ID を **入力します**。
+4. 最初の手順から **アプリケーション ID と****テナント ID を入力します**。
 
-5. [アプリケーション **の承認] をクリックします**。
+5. [ **アプリケーションの承認]** をクリックします。
 
-これで、SIEM に関連する構成ファイルをダウンロードし、その API にMicrosoft 365 Defenderできます。 詳細については、「SIEM ツールにアラート [をプルする」を参照してください](../defender-endpoint/configure-siem.md)。
+これで、SIEM に関連する構成ファイルをダウンロードし、Microsoft 365 Defender API に接続できます。 詳細については、「 [SIEM ツールにアラートをプルする」を参照してください](../defender-endpoint/configure-siem.md)。
 
-- ArcSight 構成ファイル / Splunk Authentication Properties ファイルで、シークレット値を設定してアプリケーション キーを手動で記述します。
-- ポータルで更新トークンを取得する代わりに、前の手順のスクリプトを使用して更新トークンを取得 (または他の方法で取得) します。
+- ArcSight 構成ファイル /Splunk Authentication Properties ファイルで、シークレット値を設定してアプリケーション キーを手動で書き込みます。
+- ポータルで更新トークンを取得する代わりに、前の手順のスクリプトを使用して更新トークンを取得します (または、他の方法で取得します)。
 
-## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>API を使用して MSSP 顧客のテナントからアラートを取得する
+## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>API を使用して MSSP 顧客のテナントからアラートをフェッチする
 
-REST API を使用してアラートをフェッチする方法については、「REST API を使用 [してアラートをプルする」を参照してください](../defender-endpoint/pull-alerts-using-rest-api.md)。
+REST API を使用してアラートをフェッチする方法については、「REST API を [使用してアラートをプルする」を](../defender-endpoint/pull-alerts-using-rest-api.md)参照してください。

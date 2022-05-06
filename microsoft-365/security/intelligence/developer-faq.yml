@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 metadata:
-  title: ソフトウェア開発者向け FAQ
+  title: ソフトウェア開発者の FAQ
   ms.reviewer: 
-  description: このページでは、ソフトウェア開発者から受け取る一般的な質問に対する回答を提供します。
+  description: このページでは、ソフトウェア開発者から受け取る一般的な質問に対する回答を提供します
   keywords: wdsi, software, developer, faq, dispute, false-positive, classify, installer, software, bundler, blocking
   search.product: eADQiWindows 10XVcnh
   ms.prod: m365-security
@@ -23,37 +23,37 @@ metadata:
   ms.contentlocale: ja-JP
   ms.lasthandoff: 03/20/2022
   ms.locfileid: "63683922"
-title: ソフトウェア開発者向け FAQ
-summary: このページでは、ソフトウェア開発者から受け取る一般的な質問に対する回答を提供します。 マルウェアまたは誤って検出されたファイルの送信に関する一般的なガイダンスについては、申請ガイドを参照してください。
+title: ソフトウェア開発者の FAQ
+summary: このページでは、ソフトウェア開発者から寄せられる一般的な質問に対する回答を提供します。 マルウェアまたは正しく検出されなかったファイルの送信に関する一般的なガイダンスについては、送信ガイドを参照してください。
 sections:
 - name: 無視
   questions:
   - question: >
-      Microsoft は既知のリストまたは誤検知防止プログラムのファイルを受け入れるか。
+      Microsoft は既知のリストまたは誤検知防止プログラムのファイルを受け入れますか?
     answer: >
-      いいえ。 ソフトウェア開発者からのこれらの要求は受け入れかねない。 信頼できるルート機関によって発行されたデジタル証明書を使用して、プログラムのファイルに一貫性のある方法で署名すると、研究チームはプログラムのソースをすばやく特定し、以前に得た知識を適用するのに役立ちます。 場合によっては、プログラムが既知のリストにすぐに追加される可能性があります。 はるかに少ない頻度で、信頼できる発行元のリストにデジタル証明書を追加します。
+      いいえ。 ソフトウェア開発者からのこれらの要求は受け付けられません。 信頼されたルート機関によって発行されたデジタル証明書を使用して、プログラムのファイルに一貫した方法で署名することで、研究チームはプログラムのソースをすばやく特定し、以前に得た知識を適用するのに役立ちます。 場合によっては、これにより、プログラムが既知のリストにすぐに追加される可能性があります。 はるかに少ない頻度で、信頼できる発行元の一覧にデジタル証明書が追加されます。
   - question: >
-      プログラムの検出に異議を唱えてください。
+      操作方法プログラムの検出に異議がありますか?
     answer: >
-      問題のファイルをソフトウェア開発者として提出します。 提出が最終的な決定を得るまで待ちます。
+      問題のファイルをソフトウェア開発者として送信します。 提出が最終的な決定になるまで待ちます。
 
 
-      申請の決定に満足できない場合は、申請結果に提供された開発者連絡先フォームを使用して Microsoft に連絡してください。 お客様が提供した情報を使用して、必要に応じてさらに調査を行います。
+      提出の決定に満足できない場合は、提出結果と共に提供される開発者の連絡先フォームを使用して Microsoft に連絡してください。 必要に応じて、お客様から提供された情報を使用して詳細を調査します。
 
 
-      Microsoft がマルウェアと望ましくない可能性のあるアプリケーション [(PUA)](criteria.md) を特定する方法について、すべてのソフトウェア ベンダーと開発者に確認をお勧めしています。
+      Microsoft が [マルウェアと望ましくない可能性のあるアプリケーション (PUA) を識別する方法については、](criteria.md)すべてのソフトウェア ベンダーと開発者に読み取ることをお勧めします。
   - question: >
-      Microsoft がプログラムのコピーを求める理由
+      Microsoft がプログラムのコピーを要求する理由
     answer: >
-      コピーを提供すると、分析に役立ちます。 ユーザー (MAPS[) のMicrosoft Active Protection Service、](https://www.microsoft.com/msrc/mapp)これらの要求を受け取る場合があります。 システムがファイルを受信して処理すると、要求は停止します。
+      コピーを提供すると、分析に役立ちます。 [Microsoft Active Protection Service (MAPS)](https://www.microsoft.com/msrc/mapp) の参加者は、これらの要求を受け取ることがあります。 システムがファイルを受信して処理すると、要求は停止します。
   - question: >
-      Microsoft がインストーラーをソフトウェア バンドルラーとして分類する理由
+      Microsoft がインストーラーをソフトウェア バンドルャーとして分類する理由
     answer: >
-      これは、望ましくないソフトウェアとして分類されたプログラムを提供する指示が含まれている。 アプリケーションで望 [ましくないと](criteria.md) 見なされる動作を確認するために使用する条件を確認できます。
+      これには、不要なソフトウェアとして分類されたプログラムを提供する手順が含まれています。 不要と見なされる動作をアプリケーションで確認するために使用する [条件](criteria.md) を確認できます。
   - question: >
-      ファイアウォールがプログラムWindows Defenderブロックする理由
+      Windows Defender ファイアウォールがプログラムをブロックしているのはなぜですか?
     answer: >
-      ファイアウォール ブロックは、その他の Microsoft マルウェアMicrosoft Defender ウイルス対策関連付けは行ないます。 [ファイアウォールについてWindows Defenderします](/windows/security/windows-firewall/windows-firewall-with-advanced-security.md)。
+      ファイアウォール ブロックは、Microsoft Defender ウイルス対策やその他の Microsoft マルウェア対策とは関係ありません。 [ファイアウォールWindows Defenderについて説明します](/windows/security/windows-firewall/windows-firewall-with-advanced-security.md)。
   - question: >
-      プログラムがMicrosoft Defender SmartScreen一般的にダウンロードされていないと言う理由
-    answer: これは、Microsoft のマルウェア対策Microsoft Defender ウイルス対策関連付けは行う必要があります。 [詳細については、Microsoft Defender SmartScreen](/windows/security/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)
+      プログラムが一般的にダウンロードされていないとMicrosoft Defender SmartScreenが言うのはなぜですか?
+    answer: これは、Microsoft Defender ウイルス対策およびその他の Microsoft マルウェア対策とは関係ありません。 [Microsoft Defender SmartScreenについて学習する](/windows/security/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)

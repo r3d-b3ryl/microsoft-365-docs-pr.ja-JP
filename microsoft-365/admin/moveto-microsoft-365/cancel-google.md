@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Google Workspace サブスクリプションをキャンセルするが、ドメインを保持する方法について説明します。
+description: Google Workspace サブスクリプションをキャンセルし、ドメインを保持する方法について説明します。
 ms.openlocfilehash: 65aedc876b2554aa5573947615fc5e9281b5c5c0
 ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: MT
@@ -30,12 +30,12 @@ ms.locfileid: "62825658"
 ---
 # <a name="cancel-google-workspace-subscription"></a>Google Workspace サブスクリプションをキャンセルする
 
-1. Google 管理者に [サインインし、[課金](https://admin.google.com/) ] に **移動します**。
-1. [サブスクリプション **] ボックスの一覧** で、G Suite サブスクリプション、サブスクリプションのキャンセル、および [続行] の順に選択 **します**。
+1. [Google Admin](https://admin.google.com/) にサインインし、[**課金]** に移動します。
+1. **[サブスクリプション]** の一覧で、G Suite サブスクリプションを選択し、[**サブスクリプションのキャンセル]** を選択して、[**続行**] を選択します。
 
     > [!IMPORTANT]
-    > サブスクリプションはすぐに取り消され、このアクションを元に戻すことはできません。
+    > サブスクリプションは直ちに取り消され、この操作を元に戻すことはできません。
 
-    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Google 管理請求ページのスクリーン ショット。":::
+    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Google 管理者の課金ページのスクリーン ショット。":::
 
-DNS ホスト プロバイダーが Google ドメインではない場合は、[サブスクリプション] リストに [ドメイン登録] が表示されない場合があります。
+DNS ホスト プロバイダーが Google ドメインでない場合、サブスクリプションの一覧にドメイン登録が表示されない場合があることに注意してください。

@@ -73,17 +73,17 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 
 |ワークロード/サービス  |名前付きエンティティのサポート  |
 |---------|---------|
-|Office Win32 クライアント ポリシー ヒント    |サポート対象外  |
+|Office Win32 クライアント ポリシー ヒント    |非サポート  |
 |Office WAC クライアント ポリシー ヒント    |サポート         |
-|OWA ポリシーのヒント     |サポート対象外         |
-|Outlook ポリシーヒント     |サポート対象外 |
+|OWA ポリシーのヒント     |非サポート         |
+|Outlook ポリシーヒント     |非サポート |
 |エンドポイント (Windows 10、11 台のデバイス)     |サポート  |
 |Exchange トランスポート ルール     |サポート |
 |保存データをOneDrive for Businessする     |サポート         |
 |SharePoint Online data-at-rest     |サポート         |
 |保存データをTeamsする     |サポート         |
 |電子メール メッセージの保存時データ     |プライバシー サービス プランを使用するテナントでサポートされている         |
-<!--|Microsoft Defender for Cloud Apps     |サポート対象         |-->
+<!--|Microsoft Defender for Cloud Apps     |サポートされる         |-->
 
 ### <a name="autolabeling"></a>自動ラベル付け
 
@@ -96,7 +96,7 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 |OWA     |サポート |
 |Exchangeトランスポート     |サポート |
 |保存データをOneDrive for Businessする     |サポート |
-|SharePoint Online data-at-rest|サポートされている|
+|SharePoint Online data-at-rest|サポート|
 |Azure Information Protection (AIP) スキャナー|サポートなし|
 
 ## <a name="known-issues"></a>既知の問題
@@ -106,7 +106,7 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 |DLP ポリシーのヒント (OWA、Outlook、Office Win32 クライアント)     |   エンティティの条件を含むポリシー ヒントは、"一致しない" 結果になります      |
 | 人名のアジア言語サポート (中国語、日本語、韓国語)    | 人物名のラテン語ベースの文字セットでのみサポートされている名前付きエンティティ (つまり、漢字はサポートされていません)        |
 |オンプレミスのリポジトリ    | ワークロードとしてサポートされていません|
-|Power BI (プレビュー) | サポート対象外
+|Power BI (プレビュー) | 非サポート
 
 <!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
 

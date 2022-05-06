@@ -1,5 +1,5 @@
 ---
-title: サブスクリプションへのユーザー Microsoft 365 Business Standard招待する
+title: ユーザーをMicrosoft 365 Business Standardサブスクリプションに招待する
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,7 +13,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-description: ユーザーに組織への参加をMicrosoft 365 Business Standardする
+description: ユーザーを組織に参加Microsoft 365 Business Standard招待する
 ms.openlocfilehash: bdf5c9e0f5957c07a024b14384fa825858618ba4
 ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
@@ -21,74 +21,74 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/13/2021
 ms.locfileid: "61421416"
 ---
-# <a name="invite-users-to-microsoft-365-business-standard-admin"></a>ユーザーをユーザーにMicrosoft 365 Business Standardする (管理者)
+# <a name="invite-users-to-microsoft-365-business-standard-admin"></a>Microsoft 365 Business Standardにユーザーを招待する (管理者)
 
 > [!IMPORTANT]
-> これらの手順は、ユーザーとMicrosoft 365 Business StandardにMicrosoft 365 Apps for business。
+> これらの手順は、Microsoft 365 Business StandardとMicrosoft 365 Apps for businessに適用されます。
 
-組織のサブスクリプションの管理者Microsoft 365 Business Standard、同僚や同僚を招待して、ビジネス サブスクリプションにMicrosoft 365を使用できます。 同僚や同僚をサブスクリプションに招待すると、次のすべての機能とサービスが共有されます。
+Microsoft 365 Business Standard サブスクリプションの管理者は、同僚や同僚を招待して、ビジネス サブスクリプションのMicrosoft 365を共有して使用できます。 同僚や同僚をサブスクリプションに招待すると、次のすべての機能とサービスが共有されます。
 
-- Outlook、Word、Excel、PowerPoint、OneNote など、Office アプリのデスクトップ バージョンを取得します (pc 専用の Access と Publisher)。
-- チームワーク用のハブを作成して、ユーザーとユーザーを接続Microsoft Teams。
-- ユーザーごとに 1 TB のクラウド ストレージOneDriveファイルを保存して共有します。
-- 1 つのライセンスを使用して、5 つのモバイル Office、5 つのタブレット、1 ユーザーあたり 5 つの PC または Mac に完全にインストールされたアプリをカバーします。
-- Microsoft の 24 時間電話と Web サポートでいつでもヘルプを受け取ることができます。
+- Outlook、Word、Excel、PowerPoint、OneNoteなど、デスクトップ バージョンのOffice アプリを取得します (PC の場合は Access とPublisherを追加)。
+- Microsoft Teamsを使用してユーザーを結び付けるチームワークのハブを作成します。
+- ユーザーあたり 1 TB のクラウド ストレージOneDriveファイルを保存して共有します。
+- 1 つのライセンスを使用して、ユーザーあたり 5 台のモバイル デバイス、5 台のタブレット、および 5 台の PC または Mac に完全にインストールされたOffice アプリをカバーします。
+- Microsoft からの 24 時間の電話と Web サポートでいつでもサポートを受けることができます。
 
 > [!Note]
-> Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「 [管理者ロールの割り当](../add-users/assign-admin-roles.md) て」を参照してください。
+> Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「[管理者ロールを割り当てる](../add-users/assign-admin-roles.md)」 をご覧ください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
-ユーザーまたはユーザーのアカウントに既[にMicrosoft 365 Business Standard](signup-business-standard.md)確認Microsoft 365 Apps for business。 また、Business Standard 組織または [セットアップ[]](../setup/setup-business-standard.md)組織が既にセットアップ済[みMicrosoft 365 Apps for business。](../setup/setup-apps-for-business.md) これらの手順を完了したら、ユーザーに招待を共有できます。
+[Microsoft 365 Business StandardまたはMicrosoft 365 Apps for businessに](signup-business-standard.md)既にサインアップしていることを確認します。 [また、Business Standard 組織](../setup/setup-business-standard.md)または[セットアップ Microsoft 365 Apps for business](../setup/setup-apps-for-business.md)が既に設定されていることを確認します。 これらの手順を完了したら、ユーザーに招待を共有できます。
 
-## <a name="share-an-invitation-to-a-microsoft-365-business-standard-subscription"></a>サブスクリプションへの招待をMicrosoft 365 Business Standardする
+## <a name="share-an-invitation-to-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 Business Standard サブスクリプションへの招待を共有する
 
-1. [ユーザーのMicrosoft 365 管理センター] で、[**ユーザーを招待する] をMicrosoft 365。**
+1. Microsoft 365 管理センターで、[ユーザー **をMicrosoft 365に招待** する] を選択します。
 
-2. 招待するユーザーのユーザー名とメール アドレスを追加し、[送信] を選択 **します**。 招待メールは、ユーザー アカウント情報を追加するために選択したユーザー全員に送信Microsoft 365。
+2. 招待するユーザーのユーザー名とメール アドレスを追加し、[送信] を選択 **します**。 選択したすべてのユーザーに招待メールが送信され、ユーザー アカウント情報がMicrosoft 365に追加されます。
 
 ## <a name="next-steps"></a>次の手順
 
-ユーザーをフォローアップし、ユーザーがサブスクリプションの共有に関して送信したメールの招待を受け取Microsoft 365 Business Standardします。
+ユーザーをフォローアップし、Microsoft 365 Business Standard サブスクリプションの共有に関して送信した電子メールの招待を受け取ったことを確認します。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="i-shared-an-email-invite-but-the-user-didnt-receive-the-email"></a>メールの招待を共有しましたが、ユーザーがメールを受信しなかった場合
+### <a name="i-shared-an-email-invite-but-the-user-didnt-receive-the-email"></a>電子メールの招待を共有しましたが、ユーザーが電子メールを受信しませんでしたか?
 
-- ユーザーに迷惑メール フォルダーの確認を求める。
-- [招待メール] を [招待メール] で再送信Microsoft 365 管理センター。 管理センターで、ユーザーにカーソルを合わせると、メールの招待を再送信するアクションを選択します。
-- ユーザーに入力したメール アドレスが正しいか確認します。
+- スパム フォルダーを確認するようにユーザーに依頼します。
+- Microsoft 365 管理センターで招待メールを再送信します。 管理センターで、ユーザーにマウス ポインターを合わせ、電子メールの招待を再送信するアクションを選択します。
+- ユーザーに入力したメール アドレスが正しいことを確認します。
 
-### <a name="how-can-i-help-an-employee-join-my-business-and-leave-another-business"></a>従業員が自分のビジネスに参加し、別のビジネスを離れるのを支援する方法
+### <a name="how-can-i-help-an-employee-join-my-business-and-leave-another-business"></a>従業員が自分のビジネスに参加し、別のビジネスを離れるのを支援するにはどうすればよいですか?
 
 この場合、いくつかのオプションがあります。  
 
-1. 他のビジネスのビジネス所有者または管理者に問い合わせ、そのビジネスから削除を求めできます。 その後、組織に追加できます。  
+1. 他のビジネスの所有者または管理者に連絡し、そのビジネスから削除するように求めることができます。 その後、それらを組織に追加できます。  
 
-2. 以下の手順に従って、自分自身を削除できます。
+2. 以下の手順に従って、削除できます。
 
     1. https://myapps.microsoft.com/に移動します。
     2. アカウントにサインインし、プロファイルのイニシャルを選択します。
-    3. [アカウント **の表示]**  >  **組織の管理 組織**  >  **を離れるを選択する**
-    4. [OK **のままにする]**  >  **を選択します**。
+    3. **[View accountManage** **organizationsLeave organization]\**(アカウント > **の管理組織** > を表示\) を選択します。
+    4. **[LeaveOK** > ] **を選択します**。
 
-### <a name="how-do-i-help-someone-install-microsoft-office"></a>ユーザーがアプリをインストールする方法Microsoft Office?
+### <a name="how-do-i-help-someone-install-microsoft-office"></a>操作方法誰かがMicrosoft Officeをインストールするのに役立ちますか?
 
-この記事を送信して、PC または MAC Office 2019 Microsoft 365 Office または Office [2019](https://support.microsoft.com/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658)をダウンロードしてインストールします。
+PC [または MAC に 2019 Microsoft 365 OfficeまたはOfficeをダウンロードしてインストールするOfficeのインストールに](https://support.microsoft.com/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658)役立つ記事を送信します。
 
-### <a name="how-do-i-meet-common-gdpr-general-data-protection-regulation-obligations-for-my-organization"></a>組織の一般的な GDPR (一般データ保護規則) の義務を満たす方法
+### <a name="how-do-i-meet-common-gdpr-general-data-protection-regulation-obligations-for-my-organization"></a>組織操作方法一般的な GDPR (一般的なデータ保護規則) の義務を満たしていますか?
 
-GDPR の下では、従業員または顧客が Microsoft クラウド内の情報の取得または削除を求める場合があります。 詳細については、「データ主体要求 [」を参照してください](/compliance/regulatory/gdpr-data-subject-requests)。
+GDPR の場合、従業員または顧客は、Microsoft クラウド内の従業員に関するすべての情報を取得または削除するよう求めることができます。 詳細については、 [データ 主体の要求](/compliance/regulatory/gdpr-data-subject-requests)を確認してください。
 
-Microsoft 365 Business サブスクリプションの一部として Microsoft クラウドに保存されたデータを検索するには、ユーザーと招待した各ユーザーが、OneDrive などの場所でデータを検索するためにアクセス [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) する必要があります。  さらに、ユーザー (ビジネスまたは管理者) は、ポータルに保存されている従業員アカウント データを検索[するAzure Active Directoryがあります](/compliance/regulatory/gdpr-dsr-office365)。
+Microsoft 365 Business サブスクリプションの一部として Microsoft クラウドに保存されたデータを検索するには、招待した各ユーザーと、OneDriveなどの場所でデータを検索するためにアクセス[https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy)する必要があります。  また、Azure Active Directory [ポータル](/compliance/regulatory/gdpr-dsr-office365)に保存されている従業員アカウント データを検索する必要がある場合もあります。
 
-ユーザーや他のユーザーがドキュメントを保存する方法によっては、ユーザーと招待したユーザーは、検索に組み込みの機能を使用し、Windows PC や Mac、スマートフォンのビジネス アプリ、Microsoft 以外のアプリやサイトに保存されている内容を検出する機能を削除する必要があります。
+ユーザーや他のユーザーがドキュメントを保存する方法によっては、招待したすべてのユーザーが、組み込みの検索を使用し、機能を削除して、Windows PC や Mac、スマートフォン、Microsoft 以外のアプリやサイトのビジネス アプリに保存されている内容を検出する必要があります。
 
 > [!NOTE]
-> ドメインを接続し、ユーザーとユーザーがビジネス アカウントを使用して Microsoft クラウドにデータを保存すると[、GDPR](/compliance/regulatory/gdpr-dsr-office365)および CCPA の Office 365 データ主体要求に関するトピックのガイダンスに従って、すべてのユーザーに代わってデータ主体要求を実行できます。
+> ドメインをアタッチし、ビジネス アカウントを使用して Microsoft クラウドにデータを保存したら、[GDPR と CCPA のOffice 365データ主体](/compliance/regulatory/gdpr-dsr-office365)要求に関するトピックのガイダンスに従って、すべてのユーザーに代わってデータ主体の要求を実行できます。
 
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365 Business Standard のセットアップ](../setup/setup-business-standard.md)
 
-[ユーザーへの招待をMicrosoft 365 Business Standardする (ユーザー)](user-invite-business-standard.md)
+[Microsoft 365 Business Standardへの招待を受け入れる (ユーザー)](user-invite-business-standard.md)

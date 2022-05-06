@@ -22,7 +22,7 @@ ms.lasthandoff: 08/05/2021
 ms.locfileid: "53792952"
 ---
 >[!TIP]
->パフォーマンスを向上するために、地理的な場所に近いサーバーを使用できます。
+>パフォーマンスを向上させるために、地理的な場所に近いサーバーを使用できます。
 > - api-us.securitycenter.microsoft.com
 > - api-eu.securitycenter.microsoft.com
 > - api-uk.securitycenter.microsoft.com

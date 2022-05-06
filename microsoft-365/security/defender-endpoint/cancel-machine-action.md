@@ -1,7 +1,7 @@
 ---
-title: マシン アクション API のキャンセル
-description: 既に起動されているコンピューターアクションをキャンセルする方法について
-keywords: apis, graph api,
+title: マシン アクション API を取り消す
+description: 既に起動されているマシン アクションを取り消す方法について説明します
+keywords: apis、graph api、
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63322913"
 ---
-# <a name="cancel-machine-action-api"></a>マシン アクション API のキャンセル
+# <a name="cancel-machine-action-api"></a>マシン アクション API を取り消す
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "63322913"
 
 ## <a name="api-description"></a>API の説明
 
-まだ最終状態ではない既に起動されているコンピューター アクションをキャンセルします (完了、取り消し、失敗)。
+まだ最終的な状態ではない (完了、キャンセル、失敗) 既に起動されたマシン アクションをキャンセルします。
 
 ## <a name="limitations"></a>制限事項
 
@@ -51,12 +51,12 @@ ms.locfileid: "63322913"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
-|アプリケーション|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|forensics の収集 <br>マシンの隔離<br>コードの実行制限<br>  スキャン マシン<br>  コンピューターのオフロード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
-|委任 (職場または学校のアカウント)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|forensics の収集<br> マシンの隔離<br>  コードの実行制限<br> スキャン マシン<br>コンピューターのオフロード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
+|アプリケーション|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|フォレンジックを収集する <br>マシンの隔離<br>コードの実行制限<br>  コンピューターをスキャンする<br>  コンピューターのオフロード<br> 停止と検疫<br> 特定のマシンでライブ応答を実行する|
+|委任 (職場または学校のアカウント)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|フォレンジックを収集する<br> マシンの隔離<br>  コードの実行制限<br> コンピューターをスキャンする<br>コンピューターのオフロード<br> 停止と検疫<br> 特定のマシンでライブ応答を実行する|
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -66,20 +66,20 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|型|説明|
+|名前|種類|説明|
 |---|---|---|
 |Authorization|String|ベアラー {token}。必須。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|型|説明|
+|パラメーター|種類|説明|
 |---|---|---|
-|コメント|文字列|キャンセル アクションに関連付けるコメント。|
+|コメント|文字列|取り消しアクションに関連付けるコメント。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは Machine Action エンティティを持つ 200 OK 応答コードを返します。 指定した ID を持つコンピューター アクション エンティティが見つからなかった場合 - 404 Not Found。
+成功した場合、このメソッドは Machine Action エンティティを含む 200 OK 応答コードを返します。 指定した ID を持つマシン アクション エンティティが見つからなかった場合は 、404 Not Found です。
 
 ## <a name="example"></a>例
 
@@ -100,4 +100,4 @@ https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-a
 
 ## <a name="related-topic"></a>関連トピック
 
-- [コンピューター アクション API の取得](get-machineaction-object.md)
+- [マシン アクション API を取得する](get-machineaction-object.md)

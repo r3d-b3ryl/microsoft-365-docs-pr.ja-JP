@@ -1,7 +1,7 @@
 ---
 title: ライブラリ ファイルを一覧表示する
 description: ライブ応答ライブラリ ファイルを一覧表示する方法について説明します。
-keywords: apis, graph api, supported apis, get, devices
+keywords: apis, graph api, サポートされている API, get, devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -51,12 +51,12 @@ ms.locfileid: "63526910"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
 
 |アクセス許可の種類                       |      アクセス許可          |  アクセス許可の表示名 | 
 |-----------------|--------|---------------------------|  
-| アプリケーション                        | Library.Manage | ライブ応答ライブラリの管理 |
-| 委任 (職場または学校のアカウント) | Library.Manage | ライブ応答ライブラリの管理 |
+| アプリケーション                        | Library.Manage | ライブ応答ライブラリを管理する |
+| 委任 (職場または学校のアカウント) | Library.Manage | ライブ応答ライブラリを管理する |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -68,13 +68,13 @@ GET https://api.securitycenter.microsoft.com/api/libraryfiles
 
 | 名前         |      種類                     | 説明
 |-----------------|--------|---------------------------|
-| Authorization   | 文字列 | ベアラー {token}。必須。 |
+| Authorization   | String | ベアラー {token}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 Empty
 
 ## <a name="response"></a>応答 
-成功した場合、このメソッドは、ライブ応答ライブラリ ファイル エンティティのコレクションを持つ 200 - OK 応答コードを返します。
+成功した場合、このメソッドは、ライブ応答ライブラリ ファイル エンティティのコレクションを含む 200 - OK 応答コードを返します。
 
 ## <a name="example"></a>例
 

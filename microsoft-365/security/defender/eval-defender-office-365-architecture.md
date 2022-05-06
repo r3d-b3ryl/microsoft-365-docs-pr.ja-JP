@@ -1,6 +1,6 @@
 ---
-title: アーキテクチャ要件と計画の概念を確認Microsoft Defender for Office 365
-description: テスト ラボまたはパイロットMicrosoft Defender for Office 365をMicrosoft 365 Defenderする前に、Microsoft 365の ID を理解するのに役立ちます。
+title: Microsoft Defender for Office 365のアーキテクチャ要件と計画の概念を確認する
+description: Microsoft 365 DefenderのMicrosoft Defender for Office 365の技術図は、試用版ラボまたはパイロット環境を構築する前に、Microsoft 365で ID を理解するのに役立ちます。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,75 +28,75 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/31/2022
 ms.locfileid: "64569471"
 ---
-# <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>アーキテクチャMicrosoft Defender for Office 365主な概念を確認する
+# <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Microsoft Defender for Office 365アーキテクチャの要件と主要な概念を確認する
 
 
 **適用対象:**
 - Microsoft 365 Defender
 
-この記事は、ユーザーの評価環境をセットアップするプロセスの手順 [1/3](eval-defender-office-365-overview.md) Microsoft Defender for Office 365。 このプロセスの詳細については、概要の記事を [参照してください](eval-defender-office-365-overview.md)。
+この記事は、Microsoft Defender for Office 365の評価環境を設定する手順 [1/3](eval-defender-office-365-overview.md) です。 このプロセスの詳細については、 [概要に](eval-defender-office-365-overview.md)関する記事を参照してください。
 
-この機能をDefender for Office 365、アーキテクチャを理解し、要件を満たしていることを確認してください。 この記事では、アーキテクチャ、主要な概念、および環境が満たす必要があるExchange Onlineについて説明します。
+Defender for Office 365を有効にする前に、アーキテクチャを理解し、要件を満たすことができることを確認してください。 この記事では、アーキテクチャ、主要な概念、およびExchange Online環境で満たす必要がある前提条件について説明します。
 
 ## <a name="understand-the-architecture"></a>アーキテクチャを理解する
 
-次の図は、サードパーティの SMTP ゲートウェイまたはオンプレミス統合を含む、Office Microsoft Defender for Office のベースライン アーキテクチャを示しています。 ハイブリッド共存シナリオ (つまり、実稼働メールボックスはオンプレミスとオンラインの両方) では、より複雑な構成が必要であり、この記事や評価ガイダンスでは説明しません。
+次の図は、サード パーティの SMTP ゲートウェイまたはオンプレミス統合を含めることができる Microsoft Defender for Officeのベースライン アーキテクチャを示しています。 ハイブリッド共存シナリオ (つまり、運用メールボックスはオンプレミスとオンラインの両方) では、より複雑な構成が必要であり、この記事や評価ガイダンスでは取り上げられません。
 
-:::image type="content" source="../../media/defender/m365-defender-office-architecture.png" alt-text="アプリケーションのアーキテクチャMicrosoft Defender for Office 365" lightbox="../../media/defender/m365-defender-office-architecture.png":::
+:::image type="content" source="../../media/defender/m365-defender-office-architecture.png" alt-text="Microsoft Defender for Office 365のアーキテクチャ" lightbox="../../media/defender/m365-defender-office-architecture.png":::
 
-次の表に、この図を示します。
+次の表では、この図について説明します。
 
 |コールアウト  |説明  |
 |---------|---------|
-|1     | 外部送信者のホスト サーバーは、通常、MX レコードのパブリック DNS 参照を実行します。これは、メッセージを中継するターゲット サーバーを提供します。  この参照は、直接 (EXO) Exchange Online、または EXO に対して中継するように構成された SMTP ゲートウェイのいずれかです。  |
-|2     | Exchange Online Protection接続をネゴシエートして検証し、メッセージ ヘッダーとコンテンツを検査して、必要な追加のポリシー、タグ付け、または処理を決定します。  |
-|3     | Exchange Onlineは、より高度Microsoft Defender for Office 365、軽減、および修復を提供するために、脅威と統合されます。 |
-|4     | 悪意のある、ブロックされている、または検疫されていないメッセージが処理され、迷惑メール、メールボックス ルール、または他の設定に関連するユーザー設定が評価され、トリガーされる EXO で受信者に配信されます。 |
-|5     | メールがオンプレミスの Active Directory有効なオブジェクトAzure AD Connectアカウントを同期およびプロビジョニングして、メールが有効なオブジェクトとアカウントを同期し、最終的にAzure Active DirectoryをExchange Online。 |
-|6      | オンプレミス環境を統合する場合は、メール関連の属性、設定、および構成の管理と管理をサポートするために Exchange サーバーを使用してください。 |
-|7      | Microsoft Defender for Office 365検出および応答 (XDR) Microsoft 365 Defender信号を共有します。|
+|1     | 外部送信者のホスト サーバーは、通常、MX レコードのパブリック DNS ルックアップを実行します。これにより、ターゲット サーバーはメッセージを中継できます。  この紹介は、直接Exchange Online (EXO) か、EXO に対してリレーするように構成された SMTP ゲートウェイのいずれかです。  |
+|2     | Exchange Online Protectionは、受信接続をネゴシエートして検証し、メッセージ ヘッダーとコンテンツを調べて、必要な追加のポリシー、タグ付け、または処理を決定します。  |
+|3     | Exchange Onlineは、Microsoft Defender for Office 365と統合して、より高度な脅威の保護、軽減、修復を提供します。 |
+|4     | 悪意のあるメッセージ、ブロックされたメッセージ、または検疫されていないメッセージは、迷惑メール、メールボックス ルール、またはその他の設定に関連するユーザー設定が評価およびトリガーされる EXO で受信者に処理および配信されます。 |
+|5     | オンプレミスの Active Directoryとの統合を有効にするには、Azure AD Connectを使用して、メールが有効なオブジェクトとアカウントを同期してAzure Active Directoryにプロビジョニングし、最終的にExchange Onlineできます。 |
+|6      | オンプレミス環境を統合する場合は、Exchange サーバーを使用して、メール関連の属性、設定、構成の管理と管理をサポートすることをお勧めします |
+|7      | Microsoft Defender for Office 365は、拡張検出と応答 (XDR) のためにMicrosoft 365 Defenderにシグナルを共有します。|
 
-オンプレミスの統合は一般的ですが、オプションです。 環境がクラウド専用の場合は、このガイダンスも役立ちます。
+オンプレミス統合は一般的ですが省略可能です。 環境がクラウド専用の場合は、このガイダンスも役立つでしょう。
 
 ## <a name="understand-key-concepts"></a>主要な概念を理解する
 
-次の表では、MDO の評価、構成、および展開を行う際に理解するために重要な重要な概念を示しています。
+次の表では、MDO を評価、構成、デプロイするときに理解するために重要な重要な概念を示します。
 
 
 |概念  |説明 |詳細情報  |
 |---------|---------|---------|
-|Exchange Online Protection      |    Exchange Online Protection (EOP) は、スパムメールやマルウェアメールから組織を保護するのに役立つクラウドベースのフィルタリング サービスです。 EOP は、ライセンスを含むすべてのMicrosoft 365ライセンスにExchange Online。     |   [Exchange Online Protection の概要](../office-365-security/exchange-online-protection-overview.md)      |
-|マルウェア対策保護     |    EXO にメールボックスがある組織は、マルウェアから自動的に保護されます。     |  [EOP のマルウェア対策保護](../office-365-security/anti-malware-protection.md)       |
-|スパム対策保護     |   EXO のメールボックスを持つ組織は、迷惑メールやスパム ポリシーから自動的に保護されます。      |  [EOP のスパム対策保護](../office-365-security/anti-spam-protection.md)       |
-|フィッシング対策保護 |  MDO は、スピア フィッシング、捕鯨、ランサムウェア、その他の悪意のあるアクティビティに関連する、より高度なフィッシング対策保護を提供します。   | [アプリ内の追加のフィッシング対策Microsoft Defender for Office 365](../office-365-security/anti-phishing-protection.md)   |
-|スプーフィング対策保護     |   EOP には、偽装 (偽造) 送信者から組織を保護するための機能が含まれています。      |   [EOP のスプーフィング対策保護](../office-365-security/anti-spoofing-protection.md)      |
-|安全な添付ファイル     |   セーフ添付ファイルは、配信される前に、仮想環境を使用して電子メール メッセージ内の添付ファイルをチェックして "削除" することで、保護の層を強化します。      |   [セーフの添付ファイルMicrosoft Defender for Office 365](../office-365-security/safe-attachments.md)      |
-|セーフ、SharePoint、OneDriveのMicrosoft Teams     |    さらに、セーフ、SharePoint OneDrive、Microsoft Teams 用の添付ファイルは、クラウド ストレージ リポジトリにアップロードされたファイルに対する保護を強化します。     |  [SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](../office-365-security/mdo-for-spo-odb-and-teams.md)       |
-|安全なリンク     | セーフリンクは、受信メール メッセージ内で URL のスキャンと書き換えを提供し、配信またはクリックする前にそれらのリンクの検証を提供する機能です。        |   [セーフのリンクMicrosoft Defender for Office 365](../office-365-security/safe-links.md)      |
+|Exchange Online Protection      |    Exchange Online Protection (EOP) は、スパムやマルウェアの電子メールから組織を保護するのに役立つクラウドベースのフィルター サービスです。 EOP は、Exchange Onlineを含むすべてのMicrosoft 365 ライセンスに含まれています。     |   [Exchange Online Protection の概要](../office-365-security/exchange-online-protection-overview.md)      |
+|マルウェア対策保護     |    EXO 内のメールボックスを持つ組織は、マルウェアから自動的に保護されます。     |  [EOP のマルウェア対策保護](../office-365-security/anti-malware-protection.md)       |
+|スパム対策保護     |   EXO 内のメールボックスを持つ組織は、迷惑メールやスパム ポリシーから自動的に保護されます。      |  [EOP のスパム対策保護](../office-365-security/anti-spam-protection.md)       |
+|フィッシング対策保護 |  MDO は、スピア フィッシング、ホアリング、ランサムウェア、その他の悪意のあるアクティビティに関連する、より高度なフィッシング対策保護を提供します。   | [Microsoft Defender for Office 365での追加のフィッシング対策保護](../office-365-security/anti-phishing-protection.md)   |
+|スプーフィング対策保護     |   EOP には、スプーフィングされた (偽造された) 送信者から組織を保護するのに役立つ機能が含まれています。      |   [EOP のスプーフィング対策保護](../office-365-security/anti-spoofing-protection.md)      |
+|安全な添付ファイル     |   セーフ添付ファイルは、仮想環境を使用して、電子メール メッセージの添付ファイルを配信する前に確認し、"爆発" することで、保護の追加レイヤーを提供します。      |   [Microsoft Defender for Office 365で添付ファイルをセーフする](../office-365-security/safe-attachments.md)      |
+|SharePoint、OneDrive、Microsoft Teamsの添付ファイルをセーフする     |    さらに、SharePoint、OneDrive、およびMicrosoft Teamsの添付ファイルをセーフすると、クラウド ストレージ リポジトリにアップロードされたファイルに対する保護の追加レイヤーが提供されます。     |  [SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](../office-365-security/mdo-for-spo-odb-and-teams.md)       |
+|安全なリンク     | セーフ リンクは、受信メール メッセージ内の URL スキャンと書き換えを提供し、リンクが配信またはクリックされる前にそれらのリンクの検証を提供する機能です。        |   [Microsoft Defender for Office 365 の安全なリンク](../office-365-security/safe-links.md)      |
 |    |         |         |
 
-Microsoft Defender for Officeに含まれる機能の詳細については、「Microsoft Defender for Office 365[」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+Microsoft Defender for Officeに含まれる機能の詳細については、[サービスの説明Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)参照してください。
 
 ## <a name="review-architecture-requirements"></a>アーキテクチャ要件を確認する
-成功した MDO 評価または実稼働パイロットは、次の前提条件を前提とします。
-- すべての受信者メールボックスは現在、Exchange Online。
-- パブリック MX レコードは EOP またはサード パーティの SMTP ゲートウェイに直接解決し、受信外部メールを EOP に直接中継します。
-- プライマリ 電子メール ドメインは、管理者の *権限* としてExchange Online。
-- 必要に応じて、ディレクトリ ベースの *エッジ* ブロック (DBEB) を正常に展開して構成しました。 詳細については、「Use [Directory-Based エッジ](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking) ブロック」を参照してください。
+MDO の評価または運用パイロットの成功は、次の前提条件を前提としています。
+- 現在、すべての受信者メールボックスがExchange Onlineされています。
+- パブリック MX レコードは EOP またはサードパーティの SMTP ゲートウェイに直接解決され、受信外部メールが EOP に直接リレーされます。
+- プライマリ電子メール ドメインは、Exchange Onlineで *権限のある* ものとして構成されます。
+- 必要に応じて *、ディレクトリ ベースのエッジ ブロック* (DBEB) を正常にデプロイして構成しました。 詳細については、「 [Directory-Based エッジ ブロックを使用して無効な受信者に送信されたメッセージを拒否する」を](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)参照してください。
 
 > [!IMPORTANT]
-> これらの要件が該当しない場合、またはハイブリッド共存シナリオに残っている場合、Microsoft Defender for Office 365 評価では、このガイダンスで完全に説明されていない複雑な構成または高度な構成が必要になります。
+> これらの要件が適用されない場合、またはハイブリッド共存シナリオにまだある場合、Microsoft Defender for Office 365評価では、このガイダンスで完全に説明されていないより複雑な構成または高度な構成が必要になる場合があります。
 
 ## <a name="siem-integration"></a>SIEM 統合
 
-Microsoft Sentinel Microsoft Defender for Office 365統合して、組織全体のセキュリティ イベントをより包括的に分析し、効果的かつ迅速な対応を行うプレイブックを構築できます。 詳細については、「Connect[アラート」を参照Microsoft Defender for Office 365](/azure/sentinel/connect-office-365-advanced-threat-protection)。
+Microsoft Defender for Office 365を Microsoft Sentinel と統合して、組織全体のセキュリティ イベントをより包括的に分析し、効果的かつ迅速な対応のためにプレイブックを構築できます。 詳細については、「[Microsoft Defender for Office 365からのアラートのConnect」を](/azure/sentinel/connect-office-365-advanced-threat-protection)参照してください。
 
-Microsoft Defender for Office 365アクティビティ管理 API を使用して、他のセキュリティ情報およびイベント管理 (SIEM) [ソリューションOffice 365統合することもできます](/office/office-365-management-api/office-365-management-activity-api-reference)。
+Microsoft Defender for Office 365は、[Office 365 アクティビティ管理 API](/office/office-365-management-api/office-365-management-activity-api-reference) を使用して、他のセキュリティ情報およびイベント管理 (SIEM) ソリューションに統合することもできます。
 
 ## <a name="next-steps"></a>次の手順
 
-手順 2/ 3: [評価環境を有効にするMicrosoft Defender for Office 365](eval-defender-office-365-enable-eval.md)
+手順 2/3: [評価環境のMicrosoft Defender for Office 365を有効にする](eval-defender-office-365-enable-eval.md)
 
-[評価] の概要[に戻Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
+[Microsoft Defender for Office 365の評価](eval-defender-office-365-overview.md)の概要に戻る
 
-[評価とパイロット] [の概要に戻Microsoft 365 Defender](eval-overview.md) 
+[評価とパイロットのMicrosoft 365 Defender](eval-overview.md)の概要に戻る 

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: 今月の最も閲覧された管理者ヘルプ記事の上位 20 件
-summary: 最終更新日 3/23/2022。 管理者に最も人気のあるヘルプ記事は何ですか? 毎月更新された 20 件の最も表示されるヘルプ記事のコレクションをご覧ください。
+summary: 最終更新日 2022 年 3 月 23 日。 管理者に最も人気のあるヘルプ記事はどれですか? 毎月更新された 20 件の最も閲覧回数の多いヘルプ記事のこのコレクションを確認してください。
 metadata:
   title: 今月の最も閲覧された管理者ヘルプ記事の上位 20 件
-  description: 毎月更新された管理者に最も人気のあるトップ 20 ヘルプ記事のコレクションをご覧ください。
+  description: 毎月更新される、管理者に最も人気のあるヘルプ記事上位 20 件のこのコレクションをご覧ください。
   ms.service: O365-administration
   ms.topic: landing-page
   author: SKjerland
@@ -19,13 +19,13 @@ metadata:
   ms.lasthandoff: 03/23/2022
   ms.locfileid: "63761524"
 landingContent:
-- title: データとサービスの管理
+- title: データとサービスを管理する
   linkLists:
   - linkListType: overview
     links:
     - text: 管理者ロールについて
       url: add-users/about-admin-roles.md
-    - text: Microsoft 365使用状況レポート
+    - text: 使用状況レポートをMicrosoft 365する
       url: activity-reports/activity-reports.md
   - linkListType: video
     links:
@@ -49,7 +49,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 登録番号とレビュー中の通知について
+    - text: 登録番号と確認不足通知について
       url: ../commerce/about-registration-numbers.md
   - linkListType: how-to-guide
     links:
@@ -69,7 +69,7 @@ landingContent:
       url: email/about-shared-mailboxes.md
   - linkListType: how-to-guide
     links:
-    - text: メール転送の構成 (Microsoft 365
+    - text: Microsoft 365でメール転送を構成する
       url: email/configure-email-forwarding.md
     - text: 共有メールボックスを作成する
       url: email/create-a-shared-mailbox.md
@@ -93,5 +93,5 @@ landingContent:
       url: manage/assign-licenses-to-users.md
     - text: 組織のパスワード有効期限ポリシーを設定します。
       url: manage/set-password-expiration-policy.md
-    - text: ユーザーが QR コードでモバイル Outlookにサインインできます
+    - text: ユーザーが QR コードを使用してモバイル アプリOutlookにサインインできるようにする
       url: manage/use-qr-code-download-outlook.md

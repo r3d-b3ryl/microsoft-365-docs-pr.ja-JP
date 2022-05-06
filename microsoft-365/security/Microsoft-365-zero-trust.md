@@ -79,7 +79,7 @@ Microsoft 365は、環境へのゼロ トラストの構築に役立つ多くの
 
 :::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.png" alt-text="ゼロ トラスト ID ポリシーとデバイス アクセス ポリシー ( 開始点レベル)" lightbox="../media/zero-trust/identity-access-starting-point-tier.png":::
 
-## <a name="step-2-manage-endpoints-with-intune"></a>手順 2. Intuneを使用してエンドポイントを管理する
+## <a name="step-2-manage-endpoints-with-intune"></a>手順 2。 Intuneを使用してエンドポイントを管理する
 
 次に、デバイスを管理に登録し、より高度な制御でデバイスの保護を開始します。
 
@@ -89,7 +89,7 @@ Microsoft 365は、環境へのゼロ トラストの構築に役立つ多くの
 
 |Includes|前提条件|含まれていない|
 |---------|---------|---------|
-|Intuneを使用してデバイスを登録します。 <ul><li>企業所有のデバイス</li><li>Autopilot/automated</li><li>登録</li></ul> <br> ポリシーを構成します。 <ul><li>App Protection ポリシー</li><li>コンプライアンス ポリシー</li><li>デバイス プロファイル ポリシー</li></ul>|Azure ADでエンドポイントを登録する|次のような情報保護機能の構成: <ul><li>機密情報の種類</li><li>ラベル</li><li>DLP ポリシー</li></ul> <br> これらの機能については、 [手順 5. を参照してください。機密データを保護および管理します](#step-5-protect-and-govern-sensitive-data) (この記事の後半)。|
+|Intuneを使用してデバイスを登録します。 <ul><li>企業所有のデバイス。</li><li>Autopilot/automated</li><li>登録</li></ul> <br> ポリシーを構成します。 <ul><li>App Protection ポリシー</li><li>コンプライアンス ポリシー</li><li>デバイス プロファイル ポリシー</li></ul>|Azure ADでエンドポイントを登録する|次のような情報保護機能の構成: <ul><li>機密情報の種類</li><li>ラベル</li><li>DLP ポリシー</li></ul> <br> これらの機能については、 [手順 5. を参照してください。機密データを保護および管理します](#step-5-protect-and-govern-sensitive-data) (この記事の後半)。|
 
 ## <a name="step-3-add-zero-trust-identity-and-device-access-protection--enterprise-policies"></a>手順 3. ゼロ トラスト ID とデバイス アクセス保護を追加する — Enterprise ポリシー
 

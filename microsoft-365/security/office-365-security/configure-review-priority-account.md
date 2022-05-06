@@ -54,7 +54,7 @@ ms.locfileid: "64891843"
 
 Microsoft Defender for Office 365は、アラート、レポート、および調査のフィルターとして使用できるタグとして優先度アカウントをサポートしています。
 
-詳細については、「[Microsoft Defender for Office 365のユーザー タグ](user-tags.md)」を参照してください。
+詳細については、「[Microsoft Defender for Office 365 のユーザー タグ](user-tags.md)」を参照してください。
 
 ## <a name="review-differentiated-protection-from-priority-account-protection"></a>優先度の高いアカウント保護から区別された保護を確認する
 
@@ -102,7 +102,7 @@ Microsoft Defender for Office 365は、アラート、レポート、および�
 
 エンティティ ページの上部にあるタブを使用すると、電子メールを効率的に調査できます。 [ **分析** ] タブをクリックします。[脅威 **の検出の詳細**] に[優先度のアカウント保護]が表示されるようになりました。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - [Microsoft Defender for Office 365のユーザー タグ](user-tags.md)
 - [優先アカウントを管理および監視する](../../admin/setup/priority-accounts.md)

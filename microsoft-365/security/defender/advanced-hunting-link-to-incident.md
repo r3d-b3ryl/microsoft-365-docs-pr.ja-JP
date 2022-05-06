@@ -1,7 +1,7 @@
 ---
 title: クエリ結果をインシデントにリンクする
 description: クエリ結果をインシデントにリンクする
-keywords: 高度な狩猟、インシデント、ピボット、エンティティ、go hunt、関連イベント、脅威狩り、サイバー脅威狩り、検索、クエリ、テレメトリ、Microsoft 365、Microsoft 365 Defender
+keywords: 高度な捜索, インシデント, ピボット, エンティティ, go hunt, 関連イベント, 脅威の捜索, サイバー脅威の捜索, 検索, クエリ, テレメトリ, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -36,57 +36,57 @@ ms.locfileid: "63755499"
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-インシデント機能へのリンクを使用して、調査中の新規または既存のインシデントに高度な検索クエリ結果を追加できます。 この機能を使用すると、高度な狩猟アクティビティからレコードを簡単にキャプチャできます。これにより、インシデントに関するイベントのタイムラインやコンテキストを豊富に作成できます。 
+インシデントへのリンク機能を使用すると、調査中の新しいインシデントまたは既存のインシデントに高度なハンティング クエリの結果を追加できます。 この機能は、高度な捜索アクティビティからレコードを簡単にキャプチャするのに役立ちます。これにより、インシデントに関するより豊富なタイムラインやイベントコンテキストを作成できます。 
 
-## <a name="link-results-to-new-or-existing-incidents"></a>結果を新規または既存のインシデントにリンクする
+## <a name="link-results-to-new-or-existing-incidents"></a>新しいインシデントまたは既存のインシデントに結果をリンクする
 
-1. 高度な検索クエリ ページで、まずクエリ フィールドにクエリを入力し、[クエリの実行] を選択して結果を取得します。
+1. 高度な検索クエリ ページで、最初に指定されたクエリ フィールドにクエリを入力し、[ **クエリの実行** ] を選択して結果を取得します。
 
-    :::image type="content" source="../../media/link-to-incident-1.png" alt-text="ポータルの [クエリ] Microsoft 365 Defender" lightbox="../../media/link-to-incident-1.png":::
+    :::image type="content" source="../../media/link-to-incident-1.png" alt-text="Microsoft 365 Defender ポータルの [クエリ] ページ" lightbox="../../media/link-to-incident-1.png":::
 
-2. [結果] ページで、作業している新しい調査または現在の調査に関連するイベントまたはレコードを選択し、[インシデントにリンク] **を選択します**。
+2. [結果] ページで、作業中の新規または現在の調査に関連するイベントまたはレコードを選択し、[ **インシデントへのリンク**] を選択します。
 
-    :::image type="content" source="../../media/link-to-incident-1b.png" alt-text="ポータルの [結果] タブの [インシデントへのリンク] オプションMicrosoft 365 Defenderします。" lightbox="../../media/link-to-incident-1b.png":::
+    :::image type="content" source="../../media/link-to-incident-1b.png" alt-text="Microsoft 365 Defender ポータルの [結果] タブの [インシデントへのリンク] オプション" lightbox="../../media/link-to-incident-1b.png":::
 
-3. [インシデント **へのリンク]** ウィンドウで [アラートの詳細] セクションを見つけ、[新しいインシデントの作成] を選択してイベントをアラートに変換し、新しいインシデントにグループ化します。
+3. [インシデントへのリンク] ウィンドウで **[アラートの詳細** ] セクションを見つけ、[ **新しいインシデントの作成** ] を選択してイベントをアラートに変換し、それらを新しいインシデントにグループ化します。
 
-    :::image type="content" source="../../media/link-to-incident-3-create-new.png" alt-text="[インシデントへのリンク] ウィンドウの [アラートの詳細] セクションは、Microsoft 365 Defenderポータル" lightbox="../../media/link-to-incident-3-create-new.png":::
+    :::image type="content" source="../../media/link-to-incident-3-create-new.png" alt-text="Microsoft 365 Defender ポータルの [インシデントへのリンク] ウィンドウの [アラートの詳細] セクション" lightbox="../../media/link-to-incident-3-create-new.png":::
     
-    または、[ **既存のインシデントへのリンク] を選択して** 、選択したレコードを既存のインシデントに追加します。 既存のインシデントのドロップダウン リストから関連するインシデントを選択します。 インシデント名または ID の最初の数文字を入力して、既存のインシデントを検索できます。 
+    または、[ **既存のインシデントにリンク]** を選択して、選択したレコードを既存のインシデントに追加します。 既存のインシデントのドロップダウン リストから関連するインシデントを選択します。 インシデント名または ID の最初のいくつかの文字を入力して、既存のインシデントを検索することもできます。 
 
-    :::image type="content" source="../../media/link-to-incident-3-link-to-existing.png" alt-text="[アラートの詳細] セクション (Microsoft 365 Defender ポータル)" lightbox="../../media/link-to-incident-3-link-to-existing.png":::
+    :::image type="content" source="../../media/link-to-incident-3-link-to-existing.png" alt-text="Microsoft 365 Defender ポータルの [アラートの詳細] セクション" lightbox="../../media/link-to-incident-3-link-to-existing.png":::
 
-4. どちらの選択でも、次の詳細を入力し、[次へ] を **選択します**。
-      - **アラート タイトル** - インシデントレスポンダーが理解できる結果の説明的なタイトルを提供します。 この説明的なタイトルは、アラート タイトルになります。
+4. どちらの選択でも、次の詳細を指定し、[ **次へ**] を選択します。
+      - **アラート タイトル** - インシデント レスポンダーが理解できる結果のわかりやすいタイトルを指定します。 このわかりやすいタイトルがアラート タイトルになります。
       - **重大度** - アラートのグループに適用される重大度を選択します。
-      - **[カテゴリ** ] - アラートの適切な脅威カテゴリを選択します。
-      - **説明** - グループ化されたアラートに役立つ説明を提供します。
+      - **カテゴリ** - アラートに適した脅威カテゴリを選択します。
+      - **説明** - グループ化されたアラートに役立つ説明を入力します。
       - **推奨されるアクション** - 修復アクションを提供します。
 
-5. [影響を **受けるエンティティ] セクション** で、影響を受ける主なエンティティまたは影響を受けるエンティティを選択します。 このセクションには、クエリ結果に基づく適用可能なエンティティだけが表示されます。 この例では、クエリを使用して、可能性がある電子メールのexfiltrationインシデントに関連するイベントを検索しました。したがって、Sender は影響を受けたエンティティです。 たとえば、4 つの異なる送信者がある場合、4 つのアラートが作成され、選択したインシデントにリンクされます。
+5. [ **影響を受けるエンティティ** ] セクションで、影響を受けるメイン エンティティまたは影響を受けるエンティティを選択します。 このセクションには、クエリ結果に基づく該当するエンティティのみが表示されます。 この例では、クエリを使用して、電子メール流出インシデントに関連するイベントを検索しました。そのため、送信者は影響を受けるエンティティです。 たとえば、4 つの異なる送信者がある場合は、4 つのアラートが作成され、選択したインシデントにリンクされます。
 
-     :::image type="content" source="../../media/link-to-incident-4-impacted-entities.png" alt-text="ポータルの [インシデントへのリンク] セクションの影響を受Microsoft 365 Defenderエンティティ" lightbox="../../media/link-to-incident-4-impacted-entities.png":::
+     :::image type="content" source="../../media/link-to-incident-4-impacted-entities.png" alt-text="Microsoft 365 Defender ポータルの [インシデントへのリンク] セクションの影響を受けるエンティティ" lightbox="../../media/link-to-incident-4-impacted-entities.png":::
 
 1. **[次へ]** を選択します。
-1. [概要] セクションで指定した詳細 **を確認** します。
-   :::image type="content" source="../../media/link-to-incident-5-summary.png" alt-text="ポータルの [インシデントへのリンク] セクションの結果Microsoft 365 Defenderページ" lightbox="../../media/link-to-incident-5-summary.png":::
+1. [ **概要** ] セクションで指定した詳細を確認します。
+   :::image type="content" source="../../media/link-to-incident-5-summary.png" alt-text="Microsoft 365 Defender ポータルの [インシデントへのリンク] セクションの結果ページ" lightbox="../../media/link-to-incident-5-summary.png":::
      
-1. [**完了**] を選択します。
+1. **[完了]** を選択します。
 
 ## <a name="view-linked-records-in-the-incident"></a>インシデント内のリンクされたレコードを表示する
 
 インシデント名を選択すると、イベントがリンクされているインシデントを表示できます。
-:::image type="content" source="../../media/link-to-incident-6-incident-pg.png" alt-text="ポータルの [概要] タブのイベントのMicrosoft 365 Defender画面" lightbox="../../media/link-to-incident-6-incident-pg.png":::
+:::image type="content" source="../../media/link-to-incident-6-incident-pg.png" alt-text="Microsoft 365 Defender ポータルの [概要] タブの [イベントの詳細] 画面" lightbox="../../media/link-to-incident-6-incident-pg.png":::
 
 この例では、選択した 4 つのイベントを表す 4 つのアラートが、新しいインシデントに正常にリンクされました。 
 
-各アラート ページで、タイムライン ビュー (利用可能な場合) およびクエリ結果ビューでイベントまたはイベントに関する完全な情報を見ることができます。
-:::image type="content" source="../../media/link-to-incident-7-alert-story.png" alt-text="イベントの詳細については、ポータルの [タイムライン] タブMicrosoft 365 Defenderします。" lightbox="../../media/link-to-incident-7-alert-story.png":::
+各アラート ページでは、イベントまたはイベントに関する完全な情報をタイムライン ビュー (使用可能な場合) とクエリ結果ビューで確認できます。
+:::image type="content" source="../../media/link-to-incident-7-alert-story.png" alt-text="Microsoft 365 Defender ポータルの [タイムライン] タブのイベントの完全な詳細" lightbox="../../media/link-to-incident-7-alert-story.png":::
 
-イベントを選択して、[レコードの検査] ウィンドウ **を開** くすることもできます。
-:::image type="content" source="../../media/link-to-incident-7-inspect-record.png" alt-text="イベントの詳細を確認するには、ポータルの [タイムライン] タブMicrosoft 365 Defenderします。" lightbox="../../media/link-to-incident-7-inspect-record.png":::
+イベントを選択して、[ **レコードの検査** ] ウィンドウを開くこともできます。
+:::image type="content" source="../../media/link-to-incident-7-inspect-record.png" alt-text="Microsoft 365 Defender ポータルの [タイムライン] タブのイベントの検査レコードの詳細" lightbox="../../media/link-to-incident-7-inspect-record.png":::
 
-## <a name="filter-for-events-added-using-advanced-hunting"></a>高度な検索を使用して追加されたイベントのフィルター
-インシデント キューとアラート キューを手動検出ソースでフィルター処理することで、高度な検索から生成されたアラート **を** 表示できます。
+## <a name="filter-for-events-added-using-advanced-hunting"></a>高度なハンティングを使用して追加されたイベントのフィルター
+**手動** 検出ソースでインシデント キューとアラート キューをフィルター処理することで、高度な捜索から生成されたアラートを表示できます。
 
-:::image type="content" source="../../media/link-to-incident-8-filter.png" alt-text="ポータルの [フィルター] ページの [インシデントと通知] キューの手動Microsoft 365 Defenderします。" lightbox="../../media/link-to-incident-8-filter.png":::
+:::image type="content" source="../../media/link-to-incident-8-filter.png" alt-text="Microsoft 365 Defender ポータルの [フィルター] ページの [インシデントとアラート] キューの手動フィルター処理" lightbox="../../media/link-to-incident-8-filter.png":::

@@ -1,7 +1,7 @@
 ---
-title: セキュリティMicrosoft 365 Defenderに統合する
-description: セキュリティ操作にMicrosoft 365 Defenderの基本。
-keywords: インシデント、アラート、調査、相関関係、攻撃、デバイス、ユーザー、ID、ID、メールボックス、メール、365、microsoft、m365、インシデント対応、サイバー攻撃、secops、セキュリティ操作、soc
+title: Microsoft 365 Defenderをセキュリティ操作に統合する
+description: Microsoft 365 Defenderをセキュリティ操作に統合する基本。
+keywords: インシデント, アラート, 調査, 相関関係, 攻撃, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365, インシデント対応, サイバー攻撃, secops, セキュリティ操作, soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -30,23 +30,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63330203"
 ---
-# <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>セキュリティMicrosoft 365 Defenderに統合する
+# <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Microsoft 365 Defenderをセキュリティ操作に統合する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-最新のセキュリティ 運用センター (SOC) は、セキュリティを組み込む前の展開プロセスでセキュリティ プロセスを移動する脅威防御戦略を取り入れた、インテリジェンス駆動型のアダプティブ組織です。 つまり、分離されたテクノロジとプロセスを単一のセキュリティ アナリストに割り当てている従来の割り当ては、複数のソースからのデータの大幅な増加をサポートしなくなりました。 セキュリティ アナリストとエンジニアは、より全体的なアプローチを取り、さまざまなプラットフォームや分野間で共有された洞察を使用して効果的なアクションを実行することを求めらされています。
+最新のセキュリティ オペレーション センター (SOC) は、セキュリティが組み込まれるように、デプロイ プロセスの前にセキュリティ プロセスを移動するという脅威防御戦略を採用するインテリジェンス主導の適応型組織です。 つまり、単一のセキュリティ アナリストに対する分離されたテクノロジとプロセスの従来の割り当ては、複数のソースからのデータの大幅な増加をサポートしなくなりました。 セキュリティ アナリストとエンジニアは、より包括的なアプローチを取り、さまざまなプラットフォームや規範間で共有された分析情報を使用して効果的なアクションを実行するよう求められます。
 
-このため、Microsoft 365 Defender プラットフォームの展開と実装では、Microsoft 365 Defender サービス自体の毎日の運用とライフサイクル管理を最適化するために、SOC チームと慎重に計画する必要があります。 このコンテンツでは、Microsoft 365 Defender を最新のセキュリティ操作の基礎となる新規または既存のユーザー、プロセス、およびテクノロジと運用および統合する方法に関するいくつかの概念について説明します。
+このため、Microsoft 365 Defender プラットフォームのデプロイと実装には、Microsoft 365 Defender サービス自体の日常的な運用とライフサイクル管理を最適化するために、SOC チームとの慎重な計画が必要になります。 このコンテンツでは、Microsoft 365 Defenderを、最新のセキュリティ操作の基礎となる新規または既存のユーザー、プロセス、テクノロジと運用化および統合する方法に関するいくつかの概念について説明します。
 
-ユーザー設定に関する詳しいMicrosoft 365 Defender、次の記事を参照してください。
+Microsoft 365 Defenderについてまだ理解していない場合は、次の記事を参照してください。
 
 - [Microsoft 365 Defender の使用を開始する](get-started.md)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)
 
-組織で既存のアーキテクチャとプロセスの一部をMicrosoft 365 Defender場合、これらの記事は既存のアーキテクチャとプロセスを肯定または改善できます。
+組織が既にMicrosoft 365 Defenderのいくつかの側面を実装している場合、これらの記事は既存のアーキテクチャとプロセスを肯定するか、改善するのに役立ちます。
 
 >[!Note]
 >Microsoft のパートナーである Protiviti は、この記事のために情報や重要なフィードバックを提供してくれました。
@@ -56,24 +56,24 @@ ms.locfileid: "63330203"
 
 このコンテンツは、次の目的で設計されています。
 
-- DevOpsおよびセキュリティ操作 (SecOps) チーム
+- DevOpsとセキュリティ運用 (SecOps) チーム
 - セキュリティ エンジニアリング チーム
 - IT チーム
-- CISOs と COS
+- CISO と CTO
 - 赤、青、紫のTeams
-- CSIRT &のチーム
+- CSIRT &フォレンジック チーム
 - Microsoft 365管理者
 
 ## <a name="next-steps"></a>次の手順
 
-次の手順を使用して、MICROSOFT 365 DEFENDERを SOC に統合します。
+SOC にMicrosoft 365 Defenderを統合するには、次の手順に従います。
 
-- [手順 1.運用の準備Microsoft 365 Defender計画する](integrate-microsoft-365-defender-secops-plan.md)
-- [手順 2.ゼロトラスト フレームワークを使用して SOC 統合準備評価を実行する](integrate-microsoft-365-defender-secops-readiness.md)
-- [手順 3.サービスの SOC Microsoft 365 Defenderとの統合を計画する](integrate-microsoft-365-defender-secops-services.md)
-- [手順 4.役割Microsoft 365 Defender監督を定義する](integrate-microsoft-365-defender-secops-roles.md)
-- [手順 5.使用例の開発とテスト](integrate-microsoft-365-defender-secops-use-cases.md)
-- [手順 6.SOC のメンテナンス タスクを特定する](integrate-microsoft-365-defender-secops-tasks.md)
+- [手順 1.Microsoft 365 Defender操作の準備を計画する](integrate-microsoft-365-defender-secops-plan.md)
+- [手順 2.ゼロ トラスト Framework を使用して SOC 統合準備性評価を実行する](integrate-microsoft-365-defender-secops-readiness.md)
+- [手順 3.MICROSOFT 365 DEFENDERサービスの SOC カタログとの統合を計画する](integrate-microsoft-365-defender-secops-services.md)
+- [手順 4.Microsoft 365 Defenderロール、責任、監視を定義する](integrate-microsoft-365-defender-secops-roles.md)
+- [手順 5.ユース ケースの開発とテスト](integrate-microsoft-365-defender-secops-use-cases.md)
+- [手順 6.SOC メンテナンス タスクを特定する](integrate-microsoft-365-defender-secops-tasks.md)
 
 
 
