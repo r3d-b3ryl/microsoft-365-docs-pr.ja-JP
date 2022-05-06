@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: ab3adee8275f6c64dd7ad3b21547e8205b00ff7d
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: ddfa921c8dae22bbe091e2c0f66fc9ae42aeea41
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187780"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231805"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -55,7 +55,7 @@ ms.locfileid: "65187780"
 
 ### <a name="configuration-information-for-adaptive-scopes"></a>アダプティブ スコープの構成情報
 
-アダプティブ スコープを使用することを選択すると、必要なアダプティブ スコープの種類を選択するように求められます。 アダプティブ スコープには 3 つの異なる種類があり、それぞれが異なる属性またはプロパティをサポートしています。
+アダプティブ スコープの使用を選択すると、必要なアダプティブ スコープの種類を選択するように求められます。 アダプティブ スコープには 3 つの異なる種類があり、それぞれが異なる属性またはプロパティをサポートしています。
 
 | アダプティブ スコープの種類 | サポートされている属性またはプロパティは次の通りです |
 |:-----|:-----|
@@ -130,11 +130,11 @@ ms.locfileid: "65187780"
     - **SharePoint sites** スコープの場合は、キーワード クエリ言語 (KQL) を使用します。 KQL を使用してインデックス付きサイト プロパティを使用して SharePoint を検索する方法はすでにご存じかも知れません。 これらの KQL クエリを指定するには「[Keyword Query Language (KQL) 構文リファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
         
         たとえば、SharePoint サイト範囲には、Microsoft 365 グループ接続サイトと OneDrive サイトを含むすべての SharePoint サイトの種類が自動的に含まれるため、インデックス付きサイト プロパティ **Site Template** を使用して、特定のサイトの種類を含めたり除外したりできます。指定できるテンプレートは次のとおりです:
-        - 最新のコミュニケーション サイト用の SITEPAGEPUBLISHING
-        - Microsoft 365 グループ接続サイト用の GROUP
-        - Microsoft Teams プライベート チャネル サイト用の TEAMCHANNEL
-        - 従来の SharePoint チーム サイト用の STS
-        - OneDrive サイト用の SPSPERS
+        - 最新のコミュニケーション サイトの `SITEPAGEPUBLISHING`
+        - Microsoft 365 グループ接続サイトの `GROUP`
+        - Microsoft Teams プライベート チャネル サイトの `TEAMCHANNEL`
+        - 従来の SharePoint チーム サイトの `STS`
+        - OneDrive サイトの `SPSPERS`
         
         したがって、最新の通信サイトのみを含み、Microsoft 365 の goup 接続サイトと OneDrive サイトを除外するアダプティブ スコープを作成するには、次の KQL クエリを指定します。
         ````console
@@ -175,19 +175,19 @@ PowerShell を使用してクエリを実行するには:
 
 1. [適切な Exchange Online 管理者権限](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet)を持つアカウントを使用して [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. [Get-Recipient](/powershell/module/exchange/get-recipient) または [Get-Mailbox](/powershell/module/exchange/get-mailbox) のいずれかを *-Filter* パラメーターと一緒に使用し、中括弧 (`{`,`}`) で囲まれたアダプティブ スコープの [OPATH クエリ](/powershell/exchange/filter-properties)を使用します。 属性値が文字列の場合は、属性値を二重引用符または単一引用符で囲みます。  
+2. [Get-Recipient](/powershell/module/exchange/get-recipient)、[Get-Mailbox](/powershell/module/exchange/get-mailbox)、または [Get-User](/powershell/module/exchange/get-user) のいずれかを *-Filter* パラメーターと一緒に使用し、中括弧 (`{`、`}`) で囲まれたアダプティブ スコープの [OPATH クエリ](/powershell/exchange/filter-properties) を使用します。 属性値が文字列の場合は、属性値を二重引用符または単一引用符で囲みます。
 
-    クエリに選択した [OPATH プロパティ](/powershell/exchange/filter-properties)でサポートされているコマンドレットを特定することで、検証に `Get-Mailbox` と `Get-Recipient` のどちらを使用するかを決定できます。 
+    クエリに選択した [OPATH プロパティ](/powershell/exchange/filter-properties) でサポートされているコマンドレットを特定すると、検証用に Get-Mailbox、Get-Recipient、または Get-User のどれかの使用を決定できるようになります。
 
     > [!IMPORTANT]
-    > `Get-Mailbox` は *MailUser* 受信者タイプをサポートしていないため、ハイブリッド環境でオンプレミスのメールボックスを含むクエリを検証するには、`Get-Recipient` を使用する必要があります。
+    > Get-Mailbox は *MailUser* 受信者タイプをサポートしていないため、ハイブリッド環境でオンプレミスのメールボックスを含むクエリを検証するには、Get-Recipient または Get-User を使用する必要があります。
 
-    **ユーザー** スコープを検証するには、次のいずれかを使用します。
-    - `Get-Mailbox` と `-RecipientTypeDetails UserMailbox` または
-    - `Get-Recipient` および `-RecipientTypeDetails UserMailbox,MailUser`
+    **User** スコープを検証するには、適切なコマンドを使用します。
+    - *-RecipientTypeDetails UserMailbox,SharedMailbox,RoomMailbox,EquipmentMailbox* を使用する `Get-Mailbox`
+    - *-RecipientTypeDetails UserMailbox,MailUser,SharedMailbox,RoomMailbox,EquipmentMailbox* を使用する `Get-Recipient`
     
     **Microsoft 365 グループ** スコープを検証するには、次を使用します。
-    - `Get-Mailbox` または `Get-Recipient` と `-RecipientTypeDetails GroupMailbox`
+    - *-GroupMailbox* を使用する `Get-Mailbox`、または *-RecipientTypeDetails GroupMailbox* を使用する `Get-Recipient`
 
     たとえば、**ユーザー** スコープを検証するには、次を使用できます。
     
@@ -200,6 +200,11 @@ PowerShell を使用してクエリを実行するには:
     ```PowerShell
     Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
+    
+    > [!TIP]
+    > これらのコマンドを使用してユーザー スコープを検証する場合、返される受信者の数が予想より多いのは、アダプティブ スコープの有効なライセンスを持たないユーザーが含まれている可能性があるからです。 これらのユーザーには、保持設定が適用されることはありません。
+    > 
+    > たとえば、ハイブリッド環境では、オンプレミスまたは Exchange Online に Exchange メールボックスがなく、ライセンスのない同期ユーザー アカウントがあることがあります。 これらのユーザーを識別するには、次のコマンドを実行します: `Get-User -RecipientTypeDetails User`
 
 3. 出力が、アダプティブ スコープの予想されるユーザーまたはグループと一致することを確認します。 そうでない場合は、Azure AD または Exchange の関連する管理者にクエリと値を確認します。
  
@@ -242,9 +247,9 @@ Skype for Business を除き、既定では、選択した場所のすべての�
 
 **[Exchange メール]** の場所と **[Exchange パブリック フォルダー]** の場所の両方で、保持設定が適用される前にメールボックスに少なくとも 10 MB のデータが必要です。 
 
-**Exchange メール** の場所は、メールボックスのレベルで保持設定を適用することにより、ユーザーのメール、予定表、およびその他のメールボックス アイテムの保持をサポートします。共有メールボックスもサポートされています。
+**Exchange メール** の場所は、メールボックスのレベルで保持設定を適用することにより、ユーザーのメール、予定表、およびその他のメールボックス アイテムの保持をサポートします。共有メールボックス、会議室と備品用リソース メールボックスもサポートされています。
 
-リソース メールボックス、連絡先、および Microsoft 365 グループ メールボックスは、Exchange メールではサポートされていません。 Microsoft 365 グループ メールボックスの場合は、代わりに **Microsoft 365 グループ** の場所を選択します。 Exchange の場所では、最初は静的スコープに対してグループ メールボックスを選択できますが、アイテム保持ポリシーを保存しようとすると、"RemoteGroupMailbox" はこの場所の有効な選択ではないというエラーが表示されます。
+メール連絡先、および Microsoft 365 グループ メールボックスは、Exchange メールではサポートされていません。 Microsoft 365 グループ メールボックスの場合は、代わりに **Microsoft 365 グループ** の場所を選択します。 Exchange の場所では、最初は静的スコープに対してグループ メールボックスを選択できますが、アイテム保持ポリシーを保存しようとすると、"RemoteGroupMailbox" はこの場所の有効な選択ではないというエラーが表示されます。
 
 ポリシーの構成によっては、[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)が含まれる場合と含まれない場合があります。
 
@@ -272,7 +277,7 @@ Exchange の保持設定を構成するときに含めるメールボックス�
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>SharePoint サイトと OneDrive アカウントの構成情報
 
-**SharePoint sites** の場所を選択すると、保持ポリシーでは、SharePoint​​ コミュニケーション サイト、Microsoft 365 グループによって接続されていないチーム サイト、クラシック サイトのドキュメントを保持および削除することができます。 **アダプティブ ポリシー スコープ** を使用していない限り、Microsoft 365 グループによって接続されているチーム サイトは、このオプションでサポートされていないため、代わりにグループのメールボックス、サイト、ファイル内のコンテンツに適用されている [[Microsoft 365 グループ](#exceptions-for-adaptive-policy-scopes)] の場所を使用します。
+**SharePoint sites** の場所を選択すると、保持ポリシーでは、SharePoint​​ コミュニケーション サイト、Microsoft 365 グループによって接続されていないチーム サイト、クラシック サイトのドキュメントを保持および削除することができます。 **アダプティブ ポリシー スコープ** を使用していない限り、Microsoft 365 グループによって接続されているチーム サイトは、このオプションでサポートされていないため、代わりにグループのメールボックス、サイト、ファイル内のコンテンツに適用されている [[Microsoft 365 グループ]](#exceptions-for-adaptive-policy-scopes) の場所を使用します。
 
 SharePoint と OneDrive の保持設定を構成するときに含めるものと除外するものの詳細については、「[保持と削除に含めるもの](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)」を参照してください。
 
@@ -325,7 +330,7 @@ Microsoft 365 グループ (以前の Office 365 グループ) のコンテン�
 
 - グループに接続された SharePoint サイトは保持され、**Microsoft 365 グループ** の場所のアイテム保持ポリシーによって引き続き管理されます。 グループが削除される前にサイトにアクセスしていたユーザーは引き続きサイトにアクセスでき、新しいアクセス許可は SharePoint を介して管理する必要があります。
     
-    この時点では、削除されたグループを指定できないため、Microsoft 365 グループの場所からサイトを除外することはできません。 このサイトからアイテム保持ポリシーを解除する必要がある場合は、Microsoft サポートに連絡してください。 たとえば、[Microsoft 365 管理センターへの問い合わせ](https://admin.microsoft.com/Adminportal/Home#/support)を行います。
+    この時点では、削除されたグループを指定できないため、Microsoft 365 グループの場所からサイトを除外することはできません。 このサイトからアイテム保持ポリシーを解除する必要がある場合は、Microsoft サポートに連絡してください。 たとえば、[Microsoft 365管理センターでサポート リクエストを開きます](/microsoft-365/admin/get-help-support#online-support)。
 
 - 削除されたグループのメールボックスは非アクティブになり、SharePoint サイトと同様に、保持設定の対象となります。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。
 
@@ -406,7 +411,7 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>場所全体に適用されるポリシー
 
-場所を選択すると、Skype for Business を除き、場所の状態が [**オン**] の場合の既定の設定は [**すべて**] になります。
+場所を選択すると、Skype for Business を除き、場所の状態が **[オン]** の場合、既定の設定は **[すべて]** になります。
 
 アイテム保持ポリシーが場所全体の任意の組み合わせに適用される場合、ポリシーに含めることができる受信者、サイト、アカウント、グループなどの数に制限はありません。
 

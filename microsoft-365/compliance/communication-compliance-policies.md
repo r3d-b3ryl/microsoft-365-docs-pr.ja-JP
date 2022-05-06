@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9be1c581edb1b9564349ae8c3a659d226d6ef312
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 8418683577ffe3bf63fe7fe3bf4aff2ef55007f5
+ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173777"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65249633"
 ---
 # <a name="communication-compliance-policies"></a>コミュニケーション コンプライアンス ポリシー
 
@@ -166,11 +166,15 @@ Teams チャットからのユーザー報告メッセージは、ユーザー�
 
 組み込みのトレーニング可能な分類子とグローバル分類子は、組織内のすべての通信チャネルで送受信されたメッセージをスキャンして、さまざまな種類のコンプライアンスの問題を検出します。 分類子は、人工知能とキーワードの組み合わせを使用して、ハラスメント対策ポリシーに違反する可能性のある言葉を識別します。 組み込みの分類子は、現在、複数の言語でメッセージ キーワードの識別をサポートしています。
 
+- アラビア語
 - 簡体字中国語
+- 繁体字中国語
+- オランダ語
 - 英語
 - フランス語
 - ドイツ語
 - イタリア語
+- 韓国語
 - 日本語
 - ポルトガル語
 - スペイン語

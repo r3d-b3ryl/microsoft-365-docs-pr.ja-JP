@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: MFA や準拠デバイスなどの条件付きアクセス チェックに合格するよう組織外のユーザーに要求する方法について説明します。
-ms.openlocfilehash: 181ee77e6b8a8d491294c9a5d3f8ec9202c9f9c1
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: a9a48bd891810530fba4f78824f675d2b0f0556e
+ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716033"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65249615"
 ---
 # <a name="require-conditional-access-for-people-outside-your-organization"></a>組織外のユーザーに条件付きアクセスを要求する
 
@@ -31,7 +31,7 @@ ms.locfileid: "63716033"
 - 準拠しているデバイス
 - ハイブリッド Azure AD参加しているデバイス
 
-Azure AD B2B 直接接続 (Teamsの共有チャネルなど) を使用する場合は、これらのオプションについて他の組織からの条件付きアクセス設定を信頼することを選択できます。
+Azure AD B2B 直接接続 (Teamsの共有チャネルなど) を使用する場合は、これらのオプションについて他の組織からの条件付きアクセス設定を信頼することを選択できます。 条件付きアクセス ポリシーは、共有チャネルと関連付けられているSharePoint サイトの [ファイル] タブへのアクセスにのみ使用されることに注意してください。
 
 ## <a name="planning-considerations-for-conditional-access"></a>条件付きアクセスの計画に関する考慮事項
 
