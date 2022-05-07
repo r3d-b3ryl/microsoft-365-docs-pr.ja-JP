@@ -14,74 +14,64 @@ metadata:
   ms.author: robmazz
   ms.date: 04/22/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 465f54a97d099611d6a03c857a5c4e754bb45cf3
-  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  ms.openlocfilehash: b848abdb739d09595e9be91b8217acf09b01dbd2
+  ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65077856"
+  ms.lasthandoff: 05/06/2022
+  ms.locfileid: "65249599"
 landingContent:
-- title: 情報保護とガバナンスを管理する
+- title: クラウド、アプリ、デバイス全体で機密データを保護する
   linkLists:
   - linkListType: overview
     links:
     - text: データを把握する
-      url: information-protection.md#know-your-data
+      url: /microsoft-365/compliance/information-protection#know-your-data
     - text: データを保護する
-      url: information-protection.md#protect-your-data
+      url: /microsoft-365/compliance/information-protection#protect-your-data
     - text: データの損失を防止する
-      url: information-protection.md#prevent-data-loss
-    - text: データを統制する
-      url: manage-data-governance.md
-    - text: 'ラニング パス: 情報保護とガバナンスを管理する'
-      url: /learn/paths/m365-compliance-information
-- title: インサイダー リスクを管理する
+      url: /microsoft-365/compliance/information-protection#prevent-data-loss
+    - text: データ ライフサイクルを管理する
+      url: /microsoft-365/compliance/manage-data-governance#microsoft-purview-data-lifecycle-management
+    - text: データを暗号化し、暗号化キーを制御する
+      url: /microsoft-365/compliance/encryption
+    - text: Microsoft 以外のデータをインポートしてアーカイブする
+      url: /microsoft-365/compliance/archiving-third-party-data
+- title: データ リスクを特定し、規制コンプライアンス要件を管理する
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Purview インサイダー リスク管理
-      url: insider-risk-management.md
-    - text: Microsoft Purview でのコミュニケーション コンプライアンス
-      url: communication-compliance.md
-    - text: Microsoft Purview 情報バリア
-      url: information-barriers.md
-    - text: Microsoft Purview Privileged Access Management
-      url: privileged-access-management-overview.md
-    - text: 顧客ロックボックス
-      url: customer-lockbox-requests.md
-- title: 検出と対応
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Microsoft Purview 電子情報開示 (プレミアム)
-      url: overview-ediscovery-20.md
-    - text: Microsoft Purview 電子情報開示 (標準)
-      url: ./get-started-core-ediscovery.md
-    - text: コンテンツ検索
-      url: search-for-content.md
-    - text: Microsoft Purview 監査ソリューション
-      url: auditing-solutions-overview.md
+    - text: リスク アクティビティを検出して操作する
+      url: /microsoft-365/compliance/insider-risk-management
+    - text: 不適切で機密性の高いメッセージを検出して操作する
+      url: /microsoft-365/compliance/communication-compliance
+    - text: ユーザー間のコミュニケーションとコラボレーションを制限する
+      url: /microsoft-365/compliance/information-barriers
+    - text: ビジネス、法律、または規制の記録管理要件を管理します。
+      url: /microsoft-365/compliance/manage-data-governance#microsoft-purview-records-management
+    - text: SharePoint と OneDrive で監査されたアクティビティをログに記録して検索する
+      url: /microsoft-365/compliance/auditing-solutions-overview
+    - text: 訴訟のデータを特定して管理する
+      url: /microsoft-365/compliance/ediscovery
 - title: 規制コンプライアンスの概要
   linkLists:
   - linkListType: get-started
     links:
-    - text: コンプライアンス マネージャー
-      url: compliance-manager.md
-    - text: GDPR コンプライアンス アクション プラン
+    - text: コンプライアンス マネージャーの使用を開始する
+      url: /microsoft-365/compliance/compliance-manager
+    - text: GDPR コンプライアンス アクション プランを実装する
       url: /compliance/regulatory/gdpr-action-plan
-    - text: ISO コンプライアンス アクション プラン
-      url: /compliance/regulatory/iso-action-plan
-    - text: NIST コンプライアンス アクション プラン
-      url: /compliance/regulatory/nist-action-plan
-- title: コンプライアンス ソリューションを展開する
+    - text: Microsoft の規制コンプライアンス製品について説明する
+      url: /compliance/regulatory/offering-home
+- title: Purview コンプライアンス ソリューションを展開する
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: ゼロ トラストでデータを保護する
       url: /security/zero-trust/data
     - text: Microsoft Purview の情報保護ソリューションを展開する
-      url: information-protection-solution.md
+      url: /microsoft-365/compliance/information-protection-solution
     - text: データ プライバシー規制用の情報保護を展開する
-      url: ../solutions/information-protection-deploy.md
-    - text: 情報保護とコンプライアンスのイラスト
-      url: ../solutions/productivity-illustrations.md#microsoft-365-information-protection-and-compliance-capabilities
+      url: /microsoft-365/solutions/information-protection-deploy
+    - text: 情報保護とコンプライアンスの図を探す
+      url: /microsoft-365/solutions/productivity-illustrations
