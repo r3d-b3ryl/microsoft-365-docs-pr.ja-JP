@@ -39,13 +39,13 @@ Microsoft セーフティ スキャナーは、Windows コンピューターか�
 
 - セーフティ スキャナーは、手動でトリガーされたときにのみスキャンされ、ダウンロード後 10 日間使用できます。 各スキャンの前に、このツールの最新バージョンを常にダウンロードすることをお勧めします。
 
-- セーフティ スキャナーはポータブル実行可能ファイルであり、Windows スタート メニューやデスクトップ上のアイコンには表示されません。 このダウンロードを保存した場所に注意してください。
+- セーフティ スキャナーはポータブル実行可能ファイルであり、Windows スタート メニューやデスクトップ上のアイコンには表示されません。このダウンロードを保存した場所をメモしておいてください。
 
 - このツールでは、マルウェア対策製品は置き換えられません。 自動更新によるリアルタイムの保護については、[Windows 11、Windows 10、および Windows 8 の場合は Microsoft Defender Antivirus を使用し](https://www.microsoft.com/windows/comprehensive-security)、[Windows 7 ではMicrosoft Security Essentials を使用してください](https://support.microsoft.com/help/14210/security-essentials-download)。 これらのマルウェア対策製品は、強力なマルウェア除去機能も提供します。 これらの製品でマルウェアの削除に問題がある場合は、 [困難な脅威の削除](https://www.microsoft.com/wdsi/help/troubleshooting-infection)に関するヘルプを参照してください。
 
 ## <a name="system-requirements"></a>システム要件
 
-セーフティ スキャナー は、Windows 11、Windows 10、Windows 10 Tech Preview、Windows 8.1、Windows 8、Windows 7、Windows Server 2019、Windows Server 2016、Windows Server Tech Preview、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2、または Windows Server 2008 を実行しているコンピューターから悪意のあるソフトウェアを削除するのに役立ちます 詳細については、 [Microsoft ライフサイクル ポリシー](/lifecycle/)を参照してください。
+セーフティ スキャナー は、Windows 11、Windows 10、Windows 10 Tech Preview、Windows 8.1、Windows 8、Windows 7、Windows Server 2019、Windows Server 2016、Windows Server Tech Preview、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2、または Windows Server 2008 を実行しているコンピューターから悪意のあるソフトウェアを削除するのに役立ちます。詳細については、「[Microsoft ライフサイクル ポリシー](/lifecycle/)」を参照してください。
 
 ## <a name="how-to-run-a-scan"></a>スキャンを実行する方法
 

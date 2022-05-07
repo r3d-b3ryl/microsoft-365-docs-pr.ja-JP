@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b9ad54a881ae5e14767e55da8dfc23b2fb237eb
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: 5bce1fc2e9aa149da2bb3ddc28e56fc826ad1768
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243120"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268875"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>ユーザーなしでMicrosoft Defender for Endpointにアクセスするアプリを作成する
 
@@ -74,7 +74,7 @@ Microsoft Defender for Endpointは、一連のプログラム API を通じて�
 
    :::image type="content" source="images/application-permissions.png" alt-text="アプリケーションのアクセス許可情報ウィンドウ" lightbox="images/application-permissions.png":::
 
-     関連するアクセス許可を選択する必要があります。 "すべてのアラートの読み取り" は例にすぎません。 次に、例を示します。
+     関連するアクセス許可を選択する必要があります。 "すべてのアラートの読み取り" は例にすぎません。 例:
 
      - [高度なクエリを実行](run-advanced-query-api.md)するには、[高度なクエリの実行] アクセス許可を選択します。
      - [デバイスを分離](isolate-machine.md)するには、[コンピューターの分離] アクセス許可を選択します。
@@ -149,6 +149,9 @@ $token
 ### <a name="use-c"></a>C# を使用する:
 
 次のコードは、NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8 でテストされました。
+
+> [!IMPORTANT]
+> [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet パッケージとAzure AD Authentication ライブラリ (ADAL) は非推奨になりました。 2020 年 6 月 30 日以降、新機能は追加されていません。   アップグレードすることを強くお勧めします。詳細については、 [移行ガイド](/azure/active-directory/develop/msal-migration) を参照してください。
 
 1. 新しいコンソール アプリケーションを作成します。
 1. [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGetインストールします。

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: ccd92b38937bcb64fdcf738b803160119c0a025a
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 612cbb4005285f46594bc900cbbc14497b72ffec
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665582"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268826"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Microsoft 365 Defender API へのパートナー アクセス権を持つアプリを作成する
 
@@ -184,6 +184,9 @@ return $token
 
 > [!NOTE]
 > 次のコードは、Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8 でテストされました。
+
+> [!IMPORTANT]
+> [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet パッケージとAzure AD Authentication ライブラリ (ADAL) は非推奨になりました。 2020 年 6 月 30 日以降、新機能は追加されていません。   アップグレードすることを強くお勧めします。詳細については、 [移行ガイド](/azure/active-directory/develop/msal-migration) を参照してください。
 
 1. 新しいコンソール アプリケーションを作成します。
 1. [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGetインストールします。

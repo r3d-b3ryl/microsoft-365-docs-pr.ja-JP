@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fde2cc894fb989628f9e2e0d9d7297bdb3c9e9da
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5f17f29f083df6e567218363027e7677c87ee154
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172413"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268874"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender for Endpoint API を介したパートナー アクセス
 
@@ -169,6 +169,9 @@ return $token
 ### <a name="using-c"></a>C の使用#
 
 > 次のコードは、Nuget Microsoft.IdentityModel.Clients.ActiveDirectory でテストされました
+
+> [!IMPORTANT]
+> [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet パッケージとAzure AD Authentication ライブラリ (ADAL) は非推奨になりました。 2020 年 6 月 30 日以降、新機能は追加されていません。   アップグレードすることを強くお勧めします。詳細については、 [移行ガイド](/azure/active-directory/develop/msal-migration) を参照してください。
 
 - 新しいコンソール アプリケーションを作成する
 - [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGetインストールする
