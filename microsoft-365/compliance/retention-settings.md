@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: ddfa921c8dae22bbe091e2c0f66fc9ae42aeea41
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 90a048cf96bb2414a42d803bcd2f15deab4e711b
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231805"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268795"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -202,9 +202,9 @@ PowerShell を使用してクエリを実行するには:
     ```
     
     > [!TIP]
-    > これらのコマンドを使用してユーザー スコープを検証する場合、返される受信者の数が予想より多いのは、アダプティブ スコープの有効なライセンスを持たないユーザーが含まれている可能性があるからです。 これらのユーザーには、保持設定が適用されることはありません。
+    > これらのコマンドを使用してユーザー スコープを検証する場合、返される受信者の数が予想より多いのは、アダプティブ スコープの有効なライセンスを持たないユーザーが含まれている可能性があるからです。これらのユーザーには、保持設定が適用されることはありません。
     > 
-    > たとえば、ハイブリッド環境では、オンプレミスまたは Exchange Online に Exchange メールボックスがなく、ライセンスのない同期ユーザー アカウントがあることがあります。 これらのユーザーを識別するには、次のコマンドを実行します: `Get-User -RecipientTypeDetails User`
+    > たとえば、ハイブリッド環境では、オンプレミスまたは Exchange Online に Exchange メールボックスがなく、ライセンスのない同期ユーザー アカウントがあることがあります。これらのユーザーを識別するには、次のコマンドを実行します: `Get-User -RecipientTypeDetails User`
 
 3. 出力が、アダプティブ スコープの予想されるユーザーまたはグループと一致することを確認します。 そうでない場合は、Azure AD または Exchange の関連する管理者にクエリと値を確認します。
  
@@ -278,6 +278,9 @@ Exchange の保持設定を構成するときに含めるメールボックス�
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>SharePoint サイトと OneDrive アカウントの構成情報
 
 **SharePoint sites** の場所を選択すると、保持ポリシーでは、SharePoint​​ コミュニケーション サイト、Microsoft 365 グループによって接続されていないチーム サイト、クラシック サイトのドキュメントを保持および削除することができます。 **アダプティブ ポリシー スコープ** を使用していない限り、Microsoft 365 グループによって接続されているチーム サイトは、このオプションでサポートされていないため、代わりにグループのメールボックス、サイト、ファイル内のコンテンツに適用されている [[Microsoft 365 グループ]](#exceptions-for-adaptive-policy-scopes) の場所を使用します。
+
+> [!TIP]
+> [[SharePoint 管理センターのフィルター]](/sharepoint/customize-admin-center-site-list)または [[SharePoint PowerShell コマンド]](/powershell/module/sharepoint-online/get-sposite#example-10) を使用して、サイトがグループ接続されているかどうかを確認できます。 静的スコープの場合、これらのサイトは **[Microsoft 365 グループ]** の場所でサポートされます。
 
 SharePoint と OneDrive の保持設定を構成するときに含めるものと除外するものの詳細については、「[保持と削除に含めるもの](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)」を参照してください。
 
