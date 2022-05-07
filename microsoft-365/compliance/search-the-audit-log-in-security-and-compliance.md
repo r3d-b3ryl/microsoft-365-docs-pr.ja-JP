@@ -21,14 +21,14 @@ description: Microsoft Purview コンプライアンス ポータルを使用し
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: e6754601aca5dda74ee59ed2c6c52b3f8b1eb2a3
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: b3ad71878f6d0c766cbcf5ba435bc61396f45ed6
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128502"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231766"
 ---
-# <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
+# <a name="search-the-audit-log-in-the-compliance-portal"></a>コンプライアンス ポータルで監査ログを検索する
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -93,7 +93,6 @@ ms.locfileid: "65128502"
 
 - 監査ログを検索するには、Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。既定では、これらの役割は Exchange 管理センターの [**アクセス許可**] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。Office 365 および Microsoft 365 のグローバル管理者は自動的に、組織管理役割グループのメンバーとして Exchange Online に追加されます。最小限の特権レベルで監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、閲覧限定の監査ログまたは監査ログの役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。詳細については、「[Exchange Online での役割グループの管理](/Exchange/permissions-exo/role-groups)」を参照してください。
 
-  > [!IMPORTANT]
   > コンプライアンス ポータルの **[アクセス許可]** ページでユーザーに View-Only Audit Logs (閲覧限定の監査ログ) または Audit Logs (監査ログ) の役割を割り当てると、監査ログを検索できなくなります。Exchange Online でアクセス許可を割り当てる必要があります。これは、監査ログの検索に使用される基本のコマンドレットが ExchangeOnline コマンドレットだからです。
 
 - 監査対象アクティビティがユーザーまたは管理者によって実行されると、監査レコードが生成され、組織の監査ログに格納されます。監査レコードの保持期間 (および監査ログで検索可能な期間) は、Office 365 または Microsoft 365 Enterprise サブスクリプション、具体的には、特定のユーザーに割り当てられたライセンスの種類によって異なります。
@@ -103,7 +102,7 @@ ms.locfileid: "65128502"
     > [!NOTE]
     > 監査レコードを 1 年間保持するプライベート プレビュー プログラムに参加した場合、一般提供のロールアウト日前に生成された監査レコードの保持期間はリセットされません。
 
-  - その他 (E5 以外) の Office 365 または Microsoft 365 ライセンスが割り当てられているユーザーの場合、監査レコードは 90 日間保持されます。 統合監査ログをサポートする Office 365 および Microsoft 365 サブスクリプションのリストについては、「[セキュリティおよびコンプライアンス センター サービスの説明](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)」を参照してください。
+  - その他 (E5 以外) の Office 365 または Microsoft 365 ライセンスが割り当てられているユーザーの場合、監査レコードは 90 日間保持されます。 統合監査ログをサポートする Office 365 および Microsoft 365 サブスクリプションのリストについては、「[セキュリティおよびコンプライアンス ポータル サービスの説明](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)」を参照してください。
 
     > [!NOTE]
     > デフォルトでメールボックス監査がオンになっている場合でも、一部のユーザーのメールボックス監査イベントが、コンプライアンス ポータルまたは Office 365 マネージメント アクティビティ API の監査ログ検索で見つからないことに気付く場合があります。詳細については、「[メールボックス監査ログの詳細](enable-mailbox-auditing.md#more-information)」を参照してください。
@@ -244,7 +243,7 @@ ms.locfileid: "65128502"
 
 #### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>監査ログの検索結果のエクスポートと表示に関する詳細情報
 
-- すべての検索結果をダウンロードすると、CSV ファイルには **CreationDate**、**UserIds**、**Operations**、**AuditData** の各列が含まれます。 **AuditData** 列には、各イベントに関する追加情報が含まれます (コンプライアンス センターで検索結果を表示した場合にポップアップ ページに表示される詳細情報と同様です)。 この列のデータは、監査ログ レコードの複数のプロパティを含む JSON オブジェクトで構成されています。 この JSON オブジェクトに含まれる *property:value* の各ペアは、コンマで区切られます。 Excel の Power Query エディターに含まれる JSON 変換ツールを使用すると、[**AuditData**] 列を複数の列に分割し、JSON オブジェクトのプロパティごとに個別の列を設定できます。 このようにすると、これらの 1 つ以上のプロパティで並べ替えやフィルター処理を行うことができます。 Power Query エディターを使用して JSON オブジェクトを変換するための詳しい手順については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。
+- すべての検索結果をダウンロードすると、CSV ファイルには **CreationDate**、**UserIds**、**Operations**、**AuditData** の各列が含まれます。 **AuditData** 列には、各イベントに関する追加情報が含まれます (コンプライアンス ポータルで検索結果を表示するときに、ポップアップ ページに表示される詳細情報と同様)。 この列のデータは、監査ログ レコードの複数のプロパティを含む JSON オブジェクトで構成されています。 この JSON オブジェクトに含まれる *property:value* の各ペアは、コンマで区切られます。 Excel の Power Query エディターに含まれる JSON 変換ツールを使用すると、[**AuditData**] 列を複数の列に分割し、JSON オブジェクトのプロパティごとに個別の列を設定できます。 このようにすると、これらの 1 つ以上のプロパティで並べ替えやフィルター処理を行うことができます。 Power Query エディターを使用して JSON オブジェクトを変換するための詳しい手順については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。
 
   **AuditData** 列を分割した後、[**操作**] 列でフィルター処理して、特定の種類のアクティビティの詳細なプロパティを表示できます。
 
@@ -254,7 +253,7 @@ ms.locfileid: "65128502"
 
 ## <a name="audited-activities"></a>監査されるアクティビティ
 
-このセクションの表では、Microsoft 365 で監査されるアクティビティについて説明します。セキュリティ/コンプライアンス センターで監査ログを検索することで、これらのイベントを検索できます。
+このセクションの表では、Microsoft 365 で監査されるアクティビティについて説明します。これらのイベントは、セキュリティおよびコンプライアンス ポータルで監査ログを探索することで検索できます。
 
 次の表は、関連するアクティビティまたは特定のサービスのアクティビティをグループ別にまとめたものです。これらの表には、**[アクティビティ]** ドロップダウン リストに表示されるフレンドリ名、および監査レコードの詳細情報および CSV ファイル (検索結果を CSV にエクスポートした場合) に表示される対応する操作の名前が含まれます。詳細情報については、「[監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)」を参照してください。
 
@@ -401,6 +400,18 @@ ms.locfileid: "65128502"
     :::column-end:::
     :::column:::
         [Exchange 管理アクティビティ](#exchange-admin-audit-log)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [暗号化されたメッセージ ポータル アクティビティ](#encrypted-message-portal-activities)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
     :::column-end:::
 :::row-end:::
 
@@ -769,7 +780,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 
 ### <a name="ediscovery-activities"></a>電子情報開示アクティビティ
 
-セキュリティ/コンプライアンス センターで実行された (または対応する PowerShell コマンドレットを使用して実行された) コンテンツ検索と電子情報開示関連のアクティビティは監査ログに記録されます。これには次のアクティビティが含まれます。
+セキュリティおよびコンプライアンス ポータルで、または対応する PowerShell コマンドレットを実行して遂行するコンテンツ検索および電子情報開示関連のアクティビティは、監査ログに記録されます。これには、次のアクティビティが含まれます:
 
 - 電子情報開示ケースの作成と管理
 
@@ -1145,7 +1156,7 @@ Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Direc
 
 はい。プログラムで監査ログを取得するには、Office 365 マネージメント アクティビティ API を使用します。使用を開始するには、「[Office 365 Management API の使用を開始する](/office/office-365-management-api/get-started-with-office-365-management-apis)」を参照してください。
 
-**セキュリティ/コンプライアンス センターまたは Office 365 マネージメント アクティビティ API の使用以外に、監査ログを取得する方法はありますか?**
+**セキュリティ/コンプライアンス ポータルまたは Office 365 Management Activity API の使用以外に、監査ログを取得する方法はありますか?**
 
 いいえ。監査サービスからデータを取得する方法は、この 2 つの方法のみです。
 
