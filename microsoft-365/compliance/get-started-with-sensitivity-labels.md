@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 3f163c19cfd6e627887f0e34b81bc99d2e86cb6c
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: b0fcf435d7805440e93f0d1248723f4b5599d4a9
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971046"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268773"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -102,6 +102,7 @@ Microsoft Purview 機能のメリットを得られるようにユーザーに�
 |秘密度ラベルを使用して、SharePoint と OneDrive のサイトと個々のドキュメントの既定の共有リンクの種類を構成する |[秘密度ラベルを使用して、SharePoint と OneDrive のサイトとドキュメントの既定の共有リンクを設定する](sensitivity-labels-default-sharing-link.md)|
 |ドキュメント理解モデルに機密ラベルを適用すると、SharePoint ライブラリ内の識別されたドキュメントが自動的に分類および保護されます |[Microsoft SharePoint Syntex のモデルに秘密度ラベルを適用する](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |特定の感度ラベルを持つファイルまたはメールをユーザーが共有しないように、または警告します。 |[DLP ポリシーで秘密度ラベルを条件として使用する](dlp-sensitivity-label-as-condition.md) |
+|個人データを含むコンテンツが共有されつつあるか、保護が必要であるというアラートを受け取ったときに、機密ラベルをファイルに適用する| [プライバシー リスク管理のアラートを調査して修復します](/privacy/priva/risk-management-alerts)|
 |保持ラベルを適用して、特定の秘密度ラベルを持つファイルまたはメールを保持または削除する|[保持ラベルを自動的に適用してコンテンツを保持または削除する](apply-retention-labels-automatically.md) |
 |オンプレミスのデータ ストアに保存されているファイルを検出、ラベル付け、保護する |[ファイルを自動的に分類および保護するための Azure Information Protection スキャナーを展開する](/azure/information-protection/deploy-aip-scanner)|
 |クラウドのデータ ストアに保存されているファイルを検出、ラベル付け、保護する|[クラウドに保存されている規制対象および機密データを検出、分類、ラベル付け、保護する](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
