@@ -62,8 +62,8 @@ DNS とは別に、これらのインスタンスは、説明されている特�
 |11|**ハイブリッド Azure AD認証をExchangeする**|*.msappproxy.net|TCP 送信サーバー専用トラフィック|
 |12 |Office 2016 のSkype for Businessには、UDP ポートを使用する **ビデオ ベースの画面共有** が含まれています。 Office 2013 以前のSkype for Business クライアントでは、TCP ポート 443 経由で RDP が使用されました。|TCP ポート 443 が 52.112.0.0/14 に開きます|Office 2013 以前の Skype for Business の古いクライアント バージョン|
 |13|Skype for Business Online への **ハイブリッド オンプレミス サーバー接続** をSkype for Businessする|13.107.64.0/18, 52.112.0.0/14 <br> UDP ポート 50,000-59,999 <br> TCP ポート 50,000-59,999; 5061|Skype for Business オンプレミス サーバーの送信接続性|
-|14 |オンプレミスハイブリッド接続を備えた **クラウド PSTN** では、オンプレミス ホストに対して開かれたネットワーク接続が必要です。 Skype for Business Online ハイブリッド構成の詳細については、|「[Skype for Business Server と Office 365 間のハイブリッド接続を計画する](/skypeforbusiness/hybrid/plan-hybrid-connectivity)」を参照してください。|Skype for Business オンプレミス ハイブリッド受信|
-|15 |**認証と ID FQDN** <p> FQDN (`secure.aadcdn.microsoftonline-p.com`) を機能させるには、クライアントの Internet Explorer (IE) またはエッジの信頼済みサイト ゾーンに含める必要があります。||信頼済みサイト|
+|14|オンプレミスハイブリッド接続を備えた **クラウド PSTN** では、オンプレミス ホストに対して開かれたネットワーク接続が必要です。 Skype for Business Online ハイブリッド構成の詳細については、|「[Skype for Business Server と Office 365 間のハイブリッド接続を計画する](/skypeforbusiness/hybrid/plan-hybrid-connectivity)」を参照してください。|Skype for Business オンプレミス ハイブリッド受信|
+|15|**認証と ID FQDN** <p> FQDN (`secure.aadcdn.microsoftonline-p.com`) を機能させるには、クライアントの Internet Explorer (IE) またはエッジの信頼済みサイト ゾーンに含める必要があります。||信頼済みサイト|
 |16|**Microsoft Teams FQDN** <p> Internet Explorer または Microsoft Edge を使用している場合は、最初にサード パーティの cookie を有効にし、信頼済みサイトに (スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加え) Teams の FQDN を追加する必要があります。詳細については、「[Microsoft Teams の既知の問題](/microsoftteams/known-issues)」を参照してください。||信頼済みサイト|
 |17 |**Sharepoint Online と OneDrive for Business FQDN** <p> 「\<tenant\>」が入ったすべての FQDN (「.sharepoint.com」) を機能させるには、クライアントの IE または Edge の信頼済みサイト ゾーンに含める必要があります。スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加えて、これらのエンドポイントも追加する必要があります。||信頼済みサイト|
 |18 |**Yammer**  <br> Yammer はブラウザーでのみ利用でき、認証されたユーザーはプロキシを経由する必要があります。Yammer のすべての FQDN をさせるには、クライアントの IE またはエッジの信頼済みサイト ゾーンに含める必要があります。||信頼済みサイト|

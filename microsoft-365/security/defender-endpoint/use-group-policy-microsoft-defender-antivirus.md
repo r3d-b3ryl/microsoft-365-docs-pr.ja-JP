@@ -66,7 +66,7 @@ ms.locfileid: "64789422"
 
 <br/><br/>
 
-|場所|設定|記事|
+|Location|Setting|記事|
 |---|---|---|
 |クライアント インターフェイス|ヘッドレス UI モードを有効にする|[ユーザーがMicrosoft Defender ウイルス対策ユーザー インターフェイスを表示または操作できないようにする](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
 |クライアント インターフェイス|アクションを実行する必要がある場合にクライアントに追加のテキストを表示する|[エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)|
@@ -163,13 +163,13 @@ ms.locfileid: "64789422"
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 

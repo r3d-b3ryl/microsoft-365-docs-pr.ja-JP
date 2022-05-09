@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender for Endpoint の接続アプリケーション
+title: Microsoft Defender for Endpointの接続済みアプリケーション
 ms.reviewer: ''
-description: 標準の OAuth 2.0 プロトコルを使用して認証を行い、Microsoft Defender for Endpoint API で使用するためのトークンを提供する接続パートナー アプリケーションを表示します。
-keywords: パートナー、アプリケーション、サードパーティ、接続、sentinelone、ルックアウト、bitdefender、corrata、morphisec、paloalto、ziften、より良いモバイル
+description: 標準 OAuth 2.0 プロトコルを使用して認証を行い、Microsoft Defender for Endpoint API で使用するトークンを提供する接続済みパートナー アプリケーションを表示します。
+keywords: パートナー, アプリケーション, サード パーティ, 接続, sentinelone, Lookout, bitdefender, corrata, morphisec, paloalto, ziften, Better mobile
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64475567"
 ---
-# <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の接続アプリケーション
+# <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointの接続済みアプリケーション
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,18 +36,18 @@ ms.locfileid: "64475567"
 
 接続されたアプリケーションは、API を使用して Defender for Endpoint プラットフォームと統合されます。
 
-アプリケーションは、標準の OAuth 2.0 プロトコルを使用して認証を行い、Microsoft Defender for Endpoint API で使用するためのトークンを提供します。 さらに、Azure Active Directory (Azure AD) アプリケーションを使用すると、テナント管理者は、対応するアプリを使用してアクセスできる API を明示的に制御できます。
+アプリケーションでは、標準の OAuth 2.0 プロトコルを使用して認証を行い、Microsoft Defender for Endpoint API で使用するトークンを提供します。 さらに、Azure Active Directory (Azure AD) アプリケーションを使用すると、テナント管理者は、対応するアプリを使用してアクセスできる API を明示的に制御できます。
 
-接続されているアプリケーションで API [を使用](/microsoft-365/security/defender-endpoint/apis-intro) するには、次の手順に従う必要があります。
+接続されたアプリケーションで API を使用するには、 [次の手順](/microsoft-365/security/defender-endpoint/apis-intro) に従う必要があります。
 
-左側のナビゲーション メニューで、[ **パートナー** ] & ([ **エンドポイント] の** 下) [接続済み> **選択します**。
+左側のナビゲーション メニューから、(**[エンドポイント**] の下にある ) [**パートナー & API**] > **[接続済みアプリケーション**] を選択します。
 
 ## <a name="view-connected-application-details"></a>接続されているアプリケーションの詳細を表示する
 
-[接続されたアプリケーション] ページには、組織内Azure AD Microsoft Defender for Endpoint に接続されているアプリケーションに関する情報が表示されます。 接続されているアプリケーションの使用状況を確認できます。前回の表示、過去 24 時間の要求数、過去 30 日間の傾向の要求を行います。
+[接続済みアプリケーション] ページには、組織内のMicrosoft Defender for Endpointに接続されているAzure AD アプリケーションに関する情報が表示されます。 接続されたアプリケーションの使用状況 (前回表示された回数、過去 24 時間の要求数、過去 30 日間の要求の傾向) を確認できます。
 
 :::image type="content" source="images/connected-apps.png" alt-text="接続されているアプリケーション" lightbox="images/connected-apps.png":::
  
-## <a name="edit-reconfigure-or-delete-a-connected-application"></a>接続されているアプリケーションの編集、再構成、または削除
+## <a name="edit-reconfigure-or-delete-a-connected-application"></a>接続されているアプリケーションを編集、再構成、または削除する
 
-[**アプリケーション設定を開く**] リンクは、Azure portal Azure AD対応するアプリケーション管理ページを開きます。 Azure portal から、接続されているアプリケーションのアクセス許可の管理、再構成、または削除を行います。
+[**アプリケーション設定を開く]** リンクをクリックすると、Azure portalで対応するAzure ADアプリケーション管理ページが開きます。 Azure portalから、接続されているアプリケーションのアクセス許可の管理、再構成、または削除を行うことができます。

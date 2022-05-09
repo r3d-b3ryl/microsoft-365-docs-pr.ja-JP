@@ -30,7 +30,7 @@ Microsoft 365 Apps for business サブスクリプションにサインアップ
 - **Microsoft 365 Apps for business [購入](https://go.microsoft.com/fwlink/?linkid=2181424)し、独自のセットアップを完了します**。 Microsoft 365 Apps for businessを購入するには、[次の手順に従います](#sign-up-steps)。
 - **Microsoft パートナーの** 場合: パートナーの場合は、「[ビジネスのMicrosoft 365を取得する」を](../../business/get-microsoft-365-business.md)参照してください。
 
-**別のものが必要ですか?** 次の操作を行うことができます:
+**別のものが必要ですか?** 次の操作を実行できます。
 
 - ビジネス向けに購入していない場合は、[自宅または家族のプランにサインアップ](https://go.microsoft.com/fwlink/?linkid=2109398)します。
 

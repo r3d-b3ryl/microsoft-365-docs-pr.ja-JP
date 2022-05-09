@@ -35,7 +35,7 @@ JAMF Proを使用して、エンドポイントのデータ損失防止などの
 - [エンドポイントのデータ損失防止](./endpoint-dlp-learn-about.md)
 - [インサイダー リスク管理](insider-risk-management.md)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - [macOS デバイスが JAMF pro を介して管理され、JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) ConnectまたはIntuneを介して ID (Azure AD参加している UPN) に関連付けられていることを確認します。
 - macOS デバイスに v95+ Edge ブラウザーをインストールする

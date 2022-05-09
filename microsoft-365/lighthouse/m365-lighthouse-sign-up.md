@@ -28,7 +28,7 @@ ms.locfileid: "65172192"
 
 この記事では、Microsoft 365 Lighthouseにサインアップする方法について説明します。 Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (MSP) が小規模および中規模のビジネス (SMB) のお客様向けに大規模にデバイス、データ、ユーザーをセキュリティで保護および管理するのに役立つ管理ポータルです。 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Microsoft 365 Lighthouseは、顧客テナント内だけでなく、パートナー テナントにのみ&mdash;デプロイされますが、お客様と顧客テナントが[、Microsoft 365 Lighthouse要件](m365-lighthouse-requirements.md)に記載されている要件を満たしていることを確認してください。
 

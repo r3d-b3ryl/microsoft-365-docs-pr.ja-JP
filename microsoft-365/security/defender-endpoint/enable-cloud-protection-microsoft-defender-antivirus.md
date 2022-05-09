@@ -97,7 +97,7 @@ Microsoft Endpoint Configuration Managerの構成の詳細については、「[
     > [!NOTE]
     > MAPS の設定は、クラウド配信の保護と同じです。
 
-5. **[Microsoft MAPS に参加** する] をダブルクリックします。 このオプションがオンになっていることを確認し、 **Basic MAPS** または **Advanced MAPS** に設定します。 [**OK**] を選択します。
+5. **[Microsoft MAPS に参加** する] をダブルクリックします。 このオプションがオンになっていることを確認し、 **Basic MAPS** または **Advanced MAPS** に設定します。 **[OK]** を選択します。
 
     検出されたソフトウェアに関する基本的な情報または追加情報を送信することを選択できます。
 
@@ -114,7 +114,7 @@ Microsoft Endpoint Configuration Managerの構成の詳細については、「[
    > [ **安全なサンプルの送信** (1)] オプションは、ほとんどのサンプルが自動的に送信されることを意味します。 個人情報が含まれている可能性が高いファイルは引き続き確認を求め、追加の確認が必要になります。
    > **Always Prompt** (0) オプションを設定すると、デバイスの保護状態が低下します。 [**送信しない]** (2) に設定すると、Microsoft Defender for Endpointの [[一目でブロック](configure-block-at-first-sight-microsoft-defender-antivirus.md)] 機能は機能しません。
 
-7. [**OK**] を選択します。
+7. **[OK]** を選択します。
 
 ## <a name="use-powershell-cmdlets-to-turn-on-cloud-protection"></a>PowerShell コマンドレットを使用してクラウド保護を有効にする
 
@@ -160,13 +160,13 @@ SubmitSamplesConsent
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 

@@ -153,7 +153,7 @@ Outlookの場合、ユーザーは次のいずれかを使用している必要�
 
 
 ### <a name="exchange-online-requirements"></a>Exchange Online要件 
-Microsoft Exchangeは、組織のテナント内にアドイン マニフェストを格納します。 アドインを展開する管理者と、それらのアドインを受け取るユーザーは、OAuth 認証をサポートするバージョンのExchange Online上にある必要があります。 
+Microsoft Exchange は、組織のテナント内にアドイン マニフェストを格納します。 アドインを展開する管理者と、それらのアドインを受け取るユーザーは、OAuth 認証をサポートするバージョンのExchange Online上にある必要があります。 
 
 組織の Exchange 管理者に、どの構成を使用できるのかを確認してください。ユーザーごとの OAuth 認証接続は、[Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell コマンドレットを使用して、検証できます。 
 
@@ -314,8 +314,8 @@ Exchange管理者がアドインをデプロイできないケースは 2 つあ
 
 ### <a name="is-integrated-apps-available-in-sovereign-cloud"></a>統合アプリはソブリン クラウドで利用できますか?
 
-その必要はありません。 統合アプリは、ソブリン クラウドのお客様には使用できません。
+いいえ。 統合アプリは、ソブリン クラウドのお客様には使用できません。
 
 ### <a name="is-integrated-apps-available-in-government-clouds"></a>統合アプリは政府機関のクラウドで利用できますか?
 
-その必要はありません。 統合アプリは、政府機関のクラウドのお客様には利用できません。
+いいえ。 統合アプリは、政府機関のクラウドのお客様には利用できません。

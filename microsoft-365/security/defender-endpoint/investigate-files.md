@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint ファイルの調査
-description: 調査オプションを使用して、アラート、動作、またはイベントに関連付けられたファイルの詳細を取得します。
-keywords: 調査、調査、ファイル、悪意のあるアクティビティ、攻撃の動機、深い分析、深い分析レポート
+title: Microsoft Defender for Endpoint ファイルを調査する
+description: 調査オプションを使用して、アラート、動作、またはイベントに関連付けられているファイルの詳細を取得します。
+keywords: 調査, 調査, ファイル, 悪意のあるアクティビティ, 攻撃の動機, ディープ分析, 詳細分析レポート
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64466237"
 ---
-# <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpoint アラートに関連付けられたファイルを調査する
+# <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpointアラートに関連付けられているファイルを調査する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,15 +34,15 @@ ms.locfileid: "64466237"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatefiles-abovefoldlink)
 
-特定のアラート、動作、またはイベントに関連付けられたファイルの詳細を調査して、ファイルに悪意のあるアクティビティが発生したかどうかを判断し、攻撃の動機を特定し、侵害の潜在的な範囲を理解します。
+特定のアラート、動作、またはイベントに関連付けられているファイルの詳細を調査し、ファイルが悪意のあるアクティビティを示しているかどうかを判断し、攻撃の動機を特定し、侵害の潜在的な範囲を理解するのに役立ちます。
 
-特定のファイルの詳細なプロファイル ページにアクセスするには、さまざまな方法があります。 たとえば、検索機能を使用したり、アラート プロセス ツリー、インシデント グラフ、アーティファクト タイムラインからのリンクをクリックしたり、デバイス タイムラインに一覧表示されているイベント **を選択することができます**。 
+特定のファイルの詳細なプロファイル ページにアクセスするには、さまざまな方法があります。 たとえば、検索機能を使用したり、 **アラート プロセス ツリー**、 **インシデント グラフ**、 **成果物タイムライン** からリンクをクリックしたり、 **デバイス タイムライン** に一覧表示されているイベントを選択したりできます。
 
-詳細なプロファイル ページに移動したら、新しい [ファイル] ページを切り替えて、新しいページ レイアウトと古いページ レイアウト **を切り替えることができます**。 この記事の残りの部分では、新しいページ レイアウトについて説明します。
+詳細なプロファイル ページで、新しいファイル ページを切り替えることで、 **新しい** ページレイアウトと古いページ レイアウトを切り替えることができます。 この記事の残りの部分では、新しいページ レイアウトについて説明します。
 
-ファイル ビューでは、次のセクションから情報を取得できます。
+ファイル ビューの次のセクションから情報を取得できます。
 
-- ファイルの詳細, マルウェアの検出, ファイルの普及率
+- ファイルの詳細、マルウェアの検出、ファイルの普及率
 - 詳細分析
 - アラート
 - 組織内で観察される
@@ -53,65 +53,65 @@ ms.locfileid: "64466237"
 
 ## <a name="file-actions"></a>ファイル操作
 
-プロファイル ページの上部、ファイル情報カードの上。 ここで実行できるアクションは次のとおりです。
+プロファイル ページの上部にあるファイル情報カードの上。 ここで実行できるアクションは次のとおりです。
 
 - 停止と検疫
-- インジケーターの追加および編集
+- インジケーターの追加/編集
 - ファイルをダウンロードする
 - 脅威のエキスパートに相談する
 - アクション センター
 
-これらのアクションの詳細については、「ファイルに [対して応答アクションを実行する」を参照してください](respond-file-alerts.md)。
+これらのアクションの詳細については、「 [ファイルに対する応答アクションの実行」を](respond-file-alerts.md)参照してください。
 
 ## <a name="file-details-malware-detection-and-file-prevalence"></a>ファイルの詳細、マルウェア検出、ファイルの普及率
 
-ファイルの詳細、インシデント、マルウェア検出、およびファイル普及率カードには、ファイルに関するさまざまな属性が表示されます。
+ファイルの詳細、インシデント、マルウェア検出、ファイルの普及率カードには、ファイルに関するさまざまな属性が表示されます。
 
-ファイルの MD5、ウイルスの合計検出率、使用可能な場合は Microsoft Defender AV 検出、ファイルの普及率などの詳細が表示されます。
+ファイルの MD5、ウイルス合計検出率、Microsoft Defender AV 検出 (使用可能な場合)、ファイルの普及率などの詳細が表示されます。
 
-ファイルの有病率カードは、組織内および世界中のデバイスでファイルが見られた場所を示します。
+ファイルの普及率カードには、組織内および世界中のデバイスでファイルが表示された場所が表示されます。
 
 > [!NOTE]
-> 異なるユーザーは、ファイル普及カードの組織セクションのデバイスに異なる値を表示する場合があります。 これは、ユーザーが持つ RBAC スコープに基づいて情報がカードに表示されるためです。 つまり、ユーザーが特定のデバイス セットで表示を許可されている場合、それらのデバイスに対するファイル組織の普及率だけが表示されます。
+> ファイルの普及率カードの *組織セクションのデバイスには* 、異なるユーザーが異なる値を表示する場合があります。 これは、ユーザーが持つ RBAC スコープに基づいてカードに情報が表示されるためです。 つまり、特定のデバイス セットに対する可視性がユーザーに付与されている場合、それらのデバイスに対するファイルの組織の普及率のみが表示されます。
 
 :::image type="content" source="images/atp-file-information.png" alt-text="ファイル情報" lightbox="images/atp-file-information.png":::
 
 ## <a name="alerts"></a>アラート
 
-[ **アラート]** タブには、ファイルに関連付けられているアラートの一覧が表示されます。 このリストには、影響を受けるデバイスが属するデバイス グループがある場合を除き、アラート キューと同じ情報の多くが含まれる。 列ヘッダーの上にあるツールバーから [列のカスタマイズ]  を選択すると、表示される情報の種類を選択できます。
+[ **アラート]** タブには、ファイルに関連付けられているアラートの一覧が表示されます。 この一覧には、影響を受けるデバイスが属しているデバイス グループがある場合を除き、アラート キューと同じ情報の多くが含まれます。 列ヘッダーの上にあるツール バーから **[列のカスタマイズ** ] を選択すると、表示される情報の種類を選択できます。
 
-:::image type="content" source="images/atp-alerts-related-to-file.png" alt-text="[ファイル] セクションに関連するアラート" lightbox="images/atp-alerts-related-to-file.png":::
+:::image type="content" source="images/atp-alerts-related-to-file.png" alt-text="ファイル セクションに関連するアラート" lightbox="images/atp-alerts-related-to-file.png":::
 
 ## <a name="observed-in-organization"></a>組織内で観察される
 
-[ **組織で観察]** タブを使用すると、日付範囲を指定して、ファイルで観察されたデバイスを確認できます。
+[ **組織の監視** ] タブでは、ファイルで監視されたデバイスを確認する日付範囲を指定できます。
 
 > [!NOTE]
-> このタブには、最大 100 台のデバイスが表示されます。 ファイルを _含む_ すべてのデバイスを表示するには、タブの列ヘッダーの上にあるアクション メニューから [エクスポート] を選択して、タブを CSV ファイルにエクスポートします。
+> このタブには、最大 100 台のデバイスが表示されます。 ファイル _を含むすべての_ デバイスを表示するには、タブの列ヘッダーの上にあるアクション メニューから **[エクスポート** ] を選択して、タブを CSV ファイルにエクスポートします。
 
-:::image type="content" source="images/atp-observed-machines.png" alt-text="ファイルを含む最新の観測デバイス" lightbox="images/atp-observed-machines.png":::
+:::image type="content" source="images/atp-observed-machines.png" alt-text="ファイルで観察された最新のデバイス" lightbox="images/atp-observed-machines.png":::
 
-スライダーまたは範囲セレクターを使用して、ファイルに関連するイベントを確認する期間をすばやく指定します。 タイム ウィンドウは、1 日に限り小さく指定できます。 これにより、その時点でその IP アドレスと通信したファイルだけが表示され、不要なスクロールと検索が大幅に削減されます。
+スライダーまたは範囲セレクターを使用して、ファイルに関連するイベントを確認する期間をすばやく指定します。 タイム ウィンドウは、1 日に限り小さく指定できます。 これにより、その時点でその IP アドレスと通信したファイルのみが表示され、不要なスクロールと検索が大幅に減ります。
 
 ## <a name="deep-analysis"></a>詳細分析
 
-[**深い分析**] タブを [](respond-file-alerts.md#deep-analysis)使用すると、ファイルを詳細に分析するためにファイルを提出し、ファイルの動作の詳細と、ファイルが組織に与える影響を明らかにできます。 ファイルを送信すると、結果が得られたら、このタブに詳細分析レポートが表示されます。 深い分析で何も見つからなかった場合、レポートは空で、結果領域は空白のままです。
+[ **ディープ分析** ] タブでは、 [詳細な分析のためにファイルを送信](respond-file-alerts.md#deep-analysis)し、ファイルの動作に関する詳細と組織内での影響を明らかにすることができます。 ファイルを送信すると、結果が使用可能になると、詳細分析レポートがこのタブに表示されます。 詳細な分析で何も見つからなかった場合、レポートは空になり、結果の領域は空白のままになります。
 
-:::image type="content" source="images/submit-file.png" alt-text="[深い分析] タブ" lightbox="images/submit-file.png":::
+:::image type="content" source="images/submit-file.png" alt-text="[ディープ分析] タブ" lightbox="images/submit-file.png":::
 
 ## <a name="file-names"></a>ファイル名
 
-[ **ファイル名] タブ** には、組織でファイルが使用されているすべての名前が一覧表示されます。
+[ **ファイル名** ] タブには、組織内で使用するために観察されたすべての名前が一覧表示されます。
 
 :::image type="content" source="images/atp-file-names.png" alt-text="[ファイル名] タブ" lightbox="images/atp-file-names.png":::
 
 ## <a name="related-topics"></a>関連項目
 
-- [Microsoft Defender for Endpoint キューの表示と整理](alerts-queue.md)
-- [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
-- [Microsoft Defender for Endpoint アラートの調査](investigate-alerts.md)
-- [Microsoft Defender for Endpoint Devices リストのデバイスを調査する](investigate-machines.md)
+- [Microsoft Defender for Endpoint キューを表示および整理する](alerts-queue.md)
+- [Microsoft Defender for Endpointアラートを管理する](manage-alerts.md)
+- [Microsoft Defender for Endpointアラートを調査する](investigate-alerts.md)
+- [Microsoft Defender for Endpoint デバイスの一覧のデバイスを調査する](investigate-machines.md)
 - [Microsoft Defender for Endpoint アラートに関連付けられている IP アドレスを調査する](investigate-ip.md)
 - [Microsoft Defender for Endpoint アラートに関連付けられているドメインを調査する](investigate-domain.md)
-- [Microsoft Defender for Endpoint のユーザー アカウントを調査する](investigate-user.md)
+- [Microsoft Defender for Endpointでユーザー アカウントを調査する](investigate-user.md)
 - [ファイルの対応措置を講じる](respond-file-alerts.md)

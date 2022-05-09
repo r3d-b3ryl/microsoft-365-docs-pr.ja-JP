@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: AI ビルドを使用して Microsoft Web サイトでフォーム処理モデルを作成するSharePoint Syntex。
-ms.openlocfilehash: a3a3d1fa0e160b96d487a5eeb03c69f9e4fe7fb3
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+description: MICROSOFT SharePoint Syntexで AI ビルドを使用してフォーム処理モデルを作成する方法について説明します。
+ms.openlocfilehash: 77f316a636d3a59d83bcd881df3bc2005dea722c
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507391"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916107"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でのフォーム処理の概要
 
@@ -37,11 +37,11 @@ AI Builder フォーム処理を使用して、機械学習テクノロジを使
 
 ![ドキュメント ライブラリ ビュー。](../media/content-understanding/doc-lib-done.png)</br>  
 
-サンプルファイルを使用してモデルをトレーニングし、フォームから抽出する情報を定義します。 文書のレイアウトは、モデルをトレーニングすることで学習されます。 開始するのに必要なフォーム ドキュメントは5つだけです。 AI ビルダーは、キーと値のペアについてサンプル ファイルを分析し、検出されていない可能性のあるファイルを手動で識別することもできます。  AI ビルダーを使用すると、サンプルファイルでモデルの精度をテストできます。
+サンプルファイルを使用してモデルをトレーニングし、フォームから抽出する情報を定義します。 文書のレイアウトは、モデルをトレーニングすることで学習されます。 開始するのに必要なフォーム ドキュメントは5つだけです。 AI Builder は、キーと値のペアについてサンプル ファイルを分析し、検出されなかった可能性のあるファイルを手動で識別することもできます。  AI ビルダーを使用すると、サンプルファイルでモデルの精度をテストできます。
 
-モデルをトレーニングして発行すると、モデルは新しいフロー Power Automate[します](/power-automate/getting-started)。 フローは、ファイルが SharePoint ドキュメントライブラリにアップロードされたときに実行され、モデルで識別されたデータを抽出します。 抽出されたデータは、モデルのドキュメント ライブラリ ビューの列に表示されます。
+モデルをトレーニングして発行すると、モデルによって[Power Automateフロー](/power-automate/getting-started)が作成されます。 フローは、ファイルが SharePoint ドキュメントライブラリにアップロードされたときに実行され、モデルで識別されたデータを抽出します。 抽出されたデータは、モデルのドキュメント ライブラリ ビューの列に表示されます。
 
-管理者Office 365は、ユーザーがフォーム処理[](./set-up-content-understanding.md)モデルを作成するために、SharePoint ドキュメント ライブラリのフォーム処理[を有効にする](create-a-form-processing-model.md)必要があります。 セットアップ中、またはセットアップ後に管理設定でサイトを選択できます。
+Office 365管理者は、ユーザーがフォーム処理モデルを作成できるようにするために、SharePoint ドキュメント ライブラリの[フォーム処理を](create-a-form-processing-model.md)[有効にする](./set-up-content-understanding.md)必要があります。 セットアップ中、またはセットアップ後に管理設定でサイトを選択できます。
 
 ### <a name="file-limitations"></a>ファイルの制限事項
 
@@ -49,16 +49,11 @@ AI Builder フォーム処理を使用して、機械学習テクノロジを使
 
 ### <a name="supported-languages"></a>サポートされている言語
 
-フォーム処理では、73 を超える言語のドキュメントがサポートされています。 言語の一覧については、「フォーム処理言語 [のサポート」を参照してください](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support)。
+フォーム処理では、73 を超える言語のドキュメントがサポートされます。 言語の一覧については、「 [フォーム処理言語のサポート](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support)」を参照してください。
 
 ### <a name="multi-geo-environments"></a>Multi-Geo 環境
 
 [Microsoft 365 Multi-Geo 環境](../enterprise/microsoft-365-multi-geo.md)で SharePoint Syntex をセットアップする場合、中央の場所でフォーム処理を使用するように構成することしかできません。 サテライトの場所でフォーム処理を使用する場合は、Microsoft サポートに連絡してください。
-
-
-
-
-
 
 ## <a name="see-also"></a>関連項目
   

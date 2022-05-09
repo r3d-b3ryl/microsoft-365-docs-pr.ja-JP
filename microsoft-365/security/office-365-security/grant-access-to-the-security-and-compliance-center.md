@@ -44,9 +44,9 @@ ms.locfileid: "65130760"
 
 - この記事の手順を完了するには、グローバル管理者、またはセキュリティ & コンプライアンス センターの OrganizationManagement ロール グループのメンバーである必要があります。
 
-- セキュリティ & コンプライアンス センターの役割グループの名前は、Exchange Online の役割グループと似ていますが、同じではありません。
+- セキュリティ & コンプライアンス センターの役割グループの名前は、Exchange Onlineの役割グループと似ていますが、同じではありません。
 
-- 役割グループのメンバーシップは、Exchange Online とセキュリティ & コンプライアンス センターの間では共有されません。
+- 役割グループのメンバーシップは、Exchange Onlineとセキュリティ & コンプライアンス センターの間では共有されません。
 
 - 代理アクセス許可 (DAP) の代理管理 (AOBO) アクセス許可を持つパートナーは、セキュリティ & コンプライアンス センターにアクセスできません。
 
@@ -64,7 +64,7 @@ ms.locfileid: "65130760"
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>セキュリティ & コンプライアンス センター PowerShell を使用して、別のユーザーにセキュリティ & コンプライアンス センターへのアクセス権を付与する
 
-1. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
+1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 次の構文を使用してください。
 

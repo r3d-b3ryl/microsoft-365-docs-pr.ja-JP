@@ -33,7 +33,7 @@ ms.locfileid: "64823589"
 > [!IMPORTANT]
 > この記事は、インドの無料組織Microsoft Teamsにのみ適用されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 Microsoft Teams Free 組織をアップグレードするには、Microsoft Teams Free 管理者である必要があります。 Microsoft Teams Free 組織を作成した場合、管理者は自動的に管理者になります。
 

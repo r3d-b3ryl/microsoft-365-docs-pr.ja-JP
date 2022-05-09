@@ -174,7 +174,7 @@ Microsoft はサービス自体を運用しません。 21Vianet により、サ
 |予定表の共有|Exchange 2013 SP1 以降では、他のオンプレミスのExchangeまたはExchange Online組織とのインターネット 予定表共有を手動で構成できます。 この機能を手動で構成する方法の詳細については、「 [インターネット 予定表の発行を有効にする」を](/exchange/enable-internet-calendar-publishing-exchange-2013-help)参照してください。|
 Apple モバイル デバイス上の連絡先データExchange Apple iCloud に共有する。|この設定/機能は既定で有効になっています。 管理者は、ユーザーが組織外でExchangeデータを共有できないようにするために、この機能をオフにする必要があります。|
 |ホストされた電子メールの暗号化Exchange|注意事項なし。|
-|Microsoft Purview メッセージ暗号化|もうすぐです。|
+|Microsoft Purview のメッセージの暗号化|もうすぐです。|
 
 ## <a name="office"></a>事業所
 

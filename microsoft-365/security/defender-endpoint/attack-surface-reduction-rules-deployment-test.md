@@ -113,7 +113,7 @@ ASR ルール レポート ページは **、Microsoft 365 Defender** **portalRe
 - ソース アプリ
 - Device
 - User
-- 発行者
+- Publisher
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="攻撃面の縮小ルール検出 GroupBy フィルター" lightbox="images/asr-defender365-reports-detections.png":::

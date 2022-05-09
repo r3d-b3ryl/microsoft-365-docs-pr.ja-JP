@@ -149,7 +149,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 In-Place電子情報開示検索を移行しても電子情報開示ケースに関連付けない場合は、コンプライアンス ポータルの [コンテンツ検索] ページに一覧表示されます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>での電子情報開示&保留のIn-Placeの詳細については、次を参照してください。
   

@@ -56,7 +56,7 @@ ms.locfileid: "64567986"
 
 - **RemoteDatabaseName**: 移行元のデータベース名。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 MRS とメールボックスの移行の詳細については、次の記事を参照してください。
 

@@ -1,7 +1,7 @@
 ---
-title: Jamf にログインPro
-description: Jamf にログインPro
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+title: Jamf Proにログインする
+description: Jamf Proにログインする
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, インストール, 展開, アンインストール, intune, jamfpro, macos, catalina, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64470133"
 ---
-# <a name="log-in-to-jamf-pro"></a>Jamf にログインPro
+# <a name="log-in-to-jamf-pro"></a>Jamf Proにログインする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,17 +35,17 @@ ms.locfileid: "64470133"
 
 1. 資格情報を入力します。
 
-   :::image type="content" source="images/jamf-pro-portal1.png" alt-text="Jamf Proダッシュボード1" lightbox="images/jamf-pro-portal1.png":::
+   :::image type="content" source="images/jamf-pro-portal1.png" alt-text="Jamf Pro ダッシュボード1" lightbox="images/jamf-pro-portal1.png":::
 
-2. [コンピューター **] を選択します**。
+2. [ **コンピューター] を選択します**。
 
    :::image type="content" source="images/jamf-pro-dashboard.png" alt-text="Jamf Pro ダッシュボード2" lightbox="images/jamf-pro-dashboard.png":::
 
 3. 使用可能な設定が表示されます。
 
-   :::image type="content" source="images/jamfpro-settings.png" alt-text="Jamf Proダッシュボード3" lightbox="images/jamfpro-settings.png":::
+   :::image type="content" source="images/jamfpro-settings.png" alt-text="Jamf Pro ダッシュボード3" lightbox="images/jamfpro-settings.png":::
 
 
 ## <a name="next-step"></a>次の手順
-[Jamf グループでデバイス グループをセットアップPro](mac-jamfpro-device-groups.md)
+[Jamf Proでデバイス グループをセットアップする](mac-jamfpro-device-groups.md)
 

@@ -1,7 +1,7 @@
 ---
 title: 転送プロキシの背後で発生する接続イベントの調査
-description: プロキシではなく、実際のターゲットを表面化する Microsoft Defender for Endpoint のネットワーク保護を通じて高度な HTTP レベルの監視を使用する方法について説明します。
-keywords: プロキシ、ネットワーク保護、転送プロキシ、ネットワーク イベント、監査、ブロック、ドメイン名、ドメイン
+description: プロキシの代わりに実際のターゲットを示すMicrosoft Defender for Endpointのネットワーク保護を通じて高度な HTTP レベルの監視を使用する方法について説明します。
+keywords: プロキシ, ネットワーク保護, 転送プロキシ, ネットワーク イベント, 監査, ブロック, ドメイン名, ドメイン
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,43 +32,43 @@ ms.locfileid: "64469803"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
-Defender for Endpoint は、ネットワーク スタックの異なるレベルからのネットワーク接続監視をサポートします。 難しいケースは、ネットワークがインターネットへのゲートウェイとして転送プロキシを使用する場合です。
+Defender for Endpoint では、ネットワーク スタックのさまざまなレベルからのネットワーク接続の監視がサポートされます。 困難なケースは、ネットワークがインターネットへのゲートウェイとしてフォワード プロキシを使用する場合です。
 
-プロキシは、ターゲット エンドポイントである場合と同様に動作します。 このような場合、単純なネットワーク接続モニターは、正しいが調査値が低いプロキシとの接続を監査します。
+プロキシは、それがターゲット エンドポイントであるかのように動作します。 このような場合、単純なネットワーク接続モニターは、正しいが調査値が低いプロキシとの接続を監査します。
 
-Defender for Endpoint は、ネットワーク保護による高度な HTTP レベルの監視をサポートします。 オンにすると、実際のターゲット ドメイン名を公開する新しい種類のイベントが表示されます。
+Defender for Endpoint では、ネットワーク保護による高度な HTTP レベルの監視がサポートされています。 オンにすると、実際のターゲット ドメイン名を公開する新しい種類のイベントが表示されます。
 
-## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>ネットワーク保護を使用してファイアウォールの背後にあるネットワーク接続を監視する
+## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>ネットワーク保護を使用してファイアウォールの内側のネットワーク接続を監視する
 
-転送プロキシの背後にあるネットワーク接続の監視は、ネットワーク保護から発生する他のネットワーク イベントが原因で可能です。 デバイスのタイムラインで表示するには、ネットワーク保護を有効にします (監査モードでは最小)。
+転送プロキシの背後にあるネットワーク接続を監視することは、ネットワーク保護から発生する他のネットワーク イベントが原因で発生する可能性があります。 デバイスのタイムラインに表示するには、ネットワーク保護を有効にします (監査モードでは少なくとも)。
 
 ネットワーク保護は、次のモードを使用して制御できます。
 
-- **ブロック**: ユーザーまたはアプリが危険なドメインへの接続をブロックされます。 このアクティビティは、次のページでMicrosoft 365 Defender。
-- **監査**: ユーザーまたはアプリが危険なドメインへの接続をブロックされません。 ただし、このアクティビティは引き続き[Microsoft 365 Defender] に表示されます。
+- **ブロック**: ユーザーまたはアプリは、危険なドメインへの接続をブロックされます。 このアクティビティは、Microsoft 365 Defenderで確認できます。
+- **監査**: ユーザーまたはアプリが危険なドメインへの接続をブロックされることはありません。 ただし、このアクティビティはMicrosoft 365 Defenderに引き続き表示されます。
 
 
-ネットワーク保護をオフにした場合、ユーザーまたはアプリは危険なドメインへの接続をブロックされません。 ネットワーク アクティビティは、Microsoft 365 Defender に表示Microsoft 365 Defender。
+ネットワーク保護を無効にすると、ユーザーまたはアプリが危険なドメインへの接続をブロックされることはありません。 Microsoft 365 Defenderにネットワーク アクティビティは表示されません。
 
 構成しない場合、ネットワークブロックは既定で無効になります。
 
-詳細については、「ネットワーク保護を有効 [にする」を参照してください](enable-network-protection.md)。
+詳細については、「 [ネットワーク保護を有効にする」を](enable-network-protection.md)参照してください。
 
-## <a name="investigation-impact"></a>調査への影響
+## <a name="investigation-impact"></a>調査の影響
 
-ネットワーク保護を有効にすると、デバイスのタイムラインで IP アドレスがプロキシを表し続け、実際のターゲット アドレスが表示されます。
+ネットワーク保護がオンになっていると、デバイスのタイムラインで IP アドレスがプロキシを表し続け、実際のターゲット アドレスが表示されます。
 
 :::image type="content" source="images/atp-proxy-investigation.png" alt-text="デバイスのタイムライン上のネットワーク イベント" lightbox="images/atp-proxy-investigation.png":::
 
-ネットワーク保護層によってトリガーされるその他のイベントは、プロキシの背後でも実際のドメイン名を表示できます。
+ネットワーク保護レイヤーによってトリガーされるその他のイベントは、プロキシの背後でも実際のドメイン名を表示するために使用できるようになりました。
 
 イベントの情報:
 
-:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="単一のネットワーク イベントの URL" lightbox="images/atp-proxy-investigation-event.png":::
+:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="1 つのネットワーク イベントの URL" lightbox="images/atp-proxy-investigation-event.png":::
 
-## <a name="hunt-for-connection-events-using-advanced-hunting"></a>高度な検索を使用した接続イベントのハント
+## <a name="hunt-for-connection-events-using-advanced-hunting"></a>高度なハンティングを使用して接続イベントを検出する
 
-すべての新しい接続イベントは、高度な狩猟を通じて狩りを行うのにも利用できます。 これらのイベントは接続イベントですから、アクションの種類の下にある DeviceNetworkEvents テーブルの下にイベントを `ConnecionSuccess` 検索できます。
+すべての新しい接続イベントを利用して、高度な捜索を行うこともできます。 これらのイベントは接続イベントであるため、DeviceNetworkEvents テーブルのアクションの種類の `ConnecionSuccess` 下にあります。
 
 この単純なクエリを使用すると、関連するすべてのイベントが表示されます。
 
@@ -78,11 +78,11 @@ DeviceNetworkEvents
 | take 10
 ```
 
-:::image type="content" source="images/atp-proxy-investigation-ah.png" alt-text="高度な検索クエリ" lightbox="images/atp-proxy-investigation-ah.png":::
+:::image type="content" source="images/atp-proxy-investigation-ah.png" alt-text="高度なハンティング クエリ" lightbox="images/atp-proxy-investigation-ah.png":::
 
-プロキシ自体への接続に関連するイベントをフィルター処理することもできます。
+プロキシ自体への接続に関連するイベントを除外することもできます。
 
-プロキシへの接続をフィルター処理するには、次のクエリを使用します。
+次のクエリを使用して、プロキシへの接続を除外します。
 
 ```console
 DeviceNetworkEvents
@@ -92,4 +92,4 @@ DeviceNetworkEvents
 
 ## <a name="related-topics"></a>関連項目
 
-- [GP によるネットワーク保護の適用 - ポリシー CSP](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+- [GP を使用したネットワーク保護の適用 - ポリシー CSP](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

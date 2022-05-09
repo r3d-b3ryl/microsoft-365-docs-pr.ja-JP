@@ -34,7 +34,7 @@ ms.locfileid: "64500477"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 1. テナントに [イベント ハブ](/azure/event-hubs/) を作成します。
 

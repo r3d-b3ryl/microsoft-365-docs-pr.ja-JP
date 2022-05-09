@@ -143,7 +143,7 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 
 2. **セキュリティ インテリジェンス アンパックャー** として名前を入力します。 **[トリガー**] タブに移動します。**[新規]を** 選択します。\>**毎日**、OK を選択 **します**。
 
-3. **[アクション]** タブに移動します。**[新規]** を選択します。**[プログラム/スクリプト**] フィールドに **「PowerShell**」と入力します。 **[引数の追加]** フィールドに入力`-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1`します。 [**OK**] を選択します。
+3. **[アクション]** タブに移動します。**[新規]** を選択します。**[プログラム/スクリプト**] フィールドに **「PowerShell**」と入力します。 **[引数の追加]** フィールドに入力`-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1`します。 **[OK]** を選択します。
 
 4. 必要に応じて、追加の設定を構成することもできます。
 
@@ -241,7 +241,7 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 
 3. ポリシーを **[有効]** に設定します。
 
-4. [**OK**] を選択します。
+4. **[OK]** を選択します。
 
 5. 通常どおり、グループ ポリシー オブジェクトをデプロイします。
 
@@ -269,13 +269,13 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 ## <a name="additional-resources"></a>その他のリソース
 

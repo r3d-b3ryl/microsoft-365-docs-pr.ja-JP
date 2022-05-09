@@ -128,7 +128,7 @@ Microsoft 365 Defenderを使用してデータを読み取り、分析する方�
 
 6. 他のアラートを選択すると、攻撃の全体像を把握できます。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 :::image type="content" source="../../media/first-incident-overview/first-incident-path-step2.png" alt-text="[最初のインシデントに対応する] ページの [修復] オプション" lightbox="../../media/first-incident-overview/first-incident-path-step2.png":::
 

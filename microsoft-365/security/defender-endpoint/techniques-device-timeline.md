@@ -1,7 +1,7 @@
 ---
-title: デバイスタイムラインのテクニック
-description: Microsoft Defender for Endpoint のデバイス タイムラインについて
-keywords: デバイスタイムライン、エンドポイント、MITRE、MITRE ATT&CK、テクニック、戦術
+title: デバイスタイムラインの手法
+description: Microsoft Defender for Endpointのデバイス タイムラインについて
+keywords: デバイスタイムライン, エンドポイント, MITRE, MITRE ATT&CK, テクニック, 戦術
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -23,37 +23,37 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64465907"
 ---
-# <a name="techniques-in-the-device-timeline"></a>デバイスタイムラインのテクニック
+# <a name="techniques-in-the-device-timeline"></a>デバイスタイムラインの手法
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-特定のデバイスで発生したイベントを分析することで、調査に関するより多くの洞察を得られる可能性があります。 最初に、[デバイス] リストから目的のデバイス [を選択します](machines-view-overview.md)。 デバイス ページで、[タイムライン] タブを **選択** して、デバイスで発生したイベントを表示できます。
+特定のデバイスで発生したイベントを分析することで、調査に関するより多くの洞察を得ることができます。 まず、[デバイス] [の一覧](machines-view-overview.md)から目的のデバイスを選択します。 デバイス ページで[ **タイムライン** ] タブを選択すると、デバイスで発生したすべてのイベントを表示できます。
 
-## <a name="understand-techniques-in-the-timeline"></a>タイムラインのテクニックを理解する
+## <a name="understand-techniques-in-the-timeline"></a>タイムラインの手法を理解する
 
 > [!IMPORTANT]
-> 一部の情報は、パブリック プレビューで事前リリースされた製品機能に関連します。これは、商用リリース前に大幅に変更される可能性があります。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+> 一部の情報は、パブリック プレビューのプレリリースされた製品機能に関連しており、商用リリースされる前に大幅に変更される可能性があります。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-Microsoft Defender for Endpoint では、 **Techniques は** イベント タイムラインの追加データ型です。 テクニックは、 [MITRE ATT および CK](https://attack.mitre.org/) テクニックまたはサブ&関連するアクティビティに関するより多くの洞察を提供します。
+Microsoft Defender for Endpointでは、**手法** はイベント タイムラインの追加のデータ型です。 技法は、 [MITRE ATT&CK](https://attack.mitre.org/) 技法またはサブ技法に関連するアクティビティに関するより多くの洞察を提供します。
 
-この機能は、分析者がデバイスで観察されたアクティビティを理解するのを支援することで、調査エクスペリエンスを簡素化します。 アナリストは、さらに調査を行う場合があります。
+この機能は、アナリストがデバイスで観察されたアクティビティを理解できるようにすることで、調査エクスペリエンスを簡素化します。 アナリストは、さらに調査することを決定できます。
 
-パブリック プレビューの場合、テクニックは既定で使用できます。デバイスのタイムラインを表示するときにイベントと共に表示されます。
+パブリック プレビューでは、デバイスのタイムラインが表示されるときに、既定で手法が使用でき、イベントと共に表示されます。
 
-:::image type="content" source="images/device-timeline-2.png" alt-text="デバイスタイムラインのテクニック" lightbox="images/device-timeline-2.png":::
+:::image type="content" source="images/device-timeline-2.png" alt-text="デバイスタイムラインの手法" lightbox="images/device-timeline-2.png":::
 
-テクニックは太字で強調表示され、左側に青いアイコンが表示されます。 対応する MITRE ATT&CK ID とテクニック名は、[追加情報] の下にタグとして表示されます。
+技術は太字で強調表示され、左側に青いアイコンが表示されます。 対応する MITRE ATT&CK ID とテクニック名は、[追加情報] の下にタグとして表示されます。
 
-検索オプションとエクスポート オプションは、[テクニック] でも使用できます。
+検索オプションとエクスポート オプションは、テクニックでも使用できます。
 
 ## <a name="investigate-using-the-side-pane"></a>サイド ウィンドウを使用して調査する
 
-[テクニック] を選択して、対応するサイド ウィンドウを開きます。 ここでは、関連する ATT や CK の手法、&説明など、追加情報と分析情報を確認できます。
+[テクニック] を選択して、対応するサイド ウィンドウを開きます。 ここでは、関連する ATT&CK 手法、戦術、説明などの追加情報と分析情報を確認できます。
 
-特定の *攻撃手法を選択* して、関連する ATT&CK テクニック ページを開き、詳細を確認できます。
+特定の *攻撃手法* を選択して、関連する ATT&CK 手法のページを開きます。ここで、その詳細を確認できます。
 
-右側に青いアイコンが表示されている場合は、エンティティの詳細をコピーできます。 たとえば、関連ファイルの SHA1 をコピーするには、青いページ アイコンを選択します。
+右側に青いアイコンが表示されたら、エンティティの詳細をコピーできます。 たとえば、関連ファイルの SHA1 をコピーするには、青いページ アイコンを選択します。
 
 :::image type="content" source="images/techniques-side-pane-clickable.png" alt-text="エンティティの詳細をコピーする" lightbox="images/techniques-side-pane-clickable.png":::
 
@@ -61,37 +61,37 @@ Microsoft Defender for Endpoint では、 **Techniques は** イベント タイ
 
 :::image type="content" source="images/techniques-side-pane-command.png" alt-text="コマンド ラインをコピーするオプション" lightbox="images/techniques-side-pane-command.png":::
 
-## <a name="investigate-related-events"></a>関連イベントの調査
+## <a name="investigate-related-events"></a>関連するイベントを調査する
 
-高度な [検索を使用して](advanced-hunting-overview.md) 、選択したテクニックに関連するイベントを検索するには、[関連イベントのハント **] を選択します**。 これにより、テクニックに関連するイベントを検索するクエリを含む高度な検索ページが表示されます。
+[高度なハンティング](advanced-hunting-overview.md)を使用して、選択した手法に関連するイベントを検索するには、**関連するイベントのハント** を選択します。 これにより、高度なハンティング ページにクエリが表示され、テクニックに関連するイベントが見つかります。
 
-:::image type="content" source="images/techniques-hunt-for-related-events.png" alt-text="関連イベントのハント オプション" lightbox="images/techniques-hunt-for-related-events.png":::
+:::image type="content" source="images/techniques-hunt-for-related-events.png" alt-text="[関連イベントのハント] オプション" lightbox="images/techniques-hunt-for-related-events.png":::
 
 > [!NOTE]
-> [テクニック **] サイド ウィンドウ** から [関連イベントのハント] ボタンを使用してクエリを実行すると、特定された手法に関連するイベントはすべて表示されますが、クエリ結果にはテクニック自体は含めされません。
+> [手法] サイド ウィンドウの [ **関連イベントの検索** ] ボタンを使用したクエリでは、識別された手法に関連するすべてのイベントが表示されますが、クエリ結果にはテクニック自体は含まれません。
 
 ## <a name="customize-your-device-timeline"></a>デバイスのタイムラインをカスタマイズする
 
-デバイスタイムラインの右上で、タイムライン内のイベントとテクニックの数を制限する日付範囲を選択できます。
+デバイス タイムラインの右上で、タイムライン内のイベントと手法の数を制限する日付範囲を選択できます。
 
-公開する列をカスタマイズできます。 データ型またはイベント グループ別にフラグが設定されたイベントをフィルター処理することもできます。
+公開する列をカスタマイズできます。 また、データ型またはイベント グループ別にフラグ付きイベントをフィルター処理することもできます。
 
 ### <a name="choose-columns-to-expose"></a>公開する列を選択する
 
-[列の選択] ボタンを選択すると、タイムラインで公開する列 **を選択** できます。
+タイムラインで公開する列を選択するには、[ **列の選択]** ボタンを選択します。
 
 :::image type="content" source="images/filter-customize-columns.png" alt-text="列をカスタマイズできるウィンドウ" lightbox="images/filter-customize-columns.png":::
 
 
 そこから、含める情報セットを選択できます。
 
-### <a name="filter-to-view-techniques-or-events-only"></a>フィルターを使用して、手法またはイベントのみを表示する
+### <a name="filter-to-view-techniques-or-events-only"></a>フィルターを使用して手法またはイベントのみを表示する
 
-イベントまたは手法のみを表示するには、デバイスタイムラインから [ **フィルター** ] を選択し、表示するデータ型を選択します。
+イベントまたは手法のみを表示するには、デバイスタイムラインから **[フィルター** ] を選択し、表示するデータの種類を選択します。
 
 :::image type="content" source="images/device-timeline-filters.png" alt-text="[フィルター] ウィンドウ" lightbox="images/device-timeline-filters.png":::
 
 ## <a name="see-also"></a>関連項目
 
 - [デバイスの一覧を表示および整理する](machines-view-overview.md)
-- [Microsoft Defender for Endpoint デバイスのタイムライン イベント フラグ](device-timeline-event-flag.md)
+- [デバイス タイムライン イベント フラグをMicrosoft Defender for Endpointする](device-timeline-event-flag.md)

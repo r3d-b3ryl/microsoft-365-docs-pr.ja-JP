@@ -108,7 +108,7 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows ハイブリッド特典付き Windows 365 Business | CFQ7TTC0HX99 |
 
-*これらの ID は変更されました。 以前に古い ID を使用して製品をブロックした場合は、新しい ID を使用して製品が自動的にブロックされます。 追加の作業は必要ありません。
+*これらの ID は変更されています。 以前に古い ID を使用して製品をブロックした場合、新しい ID を使用して製品は自動的にブロックされます。 追加の作業は必要ありません。
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>AllowSelfServicePurchase の状態を表示または設定する
 
@@ -143,7 +143,7 @@ $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | wh
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
 
-製品に複数の値がある場合は、次の例に示すように、値ごとにコマンドを個別に実行できます。
+製品に複数の値がある場合は、次の例に示すように、値ごとに個別にコマンドを実行できます。
 
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
@@ -169,7 +169,7 @@ TLS 1.2 にアップグレードします。 次の構文は、ServicePointManag
  [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 ```
 
-詳細については、「 [TLS 1.2 を有効にする方法」を参照してください](/mem/configmgr/core/plan-design/security/enable-tls-1-2)。
+詳細については、「 [TLS 1.2 を有効にする方法](/mem/configmgr/core/plan-design/security/enable-tls-1-2)」を参照してください。
 
 <!--
 ## Uninstall the MSCommerce module

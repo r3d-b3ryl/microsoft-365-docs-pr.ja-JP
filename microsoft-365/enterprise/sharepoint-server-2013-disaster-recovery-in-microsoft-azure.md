@@ -325,7 +325,7 @@ DFSR によるファイル レプリケーションを設定するには、DNS �
 
 **表: DFSR のリファレンス記事**
 
-|タイトル|説明|
+|Title|説明|
 |---|---|
 |[レプリケーション](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770278(v=ws.11))|レプリケーションに関するリンクが含まれる DFS 管理のための TechNet トピック|
 |[DFS レプリケーション: サバイバル ガイド](https://go.microsoft.com/fwlink/p/?LinkId=392737)|DFS 情報へのリンクが含まれる Wiki|

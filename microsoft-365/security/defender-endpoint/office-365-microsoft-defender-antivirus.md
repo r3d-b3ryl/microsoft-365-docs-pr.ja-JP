@@ -73,7 +73,7 @@ Microsoft Defender for Office 365 Microsoft Defender for Endpointと統合する
 
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)は、Office ドキュメント内の電子メール メッセージ、電子メールの添付ファイル、リンク (URL) に発生する悪意のある脅威から組織を保護します。
 
-    AND
+    および
 
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)は、サイバー脅威からデバイスを保護し、高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化し、セキュリティ体制を改善します。
 
@@ -91,13 +91,13 @@ Microsoft Defender for Office 365 Microsoft Defender for Endpointと統合する
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 ## <a name="want-to-learn-more-see-these-resources"></a>詳細な情報をご希望ですか? 次のリソースを参照してください。
 

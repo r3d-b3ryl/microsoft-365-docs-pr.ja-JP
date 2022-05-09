@@ -259,7 +259,7 @@ Microsoft Teamsに加えて、組織がチャット、電話会議、ビデオ�
 
 1. 次の表の値を選択するか、コピーして貼り付けます。
 
-    |型|サービス|プロトコル|太さ|ポート|Target|Priority|TTL|
+    |種類|サービス|プロトコル|太さ|ポート|Target|Priority|TTL|
     |---|---|---|---|---|---|---|---|
     |SRV|_sip|TLS|100|443|sipdir.online.lync.com <br/> **この値はピリオドで終わることはできません (.)**|1|1 Hour|
     |SRV|_sipfederationtls|TCP|100|5061|sipfed.online.lync.com <br/> **この値はピリオドで終わることはできません (.)**|1|1 Hour|
@@ -299,7 +299,7 @@ Microsoft Teamsに加えて、組織がチャット、電話会議、ビデオ�
 
 1. 次の表の値を選択するか、コピーして貼り付けます。
 
-    |型|参照先|ホスト名|Alias to (エイリアス)|TTL|
+    |種類|参照先|ホスト名|Alias to (エイリアス)|TTL|
     |---|---|---|---|---|
     |CNAME|その他のホスト|sip|sipdir.online.lync.com <br/> **この値はピリオドで終わることはできません (.)**|1 Hour|
     |CNAME|その他のホスト|lyncdiscover|webdir.online.lync.com <br/> **この値はピリオドで終わることはできません (.)**|1 Hour|
@@ -343,7 +343,7 @@ Microsoft Teamsに加えて、組織がチャット、電話会議、ビデオ�
 
 1. 次の表の値を選択するか、コピーして貼り付けます。
 
-    |型|参照先|ホスト名|Alias to (エイリアス)|TTL|
+    |種類|参照先|ホスト名|Alias to (エイリアス)|TTL|
     |---|---|---|---|---|
     |CNAME|その他のホスト|enterpriseregistration|enterpriseregistration.windows.net <br/> **この値はピリオドで終わることはできません (.)**|1 Hour|
     |CNAME|その他のホスト|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com <br/> **この値はピリオドで終わることはできません (.)**|1 Hour|

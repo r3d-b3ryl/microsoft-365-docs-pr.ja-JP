@@ -63,7 +63,7 @@ Microsoft 365 Defenderには、セキュリティ運用チームの時間と労�
 
 2. **[アクセス許可****] の [設定** > **EndpointsDevice** >  **グループ**] に移動します。
 
-3. デバイス グループ ポリシーを確認します。 特に、 **Automation レベル** の列を確認します。 **脅威を自動的に修復するには、完全な修復** を使用することをお勧めします。  必要な自動化レベルを得るために、デバイス グループを作成または編集することが必要な場合があります。 このタスクのヘルプを表示するには、次の記事を参照してください。
+3. デバイス グループ ポリシーを確認します。 特に、 **Automation レベル** の列を確認します。 **脅威を自動的に修復するには、完全な修復** を使用することをお勧めします。  必要な自動化レベルを得るために、デバイス グループを作成または編集することが必要な場合があります。 このタスクのヘルプについては、次の記事を参照してください。
    - [脅威の修復方法](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    - [デバイス グループの作成と管理](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)
 

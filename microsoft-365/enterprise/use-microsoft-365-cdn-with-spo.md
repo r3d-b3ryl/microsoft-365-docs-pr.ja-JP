@@ -400,7 +400,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: SharePoint Online のサイト コレクションのプライベート配信元を構成する
 
-**Add-SPOTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 次に例を示します。
+**Add-SPOTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 例:
 
 ```powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -683,7 +683,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: SharePoint Online のサイト コレクションのプライベート配信元を構成する
 
-**Add-PnPTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 次に例を示します。
+**Add-PnPTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 例:
 
 ```powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -963,7 +963,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Office 365 CDN内のプライベート配信元の資産へのアクセスは、SharePoint Online によって生成されたトークンによって付与されます。 配信元によって指定されたフォルダーまたはライブラリへのアクセス許可を既に持っているユーザーには、ユーザーがアクセス許可レベルに基づいてファイルにアクセスできるようにするトークンが自動的に付与されます。 これらのアクセス トークンは、トークン再生攻撃を防ぐために生成されてから 30 分から 90 分間有効です。
 
-アクセス トークンが生成されると、SharePoint Online は、2 つの承認パラメーター _eat_ (エッジ承認トークン) と _oat_ (配信元承認トークン) を含むカスタム URI をクライアントに返します。 各トークンの構造は _<エポック時間形式の有効期限'>__<'secure signature'>_ です。 次に例を示します。
+アクセス トークンが生成されると、SharePoint Online は、2 つの承認パラメーター _eat_ (エッジ承認トークン) と _oat_ (配信元承認トークン) を含むカスタム URI をクライアントに返します。 各トークンの構造は _<エポック時間形式の有効期限'>__<'secure signature'>_ です。 例:
 
 ```http
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -976,7 +976,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 SharePoint Online では、プライベート配信元の資産に対するアイテム レベルのアクセス許可はサポートされないことに注意してください。 たとえば、次の条件を満たすファイルの `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`場合、ユーザーはファイルに効果的にアクセスできます。
 
-|ユーザー  |アクセス許可  |効果的なアクセス  |
+|User  |アクセス許可  |効果的なアクセス  |
 |---------|---------|---------|
 |ユーザー 1     |folder1 にアクセスできます         |CDNからimage1.jpgにアクセスできます         |
 |ユーザー 2     |folder1 にアクセスできない         |CDNからimage1.jpgにアクセスできない         |

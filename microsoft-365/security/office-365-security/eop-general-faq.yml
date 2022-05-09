@@ -13,7 +13,7 @@ metadata:
   ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
   ms.custom:
   - seo-marvel-apr2020
-  description: EOP (EOP) クラウドホスト型メール フィルター サービスに関する最も一般的Exchange Online Protection質問に対する回答を取得します。
+  description: Exchange Online Protection (EOP) クラウドでホストされる電子メール フィルター サービスに関する最も一般的な質問への回答を取得します。
   ms.technology: mdo
   ms.prod: m365-security
   ms.openlocfilehash: 29e1e99b5ff8b7f55f7b6c8fa74b8fcc4be5e53d
@@ -29,10 +29,10 @@ summary: >
 
   **適用対象**
 
-  -  [Exchange Online Protectionスタンドアロン](exchange-online-protection-overview.md)
+  -  [スタンドアロンExchange Online Protection](exchange-online-protection-overview.md)
 
 
-  ここでは、クラウド ホスト型メール フィルター サービス (EOP) Exchange Online Protectionに関する最も一般的な質問に答えます。 その他のよく寄せられる質問 (FAQ) については、以下のリンクを参照してください。
+  ここでは、Exchange Online Protection (EOP) クラウドでホストされる電子メール フィルター サービスに関する最も一般的な質問にお答えします。 その他のよく寄せられる質問 (FAQ) については、以下のリンクを参照してください。
 
 
   - [EOP のキューイング、保留、返送されるメッセージに関する FAQ](eop-queued-deferred-and-bounced-messages-faq.yml)
@@ -57,7 +57,7 @@ sections:
   - question: >
       EOP とは何ですか?
     answer: >
-      EOP とは、クラウド ホスト型の電子メール フィルター サービスで、ユーザーをスパムやマルウェアから保護し、カスタム ポリシー ルールを適用するために構築されます。 EOP は、メールボックスを含Microsoft 365任意のサブスクリプションExchange Onlineされます。 EOP は、オンプレミスの電子メール環境の保護に役立つスタンドアロンの製品としても利用できます。
+      EOP とは、クラウド ホスト型の電子メール フィルター サービスで、ユーザーをスパムやマルウェアから保護し、カスタム ポリシー ルールを適用するために構築されます。 EOP は、Exchange Onlineメールボックスを含む任意のMicrosoft 365 サブスクリプションに含まれます。 EOP は、オンプレミスの電子メール環境の保護に役立つスタンドアロン オファリングとしても利用できます。
   - question: >
       EOP の無料試用版に新規登録する、または EOPを購入するにはどうすればよいですか?
     answer: >
@@ -69,22 +69,22 @@ sections:
   - question: >
       EOP を稼働させるまでにどの程度の時間がかかりますか?
     answer: >
-      「[EOP サービスを設定する](/exchange/standalone-eop/set-up-your-eop-service)」の手順に従って MX レコードを変更すると、メールが EOP を経由するようになり、すぐにフィルター処理が開始されます。 MX レコードが DNS 経由で送信されるまで 24 ～ 48 時間かかる場合があります。 このプロセス中は、いつでも保護設定を微調整できます。
+      「[EOP サービスを設定する](/exchange/standalone-eop/set-up-your-eop-service)」の手順に従って MX レコードを変更すると、メールが EOP を経由するようになり、すぐにフィルター処理が開始されます。 MX レコードが DNS 経由で送信されるまで 24 ～ 48 時間かかる場合があります。 このプロセス中はいつでも、保護設定を微調整できます。
   - question: >
-      EOP を使用するには、すべての機能Microsoft 365必要がありますか? EOP 保護が必要で、それがすべてである場合は、
+      EOP を使用するには、Microsoft 365のすべての機能を使用する必要がありますか? EOP 保護のみが必要で、それがすべてである場合はどうなりますか?
     answer: >
-      EOP を使用すると、他の機能を使用せずにオンプレミスのメールボックスを保護Microsoft 365。 これをスタンドアロン サブスクリプションといいます。 EOP 機能のリストは、「[Exchange Online Protection サービスの説明](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)」で確認できます。
+      EOP を使用すると、Microsoft 365の他の機能を使用せずに、オンプレミスのメールボックスを保護できます。 これをスタンドアロン サブスクリプションといいます。 EOP 機能のリストは、「[Exchange Online Protection サービスの説明](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)」で確認できます。
   - question: >
-      EOP による電子メール フィルターにサインアップMicrosoft 365テナントが必要な理由
+      EOP を使用して電子メール フィルターにサインアップするときに、Microsoft 365 テナントが必要なのはなぜですか?
     answer: >
-      Microsoft 365は、テナントからアクセスできる製品とサービスのコレクションにMicrosoft 365されます。 このテナントMicrosoft 365、電子メール フィルターのライセンスを追加する場合の開始点と考えて下さい。
+      Microsoft 365は、Microsoft 365 テナントを介してアクセスできる製品とサービスのコレクションに指定された名前です。 Microsoft 365 テナントは、電子メール フィルターのライセンスを追加する開始点と考えてください。
   - question: >
       EOP には、既知の問題や想定される解決策を見つけることのできる通信ポータルがありますか。 新機能についてはどうですか。
     answer: >
-      このMicrosoft 365 管理センター情報の一部が含まれる可能性があります。 サービス レベル イベントの影響を受け取った場合は、Microsoft 365 管理センター にサインインした後、通信アラート (通常はベル アイコンが付きます) が表示されます。 その項目を参照して、適切に対応することをお勧めします。
+      Microsoft 365 管理センターには、この情報の一部が含まれます。 サービス レベル イベントの影響を受ける場合は、Microsoft 365 管理センターにサインインした後、通信アラート (通常はベル アイコンが表示されます) が表示されます。 その項目を参照して、適切に対応することをお勧めします。
 
 
-      新しい EOP 機能Microsoft 365ビジネス ロードマップ[](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)は、今後の新機能に関する情報を見つけ出す良いリソースです。 また、新しい機能に関するブログ記事をブログの web サイトMicrosoft 365[投稿](https://www.microsoft.com/microsoft-365/blog/)します。
+      新しい EOP 機能に関しては、[ビジネス ロードマップのMicrosoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)は、今後の新機能に関する情報を見つけるのに適したリソースです。 また、新機能に関するブログ記事を[Microsoft 365ブログ](https://www.microsoft.com/microsoft-365/blog/) Web サイトに投稿します。
   - question: >
       このサービスは Exchange の旧バージョン (Exchange Server 2010 など) や Exchange 以外の環境で使用できますか?
     answer: >
@@ -96,7 +96,7 @@ sections:
   - question: >
       EOP を設定するのに必要なアクセス許可はどのようなものですか?
     answer: >
-      EOP を構成するには、グローバル管理者または組織管理者 (組織Exchangeグループ) である必要があります。
+      EOP を構成するには、グローバル管理者、またはExchange会社の管理者 (組織管理役割グループ) である必要があります。
   - question: >
       個人データや個人情報が安全に保護されていることを確認できますか?
     answer: >
@@ -104,7 +104,7 @@ sections:
   - question: >
       メッセージ サイズの制限などの注意すべき制限がありますか。
     answer: >
-      はい。 EOP の制限の詳細については、「制限」[をExchange Online Protectionしてください](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
+      はい。 EOP の制限の詳細については、「[Exchange Online Protection制限](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)」を参照してください。
   - question: >
       EOP は PowerShell をサポートしていますか?
-    answer: はい、完全な EOP 機能は PowerShell 経由で利用できます。Exchange Online メールボックスを持つ組織の場合は Exchange Online Exchange Online PowerShell、スタンドアロン EOP 組織ではスタンドアロンの EOP PowerShell を使用できます。 詳細については、「[PowerShell と powerShell Exchange Online」](/powershell/exchange/exchange-online-powershell)[をExchange Online Protectionしてください](/powershell/exchange/exchange-online-protection-powershell)。
+    answer: はい。完全な EOP 機能は PowerShell を使用できます。Exchange Online メールボックスを持つ組織向けの PowerShell Exchange Online、スタンドアロン EOP 組織用のスタンドアロン EOP PowerShell です。 詳細については、「[PowerShell と powerShell のExchange Online Protection Exchange Online](/powershell/exchange/exchange-online-powershell)」を[参照](/powershell/exchange/exchange-online-protection-powershell)してください。

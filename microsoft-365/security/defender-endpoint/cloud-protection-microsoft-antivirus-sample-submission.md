@@ -111,7 +111,7 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 | 種類 | 属性 |
 |:---|:---|
 | マシン属性 | `OS version` <br/> `Processor` <br/> `Security settings` |
-| 動的属性とコンテキスト属性 | **プロセスとインストール** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**行動** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |
+| 動的属性とコンテキスト属性 | **プロセスとインストール** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**動作** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |
 | 静的ファイル属性 | **部分ハッシュと完全ハッシュ** <br/> `ClusterHash` <br/> `Crc16` <br/> `Ctph` <br/> `ExtendedKcrcs` <br/> `ImpHash` <br/> `Kcrc3n` <br/> `Lshash` <br/> `LsHashs` <br/> `PartialCrc1` <br/> `PartialCrc2` <br/> `PartialCrc3` <br/> `Sha1` <br/> `Sha256` <br/><br/>**ファイルのプロパティ** <br/>`FileName` <br/> `FileSize` <br/><br/> **署名者情報** <br/> `AuthentiCodeHash` <br/> `Issuer` <br/> `IssuerHash` <br/> `Publisher` <br/> `Signer` <br/> `SignerHash` |
 
 ## <a name="samples-are-treated-as-customer-data"></a>サンプルは顧客データとして扱われます

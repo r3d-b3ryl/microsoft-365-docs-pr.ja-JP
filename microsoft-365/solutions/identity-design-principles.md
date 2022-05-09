@@ -189,7 +189,7 @@ Outlook クライアントを見ると、Exchangeだけでなく、このエク�
 
 ### <a name="multi-geo"></a>Multi-Geo
 
-[複数地域](../enterprise/microsoft-365-multi-geo.md)にするか、複数地域にしないかの質問です。 Office 365 Multi-Geo を使用すると、データ所在地の要件を満たすために選択した地理的な場所に[、](../enterprise/o365-data-locations.md)保存データをプロビジョニングして保存できます。 この機能には多くの誤解があります。 以下の点にご注意ください:
+[複数地域](../enterprise/microsoft-365-multi-geo.md)にするか、複数地域にしないかの質問です。 Office 365 Multi-Geo を使用すると、データ所在地の要件を満たすために選択した地理的な場所に[、](../enterprise/o365-data-locations.md)保存データをプロビジョニングして保存できます。 この機能には多くの誤解があります。 以下の点にご注意ください。
 
 - パフォーマンス上の利点を提供する必要はありません。 [ネットワーク設計](https://aka.ms/office365networking)が正しくない場合、パフォーマンスが低下する可能性があります。 必ずしもデータに対してではなく、Microsoft ネットワークに "近い" デバイスを取得します。
 - [これは GDPR コンプライアンス](https://www.microsoft.com/trust-center/privacy/gdpr-overview)のソリューションではありません。 GDPR は、データ主権やストレージの場所には焦点を当てません。 その他のコンプライアンス フレームワークがあります。
@@ -320,6 +320,6 @@ Azure Role-Based Access Control (RBAC) を使用すると、Azure のきめ細�
 
 上の図からわかるように、他の多くのサービスは設計の一部 ( [Azure Policyes](/azure/governance/policy/overview)、 [Azure Blueprints](/azure/governance/blueprints/overview)、 [Management Groups](/azure/governance/management-groups/) など) と見なす必要があります。
 
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>終わりに
 
 簡単な概要として開始され、予想よりも長く終わりました。  組織の委任モデルの作成について詳しく知る準備ができたらと思います。  この会話は、お客様に非常に一般的です。 すべてのユーザーに適したモデルは 1 つもありません。 Microsoft エンジニアリングからいくつかの計画的な改善を待ってから、お客様全体で見られる一般的なパターンを文書化します。 それまでは、Microsoft アカウント チームと協力して、最寄りの [Microsoft テクノロジ センター](https://www.microsoft.com/mtc)への訪問を手配できます。  お会いしましょう。

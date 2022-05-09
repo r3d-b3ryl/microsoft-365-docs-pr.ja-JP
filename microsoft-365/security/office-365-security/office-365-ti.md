@@ -112,11 +112,11 @@ Microsoft Defender for Office 365では、ロールベースのアクセス制�
 > - [Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)
 > - [組み込みロールをAzure ADする](/azure/active-directory/roles/permissions-reference)
 
-|最新情報|ロールと権限|
+|アクティビティ|ロールと権限|
 |---|---|
-|脅威&脆弱性管理ダッシュボード (または新しい[セキュリティ ダッシュボード](security-dashboard.md)) を使用する <p> 最近の脅威または現在の脅威に関する情報を表示する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ リーダー**</li></ul> <p> これらのロールは、Azure Active Directory () またはMicrosoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
-|[エクスプローラー (およびリアルタイム検出)](threat-explorer.md) を使用して脅威を分析する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ リーダー**</li></ul> <p> これらのロールは、Azure Active Directory () またはMicrosoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
-|インシデントの表示 ("調査" とも呼ばれます) <p> インシデントに電子メール メッセージを追加する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ リーダー**</li></ul> <p> これらのロールは、Azure Active Directory () またはMicrosoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
+|脅威&脆弱性管理ダッシュボード (または新しい[セキュリティ ダッシュボード](security-dashboard.md)) を使用する <p> 最近の脅威または現在の脅威に関する情報を表示する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらのロールは、Azure Active Directory () またはMicrosoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
+|[エクスプローラー (およびリアルタイム検出)](threat-explorer.md) を使用して脅威を分析する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらのロールは、Azure Active Directory () またはMicrosoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
+|インシデントの表示 ("調査" とも呼ばれます) <p> インシデントに電子メール メッセージを追加する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらのロールは、Azure Active Directory () またはMicrosoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
 |インシデントで電子メール アクションをトリガーする <p> 疑わしい電子メール メッセージを検索して削除する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者** と **検索ロールと消去** ロール</li></ul> <p> **グローバル管理者** ロールと **セキュリティ管理者** ロールは、Azure Active Directory () または Microsoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) で割り当てることができます。 <p> **検索ロールと消去** ロールは、Microsoft 36 Defender ポータル (<https://security.microsoft.com>) の **電子メール & コラボレーション ロール** で割り当てる必要があります。|
 |Microsoft Defender for Office 365プラン 2 とMicrosoft Defender for Endpointを統合する <p> Microsoft Defender for Office 365プラン 2 と SIEM サーバーを統合する|Azure Active Directory () または Microsoft 365 管理センター<https://admin.microsoft.com> (<https://portal.azure.com>) で割り当てられている **グローバル管理者** または **セキュリティ管理者** ロール。 <p> --- **プラス** --- <p> 追加のアプリケーション ([Microsoft Defender セキュリティ センター](/windows/security/threat-protection/microsoft-defender-atp/user-roles)や SIEM サーバーなど) で割り当てられた適切なロール。|
 

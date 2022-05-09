@@ -90,7 +90,7 @@ Microsoft 365 Defenderを見てみましょう<a href="https://go.microsoft.com/
 | [インシデント&アラート](incidents-overview.md)  | Microsoft 365 Defenderでは、すべてのエンドポイント、電子メール、ID でインシデントとアラートを管理できます。 関連するイベントをより簡単に見つけられるように、エクスペリエンスを集約しました。 詳細については、「 [インシデントの概要](incidents-overview.md)」を参照してください。   |
 | [検索](advanced-hunting-overview.md)  |  id テーブルと電子メール テーブルを含めるためにMicrosoft Defender for Endpointで作成されたカスタム検出ルールを変更すると、自動的にMicrosoft 365 Defenderに移動されます。 対応するアラートは、Microsoft 365 Defenderにも表示されます。 これらの変更の詳細については、「 [カスタム検出規則の移行」](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules)を参照してください。 <br><br>高度なハンティングのテーブルは`DeviceAlertEvents`、Microsoft 365 Defenderでは使用できません。 Microsoft 365 Defenderでデバイス固有のアラート情報にクエリを実行するには、さまざまなソースのセットからさらに多くの情報に対応するために、テーブルと`AlertEvidence`テーブルを使用`AlertInfo`します。 [DeviceAlertEvents を使用せずに書き込みクエリに従って、次のデバイス関連のクエリを作成します](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)。|
 |[アクション センター](m365d-action-center.md)    | 自動調査と修復アクションの後に実行された保留中のアクションと完了したアクションを一覧表示します。 以前は、Microsoft Defender セキュリティ センターのアクション センターには、デバイスでのみ実行された修復アクションの保留中と完了のアクションが一覧表示され、自動調査ではアラートと状態が一覧表示されました。 改善されたMicrosoft 365 Defenderでは、アクション センターは、電子メール、デバイス、ユーザー全体にわたる修復アクションと調査をすべて 1 つの場所にまとめます。  |
-| [脅威分析](threat-analytics.md) |  ナビゲーション バーの上部に移動し、検出と使用を容易にします。 エンドポイントと電子メールとコラボレーションの両方の脅威情報が含まれるようになりました。    |
+| [脅威の分析](threat-analytics.md) |  ナビゲーション バーの上部に移動し、検出と使用を容易にします。 エンドポイントと電子メールとコラボレーションの両方の脅威情報が含まれるようになりました。    |
 
 ### <a name="endpoints"></a>エンドポイント
 

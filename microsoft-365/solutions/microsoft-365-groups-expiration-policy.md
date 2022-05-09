@@ -56,7 +56,7 @@ Microsoft 365 グループと Microsoft Teams の使用が増えるにつれ、�
 |役割|可能な操作|
 |---------|---------|
 |Office 365 グローバル管理者 (Azure では会社の管理者)、ユーザー管理者|Microsoft 365 グループの有効期限ポリシー設定を作成、読み取り、更新、または削除します。|
-|ユーザー|所有しているMicrosoft 365 グループを更新または[復元](/azure/active-directory/users-groups-roles/groups-restore-deleted)する|
+|User|所有しているMicrosoft 365 グループを更新または[復元](/azure/active-directory/users-groups-roles/groups-restore-deleted)する|
 
 ## <a name="how-to-set-the-expiration-policy"></a>有効期限ポリシーを設定する方法
 

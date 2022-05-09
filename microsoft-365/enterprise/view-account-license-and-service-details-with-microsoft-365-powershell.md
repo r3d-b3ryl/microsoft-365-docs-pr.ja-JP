@@ -68,7 +68,7 @@ $allSKUs | ForEach-Object {
 Get-MgUserLicenseDetail -UserId "<user sign-in name (UPN)>"
 ```
 
-次に例を示します。
+例:
 
 ```powershell
 Get-MgUserLicenseDetail -UserId "belindan@litwareinc.com"

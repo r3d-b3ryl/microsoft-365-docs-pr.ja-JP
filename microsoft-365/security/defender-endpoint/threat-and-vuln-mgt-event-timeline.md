@@ -1,7 +1,7 @@
 ---
-title: イベントタイムライン (脅威と脆弱性の管理
-description: イベントタイムラインは、リスクが組織に導入される方法と、リスクを軽減するために発生した軽減策を解釈するのに役立つリスクニュースフィードです。
-keywords: イベント タイムライン, Microsoft Defender for Endpoint イベント タイムライン, Microsoft Defender for Endpoint tvm イベント タイムライン, 脅威と脆弱性の管理, Microsoft Defender for Endpoint
+title: 脅威と脆弱性の管理のイベント タイムライン
+description: イベント タイムラインは、組織にリスクがどのように導入され、どの軽減策によって軽減されたかを解釈するのに役立つリスク ニュース フィードです。
+keywords: イベント タイムライン、Microsoft Defender for Endpoint イベント タイムライン、Microsoft Defender for Endpoint tvm イベント タイムライン、脅威と脆弱性の管理、Microsoft Defender for Endpoint
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,105 +32,105 @@ ms.locfileid: "64469693"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-イベントタイムラインは、新しい脆弱性や悪用を通じて組織にリスクがどのように導入されるのかを解釈するのに役立つリスクニュースフィードです。 組織のリスクに影響を与える可能性があるイベントを表示できます。 たとえば、導入された新しい脆弱性、悪用可能になった脆弱性、エクスプロイト キットに追加された悪用などがあります。
+イベント タイムラインは、新しい脆弱性や悪用によって組織にリスクがどのように導入されるかを解釈するのに役立つリスク ニュース フィードです。 組織のリスクに影響を与える可能性のあるイベントを表示できます。 たとえば、導入された新しい脆弱性、悪用可能になった脆弱性、エクスプロイト キットに追加された悪用などを見つけることができます。
 
-イベント タイムラインには、露出スコアと [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md) のストーリーも示され、大きな変更の原因を特定できます。[](tvm-exposure-score.md) イベントは、デバイスまたはデバイスのスコアに影響を与える可能性があります。 優先順位付けされたセキュリティ推奨事項に基づいて修復する必要があるものに対処することで、露出 [を減らします](tvm-security-recommendation.md)。
+イベント タイムラインには、 [露出スコア](tvm-exposure-score.md) と [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md) のストーリーも示され、大きな変更の原因を特定できます。 イベントは、デバイスまたはデバイスのスコアに影響を与える可能性があります。 優先度の高い [セキュリティ推奨事項](tvm-security-recommendation.md)に基づいて修復する必要がある内容に対処することで、露出を減らします。
 
 > [!TIP]
-> 新しい脆弱性イベントに関する電子メールを取得するには、「 [Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
+> 新しい脆弱性イベントに関する電子メールを取得するには、「[Microsoft Defender for Endpointで脆弱性の電子メール通知を構成](configure-vulnerability-email-notifications.md)する」を参照してください。
 
 ## <a name="navigate-to-the-event-timeline-page"></a>[イベント タイムライン] ページに移動する
 
-また、ダッシュボードには、次の 3 [つの脅威と脆弱性の管理があります](tvm-dashboard-insights.md)。
+[脅威と脆弱性の管理 ダッシュボード](tvm-dashboard-insights.md)には、次の 3 つのエントリ ポイントもあります。
 
-- **組織の露出スコア カード**: [時間の間の露出スコア] グラフのイベント ドットにカーソルを合わせると、[この日のすべてのイベントを表示する] を選択します。 このイベントは、ソフトウェアの脆弱性を表します。
-- **デバイスの Microsoft Secure Score**: [デバイスの時間のスコア] グラフのイベント ドットにカーソルを合わせると、[この日のすべてのイベントを表示する] を選択します。 イベントは、新しい構成評価を表します。
-- **トップ イベント カード**: トップ イベント テーブルの下部にある [詳細を表示] を選択します。 カードには、過去 7 日間の 3 つの最も影響の大きなイベントが表示されます。 影響を受けるイベントには、イベントが多数のデバイスに影響を与える場合、または重大な脆弱性が含まれる場合があります。
+- **組織の露出スコア カード**: [時間の経過に伴う露出スコア] グラフのイベント ドットにマウス ポインターを合わせ、[この日のすべてのイベントを表示] を選択します。 イベントはソフトウェアの脆弱性を表します。
+- **Microsoft Secure Score for Devices**: "時間の経過に伴うデバイスのスコア" グラフのイベント ドットにマウス ポインターを合わせ、[この日のすべてのイベントを表示する] を選択します。 イベントは、新しい構成評価を表します。
+- **[上位イベント] カード**: 上部のイベント テーブルの下部にある [さらに表示] を選択します。 カードには、過去 7 日間に最も影響を与えた 3 つのイベントが表示されます。 影響を与えるイベントには、イベントが多数のデバイスに影響を与える場合や、重大な脆弱性である場合などがあります。
 
-### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>デバイスの露出スコアと Microsoft Secure Score のグラフ
+### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>デバイスの露出スコアと Microsoft Secure Score for Devices グラフ
 
-このダッシュボード脅威と脆弱性の管理[露出スコア] グラフにカーソルを合わせると、デバイスに影響を与えたその日のソフトウェアの脆弱性の上位イベントが表示されます。 Microsoft Secure Score for Devices グラフにカーソルを合わせると、スコアに影響する新しいセキュリティ構成評価が表示されます。
+脅威と脆弱性の管理 ダッシュボードで、公開スコア グラフにマウス ポインターを合わせると、デバイスに影響を与えたその日のソフトウェアの脆弱性の上位イベントが表示されます。 Microsoft Secure Score for Devices グラフにマウス ポインターを合わせると、スコアに影響する新しいセキュリティ構成評価が表示されます。
 
-デバイスやデバイスのスコアに影響するイベントがない場合は、何も表示されません。
+デバイスまたはデバイスのスコアに影響を与えるイベントがない場合は、何も表示されません。
 
-:::image type="content" source="images/tvm-event-timeline-exposure-score350.png" alt-text="露出スコアのホバー" lightbox="images/tvm-event-timeline-exposure-score350.png":::
-:::image type="content" source="images/tvm-event-timeline-device-hover360.png" alt-text="Microsoft Secure Score for Devices ホバー" lightbox="images/tvm-event-timeline-device-hover360.png":::
+:::image type="content" source="images/tvm-event-timeline-exposure-score350.png" alt-text="露出スコアホバー" lightbox="images/tvm-event-timeline-exposure-score350.png":::
+:::image type="content" source="images/tvm-event-timeline-device-hover360.png" alt-text="デバイスの Microsoft Secure Score ホバー" lightbox="images/tvm-event-timeline-device-hover360.png":::
 
 ### <a name="drill-down-to-events-from-that-day"></a>その日のイベントにドリルダウンする
 
-[この **日のすべてのイベントを表示** する] を選択すると、その日のカスタム日付範囲を持つ [イベント タイムライン] ページに移動します。
+**[この日のすべてのイベントを表示]** を選択すると、その日のカスタム日付範囲を含む [イベント タイムライン] ページに移動します。
 
 :::image type="content" source="images/tvm-event-timeline-drilldown.png" alt-text="[イベント タイムライン] ページ" lightbox="images/tvm-event-timeline-drilldown.png":::
 
-[ **カスタム範囲] を** 選択して、日付範囲を別のカスタム範囲または事前設定された時間範囲に変更します。
+[ **カスタム範囲]** を選択して、日付範囲を別のカスタム範囲または事前設定された時間範囲に変更します。
 
 :::image type="content" source="images/tvm-event-timeline-dates.png" alt-text="イベント タイムラインの日付範囲オプション" lightbox="images/tvm-event-timeline-dates.png":::
 
 ## <a name="event-timeline-overview"></a>イベント タイムラインの概要
 
-[イベント タイムライン] ページで、イベントに関連する必要なすべての情報を表示できます。
+[イベント タイムライン] ページでは、イベントに関連するすべての必要な情報を表示できます。
 
 機能: 
 
 - 列のカスタマイズ
-- イベントの種類または影響を受け取ったデバイスの割合でフィルター処理する
-- ページごとに 30、50、または 100 アイテムを表示する
+- イベントの種類または影響を受けたデバイスの割合でフィルター処理する
+- ページあたり 30、50、または 100 個のアイテムを表示する
 
-ページの上部にある 2 つの大きな数字は、イベントではなく、新しい脆弱性と悪用可能な脆弱性の数を示しています。 一部のイベントには複数の脆弱性が存在する可能性があります。また、一部の脆弱性には複数のイベントが存在する可能性があります。
+ページ上部の 2 つの大きな数字は、イベントではなく、新しい脆弱性と悪用可能な脆弱性の数を示しています。 一部のイベントには複数の脆弱性があり、一部の脆弱性には複数のイベントが存在する可能性があります。
 
 :::image type="content" source="images/tvm-event-timeline-overview-mixed-type.png" alt-text="イベントタイムライン" lightbox="images/tvm-event-timeline-overview-mixed-type.png":::
 
 ### <a name="columns"></a>段組み
 
 - **日付**: 月、日、年
-- **イベント**: 影響を受けのあるイベント (コンポーネント、種類、影響を受け取ったデバイスの数を含む)
+- **イベント**: 影響を受けたデバイスのコンポーネント、種類、数など、影響を受けたイベント
 - **関連コンポーネント**: ソフトウェア
-- **最初に影響を受** け取ったデバイス: このイベントが最初に発生した場合の、影響を受け取ったデバイスの数と割合。 また、最初に影響を受け取ったデバイスの割合を、デバイスの総数からフィルター処理することもできます。
-- **現在影響を受けるデバイス**: このイベントが現在影響を受けるデバイスの現在の数と割合。 [列のカスタマイズ] を選択すると、このフィールド **を検索できます**。
+- **最初に影響を受けたデバイス**: このイベントが最初に発生したときの影響を受けたデバイスの数と割合。 また、影響を受けたデバイスの合計数のうち、影響を受けたデバイスの割合でフィルター処理することもできます。
+- **現在影響を受けるデバイス**: このイベントが現在影響を受けるデバイスの現在の数と割合。 [ **列のカスタマイズ**] を選択すると、このフィールドを見つけることができます。
 - **型**: スコアに影響を与えるタイムスタンプ付きイベントを反映します。 フィルター処理できます。
   - エクスプロイト キットに追加されたエクスプロイト
   - エクスプロイトが検証されました
-  - 新しいパブリックエクスプロイト
+  - 新しいパブリック エクスプロイト
   - 新しい脆弱性
   - 新しい構成評価
 - **スコアの傾向**: 露出スコアの傾向
 
 ### <a name="icons"></a>アイコン
 
-イベントの横に次のアイコンが表示されます。
+次のアイコンは、イベントの横に表示されます。
 
-- ![バグ アイコン。](images/tvm-black-bug-icon.png) 新しいパブリックエクスプロイト
+- ![バグ アイコン。](images/tvm-black-bug-icon.png) 新しいパブリック エクスプロイト
 - ![レポートの警告アイコン。](images/report-warning-icon.png) 新しい脆弱性が公開されました
 - ![エクスプロイト キット。](images/bug-lightning-icon2.png) エクスプロイト キットで見つかったエクスプロイト
-- ![警告アイコン付きバグ アイコン。](images/bug-caution-icon2.png) エクスプロイトの検証
+- ![警告アイコンが付いたバグ アイコン。](images/bug-caution-icon2.png) エクスプロイト検証済み
 
 ### <a name="drill-down-to-a-specific-event"></a>特定のイベントにドリルダウンする
 
-イベントを選択すると、デバイスに影響を与える詳細と現在の CVEs の一覧が表示されます。 より多くの CVEs を表示するか、関連する推奨事項を表示できます。
+イベントを選択すると、ポップアップが表示され、デバイスに影響を与える詳細と現在の CVE の一覧が表示されます。 その他の CVE を表示したり、関連する推奨事項を表示したりできます。
 
-[スコアの傾向] の下の矢印は、このイベントが組織の露出スコアを上げたり下げたりする可能性があるかどうかを判断するのに役立ちます。 露出スコアが高いほど、デバイスは悪用に対してより脆弱になります。
+"スコアの傾向" の下の矢印は、このイベントが組織の露出スコアを引き上げたり下げたりする可能性があるかどうかを判断するのに役立ちます。 露出スコアが高いということは、デバイスが悪用に対して脆弱であることを意味します。
 
-:::image type="content" source="images/tvm-event-timeline-flyout500.png" alt-text="イベント タイムラインのフライアウト" lightbox="images/tvm-event-timeline-flyout500.png":::
+:::image type="content" source="images/tvm-event-timeline-flyout500.png" alt-text="イベント タイムラインのポップアップ" lightbox="images/tvm-event-timeline-flyout500.png":::
 
-そこから、[関連する **セキュリティの推奨事項に移動]** を選択し、[セキュリティの推奨事項] ページで、新しいソフトウェアの脆弱性に関する推奨事項 [を表示します](tvm-security-recommendation.md)。 セキュリティ推奨事項の説明と脆弱性の詳細を確認した後、修復要求を送信し、修復ページで要求を [追跡できます](tvm-remediation.md)。
+そこから、[ **関連するセキュリティの推奨事項に移動** ] を選択し、セキュリティの推奨事項ページで新しいソフトウェアの脆弱性に対処する [推奨事項](tvm-security-recommendation.md)を表示します。 セキュリティに関する推奨事項の説明と脆弱性の詳細を読んだ後、修復要求を送信し、 [修復ページ](tvm-remediation.md)で要求を追跡できます。
 
-## <a name="view-event-timelines-in-software-pages"></a>ソフトウェア ページでイベントのタイムラインを表示する
+## <a name="view-event-timelines-in-software-pages"></a>ソフトウェア ページでイベント タイムラインを表示する
 
-ソフトウェア ページを開く場合は、イベント > を選択し、フライアウトの "関連コンポーネント" というセクションでハイパーリンクされたソフトウェア名 (Visual Studio 2017 など) を選択します。 [ソフトウェア ページの詳細](tvm-software-inventory.md#software-pages)
+ソフトウェア ページを開くには、ポップアップの [関連コンポーネント] セクションで、ハイパーリンクされたソフトウェア名 (Visual Studio 2017 など) を選択>イベントを選択します。 [ソフトウェア ページの詳細を確認する](tvm-software-inventory.md#software-pages)
 
-特定のソフトウェアのすべての詳細が表示された完全なページが表示されます。 グラフの上にマウスを移動すると、その特定のソフトウェアのイベントのタイムラインが表示されます。
+特定のソフトウェアのすべての詳細を含む完全なページが表示されます。 グラフの上にマウスポインターを合わせると、その特定のソフトウェアのイベントのタイムラインが表示されます。
 
 :::image type="content" source="images/tvm-event-timeline-software2.png" alt-text="イベント タイムライン グラフを含むソフトウェア ページ" lightbox="images/tvm-event-timeline-software2.png":::
 
-[イベント タイムライン] タブに移動して、そのソフトウェアに関連付けられたすべてのイベントを表示します。 セキュリティに関する推奨事項、検出された脆弱性、インストールされているデバイス、バージョンの配布も確認できます。
+[イベント タイムライン] タブに移動し、そのソフトウェアに関連するすべてのイベントを表示します。 セキュリティに関する推奨事項、検出された脆弱性、インストールされているデバイス、バージョンの配布も確認できます。
 
-:::image type="content" source="images/tvm-event-timeline-software-pages.png" alt-text="[イベント タイムライン] タブを含むソフトウェア ページ" lightbox="images/tvm-event-timeline-software-pages.png":::
+:::image type="content" source="images/tvm-event-timeline-software-pages.png" alt-text="[イベント タイムライン] タブがある [ソフトウェア] ページ" lightbox="images/tvm-event-timeline-software-pages.png":::
 
 ## <a name="related-topics"></a>関連項目
 
-- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)
 - [暴露スコア](tvm-exposure-score.md)
-- [セキュリティ上の推奨事項](tvm-security-recommendation.md)
+- [セキュリティに関する推奨事項](tvm-security-recommendation.md)
 - [脆弱性を修復する](tvm-remediation.md)
 - [ソフトウェア インベントリ](tvm-software-inventory.md)

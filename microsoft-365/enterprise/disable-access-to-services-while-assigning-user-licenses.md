@@ -111,7 +111,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(以前の名前Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office   <br/> |
+| `SHAREPOINTWAC` <br/> |事業所   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online プラン 2  <br/> |
 

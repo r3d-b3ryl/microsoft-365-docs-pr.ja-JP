@@ -197,7 +197,7 @@ Security & Compliance Center PowerShell に接続したら、次の手順では�
 
    ![CaseHoldsReport.ps1 スクリプトを実行した後の出力。](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 この記事のスクリプトを実行するときに作成されたケースには、各保留に関する次の情報が含まれています。 前述のように、組織内のすべての保留の情報を返すには、電子情報開示管理者である必要があります。 ケースホールドの詳細については、「 [電子情報開示ケース](./get-started-core-ediscovery.md)」を参照してください。
 

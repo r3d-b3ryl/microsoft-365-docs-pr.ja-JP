@@ -1,7 +1,7 @@
 ---
 title: ネットワーク保護を評価する
-description: ネットワーク保護が保護する一般的なシナリオをテストして、ネットワーク保護のしくみを確認します。
-keywords: ネットワーク保護、悪用、悪意のある Web サイト、IP、ドメイン、評価、テスト、デモ
+description: 保護対象の一般的なシナリオをテストして、ネットワーク保護がどのように機能するかを確認します。
+keywords: ネットワーク保護、悪用、悪意のある Web サイト、IP、ドメイン、ドメイン、評価、テスト、デモ
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -33,21 +33,21 @@ ms.locfileid: "64476139"
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[ネットワーク保護](network-protection.md) は、従業員がアプリケーションを使用して、インターネット上でフィッシング詐欺、悪用、その他の悪意のあるコンテンツをホストする可能性のある危険なドメインにアクセスするのを防ぐのに役立ちます。
+[ネットワーク保護](network-protection.md) は、従業員がアプリケーションを使用して、フィッシング詐欺、悪用、その他の悪意のあるコンテンツをインターネット上でホストする可能性のある危険なドメインにアクセスできないようにするのに役立ちます。
 
-この記事は、機能を有効にし、テスト サイトに案内することで、ネットワーク保護を評価するのに役立ちます。 この評価記事のサイトは悪意のあるものではない。 悪意のあるふりをする特別に作成された Web サイトです。 サイトは、ユーザーが悪意のあるサイトまたはドメインにアクセスした場合に発生する動作をレプリケートします。
+この記事は、この機能を有効にしてテスト サイトに誘導することで、ネットワーク保護を評価するのに役立ちます。 この評価記事のサイトは悪意はありません。 これらは、悪意のあるふりをする特別に作成された Web サイトです。 サイトは、ユーザーが悪意のあるサイトまたはドメインにアクセスした場合に発生する動作をレプリケートします。
 
 > [!TIP]
-> また、Microsoft Defender のデモ シナリオ Web サイトを [参照して、](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) demo.wd.microsoft.com の保護機能がどのように機能するのか確認することもできます。
+> また、 [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) の Microsoft Defender デモ シナリオ Web サイトにアクセスして、他の保護機能の動作を確認することもできます。
 
 > [!NOTE]
 > demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 ## <a name="enable-network-protection-in-audit-mode"></a>監査モードでネットワーク保護を有効にする
 
-監査モードでネットワーク保護を有効にして、ブロックされた IP アドレスとドメインを確認します。 業務用アプリに影響を与えなかったり、ブロックが発生する頻度を確認できます。
+監査モードでネットワーク保護を有効にして、ブロックされた IP アドレスとドメインを確認します。 基幹業務アプリに影響しないようにしたり、ブロックが発生する頻度を把握したりできます。
 
-1. [**powershell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します。**
+1. スタート メニューに **powershell** を入力し、**Windows PowerShell** を右クリックして **[管理者として実行**] を選択します
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
@@ -56,7 +56,7 @@ ms.locfileid: "64476139"
 
 ### <a name="visit-a-fake-malicious-domain"></a>(偽の) 悪意のあるドメインにアクセスする
 
-1. [Internet Explorer、Google Chrome、または任意の他のブラウザーを開きます。
+1. Internet Explorer、Google Chrome、または任意の他のブラウザーを開きます。
 
 2. [https://smartscreentestratings2.net](https://smartscreentestratings2.net) に移動します。
 
@@ -65,23 +65,23 @@ ms.locfileid: "64476139"
     :::image type="content" source="images/np-notif.png" alt-text="接続のブロック通知" lightbox="images/np-notif.png":::
 
 > [!NOTE]
-> ネットワーク保護によってサイトがブロックされている場合でも、ネットワーク接続は成功する可能性があります。 詳細については、「ネットワーク保護 [と TCP 3 ウェイ ハンドシェイク」を参照してください](network-protection.md#network-protection-and-the-tcp-three-way-handshake)。
+> サイトがネットワーク保護によってブロックされている場合でも、ネットワーク接続は成功する可能性があります。 詳細については、「 [ネットワーク保護と TCP の 3 方向ハンドシェイク](network-protection.md#network-protection-and-the-tcp-three-way-handshake)」を参照してください。
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>イベント ビューアーでネットワーク保護イベントWindows確認する
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Windows イベント ビューアーでネットワーク保護イベントを確認する
 
-ブロックされたアプリを確認するには、Microsoft-Windows-Windows Defender/運用ログでイベント ビューアーを開き、イベント ID 1125 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
+ブロックされたアプリを確認するには、イベント ビューアーを開き、Microsoft Windows-Windows Defender/運用ログでイベント ID 1125 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
 
 | イベント ID | 提供/ソース | 説明 |
 |---|---|---|
 | 5007 | Windows Defender (運用) | 設定が変更された場合のイベント |
-| 1125 | Windows Defender (運用) | ネットワーク接続が監査された場合のイベント |
-| 1126 | Windows Defender (運用) | ネットワーク接続がブロックされた場合のイベント |
+| 1125 | Windows Defender (運用) | ネットワーク接続が監査されたときのイベント |
+| 1126 | Windows Defender (運用) | ネットワーク接続がブロックされたときのイベント |
 
 ## <a name="see-also"></a>関連項目
 
 - [ネットワーク保護](network-protection.md)
 
-- [ネットワーク保護と TCP 3 ウェイ ハンドシェイク](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+- [ネットワーク保護と TCP の 3 方向ハンドシェイク](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 
 - [ネットワーク保護を有効にする](enable-network-protection.md)
 

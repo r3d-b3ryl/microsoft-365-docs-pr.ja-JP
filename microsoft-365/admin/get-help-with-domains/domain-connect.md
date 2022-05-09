@@ -1,5 +1,5 @@
 ---
-title: ドメイン の使用Connect
+title: ドメイン Connectの使用
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
-description: ドメイン 管理者が有効なレジストラーをConnectし、ドメインをドメインに追加する方法についてMicrosoft 365。
+description: ドメイン Connectが有効なレジストラーを操作し、ドメインをMicrosoft 365に追加する方法について説明します。
 ms.openlocfilehash: 1691d86ebd459ee69faca8d3a21d99b0caa89fca
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63316913"
 ---
-# <a name="using-domain-connect"></a>ドメイン の使用Connect
+# <a name="using-domain-connect"></a>ドメイン Connectの使用
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。
 
@@ -44,7 +44,7 @@ ms.locfileid: "63316913"
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [Go Daddy](https://www.godaddy.com/)
-- [WordPress](https://wordpress.com/)
+- [ワードプレス](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer または WildWestDomains (SecureServer DNS ホスティングを使用する GoDaddy リセラー)
@@ -53,6 +53,6 @@ ms.locfileid: "63316913"
 
 ## <a name="what-happens-to-my-email-and-website"></a>メールと Web サイトはどうなりますか?
 
-セットアップを終了すると、ユーザーのドメインの MX レコードが Microsoft 365 を指定されるように更新され、そのドメイン宛てのすべてのメールが Microsoft 365 に送信されるようになります。 ユーザーのドメインにメールを持つすべてのユーザーが Microsoft 365 に追加され、メールボックスが設定されていることを確認してください。
+セットアップを終了すると、ユーザーのドメインの MX レコードが Microsoft 365 を指定されるように更新され、そのドメイン宛てのすべてのメールが Microsoft 365 に送信されるようになります。ユーザーのドメインにメールを持つすべてのユーザーが Microsoft 365 に追加され、メールボックスが設定されていることを確認してください。
 
-ビジネスで使用している Web サイトがある場合は、そのままの場所で稼働し続けます。 ドメイン接続 のセットアップ手順は、自分の Web サイトには影響しません。
+ビジネスで使用している Web サイトがある場合は、そのままの場所で稼働し続けます。ドメイン接続のセットアップ手順は、自分の Web サイトには影響しません。

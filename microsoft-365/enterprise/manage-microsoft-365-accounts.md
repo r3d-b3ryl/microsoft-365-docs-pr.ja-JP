@@ -60,7 +60,7 @@ Microsoft 365 管理センターでユーザーを作成および管理<a href="
     
 次の表に、さまざまなアカウント管理ツールを示します。
     
-|ツール|メモ|
+|ツール|備考|
 |:-----|:-----|
 |Microsoft 365 管理センター  <br/> |[ユーザーを個別または一括で追加する](../admin/add-users/add-users.md) <br/>  ユーザー アカウントを追加および変更するための簡単な Web インターフェイスを提供します。  <br/>  ディレクトリ同期が有効になっている場合は、ユーザーを変更するために使用できません (場所とライセンスの割り当てを設定できます)。  <br/>  SSO オプションでは使用できません。  <br/> |
 |Windows PowerShell  <br/> |[Windows PowerShellを使用してMicrosoft 365を管理する](./manage-microsoft-365-with-microsoft-365-powershell.md) <br/>  Windows PowerShell スクリプトを使用して、ユーザーを一括ユーザーに追加できます。  <br/>  アカウントの作成方法に関係なく、場所とライセンスをアカウントに割り当てるために使用できます。  <br/> |

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint サービスのオフボード デバイス
-description: オンボード Windows、サーバー、Microsoft Defender for Endpoint サービスWindowsデバイス以外のデバイス
-keywords: offboarding, Microsoft Defender for Endpoint offboarding, offboarding
+description: Microsoft Defender for Endpoint サービスからWindows デバイス、サーバー、非Windows デバイスをオンボードする
+keywords: オフボード、Microsoft Defender for Endpointオフボード、オフボード
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -38,18 +38,18 @@ ms.locfileid: "63322605"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-offboarddevices-abovefoldlink)
 
-使用する展開方法に応じて、対応する手順に従います。
+推奨されるデプロイ方法に応じて、対応する手順に従います。
 
 > [!NOTE]
-> オフボード後、デバイスの状態 [は非アクティブ](fix-unhealthy-sensors.md#inactive-devices) 7 日に切り替えられます。
+> デバイスの状態は、オフボードの 7 日後に [非アクティブ](fix-unhealthy-sensors.md#inactive-devices) に切り替えられます。
 >
-> オフボードされたデバイスのデータ (タイムライン、アラート、脆弱性など) は、構成された保持期間が経過するまでポータル [に](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) 残ります。
+> オフボードされたデバイスのデータ (タイムライン、アラート、脆弱性など) は、構成された [保持期間](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) の有効期限が切れるまでポータルに残ります。
 >
-> デバイスのプロファイル (データなし) は、デバイス リストに 180 日間以上残ります。[](machines-view-overview.md)
+> デバイスのプロファイル (データなし) は、180 日以内に [デバイス一覧](machines-view-overview.md) に残ります。
 >
-> さらに、過去 30 日間にアクティブではないデバイスは、組織の 脅威と脆弱性の管理 露出スコアと Microsoft Secure Score for Devices を反映するデータには考慮されません。 [](tvm-exposure-score.md)
+> さらに、過去 30 日間にアクティブになっていないデバイスは、組織の脅威と脆弱性の管理[公開スコア](tvm-exposure-score.md)と Microsoft Secure Score for Devices を反映したデータには考慮されません。
 >
-> アクティブなデバイスのみを表示するには、センサーの正常性[](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views)状態、デバイス タグ、または[コンピューター グループで](machine-tags.md)[フィルター処理できます](machine-groups.md)。
+> アクティブなデバイスのみを表示するには、 [センサーの正常性状態](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views)、 [デバイス タグ](machine-tags.md) 、または [マシン グループ](machine-groups.md)でフィルター処理できます。
 
 ## <a name="offboard-windows-devices"></a>オフボード Windows デバイス
 
@@ -61,6 +61,6 @@ ms.locfileid: "63322605"
 
 - [オフボード サーバー](configure-server-endpoints.md#offboard-windows-servers)
 
-## <a name="offboard-non-windows-devices"></a>オフボードの非Windowsデバイス
+## <a name="offboard-non-windows-devices"></a>オフボード非Windows デバイス
 
-- [オフボードの非Windowsデバイス](configure-endpoints-non-windows.md#offboard-non-windows-devices)
+- [オフボード非Windows デバイス](configure-endpoints-non-windows.md#offboard-non-windows-devices)

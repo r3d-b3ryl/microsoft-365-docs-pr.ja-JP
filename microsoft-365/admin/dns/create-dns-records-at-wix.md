@@ -207,7 +207,7 @@ Microsoft Teamsに加えて、組織がチャット、電話会議、ビデオ�
 
 1. DNS エディターの **CNAME (エイリアス)** 行で **[+ 追加**] を選択し、次の表の最初の行の値を入力します。
 
-   |型|Host|値|TTL|
+   |種類|ホスト|値|TTL|
    |---|---|---|---|
    |CNAME|sip|sipdir.online.lync.com <br/> **この値は、末尾がピリオド (.) でなければなりません**|1 Hour|
    |CNAME|lyncdiscover|webdir.online.lync.com. <br/> **この値は、末尾がピリオド (.) でなければなりません**|1 Hour|
@@ -239,7 +239,7 @@ Microsoft Teamsに加えて、組織がチャット、電話会議、ビデオ�
 
 1. 次の表の最初の行の値を入力します。
 
-    |型|Host|値|TTL|
+    |種類|ホスト|値|TTL|
     |---|---|---|---|
     |CNAME|enterpriseregistration|enterpriseregistration.windows.net. <br/> **この値は、末尾がピリオド (.) でなければなりません**|1 Hour|
     |CNAME|enterpriseenrollment|enterpriseenrollment.manage.microsoft.com。 <br/> **この値は、末尾がピリオド (.) でなければなりません**|1 Hour|

@@ -1,5 +1,5 @@
 ---
-title: メールをメールに送信Microsoft 365
+title: Microsoft 365にメールを送信する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: ゲスト送信者として、ユーザーに電子メールを配信する機能を増やMicrosoft 365。 また、迷惑メールやフィッシング詐欺&ゲストとして報告する方法も学習します。
+description: ゲスト送信者として、Microsoft 365のユーザーに電子メールを配信する機能を向上させる方法について説明します。 また、迷惑メール&フィッシングの試行をゲストとして報告する方法についても説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 0313025675c59d563a96d2554a94b5102080a3d5
@@ -26,17 +26,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/20/2022
 ms.locfileid: "63682991"
 ---
-# <a name="sending-mail-to-microsoft-365"></a>メールをメールに送信Microsoft 365
+# <a name="sending-mail-to-microsoft-365"></a>Microsoft 365にメールを送信する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-これらの記事は、外部の送信者が評判を向上し、ユーザーに電子メールを配信する能力を高めるのに役立Microsoft 365。 また、ユーザー自身が迷惑メールやフィッシング詐欺の試みを報告する方法に関する情報Microsoft 365提供します。
+これらの記事は、外部送信者の評判を向上させ、Microsoft 365でユーザーに電子メールを配信する機能を向上させるために役立ちます。 また、迷惑メールやフィッシング詐欺の試みを報告する方法に関する情報も、自分でMicrosoft 365ユーザーでない場合でも提供されます。
 
-顧客ではなく、誰かにメールを送信しようとしている場合は、適切な場所にいます。 管理者であり、スパム対策に関するヘルプが必要な場合は、このセクションは適切なセクションに該当します。 代わりに、スパム対策とマルウェア[対策](anti-spam-and-anti-malware-protection.md)の保護にアクセスMicrosoft 365。
+顧客ではないが、他のユーザーにメールを送信しようとしている場合は、適切な場所にいます。 管理者であり、スパムとの戦いに関するヘルプが必要な場合は、これは適切なセクションではありません。 代わりに、[Microsoft 365のスパム対策とマルウェア対策の保護に移動します](anti-spam-and-anti-malware-protection.md)。
 
-|以下についての関連情報...|「...」を参照してください。|
+|以下についての関連情報...|見る。。。|
 |---|---|
-|個々の電子メールおよびバルク メールを顧客に送信する電子メール システムの管理者に提供されるサービス。|[Office 365 にメールを送信するユーザー以外に対するサービス](services-for-non-customers.md)|
-|電子メールを通じて顧客に届く問題をMicrosoft 365する方法。 受信者にバルク メールを送信するためのMicrosoft 365方法。|[Office 365 に送信されるメールのトラブルシューティング](troubleshooting-mail-sent-to-office-365.md)|
-|フィッシングMicrosoft 365スプーフィングメールを含む迷惑メールが顧客に送信されるのを防ぐ方法。|[ユーザーのスパム対策Microsoft 365](anti-spam-protection.md)|
-|管理者がユーザーに電子メールをMicrosoft 365する方法は、スパム対策ポリシーに従って電子メールがブロックされるのを回避できます。 これは、理解しておく必要のある法的事項です。|[リファレンス:ポリシー、プラクティス、ガイドライン](reference-policies-practices-and-guidelines.md)|
+|個人および一括メールを顧客に送信する電子メール システムの管理者に提供されるサービス。|[Office 365 にメールを送信するユーザー以外に対するサービス](services-for-non-customers.md)|
+|電子メールを介してMicrosoft 365で顧客に到達する問題を修正する方法。 Microsoft 365受信者に一括メールを送信するためのベスト プラクティス。|[Office 365 に送信されるメールのトラブルシューティング](troubleshooting-mail-sent-to-office-365.md)|
+|フィッシングやなりすましメールなどの迷惑メールが顧客に送信されないようにMicrosoft 365方法。|[Microsoft 365でのスパム対策保護](anti-spam-protection.md)|
+|Microsoft 365顧客にメールを送信する管理者が、スパム対策ポリシーに従ってメールをブロックしないようにする方法。 これは、理解しておく必要のある法的事項です。|[リファレンス:ポリシー、プラクティス、ガイドライン](reference-policies-practices-and-guidelines.md)|

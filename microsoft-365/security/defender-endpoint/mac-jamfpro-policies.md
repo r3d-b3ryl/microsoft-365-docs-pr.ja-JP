@@ -72,7 +72,7 @@ ms.locfileid: "64824720"
 
    :::image type="content" source="images/jamf-pro-configure-profile.png" alt-text="新しい Jamf Pro ダッシュボードを作成するページ" lightbox="images/jamf-pro-configure-profile.png":::
 
-3. 次の詳細を入力します。
+3. 次の詳細を入力します:
 
    **全般**:
 
@@ -116,7 +116,7 @@ ms.locfileid: "64824720"
 
    :::image type="content" source="images/jamfpro-target-selected.png" alt-text="ターゲット コンピューターの選択" lightbox="images/jamfpro-target-selected.png":::
 
-11. [**完了**] を選択します。
+11. **[完了]** を選択します。
 
     :::image type="content" source="images/jamfpro-target-group.png" alt-text="ターゲット グループのコンピューター" lightbox="images/jamfpro-target-group.png":::
 
@@ -152,7 +152,7 @@ JAMF Pro GUI を使用してMicrosoft Defender for Endpoint構成の個々の設
 
    :::image type="content" source="images/4137189bc3204bb09eed3aabc41afd78.png" alt-text="カスタム スキーマを追加する" lightbox="images/4137189bc3204bb09eed3aabc41afd78.png":::
 
-4. 基本設定ドメインとして入力`com.microsoft.wdav`し、[スキーマの **追加]** をクリックし、手順 1 でダウンロードした schema.json ファイルを **アップロード** します。 **[保存]** をクリックします。
+4. 基本設定ドメインとして入力`com.microsoft.wdav`し、[スキーマの **追加]** をクリックし、手順 1 でダウンロードした schema.json ファイルを **アップロード** します。 [**保存**] をクリックします。
 
    :::image type="content" source="images/a6f9f556037c42fabcfdcb1b697244cf.png" alt-text="アップロード スキーマ" lightbox="images/a6f9f556037c42fabcfdcb1b697244cf.png":::
 
@@ -176,7 +176,7 @@ JAMF Pro GUI を使用してMicrosoft Defender for Endpoint構成の個々の設
 
    :::image type="content" source="images/6f093e42856753a3955cab7ee14f12d9.png" alt-text="構成設定を保存できるページ" lightbox="images/6f093e42856753a3955cab7ee14f12d9.png":::
 
-10. [**完了**] を選択します。 新しい **構成プロファイル** が表示されます。
+10. **[完了]** を選択します。 新しい **構成プロファイル** が表示されます。
 
     :::image type="content" source="images/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="構成設定を完了するページ" lightbox="images/dd55405106da0dfc2f50f8d4525b01c8.png":::
 
@@ -320,7 +320,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
    :::image type="content" source="images/644e0f3af40c29e80ca1443535b2fe32.png" alt-text="新しいプロファイルを表示するページ" lightbox="images/644e0f3af40c29e80ca1443535b2fe32.png":::
 
-4. 次の詳細を入力します。
+4. 次の詳細を入力します:
 
     **全般**
 
@@ -385,7 +385,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
     :::image type="content" source="images/6f093e42856753a3955cab7ee14f12d9.png" alt-text="構成設定の通知" lightbox="images/6f093e42856753a3955cab7ee14f12d9.png":::
 
-16. [**完了**] を選択します。 新しい **構成プロファイル** が表示されます。
+16. **[完了]** を選択します。 新しい **構成プロファイル** が表示されます。
 
     ![構成設定構成プロファイル イメージの画像。](images/dd55405106da0dfc2f50f8d4525b01c8.png)
     :::image type="content" source="images/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="構成プロファイルの設定" lightbox="images/dd55405106da0dfc2f50f8d4525b01c8.png":::
@@ -438,7 +438,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
    :::image type="content" source="images/4d2d1d4ee13d3f840f425924c3df0d51.png" alt-text="構成設定の完了通知を表示するページ" lightbox="images/4d2d1d4ee13d3f840f425924c3df0d51.png":::
 
-6. [**完了**] を選択します。 新しい **構成プロファイル** が表示されます。
+6. **[完了]** を選択します。 新しい **構成プロファイル** が表示されます。
 
    :::image type="content" source="images/633ad26b8bf24ec683c98b2feb884bdf.png" alt-text="完了した構成設定" lightbox="images/633ad26b8bf24ec683c98b2feb884bdf.png":::
 
@@ -471,7 +471,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
    :::image type="content" source="images/eaba2a23dd34f73bf59e826217ba6f15.png" alt-text="構成設定" lightbox="images/eaba2a23dd34f73bf59e826217ba6f15.png":::
 
-4. 次の詳細を入力します。
+4. 次の詳細を入力します:
 
     **全般**
 
@@ -521,7 +521,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
     :::image type="content" source="images/321ba245f14743c1d5d51c15e99deecc.png" alt-text="構成設定に値を追加できるページ" lightbox="images/321ba245f14743c1d5d51c15e99deecc.png":::
 
-14. [**完了**] を選択します。
+14. **[完了]** を選択します。
 
     :::image type="content" source="images/ba44cdb77e4781aa8b940fb83e3c21f7.png" alt-text="構成設定に関する完了通知" lightbox="images/ba44cdb77e4781aa8b940fb83e3c21f7.png":::
 
@@ -533,7 +533,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
 2. [ **+ 新規**] を選択します。
 
-3. 次の詳細を入力します。
+3. 次の詳細を入力します:
 
     **全般**
     - 名前: MDATP MDAV - EDRと AV へのフル ディスク アクセスを許可する
@@ -573,7 +573,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
    :::image type="content" source="images/tcc-add-entry.png" alt-text="構成設定に関連する保存操作" lightbox="images/tcc-add-entry.png":::
 
-9. 次の詳細を入力します。
+9. 次の詳細を入力します:
 
     - 識別子： `com.microsoft.wdav.epsext`
     - 識別子の種類: バンドル ID
@@ -607,7 +607,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
 16. **[保存]** を選択します。
 
-17. [**完了**] を選択します。
+17. **[完了]** を選択します。
 
     :::image type="content" source="images/809cef630281b64b8f07f20913b0039b.png" alt-text="構成設定 contoso machine-group" lightbox="images/809cef630281b64b8f07f20913b0039b.png":::
 
@@ -624,7 +624,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
    :::image type="content" source="images/6c8b406ee224335a8c65d06953dc756e.png" alt-text="ソーシャル メディア投稿の説明が自動的に生成される" lightbox="images/6c8b406ee224335a8c65d06953dc756e.png":::
 
-2. 次の詳細を入力します。
+2. 次の詳細を入力します:
 
     **全般**
 
@@ -663,7 +663,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
    :::image type="content" source="images/0add8019b85a453b47fa5c402c72761b.png" alt-text="MDATP MDAV カーネル拡張機能" lightbox="images/0add8019b85a453b47fa5c402c72761b.png":::
 
-10. [**完了**] を選択します。
+10. **[完了]** を選択します。
 
     :::image type="content" source="images/1c9bd3f68db20b80193dac18f33c22d0.png" alt-text="構成プロファイルの詳細ページ" lightbox="images/1c9bd3f68db20b80193dac18f33c22d0.png":::
 
@@ -675,7 +675,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
    :::image type="content" source="images/6c8b406ee224335a8c65d06953dc756e.png" alt-text="自動生成されたソーシャル メディア投稿の説明" lightbox="images/6c8b406ee224335a8c65d06953dc756e.png":::
 
-2. 次の詳細を入力します。
+2. 次の詳細を入力します:
 
     **全般**
 
@@ -718,7 +718,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
    :::image type="content" source="images/sysext-scope.png" alt-text="MDATP MDAV システム拡張機能に関するオプションの表示" lightbox="images/sysext-scope.png":::
 
-10. [**完了**] を選択します。
+10. **[完了]** を選択します。
 
     :::image type="content" source="images/sysext-final.png" alt-text="構成設定 sysext - final" lightbox="images/sysext-final.png":::
 
@@ -768,7 +768,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
    :::image type="content" source="images/netext-scope.png" alt-text="[コンテンツ フィルター] ウィンドウ" lightbox="images/netext-scope.png":::
 
-8. [**完了**] を選択します。
+8. **[完了]** を選択します。
 
    :::image type="content" source="images/netext-final.png" alt-text="構成設定 netext - final" lightbox="images/netext-final.png":::
 
@@ -883,7 +883,7 @@ Microsoft Defender for Endpoint時間の経過と共に新しい設定が追加�
 
     :::image type="content" source="images/c9f85bba3e96d627fe00fc5a8363b83a.png" alt-text="構成設定の [セルフサービス] タブ" lightbox="images/c9f85bba3e96d627fe00fc5a8363b83a.png":::
 
-19. [**完了**] を選択します。
+19. **[完了]** を選択します。
 
     :::image type="content" source="images/99679a7835b0d27d0a222bc3fdaf7f3b.png" alt-text="Contoso のオンボード状態 (完了オプションあり)" lightbox="images/99679a7835b0d27d0a222bc3fdaf7f3b.png":::
 

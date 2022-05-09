@@ -18,7 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 search.appverid: MET150
-description: サブスクリプション間でユーザーを移動する方法について学習します。
+description: サブスクリプション間でユーザーを移動する方法について説明します。
 ms.date: 07/01/2020
 ms.openlocfilehash: f1aff383bb4e83b7cefae0f6d15c496ab3117919
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
@@ -29,7 +29,7 @@ ms.locfileid: "63326273"
 ---
 # <a name="move-users-to-a-different-subscription"></a>ユーザーを別のサブスクリプションに移動する
 
-複数のサブスクリプションがある場合は、1 つのサブスクリプションのライセンスを持つユーザーを持ち、別のサブスクリプションにユーザーを移動する場合は、既存のライセンスを別のサブスクリプションに置き換えます。
+複数のサブスクリプションを持ち、1 つのサブスクリプションのライセンスを持つユーザーを別のサブスクリプションに移動する場合は、既存のライセンスを別のサブスクリプションに置き換えることができます。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -53,9 +53,9 @@ ms.locfileid: "63326273"
 
 3. 上部にある [**製品ライセンスの管理**] を選択します。
 
-4. [製品ライセンス **の管理] ウィンドウ** で、[置換] **を**  選択し、ユーザーに割り当てるライセンスを選択します。
+4. [ **製品ライセンスの管理** ] ウィンドウで、[ **置換**  ] を選択し、ユーザーに割り当てるライセンスを選択します。
 
-5. 下部にある [変更の保存] **を** \> **選択します**。
+5. 下部にある [変更\>を **閉じて****保存]** を選択します。
 
 ## <a name="next-steps"></a>次の手順
 
@@ -65,6 +65,6 @@ ms.locfileid: "63326273"
 
 [ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md) (記事)\
 [サブスクリプションからライセンスを削除する](../licenses/buy-licenses.md) (記事)\
-[手動でプランを変更](change-plans-manually.md) する (記事)\
-[ビジネス向けサービスのサブスクリプションMicrosoft 365ライセンス](../licenses/subscriptions-and-licenses.md)について (記事)\
-[ビジネス サブスクリプション用Microsoft 365を購入する](../try-or-buy-microsoft-365.md) (記事)
+[手動でプランを変更する](change-plans-manually.md) (記事)\
+[ビジネス向けのMicrosoft 365のサブスクリプションとライセンスを理解する](../licenses/subscriptions-and-licenses.md) (記事)\
+[ビジネス サブスクリプション用に別のMicrosoft 365を購入する](../try-or-buy-microsoft-365.md) (記事)

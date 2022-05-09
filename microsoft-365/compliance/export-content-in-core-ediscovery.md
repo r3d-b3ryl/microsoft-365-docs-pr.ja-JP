@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/27/2022
 ms.locfileid: "65095842"
 ---
-# <a name="export-content-from-a-ediscovery-standard-case"></a>電子情報開示 (Standard) ケースからコンテンツをエクスポートする
+# <a name="export-content-from-a-ediscovery-standard-case"></a>電子情報開示 (Standard) のケースからのコンテンツのエクスポート
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 

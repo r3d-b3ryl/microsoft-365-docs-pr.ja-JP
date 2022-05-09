@@ -43,7 +43,7 @@ ms.locfileid: "63314365"
 
 これらのリソースに一覧にない問題が発生した場合は、この記事の手順に従ってセルフ ヘルプ オプションを表示するか、サービス要求を作成します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - サービス要求を作成および管理するには、**microsoft.office365.supportTickets/allEntities/allTasks** というプロパティ セットを使用して、少なくとも 1 つのAzure Active Directory (Azure AD) ロールが割り当てられている必要があります。 Azure AD ロールの一覧については、[組み込みロールAzure AD](/azure/active-directory/roles/permissions-reference)参照してください。 ロールを割り当てる方法については、「[Azure AD ロールをユーザーに割り当てる」を参照してください](/azure/active-directory/roles/manage-roles-portal)。
 

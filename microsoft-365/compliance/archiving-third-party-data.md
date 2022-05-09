@@ -274,32 +274,32 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |CellTrust| はい | いいえ | いいえ |
-|MS SQL 上の Cisco Jabber| はい | いいえ | なし |
-|Oracle 上の Cisco Jabber| はい | いいえ | なし |
-|PostgreSQL 上の Cisco Jabber| はい | いいえ | なし |
+|MS SQL 上の Cisco Jabber| はい | いいえ | いいえ |
+|Oracle 上の Cisco Jabber| はい | いいえ | いいえ |
+|PostgreSQL 上の Cisco Jabber| はい | いいえ | いいえ |
 |EML| はい | いいえ | いいえ |
-|FX 接続| はい | いいえ | なし |
+|FX 接続| はい | いいえ | いいえ |
 |Jive| はい | いいえ | いいえ |
-|MS SQL Database| はい | いいえ | なし |
-|ピボット| はい | いいえ | なし |
+|MS SQL Database| はい | いいえ | いいえ |
+|ピボット| はい | いいえ | いいえ |
 |Redtail Speak| はい | いいえ | いいえ |
-|Reuters Dealing| はい | いいえ | なし |
+|Reuters Dealing| はい | いいえ | いいえ |
 |Reuters Eikon| はい | いいえ | いいえ |
-|Reuters FX| はい | いいえ | なし |
-|RingCentral| はい | いいえ | なし |
+|Reuters FX| はい | いいえ | いいえ |
+|RingCentral| はい | いいえ | いいえ |
 |Salesforce Chatter| はい | いいえ | いいえ |
-|ServiceNow| はい | いいえ | なし |
+|ServiceNow| はい | いいえ | いいえ |
 |Skype for Business| はい | いいえ | いいえ |
-|Slack eDiscovery| はい | いいえ | なし |
+|Slack eDiscovery| はい | いいえ | いいえ |
 |Symphony| はい | いいえ | いいえ |
-|区切られたテキスト| はい | いいえ | なし |
+|区切られたテキスト| はい | いいえ | いいえ |
 |Twitter| はい | いいえ | いいえ |
 |Webex チーム| はい | いいえ | いいえ |
 |Web ページ| はい | いいえ | いいえ |
 |Facebookからの職場| はい | いいえ | いいえ |
 |XIP| はい | いいえ | いいえ |
 |XSLT/XML| はい | いいえ | いいえ |
-|Yieldbroker| はい | いいえ | なし |
+|Yieldbroker| はい | いいえ | いいえ |
 |YouTube| いいえ | いいえ | いいえ |
 |Zoom会議| はい | いいえ | いいえ |
 |||||
@@ -310,28 +310,28 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |:---------|:---------|:---------|:---------|
 |Android Archiver | はい | いいえ | いいえ |
 |AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Bell SMS/MMS Network Archiver | はい | いいえ | なし |
-|Enterprise Number Archiver | はい | いいえ | なし |
-|O2 SMS および Voice Network Archiver | はい         | いいえ | なし |
+|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|Enterprise Number Archiver | はい | いいえ | いいえ |
+|O2 SMS および Voice Network Archiver | はい         | いいえ | いいえ |
 |Rogers Network Archiver | はい         | いいえ | いいえ |
 |Signal Archiver | はい | いいえ | いいえ |
-|Telegram Archiver | はい | いいえ | なし |
-|TELUS SMS Network Archiver | はい | いいえ | なし |
+|Telegram Archiver | はい | いいえ | いいえ |
+|TELUS SMS Network Archiver | はい | いいえ | いいえ |
 |Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|WeChat Archiver | はい | いいえ | なし |
-|WhatsApp Archiver | はい | いいえ | なし |
+|WeChat Archiver | はい | いいえ | いいえ |
+|WhatsApp Archiver | はい | いいえ | いいえ |
 |||||
 
 ### <a name="17a-4-data-connectors-in-the-us-government-cloud"></a>米国政府機関クラウドの 17a-4 データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|BlackBerry DataParser | はい | いいえ | なし |
-|Bloomberg DataParser  | はい | いいえ | なし |
-|Cisco Jabber DataParser  | はい | いいえ | なし |
-|Cisco Webex DataParser  | はい | いいえ | なし |
-|FactSet DataParser  | はい | いいえ | なし |
-|Fuze DataParser  | はい | いいえ | なし |
+|BlackBerry DataParser | はい | いいえ | いいえ |
+|Bloomberg DataParser  | はい | いいえ | いいえ |
+|Cisco Jabber DataParser  | はい | いいえ | いいえ |
+|Cisco Webex DataParser  | はい | いいえ | いいえ |
+|FactSet DataParser  | はい | いいえ | いいえ |
+|Fuze DataParser  | はい | いいえ | いいえ |
 |FX Connect DataParser  | はい | いいえ | いいえ |
 |ICE DataParser  | はい | いいえ | いいえ |
 |InvestEdge DataParser  | はい | いいえ | いいえ |
@@ -340,17 +340,17 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |Refinitiv Eikon Messenger DataParser  | はい | いいえ | いいえ |
 |ServiceNow DataParser  | はい | いいえ | いいえ |
 |Skype for Business Server DataParser | はい | いいえ | いいえ |
-|Slack DataParser | はい | いいえ | なし |
+|Slack DataParser | はい | いいえ | いいえ |
 |SQL DataParser  | はい | いいえ | いいえ |
 |Symphony DataParser | はい | いいえ | いいえ |
-|Zoom DataParser | はい | いいえ | なし |
+|Zoom DataParser | はい | いいえ | いいえ |
 |||||
 
 ### <a name="celltrust-data-connectors-in-the-us-government-cloud"></a>米国政府クラウドの CellTrust データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|CellTrust SL2 | はい | いいえ | なし |
+|CellTrust SL2 | はい | いいえ | いいえ |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと協力してサード パーティのデータをアーカイブする

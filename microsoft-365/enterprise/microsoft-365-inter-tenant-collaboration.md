@@ -100,7 +100,7 @@ Fabrikam と Contoso の 2 つの組織にビジネス テナント用のMicroso
 
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>Microsoft 365 テナント間でドメイン名前空間を共有できますか?
 
-その必要はありません。 fabrikam.com や tailspintoys.com などの組織のドメイン名は、1 つのMicrosoft 365 テナントにのみ関連付けて使用できます。 各テナントには、独自の名前空間が必要です。 UPN、SMTP、および SIP 名前空間をテナント間で共有することはできません。
+いいえ。 fabrikam.com や tailspintoys.com などの組織のドメイン名は、1 つのMicrosoft 365 テナントにのみ関連付けて使用できます。 各テナントには、独自の名前空間が必要です。 UPN、SMTP、および SIP 名前空間をテナント間で共有することはできません。
 
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>ハイブリッド コンポーネントとテナント間コラボレーションMicrosoft 365はどうでしょうか?
 

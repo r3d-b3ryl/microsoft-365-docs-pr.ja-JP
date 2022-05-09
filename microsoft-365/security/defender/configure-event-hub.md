@@ -101,7 +101,7 @@ Microsoft 365 Defenderからイベントを取り込むことができるよう�
 > [!NOTE]
 > Event Hub クラスターの一部 **ではない** Event Hub 名前空間を使用している場合は、Event Hub 名前空間あたり 10 イベント ハブの Azure 制限があるため、定義した各エクスポート 設定でエクスポートするイベントの種類 (テーブル) を最大 10 個まで選択できます。
 
-次に、例を示します。
+例:
 
 :::image type="content" source="../../media/005c1f6c10c34420d387f594987f9ffe.png" alt-text="Microsoft Azure ポータルのイベント ハブ セクション" lightbox="../../media/005c1f6c10c34420d387f594987f9ffe.png":::
 

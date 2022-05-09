@@ -27,7 +27,7 @@ ms.locfileid: "65131132"
 
 Microsoft 365 Lighthouseでは、標準のマネージド テナント構成をデプロイして、顧客テナント内のユーザー、デバイス、データをセキュリティで保護できます。 Lighthouse には 7 つの [既定のベースライン構成](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) があります。 Lighthouse 展開計画機能を使用すると、すべてのテナントにセキュリティ構成を表示、テスト、デプロイできます。 展開計画は、アクティブなテナントでのみ使用できます。 テナントがオンボードされたら、顧客の現在の構成を既定のベースライン構成と比較し、適切なアクションを実行できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 お客様とテナントが、「[Microsoft 365 Lighthouseの要件」](m365-lighthouse-requirements.md)に記載されている要件を満たしていることを確認します。
 

@@ -32,7 +32,7 @@ ms.locfileid: "63324061"
 
 Microsoft Defender for Endpointでは、VDI セッションと Azure Virtual Desktop セッションの両方の監視がサポートされます。 組織のニーズによっては、従業員が管理されていないデバイス、リモートの場所、または同様のシナリオから企業データやアプリにアクセスできるように、VDI または Azure Virtual Desktop セッションを実装することが必要になる場合があります。 Microsoft Defender for Endpointを使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 [非永続的 VDI に関する考慮事項](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)について理解します。 [Azure Virtual Desktop](/azure/virtual-desktop/overview) では非永続化オプションは提供されませんが、新しいホストのプロビジョニングとマシンの再デプロイに使用できるゴールデン Windows イメージを使用する方法が提供されます。 これにより、環境の揮発性が高まり、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響を与え、セキュリティ アナリストの可視性が低下する可能性があります。
 

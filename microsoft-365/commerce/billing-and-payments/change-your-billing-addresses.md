@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: ビジネス向け請求通知の受信に使用する請求先住所または電子メール アドレスを更新Microsoft 365します。
+description: ビジネス向けのMicrosoft 365の課金通知を受け取るために使用する請求先住所またはメール アドレスを更新する方法について説明します。
 ms.date: 01/24/2022
 ms.openlocfilehash: 3c03315612b4f3a65dc39d2dcabee639bc578edd
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
@@ -38,21 +38,21 @@ ms.locfileid: "63322269"
 
 - **サービスの利用先住所** サービスが使用される住所です。通常、これは **販売先** 住所と同じです。組織にリモート ユーザーまたは複数のオフィスが存在する場合は、ユーザーの大多数が存在する住所を使用します。
 
-ほとんどの場合、これらの住所は同じです。 必要があれば、これらの住所のうち 1 つ以上を変更することができます。 また、請求通知を受信し、他の管理者の代替メール アドレスを変更する代替メール アドレスを指定することもできます。
+ほとんどの場合、これらの住所は同じです。 必要があれば、これらの住所のうち 1 つ以上を変更することができます。 また、別のメール アドレスを指定して課金通知を受け取り、他の管理者の代替メール アドレスを変更することもできます。
 
-請求書または請求書の詳細については、「請求書または請求書[](view-your-bill-or-invoice.md)を表示する」および「請求書または請求書について[」を参照してください](understand-your-invoice2.md)。
+請求書または請求書の詳細については、「請求書または請求書[を表示する」と「請求書または請求書](view-your-bill-or-invoice.md)[について」を参照してください](understand-your-invoice2.md)。
 
 ## <a name="change-your-sold-to-address"></a>販売先住所を変更する
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[課金アカウント] **ページに** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**移動**</a> します。
+1. 管理センターで、[**課金アカウント**\>] ページに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**します**</a>。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金アカウント] **ページに** > **移動** します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金アカウント**>] ページに移動 **します**。
 
 ::: moniker-end
 
@@ -70,7 +70,7 @@ ms.locfileid: "63322269"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金の支払い方法 **]** > **ページに移動** します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>の [**課金の** > **支払い方法**] ページに移動します。
 
 ::: moniker-end
 
@@ -100,12 +100,12 @@ ms.locfileid: "63322269"
 
 3. [サブスクリプションの詳細] ページの **[サービスの利用先住所]** セクションで、**[サービスの利用先住所の編集]** を選択します。
 
-4. [サービス利用状況 **アドレスの編集] ウィンドウで** 、アドレスを更新し、[保存] を **選択します**。
+4. [ **サービス使用量のアドレスの編集]** ウィンドウで、住所を更新し、[保存] を選択 **します**。
 
 
 ## <a name="related-content"></a>関連コンテンツ
 
 [課金内容または請求書を表示する](view-your-bill-or-invoice.md) (article)\
-[請求書または請求書 (記事](understand-your-invoice2.md) ) を理解する\
+[請求書または請求書 (](understand-your-invoice2.md) 記事)\ を理解する
 [サブスクリプションの支払い](pay-for-your-subscription.md) (記事)\
 [サブスクリプションと課金 - 管理者ヘルプ](../index.yml) (リンク ページ)

@@ -30,7 +30,7 @@ ms.locfileid: "64941151"
 
 [Office スクリプト](/office/dev/scripts)を使用すると、ユーザーはExcel on the webでスクリプトを記録、編集、実行してタスクを自動化できます。 Office スクリプトはPower Automateで動作し、ユーザーはExcel Online (Business) コネクタを使用してブックでスクリプトを実行します。 Microsoft 365管理者は、Microsoft 365 管理センターからOfficeスクリプト設定を管理できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Office スクリプト設定を管理するには、グローバル管理者である必要があります。詳細については、「[管理者ロールについて](../add-users/about-admin-roles.md)」を参照してください。
 

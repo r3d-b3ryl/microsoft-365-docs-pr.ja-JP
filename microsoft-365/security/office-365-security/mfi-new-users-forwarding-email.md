@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: ''
-description: 管理者は、セキュリティ & コンプライアンス センターで電子メールの分析情報を転送する新しいユーザーを使用して、組織内のユーザーが新しいドメインにメッセージを転送する時間を調査する方法について学習できます。
+description: 管理者は、セキュリティ & コンプライアンス センターで電子メール 分析情報を転送する新しいユーザーを使用して、組織内のユーザーが新しいドメインにメッセージを転送するタイミングを調査する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
@@ -20,7 +20,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64470265"
 ---
-# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターで電子メールの分析情報を&する新しいユーザー
+# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンス センターで電子メール分析情報を転送する新しいユーザー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -29,57 +29,57 @@ ms.locfileid: "64470265"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-組織の新しいユーザー アカウントが突然外部ドメインへの電子メール メッセージの転送を開始すると、疑わしい場合があります。
+組織内の新しいユーザー アカウントが突然外部ドメインに電子メール メッセージを転送し始めると、疑わしいです。
 
-セキュリティ **&** コンプライアンス センターで転送される新しいドメインは、組織内の [新](https://protection.office.com) しく作成されたユーザーが外部ドメインにメッセージを転送するときに通知します。 この条件は、侵害された管理者アカウントが新しいユーザーの作成に使用された可能性があります。 アカウントが侵害された疑いがある場合は、「侵害されたメール アカウントに応答 [する」を参照してください](responding-to-a-compromised-email-account.md)。
+[セキュリティ & コンプライアンス センター](https://protection.office.com)で電子メール 分析情報が **転送される新しいドメイン** は、組織内の新しく作成されたユーザーが外部ドメインにメッセージを転送するときに通知します。 この状態は、侵害された管理者アカウントが新しいユーザーの作成に使用されたことを示している可能性があります。 アカウントが侵害されたと思われる場合は、「侵害された [メール アカウントへの対応」を](responding-to-a-compromised-email-account.md)参照してください。
 
-この分析情報は、問題が検出された場合にのみ表示され、[転送レポート] ページ [に表示](view-mail-flow-reports.md#forwarding-report) されます。
+この分析情報は、問題が検出された場合にのみ表示され、[ [転送レポート](view-mail-flow-reports.md#forwarding-report) ] ページに表示されます。
 
-:::image type="content" source="../../media/mfi-new-users-forwarding-email.png" alt-text="メールを転送する新しいユーザーの分析情報" lightbox="../../media/mfi-new-users-forwarding-email.png":::
+:::image type="content" source="../../media/mfi-new-users-forwarding-email.png" alt-text="電子メール分析情報を転送する新しいユーザー" lightbox="../../media/mfi-new-users-forwarding-email.png":::
 
-ウィジェットをクリックすると、この記事で後述する転送変更レポートへのリンクなど、転送されたメッセージの詳細を確認できるフライアウトが表示[](#forwarding-modifications-report)されます。
+ウィジェットをクリックするとポップアップが表示され、転送されたメッセージの詳細を確認できます。この記事で後述するように [、[転送の変更] レポート](#forwarding-modifications-report) へのリンクも含まれます。
 
-:::image type="content" source="../../media/mfi-new-users-forwarding-email-details.png" alt-text="[新しいユーザーが電子メールを転送する] インサイトをクリックした後に表示される詳細フライアウト" lightbox="../../media/mfi-new-users-forwarding-email-details.png":::
+:::image type="content" source="../../media/mfi-new-users-forwarding-email-details.png" alt-text="[メール分析情報を転送する新しいユーザー] をクリックした後に表示される [詳細] ポップアップ" lightbox="../../media/mfi-new-users-forwarding-email-details.png":::
 
-[レポート ダッシュボード] **または [**\>おすすめ情報] 領域の [上位の分析情報&を表示する] をクリックした後で、分析情報を選択 **すると、この** 詳細ページに **アクセス** することもできます<https://protection.office.com/insightdashboard>。
+[レポート **ダッシュボード** または<https://protection.office.com/insightdashboard>レポート] の [**Top insights & recommendations**] 領域で [**すべて表示**] をクリックした後、\>分析情報を選択すると、この詳細ページに移動することもできます。
 
-[分析情報に関連付 **けられているレポートを表示する**] リンクをクリックすると、次のセクションで説明されている [転送の変更] レポートに移動できます。
+[ **分析情報に関連付けられたレポートの表示** ] リンクをクリックすると、次のセクションで説明するように **[転送の変更] レポート** に移動できます。
 
-## <a name="forwarding-modifications-report"></a>変更レポートの転送
+## <a name="forwarding-modifications-report"></a>転送変更レポート
 
-[ **転送の変更] レポート** には、組織内の送信者から自動的に転送されるメッセージに関する詳細が表示されます。
+**転送変更レポートには、組織内の** 送信者から自動的に転送されるメッセージに関する詳細が表示されます。
 
 - メッセージを外部ドメインに転送する新しく作成されたアカウント。
-- 組織内の他の送信者が転送したことがない外部ドメインにメッセージを転送するアカウント。
+- 組織内の他の送信者によって転送されたことがない外部ドメインにメッセージを転送しているアカウント。
 
-これらの種類の転送されたメッセージは、セキュリティまたはコンプライアンスのリスクを引き起し、侵害されたアカウントを示す可能性があります。
+このような種類の転送されたメッセージは、セキュリティやコンプライアンスのリスクを引き起こす可能性があり、侵害されたアカウントを示している可能性があります。
 
-レポートには、最大 90 日間のデータが含まれる。 既定では、レポートには過去 7 日間のデータが表示されます。
+レポートには、最大 90 日間のデータが含まれています。 既定では、レポートには過去 7 日間のデータが表示されます。
 
-このレポートは、メール フロー ダッシュボードまたは [レポート](mail-flow-insights-v2.md) ダッシュボードでは [直接使用できません](view-mail-flow-reports.md)。 [新しいユーザーがメールの分析情報を転送する] の  [インサイトに関連付けられているレポートを表示する] リンクをクリックする以外に、次の方法でレポートにアクセスできます。
+このレポートは、 [メール フロー ダッシュボード](mail-flow-insights-v2.md) または [レポート](view-mail-flow-reports.md) ダッシュボードでは直接使用できません。 電子メール分析情報を **転送する新しいユーザー** の **[分析情報に関連付けられたレポートの表示**] リンクをクリックするだけでなく、次の方法でレポートにアクセスできます。
 
-- 転送される新 **しいドメインの** 詳細にある [転送通知レポート] リンク [をクリック](mfi-new-domains-being-forwarded-email.md)します。
-- を開く <https://protection.office.com/reportv2?id=MailFlowNewForwarding>。
+- [転送される新しいドメイン](mfi-new-domains-being-forwarded-email.md)の詳細にある [**転送通知] レポート** のリンクをクリックします。
+- 開く <https://protection.office.com/reportv2?id=MailFlowNewForwarding>.
 
 ### <a name="report-view-for-the-forwarding-modifications-report"></a>転送変更レポートのレポート ビュー
 
 レポート ビューでは、次のグラフを使用できます。
 
-- **データの表示: 新しい転送ユーザー**:
+- **データを表示する: 新しい転送ユーザー:**
 
     :::image type="content" source="../../media/forwarding-modifications-report-new-forwarding-users.png" alt-text="[転送の変更] レポートの [新しい転送ユーザー] ビュー" lightbox="../../media/forwarding-modifications-report-new-forwarding-users.png":::
 
-- **データを表示する: 新しい転送ドメイン**:
+- **データを表示する: 新しい転送ドメイン:**
 
-    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarded-domains.png" alt-text="転送変更レポートの [転送された新しいドメイン] ビュー" lightbox="../../media/forwarding-modifications-report-new-forwarded-domains.png":::
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarded-domains.png" alt-text="転送変更レポートの [新しい転送されたドメイン] ビュー" lightbox="../../media/forwarding-modifications-report-new-forwarded-domains.png":::
 
-レポート ビューで **[フィルター]** をクリックすると、開始日と終了日で日付 **範囲****を指定できます**。
+レポート ビューで [**フィルター]** をクリックすると、開始日と **終了日** で **日付** 範囲を指定できます。
 
 ### <a name="details-table-view-for-the-forwarding-modifications-report"></a>転送変更レポートの詳細テーブル ビュー
 
-[詳細テーブル **の表示]** をクリックすると、表示される情報は、表示されているグラフによって異なります。
+[ **詳細テーブルの表示**] をクリックした場合、表示される情報は、目的のグラフによって異なります。
 
-- **データの表示: 新しい転送ユーザー**:
+- **データを表示する: 新しい転送ユーザー:**
 
   - **名前**: 送信者の電子メール アドレス。
   - **転送の種類**
@@ -88,7 +88,7 @@ ms.locfileid: "64470265"
   - **Count**
   - **最初の転送日**
 
-- **データを表示する: 新しい転送ドメイン**:
+- **データを表示する: 新しい転送ドメイン:**
 
   - **名前**: 送信者の電子メール ドメイン。
   - **転送の種類**
@@ -97,22 +97,22 @@ ms.locfileid: "64470265"
   - **Count**
   - **最初の転送日**
 
-詳細テーブル ビューで **[フィルター** ] をクリックすると、[開始日] と [終了日] で日付 **範囲** を **指定できます**。
+詳細テーブル ビューで [**フィルター]** をクリックすると、開始日と **終了日** で **日付** 範囲を指定できます。
 
-テーブルから行を選択すると、[ **詳細** ] フライアウトが表示され、次の情報が表示されます。
+テーブルから行を選択すると、 **詳細ポップアップが** 表示され、次の情報が表示されます。
 
-- **名前**: これは、送信者の電子メール アドレス ([データの表示 **:** 新しい転送ユーザー ビュー] から) または送信者のメール ドメイン ([データの表示 **:** 新しい転送ドメイン] ビューから) のいずれかです。
+- **名前**: これは、送信者のメール アドレス ([ **データの表示: 新しい転送ユーザー** ] ビュー) または送信者のメール ドメイン ([ **データの表示: 新しい転送ドメイン** ] ビュー) のいずれかです。
 - **転送の種類**
 - **[受信者]**
 - **詳細**
 - **Count**
 - **開始日**
-- **推奨事項**: ここから、リンクをクリックして、ユーザーを管理Microsoft 365 管理センター。
+- **推奨事項**: ここからリンクをクリックすると、Microsoft 365 管理センターでユーザーを管理できます。
 
-  :::image type="content" source="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png" alt-text="転送変更レポートの [新しい転送ユーザー] ビューの詳細テーブルからの詳細フライアウト" lightbox="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png":::
+  :::image type="content" source="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png" alt-text="[転送の変更] レポートの [新しい転送ユーザー] ビューの詳細テーブルからの詳細ポップアップ" lightbox="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png":::
 
-レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
+レポート ビューに戻るには、[レポートの **表示**] をクリックします。
 
 ## <a name="related-topics"></a>関連項目
 
-メール フロー ダッシュボードの他の分析情報については、「Security [& コンプライアンス センター」を参照してください](mail-flow-insights-v2.md)。
+メール フロー ダッシュボードのその他の分析情報については、 [セキュリティ & コンプライアンス センターのメール フロー分析情報に関する](mail-flow-insights-v2.md)ページを参照してください。

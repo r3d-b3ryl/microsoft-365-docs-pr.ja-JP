@@ -188,7 +188,7 @@ Microsoft Defender for Office 365 E5 および Defender for Office P1 と P2 の
 
     - *提出の詳細*: 次のような特定の提出に関する情報が含まれています。
         - 送信日
-        - 件名
+        - Subject
         - 提出の種類
         - 送信の理由
         - 申請 ID

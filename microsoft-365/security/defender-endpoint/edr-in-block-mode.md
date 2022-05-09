@@ -156,7 +156,7 @@ PowerShell を使用すると、Microsoft Defender ウイルス対策がパッ�
 
 1. スタート メニューを選択し、入力`PowerShell`を開始し、結果のWindows PowerShellを開きます。
 
-2. 種類`Get-MPComputerStatus|select AMRunningMode`
+2. 種類 `Get-MPComputerStatus|select AMRunningMode`。
 
 3. 結果 `EDR Block Mode`が表示されていることを確認します。
 

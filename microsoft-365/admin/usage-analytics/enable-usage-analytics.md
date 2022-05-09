@@ -34,7 +34,7 @@ ms.locfileid: "64946948"
 
 Microsoft 365米国Government Community Cloud (GCC) テナントでMicrosoft 365利用状況分析を有効にするには、「[Microsoft 365へのConnect」を参照してください。Usage Analytics を使用してデータをGovernment Community Cloud (GCC) します](connect-to-gcc-data-with-usage-analytics.md)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 Microsoft 365使用状況分析を開始するには、まずMicrosoft 365 管理センターでデータを使用できるようにしてから、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Power BI</a>でテンプレート アプリを開始する必要があります。
 
@@ -105,7 +105,7 @@ Microsoft 365使用状況分析を開始するには、まずMicrosoft 365 管�
   
 3. ステートメントのチェックを外します **すべてのレポートで、ユーザー、グループ、およびサイトの識別されていない名前を表示し**、変更を保存します。  
   
-これらの変更が有効になるまで数分かかります。 識別可能なユーザー情報を表示することは、Microsoft Purview コンプライアンス ポータルの監査ログに記録されたイベントです。   
+これらの変更が有効になるまで数分かかります。 特定可能なユーザー情報の表示は、Microsoft Purview コンプライアンス ポータル監査ログに記録されるイベントです。   
 
 ## <a name="related-content"></a>関連コンテンツ
 

@@ -173,7 +173,7 @@ _警告モード_ は、危険な可能性があるアクションについて�
 
 [許可] ボタンをクリックすると、ブロックは 24 時間非表示になります。 24 時間後、エンド ユーザーはブロックを再度許可する必要があります。 ASR ルールの警告モードは、RS5+ (1809 以降) デバイスでのみサポートされます。 バイパスが古いバージョンのデバイスの ASR ルールに割り当てられている場合、ルールはブロック モードになります。
 
-また、AttackSurfaceReductionRules_Actionsを "警告" として指定するだけで、PowerShell を使用して警告モードでルールを設定することもできます。 次に、例を示します。
+また、AttackSurfaceReductionRules_Actionsを "警告" として指定するだけで、PowerShell を使用して警告モードでルールを設定することもできます。 例:
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 

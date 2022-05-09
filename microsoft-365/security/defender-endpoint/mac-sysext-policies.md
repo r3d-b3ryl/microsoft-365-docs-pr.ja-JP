@@ -1,7 +1,7 @@
 ---
 title: macOS Catalina および macOS の新しいバージョンの新しい構成プロファイル
-description: このトピックでは、macOS Catalina および macOS の新しいバージョンのカーネル拡張機能に代わるシステム拡張機能を利用するために行う必要がある変更について説明します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, kernel, system, extensions, catalina
+description: このトピックでは、macOS Catalina および新しいバージョンの macOS のカーネル拡張機能の代わりに使用されるシステム拡張機能のメリットを得るために行う必要がある変更について説明します。
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, カーネル, システム, 拡張機能, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -36,9 +36,9 @@ ms.locfileid: "64474709"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-macOS の進化に合わせ、カーネル拡張機能ではなくシステム拡張機能を活用する macOS 更新プログラムの Microsoft Defender for Endpoint を準備しています。 この更新プログラムは、macOS Catalina (10.15.4) 以降のバージョンの macOS にのみ適用されます。
+macOS の進化に合わせて、カーネル拡張機能の代わりにシステム拡張機能を利用する macOS 更新プログラムのMicrosoft Defender for Endpointを準備しています。 この更新プログラムは、macOS Catalina (10.15.4) 以降のバージョンの macOS にのみ適用されます。
 
-管理環境 (JAMF、Intune、または別の MDM ソリューションを介して) macOS に Microsoft Defender for Endpoint を展開している場合は、新しい構成プロファイルを展開する必要があります。 これらの手順を実行しない場合、ユーザーは、これらの新しいコンポーネントを実行するための承認プロンプトを取得します。
+マネージド環境 (JAMF、Intune、または別の MDM ソリューション経由) で macOS にMicrosoft Defender for Endpointをデプロイした場合は、新しい構成プロファイルをデプロイする必要があります。 これらの手順を実行しないと、ユーザーはこれらの新しいコンポーネントを実行するための承認プロンプトを受け取ります。
 
 ## <a name="jamf"></a>JAMF
 
@@ -46,36 +46,36 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
 
 システム拡張機能を承認するには、次のペイロードを作成します。
 
-1. [**コンピューター] >構成プロファイルで、[****システム拡張機能>オプション] を選択します**。
-2. [ **システム拡張の種類] ドロップダウン リスト** から [ **許可されたシステム拡張機能** ] を選択します。
-3. チーム **ID には UBF8T346G9** を使用します。
-4. 次のバンドル識別子を [許可されたシステム拡張機能 **] リストに追加** します。
+1. **[コンピューター>構成プロファイル**] で、[**オプション] > [システム拡張機能**] を選択します。
+2. [ **システム拡張機能** の種類] ドロップダウン リストから [許可された **システム拡張機能** ] を選択します。
+3. チーム ID には **UBF8T346G9** を使用します。
+4. **許可されたシステム拡張機能** の一覧に次のバンドル識別子を追加します。
 
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
     :::image type="content" source="images/mac-approved-system-extensions.png" alt-text=" [承認済みシステム拡張機能] ページ" lightbox="images/mac-approved-system-extensions.png":::
 
-### <a name="privacy-preferences-policy-control"></a>プライバシー設定ポリシー制御
+### <a name="privacy-preferences-policy-control"></a>プライバシー設定ポリシーコントロール
 
-次の JAMF ペイロードを追加して、Microsoft Defender for Endpoint Security Extension にフル ディスク アクセスを付与します。 このポリシーは、デバイスで拡張機能を実行する前提条件です。
+次の JAMF ペイロードを追加して、Microsoft Defender for Endpoint エンドポイント セキュリティ拡張機能へのフル ディスク アクセスを許可します。 このポリシーは、デバイスで拡張機能を実行するための前提条件です。
 
-1. [オプション **] [** \> **プライバシー設定ポリシー制御] を選択します**。
-2. 識別子`com.microsoft.wdav.epsext`として、**バンドル** の`Bundle ID`**種類として使用します**。
-3. コード要件をに設定する `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
-4. アプリ **またはサービスを** **SystemPolicyAllFiles に設定し、[** 許可] にアクセス **します**。
+1. **[オプション** \> **のプライバシー設定] ポリシー コントロールを** 選択します。
+2. **識別子**`Bundle ID`と **バンドルの種類** として使用`com.microsoft.wdav.epsext`します。
+3. コード要件を次に設定する `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+4. **アプリまたはサービス** を **SystemPolicyAllFiles** に設定し、**アクセスを許可** に設定します。
 
-   :::image type="content" source="images/mac-system-extension-privacy.png" alt-text=" [プライバシーの基本設定] ポリシー制御メニュー項目" lightbox="images/mac-system-extension-privacy.png":::
+   :::image type="content" source="images/mac-system-extension-privacy.png" alt-text=" [プライバシー設定ポリシー コントロール] メニュー項目" lightbox="images/mac-system-extension-privacy.png":::
 
 ### <a name="network-extension-policy"></a>ネットワーク拡張ポリシー
 
-エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報をポータルMicrosoft 365 Defenderします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイントの検出と応答機能の一環として、macOS のMicrosoft Defender for Endpointはソケット トラフィックを検査し、この情報をMicrosoft 365 Defender ポータルに報告します。 次のポリシーを使用すると、ネットワーク拡張機能でこの機能を実行できます。
 
 > [!NOTE]
-> JAMF には、コンテンツ フィルター ポリシーの組み込みのサポートが用意されていません。これは、macOS 上の Microsoft Defender for Endpoint がデバイスにインストールするネットワーク拡張機能を有効にするための前提条件です。 さらに、JAMF は展開するポリシーの内容を変更する場合があります。
-> そのため、次の手順では、構成プロファイルに署名する回避策を提供します。
+> JAMF にはコンテンツ フィルター ポリシーのサポートが組み込まれていません。これは、macOS にMicrosoft Defender for Endpointネットワーク拡張機能をデバイスにインストールするための前提条件です。 さらに、JAMF によって、デプロイされるポリシーの内容が変更されることがあります。
+> そのため、次の手順では、構成プロファイルへの署名を含む回避策を提供します。
 
-1. テキスト エディターを使用して、次のコンテンツをデバイス `com.microsoft.network-extension.mobileconfig` に保存します。
+1. テキスト エディターを使用して、次の `com.microsoft.network-extension.mobileconfig` コンテンツをデバイスに保存します。
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -138,25 +138,25 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
     </plist>
     ```
 
-2. ターミナルでユーティリティを実行して、上記のファイルが正 `plutil` しくコピーされていることを確認します。
+2. ターミナルでユーティリティを実行して、上記のファイルが `plutil` 正しくコピーされたことを確認します。
 
     ```bash
     $ plutil -lint <PathToFile>/com.microsoft.network-extension.mobileconfig
     ```
 
-    たとえば、ファイルが Documents に保存されている場合は、次のようになります。
+    たとえば、ファイルがドキュメントに格納されている場合は次のようになります。
 
     ```bash
     $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
     ```
 
-    コマンドが出力されるのを確認します `OK`。
+    コマンドが出力されることを確認します `OK`。
 
     ```bash
     <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
     ```
 
-3. JAMF の [組み込](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) みの証明機関を使用して署名証明書を作成するには、このページの指示に従います。
+3. [このページ](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority)の指示に従って、JAMF の組み込みの証明機関を使用して署名証明書を作成します。
 
 4. 証明書を作成してデバイスにインストールしたら、ターミナルから次のコマンドを実行してファイルに署名します。
 
@@ -164,24 +164,24 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
     $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.microsoft.network-extension.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
     ```
 
-    たとえば、証明書名が **SigningCertificate** で、署名されたファイルが Documents に格納される場合は、次のようになります。
+    たとえば、証明書名が **SigningCertificate** で、署名されたファイルがドキュメントに格納される場合は次のようになります。
 
     ```bash
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
 
-5. JAMF ポータルから [構成プロファイル] **に移動し、[** 設定] ボタン **アップロード** クリックします。 ファイル `com.microsoft.network-extension.signed.mobileconfig` の入力を求めるメッセージが表示されたら選択します。
+5. JAMF ポータルで、[**構成プロファイル]** に移動し、[**アップロード**] ボタンをクリックします。 ファイルの入力を求められたら選択 `com.microsoft.network-extension.signed.mobileconfig` します。
 
 ## <a name="intune"></a>Intune
 
 ### <a name="intune-system-extensions-policy"></a>Intune システム拡張機能ポリシー
 
-システム拡張機能を承認するには、次の方法を実行します。
+システム拡張機能を承認するには:
 
-1. Intune で、[デバイス構成の **管理]** \> **を開きます**。 [プロファイル **の管理** \> **] [プロファイルの作成** \> **] を選択します**。
-2. プロファイルの名前を選択します。 **Platform=macOS を Profile** **type=Extensions に変更します**。 **[作成]** を選択します。
-3. タブで `Basics` 、この新しいプロファイルに名前を付きます。
-4. タブで `Configuration settings` 、セクションに次のエントリを追加 `Allowed system extensions` します。
+1. Intuneで、[**デバイス構成** の **管理**\>] を開きます。 [**プロファイルの****管理**\>] **の [プロファイル** の\>作成] を選択します。
+2. プロファイルの名前を選択します。 **Platform=macOS** を **プロファイルの種類=拡張機能** に変更します。 **[作成]** を選択します。
+3. タブで `Basics` 、この新しいプロファイルに名前を付けます。
+4. タブで `Configuration settings` 、セクションに次のエントリを `Allowed system extensions` 追加します。
 
    <br>
 
@@ -195,14 +195,14 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
 
    :::image type="content" source="images/mac-system-extension-intune2.png" alt-text=" [システム構成プロファイル] ページ" lightbox="images/mac-system-extension-intune2.png":::
 
-5. タブで、 `Assignments` このプロファイルを [すべてのユーザー] に割り当& **すべてのデバイスに割り当てる必要があります**。
+5. タブで `Assignments` 、このプロファイルを **[すべてのユーザー] & [すべてのデバイス**] に割り当てます。
 6. この構成プロファイルを確認して作成します。
 
-### <a name="create-and-deploy-the-custom-configuration-profile"></a>カスタム構成プロファイルの作成と展開
+### <a name="create-and-deploy-the-custom-configuration-profile"></a>カスタム構成プロファイルを作成してデプロイする
 
-次の構成プロファイルは、ネットワーク拡張機能を有効にし、エンドポイント セキュリティ システム拡張機能へのフル ディスク アクセスを付与します。
+次の構成プロファイルは、ネットワーク拡張機能を有効にし、Endpoint Security システム拡張機能へのフル ディスク アクセスを許可します。
 
-次のコンテンツを次の名前 **のファイルに** 保存sysext.xml。
+次のコンテンツをsysext.xmlという名前 **の** ファイルに保存します。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -301,21 +301,21 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
 </plist>
 ```
 
-上記のファイルが正しくコピーされていることを確認します。 ターミナルから、次のコマンドを実行し、出力を確認します `OK`。
+上記のファイルが正しくコピーされたことを確認します。 ターミナルから次のコマンドを実行し、出力 `OK`されることを確認します。
 
 ```bash
 $ plutil -lint sysext.xml
 sysext.xml: OK
 ```
 
-このカスタム構成プロファイルを展開するには、次の方法を実行します。
+このカスタム構成プロファイルをデプロイするには、
 
-1. Intune で、[デバイス構成の **管理]** \> **を開きます**。 [プロファイル **の管理]** \> **[プロファイルの作成** \> **] を選択します**。
-2. プロファイルの名前を選択します。 Platform **=macOS と** Profile **type=Custom を変更します**。 **[構成]** を選択します。
-3. 構成プロファイルを開き **、sysext.xml。** このファイルは、前の手順で作成されました。
+1. Intuneで、[**デバイス構成** の **管理**\>] を開きます。 [**プロファイルの****管理**\>] プロファイルの\>作成を選択 **します**。
+2. プロファイルの名前を選択します。 **Platform=macOS** と **プロファイルの種類=カスタム** を変更します。 **[構成]** を選択します。
+3. 構成プロファイルを開き、 **sysext.xml** アップロードします。 このファイルは、前の手順で作成されました。
 4. **[OK]** を選択します。
 
-   :::image type="content" source="images/mac-system-extension-intune.png" alt-text=" Intune ページのシステム拡張機能" lightbox="images/mac-system-extension-intune.png":::
+   :::image type="content" source="images/mac-system-extension-intune.png" alt-text="[Intune] ページの [システム拡張機能]" lightbox="images/mac-system-extension-intune.png":::
 
-5. タブで、 `Assignments` このプロファイルを [すべてのユーザー] に割り当& **すべてのデバイスに割り当てる必要があります**。
+5. タブで `Assignments` 、このプロファイルを **[すべてのユーザー] & [すべてのデバイス**] に割り当てます。
 6. この構成プロファイルを確認して作成します。

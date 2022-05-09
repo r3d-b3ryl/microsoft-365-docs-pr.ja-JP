@@ -36,12 +36,12 @@ Microsoft 365には、ユーザーが共同作業を行う場合にコンプラ�
 ||チャットとメッセージを保持する|[Microsoft Teams のアイテム保持ポリシーの詳細](../compliance/retention-policies-teams.md)|
 |情報の分類|||
 ||グループとチームを分類する|[秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||機密コンテンツを自動的に分類する|[秘密度ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)|
-||機密コンテンツを暗号化する|[機密ラベルを使用して暗号化を適用しコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)|
+||機密コンテンツを自動的に分類する|[機密ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)|
+||機密コンテンツを暗号化する|[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)|
 |情報保護|||
-||機密情報の損失を防ぐ|[Microsoft Purview データ損失防止について学習する](../compliance/dlp-learn-about-dlp.md)|
+||機密情報の損失を防ぐ|[Microsoft Purview データ損失防止についての説明](../compliance/dlp-learn-about-dlp.md)|
 ||チャットで機密情報を保護します。|[Microsoft Purview データ損失防止とMicrosoft Teams](../compliance/dlp-microsoft-teams.md)|
-||組織の機密情報を定義する|[カスタムの機密情報の種類](../compliance/sensitive-information-type-learn-about.md)|
+||組織の機密情報を定義する|[カスタムの機密情報タイプ](../compliance/sensitive-information-type-learn-about.md)|
 |ユーザーのセグメント化|||
 ||ユーザー セグメント間の通信を制限する|[情報障壁](../compliance/information-barriers.md)|
 |データ所在地|||
@@ -79,17 +79,17 @@ Microsoft 365 グループのアイテム保持ポリシーの構成には、グ
 
 機密情報の種類の検出やトレーニング可能な分類子とのパターン マッチングなど、指定した条件に基づいて機密ラベルをファイルや電子メールに自動適用するようにMicrosoft 365を構成できます。
 
-- [秘密度ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)
+- [機密ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)
 
 機密ラベルを使用してファイルを暗号化し、暗号化解除と読み取りを行うアクセス許可を持つファイルのみを許可できます。
 
-- [機密ラベルを使用して暗号化を適用しコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)
+- [秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)
 
 - [セキュリティの分離を使用してチームを構成する](./secure-teams-security-isolation.md)
 
 追加情報:
 
-- [秘密度ラベルの詳細](../compliance/sensitivity-labels.md)
+- [機密ラベルについて詳しく見る](../compliance/sensitivity-labels.md)
 
 
 ## <a name="information-protection"></a>情報保護
@@ -104,7 +104,7 @@ Teamsの DLP は、機密情報を含むメッセージを削除することで�
 
 プロジェクト コード名など、組織に固有の機密情報がある場合は、独自の機密情報の種類を作成し、DLP ポリシーに適用して、グループ、チーム、SharePointのコンテンツを保護できます。
 
-- [カスタムの機密情報の種類](../compliance/sensitive-information-type-learn-about.md)
+- [カスタムの機密情報タイプ](../compliance/sensitive-information-type-learn-about.md)
 
 ## <a name="user-segmentation"></a>ユーザーのセグメント化
 
@@ -114,7 +114,7 @@ Teamsの DLP は、機密情報を含むメッセージを削除することで�
 
 - [Microsoft Teams の情報バリア](/microsoftteams/information-barriers-in-teams)
 
-- [SharePointで情報バリアを使用する](/sharepoint/information-barriers)
+- [SharePoint で情報バリアを使用する](/sharepoint/information-barriers)
 
 ## <a name="data-residency"></a>データ所在地
 

@@ -42,7 +42,7 @@ ms.locfileid: "64788944"
 改ざん防止は、次のいずれかのバージョンのWindowsを実行しているデバイスで使用できます。
 
 - Windows 11
-- マルチセッションをWindows 11 Enterpriseする 
+- Windows 11 Enterprise multi-session 
 - Windows 10
 - Windows 10 Enterprise マルチセッション
 - Windows Server 2022
@@ -97,8 +97,8 @@ ms.locfileid: "64788944"
 
 | 改ざん防止を有効にする方法 | クラウド保護への依存 |
 |---|---|
-|Microsoft Intune|不要|
-|テナントアタッチを使用したMicrosoft Endpoint Configuration Manager|不要|
+|Microsoft Intune|いいえ|
+|テナントアタッチを使用したMicrosoft Endpoint Configuration Manager|いいえ|
 |Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))|はい|
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用して組織の改ざん防止を管理する
@@ -117,7 +117,7 @@ ms.locfileid: "64788944"
 - Windows デバイスは、次のいずれかのバージョンのWindowsを実行している必要があります。
   
   - Windows 11
-  - マルチセッションをWindows 11 Enterpriseする 
+  - Windows 11 Enterprise multi-session 
   - Windows 10
   - Windows 10 Enterprise マルチセッション
   - Windows Server 2022
@@ -253,7 +253,7 @@ Windows Server 2016では、改ざん防止が有効になっている場合、�
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>改ざん防止を構成できるWindowsのバージョンはどれですか?
 
 - Windows 11
-- マルチセッションをWindows 11 Enterpriseする
+- Windows 11 Enterprise multi-session
 - Windows 10 OS [1709](/windows/release-health/status-windows-10-1709)、[1803](/windows/release-health/status-windows-10-1803)、[1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) 以降と[共にMicrosoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)。
 - Windows 10 Enterprise マルチセッション
   
@@ -261,7 +261,7 @@ Windows Server 2016では、改ざん防止が有効になっている場合、�
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>改ざん防止は、Windows セキュリティ アプリでの Microsoft 以外のウイルス対策登録に影響しますか?
 
-ちがいます。 Microsoft 以外のウイルス対策オファリングは、引き続きWindows セキュリティ アプリケーションに登録されます。
+いいえ。 Microsoft 以外のウイルス対策オファリングは、引き続きWindows セキュリティ アプリケーションに登録されます。
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>デバイスでMicrosoft Defender ウイルス対策がアクティブでない場合はどうなりますか?
 
@@ -301,7 +301,7 @@ Intuneを使用して改ざん防止を柔軟に構成できます。 組織全�
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>私はエンタープライズ顧客です。 ローカル管理者は、デバイスの改ざん保護を変更できますか?
 
-ちがいます。 ローカル管理者は、改ざん防止設定を変更または変更できません。
+いいえ。 ローカル管理者は、改ざん防止設定を変更または変更できません。
 
 ### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>デバイスがMicrosoft Defender for Endpointでオンボードされ、オフボード状態になった場合はどうなりますか?
 
@@ -319,13 +319,13 @@ Intuneを使用して改ざん防止を柔軟に構成できます。 組織全�
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 

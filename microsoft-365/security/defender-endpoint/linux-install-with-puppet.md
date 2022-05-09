@@ -1,8 +1,8 @@
 ---
-title: Linux での Microsoft Defender for Endpoint の展開 (Puppet を使用)
+title: Puppet を使用して Linux にMicrosoft Defender for Endpointをデプロイする
 ms.reviewer: ''
-description: Puppet を使用して Microsoft Defender for Endpoint を Linux に展開する方法について説明します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
+description: Puppet を使用して Linux にMicrosoft Defender for Endpointをデプロイする方法について説明します。
+keywords: microsoft, defender, Microsoft Defender for Endpoint, Linux, インストール, デプロイ, アンインストール, Puppet, ansible, Linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon Linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +16,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: adf58b3009c3feaafde389b91ddc64b441d49f40
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5ec3eb5d12933b33f4af7d5af96b4ab54fda4604
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476011"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663800"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Linux での Microsoft Defender for Endpoint の展開 (Puppet を使用)
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Puppet を使用して Linux にMicrosoft Defender for Endpointをデプロイする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,56 +34,61 @@ ms.locfileid: "64476011"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-この記事では、Puppet を使用して Defender for Endpoint を Linux に展開する方法について説明します。 展開を成功させるには、次のすべてのタスクを完了する必要があります。
+この記事では、Puppet を使用して Linux 上に Defender for Endpoint をデプロイする方法について説明します。 展開を成功させるには、次のすべてのタスクを完了する必要があります。
 
 - [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)
-- [Puppet マニフェストの作成](#create-a-puppet-manifest)
+- [Puppet マニフェストを作成する](#create-a-puppet-manifest)
 - [展開](#deployment)
-- [オンボーディングの状態を確認する](#check-onboarding-status)
+- [オンボードの状態を確認する](#check-onboarding-status)
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
- 現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メイン [の Defender for Endpoint on Linux ページを参照してください](microsoft-defender-endpoint-linux.md)。
+ 現在のソフトウェア バージョンの前提条件とシステム要件の説明については、 [メインの Defender for Endpoint on Linux ページを](microsoft-defender-endpoint-linux.md)参照してください。
 
-さらに、Puppet の展開では、Puppet 管理タスクを理解し、Puppet を構成し、パッケージを展開する方法を知る必要があります。 Puppet には、同じタスクを実行する多くの方法があります。 これらの手順では、パッケージの展開に役立つ apt など、サポートされている *Puppet* モジュールの可用性を前提とします。 組織で別のワークフローを使用する場合があります。 詳細については [、Puppet のドキュメント](https://puppet.com/docs) を参照してください。
+また、Puppet デプロイの場合は、Puppet 管理タスクについて理解し、Puppet を構成し、パッケージをデプロイする方法を理解する必要があります。 Puppet には、同じタスクを完了するためのさまざまな方法があります。 これらの手順は、パッケージのデプロイに役立つ *apt* など、サポートされている Puppet モジュールの可用性を前提としています。 組織が別のワークフローを使用している可能性があります。 詳細については、 [Puppet のドキュメント](https://puppet.com/docs) を参照してください。
 
 ## <a name="download-the-onboarding-package"></a>オンボーディング パッケージをダウンロードする
 
 Microsoft 365 Defender ポータルからオンボーディング パッケージをダウンロードします。
 
-1. [Microsoft 365 Defender] ポータルで、[デバイス設定 >オンボーディング>**エンドポイント>移動します**。
-2. 最初のドロップダウン メニューで、オペレーティング システムとして **[Linux サーバー]** を選択します。 2 番目のドロップダウン メニューで、展開 **方法として [優先する Linux 構成管理ツール** ] を選択します。
+1. Microsoft 365 Defender ポータルで、**設定 > エンドポイント>デバイス管理>オンボードに** 移動します。
+2. 最初のドロップダウン メニューで、オペレーティング システムとして **[Linux サーバー]** を選択します。 2 番目のドロップダウン メニューで、展開方法として [ **お好みの Linux 構成管理ツール** ] を選択します。
 3. **[オンボーディング パッケージをダウンロードする]** を選択します。 ファイルを WindowsDefenderATPOnboardingPackage.zip として保存します。
 
-   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="オンボード パッケージをダウンロードするオプション" lightbox="images/portal-onboarding-linux-2.png":::
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="オンボードパッケージをダウンロードするオプション" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. コマンド プロンプトから、ファイルがあることを確認します。 
 
     ```bash
     ls -l
     ```
+
     ```Output
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
+
 5. アーカイブの内容を抽出します。
+
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
+
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
 
-## <a name="create-a-puppet-manifest"></a>Puppet マニフェストの作成
+## <a name="create-a-puppet-manifest"></a>Puppet マニフェストを作成する
 
-Linux 上の Defender for Endpoint を、Puppet サーバーによって管理されるデバイスに展開するために、Puppet マニフェストを作成する必要があります。 この例では、 *puppetlabs* から利用できる apt モジュールと *yumrepo* モジュールを使用し、モジュールが Puppet サーバーにインストールされていることを前提とします。
+Linux 上の Defender for Endpoint を Puppet サーバーによって管理されているデバイスにデプロイするための Puppet マニフェストを作成する必要があります。 この例では、puppetlabs から使用可能な *apt* モジュールと *yumrepo* モジュールを使用し、モジュールが Puppet サーバーにインストールされていることを前提としています。
 
-Puppet インストールの *modules フォルダー install_mdatp下に、install_mdatp/* ファイル、install_mdatp */* マニフェストのフォルダーを作成します。 このフォルダーは、通常、 */etc/puppetlabs/code/environments/production/modules* on your Puppet server にあります。 上にmdatp_onboardした mdatp_onboard.json ファイルを 、install_mdatp */files フォルダーにコピー* します。 *init.pp を作成する* 展開手順を含むファイルを次に示します。
+Puppet インストールのモジュール フォルダーの下に、 *フォルダー install_mdatp/ファイル* と *install_mdatp/マニフェスト* を作成します。 このフォルダーは通常、Puppet サーバーの */etc/puppetlabs/code/environments/production/modules* にあります。 上記で作成したmdatp_onboard.json ファイルを *install_mdatp/files* フォルダーにコピーします。 *init.pp を* 作成する 展開手順を含むファイル:
 
 ```bash
 pwd
 ```
+
 ```Output
 /etc/puppetlabs/code/environments/production/modules
 ```
@@ -91,6 +96,7 @@ pwd
 ```bash
 tree install_mdatp
 ```
+
 ```Output
 install_mdatp
 ├── files
@@ -110,12 +116,12 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 > [!WARNING]
 > 初期インストール後にチャネルを切り替えるには、製品を再インストールする必要があります。製品チャネルを切り替えるには: 既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
 
-配布とバージョンをメモし、その下の最も近いエントリを識別します `https://packages.microsoft.com/config/[distro]/`。
+ディストリビューションとバージョンをメモし、その下 `https://packages.microsoft.com/config/[distro]/`に最も近いエントリを特定します。
 
-以下のコマンドで、[ *distro]* と *[version]* を、特定した情報に置き換える必要があります。
+次のコマンドで *、[distro]* と *[version] を* 特定した情報に置き換えます。
 
 > [!NOTE]
-> RedHat、Oracle Linux、Amazon Linux 2、CentOS 8 の場合、[ *ディストリビューション]* を 'rhel' に置き換える。
+> RedHat、Oracle Linux、Amazon Linux 2、CentOS 8 の場合は、[ *distro] を* 'rhel' に置き換えます。
 
 ```puppet
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
@@ -131,7 +137,7 @@ $version = undef
     case $::osfamily {
         'Debian' : {
             apt::source { 'microsoftpackages' :
-                location => "https://packages.microsoft.com/config/${distro}/${version}/prod",
+                location => "https://packages.microsoft.com/${distro}/${version}/prod",
                 release  => $channel,
                 repos    => 'main',
                 key      => {
@@ -142,7 +148,7 @@ $version = undef
         }
         'RedHat' : {
             yumrepo { 'microsoftpackages' :
-                baseurl  => "https://packages.microsoft.com/config/${distro}/${version}/${channel}",
+                baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
                 descr    => "packages-microsoft-com-prod-${channel}",
                 enabled  => 1,
                 gpgcheck => 1,
@@ -181,26 +187,28 @@ $version = undef
 
 ## <a name="deployment"></a>展開
 
-上記のマニフェストを site.pp に含める file:
+上記のマニフェストを site.pp に含める ファイル：
 
 ```bash
 cat /etc/puppetlabs/code/environments/production/manifests/site.pp
 ```
+
 ```Output
 node "default" {
     include install_mdatp
 }
 ```
 
-登録されたエージェント デバイスは、定期的に Puppet Server をポーリングし、検出されるとすぐに新しい構成プロファイルとポリシーをインストールします。
+登録済みのエージェント デバイスは、Puppet Server を定期的にポーリングし、検出されるとすぐに新しい構成プロファイルとポリシーをインストールします。
 
-## <a name="monitor-puppet-deployment"></a>Puppet の展開を監視する
+## <a name="monitor-puppet-deployment"></a>Puppet デプロイを監視する
 
-エージェント デバイスで、次のコマンドを実行してオンボーディングの状態を確認することもできます。
+エージェント デバイスでは、次を実行してオンボードの状態を確認することもできます。
 
 ```bash
 mdatp health
 ```
+
 ```Output
 ...
 licensed                                : true
@@ -208,31 +216,31 @@ org_id                                  : "[your organization identifier]"
 ...
 ```
 
-- **ライセンス:** これにより、デバイスが組織に関連付けられているのが確認されます。
+- **licensed**: これにより、デバイスが組織に関連付けられていることが確認されます。
 
 - **orgId**: これは Defender for Endpoint 組織識別子です。
 
-## <a name="check-onboarding-status"></a>オンボーディングの状態を確認する
+## <a name="check-onboarding-status"></a>オンボードの状態を確認する
 
-スクリプトを作成すると、デバイスが正しくオンボードされていることを確認できます。 たとえば、次のスクリプトは、登録されているデバイスでオンボーディングの状態をチェックします。
+スクリプトを作成することで、デバイスが正しくオンボードされていることを確認できます。 たとえば、次のスクリプトは、登録されているデバイスのオンボード状態を確認します。
 
 ```bash
 mdatp health --field healthy
 ```
 
-上記のコマンドは、製品 `1` がオンボードされ、期待通り機能している場合に出力されます。
+上記のコマンドは、製品がオンボードされ、期待どおりに機能している場合に出力 `1` されます。
 
 > [!IMPORTANT]
 > 製品が初めて起動すると、最新のウイルス対策定義がダウンロードされます。 インターネット接続によっては、これには数分かかる場合があります。 この間、上記のコマンドは `0` の値を返します。
 
-製品が正常ではない場合、終了コード ( `echo $?`チェックスルー可能) は問題を示します。
+製品が正常でない場合は、終了コード (確認 `echo $?`できる) は問題を示します。
 
 - デバイスがまだオンボードされていない場合は 1。
 - デーモンへの接続を確立できない場合は 3。
 
 ## <a name="log-installation-issues"></a>インストールの問題をログする
 
- エラーが発生した場合にインストーラーによって作成される自動的に生成されたログを検索する方法の詳細については、「 [Log installation issues」を参照してください](linux-resources.md#log-installation-issues)。
+ エラーが発生したときにインストーラーによって作成された自動的に生成されたログを検索する方法の詳細については、「 [ログ インストールの問題](linux-resources.md#log-installation-issues)」を参照してください。
 
 ## <a name="operating-system-upgrades"></a>オペレーティング システムのアップグレード
 
@@ -240,7 +248,7 @@ mdatp health --field healthy
 
 ## <a name="uninstallation"></a>アンインストール
 
-*init.pp* *でremove_mdatp**の内容* install_mdatpに似たモジュール を作成する file:
+*init.pp* で次の内容を *含む* install_mdatpに似たモジュール *remove_mdatp* を作成する ファイル：
 
 ```bash
 class remove_mdatp {

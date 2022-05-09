@@ -25,7 +25,7 @@ ms.locfileid: "63682066"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
-SharePoint Syntexは、組織Microsoft 365に役立つサービスです。
+SharePoint Syntexは、組織が次のことに役立つMicrosoft 365 サービスです。
 
 - 高度な AI および機械教育機能を使用して、人間の操作性を強化します
 - 自動コンテンツ処理
@@ -41,7 +41,7 @@ SharePoint Syntexは、組織Microsoft 365に役立つサービスです。
 
 ## <a name="get-started"></a>はじめに
 
-このセクションのリソースは、ユーザーが使用するデータ分類と抽出の方法の詳細をSharePoint Syntex。 カスタム モデルの種類は、ドキュメント[](document-understanding-overview.md)の理解と[](form-processing-overview.md)フォーム処理の 2 種類と、事前構築済みの[モデルの種類](prebuilt-overview.md)です。
+このセクションのリソースは、SharePoint Syntexによって使用されるデータ分類と抽出の方法の詳細を学習するのに役立ちます。 カスタム モデルには、[ドキュメントの理解](document-understanding-overview.md) と [フォーム処理](form-processing-overview.md)の 2 種類と [、事前構築済みの](prebuilt-overview.md) モデルの種類があります。
 
 > [!NOTE]
 > [SharePoint 管理センターからコンテンツ センターを作成](create-a-content-center.md)することで、ライセンスを購入せずに SharePoint Syntex の使用を開始できます。 ライセンス未付与のユーザーは、ドキュメントの理解モデルを作成することはできますが、それをドキュメント ライブラリに適用することはできません。
@@ -54,11 +54,11 @@ SharePoint Syntexは、組織Microsoft 365に役立つサービスです。
 |Microsoft 技術コミュニティ リソース センターのリソースを参照してください。|[SharePoint Syntex - Microsoft 365 のコンテンツ サービス](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |Microsoft Tech Community Resource Center に関する SharePoint Syntex FAQ |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |SharePoint Syntex の入手方法 |[SharePoint Syntex 製品ページ](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
-|ユーザー設定の使用SharePoint Syntex |[SharePoint Syntex学習パス](/learn/paths/syntex-get-started)|
+|SharePoint Syntexを使用する方法を学習する |[SharePoint Syntexラーニング パス](/learn/paths/syntex-get-started)|
 
 ## <a name="adoption"></a>導入
 
-ビジネス上の問題の解決に役立つSharePoint Syntexを組織で使用および実装する方法について詳しくは、ご覧ください。
+ビジネス上の問題の解決に役立つSharePoint Syntexを組織内で使用して実装する方法の詳細について説明します。
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
@@ -66,8 +66,8 @@ SharePoint Syntexは、組織Microsoft 365に役立つサービスです。
 |組織で SharePoint Syntex を使用する方法に関するアイデアを提供するシナリオの例を参照してください |[SharePoint Syntex のシナリオとユース ケース](./adoption-scenarios.md)| 
 |SharePoint Syntex の試用版パイロット プログラムを設定して実行する |[試用版を実行する](./trial-syntex.md)|
 |SharePoint Syntex を使用してドキュメント プロセスを自動化する方法について説明します |[Microsoft 365 ソリューションを使用して契約を管理する](./solution-manage-contracts-in-microsoft-365.md)| 
-|契約の管理に役立つSharePointカスタマイズ可能なサイト テンプレートを試す |[契約管理サイト テンプレートの使用](./use-contracts-management-site.md)| 
-|モデルの詳細については、コンテンツ センター サイト テンプレートの説明をご覧ください。 |[コンテンツ センター サイト テンプレートの使用](./use-content-center-site.md)| 
+|コントラクトの管理に役立つカスタマイズ可能なSharePoint サイト テンプレートを試す |[Contracts Management サイト テンプレートを使用する](./use-contracts-management-site.md)| 
+|モデルの詳細については、Content Center サイト テンプレートの手順を試してください |[コンテンツ センター サイト テンプレートを使用する](./use-content-center-site.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -78,7 +78,7 @@ SharePoint Syntexは、組織Microsoft 365に役立つサービスです。
 |SharePoint Syntex の設定と構成|[SharePoint Syntex の設定](./set-up-content-understanding.md)|
 |SharePoint Syntex のライセンスの詳細|[SharePoint Syntex のライセンス](./syntex-licensing.md)|
 |画像のタグ付けとを無効にする方法|[SharePoint Syntex での画像のタグ付け](./image-tagging.md)|
-|PowerShell を使用してデータを管理SharePoint Syntex|[PowerShell を使用して SharePoint Syntex を管理する](./powershell-syntex-intro.md)|
+|PowerShell を使用してSharePoint Syntexを管理する|[PowerShell を使用して SharePoint Syntex を管理する](./powershell-syntex-intro.md)|
 
 ## <a name="models"></a>モデル
 
@@ -89,17 +89,17 @@ SharePoint Syntexは、組織Microsoft 365に役立つサービスです。
 |モデルの使用方法についての詳細情報|[コンテンツ センターを作成する](./create-a-content-center.md)<br><br>[分類子を作成する](./create-a-classifier.md)<br><br>[モデルを複製する](./duplicate-a-model.md)<br><br>[モデルの名前を変更する](./rename-a-model.md)<br><br>[抽出子を作成する](./create-an-extractor.md)<br><br>[抽出子の名前を変更する](./rename-an-extractor.md)<br><br>[フォーム処理モデルを作成する](./create-a-form-processing-model.md)<br><br>[説明の種類](./explanation-types-overview.md)<br><br>[説明テンプレートを使用する](./explanation-templates.md)<br><br>[ドキュメント理解モデルの適用](./apply-a-model.md)<br><br>[サンプル モデルを使用したドキュメント理解モデルについての詳細情報](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |モデルに保持ラベルを適用する|[保持ラベルをドキュメント理解モデルに適用する](./apply-a-retention-label-to-a-model.md)|
 |モデルに秘密度ラベルを適用する|[秘密度ラベルをドキュメント理解モデルに適用する](./apply-a-sensitivity-label-to-a-model.md)|
-|事前構築されたモデルを使用してドキュメントから情報を抽出する |[事前構築済みモデルを使用して請求書または領収書から情報を抽出する](./prebuilt-models.md)|
-|ローカル サイトでモデルをローカルに作成SharePointする |[ローカル サイトにモデルをSharePointする](./create-local-model.md)|
-|トレーニング済みのモデルを他のコンテンツ センターで使用する |[ドキュメント理解モデルの公開と検出](./model-discovery.md)|
-|ドキュメント ライブラリでメタデータ ベースのクエリを実行する|[ドキュメント ライブラリ内のメタデータを検索する](./metadata-search.md)|
+|事前構築済みモデルを使用してドキュメントから情報を抽出する |[事前構築済みモデルを使用して、請求書または領収書から情報を抽出する](./prebuilt-models.md)|
+|SharePoint サイトでモデルをローカルに作成してトレーニングする |[ローカル SharePoint サイトにモデルを作成する](./create-local-model.md)|
+|他のコンテンツ センターでトレーニング済みモデルを使用する |[ドキュメント理解モデルの発行と検出](./model-discovery.md)|
+|ドキュメント ライブラリに対してメタデータ ベースのクエリを実行する|[ドキュメント ライブラリ内のメタデータを検索する](./metadata-search.md)|
 |エクストラクターの作成時に、 Managed Metadata Service の用語ストアの分類を使用する|[エクストラクターの作成時に用語ストアの分類を活用する](./leverage-term-store-taxonomy.md)|
 |モデルに関するデータを表示する方法|[モデルの利用分析](./model-usage-analytics.md)|
 |モデルのトレーニング時にアクセシビリティ モードを使用する方法についての詳細|[SharePoint Syntex アクセシビリティ モード](./accessibility-mode.md)|
 
 ## <a name="premium-services"></a>プレミアム サービス
 
-SharePoint Syntex ライセンスでは、ユーザーにプレミアム コンテンツ サービスが提供されます。これにより、Microsoft 365 環境に追加の機能が提供されます。 このセクションのリソースでは、これらの機能の詳細と使用方法について説明します。
+SharePoint Syntex ライセンスでは、ユーザーにプレミアム コンテンツ サービスが提供されます。これにより、Microsoft 365 環境に追加の機能が提供されます。 このセクションのリソースでは、これらの機能とその使用方法について詳しく説明します。
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
@@ -109,7 +109,7 @@ SharePoint Syntex ライセンスでは、ユーザーにプレミアム コン�
 
 ## <a name="extensibility"></a>拡張性
 
-REST API を使用して、ドキュメント理解モデルを作成し、1 つ以上のライブラリにモデルを適用または削除し、モデルに関する情報を取得または更新します。
+REST API を使用して、ドキュメント理解モデルを作成し、モデルを 1 つ以上のライブラリに適用または削除し、モデルに関する情報を取得または更新します。
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|

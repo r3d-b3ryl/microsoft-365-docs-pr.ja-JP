@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードでメール フロー マップを使用して、コネクタを使用してコネクタを使用せずに組織と組織間のメール フローを視覚化および追跡する方法について学習できます。
+description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードでメール フロー マップを使用して、コネクタを使用せずに組織との間のメール フローを視覚化し、追跡する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: bd8df34c9484b7a2b8aa2bdd57d160e22f71d247
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64473807"
 ---
-# <a name="mail-flow-map-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターのメール フロー &マップ
+# <a name="mail-flow-map-in-the-security--compliance-center"></a>セキュリティ & コンプライアンス センターのメール フロー マップ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -31,52 +31,52 @@ ms.locfileid: "64473807"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-セキュリティ **コンプライアンス センターの** [メール [](mail-flow-insights-v2.md) フロー] ダッシュボード&メール [](https://protection.office.com) フロー マップは、組織のメールフローに関する分析情報を提供します。 この情報を使用して、パターンの学習、異常の特定、発生した問題の修正を行います。
+[セキュリティ & コンプライアンス センター](https://protection.office.com)の [[メール フロー] ダッシュボード](mail-flow-insights-v2.md)の [メール **フロー] マップ** は、メールが組織を通過する方法に関する分析情報を提供します。 この情報を使用して、パターンを学習し、異常を特定し、発生した問題を修正することができます。
 
-:::image type="content" source="../../media/mfi-mail-flow-map-widget.png" alt-text="セキュリティ センター コンプライアンス センターのメール フロー ダッシュボードのメール フロー マップ &ウィジェット" lightbox="../../media/mfi-mail-flow-map-widget.png":::
+:::image type="content" source="../../media/mfi-mail-flow-map-widget.png" alt-text="セキュリティ & コンプライアンス センターの [メール フロー] ダッシュボードの [メール フロー マップ] ウィジェット" lightbox="../../media/mfi-mail-flow-map-widget.png":::
 
-既定では、ウィジェットには、サンキー図と呼ばれるグラフに、前の日のメール フロー *パターンが表示* されます。 左矢印左矢印を ![使用できます。](../../media/scc-left-arrow.png) 右矢印 右 ![矢印を使用](../../media/scc-right-arrow.png) して、異なる日の情報を表示します。 各異なる色は、異なる受信コネクタまたは送信コネクタ (またはコネクタを使用しない) 上のメール フローを表します。 特定の色にカーソルを合わせると、その種類のコネクタのメッセージ数が表示されます。
+既定では、ウィジェットは前日のメール フロー パターンを *Sankey* ダイアグラムと呼ばれるグラフに表示します。 左矢印の左方向 ![を使用できます。](../../media/scc-left-arrow.png) 異なる日の情報を表示するには、右方向矢印と右方向キー ![を押](../../media/scc-right-arrow.png) します。 それぞれの異なる色は、異なる受信コネクタまたは送信コネクタ (またはコネクタを使用しない) 経由のメール フローを表します。 特定の色の上にマウス ポインターを置くと、その種類のコネクタに対するメッセージの数が表示されます。
 
 ## <a name="report-view-for-the-mail-flow-map"></a>メール フロー マップのレポート ビュー
 
-メール フロー マップ **ウィジェットをクリックすると** 、メール フロー マップ **レポートにアクセス** できます。
+**[メール フロー マップ**] ウィジェットをクリックすると、[**メール フロー マップ**] レポートに移動します。
 
 レポート ビューでは、次のグラフを使用できます。
 
-- **[データの表示: 概要**]: これは基本的にウィジェットのより大きなビューです。 特定の色にカーソルを合わせると、その種類のコネクタのメッセージ数が表示されます。
+- **データの表示: 概要**: これは基本的にウィジェットの大きなビューです。 特定の色の上にマウス ポインターを置くと、その種類のコネクタに対するメッセージの数が表示されます。
 
-    :::image type="content" source="../../media/mfi-mail-flow-map-report-overview.png" alt-text="メール フロー マップ レポートの概要ビュー" lightbox="../../media/mfi-mail-flow-map-report-overview.png":::
+    :::image type="content" source="../../media/mfi-mail-flow-map-report-overview.png" alt-text="メール フロー マップ レポートの [概要] ビュー" lightbox="../../media/mfi-mail-flow-map-report-overview.png":::
 
-- **データの表示: 詳細**: このビューには、コネクタと宛先ドメインに関する詳細が表示されます。 上位の送信者と受信者のドメインが一覧表示され、残りは [その他] に設定 **されます**。 特定の色とセクションにカーソルを合わせると、メッセージの数が表示されます。
+- **データの表示: 詳細**: このビューには、コネクタと宛先ドメインに関する詳細が表示されます。 上位の送信者ドメインと受信者ドメインが一覧表示され、残りは **[その他]** に配置されます。 特定の色とセクションにマウス ポインターを合わせると、メッセージの数が表示されます。
 
     :::image type="content" source="../../media/mfi-mail-flow-map-report-detail.png" alt-text="メール フロー マップ レポートの詳細ビュー" lightbox="../../media/mfi-mail-flow-map-report-detail.png":::
 
-レポート ビューで **[フィルター]** をクリックすると、開始日と終了日で日付 **範囲****を指定できます**。
+レポート ビューで [**フィルター]** をクリックすると、開始日と **終了日** で **日付** 範囲を指定できます。
 
-特定の日付範囲のレポートを 1 人または複数の受信者に電子メールで送信するには、[ダウンロードの要求] **をクリックします**。
+特定の日付範囲のレポートを 1 人以上の受信者に電子メールで送信するには、[ **ダウンロードの要求**] をクリックします。
 
-メール フロー マップが利用可能な場合は、関連する分析情報がメール フロー マップの下に表示されます (たとえば、可能なメール ループ分析情報 [の修正](mfi-mail-loop-insight.md)など)。
+使用可能な場合は、関連する分析情報がメール フロー マップの下に表示されます (たとえば、[ [Fix possible mail loop insight]\(可能なメール ループ分析情報を修正する\](mfi-mail-loop-insight.md))
 
 ## <a name="details-table-view-for-the-mail-flow-map"></a>メール フロー マップの詳細テーブル ビュー
 
-レポート ビューで **[詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
+レポート ビューで [ **詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
 
 - **Date**
 - **[カテゴリ]**
-- **コネクタ/サードパーティ のサービス プロバイダー**
-- **送信者/受信者ドメイン**
+- **コネクタ/サード パーティのサービス プロバイダー**
+- **Sender/Recipient ドメイン**
 - **メッセージ数**
 
-詳細テーブル ビューで **[フィルター** ] をクリックすると、[開始日] と [終了日] で日付 **範囲** を **指定できます**。
+詳細テーブル ビューで [**フィルター]** をクリックすると、開始日と **終了日** で **日付** 範囲を指定できます。
 
-行を選択すると、同様の詳細がフライアウトに表示されます。
+行を選択すると、同様の詳細がポップアップに表示されます。
 
-:::image type="content" source="../../media/mfi-mail-flow-map-view-details-table-details.png" alt-text="メール フロー マップの詳細テーブルからの詳細フライアウト" lightbox="../../media/mfi-mail-flow-map-view-details-table-details.png":::
+:::image type="content" source="../../media/mfi-mail-flow-map-view-details-table-details.png" alt-text="メール フロー マップの詳細テーブルからの詳細ポップアップ" lightbox="../../media/mfi-mail-flow-map-view-details-table-details.png":::
 
-特定の日付範囲のレポートを 1 人または複数の受信者に電子メールで送信するには、[ダウンロードの要求] **をクリックします**。
+特定の日付範囲のレポートを 1 人以上の受信者に電子メールで送信するには、[ **ダウンロードの要求**] をクリックします。
 
-レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
+レポート ビューに戻るには、[レポートの **表示**] をクリックします。
 
 ## <a name="see-also"></a>関連項目
 
-メール フロー ダッシュボードの他の分析情報については、「Security [& コンプライアンス センター」を参照してください](mail-flow-insights-v2.md)。
+メール フロー ダッシュボードのその他の分析情報については、 [セキュリティ & コンプライアンス センターのメール フロー分析情報に関する](mail-flow-insights-v2.md)ページを参照してください。

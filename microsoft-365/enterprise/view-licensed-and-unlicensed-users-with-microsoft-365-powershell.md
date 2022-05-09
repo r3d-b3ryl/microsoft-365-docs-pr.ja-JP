@@ -51,7 +51,7 @@ Connect-Graph -Scopes User.Read.All, Organization.Read.All
 Get-MgUserLicenseDetail -UserId "<user sign-in name (UPN)>"
 ```
 
-次に例を示します。
+例:
 
 ```powershell
 Get-MgUserLicenseDetail -UserId "belindan@litwareinc.com"

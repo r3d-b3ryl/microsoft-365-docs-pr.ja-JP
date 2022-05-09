@@ -79,7 +79,7 @@ Defender for Endpoint の API の概要については、このビデオをご�
 
      詳細については、「 [ユーザー コンテキストを使用したアクセスの取得](exposed-apis-create-app-nativeapp.md)」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint API](exposed-apis-list.md)
 - [アプリケーション コンテキストを使用してMicrosoft Defender for Endpointにアクセスする](exposed-apis-create-app-webapp.md)

@@ -37,7 +37,7 @@ summary: >
 
   詳細な手順については、「[ネットワーク アップロードを使用して PST ファイルをOffice 365にインポートする」を](use-network-upload-to-import-pst-files.md)参照してください。
 sections:
-- name: 一般
+- name: 全般
   questions:
   - question: >
       Office 365 インポート サービスでインポート ジョブを作成するにはどのようなアクセス許可が必要ですか?

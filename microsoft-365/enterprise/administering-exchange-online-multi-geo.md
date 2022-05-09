@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 ms.localizationpriority: medium
-description: PowerShell を使用して Microsoft 365 環境で Exchange Online の複数地域の設定を管理する方法について説明します。
+description: PowerShell を使用してMicrosoft 365環境で複数地域の設定Exchange Online管理する方法について説明します。
 ms.openlocfilehash: 4b0b02fa9ea974784ec93efe83520faed5fd05bd
 ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.locfileid: "65130869"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>複数地域環境での Exchange Online メールボックスの管理
 
-Microsoft 365 環境で複数地域のプロパティを表示および構成するには、Exchange Online PowerShell が必要です。 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+Microsoft 365環境で複数の geo プロパティを表示および構成するには、Exchange Online PowerShell が必要です。 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 ユーザー オブジェクトの **PreferredDataLocation** プロパティを参照するには、v1.x に [Microsoft Azure Active Directory PowerShell モジュール](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 以降が必要です。 AAD Connect 経由で AAD に同期されたユーザー オブジェクトでは、**PreferredDataLocation** 値を AAD PowerShell 経由で直接変更することはできません。 クラウド専用ユーザー オブジェクトは、AAD PowerShell 経由で変更できます。 Azure AD PowerShell に接続するには、「[PowerShell への接続](connect-to-microsoft-365-powershell.md)」を参照してください。
 
-Exchange Online の複数地域環境では、テナントに geo を追加するために手動で手順を実行する必要はありません。 複数地域が Exchange Online に対応していることを示すメッセージ センターの投稿を受け取ると、使用可能なすべての geo が準備され、使用できるように構成されます。
+複数地域環境Exchange Onlineでは、テナントに geo を追加するために手動で手順を実行する必要はありません。 複数地域がExchange Onlineの準備ができているというメッセージ センターの投稿を受け取ると、使用可能なすべての geo が準備され、使用できるように構成されます。
 
 ## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>Exchange Online PowerShell を使用して、地域の場所に直接接続する
 
@@ -33,13 +33,13 @@ Exchange Online の複数地域環境では、テナントに geo を追加す�
 
 EXO V2 モジュールをインストールして使用するための要件は、「[EXO V2 モジュールをインストールして維持する](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)」に記載されています。
 
-Exchange Online PowerShell を特定の地理的な場所に接続するには、 *ConnectionUri* パラメーターは通常の接続手順とは異なります。 残りのコマンドと値は同じです。
+PowerShell Exchange Online特定の地理的な場所に接続するには、*ConnectionUri* パラメーターは通常の接続手順とは異なります。 残りのコマンドと値は同じです。
 
-具体的には、_ConnectionUri_ 値の`?email=<emailaddress>`末尾に値を追加する必要があります。 `<emailaddress>` は、ターゲット地域の場所にある **任意** のメールボックスの電子メール アドレスです。 そのメールボックスに対するアクセス許可や資格情報との関係は考慮されません。電子メール アドレスは、単に Exchange Online PowerShell に接続場所を伝えるだけです。
+具体的には、_ConnectionUri_ 値の`?email=<emailaddress>`末尾に値を追加する必要があります。 `<emailaddress>` は、ターゲット地域の場所にある **任意** のメールボックスの電子メール アドレスです。 そのメールボックスに対するアクセス許可や資格情報との関係は考慮されません。電子メール アドレスは、接続する場所Exchange Online PowerShell に指示するだけです。
 
-通常、Microsoft 365 または Microsoft 365 GCC のお客様は、Exchange Online PowerShell に接続するために _ConnectionUri_ パラメーターを使用する必要はありません。 ただし、特定の地域の場所に接続するには、値で使用できるように _ConnectionUri_ パラメーターを使用 `?email=<emailaddress>` する必要があります。
+Microsoft 365またはMicrosoft 365 GCCのお客様は、通常、_ConnectionUri_ パラメーターを使用して PowerShell Exchange Onlineに接続する必要はありません。 ただし、特定の地域の場所に接続するには、値で使用できるように _ConnectionUri_ パラメーターを使用 `?email=<emailaddress>` する必要があります。
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Exchange Online PowerShell で地理的な場所に接続する
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Exchange Online PowerShell の地理的な場所にConnectする
 
 次の接続手順は、多要素認証 (MFA) 用に構成されているアカウントまたは未構成のアカウントに対して機能します。
 
@@ -104,7 +104,7 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
 > [!NOTE]
-> データベース名の地域の場所コードが **MailboxRegion** の値と一致しない場合、メールボックスは自動的に再配置キューに配置され、 **MailboxRegion** 値で指定された地理的な場所に移動されます (Exchange Online では、これらのプロパティ値の不一致が検索されます)。
+> データベース名の地域の場所コードが **MailboxRegion** の値と一致しない場合、メールボックスは自動的に再配置キューに配置され、**MailboxRegion** 値で指定された地理的な場所に移動されます (Exchange Online、これらのプロパティ値の不一致が検索されます)。
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>既存のクラウド専用メールボックスを特定の地域の場所に移動する
 
@@ -136,7 +136,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 > [!NOTE]
 >
-> - 前述のように、オンプレミスの Active Directory から同期されたユーザー オブジェクトに対してこの手順を使用することはできません。 Active Directory で **PreferredDataLocation** 値を変更し、それを AAD Connect を使用して同期させる必要があります。 詳細については、「[Azure Active Directory Connect 同期: Microsoft 365 リソースの優先されるデータの場所を構成する](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)」を参照してください。
+> - 前述のように、オンプレミスの Active Directoryから同期されたユーザー オブジェクトに対してこの手順を使用することはできません。 Active Directory で **PreferredDataLocation** 値を変更し、それを AAD Connect を使用して同期させる必要があります。 詳細については、「[Azure Active Directory Connect 同期: Microsoft 365 リソースの優先されるデータの場所を構成する](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)」を参照してください。
 >
 > - メールボックスを新しい地域の場所に再配置するための所要時間は次のいくつかの要素によって決まります。
 >
@@ -150,25 +150,25 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 1. 非アクティブなメールボックスを回復します。 手順については、「 [非アクティブなメールボックスを回復する」を](../compliance/recover-an-inactive-mailbox.md)参照してください。
 
-2. メールボックスの名前、エイリアス、アカウント、または電子メール アドレスに置き換え、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で次のコマンドを\<MailboxIdentity\>実行することで、マネージド フォルダー アシスタントが回復されたメールボックスを処理できないようにします。
+2. マネージド フォルダー アシスタントが回復されたメールボックスを処理できないようにするには、メールボックスの名前、エイリアス、アカウント、または電子メール アドレスに置き換え\<MailboxIdentity\>、[powerShell で](/powershell/exchange/connect-to-exchange-online-powershell)次のコマンドExchange Online実行します。
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
     ```
 
-3. 回復されたメールボックスに **Exchange Online プラン 2** ライセンスを割り当てます。 この手順は、メールボックスを訴訟ホールドに戻すために必要です。 手順については、「 [ユーザーにライセンスを割り当てる」を](../admin/manage/assign-licenses-to-users.md)参照してください。
+3. 回復されたメールボックス **にExchange Onlineプラン 2** ライセンスを割り当てます。 この手順は、メールボックスを訴訟ホールドに戻すために必要です。 手順については、「 [ユーザーにライセンスを割り当てる」を](../admin/manage/assign-licenses-to-users.md)参照してください。
 
 4. 前のセクションで説明したように、メールボックスの **PreferredDataLocation** 値を構成します。
 
 5. メールボックスが新しい地域の場所に移動したことを確認したら、回復したメールボックスを訴訟ホールドに戻します。 手順については、「 [訴訟ホールドにメールボックスを配置する](../compliance/create-a-litigation-hold.md#place-a-mailbox-on-litigation-hold)」を参照してください。
 
-6. 訴訟ホールドが実施されていることを確認したら、管理フォルダー アシスタントがメールボックスの名前、エイリアス、アカウント、または電子メール アドレスに置き換え \<MailboxIdentity\> 、 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で次のコマンドを実行して、メールボックスを再度処理できるようにします。
+6. 訴訟ホールドが実施されていることを確認したら、マネージド フォルダー アシスタントがメールボックスの名前、エイリアス、アカウント、または電子メール アドレスに置き換え\<MailboxIdentity\>、[PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で次のコマンドを実行して、メールボックスを再度処理Exchange Online許可します。
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
     ```
 
-7. メールボックスに関連付けられているユーザー アカウントを削除して、メールボックスを再度非アクティブにします。 手順については、「 [組織からユーザーを削除する](../admin/add-users/delete-a-user.md)」を参照してください。 また、この手順では、他の用途向けに Exchange Online プラン 2 ライセンスもリリースされます。
+7. メールボックスに関連付けられているユーザー アカウントを削除して、メールボックスを再度非アクティブにします。 手順については、「 [組織からユーザーを削除する](../admin/add-users/delete-a-user.md)」を参照してください。 この手順では、他の用途にExchange Onlineプラン 2 ライセンスもリリースされます。
 
 **注**: 非アクティブなメールボックスを別の地域の場所に移動すると、コンテンツの検索結果や、以前の地域の場所からメールボックスを検索する機能に影響を与える可能性があります。 詳細については、「 [複数地域環境でのコンテンツの検索とエクスポート」を参照してください](../compliance/set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments)。
 
@@ -176,7 +176,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 特定の地域の場所に新しいメールボックスを作成するには、以下の手順のいずれかを実行する必要があります。
 
-- Exchange Online でメールボックスを作成する *前* に、既存の [クラウド専用メールボックスを特定の地理的な場所に移動する](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location)セクションで説明したように **、PreferredDataLocation** 値を構成します。 たとえば、ライセンスを割り当てる前に、ユーザーに **PreferredDataLocation** 値を構成します。
+- Exchange Onlineでメールボックスを作成する *前* に、既存の [クラウド専用メールボックスを特定の地理的な場所に移動する](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location)セクションで説明したように **、PreferredDataLocation** 値を構成します。 たとえば、ライセンスを割り当てる前に、ユーザーに **PreferredDataLocation** 値を構成します。
 
 - **PreferredDataLocation** 値の設定と同時にライセンスを割り当てます。
 

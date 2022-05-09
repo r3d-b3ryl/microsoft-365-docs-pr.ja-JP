@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint のプレビュー エクスペリエンスを有効にする
-description: Microsoft Defender for Endpoint のプレビュー エクスペリエンスをオンにし、今後の機能を試します。
+title: Microsoft Defender for Endpointでプレビュー エクスペリエンスを有効にする
+description: Microsoft Defender for Endpointでプレビュー エクスペリエンスを有効にして、今後の機能を試します。
 keywords: 高度な機能、設定、ブロック ファイル
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64467293"
 ---
-# <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のプレビュー エクスペリエンスを有効にする
+# <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでプレビュー エクスペリエンスを有効にする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,16 +37,16 @@ ms.locfileid: "64467293"
 
 プレビュー機能設定をオンにして、今後の機能をいち早く試します。
 
-1. ナビゲーション ウィンドウで、[エンドポイント **の詳細設定設定** \> **選択** \> **します**。
+1. ナビゲーション ウィンドウで、[**エンドポイント** \> **の高度な機能****設定**\>選択します。
 
     :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="設定とプレビューエクスペリエンス" lightbox="../../media/atp-preview-features-new.png":::
 
 
-2. [オン] と [オフ] **の間で設定を****切り替え**、[基本設定 **の保存] を選択します**。
+2. **[オン**] と [**オフ]** の設定を切り替えて、[**保存] を** 選択します。
 
 ## <a name="related-topics"></a>関連項目
-- [Microsoft Defender for Endpoint の一般的な設定を更新する](data-retention-settings.md)
-- [Microsoft Defender for Endpoint の高度な機能を有効にする](advanced-features.md)
-- [Microsoft Defender for Endpoint で電子メール通知を構成する](configure-email-notifications.md)
+- [Microsoft Defender for Endpointの全般設定を更新する](data-retention-settings.md)
+- [Microsoft Defender for Endpointで高度な機能を有効にする](advanced-features.md)
+- [Microsoft Defender for Endpointで電子メール通知を構成する](configure-email-notifications.md)
 
 

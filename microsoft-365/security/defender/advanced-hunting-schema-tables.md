@@ -1,7 +1,7 @@
 ---
-title: 高度な検索スキーマMicrosoft 365 Defenderデータ テーブル
+title: Microsoft 365 Defender高度なハンティング スキーマのデータ テーブル
 description: 高度な捜索スキーマのテーブルについて学習し、脅威の捜索クエリを実行できるデータを理解します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、data
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, データ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,31 +35,31 @@ ms.locfileid: "63755536"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-高度 [な検索スキーマ](advanced-hunting-overview.md) は、イベント情報またはデバイス、アラート、ID、その他のエンティティの種類に関する情報を提供する複数のテーブルで構成されます。 複数のテーブルにまたがるクエリを効果的にビルドするには、高度な追求スキーマのテーブルと列を理解する必要があります。
+[高度なハンティング](advanced-hunting-overview.md) スキーマは、イベント情報またはデバイス、アラート、ID、およびその他のエンティティの種類に関する情報を提供する複数のテーブルで構成されています。 複数のテーブルにまたがるクエリを効果的にビルドするには、高度な追求スキーマのテーブルと列を理解する必要があります。
 
 <a name="get-schema-information-in-the-security-center"></a>
 
-## <a name="get-schema-information"></a>スキーマ情報の取得
+## <a name="get-schema-information"></a>スキーマ情報を取得する
 
-クエリを作成する場合は、組み込みのスキーマ参照を使用して、スキーマ内の各テーブルに関する次の情報をすばやく取得します。
+クエリを作成するときに、組み込みのスキーマ参照を使用して、スキーマ内の各テーブルに関する次の情報をすばやく取得します。
 
-- **テーブルの** 説明- テーブルに含まれるデータの種類と、そのデータのソース。
-- **列**- テーブル内のすべての列。
-- **アクションの** 種類- テーブルでサポート `ActionType` されるイベントの種類を表す列の可能な値。 この情報は、イベント情報を含むテーブルに対してのみ提供されます。
-- **サンプル クエリ**: テーブルの利用方法を特徴付けするクエリの例。
+- **テーブルの説明 - テーブル** に含まれるデータの種類とそのデータのソース。
+- **列** - テーブル内のすべての列。
+- **アクションの種類** - テーブルで `ActionType` サポートされているイベントの種類を表す列で使用できる値。 この情報は、イベント情報を含むテーブルに対してのみ提供されます。
+- **サンプル クエリ** - テーブルの使用方法を特徴とするクエリの例。
 
-### <a name="access-the-schema-reference"></a>スキーマ参照へのアクセス
-スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある [参照の表示] アクションを選択します。 [スキーマ参照] **を選択して** テーブルを検索することもできます。
+### <a name="access-the-schema-reference"></a>スキーマリファレンスにアクセスする
+スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある **[参照の表示** ] アクションを選択します。 [ **スキーマ参照** ] を選択してテーブルを検索することもできます。
 
-:::image type="content" source="../../media/understand-schema-1.png" alt-text="ポータルの [高度な検索] ページの [スキーマ参照Microsoft 365 Defenderページ" lightbox="../../media/understand-schema-1.png":::
+:::image type="content" source="../../media/understand-schema-1.png" alt-text="Microsoft 365 Defender ポータルの [高度な検索] ページの [スキーマ参照] ページ" lightbox="../../media/understand-schema-1.png":::
 
-## <a name="learn-the-schema-tables"></a>スキーマ テーブルの詳細
-次の参照は、スキーマ内のすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。 テーブル名と列名は、高度な検索画面のスキーマ表現の一部として Defender for Cloud にも表示されます。
+## <a name="learn-the-schema-tables"></a>スキーマ テーブルについて学習する
+次の参照は、スキーマ内のすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。 テーブル名と列名は、高度なハンティング画面のスキーマ表現の一部としてDefender for Cloudにも一覧表示されます。
 
 | テーブル名 | 説明 |
 |------------|-------------|
-| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | アラートに関連付けられたファイル、IP アドレス、URL、ユーザー、またはデバイス |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps、Microsoft Defender for Identity からのアラート (重大度情報と脅威の分類を含む)  |
+| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | アラートに関連付けられているファイル、IP アドレス、URL、ユーザー、またはデバイス |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps、Microsoft Defender for Identityからのアラート重大度情報と脅威の分類を含む  |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Office 365 およびその他のクラウド アプリとサービスのアカウントとオブジェクトに関連するイベント |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Windows Defender ウイルス対策や Exploit Protection などのセキュリティ制御によりトリガーされたイベントを含むさまざまな種類のイベント |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | エンドポイント上の証明書検証イベントから取得した署名済みファイルの証明書情報 |

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint でセンサーの正常性状態を確認する
-description: デバイスのセンサーの正常性を確認して、構成が誤っている、非アクティブである、またはセンサー データを報告していないデバイスを特定します。
-keywords: センサー、センサーの正常性、構成ミス、非アクティブ、センサー データなし、センサー データ、通信障害、通信障害
+title: Microsoft Defender for Endpointでセンサーの正常性状態を確認する
+description: デバイスのセンサーの正常性を確認して、構成が誤っているか、非アクティブであるか、またはセンサー データが報告されていないかを特定します。
+keywords: センサー, センサーの正常性, 不適切な構成, 非アクティブ, センサー データなし, センサー データ, 通信障害, 通信
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64465474"
 ---
-# <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でセンサーの正常性状態を確認する
+# <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでセンサーの正常性状態を確認する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,37 +33,37 @@ ms.locfileid: "64465474"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
 
-[ **センサーの問題があるデバイス] タイル** は、[セキュリティ操作] ダッシュボードに表示されます。 このタイルは、センサー データを提供し、Defender for Endpoint サービスと通信する個々のデバイスの機能に関する情報を提供します。 注意が必要なデバイスの数が報告され、問題のあるデバイスを特定し、既知の問題を修正するためのアクションを取るのに役立ちます。
+**[センサーの問題があるデバイス]** タイルは、[セキュリティ操作] ダッシュボードにあります。 このタイルは、センサー データを提供し、Defender for Endpoint サービスと通信する個々のデバイスの機能に関する情報を提供します。 注意が必要なデバイスの数が報告され、問題のあるデバイスを特定し、既知の問題を修正するためのアクションを取るのに役立ちます。
 
-タイルには、サービスに適切に報告されていないデバイスの数に関する情報を提供する 2 つの状態インジケーターがあります。
+タイルには、サービスに正しく報告されていないデバイスの数に関する情報を提供する状態インジケーターが 2 つあります。
 
-- **正しく構成されていない** - これらのデバイスは、センサー データを部分的に Defender for Endpoint サービスに報告している可能性があります。また、修正が必要な構成エラーが発生している可能性があります。
-- **非** アクティブ - 過去 1 か月で 7 日間以上 Defender for Endpoint サービスへの報告を停止したデバイス。
+- **正しく構成されていない** - これらのデバイスは、部分的に Defender for Endpoint サービスにセンサー データを報告している可能性があり、修正する必要がある構成エラーが発生する可能性があります。
+- **非アクティブ** - 過去 1 か月に 7 日間以上 Defender for Endpoint サービスへのレポートを停止したデバイス。
 
-グループをクリックすると、[デバイス] リストが表示され、選択に従ってフィルター処理されます。
+任意のグループをクリックすると、[ **デバイス] の一覧** が表示され、選択した内容に従ってフィルター処理されます。
 
-:::image type="content" source="images/atp-devices-with-sensor-issues-tile.png" alt-text="センサーの問題のタイルを持つデバイス" lightbox="images/atp-devices-with-sensor-issues-tile.png":::
+:::image type="content" source="images/atp-devices-with-sensor-issues-tile.png" alt-text="[センサーの問題があるデバイス] タイル" lightbox="images/atp-devices-with-sensor-issues-tile.png":::
 
-[ **デバイス] リスト** で、正常性状態リストを次の状態でフィルター処理できます。
+**[デバイス] の一覧** では、次の状態で正常性状態の一覧をフィルター処理できます。
 
-- **Active** - Defender for Endpoint サービスに対してアクティブにレポートしているデバイス。
-- **正しく構成されていない** - これらのデバイスは、センサー データを部分的に Defender for Endpoint サービスに報告している可能性がありますが、修正する必要がある構成エラーがあります。 間違って構成されたデバイスには、次のような問題のいずれかまたは組み合わせがあります。
+- **アクティブ** - Defender for Endpoint サービスにアクティブに報告しているデバイス。
+- **正しく構成されていない** - これらのデバイスは、部分的に Defender for Endpoint サービスにセンサー データを報告している可能性がありますが、修正する必要がある構成エラーがあります。 間違って構成されたデバイスには、次のような問題のいずれかまたは組み合わせがあります。
   - **センサー データなし** - デバイスがセンサー データの送信を停止しました。 制限のあるアラートをデバイスでトリガーすることができます。
-  - **通信障害** - デバイスと通信する機能が損なわれる。 詳細分析のためのファイルの送信、ファイルのブロック、ネットワークからのデバイスの分離など、デバイスとの通信を必要とするアクションが機能しない場合があります。
-- **非** アクティブ - Defender for Endpoint サービスへのレポートを停止したデバイス。
+  - **通信の障害** - デバイスと通信する機能が損なわれます。 詳細分析のためのファイルの送信、ファイルのブロック、ネットワークからのデバイスの分離など、デバイスとの通信を必要とするアクションが機能しない場合があります。
+- **非アクティブ** - Defender for Endpoint サービスへのレポートを停止したデバイス。
 
-エクスポート機能を使用して、リスト全体を CSV 形式で **ダウンロード** できます。 フィルターの詳細については、「デバイスリストの [表示と整理」を参照してください](machines-view-overview.md)。
+**エクスポート** 機能を使用して、リスト全体を CSV 形式でダウンロードすることもできます。 フィルターの詳細については、「 [デバイスの一覧を表示して整理する」を参照してください](machines-view-overview.md)。
 
 > [!NOTE]
-> リストを CSV 形式でエクスポートして、フィルター処理されていないデータを表示します。 CSV ファイルには、ビュー自体に適用されるフィルター処理に関係なく、組織内のすべてのデバイスが含まれます。組織の規模によっては、ダウンロードにかなりの時間がかかる場合があります。
+> リストを CSV 形式でエクスポートして、フィルター処理されていないデータを表示します。 CSV ファイルには、ビュー自体に適用されるフィルターに関係なく、組織内のすべてのデバイスが含まれ、組織の規模によっては、ダウンロードにかなりの時間がかかる場合があります。
 
 :::image type="content" source="images/atp-devices-list-page.png" alt-text="[デバイス] リスト ページの [エクスポート] タブ" lightbox="images/atp-devices-list-page.png":::
 
-構成が正しく設定されていないデバイスまたは非アクティブなデバイスをクリックすると、デバイスの詳細を表示できます。
+正しく構成されていないデバイスまたは非アクティブなデバイスをクリックすると、デバイスの詳細を表示できます。
 
 ## <a name="see-also"></a>関連項目
 
-- [Defender for Endpoint で不健康なセンサーを修正する](fix-unhealthy-sensors.md)
+- [Defender for Endpoint の異常なセンサーを修正する](fix-unhealthy-sensors.md)
 - [クライアント アナライザーの概要](overview-client-analyzer.md)
 - [クライアント アナライザーのダウンロードと実行](download-client-analyzer.md)
 - [Windows でのクライアント アナライザーの実行](run-analyzer-windows.md)

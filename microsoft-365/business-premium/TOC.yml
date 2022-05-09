@@ -100,7 +100,7 @@
       href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: デバイスを工場出荷時の設定にリセットする
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: リファレンス
+- name: 参照
   items:
     - name: 用語集
       href: m365bp-glossary.md

@@ -1,5 +1,5 @@
 ---
-title: ゲストが特定のグループに追加されるのを防ぐ
+title: ゲストが特定のグループに追加されないようにする
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -15,7 +15,7 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: 特定のグループにゲストが追加されるのを防ぐ方法について説明します。
+description: ゲストが特定のグループに追加されないようにする方法について説明します
 ms.openlocfilehash: 4b9ebc6366934db52c30d51091ac9991ff82d8c3
 ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
@@ -23,17 +23,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/31/2022
 ms.locfileid: "64570065"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>ゲストが特定のグループまたはチームにMicrosoft 365されるMicrosoft Teamsする
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>ゲストが特定のMicrosoft 365 グループまたはMicrosoft Teams チームに追加されないようにする
 
-ほとんどのグループとチームへのゲスト アクセスを許可するが、ゲスト アクセスを防止する場所がある場合は、個々のグループとチームのゲスト アクセスをブロックできます。 (チームへのゲスト アクセスをブロックするには、関連付けられたグループへのゲスト アクセスをブロックします)。これにより、新しいゲストが追加されるのを防ぎ、グループまたはチームに既に存在するゲストは削除されません。
+ほとんどのグループとチームへのゲスト アクセスを許可するが、ゲスト アクセスを禁止する場所がある場合は、個々のグループとチームのゲスト アクセスをブロックできます。 (チームへのゲスト アクセスのブロックは、関連付けられているグループへのゲスト アクセスをブロックすることによって行われます)。これにより、新しいゲストが追加されるのを防ぎますが、グループまたはチームに既に参加しているゲストは削除されません。
 
-組織内で感度ラベルを使用する場合は、グループごとにゲスト アクセスを制御するために使用することをお勧めします。 これを行う方法の詳細については、「感度ラベルを使用して、Microsoft Teams、Microsoft 365、SharePointサイトのコンテンツ[を保護します](../compliance/sensitivity-labels-teams-groups-sites.md)。 これが推奨アプローチです。
+組織内で秘密度ラベルを使用する場合は、それらを使用してグループごとにゲスト アクセスを制御することをお勧めします。 これを行う方法については、[秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、およびSharePoint サイトのコンテンツを保護](../compliance/sensitivity-labels-teams-groups-sites.md)します。 これが推奨アプローチです。
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Microsoft PowerShell を使用してグループ設定を変更する
 
-PowerShell を使用して、個々のグループに新しいゲストを追加することはできません。 (チームに関連付けられているサイトSharePointゲスト共有[コントロールが別々に用意されています](/sharepoint/change-external-sharing-site)。
+PowerShell を使用して、個々のグループに新しいゲストが追加されないようにすることもできます。 (チームに関連付けられているSharePoint サイトには[、個別のゲスト共有コントロール](/sharepoint/change-external-sharing-site)があることを忘れないでください)。
 
-グループ レベルのゲスト アクセス設定を変更するには、Azure Active Directory [PowerShell](/powershell/azure/active-directory/install-adv2) のプレビュー バージョン (**モジュールGraph AzureADPreview**) を使用する必要があります。
+Azure Active Directory [PowerShell for Graph](/powershell/azure/active-directory/install-adv2)のプレビュー バージョン (モジュール名 **AzureADPreview**) を使用して、グループ レベルのゲスト アクセス設定を変更する必要があります。
 
 - 以前に Azure AD PowerShell モジュールのいかなるバージョンもインストールしたことがない場合には、「[Azure AD モジュールのインストール](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)」を参照し、指示に従ってパブリック プレビュー リリースをインストールしてください。
 
@@ -68,7 +68,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
     
 ![ゲスト グループのアクセスが False に設定されていることを示す PowerShell ウィンドウのスクリーンショット。](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
 
-設定を切り ```<GroupName>``` 替えて、特定のグループへのゲスト アクセスを許可する場合は、次のスクリプトを実行し、ゲスト アクセスを許可するグループの名前に変更します。
+設定を切り替えて特定のグループへのゲスト アクセスを許可する場合は、次のスクリプトを実行し、ゲスト アクセスを許可するグループの名前に変更 ```<GroupName>``` します。
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -85,7 +85,7 @@ Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectoryS
 
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>ゲストのドメインに応じてゲスト アクセスを許可またはブロックする
 
-特定のドメインを使用しているゲストを許可またはブロックできます。 たとえば、ビジネス (Contoso) が別のビジネス (Fabrikam) と提携している場合は、Fabrikam を許可リストに追加して、ユーザーがそれらのゲストをグループに追加できます。
+特定のドメインを使用しているゲストを許可またはブロックできます。 たとえば、ビジネス (Contoso) が別のビジネス (Fabrikam) とパートナーシップを結ぶ場合、ユーザーがそれらのゲストをグループに追加できるように、Fabrikam を許可リストに追加できます。
 
 詳細については、「[B2B ユーザーに対する特定組織からの招待を許可またはブロックする](/azure/active-directory/b2b/allow-deny-list)」を参照してください。
 
@@ -93,7 +93,7 @@ Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectoryS
 
 既定では、ゲストは Exchange グローバル アドレス一覧に表示されません。 グローバル アドレス一覧にゲストを表示するには、次の手順を使用します。
 
-次のコマンドを実行して、ゲストの ObjectID を検索します。
+次を実行して、ゲストの ObjectID を見つけます。
 
 ```PowerShell
 Get-AzureADUser -Filter "userType eq 'Guest'"

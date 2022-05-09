@@ -36,7 +36,7 @@ Bookings には、主に 3 つのコンポーネントがあります。
 
 - 会社用モバイル アプリを使用して、Bookings カレンダーの所有者や管理者は全予約の閲覧、顧客リストと連絡先情報へのアクセス、外出先での手動予約を行うことができます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 Microsoft Bookingsは、次のサブスクリプションで使用できます。
 

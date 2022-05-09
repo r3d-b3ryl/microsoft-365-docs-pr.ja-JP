@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange管理者が組織のメールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。
+description: Exchangeオンライン管理者は、組織の電子メールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。
 ms.openlocfilehash: f046d9d85c677d0793d2b991736185b49f4174e9
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
@@ -31,9 +31,9 @@ ms.locfileid: "63315331"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 
-管理者の管理に役立Microsoft 365、管理者センターから組織[](assign-admin-roles.md)のメールとメールボックスを管理するためのアクセス許可をユーザー<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">に割り当Exchangeできます</a>。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
+Microsoft 365を管理するために、Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>から組織のメールとメールボックスを管理するためのアクセス許可をユーザーに[割り当てることができます](assign-admin-roles.md)。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
   
- **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 この方法では、Microsoft 365 管理センター サービスの正常性、変更とリリースの通知など、Exchange Onlineに重要な情報を表示できます。
+ **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 これにより、Exchange Online サービスの正常性や変更通知やリリース通知など、Microsoft 365 管理センターの重要な情報を確認できます。
 
 Exchange 管理者の役割を割り当てられた場合にユーザーが実行できる重要なタスクのいくつかを次に説明します。
   
@@ -43,11 +43,11 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
 
 - メールボックスの機能をセットアップします。たとえば、メールボックス共有ポリシーを設定すると、ユーザーが予定表や連絡先の情報を組織外の人とどのように共有できるかを指定できます。
 
-- ユーザーのメールボックスの "[Send as](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)[" 代理人と](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user) "代理送信" 代理人を設定します。 たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。
+- 他のユーザーのメールボックスに対して "[Send as](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" と "[Send on behalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" デリゲートを設定します。 たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。
 
-- [共有メールボックスを作成して](../email/create-a-shared-mailbox.md) 、ユーザーのグループが共通のメール アドレスからメールを監視および送信できます。
+- [共有メールボックスを作成](../email/create-a-shared-mailbox.md) して、ユーザーのグループが共通の電子メール アドレスからメールを監視および送信できるようにします。
 
-- [組織のスパム対策と](../../security/office-365-security/anti-spam-protection.md) マルウェア フィルターを電子メールで送信します。
+- 組織[の電子メールスパム対策保護](../../security/office-365-security/anti-spam-protection.md)とマルウェア フィルター。
 
 - Microsoft 365 グループを管理する
 
@@ -57,7 +57,7 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
   
  たとえば、証拠開示管理という役割グループに割り当てられたユーザーは、メールボックスの検索を実行して条件に一致するデータを得ることができます。詳細については、「 [Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」と「[役割グループの管理](/exchange/manage-role-groups-exchange-2013-help)」を参照してください。
   
-## <a name="learn-about-other-admin-roles"></a>他の管理者ロールの詳細
+## <a name="learn-about-other-admin-roles"></a>その他の管理者ロールについて学習する
 
 - [Microsoft 365 管理者ロールについて](about-admin-roles.md)
 
@@ -65,4 +65,4 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
 
 - [Skype for Business 管理者の役割について](/skypeforbusiness/skype-for-business-online)
 
-- [管理者Microsoft Teamsを使用する](/MicrosoftTeams/using-admin-roles)
+- [管理者ロールMicrosoft Teams使用する](/MicrosoftTeams/using-admin-roles)

@@ -15,7 +15,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、スパム対策ポリシー (EOP) で使用できる高度なスパム フィルター (ASF) Exchange Online Protectionできます。
+description: 管理者は、Exchange Online Protection (EOP) のスパム対策ポリシーで使用できる高度なスパム フィルター (ASF) 設定について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 6a34507866be90a197fcbed7bd1038cbcec61c84
@@ -34,66 +34,66 @@ ms.locfileid: "63682309"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-すべての組織Microsoft 365、EOP のスパム対策ポリシーの高度なスパム フィルター (ASF) 設定を使用すると、管理者は特定のメッセージ プロパティに基づいてメッセージをスパムとしてマークできます。 ASF は、スパムでよく見つかるので、これらのプロパティを具体的に対象とします。 プロパティに応じて、ASF 検出によってメッセージがスパムまたは高信頼 **スパム****としてマークされます**。
+すべてのMicrosoft 365組織で、EOP のスパム対策ポリシーの高度なスパム フィルター (ASF) 設定により、管理者は特定のメッセージ プロパティに基づいてメッセージをスパムとしてマークできます。 ASF は、スパムでよく見つかるため、これらのプロパティを具体的に対象とします。 プロパティに応じて、ASF 検出によってメッセージが **スパム** または **高信頼スパム** としてマークされます。
 
 > [!NOTE]
-> 1 つ以上の ASF 設定を有効にすることで、スパム フィルター処理を積極的に行います。 ASF でフィルター処理されたメッセージを誤検知として報告できない。 ASF でフィルター処理されたメッセージは、次の方法で識別できます。
+> ASF 設定の 1 つ以上を有効にすることは、スパム フィルター処理に対する積極的なアプローチです。 ASF でフィルター処理されたメッセージを誤検知として報告することはできません。 ASF によってフィルター処理されたメッセージは、次の方法で識別できます。
 >
-> - スパムと信頼性の高いスパム フィルターの評決からの定期的な検疫通知。
-> - 検疫でフィルター処理されたメッセージの存在。
-> - この記事 `X-CustomSpam:` の説明に従ってメッセージに追加される特定の X ヘッダー フィールド。
+> - スパムと信頼度の高いスパム フィルターの判定からの定期的な検疫通知。
+> - 検疫にフィルター処理されたメッセージが存在する。
+> - この記事で説明されているように、メッセージに追加される特定 `X-CustomSpam:` の X ヘッダー フィールド。
 
-以下のセクションでは、Microsoft 365 Defender ポータルおよび Exchange Online PowerShell またはスタンドアロン EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) および [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)) でスパム対策ポリシーで使用できる ASF 設定とオプションについて説明します。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+次のセクションでは、Microsoft 365 Defender ポータルのスパム対策ポリシー、およびExchange Online PowerShell またはスタンドアロン EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) および [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)) で使用できる ASF の設定とオプションについて説明します。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ## <a name="enable-disable-or-test-asf-settings"></a>ASF 設定を有効、無効、またはテストする
 
 ASF 設定ごとに、スパム対策ポリシーで次のオプションを使用できます。
 
-- **On**: ASF は、対応する X ヘッダー フィールドをメッセージに追加し、メッセージを **スパム (** SCL 5 または 6 のスパム スコア設定の [増加) または](#increase-spam-score-settings)高信頼 **スパム (** SCL 9 for [Mark](#mark-as-spam-settings) as spam settings) としてマークします。
-- **オフ**: ASF 設定は無効です。 これは既定値であり、変更は行なう必要があります。
-- **テスト**: ASF は、対応する X ヘッダー フィールドをメッセージに追加します。 メッセージに何が起こるかは、テスト **モード (***TestModeAction) の値によって* 決まります。
-  - **なし**: メッセージの配信は、ASF 検出の影響を受けません。 メッセージは、EOP の他の種類のフィルター処理とルールの対象です。
-  - **既定の X ヘッダー テキスト (*AddXHeader*)** を追加する: X ヘッダー `X-CustomSpam: This message was filtered by the custom spam filter option` 値がメッセージに追加されます。 受信トレイ ルールまたはメール フロー ルール (トランスポート ルールとも呼ばれる) でこの値を使用すると、メッセージの配信に影響を与える可能性があります。
-  - **Bcc メッセージの送信 (*BccMessage*)**: 指定した電子メール アドレス ( *PowerShell の TestModeBccToRecipients* パラメーター値) がメッセージの Bcc フィールドに追加され、メッセージは追加の BCC 受信者に配信されます。 このポータルMicrosoft 365 Defender、複数の電子メール アドレスをセミコロン (;)) で区切ります。 PowerShell では、複数の電子メール アドレスをコンマで区切ります。
+- **オン**: ASF は、対応する X ヘッダー フィールドをメッセージに追加し、メッセージをスパム ( **スパム** [スコア](#increase-spam-score-settings)設定を増やすには SCL 5 または 6) または **高信頼スパム** (スパムとしてマーク設定の SCL 9) [としてマークします](#mark-as-spam-settings)。
+- **オフ**: ASF 設定が無効です。 これは既定値であり、変更しないことをお勧めします。
+- **テスト**: ASF は、対応する X ヘッダー フィールドをメッセージに追加します。 メッセージの動作は、 **テスト モード** (*TestModeAction*) 値によって決まります。
+  - **なし**: メッセージ配信は ASF 検出の影響を受けません。 このメッセージは、EOP の他の種類のフィルター処理とルールの対象となります。
+  - **既定の X ヘッダー テキスト (*AddXHeader*) の追加**: X ヘッダー値 `X-CustomSpam: This message was filtered by the custom spam filter option` がメッセージに追加されます。 受信トレイ ルールまたはメール フロー ルール (トランスポート ルールとも呼ばれます) でこの値を使用して、メッセージの配信に影響を与えることができます。
+  - **Bcc メッセージの送信 (*BccMessage*)**: 指定した電子メール アドレス (PowerShell の *TestModeBccToRecipients* パラメーター値) がメッセージの Bcc フィールドに追加され、メッセージは追加の Bcc 受信者に配信されます。 Microsoft 365 Defender ポータルでは、複数のメール アドレスをセミコロン (;)で区切ります。 PowerShell では、複数の電子メール アドレスをコンマで区切ります。
 
   **注意**:
 
   - テスト モードは、次の ASF 設定では使用できません。
-    - **条件付き送信者 ID フィルター: ハード失敗** (*MarkAsSpamFromAddressAuthFail*)
-    - **NDR backscatter**(*MarkAsSpamNdrBackscatter*)
-    - **SPF レコード: ハードフェール** (*MarkAsSpamSpfRecordHardFail*)
-  - 同じテスト モード アクションが、Test に設定 *されている* すべての ASF 設定に適用 **されます**。 ASF 設定ごとに異なるテスト モードアクションを構成できません。
+    - **条件付き送信者 ID のフィルター処理: ハード エラー** (*MarkAsSpamFromAddressAuthFail*)
+    - **NDR バックスキャッター**(*MarkAsSpamNdrBackscatter*)
+    - **SPF レコード: ハード エラー** (*MarkAsSpamSpfRecordHardFail*)
+  - 同じテスト モードアクションが、[**テスト**] に設定 *されているすべての* ASF 設定に適用されます。 ASF 設定ごとに異なるテスト モードアクションを構成することはできません。
 
 ## <a name="increase-spam-score-settings"></a>スパム スコアの設定を増やす
 
-次の **[スパム** スコアの向上] ASF 設定では、検出されたメッセージのスパム信頼レベル (SCL) を 5 または 6 に設定します。これはスパム フィルターの評決とスパム対策ポリシーの対応するアクションに対応します。
+次の **スパム スコア ASF の増加** 設定では、検出されたメッセージのスパム信頼レベル (SCL) を 5 または 6 に設定します。 **これは、スパム** フィルターの判定とスパム対策ポリシーの対応するアクションに対応します。
 
-|スパム対策ポリシー設定|[説明]|X ヘッダーの追加|
+|スパム対策ポリシー設定|説明|X ヘッダーが追加されました|
 |---|---|---|
-|**リモート Web サイトへの画像リンク** <p> *IncreaseScoreWithImageLinks*|リモート サイトへの `<Img>` HTML タグ リンクを含むメッセージ (http など) は、スパムとしてマークされます。|`X-CustomSpam: Image links to remote sites`|
+|**リモート Web サイトへのイメージ リンク** <p> *IncreaseScoreWithImageLinks*|リモート サイトへの HTML タグ リンクを含む `<Img>` メッセージ (http を使用するなど) は、スパムとしてマークされます。|`X-CustomSpam: Image links to remote sites`|
 |**URL 内の数値 IP アドレス** <p> *IncreaseScoreWithNumericIps*|数値ベースの URL (通常は IP アドレス) を含むメッセージは、スパムとしてマークされます。|`X-CustomSpam: Numeric IP in URL`|
 |**別のポートに対する URL リダイレクト** <p> *IncreaseScoreWithRedirectToOtherPort*|80 (HTTP)、8080 (代替 HTTP)、または 443 (HTTPS) 以外の TCP ポートにリダイレクトするハイパーリンクを含むメッセージは、スパムとしてマークされます。|`X-CustomSpam: URL redirect to other port`|
-|**.biz または .info Web サイトへのリンク** <p> *IncreaseScoreWithBizOrInfoUrls*|メッセージの本文に `.biz` 含 `.info` まれるメッセージまたはリンクは、スパムとしてマークされます。|`X-CustomSpam: URL to .biz or .info websites`|
+|**.biz または .info Web サイトへのリンク** <p> *IncreaseScoreWithBizOrInfoUrls*|メッセージの本文に含まれる `.biz` メッセージまたは `.info` リンクは、スパムとしてマークされます。|`X-CustomSpam: URL to .biz or .info websites`|
 
 ## <a name="mark-as-spam-settings"></a>スパム設定としてマークする
 
-次の **[スパム** ASF としてマーク] 設定では、検出されたメッセージの SCL を 9 に設定します。これは、高信頼スパム フィルターの評決とスパム対策ポリシーの対応するアクションに対応します。
+次のスパム ASF **としてマーク** 設定では、検出されたメッセージの SCL を 9 に設定します。これは、 **高信頼スパム** フィルターの判定とスパム対策ポリシーでの対応するアクションに対応します。
 
-|スパム対策ポリシー設定|[説明]|X ヘッダーの追加|
+|スパム対策ポリシー設定|説明|X ヘッダーが追加されました|
 |---|---|---|
-|**空メッセージ** <p> *MarkAsSpamEmptyMessages*|件名がないメッセージ、メッセージ本文にコンテンツがない、添付ファイルがないメッセージは、高信頼スパムとしてマークされます。|`X-CustomSpam: Empty Message`|
-|**HTML の埋め込みタグ** <p> *MarkAsSpamEmbedTagsInHtml*|HTML タグを含む `<embed>` メッセージは、高信頼スパムとしてマークされます。 <p> このタグを使用すると、HTML ドキュメント (サウンド、ビデオ、画像など) にさまざまな種類のドキュメントを埋め込みできます。|`X-CustomSpam: Embed tag in html`|
-|**HTML 内の JavaScript または VBScript** <p> *MarkAsSpamJavaScriptInHtml*|Html で JavaScript またはスクリプト エディションVisual Basicを使用するメッセージは、高信頼スパムとしてマークされます。 <p> これらのスクリプト言語は、電子メール メッセージで使用され、特定のアクションが自動的に発生します。|`X-CustomSpam: Javascript or VBscript tags in HTML`|
-|**HTML 内の Form タグ** <p> *MarkAsSpamFormTagsInHtml*|HTML タグを含む `<form>` メッセージは、高信頼スパムとしてマークされます。 <p> このタグは、Web サイト フォームの作成に使用されます。 広告メールには、受信者から情報を要求するために、このタグが含まれていることがよくあります。|`X-CustomSpam: Form tag in html`|
-|**HTML のフレームタグまたは iframe タグ** <p> *MarkAsSpamFramesInHtml*|タグまたは HTML タグを `<frame>` 含 `<iframe>` むメッセージは、高信頼スパムとしてマークされます。 <p> これらのタグは、テキストまたはグラフィックスを表示するためのページの書式を設定するために電子メール メッセージで使用されます。|`X-CustomSpam: IFRAME or FRAME in HTML`|
-|**HTML 内の Web バグ** <p> *MarkAsSpamWebBugsInHtml*|*Web バグ* (Web *ビーコンとも呼* ばれる) は、メッセージが受信者によって読み取られたかどうかを判断するために電子メール メッセージで使用されるグラフィック要素 (多くの場合、1 ピクセル単位で小さい) です。 <p> Web バグを含むメッセージは、高信頼スパムとしてマークされます。 <p> 正規のニュースレターでは Web バグが使用される場合があります。ただし、多くの場合、これはプライバシー侵害であると考える人も多い。 |`X-CustomSpam: Web bug`|
-|**HTML 内の Object タグ** <p> *MarkAsSpamObjectTagsInHtml*|HTML タグを含む `<object>` メッセージは、高信頼スパムとしてマークされます。 <p> このタグを使用すると、プラグインまたはアプリケーションを HTML ウィンドウで実行できます。|`X-CustomSpam: Object tag in html`|
-|**機密性の高い単語** <p> *MarkAsSpamSensitiveWordList*|Microsoft は、不快な可能性のあるメッセージに関連付けられている単語の動的で編集できないリストを保持しています。 <p> 件名またはメッセージ本文の機密性の高い単語リストの単語を含むメッセージは、高信頼スパムとしてマークされます。|`X-CustomSpam: Sensitive word in subject/body`|
-|**SPF レコード:Hard Fail** <p> *MarkAsSpamSpfRecordHardFail*|送信元メール ドメインの DNS の SPF Sender Policy Framework (SPF) レコードで指定されていない IP アドレスから送信されたメッセージは、高信頼スパムとしてマークされます。 <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: SPF Record Fail`|
+|**空メッセージ** <p> *MarkAsSpamEmptyMessages*|件名のないメッセージ、メッセージ本文にコンテンツがないメッセージ、および添付ファイルがないメッセージは、信頼度の高いスパムとしてマークされます。|`X-CustomSpam: Empty Message`|
+|**HTML の埋め込みタグ** <p> *MarkAsSpamEmbedTagsInHtml*|HTML タグを含む `<embed>` メッセージは、信頼度の高いスパムとしてマークされます。 <p> このタグを使用すると、HTML ドキュメント (サウンド、ビデオ、画像など) にさまざまな種類のドキュメントを埋め込めます。|`X-CustomSpam: Embed tag in html`|
+|**HTML 内の JavaScript または VBScript** <p> *MarkAsSpamJavaScriptInHtml*|HTML で JavaScript または Visual Basic Script Edition を使用するメッセージは、高信頼スパムとしてマークされます。 <p> これらのスクリプト言語は、電子メール メッセージで使用され、特定のアクションが自動的に発生します。|`X-CustomSpam: Javascript or VBscript tags in HTML`|
+|**HTML 内の Form タグ** <p> *MarkAsSpamFormTagsInHtml*|HTML タグを含む `<form>` メッセージは、信頼度の高いスパムとしてマークされます。 <p> このタグは、Web サイト フォームの作成に使用されます。 広告メールには、受信者から情報を要求するために、このタグが含まれていることがよくあります。|`X-CustomSpam: Form tag in html`|
+|**HTML のフレーム タグまたは iframe タグ** <p> *MarkAsSpamFramesInHtml*|HTML タグを含む `<frame>` メッセージは `<iframe>` 、信頼度の高いスパムとしてマークされます。 <p> これらのタグは、テキストまたはグラフィックスを表示するためのページの書式設定に電子メール メッセージで使用されます。|`X-CustomSpam: IFRAME or FRAME in HTML`|
+|**HTML 内の Web バグ** <p> *MarkAsSpamWebBugsInHtml*|*Web バグ* (*Web ビーコン* とも呼ばれます) は、受信者がメッセージを読み取ったかどうかを判断するために電子メール メッセージで使用されるグラフィック要素 (多くの場合、1 ピクセルずつ小さい) です。 <p> Web バグを含むメッセージは、信頼度の高いスパムとしてマークされます。 <p> 正当なニュースレターでは Web バグが使用される場合がありますが、多くの場合、これはプライバシーの侵害であると考えられます。 |`X-CustomSpam: Web bug`|
+|**HTML 内の Object タグ** <p> *MarkAsSpamObjectTagsInHtml*|HTML タグを含む `<object>` メッセージは、信頼度の高いスパムとしてマークされます。 <p> このタグを使用すると、プラグインまたはアプリケーションを HTML ウィンドウで実行できます。|`X-CustomSpam: Object tag in html`|
+|**機密性の高い単語** <p> *MarkAsSpamSensitiveWordList*|Microsoft は、不適切な可能性があるメッセージに関連付けられている単語の動的で編集不可のリストを保持しています。 <p> 件名またはメッセージ本文の機密性の高い単語リストの単語を含むメッセージは、信頼度の高いスパムとしてマークされます。|`X-CustomSpam: Sensitive word in subject/body`|
+|**SPF レコード:Hard Fail** <p> *MarkAsSpamSpfRecordHardFail*|送信元電子メール ドメインの DNS の SPF 送信者ポリシー フレームワーク (SPF) レコードで指定されていない IP アドレスから送信されたメッセージは、高信頼スパムとしてマークされます。 <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: SPF Record Fail`|
 
-次の **[スパム** ASF としてマーク] 設定では、検出されたメッセージの SCL を 6 に設定します。これはスパム フィルターの評決とスパム対策ポリシーの対応するアクションに対応します。
+次の **[スパム ASF としてマーク** ] 設定では、検出されたメッセージの SCL を 6 に設定します。 **これは、スパム** フィルターの判定とスパム対策ポリシーの対応するアクションに対応します。
 
-|スパム対策ポリシー設定|[説明]|X ヘッダーの追加|
+|スパム対策ポリシー設定|説明|X ヘッダーが追加されました|
 |---|---|---|
-|**送信者 ID のフィルター処理が失敗する** <p> *MarkAsSpamFromAddressAuthFail*|条件付き送信者 ID チェックに失敗したメッセージは、スパムとしてマークされます。 <p> この設定では、SPF チェックと送信者 ID チェックを組み合わせ、偽造された送信者を含むメッセージ ヘッダーから保護します。 <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: SPF From Record Fail`|
-|**Backscatter** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* は、電子メール メッセージ内の偽造送信者によって引き起こされた配信不可レポート (NDRs またはバウンス メッセージとも呼ばれる) です。 詳細については、「 [Backscatter メッセージと EOP」を参照してください](backscatter-messages-and-eop.md)。 <p> 正当な NDRs が配信され、バックスカッターがスパムとしてマークされるので、次の環境でこの設定を構成する必要があります。 <ul><li>Microsoft 365メールボックスを持Exchange Online組織。</li><li>EOP を介して *送信* メールをルーティングするオンプレミスのメール組織。</li></ul> <p> 受信メールをオンプレミスメールボックスに保護するスタンドアロン EOP 環境では、この設定をオンまたはオフにすると、次の結果が得られます。 <ul><li> **On**: 正当なNDRsが配信され、バックスカッターはスパムとしてマークされます。</li><li>**オフ**: 正当な NDRs とバックスカッターは、通常のスパム フィルター処理を実行します。 ほとんどの正当なNDRsは、元のメッセージ送信者に配信されます。 すべてではないが、一部のバックスカッターはスパムとしてマークされます。 定義上、backscatter はスプーフィングされた送信者にのみ配信できます。元の送信者には配信されません。</li></ul> <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: Backscatter NDR`|
+|**送信者 ID フィルターのハード 失敗** <p> *MarkAsSpamFromAddressAuthFail*|条件付き送信者 ID チェックにハード 失敗したメッセージは、スパムとしてマークされます。 <p> この設定は、SPF チェックと送信者 ID チェックを組み合わせて、偽造された送信者を含むメッセージ ヘッダーから保護するのに役立ちます。 <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: SPF From Record Fail`|
+|**バックスキャター** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* は、電子メール メッセージ内の偽造された送信者によって引き起こされる、配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) です。 詳細については、「 [Backscatter メッセージと EOP](backscatter-messages-and-eop.md)」を参照してください。 <p> 正当な NDR が配信され、バックスキャッターがスパムとしてマークされるため、次の環境でこの設定を構成する必要はありません。 <ul><li>Exchange Onlineメールボックスを持つ組織をMicrosoft 365します。</li><li>EOP を介して *送信* メールをルーティングするオンプレミスのメール組織。</li></ul> <p> オンプレミスメールボックスへの受信メールを保護するスタンドアロン EOP 環境では、この設定をオンまたはオフにすると、次の結果が得られます。 <ul><li> **オン**: 正当な NDR が配信され、バックスキャッターがスパムとしてマークされます。</li><li>**オフ**: 正当な NDR とバックスキャッターは、通常のスパム フィルター処理を通過します。 ほとんどの正当な NDR は、元のメッセージ送信者に配信されます。 バックスキャッターにはスパムとしてマークされているものもありますが、すべてではありません。 定義上、バックスキャッターはスプーフィングされた送信者にのみ配信でき、元の送信者には配信できません。</li></ul> <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: Backscatter NDR`|

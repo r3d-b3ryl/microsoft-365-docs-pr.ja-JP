@@ -91,7 +91,7 @@ Microsoft 365は、エンドポイント セキュリティと暗号化された
 
 ネットワーク接続の原則Microsoft 365理解して適用する方法の詳細については、「[Microsoft 365 ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)」を参照してください。
 
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>終わりに
 
 ネットワーク パフォーマンスMicrosoft 365最適化することは、不要な障害を取り除くことにつながります。 Microsoft 365接続を信頼されたトラフィックとして扱うことで、パケット検査とプロキシ帯域幅の競合によって遅延が発生するのを防ぐことができます。 クライアント マシンとOffice 365 エンドポイント間のローカル接続を許可すると、トラフィックを Microsoft Global Network 経由で動的にルーティングできます。
 

@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
-description: この記事では、グローバル管理者または管理者SharePoint、サテライト地域の場所で複数地域SharePointを有効にするための情報を提供します。
+description: この記事では、サテライト地理的な場所でSharePoint Multi-Geoを有効にする方法に関するグローバル管理者またはSharePoint管理者向けの情報を提供します。
 ms.openlocfilehash: b542c1ee77c7b4ca7a6179bac5ce5eaa1090606a
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "63330441"
 この記事は、2019 年 3 月 27日に SharePoint Multi-Geo の機能が一般的に利用できるようになる **前に**、Multi-Geo のサテライト地域を作成した Global または SharePoint の管理者、およびサテライト地域で SharePoint Multi-Geo を有効にしていないユーザー向けのものです。 
 
 >[!Note]
->**2019** 年 3 月 27 日以降に新しい地域の場所を追加した場合は、新しい地域の場所が OneDrive および SharePoint Multi-Geo に対して既に有効になっているので、これらの手順を実行する必要があります。
+>**2019 年 3 月 27 日以降** に新しい地域の場所を追加した場合は、新しい地域の場所が既にOneDriveとSharePoint Multi-Geoに対して有効になっているので、これらの手順を実行する必要はありません。
 
 以下の手順により、ユーザーのサテライト地域で SharePoint を有効にできるため、Multi-Geo サテライト ユーザーは O365 で、OneDrive と SharePoint Multi-Geo 両方の機能を利用できるようになります。 
 
@@ -41,9 +41,9 @@ SPO モードに地域を設定するには、SPO モードで設定する地域
 1.    SharePoint Online 管理シェルを開く 
 2.    Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
 3.    Set-SPOMultiGeoExperience</br></br>
-![Set-SPOMultiGeoExperience。](../media/Set-SPO-MultiGeo.jpg)
+![Set-SPOMultiGeoExperience.](../media/Set-SPO-MultiGeo.jpg)
 4.    この操作は通常 1 時間程度かかり、その間、サービス内でさまざまな発行バックを実行し、テナントに再度スタンプを付けます。 少なくとも 1 時間後に Get-SPOMultiGeoExperience を実行してください。  実行すると、SPO モードにこの地域があるかどうかが表示されます。</br></br>
-![Set-SPOMultiGeoExperience。](../media/Get-SPO-MultiGeo.jpg)
+![Set-SPOMultiGeoExperience.](../media/Get-SPO-MultiGeo.jpg)
 
  
  

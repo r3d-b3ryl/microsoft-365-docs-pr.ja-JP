@@ -38,7 +38,7 @@ ms.locfileid: "64664108"
 
 新しいセキュリティ アナリストと経験豊富な脅威の狩人向けの Web キャスト シリーズである _敵対者の追跡_ を使用して、高度な捜索に関する知識を迅速に高めます。 このシリーズでは、独自の高度なクエリを作成するための基本を説明します。 基礎に関する最初のビデオから始めるか、経験レベルに合ったより高度なビデオにジャンプします。
 
-| タイトル | 説明 | 視聴する | クエリ |
+| Title | 説明 | 視聴する | クエリ |
 |---|---|---|---|
 | エピソード 1: KQLの基礎 | このエピソードでは、Microsoft 365 Defenderでの高度なハンティングの基本について説明します。 使用可能な高度なハンティング データと、基本的なKQL構文と演算子について説明します。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
 | エピソード 2: Joins | 高度な捜索のデータと、テーブルを結合する方法について学習し続けます。 既定の `unique``semi` Kusto`innerunique`結合の微妙な違いについて`inner``outer`説明します。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
@@ -47,7 +47,7 @@ ms.locfileid: "64664108"
 
 *L33TSP3AK: Microsoft 365 Defenderでの高度なハンティング* に関する専門家のトレーニングを受けることができます。これは、高度なハンティングを使用してセキュリティ調査を行う際の技術的知識と実践的なスキルをMicrosoft 365 Defenderで拡張しようとしているアナリスト向けの Web キャスト シリーズです。
 
-| タイトル | 説明 | 視聴する | クエリ |
+| Title | 説明 | 視聴する | クエリ |
 |---|---|---|---|
 | エピソード 1  | このエピソードでは、高度なハンティング クエリを実行する際のさまざまなベスト プラクティスについて説明します。 対象となるトピックの中には、クエリを最適化する方法、ランサムウェアの高度なハンティングを使用する方法、動的な型として JSON を処理する方法、外部データ演算子を操作する方法などがあります。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | エピソード 2 | このエピソードでは、受信トレイ転送ルールを使用して、疑わしい、または異常なログオン場所とデータ流出を調査して対応する方法について説明します。 Cloud Security CxE のシニア プログラム マネージャーであるセバスチャン・モルンダイク氏は、高度な捜索を使用して、Microsoft Defender for Cloud Apps データを使用して多段階のインシデントを調査する方法について説明します。 | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)

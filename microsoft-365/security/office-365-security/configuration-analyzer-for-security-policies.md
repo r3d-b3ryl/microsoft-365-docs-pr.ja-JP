@@ -16,7 +16,7 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: 管理者は、構成アナライザーを使用して、事前設定されたセキュリティ ポリシーの標準保護と厳密な保護の設定の下にあるセキュリティ ポリシーを見つけて修正する方法について説明します。
+description: 管理者は、構成アナライザーを使用して、Standard protection および Strict Protection の設定の下にあるセキュリティ ポリシーを事前設定済みのセキュリティ ポリシーで見つけて修正する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 459f44f29b89b2bbca6aa0f6847d0b4636647be6
@@ -26,7 +26,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64477063"
 ---
-# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP および Microsoft Defender の保護ポリシー用の構成Office 365
+# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP および Defender for Office 365 の構成アナライザー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,117 +35,117 @@ ms.locfileid: "64477063"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Defender ポータルの構成アナライザーは、設定が事前設定されたセキュリティ ポリシーの標準保護と厳密な保護プロファイル設定の下にあるセキュリティ ポリシーを見つけて修正するための一中心の場所を[提供します](preset-security-policies.md)。
+Microsoft 365 Defender ポータルの構成アナライザーは、[設定が事前設定](preset-security-policies.md)されたセキュリティ ポリシーの Standard Protection および Strict Protection プロファイル設定の下にあるセキュリティ ポリシーを検索して修正するための一元的な場所を提供します。
 
 次の種類のポリシーは、構成アナライザーによって分析されます。
 
-- **Exchange Online Protection (EOP)** ポリシー: これには、Microsoft 365メールボックスを持Exchange Onlineスタンドアロンの EOP 組織が含まれます。Exchange Online含まれます。
+- **Exchange Online Protection (EOP) ポリシー**: これには、Exchange Online メールボックスを持つMicrosoft 365組織と、Exchange Online メールボックスのないスタンドアロン EOP 組織が含まれます。
   - [スパム対策ポリシー](configure-your-spam-filter-policies.md)。
   - [マルウェア対策ポリシー](configure-anti-malware-policies.md)。
   - [EOP フィッシング対策ポリシー](set-up-anti-phishing-policies.md#spoof-settings)。
 
-- **Microsoft Defender for Office 365 ポリシー**: これには、Microsoft 365 E5サブスクリプション用の Microsoft 365 E5または Defender Office 365組織が含まれます。
-  - Microsoft Defender のフィッシング対策ポリシーは、次Office 365含まれます。
-    - EOP [フィッシング対策](set-up-anti-phishing-policies.md#spoof-settings) ポリシーで使用できるスプーフィング設定と同じです。
+- **Microsoft Defender for Office 365 ポリシー**: これには、Microsoft 365 E5またはDefender for Office 365アドオン サブスクリプションを持つ組織が含まれます。
+  - Microsoft Defender for Office 365のフィッシング対策ポリシー。
+    - EOP フィッシング対策ポリシーで使用できるのと同じ [スプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings) 。
     - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高度なフィッシングのしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [安全なリンク ポリシー](set-up-safe-links-policies.md)。
   - [安全な添付ファイル ポリシー](set-up-safe-attachments-policies.md)。
 
-基準として使用される Standard および Strict ポリシー設定の値については、「[EOP および Microsoft Defender](recommended-settings-for-eop-and-office365.md) for microsoft Defender for Office 365されています。
+ベースラインとして使用される Standard および Strict ポリシー設定の値については、「[EOP とMicrosoft Defender for Office 365セキュリティの推奨設定」を参照](recommended-settings-for-eop-and-office365.md)してください。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [構成アナライザー] ページに直接 **移動するには、** を使用します <https://security.microsoft.com/configurationAnalyzer>。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **[構成アナライザー]** ページに直接移動するには、 <https://security.microsoft.com/configurationAnalyzer>.
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-- この記事の手順を実行するには、Microsoft 365 Defenderポータルでアクセス許可を割り当てる必要があります。
-  - 構成アナライザーを使用してセキュリティ ポリシーを更新するには、組織の管理役割グループまたはセキュリティ管理者役割グループの **メンバーである** 必要があります。
+- この記事の手順を実行するには、Microsoft 365 Defender ポータルでアクセス許可を割り当てる必要があります。
+  - 構成アナライザーを使用 **して** セキュリティ ポリシーを更新するには、 **組織の管理** または **セキュリティ管理者** の役割グループのメンバーである必要があります。
   - 構成アナライザーへの読み取り専用アクセスを行うには、**グローバル リーダー** または **セキュリティ リーダー** の役割グループのメンバーである必要があります。
 
   詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
   > [!NOTE]
   >
-  > - ユーザーを対応する Azure Active Directory ロールに追加すると、ユーザーは Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365  の他の機能に対するアクセス許可を与Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - 対応するAzure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
-## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>ポータルで構成アナライザーをMicrosoft 365 Defenderする
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで構成アナライザーを使用する
 
-[ポリシー]  \>  \>  \> <https://security.microsoft.com>Microsoft 365 Defenderで、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&構成アナライザーにメールを **送信します。**  [構成アナライザー] ページに直接 **移動するには、** を使用します <https://security.microsoft.com/configurationAnalyzer>。
+Microsoft 365 Defender ポータルの [**テンプレート** ポリシー] セクション **の** <https://security.microsoft.com>[電子メール & コラボレーション \> **ポリシー&ルール** \> **脅威ポリシー** \> **構成アナライザー**] に移動します。 **[構成アナライザー]** ページに直接移動するには、 <https://security.microsoft.com/configurationAnalyzer>.
 
-[ **構成アナライザー] ページ** には、次の 3 つの主なタブがあります。
+**[構成アナライザー]** ページには、次の 3 つのメイン タブがあります。
 
-- **標準の推奨事項**: 既存のセキュリティ ポリシーと標準の推奨事項を比較します。 設定値を調整して、標準と同じレベルに設定できます。
-- **厳密な推奨事項**: 既存のセキュリティ ポリシーと厳密な推奨事項を比較します。 設定値を調整して、Strict と同じレベルに設定できます。
-- **構成ドリフト分析と履歴**: ポリシーの変更を時間の流れによって監査および追跡します。
+- **標準の推奨事項**: 既存のセキュリティ ポリシーを標準の推奨事項と比較します。 設定値を調整して、Standard と同じレベルに設定することができます。
+- **厳密な推奨事項**: 既存のセキュリティ ポリシーと厳密な推奨事項を比較します。 設定値を調整して、Strict と同じレベルに設定することができます。
+- **構成ドリフト分析と履歴**: 時間の経過と共にポリシーの変更を監査および追跡します。
 
 ### <a name="standard-recommendations-and-strict-recommendations-tabs-in-the-configuration-analyzer"></a>構成アナライザーの [標準の推奨事項] タブと [厳密な推奨事項] タブ
 
-既定では、[標準の推奨事項] タブで **構成アナライザーが開** きます。[厳密な推奨事項] **タブに切り替** えます。設定、レイアウト、およびアクションは、両方のタブで同じです。
+既定では、構成アナライザーは [ **標準の推奨事項** ] タブで開きます。 **[厳密な推奨事項** ] タブに切り替えることができます。設定、レイアウト、アクションは両方のタブで同じです。
 
-:::image type="content" source="../../media/configuration-analyzer-settings-and-recommendations-view.png" alt-text="構成設定の [推奨事項] ビュー" lightbox="../../media/configuration-analyzer-settings-and-recommendations-view.png":::
+:::image type="content" source="../../media/configuration-analyzer-settings-and-recommendations-view.png" alt-text="Configuration アナライザーの設定と推奨事項ビュー" lightbox="../../media/configuration-analyzer-settings-and-recommendations-view.png":::
 
-タブの最初のセクションには、Standard または Strict Protection と比較して、改善が必要なポリシーの種類ごとに設定の数が表示されます。 ポリシーの種類は次のとおりです。
+タブの最初のセクションには、Standard または Strict 保護と比較して改善が必要なポリシーの種類ごとの設定の数が表示されます。 ポリシーの種類は次のとおりです。
 
 - **スパム対策**
-- **フィッシング対策**
+- **フィッシング詐欺対策**
 - **マルウェア対策**
-- **セーフ添付ファイル** (サブスクリプションに Microsoft Defender for Office 365)
-- **セーフ リンク** (サブスクリプションに Microsoft Defender for Office 365)
+- **セーフ添付ファイル** (サブスクリプションにMicrosoft Defender for Office 365が含まれている場合)
+- **セーフ リンク** (サブスクリプションにMicrosoft Defender for Office 365が含まれている場合)
 
-ポリシーの種類と番号が表示されていない場合は、その種類のすべてのポリシーが Standard または Strict Protection の推奨設定を満たします。
+ポリシーの種類と番号が表示されない場合は、その種類のすべてのポリシーが Standard または Strict 保護の推奨設定を満たします。
 
-タブの残りの部分は、標準または厳密な保護レベルに設定する必要がある設定の表です。 表には、次の列が含まれています。
+タブの残りの部分は、Standard または Strict の保護レベルに設定する必要がある設定のテーブルです。 テーブルには、次の列が含まれています。
 
 - **推奨事項**: 標準または厳格な保護プロファイルの設定の値。
 - **ポリシー**: 設定を含む影響を受けるポリシーの名前。
 - **ポリシー グループ/設定名**: 注意が必要な設定の名前。
-- **ポリシーの種類**: スパム対策、フィッシング対策、マルウェア対策、セーフリンク、または添付ファイルセーフします。
+- **ポリシーの種類**: スパム対策、フィッシング詐欺対策、マルウェア対策、セーフ リンク、セーフ添付ファイル。
 - **現在の構成**: 設定の現在の値。
 - **最終更新日**: ポリシーが最後に変更された日付。
-- **状態**: 通常、この値は **開始ではありません**。
+- **状態**: 通常、この値は **開始されません**。
 
 ### <a name="change-a-policy-setting-to-the-recommended-value"></a>ポリシー設定を推奨値に変更する
 
-構成アナライザー **の [標準保護]** **タブまたは [** 厳密な保護] タブで、表の行を選択します。 次のボタンが表示されます。
+構成アナライザーの [ **標準保護** ] タブまたは [ **Strict Protection** ] タブで、テーブル内の行を選択します。 次のボタンが表示されます。
 
-- **おすすめを適用する**
-- **ポリシーの表示**
+- **推奨事項を適用する**
+- **ポリシーを表示する**
 - **更新**:
 
-行を選択して [ **おすすめの適用**] をクリックすると、確認ダイアログ (ダイアログを再び表示しないオプションを含む) が表示されます。 [OK] を **クリックすると**、次のことが発生します。
+行を選択して [推奨事項の **適用**] をクリックすると、確認ダイアログ (ダイアログを再び表示しないオプションを含む) が表示されます。 **[OK] を** クリックすると、次のことが発生します。
 
-- この設定は、推奨される値に更新されます。
-- [ **推奨事項の適用]** および **[表示] ポリシー** が表示されなくなります ([ **更新] ボタン** だけが残ります)。
-- 行 **の [** 状態] の値が [完了] に **変わります**。
+- 設定が推奨値に更新されます。
+- **[推奨事項の適用]** **ポリシーと [表示] ポリシー** が消えます (**[更新]** ボタンのみが残ります)。
+- 行の **[状態]** の値が **[完了]** に変わります。
 
-行を選択し、[ポリシーの表示] をクリックすると、Microsoft 365 Defender ポータルで影響を受けるポリシーの詳細が表示され、手動で設定を更新できます。
+行を選択し、[ポリシーの **表示**] をクリックすると、Microsoft 365 Defender ポータルで影響を受けるポリシーの詳細ポップアップが表示され、設定を手動で更新できます。
 
-設定を自動的または手動で更新した後、[更新] をクリックして、推奨事項の数を減らして、更新された行を結果から削除します。
+設定を自動的または手動で更新したら、[ **更新** ] をクリックして、推奨事項の数が減り、更新された行が結果から削除されたことを確認します。
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>構成アナライザーの構成ドリフト分析と履歴タブ
 
-このタブでは、セキュリティ ポリシーに加えた変更と、それらの変更が標準設定または厳密な設定と比較される方法を追跡できます。 既定では、次の情報が表示されます。
+このタブでは、セキュリティ ポリシーに加えられた変更と、それらの変更が Standard または Strict の設定とどのように比較されるかを追跡できます。 既定では、次の情報が表示されます。
 
 - **最終更新日時**
 - **変更者**
-- **設定名**
+- **名前の設定**
 - **ポリシー**: 影響を受けるポリシーの名前。
-- **種類**: スパム対策、フィッシング対策、マルウェア対策、セーフリンク、セーフ添付ファイル。
-- **構成の変更**: 設定の古い値と新しい値
-- **構成ドリフト**: 推奨される **標準** または厳密な設定と比較して、セキュリティの設定が増加または減少した場合の値の増減を示します。
+- **種類**: スパム対策、フィッシング詐欺対策、マルウェア対策、セーフ リンク、セーフ添付ファイル。
+- **構成の変更**: 古い値と設定の新しい値
+- **構成ドリフト**: 推奨される **Standard または Strict** の設定と比較して、設定のセキュリティの増減を示す値 **[増減**] を指定します。
 
 結果をフィルター処理するには、**[フィルター]** をクリックします。 表示される **[フィルター]** ポップアップで、次のフィルターから選択できます。
 
-- **開始時刻****と終了時刻** (日付): 今日から 90 日間まで戻って行く場合があります。
-- **標準保護または****厳密な保護**
+- **開始時刻** と **終了時刻** (日付): 今日から 90 日間まで戻ることができます。
+- **標準保護** または **厳格な保護**
 
 完了したら、**[適用]** をクリックします。
 
-結果をファイルにエクスポートするには、[.csv] を **クリックします**。
+結果を.csv ファイルにエクスポートするには、[ **エクスポート**] をクリックします。
 
-特定の [変更者]、[名前の設定]、または  **[** 種類] の値で結果をフィルター処理するには、[検索] ボックス **を使用** します。
+特定の **変更者**、 **設定名**、または **種類** の値で結果をフィルター処理するには、[ **検索** ] ボックスを使用します。
 
-:::image type="content" source="../../media/configuration-analyzer-configuration-drift-analysis-view.png" alt-text="構成アナライザーの構成ドリフト分析と履歴ビュー" lightbox="../../media/configuration-analyzer-configuration-drift-analysis-view.png":::
+:::image type="content" source="../../media/configuration-analyzer-configuration-drift-analysis-view.png" alt-text="Configuration アナライザーの構成ドリフト分析と履歴ビュー" lightbox="../../media/configuration-analyzer-configuration-drift-analysis-view.png":::

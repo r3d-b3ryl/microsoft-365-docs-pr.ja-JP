@@ -72,7 +72,7 @@ The customer would proceed with the Tenant Deprovisioning process in order to fu
 - Ideally since customer is exiting the eco-system, no more audit events would be generated for the customer. However in case there are new audit events for the customer, then they will NOT be encrypted using CMK as customer has offboarded / revoked key access.
 -->
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - 組織の監査レコードを暗号化するための実装手順を完了すると、最大で 24 時間かかります。
 - 組織で他のワークロード (ExchangeやSharePointなど) に対する MDEPS サポートが既にある場合は、複数のワークロードに対してのみ有効にする必要があります。

@@ -181,6 +181,6 @@ v20 を含む URL は、Windows 10バージョン 1803 または Windows 11 デ�
 |商用顧客向けの Microsoft Defender for Endpoint の URL リスト| 商用顧客向けサービスの場所、地理的な場所、OS に関する特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
 | Gov/GCC/DoD 向けの Microsoft Defender for Endpoint の URL リスト | Gov/GCC/DoD のお客様向けのサービスの場所、地理的な場所、OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [![**フェーズ 3: オンボード**.](images/onboard.png#lightbox)] <br> [フェーズ 3: オンボード:](onboarding.md) Microsoft Defender for Endpoint サービスがセンサー データを取得できるように、デバイスをサービスにオンボードします。

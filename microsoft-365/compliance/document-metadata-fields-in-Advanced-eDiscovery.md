@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示のドキュメント メタデータ フィールド (プレミアム)
+title: 電子情報開示 (プレミアム) のドキュメントメタデータフィールド
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/27/2022
 ms.locfileid: "65097780"
 ---
-# <a name="document-metadata-fields-in-ediscovery-premium"></a>電子情報開示のドキュメント メタデータ フィールド (プレミアム)
+# <a name="document-metadata-fields-in-ediscovery-premium"></a>電子情報開示 (プレミアム) のドキュメントメタデータフィールド
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -122,7 +122,7 @@ ms.locfileid: "65097780"
 |アイテム クラス|ItemClass|Item_class|Exchange サーバーによって提供されるアイテム クラス。たとえば、 **IPM です。メモ**|
 |Last modified date|LastModifiedDate|Doc_date_modified|ドキュメント メタデータからの最終更新日。|
 |読み込み ID|LoadId|Load_ID|アイテムがレビュー セットに追加された読み込みセットの ID。|
-|場所|場所|場所|ドキュメントのソース元の場所の種類を示す文字列。<p>**インポートされたデータ** - Office 365以外のデータ<br>**Teams** - Microsoft Teams<br>**Exchange** - メールボックスのExchange<br>**SharePoint** - SharePoint サイト<br>**OneDrive** - OneDrive アカウント|
+|Location|Location|Location|ドキュメントのソース元の場所の種類を示す文字列。<p>**インポートされたデータ** - Office 365以外のデータ<br>**Teams** - Microsoft Teams<br>**Exchange** - メールボックスのExchange<br>**SharePoint** - SharePoint サイト<br>**OneDrive** - OneDrive アカウント|
 |場所の名前|LocationName|Location_name|アイテムのソースを識別する文字列。 交換の場合、これはメールボックスの SMTP アドレスになります。SharePointとOneDriveの場合は、サイト コレクションの URL です。|
 |||Marked_as_pivot|このファイルは、ほぼ重複するセット内のピボットです。|
 |代理人としてマークされている|MarkAsRepresentative||正確な重複の各セットから 1 つのドキュメントが代表者としてマークされます。|
@@ -172,13 +172,13 @@ ms.locfileid: "65097780"
 |ID を設定する||Set_ID|同じメール スレッド (Email_set) 内の類似したコンテンツ (ND_set) または電子メールのドキュメントは、同じSet_IDを共有します。|
 |SimilarityPercent||Similarity_percent|ドキュメントが、ほぼ重複するセットのピボットとどの程度似ているかを示します。|
 |ネイティブ ファイル サイズ|Size|Native_size|ネイティブ項目のバイト数。|
-|件名|件名|Email_subject|メッセージの件名。|
+|Subject|Subject|Email_subject|メッセージの件名。|
 |件名/タイトル|SubjectTitle||アイテムの件名またはタイトルで構成される計算フィールド。|
 |タグ|タグ|タグ|レビュー セットに適用されるタグ。|
 |チャネル名|チャネル|ChannelName|これはTeamsチャネル名です。 Microsoft Teamsコンテンツにのみ適用されます。|
 |チーム名|TeamName|TeamName|**Teams:** チームの名前<br>**Yammer:** Community名|
 |テーマの一覧|ThemesList|Themes_list|分析用に計算されたテーマの一覧。|
-|タイトル|タイトル|Doc_title|ドキュメント メタデータのタイトル。 ドキュメント メタデータのタイトル。 TeamsおよびYammerコンテンツの場合、ConversationName プロパティの値です。|
+|Title|Title|Doc_title|ドキュメント メタデータのタイトル。 ドキュメント メタデータのタイトル。 TeamsおよびYammerコンテンツの場合、ConversationName プロパティの値です。|
 |宛先|宛先|Email_to|メッセージの種類のフィールドに移動します。 Format is **DisplayName\<SmtpAddress>**|
 |電子メール セット内で一意|UniqueInEmailSet||**電子** メール セットに添付ファイルの重複がある場合は False。|
 |バージョン グループ ID||Version_Group_Id|同じドキュメントのさまざまなバージョンをグループ化します。|

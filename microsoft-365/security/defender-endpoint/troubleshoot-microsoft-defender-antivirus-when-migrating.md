@@ -54,7 +54,7 @@ ms.locfileid: "64788438"
 
 イベント ID|ログ名|説明|ソース
 ---|---|---|---
-15 |アプリケーション|Windows Defender状態が正常にSECURITY_PRODUCT_STATE_OFFに更新されました。|Security Center
+15|アプリケーション|Windows Defender状態が正常にSECURITY_PRODUCT_STATE_OFFに更新されました。|Security Center
 5007|Microsoft-Windows-Windows Defender/Operational|Windows Defender ウイルス対策構成が変更されました。 これが予期しないイベントの場合は、マルウェアの結果である可能性があるため、設定を確認する必要があります。 <p> **古い値:** Default\IsServiceRunning = 0x0 <p> **新しい値:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Operational|スパイウェアやその他の望ましくない可能性のあるソフトウェアのWindows Defender ウイルス対策スキャンが無効になっています。|Windows Defender
 
@@ -91,7 +91,7 @@ GPresult.exe /h gpresult.html
 
 GPResults レポートの見出しの下に、*コンポーネント/Windows Defender ウイルス対策Windows*、Microsoft Defender ウイルス対策がオフになっていることを示す次のエントリのようなものが表示されることがあります。
 
-ポリシー|設定|GPO を獲得する
+ポリシー|Setting|GPO を獲得する
 ---|---|---
 Windows Defender ウイルス対策をオフにする|Enabled|Win10-Workstations
 
@@ -140,13 +140,13 @@ Microsoft Defender ウイルス対策が自動的にオフに設定されてい�
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 
 ### <a name="see-also"></a>関連項目

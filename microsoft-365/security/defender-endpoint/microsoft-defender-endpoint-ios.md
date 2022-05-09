@@ -85,7 +85,7 @@ iOS でのMicrosoft Defender for Endpointの展開は、Microsoft エンドポ�
 - Microsoft エンドポイント マネージャーまたはIntuneを介して登録済みデバイスに展開する方法については、「[iOS でのMicrosoft Defender for Endpointの展開](ios-install.md)」を参照してください。
 - アプリ保護ポリシー (MAM) で Defender for Endpoint を使用する方法については、「[Defender for Endpoint リスクシグナル (MAM) を含めるアプリ保護ポリシーを構成する」](ios-install-unmanaged.md)を参照してください。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 - 今後のリリースについては、iOS または[ブログ](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)の[Microsoft Defender for Endpointの新機能に関するページを](ios-whatsnew.md)参照してください。
 
@@ -95,6 +95,6 @@ iOS でのMicrosoft Defender for Endpointの展開は、Microsoft エンドポ�
 
 - [登録済みデバイスのIntuneを介して iOS にMicrosoft Defender for Endpointを展開する](ios-install.md)
 - [Defender for Endpoint リスクシグナル (MAM) を含めるアプリ保護ポリシーを構成する](ios-install-unmanaged.md)
-- [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+- [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 - [Microsoft Defender for Endpointからのデバイス リスク スコアに基づいて条件付きアクセス ポリシーを構成する](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
 - [モバイル アプリケーション管理 (MAM) の基本](/mem/intune/apps/app-management#mobile-application-management-mam-basics)

@@ -1,7 +1,7 @@
 ---
-title: オンボーディングの問題とエラー メッセージのトラブルシューティング
-description: Microsoft Defender for Endpoint のセットアップを完了する際にオンボーディングの問題とエラー メッセージのトラブルシューティングを行います。
-keywords: トラブルシューティング、トラブルシューティング、Azure Active Directory、オンボーディング、エラー メッセージ、エラー メッセージ、エンドポイント用 microsoft Defender
+title: オンボードの問題とエラー メッセージのトラブルシューティング
+description: Microsoft Defender for Endpointのセットアップ中にオンボードの問題とエラー メッセージのトラブルシューティングを行います。
+keywords: トラブルシューティング, トラブルシューティング, Azure Active Directory, オンボード, エラー メッセージ, エラー メッセージ, Microsoft Defender for endpoint
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -33,54 +33,54 @@ ms.locfileid: "64467557"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
 
-このページでは、Microsoft Defender for Endpoint サービスのセットアップ時に発生する可能性がある問題をトラブルシューティングするための詳細な手順について説明します。
+このページでは、Microsoft Defender for Endpoint サービスのセットアップ時に発生する可能性がある問題をトラブルシューティングする詳細な手順について説明します。
 
-エラー メッセージが表示された場合、Microsoft 365 Defender問題と関連するリンクが提供される内容に関する詳細な説明が表示されます。
+エラー メッセージが表示された場合、Microsoft 365 Defenderは問題の内容と関連リンクが提供される詳細な説明を提供します。
 
 ## <a name="no-subscriptions-found"></a>サブスクリプションが見つかりません
 
-Microsoft 365 Defender にアクセス中にサブスクリプションが見つからないというメッセージが表示される場合は、ユーザーのポータルへのログインに使用される Azure Active Directory (Azure AD) には、Microsoft Defender for Endpoint ライセンスが存在しないという意味です。
+サブスクリプション **が見つからない** というメッセージが表示Microsoft 365 Defenderアクセス中に、ユーザーをポータルにログインするために使用されるAzure Active Directory (Azure AD) にMicrosoft Defender for Endpointライセンスがないことを意味します。
 
-潜在的な理由:
+考えられる理由:
 
 - Windows E5 ライセンスと Office E5 ライセンスは、別のライセンスです。
-- ライセンスは購入されましたが、このインスタンスにプロビジョニングAzure ADされません。
+- ライセンスは購入されましたが、このAzure AD インスタンスにプロビジョニングされていません。
   - ライセンス プロビジョニングの問題である可能性があります。
-  - サービスへの認証に使用されるライセンスとは異なるMicrosoft Azure ADにライセンスをプロビジョニングした可能性があります。
+  - サービスへの認証に使用されるMicrosoft Azure ADとは異なるMicrosoft Azure ADにライセンスを誤ってプロビジョニングした可能性があります。
 
-どちらの場合も、Microsoft Defender for [Endpoint Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) または Volume ライセンス のサポートで Microsoft サポートに問い [合わせるべきです](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)。
+どちらの場合も、[一般Microsoft Defender for Endpoint サポート](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913)または[ボリューム ライセンス サポート](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)の Microsoft サポートにお問い合わせください。
 
 :::image type="content" source="images/atp-no-subscriptions-found.png" alt-text="[サブスクリプションが見つかりません] ページ" lightbox="images/atp-no-subscriptions-found.png":::
 
 ## <a name="your-subscription-has-expired"></a>サブスクリプションの有効期限が切れています
 
-サブスクリプションへのアクセス中Microsoft 365 Defenderサブスクリプションの有効期限が切れたメッセージが表示される場合、オンライン サービス サブスクリプションの有効期限が切れています。 Microsoft Defender for Endpoint サブスクリプションは、他のオンライン サービス サブスクリプションと同様に有効期限があります。
+**サブスクリプションの有効期限が切れた** Microsoft 365 Defenderアクセス中にメッセージが表示された場合は、オンライン サービス サブスクリプションの有効期限が切れています。 Microsoft Defender for Endpointサブスクリプションには、他のオンライン サービス サブスクリプションと同様に、有効期限があります。
 
-ライセンスの更新または延長は、任意の時点で選択できます。 有効期限が切れた後にポータルにアクセスすると、サブスクリプションの有効期限が切れたメッセージが表示され、ライセンスを更新しない場合は、デバイスのオフボード パッケージをダウンロードするオプションが表示されます。
+ライセンスの更新または延長はいつでも選択できます。 有効期限後にポータルにアクセスすると、 **サブスクリプションの有効期限が切れた** というメッセージが表示され、デバイスオフボード パッケージをダウンロードするオプションが表示されます。ライセンスを更新しないことを選択した場合。
 
 > [!NOTE]
-> セキュリティ上の理由から、Offboard デバイスに使用されるパッケージは、ダウンロード日から 30 日後に期限切れになります。 デバイスに送信された期限切れのオフボード パッケージは拒否されます。 オフボード パッケージをダウンロードすると、パッケージの有効期限が通知され、パッケージ名にも含まれます。
+> セキュリティ上の理由から、オフボード デバイスに使用されるパッケージは、ダウンロード日の 30 日後に期限切れになります。 デバイスに送信された期限切れのオフボード パッケージは拒否されます。 オフボード パッケージをダウンロードすると、パッケージの有効期限が通知され、パッケージ名にも含まれます。
 
 :::image type="content" source="images/atp-subscription-expired.png" alt-text="サブスクリプションの有効期限が切れた通知メッセージ" lightbox="images/atp-subscription-expired.png":::
 
-## <a name="you-are-not-authorized-to-access-the-portal"></a>ポータルへのアクセスが承認されていない
+## <a name="you-are-not-authorized-to-access-the-portal"></a>ポータルにアクセスする権限がありません
 
-ポータルへのアクセスが承認されていない場合、Microsoft Defender for Endpoint はセキュリティ監視、インシデント調査、応答製品であり、アクセスはユーザーによって制限および制御されます。
-詳細については、「ユーザー アクセスをポータルに [**割り当てる」を参照してください**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)。
+**ポータルへのアクセスを許可されていないユーザーを** 受け取った場合は、Microsoft Defender for Endpointがセキュリティ監視、インシデント調査、対応製品であるため、アクセスが制限され、ユーザーによって制御されていることに注意してください。
+詳細については、「 [**ポータルへのユーザー アクセスの割り当て」を**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)参照してください。
 
-:::image type="content" source="images/atp-not-authorized-to-access-portal.png" alt-text="アクセスが禁止された通知メッセージ" lightbox="images/atp-not-authorized-to-access-portal.png":::
+:::image type="content" source="images/atp-not-authorized-to-access-portal.png" alt-text="アクセスが許可されていない通知メッセージ" lightbox="images/atp-not-authorized-to-access-portal.png":::
 
-## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>現在、ポータルの一部のセクションでデータを使用できない
+## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>現在、ポータルの一部のセクションではデータを使用できません
 
-ポータル ダッシュボードや他のセクションに「現在データが使用できない」などのエラー メッセージが表示される場合は、次の手順を実行します。
+ポータル ダッシュボードとその他のセクションに、"現在使用できないデータ" などのエラー メッセージが表示される場合:
 
-:::image type="content" source="images/atp-data-not-available.png" alt-text="データの利用不能通知メッセージ" lightbox="images/atp-data-not-available.png":::
+:::image type="content" source="images/atp-data-not-available.png" alt-text="データの利用不可通知メッセージ" lightbox="images/atp-data-not-available.png":::
 
-Web ブラウザーで、その下のすべての `security.windows.com` サブドメインを許可する必要があります。 たとえば、「 `*.security.windows.com` 」のように入力します。
+Web ブラウザーで、その下にあるすべてのサブドメインを許可 `security.windows.com` する必要があります。 たとえば、「 `*.security.windows.com` 」のように入力します。
 
 ## <a name="portal-communication-issues"></a>ポータル通信の問題
 
-ポータルへのアクセス、不足しているデータ、またはポータルの一部へのアクセス制限に関する問題が発生した場合は、次の URL が許可され、通信のために開いているか確認する必要があります。
+ポータルへのアクセス、データの不足、またはポータルの一部へのアクセスの制限に関する問題が発生した場合は、次の URL が許可され、通信用に開かれていることを確認する必要があります。
 
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`

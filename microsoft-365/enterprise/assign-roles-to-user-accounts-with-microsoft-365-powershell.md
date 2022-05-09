@@ -158,7 +158,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayNam
   Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
-    このコマンドは、UPN で並べ替えられたユーザー アカウントの UPN を一度に 1 画面ずつ一覧表示します。 **Where** コマンドレットを使用して、リストをフィルター処理できます。 次に例を示します:
+    このコマンドは、UPN で並べ替えられたユーザー アカウントの UPN を一度に 1 画面ずつ一覧表示します。 **Where** コマンドレットを使用して、リストをフィルター処理できます。 次に例を示します。
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More

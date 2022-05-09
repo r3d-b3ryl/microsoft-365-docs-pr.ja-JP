@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint の Web 脅威に対応する
-description: 悪意のある Web サイトや望ましくない Web サイトに関連するアラートに応答します。 Web 脅威保護がエンド ユーザーに Web ブラウザーを介して通知し、通知を受け取る方法Windows理解する
-keywords: Web 保護、Web 脅威保護、Web 閲覧、アラート、応答、セキュリティ、フィッシング、マルウェア、悪用、Web サイト、ネットワーク保護、エッジ、Internet Explorer、Chrome、Firefox、Web ブラウザー、通知、エンド ユーザー、Windows 通知、ブロック ページ、
+title: Microsoft Defender for Endpointで Web の脅威に対応する
+description: 悪意のある Web サイトや不要な Web サイトに関連するアラートに応答します。 Web 脅威保護が Web ブラウザーとWindows通知を通じてエンド ユーザーに通知する方法を理解する
+keywords: Web 保護, Web 脅威保護, Web 閲覧, アラート, 応答, セキュリティ, フィッシング, マルウェア, エクスプロイト, Web サイト, ネットワーク保護, Edge, Internet Explorer, Chrome, Firefox, Web ブラウザー, 通知, エンド ユーザー, Windows通知, ブロック ページ,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,16 +32,16 @@ ms.locfileid: "64467535"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Microsoft Defender for Endpoint の Web 保護を使用すると、カスタム インジケーター リスト内の悪意のある Web サイトや Web サイトに関連するアラートを効率的に調査して対応できます。
+Microsoft Defender for Endpointの Web 保護を使用すると、カスタム インジケーター リスト内の悪意のある Web サイトや Web サイトに関連するアラートを効率的に調査して対応できます。
 
-## <a name="view-web-threat-alerts"></a>Web 脅威アラートの表示
+## <a name="view-web-threat-alerts"></a>Web 脅威アラートを表示する
 
-Microsoft Defender for Endpoint は、悪意のある Web アクティビティまたは疑 [わしい](manage-alerts.md) Web アクティビティに関する次のアラートを生成します。
+Microsoft Defender for Endpoint、悪意のある Web アクティビティまたは疑わしい Web アクティビティに対して次の[アラート](manage-alerts.md)が生成されます。
 
-- **ネットワーク保護によって** ブロックされる疑わしい接続: このアラートは、カスタム インジケーター リスト内の悪意のある Web サイトまたは Web サイトへのアクセスがブロック  モードでネットワーク保護によって停止された場合 *に生成* されます。
-- **ネットワーク保護によって検出** された疑わしい接続: このアラートは、悪意のある Web サイトまたはカスタム インジケーター リスト内の Web サイトにアクセスしようとした場合に、監査専用モードでネットワーク保護によって検出された場合 *に生成* されます。
+- **ネットワーク保護によってブロックされた疑わしい接続**: このアラートは、悪意のある Web サイトまたはカスタム インジケーター リスト内の Web サイトへのアクセス試行が *ブロック* モードでネットワーク保護によって *停止* されたときに生成されます
+- **ネットワーク保護によって検出された疑わしい接続**: このアラートは、悪意のある Web サイトまたはカスタム インジケーター リスト内の Web サイトへのアクセス試行が *、監査専用* モードのネットワーク保護によって検出されたときに生成されます。
 
-各アラートは、次の情報を提供します。
+各アラートには、次の情報が提供されます。
 
 - ブロックされた Web サイトにアクセスしようとしたデバイス
 - Web 要求の送信に使用されるアプリケーションまたはプログラム
@@ -51,36 +51,36 @@ Microsoft Defender for Endpoint は、悪意のある Web アクティビティ�
 :::image type="content" source="images/wtp-alert.png" alt-text="Web 脅威保護に関連するアラート" lightbox="images/wtp-alert.png":::
 
 > [!NOTE]
-> Microsoft Defender for Endpoint は、アラートの量を減らすために、同じデバイス上の同じドメインの Web 脅威検出を毎日 1 つのアラートに統合します。 1 つのアラートだけが生成され、 [Web 保護レポートにカウントされます](web-protection-monitoring.md)。
+> アラートの量を減らすために、Microsoft Defender for Endpointは、同じデバイス上の同じドメインの Web 脅威検出を毎日 1 つのアラートに統合します。 1 つのアラートのみが生成され、 [Web 保護レポート](web-protection-monitoring.md)にカウントされます。
 
-## <a name="inspect-website-details"></a>Web サイトの詳細を検査する
+## <a name="inspect-website-details"></a>Web サイトの詳細を調べる
 
-アラートで Web サイトの URL またはドメインを選択すると、より深く掘り下げできます。 これにより、次に示すさまざまな情報を含む特定の URL またはドメインに関するページが開きます。
+アラートで Web サイトの URL またはドメインを選択することで、詳細を確認できます。 これにより、次のようなさまざまな情報を含む特定の URL またはドメインに関するページが開きます。
 
 - Web サイトにアクセスしようとしたデバイス
 - Web サイトに関連するインシデントとアラート
-- 組織のイベントで Web サイトが表示された頻度
+- 組織内のイベントで Web サイトが表示された頻度
 
   :::image type="content" source="images/wtp-website-details.png" alt-text="ドメインまたは URL エンティティの詳細ページ" lightbox="images/wtp-website-details.png":::
 
-[URL またはドメイン エンティティ ページの詳細](investigate-domain.md)
+[URL またはドメイン エンティティのページの詳細](investigate-domain.md)
 
-## <a name="inspect-the-device"></a>デバイスを検査する
+## <a name="inspect-the-device"></a>デバイスを調べる
 
 ブロックされた URL にアクセスしようとしたデバイスを確認することもできます。 アラート ページでデバイスの名前を選択すると、デバイスに関する包括的な情報を含むページが開きます。
 
 [デバイス エンティティ ページの詳細](investigate-machines.md)
 
-## <a name="web-browser-and-windows-notifications-for-end-users"></a>エンド ユーザー向Windows Web ブラウザーと通知
+## <a name="web-browser-and-windows-notifications-for-end-users"></a>エンド ユーザーの Web ブラウザーとWindows通知
 
-Microsoft Defender for Endpoint の Web 保護を使用すると、エンド ユーザーが悪意のある Web サイトや望ましくない web サイトにアクセスする場合は、Microsoft Edgeブラウザーを使用してアクセスできません。 ブロックはネットワーク保護によって実行 [されるの](network-protection.md)で、Web ブラウザーから一般的なエラーが表示されます。 また、ユーザーからの通知も表示Windows。
+Microsoft Defender for Endpointの Web 保護により、エンド ユーザーは、Microsoft Edgeやその他のブラウザーを使用して悪意のある Web サイトや望ましくない Web サイトにアクセスできなくなります。 ブロックは [ネットワーク保護](network-protection.md)によって実行されるため、Web ブラウザーから一般的なエラーが表示されます。 また、Windowsからの通知も表示されます。
 
-:::image type="content" source="images/wtp-browser-blocking-page.png" alt-text="403 Microsoft Edgeを示すメッセージと、エラー通知Windowsします。" lightbox="images/wtp-browser-blocking-page.png":::
+:::image type="content" source="images/wtp-browser-blocking-page.png" alt-text="403 エラーを示すMicrosoft EdgeとWindows通知" lightbox="images/wtp-browser-blocking-page.png":::
 
-*Web の脅威がブロックされているMicrosoft Edge*
+*Microsoft Edgeでブロックされた Web 脅威*
 
-:::image type="content" source="images/wtp-chrome-browser-blocking-page.png" alt-text="セキュリティで保護された接続の警告を示す Chrome web ブラウザーと、セキュリティで保護Windows通知" lightbox="images/wtp-chrome-browser-blocking-page.png":::
-*Chrome でブロックされた Web の脅威*
+:::image type="content" source="images/wtp-chrome-browser-blocking-page.png" alt-text="セキュリティで保護された接続の警告とWindows通知を示す Chrome Web ブラウザー" lightbox="images/wtp-chrome-browser-blocking-page.png":::
+*Chrome でブロックされた Web 脅威*
 
 ## <a name="related-topics"></a>関連項目
 

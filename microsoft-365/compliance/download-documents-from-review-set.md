@@ -1,5 +1,5 @@
 ---
-title: レビュー セットからドキュメントをダウンロードする
+title: レビューセットからドキュメントをダウンロードする
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips

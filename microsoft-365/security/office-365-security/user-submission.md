@@ -147,7 +147,7 @@ Microsoft Defender for Office 365がある場合は、高度なフィルター�
 - 2|または迷惑ではない:
 - 3|またはフィッシング:
 
-次に例を示します。
+例:
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`

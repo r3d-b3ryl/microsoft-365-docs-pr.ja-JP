@@ -1,7 +1,7 @@
 ---
 title: ASR ルールの展開と検出を最適化する
-description: 攻撃表面の縮小 (ASR) ルールを最適化して、一般的なマルウェアの悪用を特定して防止します。
-keywords: オンボード、Intune 管理、Microsoft Defender for Endpoint、Microsoft Defender、Windows Defender、攻撃表面の縮小、ASR、セキュリティ ベースライン
+description: 攻撃面の削減 (ASR) ルールを最適化して、一般的なマルウェアの悪用を特定して防止します。
+keywords: オンボード, Intune管理, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, 攻撃面の削減, ASR, セキュリティ ベースライン
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -33,31 +33,31 @@ ms.locfileid: "64468261"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-[攻撃表面の縮小 (ASR) ルールは、一](./attack-surface-reduction.md) 般的なマルウェアの悪用を特定して防止します。 悪意のあるコードを実行できる可能性のある時間と方法を制御します。 たとえば、JavaScript または VBScript がダウンロードした実行可能ファイルを起動したり、Office マクロからの Win32 API 呼び出しをブロックしたり、USB ドライブから実行されるプロセスをブロックしたりすることができます。
+[攻撃表面の削減 (ASR) ルールは](./attack-surface-reduction.md) 、一般的なマルウェアの悪用を識別し、防止します。 悪意のあるコードを実行できるタイミングと方法を制御します。 たとえば、JavaScript または VBScript がダウンロードした実行可能ファイルを起動できないようにしたり、Office マクロからの Win32 API 呼び出しをブロックしたり、USB ドライブから実行されるプロセスをブロックしたりできます。
 
 
 :::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="攻撃表面管理カード" lightbox="../../media/attack-surface-mgmt.png":::
 <br>
 *攻撃表面管理カード*
 
-攻撃 *表面管理カードは*、次の方法で使用できる Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ツール</a>のエントリ ポイントです。
+*攻撃表面管理カード* は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>のツールのエントリ ポイントであり、次の操作に使用できます。
 
-* ASR ルールが現在組織に展開されている方法について説明します。
+* ASR ルールが現在組織でどのように展開されているかを理解します。
 * ASR 検出を確認し、誤った検出の可能性を特定します。
 * 除外の影響を分析し、除外するファイル パスの一覧を生成します。
 
-[ **Go to attack surface management Reports** \> **Attack** \> **surface reduction rules Add** \> **exclusions] を選択します**。 そこから、ポータルの他のセクションMicrosoft 365 Defenderできます。
+[**Go to attack surface management** \> **Reports** \> **Attack surface reduction rules** **Add exclusions]\(除外を**\>追加する\) を選択します。 そこから、Microsoft 365 Defender ポータルの他のセクションに移動できます。
 
-:::image type="content" source="images/secconmgmt_asr_m365exlusions.png" alt-text="サイト ポータルの [攻撃表面縮小ルール] ページの [除外] タブをMicrosoft 365 Defenderする" lightbox="images/secconmgmt_asr_m365exlusions.png":::<br>
-ポータル ***の [攻撃表面縮小** ルール] ページの [除外のMicrosoft 365 Defender]*
+:::image type="content" source="images/secconmgmt_asr_m365exlusions.png" alt-text="Microsoft 365 Defender ポータルの [攻撃対象の縮小ルール] ページの [除外の追加] タブ" lightbox="images/secconmgmt_asr_m365exlusions.png":::<br>
+*Microsoft 365 Defender ポータルの [攻撃対象の縮小ルール] ページの [**除外の追加**] タブ*
 
 > [!NOTE]
-> ポータルにMicrosoft 365 Defenderするには、Microsoft 365 E3または E5 ライセンスと、ユーザーに対して特定の役割を持つアカウントがAzure Active Directory。 [必要なライセンスとアクセス許可についてお読みください](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+> Microsoft 365 Defender ポータルにアクセスするには、Microsoft 365 E3または E5 ライセンスと、Azure Active Directoryで特定のロールを持つアカウントが必要です。 [必要なライセンスとアクセス許可について説明します](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
-ASR ルールの展開の詳細については、「<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>Microsoft 365 Defender ASR ルールの展開と検出の監視と[管理」を参照してください](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>での ASR ルールのデプロイの詳細については、「[ASR ルールのデプロイと検出の監視と管理](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)」を参照してください。
 
 **関連トピック**
 
 * [デバイスが正しく構成されていることを確認する](configure-machines.md)
-* [Microsoft Defender for Endpoint にオンボードされているデバイスを取得する](configure-machines-onboarding.md)
-* [Microsoft Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを監視する](configure-machines-security-baseline.md)
+* [Microsoft Defender for Endpointにオンボードされたデバイスを取得する](configure-machines-onboarding.md)
+* [Microsoft Defender for Endpointセキュリティ ベースラインへのコンプライアンスを監視する](configure-machines-security-baseline.md)

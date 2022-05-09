@@ -44,7 +44,7 @@ Microsoft 365では、次の種類の自動転送を使用できます。
 
 送信スパム フィルター ポリシーを使用して、外部受信者への自動転送を制御できます。 次の 3 つの設定を使用できます。
 
-- **自動 - システム制御**: これは既定の設定です。 この設定は **オフ** と同じになりました。 この設定が最初に導入されたときは、 **On** と同等でした。 時間の経過と共に、 [既定ではセキュリティ保護](secure-by-default.md)の原則のおかげで、この設定は、すべての顧客に対して徐々に **[オフ]** に変更されました。 詳細については、 [このブログ投稿](https://techcommunity.microsoft.com/t5/exchange-team-blog/all-you-need-to-know-about-automatic-email-forwarding-in/ba-p/2074888)を参照してください。
+- **自動 - システム制御**: これは既定の設定です。 この設定は **オフ** と同じになりました。 この設定が最初に導入されたときは、 **On** と同等でした。 時間の経過と共に、 [既定ではセキュリティ保護](secure-by-default.md)の原則のおかげで、この設定は、すべての顧客に対して徐々に **[オフ]** に変更されました。 詳細については、[このブログ投稿](https://techcommunity.microsoft.com/t5/exchange-team-blog/all-you-need-to-know-about-automatic-email-forwarding-in/ba-p/2074888)を参照してください。
 - **オン**: 自動外部転送は許可され、制限されません。
 - **オフ**: 自動外部転送が無効になり、配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) が送信者に送信されます。
 
@@ -57,7 +57,7 @@ Microsoft 365では、次の種類の自動転送を使用できます。
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>送信スパム フィルター ポリシー設定が他の自動メール転送制御とどのように連携するか
 
-管理者は、自動メール転送を許可またはブロックする他のコントロールを既に構成している可能性があります。 次に例を示します。
+管理者は、自動メール転送を許可またはブロックする他のコントロールを既に構成している可能性があります。 例:
 
 - [一](/exchange/mail-flow-best-practices/remote-domains/remote-domains) 部またはすべての外部ドメインへの自動メール転送を許可またはブロックするリモート ドメイン。
 - 外部受信者に自動的に転送されたメッセージを検出してブロックする[Exchangeメール フロー](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) ルール (トランスポート ルールとも呼ばれます) の条件とアクション。

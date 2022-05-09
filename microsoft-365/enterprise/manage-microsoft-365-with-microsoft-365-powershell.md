@@ -34,7 +34,7 @@ PowerShell for Microsoft 365は、Microsoft 365 管理センターを補完す�
 
 PowerShell を使用してMicrosoft 365を管理する方法については、次のトピックから選択してください。
   
-- [**開始する**](getting-started-with-microsoft-365-powershell.md)
+- [**作業の開始**](getting-started-with-microsoft-365-powershell.md)
 
     PowerShell for Microsoft 365に慣れていない場合に、Microsoft 365 モジュールをインストールしてサブスクリプションに接続する場合は、ここから開始します。
 

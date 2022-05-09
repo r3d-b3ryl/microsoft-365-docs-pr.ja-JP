@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/06/2022
 ms.locfileid: "64664680"
 ---
-# <a name="configure-defender-for-endpoint-on-android-features"></a>Android の機能で Defender for Endpoint を構成する
+# <a name="configure-defender-for-endpoint-on-android-features"></a>Android 機能用 Defender for Endpoint を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

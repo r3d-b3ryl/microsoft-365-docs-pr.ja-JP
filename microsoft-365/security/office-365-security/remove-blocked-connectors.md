@@ -127,7 +127,7 @@ Get-BlockedConnector -ConnectorId <connectorId>
 Remove-BlockedConnector -ConnectorId <connectorId>
 ```
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - [侵害されたコネクタに対応する](respond-compromised-connector.md)
 - [ブロックされたユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)

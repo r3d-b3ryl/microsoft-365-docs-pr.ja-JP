@@ -141,7 +141,7 @@ Microsoft 365環境には、マルウェアに対する保護が含まれてい�
 
 マルウェアの保護を強化するには、マルウェアでよく使用されるファイルの種類を含む添付ファイルをブロックします。 メールでマルウェア保護を強化するには、 [短いトレーニング ビデオ](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail)を表示するか、次の手順を実行します。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、[ポリシー **] セクション****の [電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **マルウェア対策**] に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、[**ポリシー**] セクションの [**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**マルウェア対策**] に移動します。
 2. [ **マルウェア対策** ] ページで、[既定値] をダブルクリック **します**。 ポップアップが表示されます。
 3. ポップアップの下部にある [ **保護設定の編集]** を選択します。
 4. 次のページの [ **保護の設定**] で、[ **共通の添付ファイル フィルターを有効にする]** の横にあるチェック ボックスをオンにします。 ブロックされているファイルの種類は、このオプションのすぐ下に一覧表示されます。 ファイルの種類を追加または削除するには、リストの末尾にある **[ファイルの種類のカスタマイズ** ] を選択します。
@@ -161,7 +161,7 @@ Microsoft Defender ウイルス対策は強力なウイルス対策とマルウ�
 
 これらの機能は、2022 年 3 月 1 日以降、Microsoft 365 Business Premiumのお客様へのロールアウトを開始するオファリングであるMicrosoft Defender for Businessに含まれています。
 
-[Microsoft Defender for Businessの詳細については、こちらを参照してください](../../security/defender-business/mdb-overview.md)。
+[Intune と Microsoft Defender for Endpoint についての詳細情報](../../security/defender-business/mdb-overview.md)。
 
 ## <a name="protect-against-ransomware"></a>ランサムウェアから保護する
 
@@ -264,7 +264,7 @@ Microsoft 365環境用に 1 つ以上のカスタム ドメインを構成した
 |処理の選択|偽装されたユーザーから電子メールが送信された場合: [ **別の電子メール アドレスにメッセージをリダイレクト** する] を選択し、セキュリティ管理者の電子メール アドレスを入力します。たとえば、securityadmin@contoso.com。 <br/> 偽装されたドメインによって電子メールが送信される場合は、[ **検疫メッセージ]** を選択します。|
 |メールボックス インテリジェンス|既定では、新しいフィッシング対策ポリシーの作成時にはメールボックス インテリジェンスが選択されています。 最適な結果が得られるように、この設定は **[オン]** のままにしておいてください。|
 |信頼できる送信者とドメインの追加|この例では、オーバーライドは定義しません。|
-|適用先|**[受信者のドメインが次の場合]** を選択します。 **[これらのいずれか]** では、**[選択]** を選択します。 **[+ 追加]** を選択します。 一覧でドメインの名前の横にあるチェック ボックス (contoso.com など) を選択し、[ **追加**] を選択します。 [**完了**] を選択します。|
+|適用先|**[受信者のドメインが次の場合]** を選択します。 **[これらのいずれか]** では、**[選択]** を選択します。 **[+ 追加]** を選択します。 一覧でドメインの名前の横にあるチェック ボックス (contoso.com など) を選択し、[ **追加**] を選択します。 **[完了]** を選択します。|
 
 > [!TIP]
 > 詳細については、「[Defender for Office 365でのフィッシング対策ポリシーの設定](../../security/office-365-security/configure-atp-anti-phishing-policies.md)」を参照してください。
@@ -343,7 +343,7 @@ Microsoft 365 Business Premiumを使用すると、デバイス管理や高度�
 
 詳細については、次のリソースを参照してください。
 
-- [Microsoft Defender for Business の概要](../../security/defender-business/mdb-overview.md)
+- [Microsoft Defender for Businessの概要](../../security/defender-business/mdb-overview.md)
 
 - [Microsoft Defender for Businessの設定と構成](../../security/defender-business/mdb-setup-configuration.md)
 

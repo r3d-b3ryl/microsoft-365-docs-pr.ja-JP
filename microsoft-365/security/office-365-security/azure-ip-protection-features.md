@@ -65,7 +65,7 @@ Office 365 メッセージ暗号化では、Azure Information Protectionの保�
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>Active Directory Rights Management サービス (AD RMS) で Azure Information Protectionを使用できますか?
 
-その必要はありません。 これは、サポートされているデプロイ シナリオではありません。 追加のオプトアウト手順を実行しないと、一部のコンピューターで Azure Rights Management サービスの使用が自動的に開始され、AD RMS クラスターにも接続される場合があります。 このシナリオはサポートされておらず、信頼性の低い結果が得られないため、これらの新機能をロールアウトする前に、今後 30 日以内にこの変更をオプトアウトすることが重要です。 オプトアウトする方法については、「AD RMS を使用する方法、オプトアウトする方法」を参照してください。 」で説明する手順に従ってローカライズされたファイルをインストールします。 移行する場合は、「[AD RMS から Azure Information Protectionへの移行](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)」を参照してください。
+いいえ。 これは、サポートされているデプロイ シナリオではありません。 追加のオプトアウト手順を実行しないと、一部のコンピューターで Azure Rights Management サービスの使用が自動的に開始され、AD RMS クラスターにも接続される場合があります。 このシナリオはサポートされておらず、信頼性の低い結果が得られないため、これらの新機能をロールアウトする前に、今後 30 日以内にこの変更をオプトアウトすることが重要です。 オプトアウトする方法については、「AD RMS を使用する方法、オプトアウトする方法」を参照してください。 」で説明する手順に従ってローカライズされたファイルをインストールします。 移行する場合は、「[AD RMS から Azure Information Protectionへの移行](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)」を参照してください。
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>AD RMS を使用しているかどうかを確認操作方法。
 

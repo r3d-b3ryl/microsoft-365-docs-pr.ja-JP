@@ -37,7 +37,7 @@ Microsoft 365 Business Standard サブスクリプションの管理者は、同
 > [!Note]
 > Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「[管理者ロールを割り当てる](../add-users/assign-admin-roles.md)」 をご覧ください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 [Microsoft 365 Business StandardまたはMicrosoft 365 Apps for businessに](signup-business-standard.md)既にサインアップしていることを確認します。 [また、Business Standard 組織](../setup/setup-business-standard.md)または[セットアップ Microsoft 365 Apps for business](../setup/setup-apps-for-business.md)が既に設定されていることを確認します。 これらの手順を完了したら、ユーザーに招待を共有できます。
 

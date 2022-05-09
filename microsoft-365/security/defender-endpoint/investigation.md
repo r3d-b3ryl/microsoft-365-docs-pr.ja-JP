@@ -1,7 +1,7 @@
 ---
 title: 調査リソースの種類
-description: Microsoft Defender for Endpoint Investigation エンティティ。
-keywords: apis、graph api、サポートされている API、get、アラート、調査
+description: Microsoft Defender for Endpoint調査エンティティ。
+keywords: apis, graph api, サポートされている API, get, alerts, investigations
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -39,31 +39,31 @@ ms.locfileid: "63327225"
 
 Defender for Endpoint の自動調査エンティティを表します。
 
-詳細については、「自動調査 [の概要」を参照してください](automated-investigations.md)。
+詳細については、「 [自動調査の概要](automated-investigations.md)」を参照してください。
 
 ## <a name="methods"></a>メソッド
 
 メソッド|戻り値の型|説明
 :---|:---|:---
-[リスト調査](get-investigation-collection.md)|調査コレクション|調査のコレクションを取得する
-[単一の調査を取得する](get-investigation-object.md)|調査エンティティ|単一の Investigation エンティティを取得します。
+[調査の一覧表示](get-investigation-collection.md)|調査コレクション|調査のコレクションを取得する
+[1 つの調査を取得する](get-investigation-object.md)|調査エンティティ|1 つの調査エンティティを取得します。
 [調査の開始](initiate-autoir-investigation.md)|調査エンティティ|デバイスで調査を開始します。
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ|型|説明
+プロパティ|種類|説明
 :---|:---|:---
 ID|String|調査エンティティの ID。 
 startTime|DateTime Nullable|調査が作成された日時。
 endTime|DateTime Nullable|調査が完了した日時。
 cancelledBy|String|その調査を取り消したユーザー/アプリケーションの ID。
-State|列挙|調査の現在の状態。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''
+状態|列挙|調査の現在の状態。 指定できる値は、"不明"、"終了済み" です。 'SuccessfullyRemediated'、'Benign'、'Failed'、'PartiallyRemediated'、'Running'、'PendingApproval'、'PendingResource'、'PartiallyInvestigated'、'TerminatedByUser'、'TerminatedBySystem'、'Queued'、'InnerFailure'、'PreexistingAlert'、'UnsupportedAlertType'、'SuppressedAlert'。
 statusDetails|String|調査の状態に関する追加情報。
 machineId|String|調査が実行されるデバイスの ID。
 computerDnsName|String|調査が実行されるデバイスの名前。
 triggeringAlertId|String|調査をトリガーしたアラートの ID。
 
-## <a name="json-representation"></a>Json 表記
+## <a name="json-representation"></a>Json 表現
 
 ```json
 {

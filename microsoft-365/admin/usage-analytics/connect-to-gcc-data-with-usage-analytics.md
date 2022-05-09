@@ -36,7 +36,7 @@ ms.locfileid: "60179807"
 > [!NOTE]
 > これらの手順は、Microsoft 365 GCC テナント専用です。 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 Microsoft 365 Usage Analytics を最初に構成するには: 
 

@@ -27,7 +27,7 @@ ms.locfileid: "65023659"
 
 Microsoft 365 Lighthouseでは、パートナーは、すべてのテナントにわたる脅威を調査し、軽減できます。 また、デバイスでウイルス対策スキャンを開始したり、デバイスがMicrosoft Defender ウイルス対策の最新の更新プログラムを取得していることを確認したり、ウイルス対策スキャン後に保留中のアクションを確認したりできます。 Lighthouse では、Windows 10 以降を実行しているデバイスのみがサポートされます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Microsoft 365 Lighthouseは、顧客テナントではなく、パートナー テナントにのみ展開されますが、お客様と顧客テナントが[、Microsoft 365 Lighthouse要件](m365-lighthouse-requirements.md)に記載されている要件を満たしていることを確認してください。
 

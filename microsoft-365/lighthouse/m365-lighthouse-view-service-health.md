@@ -29,7 +29,7 @@ Microsoft 365 Lighthouseで管理するテナントのサービス正常性を�
 
 Lighthouse にサインインできない場合は、[Microsoft 365 サービスの正常性状態ページ](https://status.office365.com/)を使用して、パートナー テナントにログインできない既知の問題を確認できます。 また、Twitter で [@MSFT365status](https://twitter.com/MSFT365Status) に従ってサインアップし、特定のサービス インシデントに関する情報を表示します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 サービスの正常性を表示するには、**microsoft.office365.serviceHealth/allEntities/allTasks** というプロパティセットを持つパートナー テナントのAzure AD ロールが必要です。 Azure AD ロールの一覧については、[組み込みロールAzure AD](/azure/active-directory/roles/permissions-reference)参照してください。
 

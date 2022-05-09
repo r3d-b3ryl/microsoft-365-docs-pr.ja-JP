@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender セキュリティ センターセキュリティ操作ダッシュボード
-description: ダッシュボードを使用して、危険にさらされているデバイスを特定し、サービスの状態を追跡し、デバイスとアラートに関する統計情報と情報を確認します。
-keywords: ダッシュボード、アラート、新規、進行中、解決済み、リスク、リスクのあるデバイス、感染、レポート、統計、グラフ、グラフ、正常性、アクティブなマルウェア検出、脅威カテゴリ、カテゴリ、パスワード盗用、ランサムウェア、悪用、脅威、重要度の低い、アクティブ なマルウェア
+title: Microsoft Defender セキュリティ センター セキュリティ操作ダッシュボード
+description: ダッシュボードを使用して、危険にさらされているデバイスを識別し、サービスの状態を追跡し、デバイスとアラートに関する統計情報と情報を確認します。
+keywords: ダッシュボード, アラート, 新規, 進行中, 解決済み, リスク, リスクのあるデバイス, 感染, レポート, 統計, グラフ, 正常性, アクティブなマルウェア検出, 脅威カテゴリ, カテゴリ, パスワード盗難, ランサムウェア, エクスプロイト, 脅威, 重要度の低い, アクティブなマルウェア
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,7 +21,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64472641"
 ---
-# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender セキュリティ センターセキュリティ操作ダッシュボード
+# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender セキュリティ センター セキュリティ操作ダッシュボード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,98 +31,98 @@ ms.locfileid: "64472641"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
-セキュリティ **操作ダッシュボードでは** 、エンドポイントの検出および応答機能が表示されます。 検出がどこで見られたかの概要と、応答アクションが必要な場所を強調表示します。
+**セキュリティ操作ダッシュボード** は、エンドポイントでの検出と対応機能が表示される場所です。 検出が見られた場所の概要と、応答アクションが必要な場所を強調します。
 
 ダッシュボードには、次のスナップショットが表示されます。
 
 - アクティブなアラート
-- 危険にさらされているデバイス
+- 危険なデバイス
 - センサーの正常性
 - サービス正常性
-- 毎日のデバイスレポート
+- 毎日のデバイス レポート
 - アクティブな自動調査
-- 自動調査の統計
+- 自動調査統計
 - リスクにさらされているユーザー
-- 疑わしいアクティビティ
+- 不審なアクティビティ
 
 :::image type="content" source="images/atp-sec-ops-dashboard.png" alt-text="セキュリティ操作ダッシュボード" lightbox="images/atp-sec-ops-dashboard.png":::
 
-アラートとデバイスを調査して調査し、ネットワーク内で疑わしいアクティビティが発生したかどうかを迅速に判断し、それが表示されたコンテキストを理解するのに役立ちます。
+アラートとデバイスを調べて調査し、ネットワーク内で疑わしいアクティビティが発生したかどうか、場所、タイミングをすばやく判断して、それらが出現したコンテキストを理解するのに役立ちます。
 
-セキュリティ操作 **ダッシュボードには、** デバイス上の重要なイベントや動作を識別するための集約イベントが表示されます。 詳細なイベントと低レベルインジケーターをドリルダウンすることもできます。
+**セキュリティ操作ダッシュボード** には、デバイス上の重大なイベントまたは動作を識別しやすくするために、集計されたイベントが表示されます。 詳細なイベントと低レベルのインジケーターにドリルダウンすることもできます。
 
-また、クリック可能なタイルを使用して、組織の全体的な正常性状態に視覚的な手がかりを与えます。 各タイルは、対応する概要の詳細なビューを開きます。
+また、組織の全体的な正常性状態を視覚的に示すクリック可能なタイルもあります。 各タイルで、対応する概要の詳細ビューが開きます。
 
 ## <a name="active-alerts"></a>アクティブなアラート
 
-ネットワーク内の過去 30 日間のアクティブなアラートの全体数をタイルから表示できます。 アラートは、[新規] と **[進行中] に****グループ化されます**。
+ネットワーク内の過去 30 日間のアクティブなアラートの合計数をタイルから表示できます。 アラートは、[ **新規]** と **[進行中]** にグループ化されます。
 
-:::image type="content" source="images/active-alerts-tile.png" alt-text="[アクティブな通知] ページ" lightbox="images/active-alerts-tile.png":::
+:::image type="content" source="images/active-alerts-tile.png" alt-text="[アクティブなアラート] ページ" lightbox="images/active-alerts-tile.png":::
 
-各グループは、対応するアラートの重大度レベルにさらにサブ分類されます。 各アラート リング内のアラートの数をクリックすると、そのカテゴリのキューの並べ替えビューが表示されます (**新規** または **進行中**)。
+各グループはさらに、対応するアラート重大度レベルに分類されます。 各アラート リング内のアラートの数をクリックすると、そのカテゴリのキュー (**新規** または **進行中**) の並べ替えられたビューが表示されます。
 
-詳細については、「アラートの概要 [」を参照してください](alerts-queue.md)。
+詳細については、「アラートの [概要」を](alerts-queue.md)参照してください。
 
-各行には、アラートの重大度カテゴリと、アラートの簡単な説明が含まれます。 アラートをクリックすると、その詳細なビューが表示されます。 詳細については、「  [Investigate Microsoft Defender for Endpoint alerts and](investigate-alerts.md) [Alerts overview」を参照してください](alerts-queue.md)。
+各行には、アラートの重大度カテゴリとアラートの簡単な説明が含まれます。 アラートをクリックすると、その詳細ビューを表示できます。 詳細については、「アラートと[アラートの概要Microsoft Defender for Endpoint調査](investigate-alerts.md)する」[を参照してください](alerts-queue.md)。
 
-## <a name="devices-at-risk"></a>危険にさらされているデバイス
+## <a name="devices-at-risk"></a>危険なデバイス
 
-このタイルには、アクティブなアラートの数が最も多いデバイスの一覧が表示されます。 各デバイスのアラートの総数は、デバイス名の横の円に表示され、さらにタイルの端にある重大度レベル別に分類されます (各重大度バーにカーソルを合わせると、ラベルが表示されます)。
+このタイルには、アクティブなアラートの数が最も多いデバイスの一覧が表示されます。 各デバイスのアラートの合計数は、デバイス名の横の円に表示され、タイルの左端の重大度レベルでさらに分類されます (各重大度バーにマウス ポインターを合わせると、ラベルが表示されます)。
 
 :::image type="content" source="images/devices-at-risk-tile.png" alt-text="[危険なデバイス] ページ" lightbox="images/devices-at-risk-tile.png":::
 
-デバイスの名前をクリックすると、そのデバイスの詳細が表示されます。 詳細については、「 [Microsoft Defender for Endpoint Devices」リストの「デバイスを調査する」を参照してください](investigate-machines.md)。
+デバイスの名前をクリックすると、そのデバイスの詳細が表示されます。 詳細については、「[Microsoft Defender for Endpoint デバイスの一覧でデバイスを調査する」を参照してください](investigate-machines.md)。
 
-タイルの上部にある **[デバイス一** 覧] をクリックして、[デバイス] リストに直接移動し、アクティブなアラートの数で並べ替えすることもできます。 詳細については、「 [Microsoft Defender for Endpoint Devices」リストの「デバイスを調査する」を参照してください](investigate-machines.md)。
+タイルの上部にある [ **デバイス一覧** ] をクリックして、[ **デバイス] リスト** に直接移動し、アクティブなアラートの数で並べ替えることができます。 詳細については、「[Microsoft Defender for Endpoint デバイスの一覧でデバイスを調査する」を参照してください](investigate-machines.md)。
 
 ## <a name="devices-with-sensor-issues"></a>センサーの問題があるデバイス
 
-[ **センサーの問題があるデバイス]** タイルは、Microsoft Defender for Endpoint サービスにセンサー データを提供する個々のデバイスの機能に関する情報を提供します。 注意が必要なデバイスの数を報告し、問題のあるデバイスを特定するのに役立ちます。
+[**センサーの問題があるデバイス]** タイルには、Microsoft Defender for Endpoint サービスにセンサー データを提供する個々のデバイスの機能に関する情報が表示されます。 注意が必要なデバイスの数が報告され、問題のあるデバイスを特定するのに役立ちます。
 
 :::image type="content" source="images/atp-tile-sensor-health.png" alt-text="[センサーの問題があるデバイス] タイル" lightbox="images/atp-tile-sensor-health.png":::
 
-サービスに適切に報告されていないデバイスの数に関する情報を提供する 2 つの状態インジケーターがあります。
+サービスに正しく報告されていないデバイスの数に関する情報を提供する状態インジケーターは 2 つあります。
 
-- **正しく構成されていない**: これらのデバイスは、部分的にセンサー データを Microsoft Defender for Endpoint サービスに報告している可能性があります。また、修正が必要な構成エラーが発生している可能性があります。
-- **非** アクティブ: 過去 1 か月で 7 日間以上 Microsoft Defender for Endpoint サービスへの報告を停止したデバイス。
+- **正しく構成されていない**: これらのデバイスは、センサー データをMicrosoft Defender for Endpoint サービスに部分的に報告している可能性があり、修正する必要がある構成エラーが発生する可能性があります。
+- **非アクティブ**: 過去 1 か月間に 7 日間以上、Microsoft Defender for Endpoint サービスへのレポートを停止したデバイス。
 
-グループをクリックすると、選択に応じてフィルター処理されたデバイスの一覧が表示されます。 詳細については、「センサーの状態を [確認する」および「デバイスの](check-sensor-status.md) 調査 [」を参照してください](investigate-machines.md)。
+いずれかのグループをクリックすると、デバイスの一覧に移動し、選択した内容に従ってフィルター処理されます。 詳細については、「 [センサーの状態を確認](check-sensor-status.md) する」と「 [デバイスの調査](investigate-machines.md)」を参照してください。
 
 ## <a name="service-health"></a>サービス正常性
 
-[ **サービス正常性]** タイルは、サービスがアクティブか、または問題が発生した場合に通知します。
+**サービス正常性** タイルは、サービスがアクティブかどうか、または問題が発生した場合に通知します。
 
-:::image type="content" source="images/status-tile.png" alt-text="[サービスの正常性] ページ" lightbox="images/status-tile.png":::
+:::image type="content" source="images/status-tile.png" alt-text="[サービス正常性] ページ" lightbox="images/status-tile.png":::
 
-サービスの正常性の詳細については、「 [Check the Microsoft Defender for Endpoint service health」を参照してください](service-status.md)。
+サービス正常性の詳細については、「[Microsoft Defender for Endpointサービスの正常性を確認する](service-status.md)」を参照してください。
 
-## <a name="daily-devices-reporting"></a>毎日のデバイスレポート
+## <a name="daily-devices-reporting"></a>毎日のデバイス レポート
 
-[ **日次デバイスのレポート** ] タイルには、過去 30 日間の毎日のデバイスレポートの数を表す棒グラフが表示されます。 グラフ上の個々のバーにカーソルを合わせると、1 日にレポートするデバイスの正確な数が表示されます。
+**[日次デバイスレポート**] タイルには、過去 30 日間に毎日報告されたデバイスの数を表す棒グラフが表示されます。 グラフ上の個々のバーにマウス ポインターを合わせると、毎日のデバイス レポートの正確な数が表示されます。
 
-:::image type="content" source="images/atp-daily-devices-reporting.png" alt-text="毎日のデバイスレポート タイル" lightbox="images/atp-daily-devices-reporting.png":::
+:::image type="content" source="images/atp-daily-devices-reporting.png" alt-text="[日次デバイスレポート] タイル" lightbox="images/atp-daily-devices-reporting.png":::
 
 ## <a name="active-automated-investigations"></a>アクティブな自動調査
 
-[アクティブな自動調査] タイルから、ネットワーク内の過去 30 日間の自動調査の全体数 **を表示** できます。 調査は、保留中のアクション **、デバイスの** 待機、および実行中にグループ **化されます**。
+ネットワーク内の過去 30 日間の自動調査の合計数は、[ **アクティブな自動調査]** タイルから確認できます。 調査は、[ **保留中] アクション**、[ **デバイスの待機中**]、[実行中] にグループ化 **されます**。
 
 :::image type="content" source="images/atp-active-investigations-tile.png" alt-text="アクティブな自動調査" lightbox="images/atp-active-investigations-tile.png":::
 
-## <a name="automated-investigations-statistics"></a>自動調査の統計
+## <a name="automated-investigations-statistics"></a>自動調査統計
 
-このタイルには、過去 7 日間の自動調査に関連する統計が表示されます。 完了した調査の数、正常に修復された調査の数、調査の開始に要する平均保留中の時間、アラートの修復にかかる平均時間、調査したアラートの数、および一般的な手動調査から保存された自動化の時間数を示します。 
+このタイルには、過去 7 日間の自動調査に関連する統計情報が表示されます。 完了した調査の数、正常に修復された調査の数、調査の開始に要する平均保留中時間、アラートの修復にかかる平均時間、調査されたアラートの数、一般的な手動調査から保存された自動化の時間数を示します。 
 
 :::image type="content" source="images/atp-automated-investigations-statistics.png" alt-text="自動調査の統計" lightbox="images/atp-automated-investigations-statistics.png":::
 
-[自動調査]**、**[修復された調査]、および [調査されたアラート] をクリックして、[調査]  ページに移動し、適切なカテゴリでフィルター処理します。  これにより、状況に合った調査の詳細な内訳を確認できます。
+[ **自動調査**]、[ **修復された調査**]、[ **調査されたアラート]** をクリックして、[ **調査** ] ページに移動し、適切なカテゴリでフィルター処理できます。 これにより、コンテキスト内の調査の詳細な内訳を確認できます。
 
 ## <a name="users-at-risk"></a>リスクにさらされているユーザー
 
-タイルには、最もアクティブなアラートを含むユーザー アカウントの一覧と、高、中、低のアラートに表示されるアラートの数が表示されます。 
+タイルには、最もアクティブなアラートを含むユーザー アカウントの一覧と、高、中、または低のアラートに表示されるアラートの数が表示されます。 
 
-:::image type="content" source="images/atp-users-at-risk.png" alt-text="[危険にさらされているユーザー] ページ" lightbox="images/atp-users-at-risk.png":::
+:::image type="content" source="images/atp-users-at-risk.png" alt-text="[危険なユーザー] ページ" lightbox="images/atp-users-at-risk.png":::
 
-ユーザー アカウントをクリックすると、ユーザー アカウントの詳細が表示されます。 詳細については、「 [ユーザー アカウントの調査」を参照してください](investigate-user.md)。
+ユーザー アカウントをクリックすると、ユーザー アカウントの詳細が表示されます。 詳細については、「 [ユーザー アカウントを調査する」を](investigate-user.md)参照してください。
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
@@ -130,5 +130,5 @@ ms.locfileid: "64472641"
 
 - [Microsoft Defender for Endpoint ポータルについて](use.md)
 - [ポータルの概要](portal-overview.md)
-- [[脅威の管理] &のダッシュボードを表示する](tvm-dashboard-insights.md)
-- [脅威分析ダッシュボードを表示し、推奨される軽減アクションを実行する](threat-analytics.md)
+- [脅威&脆弱性管理ダッシュボードを表示する](tvm-dashboard-insights.md)
+- [脅威分析ダッシュボードを表示し、推奨される軽減策を実行する](threat-analytics.md)

@@ -127,7 +127,7 @@ ms.locfileid: "64667342"
 
    :::image type="content" source="../../media/mtp-eval-27.png" alt-text="Microsoft 365 E5[今すぐ試す] ボタンをクリックして開始する必要がある [無料試用版の開始] ページ" lightbox="../../media/mtp-eval-27.png":::
  
-6. **Microsoft 365 管理** **CenterUsersActive** >  ユーザーに > 移動 **します**。 ユーザー アカウントを選択し、[**製品ライセンスの管理**] を選択し、ライセンスをOffice 365 E5から **Microsoft 365 E5** にスワップします。 **[保存]** をクリックします。
+6. **Microsoft 365 管理** **CenterUsersActive** >  ユーザーに > 移動 **します**。 ユーザー アカウントを選択し、[**製品ライセンスの管理**] を選択し、ライセンスをOffice 365 E5から **Microsoft 365 E5** にスワップします。 [**保存**] をクリックします。
 
    :::image type="content" source="../../media/mtp-eval-28.png" alt-text="Microsoft 365 E5 ライセンスを選択できる [Microsoft 365 管理 センター] ページ" lightbox="../../media/mtp-eval-28.png":::
  
@@ -139,6 +139,6 @@ ms.locfileid: "64667342"
 
    :::image type="content" source="../../media/mtp-eval-30.png" alt-text="ドメイン設定を変更できる [Microsoft 365 管理 センター] ページ" lightbox="../../media/mtp-eval-30.png":::
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 |[フェーズ 3: オンボード&構成する](config-m365d-eval.md) | Microsoft 365 Defender試用版ラボまたはパイロット環境の各Microsoft 365 Defenderの柱を構成し、エンドポイントをオンボードします。
 |:-------|:-----|

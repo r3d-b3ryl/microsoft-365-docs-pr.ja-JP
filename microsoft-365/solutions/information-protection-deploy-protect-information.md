@@ -32,7 +32,7 @@ ms.locfileid: "64943285"
 
 - 秘密度ラベル
 - Microsoft Purview データ損失防止 (DLP)
-- Microsoft Purview メッセージ暗号化
+- Microsoft Purview のメッセージの暗号化
 - Teamsとサイトのアクセス制御
 
 ![データプライバシー規制の対象となる個人情報を保護するための主要なサービス。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
@@ -67,7 +67,7 @@ Microsoft 365の情報保護スキームの使用を開始するために、次�
 Microsoft [の情報保護ソリューション](../compliance/information-protection.md)には、Microsoft 365、Microsoft Azure、および Microsoft Windowsにわたるさまざまな統合機能が含まれています。 Microsoft 365では、情報保護ソリューションには次のものが含まれます。
 
 - [機密情報の種類](../compliance/sensitive-information-type-entity-definitions.md) ([データプライバシー リスクの評価と機密アイテムの特定に関する記事](information-protection-deploy-assess.md)で説明されています)
-- [機密ラベル](../compliance/sensitivity-labels.md)
+- [秘密度ラベル](../compliance/sensitivity-labels.md)
   - サービス/コンテナー レベル
   - クライアント側/コンテンツ レベル
   - SharePointとOneDriveの保存データ用に自動化

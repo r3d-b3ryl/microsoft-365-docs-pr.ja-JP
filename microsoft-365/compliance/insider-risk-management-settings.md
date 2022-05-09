@@ -279,7 +279,7 @@ API を使用してインサイダー リスク アラート情報を確認す�
 - Id
 - RecordType
 - CreationTime
-- 操作
+- 操作​​
 - OrganizationId
 - UserType
 - UserKey

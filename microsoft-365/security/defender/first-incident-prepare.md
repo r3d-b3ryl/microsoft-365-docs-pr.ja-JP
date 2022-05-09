@@ -55,7 +55,7 @@ Microsoft 365 Defenderのコンポーネントは、Microsoft Defender for Endpo
 
 自動化は、ゼロ トラスト環境の実装と保守の重要な部分であり、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数を減らします。 Microsoft 365 Defenderのコンポーネントは、[修復アクション](m365d-autoir.md) (Microsoft 365 Defender ポータルでのインシデントの調査と呼ばれます)、通知アクション、[ServiceNow](https://microsoft.service-now.com/sp/) などのサポート チケットの作成など、自動化できます。
 
-## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2. 組織のセキュリティ体制を決定する
+## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2。 組織のセキュリティ体制を決定する
 
 次に、組織は、Microsoft 365 Defenderで [Microsoft Secure Score](microsoft-secure-score.md) を使用して、現在のセキュリティ体制を決定し、それを改善する方法に関する推奨事項を検討できます。 スコアが高いほど、組織によって実行されたセキュリティに関する推奨事項と改善アクションが多くなります。 セキュリティスコアに関する推奨事項は、さまざまな製品で取得でき、組織はスコアをさらに高くすることができます。
 
@@ -85,7 +85,7 @@ Microsoft 365 Defender ポータルで[脅威分析](threat-analytics.md)を使�
 
 スケジュールに時間を取って、Microsoft 365 Defender ポータルの [Threat Analytics](threat-analytics.md) セクションを定期的に確認します。 詳細については、[Microsoft 365 Defenderのセキュリティ操作の例](incidents-overview.md#example-security-operations-for-microsoft-365-defender)を参照してください。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [インシデントをトリアージして分析する](first-incident-analyze.md)方法について説明します。
 

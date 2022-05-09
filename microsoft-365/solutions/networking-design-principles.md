@@ -104,7 +104,7 @@ TLS 接続 (そのうちの 32) を強制的に VPN 経由にしてからサー�
 
 分割トンネリングを許可する一方で、一般的な Web トラフィック用のプロキシも使用する場合は、PAC ファイルで直接実行する必要がある内容と、VPN トンネルを通過する対象の興味深いトラフィックを定義する方法が定義されていることを確認します。 サンプル PAC ファイル [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) を提供することで、これを簡単に管理できます。
 
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>終わりに
 
 ほとんどのフォーチュン 500 を含む何万もの組織が、ミッション クリティカルな機能のために毎日Office 365を使用しています。 セキュリティで保護され、インターネット経由で行われます。
 
@@ -118,7 +118,7 @@ TLS 接続 (そのうちの 32) を強制的に VPN 経由にしてからサー�
 
 [Office 365 エンドポイントの管理](../enterprise/managing-office-365-endpoints.md)
 
-[Office 365 IP アドレスと URL の Web サービス](../enterprise/microsoft-365-ip-web-service.md)
+[Office 365 IP アドレスと URL の Web サービス ](../enterprise/microsoft-365-ip-web-service.md)
 
 [Office 365 のネットワーク接続の評価](../enterprise/assessing-network-connectivity.md)
 

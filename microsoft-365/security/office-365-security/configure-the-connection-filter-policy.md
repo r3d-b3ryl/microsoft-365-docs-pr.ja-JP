@@ -63,7 +63,7 @@ Exchange Onlineのメールボックスを持つMicrosoft 365顧客、またはE
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 許可またはブロックする電子メール サーバー (送信者) の送信元 IP アドレスを確認するには、メッセージ ヘッダーの接続 IP (**CIP**) ヘッダー フィールドを確認します。 さまざまな電子メール クライアントでメッセージ ヘッダーを表示するには、「[Outlookでインターネット メッセージ ヘッダーを表示する](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)」を参照してください。
 
@@ -123,7 +123,7 @@ Exchange Onlineのメールボックスを持つMicrosoft 365顧客、またはE
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
 ```
 
-**注**:
+**注意**:
 
 - 有効な IP アドレスまたはアドレス範囲の値は次のとおりです。
   - 単一 IP: たとえば、192.168.1.1 です。
@@ -180,7 +180,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 通常、IP アドレスまたはアドレス範囲を IP 許可リストに追加すると、その電子メール ソースからのすべての受信メッセージが信頼されます。 しかし、そのソースが複数のドメインから電子メールを送信し、それらのドメインの一部に対してスパム フィルター処理をスキップしたいが、他のドメインには送信しない場合はどうでしょうか。 IP 許可リストだけを使用してこれを行うことはできませんが、IP 許可リストをメール フロー ルールと組み合わせて使用できます。
 
-たとえば、送信元電子メール サーバー 192.168.1.25 は、ドメイン contoso.com、fabrikam.com、tailspintoys.com から電子メールを送信しますが、fabrikam.com の送信者からのメッセージのスパム フィルター処理のみをスキップします。 これを行うには、次の手順に従います。
+たとえば、送信元電子メール サーバー 192.168.1.25 は、ドメイン contoso.com、fabrikam.com、tailspintoys.com から電子メールを送信しますが、fabrikam.com の送信者からのメッセージのスパム フィルター処理のみをスキップします。 これを行うには、次の手順を実行します。
 
 1. IP 許可リストに 192.168.1.25 を追加します。
 

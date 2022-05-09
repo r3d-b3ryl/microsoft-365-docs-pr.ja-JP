@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/19/2022
 ms.locfileid: "64953828"
 ---
-# <a name="microsoft-purview-customer-lockbox"></a>Microsoft Purview Customer Lockbox
+# <a name="microsoft-purview-customer-lockbox"></a>Microsoft Purview カスタマー ロックボックス
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 

@@ -35,7 +35,7 @@ Intuneを使用して、macOS デバイスを Microsoft Purview ソリューシ�
 - [エンドポイントのデータ損失防止](./endpoint-dlp-learn-about.md)
 - [インサイダー リスク管理](insider-risk-management.md)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - [macOS デバイスがIntuneにオンボード](/mem/intune/fundamentals/deployment-guide-platform-macos)され、[ポータル サイト アプリ](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)に登録されていることを確認します。 
 - [Microsoft エンドポイント マネージャー センター](https://endpoint.microsoft.com/#home)にアクセスできることを確認します。

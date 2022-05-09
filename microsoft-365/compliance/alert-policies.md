@@ -74,7 +74,7 @@ Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 D
 
 ### <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータル
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、**[メールと共同作業]** で **[ポリシーとルール]** > **[アラート ポリシー]** の順に選択します。 または、<https://security.microsoft.com/alertpolicies> に直接移動することもできます。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、**[メールと共同作業]** で **[ポリシーとルール]** > **[アラート ポリシー]** の順に選択します。または、<https://security.microsoft.com/alertpolicies> に直接移動することもできます。
 
 ![Defender ポータルで、[メールと共同作業] にある [電子メール &コラボレーション] で [ポリシーとルール] を選択し、[アラート ポリシー] を選択してアラート ポリシーを表示および作成します。](../media/LaunchAlertPoliciesDefenderPortal.png)
 

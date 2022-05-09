@@ -116,7 +116,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-その必要はありません。
+いいえ。
 
 ### <a name="description"></a>説明
 
@@ -214,7 +214,7 @@ Dictionary
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="description"></a>説明
 
@@ -457,7 +457,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -850,7 +850,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1501,7 +1501,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1885,7 +1885,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1944,7 +1944,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -2804,7 +2804,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4034,7 +4034,7 @@ cód. segurança
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -7049,7 +7049,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -8205,7 +8205,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -9380,7 +9380,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -9579,7 +9579,7 @@ Dictionary
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -9623,7 +9623,7 @@ Dictionary
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -10194,7 +10194,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -11403,7 +11403,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -13087,7 +13087,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -15450,7 +15450,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -15614,7 +15614,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -18754,7 +18754,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 

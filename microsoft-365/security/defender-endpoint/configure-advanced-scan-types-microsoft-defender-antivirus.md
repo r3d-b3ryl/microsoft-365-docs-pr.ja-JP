@@ -66,16 +66,16 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
 |---|---|---|
 |電子メール スキャン <p> **スキャン** \>**電子メール スキャンを有効にする**<p>[電子メール スキャンの制限事項を](#email-scanning-limitations)参照してください (この記事では)|無効|`-DisableEmailScanning`|
 | スクリプト スキャン | Enabled  | このポリシー設定を使用すると、スクリプト スキャンを構成できます。 この設定を有効または未構成にすると、スクリプト スキャンが有効になります。 <p>[Defender/AllowScriptScanning を](/windows/client-management/mdm/policy-csp-defender)参照してください  | 
-|[再解析ポイントをスキャンする](/windows/win32/fileio/reparse-points) <p> **スキャン** \>**再解析ポイントスキャンを有効にする**|無効|使用不可 <p>[Reparse ポイントを](/windows/win32/fileio/reparse-points)参照してください|
+|[再解析ポイントをスキャンする](/windows/win32/fileio/reparse-points) <p> **スキャン** \>**再解析ポイントスキャンを有効にする**|無効|利用不可 <p>[Reparse ポイントを](/windows/win32/fileio/reparse-points)参照してください|
 |マップされたネットワーク ドライブをスキャンする <p> **スキャン** \>**マップされたネットワーク ドライブでフル スキャンを実行する**|無効|`-DisableScanningMappedNetworkDrivesForFullScan`|
 |アーカイブ ファイル (.zip ファイルや.rar ファイルなど) をスキャンします。 <p> **スキャン** \>**アーカイブ ファイルをスキャンする**|Enabled|`-DisableArchiveScanning` <p>[拡張機能の除外リスト](configure-extension-file-exclusions-microsoft-defender-antivirus.md)は、この設定よりも優先されます。|
 |ネットワーク上のファイルをスキャンする <p> **スキャン** \>**ネットワーク ファイルをスキャンする**|無効|`-DisableScanningNetworkFiles`|
-|パックされた実行可能ファイルをスキャンする <p> **スキャン** \>**パックされた実行可能ファイルをスキャンする**|Enabled|使用不可|
+|パックされた実行可能ファイルをスキャンする <p> **スキャン** \>**パックされた実行可能ファイルをスキャンする**|Enabled|利用不可|
 |フル スキャン時にのみリムーバブル ドライブをスキャンする <p> **スキャン** \>**リムーバブル ドライブをスキャンする**|無効|`-DisableRemovableDriveScanning`|
 |スキャンするアーカイブ フォルダー内のサブフォルダーのレベルを指定する <p>**スキャン** \>**アーカイブ ファイルをスキャンする最大深度を指定する**|0|利用不可|
 |スキャン中の最大 CPU 負荷 (パーセンテージ) を指定します。 <p> **スキャン** \>**スキャン中の CPU 使用率の最大割合を指定する**|50|`-ScanAvgCPULoadFactor` <p>**注**: CPU の最大負荷はハード制限ではありませんが、スキャン エンジンが平均で最大を超えないようにするためのガイダンスです。 手動でスキャンを実行すると、この設定は無視され、CPU 制限なしで実行されます。|
-|スキャンするアーカイブ ファイルの最大サイズ (キロバイト単位) を指定します。 <p> **スキャン** \>**スキャンするアーカイブ ファイルの最大サイズを指定する**|無制限|使用不可 <p>既定値の 0 は、制限なしで適用されます|
-|スケジュールされたスキャンの CPU 優先度を低く構成する <p> **スキャン** \>**スケジュールされたスキャンの CPU 優先度を低く構成する**|無効|使用不可|
+|スキャンするアーカイブ ファイルの最大サイズ (キロバイト単位) を指定します。 <p> **スキャン** \>**スキャンするアーカイブ ファイルの最大サイズを指定する**|無制限|利用不可 <p>既定値の 0 は、制限なしで適用されます|
+|スケジュールされたスキャンの CPU 優先度を低く構成する <p> **スキャン** \>**スケジュールされたスキャンの CPU 優先度を低く構成する**|無効|利用不可|
 
 > [!NOTE]
 > リアルタイム保護が有効になっている場合、ファイルにアクセスして実行される前にファイルがスキャンされます。 スキャン スコープには、USB ドライブなどのマウントされたリムーバブル メディア上のファイルを含むすべてのファイルが含まれます。 スキャンを実行するデバイスにリアルタイム保護またはオンアクセス保護が有効になっている場合、スキャンにはネットワーク共有も含まれます。
@@ -112,13 +112,13 @@ Microsoft Defender ウイルス対策電子メール メッセージ内で脅威
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 

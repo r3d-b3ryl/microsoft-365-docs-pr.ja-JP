@@ -97,7 +97,7 @@ ms.locfileid: "65094484"
 <tr class="header">
 <th>機能</th>
 <th>代替ツール</th>
-<th>Comments</th>
+<th>コメント</th>
 </tr>
 </thead>
 <tbody>
@@ -200,7 +200,7 @@ Exchange管理センターで 2017 年 7 月 1 日に発表された当初の通
 <tr class="header">
 <th>機能</th>
 <th>代替ツール</th>
-<th>Comments</th>
+<th>コメント</th>
 </tr>
 </thead>
 <tbody>
@@ -225,7 +225,7 @@ Exchange管理センターで 2017 年 7 月 1 日に発表された当初の通
 </tr>
 <tr class="odd">
 <td>検索結果を探索メールボックスにコピーする</td>
-<td>None</td>
+<td>なし</td>
 <td>この機能は、すべてのMicrosoft 365 サービスにアクセスできるわけではないため、直接置き換える必要はありません。 代替ソリューションについては、以下の FAQ を参照してください。</td>
 </tr>
   <tr class=even>
@@ -279,7 +279,7 @@ Exchange Online PowerShell の **Search-Mailbox** コマンドレットは、201
 <tr class="header">
 <th>機能</th>
 <th>代替ツール</th>
-<th>Comments</th>
+<th>コメント</th>
 </tr>
 </thead>
 <tbody>
@@ -354,7 +354,7 @@ Exchange Web Services API のこれらの操作は、Exchange管理センター�
 
 Microsoft 365の新しい電子情報開示 (プレミアム) ソリューション (*電子情報開示 (プレミアム) v2.0* とも呼ばれます) は、元のソリューションのすべての機能を提供しますが、他のMicrosoft 365のコンテンツを識別するカストディアンベースのアプローチが含まれています サービスを収集し、そのコンテンツを収集し、レビュー セットに追加して、レビュー担当者が高速検索クエリ、タグ付け、分析機能を利用して、関連するドキュメントをカリングできるようにします。 電子情報開示 (プレミアム) には、Microsoft と Microsoft 以外の両方のファイルの種類の処理とネイティブ ビューアーが強化されました。ファイルの種類の完全な一覧が[ここに](./supported-filetypes-ediscovery20.md)表示され、サポートされているメタデータ フィールドが[ここに表示](./document-metadata-fields-in-advanced-ediscovery.md)されます。 また、新しい電子情報開示 (プレミアム) ソリューションは、さまざまなサービスのコンテンツに保留を適用したり、保留をユーザーに通知したり、電子情報開示 (プレミアム) ケース内で管理担当者の応答を追跡したりできる強力なカストディアン保留管理機能を提供します。
 
-電子情報開示 (プレミアム) v2.0 にアクセスするには:
+電子情報開示 (Premium) v2.0 にアクセスするには:
 
 コンプライアンス ポータルに移動し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**eDiscoveryAdvanced**</a> >  を選択して、電子情報開示 (Standard) ケースを開きます。
 

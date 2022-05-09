@@ -34,7 +34,7 @@ ms.locfileid: "64713803"
 
 この記事では、学校の資格を確認し、資格の状態を確認し、学校が承認された後に学術価格でサブスクリプションを購入する方法について説明します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 Microsoft 365 Education試用版サブスクリプションを既に持っている必要があります。 試用版サブスクリプションをお持ちでない場合は、[この Web ページにアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1)し、**無料で概要** を選択します。
 

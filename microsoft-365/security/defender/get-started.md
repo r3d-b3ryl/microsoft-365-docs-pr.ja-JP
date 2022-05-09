@@ -1,8 +1,8 @@
 ---
 title: Microsoft 365 Defender の使用を開始する
 ms.reviewer: ''
-description: ユーザー設定の開始に必要な手順について説明Microsoft 365 Defender
-keywords: get started, microsoft 365 defender, turn on, onboard, deploy
+description: Microsoft 365 Defenderの使用を開始するために必要な手順について説明します
+keywords: get started, Microsoft 365 Defender, ターンオン, オンボード, デプロイ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -34,30 +34,30 @@ ms.locfileid: "64499927"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defenderは、企業全体のセキュリティを監視および管理できる統合エクスペリエンスです。 ID、エンドポイント、データ、アプリ、電子メール、およびコラボレーション ツールにわたる統合されたアラートにより、脅威の調査と対応が一元的な場所で行える。 
+Microsoft 365 Defenderは、企業全体のセキュリティを監視および管理できる統合エクスペリエンスです。 ID、エンドポイント、データ、アプリ、電子メール、コラボレーション ツール全体にわたる統合アラートにより、脅威の調査と対応が一元的な場所で行われるようになりました。 
 
-Microsoft スイートのセキュリティ製品を初めて使用する場合でも、個々のワークフローに精通している場合でも、このトピックでは、Microsoft 365 Defender の使用を開始するために必要な簡単な手順について説明します。
+Microsoft のセキュリティ製品スイートを初めて使用する場合でも、個々のワークフローに精通している場合でも、このトピックでは、Microsoft 365 Defenderの使用を開始するために必要な簡単な手順について説明します。
 
-:::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="ポータルの使用を開始するMicrosoft 365 Defender手順" lightbox="../../media/mtp/get-started-m365d.png":::
+:::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="Microsoft 365 Defender ポータルを使用する手順" lightbox="../../media/mtp/get-started-m365d.png":::
 
-一般に、開始するには、次の手順を実行する必要があります。
+一般に、次の手順に従って作業を開始する必要があります。
 
-- **[手順 1: 電源を入Microsoft 365 Defender](m365d-enable.md)** <br>
-    最初に、適切なライセンスが設定され、役割が割り当てられているので、ポータルにアクセスするには、サービスを有効にする必要があります。 
+- **[手順 1: Microsoft 365 Defenderを有効にする](m365d-enable.md)** <br>
+    まず、ポータルにアクセスできるように適切なライセンスとロールが割り当てられていることを確認して、サービスを有効にする必要があります。 
 
-    その後、いくつかの簡単な設定を実行し、サービスがオンに設定されているのを確認できます。
+    その後、いくつかの簡単な設定を実行し、サービスがオンになっていることを確認できます。
 
-- **[手順 2: サポートされているサービスを展開する](deploy-supported-services.md)** <br>
-    最初の手順を完了した後、サポートされているサービスを展開する必要Microsoft 365 Defender。 サービスを展開すると、ネットワーク全体の資産からの信号の可視性が効果的に向上します。
+- **[手順 2: サポートされているサービスをデプロイする](deploy-supported-services.md)** <br>
+    最初の手順を完了したら、Microsoft 365 Defenderに付属するサポートされているサービスをデプロイする必要があります。 サービスをデプロイすると、ネットワーク全体の資産からのシグナルの可視性が効果的に向上します。
 
 
 ## <a name="key-capabilities"></a>主な機能
-サービスのMicrosoft 365 Defender展開すると、次の主要な機能にアクセスできます。
+サービスのMicrosoft 365 Defenderとデプロイを有効にすると、次の主要な機能にアクセスできます。
 
 
 | 機能 | 説明 |
 | ------ | ------ |
 | Microsoft Defender for Endpoint | 強力な行動センサー、クラウド分析、脅威インテリジェンスを中心に構築されたエンドポイント保護スイート |
-|Microsoft Defender for Office 365 | 電子メールなどのコラボレーション ツールを含む、Office 365アプリとデータの高度な保護 |
-| Microsoft Defender for Identity | 関連付けされた Active Directory シグナルを使用して、高度な脅威、侵害された ID、悪意のあるインサイダーから防御する |
+|Microsoft Defender for Office 365 | メールやその他のコラボレーション ツールを含む、Office 365内のアプリとデータの高度な保護 |
+| Microsoft Defender for Identity | 高度な脅威、侵害された ID、悪意のあるインサイダーから、相関 Active Directory 信号を使用して防御する |
 | Microsoft Defender for Cloud Apps | Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定して対処する |

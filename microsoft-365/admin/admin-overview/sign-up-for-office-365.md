@@ -27,7 +27,7 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: アカウントのサインアップ プロセスを実行する前に知る必要があるOffice 365。
+description: Office 365のサインアップ プロセスを実行する前に、知っておくべきことを理解します。
 ms.date: 03/17/2021
 ms.openlocfilehash: 045540074b42b528c07d638d643f0d1b74e1f724
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
@@ -38,16 +38,16 @@ ms.locfileid: "63315891"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 
-チームが最新Microsoft 365バージョンの Word、Excel、PowerPoint、その他の Office プログラムの使用を開始できるよう、ビジネス向けOfficeサインアップします。
+チームが最新バージョンの Word、Excel、PowerPoint、その他のOffice プログラムの使用を開始できるように、ビジネス向けのMicrosoft 365にサインアップします。
 
 ::: moniker range="o365-21vianet"
 
-中国に滞在している場合、21Vianet Office 365は、中国のセキュリティで保護され、信頼性が高く、拡張性の高いクラウド サービスのニーズを満たします。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft はサービス自体を運用しません。 21Vianet により、サービスの運用、提供、および配信の管理が行われます。 21Vianet は、ホスティング、管理されたネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データセンター サービス プロバイダーです。 Microsoft テクノロジをライセンスすることで、21Vianet はローカルの Microsoft データセンターを運用し、中国内のデータを保持しながら、Microsoft サービスを使用できます。 21Vianet は、サブスクリプションサービスと課金サービス、およびサポートも提供します。
+中国にいる場合、21Vianet によって運用されているOffice 365は、中国の安全で信頼性が高く、スケーラブルなクラウド サービスのニーズを満たすように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft はサービス自体を運用しません。 21Vianet により、サービスの運用、提供、および配信の管理が行われます。 21Vianet は、ホスティング、マネージド ネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データ センター サービス プロバイダーです。 Microsoft テクノロジのライセンスを取得することで、21Vianet はローカルの Microsoft データセンターを運用し、中国内でデータを保持しながらMicrosoft サービスを使用する機能を提供します。 21Vianet では、サブスクリプションサービスと課金サービス、およびサポートも提供されます。
   
 > [!NOTE]
 > これらのサービスは中国の法律に従います。
   
-チームが最新バージョンの Word、Excel、PowerPoint、および他の Office プログラムの使用を開始できるよう、21Vianet が運営する Office 365 にサインアップします。
+チームが最新バージョンの Word、Excel、PowerPoint、その他のOffice プログラムの使用を開始できるように、21Vianet によって運用Office 365にサインアップします。
   
 サインアップする準備はできましたか? [プランを選択します](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
@@ -56,27 +56,27 @@ ms.locfileid: "63315891"
 ::: moniker range="o365-worldwide"
 ## <a name="choose-a-plan"></a>プランを選択する
 
-購入する前に、サインアップする計画にいくつかの考えをお入れください。 これにより、後で発生する問題を防ぐことができます。
+購入する前に、サインアップするプランに考えを入れます。 これにより、後で発生する問題を防ぐことができます。
 
-## <a name="watch-choose-a-microsoft-365-subscription"></a>ウォッチ: サブスクリプションをMicrosoft 365する
+## <a name="watch-choose-a-microsoft-365-subscription"></a>ウォッチ: Microsoft 365 サブスクリプションを選択する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
 このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
-プランの選択に関するヘルプが必要ですか? 営業コンサルタントが質問に答えます。 [すべての製品 [を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動し、ページの左側に表示されている連絡先サポート オプションのいずれかを選択します。
+プランの選択に関するヘルプが必要ですか? 営業コンサルタントが質問に答えます。 [[すべての製品の比較](https://products.office.com/compare-all-microsoft-office-products?tab=2)] に移動し、ページの左側に表示されている連絡先サポート オプションのいずれかを選択します。
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>無料試用版にサインアップするか、サブスクリプションを購入する準備ができましたか?
+## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>無料試用版にサインアップするか、サブスクリプションを購入する準備はできましたか?
 
-[すべての [製品を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動して、購入するプランを選択し、サインアップ ウィザードを開始します。 
+[[すべての製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2)] に移動して、購入するプランを選択し、サインアップ ウィザードを開始します。 
   
-無料試用版から始める場合は、後で [購入できます](../../commerce/try-or-buy-microsoft-365.md)。 すべてのユーザーと試用版のデータは削除されません。
+無料試用版から始める場合は、 [後で購入](../../commerce/try-or-buy-microsoft-365.md)できます。 すべてのユーザーと試用版のデータは削除されません。
   
-試用版をキャンセルする必要はない。 試用版サブスクリプションを購入しない場合は、試用期間の最後に自動的に有効期限が切れ、すべての情報が完全に削除されます。
+試用版を取り消す必要はありません。 試用版サブスクリプションを購入しない場合は、試用期間の終了時に自動的に有効期限が切れ、すべての情報が完全に削除されます。
 
 ## <a name="watch-sign-up-for-microsoft-365-business-premium"></a>ウォッチ: Microsoft 365 Business Premium にサインアップする
 
@@ -84,31 +84,31 @@ ms.locfileid: "63315891"
 
 ::: moniker-end
 
-## <a name="youll-be-asked-for-the-following-information-when-you-sign-up"></a>サインアップ時に次の情報を求めるメッセージが表示されます。
+## <a name="youll-be-asked-for-the-following-information-when-you-sign-up"></a>サインアップ時に次の情報を求められます
 
 - **サブスクリプションの住所と連絡先の情報:**
 
-  - **サービス** が使用される国。 サインアップ **プロセス中** でも、後で国を変更できない。サインアップ ウィザードを再起動する必要があります。
+  - サービスが使用される **国**。 サインアッププロセス中であっても、後で国を変更 **することはできません** 。サインアップ ウィザードを再起動する必要があります。
 
   - サブスクリプションに関する確認など、Microsoft から管理者に連絡する場合に使用する、 **メール アドレス** と **電話番号** 。管理者がパスワードを忘れた場合などに、この情報を使って仮のパスワードが送信されます。また、指定したメール アドレスに課金情報が送信されます。
 
     > [!NOTE]
-    > ここで入力する電子メール アドレスは、ユーザーのMicrosoft 365 (以下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
+    > ここで入力するメール アドレスは、Microsoft 365のメール アドレス (以下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
   
-- **サインイン名 (ユーザー ID):** このユーザー ID は、Microsoft 365開始するために、最初のメール アドレスになります。
+- **サインイン名 (ユーザー ID):** このユーザー ID は、すぐに使い始めるために、最初のMicrosoft 365メール アドレスになります。
 
     このユーザー ID は、サインインに使用する電子メール アドレスです。 たとえば会社名が「Fourth Coffee」の場合には、ユーザー ID として rob@fourthcoffee.onmicrosoft.com を選ぶことができます。
 
-    ほとんどのユーザーは、サインアップ直後に独自のカスタム ドメインを追加し、電子メールの取得を開始できます。 たとえば、fourthcoffee.com というカスタム ドメインがある場合に、メール アドレスを rob@fourthcoffee.com に設定することができます。
+    ほとんどのユーザーは、サインアップ直後に独自のカスタム ドメインを追加して、メールを受け取り始めることができます。 たとえば、fourthcoffee.com というカスタム ドメインがある場合に、メール アドレスを rob@fourthcoffee.com に設定することができます。
 
 - **支払情報**
 
-    サブスクリプションの支払いはクレジット カードで行います。 料金が一定の額に達した場合は、請求書でお支払いいただくというオプションもあります。
+    クレジット カードを使用してサブスクリプションの料金を支払うことができます。 料金が一定の額に達した場合は、請求書でお支払いいただくというオプションもあります。
 
     > [!IMPORTANT]
-    >  サインアップする場合は、組織に最適な支払い方法を選択してください。 支払いオプションを変更するには、課金サポートに連絡する必要があります。
+    >  サインアップするときは、組織に最適な支払い方法を選択してください。 支払いオプションを変更するには、課金サポートに連絡する必要があります。
 
-## <a name="watch-set-up-microsoft-365-business-premium"></a>ウォッチ: 設定Microsoft 365 Business Premium
+## <a name="watch-set-up-microsoft-365-business-premium"></a>ウォッチ: Microsoft 365 Business Premiumを設定する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 

@@ -225,6 +225,6 @@ Microsoft は、パフォーマンス、セキュリティ、新機能を提供�
 
 特定のアプリケーションからの高い I/O ワークロードでは、Microsoft Defender for Endpointインストール時にパフォーマンスの問題が発生する可能性があります。 これには、Jenkins や Jira などの開発者シナリオ用のアプリケーションや、OracleDB や Postgres などのデータベース ワークロードが含まれます。 パフォーマンスの低下が発生する場合は、信頼されたアプリケーションの除外を設定することを検討し、[Microsoft Defender ウイルス対策の一般的な除外ミス](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)を考慮してください。 その他のガイダンスについては、サード パーティ製アプリケーションからのウイルス対策の除外に関するドキュメントを参照することを検討してください。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 - ログ、アンインストール、またはその他のトピックの詳細については、「 [リソース](linux-resources.md)」を参照してください。

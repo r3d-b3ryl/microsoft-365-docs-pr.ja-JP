@@ -101,7 +101,7 @@ ms.locfileid: "65215795"
 - フィッシング対策ポリシー内の新しい最初の連絡先安全性のヒント設定。 この安全性のヒントは、受信者が最初に送信者から電子メールを受信したとき、または送信者から電子メールを受信しない場合に表示されます。 この設定とその構成方法の詳細については、次の記事を参照してください。
   - [最初の連絡先安全性のヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)
   - [EOP でのスパム対策ポリシーの構成](configure-anti-phishing-policies-eop.md)
-  - [Microsoft Defender for Office 365でフィッシング対策ポリシーを構成する](configure-mdo-anti-phishing-policies.md)
+  - [詳細については、「Microsoft Defender for Office 365 のフィッシング対策ポリシーを構成する」を参照してください。](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>2021 年 4 月/5 月
 

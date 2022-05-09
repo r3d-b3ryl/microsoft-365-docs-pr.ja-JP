@@ -148,15 +148,15 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@co
 |---|---|
 |オンプレミスで管理される配布リスト|いいえ|
 |入れ子になった配布リスト子グループがあるか、または別のグループのメンバーである配布リスト|いいえ|
-|**UserMailbox、SharedMailbox**、**TeamMailbox**、**MailUser** 以外 **のメンバー RecipientTypeDetails** を含む配布リスト|不要|
-|100 を超える所有者を持つ配布リスト|不要|
-|メンバーのみが含まれるが所有者がいない配布リスト|不要|
+|**UserMailbox、SharedMailbox**、**TeamMailbox**、**MailUser** 以外 **のメンバー RecipientTypeDetails** を含む配布リスト|いいえ|
+|100 を超える所有者を持つ配布リスト|いいえ|
+|メンバーのみが含まれるが所有者がいない配布リスト|いいえ|
 |特殊文字を含むエイリアスを持つ配布リスト|いいえ|
 |配布リストが共有メールボックスの転送アドレスになるように構成されている場合|不要|
 |DL が別の DL の **送信者制限** の一部である場合。|いいえ|
 |セキュリティ グループ|いいえ|
 |動的配布リスト|いいえ|
-|**RoomLists** に変換された配布リスト|不要|
+|**RoomLists** に変換された配布リスト|いいえ|
 
 ### <a name="check-which-dls-are-eligible-for-upgrade"></a>アップグレードの対象となる DLs を確認する
 

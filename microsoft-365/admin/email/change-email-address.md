@@ -26,7 +26,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: ドメイン名を購入し、ドメイン名に追加して、tom@fourthcoffee.com のようなフレンドリーなメール アドレスに電子メール アドレスをMicrosoft 365。
+description: ドメイン名を購入してMicrosoft 365に追加することで、メール アドレスを tom@fourthcoffee.com などのわかりやすいメール アドレスに変更します。
 ms.openlocfilehash: 4630b3df4719611440e92801235fde20d7bd95f4
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
@@ -40,17 +40,17 @@ ms.locfileid: "63316423"
   
 ::: moniker range="o365-worldwide"
 
-ユーザーの初期メール アドレスには、Microsoft 365のような .onmicrosoft.com が含 tom@fourthcoffee.onmicrosoft.com。 これを tom@fourthcoffee.com のようなわかりやすいアドレスに変更できます。 このためには、自分のドメイン (例: fourthcoffee.com) を持っている必要があります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
+Microsoft 365の最初のメール アドレスには、tom@fourthcoffee.onmicrosoft.com などの .onmicrosoft.com が含まれます。 これを tom@fourthcoffee.com のようなわかりやすいアドレスに変更できます。 このためには、自分のドメイン (例: fourthcoffee.com) を持っている必要があります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-21Vianet がOffice 365の最初の電子メール アドレスには、partner.onmschina.cn のような tom@fourthcoffee.partner.onmschina.cn。 このアドレスは、他のユーザーと同じフレンドリなアドレス tom@fourthcoffee.cn。 最初に使用するドメイン名など、独自の fourthcoffee.cn があります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
+21Vianet によって運用されているOffice 365の最初のメール アドレスには、tom@fourthcoffee.partner.onmschina.cn などの partner.onmschina.cn が含まれます。 tom@fourthcoffee.cn のようなフレンドリアドレスに変更できます。 最初に fourthcoffee.cn のように、独自のドメイン名が必要になります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
 
 ::: moniker-end
 
-ドメインのメールを Microsoft 365 に変更すると、セットアップ中にドメインの MX レコードを更新すると、そのドメインに送信されたメールはすべて Microsoft 365 に送信されます。 MX レコードを変更する前に、ドメインにメールをMicrosoft 365ユーザーと作成したメールボックスをユーザーに追加してください。 ドメイン上のすべてのユーザーのメールをユーザーに移動Microsoft 365? 代わりに、少数の電子メール [アドレスMicrosoft 365をパイロットする手順を実行できます](../misc/pilot-microsoft-365-from-my-custom-domain.md)。
+ドメインのメールをMicrosoft 365に変更すると、セットアップ中にドメインの MX レコードを更新すると、そのドメインに送信されたすべての電子メールがMicrosoft 365に送信されます。 MX レコードを変更する前に、ドメインに電子メールを持っているすべてのユーザーに対して、Microsoft 365にユーザーを追加し、メールボックスを作成したことを確認します。 ドメイン内のすべてのユーザーのメールをMicrosoft 365に移動したくない場合 [代わりに、少数の電子メール アドレスでMicrosoft 365をパイロット](../misc/pilot-microsoft-365-from-my-custom-domain.md)する手順を実行できます。
   
 ## <a name="set-up-business-email-with-a-new-domain"></a>新しいドメインを使用してビジネス メールを設定する
 
@@ -72,7 +72,7 @@ ms.locfileid: "63316423"
 1. メールアドレスをカスタマイズするか、そのままにします。
 1. Microsoft 365 からサインアウトして、新しいメールアドレスでもう一度サインインします。 従業員のメールアドレスが新しいドメインで更新されます。
 
-## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>ユーザー設定を使用してカスタム ドメインを使用するメール アドレスを変更Microsoft 365 管理センター
+## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用してカスタム ドメインを使用するようにメール アドレスを変更する
 
 これらの手順を実行するには、グローバル管理者である必要があります。
 
@@ -84,7 +84,7 @@ ms.locfileid: "63316423"
 
 ::: moniker range="o365-21vianet"
 
-1. で管理センターに移動します<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>。
+1. 管理センターに移動します<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>。
 
 ::: moniker-end
 
@@ -92,17 +92,17 @@ ms.locfileid: "63316423"
 
 3. [**ドメイン**] ページで、[**ドメインの追加**] を選択します。
 
-4. 手順に従って、ドメインを所有している必要があります。 Microsoft 365 でドメインを正しくセットアップするすべての手順が表示されます。
+4. 手順に従って、ドメインを所有していることを確認します。 Microsoft 365 でドメインを正しくセットアップするすべての手順が表示されます。
 
-5. [UsersActive **ユーザー]** >  **に移動します**。
+5. **UsersActive** >  ユーザーに移動 **します**。
 
 6. ユーザー名を編集するユーザーを選択し、追加したドメインに変更します。
 
 > [!NOTE]
-> ドメイン ライセンスを使用していないExchangeドメインを使用して、ドメインのテナントから電子メールを送受信Microsoft 365できません。
+> Exchange ライセンスを使用していない場合は、ドメインを使用して、Microsoft 365 テナントから電子メールを送受信することはできません。
   
 ## <a name="related-content"></a>関連コンテンツ
 
-[カスタム ドメインを購入するには、Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (記事)\
+[Microsoft 365を使用してカスタム ドメインを購入する](../get-help-with-domains/buy-a-domain-name.md) (記事)\
 [ドメインの管理](/admin) (リンク ページ)\
 [ドメインの FAQ](../setup/domains-faq.yml) (記事)

@@ -77,7 +77,7 @@ ms.locfileid: "65093770"
 
 ### <a name="exchange-online-requirements"></a>Exchange Online要件
 
-Microsoft Exchangeは、組織のテナント内にアドイン マニフェストを格納します。 アドインを展開する管理者と、それらのアドインを受け取るユーザーは、OAuth 認証をサポートするバージョンのExchange Online上にある必要があります。
+Microsoft Exchange は、組織のテナント内にアドイン マニフェストを格納します。 アドインを展開する管理者と、それらのアドインを受け取るユーザーは、OAuth 認証をサポートするバージョンのExchange Online上にある必要があります。
 
 組織の Exchange 管理者に、どの構成を使用できるのかを確認してください。ユーザーごとの OAuth 認証接続は、[Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell コマンドレットを使用して、検証できます。
 
@@ -158,7 +158,7 @@ Web 用のOffice アプリ (Word、Excelなど) を一元的に展開してい�
 
 |プラットフォーム|デバッグ情報|
 |---|---|
-|Office|Charles/Fiddler ログ <br/> テナント ID ([方法については、こちらを参照](/onedrive/find-your-office-365-tenant-id)してください) <br/> Correlationid。 いずれかの Office ページのソースを表示し、関連付け ID の値を探して、サポートするために送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">` <br/> `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`|
+|事業所|Charles/Fiddler ログ <br/> テナント ID ([方法については、こちらを参照](/onedrive/find-your-office-365-tenant-id)してください) <br/> Correlationid。 いずれかの Office ページのソースを表示し、関連付け ID の値を探して、サポートするために送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">` <br/> `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`|
 |リッチ クライアント (Windows、Mac)|Charles/Fiddler ログ <br/> クライアント アプリのビルド番号 (ファイル **/アカウント** のスクリーンショットとして望ましい)|
 
 ## <a name="related-content"></a>関連コンテンツ

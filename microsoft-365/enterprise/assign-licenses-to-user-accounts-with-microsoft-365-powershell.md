@@ -83,7 +83,7 @@ $userLoc="<ISO 3166-1 alpha-2 country code>"
 Update-MgUser -UserId $userUPN -UsageLocation $userLoc
 ```
 
-次に例を示します。
+例:
 
 ```powershell
 Update-MgUser -UserId "belindan@litwareinc.com" -UsageLocation US
@@ -268,7 +268,7 @@ Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-次に例を示します。
+例:
 
 ```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US

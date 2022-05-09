@@ -23,7 +23,7 @@ ms.locfileid: "64714727"
 
 Microsoft Bookingsは、iOS と Android 用のモバイル アプリとして使用できます。 iOS 用のBookings アプリは、Apple がサポートしているすべてのリージョンと国で利用できます。 [iTunes App Store](https://apps.apple.com/app/microsoft-bookings/id1065657468)からアプリをダウンロードできます。 Android 用のBookings アプリは、米国とカナダの [Google Play ストア](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings)からダウンロードできます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 始める前に、Web で 予約 を設定する必要があります。
 

@@ -103,7 +103,7 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
 CellTrust SL2 データ コネクタの設定に関するヘルプについては、CellTrust への問い合わせの詳細については、CellTrust [カスタマー サポート ページ](https://www.celltrust.com/contact-us/#support) を参照してください。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - ドメイン管理者は、ドメインまたはそのドメイン内の任意の OU のコネクタを設定できます。 OU 管理者アカウントを使用する場合は、その特定の OU のコネクタのみを設定できます。
 

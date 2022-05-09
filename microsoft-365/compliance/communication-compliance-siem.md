@@ -79,7 +79,7 @@ Microsoft Sentinel を使用して通信コンプライアンス ポリシーの
 
 1. [Microsoft Sentinel にオンボード](/azure/sentinel/quickstart-onboard)します。 オンボード プロセスの一環として、データ ソースを構成します。
 2. Microsoft Sentinel [Microsoft Office 365 データ コネクタ](/azure/sentinel/data-connectors-reference#microsoft-office-365)を構成し、コネクタの構成で *Exchange* を選択します。
-3. 通信コンプライアンス アラートを取得するように検索クエリを構成します。 次に、例を示します。
+3. 通信コンプライアンス アラートを取得するように検索クエリを構成します。 例:
 
     *|OfficeActivity |ここで、OfficeWorkload == "Exchange" と Operation == "SupervisionRuleMatch" |TimeGenerated で並べ替える*
 

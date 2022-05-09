@@ -40,7 +40,7 @@ PowerShell を使用して高度なクエリを実行する方法については
 
 このセクションでは、PowerShell サンプルを共有してトークンを取得し、それを使用してクエリを実行します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 最初に [アプリを作成する必要があります](apis-intro.md)。
 
 ## <a name="preparation-instructions"></a>準備手順

@@ -75,13 +75,13 @@ ms.locfileid: "64790176"
     
    2. 右側の [ **スキャン** の詳細] ウィンドウで、[ **ヒューリスティックを有効にする**] をダブルクリックし、[ **有効]** に設定します。 
 
-   3. [**OK**] を選択します。
+   3. **[OK]** を選択します。
 
 6. **ローカル グループ ポリシー エディター** を閉じます。
 
 ### <a name="real-time-protection-policy-settings"></a>リアルタイム保護ポリシー設定
 
-|設定|既定の設定|
+|Setting|既定の設定|
 |---|---|
 |動作の監視を有効にする <p> ウイルス対策エンジンは、疑わしい既知の悪意のあるアクティビティがないか、エンドポイント上のファイル プロセス、ファイルとレジストリの変更、その他のイベントを監視します。|Enabled|
 |ダウンロードしたすべてのファイルと添付ファイルをスキャンする <p> ダウンロードしたファイルと添付ファイルは自動的にスキャンされます。 このスキャンは、ダウンロード前とダウンロード中にファイルをスキャンするWindows Defender SmartScreen フィルターに加えて動作します。|Enabled|
@@ -122,13 +122,13 @@ ms.locfileid: "64790176"
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 

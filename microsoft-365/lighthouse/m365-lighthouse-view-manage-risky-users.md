@@ -38,7 +38,7 @@ Azure AD Identity Protection は、次のようなさまざまな種類のリス
 - 疑わしいアクティビティを使用して IP アドレスからサインインする
 - なじみのない場所からサインインする
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 危険なユーザーの一覧にユーザーを表示するには、次の条件を満たす必要があります。
 

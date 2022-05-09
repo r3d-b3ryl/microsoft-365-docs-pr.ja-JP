@@ -1,7 +1,7 @@
 ---
 title: デバイスが正しく構成されていることを確認する
-description: デバイスを適切に構成して、脅威に対する全体的な回復力を高め、攻撃を検出して対応する機能を強化します。
-keywords: オンボード、Intune 管理、Microsoft Defender for Endpoint、Microsoft Defender、Windows Defender、攻撃表面の縮小、ASR、セキュリティ ベースライン
+description: 脅威に対する全体的な回復性を高め、攻撃を検出して対応する機能を強化するようにデバイスを適切に構成します。
+keywords: オンボード, Intune管理, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, 攻撃面の削減, ASR, セキュリティ ベースライン
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -33,63 +33,63 @@ ms.locfileid: "64476161"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-適切に構成されたデバイスを使用すると、脅威に対する全体的な回復力を高め、攻撃を検出して対応する機能を強化できます。 セキュリティ構成管理は、デバイスが次の条件を確実に実行するのに役立ちます。
+適切に構成されたデバイスを使用すると、脅威に対する全体的な回復性を高め、攻撃を検出して対応する機能を強化できます。 セキュリティ構成管理は、デバイスが次のことを確実に行うのに役立ちます。
 
 - Microsoft Defender for Endpoint にオンボードする
-- Defender for Endpoint セキュリティ ベースライン構成を満たすか超過する
-- 戦略的な攻撃表面の軽減策を設定する
+- Defender for Endpoint セキュリティ ベースラインの構成を満たすか、またはそれを超える
+- 戦略的な攻撃面の軽減策を実施する
 
-ナビゲーション **メニューから [構成の** 管理] をクリックして、[デバイス構成管理] ページを開きます。
+ナビゲーション メニューの **[構成管理** ] をクリックして、[デバイス構成管理] ページを開きます。
 
 :::image type="content" source="images/secconmgmt_main.png" alt-text="[セキュリティ構成管理] ページ" lightbox="images/secconmgmt_main.png":::
 
 *デバイス構成管理ページ*
 
-Microsoft Intune および <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> ポータルのデバイス管理ページへの直接の深いリンクを通じて、組織レベルで構成状態を追跡し、オンボーディングカバレッジの低下、コンプライアンスの問題、および最適化の不十分な攻撃表面の軽減に対応して迅速にアクションを実行できます。
+組織レベルで構成の状態を追跡し、Microsoft Intuneおよび<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>のデバイス管理ページへの直接の詳細なリンクを使用して、オンボードカバレッジの不十分さ、コンプライアンスの問題、不適切に最適化された攻撃面の軽減策に対応して迅速にアクションを実行できます。
 
 そうすることで、次の利点があります。
 
 - デバイス上のイベントの包括的な可視性
-- 堅牢な脅威インテリジェンスと、生のイベントを処理し、侵害アクティビティと脅威インジケーターを特定するための強力なデバイス学習テクノロジ
-- 悪意のあるインプラントのインストールを効率的に停止するように構成されたセキュリティ機能の完全なスタック、システム ファイルとプロセスのハイジャック、データの侵入、その他の脅威アクティビティ
-- 最適化された攻撃表面の軽減、脅威アクティビティに対する戦略的防御を最大化し、生産性への影響を最小限に抑える
+- 未加工のイベントを処理し、侵害アクティビティと脅威インジケーターを特定するための堅牢な脅威インテリジェンスと強力なデバイス ラーニング テクノロジ
+- 悪意のある移植片のインストール、システム ファイルとプロセスのハイジャック、データ流出、その他の脅威アクティビティを効率的に停止するように構成されたセキュリティ機能の完全なスタック
+- 攻撃面の軽減策を最適化し、脅威アクティビティに対する戦略的防御を最大化しながら、生産性への影響を最小限に抑える
 
-## <a name="enroll-devices-to-intune-management"></a>Intune 管理へのデバイスの登録
+## <a name="enroll-devices-to-intune-management"></a>Intune管理にデバイスを登録する
 
-デバイス構成管理は、Intune デバイス管理と密接に関係して、組織内のデバイスのインベントリとベースライン セキュリティ構成を確立します。 Intune で管理されているデバイス上の構成の問題を追跡およびWindowsできます。
+デバイス構成管理は、Intuneデバイス管理と密接に連携して、組織内のデバイスのインベントリとベースライン セキュリティ構成を確立します。 Intuneマネージド Windows デバイスの構成の問題を追跡および管理できます。
 
-デバイスが適切に構成されていることを確認する前に、デバイスを Intune 管理に登録します。 Intune の登録は堅牢で、デバイスに対して複数Windowsがあります。 Intune 登録オプションの詳細については、「デバイスの登録の設定」[をWindowsしてください](/intune/windows-enroll)。
+デバイスが正しく構成されていることを確認する前に、デバイスをIntune管理に登録します。 Intune登録は堅牢で、Windows デバイス用のいくつかの登録オプションがあります。 Intune登録オプションの詳細については、[Windows デバイスの登録の設定](/intune/windows-enroll)に関するページを参照してください。
 
 > [!NOTE]
-> Intune にデバイスWindows登録するには、管理者にライセンスが既に割り当てられている必要があります。 [デバイスを登録するためのライセンス割り当て](/intune/licenses-assign)に関するページを参照してください。
+> WindowsデバイスをIntuneに登録するには、管理者に既にライセンスが割り当てられている必要があります。 [デバイスを登録するためのライセンス割り当て](/intune/licenses-assign)に関するページを参照してください。
 
 > [!TIP]
-> Intune を使用してデバイス管理を最適化するには [、Intune を Defender for Endpoint に接続します](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
+> Intuneを使用してデバイス管理を最適化するには、[Intuneを Defender for Endpoint に接続します](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
 
 ## <a name="obtain-required-permissions"></a>必要なアクセス許可を取得する
 
-既定では、Azure AD のグローバル管理者または Intune Service Administrator の役割が割り当てられているユーザーだけが、デバイスのオンボーディングとセキュリティ ベースラインの展開に必要なデバイス構成プロファイルを管理および割り当てることができます。
+既定では、デバイスのオンボードとセキュリティ ベースラインの展開に必要なデバイス構成プロファイルを管理および割り当てることができるのは、Azure ADのグローバル管理者ロールまたは Intune サービス管理者ロールが割り当てられているユーザーだけです。
 
-他の役割が割り当てられている場合は、必要なアクセス許可を持っている必要があります。
+他のロールが割り当てられている場合は、必要なアクセス許可があることを確認します。
 
 - デバイス構成に対する完全なアクセス許可
-- セキュリティ 基準に対する完全なアクセス許可
-- デバイス コンプライアンス ポリシーへの読み取りアクセス許可
-- 組織へのアクセス許可の読み取り
+- セキュリティ ベースラインに対する完全なアクセス許可
+- デバイス コンプライアンス ポリシーに対する読み取りアクセス許可
+- 組織に対する読み取りアクセス許可
 
-:::image type="content" source="images/secconmgmt_intune_permissions.png" alt-text="Intune で必要なアクセス許可" lightbox="images/secconmgmt_intune_permissions.png":::
+:::image type="content" source="images/secconmgmt_intune_permissions.png" alt-text="Intune に必要なアクセス許可" lightbox="images/secconmgmt_intune_permissions.png":::
 
-*Intune のデバイス構成のアクセス許可*
+*Intuneに対するデバイス構成のアクセス許可*
 
 > [!TIP]
-> Intune にアクセス許可を割り当てる方法の詳細については、「カスタム [ロールの作成」を参照してください](/intune/create-custom-role#to-create-a-custom-role)。
+> Intuneに対するアクセス許可の割り当ての詳細については、[カスタム ロールの作成に関するページを参照](/intune/create-custom-role#to-create-a-custom-role)してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
 トピック|説明
 :---|:---
-[Defender for Endpoint にオンボードされているデバイスを取得する](configure-machines-onboarding.md)|Intune で管理されているデバイスのオンボーディング状態を追跡し、Intune を介してその他のデバイスをオンボードします。 
-[Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを強化する](configure-machines-security-baseline.md)|ベースラインのコンプライアンスと非準拠を追跡します。 セキュリティ ベースラインを Intune で管理されるその他のデバイスに展開します。
-[ASR ルールの展開と検出を最適化する](configure-machines-asr.md)|ルールの展開を確認し、ポータルで影響分析ツールを使用して<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender調整します</a>。
+[Defender for Endpoint にオンボードされたデバイスを取得する](configure-machines-onboarding.md)|Intuneマネージド デバイスのオンボード状態を追跡し、Intuneを介してより多くのデバイスをオンボードします。 
+[Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを強化する](configure-machines-security-baseline.md)|ベースラインコンプライアンスと非準拠を追跡します。 セキュリティ ベースラインを、より多くのIntuneマネージド デバイスにデプロイします。
+[ASR ルールの展開と検出を最適化する](configure-machines-asr.md)|<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>の影響分析ツールを使用して、ルールのデプロイを確認し、検出を調整します。
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

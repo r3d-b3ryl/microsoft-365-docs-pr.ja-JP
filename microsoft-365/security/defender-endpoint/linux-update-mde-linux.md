@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint (Linux) の更新プログラムをスケジュールする方法
-description: 組織の資産を保護するために Microsoft Defender for Endpoint (Linux) の更新プログラムをスケジュールする方法について説明します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, スキャン, ウイルス対策, microsoft Defender for endpoint (linux)
+title: Microsoft Defender for Endpointの更新をスケジュールする方法 (Linux)
+description: 組織の資産をより適切に保護するために、Microsoft Defender for Endpoint (Linux) の更新をスケジュールする方法について説明します。
+keywords: microsoft, defender, Microsoft Defender for Endpoint, Linux, スキャン, ウイルス対策, Microsoft Defender for endpoint (linux)
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -26,16 +26,16 @@ ms.locfileid: "63450550"
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint on Linux で更新プログラムを実行するには、「 [Deploy updates for Microsoft Defender for Endpoint on Linux」を参照してください](/microsoft-365/security/defender-endpoint/linux-updates)。
+Linux 上のMicrosoft Defender for Endpointで更新プログラムを実行するには、「Microsoft Defender for Endpoint [用の更新プログラムを Linux にデプロイする](/microsoft-365/security/defender-endpoint/linux-updates)」を参照してください。
 
-Linux (および Unix) には、スケジュールされたタスクを実行できる **crontab** (タスク スケジューラと同様) というツールがあります。
+Linux (および Unix) には、スケジュールされたタスクを実行できるように **crontab** (タスク スケジューラと同様) というツールがあります。
 
 ## <a name="pre-requisite"></a>前提条件
 
 > [!NOTE]
 > すべてのタイム ゾーンの一覧を取得するには、次のコマンドを実行します。 `timedatectl list-timezones`
 >
-> タイム ゾーンの例:
+> タイムゾーンの例:
 >
 > - `America/Los_Angeles`
 > - `America/New_York`
@@ -46,19 +46,19 @@ Linux (および Unix) には、スケジュールされたタスクを実行で
 
 次のコマンドを使用します。
 
-### <a name="backup-crontab-entries"></a>crontab エントリのバックアップ
+### <a name="backup-crontab-entries"></a>crontab エントリをバックアップする
 
 ```bash
 sudo crontab -l > /var/tmp/cron_backup_201118.dat
 ```
 
 > [!NOTE]
-> ここで、201118 == YYMMDD
+> ここで201118 == YYMMDD
 
 > [!TIP]
 > 編集または削除する前に、この操作を行います。
 
-crontab を編集し、新しいジョブをルート ユーザーとして追加するには、次の方法を実行します。
+crontab を編集し、ルート ユーザーとして新しいジョブを追加するには、
 
 ```bash
 sudo crontab -e
@@ -67,7 +67,7 @@ sudo crontab -e
 > [!NOTE]
 > 既定のエディターは VIM です。
 
-次の情報が表示される場合があります。
+次が表示される場合があります。
 
 ```output
 0****/etc/opt/microsoft/mdatp/logrorate.sh
@@ -79,9 +79,9 @@ And
 02**sat /bin/mdatp scan quick>~/mdatp_cron_job.log
 ```
 
-「 [Microsoft Defender for Endpoint (Linux) でのスキャンのスケジュール設定」を参照してください。](linux-schedule-scan-mde.md)
+[Microsoft Defender for Endpointを使用したスキャンのスケジュール (Linux)](linux-schedule-scan-mde.md) に関する記事を参照してください
 
-"Insert" を押す
+"Insert" キーを押します
 
 次のエントリを追加します。
 
@@ -101,39 +101,39 @@ CRON_TZ=America/Los_Angeles
 > 0 6 * * sun [ $(date +%d) -le 15 ] && sudo zypper update mdatp >> ~/mdatp_cron_job.log
 > ```
 
-> #<a name="ubuntu-and-debian-systems"></a>!Ubuntu システムと Debian システム
+> #<a name="ubuntu-and-debian-systems"></a>!Ubuntu および Debian システム
 >
 > ```bash
 > 0 6 * * sun [ $(date +%d) -le 15 ] && sudo apt-get install --only-upgrade mdatp >> ~/mdatp_cron_job.log
 > ```
 
 > [!NOTE]
-> 上記の例では、00 分、24 時間形式の 6.m.(hour)、月の任意の日、任意の月、日曜日に設定しています。[$(date +\%d) -le 15] == 15 日 (3 週目) 以下の場合は実行されません。 つまり、月の第 3 日曜日(7) ごとに 6:00 に実行されます。 太平洋 (UTC -8)。
+> 上の例では、00 分、午前 6 時 (24 時間形式の時間)、月の任意の日、任意の月、日曜日に設定しています。[$(date +\%d) -le 15] == 15 日 (第 3 週) 以下でない限り、実行されません。 つまり、月の第 3 日曜日 (7) ごとに午前 6 時に実行されます。 太平洋 (UTC -8)。
 
-"Esc" を押す
+"Esc" キーを押します
 
-二重引用符を`:wq`付け、"" と入力します。
+二重引用符を付け、"`:wq`" と入力します。
 
 > [!NOTE]
-> w == 書き込み、q == quit
+> w == write、q == quit
 
-cron ジョブを表示するには、 `sudo crontab -l`
+cron ジョブを表示するには、「」と入力します。 `sudo crontab -l`
 
-:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="Linux 上のエンドポイントの Defender を更新します。":::
+:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="Linux 上の Defender for Endpoint を更新します。":::
 
-cron ジョブの実行を検査するには、次のコマンドを実行します。
+cron ジョブの実行を調べるには:
 
 ```bash
 sudo grep mdatp /var/log/cron
 ```
 
-mdatp_cron_job.log を検査するには
+mdatp_cron_job.log を調べるには
 
 ```bash
 sudo nano mdatp_cron_job.log
 ```
 
-## <a name="for-those-who-use-ansible-chef-or-puppet"></a>Ansible、Chef、または Puppet を使用するユーザー向け
+## <a name="for-those-who-use-ansible-chef-or-puppet"></a>Ansible、Chef、Puppet を使用するユーザー向け
 
 次のコマンドを使用します。
 
@@ -159,13 +159,13 @@ cron resource
 
 詳細については、「<https://puppet.com/docs/puppet/5.5/types/cron.html>」を参照してください。
 
-Puppet による自動化: Cron ジョブとスケジュールされたタスク
+Puppet を使用した自動化: Cron ジョブとスケジュールされたタスク
 
 詳細については、「<https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/>」を参照してください。
 
-## <a name="additional-information"></a>ページの先頭へ
+## <a name="additional-information"></a>その他の情報
 
-### <a name="to-get-help-with-crontab"></a>crontab のヘルプを表示するには
+### <a name="to-get-help-with-crontab"></a>crontab に関するヘルプを表示するには
 
 ```bash
 man crontab
@@ -198,7 +198,7 @@ crontab -l > /var/tmp/cron_backup.dat
 crontab /var/tmp/cron_backup.dat
 ```
 
-### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>crontab を編集し、新しいジョブをルート ユーザーとして追加するには
+### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>crontab を編集し、ルート ユーザーとして新しいジョブを追加するには
 
 ```bash
 sudo crontab -e

@@ -166,7 +166,7 @@ Microsoft Purview コンプライアンス ポータルから実行する電子�
      }
    ```
 
-2. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/exchange-online-powershell)。
+2. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/exchange-online-powershell)。
 
 3. Security & Compliance Center PowerShell で、手順 1. でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 

@@ -27,7 +27,7 @@ ms.locfileid: "65188903"
 
 この記事では、組織が管理するさまざまな顧客テナント間でAzure Active Directory (Azure AD) ロールを表示する方法について説明します。 自分のロールによって、Lighthouse で実行できるアクションが決まります。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 Microsoft 365 Lighthouse サービスにオンボードされているパートナー テナントにアクセスできる必要があります。
 

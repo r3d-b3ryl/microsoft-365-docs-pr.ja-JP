@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: ドメインとは何か、ドメインを購入する方法、またはビジネスの既定のドメインを使用して、ドメインと Microsoft OneDriveを開始する方法について説明します。
+description: ドメインの概要と、ドメインを購入する方法、またはビジネスの既定のドメインを使用してOneDriveアプリと Microsoft アプリを使用する方法について説明します。
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
@@ -51,12 +51,12 @@ Microsoft 365 を使用して新しいドメインを購入します。すべて
 > [!TIP]
 > ドメインが登録されている場所がはっきりしない場合 - [ドメイン レジストラーを探すためのヘルプ](find-your-domain-registrar.md)
   
- **今のところ、Microsoft ドメインを使用します。**
+ **現時点では、Microsoft ドメインを使用します。**
   
-*yourcompany.onmicrosoft のような Microsoft ドメインを使用できます。<span>com* を使用して、今のところサインインし、後でカスタム ドメインを追加します。 
+*yourcompany.onmicrosoft のような Microsoft ドメインを使用できます。<span>com* でサインインし、後でカスタム ドメインを追加します。 
   
 > [!IMPORTANT]
-> このオプションを選択すると、.onmicrosoft.com ドメインに入力した名前が、すべてのユーザーのドメイン URL SharePointおよびOneDriveされます。 この名前を変更できない場合があります。正しくスペルがブランド化の観点から使用する名前である必要があります。 
+> このオプションを選択すると、.onmicrosoft.com ドメインに入力した名前が、すべてのSharePointとOneDrive URL で使用されます。 この名前を変更できない可能性があるため、ブランドの観点から使用する名前が正しくスペルされていることを確認してください。 
   
 ## <a name="feeling-stuck"></a>困ったときは
 
@@ -66,8 +66,8 @@ Microsoft サポートに連絡する - [ドメインの設定についてサポ
 
 [ドメインを購入する](buy-a-domain-name.md) (記事)
 
-[ドメインをドメインにMicrosoft 365](../setup/add-domain.md)する (記事)
+[Microsoft 365にドメインを追加する](../setup/add-domain.md) (記事)
 
-[カスタム Microsoft 365からのパイロット テスト (](../misc/pilot-microsoft-365-from-my-custom-domain.md)記事)
+[カスタム ドメインからのパイロット Microsoft 365](../misc/pilot-microsoft-365-from-my-custom-domain.md) (記事)
 
 

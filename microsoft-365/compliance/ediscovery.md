@@ -61,10 +61,10 @@ Microsoft Purview には、コンテンツ検索、電子情報開示 (Standard)
 |役割に基づくアクセス許可|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
 |ケース管理||![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
 |コンテンツの場所を訴訟ホールドに配置する||![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
-|保管担当者管理|||![サポートされています。](../media/check-mark.png)|
-|訴訟ホールド通知|||![サポートされています。](../media/check-mark.png)|
+|保管担当者管理|||![サポート対象です。](../media/check-mark.png)|
+|訴訟ホールド通知|||![サポート対象です。](../media/check-mark.png)|
 |高度なインデックス作成|||![サポート対象です。](../media/check-mark.png)|
-|エラー修復|||![サポートされています。](../media/check-mark.png)|
+|エラー修復|||![サポート対象です。](../media/check-mark.png)|
 |セットを確認する|||![サポート対象です。](../media/check-mark.png)|
 |クラウド添付ファイルとSharePoint バージョンのサポート|||![サポート対象です。](../media/check-mark.png)|
 |光学式文字認識|||![サポート対象です。](../media/check-mark.png)|
@@ -72,7 +72,7 @@ Microsoft Purview には、コンテンツ検索、電子情報開示 (Standard)
 |コレクションの統計とレポート|||![サポート対象です。](../media/check-mark.png)|
 |セットのフィルター処理を確認する|||![サポート対象です。](../media/check-mark.png)|
 |タグ付け|||![サポート対象です。](../media/check-mark.png)|
-|分析|||![サポート対象です。](../media/check-mark.png)|
+|分析|||![サポートされています。](../media/check-mark.png)|
 |予測コーディング モデル|||![サポート対象です。](../media/check-mark.png)|
 |計算されたドキュメント メタデータ|||![サポート対象です。](../media/check-mark.png)|
 |実行時間の長いジョブの透過性|||![サポート対象です。](../media/check-mark.png)|

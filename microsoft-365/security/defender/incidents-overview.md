@@ -70,7 +70,7 @@ Microsoft 365 Defender ポータルのクイック起動で **インシデント
 
 インシデント名を選択すると、インシデントの概要が表示され、追加情報を含むタブへのアクセスが提供されます。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 Defender ポータルのインシデントの [概要] ページ" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 Defender のインシデントの概要ページの例" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 インシデントの追加タブは次のとおりです。
 

@@ -69,7 +69,7 @@ Defender for Endpoint はSystem Center Endpoint Protectionと統合され、マ�
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Microsoft Monitoring Agent (MMA) のインストールと構成
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>開始する前に
 
 次の詳細を確認して、最小システム要件を確認します。
 

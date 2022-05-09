@@ -1,6 +1,6 @@
 ---
-title: アラートに関連付けられた IP アドレスを調査する
-description: 調査オプションを使用して、デバイスと外部 IP アドレス間の通信の可能性を調べる。
+title: アラートに関連付けられている IP アドレスを調査する
+description: 調査オプションを使用して、デバイスと外部 IP アドレス間の通信の可能性を調べます。
 keywords: 調査、調査、IP アドレス、アラート、Microsoft Defender for Endpoint、外部 IP
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -35,59 +35,59 @@ ms.locfileid: "63323347"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-デバイスと外部インターネット プロトコル (IP) アドレス間の通信の可能性を調べる。
+デバイスと外部インターネット プロトコル (IP) アドレス間の通信の可能性を調べます。
 
-Command and Control (C2) サーバーなど、疑わしいまたは既知の悪意のある IP アドレスと通信した組織内のすべてのデバイスを識別すると、侵害、関連ファイル、感染したデバイスの潜在的な範囲を特定するのに役立ちます。
+Command and Control (C2) サーバーなど、疑わしいまたは既知の悪意のある IP アドレスと通信した組織内のすべてのデバイスを特定すると、侵害、関連ファイル、感染したデバイスの潜在的な範囲を特定するのに役立ちます。
 
 IP アドレス ビューでは、次のセクションから情報を確認できます。
 
 - 世界中の IP
-- DNS 名の逆引き
+- 逆引き DNS 名
 - この IP に関連するアラート
 - 組織内の IP
-- 有病率
+- 有 病 率
 
 ## <a name="ip-worldwide-and-reverse-dns-names"></a>IP Worldwide および Reverse DNS 名
 
-[IP アドレスの詳細] セクションには、その ASN やリバース DNS 名などの IP アドレスの属性が表示されます。
+[IP アドレスの詳細] セクションには、ASN や逆引き DNS 名などの IP アドレスの属性が表示されます。
 
 ## <a name="alerts-related-to-this-ip"></a>この IP に関連するアラート
 
-[ **この IP に関連するアラート** ] セクションには、IP に関連付けられているアラートの一覧が表示されます。
+**この IP に関連するアラート** セクションには、IP に関連付けられているアラートの一覧が表示されます。
 
 ## <a name="ip-in-organization"></a>組織内の IP
 
-[ **組織内の IP]** セクションには、組織内の IP アドレスの普及率に関する詳細が表示されます。
+**[組織内の IP]** セクションには、組織内の IP アドレスの普及率に関する詳細が示されています。
 
-## <a name="prevalence"></a>有病率
+## <a name="prevalence"></a>有 病 率
 
-[ **有病率** ] セクションには、この IP アドレスに接続したデバイスの数と、IP が最初と最後に表示された時点が表示されます。 このセクションの結果は、期間別にフィルター処理できます。既定の期間は 30 日です。
+**[有病率]** セクションには、この IP アドレスに接続されているデバイスの数と、IP が最初に表示され、最後に表示された日時が表示されます。 このセクションの結果は、期間でフィルター処理できます。既定の期間は 30 日です。
 
-## <a name="most-recent-observed-devices-with-ip"></a>IP を含む最新の観測デバイス
+## <a name="most-recent-observed-devices-with-ip"></a>IP を使用して観察された最新のデバイス
 
-[IP **を含む最新** の観測デバイス] セクションには、IP アドレスで観測されたイベントと関連するアラートに関する時系列ビューが表示されます。
+[IP を含む **最新の監視デバイス** ] セクションでは、IP アドレスで観察されたイベントと関連するアラートを時系列で表示します。
 
 **外部 IP を調査します。**
 
-1. [ **検索] バー** の **ドロップダウン メニューから** [IP] を選択します。
-2. [検索] フィールドに IP アドレス **を入力** します。
-3. 検索アイコンをクリックするか、Enter キーを **押します**。
+1. **[検索] バー** のドロップダウン メニューから **[IP**] を選択します。
+2. **[検索**] フィールドに IP アドレスを入力します。
+3. 検索アイコンをクリックするか、 **Enter** キーを押します。
 
-IP アドレスの詳細は、登録の詳細 (利用可能な場合)、リバース IP (ドメインなど)、この IP アドレスと通信した組織内のデバイスの普及率 (選択可能な期間中)、およびこの IP アドレスとの通信が観察された組織内のデバイスなど、表示されます。
+IP アドレスに関する詳細が表示されます。たとえば、登録の詳細 (使用可能な場合)、逆 IP (ドメインなど)、この IP アドレスと通信した組織内のデバイスの普及 (選択可能な期間中)、この IP アドレスとの通信が観察された組織内のデバイスなどです。
 
 > [!NOTE]
 > 検索結果は、組織内のデバイスとの通信で観察された IP アドレスに対してのみ返されます。
 
-検索条件を定義するには、検索フィルターを使用します。 タイムライン検索ボックスを使用して、IP アドレス、通信に関連付けられたファイル、および最後に観測された日付と通信している組織内のすべてのデバイスの表示結果をフィルター処理することもできます。
+検索フィルターを使用して検索条件を定義します。 また、タイムライン検索ボックスを使用して、組織内のすべてのデバイスの表示結果をフィルター処理して、IP アドレス、通信に関連付けられているファイル、および観察された最後の日付との通信を観察することもできます。
 
-デバイス名をクリックすると、そのデバイスのビューにアクセスし、報告されたアラート、動作、およびイベントを引き続き調査できます。
+デバイス名のいずれかをクリックすると、そのデバイスのビューに移動し、報告されたアラート、動作、およびイベントを引き続き調査できます。
 
 ## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
-- [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
-- [Microsoft Defender for Endpoint アラートの調査](investigate-alerts.md)
-- [Microsoft Defender for Endpoint アラートに関連付けられたファイルを調査する](investigate-files.md)
-- [Microsoft Defender for Endpoint Devices リストのデバイスを調査する](investigate-machines.md)
+- [Microsoft Defender for Endpointアラートを管理する](manage-alerts.md)
+- [Microsoft Defender for Endpointアラートを調査する](investigate-alerts.md)
+- [Microsoft Defender for Endpointアラートに関連付けられているファイルを調査する](investigate-files.md)
+- [Microsoft Defender for Endpoint デバイスの一覧のデバイスを調査する](investigate-machines.md)
 - [Microsoft Defender for Endpoint アラートに関連付けられているドメインを調査する](investigate-domain.md)
-- [Microsoft Defender for Endpoint のユーザー アカウントを調査する](investigate-user.md)
+- [Microsoft Defender for Endpointでユーザー アカウントを調査する](investigate-user.md)

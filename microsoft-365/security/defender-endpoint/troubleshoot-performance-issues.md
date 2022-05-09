@@ -129,7 +129,7 @@ ms.locfileid: "64788680"
         >
         > :::image type="content" source="images/procmon-minimize.png" alt-text="最小化された Procmon を表示するページ" lightbox="images/procmon-minimize.png":::
 
-7. 手順 6 のいずれかの手順に従うと、次にフィルターを設定するオプションが表示されます。 [**OK**] を選択します。 キャプチャが完了した後は、常に結果をフィルター処理できます。
+7. 手順 6 のいずれかの手順に従うと、次にフィルターを設定するオプションが表示されます。 **[OK]** を選択します。 キャプチャが完了した後は、常に結果をフィルター処理できます。
 
    :::image type="content" source="images/procmon-filter-options.png" alt-text="フィルターアウト プロセス名としてシステム除外が選択されているページ" lightbox="images/procmon-filter-options.png":::
 
@@ -286,13 +286,13 @@ WPR UI を使用してパフォーマンス ログをキャプチャする手順
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
-> - [macOS でMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)
+> - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-> - [IntuneのMicrosoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Linux でMicrosoft Defender for Endpointの基本設定を設定する](linux-preferences.md)
+> - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-> - [Android の機能で Defender for Endpoint を構成する](android-configure.md)
-> - [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+> - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
+> - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 
 ## <a name="see-also"></a>関連項目
 

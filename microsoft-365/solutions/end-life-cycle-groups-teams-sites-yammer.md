@@ -43,7 +43,7 @@ Microsoft 365 グループと Microsoft Teams は、接続された複数のサ�
 |web 上のProject|Projectプラン|
 |ロードマップ|ロードマップ|
 |SharePoint|ファイル、リスト、Teams チャネル Wiki データ|
-|Stream|ビデオ|
+|ストリーム|ビデオ|
 |Yammer|会話|
 
 グループまたはチームを削除すると、関連付けられているリソースのほとんども削除されます。 例外は次のとおりです。

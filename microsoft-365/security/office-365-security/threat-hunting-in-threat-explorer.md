@@ -244,7 +244,7 @@ URL のクリックポップアップにもタグ情報が表示されます。 
 エクスプローラーまたはリアルタイム検出を表示して使用するには、次のアクセス許可が必要です。
 
 - Microsoft 365 Defender ポータルで次の手順を実行します。
-  - 組織の管理
+  - 組織管理
   - セキュリティ管理者 (Azure Active Directory管理センターで割り当てることができます (<https://aad.portal.azure.com>)
   - セキュリティ閲覧者
 - Exchange Online:

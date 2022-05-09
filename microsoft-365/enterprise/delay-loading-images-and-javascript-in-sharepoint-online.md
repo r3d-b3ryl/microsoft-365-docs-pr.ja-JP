@@ -36,7 +36,7 @@ ms.locfileid: "65101295"
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript を使用してSharePoint Online ページでの画像読み込みを遅らせることでページの読み込み時間を短縮する
 
-JavaScript を使用すると、Web ブラウザーがイメージを事前にフェッチできないようにすることができます。 これにより、ドキュメントの全体的なレンダリングが高速化されます。 これを行うには、タグから src 属性の値を \<img\> 削除し、data-src などのデータ属性内のファイルへのパスに置き換えます。 次に例を示します。
+JavaScript を使用すると、Web ブラウザーがイメージを事前にフェッチできないようにすることができます。 これにより、ドキュメントの全体的なレンダリングが高速化されます。 これを行うには、タグから src 属性の値を \<img\> 削除し、data-src などのデータ属性内のファイルへのパスに置き換えます。 例:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />

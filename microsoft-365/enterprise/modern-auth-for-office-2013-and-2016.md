@@ -87,7 +87,7 @@ Office 2016 および Office 2019 クライアントでは、既定で最新の�
 |Office 2019  <br/> |いいえ <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |はい  <br/> |Outlook 2013、2016、または 2019 で先進認証を強制します。 <br/> [詳細情報](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Outlook クライアント内で先進認証を強制します。<br/> |
 |Office 2019  <br/> |いいえ、または EnableADAL = 1  <br/> |はい  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |
 |Office 2019  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |
-|Office 2019  <br/> |はい、EnableADAL=0  <br/> |なし  <br/> |基本認証  <br/> |基本認証  <br/> |
+|Office 2019  <br/> |はい、EnableADAL=0  <br/> |いいえ  <br/> |基本認証  <br/> |基本認証  <br/> |
 |Office 2016  <br/> |いいえ <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |はい  <br/> |2013、2016、または 2019 で先進認証を強制します。 <br/> [詳細情報](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Outlook クライアント内で先進認証を強制します。<br/> |
 |Office 2016  <br/> |いいえ、または EnableADAL = 1  <br/> |はい  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |
 |Office 2016  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |
@@ -108,7 +108,7 @@ Office 2016 および Office 2019 クライアントでは、既定で最新の�
 |Office 2016  <br/> |いいえ、または EnableADAL = 1  <br/> |はい  <br/> |先進認証のみ。  <br/> |接続できない。  <br/> |
 |Office 2016  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |先進認証のみ。  <br/> |接続できない。  <br/> |
 |Office 2016  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |
-|Office 2013  <br/> |いいえ  <br/> |なし  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |
+|Office 2013  <br/> |いいえ  <br/> |いいえ  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |
 |Office 2013  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |先進認証のみ。  <br/> |接続できない。  <br/> |
 
 ### <a name="skype-for-business-online"></a>Skype for Business Online
@@ -120,11 +120,11 @@ Office 2016 および Office 2019 クライアントでは、既定で最新の�
 |:-----|:-----|:-----|:-----|:-----|
 |Office 2019  <br/> |いいえ、または EnableADAL = 1  <br/> |はい  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインイン アシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインイン アシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |
 |Office 2019  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインイン アシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインイン アシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |
-|Office 2019  <br/> |はい、EnableADAL = 0  <br/> |なし  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |
+|Office 2019  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |
 |Office 2016  <br/> |いいえ、または EnableADAL = 1  <br/> |はい  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインイン アシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインイン アシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |
 |Office 2016  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインイン アシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインイン アシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |
 |Office 2016  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |
-|Office 2013  <br/> |いいえ  <br/> |なし  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |
+|Office 2013  <br/> |いいえ  <br/> |いいえ  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |
 |Office 2013  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |先進認証が最初に試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインイン アシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーは先進認証を拒否します。  <br/> |Microsoft Online サインイン アシスタントのみ。  <br/> |
 
 ## <a name="see-also"></a>関連項目

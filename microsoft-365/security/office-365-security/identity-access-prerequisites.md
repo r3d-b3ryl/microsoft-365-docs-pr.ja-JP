@@ -93,12 +93,12 @@ BYOD Windows デバイスの場合、ユーザーは **職場または学校ア�
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|[OneDrive 同期クライアント](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 11またはWindows 10|サポート|サポート|N/A|N/A|サポート|
-|Windows 8.1|サポート|サポート|N/A|N/A|サポート|
+|Windows 11またはWindows 10|サポート|サポート|該当なし|該当なし|サポート|
+|Windows 8.1|サポート|サポート|該当なし|該当なし|サポート|
 |Android|サポート|サポート|サポート|サポート|N/A|
 |iOS|サポート|サポート|サポート|サポート|N/A|
-|macOS|サポート|サポート|N/A|N/A|サポートされていません|
-|Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
+|macOS|サポート|サポート|該当なし|該当なし|サポートされていません|
+|Linux|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 のクライアント サポート
 

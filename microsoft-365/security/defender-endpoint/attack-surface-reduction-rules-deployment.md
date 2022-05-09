@@ -39,7 +39,7 @@ ASR ルールは、次のような特定のソフトウェア動作を対象と�
 
 さまざまな攻撃面を減らすことで、最初に攻撃が発生するのを防ぐのに役立ちます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 最初の準備では、配置するシステムの機能を理解することが重要です。 この機能を理解すると、組織を保護するために最も重要な ASR 規則を判断するのに役立ちます。 また、ASR デプロイの準備に必要な前提条件がいくつかあります。
 
@@ -94,7 +94,7 @@ Microsoft Defender ウイルス対策は、次のいずれかのモードにす�
 - パッシブ
 - ブロック モードでのエンドポイントの検出と応答 (EDR) を含むパッシブ モード
 - 限られた定期的なスキャン (LPS)
-- オフ
+- Off
 
 「[クラウド配信の保護とMicrosoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)」を参照してください。
 
@@ -137,7 +137,7 @@ Microsoft Defender ウイルス対策バージョンを最新の状態に保つ�
 
 [攻撃面の減少 (ASR) ルールの参照](attack-surface-reduction-rules-reference.md)
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>参照
 
 ### <a name="blogs"></a>ブログ
 

@@ -36,7 +36,7 @@ ms.locfileid: "64780349"
 
 使用している DNS ホスティング プロバイダーが GoDaddy の場合は、この記事に示す手順に従い、ドメインを確認して、メールや Skype for Business Online などの DNS レコードを設定します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 ドメインの DNS レコードを設定するには、次の 2 つのオプションがあります。
 
@@ -96,7 +96,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 1. 新しいレコードのボックスに、テーブルの値を入力またはコピーして貼り付けます。
 
-   |型|ホスト|TXT Value|TTL|
+   |種類|ホスト|TXT Value|TTL|
    |---|---|---|---|
    |TXT|@|MS=ms *XXXXXXXX*<br>**注**: これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>|
 
@@ -147,7 +147,7 @@ Microsoft 365でレコードを確認するには:
 
    (ドロップダウン リストから **[種類]** と [ **TTL** ] の値を選択します)。
 
-   |型|Host|Points to |Priority|TTL|
+   |種類|ホスト|Points to |Priority|TTL|
    |---|---|---|---|---|
    |MX|@| *\<domain-key\>*.mail.protection.outlook.com  <br/> **メモ：** Microsoft アカウントから取得します *\<domain-key\>* 。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|10  <br/> 優先度の詳細については、「[MX 優先度とは何か](../setup/domains-faq.yml)」を参照してください。|1 hour|
 
@@ -179,7 +179,7 @@ Microsoft 365でレコードを確認するには:
 
    (ドロップダウン リストから **TTL** 値を選択します)。
 
-   |型|Host|Points to |TTL|
+   |種類|ホスト|Points to |TTL|
    |---|---|---|---|
    |CNAME|autodiscover|autodiscover.outlook.com|1 hour|
 
@@ -212,7 +212,7 @@ Microsoft 365でレコードを確認するには:
 
    (ドロップダウン リストから **TTL** 値を選択します)。
 
-   |型|ホスト|TXT Value|TTL|
+   |種類|ホスト|TXT Value|TTL|
    |---|---|---|---|
    |TXT|@|v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。|1 時間|
 
@@ -248,7 +248,7 @@ Microsoft Teamsに加えて、組織がチャット、電話会議、ビデオ�
 
    (ドロップダウン リストから **[種類]** と [ **TTL** ] の値を選択します)。
 
-   |型|サービス|プロトコル|名前|Target|優先度|太さ|ポート|TTL|
+   |種類|サービス|プロトコル|名前|Target|優先度|太さ|ポート|TTL|
    |---|---|---|---|---|---|---|---|---|
    |SRV|_sip|_tls|@|sipdir.online.lync.com|100| 1|443|1 Hour|
    |SRV|_sipfederationtls|_tcp|@| sipfed.online.lync.com| 100|1|5061|1 Hour|
@@ -282,7 +282,7 @@ Microsoft Teamsに加えて、組織がチャット、電話会議、ビデオ�
 
 1. 新規レコードの空のボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。
 
-   |型|Host|Points to |TTL|
+   |種類|ホスト|Points to |TTL|
    |---|---|---|---|
    |CNAME|sip|sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません**|1 Hour|
    |CNAME|lyncdiscover|webdir.online.lync.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません**|1 Hour|
@@ -320,7 +320,7 @@ Microsoft Teamsに加えて、組織がチャット、電話会議、ビデオ�
 
 1. 新規レコードの空のボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。
 
-   |型|Host|Points to |TTL|
+   |種類|ホスト|Points to |TTL|
    |---|---|---|---|
    |CNAME|enterpriseregistration|enterpriseregistration.windows.net.  <br/> **この値は、末尾がピリオド (.) でなければなりません**|1 Hour|
    |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません**|1 Hour|

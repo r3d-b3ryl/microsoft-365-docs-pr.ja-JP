@@ -35,7 +35,7 @@ ms.locfileid: "64780679"
 
 IONOS by 1&1 が DNS ホスティング プロバイダーである場合は、この記事の手順に従ってドメインを確認し、電子メール、Skype for Business Online などの DNS レコードを設定します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 ドメインの DNS レコードを設定するには、次の 2 つのオプションがあります。
 
@@ -347,7 +347,7 @@ Microsoft Teamsに加えて、組織がチャット、電話会議、ビデオ�
 
 1. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
 
-    |型|サービス|プロトコル|ホスト名|Points to |優先度|太さ|ポート|TTL|
+    |種類|サービス|プロトコル|ホスト名|Points to |優先度|太さ|ポート|TTL|
     |---|---|---|---|---|---|---|---|---|
     |SRV|_sip|tls|(このフィールドは空のままにします。)|sipdir.online.lync.com|100|1|443|1 hour|
     |SRV|_sipfederationtls|tcp|(このフィールドは空のままにします。)|sipfed.online.lync.com|100|1|5061|1 時間|

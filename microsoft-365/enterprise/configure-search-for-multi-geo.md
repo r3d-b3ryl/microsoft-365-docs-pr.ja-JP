@@ -65,7 +65,7 @@ Multi-Geo 環境では、従来の検索機能の一部の動作が異なりま�
 <table>
 <thead>
 <tr class="header">
-<th align="left">機能</th>
+<th align="left">特徴</th>
 <th align="left">メカニズム</th>
 <th align="left">回避策</th>
 </tr>

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint にオンボードされているデバイスを取得する
-description: Intune で管理されたデバイスの Microsoft Defender for Endpoint へのオンボーディングを追跡し、オンボーディング 速度を向上します。
-keywords: オンボード、Intune 管理、Microsoft Defender for Endpoint、Microsoft Defender、Windows Defender、構成管理
+title: Microsoft Defender for Endpointにオンボードされたデバイスを取得する
+description: Intuneマネージド デバイスのオンボードを追跡してMicrosoft Defender for Endpointし、オンボード率を向上させます。
+keywords: オンボード, Intune管理, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, 構成管理
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,7 +21,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64466325"
 ---
-# <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint にオンボードされているデバイスを取得する
+# <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointにオンボードされたデバイスを取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,46 +32,46 @@ ms.locfileid: "64466325"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-オンボードされた各デバイスは、追加のエンドポイント検出と応答 (EDR) センサーを追加し、ネットワーク内の侵害アクティビティに対する可視性を向上します。 また、オンボーディングにより、デバイスで脆弱なコンポーネントやセキュリティ構成の問題をチェックし、攻撃中に重大な修復アクションを受け取る可能性があります。
+オンボードされた各デバイスでは、追加のエンドポイントでの検出と対応 (EDR) センサーが追加され、ネットワーク内の侵害アクティビティに対する可視性が向上します。 また、オンボードにより、デバイスで脆弱なコンポーネントとセキュリティ構成の問題を確認でき、攻撃中に重大な修復アクションを受け取る可能性もあります。
 
-デバイスのオンボーディングを追跡および管理する前に、
+デバイスのオンボードを追跡および管理する前に、
 
-- [Intune 管理にデバイスを登録する](configure-machines.md#enroll-devices-to-intune-management)
-- [必要なアクセス許可を持っている必要があります。](configure-machines.md#obtain-required-permissions)
+- [デバイスをIntune管理に登録する](configure-machines.md#enroll-devices-to-intune-management)
+- [必要なアクセス許可があることを確認する](configure-machines.md#obtain-required-permissions)
 
-## <a name="discover-and-track-unprotected-devices"></a>保護されていないデバイスの検出と追跡
+## <a name="discover-and-track-unprotected-devices"></a>保護されていないデバイスを検出して追跡する
 
-オン **ボーディング** カードは、実際に Defender for Endpoint にオンボードされた Windows デバイスの数と Intune で管理される Windows デバイスの総数を比較することで、オンボーディング レートの概要を示します。
+**オンボード** カードでは、Defender for Endpoint に実際にオンボードしたWindows デバイスの数と、Intuneで管理されているWindows デバイスの合計数を比較することで、オンボード率の概要を大まかに示します。
 
 :::image type="content" source="images/secconmgmt_onboarding_card.png" alt-text="デバイス構成管理オンボード カード" lightbox="images/secconmgmt_onboarding_card.png":::
 
-*Intune で管理されているデバイスのデバイスの総数と比較したオンボード デバイスをWindowsするカード*
+*オンボードされたデバイスの合計数とIntune管理されているWindowsデバイスの合計数を示すカード*
 
 > [!NOTE]
-> Configuration Manager、オンボーディング スクリプト、または Intune プロファイルを使用しない他のオンボーディング メソッドを使用した場合、データの不一致が発生する可能性があります。 これらの不一致を解決するには、Defender for Endpoint オンボーディングに対応する Intune 構成プロファイルを作成し、そのプロファイルをデバイスに割り当てる必要があります。
+> Configuration Manager、オンボード スクリプト、またはIntune プロファイルを使用しないその他のオンボード方法を使用した場合、データの不一致が発生する可能性があります。 これらの不一致を解決するには、Defender for Endpoint オンボードに対応するIntune構成プロファイルを作成し、そのプロファイルをデバイスに割り当てます。
 
-## <a name="onboard-more-devices-with-intune-profiles"></a>Intune プロファイルを使用して他のデバイスをオンボードする
+## <a name="onboard-more-devices-with-intune-profiles"></a>Intune プロファイルを使用してより多くのデバイスをオンボードする
 
-Defender for Endpoint には、デバイスのオンボーディングに便利[なWindowsがあります](onboard-configure.md)。 ただし、Intune で管理されるデバイスの場合は、Intune プロファイルを活用して Defender for Endpoint センサーを便利に展開してデバイスを選択し、これらのデバイスをサービスに効果的にオンボーディングできます。
+Defender for Endpoint には、[Windows デバイスをオンボードするための](onboard-configure.md)便利なオプションがいくつか用意されています。 ただし、Intuneマネージド デバイスの場合は、Intune プロファイルを利用して、Defender for Endpoint センサーを簡単に展開してデバイスを選択し、これらのデバイスをサービスに効果的にオンボードできます。
 
-[オンボード] **カードで、[** その他のデバイス **の** オンボード] を選択して、Intune でプロファイルを作成して割り当てる。 このリンクを使用すると、Intune のデバイス コンプライアンス ページに移動し、オンボーディング状態の同様の概要を示します。
+**[オンボード**] カードで、[**その他のデバイスのオンボード**] を選択して、Intuneにプロファイルを作成して割り当てます。 このリンクをクリックすると、Intuneのデバイス コンプライアンス ページに移動します。これにより、オンボード状態の同様の概要が表示されます。
 
-:::image type="content" source="images/secconmgmt_onboarding_1deviceconfprofile.png" alt-text="Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ" lightbox="images/secconmgmt_onboarding_1deviceconfprofile.png":::
+:::image type="content" source="images/secconmgmt_onboarding_1deviceconfprofile.png" alt-text="Intuneデバイス管理のMicrosoft Defender for Endpointデバイス コンプライアンス ページ" lightbox="images/secconmgmt_onboarding_1deviceconfprofile.png":::
 
-*Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ*
+*Intuneデバイス管理のデバイス コンプライアンス ページをMicrosoft Defender for Endpointする*
 
 > [!TIP]
-> または、**Microsoft Defender ATP** のすべてのサービス > Intune > デバイス コンプライアンス > から [Microsoft Azure](https://portal.azure.com/) ポータルの [Defender for Endpoint オンボーディング コンプライアンス] ページに移動することもできます。
+> または、**すべてのサービス> Intune >デバイス コンプライアンス> Microsoft Defender ATP** から [、Microsoft Azure ポータル](https://portal.azure.com/)の Defender for Endpoint オンボード コンプライアンス ページに移動することもできます。
 
 > [!NOTE]
-> 最新のデバイス データを表示する場合は、[ATP センサーのないデバイスの一覧 **] をクリックします**。
+> 最新のデバイス データを表示する場合は、[ **ATP センサーのないデバイスの一覧**] をクリックします。
 
-[デバイスコンプライアンス] ページで、Defender for Endpoint センサーの展開専用の構成プロファイルを作成し、そのプロファイルをオンボードするデバイスに割り当てる。 これを行うには、次のいずれかを実行できます。
+デバイス コンプライアンス ページで、Defender for Endpoint センサーの展開専用の構成プロファイルを作成し、そのプロファイルをオンボードするデバイスに割り当てます。 これを行うには、次のいずれかを行います。
 
-- [ **デバイス構成プロファイルの作成] を選択して、定義済** みのデバイス構成プロファイルから開始する ATP センサーを構成します。
+- 定義済みの **デバイス構成プロファイルから開始するように ATP センサーを構成するには** 、[デバイス構成プロファイルの作成] を選択します。
 - デバイス構成プロファイルを最初から作成します。
 
-詳細については、「 [Intune デバイス構成プロファイルを使用してデバイスを Defender for Endpoint にオンボードする」を参照してください](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)。
+詳細については、[Intuneデバイス構成プロファイルを使用してデバイスを Defender for Endpoint にオンボードする方法について説明します](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)。
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 

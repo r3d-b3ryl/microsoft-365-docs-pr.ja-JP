@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Premiumの概要
+title: Microsoft 365 Business Premium の概要
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo

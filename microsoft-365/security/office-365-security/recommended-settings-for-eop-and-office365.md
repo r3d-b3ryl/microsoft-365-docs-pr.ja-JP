@@ -67,8 +67,8 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |**迷惑メールのプロパティ&一括メールしきい値**|||||
 |**一括メールのしきい値** <br/><br/> _BulkThreshold_|7 |6 |4|詳細については、 [EOP の一括苦情レベル (BCL) を](bulk-complaint-level-values.md)参照してください。|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|この設定は、PowerShell でのみ使用できます。|
-|**スパム スコアの設定を増やす**|オフ|オフ|オフ|これらの設定はすべて、高度なスパム フィルター (ASF) の一部です。 詳細については、この記事の「 [スパム対策ポリシー」セクションの ASF 設定](#asf-settings-in-anti-spam-policies) を参照してください。|
-|**スパム設定としてマークする**|オフ|オフ|オフ|これらの設定のほとんどは ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシー」セクションの ASF 設定](#asf-settings-in-anti-spam-policies) を参照してください。|
+|**スパム スコアの設定を増やす**|Off|Off|Off|これらの設定はすべて、高度なスパム フィルター (ASF) の一部です。 詳細については、この記事の「 [スパム対策ポリシー」セクションの ASF 設定](#asf-settings-in-anti-spam-policies) を参照してください。|
+|**スパム設定としてマークする**|Off|Off|Off|これらの設定のほとんどは ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシー」セクションの ASF 設定](#asf-settings-in-anti-spam-policies) を参照してください。|
 |**特定の言語を含む** <br/><br/> _EnableLanguageBlockList_ <br/><br/> _LanguageBlockList_|**オフ** <br/><br/> `$false` <br/><br/> 空白|**オフ** <br/><br/> `$false` <br/><br/> 空白|**オフ** <br/><br/> `$false` <br/><br/> 空白|この設定に関する具体的な推奨事項はありません。 ビジネス ニーズに基づいて、特定の言語でメッセージをブロックできます。|
 |**これらの国から** <br/><br/> _EnableRegionBlockList_ <br/><br/> _RegionBlockList_|**オフ** <br/><br/> `$false` <br/><br/> 空白|**オフ** <br/><br/> `$false` <br/><br/> 空白|**オフ** <br/><br/> `$false` <br/><br/> 空白|この設定に関する具体的な推奨事項はありません。 ビジネス ニーズに基づいて、特定の国からのメッセージをブロックできます。|
 |**テスト モード** (_TestModeAction_)|**なし**|**なし**|**なし**|この設定は ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシー」セクションの ASF 設定](#asf-settings-in-anti-spam-policies) を参照してください。|
@@ -156,7 +156,7 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |**件名** <br/><br/> _CustomInternalSubject_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
 |**Message** <br/><br/> _CustomInternalBody_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
 |**外部送信者からのメッセージの通知をカスタマイズする**||||これらの設定は、メッセージが **マルウェアとして検疫されたときに外部送信者に通知** するか **、外部送信者からの配信不能メッセージを管理者に通知** するが選択されている場合にのみ使用されます。|
-|**[件名]** <br/><br/> _CustomExternalSubject_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
+|**件名** <br/><br/> _CustomExternalSubject_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
 |**Message** <br/><br/> _CustomExternalBody_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EOP フィッシング対策ポリシー設定
@@ -208,18 +208,18 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 |**フィッシングしきい値&保護**|||||
 |**ユーザーの保護を有効にする** (偽装されたユーザー保護) <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|未選択 <br/><br/> `$false` <br/><br/> none|選択済み <br/><br/> `$true` <br/><br/> \<list of users\>|選択済み <br/><br/> `$true` <br/><br/> \<list of users\>|キー ロールにユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は、CEO、CFO、およびその他の上級リーダーである可能性があります。 外部では、保護された送信者には、会議メンバーまたは取締役会が含まれる可能性があります。 <br/><br/> 事前設定されたセキュリティ ポリシーでは、保護するユーザーを指定することはできません。 事前設定されたセキュリティ ポリシーを無効にし、カスタムフィッシング対策ポリシーを使用して、推奨どおりに主要なロールにユーザーを追加する必要があります。|
 |**ドメインで保護を有効にする** (偽装されたドメイン保護)|未選択|選択済み|選択済み||
-|**所有しているドメインを含める** <br/><br/> _EnableOrganizationDomainsProtection_|オフ <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
-|**カスタム ドメインを含める** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|オフ <br/><br/> `$false` <br/><br/> none|選択済み <br/><br/> `$true` <br/><br/> \<list of domains\>|選択済み <br/><br/> `$true` <br/><br/> \<list of domains\>|所有していないドメイン (送信者ドメイン) を追加することをお勧めしますが、頻繁に操作します。 <br/><br/> 事前設定されたセキュリティ ポリシーでは、保護する custm ドメインを指定することはできません。 事前設定されたセキュリティ ポリシーを無効にし、カスタムフィッシング対策ポリシーを使用して、推奨どおりに保護するカスタム ドメインを追加する必要があります。|
+|**所有しているドメインを含める** <br/><br/> _EnableOrganizationDomainsProtection_|Off <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
+|**カスタム ドメインを含める** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Off <br/><br/> `$false` <br/><br/> none|選択済み <br/><br/> `$true` <br/><br/> \<list of domains\>|選択済み <br/><br/> `$true` <br/><br/> \<list of domains\>|所有していないドメイン (送信者ドメイン) を追加することをお勧めしますが、頻繁に操作します。 <br/><br/> 事前設定されたセキュリティ ポリシーでは、保護する custm ドメインを指定することはできません。 事前設定されたセキュリティ ポリシーを無効にし、カスタムフィッシング対策ポリシーを使用して、推奨どおりに保護するカスタム ドメインを追加する必要があります。|
 |**信頼できる送信者とドメインの追加** <br/><br/> _ExcludedSenders_ <br/><br/> _ExcludedDomains_|なし|なし|なし|組織によっては、偽装の試行として誤って識別される送信者またはドメインを追加することをお勧めします。|
 |**メールボックス インテリジェンスを有効にする** <br/><br/> _EnableMailboxIntelligence_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
-|**偽装保護のインテリジェンスを有効にする** <br/><br/> _EnableMailboxIntelligenceProtection_|オフ <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|この設定では、メールボックス インテリジェンスによる偽装検出に対して指定されたアクションを許可します。|
+|**偽装に対する保護のインテリジェンスを有効にする** <br/><br/> _EnableMailboxIntelligenceProtection_|Off <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|この設定では、メールボックス インテリジェンスによる偽装検出に対して指定されたアクションを許可します。|
 |**アクション**||||**[メッセージの検疫**] を選択した場合は、検疫 **ポリシーの選択** ボックスを使用できます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが許可する操作を定義します。 <br/><br/> 新しいフィッシング対策ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、その判定によって検疫されたメッセージの履歴機能を定義することを意味します (すべての偽装検出の種類の DefaultFullAccessPolicy)。 <br/><br/> 管理者は、ユーザーに対して制限の少ない、またはより制限の厳しい機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**偽装されたユーザーとしてメッセージが検出された場合** <br/><br/> _TargetedUserProtectionAction_|**アクションを適用しない** <br/><br/> `NoAction`|**メッセージを検疫する** <br/><br/> `Quarantine`|**メッセージを検疫する** <br/><br/> `Quarantine`|事前設定されたセキュリティ ポリシーでは、保護するユーザーを指定することはできません。そのため、この設定は、既定のセキュリティ ポリシーでは実質的に何も行われません。|
 |**偽装されたドメインとしてメッセージが検出された場合** <br/><br/> _TargetedDomainProtectionAction_|**アクションを適用しない** <br/><br/> `NoAction`|**メッセージを検疫する** <br/><br/> `Quarantine`|**メッセージを検疫する** <br/><br/> `Quarantine`|事前設定されたセキュリティ ポリシーでは、保護するカスタム ドメインを指定することはできません。そのため、この設定は、カスタム ドメインではなく、所有するドメインにのみ影響します。|
 |**メールボックス インテリジェンスが検出され、偽装されたユーザーの場合** <br/><br/> _MailboxIntelligenceProtectionAction_|**アクションを適用しない** <br/><br/> `NoAction`|**受信者の迷惑メール フォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**メッセージを検疫する** <br/><br/> `Quarantine`||
-|**ユーザー権限借用安全性のヒントを表示する** <br/><br/> _EnableSimilarUsersSafetyTips_|オフ <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
-|**ドメインの偽装安全性のヒントを表示する** <br/><br/> _EnableSimilarDomainsSafetyTips_|オフ <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
-|**ユーザー権限借用の通常とは異なる文字安全性のヒント表示する** <br/><br/> _EnableUnusualCharactersSafetyTips_|オフ <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
+|**ユーザー権限借用安全性のヒントを表示する** <br/><br/> _EnableSimilarUsersSafetyTips_|Off <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
+|**ドメインの偽装安全性のヒントを表示する** <br/><br/> _EnableSimilarDomainsSafetyTips_|Off <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
+|**ユーザー権限借用の通常とは異なる文字安全性のヒント表示する** <br/><br/> _EnableUnusualCharactersSafetyTips_|Off <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
 
 #### <a name="eop-anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365の EOP フィッシング対策ポリシー設定
 
@@ -258,7 +258,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/mod
 |---|:---:|:---:|---|
 |**SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365 を有効にする** <br/><br/> _EnableATPForSPOTeamsODB_|オフ <br/><br/> `$false`|オン <br/><br/> `$true`|ユーザーが悪意のあるファイルをダウンロードできないようにするには、「[SharePoint Online PowerShell を使用して、ユーザーが悪意のあるファイルをダウンロードできないようにする」](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)を参照してください。|
 |**Office クライアントのドキュメントのセーフを有効にする** <br/><br/> _EnableSafeDocs_|オフ <br/><br/> `$false`|オン <br/><br/> `$true`|この機能は、Defender for Office 365に含まれていないライセンス (Microsoft 365 E5やMicrosoft 365 E5 Securityなど) でのみ使用でき、意味があります。 詳細については、「[Microsoft 365 E5のドキュメントのセーフ](safe-docs.md)」を参照してください。|
-|**ドキュメントセーフファイルが悪意のあるものとして識別された場合でも、ユーザーが保護されたビューをクリックできるようにする** <br/><br/> _AllowSafeDocsOpen_|オフ <br/><br/> `$false`|オフ <br/><br/> `$false`|この設定は、セーフ ドキュメントに関連しています。|
+|**ドキュメントセーフファイルが悪意のあるものとして識別された場合でも、ユーザーが保護されたビューをクリックできるようにする** <br/><br/> _AllowSafeDocsOpen_|Off <br/><br/> `$false`|Off <br/><br/> `$false`|この設定は、セーフ ドキュメントに関連しています。|
 
 #### <a name="safe-attachments-policy-settings"></a>セーフ添付ファイル ポリシー設定
 

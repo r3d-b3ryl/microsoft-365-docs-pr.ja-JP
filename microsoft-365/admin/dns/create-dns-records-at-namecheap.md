@@ -78,7 +78,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
     (ドロップダウン リストから **TTL** 値を選択します)。
 
-    |型|Host|値|TTL|
+    |種類|ホスト|値|TTL|
     |---|---|---|---|
     |TXT|@|MS=ms *XXXXXXXX*  <br/>**注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)|30 分|
 
@@ -139,7 +139,7 @@ Microsoft 365でレコードを確認するには:
 
     ([ **Priority**] ボックスは、[ **Value**] ボックスの右側にある名前のないボックスです。 ドロップダウン リストから **TTL** 値を選択します)。
 
-    |型|Host|値|Priority|TTL|
+    |種類|ホスト|値|Priority|TTL|
     |---|---|---|---|---|
     |MX レコード|@|\<*domain-key*\>.mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **メモ：** Microsoft アカウントから取得します *\<domain-key\>* 。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)|0  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。|30 分|
 
@@ -192,7 +192,7 @@ Microsoft 365でレコードを確認するには:
 
 1. 新しいレコードの空のボックスで、[ **Record Type**] に [ **CNAME**] を選び、次の表の 1 行目の値を入力するか、コピーして貼り付けます。
 
-    |型|Host|値|TTL|
+    |種類|ホスト|値|TTL|
     |---|---|---|---|
     |CNAME|autodiscover|autodiscover.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません**|自動|
 
@@ -236,7 +236,7 @@ Microsoft 365でレコードを確認するには:
 
     (ドロップダウン リストから **TTL** 値を選択します)。
 
-    |型|Host|値|TTL|
+    |種類|ホスト|値|TTL|
     |---|---|---|---|
     |TXT|@|v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。|30 分|
 
@@ -312,7 +312,7 @@ Microsoft Teamsに加えて、組織がチャット、電話会議、ビデオ�
 
 1. 新しいレコードの空のボックスに、テーブルの最初の行の値を入力またはコピーして貼り付けます。
 
-    |型|Host|値|TTL|
+    |種類|ホスト|値|TTL|
     |---|---|---|---|
     |CNAME|sip|sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません**|自動|
     |CNAME|lyncdiscover|webdir.online.lync.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません**|自動|
@@ -363,7 +363,7 @@ Microsoft Teamsに加えて、組織がチャット、電話会議、ビデオ�
 
 1. 新しいレコードの空のボックスに、テーブルの最初の行の値を入力またはコピーして貼り付けます。
 
-    |型|Host|値|TTL|
+    |種類|ホスト|値|TTL|
     |---|---|---|---|
     |CNAME|enterpriseregistration|enterpriseregistration.windows.net.  <br/> **この値は、末尾がピリオド (.) でなければなりません**|自動|
     |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません**|自動|

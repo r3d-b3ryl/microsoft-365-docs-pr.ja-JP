@@ -78,7 +78,7 @@ Officeドキュメントには、_アクティブなコンテンツ_ が含ま�
 
 ## <a name="configure-trusted-document-settings-in-office-policies"></a>Office ポリシーで信頼できるドキュメント設定を構成する
 
-管理者は、組織内でOfficeを構成するさまざまな方法があります。 次に、例を示します。
+管理者は、組織内でOfficeを構成するさまざまな方法があります。 例:
 
 - **Office クラウド ポリシー サービス**: Azure AD アカウントを使用して、Office アプリ内のファイルにアクセスする任意のデバイス上のユーザーに適用されるユーザー ベースのポリシーを設定します。 [Office Cloud Policy Service でOfficeクラウド ポリシー構成を作成](/DeployOffice/overview-office-cloud-policy-service)する手順[を参照](https://config.office.com/officeSettings/officePolicies)してください。
 - **IntuneのOffice ポリシー**: Intune 設定 カタログまたは管理用テンプレートを使用して、WINDOWS 10 PC に HKCU ポリシーを展開します。デバイス **構成プロファイル** の [下の MEM 管理センター](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles)**で**\>。
@@ -149,7 +149,7 @@ Officeドキュメントには、_アクティブなコンテンツ_ が含ま�
 |マクロ|Outlook|Outlook セキュリティ モード|**Outlook セキュリティ グループ ポリシーを使用する**|すべてのOutlook GPO 設定を有効にするために必要です。 <p> 依存関係として言及されています (このポリシーは、アクティブなコンテンツ自体をブロックしません)。|
 |マクロ|Outlook|マクロのセキュリティ設定|**署名済みの警告、署名なしを無効にする**|次の値の **場合ははい**。 <ul><li>**常に警告する**</li><li>**署名済みの警告、署名なしを無効にする**</li><li>**Disabled**</li><li>**未構成**</li></ul>|
 |マクロ|PowerPoint|PowerPoint Open XML プレゼンテーションで暗号化されたマクロをスキャンする|**暗号化されたマクロをスキャンする (既定)**|いいえ|
-|マクロ|発行者|Publisher Automation セキュリティ レベル|**選択 (確認)**|いいえ|
+|マクロ|Publisher|Publisher Automation セキュリティ レベル|**選択 (確認)**|いいえ|
 |マクロ|Word|Word Open XML ドキュメントで暗号化されたマクロをスキャンする|**暗号化されたマクロをスキャンする (既定)**|いいえ|
 |
 

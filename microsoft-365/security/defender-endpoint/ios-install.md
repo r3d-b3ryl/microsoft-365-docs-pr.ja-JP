@@ -36,7 +36,7 @@ ms.locfileid: "65188660"
 
 このトピックでは、登録済みデバイスIntune ポータル サイト iOS に Defender for Endpoint を展開する方法について説明します。 デバイスの登録Intune詳細については、「[Intuneに iOS/iPadOS デバイスを登録する](/mem/intune/enrollment/ios-enroll)」を参照してください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にアクセスできることを確認します。
 

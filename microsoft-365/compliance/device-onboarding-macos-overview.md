@@ -32,7 +32,7 @@ MacOS デバイスは、Intuneまたは JAMF Proを使用して Microsoft Purvie
 - [エンドポイントのデータ損失防止](./endpoint-dlp-learn-about.md)
 - [インサイダー リスク管理](insider-risk-management.md)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 macOS デバイス (Catalina 10.15 以降) で Endpoint DLP を使用する前に、次の記事を理解しておく必要があります。
 

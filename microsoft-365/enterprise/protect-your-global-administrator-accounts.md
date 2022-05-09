@@ -29,7 +29,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/27/2022
 ms.locfileid: "65095600"
 ---
-# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>手順 2. Microsoft 365特権アカウントを保護する
+# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>手順 2。 Microsoft 365特権アカウントを保護する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 

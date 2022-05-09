@@ -36,14 +36,14 @@ ms.locfileid: "65091195"
 
 Azure ADでMicrosoft 365 アプリを管理するには、この 2 つのタスクを実行する必要があります。
   
-|前提条件|Comments|
+|前提条件|コメント|
 |:-----|:-----|
 |[無料のAzure AD サブスクリプションを使用する](../compliance/use-your-free-azure-ad-subscription-in-office-365.md) <br/> |Microsoft 365のすべての有料サブスクリプションには、Azure ADへの無料サブスクリプションが付属しています。 Azure ADを使用してアプリを管理し、ユーザー アカウントとグループ アカウントを作成および管理できます。 Azure ADを使用するには、Azure portalに[https://portal.azure.com](https://portal.azure.com)移動し、Microsoft 365 アカウントを使用してサインインするだけです。  <br/> |
 |[アプリに対するユーザーの同意を管理する](../admin/misc/user-consent.md) <br/> |サード パーティのアプリがユーザー Microsoft 365情報にアクセスできるようにアプリに対するユーザーの同意を管理し、アプリをAzure ADに登録する必要があります。 たとえば、サードパーティ アプリを使用している場合、そのアプリが予定表へのアクセスと OneDrive フォルダーにあるファイルの編集のために権限を与えるように求めてくることがあります。  <br/> |
    
 Microsoft 365 アプリを管理するには、Azure ADのアプリに関する知識が必要です。 これらの記事を使用して、必要な背景を提供します。
   
-|記事|Comments|
+|記事|コメント|
 |:-----|:-----|
 |[Microsoft 365 アプリ起動ツールを確認する](https://support.microsoft.com/office/meet-the-microsoft-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |アプリ起動ツールを初めて使用する場合は、アプリの概要と使用方法が気になる場合があります。 アプリ起動ツールは、Microsoft 365のどこからでもアプリにアクセスできるように設計されています。  <br/> |
 |[Office 365管理 API の概要](/office/office-365-management-api/office-365-management-apis-overview) <br/> |Microsoft 365管理 API を使用すると、メール、予定表、連絡先、ユーザー、グループ、ファイル、フォルダーなど、Microsoft 365 データへのアクセスを提供できます。 <br/> |

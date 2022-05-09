@@ -73,7 +73,7 @@ ms.locfileid: "65098540"
 |Recipients|メール メッセージのすべての受信者フィールド。 すなわち、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|garthf@contoso.com に送信されたメッセージ。2 番目の例では、contoso.com ドメイン内のすべての受信者に送信されたメッセージを返します。|
 |Sent|送信者によって電子メール メッセージが送信された日付。|`sent:2021-07-01` <p> `sent>=2021-06-01 AND sent<=2021-07-01`|指定された日付に送信された、または指定された日付範囲内に送信されたメッセージ。|
 |Size|アイテムのサイズ (バイト数)。|`size>26214400` <p> `size:1..1048567`|25 MB を超えるメッセージ。2 番目の例は 1 ～ 1,048,567 バイト (1 MB) のサイズのメッセージを返します。|
-|件名|電子メール メッセージの件名行に含まれるテキスト。 <p> **注:** クエリで Subject プロパティを使用すると、検索するテキストが件名に含まれているすべてのメッセージが返されます。 つまり、完全一致のメッセージのみがクエリで返されるわけではありません。 たとえば、 `subject:"Quarterly Financials"` を検索した場合の結果には、件名が "Quarterly Financials 2018" のメッセージが含まれることになります。|`subject:"Quarterly Financials"` <p> `subject:northwind`|件名行のテキストのいずれかの箇所に "Quarterly Financials" を含むメッセージ。 2 番目の例では、件名行に「northwind」の語が含まれているすべてのメッセージを返します。|
+|Subject|電子メール メッセージの件名行に含まれるテキスト。 <p> **注:** クエリで Subject プロパティを使用すると、検索するテキストが件名に含まれているすべてのメッセージが返されます。 つまり、完全一致のメッセージのみがクエリで返されるわけではありません。 たとえば、 `subject:"Quarterly Financials"` を検索した場合の結果には、件名が "Quarterly Financials 2018" のメッセージが含まれることになります。|`subject:"Quarterly Financials"` <p> `subject:northwind`|件名行のテキストのいずれかの箇所に "Quarterly Financials" を含むメッセージ。 2 番目の例では、件名行に「northwind」の語が含まれているすべてのメッセージを返します。|
 |To|メール メッセージの To フィールド。<sup>1</sup>|`to:annb@contoso.com` <p> `to:annb ` <br/> `to:"Ann Beebe"`|いずれの例も、To: 行に "Ann Beebe" が指定されているメッセージを返します。|
 
 > [!NOTE]

@@ -35,7 +35,7 @@ ms.locfileid: "64780371"
 
 使用している DNS ホスティング プロバイダーが Cloudflare の場合は、この記事に記載された手順に従って、ドメインの確認とメールや Skype for Business Online などの DNS レコードのセットアップを行います。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 ドメインの DNS レコードを設定するには、次の 2 つのオプションがあります。
 

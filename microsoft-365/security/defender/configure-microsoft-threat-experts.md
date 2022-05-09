@@ -35,7 +35,7 @@ ms.locfileid: "64667276"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 > [!IMPORTANT]
 > 申し込む前に、Microsoft Technical Service プロバイダーとアカウント チームとMicrosoft 脅威エキスパート – ターゲット攻撃通知マネージド脅威ハンティング サービスの資格要件について説明してください。

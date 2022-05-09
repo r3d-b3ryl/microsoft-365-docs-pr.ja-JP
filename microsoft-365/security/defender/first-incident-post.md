@@ -50,7 +50,7 @@ Microsoft 365 Defenderは、[MITRE ATT&CK Framework](https://attack.mitre.org/) 
 
 インシデント後のレビュー アクティビティでは、組織の対応機能を合理化するために、セキュリティ構成とセキュリティ チームのプロセスを微調整することもできます。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 次の追加の調査パスを参照してください。
 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Secure Score を通じてセキュリティの態勢を評価する
-description: Microsoft Secure Score を向上させるためにアクションを実行する方法について説明します。Microsoft 365 Defenderします。
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender ポータル, 改善アクション
+title: Microsoft Secure Score を使用してセキュリティ体制を評価する
+description: Microsoft 365 Defender ポータルで Microsoft Secure Score を改善するためのアクションを実行する方法について説明します。
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, 改善アクション
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -29,99 +29,99 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/31/2022
 ms.locfileid: "64569456"
 ---
-# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Secure Score を使用してセキュリティの態勢を評価する
+# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Secure Score を使用してセキュリティ体制を評価する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 このファイルは、ポータルhttps://security.microsoft.com/securescoreのMicrosoft 365 Defender[があります](microsoft-365-defender.md)。
+Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 https://security.microsoft.com/securescore [Microsoft 365 Defender ポータル](microsoft-365-defender.md)にあります。
 
-必要な情報を迅速に見つけるために、Microsoft の改善アクションはグループに整理されています。
+必要な情報をより迅速に見つけられるように、Microsoft の改善アクションはグループにまとめられています。
 
-- ID (Azure Active Directoryアカウント&ロール)
-- デバイス (Microsoft Defender for Endpoint Microsoft [Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- アプリ (電子メール アプリとクラウド アプリ(Office 365およびMicrosoft Defender for Cloud Apps)
+- ID (Azure Active Directory アカウント&ロール)
+- デバイス (Microsoft Defender for Endpoint、[デバイスの Microsoft Secure Score](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) と呼ばれます)
+- アプリ (Office 365とMicrosoft Defender for Cloud Appsを含む電子メール アプリとクラウド アプリ)
 
 >[!NOTE]
->Microsoft Secure Score の最近のリリースでは、スコアリング モデルが改善され、Microsoft Secure Score は一時的に Identity Secure Score および Graph API と互換性がありません。 [詳細の表示](microsoft-secure-score-whats-new.md)
+>Microsoft Secure Score の最近のリリースでは、改良されたスコア付けモデルがリリースされ、Microsoft Secure Score は一時的に Identity Secure Score およびGraph APIと互換性がありません。 [詳細の表示](microsoft-secure-score-whats-new.md)
 
-Microsoft Secure Score の概要ページで、これらのグループ間でのポイントの分割方法と使用可能なポイントを確認します。 また、合計スコアの全体表示、ベンチマーク比較によるセキュリティで保護されたスコアの履歴傾向、スコアを向上させるために実行できる優先順位付けされた改善アクションを取得できます。
+Microsoft Secure Score の概要ページで、これらのグループ間でポイントを分割する方法と、使用可能なポイントを確認します。 また、合計スコア、ベンチマーク比較を使用したセキュリティスコアの履歴傾向、スコアを改善するために実行できる優先順位付けされた改善アクションのオールアップ ビューを取得することもできます。
 
-:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="セキュリティで保護されたスコアのホームページ (Microsoft 365 Defender ポータル)" lightbox="../../media/secure-score/secure-score-home-page.png":::
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="Microsoft 365 Defender ポータルのセキュリティスコアホームページ" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="check-your-current-score"></a>現在のスコアを確認する
 
-現在のスコアを確認するには、[Microsoft Secure Score の概要] ページに移動し、[セキュリティで保護されたスコア] というタイル **を探します**。 スコアはパーセンテージで表示され、合計可能なポイント数から達成したポイント数が表示されます。
+現在のスコアを確認するには、Microsoft Secure Score の概要ページに移動し、[セキュリティスコア] と表示されているタイル **を探します**。 スコアはパーセンテージで表示され、合計可能なポイントのうち達成したポイントの数も表示されます。
 
-さらに、スコアの横にある **[含** める] ボタンを選択した場合は、スコアの異なるビューを選択できます。 これらの異なるスコア ビューは、スコア タイルとポイント内訳グラフのグラフに表示されます。
+さらに、スコアの横にある [ **含める** ] ボタンを選択した場合は、スコアのさまざまなビューを選択できます。 これらの異なるスコア ビューは、スコア タイルとポイント内訳グラフのグラフに表示されます。
 
-全体的なスコアのビューに追加できるスコアを次に示します。
+全体的なスコアのビューに追加できるスコアを次に示します。これを使用すると、全体的なスコアの全体像を把握できます。
 
-- **計画スコア**: 計画されたアクションが完了すると、投影スコアを表示する
+- **計画スコア: 計画** アクションが完了したときに、投影スコアを表示する
 - **現在のライセンス スコア**: 現在の Microsoft ライセンスで達成できるスコアを表示する
 - **達成可能なスコア**: Microsoft ライセンスと現在のリスク受け入れで達成できるスコアを表示する
 
-このビューは、すべての可能なスコア ビューを含めた場合の外観です。
+このビューは、考えられるすべてのスコア ビューを含めている場合の外観です。
 
-:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="計画スコア、現在のライセンス スコア、および達成可能なスコアを含む、セキュリティで保護されたスコアがMicrosoft 365 Defenderポータル" lightbox="../../media/secure-score/secure-score-achievable.png":::
+:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="Microsoft 365 Defender ポータルでの計画スコア、現在のライセンス スコア、達成可能なスコアを含むセキュリティ スコア" lightbox="../../media/secure-score/secure-score-achievable.png":::
 
 ## <a name="take-action-to-improve-your-score"></a>スコアを上げるための対策
 
-[ **改善アクション] タブ** には、攻撃の可能性がある表面に対処するセキュリティ推奨事項が一覧表示されます。 また、その状態 (対処、計画、リスクの受け入れ、第三者による解決、代替緩和による解決、完了) も含まれます。 すべての改善のための処置の検索、フィルター処理、グループ化を行うことができます。  
+[ **改善アクション]** タブには、攻撃の可能性がある表面に対処するセキュリティに関する推奨事項が一覧表示されます。 また、状態 (対応、計画、リスクの受け入れ、サード パーティを通じた解決、代替軽減策による解決、完了) も含まれます。 すべての改善のための処置の検索、フィルター処理、グループ化を行うことができます。  
 
 ### <a name="ranking"></a>ランク付け
 
-ランキングは、達成するために残されたポイント数、実装の難易度、ユーザーへの影響、および複雑さに基づいて行います。 最高ランクの改善のための処置では、難易度、ユーザーへの影響度、複雑度は低く、高ポイントを取ることができます。
+ランキングは、達成するために残されたポイントの数、実装の難易度、ユーザーへの影響、および複雑さに基づいています。 最高ランクの改善のための処置では、難易度、ユーザーへの影響度、複雑度は低く、高ポイントを取ることができます。
 
 ### <a name="view-improvement-action-details"></a>改善アクションの詳細を表示する
 
-特定の改善アクションを選択すると、ページ全体の飛び出しが表示されます。  
+特定の改善アクションを選択すると、完全なページ ポップアップが表示されます。  
 
-:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="ポータルでの改善アクションのMicrosoft 365 Defender表示" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="Microsoft 365 Defender ポータルでの改善アクションのポップアップ" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
 この操作を完了するには、いくつかの選択肢があります。
 
-- [**管理] をMicrosoft 365 Defender** 構成画面に移動し、変更を行います。 その後、アクションが価値のあるポイントを取得し、フライアウトに表示されます。 ポイントの更新には通常約 24 時間かかります。
+- **Microsoft 365 Defenderで [管理**] を選択して構成画面に移動し、変更を行います。 その後、ポップアップに表示されるアクションの価値があるポイントを取得します。 ポイントの更新には、通常約 24 時間かかります。
 
-- [ **共有] を** 選択して、改善アクションへの直接リンクをコピーします。 リンクを共有するプラットフォームを選択して、電子メール、メール、Microsoft Teams、Microsoft Planner。
+- [ **共有** ] を選択して、改善アクションへの直接リンクをコピーします。 メール、Microsoft Teams、Microsoft Plannerなどのリンクを共有するプラットフォームを選択することもできます。
 
-メモ **を追加** して、進行状況やコメントする他の項目を追跡します。 改善アクションに独自の **タグ** を追加する場合は、それらのタグでフィルター処理できます。
+メモ **を追加** して、進行状況やコメントするその他の内容を追跡します。 改善アクションに独自の **タグ** を追加する場合は、それらのタグでフィルター処理できます。
 
 ### <a name="choose-an-improvement-action-status"></a>改善アクションの状態を選択する
 
-ステータスを選択し、改善アクションに固有のメモを記録します。
+改善アクションに固有の状態を選択し、メモを記録します。
 
-- **対処するには** - 改善アクションが必要と認識し、将来ある時点で対処する予定です。 この状態は、部分的に検出されたが完全には完了していないアクションにも適用されます。
-- **計画済** み - 改善アクションを完了する具体的な計画が実施されています。
-- **リスクの受け** 入れ - セキュリティは常に使いやすさとバランスを取り、すべての推奨事項が環境で機能する必要があります。 その場合は、リスクまたは残りのリスクを受け入れ、改善アクションを実行しない選択できます。 ポイントは指定されませんが、改善アクションの一覧にアクションが表示されなくなりました。 このアクションは履歴で表示したり、いつでも元に戻したりできます。
-- **サード パーティによって解決され** 、代替の軽減策によって **解決されました。** 改善アクションは、サード パーティ製のアプリケーションまたはソフトウェア、または内部ツールによって既に対処されています。 アクションが価値のあるポイントを得られるので、スコアは全体的なセキュリティの姿勢をよりよく反映します。 サードパーティまたは内部ツールがコントロールをカバーしなくなった場合は、別の状態を選択できます。 改善アクションがこれらの状態のいずれかとしてマークされている場合、Microsoft は実装の完全性を確認できません。
+- **対処するには** 、 - 改善アクションが必要であることを認識し、将来のある時点で対処する予定です。 この状態は、部分的に検出されたが完全には完了していないアクションにも適用されます。
+- **計画済み** - 改善アクションを完了するための具体的な計画が用意されています。
+- **リスクが許容される** - セキュリティは常に使いやすさとバランスを取る必要があり、すべての推奨事項が環境に適しているわけではありません。 このような場合は、リスクまたは残りのリスクを受け入れ、改善アクションを適用しないことを選択できます。 ポイントは与えられませんが、改善アクションの一覧にアクションは表示されなくなります。 このアクションは履歴で表示したり、いつでも元に戻したりできます。
+- **サード パーティを通じて解決** され、 **別の軽減策を通じて解決** された - 改善アクションは、サードパーティのアプリケーションまたはソフトウェア、または内部ツールによって既に対処されています。 アクションの価値があるポイントが得られるので、全体的なセキュリティ体制がスコアに反映されます。 サード パーティまたは内部ツールでコントロールがカバーされなくなった場合は、別の状態を選択できます。 改善アクションがこれらの状態のいずれかとしてマークされている場合、Microsoft は実装の完全性を把握できません。
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>脅威& 脆弱性の管理改善アクション
 
-[デバイス] カテゴリの改善アクションでは、状態を選択できません。 代わりに、アクションを実行する脅威と脆弱性の管理[関連付けられている](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)セキュリティMicrosoft 365 Defender指示されます。 選択した例外と、作成する正当化は、そのポータルに固有です。 Microsoft Secure Score ポータルには表示されません。
+[デバイス] カテゴリの改善アクションでは、状態を選択できません。 代わりに、アクションを実行するために、Microsoft 365 Defenderに関連付けられている[脅威と脆弱性の管理セキュリティに関する推奨事項](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)に移動します。 選択した例外と書き込む理由は、そのポータルに固有です。 Microsoft Secure Score ポータルには表示されません。
 
-#### <a name="completed-improvement-actions"></a>改善アクションの完了
+#### <a name="completed-improvement-actions"></a>完了した改善アクション
 
-改善アクションの可能性があるすべてのポイントが達成された後、改善アクションの状態は "完了" になります。 Microsoft データを使用して、完了した改善アクションが確認され、状態を変更できない。
+改善アクションのすべての可能なポイントが達成されると、改善アクションは "完了" 状態になります。 Microsoft データでも完了した改善アクションが確認され、状態を変更することはできません。
 
 ### <a name="assess-information-and-review-user-impact"></a>情報を評価し、ユーザーへの影響を確認する
 
-「一目で **見る」** というセクションには、カテゴリ、保護できる攻撃、製品が表示されます。
+一 **目で** わかるセクションには、カテゴリ、保護できる攻撃、製品が表示されます。
 
-**ユーザーの影響** は、改善アクションが実行された場合にユーザーが発生する操作であり、影響を受けるユーザーは影響を受けるユーザーです。
+**ユーザーの影響** は、改善アクションが適用された場合にユーザーが経験するものであり、 **影響を受けるユーザー** は影響を受けるユーザーです。
 
-### <a name="implement-the-improvement-action"></a>改善アクションの実装
+### <a name="implement-the-improvement-action"></a>改善アクションを実装する
 
-[ **実装]** セクションには、前提条件、改善アクションを完了するためのステップ バイ ステップの次の手順、改善アクションの現在の実装状態、および詳細なリンクが表示されます。
+**[実装]** セクションには、改善アクションを完了するための前提条件、ステップ バイ ステップの次の手順、改善アクションの現在の実装状態、および詳細なリンクが示されています。
 
-前提条件には、必要なライセンス、または改善アクションに対処する前に完了するアクションが含まれます。 ライセンスに十分なシートが含まれていますので、改善アクションを完了し、それらのライセンスが必要なユーザーに適用されます。  
+前提条件には、必要なライセンス、または改善アクションに対処する前に完了するアクションが含まれます。 改善アクションを完了するのに十分なシートがライセンスに含まれていることと、それらのライセンスが必要なユーザーに適用されていることを確認します。  
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 
-問題がある場合は、セキュリティ、プライバシー、コンプライアンス コミュニティに投稿して [&してください](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 。 コミュニティを監視しているので、問題に対応します。
+問題がある場合は、 [セキュリティ、プライバシー、コンプライアンス](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) コミュニティに投稿&お知らせください。 コミュニティを監視しているので、問題に対応します。
 
 ## <a name="related-resources"></a>関連リソース
 
 - [Microsoft Secure Score の概要](microsoft-secure-score.md)
-- [Microsoft Secure Score の履歴を追跡し、目標を達成する](microsoft-secure-score-history-metrics-trends.md)
+- [Microsoft Secure Score 履歴を追跡し、目標を達成する](microsoft-secure-score-history-metrics-trends.md)
 - [今後の予定](microsoft-secure-score-whats-coming.md)
 - [新機能](microsoft-secure-score-whats-new.md)

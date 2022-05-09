@@ -81,7 +81,7 @@ Microsoft Defender for Office 365では、修復アクションは自動的に�
 - [マルウェア対策保護](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [フィッシング対策保護](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [スパム対策保護](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [セーフ リンクと添付ファイルセーフ](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [安全なリンク、安全な添付ファイル](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
 さらに、 [組織のアラート ポリシー](../../compliance/alert-policies.md)、特に [脅威管理カテゴリの既定のポリシーを](../../compliance/alert-policies.md#default-alert-policies)確認してください。
 
@@ -91,11 +91,11 @@ Microsoft 365には、管理者のアクセス許可の悪用、マルウェア 
 
 |通知|重要度|アラートの生成方法|
 |---|---|---|
-|悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次のいずれかが発生したときに生成されます。 <ul><li>組織内の [セーフ リンク](safe-links.md)によって保護されているユーザーが悪意のあるリンクをクリックする</li><li>URL の判定の変更は、Microsoft Defender for Office 365によって識別されます</li><li>ユーザーはセーフリンクの警告ページをオーバーライドします (組織の[セーフリンク ポリシー](set-up-safe-links-policies.md)に基づいています。</li></ul> <p> このアラートをトリガーするイベントの詳細については、「[リンク ポリシーセーフ設定](set-up-safe-links-policies.md)する」を参照してください。|
+|悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次のいずれかが発生したときに生成されます。 <ul><li>組織内の [セーフ リンク](safe-links.md)によって保護されているユーザーが悪意のあるリンクをクリックする</li><li>URL の判定の変更は、Microsoft Defender for Office 365によって識別されます</li><li>ユーザーはセーフリンクの警告ページをオーバーライドします (組織の[セーフリンク ポリシー](set-up-safe-links-policies.md)に基づいています。</li></ul> <p> このアラートをトリガーするイベントの詳細については、「[セーフリンク ポリシーの設定](set-up-safe-links-policies.md)」を参照してください。|
 |ユーザーがマルウェアまたはフィッシングとして電子メール メッセージを報告する|**情報**|このアラートは、組織内のユーザーがレポート メッセージ [アドインまたはレポート](enable-the-report-message-add-in.md) フィッシング アドインを使用してフィッシング メールとしてメッセージ [を報告](enable-the-report-phish-add-in.md)するときに生成されます。|
 |マルウェアを含む電子メール メッセージは、配信後に削除されます|**情報**|このアラートは、マルウェアを含む電子メール メッセージが組織内のメールボックスに配信されるときに生成されます。 このイベントが発生した場合、Microsoft は [0 時間の自動消去 (ZAP)](zero-hour-auto-purge.md) を使用して、Exchange Onlineメールボックスから感染したメッセージを削除します。|
 |フィッシング URL を含む電子メール メッセージは、配信後に削除されます|**情報**|このアラートは、フィッシングを含むメッセージが組織内のメールボックスに配信されたときに生成されます。 このイベントが発生した場合、[Microsoft は ZAP](zero-hour-auto-purge.md) を使用してExchange Onlineメールボックスから感染したメッセージを削除します。|
-|不審な電子メール送信パターンが検出される|**Medium**|このアラートは、組織内のユーザーが疑わしいメールを送信し、電子メールの送信を制限される危険性がある場合に生成されます。 このアラートは、アカウントが侵害されたが、ユーザーを制限するのに十分なほど重大ではない可能性がある動作の早期警告です。 <p> まれですが、このポリシーによって生成されたアラートは異常である可能性があります。 ただし、 [ユーザー アカウントが侵害されているかどうかを確認](responding-to-a-compromised-email-account.md)することをお勧めします。|
+|不審な電子メール送信パターンが検出される|**Medium**|このアラートは、組織内のユーザーが疑わしいメールを送信し、電子メールの送信を制限される危険性がある場合に生成されます。 このアラートは、アカウントが侵害されたが、ユーザーを制限するのに十分なほど重大ではない可能性がある動作の早期警告です。 <p> まれですが、このポリシーによって生成されるアラートは異常である可能性があります。 ただし、[ユーザー アカウントが侵害されていないかどうか](responding-to-a-compromised-email-account.md)を確認することをお勧めします。|
 |ユーザーが電子メールの送信を制限されている|**High**|このアラートは、組織内のユーザーが送信メールの送信を制限されたときに生成されます。 このアラートは通常、 [電子メール アカウントが侵害](responding-to-a-compromised-email-account.md)されたときに発生します。 <p> 制限付きユーザーの詳細については、「[Microsoft 365の制限付きユーザーポータルからブロックされたユーザーを削除](removing-user-from-restricted-users-portal-after-spam.md)する」を参照してください。|
 
 > [!TIP]

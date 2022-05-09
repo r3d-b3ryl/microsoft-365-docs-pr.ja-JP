@@ -35,7 +35,7 @@ ms.locfileid: "64952844"
 - [インサイダー リスク管理](insider-risk-management.md)
 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - [macOS デバイスがIntuneにオンボードされ](/mem/intune/fundamentals/deployment-guide-platform-macos)、[ポータル サイト アプリ](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)に登録されていることを確認します。 
 - [Microsoft エンドポイント マネージャー センター](https://endpoint.microsoft.com/#home)にアクセスできることを確認する

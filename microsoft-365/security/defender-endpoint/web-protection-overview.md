@@ -42,7 +42,7 @@ Microsoft Defender for Endpointの Web 保護は、[Web 脅威保護](web-threat
 
 :::image type="content" source="images/web-protection.png" alt-text="Web 保護カード" lightbox="images/web-protection.png":::
 
-### <a name="web-threat-protection"></a>Web の脅威に対する保護
+### <a name="web-threat-protection"></a>Web 脅威の保護
 
 Web 脅威保護を構成するカードは、 **時間の経過に伴う Web 脅威の検出** と **Web 脅威の概要です**。
 
@@ -139,7 +139,7 @@ SmartScreen クラウド サービスが許可、ブロック、または警告�
 |CustomBlockList|カスタム インジケーター|
 |CasbPolicy|Defender for Cloud Apps|
 |悪意がある|Web の脅威|
-|フィッシング|Web の脅威|
+|フィッシング詐欺|Web の脅威|
 |||
 
 ## <a name="advanced-hunting-for-web-protection"></a>Web 保護のための高度なハンティング

@@ -74,7 +74,7 @@ SharePoint、OneDrive、Microsoft TeamsのDefender for Office 365は、悪意の
 
 3. [**SharePoint、OneDrive、およびMicrosoft Teams内のファイルを保護** する] の下にあります。 **[SharePoint、OneDrive、Microsoft Teamsの ATP を有効にする**] を選択します。
 
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 
 ### <a name="enable-anti-malware"></a>マルウェア対策を有効にする

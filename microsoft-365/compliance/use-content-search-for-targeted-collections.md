@@ -272,7 +272,7 @@ SharePointサイトまたはOneDrive for Business サイトから **documentlink
   documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 この記事のスクリプトを使用してターゲット コレクションを実行する場合は、次の点に注意してください。
 
