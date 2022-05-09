@@ -1,7 +1,7 @@
 ---
 title: デバイスのセキュア スコアを取得する
-description: 組織デバイスのセキュリティで保護されたスコアを取得します。
-keywords: apis, graph api, supported apis, get, alerts, recent
+description: 組織のデバイスのセキュリティスコアを取得します。
+keywords: apis, graph api, サポートされている API, get, alerts, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -36,11 +36,11 @@ ms.locfileid: "61300204"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-デバイスの [Microsoft Secure Score を取得します](tvm-microsoft-secure-score-devices.md)。 デバイスの Microsoft セキュア スコアが高いということは、エンドポイントがサイバー セキュリティの脅威攻撃に対してより回復力があることを意味します。
+[デバイスの Microsoft セキュリティ スコアを取得します](tvm-microsoft-secure-score-devices.md)。 デバイスの Microsoft セキュア スコアが高いということは、エンドポイントがサイバー セキュリティの脅威攻撃に対してより回復力があることを意味します。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -55,7 +55,7 @@ GET /api/configurationScore
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -65,7 +65,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、デバイスのセキュリティで保護されたスコア データを応答本文に返します。
+成功した場合、このメソッドは 200 OK を返し、デバイスのセキュリティで保護されたスコア データを応答本文に格納します。
 
 ## <a name="example"></a>例
 
@@ -82,7 +82,7 @@ GET https://api.securitycenter.microsoft.com/api/configurationScore
 以下は、応答の例です。
 
 > [!NOTE]
-> ここに示す応答リストは、簡単に切り詰められることがあります。
+> 簡潔にするために、ここに示す応答の一覧が切り捨てられる場合があります。
 
 ```json
 {
@@ -94,4 +94,4 @@ GET https://api.securitycenter.microsoft.com/api/configurationScore
 
 ## <a name="see-also"></a>関連項目
 
-- [エンドポイント用 Microsoft Defender を使用した OData クエリ](exposed-apis-odata-samples.md)
+- [Microsoft Defender for Endpointを使用した OData クエリ](exposed-apis-odata-samples.md)

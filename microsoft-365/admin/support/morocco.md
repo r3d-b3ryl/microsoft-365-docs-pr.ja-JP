@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 54e30aafc88ea7f8cbbff9a27b2050270221775e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: df97207f6080f3d28fab50a098fb22f75e6b7ed7
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194995"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61364118"
 ---
-# <a name="contact-support-for-morocco"></a>モロッコのサポートに問い合わせ
+# <a name="contact-support-for-morocco"></a>モロッコのサポートにお問い合わせください
 
-[別の国または地域を検索します](../../business-video/get-help-support.md)。
+[別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 0801 000 809
@@ -43,7 +43,7 @@ ms.locfileid: "60194995"
 
 アラビア語: Sun-Thu午前 8 時から午後 4 時
 
-フランス語: Mon-Fri 7 AM-8 PM
+フランス語: Mon-Fri午前 7 時から午後 8 時
 
 英語: 24 時間年中無休
 

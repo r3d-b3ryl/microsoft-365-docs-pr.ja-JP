@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371990"
 ---
-# <a name="contact-support-for-turkey"></a>トルコのサポートに問い合わせ
+# <a name="contact-support-for-turkey"></a>トルコのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "61371990"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-トルコ: Mon-Fri 9 AM-6 PM
+トルコ語: Mon-Fri午前 9 時から午後 6 時
 
 英語: Mon-Fri午前 9 時から午後 6 時
 

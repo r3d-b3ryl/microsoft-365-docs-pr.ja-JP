@@ -1,7 +1,7 @@
 ---
 title: デバイス ID で不足している KB を取得する
-description: デバイス ID によって不足しているセキュリティ更新プログラムを取得します。
-keywords: apis、 graph api, supported apis, get, list, file, information, device id, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
+description: デバイス ID で不足しているセキュリティ更新プログラムを取得します
+keywords: apis, graph api, サポートされている API, get, list, file, information, device id, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -35,7 +35,7 @@ ms.locfileid: "61300216"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-デバイス ID によって不足している KB (セキュリティ更新プログラム) を取得します。
+デバイス ID で見つからない KB (セキュリティ更新プログラム) を取得します
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -44,15 +44,15 @@ GET /api/machines/{machineId}/getmissingkbs
 ```
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください](apis-intro.md)。
+この API を呼び出すには、次のアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
-アプリケーション | Software.Read.All | '脅威と脆弱性管理ソフトウェア情報の読み取り'
+アプリケーション | Software.Read.All | '脅威と脆弱性管理ソフトウェアの情報の読み取り'
 
 ## <a name="request-header"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**。
 
@@ -62,7 +62,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、指定したデバイスには本文に kb データがありません。
+成功した場合、このメソッドは 200 OK を返し、指定されたデバイスに本文に KB データがありません。
 
 ## <a name="example"></a>例
 
@@ -99,7 +99,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-- [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [脅威&脆弱性ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

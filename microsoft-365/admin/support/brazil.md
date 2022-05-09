@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61374702"
 ---
-# <a name="contact-support-for-brazil"></a>ブラジルのサポートに問い合わせ
+# <a name="contact-support-for-brazil"></a>ブラジルのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -41,6 +41,6 @@ ms.locfileid: "61374702"
 
 他の電話番号:
 
-0800 047 4958 (現地フリーダイヤル)
+0800 047 4958 (ローカルフリーダイヤル)
 
-11 4700 1999 (現地通話料が適用されます)
+11 4700 1999 (ローカル通話料金が適用されます)

@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371066"
 ---
-# <a name="contact-support-for-china"></a>中国のサポートに問い合わせ
+# <a name="contact-support-for-china"></a>中国のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -44,7 +44,7 @@ ms.locfileid: "61371066"
 ## <a name="follow-us-on-wechat"></a>WeChat でフォローしてください
 ![WeChat QR コード。](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
-## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>21Vianet Office 365サポートへの問い合わせ
+## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>21Vianet によってのみ運用されているOffice 365のサポートにお問い合わせください
 ## <a name="phone-number"></a>電話番号
 +86 4000 890 365
 
@@ -55,6 +55,6 @@ ms.locfileid: "61371066"
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-中国語と英語の電話サポート: Mon-Fri午前 9 時から午後 9 時
+中国語と英語の電話のサポート: Mon-Fri午前 9 時から午後 9 時
 
-中国語と英語のオンライン サポート (管理センター経由): 24 時間 365 日
+中国語と英語のオンライン サポート (管理センターを通じて): 24 時間、週 7 日

@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61369566"
 ---
-# <a name="contact-support-for-indonesia"></a>インドネシアのサポートに問い合わせ
+# <a name="contact-support-for-indonesia"></a>インドネシアのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -31,12 +31,12 @@ ms.locfileid: "61369566"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-Bahasa インドネシア: Mon-Fri 8 AM-5 PM
+Bahasa インドネシア: Mon-Fri午前 8 時から午後 5 時
 
 英語: Mon-Fri午前 9 時から午後 6 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-Bahasa インドネシア: Mon-Fri 8 AM-5 PM
+Bahasa インドネシア: Mon-Fri午前 8 時から午後 5 時
 
 英語: 24 時間年中無休

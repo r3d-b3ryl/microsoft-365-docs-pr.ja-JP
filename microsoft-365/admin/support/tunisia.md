@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61372002"
 ---
-# <a name="contact-support-for-tunisia"></a>チュニジアのサポートに問い合わせ
+# <a name="contact-support-for-tunisia"></a>チュニジアのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "61372002"
 
 アラビア語: Sun-Thu午前 9 時から午後 5 時
 
-フランス語: Mon-Fri 9 AM-5 PM
+フランス語: Mon-Fri午前 9 時から午後 5 時
 
 英語: Mon-Fri午前 9 時から午後 5 時
 

@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: ビジネス向け AutoPilot 用の CSV ファイルを作成するMicrosoft 365説明します。
+description: ビジネス向けのMicrosoft 365で AutoPilot 用の CSV ファイルを作成する方法について説明します。
 ms.openlocfilehash: 62dbcddbdab1a08ab3b19c6616b814c421a57c04
 ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
@@ -50,6 +50,6 @@ Windows Autopilot を使用してデバイスを管理および展開するに�
   
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365ドキュメントとリソースの詳細](../../index.yml)
+[ビジネス ドキュメントとリソースのMicrosoft 365](../../index.yml)
   
-[ビジネス向けMicrosoft 365を開始する](../../admin/admin-overview/what-is-microsoft-365.md)
+[ビジネス向けのMicrosoft 365を使用した概要](../../admin/admin-overview/what-is-microsoft-365.md)

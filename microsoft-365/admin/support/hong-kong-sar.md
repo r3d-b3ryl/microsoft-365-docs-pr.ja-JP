@@ -1,5 +1,5 @@
 ---
-title: 香港 SAR のサポート情報
+title: 香港特別行政区のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61369614"
 ---
-# <a name="contact-support-for-hong-kong-sar"></a>香港 SAR のサポートに問い合わせ
+# <a name="contact-support-for-hong-kong-sar"></a>香港特別行政区のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,17 +29,17 @@ ms.locfileid: "61369614"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-広東語: Mon-Fri 9 AM-6 PM
+広東語: Mon-Fri午前 9 時から午後 6 時
 
-北京語: Mon-Fri午前 9 時から午後 6 時
+標準語: Mon-Fri 9 AM-6 PM
 
 英語: Mon-Fri午前 9 時から午後 6 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-広東語: Mon-Fri 9 AM-6 PM
+広東語: Mon-Fri午前 9 時から午後 6 時
 
-北京語: Mon-Fri午前 9 時から午後 6 時
+標準語: Mon-Fri 9 AM-6 PM
 
 英語: 24 時間年中無休
 

@@ -35,6 +35,6 @@ ms.locfileid: "61371690"
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-フランス語: Mon-Fri午前 0 時 11 分
+フランス語: 午前 0 時 11 分Mon-Fri
 
 英語: 24 時間年中無休

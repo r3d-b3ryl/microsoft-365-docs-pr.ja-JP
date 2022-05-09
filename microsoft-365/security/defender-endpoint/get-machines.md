@@ -1,7 +1,7 @@
 ---
-title: マシン API の一覧
-description: リスト コンピューター API を使用して、Microsoft Defender for Endpoint クラウドと通信したコンピューターのコレクションを取得する方法について説明します。
-keywords: apis, graph api, supported apis, get, devices
+title: マシンの一覧表示 API
+description: List machines API を使用して、クラウドと通信したマシンのコレクションMicrosoft Defender for Endpoint取得する方法について説明します。
+keywords: apis, graph api, サポートされている API, get, devices
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61284651"
 ---
-# <a name="list-machines-api"></a>マシン API の一覧
+# <a name="list-machines-api"></a>マシンの一覧表示 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,17 +38,17 @@ ms.locfileid: "61284651"
 
 ## <a name="api-description"></a>API の説明
 
-Microsoft Defender for Endpoint クラウド [と](machine.md) 通信したコンピューターのコレクションを取得します。
+Microsoft Defender for Endpoint クラウドと通信した [Machines](machine.md) のコレクションを取得します。
 
 [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 
-OData のクエリは、 で `$filter` `computerDnsName` `id` `version` `deviceValue` `aadDeviceId` `machineTags` `lastSeen` `exposureLevel` `onboardingStatus` `lastIpAddress` `healthStatus` `osPlatform` `riskScore` サポートされています `rbacGroupId` 。
+OData の`$filter`クエリは、次`riskScore``exposureLevel``lastSeen``onboardingStatus``machineTags``lastIpAddress``aadDeviceId``rbacGroupId``id``osPlatform``version``healthStatus``deviceValue`のようにサポートされています。 `computerDnsName`
 <br>```$stop``` 最大値が 10,000 の場合
-<br>```$skip``` Defender for Endpoint を使用した [OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
+<br>```$skip```[Defender for Endpoint を使用した OData クエリの例を](exposed-apis-odata-samples.md)参照してください
 
 ## <a name="limitations"></a>制限事項
 
-1. 構成済みの保持期間に従って最後に表示されたデバイスを取得できます。
+1. 構成された保有期間に従って、最後に表示されたデバイスを取得できます。
 2. 最大ページ サイズは 10,000 です。
 3. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。 
 
@@ -56,16 +56,16 @@ OData のクエリは、 で `$filter` `computerDnsName` `id` `version` `deviceV
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
-アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント)|Machine.Read|'コンピューター情報の読み取り'
-委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+アプリケーション|Machine.Read.All|'すべてのマシン プロファイルを読み取る'
+アプリケーション|Machine.ReadWrite.All|'すべてのマシン情報の読み取りと書き込み'
+委任 (職場または学校のアカウント)|Machine.Read|'マシン情報の読み取り'
+委任 (職場または学校のアカウント)|Machine.ReadWrite|'マシン情報の読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - 応答には、デバイス グループの設定に基づいて、ユーザーがアクセスできるデバイスだけが含まれます[](machine-groups.md)(詳細については、「デバイス グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
+> - 応答には、デバイス グループの設定に基づいて、ユーザーがアクセスできるデバイスのみが含まれます (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -85,7 +85,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功し、コンピューターが存在する場合 - 本文のコンピューター[](machine.md)エンティティの一覧で 200 OK。 最新のコンピューターがない場合 - 404 が見つかりません。
+成功し、マシンが存在する場合は、本文内の [マシン](machine.md) エンティティの一覧を含む 200 OK です。 最近使用したマシンがない場合は、404 が見つかりません。
 
 ## <a name="example"></a>例
 
@@ -132,6 +132,6 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-- [エンドポイント用 Microsoft Defender を使用した OData クエリ](exposed-apis-odata-samples.md)
+- [Microsoft Defender for Endpointを使用した OData クエリ](exposed-apis-odata-samples.md)

@@ -13,7 +13,7 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 - MET150
-description: 管理者は、Microsoft 365 でフィッシング メッセージが通過した理由と方法、および今後のフィッシング メッセージを防ぐための対策について学習できます。
+description: 管理者は、フィッシング メッセージがMicrosoft 365で受け取った理由と方法、および今後より多くのフィッシング メッセージを防ぐために行う方法を特定する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 299488a7ed8a891d870efb3ace618178c36552f1
@@ -32,53 +32,53 @@ ms.locfileid: "60206471"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-既定Microsoft 365さまざまなフィッシング対策機能が付属しますが、一部のフィッシング メッセージが引き続きメールボックスに送信される可能性があります。 このトピックでは、フィッシング メッセージが通過した理由と、誤って事態を悪化させずに Microsoft 365 組織のフィッシング対策設定を調整するために実行できる操作について説明します。
+Microsoft 365には、既定で有効になっているさまざまなフィッシング対策機能が付属していますが、一部のフィッシング メッセージがメールボックスに届く可能性があります。 このトピックでは、フィッシング メッセージが通った理由と、誤 _って事態を悪化させることなく_、Microsoft 365組織のフィッシング対策設定を調整するために実行できる操作について説明します。
 
-## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>まず、侵害されたアカウントに対処し、フィッシング メッセージの受信をブロックする
+## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>まず最初に、侵害されたアカウントに対処し、フィッシング メッセージの通過をブロックすることを確認します
 
-フィッシング メッセージの結果として受信者のアカウントが侵害された場合は、「セキュリティで保護されたメール アカウントに応答する」の手順に[従](responding-to-a-compromised-email-account.md)Microsoft 365。
+フィッシング メッセージの結果として受信者のアカウントが侵害された場合は、「[Microsoft 365で侵害されたメール アカウントに応答する」の手順に](responding-to-a-compromised-email-account.md)従います。
 
-サブスクリプションに Microsoft Defender for Office 365が含まれる場合は[](office-365-ti.md)、Office 365脅威インテリジェンスを使用して、フィッシング メッセージも受信した他のユーザーを特定できます。 フィッシング メッセージをブロックする追加のオプションがあります。
+サブスクリプションにMicrosoft Defender for Office 365が含まれている場合は、[Office 365脅威インテリジェンス](office-365-ti.md)を使用して、フィッシング メッセージも受信した他のユーザーを特定できます。 フィッシング メッセージをブロックする追加のオプションがあります。
 
-- [セーフMicrosoft Defender for Office 365](set-up-safe-links-policies.md)
+- [Microsoft Defender for Office 365 の安全なリンク](set-up-safe-links-policies.md)
 
-- [セーフMicrosoft Defender の添付ファイル (Office 365](set-up-safe-attachments-policies.md)
+- [Microsoft Defender for Office 365で添付ファイルをセーフする](set-up-safe-attachments-policies.md)
 
-- [Microsoft Defender のフィッシング対策ポリシーを](configure-mdo-anti-phishing-policies.md)Office 365。 ポリシーの [高度なフィッシングのしきい値] を一時的に [**標準**]から [アグレッシブ] 、[攻撃的] 、または [最も攻撃的] に **増やします**。
+- [Microsoft Defender for Office 365のフィッシング対策ポリシー](configure-mdo-anti-phishing-policies.md)。 ポリシーの **高度なフィッシングのしきい値は** 、 **Standard** から **アグレッシブ**、 **より攻撃的**、または **最も攻撃** 的に一時的に増やすことができることに注意してください。
 
-これらの Defender が有効になっているOffice 365確認します。
+これらのDefender for Office 365機能が有効になっていることを確認します。
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>フィッシング メッセージを Microsoft に報告する
 
-フィッシング メッセージの報告は、すべてのユーザーを保護するために使用されるフィルターの調整に役立Microsoft 365。 手順については、「メッセージと [ファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。
+フィッシング メッセージの報告は、Microsoft 365のすべての顧客を保護するために使用されるフィルターを調整する際に役立ちます。 手順については、「 [メッセージとファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。
 
-## <a name="inspect-the-message-headers"></a>メッセージ ヘッダーの検査
+## <a name="inspect-the-message-headers"></a>メッセージ ヘッダーを調べる
 
-フィッシング メッセージのヘッダーを調べて、フィッシング メッセージの受け取りを防ぐために、自分で実行できる操作が何かあるかを確認できます。 つまり、メッセージ ヘッダーを調べることは、フィッシング メッセージを許可する組織の設定を特定するのに役立ちます。
+フィッシング メッセージのヘッダーを調べて、より多くのフィッシング メッセージの受信を防ぐために自分でできることがあるかどうかを確認できます。 つまり、メッセージ ヘッダーを調べることは、フィッシング メッセージを許可する役割を担っていた組織内の設定を特定するのに役立ちます。
 
-具体的には、メッセージ ヘッダーの **X-Forefront-Antispam-Report** ヘッダー フィールドで、スパムまたはフィッシングに対するスキップされたフィルター処理がスパム フィルター (SFV) 値で示されているのを確認する必要があります。 フィルター処理をスキップするメッセージには、サービスによって決定されたスパムまたはフィッシングの判定を上書きして、このメッセージを許可した設定の 1 つが含 `SCL:-1` まれます。 メッセージ ヘッダーを取得する方法と、使用可能なすべてのスパム対策およびフィッシング対策メッセージ ヘッダーの完全な一覧の詳細については、「Microsoft 365 のスパム対策メッセージ ヘッダー」を[参照してください](anti-spam-message-headers.md)。
+具体的には、メッセージ ヘッダーの **X-Forefront-Antispam-Report** ヘッダー フィールドで、スパム フィルター判定 (SFV) 値でスパムまたはフィッシングのフィルター処理がスキップされたことを示す情報を確認する必要があります。 フィルター処理をスキップするメッセージにはエントリ `SCL:-1`が含まれます。つまり、サービスによって決定されたスパムまたはフィッシングの判定をオーバーライドすることで、このメッセージを許可した設定の 1 つを意味します。 メッセージ ヘッダーと、使用可能なすべてのスパム対策およびフィッシング詐欺対策メッセージ ヘッダーの完全な一覧を取得する方法の詳細については、「[Microsoft 365のスパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」を参照してください。
 
-## <a name="best-practices-to-stay-protected"></a>保護された環境を保護するためのベスト プラクティス
+## <a name="best-practices-to-stay-protected"></a>保護を維持するためのベスト プラクティス
 
-- 毎月、Secure Score を実行 [して](../defender/microsoft-secure-score.md) 組織のセキュリティ設定を評価します。
+- 毎月、 [セキュリティ スコア](../defender/microsoft-secure-score.md) を実行して、組織のセキュリティ設定を評価します。
 
-- 誤って検疫に終わるメッセージ、または許可されているメッセージの場合は、Threat Explorer でそれらのメッセージを検索し、リアルタイム検出することをお [勧めします](threat-explorer.md)。 送信者、受信者、またはメッセージ ID で検索できます。 メッセージを見つけると、件名をクリックして詳細に移動します。 検疫済みメッセージの場合は、適切なメソッドを使用して上書きできるよう、「検出テクノロジ」が何だったかを確認します。 許可されているメッセージについては、メッセージを許可したポリシーを確認します。
+- 誤って検疫に入るメッセージ、または許可されているメッセージの場合は、 [脅威エクスプローラーとリアルタイムの検出](threat-explorer.md)でそれらのメッセージを検索することをお勧めします。 送信者、受信者、またはメッセージ ID で検索できます。 メッセージを見つけたら、件名をクリックして詳細に移動します。 検疫されたメッセージについては、適切な方法を使用してオーバーライドできるように、"検出テクノロジ" が何であったかを確認します。 許可されているメッセージについては、メッセージを許可したポリシーを確認します。
 
-- スプーフィングされた送信者からのメール (メッセージの差出人アドレスがメッセージの送信元と一致しない) は、Defender for Office 365 でフィッシングとして分類されます。 スプーフィングは良性であり、ユーザーが特定のスプーフィングされた送信者からのメッセージを検疫したくない場合があります。 ユーザーへの影響を最小限に抑えるために、スプー[](learn-about-spoof-intelligence.md)フィング インテリジェンスの分析情報、テナント許可[/](tenant-allow-block-list.md)ブロック 一覧の [スプーフィング] タブ、および [スプーフィング検出] レポートを定期的に[確認します](view-email-security-reports.md#spoof-detections-report)。 スプーフィングされた送信者の許可とブロックを確認し、必要な上書きを行った後は、ユーザーの[](set-up-anti-phishing-policies.md#spoof-settings)迷惑メール フォルダーに配信するのではなく、疑わしいメッセージを検疫するフィッシング対策ポリシーでスプーフィング インテリジェンスを構成できます。
+- スプーフィングされた送信者からのメール (メッセージの送信元アドレスがメッセージのソースと一致しない) は、Defender for Office 365ではフィッシングとして分類されます。 スプーフィングが無害な場合もあれば、特定のスプーフィングされた送信者からのメッセージを検疫したくない場合もあります。 ユーザーへの影響を最小限に抑えるには、[スプーフィング インテリジェンスの分析情報](learn-about-spoof-intelligence.md)、[テナント許可/ブロックリスト](tenant-allow-block-list.md)の **[スプーフィング**] タブ、および [[スプーフィング検出] レポート](view-email-security-reports.md#spoof-detections-report)を定期的に確認します。 スプーフィングされた送信者の許可とブロックを確認し、必要なオーバーライドを行ったら、フィッシング [対策ポリシーでスプーフィング インテリジェンスを構成](set-up-anti-phishing-policies.md#spoof-settings) し、疑わしいメッセージをユーザーの迷惑メール フォルダーに配信するのではなく、疑わしいメッセージを **検疫** するように自信を持って構成できます。
 
-- Microsoft Defender の偽装 (ドメインまたはユーザー) の場合は、上記の手順を繰り返Office 365。 偽装レポートは、[脅威 **管理ダッシュボード]** の下 \>  \> インサイト。
+- Microsoft Defender for Office 365で、偽装 (ドメインまたはユーザー) に対して上記の手順を繰り返すことができます。 偽装レポートは、**脅威管理** \> **ダッシュボード** \> **のインサイト** にあります。
 
-- 脅威保護の状態 [レポートを定期的に確認します](view-reports-for-mdo.md#threat-protection-status-report)。
+- [Threat Protection の状態レポート](view-reports-for-mdo.md#threat-protection-status-report)を定期的に確認します。
 
-- 一部の顧客は、スパム対策ポリシーの [送信者の許可] または [ドメインの許可] リストに独自のドメインを入れて、フィッシング メッセージを誤って許可します。 この構成では、一部の正当なメッセージを通過することができますが、通常はスパムやフィッシング フィルターによってブロックされる悪意のあるメッセージも許可されます。 ドメインを許可する代わりに、基になる問題を修正する必要があります。
+- 一部の顧客は、スパム対策ポリシーの [送信者の許可] または [ドメインの許可] ボックスの一覧に独自のドメインを配置することで、誤ってフィッシング メッセージを許可します。 この構成では一部の正当なメッセージが許可されますが、通常はスパムやフィッシング フィルターによってブロックされる悪意のあるメッセージも許可されます。 ドメインを許可する代わりに、基になる問題を修正する必要があります。
 
-  ドメイン内の送信者を含む Microsoft 365 (誤検知) によってブロックされる正当なメッセージに対処する最善の方法は、すべての電子メール ドメインの SPF、DKIM、および DMARC レコードを DNSで完全かつ完全に構成する方法です。
+  ドメイン内の送信者を含むMicrosoft 365 (偽陽性) によってブロックされる正当なメッセージを処理する最善の方法は、_すべての_ 電子メール ドメインの DNS で SPF、DKIM、DMARC レコードを完全かつ完全に構成することです。
 
-  - SPF レコードがドメイン内の送信者のすべての電子メール ソースを識別することを確認します (サード パーティのサービスを忘れないでください)。
+  - SPF レコードがドメイン内の送信者 _のすべての_ 電子メール ソースを識別することを確認します (サードパーティのサービスを忘れないでください)。
 
-  - ハード フェール (すべて) を使用して、未承認の送信者が拒否される電子メール システムによって拒否 \- されていることを確認します。 スプーフィング [インテリジェンスの](learn-about-spoof-intelligence.md) 分析情報を使用して、ドメインを使用している送信者を識別し、承認されたサード パーティの送信者を SPF レコードに含めることができます。
+  - ハード フェール (\-すべて) を使用して、許可されていない送信者が、そのように構成された電子メール システムによって拒否されるようにします。 [スプーフィング インテリジェンス分析情報](learn-about-spoof-intelligence.md)を使用すると、ドメインを使用している送信者を識別し、承認されたサードパーティの送信者を SPF レコードに含めることができます。
 
-  構成手順については、以下を参照してください。
+  構成手順については、次を参照してください。
 
   - [SPF を設定して、スプーフィングを防止する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
@@ -86,10 +86,10 @@ ms.locfileid: "60206471"
 
   - [DMARC を使用してメールを検証する](use-dmarc-to-validate-email.md)
 
-- 可能な限り、ドメインのメールをドメインに直接配信することをお勧Microsoft 365。 つまり、ドメインの MX レコードMicrosoft 365、ドメインの MX レコードを指定Microsoft 365。 Exchange Online Protection (EOP) は、クラウド ユーザーのメールが直接メールに配信される際に、クラウド ユーザーに最適な保護をMicrosoft 365。 EOP の前でサード パーティ製の電子メールの衛生システムを使用する必要がある場合は、コネクタの拡張フィルターを使用します。 手順については、「拡張フィルタリング[for Connectors in Exchange Online」 を参照してください](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+- 可能な限り、ドメインの電子メールをMicrosoft 365に直接配信することをお勧めします。 つまり、Microsoft 365 ドメインの MX レコードをMicrosoft 365ポイントします。 Exchange Online Protection (EOP) は、メールがMicrosoft 365に直接配信されるときに、クラウド ユーザーに最適な保護を提供できます。 EOP の前でサード パーティ製の電子メールの検疫システムを使用する必要がある場合は、コネクタの拡張フィルター処理を使用します。 手順については、「Exchange Onlineの[コネクタの拡張フィルター処理](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
-- ユーザーは、Microsoft に[メッセージ](enable-the-report-message-add-in.md)を報告するために、[](enable-the-report-phish-add-in.md)レポート メッセージ アドインまたはレポート フィッシング アドインを使用する必要があります。システムをトレーニングできます。 管理者は、管理者申請機能 [も](admin-submission.md) 利用する必要があります。
+- ユーザーは [、レポート メッセージ アドイン](enable-the-report-message-add-in.md) または [フィッシングレポート アドインを](enable-the-report-phish-add-in.md) 使用して Microsoft にメッセージを報告する必要があります。これにより、システムをトレーニングできます。 管理者は、 [管理者提出](admin-submission.md) 機能も利用する必要があります。
 
-- 多要素認証 (MFA) は、侵害されたアカウントを防ぐ良い方法です。 すべてのユーザーに対して MFA を有効に強く検討する必要があります。 段階的なアプローチでは、最も機密性の高いユーザー (管理者、役員など) に対して MFA を有効にしてから、すべてのユーザーに MFA を有効にします。 手順については、「多要素認証のセットアップ [」を参照してください](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
+- 多要素認証 (MFA) は、侵害されたアカウントを防ぐ優れた方法です。 すべてのユーザーに対して MFA を有効にすることを強くお検討ください。 段階的なアプローチでは、すべてのユーザーに対して MFA を有効にする前に、最も機密性の高いユーザー (管理者、エグゼクティブなど) に対して MFA を有効にすることから始めます。 手順については、「 [多要素認証を設定する](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)」を参照してください。
 
-- 外部受信者へのルールの転送は、多くの場合、攻撃者がデータを抽出するために使用されます。 [Microsoft Secure Score](../defender/microsoft-secure-score.md) **の [メールボックス転送ルール** の確認] 情報を使用して、外部受信者へのルールの転送を見つけて防止します。 詳細については、「Secure [Score を使用したクライアント外部転送ルールの緩和」を参照してください](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)。
+- 外部受信者への転送ルールは、多くの場合、攻撃者がデータを抽出するために使用されます。 [Microsoft Secure Score](../defender/microsoft-secure-score.md) の **メールボックス転送ルールの確認** 情報を使用して、外部受信者への転送ルールを見つけて防止します。 詳細については、「 [セキュリティで保護されたスコアを使用したクライアント外部転送ルールの軽減](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)」を参照してください。

@@ -22,7 +22,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
-description: 自分の管理者パスワードをリセットする場合は、管理センターで管理者の電話番号とメール アドレスを更新します。
+description: 管理者パスワードをリセットする場合は、管理センターで管理者の電話番号とメール アドレスを更新します。
 ms.openlocfilehash: 2ebd4dd17be376bc79f252055c8aeb50082f7f94
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
@@ -32,36 +32,36 @@ ms.locfileid: "60174113"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>管理者の電話番号とメール アドレスを更新する
 
-この記事では、管理者がビジネスの電話と電子メール アドレスを変更する方法について説明します。Microsoft 365。
+この記事では、管理者がMicrosoft 365でビジネス用の電話とメール アドレスを変更する方法について説明します。
   
 会社名、住所、電話番号、技術的な連絡先情報などの会社のプロファイル情報を変更する方法を探している場合は、「[組織の住所およびその他のプロファイル情報を変更する](change-address-contact-and-more.md)」を参照してください。
 
-ユーザーの連絡先情報の変更や元従業員の削除の詳細については、「関連コンテンツ」 [を参照してください](#related-content)。
+ユーザーの連絡先情報の変更や元従業員の削除の詳細については、「 [関連コンテンツ](#related-content)」を参照してください。
   
 ## <a name="to-update-your-phone-number-and-email-address"></a>電話番号とメール アドレスを更新するには
 
-[セキュリティ **情報] ページを** 使用して、携帯電話番号と代替メール アドレスを変更します。 代替メール アドレスは、管理者パスワード (コンピューターの管理者パスワードではなく) のリセットなど、重要な通知に使用されます。 
+**[セキュリティ情報]** ページを使用して、携帯電話番号と代替メール アドレスを変更します。 別のメール アドレスは、管理者パスワード (コンピューター管理者パスワードではなく) のリセットなど、重要な通知に使用されます。 
   
-1. を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">参照して</a>、Microsoft 365 管理センター。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に移動します。
 
-2. ヘッダーで、プロファイル アイコン [マイ アカウント \> **のセキュリティ情報]** \> **を選択します**。
+2. ヘッダーで、プロファイル アイコン \> **[マイ アカウント** \> **のセキュリティ情報**] を選択します。
 
-3. [セキュリティ情報 **] タブで**、[メソッドの追加 **] または**[電話メール] 電話を選択して \>  \> 詳細を追加します。  携帯電話、電話、および代替メール アドレスの詳細を更新するには、[変更] を **選択します**。 代替メール アドレスに Microsoft の電子メール アドレス以外のアドレスを使用してください。
+3. [**セキュリティ情報**] タブで、[**方法** \> **の追加] 電話** \> **[代替電話**] または [**電子メール**] を選択して詳細を追加します。 携帯電話、電話、および代替メール アドレスの詳細を更新するには、[ **変更**] を選択します。 別の電子メール アドレスには、Microsoft のメール アドレス以外のものを使用してください。
 
     > [!IMPORTANT]
-    > 管理者パスワード (コンピューターの管理者パスワードではなく) をリセットするには、代替メール アドレスと携帯電話番号が必要です。
+    > 管理者パスワード (コンピューター管理者パスワードではなく) をリセットするには、代替メール アドレスと携帯電話番号が必要です。
 
 4. 設定が完了したら、[**保存**] を選択します。
   
 請求に関する質問の答えについては、以下を参照してください。
   
-- [ビジネス向けサービスの請求Microsoft 365変更する](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [ビジネス向けのMicrosoft 365の請求先住所を変更する](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 - [支払方法を管理する](../../commerce/billing-and-payments/manage-payment-methods.md)
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザー名と電子メール アドレス (ビデオ](../add-users/change-a-user-name-and-email-address.md) ) を変更する\
-[新入社員の追加](../add-users/add-new-employee.md) (ビデオ)\
-[元従業員を削除](../add-users/remove-former-employee.md) する (ビデオ)\
+[ユーザー名とメール アドレスを変更する](../add-users/change-a-user-name-and-email-address.md) (ビデオ)\
+[新入社員を追加する](../add-users/add-new-employee.md) (ビデオ)\
+[元従業員を削除する](../add-users/remove-former-employee.md) (ビデオ)\
 [以前のユーザーのデータにアクセスしてバックアップ](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) する (記事)

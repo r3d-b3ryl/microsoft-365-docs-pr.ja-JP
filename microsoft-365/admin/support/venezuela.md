@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61370706"
 ---
-# <a name="contact-support-for-venezuela"></a>ベネズエラのサポートに問い合わせ
+# <a name="contact-support-for-venezuela"></a>ベネズエラのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

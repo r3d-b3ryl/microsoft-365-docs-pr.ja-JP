@@ -1,7 +1,7 @@
 ---
-title: ファイル情報 API の取得
-description: Get file information API を使用して、Microsoft Defender for Endpoint の Sha1、Sha256、または MD5 識別子でファイルを取得する方法について説明します。
-keywords: apis, graph api, supported apis, get, file, information, sha1, sha256, md5
+title: ファイル情報 API を取得する
+description: ファイル情報の取得 API を使用して、Microsoft Defender for Endpointの Sha1、Sha256、または MD5 識別子でファイルを取得する方法について説明します。
+keywords: apis, graph api, サポートされている API, get, file, information, sha1, sha256, md5
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61300444"
 ---
-# <a name="get-file-information-api"></a>ファイル情報 API の取得
+# <a name="get-file-information-api"></a>ファイル情報 API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "61300444"
 
 ## <a name="api-description"></a>API の説明
 
-識別子 Sha1 [または](files.md) Sha256 でファイルを取得します。
+識別子 Sha1 または Sha256 で [ファイル](files.md) を取得します
 
 ## <a name="limitations"></a>制限事項
 
@@ -47,7 +47,7 @@ ms.locfileid: "61300444"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください](apis-intro.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -57,7 +57,7 @@ ms.locfileid: "61300444"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -67,7 +67,7 @@ GET /api/files/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -77,7 +77,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-正常に実行され、ファイルが存在する場合は、本文に [ファイル](files.md) エンティティが 200 OK です。 ファイルが存在しない場合 - 404 が見つかりません。
+成功し、ファイルが存在する場合は、本文内の [ファイル](files.md) エンティティで 200 OK です。 ファイルが存在しない場合は、404 が見つかりません。
 
 ## <a name="example"></a>例
 

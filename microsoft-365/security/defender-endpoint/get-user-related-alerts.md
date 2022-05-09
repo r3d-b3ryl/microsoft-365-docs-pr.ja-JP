@@ -1,7 +1,7 @@
 ---
-title: ユーザー関連の通知 API を取得する
-description: Microsoft Defender for Endpoint を使用して、特定のユーザー ID に関連するアラートのコレクションを取得します。
-keywords: apis, graph api, supported apis, get, user, related, alerts
+title: ユーザー関連のアラート API を取得する
+description: Microsoft Defender for Endpointを使用して、特定のユーザー ID に関連するアラートのコレクションを取得します。
+keywords: apis, graph api, サポートされている API, get, user, related, alerts
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61301872"
 ---
-# <a name="get-user-related-alerts-api"></a>ユーザー関連の通知 API を取得する
+# <a name="get-user-related-alerts-api"></a>ユーザー関連のアラート API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,11 +47,11 @@ ms.locfileid: "61301872"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
+アプリケーション|Alert.Read.All|'すべてのアラートを読み取る'
 アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
 委任 (職場または学校のアカウント) | Alert.Read | 'アラートの読み取り'
 委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
@@ -59,8 +59,8 @@ ms.locfileid: "61301872"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示' 。 詳細については、「役割の作成 [と管理」を参照してください](user-roles.md)。
-> - 応答には、デバイス グループ設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられたアラートだけが含まれます[](machine-groups.md)(詳細については、「デバイス グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロール権限が必要です。"データの表示"。 詳細については、「 [ロールの作成と管理](user-roles.md)」を参照してください。
+> - 応答には、デバイス グループの設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられたアラートのみが含まれます (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -68,11 +68,11 @@ ms.locfileid: "61301872"
 GET /api/users/{id}/alerts
 ```
 
-**ID は完全な UPN ではなく、ユーザー名のみです。(たとえば、/api/users/user1/alerts を使用 user1@contoso.com アラートを取得するには)**
+**ID は完全な UPN ではなく、ユーザー名のみです。(たとえば、/api/users/user1/alerts を使用 user1@contoso.com のアラートを取得する場合)**
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**。
 
@@ -82,7 +82,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功し、ユーザーが存在する場合 - 200 OK。 ユーザーが存在しない場合 - 空のセットで 200 OK。
+成功し、ユーザーが存在する場合は 200 OK です。 ユーザーが存在しない場合は、空のセットで 200 OK です。
 
 ## <a name="example"></a>例
 

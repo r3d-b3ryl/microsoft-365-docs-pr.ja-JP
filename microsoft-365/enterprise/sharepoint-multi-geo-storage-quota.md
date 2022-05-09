@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
-description: 複数地域SharePointのストレージ クォータの管理方法と、オンライン管理者がクォータを管理するSharePoint説明します。
+description: 複数地域環境でのSharePointストレージ クォータと、SharePoint Online 管理者がクォータを管理する方法について説明します。
 ms.openlocfilehash: d1e47c206f1353093ba8bebf9db03ab7142d6da9
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
@@ -46,7 +46,7 @@ Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB <value>
 Get-SPOGeoStorageQuota
 ```
 
-![コマンドレットを示す PowerShell ウィンドウGet-SPOGeoStorageQuotaします。](../media/multi-geo-storage-quota.png)
+![コマンドレットを示す PowerShell ウィンドウGet-SPOGeoStorageQuotaスクリーンショット。](../media/multi-geo-storage-quota.png)
 
 すべての地域の場所に対するストレージ クォータを表示するには、次を実行します。
 

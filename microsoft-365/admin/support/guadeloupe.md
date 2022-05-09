@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61372506"
 ---
-# <a name="contact-support-for-guadeloupe"></a>グアドループのサポートに問い合わせ
+# <a name="contact-support-for-guadeloupe"></a>グアドループのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "61372506"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-フランス語: Mon-Fri午前 6 時
+フランス語: 午前 6 時から正午Mon-Fri
 
 英語: Mon-Fri午前 6 時から午後 1 時
 
@@ -39,4 +39,4 @@ ms.locfileid: "61372506"
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

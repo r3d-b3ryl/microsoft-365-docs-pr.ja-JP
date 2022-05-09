@@ -1,5 +1,5 @@
 ---
-title: コモロのサポート情報
+title: Comoros のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371054"
 ---
-# <a name="contact-support-for-comoros"></a>Comoros のサポートに問い合わせ
+# <a name="contact-support-for-comoros"></a>Comoros のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -35,6 +35,6 @@ ms.locfileid: "61371054"
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-フランス語: Mon-Fri 10 AM-11 PM
+フランス語: Mon-Fri午前 10 時から午後 11 時
 
 英語: 24 時間年中無休

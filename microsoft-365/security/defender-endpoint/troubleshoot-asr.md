@@ -1,7 +1,7 @@
 ---
-title: 攻撃表面の縮小ルールに関する問題のトラブルシューティング
-description: Microsoft Defender for Endpoint の攻撃表面縮小ルールに関する問題のトラブルシューティングを行うリソースとサンプル コード。
-keywords: トラブルシューティング、エラー、修正、Windows Defender 例、asr、ルール、ヒップ、トラブルシューティング、監査、除外、誤検知、破損、ブロック、Microsoft Defender for Endpoint
+title: 攻撃面の縮小ルールに関する問題のトラブルシューティング
+description: Microsoft Defender for Endpointの攻撃表面縮小ルールに関する問題のトラブルシューティングを行うリソースとサンプル コード。
+keywords: トラブルシューティング, エラー, 修正, Windows Defender 例, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -24,7 +24,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/14/2022
 ms.locfileid: "62807250"
 ---
-# <a name="troubleshoot-attack-surface-reduction-rules"></a>攻撃表面の縮小ルールのトラブルシューティング
+# <a name="troubleshoot-attack-surface-reduction-rules"></a>攻撃対象の縮小ルールのトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,88 +36,88 @@ ms.locfileid: "62807250"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-攻撃表面の [縮小ルールを使用すると、](attack-surface-reduction.md) 次のような問題が発生する可能性があります。
+[攻撃表面の縮小ルール](attack-surface-reduction.md)を使用すると、次のような問題が発生する可能性があります。
 
-- ルールは、ファイル、プロセス、または実行すべきではない他のアクションをブロックします (誤検知)
-- ルールが説明に従って機能しないか、ファイルまたはプロセスをブロックしない (false 負の値)
+- ルールは、ファイルをブロック、処理、または実行する必要がない他のアクションを実行します (誤検知)
+- ルールは説明どおりに機能しないか、必要なファイルまたはプロセスをブロックしません (false negative)
 
 これらの問題のトラブルシューティングには、次の 4 つの手順があります。
 
-1. [前提条件の確認](#confirm-prerequisites)
+1. [前提条件を確認する](#confirm-prerequisites)
 2. [監査モードを使用してルールをテストする](#use-audit-mode-to-test-the-rule)
-3. [指定したルールの除外を追加](#add-exclusions-for-a-false-positive) する (誤検知の場合)
-4. [サポート ログの送信](#collect-diagnostic-data-for-file-submissions)
+3. [指定したルールの除外を追加する](#add-exclusions-for-a-false-positive) (誤検知の場合)
+4. [サポート ログを送信する](#collect-diagnostic-data-for-file-submissions)
 
-## <a name="confirm-prerequisites"></a>前提条件の確認
+## <a name="confirm-prerequisites"></a>前提条件を確認する
 
 攻撃表面の縮小ルールは、次の条件を持つデバイスでのみ機能します。
 
-- エンドポイントは、Windows 10 Enterpriseバージョン 1709 (Fall Creators Update とも呼ばれる) で実行されています。
+- エンドポイントは、バージョン 1709 (Fall Creators Update とも呼ばれます) Windows 10 Enterprise実行されています。
 
-- エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender ウイルス対策が無効になります](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+- エンドポイントは、唯一のウイルス対策保護アプリとしてMicrosoft Defender ウイルス対策を使用しています。 [その他のウイルス対策アプリを使用すると、Microsoft Defender ウイルス対策自体が無効](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)になります。
 
-- [リアルタイム保護が](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 有効になっています。
+- [リアルタイム保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) が有効になっています。
 
-- 監査モードが有効になっていません。 「攻撃表面の縮小ルールを有効にする」の説明に従って、グループ ポリシーを使用してルールを **無効 (値** : **0**) [に設定します](enable-attack-surface-reduction.md)。
+- 監査モードが有効になっていません。 グループ ポリシーを使用して、ルールを **無効** (値: **0**) に設定します。「[攻撃面の縮小ルールを有効にする」](enable-attack-surface-reduction.md)の説明に従います。
 
-これらの前提条件が満たされている場合は、次の手順に進み、監査モードでルールをテストします。
+これらの前提条件がすべて満たされている場合は、次の手順に進み、監査モードでルールをテストします。
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>監査モードを使用してルールをテストする
 
-[demo.wd.microsoft.com の Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) テスト グラウンド Web サイトにアクセスして、攻撃表面の縮小ルールが一般的にデバイス上の事前構成されたシナリオおよびプロセスで機能しているか、または監査モードを使用して、レポートのルールのみを有効にできます。
+[demo.wd.microsoft.com のWindows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) テスト グラウンド Web サイトにアクセスして、攻撃表面の縮小ルールが一般にデバイス上で事前に構成されたシナリオとプロセスに対して機能していることを確認したり、監査モードを使用してレポートのみのルールを有効にしたりできます。
 
 > [!NOTE]
-> Defender for Endpoint のデモ サイトは demo.wd.microsoft.com 廃止され、今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
-「デモ ツールを使用 [する」の](evaluate-attack-surface-reduction.md) 手順に従って、問題が発生している特定のルールをテストするために攻撃表面の縮小ルールがどのように機能するのか確認します。
+デモ ツールの使用に関するページの手順に従って、問題が発生している特定の [ルールをテストするために、攻撃表面の縮小ルールがどのように機能するかを確認します](evaluate-attack-surface-reduction.md) 。
 
-1. テストする特定のルールの監査モードを有効にします。 「攻撃表面の縮小ルールを有効にする」の説明に従って、グループ ポリシーを使用してルールを監査 **モード (値** : **2**) [に設定します](enable-attack-surface-reduction.md)。 監査モードでは、ルールはファイルまたはプロセスを報告できますが、実行は許可されます。
+1. テストする特定のルールの監査モードを有効にします。 グループ ポリシーを使用して、ルールを **監査モード** (値: **2**) に設定します。「[攻撃面の縮小ルールを有効にする」](enable-attack-surface-reduction.md)の説明に従います。 監査モードでは、ルールでファイルまたはプロセスをレポートできますが、実行は許可されます。
 
-2. 問題の原因となっているアクティビティを実行します (たとえば、ブロックする必要があるが許可されているファイルまたはプロセスを開く、または実行する)。
+2. 問題の原因となっているアクティビティを実行します (たとえば、ブロックする必要があるが許可されているファイルまたはプロセスを開いたり実行したりします)。
 
-3. [攻撃表面縮小ルール イベント ログを確認](attack-surface-reduction.md) して、ルールが [有効] に設定されている場合、ルールがファイルまたはプロセスをブロックした可能性がある場合に確認 **します**。
+3. [攻撃対象の縮小ルール イベント ログを確認](attack-surface-reduction.md) して、ルールが **[有効]** に設定されている場合に、ルールがファイルまたはプロセスをブロックしたかどうかを確認します。
 
-ルールがブロックするファイルまたはプロセスをブロックしない場合は、まず監査モードが有効になっているか確認します。
+ルールがブロックする必要があるファイルまたはプロセスをブロックしていない場合は、最初に監査モードが有効になっているかどうかを確認します。
 
-監査モードは、別の機能のテスト、または自動化された PowerShell スクリプトによって有効になっている可能性があります。テストが完了した後は無効になっていない可能性があります。
+監査モードは、別の機能のテストまたは自動 PowerShell スクリプトによって有効になっており、テストが完了した後は無効になっていない可能性があります。
 
-デモ ツールと監査モードでルールをテストし、攻撃表面の縮小ルールが構成済みのシナリオで動作しているが、ルールが期待通り動作しない場合は、状況に基づいて次のいずれかのセクションに進みます。
+デモ ツールと監査モードを使用してルールをテストし、攻撃表面の縮小ルールが事前構成されたシナリオで動作しているが、ルールが想定どおりに機能していない場合は、状況に基づいて次のいずれかのセクションに進みます。
 
-1. 攻撃表面の縮小ルールがブロックしないブロック (誤検知とも呼ばれる) をブロックしている場合は、最初に攻撃表面の縮小ルールの除外 [を追加できます](#add-exclusions-for-a-false-positive)。
+1. 攻撃表面の縮小ルールがブロックすべきでないものをブロックしている場合 (偽陽性とも呼ばれます)、 [最初に攻撃面の縮小ルールの除外を追加](#add-exclusions-for-a-false-positive)できます。
 
-2. 攻撃表面の縮小ルールでブロックする必要があるもの (偽陰性とも呼ばれる) ブロックされていない場合は、直ちに最後の手順に進[](#collect-diagnostic-data-for-file-submissions)み、診断データを収集し、問題を提出することができます。
+2. 攻撃表面の縮小ルールがブロックすべきものをブロックしていない場合 (偽陰性とも呼ばれます)、最後の手順に直ちに進み、 [診断データを収集し、問題を Microsoft に送信することができます](#collect-diagnostic-data-for-file-submissions)。
 
 ## <a name="add-exclusions-for-a-false-positive"></a>誤検知の除外を追加する
 
-攻撃表面の縮小ルールがブロックしてはならないものをブロックしている場合 (誤検知とも呼ばれる)、除外を追加して、攻撃表面の縮小ルールが除外されたファイルまたはフォルダーを評価してはならないことを防止できます。
+攻撃表面の縮小ルールがブロックすべきでないものをブロックしている場合 (誤検知とも呼ばれます)、除外を追加して、攻撃表面の縮小ルールが除外されたファイルまたはフォルダーを評価できないようにすることができます。
 
-除外を追加するには、「攻撃表面の縮小 [をカスタマイズする」を参照してください](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules)。
+除外を追加するには、「 [攻撃面の縮小をカスタマイズ](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules)する」を参照してください。
 
 > [!IMPORTANT]
-> 除外する個々のファイルとフォルダーを指定できますが、個々のルールを指定することはできません。
-> つまり、除外されるファイルまたはフォルダーは、すべての ASR ルールから除外されます。
+> 除外する個々のファイルとフォルダーは指定できますが、個々のルールを指定することはできません。
+> つまり、除外されたすべてのファイルまたはフォルダーは、すべての ASR ルールから除外されます。
 
-## <a name="report-a-false-positive-or-false-negative"></a>誤検知または偽陰性を報告する
+## <a name="report-a-false-positive-or-false-negative"></a>偽陽性または偽陰性を報告する
 
-ネットワーク保護のために[Windows Defender偽](https://www.microsoft.com/wdsi/filesubmission)陰性または誤検知を報告するには、[セキュリティ インテリジェンス] Web ベースの送信フォームを使用します。 E5 サブスクリプションWindows、関連付けられたアラート[へのリンクを提供できます](alerts-queue.md)。
+[Windows Defender Security Intelligence Web ベースの送信フォーム](https://www.microsoft.com/wdsi/filesubmission)を使用して、ネットワーク保護の偽陰性または偽陽性を報告します。 Windows E5 サブスクリプションでは、[関連付けられているアラートへのリンクを指定](alerts-queue.md)することもできます。
 
-## <a name="collect-diagnostic-data-for-file-submissions"></a>ファイル提出の診断データを収集する
+## <a name="collect-diagnostic-data-for-file-submissions"></a>ファイル送信の診断データを収集する
 
-攻撃表面の縮小ルールに関する問題を報告する場合は、Microsoft のサポートチームとエンジニアリング チームが問題のトラブルシューティングに役立つ診断データを収集して提出する必要があります。
+攻撃面の縮小ルールに関する問題を報告すると、Microsoft サポートチームとエンジニアリング チームが問題のトラブルシューティングに役立つ診断データを収集して送信するように求められます。
 
-1. 管理者特権のコマンド プロンプトを開き、次のディレクトリWindows Defenderします。
+1. 管理者特権のコマンド プロンプトを開き、Windows Defender ディレクトリに変更します。
 
    ```console
    cd "c:\program files\windows defender"
    ```
 
-2. 次のコマンドを実行して、診断ログを生成します。
+2. 次のコマンドを実行して診断ログを生成します。
 
    ```console
    mpcmdrun -getfiles
    ```
 
-3. 既定では、 に保存されます `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`。 提出フォームにファイルを添付します。
+3. 既定では、.`C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 提出フォームにファイルを添付します。
 
 ## <a name="related-articles"></a>関連記事
 

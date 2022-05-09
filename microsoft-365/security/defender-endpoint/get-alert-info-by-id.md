@@ -1,7 +1,7 @@
 ---
-title: ID API によるアラート情報の取得
-description: ID API によるアラート情報の取得を使用して、Microsoft Defender for Endpoint の ID で特定のアラートを取得する方法について説明します。
-keywords: apis, graph api, supported apis, get, alert, information, id
+title: ID API でアラート情報を取得する
+description: ID でアラート情報を取得する API を使用して、Microsoft Defender for Endpointでその ID で特定のアラートを取得する方法について説明します。
+keywords: apis, graph api, サポートされている API, get, alert, information, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61283931"
 ---
-# <a name="get-alert-information-by-id-api"></a>ID API によるアラート情報の取得
+# <a name="get-alert-information-by-id-api"></a>ID API でアラート情報を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,20 +39,20 @@ ms.locfileid: "61283931"
 
 ## <a name="api-description"></a>API の説明
 
-ID によって特定 [のアラート](alerts.md) を取得します。
+ID で特定の [アラート](alerts.md) を取得します。
 
 ## <a name="limitations"></a>制限事項
 
-- 構成済みの保持期間に従って、最後に更新されたアラートを取得できます。
+- 構成された保有期間に従って、最後に更新されたアラートを取得できます。
 - この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください](apis-intro.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
+アプリケーション|Alert.Read.All|'すべてのアラートを読み取る'
 アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
 委任 (職場または学校のアカウント)|Alert.Read|'アラートの読み取り'
 委任 (職場または学校のアカウント)|Alert.ReadWrite|'アラートの読み取りと書き込み'
@@ -60,8 +60,8 @@ ID によって特定 [のアラート](alerts.md) を取得します。
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスできる必要[](machine-groups.md)があります (詳細については、「デバイス グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
+> - ユーザーは、デバイス グループの設定に基づいて、アラートに関連付けられているデバイスにアクセスできる必要があります (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -81,4 +81,4 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、応答本文の [アラート](alerts.md) エンティティを返します。 指定した ID を持つアラートが見つからない場合は、404 が見つかりません。
+成功した場合、このメソッドは 200 OK を返し、応答本文の [アラート](alerts.md) エンティティを返します。 指定した ID を持つアラートが見つからなかった場合は 、404 が見つかりません。

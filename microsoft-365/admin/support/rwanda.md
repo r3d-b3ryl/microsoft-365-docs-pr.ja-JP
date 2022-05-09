@@ -1,5 +1,5 @@
 ---
-title: Rwanda のサポート情報
+title: ルワンダのサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371342"
 ---
-# <a name="contact-support-for-rwanda"></a>Rwanda のサポートに問い合わせ
+# <a name="contact-support-for-rwanda"></a>ルワンダのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -33,7 +33,7 @@ ms.locfileid: "61371342"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-フランス語: Mon-Fri 10 AM-6 PM
+フランス語: Mon-Fri午前 10 時から午後 6 時
 
 英語: Mon-Fri午前 10 時から午後 6 時
 
@@ -43,4 +43,4 @@ ms.locfileid: "61371342"
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

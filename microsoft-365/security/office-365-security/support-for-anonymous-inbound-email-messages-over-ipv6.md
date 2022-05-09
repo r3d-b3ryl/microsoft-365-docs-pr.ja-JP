@@ -15,7 +15,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、IPv6 ソースから匿名受信メールのサポートを構成する方法について、Exchange OnlineおよびExchange Online Protection。
+description: 管理者は、Exchange OnlineとExchange Online Protectionの IPv6 ソースからの匿名受信メールのサポートを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 78b2e653aa284e34af2315ac696d7390dce71884
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373658"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>IPv6 を使用して匿名受信メールのサポートを追加Microsoft 365
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Microsoft 365で IPv6 経由の匿名受信メールのサポートを追加する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,29 +34,29 @@ ms.locfileid: "61373658"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365メールボックスExchange Onlineスタンドアロン Exchange Online Protection (EOP) 組織を持つ組織では、Exchange Online IPv6 を使用した匿名の受信メールがサポートされます。 送信元 IPv6 メール サーバーは、次の両方の要件を満たしている必要があります。
+Exchange Online メールボックスとスタンドアロン Exchange Online Protection (EOP) 組織を持つMicrosoft 365組織では、Exchange Online メールボックスを使用しない組織では、IPv6 経由の匿名受信メールがサポートされます。 ソース IPv6 電子メール サーバーは、次の要件の両方を満たしている必要があります。
 
-- 送信元 IPv6 アドレスには、宛先が IPv6 アドレスからドメイン名を検索できる有効な逆引き DNS 参照 (PTR) レコードが必要です。
+- ソース IPv6 アドレスには、宛先が IPv6 アドレスからドメイン名を検索できるようにする有効な逆引き DNS ルックアップ (PTR) レコードが必要です。
 
 - また、送信者は、SPF 検証 ([RFC 7208](https://tools.ietf.org/html/rfc7208) で既定されている) と [DKIM 検証](http://dkim.org/) ( [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt) で既定されている) のどちらかに合格する必要があります。
 
-組織が IPv6 を使用して匿名の受信メールを受け取る前に、管理者は Microsoft サポートに問い合わせ、そのメールを求める必要があります。 サポート要求を開く方法については、「ビジネス製品のサポートに問い合わせ- 管理者ヘルプ」 [を参照してください](../../admin/get-help-support.md)。
+組織が IPv6 経由で匿名受信メールを受信するには、管理者が Microsoft サポートに問い合わせて要求する必要があります。 サポート リクエストを開く方法については、「 [ビジネス製品のサポートにお問い合わせください - 管理者向けヘルプ」を](../../admin/get-help-support.md)参照してください。
 
-組織内で匿名の受信 IPv6 メッセージのサポートが有効になると、サービスによって提供される通常のメッセージ フィルター処理を通過します。
+組織で匿名受信 IPv6 メッセージのサポートが有効になると、メッセージはサービスによって提供される通常のメッセージ フィルター処理を通過します。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-- 送信元電子メール サーバーに IPv6 逆引き DNS 参照レコードが存在しない場合、メッセージは次のエラーで拒否されます。
+- ソース電子メール サーバーに IPv6 逆引き DNS 参照レコードがない場合、メッセージは拒否され、次のエラーが発生します。
 
-  > 450 4.7.25 サービスを使用できません。IPv6 アドレス [2a01:111:f200:2004::240] を送信するには、逆 DNS レコードが必要です。
+  > 450 4.7.25 サービスは使用できません。IPv6 アドレスを送信する [2a01:111:f200:2004::240] には逆引き DNS レコードが必要です。
 
-- 送信者が SPF または DKIM 検証に合格しない場合、メッセージは次のエラーで拒否されます。
+- 送信者が SPF または DKIM の検証に合格しない場合、メッセージは拒否され、次のエラーが発生します。
 
-  > 450 4.7.26 サービスが利用できない場合、IPv6 [2a01:111:f200:2004::240] で送信されるメッセージは、SPF または DKIM 検証に合格する必要があります。
+  > 450 4.7.26 サービスは使用できません。IPv6 経由で送信されたメッセージ [2a01:111:f200:2004::240] は SPF または DKIM 検証に合格する必要があります。
 
-- オプトインする前に匿名の IPv6 メッセージを受信しようとする場合、メッセージは次のエラーで拒否されます。
+- オプトインする前に匿名の IPv6 メッセージを受信しようとすると、次のエラーでメッセージが拒否されます。
 
-  > 550 5.2.1 サービスは利用できません。[contoso.com] は IPv6 を超える電子メールを受け入れできません。
+  > 550 5.2.1 サービスは使用できません。[contoso.com] は IPv6 経由のメールを受け付けません。
 
 ## <a name="related-topics"></a>関連項目
 

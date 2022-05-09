@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender API の概要
-description: アプリ内で使用可能な API についてMicrosoft 365 Defender
-keywords: api, apis, 概要, インシデント, インシデント, 脅威の検出, microsoft 365 defender
+description: Microsoft 365 Defenderで使用可能な API について説明します
+keywords: api, apis, 概要, インシデント, インシデント, 脅威の捜索, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -41,31 +41,31 @@ ms.locfileid: "62172417"
 
 Microsoft 365 Defenderは、統合対応プラットフォームの上に構築されています。
 
-共有インシデントテーブルMicrosoft 365 Defender高度なハンティング テーブルに基づいてワークフローを自動化するには、次の API を使用します。
+Microsoft 365 Defender API を使用して、共有インシデントテーブルと高度なハンティング テーブルに基づいてワークフローを自動化します。
 
-- **[複合インシデント キュー](api-incident.md)** - インシデント API の下で、攻撃スコープ全体と影響を受けたすべてのアセットをグループ化して、重要な機能に重点を置きます。
+- **[組み合わされたインシデント キュー](api-incident.md)** - インシデント API の下で、完全な攻撃範囲と影響を受けたすべての資産をグループ化することで、重要な内容に焦点を当てます。
 
-- **[製品間の](api-advanced-hunting.md)** 脅威の検出 - セキュリティ チームの組織の知識を活用して、複数の保護製品で収集された生データをふるいにかけ、独自のカスタム クエリを作成することで、侵害の兆候を探します。
+- **[製品間の脅威の捜索](api-advanced-hunting.md)** - セキュリティ チームの組織の知識を活用して、侵害の兆候を探します。独自のカスタム クエリを作成して、複数の保護製品にわたって収集された生データを選別します。
 
-- **[イベント ストリーミング API](streaming-api.md)** - 発生したイベントとアラートを 1 つのデータ ストリームに出荷します。
+- **[イベント ストリーミング API](streaming-api.md)** - 1 つのデータ ストリームで発生したイベントとアラートをリアルタイムで送信します。
 
-これらの特定のMicrosoft 365 Defender API に加え、他の各セキュリティ製品は、独自の機能を利用するために追加の[API](api-articles.md)を公開します。
+これらのMicrosoft 365 Defender固有の API と共に、他の各セキュリティ製品は、独自の機能を活用するために役立つ[追加の API を](api-articles.md)公開します。
 
 > [!NOTE]
-> 統合ポータルへの移行は、Microsoft Defender for Endpoint API に基づく PowerBi ダッシュボードに影響を与える必要があります。 対話型ポータルの移行に関係なく、既存の API を引き続き操作できます。
+> 統合ポータルへの移行は、Microsoft Defender for Endpoint API に基づいて PowerBi ダッシュボードに影響を与えるべきではありません。 対話型ポータルの切り替えに関係なく、既存の API を引き続き操作できます。
 
 ## <a name="learn-more"></a>詳細情報
 
 | **API にアクセスする方法を理解する** |
 |-|
-| [API クォータとライセンスの詳細](api-terms.md) |
-| [API にMicrosoft 365 Defenderする](api-access.md) |
+| [API クォータとライセンスについて学習する](api-terms.md) |
+| [Microsoft 365 Defender API にアクセスする](api-access.md) |
 | **アプリのビルド** |
-| ['Hello world' アプリを作成する](api-hello-world.md) |
-| [ユーザーに代わって API にMicrosoft 365 Defenderするアプリを作成する](api-create-app-user-context.md) |
-| [ユーザーなしでアプリを作成してMicrosoft 365 Defenderにアクセスする](api-create-app-web.md) |
-| [複数テナントパートナーによる API へのアクセス権を持つアプリをMicrosoft 365 Defenderする](api-partner-access.md) |
+| ["Hello world" アプリを作成する](api-hello-world.md) |
+| [ユーザーの代わりにMicrosoft 365 Defender API にアクセスするアプリを作成する](api-create-app-user-context.md) |
+| [ユーザーなしでMicrosoft 365 Defenderにアクセスするアプリを作成する](api-create-app-web.md) |
+| [Microsoft 365 Defender API へのマルチテナント パートナー アクセス権を持つアプリを作成する](api-partner-access.md) |
 | **アプリのトラブルシューティングと保守** |
 | [API エラー コードについて](api-error-codes.md) |
-| [Azure Key Vault を使用してアプリ内のシークレットを管理する](/learn/modules/manage-secrets-with-azure-key-vault/) |
-| [ユーザー サインインの OAuth 2.0 承認を実装する](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
+| [Azure Key Vaultを使用してアプリ内のシークレットを管理する](/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [ユーザー サインイン用に OAuth 2.0 承認を実装する](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |

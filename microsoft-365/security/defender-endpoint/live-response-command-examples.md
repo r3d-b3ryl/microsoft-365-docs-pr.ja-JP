@@ -1,7 +1,7 @@
 ---
 title: ライブ応答コマンドの例
-description: Microsoft Defender for Endpoint の基本的なライブ応答コマンドまたは高度なライブ応答コマンドを実行する方法と、その使用例を参照してください。
-keywords: たとえば、コマンド、cli、リモート、シェル、接続、ライブ、応答、リアルタイム、コマンド、スクリプト、修復、ハント、エクスポート、ログ、ドロップ、ダウンロード、ファイル
+description: Microsoft Defender for Endpointの基本的なライブ応答コマンドまたは高度なライブ応答コマンドの実行について説明し、それらの使用方法の例を参照してください。
+keywords: 例, コマンド, cli, remote, shell, connection, live, response, リアルタイム, コマンド, スクリプト, 修復, ハント, エクスポート, ログ, ドロップ, ダウンロード, ファイル
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,9 +32,9 @@ ms.locfileid: "63312655"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-ライブ応答で使用される一般的なコマンドについて説明し、その一般的な使用例を参照してください。
+ライブ応答で使用される一般的なコマンドについて説明し、一般的な使用方法の例を参照してください。
 
-役割に応じて、基本的なライブ応答コマンドまたは高度なライブ応答コマンドを実行できます。 基本的なコマンドと高度なコマンドの詳細については、「ライブ応答を使用してデバイス上の [エンティティを調査する」を参照してください](live-response.md)。
+持っているロールに応じて、基本または高度なライブ応答コマンドを実行できます。 基本コマンドと高度なコマンドの詳細については、「 [ライブ応答を使用してデバイス上のエンティティを調査](live-response.md)する」を参照してください。
 
 ## `analyze`
 
@@ -110,16 +110,16 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 > [!NOTE]
 >
-> 次のファイルの種類 *は、* Live Response 内からこのコマンドを使用してダウンロードできません。
+> 次のファイルの種類は、Live Response 内からこのコマンドを使用してダウンロード *できません* 。
 >
-> - [Reparse ポイント ファイル](/windows/desktop/fileio/reparse-points/)
+> - [ポイント ファイルを再解析する](/windows/desktop/fileio/reparse-points/)
 > - [スパース ファイル](/windows/desktop/fileio/sparse-files/)
 > - 空のファイル
-> - 仮想ファイル、またはローカルに完全に存在しないファイル
+> - 仮想ファイル、または完全にローカルに存在しないファイル
 >
-> これらのファイルの種類 *は* [PowerShell でサポートされています](/powershell/scripting/overview)。
+> これらのファイルの種類は [、PowerShell](/powershell/scripting/overview) でサポート *されています*。
 >
-> Live Response 内からこのコマンドを使用する際に問題が発生した場合は、PowerShell を代わりに使用します。
+> Live Response 内からこのコマンドを使用する際に問題が発生した場合は、代わりに PowerShell を使用します。
 
 ## `library`
 
@@ -221,8 +221,8 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 
 > [!NOTE]
 >
-> **'run**' や '**getfile**' などの長時間実行されているコマンドの場合は、コマンドの最後に '**&**' 記号を使用して、バックグラウンドでそのアクションを実行できます。
-> これにより、コンピューターの調査を続行し、'fg' 基本コマンドを使用して実行すると、バックグラウンド コマンド **に**[戻る事が可能になります](live-response.md#basic-commands)。
+> 実行時間の長いコマンド ('**run**' や '**getfile**' など) の場合は、コマンドの末尾にある '**&**' 記号を使用して、バックグラウンドでそのアクションを実行することができます。
+> これにより、コンピューターの調査を続行し、'**fg**' 基本コマンドを使用して完了するとバックグラウンド [コマンド](live-response.md#basic-commands)に戻ります。
 
 ## `scheduledtask`
 

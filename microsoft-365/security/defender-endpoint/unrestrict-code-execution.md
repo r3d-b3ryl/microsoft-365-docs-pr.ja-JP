@@ -1,7 +1,7 @@
 ---
-title: アプリ制限 API の削除
-description: この API を使用して、アプリケーションからの制限の実行からの削除に関連する呼び出しを作成します。
-keywords: apis、graph api、サポートされている api、分離からデバイスを削除する
+title: アプリ制限 API を削除する
+description: この API を使用して、アプリケーションの実行から制限を削除することに関連する呼び出しを作成します。
+keywords: apis、graph API、サポートされている API、分離からデバイスを削除する
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/24/2021
 ms.locfileid: "61167960"
 ---
-# <a name="remove-app-restriction-api"></a>アプリ制限 API の削除
+# <a name="remove-app-restriction-api"></a>アプリ制限 API を削除する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -51,13 +51,13 @@ ms.locfileid: "61167960"
 
 > [!IMPORTANT]
 >
-> - 完全な分離は、バージョン 1703 Windows 10デバイスで使用できます。
-> - 選択的分離は、バージョン 1709 以降Windows 10デバイスで使用できます。
-> - デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint にスプリット トンネリング VPN を使用し、クラウド ベースMicrosoft Defender ウイルス対策トラフィックを使用することをお勧めします。
+> - 完全な分離は、Windows 10 バージョン 1703 のデバイスで使用できます。
+> - 選択的分離は、Windows 10 バージョン 1709 以降のデバイスで使用できます。
+> - デバイスを分離する場合は、特定のプロセスと宛先のみが許可されます。 そのため、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 クラウド ベースの保護関連トラフィックをMicrosoft Defender for EndpointおよびMicrosoft Defender ウイルス対策するために、分割トンネリング VPN を使用することをお勧めします。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -67,8 +67,8 @@ ms.locfileid: "61167960"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Active 修復アクション' (詳細については、「役割の作成と管理 [」](user-roles.md) を参照してください)
-> - ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"アクティブ修復アクション" (詳細については、 [ロールの作成と管理](user-roles.md) に関するページを参照してください)
+> - ユーザーは、デバイス グループの設定に基づいてデバイスにアクセスできる必要があります (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -85,7 +85,7 @@ Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、JSON オブジェクトに次のパラメーターを指定します。
+要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
 パラメーター|種類|説明
 :---|:---|:---
@@ -93,9 +93,9 @@ Content-Type|string|application/json. **必須**。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。
+成功した場合、このメソッドは 201 - 作成された応答コードと応答本文の [Machine Action](machineaction.md) を返します。
 
-同じデバイスのアプリ制限を削除するために複数の API 呼び出しを送信すると、"保留中のコンピューター アクション" または HTTP 400 が返されます。"Action is already progress" というメッセージが表示されます。
+同じデバイスのアプリ制限を削除するために複数の API 呼び出しを送信すると、"保留中のマシン アクション" または HTTP 400 が返され、"Action is progress" というメッセージが表示されます。
 
 ## <a name="example"></a>例
 
@@ -114,4 +114,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 
 ```
 
-デバイスでのコードの実行を制限するには、「アプリの実行を [制限する」を参照してください](restrict-code-execution.md)。
+デバイスでのコード実行を制限するには、「 [アプリの実行を制限する](restrict-code-execution.md)」を参照してください。

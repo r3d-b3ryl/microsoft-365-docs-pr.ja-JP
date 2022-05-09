@@ -1,5 +1,5 @@
 ---
-title: Senegal のサポート情報
+title: セネガルのサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,14 +19,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61372674"
 ---
-# <a name="contact-support-for-senegal"></a>Senegal のサポートに問い合わせ
+# <a name="contact-support-for-senegal"></a>セネガルのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 800 103 072
 
-ダイヤル後に、次のコマンドを入力します。
+ダイヤル後、次のように入力します。
 
 877 867 2337
 
@@ -39,6 +39,6 @@ ms.locfileid: "61372674"
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-フランス語: Mon-Fri 7 AM-8 PM
+フランス語: Mon-Fri午前 7 時から午後 8 時
 
 英語: 24 時間年中無休

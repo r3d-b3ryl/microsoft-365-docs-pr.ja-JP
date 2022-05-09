@@ -1,7 +1,7 @@
 ---
-title: アラート API の取得
-description: Microsoft Defender for Endpoint の Alert リソースタイプのメソッドとプロパティについて説明します。
-keywords: apis, graph api, supported apis, get, alerts, recent
+title: アラート API を取得する
+description: Microsoft Defender for Endpointの Alert リソースの種類のメソッドとプロパティについて説明します。
+keywords: apis, graph api, サポートされている API, get, alerts, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -43,16 +43,16 @@ ms.locfileid: "61284387"
 
 |メソッド|戻り値の型|説明|
 |---|---|---|
-|[警告の取得](get-alert-info-by-id.md)|[アラート](alerts.md)|1 つのアラート [オブジェクトを取得](alerts.md) します。|
-|[アラートの一覧表示](get-alerts.md)|[アラート](alerts.md) コレクション|アラート [コレクションを一覧表示](alerts.md) します。|
-|[警告の更新](update-alert.md)|[アラート](alerts.md)|特定のアラートを [更新します](alerts.md)。|
+|[警告の取得](get-alert-info-by-id.md)|[アラート](alerts.md)|1 つの [アラート](alerts.md) オブジェクトを取得します。|
+|[アラートの一覧表示](get-alerts.md)|[アラート](alerts.md) コレクション|[アラート コレクションを](alerts.md)一覧表示します。|
+|[警告の更新](update-alert.md)|[アラート](alerts.md)|特定の [アラート](alerts.md)を更新します。|
 |[アラートのバッチ更新](batch-update-alerts.md)||アラートのバッチを更新 [します](alerts.md)。|
-|[アラートの作成](create-alert-by-reference.md)|[アラート](alerts.md)|Advanced Hunting から取得したイベント データに基づいてアラート [を作成します](run-advanced-query-api.md)。|
+|[アラートの作成](create-alert-by-reference.md)|[アラート](alerts.md)|[Advanced Hunting](run-advanced-query-api.md) から取得したイベント データに基づいてアラートを作成します。|
 |[関連するドメインを一覧表示する](get-alert-related-domain-info.md)|ドメイン コレクション|アラートに関連付けられている URL を一覧表示します。|
-|[関連ファイルを一覧表示する](get-alert-related-files-info.md)|[ファイル](files.md) コレクション|アラートに [関連](files.md) 付けられているファイル エンティティを一覧表示 [します](alerts.md)。|
-|[関連する IPs の一覧](get-alert-related-ip-info.md)|IP コレクション|アラートに関連付けられているリストの AP。|
-|[関連するコンピューターを取得する](get-alert-related-machine-info.md)|[マシン](machine.md)|アラート [に](machine.md) 関連付けられている [コンピューター](alerts.md)。|
-|[関連ユーザーの取得](get-alert-related-user-info.md)|[ユーザー](user.md)|アラート [に](user.md) 関連付けられている [ユーザー](alerts.md)。|
+|[関連ファイルを一覧表示する](get-alert-related-files-info.md)|[ファイル](files.md) コレクション|アラートに関連付けられている [ファイル](files.md) エンティティを一覧表示 [します](alerts.md)。|
+|[関連 IP を一覧表示する](get-alert-related-ip-info.md)|IP コレクション|アラートに関連付けられている IP を一覧表示します。|
+|[関連するマシンを取得する](get-alert-related-machine-info.md)|[マシン](machine.md)|[アラート](alerts.md)に関連付けられている[コンピューター](machine.md)。|
+|[関連ユーザーを取得する](get-alert-related-user-info.md)|[ユーザー](user.md)|[アラート](alerts.md)に関連付けられている[ユーザー](user.md)。|
 |
 
 ## <a name="properties"></a>プロパティ
@@ -65,36 +65,36 @@ ms.locfileid: "61284387"
 |---|---|---|
 |id|String|アラート ID。|
 |title|String|警告タイトル。|
-|description|String|警告の説明。|
-|alertCreationTime|Null 許容の DateTimeOffset|アラートが作成された日付と時刻 (UTC)。|
-|lastEventTime|Null 許容の DateTimeOffset|同じデバイスでアラートをトリガーしたイベントの最後の発生。|
-|firstEventTime|Null 許容の DateTimeOffset|そのデバイスでアラートをトリガーしたイベントの最初の発生。|
-|lastUpdateTime|Null 許容の DateTimeOffset|アラートが最後に更新された日付と時刻 (UTC)。|
-|resolvedTime|Null 許容の DateTimeOffset|アラートの状態が [解決済み] に変更された日時。|
-|incidentId|Null 許容長|アラート [の](view-incidents-queue.md) インシデント ID。|
-|investigationId|Null 許容長|アラート [に](automated-investigations.md) 関連する調査 ID。|
-|investigationState|Null 許容列挙|調査の現在の [状態](automated-investigations.md)です。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''|
+|説明|String|警告の説明。|
+|alertCreationTime|Null 許容 DateTimeOffset|アラートが作成された日時 (UTC)。|
+|lastEventTime|Null 許容 DateTimeOffset|同じデバイスでアラートをトリガーしたイベントの最後の発生。|
+|firstEventTime|Null 許容 DateTimeOffset|そのデバイスでアラートをトリガーしたイベントの最初の発生。|
+|lastUpdateTime|Null 許容 DateTimeOffset|アラートが最後に更新された日時 (UTC)。|
+|resolvedTime|Null 許容 DateTimeOffset|アラートの状態が "解決済み" に変更された日付と時刻。|
+|incidentId|Null 許容 Long|アラートの [インシデント](view-incidents-queue.md) ID。|
+|investigationId|Null 許容 Long|アラートに関連する [調査](automated-investigations.md) ID。|
+|investigationState|Null 許容列挙型|[調査](automated-investigations.md)の現在の状態。 指定できる値は、"不明"、"終了済み" です。 'SuccessfullyRemediated'、'Benign'、'Failed'、'PartiallyRemediated'、'Running'、'PendingApproval'、'PendingResource'、'PartiallyInvestigated'、'TerminatedByUser'、'TerminatedBySystem'、'Queued'、'InnerFailure'、'PreexistingAlert'、'UnsupportedAlertType'、'SuppressedAlert'。|
 |assignedTo|String|アラートの所有者。|
 |rbacGroupName|String|RBAC デバイス グループ名。|
-|mitreTechniques|String|Mitre Enterprise ID。|
+|mitreTechniques|String|Mitre Enterprise手法 ID。|
 |relatedUser|String|特定のアラートに関連するユーザーの詳細。|
-|severity|列挙|アラートの重大度。 指定できる値は、'UnSpecified'、'Informational'、'Low'、'Medium' および 'High' です。|
-|status|列挙|アラートの現在の状態を指定します。 指定できる値は、'Unknown'、'New'、'InProgress'、'Resolved' です。|
-|classification|Null 許容列挙|アラートの仕様。 指定できる値は、'Unknown'、'FalsePositive'、'TruePositive'です。|
-|決定|Null 許容列挙|アラートの決定を指定します。 指定できる値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。|
+|severity|列挙|アラートの重大度。 指定できる値は、'UnSpecified'、'Informational'、'Low'、'Medium'、'High' です。|
+|status|列挙|アラートの現在の状態を指定します。 指定できる値は、"不明"、"新規"、"InProgress"、"解決済み" です。|
+|classification|Null 許容列挙型|アラートの仕様。 指定できる値は、"不明"、"FalsePositive"、"TruePositive" です。|
+|決定|Null 許容列挙型|アラートの決定を指定します。 指定できる値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。|
 |category|String|アラートのカテゴリ。|
 |detectionSource|String|検出ソース。|
 |threatFamilyName|String|脅威ファミリ。|
-|threatName|String|脅威の名前。|
-|machineId|String|アラートに [関連付](machine.md) けられているコンピューター エンティティの ID。|
-|computerDnsName|String|[コンピューター](machine.md) の完全修飾名。|
-|aadTenantId|String|ユーザー ID Azure Active Directory ID。|
-|detectorId|String|アラートをトリガーした検出器の ID。|
-|comments|アラートコメントの一覧|Alert Comment オブジェクトには、コメント文字列、createBy 文字列、createTime 日付時刻が含まれます。|
-|証拠|アラート証拠の一覧|アラートに関連する証拠。 次の例を参照してください。|
+|threatName|String|脅威名。|
+|machineId|String|アラートに関連付けられている [コンピューター](machine.md) エンティティの ID。|
+|computerDnsName|String|[マシン](machine.md) の完全修飾名。|
+|aadTenantId|String|Azure Active Directory ID。|
+|DetectorId|String|アラートをトリガーした検出器の ID。|
+|comments|アラート コメントの一覧|Alert Comment オブジェクトには、コメント文字列、createdBy 文字列、createTime の日付時刻が含まれます。|
+|証拠|アラートの証拠の一覧|アラートに関連する証拠。 次の例を参照してください。|
 |
 
-### <a name="response-example-for-getting-single-alert"></a>1 つのアラートを取得する場合の応答例:
+### <a name="response-example-for-getting-single-alert"></a>1 つのアラートを取得するための応答の例:
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_1364969609

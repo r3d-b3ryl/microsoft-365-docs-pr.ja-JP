@@ -1,5 +1,5 @@
 ---
-title: エンタープライズ向けMicrosoft 365テナント管理
+title: エンタープライズ向けのMicrosoft 365のテナント管理
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -15,7 +15,7 @@ ms.collection:
 - tenant-management
 ms.custom:
 - Ent_Solutions
-description: ユーザーのテナントの計画、展開、および継続的なMicrosoft 365概要。
+description: Microsoft 365 テナントの計画、デプロイ、および継続的な運用の概要。
 ms.openlocfilehash: 7a9545800c3f5f08b8094290c4173b4368caff4d
 ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
@@ -23,96 +23,96 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/10/2022
 ms.locfileid: "62524215"
 ---
-# <a name="tenant-management-for-microsoft-365-for-enterprise"></a>エンタープライズ向けMicrosoft 365テナント管理
+# <a name="tenant-management-for-microsoft-365-for-enterprise"></a>エンタープライズ向けのMicrosoft 365のテナント管理
 
-クラウド コンピューティングを使用して組織のデジタル変換へのパスを作成するには、作業員が生産性、コラボレーション、パフォーマンス、プライバシー、コンプライアンス、セキュリティに頼れる基盤が必要です。
+クラウド コンピューティングを使用して組織のデジタル変革へのパスを作成するには、従業員が生産性、コラボレーション、パフォーマンス、プライバシー、コンプライアンス、セキュリティに依存できる強固な基盤が必要です。
 
-Microsoft 365 テナントの正しい構成により、その基盤が提供され、従業員は作業の完了に集中し、IT 部門は追加のビジネス価値を提供するエンドツーエンドのソリューションに集中できます。
+Microsoft 365 テナントを正しく構成すると、その基盤が提供され、ワーカーは作業を完了することに専念し、IT 部門は、追加のビジネス価値を提供するエンド ツー エンド ソリューションに集中できます。
 
-このソリューションでは、次の手順で、その基盤の構成を説明します。
+このソリューションでは、次の手順でその基盤の構成について説明します。
 
 1. テナントを決定する
 2. ネットワークを最適化する
 3. ID を同期し、セキュリティで保護されたサインインを適用する
-4. デバイス、Windows、Office、オンプレミスのサーバーとデータOffice移行する
+4. Windows デバイス、Office クライアント、オンプレミスのOffice サーバーとデータを移行する
 5. デバイスとアプリの管理を展開する
 
-しかし、最初に、テナントとは何か、また、堅固な基盤を提供するテナントの外観を理解するために少し時間を取って説明します。
+しかし、まず、テナントとは何か、また、強固な基盤を提供するテナントの外観を理解しましょう。
 
-## <a name="a-microsoft-365-tenant-defined"></a>定義Microsoft 365テナント
+## <a name="a-microsoft-365-tenant-defined"></a>定義されたMicrosoft 365 テナント
 
-Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定の既定の場所にMicrosoft 365組織データのサービスの専用インスタンスです。 この場所は、組織のテナントを作成するときに指定されます。 各Microsoft 365は、個別、一意、および他のすべてのテナントMicrosoft 365します。 Microsoft から 1 つMicrosoft 365製品 (Microsoft 365 E3 や E5 など) を購入する際に、Microsoft 365 E3 テナントを作成し、それぞれのライセンスのセットを作成します。
+Microsoft 365 テナントは、Microsoft 365のサービスと、ヨーロッパや北米などの特定の既定の場所に格納されている組織データの専用インスタンスです。 この場所は、組織のテナントを作成するときに指定します。 各Microsoft 365テナントは、個別で一意であり、他のすべてのMicrosoft 365テナントとは別です。 Microsoft 365 E3や E5 など、Microsoft から 1 つ以上の製品を購入し、それぞれに一連のライセンスを購入すると、Microsoft 365 テナントを作成します。
 
-また、Microsoft 365 テナントには Azure Active Directory (Azure AD) テナントも含まれます。これは、ユーザー アカウント、グループ、その他のオブジェクト用の Azure AD の専用インスタンスです。 各Azure ADは、個別、一意、および他のすべてのテナントAzure ADします。 組織には Azure サブスクリプションでセットアップできる複数の Azure AD テナントを含め、Microsoft 365 テナントは、テナントの作成時に作成された Azure AD テナントを 1 つのみ使用できます。
+Microsoft 365 テナントには、Azure Active Directory (Azure AD) テナントも含まれています。これは、ユーザー アカウント、グループ、およびその他のオブジェクトのAzure ADの専用インスタンスです。 各Azure ADテナントは、個別で一意であり、他のすべてのAzure AD テナントとは別です。 組織は、Azure サブスクリプションで設定できる複数のAzure AD テナントを持つことができますが、Microsoft 365 テナントは、テナントの作成時に作成された 1 つのAzure AD テナントのみを使用できます。
 
 次に例を示します：
 
-![テナントがMicrosoft 365テナントを使用Azure AD例です。](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Azure AD テナントMicrosoft 365テナントの例。](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
-*テナント管理* は、テナントの計画、展開、および継続的なMicrosoft 365です。
+*テナント管理* は、Microsoft 365 テナントの計画、展開、継続的な運用です。
 
-## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>十分に設計され、運用されているテナントの属性
+## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>適切に設計され、運用されているテナントの属性
 
-&mdash;テナントの正しい名前と場所を超えて、Microsoft Teams や Exchange Online&mdash; など、クラウド生産性アプリを使用してユーザー エクスペリエンスを効果的、安全、パフォーマンスに優れるものにするための、計画、展開、および管理のための追加の要素があります。
+テナントの適切な名前と場所を超えて、クラウドの生産性アプリ&mdash;を使用したユーザー エクスペリエンスをMicrosoft TeamsやExchange Online&mdash;効果的、セキュリティ、パフォーマンスを確保するために、計画、デプロイ、管理するための追加の要素があります。
 
-要素は次のとおりです。
+要素を次に示します。
 
-- 製品 (サブスクリプション) とライセンスの正しいセットがあります。
-  - 一連の製品は、ビジネス、IT、およびセキュリティのニーズに一致します。
-  - 従業員に対して適切な数のライセンスと、スタッフの予想される変更点があります。
+- 正しい製品セット (サブスクリプション) とライセンスがあります。
+  - 一連の製品は、ビジネス、IT、セキュリティのニーズに一致します。
+  - 従業員に適切な数のライセンスがあり、スタッフの変更が予想されます。
 - ネットワークの場合:
-  - 正しい名前をDNS ドメインしました。
-  - エンタープライズ ネットワークの場合、オンサイト ワーカー向けに Microsoft ネットワークへのネットワーク トラフィックを最適化しました。
+  - 正しい DNS ドメイン名を構成しました。
+  - エンタープライズ ネットワークの場合は、オンサイト ワーカー用に Microsoft ネットワークへのネットワーク トラフィックを最適化しました。
   - VPN クライアントを使用しているリモート ワーカーのネットワーク トラフィックを最適化しました。
-- Active Directory ドメイン サービス (DS) アカウント、AD、その他のオブジェクトを同期しました。
-  - テナント Azure ADは、電子メール アドレスExchange Online DNS ドメインを持つメールボックスにマップされます。
-  - ユーザー アカウントには、正しい購入済み製品から適切なライセンスが割り当てられている (Microsoft 365 E3 E5 など)。
+- Active Directory Domain Services (AD DS) アカウント、グループ、その他のオブジェクトを同期しました。
+  - Azure AD テナント アカウントは、電子メール アドレスの正しい DNS ドメインを持つメールボックスExchange Onlineにマップされます。
+  - ユーザー アカウントには、正しい購入済み製品 (Microsoft 365 E3や E5 など) から正しいライセンスが割り当てられています。
 - 強力な ID とアクセス管理を構成しました。
-  - パスワードレス認証または多要素認証 (MFA) によるセキュリティで保護されたユーザー サインインが必要です。
-  - より高いレベルのセキュリティのためにサインイン要件と制限を適用する条件付きアクセス ポリシーがあります。
-- オンプレミスのサーバー Officeデータはクラウド アプリに移行しているか、ハイブリッド構成で使用されています。
-- Intune または Basic Mobility and Security を使用してデバイス管理を実行している場合は、デバイス管理Microsoft 365。
-  - 組織が所有するデバイスが登録され、管理されます。
+  - パスワードレスまたは多要素認証 (MFA) でセキュリティで保護されたユーザー サインインが必要です。
+  - より高いレベルのセキュリティに対してサインイン要件と制限を適用する条件付きアクセス ポリシーがあります。
+- オンプレミスのOffice サーバーとそのデータがクラウド アプリに移行されているか、ハイブリッド構成で使用されています。
+- Microsoft 365に組み込まれたIntuneまたは Basic Mobility and Security を使用してデバイス管理を行っています。
+  - 組織所有のデバイスが登録され、管理されます。
   - 個人用デバイス用のアプリは管理されます。
 
-これらすべての要素が配置されたMicrosoft 365テナントの例を次に示します。
+これらの要素がすべて配置されたMicrosoft 365 テナントの例を次に示します。
 
-![テナントのMicrosoft 365例。](../media/tenant-management-overview/tenant-management-tenant-config.png)
+![テナントMicrosoft 365例。](../media/tenant-management-overview/tenant-management-tenant-config.png)
 
-この図では、次のMicrosoft 365を示します。
+この図では、Microsoft 365 テナントには次のものが含まれます。
 
-- 製品とライセンスは、Microsoft 365 E3 E5 用です。
-- Microsoft 365生産性アプリ。
-- Intune には、登録済みデバイスとデバイスポリシーとアプリケーション ポリシーがあります。
-- ユーザー Azure AD (グループや他のディレクトリ オブジェクトは表示されません)、ドメイン、条件付きアクセス ポリシーが同期されているテナント。
+- Microsoft 365 E3と E5 の製品とライセンス。
+- 生産性アプリをMicrosoft 365します。
+- 登録済みのデバイスとデバイスポリシーとアプリケーション ポリシーを使用してIntuneします。
+- 同期されたユーザー アカウント (グループとその他のディレクトリ オブジェクトは表示されません)、ドメイン、条件付きアクセス ポリシーを持つAzure AD テナント。
 
-## <a name="tenant-capabilities-for-microsoft-365-for-enterprise"></a>エンタープライズ向けMicrosoft 365テナント機能
+## <a name="tenant-capabilities-for-microsoft-365-for-enterprise"></a>エンタープライズ向けのMicrosoft 365のテナント機能
 
-次のセクションと表は、このソリューションの手順の主な機能とライセンスの一覧です。
+次のセクションと表に、このソリューションの手順の主な機能とライセンスを示します。
 
-### <a name="tenant"></a>テナント
+### <a name="tenant"></a>Tenant
 
 |機能|説明|ライセンス|
 |---|---|---|
-|複数のテナント|各Microsoft 365は、個別、一意、および他のすべてのテナントMicrosoft 365します。 複数のテナントがある場合、それらを管理し、ユーザーにサービスを提供する際には、制限と追加の考慮事項があります。|Microsoft 365 E3 または E5|
-|テナント間でのメールボックスの移行|テナント管理者は、オンプレミス システムで最小限のインフラストラクチャ依存関係を持つテナント間でメールボックスを移動できます。 これにより、オフボードメールボックスとオンボードメールボックスが不要になります。|Microsoft 365 E3 または E5|
-|Multi-Geo|テナントは、データ常駐の要件を満たすために選択した他のデータセンターの地理的な場所にデータを保存できます。|Microsoft 365 E3 または E5|
-|コア データを新しいデータセンター geo に移動する|Microsoft が追加の容量とコンピューティング リソース用に新しいデータセンター geo を追加すると、主要な顧客データに対する地域内データ常駐のデータセンター geo の移動を要求できます。|Microsoft 365 E3 または E5|
+|複数のテナント|各Microsoft 365テナントは、個別で一意であり、他のすべてのMicrosoft 365テナントとは別です。 複数のテナントでは、テナントを管理し、ユーザーにサービスを提供する際には、制限と追加の考慮事項があります。|Microsoft 365 E3 または E5|
+|テナント間でのメールボックスの移行|テナント管理者は、オンプレミス システムのインフラストラクチャの依存関係を最小限に抑えて、テナント間でメールボックスを移動できます。 これにより、メールボックスをオフボードおよびオンボードする必要が解消されます。|Microsoft 365 E3 または E5|
+|Multi-Geo|テナントは、データ所在地の要件を満たすために選択した他のデータセンターの地理的な場所に保存データを格納できます。|Microsoft 365 E3 または E5|
+|コア データを新しいデータセンター geo に移動する|Microsoft が新しいデータセンター geo を追加して容量とコンピューティング リソースを追加すると、コア顧客データの地域内データの所在地に関するデータセンター geo の移動を要求できます。|Microsoft 365 E3 または E5|
 ||||
 
 ### <a name="networking"></a>ネットワーク
 
 |機能|説明|ライセンス|
 |---|---|---|
-|ネットワーク インサイト|オフィスの場所のネットワーク境界Microsoft 365を設計するために、テナントから収集されたネットワーク パフォーマンスの指標。|Microsoft 365 E3 または E5|
-|エンドポイントの更新を自動化する|クライアント PAC ファイルおよびネットワーク デバイスおよびサービスMicrosoft 365エンドポイントの構成と継続的な更新を自動化します。|Microsoft 365 E3 または E5|
+|ネットワーク インサイト|Microsoft 365 テナントから収集されたネットワーク パフォーマンス メトリックは、オフィスの場所のネットワーク境界を設計するのに役立ちます。|Microsoft 365 E3 または E5|
+|エンドポイントの更新を自動化する|クライアント PAC ファイルとネットワーク デバイスとサービスのMicrosoft 365 エンドポイントの構成と継続的な更新を自動化します。|Microsoft 365 E3 または E5|
 ||||
 
 ### <a name="identity"></a>ID
 
 |機能|説明|ライセンス|
 |---|---|---|
-|オンプレミスの Active Directory ドメイン サービス (AD DS) をテナントAzure ADする|ユーザー アカウント、グループ、その他のオブジェクトのオンプレミス ID プロバイダーを活用します。|Microsoft 365 E3 または E5|
+|オンプレミスの Active Directory Domain Services (AD DS) をAzure AD テナントと同期する|ユーザー アカウント、グループ、その他のオブジェクトに対してオンプレミス ID プロバイダーを活用します。|Microsoft 365 E3 または E5|
 |セキュリティの既定値が適用されている MFA|サインインには、2 つ目の認証形式を要求することで、ID とデバイスを侵害から保護します。セキュリティの既定値では、すべてのユーザー アカウントに MFA が必要です。|Microsoft 365 E3 または E5|
 |条件付きアクセスが適用されている MFA|条件付きアクセス ポリシーを使用してサインインの属性に基づいて MFA を要求します。|Microsoft 365 E3 または E5|
 |リスクベースの条件付きアクセスが適用されている MFA|ユーザーが Microsoft Defender for Identity でサインインするリスクに基づいて MFA を要求します。|Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3|
@@ -123,31 +123,31 @@ Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定�
 
 |機能|説明|ライセンス|
 |---|---|---|
-|Windows 10 に移行する|7 または 7 を実行するWindowsを移行Windows 8.1にWindows 10 Enterprise。|Windows 10 Enterprise E5 に含まれるMicrosoft 365 E3ライセンス|
-|移行してMicrosoft 365 Apps for enterprise|Word や Officeなどのクライアント アプリPowerPoint、新しい機能で更新されたクラウドからインストールされているバージョンに移行します。|Microsoft 365 E3 または E5|
-|オンプレミスのサーバーとデータをサーバーに移行Microsoft 365|クラウド サービスにExchangeメールボックス、SharePointサイト、Skype for Businessオンラインに移行Microsoft 365します。|Microsoft 365 E3 または E5|
+|Windows 10 に移行する|Windows 7 または Windows 8.1 を実行するデバイスをWindows 10 Enterpriseに移行します。|Microsoft 365 E3または E5 に含まれるWindows 10 Enterprise ライセンス|
+|Microsoft 365 Apps for enterpriseに移行する|Word やPowerPointなどのOffice クライアント アプリを、新機能で更新されたクラウドからインストールされたバージョンに移行します。|Microsoft 365 E3 または E5|
+|オンプレミスサーバーとデータをMicrosoft 365に移行する|Exchange メールボックス、SharePoint サイト、Skype for Business Online をクラウド サービスMicrosoft 365移行します。|Microsoft 365 E3 または E5|
 ||||
 
 ### <a name="device-and-app-management"></a>デバイスおよびアプリの管理
 
 |機能|説明|ライセンス|
 |---|---|---|
-|Microsoft Intune|モバイル デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) を提供するクラウドベースのサービスで、携帯電話、タブレット、ラップトップなど、組織のアプリケーションとデバイスの使用方法を制御します。|Microsoft 365 E3 または E5|
-|基本的なモビリティとセキュリティ|この組み込みサービスを使用して、iPhone、iPad、Android、Windows携帯電話など、ユーザーのモバイル デバイスをセキュリティで保護して管理します。|Microsoft 365 E3 または E5|
+|Microsoft Intune|モバイル デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) を提供するクラウドベースのサービス。|Microsoft 365 E3 または E5|
+|基本的なモビリティとセキュリティ|この組み込みサービスを使用して、iPhone、iPad、Android、Windows電話などのユーザーのモバイル デバイスをセキュリティで保護して管理します。|Microsoft 365 E3 または E5|
 ||||
 
 ## <a name="next-steps"></a>次の手順
 
-これらの手順を使用して、テナントの設定と管理Microsoft 365します。
+Microsoft 365 テナントを設定および管理するには、次の手順に従います。
 
 1. [テナントを決定する](tenant-management-tenants.md)
 2. [ネットワークを最適化する](tenant-management-networking.md)
 3. [ID を同期し、セキュリティで保護されたサインインを適用する](tenant-management-identity.md)
-4. [オンプレミスのサーバーとデータOffice移行する](tenant-management-migration.md)
+4. [オンプレミスのOffice サーバーとデータを移行する](tenant-management-migration.md)
 5. [デバイスとアプリの管理を展開する](tenant-management-device-management.md)
 
-[![テナントを展開および管理する手順Microsoft 365します。](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
+[![Microsoft 365 テナントをデプロイして管理する手順。](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
-各手順では、展開オプション、結果、および継続的なメンテナンス タスクについて説明します。
+各手順では、デプロイ オプションについて説明し、結果を要約し、継続的なメンテナンス タスクを行います。
 
-架空の代表的な多国籍組織がテナントの要素を展開した方法を理解するには、Contoso のケース スタディMicrosoft 365[参照してください](../enterprise/contoso-case-study.md)。
+架空の代表的な多国籍組織が、Microsoft 365 テナントの要素をどのように展開したかを理解するには、[Contoso のケース スタディ](../enterprise/contoso-case-study.md)を参照してください。

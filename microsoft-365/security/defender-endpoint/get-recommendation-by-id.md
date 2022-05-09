@@ -1,7 +1,7 @@
 ---
-title: Id による推奨事項の取得
-description: セキュリティの推奨事項を ID で取得します。
-keywords: apis、graph api、サポートされている api、get、セキュリティ推奨事項、ID によるセキュリティ推奨事項、脅威と脆弱性の管理、脅威と脆弱性の管理 API
+title: Id で推奨事項を取得する
+description: ID でセキュリティに関する推奨事項を取得します。
+keywords: apis, graph api, サポートされている API, get, security recommendation, security recommendation by ID, 脅威と脆弱性の管理, 脅威と脆弱性の管理 api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -37,11 +37,11 @@ ms.locfileid: "61302232"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-セキュリティの推奨事項を ID で取得します。
+ID でセキュリティに関する推奨事項を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -56,7 +56,7 @@ GET /api/recommendations/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -66,7 +66,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、本文のセキュリティに関する推奨事項を返します。
+成功した場合、このメソッドは本文のセキュリティに関する推奨事項を含む 200 OK を返します。
 
 ## <a name="example"></a>例
 
@@ -108,7 +108,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-- [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&脆弱性のセキュリティに関する推奨事項](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371762"
 ---
-# <a name="contact-support-for-dominican-republic"></a>ドミニカ共和国のサポートに問い合わせ
+# <a name="contact-support-for-dominican-republic"></a>ドミニカ共和国のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -41,4 +41,4 @@ ms.locfileid: "61371762"
 
 代替電話番号: 1 809 200 8794
 
-(携帯電話無料)
+(携帯電話の無料通話)

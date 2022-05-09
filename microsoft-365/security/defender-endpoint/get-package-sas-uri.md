@@ -1,7 +1,7 @@
 ---
-title: パッケージ SAS URI API の取得
+title: パッケージ SAS URI API を取得する
 description: この API を使用して、調査パッケージをダウンロードできる URI を取得します。
-keywords: apis, graph api, supported apis, get package, sas, uri
+keywords: apis, graph api, サポートされている API, get package, sas, uri
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61302412"
 ---
-# <a name="get-package-sas-uri-api"></a>パッケージ SAS URI API の取得
+# <a name="get-package-sas-uri-api"></a>パッケージ SAS URI API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,11 +37,11 @@ ms.locfileid: "61302412"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API の説明
-調査パッケージのダウンロードを許可する [URI を取得します](collect-investigation-package.md)。
+[調査パッケージ](collect-investigation-package.md)のダウンロードを許可する URI を取得します。
 
 > [!IMPORTANT]
 >
-> - これらのアクションは、Windows 10 バージョン 1703 以降、および 11 のデバイスWindowsできます。
+> - これらのアクションは、Windows 10、バージョン 1703 以降、およびWindows 11のデバイスでのみ使用できます。
 
 ## <a name="limitations"></a>制限事項
 
@@ -49,19 +49,19 @@ ms.locfileid: "61302412"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Access the Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API にアクセスする」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Machine.Read.All|''すべてのコンピューター プロファイルを読み取る'
-アプリケーション|"Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント)|Machine.CollectForensics|'collect forensics'
+アプリケーション|Machine.Read.All|''すべてのマシン プロファイルを読み取る''
+アプリケーション|"Machine.ReadWrite.All|'すべてのマシン情報の読み取りと書き込み'
+委任 (職場または学校のアカウント)|Machine.CollectForensics|'法医学を収集する'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Alerts Investigation' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"アラート調査" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
+> - ユーザーは、デバイス グループの設定に基づいてデバイスにアクセスできる必要があります (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -71,7 +71,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -81,7 +81,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、パッケージへのリンクを "value" パラメーターに保持するオブジェクトを持つ 200 Ok 応答コードを返します。 このリンクは非常に短い時間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。 コレクションのコンピューター アクションが存在するが完了していない場合は、404 Not Found が返されます。
+成功した場合、このメソッドは、"value" パラメーター内のパッケージへのリンクを保持するオブジェクトを含む 200 OK 応答コードを返します。 このリンクは非常に短時間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。 コレクションのマシン アクションが存在するが完了していない場合は、404 Not Found が返されます。
 
 ## <a name="example"></a>例
 

@@ -1,7 +1,7 @@
 ---
-title: デバイス グループ別の露出スコアの一覧表示
+title: デバイス グループ別に公開スコアを一覧表示する
 description: デバイス グループ別の露出スコアの一覧を取得します。
-keywords: apis、graph api、サポートされている API、get、露出スコア、デバイス グループ、デバイス グループの露出スコア
+keywords: apis, graph api, サポートされている API, get, exposure score, device group, device group exposure score
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61301632"
 ---
-# <a name="list-exposure-score-by-device-group"></a>デバイス グループ別の露出スコアの一覧表示
+# <a name="list-exposure-score-by-device-group"></a>デバイス グループ別に公開スコアを一覧表示する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,11 +38,11 @@ ms.locfileid: "61301632"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-各コンピューター グループの露出スコアを取得します。
+各マシン グループの露出スコアを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
@@ -57,7 +57,7 @@ GET /api/exposureScore/ByMachineGroups
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 ---|---|---
 |Authorization|String|ベアラー {token}。**必須**。
 
@@ -67,7 +67,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、応答本文のデバイス グループ データごとの露出スコアの一覧を返します。
+成功した場合、このメソッドは 200 OK を返し、応答本文のデバイス グループ データごとの露出スコアの一覧を示します。
 
 ## <a name="example"></a>例
 
@@ -102,7 +102,7 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-- [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [脅威&脆弱性の暴露スコア](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [脅威&脆弱性の公開スコア](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

@@ -1,5 +1,5 @@
 ---
-title: 調査パッケージ API の収集
+title: 調査パッケージ API を収集する
 description: この API を使用して、デバイスからの調査パッケージの収集に関連する呼び出しを作成します。
 keywords: apis、graph api、サポートされている API、調査パッケージの収集
 ms.prod: m365-security
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61302220"
 ---
-# <a name="collect-investigation-package-api"></a>調査パッケージ API の収集
+# <a name="collect-investigation-package-api"></a>調査パッケージ API を収集する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -48,22 +48,22 @@ ms.locfileid: "61302220"
 
 > [!IMPORTANT]
 >
-> - これらの応答アクションは、Windows 10 バージョン 1703 以降、および Windows 11 のデバイスでのみ使用できます。
+> - これらの応答アクションは、Windows 10、バージョン 1703 以降、およびWindows 11のデバイスでのみ使用できます。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については [、「Use Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Machine.CollectForensics|'collect forensics'
-委任 (職場または学校のアカウント)|Machine.CollectForensics|'collect forensics'
+アプリケーション|Machine.CollectForensics|'法医学を収集する'
+委任 (職場または学校のアカウント)|Machine.CollectForensics|'法医学を収集する'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Alerts Investigation' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"アラート調査" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
+> - ユーザーは、デバイス グループの設定に基づいてデバイスにアクセスできる必要があります (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -73,22 +73,22 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、JSON オブジェクトに次のパラメーターを指定します。
+要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-パラメーター|型|説明
+パラメーター|種類|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。 コレクションが既に実行されている場合は、400 Bad Request が返されます。
+成功した場合、このメソッドは 201 - 作成された応答コードと応答本文の [Machine Action](machineaction.md) を返します。 コレクションが既に実行されている場合は、400 無効な要求が返されます。
 
 ## <a name="example"></a>例
 

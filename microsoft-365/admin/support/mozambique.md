@@ -1,5 +1,5 @@
 ---
-title: Mozambique のサポート情報
+title: モザンビークのサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373478"
 ---
-# <a name="contact-support-for-mozambique"></a>Mozambique のサポートに問い合わせ
+# <a name="contact-support-for-mozambique"></a>モザンビークのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "61373478"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-英語: Mon-Fri 7 AM-6 PM
+英語: 午前 7 時から午後 6 時Mon-Fri
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
@@ -37,4 +37,4 @@ ms.locfileid: "61373478"
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

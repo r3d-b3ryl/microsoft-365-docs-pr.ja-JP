@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint API リリース ノート
-description: Microsoft Defender for Endpoint セットの API に対して行われた更新プログラムのリリース ノート。
-keywords: Microsoft Defender for Endpoint API リリース ノート、mde、API、Microsoft Defender for Endpoint API、更新プログラム、メモ、リリース
+description: MICROSOFT DEFENDER FOR ENDPOINT API セットに対して行われた更新プログラムのリリース ノート。
+keywords: Microsoft Defender for Endpoint API リリース ノート、mde、API、Microsoft Defender for Endpoint API、更新プログラム、ノート、リリース
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -30,7 +30,7 @@ ms.locfileid: "61283655"
 
 >Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-次の情報は、Microsoft Defender for Endpoint API に対して行われた更新プログラムと、その更新日を示しています。
+次の情報は、Microsoft Defender for Endpoint API に対して行われた更新と、それらが行われた日付の一覧です。
 
 > [!TIP]
 > RSS フィード: ご自身のフィード リーダーに次の URL をコピーして貼り付けると、このページの更新時に通知を受け取ることができます。
@@ -43,43 +43,43 @@ ms.locfileid: "61283655"
 
 ### <a name="06102021"></a>06.10.2021
 
-- 新しいエクスポート評価 API メソッド - デルタ エクスポート ソフトウェア脆弱性評価 _(JSON 応答)_ デバイスごとの評価方法とプロパティのエクスポート [を追加しました](get-assessment-methods-properties.md)。
+- 新しい Export Assessment API メソッド - _Delta Export ソフトウェア脆弱性評価 (JSON 応答)_ [デバイスごとのエクスポート評価方法とプロパティを](get-assessment-methods-properties.md)追加しました。
 
 ### <a name="05252021"></a>05.25.2021
 
-- デバイスごとに新しい API [Export の評価方法とプロパティを追加しました](get-assessment-methods-properties.md)。
+- デバイスごとの新しい API [Export 評価メソッドとプロパティを](get-assessment-methods-properties.md)追加しました。
 
 ### <a name="03052021"></a>03.05.2021
 
-- 新しい API: [修復アクティビティのメソッドとプロパティを追加しました](get-remediation-methods-properties.md)。
+- 新しい API: [修復アクティビティのメソッドとプロパティを](get-remediation-methods-properties.md)追加しました。
 
 ### <a name="10022021"></a>10.02.2021
 
-- 新しい API が[追加されました。](batch-update-alerts.md)
+- 新しい API: [バッチ更新アラート](batch-update-alerts.md)を追加しました。
 
 ### <a name="25012021"></a>25.01.2021
 
-- Advanced [Hunting API](run-advanced-query-api.md) のレート制限が 1 分あたり 15 ~ 45 要求に更新されました。
+- [Advanced Hunting API](run-advanced-query-api.md) のレート制限を 1 分あたり 15 から 45 要求に更新しました。
 
 ### <a name="21012021"></a>21.01.2021
 
-- 新しい API を追加しました: [タグでデバイスを検索します](machine-tags.md)。
-- 新しい API: インポート [インジケーターを追加しました](import-ti-indicators.md)。
+- 新しい API を追加しました: [タグでデバイスを検索](machine-tags.md)します。
+- 新しい API の [追加: インジケーターのインポート](import-ti-indicators.md)。
 
 ### <a name="03012021"></a>03.01.2021
 
-- 更新されたアラート証拠: 追加 ***detectionStatus** _, _*_parentProcessFilePath_*_ および _ *_parentProcessFileName_** プロパティ。
-- 更新された [Alert エンティティ](alerts.md): ***detectorId プロパティが追加*** されました。
+- アラートの証拠が更新されました。***detectionStatus** _、 _*_parentProcessFilePath_*_ 、および _ *_parentProcessFileName_** プロパティが追加されました。
+- [更新されたアラート エンティティ](alerts.md): ***DetectorId プロパティを*** 追加しました。
 
 ### <a name="15122020"></a>15.12.2020
 
-- 更新された [Device エンティティ](machine.md) : ***IpInterfaces リストが追加*** されました。 「リスト [デバイス」を参照してください](get-machines.md)。
+- 更新された [デバイス](machine.md) エンティティ: ***IpInterfaces リストを*** 追加しました。 「 [デバイスの一覧表示](get-machines.md)」を参照してください。
 
 ### <a name="04112020"></a>04.11.2020
 
 - 新しい API を追加しました: [デバイスの値を設定します](set-device-value.md)。
-- 更新された [Device エンティティ](machine.md) : ***deviceValue プロパティが追加*** されました。
+- 更新された [デバイス](machine.md) エンティティ: ***deviceValue プロパティを*** 追加しました。
 
 ### <a name="01092020"></a>01.09.2020
 
-- 関連する Evidence を使用して Alert エンティティを展開するオプションを追加しました。 「リスト [通知」を参照してください](get-alerts.md)。
+- 関連する証拠を使用してアラート エンティティを展開するオプションを追加しました。 [アラートの一覧表示を](get-alerts.md)参照してください。

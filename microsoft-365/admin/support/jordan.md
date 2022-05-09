@@ -1,5 +1,5 @@
 ---
-title: ヨルダンのサポート情報
+title: ジョーダンのサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,24 +19,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373922"
 ---
-# <a name="contact-support-for-jordan"></a>ヨルダンのサポートに問い合わせ
+# <a name="contact-support-for-jordan"></a>ジョーダンのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 18 800 000
 
-ダイヤル後、「877 663 5075」と入力します。
+ダイヤル後、877 663 5075 と入力します
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-アラビア語: Sun-Thu 10 AM-6 PM
+アラビア語: Sun-Thu午前 10 時から午後 6 時
 
 英語: Mon-Fri午前 10 時から午後 6 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-アラビア語: Sun-Thu 10 AM-6 PM
+アラビア語: Sun-Thu午前 10 時から午後 6 時
 
 英語: 24 時間年中無休

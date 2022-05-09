@@ -1,7 +1,7 @@
 ---
-title: KB コレクション API の取得
-description: Microsoft Defender for Endpoint を使用して、ナレッジ ベース (KB) と KB の詳細のコレクションを取得します。
-keywords: apis, graph api, supported apis, get, kb
+title: KB コレクション API を取得する
+description: Microsoft Defender for Endpointを使用してナレッジ ベース (KB) と KB の詳細のコレクションを取得します。
+keywords: apis, graph api, サポートされている API, get, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/24/2021
 ms.locfileid: "61168164"
 ---
-# <a name="get-kb-collection-api"></a>KB コレクション API の取得
+# <a name="get-kb-collection-api"></a>KB コレクション API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

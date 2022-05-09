@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint のライブ応答の問題のトラブルシューティング
-description: Microsoft Defender for Endpoint でライブ応答を使用するときに発生する可能性のある問題のトラブルシューティング
+title: ライブ応答の問題Microsoft Defender for Endpointトラブルシューティングする
+description: Microsoft Defender for Endpointでライブ応答を使用するときに発生する可能性がある問題のトラブルシューティング
 keywords: ライブ応答、ライブ、応答、ロック、ファイルのトラブルシューティング
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/24/2021
 ms.locfileid: "61164732"
 ---
-# <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Microsoft Defender for Endpoint のライブ応答の問題のトラブルシューティング
+# <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>ライブ応答の問題Microsoft Defender for Endpointトラブルシューティングする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,11 +32,11 @@ ms.locfileid: "61164732"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-このページでは、ライブ応答の問題をトラブルシューティングするための詳細な手順を示します。
+このページでは、ライブ応答の問題をトラブルシューティングするための詳細な手順について説明します。
 
 ## <a name="file-cannot-be-accessed-during-live-response-sessions"></a>ライブ応答セッション中にファイルにアクセスできない
 
-ライブ応答セッション中にアクションを実行しようとしている場合は、ファイルにアクセスできないというエラー メッセージが表示される場合は、以下の手順を使用して問題に対処する必要があります。
+ライブ応答セッション中にアクションを実行しようとすると、ファイルにアクセスできないことを示すエラー メッセージが表示される場合は、次の手順を使用して問題に対処する必要があります。
 
 1. 次のスクリプト コード スニペットをコピーし、PS1 ファイルとして保存します。
 
@@ -55,20 +55,20 @@ ms.locfileid: "61164732"
     }
     ```
 
-2. スクリプトをライブ応答ライブラリに追加します。
-3. コピーするファイルのファイル パスという 1 つのパラメーターでスクリプトを実行します。
+2. ライブ応答ライブラリにスクリプトを追加します。
+3. コピーするファイルのファイル パスという 1 つのパラメーターを指定してスクリプトを実行します。
 4. TEMP フォルダーに移動します。
 5. コピーしたファイルに対して実行するアクションを実行します。
 
-## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>ライブ応答セッションが遅い、または初期接続中の遅延
+## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>ライブ応答セッションが遅い、または初期接続中に遅延が発生する
 
-ライブ応答では、Defender for Endpoint センサーの登録と WNS サービスWindows。 ライブ応答で接続の問題が発生している場合は、次の詳細を確認します。
+ライブ応答では、Windowsの WNS サービスに対する Defender for Endpoint センサーの登録が利用されます。 ライブ応答で接続の問題が発生している場合は、次の詳細を確認します。
 
-1. `notify.windows.com` 環境でブロックされません。 詳細については、「デバイス プロキシと [インターネット接続の設定を構成する」を参照してください](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
-2. WpnService (Windowsプッシュ通知システム サービス) は無効ではありません。
+1. `notify.windows.com` は環境でブロックされません。 詳細については、「 [デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)」を参照してください。
+2. WpnService (プッシュ通知システム サービスWindows) は無効ではありません。
 
 WpnService サービスの動作と要件を完全に理解するには、以下の記事を参照してください。
 
-- [Windows プッシュ Notification Services (WNS) の概要](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [Enterprise WNS トラフィックをサポートするファイアウォールとプロキシの構成](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Windows プッシュ通知サービス (WNS) の概要](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [WNS トラフィックをサポートするためのファイアウォールとプロキシの構成をEnterpriseする](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Microsoft プッシュ通知サービス (MPNS) パブリック IP 範囲](https://www.microsoft.com/download/details.aspx?id=44535)

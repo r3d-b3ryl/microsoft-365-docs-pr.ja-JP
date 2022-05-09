@@ -1,7 +1,7 @@
 ---
-title: MachineAction オブジェクト API の取得
-description: Get MachineAction API を使用して、Microsoft Defender for Endpoint の ID で特定の Machine Action を取得する方法について説明します。
-keywords: apis、graph api、サポートされている api、machineaction オブジェクト
+title: MachineAction オブジェクト API を取得する
+description: Get MachineAction API を使用して、Microsoft Defender for Endpointの ID で特定のマシン アクションを取得する方法について説明します。
+keywords: apis, graph api, サポートされている API, machineaction オブジェクト
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61301608"
 ---
-# <a name="get-machineaction-api"></a>Get machineAction API
+# <a name="get-machineaction-api"></a>machineAction API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "61301608"
 
 ## <a name="api-description"></a>API の説明
 
-ID によって特定 [の Machine Action](machineaction.md) を取得します。
+ID によって特定の [マシン アクション](machineaction.md) を取得します。
 
 ## <a name="limitations"></a>制限事項
 
@@ -46,19 +46,19 @@ ID によって特定 [の Machine Action](machineaction.md) を取得します�
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Defender for Endpoint API」を参照してください](apis-intro.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「 [Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
-アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント)|Machine.Read|'コンピューター情報の読み取り'
-委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+アプリケーション|Machine.Read.All|'すべてのマシン プロファイルを読み取る'
+アプリケーション|Machine.ReadWrite.All|'すべてのマシン情報の読み取りと書き込み'
+委任 (職場または学校のアカウント)|Machine.Read|'マシン情報の読み取り'
+委任 (職場または学校のアカウント)|Machine.ReadWrite|'マシン情報の読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -68,7 +68,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -78,7 +78,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは Machine Action エンティティを持つ 200 Ok 応答 [コードを返](machineaction.md) します。 指定された ID を持つコンピューター アクション エンティティが見つからない場合 - 404 Not Found。
+成功した場合、このメソッドは [Machine Action](machineaction.md) エンティティを含む 200 OK 応答コードを返します。 指定した ID を持つマシン アクション エンティティが見つからなかった場合は 、404 Not Found です。
 
 ## <a name="example"></a>例
 

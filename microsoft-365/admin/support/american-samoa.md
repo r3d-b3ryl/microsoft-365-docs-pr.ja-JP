@@ -1,5 +1,5 @@
 ---
-title: アメリカのサモアのサポート情報
+title: アメリカ領サモアのサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61369938"
 ---
-# <a name="contact-support-for-american-samoa"></a>米国サモアのサポートに問い合わせ
+# <a name="contact-support-for-american-samoa"></a>アメリカ領サモアのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

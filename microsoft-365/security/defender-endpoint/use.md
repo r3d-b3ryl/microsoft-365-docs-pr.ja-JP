@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender セキュリティ センターの概要
-description: アラートの動作など、Microsoft Defender セキュリティ センターの機能、および侵害や攻撃の可能性を調査する方法に関する提案について学習します。
-keywords: ダッシュボード、アラート キュー、アラートの管理、調査、アラートの調査、デバイスの調査、ファイルの送信、深い分析、高、中、低、重大度、ioc、ioa
+description: アラートのしくみや、侵害や攻撃の可能性を調査する方法に関する提案など、Microsoft Defender セキュリティ センターの機能について説明します。
+keywords: ダッシュボード, アラート キュー, アラートの管理, 調査, アラートの調査, デバイスの調査, ファイルの送信, 詳細分析, 高, 中, 低, 重大度, ioc, ioa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,14 +35,14 @@ ms.locfileid: "61167924"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-usewdatp-abovefoldlink)
 
-Microsoft Defender セキュリティ センターは、Microsoft Defender for Endpoint の機能にアクセスできるポータルです。
+Microsoft Defender セキュリティ センターは、Microsoft Defender for Endpoint機能にアクセスできるポータルです。
 
-[脅威 **の検出&管理** ] ダッシュボードを使用して、組織の全体的なセキュリティ体制の可視性を拡大します。 組織の攻撃表面を減らすのに役立つ注意と推奨事項が必要なデバイスが表示されます。
+**脅威&脆弱性管理** ダッシュボードを使用して、組織の全体的なセキュリティ体制に対する可視性を拡大します。 組織内の攻撃面を減らすのに役立つ注意と推奨事項を必要とするデバイスが表示されます。
 
-脅威分析 **ダッシュボードを使用して** 、Spectre と Meltdown へのリスクエクスポージャーを継続的に評価および制御します。
+**脅威分析** ダッシュボードを使用して、Spectre とメルトダウンに対するリスクの露出を継続的に評価し、制御します。
 
-## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Microsoft Defender for Endpoint 対話型ガイド
-この対話型ガイドでは、Microsoft Defender for Endpoint を使用して組織に対する脅威を調査する方法について説明します。 Microsoft Defender for Endpoint が、疑わしいアクティビティの特定、組織のリスクの調査、脅威の修復に役立つ方法について説明します。
+## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Microsoft Defender for Endpoint対話型ガイド
+この対話型ガイドでは、Microsoft Defender for Endpointを使用して組織に対する脅威を調査する方法について説明します。 Microsoft Defender for Endpointが疑わしいアクティビティの特定、組織へのリスクの調査、脅威の修復にどのように役立つかがわかります。
 
 [対話型のガイドをチェックしてください](https://aka.ms/MSDE-IG)
 
@@ -50,6 +50,6 @@ Microsoft Defender セキュリティ センターは、Microsoft Defender for E
 
 トピック | 説明
 :---|:---
-[ポータルの概要](portal-overview.md) | ポータルのレイアウトとエリアの説明について理解します。
-[[脅威の管理] &のダッシュボードを表示する](tvm-dashboard-insights.md) | 脅威 **&** 脆弱性管理ダッシュボードを使用すると、セキュリティに関する推奨事項、ソフトウェアの脆弱性、修復アクティビティ、公開されたデバイスを使用して、露出と Microsoft Secure Score for Devices を並べて表示できます。
-[脅威分析ダッシュボードを表示し、推奨される軽減アクションを実行する](threat-analytics.md) | 脅威 **分析ダッシュボードは** 、脅威に対するリスクエクスポージャーを継続的に評価および制御するのに役立ちます。 グラフを使用して、軽減策の有無に関するデバイスをすばやく特定します。
+[ポータルの概要](portal-overview.md) | ポータルのレイアウトと領域の説明について説明します。
+[脅威&脆弱性管理ダッシュボードを表示する](tvm-dashboard-insights.md) | **脅威&脆弱性管理ダッシュボード** を使用すると、最も高いセキュリティ推奨事項、ソフトウェアの脆弱性、修復アクティビティ、公開されたデバイスを使用して、デバイスの公開と Microsoft Secure Score を並べて表示できます。
+[脅威分析ダッシュボードを表示し、推奨される軽減策を実行する](threat-analytics.md) | **脅威分析** ダッシュボードは、脅威に対するリスクにさらされるリスクを継続的に評価および制御するのに役立ちます。 グラフを使用して、軽減策の有無に関するデバイスをすばやく識別します。

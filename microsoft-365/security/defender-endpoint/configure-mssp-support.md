@@ -1,6 +1,6 @@
 ---
-title: マネージ セキュリティ サービス プロバイダーのサポートを構成する
-description: エンドポイント用 Microsoft Defender との MSSP 統合を構成するために必要な手順を実行する
+title: マネージド セキュリティ サービス プロバイダーのサポートを構成する
+description: MSSP と Microsoft Defender for Endpointの統合を構成するために必要な手順を実行します。
 keywords: マネージド セキュリティ サービス プロバイダー、mssp、構成、統合
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -34,45 +34,45 @@ ms.locfileid: "62074584"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-管理セキュリティ サービス プロバイダー (MSSP) の統合を有効にするには、次の構成手順を実行する必要があります。
+マネージド セキュリティ サービス プロバイダー (MSSP) の統合を有効にするには、次の構成手順を実行する必要があります。
 
 > [!NOTE]
 > この記事では、サービス プロバイダーとサービス コンシューマーを区別するために、次の用語を使用します。
 >
 > - MSSP: 組織のセキュリティ デバイスの監視と管理を提供するセキュリティ組織。
-> - MSSP のお客様: MSSP のサービスを利用する組織。
+> - MSSP のお客様: MSSP のサービスに関与する組織。
 
-統合により、MSSP は次のアクションを実行できます。
+この統合により、MSSP は次のアクションを実行できるようになります。
 
-- MSSP 顧客のポータルへのアクセスMicrosoft 365 Defenderする
+- MSSP 顧客のMicrosoft 365 Defender ポータルにアクセスする
 - 電子メール通知を取得し、
-- セキュリティ情報とイベント管理 (SIEM) ツールを使用してアラートを取得する
+- セキュリティ情報とイベント管理 (SIEM) ツールを使用してアラートをフェッチする
 
-MSSP がこれらのアクションを実行する前に、MSSP のお客様は、MSSP がポータルにアクセスできるよう、Defender for Endpoint テナントへのアクセスを許可する必要があります。
+MSSP がこれらのアクションを実行する前に、MSSP のお客様は、MSSP がポータルにアクセスできるように、Defender for Endpoint テナントへのアクセスを許可する必要があります。
 
-通常、MSSP のお客様は初期構成手順を実行して、MSSP にセキュリティ セントラル テナントへのアクセス権Windows Defender付与します。 アクセスが許可された後、他の構成手順は、MSSP カスタマーまたは MSSP によって実行できます。
+通常、MSSP のお客様は初期構成手順を実行して、MSSP にWindows Defender Security Central テナントへのアクセスを許可します。 アクセスが許可された後は、MSSP の顧客または MSSP によって他の構成手順を実行できます。
 
 一般に、次の構成手順を実行する必要があります。
 
-- **MSSP にアクセス権を付与Microsoft 365 Defender**
+- **Microsoft 365 Defenderへの MSSP アクセス権を付与する**
 
-  このアクションは、MSSP のお客様が行う必要があります。 MSSP のお客様の Defender for Endpoint テナントへの MSSP アクセスを許可します。
+  このアクションは、MSSP のお客様が行う必要があります。 MSSP 顧客の Defender for Endpoint テナントへの MSSP アクセス権が付与されます。
 
 - **MSSP に送信されるアラート通知を構成する**
 
-  このアクションは、MSSP カスタマーまたは MSSP によって実行できます。 これにより、MSSP は、MSSP のお客様に対処する必要があるアラートを知る必要があります。
+  このアクションは、MSSP のお客様または MSSP によって実行できます。 これにより、MSSP のお客様に対処するために必要なアラートが MSSP に認識されます。
 
-- **MSSP 顧客のテナントから SIEM システムへのアラートの取得**
+- **MSSP 顧客のテナントから SIEM システムにアラートをフェッチする**
 
-  このアクションは MSSP によって実行されます。 これにより、MSSP は SIEM ツールでアラートをフェッチできます。
+  このアクションは、MSSP によって実行されます。 これにより、MSSP は SIEM ツールでアラートをフェッチできます。
 
-- **API を使用して MSSP 顧客のテナントからアラートを取得する**
+- **API を使用して MSSP 顧客のテナントからアラートをフェッチする**
 
-  このアクションは MSSP によって実行されます。 これにより、MSSP は API を使用してアラートをフェッチできます。
+  このアクションは、MSSP によって実行されます。 これにより、MSSP は API を使用してアラートをフェッチできます。
 
 ## <a name="multi-tenant-access-for-mssps"></a>MSSP のマルチテナント アクセス
 
-マルチテナント委任アクセスを実装する方法については [、「Managed Security Service Providers](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/multi-tenant-access-for-managed-security-service-providers/ba-p/1533440)のマルチテナント アクセス」を参照してください。
+マルチテナント委任アクセスを実装する方法については、「 [Managed Security Service Providers のマルチテナント アクセス](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/multi-tenant-access-for-managed-security-service-providers/ba-p/1533440)」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 

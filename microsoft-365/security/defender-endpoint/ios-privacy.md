@@ -1,8 +1,8 @@
 ---
-title: プライバシー情報 - Microsoft Defender for Endpoint on iOS
+title: プライバシー情報 - iOS でのMicrosoft Defender for Endpoint
 ms.reviewer: ''
-description: iOS 上の Microsoft Defender for Endpoint のプライバシー情報について説明します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, ios, policy, overview
+description: iOS でのMicrosoft Defender for Endpointのプライバシー情報について説明します
+keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, policy, overview
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2021
 ms.locfileid: "61217388"
 ---
-# <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>プライバシー情報 - Microsoft Defender for Endpoint on iOS
+# <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>プライバシー情報 - iOS でのMicrosoft Defender for Endpoint
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -33,19 +33,19 @@ ms.locfileid: "61217388"
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
-> iOS のエンドポイントの Defender は、VPN を使用して Web 保護機能を提供します。 これは通常の VPN ではなく、デバイスの外部でトラフィックを受け取らないローカルまたは自己ループ VPN です。 **Microsoft または組織では、閲覧アクティビティが表示されない。**
+> iOS 上の Defender for Endpoint では、VPN を使用して Web 保護機能を提供します。 これは通常の VPN ではなく、デバイスの外部でトラフィックを受け取らないローカルまたは自己ループ VPN です。 **Microsoft または組織では、閲覧アクティビティは表示されません。**
 
-iOS のエンドポイント用 Defender は、構成済みの iOS デバイスから情報を収集し、Defender for Endpoint を持つ同じテナントに格納します。 この情報は、IOS の Defender for Endpoint をセキュリティで保護し、最新の状態に保ち、期待通り実行し、サービスをサポートするために収集されます。
+iOS 上の Defender for Endpoint は、構成された iOS デバイスから情報を収集し、Defender for Endpoint があるのと同じテナントに格納します。 この情報は、iOS 上の Defender for Endpoint をセキュリティで保護し、最新の状態に保ち、期待どおりに実行し、サービスをサポートするために収集されます。
 
-データ ストレージの詳細については [、「Microsoft Defender for Endpoint data storage and privacy」を参照してください](data-storage-privacy.md)。
+データ ストレージの詳細については、「データ ストレージ[とプライバシー Microsoft Defender for Endpoint](data-storage-privacy.md)」を参照してください。
 
-Android および iOS モバイル デバイスの Microsoft Defender for Endpoint に関する最も一般的なプライバシーに関する質問の詳細については [、「Microsoft Defender for Endpoint and your](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)privacy on Android and iOS mobile devices」を参照してください。
+Android および iOS モバイル デバイスのMicrosoft Defender for Endpointに関する最も一般的なプライバシーに関する質問の詳細については、[Android および iOS モバイル デバイスでのMicrosoft Defender for Endpointとプライバシーに関するページを](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)参照してください。
 
 ## <a name="required-data"></a>必須データ
 
-必要なデータは、iOS の Defender for Endpoint を期待通り動作させるのに必要なデータで構成されます。 このデータはサービスの運用に不可欠であり、エンド ユーザー、組織、デバイス、アプリに関連するデータを含めできます。
+必要なデータは、iOS 上の Defender for Endpoint を期待どおりに動作させるために必要なデータで構成されます。 このデータは、サービスの運用に不可欠であり、エンド ユーザー、組織、デバイス、アプリに関連するデータを含めることができます。
 
-収集するデータの種類の一覧を次に示します。
+収集されるデータの種類の一覧を次に示します。
 
 ### <a name="web-page-or-network-information"></a>Web ページまたはネットワーク情報
 
@@ -53,36 +53,36 @@ Android および iOS モバイル デバイスの Microsoft Defender for Endpoi
 
 ### <a name="device-and-account-information"></a>デバイスとアカウントの情報
 
-- 日付、時刻、iOS & CPU 情報、デバイス識別子などのデバイス情報 (デバイス識別子は次の 1 つ) です。
-  - Wi-Fi MAC アドレス
+- 日付&時刻、iOS バージョン、CPU 情報、デバイス識別子などのデバイス情報 。デバイス識別子は次のいずれかです。
+  - Wi-Fi アダプターの MAC アドレス
   - ランダムに生成されたグローバル一意識別子 (GUID)
-- テナント、デバイス、およびユーザー情報
-  - Azure Active Directory (AD) デバイス ID と Azure ユーザー ID - デバイスを一意に識別します。ユーザーは、それぞれ Azure Active directory にあります。
-  - Azure テナント ID - 組織内の組織を識別する GUID Azure Active Directory。
-  - Microsoft Defender for Endpoint org ID - デバイスが属する企業に関連付けられた一意の識別子。 Microsoft は、企業の選択セットと影響を受ける企業の数に影響を与える問題が発生した場合の識別を許可します。
+- テナント、デバイス、ユーザーの情報
+  - Azure Active Directory (AD) デバイス ID と Azure ユーザー ID - Azure Active directory でデバイスをそれぞれ一意に識別します。
+  - Azure テナント ID - Azure Active Directory内の組織を識別する GUID。
+  - Microsoft Defender for Endpoint組織 ID - デバイスが属するエンタープライズに関連付けられている一意の識別子。 Microsoft は、選択した一連の企業と影響を受ける企業の数に影響を与える問題があるかどうかを特定できます。
   - ユーザー プリンシパル名 - ユーザーの電子メール ID。
 
 ### <a name="product-and-service-usage-data"></a>製品とサービスの使用状況データ
 
-次の情報は、デバイスにインストールされている Microsoft Defender for Endpoint アプリの場合にのみ収集されます。
+次の情報は、デバイスにインストールされているMicrosoft Defender for Endpoint アプリに対してのみ収集されます。
 
-- 名前、バージョン、アプリアップグレードの状態を含むアプリ パッケージ情報。
+- 名前、バージョン、アプリのアップグレード状態など、アプリ パッケージ情報。
 - アプリで実行されるアクション。
 - iOS によって生成されたクラッシュ レポート ログ。
 - メモリ使用量データ。
 
-## <a name="optional-data"></a>オプションのデータ
+## <a name="optional-data"></a>省略可能なデータ
 
-オプションのデータには、クライアントからの診断データとフィードバック データが含まれます。 オプションの診断データは、製品の改良に役立ち、問題の検出、診断、修正に役立つ高度な情報を提供する追加データです。 このデータは診断のみを目的としますが、サービス自体には必要ありません。
+オプション データには、クライアントからの診断データとフィードバック データが含まれます。 オプションの診断データは、製品の改良に役立ち、問題の検出、診断、修正に役立つ高度な情報を提供する追加データです。 このデータは診断のみを目的としており、サービス自体には必要ありません。
 
-オプションの診断データには、次の情報が含まれます。
+オプションの診断データには、次のものが含まれます。
 
-- Defender for Endpoint のアプリ、CPU、およびネットワーク使用率。
-- Defender for Endpoint 用に管理者が構成した機能。
+- Defender for Endpoint のアプリ、CPU、ネットワークの使用状況。
+- Defender for Endpoint の管理者によって構成された機能。
 
 フィードバック データは、ユーザーが提供するアプリ内フィードバックを通じて収集されます。
 
-- ユーザーの電子メール アドレスを指定する場合。
-- フィードバックの種類 (微笑み、顔をしかめ、アイデア) と、ユーザーが送信したフィードバックコメント。
+- ユーザーの電子メール アドレス (ユーザーが指定を選択した場合)。
+- フィードバックの種類 (笑顔、しかめ、アイデア)、およびユーザーが送信したフィードバック コメント。
 
-詳細については、「プライバシーの詳細 [」を参照してください](https://aka.ms/mdatpiosprivacystatement)。
+詳細については、「 [プライバシーの詳細」を](https://aka.ms/mdatpiosprivacystatement)参照してください。

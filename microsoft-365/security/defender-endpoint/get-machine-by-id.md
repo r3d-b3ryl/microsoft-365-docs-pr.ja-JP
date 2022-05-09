@@ -1,7 +1,7 @@
 ---
 title: ID API でコンピューターを取得する
-description: Id によるコンピューターの取得 API を使用して、Microsoft Defender for Endpoint のデバイス ID またはコンピューター名でコンピューターを取得する方法について説明します。
-keywords: apis、graph api、サポートされている API、get、デバイス、エンティティ、ID
+description: ID でコンピューターを取得 API を使用して、Microsoft Defender for Endpointのデバイス ID またはコンピューター名でコンピューターを取得する方法について説明します。
+keywords: apis, graph api, サポートされている API, get, devices, entity, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -38,29 +38,29 @@ ms.locfileid: "61283235"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API の説明
-デバイス ID または [コンピューター名によって](machine.md) 特定のコンピューターを取得します。
+デバイス ID またはコンピューター名で特定の [コンピューター](machine.md) を取得します。
 
 ## <a name="limitations"></a>制限事項
 
-1. 構成済みのアイテム保持ポリシーに従ってデバイスを最後に表示できます。
+1. 構成されたアイテム保持ポリシーに従って、最後に表示されたデバイスを取得できます。
 2. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
-アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント) | Machine.Read | 'コンピューター情報の読み取り'
-委任 (職場または学校のアカウント) | Machine.ReadWrite | 'コンピューター情報の読み取りおよび書き込み'
+アプリケーション|Machine.Read.All|'すべてのマシン プロファイルを読み取る'
+アプリケーション|Machine.ReadWrite.All|'すべてのマシン情報の読み取りと書き込み'
+委任 (職場または学校のアカウント) | Machine.Read | 'マシン情報の読み取り'
+委任 (職場または学校のアカウント) | Machine.ReadWrite | 'マシン情報の読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
+> - ユーザーは、デバイス グループの設定に基づいてデバイスにアクセスできる必要があります (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -80,8 +80,8 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功し、デバイスが存在する場合 - 本体の[](machine.md)コンピューター エンティティで 200 OK。
-指定した ID を持つコンピューターが見つからない場合 - 404 Not Found。
+成功し、デバイスが存在する場合は、本体の [マシン](machine.md) エンティティで 200 OK です。
+指定した ID を持つマシンが見つからなかった場合は 、404 が見つかりません。
 
 ## <a name="example"></a>例
 

@@ -1,7 +1,7 @@
 ---
 title: タグ API でデバイスを検索する
 description: specifc タグを含むすべてのデバイスを検索する
-keywords: apis, サポートされている api, get, device, find, find device, by tag, tag
+keywords: apis, サポートされている API, get, device, find, find device, by tag, tag
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -39,7 +39,7 @@ ms.locfileid: "61302196"
 
 ## <a name="api-description"></a>API の説明
 
-タグ[でコンピューターを](machine.md)[検索します](machine-tags.md)。
+タグで [コンピューターを](machine.md) 検索 [します](machine-tags.md)。
 
 `startswith` クエリがサポートされています。
 
@@ -49,21 +49,21 @@ ms.locfileid: "61302196"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
-アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント)|Machine.Read|'コンピューター情報の読み取り'
-委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+アプリケーション|Machine.Read.All|'すべてのマシン プロファイルを読み取る'
+アプリケーション|Machine.ReadWrite.All|'すべてのマシン情報の読み取りと書き込み'
+委任 (職場または学校のアカウント)|Machine.Read|'マシン情報の読み取り'
+委任 (職場または学校のアカウント)|Machine.ReadWrite|'マシン情報の読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - 応答には、ユーザーがデバイス グループ設定に基づいてアクセスできるデバイスだけが含まれます (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - 応答には、ユーザーがデバイス グループ設定に基づいてアクセスできるデバイスだけが含まれます (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+> - 応答には、デバイス グループの設定に基づいてユーザーがアクセスできるデバイスのみが含まれます (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
+> - 応答には、デバイス グループの設定に基づいてユーザーがアクセスできるデバイスのみが含まれます (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -73,16 +73,16 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-uri-parameters"></a>要求 URI パラメーター
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 tag|String|タグ名。 **必須**。
-useStartsWithFilter|Boolean|true に設定すると、クエリ内の指定されたタグで始まるタグ名を持つすべてのデバイスが検索されます。 既定は false です。 **オプション**。
+useStartsWithFilter|ブール値|true に設定すると、クエリ内の特定のタグで始まるタグ名を持つすべてのデバイスが検索されます。 既定は false です。 **オプション**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -90,7 +90,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合 - 応答本文のコンピューターの一覧で 200 OK。
+成功した場合 - 応答本文のマシンの一覧で 200 OK。
 
 ## <a name="example"></a>例
 

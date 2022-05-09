@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371402"
 ---
-# <a name="contact-support-for-cyprus"></a>キプロスのサポートに問い合わせ
+# <a name="contact-support-for-cyprus"></a>キプロスのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

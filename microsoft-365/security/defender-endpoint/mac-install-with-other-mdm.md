@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint on Mac 用の別のモバイル デバイス管理 (MDM) システムを使用した展開
-description: Microsoft Defender for Endpoint on Mac を他の管理ソリューションにインストールします。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, macos, catalina, mojave, high sierra
+title: Mac でのMicrosoft Defender for Endpoint用の別のモバイル デバイス管理 (MDM) システムを使用した展開
+description: 他の管理ソリューションに mac にMicrosoft Defender for Endpointをインストールします。
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, インストール, 配置, macos, catalina, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/12/2022
 ms.locfileid: "62767239"
 ---
-# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender 用の異なるモバイル デバイス管理 (MDM) システムを使用した展開
+# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOS でのMicrosoft Defender for Endpoint用の別のモバイル デバイス管理 (MDM) システムを使用した展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,64 +36,64 @@ ms.locfileid: "62767239"
  
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
-開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、 [メインの Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。
+作業を開始する前に、[macOS のメイン Microsoft Defender for Endpointページで](microsoft-defender-endpoint-mac.md)、現在のソフトウェア バージョンの前提条件とシステム要件の説明を参照してください。
 
 
 ## <a name="approach"></a>方法
 
 > [!CAUTION]
 
-> 現在、Microsoft は正式に Intune と JAMF のみをサポートし、macOS 上の Microsoft Defender for Endpoint の展開と管理を行います。 Microsoft は、以下に示す情報に関して、明示または黙示を問わず一切の保証を行いません。
+> 現在、Microsoft では、macOS でのMicrosoft Defender for Endpointの展開と管理に関して、Intuneと JAMF のみが正式にサポートされています。 Microsoft は、以下に示す情報に関して、明示または黙示を問わず、一切の保証を行いません。
 
-組織が正式にサポートされていないモバイル デバイス管理 (MDM) ソリューションを使用している場合、これは macOS で Microsoft Defender for Endpoint を展開または実行できないという意味ではありません。
+組織で公式にサポートされていないモバイル デバイス管理 (MDM) ソリューションを使用している場合、macOS でMicrosoft Defender for Endpointを展開または実行できないという意味ではありません。
 
-Microsoft Defender for Endpoint on macOS は、ベンダー固有の機能に依存しない。 これは、次の機能をサポートする MDM ソリューションと一緒に使用できます。
+macOS でのMicrosoft Defender for Endpointは、ベンダー固有の機能には依存しません。 次の機能をサポートする任意の MDM ソリューションで使用できます。
 
-- 管理対象デバイスに macOS .pkg を展開します。
-- 管理対象デバイスに macOS システム構成プロファイルを展開します。
-- 管理デバイスで任意の管理者が構成したツール/スクリプトを実行します。
+- macOS .pkg をマネージド デバイスにデプロイします。
+- macOS システム構成プロファイルをマネージド デバイスに展開します。
+- 管理対象デバイスで任意の管理者が構成したツール/スクリプトを実行します。
 
-最新の MDM ソリューションの多くは、これらの機能が含まれますが、呼び出し方が異なる場合があります。
+最新の MDM ソリューションには、これらの機能が含まれていますが、呼び出し方法が異なる場合があります。
 
-ただし、前のリストから最後の要件を満たさずに Defender for Endpoint を展開できます。
+ただし、前の一覧から最後の要件を満たさずに Defender for Endpoint をデプロイできます。
 
-- 一元的な方法で状態を収集できない。
+- 一元的な方法で状態を収集することはできません。
 - Defender for Endpoint をアンインストールする場合は、管理者としてクライアント デバイスにローカルでログオンする必要があります。
 
 ## <a name="deployment"></a>展開
 
-ほとんどの MDM ソリューションでは、同様の用語を使用して macOS デバイスを管理するために同じモデルを使用します。 [JAMF ベースの展開をテンプレート](mac-install-with-jamf.md)として使用します。
+ほとんどの MDM ソリューションでは、macOS デバイスの管理に同じモデルが使用され、同様の用語が使用されます。 [テンプレートとして JAMF ベースのデプロイ](mac-install-with-jamf.md)を使用します。
 
 ### <a name="package"></a>パッケージ
 
-インストール パッケージ (wdav.pkg) をポータルからダウンロードして、必要なアプリケーション [パッケージの展開Microsoft 365 Defenderします](mac-install-with-jamf.md)。[](mac-install-with-jamf.md)
+ポータルからダウンロードしたインストール パッケージ (wdav.pkg) を使用して、[必要なアプリケーション](mac-install-with-jamf.md) パッケージ[のデプロイMicrosoft 365 Defender構成します](mac-install-with-jamf.md)。
 
-パッケージを企業に展開するには、MDM ソリューションに関連付けられている手順を使用します。
+パッケージをエンタープライズにデプロイするには、MDM ソリューションに関連付けられている手順を使用します。
 
 ### <a name="license-settings"></a>ライセンス設定
 
-システム構成 [プロファイルを設定します](mac-install-with-jamf.md)。 
+[システム構成プロファイルを設定します](mac-install-with-jamf.md)。 
 
-macOS 上の Microsoft Defender for Endpoint は macOS の一部では設定、MDM ソリューションは"Custom 設定 プロファイル" と呼ぶ場合があります。
+macOS のMicrosoft Defender for Endpointは macOS の一部ではないため、MDM ソリューションでは "カスタム 設定 プロファイル" と呼ばれることがあります。
 
-プロパティ リスト jamf/WindowsDefenderATPOnboarding.plist を使用します。これは、Microsoft 365 Defender ポータルからダウンロードされたオンボーディング [パッケージから抽出できます](mac-install-with-jamf.md)。
-システムが XML 形式の任意のプロパティ リストをサポートしている場合があります。 その場合は、jamf/WindowsDefenderATPOnboarding.plist ファイルを as-is でアップロードできます。
-または、最初にプロパティ リストを別の形式に変換する必要があります。
+ポータルからダウンロードしたオンボード パッケージから抽出できるプロパティ リスト jamf/WindowsDefenderATPOnboarding.plist [Microsoft 365 Defender](mac-install-with-jamf.md)使用します。
+システムでは、XML 形式の任意のプロパティ リストがサポートされている場合があります。 その場合は、jamf/WindowsDefenderATPOnboarding.plist ファイルをそのままアップロードできます。
+または、最初にプロパティ リストを別の形式に変換することが必要になる場合があります。
 
-通常、カスタム プロファイルには ID、名前、またはドメイン属性があります。 この値には、正確に "com.microsoft.wdav.atp" を使用する必要があります。
-MDM はこれを使用して、設定ファイルをクライアント デバイスの **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** に展開し、Defender for Endpoint はオンボーディング情報の読み込みにこのファイルを使用します。
+通常、カスタム プロファイルには ID、名前、またはドメイン属性があります。 この値には正確に "com.microsoft.wdav.atp" を使用する必要があります。
+MDM は設定ファイルを使用して、クライアント デバイス上の **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** に展開し、Defender for Endpoint ではこのファイルを使用してオンボード情報を読み込みます。
 
-### <a name="kernel-extension-policy"></a>カーネル拡張機能ポリシー
+### <a name="kernel-extension-policy"></a>カーネル拡張ポリシー
 
-KEXT またはカーネル拡張ポリシーを設定します。 Microsoft が提供するカーネル拡張機能を許可するには、チーム識別子 **UBF8T346G9** を使用します。
+KEXT またはカーネル拡張ポリシーを設定します。 チーム識別子 **UBF8T346G9** を使用して、Microsoft によって提供されるカーネル拡張機能を許可します。
 
 > [!CAUTION]
-> 環境が Apple Silicon (M1) デバイスで構成されている場合、これらのコンピューターは KEXT ポリシーを使用して構成プロファイルを受け取る必要があります。
-> Apple は、これらのコンピューターで KEXT をサポートしていない、このようなプロファイルの展開は M1 コンピューターで失敗します。
+> 環境が Apple シリコン (M1) デバイスで構成されている場合、これらのマシンは KEXT ポリシーを使用して構成プロファイルを受信しないでください。
+> Apple はこれらのマシンで KEXT をサポートしていません。このようなプロファイルのデプロイは M1 マシンでは失敗します。
 
 ### <a name="system-extension-policy"></a>システム拡張ポリシー
 
-システム拡張ポリシーを設定します。 チーム識別子 **UBF8T346G9 を使用** し、次のバンドル識別子を承認します。
+システム拡張ポリシーを設定します。 チーム識別子 **UBF8T346G9** を使用し、次のバンドル識別子を承認します。
 
 - com.microsoft.wdav.epsext
 - com.microsoft.wdav.netext
@@ -103,25 +103,25 @@ KEXT またはカーネル拡張ポリシーを設定します。 Microsoft が�
 次のコンポーネントにフル ディスク アクセスを付与します。
 
 - Microsoft Defender for Endpoint
-    - 識別子: `com.microsoft.wdav`
+    - 識別子： `com.microsoft.wdav`
     - 識別子の種類: バンドル ID
     - コード要件: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 
-- Microsoft Defender for Endpoint Security Extension
-    - 識別子: `com.microsoft.wdav.epsext`
+- Microsoft Defender for Endpoint セキュリティ拡張機能
+    - 識別子： `com.microsoft.wdav.epsext`
     - 識別子の種類: バンドル ID
     - コード要件: `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 
 ### <a name="network-extension-policy"></a>ネットワーク拡張ポリシー
 
-エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft 365 Defenderします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイントの検出と応答機能の一環として、macOS のMicrosoft Defender for Endpointはソケット トラフィックを検査し、この情報をMicrosoft 365 Defender ポータルに報告します。 次のポリシーを使用すると、ネットワーク拡張機能でこの機能を実行できます。
 
 - フィルターの種類: プラグイン
 - プラグイン バンドル識別子: `com.microsoft.wdav`
-- フィルター データ プロバイダーのバンドル識別子: `com.microsoft.wdav.netext`
-- フィルター データ プロバイダーの指定要件: `identifier "com.microsoft.wdav.tunnelext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+- フィルター データ プロバイダーバンドル識別子: `com.microsoft.wdav.netext`
+- フィルター データ プロバイダー指定の要件: `identifier "com.microsoft.wdav.tunnelext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 - フィルター ソケット: `true`
 
 ## <a name="check-installation-status"></a>インストールの状態を確認する
 
-クライアント [デバイスで Microsoft Defender for Endpoint](mac-install-with-jamf.md) を実行し、オンボーディングの状態を確認します。
+クライアント デバイス[でMicrosoft Defender for Endpoint](mac-install-with-jamf.md)を実行して、オンボード状態を確認します。

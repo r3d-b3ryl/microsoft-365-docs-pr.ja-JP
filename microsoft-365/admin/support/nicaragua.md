@@ -1,5 +1,5 @@
 ---
-title: ニカラグアのサポート情報
+title: Nicaragua のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,14 +19,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371630"
 ---
-# <a name="contact-support-for-nicaragua"></a>ニカラグアのサポートに問い合わせ
+# <a name="contact-support-for-nicaragua"></a>Nicaragua のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 1800 0164
 
-ダイヤル後に、次のコマンドを入力します。
+ダイヤル後、次のように入力します。
 
 877 635 7036
 

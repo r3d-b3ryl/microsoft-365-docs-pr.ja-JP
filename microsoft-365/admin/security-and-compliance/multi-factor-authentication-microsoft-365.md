@@ -1,5 +1,5 @@
 ---
-title: ユーザーの多要素認証Microsoft 365
+title: Microsoft 365の多要素認証
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -24,7 +24,7 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: 多要素認証 (MFA) は、強力なパスワードと追加の検証方法の両方を使用します。
+description: 多要素認証 (MFA) では、強力である必要があるパスワードと追加の検証方法の両方が使用されます。
 ms.openlocfilehash: 460de9426dfb249da17d5df79becaca725ee36ed
 ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
@@ -32,11 +32,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/13/2021
 ms.locfileid: "61422401"
 ---
-# <a name="multifactor-authentication-for-microsoft-365"></a>ユーザーの多要素認証Microsoft 365
+# <a name="multifactor-authentication-for-microsoft-365"></a>Microsoft 365の多要素認証
 
 パスワードは、コンピューターまたはオンライン サービスへのサインインを認証する最も一般的な方法ですが、最も脆弱な方法でもあります。 ユーザーは、簡単なパスワードを選択して、異なるコンピューターやサービスに対して同じパスワードを使用できます。
 
-サインインに追加のレベルのセキュリティを提供するには、パスワードの両方を使用する多要素認証 (MFA) を使用する必要があります。これは強力である必要があります。また、次に基づく追加の検証方法を使用します。
+サインインのセキュリティをさらに強化するには、多要素認証 (MFA) を使用する必要があります。これは、強力である必要があるパスワードと、次に基づく追加の検証方法の両方を使用します。
 
 - 容易に複製できないユーザーの所有物 (スマート フォンなど)。
 - ユーザーに固有の生物学的特徴 (指紋、顔、または他の生体認証属性など)。
@@ -51,7 +51,7 @@ ms.locfileid: "61422401"
 - 電話呼び出し。
 - Microsoft Authenticator スマート フォン アプリ。
 
-どちらの場合も、MFA サインインでは、追加の検証に "重複しがちではない" メソッドを使用しています。 Microsoft 365 および Office 365 の MFA は、次の複数の方法で有効にできます。
+どちらの場合も、MFA サインインでは、追加の検証に "簡単に重複していないものを持っているもの" メソッドを使用します。 Microsoft 365 および Office 365 の MFA は、次の複数の方法で有効にできます。
 
 - セキュリティの既定値を使用する
 - 条件付きアクセス ポリシーを使用する
@@ -79,7 +79,7 @@ ms.locfileid: "61422401"
 
 Azure ポータル内の Azure AD の **プロパティ** ウィンドウで、セキュリティの既定値を有効または無効にします。
 
-![[ディレクトリのプロパティ] ページの図。](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
+![[ディレクトリのプロパティ] ページの画像。](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
 すべての Microsoft 365 プランで、セキュリティの既定値を使用できます。
 
@@ -138,13 +138,13 @@ Azure AD Identity Protection とリスク ベースの条件付きアクセス �
 
 詳細については、こちらの [Azure AD Identity Protection の概要](/azure/active-directory/identity-protection/overview-identity-protection)をご覧ください。
 
-### <a name="legacy-per-user-mfa-not-recommended"></a>従来のユーザーごとの MFA (推奨されません)
+### <a name="legacy-per-user-mfa-not-recommended"></a>レガシユーザーごとの MFA (推奨されません)
 
 ユーザー アカウントのサインインに MFA を要求するには、セキュリティの既定値または条件付きアクセス ポリシーを使用する必要があります。これらのいずれも使用できない場合は、あらゆるサイズのサブスクリプションについて、管理者ロール、特にグローバル管理者ロールを持つユーザー アカウントに対する MFA を強く推奨します。
 
-ユーザー アカウントごとに MFA を有効にするには、ユーザー アカウント <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**の [**</a>アクティブなユーザー] ウィンドウMicrosoft 365 管理センター。
+Microsoft 365 管理センターの <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**[アクティブ ユーザー**</a>] ウィンドウから、個々のユーザー アカウントに対して MFA を有効にします。
 
-![[アクティブ ユーザー] ページの [多要素認証の画像] オプション。](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![[アクティブユーザー] ページの [多要素認証] オプションの画像。](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 有効にすると、ユーザーが次回サインインしたときに、MFA に登録し、追加の確認方法を選択してテストするように求められます。
 
@@ -152,11 +152,11 @@ Azure AD Identity Protection とリスク ベースの条件付きアクセス �
 
 この表は、セキュリティの既定値、条件付きアクセス ポリシー、およびユーザーごとのアカウント設定で MFA を有効にした結果を示しています。
 
-|*Item*|Enabled|無効|第 2 の認証方法|
+|*アイテム*|Enabled|無効|第 2 の認証方法|
 |---|---|---|---|
 |**セキュリティの既定値**|条件付きアクセス ポリシーを使用できない|条件付きアクセス ポリシーを使用できる|Microsoft Authenticator アプリ|
-|**条件付きアクセス ポリシー**|有効になっている場合は、セキュリティの既定値を有効にできません|すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます|MFA 登録中にユーザーが指定|
-|**従来のユーザーごとの MFA (推奨されません)**|毎回のサインインで MFA を要求して、セキュリティの既定値と条件付きアクセス ポリシーを上書きします|セキュリティの既定値と条件付きアクセス ポリシーによって上書きされます|MFA 登録中にユーザーが指定|
+|**条件付きアクセス ポリシー**|有効になっている場合は、セキュリティの既定値を有効にすることはできません|すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます|MFA 登録中にユーザーが指定|
+|**レガシユーザーごとの MFA (推奨されません)**|毎回のサインインで MFA を要求して、セキュリティの既定値と条件付きアクセス ポリシーを上書きします|セキュリティの既定値と条件付きアクセス ポリシーによって上書きされます|MFA 登録中にユーザーが指定|
 ||||
 
 セキュリティの既定値が有効になっている場合、すべての新しいユーザーは、次回のサインイン時に MFA 登録と Microsoft Authenticator アプリの使用を求められます。
@@ -170,7 +170,7 @@ Azure ポータルでは、次のことができます。
 - セキュリティの既定値を有効または無効にする
 - 条件付きアクセス ポリシーを構成する
 
-[ユーザー Microsoft 365 管理センター、ユーザーごとの MFA 設定とサービス MFA 設定<a href="https://go.microsoft.com/fwlink/p/?linkid=2169174" target="_blank">を構成できます</a>。
+Microsoft 365 管理センターでは、ユーザーごとおよびサービスごとの <a href="https://go.microsoft.com/fwlink/p/?linkid=2169174" target="_blank">MFA 設定</a>を構成できます。
 
 ## <a name="next-steps"></a>次の手順
 

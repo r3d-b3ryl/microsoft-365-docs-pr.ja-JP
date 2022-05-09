@@ -1,6 +1,6 @@
 ---
-title: エンドポイント API エラーの一般的な Microsoft Defender
-description: 説明付きエンドポイント API エラーの一般的な Microsoft Defender の一覧。
+title: 一般的なMicrosoft Defender for Endpoint API エラー
+description: 説明を含む一般的なMicrosoft Defender for Endpoint API エラーの一覧。
 keywords: API、Microsoft Defender for Endpoint API、エラー、トラブルシューティング
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -31,7 +31,7 @@ ms.locfileid: "61284603"
 
 * 次の表に示すエラー コードは、Microsoft Defender for Endpoint API の操作によって返される場合があります。
 * エラー コードに加えて、すべてのエラー応答にエラー メッセージが含まれているので、問題の解決に役立ちます。
-* メッセージは、変更できるフリー テキストです。
+* メッセージは自由に変更できるテキストです。
 * ページの下部には、応答の例があります。
 
 **適用対象:**
@@ -43,42 +43,42 @@ ms.locfileid: "61284603"
 
 エラー コード|HTTP ステータス コード|メッセージ
 ---|---|---
-BadRequest|BadRequest (400)|一般的な不良要求エラー メッセージ。
-ODataError|BadRequest (400)|無効な OData URI クエリ (特定のエラーが指定されています)。
-InvalidInput|BadRequest (400)|無効な入力 {無効な入力}
+BadRequest|BadRequest (400)|一般的な不適切な要求エラー メッセージ。
+ODataError|BadRequest (400)|OData URI クエリが無効です (特定のエラーが指定されています)。
+InvalidInput|BadRequest (400)|無効な入力 {無効な入力}。
 InvalidRequestBody|BadRequest (400)|要求本文が無効です。
 InvalidHashValue|BadRequest (400)|ハッシュ値 {無効なハッシュ} が無効です。
 InvalidDomainName|BadRequest (400)|ドメイン名 {無効なドメイン} が無効です。
 InvalidIpAddress|BadRequest (400)|IP アドレス {無効な IP} が無効です。
 InvalidUrl|BadRequest (400)|URL {無効な URL} が無効です。
-MaximumBatchSizeExceeded|BadRequest (400)|最大バッチ サイズを超えました。 Received: {batch size received}, allowed: {batch size allowed}.
-MissingRequiredParameter|BadRequest (400)|パラメーター {不足しているパラメーター} がありません。
-OsPlatformNotSupported|BadRequest (400)|OS プラットフォーム {クライアント OS プラットフォーム} は、このアクションではサポートされていません。
-ClientVersionNotSupported|BadRequest (400)|{要求されたアクション} は、クライアント バージョン {サポートされているクライアント バージョン} 以上でサポートされています。
+MaximumBatchSizeExceeded|BadRequest (400)|最大バッチ サイズを超えました。 受信済み: {batch size received}, allowed: {batch size allowed}.
+MissingRequiredParameter|BadRequest (400)|パラメーター {不足しているパラメーター} が見つかりません。
+OsPlatformNotSupported|BadRequest (400)|このアクションでは、OS プラットフォーム {クライアント OS プラットフォーム} はサポートされていません。
+ClientVersionNotSupported|BadRequest (400)|{要求されたアクション} は、クライアント バージョン {サポートされているクライアント バージョン} 以降でサポートされています。
 権限がありません (Unauthorized)|承認されていない (401)|承認されていない (無効または期限切れの承認ヘッダー)。
-禁止されています|禁止 (403)|禁止 (有効なトークンですが、アクションに対するアクセス許可が不十分)。
+禁止されています|禁止 (403)|許可されていません (有効なトークンですが、アクションのアクセス許可が不十分です)。
 DisabledFeature|禁止 (403)|テナント機能が有効になっていません。
-DisallowedOperation|禁止 (403)|{禁止された操作と理由}。
-NotFound|見つかりません (404)|一般的なエラー メッセージが見つかりません。
+DisallowedOperation|禁止 (403)|{許可されていない操作と理由}。
+NotFound|見つかりません (404)|一般的な見つからないエラー メッセージ。
 ResourceNotFound|見つかりません (404)|リソース {要求されたリソース} が見つかりませんでした。
-InternalServerError|内部サーバー エラー (500)|(エラー メッセージなし、操作を再試行)
-TooManyRequests|要求が多すぎます (429)|応答は、要求数または CPU のいずれかによって、クォータ制限に達する値を表します。
+InternalServerError|内部サーバー エラー (500)|(エラー メッセージなし、操作を再試行してください)
+TooManyRequests|要求が多すぎます (429)|応答は、要求の数または CPU によってクォータ制限に達することを表します。
 
 ## <a name="body-parameters-are-case-sensitive"></a>本文パラメーターでは大文字と小文字が区別されます
 
-送信された本文パラメーターでは、現在大文字と小文字が区別されます。
+送信された本文パラメーターは現在、大文字と小文字が区別されます。
 
-**InvalidRequestBody** エラーまたは **MissingRequiredParameter** エラーが発生した場合、誤ったパラメーター大文字または小文字が原因である可能性があります。
+**InvalidRequestBody** または **MissingRequiredParameter エラーが発生した** 場合は、間違ったパラメーターの大文字または小文字が原因である可能性があります。
 
-[API ドキュメント] ページを確認し、送信されたパラメーターが関連する例と一致する点を確認します。
+API ドキュメント ページを確認し、送信されたパラメーターが関連する例と一致することを確認します。
 
-## <a name="correlation-request-id"></a>相関要求 ID
+## <a name="correlation-request-id"></a>関連付け要求 ID
 
-各エラー応答には、追跡用の一意の ID パラメーターが含まれる。
+各エラー応答には、追跡用の一意の ID パラメーターが含まれています。
 
 このパラメーターのプロパティ名は "target" です。
 
-エラーについてお問い合わせの際に、この ID を添付すると、問題の根本原因を見つけるのに役立ちます。
+エラーについて問い合わせる場合は、この ID を添付すると、問題の根本原因を見つけるのに役立ちます。
 
 ## <a name="examples"></a>例
 

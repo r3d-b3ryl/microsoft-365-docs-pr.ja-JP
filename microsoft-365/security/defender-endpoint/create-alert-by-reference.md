@@ -1,7 +1,7 @@
 ---
 title: イベント API からアラートを作成する
-description: Create alert API を使用して、Microsoft Defender for Endpoint のイベントの上に新しいアラートを作成する方法について説明します。
-keywords: apis, graph api, supported apis, get, alert, information, id
+description: アラートの作成 API を使用して、Microsoft Defender for Endpointのイベントの上に新しいアラートを作成する方法について説明します。
+keywords: apis, graph api, サポートされている API, get, alert, information, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d1d6f141f1453ce92d08045d20ff49753c99dfd7
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: cc28ea9082e7afbb6f623e325a48119de393f075
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284507"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61364250"
 ---
-# <a name="create-alert-api"></a>アラート API の作成
+# <a name="create-alert-api"></a>アラート API を作成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,13 +40,13 @@ ms.locfileid: "61284507"
 
 ## <a name="api-description"></a>API の説明
 
-イベントの上 [に新しいアラート](alerts.md) を **作成します**。
+イベントの上に新しい [アラート](alerts.md) を作成 **します**。
 
-- **Microsoft Defender for Endpoint Event は** 、アラートの作成に必要です。
-- 要求のイベントから 3 つのパラメーターを指定する必要があります。イベント **時間**、 **コンピューター ID、** および **レポート ID です**。 次の例を参照してください。
-- Advanced Hunting API または Portal で見つかったイベントを使用できます。
-- 同じタイトルを持つ同じデバイスに開いているアラートが既存の場合、新しく作成されたアラートは、そのデバイスとマージされます。
-- 自動調査は、API を介して作成されたアラートで自動的に開始されます。
+- **Microsoft Defender for Endpoint イベント** は、アラートの作成に必要です。
+- 要求で Event から 3 つのパラメーター ( **イベント時刻**、 **マシン ID**、 **レポート ID**) を指定する必要があります。 次の例を参照してください。
+- 高度なハンティング API またはポータルにあるイベントを使用できます。
+- 同じタイトルを持つ同じデバイスに既に開いているアラートがある場合は、新しく作成されたアラートがマージされます。
+- 自動調査は、API を使用して作成されたアラートに対して自動的に開始されます。
 
 ## <a name="limitations"></a>制限事項
 
@@ -54,7 +54,7 @@ ms.locfileid: "61284507"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
@@ -64,8 +64,8 @@ ms.locfileid: "61284507"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'アラートの調査' (詳細については、「役割の作成と [管理」を参照してください](user-roles.md) )
-> - ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスする必要があります (詳細については、「デバイス グループの作成と管理」 [を参照してください](machine-groups.md))
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"アラート調査" (詳細については、 [ロールの作成と管理](user-roles.md) を参照してください)
+> - ユーザーは、デバイス グループの設定に基づいて、アラートに関連付けられているデバイスにアクセスできる必要があります (詳細については、「[デバイス グループの作成と管理](machine-groups.md)」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -86,18 +86,18 @@ Content-Type | 文字列 | application/json. **必須**。
 
 プロパティ | 種類 | 説明
 :---|:---|:---
-eventTime | DateTime(UTC) | 高度な検索から取得したイベントの正確な時刻を文字列として指定します。 例えば、  ```2018-08-03T16:45:21.7115183Z``` **必須です**。
-reportId | String | 高度な狩猟から取得したイベントの reportId。 **必須**。
+eventTime | DateTime(UTC) | 高度なハンティングから取得した、文字列としてのイベントの正確な時刻。 たとえば、  ```2018-08-03T16:45:21.7115183Z``` **必須** です。
+reportId | String | 高度な捜索から取得したイベントの reportId。 **必須**。
 machineId | String | イベントが識別されたデバイスの ID。 **必須**。
-severity | String | アラートの重大度。 プロパティの値は、'Low'、'Medium'、および 'High' です。 **必須**。
+severity | String | アラートの重大度。 プロパティの値は、'Low'、'Medium'、'High' です。 **必須**。
 title | String | アラートのタイトル。 **必須**。
-description | String | アラートの説明。 **必須**。
+説明 | String | アラートの説明。 **必須**。
 recommendedAction| String | セキュリティ担当者は、アラートを分析するときにこのアクションを実行する必要があります。 **必須**。
-category| String | アラートのカテゴリ。 プロパティの値は、"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"エクスプロイト"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" が必要です。
+category| String | アラートのカテゴリ。 プロパティの値は次のとおりです。"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"Exfiltration"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" **が必要** です。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、応答本文に新しい [アラート](alerts.md) オブジェクトを返します。 指定したプロパティ _(reportId、eventTime、machineId)_ を持つイベントが見つからなかった場合は、404 Not Found です。  
+成功した場合、このメソッドは 200 OK を返し、応答本文に新しい [アラート](alerts.md) オブジェクトを返します。 指定したプロパティを持つイベント (_reportId_、 _eventTime_ 、 _machineId_) が見つからなかった場合は、404 Not Found です。
 
 ## <a name="example"></a>例
 

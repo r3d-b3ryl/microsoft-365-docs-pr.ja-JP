@@ -1,7 +1,7 @@
 ---
-title: バッチ更新アラート エンティティ API
-description: この API を使用して、Microsoft Defender for Endpoint アラートをバッチで更新する方法について説明します。 状態、決定、分類、および assignedTo プロパティを更新できます。
-keywords: apis, graph api, supported apis, get, alert, information, id
+title: Batch Update アラート エンティティ API
+description: この API を使用してMicrosoft Defender for Endpointアラートをバッチで更新する方法について説明します。 状態、決定、分類、および assignedTo プロパティを更新できます。
+keywords: apis, graph api, サポートされている API, get, alert, information, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -40,20 +40,20 @@ ms.locfileid: "61283643"
 
 ## <a name="api-description"></a>API の説明
 
-既存のアラートのバッチのプロパティを [更新します](alerts.md)。
+既存のアラートのバッチのプロパティを更新 [します](alerts.md)。
 
-コメントの **提出は** 、プロパティを更新する場合と更新しない場合に使用できます。
+**コメント** の送信は、プロパティの更新の有無にかかわらず使用できます。
 
-更新可能なプロパティは `status` `determination` 、、、、 `classification` です `assignedTo` 。
+更新可能なプロパティは、次 `classification` `determination``assignedTo`のとおりです。 `status`
 
 ## <a name="limitations"></a>制限事項
 
-1. API で使用可能なアラートを更新できます。 詳細については [、「アラートの一](get-alerts.md) 覧」を参照してください。
-2. この API のレート制限は、1 分あたり 10 回の呼び出しと 1 時間あたり 500 回の呼び出しです。
+1. API で使用可能なアラートを更新できます。 詳細については、「 [アラートの一覧表示](get-alerts.md) 」を参照してください。
+2. この API のレート制限は、1 分あたり 10 回、1 時間あたり 500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
@@ -63,8 +63,8 @@ ms.locfileid: "61283643"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'アラートの調査' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスできる必要[](machine-groups.md)があります (詳細については、「デバイス グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"アラート調査" (詳細については、 [ロールの作成と管理](user-roles.md) に関するページを参照してください)
+> - ユーザーは、デバイス グループの設定に基づいて、アラートに関連付けられているデバイスにアクセスできる必要があります (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -89,16 +89,16 @@ Content-Type | 文字列 | application/json. **必須**。
 
 プロパティ | 種類 | 説明
 :---|:---|:---
-alertIds | リスト &lt; 文字列&gt;| 更新するアラートの一覧。 **必須**
-status | String | 指定したアラートの更新された状態を指定します。 プロパティの値は、'New'、'InProgress'、および 'Resolved' です。
+alertIds | ListString&lt;&gt;| 更新するアラートの ID の一覧。 **必須**
+status | String | 指定したアラートの更新された状態を指定します。 プロパティの値は、"新規"、"InProgress"、"Resolved" です。
 assignedTo | String | 指定したアラートの所有者
-classification | String | 指定したアラートの仕様を指定します。 プロパティの値は、'Unknown'、'FalsePositive'、'TruePositive'です。 
+classification | String | 指定したアラートの仕様を指定します。 プロパティの値は、'Unknown'、'FalsePositive'、'TruePositive' です。 
 決定 | String | 指定したアラートの決定を指定します。 プロパティの値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
 comment | String | 指定したアラートに追加するコメント。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、空の応答本文を返します。
+成功した場合、このメソッドは空の応答本文で 200 OK を返します。
 
 ## <a name="example"></a>例
 

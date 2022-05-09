@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint API を介してマシンアクションを実行する
-description: このページでは、Microsoft Defender for Endpoint API を介してマシンアクションを実行する方法について説明します。
+title: Microsoft Defender for Endpoint API を使用してマシン アクションを実行する
+description: このページでは、Microsoft Defender for Endpoint API を使用してマシン アクションを実行することに重点を置いています。
 ms.date: 08/28/2017
 ms.reviewer: ''
 manager: dansimp
@@ -15,4 +15,4 @@ ms.lasthandoff: 09/15/2021
 ms.locfileid: "59357388"
 ---
 >[!Note]
-> このページでは、API を介してコンピューターアクションを実行する方法に重点を当てて説明します。 Microsoft Defender for Endpoint を [介した](/microsoft-365/security/defender-endpoint/respond-machine-alerts) 応答アクション機能の詳細については、「コンピューターでの応答アクションの実行」を参照してください。
+> このページでは、API を使用してマシン アクションを実行することに重点を置いています。 Microsoft Defender for Endpoint[を使用した応答アクション](/microsoft-365/security/defender-endpoint/respond-machine-alerts)機能の詳細については、コンピューターでの応答アクションの実行に関するページを参照してください。

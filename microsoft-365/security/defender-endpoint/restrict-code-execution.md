@@ -1,6 +1,6 @@
 ---
-title: アプリの実行 API の制限
-description: この API を使用して、アプリケーションの実行制限に関連する呼び出しを作成します。
+title: アプリ実行 API を制限する
+description: この API を使用して、アプリケーションの実行を制限することに関連する呼び出しを作成します。
 keywords: apis、graph api、サポートされている API、調査パッケージの収集
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61302340"
 ---
-# <a name="restrict-app-execution-api"></a>アプリの実行 API の制限
+# <a name="restrict-app-execution-api"></a>アプリ実行 API を制限する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "61302340"
 
 ## <a name="api-description"></a>API の説明
 
-定義済みのセットを除くデバイス上のすべてのアプリケーションの実行を制限します。
+定義済みのセットを除く、デバイス上のすべてのアプリケーションの実行を制限します。
 
 ## <a name="limitations"></a>制限事項
 
@@ -51,13 +51,13 @@ ms.locfileid: "61302340"
 
 > [!IMPORTANT]
 >
-> - このアクションは、Windows 10バージョン 1709 以降、および 11 のデバイスWindowsできます。
-> - この機能は、組織で使用している機能がMicrosoft Defender ウイルス対策。
-> - このアクションは、アプリケーションコントロールのコード整合性Windows Defenderの形式と署名要件を満たす必要があります。 詳細については、「コード整合性 [ポリシーの形式と署名」を参照してください](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
+> - このアクションは、Windows 10、バージョン 1709 以降、およびWindows 11のデバイスで使用できます。
+> - この機能は、組織でMicrosoft Defender ウイルス対策を使用している場合に使用できます。
+> - このアクションは、Windows Defenderアプリケーション制御コード整合性ポリシーの形式と署名の要件を満たす必要があります。 詳細については、「 [コード整合性ポリシーの形式と署名](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -67,8 +67,8 @@ ms.locfileid: "61302340"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Active 修復アクション' (詳細については、「役割の作成と管理 [」](user-roles.md) を参照してください)
-> - ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"アクティブ修復アクション" (詳細については、 [ロールの作成と管理](user-roles.md) に関するページを参照してください)
+> - ユーザーは、デバイス グループの設定に基づいてデバイスにアクセスできる必要があります (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -78,24 +78,24 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/restrictCodeExec
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、JSON オブジェクトに次のパラメーターを指定します。
+要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-パラメーター|型|説明
+パラメーター|種類|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。
+成功した場合、このメソッドは 201 - 作成された応答コードと応答本文の [Machine Action](machineaction.md) を返します。
 
-同じデバイスのアプリの実行を制限するために複数の API 呼び出しを送信すると、"保留中のコンピューター アクション" または HTTP 400 が返されます。"Action is already in progress" というメッセージが表示されます。
+同じデバイスに対してアプリの実行を制限するために複数の API 呼び出しを送信すると、"保留中のマシン アクション" または HTTP 400 が返され、"Action is already progress" というメッセージが表示されます。
 
 ## <a name="example"></a>例
 
@@ -113,4 +113,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 }
 ```
 
-- デバイスからコード実行制限を削除するには、「アプリの制限を [削除する」を参照してください](unrestrict-code-execution.md)。
+- デバイスからコード実行制限を削除するには、「 [アプリの制限を削除する](unrestrict-code-execution.md)」を参照してください。

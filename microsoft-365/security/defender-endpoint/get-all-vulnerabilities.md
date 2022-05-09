@@ -1,7 +1,7 @@
 ---
 title: すべての脆弱性を取得する
-description: 組織に影響を与えるすべての脆弱性の一覧を取得します。
-keywords: apis, graph api, supported api, get, vulnerability information, Microsoft Defender for Endpoint tvm api
+description: 組織に影響を与えるすべての脆弱性の一覧を取得します
+keywords: apis, graph api, サポートされている API, get, 脆弱性情報, Microsoft Defender for Endpoint tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -43,19 +43,19 @@ ms.locfileid: "61300467"
 すべての脆弱性の一覧を取得します。
 <br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 <br>OData でサポートされている演算子:
-<br>```$filter``` on:  ```id``` ```name``` 、 、 、 、 、 ```description``` ```cvssV3``` ```publishedOn``` 、 ```severity``` 、、および ```updatedOn``` プロパティ。
-<br>```$top``` 最大値は 10,000 です。
+<br>```$filter```on: ```id```, , ```name```, ```description```, ```publishedOn``````cvssV3```, ```severity```, and ```updatedOn``` properties.
+<br>```$top``` 最大値が 10,000 です。
 <br>```$skip```.
-<br>Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください](exposed-apis-odata-samples.md)。
+<br>[Microsoft Defender for Endpointを使用した OData クエリの](exposed-apis-odata-samples.md)例を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Vulnerability.Read.All|'脅威と脆弱性管理の脆弱性情報の読み取り'
-委任 (職場または学校のアカウント)|脆弱性。読み取り|'脅威と脆弱性管理の脆弱性情報の読み取り'
+委任 (職場または学校のアカウント)|Vulnerability.Read|'脅威と脆弱性管理の脆弱性情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -65,7 +65,7 @@ GET /api/vulnerabilities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -75,7 +75,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、本文の脆弱性の一覧を返します。
+成功した場合、このメソッドは本文の脆弱性の一覧で 200 OK を返します。
 
 ## <a name="example"></a>例
 
@@ -118,5 +118,5 @@ GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 
 ## <a name="see-also"></a>関連項目
 
-- [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [組織の脆弱性](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

@@ -1,7 +1,7 @@
 ---
-title: インポート インジケーター API
-description: Microsoft Defender for Endpoint でインジケーター API のインポート バッチを使用する方法について説明します。
-keywords: apis, サポートされている api, submit, ti, indicator, update
+title: インジケーター API のインポート
+description: Microsoft Defender for Endpointで Indicator API のインポート バッチを使用する方法について説明します。
+keywords: apis, サポートされている API, submit, ti, indicator, update
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,7 +21,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61283703"
 ---
-# <a name="import-indicators-api"></a>インポート インジケーター API
+# <a name="import-indicators-api"></a>インジケーター API のインポート
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,25 +38,25 @@ ms.locfileid: "61283703"
 
 ## <a name="api-description"></a>API の説明
 
-Indicator エンティティのバッチを [送信または](ti-indicator.md) 更新します。
+[インジケーター](ti-indicator.md) エンティティのバッチを送信または更新します。
 
-IPs の CIDR 表記はサポートされていません。
+IP の CIDR 表記はサポートされていません。
 
 ## <a name="limitations"></a>制限事項
 
 1. この API のレート制限は、1 分あたり 30 回の呼び出しです。
-2. テナントごとに 15,000 のアクティブ [なインジケーターの制限](ti-indicator.md) があります。
+2. テナントごとにアクティブなインジケーターは 15,000 個 [に制限されています](ti-indicator.md) 。
 3. 1 つの API 呼び出しの最大バッチ サイズは 500 です。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「開始する」 [を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+アプリケーション|Ti.ReadWrite|'インジケーターの読み取りと書き込み'
 アプリケーション|Ti.ReadWrite.All|'すべてのインジケーターの読み取りと書き込み'
-委任 (職場または学校のアカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+委任 (職場または学校のアカウント)|Ti.ReadWrite|'インジケーターの読み取りと書き込み'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -73,16 +73,16 @@ Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、JSON オブジェクトに次のパラメーターを指定します。
+要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
 パラメーター|種類|説明
 :---|:---|:---
-インジケーター|リスト<[インジケーター](ti-indicator.md)>|インジケーターの [一覧](ti-indicator.md)。 **必須**
+インジケーター|リスト<[インジケーター](ti-indicator.md)>|[インジケーター](ti-indicator.md)の一覧。 **必須**
 
 ## <a name="response"></a>応答
 
-- 成功した場合、このメソッドは、インジケーターごとのインポート結果の一覧を含む 200 - OK 応答コードを返します。以下の例を参照してください。
-- 成功しない場合: このメソッドは 400 - Bad Request を返します。 通常、不適切な要求は、不適切な本文を示します。
+- 成功した場合、このメソッドはインジケーターごとのインポート結果の一覧を含む 200 - OK 応答コードを返します。次の例を参照してください。
+- 成功しない場合:このメソッドは 400 - 無効な要求を返します。 通常、不適切な要求は本文が正しくないためです。
 
 ## <a name="example"></a>例
 

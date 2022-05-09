@@ -1,7 +1,7 @@
 ---
 title: コンピューターのセキュリティ状態コレクション API を取得する
-description: Microsoft Defender for Endpoint を使用してデバイスのセキュリティ状態のコレクションを取得します。
-keywords: apis, graph api, supported apis, get, device, security, state
+description: Microsoft Defender for Endpointを使用して、デバイスのセキュリティ状態のコレクションを取得します。
+keywords: apis, graph api, サポートされている API, get, device, security, state
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/24/2021
 ms.locfileid: "61166904"
 ---
-# <a name="get-machines-security-states-collection-api"></a>Get Machines セキュリティ状態コレクション API
+# <a name="get-machines-security-states-collection-api"></a>Get Machines security states collection API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -80,7 +80,7 @@ Content-type: application/json
 
 応答の例を下に示します。
 
-フィールド *ID には* デバイス ID が含まれるので、デバイス情報のフィールド *ID** と等しくなります。
+フィールド *ID* にはデバイス ID が含まれ、デバイス情報のフィールド *ID** と等しくなります。
 
 ```json
 HTTP/1.1 200 OK

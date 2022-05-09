@@ -19,14 +19,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61369578"
 ---
-# <a name="contact-support-for-india"></a>インドのサポートに問い合わせ
+# <a name="contact-support-for-india"></a>インドのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 000 800 440 2038
 
-地域のフリーダイヤル
+ローカルフリーダイヤル
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:

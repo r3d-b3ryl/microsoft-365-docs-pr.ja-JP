@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender for Endpoint on Linux のクラウド接続の問題のトラブルシューティング
+title: Linux でのMicrosoft Defender for Endpointに関するクラウド接続の問題のトラブルシューティング
 ms.reviewer: ''
-description: Microsoft Defender for Endpoint on Linux のクラウド接続の問題をトラブルシューティングする方法について説明します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, cloud, connectivity, communication
+description: Linux 上のMicrosoft Defender for Endpointのクラウド接続の問題をトラブルシューティングする方法について説明します
+keywords: microsoft, defender, Microsoft Defender for Endpoint, Linux, クラウド, 接続, 通信
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/24/2021
 ms.locfileid: "61167225"
 ---
-# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のクラウド接続の問題のトラブルシューティング
+# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux でのMicrosoft Defender for Endpointに関するクラウド接続の問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,15 +33,15 @@ ms.locfileid: "61167225"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-## <a name="run-the-connectivity-test"></a>接続テストの実行
+## <a name="run-the-connectivity-test"></a>接続テストを実行する
 
-Defender for Endpoint on Linux が現在のネットワーク設定とクラウドと通信できる場合にテストするには、コマンド ラインから接続テストを実行します。
+Linux 上の Defender for Endpoint が現在のネットワーク設定でクラウドと通信できるかどうかをテストするには、コマンド ラインから接続テストを実行します。
 
 ```bash
 mdatp connectivity test
 ```
 
-予期される出力:
+予想される出力:
 
 ```output
 Testing connection with https://cdn.x.cp.wd.microsoft.com/ping ... [OK]
@@ -60,19 +60,19 @@ Testing connection with https://uk-v20.events.data.microsoft.com/ping ... [OK]
 Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 ```
 
-接続テストに失敗した場合は、デバイスにインターネット アクセス権が設定[](microsoft-defender-endpoint-linux.md#network-connections)されているのか、製品で必要なエンドポイントがプロキシまたはファイアウォールによってブロックされているのか確認します。
+接続テストに失敗した場合は、デバイスがインターネットにアクセスできるかどうかを確認し、 [製品で必要なエンドポイントのいずれかが](microsoft-defender-endpoint-linux.md#network-connections) プロキシまたはファイアウォールによってブロックされているかどうかを確認します。
 
-カール エラー 35 または 60 のエラーは、証明書のピン留め拒否を示します。 接続が SSL または HTTPS 検査の下にあるか確認してください。 その場合は、許可リストに Microsoft Defender for Endpoint を追加します。
+curl エラー 35 または 60 のエラーは、証明書のピン留め拒否を示します。 接続が SSL または HTTPS 検査の下にあるかどうかを確認してください。 その場合は、許可リストにMicrosoft Defender for Endpointを追加します。
 
-## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy"></a>プロキシのない環境、または透過的なプロキシを使用した環境のトラブルシューティング手順
+## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy"></a>プロキシのない環境または透過的なプロキシを使用した環境のトラブルシューティング手順
 
-プロキシのない環境または透過プロキシを使用して接続がブロックされていないとテストするには、ターミナルで次のコマンドを実行します。
+プロキシのない環境や透過プロキシを使用して接続がブロックされないことをテストするには、ターミナルで次のコマンドを実行します。
 
 ```bash
 curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
-このコマンドの出力は、次の値に似ている必要があります。
+このコマンドの出力は次のようになります。
 
 ```Output
 OK https://x.cp.wd.microsoft.com/api/report
@@ -82,17 +82,17 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 ## <a name="troubleshooting-steps-for-environments-with-static-proxy"></a>静的プロキシを使用する環境のトラブルシューティング手順
 
 > [!WARNING]
-> PAC、WPAD、および認証されたプロキシはサポートされていません。 静的プロキシまたは透過プロキシのみを使用してください。
+> PAC、WPAD、および認証されたプロキシはサポートされていません。 静的プロキシまたは透過プロキシのみが使用されていることを確認します。
 >
-> SSL 検査および代行受信プロキシも、セキュリティ上の理由からサポートされていません。 SSL インスペクションとプロキシ サーバーの例外を構成して、Defender for Endpoint on Linux のデータを、インターセプトなしで関連する URL に直接渡します。 インターセプト証明書をグローバル ストアに追加すると、傍受は許可されない。
+> セキュリティ上の理由から、SSL 検査とインターセプト プロキシもサポートされていません。 SSL 検査とプロキシ サーバーの例外を構成して、Defender for Endpoint on Linux から関連する URL にデータをインターセプトせずに直接渡すようにします。 インターセプト証明書をグローバル ストアに追加すると、インターセプトは許可されません。
 
-静的プロキシが必要な場合は、プロキシ のアドレスとポートに対応するプロキシ パラメーターを上記の `proxy_address:port` コマンドに追加します。
+静的プロキシが必要な場合は、プロキシ アドレスとポートに対応するプロキシ パラメーターを上記のコマンド `proxy_address:port` に追加します。
 
 ```bash
 curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
-ファイルで構成されているのと同じプロキシ アドレスとポートを使用してください `/lib/system/system/mdatp.service` 。 上記のコマンドでエラーが発生した場合は、プロキシ構成を確認します。
+ファイルで構成されているのと同じプロキシ アドレスとポートを `/lib/system/system/mdatp.service` 使用していることを確認します。 上記のコマンドでエラーが発生した場合は、プロキシ構成を確認します。
 
 mdatp のプロキシを設定するには、次のコマンドを使用します。
 
@@ -101,7 +101,7 @@ mdatp config proxy set --value http://address:port
 ```
 
 
-成功した場合は、コマンド ラインから別の接続テストを試してください。
+成功したら、コマンド ラインから別の接続テストを試みます。
 
 ```bash
 mdatp connectivity test
@@ -111,4 +111,4 @@ mdatp connectivity test
 
 ## <a name="resources"></a>リソース
 
-- 静的プロキシを使用する製品を構成する方法の詳細については [、「Configure Microsoft Defender for Endpoint for static proxy discovery」を参照してください](linux-static-proxy-configuration.md)。
+- 静的プロキシを使用するように製品を構成する方法の詳細については、「静的プロキシ[検出のMicrosoft Defender for Endpointを構成](linux-static-proxy-configuration.md)する」を参照してください。

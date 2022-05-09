@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373214"
 ---
-# <a name="contact-support-for-canada"></a>カナダのサポートに問い合わせ
+# <a name="contact-support-for-canada"></a>カナダのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "61373214"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-英語: Mon-Fri午前 9 時から午後 5 時 (ローカル)
+英語: Mon-Fri午前 9 時から午後 5 時ローカル
 
 フランス語: Mon-Fri午前 9 時から午後 5 時 (ET)
 

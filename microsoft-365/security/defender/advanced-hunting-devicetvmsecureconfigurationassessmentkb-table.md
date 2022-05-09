@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceTvmSecureConfigurationAssessmentKB テーブル
 description: 高度な検索スキーマの DeviceTvmSecureConfigurationAssessmentKB テーブルに記載される、脅威および脆弱性管理により評価されるさまざまなセキュリティ構成について説明します。
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、脅威 & 脆弱性の管理、TVM、デバイス管理、セキュリティ構成、MITRE ATT&CK フレームワーク、ナレッジ ベース、KB、DeviceTvmSecureConfigurationAssessmentKBsment
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, 脅威& 脆弱性の管理, TVM, デバイス管理, セキュリティ構成, MITRE ATT&CK フレームワーク, サポート情報, KB, DeviceTvmSecureConfigurationassessmentKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,11 +35,11 @@ ms.locfileid: "61531557"
 - Microsoft Defender for Endpoint
 
 
-高度 `DeviceTvmSecureConfigurationAssessmentKB` な検索スキーマの表には、Threat &脆弱性管理によってチェックされるさまざまなセキュリティ[で保護された構成に関する情報が含まれている。](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) このテーブルには、リスク情報、関連する業界ベンチマーク、適用される MITRE ATT&CK のテクニックおよび戦術も記載されています。
+`DeviceTvmSecureConfigurationAssessmentKB`高度なハンティング スキーマの表には、[脅威&脆弱性管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)によってチェックされたさまざまなセキュリティで保護された構成に関する情報が含まれています。 このテーブルには、リスク情報、関連する業界ベンチマーク、適用される MITRE ATT&CK のテクニックおよび戦術も記載されています。
 
-このテーブルは、イベントやレコードを返す必要があります。 このテーブルを [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) テーブルに結合して、返される評価のセキュリティ構成に関するテキスト情報を表示することをお `ConfigurationId` 勧めします。
+このテーブルは、イベントまたはレコードを返しません。 このテーブルを [DeviceTvmSecureConfigurationassessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) テーブル `ConfigurationId` に参加させて、返された評価のセキュリティ構成に関するテキスト情報を表示することをお勧めします。
 
-たとえば、テーブルにクエリを実行すると、評価結果に表示されるセキュリティ構成を `DeviceTvmSecureConfigurationAssessment` `ConfigurationDescription` 表示できます。 この情報は、このテーブルを使用してプロジェクトに参加 `DeviceTvmSecureConfigurationAssessment` することで `ConfigurationId` 確認できます `ConfigurationDescription` 。
+たとえば、テーブルに対してクエリを `DeviceTvmSecureConfigurationAssessment` 実行する場合は、評価結果に表示されるセキュリティ構成を表示 `ConfigurationDescription` できます。 この情報は、このテーブルを using `ConfigurationId` と project `ConfigurationDescription`に`DeviceTvmSecureConfigurationAssessment`結合することで確認できます。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -54,9 +54,9 @@ ms.locfileid: "61531557"
 | `ConfigurationSubcategory` | `string` |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
 | `ConfigurationBenchmarks` | `string` | 同じ構成または類似した構成を推奨する業界ベンチマークの一覧 |
 | `Tags` | `string` | セキュリティ構成を識別または分類するために使用されるさまざまな属性を表すラベル |
-| `RemediationOptions` | `string` | 関連するリスクを軽減または対処するために推奨されるアクション |
+| `RemediationOptions` | `string` | 関連するリスクを軽減または対処するための推奨されるアクション |
 
-次のクエリ例を試して、関連する構成メタデータと、非準拠のウイルス対策構成を持つデバイスに関する情報を表から返 `DeviceTvmSecureConfigurationAssessment` します。
+次のクエリ例を試して、関連する構成メタデータと、非準拠のウイルス対策構成を持つデバイスに関する情報を `DeviceTvmSecureConfigurationAssessment` 表から返すことができます。
 
 ```kusto
 // Get information on devices with antivirus configurations issues

@@ -1,5 +1,5 @@
 ---
-title: フランス南方地域 (南極地域) のサポート情報
+title: フランス南部地域 (南極の地) のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61372530"
 ---
-# <a name="contact-support-for-french-southern-territories-antarctic-lands"></a>フランス南方地域 (南極地域) の連絡先のサポート
+# <a name="contact-support-for-french-southern-territories-antarctic-lands"></a>フランス南部地域 (南極地域) のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -35,8 +35,8 @@ ms.locfileid: "61372530"
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-フランス語: Mon-Fri 12 PM-11 PM
+フランス語: Mon-Fri午後 12 時から午後 11 時
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

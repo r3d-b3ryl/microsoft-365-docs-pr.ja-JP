@@ -1,7 +1,7 @@
 ---
 title: 1 つの修復アクティビティの暴露デバイスを一覧表示する
-description: 指定した修復タスクの公開されているデバイスに関する情報を返します。
-keywords: apis、修復、修復 API、取得、修復タスク、公開されているデバイスの修復
+description: 指定した修復タスクの公開されたデバイスに関する情報を返します。
+keywords: apis, 修復, 修復 API, get, 修復タスク, 修復公開デバイス
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -41,22 +41,22 @@ ms.locfileid: "61301992"
 
 ## <a name="api-description"></a>API の説明
 
-指定した修復タスクの公開されているデバイスに関する情報を返します。
+指定した修復タスクの公開されたデバイスに関する情報を返します。
 
-[修復アクティビティの詳細については、次の情報を参照してください](tvm-remediation.md)。
+[修復アクティビティの詳細については、こちらを参照してください](tvm-remediation.md)。
 
-## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a>修復タスクに関連付けられている公開されているデバイスの一覧 (ID)
+## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a>修復タスクに関連付けられている公開されているデバイスを一覧表示する (ID)
 
-**URL:** GET: /api/remediationTasks/ \{ id \} /machineReferences
+**URL：** GET: /api/remediationTasks/\{id\}/machineReferences
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用する」を参照してください。](apis-intro.md)
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|RemediationTasks.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント)|RemediationTask.Read.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+アプリケーション|RemediationTasks.Read.All|\'脅威と脆弱性の管理の脆弱性情報を読み取る\'
+委任 (職場または学校のアカウント)|RemediationTask.Read.Read|\'脅威と脆弱性の管理の脆弱性情報を読み取る\'
 
 ## <a name="properties-details"></a>プロパティの詳細
 
@@ -115,7 +115,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 ## <a name="see-also"></a>関連項目
 
-- [修復方法とプロパティ](get-remediation-methods-properties.md)
+- [修復メソッドとプロパティ](get-remediation-methods-properties.md)
 - [ID による 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
 - [すべての修復作業を一覧表示する](get-remediation-all-activities.md)
 - [リスクベースの脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)

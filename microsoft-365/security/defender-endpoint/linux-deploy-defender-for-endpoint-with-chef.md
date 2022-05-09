@@ -1,7 +1,7 @@
 ---
-title: Chef を使用して Linux で Defender for Endpoint を展開する方法
-description: Defender for Endpoint を Linux で Chef で展開する方法について説明します。
-keywords: microsoft、Defender、atp、Linux、スキャン、ウイルス対策、エンドポイント用 microsoft Defender (Linux)
+title: Chef を使用して Linux に Defender for Endpoint をデプロイする方法
+description: Chef を使用して Linux 上に Defender for Endpoint をデプロイする方法について説明します
+keywords: microsoft, defender, atp, Linux, スキャン, ウイルス対策, Microsoft Defender for endpoint (Linux)
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -27,26 +27,26 @@ ms.locfileid: "61941926"
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-開始する前に:まだインストールされていない場合は、unzip をインストールします。
+作業を開始する前に:まだインストールされていない場合は、解凍してインストールします。
 
-Chef コンポーネントは既にインストールされ、Chef リポジトリ (chef generate repo) が存在し、Defender for Endpoint on Chef マネージ Linux サーバーへの展開に使用されるクックブックを格納 \<reponame\> します。
+Chef コンポーネントは既にインストールされており、Chef リポジトリが存在し (chef generate repo \<reponame\>)、Chef マネージド Linux サーバー上の Defender for Endpoint へのデプロイに使用されるクックブックを格納します。
 
-既存のリポジトリに新しいクックブックを作成するには、シェフ リポジトリにあるクックブック フォルダー内から次のコマンドを実行します。
+既存のリポジトリに新しいクックブックを作成するには、chef リポジトリにある cookbooks フォルダー内から次のコマンドを実行します。
 
 ```bash
 chef generate cookbook mdatp
 ```
 
-このコマンドは、mdatp という新しいクックブックの新しいフォルダー構造を作成します。 MDE 展開の追加に使用するクックブックが既にある場合は、既存のクックブックを使用できます。
-クックブックを作成したら、作成しっきり作成したクックブック フォルダー内に files フォルダーを作成します。
+このコマンドは、mdatp という名前の新しいクックブックの新しいフォルダー構造を作成します。 MDE デプロイの追加に使用するクックブックが既にある場合は、既存のクックブックを使用することもできます。
+クックブックが作成されたら、作成したばかりのクックブック フォルダー内にファイル フォルダーを作成します。
 
 ```bash
 mkdir mdatp/files
 ```
 
-ポータルからダウンロードできる Linux Server Onboarding zip ファイルMicrosoft 365 Defenderこの新しいファイル フォルダーに転送します。
+Microsoft 365 Defender ポータルからダウンロードできる Linux Server オンボード zip ファイルをこの新しいファイル フォルダーに転送します。
 
-Chef ワークステーションで、mdatp/recipes フォルダーに移動します。 このフォルダーは、クックブックが生成された時点で作成されます。 優先するテキスト エディター (vi や nano など) を使用して、default.rb ファイルの末尾に次の手順を追加します。
+Chef ワークステーションで、mdatp/recipes フォルダーに移動します。 このフォルダーは、クックブックが生成されたときに作成されます。 任意のテキスト エディター (vi や nano など) を使用して、default.rb ファイルの末尾に次の手順を追加します。
 
 - include_recipe '::onboard_mdatp'
 - include_recipe '::install_mdatp'
@@ -90,7 +90,7 @@ when 'rhel'
 end
 ```
 
-展開するバージョンと展開するチャネルと一致するバージョン番号、配布名、およびレポ名を変更する必要があります。
+デプロイ先のバージョンとデプロイするチャネルと一致するように、バージョン番号、ディストリビューション、リポジトリ名を変更する必要があります。
 次に、mdatp/recipies フォルダーに onboard_mdatp.rb ファイルを作成する必要があります。 そのファイルに次のテキストを追加します。
 
 ```powershell
@@ -115,10 +115,10 @@ bash 'Extract Onbaording Json MDATP' do
 end
 ```
 
-必ず、オンボーディング ファイルの場所にパス名を更新してください。
-Chef ワークステーションに展開をテストするには、次のコマンドを実行します ``sudo chef-client -z -o mdatp`` 。
-展開後は、Linux 上の Microsoft Defender for Endpoint の基本設定の設定に基づいて、構成ファイルを作成してサーバー [に展開する方法を検討する必要があります](/linux-preferences.md)。
-構成ファイルを作成してテストしたら、それをクックブック/mdatp/files フォルダーに配置し、オンボーディング パッケージも配置できます。 次に、mdatp/recipies フォルダーに settings_mdatp.rb ファイルを作成し、次のテキストを追加できます。
+必ず、パス名をオンボード ファイルの場所に更新してください。
+Chef ワークステーションにデプロイをテストするには、実行するだけです ``sudo chef-client -z -o mdatp``。
+デプロイ後は、[Linux でのMicrosoft Defender for Endpointの設定の設定](/linux-preferences.md)に基づいて、構成ファイルを作成してサーバーにデプロイすることを検討する必要があります。
+構成ファイルを作成してテストしたら、それを cookbook/mdatp/files フォルダーに配置し、オンボード パッケージも配置できます。 次に、mdatp/recipies フォルダーに settings_mdatp.rb ファイルを作成し、次のテキストを追加できます。
 
 ```powershell
 #Copy the configuration file
@@ -131,10 +131,10 @@ cookbook_file '/etc/opt/microsoft/mdatp/managed/mdatp_managed.json' do
 end
 ```
 
-レシピの一部としてこの手順を含めるには、include_recipeフォルダー内settings_mdatp default.rb ファイルに ':: settings_mdatp' を追加します。
-crontab を使用して自動更新をスケジュールする [Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)の更新プログラムをスケジュールできます。
+この手順をレシピの一部として含めるには、レシピ フォルダー内の default.rb ファイルに ':: settings_mdatp' include_recipe追加するだけです。
+crontab を使用して自動更新をスケジュールすることもできます[。Microsoft Defender for Endpoint (Linux) の更新をスケジュール](linux-update-MDE-Linux.md)することもできます。
 
-MDATP クックブックをアンインストールします。
+MDATP のクックブックをアンインストールします。
 
 ```powershell
 #Uninstall the Defender package

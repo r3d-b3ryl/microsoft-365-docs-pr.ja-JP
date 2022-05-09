@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの AADSpnSignInEventsBeta テーブル
-description: サービス プリンシパルとマネージ ID Azure Active Directoryイベント テーブルに関連付けられている情報について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、AlertInfo、アラート、エンティティ、証拠、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
+description: Azure Active Directoryのサービス プリンシパルとマネージド ID のサインイン イベント テーブルに関連付けられている情報について説明します。
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, AlertInfo, アラート, エンティティ, 証拠, ファイル, IP アドレス, デバイス, マシン, ユーザー, アカウント, ID, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -31,9 +31,9 @@ ms.locfileid: "62073679"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> このテーブルは現在ベータ版で、Azure Active Directory (AAD) サインイン イベントをハントするために、短期的に `AADSpnSignInEventsBeta` 提供されています。 このテーブルのアクティビティを収集Azure Active Directory Premium P2表示するには、ユーザーライセンスが必要です。 Microsoft は最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。
+> この`AADSpnSignInEventsBeta`テーブルは現在ベータ版であり、Azure Active Directory (AAD) のサインイン イベントを確認できるように、短期的に提供されています。 このテーブルのアクティビティを収集して表示するには、Azure Active Directory Premium P2 ライセンスが必要です。 Microsoft は最終的にすべてのサインイン スキーマ情報をテーブルに `IdentityLogonEvents` 移動します。
 
-高度 `AADSpnSignInEventsBeta` な検索スキーマの表には、サービス プリンシパルAzure Active Directoryマネージド ID サインインに関する情報が含まれている。さまざまな種類のサインインの詳細については、「Azure Active Directoryアクティビティ レポート - プレビュー」を[参照してください](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
+`AADSpnSignInEventsBeta`高度なハンティング スキーマの表には、Azure Active Directoryサービス プリンシパルとマネージド ID サインインに関する情報が含まれています。さまざまな種類のサインインの詳細については、[サインイン アクティビティ レポートのプレビュー Azure Active Directory参照してください](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
 
 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 
@@ -48,20 +48,20 @@ ms.locfileid: "62073679"
 |`Timestamp`|`datetime`|レコードが作成された日付と時刻|
 |`Application`|`string`|記録されたアクションを実行したアプリケーション|
 |`ApplicationId`|`string`|アプリケーションの一意の識別子|
-|`IsManagedIdentity`|`boolean`|マネージ ID によってサインインが開始されたかどうかを示します。|
-|`ErrorCode`|`int`|サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。|
-|`CorrelationId`|`string`|サインイン イベントの一意の識別子|
+|`IsManagedIdentity`|`boolean`|マネージド ID によってサインインが開始されたかどうかを示します。|
+|`ErrorCode`|`int`|サインイン エラーが発生した場合のエラー コードを含みます。 特定のエラー コードの説明を見つけるには、次のページを参照してください <https://aka.ms/AADsigninsErrorCodes>。|
+|`CorrelationId`|`string`|サインイン イベントの一意識別子|
 |`ServicePrincipalName`|`string`|サインインを開始したサービス プリンシパルの名前|
 |`ServicePrincipalId`|`string`|サインインを開始したサービス プリンシパルの一意の識別子|
 |`ResourceDisplayName`|`string`|アクセスされたリソースの表示名|
-|`ResourceId`|`string`|アクセスされるリソースの一意の識別子|
-|`ResourceTenantId`|`string`|アクセスされるリソースのテナントの一意の識別子|
-|`IPAddress`|`string`|エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス|
-|`Country`|`string`|クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード|
-|`State`|`string`|使用可能な場合は、サインインが発生した状態|
-|`City`|`string`|アカウント ユーザーが保存されている都市|
+|`ResourceId`|`string`|アクセスされたリソースの一意の識別子|
+|`ResourceTenantId`|`string`|アクセスされたリソースのテナントの一意の識別子|
+|`IPAddress`|`string`|エンドポイントに割り当てられ、関連するネットワーク通信中に使用される IP アドレス|
+|`Country`|`string`|クライアント IP アドレスが地理的に割り当てられた国を示す 2 文字のコード|
+|`State`|`string`|サインインが発生した状態 (使用可能な場合)|
+|`City`|`string`|アカウント ユーザーが配置されている市区町村|
 |`Latitude`|`string`|サインイン場所の北から南の座標|
-|`Longitude`|`string`|サインイン場所の東から西への座標|
+|`Longitude`|`string`|サインイン場所の東から西の座標|
 |`RequestId`|`string`|要求の一意の識別子|
 |`ReportId`|`string`|イベントの一意識別子|
 ||||

@@ -1,7 +1,7 @@
 ---
-title: 調査オブジェクト API の取得
-description: この API を使用して、Investigation オブジェクトの取得に関連する呼び出しを作成する
-keywords: apis, graph api, supported apis, Investigation オブジェクト
+title: 調査オブジェクト API を取得する
+description: この API を使用して、Investigation オブジェクトの取得に関連する呼び出しを作成します。
+keywords: apis、graph api、サポートされている API、調査オブジェクト
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61282816"
 ---
-# <a name="get-investigation-api"></a>調査 API の取得
+# <a name="get-investigation-api"></a>調査 API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "61282816"
 
 
 ## <a name="api-description"></a>API の説明
-ID によって特定 [の調査](investigation.md) を取得します。
+ID によって特定の [調査](investigation.md) を取得します。
 <br> ID には、調査 ID またはアラート ID をトリガーする調査を指定できます。
 
 
@@ -49,11 +49,11 @@ ID によって特定 [の調査](investigation.md) を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
+アプリケーション|Alert.Read.All|'すべてのアラートを読み取る'
 アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
 委任 (職場または学校のアカウント) | Alert.Read | 'アラートの読み取り'
 委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
@@ -61,7 +61,7 @@ ID によって特定 [の調査](investigation.md) を取得します。
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -81,5 +81,5 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 Ok 応答コードを [Investigations エンティティと一緒に返](investigation.md) します。
+成功した場合、このメソッドは [、Investigations](investigation.md) エンティティを含む 200 OK 応答コードを返します。
 

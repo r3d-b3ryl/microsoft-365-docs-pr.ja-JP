@@ -1,5 +1,5 @@
 ---
-title: トリニダードトバゴのサポート情報
+title: トリニダードとトバゴのサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61372014"
 ---
-# <a name="contact-support-for-trinidad-amp-tobago"></a>トリニダード トバゴ &amp; のサポートに問い合わせ
+# <a name="contact-support-for-trinidad-amp-tobago"></a>トリニダード &amp; トバゴのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

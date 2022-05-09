@@ -1,7 +1,7 @@
 ---
 title: 内部 IP API でデバイスを検索する
-description: 指定されたタイムスタンプの 15 分前および後の時間範囲で、要求された内部 IP で見られるデバイスを検索する
-keywords: apis, graph api, supported apis, get, device, IP, find, find device, by ip, ip
+description: 特定のタイムスタンプの 15 分前と後の時間範囲で、要求された内部 IP で見られるデバイスを検索する
+keywords: apis, graph api, サポートされている API, get, device, IP, find, find device, by ip, ip
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -39,7 +39,7 @@ ms.locfileid: "61302268"
 
 ## <a name="api-description"></a>API の説明
 
-指定 [されたタイムスタンプ](machine.md) の 15 分前と後の時間範囲で、要求された内部 IP で表示されるコンピューターを検索します。
+指定されたタイムスタンプの 15 分前と後の時間範囲で、要求された内部 IP で見られる [マシン](machine.md) を検索します。
 
 ## <a name="limitations"></a>制限事項
 
@@ -48,21 +48,21 @@ ms.locfileid: "61302268"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
-アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント)|Machine.Read|'コンピューター情報の読み取り'
-委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+アプリケーション|Machine.Read.All|'すべてのマシン プロファイルを読み取る'
+アプリケーション|Machine.ReadWrite.All|'すべてのマシン情報の読み取りと書き込み'
+委任 (職場または学校のアカウント)|Machine.Read|'マシン情報の読み取り'
+委任 (職場または学校のアカウント)|Machine.ReadWrite|'マシン情報の読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - 応答には、ユーザーがデバイス グループ設定に基づいてアクセスできるデバイスだけが含まれます (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - 応答には、ユーザーがデバイス グループ設定に基づいてアクセスできるデバイスだけが含まれます (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+> - 応答には、デバイス グループの設定に基づいてユーザーがアクセスできるデバイスのみが含まれます (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
+> - 応答には、デバイス グループの設定に基づいてユーザーがアクセスできるデバイスのみが含まれます (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -72,7 +72,7 @@ GET /api/machines/findbyip(ip='{IP}',timestamp={TimeStamp})
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -82,8 +82,8 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合 - 応答本文のコンピューターの一覧で 200 OK。
-タイムスタンプが過去 30 日間 ( 400 Bad Request) ではない場合。
+成功した場合 - 応答本文のマシンの一覧で 200 OK。
+タイムスタンプが過去 30 日間ではない場合は、400 無効な要求です。
 
 ## <a name="example"></a>例
 

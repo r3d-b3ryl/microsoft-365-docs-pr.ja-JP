@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371966"
 ---
-# <a name="contact-support-for-uruguay"></a>ウルグアイのサポートに問い合わせ
+# <a name="contact-support-for-uruguay"></a>ウルグアイのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

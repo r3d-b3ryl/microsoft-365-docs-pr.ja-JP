@@ -1,7 +1,7 @@
 ---
-title: IP 統計 API の取得
-description: Microsoft Defender for Endpoint を使用して、IP の最新の統計情報を取得します。
-keywords: apis, graph api, supported apis, get, ip, statistics, prevalence
+title: IP 統計 API を取得する
+description: Microsoft Defender for Endpointを使用して、IP の最新の統計を取得します。
+keywords: apis, graph api, サポートされている API, get, ip, statistics, 普及率
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61283257"
 ---
-# <a name="get-ip-statistics-api"></a>IP 統計 API の取得
+# <a name="get-ip-statistics-api"></a>IP 統計 API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,15 +38,15 @@ ms.locfileid: "61283257"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API の説明
-指定した IP の統計情報を取得します。
+特定の IP の統計情報を取得します。
 
 ## <a name="limitations"></a>制限事項
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
-2. Lookbackhours の最大値は 720 Hours(30days) です。
+2. Lookbackhours の最大値は 720 時間 (30days) です。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -55,7 +55,7 @@ ms.locfileid: "61283257"
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -81,7 +81,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合と ip が存在する場合 - 200 OK 本文の統計データを使用します。 IP は有効ですが、存在しません - organizationPrevalence 0、IP は無効です - HTTP 400。
+成功し、IP が存在する場合 - 本文に統計データを含む 200 OK。 IP は有効ですが存在しません - organizationPrevalence 0、IP は無効です - HTTP 400。
 
 ## <a name="example"></a>例
 
@@ -110,8 +110,8 @@ GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats?lookBac
 |名前|説明|
 |---|---|
 |組織の普及率|この IP へのネットワーク接続を開いたデバイスの個別の数。|
-|組織が最初に見られた|組織内のこの IP の最初の接続。|
-|組織が最後に見た|組織内のこの IP の最後の接続。|
+|最初に表示された組織|は、組織内のこの IP の最初の接続です。|
+|組織の最後の表示|は、組織内のこの IP の最後の接続です。|
 
 > [!NOTE]
-> この統計情報は、過去 30 日間のデータに基づいて行われます。
+> この統計情報は、過去 30 日間のデータに基づいています。

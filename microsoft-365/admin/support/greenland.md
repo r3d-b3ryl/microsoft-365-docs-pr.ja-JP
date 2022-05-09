@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61372290"
 ---
-# <a name="contact-support-for-greenland"></a>Greenland のサポートに問い合わせ
+# <a name="contact-support-for-greenland"></a>Greenland のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,10 +29,10 @@ ms.locfileid: "61372290"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-英語: Mon-Fri 7 AM-3 PM
+英語: Mon-Fri午前 7 時から午後 3 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

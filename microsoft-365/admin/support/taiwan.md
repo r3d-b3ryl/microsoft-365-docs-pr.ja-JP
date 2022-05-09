@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61374138"
 ---
-# <a name="contact-support-for-taiwan"></a>台湾のサポートに問い合わせ
+# <a name="contact-support-for-taiwan"></a>台湾のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "61374138"
 
 中国語 (中国語): Mon-Fri午前 9 時から午後 6 時
 
-英語: Mon-Fri午前 9 時から午後 6 時 ローカル
+英語: Mon-Fri午前 9 時から午後 6 時ローカル
 
 ### <a name="technical-support"></a>テクニカル サポート:
 

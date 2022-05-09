@@ -1,7 +1,7 @@
 ---
 title: サポートされている Microsoft 365 Defender API
 description: サポートされている Microsoft 365 Defender API
-keywords: Microsoft 365 Defender API、API
+keywords: Microsoft 365 Defender、API、API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -42,26 +42,26 @@ ms.locfileid: "62171015"
 
 記事 | 説明
 -|-
-[高度な追求 API](api-advanced-hunting.md) | 高度な検索クエリを実行します。
-[インシデント API](api-incident.md) | 他の実用的なタスクと共に、インシデントを一覧表示および更新します。
-[ストリーミング API](streaming-api.md) | 1 つのデータ ストリームで発生するリアルタイム イベントとアラートを出荷します。
+[高度な追求 API](api-advanced-hunting.md) | 高度なハンティング クエリを実行します。
+[インシデント API](api-incident.md) | インシデントの一覧表示と更新、およびその他の実用的なタスク。
+[ストリーミング API](streaming-api.md) | 1 つのデータ ストリームで発生したイベントとアラートをリアルタイムで配信します。
 
 ### <a name="endpoint-uris"></a>エンドポイント URI
 
-両方のメイン API の基本 URI は次の値です https://api.security.microsoft.com 。 パフォーマンスを向上するには、位置情報に近いサーバーを使用します。
+メイン API の両方の基本 URI は次のとおりです https://api.security.microsoft.com。 パフォーマンスを向上させるには、位置情報に近いサーバーを使用します。
 
 - 米国: api-us.security.microsoft.com
 - ヨーロッパ: api-eu.security.microsoft.com
 - 英国: api-uk.security.microsoft.com
 
-トークンは、アクセスすることで取得できます https://api.security.microsoft.com 。
+トークンは、次 https://api.security.microsoft.comの方法で取得できます。
 
-パスに沿ったすべての `/api` API は [、OData プロトコル](/odata/overview) を使用します。たとえば、 https://api.security.microsoft.com/api/incidents です。
+パスに沿った`/api`すべての API は [OData](/odata/overview) プロトコルを使用します。たとえば、 https://api.security.microsoft.com/api/incidents
 
 ## <a name="related-articles"></a>関連記事
 
 - [Microsoft 365 Defender API の概要](api-overview.md)
-- [API にMicrosoft 365 Defenderする](api-access.md)
+- [Microsoft 365 Defender API にアクセスする](api-access.md)
 - [ストリーミング API](../defender-endpoint/raw-data-export.md)
-- [API の制限とライセンスの詳細](api-terms.md)
+- [API の制限とライセンスについて学習する](api-terms.md)
 - [エラー コードについて](api-error-codes.md)

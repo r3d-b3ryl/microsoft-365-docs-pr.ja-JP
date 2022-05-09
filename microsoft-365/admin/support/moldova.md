@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373526"
 ---
-# <a name="contact-support-for-moldova"></a>モルドバの連絡先のサポート
+# <a name="contact-support-for-moldova"></a>モルドバのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

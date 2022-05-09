@@ -1,7 +1,7 @@
 ---
 title: 露出したデバイスの追求
-description: セキュリティ管理者脅威と脆弱性の管理 It 管理者、および SecOps の共同作業を支援する方法について学習します。
-keywords: Microsoft Defender for Endpoint-tvm シナリオ、Microsoft Defender for Endpoint、tvm、tvm シナリオ、脅威& の脆弱性の暴露を減らし、脅威と脆弱性を軽減し、セキュリティ構成を改善し、デバイスの Microsoft Secure Score を増やし、デバイスの脅威 & の脆弱性を高める Microsoft Secure Score、Microsoft Secure Score for Devices、露出スコア、セキュリティコントロール
+description: 脅威と脆弱性の管理を使用して、セキュリティ管理者、IT 管理者、SecOps の共同作業を支援する方法について説明します。
+keywords: Microsoft Defender for Endpoint-tvm のシナリオ、Microsoft Defender for Endpoint、tvm、tvm のシナリオ、脅威&脆弱性の露出を減らす、脅威と脆弱性を減らす、セキュリティ構成を改善する、Microsoft Secure Score for Devices を増やす、脅威&脆弱性を増やす Microsoft Secure Score for Devices、デバイスの Microsoft Secure Score、公開スコア、セキュリティ制御
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -35,27 +35,27 @@ ms.locfileid: "61167972"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-## <a name="use-advanced-hunting-to-find-devices-with-vulnerabilities"></a>高度な検索を使用して脆弱性のあるデバイスを検索する
+## <a name="use-advanced-hunting-to-find-devices-with-vulnerabilities"></a>高度な捜索を使用して、脆弱性を持つデバイスを見つける
 
-高度な捜索は、クエリ ベースの脅威の捜索ツールで、最大 30 日間のロー データを検索できます。 ネットワーク内のイベントを事前に検査して、脅威インジケーターとエンティティを見つけることができます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対する拘束されていない検出が可能です。 [高度な狩猟の詳細](advanced-hunting-overview.md)
+高度な捜索は、クエリ ベースの脅威の捜索ツールで、最大 30 日間のロー データを検索できます。 ネットワーク内のイベントを事前に検査して、脅威インジケーターとエンティティを見つけることができます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対する制約のない捜索が可能になります。 [高度なハンティングの詳細を確認する](advanced-hunting-overview.md)
 
 ### <a name="schema-tables"></a>スキーマ テーブル
 
-- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - デバイスにインストールされているソフトウェアのインベントリ (バージョン情報やサポート終了の状態を含む)。
+- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - デバイスにインストールされているソフトウェアのインベントリ(バージョン情報やサポート終了の状態など)。
 
 - [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - デバイスで見つかったソフトウェアの脆弱性と、各脆弱性に対処する利用可能なセキュリティ更新プログラムの一覧。
 
-- [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - 悪用コードが一般に公開されているかどうかを含む、一般に公開された脆弱性のナレッジ ベース。
+- [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - 悪用コードが公開されているかどうかなど、一般に公開されている脆弱性のナレッジ ベース。
 
-- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - デバイス上のさまざまなセキュリティ構成の状態を示す、脆弱性の管理およびセキュリティ評価イベント。
+- [DeviceTvmSecureConfigurationassessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - 脅威と脆弱性の管理評価イベント。デバイス上のさまざまなセキュリティ構成の状態を示します。
 
-- [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) - Threat & 脆弱性管理でデバイスを評価するために使用されるさまざまなセキュリティ構成のナレッジ ベース。さまざまな標準とベンチマークへのマッピングが含まれています
+- [DeviceTvmSecureConfigurationassessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) - Threat & Vulnerability Management がデバイスを評価するために使用するさまざまなセキュリティ構成のナレッジ ベース。には、さまざまな標準とベンチマークへのマッピングが含まれます
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>重大度の高いアラートに関係するデバイスを確認する
 
-1. ポータルの **左側** のナビゲーション ウィンドウから [ハンティングの高度な \> Microsoft 365 Defenderします。
+1. Microsoft 365 Defender ポータルの左側のナビゲーション ウィンドウから、[**Hunting** **Advanced hunting] (高度なハンティング**\>) に移動します。
 
-2. TVM 高度なハンティング スキーマまで下にスクロールして、列名を理解します。
+2. TVM の高度なハンティング スキーマまで下にスクロールして、列名を理解します。
 
 3. 次のクエリを入力します。
 
@@ -76,11 +76,11 @@ ms.locfileid: "61167972"
     | project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
     ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
-- [セキュリティ上の推奨事項](tvm-security-recommendation.md)
+- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [セキュリティに関する推奨事項](tvm-security-recommendation.md)
 - [API](next-gen-threat-and-vuln-mgt.md#apis)
-- [ユーザー ロールのデータ アクセス脅威と脆弱性の管理構成する](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [脅威と脆弱性の管理 ロールのデータ アクセスを構成する](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [高度な追求の概要](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
-- [すべての高度な検索テーブル](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)
+- [すべての高度なハンティング テーブル](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint での SIEM ツール統合の問題のトラブルシューティング
-description: Microsoft Defender for Endpoint で SIEM ツールを使用する場合に発生する可能性のある問題のトラブルシューティングを行います。
-keywords: トラブルシューティング, siem, クライアント シークレット, secret
+title: Microsoft Defender for Endpointでの SIEM ツール統合の問題のトラブルシューティング
+description: MICROSOFT DEFENDER FOR ENDPOINTで SIEM ツールを使用するときに発生する可能性がある問題のトラブルシューティングを行います。
+keywords: トラブルシューティング, siem, クライアント シークレット, シークレット
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -34,54 +34,54 @@ ms.locfileid: "62213993"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-SIEM ツールで検出を引き出す際に問題のトラブルシューティングが必要になる場合があります。
+SIEM ツールで検出をプルするときに、問題のトラブルシューティングが必要になる場合があります。
 
-このページでは、発生する可能性がある問題をトラブルシューティングするための詳細な手順を示します。
+このページでは、発生する可能性のある問題をトラブルシューティングするための詳細な手順について説明します。
 
-## <a name="learn-how-to-get-a-new-client-secret"></a>新しいクライアント シークレットを取得する方法について
+## <a name="learn-how-to-get-a-new-client-secret"></a>新しいクライアント シークレットを取得する方法について説明します
 
-クライアント シークレットの有効期限が切れた場合、または SIEM ツール アプリケーションを有効にするときに提供されたコピーを置き忘れた場合は、新しいシークレットを取得する必要があります。
+クライアント シークレットの有効期限が切れた場合、または SIEM ツール アプリケーションを有効にしているときに提供されたコピーを間違えた場合は、新しいシークレットを取得する必要があります。
 
-1. Azure 管理ポータル [にログインします](https://portal.azure.com)。
+1. [Azure 管理ポータル](https://portal.azure.com)にログインします。
 
 2. **Azure Active Directory** を選択します。
 
 3. テナントを選択します。
 
-4. [アプリ **の登録] をクリックします**。 次に、アプリケーションの一覧で、アプリケーションを選択します。
+4. **[アプリの登録**] をクリックします。 次に、アプリケーションの一覧でアプリケーションを選択します。
 
-5. [ **証明書と&] セクション、[** 新しいクライアント シークレット] をクリックし、説明を入力し、有効期間を指定します。
+5. [ **証明書&シークレット** ] セクションを選択し、[新しいクライアント シークレット] をクリックして説明を入力し、有効期間を指定します。
 
 6. [**保存**] をクリックします。 キー値が表示されます。
 
 7. 値をコピーし、安全な場所に保存します。
 
-## <a name="error-when-getting-a-refresh-access-token"></a>更新アクセス トークンを取得するときにエラーが発生する
+## <a name="error-when-getting-a-refresh-access-token"></a>更新アクセス トークンを取得するときのエラー
 
-脅威インテリジェンス API または SIEM ツールを使用するときに更新トークンを取得しようとするときにエラーが発生した場合は、関連するアプリケーションの返信 URL を Azure Active Directory に追加する必要があります。
+脅威インテリジェンス API または SIEM ツールを使用しているときに更新トークンを取得しようとしたときにエラーが発生した場合は、関連するアプリケーションの応答 URL をAzure Active Directoryに追加する必要があります。
 
-1. Azure 管理ポータル [にログインします](https://ms.portal.azure.com)。
+1. [Azure 管理ポータル](https://ms.portal.azure.com)にログインします。
 
 2. **Azure Active Directory** を選択します。
 
 3. テナントを選択します。
 
-4. [アプリ **の登録] をクリックします**。 次に、アプリケーションの一覧で、アプリケーションを選択します。
+4. [ **アプリの登録]** をクリックします。 次に、アプリケーションの一覧でアプリケーションを選択します。
 
 5. 次の URL を追加します。
-   - EU の場合: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`
+   - 欧州連合の場合: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`
    - 英国の場合: `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
-   - 米国の場合:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` .
+   - 米国の場合: `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.
 
 6. [**保存**] をクリックします。
 
-## <a name="error-while-enabling-the-siem-connector-application"></a>SIEM コネクタ アプリケーションを有効にしている間のエラー
+## <a name="error-while-enabling-the-siem-connector-application"></a>SIEM コネクタ アプリケーションを有効にしているときにエラーが発生しました
 
-SIEM コネクタ アプリケーションを有効にしようとするときにエラーが発生した場合は、ブラウザーのポップアップ ブロッカー設定を確認してください。 機能を有効にするときに開いている新しいウィンドウがブロックされている可能性があります。
+SIEM コネクタ アプリケーションを有効にしようとしたときにエラーが発生した場合は、ブラウザーのポップアップ ブロック設定を確認します。 機能を有効にすると、開かれている新しいウィンドウがブロックされている可能性があります。
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshootsiem-belowfoldlink)
 
 ## <a name="related-topics"></a>関連項目
 
-- [SIEM ツールへの検出のプル](configure-siem.md)
+- [SIEM ツールへのプル検出](configure-siem.md)
 

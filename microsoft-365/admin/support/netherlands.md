@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7b241b2007e7ddcb0809e086bdb6cfa4c774fc74
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 942171db94c42456e32d3e73ad28d1599b07e9e6
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192525"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61364106"
 ---
-# <a name="contact-support-for-netherlands"></a>オランダのサポートに問い合わせ
+# <a name="contact-support-for-netherlands"></a>オランダのサポートにお問い合わせください
 
-[別の国または地域を検索します](../../business-video/get-help-support.md)。
+[別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 0800 020 2546
@@ -29,7 +29,7 @@ ms.locfileid: "60192525"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-オランダ語: Mon-Fri午前 9 時から午後 5 時
+オランダ語: Mon-Fri 午前 9 時から午後 5 時
 
 英語: Mon-Fri午前 9 時から午後 5 時
 

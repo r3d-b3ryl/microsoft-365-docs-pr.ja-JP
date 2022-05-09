@@ -1,5 +1,5 @@
 ---
-title: 米国領バージン諸島のサポート情報
+title: 米国領ヴァージン諸島のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371942"
 ---
-# <a name="contact-support-for-virgin-islands-us"></a>米国領バージン諸島のサポートに問い合わせ
+# <a name="contact-support-for-virgin-islands-us"></a>米国領ヴァージン諸島のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

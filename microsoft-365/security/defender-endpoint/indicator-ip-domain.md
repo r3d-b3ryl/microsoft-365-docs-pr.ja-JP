@@ -1,8 +1,8 @@
 ---
 title: IP および URL/ドメインのインジケーターを作成
 ms.reviewer: ''
-description: エンティティの検出、防止、および除外を定義する、IPs および URL/ドメインのインジケーターを作成します。
-keywords: IP、URL、ドメイン、管理、許可、ブロック、ブロック、クリーン、悪意のある、ファイル ハッシュ、IP アドレス、URL、ドメイン
+description: エンティティの検出、防止、除外を定義する IP と URL/ドメインのインジケーターを作成します。
+keywords: ip, URL, domain, manage, allowed, block, block, clean, malicious, file hash, ip address, urls, domain
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -33,78 +33,78 @@ ms.locfileid: "62074536"
 > [!TIP]
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-Defender for Endpoint は、Microsoft が悪意のある IPS/URL と見なす動作、Windows Defender SmartScreen for Microsoft ブラウザー、および Microsoft 以外のブラウザーやブラウザー外で行われた呼び出しに対するネットワーク保護を通じてブロックできます。
+Defender for Endpoint は、Microsoft が悪意のある IP/URL と見なすもの、Microsoft ブラウザーの SmartScreen のWindows Defender、Microsoft 以外のブラウザーの Network Protection、またはブラウザーの外部で行われた呼び出しを通じてブロックできます。
 
-このための脅威インテリジェンス データ セットは、Microsoft によって管理されています。
+この脅威インテリジェンス データ セットは、Microsoft によって管理されています。
 
-IP と URL またはドメインのインジケーターを作成することで、独自の脅威インテリジェンスに基づいて、IPs、URL、またはドメインを許可またはブロックできます。 危険なアプリを開いた場合は、ユーザーにプロンプトを表示するように警告することもできます。 プロンプトはアプリの使用を停止しませんが、アプリの適切な使用方法を説明するカスタム メッセージと会社ページへのリンクを提供できます。 ユーザーは警告をバイパスし、必要に応じてアプリを引き続き使用できます。
+IP と URL またはドメインのインジケーターを作成することで、独自の脅威インテリジェンスに基づいて IP、URL、またはドメインを許可またはブロックできるようになりました。 危険なアプリを開く場合は、プロンプトでユーザーに警告することもできます。 プロンプトによってアプリの使用が停止されることはありませんが、カスタム メッセージと、アプリの適切な使用方法を説明する会社のページへのリンクを指定できます。 ユーザーは引き続き警告をバイパスし、必要に応じてアプリを引き続き使用できます。
 
-特定のグループが他のグループよりも多かれ少なかれ危険にさらされている場合は、設定ページまたはコンピューター グループを使用してこれを行えます。
+特定のグループが他のグループよりも多かれ少なかれ危険にさらされているとみなす場合は、設定ページまたはマシン グループを使用して行うことができます。
 
 > [!NOTE]
-> IP アドレスInter-Domainクラスレス ルーティング (CIDR) 表記はサポートされていません。
+> IP アドレスのクラスレス Inter-Domain ルーティング (CIDR) 表記はサポートされていません。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
-IPS、URL、またはドメインのインジケーターを作成する前に、次の前提条件を理解することが重要です。
+IPS、URL、またはドメインのインジケーターを作成する前に、次の前提条件を理解しておくことが重要です。
 
-- URL/IP 許可とブロックは、Defender for Endpoint コンポーネントのネットワーク保護をブロック モードで有効にしています。 ネットワーク保護と構成手順の詳細については、「ネットワーク保護を有効 [にする」を参照してください](enable-network-protection.md)。
-- マルウェア対策クライアントのバージョンは、4.18.1906.x 以降である必要があります。 
-- Windows 10 バージョン 1709 以降、Windows 11、Windows Server 2016、Windows Server 2012 R2、Windows Server 2019、Windows Server 2022 のコンピューターでサポートされます。
+- URL/IP の許可とブロックは、Defender for Endpoint コンポーネントの Network Protection をブロック モードで有効にする必要があります。 Network Protection と構成手順の詳細については、「 [ネットワーク保護を有効にする」を](enable-network-protection.md)参照してください。
+- マルウェア対策クライアントバージョンは、4.18.1906.x 以降である必要があります。 
+- Windows 10、バージョン 1709 以降、Windows 11、Windows Server 2016、Windows Server 2012 R2、Windows Server 2019、Windows Server 2022 のマシンでサポートされます。
 
     > [!NOTE]
-    > Windows Server 2016および Windows Server 2012 R2 は、この機能を動作するには、「オンボード サーバー Windows[](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)を使用してオンボードする必要があります。
+    > この機能を機能させるには、「オンボード Windows サーバー」の手順に従って[、Windows Server 2016とWindows Server 2012](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) R2 をオンボードする必要があります。
 
-- 高度な **機能でカスタム ネットワーク** インジケーターが有効 **Microsoft 365 Defender設定** \>  \> **確認します**。 詳細については、「高度な機能 [」を参照してください](advanced-features.md)。
-- iOS でのインジケーターのサポートについては、「カスタム インジケーターの [構成」を参照してください](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)。
+- Microsoft 365 Defender **設定** \> **Advanced 機能****で** \> **カスタム ネットワーク インジケーター** が有効になっていることを確認します。 詳細については、「 [高度な機能」を](advanced-features.md)参照してください。
+- iOS でのインジケーターのサポートについては、「 [カスタム インジケーターの構成」を](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)参照してください。
 
 > [!IMPORTANT]
-> インジケーター リストに追加できるのは外部の AP のみです。 インジケーターは、内部の IPs に対して作成できません。
-> Web 保護のシナリオでは、アプリの組み込み機能を使用することをおMicrosoft Edge。 Microsoft Edgeネットワーク保護を[利用して](network-protection.md)ネットワーク トラフィックを検査し、TCP、HTTP、HTTPS (TLS) のブロックを許可します。
-> 競合する URL インジケーター ポリシーがある場合は、長いパスが適用されます。 たとえば、URL インジケーター ポリシーは URL インジケーター `https://support.microsoft.com/office` ポリシーよりも優先されます `https://support.microsoft.com` 。
+> インジケーターの一覧に追加できるのは外部 IP のみです。 内部 IP に対してインジケーターを作成することはできません。
+> Web 保護のシナリオでは、Microsoft Edgeに組み込まれている機能を使用することをお勧めします。 Microsoft Edge[ネットワーク保護](network-protection.md)を利用してネットワーク トラフィックを検査し、TCP、HTTP、HTTPS (TLS) のブロックを許可します。
+> 競合する URL インジケーター ポリシーがある場合は、長いパスが適用されます。 たとえば、URL インジケーター ポリシーは URL インジケーター ポリシー `https://support.microsoft.com/office` `https://support.microsoft.com`よりも優先されます。
 
 > [!NOTE]
-> その他のすべてのプロセスでは、Web 保護シナリオでネットワーク保護を活用して検査と実施を行います。
+> その他のすべてのプロセスでは、Web 保護のシナリオでは、Network Protection を利用して検査と実施を行います。
 >
-> - IP は 3 つのプロトコルすべてでサポートされています
-> - サポートされている IP アドレスは 1 つのみです (CIDR ブロックまたは IP 範囲なし)
-> - 暗号化された URL (フル パス) は、ファースト パーティのブラウザーでのみブロックできます (Internet Explorer エッジ)
-> - 暗号化された URL (FQDN のみ) は、ファースト パーティブラウザーの外部でブロックできます (Internet Explorer エッジ)
-> - 完全な URL パス ブロックは、ドメイン レベルと暗号化されていないすべての URL に適用できます。
+> - IP は、3 つのプロトコルすべてでサポートされています
+> - 1 つの IP アドレスのみがサポートされます (CIDR ブロックまたは IP 範囲はありません)。
+> - 暗号化された URL (フル パス) は、ファースト パーティのブラウザー (Internet Explorer、Edge) でのみブロックできます
+> - 暗号化された URL (FQDN のみ) は、ファースト パーティのブラウザーの外部でブロックできます (Internet Explorer、Edge)
+> - 完全な URL パス ブロックは、ドメイン レベルと暗号化されていないすべての URL に適用できます
 >
-> アクションが実行され、URL と IP がブロックされる時間の間に最大 2 時間の待機時間 (通常は少ない) が発生する場合があります。
+> アクションが実行されてから、URL と IP がブロックされるまでの待機時間は最大 2 時間 (通常は短い) 場合があります。
 
 警告モードを使用する場合は、次のコントロールを構成できます。
 
 **バイパス機能**:
 
-- エッジの [許可] ボタン
+- Edge の [許可] ボタン
 - トーストの [許可] ボタン (Microsoft 以外のブラウザー)
 - インジケーターのバイパス期間パラメーター
-- Microsoft ブラウザーと Microsoft 以外のブラウザーで適用をバイパスする
+- Microsoft ブラウザーと Microsoft 以外のブラウザー間で適用をバイパスする
 
 **リダイレクト URL**:
 
 - インジケーターのリダイレクト URL パラメーター
-- エッジのリダイレクト URL
+- Edge のリダイレクト URL
 - トーストのリダイレクト URL (Microsoft 以外のブラウザー)
 
-詳細については、「エンドポイント用 [Microsoft Defender で検出されたアプリを管理する」を参照してください](/cloud-app-security/mde-govern)。
+詳細については、「[Microsoft Defender for Endpointによって検出されたアプリを管理](/cloud-app-security/mde-govern)する」を参照してください。
 
-## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>設定ページから、IPs、URL、またはドメインのインジケーターを作成する
+## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>設定ページから IP、URL、またはドメインのインジケーターを作成する
 
-1. ナビゲーション ウィンドウで、[エンドポイントインジケーター]**設定** \> **([** ルール] \> **の下)** を **選択します**。
+1. ナビゲーション ウィンドウで、([**ルール**] **で) 設定** \> **エンドポイント** \> **インジケーター** を選択します。
 
-2. [IP アドレス **] タブまたは [URL/ドメイン] タブを選択** します。
+2. [ **IP アドレス] タブまたは [URL/ドメイン] タブを** 選択します。
 
-3. [アイテム **の追加] を選択します**。
+3. [ **項目の追加]** を選択します。
 
 4. 次の詳細を指定します。
-   - Indicator - エンティティの詳細を指定し、インジケーターの有効期限を定義します。
-   - Action - 実行するアクションを指定し、説明を入力します。
-   - Scope - コンピューター グループのスコープを定義します。
+   - インジケーター - エンティティの詳細を指定し、インジケーターの有効期限を定義します。
+   - アクション - 実行するアクションを指定し、説明を入力します。
+   - スコープ - マシン グループのスコープを定義します。
 
-5. [概要] タブで詳細を確認し、[保存] を **クリックします**。
+5. [概要] タブで詳細を確認し、[ **保存**] をクリックします。
 
 ## <a name="related-topics"></a>関連項目
 

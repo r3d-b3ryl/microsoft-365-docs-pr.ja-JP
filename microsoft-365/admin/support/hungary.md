@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61369602"
 ---
-# <a name="contact-support-for-hungary"></a>ハンガリーのサポートに問い合わせ
+# <a name="contact-support-for-hungary"></a>ハンガリーのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -33,7 +33,7 @@ ms.locfileid: "61369602"
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-ハンガリー: Mon-Fri午前 8 時から午後 6 時
+ハンガリー語:Mon-Fri午前 8 時から午後 6 時
 
 英語: 24 時間年中無休
 

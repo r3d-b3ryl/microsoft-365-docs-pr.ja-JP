@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61370478"
 ---
-# <a name="contact-support-for-kenya"></a>ケニアのサポートに問い合わせ
+# <a name="contact-support-for-kenya"></a>ケニアのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

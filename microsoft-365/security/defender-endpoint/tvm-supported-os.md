@@ -1,7 +1,7 @@
 ---
 title: サポート対象オペレーティング システムのプラットフォームと機能
-description: すべてのデバイスのアクティビティが適切に考慮される脅威と脆弱性の管理のオペレーティング システムまたはプラットフォームの要件を満たしてください。
-keywords: threat & 脆弱性の管理, 脅威と脆弱性の管理, オペレーティング システム, プラットフォーム要件, 前提条件, Microsoft Defender for Endpoint-tvm サポート os, Microsoft Defender for Endpoint-tvm, サポートされるオペレーティング システム, サポートされるプラットフォーム, Linux サポート, mac サポート
+description: すべてのデバイスのアクティビティが適切に考慮されるように、脅威と脆弱性の管理のオペレーティング システムまたはプラットフォームの要件を満たしていることを確認します。
+keywords: 脅威& 脆弱性の管理, 脅威と脆弱性の管理, オペレーティング システム, プラットフォーム要件, 前提条件, Microsoft Defender for Endpoint-tvm でサポートされる os, Microsoft Defender for Endpoint-tvm、サポートされているオペレーティング システム、サポートされているプラットフォーム、Linux サポート、mac サポート
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -35,20 +35,20 @@ ms.locfileid: "62295397"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-開始する前に、デバイス内のアクティビティが適切に説明脅威と脆弱性の管理のオペレーティング システムまたはプラットフォームの要件を満たしてください。
+開始する前に、デバイス内のアクティビティが適切に考慮されるように、脅威と脆弱性の管理の次のオペレーティング システムまたはプラットフォームの要件を満たしていることを確認します。
 
 > [!NOTE]
-> サポートされているシステムとプラットフォームは脅威と脆弱性の管理 Microsoft [Defender for Endpoint リストの最小要件とは異なる場合](minimum-requirements.md)があります。
+> 脅威と脆弱性の管理でサポートされているシステムとプラットフォームは、[Microsoft Defender for Endpointの最小要件](minimum-requirements.md)の一覧とは異なる場合があります。
 
 ## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>サポートされているオペレーティング システム (OS) とプラットフォームごとの機能
 
-次の表の "Yes" は、その行の OS またはプラットフォーム脅威と脆弱性の管理サポートされている機能を示しています。
+次の表では、"はい" は、その行の OS またはプラットフォームで脅威と脆弱性の管理機能がサポートされていることを示しています。
 
-サポートされている OS またはプラットフォーム|OS の脆弱性|ソフトウェア製品の脆弱性|OS 構成の評価|セキュリティ制御の構成評価|ソフトウェア製品構成の評価
+サポートされている OS またはプラットフォーム|OS の脆弱性|ソフトウェア製品の脆弱性|OS 構成の評価|セキュリティ制御の構成評価|ソフトウェア製品の構成評価
 :---|:---|:---|:---|:---|:---
-Windows 7|はい|サポート対象外|サポート対象外|サポート対象外|非サポート
+Windows 7|はい|非サポート|サポート対象外|サポート対象外|非サポート
 Windows 8.1|はい|はい|はい|はい|はい
-Windows 10バージョン 1607-1703|はい|サポート対象外|サポート対象外|サポート対象外|サポート対象外
+Windows 10バージョン 1607-1703|はい|非サポート|サポート対象外|サポート対象外|非サポート
 Windows 10バージョン 1709 以降|はい|はい|はい|はい|はい
 Windows 11|はい|はい|はい|はい|はい
 Windows Server 2008 R2|はい|はい|はい|はい|はい
@@ -57,22 +57,22 @@ Windows Server 2016|はい|はい|はい|はい|はい
 Windows Server 2019|はい|はい|はい|はい|はい
 Windows Server 2022|はい|はい|はい|サポート対象外|はい
 macOS 10.14 "Mojave" 以上|はい|はい|はい|はい|はい 
-Red Hat Enterprise一致する EUS リリースを含む Linux 7.2 以上 (\*以下の「重要な」通知を参照)|はい|はい|はい|はい|はい
-CentOS 7.2 以上|はい|はい|はい|はい|はい
+一致する EUS リリースを含む Red Hat Enterprise Linux 7.2 以降 (\*以下の「重要」を参照)|はい|はい|はい|はい|はい
+CentOS 7.2 以降|はい|はい|はい|はい|はい
 Ubuntu 16.04 LTS 以上の LTS|はい|はい|はい|はい|はい
-Oracle Linux 7.2 以上|はい|はい|はい|はい|はい
-SUSE Linux Enterprise サーバー 12 以上|はい|はい|はい|はい|はい
-Linux Debian 9 以上|はい|はい|はい|はい|はい
-Android 6.0 以上|はい|はい|サポート対象外|サポート対象外|サポート対象外
-iOS 12.0 以上|はい|サポート対象外|サポート対象外|サポート対象外|サポート対象外
+Oracle Linux 7.2 以降|はい|はい|はい|はい|はい
+SUSE Linux Enterprise Server 12 以降|はい|はい|はい|はい|はい
+Linux Debian 9 以降|はい|はい|はい|はい|はい
+Android 6.0 以降|はい|はい|非サポート|サポート対象外|サポート対象外
+iOS 12.0 以降|はい|非サポート|サポート対象外|サポート対象外|サポート対象外
 
 > [!NOTE]
-> 一部の機能は、ダウンレベルのオペレーティング システムでは使用できません。サポートされている OS の詳細については、「Microsoft 365 Defender ポータル」を参照してください。
+> 一部の機能は下位レベルのオペレーティング システムでは使用できません。サポートされている OS の詳細については、Microsoft 365 Defender ポータルを参照してください。
 
 > [!IMPORTANT]
-> \*Red Hat Enterprise Linux: "Microsoft Defender for Endpoint サービスの一部として提供され、表示される脆弱性データは、Red Hat, Inc.から"AS IS" という生の形式で提供され、最新の状態ではない可能性があります。 Red Hat Security Data API でアクセス可能なデータは、クリエイティブ コモンズ アトリビューション 4.0 インターナショナル ライセンスの下でライセンスされています。 このデータを使用する場合は、リスクを負います。 Microsoft およびサード パーティのサプライヤーは、非侵害、商品性、特定の目的への適性に関する黙示の保証を含む、結果的および他の間接的損害に対する一切の責任および黙示的保証を否認します。 © 2020 Red Hat. All rights reserved。 © 2020 Microsoft。 すべての権限が予約されています。
+> \*Red Hat Enterprise Linux: "Microsoft Defender for Endpoint サービスの一部として提供され、表示される脆弱性データは、Red Hat, Inc. の未加工の形式である "AS IS" で利用できるようになり、最新ではない可能性があります。 Red Hat Security Data API でアクセスできるデータは、Creative Commons Attribution 4.0 International ライセンスの下でライセンスされています。 このデータを使用する際のリスクは、お客様が負います。 Microsoft およびそのサード パーティのサプライヤーは、非侵害、商品性、特定の目的への適合性に関する暗黙の保証を含む、派生的およびその他の間接的な損害および暗黙の保証に対する一切の責任を負いません。 © 2020 Red Hat。 All rights reserved。 © 2020 Microsoft。 すべての権利が予約されています。
 
 ## <a name="related-articles"></a>関連記事
 
-- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
-- [前提条件&アクセス許可](tvm-prerequisites.md)
+- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [アクセス許可&前提条件](tvm-prerequisites.md)

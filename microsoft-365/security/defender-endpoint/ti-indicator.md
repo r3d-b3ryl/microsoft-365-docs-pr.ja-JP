@@ -1,7 +1,7 @@
 ---
 title: インジケーター リソースの種類
-description: エンティティの詳細を指定し、Microsoft Defender for Endpoint を使用してインジケーターの有効期限を定義します。
-keywords: apis, サポートされている api, get, TiIndicator, Indicator, recent
+description: エンティティの詳細を指定し、Microsoft Defender for Endpointを使用してインジケーターの有効期限を定義します。
+keywords: apis, サポートされている API, get, TiIndicator, Indicator, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -38,26 +38,26 @@ ms.locfileid: "61282802"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-- ポータルの対応 [する [インジケーター] ページ](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) を参照してください。
+- ポータルの対応する [インジケーター ページ](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) を参照してください。
 
 メソッド|戻り値の型|説明
 :---|:---|:---
-[インジケーターの一覧表示](get-ti-indicators-collection.md)|[インジケーター](ti-indicator.md) コレクション|インジケーター [エンティティを](ti-indicator.md) 一覧表示します。
-[インジケーターの送信](post-ti-indicator.md)|[インジケーター](ti-indicator.md)|Indicator エンティティを [送信または更新](ti-indicator.md) します。
-[インジケーターのインポート](import-ti-indicators.md)|[インジケーター](ti-indicator.md) コレクション|インジケーター エンティティを [送信または](ti-indicator.md) 更新します。
-[インジケーターの削除](delete-ti-indicator-by-id.md)|コンテンツはありません|Indicator エンティティ [を削除](ti-indicator.md) します。
+[インジケーターの一覧表示](get-ti-indicators-collection.md)|[インジケーター](ti-indicator.md) コレクション|[インジケーター](ti-indicator.md) エンティティを一覧表示します。
+[インジケーターの送信](post-ti-indicator.md)|[インジケーター](ti-indicator.md)|[Indicator](ti-indicator.md) エンティティを送信または更新します。
+[インジケーターのインポート](import-ti-indicators.md)|[インジケーター](ti-indicator.md) コレクション|[Indicators エンティティを](ti-indicator.md)送信または更新します。
+[インジケーターの削除](delete-ti-indicator-by-id.md)|コンテンツはありません|[インジケーター](ti-indicator.md) エンティティを削除します。
 
 ## <a name="properties"></a>プロパティ
 
 プロパティ|種類|説明
 :---|:---|:---
-id|String|Indicator エンティティ [の](ti-indicator.md) ID。
-indicatorValue|String|Indicator の [値](ti-indicator.md)です。
+id|String|[インジケーター](ti-indicator.md) エンティティの ID。
+indicatorValue|String|[インジケーター](ti-indicator.md)の値。
 indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"FileMd5"、"CertificateThumbprint"、"IpAddress"、"DomainName"、"Url" です。
 アプリケーション|String|インジケーターに関連付けられているアプリケーション。
-action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Warn"、"Block"、"Audit"、"Alert"、"AlertAndBlock"、"BlockAndRemediate"、"Allowed" です。
-|externalID|String|カスタム相関関係の要求で顧客が送信できる ID。|
-sourceType|列挙|"User" ユーザーが作成したインジケーター (ポータルなど) の場合、API を介して自動アプリケーションを使用して送信された場合は"AadApp"。
+action|列挙|インジケーターが組織内で検出された場合に実行されるアクション。 指定できる値は、"警告"、"ブロック"、"監査"、"アラート"、"AlertAndBlock"、"BlockAndRemediate"、"許可" です。
+|externalID|String|顧客がカスタム関連付けの要求で送信できる ID。|
+sourceType|列挙|ユーザーによって作成されたインジケーター (ポータルからなど) の場合は "ユーザー"、API を使用して自動アプリケーションを使用して送信した場合は "AadApp"。
 createdBySource|string|インジケーターを送信したユーザー/アプリケーションの名前。
 createdBy|String|インジケーターを送信したユーザー/アプリケーションの一意の ID。
 lastUpdatedBy|String|インジケーターを最後に更新したユーザー/アプリケーションの ID。
@@ -65,30 +65,30 @@ creationTimeDateTimeUtc|DateTimeOffset|インジケーターが作成された�
 expirationTime|DateTimeOffset|インジケーターの有効期限。
 lastUpdateTime|DateTimeOffset|インジケーターが最後に更新された時刻。
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。
-title|String|インジケーター のタイトル。
-description|String|インジケーターの説明。
-recommendedActions|String|インジケーターの推奨アクション。
-rbacGroupNames|文字列の一覧|インジケーターが公開され、アクティブな RBAC デバイス グループ名。 すべてのデバイスに公開されている場合の空のリスト。
-rbacGroupIds|文字列の一覧|RBAC デバイス グループ ID は、インジケーターが公開され、アクティブな場所です。 すべてのデバイスに公開されている場合の空のリスト。
-generateAlert|列挙|**True** の場合は、アラートの生成が必要です。 **このインジケーターが** アラートを生成しない場合は False を指定します。
+title|String|インジケーターのタイトル。
+説明|String|インジケーターの説明。
+recommendedActions|String|インジケーターに推奨されるアクション。
+rbacGroupNames|文字列の一覧|インジケーターが公開され、アクティブになっている RBAC デバイス グループ名。 すべてのデバイスに公開されている場合の空の一覧。
+rbacGroupIds|文字列の一覧|RBAC デバイス グループ ID は、インジケーターが公開され、アクティブになっている場所です。 すべてのデバイスに公開されている場合の空の一覧。
+generateAlert|列挙|**True アラート** 生成が必要な場合は False、このインジケーターでアラートを生成しない場合は **False** 。
 
 ## <a name="indicator-types"></a>インジケーターの種類
 
-API でサポートされるインジケーター アクションの種類は次のとおりです。
+API でサポートされているインジケーター アクションの種類は次のとおりです。
 
 - 可
 - 監査
 - ブロック
 - BlockAndRemediate
-- Warn (Defender for Cloud Apps のみ)
+- 警告 (Defender for Cloud アプリのみ)
 
-応答アクションの種類の説明の詳細については、「Create indicators 」 [を参照してください](manage-indicators.md)。
+応答アクションの種類の説明の詳細については、「 [インジケーターの作成](manage-indicators.md)」を参照してください。
 
 > [!Note]
 >
-> 以前の応答アクション (AlertAndBlock、および Alert) は、2022 年 1 月までサポートされます。 この日付以降、すべての顧客は上記のいずれかのアクションの種類を使用する必要があります。
+> 以前の応答アクション (AlertAndBlock、および Alert) は、2022 年 1 月までサポートされます。 この日以降、すべての顧客は、上記のいずれかのアクションの種類を使用する必要があります。
 
-## <a name="json-representation"></a>Json 表記
+## <a name="json-representation"></a>Json 表現
 
 ```json
 {

@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: 組織を入力または退出するすべての電子メール メッセージに関する法的免責事項や開示ステートメントを含む電子メール署名を管理します。
+description: 組織に出入りするすべての電子メール メッセージの法的免責事項や開示声明など、電子メール署名を管理します。
 ms.openlocfilehash: d2e8b93825b98724bfd2698d95b93289dee30e00
 ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
@@ -36,23 +36,23 @@ ms.locfileid: "61531185"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 
- 電子メール署名を管理するには、組織を入力または退出する電子メール メッセージに電子メール署名、法的免責事項、または開示ステートメントを追加します。 以下に示すように、すべての送受信メッセージに適用されるように設定できます。 または、特定の単語やテキスト パターンを含むメッセージなど、特定のメッセージに適用することができます。
+ 電子メール署名を管理するには、電子メール署名、法的免責事項、または開示に関する声明を、組織に出入りする電子メール メッセージに追加します。 以下に示すように、すべての送受信メッセージに適用されるように設定できます。 または、特定の単語やテキスト パターンを含むメッセージなど、特定のメッセージに適用することができます。
 
-## <a name="watch-create-a-company-wide-email-signature"></a>ウォッチ: 会社全体のメール署名を作成する
+## <a name="watch-create-a-company-wide-email-signature"></a>ウォッチ: 組織全体の電子メール署名を作成する
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-1. [ファイル]<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">でMicrosoft 365 管理センター</a>を選択 **Exchange。**
-1. [メール **フロー] を選択します**。
-1. [ **追加+] を選択** し、[免責事項の **適用] を選択します**。
-1. [新しい **ルール] ページ** で、手順を完了します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で、**Exchange** を選択します。
+1. [ **メール フロー**] を選択します。
+1. [ **+]** を選択し、[ **免責事項の適用**] を選択します。
+1. [ **新しいルール** ] ページで、手順を完了します。 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>すべてのメッセージに適用される署名を作成する
 
 > [!TIP]
-> 組織全体の署名は、含まれるものに関係なく、「免責事項」と呼ばれる。 たとえば、署名にしたり、住所、法的免責事項、または必要なその他の情報を含む場合があります。
+> 組織全体の署名は、含まれるものに関係なく、"免責事項" と呼ばれます。 たとえば、署名にしたり、住所、法的免責事項、または必要なその他の情報を含めたりすることもできます。
     
 ::: moniker range="o365-worldwide"
 
@@ -66,31 +66,31 @@ ms.locfileid: "61531185"
 
 ::: moniker-end
 
-1. アプリ 起動ツール アプリ ![ 起動ツール アイコンを選択し ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) 、[管理者] を **選択します**。
+1. アプリ起動ツール ![の [アプリ起動ツール] アイコンを](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)選択し、[管理者] を選択 **します**。
    
-    お探しのアプリが見つかりませんか? アプリ 起動ツールから [すべてのアプリ] **を** 選択すると、利用できるアプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
+    お探しのアプリが見つかりませんか? アプリ起動ツールから [ **すべてのアプリ** ] を選択すると、使用可能なアプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
     
-2. [**管理センター] を** 選択し、[管理センター]**をExchange。**
+2. **[管理センター]** を選択し、**Exchange** を選択します。
     
-3. [メール フロー] で、[ルール] **を選択します**。
+3. [メール フロー] で [ルール] を選択 **します**。
     
-4. (追加) **+** アイコンを選択し、[免責事項の適用 **] を選択します**。
+4. (追加) アイコンを **+** 選択し、[ **免責事項の適用**] を選択します。
     
 5. ルールに名前を付けます。
     
-6. [この **ルールを適用する] で**、[ **すべてのメッセージに適用] を選択します**。
+6. [ **このルールを適用**] で **[すべてのメッセージに適用**] を選択します。
     
     > [!TIP]
-    > [こちら](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)を参照してください。 (このスコープの記事は、Exchange Server用ですが、この記事はMicrosoft 365)。 
+    > [こちら](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)を参照してください。 (このスコープの記事はExchange Server用ですが、Microsoft 365にも適用されます)。 
   
 7. [実行する処理] の [ **免責事項を追加する**] はオンのままにします。 
     
-8.  [テキスト **の入力] を選択** し、免責事項を入力します。 
+8.  [ **テキストの入力** ] を選択し、免責事項を入力します。 
     
     > [!TIP]
-    > [免責事項の書式設定の詳細](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)をご確認ください。 (この書式設定の記事は、Exchange Server用ですが、この記事はMicrosoft 365)。 
+    > [免責事項の書式設定の詳細](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)をご確認ください。 (この書式設定の記事はExchange Server用ですが、Microsoft 365にも適用されます)。 
 
-9. **[1 つ選択] を** 選択し、[**フォールバックとして折り** 返す] オプションを選択します。 [ **OK**] を選択します。 これは、暗号化や別のメール設定のために免責事項を追加できない場合に、メッセージ エンベロープで免責事項がラップされることを意味します。
+9. **1 つを選択** し、[フォールバックとして **折り返す**] オプションを選択します。 [ **OK**] を選択します。 これは、暗号化や別のメール設定のために免責事項を追加できない場合に、メッセージ エンベロープで免責事項がラップされることを意味します。
     
 10. [ **このルールを次の重大度レベルで監査する**] はオンのままにします。次に、メッセージ ログに使用する [ **低**]、[ **中**]、または [ **高**] を選択します。 
     
@@ -100,27 +100,27 @@ ms.locfileid: "61531185"
     
 13. 完了したら、[ **保存**] を選択します。 
     
-## <a name="limitations-of-organization-wide-signatures"></a>組織全体の署名の制限
+## <a name="limitations-of-organization-wide-signatures"></a>組織全体の署名の制限事項
 
-メール署名を管理するときに、次の操作を実行Microsoft 365。
+Microsoft 365で電子メール署名を管理する場合は、次の操作を行うことはできません。
   
 - 最新のメール返信または転送の下に署名を直接挿入する
     
-- ユーザーの送信アイテム フォルダーにサーバー側の電子メール署名を表示する
+- ユーザーの送信済みアイテム フォルダーにサーバー側の電子メール署名を表示する
     
-- メール署名に画像を埋め込む
+- 電子メール署名に画像を埋め込む
     
-- 更新できなかった変数を含む行をスキップする (たとえば、値がユーザーに提供されたため)
+- 更新できなかった変数を含む行をスキップする (たとえば、値がユーザーに指定されなかったため)
     
-電子メール署名を管理するためのこれらの機能や他の機能を取得するには、サードパーティのツールを使用します。 電子メール署名ソフトウェアのインターネット **検索を行ってください**。 これらのプロバイダーの多くが Microsoft Gold Partners であり、そのソフトウェアがこれらの機能を提供します。 
+これらの機能やその他の機能を利用して電子メール署名を管理するには、サード パーティのツールを使用します。 **電子メール署名ソフトウェア** のインターネット検索を行ってください。 これらのプロバイダーの多くは Microsoft Gold パートナーであり、そのソフトウェアはこれらの機能を提供します。 
   
 ## <a name="more-resources"></a>その他のリソース
 
-PowerShell の使用の詳細については、「組織全体のメッセージの免責事項、署名、フッター、またはヘッダー」を参照[Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+PowerShell の使用の詳細については、[Exchange Onlineの組織全体のメッセージの免責事項、署名、フッター、またはヘッダーに関するページを](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[メールと連絡先をメール (ビデオ) Microsoft 365](migrate-email-and-contacts-admin.md)に移行する
-[ユーザーのメール設定](../email/office-365-user-email-settings.md) (記事)\
-[概要] [Microsoft 365 管理センター][Microsoft 365 管理センター](./admin-overview/admin-center-overview.md) (ビデオ)
+[メールと連絡先をMicrosoft 365に移行する](migrate-email-and-contacts-admin.md) (ビデオ)\
+[ユーザーの電子メール設定](../email/office-365-user-email-settings.md) (記事)\
+[Microsoft 365 管理センターの概要](Microsoft 365 管理センターの概要](../admin-overview/admin-center-overview.md) (ビデオ)
 

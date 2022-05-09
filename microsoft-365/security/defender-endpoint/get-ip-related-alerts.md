@@ -1,7 +1,7 @@
 ---
-title: IP 関連のアラート API を取得する
-description: エンドポイント用 Microsoft Defender を使用して、特定の IP アドレスに関連するアラートのコレクションを取得する
-keywords: apis, graph api, supported apis, get, ip, related, alerts
+title: IP 関連アラート API を取得する
+description: Microsoft Defender for Endpointを使用して、特定の IP アドレスに関連するアラートのコレクションを取得する
+keywords: apis, graph api, サポートされている API, get, ip, related, alerts
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61283787"
 ---
-# <a name="get-ip-related-alerts-api"></a>IP 関連のアラート API を取得する
+# <a name="get-ip-related-alerts-api"></a>IP 関連アラート API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,11 +47,11 @@ ms.locfileid: "61283787"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については [、「Use Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
+アプリケーション|Alert.Read.All|'すべてのアラートを読み取る'
 アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
 委任 (職場または学校のアカウント) | Alert.Read | 'アラートの読み取り'
 委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
@@ -59,8 +59,8 @@ ms.locfileid: "61283787"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - 応答には、デバイス グループ設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられたアラートだけが含まれます[](machine-groups.md)(詳細については、「デバイス グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
+> - 応答には、デバイス グループの設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられたアラートのみが含まれます (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -80,7 +80,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合と IP が存在する場合 -[](alerts.md)本文のアラート エンティティの一覧で 200 OK。 IP アドレスが不明で有効な場合は、空のセットが返されます。
+成功し、IP が存在する場合 - 本文内の [アラート](alerts.md) エンティティの一覧を含む 200 OK。 IP アドレスが不明で有効な場合は、空のセットが返されます。
 IP アドレスが無効な場合は、HTTP 400 が返されます。
 
 ## <a name="example"></a>例

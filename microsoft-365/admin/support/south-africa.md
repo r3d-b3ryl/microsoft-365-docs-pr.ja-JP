@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373346"
 ---
-# <a name="contact-support-for-south-africa"></a>南アフリカのサポートに問い合わせ
+# <a name="contact-support-for-south-africa"></a>南アフリカのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

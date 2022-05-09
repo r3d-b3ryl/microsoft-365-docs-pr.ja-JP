@@ -19,18 +19,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371666"
 ---
-# <a name="contact-support-for-nepal"></a>ネパールのサポートに問い合わせ
+# <a name="contact-support-for-nepal"></a>ネパールのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
-電話サポートは利用できません。オンライン サポートのみ。
+電話でのサポートは利用できません。オンライン サポートのみ。
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-電話で利用できない
+電話では利用できません
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-電話で利用できない
+電話では利用できません

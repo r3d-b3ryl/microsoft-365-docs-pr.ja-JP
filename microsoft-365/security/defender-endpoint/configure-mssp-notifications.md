@@ -33,18 +33,18 @@ ms.locfileid: "61217484"
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 > [!NOTE]
-> この手順は、MSSP カスタマーまたは MSSP によって実行できます。 MSSP のお客様に代わってこれを構成するための適切なアクセス許可を MSSP に付与する必要があります。
+> この手順は、MSSP のお客様または MSSP によって行うことができます。 MSSP のお客様に代わってこれを構成するための適切なアクセス許可を MSSP に付与する必要があります。
 
-ポータルへのアクセスが許可されると、アラート通知ルールを作成して、テナントに関連付けられたアラートが作成され、条件が満たされた場合にメールが MSSP に送信されます。
+ポータルへのアクセスが許可されたら、アラート通知ルールを作成して、テナントに関連付けられたアラートが作成され、条件が満たされたときに電子メールが MSSP に送信されるようにすることができます。
 
-詳細については、「アラート通知の [ルールを作成する」を参照してください](configure-email-notifications.md#create-rules-for-alert-notifications)。
+詳細については、「 [アラート通知のルールを作成する」を参照してください](configure-email-notifications.md#create-rules-for-alert-notifications)。
 
 次のチェック ボックスをオンにする必要があります。
 
-- **[組織名を含** める] - 顧客名が電子メール通知に追加されます
-- **[テナント固有のポータル リンクを含める** ] - アラート リンク URL には、ターゲット テナント ポータルに直接アクセスできるテナント固有のパラメーター (tid=target_tenant_id) が含まれます。
+- **組織名を含める** - 顧客名が電子メール通知に追加されます
+- **テナント固有のポータル リンクを含める** - アラート リンク URL には、ターゲット テナント ポータルへの直接アクセスを許可するテナント固有のパラメーター (tid=target_tenant_id) が含まれます
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)

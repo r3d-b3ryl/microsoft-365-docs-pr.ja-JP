@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371366"
 ---
-# <a name="contact-support-for-latvia"></a>ラトビアのサポートに問い合わせ
+# <a name="contact-support-for-latvia"></a>ラトビアのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

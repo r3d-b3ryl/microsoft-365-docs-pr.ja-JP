@@ -1,5 +1,5 @@
 ---
-title: パートナー Microsoft 365 Business Premiumから情報を取得する
+title: パートナー センターからMicrosoft 365 Business Premiumを取得する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Microsoft パートナー センターから購入するMicrosoft 365 Business Premium手順と手順に従って購入する方法について説明します。
+description: Microsoft 365 Business Premiumを購入するためのオプションと、Microsoft パートナー センターから購入するための詳細な手順について説明します。
 ms.openlocfilehash: f22fc831cb52e23a61e64950a2b9396d85a15dca
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
@@ -36,24 +36,24 @@ ms.locfileid: "60175661"
 
 ## <a name="get-microsoft-365-business-premium-from-microsoft"></a>Microsoft からMicrosoft 365 Business Premiumを取得する
 
-パートナーがいない場合は、ここでMicrosoft 365 Business Premium購入[できます](https://www.microsoft.com/en-US/microsoft-365/business)。
+パートナーがいなくて、Microsoft 365 Business Premiumを取得したい場合は、[ここで購入](https://www.microsoft.com/en-US/microsoft-365/business)できます。
 
-詳細[な手順については、「Microsoft 365 Business Premium](sign-up.md)サインアップ」を参照してください。
+詳細な手順については、[Microsoft 365 Business Premiumのサインアップ](sign-up.md)に関するページを参照してください。
 
-また、ユーザーにアクセスして、Microsoft Store[購入Microsoft 365 Business Premium](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS)セットアップ のヘルプを受け取る方法を説明します。
+Microsoft Storeに進んで[Microsoft 365 Business Premium](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS)を購入し、セットアップのヘルプを受けることもできます。
   
-## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>Microsoft パートナー Microsoft 365 Business Premiumから情報を取得する
+## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>Microsoft パートナー センターからMicrosoft 365 Business Premiumを取得する
 
 1. クラウド サービス プロバイダー (CSP) プログラムに登録するときに作成した資格情報を使用して、[Microsoft パートナー センター](https://go.microsoft.com/fwlink/p/?linkid=849910)にサインインします。 
     
-2. [パートナー ダッシュボード] で、[**顧客**] を選択し、顧客を選択するか、新しい顧客を追加してからMicrosoft 365 Business Premium。
+2. パートナー ダッシュボードで [**顧客**] を選択し、顧客を選択するか、新しい顧客を追加してからMicrosoft 365 Business Premium。
     
     ![Microsoft パートナー センターで、顧客を追加します。](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. 顧客の [サブスクリプション] ページ **で**、[サブスクリプションの追加] を選択し、[カタログ] の [小規模ビジネス] オプションを選択し、[サブスクリプション]**を** Microsoft 365 Business Premium。 
+3. 顧客の **[サブスクリプション]** ページで、[**サブスクリプションの追加**] を選択し、[カタログ] の [小規模ビジネス] オプションを選択して、[**Microsoft 365 Business Premium**] を選択します。
     
-    必要なライセンス数 (最大 300) を選びます。 ユーザーが 300 人を超える場合は、代わりに「Microsoft 365 Enterprise」[を](../enterprise/index.yml)参照してください。 
+    必要なライセンス数 (最大 300) を選びます。 ユーザーが 300 人を超える場合は、代わりに[Microsoft 365 Enterprise](../enterprise/index.yml)を参照してください。 
     
     ![[新しいサブスクリプション] ページで、[小規模ビジネス] を選択します。](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
-    ビジネス名を含む、新しい顧客を追加するための残りの手順を完了します。
+    ビジネス名を含め、新しい顧客を追加するための残りの手順を完了します。

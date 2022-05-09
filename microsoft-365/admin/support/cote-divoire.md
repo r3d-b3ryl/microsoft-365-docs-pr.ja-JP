@@ -1,5 +1,5 @@
 ---
-title: コートジボワールのサポート情報
+title: Côte d'Ivoire のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -39,7 +39,7 @@ ms.locfileid: "61371822"
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-フランス語: Mon-Fri 7 AM-8 PM
+フランス語: Mon-Fri午前 7 時から午後 8 時
 
 英語: 24 時間年中無休
 

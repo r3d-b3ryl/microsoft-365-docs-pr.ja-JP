@@ -1,7 +1,7 @@
 ---
 title: 暴露スコアを取得する
-description: 組織の露出スコアを取得します。
-keywords: apis, graph api, supported apis, get, exposure score, 組織の露出スコア
+description: 組織の公開スコアを取得します。
+keywords: apis, graph api, サポートされている API, get, exposure score, 組織の公開スコア
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -38,11 +38,11 @@ ms.locfileid: "61302112"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-組織の露出スコアを取得します。
+組織の公開スコアを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
@@ -57,7 +57,7 @@ GET /api/exposureScore
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 ---|---|---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -67,7 +67,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、応答本文に露出データを返します。
+成功した場合、このメソッドは 200 OK を返し、応答本文の露出データを返します。
 
 ## <a name="example"></a>例
 
@@ -84,7 +84,7 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
 以下は、応答の例です。
 
 > [!NOTE]
-> ここに示す応答リストは、簡単に切り詰められることがあります。
+> 簡潔にするために、ここに示す応答の一覧が切り捨てられる場合があります。
 
 ```json
 {
@@ -96,5 +96,5 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
 
 ## <a name="see-also"></a>関連項目
 
-- [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [脅威&脆弱性の暴露スコア](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [脅威&脆弱性の公開スコア](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

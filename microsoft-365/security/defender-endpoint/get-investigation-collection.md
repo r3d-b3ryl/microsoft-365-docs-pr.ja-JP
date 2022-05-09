@@ -1,6 +1,6 @@
 ---
-title: リスト調査 API
-description: この API を使用して、Investigations コレクションの取得に関連する呼び出しを作成する
+title: List Investigations API
+description: この API を使用して、Investigations コレクションの取得に関連する呼び出しを作成します。
 keywords: apis、graph api、サポートされている API、Investigations コレクション
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61284195"
 ---
-# <a name="list-investigations-api"></a>リスト調査 API
+# <a name="list-investigations-api"></a>List Investigations API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,15 +39,15 @@ ms.locfileid: "61284195"
 
 ## <a name="api-description"></a>API の説明
 
-調査のコレクション [を取得します](investigation.md)。
+調査のコレクションを取得 [します](investigation.md)。
 
 [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 
-OData のクエリは `$filter` 、次のプロパティ `startTime` `id` で `state` `machineId` サポート `triggeringAlertId` されています。
+OData の`$filter`クエリは、次の`triggeringAlertId``startTime``id``state``machineId`プロパティでサポートされます。
 <br>```$stop``` 最大値が 10,000 の場合
 <br>```$skip```
 
-Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
+[Microsoft Defender for Endpointを使用した OData クエリの例を](exposed-apis-odata-samples.md)参照してください
 
 ## <a name="limitations"></a>制限事項
 
@@ -56,11 +56,11 @@ Microsoft Defender [for Endpoint を使用した OData クエリの例を参照�
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
+アプリケーション|Alert.Read.All|'すべてのアラートを読み取る'
 アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
 委任 (職場または学校のアカウント)|Alert.Read|'アラートの読み取り'
 委任 (職場または学校のアカウント)|Alert.ReadWrite|'アラートの読み取りと書き込み'
@@ -68,7 +68,7 @@ Microsoft Defender [for Endpoint を使用した OData クエリの例を参照�
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -88,7 +88,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 の Ok 応答コードを [、Investigations](investigation.md) エンティティのコレクションと一緒に返します。
+成功した場合、このメソッドは、 [Investigations](investigation.md) エンティティのコレクションを含む 200 OK 応答コードを返します。
 
 ## <a name="example"></a>例
 

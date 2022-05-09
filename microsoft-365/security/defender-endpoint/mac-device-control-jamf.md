@@ -1,7 +1,7 @@
 ---
 title: JAMF のデバイス制御ポリシーの例
-description: JAMF で使用できる例を使用してデバイス制御ポリシーを使用する方法について説明します。
-keywords: microsoft、 defender、 endpoint, Microsoft Defender for Endpoint, mac, device, control, usb, リムーバブル, メディア, jamf
+description: JAMF で使用できる例を使用して、デバイス制御ポリシーを使用する方法について説明します。
+keywords: microsoft, defender, エンドポイント, Microsoft Defender for Endpoint, mac, デバイス, コントロール, USB, リムーバブル, メディア, jamf
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -33,11 +33,11 @@ ms.locfileid: "62766034"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-このドキュメントには、独自の組織用にカスタマイズできるデバイス制御ポリシーの例が記載されています。 これらの例は、JAMF を使用して企業内のデバイスを管理する場合に適用されます。
+このドキュメントには、独自の組織用にカスタマイズできるデバイス制御ポリシーの例が含まれています。 これらの例は、JAMF を使用して企業内のデバイスを管理する場合に適用されます。
 
 ## <a name="restrict-access-to-all-removable-media"></a>すべてのリムーバブル メディアへのアクセスを制限する
 
-次の例では、すべてのリムーバブル メディアへのアクセスを制限します。 ポリシーの `none` トップ レベルで適用されるアクセス許可に注意してください。つまり、すべてのファイル操作が禁止されます。
+次の例では、すべてのリムーバブル メディアへのアクセスを制限します。 ポリシーの `none` 最上位レベルで適用されるアクセス許可に注意してください。つまり、すべてのファイル操作が禁止されます。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -62,7 +62,7 @@ ms.locfileid: "62766034"
 
 ## <a name="set-all-removable-media-to-be-read-only"></a>すべてのリムーバブル メディアを読み取り専用に設定する
 
-次の例では、すべてのリムーバブル メディアを読み取り専用に構成します。 ポリシーの `read` トップ レベルで適用されるアクセス許可に注意してください。つまり、すべての書き込みおよび実行操作は許可されません。
+次の例では、すべてのリムーバブル メディアを読み取り専用に構成します。 ポリシーの `read` 最上位レベルで適用されるアクセス許可に注意してください。つまり、すべての書き込み操作と実行操作は許可されません。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -85,9 +85,9 @@ ms.locfileid: "62766034"
 </plist>
 ```
 
-## <a name="disallow-program-execution-from-removable-media"></a>リムーバブル メディアからのプログラムの実行を禁止する
+## <a name="disallow-program-execution-from-removable-media"></a>リムーバブル メディアからプログラムの実行を禁止する
 
-次の例は、リムーバブル メディアからのプログラムの実行を禁止する方法を示しています。 ポリシーの `read` トップ `write` レベルで適用されるアクセス許可とアクセス許可に注意してください。
+次の例は、リムーバブル メディアからのプログラムの実行を禁止する方法を示しています。 ポリシーの `read` 最上位レベルで適用されるアクセス許可と `write` アクセス許可に注意してください。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -111,9 +111,9 @@ ms.locfileid: "62766034"
 </plist>
 ```
 
-## <a name="restrict-all-devices-from-specific-vendors"></a>特定のベンダーからすべてのデバイスを制限する
+## <a name="restrict-all-devices-from-specific-vendors"></a>特定のベンダーからのすべてのデバイスを制限する
 
-次の使用例は、特定のベンダーからのすべてのデバイスを制限します (この場合は、and で識別 `fff0` されます `4525`)。 ポリシーのトップ レベルで定義されたアクセス許可には、すべての可能なアクセス許可 (読み取り、書き込み、実行) が一覧表示されますので、他のすべてのデバイスは制限されません。
+次の例では、特定のベンダーからのすべてのデバイスを制限します (この場合は、特定され `fff0` 、 `4525`特定されます)。 ポリシーの最上位レベルで定義されているアクセス許可には、使用可能なすべてのアクセス許可 (読み取り、書き込み、実行) が一覧表示されるため、他のすべてのデバイスは制限されません。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -157,7 +157,7 @@ ms.locfileid: "62766034"
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>ベンダー ID、製品 ID、シリアル番号で識別される特定のデバイスを制限する
 
-次の例では、ベンダー ID、製品 ID`fff0``1000`、シリアル番号で識別される 2 つの特定のデバイスを制限`04ZSSMHI2O7WBVOA`します`04ZSSMHI2O7WBVOB`。 ポリシーの他のすべてのレベルでは、アクセス許可には、すべての可能な値 (読み取り、書き込み、実行) が含まれます。つまり、他のすべてのデバイスは制限されません。
+次の例では、ベンダー ID、製品 ID`fff0``1000`、シリアル番号`04ZSSMHI2O7WBVOA``04ZSSMHI2O7WBVOB`、および . ポリシーの他のすべてのレベルでは、アクセス許可に可能なすべての値 (読み取り、書き込み、実行) が含まれています。つまり、他のすべてのデバイスは制限されません。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

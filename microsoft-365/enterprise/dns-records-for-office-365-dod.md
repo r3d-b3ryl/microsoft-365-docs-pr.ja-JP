@@ -18,7 +18,7 @@ search.appverid:
 - OGD150
 - MOE150
 ms.assetid: ''
-description: '概要: DoD の DNS レコードOffice 365します。'
+description: '概要: Office 365 DoD の DNS レコード'
 hideEdit: true
 ms.openlocfilehash: f3d7926b69de24786891406a7613c44ab5013dfa
 ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
@@ -29,35 +29,35 @@ ms.locfileid: "62806362"
 ---
 # <a name="dns-records-for-office-365-dod"></a>Office 365 DoD の DNS レコード
 
-*この記事は DoD および DoD Office 365にMicrosoft 365します。*
+*この記事は、Office 365 DoD と Microsoft 365 DoD に適用されます*
 
-DoD へのオンボーディングOffice 365、オンライン サービス テナントに SMTP ドメインと SIP ドメインを追加する必要があります。  これを行うには、Azure AD PowerShell の New-MsolDomain コマンドレットを使用するか、[Azure Government Portal](https://portal.azure.us) を使用してドメインを追加して所有権を確認するプロセスを開始します。
+Office 365 DoD へのオンボードの一環として、SMTP ドメインと SIP ドメインを Online Services テナントに追加する必要があります。  これを行うには、Azure AD PowerShell のNew-MsolDomain コマンドレットを使用するか[、Azure Government ポータルを](https://portal.azure.us)使用してドメインを追加し、所有権を証明するプロセスを開始します。
 
-ドメインをテナントに追加して検証したら、次のガイダンスを使用して、以下のサービスに適切な DNS レコードを追加します。  受信 MX レコードおよび既存の Exchange 自動検出レコードに関して、組織のニーズに合わせて以下の表を変更する必要がある場合があります。  これらの DNS レコードをメッセージング チームと調整して、電子メールの停止や配信の誤りを避けることを強く推奨します。
+テナントにドメインを追加して検証したら、次のガイダンスを使用して、以下のサービスに適切な DNS レコードを追加します。  受信 MX レコードと既存の自動検出レコードに関する組織のニーズに合わせて、次の表Exchange変更する必要がある場合があります。  これらの DNS レコードをメッセージング チームと調整し、電子メールの停止や誤配信を回避することを強くお勧めします。
 
 ## <a name="exchange-online"></a>Exchange Online
 
-| Type | Priority | ホスト名 | アドレスまたは値をポイントする | TTL |
+| Type | Priority | ホスト名 | アドレスまたは値を指す | TTL |
 | --- | --- | --- | --- | --- |
-| MX | 0 | @ | *tenant.mail.protection.office365.us* (詳細については、以下を参照してください) | 1 時間 |
+| MX | 0 | @ | *tenant.mail.protection.office365.us* (詳細については、以下を参照) | 1 時間 |
 | TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | 1 時間 |
 | CNAME | - | autodiscover | autodiscover-dod.office365.us | 1 時間 |
 
-### <a name="exchange-autodiscover-record"></a>Exchange検出レコード
+### <a name="exchange-autodiscover-record"></a>自動検出レコードのExchange
 
-オンプレミスでExchange Server場合は、Exchange Online への移行中に既存のレコードを残し、移行が完了したらそのレコードを更新することをお勧めします。
+オンプレミスにExchange Serverがある場合は、Exchange Onlineに移行するときに既存のレコードを配置したままにし、移行が完了したらそのレコードを更新することをお勧めします。
 
-### <a name="exchange-online-mx-record"></a>Exchange Online MX レコード
+### <a name="exchange-online-mx-record"></a>MX レコードのExchange Online
 
-受け入れドメインの MX レコード値は、上記の標準形式に従います。*tenant.mail.protection.office365.us* は、テナントを既定のテナント名の最初の部分に置き換えます。
+承認済みドメインの MX レコード値は、上記の標準形式に従います。 *tenant.mail.protection.office365.us*、テナントを既定の *テナント* 名の最初の部分に置き換えます。
 
-たとえば、テナント名が contoso.onmicrosoft.us、MX レコード **contoso.mail.protection.office365.us として使用** します。
+たとえば、テナント名が contoso.onmicrosoft.us されている場合は、MX レコードの値として **contoso.mail.protection.office365.us** を使用します。
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online
 
 ### <a name="cname-records"></a>CNAME レコード
 
-| 種類 | ホスト名 | アドレスまたは値をポイントする | TTL |
+| 種類 | ホスト名 | アドレスまたは値を指す | TTL |
 | --- | --- | --- | --- |
 | CNAME | sip | sipdir.online.dod.skypeforbusiness.us | 1 時間 |
 | CNAME | lyncdiscover | webdir.online.dod.skypeforbusiness.us | 1 時間 | 
@@ -66,10 +66,10 @@ DoD へのオンボーディングOffice 365、オンライン サービス テ�
 
 | 種類 | サービス | プロトコル | ポート | 太さ | 優先度 | 名前 | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.dod.skypeforbusiness.us | 1 時間 |
-| SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.dod.skypeforbusiness.us | 1 時間 |
+| SRV | \_sip | \_Tls | 443 | 1 | 100 | @ | sipdir.online.dod.skypeforbusiness.us | 1 時間 |
+| SRV | \_sipfederationtls | \_Tcp | 5061 | 1 | 100 | @ | sipfed.online.dod.skypeforbusiness.us | 1 時間 |
 
 ## <a name="other-dns-records"></a>その他の DNS レコード
 
 > [!IMPORTANT]
-> DNS ゾーンに既存の *msoid* CNAME レコードがある場合は、この時点で DNS  からレコードを削除する必要があります。  msoid レコードは、Microsoft 365 Enterprise (以前はOffice 365 ProPlus *)* と互換性がありません。ライセンス認証が成功しません。
+> DNS ゾーンに既存 *の msoid* CNAME レコードがある場合は、この時点で DNS からレコードを **削除** する必要があります。  msoid レコードは、Microsoft 365 Enterprise Apps *(以前はOffice 365 ProPlus)* と互換性がなく、アクティブ化が成功するのを防ぎます。

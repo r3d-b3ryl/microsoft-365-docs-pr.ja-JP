@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371930"
 ---
-# <a name="contact-support-for-wallis-and-futuna"></a>Wallis と Futuna のサポートに問い合わせ
+# <a name="contact-support-for-wallis-and-futuna"></a>Wallis と Futuna のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,14 +29,14 @@ ms.locfileid: "61371930"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-フランス語: Sun-Fri 8 PM-4 AM
+フランス語: Sun-Fri午後 8 時から午前 4 時
 
-英語: Sun-Fri 8 PM-4 AM
+英語: Sun-Fri午後 8 時から午前 4 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-フランス語: Mon-Fri 7 PM-8 AM
+フランス語: Mon-Fri午後 7 時から午前 8 時
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

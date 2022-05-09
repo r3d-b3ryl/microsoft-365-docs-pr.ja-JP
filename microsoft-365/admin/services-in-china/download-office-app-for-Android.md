@@ -1,5 +1,5 @@
 ---
-title: 21Vianet がOffice アプリする Android 用Office 365ダウンロード
+title: 21Vianet が運用する Android for Office 365のOffice アプリをダウンロードする
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: 21Vianet がMicrosoft Officeする Android Office 365アプリと、中国の顧客向けアプリをダウンロードする方法について説明します。
+description: Android for Office 365 21Vianet が運用するMicrosoft Office アプリの詳細と、中国のお客様向けにダウンロードする方法について説明します。
 monikerRange: o365-21vianet
 ms.openlocfilehash: 7351fb9c63250a0207d45f767a409e7953c93103
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
@@ -27,37 +27,37 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60199251"
 ---
-# <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>Office アプリ 21Vianet Office 365 Android 用のアプリ
+# <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>21Vianet が運用する android for Office 365のOffice アプリ
 
-Android Microsoft Officeアプリは、Word、Excel、PowerPointモバイル アプリを、Android 携帯電話用にダウンロードできる 1 つのアプリに組み合わせたアプリです。 Android 用Office アプリを使用すると、Word、Office 365、およびモバイル アプリと同Excel、PowerPoint接続できます。 Android Office アプリダウンロードの機能は、Word、アプリ、およびアプリの既存のインストールExcel影響PowerPoint。
+Android 用のMicrosoft Office アプリは、Word、Excel、PowerPointモバイル アプリを組み合わせて、Android スマートフォン用にダウンロードできる 1 つのアプリにしています。 Android 用のOffice アプリを使用すると、Word、Excel、PowerPoint モバイル アプリと同じようにOffice 365に接続できます。 Android ダウンロードのOffice アプリは、Word、Excel、およびPowerPointの既存のインストールには影響しません。
 
-21Vianet Office アプリが運用する Android 機能の一部Office 365使用できません。
+Android 機能のいくつかのOffice アプリは、21Vianet のお客様が運用するOffice 365では使用できません。
 
-- テキストへの画像と表への画像 
-- Lens から写真を Word ドキュメントに変換する 
-- [ファイルの転送] アクション 
-- メモはローカルのままで、サーバーと同期しない
+- Image to text and Image to table 
+- Lens から Word 文書に写真を変換する 
+- ファイル転送アクション 
+- ノートはローカルのままで、サーバーと同期しない
 - スキャン QR 内のリンク プレビュー
-- [Me] セクションのライブ ペルサ カード
+- [自分] セクションのライブ ペルソナ カード
 - 分類、ラベル付け、および保護 (CLP)
 
 
 ## <a name="download-the-office-app-for-android"></a>Android 用のOffice アプリをダウンロードする
 
-以下の中国Office アプリから Android スマートフォン用のアプリをダウンロードします。
+次のいずれかの中国ストアから Android スマートフォンのOffice アプリをダウンロードします。
 - [Baidu](https://shouji.baidu.com/software/26842919.html)
-- [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
-- [Lenovo](https://www.lenovomm.com/appdetail/com.microsoft.office.officehub/43003745)
+- [小米科技](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
+- [レノボ](https://www.lenovomm.com/appdetail/com.microsoft.office.officehub/43003745)
 - [360](http://zhushou.360.cn/detail/index/soft_id/708682?recrefer=SE_D_office%20mobile)
-- [tencent](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)
+- [Tencent](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)
 - [wandoujia](https://www.wandoujia.com/apps/1502895)
 
 > [!NOTE]
-> Android のOffice アプリは、現在携帯電話でのみ利用できます。 タブレットのサポートは後で追加されます。 
+> Android のOffice アプリは現在、電話でのみ使用できます。 タブレットのサポートは、後で追加される予定です。 
 
 
 ## <a name="security-considerations"></a>セキュリティに関する考慮事項
 
-組織が従業員のモバイル デバイスにアプリをプッシュする場合は、Word、Excel、および PowerPoint アプリを Android 用の Office アプリに置き換Office アプリお勧めします。  
+組織が従業員のモバイル デバイスにアプリをプッシュする場合は、Word アプリ、Excel アプリ、PowerPoint アプリを Android 用のOffice アプリに置き換えることをお勧めします。  
 
 

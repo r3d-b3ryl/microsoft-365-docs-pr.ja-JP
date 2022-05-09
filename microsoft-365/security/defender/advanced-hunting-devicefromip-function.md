@@ -1,7 +1,7 @@
 ---
-title: デバイスの高度な検索で DeviceFromIP() Microsoft 365 Defender
-description: DeviceFromIP() 関数を使用して、特定の IP アドレスが割り当てられているデバイスを取得する方法について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、device、devicefromIP、function、enrichment
+title: Microsoft 365 Defenderの高度なハンティングにおける DeviceFromIP() 関数
+description: DeviceFromIP() 関数を使用して、特定の IP アドレスが割り当てられているデバイスを取得する方法について説明します
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, デバイス, devicefromIP, 関数, エンリッチメント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -37,9 +37,9 @@ ms.locfileid: "61531581"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
-高度な検索クエリの関数を使用して、特定の時点で特定の IP アドレスに割り当てられているデバイスの一覧 `DeviceFromIP()` をすばやく取得します。 [](advanced-hunting-overview.md) 
+特定の `DeviceFromIP()` 時点で特定の IP アドレスに割り当てられているデバイスの一覧をすばやく取得するには、 [高度なハンティング](advanced-hunting-overview.md) クエリの関数を使用します。 
 
-この関数は、次の列を持つテーブルを返します。
+この関数は、次の列を含むテーブルを返します。
 
 | Column | データ型 | 説明 |
 |------------|-------------|-------------|
@@ -57,8 +57,8 @@ invoke DeviceFromIP()
 
 この関数は、クエリの一部として呼び出されます。
 
-- **x**—最初のパラメーターは、通常、クエリ内の列です。 この例では、割り当てられているデバイスの一覧を表示する IP アドレスという名前の列 `IP` です。 ローカル IP アドレスである必要があります。 外部 IP アドレスはサポートされていません。
-- **y**:2 番目の省略可能なパラメーターは、特定の時刻から最新の割り当てられたデバイスを取得するように関数 `Timestamp` に指示します。 指定しない場合、関数は使用可能な最新のレコードを返します。
+- **x** - 最初のパラメーターは通常、クエリ内の列に既に存在します。 この場合、この列は、割り当てられているデバイスの一覧を表示する IP アドレスという名前 `IP`の列です。 ローカル IP アドレスにする必要があります。 外部 IP アドレスはサポートされていません。
+- **y** - 2 番目の `Timestamp`省略可能なパラメーターは、特定の時刻から最新の割り当て済みデバイスを取得するように関数に指示するパラメーターです。 指定しない場合、関数は使用可能な最新のレコードを返します。
 
 ## <a name="example"></a>例
 

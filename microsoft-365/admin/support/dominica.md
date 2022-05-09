@@ -1,5 +1,5 @@
 ---
-title: ドミニカのサポート情報
+title: Dominica のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373610"
 ---
-# <a name="contact-support-for-dominica"></a>ドミニカのサポートに問い合わせ
+# <a name="contact-support-for-dominica"></a>Dominica のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -35,4 +35,4 @@ ms.locfileid: "61373610"
 
 スペイン語: 24 時間、週 7 日
 
-国際通話料が適用される
+国際通話料金が適用されます

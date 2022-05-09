@@ -1,7 +1,7 @@
 ---
 title: アラート API の一覧表示
-description: リスト 通知 API を使用して、Microsoft Defender for Endpoint のアラートのコレクションを取得する方法について説明します。
-keywords: apis, graph api, supported apis, get, alerts, recent
+description: List alerts API を使用して、Microsoft Defender for Endpointのアラートのコレクションを取得する方法について説明します。
+keywords: apis, graph api, サポートされている API, get, alerts, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -43,26 +43,26 @@ ms.locfileid: "61283499"
 アラートのコレクションを取得します。
 <br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 <br>OData でサポートされている演算子:
-<br>```$filter``` on: ```alertCreationTime``` ```lastUpdateTime``` , , , , ```incidentId``` , , , , , and ```InvestigationId``` ```id``` ```asssignedTo``` ```detectionSource``` ```lastEventTime``` ```status``` ```severity``` ```category``` properties.
+<br>```$filter```on: ```alertCreationTime```, , ```lastUpdateTime```, ```incidentId```, ```InvestigationId```, ```asssignedTo``````id```, ```detectionSource```, ```lastEventTime```, ```status```, ```severity``` and ```category``` properties.
 <br>```$top``` 最大値が 10,000 の場合
 <br>```$skip```
 <br>```$expand``` の ```evidence```
-<br>Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
+<br>[Microsoft Defender for Endpointを使用した OData クエリの例を](exposed-apis-odata-samples.md)参照してください
 
 
 ## <a name="limitations"></a>制限事項
-1. 構成済みの保持期間に従って、最後に更新されたアラートを取得できます。
+1. 構成された保有期間に従って、最後に更新されたアラートを取得できます。
 2. 最大ページ サイズは 10,000 です。
 3. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。 
 
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
-アプリケーション | Alert.Read.All | 'すべてのアラートの読み取り'
+アプリケーション | Alert.Read.All | 'すべてのアラートを読み取る'
 アプリケーション | Alert.ReadWrite.All | 'すべてのアラートの読み取りと書き込み'
 委任 (職場または学校のアカウント) | Alert.Read | 'アラートの読み取り'
 委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
@@ -70,8 +70,8 @@ ms.locfileid: "61283499"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - 応答には、デバイス グループ設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられているアラートだけが含まれます[](machine-groups.md)(詳細については、「デバイス グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"データの表示" (詳細については、「 [ロールの作成と管理](user-roles.md) 」を参照)
+> - 応答には、デバイス グループの設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられているアラートのみが含まれます (詳細については、 [デバイス グループの作成と管理](machine-groups.md) に関するページを参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -91,9 +91,9 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、応答本文の [アラート](alerts.md) オブジェクトの一覧を返します。
+成功した場合、このメソッドは 200 OK と、応答本文内の [アラート](alerts.md) オブジェクトの一覧を返します。
 
-## <a name="example-1---default"></a>例 1 - 既定
+## <a name="example-1---default"></a>例 1 - 既定値
 
 ### <a name="request"></a>要求
 
@@ -108,7 +108,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 以下は、応答の例です。
 
 > [!NOTE]
-> ここに示す応答リストは、簡単に切り詰められることがあります。 すべてのアラートは、実際の呼び出しから返されます。
+> 簡潔にするために、ここに示す応答の一覧が切り捨てられる場合があります。 すべてのアラートは、実際の呼び出しから返されます。
 
 ```json
 {
@@ -177,7 +177,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 以下は、応答の例です。
 
 > [!NOTE]
-> ここに示す応答リストは、簡単に切り詰められることがあります。 すべてのアラートは、実際の呼び出しから返されます。
+> 簡潔にするために、ここに示す応答の一覧が切り捨てられる場合があります。 すべてのアラートは、実際の呼び出しから返されます。
 
 ```json
 {
@@ -316,4 +316,4 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 
 ## <a name="see-also"></a>関連項目
 
-[エンドポイント用 Microsoft Defender を使用した OData クエリ](exposed-apis-odata-samples.md)
+[Microsoft Defender for Endpointを使用した OData クエリ](exposed-apis-odata-samples.md)

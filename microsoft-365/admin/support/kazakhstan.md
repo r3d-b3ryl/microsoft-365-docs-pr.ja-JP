@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61370490"
 ---
-# <a name="contact-support-for-kazakhstan"></a>カザフスタンのサポートに問い合わせ
+# <a name="contact-support-for-kazakhstan"></a>カザフスタンのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,14 +29,14 @@ ms.locfileid: "61370490"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-ロシア語: Mon-Fri 10 AM-7 PM モスクワ
+ロシア語: Mon-Fri午前 10 時から午後 7 時の間、ロシア語 (ロシア語)
 
-英語: Mon-Fri午前 9 時から午後 5 時ロンドン
+英語: Mon-Fri 9 AM-5 PM ロンドン
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-ロシア語: Mon-Fri 7 AM-8 PM モスクワ
+ロシア語: Mon-Fri午前 7 時から午後 8 時 (ロシア語)
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

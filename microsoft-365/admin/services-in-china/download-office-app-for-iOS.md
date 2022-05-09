@@ -1,5 +1,5 @@
 ---
-title: 21Vianet Office アプリが運用する iOS Office 365ダウンロード
+title: 21Vianet が運用するOffice 365用の iOS のOffice アプリをダウンロードする
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: 21Vianet がMicrosoft Officeする iOS Office 365アプリと、中国のお客様向けダウンロード方法について詳しくは、ご覧ください。
+description: 21Vianet が運営するOffice 365用の iOS 用のMicrosoft Office アプリと、中国のお客様向けにダウンロードする方法について説明します。
 monikerRange: o365-21vianet
 ms.openlocfilehash: f2156c83ce312da42de864c8df8d00a84e05d02c
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
@@ -27,30 +27,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60193891"
 ---
-# <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a>Office アプリ 21Vianet Office 365 iOS の場合
+# <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a>21Vianet によって運用されるOffice 365用 iOS のOffice アプリ
 
-iOS Microsoft Officeアプリは、Word、Excel、PowerPointモバイル アプリを、iOS 電話用にダウンロードできる 1 つのアプリに結合します。 iOS Office アプリを使用すると、Word、Office 365、およびモバイル アプリと同Excel接続PowerPointできます。 iOS Office アプリのダウンロードに関する情報は、Word、Excel、および PowerPoint の既存のインストールには影響PowerPoint。
+iOS 用のMicrosoft Office アプリは、Word、Excel、およびPowerPointモバイル アプリを組み合わせて、iOS スマートフォン用にダウンロードできる 1 つのアプリにします。 iOS 用のOffice アプリを使用すると、Word、Excel、PowerPoint モバイル アプリと同じようにOffice 365に接続できます。 iOS ダウンロードのOffice アプリは、Word、Excel、およびPowerPointの既存のインストールには影響しません。
 
-21Vianet Office アプリが運用する iOS 機能Office 365いくつかは使用できません。
+iOS 機能のOffice アプリは、21Vianet のお客様が運用するOffice 365では使用できません。
 
-- テキストへの画像と表への画像 
-- Lens から写真を Word ドキュメントに変換する 
-- [ファイルの転送] アクション 
-- メモはローカルのままで、サーバーと同期しない
+- Image to text and Image to table 
+- Lens から Word 文書に写真を変換する 
+- ファイル転送アクション 
+- ノートはローカルのままで、サーバーと同期しない
 - スキャン QR 内のリンク プレビュー
-- [Me] セクションのライブ ペルサ カード
+- [自分] セクションのライブ ペルソナ カード
 - 分類、ラベル付け、および保護 (CLP)
 
 
-## <a name="download-the-office-app-for-ios"></a>iOS のOffice アプリをダウンロードする
+## <a name="download-the-office-app-for-ios"></a>iOS 用のOffice アプリをダウンロードする
 
-- アプリ ストアOffice アプリ iPhone 用のアプリ を[ダウンロードします](https://products.office.com/mobile/office?rtc=2)。 
+- App Storeから iPhone の[Office アプリ](https://products.office.com/mobile/office?rtc=2)をダウンロードします。 
 
 > [!NOTE]
-> iOS Office アプリは、現在、ユーザーのみiPhoneできます。 このiPad後で追加されます。 
+> iOS のOffice アプリは現在、iPhoneでのみ使用できます。 iPadのサポートは、後で追加される予定です。 
 
 ## <a name="security-considerations"></a>セキュリティに関する考慮事項
 
-組織が従業員のモバイル デバイスにアプリをプッシュする場合は、Word、Excel、および PowerPoint アプリを iOS 用の Office アプリに置き換Office アプリ勧めします。  
+組織が従業員のモバイル デバイスにアプリをプッシュする場合は、Word アプリ、Excel アプリ、PowerPoint アプリを iOS 用のOffice アプリに置き換えることをお勧めします。  
 
 

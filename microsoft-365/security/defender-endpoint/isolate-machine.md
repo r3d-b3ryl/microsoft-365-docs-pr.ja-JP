@@ -1,6 +1,6 @@
 ---
-title: コンピューター API の分離
-description: 分離マシン API を使用して、Microsoft Defender for Endpoint の外部ネットワークへのアクセスからデバイスを分離する方法について説明します。
+title: マシン API を分離する
+description: 分離マシン API を使用して、Microsoft Defender for Endpointの外部ネットワークへのアクセスからデバイスを分離する方法について説明します。
 keywords: apis、graph api、サポートされている API、デバイスの分離
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61300792"
 ---
-# <a name="isolate-machine-api"></a>コンピューター API の分離
+# <a name="isolate-machine-api"></a>マシン API を分離する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "61300792"
 
 ## <a name="api-description"></a>API の説明
 
-デバイスが外部ネットワークにアクセスするのを分離します。
+外部ネットワークへのアクセスからデバイスを分離します。
 
 ## <a name="limitations"></a>制限事項
 
@@ -51,24 +51,24 @@ ms.locfileid: "61300792"
 
 > [!IMPORTANT]
 >
-> - 完全な分離は、Windows 10 バージョン 1703、および 11 のデバイスWindowsできます。
-> - 選択的な分離は、Windows 10バージョン 1709 以降、および 11 のデバイスWindowsできます。
-> - デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint にスプリット トンネリング VPN を使用し、クラウド ベースMicrosoft Defender ウイルス対策トラフィックを使用することをお勧めします。
+> - 完全な分離は、Windows 10バージョン 1703 および Windows 11 上のデバイスで使用できます。
+> - 選択的分離は、Windows 10、バージョン 1709 以降、およびWindows 11のデバイスで使用できます。
+> - デバイスを分離する場合は、特定のプロセスと宛先のみが許可されます。 そのため、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 クラウド ベースの保護関連トラフィックをMicrosoft Defender for EndpointおよびMicrosoft Defender ウイルス対策するために、分割トンネリング VPN を使用することをお勧めします。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Machine.Isolate|'分離マシン'
-委任 (職場または学校のアカウント)|Machine.Isolate|'分離マシン'
+アプリケーション|Machine.Isolate|'マシンの分離'
+委任 (職場または学校のアカウント)|Machine.Isolate|'マシンの分離'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Active 修復アクション' (詳細については、「役割の作成と管理 [」](user-roles.md) を参照してください)
-> - ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"アクティブ修復アクション" (詳細については、 [ロールの作成と管理](user-roles.md) に関するページを参照してください)
+> - ユーザーは、デバイス グループの設定に基づいてデバイスにアクセスできる必要があります (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -78,28 +78,28 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/isolate
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、JSON オブジェクトに次のパラメーターを指定します。
+要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-パラメーター|型|説明
+パラメーター|種類|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
-IsolationType|String|分離の種類。 使用できる値は、'Full' または '選択的' です。
+IsolationType|String|分離の種類。 使用できる値は、"完全" または "選択的" です。
 
 **IsolationType** は、実行する分離の種類を制御し、次のいずれかを指定できます。
 
 - 完全: 完全分離
-- 選択的: 制限された一連のアプリケーションのみネットワークへのアクセスを制限します (詳細については、「 [デバイス](respond-machine-alerts.md#isolate-devices-from-the-network) をネットワークから分離する」を参照してください)
+- 選択的: ネットワークにアクセスするアプリケーションの限定されたセットのみを制限する (詳細については、「ネットワーク [からデバイスを分離する](respond-machine-alerts.md#isolate-devices-from-the-network) 」を参照)
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。
+成功した場合、このメソッドは 201 - 作成された応答コードと応答本文の [Machine Action](machineaction.md) を返します。
 
 ## <a name="example"></a>例
 
@@ -118,4 +118,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 }
 ```
 
-- デバイスを分離から解放するには、「デバイスを分離 [から解放する」を参照してください](unisolate-machine.md)。
+- デバイスを分離から解放するには、「分離 [からデバイスを解放](unisolate-machine.md)する」を参照してください。

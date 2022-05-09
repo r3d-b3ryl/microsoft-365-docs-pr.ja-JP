@@ -19,14 +19,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373010"
 ---
-# <a name="contact-support-for-bangladesh"></a>バングラデシュのサポートに問い合わせ
+# <a name="contact-support-for-bangladesh"></a>バングラデシュのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 157 0011
 
-ダイヤル後に、次のコマンドを入力します。
+ダイヤル後、次のように入力します。
 
 +1877 857 3235
 

@@ -10,84 +10,89 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
-  - Adm_TOC
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
 ms.custom: admindeeplinkMAC
 search.appverid:
-  - BCS160
-  - MET150
-  - MOE150
+- BCS160
+- MET150
+- MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: グループ メンバーのMicrosoft 365追加、電子メール アドレス、グループ名、または説明の編集、グループの動作のカスタマイズなど、グループグループの管理について説明します。
+description: グループ メンバーの削除の追加、メール アドレス、グループ名、説明の編集、グループの動作のカスタマイズなど、Microsoft 365 グループを管理する方法について説明します。
+ms.openlocfilehash: e04d91219f1bfd51b609b9be749bd98c2798a52a
+ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/06/2022
+ms.locfileid: "62428314"
 ---
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでグループを管理する
 
-# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>グループを管理するMicrosoft 365 管理センター
-
-グループを[作成し、Microsoft 365メンバー](create-groups.md)を追加したら、グループを構成できます。 グループ名または説明の編集、所有者またはメンバーの管理、外部送信者がグループにメールを送信できるかどうか、およびグループ会話のコピーをメンバーに送信するかどうかを指定できます。
+[Microsoft 365 グループを作成](create-groups.md)し、グループ メンバーを追加したら、グループを構成できます。 グループ名または説明の編集、所有者またはメンバーの管理が行えます。さらに、外部送信者がグループにメールを送信できるかどうか指定したり、グループ会話のコピーをメンバーに送信するかどうかを指定できます。
 
 [https://admin.microsoft.com](https://admin.microsoft.com) の Microsoft 365 管理センターに移動します。
 
 ## <a name="edit-the-group-name-or-description"></a>グループ名または説明を編集する
 
-1. 管理センターで、[グループ] を **展開し**、[グループ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**クリックします**</a>。
+1. 管理センターで [ **グループ**] を展開し、[ <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**グループ**</a>] をクリックします。
 
-2. 編集するグループを選択し、[名前と説明の編集 **] をクリックします**。
+2. 編集するグループを選択してから **[名前と説明の編集]** をクリックします。
 
-3. 名前と説明を更新し、[保存] を **選択します**。
+3. 名前と説明を更新してから **[保存]** を選択します。
 
 ## <a name="manage-group-owners-and-members"></a>グループの所有者とメンバーを管理する
 
-1. 管理センターで、[グループ] を **展開し**、[グループ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**クリックします**</a>。
+1. 管理センターで [ **グループ**] を展開し、[ <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**グループ**</a>] をクリックします。
 
-2. 管理するグループの名前をクリックして、設定ウィンドウを開きます。
+2. 管理するグループの名前をクリックし、[設定] ウィンドウを開きます。
 
-3. [メンバー **] タブ** で、所有者またはメンバーを管理する場合を選択します。
+3. **[メンバー]** タブで、所有者またはメンバーを管理する場合を選択します。
 
-4. [追加 **] を** 選択してユーザーを追加するか、[ **X] をクリックして** ユーザーを削除します。
+4. [ **追加]** を選択してユーザーを追加するか、[ **X** ] をクリックしてユーザーを削除します。
 
 5. [閉じる] をクリックします。
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>グループ メンバーの受信トレイに会話のコピーを送信する
   
-管理センターを使用してグループを作成する場合、既定では、ユーザーは受信トレイに送信されたグループメールのコピーを取得しますが、ユーザーは受信トレイに送信されたグループ会議出席依頼のコピーを取得します。 会話を表示するには、グループに移動する必要があります。 管理センターでこの設定を変更できます。
+管理センターを使用してグループを作成する場合、既定では、ユーザーは受信トレイに送信されたグループ会議出席依頼のコピーを受信トレイに届けますが、グループメールのコピーは取得されません。 会話を表示するには、グループに移動する必要があります。 この設定は、管理センターで変更できます。
 
-この設定を有効にすると、グループ メンバーは、グループメールのコピーと、受信トレイに送信された会議出席依頼Outlookされます。 各メンバーはメールのコピーを閲覧、削除することができますが、他のメンバーに影響を与えることはありません。 グループの受信トレイに、メールのコピーは引き続き存在します。
+この設定をオンにすると、グループ メンバーには、グループのメールと会議出席依頼のコピーがOutlook受信トレイに送信されます。 各メンバーはメールのコピーを閲覧、削除することができますが、他のメンバーに影響を与えることはありません。 グループの受信トレイに、メールのコピーは引き続き存在します。
 
-グループ メンバーは、グループ内のグループに従うのを停止することを選択して、これらのメールの受信をOutlook。
+グループ メンバーは、Outlookでグループのフォローを停止することで、これらのメールの受信をオプトアウトできます。
 
-1. 管理センターで、[グループ] を **展開し**、[グループ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**クリックします**</a>。
+1. 管理センターで [ **グループ**] を展開し、[ <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**グループ**</a>] をクリックします。
 
-2. 管理するグループの名前をクリックして、設定ウィンドウを開きます。
+2. 管理するグループの名前をクリックし、[設定] ウィンドウを開きます。
 
-3. [グループ メッセージ **設定**] タブで、[グループの会話とイベントのコピーをグループ メンバーに送信する] を選択します。メンバーがグループ メッセージと予定表アイテムのコピーを自分の受信トレイで受信する場合。
+3. **[設定**] タブで、メンバーが自分の受信トレイでグループ メッセージと予定表アイテム **のコピーを** 受信する場合は、[グループ の会話とイベントのコピーをグループ メンバーに送信する] を選択します。
 
 4. **[保存]** を選択します。
 
-## <a name="let-people-outside-the-organization-email-the-group"></a>組織外のユーザーがグループにメールを送信する
+## <a name="let-people-outside-the-organization-email-the-group"></a>組織外のユーザーがグループにメールを送信できるようにする
 
-このオプションは、会社の電子メール アドレス (電子メール アドレスなど) を使用する場合 info@contoso.com。
+このオプションは、info@contoso.com などの会社の電子メール アドレスを設定する場合に適しています。
  
-1. 管理センターで、[グループ] を **展開し**、[グループ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**クリックします**</a>。
+1. 管理センターで [ **グループ**] を展開し、[ <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**グループ**</a>] をクリックします。
 
-2. 管理するグループの名前をクリックして、設定ウィンドウを開きます。
+2. 管理するグループの名前をクリックし、[設定] ウィンドウを開きます。
 
-3. 管理センター グループの一覧で、変更するグループの名前を **選択** し、[設定] タブで、[このグループにメールを送信する外部送信者を許可する] を **選択します**。
+3. 管理センター グループの一覧で、変更するグループの名前を選択し、[**設定**] タブで[**外部送信者にこのグループへのメール送信を許可する**] を選択します。
     
 4. **[保存]** を選択します。
 
 > [!NOTE]
 > 組織外のユーザーがグループにメールを送信するには、最大で 30 分かかる場合があります。
 
-## <a name="permanently-delete-a-microsoft-365-group"></a>グループを完全Microsoft 365する
+## <a name="permanently-delete-a-microsoft-365-group"></a>Microsoft 365 グループを完全に削除する
 
-30 日間のソフト削除期間の有効期限が切れるのを待たずに、グループを完全に削除する場合があります。 それを行うには、PowerShell を起動し、次のコマンドを実行して、グループのオブジェクト ID を取得します。
+30 日間の論理的な削除期間の有効期限が切れるのを待たずに、グループを完全に消去したい場合があります。 それを行うには、PowerShell を起動し、次のコマンドを実行して、グループのオブジェクト ID を取得します。
  
  ```powershell
 Get-AzureADMSDeletedGroup
 ```
 
-完全に削除するグループまたはグループのオブジェクト ID をメモします。
+完全に削除するグループのオブジェクト ID をメモしておきます。
   
 > [!CAUTION]
 > グループを削除すると、グループとそのデータが永久に削除されます。 
@@ -104,12 +109,12 @@ Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 
 [Microsoft 365 グループを作成する](create-groups.md)
 
-[グループへのゲスト アクセスMicrosoft 365する](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Microsoft 365 グループへのゲスト アクセスを管理する](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[グループの作成時に使用するドメインMicrosoft 365する](../../solutions/choose-domain-to-create-groups.md)
+[Microsoft 365 グループを作成するときに使用するドメインを選択する](../../solutions/choose-domain-to-create-groups.md)
 
-[メンバーがグループの代理として送信または送信Microsoft 365する](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[メンバーがMicrosoft 365 グループに代わって送信または送信できるようにする](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[配布リストをグループにMicrosoft 365する](../manage/upgrade-distribution-lists.md)
+[配布リストをMicrosoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
 
-[PowerShell Microsoft 365グループを管理する](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[PowerShell でMicrosoft 365 グループを管理する](../../enterprise/manage-microsoft-365-groups-with-powershell.md)

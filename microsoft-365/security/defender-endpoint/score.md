@@ -1,7 +1,7 @@
 ---
 title: スコア メソッドとプロパティ
-description: 組織の露出スコア、デバイスのセキュリティで保護されたスコア、およびデバイス グループ別の露出スコアを取得します。
-keywords: apis, graph api, supported apis, score, exposure score, device secure score, exposure score by device group
+description: 組織の公開スコア、デバイス セキュリティ スコア、およびデバイス グループ別の露出スコアを取得します。
+keywords: apis, graph api, サポートされている API, スコア, 露出スコア, デバイス セキュリティ スコア, デバイス グループ別の露出スコア
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61300984"
 ---
-# <a name="score-resource-type"></a>スコア リソースの種類
+# <a name="score-resource-type"></a>リソースの種類をスコア付けする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,13 +44,13 @@ ms.locfileid: "61300984"
 
 メソッド|戻り値の型|説明
 :---|:---|:---
-[暴露スコアを取得する](get-exposure-score.md)|[スコア](score.md)|組織の露出スコアを取得します。
-[デバイスのセキュア スコアを取得する](get-device-secure-score.md)|[スコア](score.md)|組織デバイスのセキュリティで保護されたスコアを取得します。
-[デバイス グループ別の露出スコアの一覧表示](get-machine-group-exposure-score.md)|[スコア](score.md)|デバイス グループ別にスコアを一覧表示します。
+[暴露スコアを取得する](get-exposure-score.md)|[スコア](score.md)|組織の公開スコアを取得します。
+[デバイスのセキュア スコアを取得する](get-device-secure-score.md)|[スコア](score.md)|組織のデバイスのセキュリティスコアを取得します。
+[デバイス グループ別に公開スコアを一覧表示する](get-machine-group-exposure-score.md)|[スコア](score.md)|デバイス グループ別にスコアを一覧表示します。
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ|型|説明
+プロパティ|種類|説明
 :---|:---|:---
 スコア|倍精度浮動小数点数|現在のスコア。
 Time|DateTime|この API の呼び出しが行われた日時。

@@ -12,7 +12,7 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
-description: この記事では、複数地域環境SharePoint地域の場所にサイトを制限する方法について学習します。
+description: この記事では、SharePoint サイトを複数地域環境内の指定された地理的な場所に制限する方法について説明します。
 ms.openlocfilehash: 06401658afe9f6a26b1280f5931ba6b3ba761742
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT

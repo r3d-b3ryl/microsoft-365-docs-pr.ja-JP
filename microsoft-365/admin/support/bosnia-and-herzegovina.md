@@ -1,5 +1,5 @@
 ---
-title: ボスニアとヘルツェゴフニアのサポート情報
+title: ボスニア および Herzegovnia のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61374726"
 ---
-# <a name="contact-support-for-bosnia-and-herzegovnia"></a>ボスニアとヘルツェゴフナのサポートにお問い合わせください
+# <a name="contact-support-for-bosnia-and-herzegovnia"></a>ボスニア および Herzegovnia のサポートにお問い合わせください
 
 [別の国または地域を検索する]((../get-help-support.md)。
 
@@ -41,4 +41,4 @@ ms.locfileid: "61374726"
 
 代替電話番号: +387 33 606 100
 
-国際通話料が適用される
+国際通話料金が適用されます

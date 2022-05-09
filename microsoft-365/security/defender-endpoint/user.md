@@ -1,7 +1,7 @@
 ---
 title: ユーザー リソースの種類
-description: ユーザーに関連する最近の Microsoft Defender for Endpoint アラートを取得します。
-keywords: apis, graph api, supported apis, get, alerts, recent
+description: ユーザーに関連する最近のMicrosoft Defender for Endpointアラートを取得します。
+keywords: apis, graph api, サポートされている API, get, alerts, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -39,5 +39,5 @@ ms.locfileid: "61301980"
 
 メソッド|戻り値の型|説明
 ---|---|---
-[ユーザー関連のアラートの一覧表示](get-user-related-alerts.md)|[alert](alerts.md) コレクション|ユーザーに関連付けられているすべてのアラートを一覧表示 [します](user.md)。
-[リスト ユーザー関連のデバイス](get-user-related-machines.md)|[machine](machine.md) コレクション|ユーザーがログオンしていたすべてのデバイスを一覧表示 [します](user.md)。
+[ユーザー関連のアラートを一覧表示する](get-user-related-alerts.md)|[alert](alerts.md) コレクション|ユーザーに関連付けられているすべてのアラートを一覧表示 [します](user.md)。
+[ユーザー関連デバイスの一覧表示](get-user-related-machines.md)|[machine](machine.md) コレクション|ユーザーがログオンしたすべてのデバイスを一覧表示 [します](user.md)。

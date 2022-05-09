@@ -1,7 +1,7 @@
 ---
 title: ソフトウェア バージョンの配布を一覧表示する
-description: 組織のソフトウェア バージョン配布の一覧を取得します。
-keywords: apis, graph api, supported api, get, software version distribution, Microsoft Defender for Endpoint tvm api
+description: 組織のソフトウェア バージョンの配布の一覧を取得します。
+keywords: apis, graph api, サポートされている API, get, software version distribution, Microsoft Defender for Endpoint tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -37,16 +37,16 @@ ms.locfileid: "61300492"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-組織のソフトウェア バージョン配布の一覧を取得します。
+組織のソフトウェア バージョンの配布の一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェアの情報の読み取り'
+委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェアの情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -56,7 +56,7 @@ GET /api/Software/{Id}/distributions
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|型|説明
+|名前|種類|説明
 |---|---|---|
 |Authorization|String|ベアラー {token}。**必須**。
 
@@ -66,7 +66,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、本文のソフトウェア配布データの一覧を返します。
+成功した場合、このメソッドは、本文内のソフトウェア配布データの一覧を含む 200 OK を返します。
 
 ## <a name="example"></a>例
 
@@ -102,7 +102,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/distr
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-- [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [脅威&脆弱性ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

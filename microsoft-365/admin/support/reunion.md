@@ -1,5 +1,5 @@
 ---
-title: レユニオンのサポート情報
+title: Reunion のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61370406"
 ---
-# <a name="contact-support-for-reunion"></a>レユニオンのサポートにお問い合わせください
+# <a name="contact-support-for-reunion"></a>Reunion のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,13 +29,13 @@ ms.locfileid: "61370406"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-フランス語: Mon-Fri午後 8 時
+フランス語: Mon-Fri正午から午後 8 時
 
-英語: Mon-Fri-8 PM
+英語: Mon-Fri正午から午後 8 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-フランス語: Mon-Fri午前 11 時から午後 11 時
+フランス語: Mon-Fri 11 AM-11 PM
 
 英語: 24 時間年中無休
 

@@ -1,7 +1,7 @@
 ---
-title: ユーザー アクセスをユーザー に割り当Microsoft Defender セキュリティ センター
-description: Microsoft Defender for Endpoint ポータルへの読み取りおよび書き込みまたは読み取り専用アクセスを割り当てる。
-keywords: ユーザー ロールの割り当て、読み取りおよび書き込みアクセスの割り当て、読み取り専用アクセスの割り当て、ユーザー、ユーザー の役割、役割
+title: Microsoft Defender セキュリティ センターにユーザー アクセスを割り当てる
+description: Microsoft Defender for Endpoint ポータルに読み取りおよび書き込みまたは読み取り専用アクセス権を割り当てます。
+keywords: ユーザー ロールの割り当て、読み取りおよび書き込みアクセスの割り当て、読み取り専用アクセスの割り当て、ユーザー、ユーザー ロール、ロール
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -24,7 +24,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/24/2021
 ms.locfileid: "61166964"
 ---
-# <a name="assign-user-access-to-microsoft-defender-security-center"></a>ユーザー アクセスをユーザー に割り当Microsoft Defender セキュリティ センター
+# <a name="assign-user-access-to-microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センターにユーザー アクセスを割り当てる
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,17 +40,17 @@ ms.locfileid: "61166964"
 
 Defender for Endpoint では、アクセス許可を管理する 2 つの方法がサポートされています。
 
-- **基本的なアクセス許可の管理**: アクセス許可をフル アクセスまたは読み取り専用に設定します。
-- **役割ベースのアクセス制御 (RBAC)**: 役割を定義し、Azure AD ユーザー グループを役割に割り当て、ユーザー グループにデバイス グループへのアクセス権を付与することで、詳細なアクセス許可を設定します。 RBAC の詳細については、「役割ベースのアクセス [制御を使用してポータル アクセスを管理する」を参照してください](rbac.md)。
+- **基本的なアクセス許可管理**: アクセス許可をフル アクセスまたは読み取り専用に設定します。
+- **ロールベースのアクセス制御 (RBAC)**: ロールを定義し、Azure ADユーザー グループをロールに割り当て、ユーザー グループにデバイス グループへのアクセス権を付与することで、きめ細かなアクセス許可を設定します。 RBAC の詳細については、「 [ロールベースのアクセス制御を使用したポータル アクセスの管理](rbac.md)」を参照してください。
 
 > [!NOTE]
-> 基本的なアクセス許可が既に割り当てられている場合は、いつでも RBAC に切り替えられます。 スイッチを作成する前に、次の点を考慮してください。
+> 基本的なアクセス許可が既に割り当てられている場合は、いつでも RBAC に切り替えることができます。 切り替えを行う前に、次のことを検討してください。
 >
-> - フル アクセスを持つユーザー (Azure AD のグローバル管理者またはセキュリティ管理者ディレクトリ ロールが割り当てられているユーザー) には、既定の Defender for Endpoint 管理者ロールが自動的に割り当てられます。このユーザーにはフル アクセス権も割り当てられます。 RBAC にAzure ADした後、ユーザー グループを Defender for Endpoint 管理者ロールに割り当てることができます。 Defender for Endpoint 管理者ロールに割り当てられたユーザーだけが、RBAC を使用してアクセス許可を管理できます。 
-> - 読み取り専用アクセス権 (Security Readers) を持つユーザーは、役割が割り当てられるまでポータルへのアクセスを失います。 RBAC の下Azure AD割り当てできるのは、ユーザー グループのみです。
-> - RBAC に切り替えても、基本的なアクセス許可管理を使用して切り替えすることはできません。
+> - フル アクセス権を持つユーザー (Azure ADでグローバル管理者またはセキュリティ管理者ディレクトリ ロールが割り当てられているユーザー) には、既定の Defender for Endpoint 管理者ロールが自動的に割り当てられます。また、フル アクセス権も持ちます。 RBAC に切り替えた後、追加のAzure ADユーザー グループを Defender for Endpoint 管理者ロールに割り当てることができます。 RBAC を使用してアクセス許可を管理できるのは、Defender for Endpoint 管理者ロールに割り当てられたユーザーだけです。 
+> - 読み取り専用アクセス権 (Security Reader) を持つユーザーは、ロールが割り当てられるまでポータルにアクセスできなくなります。 RBAC でロールを割り当てることができるのはAzure ADユーザー グループのみです。
+> - RBAC に切り替えた後は、基本的なアクセス許可管理を使用するように切り替えることができません。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [基本的なアクセス許可を使用してポータルにアクセスする](basic-permissions.md)
 - [RBAC を使用してポータル アクセスを管理する](rbac.md)

@@ -1,7 +1,7 @@
 ---
-title: ウイルス対策スキャン API の実行
+title: ウイルス対策スキャン API を実行する
 description: この API を使用して、デバイスでのウイルス対策スキャンの実行に関連する呼び出しを作成します。
-keywords: apis、graph api、サポートされている api、分離からデバイスを削除する
+keywords: apis、graph API、サポートされている API、分離からデバイスを削除する
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,9 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
+ms.openlocfilehash: 3208ff32c2adda051b79fea684af915a909dd062
+ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/06/2022
+ms.locfileid: "62428819"
 ---
-
-# <a name="run-antivirus-scan-api"></a>ウイルス対策スキャン API の実行
+# <a name="run-antivirus-scan-api"></a>ウイルス対策スキャン API を実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +38,7 @@ ms.custom: api
 
 ## <a name="api-description"></a>API の説明
 
-デバイスMicrosoft Defender ウイルス対策スキャンを開始します。
+デバイスでMicrosoft Defender ウイルス対策スキャンを開始します。
 
 ## <a name="limitations"></a>制限事項
 
@@ -43,12 +48,12 @@ ms.custom: api
 
 > [!IMPORTANT]
 >
-> - このアクションは、Windows 10バージョン 1709 以降、および 11 のデバイスWindowsできます。
-> - ユーザー Microsoft Defender ウイルス対策 (Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関Microsoft Defender ウイルス対策他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender ウイルス対策パッシブ モードにできます。 詳細については、「互換性に[関するMicrosoft Defender ウイルス対策参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)。
+> - このアクションは、Windows 10、バージョン 1709 以降、およびWindows 11のデバイスで使用できます。
+> - Microsoft Defender ウイルス対策 (Microsoft Defender AV) スキャンは、Microsoft Defender ウイルス対策がアクティブなウイルス対策ソリューションであるかどうかに関係なく、他のウイルス対策ソリューションと共に実行できます。 Microsoft Defender ウイルス対策はパッシブ モードにすることができます。 詳細については、「[Microsoft Defender ウイルス対策の互換性](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「 [Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -58,8 +63,8 @@ ms.custom: api
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Active 修復アクション' (詳細については、「役割の作成と管理 [」](user-roles.md) を参照してください)
-> - ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次のロールアクセス許可が必要です:"アクティブ修復アクション" (詳細については、 [ロールの作成と管理](user-roles.md) に関するページを参照してください)
+> - ユーザーは、デバイス グループの設定に基づいてデバイスにアクセスできる必要があります (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -76,23 +81,23 @@ Content-Type|string|application/json
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、JSON オブジェクトに次のパラメーターを指定します。
+要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
 パラメーター|種類|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 ScanType|String|スキャンの種類を定義します。 **必須**。
 
-**ScanType** は、実行するスキャンの種類を制御し、次のいずれかを指定できます。
+**ScanType** は実行するスキャンの種類を制御し、次のいずれかを指定できます。
 
 - **クイック**: デバイスでクイック スキャンを実行する
-- **完全**: デバイスでフル スキャンを実行する
+- **Full**: デバイスでフル スキャンを実行する
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文に 201、Created 応答コード、 _MachineAction_ オブジェクトを返します。
+成功した場合、このメソッドは応答本文で 201、Created 応答コード、 _MachineAction_ オブジェクトを返します。
 
-同じデバイスに対してウイルス対策スキャンを実行するために複数の API 呼び出しを送信すると、"保留中のコンピューター アクション" または HTTP 400 が返されます。"Action is already progress" というメッセージが表示されます。
+同じデバイスのウイルス対策スキャンを実行するために複数の API 呼び出しを送信すると、"保留中のマシン アクション" または HTTP 400 が返され、"Action is already progress" というメッセージが表示されます。
 
 ## <a name="example"></a>例
 

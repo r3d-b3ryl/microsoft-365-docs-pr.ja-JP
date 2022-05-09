@@ -1,7 +1,7 @@
 ---
-title: Linux 上の Microsoft Defender for Endpoint の不足しているイベントまたはアラートの問題のトラブルシューティング
-description: Linux 上の Microsoft Defender for Endpoint のイベントやアラートの問題が見つからない場合のトラブルシューティングを行います。
-keywords: microsoft、defender、Microsoft Defender for Endpoint、Linux、イベント
+title: Linux 上のMicrosoft Defender for Endpointで見つからないイベントまたはアラートの問題のトラブルシューティング
+description: Linux 上のMicrosoft Defender for Endpointで見つからないイベントまたはアラートの問題のトラブルシューティングを行います。
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, イベント
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/12/2022
 ms.locfileid: "62766018"
 ---
-# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上の Microsoft Defender for Endpoint の不足しているイベントまたはアラートの問題のトラブルシューティング
+# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のMicrosoft Defender for Endpointで見つからないイベントまたはアラートの問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,22 +32,22 @@ ms.locfileid: "62766018"
 - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-この記事では、ポータルで不足しているイベントやアラートを軽減するための一般的な<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。
+この記事では、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で不足しているイベントやアラートを軽減するための一般的な手順について説明します。
 
-**Microsoft Defender for Endpoint** がデバイスに正しくインストールされると _、ポータルに_ デバイス ページが生成されます。 記録されたイベントはすべて、デバイス ページの [タイムライン] タブ、または高度な検索ページで確認できます。 このセクションでは、一部またはすべての予期されるイベントが見つからない場合のトラブルシューティングを行います。
-たとえば、すべての _CreatedFile_ イベントが見つからない場合です。
+**Microsoft Defender for Endpoint** がデバイスに正しくインストールされると、ポータルで _デバイス ページ_ が生成されます。 記録されたすべてのイベントは、デバイス ページのタイムライン タブまたは高度なハンティング ページで確認できます。 このセクションでは、予想されるイベントの一部または全部が欠落している場合のトラブルシューティングを行います。
+たとえば、 _CreatedFile_ イベントがすべて見つからない場合です。
 
-## <a name="missing-network-and-login-events"></a>ネットワークイベントとログイン イベントが見つからない
+## <a name="missing-network-and-login-events"></a>ネットワーク イベントとログイン イベントが見つからない
 
-Microsoft Defender for Endpoint では `audit` 、ネットワークとログインアクティビティを追跡するために Linux からフレームワークを利用しました。
+Microsoft Defender for Endpointネットワークとログインのアクティビティを追跡するために、linux からフレームワークを利用しました`audit`。
 
-1. 監査フレームワークが機能している必要があります。
+1. 監査フレームワークが機能していることを確認します。
 
     ```bash
     service auditd status
     ```
 
-    予期される出力:
+    予想される出力:
 
     ```output
     ● auditd.service - Security Auditing Service
@@ -66,33 +66,33 @@ Microsoft Defender for Endpoint では `audit` 、ネットワークとログイ
             └─16671 /opt/microsoft/mdatp/sbin/mdatp_audisp_plugin -d
     ```
 
-2. 停止 `auditd` 済みとしてマークされている場合は、開始します。
+2. 停止済みとしてマークされている場合 `auditd` は、開始します。
 
     ```bash
     service auditd start
     ```
 
-**SLES システムでは** 、SYSCALL `auditd` 監査は既定で無効になっている可能性があります。イベントが見つからない場合は考慮できます。
+**SLES システムでは** 、SYSCALL 監査が既定で `auditd` 無効になっている可能性があり、不足しているイベントを考慮できます。
 
-1. SYSCALL 監査が無効でなかっているのを検証するには、現在の監査ルールを一覧表示します。
+1. SYSCALL 監査が無効になっていないことを検証するには、現在の監査規則を一覧表示します。
 
     ```bash
     sudo auditctl -l
     ```
 
-    次の行が存在する場合は、削除するか編集して、Microsoft Defender for Endpoint が特定の SYSCALL を追跡できます。
+    次の行が存在する場合は、削除するか編集して、Microsoft Defender for Endpointが特定の SYSCAL を追跡できるようにします。
 
     ```output
     -a task, never
     ```
 
-    監査ルールは 、 に位置します `/etc/audit/rules.d/audit.rules`。
+    監査規則は .`/etc/audit/rules.d/audit.rules`
 
-## <a name="missing-file-events"></a>ファイル イベントが見つからない
+## <a name="missing-file-events"></a>不足しているファイル イベント
 
-ファイル イベントはフレームワークで収集 `fanotify` されます。 一部またはすべてのファイル イベント `fanotify` が見つからない場合は、デバイスで有効にし、ファイル システムがサポートされている必要 [があります](microsoft-defender-endpoint-linux.md#system-requirements)。
+ファイル イベントはフレームワークで `fanotify` 収集されます。 一部またはすべてのファイル イベントが見つからない場合は、デバイスで有効になっており、ファイル システムが[サポート](microsoft-defender-endpoint-linux.md#system-requirements)されていることを確認してください`fanotify`。
 
-コンピューター上のファイルシステムを次のコマンドで一覧表示します。
+マシン上のファイルシステムの一覧を次に示します。
 
 ```bash
 df -Th

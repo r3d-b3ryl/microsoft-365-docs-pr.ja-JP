@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371582"
 ---
-# <a name="contact-support-for-philippines"></a>フィリピンのサポートに問い合わせ
+# <a name="contact-support-for-philippines"></a>フィリピンのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

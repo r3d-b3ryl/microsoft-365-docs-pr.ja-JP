@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint on Mac のインストールに関する問題のトラブルシューティング
-description: Microsoft Defender for Endpoint on Mac のインストールに関する問題のトラブルシューティングを行います。
+title: Mac でのMicrosoft Defender for Endpointのインストールに関する問題のトラブルシューティング
+description: Mac のMicrosoft Defender for Endpointでのインストールに関する問題のトラブルシューティングを行います。
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, install
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/12/2022
 ms.locfileid: "62766658"
 ---
-# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint のインストールの問題のトラブルシューティング
+# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS でのMicrosoft Defender for Endpointのインストールに関する問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,9 +38,9 @@ ms.locfileid: "62766658"
 
 ## <a name="installation-failed"></a>インストールに失敗しました
 
-手動インストールの場合、インストール ウィザードの [概要] ページには、「インストール中にエラーが発生しました。 インストーラーでエラーが発生し、インストールに失敗しました。 ソフトウェア発行元に問い合わせてサポートを受けてください。 MDM の展開では、一般的なインストールエラーとして表示されます。
+手動インストールの場合、インストール ウィザードの [概要] ページに「インストール中にエラーが発生しました。 インストーラーでエラーが発生し、インストールに失敗しました。 サポートについては、ソフトウェア発行元にお問い合わせください。 MDM 展開の場合は、一般的なインストールエラーとして表示されます。
 
-エンド ユーザーに正確なエラーは表示されませんが、インストールの進行状況を示すログ ファイルを保持します `/Library/Logs/Microsoft/mdatp/install.log`。 このログ ファイルには、各インストール セッションが追加されます。 最後のインストール セッション `sed` のみを出力するために使用できます。
+エンド ユーザーに正確なエラーは表示されませんが、インストールの進行状況 `/Library/Logs/Microsoft/mdatp/install.log`が表示されたログ ファイルは保持されます。 このログ ファイルには、各インストール セッションが追加されます。 最後のインストール セッションのみを出力するために使用 `sed` できます。
 
 ```bash
 sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
@@ -53,13 +53,13 @@ correlation id=CB509765-70FC-4679-866D-8A14AD3F13CC
 preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ```
 
-この例では、実際の理由の先頭に . が付く `[ERROR]`。
+この例では、実際の理由の先頭に `[ERROR]`.
 これらのバージョン間のダウングレードがサポートされていないため、インストールに失敗しました。
 
-## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP インストール ログが見つからないか更新されない
+## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP インストール ログが見つからないか、更新されていない
 
 まれに、インストールは MDATP の /Library/Logs/Microsoft/mdatp/install.log ファイルにトレースを残しません。
-最初に、インストールが発生したことを確認します。 次に、macOS ログを照会して、考えられるエラーを分析します。 クライアント UI がない場合は、MDM 展開でこれを行うのが便利です。 膨大な量の情報が含むので、狭いタイム ウィンドウを使用してクエリを実行し、ログ プロセス名でフィルター処理することをお勧めします。
+最初に、インストールが発生したことを確認します。 次に、macOS ログに対してクエリを実行して、考えられるエラーを分析します。 クライアント UI がない場合は、MDM 展開でこれを行うと便利です。 膨大な量の情報があるため、狭い時間枠を使用してクエリを実行し、ログ プロセス名でフィルター処理することをお勧めします。
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

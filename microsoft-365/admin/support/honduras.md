@@ -1,5 +1,5 @@
 ---
-title: Honduras のサポート情報
+title: ホンジュラスのサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,14 +19,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61369626"
 ---
-# <a name="contact-support-for-honduras"></a>Honduras のサポートに問い合わせ
+# <a name="contact-support-for-honduras"></a>ホンジュラスのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 800 0123
 
-ダイヤル後に、次のコマンドを入力します。
+ダイヤル後、次のように入力します。
 
 877 635 7034
 

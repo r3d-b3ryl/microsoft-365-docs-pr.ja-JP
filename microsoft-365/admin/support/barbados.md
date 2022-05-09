@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61369914"
 ---
-# <a name="contact-support-for-barbados"></a>バルバドスのサポートに問い合わせ
+# <a name="contact-support-for-barbados"></a>バルバドスのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

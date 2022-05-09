@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61367970"
 ---
-# <a name="contact-support-for-montenegro"></a>モンテネグロのサポートに問い合わせ
+# <a name="contact-support-for-montenegro"></a>モンテネグロのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

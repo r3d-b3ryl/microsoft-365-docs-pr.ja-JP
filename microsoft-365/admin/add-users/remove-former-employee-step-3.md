@@ -25,7 +25,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 次の手順に従って、元従業員のモバイル デバイス アクセスをブロックします。
+description: 元従業員のモバイル デバイス へのアクセスをブロックするには、次の手順に従います。
 ms.openlocfilehash: 8d6423611b1bf228fbfd5bf13037ade4033013a0
 ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
@@ -35,16 +35,16 @@ ms.locfileid: "62765974"
 ---
 # <a name="step-3---wipe-and-block-a-former-employees-mobile-device"></a>手順 3 - 元従業員のモバイル デバイスをワイプしてブロックする
 
-元従業員が組織の電話を持っていた場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> 管理センターを使用してデバイスをワイプしてブロックし、すべての組織データがデバイスから削除され、Office 365 に接続できなくなりました。 組織で Basic Mobility and Security を使用してモバイル デバイスを管理している場合は、Basic Mobility and Security を使用してそれらのデバイスをワイプしてブロックできます。
+元従業員が組織の電話を持っていた場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>を使用してそのデバイスをワイプしてブロックし、すべての組織データがデバイスから削除され、Office 365に接続できなくなります。 組織が Basic Mobility と Security を使用してモバイル デバイスを管理している場合は、Basic Mobility と Security を使用してそれらのデバイスをワイプしてブロックできます。
 
-## <a name="wipe-mobile-device-using-the-exchange-admin-center"></a>管理センターでモバイル デバイスExchangeワイプする
+## <a name="wipe-mobile-device-using-the-exchange-admin-center"></a>Exchange管理センターを使用してモバイル デバイスをワイプする
 
-1. [受信者メールボックス] Exchange管理センター>  \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">移動します</a>。
-1. ユーザーを選択し、[モバイル デバイス] **で [** 詳細の表示] **を選択します**。
-1. [モバイル デバイス **の詳細] ページ** の [モバイル デバイス] で、モバイル デバイスを選択し、[**データ**![ワイプ デバイス]](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) を選択し、[ブロック] を選択 **します**。
+1. Exchange管理センター>**受信者メールボックスに**\>移動 <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">します</a>。
+1. ユーザーを選択し、[ **モバイル デバイス**] で [ **詳細の表示**] を選択します。
+1. **[モバイル デバイスの詳細**] ページの [**モバイル デバイス**] で、モバイル デバイスを選択し、[**ワイプ DataWipe**![ デバイス]](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)、[**ブロック**] の順に選択します。
 1. **[保存]** を選択します。
    > [!TIP]
-   > オンプレミスの Blackberry Enterprise サービスからユーザーを削除またはEnterpriseしてください。 さらに、そのユーザーのすべての Blackberry デバイスを無効にする必要もあります。 ユーザーを無効にする具体的な手順については、「Blackberry Business Cloud Services Administration Guide」 (Blackberry Business Cloud Services 管理ガイド) を参照してください。
+   > オンプレミスの Blackberry Enterprise サービスからユーザーを削除または無効にしてください。 さらに、そのユーザーのすべての Blackberry デバイスを無効にする必要もあります。 ユーザーを無効にする具体的な手順については、「Blackberry Business Cloud Services Administration Guide」 (Blackberry Business Cloud Services 管理ガイド) を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 

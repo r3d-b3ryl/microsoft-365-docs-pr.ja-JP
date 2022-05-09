@@ -1,5 +1,5 @@
 ---
-title: 南ジョージア島と南サンドイッチ諸島のサポート情報
+title: サウスジョージアとサウスサンドイッチ諸島のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373334"
 ---
-# <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>南ジョージア島とサウス サンドウィッチ諸島の連絡先のサポート
+# <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>サウスジョージアとサウスサンドイッチ諸島のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -35,4 +35,4 @@ ms.locfileid: "61373334"
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

@@ -1,7 +1,7 @@
 ---
 title: マネージド セキュリティ サービス プロバイダー (MSSP) パートナーシップの機会
-description: Microsoft Defender for Endpoint がマネージド セキュリティ サービス プロバイダー (MSSP) と統合する方法を理解する
-keywords: mssp、統合、管理、セキュリティ、サービス、プロバイダー
+description: Microsoft Defender for Endpointがマネージド セキュリティ サービス プロバイダー (MSSP) とどのように統合されるかを理解する
+keywords: mssp, integration, managed, security, service, provider
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,7 +21,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 01/12/2022
 ms.locfileid: "61941758"
 ---
-# <a name="managed-security-service-provider-partnership-opportunities"></a>マネージド セキュリティ サービス プロバイダーのパートナーシップの機会
+# <a name="managed-security-service-provider-partnership-opportunities"></a>マネージド セキュリティ サービス プロバイダーパートナーシップの機会
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,17 +34,17 @@ ms.locfileid: "61941758"
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 
-セキュリティは企業を実行する上で重要なコンポーネントとして認識されています。ただし、一部の組織では、エンドポイントとネットワークのセキュリティを管理するための専用のセキュリティ運用チームを持つ能力や専門知識を持てない場合があります。他の組織では、ネットワーク内のアラートを確認するための第 2 の目を持つ必要があります。
+セキュリティは、企業を実行する上で重要なコンポーネントとして認識されます。ただし、エンドポイントとネットワークのセキュリティを管理する専用のセキュリティ運用チームを持つ能力や専門知識を持たない組織もあれば、ネットワーク内のアラートを確認するための 2 つ目の目を必要とする組織もあります。
 
 
-この需要に対処するために、マネージド セキュリティ サービス プロバイダー (MSSP) は、Defender for Endpoint の上に管理検出および応答 (MDR) サービスを提供します。 
+この需要に対処するために、マネージド セキュリティ サービス プロバイダー (MSSP) は、Defender for Endpoint の上にマネージド検出と応答 (MDR) サービスを提供することを提供します。 
 
 
-Defender for Endpoint は、このシナリオにパートナーシップの機会を追加し、MSSP が次のアクションを実行できます。
+Defender for Endpoint は、このシナリオのパートナーシップの機会を追加し、MSSP が次のアクションを実行できるようにします。
 
-- MSSP 顧客のポータルへのアクセスMicrosoft 365 Defenderする
+- MSSP 顧客のMicrosoft 365 Defender ポータルにアクセスする
 - 電子メール通知を取得し、 
-- セキュリティ情報とイベント管理 (SIEM) ツールを使用してアラートを取得する
+- セキュリティ情報とイベント管理 (SIEM) ツールを使用してアラートをフェッチする
 
 
 ## <a name="related-topic"></a>関連トピック

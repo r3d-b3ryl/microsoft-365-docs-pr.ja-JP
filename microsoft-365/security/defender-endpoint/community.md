@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint コミュニティ センターにアクセスする
-description: Microsoft Defender for Endpoint Communityセンターにアクセスして、エクスペリエンスを共有し、製品について説明します。
-keywords: コミュニティ, コミュニティ センター, 技術コミュニティ, 会話, お知らせ
+description: Microsoft Defender for Endpoint Community センターにアクセスして、製品に関するエクスペリエンスの共有、エンゲージメント、および学習を行います。
+keywords: community, コミュニティ センター, 技術コミュニティ, 会話, お知らせ
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -37,17 +37,17 @@ ms.locfileid: "61171643"
 
 Defender for Endpoint Community センターは、コミュニティ メンバーが製品に関するエクスペリエンスを学び、共同作業し、共有できる場所です。
 
-特定の情報について学ぶには、いくつかのスペースがあります。
+特定の情報について調べるには、いくつかのスペースがあります。
 
-- Announcements
+- お知らせ
 - 新機能
 - 脅威インテリジェンス
 
-このセンターにアクセスするには、いくつかのCommunityがあります。
+Community センターにアクセスするには、いくつかの方法があります。
 
-- [ポータル] Microsoft 365 Defenderウィンドウで、[中央]**をCommunityします**。 新しいブラウザー タブが開き、[Defender for Endpoint Tech] ページCommunityされます。
-- [Microsoft Defender [for Endpoint Tech] ページからコミュニティにCommunity](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)する
+- Microsoft 365 Defender ポータルナビゲーション ウィンドウで、**中央Community** 選択します。 新しいブラウザー タブが開き、Defender for Endpoint Tech Community ページに移動します。
+- [Microsoft Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced) ページからコミュニティにアクセスする
 
-コミュニティに投稿された会話を即座に表示および読み取ることができます。
+コミュニティに投稿された会話をすぐに表示して読むことができます。
 
-投稿にコメントできるなど、コミュニティ内の完全なエクスペリエンスを得るには、コミュニティに参加する必要があります。 Microsoft Tech Community の開始方法の詳細については[、「Microsoft Tech Community: Getting Started 」を参照してください](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15)。
+投稿にコメントを付けるなど、コミュニティ内で完全なエクスペリエンスを得るには、コミュニティに参加する必要があります。 Microsoft Tech Communityの使用を開始する方法の詳細については、「[Microsoft Tech Community: はじめに](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15)」を参照してください。

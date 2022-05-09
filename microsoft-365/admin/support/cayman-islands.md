@@ -1,5 +1,5 @@
 ---
-title: ケイマン諸島のサポート情報
+title: インド諸島のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371456"
 ---
-# <a name="contact-support-for-cayman-islands"></a>ケイマン諸島のサポートに問い合わせ
+# <a name="contact-support-for-cayman-islands"></a>インド諸島のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

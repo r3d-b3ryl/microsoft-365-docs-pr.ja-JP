@@ -1,5 +1,5 @@
 ---
-title: サン マリノのサポート情報
+title: San マリノのサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61372134"
 ---
-# <a name="contact-support-for-san-marino"></a>San Marino のサポートに問い合わせ
+# <a name="contact-support-for-san-marino"></a>San マリノのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -35,8 +35,8 @@ ms.locfileid: "61372134"
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-イタリア語: Mon-Fri午前 9 時から午後 10 時
+イタリア語: Mon-Fri 9 AM-10 PM
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

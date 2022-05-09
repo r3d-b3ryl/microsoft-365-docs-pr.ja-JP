@@ -1,5 +1,5 @@
 ---
-title: リビアのサポート情報
+title: Libya のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61370430"
 ---
-# <a name="contact-support-for-libya"></a>リビアのサポートに問い合わせ
+# <a name="contact-support-for-libya"></a>Libya のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -45,4 +45,4 @@ ms.locfileid: "61370430"
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

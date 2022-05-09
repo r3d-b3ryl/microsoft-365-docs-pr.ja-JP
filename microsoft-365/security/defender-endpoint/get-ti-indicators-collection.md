@@ -1,7 +1,7 @@
 ---
-title: リスト インジケーター API
-description: リスト インジケーター API を使用して、Microsoft Defender for Endpoint のすべてのアクティブなインジケーターのコレクションを取得する方法について説明します。
-keywords: apis, public api, supported apis, Indicators コレクション
+title: List Indicators API
+description: List Indicators API を使用して、Microsoft Defender for Endpoint内のすべてのアクティブなインジケーターのコレクションを取得する方法について説明します。
+keywords: apis、public api、サポートされている API、Indicators コレクション
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "61283739"
 ---
-# <a name="list-indicators-api"></a>リスト インジケーター API
+# <a name="list-indicators-api"></a>List Indicators API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,15 +38,15 @@ ms.locfileid: "61283739"
 
 ## <a name="api-description"></a>API の説明
 
-すべてのアクティブなインジケーターのコレクションを [取得します](ti-indicator.md)。
+アクティブなすべてのインジケーターのコレクションを取得 [します](ti-indicator.md)。
 
 [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 
-OData のクエリは `$filter` 、次のプロパティで `application` `createdByDisplayName` `expirationTime` `generateAlert` `title` `rbacGroupNames` `rbacGroupIds` `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` `action` サポート `severity` されています。
-<br>```$stop``` 最大値は 10,000 です。 
+OData の`$filter`クエリは、次 `action``rbacGroupIds``indicatorValue``rbacGroupNames``indicatorType``title``severity` `createdByDisplayName``createdBy``expirationTime``creationTimeDateTimeUtc``generateAlert`のプロパティで`application`サポートされます。
+<br>```$stop``` 最大値が 10,000 です。 
 <br>```$skip```.
 
-Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
+[Microsoft Defender for Endpointを使用した OData クエリの例を](exposed-apis-odata-samples.md)参照してください
 
 ## <a name="limitations"></a>制限事項
 
@@ -54,13 +54,13 @@ Microsoft Defender [for Endpoint を使用した OData クエリの例を参照�
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「開始する」 [を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+アプリケーション|Ti.ReadWrite|'インジケーターの読み取りと書き込み'
 アプリケーション|Ti.ReadWrite.All|'すべてのインジケーターの読み取りと書き込み'
-委任 (職場または学校のアカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+委任 (職場または学校のアカウント)|Ti.ReadWrite|'インジケーターの読み取りと書き込み'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -80,7 +80,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、Indicator エンティティのコレクションを持つ 200 Ok 応答コード [を](ti-indicator.md) 返します。
+成功した場合、このメソッドは [Indicator](ti-indicator.md) エンティティのコレクションを含む 200 OK 応答コードを返します。
 
 > [!NOTE]
 > アプリケーションに 'Ti.ReadWrite.All' アクセス許可がある場合は、すべてのインジケーターに公開されます。 それ以外の場合は、作成したインジケーターにのみ公開されます。
@@ -152,7 +152,7 @@ Content-type: application/json
 
 ### <a name="example-2-request"></a>例 2 要求
 
-'AlertAndBlock' アクションを持つすべてのインジケーターを取得する要求の例を次に示します。 
+'AlertAndBlock' アクションを使用してすべてのインジケーターを取得する要求の例を次に示します。 
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'AlertAndBlock'

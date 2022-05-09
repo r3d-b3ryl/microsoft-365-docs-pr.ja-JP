@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61370466"
 ---
-# <a name="contact-support-for-kiribati"></a>キリバスのサポートに問い合わせ
+# <a name="contact-support-for-kiribati"></a>キリバスのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -35,4 +35,4 @@ ms.locfileid: "61370466"
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

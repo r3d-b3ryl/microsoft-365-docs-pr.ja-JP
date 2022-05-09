@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61370790"
 ---
-# <a name="contact-support-for-belgium"></a>ベルギーのサポートに問い合わせ
+# <a name="contact-support-for-belgium"></a>ベルギーのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,9 +29,9 @@ ms.locfileid: "61370790"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-オランダ語: Mon-Fri午前 9 時から午後 5 時
+オランダ語: Mon-Fri 午前 9 時から午後 5 時
 
-フランス語: Mon-Fri 9 AM-5 PM
+フランス語: Mon-Fri午前 9 時から午後 5 時
 
 英語: Mon-Fri午前 9 時から午後 5 時
 

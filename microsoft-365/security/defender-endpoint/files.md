@@ -1,7 +1,7 @@
 ---
 title: ファイル リソースの種類
-description: ファイルに関連する最近の Microsoft Defender for Endpoint アラートを取得します。
-keywords: apis, graph api, supported apis, get, alerts, recent
+description: ファイルに関連する最近のMicrosoft Defender for Endpointアラートを取得します。
+keywords: apis, graph api, サポートされている API, get, alerts, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -43,10 +43,10 @@ Defender for Endpoint のファイル エンティティを表します。
 
 メソッド|戻り値の型 |説明
 :---|:---|:---
-[ファイルの取得](get-file-information.md) | [file](files.md) | 1 つのファイルを取得する 
-[ファイル関連のアラートを一覧表示する](get-file-related-alerts.md) | [alert](alerts.md) コレクション | ファイルに [関連](alerts.md) 付けられているアラート エンティティを取得します。
-[ファイル関連のコンピューターを一覧表示する](get-file-related-machines.md) | [machine](machine.md) コレクション | アラートに [関連付](machine.md) けられたコンピューター エンティティを取得します。
-[ファイルの統計情報](get-file-statistics.md) | 統計情報の概要 | 指定したファイルの有病率を取得します。
+[ファイルを取得する](get-file-information.md) | [file](files.md) | 1 つのファイルを取得する 
+[ファイル関連のアラートを一覧表示する](get-file-related-alerts.md) | [alert](alerts.md) コレクション | ファイルに関連付けられている [アラート](alerts.md) エンティティを取得します。
+[ファイル関連のマシンを一覧表示する](get-file-related-machines.md) | [machine](machine.md) コレクション | アラートに関連付けられている [コンピューター](machine.md) エンティティを取得します。
+[ファイルの統計情報](get-file-statistics.md) | 統計の概要 | 指定されたファイルの有病率を取得します。
 
 
 ## <a name="properties"></a>プロパティ
@@ -55,22 +55,22 @@ Defender for Endpoint のファイル エンティティを表します。
 |:---|:---|:---|
 |sha1 | String | ファイル コンテンツの Sha1 ハッシュ |
 |sha256 | String | ファイル コンテンツの Sha256 ハッシュ |
-|globalPrevalence | Null 許容長 | 組織全体でのファイルの普及率 |
-|globalFirstObserved | DateTimeOffset | ファイルが初めて観察された場合 |
+|globalPrevalence | Null 許容 long | 組織全体のファイルの普及率 |
+|globalFirstObserved | DateTimeOffset | ファイルが初めて観察されたとき |
 |globalLastObserved | DateTimeOffset | ファイルが最後に観察された時刻 |
-|サイズ | Null 許容長 | ファイルのサイズ |
-|fileType | String | ファイルの種類 |
-|isPeFile | ブール値 | ファイルが移植可能な実行可能ファイルの場合は true ("DLL"、"EXE"など) |
+|サイズ | Null 許容 long | ファイルのサイズ |
+|Filetype | String | ファイルの種類 |
+|isPeFile | ブール値 | ファイルがポータブル実行可能ファイルの場合は true (例: "DLL"、"EXE"など) |
 |filePublisher | String | ファイル発行元 |
 |fileProductName | String | 製品名 |
-|署名者 | String | ファイル署名者 |
-|issuer | String | ファイル発行者 |
+|署名 | String | ファイル署名者 |
+|発行者 | String | ファイル発行者 |
 |signerHash | String | 署名証明書のハッシュ |
-|isValidCertificate | ブール値 | Microsoft Defender for Endpoint エージェントによって証明書の署名が正常に確認されました |
+|isValidCertificate | ブール値 | Microsoft Defender for Endpoint エージェントによる証明書の署名が正常に検証されました |
 |determinationType | String | ファイルの決定の種類 |
-|determinationValue | String | 判定値 |
+|determinationValue | String | 決定値 |
 
-## <a name="json-representation"></a>Json 表記
+## <a name="json-representation"></a>Json 表現
 
 ```json
 {

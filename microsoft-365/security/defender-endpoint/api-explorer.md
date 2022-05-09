@@ -1,7 +1,7 @@
 ---
-title: エンドポイント向け Microsoft Defender の API エクスプローラー
+title: Microsoft Defender for Endpointの API エクスプローラー
 ms.reviewer: ''
-description: API エクスプローラーを使用して、API クエリの作成と実行、テスト、および使用可能な API の要求の送信を行う
+description: API エクスプローラーを使用して、使用可能なすべての API に対する API クエリの作成と実行、テスト、および要求の送信を行います
 keywords: api, explorer, send, request, get, post,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -31,15 +31,15 @@ ms.locfileid: "61300168"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint API Explorer は、さまざまな Defender for Endpoint API を対話的に探索するのに役立つツールです。
+Microsoft Defender for Endpoint API エクスプローラーは、さまざまな Defender for Endpoint API を対話的に探索するのに役立つツールです。
 
-API エクスプローラーを使用すると、使用可能な Defender for Endpoint API エンドポイントに対する API クエリの作成と実行、テスト、および要求の送信が容易になります。 API Explorer を使用して、ユーザー インターフェイスでまだ使用できない可能性があるアクションを実行したり、データを見つけたりします。
+API エクスプローラーを使用すると、使用可能なすべての Defender for Endpoint API エンドポイントの API クエリの作成と実行、テスト、要求の送信を簡単に行うことができます。 API エクスプローラーを使用して、操作を実行したり、ユーザー インターフェイスではまだ利用できない可能性があるデータを見つけたりします。
 
-このツールは、アプリの開発中に役立ちます。 これにより、ユーザー アクセス設定を尊重する API クエリを実行し、アクセス トークンを生成する必要性を減らします。
+このツールは、アプリ開発時に役立ちます。 これにより、ユーザー アクセス設定を尊重する API クエリを実行できるため、アクセス トークンを生成する必要が減ります。
 
-ツールを使用して、サンプル クエリのギャラリーを探索し、結果コード サンプルをコピーし、デバッグ情報を生成することもできます。
+また、このツールを使用して、サンプル クエリのギャラリーを探索し、結果コード サンプルをコピーし、デバッグ情報を生成することもできます。
 
-API エクスプローラーを使用すると、次の機能を使用できます。
+API エクスプローラーを使用すると、次のことができます。
 
 - 任意のメソッドの要求を実行し、リアルタイムで応答を確認する
 - API サンプルをすばやく参照し、サポートするパラメーターを確認する
@@ -47,26 +47,26 @@ API エクスプローラーを使用すると、次の機能を使用できま�
 
 ## <a name="access-api-explorer"></a>Access API Explorer
 
-左側のナビゲーション メニューで、[ **パートナー] を選択& API** \> **API エクスプローラーを選択します**。
+左側のナビゲーション メニューから、[ **パートナー& API** \> **API エクスプローラー**] を選択します。
 
 ## <a name="supported-apis"></a>サポートされている API
 
-API エクスプローラーは、Defender for Endpoint によって提供される API をサポートします。
+API Explorer では、Defender for Endpoint によって提供されるすべての API がサポートされます。
 
-サポートされている API の一覧は [、API のドキュメントで確認できます](apis-intro.md)。
+サポートされている API の一覧は、 [API ドキュメント](apis-intro.md)で入手できます。
 
-## <a name="get-started-with-the-api-explorer"></a>API エクスプローラーの使用を開始する
+## <a name="get-started-with-the-api-explorer"></a>API エクスプローラーでの概要
 
 1. 左側のウィンドウには、使用できるサンプル要求の一覧があります。
-2. リンクに従い、[クエリの実行 **] をクリックします**。
+2. リンクに従って、[ **クエリの実行**] をクリックします。
 
-一部のサンプルでは、URL にパラメーター ({machine- ID} など) を指定する必要があります。
+サンプルの中には、URL にパラメーターを指定する必要がある場合があります (例: {machine- ID})。
 
 ## <a name="faq"></a>よくあるご質問 (FAQ)
 
 **API エクスプローラーを使用するには、API トークンが必要ですか?** <br>
-API にアクセスするための資格情報は必要とされません。 API エクスプローラーは、要求を行うたびに Defender for Endpoint 管理ポータル トークンを使用します。
+API にアクセスするための資格情報は必要ありません。 API エクスプローラーは、要求を行うたびに Defender for Endpoint 管理ポータル トークンを使用します。
 
-ログインしているユーザー認証資格情報を使用して、API Explorer がユーザーに代わってデータにアクセスする権限を持つかどうかを確認します。
+ログインしているユーザー認証資格情報は、API Explorer がユーザーに代わってデータにアクセスする権限を持っていることを確認するために使用されます。
 
-特定の API 要求は、RBAC 特権に基づいて制限されます。 たとえば、"送信インジケーター" への要求は、セキュリティ管理者の役割に制限されます。
+特定の API 要求は、RBAC 特権に基づいて制限されます。 たとえば、"Submit indicator" への要求はセキュリティ管理者ロールに限定されます。

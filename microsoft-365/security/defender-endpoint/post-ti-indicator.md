@@ -1,7 +1,7 @@
 ---
-title: インジケーター API の送信または更新
-description: Submit または Update Indicator API を使用して、Microsoft Defender for Endpoint の新しい Indicator エンティティを送信または更新する方法について説明します。
-keywords: apis, graph api, supported apis, submit, ti, indicator, update
+title: Indicator API を送信または更新する
+description: Submit または Update Indicator API を使用して、Microsoft Defender for Endpointで新しい Indicator エンティティを送信または更新する方法について説明します。
+keywords: apis, graph api, サポートされている API, submit, ti, indicator, update
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2022
 ms.locfileid: "62214227"
 ---
-# <a name="submit-or-update-indicator-api"></a>インジケーター API の送信または更新
+# <a name="submit-or-update-indicator-api"></a>Indicator API を送信または更新する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,24 +40,24 @@ ms.locfileid: "62214227"
 
 ## <a name="api-description"></a>API の説明
 
-新しい Indicator エンティティを [送信または更新](ti-indicator.md) します。
+新しい [インジケーター](ti-indicator.md) エンティティを送信または更新します。
 
-IPs の CIDR 表記はサポートされていません。
+IP の CIDR 表記はサポートされていません。
 
 ## <a name="limitations"></a>制限事項
 
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
-2. テナントごとに 15,000 のアクティブインジケーターの制限があります。
+2. テナントあたり 15,000 アクティブ インジケーターの制限があります。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「開始する」 [を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+アプリケーション|Ti.ReadWrite|'インジケーターの読み取りと書き込み'
 アプリケーション|Ti.ReadWrite.All|'すべてのインジケーターの読み取りと書き込み'
-委任 (職場または学校のアカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+委任 (職場または学校のアカウント)|Ti.ReadWrite|'インジケーターの読み取りと書き込み'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -74,25 +74,25 @@ Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、JSON オブジェクトに次のパラメーターを指定します。
+要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
 パラメーター|種類|説明
 :---|:---|:---
-indicatorValue|文字列|Indicator エンティティ [の](ti-indicator.md) ID。 **必須**
+indicatorValue|String|[インジケーター](ti-indicator.md) エンティティの ID。 **必須**
 indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileMd5"、"CertificateThumbprint"、"FileSha256"、"IpAddress"、"DomainName"、"Url" です。 **必須**
-action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"Warn"、"Block"、"Audit"、"BlockAndRemediate"、"AlertAndBlock"、"Allowed" です。 **必須**。 "Audit" でアクションを作成する場合は、"GenerateAlert" パラメーターを "TRUE" に設定する必要があります。
-アプリケーション|String|インジケーターに関連付けられているアプリケーション。 このフィールドは、新しいインジケーターでのみ機能します。 既存のインジケーターの値は更新されない。 **Optional**
-title|String|インジケーターアラートのタイトル。 **必須**
+action|列挙|インジケーターが組織内で検出された場合に実行されるアクション。 指定できる値は、"アラート"、"警告"、"ブロック"、"監査、"BlockAndRemediate"、"AlertAndBlock"、"許可" です。 **必須**。 "Audit" を使用してアクションを作成するときは、"GenerateAlert" パラメーターを "TRUE" に設定する必要があります。
+アプリケーション|String|インジケーターに関連付けられているアプリケーション。 このフィールドは、新しいインジケーターでのみ機能します。 既存のインジケーターの値は更新されません。 **Optional**
+title|String|インジケーター アラートのタイトル。 **必須**
 説明|String|インジケーターの説明。 **必須**
 expirationTime|DateTimeOffset|インジケーターの有効期限。 **Optional**
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。 **Optional**
-recommendedActions|文字列|TI インジケーターアラート推奨アクション。 **Optional**
-rbacGroupNames|文字列|インジケーターが適用される RBAC グループ名のコンマ区切りのリスト。 **Optional**
-generateAlert|列挙|**True** の場合は、アラートの生成が必要です。 **このインジケーターが** アラートを生成しない場合は False を指定します。
+recommendedActions|String|TI インジケーター アラート推奨アクション。 **Optional**
+rbacGroupNames|String|インジケーターが適用される RBAC グループ名のコンマ区切りリスト。 **Optional**
+generateAlert|列挙|**True アラート** 生成が必要な場合は False、このインジケーターでアラートを生成しない場合は **False** 。
 ## <a name="response"></a>応答
 
-- 成功した場合、このメソッドは 200 - OK 応答コードと、応答本文で作成/更新 [された Indicator](ti-indicator.md) エンティティを返します。
-- 成功しない場合: このメソッドは 400 - Bad Request を返します。 通常、不適切な要求は、不適切な本文を示します。
+- 成功した場合、このメソッドは 200 - OK 応答コードと、応答本文で作成/更新された [Indicator](ti-indicator.md) エンティティを返します。
+- 成功しない場合:このメソッドは 400 - 無効な要求を返します。 通常、不適切な要求は本文が正しくないためです。
 
 ## <a name="example"></a>例
 

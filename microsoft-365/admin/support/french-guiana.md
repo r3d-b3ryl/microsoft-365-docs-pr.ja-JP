@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371738"
 ---
-# <a name="contact-support-for-french-guiana"></a>フランス領ギアナのサポートに問い合わせ
+# <a name="contact-support-for-french-guiana"></a>フランス領ギアナのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,14 +29,14 @@ ms.locfileid: "61371738"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-フランス語: Mon-Fri 5 AM-1 PM
+フランス語: Mon-Fri午前 5 時から午後 1 時
 
 英語: Mon-Fri午前 5 時から午後 1 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-フランス語: Mon-Fri 4 AM-5 PM
+フランス語: Mon-Fri午前 4 時から午後 5 時
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

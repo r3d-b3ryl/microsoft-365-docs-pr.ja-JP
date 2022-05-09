@@ -1,6 +1,6 @@
 ---
-title: MSSP カスタマー Microsoft 365 Defenderにアクセスする
-description: MSSP カスタマー Microsoft 365 Defenderにアクセスする
+title: Microsoft 365 Defender MSSP カスタマー ポータルにアクセスする
+description: Microsoft 365 Defender MSSP カスタマー ポータルにアクセスする
 keywords: マネージド セキュリティ サービス プロバイダー、mssp、構成、統合
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,11 +21,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63323669"
 ---
-# <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>MSSP カスタマー Microsoft 365 Defenderにアクセスする
+# <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Microsoft 365 Defender MSSP カスタマー ポータルにアクセスする
 
 **適用対象:**
-- [ Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [ Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint プラン 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint プラン 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -34,23 +34,23 @@ ms.locfileid: "63323669"
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 > [!NOTE]
-> これらの一連の手順は、MSSP に向けて指示されます。
+> これらの一連の手順は、MSSP に向けられます。
 
-既定では、MSSP のお客様は次の URL Microsoft 365 Defenderテナントにアクセスします。 `https://security.microsoft.com/`
+既定では、MSSP のお客様は、次の URL を使用してMicrosoft 365 Defenderテナントにアクセスします`https://security.microsoft.com/`。
 
-ただし、MSSP は、MSSP カスタマー ポータルにアクセスするには、テナント固有の URL  `https://security.microsoft.com?tid=customer_tenant_id` を次の形式で使用する必要があります。
+ただし、MSSP カスタマー ポータルにアクセスするには、テナント固有の URL を次の形式  `https://security.microsoft.com?tid=customer_tenant_id` で使用する必要があります。
 
-一般に、MSSP は、管理する予定の MSSP Azure ADに追加する必要があります。
+一般に、MSSP は、管理する MSSP 顧客の各Azure ADに追加する必要があります。
 
-次の手順を使用して、MSSP カスタマー テナント ID を取得し、その ID を使用してテナント固有の URL にアクセスします。
+MSSP カスタマー テナント ID を取得し、その ID を使用してテナント固有の URL にアクセスするには、次の手順に従います。
 
-1. MSSP として、資格情報を使用Azure ADにログインします。
+1. MSSP として、資格情報を使用してAzure ADにログインします。
 
 2. ディレクトリを MSSP 顧客のテナントに切り替えます。
 
-3. [プロパティ **Azure Active Directory >選択します**。 [ディレクトリ ID] フィールドにテナント ID があります。
+3. **Azure Active Directory >プロパティ** を選択します。 テナント ID は、[ディレクトリ ID] フィールドに表示されます。
 
-4. 次の URL の値を置 `customer_tenant_id` き換え、MSSP カスタマー ポータルにアクセスします `https://security.microsoft.com/?tid=customer_tenant_id`。
+4. 次の URL の値を `customer_tenant_id` 置き換えて MSSP カスタマー ポータルにアクセスします `https://security.microsoft.com/?tid=customer_tenant_id`。
 
 ## <a name="related-topics"></a>関連項目
 

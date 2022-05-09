@@ -1,7 +1,7 @@
 ---
 title: インストールされたソフトウェアを取得する
 description: 特定のデバイス ID に関連するインストール済みソフトウェアのコレクションを取得します。
-keywords: apis、 graph api, supported apis, get, list, file, information, software inventory, installed software per device, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, サポートされている API, get, list, file, information, software inventory, installed software per device, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -42,12 +42,12 @@ ms.locfileid: "61282852"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション |Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+アプリケーション |Software.Read.All|'脅威と脆弱性管理ソフトウェアの情報の読み取り'
+委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェアの情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -67,7 +67,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、本文にインストールされているソフトウェア情報を含む 200 OK を返します。
+成功した場合、このメソッドは本体にインストールされているソフトウェア情報を含む 200 OK を返します。
 
 ## <a name="example"></a>例
 
@@ -103,5 +103,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 
 ## <a name="see-also"></a>関連項目
 
-- [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [脅威&脆弱性ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

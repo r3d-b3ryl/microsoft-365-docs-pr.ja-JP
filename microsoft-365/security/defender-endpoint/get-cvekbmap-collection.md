@@ -1,7 +1,7 @@
 ---
-title: CVE-KB マップ API の取得
-description: Get CVE-KB マップ API を使用して、MICROSOFT Defender for Endpoint の CVEs から KB へのマップと CVE の詳細を取得する方法について説明します。
-keywords: apis, graph api, サポートされている api, get, cve, kb
+title: CVE-KB マップ API を取得する
+description: CVE-KB マップの取得 API を使用して、MICROSOFT DEFENDER FOR ENDPOINTの CV と CVE の詳細に対する CVE のマップを取得する方法について説明します。
+keywords: apis, graph api, サポートされている API, get, cve, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/24/2021
 ms.locfileid: "61168176"
 ---
-# <a name="get-cve-kb-map-api"></a>CVE-KB マップ API の取得
+# <a name="get-cve-kb-map-api"></a>CVE-KB マップ API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "61168176"
 
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-CVEs から KB へのマップと CVE の詳細を取得します。
+CV と CVE の詳細への CVE のマップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -65,7 +65,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功し、マップが存在する場合 - 200 OK。
+成功してマップが存在する場合は、200 OK です。
 
 ## <a name="example"></a>例
 

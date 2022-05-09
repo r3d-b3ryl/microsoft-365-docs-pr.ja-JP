@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371462"
 ---
-# <a name="contact-support-for-cocos-keeling-islands"></a>Cocos (キーリング) 諸島のサポートにお問い合わせください
+# <a name="contact-support-for-cocos-keeling-islands"></a>Cocos (Keeling) Islands のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -35,4 +35,4 @@ ms.locfileid: "61371462"
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

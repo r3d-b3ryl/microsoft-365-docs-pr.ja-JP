@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373790"
 ---
-# <a name="contact-support-for-united-kingdom"></a>英国のサポートに問い合わせ
+# <a name="contact-support-for-united-kingdom"></a>英国のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

@@ -1,5 +1,5 @@
 ---
-title: チャドのサポート情報
+title: Chad のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373190"
 ---
-# <a name="contact-support-for-chad"></a>チャドのサポートに問い合わせ
+# <a name="contact-support-for-chad"></a>Chad のサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "61373190"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-フランス語: Mon-Fri 9 AM-5 PM
+フランス語: Mon-Fri午前 9 時から午後 5 時
 
 英語: Mon-Fri午前 9 時から午後 5 時
 
@@ -39,4 +39,4 @@ ms.locfileid: "61373190"
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

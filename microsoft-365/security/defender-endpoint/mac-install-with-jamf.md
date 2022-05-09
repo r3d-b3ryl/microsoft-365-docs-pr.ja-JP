@@ -1,7 +1,7 @@
 ---
-title: Jamf を使用した macOS での Microsoft Defender for Endpoint のPro
-description: Jamf を使用した macOS での Microsoft Defender for Endpoint のPro
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+title: Jamf Pro を使用した macOS へのMicrosoft Defender for Endpointのデプロイ
+description: Jamf Pro を使用した macOS へのMicrosoft Defender for Endpointのデプロイ
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, インストール, 展開, アンインストール, intune, jamfpro, macos, catalina, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/12/2022
 ms.locfileid: "62767363"
 ---
-# <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Jamf を使用した macOS での Microsoft Defender for Endpoint のPro
+# <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Jamf Pro を使用した macOS へのMicrosoft Defender for Endpointのデプロイ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,17 +34,17 @@ ms.locfileid: "62767363"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Jamf を使用して macOS に Microsoft Defender for Endpoint を展開するPro。
+Jamf Proを使用して macOS にMicrosoft Defender for Endpointをデプロイする方法について説明します。
 
 > [!NOTE]
-> macOS Catalina (10.15.4) 以降のバージョンの macOS を使用している場合は、「 [macOS Catalina および新](/microsoft-365/security/defender-endpoint/mac-sysext-policies)しいバージョンの macOS の新しい構成プロファイル」を参照してください。
+> macOS Catalina (10.15.4) 以降のバージョンの macOS を使用している場合は、「 [macOS Catalina および macOS の新しいバージョンの新しい構成プロファイル](/microsoft-365/security/defender-endpoint/mac-sysext-policies)」を参照してください。
 
-これは、複数の手順のプロセスです。 次のすべての手順を完了する必要があります。
+これはマルチステップ プロセスです。 次のすべての手順を完了する必要があります。
 
-- [Jamf ポータルへのログイン](mac-install-jamfpro-login.md)
-- [Jamf デバイス グループの macOS デバイス グループで Microsoft Defender for Endpoint をセットアップPro](mac-jamfpro-device-groups.md)
-- [Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro](mac-jamfpro-policies.md)
-- [MacOS デバイス上の Microsoft Defender for Endpoint を Jamf Pro](mac-jamfpro-enroll-devices.md)
+- [Jamf ポータルにログインする](mac-install-jamfpro-login.md)
+- [Jamf Proの macOS デバイス グループでMicrosoft Defender for Endpointを設定する](mac-jamfpro-device-groups.md)
+- [Jamf Proで macOS ポリシーのMicrosoft Defender for Endpointを設定する](mac-jamfpro-policies.md)
+- [macOS デバイスで Microsoft Defender for Endpointを Jamf Proに登録する](mac-jamfpro-enroll-devices.md)
 
 
 

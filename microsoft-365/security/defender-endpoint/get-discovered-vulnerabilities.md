@@ -1,7 +1,7 @@
 ---
 title: 検出された脆弱性を取得する
 description: 特定のデバイス ID に関連する検出された脆弱性のコレクションを取得します。
-keywords: apis、 graph api、 supported apis, get, list, file, information, discovered vulnerabilits, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, サポートされている API, get, list, file, information, discovered vulnerabilities, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -40,16 +40,16 @@ ms.locfileid: "61301896"
 特定のデバイス ID に関連する検出された脆弱性のコレクションを取得します。
 
 ## <a name="limitations"></a>制限事項
-1. この API のレート制限は、1 分あたり 50 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+1. この API のレート制限は、1 分あたり 50 回、1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API の使用」を](apis-intro.md)参照してください。
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
 アプリケーション |Vulnerability.Read.All | '脅威と脆弱性管理の脆弱性情報の読み取り'
-委任 (職場または学校のアカウント) | 脆弱性。読み取り | '脅威と脆弱性管理の脆弱性情報の読み取り'
+委任 (職場または学校のアカウント) | Vulnerability.Read | '脅威と脆弱性管理の脆弱性情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -59,7 +59,7 @@ GET /api/machines/{machineId}/vulnerabilities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**。
 
@@ -69,7 +69,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、検出された脆弱性情報を本文に返します。
+成功した場合、このメソッドは、検出された脆弱性情報を本文に含む 200 OK を返します。
 
 ## <a name="example"></a>例
 
@@ -110,5 +110,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 
 ## <a name="see-also"></a>関連項目
 
-- [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [組織の脆弱性](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

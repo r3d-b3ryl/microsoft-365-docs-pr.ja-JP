@@ -1,7 +1,7 @@
 ---
 title: インジケーター API を削除します。
-description: Delete Indicator API を使用して、Microsoft Defender for Endpoint の ID でインジケーター エンティティを削除する方法について説明します。
-keywords: apis, public api, supported apis, delete, ti indicator, entity, id
+description: インジケーターの削除 API を使用して、Microsoft Defender for Endpointの ID でインジケーター エンティティを削除する方法について説明します。
+keywords: apis, public api, サポートされている API, delete, ti indicator, entity, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -40,7 +40,7 @@ ms.locfileid: "61283943"
 
 ## <a name="api-description"></a>API の説明
 
-ID で [Indicator エンティティ](ti-indicator.md) を削除します。
+[ID でインジケーター](ti-indicator.md) エンティティを削除します。
 
 ## <a name="limitations"></a>制限事項
 
@@ -48,12 +48,12 @@ ID で [Indicator エンティティ](ti-indicator.md) を削除します。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「開始する」 [を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
-アプリケーション | Ti.ReadWrite | 'TI インジケーターの読み取りおよび書き込み'
-アプリケーション | Ti.ReadWrite.All | '読み取りおよび書き込みインジケーター'
+アプリケーション | Ti.ReadWrite | 'TI インジケーターの読み取りと書き込み'
+アプリケーション | Ti.ReadWrite.All | 'インジケーターの読み取りと書き込み'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -75,9 +75,9 @@ Empty
 
 ## <a name="response"></a>応答
 
-Indicator が存在し、正常に削除された場合 - コンテンツなしで 204 OK。
+インジケーターが存在し、正常に削除された場合 - 204 OK (コンテンツなし)。
 
-指定した ID を持つインジケーターが見つからなかった場合 - 404 Not Found。
+指定した ID を持つインジケーターが見つからなかった場合は 404 Not Found。
 
 ## <a name="example"></a>例
 

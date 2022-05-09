@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5be67c37bc8de524ec625579a88ea44aa041efa5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c8b6d473622bfa55ed68c525ff3efe88020f9354
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189971"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61364166"
 ---
-# <a name="contact-support-for-myanmar"></a>ミャンマーのサポートに問い合わせ
+# <a name="contact-support-for-myanmar"></a>ミャンマーのサポートにお問い合わせください
 
-[別の国または地域を検索します](../../business-video/get-help-support.md)。
+[別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 +1 312 843 5148
@@ -35,4 +35,4 @@ ms.locfileid: "60189971"
 
 英語: 24 時間年中無休
 
-国際通話料が適用される
+国際通話料金が適用されます

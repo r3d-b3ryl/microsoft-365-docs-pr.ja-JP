@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371534"
 ---
-# <a name="contact-support-for-vietnam"></a>ベトナムのサポートに問い合わせ
+# <a name="contact-support-for-vietnam"></a>ベトナムのサポートにお問い合わせください
 
 [別の国または地域を検索します](../get-help-support.md)。
 

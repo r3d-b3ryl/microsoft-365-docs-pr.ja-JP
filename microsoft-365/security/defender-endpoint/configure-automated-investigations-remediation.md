@@ -1,6 +1,6 @@
 ---
-title: 自動調査と修復機能の構成
-description: Microsoft Defender for Endpoint で自動調査および修復機能をセットアップします。
+title: 自動調査と修復機能を構成する
+description: Microsoft Defender for Endpointで自動調査と修復機能を設定します。
 keywords: 構成、セットアップ、自動化、調査、検出、アラート、修復、応答
 ms.prod: m365-security
 ms.technology: mde
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63327617"
 ---
-# <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で自動調査および修復機能を構成する
+# <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointで自動調査と修復機能を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,35 +33,35 @@ ms.locfileid: "63327617"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-組織が [Microsoft Defender for Endpoint (Defender for Endpoint](/windows/security/threat-protection/)) を使用している[](/microsoft-365/security/defender-endpoint/automated-investigations)場合、自動調査および修復機能により、セキュリティ運用チームの時間と労力を節約できます。 このブログ記事 [で説明するように、](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)これらの機能は、セキュリティ アナリストが脅威の調査と修復に必要な理想的な手順を模倣しています。 [自動調査と修復について詳しくは、詳しくは、次をご覧ください](/microsoft-365/security/defender-endpoint/automated-investigations)。
+組織で [Microsoft Defender for Endpoint](/windows/security/threat-protection/) (Defender for Endpoint) を使用している場合、[自動調査と修復機能](/microsoft-365/security/defender-endpoint/automated-investigations)により、セキュリティ運用チームの時間と労力を節約できます。 [このブログ投稿](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)で説明したように、これらの機能は、セキュリティ アナリストが脅威を調査して修復するために実行する理想的な手順を模倣します。 [自動調査と修復の詳細については、こちらを参照してください](/microsoft-365/security/defender-endpoint/automated-investigations)。
 
-自動調査と修復を構成するには、次の手順を実行します。
+自動調査と修復を構成するには:
 
-1. [機能を有効にする](#turn-on-automated-investigation-and-remediation)。そして
+1. [機能をオンにします](#turn-on-automated-investigation-and-remediation)。そして
 2. [デバイス グループを設定します](#set-up-device-groups)。
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>自動調査と修復を有効にする
 
-1. グローバル管理者またはセキュリティ管理者として、ポータル () に移動Microsoft 365 Defenderサインイン<https://security.microsoft.com>します。
-2. ナビゲーション ウィンドウで、[次へ] **を設定**。
-3. [全般] **セクションで** 、[高度な機能 **] を選択します**。
-4. [自動調査] **と [アラートの****自動解決] の両方をオンにします**。
+1. グローバル管理者またはセキュリティ管理者として、Microsoft 365 Defender ポータル (<https://security.microsoft.com>) に移動してサインインします。
+2. ナビゲーション ウィンドウで、**設定** を選択します。
+3. [ **全般** ] セクションで、[ **高度な機能**] を選択します。
+4. **自動調査** と **アラートの自動解決の両方を** 有効にします。
 
 ## <a name="set-up-device-groups"></a>デバイス グループを設定する
 
-1. [アクセス許可] Microsoft 365 Defender (<https://security.microsoft.com>) の [アクセス許可] **設定[デバイス** グループ] **を選択します**。
-2. [ **+ デバイス グループの追加] を選択します**。
+1. Microsoft 365 Defender ポータル (<https://security.microsoft.com>) の **[設定**] ページの [**アクセス許可**] で、[**デバイス グループ**] を選択します。
+2. [ **+ デバイス グループの追加]** を選択します。
 3. 次のように、少なくとも 1 つのデバイス グループを作成します。
    - デバイス グループの名前と説明を指定します。
-   - [オートメーション レベル **] ボックスの一覧** で、[完全 - 脅威を自動的に修復 **する] などのレベルを選択します**。 オートメーション レベルは、修復アクションが自動的に実行されるのか、承認時にのみ実行されるのかを決定します。 詳細については、「自動調査と [修復」の「オートメーション レベル」を参照してください](automation-levels.md)。
-   - [メンバー **] セクション** で、1 つ以上の条件を使用してデバイスを識別して含める。
-   - [ユーザー **アクセス] タブ** で、Azure Active Directory [](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)するデバイス グループにアクセスできるユーザー グループを選択します。
-4. デバイス **グループの** 設定が完了したら、[完了] を選択します。
+   - **[オートメーション] レベルの一覧** で、[**完全な脅威の修復**] などのレベルを自動的に選択します。 自動化レベルでは、修復アクションを自動的に実行するか、承認時にのみ実行するかを決定します。 詳細については、 [自動調査と修復の自動化レベルに](automation-levels.md)関するページを参照してください。
+   - [ **メンバー]** セクションで、1 つ以上の条件を使用してデバイスを識別して含めます。
+   - [**ユーザー アクセス**] タブで、作成するデバイス [グループ](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)にアクセスする必要があるAzure Active Directory グループを選択します。
+4. デバイス グループの設定が完了したら、[ **完了] を** 選択します。
 
 ## <a name="next-steps"></a>次の手順
 
-- [アクション センターにアクセスして、保留中の修復アクションと完了済み修復アクションを表示する](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
-- [保留中のアクションの確認と承認](/microsoft-365/security/defender-endpoint/manage-auto-investigation)
+- [アクション センターにアクセスして、保留中の修復アクションと完了した修復アクションを表示する](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
+- [保留中のアクションを確認して承認する](/microsoft-365/security/defender-endpoint/manage-auto-investigation)
 
 ## <a name="see-also"></a>関連項目
 

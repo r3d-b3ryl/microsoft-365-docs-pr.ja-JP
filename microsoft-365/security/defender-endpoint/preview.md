@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint プレビュー機能
-description: Microsoft Defender for Endpoint プレビュー機能にアクセスする方法について説明します。
+title: Microsoft Defender for Endpointプレビュー機能
+description: プレビュー機能Microsoft Defender for Endpointアクセスする方法について説明します。
 keywords: プレビュー、プレビュー エクスペリエンス、Microsoft Defender for Endpoint、機能、更新プログラム
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,7 +24,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/12/2022
 ms.locfileid: "62765662"
 ---
-# <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
+# <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpointプレビュー機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,14 +35,14 @@ ms.locfileid: "62765662"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Defender for Endpoint サービスは常に更新され、新機能の強化と機能が含まれます。
+Defender for Endpoint サービスは、新機能の機能強化と機能を含めるために常に更新されています。
 
-Defender for Endpoint プレビュー リリースの新機能について説明し、プレビュー エクスペリエンスをオンにして、今後の機能を最初に試してみてください。
+Defender for Endpoint プレビュー リリースの新機能について説明し、プレビュー エクスペリエンスをオンにして、今後の機能を最初に試してみましょう。
 
 > [!TIP]
-> 次の URL をフィード リーダーにコピーして貼り付け、このページが更新された場合に通知を受け取ります。 `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+> 次の URL をコピーしてフィード リーダーに貼り付けることで、このページが更新されたときに通知を受け取ります。 `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
-一般に利用可能な新機能の詳細については、「Defender for Endpoint の新機能 [」を参照してください](whats-new-in-microsoft-defender-endpoint.md)。
+一般公開される新機能の詳細については、「 [Defender for Endpoint の新機能」を参照してください](whats-new-in-microsoft-defender-endpoint.md)。
 
 ## <a name="what-you-need-to-know"></a>知っておく必要があること
 
@@ -53,17 +53,17 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 - Microsoft によって完全にサポートされている。
 - 一部の地理的リージョンまたはクラウド環境でのみ利用可能な場合がある。 たとえば、その機能が政府機関向けクラウドには存在しない場合があります。
 - プレビュー段階の個々の機能には、使用とサポートに関してさらに制限がある場合があります。 そのような場合、通常は、制限に関する情報が機能ドキュメントに記載されています。
-- プレビュー バージョンは標準のサポート レベルで提供され、実稼働環境で使用できます。
+- プレビュー バージョンには標準サポート レベルが用意されており、運用環境で使用できます。
 
 ## <a name="turn-on-preview-features"></a>プレビュー機能を有効にする
 
-今後の機能にアクセスしてフィードバックを提供し、機能が一般提供される前に全体的なエクスペリエンスを向上させるのに役立ちます。
+機能が一般公開される前に、全体的なエクスペリエンスを向上させるためにフィードバックを提供できる今後の機能にアクセスできます。
 
 プレビュー機能設定をオンにして、今後の機能をいち早く試します。
 
-1. ナビゲーション ウィンドウで、[エンドポイントの **高度な機能設定** \>  \> **プレビュー機能] を** \> **選択します**。
+1. ナビゲーション ウィンドウで、[**エンドポイント** \> **の高度な機能**\>] **プレビュー機能****設定**\>選択します。
 
-2. [オン] と [オフ] **の間で設定を****切り替え**、[基本設定 **の保存] を選択します**。
+2. **[オン**] と [**オフ]** の設定を切り替えて、[**保存] を** 選択します。
 
 > [!TIP]
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender で 0 時間の自動削除を実行Office 365
+title: Microsoft Defender for Office 365でのゼロ時間の自動消去
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,7 +19,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: ゼロ時間自動削除 (ZAP) は、Exchange Online メールボックス内の配信されたメッセージを、スパム、フィッシング、または配信後にマルウェアが含まれていると検出された迷惑メール フォルダーまたは検疫にさかのぼって移動します。
+description: ゼロ時間自動消去 (ZAP) は、Exchange Online メールボックス内の配信されたメッセージを、スパム、フィッシング、または配信後にマルウェアが含まれていると検出された迷惑メール フォルダーまたは検疫にさかのぼって移動します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: a48f5eb1d45af16ab275c16d2965dc9a578d9312
@@ -29,7 +29,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/02/2022
 ms.locfileid: "62320945"
 ---
-# <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>ゼロ時間自動削除 (ZAP) (Exchange Online
+# <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Exchange Onlineのゼロ時間自動消去 (ZAP)
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -38,97 +38,97 @@ ms.locfileid: "62320945"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-## <a name="zero-hour-auto-purge-zap-basics"></a>ゼロ時間自動削除 (ZAP) の基本
+## <a name="zero-hour-auto-purge-zap-basics"></a>ゼロ時間自動消去 (ZAP) の基本
 
-Exchange Online のメールボックスを持つ Microsoft 365 組織では、ゼロ時間自動削除 (ZAP) は、Exchange Online メールボックスに既に配信されている悪意のあるフィッシング、スパム、マルウェア メッセージをさかのぼって検出し、中和する電子メール保護機能です。
+Exchange Onlineにメールボックスを含むMicrosoft 365組織では、ゼロ時間自動消去 (ZAP) は、既にExchange Onlineメールボックスに配信されている悪意のあるフィッシング、スパム、またはマルウェア メッセージをさかのぼって検出して除去する電子メール保護機能です。
 
-ZAP は、オンプレミスのメールボックスを保護するスタンドアロン Exchange Online Protection (EOP) 環境Exchangeしません。
+ZAP は、オンプレミスのExchangeメールボックスを保護するスタンドアロン Exchange Online Protection (EOP) 環境では機能しません。
 
 ## <a name="how-zap-works"></a>ZAP のしくみ
 
-スパムやマルウェアの署名は、サービス内で毎日リアルタイムで更新されます。 ただし、ユーザーに配信された後にコンテンツが武器化される場合など、さまざまな理由で悪意のあるメッセージを受け取る可能性があります。 ZAP は、サービス内のスパムとマルウェアの署名に対する更新プログラムを継続的に監視することで、この問題に取り組む。 ZAP は、ユーザーのメールボックスに既に存在するメッセージを見つけて削除できます。
+スパムとマルウェアのシグネチャは、サービス内で毎日リアルタイムで更新されます。 ただし、ユーザーは引き続き、ユーザーに配信された後にコンテンツが武器化される場合など、さまざまな理由で悪意のあるメッセージを受信できます。 ZAP は、サービス内のスパムとマルウェアのシグネチャの更新を継続的に監視することで、この問題に対処します。 ZAP は、ユーザーのメールボックスに既に存在するメッセージを検索して削除できます。
 
-ZAP アクションはユーザーにシームレスです。メッセージが検出および移動された場合は、通知されません。
+ZAP アクションは、ユーザーにとってシームレスです。メッセージが検出されて移動された場合、通知されません。
 
-[セーフリスト、](create-safe-sender-lists-in-office-365.md)メール フロー ルール (トランスポート ルールとも呼ばれる)、受信トレイ ルール、または追加のフィルターが ZAP よりも優先されます。 メール フローで発生する処理と同様に、これは、サービスが配信されたメッセージに ZAP が必要と判断した場合でも、差出人セーフ リストの構成のためにメッセージが処理されないことを意味します。 これは、フィルター処理をバイパスするメッセージの構成に注意するもう 1 つの理由です。
+[セーフ送信者リスト](create-safe-sender-lists-in-office-365.md)、メール フロー ルール (トランスポート ルールとも呼ばれます)、受信トレイ ルール、または追加のフィルターが ZAP よりも優先されます。 メール フローでの動作と同様に、これは、配信されたメッセージに ZAP が必要であるとサービスが判断した場合でも、メッセージは安全な送信者の構成のために処理されないことを意味します。 これは、フィルター処理をバイパスするようにメッセージを構成することに注意するもう 1 つの理由です。
 
-### <a name="zero-hour-auto-purge-zap-for-malware"></a>マルウェアのゼロ時間自動削除 (ZAP)
+### <a name="zero-hour-auto-purge-zap-for-malware"></a>マルウェアのゼロ時間自動消去 (ZAP)
 
-配信 **後にマルウェアが含まれている** と判明した読み取りメッセージまたは未読メッセージの場合、ZAP はマルウェア添付ファイルを含むメッセージを検疫します。 既定では、検疫済みマルウェア メッセージを表示および管理できるのは管理者のみです。 ただし、管理者は検疫ポリシーを作成して使用して、マルウェアとして検疫されたメッセージに対してユーザーが実行できる操作を定義できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+配信後にマルウェアが含まれていることが検出された **読み取りメッセージまたは未読メッセージ** の場合、ZAP はマルウェアの添付ファイルを含むメッセージを検疫します。 既定では、管理者のみが検疫されたマルウェア メッセージを表示および管理できます。 ただし、管理者は _検疫ポリシー_ を作成して使用して、マルウェアとして検疫されたメッセージに対してユーザーが許可する操作を定義できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
-マルウェアに対する ZAP は、マルウェア対策ポリシーで既定で有効になっています。 詳細については、「 [EOP でマルウェア対策ポリシーを構成する」を参照してください](configure-anti-malware-policies.md)。
+マルウェア対策ポリシーでは、マルウェアの ZAP は既定で有効になっています。 詳細については、「 [EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)」を参照してください。
 
-### <a name="zero-hour-auto-purge-zap-for-phishing"></a>フィッシングのゼロ時間自動削除 (ZAP)
+### <a name="zero-hour-auto-purge-zap-for-phishing"></a>フィッシングのゼロ時間自動消去 (ZAP)
 
-配信後 **に** フィッシングとして識別される読み取りメッセージまたは未読メッセージの場合、ZAP の結果は、該当するスパム対策ポリシーのフィッシングメール フィルターの評決に対して構成されたアクションによって異なります。 フィッシングに対して使用可能なフィルター処理の評決アクションと、可能な ZAP 結果については、次の一覧で説明します。
+配信後にフィッシングとして識別される **読み取りメッセージまたは未読メッセージ** の場合、ZAP の結果は、該当するスパム対策ポリシーの **フィッシングメール** フィルターの判定に対して構成されたアクションによって異なります。 フィッシングに対して使用可能なフィルター処理の判定アクションとその可能な ZAP の結果については、次の一覧で説明します。
 
-- **X-Header、テキスト** 付 **き件名** 行の追加、電子メール アドレスへのメッセージのリダイレクト、メッセージの **削除:** ZAP はメッセージに対して何も実行されません。
+- **X ヘッダーの追加**、 **テキストを含む件名行の先頭への追加**、 **メール アドレスへのメッセージのリダイレクト**、 **メッセージの削除**: ZAP はメッセージに対してアクションを実行しません。
 
-- **メッセージを迷惑メールに移動** する: ZAP はメッセージを迷惑メール フォルダーに移動します。 詳細については、「迷惑メール設定を[構成する」を参照Exchange OnlineのメールボックスMicrosoft 365](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **メッセージを迷惑メールに移動する**: ZAP はメッセージを迷惑メール フォルダーに移動します。 詳細については、「[Microsoft 365のExchange Online メールボックスで迷惑メール設定を構成](configure-junk-email-settings-on-exo-mailboxes.md)する」を参照してください。
 
 - **検疫メッセージ**: ZAP はメッセージを検疫します。
 
-既定では、スパム対策ポリシーでフィッシングの ZAP が有効にされ、フィッシングメール フィルターの既定のアクションは検疫メッセージです。つまり、フィッシング詐欺の ZAP は既定でメッセージを検疫します。
+既定では、フィッシング詐欺の ZAP はスパム対策ポリシーで有効になっており、 **フィッシングメール** フィルターの判定の既定のアクションは **検疫メッセージです。** つまり、フィッシング詐欺の ZAP は既定でメッセージを検疫します。
 
-スパム フィルターの評決を構成する方法の詳細については、「[スパム](configure-your-spam-filter-policies.md)対策ポリシーを構成する」を参照Microsoft 365。
+スパム フィルターの判定の構成の詳細については、「[Microsoft 365でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
-### <a name="zero-hour-auto-purge-zap-for-high-confidence-phishing"></a>信頼性の高いフィッシングのためのゼロ時間自動削除 (ZAP)
+### <a name="zero-hour-auto-purge-zap-for-high-confidence-phishing"></a>ゼロ時間の自動消去 (ZAP) による高信頼フィッシング
 
-配信 **後に高信頼** フィッシングとして識別される読み取りメッセージまたは未読メッセージの場合、ZAP はメッセージを検疫します。 既定では、検疫済み高信頼度のフィッシング メッセージを表示および管理できるのは管理者のみです。 ただし、管理者は検疫ポリシーを作成して使用して、高信頼フィッシングとして検疫されたメッセージに対してユーザーが実行できる操作を定義できます。 詳細については、「検疫ポリシー [」を参照してください。](quarantine-policies.md)
+配信後に信頼度の高いフィッシングとして識別される **読み取りメッセージまたは未読メッセージ** の場合、ZAP はメッセージを検疫します。 既定では、検疫された信頼度の高いフィッシング メッセージを表示および管理できるのは管理者のみです。 ただし、管理者は _検疫ポリシー_ を作成して使用して、信頼度の高いフィッシングとして検疫されたメッセージに対してユーザーが許可する操作を定義できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
-信頼度の高いフィッシングの ZAP は既定で有効になっています。 詳細については、「Secure [by Default in Office 365」を参照してください](secure-by-default.md)。
+信頼度の高いフィッシングの ZAP は、既定で有効になっています。 詳細については、[Office 365の「既定でセキュリティで保護](secure-by-default.md)する」を参照してください。
 
-### <a name="zero-hour-auto-purge-zap-for-spam"></a>スパムのゼロ時間自動削除 (ZAP)
+### <a name="zero-hour-auto-purge-zap-for-spam"></a>スパムのゼロ時間自動消去 (ZAP)
 
-配信 **後に** スパムとして識別される未読メッセージの場合、ZAP の結果は、該当するスパム対策ポリシーのスパム フィルターの評決に対して構成されているアクションによって異なります。 スパムに対して使用可能なフィルター処理の評決アクションと、その可能な ZAP 結果については、次の一覧で説明します。
+配信後にスパムとして識別される **未読メッセージ** の場合、ZAP の結果は、該当するスパム対策ポリシーの **スパム** フィルターの判定に対して構成されているアクションによって異なります。 スパムに対して使用可能なフィルター処理の判定アクションとその考えられる ZAP の結果については、次の一覧で説明します。
 
-- **X-Header、テキスト** 付 **き件名** 行の追加、電子メール アドレスへのメッセージのリダイレクト、メッセージの **削除:** ZAP はメッセージに対して何も実行されません。
+- **X ヘッダーの追加**、 **テキストを含む件名行の先頭への追加**、 **メール アドレスへのメッセージのリダイレクト**、 **メッセージの削除**: ZAP はメッセージに対してアクションを実行しません。
 
-- **メッセージを迷惑メールに移動** する: ZAP はメッセージを迷惑メール フォルダーに移動します。 詳細については、「迷惑メール設定を[構成する」を参照Exchange OnlineのメールボックスMicrosoft 365](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **メッセージを迷惑メールに移動する**: ZAP はメッセージを迷惑メール フォルダーに移動します。 詳細については、「[Microsoft 365のExchange Online メールボックスで迷惑メール設定を構成](configure-junk-email-settings-on-exo-mailboxes.md)する」を参照してください。
 
-- **検疫メッセージ**: ZAP はメッセージを検疫します。 既定では、エンド ユーザーは受信者であるスパム検疫済みメッセージを表示および管理できます。 ただし、管理者は検疫ポリシーを作成して使用して、スパムとして検疫されたメッセージに対してユーザーが実行できる操作を定義できます。 詳細については、「検疫ポリシー [」を参照してください。](quarantine-policies.md)
+- **検疫メッセージ**: ZAP はメッセージを検疫します。 既定では、エンドユーザーは受信者であるスパム検疫済みメッセージを表示および管理できます。 ただし、管理者は _検疫ポリシー_ を作成して使用して、スパムとして検疫されたメッセージに対してユーザーが許可する操作を定義できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
-既定では、スパム ZAP はスパム対策ポリシーで有効にされ、スパム フィルターの評決の既定のアクションは [メッセージを迷惑メール フォルダーに移動する] です。つまり、スパム ZAP は既定で未読メッセージを迷惑メール フォルダーに移動します。
+既定では、スパム ZAP はスパム対策ポリシーで有効になっており、 **スパム** フィルターの判定の既定のアクションは迷惑 **メール フォルダーにメッセージを移動** します。これは、スパム ZAP が既定で **未読** メッセージを迷惑メール フォルダーに移動することを意味します。
 
-スパム フィルターの評決を構成する方法の詳細については、「[スパム](configure-your-spam-filter-policies.md)対策ポリシーを構成する」を参照Microsoft 365。
+スパム フィルターの判定の構成の詳細については、「[Microsoft 365でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
-### <a name="zero-hour-auto-purge-zap-considerations-for-microsoft-defender-for-office-365"></a>Microsoft Defender のゼロ時間自動削除 (ZAP) に関する考慮事項 (Office 365
+### <a name="zero-hour-auto-purge-zap-considerations-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365のゼロ時間自動消去 (ZAP) に関する考慮事項
 
-ZAP は、セーフ 添付ファイル ポリシー スキャンで動的配信の過程 [](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)にあるメッセージや、EOP マルウェア フィルターによって既に添付ファイルがマルウェア アラート Text.txtファイルに置き換えられたメッセージ **を** 検疫します。 このような種類のメッセージに対してフィッシングまたはスパム信号が受信され、スパム対策ポリシーのフィルター処理の評決がメッセージに対して何らかのアクション (迷惑メールへの移動、リダイレクト、削除、または検疫) に設定されている場合、ZAP は既定で [迷惑メールに移動] アクションに設定されます。
+ZAP は、セーフ添付ファイル ポリシー スキャンで [動的配信](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)の処理中のメッセージ、または EOP マルウェア フィルターが既に添付ファイルを **マルウェア アラート Text.txt** ファイルに置き換えたメッセージを検疫しません。 このような種類のメッセージに対してフィッシングまたはスパムシグナルが受信され、スパム対策ポリシーのフィルター処理の判定がメッセージに対して何らかのアクションを実行するように設定されている場合 (迷惑メールに移動、リダイレクト、削除、または検疫) すると、ZAP は既定で [迷惑メールに移動] アクションに設定されます。
 
-## <a name="how-to-see-if-zap-moved-your-message"></a>ZAP がメッセージを移動した場合の確認方法
+## <a name="how-to-see-if-zap-moved-your-message"></a>ZAP がメッセージを移動したかどうかを確認する方法
 
 ZAP がメッセージを移動したかどうかを確認するには、次のオプションがあります。
 
-- **メッセージ数:** Mailflow 状態レポートの [Mailflow](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) ビューを使用して、指定した日付範囲の ZAP 影響を受けるメッセージの数を確認します。
-- **メッセージの詳細**: 脅威エクスプローラー (およびリアルタイム検出) を使用して、[追加 [アクション]](threat-explorer.md) 列の値 **ZAP** ですべての電子メール イベント **をフィルター処理** します。
+- **メッセージ数**: [メールフロー状態レポートの [メールフロー] ビューを](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) 使用して、指定した日付範囲の ZAP 影響を受けるメッセージの数を確認します。
+- **メッセージの詳細**: [脅威エクスプローラー (およびリアルタイム検出)](threat-explorer.md) を使用して、[**追加アクション**] 列の値 **ZAP** ですべての **電子メール** イベントをフィルター処理します。
 
-**注**: ZAP は、システム アクションとしてメールボックスExchangeログに記録されません。
+**注**: ZAP は、システム アクションとしてExchangeメールボックス監査ログに記録されません。
 
-## <a name="zero-hour-auto-purge-zap-faq"></a>ゼロ時間自動削除 (ZAP) FAQ
+## <a name="zero-hour-auto-purge-zap-faq"></a>ゼロ時間自動消去 (ZAP) に関する FAQ
 
-### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>正当なメッセージが迷惑メール フォルダーに移動された場合は、どうなるでしょうか。
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>正当なメッセージが迷惑メール フォルダーに移動された場合はどうなりますか?
 
-誤検知については、通常の報告プロセス [に従う必要があります](report-junk-email-messages-to-microsoft.md)。 メッセージが受信トレイから迷惑メール フォルダーに移動される唯一の理由は、サービスがメッセージがスパムまたは悪意のあると判断したためです。
+[誤検知](report-junk-email-messages-to-microsoft.md)については、通常の報告プロセスに従う必要があります。 メッセージが受信トレイから迷惑メール フォルダーに移動される唯一の理由は、メッセージがスパムまたは悪意のあるメッセージであるとサービスが判断したためです。
 
-### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>迷惑メール フォルダーの代わりに検疫フォルダーを使用する場合は、
+### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>迷惑メール フォルダーの代わりに検疫フォルダーを使用した場合はどうなりますか?
 
 ZAP は、この記事で前述したように、スパム対策ポリシーの構成に基づいてメッセージに対してアクションを実行します。
 
-### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>差出人セーフ リスト、メール フロー ルール、許可またはブロックされた送信者リストを使用している場合は、
+### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>差出人セーフ リスト、メール フロー ルール、または許可/ブロックされた送信者リストを使用している場合はどうなりますか?
 
-セーフ、メール フロー ルール、またはブロックし、組織の設定が優先されます。 これらのメッセージは、サービスが構成した処理を実行しているから ZAP から除外されます。 これは、フィルター処理をバイパスするメッセージの構成に注意するもう 1 つの理由です。
+セーフ送信者、メール フロー ルール、またはブロックと許可の組織設定が優先されます。 これらのメッセージは、サービスが構成した操作を実行しているため、ZAP から除外されます。 これは、フィルター処理をバイパスするようにメッセージを構成することに注意するもう 1 つの理由です。
 
-### <a name="what-are-the-licensing-requirements-for-zero-hour-auto-purge-zap-to-work"></a>ゼロ時間自動削除 (ZAP) のライセンス要件は何ですか?
+### <a name="what-are-the-licensing-requirements-for-zero-hour-auto-purge-zap-to-work"></a>ゼロ時間自動消去 (ZAP) のライセンス要件は何ですか?
 
-ライセンスに制限はありません。 ZAP は、オンライン上でホストされているExchange動作します。 ZAP は、オンプレミスのメールボックスを保護するスタンドアロン Exchange Online Protection (EOP) 環境Exchangeしません。
+ライセンスに制限はありません。 ZAP は、オンラインExchangeでホストされているすべてのメールボックスで動作します。 ZAP は、オンプレミスのExchangeメールボックスを保護するスタンドアロン Exchange Online Protection (EOP) 環境では機能しません。
 
-### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>メッセージが別のフォルダー (受信トレイ ルールなど) に移動された場合は、どうしますか。
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>メッセージが別のフォルダー (受信トレイルールなど) に移動された場合はどうなりますか?
 
-ゼロ時間自動削除は、メッセージが削除されていない限り、または同じ、またはより強力なアクションがまだ適用されていない限り、引き続き機能します。 たとえば、フィッシング対策ポリシーが検疫に設定され、メッセージが既に迷惑メール内にある場合、ZAP はメッセージを検疫するアクションを実行します。
+0 時間の自動消去は、メッセージが削除されていない限り、または同じ、またはより強力なアクションがまだ適用されていない限り、引き続き機能します。 たとえば、フィッシング対策ポリシーが検疫に設定されていて、メッセージが迷惑メールに既に含まれている場合、ZAP はメッセージを検疫するアクションを実行します。
 
-### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP は、保留メールボックスにどのような影響を与えるのですか?
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP は保留中のメールボックスにどのような影響を与えるのですか?
 
-0 時間の自動削除では、保留のメールボックスからメッセージが検疫されます。 ZAP は、スパム対策ポリシーでスパムまたはフィッシングの評決用に構成されたアクションに基づいて、メッセージを迷惑メール フォルダーに移動できます。
+0 時間の自動消去では、保留中のメールボックスからメッセージが検疫されます。 ZAP は、スパム対策ポリシーでスパムまたはフィッシングの判定用に構成されたアクションに基づいて、迷惑メール フォルダーにメッセージを移動できます。
 
-インプレイス 保持の詳細については、「Exchange Onlineインプレイス保持と訴訟ホールド」[を参照](/Exchange/security-and-compliance/in-place-and-litigation-holds)Exchange Online。
+Exchange Onlineの保留の詳細については、「インプレース [ホールドと訴訟ホールド in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds)」を参照してください。
