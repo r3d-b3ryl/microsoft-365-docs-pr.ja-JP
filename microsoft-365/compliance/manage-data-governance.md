@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Microsoft Purview Data ライフサイクル管理と Microsoft Purview レコード管理の機能を実装し、コンプライアンスや規制要件に対応してデータを統制します。
-ms.openlocfilehash: c807d2359c9a8c9cb17955b1ad4bf121cab57918
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 2eff1aea82575a8364eb05f91652a089efbbe833
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286970"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294736"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>Microsoft Purview を使用してデータを統制する
 
@@ -39,7 +39,9 @@ ms.locfileid: "65286970"
 
 ![Microsoft Purview を使用してデータを統制するために構成および使用する主なコンポーネント。](../media/govern-your-data.png)
 
-データをセキュリティで保護するには、 「[Microsoft Purview を使用してデータを保護する](information-protection.md)」を参照してください。
+次のセクションでは、各ソリューションの主な機能について詳しく説明します。さらに理解を深めるためのリンクも掲載しています。 ただし、ガイド付きデプロイを探している場合は、「[Microsoft Purview でデータ ガバナンス ソリューションをデプロイする](data-governance-solution.md)」を参照してください。
+
+データを保護するための補完機能をお探しですか? 「[Microsoft Purview を使用してデータを保護する](information-protection.md)」を参照してください。
 
 ## <a name="microsoft-purview-data-lifecycle-management"></a>Microsoft Purview データ ライフサイクル管理
 
