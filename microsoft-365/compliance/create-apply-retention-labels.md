@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順。
-ms.openlocfilehash: dd20de86b17460d5b150b5bb576ae811e40eed32
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 110115cad46e819ac32d482ab6ecd1eba2129201
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187802"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285524"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>アイテム保持ラベルを発行してアプリに適用する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > このシナリオは、 [法的レコード](records-management.md#records)を含むすべての保持ラベル構成に対してサポートされています。

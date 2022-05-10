@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0cbcc198f31497996595a9f17df9cf689c435b58
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 3c11e531e8b4706128e1519b790046f800827d67
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130541"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285020"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -45,6 +45,8 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 メッセージ [センター](https://admin.microsoft.com/Adminportal/Home#/MessageCenter)を通じて、製品の更新と重要な通知を受け取ることもできます。 
 
+## <a name="may-2022"></a>2022 年 5 月
+- (プレビュー)Microsoft [Security Experts](https://aka.ms/MicrosoftSecurityExperts) という新しいサービス カテゴリへの最近発表された拡張に合わせて、Microsoft [Defender Experts for Hunting (Defender Experts for Hunting](defenderexpertsforhuntingprev.md) ) のパブリック プレビューの可用性について紹介します。 Defender Experts for Hunting は、堅牢なセキュリティ運用センターを持ち、エンドポイント、Office 365、クラウド アプリケーション、ID など、Microsoft Defender データ全体の脅威を積極的に検出できるように Microsoft に支援を求めるお客様を対象としています。 
 
 ## <a name="april-2022"></a>2022 年 4 月
 - (プレビュー)これで、検索クエリの結果から直接電子メール メッセージに [対してアクション](advanced-hunting-take-action.md) を実行できるようになりました。 電子メールは、他のフォルダーに移動したり、完全に削除したりできます。 

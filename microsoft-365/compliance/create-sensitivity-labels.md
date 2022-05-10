@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Purview Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: 036835e77ca1e1d7c15435050d4577f5352f0ebd
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 7dc8cfc095167021df2cec093734ab9c1b101868
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131276"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286948"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 すべての Microsoft Purview Information Protection ソリューションは、[秘密度ラベル](sensitivity-labels.md)を使って実装されます。 それらのラベルを作成して発行するには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>に移動します。
 

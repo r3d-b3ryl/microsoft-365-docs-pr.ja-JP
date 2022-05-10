@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) 統合ラベル付けクライアントを使用するとき、AIP アドインではなく Office アプリの組み込みラベル付けを使用する利点を理解してください。
-ms.openlocfilehash: 99710520b1b687fe6fc2469badb3ad18e6070371
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 161f05c1f9c27723ff4940087c715e0556484b79
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093506"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287136"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office アプリの AIP アドインに対して組み込みラベル付けを選択する理由
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Windows コンピューターの Microsoft 365 Apps で[秘密度ラベル](sensitivity-labels.md)を使用する場合、Office アプリに組み込まれているラベル付けを使用するか、[Azure Information Protection (AIP) 統合のラベル付クライアント](/azure/information-protection/rms-client/aip-clientv2)からのアドインを使用するかを選択できます。 
 

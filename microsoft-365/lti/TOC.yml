@@ -2,6 +2,8 @@
   href: index.md
 - name: Microsoft OneLTI 管理
   href: manage-microsoft-one-lti.md
+- name: LMS URL のブラウザー Cookie を許可する
+  href: browser-cookies.md
 - name: キャンバスの統合
   items:
     - name: キャンバスMicrosoft OneDrive LTI を使用する

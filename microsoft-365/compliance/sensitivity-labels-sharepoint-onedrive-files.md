@@ -1,5 +1,5 @@
 ---
-title: SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
+title: Office ファイルの秘密度ラベルを有効にする
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,141 +16,143 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 管理者は、Word、Excel、および PowerPoint ファイルのSharePointサポートOneDrive。
-ms.openlocfilehash: 12180dcc748764b1d73f6ad8a5c0ef7c77cd2b27
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+description: 管理者は、SharePointおよびOneDriveで Word、Excel、PowerPoint ファイルの秘密度ラベルのサポートを有効にすることができます。
+ms.openlocfilehash: 4e3a3898f437325a28a4deda83ba8804324fe215
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499971"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285436"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-SharePoint [Office](sensitivity-labels-office-apps.md#office-file-types-supported) および OneDrive でサポートされているファイルに対して組み込みのラベル付Office for the web。[](sensitivity-labels.md) この機能を有効にすると、リボンに [感度] ボタンが表示され、ラベルを適用し、ステータス バーに適用されたラベル名が表示されます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-また、この機能を有効にすると、SharePoint および OneDrive は、暗号化された Office ファイルの内容を、感度ラベルを使用して処理できます。 ラベルは、Office for the webまたはデスクトップ Officeアプリに適用し、SharePointおよびOneDrive。 この機能を有効にするまで、これらのサービスは暗号化されたファイルを処理できないので、共同編集、電子情報開示、データ損失防止、検索、その他の共同作業機能は、これらのファイルでは機能しません。
+ユーザーがOffice for the webで[秘密度](sensitivity-labels.md)ラベルを適用できるように、SharePointおよびOneDriveで[サポートされているOffice ファイル](sensitivity-labels-office-apps.md#office-file-types-supported)の組み込みのラベル付けを有効にします。 この機能が有効になっていると、ユーザーはリボンの **[秘密度** ] ボタンを表示してラベルを適用し、適用されたラベル名をステータス バーに表示します。
 
-SharePoint および OneDrive の Office ファイルの感度ラベルを有効にした後、クラウドベースのキーで暗号化を適用する感度ラベルを持つ新しいファイルと変更されたファイル (およびダブル キー暗号化を使用しない) に対して有効[にします。](double-key-encryption.md)
+また、この機能を有効にすると、秘密度ラベルを使用して暗号化されたOffice ファイルの内容を処理できるSharePointとOneDriveが発生します。 ラベルは、Office for the web、またはデスクトップ アプリOfficeで適用し、SharePointとOneDriveにアップロードまたは保存できます。 この機能を有効にするまで、これらのサービスは暗号化されたファイルを処理できません。つまり、共同編集、電子情報開示、Microsoft Purview データ損失防止、検索、およびその他の共同作業機能は、これらのファイルでは機能しません。
 
-- Word、Excel、PowerPoint ファイルの場合、SharePoint と OneDrive はラベルを認識し、暗号化されたファイルの内容を処理できます。
+SharePointおよびOneDriveのOffice ファイルの秘密度ラベルを有効にした後、クラウドベースのキーを使用して暗号化を適用する秘密度ラベルを持つ新しいファイルと変更されたファイルに対して 、[二重キー暗号化](double-key-encryption.md)を使用しません。
 
-- ユーザーが SharePoint または OneDrive からこれらのファイルをダウンロードまたはアクセスすると、ラベルからの感度ラベルと暗号化設定が適用され、保存されている場所はどこでもファイルに残ります。 ラベルのみを使用してドキュメントを保護するためのユーザー ガイダンスを提供してください。 詳細については、「 [Information Rights Management (IRM) オプションと感度ラベル」を参照してください](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)。
+- Word、Excel、PowerPoint ファイルの場合は、ラベルを認識SharePoint OneDrive、暗号化されたファイルの内容を処理できるようになりました。
 
-- ユーザーがラベル付きファイルと暗号化されたファイルを SharePointまたは OneDriveにアップロードする場合、それらのファイルに対する表示権限が少なくとも必要です。 たとえば、外部のファイルを開SharePoint。 この最小使用権がない場合、アップロードは成功しますが、サービスはラベルを認識し、ファイルの内容を処理できない。
+- ユーザーがSharePointまたはOneDriveからこれらのファイルをダウンロードまたはアクセスすると、秘密度ラベルとラベルからの暗号化設定が適用され、保存されている場所に関係なくファイルに残ります。 ドキュメントを保護するためにラベルのみを使用するためのユーザー ガイダンスを提供してください。 詳細については、「 [Information Rights Management (IRM) オプションと秘密度ラベル](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)」を参照してください。
 
-- 暗号化Office for the web付けるExcel、PowerPointを使用して、Officeファイルを開いて編集します。 暗号化で割り当てられたアクセス許可が適用されます。 これらのドキュメントには [自動ラベル付](apply-sensitivity-label-automatically.md) けも使用できます。
+- ユーザーがラベル付きファイルと暗号化されたファイルをSharePointまたはOneDriveにアップロードする場合は、少なくともそれらのファイルに対する表示権限が必要です。 たとえば、SharePointの外部でファイルを開くことができます。 この最小使用権がない場合、アップロードは成功しますが、サービスはラベルを認識せず、ファイルの内容を処理できません。
 
-- 外部ユーザーは、ゲスト アカウントを使用して暗号化でラベル付けされたドキュメントにアクセスできます。 詳細については、「外部ユーザーと [ラベル付きコンテンツのサポート」を参照してください](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。
+- Office for the web (Word、Excel、PowerPoint) を使用して、暗号化を適用する秘密度ラベルを持つOffice ファイルを開いて編集します。 暗号化で割り当てられたアクセス許可が適用されます。 また、これらのドキュメント [に対して自動ラベル付けを](apply-sensitivity-label-automatically.md) 使用することもできます。
 
-- Office 365は、これらのファイルのフルテキスト検索をサポートし、データ損失防止 (DLP) ポリシーは、これらのファイル内のコンテンツをサポートします。
+- 外部ユーザーは、ゲスト アカウントを使用して暗号化でラベル付けされたドキュメントにアクセスできます。 詳細については、「 [外部ユーザーとラベル付きコンテンツのサポート](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)」を参照してください。
+
+- Office 365電子情報開示では、これらのファイルのフルテキスト検索がサポートされ、データ損失防止 (DLP) ポリシーではこれらのファイル内のコンテンツがサポートされます。
 
 > [!NOTE]
-> オンプレミスのキー (キー管理トポロジは、"独自のキーを保持する" または HYOK と呼ばれることが多い) または [Double Key Encryption](double-key-encryption.md) を使用して暗号化が適用されている場合、ファイルの内容を処理するサービスの動作は変わりません。 したがって、これらのファイルでは、共同編集、電子情報開示、データ損失防止、検索、その他の共同作業機能は機能しません。
+> 暗号化がオンプレミス のキー (多くの場合は "自分のキーを保持する" または HYOK と呼ばれるキー管理トポロジ) で適用されている場合、または [ダブル キー暗号化](double-key-encryption.md)を使用しても、ファイルの内容を処理するためのサービス動作は変更されません。 そのため、これらのファイルでは、共同編集、電子情報開示、データ損失防止、検索、その他の共同作業機能は機能しません。
 >
-> またSharePointおよびOneDriveの動作は、単一の Azure ベースのキーを使用して暗号化でラベル付けされたこれらの場所の既存のファイルでも変更されません。 SharePoint および OneDrive の Office ファイルの感度ラベルを有効にした後で、これらのファイルを新しい機能の恩恵を受けるには、ファイルを再度ダウンロードしてアップロードするか、編集する必要があります。
+> SharePointとOneDriveの動作は、単一の Azure ベースのキーを使用して暗号化でラベル付けされているこれらの場所の既存のファイルについても変更されません。 SharePointおよびOneDriveでOffice ファイルの秘密度ラベルを有効にした後で、これらのファイルが新機能の恩恵を受けるためには、ファイルをダウンロードして再アップロードするか、編集する必要があります。
 
-SharePoint および OneDrive の Office ファイルの感度ラベルを有効にした後、SharePoint および OneDrive のドキュメントに適用される感度ラベル[](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)を監視するために、次の 3 つの新しい監査イベントを使用できます。
+SharePointおよびOneDriveでOffice ファイルの秘密度ラベルを有効にすると、SharePointおよびOneDriveのドキュメントに適用される秘密度ラベルを監視するために、次の 3 つの新しい[監査イベント](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)を使用できます。
 
 - **ファイルに適用された機密ラベル**
 - **ファイルに適用された機密ラベルの変更**
 - **ファイルから削除された機密ラベル**
 
-次のビデオ (音声なし) を見て、新しい機能の動作を確認します。
+次のビデオ (オーディオなし) を見て、新しい機能の動作を確認します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-常に、Office ファイルのSharePointおよび [OneDrive (オプトアウト](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)) を無効にできます。
+SharePointおよびOneDrive ([オプトアウト](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)) 内のOffice ファイルの秘密度ラベルはいつでも無効にできます。
 
-SharePoint Information Rights Management (IRM) を使用して SharePoint のドキュメントを現在保護している場合は、このページの [SharePoint Information Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels) と感度ラベルセクションを確認してください。
+現在、SharePoint Information Rights Management (IRM) を使用してSharePointのドキュメントを保護している場合は、このページの [[SharePoint Information Rights Management (IRM) と秘密度ラベル](#sharepoint-information-rights-management-irm-and-sensitivity-labels)] セクションを確認してください。
 
 ## <a name="requirements"></a>要件
 
-これらの新機能は、感度ラベル [でのみ機能](sensitivity-labels.md) します。 現在 Azure Information Protection ラベルがある場合は、アップロードする新しいファイルに対してこれらの機能を有効にできるよう、最初にラベルを感度ラベルに移行します。 手順については、、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
+これらの新機能は、 [秘密度ラベル](sensitivity-labels.md) でのみ機能します。 現在 Azure Information Protection ラベルがある場合は、最初に機密ラベルに移行して、アップロードする新しいファイルに対してこれらの機能を有効にします。 手順については、、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
-Windows では OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降、Mac ではバージョン 19.002.0107.0008 以降を使用します。 これらのバージョンはどちらも 2019 年 1 月 28 日にリリースされ、現在すべてのリングにリリースされています。 詳細については、「リリース ノート」[OneDrive参照してください](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 SharePoint および OneDrive の Office ファイルの感度ラベルを有効にした後、以前のバージョンの同期アプリを実行するユーザーに更新を求めるメッセージが表示されます。
+Windowsでは OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降、Mac ではバージョン 19.002.0107.0008 以降を使用します。 これらのバージョンはどちらも 2019 年 1 月 28 日にリリースされ、現在すべてのリングにリリースされています。 詳細については、[OneDriveリリース ノート](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)を参照してください。 SharePointおよびOneDriveでOffice ファイルの秘密度ラベルを有効にすると、古いバージョンの同期アプリを実行しているユーザーに更新を求めるメッセージが表示されます。
 
 ## <a name="limitations"></a>制限事項
 
-- SharePoint および OneDrive は、これらのファイルに PowerQuery データ、カスタム アドインによって保存されたデータ、またはカバー ページ プロパティ、コンテンツ タイプ スキーマ、カスタム ドキュメント情報パネル、カスタム XSN などのカスタム XML パーツが含まれている場合、Office デスクトップ アプリからラベル付けおよび暗号化された一部のファイルを処理できません。 この制限は、文献文献を含むファイル[](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5)や、アップロード時にドキュメント [ID](https://support.microsoft.com/office/enable-and-configure-unique-document-ids-ea7fee86-bd6f-4cc8-9365-8086e794c984) が追加されたファイルにも適用されます。
+- SharePointとOneDriveでは、これらのファイルに PowerQuery データ、カスタム アドインによって格納されたデータ、またはカバー ページ プロパティ、コンテンツ タイプ スキーマ、カスタム ドキュメント情報パネル、カスタム XSN などのカスタム XML パーツが含まれている場合、デスクトップ アプリ Officeからラベル付けおよび暗号化されたファイルを処理できません。 この制限は、 [文献目録](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5)を含むファイルや、ドキュメント [ID が](https://support.microsoft.com/office/enable-and-configure-unique-document-ids-ea7fee86-bd6f-4cc8-9365-8086e794c984) アップロードされたときに追加されたファイルにも適用されます。
 
-    これらのファイルの場合は、後で Office on the web で開くことができるよう、暗号化なしのラベルを適用するか、デスクトップ アプリでファイルを開くようユーザーに指示します。 ラベル付けおよび暗号化されたファイルは、Office on the web影響を受け取らない。
+    これらのファイルの場合は、後でOffice on the webで開くことができるように暗号化なしでラベルを適用するか、デスクトップ アプリでファイルを開くようユーザーに指示します。 Office on the web内でのみラベル付けおよび暗号化されたファイルは影響を受けられません。
 
-- SharePointおよびOneDriveは、Azure Information Protection ラベルを使用して既に暗号化されている既存のファイルに対して、感度ラベルを自動的に適用しない。 代わりに、Office ファイルの感度ラベルを有効にした後で機能を機能SharePoint、OneDriveを実行します。
+- SharePointとOneDriveでは、Azure Information Protection ラベルを使用して既に暗号化した既存のファイルに秘密度ラベルが自動的に適用されることはありません。 代わりに、SharePointおよびOneDriveでOffice ファイルの秘密度ラベルを有効にした後で機能を機能させるには、次のタスクを実行します。
 
-    1. Azure Information [Protection ラベルを](/azure/information-protection/configure-policy-migrate-labels)感度ラベルに移行し、セキュリティ 保護ラベルから公開[](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)Microsoft 365 コンプライアンス センター。
-    2. ラベル付きファイルをダウンロードし、そのファイルを元の場所にアップロードSharePointまたはOneDrive。
+    1. [Azure Information Protection ラベルを](/azure/information-protection/configure-policy-migrate-labels)秘密度ラベルに移行し、Microsoft Purview コンプライアンス ポータルから[発行](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)したことを確認します。
+    2. ラベル付けされたファイルをダウンロードし、SharePointまたはOneDriveの元の場所にアップロードします。
 
-- SharePointおよびOneDrive、暗号化を適用したラベルに暗号化用の次の構成がある場合は、暗号化されたファイルを[処理できない](encryption-sensitivity-labels.md#configure-encryption-settings)。
-  - **ラベルを適用する場合にユーザーがアクセス許可を割り当てられ**、**Word、PowerPoint、Excel でユーザーにアクセス許可を指定するように求める** のチェックボックスが選択されています。 この設定は、"ユーザー定義のアクセス許可" と呼ばれる場合があります。
+- SharePointとOneDriveは、暗号化を適用したラベルに暗号化用の次のいずれかの構成がある場合、[暗号化](encryption-sensitivity-labels.md#configure-encryption-settings)されたファイルを処理できません。
+  - **ラベルを適用する場合にユーザーがアクセス許可を割り当てられ**、**Word、PowerPoint、Excel でユーザーにアクセス許可を指定するように求める** のチェックボックスが選択されています。 この設定は、"ユーザー定義のアクセス許可" と呼ばれることもあります。
   - **コンテンツへのユーザー アクセスは有効期限が切れています** は、**[使用しない]** 以外の値が設定されています。
   - **二重キー暗号化** が選択されています。
 
-    これらの暗号化構成を持つラベルの場合、ラベルはユーザーに表示Office for the web。 さらに、これらの暗号化設定が既にあるラベル付きドキュメントでは、新しい機能を使用できません。 たとえば、これらのドキュメントは、更新された場合でも検索結果に返されません。
+    これらの暗号化構成のいずれかを持つラベルの場合、ラベルはOffice for the webのユーザーには表示されません。 さらに、これらの暗号化設定が既にあるラベル付きドキュメントでは、新しい機能を使用できません。 たとえば、これらのドキュメントは、更新されても検索結果に返されません。
 
-- パフォーマンス上の理由から、SharePoint にドキュメントをアップロードまたは保存し、ファイルのラベルが暗号化を適用しない場合、ドキュメント ライブラリの **[Sensitivity**] 列にラベル名が表示されるのに時間がかかる場合があります。 この列のラベル名に依存するスクリプトまたはオートメーションを使用する場合は、この遅延を考慮してください。
+- パフォーマンス上の理由から、ドキュメントをSharePointにアップロードまたは保存するときに、ファイルのラベルに暗号化が適用されない場合、ドキュメント ライブラリの **[秘密度**] 列にラベル名が表示されるまでに時間がかかる場合があります。 この列のラベル名に依存するスクリプトまたはオートメーションを使用する場合は、この遅延を考慮してください。
 
-- [SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de) でチェックアウト中にドキュメントにラベルが付いている場合、ドキュメント ライブラリの [感度]  列には、SharePoint でドキュメントがチェックインされ、次に開くまでラベル名は表示されません。
+- ドキュメントが [SharePointでチェックアウト](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)されている間にラベルが付けられている場合、ドキュメントがチェックインされて次にSharePointで開かれるまで、ドキュメント ライブラリの **[秘密度**] 列にはラベル名は表示されません。
 
-- サービス プリンシパル名を使用するアプリまたはサービスによって SharePoint または OneDrive からラベル付きおよび暗号化されたドキュメントをダウンロードし、別の暗号化設定を適用するラベルで再度アップロードすると、アップロードは失敗します。 たとえば、Microsoft Defender for Cloud Apps では、ファイルの機密ラベルが [機密] から  [高機密] に、または [機密情報] から [全般] **に** 変更 **されます**。
+- ラベル付けされた暗号化されたドキュメントが、サービス プリンシパル名を使用するアプリまたはサービスによってSharePointまたはOneDriveからダウンロードされ、異なる暗号化設定を適用するラベルを使用して再度アップロードされた場合、アップロードは失敗します。 シナリオの例として、ファイルの秘密度ラベルを **機密から高機密** に、または **機密** から **一般** に **変更するMicrosoft Defender for Cloud Apps** があります。
     
-    「ラベル付きドキュメントの暗号化の削除」セクションで説明したように、アプリまたはサービスが [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを最初に実行しても、アップロードは [失敗](#remove-encryption-for-a-labeled-document) しません。 または、アップロードの前に、元のファイルが削除されたか、ファイル名が変更されます。
+    [ラベル付きドキュメントの暗号化の削除](#remove-encryption-for-a-labeled-document)セクションで説明されているように、アプリまたはサービスが [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを最初に実行した場合、アップロードは失敗しません。 または、アップロード前に元のファイルが削除されるか、ファイル名が変更されます。
 
-- ユーザーは、次の [名前を付けて保存] シナリオで暗号化されたドキュメントを開くのに遅延が発生する可能性があります。 Office のデスクトップ バージョンを使用すると、暗号化を適用する感度ラベルを持つドキュメントに対して [名前を付けて保存] を選択します。 ユーザーは場所SharePointまたはOneDriveを選択し、そのドキュメントをすぐに開Office for the web。 サービスが引き続き暗号化を処理している場合、ユーザーはデスクトップ アプリでドキュメントを開く必要があるというメッセージを表示します。 数分でもう一度やり直す場合は、ドキュメントが正常に開Office for the web。
+- ユーザーは、次の [名前を付けて保存] シナリオで暗号化されたドキュメントを開く際に遅延が発生する可能性があります。デスクトップ バージョンのOfficeを使用すると、暗号化を適用する秘密度ラベルを持つドキュメントに対して [名前を付けて保存] を選択します。 ユーザーは場所のSharePointまたはOneDriveを選択し、すぐにOffice for the webでそのドキュメントを開こうとします。 サービスが暗号化をまだ処理している場合は、デスクトップ アプリでドキュメントを開く必要があるというメッセージがユーザーに表示されます。 数分後にもう一度やり直すと、Office for the webでドキュメントが正常に開きます。
 
-- 暗号化されたドキュメントの場合、印刷は暗号化されたドキュメントではOffice for the web。
+- 暗号化されたドキュメントの場合、印刷はOffice for the webではサポートされていません。
 
-- ドキュメント内の暗号化Office for the web、クリップボードと画面キャプチャへのコピーは防止されません。 詳細については、「Can [Rights Management prevent screen captures」を参照してください。](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
+- Office for the webで暗号化されたドキュメントの場合、クリップボードと画面キャプチャへのコピーは防止されません。 詳細については、「[Rights Management で画面キャプチャを防止できますか?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)」を参照してください。
 
-- 既定では、Officeアプリとモバイル アプリは、暗号化でラベル付けされたファイルの共同編集をサポートしません。 これらのアプリは、ラベル付きファイルと暗号化されたファイルを排他的編集モードで引き続き開きます。
+- 既定では、Office デスクトップ アプリとモバイル アプリは、暗号化でラベル付けされたファイルの共同編集をサポートしていません。 これらのアプリは、ラベル付けされた暗号化されたファイルを排他的編集モードで引き続き開きます。
     
     > [!NOTE]
-    > 共同編集は、Windows macOS でサポートされています。 詳細については、「感度ラベルで暗号化されたファイルの共同編集を有効 [にする」を参照してください](sensitivity-labels-coauthoring.md)。
+    > Windowsと macOS で共同編集がサポートされるようになりました。 詳細については、「 [秘密度ラベルで暗号化されたファイルの共同編集を有効にする](sensitivity-labels-coauthoring.md)」を参照してください。
 
-- ユーザーの同期クライアントにダウンロードされたファイルに既に適用されている発行済みのラベルの設定を管理者が変更した場合、ユーザーはファイルに加えた変更を OneDrive Sync フォルダーに保存できない可能性があります。 このシナリオは、暗号化でラベル付けされたファイル、およびラベルの変更が暗号化を適用するラベルに暗号化を適用しなかったラベルからの場合にも適用されます。 白い十字 [アイコン エラーが表示](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)された赤い円が表示され、新しい変更を別のコピーとして保存する必要があります。 代わりに、ファイルを閉じて再度開くか、ファイルを使用Office for the web。
+- 管理者が、ユーザーの同期クライアントにダウンロードしたファイルに既に適用されている発行済みラベルの設定を変更した場合、ユーザーはファイルに加えた変更をOneDrive同期フォルダーに保存できない可能性があります。 このシナリオは、暗号化でラベル付けされたファイル、およびラベルの変更が暗号化を適用するラベルに暗号化を適用しなかったラベルからの場合にも適用されます。 ユーザーには [白い十字アイコン エラーが表示された赤い円](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)が表示され、新しい変更を別のコピーとして保存するように求められます。 代わりに、ファイルを閉じて再度開くか、Office for the webを使用できます。
 
-- ユーザーは、Office for the web を使用する代わりに、Word、Excel、または PowerPoint のデスクトップ アプリとモバイル アプリを使用するときに、オフラインまたはスリープ モードに入った後に問題を保存できます。 これらのユーザーは、Office アプリ セッションを再開して変更を保存しようとするときに、元のファイルを保存する代わりにコピーを保存するオプションを指定したアップロードエラー メッセージが表示されます。
+- ユーザーは、Office for the webを使用する代わりに、Word、Excel、またはPowerPoint用のデスクトップ アプリとモバイル アプリを使用する場合に、オフラインまたはスリープ モードになった後に保存の問題が発生する可能性があります。 これらのユーザーの場合、Office アプリ セッションを再開して変更を保存しようとすると、元のファイルを保存する代わりにコピーを保存するオプションを含むアップロードエラー メッセージが表示されます。
 
-- 次の方法で暗号化されたドキュメントは、次の方法で開Office for the web。
-  - オンプレミスのキーを使用する暗号化 ("独自のキーを保持する" または HYOK)
-  - ダブル キー暗号化を使用して適用 [された暗号化](double-key-encryption.md)
-  - たとえば、Rights Management 保護テンプレートを直接適用することによって、ラベルから個別に適用された暗号化。
+- 次の方法で暗号化されたドキュメントは、Office for the webで開くできません。
+  - オンプレミス キーを使用する暗号化 ("自分のキーを保持する" または HYOK)
+  - [ダブル キー](double-key-encryption.md)暗号化を使用して適用された暗号化
+  - ラベルとは別に適用された暗号化 。たとえば、Rights Management 保護テンプレートを直接適用します。
 
-- 他の言語 [用に構成されたラベル](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) はサポートされていません。元の言語のみを表示します。
+- [他の言語](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell)用に構成されたラベルはサポートされておらず、元の言語のみが表示されます。
 
-- SharePoint または OneDrive のドキュメントに適用されたラベルを削除した場合、該当するラベル ポリシーからラベルを削除する代わりに、ダウンロードしたドキュメントにはラベルや暗号化は適用されません。 一方、ラベル付きドキュメントが SharePoint または OneDrive の外部に保存されている場合、ラベルが削除された場合、ドキュメントは暗号化されたままです。 テスト フェーズ中にラベルを削除する場合があるが、実稼働環境でラベルを削除する場合は非常にまれです。
+- 該当するラベル ポリシーからラベルを削除するのではなく、SharePointまたはOneDriveのドキュメントに適用されているラベルを削除した場合、ダウンロードしたドキュメントにはラベル付けまたは暗号化されません。 これに対して、ラベル付けされたドキュメントがSharePointまたはOneDriveの外部に保存されている場合、ラベルが削除された場合、ドキュメントは暗号化されたままになります。 テスト フェーズ中にラベルを削除する可能性がありますが、運用環境でラベルを削除することは非常にまれであることに注意してください。
 
-## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>ユーザーとユーザーに対してSharePointラベルOneDriveする方法 (オプトイン)
+## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>SharePointとOneDriveの秘密度ラベルを有効にする方法 (オプトイン)
 
-新しい機能を有効にするには、新しい機能Microsoft 365 コンプライアンス センター PowerShell を使用します。 SharePoint および OneDrive のすべてのテナント レベルの構成変更と同様に、変更を有効にするのに約 15 分かかります。
+新しい機能を有効にするには、Microsoft Purview コンプライアンス ポータルを使用するか、PowerShell を使用します。 SharePointとOneDriveのすべてのテナント レベルの構成変更と同様に、変更が有効になるまでに約 15 分かかります。
 
-### <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>コンプライアンス センターを使用して、感度ラベルのサポートを有効にする
+### <a name="use-the-microsoft-purview-compliance-portal-to-enable-support-for-sensitivity-labels"></a>Microsoft Purview コンプライアンス ポータルを使用して機密ラベルのサポートを有効にする
 
-このオプションは、SharePoint および OneDrive の感度ラベルを有効にする最も簡単な方法ですが、テナントのグローバル管理者としてサインインする必要があります。
+このオプションは、SharePointとOneDriveの秘密度ラベルを有効にする最も簡単な方法ですが、テナントのグローバル管理者としてサインインする必要があります。
 
-1. グローバル管理者 [としてMicrosoft 365 コンプライアンス センターサインイン](https://compliance.microsoft.com/)し、[**SolutionsInformation** protection **]** >  に移動します。
+1. グローバル管理者として [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)にサインインし、**SolutionsInformation**  >  保護に移動します
 
     このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。
 
-2. オンライン ファイル内のコンテンツを処理する機能を有効にするメッセージが表示された場合は、[今すぐOfficeをオンにする] **を選択します**。
+2. オンライン ファイルでコンテンツを処理する機能を有効にするメッセージが表示Office場合は、[**今すぐ有効にする**] を選択します。
 
-    ![[今すぐ有効にする] ボタンをオンにして、オンラインのOffice有効にします。](../media/sensitivity-labels-turn-on-banner.png)
+    ![[今すぐ有効にする] ボタンをオンにして、Office Online の秘密度ラベルを有効にします。](../media/sensitivity-labels-turn-on-banner.png)
 
-    コマンドはすぐに実行され、ページが次に更新されると、メッセージまたはボタンが表示されなくなりました。
+    コマンドはすぐに実行され、ページが次に更新されると、メッセージまたはボタンは表示されなくなります。
 
 > [!NOTE]
-> 複数地域をMicrosoft 365場合は、PowerShell を使用して、すべての地域の場所でこれらの機能を有効にする必要があります。 詳細については、次のセクションを参照してください。
+> 複数地域をMicrosoft 365している場合は、PowerShell を使用して、すべての地域の場所でこれらの機能を有効にする必要があります。 詳細については、次のセクションを参照してください。
 
-### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>PowerShell を使用して、感度ラベルのサポートを有効にする
+### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>PowerShell を使用して秘密度ラベルのサポートを有効にする
 
-コンプライアンス センターを使用する代わりに、オンライン PowerShell の [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用して、SharePointできます。
+Microsoft Purview コンプライアンス ポータルを使用する代わりに、SharePoint Online PowerShell の [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用して、秘密度ラベルのサポートを有効にすることができます。
 
-複数地域をMicrosoft 365場合は、PowerShell を使用して、すべての地域の場所に対してこのサポートを有効にする必要があります。
+複数地域をMicrosoft 365している場合は、PowerShell を使用して、すべての地域の場所でこのサポートを有効にする必要があります。
 
-#### <a name="prepare-the-sharepoint-online-management-shell"></a>オンライン管理シェルSharePoint準備する
+#### <a name="prepare-the-sharepoint-online-management-shell"></a>SharePoint Online Management Shell を準備する
 
-powerShell コマンドを実行して SharePoint および OneDrive の Office ファイルの感度ラベルを有効にする前に、SharePoint Online Management Shell バージョン 16.0.19418.12000 以降を実行してください。 最新バージョンが既にある場合は、次の手順に[](#run-the-powershell-command-to-enable-support-for-sensitivity-labels)進み、PowerShell コマンドを実行できます。
+PowerShell コマンドを実行して、SharePointおよびOneDriveのOffice ファイルの秘密度ラベルを有効にする前に、オンライン管理シェル バージョン 16.0.19418.12000 以降SharePoint実行していることを確認します。 最新バージョンが既にある場合は、 [次の手順](#run-the-powershell-command-to-enable-support-for-sensitivity-labels) に進んで PowerShell コマンドを実行できます。
 
 1. PowerShell ギャラリーから以前のバージョンの SharePoint Online 管理シェルをインストールした場合、次のコマンドレットを実行してモジュールを更新できます。
 
@@ -158,75 +160,75 @@ powerShell コマンドを実行して SharePoint および OneDrive の Office 
     Update-Module -Name Microsoft.Online.SharePoint.PowerShell
     ```
 
-2. または、Microsoft ダウンロード センターから以前のバージョンの SharePoint Online 管理シェルをインストールしている場合は、[プログラムの追加と削除] に移動して、SharePoint Online 管理シェルをアンインストールできます。
+2. または、Microsoft ダウンロード センターから以前のバージョンの SharePoint Online Management Shell をインストールした場合は、**プログラムの追加または削除** に移動し、SharePoint Online Management Shell をアンインストールすることもできます。
 
 3. Web ブラウザーで [ダウンロード センター] ページへと移動し、[最新の SharePoint Online 管理シェルをダウンロードします](https://go.microsoft.com/fwlink/p/?LinkId=255251)。
 
 4. 言語を選択し、[**ダウンロード**] をクリックします。
 
-5. x64 および x86 の .msi ファイルのいずれかを選択します。 32 ビット バージョンを実行する場合は、64 ビット バージョンの Windows または x86 ファイルを実行する場合は、x64 ファイルをダウンロードします。 分からない場合は、「実行中のオペレーティング システム[Windowsバージョン」を参照してください。](https://support.microsoft.com/help/13443/windows-which-operating-system)
+5. x64 および x86 の .msi ファイルのいずれかを選択します。 64 ビット バージョンのWindowsを実行する場合は x64 ファイルをダウンロードし、32 ビット バージョンを実行する場合は x86 ファイルをダウンロードします。 わからない場合は、[実行しているオペレーティング システムのバージョンWindows](https://support.microsoft.com/help/13443/windows-which-operating-system)確認してください。
 
 6. ファイルをダウンロードしたら、ファイルを実行し、セットアップ ウィザードの手順に従います。
 
-#### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>PowerShell コマンドを実行して、感度ラベルのサポートを有効にする
+#### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>PowerShell コマンドを実行して秘密度ラベルのサポートを有効にする
 
-新しい機能を有効にするには、 [EnableAIPIntegration パラメーターで Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレット *を使用* します。
+新しい機能を有効にするには、*EnableAIPIntegration* パラメーターで [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用します。
 
-1. グローバル管理者または管理者特権を持つ仕事または学校SharePointを使用して、Microsoft 365に接続SharePoint。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
+1. Microsoft 365でグローバル管理者またはSharePoint管理者特権を持つ職場または学校アカウントを使用して、SharePointに接続します。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
 
     > [!NOTE]
-    > 複数地域Microsoft 365場合は、[Connect-SPOService で -](/powershell/module/sharepoint-online/connect-sposervice)Url パラメーターを使用し、地域の場所の 1 つについて SharePoint Online Administration Center サイト URL を指定します。
+    > 複数地域をMicrosoft 365している場合は、-Url パラメーターを [Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice) と共に使用し、いずれかの地理的場所に対して SharePoint Online Administration Center サイト URL を指定します。
 
-2. 次のコマンドを実行し、 **Y キーを押して** 確認します。
+2. 次のコマンドを実行し、 **Y** キーを押して確認します。
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true
     ```
-3. [Microsoft 365: 残りの地理的位置ごとに手順 1 と 2 を繰り返します。
+3. Microsoft 365複数地域の場合: 残りの地域の場所ごとに手順 1 と 2 を繰り返します。
 
-## <a name="publishing-and-changing-sensitivity-labels"></a>感度ラベルの発行と変更
+## <a name="publishing-and-changing-sensitivity-labels"></a>秘密度ラベルの発行と変更
 
-SharePoint と OneDrive で感度ラベルを使用する場合は、新しい感度ラベルを発行したり、既存の感度ラベルを更新したりするときにレプリケーション時間を許可する必要があります。 これは、暗号化を適用する新しいラベルで特に重要です。
+SharePointとOneDriveで秘密度ラベルを使用する場合は、新しい秘密度ラベルを発行したり、既存の秘密度ラベルを更新したりするときに、レプリケーション時間を確保する必要があることに注意してください。 これは、暗号化を適用する新しいラベルに特に重要です。
 
-たとえば、暗号化を適用する新しい感度ラベルを作成して発行すると、ユーザーのデスクトップ アプリにすばやく表示されます。 ユーザーは、このラベルをドキュメントに適用し、ドキュメントまたはドキュメントSharePointアップロードOneDrive。 サービスのラベル レプリケーションが完了しない場合、アップロード時に新しい機能はドキュメントに適用されません。 その結果、ドキュメントは検索または電子情報開示で返され、ドキュメントを電子情報開示で開くOffice for the web。
+たとえば、暗号化を適用する新しい秘密度ラベルを作成して発行すると、ユーザーのデスクトップ アプリにすばやく表示されます。 ユーザーはこのラベルをドキュメントに適用し、SharePointまたはOneDriveにアップロードします。 ラベルレプリケーションがサービスに対して完了していない場合、アップロード時にそのドキュメントに新しい機能は適用されません。 その結果、ドキュメントは検索または電子情報開示で返されないため、ドキュメントをOffice for the webで開く必要があります。
 
-ラベルのタイミングの詳細については、「新しいラベルと変更を有効にするときに」 [を参照してください](create-sensitivity-labels.md#when-to-expect-new-labels-and-changes-to-take-effect)。
+ラベルのタイミングの詳細については、「[新しいラベルと変更が反映されるタイミング](create-sensitivity-labels.md#when-to-expect-new-labels-and-changes-to-take-effect)」を参照してください。
 
-セーフガードとして、最初に少数のテスト ユーザーに新しいラベルを発行し、少なくとも 1 時間待ち、SharePoint と OneDrive でラベルの動作を確認することをお勧めします。 少なくとも 1 日待って、既存のラベル ポリシーにユーザーを追加するか、標準ユーザーの既存のラベル ポリシーにラベルを追加して、より多くのユーザーがラベルを使用できます。 標準ユーザーがラベルを表示する前に、ラベルは既にユーザーとSharePoint同期OneDrive。
+セーフガードとして、最初に少数のテスト ユーザーのみに新しいラベルを発行し、少なくとも 1 時間待ってから、SharePointとOneDriveに対するラベルの動作を確認することをお勧めします。 少なくとも 1 日待ってから、既存のラベル ポリシーにユーザーを追加するか、標準ユーザーの既存のラベル ポリシーにラベルを追加して、ラベルをより多くのユーザーが利用できるようにします。 標準ユーザーにラベルが表示される時点で、ラベルは既にSharePointとOneDriveに同期されています。
 
-## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint権限管理 (IRM) と感度ラベル
+## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint Information Rights Management (IRM) ラベルと秘密度ラベル
 
-[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) は、ファイルのダウンロード時に暗号化と制限を適用して、リストおよびライブラリ レベルのファイルを保護する古いテクノロジです。 この古い保護テクノロジは、承認されていないユーザーがファイルを開く際に、ファイルが外部にある間に開SharePoint。
+[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) は、ファイルのダウンロード時に暗号化と制限を適用することで、リストレベルとライブラリ レベルでファイルを保護するための古いテクノロジです。 この古い保護テクノロジは、承認されていないユーザーがファイルをSharePoint外部で開くのを防ぐために設計されています。
 
-それに対して、感度ラベルは、暗号化に加えて視覚的なマーキング (ヘッダー、フッター、透かし) の保護設定を提供します。 暗号化設定では、ユーザーがコンテンツに[](/azure/information-protection/configure-usage-rights)対して実行できる操作を制限する使用権限の全範囲がサポートされ、多くのシナリオで同じ感度ラベル[がサポートされています](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)。 ワークロードとアプリ間で一貫した設定で同じ保護方法を使用すると、一貫した保護戦略が実現します。
+これに対して、秘密度ラベルは、暗号化に加えて視覚的なマーキング (ヘッダー、フッター、透かし) の保護設定を提供します。 暗号化設定では、ユーザーがコンテンツに対して実行できる操作を制限するための [使用権限](/azure/information-protection/configure-usage-rights) の全範囲がサポートされており、 [多くのシナリオ](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)で同じ秘密度ラベルがサポートされています。 同じ保護方法をワークロードとアプリ間で一貫した設定で使用すると、一貫性のある保護戦略が実現します。
 
 ただし、両方の保護ソリューションを一緒に使用できます。動作は次のとおりです。
 
-- 暗号化を適用する感度ラベル付きファイルをアップロードすると、SharePoint はこれらのファイルのコンテンツを処理できないので、これらのファイルの共同編集、電子情報開示、DLP、および検索はサポートされません。
+- 暗号化を適用する秘密度ラベルを持つファイルをアップロードした場合、SharePointはこれらのファイルのコンテンツを処理できないため、これらのファイルの共同編集、電子情報開示、DLP、検索はサポートされません。
 
-- ファイルにラベルを付Office for the web、ラベルの暗号化設定が適用されます。 これらのファイルでは、共同編集、電子情報開示、DLP、および検索がサポートされています。
+- Office for the webを使用してファイルにラベルを付ける場合、ラベルからのすべての暗号化設定が適用されます。 これらのファイルでは、共同編集、電子情報開示、DLP、検索がサポートされています。
 
-- Office for the web を使用してラベル付けされたファイルをダウンロードすると、ラベルは保持され、IRM 制限設定ではなく、ラベルからの暗号化設定が適用されます。
+- Office for the webを使用してラベル付けされたファイルをダウンロードすると、ラベルは保持され、ラベルからの暗号化設定は IRM 制限設定ではなく適用されます。
 
-- 暗号化されていないOfficeまたは PDF ファイルをダウンロードすると、IRM 設定が適用されます。
+- 秘密度ラベルで暗号化されていないOfficeまたは PDF ファイルをダウンロードすると、IRM 設定が適用されます。
 
-- 追加の IRM ライブラリ設定 (IRM をサポートしないドキュメントをユーザーがアップロードできないなど) を有効にした場合、これらの設定が適用されます。
+- IRM をサポートしていないドキュメントをユーザーがアップロードできないようにする追加の IRM ライブラリ設定のいずれかを有効にした場合、これらの設定が適用されます。
 
-この動作により、ラベル付けされていない場合でも、Officeおよび PDF ファイルがダウンロードされた場合、すべてのファイルと PDF ファイルが不正アクセスから保護されます。 ただし、アップロードされたラベル付きファイルは、新しい機能の恩恵を受け取るわけではありません。
+この動作により、すべてのOfficeファイルと PDF ファイルは、ラベルが付いていない場合でも、ダウンロードされた場合に不正アクセスから保護されます。 ただし、アップロードされたラベル付きファイルは、新しい機能の恩恵を受けることはありません。
 
-## <a name="search-for-documents-by-sensitivity-label"></a>感度ラベルでドキュメントを検索する
+## <a name="search-for-documents-by-sensitivity-label"></a>機密ラベルでドキュメントを検索する
 
-管理プロパティ **InformationProtectionLabelId** を使用して、特定のSharePointまたはOneDriveのドキュメントを検索します。 次の構文を使用します。 `InformationProtectionLabelId:<GUID>`
+管理プロパティ **InformationProtectionLabelId** を使用して、特定の秘密度ラベルを持つSharePointまたはOneDrive内のすべてのドキュメントを検索します。 次の構文を使用します。 `InformationProtectionLabelId:<GUID>`
 
-たとえば、"Confidential" というラベルが付いたドキュメントを検索し、そのラベルに "8faca7b8-8d20-48a3-8ea2-0f96310a848e" という GUID を入力します。
+たとえば、"Confidential" としてラベル付けされたすべてのドキュメントを検索し、そのラベルに "8faca7b8-8d20-48a3-8ea2-0f96310a848e" の GUID を持つすべてのドキュメントを検索するには、検索ボックスに次のように入力します。
 
 ```
 InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
 ```
 
-検索では、圧縮ファイル内のラベル付きドキュメント (ファイル形式のファイルなど) が.zipされません。
+検索では、.zip ファイルなどの圧縮ファイルにラベル付きのドキュメントが見つかりません。
 
-感度ラベルの GUID を取得するには、 [Get-Label コマンドレットを使用](/powershell/module/exchange/get-label) します。
+秘密度ラベルの GUID を取得するには、 [Get-Label](/powershell/module/exchange/get-label) コマンドレットを使用します。
 
 1. まず、[Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
@@ -238,15 +240,15 @@ InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
     Get-Label |ft Name, Guid
     ```
 
-管理プロパティの使用の詳細については、「検索スキーマを管理[する」](/sharepoint/manage-search-schema)を参照SharePoint。
+管理プロパティの使用の詳細については、「[SharePointでの検索スキーマの管理](/sharepoint/manage-search-schema)」を参照してください。
 
 ## <a name="remove-encryption-for-a-labeled-document"></a>ラベル付きドキュメントの暗号化を削除する
 
-管理者が、管理者がSharePointドキュメントから暗号化を削除する必要がある場合は、まれにSharePoint。 そのドキュメントに割り[](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)当てられているエクスポートまたはフル コントロールの権限管理の使用権を持つユーザーは、Azure Rights Management サービスによって Azure Information Protection から適用された暗号化を削除できます。 たとえば、これらの使用権限を持つユーザーは、暗号化を適用するラベルを暗号化なしのラベルに置き換える可能性があります。 スーパー [ユーザーは、](/azure/information-protection/configure-super-users) ファイルをダウンロードし、暗号化なしでローカル コピーを保存できます。
+SharePoint管理者がSharePointに格納されているドキュメントから暗号化を削除する必要がある場合は、まれに発生することがあります。 そのドキュメントに対して、エクスポートまたはフル コントロールの [Rights Management 使用権](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)が割り当てられているすべてのユーザーは、Azure Rights Management サービスによって適用された暗号化を Azure Information Protectionから削除できます。 たとえば、これらの使用権限のいずれかを持つユーザーは、暗号化を適用するラベルを暗号化のないラベルに置き換えることができます。 [スーパー ユーザー](/azure/information-protection/configure-super-users)は、ファイルをダウンロードし、暗号化なしでローカル コピーを保存することもできます。
 
-代わりに、グローバル管理者または [SharePoint](/sharepoint/sharepoint-admin-role) 管理者は [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを実行して、感度ラベルと暗号化の両方を削除できます。 このコマンドレットは、管理者がサイトまたはファイルへのアクセス許可を持っていなくても、Azure Rights Management サービスが利用できない場合でも実行されます。
+代わりに、グローバル管理者または[SharePoint管理者](/sharepoint/sharepoint-admin-role)は [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを実行できます。これにより、秘密度ラベルと暗号化の両方が削除されます。 このコマンドレットは、管理者がサイトまたはファイルに対するアクセス許可を持っていない場合や、Azure Rights Management サービスが利用できない場合でも実行されます。
 
-次に例を示します。
+例:
 
 ```powershell
 Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
@@ -254,26 +256,26 @@ Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Mark
 
 要件:
 
-- SharePoint管理シェル バージョン 16.0.20616.12000 以降。
+- SharePoint Online Management Shell バージョン 16.0.20616.12000 以降。
 
-- 暗号化は、管理者が定義した暗号化設定 ([アクセス許可の割り当て] ラベル設定) を持つ感度ラベル [によって](encryption-sensitivity-labels.md#assign-permissions-now) 適用されています。 [このコマンドレットでは](encryption-sensitivity-labels.md#double-key-encryption) 、ダブル キー暗号化はサポートされていません。
+- 暗号化は、管理者が定義した暗号化設定を持つ秘密度ラベルによって適用されています ( [[今すぐアクセス許可を割り当てる](encryption-sensitivity-labels.md#assign-permissions-now) ] ラベル設定)。 このコマンドレットでは[、ダブル キー暗号化](encryption-sensitivity-labels.md#double-key-encryption)はサポートされていません。
 
-ファイルから削除された秘密度ラベルの監査[](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)イベントに位置合わせテキストが追加され、復号化アクションは [Azure Information Protection](/azure/information-protection/log-analyze-usage) の保護使用状況ログにも記録されます。
+正当な理由テキストは、**ファイルから機密ラベルを削除** した [監査イベント](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)に追加され、復号化アクションも [Azure Information Protectionの保護使用状況ログ](/azure/information-protection/log-analyze-usage)に記録されます。
 
-## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>ユーザーとユーザーに対してSharePointラベルOneDriveする方法 (オプトアウト)
+## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>SharePointとOneDriveの秘密度ラベルを無効にする方法 (オプトアウト)
 
-これらの新機能を無効にすると、SharePoint および OneDrive の感度ラベルを有効にした後にアップロードしたファイルは、ラベル設定が引き続き適用されるので、ラベルによって引き続き保護されます。 これらの新機能を無効にした後で、新しいファイルに感度ラベルを適用すると、フルテキスト検索、電子情報開示、および共同編集は機能しなくなりました。
+これらの新機能を無効にした場合、SharePointおよびOneDriveの秘密度ラベルを有効にした後にアップロードしたファイルは、ラベル設定が引き続き適用されるため、引き続きラベルによって保護されます。 これらの新機能を無効にした後で新しいファイルに秘密度ラベルを適用すると、フルテキスト検索、電子情報開示、共同編集は機能しなくなります。
 
-これらの新機能を無効にするには、PowerShell を使用する必要があります。 SharePoint Online 管理シェルと [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用して、「[PowerShell](#use-powershell-to-enable-support-for-sensitivity-labels) を使用して感度ラベルのサポートを有効にする」セクションで説明されているのと同じ *EnableAIPIntegration* パラメーターを指定します。 ただし、今回はパラメーター値を false に設定し、 **Y キーを** 押して確認します。
+これらの新機能を無効にするには、PowerShell を使用する必要があります。 SharePoint Online Management Shell と [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用して、「[PowerShell を使用して秘密度ラベルのサポートを有効にする](#use-powershell-to-enable-support-for-sensitivity-labels)」セクションで説明されているのと同じ *EnableAIPIntegration* パラメーターを指定します。 ただし、今回はパラメーター値を false に設定し、 **Y** キーを押して確認します。
 
 ```PowerShell
 Set-SPOTenant -EnableAIPIntegration $false
 ```
 
-複数地域をMicrosoft 365場合は、各地域の場所に対してこのコマンドを実行する必要があります。
+複数地域をMicrosoft 365している場合は、それぞれの地域の場所に対してこのコマンドを実行する必要があります。
 
 ## <a name="next-steps"></a>次の手順
 
-SharePoint および OneDrive の Office ファイルの感度ラベルを有効にした後、自動ラベル付けポリシーを使用してこれらのファイルに自動的にラベルを付ける方法を検討してください。 詳細については、「コンテンツに感度 [ラベルを自動的に適用する」を参照してください](apply-sensitivity-label-automatically.md)。
+SharePointおよびOneDrive内のOffice ファイルの秘密度ラベルを有効にした後は、自動ラベル付けポリシーを使用してこれらのファイルに自動的にラベルを付けてみてください。 詳細については、「[秘密度ラベルを自動でコンテンツに適用する](apply-sensitivity-label-automatically.md)」を参照してください。
 
 ラベル付けおよび暗号化されたドキュメントを組織外の人々と共有する必要がありますか?  「[暗号化されたドキュメントを外部ユーザーと共有する](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)」を参照してください。

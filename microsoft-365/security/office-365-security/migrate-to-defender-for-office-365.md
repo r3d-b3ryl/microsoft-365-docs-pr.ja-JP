@@ -19,12 +19,12 @@ ms.custom: ''
 description: サードパーティの保護サービスや Google Postini、Barracuda Spam and Virus Firewall、Cisco IronPort などのデバイスから保護をMicrosoft Defender for Office 365に移行する正しい方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f67135e2b8a3700a2fb6a6e24fc4f66696db2e3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 87100c2faa071075b9658591dad821d240b60b84
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098716"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284976"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>サード パーティの保護サービスまたはデバイスからMicrosoft Defender for Office 365に移行する
 
@@ -32,6 +32,9 @@ ms.locfileid: "65098716"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
 Microsoft 365の前に存在する既存のサードパーティの保護サービスまたはデバイスが既にある場合は、このガイドを使用して保護をMicrosoft Defender for Office 365に移行し、統合管理エクスペリエンスの利点、コストの削減 (既に支払っている製品を使用)、および統合セキュリティを備えた成熟した製品を得ることができます。 保護。 詳細については、「[Microsoft Defender for Office 365](https://www.microsoft.com/security/business/threat-protection/office-365-defender)」を参照してください。
+
+Defender for Office 365への移行の詳細については、この短いビデオをご覧ください。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfH]
 
 このガイドでは、移行に関する具体的で実用的な手順について説明し、次の事実を前提としています。
 

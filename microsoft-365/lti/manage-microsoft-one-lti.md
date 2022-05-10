@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Microsoft OneLTI 管理の主要なタスク (表示、削除、編集、トラブルシューティングなど) を実行する方法について説明します。
-ms.openlocfilehash: 8b788028a453969f13c31bbe72962c1b7df955a6
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 04d6921d9ed9c4963e2bff8287e79f83bd6807fe
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823461"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287118"
 ---
 # <a name="manage-microsoft-onelti-for-any-lms"></a>任意の LMS の Microsoft OneLTI を管理する
 
@@ -74,6 +74,7 @@ LTI 登録を変更するには、次の手順を実行する必要がありま�
 - **Cookie が見つかりません**
   - ブラウザーの設定で **LMS URL** に対してサード パーティの Cookie を許可する必要があります。
   - これらの Cookie は、IMS 仕様に従って LTI 1.3 ハンドシェイクを完了するために必要です。
+  - ブラウザーの Cookie 設定を更新する方法については、「ブラウザー [で LMS URL の Cookie を許可](browser-cookies.md)する」を参照してください。
 
 - **登録の詳細が見つかりません**
   - この問題は、LTI ツールの登録が完了しなかった場合、または OneLTI 管理ポータルで登録が削除された場合に発生します。

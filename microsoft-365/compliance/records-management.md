@@ -21,21 +21,21 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft Purview レコード管理が、ビジネス、法律、または規制の記録管理要件に対応する高価値のアイテムをどのようにサポートしているかをご覧ください。
-ms.openlocfilehash: dd554b4369a1f721d306bc301519ce3ef59e4569
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b14c622d1468cdb91ad1ac8e58c184e650ebbe6c
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998532"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284866"
 ---
 # <a name="learn-about-records-management"></a>レコード管理の詳細
+
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!TIP]
 > *9 つの Microsoft Purview ソリューションすべてのプレミアム バージョンを無料で試すことができることをご存知ですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べてください。 Microsoft 365 E3 および Office 365 E3 のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から今すぐ開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 規制や法律上、および事業運営上重要な記録を企業データ全体で管理するためのレコード管理ソリューションはあらゆる組織で必要です。Microsoft Purview のレコード管理は、組織が法的な義務行為を管理できるようにし、規制を遵守できる機能を提供します。これにより、事業運営上、保持する必要がなくなった、価値がなくなった、または不要になったアイテムを定期的に処分することができ、効率向上につながります。
 

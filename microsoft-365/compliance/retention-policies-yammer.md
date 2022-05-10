@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Yammer に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 48b7f00df2f01d1b84af1962d91551752334c8b1
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: e90d83cb4b71600f4dbf8b16790454f523ce6c13
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595106"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286474"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Yammer の保持の詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事の情報は[保持の詳細](retention.md)に関する記事を補足するもので、Yammer に固有の情報が含まれています。
 
@@ -183,6 +185,6 @@ Yammer のコミュニティ メッセージとユーザー メッセージで�
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
-Microsoft 365 で初めてアイテム保持を構成する場合は、「[情報ガバナンスを開始する](get-started-with-information-governance.md)」を参照してください。
+Microsoft 365 で初めてアイテム保持を構成する場合は、「[情報ガバナンスを開始する](get-started-with-data-lifecycle-management.md)」を参照してください。
 
 Yammer 用のアイテム保持ポリシーを構成する準備ができた場合は、「[アイテム保持ポリシーを作成して構成する](create-retention-policies.md)」を参照してください。

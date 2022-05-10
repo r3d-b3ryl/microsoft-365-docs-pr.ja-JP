@@ -13,16 +13,20 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: 新しい Microsoft OneDrive ラーニング Tools Interoperability App for Canvas を使用して、課題の作成と採点、コース コンテンツのビルドとキュレーション、ファイルでの共同作業をリアルタイムで行うことができます。
-ms.openlocfilehash: 5de027c9d7606ebe546a8dc8e087b91da7f0400e
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 8a4e3a1fc1b1d19bed093d5e72bf66e1afb2f591
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824566"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285568"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Microsoft OneDrive LTI と Canvas を統合する
 
-Microsoft OneDrive LTI と Canvas の統合は、2 つのステップ プロセスです。 最初の手順では Canvas でMicrosoft OneDriveを有効にし、2 番目の手順ではMicrosoft OneDrive LTI を Canvas コース内で使用できるようにします。
+この記事は、キャンバス用の Microsoft OneDrive LTI を設定する必要がある教育機関の IT 管理者向けです。
+
+Canvas で OneDrive LTI を使用する方法については、「[LMS でMicrosoft OneDriveを使用](https://support.microsoft.com/topic/use-microsoft-onedrive-with-your-lms-c2ddeb48-f695-4267-94f2-14f7ff1b7bdd)する」を参照してください。
+
+Microsoft OneDrive LTI と Canvas の統合は、2 段階のプロセスです。 最初の手順では Canvas でMicrosoft OneDriveを有効にし、2 番目の手順ではMicrosoft OneDrive LTI を Canvas コース内で使用できるようにします。
 
 ## <a name="recommended-browser-settings"></a>推奨されるブラウザー設定
 
@@ -76,7 +80,10 @@ Microsoft OneDrive LTI と Canvas の統合は、2 つのステップ プロセ�
    :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="LTI テナント登録ページ。このページには、JSON テキストとキーをコピーするテキスト ボックスが表示されます。":::
 
 9. 変更を確認して保存します。 登録が成功すると、メッセージが表示されます。
+
 10. 登録の詳細は、ホーム ページの **[LTI テナントの表示** ] ボタンを選択して確認することもできます。
+
+今後のリリースでは、追加の管理者の同意が必要になる場合があります。 このような場合は、手順 1 と手順 2 のみを繰り返す必要があります。
 
 ## <a name="enable-microsoft-onedrive-lti-in-canvas-courses"></a>キャンバス コースで Microsoft OneDrive LTI を有効にする
 

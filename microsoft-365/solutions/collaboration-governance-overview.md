@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Microsoft 365 グループ、Teams、SharePoint、Yammerなど、Microsoft 365コラボレーション ツールのガバナンスのベスト プラクティスについて説明します。
-ms.openlocfilehash: 130342725e8c43b4aeaac116b94704db3046e059
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4afed27fa6d40f7f6967583bcfd3f43c69c7963
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941393"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284998"
 ---
 # <a name="what-is-collaboration-governance"></a>共同作業のガバナンスとは?
 
@@ -133,7 +133,7 @@ Microsoft 365でコラボレーション機能を使用する方法を決定す�
 
 - 組織が電子メールを使用してほとんどの通信を行う場合は、Outlookでグループを作成するようにユーザーに指示します。
 - 組織がSharePointを頻繁に使用している場合、またはオンプレミスから移行SharePoint場合は、共同作業のためにSharePointチーム サイトを作成するようにユーザーに指示します。
-- 組織がTeams展開している場合は、コラボレーションスペースが必要なときにチームを作成するようにユーザーに指示します。
+- 組織がTeamsを展開している場合は、コラボレーションスペースが必要なときにチームを作成するようにユーザーに指示します。
 
 これにより、ユーザーがグループと関連するサービスとの関係に慣れていない場合に混乱を回避できます。 グループについてユーザーと話す方法の詳細については、「ユーザーに[対するMicrosoft 365 グループの説明」を参照してください](../admin/create-groups/explain-groups-knowledge-worker.md)。
 
@@ -182,7 +182,7 @@ Microsoft Learn のこれらのトレーニング モジュールは、Microsoft
 
 |トレーニング: |Microsoft 365 で企業情報を保護する|
 |:---|:---|
-|![Teamsトレーニング アイコン。](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。 「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。 このラーニング パスは、Microsoft 365認定: セキュリティ管理者アソシエイトおよびMicrosoft 365認定: Enterprise Administration Expert 認定資格の準備に役立ちます。<br><br>1 時間 - ラーニング パス - 5 モジュール|
+|![Teamsトレーニング アイコン。](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。このラーニング パスは、 Microsoft 365 認定: セキュリティ管理者アソシエイト  および  Microsoft 365 認定: エンタープライズ管理エキスパート  認定の準備に役立ちます。<br><br>1 時間 - ラーニング パス - 5 モジュール|
 
 > [!div class="nextstepaction"]
 > [スタート>](/learn/modules/m365-security-info-overview/introduction/)
@@ -205,7 +205,7 @@ IT アーキテクトが Microsoft 365 のグループについて知ってお�
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![グループインフォグラフィックのサム イメージ。](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 更新日: 2019 年 6 月|これらの図は、さまざまな種類のグループがどのように作成および管理されているか、そしていくつかのガバナンスの推奨事項を詳述しています。|
+|[![グループインフォグラフィックのサム イメージ。](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> 更新日:2022 年 5 月|これらの図は、さまざまな種類のグループがどのように作成および管理されているか、そしていくつかのガバナンスの推奨事項を詳述しています。|
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 の Microsoft Teams と関連生産性サービス
 Microsoft Teamsをリードする Microsoft 365 での生産性サービスの論理的なアーキテクチャ。
@@ -239,13 +239,13 @@ Microsoft 365 グループとTeamsのガバナンスの詳細については、�
 
 グループの有効期限ライフサイクル、名前付けポリシー、分類ラベル、外部ゲストとのコラボレーション、グループ作成アクセス許可の管理を設定する方法について説明します。
 
-- [コラボレーションを変革し、Office 365 グループでシャドウ IT と戦う](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
+- [Office 365 グループでコラボレーションを変革し、シャドウ IT と戦う](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **顧客の例**
 
 Microsoft 365 グループ、SharePoint、Teams、Yammerが連携してグローバル コラボレーション プラットフォームを提供する方法の背後にある例を参照してください。
 
-- [Office 365 グループ、SharePoint、Teams、Yammerでコラボレーションのスイート スポットを見つける](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+- [Microsoft 365 グループ、SharePoint、Teams、Yammerでコラボレーションのスイート スポットを見つける](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
 ## <a name="see-also"></a>関連項目
 

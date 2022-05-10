@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5133b98609c29e54361b8fe108e8810858f0d8c8
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
-ms.translationtype: HT
+ms.openlocfilehash: 2f24592460daa4f476e969069d0c1b7636f6a23e
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467117"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285546"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -90,9 +90,9 @@ DefaultFullAccessPolicy のアクセス許可を提供するために、検疫�
 
 ## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>手順 1: Microsoft 365 Defender ポータルで検疫ポリシーを作成する
 
-1. [Microsoft 365 Defender ポータル](https://security.microsoft.com)の [**ルール**] セクションで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**検疫ポリシー**] に移動します。
+1. [Microsoft 365 Defender ポータル](https://security.microsoft.com)の [**ルール**] セクションで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**検疫ポリシー**] に移動します。 または、[ **検疫ポリシー]** ページに直接移動するには、 <https://security.microsoft.com/quarantinePolicies>.
 
-2. [**検疫ポリシー**] ページで、![[カスタム ポリシーの追加] アイコン](../../media/m365-cc-sc-create-icon.png)をクリックします。 **カスタム ポリシーを追加します**。
+2. [ **検疫ポリシー] ページで** 、[カスタム ポリシーの追加] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **カスタム ポリシーを追加します**。
 
 3. **新しいポリシー** ウィザードが開きます。 [**ポリシー名**] ページで、[**ポリシー名**] ボックスに簡単で一意の名前を入力します。 今後の手順では、名前で検疫ポリシーを識別して選択する必要があります。 完了したら、**[次へ]** をクリックします。
 
@@ -481,47 +481,50 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 検疫ポリシーのグローバル設定を使用すると、検疫ポリシーで検疫通知が有効になっている場合に、検疫済みメッセージの受信者に送信される検疫通知をカスタマイズできます。 これらの通知の詳細については、「[検疫通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)」を参照してください。
 
-1. Microsoft 365 Defender ポータルの [**ルール**] セクションで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**検疫ポリシー**] に移動します。
+1. Microsoft 365 Defender ポータルの [**ルール**] セクションで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**検疫ポリシー**] に移動します。 または、[ **検疫ポリシー]** ページに直接移動するには、 <https://security.microsoft.com/quarantinePolicies>.
 
-2. [**検疫ポリシー**] ページで、[**グローバル設定**] を選択します。
+2. [ **検疫ポリシー] ページで** 、[ **グローバル設定**] を選択します。
 
-3. 開いた [**検疫通知設定**] ポップアップで、次の設定の一部またはすべてを構成します。
+3. 開いた **検疫通知の設定** ポップアップで、次の設定を構成します。
 
-   - **表示名**: 検疫通知で使用される送信者の表示名をカスタマイズします。
+   - 受信者の言語に基づいて検疫通知をカスタマイズします。
 
-     追加した言語ごとに、2 番目の言語ボックスで言語を選択し (X をクリックしないでください)、[**表示名**] ボックスに必要なテキスト値を入力します。
+     - 次のスクリーンショットに示すように、検疫通知で使用される送信者の **表示名** 。
 
-     次のスクリーンショットは、検疫通知でカスタマイズされた表示名を示しています。
+       :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="検疫通知のカスタマイズされた送信者の表示名。" lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="検疫通知のカスタマイズされた送信者の表示名" lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
+     - 検疫通知の下部に追加される **免責事項** テキスト。 ローカライズされたテキスト **である組織の免責事項は** 、常に最初に含まれ、次のスクリーンショットに示すように指定したテキストが続きます。
 
-   - **免責事項**: 検疫通知の下部にカスタム免責事項を追加します。 ローカライズした「**組織の免責事項:**」というテキストを必ず最初に含め、その後に組織が指定するテキストを続けます。
+       :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="検疫通知の下部にあるカスタム免責事項。" lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
 
-     追加した言語ごとに、2 番目の言語ボックスで言語を選択し (X をクリックしないでください)、[**免責事項**] ボックスに必要なテキスト値を入力します。
+     - **表示名** と **免責事項** の値の言語識別子。 検疫通知は、受信者の言語設定に基づいて既にローカライズされています。 **表示名** と **免責事項** の値は、受信者の言語に適用される検疫通知で使用されます。
 
-     次のスクリーンショットは、検疫通知でカスタマイズされた免責事項を示しています:
+       [**表示名**] ボックスと [**免責事項**] ボックスに値を入力する _前に_、[**言語の選択**] ボックスで言語を選択します。 **[言語の選択**] ボックスの値を変更すると、[**表示名**] ボックスと [**免責事項**] ボックスの値が空になります。
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="検疫通知の下部にあるカスタム免責事項" lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
+     受信者の言語に基づいて検疫通知をカスタマイズするには、次の手順に従います。
 
-   - **言語の選択**: 検疫通知は、受信者の言語設定に基づいて既にローカライズされます。 **表示名** と **免責事項** の値には、様々な言語でカスタマイズしたテキストを指定できます。
+     1. [言語の選択] ボックスから **言語を選択** します。 既定値は、英語で、**Default** です。
+     2. **[表示名]** と [**免責事項]** に値を入力します。 値は言語ごとに一意である必要があります。 複数の言語で **表示名** または **免責事項** の値を再利用しようとすると、[ **保存**] をクリックするとエラーが発生します。
+     3. [**追加**] ボタンをクリックします。
+     4. 前の手順を繰り返して、受信者の言語に基づいてカスタマイズされた検疫通知を最大 3 つ作成します。 ラベルのないボックスには、構成した言語が表示されます。
 
-     最初の言語ボックスから少なくとも 1 つの言語を選択し、[**追加**] をクリックします。 各言語の後の [**追加**] をクリックすると、複数の言語を選択できます。 セクション言語ボックスには、選択したすべての言語が表示されます。
+        :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="検疫ポリシーのグローバル検疫通知設定で選択された言語。" lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="検疫ポリシーのグローバル検疫通知設定の 2 番目の言語ボックスで選択した言語" lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
-
-   - **会社のロゴを使用**: 検疫通知の上部で使用される既定の Microsoft ロゴを置き換えるには、このオプションを選択します。 これを行う前に、「[組織の Microsoft 365 テーマをカスタマイズ](../../admin/setup/customize-your-organization-theme.md)」の手順に従ってカスタム ロゴをアップロードする必要があります。
+   - **会社のロゴを使用**: 検疫通知の上部で使用される既定の Microsoft ロゴを置き換えるには、このオプションを選択します。 この手順を行う前に、「[組織のMicrosoft 365テーマをカスタマイズ](../../admin/setup/customize-your-organization-theme.md)する」の手順に従ってカスタム ロゴをアップロードする必要があります。
 
      次のスクリーンショットは、検疫通知のカスタム ロゴを示しています:
 
      :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="検疫通知のカスタム ロゴ" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
 
-   - **エンド ユーザーのスパム通知を毎 (日) 送信する**: 検疫通知の頻度を選択します。
+   - **エンド ユーザーのスパム通知を毎 (日) 送信する**: 検疫通知の頻度を選択します。 既定値は 3 日ですが、1 日から 15 日を選択できます。
+
+4. 完了したら、**[保存]** をクリックします。
 
 ## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで検疫ポリシーを表示する
 
-1. Microsoft 365 Defender ポータルの [**ルール**] セクションで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**検疫ポリシー**] に移動します。
+1. Microsoft 365 Defender ポータルの [**ルール**] セクションで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**検疫ポリシー**] に移動します。 または、[ **検疫ポリシー]** ページに直接移動するには、 <https://security.microsoft.com/quarantinePolicies>.
 
-2. [**検疫ポリシー**] ページには、**名前** と **最終更新日** によるポリシーのリストが表示されます。
+2. **[検疫ポリシー]** ページには、**名前** と最終更新日によるポリシーの一覧 **が** 表示されます。
 
 3. 組み込みまたはカスタムの検疫ポリシーの設定を表示するには、名前をクリックして、一覧から検疫ポリシーを選択します。
 
@@ -555,7 +558,7 @@ PowerShell を使用して検疫ポリシーを表示する場合は、次のい
 
 AdminOnlyAccessPolicy または DefaultFullAccessPolicy という名前の組み込みの検疫ポリシーは変更できません。 NotificationEnabledPolicy という名前の組み込みポリシー ([存在する場合](#full-access-permissions-and-quarantine-notifications)) とカスタム検疫ポリシーは変更できます。
 
-1. Microsoft 365 Defender ポータルの [**ルール**] セクションで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**検疫ポリシー**] に移動します。
+1. Microsoft 365 Defender ポータルの [**ルール**] セクションで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**検疫ポリシー**] に移動します。 または、[ **検疫ポリシー]** ページに直接移動するには、 <https://security.microsoft.com/quarantinePolicies>.
 
 2. [**検疫ポリシー**] ページで、名前をクリックしてポリシーを選択します。
 
@@ -592,9 +595,9 @@ Set-QuarantinePolicy -Identity "<QuarantinePolicyName>" [Settings]
 
   検疫ポリシーが使用されている場合は、 削除する前に[割り当てられた検疫ポリシー置き換え](#step-2-assign-a-quarantine-policy-to-supported-features)ます。
 
-1. Microsoft 365 Defender ポータルの [**ルール**] セクションで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**検疫ポリシー**] に移動します。
+1. Microsoft 365 Defender ポータルの [**ルール**] セクションで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**検疫ポリシー**] に移動します。 または、[ **検疫ポリシー]** ページに直接移動するには、 <https://security.microsoft.com/quarantinePolicies>.
 
-2. [**検疫ポリシー**] ページで、名前をクリックして削除するカスタム検疫ポリシーを選択します。
+2. [ **検疫ポリシー** ] ページで、名前をクリックして削除するカスタム検疫ポリシーを選択します。
 
 3. ポリシーを選択したら、[![ポリシーの削除](../../media/m365-cc-sc-delete-icon.png)] アイコンを クリックします。 表示される [**ポリシーの削除**] アイコン。
 

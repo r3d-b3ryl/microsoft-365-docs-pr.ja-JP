@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: ゲストが特定のグループに追加されないようにする方法について説明します
-ms.openlocfilehash: 4b9ebc6366934db52c30d51091ac9991ff82d8c3
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: f050011427ceeeff8347c2acd5b6d3fbbcf11bec
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64570065"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285316"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>ゲストが特定のMicrosoft 365 グループまたはMicrosoft Teams チームに追加されないようにする
 
@@ -96,7 +96,7 @@ Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectoryS
 次を実行して、ゲストの ObjectID を見つけます。
 
 ```PowerShell
-Get-AzureADUser -Filter "userType eq 'Guest'"
+get-AzureADUser -all $true | ?{$_.CreationType -eq "Invitation"}
 ```
 
 次に、ObjectID、GivenName、Surname、DisplayName、TelephoneNumber の適切な値を使用して以下を実行します。

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: このページを使用して、スタッフリストを作成し、名前、電話番号、メール アドレスなどのスタッフ メンバーの詳細を管理します。
-ms.openlocfilehash: ca938acf4bfb567d366c7ffd684e8bce8c9eea74
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: b6ceee7c4464daf050f6e6626628c9cb3d94960f
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746799"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285458"
 ---
 # <a name="add-staff-to-bookings"></a>Bookings にスタッフを追加する
 
@@ -45,8 +45,9 @@ BookingsはMicrosoft 365の機能ですが、すべてのスタッフメンバ�
     > [!NOTE]
     > テナントの外部のスタッフは、空き時間情報をBookingsと共有できません。
 
-5. スタッフ メンバーごとに、管理者、ビューアー、またはゲストのロールを選択します。
-    - **管理者は** 、すべての設定の編集、スタッフの追加と削除、予約の作成、編集、または削除を行うことができます。
+5. 各スタッフ メンバーについて、チーム メンバー、スケジューラ、ビューアー、またはゲストのロールを選択します。
+    - **チーム メンバー** は、自分の予定表で予約を管理し、予約メールボックスの空き時間を管理できます。 予定表で予約を追加または編集すると、スタッフとして割り当てられます。
+    - **スケジューラは** 、予定表と顧客の詳細で予約を管理できます。 設定、スタッフ、およびサービスへの読み取り専用アクセス権があります。
     - **閲覧者** は予定表上のすべての予約を表示できますが、変更や削除はできません。 設定に対する読み取り専用アクセス権があります。
     - **ゲスト** は予約に割り当てることができますが、予約メールボックスを開くできません。
 

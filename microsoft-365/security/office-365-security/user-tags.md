@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 でユーザー タグを持つユーザーの特定のグループを識別する方法について説明します。 タグ フィルターは、タグ付けされたユーザーをすばやく識別するために、Microsoft Defender for Office 365のアラート、レポート、調査全体で使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f045e5dcb590c36fd0f3768c472057b07b12b21
-ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
+ms.openlocfilehash: e7b9584b41ded7edd28fb1501ee4e5c3a1febd74
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64891822"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286408"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365のユーザー タグ
 
@@ -44,6 +44,7 @@ ms.locfileid: "64891822"
 - [侵害されたユーザー レポート](view-email-security-reports.md#compromised-users-report)
 - [[メール エンティティ] ページ](mdo-email-entity-page.md#other-innovations)
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
+- [上位の送信者と受信者のレポート](view-email-security-reports.md#top-senders-and-recipients-report)
 - [攻撃シミュレーション](attack-simulation-training.md#target-users)
 - [キャンペーン ビュー](campaigns.md)
 - [管理者とユーザーの申請](admin-submission.md)

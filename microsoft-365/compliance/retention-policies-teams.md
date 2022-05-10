@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: f2b3b5a61eabbffc50da34b14baa20e025b8da0f
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 68e69f198dfd79c1da210cd8d87144471d83abb7
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568524"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285970"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > チャットまたはメッセージが保持ポリシーによって削除されたというメッセージが Teams に表示されている場合は、「[アイテム保持ポリシーに関する Teams メッセージ](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)」を参照してください。
@@ -210,6 +212,6 @@ Exchange Online のメールボックスを持っているユーザーが組織�
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
-Microsoft 365 で初めてアイテム保持を構成する場合は、「[情報ガバナンスを開始する](get-started-with-information-governance.md)」を参照してください。
+Microsoft 365 で初めてアイテム保持を構成する場合は、「[情報ガバナンスを開始する](get-started-with-data-lifecycle-management.md)」を参照してください。
 
 Teams 用のアイテム保持ポリシーを構成する準備ができた場合は、「[アイテム保持ポリシーを作成して構成する](create-retention-policies.md)」を参照してください。
