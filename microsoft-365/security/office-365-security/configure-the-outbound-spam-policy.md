@@ -102,10 +102,10 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
    完了したら、**[次へ]** をクリックします。
 
 4. 表示される **[ユーザー、グループ、ドメイン** ] ページで、ポリシーが適用される内部送信者 (受信者の条件) を特定します。
-   - **ユーザー**: 指定したメールボックス、メール ユーザー、またはメール連絡先。
-   - **グループ**:
-     - 指定した配布グループまたはメールが有効なセキュリティ グループのメンバー。
-     - 指定したMicrosoft 365 グループ。
+   - **ユーザー**: 指定されたメールボックス、メール ユーザー、またはメール連絡先。
+   - **グループ**: 
+     - 指定された配布グループまたはメールが有効なセキュリティ グループのメンバー。
+     - 指定した Microsoft 365 グループ。
    - **ドメイン**: 組織内の指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) 内のすべての送信者。
 
    適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
@@ -496,7 +496,7 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 ## <a name="for-more-information"></a>詳細情報
 
-[制限されたユーザー ポータルからブロックされたユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)
+[制限付きユーザー ポータルからブロックされたユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)
 
 [送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)
 

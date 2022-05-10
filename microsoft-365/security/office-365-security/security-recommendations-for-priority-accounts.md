@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 の優先度アカウント、優先度アカウント、Office 365の優先度アカウントのセキュリティMicrosoft 365
+title: Microsoft 365の優先度アカウント、優先度アカウント、Office 365の優先度アカウント、Microsoft 365の優先度アカウントに関するセキュリティに関する推奨事項
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,7 +18,7 @@ ms.collection:
 - m365solution-overview
 - m365solution-protecthve
 ms.custom: ''
-description: 管理者は、セキュリティ設定を昇格し、組織の優先度アカウントに関するレポート、アラート、および調査Microsoft 365できます。
+description: 管理者は、セキュリティ設定を昇格させ、Microsoft 365組織の優先度アカウントのレポート、アラート、調査を使用する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c997f38e06444aab8ff6de550759959eb8f71d9f
@@ -30,94 +30,94 @@ ms.locfileid: "64470771"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 の優先アカウントのセキュリティに関する推奨事項
 
-すべてのユーザー アカウントが同じ会社情報にアクセスできる場合はありません。 一部のアカウントでは、財務データ、製品開発情報、重要なビルド システムへのパートナー アクセスなど、機密情報にアクセスできます。 侵害された場合、機密性の高い情報にアクセスできるアカウントは重大な脅威を引き起します。 これらの種類のアカウントを優先度アカウント _と呼ぶ_。 優先度アカウントには、CEO、CISO、CCFO、インフラストラクチャ管理者アカウント、ビルド システム アカウントなど (ただし、これらに限定されない) があります。
+すべてのユーザー アカウントが同じ会社情報にアクセスできるわけではありません。 一部のアカウントでは、財務データ、製品開発情報、重要なビルド システムへのパートナー アクセスなど、機密情報にアクセスできます。 侵害された場合、機密性の高い情報にアクセスできるアカウントは重大な脅威になります。 このような種類のアカウント _の優先度アカウントを_ 呼び出します。 優先度アカウントには、CEO、CISO、CFO、インフラストラクチャ管理者アカウント、ビルド システム アカウントなどが含まれます (ただし、これらに限定されません)。
 
-攻撃者の場合、通常のユーザーまたは不明なユーザーに対してランダムなネットをキャストする通常のフィッシング攻撃は非効率的です。 一方、優先アカウント _をターゲットとする_ スピア フィッシング攻撃や捕鯨攻撃は、攻撃者にとって非常に有益です。 そのため、優先度の高いアカウントは、アカウントの侵害を防ぐために、通常の保護よりも強力である必要があります。
+攻撃者の場合、通常または未知のユーザーにランダムなネットをキャストする通常のフィッシング攻撃は非効率的です。 一方、優先度の高いアカウントを対象とする _スピア フィッシング_ 攻撃や _ホアリング_ 攻撃は、攻撃者にとって非常に報われます。 そのため、優先度の高いアカウントでは、アカウントの侵害を防ぐために、通常よりも強力な保護が必要です。
 
-Microsoft 365 Microsoft Defender for Office 365には、優先度アカウントに追加のセキュリティ層を提供するいくつかの主要な機能が含まれている必要があります。 この記事では、これらの機能とそれらを使用する方法について説明します。
+Microsoft 365とMicrosoft Defender for Office 365には、優先度アカウントのセキュリティの追加レイヤーを提供するいくつかの重要な機能が含まれています。 この記事では、これらの機能とその使用方法について説明します。
 
-:::image type="content" source="../../media/security-recommendations-for-priority-users.png" alt-text="アイコン フォームのセキュリティ推奨事項の概要" lightbox="../../media/security-recommendations-for-priority-users.png":::
+:::image type="content" source="../../media/security-recommendations-for-priority-users.png" alt-text="アイコン 形式のセキュリティに関する推奨事項の概要" lightbox="../../media/security-recommendations-for-priority-users.png":::
 
 |タスク|すべてのOffice 365 Enterpriseプラン|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
-|[優先アカウントのサインイン セキュリティを強化する](#increase-sign-in-security-for-priority-accounts)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[優先度アカウントに厳密な事前設定されたセキュリティ ポリシーを使用する](#use-strict-preset-security-policies-for-priority-accounts)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[ユーザー タグを優先度アカウントに適用する](#apply-user-tags-to-priority-accounts)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[優先度アカウントのサインイン セキュリティを強化する](#increase-sign-in-security-for-priority-accounts)|![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[優先度アカウントに Strict 事前設定セキュリティ ポリシーを使用する](#use-strict-preset-security-policies-for-priority-accounts)|![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[優先度アカウントにユーザー タグを適用する](#apply-user-tags-to-priority-accounts)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[アラート、レポート、検出の優先度アカウントを監視する](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[ユーザーのトレーニング](#train-users)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[ユーザーのトレーニング](#train-users)|![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 > [!NOTE]
-> 特権アカウント (管理者アカウント) _のセキュリティ保護の詳細については_ 、このトピックを [参照してください](/azure/architecture/framework/security/critical-impact-accounts)。
+> _特権アカウント_ (管理者アカウント) のセキュリティ保護については、[このトピック](/azure/architecture/framework/security/critical-impact-accounts)を参照してください。
 
-## <a name="increase-sign-in-security-for-priority-accounts"></a>優先アカウントのサインイン セキュリティを強化する
+## <a name="increase-sign-in-security-for-priority-accounts"></a>優先度アカウントのサインイン セキュリティを強化する
 
-優先度の高いアカウントでは、サインイン のセキュリティが強化されている必要があります。 多要素認証 (MFA) を要求し、従来の認証プロトコルを無効にすることで、サインイン のセキュリティを強化できます。
+優先度の高いアカウントでは、サインイン セキュリティを強化する必要があります。 多要素認証 (MFA) を要求し、レガシ認証プロトコルを無効にすることで、サインイン セキュリティを強化できます。
 
-手順については、「手順 [1」を参照してください。MFA を使用してリモート ワーカーのサインイン セキュリティを強化します](../../solutions/empower-people-to-work-remotely-secure-sign-in.md)。 この記事ではリモート ワーカーについて説明しますが、優先度の高いユーザーに対して同じ概念が適用されます。
+手順については、 [手順 1. を参照してください。MFA を使用してリモート ワーカーのサインイン セキュリティを強化します](../../solutions/empower-people-to-work-remotely-secure-sign-in.md)。 この記事ではリモート ワーカーについて説明していますが、優先度の高いユーザーにも同じ概念が適用されます。
 
-**注**: 前の記事で説明したように、すべての優先度ユーザーに対してレガシ認証プロトコルをグローバルに無効にすることを強く推奨します。 ビジネス要件で許可されていない場合、Exchange Onlineは、従来の認証プロトコルの範囲を制限するために次のコントロールを提供します。
+**注**: 前の記事で説明したように、すべての優先度の高いユーザーに対してレガシ認証プロトコルをグローバルに無効にすることを強くお勧めします。 ビジネス要件でこれを防ぐ場合、Exchange Onlineはレガシ認証プロトコルの範囲を制限するのに役立つ次の制御を提供します。
 
-- Exchange Online で認証[](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)ポリシーとクライアント アクセス [](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) ルールを使用して、特定のユーザーに対して POP3、IMAP4、認証された SMTP のような基本認証および従来の認証プロトコルをブロックまたは許可できます。
+- Exchange Onlineで[認証ポリシー](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)と[クライアント アクセス 規則](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)を使用して、特定のユーザーに対して基本的な認証と従来の認証プロトコル (POP3、IMAP4、認証済み SMTP など) をブロックまたは許可できます。
 
-- 個々のメールボックスで POP3 および IMAP4 アクセスを無効にできます。 組織レベルで認証済み SMTP を無効にし、必要な特定のメールボックスで有効にできます。 手順については、次の記事を参照してください。
+- 個々のメールボックスで POP3 および IMAP4 アクセスを無効にすることができます。 組織レベルで認証された SMTP を無効にし、引き続き必要な特定のメールボックスで有効にすることができます。 手順については、次の記事を参照してください。
   - [ユーザーの POP3 または IMAP4 アクセスを有効または無効にする](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [認証されたクライアント SMTP 送信を有効または無効にする (SMTP AUTH)](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
-基本認証は、Exchange Exchange Online Web サービス (EWS)、Exchange ActiveSync、POP3、IMAP4、リモート PowerShell で廃止される過程にある点にも注意してください。 詳細については、このブログ投稿 [を参照してください](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/)。
+また、基本認証は、Exchange Web サービス (EWS)、Exchange ActiveSync、POP3、IMAP4、リモート PowerShell のExchange Onlineで非推奨になっていることにも注目してください。 詳細については、この [ブログ投稿](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/)を参照してください。
 
-## <a name="use-strict-preset-security-policies-for-priority-accounts"></a>優先度アカウントに厳密な事前設定されたセキュリティ ポリシーを使用する
+## <a name="use-strict-preset-security-policies-for-priority-accounts"></a>優先度アカウントに Strict 事前設定セキュリティ ポリシーを使用する
 
-優先度の高いユーザーは、Exchange Online Protection (EOP) と Defender for Office 365 で使用できるさまざまな保護に対して、より厳しいOffice 365。
+優先度の高いユーザーは、Exchange Online Protection (EOP) とDefender for Office 365で使用できるさまざまな保護に対して、より厳しいアクションを必要とします。
 
-たとえば、スパムとして分類されたメッセージを迷惑メール フォルダーに配信する代わりに、優先度の高いアカウントを対象にしている場合は、同じメッセージを検疫する必要があります。
+たとえば、迷惑メール フォルダーにスパムとして分類されたメッセージを配信する代わりに、優先度の高いアカウントを対象とする場合は、同じメッセージを検疫する必要があります。
 
-優先度アカウントに対してこの厳格なアプローチを実装するには、事前設定されたセキュリティ ポリシーの Strict プロファイルを使用します。
+事前設定されたセキュリティ ポリシーで Strict プロファイルを使用して、優先度アカウントに対してこの厳格なアプローチを実装できます。
 
-事前設定されたセキュリティ ポリシーは、EOP および Defender for Office 365 のすべての保護に対して、推奨される厳密なポリシー設定を適用する便利で一Office 365。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および「[Microsoft Defender for microsoft Defender for Office 365](preset-security-policies.md)。
+事前設定されたセキュリティ ポリシーは、EOP とDefender for Office 365のすべての保護に対して推奨される厳格なポリシー設定を適用するのに便利で中央の場所です。 詳しくは、「[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
 
-厳密なポリシー設定が既定のポリシー設定と標準ポリシー設定とどのように異なるかについては、「[EOP および Microsoft Defender](recommended-settings-for-eop-and-office365.md) for the Security の推奨設定」をOffice 365してください。
+厳密なポリシー設定と既定のポリシー設定と標準ポリシー設定の違いについては、「[EOP とMicrosoft Defender for Office 365セキュリティの推奨設定](recommended-settings-for-eop-and-office365.md)」を参照してください。
 
-## <a name="apply-user-tags-to-priority-accounts"></a>ユーザー タグを優先度アカウントに適用する
+## <a name="apply-user-tags-to-priority-accounts"></a>優先度アカウントにユーザー タグを適用する
 
-microsoft Defender for Office 365 Plan 2 (Microsoft 365 E5 またはアドオン サブスクリプションの一部として) のユーザー タグは、レポートやインシデント調査で特定のユーザーまたはユーザー グループをすばやく識別して分類する方法です。
+Microsoft Defender for Office 365 プラン 2 のユーザー タグ (Microsoft 365 E5またはアドオン サブスクリプションの一部として) は、レポートやインシデント調査で特定のユーザーまたはユーザー グループをすばやく識別して分類する方法です。
 
-**優先度アカウント** は、優先度アカウントを含むインシデントやアラートを識別するために使用できる組み込みのユーザー タグ (システム _タグと呼_ ばれる) の一種です。 優先度アカウントの詳細については **、「優先度** アカウントの管理 [と監視」を参照してください](../../admin/setup/priority-accounts.md)。
+**優先度アカウント** は、優先度アカウントを含むインシデントやアラートを識別するために使用できる組み込みのユーザー _タグ (システム タグ_ と呼ばれます) の一種です。 優先度アカウントの詳細については、「**優先度アカウントの**[管理と監視](../../admin/setup/priority-accounts.md)」を参照してください。
 
-カスタム タグを作成して、優先度アカウントをさらに識別して分類することもできます。 詳細については、「User [tags」を参照してください](user-tags.md)。 優先度アカウント ( **システム タグ) は** 、カスタム ユーザー タグと同じインターフェイスで管理できます。
+また、カスタム タグを作成して、優先度アカウントをさらに識別して分類することもできます。 詳細については、「 [ユーザー タグ」を](user-tags.md)参照してください。 **優先度アカウント** (システム タグ) は、カスタム ユーザー タグと同じインターフェイスで管理できます。
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>アラート、レポート、検出の優先度アカウントを監視する
 
-優先度の高いユーザーをセキュリティで保護してタグ付けした後、EOP および Defender for Office 365 で使用可能なレポート、アラート、および調査を使用して、優先度アカウントに関連するインシデントや検出をすばやく特定できます。 ユーザー タグをサポートする機能については、次の表で説明します。
+優先度の高いユーザーをセキュリティで保護してタグ付けした後、EOP とDefender for Office 365で使用可能なレポート、アラート、および調査を使用して、優先度の高いアカウントを含むインシデントまたは検出をすばやく識別できます。 ユーザー タグをサポートする機能を次の表に示します。
 
 |機能|説明|
 |---|---|
-|アラート|影響を受けるユーザーのユーザー タグは、ユーザー ポータルの [通知] ページでフィルター Microsoft 365 Defenderできます。 詳細については、「アラートの表示 [」を参照してください](../../compliance/alert-policies.md#viewing-alerts)。|
-|エクスプローラー <p> リアルタイムの検出|Explorer **(Defender** for Office 365 Plan 2) またはリアルタイム **検出 (Defender** for Office 365 Plan 1) では、ユーザー タグがメール グリッド ビューと [メールの詳細] フライアウトに表示されます。 ユーザー タグは、フィルター可能なプロパティとして使用することもできます。 詳細については、「Explorer の  [タグ」を参照してください](threat-explorer.md#tags-in-threat-explorer)。|
-|キャンペーン ビュー|ユーザー タグは、Microsoft Defender のキャンペーン ビューで、プラン 2 のOffice 365プロパティの 1 つです。 詳細については、「キャンペーン ビュー [」を参照してください](campaigns.md)。|
-|脅威保護の状態レポート|脅威保護状態レポートの事実上すべてのビューと詳細テーブルで、優先度アカウントで結果を **フィルター処理できます**。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。|
-|優先度アカウントレポートの電子メールの問題|**Exchange 管理** センター (EAC) の [優先度アカウントの電子メールの問題] レポートには、優先度アカウントの配信不能メッセージと遅延メッセージに関する情報 **が含まれます**。 詳細については、「優先アカウントの [メールの問題」レポートを参照してください](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
+|アラート|影響を受けるユーザーのユーザー タグは、Microsoft 365 Defender ポータルの **[アラート**] ページでフィルターとして表示され、使用できます。 詳細については、「アラートの [表示」を参照してください](../../compliance/alert-policies.md#viewing-alerts)。|
+|エクスプローラー <p> リアルタイムの検出|**エクスプローラー** (Defender for Office 365 プラン 2) または **リアルタイム検出** (Defender for Office 365 プラン 1) では、ユーザー タグが電子メール グリッド ビューと電子メールの詳細ポップアップに表示されます。 ユーザー タグは、フィルター可能なプロパティとしても使用できます。 詳細については、「  [エクスプローラーのタグ](threat-explorer.md#tags-in-threat-explorer)」を参照してください。|
+|キャンペーン ビュー|ユーザー タグは、Microsoft Defender for Office 365 プラン 2 のキャンペーン ビューのフィルター可能なプロパティの 1 つです。 詳細については、「 [キャンペーン ビュー](campaigns.md)」を参照してください。|
+|脅威保護の状態レポート|**脅威の保護状態レポート** のほぼすべてのビューと詳細テーブルで、**優先度アカウント** で結果をフィルター処理できます。 詳細については、 [脅威保護の状態レポートに関するページを](view-email-security-reports.md#threat-protection-status-report)参照してください。|
+|優先度アカウントレポートの電子メールの問題|Exchange管理センター (EAC) の **[優先度アカウントの電子メールの問題**] レポートには、**優先度アカウント** の配信不能メッセージと遅延メッセージに関する情報が含まれています。 詳細については、「 [優先度アカウントの電子メールの問題レポート](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)」を参照してください。|
 
 ## <a name="train-users"></a>ユーザーのトレーニング
 
-優先度アカウントを使用してユーザーをトレーニングすると、それらのユーザーとセキュリティ運用チームの時間とフラストレーションを節約できます。 精通したユーザーは、疑わしい電子メール メッセージで添付ファイルを開く、またはリンクをクリックする可能性が低く、疑わしい Web サイトを避ける可能性が高い。
+優先度の高いアカウントを使用してユーザーをトレーニングすると、それらのユーザーとセキュリティ運用チームの時間と不満を大幅に削減できます。 精通しているユーザーは、疑わしいメール メッセージで添付ファイルを開いたり、リンクをクリックしたりする可能性が低く、疑わしい Web サイトを回避する可能性が高くなります。
 
-Harvard Kennedy School [Cybersecurity キャンペーン](https://www.belfercenter.org/CyberPlaybook) ハンドブックは、フィッシング攻撃を識別するためのユーザーのトレーニングなど、組織内のセキュリティ意識の強い文化を確立するための優れたガイダンスを提供します。
+「中立大学ケネディ学校 [サイバーセキュリティ キャンペーン の手引き」](https://www.belfercenter.org/CyberPlaybook) には、フィッシング攻撃を特定するためのユーザーのトレーニングなど、組織内のセキュリティ意識の強い文化を確立するための優れたガイダンスが用意されています。
 
-Microsoft 365、組織内のユーザーに通知するための次のリソースを提供します。
+Microsoft 365には、組織内のユーザーに通知するのに役立つ次のリソースが用意されています。
 
 |概念|リソース|説明|
 |---|---|---|
-|Microsoft 365|[カスタマイズ可能な学習経路](/office365/customlearning/)|これらのリソースは、組織内のユーザーのトレーニングをまとめる上で役立ちます。|
-|Microsoft 365 セキュリティ|[ラーニングモジュール: 組み込みのインテリジェント なセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365)|このモジュールを使用すると、セキュリティMicrosoft 365機能がどのように機能するのかについて説明し、これらのセキュリティ機能の利点を明確にできます。|
-|多要素認証|[2 段階認証: 追加の検証ページとは](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|この記事は、エンド ユーザーが多要素認証とは何か、および組織で使用される理由を理解するのに役立ちます。|
-|攻撃シミュレーション トレーニング|[攻撃シミュレーション トレーニングの使用を開始する](attack-simulation-training-get-started.md)|Microsoft Defender for Office 365 プラン 2 の攻撃シミュレーション トレーニングを使用すると、管理者は特定のユーザー グループに対するシミュレートされたフィッシング攻撃を構成、起動、追跡できます。|
+|Microsoft 365|[カスタマイズ可能な学習経路](/office365/customlearning/)|これらのリソースは、組織内のユーザーのトレーニングをまとめるのに役立ちます。|
+|Microsoft 365 セキュリティ|[ラーニング モジュール: 組み込みのインテリジェントなセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365)|このモジュールを使用すると、Microsoft 365セキュリティ機能の連携方法を説明し、これらのセキュリティ機能の利点を明確にできます。|
+|多要素認証|[2 段階認証: 追加の確認ページは何ですか?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|この記事は、エンド ユーザーが多要素認証とは何か、組織で使用されている理由を理解するのに役立ちます。|
+|攻撃シミュレーション トレーニング|[攻撃シミュレーション トレーニングの使用を開始する](attack-simulation-training-get-started.md)|Microsoft Defender for Office 365計画 2 の攻撃シミュレーション トレーニングを使用すると、管理者は、特定のユーザー グループに対してシミュレートされたフィッシング攻撃を構成、起動、追跡できます。|
 
-さらに、Microsoft では、この記事で説明されているアクションを実行するようにお勧めします。アカウントとデバイスをハッカーやマルウェア [から保護します](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)。 それらの操作を次に示します。
+さらに、Microsoft では、ユーザーが「 [ハッカーやマルウェアからアカウントとデバイスを保護](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)する」に記載されているアクションを実行することをお勧めします。 それらの操作を次に示します。
 
-- 強力なパスワードの使用
+- 強力なパスワードを使用する
 - デバイスの保護
-- デバイス PC および Mac pc Windowsセキュリティ機能の有効化 (非管理対象デバイスの場合)
+- Windows PC と Mac PC でセキュリティ機能を有効にする (アンマネージド デバイスの場合)
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft Defender の優先度アカウント保護をユーザーに対してOffice 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)
+[Microsoft Defender for Office 365での優先度アカウント保護の発表](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

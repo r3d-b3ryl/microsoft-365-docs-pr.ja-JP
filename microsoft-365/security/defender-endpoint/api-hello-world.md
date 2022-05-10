@@ -1,8 +1,8 @@
 ---
-title: Hello World for Microsoft Defender for Endpoint API
+title: Microsoft Defender for Endpoint API のHello World
 ms.reviewer: ''
-description: Microsoft Defender for Endpoint API へのプラクティス 'Hello world' スタイルの API 呼び出しを作成します。
-keywords: apis、サポートされている API、高度な検索、クエリ、microsoft Defender atp、エンドポイントの microsoft Defender
+description: Microsoft Defender for Endpoint API に対する練習 'Hello world' スタイルの API 呼び出しを作成します。
+keywords: apis, サポートされている API, 高度な捜索, クエリ, microsoft defender atp, エンドポイント用 Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64475611"
 ---
-# <a name="microsoft-defender-for-endpoint-api---hello-world"></a>エンドポイント API 用 Microsoft Defender - Hello World
+# <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API - Hello World
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,79 +40,79 @@ ms.locfileid: "64475611"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="get-alerts-using-a-simple-powershell-script"></a>簡単な PowerShell スクリプトを使用してアラートを取得する
+## <a name="get-alerts-using-a-simple-powershell-script"></a>単純な PowerShell スクリプトを使用してアラートを取得する
 
-### <a name="how-long-it-takes-to-go-through-this-example"></a>この例ではどのくらいの時間が必要ですか?
+### <a name="how-long-it-takes-to-go-through-this-example"></a>この例を実行するのにどのくらいの時間がかかりますか?
 
-2 つの手順で 5 分しかかからな
+次の 2 つの手順で 5 分しか実行されません。
 
 - アプリケーションの登録
-- 使用例: 短い PowerShell スクリプトのコピー/貼り付けだけが必要
+- 使用例: 短い PowerShell スクリプトのコピー/貼り付けのみが必要です
 
-### <a name="do-i-need-a-permission-to-connect"></a>接続するアクセス許可が必要ですか?
+### <a name="do-i-need-a-permission-to-connect"></a>接続にアクセス許可が必要ですか?
 
-アプリケーション登録ステージでは、管理者 (Azure Active Directory) テナントにAzure ADがあります。
+アプリケーション登録ステージでは、**Azure Active Directory (Azure AD**) テナントにグローバル管理者 ロールが必要です。
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a>手順 1 - アプリを作成する方法Azure Active Directory
+### <a name="step-1---create-an-app-in-azure-active-directory"></a>手順 1 - Azure Active Directoryでアプリを作成する
 
-1. グローバル管理者ユーザー [を使用して Azure](https://portal.azure.com) **にログオン** します。
+1. **グローバル管理者** ユーザーを使用して [Azure](https://portal.azure.com) にログオンします。
 
-2. [アプリの **登録Azure Active Directory** \> **新しい登録]** \> **に移動します**。
+2. **Azure Active Directory アプリの登録** \>  \> **新しい登録** に移動します。
 
-   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="[アプリの登録] オプションは、ポータルの [管理] ウィンドウAzure Active Directoryします。"  lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Azure Active Directory ポータルの [管理] ウィンドウの下にある [アプリの登録] オプション"  lightbox="images/atp-azure-new-app2.png":::
 
-3. 登録フォームで、アプリケーションの名前を選択し、[登録] をクリック **します**。
+3. 登録フォームで、アプリケーションの名前を選択し、[ **登録**] をクリックします。
 
-4. アプリケーションが Defender for Endpoint にアクセスし、"すべてのアラートの読み取り" アクセス許可 **を割り当てるのを許可** します。
+4. アプリケーションが Defender for Endpoint にアクセスし、 **"すべてのアラートの読み取り"** アクセス許可を割り当てることを許可します。
 
-   - [アプリケーション] ページで、[**API アクセス** \>  \>許可の追加] アクセス許可 API をクリックし、組織で **WindowsDefenderATP >を使用し、[WindowsDefenderATP**] を **クリックします**。
+   - アプリケーション ページで、組織が **WindowsDefenderATP** の種類>使用する **API アクセス許可** \> \>の **追加** **API** をクリックし、**WindowsDefenderATP** をクリックします。
 
      > [!NOTE]
-     > WindowsDefenderATP は元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
+     > WindowsDefenderATP は元の一覧に表示されません。 テキスト ボックスに名前を書き込み始めて、その名前が表示されるのを確認する必要があります。
 
-     :::image type="content" source="images/add-permission.png" alt-text="ポータルの [管理] ウィンドウの下にある API Azure Active Directoryオプション" lightbox="images/add-permission.png":::
+     :::image type="content" source="images/add-permission.png" alt-text="Azure Active Directory ポータルの [管理] ウィンドウの [API アクセス許可] オプション" lightbox="images/add-permission.png":::
 
-   - [**アプリケーションのアクセス許可** \> **] Alert.Read.All >** をクリック **します。**
+   - [ **アプリケーションのアクセス許可** \> **のアラート].Read.All** > [ **アクセス許可の追加**] をクリックします。
 
-     :::image type="content" source="images/application-permissions.png" alt-text="[API アクセス許可の要求] ページのアクセス許可の種類と設定ウィンドウ" lightbox="images/application-permissions.png":::
+     :::image type="content" source="images/application-permissions.png" alt-text="[要求 API のアクセス許可] ページの [アクセス許可の種類と設定] ウィンドウ" lightbox="images/application-permissions.png":::
 
      > [!IMPORTANT]
-     > 関連するアクセス許可を選択する必要があります。 'すべてのアラートの読み取り' は、一例にすら限定されます。
+     > 関連するアクセス許可を選択する必要があります。 "すべてのアラートの読み取り" は例に過ぎません。
 
-     次に例を示します。
+     例:
 
-     - 高度 [なクエリを実行するには、[](run-advanced-query-api.md)高度なクエリの実行] アクセス許可を選択します。
-     - コンピューター [を分離するには、[](isolate-machine.md)コンピューターの分離] アクセス許可を選択します。
-     - 必要なアクセス許可を決定するには、呼び出す API の **[** アクセス許可] セクションを参照してください。
+     - [高度なクエリを実行](run-advanced-query-api.md)するには、[高度なクエリの実行] アクセス許可を選択します。
+     - [コンピューターを分離するには、[コンピューターの](isolate-machine.md)分離] アクセス許可を選択します。
+     - 必要なアクセス許可を確認するには、呼び出す API の **[アクセス許可]** セクションを参照してください。
 
-5. [同意 **の付与] をクリックします**。
+5. [ **同意の付与]** をクリックします。
 
    > [!NOTE]
-   > アクセス許可を追加する度に、[新しい **アクセス許可を** 有効にするための同意の付与] をクリックする必要があります。
+   > アクセス許可を追加するたびに、新しいアクセス許可を有効にするには、[ **同意の付与** ] をクリックする必要があります。
 
-   :::image type="content" source="images/grant-consent.png" alt-text="ポータルのアクセス許可の同意オプションAzure Active Directoryします。" lightbox="images/grant-consent.png":::
+   :::image type="content" source="images/grant-consent.png" alt-text="Azure Active Directory ポータルのアクセス許可の同意オプション" lightbox="images/grant-consent.png":::
 
 6. アプリケーションにシークレットを追加します。
 
-    [ **証明書] &をクリックし、** シークレットに説明を追加し、[追加] を **クリックします**。
+    [ **証明書&シークレット**] をクリックし、シークレットに説明を追加して、[ **追加**] をクリックします。
 
     > [!IMPORTANT]
-    > [追加] をクリックした後 **、生成されたシークレット値をコピーします**。 退出後に取得できない!
+    > [追加] をクリックした後、 **生成されたシークレット値をコピーします**。 退出後は取得できません。
 
-    :::image type="content" source="images/webapp-create-key2.png" alt-text="[証明書] &ポータルの [管理] ウィンドウの [シークレット] メニュー Azure Active Directoryアイテム" lightbox="images/webapp-create-key2.png":::
+    :::image type="content" source="images/webapp-create-key2.png" alt-text="Azure Active Directory ポータルの [管理] ウィンドウの [証明書&シークレット] メニュー項目" lightbox="images/webapp-create-key2.png":::
 
-7. アプリケーション ID とテナント ID を書き出します。
+7. アプリケーション ID とテナント ID を書き留めます。
 
-   アプリケーション ページで、[概要] に移動 **し** 、次をコピーします。
+   アプリケーション ページで、[ **概要]** に移動し、次の内容をコピーします。
 
-   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="ポータルの [概要] メニュー項目の下にあるアプリケーションAzure Active Directoryウィンドウ" lightbox="images/app-and-tenant-ids.png":::
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Azure Active Directory ポータルの [概要] メニュー項目の下にある [アプリケーションの詳細] ウィンドウ" lightbox="images/app-and-tenant-ids.png":::
 
-完了! アプリケーションの登録に成功しました!
+完了! アプリケーションが正常に登録されました。
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>手順 2 - アプリを使用してトークンを取得し、このトークンを使用して API にアクセスします。
 
-- 以下のスクリプトを PowerShell ISE またはテキスト エディターにコピーし、次 **のように保存Get-Token.ps1**。
-- このスクリプトを実行すると、トークンが生成され、そのトークンが作業フォルダーの名前の下 **に保存Latest-token.txt**。
+- 次のスクリプトを PowerShell ISE またはテキスト エディターにコピーし、 **Get-Token.ps1** として保存します。
+- このスクリプトを実行すると、トークンが生成され、 **Latest-token.txt** という名前で作業フォルダーに保存されます。
 
    ```powershell
    # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -138,18 +138,18 @@ ms.locfileid: "64475611"
 
 - サニティ チェック:
   - スクリプトを実行します。
-  - ブラウザーで次のページに移動します。 <https://jwt.ms/>
-  - トークン (ファイルのコンテンツ) をLatest-token.txtします。
-  - 上部ボックスに貼り付けます。
-  - [役割] セクションを探します。 _Alert.Read.All ロールを検索_ します。
+  - ブラウザーで次 <https://jwt.ms/>の手順に進みます。
+  - トークン (Latest-token.txt ファイルの内容) をコピーします。
+  - 上部のボックスに貼り付けます。
+  - [ロール] セクションを探します。 _Alert.Read.All_ ロールを見つけます。
 
-  :::image type="content" source="images/api-jwt-ms.png" alt-text="[デコードされたトークン] ウィンドウ (jwt.ms" lightbox="images/api-jwt-ms.png":::
+  :::image type="content" source="images/api-jwt-ms.png" alt-text="jwt.ms の [デコードされたトークン] ウィンドウ" lightbox="images/api-jwt-ms.png":::
 
-### <a name="lets-get-the-alerts"></a>アラートを取得できます。
+### <a name="lets-get-the-alerts"></a>アラートを取得しましょう。
 
-- 以下のスクリプト **は、API** Get-Token.ps1を使用して、過去 48 時間のアラートを取得します。
-- 前のスクリプトを保存したのと同じフォルダーにこのスクリプト **を保存Get-Token.ps1**。
-- スクリプトは、スクリプトと同じフォルダー内のデータを含む 2 つのファイル (json と csv) を作成します。
+- 次のスクリプトでは、 **Get-Token.ps1** を使用して API にアクセスし、過去 48 時間のアラートを取得します。
+- このスクリプトは、前のスクリプト **Get-Token.ps1** を保存したのと同じフォルダーに保存します。
+- スクリプトは、スクリプトと同じフォルダーにデータを含む 2 つのファイル (json と csv) を作成します。
 
   ```powershell
   # Returns Alerts created in the past 48 hours.
@@ -187,15 +187,15 @@ ms.locfileid: "64475611"
   ($alerts | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation
   ```
 
-完了です! 成功したのは次の場合です。
+これで完了です。 次の操作に成功しました。
 
-- 作成および登録およびアプリケーション
-- そのアプリケーションに通知を読み取るアクセス許可が付与されている
-- API の接続
-- PowerShell スクリプトを使用して、過去 48 時間に作成されたアラートを返す
+- 作成と登録とアプリケーション
+- そのアプリケーションにアラートを読み取るためのアクセス許可を付与しました
+- API を接続しました
+- PowerShell スクリプトを使用して、過去 48 時間に作成されたアラートを返しました
 
 ## <a name="related-topic"></a>関連トピック
 
-- [エンドポイント API 用 Microsoft Defender](exposed-apis-list.md)
-- [アプリケーション コンテキストを使用して Microsoft Defender for Endpoint にアクセスする](exposed-apis-create-app-webapp.md)
-- [ユーザー コンテキストを使用して Microsoft Defender for Endpoint にアクセスする](exposed-apis-create-app-nativeapp.md)
+- [Microsoft Defender for Endpoint API](exposed-apis-list.md)
+- [アプリケーション コンテキストを使用してMicrosoft Defender for Endpointにアクセスする](exposed-apis-create-app-webapp.md)
+- [ユーザー コンテキストを使用してMicrosoft Defender for Endpointにアクセスする](exposed-apis-create-app-nativeapp.md)

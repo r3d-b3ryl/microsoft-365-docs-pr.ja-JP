@@ -28,49 +28,49 @@ ms.locfileid: "62281437"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 Content Delivery Network (CDN) クイック スタート
 
-組み込みの Office 365 Content Delivery Network **(CDN)** を使用して静的アセット (イメージ、JavaScript、スタイルシート、WOFF ファイル) をホストし、SharePoint Online ページのパフォーマンスを向上させることができます。 Office 365 CDN では、静的資産を要求しているブラウザーの近くに静的資産をキャッシュするとパフォーマンスが向上します。これにより、ダウンロードが速くなり、待ち時間が短縮されます。 また、このOffice 365 CDN HTTP/2 プロトコルを使用して、圧縮と HTTP パイプライン処理を強化します。 Office 365 CDN サービスは、SharePoint Online サブスクリプションの一部として含まれます。
+組み込みの **Office 365 Content Delivery Network (CDN)** を使用して、静的アセット (イメージ、JavaScript、スタイルシート、WOFF ファイル) をホストして、SharePoint Online ページのパフォーマンスを向上させることができます。 Office 365 CDN では、静的資産を要求しているブラウザーの近くに静的資産をキャッシュするとパフォーマンスが向上します。これにより、ダウンロードが速くなり、待ち時間が短縮されます。 また、Office 365 CDNでは、圧縮と HTTP パイプラインを強化するために HTTP/2 プロトコルを使用します。 Office 365 CDN サービスは、SharePoint Online サブスクリプションの一部として含まれます。
 
-詳細な情報ガイダンスについては、「オンラインで Office 365 Content Delivery Network [(CDN) をSharePointしてください](use-microsoft-365-cdn-with-spo.md)。
+詳細なガイダンスについては、「[SharePoint Online でOffice 365 Content Delivery Network (CDN) を使用する](use-microsoft-365-cdn-with-spo.md)」を参照してください。
 
 >[!NOTE]
->このOffice 365 CDNは、(世界中の) 実稼働クラウドのテナントでのみ使用できます。 現在、米国政府、中国、ドイツのクラウドのテナントは Office 365 CDN をサポートしていません。
+>Office 365 CDNは、運用環境 (世界) クラウド内のテナントでのみ使用できます。 現在、米国政府、中国、ドイツのクラウドのテナントは Office 365 CDN をサポートしていません。
 
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-identify-items-not-in-cdn"></a>[ページ診断] ツールを使用SharePoint、ページに含CDN
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-identify-items-not-in-cdn"></a>SharePoint ツールのページ診断を使用して、CDN内にない項目を識別する
 
-SharePoint ツール ブラウザー拡張機能 **の** ページ診断を使用すると、SharePoint Online ページ内のアセットを簡単に一覧表示し、CDN オリジンに追加できます。
+SharePoint ツール ブラウザー拡張機能 **のページ診断** を使用すると、CDNの配信元に追加できるSharePoint Online ページのアセットを簡単に一覧表示できます。
 
-**SharePoint のページ** 診断ツールは、SharePoint Online モダン ポータルと従来の発行サイト ページの両方を分析する新しい Microsoft Edge (<https://www.microsoft.com/edge>) ブラウザーと Chrome ブラウザーのブラウザー拡張機能です。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法と詳細については、「[SharePoint Online 用ページ診断ツールを使用する](./page-diagnostics-for-spo.md)」を参照してください。
+**SharePoint用のページ診断ツール** は、新しいMicrosoft Edge (<https://www.microsoft.com/edge>) ブラウザーと Chrome ブラウザーのブラウザー拡張機能であり、SharePoint Online モダン ポータルページとクラシック発行サイト ページの両方を分析します。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法と詳細については、「[SharePoint Online 用ページ診断ツールを使用する](./page-diagnostics-for-spo.md)」を参照してください。
 
-SharePoint Online ページで [SharePoint のページ診断] ツールを実行すると、[診断テスト] タブをクリックして、CDN でホストされていないアセットの一覧を表示できます。 これらのアセットは、下のスクリーンショットに示Content Delivery Network **(CDN) チェック** の下に表示されます。
+SharePoint Online ページで [SharePoint 用ページ診断] ツールを実行すると、[**診断テスト**] タブをクリックして、CDNによってホストされていない資産の一覧を表示できます。 これらのアセットは、次のスクリーンショットに示すように **、見出しContent Delivery Network (CDN) チェック** の下に一覧表示されます。
 
 ![ページ診断。](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
 >[!NOTE]
 >ページ診断ツールは SharePoint Online でのみ機能し、SharePoint システム ページでは使用できません。
 
-## <a name="cdn-overview"></a>CDN概要
+## <a name="cdn-overview"></a>CDNの概要
 
-Office 365 CDN は、画像や javascript ファイルなどの頻繁にアクセスするオブジェクトを高速グローバル ネットワーク上に分散し、ページの読み込み時間を短縮し、ホストされたオブジェクトへのアクセスをユーザーに可能な限り近く提供することで、ユーザーのパフォーマンスを最適化するように設計されています。 このCDN元と呼ばれる場所からアセットをフェッチ _します_。 オリジンには、URL SharePointアクセスできるサイト、ドキュメント ライブラリ、またはフォルダーを指定できます。
+Office 365 CDNは、イメージや javascript ファイルなどのアクセス頻度の高いオブジェクトを高速グローバル ネットワーク上に分散し、ページ読み込み時間を短縮し、ユーザーにできるだけ近いホストオブジェクトにアクセスできるようにすることで、ユーザーのパフォーマンスを最適化するように設計されています。 CDNは _、配信元_ と呼ばれる場所からアセットをフェッチします。 配信元には、URL でアクセスできるSharePoint サイト、ドキュメント ライブラリ、またはフォルダーを指定できます。
 
-このOffice 365 CDNは、次の 2 つの基本的な型に分けらされています。
+Office 365 CDNは、次の 2 つの基本的な型に分かれています。
 
-- **パブリック CDN** は、JS (JavaScript)、CSS (StyleSheets)、Web フォント ファイル (WOFF、WOFF2)、会社のロゴなどの非専有画像に使用するように設計されています。
-- **プライベート CDN** 画像 (PNG、JPG、JPEG など) に使用するように設計されています。
+- **パブリック CDN** は、JS (JavaScript)、CSS (スタイルシート)、Web フォント ファイル (WOFF、WOFF2)、および会社のロゴなどの非独自のイメージに使用するように設計されています。
+- **プライベート CDN** は、画像 (PNG、JPG、JPEG など) に使用するように設計されています。
 
-組織のパブリックオリジンとプライベートオリジンの両方を選択できます。 ほとんどの組織では、2 つの組み合わせを実装します。 パブリック オプションとプライベート オプションの両方が同様のパフォーマンス向上を実現しますが、それぞれに固有の属性と利点があります。 パブリックおよびプライベート のオリジンのCDN詳細については、「各オリジンをパブリックまたはプライベートにするかどうかを選択する[」を参照してください](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)。
+組織のパブリックオリジンとプライベート配信元の両方を選択できます。 ほとんどの組織では、2 つの組み合わせを実装することを選択します。 パブリック オプションとプライベート オプションはどちらも同様のパフォーマンス向上を提供しますが、それぞれに固有の属性と利点があります。 パブリックオリジンとプライベート CDN配信元の詳細については、「[各配信元をパブリックまたはプライベートにするかどうかを選択する」を](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)参照してください。
 
-## <a name="how-to-enable-public-and-private-cdn-with-the-default-configuration"></a>既定の構成でパブリック およびプライベート CDNを有効にする方法
-テナントの設定を変更するCDN、組織のコンプライアンス、セキュリティ、およびプライバシー ポリシーを満たしている必要があります。
+## <a name="how-to-enable-public-and-private-cdn-with-the-default-configuration"></a>既定の構成でパブリックおよびプライベート CDNを有効にする方法
+テナントCDN設定を変更する前に、組織のコンプライアンス、セキュリティ、およびプライバシー ポリシーが満たされていることを確認する必要があります。
 
-詳細な構成設定については、または CDN を既に有効にし、追加の場所 (発生元) を追加する場合は、「SharePoint Online 管理シェルを使用して Office 365 CDN を設定して構成する[」セクションを参照してください](use-microsoft-365-cdn-with-spo.md#set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell)。
+詳細な構成設定、またはCDNを既に有効にしていて、別の場所 (配信元) を追加する場合は、「SharePoint [Online Management Shell を使用してOffice 365 CDNを設定して構成](use-microsoft-365-cdn-with-spo.md#set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell)する」セクションを参照してください。
 
-Connect管理シェルを使用してテナントSharePointにアクセスします。
+SharePoint Online Management Shell を使用してテナントにConnectします。
 
 ```PowerShell
 Connect-SPOService -Url https://<YourTenantName>-admin.sharepoint.com
 ```
 
-組織でパブリックオリジンとプライベート オリジンの両方を既定の構成で使用するには、次のコマンドを入力します。
+組織で既定の構成でパブリック配信元とプライベート配信元の両方を使用できるようにするには、次のコマンドを入力します。
 
 ```PowerShell
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
@@ -82,7 +82,7 @@ Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 
 ## <a name="see-also"></a>関連項目
 
-[オンラインのページ診断ツールを使用SharePointする](./page-diagnostics-for-spo.md)
+[SharePoint Online のページ診断ツールを使用する](./page-diagnostics-for-spo.md)
 
 [SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用](use-microsoft-365-cdn-with-spo.md)
 

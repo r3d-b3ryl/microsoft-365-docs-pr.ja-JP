@@ -13,7 +13,7 @@ ms.collection:
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: 複数地域の環境内SharePoint別の地域の場所にサイトを移動し、ユーザーに変更の期待を伝える方法について学習します。
+description: SharePoint サイトを複数地域環境内の別の地域の場所に移動し、変更に対する期待をユーザーに伝える方法について説明します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 9e4132b8399cc69067d24af6c3c9ec8e3baf52bd
 ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
@@ -28,14 +28,14 @@ SharePoint サイトの地域移動を使って、SharePoint サイトを複数�
 
 次のサイトの種類は地域のジオ位置情報間を移動することができます。
 
-- Microsoft 365に関連付けられているサイトを含む、グループに接続されたサイトMicrosoft Teams
-- グループの関連付けをMicrosoft 365モダン サイト
+- Microsoft Teamsに関連付けられているサイトを含む、グループに接続されたサイトMicrosoft 365
+- Microsoft 365 グループの関連付けのないモダン サイト
 - 従来の SharePoint サイト
 - コミュニケーション サイト
 
 ジオ位置情報間でサイトを移動するには、全体管理者または SharePoint 管理者である必要があります。
 
-サイトコンテンツに応じて、SharePoint約 4 ~ 6 時間の読み取り専用ウィンドウがあります。
+サイトコンテンツに応じて、約 4 ~ 6 時間のSharePoint サイト geo 移動中に読み取り専用ウィンドウが表示されます。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
@@ -62,7 +62,7 @@ SharePoint サイトの移動を事前にスケジュールすることができ
 
 - 一度に最大 4,000 件の移動をスケジュールすることができます。
 - 移動開始後はスケジュールを追加でき、常時最大 4,000 件の保留中の移動をキューに置いておけます。
-- 移動できるサイトSharePointの最大サイズは 1 テラバイト (1 TB) です。
+- 移動できるSharePoint サイトの最大サイズは 1 テラバイト (1 TB) です。
 
 SharePoint サイトの地域移動を後でスケジュール設定するには、移動開始時に次のいずれかのパラメーターを含みます:
 
@@ -75,13 +75,13 @@ SharePoint サイトの地域移動を後でスケジュール設定するには
 
 SharePoint サイトの地域移動は　サイトがあるジオ位置情報でSharePoint の管理 URLから接続し、実行する必要があります。
 
-たとえば、サイトの URL <https://contosohealthcare.sharepoint.com/sites/Turbines>が次の場合は、次の SharePoint管理者 URL に接続します<https://contosohealthcare-admin.sharepoint.com>。
+たとえば、サイト URL が次の<https://contosohealthcare.sharepoint.com/sites/Turbines>場所にあるSharePoint管理者 URL に<https://contosohealthcare-admin.sharepoint.com>接続します。
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePointコマンドを表示する [オンライン管理シェル] Connect-SPOServiceします。](../media/move-onedrive-between-geo-locations-image1.png)
+![Connect-SPOService コマンドを示す [オンライン管理シェル] ウィンドウをSharePointします。](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>環境の検証
 
@@ -103,13 +103,13 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 サイトが移動準備完了の場合、*正常に完了*　と返ってきます。ブロックされている状態がある場合は、*失敗* と返ってきます。
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>関連付SharePointグループを持つサイトのサイト地域移動を開始Microsoft 365する
+### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Microsoft 365 グループが関連付けられていないサイトのSharePoint サイト geo 移動を開始する
 
 既定値では、サイトの最初のURL は移動先のジオ位置情報の URL に変更されます。 例:
 
 <https://Contoso.sharepoint.com/sites/projectx> から <https://ContosoEUR.sharepoint.com/sites/projectx>
 
-グループの関連付Microsoft 365サイトの場合は、パラメーターを使用してサイトの名前を変更`-DestinationUrl`することもできます。 例:
+Microsoft 365 グループの関連付けがないサイトの場合は、パラメーターを使用してサイトの名前を`-DestinationUrl`変更することもできます。 例:
 
 <https://Contoso.sharepoint.com/sites/projectx> から <https://ContosoEUR.sharepoint.com/sites/projecty>
 
@@ -119,13 +119,13 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
 ```
 
-![コマンドレットを示す PowerShell ウィンドウStart-SPOSiteContentMoveします。](../media/multi-geo-sharepoint-site-move-powershell.png)
+![コマンドレットを示す PowerShell ウィンドウStart-SPOSiteContentMoveスクリーンショット。](../media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>グループ接続SharePointサイトのサイト地域移動Microsoft 365開始する
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Microsoft 365 グループ接続サイトのSharePoint サイト geo 移動を開始する
 
-グループに接続Microsoft 365サイトを移動するには、グローバル管理者または SharePoint 管理者が最初にグループの優先データの場所 (PDL) 属性をMicrosoft 365します。
+Microsoft 365 グループに接続されたサイトを移動するには、グローバル管理者またはSharePoint管理者が最初に、Microsoft 365 グループの優先データの場所 (PDL) 属性を変更する必要があります。
 
-グループの PDL をMicrosoft 365するには、次のMicrosoft 365します。
+Microsoft 365 グループの PDL を設定するには:
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -159,7 +159,7 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 |---|---|
 |トリガーの準備|移動は開始されていません。|
 |スケジュール済み|移動がキューにあり、まだ開始されていません。|
-|InProgress (n/4)|移行は、検証 (1/4)、バックアップ (2/4)、復元 (3/4)、クリーンアップ (4/4) のいずれかの状態で進行中です。|
+|InProgress (n/4)|この移動は、検証 (1/4)、バックアップ (2/4)、復元 (3/4)、クリーンアップ (4/4) のいずれかの状態で進行中です。|
 |Success|移動は正常に完了しています。|
 |Failed|移動は失敗しました。|
 |
@@ -172,17 +172,17 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 
 ### <a name="site"></a>サイト
 
-移動の進行中に、サイトは読み取り専用に設定されます。 移動の完了後に、ブックマークまたは他のリンクをクリックすると、新しいジオ位置情報の新しいサイトがユーザーに指定されます。
+移動の進行中、サイトは読み取り専用に設定されます。 移動の完了後に、ブックマークまたは他のリンクをクリックすると、新しいジオ位置情報の新しいサイトがユーザーに指定されます。
 
 ### <a name="permissions"></a>アクセス許可
 
 サイトへのアクセス許可を持つユーザーは、移動中および移動完了後のサイトに引き続きアクセスすることができます。
 
-### <a name="sync-app"></a>同期アプリ
+### <a name="sync-app"></a>アプリの同期
 
-サイトの移動が完了すると、同期アプリは自動的に検出され、新しいサイトの場所への同期をシームレスに転送します。 ユーザーはもう一度サインインまたはその他のアクションをする必要はありません。 (必要な同期アプリのバージョン 17.3.6943.0625 以降)。
+同期アプリは、サイトの移動が完了すると、同期を自動的に検出し、シームレスに新しいサイトの場所に転送します。 ユーザーはもう一度サインインまたはその他のアクションをする必要はありません。 (バージョン 17.3.6943.0625 以降の同期アプリが必要です。
 
-移動の進行中にユーザーがファイルを更新すると、移動中にファイルのアップロードが保留中であるという通知が同期アプリによって通知されます。
+移動の進行中にユーザーがファイルを更新した場合、同期アプリは、移動の進行中にファイルのアップロードが保留中であることを通知します。
 
 ### <a name="sharing-links"></a>共有リンク
 
@@ -200,11 +200,11 @@ OneNote win32 クライアントと UWP (ユニバーサル) アプリは、サ�
 - OneNote UWP: バージョン 16.0.8431.1006 (以降)
 - OneNote モバイル アプリ: バージョン 16.0.8431.1011 (以降)
 
-### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (グループ接続サイトMicrosoft 365適用)
+### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (Microsoft 365 グループ接続サイトに適用)
 
-サイト地域SharePoint移動が完了すると、ユーザーはアプリ上Microsoft 365グループ サイト ファイルにTeamsされます。 さらに、地域移動前にサイトからチーム チャット経由で共有したファイルは、移動が完了後に引き続き操作できるようになります。
+SharePoint サイト geo の移動が完了すると、ユーザーはTeams アプリ上のMicrosoft 365 グループ サイト ファイルにアクセスできるようになります。 さらに、地域移動前にサイトからチーム チャット経由で共有したファイルは、移動が完了後に引き続き操作できるようになります。
 
-SharePoint地域移動では、プライベート チャネルをある地域から別の地域に移動する機能はサポートされていません。 プライベート チャネルは元の geo に残ります。
+サイト geo の移動SharePoint、ある geo から別の geo へのプライベート チャネルの移動はサポートされていません。 プライベート チャネルは元の geo に残ります。
   
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>iOS/Android 用 SharePoint モバイル アプリ
@@ -217,15 +217,15 @@ SharePoint 2013 ワークフローは、サイトの移動後に再発行する�
 
 ### <a name="apps"></a>アプリ
 
-アプリを使用してサイトを移動する場合は、アプリとその接続が移動先の地域の場所で利用できない可能性がある場合に、サイトの新しい地域の場所にアプリを再インストールする必要があります。
+アプリを使用してサイトを移動する場合は、アプリとその接続が移行先の地域の場所で利用できない可能性があるため、サイトの新しい地域の場所にアプリを再確立する必要があります。
 
 ### <a name="flow"></a>Flow
 
-ほとんどの場合、フローはサイト地域の移動後も引き続SharePoint動作します。 移動が完了したらテストすることをお勧めします。
+ほとんどの場合、フローは、SharePoint サイトの geo 移動後も引き続き機能します。 移動が完了したらテストすることをお勧めします。
 
 ### <a name="power-apps"></a>Power Apps
 
-Power Apps場所に再作成する必要があります。
+Power Appsコピー先の場所に再作成する必要があります。
 
 ### <a name="data-movement-between-geo-locations"></a>ジオ位置情報間のデータ移動
 

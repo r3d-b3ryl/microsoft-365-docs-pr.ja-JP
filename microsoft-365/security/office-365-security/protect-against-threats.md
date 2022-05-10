@@ -41,7 +41,7 @@ Defender for Office 365の構成をチャンクに分割するクイック ス�
 > [!IMPORTANT]
 > **初期推奨設定はポリシーの種類ごとに含まれていますが、多くのオプションを使用でき、特定の組織のニーズに合わせて設定を調整できます**。 ポリシーまたは変更がデータセンターを通じて動作するには、約 30 分かかります。
 >
-> Defender for Office 365のほとんどのポリシーの手動構成をスキップするには、Standard または Strict レベルで事前設定されたセキュリティ ポリシーを使用できます。 詳細については、「[EOP とMicrosoft Defender for Office 365の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
+> Defender for Office 365のほとんどのポリシーの手動構成をスキップするには、Standard または Strict レベルで事前設定されたセキュリティ ポリシーを使用できます。 詳しくは、「[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
 
 ## <a name="requirements"></a>要件
 

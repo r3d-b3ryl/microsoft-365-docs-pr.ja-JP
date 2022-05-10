@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365でフィッシング対策ポリシーを構成する
+title: 詳細については、「Microsoft Defender for Office 365 のフィッシング対策ポリシーを構成する」を参照してください。
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/14/2022
 ms.locfileid: "64847427"
 ---
-# <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365でフィッシング対策ポリシーを構成する
+# <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>詳細については、「Microsoft Defender for Office 365 のフィッシング対策ポリシーを構成する」を参照してください。
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -98,10 +98,10 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
    完了したら、**[次へ]** をクリックします。
 
 4. 表示される **ユーザー、グループ、およびドメイン** ページで、ポリシーを適用する内部の受信者を特定します (受信者条件)。
-   - **ユーザー**: 指定したメールボックス、メール ユーザー、またはメール連絡先。
-   - **グループ**:
-     - 指定した配布グループまたはメールが有効なセキュリティ グループのメンバー。
-     - 指定したMicrosoft 365 グループ。
+   - **ユーザー**: 指定されたメールボックス、メール ユーザー、またはメール連絡先。
+   - **グループ**: 
+     - 指定された配布グループまたはメールが有効なセキュリティ グループのメンバー。
+     - 指定した Microsoft 365 グループ。
    - **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
 
    適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
@@ -110,7 +110,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
    同じ条件に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 別の条件では、AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) を使用します。
 
-   - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。 設定と動作は、条件とまったく同じです。
+   - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
 
    完了したら、**[次へ]** をクリックします。
 
@@ -274,7 +274,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
    - **優先度**
    - **最終更新日時**
 
-3. 名前をクリックしてポリシーを選択すると、ポリシー設定がポップアップに表示されます。
+3. ポリシーの名前をクリックして選択すると、ポリシー設定がポップアウトで表示されます。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>Microsoft 365 Defender ポータルを使用してフィッシング対策ポリシーを変更する
 
@@ -322,9 +322,9 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 2. [ **フィッシング対策** ] ページで、名前をクリックして、一覧からカスタム ポリシーを選択します。
 
 3. 表示されるポリシーの詳細ポップアップの上部には、現在の優先度の値とカスタム ポリシーの数に基づいて、**[優先度を上げる]** または **[優先度を下げる]** が表示されます。
-   - **優先度** の値 **が 0** のポリシーには、[優先度の **低下**] オプションのみが使用できます。
-   - **優先度** の値が最も低いポリシー (**3** など) には、[優先度の **増加**] オプションのみが使用できます。
-   - 3 つ以上のポリシーがある場合、優先度の最大値と最小値の間のポリシーには、[ **優先度の増加** ] オプションと [優先度の **低下** ] オプションの両方が使用できます。
+   - **優先度** の値が **0** のポリシーでは、**[優先度を下げる]** オプションのみ利用可能です。
+   - **優先度** 値が最低のポリシー (例: **3**) では、**[優先度を下げる]** オプションのみ利用可能です。
+   - 3 つ以上のポリシーがある場合、優先度の値が最も高いポリシーと最も低いポリシーの間では、**[優先度を上げる]** と **[優先度を下げる]** の両方のオプションが利用可能です。
 
    ![[優先度を上げる] アイコン](../../media/m365-cc-sc-increase-icon.png)、**[優先度を上げる]** の順にクリックするか、または ![[優先度を下げる] アイコン](../../media/m365-cc-sc-decrease-icon.png)、**[優先度を下げる]** の順にクリックして、**優先度** 値を変更します。
 
@@ -338,7 +338,7 @@ Microsoft 365 Defender ポータルを使用してカスタムフィッシング
 
 2. [ **フィッシング対策** ] ページで、ポリシーの名前をクリックして、一覧からカスタム ポリシーを選択します。
 
-3. 表示されるポリシーの詳細ポップアウトの上部で、![[その他の操作]](../../media/m365-cc-sc-more-actions-icon.png) アイコンをクリックします。 **[その他の操作]** \> ![[ポリシーの削除]](../../media/m365-cc-sc-delete-icon.png) アイコン **[ポリシーの削除]** の順にクリックします。
+3. 表示されるポリシーの詳細ポップアウトの上部で、![[その他の操作] アイコン](../../media/m365-cc-sc-more-actions-icon.png)、**[その他の操作]** \> ![[ポリシーの削除] アイコン](../../media/m365-cc-sc-delete-icon.png) **[ポリシーの削除]** の順にクリックします。
 
 4. 確認ダイアログ ボックスが表示されたら、**[はい]** をクリックします。
 
@@ -391,7 +391,7 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Addit
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
-構文とパラメーターの詳細については、「 [New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy)」を参照してください。
+構文とパラメーターの詳細については、「[New-MalwareFilterRule](/powershell/module/exchange/New-AntiPhishPolicy)」を参照してください。
 
 > [!NOTE]
 > フィッシング対策ポリシーで使用する [検疫ポリシー](quarantine-policies.md) を指定する詳細な手順については、「 [PowerShell を使用してフィッシング対策ポリシーで検疫ポリシーを指定する](quarantine-policies.md#anti-phishing-policies)」を参照してください。
@@ -484,7 +484,7 @@ Get-AntiPhishRule -Identity "Contoso Executives"
 Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-構文とパラメーターの詳細については、「 [Set-AntiPhishPolicy](/powershell/module/exchange/Set-AntiPhishPolicy)」を参照してください。
+構文とパラメーターの詳細については、「[Set-AntiPhishPolicy](/powershell/module/exchange/Set-AntiPhishPolicy)」を参照してください。
 
 > [!NOTE]
 > フィッシング対策ポリシーで使用する [検疫ポリシー](quarantine-policies.md) を指定する詳細な手順については、「 [PowerShell を使用してフィッシング対策ポリシーで検疫ポリシーを指定する](quarantine-policies.md#anti-phishing-policies)」を参照してください。

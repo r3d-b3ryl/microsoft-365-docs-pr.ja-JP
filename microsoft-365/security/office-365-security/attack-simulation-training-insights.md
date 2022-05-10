@@ -1,5 +1,5 @@
 ---
-title: インサイトとレポート攻撃シミュレーション トレーニング
+title: 攻撃シミュレーション トレーニングのインサイトとレポート
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -11,7 +11,7 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: 管理者は、Microsoft 365 Defender ポータルでの攻撃シミュレーション トレーニングがユーザーに与える影響と、シミュレーションとトレーニングの結果から分析情報を得る方法について説明します。
+description: 管理者は、Microsoft 365 Defender ポータルでの攻撃シミュレーション トレーニングがユーザーにどのような影響を与えるかを学習し、シミュレーションとトレーニングの結果から分析情報を得ることができます。
 ms.technology: mdo
 ms.openlocfilehash: a360343fd4406dc79d072927fef41369bbe21ed8
 ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
@@ -20,139 +20,139 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2022
 ms.locfileid: "64473895"
 ---
-# <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>インサイトの Defender での攻撃シミュレーション トレーニングの詳細とレポートOffice 365
+# <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365での攻撃シミュレーション トレーニングのインサイトとレポート
 
-**Microsoft Defender for** [Office 365プラン 2 に適用されます](defender-for-office-365.md)
+[Microsoft Defender for Office 365プラン 2](defender-for-office-365.md) **に適用されます**
 
-Microsoft Defender for Office プラン 2 または Microsoft 365 E5 の攻撃シミュレーション トレーニングでは、シミュレーションの結果とそれに対応するトレーニングからの分析情報とレポートを提供します。 この情報を使用すると、ユーザーの脅威の準備状況に関する情報と、今後の攻撃に備えたユーザーの準備を行う次の手順を推奨します。
+Microsoft Defender for Office プラン 2 またはMicrosoft 365 E5の攻撃シミュレーション トレーニングでは、シミュレーションの結果と対応するトレーニングから分析情報とレポートを提供します。 この情報を使用すると、ユーザーの脅威の準備の進行状況と、今後の攻撃に備えるために推奨される次の手順に関する情報が得られます。
 
-インサイトレポートは、このポータルの攻撃シミュレーション トレーニングの次のMicrosoft 365 Defenderできます。
+インサイトとレポートは、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの次の場所で利用できます。
 
-- [ **概要]** タブ。
+- [ **概要** ] タブ。
 - [シミュレーション] タブ **のシミュレーションの** 詳細。
 
-この記事の残りの部分では、利用可能な情報について説明します。
+この記事の残りの部分では、使用可能な情報について説明します。
 
-攻撃シミュレーション トレーニングの概要については、「攻撃シミュレーション トレーニングの使用を開始 [する」を参照してください](attack-simulation-training-get-started.md)。
+攻撃シミュレーション トレーニングの概要については、「攻撃シミュレーション トレーニング[を使用した概要](attack-simulation-training-get-started.md)」を参照してください。
 
-## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>インサイトシミュレーション トレーニングの [概要] タブの詳細とレポート
+## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>攻撃シミュレーション トレーニングの [概要] タブのインサイトとレポート
 
-[概要] タブに移動するには、[Microsoft 365 Defender<https://security.microsoft.com>] ポータルを開き、[**メール &** \> コラボレーション攻撃シミュレーション トレーニング] に **移動** し、[概要] タブが選択されている (既定です) のを確認します。 攻撃シミュレーション トレーニング ページの **[概要]** タブに直接 **移動するには** 、 を使用します <https://security.microsoft.com/attacksimulator?viewid=overview>。
+**[概要**] タブに移動するには、Microsoft 365 Defender ポータル<https://security.microsoft.com>を開き、[**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング**] に移動し、[**概要**] タブが選択されていることを確認します (既定値)。 **攻撃シミュレーション トレーニング** ページの **[概要**] タブに直接移動するには、<https://security.microsoft.com/attacksimulator?viewid=overview>.
 
 このセクションの残りの部分では、攻撃シミュレーション トレーニングの [ **概要** ] タブで使用できる情報について説明します。
 
 ### <a name="recent-simulations-card"></a>最近のシミュレーション カード
 
-[**概要] タブの** [最近使ったシミュレーション] カードには、組織で作成または実行した最後の 3 つのシミュレーションが表示されます。
+[**概要**] タブ **の [最近** 使ったシミュレーション] カードには、組織で作成または実行した最後の 3 つのシミュレーションが表示されます。
 
 シミュレーションを選択して詳細を表示できます。
 
-[すべての **シミュレーションを表示] を選択すると** 、[シミュレーション] **タブに移動** します。
+**[すべてのシミュレーションを表示]** を選択すると、[シミュレーション] タブ **に** 移動します。
 
-[シミュレーションの **起動] を選択すると、** シミュレーション作成ウィザードが開始されます。 詳細については、「Defender [でフィッシング攻撃を](attack-simulation-training.md)シミュレートする」を参照Office 365。
+**[シミュレーションの起動] を選択すると、シミュレーション** 作成ウィザードが開始されます。 詳細については、「[Defender for Office 365でのフィッシング攻撃のシミュレート](attack-simulation-training.md)」を参照してください。
 
-:::image type="content" source="../../media/attack-sim-training-overview-recent-simulations-card.png" alt-text="ポータルの攻撃シミュレーション トレーニングの [概要] タブにある [最近使ったシミュレーション] Microsoft 365 Defenderカード" lightbox="../../media/attack-sim-training-overview-recent-simulations-card.png":::
+:::image type="content" source="../../media/attack-sim-training-overview-recent-simulations-card.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの [概要] タブにある [最近使ったシミュレーション] カード" lightbox="../../media/attack-sim-training-overview-recent-simulations-card.png":::
 
 ### <a name="behavior-impact-on-compromise-rate-card"></a>侵害率カードに対する動作の影響
 
-[**概要] タブの [** 侵害率カードに対する動作の影響] は、ユーザーがシミュレーションに対してどのように応答したのか、およびユーザーの履歴データと比較してMicrosoft 365。 これらの分析情報を使用して、同じユーザー グループに対して複数のシミュレーションを実行することで、ユーザーの脅威の準備状況の進捗状況を追跡できます。
+[**概要**] タブ **の [侵害率] カードに対する動作の影響** は、Microsoft 365の履歴データと比較して、ユーザーがシミュレーションにどのように応答したかを示します。 これらの分析情報を使用すると、同じユーザー グループに対して複数のシミュレーションを実行することで、ユーザーの脅威の準備状況の進行状況を追跡できます。
 
 グラフ データ自体には、次の情報が表示されます。
 
-- **予測妥協率**<sup>\*</sup>: 他のすべての組織で同じ種類のペイロードを使用する攻撃シミュレーション の平均妥協率Microsoft 365です。
-- **実際の妥協率**<sup>\*</sup>: シミュレーションで低下したユーザーの実際の割合。
+- **予測される侵害率**<sup>\*</sup>: 他のすべてのMicrosoft 365組織で同じ種類のペイロードを使用する攻撃シミュレーション トレーニング シミュレーションの平均侵害率。
+- **実際の侵害率**<sup>\*</sup>: シミュレーションのために落ちたユーザーの実際の割合。
 
-グラフ内のデータ ポイントにカーソルを合わせると、実際のパーセンテージ値が表示されます。
+グラフ内のデータ ポイントにマウス ポインターを合わせると、実際のパーセンテージ値が表示されます。
 
-次の概要情報もカードに表示されます。
+カードには、次の概要情報も表示されます。
 
-- **ユーザーがフィッシングの影響** を受けにくい: シミュレートされた攻撃によって侵害された実際のユーザー数と予測される侵害率の違い。 この数のユーザーは、今後同様の攻撃によって侵害される可能性は低い。
-- **予測速度よりも x% 優れた**: ユーザーが予想される妥協率とは対照的に、全体的にどのように行ったかを示します。
+- **フィッシングの影響を受けにくいユーザー**: シミュレートされた攻撃によって侵害された実際のユーザー数と、予測される侵害率の差。 この数のユーザーは、今後同様の攻撃によって侵害される可能性が低くなります。
+- **x% が予測レートより優れている**: 予測される侵害率とは対照的に、ユーザーが全体的にどのように行ったかを示します。
 
-:::image type="content" source="../../media/attack-sim-training-overview-behavior-impact-card.png" alt-text="セキュリティ ポータルの攻撃シミュレーション トレーニングの [概要] タブの [侵害率カードに対する動作の影響Microsoft 365 Defenderします。" lightbox="../../media/attack-sim-training-overview-behavior-impact-card.png":::
+:::image type="content" source="../../media/attack-sim-training-overview-behavior-impact-card.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの [概要] タブの [侵害率カードに対する動作の影響]" lightbox="../../media/attack-sim-training-overview-behavior-impact-card.png":::
 
-より詳細なレポートを表示するには、[シミュレーションとトレーニングの有効性レポートの **表示] をクリックします**。 このレポートについては、 [この記事の後半で説明します](#training-efficacy-tab-for-the-attack-simulation-report)。
+より詳細なレポートを表示するには、[ **シミュレーションとトレーニングの有効性レポートの表示**] をクリックします。 このレポートについては、 [この記事の後半で説明します](#training-efficacy-tab-for-the-attack-simulation-report)。
 
 ### <a name="simulation-coverage-card"></a>シミュレーション カバレッジ カード
 
-[**概要]** タブの [シミュレーション] カバレッジ カードには、**シミュレーション (シミュレート** されたユーザー) を受け取った組織内のユーザーと、シミュレーションを受け取っていないユーザー (シミュレートされていないユーザー) の割合が **表示** されます。 グラフ内のセクションにカーソルを合わせると、各カテゴリの実際のユーザー数を確認できます。
+**[概要**] タブの **[シミュレーション カバレッジ**] カードには、シミュレーションを受け取った組織内のユーザー (**シミュレートされたユーザー**) と、シミュレーションを受けていないユーザー (**シミュレートされていないユーザー**) の割合が表示されます。 グラフのセクションにマウス ポインターを合わせると、各カテゴリの実際のユーザー数を確認できます。
 
-[シミュレーション **以外の** ユーザーのシミュレーションを起動する] を選択すると、シミュレーションを受け取らなかったユーザーが [ターゲット ユーザー] ページで自動的に選択されるシミュレーション作成 **ウィザードが開始** されます。 詳細については、「Defender [でフィッシング攻撃を](attack-simulation-training.md)シミュレートする」を参照Office 365。
+**[シミュレーション以外のユーザーに対してシミュレーションを起動** する] を選択すると、シミュレーション作成ウィザードが開始され、シミュレーションを受け取っていないユーザーが **[ターゲット ユーザー**] ページで自動的に選択されます。 詳細については、「[Defender for Office 365でのフィッシング攻撃のシミュレート](attack-simulation-training.md)」を参照してください。
 
-[シミュレーション カバレッジ **レポートの表示] を選択** すると、攻撃シミュレーション レポートの [[ユーザーカバレッジ] タブに移動します](#user-coverage-tab-for-the-attack-simulation-report)。
+**[シミュレーション カバレッジ レポートの表示**] を選択すると、[攻撃シミュレーション レポートの [ユーザー カバレッジ] タブに移動します](#user-coverage-tab-for-the-attack-simulation-report)。
 
-:::image type="content" source="../../media/attack-sim-training-overview-sim-coverage-card.png" alt-text="ポータルの攻撃シミュレーション トレーニングの [概要] タブにあるシミュレーション カバレッジ カードMicrosoft 365 Defenderします。" lightbox="../../media/attack-sim-training-overview-sim-coverage-card.png":::
+:::image type="content" source="../../media/attack-sim-training-overview-sim-coverage-card.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの [概要] タブの [シミュレーション カバレッジ] カード" lightbox="../../media/attack-sim-training-overview-sim-coverage-card.png":::
 
 ### <a name="training-completion-card"></a>トレーニング完了カード
 
-[**概要] タブの** [トレーニング完了] カードは、シミュレーションの結果に基づいてトレーニングを受けたユーザーの割合を次のカテゴリに整理します。
+[**概要**] タブの **[トレーニング完了**] カードは、シミュレーションの結果に基づいてトレーニングを受けたユーザーの割合を次のカテゴリに分類します。
 
 - **Completed**
 - **処理中**
 - **不完全**
 
-グラフ内のセクションにカーソルを合わせると、各カテゴリの実際のユーザー数を確認できます。
+グラフのセクションにマウス ポインターを合わせると、各カテゴリの実際のユーザー数を確認できます。
 
-[トレーニング **完了レポートの表示] を選択** すると、攻撃シミュレーション レポートの [[トレーニング完了] タブに移動します](#training-completion-tab-for-the-attack-simulation-report)。
+[ **トレーニング完了レポートの表示** ] を選択すると、 [攻撃シミュレーション レポートの [トレーニング完了] タブに移動します](#training-completion-tab-for-the-attack-simulation-report)。
 
-### <a name="repeat-offenders-card"></a>繰り返し犯罪者カード
+### <a name="repeat-offenders-card"></a>繰り返し違反者カード
 
-[ **概要] タブの [** 繰り返し犯罪者 **] カードには** 、繰り返し犯人に関する情報が表示されます。 繰 _り返し犯人_ とは、連続したシミュレーションによって侵害されたユーザーです。 連続するシミュレーションの既定の数は 2 ですが、攻撃シミュレーション トレーニングの [設定] タブ **で値** を変更できます<https://security.microsoft.com/attacksimulator?viewid=setting>。
+[**概要**] タブの [**繰り返し違反者**] カードには、繰り返し違反者に関する情報が表示されます。 _繰り返し違反者_ とは、連続したシミュレーションによって侵害されたユーザーです。 連続するシミュレーションの既定の数は 2 ですが、攻撃シミュレーション トレーニングの **[設定**] タブで<https://security.microsoft.com/attacksimulator?viewid=setting>値を変更できます。
 
-グラフは、シミュレーションの種類別に繰り返し犯罪者データ [を整理します](attack-simulation-training.md#select-a-social-engineering-technique)。
+グラフでは、 [シミュレーションの種類](attack-simulation-training.md#select-a-social-engineering-technique)別に繰り返し違反者データが整理されます。
 
 - **All**
 - **マルウェアの添付ファイル**
 - **マルウェアへのリンク**
-- **資格情報の取得**
+- **資格情報の収集**
 - **添付ファイル内のリンク**
 - **ドライブバイ URL**
 
-[繰 **り返し犯罪者レポートの表示** ] を選択すると、攻撃シミュレーション レポートの [繰り返し犯罪者] [タブに移動します](#repeat-offenders-tab-for-the-attack-simulation-report)。
+[ **繰り返し違反者レポートの表示** ] を選択すると、 [攻撃シミュレーション レポートの [繰り返し違反者] タブに移動します](#repeat-offenders-tab-for-the-attack-simulation-report)。
 
-### <a name="recommendations-card"></a>おすすめカード
+### <a name="recommendations-card"></a>おすすめ カード
 
-[ **概要] タブの** [推奨事項] **カード** には、実行するシミュレーションの種類が異なります。
+[**概要**] タブ **の [おすすめ**] カードには、実行するさまざまな種類のシミュレーションが表示されます。
 
-[起動 **] を選択すると** 、[テクニックの選択] ページで指定したシミュレーションの種類が自動的に選択されたシミュレーション作成 **ウィザードが開始** されます。 詳細については、「Defender [でフィッシング攻撃を](attack-simulation-training.md)シミュレートする」を参照Office 365。
+**[起動]** を選択すると、シミュレーション作成ウィザードが開始され、指定されたシミュレーションの種類が **[手法の選択**] ページで自動的に選択されます。 詳細については、「[Defender for Office 365でのフィッシング攻撃のシミュレート](attack-simulation-training.md)」を参照してください。
 
-:::image type="content" source="../../media/attack-sim-training-overview-recommendations-card.png" alt-text="ポータルの攻撃シミュレーション トレーニングの [概要] タブの [推奨事項] カードMicrosoft 365 Defenderします。" lightbox="../../media/attack-sim-training-overview-recommendations-card.png":::
+:::image type="content" source="../../media/attack-sim-training-overview-recommendations-card.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの [概要] タブの [おすすめ カード]" lightbox="../../media/attack-sim-training-overview-recommendations-card.png":::
 
 ### <a name="attack-simulation-report"></a>攻撃シミュレーション レポート
 
-View ..**をクリックすると、[** 概要]  タブから攻撃シミュレーション レポート **を開きます。この** 記事で説明する多くのカードで使用できるレポート ボタン。 レポートに直接移動するには、 <https://security.microsoft.com/attacksimulationreport>
+[表示] をクリックすると、[**概要**] タブから **攻撃シミュレーション レポート** を開くことができます **。この** 記事で説明されている多くのカードで使用できるレポート ボタン。 レポートに直接移動するには、 <https://security.microsoft.com/attacksimulationreport>
 
 #### <a name="training-efficacy-tab-for-the-attack-simulation-report"></a>攻撃シミュレーション レポートの [トレーニングの有効性] タブ
 
-[攻撃 **シミュレーション レポート] ページで** 、[ **トレーニングの有効性]** タブが既定で選択されています。 このタブには、シミュレーション自体からの追加のコンテキストを使用して、侵害率カードに対する動作の影響で使用できるのと同じ情報が表示されます。
+[ **攻撃シミュレーション] レポート** ページで、[ **トレーニングの効果** ] タブが既定で選択されます。 このタブには、 **侵害率カードに対する動作への影響** と同じ情報と、シミュレーション自体からの追加コンテキストが表示されます。
 
-:::image type="content" source="../../media/attack-sim-report-training-efficacy-view.png" alt-text="ポータルの [攻撃シミュレーション] レポートの [トレーニングMicrosoft 365 Defender]" lightbox="../../media/attack-sim-report-training-efficacy-view.png":::
+:::image type="content" source="../../media/attack-sim-report-training-efficacy-view.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション レポートの [トレーニングの有効性] タブ" lightbox="../../media/attack-sim-report-training-efficacy-view.png":::
 
-グラフは、予測妥 **協率と実際** の侵害 **率を示しています**。 グラフ内のセクションにカーソルを合わせると、実際のパーセンテージ値が表示されます。
+グラフには、 **予測された侵害率** と **実際の侵害率が表示されます**。 グラフ内のセクションにマウス ポインターを合わせると、実際のパーセンテージ値が表示されます。
 
 グラフの下の詳細テーブルは、次の情報を示しています。
 
 - **シミュレーション名**
 - **シミュレーション手法**
 - **シミュレーションの戦術**
-- **予測された侵害率**
+- **侵害率の予測**
 - **実際の侵害率**
-- **対象ユーザーの総数**
+- **対象となる合計ユーザー数**
 - **クリックされたユーザーの数**
 
 使用できる列見出しをクリックすると、結果を並べ替えることができます。
 
-[列 **のカスタマイズ]** をクリックして、表示されている列を削除します。 完了したら、**[適用]** をクリックします。
+[ **列のカスタマイズ** ] をクリックして、表示される列を削除します。 完了したら、**[適用]** をクリックします。
 
-[検索![] アイコンの](../../media/m365-cc-sc-search-icon.png) **[検索]** ボックスを使用して、シミュレーション名またはシミュレーションテクニックで結果 **をフィルター処理します**。 ワイルドカードはサポートされていません。
+[検索] アイコン](../../media/m365-cc-sc-search-icon.png)**の [検索**] ボックスを使用して![、**シミュレーション名** または **シミュレーション手法** で結果をフィルター処理します。 ワイルドカードはサポートされていません。
 
-[エクスポート] アイコンを ![クリックした場合。](../../media/m365-cc-sc-download-icon.png) **[レポートのエクスポート** ] ボタンをクリックすると、レポート生成の進行状況が完了の割合として表示されます。 開いたダイアログで、ファイルを開き、.csvファイルを保存し、.csvを記憶することができます。
+[エクスポート] アイコンを ![クリックした場合。](../../media/m365-cc-sc-download-icon.png) **[レポートのエクスポート]** ボタンをクリックすると、レポート生成の進行状況が完了の割合として表示されます。 開いたダイアログで、.csv ファイルを開き、.csv ファイルを保存し、選択内容を記憶することができます。
 
-#### <a name="user-coverage-tab-for-the-attack-simulation-report"></a>攻撃シミュレーション レポートの [ユーザー範囲] タブ
+#### <a name="user-coverage-tab-for-the-attack-simulation-report"></a>攻撃シミュレーション レポートの [ユーザー カバレッジ] タブ
 
-:::image type="content" source="../../media/attack-sim-report-user-coverage-view.png" alt-text="ポータルの攻撃シミュレーション レポートの [ユーザー範囲] Microsoft 365 Defender" lightbox="../../media/attack-sim-report-user-coverage-view.png":::
+:::image type="content" source="../../media/attack-sim-report-user-coverage-view.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション レポートの [ユーザー カバレッジ] タブ" lightbox="../../media/attack-sim-report-user-coverage-view.png":::
 
-[ユーザー **範囲] タブ** に、シミュレートされたユーザーとシミュレートされていないユーザー **がグラフに表示されます**。 グラフ内のデータ ポイントにカーソルを合わせると、実際の値が表示されます。
+[ **ユーザー カバレッジ** ] タブのグラフには、[ **シミュレートされたユーザー** ] と [ **シミュレートされていないユーザー] が表示されます**。 グラフ内のデータ ポイントにマウス ポインターを合わせると、実際の値が表示されます。
 
 グラフの下の詳細テーブルは、次の情報を示しています。
 
@@ -161,22 +161,22 @@ View ..**をクリックすると、[** 概要]  タブから攻撃シミュレ�
 - **シミュレーションに含まれる**
 - **最後のシミュレーションの日付**
 - **最後のシミュレーション結果**
-- **クリック数**
+- **クリックされた回数**
 - **侵害された数**
 
 使用できる列見出しをクリックすると、結果を並べ替えることができます。
 
-[列 **のカスタマイズ]** をクリックして、表示されている列を削除します。 完了したら、**[適用]** をクリックします。
+[ **列のカスタマイズ** ] をクリックして、表示される列を削除します。 完了したら、**[適用]** をクリックします。
 
-[検索![] アイコンの](../../media/m365-cc-sc-search-icon.png) **[検索]** ボックスを使用して、結果を [ユーザー名] または **[電子メール アドレス] で****フィルター処理します**。 ワイルドカードはサポートされていません。
+[検索] アイコン](../../media/m365-cc-sc-search-icon.png)**の [検索**] ボックスを使用して![、**ユーザー名** または **メール アドレス** で結果をフィルター処理します。 ワイルドカードはサポートされていません。
 
-[エクスポート] アイコンを ![クリックした場合。](../../media/m365-cc-sc-download-icon.png) **[レポートのエクスポート** ] ボタンをクリックすると、レポート生成の進行状況が完了の割合として表示されます。 開いたダイアログで、ファイルを開き、.csvファイルを保存し、.csvを記憶することができます。
+[エクスポート] アイコンを ![クリックした場合。](../../media/m365-cc-sc-download-icon.png) **[レポートのエクスポート]** ボタンをクリックすると、レポート生成の進行状況が完了の割合として表示されます。 開いたダイアログで、.csv ファイルを開き、.csv ファイルを保存し、選択内容を記憶することができます。
 
-#### <a name="training-completion-tab-for-the-attack-simulation-report"></a>攻撃シミュレーション レポートのトレーニング完了タブ
+#### <a name="training-completion-tab-for-the-attack-simulation-report"></a>攻撃シミュレーション レポートの [トレーニング完了] タブ
 
-:::image type="content" source="../../media/attack-sim-report-training-completion-view.png" alt-text="このポータルの攻撃シミュレーション レポートの [トレーニングMicrosoft 365 Defender]" lightbox="../../media/attack-sim-report-training-completion-view.png":::
+:::image type="content" source="../../media/attack-sim-report-training-completion-view.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション レポートの [トレーニング完了] タブ" lightbox="../../media/attack-sim-report-training-completion-view.png":::
 
-[トレーニング **の完了] タブ** で、グラフに[完了]、[進行中]、および [不完全なシミュレーション] の数 **が** 表示されます。 グラフ内のセクションにカーソルを合わせると、実際の値が表示されます。
+[**トレーニング完了**] タブのグラフには、**完了、****進行中**、および **不完全** なシミュレーションの数が表示されます。 グラフ内のセクションにマウス ポインターを合わせると、実際の値が表示されます。
 
 グラフの下の詳細テーブルは、次の情報を示しています。
 
@@ -186,41 +186,41 @@ View ..**をクリックすると、[** 概要]  タブから攻撃シミュレ�
 - **最後のシミュレーションの日付**
 - **最後のシミュレーション結果**
 - **完了した最新のトレーニングの名前**
-- **完了した日付**
+- **完了日**
 - **すべてのトレーニング**
 
 使用できる列見出しをクリックすると、結果を並べ替えることができます。
 
-[列 **のカスタマイズ]** をクリックして、表示されている列を削除します。 完了したら、**[適用]** をクリックします。
+[ **列のカスタマイズ** ] をクリックして、表示される列を削除します。 完了したら、**[適用]** をクリックします。
 
-[フィルター ![] アイコンをクリックします。](../../media/m365-cc-sc-filter-icon.png) **次** の値の 1 つ以上でグラフと詳細テーブルをフィルター処理します。
+[フィルター] アイコンをクリック ![します。](../../media/m365-cc-sc-filter-icon.png) **フィルター処理** して、次の 1 つ以上の値でグラフと詳細テーブルをフィルター処理します。
 
 - **Completed**
 - **処理中**
 - **All**
 
-フィルターの構成が完了したら、[適用]、[キャンセル]、または [フィルターのクリア] **をクリックします**。
+フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
 
-[検索![] アイコンの](../../media/m365-cc-sc-search-icon.png) **[検索]** ボックスを使用して、結果を [ユーザー名] または **[電子メール アドレス] で****フィルター処理します**。 ワイルドカードはサポートされていません。
+[検索] アイコン](../../media/m365-cc-sc-search-icon.png)**の [検索**] ボックスを使用して![、**ユーザー名** または **メール アドレス** で結果をフィルター処理します。 ワイルドカードはサポートされていません。
 
-[エクスポート] アイコンを ![クリックした場合。](../../media/m365-cc-sc-download-icon.png) **[レポートのエクスポート** ] ボタンをクリックすると、レポート生成の進行状況が完了の割合として表示されます。 開いたダイアログで、ファイルを開き、.csvファイルを保存し、.csvを記憶することができます。
+[エクスポート] アイコンを ![クリックした場合。](../../media/m365-cc-sc-download-icon.png) **[レポートのエクスポート]** ボタンをクリックすると、レポート生成の進行状況が完了の割合として表示されます。 開いたダイアログで、.csv ファイルを開き、.csv ファイルを保存し、選択内容を記憶することができます。
 
-#### <a name="repeat-offenders-tab-for-the-attack-simulation-report"></a>攻撃シミュレーション レポートの [繰り返し犯罪者] タブ
+#### <a name="repeat-offenders-tab-for-the-attack-simulation-report"></a>攻撃シミュレーション レポートの [違反者の繰り返し] タブ
 
-:::image type="content" source="../../media/attack-sim-report-repeat-offenders-view.png" alt-text="ポータルの [攻撃シミュレーション] レポートの [繰り返しMicrosoft 365 Defender]" lightbox="../../media/attack-sim-report-repeat-offenders-view.png":::
+:::image type="content" source="../../media/attack-sim-report-repeat-offenders-view.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション レポートの [繰り返し違反者] タブ" lightbox="../../media/attack-sim-report-repeat-offenders-view.png":::
 
-繰 _り返し犯人_ とは、連続したシミュレーションによって侵害されたユーザーです。 連続するシミュレーションの既定の数は 2 ですが、攻撃シミュレーション トレーニングの [設定] タブ **で値** を変更できます<https://security.microsoft.com/attacksimulator?viewid=setting>。
+_繰り返し違反者_ とは、連続したシミュレーションによって侵害されたユーザーです。 連続するシミュレーションの既定の数は 2 ですが、攻撃シミュレーション トレーニングの **[設定**] タブで<https://security.microsoft.com/attacksimulator?viewid=setting>値を変更できます。
 
-[繰 **り返し犯罪者] タブ** で、グラフはシミュレーションの種類別に繰り返し犯罪者データ [を整理します](attack-simulation-training.md#select-a-social-engineering-technique)。
+[ **違反者の繰り返し** ] タブで、グラフは [シミュレーションの種類](attack-simulation-training.md#select-a-social-engineering-technique)別に繰り返し違反者データを整理します。
 
 - **All**
-- **資格情報の取得**
+- **資格情報の収集**
 - **マルウェアの添付ファイル**
-- **添付ファイルのリンク**
+- **添付ファイル内のリンク**
 - **マルウェアへのリンク**
 - **ドライブバイ URL**
 
-グラフ内のデータ ポイントにカーソルを合わせると、実際の値が表示されます。
+グラフ内のデータ ポイントにマウス ポインターを合わせると、実際の値が表示されます。
 
 グラフの下の詳細テーブルは、次の情報を示しています。
 
@@ -231,77 +231,77 @@ View ..**をクリックすると、[** 概要]  タブから攻撃シミュレ�
 
 使用できる列見出しをクリックすると、結果を並べ替えることができます。
 
-[列 **のカスタマイズ]** をクリックして、表示されている列を削除します。 完了したら、**[適用]** をクリックします。
+[ **列のカスタマイズ** ] をクリックして、表示される列を削除します。 完了したら、**[適用]** をクリックします。
 
-[フィルター ![] アイコンをクリックします。](../../media/m365-cc-sc-filter-icon.png) **フィルター** を使用して、シミュレーションの種類の値の一部またはすべてによってグラフと詳細テーブルをフィルター処理します。
+[フィルター] アイコンをクリック ![します。](../../media/m365-cc-sc-filter-icon.png) **フィルター処理** して、シミュレーションの種類の値の一部または全部でグラフと詳細テーブルをフィルター処理します。
 
-- **資格情報の取得**
+- **資格情報の収集**
 - **マルウェアの添付ファイル**
-- **添付ファイルのリンク**
+- **添付ファイル内のリンク**
 - **マルウェアへのリンク**
 - **ドライブバイ URL**
 
-フィルターの構成が完了したら、[適用]、[キャンセル]、または [フィルターのクリア] **をクリックします**。
+フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
 
-[検索![] アイコン](../../media/m365-cc-sc-search-icon.png)**の [検索**] ボックスを使用して、任意の列値で結果をフィルター処理します。 ワイルドカードはサポートされていません。
+[検索] アイコン](../../media/m365-cc-sc-search-icon.png)**の [検索**] ボックスを使用して![、任意の列値で結果をフィルター処理します。 ワイルドカードはサポートされていません。
 
-[エクスポート] アイコンを ![クリックした場合。](../../media/m365-cc-sc-download-icon.png) **[レポートのエクスポート** ] ボタンをクリックすると、レポート生成の進行状況が完了の割合として表示されます。 開いたダイアログで、ファイルを開き、.csvファイルを保存し、.csvを記憶することができます。
+[エクスポート] アイコンを ![クリックした場合。](../../media/m365-cc-sc-download-icon.png) **[レポートのエクスポート]** ボタンをクリックすると、レポート生成の進行状況が完了の割合として表示されます。 開いたダイアログで、.csv ファイルを開き、.csv ファイルを保存し、選択内容を記憶することができます。
 
-## <a name="insights-and-reports-in-the-simulation-details-of-attack-simulation-training"></a>インサイトシミュレーション トレーニングのシミュレーションの詳細に関する説明とレポート
+## <a name="insights-and-reports-in-the-simulation-details-of-attack-simulation-training"></a>攻撃シミュレーション トレーニングのシミュレーションの詳細に関するインサイトとレポート
 
-[シミュレーション **] タブに**<https://security.microsoft.com>移動するには、Microsoft 365 Defender ポータルを開き、[メール & **コラボレーション**\>攻撃シミュレーション トレーニング] に **移動** し、[シミュレーション] タブ **を選択** します。攻撃シミュレーション トレーニング ページの **[シミュレーション**] タブに直接 **移動するには**、 を使用します<https://security.microsoft.com/attacksimulator?viewid=simulations>。
+**[シミュレーション**] タブに移動するには、Microsoft 365 Defender ポータルを<https://security.microsoft.com>開き、[**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング**] に移動し、[**シミュレーション**] タブを選択します。**[攻撃シミュレーション トレーニング**] ページ **の [シミュレーション**] タブに直接移動するには、.<https://security.microsoft.com/attacksimulator?viewid=simulations>
 
-一覧からシミュレーションを選択すると、詳細ページが開きます。 このページには、予想されるシミュレーションの構成設定 (状態、起動日、使用されるペイロードなど) が含まれています。
+一覧からシミュレーションを選択すると、詳細ページが開きます。 このページには、予想されるシミュレーションの構成設定 (状態、起動日、使用されたペイロードなど) が含まれています。
 
 このセクションの残りの部分では、シミュレーションの詳細ページで使用できる分析情報とレポートについて説明します。
 
 ### <a name="simulation-impact-section"></a>[シミュレーションの影響] セクション
 
-[ **シミュレーションの詳細]** ページの [シミュレーションの影響] セクションには、シミュレーションで完全に騙されたユーザーの数と、シミュレーション内のユーザーの総数が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 次に例を示します。
+シミュレーションの詳細ページの **[シミュレーションへの影響** ] セクションには、シミュレーションによって完全にだまされたユーザーの数と、シミュレーション内のユーザーの合計数が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 例:
 
-- リンク: **資格情報を入力し** 、 **資格情報を入力しなかった**。
+- リンク: **入力された資格情報** と資格情報 **を入力しませんでした**。
 
-  :::image type="content" source="../../media/attack-sim-training-sim-details-sim-impact-links.png" alt-text="リンク関連のシミュレーションの詳細の [シミュレーションの影響] セクション" lightbox="../../media/attack-sim-training-sim-details-sim-impact-links.png":::
+  :::image type="content" source="../../media/attack-sim-training-sim-details-sim-impact-links.png" alt-text="リンク関連のシミュレーションの詳細については、「シミュレーションへの影響」セクションを参照してください。" lightbox="../../media/attack-sim-training-sim-details-sim-impact-links.png":::
 
-- 添付ファイル: **開いた添付ファイル** と **添付ファイルが開かれません**。
+- 添付ファイル: **開いた添付ファイル** と **添付ファイルを開きませんでした**。
 
-  :::image type="content" source="../../media/attack-sim-training-sim-details-sim-impact-attachments.png" alt-text="添付ファイル関連のシミュレーションの詳細の [シミュレーションの影響] セクション" lightbox="../../media/attack-sim-training-sim-details-sim-impact-attachments.png":::
+  :::image type="content" source="../../media/attack-sim-training-sim-details-sim-impact-attachments.png" alt-text="添付ファイル関連のシミュレーションの詳細に関するシミュレーション影響セクション" lightbox="../../media/attack-sim-training-sim-details-sim-impact-attachments.png":::
 
-グラフ内のセクションにカーソルを合わせると、各カテゴリの実際の数値が表示されます。
+グラフ内のセクションにマウス ポインターを合わせると、各カテゴリの実際の数値が表示されます。
 
 ### <a name="all-user-activity-section"></a>[すべてのユーザー アクティビティ] セクション
 
-[ **シミュレーションの詳細] ページの** [すべてのユーザー アクティビティ] セクションには、シミュレーションの結果の数値が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 次に例を示します。
+シミュレーションの詳細ページ **の [すべてのユーザー アクティビティ** ] セクションには、シミュレーションの可能な結果の数値が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 例:
 
 - **SuccessfullyDeliveredEmail**
 - **ReportedEmail**: シミュレーション メッセージを疑わしいと報告したユーザーの数。
-- リンク:
-  - **EmailLinkClicked**: シミュレーション メッセージ内のリンクをクリックしたユーザーの数。
-  - **CredSupplied**: リンクをクリックした後、資格情報を提供したユーザーの数。
+- リンク：
+  - **EmailLinkClicked**: シミュレーション メッセージのリンクをクリックしたユーザーの数。
+  - **CredSupplied**: リンクをクリックすると、資格情報を指定したユーザーの数が表示されます。
 
     :::image type="content" source="../../media/attack-sim-training-sim-details-all-user-activity-links.png" alt-text="リンク関連のシミュレーションの詳細については、[すべてのユーザー アクティビティ] セクション" lightbox="../../media/attack-sim-training-sim-details-all-user-activity-links.png":::
 
-- 添付ファイル:
+- 添付 ファイル：
   - **AttachmentOpened**: シミュレーション メッセージで添付ファイルを開いたユーザーの数。
 
-    :::image type="content" source="../../media/attack-sim-training-sim-details-all-user-activity-attachments.png" alt-text="添付ファイル関連のシミュレーションの詳細については、[すべてのユーザー アクティビティ] セクション" lightbox="../../media/attack-sim-training-sim-details-all-user-activity-attachments.png":::
+    :::image type="content" source="../../media/attack-sim-training-sim-details-all-user-activity-attachments.png" alt-text="添付ファイル関連のシミュレーションの詳細に関する [すべてのユーザー アクティビティ] セクション" lightbox="../../media/attack-sim-training-sim-details-all-user-activity-attachments.png":::
 
-### <a name="training-completion-section"></a>[トレーニングの完了] セクション
+### <a name="training-completion-section"></a>トレーニング完了セクション
 
-[ **シミュレーションの詳細** ] ページの [トレーニングの完了] セクションには、シミュレーションに必要なトレーニングと、トレーニングを完了したユーザーの数が表示されます。
+シミュレーションの詳細ページの **[トレーニングの完了** ] セクションには、シミュレーションに必要なトレーニングと、トレーニングを完了したユーザーの数が表示されます。
 
-:::image type="content" source="../../media/attack-sim-training-sim-details-training-completed.png" alt-text="添付ファイル関連のシミュレーションの詳細のトレーニング完了セクション" lightbox="../../media/attack-sim-training-sim-details-training-completed.png":::
+:::image type="content" source="../../media/attack-sim-training-sim-details-training-completed.png" alt-text="添付ファイル関連のシミュレーションの詳細に関するトレーニング完了セクション" lightbox="../../media/attack-sim-training-sim-details-training-completed.png":::
 
 ## <a name="recommended-actions-section"></a>[推奨されるアクション] セクション
 
-[ **シミュレーションの詳細]** ページの [推奨されるアクション] セクションには、 [Microsoft Secure Score](../defender/microsoft-secure-score.md) からの推奨アクションと、そのアクションがセキュリティで保護されたスコアに与える影響が表示されます。 これらの推奨事項は、シミュレーションで使用されたペイロードに基づいており、ユーザーと環境の保護に役立ちます。 リストから **改善アクションを** 選択すると、提案されたアクションを実装する場所に移動します。
+シミュレーションの詳細ページの **[推奨されるアクション]** セクションには、 [Microsoft Secure Score](../defender/microsoft-secure-score.md) からの推奨事項アクションと、アクションがセキュリティスコアに与える影響が表示されます。 これらの推奨事項は、シミュレーションで使用されたペイロードに基づいており、ユーザーと環境を保護するのに役立ちます。 一覧から **[改善] アクション** を選択すると、推奨されるアクションを実装する場所に移動します。
 
-:::image type="content" source="../../media/attack-sim-training-sim-details-recommended-actions.png" alt-text="攻撃シミュレーション トレーニングの [推奨事項のアクション] セクション" lightbox="../../media/attack-sim-training-sim-details-recommended-actions.png":::
+:::image type="content" source="../../media/attack-sim-training-sim-details-recommended-actions.png" alt-text="攻撃シミュレーション トレーニングに関する推奨事項アクション セクション" lightbox="../../media/attack-sim-training-sim-details-recommended-actions.png":::
 
 ## <a name="related-links"></a>関連リンク
 
 [攻撃シミュレーション トレーニングの使用を開始する](attack-simulation-training-get-started.md)
 
-[フィッシング攻撃シミュレーションの作成](attack-simulation-training.md)
+[フィッシング攻撃シミュレーションを作成する](attack-simulation-training.md)
 
-[ユーザーをトレーニングするペイロードを作成する](attack-simulation-training-payloads.md)
+[ユーザーをトレーニングするためのペイロードを作成する](attack-simulation-training-payloads.md)
