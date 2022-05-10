@@ -577,6 +577,8 @@
   items:
     - name: データを統制する
       href: manage-data-governance.md
+    - name: データ ガバナンス ソリューションをデプロイする
+      href: data-governance-solution.md
     - name: 保持と削除について
       items:
         - name: 保持ポリシーと保持ラベルの詳細
