@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bf3095b9178b4ff2e71d4ee5f652d9316f233746
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a3d7548dc71c3a9d588d2a77fae5c4ed71f139f4
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664592"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302319"
 ---
 # <a name="enable-corelight-data-integration"></a>Corelight データ統合
 
@@ -67,52 +67,41 @@ Corelight 統合を有効にするには、次の手順を実行する必要が�
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>手順 3: データをMicrosoft 365 Defenderに送信するように Corelight アプライアンスを構成する
 
 > [!NOTE]
->  この統合は、Corelight Sensor ソフトウェア v24 以降で公開されます。 
-
-v23 または v22.1 でプレビューするには、GUI で構成セクションを有効にするために実行 `corelight-client configuration update --enable.adfiot 1` する必要があります。
-
-これに加えて、GUI 検証では、ブローカーがすべての v23 リリースの構成セクションで構成されている必要があります。  指定したブローカーは必須ですが、実際には使用されません。 次の手順に従ってMicrosoft 365 Defenderにデータを送信できるようにする前に _、kafka ブローカー_ フィールドに入力`127.0.0.1:1234`して検証を成功させます。
-
-> [!NOTE]
+> この統合は、Corelight Sensor ソフトウェア v24 以降で利用できます。
+> 
 > ソリューションを機能させるには、センサーが Defender クラウド サービスと Corelight クラウド サービスの両方に到達するには、インターネット接続が必要です。
 
-#### <a name="enabling-in-the-corelight-sensor-gui"></a>Corelight センサー GUI での有効化
+#### <a name="enable-the-integration-in-the-corelight-web-interface"></a>Corelight Web インターフェイスで統合を有効にする
 
-1. [Corelight Sensor GUI の構成] セクションで、[ **センサー** \> **のエクスポート**] を選択します。
-2. 一覧から **[KAFKA にエクスポート] に** 移動し、スイッチを選択してオンにします。
+1. Corelight Web インターフェイスで、 **センサー** \> **のエクスポート** に移動します。
 
-   :::image type="content" source="images/exporttokafka.png" alt-text="kafka エクスポート" lightbox="images/exporttokafka.png":::
+   :::image type="content" source="images/exporttodefender.png" alt-text="kafka エクスポート" lightbox="images/exporttodefender.png":::
 
-3. 次 **に、AZURE DEFENDER FOR IOT へのエクスポートを** 有効にし、手順 1 で説明されているテナント ID を [TENANT ID] フィールドに入力します。
+2. **Microsoft Defender へのエクスポートを** 有効にします。
+3. Microsoft 356 Defender テナント ID を入力します。
+4. 必要に応じて、次のことも行えます。
+    - **Zeek ログを除外に設定します**。 含める必要があるログの最小セットは、dns、conn、files、http、ssl、ssh、x509、snmp、smtp、ftp、sip、dhcp、および通知です。
+    - **Microsoft Defender ログ フィルター** を作成することを選択します。
+5. **[Apply Changes]\(変更の適用\)** を選択します。
 
-   :::image type="content" source="images/exporttodiot.png" alt-text="iot エクスポート" lightbox="images/exporttodiot.png":::
+#### <a name="enable-the-integration-in-the-corelight-client"></a>corelight-client で統合を有効にする
 
-4. **[Apply Changes]\(変更の適用\)** を選択します。
+1. corelight-client で次のコマンドを使用して **Microsoft Defender へのエクスポート** を有効にします。
 
-   :::image type="content" source="images/corelightapply.png" alt-text="[変更の適用] アイコン" lightbox="images/corelightapply.png":::
+    ``` command
+    corelight-client configuration update \
+    --bro.export.defender.enable True
+    ```
 
-> [!NOTE]
-> Kafka の構成オプション (ログの除外とフィルターを除く) は変更しないでください。 加えられた変更は無視されます。
+2. テナント ID を設定する
 
-#### <a name="enabling-in-the-corelight-client"></a>corelight-client での有効化
+3. 必要に応じて、次のコマンドを使用して特定のログを除外したり、Microsoft Defender ログ フィルターを作成したりできます。 含める必要があるログの最小セットは、dns、conn、files、http、ssl、ssh、x509、snmp、smtp、ftp、sip、dhcp、および通知です。
 
-CORElight-client で次のコマンドを使用して **、KAFKA へのエクスポート** と **AZURE DEFENDER FOR IOT へのエクスポート** を有効にすることができます。
-
-`corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id <your tenant>`.
-
-> [!IMPORTANT]
-> Kafka エクスポートを既に使用している場合は、Corelight サポートに連絡して別の構成を行います。
-
-最小限のログセットのみを送信するように構成するには:
-
-1. Corelight Sensor GUI で、Kafka セクションに移動します。
-2. 除外する **Zeek ログに移動する**
-3. **すべて** 選択
-4. 次に、次のログの横にある **[x** ] を選択して、Microsoft に引き続きフローされるようにします。  
-    `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
-5. **[変更の適用**] を選択する
-
-Microsoft にフローするログの一覧は、時間の経過と共に拡張される可能性があります。
+   ``` command
+     corelight-client configuration update \
+    --bro.export.defender.exclude=<logs_to_exclude> \
+    --bro.export.defender.filter=<logs_to_filter>
+   ```
 
 ## <a name="see-also"></a>関連項目
 

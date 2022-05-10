@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) とDefender for Office 365セキュリティ設定のベスト プラクティスは何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳しくしたい場合は、何を使用する必要がありますか? また、Defender for Office 365も使用すると、どのような追加機能が得られますか?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 72d4f64ca00defe26ddaff7fe27d641cb65f13be
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: c6e2b52c9dbde60dfb554dd92c8a0cae2ba05ced
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130519"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302290"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -74,11 +74,11 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |**テスト モード** (_TestModeAction_)|**なし**|**なし**|**なし**|この設定は ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシー」セクションの ASF 設定](#asf-settings-in-anti-spam-policies) を参照してください。|
 |**アクション**||||**[検疫メッセージ**] を選択すると、検疫 **ポリシーの選択** ボックスを使用できます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが許可する操作を定義します。 <br/><br/> 新しいスパム対策ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、特定の判定によって検疫されたメッセージの履歴機能を定義することを意味します (AdminOnlyAccessPolicy for **High confidence フィッシング**;他のすべての場合は DefaultFullAccessPolicy)。 <br/><br/> 管理者は、ユーザーに対してより制限の厳しい機能または制限の少ない機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**スパム** 検出アクション <br/><br/> _SpamAction_|**迷惑メール フォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**迷惑メール フォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**検疫メッセージ** <br/><br/> `Quarantine`||
-|**高信頼スパム** 検出アクション <br/><br/> _HighConfidenceSpamAction_|**検疫メッセージ** <br/><br/> `MoveToJmf`|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`||
-|**フィッシング検出** アクション <br/><br/> _PhishSpamAction_|**検疫メッセージ** <br/><br/> `MoveToJmf`|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`||
+|**高信頼スパム** 検出アクション <br/><br/> _HighConfidenceSpamAction_|**迷惑メール フォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`||
+|**フィッシング検出** アクション <br/><br/> _PhishSpamAction_|**迷惑メール フォルダーにメッセージを移動する**<sup>\*</sup> <br/><br/> `MoveToJmf`|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`|<sup>\*</sup> 既定値は、既定のスパム対策ポリシーと PowerShell で作成した新しいスパム対策ポリシーの [ **迷惑メールにメッセージを移動] フォルダー** です。 既定値は、Microsoft 365 Defender ポータルで作成した新しいスパム対策ポリシーの **検疫メッセージ** です。|
 |**高信頼フィッシング** 検出アクション <br/><br/> _HighConfidencePhishAction_|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`||
 |**一括** 検出アクション <br/><br/> _BulkSpamAction_|**迷惑メール フォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**迷惑メール フォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**検疫メッセージ** <br/><br/> `Quarantine`||
-|**この数日間、検疫でスパムを保持する** <br/><br/> _QuarantineRetentionPeriod_|15 日間<sup>\*</sup>|30 日間|30 日間|<sup>\*</sup> 既定値は、既定のスパム対策ポリシーと、PowerShell で作成した新しいスパム対策ポリシーで 15 日間です。 Microsoft 365Defender ポータルで作成する新しいスパム対策ポリシーの規定値は30日です。 <br/><br/> この値は、フィッシング対策ポリシーによって検疫されたメッセージにも影響します。 詳細については、「 [EOP で検疫された電子メール メッセージ](quarantine-email-messages.md)」を参照してください。|
+|**この数日間、検疫でスパムを保持する** <br/><br/> _QuarantineRetentionPeriod_|15 日間<sup>\*</sup>|30 日間|30 日間|<sup>\*</sup> 既定値は、既定のスパム対策ポリシーと PowerShell で作成した新しいスパム対策ポリシーで 15 日間です。 Microsoft 365Defender ポータルで作成する新しいスパム対策ポリシーの規定値は30日です。 <br/><br/> この値は、フィッシング対策ポリシーによって検疫されたメッセージにも影響します。 詳細については、「 [EOP で検疫された電子メール メッセージ](quarantine-email-messages.md)」を参照してください。|
 |**スパムの安全性に関するヒントを有効にする** <br/><br/> _InlineSafetyTipsEnabled_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
 |フィッシング メッセージに対してゼロ時間の自動消去 (ZAP) を有効にする <br/><br/> _PhishZapEnabled_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
 |スパム メッセージの ZAP を有効にする <br/><br/> _SpamZapEnabled_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
@@ -163,6 +163,8 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 
 これらの設定の詳細については、「 [スプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。 これらの設定を構成するには、「 [EOP でフィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)」を参照してください。
 
+スプーフィング設定は相互に関連していますが、**最初の連絡先の表示安全性のヒント** 設定はスプーフィング設定に依存しません。
+
 |セキュリティ機能名|既定値|Standard|Strict|コメント|
 |---|:---:|:---:|:---:|---|
 |**フィッシングしきい値&保護**|||||
@@ -224,18 +226,6 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 #### <a name="eop-anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365の EOP フィッシング対策ポリシー設定
 
 これらは、 [EOP のスパム対策ポリシー設定で使用できる設定と](#eop-anti-spam-policy-settings)同じです。
-
-スプーフィング設定は相互に関連していますが、**最初の連絡先の表示安全性のヒント** 設定はスプーフィング設定に依存しません。
-
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
-|---|:---:|:---:|:---:|---|
-|**フィッシングしきい値&保護**|||||
-|**スプーフィング インテリジェンスを有効にする** <br/><br/> _EnableSpoofIntelligence_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
-|**アクション**|||||
-|**メッセージがスプーフィングとして検出された場合** <br/><br/> _AuthenticationFailAction_|**受信者の迷惑メール フォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**受信者の迷惑メール フォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**メッセージを検疫する** <br/><br/> `Quarantine`|この設定は、スプーフィング インテリジェンス分析情報に示すように自動的にブロックされたス [プーフィング](learn-about-spoof-intelligence.md) された送信者、または [テナント許可/ブロック リスト](tenant-allow-block-list.md)で手動でブロックされた送信者に適用されます。 <br/><br/> **[メッセージの検疫**] を選択した場合、[**検疫ポリシーの適用**] ボックスを使用して、検疫済みメッセージに対してユーザーが許可する操作を定義する検疫ポリシーを選択できます。 新しいフィッシング対策ポリシーを作成する場合、空白の値は、スプーフィング検疫済みメッセージの履歴機能を定義するために既定の検疫ポリシーが使用されていることを意味します (DefaultFullAccessPolicy)。 <br/><br/> 管理者は、検疫内のこれらのメッセージに対して許可される受信者を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
-|**最初の連絡先安全性のヒントを表示する** <br/><br/> _EnableFirstContactSafetyTips_|未選択 <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|詳細については、「[First contact 安全性のヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)」を参照してください。|
-|**スプーフィングの認証されていない送信者の表示 (?)** <br/><br/> _EnableUnauthenticatedSender_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|Outlookの送信者の写真に疑問符 (?) を追加して、偽装された送信者を識別します。 詳細については、「 [認証されていない送信者](set-up-anti-phishing-policies.md#unauthenticated-sender)」を参照してください。|
-|**"via" タグを表示する** <br/><br/> _EnableViaTag_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|DKIM 署名または **MAIL FROM** アドレスのドメインと異なる場合は、from アドレスに via タグ (fabrikam.com 経由で chris@contoso.com) を追加します。 <br/><br/> 詳細については、「 [認証されていない送信者](set-up-anti-phishing-policies.md#unauthenticated-sender)」を参照してください。|
 
 ### <a name="safe-attachments-settings"></a>セーフ添付ファイルの設定
 

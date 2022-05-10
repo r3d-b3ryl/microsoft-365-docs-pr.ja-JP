@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b428a1c8131286f04456a217b284a9bc0fe17413
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 4c4b4e1310d56969b52de11ba51dd0f5f5ea62f9
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285611"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302372"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting プレビュー
 
@@ -41,13 +41,13 @@ Microsoft Defender Experts for Hunting (Defender Experts for Hunting) は、セ�
 
 [この短いビデオでは](https://youtu.be/4t1JgE0X0jc) 、Microsoft Defender Experts for Hunting を使用して、環境内の最新の高度な脅威を追跡する方法について詳しく説明します。
 
-Defender Experts for Hunting は、Microsoft 365 Defender ポータルから直接、ターゲットを絞った攻撃通知を提供します。 これらの通知は、組織のエンドポイント、電子メール、クラウド アプリ、ID を保護するのに役立ちます。 また、エキスパート オンデマンドにもアクセスできます。これにより、Microsoft 365 Defender ポータルのボタンをクリックして、組織が直面している脅威に関する専門家のアドバイスを受けることができます。 専門家に相談し、組織が直面する脅威について支援を求めることができます。 このプレビューでは、無料でサービスを試し、次の機能を利用できます。
+Defender Experts for Hunting は、Microsoft 365 Defender ポータルから直接、ターゲットを絞った攻撃通知を提供します。 これらの通知は、組織のエンドポイント、電子メール、クラウド アプリ、ID を保護するのに役立ちます。 また、Microsoft 365 Defender ポータルのボタンをクリックして、組織が直面している脅威に関する専門家のアドバイスを受け取ることができるエキスパート オン デマンドへのアクセスも受け取ります。 専門家に相談し、組織が直面する脅威について支援を求めることができます。 このプレビューでは、無料でサービスを試し、次の機能を利用できます。
 
-- **脅威の捜索と分析** – Defender Experts for Hunting は、高度な脅威を明らかにし、人間の敵対者やハンズオンキーボード攻撃に関連する悪意のあるアクティビティの範囲と影響を特定するために、より深く見えます。 
-- **ターゲット攻撃通知** – 通知はMicrosoft 365 Defenderのインシデントとして表示され、スコープ、入力方法、修復手順に関する特定の情報を使用して、セキュリティ操作のインシデント対応を改善するのに役立ちます。 
-- **オンデマンドのエキスパート** – 特定のインシデント、国のアクター、または攻撃ベクトルについて脅威の専門家に相談します。 
-- **Hunting のトレーニング済み AI** - ハンティングの Defender エキスパートは、脅威の検出と優先順位付けを改善するために使用する自動化されたツールに学習を取り戻します。 
-- **レポート** – 検出した内容、検出した内容、推奨された内容をまとめた対話型レポート
+- **脅威の捜索と分析** – Defender Experts for Hunting は、高度な脅威を明らかにし、人間の敵対者やハンズオンキーボード攻撃に関連する悪意のあるアクティビティの範囲と影響を特定するために、より深く見えます。
+- **ターゲット攻撃通知** – 通知はMicrosoft 365 Defenderのインシデントとして表示され、スコープ、入力方法、修復手順に関する特定の情報を使用して、セキュリティ操作のインシデント対応を改善するのに役立ちます。
+- **オンデマンドのエキスパート** – 特定のインシデント、国のアクター、または攻撃ベクトルについて脅威の専門家に相談します。
+- **Hunting のトレーニング済み AI** - ハンティングの Defender エキスパートは、脅威の検出と優先順位付けを改善するために使用する自動化されたツールに学習を取り戻します。
+- **レポート** – 検出した内容、検出した内容、推奨された内容をまとめた対話型レポート。
 
 ## <a name="apply-for-microsoft-defender-experts-for-hunting-service-preview"></a>ハンティング サービス プレビュー用の Microsoft Defender エキスパートを申請する
 
@@ -57,10 +57,7 @@ Defender Experts for Hunting は、Microsoft 365 Defender ポータルから直�
 まだ行っていない場合は、Defender Experts for Hunting に申請できます。
 
 1. [ [**適用**](https://aka.ms/expandedMTEprev)] をクリックします。 アプリケーション プロセスを登録して完了できるのは、グローバル管理者のみです。 グローバル管理者でない場合は、グローバル管理者に問い合わせて、アプリケーション フォームに入力してください。
-2. 会社の **メール ID** と **テナント ID を** 入力します。
-    - テナント ID を見つけるには、[テナント **ID の場所**] をクリックして、Microsoft 365 Defender ポータルに移動します。
-    - ナビゲーション ウィンドウで、**設定 > Defender 365** に移動してテナント ID を表示します。
-    - テナント ID をコピーし、フォームに貼り付けます。
+2. 会社の **メール ID を入力します**。
 3. **[送信]** を選択します。 アプリケーションが受信されたことを示す確認メッセージが表示されます。  
 4. 承認されると、登録するメールが届きます。
 
@@ -71,14 +68,14 @@ Defender Experts for Hunting は、Microsoft 365 Defender ポータルから直�
 1. 受信したアプリケーション受け入れメールで、[ **登録**] をクリックします。 これにより、Microsoft 365 アカウントへのサインイン ダイアログ ボックスが開きます。
 2. グローバル管理者に会社の登録を依頼します (リンクは、取得するメールに表示されます)。 サインイン。 **設定** ページが開きます。
 3. **Microsoft Defender エキスパート設定 >** に移動します。
-4. **Microsoft Defender エキスパート for Hunting プレビューの使用条件をお** 読みください。 質問や懸念点がある場合は、defenderexpertsphelp@microsoft.com の Microsoft Defender エキスパート チームにお問い合わせください。
+4. **Microsoft Defender エキスパート for Hunting プレビューの使用条件をお** 読みください。 質問や懸念点がある場合は、defenderexpertshelp@microsoft.com の Microsoft Defender エキスパート チームにお問い合わせください。
 5. [ **同意]** をクリックして、使用条件に同意します。
-6. [Microsoft 365 管理センター](https://www.microsoft.com/en-us/microsoft-365/business/office-365-administration)で無料のプレビューを入手します。 注文は、使用条件に同意した後にのみ行うことができます。 [ **ライセンスの取得** ] を選択して、管理センターでプロビジョニングを開始します。 これにより、注文の詳細を確認するためにチェックアウト ページに移動します。 無料プレビューを開始してから 6 か月も経たないうちに、サービスが商用化される可能性があります。  Microsoft は、その時点でプレビューを終了する権利を留保します。
+6. [Microsoft 365 管理センター](https://www.microsoft.com/microsoft-365/business/office-365-administration)で無料のプレビューを入手します。 注文は、使用条件に同意した後にのみ行うことができます。 [ **ライセンスの取得** ] を選択して、管理センターでプロビジョニングを開始します。 これにより、注文の詳細を確認するためにチェックアウト ページに移動します。 無料プレビューを開始してから 6 か月も経たないうちに、サービスが商用化される可能性があります。  Microsoft は、その時点でプレビューを終了する権利を留保します。
 7. **[チェックアウト] ページで**、[**注文**] を選択します。  
 
 ## <a name="start-using-your-microsoft-defender-experts-for-hunting-service-preview"></a>ハンティング サービス プレビュー用の Microsoft Defender エキスパートの使用を開始する
 
-注文して確認を受け取ってから約 6 時間後に、Microsoft Defender エキスパート プレビューが設定され、使用できる状態であることを示すウェルカム メールが届きます。 Microsoft の専門家は、お客様の環境内の高度な脅威の捜索をすぐに開始します。
+注文を行って確認を受け取ってから約 6 時間後に、Microsoft Defender エキスパート プレビューが設定され、使用する準備ができていることを示すウェルカム メールが届きます。 Microsoft の専門家は、お客様の環境内の高度な脅威の捜索をすぐに開始します。
 
 ## <a name="receive-targeted-attack-notification"></a>ターゲットを絞った攻撃通知を受け取る
 

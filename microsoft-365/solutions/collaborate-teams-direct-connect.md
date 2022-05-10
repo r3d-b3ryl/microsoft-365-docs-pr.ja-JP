@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーとのコラボレーションのために、Microsoft Teams で共有チャネルを有効にする方法について説明します。
-ms.openlocfilehash: 392b2326e3166b5f813f96edc2a21c360919cfa6
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: c45d345a38b1ba9d045d6984feda614513512021
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217482"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302152"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>共有チャネルで外部の参加者と共同作業する
 
@@ -36,6 +36,13 @@ Teams で別の組織と共有チャネルを有効にする場合:
 
 > [!NOTE]
 > 共有チャネルはプレビュー中で、[Microsoft Teams パブリック プレビュー](/MicrosoftTeams/public-preview-doc-updates)が構成されている必要があります。 チャネルを他の組織と共有する場合は、それらの組織でも Teams パブリック プレビューが構成されている必要があります。
+
+## <a name="video-demonstration"></a>ビデオ デモンストレーション
+
+このビデオは、このドキュメントで説明されている構成手順を示しています。
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4WRMx?autoplay=false]
 
 ## <a name="enable-shared-channels-in-teams"></a>Teams で共有チャネルを有効にする
 

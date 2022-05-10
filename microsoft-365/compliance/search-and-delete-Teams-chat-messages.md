@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 電子情報開示 (プレミアム) と Microsoft Graph エクスプローラーを使用して、Microsoft Teamsでチャット メッセージを検索および消去し、Teamsのデータ流出インシデントに対応します。
-ms.openlocfilehash: 2a1c0bcda3c406f33edcacd77aba359437655ced
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: c2202c45cc5e3caaa0af429439d44b1dfed3ac86
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294575"
+ms.locfileid: "65302074"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Teamsでのチャット メッセージの検索と消去 (プレビュー)
 
@@ -103,6 +103,9 @@ Teams チャット会話の最も包括的なコレクション (1 対 1 とグ�
 3. コレクションから返されたチャット メッセージを消去します。
 
 Graph エクスプローラーの使用については、「[Graph エクスプローラーを使用して Microsoft Graph API を試す」を](/graph/graph-explorer/graph-explorer-overview)参照してください。
+
+> [!IMPORTANT]
+> Microsoft Graph の /beta バージョンの API は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。 API が v1.0 で使用できるかどうかを確認するには、バージョン セレクターを使用します。
 
 > [!IMPORTANT]
 > Graph エクスプローラーでこれら 3 つのタスクを実行するには、eDiscovery.Read.All と eDiscovery.ReadWrite.All のアクセス許可に同意する必要があります。 詳細については、「[Graph エクスプローラーの操作](/graph/graph-explorer/graph-explorer-features#consent-to-permissions)」の「アクセス許可に同意する」セクションを参照してください。

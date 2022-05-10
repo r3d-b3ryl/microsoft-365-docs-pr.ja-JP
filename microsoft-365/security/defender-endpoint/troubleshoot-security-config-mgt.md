@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 8d18d0dd193e720f7f91ae0c3a9d384a3715be82
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: e7b9e757f15663338f2e12c645cc3cb0b63ef34b
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467931"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302247"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointの Security Management に関連するオンボードの問題のトラブルシューティング
 
@@ -126,8 +126,8 @@ AADまたは MEM でオンボードされたデバイスを識別できず、登
 |`15`|テナントの不一致|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、Microsoft Defender for Endpoint テナント ID がAzure Active Directoryテナント ID と一致しないため、セキュリティ構成管理フローでエラーが発生しました。 Defender for Endpoint テナントのAzure Active Directoryテナント ID が、ドメインの SCP エントリのテナント ID と一致していることを確認します。 詳細については、「[Microsoft Defender for Endpointの Security Management に関連するオンボードの問題のトラブルシューティング」を参照](troubleshoot-security-config-mgt.md)してください。|
 |`16`,`17`|ハイブリッド エラー - サービス接続ポイント|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、サービス接続ポイント (SCP) レコードが正しく構成されていないため、デバイスをAzure ADに参加できませんでした。 これは、SCP が DRS Enterprise参加するように構成されていることが原因である可能性があります。 SCP レコードがAADを指していることを確認し、SCP が次のベスト プラクティスに従って構成されていることを確認します。 詳細については、「 [サービス接続ポイントの構成」を](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point)参照してください。|
 |`18`|証明書エラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、デバイス証明書エラーが原因で、セキュリティ構成管理フローにエラーが発生しました。 デバイス証明書は別のテナントに属しています。 [信頼された証明書プロファイル](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles)を作成するときにベスト プラクティスに従っていることを確認します。|
-|`36`|LDAP API エラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、セキュリティ構成管理フローでエラーが発生しました。 ネットワーク トポロジを確認し、ハイブリッド参加要求を完了するために LDAP API を使用できることを確認します。|
-|`37`|オンプレミス同期の問題|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、セキュリティ構成管理フローでエラーが発生しました。 後でもう一度お試しください。 それでも問題が解決しない場合は、「[Azure AD Connect同期を使用したオブジェクト同期のトラブルシューティング](/azure/active-directory/hybrid/tshoot-connect-objectsync)」を参照してください。|
+|`36`|LDAP API エラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、AAD Connectの構成ミスにより、セキュリティ構成管理フローにエラーが発生しました。 デバイスがAADに登録できない原因を特定するには、[デバイス登録のトラブルシューティング ツール](/samples/azure-samples/dsregtool/dsregtool)の実行を検討してください。 Windows Server 2012 R2 の場合は、[専用のトラブルシューティング手順を実行します](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy)。  |
+|`37`|オンプレミス同期の問題|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、AAD Connectの構成ミスにより、セキュリティ構成管理フローにエラーが発生しました。 デバイスがAADに登録できない原因を特定するには、[デバイス登録のトラブルシューティング ツール](/samples/azure-samples/dsregtool/dsregtool)の実行を検討してください。 Windows Server 2012 R2 の場合は、[専用のトラブルシューティング手順を実行します](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy)。 |
 |`38`,`41`|DNS エラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、DNS エラーが原因で、セキュリティ構成管理フローにエラーが発生しました。 デバイスのインターネット接続または DNS 設定を確認します。 無効な DNS 設定がワークステーション側にある可能性があります。 Active Directory では、ドメイン DNS を使用して適切に動作する必要があります (ルーターのアドレスは使用しません)。 詳細については、「[Microsoft Defender for Endpointの Security Management に関連するオンボードの問題のトラブルシューティング」を](troubleshoot-security-config-mgt.md)参照してください。|
 |`40`|クロック同期の問題|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、セキュリティ構成管理フローでエラーが発生しました。 クロックが正しく設定され、エラーが発生したデバイスで同期されていることを確認します。|
 
