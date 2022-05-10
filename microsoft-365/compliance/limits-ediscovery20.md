@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365の電子情報開示 (プレミアム) ソリューションで有効なケースの制限、インデックス作成の制限、検索制限について説明します。
-ms.openlocfilehash: 3d0204eb452b669937d30fe5519e5af073b64d6d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7aa9dcd65cb047914a8b1b68de3340bb9d7b728f
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099215"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294618"
 ---
 # <a name="limits-in-ediscovery-premium"></a>電子情報開示の制限 (プレミアム)
 
@@ -64,7 +64,8 @@ ms.locfileid: "65099215"
 |1 つのファイルから抽出された最大文字数。|1,000 万 <sup>4</sup>|
 |1 つのファイルの最大サイズ。|150 <sup>MB4</sup>|
 |ドキュメント内の埋め込み項目の最大深度。|<sup>254</sup>|
-|光学式文字認識 (OCR) によって処理されるファイルの最大サイズ。|24 <sup>MB4</sup> <br/>  
+|光学式文字認識 (OCR) によって処理されるファイルの最大サイズ。|24 <sup>MB4</sup> <br/> |
+|高度なインデックス作成の最大スループット | 1 時間あたり 2 GB |
 
 ## <a name="search-limits"></a>検索の制限
 

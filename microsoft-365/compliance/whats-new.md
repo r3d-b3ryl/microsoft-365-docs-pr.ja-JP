@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合でも、フィードバックに基づいて既存の機能を更新する場合でも、更新されたドキュメントを展開する場合でも、Microsoft 365は絶えず変化するコンプライアンス環境を把握するのに役立ちます。 今月までの内容を確認してください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b79015ce0ca55bf9a74b6acac8f38f09b9e5e984
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3bfa6ce581b0bd4846ebe27b95cf27d1228b10b2
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100547"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294619"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>Microsoft Purview の最新情報
 
@@ -44,6 +44,81 @@ ms.locfileid: "65100547"
 > Microsoft 365[ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)にアクセスして、起動、ロールアウト、開発中、取り消し済み、または以前にリリースされたMicrosoft 365機能について説明します。
 
 ## <a name="april-2022"></a>2022 年 4 月
+
+### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
+
+- [通信コンプライアンス ポリシーの作成と管理](communication-compliance-policies.md) - Microsoft Teams統合のための新しいユーザー報告メッセージ ポリシー機能に関するガイダンスが追加されて更新されました。
+- [通信コンプライアンスの概要](communication-compliance-configure.md) - F5 サブスクリプションとライセンスの明確化を追加するように更新されました。
+
+### <a name="compliance-manager"></a>コンプライアンス マネージャー
+
+- [Compliance Manager テンプレートの一覧](compliance-manager-templates-list.md) - ページに 6 つの新しいテンプレートとナビゲーション リンクを追加して、テンプレート カテゴリに簡単にジャンプできるようになりました。
+- [コンプライアンス マネージャーの概要](compliance-manager.md) - 更新された製品の概要ビデオ。
+
+### <a name="compliance-offerings--service-assurance"></a>コンプライアンス オファリング&サービス アシュアランス
+
+- [コンプライアンス オファリング](/compliance/regulatory/offering-home) - VPATS、SOC、ISO、FedRAMP オファリングのサービス カバレッジと監査レポートの更新。
+
+### <a name="data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理
+
+- [Microsoft Purview を使用してデータを管理](manage-data-governance.md) する - データ コネクタはこのページから削除され、レコード管理ソリューションはピア製品として表示されます。
+- [アイテム保持ポリシーと保持ラベルの一般的な設定](retention-settings.md) - 新しく設計された保持ラベル ウィザードの新しいナビゲーションと UI 参照が反映されます。
+- [保持ラベルを使用してレコードを宣言](declare-records.md)し、[レコードのバージョン管理を使用してSharePointまたはOneDriveに格納されているレコードを更新](record-versioning.md)します。プレビュー段階で現在展開されている新しい "既定でこのレコードのロックを解除する" ラベル設定に関する新しい情報。
+- [ファイル プランを使用して保持ラベルを作成および管理](file-plan-manager.md#information-about-the-label-properties-for-import)  します。インポート セクションでは、インポートで現在サポートされていないラベル設定が開示されるようになりました (既定では、このレコードを多段階で確認してロック解除します)。
+
+### <a name="data-loss-prevention"></a>データ損失防止
+
+- macOS デバイスオンボード GA 用に更新された記事:
+  - [エンドポイント DLP について学習する](endpoint-dlp-learn-about.md)
+  - [エンドポイント データ損失防止の設定を構成する](dlp-configure-endpoint-settings.md)
+  - [データ損失防止 (DLP) の計画](dlp-overview-plan-for-dlp.md)
+  - [データ損失防止ポリシーリファレンス](dlp-policy-reference.md)
+  - [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md)
+- [DLP ポリシーの条件、例外、アクション](dlp-conditions-and-exceptions.md) - 件名の変更アクションに関するガイダンスが追加されました。
+- [データ損失防止ポリシー リファレンス](dlp-policy-reference.md) - GA SPO/ODB 述語。エンドポイントでのルール処理に関する新しいガイダンスを使用して更新されました。
+
+### <a name="device-onboarding"></a>デバイスオンボーディング
+
+- macOS デバイスオンボード GA 用に更新された記事:
+  - [macOS デバイスをMicrosoft 365の概要にオンボードする](device-onboarding-macos-overview.md)
+  - [Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-intune-mde.md)
+  - [Intune を使用した Microsoft Purview ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-intune.md)
+  - [Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-jamfpro-mde.md)
+  - [JAMF Proを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする](device-onboarding-offboarding-macos-jamfpro.md)
+
+### <a name="information-barriers"></a>情報バリア
+
+- [SharePointで情報バリアを使用する](/sharepoint/information-barriers) - SharePointで新しいプライベート チャネルのサポートに関するガイダンスを追加しました。
+- [情報バリア ポリシーを管理する](information-barriers-edit-segments-policies.md) - セグメントとポリシー/セグメントをまとめて削除するためのガイダンスを追加しました。
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [プライバシー リスク管理ポリシー](/privacy/priva/risk-management) - 新しいページ、重要な更新プログラム、ポリシー コンテンツの再構築。以下の詳細:
+  - [プライバシー リスク管理ポリシー](/privacy/priva/risk-management-policies) - すべてのポリシーに適用されるポリシーのセットアップと管理に関する重要な詳細を追加しました。3 つのポリシーの種類ごとに新しいページへのリンクが追加されました。
+  - [データの露出過剰ポリシー - ポリシー](/privacy/priva/risk-management-policy-data-overexposure) の必要性と用途を明確にします。では、既定の作成の既定の設定と、設定をカスタマイズするための詳細な手順について説明します。
+  - [データ転送ポリシー](/privacy/priva/risk-management-policy-data-transfer) - ポリシーが組織外の転送を検出するための新しい条件を強調表示します。ポリシーの必要性と用途を明確にします。では、既定の作成の既定の設定と、設定をカスタマイズするための詳細な手順について説明します。
+  - [データ最小化ポリシー - ポリシー](/privacy/priva/risk-management-policy-data-minimization) の必要性と用途を明確にします。では、既定の作成の既定の設定と、設定をカスタマイズするための詳細な手順について説明します。
+  - [アラートを調査して修復](/privacy/priva/risk-management-alerts) する - 読みやすくするために詳細と書式設定の変更を明確にしました。
+  - [ユーザー通知](/privacy/priva/risk-management-notifications) - 電子メール通知コンテンツをプレビューおよびカスタマイズするための機能に関する情報を追加しました。
+- [サブジェクト権限要求を作成](/privacy/priva/subject-rights-requests-create) する - 機能を調べる既定の設定を使用して、最初の要求の開始に関するセクションを追加しました。
+- [サブジェクト権利要求のデータを確認](/privacy/priva/subject-rights-requests-data-review) する - 確認する優先度項目とその検索方法を説明する詳細と、この分析情報を取得するためにデータ一致を設定する必要性を追加しました。
+- [個人データを見つけて視覚化](/privacy/priva/priva-data-profile) する - "Key insights" の下にある "データ主体のコンテンツが最も多いアイテム" の分析情報を受け取るために、ユーザーがデータマッチングを設定する必要があることを明確にしました。
+- [サブジェクト権利要求のデータ照合](/privacy/priva/subject-rights-requests-data-match) - このプロセスのステップ進行を明確にし、機密情報の種類を作成する 2 番目の手順を追加しました。
+
+### <a name="sensitive-information-types"></a>機密情報の種類
+
+- [DLP ポリシーで名前付きエンティティ](named-entities-use.md) (名前付きエンティティ GA) を使用します。
+- [名前付きエンティティ - 名前付きエンティティ GA について説明](named-entities-learn.md) します。
+- [機密情報の種類エンティティ定義](sensitive-information-type-entity-definitions.md) - 名前付きエンティティ GA、およびパターンの更新。
+- [機密情報の種類 (](sensitive-information-type-learn-about.md) 名前付きエンティティ GA) について説明します。
+
+### <a name="sensitivity-labels"></a>秘密度ラベル
+
+- [秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings)します。PowerShell の詳細設定を使用して、サイト共有アクセス許可の新しい構成がプレビュー段階になりました。
+- [秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限](encryption-sensitivity-labels.md) する - メール連絡先を含むグループを指定するための既知の問題が追加されました。詳細と回避策については、発行された KB へのリンクが含まれています。
+- [コンテンツに秘密度ラベルを自動的に適用する](apply-sensitivity-label-automatically.md) - 削除されたOneDrive サイトが自動ラベル付けポリシーのシミュレーション結果に正しく表示されないという既知の問題が削除されました)
+- [秘密度ラベルで暗号化されたファイルの共同編集を有効にします](sensitivity-labels-coauthoring.md)。顧客からのフィードバックの結果として、この機能がまだSemi-Annual Enterprise チャネルでサポートされていないという前提条件セクションの吹き出しが削除され、代わりに最小バージョン 2202 でチャネル (プレビュー) Semi-Annual Enterprise追加されました。
+- [Office アプリで秘密度ラベルを管理](sensitivity-labels-office-apps.md)する - 既存のドキュメントに既定のラベルを適用するためのサポートの詳細が更新され、Windowsでは、このリリースは引き続きベータ チャネルで展開され、Web 向けに完全にロールアウトされます。
 
 ### <a name="changes-to-product-names"></a>製品名の変更
 
@@ -232,122 +307,3 @@ ms.locfileid: "65100547"
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 - [Microsoft Purview Data Map ラベル](/azure/purview/create-sensitivity-label)のスコープ名が "スキーマ化されたデータ資産" になりました。
-
-## <a name="october-2021"></a>2021 年 10 月
-
-### <a name="app-governance"></a>アプリ ガバナンス
-
-- [Defender for Cloud Apps 用アプリ ガバナンス アドオンが一般公開されました](/cloud-app-security/app-governance-manage-app-governance)。 アプリ ガバナンスのドキュメントは、Defender for Cloud Apps のドキュメントに参加するように移動しました。
-
-### <a name="compliance--service-assurance"></a>コンプライアンス&サービスアシュアランス
-
-- [サービスアシュアランス](/compliance) - 認定および適用性に関する声明のコンテンツ更新プログラムを四半期ごとに確認する) データセンター資産管理
-  - データセンターのアーキテクチャとインフラストラクチャ
-  - データセンターのビジネス継続性とディザスター リカバリー
-  - データセンターの環境保護
-  - データセンターの物理アクセス セキュリティ
-  - Microsoft 365 SDL コンプライアンス プログラム
-  - Microsoft 365 サービス エンジニアのアクセスの制御
-  - MS Cloud のリスク評価ガイド
-
-### <a name="data-loss-prevention"></a>データ損失防止
-
-- MacOS のサポートと高度な分類用に[更新された Microsoft Purview データ損失防止について説明](endpoint-dlp-learn-about.md)します。は、サポートされているすべてのファイルの種類のアクティビティを監査するカスタム DLP ポリシーを作成するために更新されました。
-- [Microsoft 365 エンドポイントのデータ損失防止に関する概要](endpoint-dlp-getting-started.md)は、macOS のサポートと高度な分類用に更新されました。
-- macOS のサポートと高度な分類のために[、エンドポイントデータ損失防止の使用](endpoint-dlp-using.md)が更新されました。
-- macOS のサポートと高度な分類について[、データ損失防止ポリシーのヒントリファレンス](dlp-policy-tips-reference.md)が更新されました。
-- [macOS デバイスをMicrosoft 365 (プレビュー) にオンボード](device-onboarding-macos-overview.md)すると、macOS のサポートと高度な分類が更新されました。
-- デバイスのオンボード用に次の新しいページを追加しました。
-  - [Intuneを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする (プレビュー)](device-onboarding-offboarding-macos-intune.md)
-  - [Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune-mde.md)
-  - [JAMF Proを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする (プレビュー)](device-onboarding-offboarding-macos-jamfpro.md)
-  - [Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro-mde.md)
-
-### <a name="ediscovery"></a>電子情報開示
-
-- [電子情報開示 (プレミアム) でクラウド添付ファイル](advanced-ediscovery-cloud-attachments.md)を収集するだけでなく、クラウド添付ファイルの最新バージョンを収集するだけでなく、メール メッセージまたはチャット会話で共有されたバージョンを収集Teamsできます。共有バージョンの収集は、クラウド添付ファイルに保持ラベルを自動的に適用する新機能によって可能になります。
-- 検索のためにSharePoint サイトに格納されているすべてのバージョンのドキュメントにインデックスを付ける[電子情報開示 (プレミアム) 新機能で履歴バージョンを設定](advanced-ediscovery-historical-versions.md)します。つまり、コレクション クエリに一致するコンテンツを含むドキュメント バージョンが検索結果に返されます。
-
-### <a name="encryption"></a>暗号化
-
-- [1 対 1 のMicrosoft Teams呼び出し (パブリック プレビュー) パブリック プレビュー](/microsoftteams/teams-end-to-end-encryption)の新しいコンテンツには、エンド ツー エンドの暗号化を使用します。
-
-### <a name="data-lifecycle-management"></a>データ ライフサイクル管理
-
-- [エピック EHR 監査データをインポートするコネクタを設定](import-epic-data.md) する新しいコネクタを使用すると、エピック電子医療記録システムからデータをインポートして、インサイダー リスク管理の新しい一般的な患者データの誤用シナリオをサポートできます。
-- [医療 EHR 監査データをインポートするコネクタを設定](import-healthcare-data.md) する新しいコネクタを使用すると、電子医療記録システムからデータをインポートして、インサイダー リスク管理の新しい一般的な患者データ誤用シナリオをサポートできます。
-
-### <a name="retention-and-records-management"></a>保持とレコードの管理
-- [アダプティブ ポリシー スコープは、](retention.md#adaptive-or-static-policy-scopes-for-retention) アイテム保持ポリシーとアイテム保持ラベル ポリシーのプレビューでリリースされます。
-- [秘密度ラベルに基づいて保持ラベルを自動的に適用](apply-retention-labels-automatically.md#identify-files-and-emails-that-have-a-sensitivity-label)できるようになりました。
-- ファイル プランに新しい [インポート プロセス](file-plan-manager.md#import-retention-labels-into-your-file-plan)があります。
-- [アイテム保持ポリシーとアイテム保持ラベル ポリシーの一般的な設定: アイテム保持ポリシーとアイテム保持ラベル ポリシー](retention-settings.md)の両方でアダプティブ スコープとその他の設定を構成する方法の詳細については、新しい記事を参照してください。
-
-### <a name="sensitive-information-types"></a>機密情報の種類
-
-- [名前付きエンティティの新しいコンテンツの名前付きエンティティ (プレビュー) について説明](named-entities-learn.md) します。
-- [データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)](named-entities-use.md) 名前付きエンティティの使用に関する新しいコンテンツ。
-
-### <a name="sensitivity-labels"></a>秘密度ラベル
-
-- [既定のラベルと既定のポリシー](mip-easy-trials.md) は、対象となる顧客にロールアウトされます。
-
-## <a name="september-2021"></a>2021 年 9 月
-
-### <a name="app-governance"></a>アプリ ガバナンス
-
-- [合理化されたアプリ ガバナンスの開始情報](app-governance-get-started.md) によってワークフローが変更され、パブリック プレビューサインアップへの新しいリンクが追加されました
-- [新しい検出アラート定義](app-governance-anomaly-detection-alerts.md#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) が追加されました (更新されました。コレクション アラートの新しい定義が追加されました)
-
-### <a name="auditing"></a>監査
-
-- 組織の監査状態に対する変更自体の監査方法に関する新しいセクションを追加して、監査の[オンとオフを切り替](turn-audit-log-search-on-or-off.md)えます。つまり、監査レコードは、監査がオンまたはオフになっているときにログに記録されます。Exchange管理者監査ログでこれらの監査レコードを検索できます。
-
-### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
-
-- [SIEM ソリューションとの通信コンプライアンス](communication-compliance-siem.md) の統合に関する SIEM ソリューションガイダンスとの通信コンプライアンス)
-
-### <a name="compliance-offerings"></a>コンプライアンス認証
-
-- [多層クラウド セキュリティ (MTCS)](/compliance/regulatory/offering-mtcs-singapore) Dynamics 365 カバレッジのシンガポールの標準更新プログラム
-- [支払いカード業界 (PCI)](/compliance/regulatory/offering-pci-dss)SharePoint Online カバレッジの Data Security Standard (DSS) 更新プログラム
-- [米国セクション 508](/compliance/regulatory/offering-section-508-vpats) の新しいクライアント ソフトウェア ガイダンス
-- [Web コンテンツ アクセシビリティ ガイドライン](/compliance/regulatory/offering-wcag-2-1) の新しいクライアント ソフトウェア ガイダンス
-
-### <a name="compliance--service-assurance"></a>コンプライアンス&サービスアシュアランス
-
-- [サービス アシュアランス](/compliance/) は、認定と適用性に関する声明のコンテンツ更新プログラムを四半期ごとに確認します
-  - データを有するデバイスの破棄
-  - DDOS 攻撃
-
-### <a name="data-connectors"></a>データ コネクタ
-
-- CellTrust および 17a-4 LLC からMicrosoft 365 データ コネクタに[サード パーティのデータ](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud) GCCをアーカイブする
-- [YouTube データをアーカイブするためのコネクタを設定](archive-youtube-data.md) すると、パブリック プレビューでこの機能に関する新しいガイダンスが提供されます。
-
-### <a name="ediscovery"></a>電子情報開示
-
-- [KQL エディターを使用して](ediscovery-kql-editor.md)、コンテンツ検索、電子情報開示 (Standard)、および電子情報開示 (プレミアム) で検索クエリを作成する新しい方法の検索クエリパブリック プレビューを作成します。KQL エディターは、サポートされている検索可能なプロパティと条件のオートコンプリートを提供し、標準プロパティと条件でサポートされている値の一覧を表示します。KQL エディターでは、検索クエリで発生する可能性のあるエラーの修正に対するエラー検出と提案も提供されます
-
-### <a name="information-barriers"></a>情報バリア
-
-- [情報バリア モードの新](information-barriers-policies.md#step-6-information-barriers-modes)しいプレビュー機能を使用した概要
-- [情報バリア モードの](/microsoftteams/information-barriers-in-teams)新しいプレビュー機能Microsoft Teams備えた情報バリア
-- [情報バリア モードの](/onedrive/information-barriers)新しいプレビュー機能OneDrive備えた情報バリア
-- [情報バリア モードのSharePoint Online](/sharepoint/information-barriers) 新しいプレビュー機能を備えた情報バリア
-
-### <a name="insider-risk-management"></a>インサイダー リスクの管理
-
-- 推奨されるアクションを開始するための[インサイダー リスク管理](insider-risk-management-configure.md#recommended-actions-preview)の新しいプレビュー機能を使用した概要
-- [インサイダー リスク アクティビティを調査](insider-risk-management-activities.md#get-help-managing-your-insider-risk-alert-queue) する新しい「インサイダー リスク アラート キューの管理に関するヘルプを表示する」ガイダンス セクション
-- [インサイダー リスク管理設定を使用した概要](insider-risk-management-settings.md#admin-notifications)新しい管理者通知設定プレビュー機能
-
-### <a name="retention-and-records-management"></a>保持とレコードの管理
-- [多段階の廃棄レビュー](disposition.md) が一般公開 (GA) され、新しい [監査イベントが](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities)追加されました。 多段階の廃棄レビューを使用すると、保持ラベルに対して最大 5 つの連続する廃棄レビューステージを指定でき、レビュー担当者は他のユーザーをその廃棄レビュー ステージに追加できます。 メールの通知とアラームをカスタマイズすることもできます。
-- [Teamsアイテム保持ポリシー](create-retention-policies.md#retention-policy-for-teams-locations)のプライベート チャネルが一般公開されました (GA)。
-
-### <a name="sensitivity-labels"></a>秘密度ラベル
-- [共同編集と自動保存](sensitivity-labels-coauthoring.md)は、Windows (Current Channel または Monthly Enterprise Channel から 2107 の最小バージョン) と macOS (最小バージョン 16.51) で一般公開されるようになりました。
-- 組み込みのラベルを使用するOffice アプリのロールアウト: 既定のラベル設定では、既存のドキュメントと新しいドキュメントがサポートされるようになりました。 この動作の変更は、Azure Information Protection の統合ラベル付けクライアントとのパリティを提供します。 アプリごとのロールアウトと最小バージョンの詳細については、Word、Excel、PowerPoint の [機能表](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) を参照してください。
-- コンテナー ラベルでは、 [PowerShell の詳細設定を使用して、既定の共有リンク設定が](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings)サポートされるようになりました。
-- 組み込みのラベル付けでサポートされている最小バージョンを一覧表示する[機能テーブル](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)には、現在のチャネル、月次Enterprise チャネル、およびSemi-Annual Enterprise チャネルのバージョンが含まれるようになりました。

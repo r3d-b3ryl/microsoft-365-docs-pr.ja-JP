@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 64162b83376facddbdeffd1c3079baa49f9d8924
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2f76a8ec53d6f7c809ed9f6612f2c8abf7388d1b
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788020"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294780"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃面の縮小ルールリファレンス
 
@@ -33,7 +33,8 @@ ms.locfileid: "64788020"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender ウイルス対策
 
-**プラットフォーム**
+**プラットフォーム：**
+
 - Windows
 
 この記事では、攻撃軽減ルールに関する情報を提供します。
@@ -57,7 +58,7 @@ ms.locfileid: "64788020"
 >
 > Windows&nbsp; Server2012R2&nbsp;&nbsp; および Windows&nbsp; Server2016&nbsp; の攻撃面の縮小ルールは、最新の統合ソリューション パッケージを使用してオンボードされたデバイスで使用できます。 詳細については、「[Windows Server 2012 R2 および 2016 Preview の最新の統合ソリューションの新機能](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)」を参照してください。
 
-| ルール名|Windows 10 | Windows Server 2019 | &nbsp;Windows Server | <sup>Windows Server 2016 [[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1, 2](#fn1)]<sup></sup> |
+| ルール名| &nbsp;Windows 11 <br>and<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>and<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <br> <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp; <br> <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [悪用された脆弱な署名されたドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> バージョン 1803 (半期チャネル) 以降 | Y | Y |
 | [Adobe Reader による子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y バージョン 1809 以降 | Y | Y | Y | Y |
@@ -102,7 +103,6 @@ ms.locfileid: "64788020"
 |[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |   |Y <br><br> CB 1802  | Y  | Y  |
 |[Office マクロからの Win32 API 呼び出しをブロックする](#block-win32-api-calls-from-office-macros) | Y |   | Y <br><br> CB 1710  | Y  |  Y |
 |[ランサムウェアに対する高度な保護を使用する](#use-advanced-protection-against-ransomware) | Y |   | Y <br><br> CB 1802 | Y  | Y  |
-|  |  |  |  |  |  |
 
   (<a id="fn1">1</a>) 任意のルールの GUID を使用して、ルールごとに攻撃表面の縮小ルールを構成できます。
 
@@ -139,7 +139,6 @@ ms.locfileid: "64788020"
 |[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要です  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要です |
 |[Office マクロからの Win32 API 呼び出しをブロックする](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[ランサムウェアに対する高度な保護を使用する](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要です  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要です |
-|   |   |   |   |
   
 ## <a name="asr-rules-and-guids-matrix"></a>ASR の規則と GUID マトリックス
 

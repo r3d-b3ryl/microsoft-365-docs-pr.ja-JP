@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 電子情報開示 (プレミアム) と Microsoft Graph エクスプローラーを使用して、Microsoft Teamsでチャット メッセージを検索および消去し、Teamsのデータ流出インシデントに対応します。
-ms.openlocfilehash: 1d161da18e6bc7fa1c19b0a8c720171dd9d23adc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2a1c0bcda3c406f33edcacd77aba359437655ced
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090879"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294575"
 ---
-# <a name="search-and-purge-chat-messages-in-teams"></a>Teamsでチャット メッセージを検索および消去する
+# <a name="search-and-purge-chat-messages-in-teams-preview"></a>Teamsでのチャット メッセージの検索と消去 (プレビュー)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -151,6 +151,8 @@ Graph エクスプローラーの使用については、「[Graph エクスプ�
    POST 要求が成功すると、要求が受け入れられたことを示す HTTP 応答コードが緑色のバナーに表示されます。
 
    ![消去要求に対する応答。](..\media\GraphResponseForPurge.png)
+
+  purgeData の詳細については、「 [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata)」を参照してください。
 
 ## <a name="step-6-verify-chat-messages-are-purged"></a>手順 6: チャット メッセージが削除されたことを確認する
 
